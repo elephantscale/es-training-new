@@ -1,0 +1,287 @@
+TensorFlow Estimator (High-Level) API
+======
+## TensorFlow Levels of API
+
+ * TensorFlow has a multi-tiered API 
+   - Low-Level
+   - Mid-Level
+   - High-Level
+
+![https://www.tensorflow.org/images/tensorflow_programming_environment.png](../../assets/images/deep-learning/tensorflow_layers_small.png) <!-- {"left" : 0.59, "top" : 3.34, "height" : 2.66, "width" : 9.07} -->
+
+Notes:
+
+---
+
+# Estimators
+
+## About the Estimator API
+
+  * The Estimator API is Tensorflow's High-Level API
+  * Easy to Use
+  * Not as configurable.
+  * Requires the use of the Dataset API.
+  * Can "wrap" low level code in Estimator API Wrappers.
+
+
+Notes:
+
+---
+
+## What is an Estimator?
+
+  * Borrowed from Scikit-Learn
+  * Basically a model of some sort
+  * usually has a .train() function
+
+
+Notes:
+
+---
+
+## List of Estimators:
+  * LinearClassifier
+  * LinearRegressor
+  * DNNClassifier
+  * DNNRegressor
+  * BoostedTreesClassifer
+  * BoostedTreesRegressor
+
+Notes:
+
+---
+
+## Example of Using Estimators
+
+  * This example uses a DNNClassifier:
+  * 2 hidden layers 
+  * 10 nodes in each hidden layer.
+
+```python
+
+classifier = tf.estimator.DNNClassifier(
+    feature_columns=my_feature_columns,
+    # Two hidden layers of 10 nodes each.
+    hidden_units=[10, 10],
+    # The model must choose between 3 classes.
+    n_classes=3)
+```
+<!-- {"left" : 0, "top" : 2.48, "height" : 2.46, "width" : 10.25} -->
+
+
+Notes:
+
+---
+
+## Input Functions
+
+  * An **input function** returns `tf.Dataset` object:
+    - features: a (2-D) list of the features
+    - labels: a (1-d) list of the labels 
+  * Estimators expect an input function
+
+```python
+def input_func(data)
+   features = data[['A','B','C']]
+   labels = data['label']
+   return tf.data.Dataset.from_tensor_slices(
+        features, labels)
+```
+<!-- {"left" : 0, "top" : 2.85, "height" : 2.15, "width" : 10.25} -->
+
+
+
+Notes:
+
+---
+
+## Feature Columns
+
+  * You have to specify the feature columns 
+  * Feature columns are like the schema.
+  * Types:
+    - `tf.feature_column.numeric_column`
+    - `tf.feature_column.bucketized_column`
+    - `tf.feature_column.categorical_column_with_vocabulary_list`
+    - `tf.feature_column.categorical_column_with_identity`
+    - `tf.feature_column.categorical_column_with_hash_bucket`
+    - `tf.feature_column.crossed_column`
+
+
+
+
+Notes:
+
+---
+
+## Defining Feature Columns
+  * In this case, we have all numeric columns
+
+```python
+from tf.feature_columns import numeric_column
+
+fc = [numeric_column(key='A'),
+      numeric_column(key='B'),
+      numeric_column(key='C')
+```
+<!-- {"left" : 0, "top" : 1.49, "height" : 2.15, "width" : 10.25} -->
+
+
+
+
+Notes:
+
+---
+
+## Categorical Columns 
+
+  * Defining Categorical columns means we use one hot encoding
+
+```python
+from tf.feature_column import \
+   categorical_column_with_vocabulary_list
+
+vocabulary_feature_column =
+    categorical_column_with_vocabulary_list(
+        key=feature_name_from_input_fn,
+        vocabulary_list=["kitchenware", 
+        "electronics", "sports"])
+
+```
+<!-- {"left" : 0, "top" : 1.89, "height" : 3.3, "width" : 10.25} -->
+
+
+
+Notes:
+
+---
+
+## Training Model
+  
+  * We need to call `train()` on the model
+  * Note we pass in the input function
+
+```python
+classifier.train(
+    input_fn=lambda:train_input_fn(train_x, 
+    train_y, args.batch_size),
+    steps=args.train_steps)
+```
+<!-- {"left" : 0, "top" : 1.97, "height" : 1.83, "width" : 10.25} -->
+
+
+
+Notes:
+
+---
+
+## Eval Functions
+
+  * We also need to define an eval function
+  * Helps us evaluate our model
+
+```python
+def eval_input_function(test_x, test_y, batch_size)
+   features = text_x[['A','B','C']]
+   labels = test_y]
+   return tf.data.Dataset.from_tensor_slices(
+        features, labels)
+```
+<!-- {"left" : 0, "top" : 1.93, "height" : 1.92, "width" : 10.25} -->
+
+
+
+Notes:
+
+---
+
+## Validating Model
+
+```python
+# Evaluate the model.
+eval_result = classifier.evaluate(
+    input_fn=lambda:eval_input_fn(
+    test_x, test_y, args.batch_size))
+
+print('\nTest set accuracy: 
+    {accuracy:0.3f}\n'.format(**eval_result))
+
+```
+<!-- {"left" : 0, "top" : 1.01, "height" : 2.87, "width" : 10.25} -->
+
+
+
+Notes:
+
+---
+
+## Estimator Lab: Iris Lab
+
+```python
+ - Follow the 04-estimator/4.1-iris.ipynb lab
+```
+<!-- {"left" : 0, "top" : 1.32, "height" : 0.73, "width" : 10.25} -->
+ 
+
+Notes:
+
+---
+
+# Keras Layers
+
+## What is Keras?
+
+  * Keras is another API for high-level DL
+  * Can use TF as a back-end.
+  * TF includes Keras
+  * We can also integrate Keras with TF Estimators
+
+
+Notes:
+
+---
+## Keras Example:
+
+```python
+from tf.keras.applications.inception_v3 import *
+from tf.keras.optimizers import SGD
+from tf.keras.estimator import model_to_estimator
+
+keras_inception_v3 = InceptionV3(weights=None)
+keras_inception_v3.compile(optimizer=
+                        SGD(lr=0.0001, momentum=0.9),
+                        loss='categorical_crossentropy',
+                        metric='accuracy')
+
+est_inception_v3 = model_to_estimator(
+                     keras_model=keras_inception_v3)
+
+train_input_fn = tf.estimator.inputs.numpy_input_fn(
+    x={"input_1": train_data},
+    y=train_labels,
+    num_epochs=1,
+    shuffle=False)
+
+# To train, we call Estimator's train function:
+est_inception_v3.train(input_fn=train_input_fn, 
+                        steps=2000)
+
+```
+<!-- {"left" : 0, "top" : 0.74, "height" : 6.77, "width" : 10.25} -->
+
+
+Notes:
+
+---
+## Keras Lab
+
+```python
+ - Follow the 04-estimator/4.1K-iris.ipynb lab
+```
+
+<!-- {"left" : 0, "top" : 1.32, "height" : 0.73, "width" : 10.25} -->
+
+
+Notes:
+
+---

@@ -1,0 +1,13 @@
+{
+    "width": 960,
+    "height": 700,
+    
+    "theme":"simple",
+    "transition":"slide",
+    "controls":true,
+    "progress":true,
+    "showNotes":true,
+    "__parallaxBackgroundImage": "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg",
+    "__parallaxBackgroundSize": "2100px 900px",
+    "keyboard": {"81": "toggleOverview"}
+}

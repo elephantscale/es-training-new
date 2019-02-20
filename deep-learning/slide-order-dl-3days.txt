@@ -1,0 +1,31 @@
+## $ES_HOME/utils/presentations/slides-assembler.sh slide-order-dl-3days.txt
+
+## About
+./generic/About-Deep-Learning-Class.md
+
+## Intro
+../../machine-learning/slides/Machine-Learning-Primer.pptx
+
+# Entertain and introduce TensorFlow
+./generic/DL-Playground.md
+
+# Continue introducing TensorFlow
+./tensorflow/TENSORFLOW-Intro.md
+./tensorflow/TENSORFLOW-Lowlevel.md
+
+#Linear
+../../machine-learning/slides/sagemaker/Linear-Regression.pptx
+./tensorflow/TENSORFLOW-Linear.md
+
+# Tensorflow Slides
+./tensorflow/TENSORFLOW-Highlevel.md
+
+# Deep Learning
+./generic/DL-NeuralNetworks.md
+./tensorflow/TENSORFLOW-CNN.md
+./generic/DL-TransferLearning.md
+./generic/DL-RNNs.md
+
+# Parallel
+./tensorflow/TENSORFLOW-Parallel.md
+
