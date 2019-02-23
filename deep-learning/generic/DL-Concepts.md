@@ -683,7 +683,7 @@ TODO
 
 For reference only, please see the paper for underlying math.
 
-<img src="../../assets/images/deep-learning/mini-batch-equation.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
+<img src="../../assets/images/deep-learning/mini-batch-equation.png" alt="XXX image missing" style="background:white;max-width:100%;" width="45%" />
 
 Notes:  
 [Reference paper](https://arxiv.org/pdf/1502.03167v3.pdf)

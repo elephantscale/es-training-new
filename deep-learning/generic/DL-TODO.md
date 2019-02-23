@@ -4,12 +4,12 @@ Misc. stuff to add to other slides
 ## Dealing with Images
 - Images are pixes on 2D grid
 
-<img src="../../assets/images/deep-learning/image-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
+<img src="../../assets/images/deep-learning/pixel-representation-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
 
 - Each pixel can contain 1 to 4 parts (known as components are channels)
 - These components are RGB (Red Green Blue).  They are 8-bit integers with values ranging from 0-255  (2^8 -1 )
 
-<img src="../../assets/images/deep-learning/image-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
+<img src="../../assets/images/deep-learning/pixel-representation-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
 
 
 ## ResNet-50
