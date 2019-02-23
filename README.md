@@ -1,6 +1,9 @@
-# Dev Setup for writing markdown slides
+# ES-Training-New
+This is the repo for our new MD based content.
 
-## Option 1 : Using Reveal.js / Reveal-md plugins
+## Dev Setup for writing markdown slides
+
+## Using Reveal.js / Reveal-md plugins
 
 [reveal js](https://github.com/hakimel/reveal.js)
 [reveal md](https://github.com/webpro/reveal-md)
@@ -18,7 +21,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | b
 source ~/.bashrc # May have to open new terminal window
 nvm install v10.15.1
 npm -g install npm # get latest version
-npm -g instal reveal-md 
+npm -g instal reveal-md
 ```
 
 ### Setup
@@ -61,6 +64,7 @@ npm -g instal reveal-md
 
 ## Tips
 
+#### For Animation
 Use
 ```
 <div class="fragment" />

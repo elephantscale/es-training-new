@@ -107,6 +107,40 @@ imagenet/
 
 - Imagine you want to learn how to play the ukulele. If you have no musical background, and you are starting fresh with the ukulele as your very first instrument, it’ll take you a few months to get proficient at playing it. On the other hand, if you are accustomed to playing the guitar, it might just take a week, due to how similar the two instruments are. Taking the learnings from one task and fine-tuning them on a similar task is something we often do in real life. The more similar the two tasks are, the easier it is to adapt the learnings from one task to the other.
 
+TODO Shiva:
+
+<img src="../../assets/images/deep-learning/transfer-learning-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
+---
+
+## Transfer Learning
+
+TODO Shiva:
+
+<img src="../../assets/images/deep-learning/transfer-learning-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
+
+
+---
+
+## Transfer Learning
+
+- Freeze lower layers, so their weights are fixed
+    - they do not change during training
+
+- Unfreeze higher layers
+    - So their weights can be trained during training
+
+- May add extra layers specific to our problem
+
+---
+
+## Caching the Frozen Layers
+
+- Since frozen layer weights don't change, when an insfance of training data goes through, the output is the same
+
+- So by caching the output, we can get huge speed boost
+
+- Need a lot of memory though
+
 ---
 
 ## Organizing Training Data
@@ -195,9 +229,6 @@ Metric: Choose a metric to judge the performance of the trained model. Accuracy 
 
 --
 
-## Table 2-2. Deciding the loss and activation type based on the task
-
-TODO
 
 ---
 

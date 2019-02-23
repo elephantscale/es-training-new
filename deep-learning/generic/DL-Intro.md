@@ -435,6 +435,24 @@ https://www.youtube.com/watch?v=UsDhVx6cOrw
 
 ---
 
+## Model Zoos
+
+<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
+
+- Building and training complex models from scratch takes a lot of effort and compute
+
+- Luckily, there are lot models available publicly  
+    - Computer vision models : LeNet, AlexNet, ZFNet, GoogLeNet, VGGNet, Inception
+
+- Available model zoos
+    - [Tensorflow model zoo](https://github.com/tensorflow/models)
+    - [Caffe model zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo)
+
+
+
+---
+
+
 ## Building on Other Models
 
 - Say we want to develop a model that can classify people into male / female
@@ -704,6 +722,7 @@ Notes:
 Source : https://www.tensorflow.org/lite/performance/best_practices
 
 ---
+
 
 # Use Cases and Demos
 
