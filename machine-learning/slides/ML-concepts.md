@@ -21,7 +21,7 @@ Notes:
     - Algorithm + training data -> model
     - Model = Algorithm(data)
 
-![](assets/images/algorithm-vs-model1.png) <!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
+![](../../assets/images/machine-learning/algorithm-vs-model1.png) <!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
 
 
 
@@ -30,7 +30,7 @@ Notes:
 ---
 ## Algorithm and Model
 
-![](assets/images/algorithm-vs-model2.png) <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+![](../../assets/images/machine-learning/algorithm-vs-model2.png) <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
 
 
 Notes:
@@ -43,7 +43,7 @@ Notes:
   * **'Model'**:
     - Mathematical object describing the relationship between input and output
 
-![](assets/images/Model.png) <!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
+![](../../assets/images/machine-learning/Model.png) <!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
 
 
 
@@ -104,7 +104,7 @@ Notes:
 <!-- {"left" : 0.26, "top" : 0.86, "height" : 1.7, "width" : 9.75, "columnwidth" : [1.39, 1.39, 1.39, 1.39, 1.39, 1.39, 1.39]} -->
 
 
-![](assets/images/Feature-Extraction.png) <!-- {"left" : 1.83, "top" : 2.67, "height" : 0.79, "width" : 3.49} -->
+![](../../assets/images/machine-learning/Feature-Extraction.png) <!-- {"left" : 1.83, "top" : 2.67, "height" : 0.79, "width" : 3.49} -->
 
 
 
@@ -116,7 +116,7 @@ Notes:
 
 <!-- {"left" : 0.26, "top" : 3.54, "height" : 1.7, "width" : 9.75, "columnwidth" : [1.39, 1.39, 1.39, 1.39, 1.39, 1.39, 1.39]} -->
 
-![](assets/images/Feature-Extraction-02.png) <!-- {"left" : 1.89, "top" : 5.45, "height" : 1.59, "width" : 7.98} -->
+![](../../assets/images/machine-learning/Feature-Extraction-02.png) <!-- {"left" : 1.89, "top" : 5.45, "height" : 1.59, "width" : 7.98} -->
 
 
 
@@ -133,7 +133,7 @@ Notes:
   * Categorical Variables are essentially structured data, despite being strings.
   * Unstructured data would include things like: documents, emails, tweets
 
-![](assets/images/Categorical-Variables.png) <!-- {"left" : 0.26, "top" : 5.16, "height" : 1.64, "width" : 9.74} -->
+![](../../assets/images/machine-learning/Categorical-Variables.png) <!-- {"left" : 0.26, "top" : 5.16, "height" : 1.64, "width" : 9.74} -->
 
 
 
@@ -173,7 +173,7 @@ Notes:
 <!-- {"left" : 1.73, "top" : 4.13, "height" : 2.41, "width" : 1.75, "columnwidth" : [0.45, 1.3]} -->
 
 
-![](assets/images/Factorization.png) <!-- {"left" : 3.96, "top" : 4.27, "height" : 2.14, "width" : 2.34} -->
+![](../../assets/images/machine-learning/Factorization.png) <!-- {"left" : 3.96, "top" : 4.27, "height" : 2.14, "width" : 2.34} -->
 
 
 
@@ -212,7 +212,7 @@ Notes:
 
 <!-- {"left" : 1.73, "top" : 4.13, "height" : 2.41, "width" : 1.75, "columnwidth" : [0.45, 1.3]} -->
 
-![](assets/images/Factorization.png) <!-- {"left" : 3.96, "top" : 4.27, "height" : 2.14, "width" : 2.34} -->
+![](../../assets/images/machine-learning/Factorization.png) <!-- {"left" : 3.96, "top" : 4.27, "height" : 2.14, "width" : 2.34} -->
 
 
 | id | status idx |
@@ -236,7 +236,7 @@ Notes:
     - Note, only one bit is on
     - This is called **ONE-HOT-Encoding**
 
-![](assets/images/Dummy-Variables.png) <!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
+![](../../assets/images/machine-learning/Dummy-Variables.png) <!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
 
 
 
@@ -256,7 +256,7 @@ Notes:
   * This might allow our models to make inferences
     - e.g., Orange is close to red on the spectrum, but more distant from violet.
 
-![](assets/images/3rd-party/Quantization.png) <!-- {"left" : 3, "top" : 4.94, "height" : 2.12, "width" : 5.03} -->
+![](../../assets/images/machine-learning/3rd-party/Quantization.png) <!-- {"left" : 3, "top" : 4.94, "height" : 2.12, "width" : 5.03} -->
 
 
 
@@ -286,7 +286,7 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 
 <!-- {"left" : 0.49, "top" : 3.62, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
 
-![](assets/images/new-Dimensions.png) <!-- {"left" : 4.35, "top" : 3.59, "height" : 2.64, "width" : 5.47} -->
+![](../../assets/images/machine-learning/new-Dimensions.png) <!-- {"left" : 4.35, "top" : 3.59, "height" : 2.64, "width" : 5.47} -->
 
 
 Notes:
@@ -311,7 +311,7 @@ Notes:
 ---
 ## Converting Word to Vectors
 
-![](assets/images/Converting-Word.png) <!-- {"left" : 0.3, "top" : 1.07, "height" : 5.36, "width" : 9.66} -->
+![](../../assets/images/machine-learning/Converting-Word.png) <!-- {"left" : 0.3, "top" : 1.07, "height" : 5.36, "width" : 9.66} -->
 
 
 Notes:
@@ -416,7 +416,7 @@ Notes:
   * We want to predict MPG of a car
   * What attributes to consider?
 
-![](assets/images/Sample-Cars.png) <!-- {"left" : 0.39, "top" : 2.08, "height" : 4.71, "width" : 9.48} -->
+![](../../assets/images/machine-learning/Sample-Cars.png) <!-- {"left" : 0.39, "top" : 2.08, "height" : 4.71, "width" : 9.48} -->
 
 
 
@@ -427,7 +427,7 @@ Notes:
 ---
 ## Sample Model for Predicting MPG
 
-![](assets/images/Predicting-MPG.png) <!-- {"left" : 0.02, "top" : 0.74, "height" : 6.36, "width" : 10.25} -->
+![](../../assets/images/machine-learning/Predicting-MPG.png) <!-- {"left" : 0.02, "top" : 0.74, "height" : 6.36, "width" : 10.25} -->
 
 
 
@@ -520,7 +520,7 @@ Notes:
 # Evaluating A Model
 ## Data Science Methodology: Iterative Learning Process
 
-![](assets/images/Iterative-Learning-Process.png) <!-- {"left" : 0.34, "top" : 0.93, "height" : 6.1, "width" : 9.56} -->
+![](../../assets/images/machine-learning/Iterative-Learning-Process.png) <!-- {"left" : 0.34, "top" : 0.93, "height" : 6.1, "width" : 9.56} -->
 
 
 
@@ -535,7 +535,7 @@ Notes:
     - Model is trained with 'training data'
     - Measure its performance on 'test data' (the model hasn't seen 'test data')
 
-![](assets/images/Model-Validation.png) <!-- {"left" : 2.87, "top" : 3.47, "height" : 2.88, "width" : 6.57} -->
+![](../../assets/images/machine-learning/Model-Validation.png) <!-- {"left" : 2.87, "top" : 3.47, "height" : 2.88, "width" : 6.57} -->
 
 
 
@@ -554,7 +554,7 @@ Notes:
     - Overfitting
   * One in the middle is just right
 
-![](assets/images/underfit-overfit.png)  <!-- {"left" : 0.26, "top" : 4.13, "height" : 3.07, "width" : 9.74} -->
+![](../../assets/images/machine-learning/underfit-overfit.png)  <!-- {"left" : 0.26, "top" : 4.13, "height" : 3.07, "width" : 9.74} -->
 
 
 
@@ -572,7 +572,7 @@ Notes:
   * Resolution:
     - Try a different algorithm / model, that better fits the data
 
-![](assets/images/underfit-overfit-01.png) <!-- {"left" : 0.83, "top" : 4.4, "height" : 2.79, "width" : 8.59} -->
+![](../../assets/images/machine-learning/underfit-overfit-01.png) <!-- {"left" : 0.83, "top" : 4.4, "height" : 2.79, "width" : 8.59} -->
 
 
 
@@ -591,7 +591,7 @@ Notes:
     - Try a different algorithm / model, that better fits the data
     - Simplify inputs
 
-![](assets/images/underfit-overfit-02.png) <!-- {"left" : 3.67, "top" : 5.07, "height" : 2.13, "width" : 6.38} -->
+![](../../assets/images/machine-learning/underfit-overfit-02.png) <!-- {"left" : 3.67, "top" : 5.07, "height" : 2.13, "width" : 6.38} -->
 
 Notes:
 
@@ -600,7 +600,7 @@ Notes:
 
   * In ML we strive to find the 'sweet spot' between under-fitting models and over-fitting models
 
-![](assets/images/Achieving-Fit.png) <!-- {"left" : 1.4, "top" : 1.97, "height" : 5.08, "width" : 6.96} -->
+![](../../assets/images/machine-learning/Achieving-Fit.png) <!-- {"left" : 1.4, "top" : 1.97, "height" : 5.08, "width" : 6.96} -->
 
 
 
@@ -668,7 +668,7 @@ Notes:
     - Testing set (30-40%)
   * This is done  randomly
 
-![](assets/images/Model-Validation.png) <!-- {"left" : 2.16, "top" : 3.74, "height" : 2.61, "width" : 5.94} -->
+![](../../assets/images/machine-learning/Model-Validation.png) <!-- {"left" : 2.16, "top" : 3.74, "height" : 2.61, "width" : 5.94} -->
 
 
 
@@ -709,7 +709,7 @@ Notes:
   * Then test with fold-I
   * After we have cycled through all k folds, prediction accuracies are aggregated and compared
 
-![](assets/images/k-fold.png) <!-- {"left" : 2.32, "top" : 4.11, "height" : 3.08, "width" : 5.61} -->
+![](../../assets/images/machine-learning/k-fold.png) <!-- {"left" : 2.32, "top" : 4.11, "height" : 3.08, "width" : 5.61} -->
 
 
 
@@ -719,7 +719,7 @@ Notes:
 ---
 ## Cross-Validation Example
 
-![](assets/images/Cross-Validation-Example.png) <!-- {"left" : 0.67, "top" : 0.81, "height" : 2.31, "width" : 8.92} -->
+![](../../assets/images/machine-learning/Cross-Validation-Example.png) <!-- {"left" : 0.67, "top" : 0.81, "height" : 2.31, "width" : 8.92} -->
 
   * Here we are doing a 5-fold cross validation
   * Data is split into 5 splits – one held for testing, remaining 4 used for training
@@ -763,7 +763,7 @@ Notes:
 ---
 ## Sampling Without Replacement
 
-![](assets/images/bootstrapping1.png) <!-- {"left" : 1.5, "top" : 1.16, "height" : 5.85, "width" : 7.25} -->
+![](../../assets/images/machine-learning/bootstrapping1.png) <!-- {"left" : 1.5, "top" : 1.16, "height" : 5.85, "width" : 7.25} -->
 
 
 
@@ -773,7 +773,7 @@ Notes:
 ---
 ## Sampling With Replacement (aka Bootstrapping)
 
-![](assets/images/bootstrapping2.png) <!-- {"left" : 2.33, "top" : 1.21, "height" : 5.56, "width" : 5.59} -->
+![](../../assets/images/machine-learning/bootstrapping2.png) <!-- {"left" : 2.33, "top" : 1.21, "height" : 5.56, "width" : 5.59} -->
 
 
 
@@ -793,7 +793,7 @@ Notes:
 ---
 ## Bootstrapping Example 2
 
-![](assets/images/bootstrapping1-skitch.png) <!-- {"left" : 0.39, "top" : 1.75, "height" : 4.01, "width" : 9.48} -->
+![](../../assets/images/machine-learning/bootstrapping1-skitch.png) <!-- {"left" : 0.39, "top" : 1.75, "height" : 4.01, "width" : 9.48} -->
 
 
 
@@ -833,7 +833,7 @@ https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi
   * We can calculate average tip calculating AVERAGE of all the  tip amounts
   * Next tip = AVERAGE(all tips)  =  MEAN (all tips)   = $10
 
-![](assets/images/tips_mean.png) <!-- {"left" : 0.68, "top" : 2.35, "height" : 4.41, "width" : 8.89} -->
+![](../../assets/images/machine-learning/tips_mean.png) <!-- {"left" : 0.68, "top" : 2.35, "height" : 4.41, "width" : 8.89} -->
 
 
 Notes:
@@ -846,11 +846,11 @@ Notes:
   * **Residual** = difference between actual tip and predicted tip
   * Sum of all residuals = **ZERO**
 
-![](assets/images/Residuals.png) <!-- {"left" : 8.24, "top" : 2.49, "height" : 2.14, "width" : 1.57} -->
+![](../../assets/images/machine-learning/Residuals.png) <!-- {"left" : 8.24, "top" : 2.49, "height" : 2.14, "width" : 1.57} -->
 
 
 
-![](assets/images/tips_residuals.png) <!-- {"left" : 1.84, "top" : 3.68, "height" : 3.24, "width" : 6.58} -->
+![](../../assets/images/machine-learning/tips_residuals.png) <!-- {"left" : 1.84, "top" : 3.68, "height" : 3.24, "width" : 6.58} -->
 
 
 
@@ -865,11 +865,11 @@ Notes:
    * Goal is to minimize SSE
      - Minimize errors
 
-![](assets/images/Sum-of-Squared.png) <!-- {"left" : 6.9, "top" : 0.94, "height" : 2.62, "width" : 3.12} -->
+![](../../assets/images/machine-learning/Sum-of-Squared.png) <!-- {"left" : 6.9, "top" : 0.94, "height" : 2.62, "width" : 3.12} -->
 
 
 
-![](assets/images/tips_residuals.png) <!-- {"left" : 0.6, "top" : 3.05, "height" : 4.04, "width" : 8.21} -->
+![](../../assets/images/machine-learning/tips_residuals.png) <!-- {"left" : 0.6, "top" : 3.05, "height" : 4.04, "width" : 8.21} -->
 
 
 
@@ -893,7 +893,7 @@ Notes:
     - Yi: actual value
     - Ŷi: predicted value
 
-![](assets/images/3rd-party/SSE.png) <!-- {"left" : 5.35, "top" : 5.16, "height" : 1.49, "width" : 4.21} -->
+![](../../assets/images/machine-learning/3rd-party/SSE.png) <!-- {"left" : 5.35, "top" : 5.16, "height" : 1.49, "width" : 4.21} -->
 
 
 
@@ -923,7 +923,7 @@ Notes:
     - Picks one of two outcomes  (spam / not-spam)
   * Say we are classifying 10 emails (6 spam, 4 not-spam)
 
-![](assets/images/Confusion-Matrix.png) <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
+![](../../assets/images/machine-learning/Confusion-Matrix.png) <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
 
 
 
@@ -933,7 +933,7 @@ Notes:
 ---
 ## Confusion Matrix: More Than 2 Outcomes
 
-![](assets/images/Confusion-Matrix-01.png) <!-- {"left" : 1.13, "top" : 0.99, "height" : 2.79, "width" : 7.98} -->
+![](../../assets/images/machine-learning/Confusion-Matrix-01.png) <!-- {"left" : 1.13, "top" : 0.99, "height" : 2.79, "width" : 7.98} -->
 
 
 
@@ -950,7 +950,7 @@ Algorithm is good at identifying rabbits
 ---
 ## Interpreting Confusion Matrix (True/False Positives/Negatives)
 
-![](assets/images/Interpreting-01.png) <!-- {"left" : 0.51, "top" : 0.9, "height" : 6.17, "width" : 9.22} -->
+![](../../assets/images/machine-learning/Interpreting-01.png) <!-- {"left" : 0.51, "top" : 0.9, "height" : 6.17, "width" : 9.22} -->
 
 
 
@@ -967,7 +967,7 @@ Story: A shepherd who cried wolf
   * Misclassifications / Error rate
     - How wrong is the model?= (FP + FN) / total= (10 + 30) / 200= 0.2 or 20%= 1 - accuracy
 
-![](assets/images/Confusion-Matrix-02.png) <!-- {"left" : 4.4, "top" : 3.62, "height" : 3.46, "width" : 5.45} -->
+![](../../assets/images/machine-learning/Confusion-Matrix-02.png) <!-- {"left" : 4.4, "top" : 3.62, "height" : 3.46, "width" : 5.45} -->
 
 
 
@@ -996,7 +996,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
   * What is the implication of 'False Negative' ?
   * Which is more serious?
 
-![](assets/images/Confusion-Matrix-Accuracy-01.png) <!-- {"left" : 2.39, "top" : 3.52, "height" : 3.47, "width" : 5.47} -->
+![](../../assets/images/machine-learning/Confusion-Matrix-Accuracy-01.png) <!-- {"left" : 2.39, "top" : 3.52, "height" : 3.47, "width" : 5.47} -->
 
 Notes:
 
@@ -1025,7 +1025,7 @@ Notes:
 
   * **False Positive Rate (FPR)** How often model predicts 'negative' as 'positive' (incorrectly)= FP / (FP + TN) actual negative= 10 / 80= 0.125 or 12.5%
 
-![](assets/images/TPR-FPR.png) <!-- {"left" : 2.35, "top" : 3.54, "height" : 3.58, "width" : 5.54} -->
+![](../../assets/images/machine-learning/TPR-FPR.png) <!-- {"left" : 2.35, "top" : 3.54, "height" : 3.58, "width" : 5.54} -->
 
 
 
@@ -1040,7 +1040,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 * **Precision / Positive Predictive Value (PPV)** When model predicts 'positive' how often it is right?= TP / (TP + FP)= true / predicted positive= 90 / (90 + 10)= 0.9  or 90%
 
-![](assets/images/Specificity-Precision-Prevalence.png) <!-- {"left" : 2.22, "top" : 3.47, "height" : 3.74, "width" : 5.81} -->
+![](../../assets/images/machine-learning/Specificity-Precision-Prevalence.png) <!-- {"left" : 2.22, "top" : 3.47, "height" : 3.74, "width" : 5.81} -->
 
 
 
@@ -1061,7 +1061,7 @@ Here our majority = Positive
 If we always predicted 'positive' we would be wrong 80 times (negative)
 80/200 = 40% of time
 
-![](assets/images/Null-Error-Rate.png) <!-- {"left" : 2.25, "top" : 3.48, "height" : 3.75, "width" : 5.76} -->
+![](../../assets/images/machine-learning/Null-Error-Rate.png) <!-- {"left" : 2.25, "top" : 3.48, "height" : 3.75, "width" : 5.76} -->
 
 
 
@@ -1118,7 +1118,7 @@ Notes:
     - Users will see more spam emails be in Inbox
   * We need to find the sweet spot!
 
-![](assets/images/ROC-threshold.png) <!-- {"left" : 7.01, "top" : 2.83, "height" : 4.36, "width" : 3.07} -->
+![](../../assets/images/machine-learning/ROC-threshold.png) <!-- {"left" : 7.01, "top" : 2.83, "height" : 4.36, "width" : 3.07} -->
 
 
 
@@ -1135,11 +1135,11 @@ Notes:
     - Only 70 emails are classified as spam
 Lower TPR
 
-![](assets/images/Threshold-01.png) <!-- {"left" : 4.95, "top" : 3.04, "height" : 2.62, "width" : 4.8} -->
+![](../../assets/images/machine-learning/Threshold-01.png) <!-- {"left" : 4.95, "top" : 3.04, "height" : 2.62, "width" : 4.8} -->
 
 
 
-![](assets/images/Threshold-02.png) <!-- {"left" : 0.5, "top" : 4.48, "height" : 2.62, "width" : 4} -->
+![](../../assets/images/machine-learning/Threshold-02.png) <!-- {"left" : 0.5, "top" : 4.48, "height" : 2.62, "width" : 4} -->
 
 
 
@@ -1150,7 +1150,7 @@ Notes:
 ---
 ## ROC Curve: Receiver Operating Characteristic
 
-![](assets/images/ROC2.png) <!-- {"left" : 1.27, "top" : 1, "height" : 5.98, "width" : 7.7} -->
+![](../../assets/images/machine-learning/ROC2.png) <!-- {"left" : 1.27, "top" : 1, "height" : 5.98, "width" : 7.7} -->
 
 
 
@@ -1161,7 +1161,7 @@ Notes:
 ---
 ## ROC Curve Example
 
-![](assets/images/Threshold_roc.stack.png) <!-- {"left" : 1.19, "top" : 1.24, "height" : 5.5, "width" : 7.88} -->
+![](../../assets/images/machine-learning/Threshold_roc.stack.png) <!-- {"left" : 1.19, "top" : 1.24, "height" : 5.5, "width" : 7.88} -->
 
 
 
@@ -1176,7 +1176,7 @@ Notes:
 
   * C performs worse than random --> bad
 
-![](assets/images/1024px-ROC_space-2b.png) <!-- {"left" : 3, "top" : 2.67, "height" : 4.49, "width" : 4.25} -->
+![](../../assets/images/machine-learning/1024px-ROC_space-2b.png) <!-- {"left" : 3, "top" : 2.67, "height" : 4.49, "width" : 4.25} -->
 
 
 
@@ -1197,7 +1197,7 @@ Image credit (CC) : https://commons.wikimedia.org/wiki/File:ROC_space-2.png
   * The closer to middle line (45 degree) the less accurate the test
     - Middle line represents: random classification (50%)
 
-![](assets/images/Threshold_roc.stack.png) <!-- {"left" : 2.48, "top" : 3.80, "height" : 3.68, "width" : 5.28} -->
+![](../../assets/images/machine-learning/Threshold_roc.stack.png) <!-- {"left" : 2.48, "top" : 3.80, "height" : 3.68, "width" : 5.28} -->
 
 
 
@@ -1214,11 +1214,11 @@ Notes:
     - Middle: OK (70%)
     - Rightmost: very good (90%)
 
-![](assets/images/AUC1.png) <!-- {"left" : 6.66, "top" : 2.29, "height" : 2.28, "width" : 3.26} -->
+![](../../assets/images/machine-learning/AUC1.png) <!-- {"left" : 6.66, "top" : 2.29, "height" : 2.28, "width" : 3.26} -->
 
 
 
-![](assets/images/AUC2.png) <!-- {"left" : 1.02, "top" : 4.94, "height" : 2.1, "width" : 8.21} -->
+![](../../assets/images/machine-learning/AUC2.png) <!-- {"left" : 1.02, "top" : 4.94, "height" : 2.1, "width" : 8.21} -->
 
 
 
@@ -1240,7 +1240,7 @@ Notes:
 
 <!-- {"left" : 6.7, "top" : 1.78, "height" : 2.38, "width" : 3.3, "columnwidth" : [1.61, 1.69]} -->
 
-![](assets/images/ROC_Compare.png) <!-- {"left" : 0.42, "top" : 2.75, "height" : 4.26, "width" : 5.71} -->
+![](../../assets/images/machine-learning/ROC_Compare.png) <!-- {"left" : 0.42, "top" : 2.75, "height" : 4.26, "width" : 5.71} -->
 
 
 Notes:
@@ -1256,7 +1256,7 @@ Image credit (CC) : http://gim.unmc.edu/dxtests/roc3.htm
   * Say our algorithm recognizes hand-written digits (postal code) into numbers.
   * Its ROC can be drawn as follows
 
-![](assets/images/ROC-digits.png) <!-- {"left" : 2.28, "top" : 2.58, "height" : 4.24, "width" : 5.69} -->
+![](../../assets/images/machine-learning/ROC-digits.png) <!-- {"left" : 2.28, "top" : 2.58, "height" : 4.24, "width" : 5.69} -->
 
 
 
@@ -1266,7 +1266,7 @@ Notes:
 # Bias Variance Tradeoff
 ## Estimating Target Function
 
-  * In supervised algorithms try to estimate target function 
+  * In supervised algorithms try to estimate target function
 'f'`Y = f(X)``Y: output,   X: input`
 
   * The error can be broken down to
@@ -1341,7 +1341,7 @@ Notes:
 ---
 ## Bias Variance Trade Off
 
-![](assets/images/Bias-Variance.png) <!-- {"left" : 1.59, "top" : 1.5, "height" : 5.32, "width" : 7.07} -->
+![](../../assets/images/machine-learning/Bias-Variance.png) <!-- {"left" : 1.59, "top" : 1.5, "height" : 5.32, "width" : 7.07} -->
 
 
 
@@ -1371,7 +1371,7 @@ Notes:
 ---
 ## Bias-Variance Trade Off
 
-![](assets/images/Bias-Variance-Trade-Off.png) <!-- {"left" : 1.02, "top" : 1.5, "height" : 5.32, "width" : 8.21} -->
+![](../../assets/images/machine-learning/Bias-Variance-Trade-Off.png) <!-- {"left" : 1.02, "top" : 1.5, "height" : 5.32, "width" : 8.21} -->
 
 
 
