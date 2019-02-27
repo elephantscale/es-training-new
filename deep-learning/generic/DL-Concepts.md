@@ -135,7 +135,36 @@ In matrix operations this is
 # Neural Network Concepts
 
 ---
-# Backpropagation
+
+## NN Concepts (Overview)
+
+- Learning rate, Loss function, Cost
+
+- Batch size, epoch, iterations
+
+- Backpropagation
+
+- Activation Functions
+
+- Vanishing / Exploding gradient problem
+
+- Gradient clipping
+
+- Optimizers
+
+---
+
+
+---
+# NN Concepts: Batch size / Epoch / Iterations
+
+---
+
+[DL-Loss-Functions](DL-Loss-Functions.md)
+
+---
+
+# NN Concepts: Backpropagation
 
 ---
 
@@ -228,348 +257,12 @@ Notes:
 ---
 
 
-# Activations Functions
+# Activation Functions
+
+[Activation Functions](DL-activation-functions.md)
 
 ---
 
-## Activation Functions
-
-- Once we have the output of neuron, what do we do it?
-
-- In our previous example, we defined a step function
-
-     - If the output was greater than threshold b, `y = 1`,
-
-     - Else, `y = 0`
-
-     - Not Differentiable (no gradient, and can’t use gradient descent to optimize)
-
----
-
-## Activation Functions
-
-- None (just use raw output of neuron)
-- Linear
-- Sigmoid
-- Tanh
-- ReLU
-- Leaky ReLU
-
-<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
-
-Notes:
-
----
-## Activation Function - Linear
-
-<img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
-
-
-* `y = a.X + b`
-
-* Differentiable
-   - So we *can* use gradient descent
-
-* Commonly used for **Regresssion**
-
-* Linear Regression:
-   - Single Layer (Linear)
-   - Linear Activation Function
-
-
-Notes:
-
----
-## Activation Function - Sigmoid
-
-<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" /> <!-- {"left" : 1.72, "top" : 3.21, "height" : 3.86, "width" : 6.81} -->
-
-- `σ(z) = 1 / (1 + exp(–z))`
-
-- Sigmoid(Logistic) function has well defined non-zero derivative throughout
-    - so we can use Gradient Descent
-
-- Sigmoid function ranges from **`0 to +1`**
-
-- Implementing Logistic Regression:
-    - Single Layer (Linear)
-    - Sigmoid Activation Function
-
-- Note: Historically Sigmoid function has been very popular.  
-Recently, ReLU functions work better and are more popular now.
-
-
-Notes:
-
-
----
-## Tanh Activation
-
-- `tanh (z) = 2σ(2z) – 1`
-
-- Tanh is more popular, rather than Sigmoid
-
-- The two are closely related, as tanh is a “stretched” Sigmoid
-
-- Just like Sigmod, Tanh is S-shaped, continuous, and differentiable
-
-- Tanh is symmetric around zero and ranges from **`-1 to +1`**   
-(sigmoid ranges from **`0 to +1`**)
-
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />  <!-- {"left" : 0.77, "top" : 3.3, "height" : 3.24, "width" : 8.71} -->
-
-
-Notes:
-
----
-
-# Vanishing/Exploding Gradients Problems
-
----
-
-## Vanishing/Exploding Gradients Problems
-
-- As we know backpropagation works by going from output  layer to input layer (in reverse)
-    - It propagates the error gradient backwards
-- As it moves through the layers, the gradients gets smaller and smaller as it reaches lower layers
-- So the Gradient Descent algorithm will leave lower layer connection weights virtually unchanged
-    - and training never converges to a solution
-    - this is **vanishing gradients problem**
-- In some instances, the opposite would happen, the gradients will get larger and larger
-    - so layers will get huge weight updates
-    - and the algorithm will be bouncing around, never converging
-    - this is **exploding gradients** problem
----
-
-## Vanishing / Exploding Gradient Problems
-
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%" />
-
-- Sigmoid and Tanh both suffer from the **Vanis hing Gradient** problem.
-     - The derivative of a Sigmoid is less than .25
-     - As we propagate that through many layers, that gradient becomes much less.
-- And their slopes (derivatives) get closer to zero for large input values
-    - this is called **saturating**
-- Another issue is sometimes the gradients become too big
-    - **Exploding gradients**
-- One way is to fix the vanishing/exploding gradient problem is repeated scaling.
-
-Notes:
-
----
-
-## Vanishing/Exploding Gradients Problems
-
-- Vanishing/exploding gradient problem has been observed in deep neural networks in the early days
-    - One of the reasons, the progress was stalled
-
-- In 2010 Xavier Glorot and Yoshua Bengio published a game changing paper called ['Understanding the difficulty of training deep feedforward neural networks'](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)
-    - This paper outlined very good techniques that solved some of the nagging problems of neural nets
-
----
-
-##  Use a Different Activation Function Than Sigmoid
-
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%" />
-
-#### Problem:
-- Sigmoid function was the most popular activation function used at that time   
-    - Because sigmoid like functions are found in biological neurons.  (What is good for Mother Nature must be good for us too!)
-
-- How ever, Sigmoid functions tend to 'saturate' at high values (towards the edges), that meand derivatives get close to zero.
-    - Leads to vanishing gradients problem
-
-#### Solution
-- Use other activation functions like ReLU or variants (LeakyReLU)
-
----
-
-## Activation Function - Rectified Linear Unit (ReLU)
-
-<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" /> <!-- {"left" : 0.58, "top" : 3.26, "height" : 3.57, "width" : 9.09} -->
-
-- `ReLU (z) = max (0, z)`
-- ReLU is Linear when greater than zero, and constant (zero) less than zero
-- So for positive values, doesn't have a maximum value
-- For values less than zero, differential becomes zero
-- ReLU is used very heavily
-    - Simple: very easy to understand
-    - Fast: computationally cheap to compute
-    - No Vanishing gradient problem
-    - No Exploding Gradient problem
-    - and **works well in real life scenarios**
-
-
-Notes:
-
-
----
-
-## Activation Function : Leaky ReLU
-
-<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
-
-- ReLU isn't perfect; For values at or below zero or values, ReLU derivative is zero
-    - Gradient Descent can not be used
-    - Called **dying ReLU** problem
-- **Leaky ReLU** fixes this by introducing a slope for negative values
-- `LeakyReLUα(z) = max(αz, z)`  
-`here ⍺ = 0.001` (small value, configurable)
-- `α` controls how much the ReLU function 'leaks'
-- This leak ensures that the signals never die (zero) and have a chance to wake up during later training phases  
-(Going into coma vs. death :-)
-
----
-
-## ReLU Variants
-
-- [This paper](https://arxiv.org/pdf/1505.00853.pdf) compares various ReLU implementations
-
-- Leaky ReLU seems to perform better in most scenarios than regular ReLU
-    - E.g. setting α=0.2 (huge leak) seems to outperform α=0.001 (small leak)
-
-- Setting α randomly also seems to perform well
-    - Got an additional benefit of acting as a regulator, preventing overfitting
-
----
-
-## Exponential Linear Unit (ELU)
-
-- A 2015 [paper](https://arxiv.org/pdf/1511.07289v5.pdf) by Djork-Arne Clevert, Thomas Unterthiner & Sepp Hochreiter introduced ELUs
-
-- ELU outpermed all other ReLU variants, it trained quicker, and test accuracy was higher too.
-
-<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%;"/>
-
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:40%;"/>
-
----
-
-## ELU Highlights
-
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
-
-- Not zero for negative values (z < 0)
-    - prevents signals dying out
-
-- Works for negative values (z < 0) (doesn't go to zero).
-    - So avoids vanishing gradients problem
-
-- Very smooth function, even at z = 0
-    - This makes smoother gradient descent convergence; it doesn't bounce around
-
-- Downside:
-    - More expensive to compute due to exponential function
-
----
-
-## Final Word on ReLUs
-
-- So which ReLU to use? :-)
-
--  `ELU > leaky ReLU (and its variants) > ReLU > tanh > logistic`
-
-- If enough compute power is available, use **cross validation** to tweak hyper parameters like α
-
----
-
-## Multi-class (non-binary) Outputs
-
- * So far, our neural networks have had exactly one output neuron.
-
-     - For regression problems, the output neuron generates the response variable (a continuous value, e.g.  `stock price = 60.4`).
-
-     - For classification problems, the output is binary (`0/1`)
-
- * What about multi-class classification? (non-binary)  
- For example, classifying a digit into one of `0, 1, 2 ... 9`
-
-     - We need more than one output neuron.
-
-     - Exactly one neuron for each class in classification.
-
- * How do we generate the output classes?
-
-     - We can use a function called `Softmax`
-
-Notes:
-
-
----
-## Activation Function - Softmax
-
-- The Softmax function converts an array of values to an array of probabilities.
-
-- For example a digit classifier can produce the following output
-
-| output class | 0   | 1    | 2   | 3    | 4    | 5   | 6   | 7   | 8   | 9   |
-|--------------|-----|------|-----|------|------|-----|-----|-----|-----|-----|
-| probability  | 0.0 | 0.15 | 0.0 | 0.00 | 0.05 | 0.0 | 0.0 | 0.8 | 0.0 | 0.0 |
-
-
-- The resultant array must add up to 1, because the output enumerates all probabilities
-
-- We can implement the softmax function on the output, where we have k neurons indicating that we expect to see k number of output classes.
-
-Notes:
-
-
----
-## Softmax Function
-
-<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.38, "top" : 1.5, "height" : 4.5, "width" : 9.48} -->
-
-
-
-Notes:
-
-
----
-## Deciding the loss and activation type based on the task
-
-| Classification Type       | Class Mode  | Loss                     | Activation on the last layer |
-|---------------------------|-------------|--------------------------|------------------------------|
-| 1 or 2 class              | binary      | binary_crossentropy      | sigmoid                      |
-| Multi-class, single label | categorical | categorical_crossentropy | softmax                      |
-| Multi-class, multi-label  | categorical | binary_crossentropy      | sigmoid                      |
-
-Notes:   
-Source :
-
-
----
-## Logistic Regression Redux?
-
-
- * What we’ve done so far is essentially create a logistic regression classifier.
-
- * In fact, with the Sigmoid activation function, we’ve done essentially exactly that.
-
- * So are neural networks just a implementation scheme for logistic regression?
-
-     - Not really.
-
-Notes:
-
----
-
-## Activation Functions - Review
-
-
- * A Sigmoid Function is a mathematical function with a Sigmoid Curve (“S” Curve) and outputs a probability between 0 and 1.
-
- * A rectifier or ReLU (Rectified Linear Unit) is a commonly used activation function that allows one to eliminate negative units in an ANN. It helps solve vanishing/exploding gradient problems associated with other activation functions.
-
- * Hyperbolic or tan h function is an extension of logistic sigmoid with output stretching between -1 and +1. It enables faster learning compared to a Sigmoid.
-
- * The Softmax activation function is used to output the probability of the result belonging to certain classes.
-
----
-## Activation Functions Review
-
-<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
-
----
 
 # Neural Network Modern Techniques
 
@@ -718,11 +411,198 @@ Notes:
 
 ---
 
-# Optimizers
+## Figuring Out The Optimal Learning Rate
+
+- Learning Rate (⍺) is a very important factor in the algorithm converging (finding the global minimum)
+
+- Set it too high, algorithm may diverge
+
+- Set it too low, algorithm will eventually converge, but will take too many iterations and too long
+
+- Set it a little high, it will make quick progress at the start, then bounce around the global minimum (not settling)
+
+- Modern optimizers like Adagrad, RMSProp and Adam have adaptive learning rate (they can adjust learning rate as training progresses)
 
 ---
 
- ## Review
+## Learning Rate
+
+<img src="../../assets/images/deep-learning/learning-rate-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%"/>
+
+---
+
+## How to Find the Optimal Learning Rate
+
+- Start with high learning rate
+
+- Run a few epochs of training
+
+- Watch the convergence using a tool like **[Tensorboard](https://www.tensorflow.org/guide/summaries_and_tensorboard)**
+
+- Adjust learning rate, rinse and repeat
+
+---
+
+# Optimizers
+
+[Optimizers](DL-Optimizers.md)
+
+---
+
+# Avoiding Overfitting
+
+---
+
+## Managing Overfitting
+
+* Neural networks have tens of thousands / millions of  parameters
+
+* With these many parameters, the networks are very flexible, they can fit very complex data sets
+
+* Also means the network can overfit training data
+
+* How to manage overfitting?
+    - Regularization
+    - Early stopping
+    - Dropout
+    - Max-norm regularization
+    - Data augmentation
+
+---
+
+## Early Stopping
+
+- Don't train too long
+- Interrupt training when its performance on the validation set starts dropping.
+- How to do it?
+    - Measure validation accuracy every few steps (say 20)
+    - If it scores higher than previous snapshot, save the current model snapshot as 'winner'
+
+<img src="../../assets/images/deep-learning/early-stopping-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/>
+
+---
+
+## Regularization
+
+ * In conventional ML we often use regularization to control overfitting.
+
+ * L1 and L2 are common mechanisms for regularization
+
+ * In DL, Regularization is probably not enough
+   - Even penalized, certain features will eventually dominate.
+   - DL will always overfit, even with L1/L2.
+
+ * Is there something else we can do?
+
+---
+
+## Dropout
+
+* **Dropout** is the most popular regularization technique for deep neural networks
+
+* It was proposed by Geoffrey Hinton in 2012 ([paper1](https://arxiv.org/pdf/1207.0580.pdf), [paper2](http://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf))
+
+* By omitting half the neurons' signal (50% dropout rate), they were able to increase an accuracy of state of the art model from 95%  to 97.5%  
+    - This may not seem like a lot, but the error rate improved from 5% to 2.5%  (that is 50% reduction in error!)
+
+* How does it work?
+    - At every trainng step, each neuron has a chance (probablity) of being 'dropped'.  
+    Meaning, it's output ignored during this step
+    - The neuron can become active during the next step
+    - Neurons in input layer and hidden layer can be dropped
+    - Output neurons are not dropped
+    - The parameter (p) is called 'dropout rate' - varies from 0 to 1.0.  
+    Typically set to 0.5 (50%)
+
+---
+
+## Dropout
+
+<img src="../../assets/images/deep-learning/dropout-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%"/>
+
+---
+
+## Dropout
+
+- It is really surprising, that dropout method works in real life.  
+Imagine this scenario
+
+- Workers of this 'unicorn' company
+    - Every morning they toss a coin
+    - 'Heads' they come to work, 'tails' they don't
+    - So that means 50% of workers don't show up at any day
+    - 'Dropput' method says, this makes the 'company' as a whole, perform better :-)
+
+- Increase dropout rate, if you notice the model is overfitting.  
+Decrease it if it is underfitting
+
+- Dropout slows down the model convergence, but the model you get is much better at the end
+
+---
+
+## Max-Norm Regularization
+
+- Max-Norm regularization is very popular for neural networks
+
+- for each neuron, it constrains the weights `w` of the incoming connections such that ||w||2 ≤ r
+    - where r is the max-norm hyperparameter and ||.||2 is the L2 norm
+
+- TODO : draw formula  
+<img src="../../assets/images/deep-learning/min-max-regularization-1.png" alt="XXX image missing" style="background:white;max-width:100%;" />
+
+- Max-norm regularization can also help reduce the vanishing/exploding gradients
+
+---
+
+## Data Augmentation
+
+- **Data augmentation** creates new training instances from existing ones
+    - this artifically boosts training set size
+
+- This technique is mostly used in image training
+
+- Common techniques involve:
+    - adjusting brightness
+    - introducing some noise
+    - rotating images slightly clockwise / anti-clockwise (10 to 20 degrees)
+    - cropping images / moving centers
+
+- See next slide for an example
+
+---
+
+## Data Augmentation Example
+
+<img src="../../assets/images/deep-learning/data-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%"/>
+
+---
+
+## Stochastic Pooling
+ * Normally, we apply MAX function for pooling
+   - sometimes AVG (mean) pooling, but less often these days
+ * Problem: Selecting MAX tends to overfit!
+ * What if we do something else?
+ * "Stochastic" pooling means we randomly choose another one.
+ * Conform to normal distribution.
+ * Similar to dropout in that we randomly ignore a preferred weight.
+
+---
+
+## Final Words
+
+These default values should get you started, and should work well in most scenarios
+
+| Parameter                  | Value                                |
+|----------------------------|--------------------------------------|
+| **Initialization**         | He initialization                    |
+| **Activation function**    | ELU                                  |
+| **Normalization**          | Batch Normalization                  |
+| **Regularization**         | Dropout                              |
+| **Optimizer**              | Adam / Nesterov Accelerated Gradient |
+| **Learning rate schedule** | None                                 |
+---
+
+## Review Questions
 
  TODO Shiva: I need an icon for 'quiz'
 
@@ -730,3 +610,9 @@ Notes:
 
  - **Q:** How many neurons do you need in the output layer to classify emails into spam/ham?
      - how about for classifying digits 0 to 9?
+
+- **Q:** Name advantages of the ELU activation function over ReLU
+
+- **Q:** In which cases you would use the following activation functions: ELU, leaky ReLU (and its variants), ReLU, tanh, logistic, and softmax?
+
+- **Q:** Explain how Dropoff works
