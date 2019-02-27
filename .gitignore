@@ -2,11 +2,12 @@
 .DS_Store
 *.log
 *.out
-*.pdf
 
-## slide gen
+## ES Slides stuff
 *-gen.md
 assembly.out/*
+*.pptx
+*.pdf
 
 # Python
 __pycache__/
