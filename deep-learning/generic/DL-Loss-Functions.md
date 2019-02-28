@@ -127,8 +127,7 @@ $$  MSE = \frac{1}{n} \sum_{i=1}^{n}(y_i - \hat y_i)^2  $$
 `MSE = (4  + 1 + 1 + 9 + 9)/5 = 24 / 5 = 4.2`
 
 - Properties
-    - Can be sensitive to outliers
-    - Predictions that deviate a lot from actual values are penalized heavily
+    - Can be sensitive to outliers; predictions that deviate a lot from actual values are penalized heavily
     - Easy to calculate gradients (fast)
 
 
@@ -140,8 +139,6 @@ https://isaacchanghau.github.io/post/loss_functions/
 ## Mean Absolute Error (MAE) (L1)
 
 <!-- <img src="../../assets/images/machine-learning/error-MAE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
-
-- MAE looks at absolute errors
 
 $$  MAE = \frac{1}{n} \sum_{i=1}^{n} \lvert y_i - \hat y_i \rvert  $$
 

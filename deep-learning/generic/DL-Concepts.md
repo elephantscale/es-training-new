@@ -152,13 +152,133 @@ In matrix operations this is
 
 - Optimizers
 
+
 ---
+
+## Data Instance / Sample
+
+- Sample is a single row of data
+
+- Sample has inputs (vectors) and output
+    - algorithm makes a prediction from inputs, and compares the prediction with actual (expected) output
+
+- Sample = instance / observation / input vector / feature vector
+
+- In the following example, we have 3 data points / samples
+
+
+| Instance   | Input A | Input B | Input C | Output Y |
+|------------|---------|---------|---------|----------|
+| Instance 1 | a1      | b1      | c1      | y1       |
+| Instance 2 | a2      | b2      | c2      | y2       |
+| Instance 3 | a3      | b3      | c3      | y3       |
+
+---
+
+## Epoch
+
+- One **Epoch** means when an entire dataset passed forward and backward exactly ONCE
+
+- Why do we need more than one epoch?
+
+- Optimizer algorithms try to adjust the weights of neural networks  based on training data
+
+- Just one-pass isn't enough to tweak the weights
+    - leads to under-fitting
+
+- As we pass the data back and forth multiple times (multiple epochs) the model gets more accurate
+    - Too many epochs, will lead to overfitting (not good either)
+
+- Epoch values are typically in hundreds or thousands
+
+Notes:   
+- https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9
+---
+
+## Batch size
+
+- When we are trining on large dataset, we can not fit the entire dataset into the network due to memory constraints / processing restraints
+
+- So we send data into batches
+
+- Algorithms (Optimizers) update the weights of neural network after each batch
+    - At the end of the batch, predictions are compared with output
+    - Error is calculated
+    - The algorithm will then calculate error gradient and make the move to minimize the error during the next cycle
+
+
+- Batch size is uaually power of 2 (4, 8, 16, 64 ...)
+
+Notes:  
+- https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/
+
+---
+
+## Batch Size Calculations
+
+| Batch Size                            | Algorithm                    | Description                                        |   |
+|---------------------------------------|------------------------------|----------------------------------------------------|---|
+| Size of Training Set                  | Batch Gradient Descent       | All data goes in a single batch                    |   |
+| 1                                     | Stochastic Gradient Descent  | Each batch has one data sample                     |   |
+| 1 < batch size < size of training set | Mini-Batch Gradient Descent. | Batch size is usually power of 2 (32, 64, 128...) |   |
+
+- What if data size is not divisable evenly by batch size?
+    - That is fine, the last batch will have what is left, and will be smaller than previous batches
+    - For example, if we have 10 data points and batch size is 4
+        - batch-1 = 4, batch-2 = 4, batch-3 = 2
 
 
 ---
-# NN Concepts: Batch size / Epoch / Iterations
+
+## Iterations
+
+- Iterations is the number of batches needed to complete one epoch.
+
+- `Iterations  = data size / batch size  (round up the result)`
+
+- For each epoch, we will need to run `iteration` amount of times to pass the whole data through the network
+
+```
+# think like a nested loop
+
+for e  in number_of_epochs {
+    iterations = round_up (data_size / batch_size)
+    for i in iterations {
+        # process batch i
+    }
+}
+```
 
 ---
+
+## Epoch / Batch size / Iterations
+
+- We have 10 data points
+
+- Batch size is 4
+
+- Iterations = 10 / 4 = 3 (round up!)
+
+<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" alt="XXX image missing" style="background:white;max-width:100%;" />
+
+---
+## Determning Optimal Values or Batch Size / Epochs
+
+- Typical epochs values are in 100s to thousands
+
+- Batch sizes are powers of 2 (32, 64, 128 ... ).  
+  32 is a good value to start with
+
+- One epoch will typically will have many iterations
+    - Each iteration processing a single batch
+
+- There is no magic formula to calculate the optimal values of batch size and epoch
+    - In practice, we try a few runs to figure out optimal  values
+
+
+---
+
+# Loss Functions
 
 [DL-Loss-Functions](DL-Loss-Functions.md)
 
