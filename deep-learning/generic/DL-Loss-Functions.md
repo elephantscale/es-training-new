@@ -6,8 +6,7 @@
 
 - Error is the difference (delta) between actual value and predicted value
 
-- TODO: Formula  
-`Error = y  - ŷ`  
+- `Error = y  - ŷ`  
 `y = actual value`  
 `ŷ = predicted value`
 
@@ -95,15 +94,15 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Sum of Squared Errors (SSE)
 
+$$ SSE = \sum_{i=1}^{n}(y_i - \hat y_i)^2 $$
+
+<!-- <img src="../../assets/images/machine-learning/error-SSE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
+
 - Also known as
     - **Residual Sum of Squares (RSS)**
     - **Sum of Squared Residuals (SSR)**
 
 - SSE also 'amplifies' the errors (because of squaring)
-
-$$ SSE = \sum_{i=1}^{n}(y_i - \hat y_i)^2 $$
-
-<!-- <img src="../../assets/images/machine-learning/error-SSE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
 
 
 ---
