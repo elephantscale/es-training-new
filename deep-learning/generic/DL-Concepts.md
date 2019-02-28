@@ -330,7 +330,7 @@ Notes:
 
 ## Backpropagation Math
 
-- TODO : need a icon for math
+<img src="../../assets/images/icons/math-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
 
 - Given a cost function `C`
 
@@ -422,13 +422,21 @@ These are discussed in the following sections/slides
 - For layer with n-inputs and n-outputs
 
 - Normal distribution with mean 0 and standard deviation σ as follows  
-<img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
+
+$$ \sigma=\sqrt{\frac{2}{n_{inputs}+n_{outputs}}} $$
+<!-- <img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
 
 - Or Uniform distribution between -r and r with r  
-<img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
+$$ r=\sqrt{\frac{6}{n_{inputs}+n_{outputs}}} $$
+<!-- <img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
 
 - When number of inputs == number of outputs, we get a simplified equation  
-<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />   <img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+
+$$ r=\sqrt{3}/\sqrt{n_{inputs}} $$
+
+$$ \sigma=1/\sqrt{n_{inputs}} $$
+
+<!-- <img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />   <img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /> -->
 
 Notes:  
 Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/ch02.html), Ch 2
