@@ -9,6 +9,7 @@ assembly.out/*
 *.pptx
 *.pdf
 1.md
+1.png
 
 # Python
 __pycache__/
