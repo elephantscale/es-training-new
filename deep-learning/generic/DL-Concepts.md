@@ -104,7 +104,7 @@ Source : [Neural networks and deep learning](https://learning.oreilly.com/librar
 
 - Simplest type of feedforward neural network
 
-<img src="../../assets/images/deep-learning/perceptron_schematic.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" /> <!-- {"left" : 0.75, "top" : 2.28, "height" : 4.55, "width" : 8.75} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" /> <!-- {"left" : 0.75, "top" : 2.28, "height" : 4.55, "width" : 8.75} -->
 <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
 
 
@@ -128,7 +128,7 @@ In matrix operations this is
     - if sum is positive (`z >= 0`) --> output is 1
     - otherwise, output is 0
 
-<img src="../../assets/images/deep-learning/perceptron_schematic.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
 
 ---
 

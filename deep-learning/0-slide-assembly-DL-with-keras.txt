@@ -9,9 +9,14 @@
 About-DL-Class-Keras.md
 
 ## Intro
+
 ## TODO
+
 # AI-Intro.md
 generic/DL-Intro.md
+generic/DL-Concepts.md
+
+# Keras
 keras/Keras-1__Intro.md
 
 ## Linear

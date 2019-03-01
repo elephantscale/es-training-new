@@ -121,8 +121,18 @@ As we can see, Keras is almost 50% more compact.
 
 ## Deep Learning Libraries Popularity
 
-TODO : insert table
+These stats stats are from Github
 
+| Library                       | Stars | Contributors |
+|-------------------------------|-------|--------------|
+| tensorflow/tensorflow         | 92150 |     1357     |
+| fchollet/keras                | 26744 |      638     |
+| BVLC/caffe                    | 23159 |      264     |
+| Microsoft/CNTK                | 13995 |      173     |
+| dmlc/mxnet                    | 13318 |      492     |
+| pytorch/pytorch               | 12835 |      414     |
+| deeplearning4j/deeplearning4j | 8472  |      140     |
+| caffe2/caffe2                 | 7540  |      176     |
 
 Notes:  
 Source: 'Practical Deep Learning for Cloud and Mobile' (ISBN : 9781492034841), Ch 2
@@ -447,35 +457,95 @@ d = Dropout(rate = 0.1,seed=100)
 
 - We can specify the optimizers by 'name' or initialize the respective classes for customization
 
-- SGD : Stochastic Gradient Descent Optimizer
-    - Used for regression problems
-    - converges pretty quickly
-    - scales to large amount of data
+- Choice of optimizers
+    - SGD : Stochastic Gradient Descent Optimizer
+    - Momentum / Nestrov
+    - Adagrad
+    - RMSProp
+    - Adam
+
+---
+
+## Optimizer: SGD
 
 ```python
 from keras.optimizers import SGD
 
-sgd = (SGD(lr=0.01, decay=1e-6,
-          momentum=0.9, nesterov=True))
-(model.compile(optimizer=sgd,
-              loss='mean_squared_error'))
+sgd = SGD(lr=0.01,
+          decay=1e-6,
+          momentum=0.9,
+          nesterov=True)  # using Nestrov momentum
+
+model.compile(optimizer=sgd, loss='mean_squared_error')
 ```
+
+
+- Arguments
+    - `lr`: float >= 0. Learning rate.
+    - `momentum`: float >= 0. Parameter that accelerates SGD in the relevant direction and dampens oscillations.
+    - `decay`: float >= 0. Learning rate decay over each update.
+    - `nesterov`: boolean. Whether to apply Nesterov momentum.
 
 ---
-## Keras Optimizers
 
-- Adam : TODO
+## Optimizer: Adagrad
+
 ```python
-model.compile(optimizer='adam',...)
+adagrad = keras.optimizers.Adagrad(lr=0.01,
+                                   epsilon=None,
+                                   decay=0.0)
+
+model.compile(optimizer=adagrad, ...)
 ```
 
-- RMSProp
-    - Good for RNNs
+- Arguments
+    - `lr`: float >= 0. Initial learning rate.
+    - `epsilon`: float >= 0. If None, defaults to K.epsilon().
+    - `decay`: float >= 0. Learning rate decay over each update.
+
+
+---
+
+## Optimizer: RMSProp
+
 ```python
-model.compile(optimizer='rmsprop', ...)
+rmsprop = keras.optimizers.RMSprop(lr=0.001,
+                                   rho=0.9,
+                                   epsilon=None,
+                                   decay=0.0)
+
+model.compile(optimizer=rmsprop, ...)
 ```
 
-- Adagrad : TODO
+- Arguments
+    - `lr`: float >= 0. Learning rate.
+    - `rho`: float >= 0.
+    - `epsilon`: float >= 0. Fuzz factor. If None, defaults to K.epsilon().
+    - `decay`: float >= 0. Learning rate decay over each update.
+
+---
+
+## Optimizer: Adam
+
+```python
+adam = keras.optimizers.Adam(lr=0.001,
+                             beta_1=0.9,
+                             beta_2=0.999,
+                             epsilon=None,
+                             decay=0.0,
+                             amsgrad=False)
+
+model.compile(optimizer=adam, ...)
+```
+
+- Arguments
+    - `lr`: float >= 0. Learning rate.
+    - `beta_1`: float, 0 < beta < 1. Generally close to 1.
+    - `beta_2`: float, 0 < beta < 1. Generally close to 1.
+    - `epsilon`: float >= 0. Fuzz factor. If None, defaults to K.epsilon().
+    - `decay`: float >= 0. Learning rate decay over each update.
+    - `amsgrad`: boolean. Whether to apply the AMSGrad variant of this algorithm from the paper "On the Convergence of Adam and Beyond".
+
 
 ---
 
@@ -484,10 +554,13 @@ model.compile(optimizer='rmsprop', ...)
 We will look at a few popular Loss functions.  
 For full list see [Keras documentation](https://keras.io/losses/#available-loss-functions).
 
+- Loss functions are defined in [keras.losses](https://keras.io/losses) package
+
 - For Regressions:
     - Mean Squared Error
     - Mean Absolute Error
     - Mean Squared Logarithmic Error
+
 - For Classifications:
     - Categorical Crossentropy
     - Binary Crossentropy
@@ -599,8 +672,6 @@ Here is the overall workflow for creating a Sequential model:
 - We will have 2 dense layers
     - First layer will have 8 neurons, with 'ReLU' activation
     - Second layer will have 3 neurons with 'SoftMax' activation
-
-TODO: redraw image
 
 <img src="../../assets/images/deep-learning/iris_feedforward_neural_network.png" alt="iris_feedforward_neural_network.png" style="width:70%;"/>
 
@@ -827,7 +898,7 @@ See next slide for a visualization.
 
 ## Keras and Tensorboard
 
-<img src="../../assets/images/deep-learning/tensorboard2.png" alt="keras tensorboard" style="width:75%;"/>
+<img src="../../assets/images/deep-learning/tensorboard-keras.png" alt="XXX image missing" style="width:75%;"/>
 
 ---
 
@@ -835,7 +906,7 @@ See next slide for a visualization.
 
 TODO : need a nicer clipart
 
-<img src="../../assets/images/deep-learning/lab-icon.png" alt="lab" style="width:10%; float=right;"/>
+<img src="../../assets/images/icons/lab-icon-1.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="20%"/>
 
 
 #### Overview
