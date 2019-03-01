@@ -1,16 +1,21 @@
 from ubuntu:bionic
 
+# args for docker file
 ARG MYUSER=ubuntu
 ARG HOME_DIR=/home/${MYUSER}
 ARG CONDA_DIR=${HOME_DIR}/conda
-ARG WORKING_DIR=${HOME_DIR}/work
 ARG NVM_VERSION=0.34.0
 
-ENV NVM_DIR ${HOME_DIR}/nvm
-ENV NODE_VERSION 10.15.1
+# envs for the runtime container
+ENV NVM_DIR         ${HOME_DIR}/nvm
+ENV NODE_VERSION    10.15.1
+ENV ES_HOME         ${HOME_DIR}
+ENV WORKING_DIR     ${HOME_DIR}/work
+ENV NODE_PATH       ${NVM_DIR}/v${NODE_VERSION}/lib/node_modules
+ENV PATH            ${NVM_DIR}/versions/node/v${NODE_VERSION}/bin:${PATH}
 
 ## update all system
-RUN apt-get update -yq && \
+RUN apt-get update --fix-missing -yq && \
     apt-get -yq upgrade
 
 ## basic utils
@@ -23,6 +28,7 @@ RUN apt-get install -yq  --no-install-recommends \
     less \
     libssl-dev \
     jq \
+    openssh-client \
     nano \
     rsync \
     sudo \
@@ -57,8 +63,6 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/v${NVM_VERSION}/instal
     && nvm alias default ${NODE_VERSION} \
     && nvm use default
 
-ENV NODE_PATH ${NVM_DIR}/v${NODE_VERSION}/lib/node_modules
-ENV PATH      ${NVM_DIR}/versions/node/v${NODE_VERSION}/bin:${PATH}
 
 ## install reveal-md
 RUN  npm -g install npm
@@ -84,3 +88,27 @@ RUN ${CONDA_DIR}/bin/pip install \
 
 ## work dir
 RUN mkdir -p ${WORKING_DIR}
+
+## Copy deployment key
+RUN mkdir -p $HOME_DIR/.ssh/
+COPY ./deploy-key1.*  $HOME_DIR/.ssh/
+COPY ./ssh_config  $HOME_DIR/.ssh/config
+RUN sudo chown ${MYUSER}  $HOME_DIR/*  $HOME_DIR/.ssh/*
+
+## Get github key
+RUN ssh-keyscan github.com >> $HOME_DIR/.ssh/githubKey
+RUN cat $HOME_DIR/.ssh/githubKey >> $HOME_DIR/.ssh/known_hosts
+
+
+## git repo setup
+RUN git clone git@github.com:elephantscale/utils.git  $ES_HOME/utils
+
+COPY ./startup.sh  $HOME_DIR/
+RUN sudo chown ${MYUSER}  $HOME_DIR/*  $HOME_DIR/.ssh/*
+RUN sudo chmod +x  $HOME_DIR/*.sh
+
+
+USER ${MYUSER}
+
+ENTRYPOINT ["./startup.sh"]
+#CMD ["bash"]

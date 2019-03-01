@@ -2,19 +2,9 @@
 
 ## TODO-FIX : This script has to be run from the top level directory
 
-## absolute path
-# this="${BASH_SOURCE-$0}"
-# mydir=$(cd -P -- "$(dirname -- "$this")" && pwd -P)
-# script="$(basename -- "$this")"
-# this="$mydir/$script"
-
-## relative path
-#this="${BASH_SOURCE-$0}"
-#mydir=$(dirname -- "$this")
-
 mydir="."
+port=2001
 
-#md_files=$(find keras -type f -name "*.md")
 md_files="$@"
 for md_file in $md_files
 do
@@ -27,7 +17,7 @@ do
 
     echo "===== printing '$md_file' --> '$output_file'"
 
-    reveal-md --port 1949 \
+    reveal-md --port $port \
     $md_file \
     --theme "$mydir/assets/css/theme/es.css" \
     --template "$mydir/assets/css/es-template.html"  \

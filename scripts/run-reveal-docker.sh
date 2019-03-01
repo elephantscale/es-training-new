@@ -19,7 +19,7 @@ mydir=$(pwd -P)
 ##  1948-1950 : Reveal UI
 
 docker run -it   \
-    -p 1948-1950:1948-1950 \
+    -p 2000:2000 \
     -v"$mydir:/home/ubuntu/work" \
     "$image_id" \
     ${cmd}
