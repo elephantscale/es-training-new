@@ -308,19 +308,6 @@ Notes:
 Source :
 
 
----
-## Logistic Regression Redux?
-
-
- * What we’ve done so far is essentially create a logistic regression classifier.
-
- * In fact, with the Sigmoid activation function, we’ve done essentially exactly that.
-
- * So are neural networks just a implementation scheme for logistic regression?
-
-     - Not really.
-
-Notes:
 
 ---
 

@@ -904,9 +904,7 @@ See next slide for a visualization.
 
 ## Lab
 
-TODO : need a nicer clipart
-
-<img src="../../assets/images/icons/lab-icon-1.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="20%"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%"/>
 
 
 #### Overview
