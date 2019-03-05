@@ -1,4 +1,4 @@
-from ubuntu:bionic
+FROM ubuntu:bionic
 
 # args for docker file
 ARG MYUSER=ubuntu
@@ -8,7 +8,7 @@ ARG NVM_VERSION=0.34.0
 
 # envs for the runtime container
 ENV NVM_DIR         ${HOME_DIR}/nvm
-ENV NODE_VERSION    10.15.1
+ENV NODE_VERSION    10.15.2
 ENV ES_HOME         ${HOME_DIR}
 ENV WORKING_DIR     ${HOME_DIR}/work
 ENV NODE_PATH       ${NVM_DIR}/v${NODE_VERSION}/lib/node_modules
@@ -26,7 +26,7 @@ RUN apt-get install -yq  --no-install-recommends \
     curl \
     git \
     less \
-    libssl-dev \
+    #libssl-dev \
     jq \
     openssh-client \
     nano \
@@ -37,15 +37,58 @@ RUN apt-get install -yq  --no-install-recommends \
     wget \
     zip
 
+## install chromium for reveal-md
 
-## done with all installs
+## stuff for chromium
+RUN apt-get install -yq \
+        gnupg \
+        gconf-service \
+        libasound2 \
+        libatk1.0-0 \
+        libc6 \
+        libcairo2 \
+        libcups2 \
+        libdbus-1-3 \
+        libexpat1 \
+        libfontconfig1 \
+        libgcc1 \
+        libgconf-2-4 \
+        libgdk-pixbuf2.0-0 \
+        libglib2.0-0 \
+        libgtk-3-0 \
+        libnspr4 \
+        libpango-1.0-0 \
+        libpangocairo-1.0-0 \
+        libstdc++6 \
+        libx11-6 \
+        libx11-xcb1 \
+        libxcb1 \
+        libxcomposite1 \
+        libxcursor1 \
+        libxdamage1 \
+        libxext6 \
+        libxfixes3 \
+        libxi6 \
+        libxrandr2 \
+        libxrender1 \
+        libxss1 \
+        libxtst6 \
+        ca-certificates \
+        fonts-liberation \
+        libappindicator1 \
+        libnss3 \
+        lsb-release \
+        xdg-utils \
+        wget
+
+## done with all APT installs
 ## cleanup apt
 RUN apt-get clean && \
         rm -rf /var/lib/apt/lists/*
 
 
 ## Adding a regular ubuntu user
-RUN useradd -rm -d ${HOME_DIR} -s /bin/bash -g root -G sudo -u 1000 ${MYUSER}
+RUN useradd -rm -d ${HOME_DIR} -s /bin/bash -g root -G sudo,audio,video -u 1000 ${MYUSER}
 
 RUN echo "${MYUSER} ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
@@ -64,9 +107,10 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/v${NVM_VERSION}/instal
     && nvm use default
 
 
-## install reveal-md
+## Install npm latest version
 RUN  npm -g install npm
-RUN  npm -g install  reveal-md
+## install reveal-md
+RUN  npm -g -f install  reveal-md
 
 ## install miniconda
 RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh -O ~/miniconda.sh && \
@@ -86,6 +130,9 @@ RUN ${CONDA_DIR}/bin/pip install \
         pytablewriter \
         python-pptx
 
+
+
+
 ## work dir
 RUN mkdir -p ${WORKING_DIR}
 
@@ -94,6 +141,8 @@ RUN mkdir -p $HOME_DIR/.ssh/
 COPY ./deploy-key1.*  $HOME_DIR/.ssh/
 COPY ./ssh_config  $HOME_DIR/.ssh/config
 RUN sudo chown ${MYUSER}  $HOME_DIR/*  $HOME_DIR/.ssh/*
+RUN chmod 0600 $HOME_DIR/.ssh/*
+
 
 ## Get github key
 RUN ssh-keyscan github.com >> $HOME_DIR/.ssh/githubKey
@@ -104,7 +153,8 @@ RUN cat $HOME_DIR/.ssh/githubKey >> $HOME_DIR/.ssh/known_hosts
 RUN git clone git@github.com:elephantscale/utils.git  $ES_HOME/utils
 
 COPY ./startup.sh  $HOME_DIR/
-RUN sudo chown ${MYUSER}  $HOME_DIR/*  $HOME_DIR/.ssh/*
+RUN sudo chown ${MYUSER}  $HOME_DIR/*
+#RUN sudo chown -R ${MYUSER}  $HOME_DIR
 RUN sudo chmod +x  $HOME_DIR/*.sh
 
 
