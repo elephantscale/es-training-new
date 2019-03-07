@@ -1,5 +1,4 @@
-Machine Learning Concepts
-======================================
+# Machine Learning Concepts
 ---
 # Machine Learning Terminology
 ---
