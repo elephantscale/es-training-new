@@ -122,19 +122,7 @@ Notes:
     - Prosper loan data
     - NYSE Stock data
 
-<img src="../../assets/images/machine-learning/3rd-party/NETFLIX.jpg" alt="NETFLIX.jpg" style="width:10%;"/> <!-- {"left" : 6.11, "top" : 1.25, "height" : 0.71, "width" : 1.53} -->
-
-
-<img src="../../assets/images/machine-learning/3rd-party/NYSE.jpg" alt="NYSE.jpg" style="width:10%;"/> <!-- {"left" : 7.99, "top" : 1.21, "height" : 0.79, "width" : 1.53} -->
-
-
-<img src="../../assets/images/machine-learning/3rd-party/PROSPER.jpg" alt="PROSPER.jpg" style="width:10%;"/> <!-- {"left" : 5.58, "top" : 2.45, "height" : 0.71, "width" : 1.82} -->
-
-
-<img src="../../assets/images/machine-learning/3rd-party/UBER.jpg" alt="UBER.jpg" style="width:10%;"/> <!-- {"left" : 8.63, "top" : 3.52, "height" : 0.93, "width" : 0.93} -->
-
-
-<img src="../../assets/images/machine-learning/3rd-party/WALMART.jpg" alt="WALMART.jpg" style="width:10%;"/> <!-- {"left" : 7.56, "top" : 2.45, "height" : 0.6, "width" : 2.08} -->
+<img src="../../assets/images/machine-learning/3rd-party/logos.png" alt="logos.png" style="position: absolute;top: 50%;right: 30px;margin-top: -130px;"/>
 
 
 * No old-worn-out datasets like Iris / Titanic ...
