@@ -122,7 +122,7 @@ Notes:
     - Prosper loan data
     - NYSE Stock data
 
-<img src="../../assets/images/machine-learning/3rd-party/logos.png" alt="logos.png" style="position: absolute;top: 50%;right: 30px;margin-top: -130px;"/>
+<img src="../../assets/images/machine-learning/3rd-party/logos.png" alt="NETFLIX" style="position: absolute;top: 50%;right: 30px;margin-top: -130px;"/> <!-- {"left" : 7.73, "top" : 1.1, "height" : 3.48, "width" : 2.11} -->
 
 
 * No old-worn-out datasets like Iris / Titanic ...
@@ -231,7 +231,6 @@ Notes:
 
 <img src="../../assets/images/machine-learning/3rd-party/icecream.jpg" alt="icecream.jpg" style="width:20%;"/> <!-- {"left" : 1.79, "top" : 4.6, "height" : 2.14, "width" : 2.89} -->
 
-
 <img src="../../assets/images/machine-learning/3rd-party/climbing.jpg" alt="climbing.jpg" style="width:20%;"/> <!-- {"left" : 5.02, "top" : 4.6, "height" : 2.14, "width" : 3.44} -->
 
 
@@ -301,5 +300,3 @@ Notes:
 ## Questions?
 
 * Any Questions?
-
----
