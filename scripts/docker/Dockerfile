@@ -37,8 +37,6 @@ RUN apt-get install -yq  --no-install-recommends \
     wget \
     zip
 
-## install chromium for reveal-md
-
 ## stuff for chromium
 RUN apt-get install -yq \
         gnupg \
@@ -109,7 +107,8 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/v${NVM_VERSION}/instal
 
 ## Install npm latest version
 RUN  npm -g install npm
-## install reveal-md
+
+## install reveal-md by forcing to install puppeteer & Chromium
 RUN  npm -g -f install  reveal-md
 
 ## install miniconda

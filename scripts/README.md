@@ -3,7 +3,7 @@
 ## Step 1 : build the docker
 ```bash
     $   cd scripts  # be in scripts dir
-    $   docker build .
+    $   docker build -t es-reveal .
     # note the id  of docker image
 ```
 
@@ -12,7 +12,7 @@
 From the host env:
 ```bash
     $  cd  es-training-new  # be sure to be in root dir
-    $  ./scripts/run-reveal-docker.sh  <docker image id>
+    $  ./scripts/run-reveal-docker.sh  es-reveal # Or docker image id ($ docker ps -a)
 ```
 
 And now within docker container
