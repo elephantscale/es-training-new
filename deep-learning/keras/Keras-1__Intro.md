@@ -566,7 +566,7 @@ For full list see [Keras documentation](https://keras.io/losses/#available-loss-
 ```python
     keras.losses.mean_squared_error(y_true, y_pred)
 ```
-<img src="../../assets/images/deep-learning/mean-square-error.png" alt="mean-square-error" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/equation-mean-square-error.png" alt="equation-mean-square-error" style="width:30%;"/>
 
 -  **Mean Absolute Error**
 
@@ -574,7 +574,7 @@ For full list see [Keras documentation](https://keras.io/losses/#available-loss-
     keras.losses.mean_absolute_error(y_true, y_pred)
 ```
 
-<img src="../../assets/images/deep-learning/mean-absolute-error.png" alt="mean-absolute-error" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/equation-mean-absolute-error.png" alt="equation-mean-absolute-error" style="width:30%;"/>
 
 ---
 
