@@ -103,7 +103,7 @@ Notes:
 
  * During training the values for  weights w1, w2 have been figured out
 
- <img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/> <!-- {"left" : 2.59, "top" : 1.96, "height" : 5.15, "width" : 5.07} -->
+ <img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%"/> <!-- {"left" : 2.59, "top" : 1.96, "height" : 5.15, "width" : 5.07} -->
 
 Notes:
 
@@ -152,6 +152,9 @@ Notes:
 
 Notes:
 
+----
+
+[DL-Playground.md#Playground Linear Regression](DL-Playground.md)
 
 ---
 ## Lab Review
