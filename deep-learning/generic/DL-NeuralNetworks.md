@@ -8,11 +8,11 @@ Introduction to Neural Networks.
 
  * Understand Convolutional Networks help solve certain hard problems.
 
-Notes: 
+Notes:
 
 
 ---
-# Perceptrons 
+# Perceptrons
 
 ## Activation Functions
 
@@ -33,7 +33,7 @@ Notes:
    - Tanh
    - Relu (Covered later)
 
-Notes: 
+Notes:
 
 
 
@@ -48,7 +48,7 @@ Notes:
    * Differentiable
      - So we *can* use gradient descent
 
-Notes: 
+Notes:
 
 
 
@@ -65,7 +65,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 ---
@@ -83,7 +83,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -102,7 +102,7 @@ Notes:
 
  * However, there is another way.
 
-Notes: 
+Notes:
 
 
 ---
@@ -118,7 +118,7 @@ Notes:
 ![](../../assets/images/deep-learning/activation-sigmoid-vs-relu.png) <!-- {"left" : 0.58, "top" : 3.26, "height" : 3.57, "width" : 9.09} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -134,7 +134,7 @@ Notes:
 
  * Why do we use ReLU?
 
-     - Simple 
+     - Simple
      – very easy understand
      - Fast – computationally very cheap
      - No Vanishing gradient problem
@@ -142,7 +142,7 @@ Notes:
 
  * This is an example where simpler is actually better!
 
-Notes: 
+Notes:
 
 
 
@@ -163,7 +163,7 @@ Notes:
 
      - Output: 1 neuron (unless we use a softmax output layer)
 
-Notes: 
+Notes:
 
 
 
@@ -186,7 +186,7 @@ Notes:
 
      - We can use a function called Softmax
 
-Notes: 
+Notes:
 
 
 ---
@@ -200,7 +200,7 @@ Notes:
 
  * We can implement the softmax function on the output, where we have k neurons indicating that we expect to see k number of output classes.
 
-Notes: 
+Notes:
 
 
 ---
@@ -210,7 +210,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -224,9 +224,9 @@ Notes:
 
  * So are neural networks just a implementation scheme for logistic regression?
 
-     - Not really. 
+     - Not really.
 
-Notes: 
+Notes:
 
 
 
@@ -237,7 +237,7 @@ Notes:
 
  * The result will be a linear model (no hidden layer) with a Sigmoid output
 
-Notes: 
+Notes:
 
 
 
@@ -256,7 +256,7 @@ Notes:
 
 ![](../../assets/images/deep-learning/xor.png) <!-- {"left" : 2.63, "top" : 3.98, "height" : 3.49, "width" : 4.99} -->
 
-Notes: 
+Notes:
 
 
 
@@ -276,14 +276,14 @@ Notes:
 ![](../../assets/images/deep-learning/hidden-layer.png) <!-- {"left" : 3.29, "top" : 3.78, "height" : 3.52, "width" : 3.66} -->
 
 
-Notes: 
+Notes:
 
 
 
 ---
 ## Why Hidden Layers
 
- * Hidden Layers allow us to solve the “XOR” problem 
+ * Hidden Layers allow us to solve the “XOR” problem
 
      - Creating a nonlinear decision boundary
 
@@ -303,7 +303,7 @@ Notes:
 
      - Current training methods mean that more than one layer is required in many cases.
 
-Notes: 
+Notes:
 
 
 
@@ -316,7 +316,7 @@ Notes:
  * You will need hidden layers.  Experiment to see your results.
  * Press play to converge on a solution.
 
-![](../../assets/images/deep-learning/Introduction-to-Neural-Networks--Perceptron-Spiral-Mini-Lab-5-Mins-0.png) <!-- {"left" : 3.18, "top" : 3.55, "height" : 3.72, "width" : 3.9} -->
+![](../../assets/images/deep-learning/3rd-party/playground-sprial-1.png) <!-- {"left" : 3.18, "top" : 3.55, "height" : 3.72, "width" : 3.9} -->
 
 
 Notes:
@@ -331,7 +331,7 @@ Notes:
 
  * Do we necessarily get better results with more neurons and/or hidden layers?
 
-Notes: 
+Notes:
 
 
 
@@ -352,7 +352,7 @@ Notes:
 
      - This kind of “brute force” method will take too long to train.
 
-Notes: 
+Notes:
 
 
 
@@ -377,14 +377,14 @@ Notes:
 
      - For classification, we normally use  **cross entropy** to calculate loss.
 
-Notes: 
+Notes:
 
 
 
 ---
-## Gradient Descent	
+## Gradient Descent
 
- * We want to optimize our model so error is  **minimized** 
+ * We want to optimize our model so error is  **minimized**
 
  * Gradient Descent is a common optimization algorithm.
 
@@ -401,7 +401,7 @@ Notes:
 ![](../../assets/images/deep-learning/local_minima.png)  <!-- {"left" : 6.33, "top" : 4.79, "height" : 2.49, "width" : 3.44} -->
 
 
-Notes: 
+Notes:
 
 
 ---
@@ -412,7 +412,7 @@ Notes:
 
  * This means that we take the errors output, and simply adjust the weights in the network to account for the errors.
 
-Notes: 
+Notes:
 
 
 
@@ -446,7 +446,7 @@ Notes:
 
         * Size: 1 node per class label
 
-Notes: 
+Notes:
 
 
 
@@ -457,9 +457,8 @@ Notes:
 
  * We will be training a multi-layer perceptron feedforward neural network.
 
-Notes: 
+Notes:
 
 
 
 ---
-
