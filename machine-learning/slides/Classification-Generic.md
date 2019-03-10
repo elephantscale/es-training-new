@@ -67,7 +67,7 @@ Notes:
 
 * It was introduced in mid-1990s
 
-* Became  very popular due to 
+* Became  very popular due to
     - Very accurate classifications
     - High performance (computationally)
 
@@ -135,7 +135,7 @@ Notes:
 * For 3D problem hyper plane is a surface / plane
 
 * For P-dimension problem hyper plane is (P-1) dimensional
-    - Hard to visualize 
+    - Hard to visualize
 
 <img src="../../assets/images/machine-learning/3rd-party/math-2.png" alt="math-2.png" style="width:40%;"/>
 
@@ -203,7 +203,7 @@ Notes:
 
 * Standard linear kernel of SVM provides linear separation of data
 
-* As we have seen linear separation is sometimes not possible 
+* As we have seen linear separation is sometimes not possible
 
     - Solutions: Kernels
 
@@ -296,7 +296,7 @@ https://www.youtube.com/watch?v=3liCbRZPrZA
 * **Numerical Inputs**
     - SVM assumes inputs are numerical.If you have categorical inputs convert it to binary dummy variables
 
-* **Normalize Inputs** 
+* **Normalize Inputs**
     - SVM assumes that the input data is within standard range.If you have feature-1 that ranges from 1 to 10And feature-2 that ranges from 1 to 1000feature2 will become more important and skew predictions
 
 
@@ -311,7 +311,7 @@ Notes:
 
     - Linear SVM can learn fast on linearly separable data
 
-    - Using kernel trick, SVM can adopt to complex data 
+    - Using kernel trick, SVM can adopt to complex data
 
 * **Weaknesses**
 
@@ -353,7 +353,7 @@ Notes:
 * **Approximate time:**
     - 20-30 mins
 
-* **Instructions:** 
+* **Instructions:**
 
     - Follow instructions for R / Python / Spark
 
@@ -371,13 +371,13 @@ Notes:
 * **Instructor:**
     - Run this lab if not done before
 
-* **Overview:** 
+* **Overview:**
     - Learn to do Cross Validation
 
-* **Approximate Time:** 
+* **Approximate Time:**
     - 30 mins
 
-* **Instructions:** 
+* **Instructions:**
 
     - Follow appropriate Python / R / Spark instructions
 
@@ -415,7 +415,7 @@ Notes:
 
 * Naïve Bayes is surprisingly effective for some domains
 
-    - Categorical 
+    - Categorical
 
     - Text
 
@@ -530,22 +530,25 @@ Notes:
 
 ---
 
-## A Little Statistics 
+## A Little Statistics
 
 * The conditional probability (denoted by P) of event A given event B occurred is
 
+```python
                  P (A ∩ B)     P (B|A) * P(A)
    P (A | B) = ------------ = ----------------
                    P (B)          P(B)
+```
 
 * If A and B are independent
    P (A ∩ B) = P (B|A) * P(A) = P(A) * P(B)
+
 
 * Example
 
     - Probability of HEADS in coin toss = 1/2
 
-    - Probability of getting a 6 on a dice throw = 1/6 
+    - Probability of getting a 6 on a dice throw = 1/6
 
     - Achieving both  =  1/2∗1/6=1/12 = 8%
 
@@ -556,6 +559,7 @@ Notes:
 
 ## Calculating Probabilities
 
+```python
                         count(class = 1)
 * P(class = 1) = ------------------------------
                 count (class = 1) + count (class = 0)
@@ -571,28 +575,31 @@ Notes:
                               5
 * P(class = 0 / stay-home) = --------  = 50%
                              5 + 5
+```
 
 Notes:
 
-                      
+
 ---
 
 ## Calculating Conditional Probabilities
-
+```python
                                   count(weather=sunny AND class=go-out)
-* P(class=go-out | weather=sunny ) = ------------------------------------
+P(class=go-out | weather=sunny ) = ------------------------------------
                                   count (class = go-out)
                                     4
                                 =  ----  = 0.8 = 80%
                                     5
+```
+
 * **How weather influences decision**
 
     - P (class = go-out | weather = sunny)    = 4 / 5 = 0.8
-    
+
     - P (class = go-out | weather = rainy)    = 1 / 5 = 0.2
 
     - P (class = stay-home | weather = sunny) = 2 / 5 = 0.2
-    
+
     - P (class = stay-home | weather = rainy) = 3 / 5 = 0.6
 
 ---
@@ -617,7 +624,7 @@ Notes:
 
 ## Bayes Theorem
 
-* Bayes theorem provides way to calculate the probability of hypothesis 
+* Bayes theorem provides way to calculate the probability of hypothesis
 
 * **P(h|d)** is the probability of **hypothesis h given the data d.** This is called the posterior probability
 
@@ -627,25 +634,27 @@ Notes:
 
 * **P(d)** is the **probability of the data** (regardless of the hypothesis)
 
-             P (d|h) x P (h)
-* P (h | d) = ----------------
-                 P(d)
+```python
 
+            P(h|d)x P (h)
+P(h | d) = ---------------
+                 P(d)
+```
 Notes:
 
 
 ---
 
-## 'Naïve' in Naïve Bayes 
+## 'Naïve' in Naïve Bayes
 
 * Probability of P(h) happening given events  d1,d2,d3 is `P(h | d1,d2,d3)`
 
 * To simplify this we can calculate the probability as `P(d1 | h) *  P(d2 | h) *  P(d3 | h)`
 
     - Combining individual probabilities together
-    
+
     - If we assume  events `d1, d2, d3 are independent`
-   
+
     - `A big assumption!`
 
 * It is called '`Naive Bayes`' or '`idiot Bayes`' because the calculation of the probabilities for each hypothesis are simplified to make their calculation tractable
@@ -662,7 +671,7 @@ Notes:
 ## Making Predictions With Naïve Bayes Model
 
 * Given a NB model we can predict new data as follows
-      
+
       - MAP(h) =  max ( P (d|h) *  P(h) )
 
 * MAP = Maximum Probable Hypothesis
@@ -670,7 +679,7 @@ Notes:
 ```python
 If weather=sunny
 P(go-out)    = P (weather = sunny|class = go-out) * P (class = go-out)
-P(stay-home) = P (weather = sunny|class = stay-home) * 
+P(stay-home) = P (weather = sunny|class = stay-home) *
                P (class = stay-home)
                               go-out
 P(go-out | weather=sunny) = -----------
@@ -692,13 +701,13 @@ Notes:
 What is the prediction if weather=sunny, car=working ?
 (we are plugging in probabilities we calculated before
 
-P(go-out)    = P (weather = sunny|class = go-out) * 
+P(go-out)    = P (weather = sunny|class = go-out) *
                P (car=working | class=go-out) *
                P (class = go-out)
              = 0.8 * 0.8 * 0.5
              = 0.32
 
-P(stay-home) = P (weather = sunny|class = stay-home) * 
+P(stay-home) = P (weather = sunny|class = stay-home) *
                P (car=working | class=stay-home) *
                P (class = stay-home)
              = 0.4 * 0.2 * 0.5
@@ -718,7 +727,7 @@ Notes:
 
 ## Naïve Bayes Prediction Table
 
-* Our model predicts with accuracy of 80%.Mis-predictions are highlighted 
+* Our model predicts with accuracy of 80%.Mis-predictions are highlighted
 
 <img src="../../assets/images/machine-learning/Bayes-Prediction.png" alt="Bayes-Prediction.png" style="width:70%;"/>
 
@@ -800,7 +809,7 @@ Notes:
 
 * **Approximate Time:** 20-30 min.
 
-* **Instructions:** 
+* **Instructions:**
 
     - Follow instructions for Spark / Python / R
 
