@@ -188,25 +188,30 @@ body {
 
 .reveal table {
 	margin: auto;
-	background-color: #F5F5F5;
 	text-align: left;
 	border-collapse: collapse;
+	font-size: 0.7em;
 }
 
 .reveal table thead {
-	background: #033399;
+	background: #0794FF;
   }
 
 .reveal table th {
 	font-weight: bold;
 	color: #FFFFFF;
 	text-align: center;
+	border-bottom: #FFFFFF 4px solid !important;
 }
 
 .reveal table th,
 .reveal table td {
-	border-left: 2px solid #AAAAAA;
+	border-left: 2px solid #FFFFFF;
 	padding: 10px;
+}
+
+.reveal table tbody tr{
+	border-bottom: #FFFFFF 2px solid !important;
 }
 
 .reveal table th:first-child,
@@ -236,9 +241,13 @@ body {
   border-bottom-right-radius: $tableBorderRadius;
 }
 
-.reveal table tr:nth-child(even) {
-	background:#D0E4F5;
-  }
+.reveal table tbody tr:nth-child(even) {
+	background:#E6EEFE;
+	}
+	
+	.reveal table tbody tr:nth-child(odd) {
+		background:#CADCFF;
+		}
 
 .reveal table th[align="center"],
 .reveal table td[align="center"] {
