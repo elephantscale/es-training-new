@@ -656,7 +656,7 @@ Primer is pronounced `primmer`
 
      - Let it predict the next reaction
 
-<img src="../assets/images/deep-learning/3rd-party/Arthur-Samuel.png" alt=Arthur-Samuel.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:15%;"/>
 
 
 Notes:
