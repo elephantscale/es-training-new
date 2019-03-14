@@ -6,6 +6,10 @@
 ## ES Slides stuff
 *-gen.md
 assembly.out/*
+# generated pptx
+*-gen.pptx
+
+# any pptx
 *.pptx
 *.pdf
 1.md
