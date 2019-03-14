@@ -96,20 +96,6 @@ USER ${MYUSER}
 ## WORKDIR
 WORKDIR ${HOME_DIR}
 
-# Install nvm with node and npm
-RUN mkdir -p ${NVM_DIR}
-RUN curl https://raw.githubusercontent.com/creationix/nvm/v${NVM_VERSION}/install.sh | bash \
-    && . ${NVM_DIR}/nvm.sh \
-    && nvm install ${NODE_VERSION} \
-    && nvm alias default ${NODE_VERSION} \
-    && nvm use default
-
-
-## Install npm latest version
-RUN  npm -g install npm
-
-## install reveal-md by forcing to install puppeteer & Chromium
-RUN  npm -g -f install  reveal-md
 
 ## install miniconda
 RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh -O ~/miniconda.sh && \
@@ -131,6 +117,21 @@ RUN ${CONDA_DIR}/bin/pip install \
 
 
 
+# Install nvm with node and npm
+RUN mkdir -p ${NVM_DIR}
+RUN curl https://raw.githubusercontent.com/creationix/nvm/v${NVM_VERSION}/install.sh | bash \
+    && . ${NVM_DIR}/nvm.sh \
+    && nvm install ${NODE_VERSION} \
+    && nvm alias default ${NODE_VERSION} \
+    && nvm use default
+
+
+## Install npm latest version
+RUN  npm -g install npm
+
+## install reveal-md by forcing to install puppeteer & Chromium
+RUN  npm -g -f install  reveal-md@2.4.1
+#RUN  npm -g -f install  reveal-md
 
 ## work dir
 RUN mkdir -p ${WORKING_DIR}
