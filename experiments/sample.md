@@ -1,5 +1,5 @@
 # Introduction to Keras
-<img src="assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"/>
+<img src="../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"/>
 ---
 
 ## Lesson Objectives
@@ -42,7 +42,7 @@ print("keras version ", keras.__version__)
 
 Here is a typical Keras workflow.  This is pretty common workflow for most neural networks
 
-<img src="assets/images/deep-learning/nn-workflow.png" alt="nn workflow" width="20%" style="background:white;"/>
+<img src="../assets/images/deep-learning/nn-workflow.png" alt="nn workflow" width="20%" style="background:white;"/>
 
 ---
 
@@ -61,7 +61,7 @@ plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
 ```
-<img src="assets/images/deep-learning/viz-accuracy1.png" alt="XXX image missing" width="40%" style="background:white;"/>
+<img src="../assets/images/deep-learning/viz-accuracy1.png" alt="XXX image missing" width="40%" style="background:white;"/>
 
 ---
 
