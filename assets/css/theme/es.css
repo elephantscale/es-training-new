@@ -383,8 +383,9 @@ body {
 
 #footer-left {
   position: absolute;
+  font-size: 12px;
   bottom: 10px;
-  left: 10px;
+  right: 10px;
   z-index: -90;
 }
 
@@ -436,7 +437,7 @@ div.topic-cover {
 .reveal .slide-number {
   position: absolute;
   display: block;
-  right: 10px;
+  left: 10px;
   bottom: 10px;
   z-index: 100;
   font-family: Helvetica, sans-serif;
