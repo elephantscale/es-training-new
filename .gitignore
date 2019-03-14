@@ -2,6 +2,7 @@
 .DS_Store
 *.log
 *.out
+*.swp
 
 ## ES Slides stuff
 *-gen.md
@@ -12,6 +13,7 @@ assembly.out/*
 # any pptx
 *.pptx
 *.pdf
+1
 1.md
 1.png
 

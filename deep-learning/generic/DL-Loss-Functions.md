@@ -96,7 +96,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 $$ SSE = \sum_{i=1}^{n}(y_i - \hat y_i)^2 $$
 
-<!-- <img src="../../assets/images/machine-learning/equation-error-SSE-1" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
+<!-- <img src="../../assets/images/machine-learning/error-SSE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
 
 - Also known as
     - **Residual Sum of Squares (RSS)**
@@ -109,7 +109,7 @@ $$ SSE = \sum_{i=1}^{n}(y_i - \hat y_i)^2 $$
 
 ## Mean Squared Error (MSE) (L2)
 
-<!-- <img src="../../assets/images/machine-learning/equation-error-MSE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /> -->
+<!-- <img src="../../assets/images/machine-learning/error-MSE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /> -->
 
 $$  MSE = \frac{1}{n} \sum_{i=1}^{n}(y_i - \hat y_i)^2  $$
 
@@ -137,7 +137,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Mean Absolute Error (MAE) (L1)
 
-<!-- <img src="../../assets/images/machine-learning/equation-error-MAE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
+<!-- <img src="../../assets/images/machine-learning/error-MAE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
 
 $$  MAE = \frac{1}{n} \sum_{i=1}^{n} \lvert y_i - \hat y_i \rvert  $$
 
