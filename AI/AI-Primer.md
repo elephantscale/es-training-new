@@ -209,7 +209,7 @@ https://www.youtube.com/watch?v=AiinFkL-pmw&feature=youtu.be
 
  * UberEats is built with AI from ground up
 
-<img src="../assets/images/deep-learning/3rd-party/AI-ubereats.png" alt="AI&ubereats.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/3rd-party/AI-ubereats.png" alt="AI&ubereats.png" style="width:60%;"/>
 
 
 Notes:
@@ -252,7 +252,7 @@ Notes:
 
  * Keeping users happy and restaurants happy
 
-<img src="../assets/images/deep-learning/Efficient-frontier.png" alt="Efficient-frontier.png" style="width:30%;"/>
+<img src="../assets/images/deep-learning/Efficient-frontier.png" alt="Efficient-frontier.png" style="width:25%;"/>
 
 <img src="../assets/images/deep-learning/Recommender-System.png" alt="Recommender-System.png" style="width:40%;"/><img src="../assets/images/deep-learning/3rd-party/Buildin-a-afair-marketplace.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;"/>
 
@@ -422,7 +422,7 @@ Notes:
 
  * From Mike Conway: A practice spanning multiple disciplines
 
-<img src="../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:46%;"/>
+<img src="../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:35%;"/>
 
 
 Notes:
@@ -541,7 +541,7 @@ Notes:
 
  * Modern visualizations: Heat maps, Animations (D3JS etc.)
 
-<img src="../assets/images/deep-learning/3rd-party/Visualizations-01.png" alt=Visualizations-01.png" style="width:40%;"/><img src="../assets/images/deep-learning/3rd-party/Visualizations-02.png" alt=Visualizations-02.png" style="width:40%;"/>
+<img src="../assets/images/deep-learning/3rd-party/Visualizations-01.png" alt=Visualizations-01.png" style="width:30%;"/><img src="../assets/images/deep-learning/3rd-party/Visualizations-02.png" alt=Visualizations-02.png" style="width:30%;"/>
 
 
 
@@ -568,7 +568,7 @@ http://research.google.com/bigpicture/music/
 ## Visualizations Demo: American Workday
 
 
-<img src="../assets/images/deep-learning/3rd-party/American-Workday-01.png" alt="American-Workday-01.png" style="width:30%;"/><img src="../assets/images/deep-learning/3rd-party/American-Workday-02.png" alt="American-Workday-02.png" style="width:30%;"/>
+<img src="../assets/images/deep-learning/3rd-party/American-Workday-01.png" alt="American-Workday-01.png" style="width:25%;"/><img src="../assets/images/deep-learning/3rd-party/American-Workday-02.png" alt="American-Workday-02.png" style="width:25%;"/>
 
 
 
@@ -590,11 +590,8 @@ https://www.npr.org/sections/money/2014/08/27/343415569/whos-in-the-office-the-a
  * [Link to Demonocracy](http://demonocracy.info/infographics/usa/us_debt/us_debt.html)
 
 
-<img src="../assets/images/deep-learning/3rd-party/National-Debt-Visualized-01.png" alt="National-Debt-Visualized-01.png" style="width:60%;"/>
+<img src="../assets/images/deep-learning/3rd-party/National-Debt-Visualized-01.png" alt="National-Debt-Visualized-01.png" style="width:55%;"/>
 
-<img src="../assets/images/deep-learning/3rd-party/National-Debt-Visualized-01.png" alt=National-Debt-Visualized-01.png" style="width:76%;"/>
-
-<img src="../assets/images/deep-learning/3rd-party/National-Debt-Visualized-01.png" alt=National-Debt-Visualized-01.png" style="width:76%;"/>
 Notes:
 
 http://demonocracy.info/infographics/usa/us_debt/us_debt.html
@@ -700,7 +697,7 @@ Notes:
 
  * Then algorithm predicts spam/no-spam on new email
 
-<img src="../assets/images/deep-learning/AI-Approach.png" alt=AI-Approach.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/AI-Approach.png" alt="AI-Approach.png" style="width:55%;"/>
 
 Notes:
 
@@ -1090,7 +1087,7 @@ Notes:
 
  * Intel Math Kernel Library - highly optimized, threaded, and vectorized math functions that maximize performance on each processor family
 
-<img src="../assets/images/deep-learning/3rd-party/Hardware-Modern-CPU.png" alt="Hardware-Modern-CPU.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/3rd-party/Hardware-Modern-CPU.png" alt="Hardware-Modern-CPU.png" style="width:60%;"/>
 
 Notes:
 
@@ -1167,7 +1164,7 @@ https://blog.openai.com/ai-and-compute/
 
 ## Video - CPU vs GPU Demonstration
 
-<img src="../assets/images/deep-learning/3rd-party/Video-CPU-GPU-Demonstration.png" alt="Video-CPU-GPU-Demonstration.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/3rd-party/video-cpu-gpu.png" alt="video-cpu-gpu.png" style="width:76%;"/>
 
  * [Video](https://www.youtube.com/watch?v=-P28LKWTzrI)
 
@@ -1180,7 +1177,7 @@ https://www.youtube.com/watch?v=-P28LKWTzrI
 
 ## Video - Advances in Hardware - Nvidia
 
-<img src="../assets/images/deep-learning/3rd-party/Video-Advances-Hardware.png" alt="Video-Advances-Hardware.png" style="width:60%;"/>
+<img src="../assets/images/deep-learning/3rd-party/video-nvidia-self-driving.png" alt="video-nvidia-self-driving.png" style="width:60%;"/>
 
  * [Nvidia Self Driving DL](https://www.youtube.com/watch?v=0rc4RqYLtEU)
 
@@ -1313,7 +1310,7 @@ Notes:
 
 ## 1980's and 1990's
 
-<img src="../assets/images/deep-learning/data-growth-1.png" alt="data-growth-1.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/1980-1990-01.png" alt="1980-1990-01.png" style="width:76%;"/>
 
 
 Notes:
@@ -1325,7 +1322,7 @@ Source: Jeff Dean
 
 ## 1990+
 
-<img src="../assets/images/deep-learning/data-growth-2.png" alt="data-growth-2.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/1980-1990-02.png" alt="1980-1990-02.png" style="width:76%;"/>
 
 
 Notes:
@@ -1337,7 +1334,7 @@ Source: Jeff Dean
 
 ## Now
 
-<img src="../assets/images/deep-learning/data-growth-3.png" alt="data-growth-3.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/1980-1990-03.png" alt="1980-1990-03.png" style="width:76%;"/>
 
 
 Notes:
@@ -1372,6 +1369,8 @@ https://www.analyticsvidhya.com/blog/2017/04/comparison-between-deep-learning-ma
 
 
  * [link](https://www.youtube.com/watch?v=LcfLo7YP8O4)
+
+<img src="../assets/images/deep-learning/Explanation-Andrew-Ng.png" alt="Explanation-Andrew-Ng.png" style="width:55%;"/>
 
 Notes:
 
@@ -1445,6 +1444,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 | Classification | Categorize things into groups                                          | -Spam classification,Fraud / no fraud       |
 | Regression     | Dealing with numbers and calculate the probability something happening | -Predict house prices,-Predict stock market |
 
+<img src="../assets/images/deep-learning/3rd-party/Supervised.png" alt="Supervised.png" style="width:40%;"/>
 
 Notes:
 
@@ -1462,6 +1462,8 @@ Image credit (Creative Commons): Pexels.com
  * Test performance using test data (already known)
 
  * Predict no new data (unseen)
+
+<img src="../assets/images/deep-learning/3rd-party/Regression-01.png" alt="Regression-01.png" style="width:55%;"/>
 
 
 Notes:
@@ -1483,7 +1485,7 @@ Notes:
 
  * Tweak the dials to increase or decrease the proportion
 
-<img src="../assets/images/deep-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:60%;"/>
+<img src="../assets/images/deep-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:50%;"/>
 
 
 Notes:
@@ -1511,6 +1513,8 @@ Facebook used 95%/5% `Understanding text from scratch`
      - Supervised learning
 
  * Also predicted classes are " **discrete** " or " **qualitative** "
+
+<img src="../assets/images/deep-learning/Classification-01.png" alt="Classification-01.png" style="width:45%;"/>
 
 
 
@@ -1552,6 +1556,8 @@ Notes:
 
  * [obvious-art.com](http://obvious-art.com/)
 
+<img src="../assets/images/deep-learning/3rd-party/Art-Sold.png" alt="Art-Sold.png" style="width:40%;"/>
+
 
 Notes:
 
@@ -1566,7 +1572,7 @@ http://obvious-art.com/
 
 ---
 
-## Machine Learning Types : Un Supervised
+## Machine Learning Types: Un Supervised
 
  * No training needed
 
@@ -1579,7 +1585,7 @@ http://obvious-art.com/
 | Association              | Find similar patterns                   | -people who buy A also buy B                                 |
 | Dimensionality Reduction | Reduces number of features              | -Reducing 1000s of variables into manageable size            |
 
-
+<img src="../assets/images/deep-learning/3rd-party/Un-Supervised.png" alt="Un-Supervised.png" style="width:40%;"/>
 
 Notes:
 
@@ -1631,6 +1637,7 @@ https://www.mathworks.com/discovery/unsupervised-learning.html
 
      - And the need for further investigation
 
+<img src="../assets/images/deep-learning/Clustering-Use-Cases.png" alt="Clustering-Use-Cases.png" style="width:20%;"/>
 
 Notes:
 
@@ -1643,6 +1650,7 @@ Notes:
 
  * Google News algorithm automatically groups **related news stories**  into sections
 
+<img src="../assets/images/deep-learning/3rd-party/Google-News.png" alt="Google-News.png" style="width:60%;"/>
 
 Notes:
 
@@ -1667,6 +1675,9 @@ Notes:
      - To understand our data
 
      - To find "more like this"
+
+<img src="../assets/images/deep-learning/Clustering-01.png" alt="Clustering-01.png" style="width:50%;"/>
+
 
 Notes:
 
@@ -1741,6 +1752,8 @@ https://en.wikipedia.org/wiki/Cluster_analysis
 
  * Booze and Calories
 
+<img src="../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:20%;"/>
+
 
 
 Notes:
@@ -1757,7 +1770,7 @@ https://www.kaggle.com/c/walmart-recruiting-trip-type-classification
 
  * But by grouping data points together, the algorithm can 'infer' information, even when labels are missing
 
-
+<img src="../assets/images/deep-learning/Semi-Supervised.png" alt="Semi-Supervised.png" style="width:60%;"/>
 
 Notes:
 
@@ -1768,6 +1781,8 @@ Notes:
 
 
  * [Link](https://www.youtube.com/watch?v=b-yhKUINb7o)
+
+<img src="../assets/images/deep-learning/3rd-party/Semi-Supervised-Learning-Video.png" alt="Semi-Supervised-Learning-Video.png" style="width:60%;"/>
 
 
 
@@ -1782,6 +1797,9 @@ https://www.youtube.com/watch?v=b-yhKUINb7o
 
 
  * [Link](https://www.youtube.com/watch?v=HcqpanDadyQ)
+
+
+<img src="../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/>
 
 Notes:
 
@@ -1821,6 +1839,8 @@ Notes:
 
  * Here the robot gets rewarded for 'food' and penalized for walking into fire
 
+<img src="../assets/images/deep-learning/Reinforcement-Learning.png" alt="Reinforcement-Learning.png" style="width:60%;"/>
+
 
 Notes:
 
@@ -1833,6 +1853,8 @@ Notes:
 
  * [Link](https://www.youtube.com/watch?v=V1eYniJ0Rnk)
 
+<img src="../assets/images/deep-learning/3rd-party/Atari-Breakout.png" alt="Atari-Breakout.png" style="width:30%;"/>
+
 Notes:
 
 https://www.youtube.com/watch?v=V1eYniJ0Rnk
@@ -1843,6 +1865,9 @@ https://www.youtube.com/watch?v=V1eYniJ0Rnk
 ## Reinforcement Learning Demo: Open AI Bots Playing Dota
 
  * [Link](https://www.youtube.com/watch?v=eHipy_j29Xw)
+
+<img src="../assets/images/deep-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" alt="Open-AI-Bots-Playing-Dota.png" style="width:60%;"/>
+
 
 Notes:
 
@@ -1892,7 +1917,7 @@ Notes:
 
  * The neuron is like a "gate" - produces an output
 
-<img src="../assets/images/deep-learning/neuron_anatomy.png" alt="neuron_anatomy.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/neuron_anatomy.png" alt="neuron_anatomy.png" style="width:55%;"/>
 
 Notes:
 
@@ -1914,6 +1939,7 @@ Notes:
 
        - No way to automatically train weights Wn
 
+<img src="../assets/images/deep-learning/McCulloch.png" alt="McCulloch.png" style="width:50%;"/>
 
 Notes:
 
@@ -1927,6 +1953,7 @@ Notes:
 
  	- Simplest type of feedforward neural network
 
+<img src="../assets/images/deep-learning/perceptron-03.png" alt="perceptron-03.png" style="width:7650;"/>
 
 Notes:
 
@@ -1941,6 +1968,8 @@ Notes:
  *  **The perceptron is a linear model used for binary classification with a simple input - output relationship**
 
  * Mark 1 Perceptron
+
+<img src="../assets/images/deep-learning/3rd-party/Perceptron-04.png" alt="Perceptron-04.png" style="width:30%;"/>
 
 
 Notes:
@@ -1958,6 +1987,8 @@ Notes:
  * And different weights
 
  * If the final score is > 50, then the answer is YES
+
+<img src="../assets/images/deep-learning/perceptron-02.png" alt="perceptron-02.png" style="width:76%;"/>
 
 
 Notes:
@@ -1980,6 +2011,7 @@ Notes:
 
  * And a friend can
 
+<img src="../assets/images/deep-learning/perceptron-02.png" alt="perceptron-02.png" style="width:76%;"/>
 
 Notes:
 
@@ -1995,10 +2027,12 @@ Notes:
 |-------------|-----------------------------------------------------------------------------------|
 | Xi          | input                                                                             |
 | Wi          | Weight for the input                                                              |
-| x.w         | Dot product of inputs and weights `�xi.wi`                                         |
+| x.w         | Dot product of inputs and weights `ÔøΩxi.wi`                                         |
 | N           | number of inputs                                                                  |
 | b           | Bias term (does not depend on input values, shifts decision boundary from origin) |
 
+
+<img src="../assets/images/deep-learning/3rd-party/Generalized-01.png" alt="Generalized-01.png" style="width:40%;"/>
 
 Notes:
 
@@ -2011,6 +2045,8 @@ Notes:
  * We add multiple layers
 
  * Each layer can have many neurons
+
+<img src="../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="width:40%;"/>
 
 
 Notes:
@@ -2027,6 +2063,8 @@ Notes:
 
  * How ever more layers take more time to train
 
+<img src="../assets/images/deep-learning/Deep-Neural-Networks.png" alt="Deep-Neural-Networks.png" style="width:40%;"/>
+
 
 Notes:
 
@@ -2034,6 +2072,8 @@ Notes:
 ---
 
 ## Deep Neural Network - Face Recognition
+
+<img src="../assets/images/deep-learning/3rd-party/Face-Recognition.png" alt="Face-Recognition.png" style="width:30%;"/>
 
 
 Notes:
@@ -2047,10 +2087,9 @@ Source: https://deeplearning4j.org/neuralnet-overview
 
 ## 'Deep' Neural Networks Simulation
 
+<img src="../assets/images/deep-learning/Neural-Networks-Simulation.png" alt="Neural-Networks-Simulation.png" style="width:90%;"/>
 
 Notes:
-
-
 
 
 ---
@@ -2060,6 +2099,7 @@ Notes:
 
  * Image Recognition: ResNet (from 2015) with 152 layers
 
+<img src="../assets/images/deep-learning/3rd-party/ResNet.png" alt="ResNet.png" style="width:60%;"/>
 
 Notes:
 
@@ -2074,6 +2114,7 @@ Notes:
 
  * [Link](http://myselph.de/neuralNet.html)
 
+<img src="../assets/images/deep-learning/3rd-party/Digit-Recognition-01.png" alt="Digit-Recognition-01.png" style="width:30%;"/>
 
 
 Notes:
@@ -2088,6 +2129,8 @@ http://myselph.de/neuralNet.html
 
 
  * [Link](http://scs.ryerson.ca/~aharley/vis/conv/flat.html)
+
+<img src="../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="digit-recognition-1.png" style="width:50%;"/>
 
 Notes:
 
@@ -2126,6 +2169,8 @@ Notes:
 
      - [Link](https://research.fb.com/publications/)
 
+<img src="../assets/images/deep-learning/3rd-party/cnn-happy-net-01.png" alt="cnn-happy-net-01.png" style="width:40%;"/>
+
 
 Notes:
 
@@ -2143,6 +2188,7 @@ Source: Yaniv Taigman, Ming Yang, Marc'Aurelio Ranzato, Lior Wolf - https://rese
 
  * [Link](https://www.youtube.com/watch?v=MDHtzOdnSgA)
 
+<img src="../assets/images/deep-learning/3rd-party/cnn-happy-net-02.png" alt="cnn-happy-net.png" style="width:60%;"/>
 
 Notes:
 
@@ -2161,6 +2207,9 @@ https://www.youtube.com/watch?v=MDHtzOdnSgA
      - Machine translation
 
 
+<img src="../assets/images/deep-learning/Recurrent-Neural-Networks.png" alt="Recurrent-Neural-Networks.png" style="width:60%;"/>
+
+
 Notes:
 
 Source: Rowel Atienza - https://towardsdatascience.com/lstm-by-example-using-tensorflow-feb0c1968537
@@ -2171,6 +2220,7 @@ Source: Rowel Atienza - https://towardsdatascience.com/lstm-by-example-using-ten
 
 ## RNNs (translation)
 
+<img src="../assets/images/deep-learning/3rd-party/Rnns-01.png" alt="Rnns-01.png" style="width:60%;"/>
 
 Notes:
 
@@ -2189,6 +2239,8 @@ Source: https://www.analyticsindiamag.com/overview-of-recurrent-neural-networks-
      - And captions it (RNN)
 
 
+<img src="../assets/images/deep-learning/3rd-party/Combining-Neural-Networks-01.png" alt="Combining-Neural-Networks-01.png" style="width:30%;"/><img src="../assets/images/deep-learning/3rd-party/Combining-Neural-Networks-02.png" alt="Combining-Neural-Networks-02.png" style="width:40%;"/>
+
 
 Notes:
 
@@ -2200,6 +2252,7 @@ Source: Source: Andrej Karpathy, Li Fei-Fei - https://cs.stanford.edu/people/kar
 
 ## Video - Advances in Hardware
 
+img src="../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" alt="cloud-tpu-01.png" style="width:60%;"/>
 
  * [Google TPU](https://www.youtube.com/watch?v=UsDhVx6cOrw) (up to 5 min mark)
 
@@ -2213,6 +2266,10 @@ https://www.youtube.com/watch?v=UsDhVx6cOrw
 
 ## DL Application Demo: Google Draw
 
+img src="../assets/images/deep-learning/3rd-party/Quick-drew-01.png" alt="Quick-drew-01.png" style="width:60%;"/>
+
+
+Quick-drew-01.png
 
  * https://quickdraw.withgoogle.com/
 
@@ -2227,6 +2284,8 @@ Notes:
 ---
 
 ## AI Workflow
+
+<img src="../assets/images/deep-learning/AI-Workflow-01.png" alt="AI-Workflow-01.png" style="width:60%;"/>
 
 
 Notes:
@@ -2317,6 +2376,8 @@ Notes:
 
      - Customer data can be from a database.
 
+<img src="../assets/images/deep-learning/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:30%;"/>
+
 Notes:
 
 ---
@@ -2351,6 +2412,8 @@ Notes:
  * Can consume a lot of time (50% - 80%  of the project!!!)
 
  * Least sexy
+
+<img src="../assets/images/deep-learning/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:30%;"/>
 
 
 
@@ -2390,10 +2453,11 @@ Notes:
 
  * Need to sample?  Or process entire data set?
 
+<img src="../assets/images/deep-learning/EDA-01.png" alt="EDA-01.png" style="width:30%;"/>
+
+
 
 Notes:
-
-
 
 
 ---
@@ -2419,6 +2483,9 @@ Notes:
 
      - Experience counts!
 
+<img src="../assets/images/deep-learning/AI-Workflow-03.png" alt="AI-Workflow-03.png" style="width:30%;"/>
+
+
 Notes:
 
 
@@ -2439,6 +2506,8 @@ Notes:
 
      - Cloud vendors are providing solution
 
+<img src="../assets/images/deep-learning/Mind-the-Gap.png" alt="Mind-the-Gap.png" style="width:50%;"/>
+
 
 Notes:
 
@@ -2449,10 +2518,11 @@ Notes:
 
  * Language neutral
 
- * Same model � no need to re-implement
+ * Same model - no need to re-implement
 
  * Fast deploy!
 
+<img src="../assets/images/deep-learning/Streamlining-Prototyping.png" alt="Streamlining-Prototyping.png" style="width:40%;"/>
 
 
 Notes:
@@ -2478,6 +2548,10 @@ https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize
 
  * Training set should represent data well enough.
 
+<img src="../assets/images/deep-learning/AI-Workflow-04.png" alt="AI-Workflow-04.png" style="width:30%;"/><img src="../assets/images/deep-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:30%;"/>
+
+
+
 Notes:
 
 
@@ -2500,6 +2574,9 @@ Notes:
 
      - Or even choose another model
 
+<img src="../assets/images/deep-learning/AI-Workflow-05.png" alt="AI-Workflow-05.png" style="width:40%;"/>
+
+
 Notes:
 
 
@@ -2516,6 +2593,7 @@ Notes:
 
  * Monitor the model in production
 
+<img src="../assets/images/deep-learning/AI-Workflow-06.png" alt="AI-Workflow-06" style="width:40%;"/>
 
 
 Notes:
@@ -2543,9 +2621,10 @@ Notes:
 
 ## Reinforcement / Neural Net Demo: Alpha GO
 
-
-
  * [Link](https://www.youtube.com/watch?v=9xlSy9F5WtE)
+
+<img src="../assets/images/deep-learning/3rd-party/Neural-Net-Demo-Alpha-GO.png" alt="Neural-Net-Demo-Alpha-GO.png" style="width:60%;"/>
+
 
 Notes:
 
@@ -2555,12 +2634,16 @@ https://www.youtube.com/watch?v=9xlSy9F5WtE
 
 ---
 
-## Reinforcement / Neural Net Demo : Alpha GO
+## Reinforcement/ Neural Net Demo: Alpha GO
 
 
  * [Link](https://deepmind.com/blog/alphago-zero-learning-scratch/)
 
  * AlphaGO explained
+
+<img src="../assets/images/deep-learning/3rd-party/Alpha-GO-01.png" alt="Alpha-GO-01.png" style="width:30%;"/>
+
+<img src="../assets/images/deep-learning/3rd-party/Alpha-GO-02.png" alt="Alpha-GO-02.png" style="width:30%;"/>
 
 
 Notes:
@@ -2598,7 +2681,7 @@ Notes:
 
  * Now Big Data tools make it possible to run AI algorithms at massive scale-distributed across a cluster
 
-
+<img src="../assets/images/deep-learning/DL-cluster.png" alt="DL-cluster.png" style="width:60%;"/>
 
 Notes:
 
@@ -2622,6 +2705,8 @@ Notes:
 ---
 
 ## AI Ecosystem and Tools
+
+<img src="../assets/images/deep-learning/AI-Ecosystem.png" alt="AI-Ecosystem.png" style="width:60%;"/>
 
 
 Notes:
@@ -2709,6 +2794,11 @@ Browser-based notebook interface with support for code, text, mathematical expre
 
      - Community supported
 
+<img src="../assets/images/deep-learning/3rd-party/tensorflow-logo.png" alt="tensorflow-logo.png" style="width:20%;"/>
+
+<img src="../assets/images/deep-learning/3rd-party/pytorch-logo.png" alt="pytorch-logo.png" style="width:10%;"/>
+
+
 
 Notes:
 
@@ -2749,6 +2839,12 @@ https://www.tensorflow.org/
 
      - CPU support
 
+<img src="../assets/images/deep-learning/3rd-party/Cafe2-logo.png" alt="Cafe2-logo.png" style="width:10%;"/>
+
+<img src="../assets/images/deep-learning/3rd-party/DL4J-logo.png" alt="DL4J-logo.png" style="width:10%;"/>
+
+<img src="../assets/images/deep-learning/3rd-party/bigdl-logo.png" alt="bigdl-logo.png" style="width:10%;"/>
+
 
 Notes:
 
@@ -2760,8 +2856,12 @@ https://caffe2.ai/
 
 ## Deep Learning Libraries
 
-
  * And many more
+
+<img src="../assets/images/deep-learning/3rd-party/mxnet-logo.png" alt="mxnet-logo.png" style="width:20%;"/>
+
+<img src="../assets/images/deep-learning/3rd-party/keras_logo-01.png" alt="keras_logo-01.png" style="width:20%;"/>
+
 
 
 Notes:
@@ -2796,6 +2896,8 @@ Notes:
 
      - Commercially supported
 
+<img src="../assets/images/deep-learning/3rd-party/h2o-ai.png" alt="h2o-ai.png" style="width:10%;"/><img src="../assets/images/deep-learning/3rd-party/skymind.png" alt="skymind.png" style="width:20%;"/>
+
 
 Notes:
 
@@ -2804,6 +2906,7 @@ Notes:
 
 ## Infrastructure Tools
 
+<img src="../assets/images/deep-learning/Infrastructure-Tools.png" alt="Infrastructure-Tools.png" style="width:60%;"/>
 
 
 Notes:
@@ -2814,7 +2917,6 @@ Notes:
 ---
 
 ## Kubeflow
-
 
  * Kubeflow = Kubernetes + ML
 
@@ -2827,6 +2929,9 @@ Notes:
  * Cloud friendly
 
  * (https://www.kubeflow.org/)
+
+<img src="../assets/images/deep-learning/3rd-party/Kubeflow.png" alt="Kubeflow.png" style="width:20%;"/>
+
 
 Notes:
 
@@ -2853,6 +2958,8 @@ Notes:
      - 1.7 copies instead of 3 copies (reducing storage overhead)
 
 
+<img src="../assets/images/deep-learning/3rd-party/Big-Data-Infrastructure-Hadoop.png" alt="Big-Data-Infrastructure-Hadoop.png" style="width:20%;"/>
+
 Notes:
 
 
@@ -2873,6 +2980,7 @@ Notes:
 
  * Language support: Scala, Java, Python, R
 
+<img src="../assets/images/deep-learning/3rd-party/Apache_Spark_logo.png" alt="Apache_Spark_logo.png" style="width:30%;"/>
 
 Notes:
 
@@ -2890,6 +2998,9 @@ Notes:
 
  * Data is processed on the node it is located
 
+<img src="../assets/images/deep-learning/Distributed-Data-Processing.png" alt="Distributed-Data-Processing.png" style="width:60%;"/>
+
+
 
 Notes:
 
@@ -2905,6 +3016,7 @@ Notes:
 
  * In the diagram below, you can see all the infrastructure goes into building a large scale ML system
 
+<img src="../assets/images/deep-learning/production_ML_system-02.png" alt="production_ML_system-02.png" style="width:60%;"/>
 
 
 Notes:
@@ -2913,6 +3025,8 @@ Notes:
 ---
 
 ## A Reference Scalable AI Infrastructure
+
+<img src="../assets/images/deep-learning/Reference-Scalable-AI-Infrastructure.png" alt="Reference-Scalable-AI-Infrastructure.png" style="width:80%;"/>
 
 
 Notes:
@@ -2969,9 +3083,16 @@ Notes:
 |---------------------------|-----------------------------------|----------------------------|
 | -AI as service,'Sagemaker | -AI as service,-'Azure ML Studio' | -AI as service,-'Cloud ML' |
 
+
+
+<img src="../assets/images/deep-learning/3rd-party/amazon-logo.png" alt="amazon-logo.png" style="width:30%;"/>
+
+<img src="../assets/images/deep-learning/3rd-party/azure-logo.png" alt="azure-logo.png" style="width:30%;"/>
+
+<img src="../assets/images/deep-learning/3rd-party/google-cloud.png" alt="google-cloud.png" style="width:30%;"/>
+
+
 Notes:
-
-
 
 
 ---
@@ -2981,6 +3102,7 @@ Notes:
 
  * [Link](https://www.youtube.com/watch?v=8vIT2da6N_o)
 
+<img src="../assets/images/deep-learning/3rd-party/Video-Advances-Robotics.png" alt="Video-Advances-Robotics.png" style="width:50%;"/>
 
 
 Notes:
@@ -2998,6 +3120,9 @@ https://www.youtube.com/watch?v=8vIT2da6N_o
  * Users are paid a small amount of money to tag images
 
  * [Link](https://finance.yahoo.com/news/ceo-paying-600-000-strangers-150000655.html)
+
+<img src="../assets/images/deep-learning/3rd-party/Demo-Human-Powered-AI-01.png" alt="Demo-Human-Powered-AI-01.png" style="width:40%;"/>
+
 
 
 Notes:
@@ -3019,6 +3144,9 @@ https://finance.yahoo.com/news/ceo-paying-600-000-strangers-150000655.html
  * Links
 
      - [link1](https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-creeps/2/)
+
+
+<img src="../assets/images/deep-learning/3rd-party/AI-Gone-Wrong.png" alt="AI-Gone-Wrong.png" style="width:40%;"/>
 
 Notes:
 
@@ -3052,6 +3180,8 @@ https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-cr
  * [Link](https://www.independent.co.uk/voices/facebook-shuts-down-robots-ai-artificial-intelligence-develop-own-language-common-a7871341.html)
 
 
+<img src="../assets/images/deep-learning/3rd-party/Facebook-Bots-0.png" alt="Facebook-Bots-0.png" style="width:20%;"/>
+
 Notes:
 
 https://www.independent.co.uk/voices/facebook-shuts-down-robots-ai-artificial-intelligence-develop-own-language-common-a7871341.html
@@ -3060,6 +3190,8 @@ https://www.independent.co.uk/voices/facebook-shuts-down-robots-ai-artificial-in
 ---
 
 ## Facebook Bots
+
+<img src="../assets/images/deep-learning/3rd-party/Facebook-Bots.png" alt="Facebook-Bots.png" style="width:40%;"/>
 
 
 Notes:
@@ -3078,9 +3210,14 @@ Notes:
 
  * Few days later, the same man called the manager and apologized" *Sorry, I just learned that my daughter is pregnant* "
 
+---
+
+## Target Algorithm Predicts Young Woman's Pregnancy (Here AI is spot on!)
+
  * Links :[link1](https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-creeps/6/),
           [link2](https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?mtrref=www.google.com)
 
+<img src="../assets/images/deep-learning/3rd-party/Predicts-Young-Woman-01.png" alt="Predicts-Young-Woman-01.png" style="width:30%;"/>
 
 Notes:
 
@@ -3098,6 +3235,9 @@ https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?mtrref=www.goog
  * NTSB investigation revealed that AutoPilot system thought the truck was a brightly lit sky, and kept going!
 
  * Links : [link1](https://www.theregister.co.uk/2017/06/20/tesla_death_crash_accident_report_ntsb/)
+
+
+<img src="../assets/images/deep-learning/3rd-party/Tesla-AutoPilot-Crashes-Car-01.png" alt="Tesla-AutoPilot-Crashes-Car-01.png" style="width:38%;"/><img src="../assets/images/deep-learning/3rd-party/Tesla-AutoPilot-Crashes-Car-02.png" alt="Tesla-AutoPilot-Crashes-Car-02.png" style="width:35%;"/>
 
 
 
@@ -3126,6 +3266,7 @@ https://www.theregister.co.uk/2017/06/20/tesla_death_crash_accident_report_ntsb/
  * [Video](http://innovation.uci.edu/2017/08/husky-or-wolf-using-a-black-box-learning-model-to-avoid-adoption-errors/
 )(@ 2:30 min)
 
+<img src="../assets/images/deep-learning/3rd-party/Dogs-as-Wolfs.png" alt="Dogs-as-Wolfs.png" style="width:40%;"/>
 
 
 Notes:
@@ -3150,6 +3291,7 @@ http://innovation.uci.edu/2017/08/husky-or-wolf-using-a-black-box-learning-model
  * Links : [link1](https://www.theladders.com/career-advice/amazon-reportedly-scraps-ai-recruiting-tool-biased-against-women
 ), [link2](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G)
 
+<img src="../assets/images/deep-learning/3rd-party/global-headcount.png" alt="global-headcount.png" style="width:25%;"/>
 
 Notes:
 
@@ -3175,8 +3317,9 @@ Notes:
 
 ---
 
-## Elon Musk:  "AI will take over humanity"
+## Elon Musk: "AI will take over humanity"
 
+<img src="../assets/images/deep-learning/3rd-party/Elon-musk.png" alt="Elon-musk.png" style="width:40%;"/>
 
 Notes:
 
@@ -3184,6 +3327,9 @@ Notes:
 ---
 
 ## Elon Musk: "Zuck doesn't understand AI"
+
+<img src="../assets/images/deep-learning/3rd-party/Zuck.png" alt="Zuck.png" style="width:40%;"/>
+
 
 
 Notes:
@@ -3234,7 +3380,7 @@ Notes:
 ---
 ## Closing Demo: Everybody Dance Now
 
-
+<img src="../assets/images/deep-learning/3rd-party/Closing-Demo.png" alt="Closing-Demo.png" style="width:60%;"/>
 
 
  * [Link](https://www.youtube.com/watch?v=PCBTZh41Ris)
@@ -3301,5 +3447,3 @@ Notes:
 
 
 
-
----
