@@ -972,7 +972,8 @@ Notes:
     - Yi: actual value
     - Ŷi: predicted value
 
-<img src="../../assets/images/machine-learning/3rd-party/equation-error-SSE-1.png" alt="equation-error-SSE-1" style="width:50%;"/> <!-- {"left" : 5.35, "top" : 5.16, "height" : 1.49, "width" : 4.21} -->
+<img src="../../assets/images/machine-learning/equation-error-SSE-1" alt="equation-error-SSE-1" style="width:50%;"/> <!-- {"left" : 5.35, "top" : 5.16, "height" : 1.49, "width" : 4.21} -->
+
 
 
 
