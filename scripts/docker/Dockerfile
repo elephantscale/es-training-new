@@ -130,8 +130,8 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/v${NVM_VERSION}/instal
 RUN  npm -g install npm
 
 ## install reveal-md by forcing to install puppeteer & Chromium
-RUN  npm -g -f install  reveal-md@2.4.1
 #RUN  npm -g -f install  reveal-md
+RUN  npm i -g -f pikalo/reveal-md
 
 ## work dir
 RUN mkdir -p ${WORKING_DIR}
@@ -151,6 +151,9 @@ RUN cat $HOME_DIR/.ssh/githubKey >> $HOME_DIR/.ssh/known_hosts
 
 ## git repo setup
 RUN git clone git@github.com:elephantscale/utils.git  $ES_HOME/utils
+
+## Set prompt in bashrc
+RUN echo 'export PS1="[\u@es-reveal-docker] \w > "' >> ~/.bashrc
 
 COPY ./startup.sh  $HOME_DIR/
 RUN sudo chown ${MYUSER}  $HOME_DIR/*

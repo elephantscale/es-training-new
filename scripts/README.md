@@ -15,14 +15,14 @@ From the host env:
 ```bash
     $  cd ..  # be sure to be in root dir (es-training-new)
 
-    $  ./scripts/run-reveal-docker.sh  es-reveal # Or docker image id ($ docker image ls)
+    $  ./scripts/run-reveal-docker.sh  es-reveal  bash # Or docker image id ($ docker image ls)
 ```
 
 * On Windows
 ```bash
     >  cd ..  # be sure to be in root dir (es-training-new)
 
-    >  powershell -ExecutionPolicy ByPass -File ./scripts/run-reveal-docker.ps1  es-reveal # Or docker image id ($ docker image ls)
+    >  powershell -ExecutionPolicy ByPass -File ./scripts/run-reveal-docker.ps1  es-reveal  bash # Or docker image id ($ docker image ls)
 ```
 
 Now go to [http://localhost:2000](http://localhost:2000)

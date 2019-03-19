@@ -10,7 +10,7 @@ param(
     exit -1
   }
 
-  $Command = "docker run -it --shm-size=1gb -p 2000:2000 -v $(Get-Location):/home/ubuntu/work  $image_id  $cmd"
+  $Command = "docker run -it --shm-size=1gb -p 2000:2000 -p 35729:35729 -v $(Get-Location):/home/ubuntu/work  $image_id  $cmd"
 
   Invoke-Expression  $Command.Replace("\", "/")
   
