@@ -434,7 +434,7 @@ https://github.com/tensorflow/tensorflow
 
 ## Google TPU System in Data Center
 
-<img src="../../assets/images/deep-learning/3rd-party/Google-TPU-System-Data-Center.png" alt="Google-TPU-System-Data-Center.png" style="width:76%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/google-cloud-tpu.png" alt="google-cloud-tpu.png" style="width:76%;"/>
 
 Notes:
 
@@ -514,7 +514,7 @@ Notes:
 ## Video - Advances in Hardware
 
 
-<img src="../../assets/images/deep-learning/3rd-party/TPU-Cloud.png" alt="TPU-Cloud.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" alt="cloud-tpu-01" style="width:50%;"/>
 
 [Google TPU](https://www.youtube.com/watch?v=UsDhVx6cOrw) (up to 5 min mark)
 

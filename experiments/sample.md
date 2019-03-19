@@ -1,5 +1,5 @@
 # Introduction to Keras
-<img src="../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"/>
+
 ---
 
 ## Lesson Objectives
@@ -7,6 +7,10 @@
 * Understand Keras framework
 
 * Understand how Keras works with Deep Learning frameworks
+
+<img src="elephantscale-logo-1.png" alt="XXX image missing" style="background:white;"/>
+
+<img src="/assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"/>
 
 Notes:  
 Reference : https://en.wikipedia.org

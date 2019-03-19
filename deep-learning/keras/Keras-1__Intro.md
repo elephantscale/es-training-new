@@ -76,7 +76,7 @@ NVIDIA - leading GPU vendor - provides CUDA (Compute Unified Device Architecture
 
 * [Wins Machine Learning competitions](https://www.quora.com/Why-has-Keras-been-so-successful-lately-at-Kaggle-competitions)
 
-<img src="../../assets/images/deep-learning/cpu-gpu-tpu-1.png" alt="cpu gpu tpu" width="50%" style="background:white;"/>
+<img src="../../assets/images/machine-learning/cpu-gpu-tpu-1.png" alt="cpu gpu tpu" width="50%" style="background:white;"/>
 
 Notes:
 https://www.quora.com/Why-has-Keras-been-so-successful-lately-at-Kaggle-competitions
