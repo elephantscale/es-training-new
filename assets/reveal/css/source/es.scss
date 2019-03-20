@@ -47,7 +47,7 @@ section.has-dark-background {
 	left: 0%;
 	height: 17px;
 	width: 100%;
-	background-image: url('../header.jpg');
+	background-image: url('../images/header.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 17px;
 	z-index: -90;
@@ -60,7 +60,7 @@ section.has-dark-background {
 	z-index: -90;
 }
 div.slide-background.present:first-child{
-	background-image:  url('../cover.jpg');
+	background-image:  url('../images/cover.jpg');
 	background-position: bottom left;
 	background-size: 100% 100%;
   }
@@ -77,7 +77,7 @@ div.slide-background.present:first-child{
 	  height: 20px !important;
 	  width: 50% !important;
 	  margin: 10px auto;
-	  background-image: url('../h1-line.jpg') !important;
+	  background-image: url('../images/h1-line.jpg') !important;
 	  background-repeat: no-repeat !important;
 	  background-size: 100% 20px !important;
   }
@@ -87,7 +87,7 @@ div.slide-background.present:first-child{
 	}
 
 	div.topic-cover{
-		background-image:  url('../topic.jpg');
+		background-image:  url('../images/topic.jpg');
 		background-position: bottom left;
 		background-size: 100% 100%;
 	  }
