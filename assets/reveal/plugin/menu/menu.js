@@ -767,7 +767,7 @@ var RevealMenu = window.RevealMenu || (function(){
 					if (openButton) {
 						// add menu button
 						var div = create('div', {class: 'slide-menu-button'});
-						var link = create('a', {href: '#'});
+						var link = create('a', {href: '#', class:"btn-tools"});
 						link.appendChild(create('i', {class: 'fas fa-bars'}));
 						div.appendChild(link);
 						select('.reveal').appendChild(div);
