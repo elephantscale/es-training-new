@@ -20,7 +20,7 @@ mydir=$(pwd -P)
 
 docker run -it   \
     --shm-size=1gb  \
-    -p 2000:2000 -p 2001:2001 -p 35729:35730 \
+    -p 2000:2000 -p 35729:35729 \
     -v"$mydir:/home/ubuntu/work" \
     "$image_id" \
     ${cmd}

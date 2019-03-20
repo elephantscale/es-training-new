@@ -2,28 +2,29 @@
 
 ## Step 1 : build the docker
 ```bash
-    $   cd scripts  # be in scripts dir
-    
-    $   docker build -t es-reveal .
+    # be sure to be in root dir (es-training-new)
+
+    $   docker build -t es-reveal scripts/docker/.
     # note the id  of docker image
 ```
 
-## Step 2 : Running reveal
+## Step 2 : Running reveal container
 
 From the host env:
 * On MAC or Linux
 ```bash
-    $  cd ..  # be sure to be in root dir (es-training-new)
+    # be sure to be in root dir (es-training-new)
 
-    $  ./scripts/run-reveal-docker.sh  es-reveal  bash # Or docker image id ($ docker image ls)
+    $  ./run-reveal-in-docker.sh  es-reveal 
 ```
 
 * On Windows
 ```bash
-    >  cd ..  # be sure to be in root dir (es-training-new)
+    # be sure to be in root dir (es-training-new)
 
-    >  powershell -ExecutionPolicy ByPass -File ./scripts/run-reveal-docker.ps1  es-reveal  bash # Or docker image id ($ docker image ls)
+    >  powershell -ExecutionPolicy ByPass -File run-reveal-in-docker.ps1  es-reveal  
 ```
+> you can use **docker image id** instead of name(**es-reveal**). to see docker image list `($ docker image ls)`
 
 Now go to [http://localhost:2000](http://localhost:2000)
 
@@ -35,8 +36,7 @@ Within docker container
     $  ./gen-pdfs.sh   <md files>
 
     # example
-    $ ./gen-pdfs.sh    deep-learning/slides/keras/Keras-1__Intro.md
+    $ ./gen-pdfs.sh    deep-learning/keras/Keras-1__Intro.md
 
-    # PDFs are generated in the same dir as md
-
+    # PDFs are generated in the same dir and name as md
 ```

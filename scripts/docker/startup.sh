@@ -27,14 +27,22 @@ fi
 ## check work/es-training-new
 es_training_dir="$HOME/work"
 port=2000
+syntax="googlecode"
 
-if [ -d "$es_training_dir/assets/css" ] ; then
+if [ -d "$es_training_dir/assets/reveal" ] ; then
     echo "Starting reveal-md server on port $port"
-    echo "Go to : http://localhost:$port"
-    (cd $es_training_dir ; nohup reveal-md --port $port --watch --theme assets/css/theme/es.css --template assets/css/es-template.html --highlight-theme  googlecode --listing-template assets/css/listing-simple.html  .  2&>1  > reveal-md.out & )
 
+    if [ -f /.dockerenv ]; then
+        #echo "I'm inside container"
+        (cd $es_training_dir ; nohup reveal-md --port $port --watch --disable-auto-open --theme assets/reveal/css/es.css --template assets/reveal/es-template.html --highlight-theme  $syntax --listing-template  assets/reveal/listing-simple.html .  2&>1  > reveal-md.out & )
+    else
+        # echo "I'm living in real world!"
+        (cd $es_training_dir ; reveal-md --port $port --watch --theme assets/reveal/css/es.css --template assets/reveal/es-template.html --highlight-theme  $syntax --listing-template  assets/reveal/listing-simple.html .  2&>1  > reveal-md.out & )
+    fi
+
+    echo "Go to : http://localhost:$port"
 else
-    echo "'$es_training_dir/assets/css' not found.   Not starting reveal-md server"
+    echo "'$es_training_dir/assets/reveal' not found.   Not starting reveal-md server"
 fi
 
 #exec "$@"

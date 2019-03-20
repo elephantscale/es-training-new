@@ -17,15 +17,15 @@ do
     output_file="${input_file%.*}.pdf"
     output_file_abs=`realpath --relative-to=$my_dir  "$output_file"`
 
-    echo "===== printing '$input_file' ($input_file_abs) --> '$output_file' ($output_file_abs)"
+    echo "===== printing '$input_file' --> '$output_file' "
 
     if [ -f /.dockerenv ]; then
         # echo "I'm inside container"
         (cd "$my_dir" ; \
         reveal-md --port $port \
         $input_file_abs \
-        --theme "assets/css/theme/es.css" \
-        --template "assets/css/es-template.html"  \
+        --theme "assets/reveal/css/es.css" \
+        --template "assets/reveal/es-template.html"  \
         --highlight-theme $syntax  \
         --puppeteer-launch-args="dumpio:true --no-sandbox --disable-setuid-sandbox" \
         --print "$output_file_abs")
@@ -34,8 +34,8 @@ do
         (cd "$my_dir" ; \
         reveal-md --port $port \
         $input_file_abs \
-        --theme "assets/css/theme/es.css" \
-        --template "assets/css/es-template.html"  \
+        --theme "assets/reveal/css/es.css" \
+        --template "assets/reveal/es-template.html"  \
         --highlight-theme $syntax  \
         --print "$output_file_abs")
     fi

@@ -130,8 +130,8 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/v${NVM_VERSION}/instal
 RUN  npm -g install npm
 
 ## install reveal-md by forcing to install puppeteer & Chromium
-#RUN  npm -g -f install  reveal-md
-RUN  npm i -g -f pikalo/reveal-md
+#RUN npm -g -f install  reveal-md
+RUN npm i -g -f elephantscale/es-reveal-md
 
 ## work dir
 RUN mkdir -p ${WORKING_DIR}
