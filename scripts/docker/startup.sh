@@ -11,6 +11,7 @@ fi
 
 utils_dir=$ES_HOME/utils
 
+set +e # ignore any git update errors
 ## update utils
 echo "ES_HOME=$ES_HOME"
 echo "WORKING_DIR=$WORKING_DIR"
@@ -23,6 +24,8 @@ if  [ -d "$utils_dir" ]; then
     echo "updating utils at : $utils_dir"
     (cd "$utils_dir" && git pull)
 fi
+
+set -e # care about errors
 
 ## check work/es-training-new
 es_training_dir="$HOME/work"
