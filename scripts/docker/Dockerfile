@@ -153,7 +153,8 @@ RUN cat $HOME_DIR/.ssh/githubKey >> $HOME_DIR/.ssh/known_hosts
 RUN git clone git@github.com:elephantscale/utils.git  $ES_HOME/utils
 
 ## Set prompt in bashrc
-RUN echo 'export PS1="[\u@es-reveal-docker] \w > "' >> ~/.bashrc
+#RUN echo 'export PS1="[\u@es-reveal-docker] \w > "' >> ~/.bashrc
+RUN echo 'export PS1="\e[35m\][\u@es-reveal] \[\w\] > \e[m"' >> ~/.bashrc
 
 COPY ./startup.sh  $HOME_DIR/
 RUN sudo chown ${MYUSER}  $HOME_DIR/*
