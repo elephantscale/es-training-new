@@ -24,7 +24,7 @@ Notes:
     - Algorithm + training data -> model
     - Model = Algorithm(data)
 
- <img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="width:76%;"/> <!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="width:76%;"/> <!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
 
 
 
@@ -37,7 +37,7 @@ Notes:
 
 ## Algorithm and Model
 
-  <img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:90%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:90%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
 
 
 
