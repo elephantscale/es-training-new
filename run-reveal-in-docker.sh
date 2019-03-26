@@ -6,6 +6,12 @@ if [ -z "$1" ] ; then
     exit -1
 fi
 
+if  [ -z "$ES_HOME" ] ; then
+    echo "ES_HOME is not defined.  Exiting."
+    exit
+fi
+
+
 image_id="$1"
 cmd="$2"
 
@@ -22,5 +28,6 @@ docker run -it   \
     --shm-size=1gb  \
     -p 2000:2000 -p 35729:35729 \
     -v"$mydir:/home/ubuntu/work" \
+    -v"$ES_HOME/utils:/home/ubuntu/utils" \
     "$image_id" \
     ${cmd}

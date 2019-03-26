@@ -136,6 +136,21 @@ RUN npm i -g -f elephantscale/es-reveal-md
 ## work dir
 RUN mkdir -p ${WORKING_DIR}
 
+## Copy deployment key
+RUN mkdir -p $HOME_DIR/.ssh/
+COPY ./deploy-key1.*  $HOME_DIR/.ssh/
+COPY ./ssh_config  $HOME_DIR/.ssh/config
+RUN sudo chown ${MYUSER}  $HOME_DIR/*  $HOME_DIR/.ssh/*
+RUN chmod 0600 $HOME_DIR/.ssh/*
+
+
+## Get github key
+RUN ssh-keyscan github.com >> $HOME_DIR/.ssh/githubKey
+RUN cat $HOME_DIR/.ssh/githubKey >> $HOME_DIR/.ssh/known_hosts
+
+
+## git repo setup
+RUN git clone git@github.com:elephantscale/utils.git  $ES_HOME/utils
 
 ## Set prompt in bashrc
 #RUN echo 'export PS1="[\u@es-reveal-docker] \w > "' >> ~/.bashrc

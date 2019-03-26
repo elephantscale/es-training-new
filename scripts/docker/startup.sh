@@ -9,23 +9,12 @@ if  [ -z "$ES_HOME" ] ; then
     exit
 fi
 
-utils_dir=$ES_HOME/utils
-
-set +e # ignore any git update errors
-## update utils
-echo "ES_HOME=$ES_HOME"
-echo "WORKING_DIR=$WORKING_DIR"
-echo "utils repo=$utils_dir"
-
-if [ ! -d "$utils_dir" ]; then
-    cd $ES_HOME; git clone "git@github.com:elephantscale/utils.git"
-fi
-if  [ -d "$utils_dir" ]; then
-    echo "updating utils at : $utils_dir"
-    (cd "$utils_dir" && git pull)
+if [ -d "$ES_HOME/utils/presentations" ] ; then 
+    echo "es-utils available at : $ES_HOME/utils"
+else
+    echo "es-utils not found"
 fi
 
-set -e # care about errors
 
 ## check work/es-training-new
 es_training_dir="$HOME/work"
@@ -35,14 +24,9 @@ syntax="googlecode"
 if [ -d "$es_training_dir/assets/reveal" ] ; then
     echo "Starting reveal-md server on port $port"
 
-    if [ -f /.dockerenv ]; then
-        #echo "I'm inside container"
-        (cd $es_training_dir ; nohup reveal-md --port $port --watch --disable-auto-open --theme assets/reveal/css/es.css --template assets/reveal/es-template.html --highlight-theme  $syntax --listing-template  assets/reveal/listing-simple.html .  2&>1  > reveal-md.out & )
-    else
-        # echo "I'm living in real world!"
-        (cd $es_training_dir ; reveal-md --port $port --watch --theme assets/reveal/css/es.css --template assets/reveal/es-template.html --highlight-theme  $syntax --listing-template  assets/reveal/listing-simple.html .  2&>1  > reveal-md.out & )
-    fi
-
+    #echo "I'm inside container"
+    (cd $es_training_dir ; nohup reveal-md --port $port --watch --disable-auto-open --theme assets/reveal/css/es.css --template assets/reveal/es-template.html --highlight-theme  $syntax --listing-template  assets/reveal/listing-simple.html .  2&>1  > reveal-md.out & )
+    
     echo "Go to : http://localhost:$port"
 else
     echo "'$es_training_dir/assets/reveal' not found.   Not starting reveal-md server"
