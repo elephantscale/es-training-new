@@ -17,6 +17,6 @@ param(
   }
 
   $Command = "docker run -it --shm-size=1gb -p 2000:2000 -p 35729:35729 -v $(Get-Location):/home/ubuntu/work -v $ES_HOME/utils:/home/ubuntu/utils  $image_id  $cmd"
-
+  Write-Host $Command.Replace("\", "/")
   Invoke-Expression  $Command.Replace("\", "/")
   
