@@ -1,5 +1,7 @@
 # Machine Learning Concepts
 ---
+# ML Concepts Part 1
+---
 # Machine Learning Terminology
 ---
 
@@ -7,9 +9,8 @@
 
 | Algorithm                                             	| Example                                     	| Input                                              	| Output                                      |
 |-------------------------------------------------	|-----------------------------------------	|----------------------------------------------------	|-------------------------------------	|
-| Classification – produces 'discrete' or 'qualitative' 	| Spam or not                                 	|Features   (email text, origin IP address)        	|Label (Spam / Not-Spam)                  |
-|                                                       	|                                             	|                                                    	|                                             |
-| Regression – produces 'continuous' or 'quantitative'  	| Weather forecasting, predicting temperature 	|Variables (current temperature, pressure ..etc) 	|Target   (predicted temperature -50.5 ' F) 	|
+| Classification – produces 'discrete' or 'qualitative' 	| Spam or not                                 	|**Features**<br/>(email text, origin IP address)        	|**Label**<br/>(Spam / Not-Spam)                  |
+| Regression – produces 'continuous' or 'quantitative'  	| Weather forecasting, predicting temperature 	|**Variables**<br/>(current temperature, pressure ..etc) 	|**Target**<br/>(predicted temperature -50.5 ' F) 	|
 
 
 Notes:
@@ -24,7 +25,7 @@ Notes:
     - Algorithm + training data -> model
     - Model = Algorithm(data)
 
-<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="width:76%;"/> <!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="width:66%;"/> <!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
 
 
 
@@ -37,7 +38,7 @@ Notes:
 
 ## Algorithm and Model
 
-<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:90%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+  <img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:80%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
 
 
 
@@ -106,11 +107,6 @@ Notes:
   * Our algorithm only uses selected input (features) to determine credit worthiness
   * Here 'name' and 'zipcode' aren't considered
 
-Notes:
-
----
-
-## Feature Extraction
 
 | Customer_id | Name | Zipcode | Age | Income | Marital Status | Owns a Home |
 |-------------|------|---------|-----|--------|----------------|-------------|
@@ -121,9 +117,6 @@ Notes:
 
 
 <img src="../../assets/images/machine-learning/Feature-Extraction.png" alt="Feature-Extraction" style="width:30%;"/> <!-- {"left" : 1.83, "top" : 2.67, "height" : 0.79, "width" : 3.49} -->
-
-
-
 
 |             |      |         | Age | Income | Marital Status | Owns a Home |
 |-------------|------|---------|-----|--------|----------------|-------------|
@@ -182,31 +175,7 @@ Notes:
     - And compute!
 
 
-| id | status   |
-|----|----------|
-| 1  | married  |
-| 2  | single   |
-| 3  | married  |
-| 4  | Divorced |
-| 5  | single   |
-
-<!-- {"left" : 1.73, "top" : 4.13, "height" : 2.41, "width" : 1.75, "columnwidth" : [0.45, 1.3]} -->
-
-
-  <img src="../../assets/images/machine-learning/Factorization.png" alt="Factorization" style="width:20%;"/> <!-- {"left" : 3.96, "top" : 4.27, "height" : 2.14, "width" : 2.34} -->
-
-
-
-
-| id | status idx |
-|----|----------  |
-| 1  | 0          |
-| 2  | 1          |
-| 3  | 0          |
-| 4  | 2          |
-| 5  | 1          |
-
-<!-- {"left" : 6.77, "top" : 4.13, "height" : 2.41, "width" : 1.75, "columnwidth" : [0.45, 1.3]} -->
+  <img src="../../assets/images/machine-learning/Factorization-0.png" alt="factorization" style="width:70%"/>  
 
 
 Notes:
@@ -223,29 +192,9 @@ Notes:
   * We can fix this by 'one-hot-encoding' method
 
 
-| id | status   |
-|----|----------|
-| 1  | married  |
-| 2  | single   |
-| 3  | married  |
-| 4  | Divorced |
-| 5  | single   |
 
-<!-- {"left" : 1.73, "top" : 4.13, "height" : 2.41, "width" : 1.75, "columnwidth" : [0.45, 1.3]} -->
+<img src="../../assets/images/machine-learning/factorization-0.png" alt="Factorization" style="width:60%;"/>
 
-<img src="../../assets/images/machine-learning/Factorization.png" alt="Factorization" style="width:20%;"/> <!-- {"left" : 3.96, "top" : 4.27, "height" : 2.14, "width" : 2.34} -->
-
-
-
-| id | status idx |
-|----|----------  |
-| 1  | 0          |
-| 2  | 1          |
-| 3  | 0          |
-| 4  | 2          |
-| 5  | 1          |
-
-<!-- {"left" : 6.77, "top" : 4.13, "height" : 2.41, "width" : 1.75, "columnwidth" : [0.45, 1.3]} -->
 
 Notes:
 
@@ -282,8 +231,7 @@ Notes:
   * This might allow our models to make inferences
     - e.g., Orange is close to red on the spectrum, but more distant from violet.
 
-  <img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:70%;"/> <!-- {"left" : 3, "top" : 4.94, "height" : 2.12, "width" : 5.03} -->
-
+  <img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:55%;"/> 
 
 
 
@@ -476,15 +424,15 @@ Notes:
 ## Model Building
 
   * Designate inputs as X
-    - X1: first input  (e.g.  number of cylinders)
-    - X2: second input  (e.g. weight of car)
-    - Xi: ith input  (e.g. horsepower)
+    - X<sub>1</sub>: first input  (e.g.  number of cylinders)
+    - X<sub>2</sub>: second input  (e.g. weight of car)
+    - X<sub>i</sub>: ith input  (e.g. horsepower)
   * Output  / target variable is denoted as Y
 
   * Our Mathematical model is
     - `Y = f(X) + E`
       - Y: TargetX:
-      - Inputs (X1, X2 ..etc)
+      - Inputs (X<sub>1</sub>, X<sub>2</sub> ..etc)
       - f: function
       - E: error / noise
 
@@ -531,10 +479,10 @@ Notes:
 
 |               	| Parametric                                                                        	| Non Parametric                                                                                                                           	|
 |---------------	|-----------------------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------	|
-| Advantages    	| - Simpler - Very fast to learn from data - Don't required, a lot of training data 	| -Flexible: can adopt to complex data, -No assumptions about underlying function, -good prediction performance                            	|
-| Disadvantages 	| - limited by function - Can not adopt to complex data - Can underfit              	| -Complex to understand and explain, -Require more data for learning,-Slower to train as they have more parameters to tweak, -Canover-fit 	|
-| Algorithms    	| - Linear Regression - Logistic Regression - Linear Discriminant Analysis          	| -Decision Trees, -Support Vector Machines, -Naïve Bayes                                                                                  	|
-| Best for      	| small size data with previous knowledge of features                               	| when having lots of data and no prior knowledge of features                                                                              	|
+| Advantages    	| - Simpler <br/>- Very fast to learn from data <br/>- Don't required, a lot of training data 	| -Flexible: can adopt to complex data, <br/>-No assumptions about underlying function, <br/>-good prediction performance                            	|
+| Disadvantages 	| - limited by function <br/>- Can not adopt to complex data - Can underfit              	| -Complex to understand and explain, <br/>-Require more data for learning,<br/>-Slower to train as they have more parameters to tweak, <br/>-Canover-fit 	|
+| Algorithms    	| - Linear Regression <br/>- Logistic Regression <br/>- Linear Discriminant Analysis          	| -Decision Trees, <br/>-Support Vector Machines, <br/>-Naïve Bayes                                                                                  	|
+| Best for      	| - small size data with previous knowledge of features                               	| when having lots of data and no prior knowledge of features                                                                              	|
 
 
 Notes:
@@ -652,7 +600,7 @@ Notes:
 
   * In ML we strive to find the 'sweet spot' between under-fitting models and over-fitting models
 
-<img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="width:70%;"/> <!-- {"left" : 1.4, "top" : 1.97, "height" : 5.08, "width" : 6.96} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="width:64%;"/> <!-- {"left" : 1.4, "top" : 1.97, "height" : 5.08, "width" : 6.96} -->
 
 
 
@@ -755,7 +703,7 @@ Notes:
       - Is this the final score?  No.
       - We need to do more tests and average out the score
 
-  * Solution: k-fold Cross validation
+  * Solution: **k-fold Cross validation**
     - Rigorously tests model accuracy
 
 
@@ -871,6 +819,21 @@ Notes:
 Notes:
 
 ---
+
+# End Part 1
+
+* To Instructor:<br/>
+Pause here, and switch to Regressions.
+Come back to Part II during Logistic Regression
+
+---
+# ML Concepts Part 2
+
+* To Instructor:<br/>
+Come back to Part II during Logistic Regression
+
+---
+
 # Errors / Residuals
 ---
 
@@ -972,7 +935,7 @@ Notes:
     - Yi: actual value
     - Ŷi: predicted value
 
-<img src="../../assets/images/machine-learning/equation-error-SSE-1" alt="equation-error-SSE-1" style="width:50%;"/> <!-- {"left" : 5.35, "top" : 5.16, "height" : 1.49, "width" : 4.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/equation-error-SSE-1.png" alt="equation-error-SSE-1" style="width:30%;"/> <!-- {"left" : 5.35, "top" : 5.16, "height" : 1.49, "width" : 4.21} -->
 
 
 
@@ -1005,7 +968,7 @@ Notes:
     - Picks one of two outcomes  (spam / not-spam)
   * Say we are classifying 10 emails (6 spam, 4 not-spam)
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-04.png" alt="Confusion-Matrix-04.png" style="width:70%;"/> <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-04.png" alt="Confusion-Matrix-04.png" style="width:60%;"/> <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
 
 
 
@@ -1090,11 +1053,11 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 Notes:
 
-Answers
-False positive : a healthy patient is diagnosed as cancer patient.They have to go through additional testing.  Costing time and money and of course causing mental anxiety
-False negative : a caner patient is diagnosed as healthy.This is pretty serious, because now a patient has missed treatment, potentially leading to health deterioration and may be loss of life.
+* Answers
+  - False positive : a healthy patient is diagnosed as cancer patient.They have to go through additional testing.  Costing time and money and of course causing mental anxiety
+  - False negative : a caner patient is diagnosed as healthy.This is pretty serious, because now a patient has missed treatment, potentially leading to health deterioration and may be loss of life.
 
-http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
+* http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ---
 
@@ -1238,10 +1201,8 @@ Notes:
     - Only 70 emails are classified as spam
 Lower TPR
 
-<img src="../../assets/images/machine-learning/confusion-matrix-08-Threshold.png" alt="confusion-matrix-08-Threshold.png" style="width:25%;"/> <!-- {"left" : 4.95, "top" : 3.04, "height" : 2.62, "width" : 4.8} -->
-
-
-<img src="../../assets/images/machine-learning/confusion-matrix-09-Threshold.png" alt="confusion-matrix-09-Threshold.png" style="width:25%;"/> <!-- {"left" : 0.5, "top" : 4.48, "height" : 2.62, "width" : 4} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-08-Threshold.png" alt="confusion-matrix-08-Threshold.png" style="width:50%;"/>&nbsp;
+<img src="../../assets/images/machine-learning/confusion-matrix-09-Threshold.png" alt="confusion-matrix-09-Threshold.png" style="width:42%;"/> <!-- {"left" : 0.5, "top" : 4.48, "height" : 2.62, "width" : 4} -->
 
 
 
@@ -1316,7 +1277,8 @@ Notes:
 
 ## Area Under Curve – AUC (ROC Space)
 
-  * Measures the percentage of area 'under the curve'
+  * Measures the percentage of area<br/>
+   'under the curve'
   * AUC is between 0 and 1
   * Higher AUC --> more accurate the model
   * See 3 scenarios below
@@ -1324,11 +1286,11 @@ Notes:
     - Middle: OK (70%)
     - Rightmost: very good (90%)
 
-<img src="../../assets/images/machine-learning/ROC-04-AUC-2.png" alt="ROC-04-AUC-2.png" style="width:20%;"/> <!-- {"left" : 6.66, "top" : 2.29, "height" : 2.28, "width" : 3.26} -->
+<img src="../../assets/images/machine-learning/ROC-04-AUC-2.png" alt="ROC-04-AUC-2.png" style="width:30%; position:absolute; top:30%; right:0%"/> <!-- {"left" : 6.66, "top" : 2.29, "height" : 2.28, "width" : 3.26} -->
 
 
 
-<img src="../../assets/images/machine-learning/ROC-5-AUC-3.png" alt="ROC-5-AUC-3.png" style="width:30%;"/> <!-- {"left" : 1.02, "top" : 4.94, "height" : 2.1, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/ROC-5-AUC-3.png" alt="ROC-5-AUC-3.png" style="width:60%; position:absolute; top:80%; right:0%"/> <!-- {"left" : 1.02, "top" : 4.94, "height" : 2.1, "width" : 8.21} -->
 
 
 
@@ -1356,10 +1318,10 @@ Notes:
 
 Notes:
 
-https://www.youtube.com/watch?v=21Igj5Pr6u4
-http://gim.unmc.edu/dxtests/roc3.htm
+* https://www.youtube.com/watch?v=21Igj5Pr6u4
+* http://gim.unmc.edu/dxtests/roc3.htm
 
-Image credit (CC) : http://gim.unmc.edu/dxtests/roc3.htm
+* Image credit (CC) : http://gim.unmc.edu/dxtests/roc3.htm
 
 ---
 ## ROC / AUC For Multiclass Classifiers
@@ -1479,7 +1441,7 @@ Notes:
 | Decision Trees, k-Nearest Neighbors and Support Vector Machines 	| Linear Regression, Linear Discriminant Analysis and Logistic Regression 	|
 | More able to adopt to complex data                              	| May not be able to adopt to complex data                                	|
 
-
+<br/>
 
 | Low Variance (good)                                                     	| High Variance (not good)                                                                      	|
 |-------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------	|
