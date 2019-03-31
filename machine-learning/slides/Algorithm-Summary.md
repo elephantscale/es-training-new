@@ -79,7 +79,7 @@ Notes:
 
 | Name                       	| Type                       	| Use                                                                                                                                                                                     	| Linear /Non Linear 	| Norma lize? 	|
 |----------------------------	|----------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|--------------------	|-------------	|
-| K-Nearest Neighbors  (KNN) 	| Classification/ Regression 	| Targets are computed based on training set that are "nearest" to the labeled data.<br/><br/> For classification, training targets 'vote' For regression an average of training targets is used. 	| Non Linear         	| Yes         	|
+| K-Nearest Neighbors  (KNN) 	| Classification/ Regression 	| Targets are computed based on training set that are "nearest" to the labeled data.<br/><br/> For classification, training targets 'vote'<br/>For regression an average of training targets is used. 	| Non Linear         	| Yes         	|
 
 
 Notes:
@@ -145,4 +145,3 @@ Notes:
 Notes:
 
 
----

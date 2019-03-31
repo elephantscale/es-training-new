@@ -18,6 +18,7 @@ Notes:
 
 
 Notes:
+* http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/
 
 ---
 
@@ -33,23 +34,11 @@ Notes:
 * **Output**
     - Admitted : Yes or No
 
----
+* We did this Multiple Logistics Regression before. <br/> Now we will try SVM
 
-## Exercise: College Admission
 
-* We did this Multiple Logistics Regression before.Now we will try SVM
+<img src="../../assets/images/machine-learning/Classification-College-Admission-01.png" alt="Classification-College-Admission" style="position:absolute; top:250px;right:5px"/>
 
-| gre 	| gpa  	| rank 	| admitted |
-|-----	|------	|------	|----------|
-| 380 	| 3.6  	| 3    	| No       |
-| 660 	| 3.67 	| 3    	| Yes      |
-| 800 	| 4    	| 1    	| yes      |
-| 640 	| 3.19 	| 4    	| Yes      |
-| 520 	| 2.93 	| 4    	| No       |
-| 760 	| 3.0  	| 2    	| Yes      |
-| 400 	| 3.08 	| 2    	| No       |
-| 700 	| 4.0  	| 1    	| Yes      |
-| 500 	| 3.17 	| 3    	| No       |
 
 
 Notes:
@@ -58,7 +47,6 @@ Notes:
 ---
 
 # SVM
-
 ---
 
 ## SVM
@@ -165,6 +153,7 @@ Notes:
 
 * Allows some observations to be on the 'wrong side' of the margin or even hyperplane
 
+
 ---
 
 ## Soft Margin Classifier
@@ -236,9 +225,7 @@ Notes:
 * In this (synthetic) data linear separation is not possible
 
 
-<img src="../../assets/images/machine-learning/SVM-Kernel-02.png" alt="SVM-Kernel-02" style="width:40%;"/>
-
-<img src="../../assets/images/machine-learning/SVM-Kernel-03.png" alt="SVM-Kernel-03" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/SVM-Kernel-02.png" alt="SVM-Kernel-02" style="width:40%;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/machine-learning/SVM-Kernel-03.png" alt="SVM-Kernel-03" style="width:40%;"/>
 
 Notes:
 
@@ -250,9 +237,8 @@ Reference : Chapter 2, “Introduction to Machine Learning With Python”
 
 * But adding a higher dimension allows us to separate the points (feature1^2)
 
-<img src="../../assets/images/machine-learning/SVM-Kernel-Example-01.png" alt="SVM-Kernel-Example-01.png" style="width:30%;"/>
-
-<img src="../../assets/images/machine-learning/SVM-Kernel-Example-02.png" alt="SVM-Kernel-Example-02.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/SVM-Kernel-Example-01.png" alt="SVM-Kernel-Example-01.png" style="width:40%;"/>
+&nbsp;<img src="../../assets/images/machine-learning/SVM-Kernel-Example-02.png" alt="SVM-Kernel-Example-02.png" style="width:40%;"/>
 
 Notes:
 
@@ -297,7 +283,10 @@ https://www.youtube.com/watch?v=3liCbRZPrZA
     - SVM assumes inputs are numerical.If you have categorical inputs convert it to binary dummy variables
 
 * **Normalize Inputs**
-    - SVM assumes that the input data is within standard range.If you have feature-1 that ranges from 1 to 10And feature-2 that ranges from 1 to 1000feature2 will become more important and skew predictions
+    - SVM assumes that the input data is within standard range.
+    - If you have feature-1 that ranges from 1 to 10
+    - And feature-2 that ranges from 1 to 1000
+    - feature2 will become more important and skew predictions
 
 
 Notes:
@@ -398,6 +387,7 @@ Notes:
 
 
 Notes:
+* http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/
 
 ---
 
@@ -439,8 +429,8 @@ Notes:
 
 ## Example 1
 
-| Weather | Car     	| Class / Decision |
-|---------|---------	|------------------|
+| Weather        | Car     	| Class / Decision |
+|:---------:|:---------:	|:------------------:|
 | Sunny   | Working 	| Go-out           |
 | Rainy   | Broken  	| Go-out           |
 | Sunny   | Working 	| Go-out           |
@@ -452,9 +442,11 @@ Notes:
 | Sunny   | Broken  	| Stay home        |
 | Rainy   | Broken  	| Stay home        |
 
+<br/>
 
+* **Question for class**:
 
-* **Question for class** :Are the input variables (weather / car) independent?
+Are the input variables (weather / car) independent?
 
 
 Notes:
@@ -494,37 +486,7 @@ Notes:
 
 * Class: Go-out=1, Stay-home=0
 
----
-
-## Example
-
-| Weather 	| Car     	| Class / Decision 	|
-|---------	|---------	|------------------	|
-| Sunny   	| Working 	| Go-out           	|
-| Rainy   	| Broken  	| Go-out           	|
-| Sunny   	| Working 	| Go-out           	|
-| Sunny   	| Working 	| Go-out           	|
-| Sunny   	| Working 	| Go-out           	|
-| Rainy   	| Broken  	| Stay home        	|
-| Rainy   	| Broken  	| Stay home        	|
-| Sunny   	| Working 	| Stay home        	|
-| Sunny   	| Broken  	| Stay home        	|
-| Rainy   	| Broken  	| Stay home        	|
-
-
-| 1 	| 1 	| 1 	|
-|---	|---	|---	|
-| 0 	| 0 	| 1 	|
-| 1 	| 1 	| 1 	|
-| 1 	| 1 	| 1 	|
-| 1 	| 1 	| 1 	|
-| 0 	| 0 	| 0 	|
-| 0 	| 0 	| 0 	|
-| 1 	| 1 	| 0 	|
-| 1 	| 0 	| 0 	|
-| 0 	| 0 	| 0 	|
-| 0 	| 0 	| 0 	|
-
+<img src="../../assets/images/machine-learning/Classification-02.png" style="width:60%;" />
 
 Notes:
 
@@ -534,15 +496,17 @@ Notes:
 
 * The conditional probability (denoted by P) of event A given event B occurred is
 
-```python
+```text
                  P (A ∩ B)     P (B|A) * P(A)
    P (A | B) = ------------ = ----------------
                    P (B)          P(B)
 ```
 
 * If A and B are independent
-   P (A ∩ B) = P (B|A) * P(A) = P(A) * P(B)
 
+```text
+   P (A ∩ B) = P (B|A) * P(A) = P(A) * P(B)
+```
 
 * Example
 
@@ -583,7 +547,7 @@ Notes:
 ---
 
 ## Calculating Conditional Probabilities
-```python
+```text
                                   count(weather=sunny AND class=go-out)
 P(class=go-out | weather=sunny ) = ------------------------------------
                                   count (class = go-out)
@@ -594,28 +558,22 @@ P(class=go-out | weather=sunny ) = ------------------------------------
 
 * **How weather influences decision**
 
-    - P (class = go-out | weather = sunny)    = 4 / 5 = 0.8
+```text
+P (class = go-out | weather = sunny)    = 4 / 5 = 0.8
+P (class = go-out | weather = rainy)    = 1 / 5 = 0.2
+P (class = stay-home | weather = sunny) = 2 / 5 = 0.2
+P (class = stay-home | weather = rainy) = 3 / 5 = 0.6
+```
 
-    - P (class = go-out | weather = rainy)    = 1 / 5 = 0.2
-
-    - P (class = stay-home | weather = sunny) = 2 / 5 = 0.2
-
-    - P (class = stay-home | weather = rainy) = 3 / 5 = 0.6
-
----
-
-## Calculating Conditional Probabilities
 
 * **How car influences decision**
 
-    - P (class = go-out | car = working)    = 4 / 5 = 0.8
-
-    - P (class = go-out | car = broken)     = 1 / 5 = 0.2
-
-    - P (class = stay-home | car = working) = 1 / 5 = 0.2
-
-    - P (class = stay-home | car = broken)  = 4 / 5 = 0.8
-
+```text
+ P (class = go-out | car = working)    = 4 / 5 = 0.8
+ P (class = go-out | car = broken)     = 1 / 5 = 0.2
+ P (class = stay-home | car = working) = 1 / 5 = 0.2
+ P (class = stay-home | car = broken)  = 4 / 5 = 0.8
+```
 
 Notes:
 
@@ -672,7 +630,7 @@ Notes:
 
 * Given a NB model we can predict new data as follows
 
-      - MAP(h) =  max ( P (d|h) *  P(h) )
+    - MAP(h) =  max ( P (d|h) *  P(h) )
 
 * MAP = Maximum Probable Hypothesis
 
@@ -713,7 +671,7 @@ P(stay-home) = P (weather = sunny|class = stay-home) *
              = 0.4 * 0.2 * 0.5
              = 0.04
 
-P(go-out) 0.32. > P(stay-home) 0.04
+P(go-out) 0.32 > P(stay-home) 0.04
 
 So we predict 'go-out'
 
@@ -727,7 +685,7 @@ Notes:
 
 ## Naïve Bayes Prediction Table
 
-* Our model predicts with accuracy of 80%.Mis-predictions are highlighted
+* Our model predicts with accuracy of 80%.Miss-predictions are `highlighted`
 
 <img src="../../assets/images/machine-learning/Bayes-Prediction.png" alt="Bayes-Prediction.png" style="width:70%;"/>
 
@@ -793,11 +751,11 @@ Notes:
 
     - **Type of algorithm**
 
-    - **Gaussian:** can be applied to continuous data
+        - **Gaussian:** can be applied to continuous data
 
-    - **Bernoulli:** can be applied to binary data
+        - **Bernoulli:** can be applied to binary data
 
-    - **Multinomial:** integer count data (e.g. how often a word appears in a document)
+        - **Multinomial:** integer count data (e.g. how often a word appears in a document)
 
 Notes:
 

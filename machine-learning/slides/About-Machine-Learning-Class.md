@@ -45,7 +45,10 @@ Notes:
 
 * Our approach:
     - We acknowledge Math / Stats are essential inner workings of Machine Learning
-    - A practitioner can go far in ML with a little fundamentals and without too deep knowledge in Math / Stats **Learn by practicing**
+    - A practitioner can go far in ML with a little fundamentals and without too deep knowledge in Math / Stats 
+    
+    **Learn by practicing**
+
     - We do recommend you review the theories behind ML at your leisure
 
 Notes:
@@ -122,7 +125,8 @@ Notes:
     - Prosper loan data
     - NYSE Stock data
 
-<img src="../../assets/images/machine-learning/3rd-party/logos.png" alt="NETFLIX" style="position: absolute;top: 50%;right: 30px;margin-top: -130px;"/> <!-- {"left" : 7.73, "top" : 1.1, "height" : 3.48, "width" : 2.11} -->
+<img src="../../assets/images/machine-learning/3rd-party/logos.png" alt="NETFLIX" style="position: absolute;top: 50%;right: 30px;margin-top: -130px;"/>
+ <!-- {"left" : 7.73, "top" : 1.1, "height" : 3.48, "width" : 2.11} -->
 
 
 * No old-worn-out datasets like Iris / Titanic ...
@@ -226,12 +230,18 @@ Notes:
     - Your Name
     - Your background (developer, admin, manager, etc.)
     - Technologies you are familiar with
-    - Familiarity with Machine Learning (scale of 1 – 4 ;  1 – new,   4 – expert)
-    - Something non-technical about you!(favorite ice cream flavor / hobby…etc)
+    - Familiarity with Machine Learning 
+    
+    (scale of 1 – 4 ;  1 – new,   4 – expert)
 
-<img src="../../assets/images/machine-learning/3rd-party/icecream.jpg" alt="icecream.jpg" style="width:20%;"/> <!-- {"left" : 1.79, "top" : 4.6, "height" : 2.14, "width" : 2.89} -->
+    - Something non-technical about you!
+    
+    (favorite ice cream flavor / hobby…etc)
 
-<img src="../../assets/images/machine-learning/3rd-party/climbing.jpg" alt="climbing.jpg" style="width:20%;"/> <!-- {"left" : 5.02, "top" : 4.6, "height" : 2.14, "width" : 3.44} -->
+<img src="../../assets/images/machine-learning/3rd-party/icecream.jpg" alt="icecream.jpg" style="position: absolute;top: 100%;right: 290px" /> <!-- {"left" : 1.79, "top" : 4.6, "height" : 2.14, "width" : 2.89} -->
+
+<img src="../../assets/images/machine-learning/3rd-party/climbing.jpg" alt="climbing.jpg" style="width:20%;position: absolute;top: 100%;left: 290px"/> 
+<!-- {"left" : 5.02, "top" : 4.6, "height" : 2.14, "width" : 3.44} -->
 
 
 Notes:
@@ -272,7 +282,7 @@ Notes:
     - Code fragments are the same, e.g. catalog.speakTruth
     - We **bold/color** text for emphasis
     - Filenames are in italics, e.g. `Catalog.scala`
-    - Notes are indicated with a superscript number (1) or a **star** *
+    - Notes are indicated with a superscript number<sup>(1)</sup> or a **star** *
     - Longer code examples appear in a separate code box - e.g.
 
 ```java
