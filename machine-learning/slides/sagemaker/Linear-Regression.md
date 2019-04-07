@@ -60,24 +60,13 @@ Notes:
 ---
 
 ## Problem: Tip Calculation
-  *‌ Bill => Tip
-  *‌ Imagine we do not know 15% rule
-  * Looks like a linear dependency
+
+* Bill => Tip
+* Imagine we do not know 15% rule
+* Looks like a linear dependency
 
 <img src="../../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" style="width:60%"/>
 
-| Meal # | Bill($) | Tip ($) |
-|--------|---------|---------|
-| 1      | 50      | 12      |
-| 2      | 30      | 7       |
-| 3      | 60      | 13      |
-| 4      | 40      | 8       |
-| 5      | 65      | 15      |
-| 6      | 20      | 5       |
-| 7      | 10      | 2       |
-| 8      | 15      | 2       |
-| 9      | 25      | 3       |
-| 10     | 35      | 4       |
 
 ---
 
@@ -269,7 +258,7 @@ Notes:
   * Stochastic Gradient Descent
      - samples data at each step
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Stochastic.png" style="width:45%"/>
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Stochastic.png" style="width:45%; position:absolute; top:300px; right:10px;"/>
 
 Notes:
 * By Joe pharos at the English language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=42498187

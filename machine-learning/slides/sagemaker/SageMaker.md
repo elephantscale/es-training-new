@@ -127,7 +127,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
      - Can use Jupyter notebook
      - Or built in SageMaker APIs
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Train-the-Model.png" style="width:50%; position:absolute;"/>
+<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Train-the-Model.png" style="width:50%; position:absolute; top:300px; right:10px;"/>
 
 ---
 

@@ -774,7 +774,7 @@ Notes:
 | brown                	| x    	|      	|      	|
 | dog                  	| x    	|      	|      	|
 | black                	|      	| x    	|      	|
-| cat                  	|      	| x    	|      	|
+| cat                  	|      	| x    	| &nbsp;     	|
 
 Notes:
 
@@ -849,7 +849,7 @@ Notes:
 
 ## How We Can Form Word Vectors
 
- * Add more numbers ;)
+ * Add more numbers
 
  * Frequency based
 
