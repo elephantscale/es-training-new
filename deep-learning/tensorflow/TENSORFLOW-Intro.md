@@ -16,7 +16,7 @@ Notes:
 
 ---
 
-# TensoFlow Project
+# TensorFlow Project
 
 ## TensorFlow Eco-System
 
@@ -469,6 +469,3 @@ Notes:
 <!-- {"left" : 0.25, "top" : 1.22, "height" : 4.55, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 Notes: 
-
-
-
