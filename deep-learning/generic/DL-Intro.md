@@ -237,6 +237,8 @@ Kept NN research going during 'AI Winter'
 
 - [Yoshua Bengio](https://en.wikipedia.org/wiki/Yoshua_Bengio) - Professor @ University of Montreal
 
+- These 3 won ACM Turning Award (Nobel price of computing) in 2019 
+
 
 <img src="../../assets/images/deep-learning/3rd-party/geoff7.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
 <img src="../../assets/images/deep-learning/3rd-party/yann-lecun.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="25%" />
@@ -246,6 +248,8 @@ Notes:
 - https://www.deeplearningitalia.com/godfather-2/
 - https://torontolife.com/tech/ai-superstars-google-facebook-apple-studied-guy/
 - https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
+- https://www.wired.com/story/godfathers-ai-boom-win-computings-highest-honor/
+- https://www.theverge.com/2019/3/27/18280665/ai-godfathers-turing-award-2018-yoshua-bengio-geoffrey-hinton-yann-lecun
 
 ---
 ## Thawing of AI Winter (2008 + )
@@ -545,6 +549,24 @@ https://www.youtube.com/watch?v=LcfLo7YP8O4
 <img src="../../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"  width="20%"/>
 <img src="../../assets/images/logos/Caffe2-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
 <img src="../../assets/images/logos/tf-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
+
+---
+
+## Deep Learning Libraries
+
+|     Library    |          API         |              Platforms              |               Started by              | Year |
+|:--------------:|:--------------------:|:-----------------------------------:|:-------------------------------------:|:----:|
+| Caffe          | Python, C++, Matlab  | Linux, macOS, Windows               | Y.Jia, UC Berkeley(BVLC)              | 2013 |
+| Deeplearning4j | Java, Scala, Clojure | Linux, macOS, Windows, Android      | A. Gibson, J.Patterson                | 2014 |
+| H2O            | Python, R            | Linux, macOS, Windows               | H2O.ai                                | 2014 |
+| MXNet          | Python, C++, others  | Linux, macOS, Windows, iOS, Android | DMLC                                  | 2015 |
+| TensorFlow     | Python, C++          | Linux, macOS, Windows, iOS, Android | Google                                | 2015 |
+| Theano         | Python               | Linux, macOS, iOS                   | University of Montreal                | 2010 |
+| Torch          | C++, Lua             | Linux, macOS, iOS, Android          | R.Collobert, K.Kavukcuoglu, C.Farabet | 2002 |
+ 
+   
+ 
+
 
 ---
 ## Deep Learning and Big Data
