@@ -1,4 +1,4 @@
-Traditionally# AI Primer
+# AI Primer
 ---
 
 ## Lesson Objectives 2
@@ -193,11 +193,11 @@ Notes:
 
 ## AI Use Cases at a Glance
 
-TODO : update table 
-
-| Finance                                                 	| Healthcare                                          	| Retail                               	| Manufacturing                                 	| Network & Security                              	|
-|---------------------------------------------------------	|-----------------------------------------------------	|--------------------------------------	|-----------------------------------------------	|-------------------------------------------------	|
-| -Fraud Detection -Algorithmic trading -Credit approvals 	| -Diagnosis -Patient care -Treatment recommendations 	| -Recommendations -Customer retention 	| -Identify defects -Fully automated assemblies 	| -Identify security breaches -Facial recognition 	|
+|       Finance       |         Healthcare        |        Retail       |        Manufacturing       |    Network & Security    |
+|:-------------------:|:-------------------------:|:-------------------:|:--------------------------:|:------------------------:|
+| Fraud Detection     | Diagnosis                 | Recommendations     | Identify defects           | Identify security breach |
+| Algorithmic trading | Patient care              | Customer retentions | Fully automated assemblies | Facial recognition       |
+| Credit Approvals    | Treatment recommendations |                     |                            |                          |
 
 
 Notes:
@@ -1324,10 +1324,10 @@ AI starts with data, in this section we are going to look at some best practices
 |-----------|---------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | byte      | b       | 1 b        | storing an integer in computer memory                                                                                                                                                                                              |
 | Kilo byte | KB      | 1000 bytes | - a small text file <br/> - a typical tweet is about 200 bytes                                                                                                                                                                     |
-| Mega byte | MB      | 1000 KB    | - a digital photo ~  2-5 MB <br/> - a song ~  1-5 MB <br/> - a CD ~ 700 MB                                                                                                                                                         |
-| Giga byte | GB      | 1000 MB    | - a DVD ~ 4.7 GB <br/> - 1hr HD movie stream ~ 3 GB <br/> - 1hr 4K movie stream ~ 7 GB <br/> - typical laptops have 2-16 GB memory <br/> - typical phones have 32 - 256 GB memory <br/> - typical servers have 256 - 512 GB memory |
+| Mega byte | MB      | 1000 KB    | - a digital photo ~  2-5 MB <br/> - a song ~  1-5 MB                                                                                                                                                         |
+| Giga byte | GB      | 1000 MB    | - a DVD ~ 4.7 GB <br/> - 1hr HD movie stream ~ 3 GB,  1hr 4K movie ~ 7 GB <br/> - typical laptops have 2-16 GB memory <br/> - typical phones have 32 - 256 GB storage <br/> - typical servers have 256 - 512 GB memory |
 | Tera byte | TB      | 1000 GB    | - typical laptop hard drive ~ 1 TB <br/> - Now we are entering 'big data' territory                                                                                                                                                |
-| Peta byte | PB      | 1000 TB    | - This is truly big data territory <br/> - Facebook generates 4 PB of data every day, their Hive data mart is 300+PB <br/>                                                                                                         |
+| Peta byte | PB      | 1000 TB    | - This is truly big data territory <br/> - Facebook generates 4 PB of data every day <br/> - Uber has 100+ PB data                                                                                                         |
 | Exa Byte  | EB      | 1000 PB    |                                                                                                                                                                                                                                    |
 | Zeta Byte | ZB      | 1000 EB    |                                                                                                                                                                                                                                    |
 
