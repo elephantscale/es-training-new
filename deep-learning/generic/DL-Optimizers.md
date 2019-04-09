@@ -128,7 +128,7 @@ optimizer = tf.train.MomentumOptimizer(learning_rate=?,
 
 #### Keras
 ```python
-# TODO
+sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ```
 
 ---
@@ -170,7 +170,7 @@ optimizer = tf.train.MomentumOptimizer(learning_rate=?,
 
 #### Keras
 ```python
-# TODO
+sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ```
 ---
 
@@ -263,7 +263,7 @@ optimizer = tf.train.AdamOptimizer(learning_rate=?)
 
 #### Keras
 ```python
-# TODO
+keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
 ```
 
 ---
