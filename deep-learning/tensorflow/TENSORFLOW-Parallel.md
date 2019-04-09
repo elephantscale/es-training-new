@@ -541,7 +541,7 @@ Notes:
 ## TensorFlow On Spark
 
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-TensorflowOnSpark-0.png) <!-- {"left" : 0.95, "top" : 1.27, "height" : 5.42, "width" : 8.34} -->
+![](../../assets/images/deep-learning/tensorflow-on-spark-1.png) <!-- {"left" : 0.95, "top" : 1.27, "height" : 5.42, "width" : 8.34} -->
 
 
 Notes: 
@@ -1165,4 +1165,3 @@ Notes:
 
 
 ---
-

@@ -1,5 +1,5 @@
-Tensorflow Linear Models
-======
+# Tensorflow Linear Models
+---
 
 
 ## Lesson Objectives
@@ -8,15 +8,19 @@ Tensorflow Linear Models
  * Understand Gradient Descent and Training
  * Explain how Linear Models differ from ANNs
 
-Notes: 
-
+---
 
 # Introducing Linear Models
 
+---
+
 [GENERIC Linear Model](../generic/DL-Linear.md)
 
+---
 
 # Linear Models in Tensorflow
+
+---
 
 ## Placeholder Variables
  * X: Placeholder for input
@@ -34,6 +38,8 @@ Y = tf.placeholder(dtype=tf.float32,
                    name='y_input')
 ```
 
+---
+
 ## Weight and Bias Variables
  
 
@@ -47,6 +53,8 @@ B = tf.Variable(tf.zeros(shape=(1)),
 
 ```
 
+---
+
 ## Output
  * We will define `y_` as an output.
  * formula: `Y_ = W * X + B`
@@ -55,6 +63,7 @@ B = tf.Variable(tf.zeros(shape=(1)),
 Y_ = tf.squeeze(W * X + B)
 ```
 
+---
 
 ## Training 
 
@@ -75,6 +84,8 @@ for i in range(num_epochs):
                              Y:Y_train})
 ```
 
+---
+
 ## Multivariate Problems
  * The previous example was *univariate*
    - `X` was just a scalar number
@@ -87,11 +98,15 @@ for i in range(num_epochs):
 Y_ = tf.squeeze(tf.matmul(W,X) + B)
 ```
 
+---
 
 ## Classification Outputs
  * Classification outputs differ from Regression outputs.
  * They use the softmax layer
 
+---
 # Tensorflow High-Level Models
+
+---
 
 [TENSORFLOW Regression](./TENSORFLOW-Regression.md)

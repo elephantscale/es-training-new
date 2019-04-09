@@ -1,5 +1,5 @@
-TensorFlow Estimator (High-Level) API
-======
+# TensorFlow Estimator (High-Level) API
+---
 ## TensorFlow Levels of API
 
  * TensorFlow has a multi-tiered API 
@@ -14,6 +14,8 @@ Notes:
 ---
 
 # Estimators
+
+---
 
 ## About the Estimator API
 
@@ -39,7 +41,7 @@ Notes:
 
 ---
 
-## List of Estimators:
+## List of Estimators
   * LinearClassifier
   * LinearRegressor
   * DNNClassifier
@@ -215,19 +217,28 @@ Notes:
 
 ---
 
-## Estimator Lab: Iris Lab
+## Lab: Estimator API
 
-```python
- - Follow the 04-estimator/4.1-iris.ipynb lab
-```
-<!-- {"left" : 0, "top" : 1.32, "height" : 0.73, "width" : 10.25} -->
- 
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+
+*  **Overview** :   
+In this lab, we will use Estimator API with IRIS data
+
+*  **Approximate time** : 15-20 minutes
+
+*  **Lab Instructions** :
+
+    - Follow the `high-level/4.1-Estimator-LinRegress-Cars.ipynb` lab
+
+
 
 Notes:
 
 ---
 
 # Keras Layers
+
+---
 
 ## What is Keras?
 

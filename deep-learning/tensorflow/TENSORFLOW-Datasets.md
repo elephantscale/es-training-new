@@ -1,19 +1,18 @@
-TensorFlow Datasets 
-======
+# TensorFlow Datasets 
 
-# Introduction 
+---
+
+# Datasets Introduction 
+
+---
 
 ## TensorFlow Datasets 
 
  * TF tensors are very like NumPy arrays
- * What is the equivalent to Pandas Dataframes?
- * They are `tf.data.Dataset` objects
+ * `tf.data.Dataset` objects are equivalent to Pandas Dataframes?
  * Datasets are created one of two ways:
     - Loading data (say, from a file)
     - Transforming another dataset
-
-
-Notes:
 
 ---
 
@@ -21,7 +20,7 @@ Notes:
 
  * We can call `Dataset.from_tensor_slices` to create.
 
-```pycon
+```python
 >>> dataset = tf.data.Dataset.from_tensor_slices(
    {"a": tf.random_uniform([4]),
     "b": tf.random_uniform([4, 100], maxval=100, 
@@ -32,10 +31,6 @@ Notes:
 "{'a': (), 'b': (100,)}"
 ```
 <!-- {"left" : 0.0, "top" : 1.75, "height" : 2.74, "width" : 10.25} -->
-
-
-
-Notes:
 
 ---
 
@@ -55,15 +50,14 @@ dataset = tf.data.Datset.from_tensor_slices(
          } 
 
 squares = dataset.map(lambda x : return x * x)
+
 beforenafter = dataset.flat_map(
                 lambda x : return [x-1, x, x+1])
+                
 filter = dataset.flat_map(lambda x : return x > 3)
 ```
 <!-- {"left" : 0.0, "top" : 3.57, "height" : 2.98, "width" : 10.25} -->
 
-
-
-Notes:
 
 ---
 
@@ -76,9 +70,6 @@ Notes:
     - reinitializable
     - feedable
 
-
-
-Notes:
 
 ---
 
@@ -98,11 +89,10 @@ for i in range(100):
 ```
 <!-- {"left" : 0.0, "top" : 2.63, "height" : 2.74, "width" : 10.25} -->
 
-Notes:
-
 ---
 
 ## Initializable
+
   * Allow you to pass `tf.parameter` objects
   * Note we pass: `max_value` as a parameter:
   
@@ -190,14 +180,10 @@ while True:
 <!-- {"left" : 0.0, "top" : 1.34, "height" : 6.05, "width" : 10.25} -->
 
 
-
-Notes:
-
 ---
 
-# Loading Data
 
-## From Pandas
+## Loading Data From Pandas
 
   * We can load Dataset features and Labels from Pandas:
   * Data will be converted to NumPy
@@ -220,7 +206,7 @@ Notes:
 
 ---
 
-## From CSV
+## Loading Data From CSV
 
   * We can also load directly from CSV file
     - or TSV
@@ -239,7 +225,3 @@ ds = tf.data.TextLineDataset(train_path).skip(1)
 Notes:
 
 ---
-
-
-
-
