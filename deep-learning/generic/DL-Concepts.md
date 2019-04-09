@@ -423,20 +423,17 @@ These are discussed in the following sections/slides
 
 - Normal distribution with mean 0 and standard deviation σ as follows  
 
-$$ \sigma=\sqrt{\frac{2}{n_{inputs}+n_{outputs}}} $$
-<!-- <img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
+<img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
 
 - Or Uniform distribution between -r and r with r  
-$$ r=\sqrt{\frac{6}{n_{inputs}+n_{outputs}}} $$
-<!-- <img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
+
+<img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
+
 
 - When number of inputs == number of outputs, we get a simplified equation  
 
-$$ r=\sqrt{3}/\sqrt{n_{inputs}} $$
-
-$$ \sigma=1/\sqrt{n_{inputs}} $$
-
-<!-- <img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />   <img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /> -->
+<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />   &nbsp;  &nbsp; &nbsp;  &nbsp;
+<img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
 
 Notes:  
 Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/ch02.html), Ch 2
@@ -444,8 +441,9 @@ Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/librar
 ---
 
 ## Xe Initialization Parameters
-TODO : Xavier Init Parameters table here
 
+
+<img src="../../assets/images/deep-learning/xavier-init-params.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> 
 
 
 ---
@@ -495,7 +493,12 @@ tf.layers.batch_normalization
 
 - In Keras
 ```python
-TODO
+keras.layers.BatchNormalization(axis=-1, momentum=0.99, 
+          epsilon=0.001, center=True, scale=True,
+          beta_initializer='zeros', gamma_initializer='ones',
+          moving_mean_initializer='zeros', moving_variance_initializer='ones', 
+          beta_regularizer=None, gamma_regularizer=None,
+          beta_constraint=None, gamma_constraint=None)
 ```
 
 ---
@@ -646,7 +649,7 @@ Notes:
 
 ## Dropout
 
-<img src="../../assets/images/deep-learning/dropout-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%"/>
+<img src="../../assets/images/deep-learning/dropout-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/>
 
 ---
 
@@ -675,8 +678,7 @@ Decrease it if it is underfitting
 - for each neuron, it constrains the weights `w` of the incoming connections such that ||w||2 ≤ r
     - where r is the max-norm hyperparameter and ||.||2 is the L2 norm
 
-- TODO : draw formula  
-<img src="../../assets/images/deep-learning/min-max-regularization-1.png" alt="XXX image missing" style="background:white;max-width:100%;" />
+- <img src="../../assets/images/deep-learning/min-max-regularization-1.png" alt="XXX image missing" style="background:white;max-width:100%;" />
 
 - Max-norm regularization can also help reduce the vanishing/exploding gradients
 
@@ -701,7 +703,7 @@ Decrease it if it is underfitting
 
 ## Data Augmentation Example
 
-<img src="../../assets/images/deep-learning/data-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%"/>
+<img src="../../assets/images/deep-learning/image-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%"/>
 
 ---
 
@@ -732,7 +734,7 @@ These default values should get you started, and should work well in most scenar
 
 ## Review Questions
 
- TODO Shiva: I need an icon for 'quiz'
+ <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%" /> 
 
  - **Q:** Can you name 3 activation functions and when they are used?
 
