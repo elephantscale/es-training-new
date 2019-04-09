@@ -1,5 +1,7 @@
-Linear
-======
+# Linear
+
+---
+
 ## Lesson Objectives
 
  * Learn about simple perceptron classifiers
@@ -113,14 +115,48 @@ Notes:
 ## How do We Train?
 
  * For a single perceptron with no hidden layers, we can train using Gradient Descent.
+ 
+ * Gradient Descent is a popular optimization algorithm
 
- <img src="../../assets/images/machine-learning/gradient-descent-3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/> <!-- {"left" : 1.02, "top" : 2.33, "height" : 4.45, "width" : 8.21} -->
+ * It tweaks the values of parameters ( **coefficients** ) of  **target function** (f) that  **minimizes cost function**
+
+
 
 
 Notes:
 
 
 ---
+
+## Gradient Descent
+
+<img src="../../assets/images/machine-learning/gradient-descent-1-skitch.png" style="width:50%;float:right;"/>
+
+
+- Start with initial values of coefficients (zero or random value)
+-  **cost = cost_function(coefficients)**
+- Calculate 'derivative' (think calculus) to determinethe 'slope' or 'direction'
+- Update coefficients in the right'direction' and calculate cost again
+- **'learning rate parameter' (alpha)** determines how much coefficientscan change
+- Iterate  until you find minimum
+-  Algorithm will converge after multiple iterations
+
+
+
+---
+## Gradiant Descent
+
+- Here we are adjusting 2 coefficients, so the descent is a 'surface' (think 3D)
+
+ <img src="../../assets/images/machine-learning/gradient-descent-3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%"/> <!-- {"left" : 1.02, "top" : 2.33, "height" : 4.45, "width" : 8.21} -->
+
+
+Notes:
+
+
+
+---
+
 
 ## Sample Neural Network Visualizer
 
@@ -170,7 +206,7 @@ Notes:
 
 
 ---
-## Activation Functions (Review)
+## Activation Functions
 
  * Once we have the output of neuron, what do we do it?
 
@@ -179,7 +215,8 @@ Notes:
      - Else, `y = 0`
      - Not Differentiable (can’t use gradient descent to optimize)
 
- * Activation Funtions
+ * We will see more complex **Activation functions** later.  
+ Some examples:
    - None (just use raw output of neuron)
    - Linear (apply linear transformation)
    - Sigmoid
@@ -216,6 +253,9 @@ Notes:
 
 Notes:
 
+---
+
+[DL-Playground.md#Classification Examples 1](DL-Playground.md)
 
 
 ---
@@ -230,33 +270,6 @@ Notes:
      - This is known as the XOR problem (though many other datasets are not linearly separable).
 
 <img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="background:white;max-width:100%;" width="45%"/> <!-- {"left" : 2.63, "top" : 3.98, "height" : 3.49, "width" : 4.99} -->
-
-Notes:
-
-
-
----
-
-## Feedforward Network Sizing
-
-
- * Input Layer:
-     - Size: Equal to Number of Input Dimensions
-        - 2 dimensional inputs --> size=2
-        - Possibly add one extra neuron for bias term.
-     - What if we have thousands of sparse dimensions?
-        * Consider Wide and Deep Neural Network
-
- * Output Layer:
-     - Regression: 1 single neuron (continuous output)
-     - Binomial Classification: 1 single neuron (binary output)
-     - Multinomial Classification: Softmax Layer
-        - Size: 1 node per class label
-        - E.g. classifying digits (0 to 9) will need 10 neurons
-
- * Hidden Layer(s)
-     - We will see this in the next section
-
 
 Notes:
 
