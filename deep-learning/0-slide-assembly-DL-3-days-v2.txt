@@ -1,0 +1,38 @@
+## To Make slides
+##          $ES_HOME/utils/presentations/slide-assembler-v2.sh    0-slide-assembly-DL-3-days-v2.txt
+
+## Course outline - TODO
+#../outline-Deep-Learning-With-Keras.docx
+
+## About
+./generic/About-Deep-Learning-Class.md
+
+## Intro
+generic/DL-Intro.md
+
+# TensorFlow
+./tensorflow/TENSORFLOW-Intro.md
+./tensorflow/TENSORFLOW-Lowlevel.md
+./tensorflow/TENSORFLOW-Highlevel.md
+
+# Keras
+keras/Keras-1__Intro.md
+
+# A little theory
+generic/DL-Feed-Forward.md
+generic/DL-Concepts.md
+
+## Linear
+./tensorflow/TENSORFLOW-Linear.md
+keras/Keras-2__Linear.md
+
+
+
+# Deep Learning
+./generic/DL-NeuralNetworks.md
+./tensorflow/TENSORFLOW-CNN.md
+./generic/DL-TransferLearning.md
+./generic/DL-RNNs.md
+
+# Parallel
+./tensorflow/TENSORFLOW-Parallel.md

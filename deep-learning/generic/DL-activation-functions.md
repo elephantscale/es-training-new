@@ -12,7 +12,7 @@
 
      - Else, `y = 0`
 
-     - Not Differentiable (no gradient, and can’t use gradient descent to optimize)
+     - Not Differentiable (no gradient, and can't use gradient descent to optimize)
 
 ---
 

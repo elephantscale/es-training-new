@@ -175,7 +175,7 @@ Notes:
 
 ## Lots of Labs : Learn By Doing
 
-<img src="../../assets/images/machine-learning/3rd-party/learn-by-doing.png" alt="learn-by-doing.png" style="width:60%;"/> <!-- {"left" : 1.7, "top" : 0.97, "height" : 5.53, "width" : 6.85} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.7, "top" : 0.97, "height" : 5.53, "width" : 6.85} -->
 
 
 
