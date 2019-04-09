@@ -167,30 +167,11 @@ Here is the overall workflow for creating a Sequential model:
     - First layer will have 8 neurons, with 'ReLU' activation
     - Second layer will have 3 neurons with 'SoftMax' activation
 
-<img src="../../assets/images/deep-learning/iris_feedforward_neural_network.png" alt="iris_feedforward_neural_network.png" style="width:70%;"/>
+<img src="../../assets/images/deep-learning/iris_feedforward_neural_network.png" alt="iris_feedforward_neural_network.png" style="width:50%;"/>
 
 
 ---
 
-## Keras Sequential Model for Classifying IRIS
-
-#### Step 1 : Define Model
-
-```python
-from keras.models import Sequential
-from keras.layers import Dense
-
-layer1 = Dense(8, input_dim=4, activation='relu')
-layer2 = Dense(3, activation='softmax')
-
-model = Sequential()
-model.add(layer1)
-model.add(layer2)
-```
-
-<img src="../../assets/images/deep-learning/iris_feedforward_neural_network.png" alt="keras tensorboard" style="width:40%;"/>
-
----
 ## Keras Sequential Model for Classifying IRIS
 
 <img src="../../assets/images/deep-learning/nn-workflow.png" alt="nn workflow" width="14%" style="float:right;background:white;" />

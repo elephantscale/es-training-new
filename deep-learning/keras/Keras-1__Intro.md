@@ -468,7 +468,7 @@ sgd = SGD(lr=0.01,
           momentum=0.9,
           nesterov=True)  # using Nestrov momentum
 
-model.compile(optimizer=sgd, loss='mean_squared_error')
+model.compile(optimizer='sgd', loss='mean_squared_error')
 ```
 
 
@@ -487,7 +487,7 @@ adagrad = keras.optimizers.Adagrad(lr=0.01,
                                    epsilon=None,
                                    decay=0.0)
 
-model.compile(optimizer=adagrad, ...)
+model.compile(optimizer='adagrad', ...)
 ```
 
 - Arguments
@@ -506,7 +506,7 @@ rmsprop = keras.optimizers.RMSprop(lr=0.001,
                                    epsilon=None,
                                    decay=0.0)
 
-model.compile(optimizer=rmsprop, ...)
+model.compile(optimizer='rmsprop', ...)
 ```
 
 - Arguments
@@ -527,7 +527,7 @@ adam = keras.optimizers.Adam(lr=0.001,
                              decay=0.0,
                              amsgrad=False)
 
-model.compile(optimizer=adam, ...)
+model.compile(optimizer='adam', ...)
 ```
 
 - Arguments
