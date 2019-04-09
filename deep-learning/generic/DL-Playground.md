@@ -1,5 +1,8 @@
-Tensorflow Playground
-=======================
+# Tensorflow Playground
+
+---
+
+# Introduction
 
 ---
 
@@ -127,7 +130,8 @@ Notes:
 
 
 ---
-# Classification Examples
+
+# Classification Examples 1
 
 ---
 
@@ -163,6 +167,10 @@ Notes:
 
 Notes:
 
+
+---
+
+# Classification Examples 2
 
 ---
 ## Circle Dataset Overview
