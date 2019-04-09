@@ -1,5 +1,5 @@
-Introduction to TensorFlow
-======
+# Introduction to TensorFlow
+---
 
 ## Lesson Objectives
 
@@ -16,50 +16,36 @@ Notes:
 
 ---
 
-# TensorFlow Project
-
-## TensorFlow Eco-System
-
-
- * Open Source Project
-    - Very active, fast-growing community
- *  - __Google__ supporting and developing TensorFlow
-    - Very much supportive of TensorFlow
-    - Wants to see TensorFlow as THE AI software
-    - Supports TensorFlow in GCP
-
-
-Notes: 
-
+# TensorFlow Intro
 
 ---
-## TensorFlow Project
 
+## TensorFlow 
 
- * TensorFlow is a Google-sponsored, Open Source project
+- Google open sourced TensorFlow in Nov 2015
 
-     - http://www.tensorflow.org/
+- Gained popularity very quickly because of its 
+    - clean design 
+    - flexibility 
+    - scalability 
+    - huge community
+    - and of course Google's push behind it
 
- * Written in C++
+- Google is actively developing and supporting TensorFlow; also offers it in Google Cloud platform ;  wants to see TensorFlow as _the_ AI software)
 
-     - Major API in Python
-
-     - Newer API bindings in Java/JVM, C++, Go, R, etc.
-
-Notes: 
-
+- [tensorflow.org](http://www.tensorflow.org/)
 
 ---
-## Tensorflow Popularity
+
+## TensorFlow Popularity
 
  * Tensorflow has outpaced its rivals in popularity:
  * Survey of Github Stars:
 
-![](../../assets/images/deep-learning/Github_stars.png) <!-- {"left" : 0.56, "top" : 2.36, "height" : 4.88, "width" : 9.13} -->
+<img src="../../assets/images/deep-learning/Github_stars.png" alt="XXX image missing" style="background:white;max-width:100%;width:100%;" />  <!-- {"left" : 0.56, "top" : 2.36, "height" : 4.88, "width" : 9.13} -->
 
 
 Notes: 
-
 
 
 ---
@@ -68,17 +54,32 @@ Notes:
 ## Big Spike in Job Postings
 
 
- * Source: indeed.com
-
-![](../../assets/images/deep-learning/Introduction-to-Tensorflow-Used-More-and-More-0.png) <!-- {"left" : 1.01, "top" : 1.41, "height" : 5.5, "width" : 8.02} -->
-
+ <img src="../../assets/images/deep-learning/Introduction-to-Tensorflow-Used-More-and-More-0.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" /> <!-- {"left" : 1.01, "top" : 1.41, "height" : 5.5, "width" : 8.02} -->
+ 
+ Source: indeed.com
 
 Notes: 
 
+---
 
+## TensorFlow Features 
 
+- Runs on all platforms (Windows, Mac, Linux) and mobile devices 
+
+- Core is written in C++ ; very efficient implementation
+    - wrappers in Python for ease of use 
+    - other language support improving : Java, Go, R
+
+- Other high level APIs are built on top of TesnorFlow ; e.g. [Keras](http://keras.io/) and [Pretty Tensor](https://github.com/google/prettytensor/)
+
+- Has a very nice UI called **Tensorboard** to visualize graphs and learning process
+
+- Great community
+    - https://github.com/jtoy/awesome-tensorflow
 
 ---
+
+
 
 ## TensorFlow Noteworthy Versions
 
@@ -88,7 +89,9 @@ Notes:
 | 0.20    | 2016-05      | TensorFlow Reaches Maturity |
 | 1.0     | 2017-01      | First Stable Release        |
 | 1.1     | 2017-07      | Installable with Pip/conda  |
-| 1.12    | 2018-12      | Current Release             |
+| 1.12    | 2018-12      |                             |
+| 1.13    | 2019-02      | Current Release             |
+| 2.0     | 2019-??      | Future release              |
 
 <!-- {"left" : 0.61, "top" : 1.55, "height" : 3, "width" : 9.03, "columnwidth" : [2.01, 3.03, 3.98]} -->
 
@@ -98,28 +101,6 @@ Notes:
 
 ---
 
-## What is a Tensor?
-
-
- * Mathematically, a tensor is linear relationship describing a multidimensional map between vector spaces.
-
- * Practically, a tensor is a multidimensional array.  The number of dimensions is specified as the Rank.
-
-| Rank | Tensor      |
-|------|-------------|
-| 0    | Scalar      |
-| 1    | Vector      |
-| 2    | Matrix      |
-| 3    | Number Cube |
-| n    | n-Tensor    |
-
-<!-- {"left" : 2.9, "top" : 3.23, "height" : 3, "width" : 4.44, "columnwidth" : [2.22, 2.22]} -->
-
-Notes: 
-
-
-
----
 
 ## TensorFlow versus NumPy
 
@@ -178,13 +159,22 @@ Notes:
 
  * NN’s are known for being difficult to parallelize
 
- * But, TensorFlow can run on distributed clusters
+ * But, TensorFlow can in distributed mode 
+    - run on multiple CPU/GPU on a single machine 
+    - run on distributed machines
 
  * Define a distributed master service plus worker services
 
 Notes: 
 
 
+---
+
+## Tensorflow Parallelism 
+
+
+<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> &nbsp;  &nbsp;
+<img src="../../assets/images/deep-learning/tensorflow-graph-2.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" />
 
 ---
 
@@ -230,6 +220,17 @@ Notes:
 
 ---
 
+## Tensorflow on Spark 
+
+
+<img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" />
+
+Notes:  
+- RMDA : Remote Memory Direct Access  
+- gRPC : RPC protocol
+
+---
+
 ## Deep Learning in TensorFlow
 
 
@@ -243,11 +244,6 @@ Notes:
      - Runs very fast on GPUs!
 
 Notes: 
-
-Another meaning of "Deep Learning" deals with breaking the learning into subsequent levels of understanding
-This is also called "Representation Learning" where the network first learns the features,
-and then uses these features for further understanding.
-For us, though, the definition of "neural network with more than one hidden layer" will suffice.
 
 
 ---
@@ -271,113 +267,9 @@ For us, though, the definition of "neural network with more than one hidden laye
 
 Notes: 
 
-
-
----
-
-# TensorFlow Installation
-
-## Lab Setup
-
-
- * Login to VM running in the cloud
-
- *  **Lab** 
-
-![](../../assets/images/deep-learning/Introduction-to-Tensorflow-Lab-Setup-0.png) <!-- {"left" : 0.31, "top" : 2.41, "height" : 3.1, "width" : 9.62} -->
-
-
-Notes: 
-
-
-
-
----
-
-## Installation
-
-
- * Much Easier Installation than it used to be!
-
- * Can install with pip!
-
- * You may need to have python-dev libraries installed.
-
- * Recommended to install in virtualenv (or conda environment).
-
-```text
-$ (sudo) pip install tensorflow keras 
-```
-<!-- {"left" : 0, "top" : 2.93, "height" : 0.65, "width" : 8.27} -->
-
- * Anaconda: Now officially suported
-
-```text
-$ conda install tensorflow keras
-```
-<!-- {"left" : 0, "top" : 4.74, "height" : 0.73, "width" : 8.27} -->
-
-
-
-
-Notes: 
-
-
-
----
-
-## TensorFlow Lab: Installing Tensorflow and Keras
-
-
- *  **Instructions for the trainer**:
-
-     - Provide a zip bundle of lab files to students
-
-     - Help set up ‘mark down preview plus’ plugin to view markdown files
-
- *  **Overview**: In this lab, we will become familiar with the lab environment, set up TensorFlow, and start.
-
- *  **Approximate time**: 15-20 minutes
-
- *  **Instructions for students**:
-
-     - Follow the **01-basics/1.1-install-tensorflow.md** lab
-
-
-Notes: 
-
-(1) The labs are written in markdown format
-We recommend reading them in Google chrome with the Markdown Preview Plus plugin  (trainer will guide you through this)
-But they're just text files, and can be read with any text editor
-
-
----
-
-## TensorFlow Lab: Hello World in TensorFlow
-
-
- *  **Note**: 
-
- *  **Instructions for the trainer**:
-
-    - This lab is run with Jupyter Notebook
-    - Help the students start a Jupyter Notebook
-
- *  **Overview**: In this lab, we will do a hello world for TensorFlow and Keras.
-
- *  **Approximate time**: 15-20 minutes
-
- *  **Instructions for students**:
-
-     - Follow  **01-basics/1.2-helloworld.ipynb** lab
-
-
-Notes: 
-
----
-
-
 # High Level TensorFlow
+
+---
 
 
 ## Base TensorFlow is Low Level
@@ -409,7 +301,7 @@ Notes:
    - Mid-Level
    - High-Level
 
-![https://www.tensorflow.org/images/tensorflow_programming_environment.png](../../assets/images/deep-learning/tensorflow_layers_small.png) <!-- {"left" : 0.35, "top" : 3.25, "height" : 2.80, "width" : 9.53} -->
+<img src="../../assets/images/deep-learning/tensorflow_layers_small.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.35, "top" : 3.25, "height" : 2.80, "width" : 9.53} -->
 
 
 
@@ -445,9 +337,7 @@ Notes:
 
  * Ensures stability within fast-paced TensorFlow release cycle
 
- * TensorFlow now includes bindings for 
-
-     - `tf.keras` namespace
+ * TensorFlow now includes bindings for Keras in `tf.keras` namespace
 
 Notes: 
 
@@ -469,3 +359,105 @@ Notes:
 <!-- {"left" : 0.25, "top" : 1.22, "height" : 4.55, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 Notes: 
+
+---
+
+# Installing TesnorFlow
+
+---
+
+
+## Lab Setup
+
+
+ *  **Instructions for the trainer**:
+     - Run `tensorflow-labs/package-labs.sh` script
+     - Provide the lab zip bundle of lab files to students
+     - Explain  '.ipynb'  and '.html' files
+     
+ * Give access to virtual machines
+
+ <img src="../../assets/images/generic/lab-setup.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.31, "top" : 2.41, "height" : 3.1, "width" : 9.62} -->
+
+
+Notes: 
+
+
+
+
+---
+
+## Installation
+
+
+ * Much Easier Installation than it used to be!
+
+ * Can install with pip!
+
+ * You may need to have python-dev libraries installed.
+
+ * Recommended to install in virtualenv (or conda environment).
+
+```bash
+$ (sudo) pip install tensorflow keras 
+```
+<!-- {"left" : 0, "top" : 2.93, "height" : 0.65, "width" : 8.27} -->
+
+ * Anaconda: Now officially supported
+
+```bash
+$ conda install tensorflow keras
+```
+<!-- {"left" : 0, "top" : 4.74, "height" : 0.73, "width" : 8.27} -->
+
+
+
+
+Notes: 
+
+
+
+---
+
+## Lab: Installing Tensorflow and Keras
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+
+
+ *  **Overview**:   
+ In this lab, we will become familiar with the lab environment, set up TensorFlow, and start.
+ 
+ * **Note** :   
+ The training VMs are already setup, no need for this setup.  You can skip to next step
+
+ *  **Approximate time**: 15-20 minutes
+
+ *  **Instructions for students**:
+
+     - Follow the **install.html** 
+
+
+---
+
+## Lab: Hello World in TensorFlow
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+
+
+ *  **Overview**: In this lab, we will do a hello world for TensorFlow and Keras.
+
+ *  **Approximate time**: 15-20 minutes
+
+ *  **Instructions for students**:
+
+     - Follow  **basics/1-helloworld.ipynb** lab
+
+
+Notes: 
+
+---
+
+
+
+
+## Review and Questions
