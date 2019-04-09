@@ -1,36 +1,58 @@
-TensorFlow Low-Level API
-======
+# TensorFlow Low-Level API
+---
 
 # Tensors
+
+---
+
+## What is a Tensor?
+
+ * Mathematically, a tensor is linear relationship describing a multidimensional map between vector spaces.
+
+ * Practically, a tensor is a multidimensional array.
+ 
+ *  **Everything**  in TensorFlow is a tensor (`tf.Tensor`)
+ 
+ *  Tensors have rank, shape, and type
+    - rank : dimension of tensor
+    - shape : number of rows / columns 
+    - type : data type (int, float ..etc.)
+    
+
+| Rank | Tensor      |
+|------|-------------|
+| 0    | Scalar      |
+| 1    | Vector      |
+| 2    | Matrix      |
+| 3    | Number Cube |
+| n    | n-Tensor    |
+
+<!-- {"left" : 2.9, "top" : 3.23, "height" : 3, "width" : 4.44, "columnwidth" : [2.22, 2.22]} -->
+
+Notes: 
+
+
+---
 
 ## Tensors
 
 
- * Mathematically, a tensor is a mapping of linear spaces of rank `n`
-
- * In TensorFlow, a Tensor is the basic object
-
- *  **Everything**  in TensorFlow is a tensor
-
- * Object `tf.Tensor`
-
- * Ordinary Python objects cannot be operated on in TF
-
-
-
-Notes: 
+<img src="../../assets/images/deep-learning/tensors-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" />
 
 ---
 
 
+
 ## Datatypes
 
- * All Datatypes in TensorFlow are from `tf.Tensor`
- * Immutable Types:
+* All Datatypes in TensorFlow are from `tf.Tensor`
+
+* Immutable Types:
    - `tf.constant`
    - `tf.placeholder`
    - `tf.SparseTensor`
- * Mutable Type:
+   
+* Mutable Type:
    - `tf.Variable`
 
 Notes: 
@@ -39,13 +61,17 @@ Notes:
 ## Immutability
 
  * Why are types in TF immutable?
+ 
  * Initialization
    - Immutable types don't need to be initialized 
+   
  * Parallelization
    - Immutable types have no need for synchronization
    - no locks / blocks
    - no race conditions
- * Note `tf.Variable` is *not* immutable.
+   - very fast to execute on distributed environments
+   
+ * Note `tf.Variable` is *not* immutable (e.g. mutable or value can change)
 
 Notes: 
 
@@ -53,8 +79,11 @@ Notes:
 ## Typing in Tensorflow
 
   * Tensorflow is *strongly* typed
+  
   * Vanilla Python is dynamically typed.
+  
   * TF variables *must* be defined as a static `tf.DType` object.
+  
   * TF types can be *inferred*, but only at creation time.
     - Example: `10.0` : `tf.float64`
     - Exmple: `5` : `tf.int64`
@@ -62,37 +91,41 @@ Notes:
 Notes: 
 
 ---
-## Typing in Tensorflow
+## Tensorflow Types
 
-  * `tf.float16`: 16-bit half-precision floating-point.
-  * `tf.float32`: 32-bit single-precision floating-point.
-  * `tf.float64`: 64-bit double-precision floating-point.
-  * `tf.bfloat16`: 16-bit truncated floating-point.
-  * `tf.complex64`: 64-bit single-precision complex.
-  * `tf.complex128`: 128-bit double-precision complex.
-  * `tf.int8`: 8-bit signed integer.
-  * `tf.uint8`: 8-bit unsigned integer.
-  * `tf.uint16`: 16-bit unsigned integer.
-  * `tf.uint32`: 32-bit unsigned integer.
-  * `tf.uint64`: 64-bit unsigned integer.
+|      Type     |               Description              |
+|:-------------:|:--------------------------------------:|
+| tf.float16    | 16-bit half-precision floating-point   |
+| tf.float32    | 32-bit single-precision floating-point |
+| tf.float64    | 64-bit double-precision floating-point |
+| tf.bfloat16   | 16-bit truncated floating-point        |
+| tf.complex64  | 64-bit single-precision complex        |
+| tf.complex128 | 128-bit double-precision complex       |
+| tf.int8       | 8-bit signed integer                   |
+| tf.uint8      | 8-bit unsigned integer                 |
+| tf.uint16     | 16-bit unsigned integer                |
+| tf.uint32     | 32-bit unsigned integer                |
+| tf.uint64     | 64-bit unsigned integer                |
 
 Notes: 
 
 ---
-## Typing in Tensorflow (continuted)
+## Tensorflow Types (continuted)
 
-  * `tf.int16`: 16-bit signed integer.
-  * `tf.int32`: 32-bit signed integer.
-  * `tf.int64`: 64-bit signed integer.
-  * `tf.bool`: Boolean.
-  * `tf.string`: String.
-  * `tf.qint8`: Quantized 8-bit signed integer.
-  * `tf.quint8`: Quantized 8-bit unsigned integer.
-  * `tf.qint16`: Quantized 16-bit signed integer.
-  * `tf.quint16`: Quantized 16-bit unsigned integer.
-  * `tf.qint32`: Quantized 32-bit signed integer.
-  * `tf.resource`: Handle to a mutable resource.
-  * `tf.variant`: Values of arbitrary types.
+|     Type    |            Description            |
+|:-----------:|:---------------------------------:|
+| tf.int16    | 16-bit signed integer             |
+| tf.int32    | 32-bit signed integer             |
+| tf.int64    | 64-bit signed integer             |
+| tf.bool     | Boolean                           |
+| tf.string   | String                            |
+| tf.qint8    | Quantized 8-bit signed integer    |
+| tf.quint8   | Quantized 8-bit unsigned integer  |
+| tf.qint16   | Quantized 16-bit signed integer   |
+| tf.quint16  | Quantized 16-bit unsigned integer |
+| tf.qint32   | Quantized 32-bit signed integer   |
+| tf.resource | Handle to a mutable resource      |
+| tf.variant  | Values of arbitrary types         |
 
 
 Notes: 
@@ -118,6 +151,7 @@ Notes:
 ## Rank 0
 
  * Rank 0 is also known as a *scalar*
+ 
  * Here are some Example scalars:
 
 ```python
@@ -130,7 +164,6 @@ complex_number = tf.Variable(4.1 + 3.3j, tf.complex64)
 
  * Note that the scalars are converted from python types to TF types.
 
- * Tensorflow types are 
 
 Notes: 
 
@@ -138,7 +171,9 @@ Notes:
 ## Rank 1
 
  * Rank 1 Tensors are *vectors*
+ 
  * Here are some vectors (rank 1)
+ 
  * Initialize with Python lists or NumPy arrays
 
 ```python
@@ -150,10 +185,65 @@ distances = tf.Variable([3.1,2.2,5.5], tf.float32)
 Notes: 
 
 ---
+
+## Rank 1 Example
+
+```python
+# Create an array using Numpy 
+import numpy as np 
+
+a = np.array([1,2,3,4])
+print(a)
+# > [1 2 3 4]
+
+# first element 
+print(a[0])  
+# > 1
+
+## rank 
+print (a.ndim)
+# > 1
+
+## shape 
+print (a.shape)
+# > (4,)
+
+## type
+print(a.dtype)
+# > int64
+
+```
+
+---
+## Rank 1 Example
+
+```python 
+# converting to tensor
+import tensorflow as tf
+
+tensor_1d = tf.convert_to_tensor(a, dtype=tf.int64) 
+print (tensor_1d)
+# > Tensor("Const_3:0", shape=(4,), dtype=int64)
+
+with tf.Session() as sess: 
+    print(sess.run(tensor_1d))
+# > [1 2 3 4]
+```
+
+
+
+
+Notes: 
+
+---
+
+
 ## Rank 2
 
  * Rank 2 Tensors are *matrices*
+ 
  * Here are some *matrices (rank 2) 
+ 
  * Initialize with Python lists or NumPy arrays
 
 ```python
@@ -165,6 +255,38 @@ distances = tf.Variable([3.1,2.2,5.5], tf.float32)
 Notes: 
 
 ---
+
+## Rank 2 Example
+
+```python 
+import tensorflow as tf
+import numpy as np
+
+a = np.array ([(1,2,3), (4,5,6), (7,8,9) ])
+b = np.array ([(9, 8, 7), (6, 5, 4), (3,2,1)])
+
+tensor_a = tf.convert_to_tensor(a, dtype=tf.int64)
+print(tensor_a)
+# > Tensor("Const_18:0", shape=(3, 3), dtype=int64)
+
+tensor_b = tf.convert_to_tensor(b, dtype=tf.int64)
+print(tensor_b)
+# > Tensor("Const_19:0", shape=(3, 3), dtype=int64)
+
+tensor_c = tf.matmul(tensor_a, tensor_b)
+print (tensor_c)
+# > Tensor("MatMul_5:0", shape=(3, 3), dtype=int64)
+
+with tf.Session() as sess: 
+    print(sess.run(tensor_c))
+
+# >     [[ 30  24  18]
+# >      [ 84  69  54]
+# >      [138 114  90]]
+```
+
+---
+
 ## Higher Ranks
  * Initialize with n-dimensional NumPy array (or list)
 
@@ -185,7 +307,9 @@ Notes:
 
 ---
 ## Slicing and Dicing
+ 
  * Use NumPy slicing rules (zero-based)
+ 
  * The `:` symbol means to leave dimension alone.
 
 ```python
@@ -210,12 +334,16 @@ Notes:
  * Constants are used for values that *never* change
    - Not model itself
    - Nor by input.
+   
  * Constants don't have to be initialized
    - They are always there
+   
  * Literals won't work in TF
    - can't just say `constant2 + 1`
-   - Have to define a constant first. `tf.constant(1, dtype=tf.int32`
+   - Have to define a constant first. `tf.constant(1, dtype=tf.int32)`
+       
  * Used for literals mostly
+ 
  * Can be used for hyperparameters
    - But we usually want those tunable from the outside.
 Notes: 
@@ -226,9 +354,13 @@ Notes:
   * Placeholders are not changable by the model
     - Can't hold state
     - Once set by the outside, they are fixed.
+    
   * They are usually inputs to the model from *outside*.
+  
   * Training Data and Labels are typically placeholders
+  
   * Hyperparameter values are also placeholders.
+  
   * Don't require initialization.
 
 Notes: 
@@ -239,15 +371,20 @@ Notes:
     - for example, training data examples
 
 ```python
+import tensorflow as tf
+
 placeholder_ex_one = tf.placeholder(tf.float32)
 placeholder_ex_two = tf.placeholder(tf.float32)
 placeholder_ex_tre = tf.placeholder(tf.float32)
+placeholder_sum = placeholder_ex_one+ placeholder_ex_two + placeholder_ex_tre
 
-print(sess.run(placeholder_summation, 
+with tf.Session() as sess: 
+    print(sess.run(placeholder_sum, 
          feed_dict={placeholder_ex_one: 10,
                     placeholder_ex_two: 20,
                     placeholder_ex_tre: 30}))
 
+# > output : 60
 ```
 <!-- {"left" : 0, "top" : 2.34, "height" : 2.84, "width" : 10.25} -->
 
@@ -259,67 +396,87 @@ Notes:
 ## Variables
 
  * Type `tf.Variable` is mutable
+ 
  * Use it to store stateful variables
    - Especially things like *weights*
+   
  * You *must* initialize variables
-   - `session.run(tf.global_variables_initializer())`
    - You can also call an initializer at definition time.
+   
  * Best way is to call `get_variable`
+ 
+```python 
+import tensorflow as tf
 
-```python
-v = tf.get_variable("v", shape=(), 
-initializer=tf.zeros_initializer())
+# variables are defined, but not initialized yet
+x = tf.Variable(3, name="x")
+y = tf.Variable(4, name="y")
+f = x*x*y + y + 2
+
+with tf.Session() as sess:
+    # perform initialization
+    x.initializer.run()
+    y.initializer.run()
+    result = sess.run(f)
+    
+print(result)
+#  > result 42
 ```
+
 <!-- {"left" : 0, "top" : 4.26, "height" : 0.95, "width" : 10.25} -->
 
 Notes: 
 
 ---
-## Assigning Values to Variables
+## Global Initialization
 
- * You *cannot* just assign a variable as `v = 1`
- * You have to call `assign_add` on the variable
+- Rather than initializing each variable seperately, we can use **global initializer**
+
+- This doesn't initialize variables right away, but create a node that will initialize all variables when it is run
 
 ```python
-v = tf.get_variable("v", shape=(), 
-   initializer=tf.zeros_initializer())
-assignment = v.assign_add(1)
-tf.global_variables_initializer().run()
-sess.run(assignment)  
+import tensorflow as tf
+
+x = tf.Variable(3, name="x")
+y = tf.Variable(4, name="y")
+f = x*x*y + y + 2
+
+init = tf.global_variables_initializer()  # prepare an init node
+
+with tf.Session() as sess:
+    init.run()  # actually initialize all the variables
+    result = sess.run(f)
+    
+print (result)
+#  > result 42
 ```
 <!-- {"left" : 0, "top" : 2.26, "height" : 2.25, "width" : 10.25} -->
 
 Notes: 
 
 ---
-# Sessions
 
-## What is a Session?
+## Session
 
-
- * TensorFlow has the concept of a session
 
  * A session allows a series of operations on tensors to be defined
 
- * The session is run to create a **graph**.
-
-
-Notes: 
-
----
-
-## Defining a Session
+ * The session takes care of placing operations onto devices like CPUs, GPUs and running them
+ 
+ * Session also holds all variables 
 
  * Here is how we create a session:
 
 ```python
-x = tf.constant([1., 2., 3.])
+import tensorflow as tf
+
+a = tf.constant([1., 2., 3.])
 b = tf.constant(6.0)
-c = x * b
+c = a * b
 
 with tf.Session() as sess:
-   sess.run(x)
-   c.eval(sess) # Have to specify session
+   sess.run(c)
+   # session is closed here
 ```
 <!-- {"left" : 0, "top" : 1.8, "height" : 2.8, "width" : 10.03} -->
 
@@ -328,41 +485,65 @@ Notes:
 ---
 ## Interactive Sessions
 
- * We can define an InteractiveSession
+ * For interactive environments like Jupyter notebooks, we prefer **InteractiveSession**
+ 
  * Will create Session **and** make it the default
- * Can reference session without running
+ 
+ * It will rrun statements as soon as they are defined
 
 
 ```python
-with tf.InteractiveSession() as sess:
-    c.eval()
+import tensorflow as tf
+
+# interactive session becomes the default session
+sess = tf.InteractiveSession()
+
+
+a = tf.constant(5.0)
+b = tf.constant(6.0)
+c = a * b
+print(c.eval()) # evaluated immediately
+# output > 30
+
+sess.close()  # be sure to close the session
 ```
 <!-- {"left" : 0, "top" : 2.62, "height" : 1.06, "width" : 9.11} -->
 
 Notes: 
 
 ---
+## Tensorflow Graphs 
+
+* Tensorflow executes operations as graphs
+
+<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:80%;" />
+
+---
+## Tensorflow Graphs 
+
+<img src="../../assets/images/deep-learning/tf-architecture-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;"  />
+
+---
+
+
 ## Tensorflow Dataflow Graph Lifecycle
+
+<img src="../../assets/images/deep-learning/Introduction-to-Tensorflow-Dataflow-Graph-Lifecycle.png" alt="XXX image missing" style="background:white;max-width:100%;width:50%;float:right;" />  <!-- {"left" : 5.27, "top" : 1.38, "height" : 5.68, "width" : 4.96} -->
 
 * Tensor is **created** by:
   - Loading an external dataset
   - Loading a python array
-
 * Tensor is **transformed**
   - E.g., addition operation
   - Result: a new tensor 
-  - Often have a sequence 
-  - of transformations
-
- * Data is eventually **Processed**
+  - Often have a sequence of transformations
+* Data is eventually **Processed**
   - By running the session.
   - e.g, saving data
-
- * At right, we:
+* At right, we:
     - read/transform
     - save the result.
 
-![](../../assets/images/deep-learning/Introduction-to-Tensorflow-Dataflow-Graph-Lifecycle.png) <!-- {"left" : 5.27, "top" : 1.38, "height" : 5.68, "width" : 4.96} -->
 
 Notes: 
 
@@ -385,6 +566,8 @@ Notes:
 
 ---
 ## Lazy Evaluation
+ 
+<img src="../../assets/images/deep-learning/Introduction-to-TensorFlow-Lazy-Evaluation.png" alt="XXX image missing" style="background:white;max-width:100%;width:50%;float:right;" /> <!-- {"left" : 4.92, "top" : 1.18, "height" : 5.68, "width" : 4.96} --> 
 
 * We read a file
   - Filter out errors
@@ -400,7 +583,6 @@ Notes:
   - Stop filtering after the 
   - first ERROR line encountered
 
-![](../../assets/images/deep-learning/Introduction-to-TensorFlow-Lazy-Evaluation.png) <!-- {"left" : 4.92, "top" : 1.18, "height" : 5.68, "width" : 4.96} --> 
 
 Notes: 
 
@@ -423,25 +605,23 @@ Notes:
 
 ---
 
-## Lab: Tensorflow Sessions
+## Lab: Tensorflow Intro
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
 
 
- *  **Note** :
-
- *  **Instructions for the instructor** :
-
-    - This lab is run with Juptyer Notebook
-    - Help Students start Jupyter notebook
-
- *  **Overview** : In this lab, we will explore sessions in tensorflow 
+ *  **Overview** :   
+ In this lab, we will explore sessions in tensorflow 
 
  *  **Approximate time** : 15-20 minutes
 
- *  **Instructions for students** :
+ *  **Lab Instructions:**  
+     - **basics-1 : basics/1-hello-world.ipynb**
+     - **basics-2 : basics/2-sessions.ipynb**
+     - **basics-3 : basics/3-tensors.ipynb**
+     - **basics-4 : basics/4-variables.ipynb**
+     - **basics-5 : basics/5-tensorboard.ipynb**
 
-     - follow  **03-lowlevel/3.1-sessions.ipynb** file
-
- *  **Lab**
 
 Notes:
 
@@ -504,9 +684,8 @@ with tf.Session(graph=tf.Graph()) as sess:
 Notes: 
 
 ---
-# Low-Level Example
 
-## MNIST Dataset
+## Lab : MNIST Dataset
 
   * MNIST is a dataset of 28x28 pixel images (784 total inputs)
   * It contains greyscale handwritten digits from 0-9. (10 outputs)
@@ -609,44 +788,10 @@ Notes:
 Notes: 
 
 ---
-## Lab: Tensorflow MNist Example
 
-
- *  **Note** :
-
- *  **Instructions for the instructor** :
-
-    - This lab is run with Juptyer Notebook
-    - Help Students start Jupyter notebook
-
- *  **Overview** : In this lab, we will explore MNIST 
-
- *  **Approximate time** : 15-20 minutes
-
- *  **Instructions for students** :
-
-     - follow  **03-lowlevel/3.2-NoHidden.ipynb** file
-
- *  **Lab**
-
-
-Notes:
-
----
-
-## Lab Review
-
- * Don't worry too much *exactly* how we trained the model
-   - We will get to that!
- * Notice we loaded data in batches of 100.
-   - **Question for the Class:** Why did we do this in batches?
- * And we called `.eval()` on session graph in a `for` loop.
-   - We call each run through an *epoch*.
-Notes: 
-
----
 # Eager Execution
 
+---
 
 ## About Eager Execution
 
@@ -735,3 +880,51 @@ Notes:
 
 ---
 
+## Lab : Simple Linear Regression 
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+
+ *  **Overview** :   
+ In this lab, we will implement a simple linear regression using Tensorflow
+
+ *  **Approximate time** : 20-30 minutes
+
+ *  **Lab Instructions** :
+
+     - **lowlevel/1-linear.ipynb** file
+     - bonus : **lowlevel/2-linear-tips-a.ipynb** file
+
+
+---
+## Lab: Tensorflow MNist Example
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+
+ *  **Overview** :   
+ In this lab, we will explore MNIST 
+
+ *  **Approximate time** : 15-20 minutes
+
+ *  **Lab Instructions** :
+
+     - follow  **lowlevel/3.2-NoHidden.ipynb** file
+
+
+
+Notes:
+
+---
+
+## Lab Review
+
+ * Don't worry too much *exactly* how we trained the model
+   - We will get to that!
+ * Notice we loaded data in batches of 100.
+   - **Question for the Class:** Why did we do this in batches?
+ * And we called `.eval()` on session graph in a `for` loop.
+   - We call each run through an *epoch*.
+   
+   
+Notes: 
+
+---
