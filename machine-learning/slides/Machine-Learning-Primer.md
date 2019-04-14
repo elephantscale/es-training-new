@@ -49,7 +49,7 @@ Image copy right to owners
 
      - Let it predict the next reaction
 
-<img src="../../assets/images/machine-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%; position:absolute; top:55%; right:0%">
+<img src="../../assets/images/machine-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%; position:absolute; top:55%; right:0%;"/>
 
 Notes:
 
