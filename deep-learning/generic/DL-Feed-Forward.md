@@ -55,7 +55,7 @@
 
 # Playing with Hidden Layers
 
-[DL-Playground.md#Hidden Layers](DL-Playground.md)
+[DL-Playground.md](DL-Playground.md#Hidden Layers)
 
 
 ---
