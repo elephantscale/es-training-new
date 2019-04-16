@@ -190,7 +190,7 @@ Notes:
 
 ----
 
-[DL-Playground.md#Playground Linear Regression](DL-Playground.md)
+[DL-Playground.md](DL-Playground.md#Playground Linear Regression)
 
 ---
 ## Lab Review
@@ -255,7 +255,7 @@ Notes:
 
 ---
 
-[DL-Playground.md#Classification Examples 1](DL-Playground.md)
+[DL-Playground.md](DL-Playground.md#Classification Examples 1)
 
 
 ---

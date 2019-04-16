@@ -166,7 +166,7 @@ Notes:
 
 - Higher level neurons can 'build on' the work done by other neurons
 
-<img src="../../assets/images/deep-learning/visual-cortex-hiearchical-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/>
+<img src="../../assets/images/deep-learning/visual-cortex-hiearchical-1.png" alt="XXX image missing" style="background:white;max-width:100%;" />
 
 
 ---
@@ -198,25 +198,35 @@ Notes:
 
 
 ---
-## Fully Connected vs Convolutional
-
-  * Fully Connected
-  
-<img src="../../assets/images/deep-learning/fully-connected-1a.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 3.01, "top" : 2, "height" : 4.19, "width" : 4.24} -->
 
 
-Notes: 
+## Convolution
 
+
+ * Imagine a small patch being slid across the input image. This sliding is called  **convolving** .
+
+ * It is similar to a flashlight moving from the top left end progressively scanning the entire image. This patch is called the  **filter/kernel** . The area under the filter is the receptive field.
+
+<img src="../../assets/images/deep-learning/CNN-Process-of-Convolution-1.png" alt="XXX image missing" style="background:white;max-width:40%;" /> 
 
 ---
 
-## Convolutional
+##  Convolution
 
-<img src="../../assets/images/deep-learning/Convolutional-1.png" alt="XXX image missing" style="background:white;max-width:100%;" /> <!-- {"left" : 3.52, "top" : 1.38, "height" : 2.47, "width" : 2.55} -->
-<img src="../../assets/images/deep-learning/Convolutional-2.png" alt="XXX image missing" style="background:white;max-width:100%;" /> <!-- {"left" : 3.59, "top" : 4.32, "height" : 2.47, "width" : 2.41} -->
+ * The idea is to detect local features in a smaller section of the input space, section by section to eventually cover the entire image.
 
-<img src="../../assets/images/deep-learning/Convolutional-3.png" alt="XXX image missing" style="background:white;max-width:100%;" /> 
-<img src="../../assets/images/deep-learning/Convolutional-4.png" alt="XXX image missing" style="background:white;max-width:100%;" /> 
+ * In other words, the CNN layer neurons depends only on nearby neurons from the previous layer. This has the impact of discovering the features in a certain limited area of the input feature map.
+
+Notes: 
+---
+## Fully Connected vs Convolutional
+
+<img src="../../assets/images/deep-learning/fully-connected-1a.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 3.01, "top" : 2, "height" : 4.19, "width" : 4.24} -->
+
+<img src="../../assets/images/deep-learning/Convolutional-1.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 3.52, "top" : 1.38, "height" : 2.47, "width" : 2.55} -->
+<img src="../../assets/images/deep-learning/Convolutional-2.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 3.59, "top" : 4.32, "height" : 2.47, "width" : 2.41} -->
+<img src="../../assets/images/deep-learning/Convolutional-3.png" alt="XXX image missing" style="background:white;max-width:20%;" /> 
+<img src="../../assets/images/deep-learning/Convolutional-4.png" alt="XXX image missing" style="background:white;max-width:20%;" /> 
 
 Notes: 
 
@@ -240,6 +250,144 @@ Notes:
 
 Notes:
 https://en.wikipedia.org/wiki/Kernel_(image_processing)
+
+---
+## Process of Convolution
+
+
+ * Assume the filter/kernel is a weight matrix “wk“. For example, let’s assume a 3X3 weighted matrix.
+
+|   |   |   |
+|---|---|---|
+| 0 | 1 | 1 |
+| 1 | 0 | 0 |
+| 1 | 0 | 1 |
+<!-- {"left" : 0.39, "top" : 1.52, "height" : 1.6, "width" : 3.53} -->
+
+ * The weight matrix is a filter to extract some particular features from the original image. It could be for  extracting curves, identifying a specific color, or recognizing a particular voice.
+
+ * Assume the input to be 6X6
+
+|    |    |     |    |    |     |
+|----|----|-----|----|----|-----|
+| 81 | 2  | 209 | 44 | 71 | 58  |
+| 24 | 56 | 108 | 98 | 12 | 112 |
+| 91 | 0  | 189 | 65 | 79 | 232 |
+| 12 | 0  | 0   | 5  | 1  | 71  |
+| 2  | 32 | 23  | 58 | 8  | 208 |
+| 4  | 23 | 2   | 1  | 3  | 9   |
+
+<!-- {"left" : 5.95, "top" : 4.92, "height" : 2.8, "width" : 4.3} -->
+
+
+Notes: 
+
+
+
+
+---
+
+## Process of Convolution (Contd.)
+
+
+ * As the filter/kernel is slided across the input layer, the convolved layer is obtained by adding the values obtained by element wise multiplication of the weight matrix.
+
+ *  **Input layer**          /            **Filter** 
+
+|        |        | Input   | Layer |    |     |
+|--------|--------|---------|-------|----|-----|
+| **81** | **2**  | **209** | 44    | 71 | 58  |
+| **24** | **56** | **108** | 98    | 12 | 112 |
+| **91** | **0**  | **189** | 65    | 79 | 232 |
+|   12   |   0    |   0     | 5     | 1  | 71  |
+|   2    |   32   |   23    | 58    | 8  | 208 |
+|   4    |   23   |   2     | 1     | 3  | 9   |
+
+<!-- {"left" : 0.73, "top" : 3.08, "height" : 2.8, "width" : 5.46} -->
+
+
+|   | Filter |   |
+|---|--------|---|
+| 0 | 1      | 1 |
+| 1 | 0      | 0 |
+| 1 | 0      | 1 |
+
+<!-- {"left" : 6.67, "top" : 3.08, "height" : 1.6, "width" : 2.28} -->
+
+---
+
+## Weighted Matrix
+
+
+ *  **(Weighted matrix)** 
+
+|     |   |   |   |
+|-----|---|---|---|
+| 515 | 0 | 0 | 0 |
+| 0   | 0 | 0 | 0 |
+| 0   | 0 | 0 | 0 |
+
+ * For example, when the weighted matrix starts from the top left corner of the input layer, the output value is calculated as:
+
+ * (81x0+2x1+209x1)+(24x1+56x0+108X0)+(91x1+0x0+189x1) = 515
+
+Notes: 
+
+
+
+
+---
+
+## Process of Convolution (Contd.)
+
+
+ * The filter then moves by 1 pixel to the next receptive field and the process is repeated. The output layer obtained after the filter slides over the entire image would be a 4X4 matrix.
+
+ * This is called an  **activation map/ feature map** .
+
+ *  **Input layer**           /              **Filter**
+
+|    |        | Input   | Layer  |    |     |
+|----|--------|---------|--------|----|-----|
+| 81 | **2**  | **209** | **44** | 71 | 58  |
+| 24 | **56** | **108** | **98** | 12 | 112 |
+| 91 | **0**  | **189** | **65** | 79 | 232 |
+| 12 |   0    |   0     |   5    | 1  | 71  |
+| 2  |   32   |   23    |   58   | 8  | 208 |
+| 4  |   23   |   2     |   1    | 3  | 9   |
+
+<!-- {"left" : 0.73, "top" : 3.08, "height" : 2.8, "width" : 5.46} -->
+
+
+
+|   | Filter |   |
+|---|--------|---|
+| 0 | 1      | 1 |
+| 1 | 0      | 0 |
+| 1 | 0      | 1 |
+
+<!-- {"left" : 6.67, "top" : 3.08, "height" : 1.6, "width" : 2.28} -->
+
+## Output
+
+
+ *  **Output** 
+
+|     |     |   |   |
+|-----|-----|---|---|
+| 515 | 374 | 0 | 0 |
+| 0   | 0   | 0 | 0 |
+| 0   | 0   | 0 | 0 |
+
+ *  **(Activation/Feature Map)** 
+
+ * The distance between two consecutive receptive fields is called the  **stride** .
+
+ * In this example stride is 1 since the receptive field was moved by 1 pixel at a time.
+
+Notes: 
+
+
 
 ---
 
@@ -267,7 +415,38 @@ https://en.wikipedia.org/wiki/Kernel_(image_processing)
 ---
 ## Example of Convolutions 
 
-<img src="../../assets/images/deep-learning/CNN-example-1-elephant.png" alt="XXX image missing" style="background:white;max-width:100%;" /> 
+<img src="../../assets/images/deep-learning/CNN-elephant.png" alt="XXX image missing" style="background:white;max-width:100%;" /> 
+
+---
+
+## Convolution Example
+
+
+ * The image shows two kernels – vertical and horizontal filters. Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter.
+
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="XXX image missing" style="background:white;max-width:100%;" /> 
+
+
+
+Notes: 
+
+
+
+
+---
+
+## Convolution Example (Contd.)
+
+
+
+ * The effect of multiplying with vertical kernel filter is that all pixels except the vertical lines get subdued. Similarly with horizontal kernel filter, it accentuates the horizontal lines. 
+
+ * The output image has a feature map, which highlights the areas in the image that are most similar to the filter.
+
+![](../../assets/images/deep-learning/CNN-Convolutional-Layer-Contd--1.png)
+
+
+Notes: 
 
 ---
 ## Example of Convolutions 
@@ -281,6 +460,10 @@ https://en.wikipedia.org/wiki/Kernel_(image_processing)
 - Second layer recognizes more complex features : eyes / nose ..etc 
 
 - Third layer recognizes faces
+
+---
+
+# Filters 
 
 ---
 
@@ -303,6 +486,17 @@ https://en.wikipedia.org/wiki/Kernel_(image_processing)
   
 
 ---
+## Image Filter Examples 
+
+- Some sample filters 
+    - Blur filter 
+    - Sharpen filter 
+    - Edge detection filter
+    
+<img src="../../assets/images/deep-learning/filters-all2.png" alt="XXX image missing" style="max-width:100%;width:60%;" />
+
+---
+
 
 ## Problems with Image Pre-Processing 
 
@@ -331,7 +525,7 @@ https://en.wikipedia.org/wiki/Kernel_(image_processing)
 
 - CNN learns filters during training phase
 
-<img src="../../assets/images/deep-learning/CNN-filter-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" />   
+<img src="../../assets/images/deep-learning/CNN-filter-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:30%;" />   
 
 
 Notes:  
@@ -339,16 +533,6 @@ Notes:
 
 ---
 
-## Image Filter Examples 
-
-- Some sample filters 
-    - Blur filter 
-    - Sharpen filter 
-    - Edge detection filter
-    
-<img src="../../assets/images/deep-learning/filters-all2.png" alt="XXX image missing" style="max-width:100%;width:60%;" />
-
----
 
 ## Local Connectivity
 
@@ -394,6 +578,26 @@ Notes:
 
 ---
 
+
+## Zero Padding
+
+ * Assumptions
+   - Output image is `32 x 32 x 3`
+   - Filter size is `5 x 5 x 3`
+ * To achieve the **same** size:
+   - You need padding of ` (K - 1) / 2`
+   - In this case `(5 - 1) / 2 = 2`
+ * We pad a "frame" around the image
+   - black pixels
+   - size 2
+   - Image is then `36 x 36 x 3`
+ * Output Size:
+   - `O = ((W - K - 2P) / S) + 1`
+
+Notes: 
+
+---
+
 ## Stacking Feature Maps
 
 * Convolutions are a series of filters
@@ -411,8 +615,82 @@ Notes:
 ## Stacking Feature Maps 
 
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:50%;" />  
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:80%;" />  
 
+---
+
+## Stacking Multiple Feature Maps
+
+
+ <img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:40%;float:right;" />  
+
+
+ * A single feature map has same parameters as a single kernel has the same weights/parameters as it moves across the image; however, different feature maps can have different parameters (weights + biases).
+
+ * The receptive field of previous layer extends across all of its feature maps.
+
+ * In summary, a convolutional layer applies multiple filters to the input image, making it capable of detecting multiple features in the input.
+
+
+Notes: 
+
+
+
+
+---
+
+## Stacking Multiple Feature Maps (Contd.)
+
+
+ <img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;" />  
+
+ * Images that are grayscale have just one channel. So it needs just 1 sublayer. Colored images have three channels – Red, Green and Blue. So it needs 3 sublayers.
+
+ * Satellite imagery that capture extra light frequencies (eg infrared) can have more channels.
+
+
+
+Notes: 
+
+
+
+---
+
+## Stacking Multiple Feature Maps (Contd.)
+
+
+ <img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;" />  
+
+ * The fact that all neurons in a feature map has just one set of parameters dramatically reduces the no of parameters needed.
+
+ * This also means that once a CNN has learned to recognize a pattern in one location, it can recognize it in any other location. This is known as location invariance. 
+
+ * In contrast, if a regular DNN has learned to recognize a pattern in one location, it can recognize it only in that location.
+
+Notes: 
+
+---
+
+
+
+
+## Convolutional Layer Hyperparameters
+
+ * The hyperparameters of CNN are:
+
+ *  **Padding type** 
+
+ *  **Filter height and width** 
+
+ *  **Strides** 
+
+ *  **Number of filters** 
+
+Notes: 
+
+
+---
+# Pooling
 ---
 
 ## Pooling Layer
