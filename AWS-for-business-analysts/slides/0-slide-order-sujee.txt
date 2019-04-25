@@ -1,0 +1,9 @@
+#   $ES_HOME/utils/presentations/slides-assembler.sh    0-slide-order.txt
+#
+
+AWS-Intro.md
+AWS-Athena.md
+AWS-Glue.md
+SageMaker-Intro.md
+SageMaker-Regression.md
+SageMaker-Unsupervised.md
