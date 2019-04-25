@@ -1,6 +1,7 @@
-#   $ES_HOME/utils/presentations/slides-assembler.sh    slide-order.txt
+#   $ES_HOME/utils/presentations/slides-assembler.sh    0-slide-order.txt
 #
 
+$ES_HOME/es-training/aws/AWS-essentials/slides/AWS-Overview.md
 AWS-Athena.md
 AWS-Glue.md
 AWS-Intro.md
