@@ -1,4 +1,4 @@
-# Athena
+# AWS Athena
 
 ---
 
@@ -10,7 +10,7 @@
 
 ---
 
-# Athena
+## Athena
 
   * A Server-less Interactive Query Editor
 
@@ -22,7 +22,7 @@
 
 ---
 
-# Purpose
+## Purpose
 
   * For analyzing unstructured, semi-structured and structured data in S3
 
@@ -53,7 +53,7 @@
   * Problem
     - Large data store, large streaming data, large number of users
 
-<img src="../../assets/images/sagemaker-analyst/atlassian-data.png" style="width:76%;"/>
+<img src="../../assets/images/aws/atlassian-data.png" style="width:76%;"/>
 
   * Solution
     - Athena for analysis
@@ -80,11 +80,11 @@ Notes:
   * AWS Console
 
 
-<img src="../../assets/images/sagemaker-analyst/athena.png" style="width:76%;"/>
+<img src="../../assets/images/aws/athena.png" style="width:76%;"/>
 
 ---
 
-# AWS Glue Integration
+## AWS Glue Integration
 
   * Glue is an ETL service to integrate various data sources.
   * Glue's Crawler handles the databases and tables
@@ -95,7 +95,7 @@ Notes:
   * AWS Glue Data Catalog central metadata repository
     - integrates with S3, RDS, Redshift, EMR, etc
 
-<img src="../../assets/images/sagemaker-analyst/athena-with-glue.png" style="width:76%;"/>
+<img src="../../assets/images/aws/athena-with-glue.png" style="width:76%;"/>
 
 ---
 
@@ -120,6 +120,58 @@ Notes:
 
 ---
 
+# Athena DDL  Examples
+
+---
+
+## To create a database
+
+```sql
+CREATE (DATABASE|SCHEMA) [IF NOT EXISTS] database_name
+  [COMMENT 'database_comment']
+  [LOCATION 'S3_loc']
+  [WITH DBPROPERTIES ('property_name' = 'property_value') [, ...]]
+```
+
+---
+
+## To create Table
+
+```sql
+CREATE [EXTERNAL] TABLE [IF NOT EXISTS]
+ [db_name.]table_name [(col_name data_type [COMMENT col_comment] [, ...] )]
+ [COMMENT table_comment]
+ [PARTITIONED BY (col_name data_type [COMMENT col_comment], ...)]
+ [ROW FORMAT row_format]
+ [STORED AS file_format]
+ [WITH SERDEPROPERTIES (...)] ]
+ [LOCATION 's3_loc']
+ [TBLPROPERTIES ( ['has_encrypted_data'='true | false',] ['classification'='aws_glue_classification',] property_name=property_value [, ...] ) ]
+ 
+```
+
+---
+
+## To describe Table
+
+```sql
+DESCRIBE [EXTENDED | FORMATTED] [db_name.]table_name [PARTITION partition_spec] [col_name ( [.field_name] | [.'$elem$'] | [.'$key$'] | [.'$value$'] )]
+```
+
+---
+
+## To view the contents
+
+```sql
+SHOW TABLES [IN database_name] ['regular_expression']
+```
+
+A screenshot showing the Query Executed by Athena
+
+<img src="../../assets/images/aws/query-execution.png" style="width:76%;"/>
+
+---
+
 ## Lab: Analyze Data using Athena
 
 *  **Overview** :
@@ -129,11 +181,11 @@ Notes:
 
 *  **Approximate time** :
 
-   60 mins
+   30 mins
 
 *  **Instructions** :
+    - SQL-With-Athena
 
-    - Athena-lab.md
 
 
 ---
@@ -163,44 +215,3 @@ Notes:
         - CSV and TSV formats do not allow renaming and adding initial columns
 
 ---
-
-## Some of the sample DDL statements
-
----
-
-# To create a database
-
-CREATE (DATABASE|SCHEMA) [IF NOT EXISTS] database_name
-  [COMMENT 'database_comment']
-  [LOCATION 'S3_loc']
-  [WITH DBPROPERTIES ('property_name' = 'property_value') [, ...]]
-
----
-
-# To create Table
-
-CREATE [EXTERNAL] TABLE [IF NOT EXISTS]
- [db_name.]table_name [(col_name data_type [COMMENT col_comment] [, ...] )]
- [COMMENT table_comment]
- [PARTITIONED BY (col_name data_type [COMMENT col_comment], ...)]
- [ROW FORMAT row_format]
- [STORED AS file_format]
- [WITH SERDEPROPERTIES (...)] ]
- [LOCATION 's3_loc']
- [TBLPROPERTIES ( ['has_encrypted_data'='true | false',] ['classification'='aws_glue_classification',] property_name=property_value [, ...] ) ]
-
----
-
-# To describe Table
-
-DESCRIBE [EXTENDED | FORMATTED] [db_name.]table_name [PARTITION partition_spec] [col_name ( [.field_name] | [.'$elem$'] | [.'$key$'] | [.'$value$'] )]
-
----
-
-# To view the contents
-
-SHOW TABLES [IN database_name] ['regular_expression']
-
-A screenshot showing the Query Executed by Athena
-
-<img src="assets/images/QueryExecution.png" style="width:76%;"/>

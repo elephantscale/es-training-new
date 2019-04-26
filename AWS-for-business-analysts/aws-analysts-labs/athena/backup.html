@@ -1,0 +1,32 @@
+<p>SELECT ?, ?, ?, ?,<br />
+AVG(CreditScore), COUNT(*) FROM prosper_loan_data_csv WHERE LoanStatus = 0 AND NOT(IsBorrowerHomeowner) GROUP BY LoanStatus, IsBorrowerHomeowner, ProsperScore, EmploymentStatus</p>
+<hr />
+<h1 id="todo---2">TODO - 2</h1>
+<hr />
+<ul>
+<li>PROFILE AND DISTRIBUTION OF TOTAL LOANS OUTSTANDING FOR BORROWERS WHOSE LOAN STATUS IS ‘1’ AND ARE HOMEOWNERS. PROFILE SHOULD INCLUDE EMPLOYMENT STATUS, PROSPER SCORE AND CREDIT SCORE</li>
+</ul>
+<p>SELECT LoanStatus, ProsperScore, EmploymentStatus, IsBorrowerHomeowner, CreditScore, SUM (?) AS TotalProsperPrincipalOutstanding, COUNT(*) FROM prosper_loan_data_csv WHERE ? = 1 AND IsBorrowerHomeowner GROUP BY LoanStatus, ProsperScore, EmploymentStatus, IsBorrowerHomeowner, CreditScore ORDER BY ? DESC</p>
+<hr />
+<h1 id="todo--3">TODO -3</h1>
+<hr />
+<ul>
+<li>QUERY TO VIEW THE FOLLOWING DETAILS FOR THE GROUP WHO HAVE NOT HAD ANY DELAY IN PAYMENTS -</li>
+</ul>
+<ol type="a">
+<li>LOAN STATUS</li>
+<li>BORROWER STATE</li>
+<li>PROSPER SCORE</li>
+<li>IS BORROWER A HOME OWNER</li>
+<li>AVERAGE CREDIT SCORE FOR THE GROUP</li>
+<li>ON TIME PAYMENTS</li>
+<li>DELAY IN PAYMENTS</li>
+<li>SUM AND AVERAGE OF THE FOLLOWING
+<ol type="i">
+<li>ProsperPrincipalOutstanding</li>
+<li>AmountDelinquent (iii)CurrentDelinquencies</li>
+</ol></li>
+</ol>
+<p>SELECT * FROM<br />
+(SELECT<br />
+LoanStatus, BorrowerState, ProsperScore, IsBorrowerHomeowner, AVG(CreditScore) AS AvgCreditScore, SUM(OnTimeProsperPayments) As OnTimeProsperPayments, (SUM(ProsperPaymentsLessThanOneMonthLate)+SUM(ProsperPaymentsOneMonthPlusLate)) AS DelayinProsperPayments, SUM(ProsperPrincipalOutstanding) AS SumProsperPrincipalOutstanding, AVG(ProsperPrincipalOutstanding) AS AvgProsperPrincipalOutstanding, AVG(AmountDelinquent) AS AvgAmountDelinquent, SUM(AmountDelinquent) AS SumAmountDelinquent, AVG(CurrentDelinquencies) AS AvgCurrentDelinquencies, SUM(CurrentDelinquencies) AS SumCurrentDelinquencies FROM prosper_loan_data_csv WHERE ? &gt; 0 GROUP BY ? WHERE ? &gt; 0</p>

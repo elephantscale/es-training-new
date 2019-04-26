@@ -1,9 +1,17 @@
-#   $ES_HOME/utils/presentations/slides-assembler.sh    0-slide-order.txt
+#   $ES_HOME/utils/presentations/slides-assembler-reveal.sh   0-slide-order-sujee.txt
 #
 
-AWS-Intro.md
+AWS-Overview.md
 AWS-Athena.md
-AWS-Glue.md
-SageMaker-Intro.md
-SageMaker-Regression.md
-SageMaker-Unsupervised.md
+
+#AWS-Glue.md
+
+# ML
+../../machine-learning/slides/Machine-Learning-Primer.md
+../../machine-learning/slides/Data-Exploration.md
+../../machine-learning/slides/ML-concepts.md
+
+# Sagemaker
+../../machine-learning/slides/sagemaker/SageMaker.md
+
+../../machine-learning/slides/Regressions-Generic.md
