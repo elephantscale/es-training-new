@@ -33,7 +33,8 @@ Notes:
 
 ## Structured Data
 
- <img src="../../assets/images/machine-learning/Data-Exploration-Structured-Data.png" alt="Data-Exploration-Structured-Data.png" style="width:80%;"/>
+ <img src="../../assets/images/machine-learning/Data-Exploration-Structured-Data.png" alt="Data-Exploration-Structured-Data.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.19, "height" : 5.11, "width" : 8.21} -->
+
 
 Notes:
 
@@ -76,11 +77,14 @@ Notes:
 
  *  **Average / Mean** = Total sum of all salaries /  (number of salaries )= (30k +  35k +  22k + 70k + 50k +  55k +  45k +  40k + 25k + 42k + 60k + 65k)  /  12= 44.9k
 
-<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Mean-0.png" alt="Data-Exploration-Mean-0.png" style="width:20%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Mean-0.png" alt="Data-Exploration-Mean-0.png" style="width:20%;"/><!-- {"left" : 3.77, "top" : 4.48, "height" : 0.76, "width" : 2.73} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Mean-1.png" alt="Data-Exploration-Mean-1.png" style="width:30%;"/>
 
-<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Mean-2.png" alt="Data-Exploration-Mean-2.png" style="width:20%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Mean-1.png" alt="Data-Exploration-Mean-1.png" style="width:30%;"/><!-- {"left" : 2.73, "top" : 5.44, "height" : 1.09, "width" : 4.82} -->
+
+
+<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Mean-2.png" alt="Data-Exploration-Mean-2.png" style="width:20%;"/><!-- {"left" : 3.62, "top" : 6.57, "height" : 0.65, "width" : 3.01} -->
+
 
 Notes:
 
@@ -155,7 +159,8 @@ http://www.cabrillo.edu/~evenable/ch03.pdf
 
   * Mean = 53.4 =  (40 + 42 + 45 + 50 + 55 + 60 + 65 + 70 ) / 8 Median = 52.5 = (50 + 55) / 2
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers.png" alt="Data-Exploration-Median-Mean-Outliers.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers.png" alt="Data-Exploration-Median-Mean-Outliers.png" style="width:80%;"/><!-- {"left" : 0.33, "top" : 2.78, "height" : 2.42, "width" : 9.24} -->
+
 
 Notes:
 
@@ -165,7 +170,8 @@ Notes:
 
 ## Median, Mean and Outliers
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="width:70%;"/><!-- {"left" : 0.47, "top" : 1.08, "height" : 5.8, "width" : 9.31} -->
+
 
 Notes:
 
@@ -238,7 +244,8 @@ Notes:
 
  * City2 data is more widely 'dispersed' than City1
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Variability-Dispersion-0.png" alt="Data-Exploration-Variability-Dispersion-0.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Variability-Dispersion-0.png" alt="Data-Exploration-Variability-Dispersion-0.png" style="width:70%;"/><!-- {"left" : 1.24, "top" : 4.25, "height" : 2.41, "width" : 7.78} -->
+
 
 Notes:
 
@@ -273,7 +280,7 @@ Notes:
     - Add them all up
     - Divide by number of observations (N)
 
-<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Variance-s2-2-var-x--0.png" alt="Data-Exploration-Variance-s2-2-var-x--0.png" style="width:25%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Variance-s2-2-var-x--0.png" alt="Data-Exploration-Variance-s2-2-var-x--0.png" style="width:25%;"/><!-- {"left" : 6.15, "top" : 4.57, "height" : 0.96, "width" : 3.67} -->
 
 * Properties
     - Variance is positive or zero (since we are squaring the diff)
@@ -290,9 +297,11 @@ Notes:
 * Lower SD means values are closely clustered around mean
 * Higher SD indicates larger dispersion
 
-<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Standard-Deviation-SD-sigma--1.png" alt="Data-Exploration-Standard-Deviation-SD-sigma--1.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Standard-Deviation-SD-sigma--1.png" alt="Data-Exploration-Standard-Deviation-SD-sigma--1.png" style="width:50%;"/><!-- {"left" : 2.98, "top" : 3.2, "height" : 0.9, "width" : 4.3} -->
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Standard-Deviation-SD-sigma--0.png" alt="Data-Exploration-Standard-Deviation-SD-sigma--0.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Standard-Deviation-SD-sigma--0.png" alt="Data-Exploration-Standard-Deviation-SD-sigma--0.png" style="width:70%;"/><!-- {"left" : 0.97, "top" : 4.91, "height" : 2.29, "width" : 8.31} -->
+
+
 
 Notes:
 
@@ -351,6 +360,8 @@ np.var(city2)    # 550.0 <- much larger than var(city1)
 np.std(city1)    # 7.34846922835
 np.std(city2)    # 23.4520787991 <-- larger than sd(city1)  
 ```
+<!-- {"left" : 0, "top" : 0.95, "height" : 4.93, "width" : 10.25} -->
+
 Notes:
 
 
@@ -373,7 +384,7 @@ Notes:
 
  * IQR = distance between Q3 and Q1
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-0.png" alt="Data-Exploration-Quartiles-0.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-0.png" alt="Data-Exploration-Quartiles-0.png" style="width:30%;"/><!-- {"left" : 5.66, "top" : 3.71, "height" : 3.61, "width" : 4.37} -->
 
 Notes:
 
@@ -389,7 +400,8 @@ Notes:
  * Approximately 25% of data is below Q1
  75% is more than Q1
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-1.png" alt="Data-Exploration-Quartiles-1.png" style="width:100%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-1.png" alt="Data-Exploration-Quartiles-1.png" style="width:100%;"/><!-- {"left" : 0.84, "top" : 2.94, "height" : 2.08, "width" : 8.58} -->
+
 
 
 Notes:
@@ -457,7 +469,8 @@ Notes:
 
      - 5% of data above this point
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Percentiles-0.png" alt="Data-Exploration-Percentiles-0.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Percentiles-0.png" alt="Data-Exploration-Percentiles-0.png" style="width:80%;"/><!-- {"left" : 0.5, "top" : 4.19, "height" : 2.33, "width" : 9.26} -->
+
 
 Notes:
 
@@ -492,7 +505,7 @@ Notes:
 
 ---
 
-## Percentiles : Sample Code (R)
+## Percentiles: Sample Code (R)
 
 ```r
 income = c(22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70)
@@ -509,6 +522,7 @@ ecdf(income)(52)
 
 
 ```
+<!-- {"left" : 0, "top" : 0.93, "height" : 3.12, "width" : 10.25} -->
 
 Notes:
 
@@ -553,7 +567,8 @@ Notes:
 * Here we see positive trend between Netflix stock price and Google stock pricing.
  When one goes up, other one goes up too
 
- <img src="../../assets/images/machine-learning/Data-Exploration-Covariance-0.png" alt="Data-Exploration-Covariance-0.png" style="width:30%;"/>
+ <img src="../../assets/images/machine-learning/Data-Exploration-Covariance-0.png" alt="Data-Exploration-Covariance-0.png" style="width:30%;"/><!-- {"left" : 2.99, "top" : 3.37, "height" : 3.58, "width" : 4.27} -->
+
 
 
 Notes:
@@ -564,7 +579,8 @@ Notes:
 
 ## Covariance Formula
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Formula.png" alt="Data-Exploration-Covariance-0.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Formula.png" alt="Data-Exploration-Covariance-0.png" style="width:50%;"/><!-- {"left" : 1.64, "top" : 1.1, "height" : 5.78, "width" : 6.96} -->
+
 
 Notes:
 
@@ -575,7 +591,8 @@ Image credit (Cretive commons)  : Ncalculators (http://ncalculators.com/statisti
 
 ## Covariance Example
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example.png" alt="Data-Exploration-Covariance-Example.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example.png" alt="Data-Exploration-Covariance-Example.png" style="width:70%;"/><!-- {"left" : 0.93, "top" : 1.2, "height" : 5.57, "width" : 8.39} -->
+
 
 
 Notes:
@@ -587,7 +604,8 @@ Image credit thanks to :  https://www.youtube.com/watch?v=xGbpuFNR1ME
 
 ## Covariance Example
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example2.png" alt="Data-Exploration-Covariance-Example2.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example2.png" alt="Data-Exploration-Covariance-Example2.png" style="width:80%;"/><!-- {"left" : 0.26, "top" : 1.36, "height" : 5.26, "width" : 9.73} -->
+
 
 Notes:
 
@@ -679,7 +697,8 @@ https://en.wikipedia.org/wiki/Correlation_coefficient
 
  * A correlation |r| < 0.5  is considered  **weak** .
 
- <img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" alt="Data-Exploration-Correlation-Coefficient--0.png" style="width:50%;"/>
+ <img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" alt="Data-Exploration-Correlation-Coefficient--0.png" style="width:50%;"/><!-- {"left" : 1.97, "top" : 4.37, "height" : 2.81, "width" : 6.31} -->
+
 
 
 Notes:
@@ -705,7 +724,8 @@ Notes:
 
 ## Correlation Patterns
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Correlaion-Patterns.png" alt="Data-Exploration-Correlaion-Patterns.png" style="width:100%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Correlaion-Patterns.png" alt="Data-Exploration-Correlaion-Patterns.png" style="width:100%;"/><!-- {"left" : 0.52, "top" : 2.72, "height" : 2.53, "width" : 9.22} -->
+
 
 
 Notes:
@@ -716,7 +736,9 @@ Notes:
 
 ## Correlation Formula
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Formula-0.png" alt="Data-Exploration-Correlation-Formula-0.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Formula-0.png" alt="Data-Exploration-Correlation-Formula-0.png" style="width:80%;"/><!-- {"left" : 0.96, "top" : 1.14, "height" : 5.7, "width" : 8.33} -->
+
+
 
 Notes:
 
@@ -793,7 +815,8 @@ Notes:
  * The matrix is  **symmetric**,
  cov(x1,x2)  = cov(x2,x1)
 
- <img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Matrix.png" alt="Data-Exploration-Covariance-Matrix.png" style="width:60%; position:absolute; left:22%"/>
+ <img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Matrix.png" alt="Data-Exploration-Covariance-Matrix.png" style="width:60%; position:absolute; left:22%"/><!-- {"left" : 2.44, "top" : 3.95, "height" : 2.79, "width" : 5.36} -->
+
 
 
 Notes:
@@ -817,11 +840,15 @@ m
 cor_matrix = cor(m)
 cor_matrix
 ```
+<!-- {"left" : 0, "top" : 0.88, "height" : 2.79, "width" : 5.04} -->
 
-<img src="../../assets/images/machine-learning/Data-Exploration--Covariance-Matrix-Code-R--0.png" alt="Data-Exploration-Covariance-Matrix.png" style="width:40%;position:absolute;top: 250px; right: 100px"/>
+<img src="../../assets/images/machine-learning/Data-Exploration--Covariance-Matrix-Code-R--0.png" alt="Data-Exploration-Covariance-Matrix.png" style="width:40%;position:absolute;top: 250px; right: 100px"/><!-- {"left" : 6.37, "top" : 1.43, "height" : 2.06, "width" : 3.72} -->
+
 
 - Which of the <br/>variables are <br/>strongly correlated?
-<img src="../../assets/images/machine-learning/Data-Exploration--Covariance-Matrix-Code-R--1.png" alt="Data-Exploration--Covariance-Matrix-Code-R--1.png" style="width:70%;float:right"/>
+
+<img src="../../assets/images/machine-learning/Data-Exploration--Covariance-Matrix-Code-R--1.png" alt="Data-Exploration--Covariance-Matrix-Code-R--1.png" style="width:70%;float:right"/><!-- {"left" : 3.35, "top" : 4.75, "height" : 2.49, "width" : 6.81} -->
+
 
 Notes:
 
@@ -832,7 +859,9 @@ Notes:
 
 ##  Covariance Matrix Code (Python)
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Matrix-Code-Python.png" />
+<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Matrix-Code-Python.png" /><!-- {"left" : 1.02, "top" : 1.43, "height" : 5.11, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -871,8 +900,7 @@ Notes:
 ## Lab Preparation for Machine Learning Class
 
 
- * Please follow instructions in  
- **0-Labs-Prep.pptx**
+ * Please follow instructions in **0-Labs-Prep.pptx**
 
 Notes:
 
@@ -883,15 +911,15 @@ Notes:
 ## Optional Lab 2.1 & 2.2: Basic Numpy, Pandas
 
 
- *  **Overview** : Get familiar with Numpy and Pandas
+ *  **Overview**: Get familiar with Numpy and Pandas
 
- *  **Approximate time** : 10 mins
+ *  **Approximate time**: 10 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
-     - 2.1  : Numpy
+     - 2.1: Numpy
 
-     - 2.2  : Pandas
+     - 2.2: Pandas
 
 Notes:
 
@@ -900,14 +928,14 @@ Notes:
 
 ---
 
-## Optional Lab 3.1 : Statistics
+## Optional Lab 3.1: Statistics
 
 
- *  **Overview** : Learn basic statistics functions
+ *  **Overview**: Learn basic statistics functions
 
- *  **Approximate time** : 10 mins
+ *  **Approximate time**: 10 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      -  **3.1 Basics/stats**
 
@@ -951,7 +979,9 @@ Notes:
  * Income data (sorted):
  [22k, 25k, 30k, 35k, 40k, 42k, 45k, 50k, 55k, 60k, 65k, 70k]
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" alt="Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" alt="Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" style="width:50%;"/><!-- {"left" : 2.72, "top" : 4.01, "height" : 3.1, "width" : 4.82} -->
+
+
 
 Notes:
 
@@ -959,7 +989,7 @@ Notes:
 
 ---
 
-## BoxPlot : Sample Code (R)
+## BoxPlot: Sample Code (R)
 
 
 ```r
@@ -981,7 +1011,10 @@ $n
 12
 
 ```
-<img src="../../assets/images/machine-learning/Data-Exploration-BoxPlot-Sample-Code-R--0.png" alt="Data-Exploration-BoxPlot-Sample-Code-Python--0.png" style="width:40%;"/>
+<!-- {"left" : 0, "top" : 0.94, "height" : 3.11, "width" : 7.23} -->
+
+
+<img src="../../assets/images/machine-learning/Data-Exploration-BoxPlot-Sample-Code-R--0.png" alt="Data-Exploration-BoxPlot-Sample-Code-Python--0.png" style="width:40%;"/><!-- {"left" : 3.17, "top" : 4.24, "height" : 2.52, "width" : 3.91} -->
 
 Notes:
 
@@ -990,7 +1023,7 @@ Notes:
 
 ---
 
-## BoxPlot : Sample Code (Python)
+## BoxPlot: Sample Code (Python)
 ```python
 %matplotlib inline
 import numpy as np
@@ -1001,7 +1034,10 @@ salaries = np.array([22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70])
 plt.boxplot(salaries)
 
 ```
-<img src="../../assets/images/machine-learning/Data-Exploration-BoxPlot-Sample-Code-Python--0.png" alt="Data-Exploration-BoxPlot-Sample-Code-Python--0.png" style="width:60%;"/>
+<!-- {"left" : 0, "top" : 0.97, "height" : 1.77, "width" : 10.25} -->
+
+<img src="../../assets/images/machine-learning/Data-Exploration-BoxPlot-Sample-Code-Python--0.png" alt="Data-Exploration-BoxPlot-Sample-Code-Python--0.png" style="width:60%;"/><!-- {"left" : 2.56, "top" : 3.21, "height" : 3.3, "width" : 5.13} -->
+
 
 
 Notes:
@@ -1021,8 +1057,11 @@ income = c(22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70)
 hist(income)
 
 ```
+<!-- {"left" : 0, "top" : 1.52, "height" : 0.79, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-R--0.png" alt="Data-Exploration-Histogram-R--0.png" style="width:50%;"/>
+
+<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-R--0.png" alt="Data-Exploration-Histogram-R--0.png" style="width:50%;"/><!-- {"left" : 2.56, "top" : 2.71, "height" : 4.16, "width" : 5.13} -->
+
 
 Notes:
 
@@ -1044,8 +1083,10 @@ salaries = np.array([22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70])
 plt.hist(salaries, rwidth=0.7)
 
 ```
+<!-- {"left" : 0, "top" : 1.76, "height" : 1.99, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-Python--0.png" alt="Data-Exploration-Histogram-Python--0.png" style="width:50%;"/>
+
+<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-Python--0.png" alt="Data-Exploration-Histogram-Python--0.png" style="width:50%;"/><!-- {"left" : 2.97, "top" : 4.06, "height" : 2.8, "width" : 4.31} -->
 
 
 Notes:
@@ -1070,7 +1111,9 @@ plt.ylabel("tip")
 plt.scatter(bills, tips)
 
 ```
-<img src="../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:40%;"/>
+<!-- {"left" : 0, "top" : 1.38, "height" : 2.58, "width" : 7.92} -->
+
+<img src="../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:40%;"/><!-- {"left" : 2.04, "top" : 4.06, "height" : 3.08, "width" : 6.16} -->
 
 
 Notes:
@@ -1079,16 +1122,16 @@ Notes:
 
 ---
 
-## Lab 3.2 : Visualizing
+## Lab 3.2: Visualizing
 
 
- *  **Overview** : Learn basic plot functions
+ *  **Overview**: Learn basic plot functions
 
- *  **Builds on previous labs** :
+ *  **Builds on previous labs**:
 
- *  **Approximate time** : 10 mins
+ *  **Approximate time**: 10 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      -  **3.2: basic/visualizing**
 
@@ -1104,16 +1147,16 @@ Notes:
 ## Lab 3.3: Data Cleanup
 
 
- *  **Overview** :
+ *  **Overview**:
   Cleaning up data, getting it ready for analytics
 
- *  **Approximate Time** : 10 - 15 mins
+ *  **Approximate Time**: 10 - 15 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      - '3.3  **exploration/data-cleanup** ' lab for Python / R / Spark
 
- *  **To Instructor** :
+ *  **To Instructor**:
   Demo this lab on screen first, and explain the results
 
 Notes:
@@ -1141,15 +1184,15 @@ Notes:
 
  *  **Instructor, If covering ML-Concepts, do this at the end of Part-1 ML-Concepts**
 
- *  **Overview** :  Explore a dataset
+ *  **Overview**:  Explore a dataset
 
- *  **Approximate Time** : 10 - 15 mins
+ *  **Approximate Time**: 10 - 15 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      -  **3.4: 'exploration/explore-house-sales'**  lab for Python / R / Spark
 
- *  **To Instructor** : Demo this lab on screen first, and explain the results
+ *  **To Instructor**: Demo this lab on screen first, and explain the results
 
 Notes:
 
@@ -1161,15 +1204,15 @@ Notes:
 ## BONUS Lab 3.5: Graphing And Visualizing
 
 
- *  **Overview** : Visualize house-sales dataset
+ *  **Overview**: Visualize house-sales dataset
 
- *  **Approximate Time** : 10 - 15 mins
+ *  **Approximate Time**: 10 - 15 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      -  **3.5: exploration/visualize-house-sales**  lab for Python / R / Spark
 
- *  **To Instructor** : Demo this lab on screen first, and explain the results
+ *  **To Instructor**: Demo this lab on screen first, and explain the results
 
 Notes:
 
@@ -1187,11 +1230,11 @@ Notes:
 
  * Fantastic YouTube video series on Statistics by Brandon Foltz
 
-     - Covariance :  https://www.youtube.com/watch?v=xGbpuFNR1ME
+     - Covariance:  https://www.youtube.com/watch?v=xGbpuFNR1ME
 
-     - Correlation : https://www.youtube.com/watch?v=4EXNedimDMs  
+     - Correlation: https://www.youtube.com/watch?v=4EXNedimDMs  
 
-     - Covariance Matrix : https://www.youtube.com/watch?v=locZabK4Als
+     - Covariance Matrix: https://www.youtube.com/watch?v=locZabK4Als
 
 Notes:
 

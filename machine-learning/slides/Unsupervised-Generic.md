@@ -22,7 +22,8 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/UG-01.png" alt="UG-01.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/UG-01.png" alt="UG-01.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
 
 Notes:
 
@@ -182,7 +183,8 @@ Notes:
 
      - And the need for further investigation
 
-<img src="../../assets/images/machine-learning/Clustering-Use-Cases.png" alt="Clustering-Use-Cases.png" style="width:40%;position:absolute;top:350px;right:5px"/>
+<img src="../../assets/images/machine-learning/Clustering-Use-Cases.png" alt="Clustering-Use-Cases.png" style="width:40%;position:absolute;top:350px;right:5px"/><!-- {"left" : 3.37, "top" : 4.21, "height" : 2.84, "width" : 3.5} -->
+
 
 
 Notes:
@@ -196,7 +198,8 @@ Image credit : Pixabay : Creative Commons Zero : https://pixabay.com/en/nuts-bla
 
  * Google News article grouping
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Clustering-Use-Cases-Google-News-0.png" alt="Session-Unsupervised-Learning-Clustering-Use-Cases-Google-News-0.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Clustering-Use-Cases-Google-News-0.png" alt="Session-Unsupervised-Learning-Clustering-Use-Cases-Google-News-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.88, "height" : 4.21, "width" : 8.21} -->
+
 
 
 Notes:
@@ -207,7 +210,8 @@ Notes:
 
  * Figure out where demand is so more cars can be sent to that area
 
-<img src="../../assets/images/machine-learning/3rd-party/Uber-Trips-0.png" alt="Uber-Trips-0.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Uber-Trips-0.png" alt="Uber-Trips-0.png" style="width:60%;"/><!-- {"left" : 2.24, "top" : 1.83, "height" : 4.3, "width" : 5.77} -->
+
 
 Notes:
 
@@ -239,14 +243,15 @@ TODO : add pictures
 
 ---
 
-## Clustering Use Case : Customer Purchases @ Walmart
+## Clustering Use Case: Customer Purchases @ Walmart
 
 
  * Here is how Walmart is segmenting customer purchases
 
  * Question:What is the use case for this?
 
-<img src="../../assets/images/machine-learning/3rd-party/UG-03.png" alt="UG-03.png" style="width:60%;float:left"/>
+<img src="../../assets/images/machine-learning/3rd-party/UG-03.png" alt="UG-03.png" style="width:60%;float:left"/><!-- {"left" : 6.09, "top" : 4.85, "height" : 2.34, "width" : 3.9} -->
+
 
 <p style="width:370px;position:absolute;top:400px;right:5px;text-align:left;border:2px solid black;padding:20px;font-size:0.9em">
  -Pharmacy Runs<br/>
@@ -294,7 +299,8 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/UG-04.png" alt="UG-04.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/UG-04.png" alt="UG-04.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
 
 
 Notes:
@@ -323,7 +329,8 @@ Notes:
 
 ## K-Means Visualized
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Visualized-0.png" alt="Session-Unsupervised-Learning-K-Means-Visualized-0.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Visualized-0.png" alt="Session-Unsupervised-Learning-K-Means-Visualized-0.png" style="width:60%;"/><!-- {"left" : 1.73, "top" : 1.08, "height" : 3.4, "width" : 6.78} -->
+
 
 
  * Animations
@@ -353,12 +360,15 @@ Image credit : "Introduction to Statistical Learning", used with author's permis
 
  *  **Step 1** : k numbers of points (centroids) are pre-seeded in the data.  Example: 3 centroids (red, green, blue)
 <p style="text-align:center">
-  <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Clustering-Walkthrough-1.png" alt="Session-Unsupervised-Learning-K-Means-Clustering-Walkthrough-1.png" style="width:350px;"/>
+  <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Clustering-Walkthrough-1.png" alt="Session-Unsupervised-Learning-K-Means-Clustering-Walkthrough-1.png" style="width:350px;"/><!-- {"left" : 7.26, "top" : 1.51, "height" : 2.39, "width" : 2.48} -->
+
+
 </p>
 
  *  **Step 2** : Each point in the dataset is associated with its nearest centroid, as determined by a distance measurement.
 <p style="text-align:center">
- <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Clustering-Walkthrough-0.png" alt="Session-Unsupervised-Learning-K-Means-Clustering-Walkthrough-0.png" style="width:300px;"/>
+ <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Clustering-Walkthrough-0.png" alt="Session-Unsupervised-Learning-K-Means-Clustering-Walkthrough-0.png" style="width:300px;"/><!-- {"left" : 7.53, "top" : 5.45, "height" : 1.67, "width" : 1.93} -->
+
 </p>
 
 
@@ -373,12 +383,14 @@ Notes:
 
  *  **Step 3** : The centroid (geometric center) of the clustered points becomes the new centroid of that cluster. Each centroid is updated.
 <p style="text-align:center">
-  <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Clustering-0.png" alt="Session-Unsupervised-Learning-K-Means-Clustering-0.png" style="width:350px;"/>
+  <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Clustering-0.png" alt="Session-Unsupervised-Learning-K-Means-Clustering-0.png" style="width:350px;"/><!-- {"left" : 7.71, "top" : 1.82, "height" : 1.84, "width" : 2.14} -->
+
 </p>
 
  *  **Step 4** : Repeat steps 2 and 3 until convergence is reached (the points move less than the threshold amount).
 <p style="text-align:center">
- <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Clustering-1.png" alt="Session-Unsupervised-Learning-K-Means-Clustering-1.png" style="width:350px;"/>
+ <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Clustering-1.png" alt="Session-Unsupervised-Learning-K-Means-Clustering-1.png" style="width:350px;"/><!-- {"left" : 7.33, "top" : 4.86, "height" : 2.11, "width" : 2.44} -->
+
 </p>
 
 Notes:
@@ -401,7 +413,8 @@ Angle
 
 ## K-Means Visualization
 
-<img src="../../assets/images/machine-learning/3rd-party/UG-05.png" alt="UG-05.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/UG-05.png" alt="UG-05.png" style="width:50%;"/><!-- {"left" : 2.04, "top" : 0.9, "height" : 6.17, "width" : 6.18} -->
+
 
 
 Notes:
@@ -495,7 +508,9 @@ Notes:
 
  * We are going to cluster cars using two attributes : MPG & CYL
 
- <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-MTCars-Clustering-0.png" alt="Session-Unsupervised-Learning-MTCars-Clustering-0.png" style="width:80%;"/>
+ <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-MTCars-Clustering-0.png" alt="Session-Unsupervised-Learning-MTCars-Clustering-0.png" style="width:80%;"/><!-- {"left" : 1.16, "top" : 2.01, "height" : 3.94, "width" : 7.94} -->
+
+
 
 
 Notes:
@@ -506,7 +521,8 @@ Notes:
 
 ## Starting With K = 2  (Find 2 clusters)
 
-<img src="../../assets/images/machine-learning/UG-06.png" alt="UG-06.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/UG-06.png" alt="UG-06.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.75, "height" : 4.48, "width" : 8.21} -->
+
 
 Notes:
 
@@ -516,7 +532,8 @@ Notes:
 
 ## Starting With K = 4  (Find 4 clusters)
 
-<img src="../../assets/images/machine-learning/UG-07.png" alt="UG-07.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/UG-07.png" alt="UG-07.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.34, "height" : 5.28, "width" : 8.21} -->
+
 
 
 Notes:
@@ -536,7 +553,8 @@ Notes:
 
  *  **Question for class:** At  **k=32**  we have achieved  **WSSSE=0** , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" alt="Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" alt="Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 3.49, "height" : 3.5, "width" : 8.21} -->
+
 
 
 Notes:
@@ -552,12 +570,14 @@ Notes:
 
  * For K=clusters and d=dimensions and n=observations
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Complexity-0.png" alt="Session-Unsupervised-Learning-K-Means-Complexity-0.png" />
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Complexity-0.png" alt="Session-Unsupervised-Learning-K-Means-Complexity-0.png" /><!-- {"left" : 4.26, "top" : 1.94, "height" : 0.61, "width" : 1.72} -->
+
 
 
  * Heuristic algorithms like Lloyd's can helpComplexity - linear (best case)
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Complexity-1.png" alt="Session-Unsupervised-Learning-K-Means-Complexity-1.png" />
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Complexity-1.png" alt="Session-Unsupervised-Learning-K-Means-Complexity-1.png" /><!-- {"left" : 4.36, "top" : 4.45, "height" : 0.53, "width" : 1.53} -->
+
 
      i = iterations
 
@@ -626,8 +646,10 @@ https://en.wikipedia.org/wiki/Lloyd%27s_algorithm
 
      - Step through
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Centroid-Positioning-DEMO-0.png" alt="Session-Unsupervised-Learning-K-Means-Centroid-Positioning-DEMO-0.png" style="width:380px;position:absolute;top:390px;right:10px"/>
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Centroid-Positioning-DEMO-1.png" alt="Session-Unsupervised-Learning-K-Means-Centroid-Positioning-DEMO-1.png" style="width:380px;position:absolute;top:800px;right:10px"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Centroid-Positioning-DEMO-0.png" alt="Session-Unsupervised-Learning-K-Means-Centroid-Positioning-DEMO-0.png" style="width:380px;position:absolute;top:390px;right:10px"/><!-- {"left" : 7.67, "top" : 1.8, "height" : 1.79, "width" : 1.86} -->
+
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-K-Means-Centroid-Positioning-DEMO-1.png" alt="Session-Unsupervised-Learning-K-Means-Centroid-Positioning-DEMO-1.png" style="width:380px;position:absolute;top:800px;right:10px"/><!-- {"left" : 7.67, "top" : 4.37, "height" : 1.79, "width" : 1.86} -->
+
 
 
 
@@ -661,7 +683,8 @@ Notes:
 
      - Increasing K beyond the elbow doesn't produce noticeable improvements in clustering
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-How-to-Find-the-Best-K--0.png" alt="Session-Unsupervised-Learning-How-to-Find-the-Best-K--0.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-How-to-Find-the-Best-K--0.png" alt="Session-Unsupervised-Learning-How-to-Find-the-Best-K--0.png" style="width:60%;"/><!-- {"left" : 2.37, "top" : 3.27, "height" : 3.22, "width" : 5.52} -->
+
 
 
 Notes:
@@ -730,7 +753,8 @@ Hierarchical Clustering is a cluster analysis that seeks to build a hierarchy of
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/UG-08.png" alt="UG-08.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/UG-08.png" alt="UG-08.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
 
 
 Notes:
@@ -761,7 +785,8 @@ Notes:
 
  * Input
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Visualizing-Hierarchical-Clustering-0.png" alt="Session-Unsupervised-Learning-Visualizing-Hierarchical-Clustering-0.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Visualizing-Hierarchical-Clustering-0.png" alt="Session-Unsupervised-Learning-Visualizing-Hierarchical-Clustering-0.png" style="width:60%;"/><!-- {"left" : 2.16, "top" : 1.35, "height" : 5.27, "width" : 5.93} -->
+
 
 
 Notes:
@@ -772,10 +797,10 @@ Notes:
 
 ## Visualizing Hierarchical Clustering
 
+ * Output:  **Dendogram**  (upside down tree)
 
- * Output :  **Dendogram**  (upside down tree)
+<img src="../../assets/images/machine-learning/3rd-party/UG-09.png" alt="UG-09.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.51, "height" : 4.94, "width" : 8.21} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/UG-09.png" alt="UG-09.png" style="width:80%;"/>
 
 
 Notes:
@@ -788,25 +813,25 @@ Notes:
 
  *  **Instructor**:
 
-    `Recommended to do the Uber lab as the last lab for the class ;)`
+     - `Recommended to do the Uber lab as the last lab for the class `
 
- *  **Overview** :
+ *  **Overview**:
 
-    Experiment with KMeans
+    - Experiment with KMeans
 
- *  **Approximate time** :
+ *  **Approximate time**:
 
-    20 – 40 mins
+    - 20 – 40 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      - Follow appropriate Python / R / Spark instructions
 
      - KMEANS-1 lab (mtcars)
 
-     - `KMEANS-2 : Uber trips`
+     - `KMEANS-2: Uber trips`
 
-     - Bonus Lab : KMEANS-3 : Walmart shopping data
+     - Bonus Lab: KMEANS-3: Walmart shopping data
 
  *  **Lab**
 
@@ -838,7 +863,9 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/UG-10.png" alt="UG-10.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/UG-10.png" alt="UG-10.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
+
 
 
 Notes:
@@ -850,8 +877,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
 ## Dimensionality Reduction
 
-
- *  **Problem** : you have too many variables
+ *  **Problem**: you have too many variables
 
  * But this is good!?
 
@@ -921,12 +947,13 @@ Notes:
 
  * For P variables there are
  
-    p * (p - 1) / 2 combinations !
+    p * (p - 1) / 2 combinations!
 
- * P = 10 -> 45 plot combinations !
- * P = 100 -> 4500 plot combinations !
+ * P = 10 -> 45 plot combinations!
+ * P = 100 -> 4500 plot combinations!
 
-<img src="../../assets/images/machine-learning/UG-11.png" alt="UG-11.png" style="width:50%;position:absolute;top:450px;right:10px;"/>
+<img src="../../assets/images/machine-learning/UG-11.png" alt="UG-11.png" style="width:50%;position:absolute;top:450px;right:10px;"/><!-- {"left" : 6.59, "top" : 5.25, "height" : 2.09, "width" : 3.5} -->
+
 
 Notes:
 
@@ -975,7 +1002,8 @@ Notes:
 
      - They may not even agree, due to rounding errors
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Why-Dimensionality-Reduction--0.png" alt="Session-Unsupervised-Learning-Why-Dimensionality-Reduction--0.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Why-Dimensionality-Reduction--0.png" alt="Session-Unsupervised-Learning-Why-Dimensionality-Reduction--0.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 3.99, "height" : 2.68, "width" : 8.21} -->
+
 
 
 Notes:
@@ -995,7 +1023,8 @@ Notes:
 
      - Hard to reverse engineer
 
-<img src="../../assets/images/machine-learning/UG-12.png" alt="UG-12.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/UG-12.png" alt="UG-12.png" style="width:80%;"/><!-- {"left" : 1.31, "top" : 3.44, "height" : 3.54, "width" : 7.63} -->
+
 
 
 Notes:
@@ -1015,7 +1044,8 @@ Notes:
 
      - Smaller size, but still maintains the image
 
-<img src="../../assets/images/machine-learning/3rd-party/UG-13.png" alt="UG-13.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/UG-13.png" alt="UG-13.png" style="width:40%;"/><!-- {"left" : 1.97, "top" : 3.12, "height" : 3.7, "width" : 6.31} -->
+
 
 Notes:
 
@@ -1056,7 +1086,9 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/UG-14.png" alt="UG-14.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/UG-14.png" alt="UG-14.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
+
 
 
 Notes:
@@ -1125,7 +1157,8 @@ Notes:
 
      - Social facilitator
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-PCA-Example-Cultures-of-Internet-in-UK-0.png" alt="Session-Unsupervised-Learning-PCA-Example-Cultures-of-Internet-in-UK-0.png" style="width:35%;position:absolute;top:220px;right:10px;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-PCA-Example-Cultures-of-Internet-in-UK-0.png" alt="Session-Unsupervised-Learning-PCA-Example-Cultures-of-Internet-in-UK-0.png" style="width:35%;position:absolute;top:220px;right:10px;"/><!-- {"left" : 8.03, "top" : 4.1, "height" : 3.21, "width" : 2.03} -->
+
 
 Notes:
 
@@ -1169,7 +1202,9 @@ Notes:
 
  * In the plot below, EigenVector (ev1) is shown that crosses the data with 'highest variance'
 
-<img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-PCA-Math-Eigen-Vectors-0.png" alt="Session-Unsupervised-Learning-PCA-Math-Eigen-Vectors-0.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-PCA-Math-Eigen-Vectors-0.png" alt="Session-Unsupervised-Learning-PCA-Math-Eigen-Vectors-0.png" style="width:60%;"/><!-- {"left" : 2.21, "top" : 1.96, "height" : 4.04, "width" : 5.83} -->
+
+
 
 Notes:
 
@@ -1185,7 +1220,8 @@ Image adopted with thanks to: https://georgemdallas.wordpress.com/2013/10/30/pri
  * To maximize coverage the second EigenVector will be orthogonal (90 degrees) to the first one (ev1)
 
 
- <img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-PCA-Math-Eigen-Vectors-01.png" alt="Session-Unsupervised-Learning-PCA-Math-Eigen-Vectors-01.png" style="width:60%;"/>
+ <img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-PCA-Math-Eigen-Vectors-01.png" alt="Session-Unsupervised-Learning-PCA-Math-Eigen-Vectors-01.png" style="width:60%;"/><!-- {"left" : 2.21, "top" : 2.86, "height" : 4.04, "width" : 5.83} -->
+
 
 Notes:
 
@@ -1201,7 +1237,8 @@ Image adopted with thanks to: https://georgemdallas.wordpress.com/2013/10/30/pri
 
  * Remember, the data hasn't changed at all, we are just looking at it from a different perspective
 
-<img src="../../assets/images/machine-learning/UG-15.png" alt="UG-15.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/UG-15.png" alt="UG-15.png" style="width:50%;"/><!-- {"left" : 2.3, "top" : 2.9, "height" : 4.11, "width" : 5.65} -->
+
 
 
 Notes:
@@ -1238,7 +1275,8 @@ Notes:
 
 ## Oxford Study With Top-4 PCA Items
 
-<img src="../../assets/images/machine-learning/3rd-party/UG-16.png" alt="UG-16.png" style="width:35%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/UG-16.png" alt="UG-16.png" style="width:35%;"/><!-- {"left" : 3.37, "top" : 1.23, "height" : 5.51, "width" : 3.51} -->
+
 
 Notes:
 
@@ -1268,7 +1306,8 @@ Notes:
 
  * PCA was performed after standardizing each variable to have mean zero and standard deviation one
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-PCA-Example-USArrests-Data-0.png" alt="Session-Unsupervised-Learning-PCA-Example-USArrests-Data-0.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-PCA-Example-USArrests-Data-0.png" alt="Session-Unsupervised-Learning-PCA-Example-USArrests-Data-0.png" style="width:40%;"/><!-- {"left" : 3.1, "top" : 2.48, "height" : 4.05, "width" : 4.05} -->
+
 
 
 Notes:
@@ -1280,8 +1319,11 @@ Example from "An Introduction to Statistical Learning"  Chapter 10
 
 ## PC Vectors and BiPlot
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-PC-Vectors-and-BiPlot-1.png" alt="Session-Unsupervised-Learning-PC-Vectors-and-BiPlot-1.png" style="width:40%;"/>
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-PC-Vectors-and-BiPlot-0.png" alt="Session-Unsupervised-Learning-PC-Vectors-and-BiPlot-0.png" style="width:55%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-PC-Vectors-and-BiPlot-1.png" alt="Session-Unsupervised-Learning-PC-Vectors-and-BiPlot-1.png" style="width:40%;"/><!-- {"left" : 0.28, "top" : 1, "height" : 1.93, "width" : 5.44} -->
+
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-PC-Vectors-and-BiPlot-0.png" alt="Session-Unsupervised-Learning-PC-Vectors-and-BiPlot-0.png" style="width:55%;"/><!-- {"left" : 5.63, "top" : 2.63, "height" : 4.28, "width" : 4.28} -->
+
+
 
 Notes:
 
@@ -1342,7 +1384,8 @@ Notes:
 
 ## Effects of Scaling Variables Before PCA
 
-<img src="../../assets/images/machine-learning/3rd-party/UG-17.png" alt="UG-17.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/UG-17.png" alt="UG-17.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1386,7 +1429,8 @@ Notes:
 
  * Right graph shows 'accumulated' variance when combining PCs.  We are moving towards ONE
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Evaluating-PCA-Scree-Plot-0.png" alt="Session-Unsupervised-Learning-Evaluating-PCA-Scree-Plot-0.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Evaluating-PCA-Scree-Plot-0.png" alt="Session-Unsupervised-Learning-Evaluating-PCA-Scree-Plot-0.png" style="width:50%;"/><!-- {"left" : 2.31, "top" : 4.06, "height" : 3.07, "width" : 5.63} -->
+
 
 Notes:
 
@@ -1482,7 +1526,8 @@ Notes:
      - Range = 70 – 22 = 48
 
 
-<img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-Step-1-Normalization-0.png" alt="Session-Unsupervised-Learning-Step-1-Normalization-0.png" style="width:35%;"/>
+<img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-Step-1-Normalization-0.png" alt="Session-Unsupervised-Learning-Step-1-Normalization-0.png" style="width:35%;"/><!-- {"left" : 5.94, "top" : 3.82, "height" : 3.24, "width" : 3.89} -->
+
 
 Notes:
 
@@ -1504,7 +1549,8 @@ Notes:
 
      - [ (30 – 43.14) / 48,    (45 – 43.14) / 48,  ….    (22 – 43.14) / 48 ] = [ -0.274,   0.039,  0.143,  0.560,  0.351,  0.378, 0.440 ]
 
-<img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-Step-1-Normalization-0.png" alt="Session-Unsupervised-Learning-Step-1-Normalization-0.png" style="width:35%;"/>
+<img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-Step-1-Normalization-0.png" alt="Session-Unsupervised-Learning-Step-1-Normalization-0.png" style="width:35%;"/><!-- {"left" : 3.55, "top" : 4.61, "height" : 2.63, "width" : 3.16} -->
+
 
 Notes:
 
@@ -1523,7 +1569,8 @@ Notes:
 
  * Apply the same transforms backwards to the new points
 
-<img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-Restoring-Reduced-Data-0.png" alt="Session-Unsupervised-Learning-Restoring-Reduced-Data-0.png" style="width:55%;"/>
+<img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-Restoring-Reduced-Data-0.png" alt="Session-Unsupervised-Learning-Restoring-Reduced-Data-0.png" style="width:55%;"/><!-- {"left" : 2.73, "top" : 3.56, "height" : 3.72, "width" : 4.79} -->
+
 
 
 Notes:
@@ -1536,17 +1583,21 @@ Notes:
 
 * We have optimized the projection error
 
-<img src="../../assets/images/machine-learning/3rd-party/UG-18.png" alt="UG-18.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/UG-18.png" alt="UG-18.png" style="width:40%;"/><!-- {"left" : 1.9, "top" : 1.42, "height" : 1.3, "width" : 6.45} -->
+
 
 
 * And we have reduced the total variation in the data
 
-<img src="../../assets/images/machine-learning/3rd-party/UG-19.png" alt="UG-19.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/UG-19.png" alt="UG-19.png" style="width:40%;"/><!-- {"left" : 3.28, "top" : 4.26, "height" : 1.34, "width" : 3.69} -->
+
+
 
 * Retain 99% of the variance means that
 
 
-<img src="../../assets/images/machine-learning/3rd-party/UG-20.png" alt="UG-20.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/UG-20.png" alt="UG-20.png" style="width:40%;"/><!-- {"left" : 6.94, "top" : 6.36, "height" : 0.84, "width" : 3.19} -->
+
 
 Notes:
 

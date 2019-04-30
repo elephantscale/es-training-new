@@ -29,7 +29,8 @@ Notes:
 
  * We will use Linear Regression to predict tips
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.93, "height" : 4.11, "width" : 8.21} -->
+
 
 Notes:
 
@@ -129,6 +130,7 @@ X array: numpy array with X variable
 Y array: numpy array with Y Varibale
 
 ```
+<!-- {"left" : 0, "top" : 1.88, "height" : 1.83, "width" : 10.25} -->
 
 ```text
 # sample usage:
@@ -183,7 +185,8 @@ http://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R
 ## Understanding Summary
 
 
-<img src="../../assets/images/machine-learning/3rd-party/01.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/3rd-party/01.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.34, "height" : 5.29, "width" : 8.21} -->
+
 
 
 Notes:
@@ -195,7 +198,7 @@ Notes:
 
 ## Understanding Statsmodel output
 
-<img src="../../assets/images/machine-learning/3rd-party/02.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/02.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 3.27, "width" : 8.21} -->
 
  * Residuals : Difference between 'actual' and 'predicted'
 
@@ -214,13 +217,14 @@ Notes:
 ## Understanding Statsmodel output
 
 
-<img src="../../assets/images/machine-learning/3rd-party/03.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/3rd-party/03.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 2.24, "width" : 8.21} -->
+
 
  * Coefficients
 
-     - Slope of line : bill:  **0.2429**
+     - Slope of line: bill:  **0.2429**
 
-     - Intercept : where line meets Y-axis:  **-1.4** (below zero line (X axis))
+     - Intercept: where line meets Y-axis:  **-1.4** (below zero line (X axis))
 
 
 Notes:
@@ -232,7 +236,8 @@ Notes:
 
 ## Understanding Statsmodel Output
 
-<img src="../../assets/images/machine-learning/3rd-party/04.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/3rd-party/04.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 2.19, "width" : 8.21} -->
+
 
 
  *  **Pr**  **(>|t|)** should be very small, in our case it is very close to zero
@@ -249,7 +254,8 @@ http://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R
 ## Understanding Statsmodel output
 
 
-<img src="../../assets/images/machine-learning/3rd-party/05.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/05.png" style="width:70%"/><!-- {"left" : 2.08, "top" : 1.15, "height" : 1.62, "width" : 6.09} -->
+
 
  *  **Coefficient of Determination (r**  **2**  **)** determines how well the model fits data
 
@@ -280,8 +286,10 @@ result = sm.ols(formula="tip ~ bill", data=tip_data).fit()
 abline_plot(model_results=result, ax=ax)
 
 ```
+<!-- {"left" : 0, "top" : 1.18, "height" : 0.9, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/>
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/><!-- {"left" : 2.18, "top" : 2.86, "height" : 4.07, "width" : 5.9} -->
+
 
 Notes:
 
@@ -596,6 +604,7 @@ mylogit = sm.Logit(mortgage[‘approved’], mortgage[0:3])
 Mylogit.summary()
 
 ```
+<!-- {"left" : 0, "top" : 0.93, "height" : 1.63, "width" : 7.63} -->
 
 | fico | salary | debt | approved |
 |------|--------|------|----------|
@@ -603,8 +612,10 @@ Mylogit.summary()
 | 760  | 50000  | 5000 | 1        |
 | 700  | 80000  | 5000 | 1        |
 
+<!-- {"left" : 0.25, "top" : 2.75, "height" : 2, "width" : 4.99, "columnwidth" : [1, 1.41, 1.41, 1.41]} -->
 
-<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:50%"/>
+<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:50%"/><!-- {"left" : 4.08, "top" : 4.74, "height" : 2.47, "width" : 5.94} -->
+
 
 Notes:
 
@@ -616,15 +627,17 @@ Notes:
 ## Understanding Multiple Logistic Regression
 
 
-<img src="../../assets/images/machine-learning/3rd-party/06.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/06.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.04, "height" : 3.07, "width" : 8.21} -->
+
+
 
 * ln(y/(1-y)) = β0 + β1 * fico +  β2 * salary + β3 * debt
 
-	β1 (fico) = -0.269
+	β1 (fico) = - 0.269
 
 	β2 (salary) = 0.0005
 
-	β3 (debt) = -0.0004
+	β3 (debt) = - 0.0004
 
 
 
@@ -636,7 +649,8 @@ Notes:
 
 ## Understanding Multiple Logistic Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/07.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/07.png" style="width:70%"/><!-- {"left" : 0.3, "top" : 1.18, "height" : 1.74, "width" : 9.64} -->
+
 
  * When fico score goes up by ONE unit, it increases the odd by 0.45
 
@@ -669,7 +683,9 @@ Notes:
      - So we need to turn it into a  **'category'**  , so statsmodel treats it properly
 
 
-<img src="../../assets/images/machine-learning/3rd-party/08.png" style="width:55%"/>
+<img src="../../assets/images/machine-learning/3rd-party/08.png" style="width:55%"/><!-- {"left" : 1.89, "top" : 4.22, "height" : 2.69, "width" : 6.47} -->
+
+
 
 Notes:
 
@@ -679,7 +695,8 @@ Notes:
 
 ## Multiple Logistic Regression With Category
 
-<img src="../../assets/images/machine-learning/3rd-party/09.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/3rd-party/09.png" style="width:80%"/><!-- {"left" : 0.47, "top" : 1.36, "height" : 5.26, "width" : 9.31} -->
+
 
 Notes:
 

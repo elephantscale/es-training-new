@@ -25,7 +25,7 @@ Notes:
     - Algorithm + training data -> model
     - Model = Algorithm(data)
 
-<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="width:66%;"/> <!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="width:66%;"/><!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
 
 
 
@@ -208,7 +208,7 @@ Notes:
     - Note, only one bit is on
     - This is called **ONE-HOT-Encoding**
 
-    <img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="width:90%;"/> <!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
+    <img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="width:90%;"/><!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
 
 
 
@@ -231,7 +231,8 @@ Notes:
   * This might allow our models to make inferences
     - e.g., Orange is close to red on the spectrum, but more distant from violet.
 
-  <img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:55%;"/> 
+  <img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:55%;"/><!-- {"left" : 2.99, "top" : 5.04, "height" : 1.8, "width" : 4.27} -->
+
 
 
 
@@ -1182,7 +1183,7 @@ Notes:
     - Users will see more spam emails be in Inbox
   * We need to find the sweet spot!
 
-<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:20%;"/>  <!-- {"left" : 7.01, "top" : 2.83, "height" : 4.36, "width" : 3.07} -->
+<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:20%;"/><!-- {"left" : 7.01, "top" : 2.83, "height" : 4.36, "width" : 3.07} -->
 
 
 
@@ -1201,8 +1202,8 @@ Notes:
     - Only 70 emails are classified as spam
 Lower TPR
 
-<img src="../../assets/images/machine-learning/confusion-matrix-08-Threshold.png" alt="confusion-matrix-08-Threshold.png" style="width:50%;"/>&nbsp;
-<img src="../../assets/images/machine-learning/confusion-matrix-09-Threshold.png" alt="confusion-matrix-09-Threshold.png" style="width:42%;"/> <!-- {"left" : 0.5, "top" : 4.48, "height" : 2.62, "width" : 4} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-08-Threshold.png" alt="confusion-matrix-08-Threshold.png" style="width:50%;"/>&nbsp;<!-- {"left" : 0.57, "top" : 2.93, "height" : 2.62, "width" : 4.8} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-09-Threshold.png" alt="confusion-matrix-09-Threshold.png" style="width:42%;"/> <!-- {"left" : 5.7, "top" : 4.14, "height" : 2.7, "width" : 4.12} -->
 
 
 

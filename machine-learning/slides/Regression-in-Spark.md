@@ -54,7 +54,8 @@ Notes:
 
  * Do you see any correlation?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 2.38, "height" : 4.23, "width" : 8.21} -->
+
 
 
 Notes:
@@ -72,7 +73,8 @@ Notes:
 
  * This is **linear regression**!
 
-<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png" style="width:50%">
+<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png" style="width:50%"><!-- {"left" : 2.24, "top" : 2.6, "height" : 4.36, "width" : 5.77} -->
+
 
 Notes:
 
@@ -136,7 +138,7 @@ print(tip_data)  
 
  * ** 1 **: importing Numpy and Pandas libraries
 
- * ** 2 ** : Constructing a Panda dataframe and converting it into Spark dataframe
+ * ** 2 **: Constructing a Panda dataframe and converting it into Spark dataframe
 
 Notes:
 
@@ -154,7 +156,8 @@ Notes:
  plt.show()
 ```
 
-<img src="../../assets/images/machine-learning/Python-2-4-Plotting-Data-0.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/Python-2-4-Plotting-Data-0.png" style="width:50%;"/><!-- {"left" : 2.17, "top" : 2.87, "height" : 4.16, "width" : 5.91} -->
+
 
 Notes:
 
@@ -181,6 +184,8 @@ Notes:
  intercept = lrModel.intercept    # This is the intercept  
  slope = lrModel.coefficients[0]  # This is the slope
 ```
+<!-- {"left" : 0, "top" : 1.28, "height" : 3.49, "width" : 10.25} -->
+
 Notes:
 
 
@@ -202,6 +207,8 @@ print("RMSE: %f" % trainingSummary.rootMeanSquaredError)
 print("r2: %f" % trainingSummary.r2)
 trainingSummary.residuals.show()
 ```
+<!-- {"left" : 0, "top" : 1.15, "height" : 2.62, "width" : 10.25} -->
+
 
 ```text
 Coefficients: 0.226334605857
@@ -220,6 +227,8 @@ r2: 0.902517
 +--------------------+
 
 ```
+<!-- {"left" : 0, "top" : 4.16, "height" : 2.78, "width" : 9.75} -->
+
 
 Notes:
 
@@ -253,8 +262,11 @@ Notes:
  plt.title("Fit Line")
  plt.show()
 ```
+<!-- {"left" : 0, "top" : 1.24, "height" : 2.65, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/Model-Plot-the-regression-0.png" style="width:40%">
+
+<img src="../../assets/images/machine-learning/Model-Plot-the-regression-0.png" style="width:40%"><!-- {"left" : 3.01, "top" : 3.97, "height" : 3.19, "width" : 4.24} -->
+
 
 Notes:
 
@@ -278,6 +290,8 @@ Notes:
 # RMSE: 1.413302
 # r2: 0.902517
 ```
+<!-- {"left" : 0, "top" : 2.43, "height" : 1.97, "width" : 10.25} -->
+
 
 Notes:
 
@@ -294,7 +308,8 @@ Notes:
   * Overall residuals should be close to zeroWe don't want model that always predicts high or low
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Evaluating-Linear-Regression-Model-Plot-Residuals-0.png" style="width:60%">
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Evaluating-Linear-Regression-Model-Plot-Residuals-0.png" style="width:60%"><!-- {"left" : 1.02, "top" : 3.15, "height" : 3.88, "width" : 8.21} -->
+
 
 Notes:
 
@@ -316,7 +331,8 @@ Notes:
  tip_data
 ```
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Evaluating-Linear-Regression-Model-Estimate-Tip-0.png" style="width:16%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Evaluating-Linear-Regression-Model-Estimate-Tip-0.png" style="width:16%;"/><!-- {"left" : 4.35, "top" : 3.7, "height" : 3.19, "width" : 1.55} -->
+
 
 Notes:
 

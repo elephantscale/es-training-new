@@ -19,7 +19,7 @@ Notes:
 ## Classification Trees in Python
 
 
- * Implemented by  **sklearn.tree.DecisionTreeClassifier**    (python)
+ * Implemented by **sklearn.tree.DecisionTreeClassifier** (python)
 
  * Supports Binary and Multi-class Classification
 
@@ -41,6 +41,8 @@ dt= DecisionTreeClassifier(labelColumn='label', featuresCol = 'features')
 # Fit the model
 dtModel = dt.fit(training)
 ```
+<!-- {"left" : 0, "top" : 1.1, "height" : 2.1, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -87,6 +89,7 @@ Notes:
 ---
 
 ## Model Evaluation Sample Code (Python)
+
 ```python
  from sklearn.ml.evaluation import MultiClassClassificationEvaluator
  
@@ -98,6 +101,8 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Test Error = %g " % (1.0 - accuracy))
 ```
+<!-- {"left" : 0, "top" : 1.17, "height" : 2.13, "width" : 10.25} -->
+
 Notes: 
 
  
@@ -183,6 +188,8 @@ dt= DecisionTreeRegressor(labelColumn='label', featuresCol = 'features')
 # Fit the model
 dtModel = dt.fit(training)
 ```
+<!-- {"left" : 0, "top" : 1.17, "height" : 2.34, "width" : 10.25} -->
+
 Notes: 
 
  
@@ -233,6 +240,8 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Test Error = %g " % (1.0 - accuracy))
 ```
+<!-- {"left" : 0, "top" : 1.17, "height" : 2.6, "width" : 10.25} -->
+
 Notes: 
 
  
@@ -477,6 +486,8 @@ predictionCol="prediction", metricName="rmse")
 
  print("Test Error = %g " % (1.0 - accuracy))
 ```
+<!-- {"left" : 0, "top" : 1.17, "height" : 2.6, "width" : 10.25} -->
+
 Notes: 
 
  

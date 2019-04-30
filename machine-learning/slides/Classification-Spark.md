@@ -88,6 +88,8 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Test Error = %g " % (1.0 - accuracy))
 ```
+<!-- {"left" : 0, "top" : 0.9, "height" : 2.13, "width" : 10.25} -->
+
 Notes: 
 
  
@@ -98,11 +100,11 @@ Notes:
 ## Lab: SVM
 
 
- *  **Overview** : Work with SVM algorithm
+ *  **Overview**: Work with SVM algorithm
 
- *  **Approximate time** : 20-30 mins
+ *  **Approximate time**: 20-30 mins
 
- *  **Instructions** : 
+ *  **Instructions**: 
 
      - Follow instructions for Spark Python / Scala
 

@@ -27,7 +27,8 @@ Notes:
 
  * We will use Linear Regression to predict tips
 
-<img src="../../assets/images/machine-learning/Calculation-Using-Linear-Regression-0.png" style="width:60%;float:left" />
+<img src="../../assets/images/machine-learning/Calculation-Using-Linear-Regression-0.png" style="width:60%;float:left"/><!-- {"left" : 4.69, "top" : 2.43, "height" : 3.96, "width" : 5.25} -->
+
 
 
 | Meal # 	| Bill ($) 	| Tip ($) 	|
@@ -42,6 +43,7 @@ Notes:
 | 8      	| 15       	| 2       	|
 | 9      	| 25       	| 3       	|
 | 10     	| 35       	| 4       	|
+<!-- {"left" : 0.34, "top" : 1.67, "height" : 5.5, "width" : 4.1, "columnwidth" : [1.23, 1.37, 1.37]} -->
 
 Notes:
 
@@ -53,7 +55,7 @@ Notes:
 ## Linear Regression in R
 
 
- * R has built in Linear Regression : lm
+ * R has built in Linear Regression: lm
 
  * Very easy to use!
 
@@ -65,6 +67,7 @@ Data : dataframe
 Subset : optional specify subset of observations in fitting process
 
 ```
+<!-- {"left" : 0, "top" : 2.11, "height" : 1.37, "width" : 10.25} -->
 
 ```text
 # sample usage:
@@ -77,6 +80,8 @@ tip.lm = lm (tip ~ bill, data=tip_data)
 summary(tip.lm)
 
 ```
+<!-- {"left" : 0, "top" : 4.83, "height" : 2.2, "width" : 10.25} -->
+
 
 Notes:
 
@@ -275,8 +280,11 @@ tip.lm = lm (tip ~ bill, data=tip_data)
 abline(tip.lm, col='red')  # red line
 
 ```
+<!-- {"left" : 0, "top" : 0.96, "height" : 1.47, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/>
+
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/><!-- {"left" : 2.06, "top" : 2.91, "height" : 4.22, "width" : 6.12} -->
+
 
 Notes:
 
@@ -304,6 +312,7 @@ tip.for.100 = a * 100 + b
 # 22.88571
 
 ```
+<!-- {"left" : 0, "top" : 1.04, "height" : 3.42, "width" : 10.25} -->
 
  * Once we figure the  **coefficients a & b** , we can predict tip amount for any bill amount
 
@@ -336,8 +345,10 @@ print(newdata)
 2  200 47.17143
 
 ```
+<!-- {"left" : 0, "top" : 1.06, "height" : 3.91, "width" : 10.25} -->
 
- * predict ( regression_model,   new_data)
+
+ * predict ( regression_model, new_data)
 
 Notes:
 
@@ -364,6 +375,7 @@ predict(tip.lm, newdata, interval='confidence', level=0.95)
 2 47.17143   36.63191    57.71095   #   bill = $200
 
 ```
+<!-- {"left" : 0, "top" : 1.03, "height" : 3.18, "width" : 10.25} -->
 
  * Here we see the 'lower' and 'upper' estimates as well
 
@@ -420,6 +432,8 @@ newdata$est_tip = predict(tip.lm, newdata)
 View(newdata)
 
 ```
+<!-- {"left" : 0, "top" : 1, "height" : 5.97, "width" : 9.02} -->
+
 
 Notes:
 
@@ -428,7 +442,7 @@ Notes:
 
 ---
 
-## Lab: LIR-1 : Demo
+## Lab: LIR-1: Demo
 
 
  *  **Overview**:
@@ -448,7 +462,7 @@ Notes:
 
 ---
 
-## Lab: LIR-2 : Pollution Estimate
+## Lab: LIR-2: Pollution Estimate
 
 
  *  **Overview**:
@@ -466,7 +480,7 @@ Notes:
 
 ---
 
-## [Optional] Lab: LIR-3 : Building Height
+## [Optional] Lab: LIR-3: Building Height
 
 
  *  **Overview**:
@@ -494,7 +508,7 @@ Notes:
 
     10-15 mins
 
- *  **Answer these questions** :
+ *  **Answer these questions**:
 
      - Estimate relationship between  *'bill amount'* and 'tip'
 
@@ -585,7 +599,8 @@ title(main="Sigmoid (Logistic) Function")
 
 ```
 
-<img src="../../assets/images/machine-learning/3rd-party/Supervised-Learning-in-R--Sigmoid-Curve-S-Curve--0.png" style="width:60%" />
+<img src="../../assets/images/machine-learning/3rd-party/Supervised-Learning-in-R--Sigmoid-Curve-S-Curve--0.png" style="width:60%" /><!-- {"left" : 2.5, "top" : 3.17, "height" : 3.79, "width" : 5.26} -->
+
 
 Notes:
 
@@ -669,7 +684,7 @@ Notes:
 
 ---
 
-## Plotting  GLM
+## Plotting GLM
 
 
 ```text
@@ -687,7 +702,8 @@ lines(sorted.data$score, sorted.data$prob, col="red") # red line
 
 ```
 
-<img src="../../assets/images/machine-learning/3rd-party/Supervised-Learning-in-R-Plotting-GLM-0.png" style="width:50%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Supervised-Learning-in-R-Plotting-GLM-0.png" style="width:50%"/><!-- {"left" : 2.47, "top" : 3.12, "height" : 3.82, "width" : 5.3} -->
+
 
 Notes:
 
@@ -696,7 +712,7 @@ Notes:
 
 ---
 
-## Plotting  GLM With PopBio Package
+## Plotting GLM With PopBio Package
 
 
 ```text
@@ -710,7 +726,8 @@ logi.hist.plot(mydata$score, mydata$approved, boxp=FALSE)
 
 ```
 
-<img src="../../assets/images/machine-learning/3rd-party/Supervised-Learning-in-R-Plotting-GLM-With-PopBio-Package-0.png" style="width:65%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Supervised-Learning-in-R-Plotting-GLM-With-PopBio-Package-0.png" style="width:65%"/><!-- {"left" : 1.96, "top" : 2.44, "height" : 4.57, "width" : 6.34} -->
+
 
 Notes:
 
@@ -749,7 +766,7 @@ Notes:
 
 ---
 
-## Lab: LOG-1 : Credit Approval (DEMO)
+## Lab: LOG-1: Credit Approval (DEMO)
 
 
  *  **Overview**: Estimating credit approval using Logistic Regression.
@@ -785,6 +802,8 @@ mylogit = glm (approved ~ fico + salary + debt,
 summary(mylogit)
 
 ```
+<!-- {"left" : 0, "top" : 0.9, "height" : 1.97, "width" : 7.11} -->
+
 
 | fico 	| salary 	| debt 	| approv ed 	|
 |------	|--------	|------	|-----------	|
@@ -792,8 +811,11 @@ summary(mylogit)
 | 760  	| 50000  	| 5000 	| 1         	|
 | 700  	| 80000  	| 5000 	| 1         	|
 
+<!-- {"left" : 4.98, "top" : 5.02, "height" : 2.11, "width" : 5.06, "columnwidth" : [1.22, 1.41, 1.41, 1.41]} -->
 
-<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:65%"/>
+
+<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:65%"/><!-- {"left" : 4.98, "top" : 5.02, "height" : 2.11, "width" : 5.06} -->
+
 
 
 Notes:
@@ -878,7 +900,9 @@ Notes:
 
      - So we need to turn it into a  **'factor** ' , so GLM treats it properly
 
-<img src="../../assets/images/machine-learning/3rd-party/picture1.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/picture1.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3.49, "height" : 3.42, "width" : 8.21} -->
+
+
 
 
 Notes:

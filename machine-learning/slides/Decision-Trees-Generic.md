@@ -15,7 +15,8 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Alogorithm-Summary.png" style="width:80%">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Alogorithm-Summary.png" style="width:80%"><!-- {"left" : 0.57, "top" : 0.98, "height" : 6.02, "width" : 9.11} -->
+
 
 Notes:
 
@@ -58,7 +59,8 @@ Notes:
 
 ## Should I Accept the New Job Offer?
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Job-Offer.png" style="width:80%">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Job-Offer.png" style="width:80%"><!-- {"left" : 0.86, "top" : 1.31, "height" : 5.36, "width" : 8.53} -->
+
 
 Notes:
 
@@ -68,7 +70,9 @@ Notes:
 
 ## Example of Decision Tree
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Decision-Trees.png" style="width:70%">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Decision-Trees.png" style="width:70%"><!-- {"left" : 0.5, "top" : 1.04, "height" : 5.89, "width" : 9.25} -->
+
+
 
 Notes:
 
@@ -132,7 +136,8 @@ Medical decision tree use case: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC425
 ## Baseball Player Salary Prediction with Regression Tree
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Baseball-Player-Salary-Prediction-with-Regression-Tree-0.png" style="width:65%">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Baseball-Player-Salary-Prediction-with-Regression-Tree-0.png" style="width:65%"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
+
 
 Notes:
 
@@ -143,7 +148,8 @@ Image from "An introduction to Statistical Learning"  with thanks to authors
 
 ## Tree Data Model
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Storing-The-Tree-Model-0.png" style="width:80%">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Storing-The-Tree-Model-0.png" style="width:80%"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
+
 
 Notes:
 
@@ -161,8 +167,11 @@ If years < 4.5 Then Salary=5.11
 If years >= 4.5 and Hits < 117.5 Then Salary = 6.0
 If years >= 4.5 and Hits >= 117.5 Then Salary = 6.74
 ```
+<!-- {"left" : 0, "top" : 1.11, "height" : 1.45, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Data-Model-0.png" style="width:40%">
+
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Data-Model-0.png" style="width:40%"><!-- {"left" : 3.4, "top" : 2.91, "height" : 3.95, "width" : 3.45} -->
+
 
 Notes:
 
@@ -172,7 +181,8 @@ Notes:
 
 ## Tree Algorithm
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Algorithm-0.png" style="width:50%; position:absolute; ">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Algorithm-0.png" style="width:50%; position:absolute; "><!-- {"left" : 6.02, "top" : 2.2, "height" : 3.09, "width" : 3.96} -->
+
 
  * Tree partitions the input space
 
@@ -227,7 +237,8 @@ Redo pictures and numbers
 
      - The formula calculates RSS across all Regions ( 1 to J)
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:25%;position:absolute;top: 750px; right: 130px"/>
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:25%;position:absolute;top: 750px; right: 130px"/><!-- {"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
+
 
 
 Notes:
@@ -277,7 +288,8 @@ Notes:
  * `Greedy algorithm` for decision<br/>
   trees works in a similar way
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="width:45%; position:absolute;top:300px;right:10px"/>
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="width:45%; position:absolute;top:300px;right:10px"/><!-- {"left" : 6.61, "top" : 2.56, "height" : 2.38, "width" : 3.05} -->
+
 
 Notes:
 
@@ -301,7 +313,8 @@ Source: https://uploads7.wikiart.org/images/honore-daumier/chess-players.jpg!Hal
 
  * Best split is chosen each time / level
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:30%;"/><!-- {"left" : 3.26, "top" : 4.72, "height" : 1.69, "width" : 3.72} -->
+
 
 Notes:
 
@@ -326,7 +339,8 @@ Notes:
      - Does not consider all steps <br/>
      together
 
-<img src="../../assets/images/machine-learning/Decision-Trees-What-it-means-to-be-greedy--0.png" style="width:50%; position:absolute;top:300px;right:10px"/>
+<img src="../../assets/images/machine-learning/Decision-Trees-What-it-means-to-be-greedy--0.png" style="width:50%; position:absolute;top:300px;right:10px"/><!-- {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
+
 
 Notes:
 
@@ -341,7 +355,8 @@ Notes:
 
  * We will create a decision tree to identify the classes
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-0.png" style="width:60%">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-0.png" style="width:60%"><!-- {"left" : 1.74, "top" : 2.24, "height" : 4.52, "width" : 6.76} -->
+
 
 Notes:
 
@@ -355,7 +370,8 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
  * At depth=1
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-1.png" style="width:80%">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-1.png" style="width:80%"><!-- {"left" : 0.49, "top" : 2.32, "height" : 3.33, "width" : 9.27} -->
+
 
 Notes:
 
@@ -369,7 +385,8 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
  * At depth=2
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-2.png" style="width:80%">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-2.png" style="width:80%"><!-- {"left" : 0.64, "top" : 2.37, "height" : 3.23, "width" : 8.97} -->
+
 
 Notes:
 
@@ -385,7 +402,8 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
  * We can see the tree is over fitting
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-3.png" style="width:80%">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-3.png" style="width:80%"><!-- {"left" : 0.64, "top" : 2.26, "height" : 3.45, "width" : 8.97} -->
+
 
 Notes:
 
@@ -423,8 +441,6 @@ Notes:
 ### Min number of elements per node
 
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:40%; position:absolute;top:500px;right:10px"/>
-
  * Most common stopping criteria is Minimum instances per node
 
      - Say minimum per node = 5
@@ -439,6 +455,11 @@ Notes:
        (4 < minimum 5) (no more splitting it)
 
      - Node B2 is split farther into C1 and C2
+
+<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:40%; position:absolute;top:500px;right:10px"/><!-- {"left" : 6.3, "top" : 4.57, "height" : 2.16, "width" : 3.67} -->
+
+
+Notes:
 
 ---
 
@@ -506,8 +527,7 @@ Notes:
 
      - Combine nodes
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Pruning-0.png" style="width:60%; "/>
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Pruning-1.png" style="width:30%; ">
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Pruning-0.png" style="width:60%; "/><!-- {"left" : 0.49, "top" : 3.42, "height" : 3.07, "width" : 6.03} --><img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Pruning-1.png" style="width:30%; "><!-- {"left" : 6.84, "top" : 3.42, "height" : 3.07, "width" : 2.92} -->
 
 Notes:
 
@@ -557,8 +577,8 @@ Notes:
 
  *  **Goal: minimize G score**
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30% ;">
-<img src="../../assets/images/machine-Learning/Decision-Trees-Gini-Index-G--0.png" style="width:30%; position:absolute;top:500px;right:5px;">
+<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30% ;"><!-- {"left" : 0.73, "top" : 4.84, "height" : 1.4, "width" : 3.83} --><img src="../../assets/images/machine-Learning/Decision-Trees-Gini-Index-G--0.png" style="width:30%; position:absolute;top:500px;right:5px;"><!-- {"left" : 5.37, "top" : 3.9, "height" : 3.28, "width" : 4.43} -->
+
 
 
 Notes:
@@ -578,9 +598,7 @@ Notes:
 
  * Calculating Gini index as follows
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-Example-0.png" style="width:30%">
-
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-Example-1.png" style="width:80%">
+<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-Example-0.png" style="width:30%"><!-- {"left" : 3.22, "top" : 3.28, "height" : 0.94, "width" : 3.81} --><img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-Example-1.png" style="width:80%"><!-- {"left" : 1.44, "top" : 4.55, "height" : 2.15, "width" : 8.14} -->
 
 Notes:
 
@@ -646,9 +664,7 @@ Notes:
 
 ## About the `Prosper` Dataset
 
-
  * https://www.prosper.com/
- <img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-About-the-Prosper-Dataset-0.png" style="width:30%; float:right"/>
 
  * America's first peer-to-peer lending marketplace
 
@@ -660,6 +676,7 @@ Notes:
 
      - 113,937 loans with 81 variables
 
+ <img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-About-the-Prosper-Dataset-0.png" style="width:30%; float:right"/><!-- {"left" : 7.32, "top" : 1.12, "height" : 0.63, "width" : 2.68} -->
 
 
 Notes:
@@ -703,7 +720,8 @@ Notes:
 
      -  **DT-1: college-admission**
 
-     -  **DT-2 : prosper-loans** <img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Lab-Decision-Trees-0.png" style="width:30%;float:right">
+     -  **DT-2 : prosper-loans** <img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Lab-Decision-Trees-0.png" style="width:30%;float:right"><!-- {"left" : 3.46, "top" : 3.05, "height" : 1.88, "width" : 3.33} -->
+
 
 Notes:
 
@@ -718,7 +736,8 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Alogorithm-Summary.png" style="width:80%">
+<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Alogorithm-Summary.png" style="width:80%"><!-- {"left" : 0.87, "top" : 1.17, "height" : 5.63, "width" : 8.52} -->
+
 
 Notes:
 
@@ -801,7 +820,8 @@ Notes:
 
 ## Bias Variance Trade Off
 
-<img src="../../assets/images/machine-Learning/Bias-Variance.png" style="width:70%">
+<img src="../../assets/images/machine-Learning/Bias-Variance.png" style="width:70%"><!-- {"left" : 1.58, "top" : 1.32, "height" : 5.34, "width" : 7.09} -->
+
 
 Notes:
 
@@ -818,7 +838,8 @@ Notes:
 
  * Neither of them will work well in the real world
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Each-DT-Exhibits-High-Variance-and-Overfits-0.png" style="width:50%">
+<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Each-DT-Exhibits-High-Variance-and-Overfits-0.png" style="width:50%"><!-- {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
+
 
 Notes:
 
@@ -833,7 +854,8 @@ Notes:
 
      - It has less capacity to reflect complex data
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Bias-Variance-Tradeoff-0.png" style="width:50%">
+<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Bias-Variance-Tradeoff-0.png" style="width:50%"><!-- {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
+
 
 Notes:
 
@@ -881,7 +903,8 @@ Notes:
 
      - And aggregate their predictions
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Random-Forests-Idea-0.png" style="width:60%">
+<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Random-Forests-Idea-0.png" style="width:60%"><!-- {"left" : 1.02, "top" : 5.22, "height" : 1.67, "width" : 8.21} -->
+
 
 Notes:
 
@@ -900,7 +923,8 @@ Notes:
 
  * Final result is  **aggregated**  ( **bagging** )
 
-<img src="../../assets/images/machine-Learning//Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%; position:absolute; top:500px; right:5px;">
+<img src="../../assets/images/machine-Learning//Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%; position:absolute; top:500px; right:5px;"><!-- {"left" : 2.95, "top" : 3.12, "height" : 3.72, "width" : 4.36} -->
+
 
 Notes:
 
@@ -971,7 +995,8 @@ Notes:
  * Their predictions are<br/>
   aggregated for final result
 
-<img src="../../assets/images/machine-Learning//Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%; position:absolute; top:280px; right:10px">
+<img src="../../assets/images/machine-Learning//Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%; position:absolute; top:280px; right:10px"><!-- {"left" : 4.17, "top" : 2.9, "height" : 4.22, "width" : 5.75} -->
+
 
 Notes:
 
@@ -1022,7 +1047,8 @@ Notes:
 
  * Final Radom Forest overfits less than each individual tree
 
-<img src="../../assets/images/machine-Learning//3rd-party/Decision-Trees-Random-Forest-Example-0.png" style="width:70%">
+<img src="../../assets/images/machine-Learning//3rd-party/Decision-Trees-Random-Forest-Example-0.png" style="width:70%"><!-- {"left" : 1.02, "top" : 2.6, "height" : 4.21, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1076,11 +1102,11 @@ Notes:
 
  *  **Instructions** Follow  appropriate Python, R, or Spark instructions
 
-     - RF1 : Prosper loan data (classification)
+     - RF1: Prosper loan data (classification)
 
-     - RF2 : Election contribution data (classification)
+     - RF2: Election contribution data (classification)
 
-     - RF3 : Election contribution data (regression)
+     - RF3: Election contribution data (regression)
 
 Notes:
 
@@ -1104,7 +1130,8 @@ Notes:
 
 ## Should I Accept the New Job Offer?
 
-<img src="../../assets/images/machine-Learning//3rd-party/Decision-Trees-Job-Offer.png" style="width:70%">
+<img src="../../assets/images/machine-Learning//3rd-party/Decision-Trees-Job-Offer.png" style="width:70%"><!-- {"left" : 1.02, "top" : 1.41, "height" : 5.15, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1114,6 +1141,8 @@ Notes:
 
 ## Example of a Decision Tree
 
-<img src="../../assets/images/machine-Learning//3rd-party/Decision-Trees-Example-Decision-Trees.png" style="width:80%">
+<img src="../../assets/images/machine-Learning//3rd-party/Decision-Trees-Example-Decision-Trees.png" style="width:80%"><!-- {"left" : 1.02, "top" : 1.37, "height" : 5.23, "width" : 8.21} -->
+
+
 
 Notes:

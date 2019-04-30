@@ -4,7 +4,8 @@
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/Regressions-Generic-01.png" alt="Regressions-Generic-01.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/Regressions-Generic-01.png" alt="Regressions-Generic-01.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
 
 
 Notes:
@@ -79,7 +80,8 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/Regressions-Generic-02.png" alt="Regressions-Generic-02.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/Regressions-Generic-02.png" alt="Regressions-Generic-02.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
 
 Notes:
 
@@ -95,11 +97,12 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 ## Problem: Tip Calculation
 
 
- * Now our tip data include total bill amount too !
+ * Now our tip data include total bill amount too!
 
  * Do you see any correlation?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 4.23, "width" : 8.21} -->
+
 
 Notes:
 
@@ -117,7 +120,8 @@ Notes:
 
  * This is **linear regression**!
 
-<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png" alt="Session-Regressions-in-Spark-Tips-vs-Bill-0.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png" alt="Session-Regressions-in-Spark-Tips-vs-Bill-0.png" style="width:50%;"/><!-- {"left" : 2.25, "top" : 2.54, "height" : 4.34, "width" : 5.74} -->
+
 
 
 Notes:
@@ -136,10 +140,9 @@ Notes:
  * 2 - slope of line
 
  * 4 - intercept
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Graph-Review--0.png" alt="Session-Regressions-Graph-Review--0.png" style="width:50%;float:right"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Graph-Review--0.png" alt="Session-Regressions-Graph-Review--0.png" style="width:50%;float:right"/><!-- {"left" : 6.8, "top" : 1.01, "height" : 3.1, "width" : 3.24} -->
 
 <br/>
-
 
 |   |                                   |
 |---|-----------------------------------|
@@ -147,6 +150,9 @@ Notes:
 | X | Independent variable              |
 | a | Slope of line                     |
 | b | Intercept (line meets y-axis)     |
+
+<!-- {"left" : 0.69, "top" : 4.24, "height" : 2.5, "width" : 5.43, "columnwidth" : [1.13, 4.3]} -->
+
 
 Notes:
 
@@ -183,7 +189,9 @@ Notes:
 
  * If we figure out 'a' and 'b', then we can estimate tip for any amount
 
-<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png" alt="Session-Regressions-in-Spark-Tips-vs-Bill-0.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png" alt="Session-Regressions-in-Spark-Tips-vs-Bill-0.png" style="width:50%;"/><!-- {"left" : 2.35, "top" : 3.07, "height" : 4.2, "width" : 5.56} -->
+
+
 
 
 Notes:
@@ -207,7 +215,8 @@ Notes:
 
  Seems like a reasonably good fit
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" alt="Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" alt="Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:40%;"/><!-- {"left" : 5.28, "top" : 3.91, "height" : 3.24, "width" : 4.7} -->
+
 
 
 Notes:
@@ -230,7 +239,9 @@ Notes:
 
     = `$ 22.88`
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Using-Linear-Regression-Model.png" alt="Session-Regressions-Using-Linear-Regression-Model.png" style="position:absolute;top:30%;right:5px"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Using-Linear-Regression-Model.png" alt="Session-Regressions-Using-Linear-Regression-Model.png" style="position:absolute;top:30%;right:5px"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
+
+
 
 
 Notes:
@@ -250,7 +261,8 @@ Session-Regressions-Using-Linear-Regression-Model.png
      - Yi = actual value
      - Ŷi (pronounced Y-hat) = predicted value
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Our-Model-Accuracy-0.png" alt="Session-Regressions-Evaluating-Our-Model-Accuracy-0.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Our-Model-Accuracy-0.png" alt="Session-Regressions-Evaluating-Our-Model-Accuracy-0.png" style="width:50%;"/><!-- {"left" : 2.12, "top" : 3.91, "height" : 1.6, "width" : 6.01} -->
+
 
 
 Notes:
@@ -284,8 +296,8 @@ Notes:
 
  * Sum of all residuals  =  **ZERO**
 
-<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:60%;float:left"/>
-<img src="../../assets/images/machine-learning/Regressions-Generic-03.png" style="width:35%; position:absolute;top:30%;right:5px"/>
+<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:60%;float:left"/><!-- {"left" : 1, "top" : 3.51, "height" : 3.03, "width" : 6.17} --><img src="../../assets/images/machine-learning/Regressions-Generic-03.png" style="width:35%; position:absolute;top:30%;right:5px"/><!-- {"left" : 7.5, "top" : 3.51, "height" : 3.03, "width" : 2.17} -->
+
 
 Notes:
 
@@ -306,9 +318,11 @@ Notes:
 
      - Minimize errors
 
-<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:70%;float:left"/>
+<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:70%;float:left"/><!-- {"left" : 0.51, "top" : 3.69, "height" : 3.09, "width" : 6.28} -->
 
-<img src="../../assets/images/machine-learning/Regressions-Generic-04.png" style="width:35%; position:absolute;top:20%;right:5px"/>
+
+<img src="../../assets/images/machine-learning/Regressions-Generic-04.png" style="width:35%; position:absolute;top:20%;right:5px"/><!-- {"left" : 6.97, "top" : 1.83, "height" : 2.55, "width" : 2.92} -->
+
 
 
 Notes:
@@ -334,7 +348,7 @@ Notes:
 
      - If model-A yields  RSS = 70
 
-     - And model-B yields RSS=50
+     - And model-B yields RSS = 50
 
      - Model-B might be better fit
 
@@ -343,7 +357,9 @@ Notes:
      - Y<sub>i</sub> : actual value
      - Ŷ<sub>i</sub> : predicted value
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Linear-Regression-Models-1.png" style="width:40%;position:absolute;bottom:50px;right:5px"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Linear-Regression-Models-1.png" style="width:40%;position:absolute;bottom:50px;right:5px"/><!-- {"left" : 6.08, "top" : 4.92, "height" : 1.31, "width" : 3.74} -->
+
+
 
 Notes:
 
@@ -368,6 +384,8 @@ https://en.wikipedia.org/wiki/Residual_sum_of_squares
 | Fitted values | The estimates  obtained from the regression line.                              | -predicted values        |
 | Residuals     | The difference between the observed values and the fitted values.              | - errors                 |
 | Least squares | The method of fitting a regression by minimizing the sum of squared residuals. | - ordinary least squares |
+<!-- {"left" : 0.25, "top" : 3.83, "height" : 3.44, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
+
 
 Notes:
 
@@ -394,7 +412,9 @@ Notes:
   residual on $100<br/>
    bill ?
 
-<img src="../../assets/images/machine-learning/Regressions-Generic-05.png" style="width:50%; position:absolute;top:25%;right:5px"/>
+<img src="../../assets/images/machine-learning/Regressions-Generic-05.png" style="width:50%; position:absolute;top:25%;right:5px"/><!-- {"left" : 4.45, "top" : 1.31, "height" : 4.89, "width" : 5.44} -->
+
+
 
 
 Notes:
@@ -431,7 +451,8 @@ Notes:
 
  * As it gets closer to convergence the 'steps' gets smaller
 
-<img src="../../assets/images/machine-learning/gradient-descent-1-skitch.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/gradient-descent-1-skitch.png" style="width:60%;"/><!-- {"left" : 2.3, "top" : 1.48, "height" : 5.64, "width" : 5.66} -->
+
 
 
 Notes:
@@ -445,7 +466,8 @@ Notes:
 
  * Another example in 2D data
 
-<img src="../../assets/images/machine-learning/gradient-descent-3.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/gradient-descent-3.png" style="width:80%"/><!-- {"left" : 0.57, "top" : 1.4, "height" : 5.18, "width" : 9.11} -->
+
 
 Notes:
 
@@ -458,7 +480,8 @@ Image credit to KDNuggets : https://www.kdnuggets.com/2017/04/simple-understand-
 
   * [Demo 1](http://vis.supstat.com/2013/03/gradient-descent-algorithm-with-r/)
 
-<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" style="width:50%"/>
+<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" style="width:50%"/><!-- {"left" : 2.3, "top" : 1.19, "height" : 5.6, "width" : 5.65} -->
+
 
 
 Notes:
@@ -510,8 +533,9 @@ Notes:
 
      -  **RMSE**  - Root Mean Square Error
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Linear-Regression-Models-0.png" style="width:45%"/>&nbsp;&nbsp;&nbsp;
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Linear-Regression-Models-1.png" style="width:45%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Linear-Regression-Models-0.png" style="width:45%"/>&nbsp;&nbsp;&nbsp;<!-- {"left" : 3.38, "top" : 3.14, "height" : 1.22, "width" : 3.48} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Linear-Regression-Models-1.png" style="width:45%"/><!-- {"left" : 2.85, "top" : 5.25, "height" : 0.99, "width" : 4.54} -->
+
 
 
 ---
@@ -579,7 +603,8 @@ Notes:
 
  *  **r =**  **0.9522154 -** pretty strong correlation
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" style="width:80%"/><!-- {"left" : 1.55, "top" : 3.08, "height" : 3.19, "width" : 7.16} -->
+
 
 Notes:
 
@@ -623,7 +648,8 @@ https://en.wikipedia.org/wiki/Coefficient_of_determination
 
 ## Preparing Data for Linear Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Preparing-Data-for-Linear-Regression-0.png" style="width:60%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Preparing-Data-for-Linear-Regression-0.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 1.41, "height" : 5.14, "width" : 8.21} -->
+
 
 
 
@@ -690,7 +716,8 @@ Notes:
 
 ## Multiple Linear Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Multiple-Linear-Regression-0.png" style="width:90%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Multiple-Linear-Regression-0.png" style="width:90%"/><!-- {"left" : 2.01, "top" : 1.15, "height" : 0.43, "width" : 6.24} -->
+
 
 
  * Outcome depends on multiple variables
@@ -737,6 +764,8 @@ Multiple R-squared:  0.4835,	Adjusted R-squared:  0.4834
 F-statistic:  6332 on 4 and 27058 DF,  p-value: < 0.00000000000000022
 
 ```
+<!-- {"left" : 0, "top" : 1.19, "height" : 3.69, "width" : 10.25} -->
+
 
 Notes:
 
@@ -768,6 +797,8 @@ SqFtLot           -0.07457      0.05472  -1.363                0.173
 
 ...
 ```
+<!-- {"left" : 0, "top" : 1.19, "height" : 2.55, "width" : 10.25} -->
+
 
  * Adding one extra 'sqftTotLiving' space increases the house price by $277.85
 
@@ -803,6 +834,7 @@ SqFtLot           -0.07457      0.05472  -1.363                0.173
 
 ...
 ```
+<!-- {"left" : 0, "top" : 1.19, "height" : 2.55, "width" : 10.25} -->
 
   * Question for class:
      - Interpret parameters for 'Bedrooms'
@@ -846,7 +878,8 @@ Formula images: Creative Commons License : Wikimedia
  * Measures how well the model fits the data
 <br/><br/><br/>
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Coefficient-of-Determination-R2--0.png" style="width:40%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Coefficient-of-Determination-R2--0.png" style="width:40%"/><!-- {"left" : 4.08, "top" : 3.36, "height" : 0.77, "width" : 2.09} -->
+
 
 Notes:
 
@@ -963,7 +996,8 @@ Notes:
 
 ## Deciding Important Variables
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Deciding-Important-Variables-0.png" style="width:50%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Deciding-Important-Variables-0.png" style="width:50%"/><!-- {"left" : 1.92, "top" : 1.07, "height" : 0.44, "width" : 6.42} -->
+
 
 
  * In Multiple Linear Regressions many predictors determine the value of response
@@ -1160,7 +1194,8 @@ Notes:
 
  * In the equation below, assume b<sub>1</sub>=20 and b<sub>2</sub>=2000Which variable X<sub>1</sub> or X<sub>2</sub> will have a large impact on outcome?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Regularization-0.png" style="width:60%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Regularization-0.png" style="width:60%"/><!-- {"left" : 1.21, "top" : 6.19, "height" : 0.97, "width" : 7.83} -->
+
 
 
 Notes:
@@ -1176,9 +1211,9 @@ Answer X2.. Because it gets multiplied by 2000
 
      - Lambda=0 : no regularization
 
-     - Lambda = small (0.001) : very little regularization
+     - Lambda = small (0.001): very little regularization
 
-     - Lambda = large (10) : very strong regularization
+     - Lambda = large (10): very strong regularization
 
 * Optimal Lambda (ƛ) value depends on particular dataset, and can be calculated using cross validation
 
@@ -1207,7 +1242,8 @@ Notes:
 
      - Called  **variable/feature selection**
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Ridge-vs-Lasso-0.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Ridge-vs-Lasso-0.png" style="width:80%"/><!-- {"left" : 1.3, "top" : 5.87, "height" : 1.13, "width" : 7.65} -->
+
 
 
 Notes:
@@ -1315,7 +1351,8 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/Regressions-Generic-06.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/Regressions-Generic-06.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
 
 
 Notes:
@@ -1325,7 +1362,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
 ---
 
-## Problem : Applying for Credit Card
+## Problem: Applying for Credit Card
 
 
  * In US most adults have a 'credit score' (a.k.a. FICO score)
@@ -1334,7 +1371,8 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
  * Credit score is a big determining factor when applying for loans / mortgages / credit cards
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Problem-Applying-for-Credit-Card-0.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Problem-Applying-for-Credit-Card-0.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3.28, "height" : 3.66, "width" : 8.21} -->
+
 
 
 Notes:
@@ -1377,7 +1415,8 @@ Notes:
 
 ## Plotting Credit Approval Data
 
-<img src="../../assets/images/machine-learning/3rd-party/Regressions-Generic-07.png" style="width:60%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Regressions-Generic-07.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 1.28, "height" : 5.42, "width" : 8.21} -->
+
 
 
 Notes:
@@ -1391,11 +1430,13 @@ Notes:
 
  * X axis = credit score
 
- * Y axis = 0 (declined)  ,  1 (approved)  ,  nothing in between
+ * Y axis = 0 (declined), 1 (approved), nothing in between
 
- * There is no linear fit line !
+ * There is no linear fit line!
 
-<img src="../../assets/images/machine-learning/Session-Regressions-Plotting-Credit-Approval-Data-0.png" style="width:50%"/>
+<img src="../../assets/images/machine-learning/Session-Regressions-Plotting-Credit-Approval-Data-0.png" style="width:50%"/><!-- {"left" : 2.11, "top" : 2.49, "height" : 4.61, "width" : 6.03} -->
+
+
 
 
 
@@ -1414,7 +1455,8 @@ Notes:
 
  * Logistic Regression produces numbers that are probabilities
 
-<img src="../../assets/images/machine-learning/Session-Regressions-Linear-vs-Logistic-0.png" style="width:60%"/>
+<img src="../../assets/images/machine-learning/Session-Regressions-Linear-vs-Logistic-0.png" style="width:60%"/><!-- {"left" : 2.02, "top" : 2.41, "height" : 4.2, "width" : 6.22} -->
+
 
 Notes:
 
@@ -1442,7 +1484,8 @@ Notes:
  * Invented by Sir David Cox<br/>
    (author of 364 books and papers!)
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Logistic-Regression-0.png" style="width:20%;position:absolute;top:50%;right:5px"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Logistic-Regression-0.png" style="width:20%;position:absolute;top:50%;right:5px"/><!-- {"left" : 7.7, "top" : 4.24, "height" : 3.03, "width" : 2.37} -->
+
 
 
 Notes:
@@ -1488,9 +1531,11 @@ Notes:
 <br/>
 <br/>
 <br/>
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Logistic-Regression-0.png" style="width:70%;float:left"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Logistic-Regression-0.png" style="width:70%;float:left"/><!-- {"left" : 0.29, "top" : 4.05, "height" : 2.99, "width" : 7.05} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Logistic-Regression-1.png" style="width:50%;position:absolute;top:20%;right:5px"/>
+
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Logistic-Regression-1.png" style="width:50%;position:absolute;top:20%;right:5px"/><!-- {"left" : 4.31, "top" : 0.95, "height" : 3.85, "width" : 5.77} -->
+
 
 Notes:
 
@@ -1514,7 +1559,8 @@ Predicts 84% chance of getting the loan approved.
 So this mapped to YES
 
 ```
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Applying-Logistic-Regression-To-Credit-Card-Application--0.png" style="width:50%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Applying-Logistic-Regression-To-Credit-Card-Application--0.png" style="width:50%"/><!-- {"left" : 2.49, "top" : 3.13, "height" : 3.47, "width" : 5.26} -->
+
 
 Notes:
 
@@ -1531,7 +1577,8 @@ Notes:
 
      - This is called 'multiple logistic regression'
 
-<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:70%"/><!-- {"left" : 0.77, "top" : 3.36, "height" : 3.63, "width" : 8.71} -->
+
 
 
 
@@ -1552,7 +1599,9 @@ Notes:
 
  * Log(odds) = ln (y / (1-y)) = β<sub>0</sub> + β<sub>1</sub>* X<sub>1</sub> + β<sub>2</sub>* X<sub>2</sub> + …. + β<sub>n</sub>* X<sub>n</sub> <br/><br/>
 
- * Log (odds) or log-odds ration = <img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Multiple-Logistic-Regression-0.png" style="width:10%;"/>
+ * Log (odds) or log-odds ration = <img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Multiple-Logistic-Regression-0.png" style="width:10%;"/><!-- {"left" : 6.86, "top" : 3.37, "height" : 1.74, "width" : 2.99} -->
+
+
 
  * Where p is the probably the event will occur
 
@@ -1570,7 +1619,8 @@ Notes:
 
  * We are going to look college admission data
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Logistic-Regression-Example-0.png" style=""/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Logistic-Regression-Example-0.png" style=""/><!-- {"left" : 1.02, "top" : 1.57, "height" : 5.02, "width" : 8.21} -->
+
 
 
 Notes:
@@ -1609,7 +1659,8 @@ Notes:
 
  * ROC / AUC = 0.874
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Measuring-Accuracy-of-Logistic-Model-0.png" style="width:60%;position:absolute;bottom:5px;right:5px"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Measuring-Accuracy-of-Logistic-Model-0.png" style="width:60%;position:absolute;bottom:5px;right:5px"/><!-- {"left" : 3.71, "top" : 4.55, "height" : 2.54, "width" : 6.31} -->
+
 
 
 Notes:
@@ -1710,21 +1761,21 @@ Notes:
 ## Lab: Logistic Regression
 
 
- *  **Overview** :
+ *  **Overview**:
 
-    Practice Logistic Regression
+     - Practice Logistic Regression
 
- *  **Approximate Time** :
+ *  **Approximate Time**:
 
-    30 mins
+     - 30 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
-    Follow  appropriate Python / R / Spark instructions
+    Follow appropriate Python / R / Spark instructions
 
-     -  **LOGIT-1 : Credit card approval (single variable)**
+     -  **LOGIT-1: Credit card approval (single variable)**
 
-     -  **LOGIT-2 : College Admission (multiple variables)**
+     -  **LOGIT-2: College Admission (multiple variables)**
 
 Notes:
 

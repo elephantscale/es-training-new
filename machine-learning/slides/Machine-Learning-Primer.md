@@ -21,7 +21,8 @@ Notes:
 
 ## Machine Learning!
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Primer-Machine-Learning--0.png" alt="Machine-Learning-Primer-Machine-Learning--0.png" style="width:60%;">
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Primer-Machine-Learning--0.png" alt="Machine-Learning-Primer-Machine-Learning--0.png" style="width:60%;"><!-- {"left" : 1.02, "top" : 0.91, "height" : 6.16, "width" : 8.21} -->
+
 
 Notes:
 
@@ -49,7 +50,7 @@ Image copy right to owners
 
      - Let it predict the next reaction
 
-<img src="../../assets/images/machine-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%; position:absolute; top:55%; right:0%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%; position:absolute; top:55%; right:0%;"/><!-- {"left" : 7.35, "top" : 3.53, "height" : 3.67, "width" : 2.6} -->
 
 Notes:
 
@@ -133,6 +134,7 @@ else if ( email.text.contains ("free loans", "cheap degrees"))
 }
 
 ```
+<!-- {"left" : 0, "top" : 2.53, "height" : 2.45, "width" : 10.25} -->
 
 Notes:
 
@@ -150,7 +152,8 @@ Notes:
  * Then algorithm predicts spam/no-spam on new email
 
 
-<img src="../../assets/images/machine-learning/AI-Approach.png" alt="AI-Approach.png" style="width:60%">
+<img src="../../assets/images/machine-learning/AI-Approach.png" alt="AI-Approach.png" style="width:60%"><!-- {"left" : 0.88, "top" : 2.74, "height" : 4.24, "width" : 8.48} -->
+
 
 
 Notes:
@@ -198,9 +201,11 @@ Notes:
 
  * AI based system improved the accuracy many times over
 
- * [Link to case study] (https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
+ * [Link to case study](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
 
-<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="width:40%;">
+<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="width:40%;"><!-- {"left" : 3.38, "top" : 3.52, "height" : 3.72, "width" : 6.12} -->
+
+
 
 
 Notes:
@@ -220,7 +225,7 @@ Notes:
 
  * Self driving cars
 
-<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%">
+<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%">&nbsp;&nbsp;&nbsp;&nbsp;<!-- {"left" : 0.35, "top" : 2.92, "height" : 3.12, "width" : 4.68} --><img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%"><!-- {"left" : 5.23, "top" : 2.9, "height" : 3.12, "width" : 4.67} -->
 
 Notes:
 
@@ -233,7 +238,8 @@ Image credit : WikiMedia : (Creative Commons) : https://commons.wikimedia.org/wi
 
 ## AI Success Story : Image Recognition: Cats & Dogs
 
-<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="width:35%">
+<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="width:35%"><!-- {"left" : 2.89, "top" : 1.03, "height" : 5.9, "width" : 4.47} -->
+
 
 Notes:
 
@@ -262,7 +268,8 @@ Notes:
 
  * [https://www.kaggle.com/c/dogs-vs-cats](https://www.kaggle.com/c/dogs-vs-cats )
 
-<img src="../../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" style="width:50%">
+<img src="../../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" style="width:50%"><!-- {"left" : 0.64, "top" : 3.83, "height" : 2.79, "width" : 8.96} -->
+
 
 
 
@@ -336,7 +343,9 @@ https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
      - Running in parallel
 
 
-<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" style="width:50%; margin-top:-100px">
+<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" style="width:50%; margin-top:-100px"><!-- {"left" : 4.82, "top" : 3.61, "height" : 3.51, "width" : 5.11} -->
+
+
 
 Notes:
 
@@ -355,7 +364,9 @@ Notes:
 
  * Intel Math Kernel Library - highly optimized, threaded, and vectorized math functions that maximize performance on each processor family
 
-<img src="../../assets/images/machine-learning/3rd-party/intel-cpu.png" style="width:60%">
+<img src="../../assets/images/machine-learning/3rd-party/intel-cpu.png" style="width:60%"><!-- {"left" : 1.54, "top" : 4.13, "height" : 2.91, "width" : 7.17} -->
+
+
 
 
 Notes:
@@ -389,7 +400,8 @@ Notes:
 
 ## Google TPU System in Data Center
 
-<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:60%">
+<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:60%"><!-- {"left" : 0.26, "top" : 1.67, "height" : 4.63, "width" : 9.74} -->
+
 
 
 Notes:
@@ -417,7 +429,9 @@ Notes:
 
      - Human bias might lead to inconsistent or unfair approval process
 
-<img src="../../assets/images/machine-learning/Rule-Based-Systems-02.png" style="width:60%; position:absolute; left:20%">
+<img src="../../assets/images/machine-learning/Rule-Based-Systems-02.png" style="width:60%; position:absolute; left:20%"><!-- {"left" : 1.02, "top" : 4.61, "height" : 2.43, "width" : 8.21} -->
+
+
 
 
 Notes:
@@ -434,7 +448,8 @@ Notes:
 
  * ML can process applications very quickly and only send "flagged" applications for manual review
 
-<img src="../../assets/images/machine-learning/Rule-Based-Systems.png" style="width:70%">
+<img src="../../assets/images/machine-learning/Rule-Based-Systems.png" style="width:70%"><!-- {"left" : 0.75, "top" : 4.19, "height" : 2.38, "width" : 8.75} -->
+
 
 Notes:
 
@@ -507,7 +522,8 @@ Notes:
   Using Neural Networks to <br/>
   solve some hard problems
 
-<img src="../../assets/images/machine-learning/AI-ML-DL.png" style="width:35%; position:absolute; top:30%" />
+<img src="../../assets/images/machine-learning/AI-ML-DL.png" style="width:35%; position:absolute; top:30%" /><!-- {"left" : 5.27, "top" : 1.81, "height" : 4.35, "width" : 4.35} -->
+
 
 
 Notes:
@@ -549,7 +565,8 @@ Notes:
 ## Deep Neural Network – Face Recognition
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" style="width:35%">
+<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" style="width:35%"><!-- {"left" : 3.02, "top" : 1.2, "height" : 5.58, "width" : 4.22} -->
+
 
 Notes:
 
@@ -583,7 +600,9 @@ Notes:
 ## Machine Learning vs. Deep Learning
 
 
-<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning_skitch.png" style="width:70%">
+<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning_skitch.png" style="width:70%"><!-- {"left" : 1.41, "top" : 1.13, "height" : 5.71, "width" : 7.43} -->
+
+
 
 Notes:
 
@@ -593,7 +612,8 @@ Notes:
 
 ## 1980’s and 1990’s
 
-<img src="../../assets/images/machine-learning/1980-1990-01.png" style="width:80%">
+<img src="../../assets/images/machine-learning/1980-1990-01.png" style="width:80%"><!-- {"left" : 0.33, "top" : 1.29, "height" : 5.52, "width" : 9.59} -->
+
 
 
 Notes:
@@ -605,7 +625,8 @@ Source: Jeff Dean
 
 ## 1990+
 
-<img src="../../assets/images/machine-learning/1980-1990-02.png" style="width:80%">
+<img src="../../assets/images/machine-learning/1980-1990-02.png" style="width:80%"><!-- {"left" : 0.39, "top" : 1.26, "height" : 5.46, "width" : 9.48} -->
+
 
 Notes:
 
@@ -616,7 +637,8 @@ Source: Jeff Dean
 
 ## Now
 
-<img src="../../assets/images/machine-learning/1980-1990-03.png" style="width:80%">
+<img src="../../assets/images/machine-learning/1980-1990-03.png" style="width:80%"><!-- {"left" : 0.27, "top" : 1.16, "height" : 5.59, "width" : 9.71} -->
+
 
 Notes:
 
@@ -664,7 +686,8 @@ Notes:
  * Now Big Data tools make it possible to run machine learning algorithms at massive scale–distributed across a cluster
 
 
-<img src="../../assets/images/machine-learning/DL-cluster.png" style="width:70%">
+<img src="../../assets/images/machine-learning/DL-cluster.png" style="width:70%"><!-- {"left" : 1.02, "top" : 3.51, "height" : 3.49, "width" : 8.21} -->
+
 
 Notes:
 
@@ -702,7 +725,8 @@ Notes:
 
      - Language support: Scala, Java, Python, R
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Primer-Tools-for-Scalable-Machine-Learning-0.png" style="width:20%; position:absolute; top:20%; right:5%">
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Primer-Tools-for-Scalable-Machine-Learning-0.png" style="width:20%; position:absolute; top:20%; right:5%"><!-- {"left" : 7.42, "top" : 2.92, "height" : 2.13, "width" : 2.36} -->
+
 
  *  **[Amazon Machine Learning](https://aws.amazon.com/machine-learning/)**
 
@@ -748,7 +772,8 @@ Notes:
 
      - Vendor: 0xData
 
-<img src="../../assets/images/machine-learning/3rd-party/h2o-ai.png" style="width:20%; position:absolute; top:50%; right:10%">
+<img src="../../assets/images/machine-learning/3rd-party/h2o-ai.png" style="width:20%; position:absolute; top:50%; right:10%"><!-- {"left" : 7.79, "top" : 1.12, "height" : 2.1, "width" : 2.1} -->
+
 
 Notes:
 
@@ -762,7 +787,7 @@ Notes:
 ## Tools for Scalable Deep Learning
 
 
- *  **`TensorFlow`**
+ *  **TensorFlow**
 
      - Based on “data flow graphs”
 
@@ -772,9 +797,10 @@ Notes:
 
      - Run time: CPU, GPU
 
-<img src="../../assets/images/machine-learning/3rd-party/tensorflow-logo.png" style="width:30%; position:absolute; top:15%; right:10%">
+<img src="../../assets/images/machine-learning/3rd-party/tensorflow-logo.png" style="width:30%; position:absolute; top:15%; right:10%"><!-- {"left" : 7.22, "top" : 1.11, "height" : 1.73, "width" : 2.03} -->
 
- *  **`Intel BigDL`**  
+
+ *  **Intel BigDL**  
 
      - Deep learning library
 
@@ -782,7 +808,8 @@ Notes:
 
      - Language support: Python, Scala
 
-<img src="../../assets/images/machine-learning/3rd-party/bigdl-logo.png" style="width:30%; position:absolute; top:70%; right:10%">
+<img src="../../assets/images/machine-learning/3rd-party/bigdl-logo.png" style="width:30%; position:absolute; top:70%; right:10%"><!-- {"left" : 6.92, "top" : 4.11, "height" : 1.2, "width" : 2.64} -->
+
 
 Notes:
 
@@ -881,7 +908,7 @@ Notes:
 
  * Then predicts on 'unseen' data
 
-<img src="../../assets/images/machine-learning/3rd-party/Supervised.png" style="width:40%; position:absolute; top:210px; right:10%" />
+<img src="../../assets/images/machine-learning/3rd-party/Supervised.png" style="width:40%; position:absolute; top:210px; right:10%" /><!-- {"left" : 6.31, "top" : 1.06, "height" : 2.41, "width" : 3.63} -->
 
 <br/>
 <br/>
@@ -902,26 +929,25 @@ Image credit (Creative Commons) : Pexels.com
 
 ---
 
-## Machine Learning Types : Un Supervised
+## Machine Learning Types: Un Supervised
 
 
  * No training needed
 
  * Algorithm tries to find patterns in data
 
-<img src="../../assets/images/machine-learning/3rd-party/Un-Supervised.png" style="width:30%; position:absolute; top:33%; right:10%" />
+<img src="../../assets/images/machine-learning/3rd-party/Un-Supervised.png" style="width:30%; position:absolute; top:33%; right:10%" /><!-- {"left" : 6.46, "top" : 0.94, "height" : 2.15, "width" : 3.81} -->
 
 <br/>
 <br/>
 <br/>
-<br/>
-
 
 | Algorithms               	| Description                             	| Applications                                                 	|
 |--------------------------	|-----------------------------------------	|--------------------------------------------------------------	|
 | Clustering               	| Find naturally present patterns in data 	| -Identify news stories (sports / business) <br/>-Gnome clustering 	|
 | Association              	| Find similar patterns                   	| -people who buy A also buy B                                 	|
 | Dimensionality Reduction 	| Reduces number of features              	| -Reducing 1000s of variables into manageable size            	|
+<!-- {"left" : 0.25, "top" : 4.19, "height" : 3.15, "width" : 9.75} -->
 
 Notes:
 
@@ -937,7 +963,8 @@ Notes:
 
  * But by grouping data points together, the algorithm can 'infer' information, even when labels are missing
 
-<img src="../../assets/images/machine-learning/Semi-Supervised.png" style="width:55%">
+<img src="../../assets/images/machine-learning/Semi-Supervised.png" style="width:55%"><!-- {"left" : 1.95, "top" : 2.48, "height" : 4.68, "width" : 6.35} -->
+
 
 Notes:
 
@@ -960,7 +987,7 @@ Notes:
 
  * Predict no new data (unseen)
 
-<img src="../../assets/images/machine-learning/3rd-party/Regression-01.png" style="width:60%">
+<img src="../../assets/images/machine-learning/3rd-party/Regression-01.png" style="width:60%"><!-- {"left" : 1.02, "top" : 3.24, "height" : 3.44, "width" : 8.21} -->
 
 Notes:
 
@@ -984,7 +1011,8 @@ Notes:
 
  * Tweak the dials to increase or decrease the proportion
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="width:60%">
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="width:60%"><!-- {"left" : 1.71, "top" : 4.26, "height" : 3, "width" : 6.83} -->
+
 
 Notes:
 
@@ -1013,7 +1041,8 @@ Notes:
 
  * Also predicted classes are " **discrete** " or " **qualitative** "
 
-<img src="../../assets/images/machine-learning/Classification-01.png" style="width:40%">
+<img src="../../assets/images/machine-learning/Classification-01.png" style="width:40%"><!-- {"left" : 2.19, "top" : 4.86, "height" : 2.15, "width" : 5.88} -->
+
 
 Notes:
 
@@ -1097,7 +1126,8 @@ https://www.mathworks.com/discovery/unsupervised-learning.html
 
      - And the need for further investigation
 
-<img src="../../assets/images/machine-learning/Clustering-Use-Cases.png" style="width:40%; position:absolute; top:40%; right:0%">
+<img src="../../assets/images/machine-learning/Clustering-Use-Cases.png" style="width:40%; position:absolute; top:40%; right:0%"><!-- {"left" : 3.51, "top" : 4.03, "height" : 3.24, "width" : 4} -->
+
 
 Notes:
 
@@ -1112,7 +1142,8 @@ Notes:
 
  * Google News algorithm automatically groups **related news stories**  into sections
 
-<img src="../../assets/images/machine-learning/3rd-party/Google-News.png" style="width:90%">
+<img src="../../assets/images/machine-learning/3rd-party/Google-News.png" style="width:90%"><!-- {"left" : 1.02, "top" : 2.25, "height" : 3.47, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1138,7 +1169,8 @@ Notes:
 
      - To find “more like this”
 
-<img src="../../assets/images/machine-learning/Clustering-01.png" style="width:50%; position:absolute; top:100%; left:30%">
+<img src="../../assets/images/machine-learning/Clustering-01.png" style="width:50%; position:absolute; top:100%; left:30%"><!-- {"left" : 1.72, "top" : 4.32, "height" : 2.59, "width" : 6.81} -->
+
 
 Notes:
 
@@ -1209,7 +1241,8 @@ Notes:
 
  * Here the robot gets rewarded for 'food' and penalized for walking into fire
 
-<img src="../../assets/images/machine-learning/Reinforcement-Learning.png" style="width:80%">
+<img src="../../assets/images/machine-learning/Reinforcement-Learning.png" style="width:80%"><!-- {"left" : 1.21, "top" : 2.08, "height" : 4.53, "width" : 7.83} -->
+
 
 Notes:
 
@@ -1220,7 +1253,8 @@ Notes:
 ## Reinforcement Learning Demo: Alpha GO
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Neural-Net-Demo-Alpha-GO.png" style="width:70%">
+<img src="../../assets/images/machine-learning/3rd-party/Neural-Net-Demo-Alpha-GO.png" style="width:70%"><!-- {"left" : 1.67, "top" : 1.3, "height" : 3.9, "width" : 6.91} -->
+
 
  <a href="https://www.youtube.com/watch?v=9xlSy9F5WtE">link</a>
 
@@ -1235,7 +1269,8 @@ Notes:
 ## Reinforcement Learning Demo : Open AI Bots Playing Dota
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" style="width:70%">
+<img src="../../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" style="width:70%"><!-- {"left" : 1.02, "top" : 1.16, "height" : 4.63, "width" : 8.21} -->
+
 
 <a href="https://www.youtube.com/watch?v=eHipy_j29Xw">Link</a>
 
@@ -1325,7 +1360,8 @@ Notes:
 
 ## ML Algorithm Cheat Sheet
 
-<img src="../../assets/images/machine-learning/cheat-sheet.png" style="width:80%">
+<img src="../../assets/images/machine-learning/cheat-sheet.png" style="width:80%"><!-- {"left" : 1.02, "top" : 1.29, "height" : 4.92, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1336,7 +1372,8 @@ Notes:
 
 ## Elon Musk:  "AI will take over humanity"
 
-<img src="../../assets/images/machine-learning/3rd-party/Elon-musk.png" style="width:45%">
+<img src="../../assets/images/machine-learning/3rd-party/Elon-musk.png" style="width:45%"><!-- {"left" : 2.31, "top" : 0.99, "height" : 5.99, "width" : 5.63} -->
+
 
 Notes:
 
@@ -1347,7 +1384,8 @@ Notes:
 ## Elon Musk: "Zuck doesn't understand AI"
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Zuck.png" style="width:50%">
+<img src="../../assets/images/machine-learning/3rd-party/Zuck.png" style="width:50%"><!-- {"left" : 2.36, "top" : 1.04, "height" : 5.88, "width" : 6.29} -->
+
 
 Notes:
 
@@ -1370,15 +1408,15 @@ Notes:
 
 ## Lab: Design ML Algorithm
 
- *  **Problem** :
+ *  **Problem**:
 
      - Domestic tension
 
- *  **Solution** :
+ *  **Solution**:
 
      - Buy flowers
 
- *  **Questions** :
+ *  **Questions**:
 
      - How much $$$ to spend
 
@@ -1386,7 +1424,8 @@ Notes:
 
      - (Our proposed solution is on the next slide)
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Primer-Lab-Design-ML-Algorithm-0.png" style="width:40%; position:absolute; top:30%; right:10p">
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Primer-Lab-Design-ML-Algorithm-0.png" style="width:40%; position:absolute; top:30%; right:10p"><!-- {"left" : 5.6, "top" : 1.06, "height" : 2.85, "width" : 4.3} -->
+
 
 
 Notes:

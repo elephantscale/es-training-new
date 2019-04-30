@@ -14,7 +14,8 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/Algorithm-Summary.png" alt="Algorithm-Summary.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/Algorithm-Summary.png" alt="Algorithm-Summary.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 1.26, "height" : 5.44, "width" : 8.21} -->
+
 
 
 Notes:
@@ -37,7 +38,8 @@ Notes:
 * We did this Multiple Logistics Regression before. <br/> Now we will try SVM
 
 
-<img src="../../assets/images/machine-learning/Classification-College-Admission-01.png" alt="Classification-College-Admission" style="position:absolute; top:250px;right:5px"/>
+<img src="../../assets/images/machine-learning/Classification-College-Admission-01.png" alt="Classification-College-Admission" style="position:absolute; top:250px;right:5px"/><!-- {"left" : 7.13, "top" : 4.64, "height" : 2.59, "width" : 2.82} -->
+
 
 
 
@@ -75,7 +77,8 @@ Notes:
 
 * Out of many possibilities we choose one, that separates the classes cleanly
 
-<img src="../../assets/images/machine-learning/Theory_behind_SVM.png" alt="Theory_behind_SVM" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/Theory_behind_SVM.png" alt="Theory_behind_SVM" style="width:70%;"/><!-- {"left" : 1.02, "top" : 3.3, "height" : 3.84, "width" : 8.21} -->
+
 
 
 Notes:
@@ -92,7 +95,8 @@ Diagram from "Introduction to Statistical Learning" with thanks to authors
 
 * This is called **Maximal Margin Classifier**
 
-<img src="../../assets/images/machine-learning/Hyper_planes.png" alt="Hyper_planes" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/Hyper_planes.png" alt="Hyper_planes" style="width:40%;"/><!-- {"left" : 2.83, "top" : 3.06, "height" : 3.97, "width" : 4.58} -->
+
 
 
 Notes:
@@ -107,7 +111,8 @@ Notes:
 
 * This leads to lower confidence in prediction
 
-<img src="../../assets/images/machine-learning/Input-data.png" alt="Input-data.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/Input-data.png" alt="Input-data.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 3.3, "height" : 3.83, "width" : 8.21} -->
+
 
 Notes:
 
@@ -118,14 +123,18 @@ Notes:
 
 * For a 2D problem the hyper plane is a line
 
-<img src="../../assets/images/machine-learning/3rd-party/math-1.png" alt="math-1.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/math-1.png" alt="math-1.png" style="width:40%;"/><!-- {"left" : 5.22, "top" : 1.35, "height" : 0.86, "width" : 4.31} -->
+
+
 
 * For 3D problem hyper plane is a surface / plane
 
 * For P-dimension problem hyper plane is (P-1) dimensional
     - Hard to visualize
 
-<img src="../../assets/images/machine-learning/3rd-party/math-2.png" alt="math-2.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/math-2.png" alt="math-2.png" style="width:40%;"/><!-- {"left" : 2.54, "top" : 3.55, "height" : 0.86, "width" : 6.85} -->
+
+
 
 * When you plugin X to the equation, if it evaluates to positive, it belongs in one class
 
@@ -139,7 +148,8 @@ Notes:
 
 * Here no linear classification may be possible
 
-<img src="../../assets/images/machine-learning/Linear-separation.png" alt="Linear-separation.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/Linear-separation.png" alt="Linear-separation.png" style="width:40%;"/><!-- {"left" : 2.13, "top" : 1.66, "height" : 5.78, "width" : 5.99} -->
+
 
 Notes:
 
@@ -162,7 +172,8 @@ Notes:
 
 * Here points 8, 11 & 12 are on the wrong side of hyper plane
 
-<img src="../../assets/images/machine-learning/soft-margin-classifier.png" alt="soft-margin-classifier" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/soft-margin-classifier.png" alt="soft-margin-classifier" style="width:70%;"/><!-- {"left" : 0.71, "top" : 3.01, "height" : 3.61, "width" : 8.84} -->
+
 
 Notes:
 
@@ -214,7 +225,8 @@ Notes:
 
 * Right: Radical kernel
 
-<img src="../../assets/images/machine-learning/3rd-party/SVM-Kernel-01.png" alt="SVM-Kernel" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/SVM-Kernel-01.png" alt="SVM-Kernel" style="width:70%;"/><!-- {"left" : 0.73, "top" : 2.18, "height" : 4.62, "width" : 8.78} -->
+
 
 Notes:
 
@@ -225,7 +237,7 @@ Notes:
 * In this (synthetic) data linear separation is not possible
 
 
-<img src="../../assets/images/machine-learning/SVM-Kernel-02.png" alt="SVM-Kernel-02" style="width:40%;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/machine-learning/SVM-Kernel-03.png" alt="SVM-Kernel-03" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/SVM-Kernel-02.png" alt="SVM-Kernel-02" style="width:40%;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- {"left" : 0.61, "top" : 2.41, "height" : 3.14, "width" : 4.42} --><img src="../../assets/images/machine-learning/SVM-Kernel-03.png" alt="SVM-Kernel-03" style="width:40%;"/><!-- {"left" : 5.22, "top" : 2.41, "height" : 3.14, "width" : 4.42} -->
 
 Notes:
 
@@ -237,8 +249,8 @@ Reference : Chapter 2, “Introduction to Machine Learning With Python”
 
 * But adding a higher dimension allows us to separate the points (feature1^2)
 
-<img src="../../assets/images/machine-learning/SVM-Kernel-Example-01.png" alt="SVM-Kernel-Example-01.png" style="width:40%;"/>
-&nbsp;<img src="../../assets/images/machine-learning/SVM-Kernel-Example-02.png" alt="SVM-Kernel-Example-02.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/SVM-Kernel-Example-01.png" alt="SVM-Kernel-Example-01.png" style="width:40%;"/>&nbsp;<!-- {"left" : 0.58, "top" : 2.71, "height" : 3.33, "width" : 4.54} --><img src="../../assets/images/machine-learning/SVM-Kernel-Example-02.png" alt="SVM-Kernel-Example-02.png" style="width:40%;"/><!-- {"left" : 5.14, "top" : 2.71, "height" : 3.33, "width" : 4.54} -->
+
 
 Notes:
 
@@ -250,7 +262,8 @@ Reference : Chapter 2, “Introduction to Machine Learning With Python”
 
 * This is the decision boundary of SVM kernel in the above example
 
-<img src="../../assets/images/machine-learning/SVM-Kernel-04.png" alt="SVM-Kernel-04.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/SVM-Kernel-04.png" alt="SVM-Kernel-04.png" style="width:60%;"/><!-- {"left" : 1.91, "top" : 2.23, "height" : 4.36, "width" : 6.43} -->
+
 
 
 Notes:
@@ -263,7 +276,8 @@ Reference : Chapter 2, “Introduction to Machine Learning With Python”
 
 * [Link](https://www.youtube.com/watch?v=3liCbRZPrZA)
 
-<img src="../../assets/images/machine-learning/3rd-party/SVM-Kernel-05.png" alt="SVM-Kernel-05.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/SVM-Kernel-05.png" alt="SVM-Kernel-05.png" style="width:50%;"/><!-- {"left" : 1.71, "top" : 1.16, "height" : 4.55, "width" : 6.82} -->
+
 
 
 * The transformation used is: f([x y]) = [x y (x^2+y^2)]
@@ -383,7 +397,8 @@ Notes:
 ## Algorithm Summary
 
 
-<img src="../../assets/images/machine-learning/Algorithm-summary-02.png" alt="Algorithm-summary-02.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/Algorithm-summary-02.png" alt="Algorithm-summary-02.png" style="width:70%;"/><!-- {"left" : 0.86, "top" : 1.15, "height" : 5.67, "width" : 8.52} -->
+
 
 
 Notes:
@@ -458,7 +473,8 @@ Notes:
 * **Question for class**: Are the inputs independent in this dataset?
 
 
-<img src="../../assets/images/machine-learning/3rd-party/EXAMPLE_2.jpg" alt="EXAMPLE_2.jpg" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/EXAMPLE_2.jpg" alt="EXAMPLE_2.jpg" style="width:60%;"/><!-- {"left" : 1.97, "top" : 2.32, "height" : 3.33, "width" : 6.31} -->
+
 
 Notes:
 
@@ -469,7 +485,8 @@ Notes:
 
 * **Question for class** :Are the inputs independent in this dataset?
 
-<img src="../../assets/images/machine-learning/3rd-party/EXAMPLE_3.jpg" alt="EXAMPLE_3.jpg" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/EXAMPLE_3.jpg" alt="EXAMPLE_3.jpg" style="width:60%;"/><!-- {"left" : 1.85, "top" : 1.89, "height" : 4.2, "width" : 6.54} -->
+
 
 Notes:
 
@@ -486,7 +503,8 @@ Notes:
 
 * Class: Go-out=1, Stay-home=0
 
-<img src="../../assets/images/machine-learning/Classification-02.png" style="width:60%;" />
+<img src="../../assets/images/machine-learning/Classification-02.png" style="width:60%;" /><!-- {"left" : 1.02, "top" : 2.96, "height" : 4.16, "width" : 8.21} -->
+
 
 Notes:
 
@@ -598,6 +616,7 @@ Notes:
 P(h | d) = ---------------
                  P(d)
 ```
+<!-- {"left" : 0, "top" : 5.72, "height" : 1.07, "width" : 5.11} -->
 Notes:
 
 
@@ -648,6 +667,7 @@ P(stay-home | weather=sunny) = -----------
                                 go-out + stay-home
 
 ```
+<!-- {"left" : 0, "top" : 2.68, "height" : 2.62, "width" : 10.25} -->
 
 Notes:
 
@@ -687,7 +707,8 @@ Notes:
 
 * Our model predicts with accuracy of 80%.Miss-predictions are `highlighted`
 
-<img src="../../assets/images/machine-learning/Bayes-Prediction.png" alt="Bayes-Prediction.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/Bayes-Prediction.png" alt="Bayes-Prediction.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.11, "height" : 4.74, "width" : 8.21} -->
+
 
 
 
