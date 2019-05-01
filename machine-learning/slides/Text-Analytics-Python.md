@@ -239,22 +239,22 @@ Notes:
 
 ---
 
-## Lab: TEXT-1 :  NLTK Intro
+## Lab: TEXT-1: NLTK Intro
 
 
- *  **Overview** : 
+ *  **Overview**: 
  
-    Get to know NLTK library
+     - Get to know NLTK library
 
- *  **Builds on previous labs** : 
+ *  **Builds on previous labs**: 
  
-    None
+     - None
 
- *  **Approximate time** : 
+ *  **Approximate time**: 
  
-    15 mins
+     - 15 mins
 
- *  **Instructions** : 
+ *  **Instructions**: 
 
      - 1-NLTK-Intro
 
@@ -267,20 +267,20 @@ Notes:
 
 ---
 
-## Lab:  Text-2 :  Text Analytics With NLTK
+## Lab: Text-2: Text Analytics With NLTK
 
 
- *  **Overview** : 
+ *  **Overview**: 
  
-    Analyzing raw text with NLTK library
+     - Analyzing raw text with NLTK library
 
- *  **Builds on previous labs** : 
+ *  **Builds on previous labs**: 
  
-    TEXT-1 : NLTK intro
+     - TEXT-1: NLTK intro
 
- *  **Approximate time** : 
+ *  **Approximate time**: 
     
-    15 mins
+     - 15 mins
 
  *  **Instructions** : 
 
@@ -294,22 +294,22 @@ Notes:
 
 ---
 
-## Lab:  Text-3 :  Ngrams
+## Lab: Text-3:  Ngrams
 
 
- *  **Overview** : 
+ *  **Overview**: 
  
-    Analyzing text for Ngrams
+     - Analyzing text for Ngrams
 
- *  **Builds on previous labs** : 
+ *  **Builds on previous labs**: 
  
-    TEXT-2 : NLTK
+     - TEXT-2: NLTK
 
- *  **Approximate time** :
+ *  **Approximate time**:
  
-     15 mins
+     - 15 mins
 
- *  **Instructions** : 
+ *  **Instructions**: 
 
      - 3-ngrams 
 
@@ -402,7 +402,7 @@ Notes:
 
 ---
 
-## TextBlob Usage : Tokenizing
+## TextBlob Usage: Tokenizing
 
 
 ```text
@@ -429,7 +429,7 @@ Notes:
 
 ---
 
-## TextBlob Usage : Sentiment Analysis
+## TextBlob Usage: Sentiment Analysis
 
 
  * 'sentiment' returns a tuple (polarity, subjectivity)
@@ -466,7 +466,7 @@ Notes:
 
 ---
 
-## TextBlob Usage : Word Counts
+## TextBlob Usage: Word Counts
 
 
 ```text
@@ -513,7 +513,7 @@ https://developers.google.com/translate/
 
 ---
 
-## TextBlob Usage : Language Detection and Translation
+## TextBlob Usage: Language Detection and Translation
 
 
  * Detect languages and even translate!
@@ -546,19 +546,19 @@ https://developers.google.com/translate/
 ## Lab:  Text-4 :  TextBlob
 
 
- *  **Overview** : 
+ *  **Overview**: 
  
-    Get familiar with TextBlob API
+     - Get familiar with TextBlob API
 
- *  **Builds on previous labs** : 
+ *  **Builds on previous labs**: 
  
-    None
+     - None
 
- *  **Approximate time** : 
+ *  **Approximate time**: 
  
-    15 mins
+     - 15 mins
 
- *  **Instructions** : 
+ *  **Instructions**: 
 
      - 4-ngrams 
 
@@ -573,7 +573,7 @@ Notes:
 ## Jump Point: TFIDF Theory
 
 
- * Go to: Text Analytics Core : TF-IDF section
+ * Go to: Text Analytics Core: TF-IDF section
 
 Notes: 
 
@@ -581,22 +581,22 @@ Notes:
 
 ---
 
-## Lab:  Text-5 :  TF-IDF
+## Lab: Text-5: TF-IDF
 
 
- *  **Overview** : 
+ *  **Overview**: 
  
-    Calculate and understand TF-IDF scores
+     - Calculate and understand TF-IDF scores
 
- *  **Builds on previous labs** : 
+ *  **Builds on previous labs**: 
  
-    TEXT4 : TextBlob
+     - TEXT4: TextBlob
 
- *  **Approximate time** : 
+ *  **Approximate time**: 
  
-    15 mins
+     - 15 mins
 
- *  **Instructions** : 
+ *  **Instructions**: 
 
      - 5-tfidf
 
@@ -668,22 +668,22 @@ Notes:
 
 ---
 
-## Lab:  Text-6 :  TF-IDF With SciKit-Learn
+## Lab: Text-6: TF-IDF With SciKit-Learn
 
 
- *  **Overview** : 
+ *  **Overview**: 
  
-    Calculate TF-IDF with SciKit-Learn
+     - Calculate TF-IDF with SciKit-Learn
 
- *  **Builds on previous labs** : 
+ *  **Builds on previous labs**: 
  
-    TEXT5 : TFIDF intro
+     - TEXT5: TFIDF intro
 
- *  **Approximate time** : 
+ *  **Approximate time**: 
  
-    15 mins
+     - 15 mins
 
- *  **Instructions** : 
+ *  **Instructions**: 
 
      - 6-tfidf-with-scikit-learn
 
@@ -708,7 +708,7 @@ Notes:
 ## Lesson Summary
 
 
- * Learned Python libraries : TextBlob, NLTK, SciKit
+ * Learned Python libraries: TextBlob, NLTK, SciKit
 
  * Implemented text analytics algorithms in Python
 

@@ -23,9 +23,9 @@ Notes:
 
  * Implemented by  
  
- **pyspark.ml.classification.DecisionTreeClassifier**    (python) 
+ **pyspark.ml.classification.DecisionTreeClassifier** (python) 
  
- **org.apache.spark.ml.classification.DecisionTreeClassifier**  (Scala)
+ **org.apache.spark.ml.classification.DecisionTreeClassifier** (Scala)
 
  * Supports Binary and Multi-class Classification
 
@@ -47,6 +47,8 @@ dt= DecisionTreeClassifier(labelColumn='label', featuresCol = 'features')
 # Fit the model
 dtModel = dt.fit(training)
 ```
+<!-- {"left" : 0, "top" : 1.18, "height" : 2.1, "width" : 10.25} -->
+
 Notes: 
 
  
@@ -76,6 +78,7 @@ Notes:
 ---
 
 ## Model Evaluation Sample Code (Python)
+
 ```python
 from pyspark.ml.evaluation import MultiClassClassificationEvaluator
 
@@ -87,6 +90,8 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Test Error = %g " % (1.0 - accuracy))
 ```
+<!-- {"left" : 0, "top" : 1.18, "height" : 2.13, "width" : 10.25} -->
+
 Notes: 
 
  
@@ -169,11 +174,14 @@ Notes:
 from pyspark.ml.classification import DecisionTreeRegressor
 
 # Load training data
-training = spark.read(...) dt= DecisionTreeRegressor(labelColumn='label', featuresCol = 'features')
+training = spark.read(...) dt= DecisionTreeRegressor
+(labelColumn='label', featuresCol = 'features')
 
 # Fit the model
 dtModel = dt.fit(training)
 ```
+<!-- {"left" : 0, "top" : 1.18, "height" : 2.31, "width" : 10.25} -->
+
 Notes: 
 
  
@@ -206,7 +214,8 @@ Notes:
 from pyspark.ml.evaluation import RegressionEvaluator
 
 # select (prediction, true label) and compute test error 
-evaluator = RegressionEvaluator(labelCol="indexedLabel", predictionCol="prediction", metricName="rmse")
+evaluator = RegressionEvaluator(labelCol="indexedLabel", 
+predictionCol="prediction", metricName="rmse")
 
 accuracy = evaluator.evaluate(predictions)
 
@@ -429,7 +438,8 @@ Notes:
 from pyspark.ml.evaluation import RegressionEvaluator
 
 # select (prediction, true label) and compute test error
-evaluator = RegressionEvaluator(labelCol="indexedLabel", predictionCol="prediction", metricName="rmse")
+evaluator = RegressionEvaluator(labelCol="indexedLabel",
+predictionCol="prediction", metricName="rmse")
 
 accuracy = evaluator.evaluate(predictions)
 

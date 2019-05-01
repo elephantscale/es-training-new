@@ -21,7 +21,8 @@ Notes:
 
 ## Recommendations Are Everywhere: Amazon
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Recommendations-Are-Everywhere-Amazon-0.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Recommendations-Are-Everywhere-Amazon-0.png" style="width:70%"/><!-- {"left" : 1.85, "top" : 1.09, "height" : 3.06, "width" : 6.55} -->
+
 
 *Source: Amazon*
 
@@ -33,7 +34,8 @@ Notes:
 
 ## Recommendations by Amazon Prime
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Recommendations-by-Amazon-Prime-0.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Recommendations-by-Amazon-Prime-0.png" style="width:70%"/><!-- {"left" : 1.51, "top" : 1.01, "height" : 4.65, "width" : 7.23} -->
+
 
 
 *Source: Amazon*
@@ -48,9 +50,11 @@ Notes:
 
 ## Recommendations With Profiles by Netflix
 
-<img src="../../assets/images/machine-learning/Netflix-1.png" style="width:40%"/>
+<img src="../../assets/images/machine-learning/Netflix-1.png" style="width:40%"/><!-- {"left" : 2.6, "top" : 1.02, "height" : 2.37, "width" : 5.04} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Recommendations-With-Profiles-by-Netflix-0.png" style="width:40%"/>
+
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Recommendations-With-Profiles-by-Netflix-0.png" style="width:40%"/><!-- {"left" : 2.02, "top" : 3.65, "height" : 2.48, "width" : 6.21} -->
+
 
  *Source: Netflix*
 
@@ -102,7 +106,8 @@ Notes:
 
 ## Recommendation is Two Step Process
 
-<img src="../../assets/images/machine-learning/00-001.png" style="width:90%"/>
+<img src="../../assets/images/machine-learning/00-001.png" style="width:90%"/><!-- {"left" : 0.68, "top" : 1.65, "height" : 4.21, "width" : 8.88} -->
+
 
 Notes:
 
@@ -115,19 +120,19 @@ Notes:
 
  *  **Collaborative Filtering:** recommend items based on  **only on users past** behavior
 
-     -  **User based** : find similar users to me and recommend what they liked
+     -  **User based**: find similar users to me and recommend what they liked
 
-     -  **Item based** : find similar items to those that I have previously liked
+     -  **Item based**: find similar items to those that I have previously liked
 
- *  **Content based** : Recommend based on item features (Actor: Bruce Willis,  Genre: Action)
+ *  **Content based**: Recommend based on item features (Actor: Bruce Willis,  Genre: Action)
 
- *  **Personalized Rank** : Treat recommendations like a ranking problem
+ *  **Personalized Rank**: Treat recommendations like a ranking problem
 
- *  **Demographic** : based on user features (age, location, interests)
+ *  **Demographic**: based on user features (age, location, interests)
 
- *  **Social recommendations** : recommend friends' items (trust based)
+ *  **Social recommendations**: recommend friends' items (trust based)
 
- *  **Hybrid** : combine any of the above
+ *  **Hybrid**: combine any of the above
 
 Notes:
 
@@ -172,7 +177,7 @@ Notes:
 
  * Sequel cancelled due to privacy concerns
 
-     - Researchers were able to identify individual users by correlating Netflix ratings with Internet Movie Database (IMDB) !
+     - Researchers were able to identify individual users by correlating Netflix ratings with Internet Movie Database (IMDB)!
 
 Notes:
 
@@ -186,7 +191,8 @@ https://en.wikipedia.org/wiki/Netflix_Prize
 
  * It is really  **extremely simple to produce** "reasonable" recommendations and **extremely** **difficult to improve** **them**.
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Netflix-Prize-Findings-0.png" style="width:35%;margin-top:50px"/>
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Netflix-Prize-Findings-0.png" style="width:35%;margin-top:50px"/><!-- {"left" : 2.72, "top" : 2.11, "height" : 4.93, "width" : 4.81} -->
+
 
 Notes:
 
@@ -238,7 +244,8 @@ Notes:
      - How will you go about recommending movies to  **u5**  ?
 
 
-<img src="../../assets/images/machine-learning/3rd-party/00-02.png" style="width:60%"/>
+<img src="../../assets/images/machine-learning/3rd-party/00-02.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 2.95, "height" : 3.97, "width" : 8.21} -->
+
 
 Notes:
 
@@ -257,7 +264,8 @@ Notes:
 
      - How will you go about recommending movies to  **u5**  ?
 
-<img src="../../assets/images/machine-learning/3rd-party/00-03.png" style="width:60%"/>
+<img src="../../assets/images/machine-learning/3rd-party/00-03.png" style="width:60%"/><!-- {"left" : 1.77, "top" : 3.13, "height" : 3.89, "width" : 6.71} -->
+
 
 Notes:
 
@@ -447,11 +455,11 @@ Notes:
   – that measures the<br/>
  similarity between vectors
 
-* Another approach : Correlation!
+* Another approach: Correlation!
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-How-Do-We-Measure-Similarity-Between-Two-Users--0.png" style="width:20%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-How-Do-We-Measure-Similarity-Between-Two-Users--0.png" style="width:20%"/><!-- {"left" : 2.2, "top" : 5.14, "height" : 2.37, "width" : 2.31} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/00-04.png" style="width:35%;position:absolute;top:300px;right:5px"/>
+<img src="../../assets/images/machine-learning/3rd-party/00-04.png" style="width:35%;position:absolute;top:300px;right:5px"/><!-- {"left" : 6.65, "top" : 3.18, "height" : 4.01, "width" : 3.29} -->
 
 Notes:
 
@@ -470,7 +478,8 @@ Notes:
  * Can also do K-nearest items (columns)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-K-Nearest-Neighbor-0.png" style="width:90%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-K-Nearest-Neighbor-0.png" style="width:90%"/><!-- {"left" : 0.92, "top" : 2.54, "height" : 3.61, "width" : 8.4} -->
+
 
 Notes:
 
@@ -527,7 +536,8 @@ Notes:
 
 ## Matrix Refactorization Explained
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:90%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:90%;"/><!-- {"left" : 0.72, "top" : 1.51, "height" : 4.96, "width" : 8.82} -->
+
 
 Notes:
 

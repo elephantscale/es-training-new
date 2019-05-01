@@ -57,7 +57,7 @@ Notes:
 
 ## Data Science Totem pole
 
-<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 0.55, "top" : 1.09, "height" : 5.48, "width" : 9.16} -->
+<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/><!-- {"left" : 0.55, "top" : 1.09, "height" : 5.48, "width" : 9.16} -->
 
 
 Notes:
@@ -69,6 +69,7 @@ Notes:
 * Goal for this class is to give you 'data practitioner' level of knowledge
 
 <img src="../../assets/images/machine-learning/data-practitioner.png" alt="data-practitioner.png" style="width:70%;"/> <!-- {"left" : 0.93, "top" : 1.84, "height" : 5.27, "width" : 8.39} -->
+
 
 
 
@@ -125,8 +126,7 @@ Notes:
     - Prosper loan data
     - NYSE Stock data
 
-<img src="../../assets/images/machine-learning/3rd-party/logos.png" alt="NETFLIX" style="position: absolute;top: 50%;right: 30px;margin-top: -130px;"/>
- <!-- {"left" : 7.73, "top" : 1.1, "height" : 3.48, "width" : 2.11} -->
+<img src="../../assets/images/machine-learning/3rd-party/logos.png" alt="NETFLIX" style="position: absolute;top: 50%;right: 30px;margin-top: -130px;"/><!-- {"left" : 7.73, "top" : 1.1, "height" : 3.48, "width" : 2.11} -->
 
 
 * No old-worn-out datasets like Iris / Titanic ...
@@ -175,7 +175,7 @@ Notes:
 
 ## Lots of Labs : Learn By Doing
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.7, "top" : 0.97, "height" : 5.53, "width" : 6.85} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 1.7, "top" : 0.97, "height" : 5.53, "width" : 6.85} -->
 
 
 
@@ -236,12 +236,9 @@ Notes:
 
     - Something non-technical about you!
     
-    (favorite ice cream flavor / hobby…etc)
+    (favorite ice cream flavor / hobby...etc.)
 
-<img src="../../assets/images/machine-learning/3rd-party/icecream.jpg" alt="icecream.jpg" style="position: absolute;top: 100%;right: 290px" /> <!-- {"left" : 1.79, "top" : 4.6, "height" : 2.14, "width" : 2.89} -->
-
-<img src="../../assets/images/machine-learning/3rd-party/climbing.jpg" alt="climbing.jpg" style="width:20%;position: absolute;top: 100%;left: 290px"/> 
-<!-- {"left" : 5.02, "top" : 4.6, "height" : 2.14, "width" : 3.44} -->
+<img src="../../assets/images/machine-learning/3rd-party/icecream.jpg" alt="icecream.jpg" style="position: absolute;top: 100%;right: 290px" /><!-- {"left" : 1.87, "top" : 4.67, "height" : 2.14, "width" : 2.89} --> <img src="../../assets/images/machine-learning/3rd-party/climbing.jpg" alt="climbing.jpg" style="width:20%;position: absolute;top: 100%;left: 290px"/><!-- {"left" : 4.94, "top" : 4.67, "height" : 2.14, "width" : 3.44} -->
 
 
 Notes:

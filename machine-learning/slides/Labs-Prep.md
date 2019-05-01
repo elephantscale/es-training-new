@@ -27,7 +27,8 @@ Notes:
 
  * Make sure they can see the sandbox splash page
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Labs-Prep-Step-1-Distribute-VMs-0.png" style="width:60%">
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Labs-Prep-Step-1-Distribute-VMs-0.png" style="width:60%"><!-- {"left" : 1.49, "top" : 3.53, "height" : 3.54, "width" : 7.28} -->
+
 
 Notes:
 
@@ -134,7 +135,8 @@ Notes:
 
  * [https://www.youtube.com/watch?v=xaBEFqFVSE8](https://www.youtube.com/watch?v=xaBEFqFVSE8)
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Jupyter-Interactive-Notebook-0.png" style="width:50%">
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Jupyter-Interactive-Notebook-0.png" style="width:50%"><!-- {"left" : 2.14, "top" : 2.63, "height" : 3.78, "width" : 5.98} -->
+
 
 
 Notes:
@@ -155,7 +157,8 @@ https://www.youtube.com/watch?v=xaBEFqFVSE8
 
  * Explain how Jupyter works
 
-<img src="../../assets/images/machine-learning/Machine-Learning-Lab-Prep-Jupyter.png" style="width:55%;">
+<img src="../../assets/images/machine-learning/Machine-Learning-Lab-Prep-Jupyter.png" style="width:55%;"><!-- {"left" : 2.07, "top" : 3.07, "height" : 3.3, "width" : 6.1} -->
+
 
 Notes:
 

@@ -84,6 +84,8 @@ evaluator = RegressionEvaluator( metricName="rmse", labelCol="rating", predictio
 rmse = evaluator.evaluate(predictions)
 
 ```
+<!-- {"left" : 0, "top" : 2.82, "height" : 1.2, "width" : 10.25} -->
+
 
 Notes:
 
@@ -95,7 +97,8 @@ Notes:
 ## Evaluating CF Recommendations (ROC)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Spark-01.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Spark-01.png" style="width:80%"/><!-- {"left" : 0.76, "top" : 1.22, "height" : 5.53, "width" : 8.73} -->
+
 
 Notes:
 

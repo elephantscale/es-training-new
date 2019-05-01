@@ -266,7 +266,8 @@ Notes:
 
    Question for class: At  k=32  we have achieved  WSSSE=0 , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" alt="Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" alt="Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 3.44, "height" : 3.5, "width" : 8.21} -->
+
 
 
 Notes: 
@@ -293,6 +294,8 @@ for k in range(2,17):    
   
 k_wssse 
 ```
+<!-- {"left" : 0, "top" : 1.3, "height" : 3.5, "width" : 10.25} -->
+
 
 ```text
 k= 2
@@ -303,6 +306,8 @@ k= 4
    k=4, wssse=140.88452380952572
 
 ```
+<!-- {"left" : 0, "top" : 4.9, "height" : 1.86, "width" : 6.11} -->
+
 
 Notes: 
 
@@ -312,7 +317,8 @@ Notes:
 
 ## K - WSSSE
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-With-Python-K-WSSSE-0.png" alt="Session-Unsupervised-Learning-With-Spark-K-WSSSE-0.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-With-Python-K-WSSSE-0.png" alt="Session-Unsupervised-Learning-With-Spark-K-WSSSE-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.23, "height" : 5.51, "width" : 8.21} -->
+
 
 
 Notes: 

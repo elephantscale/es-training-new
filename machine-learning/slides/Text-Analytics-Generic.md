@@ -36,7 +36,8 @@ Notes:
  given right tools
 
 
-<img src="../../assets/images/machine-learning/Text-Analytics-0.png" alt="Text-Analytics-0.png" style="width:50%; position:absolute; top:30%; right:0"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-0.png" alt="Text-Analytics-0.png" style="width:50%; position:absolute; top:30%; right:0"/><!-- {"left" : 5.31, "top" : 2.12, "height" : 3.73, "width" : 4.66} -->
+
 
 Notes:
 
@@ -47,7 +48,8 @@ Notes:
 ## Text Use Case: Customer Service Via Social Media
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-1.png" alt="Text-Analytics-1.png" style="width:60%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-1.png" alt="Text-Analytics-1.png" style="width:60%"/><!-- {"left" : 0.27, "top" : 1.31, "height" : 5.35, "width" : 9.72} -->
+
 
 Notes:
 
@@ -58,7 +60,8 @@ Notes:
 ## Text Analytics Use Case: Brand Analytics
 
 
-<img src="../../assets/images/machine-learning/Text-Analytics-2.png" alt="Text-Analytics-2.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-2.png" alt="Text-Analytics-2.png" style="width:70%"/><!-- {"left" : 1, "top" : 1.44, "height" : 5.09, "width" : 8.25} -->
+
 
 Notes:
 
@@ -84,6 +87,8 @@ Notes:
 
    John: When I turn on the widget it makes a funny sound.
 ```
+<!-- {"left" : 0, "top" : 2.36, "height" : 2.09, "width" : 10.25} -->
+
 
 Notes:
 
@@ -94,7 +99,8 @@ Notes:
 
 ## Text - Sentiment Analytics
 
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-3.png" alt="Text-Analytics-3.png" style="width:90%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-3.png" alt="Text-Analytics-3.png" style="width:90%"/><!-- {"left" : 0.51, "top" : 1.06, "height" : 5.85, "width" : 9.23} -->
+
 
 Notes:
 ---
@@ -119,7 +125,8 @@ Notes:
 ## Visualizing Text – Word Clouds (State of the Union Speech 2014)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-4.png" alt="Text-Analytics-4.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-4.png" alt="Text-Analytics-4.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.46, "height" : 5.05, "width" : 8.21} -->
+
 
 Notes:
 
@@ -136,7 +143,8 @@ Notes:
 
  * Split the document(s) into words
 
-<img src="../../assets/images/machine-learning/Text-Analytics--Bag-of-Words--0.png" alt="Text-Analytics--Bag-of-Words--0.png" style="width:80%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics--Bag-of-Words--0.png" alt="Text-Analytics--Bag-of-Words--0.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.85, "height" : 4.66, "width" : 8.21} -->
+
 
 Notes:
 
@@ -153,7 +161,8 @@ Notes:
 
  * Can you spot the differences in word-tokenization below?
 
-<img src="../../assets/images/machine-learning/Text-Analytics-5.png" alt="Text-Analytics-5.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-5.png" alt="Text-Analytics-5.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 2.89, "height" : 3.79, "width" : 8.21} -->
+
 
 
 Notes:
@@ -164,7 +173,9 @@ Notes:
 
 ## Bag Words Analytics Example: 'Moby Dick' by Herman Melville
 
-<img src="../../assets/images/machine-learning/Text-Analytics-6.png" alt="Text-Analytics-6.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-6.png" alt="Text-Analytics-6.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.28, "height" : 5.41, "width" : 8.21} -->
+
+
 
 
 Notes:
@@ -175,7 +186,8 @@ Notes:
 
 ## Bag Words Analytics Example2: 'Alice in Wonderland' by Lewis Carrol
 
-<img src="../../assets/images/machine-learning/Text-Analytics-66.png" alt="Text-Analytics-66.png" style="width:60%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-66.png" alt="Text-Analytics-66.png" style="width:60%"/><!-- {"left" : 1.89, "top" : 1.31, "height" : 4.21, "width" : 6.47} -->
+
 
 
  * cleaned
@@ -244,7 +256,8 @@ It was the best of times. It was the worst of times! It was the age of wisdom!!
 $123
 
 ```
-<img src="../../assets/images/machine-learning/Text-Analytics-7.png" style="width:20%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-7.png" style="width:20%"/><!-- {"left" : 3.92, "top" : 2, "height" : 1.23, "width" : 2.41} -->
+
 
 
 ```text
@@ -253,7 +266,8 @@ $123
 
 ```
 
-<img src="../../assets/images/machine-learning/Text-Analytics-8.png" style="width:40%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-8.png" style="width:40%"/><!-- {"left" : 2.96, "top" : 5.05, "height" : 0.9, "width" : 4.69} -->
+
 
 ```text
 it was the best of times it was the worst of times it was the age of wisdom
@@ -273,7 +287,7 @@ Notes:
 
      - English (total 153):  *'a', 'about', 'above', 'after', 'again', 'against',..*
 
-     - Spanish (total 313) : *'a', 'al', '*  *algo*  *', '*  *algunas*  *', '*  *algunos*  *',*  *…*
+     - Spanish (total 313): *'a', 'al', '*  *algo*  *', '*  *algunas*  *', '*  *algunos*  *',*  *...*
 
      - German (total 231):  *'*  *wie*  *', 'also', '*  *alle*  *', '*  *anderer*  *', 'des',*
 
@@ -296,7 +310,7 @@ Notes:
 it was the best of times it was the worst of times it was the age of wisdom
 
 ```
-<img src="../../assets/images/machine-learning/Text-Analytics-9.png" style="width:30%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-9.png" style="width:30%"/><!-- {"left" : 3.78, "top" : 1.63, "height" : 0.8, "width" : 2.68} -->
 
 
 ```text
@@ -312,13 +326,17 @@ English stopwords
  who, whom, why, will, with, would, yet, you, your
 
 ```
+<!-- {"left" :0, "top" : 2.74, "height" : 2.02, "width" : 9.75} -->
 
-<img src="../../assets/images/machine-learning/Text-Analytics-10.png" style="width:10%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-10.png" style="width:10%"/><!-- {"left" : 4.69, "top" : 5.07, "height" : 0.77, "width" : 0.87} -->
+
 
 ```text
 best times worst times age wisdom
 
 ```
+<!-- {"left" :0, "top" : 6.43, "height" : 0.54, "width" : 6.28} -->
+
 
 Notes:
 
@@ -338,6 +356,7 @@ It was the best of times. It was the worst of times! It was the age of wisdom!!
 $123
 
 ```
+<!-- {"left" :0, "top" : 1.86, "height" : 0.75, "width" : 9.75} -->
 
 
 ```text
@@ -345,6 +364,7 @@ Cleaned text
 best times worst times age wisdom
 
 ```
+<!-- {"left" :0, "top" : 2.87, "height" : 0.81, "width" : 6.28} -->
 
 ```text
 Cleaned text
@@ -362,6 +382,7 @@ Total number of words = 6
 +-------+-----+
 
 ```
+<!-- {"left" :0, "top" : 3.94, "height" : 3.09, "width" : 4.12} -->
 
 
 
@@ -426,7 +447,8 @@ Notes:
 ('at', 'the'): 318
 
 ```
-<img src="../../assets/images/machine-learning/Text-Analytics-11.png" style="width:30%;    padding-bottom: 100px; margin-top:-250px"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-11.png" style="width:30%;    padding-bottom: 100px; margin-top:-250px"/><!-- {"left" : 4.13, "top" : 3.98, "height" : 1.56, "width" : 4.41} -->
+
 
 Notes:
 
@@ -445,7 +467,8 @@ Notes:
 
      - After 'stop word' cleanup: 115,093  words
 
- <img src="../../assets/images/machine-learning/Text-Analytics-12.png" style="width:70%"/>
+ <img src="../../assets/images/machine-learning/Text-Analytics-12.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3.09, "height" : 3.8, "width" : 8.21} -->
+
 
 
 
@@ -467,7 +490,8 @@ Notes:
 
     * Context is lost.Both sentences below map to same 'bag of words'.But the meaning is very different.
 
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-14.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-14.png" style="width:70%"/><!-- {"left" : 0.29, "top" : 4.05, "height" : 1.45, "width" : 9.67} -->
+
 
 
 Notes:
@@ -492,15 +516,15 @@ Notes:
 
  *  **Overview**: 
  
-    Tokenize / Clean / Stem raw text.
+     - Tokenize / Clean / Stem raw text.
 
  *  **Builds on previous labs**: 
  
-    None
+     - None
 
  *  **Approximate time**:
  
-     15 mins
+     - 15 mins
 
  *  **Instructions**:
 
@@ -517,17 +541,17 @@ Notes:
 ## Lab: Text Analytics: ngrams
 
 
- *  **Overview** : 
+ *  **Overview**: 
  
-    N-gram analytics
+     - N-gram analytics
 
- *  **Builds on previous labs** : 
+ *  **Builds on previous labs**: 
  
-    None
+     - None
 
  *  **Approximate time**: 
- 
-    15 mins
+  
+     -  15 mins
 
  *  **Instructions**:
 
@@ -637,11 +661,13 @@ TF(t) = ------------------------------------------------
 
 ```
 
- <img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-Term-Frequency-TF--0.png" style="width:70%"/>
+ <img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-Term-Frequency-TF--0.png" style="width:70%"/><!-- {"left" : 0.44, "top" : 3.85, "height" : 3.11, "width" : 9.37} -->
+
+
 
 Notes:
 
-Source : tf-idf.xls
+Source: tf-idf.xls
 
 
 ---
@@ -659,7 +685,8 @@ Source : tf-idf.xls
 
  * We use logarithmic scale to get reasonable numbers
 
- <img src="../../assets/images/machine-learning//3rd-party/Text-Analytics-16.png" style="width:70%"/>
+ <img src="../../assets/images/machine-learning//3rd-party/Text-Analytics-16.png" style="width:70%"/><!-- {"left" : 1.24, "top" : 5.07, "height" : 1.35, "width" : 7.77} -->
+
 
 
 Notes:
@@ -697,7 +724,9 @@ Source : http://www.tfidf.com/
   Document 3: the spotted cow likes green grass
 ```
 
-<img src="../../assets/images/machine-learning//3rd-party/Text-Analytics-TF-IDF-Example-0.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning//3rd-party/Text-Analytics-TF-IDF-Example-0.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 2.22, "height" : 3.53, "width" : 8.21} -->
+
+
 
 **You can play with the excel spreadsheet**
 
@@ -727,6 +756,7 @@ Notes:
 | spotted 	| 0    	| 0    	| 0.18 	| d3            	|
 | the     	| 0    	| 0    	| 0    	| All zero      	|
 | white   	| 0.16 	| 0    	| 0    	| d1            	|
+<!-- {"left" : 1.13, "top" : 2.11, "height" : 5.5, "width" : 7.99, "columnwidth" : [1.39, 1.39, 1.39, 1.39, 1.39]} -->
 
 Notes:
 
@@ -823,7 +853,8 @@ Notes:
 
  * Enter word2vec
 
-<img src="../../assets/images/machine-learning/Text-Analytics-Why-word2vec--0.png"  style="width:70%"/>
+<img src="../../assets/images/machine-learning/Text-Analytics-Why-word2vec--0.png"  style="width:70%"/><!-- {"left" : 1.34, "top" : 3.33, "height" : 3.92, "width" : 7.57} -->
+
 
 Notes:
 
@@ -835,7 +866,7 @@ Source: https://hackernoon.com/word2vec-part-1-fe2ec6514d70
 ## What is a word vector?
 
 
- * Word -> (X<sub>1</sub>, X<sub>2</sub>, …, X<sub>n</sub>)
+ * Word -> (X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>n</sub>)
 
      - Such as (TF, IDF)
 
@@ -886,7 +917,9 @@ Notes:
 
 ## Word2Vec in Spark
 
- <img src="../../assets/images/machine-learning/Text-Analytics-18.png" style="width:90%"/>
+ <img src="../../assets/images/machine-learning/Text-Analytics-18.png" style="width:90%"/><!-- {"left" : 0.26, "top" : 1.67, "height" : 4.64, "width" : 9.73} -->
+
+
 
 Notes:
 
