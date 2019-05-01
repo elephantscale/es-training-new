@@ -1,23 +1,26 @@
 # AI Primer
 ---
 
-## Lesson Objectives
+## Lesson Objectives 2
+
+<img src="../assets/images/generic/3rd-party/terminator-2.png" alt="" style="width:50%;float:right;"/>
 
  * See the potential of AI
+ 
+ * Learn from industry use cases
+ 
+ * Understand the problems AI can solve
 
  * Understand the basic AI vocabulary
 
- * Understanding ML / AI
-
- * Learn industry use cases
-
  * Learn about AI software & hardware
+ 
+ * Running an AI project
 
  * Building Data Science teams
 
  * Any thing else you want to cover
 
-<img src="../assets/images/deep-learning/3rd-party/AI-Primer-Lesson-Objectives-0.png" alt="AI-Primer-Lesson-Objectives-0" style="width:25%;"/>
 
 Notes:
 
@@ -39,19 +42,23 @@ Notes:
 
      -  **Something non-technical about you!**  **(favorite ice cream flavor, hobby, etc.)**
 
-<img src="../assets/images/deep-learning/3rd-party/icecream.jpg" alt="icecream.jpg" style="width:25%;"/>   <img src="../assets/images/deep-learning/3rd-party/climbing.jpg" alt="climbing.jpg" style="width:30%;"/>
+<img src="../assets/images/generic/3rd-party/ice-cream-1.jpg" alt="icecream.jpg" style="width:25%;"/>   &nbsp;
+<img src="../assets/images/generic/3rd-party/hiking-2.jpg"  style="width:30%;"/>
 
 
 Notes:
 
+---
+## Recommended Resources:
+
+- [AI for Everyone](https://www.coursera.org/learn/ai-for-everyone) - A very good course (free!) by Professor Andrew Ng 
+
+* [AI Tranformation Playbook](https://landing.ai/ai-transformation-playbook/) - Another great free ebook by Andrew Ng
 
 ---
 
 # Part 1: State of AI
 
-Notes:
-
-Primer is pronounced `primmer`
 ---
 
 ## Question for Audience
@@ -79,15 +86,13 @@ Notes:
 
  * Google Assistant Making phone calls
 
- * [Link](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html)
 
- * Also
+ * Also Google Voice has gotten a lot better in recent years
 
-     - Google Voice has gotten a lot better in recent years
-
-     - (Story about automatically calling a restaurant)
 
 <img src="../assets/images/deep-learning/3rd-party/Google-Assistant.png" alt="Google-Assistant.png" style="width:40%;"/>
+ 
+[Link](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html)
 
 Notes:
 
@@ -98,9 +103,6 @@ https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html
 
 # Why AI Matters?
 
-Notes:
-
-Primer is pronounced `primmer`
 
 ---
 
@@ -144,12 +146,34 @@ Notes:
 Image credit: coursera
 
 ---
+## How Important is AI ?
+
+> "AI will create US$13 Trillion value by year 2030"  
+>   -- McKinsey Global Institute
+
+<img src="../assets/images/AI/3rd-party/mckinsey-AI-impact-1.png" alt="XXX image missing" style="background:white;max-width:100%;max-height:100%;" width="50%"  />
+
+Notes:  
+- [Link](https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning)
+
+---
+
+## How Important is AI
+
+
+<img src="../assets/images/AI/3rd-party/mckinsey-AI-impact-2.png" alt="XXX image missing" style="background:white;max-width:100%;max-height:100%;" width="60%"  />
+
+Notes:  
+- [Link](https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning)
+
+
+---
 
 ## How Important is AI ?
 
 
- * "8 out of 10 companies are already implementing, or planning to adopt AI by 2020"
-      - [Oracle](https://www.oracle.com/webfolder/s/delivery_production/docs/FY16h1/doc35/CXResearchVirtualExperiences.pdf)
+> "8 out of 10 companies are already implementing, or planning to adopt AI by 2020"  
+>    -- Oracle
 
  * AI is no longer 'novel'
 
@@ -161,7 +185,7 @@ Image credit: coursera
 
 Notes:
 
-Stat: 8 out of 10 - Oracle - https://www.oracle.com/webfolder/s/delivery_production/docs/FY16h1/doc35/CXResearchVirtualExperiences.pdf
+Source: [8 out of 10 - Oracle](https://www.oracle.com/webfolder/s/delivery_production/docs/FY16h1/doc35/CXResearchVirtualExperiences.pdf)
 
 
 ---
@@ -170,15 +194,17 @@ Stat: 8 out of 10 - Oracle - https://www.oracle.com/webfolder/s/delivery_product
 
 Notes:
 
-Primer is pronounced `primmer`
+
 
 ---
 
 ## AI Use Cases at a Glance
 
-| Finance                                                 	| Healthcare                                          	| Retail                               	| Manufacturing                                 	| Network & Security                              	|
-|---------------------------------------------------------	|-----------------------------------------------------	|--------------------------------------	|-----------------------------------------------	|-------------------------------------------------	|
-| -Fraud Detection -Algorithmic trading -Credit approvals 	| -Diagnosis -Patient care -Treatment recommendations 	| -Recommendations -Customer retention 	| -Identify defects -Fully automated assemblies 	| -Identify security breaches -Facial recognition 	|
+|       Finance       |         Healthcare        |        Retail       |        Manufacturing       |    Network & Security    |
+|:-------------------:|:-------------------------:|:-------------------:|:--------------------------:|:------------------------:|
+| Fraud Detection     | Diagnosis                 | Recommendations     | Identify defects           | Identify security breach |
+| Algorithmic trading | Patient care              | Customer retentions | Fully automated assemblies | Facial recognition       |
+| Credit Approvals    | Treatment recommendations |                     |                            |                          |
 
 
 Notes:
@@ -186,14 +212,17 @@ Notes:
 
 ---
 
+
+
 ## Use Case - Uber Eats
+<img src="../assets/images/logos/uber-eats-03.png" alt="uber-eats-03.png" style="width:10%;float:right;"/>
 
-<img src="../assets/images/deep-learning/Use-Case-Uber-Eats-01.png" alt="Use-Case-Uber-Eats-01.png" style="width:40%;"/>
+<img src="../assets/images/deep-learning/Use-Case-Uber-Eats-01.png" alt="Use-Case-Uber-Eats-01.png" style="width:60%;"/>
 
-<img src="../assets/images/deep-learning/3rd-party/uber-eats-2.png" alt="uber-eats-2.png" style="width:10%;"/><img src="../assets/images/deep-learning/3rd-party/uber-eats-03.png" alt="uber-eats-03.png" style="width:10%;"/>
+<!-- <img src="../assets/images/deep-learning/3rd-party/uber-eats-2.png" alt="uber-eats-2.png" style="width:10%;"/> -->
 
 
- * [Link](https://www.youtube.com/watch?v=AiinFkL-pmw&feature=youtu.be)
+[AI @ Uber Eats Video](https://www.youtube.com/watch?v=AiinFkL-pmw&feature=youtu.be)
 
 Notes:
 
@@ -221,45 +250,78 @@ https://venturebeat.com/2018/10/02/uber-eats-and-the-6b-bookings-run-rate-the-ai
 
 ## Uber Eats - AI
 
+Here are the actions in Uber Eats 
 
- * When users are ordering, first step is to choose a restaurant
+- Step 1: When user launches the app, need to display restaurants
 
- * Restaurant Recommendations
+- Step 2: Choose menu items from a restaurant 
 
-     - Recommend restaurants based on past orders
+- Step 3: Uber to dispatch a courier to pick up the food and deliver 
+    - Plan the optimal route for pick and up delivery
 
-     - Location based
+- Step 4 : Gather feedback from user (ratings / reviews)
 
-     - Balance new restaurants vs. established restaurants
+---
 
-     -  **Question for class** : What other factor Uber might consider when recommending a restaurant?
+## Uber AI : Step 1 : Recommending Restaurants
 
- * Once a restaurant is chosen, recommend food items
+<img src="../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
-     - Based on past orders
 
-     - Most popular items
+**Question for class**     
+What factors Uber might consider when recommending a restaurant?
 
-     -  **Question for class** : What other factor Uber might consider when recommending a food item?
+(Answer next slide)
+
+---
+
+## Uber AI : Step 1 : Recommending Restaurants
+
+- Recommend restaurants based on past orders
+
+- Location based
+
+- Balance new restaurants vs. established restaurants
+
+<img src="../assets/images/deep-learning/3rd-party/Buildin-a-afair-marketplace.png" alt="Buildin-a-afair-marketplace.png" style="width:40%;"/>
+<img src="../assets/images/deep-learning/Efficient-frontier.png" alt="Efficient-frontier.png" style="width:40%;"/>
+<!-- <img src="../assets/images/deep-learning/Recommender-System.png" alt="Recommender-System.png" style="width:30%;"/> -->
+
+
+---
+## Uber Eats AI : Step 2 : Recommend Menu Items 
+
+<img src="../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+
+
+**Question for class** :   
+What factors Uber might consider when recommending a items from a restaurant?
+
+(Answer next slide)
+
+---
+
+## Uber Eats AI : Step 2 : Recommend Menu Items 
+
+
+- Based on past orders
+
+- Most popular items
+
+- 'Specials'
+
+> "Don't order fish at restaurants on Mondays"  
+>   -- Anthony Bourdain, Chef and Author "Kitchen Confidentials"
+
+<img src="../assets/images/generic/3rd-party/anthony-bordain-1.jpg" alt="Buildin-a-afair-marketplace.png" style="width:15%;"/>
+
+
 
 Notes:
 
 
 ---
 
-## UberEats - Recommender System
-
-
- * Keeping users happy and restaurants happy
-
-<img src="../assets/images/deep-learning/Efficient-frontier.png" alt="Efficient-frontier.png" style="width:25%;"/>
-
-<img src="../assets/images/deep-learning/Recommender-System.png" alt="Recommender-System.png" style="width:40%;"/><img src="../assets/images/deep-learning/3rd-party/Buildin-a-afair-marketplace.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;"/>
-
-Notes:
-
-
----
 
 ## UberEats - AI Architecture / Workflow
 
@@ -273,6 +335,65 @@ Source : https://www.youtube.com/watch?v=AiinFkL-pmw&feature=youtu.be
 
 
 ---
+
+## Use Case : Uber driver verification
+
+- To increase passenger safety, Uber drivers have to verify their identity before accepting rides
+
+- Uber uses [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to recognize 7 million+ drivers in milli seconds
+
+- [Link](https://venturebeat.com/wp-content/uploads/2016/09/uberids.gif?resize=343%2C600&strip=all)
+
+<img src="../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../assets/images/deep-learning/3rd-party/uber-rides-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../assets/images/deep-learning/3rd-party/uber-rides-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
+
+
+
+---
+
+## Use Case : Photobucket
+
+- [Photobucket](http://photobucket.com/) is a image / video hosting service
+
+- They want to identify and tag NSFW (Not Safe For Work) images and offensive images
+
+- Previously, their human moderation team was only able to monitor about 1% of content
+
+- Now AI system (Using [Clarify](https://www.clarifai.com/)), screens images and tags them properly.  
+Illegal images (child pornography ..etc) are flagged for law enforcement
+
+- [Link](https://blog.clarifai.com/how-photobucket-uses-image-recognition-to-protect-its-community-from-unwanted-content)
+
+<img src="../assets/images/logos/photobucket-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
+<img src="../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+
+
+Notes:  
+- https://blog.clarifai.com/how-photobucket-uses-image-recognition-to-protect-its-community-from-unwanted-content
+
+---
+
+## Use Case : Staples
+
+- [Staples](https://www.staples.com) relies on organic search traffic to drive sales
+
+- One way the ways to score high on search engine results is put meaningful ALT tags for each product images
+
+- Doing it manually was an expensive proposition
+
+- They use  [Clarify](https://www.clarifai.com/) to automatically tag images
+
+- [Link](https://clarifai.com/customers/staples)
+
+<img src="../assets/images/logos/staples-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+
+Notes:  
+- https://clarifai.com/customers/staples
+
+---
+
 
 ## Use Case - AirBnB - Customer Service
 
@@ -310,79 +431,74 @@ http://bigdatausecases.info/entry/airbnb-driving-a-higher-level-of-customer-supp
 
 ## Use Case in Finance: Capitol One - Credit Card Fraud Prevention
 
-<img src="../assets/images/deep-learning/3rd-party/capitalone-logo.png" alt="capitalone-logo.png" style="width:20%;"/>
+<img src="../assets/images/deep-learning/3rd-party/capitalone-logo.png" alt="capitalone-logo.png" style="width:20%;float:right;"/>
 
  * Capitol ONE:
-
      - 365 Billion in assets,
-
      - 8th largest bank, 4th largest credit issuer
+     
+* Challenge:
+    - minimize fraudulent credit card transactions
+    - Huge volume, 20 million transactions a day
+    - Keep history for 60 days
 
- * Huge volume
-
-     - 20 million transactions a day
-
-     - Keep history for 60 days
-
----
-## Use Case in Finance: Capitol One - Credit Card Fraud Prevention
-
- * Used machine learning to reduce credit card fraud.. by flagging suspicious charges
-
- * Links
-
-     - [Info](http://bigdatausecases.info/entry/a-machine-learning-approach-recommendation-engine-for-real-time-processing-use-case-at-capital-one)
-
-     - [video](https://vimeo.com/274801502)
-
+* Solution
+     - Used machine learning to reduce credit card fraud
+     - Increased accuracy significantly over legacy methods
+     - minimize fraud loss --> more profit
 
 Notes:
 
-http://bigdatausecases.info/entry/a-machine-learning-approach-recommendation-engine-for-real-time-processing-use-case-at-capital-one
-https://vimeo.com/274801502
+- [case study](http://bigdatausecases.info/entry/a-machine-learning-approach-recommendation-engine-for-real-time-processing-use-case-at-capital-one)
+- [video](https://vimeo.com/274801502)
 
 
 ---
 
 ## AI in Customer Service @ Bank of America
 
+<img src="../assets/images/logos/bank-of-america.png" alt="bank-of-america.png" style="width:30%;float:right;"/>
 
  * Bank of America virtual assistant
 
- * Searching through transactions ("show me my total expenses to Disneyland trip")
+ * Searching through transactions 
+    - "show me my total expenses to Disneyland trip"
 
  * Bill pay ("Pay $50 to PTA")
-
- * Link : [story](https://www.zdnet.com/article/bank-of-america-debuts-its-ai-powered-assistant-erica/),[video](https://www.youtube.com/watch?v=Ajhd8iBUMAQ)
-
-<img src="../assets/images/deep-learning/3rd-party/bank-of-america.png" alt="bank-of-america.png" style="width:40%;"/><img src="../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;"/>
-
+ 
+<img src="../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;"/>
 
 Notes:
 
-https://www.zdnet.com/article/bank-of-america-debuts-its-ai-powered-assistant-erica/
+- [story](https://www.zdnet.com/article/bank-of-america-debuts-its-ai-powered-assistant-erica/)
+- [video](https://www.youtube.com/watch?v=Ajhd8iBUMAQ)
 
 
 ---
 
-## Chatbots @ Lyft (A personal story)
+## AI Chatbots @ Lyft (A personal story)
+<img src="../assets/images/logos/lyft-logo-1.png" alt="lyft.png" style="width:20%;float:right;"/>
 
  * Scenario: I ordered a Lyft car, but the driver went to a wrong location. So I cancelled the ride, but charged a $5 cancellation fee.
 
  * So I go to Lyft app's help and start a chat with 'customer service'
 
-        - `Me : "Hi, My driver went to a wrong location.  So I had to cancel.  But I was charged a cancellation fee.Can that be refunded"`
+```
+Me: 
+    Hi, My driver went to a wrong location.  
+    So I had to cancel.  
+    But I was charged a cancellation fee.
+    Can that be refunded"`
 
-	- `Customer Service: "I see, this is your first cancellation in past 2 months.  We will refund you the money.Have a nice day!"`
+Customer Service: 
+    I see, this is your first cancellation in past 2 months.  
+    We will refund you the money.Have a nice day!"`
+```
 
-
- * Resolution time:  **about 20 seconds!**
-
- * No phone calls,
-
- * No wait time
-
-<img src="../assets/images/deep-learning/3rd-party/lya.png" alt="lya.png" style="width:10%;"/>
+- Hightlighs 
+     - Resolution time:  **about 20 seconds!**
+     - No phone calls,
+     - No wait time
 
 
 Notes:
@@ -392,268 +508,68 @@ Notes:
 
 ## AI in Healthcare
 
- * [DeepMind's AI can detect over 50 eye diseases as accurately as a doctor](https://www.theverge.com/2018/8/13/17670156/deepmind-ai-eye-disease-doctor-moorfields)
+<img src="../assets/images/deep-learning/3rd-party/AI-in-Healthcare.png" alt="AI-in-Healthcare.png" style="width:50%;float:right;"/>
 
+* DeepMind's AI can detect over 50 eye diseases as accurately as a doctor
 
-<img src="../assets/images/deep-learning/3rd-party/AI-in-Healthcare.png" alt="AI-in-Healthcare.png" style="width:50%;"/>
+* Case study at London's Morefield's Hospital
 
-Notes:
+* Typical eye diagnosis took 2 weeks 
 
-https://www.theverge.com/2018/8/13/17670156/deepmind-ai-eye-disease-doctor-moorfields
+* AI can diagnose it in a flash
 
-
----
-
-# Data Science
-
----
-
-## What is "Data Science"?
-
-
- *  **Question for the class:** What comes to your mind when you hear the term "Data Science"?
-
-Notes:
-
-
----
-
-## What is 'Data Science'
-
- * From Mike Conway: A practice spanning multiple disciplines
-
-<img src="../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:35%;"/>
-
-
-Notes:
-
-http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
-
-
----
-
-## What Is Data Science?
-
-
- * "Data-driven application development"
-
- * A new breed of discipline fueled by
-
-     - Big data  (we have lot more data these days)
-
-     - Lot of intelligence can be mined from this data
-
-     - Technology revolutions like Hadoop & NoSQL that enabled Big Data processing possible
-
- * Involves multiple disciplines
-
-     - Computer Science
-
-     - Statistics etc.
-
- * "**More (quality) data** usually beats **better algorithms**"
-
- * Jeff Hammerbacher invented the term in 2012 while at Facebook
-
-Notes:
-
-https://www.linkedin.com/in/jhammerb/
-https://en.wikipedia.org/wiki/Jeff_Hammerbacher
-
-
----
-
-## Who is "Data Scientist"?
-
-
- *  **Question for the class:** What comes to your mind when you think of "Data Scientist"?
-
-<img src="../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist-01.png" style="width:50%;"/>
-
-
-Notes:
-
-
----
-
-## Who is "Data Scientist"?
-
-
- *  **Question for the class:** What comes to your mind when you hear the term "Data Science"?
-
-
-Notes:
-
-
----
-
-## So Here Is Data Scientist
-
-<img src="../assets/images/deep-learning/here-is-data.png" alt="here-is-data.png" style="width:60%;"/>
-
-
-Notes:
-
-
-
----
-
-## Data Scientist Profile
-
-<img src="../assets/images/deep-learning/Data-Scientist-Profile.png" alt="Data-Scientist-Profile.png" style="width:60%;"/>
-
-
-Notes:
-
-Image from "Doing Data Science"
-
-
----
-
-## Class Exercise: Asses Your Data Scientist Profile
-
-
- *  **Overview:** You are going to asses your DS profile
-
- *  **Instructions:**
-
-     - Instructor will provide 'Data-Scientist-Skill-Matrix'  Excel file
-
-     - Download it and enter your scores.
-
-Notes:
-
-
-
-
----
-
-## Visualizations
-
-
- * How you tell the results - Very very important part!!
-
- * Good visualizations convey the point to the audience.
-
- * A good data scientist must learn good visualization techniques.
-
- * Standard graphs: line, bar, pie, ...
-
- * Modern visualizations: Heat maps, Animations (D3JS etc.)
-
-<img src="../assets/images/deep-learning/3rd-party/Visualizations-01.png" alt=Visualizations-01.png" style="width:30%;"/><img src="../assets/images/deep-learning/3rd-party/Visualizations-02.png" alt=Visualizations-02.png" style="width:30%;"/>
+* How?
+    - The AI system was trained on hundreds of thousands of previous eye scans and their diagnosis 
+    - Once it has learned enough then when it sees a new image, it can predict the outcome
+    - 90%+ accuracy
 
 
 
 Notes:
 
-US population heatmap : https://www.someka.net/excel-template/usa-heat-map-generator/
-National debt visualization: https://ricochet.com/archives/problem-no-one-dc-wants-talk/
+- [Source](https://www.theverge.com/2018/8/13/17670156/deepmind-ai-eye-disease-doctor-moorfields)
 
 
 ---
 
-## Visualizations Demo: Google Music Trends
+## Clarifai Demo
 
+- Go to : https://clarifai.com/demo
 
-<img src="../assets/images/deep-learning/3rd-party/Google-Music-Trends.png" alt="Google-Music-Trends.png" style="width:60%;"/>
+- Upload an image (or give a image URL)
 
-Notes:
+- Examine the output.  
+Have fun :-)
 
-http://research.google.com/bigpicture/music/
+<img src="../assets/images/deep-learning/3rd-party/clarifai-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%" />
 
-
----
-
-## Visualizations Demo: American Workday
-
-
-<img src="../assets/images/deep-learning/3rd-party/American-Workday-01.png" alt="American-Workday-01.png" style="width:25%;"/><img src="../assets/images/deep-learning/3rd-party/American-Workday-02.png" alt="American-Workday-02.png" style="width:25%;"/>
-
-
-
- * [Link to NPR story](https://www.npr.org/sections/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph?/templates/story/story_php=)
-
-
-
-
-Notes:
-
-https://www.npr.org/sections/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph?/templates/story/story_php=
-
-
----
-
-## Visualizations Demo: National Debt Visualized
-
-
- * [Link to Demonocracy](http://demonocracy.info/infographics/usa/us_debt/us_debt.html)
-
-
-<img src="../assets/images/deep-learning/3rd-party/National-Debt-Visualized-01.png" alt="National-Debt-Visualized-01.png" style="width:55%;"/>
-
-Notes:
-
-http://demonocracy.info/infographics/usa/us_debt/us_debt.html
-
-
----
-
-## Visualizations Demo: US Budget
-
-<img src="../assets/images/deep-learning/3rd-party/US-Budget.png" alt="US-Budget.png" style="width:40%;"/>
-
- * [Link to NYTimes article](https://archive.nytimes.com/www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html)
-
-
-
-Notes:
-
-https://archive.nytimes.com/www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html
-
-
----
-
-## Visualizations Tools
-
-| Eco system 	| Package    	| Description                                                                     	|
-|------------	|------------	|---------------------------------------------------------------------------------	|
-| Python     	| Matplotlib 	| -Powerful, portable -Very versatile and capable -Default library for many tools 	|
-|            	| Seaborn    	| -Higher level API based on Matplotlib -Stylish graphs by default                	|
-|            	| Bokeh      	| -Streaming data -Interactive, web ready plots                                   	|
-|            	| Plotly     	| -Online and python -Interactive graphs                                          	|
-| JavaScript 	| D3         	| -online, web ready -interactive                                                 	|
-| R          	| Ggplot2    	| -powerful, very capable -Can be complex                                         	|
-|            	| GgVis      	| -Web ready graphs                                                               	|
-
-
-Notes:
-
+Notes:  
+https://clarifai.com/demo
 
 ---
 
 # What is AI
 
-Notes:
-
-Primer is pronounced `primmer`
 
 ---
-## Informal Definition of Machine Learning
 
- * Arthur Samuel
+## Definition of Machine Learning
 
-     -  "**The field of study that gives computers the ability to learn without being explicitly programmed.**"
+<img src="../assets/images/deep-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:15%;float:right;"/>
 
- * Example: Self-driving cars
+> "The field of study that gives computers the ability to learn without being explicitly programmed."  
+>   -- Arthur Samuel (1959)
 
-     - Tell the car the rules, or
 
-     - Let it record the scenery and your reactions
+* Example: Self-driving cars
+    - Historical approach:  
+    Write a massive program to instruct the car to handle all possible scenarios encountered while driving 
+        - This is immensely difficult
 
-     - Let it predict the next reaction
+    - AI approach:  
+        - Let AI learn by observing the scenery and your  reactions
+        - Once it learnt enough, let the AI predict the next reaction for a scenary
 
-<img src="../assets/images/deep-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:15%;"/>
 
 
 Notes:
@@ -663,13 +579,13 @@ Notes:
 
 ## Spam Detection - Traditional (Rule Based) Approach
 
+* Here is an example of spam detection rule engine
 
- * Computers follow explicit instructions (code)
+* The rules are coded by developers
 
- * Can be tens of millions code lines but still explicit instructions, something like this:
+* There could be 100s of 1000s of rules!
 
-```text
-// explicitly coding the rules
+```java
 
 if (email.from_ip.one_of("ip1", "ip2", "ip3")) {
 	result = "no-spam"
@@ -726,88 +642,30 @@ Notes:
 
 ---
 
-# Understanding AI Vocabulary
+## Generic / Narrow AI
 
-Notes:
+### Artificial Narrow Intelligence  (ANI)
+<img src="../assets/images/deep-learning/3rd-party/Driver_free_car.png" alt="Driver_free_car.png" style="width:25%;float:right;"/>
 
-Primer is pronounced `primmer`
-
----
-
-## AI / Machine Learning / Deep Learning
-
-
- *  **Artificial Intelligence (AI):** Broader concept of "making machines smart"
-
- *  **Machine Learning:** Current application of AI that machines learn from data using mathematical, statistical models
-
- *  **Deep Learning: (Hot!)** Using Neural Networks to solve some hard problems
-
-<img src="../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="width:30%;"/>
-
-Notes:
+- Focused on a specific tasks 
+- Self driving, smart speaker, image recognition
+- Tremendous progress in the last few years
 
 
----
 
-## AI / Machine Learning / Deep Learning
+### Artificial Generic Intelligence (AGI)
+<img src="../assets/images/generic/3rd-party/terminator-1.jpg" alt="bank-of-america.png" style="width:25%;float:right;"/>
 
-
-<img src="../assets/images/deep-learning/AI-ML-DL-02.png" alt="AI-ML-DL-02.png" style="width:50%;"/>
-
-Notes:
-
-
----
-
-## AI Vocabulary
+- AI can do anything a human can do 
+- We are decades or hundreds of years away from this
+- So no need to worry about killer robots yet :-) 
 
 
- *  **Training**
-
-     - Feeding data to an algorithm to create a model
-
-     - Computationally expensive
-
- *  **Prediction / Inference**
-
-     - Created model answering questions (very fast)
-
-     - "is this transaction fraud / not-fraud"
-
-     - "What are the recommended movies for this user"
-
-
-<img src="../assets/images/deep-learning/AI-Vocabulary.png" alt="AI-Vocabulary.png" style="width:50%;"/>
-
-Notes:
-
-
----
-
-## AI Vocabulary
-
-
- *  **(Artificial) Neural Networks**
-
-     - Layers of parallel processing elements, working together to solve very complex tasks
-
-     - Inspired by neurons from human brain
-
-     - Used in Deep Learning
-
-     - (More on this later)
-
-Notes:
 
 
 ---
 
 # A Brief History of AI
-
-Notes:
-
-Primer is pronounced `primmer`
 
 ---
 
@@ -840,14 +698,15 @@ Notes:
 ## Another AI Approach - Bottom Up
 
 
- * Computers can learn from `ground up` (data-driven)
 
  * E.g. how babies learn to talk:
 
-     - Learn from example
+     - They don't start by learning the 'rules of the language'
+     
+     - Learn by example
 
-     - They don't know the 'whole dictionary' or 'grammatical rules'
-
+ * Train computers the similar way
+ 
  * The focus shifts from  **logic to data**
 
  * More data --> smarter systems
@@ -865,11 +724,9 @@ Notes:
 
 ---
 
-## Translation - Early Approach
+## AI Success Story : Translation - Early Approach
 
- * Creating a translation system from English <--> Japanese
-
- * Code in the following:
+ * Creating a translation system (English <--> Japanese) involes the following
 
      - English dictionary + grammar rules
 
@@ -885,30 +742,28 @@ Notes:
 
      - Context and subtle meanings are lost
 
- * "Minister of agriculture" --> "Priest of farming"
+ * Example : "Minister of agriculture" --> "Priest of farming"
 
 Notes:
 
 
 ---
 
-## Translation - 'Bottom Up' Approach (Google Translate)
+## Translation - AI Approach (Google Translate)
 
 
- * Google Translate has been ported to 'Google Brain' on Sept 2016
+ * Google Translate switched to 'Google Brain' on Sept 2016
 
  * System learned from 'data'
 
  * AI based system improved the accuracy many times over
 
- * [Link to case study](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
-
 <img src="../assets/images/deep-learning/Google-translate-01.png" alt="Google-translate-01.png" style="width:40%;"/>
 
 Notes:
 
-https://en.wikiquote.org/wiki/Jorge_Luis_Borges
-https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
+- [Case study](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
+- [Jorge Luis Borges](https://en.wikiquote.org/wiki/Jorge_Luis_Borges)
 
 
 ---
@@ -923,11 +778,8 @@ https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
 
 <img src="../assets/images/deep-learning/3rd-party/Driver_free_car.png" alt="Driver_free_car.png" style="width:40%;"/>
 <img src="../assets/images/deep-learning/3rd-party/Face_detection.png" alt="Face_detection.png" style="width:40%;"/>
+
 Notes:
-
-Image credit : Wikimedia: CCZero license : https://commons.wikimedia.org/wiki/File:Driver_free_car.jpg
-Image credit : WikiMedia: (Creative Commons) : https://commons.wikimedia.org/wiki/File:Face_detection.jpg
-
 
 
 ---
@@ -939,15 +791,6 @@ Image credit : WikiMedia: (Creative Commons) : https://commons.wikimedia.org/wik
 <img src="../assets/images/deep-learning/3rd-party/cats-and-dogs.png" alt="cats-and-dogs.png" style="width:30%;"/>
 
 Notes:
-
-All images are used with  'creative common zero-CCZero' permissions  from Pexels.com
-https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
-https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/
-https://www.pexels.com/photo/tabby-cat-side-view-26511/
-https://www.pexels.com/photo/cat-whiskers-kitty-tabby-20787/
-https://www.pexels.com/photo/animal-dog-pet-brown-5018/
-https://www.pexels.com/photo/light-golden-retriever-puppy-close-up-photography-159541/
-https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
 
 ---
 
@@ -968,11 +811,6 @@ https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-fi
 
 Notes:
 
-All images are used with 'creative common zero -  cc-zero' permissions from  Pexels.com
-https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
-https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
-https://www.pexels.com/photo/dogs-pets-puppies-animals-38008/
-https://www.pexels.com/photo/orange-tabby-cat-beside-fawn-short-coated-puppy-24104/
 
 
 ---
@@ -1009,10 +847,15 @@ Notes:
 
  *  **'Big Compute** ' - **cloud**  platforms significantly lowered the barrier to massive compute power
 
-     - $1 buys you 16 core + 128 G + 10 Gigabit machine for 1 hr on AWS!
+     - $1 rents you 16 core + 128 G + 10 Gigabit machine for 1 hr on AWS!
      - So running a 100 node cluster for 5 hrs --> $500
 
- *  **Advances in hardware** - CPU / GPUs
+ *  **Advances in hardware** - CPU / GPUs / TPUs
+ 
+ - **Advances in Algorithms**
+
+ - **Availability of pre-trained models**
+
 
 Notes:
 
@@ -1091,13 +934,55 @@ Notes:
 
 Notes:
 
+---
 
+
+## Video - CPU vs GPU Demonstration
+
+<img src="../assets/images/deep-learning/3rd-party/video-cpu-gpu.png" alt="video-cpu-gpu.png" style="width:76%;"/>
+
+[Video](https://www.youtube.com/watch?v=-P28LKWTzrI)
+
+Notes:
+
+https://www.youtube.com/watch?v=-P28LKWTzrI
 
 
 ---
 
+## Video - Advances in Hardware - Nvidia
+
+<img src="../assets/images/deep-learning/3rd-party/video-nvidia-self-driving.png" alt="video-nvidia-self-driving.png" style="width:60%;"/>
+
+[Video Nvidia Self Driving DL](https://www.youtube.com/watch?v=0rc4RqYLtEU)
+
+
+
+Notes:
+
+- [Video Nvidia Self Driving DL](https://www.youtube.com/watch?v=0rc4RqYLtEU)
+
+
+---
+
+## Video - Advances in Hardware - Nvidia
+
+<img src="../assets/images/deep-learning/3rd-party/Video-Advances-Hardware-02.png" alt="Video-Advances-Hardware-02.png" style="width:60%;"/>
+
+[Nvidia GPU, Audi autonomous driving](https://www.youtube.com/watch?v=DjAJnQoNdMA)   
+Cool comparison of learning rate of Brain vs. CPU vs. GPU around 50 second mark
+
+Notes:
+
+* [Nvidia GPU, Audi autonomous driving](https://www.youtube.com/watch?v=DjAJnQoNdMA)
+
+
+---
+
+
 ## Hardware - TPU (Tensor Processing Unit)
 
+ <img src="../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" alt="Driver_free_car.png" style="width:30%;float:right;"/>
 
  * A [Tensor processing unit (TPU)](https://en.wikipedia.org/wiki/Tensor_processing_unit) is an AI accelerator application-specific integrated circuit (ASIC) developed by Google specifically for neural network machine learning
 
@@ -1110,6 +995,8 @@ Notes:
      - A TPU can process 100 million photos a day
 
  * Available in Google Cloud platform
+ 
+
 
 Notes:
 
@@ -1119,16 +1006,21 @@ https://github.com/tensorflow/tensorflow
 
 ---
 
-## Google TPU System in Data Center
+## Video - TPU
 
-<img src="../assets/images/deep-learning/3rd-party/Google-TPU-System-Data-Center.png" alt="Google-TPU-System-Data-Center.png" style="width:76%;"/>
+<img src="../assets/images/deep-learning/3rd-party/video-google-cloud-tpu.png" alt="" style="width:50%;"/>
+
+[Google TPU](https://www.youtube.com/watch?v=UsDhVx6cOrw)  
+(up to 5 min mark)
+
 
 Notes:
 
-Image credit: NY Times: https://www.nytimes.com/2018/02/12/technology/google-artificial-intelligence-chips.html
+https://www.youtube.com/watch?v=UsDhVx6cOrw
 
 
 ---
+
 
 ## Incredible Growth of AI Power
 
@@ -1144,15 +1036,10 @@ Notes:
 
 
  * Since 2012, the amount of compute used in the largest AI training runs has been increasing exponentially with a 3.5 month-doubling time (by comparison, Moore's Law had an 18-month doubling period)Source: (https://blog.openai.com/ai-and-compute/)
-
  * Phases:
-
      - Before 2012: It was uncommon to use GPUs for ML, making any of the results in the graph difficult to achieve.
-
      - 2012 to 2014: Infrastructure to train on many GPUs was uncommon, so most results used 1-8 GPUs rated at 1-2 TFLOPS for a total of 0.001-0.1 pfs-days.
-
      - 2014 to 2016: Large-scale results used 10-100 GPUs rated at 5-10 TFLOPS, resulting in 0.1-10 pfs-days. Diminishing returns on data parallelism meant that larger training runs had limited value.
-
      - 2016 to 2017: Approaches that allow greater algorithmic parallelism such as huge batch sizes, architecture search, and expert iteration, along with specialized hardware such as TPU's and faster interconnects, have greatly increased these limits, at least for some applications.
 
 Notes:
@@ -1161,70 +1048,79 @@ https://blog.openai.com/ai-and-compute/
 
 
 ---
+## Advances in Deep Learning Research
 
-## Video - CPU vs GPU Demonstration
+- In recent years, lot of money is chasing Deep Learning
 
-<img src="../assets/images/deep-learning/3rd-party/video-cpu-gpu.png" alt="video-cpu-gpu.png" style="width:76%;"/>
+- Companies like Google / Facebook / Amazon are in an 'arms race' to hire the best talent in AI
 
- * [Video](https://www.youtube.com/watch?v=-P28LKWTzrI)
+- Lot of research going on in public / private sectors
 
-Notes:
+- Organizations like OpenAI are fostering research in public domain
 
-https://www.youtube.com/watch?v=-P28LKWTzrI
+---
+## Creating Deep Learning Models Have Become Easier
+
+- Historically, neural network models had to be coded from scratch
+    - Converting math into code, testing and debugging
+    - This could take weeks or months
+
+- **Now tooling and libraries have gotten so much better**
+    - High level tools like Keras and efficient libraries like Tensorflow, allow us to code complex models very quickly
+
+---
+## Availability of Pre-Trained Models
+
+> "If I have seen further it is by standing on the shoulders of giants"  
+>  -- Isaac Newton
+
+<img src="../assets/images/deep-learning/3rd-party/standing-on-shoulders.jpg" alt="XXX image missing" style="background:white;float:right;max-width:100%;" width="20%" />
+
+
+- Creating complex models takes lot of data and lot of training
+    - this can take huge amount of compute power (days or weeks of training)
+
+- Now, we don't have to start from scratch
+
+- There are lot of high quality models that are open source.  We can start with them and tweak them to fit our needs
+
+- _This is probably the biggest reason DL has become mainstream_
+
+- See example on next slide
+
+---
+
+## Model Zoos
+
+<img src="../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
+
+- Building and training complex models from scratch takes a lot of effort and compute
+
+- Luckily, there are lot models available publicly  
+    - Computer vision models : LeNet, AlexNet, ZFNet, GoogLeNet, VGGNet, Inception
+
+- Available model zoos
+    - [Tensorflow model zoo](https://github.com/tensorflow/models)
+    - [Caffe model zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo)
+
 
 
 ---
 
-## Video - Advances in Hardware - Nvidia
 
-<img src="../assets/images/deep-learning/3rd-party/video-nvidia-self-driving.png" alt="video-nvidia-self-driving.png" style="width:60%;"/>
+## Building on Other Models
 
- * [Nvidia Self Driving DL](https://www.youtube.com/watch?v=0rc4RqYLtEU)
+- Say we want to develop a model that can classify people into male / female
 
+- Rather than starting from scratch, we can start with a model that can recognize peopole
 
+- And then train it more to classify them into male/female
 
-Notes:
-
-* Nvidia Self Driving DL - https://www.youtube.com/watch?v=0rc4RqYLtEU
-
+<img src="../assets/images/deep-learning/transfer-learning-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="80%" />
 
 ---
 
-## Video - Advances in Hardware - Nvidia
 
-<img src="../assets/images/deep-learning/3rd-party/Video-Advances-Hardware-02.png" alt="Video-Advances-Hardware-02.png" style="width:60%;"/>
-
- * [Nvidia GPU, Audi autonomous driving](https://www.youtube.com/watch?v=DjAJnQoNdMA)
-
-    - Cool comparison of learning rate of Brain vs. CPU vs. GPU around 50 second mark
-
-
-
-Notes:
-
-* Nvidia Self Driving DL - https://www.youtube.com/watch?v=0rc4RqYLtEU
-* Nvidia GPU, Audi autonomous driving :  https://www.youtube.com/watch?v=DjAJnQoNdMA
- * cool comparison of learning rate of Brain vs. CPU vs. GPU  around 50 second mark
-https://www.youtube.com/watch?v=UsDhVx6cOrw
-
-
----
-
-## Video - Advances in Hardware
-
-
- * [Google TPU](https://www.youtube.com/watch?v=UsDhVx6cOrw)
-
-    - (up to 5 min mark)
-
-<img src="../assets/images/deep-learning/3rd-party/TPU-Cloud.png" alt="TPU-Cloud.png" style="width:50%;"/>
-
-Notes:
-
-https://www.youtube.com/watch?v=UsDhVx6cOrw
-
-
----
 
 ## AI History
 
@@ -1248,12 +1144,29 @@ https://www.youtube.com/watch?v=056v4OxKwlI
 
 ---
 
-# Machine Learning vs. Deep Learning
+## Demo: Machine Learning Basics
+
+
+
+
+<img src="../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/>
+
+[Link](https://www.youtube.com/watch?v=HcqpanDadyQ)
+
+Notes:
+
+https://www.youtube.com/watch?v=HcqpanDadyQ
+
 
 ---
 
-## AI / Machine Learning / Deep Learning
+# AI Vocabulary
 
+
+---
+## AI Vocabulary : AI / Machine Learning / Deep Learning
+
+<img src="../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="width:40%;float:right;"/>
 
  *  **Artificial Intelligence (AI):** Broader concept of "making machines smart"
 
@@ -1262,28 +1175,276 @@ https://www.youtube.com/watch?v=056v4OxKwlI
  *  **Deep Learning: (Hot!)** Using Neural Networks to solve some hard problems
 
 
-<img src="../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="width:30%;"/>
+Notes:
+
+
+---
+
+## AI / Machine Learning / Deep Learning
+
+
+<img src="../assets/images/deep-learning/AI-ML-DL-02.png" alt="AI-ML-DL-02.png" style="width:50%;"/>
 
 Notes:
 
 
 ---
 
+## AI Vocabulary: Data Science 
+
+<img src="../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:30%;float:right;"/>
+
+- **Data Science** : Deriving intelligence from data 
+
+- For example, a real estate company can use data science to figure out which types of homes to build to maximize profits
+
+- A machine learning algorithm can learn from the past data and predict house prices for new houses coming on market
+
+| Bedrooms (input 1) | Bathrooms (input 2) | Size (input 3) | Sale Price (in thousands) (we are trying to predict) |
+|--------------------|---------------------|----------------|------------------------------------------------------|
+| 3                  | 1                   | 1500           | 230                                                  |
+| 3                  | 2                   | 1800           | 320                                                  |
+| 5                  | 3                   | 2400           | 600                                                  |
+| 4                  | 2                   | 2000           | 500                                                  |
+| 4                  | 3.5                 | 2200           | 550                                                  |
+
+
+
+
+
+---
+
+## Data Science vs. Machine Learning
+
+- **Data Science** works with existing data and derive intelligence 
+
+- **Machine Learning** learns from existing data and predicts on new/unseen data 
+
+- The definitions are not clear-cut,  some people use these interchangeably
+
+<img src="../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist-01.png" style="width:50%;"/>
+
+---
+
+## AI Vocabulary : Neural Networks
+
+ - Layers of parallel processing elements, working together to solve very complex tasks
+
+ - Inspired by neurons from human brain
+
+ - Used in Deep Learning
+
+ - (More on this later)
+ 
+<img src="../assets/images/deep-learning/Neural-Networks-Simulation.png" alt="AI-ML-DL.png" style="width:90%;"/>
+
+Notes:
+
+---
+
+## AI Vocabulary : Training vs. Inference
+
+*  **Training**
+    - Feeding data to an algorithm to create a model
+    - Computationally expensive (can take hours, days, weeks)
+        - Google translate model trains on 3 billion+ words on 100+ GPUs for week+
+*  **Prediction / Inference**
+    - Created model answering questions (very fast)
+    - "is this transaction fraud / not-fraud"
+    - "What are the recommended movies for this user"
+
+<img src="../assets/images/deep-learning/AI-Vocabulary.png" alt="AI-Vocabulary.png" style="max-width:100%;width:70%;"/>
+
+---
+
+## Data Size Vs. Model Size
+
+- An algorithm can train on small / large / huge amount of data (depending on problem complexity)
+    - Since it can be computationally very intensive;  So we may use cluster of computers for training
+    - Clusters can contain 100s (or 1000s) of CPUs/GPUs/TPUs
+
+- The resulting model is orders of magnitude smaller in size 
+    - it could fit in your phone!
+
+<img src="../assets/images/AI/data-size-vs-model-size.png" alt="AI-Vocabulary.png" style="max-width:100%;"/>
+
+---
+
+## AI Vocabulary: Algorithm vs. Model
+
+* **Algorithm**
+    - Algorithms are 'generic' mathematical formulas 
+* **Model**
+    - algorithm + data ==> model 
+* Often Algorithm and Model are used interchangeably
+
+<img src="../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="width:66%;"/>
+    
+---
+
+## Algorithm and Model
+
+  <img src="../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:80%;"/> 
+  
+---
+
+
+# AI and Data
+
+---
+
+## AI Starts with Data 
+
+- Lot of AI algorithms learn from data 
+
+- Generally, more data usually makes smarter algorithms 
+    - There are exceptions to this 
+
+
+---
+
+## Learning From Data 
+
+- Let's start with simple housing sales data 
+
+| Bedrooms (input 1) | Bathrooms (input 2) | Size (input 3) | Sale Price (in thousands) (we are trying to predict) |
+|--------------------|---------------------|----------------|------------------------------------------------------|
+| 3                  | 1                   | 1500           | 230                                                  |
+| 3                  | 2                   | 1800           | 320                                                  |
+| 5                  | 3                   | 2400           | 600                                                  |
+| 4                  | 2                   | 2000           | 500                                                  |
+| 4                  | 3.5                 | 2200           | 550                                                  |
+
+- An machine learning algorithm learns from the above data, and then tries to predict house prices on new data 
+
+
+| Bedrooms (input 1) | Bathrooms (input 2) | Size (input 3) | Predicted Sale Price (in thousands) |
+|--------------------|---------------------|----------------|-------------------------------------|
+| 3                  | 2                   | 1900           | ???                                 |
+| 4                  | 3                   | 2300           | ???                                 |
+
+---
+## Learning Process
+
+ *  **Phase 1 : Training**
+     - Algorithm learns from the data to create a model
+     - This step can get computationally expensive.  
+     Hours / days / weeks (this is why we use GPU / TPUs  and clusters of computers)
+ *  **Phase 2 : Prediction / Inference**
+     - Once a model is created it can answer questions 
+        - "what would be the sale price for this house"
+        - "is this transaction fraud / not-fraud"
+    - Prediction is very fast (milli seconds)
+
+
+
+<img src="../assets/images/deep-learning/AI-Vocabulary.png" alt="AI-Vocabulary.png" style="width:60%;"/>
+
+Notes:
+
+
+---
 ## Structured Data vs. Unstructured Data
 
-| Machine Learning                                                    | Deep Learning                                             |
-|---------------------------------------------------------------------|-----------------------------------------------------------|
-| Usually done with structured data,(database data, CSV files ..etc.) | Can handle unstructured data,(video, images, audio, text) |
+| Structured Data                                          | Unstructured Data                             |
+|----------------------------------------------------------|-----------------------------------------------|
+| Data has well defined structure.                         | Structure is not well defined or non existing |
+| Data in a database tables are well defined.  10 columns, first column is integer, second column is timestamp ..etc | videos, images                                             |
 
 <img src="../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="Structured-Data-Unstructured-Data.png" style="width:40%;"/>
+---
+
+## Structured Data Examples
+
+- Pretty much any data stored in a schema database
+
+| Bedrooms | Bathrooms | Size | Sale Price (in thousands) |
+|--------------------|---------------------|----------------|------------------------------------------------------|
+| 3                  | 1                   | 1500           | 230                                                  |
+| 3                  | 2                   | 1800           | 320                                                  |
+| 5                  | 3                   | 2400           | 600                                                  |
+| 4                  | 2                   | 2000           | 500                                                  |
+| 4                  | 3.5                 | 2200           | 550                                                  |
+
+- Text data (CSV, JSON) can have structure too
+
+JSON data 
+
+```json 
+{   "name" : "Joe",
+    "email" : "joe@gmail.com" }
+```
+
+CSV data (Comma Seperated Values)
+```
+joe,joe@gmail.com 
+jane,jane@gmail.com
+```
+
+---
+
+## Unstructured Data Examples
 
 
-Notes:
+- Text
+    - Documents : email, word documents 
+    - Survey results (customer feedback)
+    - customer support ticket notes 
+
+- Binary data 
+    - Audio (phone call recordings)
+    - Images
+    - Video (YouTube videos)
+    
+<img src="../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../assets/images/generic/3rd-party/video-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../assets/images/generic/3rd-party/audio-headphones-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
 
 
 ---
 
-## Unstructured Data Growth
+## Semi-Structured Data 
+
+- This is 'between' structured and and unstructured
+
+- Data has some structure, but it may not be well defined
+
+- Example, tweet data
+
+```json 
+{   "user_id" : "user123", 
+    "timestamp" : "2018-09-20 12:00:05 EST",
+    "device" : "iPhone X",
+    "location" : "34.893, 120.979",
+    "tweet" : "Enjoying my first Pumpkin Spice Latte at Starbucks in Seattle downtown  #PSL, @Starbucks",
+    "image_url" : "https://imgurl.com/1234"
+}
+```
+
+**Question to the class: What data points you can extract from above tweet?      Which is structured / unstructured?**
+
+---
+
+## Data 
+
+- Humanity is producing data at a rapid clip
+    - 90% of data is generated in last 2 years!
+    - 2.5 quintillion bytes of data per day
+    
+<img src="../assets/images/generic/3rd-party/domo_data-never-sleeps-5-01.png" alt="Data-growth-01.png" style="width:26%;"/>
+    
+Notes: 
+
+- [source: domo.com](https://www.domo.com/learn/data-never-sleeps-5?aid=ogsm072517_1&sf100871281=1)
+- [Forbes article](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#61df751760ba)
+    
+---
+
+## Data Growth Trends
+
+- As you can see, unstructured data is growing rapidly 
 
 <img src="../assets/images/deep-learning/3rd-party/Data-growth-01.png" alt="Data-growth-01.png" style="width:76%;"/>
 
@@ -1296,7 +1457,33 @@ Source : https://www.dubber.net/unlocking-unstructured-data-voice-processing-pow
 
 ---
 
-## Machine Learning vs. Deep Learning
+## Question For The Class 
+
+**Q: Can you name some examples of structured/unstructured data is generated at your home/work ?**
+
+
+| Structured Data | Unstructured Data |
+|-----------------|-------------------|
+| ???             | ???               |
+
+---
+
+## Data And AI 
+
+- Majority of the machine learning projects use 'structured data'
+    - predicting house prices, identifying credit card transactions ..etc.
+    
+- This will continue to grow as we get more and more data, and enterprises adopt more AI
+
+- We are only able to make significant headways in processing unstructured data 
+    - images , videos
+    
+- This is largely due to the advances of neural nets
+
+
+---
+
+## Scaling with Data
 
 
  * Deep Learning Algorithms scale better with data
@@ -1342,6 +1529,245 @@ Notes:
 
 ---
 
+## Dos and Don'ts For Collecting Data for AI
+
+AI starts with data, in this section we are going to look at some best practices 
+
+- How to acquire data 
+
+- How to curate/clean data 
+
+- How to deal with 'big data'
+
+---
+
+## Acquiring Data
+
+- Best data is the one you already have or  can collect on your own 
+    - Data you already have in your database (e.g. customer data)
+    - Website logs 
+    
+- Data can be acquired from 'data brokers'
+    - e.g. Stock market data
+
+- Some data is free 
+    - e.g. Census data
+
+
+---
+
+## Data Responsibilities 
+
+- Usually IT team is responsible building the data infrastructure
+
+- AI team 'uses' data  (they are IT team's clients)
+
+- Mistake:  Spend a lot of time gathering data and then involve AI team
+    - Not all data may be useful.  
+    - Involve AI team early on, so they can give feedback on data
+
+
+<img src="../assets/images/AI/data-team-and-AI-team.png" alt="XXX image missing" style="max-width:100%;width:50%;" />
+
+
+---
+
+## Dealing With Big Data
+
+- Most machine learning doesn't necessarily need 'Big Data'
+    - Even modest data can yield surprisingly decent results
+    
+- However, more data can significantly produce better results
+
+> "More data usually beats better algorithms"   
+>     [Anand Rajaraman](https://anand.typepad.com/datawocky/2008/03/more-data-usual.html)  (Walmart Labs)
+
+---
+
+## Comprehending Data Sizes 
+
+| Unit      | Acronym | Size       | Example                                                                                                                                                                                                                            |
+|-----------|---------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| byte      | b       | 1 b        | storing an integer in computer memory                                                                                                                                                                                              |
+| Kilo byte | KB      | 1000 bytes | - a small text file <br/> - a typical tweet is about 200 bytes                                                                                                                                                                     |
+| Mega byte | MB      | 1000 KB    | - a digital photo ~  2-5 MB <br/> - a song ~  1-5 MB                                                                                                                                                         |
+| Giga byte | GB      | 1000 MB    | - a DVD ~ 4.7 GB <br/> - 1hr HD movie stream ~ 3 GB,  1hr 4K movie ~ 7 GB <br/> - typical laptops have 2-16 GB memory <br/> - typical phones have 32 - 256 GB storage <br/> - typical servers have 256 - 512 GB memory |
+| Tera byte | TB      | 1000 GB    | - typical laptop hard drive ~ 1 TB <br/> - Now we are entering 'big data' territory                                                                                                                                                |
+| Peta byte | PB      | 1000 TB    | - This is truly big data territory <br/> - Facebook generates 4 PB of data every day <br/> - Uber has 100+ PB data                                                                                                         |
+| Exa Byte  | EB      | 1000 PB    |                                                                                                                                                                                                                                    |
+| Zeta Byte | ZB      | 1000 EB    |                                                                                                                                                                                                                                    |
+
+---
+
+## Big Data
+
+<img src="../assets/images/bigdata/bigdata-pyramid2.png" alt="XXX image missing" style="background:white;max-width:100%;width:50%;float:right;"/>
+
+- Traditionally structured data has been stored in databases
+
+- How ever databases have their limitations:
+    - they don't scale to huge data sizes
+    - or they can be incredibly expensive to store large amount of data 
+    - they don't handle unstructured data well
+
+
+
+---
+
+## Big Data Systems 
+
+- Storing big data requires large 'cluster' systems 
+
+- Choices
+    - On premise :  Hadoop 
+    - Cloud storage : Amazon S3, Google Cloud Storage, Azure storage
+
+---
+
+## Hadoop
+
+- Hadoop was developed at Yahoo and open sourced around 2006
+
+- Became 'the' platform for Big Data -- namely on premise
+
+- Hadoop provides **distributed storage** and **distributed computing**
+
+- Can scale upto 1000s of nodes
+
+<img src="../assets/images/hadoop/hadoop-highlevel.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/>
+
+---
+
+## Hadoop Storage Cost 
+
+<img src="../assets/images/hadoop/3rd-party/hadoop-cost2.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/>
+
+---
+
+## Cloud Storage Cost
+
+Cloud storage costs vary depending lot of factors (like volume, usage ..etc).  These are to give you an idea.  Plus the costs seem to go down each year.   
+For accurate pricing, see the provided links
+
+|                     | Amazon S3                                       | Google Cloud Storage                                  | Azure Storage                                                     |
+|---------------------|-------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------------------|
+| Cost per TB / month | $23                                             |   $26                                                   | $20                                                               |
+|                     | [More info](https://aws.amazon.com/s3/pricing/) | [More Info](https://cloud.google.com/storage/pricing) | [More info](https://azure.microsoft.com/en-us/pricing/calculator) |
+
+---
+
+
+# Doing AI Projects 
+
+---
+
+## What Problems Can AI Solve?
+
+- Andrew Ng's  __"one second"__ rule  
+"If you can do a task with less than ONE second of thought process, AI can do that easily"
+
+- What AI can do now
+    - Classifying email as spam / not spam
+    - Translating english sentence to Japanese
+    - Identifying an image (car vs boat)
+    - Identify damaged products off assembly line
+    - Customer support ticket routing
+    - self driving car : figuring out what is in front of it
+    - Identifying cancer cells from Xray image
+    
+<img src="../assets/images/generic/3rd-party/phone-screen-cracked-damage.jpg" alt="Data-Science.png" style="width:25%;"/> &nbsp; &nbsp;
+<img src="../assets/images/generic/3rd-party/car-3.png" alt="Data-Science.png" style="width:25%;"/>
+
+---
+
+## What AI Can not do 
+
+- **Complex tasks that combines multiple skills**
+
+- Do market research and write a report
+
+- If you don't have enough data
+    - if you train AI using 1000s of xray images it can learn to classify.  What if you only have handful of images?  
+    AI may not be able to provide good results
+
+- Understand human intension  
+For example, if a construction worker is waving you to stop or continue?
+
+<img src="../assets/images/generic/3rd-party/crossing-guard-2.png" alt="" style="width:25%;"/> &nbsp; &nbsp;
+<img src="../assets/images/generic/3rd-party/hitchhiker-1.jpg"  style="width:28%;"/>
+
+---
+
+## Some Thoughts on Evaluating  AI Projects
+
+- AI can do 'certain tasks', it may not be able to automate the whole work flow
+
+- For example, let's say we are deploying AI to handle customer tickets.
+
+- AI can easily 'route' tickets to appropriate queues and priorities 
+    - "Item arrived late, even though I paid for expedited shippping.  can I get a refund?" ==> Send it to 'refund' queue
+    - "Item arrived damaged, can I return it?" ==> send it to 'return' queue
+    
+- What AI can not do  (the whole workflow):
+    - Read the support ticket 
+    - call customer to confirm the issue 
+    - then issue a refund
+    - update the sales register
+---
+
+## Some Thoughts on Evaluating  AI Projects
+
+- Do you have enough data to get started?
+
+- For example let's say you want to identify damaged products off the assembly line, do you have enough pictures of good items and damaged items?
+
+
+<img src="../assets/images/generic/3rd-party/phone-screen-cracked-damage.jpg" alt="Data-Science.png" style="width:25%;"/>
+
+---
+
+## Some Thoughts on Evaluating  AI Projects
+
+- An AI system can evaluate an MRI scan pretty quickly to determine if the patient has a tumor
+
+- How ever it is not going to be able replace an trained oncologist, because they do lot of other things 
+    - train interns 
+    - consult with patients 
+    - evaluate equipments and treatments
+    
+- So an oncologist may deploy an AI system to help him with reviewing MRI scans quickly.  
+So he/she can focus on other 'higher order' functions
+
+---
+    
+## Quiz For the Class: AI Projects
+<img src="../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/>
+
+- Pick a couple of potential AI projects that is applicable to you 
+
+- What kind of data do you need for machine learning?  
+It may help to think along these lines 
+    -  Data we already have
+    - Data we can collect 
+    - 3rd party data - FREE or minimal cost
+    - 3rd party data - Premium 
+
+- What kind of data infrastructure do you have now?  Can it scale to handle future growth?
+
+    
+---
+# Machine Learning vs. Deep Learning
+
+---
+
+## Machine Learning / Deep Learning
+
+<img src="../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="max-width:90%"/>
+
+
+---
+
+
 ## Machine Learning vs. Deep Learning
 
 | Features                             | Machine Learning                                              | Deep Learning                                                    |
@@ -1361,25 +1787,40 @@ Notes:
 https://www.analyticsvidhya.com/blog/2017/04/comparison-between-deep-learning-machine-learning/
 
 
+
 ---
 
-## ML vs DL Explanation by Andrew Ng
+## Deciding Between Machine Learning(ML) and Deep Learning(DL)
 
-* One picture explaining the rise of Deep Learning
+- This is not an easy decision, but here are some factors to think about 
+
+- Have structured data?  Then both ML and DL can be used 
+
+- Got unstructured data?  Probably deep learning 
+
+- Do keep in mind, deep learning usually needs 
+    - lot of data 
+    - and lot of compute time   
+    to produce good results
+
+    
+---
+
+## AI Scaling with Data
 
 
- * [link](https://www.youtube.com/watch?v=LcfLo7YP8O4)
+<img src="../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" alt="machine_learning_vs_deep_learning_skitch.png" style="width:60%;"/>
 
-<img src="../assets/images/deep-learning/Explanation-Andrew-Ng.png" alt="Explanation-Andrew-Ng.png" style="width:55%;"/>
+
+[Video by Andrew Ng](https://www.youtube.com/watch?v=LcfLo7YP8O4)
 
 Notes:
 
 https://www.youtube.com/watch?v=LcfLo7YP8O4
 
-
 ---
 
-# Machine Learning Algorithms
+# Machine Learning
 
 ---
 
@@ -1414,10 +1855,9 @@ Notes:
 
 | Category            	| Sub Category    	| Example                                                                          	| Algorithms                                                         	|
 |---------------------	|-----------------	|----------------------------------------------------------------------------------	|--------------------------------------------------------------------	|
-| **Supervised**      	| Regressions     	| -Predict house prices,-Predict stock price                                       	| -Linear Regression,-Polynomial,-Stepwise,-Ridge, Lasso, ElasticNet 	|
-|                     	| Classifications 	| -Cancer or not,-Spam or not                                                      	| -Logistic Regression,-SVM,-Naive Bayes,-K Nearest Neighbor (KNN)   	|
-|                     	| Decision Trees  	| -Classification (credit card fraud detection),-Regression (predict stock prices) 	| -Decision Trees,-Random Forests                                    	|
-| **Unsupervised**    	| Clustering      	| -Group Uber trips,-Cluster DNA data                                              	| -Kmeans,-Hierarchical clustering                                   	|
+| **Supervised**      	| Regressions     	| -Predict house prices<br/>-Predict stock price                                       	| -Linear Regression<br/>-Polynomial<br/>|
+|                     	| Classifications 	| -Cancer or not <br/>-Spam or not                                                      	| -Logistic Regression<br/>-SVM<br/>-Naive Bayes<br/>-K Nearest Neighbor (KNN)<br/>   	|
+| **Unsupervised**    	| Clustering      	| -Group Uber trips<br/>-Cluster DNA data                                              	| -Kmeans<br/>-Hierarchical clustering                                   	|
 |                     	|                 	| Dimensionality reduction                                                         	| PCA                                                                	|
 |                     	|                 	| Text mining                                                                      	| Topic discovery                                                    	|
 | **Recommendations** 	|                 	| Recommend movies                                                                 	| Collaborative Filtering                                            	|
@@ -1479,13 +1919,12 @@ Notes:
 
      - Test set: Validate the model
 
- * Initially 70% training, 30% test
-
- * Sometimes, 60% training, 20% cross-validation, 20% test
+ * Training / Test split is traditionally  70% - 30%  or 80% - 20%
+    - These are randomly sampled
 
  * Tweak the dials to increase or decrease the proportion
 
-<img src="../assets/images/deep-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:50%;"/>
+<img src="../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:50%;"/>
 
 
 Notes:
@@ -1509,10 +1948,9 @@ Facebook used 95%/5% `Understanding text from scratch`
      - Hand-written numbers --> any digits 0, 1, 2,..., 9
 
  * Classification algorithm learns from training data
+ 
+ * Then predicts on new/unseen data
 
-     - Supervised learning
-
- * Also predicted classes are " **discrete** " or " **qualitative** "
 
 <img src="../assets/images/deep-learning/Classification-01.png" alt="Classification-01.png" style="width:45%;"/>
 
@@ -1594,34 +2032,10 @@ Notes:
 
 ---
 
-## Unsupervised Machine Learning
-
-
- * Draw inference from input data without "labeled responses"
-
- * Common clustering algorithms
-
-     - K-means: Group data points into cluster
-
-     - Hidden Markov Model: State transitions
-
- * Example applications:
-
-     - Find patterns in data
-
-     - Gene expression analysis
-
-     - Recover states from results of random transitions
-
-Notes:
-
-https://www.mathworks.com/discovery/unsupervised-learning.html
-
-
----
 
 ## Clustering Use Cases: Fraud / Anomaly Detection
 
+<img src="../assets/images/deep-learning/Clustering-Use-Cases.png" alt="Clustering-Use-Cases.png" style="width:40%;float:right;"/>
 
  * Anomaly detection
 
@@ -1637,7 +2051,6 @@ https://www.mathworks.com/discovery/unsupervised-learning.html
 
      - And the need for further investigation
 
-<img src="../assets/images/deep-learning/Clustering-Use-Cases.png" alt="Clustering-Use-Cases.png" style="width:20%;"/>
 
 Notes:
 
@@ -1650,7 +2063,9 @@ Notes:
 
  * Google News algorithm automatically groups **related news stories**  into sections
 
-<img src="../assets/images/deep-learning/3rd-party/Google-News.png" alt="Google-News.png" style="width:60%;"/>
+* **Question to class** : Why is this not a 'classification' problem, but instead a clustering problem?
+
+<img src="../assets/images/machine-learning/3rd-party/Google-News-1.png" alt="Google-News.png" style="width:40%;"/>
 
 Notes:
 
@@ -1681,9 +2096,6 @@ Notes:
 
 Notes:
 
-Clustering allows us to group similar objects or events or data sets.
-This is a method of unsupervised learning.
-
 
 
 ---
@@ -1692,29 +2104,17 @@ This is a method of unsupervised learning.
 
 
  * Biology
-
      - Genomics grouping
-
  * Medicine
-
      - Xray/CAT image analysis
-
  * Marketing
-
      - Consumer grouping ("soccer mom"...etc.) and behavior analysis
-
  * Web
-
      - Search result grouping
-
      - News article grouping (Google news)
-
  * Computer Science
-
      - Image analysis
-
  * Climatology
-
      - Weather pattern analysis (high pressure/warm regions)
 
 Notes:
@@ -1727,32 +2127,24 @@ https://en.wikipedia.org/wiki/Cluster_analysis
 
 ## Clustering Use Case: Customer Purchases @ Walmart
 
+<img src="../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:40%;float:right;"/>
 
  * Here is how Walmart is segmenting customer purchases
+     * Pharmacy Runs
+     * Strictly Grocery
+     * Grocery and General Merchandise
+     * Michaels Run
+     * Party Trip
+     * Toys
+     * Electronics
+     * Baby
+     * Gallon of Milk
+     * Booze and Calories
+     * and more ...
 
- * Question: What is the use case for this?
+ * **Question for class**: What is the use case for this?
 
- * Pharmacy Runs
 
- * Strictly Grocery
-
- * Grocery and General Merchandise
-
- * Michaels Run
-
- * Party Trip
-
- * Toys
-
- * Electronics
-
- * Baby
-
- * Gallon of Milk
-
- * Booze and Calories
-
-<img src="../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:20%;"/>
 
 
 
@@ -1780,35 +2172,16 @@ Notes:
 ## Semi-Supervised Learning Video
 
 
- * [Link](https://www.youtube.com/watch?v=b-yhKUINb7o)
 
 <img src="../assets/images/deep-learning/3rd-party/Semi-Supervised-Learning-Video.png" alt="Semi-Supervised-Learning-Video.png" style="width:60%;"/>
 
 
+[Link](https://www.youtube.com/watch?v=b-yhKUINb7o)
 
 Notes:
 
 https://www.youtube.com/watch?v=b-yhKUINb7o
 
-
----
-
-## Demo: Machine Learning Basics
-
-
- * [Link](https://www.youtube.com/watch?v=HcqpanDadyQ)
-
-
-<img src="../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/>
-
-Notes:
-
-https://www.youtube.com/watch?v=HcqpanDadyQ
-
-
----
-
-# Reinforcement Learning
 
 ---
 
@@ -1839,7 +2212,7 @@ Notes:
 
  * Here the robot gets rewarded for 'food' and penalized for walking into fire
 
-<img src="../assets/images/deep-learning/Reinforcement-Learning.png" alt="Reinforcement-Learning.png" style="width:60%;"/>
+<img src="../assets/images/machine-learning/Reinforcement-Learning.png" alt="Reinforcement-Learning.png" style="width:60%;"/>
 
 
 Notes:
@@ -1851,9 +2224,10 @@ Notes:
 
 ## Reinforcement Learning Demo: Atari Breakout
 
- * [Link](https://www.youtube.com/watch?v=V1eYniJ0Rnk)
 
 <img src="../assets/images/deep-learning/3rd-party/Atari-Breakout.png" alt="Atari-Breakout.png" style="width:30%;"/>
+
+[Link](https://www.youtube.com/watch?v=V1eYniJ0Rnk)
 
 Notes:
 
@@ -1864,10 +2238,10 @@ https://www.youtube.com/watch?v=V1eYniJ0Rnk
 
 ## Reinforcement Learning Demo: Open AI Bots Playing Dota
 
- * [Link](https://www.youtube.com/watch?v=eHipy_j29Xw)
 
 <img src="../assets/images/deep-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" alt="Open-AI-Bots-Playing-Dota.png" style="width:60%;"/>
 
+ [Link](https://www.youtube.com/watch?v=eHipy_j29Xw)
 
 Notes:
 
@@ -1880,16 +2254,10 @@ https://www.youtube.com/watch?v=eHipy_j29Xw
 
 ---
 
-## AI / Machine Learning / Deep Learning
+## Machine Learning / Deep Learning
 
 
- *  **Artificial Intelligence (AI):** Broader concept of "making machines smart"
-
- *  **Machine Learning:** Current application of AI that machines learn from data using mathematical, statistical models
-
- *  **Deep Learning: (Hot!)** Using Neural Networks to solve some hard problems
-
-<img src="../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="width:30%;"/>
+<img src="../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="max-width:100%;"/>
 
 Notes:
 
@@ -1914,10 +2282,13 @@ Notes:
 
 
  * The human brain is a bunch of interconnected neurons.
-
  * The neuron is like a "gate" - produces an output
+ * Some neurons will only 'fire' if they see color red 
+ * Some neurons will only fire if they detect a shape of 'hexagon'
+ * If both of these cells fire together the brain can intrepret that I am seeing a red stop sign
 
-<img src="../assets/images/deep-learning/neuron_anatomy.png" alt="neuron_anatomy.png" style="width:55%;"/>
+<img src="../assets/images/deep-learning/neuron_anatomy.png" alt="neuron_anatomy.png" style="width:50%;"/>
+<img src="../assets/images/generic/3rd-party/stop-sign-1.png" alt="neuron_anatomy.png" style="width:20%;"/>
 
 Notes:
 
@@ -1928,18 +2299,13 @@ Notes:
 
 
  * McCulloch and Pitts defined a simple model of a Neuron
-
  * It consisted of N inputs In and N Weights
-
  * Go to a transfer (sum) function, Apply a threshold to an output
-
  * Limitations:
+     - Binary Output
+     - No way to automatically train weights Wn
 
-       - Binary Output
-
-       - No way to automatically train weights Wn
-
-<img src="../assets/images/deep-learning/McCulloch.png" alt="McCulloch.png" style="width:50%;"/>
+<img src="../assets/images/deep-learning/McCulloch.png" alt="McCulloch.png" style="max-width:100%;width:70%;"/>
 
 Notes:
 
@@ -1950,10 +2316,9 @@ Notes:
 
 
  * Frank Rosenblatt invented the Perceptron:
-
  	- Simplest type of feedforward neural network
 
-<img src="../assets/images/deep-learning/perceptron-03.png" alt="perceptron-03.png" style="width:7650;"/>
+<img src="../assets/images/deep-learning/perceptron-03.png" alt="perceptron-03.png" style="max-width:100%;"/>
 
 Notes:
 
@@ -2000,16 +2365,12 @@ Notes:
 
 
  * What is the outcome if
-
- * Weather is good
-
- * And a friend can join?
+    * Weather is good
+    * And a friend can join?
 
  * What is the outcome if
-
- * You can go by public transit
-
- * And a friend can
+    * You can go by public transit
+    * And a friend can
 
 <img src="../assets/images/deep-learning/perceptron-02.png" alt="perceptron-02.png" style="width:76%;"/>
 
@@ -2054,6 +2415,22 @@ Notes:
 
 ---
 
+
+## Power of Neural Networks 
+
+- Think of Neurons like 'legos'
+
+- Each neuron will do a little bit work   
+But when you stack them and combine them together, they can model some really complex functions 
+
+- This is what makes them incredibly powerful
+
+<img src="../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; "/> &nbsp;  &nbsp;
+<img src="../assets/images/generic/3rd-party/legos-2.jpg" alt="legos" style="width:50%; "/>
+
+---
+
+
 ## 'Deep' Neural Networks
 
 
@@ -2069,6 +2446,19 @@ Notes:
 Notes:
 
 
+---
+
+## Neural Network Example 
+
+- Say we are trying to build a neural net to predict house prices
+
+- Given a few inputs (Bedrooms, Bathrooms ..etc)  the network has to learn to predict the price
+
+- If we provide enough data to the network, it will automatically learn the functions of each neuron !!
+
+
+
+<img src="../assets/images/deep-learning/neural-net-01.png" alt="Face-Recognition.png" style="max-width:100%;"/>
 ---
 
 ## Deep Neural Network - Face Recognition
@@ -2104,39 +2494,31 @@ Notes:
 Notes:
 
 
+
 ---
 
 ## DL Application Demo: Digit Recognition
 
- * Neural Net for Handwritten Difit
 
-      - Draw a digit in the box blow click "recognize" button.
+<img src="../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="digit-recognition-1.png" style="width:50%;"/>
+ 
+[Link](http://myselph.de/neuralNet.html)
 
- * [Link](http://myselph.de/neuralNet.html)
+Notes:
+
+
+---
+
+## DL Application Demo: Digit Recognition
+
 
 <img src="../assets/images/deep-learning/3rd-party/Digit-Recognition-01.png" alt="Digit-Recognition-01.png" style="width:30%;"/>
 
+[Link](http://scs.ryerson.ca/~aharley/vis/conv/flat.html)
 
 Notes:
 
 http://myselph.de/neuralNet.html
-
-
-
----
-
-## DL Application Demo: Digit Recognition
-
-
- * [Link](http://scs.ryerson.ca/~aharley/vis/conv/flat.html)
-
-<img src="../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="digit-recognition-1.png" style="width:50%;"/>
-
-Notes:
-
-http://scs.ryerson.ca/~aharley/vis/conv/flat.html
-
-
 
 
 ---
@@ -2252,7 +2634,7 @@ Source: Source: Andrej Karpathy, Li Fei-Fei - https://cs.stanford.edu/people/kar
 
 ## Video - Advances in Hardware
 
-img src="../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" alt="cloud-tpu-01.png" style="width:60%;"/>
+<img src="../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" alt="cloud-tpu-01.png" style="width:60%;"/>
 
  * [Google TPU](https://www.youtube.com/watch?v=UsDhVx6cOrw) (up to 5 min mark)
 
@@ -2266,7 +2648,7 @@ https://www.youtube.com/watch?v=UsDhVx6cOrw
 
 ## DL Application Demo: Google Draw
 
-img src="../assets/images/deep-learning/3rd-party/Quick-drew-01.png" alt="Quick-drew-01.png" style="width:60%;"/>
+<img src="../assets/images/deep-learning/3rd-party/Quick-drew-01.png" alt="Quick-drew-01.png" style="width:60%;"/>
 
 
 Quick-drew-01.png
@@ -2345,6 +2727,7 @@ Notes:
 
 ## Class Discussion:
 
+<img src="../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
  * What are some of the problems you are facing that Data Science / Machine Learning might be a solution?
 
@@ -2355,6 +2738,7 @@ Notes:
 
 ## 2 - Collecting Data
 
+<img src="../assets/images/deep-learning/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/>
 
  * Data Sources can be
 
@@ -2376,7 +2760,6 @@ Notes:
 
      - Customer data can be from a database.
 
-<img src="../assets/images/deep-learning/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:30%;"/>
 
 Notes:
 
@@ -2384,6 +2767,7 @@ Notes:
 
 ## Class Discussion: Data Collection Challenges
 
+<img src="../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
  * What are some of the problems you are facing / anticipating for collecting data?
 
@@ -2394,6 +2778,7 @@ Notes:
 
 ## 3 - Data Preparation / Cleaning
 
+<img src="../assets/images/deep-learning/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/>
 
  * Problems with raw data sets
 
@@ -2413,7 +2798,6 @@ Notes:
 
  * Least sexy
 
-<img src="../assets/images/deep-learning/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:30%;"/>
 
 
 
@@ -2424,6 +2808,7 @@ Notes:
 
 ## Class Discussion: Data Cleanup
 
+<img src="../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
  *  **What do you think involves in cleaning up data?**
 
@@ -2436,6 +2821,7 @@ Notes:
 
 ## 3.5 - Exploratory Data Analysis (EDA)
 
+<img src="../assets/images/deep-learning/EDA-01.png" alt="EDA-01.png" style="width:30%;float:right;"/>
 
  * Before doing `machine learning` on data, understand the data.
 
@@ -2453,7 +2839,6 @@ Notes:
 
  * Need to sample?  Or process entire data set?
 
-<img src="../assets/images/deep-learning/EDA-01.png" alt="EDA-01.png" style="width:30%;"/>
 
 
 
@@ -2464,6 +2849,7 @@ Notes:
 
 ## 4 - Model Building
 
+<img src="../assets/images/deep-learning/AI-Workflow-03.png" alt="AI-Workflow-03.png" style="width:40%;float:right;"/>
 
  * Don't do this until you have a good understanding of data.(See previous section.)
 
@@ -2483,7 +2869,6 @@ Notes:
 
      - Experience counts!
 
-<img src="../assets/images/deep-learning/AI-Workflow-03.png" alt="AI-Workflow-03.png" style="width:30%;"/>
 
 
 Notes:
@@ -2532,7 +2917,7 @@ https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize
 ---
 
 ## 5 - Model Validation
-
+ <img src="../assets/images/deep-learning/AI-Workflow-04.png" alt="AI-Workflow-04.png" style="width:40%;float:right;"/>
 
  * Models need to be `verified`  / `validated`
 
@@ -2542,13 +2927,13 @@ https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize
 
      - Test set: validate the model
 
- * Initially 70% training,  30% validation.
+ * Initially 70% training,  30% test
 
  * Tweak the dials to decrease training and increase validation.
 
  * Training set should represent data well enough.
 
-<img src="../assets/images/deep-learning/AI-Workflow-04.png" alt="AI-Workflow-04.png" style="width:30%;"/><img src="../assets/images/deep-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:30%;"/>
+<img src="../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:30%;"/>
 
 
 
@@ -2561,6 +2946,7 @@ Notes:
 
 ## 6 - Improving the Model
 
+<img src="../assets/images/deep-learning/AI-Workflow-05.png" alt="AI-Workflow-05.png" style="width:40%;float:right;"/>
 
  * Sometimes we don't get desired accuracy from the model
 
@@ -2574,7 +2960,6 @@ Notes:
 
      - Or even choose another model
 
-<img src="../assets/images/deep-learning/AI-Workflow-05.png" alt="AI-Workflow-05.png" style="width:40%;"/>
 
 
 Notes:
@@ -2586,6 +2971,7 @@ Notes:
 
 ## 7 - Deploy Model
 
+<img src="../assets/images/deep-learning/AI-Workflow-06.png" alt="AI-Workflow-06" style="width:40%;float:right;"/>
 
  * We are happy with the model's performance
 
@@ -2593,7 +2979,6 @@ Notes:
 
  * Monitor the model in production
 
-<img src="../assets/images/deep-learning/AI-Workflow-06.png" alt="AI-Workflow-06" style="width:40%;"/>
 
 
 Notes:
@@ -2605,12 +2990,15 @@ Notes:
 
 ## Class Discussion : AI Life Cycle
 
+<img src="../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
  * Do you have any stories to share about AI work flow?
 
      - Issues
 
      - Best practices?
+     
+<img src="../assets/images/deep-learning/AI-Workflow-01.png" alt="AI-Workflow-06" style="width:40%;"/>
 
 Notes:
 
@@ -2621,30 +3009,27 @@ Notes:
 
 ## Reinforcement / Neural Net Demo: Alpha GO
 
- * [Link](https://www.youtube.com/watch?v=9xlSy9F5WtE)
 
 <img src="../assets/images/deep-learning/3rd-party/Neural-Net-Demo-Alpha-GO.png" alt="Neural-Net-Demo-Alpha-GO.png" style="width:60%;"/>
+
+[Link](https://www.youtube.com/watch?v=9xlSy9F5WtE)
 
 
 Notes:
 
-https://www.youtube.com/watch?v=9xlSy9F5WtE
- https://money.cnn.com/2017/09/29/technology/future/alphago-movie/index.html
+- https://www.youtube.com/watch?v=9xlSy9F5WtE
+- https://money.cnn.com/2017/09/29/technology/future/alphago-movie/index.html
 
 
 ---
 
-## Reinforcement/ Neural Net Demo: Alpha GO
+## Reinforcement/ Neural Net Demo: Alpha GO Explained
 
-
- * [Link](https://deepmind.com/blog/alphago-zero-learning-scratch/)
-
- * AlphaGO explained
 
 <img src="../assets/images/deep-learning/3rd-party/Alpha-GO-01.png" alt="Alpha-GO-01.png" style="width:30%;"/>
-
 <img src="../assets/images/deep-learning/3rd-party/Alpha-GO-02.png" alt="Alpha-GO-02.png" style="width:30%;"/>
 
+ [Link](https://deepmind.com/blog/alphago-zero-learning-scratch/)
 
 Notes:
 
@@ -2661,11 +3046,11 @@ https://deepmind.com/blog/alphago-zero-learning-scratch/
 
 |             | Machine Learning          | Deep Learning               |
 |-------------|---------------------------|-----------------------------|
-| Java        | -Weka,-Mahout             | DeepLearning4J              |
-| Python      | -SciKit,-(Numpy, Pandas)  | -Tensorflow,-Pytorch,-Caffe |
-| R           | -Many libraries           | -Deepnet,-Darch             |
+| Java        | -Weka<br/>-Mahout             | DeepLearning4J              |
+| Python      | -SciKit<br/>-Numpy, Pandas  | -Tensorflow<br/>-Pytorch<br/>-Caffe |
+| R           | -Many libraries           | -Deepnet<br/>-Darch             |
 | Distributed | Spark                     | Spark                       |
-| Cloud       | -AWS,-Azure,-Google Cloud | -AWS,-Azure,-Google Cloud   |
+| Cloud       | -AWS<br/>-Azure<br/>-Google Cloud | -AWS<br/>-Azure<br/>-Google Cloud   |
 
 
 Notes:
@@ -2765,144 +3150,196 @@ Browser-based notebook interface with support for code, text, mathematical expre
 
 
 
----
 
+---
 ## Deep Learning Libraries
 
+- **Java**
+    - [DL4J (Deep Learning 4J)](https://deeplearning4j.org/)
+- **Python**
+    - [TensorFlow](https://www.tensorflow.org/)
+    - [Theano](http://deeplearning.net/software/theano/)
+    - [Caffe2](https://caffe2.ai/)
+    - [Keras](https://keras.io/)
+- **R**
+    - Deepnet
+    - Darch
+- **Mobile**
+    - [CoreML](https://developer.apple.com/documentation/coreml) - by Apple
+    - [Tensorflow Lite](https://www.tensorflow.org/lite) - by Google
 
- *  **TensorFlow**
-
-     - Open sourced by Google
-
-     - Based on `data flow graphs`
-
-     - Language support: Python, C++
-
-     - Run time: CPU, GPU
-
-     - Very popular
-
- *  **Pytorch**
-
-     - Open sourced from Facebook
-
-     - Python
-
-     - BSD License
-
-     - GPU + CPU supported
-
-     - Community supported
-
-<img src="../assets/images/deep-learning/3rd-party/tensorflow-logo.png" alt="tensorflow-logo.png" style="width:20%;"/>
-
-<img src="../assets/images/deep-learning/3rd-party/pytorch-logo.png" alt="pytorch-logo.png" style="width:10%;"/>
-
-
-
-Notes:
-
-https://pytorch.org/
-https://www.tensorflow.org/
-
+<img src="../assets/images/logos/dl4j-logo.png" alt="XXX image missing" style="background:white;" width="20%"/>
+<img src="../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"  width="20%"/>
+<img src="../assets/images/logos/Caffe2-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
+<img src="../assets/images/logos/tf-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
 
 ---
 
 ## Deep Learning Libraries
 
-
- *  **Cafe'2**
-
-     - Modular framework for DL
-
-     - Python based
-
-     - Open source
-
- *  **DL4J**
-
-     - Java based
-
-     - Works well in Java / BigData environments (Spark / Hadoop)
-
-     - Apache 2.0 License
-
-     - Commercial support available
-
- *  **Intel BigDL**
-
-     - Deep learning library
-
-     - Built on Apache Spark
-
-     - Language support: Python, Scala
-
-     - CPU support
-
-<img src="../assets/images/deep-learning/3rd-party/Cafe2-logo.png" alt="Cafe2-logo.png" style="width:10%;"/>
-
-<img src="../assets/images/deep-learning/3rd-party/DL4J-logo.png" alt="DL4J-logo.png" style="width:10%;"/>
-
-<img src="../assets/images/deep-learning/3rd-party/bigdl-logo.png" alt="bigdl-logo.png" style="width:10%;"/>
-
-
-Notes:
-
-https://caffe2.ai/
-
-
+|     Library    |          API         |              Platforms              |               Started by              | Year |
+|:--------------:|:--------------------:|:-----------------------------------:|:-------------------------------------:|:----:|
+| Caffe          | Python, C++, Matlab  | Linux, macOS, Windows               | Y.Jia, UC Berkeley(BVLC)              | 2013 |
+| Deeplearning4j | Java, Scala, Clojure | Linux, macOS, Windows, Android      | A. Gibson, J.Patterson                | 2014 |
+| H2O            | Python, R            | Linux, macOS, Windows               | H2O.ai                                | 2014 |
+| MXNet          | Python, C++, others  | Linux, macOS, Windows, iOS, Android | DMLC                                  | 2015 |
+| TensorFlow     | Python, C++          | Linux, macOS, Windows, iOS, Android | Google                                | 2015 |
+| Theano         | Python               | Linux, macOS, iOS                   | University of Montreal                | 2010 |
+| Torch          | C++, Lua             | Linux, macOS, iOS, Android          | R.Collobert, K.Kavukcuoglu, C.Farabet | 2002 |
+ 
+<img src="../assets/images/logos/dl4j-logo.png" alt="XXX image missing" style="background:white;" width="20%"/>
+<img src="../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"  width="20%"/>
+<img src="../assets/images/logos/Caffe2-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
+<img src="../assets/images/logos/tf-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
 
 ---
+   
+## Tools for Deep Learning - Tensorflow
 
-## Deep Learning Libraries
+ - [Tensorflow](https://www.tensorflow.org/) is an open source DL framework by Google
 
- * And many more
+ - Became very popular in a very short period of time
 
-<img src="../assets/images/deep-learning/3rd-party/mxnet-logo.png" alt="mxnet-logo.png" style="width:20%;"/>
+ - Based on “data flow graphs”
 
-<img src="../assets/images/deep-learning/3rd-party/keras_logo-01.png" alt="keras_logo-01.png" style="width:20%;"/>
+ - Language support: Python, C++
+
+ - Supports both CPU and GPU runtimes
+
+ <img src="../assets/images/logos/tf-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%" />
 
 
 
 Notes:
 
+---
+## Tools for Scalable Deep Learning - Spark
+
+- Spark is very popular BigData processing platform (distributed compute engine)
+
+- Massively scalable (100s of TBs to PB of data)
+
+- Can cache data in memory for very fast iterations
+
+- Spark ML now supports Tensorflow and Keras as backends
+
+- Language support: Scala, Java, Python, R
+
+<img src="../assets/images/logos/spark-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../assets/images/logos/spark-mllib-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+
+---
+## Tools for Scalable Deep Learning - BigDL
+
+- BigDL is a scalable Deep Learning framework developed and open sourced by Intel
+
+- Built on Spark, so is very scalable
+
+- Can import models built with other frameworks (Torch, Caffe, TensorFlow)
+
+- Uses [Intel MKL Libraries](https://software.intel.com/en-us/intel-mkl) for  high performance
+
+- https://bigdl-project.github.io
+
+<img src="../assets/images/logos/bigdl-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../assets/images/logos/intel-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+
+
+
 
 ---
 
-## Noteworthy Mentions
+## Commercial DL Software
 
 
  *  **H2O**
-
      - Easy to use API
-
      - Friendly UI
-
      - Works on top of Spark ("Sparkling Water")
-
      - Works on cloud platforms
-
      - Commercially supported
-
      - Vendor: 0xData
 
  * SkyMind SKIL
-
      - Java based ML stack (DJ4J)
-
      - Native Big Data support (Hadoop/Spark)
-
      - Runs on bare metal, containers and VMs
-
      - Commercially supported
 
-<img src="../assets/images/deep-learning/3rd-party/h2o-ai.png" alt="h2o-ai.png" style="width:10%;"/><img src="../assets/images/deep-learning/3rd-party/skymind.png" alt="skymind.png" style="width:20%;"/>
+<img src="../assets/images/deep-learning/3rd-party/h2o-ai.png" alt="h2o-ai.png" style="width:10%;"/>  &nbsp;  &nbsp;
+<img src="../assets/images/deep-learning/3rd-party/skymind.png" alt="skymind.png" style="width:20%;"/>
 
 
 Notes:
 
+---
+## Image Recognition API Services
+
+- [Clarifai](https://www.clarifai.com/) : winner of the 2013 ImageNet Large Scale Visual Recognition Challenge (ILSVRC) classification
+
+- [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) : Microsoft won seven tasks at the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2015 with ResNet-152 (a 152 layer network)
+
+- [Google Cloud Vision](https://cloud.google.com/vision/) - Google won 2014 ImageNet Large Scale Visual Recognition Challenge (ILSVRC) with GoogLeNet (22 layers)
+
+- [Amazon Rekognition](https://aws.amazon.com/rekognition/)
+
+- [IBM Watson Visual Recognition](https://www.ibm.com/watson/services/visual-recognition/)
+
+
+<img src="../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
+<img src="../assets/images/logos/microsoft-cognitive-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
+<img src="../assets/images/logos/google-cloud-vision-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
+<img src="../assets/images/logos/amazon-rekognition-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="12%" />
+<img src="../assets/images/logos/ibm-watson-visual-recognition-logo-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="12%" />
 
 ---
+## Deep Learning in Mobile
+
+- Why do DL on mobile?
+- **Privacy** : so no data leaves the device.  This is important with PII (Personaly Identifiable Information) and Europe's GDPR (General Data Protection Regulation)
+- **Reducing Cloud Cost** : By doing DL on the device and minimizing sending data to cloud, we can save time and money
+- **Speed** : Sending data to cloud and getting an answer back can take several seconds
+    - 10 seconds : user's keep their focus on a screen
+    - 1 second : to keep workflow going
+    - 0.1 second : users perceive system is working 'instantaneously'
+
+<img src="../assets/images/deep-learning/face-id-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
+
+
+---
+
+## Deep Learning Mobile Libraries
+
+- [CoreML](https://developer.apple.com/documentation/coreml) - by Apple
+    - only supported on IOS (Apple) devices
+    - supports models from  Keras, Caffe, XGBoost, Scikit-learn
+
+- [Tensorflow Lite](https://www.tensorflow.org/lite) by Google
+    - works on IOS and Android
+
+- [MobileNets](https://arxiv.org/abs/1704.04861) - Optimized Convolutional Neural Networks for Mobile Vision Applications
+
+<img src="../assets/images/logos/core-ml-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
+<img src="../assets/images/logos/tensorflow-lite-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
+
+Notes:  
+- https://developer.apple.com/documentation/coreml
+- https://www.tensorflow.org/lite
+
+---
+
+## Model Benchmarks
+
+<img src="../assets/images/deep-learning/3rd-party/model_size_vs_accuracy-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />
+
+<img src="../assets/images/deep-learning/3rd-party/model_size_vs_latency-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />
+
+Notes:  
+Source : https://www.tensorflow.org/lite/performance/best_practices
+
+---
+
+
 
 ## Infrastructure Tools
 
@@ -2940,6 +3377,7 @@ Notes:
 
 ## Big Data Infrastructure - Hadoop
 
+<img src="../assets/images/deep-learning/3rd-party/Big-Data-Infrastructure-Hadoop.png" alt="Big-Data-Infrastructure-Hadoop.png" style="width:30%;float:right;"/>
 
  * Hadoop is the popular on-premise Big Data platform
 
@@ -2957,12 +3395,18 @@ Notes:
 
      - 1.7 copies instead of 3 copies (reducing storage overhead)
 
-
-<img src="../assets/images/deep-learning/3rd-party/Big-Data-Infrastructure-Hadoop.png" alt="Big-Data-Infrastructure-Hadoop.png" style="width:20%;"/>
+* See next slide for a sample Hadoop reference architecture
 
 Notes:
 
+---
 
+## A Hadoop 3 Reference Architecture
+
+<img src="../assets/images/hadoop/3rd-party/hadoop3-reference-architecture-1.png" alt="Big-Data-Infrastructure-Hadoop.png" style="max-width:100%;"/>
+
+Notes:
+- [Source: Hortonworks](https://hortonworks.com/blog/trying-containerized-applications-apache-hadoop-yarn-3-1/)
 ---
 
 ## Big Data Infrastructure - Spark
@@ -2978,7 +3422,7 @@ Notes:
 
  * Can use memory (caching) effectively for iterative algorithms
 
- * Language support: Scala, Java, Python, R
+ * Multi Language support: Scala, Java, Python, R
 
 <img src="../assets/images/deep-learning/3rd-party/Apache_Spark_logo.png" alt="Apache_Spark_logo.png" style="width:30%;"/>
 
@@ -3100,10 +3544,10 @@ Notes:
 ## Video: Advances in Robotics
 
 
- * [Link](https://www.youtube.com/watch?v=8vIT2da6N_o)
 
 <img src="../assets/images/deep-learning/3rd-party/Video-Advances-Robotics.png" alt="Video-Advances-Robotics.png" style="width:50%;"/>
 
+[Link](https://www.youtube.com/watch?v=8vIT2da6N_o)
 
 Notes:
 
@@ -3114,6 +3558,7 @@ https://www.youtube.com/watch?v=8vIT2da6N_o
 
 ## Demo: Human Powered AI
 
+<img src="../assets/images/deep-learning/3rd-party/Demo-Human-Powered-AI-01.png" alt="Demo-Human-Powered-AI-01.png" style="width:40%;float:right;"/>
 
  * Hive is paying 600,000 strangers to help him build human-powered AI that's 'whole orders of magnitude better than Google'
 
@@ -3121,7 +3566,6 @@ https://www.youtube.com/watch?v=8vIT2da6N_o
 
  * [Link](https://finance.yahoo.com/news/ceo-paying-600-000-strangers-150000655.html)
 
-<img src="../assets/images/deep-learning/3rd-party/Demo-Human-Powered-AI-01.png" alt="Demo-Human-Powered-AI-01.png" style="width:40%;"/>
 
 
 
@@ -3158,6 +3602,7 @@ https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-cr
 
 ## Facebook's Bots Invent their own language
 
+<img src="../assets/images/deep-learning/3rd-party/Facebook-Bots-0.png" alt="Facebook-Bots-0.png" style="width:40%;float:right;"/>
 
  * Facebook designed to chat bots to talk to each other
 
@@ -3168,7 +3613,8 @@ https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-cr
 
        - `Bob: "I can can I I everything else."`
 
-       - `Alice: "Balls have zero to me to me to me to me to me to me to me to me to."`
+       - `Alice: "Balls have zero to me to me to me to me  
+        to me to me to me to me to."`
 
 
  * This indecipherable language is actually a 'new bot language'
@@ -3180,7 +3626,6 @@ https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-cr
  * [Link](https://www.independent.co.uk/voices/facebook-shuts-down-robots-ai-artificial-intelligence-develop-own-language-common-a7871341.html)
 
 
-<img src="../assets/images/deep-learning/3rd-party/Facebook-Bots-0.png" alt="Facebook-Bots-0.png" style="width:20%;"/>
 
 Notes:
 
@@ -3199,33 +3644,24 @@ Notes:
 
 ---
 
-## Target Algorithm Predicts Young Woman's Pregnancy (Here AI is spot on!)
+## Target Algorithm Predicts Young Woman's Pregnancy 
 
+<img src="../assets/images/deep-learning/3rd-party/Predicts-Young-Woman-01.png" alt="Predicts-Young-Woman-01.png" style="width:30%;float:right;"/>
 
  * Target's Data Scientists identified 25 products that, when purchased together, predict a woman's pregnancy
-
+ 
  * Target started sending out targeted coupons to women shoppers who they have identified as being pregnant
-
- * One angry man walked into Target store and complained to the manager : " *Why are you sending these baby coupons to my daughter, she is still in high school* "
-
- * Few days later, the same man called the manager and apologized" *Sorry, I just learned that my daughter is pregnant* "
-
----
-
-## Target Algorithm Predicts Young Woman's Pregnancy (Here AI is spot on!)
-
- * Links :[link1](https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-creeps/6/),
-          [link2](https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?mtrref=www.google.com)
-
-<img src="../assets/images/deep-learning/3rd-party/Predicts-Young-Woman-01.png" alt="Predicts-Young-Woman-01.png" style="width:30%;"/>
-
-Notes:
-
-https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-creeps/6/
-https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?mtrref=www.google.com
-
+ 
+ * One angry man walked into Target store and complained to the manager :  
+  " *Why are you sending these baby coupons to my daughter, she is still in high school* "
+  
+ * Few days later, the same man called the manager and apologized  
+ " *Sorry, I just learned that my daughter is pregnant* "
+ 
+ * Links : [link1](https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-creeps/6/), [link2](https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?mtrref=www.google.com)
 
 ---
+
 
 ## Tesla AutoPilot Crashes Car
 
@@ -3303,6 +3739,7 @@ https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scr
 
 ## Class Discussion
 
+<img src="../assets/images/icons/quiz-icon.png" alt="" style="width:30%;float:right;"/>
 
  * Do you know of any cases where AI failed / gone wrong?Please share with the class.
 
@@ -3320,17 +3757,6 @@ Notes:
 ## Elon Musk: "AI will take over humanity"
 
 <img src="../assets/images/deep-learning/3rd-party/Elon-musk.png" alt="Elon-musk.png" style="width:40%;"/>
-
-Notes:
-
-
----
-
-## Elon Musk: "Zuck doesn't understand AI"
-
-<img src="../assets/images/deep-learning/3rd-party/Zuck.png" alt="Zuck.png" style="width:40%;"/>
-
-
 
 Notes:
 
@@ -3359,6 +3785,7 @@ Notes:
 
 ## Design an AI Project
 
+<img src="../assets/images/icons/group-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
  *  **Class Project**
 
@@ -3383,7 +3810,7 @@ Notes:
 <img src="../assets/images/deep-learning/3rd-party/Closing-Demo.png" alt="Closing-Demo.png" style="width:60%;"/>
 
 
- * [Link](https://www.youtube.com/watch?v=PCBTZh41Ris)
+ [Link](https://www.youtube.com/watch?v=PCBTZh41Ris)
 
 
 Notes:
@@ -3437,13 +3864,3 @@ https://www.analyticsvidhya.com/blog/2015/06/machine-learning-basics/
 # Backup Slides
 
 ---
-
-## AI is a Huge Disruptor / Enabler
-
-<img src="../assets/images/deep-learning/AI-Huge-Disruptor.png" alt="AI-Huge-Disruptor.png" style="width:76%;"/>
-
-
-Notes:
-
-
-
