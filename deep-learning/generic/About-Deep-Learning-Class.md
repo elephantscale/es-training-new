@@ -101,8 +101,8 @@ Notes:
      - Familiarity with TensorFlow (scale of 1 – 4 ;  1 – new,   4 – expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby…)
      
- <img src="../../assets/images/generic/3rd-party/ice-cream-1.jpg" alt="icecream.jpg" style="width:30%;" />  &nbsp;
- <img src="../../assets/images/generic/3rd-party/hiking-1.jpg" alt="climbing.jpg" style="width:20%;"/> 
+ <img src="../../assets/images/generic/3rd-party/ice-cream-1.jpg" style="width:25%;"/>   &nbsp;
+ <img src="../../assets/images/generic/3rd-party/hiking-2.jpg" style="width:30%;"/>
 
 
 Notes: 

@@ -85,7 +85,7 @@ https://www.quora.com/Why-has-Keras-been-so-successful-lately-at-Kaggle-competit
 
 ## Keras Guiding Principles
 
-<img src="../../assets/images/deep-learning/3rd-party/duplo-1981724_640.jpg" alt="legos" style="width:30%; float:right;"/>
+<img src="../../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; float:right;"/>
 
 * **User Friendliness**  
 Offers consistent, simple APIs

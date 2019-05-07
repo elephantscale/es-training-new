@@ -164,7 +164,7 @@ Notes:
 
      - It gets better every day with more data it sees
 
-<img src="../../assets/images/deep-learning/Rule-Based-Systems.png" alt="Rule-Based-Systems.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems.png" alt="Rule-Based-Systems.png" style="width:60%;"/>
 
 
 
