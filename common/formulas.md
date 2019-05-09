@@ -2,14 +2,23 @@
 # Formulas
 A common place to keep formulas 
 
+## Basic Stats 
+
+### Variance
+$$  var = s^2 = \sigma^2 = \frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2  $$
+
+### Standard Deviation
+$$  sd = \sigma = \sqrt{variance} =  \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2}  $$
+
 ## Machine Learning 
 
 ### Sum of Squared Errors (SSE)
-$$SSE = \sum_{i=1}^{n}(y - \hat y)^2$$
+$$ SSE = \sum_{i=1}^{n}(y - \hat y)^2$$
 
 
 ### Mean Squared Error (MSE)
 $$  MSE = \frac{1}{n} \sum_{i=1}^{n}(y - \hat y)^2  $$ 
+
 
 ### ???
 $$
