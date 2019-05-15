@@ -25,7 +25,7 @@ Notes:
     - Algorithm + training data -> model
     - Model = Algorithm(data)
 
-<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="width:66%;"/><!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="max-width:66%;"/><!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
 
 
 
@@ -38,7 +38,7 @@ Notes:
 
 ## Algorithm and Model
 
-  <img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:80%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+  <img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="max-width:80%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
 
 
 
@@ -53,12 +53,42 @@ Notes:
   * **'Model'**:
     - Mathematical object describing the relationship between input and output
 
-    <img src="../../assets/images/machine-learning/Model.png" alt="Model" style="width:100%;"/> <!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
+    <img src="../../assets/images/machine-learning/Model.png" alt="Model" style="max-width:100%;"/> <!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
 
 
 
 
 Notes:
+
+
+---
+# Machine Learning Process 
+
+---
+
+## Machine Learning Process 
+
+<img src="../../assets/images/machine-learning/ML-Process-1.png"  style="max-width:90%;"/> 
+
+---
+
+## Machine Learning Process
+
+- Step 1 : Get Data 
+
+- Step 2 : Explore Data and build model 
+
+- Step 3 : Evaluate model 
+
+- Step 4 : Optimize model 
+
+- Step 5 : Deploy and monitor
+
+---
+
+## Machine Learning Process: Step 1: Data Exploration
+
+<img src="../../assets/images/machine-learning/ML-Process-2.png"  style="max-width:90%;"/> 
 
 ---
 # Feature Engineering
@@ -79,15 +109,14 @@ Notes:
 
 ---
 
-## Features To Consider: Class Quiz
+## Class Quiz : Feature Selection
+
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
   * Assume we are evaluating a credit card application
-  * **Q: What data points to consider?**
-  * **Q: How will you get this data?**
+  * **Q: What features we might consider?**
 
-    - For existing customer?
-    - For new customer?
-
+<br clear="all"/>
 
 | Customer_id | Name | Zipcode | Age | Income | Marital Status | Owns a Home |
 |-------------|------|---------|-----|--------|----------------|-------------|
@@ -133,6 +162,20 @@ Notes:
 
 ---
 
+
+
+## FE: Incorporating Domain Knowledge
+
+* In the previous example how did we figure out the features to consider?
+   - probably 'common sense' :-) 
+     
+* In practice we use our **domain knowledge** to identify important features
+
+Notes:
+
+---
+
+
 ## Categorical Variables
 
   * Some of the variables have string content
@@ -143,7 +186,7 @@ Notes:
   * Categorical Variables are essentially structured data, despite being strings.
   * Unstructured data would include things like: documents, emails, tweets
 
-<img src="../../assets/images/machine-learning/Categorical-Variables.png" alt="Categorical-Variables" style="width:90%;"/> <!-- {"left" : 0.26, "top" : 5.16, "height" : 1.64, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/Categorical-Variables.png" alt="Categorical-Variables" style="width:50%;"/> <!-- {"left" : 0.26, "top" : 5.16, "height" : 1.64, "width" : 9.74} -->
 
 
 
@@ -175,7 +218,7 @@ Notes:
     - And compute!
 
 
-  <img src="../../assets/images/machine-learning/Factorization-0.png" alt="factorization" style="width:70%"/>  
+  <img src="../../assets/images/machine-learning/factorization-0.png" alt="factorization" style="max-width:70%"/>  
 
 
 Notes:
@@ -193,7 +236,7 @@ Notes:
 
 
 
-<img src="../../assets/images/machine-learning/factorization-0.png" alt="Factorization" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/factorization-0.png" alt="Factorization" style="max-width:60%;"/>
 
 
 Notes:
@@ -208,7 +251,7 @@ Notes:
     - Note, only one bit is on
     - This is called **ONE-HOT-Encoding**
 
-    <img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="width:90%;"/><!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
+    <img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="max-width:90%;"/><!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
 
 
 
@@ -231,7 +274,7 @@ Notes:
   * This might allow our models to make inferences
     - e.g., Orange is close to red on the spectrum, but more distant from violet.
 
-  <img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:55%;"/><!-- {"left" : 2.99, "top" : 5.04, "height" : 1.8, "width" : 4.27} -->
+  <img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="max-width:80%;"/><!-- {"left" : 2.99, "top" : 5.04, "height" : 1.8, "width" : 4.27} -->
 
 
 
@@ -262,7 +305,7 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 
 <!-- {"left" : 0.49, "top" : 3.62, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
 
-<img src="../../assets/images/machine-learning/feature-envgineering-1.png" alt="feature-envgineering" style="width:30%;"/> <!-- {"left" : 4.35, "top" : 3.59, "height" : 2.64, "width" : 5.47} -->
+<img src="../../assets/images/machine-learning/feature-envgineering-1.png" alt="feature-envgineering" style="max-width:30%;"/> <!-- {"left" : 4.35, "top" : 3.59, "height" : 2.64, "width" : 5.47} -->
 
 
 
@@ -270,27 +313,10 @@ Notes:
 
 ---
 
-## FE: Group Discussion
-
-  * **Problem:**
-    - A comment is left on the website.  Determine if it is a 'spam' comment or legitimate comment
-
-  * **Data we have:**
-    - Comment text
-    - IP address of user
-
-  * **Discuss:**
-    - What other data you may need to determine if the comment is 'spam' ?
-    - How can we acquire the data?
-
-
-Notes:
-
----
 
 ## Converting Word to Vectors
 
-<img src="../../assets/images/machine-learning/word-to-vectors-1.png" alt="word-to-vectors" style="width:100%;"/> <!-- {"left" : 0.3, "top" : 1.07, "height" : 5.36, "width" : 9.66} -->
+<img src="../../assets/images/machine-learning/word-to-vectors-1.png" alt="word-to-vectors" style="max-width:100%;"/> <!-- {"left" : 0.3, "top" : 1.07, "height" : 5.36, "width" : 9.66} -->
 
 
 
@@ -299,112 +325,54 @@ Notes:
 
 ---
 
-## FE: Dealing With Time
 
-  * Usually timestamps are stored in two formats:
-    - Human readable format: '2017-02-01 14:10:45 PST'
-    - Unix timestamp: 1489792175 (time elapsed since 1970-01-01 00:00:00)
-  * Sometimes we need to 'slice / dice' timestamp
-
-  * Hypothesis:  
-  "On Facebook users click on photos more during lunch time"
-    - Include 'time of day' on model calculation
-
-  * Some other interesting attributes:
-    - 'time of day'  (work hours,   after hours)
-    - 'day of week'  (Mon / Tue / Wed …   work day  / weekend)
-
-  * **Question for class:**
-    - Any other time based behavior?
-
-
-
-Notes:
-
-Use https://www.epochconverter.com/ to easily convert unix time and human readable time
-
----
-
-## FE: Incorporating Domain Knowledge
-
-  * Using knowledge acquired in the domain and add that to raw input data. **VERY IMPORTANT**
-
-  * Observation: Online shopping is usually higher on Fridays
-    - Include an attribute: 'Day of week'
-
-  * Observation: Spam emails typically come from free email accounts
-    - Add 'is free account' field to data
-
-  * **Question for the class:**
-    - Can you think of any other examples?
-
-Notes:
-
----
-
-## Lab 3.4: Exploratory Data Analysis (EDA)
+## Lab : Exploratory Data Analysis (EDA)
 
   * **Overview:**
-    - Perform EDA on a dataset
+    - Analyze house sales data 
 
   * **Approximate Time:**
-    - 10 – 15 mins
+    - 20 – 25 mins
 
   * **Instructions:**
-    - **3.4: 'exploration/explore-house-sales' lab for Python / R / Spark**
-
-  * **To Instructor:**
-    - Demo this lab on screen first, and explain the results
+    - **'exploration/explore-house-sales' lab for Python / R / Spark**
 
 
 
 Notes:
 
 ---
-
-## BONUS Lab 3.5: Exploratory Data Analysis (EDA) 2: Graphing And Visualizing
-
-  * **Overview:**
-    - Visualize house-sales dataset
-
-  * **Approximate Time:**
-    - 10 – 15 mins
-
-  * **Instructions:**
-    - **3.5: 'exploration/visualize-house-sales' lab for Python / R / Spark**
-
-  * **To Instructor:**
-    - Demo this lab on screen first, and explain the results
-
-
-Notes:
-
----
-
-## Bonus Lab 4.1: Feature Engineering
+## Bonus Lab : Feature Engineering
 
   * **Overview:**
     - Feature engineering exercises
 
   * **Approximate Time:**
-    - 15 – 20 mins
+    - 20 – 30 mins
 
   * **Instructions:**
-    - **4.1 'feature-eng' lab for Python / R / Spark**
+    - **'feature-eng' lab for Python / R / Spark**
 
 
 Notes:
 
+
 ---
+
 # Developing A Model
 ---
 
-## Sample Data Set: Cars
+## Machine Learning Process: Step 2: Developing a Model
+<img src="../../assets/images/machine-learning/ML-Process-3.png"  style="max-width:90%;"/> 
 
-  * We want to predict MPG of a car
-  * What attributes to consider?
+---
 
-<img src="../../assets/images/machine-learning/Sample-Cars.png" alt="Sample-Cars" style="width:90%;"/> <!-- {"left" : 0.39, "top" : 2.08, "height" : 4.71, "width" : 9.48} -->
+## Sample Dataset :  Cars 
+
+* We want to predict MPG of a car
+* What attributes to consider?
+
+<img src="../../assets/images/machine-learning/Sample-Cars.png" alt="Sample-Cars" style="width:70%;"/> <!-- {"left" : 0.39, "top" : 2.08, "height" : 4.71, "width" : 9.48} -->
 
 
 
@@ -414,7 +382,7 @@ Notes:
 
 ## Sample Model for Predicting MPG
 
-<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:90%;"/> <!-- {"left" : 0.02, "top" : 0.74, "height" : 6.36, "width" : 10.25} -->
+<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:70%;"/> <!-- {"left" : 0.02, "top" : 0.74, "height" : 6.36, "width" : 10.25} -->
 
 
 
@@ -453,7 +421,8 @@ Notes:
 
   * **Inference**
     - Which of the 3 attributes (cylinders / horse power / weight) influences MPG more?
-    - Figuring this out might give us insight into better products. *'what is the best way to get best MPG?'*
+    - Figuring this out might give us insight into better products.  
+     *'what is the best way to get best MPG?'*
 
 Notes:
 
@@ -510,13 +479,8 @@ Notes:
 # Evaluating A Model
 ---
 
-## Data Science Methodology: Iterative Learning Process
-
-<img src="../../assets/images/machine-learning/ML-Process.png" alt="ML-Process" style="width:70%;"/> <!-- {"left" : 0.34, "top" : 0.93, "height" : 6.1, "width" : 9.56} -->
-
-
-
-Notes:
+## Machine Learning Process: Step 3: Model Evaluation
+<img src="../../assets/images/machine-learning/ML-Process-4.png"  style="max-width:90%;"/> 
 
 ---
 
@@ -528,7 +492,7 @@ Notes:
     - Model is trained with 'training data'
     - Measure its performance on 'test data' (the model hasn't seen 'test data')
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="width:65%;"/> <!-- {"left" : 2.87, "top" : 3.47, "height" : 2.88, "width" : 6.57} -->
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 2.87, "top" : 3.47, "height" : 2.88, "width" : 6.57} -->
 
 
 
@@ -547,7 +511,7 @@ Notes:
     - Overfitting
   * One in the middle is just right
 
-<img src="../../assets/images/machine-learning/underfit-overfit-03.png" alt="underfit-overfit" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 4.13, "height" : 3.07, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-03.png" alt="underfit-overfit" style="max-width:80%;"/> <!-- {"left" : 0.26, "top" : 4.13, "height" : 3.07, "width" : 9.74} -->
 
 
 
@@ -568,7 +532,7 @@ Notes:
   * Resolution:
     - Try a different algorithm / model, that better fits the data
 
-<img src="../../assets/images/machine-learning/underfit-overfit-01.png" alt="underfit-overfit" style="width:80%;"/>  <!-- {"left" : 0.83, "top" : 4.4, "height" : 2.79, "width" : 8.59} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-01.png" alt="underfit-overfit" style="max-width:80%;"/>  <!-- {"left" : 0.83, "top" : 4.4, "height" : 2.79, "width" : 8.59} -->
 
 
 
@@ -589,7 +553,7 @@ Notes:
     - Try a different algorithm / model, that better fits the data
     - Simplify inputs
 
-<img src="../../assets/images/machine-learning/underfit-overfit-02.png" alt="underfit-overfit" style="width:55%;"/> <!-- {"left" : 3.67, "top" : 5.07, "height" : 2.13, "width" : 6.38} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-02.png" alt="underfit-overfit" style="max-width:55%;"/> <!-- {"left" : 3.67, "top" : 5.07, "height" : 2.13, "width" : 6.38} -->
 
 
 
@@ -601,7 +565,7 @@ Notes:
 
   * In ML we strive to find the 'sweet spot' between under-fitting models and over-fitting models
 
-<img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="width:64%;"/> <!-- {"left" : 1.4, "top" : 1.97, "height" : 5.08, "width" : 6.96} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="max-width:64%;"/> <!-- {"left" : 1.4, "top" : 1.97, "height" : 5.08, "width" : 6.96} -->
 
 
 
@@ -675,7 +639,7 @@ Notes:
     - Testing set (30-40%)
   * This is done  randomly
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="width:65%;"/> <!-- {"left" : 2.16, "top" : 3.74, "height" : 2.61, "width" : 5.94} -->
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 2.16, "top" : 3.74, "height" : 2.61, "width" : 5.94} -->
 
 
 
@@ -721,7 +685,7 @@ Notes:
   * Then test with fold-I
   * After we have cycled through all k folds, prediction accuracies are aggregated and compared
 
-<img src="../../assets/images/machine-learning/k-fold-1.png" alt="k-fold-1" style="width:60%;"/> <!-- {"left" : 2.32, "top" : 4.11, "height" : 3.08, "width" : 5.61} -->
+<img src="../../assets/images/machine-learning/k-fold-1.png" alt="k-fold-1" style="max-width:60%;"/> <!-- {"left" : 2.32, "top" : 4.11, "height" : 3.08, "width" : 5.61} -->
 
 
 
@@ -732,17 +696,33 @@ Notes:
 
 ## Cross-Validation Example
 
-<img src="../../assets/images/machine-learning/Cross-Validation-1.png" alt="Cross-Validation-1.png" style="width:70%;"/> <!-- {"left" : 0.67, "top" : 0.81, "height" : 2.31, "width" : 8.92} -->
+<img src="../../assets/images/machine-learning/Cross-Validation-1.png" alt="Cross-Validation-1.png" style="max-width:70%;"/> <!-- {"left" : 0.67, "top" : 0.81, "height" : 2.31, "width" : 8.92} -->
 
 
   * Here we are doing a 5-fold cross validation
   * Data is split into 5 splits – one held for testing, remaining 4 used for training
   * Accuracy varies from 80% to 90%
-    - If the accuracy range is big (say from 40% to 80%) then it might be an indication of high-variance (sensitive to input data)
   * Average accuracy is `AVG(80,84,90,86,82) = 85%`
 
 
 Notes:
+
+---
+
+## Cross Validation 
+
+* Cross Validation is used to evaluate different algorithms
+
+* See the following CV runs of 3 different algorithms (A,B,C)
+    - Algorithm A accuracy is : 60%  to 72%
+    - Algorithm B accuracy is : 70%  to 85%
+    - Algorithm C accuracy is : 50%  to 90% 
+
+* We might select algorithm B, as it seems to produce decent range 
+
+* Algorithm C is not desirable as its accuracy varies so much (high variance)
+
+<img src="../../assets/images/machine-learning/cross-validation-2.png" alt="Cross-Validation-1.png" style="max-width:70%;"/>
 
 ---
 
@@ -768,12 +748,21 @@ Notes:
 # Bootstrapping
 ---
 
-## Bootstrap
+## Bootstrapping
 
-  * Randomly selecting data for training with replacement
-  * It may seem counter-intuitive to draw the same data again and again
-  * But in some scenarios, bootstrapping really helps to train the model
-  * See next slides to understand sampling with and without replacement
+* Randomly selecting data for training with replacement
+
+* Data points : [a, b, c, d, e ]
+    - Bootstrap selection 1 : [  b,  d,  d,   c ]
+    - Bootstrap selection 2 : [ d,  a, d,  a ]
+
+
+* It may seem counter-intuitive to draw the same data again and again
+
+* But in some scenarios, bootstrapping really helps to train the model
+
+* See next slides to understand sampling with and without replacement
+
 
 Notes:
 
@@ -781,7 +770,7 @@ Notes:
 
 ## Sampling Without Replacement
 
-<img src="../../assets/images/machine-learning/bootstrapping1.png" alt="bootstrapping1.png" style="width:55%;"/> <!-- {"left" : 1.5, "top" : 1.16, "height" : 5.85, "width" : 7.25} -->
+<img src="../../assets/images/machine-learning/bootstrapping-2a.png" alt="bootstrapping1.png" style="width:55%;"/> <!-- {"left" : 1.5, "top" : 1.16, "height" : 5.85, "width" : 7.25} -->
 
 
 
@@ -791,20 +780,9 @@ Notes:
 
 ## Sampling With Replacement (aka Bootstrapping)
 
-<img src="../../assets/images/machine-learning/bootstrapping2.png" alt="bootstrapping2.png" style="width:40%;"/> <!-- {"left" : 2.33, "top" : 1.21, "height" : 5.56, "width" : 5.59} -->
+<img src="../../assets/images/machine-learning/bootstrapping-2b.png" alt="bootstrapping-2a.png" style="width:40%;"/> <!-- {"left" : 2.33, "top" : 1.21, "height" : 5.56, "width" : 5.59} -->
 
 
-
-
-Notes:
-
----
-
-## Bootstrapping Example 1
-
-  * Data points : [a, b, c, d, e ]
-  * Bootstrap selection 1 : [  b,  d,  d,   c ]
-  * Bootstrap selection 2 : [ d,  a, d,  a ]
 
 
 Notes:
@@ -813,7 +791,7 @@ Notes:
 
 ## Bootstrapping Example 2
 
-<img src="../../assets/images/machine-learning/bootstrapping1-skitch.png" alt="bootstrapping1-skitch.png" style="width:90%;"/> <!-- {"left" : 0.39, "top" : 1.75, "height" : 4.01, "width" : 9.48} -->
+<img src="../../assets/images/machine-learning/bootstrapping-1.png" alt="bootstrapping1-skitch.png" style="max-width:90%;"/> <!-- {"left" : 0.39, "top" : 1.75, "height" : 4.01, "width" : 9.48} -->
 
 
 
@@ -823,28 +801,31 @@ Notes:
 
 # End Part 1
 
-* To Instructor:<br/>
+* To Instructor:   
 Pause here, and switch to Regressions.
-Come back to Part II during Logistic Regression
+Come back to Part II during Regression
 
 ---
-# ML Concepts Part 2
+# ML Concepts : Part 2
 
-* To Instructor:<br/>
-Come back to Part II during Logistic Regression
+* To Instructor:  
+Come back to Part II during Regression
 
 ---
 
-# Errors / Residuals
+# Errors and Residuals
 ---
 
-## Problem : Estimating Tips for Meals
+## Estimating Tips for Meals
 
-  * A waiter at a restaurant is collecting data on tips
-  * Usually tips correspond to total of the bill.
-  * Higher the bill -> higher the tip
-  * But in this case, bill total is missing, we only have tip amounts
-  * How can we predict the tip amount for next meal?
+* Let's consider tips at a restaurant
+
+* We can predict the next tip by averaging all tip amounts
+
+* Next tip  
+  = AVERAGE(all tips)   
+  = $10
+
 
 | Meal # | Tip ($)  |
 |--------|----------|
@@ -861,20 +842,7 @@ Come back to Part II during Logistic Regression
 
 Notes:
 
-https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi
-
----
-
-## Tip Calculation
-
-  * We can calculate average tip calculating AVERAGE of all the  tip amounts
-  * Next tip = AVERAGE(all tips)  =  MEAN (all tips)   = $10
-
-<img src="../../assets/images/machine-learning/tips-1.png" alt="tips-1.png" style="width:90%;"/> <!-- {"left" : 0.68, "top" : 2.35, "height" : 4.41, "width" : 8.89} -->
-
-
-
-Notes:
+- https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi
 
 ---
 
@@ -882,13 +850,37 @@ Notes:
 
   * None of the tip amounts are exactly $10
   * $10 is just an average of all tip amounts
-  * **Residual** = difference between actual tip and predicted tip
+  * **`Residual = actual tip - predicted tip`**
   * Sum of all residuals = **ZERO**
+    - positive and negative errors cancel each other out
 
-<img src="../../assets/images/machine-learning/Residuals.png" alt="Residuals.png" style="width:15%;"/> <!-- {"left" : 8.24, "top" : 2.49, "height" : 2.14, "width" : 1.57} -->
+<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="max-width:50%;"/> &nbsp; &nbsp;<!-- {"left" : 1.84, "top" : 3.68, "height" : 3.24, "width" : 6.58} -->
+<img src="../../assets/images/machine-learning/Residuals.png" alt="Residuals.png" style="max-width:40%;"/> <!-- {"left" : 8.24, "top" : 2.49, "height" : 2.14, "width" : 1.57} --> 
 
 
-<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:30%;"/> <!-- {"left" : 1.84, "top" : 3.68, "height" : 3.24, "width" : 6.58} -->
+
+
+Notes:
+
+---
+
+## Sum of Squared Errors (SSE)
+
+<img src="../../assets/images/machine-learning/Sum-of-Squared.png" alt="Sum-of-Squared.png" style="max-width:50%;float:right;"/> <!-- {"left" : 6.9, "top" : 0.94, "height" : 2.62, "width" : 3.12} -->
+
+* Squaring residuals
+ - To make them all positive (so negative and positive don't cancel each other out)
+ - To amplify 'outliers' (large deviations)
+ 
+* Goal is to minimize SSE
+
+* **Question for the class** :  
+  Can SSE be zero? :-) 
+
+
+
+
+
 
 
 
@@ -900,46 +892,20 @@ Notes:
 
 ## Sum of Squared Errors (SSE)
 
-  * Squaring residuals
-     - To make the positive
-     - To amplify 'outliers' (large deviations)
-   * Goal is to minimize SSE
-     - Minimize errors
-
-<img src="../../assets/images/machine-learning/Sum-of-Squared.png" alt="Sum-of-Squared.png" style="width:15%;"/> <!-- {"left" : 6.9, "top" : 0.94, "height" : 2.62, "width" : 3.12} -->
-
-
-<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:40%;"/> <!-- {"left" : 0.6, "top" : 3.05, "height" : 4.04, "width" : 8.21} -->
-
-
-
-
-
-
-
-Notes:
-
----
-
-## Sum of Squared Errors (SSE)
-
-  * Also known as
-    - [Residual Sum of Squares (RSS)]
-    - Sum of Squared Residuals (SSR)
-  * In Regressions RSS/SSE is a measure used to select / optimize models
-  * Lower RSS indicates a tighter model fit to data
-  * Example:
-    - If model-A yields  RSS = 70
-    - And model-B yields RSS=50
+* Also known as
+    - **Residual Sum of Squares (RSS)**
+    - **Sum of Squared Residuals (SSR)**
+* In Regressions RSS/SSE is a measure used to select / optimize models
+* Lower RSS indicates a tighter model fit to data
+* Example:
+    - If model-A yields  SSE = 70
+    - And model-B yields SSE = 50
     - Model-B might be better fit
-  * In this formula
+* In this formula
     - Yi: actual value
     - Ŷi: predicted value
 
-<img src="../../assets/images/machine-learning/3rd-party/equation-error-SSE-1.png" alt="equation-error-SSE-1" style="width:30%;"/> <!-- {"left" : 5.35, "top" : 5.16, "height" : 1.49, "width" : 4.21} -->
-
-
-
+<img src="../../assets/images/machine-learning/equation-error-SSE-1.png" alt="equation-error-SSE-1" style="width:30%;"/> <!-- {"left" : 5.35, "top" : 5.16, "height" : 1.49, "width" : 4.21} -->
 
 
 Notes:
@@ -947,29 +913,18 @@ Notes:
 https://en.wikipedia.org/wiki/Residual_sum_of_squares
 
 ---
-# Confusion Matrix and ROC curve
----
 
-## Evaluating Classification Models
-
-  * Let's consider a binary classifier
-    - Picks one of two outcomes  (spam / not-spam)
-  * Two approaches
-    - Confusion matrix
-    - ROC curve
-
-
-Notes:
+# Confusion Matrix and ROC Curve
 
 ---
 
 ## Confusion Matrix / Error Matrix
 
-  * Let's consider a binary classifier
+* Let's consider a binary classifier
     - Picks one of two outcomes  (spam / not-spam)
-  * Say we are classifying 10 emails (6 spam, 4 not-spam)
+* Say we are classifying 10 emails (6 spam, 4 not-spam)
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-04.png" alt="Confusion-Matrix-04.png" style="width:60%;"/> <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-04.png" alt="Confusion-Matrix-04.png" style="max-width:60%;"/> <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
 
 
 
@@ -979,7 +934,7 @@ Notes:
 
 ## Confusion Matrix: More Than 2 Outcomes
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-01.png" alt="Confusion-Matrix-01.png" style="width:60%;"/> <!-- {"left" : 1.13, "top" : 0.99, "height" : 2.79, "width" : 7.98} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-01.png" alt="Confusion-Matrix-01.png" style="max-width:60%;"/> <!-- {"left" : 1.13, "top" : 0.99, "height" : 2.79, "width" : 7.98} -->
 
 
   * Which animal the algorithm has trouble classifying? (too many misclassifications)
@@ -996,7 +951,7 @@ Algorithm is good at identifying rabbits
 
 ## Interpreting Confusion Matrix (True/False Positives/Negatives)
 
-<img src="../../assets/images/machine-learning/confusion-matrix-12.png" alt="confusion-matrix-12.png" style="width:60%;"/> <!-- {"left" : 0.51, "top" : 0.9, "height" : 6.17, "width" : 9.22} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-12.png" alt="confusion-matrix-12.png" style="max-width:60%;"/> <!-- {"left" : 0.51, "top" : 0.9, "height" : 6.17, "width" : 9.22} -->
 
 
 
@@ -1009,14 +964,20 @@ Story: A shepherd who cried wolf
 
 ## Confusion Matrix: Accuracy / Error Rate
 
-  * Accuracy
-    - Overall how accurate is the model?= (TP + TN) / total= (90 + 70) / 200= 0.8  or 80%
+<img src="../../assets/images/machine-learning/Confusion-Matrix-02.png" alt="Confusion-Matrix-02.png" style="width:50%;float:right;"/> <!-- {"left" : 4.4, "top" : 3.62, "height" : 3.46, "width" : 5.45} -->
 
-  * **Misclassifications / Error rate**
-    - How wrong is the model?= (FP + FN) / total= (10 + 30) / 200= 0.2 or 20%= 1 - accuracy
+* **Accuracy**  
+Overall how accurate is the model?  
+= (TP + TN) / total  
+= (90 + 70) / 200  
+= 0.8  or 80%
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-02.png" alt="Confusion-Matrix-02.png" style="width:30%;"/> <!-- {"left" : 4.4, "top" : 3.62, "height" : 3.46, "width" : 5.45} -->
-
+* **Misclassifications / Error rate**  
+How wrong is the model?  
+= (FP + FN) / total  
+= (10 + 30) / 200  
+= 0.2 or 20%  
+= 1 - accuracy
 
 
 Notes:
@@ -1027,29 +988,37 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Accuracy May Not Be Enough
 
-  * Let's say our classifier is used to diagnose cancer patients.
+<img src="../../assets/images/machine-learning/Confusion-Matrix-03-Accuracy.png" alt="Confusion-Matrix-03-Accuracy.png" style="width:50%;float:right;"/> <!-- {"left" : 2.39, "top" : 3.52, "height" : 3.47, "width" : 5.47} -->
 
-  * We have total 100 patients
+* Let's say our classifier is used to diagnose cancer patients.
+* We have total 100 patients
     - 98 healthy
     - 2 have cancer
-
-  * Accuracy= (TP + TN) / total= (1 + 98) / 100= 99%  (very good!)
-
-  * Misclassifications / Error rate= (FP + FN) / total= (0 + 1) / 100= 1%  (1 – accuracy)
+* **Accuracy**  
+  = (TP + TN) / total   
+  = (1 + 98) / 100   
+  = 99%  (very good!)
+* **Misclassifications / Error rate**  
+= (FP + FN) / total  
+= (0 + 1) / 100  
+= 1%  (1 – accuracy)
 
 ---
 
 ## Confusion Matrix: Accuracy May Not Be Enough
 
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/>
+
   * **Question for class:**
+    * What is the implication of 'False Positive'
+    * What is the implication of 'False Negative' ?
+    * Which is more serious?
 
-  * What is the implication of 'False Positive'
-  * What is the implication of 'False Negative' ?
-  * Which is more serious?
+  * Since accuracy may not be enough of a metric, there are other metrics
+    - Precision
+    - Recall
 
-
-  <img src="../../assets/images/machine-learning/Confusion-Matrix-03-Accuracy.png" alt="Confusion-Matrix-03-Accuracy.png" style="width:40%;"/> <!-- {"left" : 2.39, "top" : 3.52, "height" : 3.47, "width" : 5.47} -->
-
+  * Next few slides will explain these
 
 
 Notes:
@@ -1062,26 +1031,23 @@ Notes:
 
 ---
 
-## Confusion Matrix
-
-  * Since accuracy may not be enough of a metric, there are other metrics
-    - Precision
-    - Recall
-
-  * Next few slides will explain these
-
-
-Notes:
-
----
 
 ## Confusion Matrix: TPR / FPR
 
-  * **True Positive Rate (TPR)  /Sensitivity / Hit Rate / Recall** How often model predicts 'positive' as 'positive' (correctly) ? = TP / (TP + FN) actual Positive= 90 / 120= 0.75  or 75%
+ <img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:50%;float:right;"/> <!-- TODO {"left" : 2.35, "top" : 3.54, "height" : 3.58, "width" : 5.54} -->
 
-  * **False Positive Rate (FPR)** How often model predicts 'negative' as 'positive' (incorrectly)= FP / (FP + TN) actual negative= 10 / 80= 0.125 or 12.5%
+  * **True Positive Rate (TPR)  /Sensitivity / Hit Rate / Recall**  
+  How often model predicts 'positive' as 'positive' (correctly) ? -- actual positive  
+  = TP / (TP + FN)  
+  = 90 / 120  
+  = 0.75  or 75%
 
-  <img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:40%;"/> <!-- {"left" : 2.35, "top" : 3.54, "height" : 3.58, "width" : 5.54} -->
+  * **False Positive Rate (FPR)**   
+  How often model predicts 'negative' as 'positive' (incorrectly)  -- actual negative 
+  = FP / (FP + TN)  
+  = 10 / 80  
+  = 0.125 or 12.5%
+
 
 
 
@@ -1094,11 +1060,22 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Specificity / Precision / Prevalence
 
-  * **Specificity** How often model predicts negative' as negative' (correctly)?= TN / (TN + FP) actual no= 70 / (70 + 10)= 0.875 or 87.5 %= 1 - FPR
+  <img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- TODO {"left" : 2.22, "top" : 3.47, "height" : 3.74, "width" : 5.81} -->
 
-* **Precision / Positive Predictive Value (PPV)** When model predicts 'positive' how often it is right?= TP / (TP + FP)= true / predicted positive= 90 / (90 + 10)= 0.9  or 90%
+  * **Specificity**   
+  How often model predicts negative' as negative' (correctly)?  -- actual no  
+  = TN / (TN + FP)   
+  = 70 / (70 + 10)  
+  = 0.875 or 87.5 %  
+  = 1 - FPR
 
-  <img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;"/> <!-- {"left" : 2.22, "top" : 3.47, "height" : 3.74, "width" : 5.81} -->
+* **Precision / Positive Predictive Value (PPV)**  
+When model predicts 'positive' how often it is right?  -- true / predicted positive   
+= TP / (TP + FP)   
+= 90 / (90 + 10)  
+= 0.9  or 90%
+
+
 
 
 
@@ -1111,15 +1088,22 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: PPV / Null Error Rate
 
-  * **Prevalence** How often does 'positive' occurs in our sample= actual positive  / total= 120 / 200= 0.6  or 60%
+<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- TODO {"left" : 2.25, "top" : 3.48, "height" : 3.75, "width" : 5.76} -->
 
-  * **Null Error Rate**
-How often would the model be wrong if it always predicted the majority class?
-Here our majority = Positive
-If we always predicted 'positive' we would be wrong 80 times (negative)
-80/200 = 40% of time
+  * **Prevalence**   
+  How often does 'positive' occurs in our sample  
+  = actual positive  / total  
+  = 120 / 200  
+  = 0.6  or 60%
 
-<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;"/> <!-- {"left" : 2.25, "top" : 3.48, "height" : 3.75, "width" : 5.76} -->
+  * **Null Error Rate**  
+How often would the model be wrong if it always predicted the majority class?  
+Here our majority = Positive  
+If we always predicted 'positive' we would be wrong 80 times (negative)  
+= 80/200  
+= 40% of time
+
+
 
 
 
@@ -1157,33 +1141,29 @@ Notes:
   * `0.0 <= TPR & FPR  <= 1.0`
 
   * Plot TPR / FPR while varying 'threshold'
+    - what is threshold?
 
 Notes:
 
 ---
 
 ## Threshold
+<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- TODO {"left" : 7.01, "top" : 2.83, "height" : 4.36, "width" : 3.07} -->
 
   * Our spam classifier provides a 'spam probability' for each email
     - Probability is between 0.0. and 1.0 (or 0 to 100%)
     - 1.0  definitely spam
     - 0.0 definitely not spam
   * When an email's 'spam score' is above a certain number we mark it as spam
-  * This is called 'threshold'
-
----
-
-## Threshold
-
+    * This is called 'threshold'
   * If spam threshold is lower (say 50%)
-    - more emails will be classified as spam (email2, email3)
+    - more emails will be classified as spam (email1, email3)
     - Users will miss emails (as they are in Spam folder)
   * If spam threshold is higher (70%)
-    - Fewer emails will be classified as spam (email2)
+    - Fewer emails will be classified as spam (email3)
     - Users will see more spam emails be in Inbox
-  * We need to find the sweet spot!
+  * We need to find the sweet spot for threshold
 
-<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:20%;"/><!-- {"left" : 7.01, "top" : 2.83, "height" : 4.36, "width" : 3.07} -->
 
 
 
@@ -1237,13 +1217,14 @@ Notes:
 
 ## Interpreting ROC Curve
 
+<img src="../../assets/images/machine-learning/ROC-02-space-2b.png" alt="ROC-02-space-2b.png" style="width:45%;float:right;"/> <!-- TODO {"left" : 3, "top" : 2.67, "height" : 4.49, "width" : 4.25} -->
+
   * The red line plots 'random guess' = B
 
-  * Approaching 'top left' corner would be a perfect classifier! So  D is better A
+  * Approaching 'top left' corner would be a perfect classifier!
+    - So  D is better A
 
   * C performs worse than random --> bad
-
-<img src="../../assets/images/machine-learning/ROC-02-space-2b.png" alt="ROC-02-space-2b.png" style="width:35%;"/> <!-- {"left" : 3, "top" : 2.67, "height" : 4.49, "width" : 4.25} -->
 
 
 
@@ -1260,6 +1241,7 @@ Image credit (CC) : https://commons.wikimedia.org/wiki/File:ROC_space-2.png
 ---
 
 ## Interpreting ROC Curve
+<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:45%;float:right;"/>  <!-- TODO {"left" : 2.48, "top" : 3.80, "height" : 3.68, "width" : 5.28} -->
 
   * Shows tradeoff of TPR (sensitivity) vs. FPR (1 – specificity)
   * The closer to top-left , the more accurate the model
@@ -1267,7 +1249,7 @@ Image credit (CC) : https://commons.wikimedia.org/wiki/File:ROC_space-2.png
   * The closer to middle line (45 degree) the less accurate the test
     - Middle line represents: random classification (50%)
 
-<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:45%;"/>  <!-- {"left" : 2.48, "top" : 3.80, "height" : 3.68, "width" : 5.28} -->
+
 
 
 
@@ -1276,22 +1258,22 @@ Notes:
 
 ---
 
-## Area Under Curve – AUC (ROC Space)
+## Area Under Curve – AUC
+
+
+<img src="../../assets/images/machine-learning/ROC-04-AUC-2.png" alt="ROC-04-AUC-2.png" style="width:30%;float:right;"> <!-- {"left" : 6.66, "top" : 2.29, "height" : 2.28, "width" : 3.26} -->
 
   * Measures the percentage of area<br/>
    'under the curve'
-  * AUC is between 0 and 1
+  * AUC is between 0 and 1.0
   * Higher AUC --> more accurate the model
   * See 3 scenarios below
     - Leftmost is bad (50%)
     - Middle: OK (70%)
     - Rightmost: very good (90%)
 
-<img src="../../assets/images/machine-learning/ROC-04-AUC-2.png" alt="ROC-04-AUC-2.png" style="width:30%; position:absolute; top:30%; right:0%"/> <!-- {"left" : 6.66, "top" : 2.29, "height" : 2.28, "width" : 3.26} -->
 
-
-
-<img src="../../assets/images/machine-learning/ROC-5-AUC-3.png" alt="ROC-5-AUC-3.png" style="width:60%; position:absolute; top:80%; right:0%"/> <!-- {"left" : 1.02, "top" : 4.94, "height" : 2.1, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/ROC-5-AUC-3.png" alt="ROC-5-AUC-3.png" style="max-width:60%;"/> <!-- {"left" : 1.02, "top" : 4.94, "height" : 2.1, "width" : 8.21} -->
 
 
 
@@ -1303,6 +1285,8 @@ Notes:
 
 * Accuracy can be specified using a grading system
 
+<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:30%;float:right;"/> <!-- TODO {"left" : 0.42, "top" : 2.75, "height" : 4.26, "width" : 5.71} -->
+
 | AUC        | Grade         |
 |--------    |----------     |
 | 0.9 – 1.00 | A - Excellent |
@@ -1313,7 +1297,6 @@ Notes:
 
 <!-- {"left" : 6.7, "top" : 1.78, "height" : 2.38, "width" : 3.3, "columnwidth" : [1.61, 1.69]} -->
 
-<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:30%;"/> <!-- {"left" : 0.42, "top" : 2.75, "height" : 4.26, "width" : 5.71} -->
 
 
 
@@ -1327,10 +1310,14 @@ Notes:
 ---
 ## ROC / AUC For Multiclass Classifiers
 
+<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:40%;float:right;"/> <!-- TODO {"left" : 2.28, "top" : 2.58, "height" : 4.24, "width" : 5.69} -->
+
   * Say our algorithm recognizes hand-written digits (postal code) into numbers.
   * Its ROC can be drawn as follows
+  * **Question for class** : 
+    - Which digit the classifier is doing well?
+    - Which digit the classifier is not doing well?
 
-<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:40%;"/> <!-- {"left" : 2.28, "top" : 2.58, "height" : 4.24, "width" : 5.69} -->
 
 
 
@@ -1343,7 +1330,9 @@ Notes:
 ## Estimating Target Function
 
   * In supervised algorithms try to estimate target function
-'f'`Y = f(X)``Y: output,   X: input`
+'f'  
+`Y = f(X)`  
+`Y: output,   X: input`
 
   * The error can be broken down to
     - Bias error
@@ -1383,6 +1372,9 @@ Notes:
   * **Variance is the amount that the estimate of the target function will change if different training data was used**
   * Ideally target function should not change drastically from one training set to next
     - meaning that the algorithm is good at picking out the hidden underlying mapping between the inputs and the output variables
+    
+<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="max-width:50%;"/> <!-- TODO {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+
 ---
 
 ## Variance
@@ -1405,12 +1397,8 @@ Notes:
   * Goal of supervised algorithm is to achieve **low bias and low variance**
   * Low bias: less assumptions of target function form --> more flexibility
   * Low variance: less swings in target function for changes in training data --> stable algorithm
-  * Parametric or linear machine learning algorithms often have a high bias but a low variance
----
-
-## Bias - Variance Tradeoff
-
-  * Nonparametric or nonlinear machine learning algorithms often have a low bias but a high variance
+  * **Parametric or linear algorithms** often have a high bias but a low variance
+  * **Nonparametric or nonlinear algorithms** often have a low bias but a high variance
   * There is no escaping the relationship between bias and variance in machine learning
     - Increasing the bias will decrease the variance
     - Increasing the variance will decrease the bias
@@ -1420,20 +1408,6 @@ Notes:
 Notes:
 
 ---
-
-## Bias Variance Trade Off
-
-<img src="../../assets/images/machine-learning/Bias-Variance.png" alt="Bias-Variance.png" style="width:70%;"/> <!-- {"left" : 1.59, "top" : 1.5, "height" : 5.32, "width" : 7.07} -->
-
-
-
-
-
-
-Notes:
-
----
-
 ## Bias-Variance Tradeoff
 
 
@@ -1454,16 +1428,32 @@ Notes:
 Notes:
 
 ---
+## Bias Variance Trade Off
 
-## Bias-Variance Trade Off
+<img src="../../assets/images/machine-learning/Bias-Variance.png" alt="Bias-Variance.png" style="max-width:70%;"/> <!-- {"left" : 1.59, "top" : 1.5, "height" : 5.32, "width" : 7.07} -->
 
-<img src="../../assets/images/machine-learning/Bias-Variance-Trade-Off.png" alt="Bias-Variance-Trade-Off.png" style="width:70%;"/> <!-- {"left" : 1.02, "top" : 1.5, "height" : 5.32, "width" : 8.21} -->
 
 
 
 
 
 Notes:
+
+---
+
+## Bias-Variance Trade Off
+
+<img src="../../assets/images/machine-learning/Bias-Variance-Trade-Off.png" alt="Bias-Variance-Trade-Off.png" style="max-width:70%;"/> <!-- {"left" : 1.02, "top" : 1.5, "height" : 5.32, "width" : 8.21} -->
+
+
+
+
+
+Notes:
+
+---
+
+# Review Questions 
 
 ---
 
