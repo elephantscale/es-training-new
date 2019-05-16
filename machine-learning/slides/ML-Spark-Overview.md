@@ -1,15 +1,12 @@
-# Session: Machine Learning in Spark
+# Spark Machine Learning Overview
 ---
 
 
 ## Lesson Objectives
 
 
- * Understand some of the basics of Machine Learning (ML)
+ * Understand Spark ML library
 
- * Learn how Spark MLlib supports ML
-
- * Become familiar with some of the algorithms in MLlib
 
 Notes:
 
@@ -21,7 +18,7 @@ Notes:
 
 ## Spark Illustrated
 
-<img src="../../assets/images/machine-learning/01.png" style="width:70%"/><!-- {"left" : 0.74, "top" : 1.52, "height" : 4.93, "width" : 8.77} -->
+<img src="../../assets/images/machine-learning/01.png" style="width:70%;"/><!-- {"left" : 0.74, "top" : 1.52, "height" : 4.93, "width" : 8.77} -->
 
 
 Notes:
@@ -35,29 +32,15 @@ See the next slide for a brief explanation of each component
 
 
  * Hadoop
-
      - Hadoop is the first popular distributed platform
-
      - MapReduce is the execution engine
-
      - Did great at batch computes
-
      - 'Mahout' is a machine learning library built on top of Hadoop's MapReduce
-
      - Not so great for iterative algorithms (machine learning)
-
----
-
-## History of Machnie Learning @ Scale
-
  * Spark
-
-     - Native Machine Learning component
-
      - Execution engine is faster than MapReduce (less overhead)
-
-     - Iterative algorithms work well
-
+        - Iterative algorithms work well
+     - Native Machine Learning library that has many algorithms implemented
      - Support in-memory computations (very fast and great for iterative computes)
 
 Notes:
@@ -70,20 +53,18 @@ Notes:
 ## Spark ML Features
 
 
- * Wide variety of algorithms  (classifications, clustering, regressions, collaborative filtering)
-
+ * Implements many popular algorithms  (classifications, clustering, regressions, collaborative filtering)
      - All parallelized out of the box!
 
- * Featurization: feature extraction / transformation / dimensionality reduction / selection
+ * Utilities: Linear algebra, statistics, data handling
+ 
+ * Feature Engineering : feature extraction / transformation / dimensionality reduction / selection
 
  * Pipelines: create, evaluate and tune Pipeline
 
  * Persistence: saving and loading of algorithms/models/pipelines
 
- * Utilities: Linear algebra, statistics, data handling
-
  * Multi Language support: Python / Java / Scala / R
-
      - Equal coverage!
 
 Notes:
@@ -94,7 +75,7 @@ Notes:
 
 ## MLLib => ML
 
-* Spark.mllib contains the original API built on top of RDDs
+* **Spark.mllib** contains the original API built on top of RDDs
 
 * MLLib has been migrating to a new API called Spark.ML
 
@@ -103,8 +84,7 @@ Notes:
     - Dataframes provide faster data access, better caching ..etc
 
 * As of Spark v2.0, RDD based spark.mllib package is in maintenance mode (no new features, bug fixes only)
-
-    - Removed in Spark v3.0
+    - May be removed in Spark v3
 
 
 Notes:
@@ -116,14 +96,17 @@ Notes:
 
 ## Streamlining Prototyping -> deploy
 
-<img src="../../assets/images/machine-learning/Mind-the-Gap.png" style="width:60%"/><!-- {"left" : 1.47, "top" : 0.95, "height" : 3.69, "width" : 7.3} -->
 
-
-  * Extra work
-  * Different code path
+  * Data scientists might work on laptop using  R/Python
+  * Now they want to deploy this at scale, how ever the infrastructure is in Java/Scala
+  * How?
+    - Usually need to re-code it in Java/Scala
+    - Extra work
+    - Different code path
     - Possible bugs!
-  * Updating models is slow!
+    - Updating models is slow!
 
+<img src="../../assets/images/machine-learning/Mind-the-Gap.png" style="max-width:50%;"/><!-- {"left" : 1.47, "top" : 0.95, "height" : 3.69, "width" : 7.3} -->
 
 
 Notes:
@@ -136,16 +119,15 @@ Notes:
 
 ## Streamlining Prototyping -> deploy
 
-<img src="../../assets/images/machine-learning/Streamlining-Prototyping.png" style="width:50%"/><!-- {"left" : 2.69, "top" : 1.02, "height" : 3.7, "width" : 4.88} -->
 
-
-
-* Language neutral
-
+* Spark ML has a simple solution:
+    - Save the model from laptop 
+    - Load the saved model on production and deploy
+* Saved format language neutral (json + parquet)
 * Same model – no need to re-implement
-
 * Fast deploy!
 
+<img src="../../assets/images/machine-learning/Streamlining-Prototyping.png" style="max-width:40%;"/><!-- {"left" : 2.69, "top" : 1.02, "height" : 3.7, "width" : 4.88} -->
 
 Notes:
 
@@ -157,7 +139,7 @@ Notes:
 
 ## ML Algorithm overview
 
-<img src="../../assets/images/machine-learning/3rd-party/ML-Algorithm- overview-02.png" style="width:70%"/><!-- {"left" : 1.11, "top" : 1.42, "height" : 5.13, "width" : 8.04} -->
+<img src="../../assets/images/machine-learning/3rd-party/ML-Algorithm- overview-02.png" style="width:70%;"/><!-- {"left" : 1.11, "top" : 1.42, "height" : 5.13, "width" : 8.04} -->
 
 
 Notes:
@@ -184,7 +166,7 @@ Notes:
 
     When most elements have no value
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Machine-Learning-in-Spark-ML-Vectors-0.png" style="width:50%"/><!-- {"left" : 2.27, "top" : 3.64, "height" : 3.21, "width" : 5.72} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Machine-Learning-in-Spark-ML-Vectors-0.png" style="width:40%;"/><!-- {"left" : 2.27, "top" : 3.64, "height" : 3.21, "width" : 5.72} -->
 
 
 
@@ -196,27 +178,16 @@ Notes:
 
 ## DenseVector vs. Spark Vector
 
-
  * DenseVector = simply an array[1,  2,  3,  4,  5]
-
  * SparseVector
-
      - We specify size
-
      - Index array
-
      - and value array
-
- * Vectors.sparse (length,   index array,   value array)
-
-    Vectors.sparse(10,  (0,9),   (100,200) )
-
+ * Vectors.sparse (length,   index array,   value array)  
+   Vectors.sparse(10,  (0,9),   (100,200) )
      - Size is 10
-
      - 0<sup>th</sup>  (first) element  = 100
-
      - 9<sup>th</sup>  (last) element = 200
-
      - [ 100. 0. 0. 0. 0. 0. 0. 0. 0. 200.]
 
 Notes:
@@ -229,13 +200,14 @@ Notes:
 
 * We use  **Vectors**  class to create dense or sparse vectors
 
-```text
+```scala
 import org.apache.spark.ml.linalg.{Vector, Vectors}
 
 // Create a dense vector (1.0, 0.0, 3.0).
 val dv: Vector = Vectors.dense(1.0, 0.0, 3.0)
 
-// Create a sparse vector (1.0, 0.0, 3.0) by specifying its indices and values corresponding to nonzero entries.
+// Create a sparse vector (1.0, 0.0, 3.0) by specifying its indices
+//  and values corresponding to nonzero entries.
 val sv1: Vector = Vectors.sparse(3, Array(0, 2), Array(1.0, 3.0))
 
 // Create a sparse vector (1.0, 0.0, 3.0) by specifying its nonzero entries.
@@ -257,7 +229,7 @@ Notes:
 
  * We use  **Vectors**  class to create dense or sparse vectors
 
-```
+```python
 from pyspark.ml.linalg import Vectors
 
 v1 = Vectors.dense(3,2,1)
@@ -298,8 +270,13 @@ Notes:
 
  * Weights should add up to 1.0
 
-```text
+```python
+# 70% for training,  30% for testing
 (train, test) = df.randomSplit( [0.7, 0.3])
+
+## specify a seed to get reproduceable splits
+## seed is any integer
+(train, test) = df.randomSplit( [0.7, 0.3], seed=123)
 
 ```
 
@@ -345,7 +322,7 @@ Notes:
 * Transforms a Dataframe To Another Dataframe
     - By adding (or appending) to a “features” column
 
-<img src="../../assets/images/machine-learning/3rd-party/vector.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 2.08, "height" : 5.05, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/vector.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.08, "height" : 5.05, "width" : 8.21} -->
 
 
 
@@ -354,7 +331,7 @@ Notes:
 ## VectorAssembler Example Code (Python)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/VectorAssembler-05.png" style="width:80%;"/><!-- {"left" : 0.64, "top" : 1.2, "height" : 5.57, "width" : 8.98} -->
+<img src="../../assets/images/machine-learning/3rd-party/VectorAssembler-05.png" style="max-width:70%;"/><!-- {"left" : 0.64, "top" : 1.2, "height" : 5.57, "width" : 8.98} -->
 
 Notes:
 
@@ -383,7 +360,7 @@ Notes:
 
 ## String Indexer Example Code (Python)
 
-<img src="../../assets/images/machine-learning/3rd-party/String-Indexer-Example07.png" style="width:70%"/><!-- {"left" : 0.71, "top" : 1.07, "height" : 5.84, "width" : 8.83} -->
+<img src="../../assets/images/machine-learning/3rd-party/String-Indexer-Example07.png" style="max-width:70%;"/><!-- {"left" : 0.71, "top" : 1.07, "height" : 5.84, "width" : 8.83} -->
 
 
 
@@ -395,7 +372,7 @@ Notes:
 
 ## Reverse String Indexer Example Code (Python)
 
-<img src="../../assets/images/machine-learning/3rd-party/Reverse-String-Indexer-08.png" style="width:80%"/><!-- {"left" : 0.51, "top" : 1.83, "height" : 3.83, "width" : 9.22} -->
+<img src="../../assets/images/machine-learning/3rd-party/Reverse-String-Indexer-08.png" style="max-width:80%;"/><!-- {"left" : 0.51, "top" : 1.83, "height" : 3.83, "width" : 9.22} -->
 
 
 
@@ -410,19 +387,14 @@ Notes:
 
 
  * Most ML algorithms need numeric data
-
  * So we need to convert categorical / string data into numerical data before training the model
-
  * Below we see two approaches of encoding 'marital status' data
-
  * The one in middle has various indexes
-
  * The one in right creates 'dummy variables' and assigns  true / false to each.
-
      - Note, only one bit is on
-
      - This is called  **ONE-HOT-Encoding**   
-<img src="../../assets/images/machine-learning/3rd-party/One-Hot-Encoding-09.png" style="width:60%"/><!-- {"left" : 1.48, "top" : 4.84, "height" : 2.4, "width" : 7.3} -->
+     
+<img src="../../assets/images/machine-learning/3rd-party/One-Hot-Encoding-09.png" style="width:60%;"/><!-- {"left" : 1.48, "top" : 4.84, "height" : 2.4, "width" : 7.3} -->
 
 
 
@@ -436,7 +408,7 @@ Notes:
 ## Hot Encoder Code (Python)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Hot-Encoder-10.png" style="width:80%"/><!-- {"left" : 0.84, "top" : 1.35, "height" : 5.28, "width" : 8.57} -->
+<img src="../../assets/images/machine-learning/3rd-party/Hot-Encoder-10.png" style="width:80%;"/><!-- {"left" : 0.84, "top" : 1.35, "height" : 5.28, "width" : 8.57} -->
 
 
 
@@ -448,7 +420,7 @@ Notes:
 ## Hot Encoder Code (Python)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/11.png" style="width:70%"/><!-- {"left" : 1.01, "top" : 1.06, "height" : 5.85, "width" : 8.99} -->
+<img src="../../assets/images/machine-learning/3rd-party/11.png" style="max-width:70%;"/><!-- {"left" : 1.01, "top" : 1.06, "height" : 5.85, "width" : 8.99} -->
 
 
 Notes:
@@ -460,7 +432,7 @@ Notes:
 ## Understanding Hot Encoded Sparse Vectors
 
 
-<img src="../../assets/images/machine-learning/3rd-party/12.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 5.84, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/12.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 5.84, "width" : 8.21} -->
 
 
 Notes:
@@ -514,7 +486,7 @@ Notes:
 ## Standard Scaler Code 1/2- Python
 
 
-<img src="../../assets/images/machine-learning/3rd-party/13.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 0.99, "height" : 2.91, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/13.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 0.99, "height" : 2.91, "width" : 8.21} -->
 
 
 ```text
@@ -543,7 +515,7 @@ Notes:
 ## Standard Scaler Code 2/2- Python
 
 
-<img src="../../assets/images/machine-learning/3rd-party/14.png" style="width:70%"/><!-- {"left" : 0.3, "top" : 1.04, "height" : 2.34, "width" : 9.64} -->
+<img src="../../assets/images/machine-learning/3rd-party/14.png" style="width:70%;"/><!-- {"left" : 0.3, "top" : 1.04, "height" : 2.34, "width" : 9.64} -->
 
 
 ```text
@@ -573,7 +545,7 @@ Notes:
 
  * MinMax Scaler allows you to scale data at arbitrary range – 0.0 to 1.0 is default or  0 to 100)
 
-<img src="../../assets/images/machine-learning/3rd-party/15.png" style="width:70%"/><!-- {"left" : 0.3, "top" : 1.92, "height" : 2.64, "width" : 9.64} -->
+<img src="../../assets/images/machine-learning/3rd-party/15.png" style="width:70%;"/><!-- {"left" : 0.3, "top" : 1.92, "height" : 2.64, "width" : 9.64} -->
 
 
 ```text
@@ -714,7 +686,7 @@ Notes:
 ---
 ## Pipeline Example
 
-<img src="../../assets/images/machine-learning/3rd-party/17.png" style="width:20%"/><!-- {"left" : 4.17, "top" : 1.5, "height" : 4.98, "width" : 1.91} -->
+<img src="../../assets/images/machine-learning/3rd-party/17.png" style="width:20%;"/><!-- {"left" : 4.17, "top" : 1.5, "height" : 4.98, "width" : 1.91} -->
 
 
 Notes:
@@ -727,22 +699,17 @@ Notes:
 
 
  *  **Dataframe**: Contains data
-
  *  **Transformer**: Converts one dataframe into another
 
-<img src="../../assets/images/machine-learning/3rd-party/Transformers-03.png" style="width:50%"/><!-- {"left" : 3.35, "top" : 1.86, "height" : 0.81, "width" : 4.32} -->
-
+<img src="../../assets/images/machine-learning/3rd-party/Transformers-03.png" style="width:50%;"/><!-- {"left" : 3.35, "top" : 1.86, "height" : 0.81, "width" : 4.32} -->
 
  *  **Estimator**: fits the data in Dataframe to create a transformer.
-
      - E.g. a learning model is an estimator
 
-<img src="../../assets/images/machine-learning/3rd-party/18.png" style="width:50%"/><!-- {"left" : 3.31, "top" : 3.74, "height" : 0.7, "width" : 4.4} -->
-
+<img src="../../assets/images/machine-learning/3rd-party/18.png" style="width:50%;"/><!-- {"left" : 3.31, "top" : 3.74, "height" : 0.7, "width" : 4.4} -->
 
 
  *  **Pipeline**: Contains multiple Transformers and Estimators
-
  *  **Parameter**: Parameters can be passed uniformly to all components within a pipeline
 
 Notes:
@@ -755,16 +722,12 @@ Notes:
 
 
  * Here we are creating a pipeline consisting of 3 stages
-
      - Tokenizer:  breaks text into words
-
      - HashingTF: converts words into Vector
-
      - And finally, a LogisticRegression model
-
  * Also note, we train the model on the  **entire**  pipeline in one go!
 
-<img src="../../assets/images/machine-learning/3rd-party/19.png" style="width:67%"/><!-- {"left" : 1.02, "top" : 3.5, "height" : 3.51, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/19.png" style="width:67%;"/><!-- {"left" : 1.02, "top" : 3.5, "height" : 3.51, "width" : 8.21} -->
 
 
 Notes:
@@ -783,7 +746,7 @@ Notes:
 
  * Pipeline executes 'transform' on first two and 'fit' on Logistic Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Machine-Learning-in-Spark-Pipeline-Explained-0.png"; style="width:90%"/><!-- {"left" : 0.98, "top" : 3.87, "height" : 2.12, "width" : 8.29} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Machine-Learning-in-Spark-Pipeline-Explained-0.png"; style="width:60%;"/><!-- {"left" : 0.98, "top" : 3.87, "height" : 2.12, "width" : 8.29} -->
 
 
 Notes:
@@ -801,21 +764,3 @@ Notes:
  * [https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models](https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models)
 
 Notes:
-
-
-
----
-
-# Backup Slides
-
----
-
-## Vectors in Spark
-
-<img src="../../assets/images/machine-learning/3rd-party/vector-spark.png" style="width:80%"/><!-- {"left" : 0.82, "top" : 1.54, "height" : 4.89, "width" : 8.61} -->
-
-
-Notes:
-
-
-
