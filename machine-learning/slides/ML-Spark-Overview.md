@@ -308,7 +308,7 @@ Notes:
 
  * E.g., an ML model is a Transformer which transforms a DataFrame with features into a DataFrame with predictions.
 
- <img src="../../assets/images/machine-learning/3rd-party/Transformers-03.png" style="width:90%; position:absolute;"/><!-- {"left" : 0.94, "top" : 3.89, "height" : 1.57, "width" : 8.38} -->
+ <img src="../../assets/images/machine-learning/3rd-party/Transformers-03.png" style="width:90%;"/><!-- {"left" : 0.94, "top" : 3.89, "height" : 1.57, "width" : 8.38} -->
 
 
 
