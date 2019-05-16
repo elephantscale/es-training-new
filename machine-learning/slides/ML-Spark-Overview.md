@@ -746,7 +746,7 @@ Notes:
 
  * Pipeline executes 'transform' on first two and 'fit' on Logistic Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Machine-Learning-in-Spark-Pipeline-Explained-0.png"; style="width:60%;"/><!-- {"left" : 0.98, "top" : 3.87, "height" : 2.12, "width" : 8.29} -->
+<img src="../../assets/images/machine-learning/Session-Machine-Learning-in-Spark-Pipeline-Explained-0.png"; style="width:70%;"/><!-- {"left" : 0.98, "top" : 3.87, "height" : 2.12, "width" : 8.29} -->
 
 
 Notes:
