@@ -139,7 +139,7 @@ Notes:
 
 ## ML Algorithm overview
 
-<img src="../../assets/images/machine-learning/3rd-party/ML-Algorithm- overview-02.png" style="width:70%;"/><!-- {"left" : 1.11, "top" : 1.42, "height" : 5.13, "width" : 8.04} -->
+<img src="../../assets/images/machine-learning/ML-Algorithm-overview-02.png" style="width:80%;"/><!-- {"left" : 1.11, "top" : 1.42, "height" : 5.13, "width" : 8.04} -->
 
 
 Notes:
