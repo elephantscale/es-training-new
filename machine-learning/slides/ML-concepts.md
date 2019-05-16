@@ -68,7 +68,7 @@ Notes:
 
 ## Machine Learning Process 
 
-<img src="../../assets/images/machine-learning/ML-Process-1.png"  style="max-width:90%;"/> 
+<img src="../../assets/images/machine-learning/ML-Process.png"  style="max-width:90%;"/> 
 
 ---
 
@@ -88,7 +88,7 @@ Notes:
 
 ## Machine Learning Process: Step 1: Data Exploration
 
-<img src="../../assets/images/machine-learning/ML-Process-2.png"  style="max-width:90%;"/> 
+<img src="../../assets/images/machine-learning/ML-Process-02.png"  style="max-width:90%;"/> 
 
 ---
 # Feature Engineering
@@ -154,7 +154,7 @@ Notes:
 
 <!-- {"left" : 0.26, "top" : 3.54, "height" : 1.7, "width" : 9.75, "columnwidth" : [1.39, 1.39, 1.39, 1.39, 1.39, 1.39, 1.39]} -->
 
-<img src="../../assets/images/machine-learning/Feature-Extraction-02.png" alt="Feature-Extraction" style="width:50%;"/> <!-- {"left" : 1.89, "top" : 5.45, "height" : 1.59, "width" : 7.98} -->
+<img src="../../assets/images/machine-learning/Feature-Extraction-02.png" alt="Feature-Extraction" style="width:40%;"/> <!-- {"left" : 1.89, "top" : 5.45, "height" : 1.59, "width" : 7.98} -->
 
 
 
@@ -363,7 +363,7 @@ Notes:
 ---
 
 ## Machine Learning Process: Step 2: Developing a Model
-<img src="../../assets/images/machine-learning/ML-Process-3.png"  style="max-width:90%;"/> 
+<img src="../../assets/images/machine-learning/ML-Process-03.png"  style="max-width:90%;"/> 
 
 ---
 
@@ -480,7 +480,7 @@ Notes:
 ---
 
 ## Machine Learning Process: Step 3: Model Evaluation
-<img src="../../assets/images/machine-learning/ML-Process-4.png"  style="max-width:90%;"/> 
+<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="max-width:90%;"/> 
 
 ---
 
@@ -553,7 +553,7 @@ Notes:
     - Try a different algorithm / model, that better fits the data
     - Simplify inputs
 
-<img src="../../assets/images/machine-learning/underfit-overfit-02.png" alt="underfit-overfit" style="max-width:55%;"/> <!-- {"left" : 3.67, "top" : 5.07, "height" : 2.13, "width" : 6.38} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-02.png" alt="underfit-overfit" style="max-width:50%;"/> <!-- {"left" : 3.67, "top" : 5.07, "height" : 2.13, "width" : 6.38} -->
 
 
 
@@ -1193,9 +1193,9 @@ Notes:
 
 ---
 
-## ROC Curve: Receiver Operating Characteristic
+## ROC (Receiver Operating Characteristic) Curve
 
-<img src="../../assets/images/machine-learning/ROC-07.png" alt="ROC-07.png" style="width:60%;"/> <!-- {"left" : 1.27, "top" : 1, "height" : 5.98, "width" : 7.7} -->
+<img src="../../assets/images/machine-learning/ROC-07.png" alt="ROC-07.png" style="max-width:80%;"/> <!-- {"left" : 1.27, "top" : 1, "height" : 5.98, "width" : 7.7} -->
 
 
 
@@ -1373,7 +1373,7 @@ Notes:
   * Ideally target function should not change drastically from one training set to next
     - meaning that the algorithm is good at picking out the hidden underlying mapping between the inputs and the output variables
     
-<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="max-width:50%;"/> <!-- TODO {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="max-width:40%;"/> <!-- TODO {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
 
 ---
 

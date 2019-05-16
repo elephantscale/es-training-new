@@ -75,8 +75,7 @@ Notes:
 | Weighted Mean | Sum(values * weights) / total number of samples |
 
 * [30k, 35k, 22k, 70k, 50k, 55k, 45k, 40k, 25k, 42k, 60k, 65k]
-
- *  **Average / Mean** = Total sum of all salaries /  (number of salaries )  
+*  **Average / Mean** = Total sum of all salaries /  (number of salaries )  
  = (30k +  35k +  22k + 70k + 50k +  55k +  45k +  40k + 25k + 42k + 60k + 65k)  /  12  
  = 44.9k
 
@@ -170,7 +169,7 @@ http://www.cabrillo.edu/~evenable/ch03.pdf
   = (50 + 55) / 2   
   = 52.5 
   
-<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers.png" alt="Data-Exploration-Median-Mean-Outliers.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers.png" alt="Data-Exploration-Median-Mean-Outliers.png" style="max-width:80%;"/>
 
 Notes:
 
@@ -186,7 +185,7 @@ Notes:
   = 91.89
 * Median = 55
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="max-width:100%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="max-width:80%;"/>
 
 * So **median** is less influenced by outliers 
 * This is why we hear 'median' used in news stories 
@@ -321,9 +320,9 @@ Notes:
 
 **Variance & standard deviation** ( μ is mean )  
 
-<img src="../../assets/images/machine-learning/variance-formula.png"  style="max-width:80%;"/>
+<img src="../../assets/images/machine-learning/variance-formula.png"  style="max-width:60%;"/>
 
-<img src="../../assets/images/machine-learning/standard-deviation-formula.png"  style="max-width:80%;"/>
+<img src="../../assets/images/machine-learning/standard-deviation-formula.png"  style="max-width:60%;"/>
 
 
 Notes:
@@ -733,7 +732,7 @@ Notes:
 
 ## Correlation Formula
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Formula-0.png" alt="Data-Exploration-Correlation-Formula-0.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Formula-0.png" alt="Data-Exploration-Correlation-Formula-0.png" style="width:60%;"/>
 
 Notes:
 
@@ -1000,7 +999,7 @@ Notes:
  * Income data (sorted):  
  [22k, 25k, 30k, 35k, 40k, 42k, 45k, 50k, 55k, 60k, 65k, 70k]
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" alt="Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" alt="Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" style="width:40%;"/>
 
 Notes:
 
@@ -1250,6 +1249,3 @@ Notes:
 
 
 Notes:
-
-
----

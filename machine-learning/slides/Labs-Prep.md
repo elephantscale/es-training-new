@@ -27,7 +27,7 @@ Notes:
 
  * Make sure they can see the sandbox splash page
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Labs-Prep-Step-1-Distribute-VMs-0.png" style="width:60%"><!-- {"left" : 1.49, "top" : 3.53, "height" : 3.54, "width" : 7.28} -->
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Labs-Prep-Step-1-Distribute-VMs-0.png" style="max-width:50%;"><!-- {"left" : 1.49, "top" : 3.53, "height" : 3.54, "width" : 7.28} -->
 
 
 Notes:
@@ -135,7 +135,7 @@ Notes:
 
  * [https://www.youtube.com/watch?v=xaBEFqFVSE8](https://www.youtube.com/watch?v=xaBEFqFVSE8)
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Jupyter-Interactive-Notebook-0.png" style="width:50%"><!-- {"left" : 2.14, "top" : 2.63, "height" : 3.78, "width" : 5.98} -->
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Jupyter-Interactive-Notebook-0.png" style="width:50%;"><!-- {"left" : 2.14, "top" : 2.63, "height" : 3.78, "width" : 5.98} -->
 
 
 
@@ -161,5 +161,3 @@ https://www.youtube.com/watch?v=xaBEFqFVSE8
 
 
 Notes:
-
-
