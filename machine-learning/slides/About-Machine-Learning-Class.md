@@ -199,7 +199,7 @@ Notes:
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby…etc)
 
-<img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:45%;"/>   &nbsp;
+<img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:40%;"/>   &nbsp;
 <img src="../../assets/images/generic/3rd-party/hiking-2.jpg" style="width:30%;"/>
 
 

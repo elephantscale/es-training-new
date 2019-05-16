@@ -229,7 +229,7 @@ Notes:
 
  * [Link to case study] (https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
 
-<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="width:40%;">
+<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="width:35%;">
 
 
 Notes:
@@ -249,7 +249,7 @@ Notes:
 
  * Self driving cars
 
-<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%">
+<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%;">
 
 Notes:
 
@@ -258,7 +258,7 @@ Notes:
 
 ## AI Success Story : Image Recognition: Cats & Dogs
 
-<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="width:35%">
+<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="width:30%;">
 
 Notes:
 
@@ -278,7 +278,7 @@ Notes:
 
  * [https://www.kaggle.com/c/dogs-vs-cats](https://www.kaggle.com/c/dogs-vs-cats )
 
-<img src="../../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" style="width:50%">
+<img src="../../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" style="width:40%;">
 
 
 
@@ -350,7 +350,7 @@ https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
      - Running in parallel
 
 
-<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" style="width:50%; margin-top:-100px">
+<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" style="width:40%;">
 
 Notes:
 
@@ -369,7 +369,7 @@ Notes:
 
  * Intel Math Kernel Library - highly optimized, threaded, and vectorized math functions that maximize performance on each processor family
 
-<img src="../../assets/images/machine-learning/3rd-party/intel-cpu.png" style="width:60%">
+<img src="../../assets/images/machine-learning/3rd-party/intel-cpu.png" style="width:60%;">
 
 
 Notes:
@@ -403,7 +403,7 @@ Notes:
 
 ## Google TPU System in Data Center
 
-<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:60%">
+<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:60%;">
 
 
 Notes:
@@ -489,7 +489,7 @@ Notes:
 
  * ML can process applications very quickly and only send "flagged" applications for manual review
 
-<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" style="width:70%">
+<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" style="width:70%;">
 
 Notes:
 
@@ -592,7 +592,7 @@ Notes:
 ## Deep Neural Network – Face Recognition
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" style="width:35%">
+<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" style="width:33%;">
 
 Notes:
 
@@ -626,7 +626,7 @@ Notes:
 ## Machine Learning vs. Deep Learning
 
 
-<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning_skitch.png" style="width:70%">
+<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning_skitch.png" style="width:60%;">
 
 Notes:
 
@@ -636,7 +636,7 @@ Notes:
 
 ## 1980’s and 1990’s
 
-<img src="../../assets/images/machine-learning/1980-1990-01.png" style="width:80%">
+<img src="../../assets/images/machine-learning/1980-1990-01.png" style="max-width:80%;">
 
 
 Notes:
@@ -648,7 +648,7 @@ Source: Jeff Dean
 
 ## 1990+
 
-<img src="../../assets/images/machine-learning/1980-1990-02.png" style="width:80%">
+<img src="../../assets/images/machine-learning/1980-1990-02.png" style="max-width:80%;">
 
 Notes:
 
@@ -659,7 +659,7 @@ Source: Jeff Dean
 
 ## Now
 
-<img src="../../assets/images/machine-learning/1980-1990-03.png" style="width:80%">
+<img src="../../assets/images/machine-learning/1980-1990-03.png" style="max-width:80%;">
 
 Notes:
 
@@ -721,7 +721,7 @@ Notes:
  * Now Big Data tools make it possible to run machine learning algorithms at massive scale–distributed across a cluster
 
 
-<img src="../../assets/images/machine-learning/DL-cluster.png" style="width:70%">
+<img src="../../assets/images/machine-learning/DL-cluster.png" style="width:70%;">
 
 Notes:
 
@@ -903,7 +903,7 @@ Image credit (Creative Commons) : Pexels.com
 
  * Predict no new data (unseen)
 
-<img src="../../assets/images/machine-learning/3rd-party/Regression-01.png" style="width:60%">
+<img src="../../assets/images/machine-learning/3rd-party/Regression-01.png" style="width:60%;">
 
 Notes:
 
@@ -924,7 +924,7 @@ Notes:
  * Start with 70% training, 30% test
     - Tweak the dials to increase or decrease the proportion
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="width:60%">
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="max-width:60%;">
 
 Notes:
 
@@ -935,23 +935,15 @@ Notes:
 
 
  * Classification is a model that predicts data into "buckets"
-
  * Examples:
-
      - Email is  **SPAM**  or  **HAM**  (not-SPAM)
-
      - A cell is  **cancerous**  or  **healthy**
-
      - Hand-written numbers -> any digits 0, 1, 2,…, 9
-
-
  * Classification algorithm learns from training data
-
      - Supervised learning
+ * Also predicted classes are **discrete** or **qualitative**
 
- * Also predicted classes are " **discrete** " or " **qualitative** "
-
-<img src="../../assets/images/machine-learning/Classification-01.png" style="width:40%">
+<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:60%;">
 
 Notes:
 
@@ -1097,7 +1089,7 @@ Notes:
 
  * Google News algorithm automatically groups **related news stories**  into sections
 
-<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:90%">
+<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:90%;">
 
 Notes:
 
@@ -1114,7 +1106,7 @@ Notes:
 
  * But by grouping data points together, the algorithm can 'infer' information, even when labels are missing
 
-<img src="../../assets/images/machine-learning/Semi-Supervised.png" style="width:55%">
+<img src="../../assets/images/machine-learning/Semi-Supervised.png" style="max-width:50%;">
 
 Notes:
 
@@ -1145,7 +1137,7 @@ Notes:
 
  * Here the robot gets rewarded for 'food' and penalized for walking into fire
 
-<img src="../../assets/images/machine-learning/Reinforcement-Learning.png" style="width:80%">
+<img src="../../assets/images/machine-learning/Reinforcement-Learning.png" style="max-width:80%;">
 
 Notes:
 
@@ -1156,7 +1148,7 @@ Notes:
 ## Reinforcement Learning Demo: Atari Breakout
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Atari-Breakout.png" style="width:30%">
+<img src="../../assets/images/deep-learning/3rd-party/Atari-Breakout.png" style="width:30%;">
 
 [Link](https://www.youtube.com/watch?v=V1eYniJ0Rnk)
 
@@ -1172,7 +1164,7 @@ Notes:
 ## Reinforcement Learning Demo : Open AI Bots Playing Dota
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" style="width:70%">
+<img src="../../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" style="width:70%;">
 
 <a href="https://www.youtube.com/watch?v=eHipy_j29Xw">Link</a>
 
@@ -1219,7 +1211,7 @@ Notes:
 
 ## ML Algorithm Cheat Sheet
 
-<img src="../../assets/images/machine-learning/cheat-sheet.png" style="width:80%">
+<img src="../../assets/images/machine-learning/cheat-sheet.png" style="width:80%;">
 
 Notes:
 
@@ -1230,7 +1222,7 @@ Notes:
 
 ## Elon Musk:  "AI will take over humanity"
 
-<img src="../../assets/images/machine-learning/3rd-party/Elon-musk.png" style="width:45%">
+<img src="../../assets/images/machine-learning/3rd-party/Elon-musk.png" style="max-width:40%;">
 
 Notes:
 
@@ -1298,5 +1290,3 @@ Notes:
 * https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
 * https://monkeylearn.com/blog/a-gentle-guide-to-machine-learning/
 * https://www.analyticsvidhya.com/blog/2015/06/machine-learning-basics/
-
-
