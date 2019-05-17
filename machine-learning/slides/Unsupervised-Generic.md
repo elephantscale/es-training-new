@@ -683,7 +683,7 @@ Notes:
 
      - Increasing K beyond the elbow doesn't produce noticeable improvements in clustering
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-How-to-Find-the-Best-K--0.png" alt="Session-Unsupervised-Learning-How-to-Find-the-Best-K--0.png" style="width:60%;"/><!-- {"left" : 2.37, "top" : 3.27, "height" : 3.22, "width" : 5.52} -->
+<img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-How-to-Find-the-Best-K--0.png" alt="Session-Unsupervised-Learning-How-to-Find-the-Best-K--0.png" style="width:60%;"/><!-- {"left" : 2.37, "top" : 3.27, "height" : 3.22, "width" : 5.52} -->
 
 
 

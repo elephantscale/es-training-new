@@ -59,7 +59,7 @@ Notes:
 
 ## Should I Accept the New Job Offer?
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Job-Offer.png" style="width:80%"><!-- {"left" : 0.86, "top" : 1.31, "height" : 5.36, "width" : 8.53} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Job-Offer.png" style="width:80%"><!-- {"left" : 0.86, "top" : 1.31, "height" : 5.36, "width" : 8.53} -->
 
 
 Notes:
@@ -70,7 +70,7 @@ Notes:
 
 ## Example of Decision Tree
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Decision-Trees.png" style="width:70%"><!-- {"left" : 0.5, "top" : 1.04, "height" : 5.89, "width" : 9.25} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Example-Decision-Trees.png" style="width:70%"><!-- {"left" : 0.5, "top" : 1.04, "height" : 5.89, "width" : 9.25} -->
 
 
 
@@ -170,7 +170,7 @@ If years >= 4.5 and Hits >= 117.5 Then Salary = 6.74
 <!-- {"left" : 0, "top" : 1.11, "height" : 1.45, "width" : 10.25} -->
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Data-Model-0.png" style="width:40%"><!-- {"left" : 3.4, "top" : 2.91, "height" : 3.95, "width" : 3.45} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Data-Model-0.png" style="width:40%"><!-- {"left" : 3.4, "top" : 2.91, "height" : 3.95, "width" : 3.45} -->
 
 
 Notes:
@@ -355,7 +355,7 @@ Notes:
 
  * We will create a decision tree to identify the classes
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-0.png" style="width:60%"><!-- {"left" : 1.74, "top" : 2.24, "height" : 4.52, "width" : 6.76} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Creation-Example-0.png" style="width:60%"><!-- {"left" : 1.74, "top" : 2.24, "height" : 4.52, "width" : 6.76} -->
 
 
 Notes:
@@ -1141,7 +1141,7 @@ Notes:
 
 ## Example of a Decision Tree
 
-<img src="../../assets/images/machine-Learning//3rd-party/Decision-Trees-Example-Decision-Trees.png" style="width:80%"><!-- {"left" : 1.02, "top" : 1.37, "height" : 5.23, "width" : 8.21} -->
+<img src="../../assets/images/machine-Learning/Decision-Trees-Example-Decision-Trees.png" style="width:80%"><!-- {"left" : 1.02, "top" : 1.37, "height" : 5.23, "width" : 8.21} -->
 
 
 

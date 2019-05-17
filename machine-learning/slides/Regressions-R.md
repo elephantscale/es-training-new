@@ -599,7 +599,7 @@ title(main="Sigmoid (Logistic) Function")
 
 ```
 
-<img src="../../assets/images/machine-learning/3rd-party/Supervised-Learning-in-R--Sigmoid-Curve-S-Curve--0.png" style="width:60%" /><!-- {"left" : 2.5, "top" : 3.17, "height" : 3.79, "width" : 5.26} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-R--Sigmoid-Curve-S-Curve--0.png" style="width:60%" /><!-- {"left" : 2.5, "top" : 3.17, "height" : 3.79, "width" : 5.26} -->
 
 
 Notes:
@@ -702,7 +702,7 @@ lines(sorted.data$score, sorted.data$prob, col="red") # red line
 
 ```
 
-<img src="../../assets/images/machine-learning/3rd-party/Supervised-Learning-in-R-Plotting-GLM-0.png" style="width:50%"/><!-- {"left" : 2.47, "top" : 3.12, "height" : 3.82, "width" : 5.3} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-0.png" style="width:50%"/><!-- {"left" : 2.47, "top" : 3.12, "height" : 3.82, "width" : 5.3} -->
 
 
 Notes:
@@ -726,7 +726,7 @@ logi.hist.plot(mydata$score, mydata$approved, boxp=FALSE)
 
 ```
 
-<img src="../../assets/images/machine-learning/3rd-party/Supervised-Learning-in-R-Plotting-GLM-With-PopBio-Package-0.png" style="width:65%"/><!-- {"left" : 1.96, "top" : 2.44, "height" : 4.57, "width" : 6.34} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-With-PopBio-Package-0.png" style="width:65%"/><!-- {"left" : 1.96, "top" : 2.44, "height" : 4.57, "width" : 6.34} -->
 
 
 Notes:
