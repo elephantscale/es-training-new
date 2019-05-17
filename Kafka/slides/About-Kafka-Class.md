@@ -1,12 +1,12 @@
 # Introduction to Apache Kafka
 
-<img src="../../assets/images/logos/kafka-logo.png" />
+<img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" />
 
 
 ---
 ## Workshop Overview - 3 Days
 
-<img src="../../assets/images/logos/kafka-logo.png" style="float:right;"/>
+<img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/>
 
  * Day 1
      -  Streaming Overview
@@ -32,7 +32,7 @@ Notes:
 ## Workshop Overview - 4 Days
 
 
-<img src="../../assets/images/logos/kafka-logo.png" style="float:right;"/>
+<img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/>
 
  * Day 1
      -  Streaming Overview
