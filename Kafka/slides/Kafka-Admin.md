@@ -101,9 +101,9 @@ Notes:
      - One partition MUST fit on ONE volume
 
 
-<img src="../../assets/images/kafka/Disks-Setup-01.png" alt="Disks-Setup-01.png" style="width:40%; position:absolute; top:340px; left:894px;"/>
+<img src="../../assets/images/kafka/Disks-Setup-01.png" alt="Disks-Setup-01.png" style="width:40%; position:relative; top:340px; left:894px;"/>
 
-<img src="../../assets/images/kafka/Disks-Setup-02.png" alt="Disks-Setup-02.png" style="width:40%; position:absolute; top:700px; left:894px;"/>
+<img src="../../assets/images/kafka/Disks-Setup-02.png" alt="Disks-Setup-02.png" style="width:40%; position:relative; top:700px; left:894px;"/>
 
 
 Notes: 

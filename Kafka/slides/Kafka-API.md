@@ -1160,10 +1160,10 @@ Notes:
 
  *  **Offset updated but not processed -> Skipped events** 
 
-<img src="../../assets/images/kafka/Duplicate-Skipped-Events.png" alt="Duplicate-Skipped-Events.png" style="width:45%; position:absolute; top: 500px; right:5px;"/>
+<img src="../../assets/images/kafka/Duplicate-Skipped-Events.png" alt="Duplicate-Skipped-Events.png" style="width:45%; position:relative; top: 500px; right:5px;"/>
 
 
-<img src="../../assets/images/kafka/Duplicate-Skipped-Events-09.png" alt="Duplicate-Skipped-Events-09.png" style="width:70%; position:absolute; top:782px; left:258px;"/>
+<img src="../../assets/images/kafka/Duplicate-Skipped-Events-09.png" alt="Duplicate-Skipped-Events-09.png" style="width:70%; position:relative; top:782px; left:258px;"/>
 
 Notes: 
 

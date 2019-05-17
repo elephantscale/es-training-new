@@ -97,7 +97,7 @@ Notes:
 
      - Design a system to handle these requirements
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:absolute; top:800px; right:20px;"/>
+<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 
 Notes: 
@@ -158,7 +158,7 @@ Notes:
 
  * Design Kafka topics and message formats
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:absolute; top:800px; right:20px;"/>
+<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 
 Notes: 
@@ -201,7 +201,7 @@ Notes:
 
  * Reference: http://avro.apache.org/docs/current/spec.html
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:absolute; top:800px; right:20px;"/>
+<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 
@@ -389,7 +389,7 @@ Notes:
 
  * Modify your design to handle these requirements
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:absolute; top:800px; right:20px;"/>
+<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 
@@ -423,7 +423,7 @@ Notes:
 
  * How would you implement this?
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:absolute; top:800px; right:20px;"/>
+<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 
@@ -489,7 +489,7 @@ Notes:
 
  * Modify your design to handle devices
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:absolute; top:800px; right:20px;"/>
+<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 
@@ -586,7 +586,7 @@ Notes:
 
  * Can handle failures
 
-<img src="../../assets/images/kafka/Distributed-Log-Collection-Tools-Flume.png" alt="Distributed-Log-Collection-Tools-Flume.png" style="width:30%; position:absolute; top:600px; right:20px;"/>
+<img src="../../assets/images/kafka/Distributed-Log-Collection-Tools-Flume.png" alt="Distributed-Log-Collection-Tools-Flume.png" style="width:30%; position:relative; top:600px; right:20px;"/>
 
 Notes: 
 
@@ -614,7 +614,7 @@ Notes:
 
      - Find log events of a particular severity
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:absolute; top:800px; right:20px;"/>
+<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 

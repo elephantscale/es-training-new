@@ -85,7 +85,7 @@ https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
 
      - Use `'ulimits –a'` to verify
 
-<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="width:50%; position: absolute; top:374px;"/>
+<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="width:50%; position: relative; top:374px;"/>
 
 Notes: 
 
@@ -113,7 +113,7 @@ Notes:
 
      - And create alerts if disks are getting full
 
-<img src="../../assets/images/kafka/Disks-Setup-02.png" alt="Disks-Setup-02.png" style="width:40%; position: absolute; top: 700px; right: 10px"/>
+<img src="../../assets/images/kafka/Disks-Setup-02.png" alt="Disks-Setup-02.png" style="width:40%; position: relative; top: 700px; right: 10px"/>
 
 Notes: 
 

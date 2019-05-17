@@ -108,9 +108,9 @@ Notes:
 
      - Not open source (Single instance free)
 
-<img src="../../assets/images/kafka/3rd-party/graphlte-logo.png" alt="graphlte-logo.png" style="width:30%; position:absolute; left:1150px; top:250px;"/>
+<img src="../../assets/images/kafka/3rd-party/graphlte-logo.png" alt="graphlte-logo.png" style="width:30%; position:relative; left:1150px; top:250px;"/>
 
-<img src="../../assets/images/kafka/3rd-party/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; position:absolute; left:1200px; top:500px;"/>
+<img src="../../assets/images/kafka/3rd-party/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; position:relative; left:1200px; top:500px;"/>
 ---
 
 ## Metrics Database Choices
@@ -126,7 +126,7 @@ Notes:
      - Open source
 
 
-<img src="../../assets/images/kafka/3rd-party/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:30%; position:absolute; left:1150px; top:250px;"/>
+<img src="../../assets/images/kafka/3rd-party/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:30%; position:relative; left:1150px; top:250px;"/>
 
 
 Notes: 
@@ -175,7 +175,7 @@ Image used under fair use , source : grafana.org
 
  * www.nagios.org
 
-<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-6.png" alt="Monitoring-Choices-6.png" style="width:46%; position:absolute; top:300px; right:10px;"/>
+<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-6.png" alt="Monitoring-Choices-6.png" style="width:46%; position:relative; top:300px; right:10px;"/>
 
 Notes: 
 
