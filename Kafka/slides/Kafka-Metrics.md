@@ -125,8 +125,7 @@ Notes:
 
      - Open source
 
-
-<img src="../../assets/images/kafka/3rd-party/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:30%; position:relative; left:1150px; top:250px;"/>
+<img src="../../assets/images/logos/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:30%; position:relative; left:500px; top:-400px;"/>
 
 
 Notes: 
