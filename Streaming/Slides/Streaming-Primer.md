@@ -92,7 +92,7 @@ Notes:
 
   * More use cases at [BigDataUseCases.info](www.BigDataUseCases.info)
 
-<img src="../../assets/images/streaming/3rd-party/netflix.png" alt="netflix.png" style="width:25% ;position:relative; top:-600px; left: 500px;"/>
+<img src="../../assets/images/logos/netflix-logo-1.png" alt="netflix.png" style="width:25% ;position:relative; top:-600px; left: 500px;"/>
 
 <img src="../../assets/images/streaming/3rd-party/the-weather-company.png" alt="the-weather-company.png" style="width:25%; position:relative; top:-600px; left: 500px;"/>
 
