@@ -8,7 +8,7 @@
 
  * Understand streaming use cases
  * Learn about streaming concepts
- * Gain insight on streaming architecturesNotes: 
+ * Gain insight on streaming architectures
 
 
 Notes: 
@@ -54,11 +54,10 @@ Notes:
   * Beyond Batch
     - We need faster processing and analytics
 
-<img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" alt="Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" alt="Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" style="width:20%; position:relative; top:-600px; left: 500px;"/>
+<img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-4.png" alt="Streaming-Primer-Moving-Towards-Fast-Data-Version-2-4.png" style="width:17%; position:relative; top:-600px; left: 500px;"/>
 
-<img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-4.png" alt="Streaming-Primer-Moving-Towards-Fast-Data-Version-2-4.png" style="width:65%;"/>
-
-<img src="../../assets/images/streaming/toward-fast-data.png" alt="toward-fast-data.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/toward-fast-data.png" alt="toward-fast-data.png" style="width:30%; position:relative; top:-600px; left: 500px;"/>
 
 
 Notes: 
@@ -82,21 +81,20 @@ Notes:
 
 ## Spark Streaming Use Cases
 
-Netflix
-Recommendations
-450 billion events/day
+  * Netflix
+    - Recommendations
+    - 450 billion events/day
+  
+  * Weather Company
+    - Analyze weather sensor data
+    - Billions of events/day
+    - Multi-Petabyte (PB) traffic daily
 
-Weather Company
-Analyze weather sensor data
-Billions of events/day
-Multi-Petabyte (PB) traffic daily
+  * More use cases at [BigDataUseCases.info](www.BigDataUseCases.info)
 
-More use cases at [BigDataUseCases.info]
+<img src="../../assets/images/streaming/3rd-party/netflix.png" alt="netflix.png" style="width:25% ;position:relative; top:-600px; left: 500px;"/>
 
-
-<img src="../../assets/images/streaming/3rd-party/netflix.png" alt="netflix.png" style="width:65%;"/>
-
-<img src="../../assets/images/streaming/3rd-party/the-weather-company.png" alt="the-weather-company.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/3rd-party/the-weather-company.png" alt="the-weather-company.png" style="width:25%; position:relative; top:-600px; left: 500px;"/>
 
 
 Notes: 
@@ -169,7 +167,7 @@ Notes:
     - Slightly higher latency (due to batching)
     - Frameworks: Spark Streaming
 
-<img src="../../assets/images/streaming/Streaming-proccessing-model.png" alt="Streaming-proccessing-model.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-proccessing-model.png" alt="Streaming-proccessing-model.png" style="width:35%;"/>
 
 
 Notes: 
@@ -181,7 +179,7 @@ Notes:
 ## Event Based Vs. Batch
 
 
-<img src="../../assets/images/streaming/event-based-batch.png" alt="event-based-batch.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/event-based-batch.png" alt="event-based-batch.png" style="width:70%;"/>
 
 
 
@@ -195,21 +193,22 @@ Notes:
 
 ## Processing Guarantees
 
-* In the order of effort required: - At-most-once <  At-least-once  < exactly-once
-* At-most-once
-- Simplest implementation
-- No duplicate processing
-- Events can be dropped due to crashes or heavy load
-- E.g.  Web requests (if the web server is busy, requests are dropped)
+  * In the order of effort required:
+    - At-most-once <  At-least-once  < exactly-once
+  * At-most-once
+    - Simplest implementation
+    - No duplicate processing
+    - Events can be dropped due to crashes or heavy load
+    - E.g.  Web requests (if the web server is busy, requests are dropped)
 
-* At-least-once
-- All events are guaranteed to be processed (no dropped events)
-- An event can be processed more than once.- In case of failure recovery, events can be re-played and processed again.
-- Needs a ‘durable buffer’ that enables ‘re-play’
-- OK for idempotent operations like saving events.- Duplicate processing will just over-write previous values.
-- Not OK for counting (how many events came in in last 10 mins)
-- **Most common** implementation
-- Frameworks: All (Storm, Spark, NiFi, Samza, Flink)
+  * At-least-once
+    - All events are guaranteed to be processed (no dropped events)
+    - An event can be processed more than once.    - In case of failure recovery, events can be re-played and processed again.
+    - Needs a ‘durable buffer’ that enables ‘re-play’
+    - OK for idempotent operations like saving events.    - Duplicate processing will just over-write previous values.
+    - Not OK for counting (how many events came in in last 10 mins)
+    - **Most common** implementation
+    - Frameworks: All (Storm, Spark, NiFi, Samza, Flink)
 
 
 
@@ -231,7 +230,7 @@ Notes:
 - When applying a new ‘batch’ of counts, how can we make sure we are not duplicate counting?
 
 
-<img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-9.png" alt="Streaming-Primer-Processing-Guarantees-9.png" style="width:65%;"/><img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-10.png" alt="Streaming-Primer-Processing-Guarantees-10.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-9.png" alt="Streaming-Primer-Processing-Guarantees-9.png" style="width:37%;"/><img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-10.png" alt="Streaming-Primer-Processing-Guarantees-10.png" style="width:37%;"/>
 
 
 Notes: 
@@ -305,9 +304,9 @@ Notes:
 ---
 ## State Management Strategies
 
-<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-011.png.png" alt="Streaming-Primer-State-Management-Strategies-011.png.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-011.png.png" alt="Streaming-Primer-State-Management-Strategies-011.png.png" style="width:45%;"/>
 
-<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-11.png" alt="Streaming-Primer-State-Management-Strategies-11.png" style="width:65%;"/><img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-12.png" alt="Streaming-Primer-State-Management-Strategies-12.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-11.png" alt="Streaming-Primer-State-Management-Strategies-11.png" style="width:35%;"/><img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-12.png" alt="Streaming-Primer-State-Management-Strategies-12.png" style="width:40%;"/>
 
 
 
@@ -347,7 +346,7 @@ Notes:
   * Event Time < Arrival Time
   * Some times events may arrive ‘out of order’ 
 
-<img src="../../assets/images/streaming/Streaming-Primer-Event-Time-and-Arrival-Time-13.png" alt="Streaming-Primer-Event-Time-and-Arrival-Time-13.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-Primer-Event-Time-and-Arrival-Time-13.png" alt="Streaming-Primer-Event-Time-and-Arrival-Time-13.png" style="width:50%;"/>
 
 
 Notes: 
@@ -359,7 +358,7 @@ Notes:
 
 ## Event Time vs. Arrival Time Illustrated
 
-<img src="../../assets/images/streaming/event-time-002.png" alt="event-time-002.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/event-time-002.png" alt="event-time-002.png" style="width:70%;"/>
 
 
 Notes: 
@@ -381,7 +380,7 @@ Notes:
     - Leave events in the persistent buffer longer
 
 
-<img src="../../assets/images/streaming/3rd-party/Back-Pressure.png" alt="Back-Pressure.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/3rd-party/Back-Pressure.png" alt="Back-Pressure.png" style="width:45%;position:relative; top:-200px; left: 500px;"/>
 
 Notes: 
 
@@ -393,9 +392,9 @@ Notes:
 ## Back Pressure
 
 
-<img src="../../assets/images/streaming/Picture1.png" alt="Picture1.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Picture1.png" alt="Picture1.png" style="width:50%;"/>
 
-<img src="../../assets/images/streaming/Picture2.png" alt="Picture2.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Picture2.png" alt="Picture2.png" style="width:50%;"/>
 
 
 Notes: 
@@ -433,7 +432,7 @@ Notes:
     - Amazon Kinesis 
 
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified-01.png" alt="Streaming-Over-Simplified-01.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-Over-Simplified-01.png" alt="Streaming-Over-Simplified-01.png" style="width:55%;position:relative; top:-200px; left: 400px;"/>
 
 Notes: 
 
@@ -453,7 +452,7 @@ Notes:
 - Flink
 
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified-02.png" alt="Streaming-Over-Simplified-02.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-Over-Simplified-02.png" alt="Streaming-Over-Simplified-02.png" style="width:65%;position:relative; top:-200px; left: 200px;"/>
 
 
 
@@ -501,7 +500,7 @@ Notes:
     - Support analytics (usually batch)
     - Hadoop / HDFS
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified-03.png" alt="Streaming-Over-Simplified-03.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-Over-Simplified-03.png" alt="Streaming-Over-Simplified-03.png" style="width:55%;position:relative; top:-150px; left: 400px;"/>
 
 
 Notes: 
@@ -545,7 +544,7 @@ Notes:
 ---
 ## Incorporating Lambda Architecture
 
-<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png" alt="Lambda-Streaming-Architecture-03.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png" alt="Lambda-Streaming-Architecture-03.png" style="width:75%;"/>
 
 
 
@@ -557,7 +556,7 @@ Notes:
 ---
 ## Streaming Stack
 
-<img src="../../assets/images/streaming/Streaming-Platforms.png" alt="Streaming-Platforms.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-Platforms.png" alt="Streaming-Platforms.png" style="width:75%;"/>
 
 
 
