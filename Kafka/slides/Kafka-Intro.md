@@ -171,7 +171,7 @@ Notes:
 | 2016       | 0.10    | - Producers for Unit testing                                                                                         |
 | 2017       | 0.11    | - Exactly once delivery                                                                                              |
 | 2017 Oct   | 1.0     |                                                                                                                      |
-| 2018 Jul   | 2.0     |                                                                                                                      |
+| 2018 Jul   | 2.0     |&nbsp;|                                                                                                                      |
 
 Notes: 
 

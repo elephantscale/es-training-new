@@ -88,7 +88,7 @@ Notes:
 
  * Can use Avro  
 
-<img src="../../assets/images/kafka/3rd-party/Standard-Kafka-SerDe-2.png" alt="Standard-Kafka-SerDe-2.png"style="width: 30%; position:relative; top: 300px; right:20px;"/>
+<img src="../../assets/images/kafka/3rd-party/Standard-Kafka-SerDe-2.png" alt="Standard-Kafka-SerDe-2.png"style="width: 30%; position:relative; top:-500px; left:500px;"/>
 
 Notes: 
 

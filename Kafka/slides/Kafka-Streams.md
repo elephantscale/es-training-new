@@ -138,7 +138,7 @@ Notes:
 
  * A  **Thread**  executes one or more tasks
 
-<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; position:relative; top:400px; right:10px;"/>
+<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; position:relative; top:-250px; left:450px;"/>
 
 Notes: 
 

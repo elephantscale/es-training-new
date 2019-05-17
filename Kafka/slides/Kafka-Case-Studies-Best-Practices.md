@@ -85,7 +85,7 @@ https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
 
      - Use `'ulimits –a'` to verify
 
-<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="width:50%; position: relative; top:374px;"/>
+<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="width:40%; position:relative; top:-100px; left:300px;"/>
 
 Notes: 
 
@@ -400,6 +400,10 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
         * Consumers lag behind as well
 
      - Chance of data loss is high, when the lead broker fails
+
+---
+
+## Best Practices: Monitor, Monitor, Monitor
 
  *  **End-to-End time** 
 

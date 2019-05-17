@@ -999,23 +999,9 @@ Notes:
 ## Auto Commit 
 
 
-<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:45%; position:relative; top:200px; left:30px;"/>
+<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:40%; position:relative; top:50px; right:500px;"/>
 
-<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:70%; position:relative; top:600px; left: 250px;"/>
-
-Notes: 
-
-
-
-
----
-
-## Auto Commit 
-
-
-<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:45%; position:relative; top:200px; left:30px;"/>
-
-<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:60%; position:relative; top:600px; left: 300px;"/>
+<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:60%; position:relative; top:100px; left: 200px;"/>
 
 Notes: 
 
@@ -1027,9 +1013,23 @@ Notes:
 ## Auto Commit 
 
 
-<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:45%; position:relative; top:200px; left:30px;"/>
+<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:40%; position:relative; top:50px; right:500px;"/>
 
-<img src="../../assets/images/kafka/Auto-Commit-03.png" alt="Auto-Commit-03.png" style="width:60%; position:relative; top:600px; left: 300px;"/>
+<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:60%; position:relative; top:50px; left:200px;"/>
+
+Notes: 
+
+
+
+
+---
+
+## Auto Commit 
+
+
+<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:30%; position:relative; top:50px; right:500px;"/>
+
+<img src="../../assets/images/kafka/Auto-Commit-03.png" alt="Auto-Commit-03.png" style="width:60%; position:relative; top:30px; left: 200px;"/>
 
 Notes: 
 
@@ -1160,10 +1160,10 @@ Notes:
 
  *  **Offset updated but not processed -> Skipped events** 
 
-<img src="../../assets/images/kafka/Duplicate-Skipped-Events.png" alt="Duplicate-Skipped-Events.png" style="width:45%; position:relative; top: 500px; right:5px;"/>
+<img src="../../assets/images/kafka/Duplicate-Skipped-Events.png" alt="Duplicate-Skipped-Events.png" style="width:45%; position:relative; top: 60px; right:600px;"/>
 
 
-<img src="../../assets/images/kafka/Duplicate-Skipped-Events-09.png" alt="Duplicate-Skipped-Events-09.png" style="width:70%; position:relative; top:782px; left:258px;"/>
+<img src="../../assets/images/kafka/Duplicate-Skipped-Events-09.png" alt="Duplicate-Skipped-Events-09.png" style="width:70%; position:relative; top:10px; left:308px;"/>
 
 Notes: 
 
@@ -1602,8 +1602,7 @@ Notes:
 
  * Kafka Connect example - stream a file through Kafka
 
-<img src="../../assets/images/kafka/Connect-file-01.png" alt="Connect-file.png" style="width:50%; position:relative; top:300px; left:100px;"/>
-<img src="../../assets/images/kafka/Connect-file.png" alt="Connect-file.png" style="width:40%; position:relative; top:400px; left:1000px;"/>
+<img src="../../assets/images/kafka/Connect-file-01.png" alt="Connect-file.png" style="width:50%; position:relative; top:190px; left:50px;"/><img src="../../assets/images/kafka/Connect-file.png" alt="Connect-file.png" style="width:40%; position:relative; top:5px; left:100px;"/>
 
 
 Notes: 

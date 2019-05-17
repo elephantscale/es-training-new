@@ -175,7 +175,7 @@ Image used under fair use , source : grafana.org
 
  * www.nagios.org
 
-<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-6.png" alt="Monitoring-Choices-6.png" style="width:46%; position:relative; top:300px; right:10px;"/>
+<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-6.png" alt="Monitoring-Choices-6.png" style="width:46%; position:relative; top:-300px; left:400px;"/>
 
 Notes: 
 
