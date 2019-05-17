@@ -138,7 +138,7 @@ Notes:
 
  * A  **Thread**  executes one or more tasks
 
-<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; position:fixed; top:400px; right:10px;"/>
+<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; position:relative; top:400px; right:10px;"/>
 
 Notes: 
 
@@ -182,7 +182,7 @@ Notes:
      - Has no downstream 
        </br> processor.*Writes* topic
 
-<img src="../../assets/images/kafka/streams-architecture-topology.png" alt="streams-architecture-topology.png" style="width:30%; position:fixed; top:300px; right:20px;"/>
+<img src="../../assets/images/kafka/streams-architecture-topology.png" alt="streams-architecture-topology.png" style="width:30%; position:relative; top:300px; right:20px;"/>
 
 Notes: 
 
@@ -213,7 +213,7 @@ Notes:
 
  * Automatic recovery 
 
-<img src="../../assets/images/kafka/State-Store.png" alt="State-Store.png" style="width:30%; position:fixed; top:600px; right:10px"/>
+<img src="../../assets/images/kafka/State-Store.png" alt="State-Store.png" style="width:30%; position:relative; top:600px; right:10px"/>
 
 Notes: 
 

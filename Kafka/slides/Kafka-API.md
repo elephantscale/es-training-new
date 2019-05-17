@@ -999,23 +999,9 @@ Notes:
 ## Auto Commit 
 
 
-<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:45%; position:fixed; top:200px; left:30px;"/>
+<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:45%; position:relative; top:200px; left:30px;"/>
 
-<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:70%; position:fixed; top:600px; left: 250px;"/>
-
-Notes: 
-
-
-
-
----
-
-## Auto Commit 
-
-
-<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:45%; position:fixed; top:200px; left:30px;"/>
-
-<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:60%; position:fixed; top:600px; left: 300px;"/>
+<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:70%; position:relative; top:600px; left: 250px;"/>
 
 Notes: 
 
@@ -1027,9 +1013,23 @@ Notes:
 ## Auto Commit 
 
 
-<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:45%; position:fixed; top:200px; left:30px;"/>
+<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:45%; position:relative; top:200px; left:30px;"/>
 
-<img src="../../assets/images/kafka/Auto-Commit-03.png" alt="Auto-Commit-03.png" style="width:60%; position:fixed; top:600px; left: 300px;"/>
+<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:60%; position:relative; top:600px; left: 300px;"/>
+
+Notes: 
+
+
+
+
+---
+
+## Auto Commit 
+
+
+<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:45%; position:relative; top:200px; left:30px;"/>
+
+<img src="../../assets/images/kafka/Auto-Commit-03.png" alt="Auto-Commit-03.png" style="width:60%; position:relative; top:600px; left: 300px;"/>
 
 Notes: 
 
@@ -1602,8 +1602,8 @@ Notes:
 
  * Kafka Connect example - stream a file through Kafka
 
-<img src="../../assets/images/kafka/Connect-file-01.png" alt="Connect-file.png" style="width:50%; position:fixed; top:300px; left:100px;"/>
-<img src="../../assets/images/kafka/Connect-file.png" alt="Connect-file.png" style="width:40%; position:fixed; top:400px; left:1000px;"/>
+<img src="../../assets/images/kafka/Connect-file-01.png" alt="Connect-file.png" style="width:50%; position:relative; top:300px; left:100px;"/>
+<img src="../../assets/images/kafka/Connect-file.png" alt="Connect-file.png" style="width:40%; position:relative; top:400px; left:1000px;"/>
 
 
 Notes: 
