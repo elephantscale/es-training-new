@@ -49,11 +49,11 @@ Notes:
 ## Model
 
   * We can treat ML model as a 'black box'
-  * Input goes in,  model produces an output
+  * Input goes in, model produces an output
   * **'Model'**:
     - Mathematical object describing the relationship between input and output
 
-    <img src="../../assets/images/machine-learning/Model.png" alt="Model" style="max-width:100%;"/> <!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
+    <img src="../../assets/images/machine-learning/Model.png" alt="Model" style="width:70%;"/><!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
 
 
 
@@ -74,21 +74,21 @@ Notes:
 
 ## Machine Learning Process
 
-- Step 1 : Get Data 
+- Step 1: Get Data 
 
-- Step 2 : Explore Data and build model 
+- Step 2: Explore Data and build model 
 
-- Step 3 : Evaluate model 
+- Step 3: Evaluate model 
 
-- Step 4 : Optimize model 
+- Step 4: Optimize model 
 
-- Step 5 : Deploy and monitor
+- Step 5: Deploy and monitor
 
 ---
 
 ## Machine Learning Process: Step 1: Data Exploration
 
-<img src="../../assets/images/machine-learning/ML-Process-02.png"  style="max-width:90%;"/> 
+<img src="../../assets/images/machine-learning/ML-Process-02.png" style="max-width:90%;"/> 
 
 ---
 # Feature Engineering
@@ -109,7 +109,7 @@ Notes:
 
 ---
 
-## Class Quiz : Feature Selection
+## Class Quiz: Feature Selection
 
 <img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
@@ -367,7 +367,7 @@ Notes:
 
 ---
 
-## Sample Dataset :  Cars 
+## Sample Dataset:  Cars 
 
 * We want to predict MPG of a car
 * What attributes to consider?
@@ -869,17 +869,16 @@ Notes:
 <img src="../../assets/images/machine-learning/Sum-of-Squared.png" alt="Sum-of-Squared.png" style="max-width:50%;float:right;"/> <!-- {"left" : 6.9, "top" : 0.94, "height" : 2.62, "width" : 3.12} -->
 
 * Squaring residuals
- - To make them all positive (so negative and positive don't cancel each other out)
+ - To make them all positive (so negative and positive </br>don't cancel each other out)
  - To amplify 'outliers' (large deviations)
  
 * Goal is to minimize SSE
 
-* **Question for the class** :  
+* **Question for the class**:  
   Can SSE be zero? :-) 
 
 
-
-
+<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="max-width:50%;"/>
 
 
 
@@ -1034,7 +1033,7 @@ Notes:
 
 ## Confusion Matrix: TPR / FPR
 
- <img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:50%;float:right;"/> <!-- TODO {"left" : 2.35, "top" : 3.54, "height" : 3.58, "width" : 5.54} -->
+ <img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:50%;float:right;"/> <!-- {"left" : 2.35, "top" : 3.54, "height" : 3.58, "width" : 5.54} -->
 
   * **True Positive Rate (TPR)  /Sensitivity / Hit Rate / Recall**  
   How often model predicts 'positive' as 'positive' (correctly) ? -- actual positive  
@@ -1060,7 +1059,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Specificity / Precision / Prevalence
 
-  <img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- TODO {"left" : 2.22, "top" : 3.47, "height" : 3.74, "width" : 5.81} -->
+  <img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 2.22, "top" : 3.47, "height" : 3.74, "width" : 5.81} -->
 
   * **Specificity**   
   How often model predicts negative' as negative' (correctly)?  -- actual no  
@@ -1088,7 +1087,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: PPV / Null Error Rate
 
-<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- TODO {"left" : 2.25, "top" : 3.48, "height" : 3.75, "width" : 5.76} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 2.25, "top" : 3.48, "height" : 3.75, "width" : 5.76} -->
 
   * **Prevalence**   
   How often does 'positive' occurs in our sample  
@@ -1148,7 +1147,7 @@ Notes:
 ---
 
 ## Threshold
-<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- TODO {"left" : 7.01, "top" : 2.83, "height" : 4.36, "width" : 3.07} -->
+<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 7.01, "top" : 2.83, "height" : 4.36, "width" : 3.07} -->
 
   * Our spam classifier provides a 'spam probability' for each email
     - Probability is between 0.0. and 1.0 (or 0 to 100%)
@@ -1217,7 +1216,7 @@ Notes:
 
 ## Interpreting ROC Curve
 
-<img src="../../assets/images/machine-learning/ROC-02-space-2b.png" alt="ROC-02-space-2b.png" style="width:45%;float:right;"/> <!-- TODO {"left" : 3, "top" : 2.67, "height" : 4.49, "width" : 4.25} -->
+<img src="../../assets/images/machine-learning/ROC-02-space-2b.png" alt="ROC-02-space-2b.png" style="width:45%;float:right;"/> <!-- {"left" : 3, "top" : 2.67, "height" : 4.49, "width" : 4.25} -->
 
   * The red line plots 'random guess' = B
 
@@ -1241,12 +1240,12 @@ Image credit (CC) : https://commons.wikimedia.org/wiki/File:ROC_space-2.png
 ---
 
 ## Interpreting ROC Curve
-<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:45%;float:right;"/>  <!-- TODO {"left" : 2.48, "top" : 3.80, "height" : 3.68, "width" : 5.28} -->
+<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 2.48, "top" : 3.80, "height" : 3.68, "width" : 5.28} -->
 
   * Shows tradeoff of TPR (sensitivity) vs. FPR (1 – specificity)
-  * The closer to top-left , the more accurate the model
+  * The closer to top-left , the more accurate </br>the model
   * Upper left corner (0,1) = perfect classification!
-  * The closer to middle line (45 degree) the less accurate the test
+  * The closer to middle line (45 degree) </br>the less accurate the test
     - Middle line represents: random classification (50%)
 
 
@@ -1285,7 +1284,6 @@ Notes:
 
 * Accuracy can be specified using a grading system
 
-<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:30%;float:right;"/> <!-- TODO {"left" : 0.42, "top" : 2.75, "height" : 4.26, "width" : 5.71} -->
 
 | AUC        | Grade         |
 |--------    |----------     |
@@ -1296,6 +1294,8 @@ Notes:
 | 0.50 – 0.60| F - Fail      |
 
 <!-- {"left" : 6.7, "top" : 1.78, "height" : 2.38, "width" : 3.3, "columnwidth" : [1.61, 1.69]} -->
+
+<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:35%;"/> <!-- {"left" : 0.42, "top" : 2.75, "height" : 4.26, "width" : 5.71} -->
 
 
 
@@ -1310,14 +1310,13 @@ Notes:
 ---
 ## ROC / AUC For Multiclass Classifiers
 
-<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:40%;float:right;"/> <!-- TODO {"left" : 2.28, "top" : 2.58, "height" : 4.24, "width" : 5.69} -->
-
   * Say our algorithm recognizes hand-written digits (postal code) into numbers.
   * Its ROC can be drawn as follows
-  * **Question for class** : 
+  * **Question for class**: 
     - Which digit the classifier is doing well?
     - Which digit the classifier is not doing well?
 
+<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:35%;"/> <!-- {"left" : 2.28, "top" : 2.58, "height" : 4.24, "width" : 5.69} -->
 
 
 
@@ -1332,7 +1331,7 @@ Notes:
   * In supervised algorithms try to estimate target function
 'f'  
 `Y = f(X)`  
-`Y: output,   X: input`
+`Y: output,  X: input`
 
   * The error can be broken down to
     - Bias error
@@ -1373,7 +1372,7 @@ Notes:
   * Ideally target function should not change drastically from one training set to next
     - meaning that the algorithm is good at picking out the hidden underlying mapping between the inputs and the output variables
     
-<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="max-width:40%;"/> <!-- TODO {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:45%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
 
 ---
 
