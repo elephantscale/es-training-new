@@ -27,7 +27,7 @@ Notes:
 
  * Make sure they can see the sandbox splash page
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Labs-Prep-Step-1-Distribute-VMs-0.png" style="max-width:50%;"><!-- {"left" : 1.49, "top" : 3.53, "height" : 3.54, "width" : 7.28} -->
+<img src="../../assets/images/machine-learning/Machine-Learning-Lab-Prep-Labs-Prep-Step-1-Distribute-VMs-0.png" style="max-width:50%;"><!-- {"left" : 1.49, "top" : 3.53, "height" : 3.54, "width" : 7.28} -->
 
 
 Notes:

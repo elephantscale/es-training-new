@@ -527,7 +527,7 @@ Notes:
 
      - Combine nodes
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Pruning-0.png" style="width:60%; "/><!-- {"left" : 0.49, "top" : 3.42, "height" : 3.07, "width" : 6.03} --><img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Pruning-1.png" style="width:30%; "><!-- {"left" : 6.84, "top" : 3.42, "height" : 3.07, "width" : 2.92} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Pruning-0.png" style="width:60%; "/><!-- {"left" : 0.49, "top" : 3.42, "height" : 3.07, "width" : 6.03} --><img src="../../assets/images/machine-learning/Decision-Trees-Tree-Pruning-1.png" style="width:30%; "><!-- {"left" : 6.84, "top" : 3.42, "height" : 3.07, "width" : 2.92} -->
 
 Notes:
 
@@ -838,7 +838,7 @@ Notes:
 
  * Neither of them will work well in the real world
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Each-DT-Exhibits-High-Variance-and-Overfits-0.png" style="width:50%"><!-- {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
+<img src="../../assets/images/machine-Learning/Decision-Trees-Each-DT-Exhibits-High-Variance-and-Overfits-0.png" style="width:50%"><!-- {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
 
 
 Notes:
@@ -854,7 +854,7 @@ Notes:
 
      - It has less capacity to reflect complex data
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Bias-Variance-Tradeoff-0.png" style="width:50%"><!-- {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
+<img src="../../assets/images/machine-Learning/Decision-Trees-Bias-Variance-Tradeoff-0.png" style="width:50%"><!-- {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
 
 
 Notes:
