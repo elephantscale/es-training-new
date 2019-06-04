@@ -1,7 +1,7 @@
 ## To assemble md slides
-##          $ES_HOME/utils/presentations/slides-assembler-reveal.sh    0-slide-order-ML-with-spark-python-3days-intuit.txt
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal-with-spark-python-3days-intuit.txt
 ## to make pdfs
-##          $ES_HOME/utils/presentations/slides-assembler-reveal.sh    0-slide-order-ML-with-spark-python-3days-intuit.txt  pdf
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal-with-spark-python-3days-intuit.txt pdf
 
 
 ## Course outline

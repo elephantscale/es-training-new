@@ -31,13 +31,13 @@ See the next slide for a brief explanation of each component
 ## History of Machine Learning @ Scale
 
 
- * Hadoop
+ * **Hadoop**
      - Hadoop is the first popular distributed platform
      - MapReduce is the execution engine
      - Did great at batch computes
      - 'Mahout' is a machine learning library built on top of Hadoop's MapReduce
      - Not so great for iterative algorithms (machine learning)
- * Spark
+ * **Spark**
      - Execution engine is faster than MapReduce (less overhead)
         - Iterative algorithms work well
      - Native Machine Learning library that has many algorithms implemented
@@ -166,7 +166,7 @@ Notes:
 
     When most elements have no value
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Machine-Learning-in-Spark-ML-Vectors-0.png" style="width:40%;"/><!-- {"left" : 2.27, "top" : 3.64, "height" : 3.21, "width" : 5.72} -->
+<img src="../../assets/images/machine-learning/ml-vectors-1.png" style="max-width:40%;"/><!-- {"left" : 2.27, "top" : 3.64, "height" : 3.21, "width" : 5.72} -->
 
 
 
@@ -176,19 +176,26 @@ Notes:
 
 ---
 
-## DenseVector vs. Spark Vector
+## DenseVector vs. Sparse Vector
 
  * DenseVector = simply an array[1,  2,  3,  4,  5]
+ 
  * SparseVector
      - We specify size
      - Index array
      - and value array
- * Vectors.sparse (length,   index array,   value array)  
-   Vectors.sparse(10,  (0,9),   (100,200) )
+     
+```text
+
+Vectors.sparse (length,   index array,   value array)  
+Vectors.sparse(10,  (0,9),   (100,200) )
+# [ 100. 0. 0. 0. 0. 0. 0. 0. 0. 200.]
+     
+- Parameters
      - Size is 10
-     - 0<sup>th</sup>  (first) element  = 100
-     - 9<sup>th</sup>  (last) element = 200
-     - [ 100. 0. 0. 0. 0. 0. 0. 0. 0. 200.]
+     - first element @ index 0  = 100
+     - last element @ index 9 = 200
+```
 
 Notes:
 
@@ -288,7 +295,26 @@ Notes:
 
 ## Training / Test Split  Code (Python)
 
-<img src="../../assets/images/machine-learning/training.png"/><!-- {"left" : 1.02, "top" : 1.34, "height" : 5.3, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/training2.png" style="float:right;max-width:50%;"/><!-- {"left" : 1.02, "top" : 1.34, "height" : 5.3, "width" : 8.21} -->
+
+```python 
+df = spark.range(1,100)
+df.show()
+
+(train, test) = df.randomSplit([0.7, 0.3])
+print("----training data set-----")
+print("count: ", train.count())
+train.show()
+print("----testing data set-----")
+print("count: ", test.count())
+test.show()
+common = train.intersect(test)
+print("----common data set-----")
+print("count: ", common.count())
+common.show() 
+
+```
+
 
 
 Notes:
@@ -308,7 +334,7 @@ Notes:
 
  * E.g., an ML model is a Transformer which transforms a DataFrame with features into a DataFrame with predictions.
 
- <img src="../../assets/images/machine-learning/3rd-party/Transformers-03.png" style="width:90%;"/><!-- {"left" : 0.94, "top" : 3.89, "height" : 1.57, "width" : 8.38} -->
+ <img src="../../assets/images/machine-learning/transformers-1.png" style="width:90%;"/><!-- {"left" : 0.94, "top" : 3.89, "height" : 1.57, "width" : 8.38} -->
 
 
 
@@ -322,7 +348,7 @@ Notes:
 * Transforms a Dataframe To Another Dataframe
     - By adding (or appending) to a “features” column
 
-<img src="../../assets/images/machine-learning/3rd-party/vector.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.08, "height" : 5.05, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/vector-assembler-1.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 2.08, "height" : 5.05, "width" : 8.21} -->
 
 
 
@@ -330,8 +356,19 @@ Notes:
 
 ## VectorAssembler Example Code (Python)
 
+```python 
+from pyspark.ml.feature import VectorAssembler 
 
-<img src="../../assets/images/machine-learning/3rd-party/VectorAssembler-05.png" style="max-width:70%;"/><!-- {"left" : 0.64, "top" : 1.2, "height" : 5.57, "width" : 8.98} -->
+data = spark.read.csv("mtcars_header.csv", header=True, inferSchema=True)
+mpg_cyl = data.select("model", "mpg", "cyl")
+mpg_cyl.show()
+
+assembler = VectorAssembler(inputCols=["mpg", "cyl"], outputCol="features")
+feature_vector = assembler.transform(mpg_cyl)
+feature_vector.show(40)
+```
+
+<img src="../../assets/images/machine-learning/vector-assembler-3.png" style="max-width:70%;"/><!-- {"left" : 0.64, "top" : 1.2, "height" : 5.57, "width" : 8.98} -->
 
 Notes:
 
@@ -348,7 +385,7 @@ Notes:
 
  * Most frequently used label gets 0 and so on
 
-<img src="../../assets/images/machine-learning/3rd-party/String-Indexer-06.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 2.73, "height" : 3.84, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/string-indexer-1.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 2.73, "height" : 3.84, "width" : 8.21} -->
 
 
 
@@ -360,7 +397,21 @@ Notes:
 
 ## String Indexer Example Code (Python)
 
-<img src="../../assets/images/machine-learning/3rd-party/String-Indexer-Example07.png" style="max-width:70%;"/><!-- {"left" : 0.71, "top" : 1.07, "height" : 5.84, "width" : 8.83} -->
+```python 
+import pandas as pd
+from pyspark.ml.feature import IndexToString, StringIndexer
+
+df_pd = pd.DataFrame({"id":[1,2,3,4,5,6,7],
+                      "color":['red', 'white', 'blue', 'blue', 'white' ,'yellow', 'blue' ]})
+df_spark = spark.createDataFrame(df_pd)
+
+str_indexer = StringIndexer(inputCol="color", outputCol="colorIndex")
+model = str_indexer.fit(df_spark)
+indexed = model.transform(df_spark)
+
+```
+
+<img src="../../assets/images/machine-learning/string-indexer-3.png" style="max-width:70%;"/><!-- {"left" : 0.71, "top" : 1.07, "height" : 5.84, "width" : 8.83} -->
 
 
 
@@ -372,7 +423,14 @@ Notes:
 
 ## Reverse String Indexer Example Code (Python)
 
-<img src="../../assets/images/machine-learning/3rd-party/Reverse-String-Indexer-08.png" style="max-width:80%;"/><!-- {"left" : 0.51, "top" : 1.83, "height" : 3.83, "width" : 9.22} -->
+```python
+converter = IndexToString(inputCol="colorIndex", outputCol="originalColor")
+converted = converter.transform(indexed)
+converted.show() 
+
+```
+
+<img src="../../assets/images/machine-learning/reverse-string-indexer-2.png" style="max-width:80%;"/><!-- {"left" : 0.51, "top" : 1.83, "height" : 3.83, "width" : 9.22} -->
 
 
 
@@ -394,7 +452,7 @@ Notes:
      - Note, only one bit is on
      - This is called  **ONE-HOT-Encoding**   
      
-<img src="../../assets/images/machine-learning/3rd-party/One-Hot-Encoding-09.png" style="width:60%;"/><!-- {"left" : 1.48, "top" : 4.84, "height" : 2.4, "width" : 7.3} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-2.png" style="max-width:60%;"/><!-- {"left" : 1.48, "top" : 4.84, "height" : 2.4, "width" : 7.3} -->
 
 
 
@@ -407,8 +465,28 @@ Notes:
 
 ## Hot Encoder Code (Python)
 
+```python 
+import pandas as pd
+from pyspark.ml.feature import StringIndexer, OneHotEncoder
 
-<img src="../../assets/images/machine-learning/3rd-party/Hot-Encoder-10.png" style="width:80%;"/><!-- {"left" : 0.84, "top" : 1.35, "height" : 5.28, "width" : 8.57} -->
+df2_pd = pd.DataFrame({"id":[1,2,3,4,5,6,7],
+                       "status":['married', 'single', 'single',
+                                 'divorced', 'married','single', 'married' ]})
+df2_spark = spark.createDataFrame(df2_pd)
+
+# first String Indexer
+string_indexer = StringIndexer(inputCol="status", outputCol="statusIndex")
+model = string_indexer.fit(df2_spark)
+indexed = model.transform(df2_spark)
+
+# Then encoder
+encoder = OneHotEncoder(inputCol="statusIndex", outputCol="statusVector", dropLast=False)
+encoded = encoder.transform(indexed)
+encoded.show() 
+
+print(encoded.toPandas()) # print pandas df
+
+```
 
 
 
@@ -420,7 +498,7 @@ Notes:
 ## Hot Encoder Code (Python)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/11.png" style="max-width:70%;"/><!-- {"left" : 1.01, "top" : 1.06, "height" : 5.85, "width" : 8.99} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-3.png" style="max-width:70%;"/><!-- {"left" : 1.01, "top" : 1.06, "height" : 5.85, "width" : 8.99} -->
 
 
 Notes:
@@ -432,7 +510,7 @@ Notes:
 ## Understanding Hot Encoded Sparse Vectors
 
 
-<img src="../../assets/images/machine-learning/3rd-party/12.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 5.84, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-4.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 5.84, "width" : 8.21} -->
 
 
 Notes:
@@ -485,8 +563,18 @@ Notes:
 
 ## Standard Scaler Code 1/2- Python
 
+```python 
+import pandas as pd
+from pyspark.ml.feature import VectorAssembler
 
-<img src="../../assets/images/machine-learning/3rd-party/13.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 0.99, "height" : 2.91, "width" : 8.21} -->
+df_pd = pd.DataFrame({
+  "home_runs": [ 30,  22,  17,  12, 44,   38,  40],
+  "salary_in_k":[ 700, 450,340, 250, 1200, 800, 950 ]})
+df_spark = spark.createDataFrame(df_pd)
+assembler = VectorAssembler(inputCols=["home_runs", "salary_in_k"], outputCol="features")
+feature_vector = assembler.transform(df_spark)
+feature_vector.show()
+```
 
 
 ```text
@@ -514,8 +602,18 @@ Notes:
 
 ## Standard Scaler Code 2/2- Python
 
+```python 
+from pyspark.ml.feature import StandardScaler
 
-<img src="../../assets/images/machine-learning/3rd-party/14.png" style="width:70%;"/><!-- {"left" : 0.3, "top" : 1.04, "height" : 2.34, "width" : 9.64} -->
+scaler = StandardScaler(inputCol="features",
+                        outputCol="scaled_features",
+                        withStd=True, withMean=False)
+                        
+scalerModel = scaler.fit(feature_vector)
+scaledData = scalerModel.transform(feature_vector)
+scaledData.show() 
+
+```
 
 
 ```text
@@ -543,10 +641,20 @@ Notes:
 ## Scaling : MinMaxScaler
 
 
- * MinMax Scaler allows you to scale data at arbitrary range – 0.0 to 1.0 is default or  0 to 100)
+MinMax Scaler allows you to scale data at arbitrary range – 0.0 to 1.0 is default or  0 to 100)
 
-<img src="../../assets/images/machine-learning/3rd-party/15.png" style="width:70%;"/><!-- {"left" : 0.3, "top" : 1.92, "height" : 2.64, "width" : 9.64} -->
+```python 
+from pyspark.ml.feature import MinMaxScaler
 
+mmScaler = MinMaxScaler(min=1, max=100,
+                        inputCol="features",
+                        outputCol="scaled_features2")
+
+scaledModel2 = mmScaler.fit(feature_vector)
+scaledData2 = scaledModel2.transform(feature_vector)
+scaledData2.show(10, False) 
+
+```
 
 ```text
 +---------+-----------+-------------+-----------------------------+
@@ -592,7 +700,7 @@ Notes:
 
 ## Spark ML Workflow
 
-<img src="../../assets/images/machine-learning/16.png" style="width:65%;"/><!-- {"left" : 1.05, "top" : 1.07, "height" : 5.83, "width" : 8.14} -->
+<img src="../../assets/images/machine-learning/spark-ml-workflow.png" style="max-width:80%;"/><!-- {"left" : 1.05, "top" : 1.07, "height" : 5.83, "width" : 8.14} -->
 
 
 
@@ -686,7 +794,7 @@ Notes:
 ---
 ## Pipeline Example
 
-<img src="../../assets/images/machine-learning/3rd-party/17.png" style="width:20%;"/><!-- {"left" : 4.17, "top" : 1.5, "height" : 4.98, "width" : 1.91} -->
+<img src="../../assets/images/machine-learning/pipeline-1.png" style="max-width:15%;"/><!-- {"left" : 4.17, "top" : 1.5, "height" : 4.98, "width" : 1.91} -->
 
 
 Notes:
@@ -701,12 +809,12 @@ Notes:
  *  **Dataframe**: Contains data
  *  **Transformer**: Converts one dataframe into another
 
-<img src="../../assets/images/machine-learning/3rd-party/Transformers-03.png" style="width:50%;"/><!-- {"left" : 3.35, "top" : 1.86, "height" : 0.81, "width" : 4.32} -->
+<img src="../../assets/images/machine-learning/transformers-1.png" style="width:50%;"/><!-- {"left" : 3.35, "top" : 1.86, "height" : 0.81, "width" : 4.32} -->
 
  *  **Estimator**: fits the data in Dataframe to create a transformer.
      - E.g. a learning model is an estimator
 
-<img src="../../assets/images/machine-learning/3rd-party/18.png" style="width:50%;"/><!-- {"left" : 3.31, "top" : 3.74, "height" : 0.7, "width" : 4.4} -->
+<img src="../../assets/images/machine-learning/transformers-2.png" style="width:50%;"/><!-- {"left" : 3.31, "top" : 3.74, "height" : 0.7, "width" : 4.4} -->
 
 
  *  **Pipeline**: Contains multiple Transformers and Estimators
@@ -727,7 +835,27 @@ Notes:
      - And finally, a LogisticRegression model
  * Also note, we train the model on the  **entire**  pipeline in one go!
 
-<img src="../../assets/images/machine-learning/3rd-party/19.png" style="width:67%;"/><!-- {"left" : 1.02, "top" : 3.5, "height" : 3.51, "width" : 8.21} -->
+```python 
+from pyspark.ml import Pipeline
+from pyspark.ml.classification import LogisticRegression
+from pyspark.ml.feature import HashingTF, Tokenizer
+
+training_data = spark.read(....)
+
+# Configure an ML pipeline, which consists of three stages: tokenizer, hashingTF, and lr
+tokenizer = Tokenizer(inputCol="text", outputCol="words")
+hashingTF = HashingTF(inputCol="words", outputCol="features")
+lr = LogisticRegression(maxIter=10, regParam=0.001)
+
+pipeline = Pipeline(stages=[tokenizer, hashingTF, lr])
+
+# Fit the pipeline to training documents.
+model = pipeline.fit(training_data)
+test_data = spark.read(...)
+predicted_data = model.predict(test_data) 
+
+```
+
 
 
 Notes:
