@@ -19,6 +19,8 @@ Notes:
 
  *  **Instructor**
 
+<img src="../../assets/images/generic/training-sandbox-1.png" style="max-width:40%;float:right;">
+
  * Allocate VMs to students in class
 
  * Point them to IP address of the machine
@@ -27,7 +29,7 @@ Notes:
 
  * Make sure they can see the sandbox splash page
 
-<img src="../../assets/images/machine-learning/Machine-Learning-Lab-Prep-Labs-Prep-Step-1-Distribute-VMs-0.png" style="max-width:50%;"><!-- {"left" : 1.49, "top" : 3.53, "height" : 3.54, "width" : 7.28} -->
+<img src="../../assets/images/generic/lab-setup.png" style="max-width:50%;"><!-- {"left" : 1.49, "top" : 3.53, "height" : 3.54, "width" : 7.28} -->
 
 
 Notes:
@@ -38,6 +40,7 @@ Notes:
 
 ## Labs Prep - Step 2: Test Jupyter
 
+<img src="../../assets/images/generic/jupyter-labs-1.png" style="max-width:40%;float:right;"/>
 
  *  **Instructor**
 
@@ -46,11 +49,8 @@ Notes:
  * Provide username and password
 
  * If port 8888 doesn't work, highly likely it is a network issue.  Try the following
-
      - Disable any VPN software on student's laptop
-
      - Connect to 'guest' network
-
      - Try connecting via 'mobile hotspot'
 
 Notes:
@@ -62,22 +62,17 @@ Notes:
 ## Labs Prep - Step 3: Distribute Lab Bundle to Students
 
  *  **To instructor:**
-
- * cd to  ml-labs-xxx-yyy
-
- * Run  ./package-labs.sh
-
- * This will create a zip file with notebooks and the html content
-
- * Distribute this bundle to students
-
- *  **Explain the difference between *.md, *.ipynb, *.html files**
+    - cd to  ml-labs-xxx-yyy
+    - Run  ./package-labs.sh
+    - This will create a zip file with notebooks and the html content
+    - Distribute this bundle to students
+    - **Explain the difference between .md, .ipynb, .html files**
 
  *  **To students**
-
- * Students can open *.html files in browser to see lab instructions
-
- * If they have Jupyter environment setup, they can run ./run-jupyter.sh and view the notebooks
+     - You can open html files in browser to see lab instructions
+     - If you have Jupyter environment setup, you can run   
+     `./run-jupyter.sh`   
+     and view the notebooks
 
 Notes:
 
@@ -86,6 +81,8 @@ Notes:
 ---
 
 ## Lab Prep - Step 4: Setup
+
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" />
 
 
  *  **Overview**: 
@@ -109,6 +106,7 @@ Notes:
 
 ## Lab Prep - Step 5:  Testing123
 
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" />
 
  *  **Overview**: 
  
@@ -148,16 +146,15 @@ https://www.youtube.com/watch?v=xaBEFqFVSE8
 
 ## Lab Prep - Step 6 : Jupyter
 
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" />
+
 
  *  **Instructor**
+    - Survey students if they have used Jupyter notebooks before.
+    - If not, demo ' **Hello Jupyter** ' lab.
+    - Explain how Jupyter works
 
- * Survey students if they have used Jupyter notebooks before.
-
- * If not, demo ' **Hello Jupyter** ' lab.
-
- * Explain how Jupyter works
-
-<img src="../../assets/images/machine-learning/Machine-Learning-Lab-Prep-Jupyter.png" style="width:55%;"><!-- {"left" : 2.07, "top" : 3.07, "height" : 3.3, "width" : 6.1} -->
+<img src="../../assets/images/machine-learning/jupyter.png" style="width:55%;"><!-- {"left" : 2.07, "top" : 3.07, "height" : 3.3, "width" : 6.1} -->
 
 
 Notes:
