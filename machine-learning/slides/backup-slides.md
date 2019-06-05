@@ -1,4 +1,14 @@
+## ML Terminology
 
+| Algorithm                                             	| Example                                     	| Input                                              	| Output                                      |
+|-------------------------------------------------	|-----------------------------------------	|----------------------------------------------------	|-------------------------------------	|
+| Classification – produces 'discrete' or 'qualitative' 	| Spam or not                                 	|**Features**<br/>(email text, origin IP address)        	|**Label**<br/>(Spam / Not-Spam)                  |
+| Regression – produces 'continuous' or 'quantitative'  	| Weather forecasting, predicting temperature 	|**Variables**<br/>(current temperature, pressure ..etc) 	|**Target**<br/>(predicted temperature -50.5 ' F) 	|
+
+
+Notes:
+
+---
 ## FE: Group Discussion
 
   * **Problem:**

@@ -5,17 +5,7 @@
 # Machine Learning Terminology
 ---
 
-## ML Terminology
 
-| Algorithm                                             	| Example                                     	| Input                                              	| Output                                      |
-|-------------------------------------------------	|-----------------------------------------	|----------------------------------------------------	|-------------------------------------	|
-| Classification – produces 'discrete' or 'qualitative' 	| Spam or not                                 	|**Features**<br/>(email text, origin IP address)        	|**Label**<br/>(Spam / Not-Spam)                  |
-| Regression – produces 'continuous' or 'quantitative'  	| Weather forecasting, predicting temperature 	|**Variables**<br/>(current temperature, pressure ..etc) 	|**Target**<br/>(predicted temperature -50.5 ' F) 	|
-
-
-Notes:
-
----
 
 ## Algorithm vs. Model
 
@@ -48,12 +38,14 @@ Notes:
 
 ## Model
 
+  * **'Model'**:  
+    Mathematical object describing the relationship between input and output
+    
   * We can treat ML model as a 'black box'
+  
   * Input goes in, model produces an output
-  * **'Model'**:
-    - Mathematical object describing the relationship between input and output
 
-    <img src="../../assets/images/machine-learning/Model.png" alt="Model" style="width:70%;"/><!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
+ <img src="../../assets/images/machine-learning/Model.png" alt="Model" style="width:70%;"/><!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
 
 
 
@@ -109,6 +101,25 @@ Notes:
 
 ---
 
+## Features / Output 
+
+* Features are inputs to the algorithm 
+
+* Output is what are trying to predict
+
+* The following is an example of predicting house prices from various inputs / features
+
+| Bedrooms <br/>(input 1) | Bathrooms <br/>(input 2) | Size sqft <br/>(input 3) | Sale Price (in thousands) <br/>(we are trying to predict) |
+|--------------------|---------------------|----------------|------------------------------------------------------|
+| 3                  | 1                   | 1500           | 230                                                  |
+| 3                  | 2                   | 1800           | 320                                                  |
+| 5                  | 3                   | 2400           | 600                                                  |
+| 4                  | 2                   | 2000           | 500                                                  |
+| 4                  | 3.5                 | 2200           | 550                                                  |
+
+---
+
+
 ## Class Quiz: Feature Selection
 
 <img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
@@ -118,11 +129,10 @@ Notes:
 
 <br clear="all"/>
 
-| Customer_id | Name | Zipcode | Age | Income | Marital Status | Owns a Home |
-|-------------|------|---------|-----|--------|----------------|-------------|
-| 1           | Joe  | 11111   | 24  | 45,000 | Single         | No          |
-| 2           | Jane | 22222   | 34  | 84,000 | Married        | Yes         |
-
+| Customer_id | Name | Zipcode | Have Direct Deposit | Age | Income | Marital Status | Owns a Home |
+|-------------|------|---------|---------------------|-----|--------|----------------|-------------|
+| 1           | Joe  | 11111   | Yes                 | 24  | 45,000 | Single         | No          |
+| 2           | Jane | 22222   | No                  | 34  | 84,000 | Married        | Yes         |
 <!-- {"left" : 0.25, "top" : 3.63, "height" : 1.69, "width" : 9.75} -->
 
 
@@ -137,11 +147,10 @@ Notes:
   * Here 'name' and 'zipcode' aren't considered
 
 
-| Customer_id | Name | Zipcode | Age | Income | Marital Status | Owns a Home |
-|-------------|------|---------|-----|--------|----------------|-------------|
-| 1           | Joe  | 11111   | 24  | 45,000 | Single         | No          |
-| 2           | Jane | 22222   | 34  | 84,000 | Married        | Yes         |
-
+  | Customer_id | Name | Zipcode | Have Direct Deposit | Age | Income | Marital Status | Owns a Home |
+  |-------------|------|---------|---------------------|-----|--------|----------------|-------------|
+  | 1           | Joe  | 11111   | Yes                 | 24  | 45,000 | Single         | No          |
+  | 2           | Jane | 22222   | No                  | 34  | 84,000 | Married        | Yes         |
 <!-- {"left" : 0.26, "top" : 0.86, "height" : 1.7, "width" : 9.75, "columnwidth" : [1.39, 1.39, 1.39, 1.39, 1.39, 1.39, 1.39]} -->
 
 
@@ -182,7 +191,8 @@ Notes:
   * Example: Marital Status / Owns a Home
   * Feature vectors must be numeric.
   * We have to convert the variable to a numeric value.
-  * Example:  `”Owns A Home” -> 0 = No, 1 = Yes`
+  * Example:  
+  `Owns A Home -> 0 = No, 1 = Yes`
   * Categorical Variables are essentially structured data, despite being strings.
   * Unstructured data would include things like: documents, emails, tweets
 
@@ -802,14 +812,13 @@ Notes:
 # End Part 1
 
 * To Instructor:   
-Pause here, and switch to Regressions.
-Come back to Part II during Regression
+Pause here, and go to next section
 
 ---
 # ML Concepts : Part 2
 
 * To Instructor:  
-Come back to Part II during Regression
+These sub sections are included in other sections
 
 ---
 
