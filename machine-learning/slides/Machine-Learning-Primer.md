@@ -696,7 +696,7 @@ Notes:
 
 ## AI Software Eco System
 
-| Machine Learning 	| Deep Learning              	|                             	|
+| 	|  Machine Learning          	|     Deep Learning                            	|
 |------------------	|----------------------------	|-----------------------------	|
 | Java             	| - Weka <br/>- Mahout              	| - DeepLearning4J             	|
 | Python           	| - SciKit <br/>- (Numpy, Pandas)   	| - Tensorflow <br/>- Theano <br/>- Caffe  	|

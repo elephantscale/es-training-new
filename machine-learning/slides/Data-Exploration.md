@@ -67,7 +67,7 @@ Notes:
 
 ---
 
-## Mean
+## Mean (Average)
 
 |               |                                                 |
 |---------------|-------------------------------------------------|
@@ -96,8 +96,8 @@ Formula image credit : Wikimedia  (license : public domain)
 
 |                                   |                                                                                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Outliers                          | Extreme values. These influence plain mean. e.g. When Bill Gates walks into a bar, everyone's net worth goes up by few 100s of millions!                                                                                                                                                                                                                                    |
-| Trimmed Mean       Truncated Mean | Take mean, after dropping a number of extreme values from the bottom and top.    10% Trimmed Mean drops 10% of largest and 10% of smallest values and calculates mean in remaining 80% of data Used in competition scoring, to avoid one judge influencing the outcome. Example :  [ 5,  6, 7,  8,  10] Mean = sum(5+6+7+8+10) / 5 = 7.2 Trimmed Mean = sum (6,7,8) / 3 = 7 |
+| Outliers                          | Extreme values. These influence plain mean. <br/>e.g. When Bill Gates walks into a bar, everyone's net worth goes up by few 100s of millions!                                                                                                                                                                                                                                    |
+| Trimmed Mean       Truncated Mean | Take mean, after dropping a number of extreme values from the bottom and top. <br/> <br/>  10% Trimmed Mean drops 10% of largest and 10% of smallest values and calculates mean in remaining 80% of data. <br/> <br/>Used in competition scoring, to avoid one judge influencing the outcome.<br/><br/> Example :  [ 5,  6, 7,  8,  10] <br/>Mean = sum(5+6+7+8+10) / 5 = 7.2 <br/>Trimmed Mean = sum (6,7,8) / 3 = 7 |
 
 Notes:
 
@@ -265,7 +265,7 @@ Notes:
 
  * City2 data is more widely 'dispersed' than City1
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Variability-Dispersion-0.png" alt="Data-Exploration-Variability-Dispersion-0.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/standard-deviation-1.png" style="max-width:80%;"/>
 
 Notes:
 
@@ -326,6 +326,12 @@ Notes:
 
 
 Notes:
+
+---
+
+## Variability  / Dispersion
+
+<img src="../../assets/images/machine-learning/standard-deviation-2.png" style="max-width:80%;"/>
 
 ---
 
@@ -791,27 +797,33 @@ Notes:
 
 ---
 
-# Covariance Matrix
+# Covariance/Correlation Matrix
 
 ---
 ## Covariance Matrix
 
 
- * Covariance measures how two variables behave
-
  * When we have more than two variables we create a covariance matrix
 
- * The **diagonal is simply Variance** of that variable
- cov(x1,x1) = variance(x1)
+ * The **diagonal is simply Variance** of that variable  
+`cov(x1,x1) = variance(x1)`
 
- * The matrix is  **symmetric**,
- cov(x1,x2)  = cov(x2,x1)
+ * The matrix is  **symmetric**,   
+ `cov(x1,x2)  = cov(x2,x1)`
 
- <img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Matrix.png" alt="Data-Exploration-Covariance-Matrix.png" style="width:60%; position:absolute; left:22%"/>
+ <img src="../../assets/images/machine-learning/covariance-matrix-1.png"  style="max-width:60%;"/>
 
 
 Notes:
 
+---
+
+## Correlation Matrix 
+
+* The diagonal cells are **1.0**  
+Each variable is perfectly correlated with itself
+
+<img src="../../assets/images/machine-learning/correlation-matrix-1.png"  style="max-width:60%;"/>
 
 
 ---
