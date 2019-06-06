@@ -20,6 +20,7 @@ Notes:
 
 # How to Think About Kafka
 
+---
 ## Kafka At a Glance
 
 * Used by tens of thousands of organizations
@@ -28,6 +29,7 @@ Notes:
 * Immense ecosystem around it
 * At the heart of a movement towards managing and processing streams of data
 
+---
 ## What Led to Kafka Decision
 
 * Built at LinkedIn
@@ -39,6 +41,8 @@ Notes:
 * Why the name "Kafka"
   - Kafka is optimized for writing, and Jay Kreps liked Kafka's writing
 ![](../../assets/images/kafka/kafka-the-writer.png)
+
+---
 ## Kafka's Focus
 * Instead of piles of data
   - relational databases
@@ -49,6 +53,7 @@ Notes:
   - continually evolving
   - ever growing stream
 
+---
 ## What Happened Then
 * Kafka started as
   - powering real-time applications
@@ -60,6 +65,7 @@ Notes:
   - car companies are collecting and processing real-time data streams
   - banks are rethinking their fundamental processes
 
+---
 ## What Kafka is Like and Not Like
 * Compare to
   - enterprise messaging systems
