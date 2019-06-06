@@ -2,9 +2,12 @@ Kafka Outline
 -------------
 
 - day 1
+    - streaming intro
+    - test VM access 
+    - Kafka Intro
+    --- lunch ---- 
     - Kafka Intro
     - lab 1 : installing & running Kaka
-    --- lunch break ---
     - lab 2 : kafka utils
     - working with kafka
     - lab 3: 3.1 & 3.2

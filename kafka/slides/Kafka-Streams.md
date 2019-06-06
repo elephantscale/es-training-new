@@ -225,7 +225,7 @@ Notes:
 ## Modifying RocksDB Configuration
 
 
-```text
+```java
 public static class CustomRocksDBConfig implements RocksDBConfigSetter {
    @Override
    public void setConfig (final String storeName, final Options options,
@@ -325,7 +325,7 @@ Notes:
 ## Kafka Streaming (Abbreviated)
 
 
-```text
+```java
 // ** 1 : configure **
 Properties config = new Properties();
 config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
@@ -380,7 +380,7 @@ Notes:
 ## Kafka Streaming  : ForEach
 
 
-```text
+```java
 final StreamBuilder builder = new StreamBuilder();
 final KStream<String, String> clickstream = builder.stream("topic1");
 
@@ -424,7 +424,7 @@ Notes:
 ## Kafka Streaming  : Filter
 
 
-```text
+```java
 final StreamBuilder builder = new StreamBuilder();
 final KStream<String, String> clickstream = builder.stream("topic1");
 
@@ -470,7 +470,7 @@ Notes:
 ## Kafka Streaming: Map
 
 
-```text
+```java
 final StreamsBuilder builder = new StreamsBuilder();
 final KStream<String, String> clickstream = builder.stream("topic1");
 
@@ -555,7 +555,7 @@ Notes:
 ## Kafka Streams: GroupBy
 
 
-```text
+```java
 final StreamsBuilder builder = new StreamsBuilder();
 final KStream<String, String> clickstream = builder.stream( "topic1");
 
@@ -583,7 +583,7 @@ Notes:
 ## Wordcount in Kafka Streams
 
 
-```text
+```java
 // Serializers/deserializers (serde) for String and Long types
 final Serde<String> stringSerde = Serdes.String();
 final Serde<Long> longSerde = Serdes.Long();
@@ -708,7 +708,7 @@ Notes:
 ## Counts visits per hour
 
 
-```text
+```java
 # We have visits to our website
 KStreamBuilder builder = new KStreamBuilder();
 # Create visits stream 

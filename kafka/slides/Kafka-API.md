@@ -1,4 +1,4 @@
-# Working With Kafka
+# Kafka API
 
 
 ---
@@ -24,24 +24,19 @@ Notes:
 
 
  * Java is the ‘first class’ citizen in Kafka
-
      - Officially maintained
-
- * Other language libraries are independently developed
-
-     - may not have 100% coverage
-
-     - May not be compatible with latest versions of Kafka
-
-     - Do your home work!
-
- * Python seems to be on par with Java
-
+ * Python on par with Java
      - Maintained by Confluent.io
-
+ * Other language libraries are independently developed
+     - may not have 100% coverage
+     - May not be compatible with latest versions of Kafka
+     - Do your home work!
  * REST proxy provides a language neutral way to access Kafka
-
  * Full list: https://cwiki.apache.org/confluence/display/KAFKA/Clients
+ 
+ <img src="../../assets/images/logos/java-logo-1.png" style="max-width:10%;"/>
+  <img src="../../assets/images/logos/python-logo-1.png" style="max-width:30%;"/>
+
 
 Notes: 
 
@@ -52,19 +47,16 @@ Notes:
 
 ## Kafka Java API
 
+ <img src="../../assets/images/logos/java-logo-1.png" style="max-width:20%;float:right;"/>
 
  * Rich library that provides high level abstractions
-
      - No need to worry about networking / data format ..etc
 
  * Write message / Read message
 
  * Supports native data types
-
      - String
-
      - Bytes 
-
      - Primitives (int, long ...etc.)
 
 Notes: 
@@ -77,7 +69,7 @@ Notes:
 ## Java Producer Code (Abbreviated)
 
 
-```text
+```java
 // ** 1 **
 import java.util.Properties;
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -112,7 +104,7 @@ Notes:
 
 ## Producer Code Walkthrough
 
-```text
+```java
 // ** 2 **
 Properties props = new Properties();
 props.put("bootstrap.servers", "localhost:9092");
@@ -143,7 +135,7 @@ Notes:
 
 ## Producer Code Walkthrough
 
-```text
+```java
 // ** 3 **
 String topic = "test";
 Integer key = new Integer(1);
@@ -176,7 +168,7 @@ Notes:
 ## Producer Properties
 
 
-```text
+```java
 Properties props = new Properties();
 props.put("bootstrap.servers", "localhost:9092");
 props.put("client.id", "SimpleProducer");
@@ -239,7 +231,7 @@ Notes:
 ## Consumer Code (Abbreviated)
 
 
-```text
+```java
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -280,7 +272,7 @@ Notes:
 
 ## Consumer Code Walkthrough
 
-```text
+```java
 Properties props = new Properties(); // ** 1 **
 props.put("bootstrap.servers", "localhost:9092");
 props.put("group.id", "group1");
@@ -315,7 +307,7 @@ Notes:
 
 ## Consumer Code Walkthrough
 
-```text
+```java
 try {
    while (true) {
     ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000); // ** 3 **
@@ -331,7 +323,6 @@ consumer.close();
 ```
 
  * Consumers must subscribe to topics before starting polling
-
      - Consumer.subscribe (“test.*”) // wildcard subscribe
 
  * Poll: This call will return in 1000 ms, with or without records
@@ -350,24 +341,24 @@ Notes:
 ## Consumer Poll Loop
 
 
- * Polling is usually done in an infinite loop. while (keepRunning) {  polling  }
+ * Polling is usually done in an infinite loop. 
+ ``` 
+    while (keepRunning) {  
+        do poll
+    }
+```
+ 
+ <img src="../../assets/images/kafka/client-polling.png" style="max-width:30%;float:right;"/>
 
  * First time poll is called
-
      - Finds the GroupCoordinator
-
      - Joining Consumer Group
-
      - Receiving partition assignment
 
  * Work done in poll loop
-
      - Usually involves some processing
-
      - Saving data to a store
-
      - Don’t do high latency work between polls; otherwise the consumer could be deemed dead.
-
      - Do heavy lifting in a seperate thread
 
 Notes: 
@@ -392,7 +383,7 @@ Notes:
 
  *  **long offset()** : long offset in
 
-```text
+```java
 ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)); 
 for (ConsumerRecord<String, String> record : records) {
      System.out.printf("topic = %s, partition = %d, offset = %d,
@@ -412,7 +403,7 @@ Notes:
 
 ## Configuring Consumers
 
-```text
+```java
 Properties props = new Properties(); // ** 1 **
 
 ...
@@ -448,7 +439,7 @@ Notes:
 
  * This will cause the poll loop to exit with  **'**  **WakeupException** ' 
 
-```text
+```java
 try {
   while (true) {
    ConsumerRecords<Integer, String> records = consumer.poll(100);
@@ -478,7 +469,7 @@ Notes:
 
  *  **'**  **consumer.wakeup**  **()** '  is safe to call from another thread
 
-```text
+```java
 Runtime.getRuntime().addShutdownHook(new Thread() {
    public void run() {
       System.out.println("Starting exit...");
@@ -499,17 +490,21 @@ Notes:
 
 ---
 
-## Lab 3: Kafka Producer / Consumer
+## Lab : Kafka Producer / Consumer
+
+<img src="../../assets/images/icons/individual-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
 
- *  **Overview**: Use Kafka Java API to write Producer and Consumer
+ *  **Overview**:   
+ Use Kafka Java API to write Producer and Consumer
 
- *  **Builds on previous labs**: 1-install Kafka
+ *  **Builds on previous labs**:   
+ 1-install Kafka
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**:  
+ 30 – 40 mins
 
  *  **Instructions**: 
-
      - Please follow: 3.1,    3.2,   3.3
 
  *  **To Instructor**: 
@@ -530,35 +525,22 @@ Notes:
 ## Producer Send Modes
 
 
- * 1: Fire and Forget
-
+ * **1: Fire and Forget**
      - Send message, doesn’t wait for confirmation from Kafka
-
-     - Writes messages to broker in batches (minimize network round
-
-     - trips)
-
+     - Writes messages to broker in batches (minimize network round-trips)
      - Risk of some messages being lost
-
      - Default and fastest
 
- * 2: Sync
-
+ * **2: Sync**
      - Send message and wait for confirmation from Kafka
-
      - Each message is sent out individually
-
      - Usually lowest throughput
 
- * 3: Async
-
+ * **3: Async**
      - Registers a callback function while sending
-
      - Does not wait for confirmation
-
      - Kafka will call this function with confirmation or exception
-
-     -  Higher throughput
+     - Higher throughput
 
 Notes: 
 
@@ -569,7 +551,7 @@ Notes:
 
 ## Producer Send Mode:  Fire and Forget
 
-```text
+```java
 String topic = "test";
 Integer key = new Integer(1);
 String value = "Hello world";
@@ -603,7 +585,7 @@ Notes:
 
 ## Producer Send Mode:  Sync
 
-```text
+```java
 ProducerRecord<Integer, String> record = 
 	new ProducerRecord<> (topic, key, value);
 
@@ -630,7 +612,7 @@ Notes:
 ## Producer Send Mode:  Async
 
 
-```text
+```java
 class KafkaCallback implements Callback {
   @Override
   public void onCompletion(RecordMetadata meta, Exception ex) {
@@ -1175,7 +1157,7 @@ Notes:
 ## Manual Commit 
 
 
-```text
+```java
 Properties props = new Properties();
 ...
 props.put("enable.auto.commit", "false"); // must disable 
@@ -1280,7 +1262,7 @@ Notes:
 
  * Producer can write a batch  **_atomically_** 
 
-```text
+```java
       producer.initTransactions(); 
 
       try { 
@@ -1357,7 +1339,7 @@ Notes:
 
  * Both commitSync and commitAsync can take a Map of partitions & offsets
 
-```text
+```java
 org.apache.kafka.clients.consumer.KafkaConsumer
    commitAsync(Map<TopicPartition,OffsetAndMetadata> offsets)
    commitSync(Map<TopicPartition,OffsetAndMetadata> offsets)
@@ -1377,7 +1359,7 @@ Notes:
 ## Committing Specific Offsets
 
 
-```text
+```java
 import org.apache.kafka.common.TopicPartition; import org.apache.kafka.clients.consumer.OffsetAndMetadata;
 
 Map<TopicPartition, OffsetAndMetadata> currentOffsets = new HashMap<>();
@@ -1651,7 +1633,7 @@ config/connect-standalone.properties
 
 ## Source file Configuration and Execution
 
-```text
+```java
     name=local-file-source
     connector.class=File Stream Source
     tasks.max=1
@@ -1661,7 +1643,7 @@ config/connect-standalone.properties
 
  * The file stream can be run by executing  *connect-standalone.sh* with standalone configuration and source file configuration as given below
 
-```text
+```java
 bin/connect-standalone.sh /
     config/connect-standalone.properties /
     config/connect-file-source.properties
@@ -1701,7 +1683,7 @@ Notes:
 ## HDFS Connector – Sample Usage
 
 
-```text
+```java
 # hdfs-connector.properties
 
 name=hdfs-sink
@@ -1713,12 +1695,12 @@ flush.size=3
 
 ```
 
-```text
+```java
 $  confluent load hdfs-sink -d hdfs-connector.properties
 
 ```
 
-```text
+```java
 $ hadoop fs -ls /topics/test_hdfs/partition=0
 
 /topics/test_hdfs/partition=0/test_hdfs+0+0000000000+0000000002.avro
@@ -1783,7 +1765,7 @@ Notes:
 ## Kafka Direct Example
 
 
-```text
+```java
 object DirectKafkaWordCount {  
    def main(args: Array[String]) {    
       val Array(brokers, topics) = args    
@@ -1827,7 +1809,7 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
 ## Kafka Structured Streaming Example
 
 
-```text
+```java
 val s1 = spark.
           readStream.
           format("kafka").
@@ -1860,7 +1842,7 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
 
  * We are going to be analyzing Clickstream data
 
-```text
+```java
 { "timestamp" :1451635200055, 
 "session":"session_57" , 
 "domain":"twitter.com" ,
@@ -1933,8 +1915,3 @@ Notes:
 
 
 Notes: 
-
-
-
-
-
