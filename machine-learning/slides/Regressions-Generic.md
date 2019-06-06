@@ -132,6 +132,7 @@ Notes:
 
 ## Graph Review!
 
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Graph-Review--0.png"  style="width:50%;float:right"/><!-- {"left" : 6.8, "top" : 1.01, "height" : 3.1, "width" : 3.24} -->
 
 *  **Y = aX + b**
 
@@ -140,7 +141,7 @@ Notes:
  * 2 - slope of line
 
  * 4 - intercept
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Graph-Review--0.png" alt="Session-Regressions-Graph-Review--0.png" style="width:50%;float:right"/><!-- {"left" : 6.8, "top" : 1.01, "height" : 3.1, "width" : 3.24} -->
+
 
 <br/>
 
@@ -180,6 +181,8 @@ Notes:
 
 ## Using Linear Regression for Tips
 
+<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png"  style="max-width:50%;float:right;"/><!-- {"left" : 2.35, "top" : 3.07, "height" : 4.2, "width" : 5.56} -->
+
 
  * Linear regression model closely resembles algebra model
 
@@ -189,7 +192,6 @@ Notes:
 
  * If we figure out 'a' and 'b', then we can estimate tip for any amount
 
-<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png" alt="Session-Regressions-in-Spark-Tips-vs-Bill-0.png" style="width:50%;"/><!-- {"left" : 2.35, "top" : 3.07, "height" : 4.2, "width" : 5.56} -->
 
 
 
@@ -202,6 +204,7 @@ Notes:
 
 ## Calculating Linear Regression Model
 
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png"  style="max-width:40%;float:right;"/><!-- {"left" : 5.28, "top" : 3.91, "height" : 3.24, "width" : 4.7} -->
 
  * Here is my Linear Regression Model coefficients for billing data
 
@@ -215,7 +218,6 @@ Notes:
 
  Seems like a reasonably good fit
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" alt="Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:40%;"/><!-- {"left" : 5.28, "top" : 3.91, "height" : 3.24, "width" : 4.7} -->
 
 
 
@@ -226,6 +228,9 @@ Notes:
 ---
 
 ## Using Linear Regression Model
+
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Using-Linear-Regression-Model.png"  style="max-width:40%;float:right;"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
+
 
 * **Tip =`0.2428571` * amount - `1.40`**
     
@@ -239,7 +244,6 @@ Notes:
 
     = `$ 22.88`
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Using-Linear-Regression-Model.png" alt="Session-Regressions-Using-Linear-Regression-Model.png" style="position:absolute;top:30%;right:5px"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
 
 
 
@@ -272,7 +276,7 @@ Formula image credit : Creative Commons License : tnstate.edu (http://ww2.tnstat
 
 ---
 
-[Residual](ML-Concepts.md#Errors and Residuals)
+[ML-concepts.md#Errors and Residuals](ML-concepts.md#Errors and Residuals)
 
 ---
 
@@ -303,24 +307,19 @@ Notes:
 
 ## Evaluating Linear Regression Model : RSS
 
+<img src="../../assets/images/machine-learning/Regressions-Generic-05.png" style="max-width:50%;float:right;"/><!-- {"left" : 4.45, "top" : 1.31, "height" : 4.89, "width" : 5.44} -->
 
  *  **Quiz for class**
 
- * Explain the<br/>
-  'observed tip' vs.<br/>
-   'predicted tip'
+ * Explain the  'observed tip' vs.   'predicted tip'
 
- * Why is sum of<br/>
-  residuals zero?
+ * Why is sum of  residuals zero?
 
- * Why is SSE not<br/>
-  zero?
+ * Why is SSE not zero?
 
- * Why is there no<br/>
-  residual on $100<br/>
-   bill ?
+ * Why is there no residual on $100  bill ?
 
-<img src="../../assets/images/machine-learning/Regressions-Generic-05.png" style="width:50%; position:absolute;top:25%;right:5px"/><!-- {"left" : 4.45, "top" : 1.31, "height" : 4.89, "width" : 5.44} -->
+
 
 
 
@@ -359,7 +358,7 @@ Notes:
 
  * As it gets closer to convergence the 'steps' gets smaller
 
-<img src="../../assets/images/machine-learning/gradient-descent-1-skitch.png" style="width:60%;"/><!-- {"left" : 2.3, "top" : 1.48, "height" : 5.64, "width" : 5.66} -->
+<img src="../../assets/images/machine-learning/gradient-descent-1-skitch.png" style="max-width:80%;"/><!-- {"left" : 2.3, "top" : 1.48, "height" : 5.64, "width" : 5.66} -->
 
 
 
@@ -388,7 +387,7 @@ Image credit to KDNuggets : https://www.kdnuggets.com/2017/04/simple-understand-
 
   * [Demo 1](http://vis.supstat.com/2013/03/gradient-descent-algorithm-with-r/)
 
-<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" style="width:50%"/><!-- {"left" : 2.3, "top" : 1.19, "height" : 5.6, "width" : 5.65} -->
+<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" style="max-width:70%"/><!-- {"left" : 2.3, "top" : 1.19, "height" : 5.6, "width" : 5.65} -->
 
 
 
@@ -784,7 +783,6 @@ Formula images: Creative Commons License : Wikimedia
  * R<sup>2</sup> ranges from 0 to 1
 
  * Measures how well the model fits the data
-<br/><br/><br/>
 
 <img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Coefficient-of-Determination-R2--0.png" style="width:40%"/><!-- {"left" : 4.08, "top" : 3.36, "height" : 0.77, "width" : 2.09} -->
 
@@ -912,20 +910,15 @@ Notes:
 
  * How can we know which ones are important?
 
- * Imagine an equation 
- 
-    Y = b0 +  b1 X<sub>1</sub>  + b2 X<sub>2</sub>
+ * Imagine an equation   
+    `Y = b0 +  b1 . X1  + b2 . X2`
 
- * We have two predictors X<sub>1</sub> & X<sub>2</sub> (p = 2)
+ * We have two predictors `X1` & `X2` (p = 2)
 
  * Possible combinations 2<sup>p</sup> = 2<sup>2</sup> = 4
-
      - No variables
-
      - X<sub>1</sub> only
-
      - X<sub>2</sub> only
-
      - Both X<sub>1</sub> and X<sub>2</sub> 
 
 
@@ -947,9 +940,7 @@ Notes:
  * Some algorithms to decide important variables quickly
 
      - Mallow's Cp
-
      - Akaike Information Criterion (AIC)
-
      - Bayesian Information Criterion  (BIC)
 
  * Also Lasso Regularization can be used for variable selection as well (more on this later)
@@ -971,7 +962,6 @@ Notes:
  * So we need other measures to evaluate the model
 
  *  **Akaike's**  **Information Criteria (AIC)**  can be helpful
-
      - Developed by Hirotugu Akaike, a prominent Japanese statistician
 
  * If I add 'k' more variables the AIC is penalized by atleast 2k
@@ -998,21 +988,15 @@ Notes:
  * There are 3 classical approaches
 
  *  **Forward Selection**
-
      - Begin with null model (has only intercept, and no variables)
-
      - Run p simple linear regressions and add to null model that results in lowest RSS
 
  *  **Backward Selection**
-
      - Start with all variables
-
      - Remove variables with largest p-value (least statistically significant)
-
      - Keep going until desired p-value threshold is reached
 
  *   **Mixed Selection**
-
      - Combination of forward / backward selection
 
 Notes:
@@ -1024,14 +1008,17 @@ Notes:
 ## Calculating AIC - Sample Code ( R )
 
 
-```text
+```R
 options(scipen=999)
 library(MASS)
 
 house.prices = read.csv("house-sales-full.csv")
 
 # using all attributes for LM
-house.lm.full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms + BldgGrade + PropertyType + NbrLivingUnits + SqFtFinBasement + YrBuilt + YrRenovated + NewConstruction, data=house.prices, na.action=na.omit)
+house.lm.full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms + 
+                                BldgGrade + PropertyType + NbrLivingUnits + SqFtFinBasement + 
+                                YrBuilt + YrRenovated + NewConstruction, 
+                    data=house.prices, na.action=na.omit)
 
 step <- stepAIC(house.lm.full, direction="both")
 
@@ -1047,17 +1034,22 @@ Notes:
 ## Calculating AIC Sample Code ( R )
 
 
-```text
+```R
 # original LM formula
-house.lm.full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms + BldgGrade + PropertyType + NbrLivingUnits + SqFtFinBasement + YrBuilt + YrRenovated + NewConstruction, data=house.prices, na.action=na.omit)
+house.lm.full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms + 
+                                BldgGrade + PropertyType + NbrLivingUnits + SqFtFinBasement + 
+                                YrBuilt + YrRenovated + NewConstruction, 
+                    data=house.prices, na.action=na.omit)
 ```
 
-```text
+```R
 step
 
 Call:
-lm(formula = SalePrice ~ SqFtTotLiving + Bathrooms + Bedrooms +     BldgGrade + PropertyType + SqFtFinBasement + YrBuilt + NewConstruction,
-     data = house.prices, na.action = na.omit)
+lm(formula = SalePrice ~ SqFtTotLiving + Bathrooms + Bedrooms +     
+                         BldgGrade + PropertyType + SqFtFinBasement + 
+                         YrBuilt + NewConstruction,
+            data = house.prices, na.action = na.omit)
 
 Coefficients:
               (Intercept)              SqFtTotLiving                  Bathrooms
@@ -1252,472 +1244,3 @@ Notes:
 
 
 ---
-
-# Logistic Regression
-
----
-
-## Algorithm Summary
-
-<img src="../../assets/images/machine-learning/Regressions-Generic-06.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
-
-
-
-Notes:
-
-http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/
-
-
----
-
-## Problem: Applying for Credit Card
-
-
- * In US most adults have a 'credit score' (a.k.a. FICO score)
-
- * Ranges from 300 (very poor) to 850 (excellent)
-
- * Credit score is a big determining factor when applying for loans / mortgages / credit cards
-
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Problem-Applying-for-Credit-Card-0.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3.28, "height" : 3.66, "width" : 8.21} -->
-
-
-
-Notes:
-
-Image credit : (CC) : https://www.flickr.com/photos/cafecredit/27321078025
-
-
----
-
-### Problem : Applying for Credit Card
-
-
- * Here is historical data on credit score and if the credit application is approved
-
- * What is the chance some one with score of  **700**  getting a credit card approved?
-
-
-| Credit Score | Approved? |
-|--------------|-----------|
-| 560          | No        |
-| 750          | Yes       |
-| 680          | Yes       |
-| 650          | No        |
-| 450          | No        |
-| 800          | Yes       |
-| 775          | Yes       |
-| 525          | No        |
-| 620          | No        |
-| 705          | No        |
-| 830          | Yes       |
-| 610          | Yes       |
-| 690          | No        |
-
-Notes:
-
-
-
-
----
-
-## Plotting Credit Approval Data
-
-<img src="../../assets/images/machine-learning/3rd-party/Regressions-Generic-07.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 1.28, "height" : 5.42, "width" : 8.21} -->
-
-
-
-Notes:
-
-
-
----
-
-## Plotting Credit Approval Data
-
-
- * X axis = credit score
-
- * Y axis = 0 (declined), 1 (approved), nothing in between
-
- * There is no linear fit line!
-
-<img src="../../assets/images/machine-learning/Session-Regressions-Plotting-Credit-Approval-Data-0.png" style="width:50%"/><!-- {"left" : 2.11, "top" : 2.49, "height" : 4.61, "width" : 6.03} -->
-
-
-
-
-
-Notes:
-
-
-
----
-
-## Linear vs. Logistic
-
-
- * Linear Regression provides continuous Y values
-
- * Classification gives out discrete output (Spam / Not-Spam)
-
- * Logistic Regression produces numbers that are probabilities
-
-<img src="../../assets/images/machine-learning/Session-Regressions-Linear-vs-Logistic-0.png" style="width:60%"/><!-- {"left" : 2.02, "top" : 2.41, "height" : 4.2, "width" : 6.22} -->
-
-
-Notes:
-
-
-
----
-
-## Logistic Regression
-
-
- * Logistic Regression gives out probability between 0 to 1
-
-     - 70% chance this email is Spam
-
-     - 40% this loan will fail
-
- * This probability is mapped into<br/>
-  binary outcome (true/false,  yes / no)
-
- * **Logistic uses Regression algorithm,<br/>
-  but used for classification**
-
- * Logistic regression is Linear (classification) algorithm
-
- * Invented by Sir David Cox<br/>
-   (author of 364 books and papers!)
-
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Logistic-Regression-0.png" style="width:20%;position:absolute;top:50%;right:5px"/><!-- {"left" : 7.7, "top" : 4.24, "height" : 3.03, "width" : 2.37} -->
-
-
-
-Notes:
-
-
-
----
-
-## Math Behind  Logistic Regression
-
-
-```text
-X : input
-Y : output
-b0,b1 : coefficients
-
-         (b0 + b1 * X)
-      e
-Y = ---------------------------
-         (b0 + b1 * X)
-  1 + e
-
-Rewrite this as:
-Log(odds) = ln (y / (1-y)) = b0 + b1* X
-
-Log (odds) =  ln (p / 1-p)    where p is the probability of the event will occur
-
-```
-
-Notes:
-
-
-
----
-
-## Math Behind Logistic Regression
-
- * 'Logit' function
-
-     - Calculates 'odds'
-
-<br/>
-<br/>
-<br/>
-<br/>
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Logistic-Regression-0.png" style="width:70%;float:left"/><!-- {"left" : 0.29, "top" : 4.05, "height" : 2.99, "width" : 7.05} -->
-
-
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Logistic-Regression-1.png" style="width:50%;position:absolute;top:20%;right:5px"/><!-- {"left" : 4.31, "top" : 0.95, "height" : 3.85, "width" : 5.77} -->
-
-
-Notes:
-
-Image attribution : https://commons.wikimedia.org/wiki/File%3ALogistic-curve.svg
-
-
----
-
-## Applying Logistic Regression To Credit Card Application
-
-```
-Coefficients for our credit card problem: b0 = -1.69754 ,  b1 = 0.002319     
-
-For score of 700
-
-        e b0 + b1*X                      exp (-1.69754 + 0.002319 * 700)
- Y = ------------------------- =   ------------------------------------------------   =  0.84
-        1 + e b0 + b1 * X               1 + exp (-1.69754 + 0.002319 * 700)
-
-Predicts 84% chance of getting the loan approved.
-So this mapped to YES
-
-```
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Applying-Logistic-Regression-To-Credit-Card-Application--0.png" style="width:50%"/><!-- {"left" : 2.49, "top" : 3.13, "height" : 3.47, "width" : 5.26} -->
-
-
-Notes:
-
----
-
-## Multiple Logistic Regression
-
-
- * So far we have seen ONE predictor determining the outcome
-
-     - Credit score determining  approval / denial
-
- * We can have multiple factors (independent variables) determining an outcome as well
-
-     - This is called 'multiple logistic regression'
-
-<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:70%"/><!-- {"left" : 0.77, "top" : 3.36, "height" : 3.63, "width" : 8.71} -->
-
-
-
-
-Notes:
-
-
-
-
----
-
-## Math Behind Multiple Logistic Regression
-
-
- * Let's say  
-     - β represents parameters
-
-     - X is independent variable (we have more than one)
-
- * Log(odds) = ln (y / (1-y)) = β<sub>0</sub> + β<sub>1</sub>* X<sub>1</sub> + β<sub>2</sub>* X<sub>2</sub> + …. + β<sub>n</sub>* X<sub>n</sub> <br/><br/>
-
- * Log (odds) or log-odds ration = <img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Multiple-Logistic-Regression-0.png" style="width:10%;"/><!-- {"left" : 6.86, "top" : 3.37, "height" : 1.74, "width" : 2.99} -->
-
-
-
- * Where p is the probably the event will occur
-
-
-
-
-Notes:
-
-
-
----
-
-## Logistic Regression Example
-
-
- * We are going to look college admission data
-
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Logistic-Regression-Example-0.png" style=""/><!-- {"left" : 1.02, "top" : 1.57, "height" : 5.02, "width" : 8.21} -->
-
-
-
-Notes:
-
-
-
----
-
-## Quick Recap
-
-
- *  **Instructor**
-
-     - Confusion Matrix and ROC curve are covered in detail in 'ML-Concepts' section.
-
-Notes:
-
-
-
----
-
-## Measuring Accuracy of Logistic Model
-
-
- * Since Logistic Regression is used for classification we can use
-     - Confusion Matrix
-     - ROC and AUC (Area Under Curve)
-
- * Confusion Matrix:
-
-    correct : 14 + 5 = 19
-
-    missed : 3 + 1 = 4
-
-    accuracy = 19/(19+4) = 82.6%
-
- * ROC / AUC = 0.874
-
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Measuring-Accuracy-of-Logistic-Model-0.png" style="width:60%;position:absolute;bottom:5px;right:5px"/><!-- {"left" : 3.71, "top" : 4.55, "height" : 2.54, "width" : 6.31} -->
-
-
-
-Notes:
-
-
-
----
-
-## Preparing Data for Logistic Regression
-
-
- *  **Binary Output Variable**
-
-    Logistics Regression predicts probability of an instance belonging to default class.  This is snapped into 0 or 1 classification
-
- *  **Remove Noise**
-
-    Remove outliers from input data
-
- *  **Gaussian Distribution**
-
-    If you can shape the data into a Gaussian distribution (Logarithmic, etc.) Logistics will yield better results
-
----
-
-## Preparing Data for Logistic Regression
-
- *  **Remove Correlated Output**
-
-    Remove highly correlated inputs to avoid overfitting
-
- *  **Failure to converge**
-
-    Causes
-
-     - Highly correlated input
-
-     - Data is very sparse (lots of zeros in data)
-
-Notes:
-
-
-
----
-
-## Multinomial logistic regression
-
-
- * We have seen Logistic Regression predicting binary outcomes
-
-     - Approved / Denied
-
- * We can use it to calculate 'more than two' states as well
-
-     - multinomial logistic regression
-
- * For K possible outcomes
-
-     - Chose one outcome as a pivot
-
-        * against the pivot outcome
-
-Notes:
-
-
-
----
-
-## Logistic Regression: Strengths, Weaknesses, and Parameters
-
-
- * Logistic Regression: Strengths, Weaknesses, and Parameters
-
- *  **Strengths**
-
-     - Relatively simple to understand
-
-     - Linear algorithm -> Fast learner
-
-     - Works well on high dimensional (100s of features) datasets
-
-     - Very scalable to large data sets
-
- *  **Weaknesses**
-
-     - Can underfit some times
-
- *  **Parameters**
-
-     - Use regularization to minimize overfitting
-
-Notes:
-
-
-
----
-
-## Lab: Logistic Regression
-
-
- *  **Overview**:
-
-     - Practice Logistic Regression
-
- *  **Approximate Time**:
-
-     - 30 mins
-
- *  **Instructions**:
-
-    Follow appropriate Python / R / Spark instructions
-
-     -  **LOGIT-1: Credit card approval (single variable)**
-
-     -  **LOGIT-2: College Admission (multiple variables)**
-
-Notes:
-
-
-
-
----
-
-## Lab: Cross Validation: Hyper Parameter Tuning
-
-
- *  **Overview**:
-
-    - Learn to do Cross Validation
-
- *  **Approximate Time**:
-
-    - 30 mins
-
- *  **Instructions**:
-
-     - Follow  appropriate Python / R / Spark instructions
-
-     -  **Cross Validation 1 : Tuning the model**
-
-
-Notes:
-
-
-
-
----
-
-## Logistic Regression: Further Readings
-
-
-Notes:

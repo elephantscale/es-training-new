@@ -887,7 +887,7 @@ Notes:
   Can SSE be zero? :-) 
 
 
-<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="max-width:50%;"/>
+<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="max-width:45%;"/>
 
 
 
