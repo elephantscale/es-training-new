@@ -108,9 +108,9 @@ Notes:
 
      - Not open source (Single instance free)
 
-<img src="../../assets/images/kafka/3rd-party/graphlte-logo.png" alt="graphlte-logo.png" style="width:30%; position:relative; left:1150px; top:250px;"/>
+<img src="../../assets/images/kafka/graphite-logo.png" alt="graphite-logo.png" style="width:30%; position:relative; left:1150px; top:250px;"/>
 
-<img src="../../assets/images/kafka/3rd-party/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; position:relative; left:1200px; top:500px;"/>
+<img src="../../assets/images/logos/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; position:relative; left:1200px; top:500px;"/>
 ---
 
 ## Metrics Database Choices

@@ -11,7 +11,7 @@
 About-Kafka-Class.md
 
 # Streaming 
-../../streaming/slides/streaming-primer.md
+../../streaming/slides/Streaming-Primer.md
 
 # Kafka 
 Kafka-Intro.md
