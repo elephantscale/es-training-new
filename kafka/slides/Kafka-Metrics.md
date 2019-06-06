@@ -85,60 +85,21 @@ Notes:
 
 ## Metrics Database Choices
 
-
- * Graphite / InfluxDB / OpenTSDB
-
- *  **Graphite** 
-
-     - Popular choice
-
-     - Easy to setup and maintain
-
-     - May not scale well for large amount of metrics
-
-     - Open source
-
- *  **InfluxDB** 
-
-     - Another popular choice
-
-     - Easy setup and maintenance
-
-     - Good performance
-
-     - Not open source (Single instance free)
-
-<img src="../../assets/images/kafka/graphite-logo.png" alt="graphite-logo.png" style="width:30%; position:relative; left:1150px; top:250px;"/>
-
-<img src="../../assets/images/logos/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; position:relative; left:1200px; top:500px;"/>
----
-
-## Metrics Database Choices
-
- *  **OpenTSDB** 
-
-     - Based on HBase 
-
-     - Massively scalable
-
-     - Considerable effort required to setup and maintain
-
-     - Open source
-
-<img src="../../assets/images/logos/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:30%; position:relative; left:500px; top:-400px;"/>
-
-
-Notes: 
-
-Logos used under fair use policy.  Copyright belongs to respective projects.
-
+| Graphite                                       | InfluxDB                               | OpenTSDB                                           |
+|------------------------------------------------|----------------------------------------|----------------------------------------------------|
+| Popular choice                                 | Another popular choice                 | Based on HBase                                     |
+| Easy to setup and maintain                     | Easy to setup and maintain             | Considerable effort required to setup and maintain |
+| May not scale well for large amount of metrics | Good performance                       | Massively scalable                                 |
+| open source                                    | Not open source (Single instance free) | Open source                                        |
+<img src="../../assets/images/logos/graphite-logo.png" alt="graphlte-logo.png" style="width:30%;"/>
+<img src="../../assets/images/logos/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; "/>
+<img src="../../assets/images/logos/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:25%;" />
 
 ---
 
-## Metrics Visualization Choices
+## Metrics Visualization - Grafana
 
-
- *  **Grafana** 
+<img src="../../assets/images/kafka/3rd-party/Visualization-Choices-5.png" alt="Visualization-Choices-5.png" style="width:50%;float:right;"/>
 
  * Modern, Open source
 
@@ -148,7 +109,6 @@ Logos used under fair use policy.  Copyright belongs to respective projects.
 
  * Supports multiple databases: Graphite / Influx / OpenTSDB
 
-<img src="../../assets/images/kafka/3rd-party/Visualization-Choices-5.png" alt="Visualization-Choices-5.png" style="width:40%;"/>
 
 Notes: 
 
@@ -157,8 +117,9 @@ Image used under fair use , source : grafana.org
 
 ---
 
-## Integrated Monitoring Choices
+## Integrated Monitoring Choices - Nagios
 
+<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-6.png" alt="Monitoring-Choices-6.png" style="width:46%;float:right; "/>
 
  *  [**Nagios**](https://www.nagios.org/)
 
@@ -172,19 +133,17 @@ Image used under fair use , source : grafana.org
 
  * User friendliness: medium
 
- * www.nagios.org
 
-<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-6.png" alt="Monitoring-Choices-6.png" style="width:46%; position:relative; top:-300px; left:400px;"/>
 
 Notes: 
 
-Image used under fair use rights,  source : nagios.org
 
 
 ---
 
-## Integrated Monitoring Choices
+## Integrated Monitoring Choices - Ganglia
 
+<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-7.png" alt="Monitoring-Choices-7.png" style="width:50%;float:right;"/>
 
  *  [**Ganglia**](ganglia.info/) 
 
@@ -194,18 +153,21 @@ Image used under fair use rights,  source : nagios.org
 
  * Host level and application level monitoring
 
- * http://ganglia.info 
 
-<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-7.png" alt="Monitoring-Choices-7.png" style="width:40%;"/>
 
 Notes: 
-
-Image used under fair use rights.  Source : ganglia.info
 
 
 ---
 
 # Metrics Library
+
+---
+
+## Metrics Demo 
+
+<img src="../../assets/images/kafka/3rd-party/grafana-1.png"  style="max-width:80%;"/>
+
 
 ---
 
@@ -238,7 +200,7 @@ https://github.com/dropwizard/metrics
 
  * Metrics is a Java library
 
-```text
+```xml
 <dependencies>
   <dependency>
     <groupId>io.dropwizard.metrics</groupId>
@@ -258,7 +220,7 @@ Notes:
 ## Metrics Library Getting Started
 
 
-```text
+```java
 import java.util.concurrent.TimeUnit;
 import com.codahale.metrics.ConsoleReporter;
 import com.codahale.metrics.JmxReporter;
@@ -302,13 +264,16 @@ Notes:
 
  * In addition to the mean rate, meters also track 1-, 5-, and 15-minute moving averages.
 
-```text
+```java
 private final Meter requests = metrics.meter("requests");
 
 public void handleRequest(Request request, Response response) {
     requests.mark();
 } 
 ```
+
+<img src="../../assets/images/kafka/3rd-party/metrics-meter-1.png" style="max-width:65%;"/>
+
 
 Notes: 
 
@@ -324,7 +289,7 @@ Notes:
 
  * Counter is an AtomicLongCan be incremented or decremented
 
-```text
+```java
 private final Counter msgCounter = metrics.counter("messages-in
 q");
 
@@ -335,6 +300,8 @@ msgCounter.dec();
 msgCounter.dec(5); 
 
 ```
+
+<img src="../../assets/images/kafka/3rd-party/metrics-counter-1.png" style="max-width:65%;"/>
 
 Notes: 
 
@@ -350,13 +317,16 @@ Notes:
 
  * In addition to minimum, maximum, mean, etc., it also measures median, 75th, 90th, 95th, 98th, 99th, and 99.9th percentiles.
 
-```text
+```java
 private final Histogram msgSizes = metrics.histogram( "message_sizes");
 
 msgSizes.update(100);
 msgSizes.update(50); 
  
 ```
+
+<img src="../../assets/images/kafka/3rd-party/metrics-histogram-1.png"  style="max-width:65%;"/>
+
 
 Notes: 
 
@@ -372,7 +342,7 @@ Notes:
 
  * Also measures the rate the code is called
 
-```text
+```java
 private final Timer timerExec = metrics.timer("execTime"));
 
 Timer.Context context = timerExec.time();
@@ -380,6 +350,9 @@ Timer.Context context = timerExec.time();
 f();  // calling a function
 context.stop(); 
 ```
+
+<img src="../../assets/images/kafka/3rd-party/metrics-timer-1.png" alt="big-data-Evolution.png" style="max-width:65%;"/>
+
 
 Notes: 
 
@@ -419,7 +392,7 @@ Notes:
 ## Kafka Streams + Metrics
 
 
-```text
+```java
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Meter;
 import com.codahale.metrics.Timer;

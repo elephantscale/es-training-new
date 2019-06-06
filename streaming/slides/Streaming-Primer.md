@@ -1,5 +1,7 @@
 # Streaming Primer
 
+<img src="../../assets/images/streaming/3rd-party/streaming-data.png" alt="big-data-Evolution.png" style="max-width:50%;"/>
+
 
 ---
 
@@ -41,7 +43,7 @@ Notes:
 
 ---
 
-## Moving Towards Fast Data: Version 2
+## Moving Towards Fast Data: Version2
 
   * Decision time: (near) real time
     - Seconds (or milliseconds)
@@ -304,7 +306,7 @@ Notes:
 ---
 ## State Management Strategies
 
-<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-011.png" alt="Streaming-Primer-State-Management-Strategies-011.png" style="width:45%;"/>
+<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-011.png.png" alt="Streaming-Primer-State-Management-Strategies-011.png.png" style="width:45%;"/>
 
 <img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-11.png" alt="Streaming-Primer-State-Management-Strategies-11.png" style="width:35%;"/><img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-12.png" alt="Streaming-Primer-State-Management-Strategies-12.png" style="width:40%;"/>
 
