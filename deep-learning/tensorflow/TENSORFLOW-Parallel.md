@@ -703,7 +703,7 @@ Notes:
 
      - But it’s a worthwhile tradeoff for ML purposes
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Why-Cloud-Storage--0.png) <!-- {"left" : 2.59, "top" : 4.61, "height" : 2.6, "width" : 5.07} -->
+![](../../assets/images/deep-learning/3rd-party/Scaling-Tensorflow-Why-Cloud-Storage--0.png) <!-- {"left" : 2.59, "top" : 4.61, "height" : 2.6, "width" : 5.07} -->
 
 
 
@@ -977,7 +977,7 @@ Notes:
 <!-- {"left" : 8.56, "top" : 2.03, "height" : 0.74, "width" : 0.86} -->
 
 
-<!-- ![](../../assets/images/deep-learning/Scaling-Tensorflow-We-need-a-new-STACK-2.png)  -->
+<!-- ![](../../assets/images/deep-learning/3rd-party/Scaling-Tensorflow-We-need-a-new-STACK-2.png)  -->
 <!-- {"left" : 8.75, "top" : 3.07, "height" : 0.74, "width" : 0.74} -->
 
 

@@ -8,7 +8,7 @@
 
 ## Image Recognition is a Challenging Problem
 
-<img src="../../assets/images/deep-learning/Image-Classification.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%"/> <!-- {"left" : 2.61, "top" : 3.07, "height" : 3.9, "width" : 5.03} -->
+<img src="../../assets/images/deep-learning/3rd-party/Image-Classification.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%"/> <!-- {"left" : 2.61, "top" : 3.07, "height" : 3.9, "width" : 5.03} -->
 
 
  * [IBM’s Deep Blue supercomputer](https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer) beat the chess world champion Garry Kasparov back in 1996
@@ -207,7 +207,7 @@ Notes:
 
  * It is similar to a flashlight moving from the top left end progressively scanning the entire image. This patch is called the  **filter/kernel** . The area under the filter is the receptive field.
 
-<img src="../../assets/images/deep-learning/CNN-Process-of-Convolution-1.png" alt="XXX image missing" style="background:white;max-width:40%;" /> 
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png" alt="XXX image missing" style="background:white;max-width:40%;" /> 
 
 ---
 
@@ -838,7 +838,7 @@ Notes:
 
 ## Example Convolutional Network
 
-![](../../assets/images/deep-learning/Introduction-to-Neural-Networks--CNN.png) <!-- {"left" : 0.69, "top" : 1.86, "height" : 4.25, "width" : 8.86} -->
+![](../../assets/images/deep-learning/3rd-party/Introduction-to-Neural-Networks--CNN.png) <!-- {"left" : 0.69, "top" : 1.86, "height" : 4.25, "width" : 8.86} -->
 
 
 Notes: 

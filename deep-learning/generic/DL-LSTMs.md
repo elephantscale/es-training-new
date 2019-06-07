@@ -75,7 +75,7 @@ Notes:
 
  *  We do need “forgetfulness”  
 
-![](../../assets/images/deep-learning/Long-Short-Term-Memory-LSTM-Neural-Networks-Forgetfulness-0.png) <!-- {"left" : 7.2, "top" : 4.91, "height" : 1.99, "width" : 2.82} -->
+![](../../assets/images/deep-learning/3rd-party/Long-Short-Term-Memory-LSTM-Neural-Networks-Forgetfulness-0.png) <!-- {"left" : 7.2, "top" : 4.91, "height" : 1.99, "width" : 2.82} -->
 
 
 Notes: 
@@ -465,7 +465,7 @@ Notes:
 
      -  Real financial models will be far more complex.
 
-![](../../assets/images/deep-learning/Upward-trend.png) <!-- {"left" : 7.93, "top" : 4.12, "height" : 2.12, "width" : 2.13} -->
+![](../../assets/images/deep-learning/3rd-party/Upward-trend.png) <!-- {"left" : 7.93, "top" : 4.12, "height" : 2.12, "width" : 2.13} -->
 
 Notes:
 

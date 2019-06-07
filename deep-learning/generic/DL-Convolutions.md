@@ -8,7 +8,7 @@ Introducing Convolutions
 
  * It is similar to a flashlight moving from the top left end progressively scanning the entire image. This patch is called the  **filter/kernel** . The area under the filter is the receptive field.
 
-![](../../assets/images/deep-learning/CNN-Process-of-Convolution-1.png)
+![](../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png)
 
  * The idea is to detect local features in a smaller section of the input space, section by section to eventually cover the entire image.
 

@@ -19,7 +19,7 @@
 
      - What are some problems?
 
-![](../../assets/images/deep-learning/Introduction-to-Neural-Networks--Feedforward-Network-Limitations-0.png) <!-- {"left" : 4.15, "top" : 5.08, "height" : 1.95, "width" : 1.94} -->
+![](../../assets/images/deep-learning/3rd-party/Introduction-to-Neural-Networks--Feedforward-Network-Limitations-0.png) <!-- {"left" : 4.15, "top" : 5.08, "height" : 1.95, "width" : 1.94} -->
 
 Notes: 
 
@@ -52,9 +52,9 @@ Notes:
      - We are looking for a pattern WITHIN image
 
 
-![](../../assets/images/deep-learning/Multilayer-Perceptron.png) <!-- {"left" : 7.93, "top" : 2.41, "height" : 2.08, "width" : 1.73} -->
+![](../../assets/images/deep-learning/3rd-party/Multilayer-Perceptron.png) <!-- {"left" : 7.93, "top" : 2.41, "height" : 2.08, "width" : 1.73} -->
 
-![](../../assets/images/deep-learning/Multilayer-Perceptron.png) <!-- {"left" : 7.93, "top" : 4.81, "height" : 2.08, "width" : 1.73} -->
+![](../../assets/images/deep-learning/3rd-party/Multilayer-Perceptron.png) <!-- {"left" : 7.93, "top" : 4.81, "height" : 2.08, "width" : 1.73} -->
 
 
 
