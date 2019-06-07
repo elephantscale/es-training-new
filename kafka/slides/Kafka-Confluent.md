@@ -173,7 +173,7 @@ Notes:
      {"name": ”type",  "type": "string"},
      {"name": ”success", "type": ”string"},
      {"name": ”message", "type": "string"}  // <- new attribute
-  ]}
+  ]}
 ```
 
 

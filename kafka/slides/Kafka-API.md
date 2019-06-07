@@ -385,7 +385,7 @@ Notes:
 
 ```java
 ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)); 
-for (ConsumerRecord<String, String> record : records) {
+  for (ConsumerRecord<String, String> record : records) {
      System.out.printf("topic = %s, partition = %d, offset = %d,
             key= %s, value = %s\n",
             record.topic(), record.partition(), record.offset(),
@@ -410,7 +410,7 @@ Properties props = new Properties(); // ** 1 **
 props.put("session.timeout.ms", 30000); // 30 secs
 props.put("max.partition.fetch.bytes", 5 * 1024 * 1024); // 5 M
 
-KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props); 
+KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props); 
 ```
  
 
@@ -451,7 +451,8 @@ catch (WakeupException ex) {
 }
 finally {
    // close will commit the offsets
-   consumer.close(); } 
+   consumer.close(); 
+} 
 
 ```
 
@@ -1360,7 +1361,8 @@ Notes:
 
 
 ```java
-import org.apache.kafka.common.TopicPartition; import org.apache.kafka.clients.consumer.OffsetAndMetadata;
+import org.apache.kafka.common.TopicPartition; 
+import org.apache.kafka.clients.consumer.OffsetAndMetadata;
 
 Map<TopicPartition, OffsetAndMetadata> currentOffsets = new HashMap<>();
 int count = 0;
