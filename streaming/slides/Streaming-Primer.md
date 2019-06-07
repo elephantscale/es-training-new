@@ -90,7 +90,7 @@ Notes:
   * Weather Company
     - Analyze weather sensor data
     - Billions of events/day
-    - Multi-Petabyte (PB) traffic daily
+    - Multi-Petabyte (PB) traffic daily
 
   * More use cases at [BigDataUseCases.info](www.BigDataUseCases.info)
 
@@ -196,7 +196,7 @@ Notes:
 ## Processing Guarantees
 
   * In the order of effort required:
-    - At-most-once <  At-least-once  < exactly-once
+    - At-most-once <  At-least-once  < exactly-once
   * At-most-once
     - Simplest implementation
     - No duplicate processing
@@ -205,9 +205,11 @@ Notes:
 
   * At-least-once
     - All events are guaranteed to be processed (no dropped events)
-    - An event can be processed more than once.    - In case of failure recovery, events can be re-played and processed again.
+    - An event can be processed more than once.
+    - In case of failure recovery, events can be re-played and processed again.
     - Needs a ‘durable buffer’ that enables ‘re-play’
-    - OK for idempotent operations like saving events.    - Duplicate processing will just over-write previous values.
+    - OK for idempotent operations like saving events.
+    - Duplicate processing will just over-write previous values.
     - Not OK for counting (how many events came in in last 10 mins)
     - **Most common** implementation
     - Frameworks: All (Storm, Spark, NiFi, Samza, Flink)
@@ -343,8 +345,10 @@ Notes:
 
 ## Event Time and Arrival Time
 
-  * Event Time:    - When the event occurred / generated
-  * Arrival Time:    - When event arrives for processing 
+  * Event Time:
+    - When the event occurred / generated
+  * Arrival Time:
+    - When event arrives for processing 
   * Event Time < Arrival Time
   * Some times events may arrive ‘out of order’ 
 
@@ -376,11 +380,11 @@ Notes:
     - Processing system is too busy
     - Temporary spike in input data (Twitter stream exploding after an election results is announced)
   * Events pile up
-    - May lead to events being dropped.-> un-acceptable in most of the situations
+    - May lead to events being dropped.
+      -> un-acceptable in most of the situations
   * Solutions
     - signal ‘upstream’ processors to slow down?
-    - Leave events in the persistent buffer longer
-
+    - Leave events in the persistent buffer longer 
 
 <img src="../../assets/images/streaming/3rd-party/Back-Pressure.png" alt="Back-Pressure.png" style="width:45%;position:relative; top:-200px; left: 500px;"/>
 
