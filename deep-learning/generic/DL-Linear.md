@@ -130,7 +130,7 @@ Notes:
 
 ## Gradient Descent
 
-<img src="../../assets/images/machine-learning/gradient-descent-1-skitch.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/machine-learning/gradient-descent-1a.png" style="width:50%;float:right;"/>
 
 
 - Start with initial values of coefficients (zero or random value)

@@ -829,12 +829,6 @@ These sub sections are included in other sections
 
 * Let's consider tips at a restaurant
 
-* We can predict the next tip by averaging all tip amounts
-
-* Next tip  
-  = AVERAGE(all tips)   
-  = $10
-
 
 | Meal # | Tip ($)  |
 |--------|----------|
@@ -854,6 +848,8 @@ Notes:
 - https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi
 
 ---
+
+
 
 ## Residuals / Errors
 
@@ -919,6 +915,7 @@ Notes:
 Notes:
 
 https://en.wikipedia.org/wiki/Residual_sum_of_squares
+
 
 ---
 

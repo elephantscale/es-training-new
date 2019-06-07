@@ -18,7 +18,7 @@
 
 ## Gradient Descent
 
-<img src="../../assets/images/machine-learning/gradient-descent-1-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%" />
+<img src="../../assets/images/machine-learning/gradient-descent-1a.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%" />
 
 - Gradient Descent is a popular optimization algorithm
 - Basic idea:

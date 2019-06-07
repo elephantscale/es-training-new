@@ -40,25 +40,16 @@ Notes:
 
 | Algorithm           	| Description                                                                                                                                                        	| Use Case                                                	|
 |---------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------	|
-| Linear Regression   	| Establishes  a best fit 'straight line' <br/> <br/>     **Advantages:**    <br/>-  Simple, well understood    <br/>-  Scales to large datasets       <br/><br/>**Disadvantages**  <br/>-  Prone to outliers 	| -  House prices  <br/> -  Stock market 	|
+| Linear Regression   	| Establishes  a best fit 'straight line' 	| -  House prices  <br/> -  Stock market 	|
 | Logistic Regression 	| -  Calculates  the probability of outcome (success or failure)   <br/>-  Used for **'classification'**  ;)    <br/>-  Needs large sample sizes for accurate prediction       	| -  Mortgage application approval   	|
+| Polynomial Regression 	| If power of independent variable is more than 1. <br/>  Y = a * X + b * X<sup>2</sup>   <br/>- Can be prone to overfitting  <br/>- Results can be hard to explain 	|                         	|
+| Stepwise Regression   	| -When we have multiple independent variables, automatically selects significant variables  <br/>- No human intervention  <br/>- AIC               	| - House price predictor 	|
 
 
 Notes:
 
 https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/
 
-
----
-
-## Regression Algorithms
-
-| Algorithm             	| Description                                                                                                                             	| Use Case                	|
-|-----------------------	|-----------------------------------------------------------------------------------------------------------------------------------------	|-------------------------	|
-| Polynomial Regression 	| If power of independent variable is more than 1.  Y = a * X + b * X<sup>2</sup>   <br/>- Can be prone to overfitting  <br/>- Results can be hard to explain 	|                         	|
-| Stepwise Regression   	| -When we have multiple independent variables, automatically selects significant variables  <br/>- No human intervention  <br/>- AIC               	| - House price predictor 	|
-
-Notes:
 
 
 
@@ -186,9 +177,9 @@ Notes:
 
  * Linear regression model closely resembles algebra model
 
- *  **Y = a X + b**
+ **`Y = a X + b`**
 
- *  **Tip = `a` * bill + `b`**
+ **`Tip = a * bill + b`**
 
  * If we figure out 'a' and 'b', then we can estimate tip for any amount
 
@@ -206,15 +197,15 @@ Notes:
 
 <img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png"  style="max-width:40%;float:right;"/><!-- {"left" : 5.28, "top" : 3.91, "height" : 3.24, "width" : 4.7} -->
 
- * Here is my Linear Regression Model coefficients for billing data
+ * Here is the linear regression model coefficients for billing data
 
-    **Tip = `a` * bill + `b`**
+    **`Tip = a * bill + b`**
 
 	a = 0.242
 
 	b = -1.40000
 
-    **Tip = `0.2428571` * bill - `1.40`**
+    **`Tip = 0.2428571 * bill - 1.40`**
 
  Seems like a reasonably good fit
 
@@ -229,12 +220,12 @@ Notes:
 
 ## Using Linear Regression Model
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Using-Linear-Regression-Model.png"  style="max-width:40%;float:right;"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Using-Linear-Regression-Model.png"  style="width:30%;float:right;"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
 
 
-* **Tip =`0.2428571` * amount - `1.40`**
+* **`Tip = 0.2428571 * bill - 1.40`**
     
-    (Tip = `a` * bill + `b`)
+    (`Tip = a * bill + b`)
 
 * We can use this formula to predict tips.
 
@@ -280,28 +271,21 @@ Formula image credit : Creative Commons License : tnstate.edu (http://ww2.tnstat
 
 ---
 
-## Fitted Values & Residuals
+
+## Understanding Residuals 
+
+* On left, the linear model line passes through all data points.  
+This is called **perfect fit**  
+
+* How ever, in reality,  data doesn't fall exactly on line
+
+* There is usually a 'delta' or 'error' between actual value and predicted value  
+This is called **residual**
 
 
- * Data doesn't fall exactly on line
-
- * There is usually a 'delta' or 'error' between actual value and predicted value
-
- * Residual Sum of Squares( **RSS** ) / Sum of the Squared Errors ( **SSE** ) / Sum of Squared Residuals ( **SSR** ):measures this
-
- * Fitting algorithms try to minimize RSS
-
-| Term          | Description                                                                    | Synonyms                 |
-|---------------|--------------------------------------------------------------------------------|--------------------------|
-| Fitted values | The estimates  obtained from the regression line.                              | -predicted values        |
-| Residuals     | The difference between the observed values and the fitted values.              | - errors                 |
-| Least squares | The method of fitting a regression by minimizing the sum of squared residuals. | - ordinary least squares |
-<!-- {"left" : 0.25, "top" : 3.83, "height" : 3.44, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
-
-
-Notes:
-
-
+<img src="../../assets/images/machine-learning/linear-regression-1a.png" alt="XXX image missing" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/linear-regression-1b.png" alt="XXX image missing" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/linear-regression-1c.png" alt="XXX image missing" style="width:30%;"/>
 
 ---
 
@@ -330,6 +314,23 @@ Notes:
 
 ---
 
+## Calculating Linear Regression Model
+
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png"  style="max-width:40%;float:right;"/><!-- {"left" : 5.28, "top" : 3.91, "height" : 3.24, "width" : 4.7} -->
+
+ * Here is the linear regression model coefficients for billing data
+
+    **`Tip = a * bill + b`**
+
+* How can we find the optimal values for `a` and `b`?
+
+* We can randomly test values for `a` and `b`
+    - but infinite combinations
+    - we need something more efficient 
+    - **Gradient Descent** to rescue
+ 
+---
+
 ## Gradient Descent
 
 
@@ -338,17 +339,11 @@ Notes:
  * It tweaks the values of parameters ( **coefficients** ) of  **target function** (f) that  **minimizes cost function**
 
  * Basic idea:
-
      - Start with initial values of coefficients (zero or random value)
-
      -  **cost = evaluate (f(coefficients)**
-
      - Calculate 'derivative' (think calculus) to determinethe 'slope' or 'direction'
-
      - Update coefficients in the right'direction' and calculate cost again
-
-        *  **'learning rate parameter' (alpha)** determines how much coefficientscan change
-
+        *  **'learning rate parameter' (alpha)** determines how much coefficients can change
      - Iterate  until you find minimum
 
  * Algorithm will converge after multiple iterations
@@ -356,9 +351,21 @@ Notes:
 ---
 ## Gradiant Descent
 
+ * Here when we change variable X, the error function changes
+ 
+ * Goal: find the lowest error point
+
+<img src="../../assets/images/machine-learning/gradient-descent-1b.png" style="max-width:80%;"/><!-- {"left" : 2.3, "top" : 1.48, "height" : 5.64, "width" : 5.66} -->
+---
+
+## Gradiant Descent
+
+<img src="../../assets/images/machine-learning/gradient-descent-1a.png" style="width:50%;float:right;"/><!-- {"left" : 2.3, "top" : 1.48, "height" : 5.64, "width" : 5.66} -->
+
+ * Start at a random point, and make 'jumps' towards the minimum 
+ 
  * As it gets closer to convergence the 'steps' gets smaller
 
-<img src="../../assets/images/machine-learning/gradient-descent-1-skitch.png" style="max-width:80%;"/><!-- {"left" : 2.3, "top" : 1.48, "height" : 5.64, "width" : 5.66} -->
 
 
 
@@ -387,7 +394,7 @@ Image credit to KDNuggets : https://www.kdnuggets.com/2017/04/simple-understand-
 
   * [Demo 1](http://vis.supstat.com/2013/03/gradient-descent-algorithm-with-r/)
 
-<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" style="max-width:70%"/><!-- {"left" : 2.3, "top" : 1.19, "height" : 5.6, "width" : 5.65} -->
+<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" style="width:45%"/><!-- {"left" : 2.3, "top" : 1.19, "height" : 5.6, "width" : 5.65} -->
 
 
 
@@ -449,18 +456,15 @@ Notes:
 
 ## Evaluating Linear Regression Models
 
- * How well does our regression equation represent data?
 
-     - Two measures
+* Simple measures
 
-     - correlation coefficient  (r)
-
+     - correlation coefficient  ( r )
      - coefficient of determination  (r<sup>2</sup>) 
 
- * More advanced
+* More advanced
 
      - t-statistic
-
      - p-value
 
 Notes:
@@ -469,48 +473,18 @@ Notes:
 
 ---
 
-## Quick Recap
 
+## Evaluating Linear Regression: Correlation Coefficient ( r )
 
- *  **Instructor**
-
- * Correlation Coefficient is covered in 'Stats-Primer' section.
-
- * Feel free to go over it for more detail
-
-Notes:
-
-
-
----
-
-## Evaluating Linear Regression: Correlation Coefficient
-
-
- *  **Perfect correlation** occurs when
-
-     - r = -1  (negative)
-
-     - Or  r = +1  (positive)
-
-     - This is when the data points all<br/>
-      lie in straight line (regression line!)
-
-Notes:
-
-
-
----
-
-## Evaluating Linear Regression: Correlation Coefficient
-
+ * r value is between -1 and +1
+ 
  * A correlation |r| >= 0.8 is considered  **`strong`**
 
  * A correlation |r| < 0.5  is considered  **`weak`**
 
  *  **r =**  **0.9522154 -** pretty strong correlation
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" style="width:80%"/><!-- {"left" : 1.55, "top" : 3.08, "height" : 3.19, "width" : 7.16} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" style="width:50%"/><!-- {"left" : 1.55, "top" : 3.08, "height" : 3.19, "width" : 7.16} -->
 
 
 Notes:
@@ -524,21 +498,20 @@ Notes:
 
  *  **'Coefficient of Determination** ' tells us how well our model 'fits' the data
 
- * Also referred as  **'R squared** ' / R<sup>2</sup> / r<sup>2</sup>
-
  * Coefficient of Determination = (Correlation Coefficient)<sup>2</sup>
 
  * 0 <= r<sup>2</sup> <= 1
 
-     - r<sup>2</sup> = 1 : regression line passes through all data points
+* r<sup>2</sup> = 1 : perfet fit  
+Regression line passes through all data points
 
 ---
 
 ## Evaluating Linear Regression Model: Coefficient of Determination
 
  * In our model  
- 
-    **r<sup>2</sup> = 0.9067141 = 90.67 %** That is a pretty good fit !
+    **r<sup>2</sup> = 0.9067141 = 90.67 %**   
+    That is a pretty good fit !
 
  * Represents the percent of the data that is the closest to the line of best fit
 
@@ -555,7 +528,7 @@ https://en.wikipedia.org/wiki/Coefficient_of_determination
 
 ## Preparing Data for Linear Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Preparing-Data-for-Linear-Regression-0.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 1.41, "height" : 5.14, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Preparing-Data-for-Linear-Regression-0.png" style="max-width:70%"/><!-- {"left" : 1.02, "top" : 1.41, "height" : 5.14, "width" : 8.21} -->
 
 
 
@@ -568,19 +541,16 @@ Notes:
 
 ## Lab: Linear Regressions
 
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" />
 
  *  **Overview**:
-
     - Practice Linear Regressions
 
  *  **Approximate Time**:
-
     - 30 mins
 
  *  **Instructions**:
-
      - LIR-1 : Bill and Tips data
-
      - Follow  appropriate Python / R / Spark instructions
 
 
@@ -637,27 +607,29 @@ Notes:
 
 ---
 
-## Multitple Linear Regression Code ( R )
+##  Linear Regression Code ( R )
 
 
-```text
-house.sales = read.csv("house-sales.csv")
-# 27,000 entries
+```
+> house.sales = read.csv("house-sales.csv")
+27,000 entries
 
-# run mlr
-house.lm = lm(SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving + SqFtLot,  
+## run mlr
+> house.lm = lm(SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving + SqFtLot,  
               data = house.prices, na.action = na.omit)
 
-summary(house.lm)
+> summary(house.lm)
 
-Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot, data = house.prices, na.action = na.omit)
+Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot, 
+    
+data = house.prices, na.action = na.omit)
 
 Residuals:
      Min       1Q   Median       3Q      Max
  -1955089  -114575   -13670    81734  9081935
 
 Coefficients:
-                  Estimate   Std. Error t value             Pr(>|t|)
+                 Estimate   Std. Error t value             Pr(>|t|)
 (Intercept)   106303.30612   6254.77558  16.996 < 0.0000000000000002 ***
 Bedrooms      -65211.73613   2151.67471 -30.307 < 0.0000000000000002 ***
 Bathrooms      16274.19139   2970.77108   5.478         0.0000000434 ***
@@ -683,14 +655,15 @@ Notes:
 ## Interpreting Results
 
 
-```text
-summary(house.lm)
+```
+> summary(house.lm)
 
-Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot, data = house.prices, na.action = na.omit)
+Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot, 
+          data = house.prices, na.action = na.omit)
 
 Residuals:
-     Min       1Q   Median       3Q      Max
- -1955089  -114575   -13670    81734  9081935
+    Min       1Q   Median       3Q      Max
+-1955089  -114575   -13670    81734  9081935
 
 Coefficients:
                   Estimate   Std. Error t value             Pr(>|t|)
@@ -701,8 +674,6 @@ SqFtTotLiving    277.84805      2.66890 104.106 < 0.0000000000000002 ***
 SqFtLot           -0.07457      0.05472  -1.363                0.173    
 
 ---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-...
 ```
 <!-- {"left" : 0, "top" : 1.19, "height" : 2.55, "width" : 10.25} -->
 
@@ -720,17 +691,18 @@ Notes:
 ## Interpreting Results
 
 
-```text
-summary(house.lm)
+```
+> summary(house.lm)
 
-Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot, data = house.prices, na.action = na.omit)
+Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot, 
+         data = house.prices, na.action = na.omit)
 
 Residuals:
-     Min       1Q   Median       3Q      Max
- -1955089  -114575   -13670    81734  9081935
+    Min       1Q   Median       3Q      Max
+-1955089  -114575   -13670    81734  9081935
 
 Coefficients:
-                  Estimate   Std. Error t value             Pr(>|t|)
+                 Estimate   Std. Error t value             Pr(>|t|)
 (Intercept)   106303.30612   6254.77558  16.996 < 0.0000000000000002 ***
 Bedrooms      -65211.73613   2151.67471 -30.307 < 0.0000000000000002 ***
 Bathrooms      16274.19139   2970.77108   5.478         0.0000000434 ***
@@ -739,7 +711,6 @@ SqFtLot           -0.07457      0.05472  -1.363                0.173
 
 ---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-...
 ```
 <!-- {"left" : 0, "top" : 1.19, "height" : 2.55, "width" : 10.25} -->
 
@@ -793,13 +764,14 @@ Notes:
 
 ---
 
-## Interpreting Results - R2
+## Interpreting Results - R<sup>2</sup>
 
 
-```text
-summary(house.lm)
+```
+> summary(house.lm)
 
-Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot, data = house.prices, na.action = na.omit)
+Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot, 
+          data = house.prices, na.action = na.omit)
 
 Residuals:
      Min       1Q   Median       3Q      Max
@@ -815,9 +787,7 @@ SqFtLot           -0.07457      0.05472  -1.363                0.173
 
 ---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-...
-Multiple R-squared:  0.4835, ...
-...
+Multiple R-squared:  0.4835  <=== r2
 ```
 
 
@@ -882,16 +852,21 @@ Notes:
 
 ## Adding More Variables
 
-```bash
-house.lm = lm(SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving + SqFtLot,   data = house.prices, na.action = na.omit)
+```R
+house.lm = lm(SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving + SqFtLot,   
+              data = house.prices, na.action = na.omit)
 ```
 
  * Our current formula included only a few attributes : Bedrooms + Bathrooms + SqFtTotLiving + SqFtLot
 
  * Can we add more attributes?
 
-```text
-house_full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms + BldgGrade + PropertyType + NbrLivingUnits + SqFtFinBasement + YrBuilt + YrRenovated + NewConstruction, data=house, na.action=na.omit)
+```R
+house_full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms
+                + BldgGrade + PropertyType + NbrLivingUnits + SqFtFinBasement 
+                + YrBuilt + YrRenovated + NewConstruction, 
+                
+                data=house, na.action=na.omit)
 ```
 
 Notes:
@@ -1043,22 +1018,20 @@ house.lm.full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms +
 ```
 
 ```R
-step
 
-Call:
 lm(formula = SalePrice ~ SqFtTotLiving + Bathrooms + Bedrooms +     
                          BldgGrade + PropertyType + SqFtFinBasement + 
                          YrBuilt + NewConstruction,
             data = house.prices, na.action = na.omit)
 
 Coefficients:
-              (Intercept)              SqFtTotLiving                  Bathrooms
-                5730856.779                    170.255                  37950.708
+             (Intercept)              SqFtTotLiving                  Bathrooms
+              5730856.779                    170.255                  37950.708
                    Bedrooms                  BldgGrade  PropertyTypeSingle Family
-                 -44124.897                 122498.089                  14862.934
-      PropertyTypeTownhouse            SqFtFinBasement                    YrBuilt
+                -44124.897                 122498.089                  14862.934
+    PropertyTypeTownhouse            SqFtFinBasement                    YrBuilt
                   77562.844                      8.153                  -3286.098
-        NewConstructionTRUE                   7886.546  
+       NewConstructionTRUE                   7886.546  
 ```
 
  *  **stepAIC**  has come up with a new formula
@@ -1079,17 +1052,12 @@ Notes:
 
 
  * Regularization means explicitly restricting a mode
-
      - to avoid overfitting
-
      - And to reduce the complexity of the model
 
  * How to regularize?
-
      - Removing unnecessary coefficients (b<sub>1</sub>, b<sub>2</sub> ..etc)
-
      - Keeping coefficient values from getting too large (**`parameter shrinkage`**)
-
         * Large coefficients amplify certain parameters
 
  * In the equation below, assume b<sub>1</sub>=20 and b<sub>2</sub>=2000Which variable X<sub>1</sub> or X<sub>2</sub> will have a large impact on outcome?
@@ -1182,23 +1150,16 @@ Notes:
 ## Linear Regression: Strengths, Weaknesses, and Parameters
 
  *  **Strengths**
-
      - Relatively simple to understand
-
      - Computationally simple, very fast learners
-
      - Very scalable to large data sets
 
  *  **Weaknesses**
-
      - Will perform poorly if the inputs are not aligned along linear boundary
-
      - Can under-fit data
 
  *  **Parameters**
-
      - Use regularization to minimize overfitting
-
      - Lasso regularization can also do variable selection
 
 Notes:
@@ -1209,21 +1170,18 @@ Notes:
 
 ## Lab: Multiple Linear Regression
 
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" />
 
  *  **Overview**:
-
     - Practice Multiple Linear Regressions
 
  *  **Approximate Time**:
-
     - 30 mins
 
  *  **Instructions**:
 
     - Follow  appropriate Python / R / Spark instructions
-
       - LIR-2: House prices
-
       - BONUS Lab : LIR-3: AIC
 
 
