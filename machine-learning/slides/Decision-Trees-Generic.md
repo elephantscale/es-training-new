@@ -170,7 +170,7 @@ If years >= 4.5 and Hits >= 117.5 Then Salary = 6.74
 <!-- {"left" : 0, "top" : 1.11, "height" : 1.45, "width" : 10.25} -->
 
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Data-Model-0.png" style="width:40%"><!-- {"left" : 3.4, "top" : 2.91, "height" : 3.95, "width" : 3.45} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Data-Model-0.png" style="max-width:35%;"><!-- {"left" : 3.4, "top" : 2.91, "height" : 3.95, "width" : 3.45} -->
 
 
 Notes:
@@ -194,17 +194,12 @@ Notes:
 
  * New data gets filtered through the tree<br/>
  and lands on one rectangle
-
      - That is the prediction
 
  * Example
-
      - Input
-
         * Years > 4.5?
-
         * Hits > 117.5?
-
      - Output : R3
 
 Notes:
@@ -775,57 +770,7 @@ Notes:
 
 ---
 
-## Bias-Variance Tradeoff
-
-
- *  **Variance**  is the amount that the estimate of the target function will change if different training data was used.
-
-     -  **Low Variance** : Suggests small changes to the estimate of the target function with changes to the training dataset.
-
-     -  **High Variance** : Suggests large changes to the estimate of the target function with changes to the training dataset.
-
- *  **Bias**  are the simplifying assumptions made by a model to make the target function easier to learn
-
-     -  **Low Bias** : Suggests less assumptions about the form of the target function
-
-     -  **High-Bias** : Suggests more assumptions about the form of the target function.
-
-Notes:
-
-
-
----
-
-## Bias-Variance Tradeoff
-
-| **Low Bias (good)**                                             | **High Bias (not good)**                                                |
-|-----------------------------------------------------------------|-------------------------------------------------------------------------|
-| Decision Trees, k-Nearest Neighbors and Support Vector Machines | Linear Regression, Linear Discriminant Analysis and Logistic Regression |
-| More able to  adopt to complex data                             | May not be able to adopt to complex data                                |
-
-<br/>
-<br/>
-
-|                            Low Variance(good)                           |                                    High Variance (not good)                                   |
-|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-| Modestly influenced by change of data                                   | Strongly influenced by change of data                                                         |
-| Parametric methods usually have low variance                            | nonparametric machine learning algorithms that have a lot of flexibility have a high variance |
-| Linear Regression, Linear Discriminant Analysis and Logistic Regression | Decision Trees, k-Nearest Neighbors and Support Vector Machines.                              |
-
-Notes:
-
-
-
----
-
-## Bias Variance Trade Off
-
-<img src="../../assets/images/machine-Learning/Bias-Variance.png" style="width:70%"><!-- {"left" : 1.58, "top" : 1.32, "height" : 5.34, "width" : 7.09} -->
-
-
-Notes:
-
-
+[ML-concepts.md#Bias Variance Tradeoff](ML-concepts.md#Bias Variance Tradeoff)
 
 ---
 

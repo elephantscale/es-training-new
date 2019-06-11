@@ -51,3 +51,19 @@ Notes:
 Use https://www.epochconverter.com/ to easily convert unix time and human readable time
 
 ---
+## Bottom Up AI Success Stories
+
+
+ * Image recognition
+
+ * Translation
+
+ * Self driving cars
+
+<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%;">
+
+Notes:
+
+
+---
+
