@@ -178,8 +178,8 @@ Notes:
 
 
  * Rule based systems are static
-     - They are programmed in
-     - They don't learn from data
+    - They are programmed in
+    - They don't learn from data
 
  * AI can learn from data
      - It gets better every day with more data it sees
@@ -220,16 +220,13 @@ Notes:
 
 ##  Translation - 'Bottom Up' Approach (Google Translate)
 
+<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="max-width:60%;float:right;">
 
  * Google Translate has been ported to 'Google Brain' on Sept 2016
-
  * System learned from 'data'
-
  * AI based system improved the accuracy many times over
+ * [Link to case study](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
 
- * [Link to case study] (https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
-
-<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="width:35%;">
 
 
 Notes:
@@ -240,25 +237,10 @@ Notes:
 
 ---
 
-## Bottom Up AI Success Stories
 
+## Image Recognition: Cats & Dogs
 
- * Image recognition
-
- * Translation
-
- * Self driving cars
-
-<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%;">
-
-Notes:
-
-
----
-
-## AI Success Story : Image Recognition: Cats & Dogs
-
-<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="width:30%;">
+<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="max-width:35%;">
 
 Notes:
 
@@ -380,6 +362,8 @@ Notes:
 
 ## Hardware – TPU (Tensor Processing Unit)
 
+<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:40%;float:right;">
+
 
  * A [Tensor processing unit (TPU)](https://github.com/tensorflow/tensorflow) is an AI accelerator application-specific integrated circuit (ASIC) developed by Google specifically for neural network machine learning
 
@@ -397,18 +381,6 @@ Notes:
 
 * https://en.wikipedia.org/wiki/Tensor_processing_unit
 * https://github.com/tensorflow/tensorflow
-
-
----
-
-## Google TPU System in Data Center
-
-<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:60%;">
-
-
-Notes:
-
-* Image credit : NY Times : https://www.nytimes.com/2018/02/12/technology/google-artificial-intelligence-chips.html
 
 
 ---
@@ -555,7 +527,7 @@ Notes:
 ## AI / Machine Learning / Deep Learning
 
 
-<img src="../../assets/images/deep-learning/AI-ML-DL-02.png" alt="AI-ML-DL-02.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/AI-ML-DL-02.png" alt="AI-ML-DL-02.png" style="max-width:100%;"/>
 
 Notes:
 
@@ -571,13 +543,9 @@ Notes:
  * Now making a comeback due to Big Data & Big Compute ((cluster computing , GPU and TPU)
 
  * Examples
-
      - Facebook Deep Face
-
      - Google Translate
-
      - Google DeepMind playing GO game
-
      - IBM Deep Blue winning Jeopardy
 
 Notes:
@@ -603,19 +571,18 @@ Notes:
 
 ---
 
-## Machine Learning vs. Deep Learning
+## Machine Learning vs. Deep Learning (1/3)
 
-
-| Features                             	| Machine Learning                                              	| Deep Learning                                                    	|
-|--------------------------------------	|---------------------------------------------------------------	|------------------------------------------------------------------	|
-| Data size (see next slide for graph) 	| Performs reasonably well on small / medium data               	| Need large amount of data for reasonable performance             	|
-| Scaling                              	| Doesn't scale with large amount of data                       	| Scales well with large amount of data                            	|
-| Compute power                        	| Doesn't need a lot of compute (works well on single machines) 	| Needs a lot of compute power (usually runs on clusters)          	|
-| CPU/GPU                              	| Mostly CPU bound                                              	| Can utilize GPU for certain computes (massive matrix operations) 	|
-| Feature Engineering                  	| Features needs to specified manually (by experts)             	| DL can learn high level features from data automatically         	|
-| Execution Time                       	| Training usually takes seconds, minutes, hours                	| Training takes lot longer (days)                                 	|
-| Interpretability                     	| Easy to interpret                                             	| Hard to understand the final result                              	|
-
+| Features                             | Machine Learning                                              | Deep Learning                                                    |
+|--------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------|
+| Data size (see next slide for graph) | Performs reasonably well on small / medium data               | Need large amount of data for reasonable performance             |
+| Data Type (see next slides)          | Works well with structured data                               | Can handle structured data & unstructured data                   |
+| Scaling                              | Doesn't scale with large amount of data                       | Scales well with large amount of data                            |
+| Compute power                        | Doesn't need a lot of compute (works well on single machines) | Needs a lot of compute power (usually runs on clusters)          |
+| CPU/GPU                              | Mostly CPU bound                                              | Can utilize GPU for certain computes (massive matrix operations) |
+| Feature Engineering                  | Features needs to specified manually (by experts)             | DL can learn high level features from data automatically         |
+| Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
+| Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 Notes:
 
 * https://www.analyticsvidhya.com/blog/2017/04/comparison-between-deep-learning-machine-learning/
@@ -665,7 +632,120 @@ Notes:
 
 ---
 
-## AI Vocabulary : Training vs. Inference
+## Machine Learning vs. Deep Learning (2/3)
+
+| Features                             | Machine Learning                                              | Deep Learning                                                    |
+|--------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------|
+| Data size (see next slide for graph) | Performs reasonably well on small / medium data               | Need large amount of data for reasonable performance             |
+| Data Type (see next slides)          | Works well with structured data                               | Can handle structured data & unstructured data                   |
+| Scaling                              | Doesn't scale with large amount of data                       | Scales well with large amount of data                            |
+| Compute power                        | Doesn't need a lot of compute (works well on single machines) | Needs a lot of compute power (usually runs on clusters)          |
+| CPU/GPU                              | Mostly CPU bound                                              | Can utilize GPU for certain computes (massive matrix operations) |
+| Feature Engineering                  | Features needs to specified manually (by experts)             | DL can learn high level features from data automatically         |
+| Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
+| Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
+
+---
+
+## Structured Data vs. Unstructured Data
+
+| Structured Data                                          | Unstructured Data                             |
+|----------------------------------------------------------|-----------------------------------------------|
+| Data has well defined structure.                         | Structure is not well defined or non existing |
+| Data in a database tables are well defined.  10 columns, first column is integer, second column is timestamp ..etc | videos, images                                             |
+
+<img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="XXX image not found" style="max-width:60%;"/>
+---
+
+## Structured Data Examples
+
+- Pretty much any data stored in a schema database
+
+| Bedrooms | Bathrooms | Size | Sale Price (in thousands) |
+|--------------------|---------------------|----------------|------------------------------------------------------|
+| 3                  | 1                   | 1500           | 230                                                  |
+| 3                  | 2                   | 1800           | 320                                                  |
+| 5                  | 3                   | 2400           | 600                                                  |
+| 4                  | 2                   | 2000           | 500                                                  |
+| 4                  | 3.5                 | 2200           | 550                                                  |
+
+- Text data (CSV, JSON) can have structure too
+
+JSON data 
+
+```json 
+{   "name" : "Joe",
+    "email" : "joe@gmail.com" }
+```
+
+CSV data (Comma Seperated Values)
+```
+joe,joe@gmail.com 
+jane,jane@gmail.com
+```
+
+---
+
+## Unstructured Data Examples
+
+
+- Text
+    - Documents : email, word documents 
+    - Survey results (customer feedback)
+    - customer support ticket notes 
+
+- Binary data 
+    - Audio (phone call recordings)
+    - Images
+    - Video (YouTube videos)
+    
+<img src="../../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../../assets/images/generic/3rd-party/video-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../../assets/images/generic/3rd-party/audio-headphones-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+
+
+---
+
+## Semi-Structured Data 
+
+- This is 'between' structured and and unstructured
+
+- Data has some structure, but it may not be well defined
+
+- Example, tweet data
+
+```json 
+{   "user_id" : "user123", 
+    "timestamp" : "2018-09-20 12:00:05 EST",
+    "device" : "iPhone X",
+    "location" : "34.893, 120.979",
+    "tweet" : "Enjoying my first Pumpkin Spice Latte at Starbucks in Seattle downtown  #PSL, @Starbucks",
+    "image_url" : "https://imgurl.com/1234"
+}
+```
+
+**Question to the class: What data points you can extract from above tweet?      Which is structured / unstructured?**
+
+---
+
+## Machine Learning vs. Deep Learning (3/3)
+
+| Features                             | Machine Learning                                              | Deep Learning                                                    |
+|--------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------|
+| Data size (see next slide for graph) | Performs reasonably well on small / medium data               | Need large amount of data for reasonable performance             |
+| Data Type (see next slides)          | Works well with structured data                               | Can handle structured data & unstructured data                   |
+| Scaling                              | Doesn't scale with large amount of data                       | Scales well with large amount of data                            |
+| Compute power                        | Doesn't need a lot of compute (works well on single machines) | Needs a lot of compute power (usually runs on clusters)          |
+| CPU/GPU                              | Mostly CPU bound                                              | Can utilize GPU for certain computes (massive matrix operations) |
+| Feature Engineering                  | Features needs to specified manually (by experts)             | DL can learn high level features from data automatically         |
+| Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
+| Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
+
+---
+
+## Training vs. Inference
 
 *  **Training**
     - Feeding data to an algorithm to create a model
@@ -676,7 +756,7 @@ Notes:
     - "is this transaction fraud / not-fraud"
     - "What are the recommended movies for this user"
 
-<img src="../../assets/images/deep-learning/AI-Vocabulary.png" alt="AI-Vocabulary.png" style="max-width:100%;width:70%;"/>
+<img src="../../assets/images/deep-learning/AI-Vocabulary.png" alt="AI-Vocabulary.png" style="max-width:70%;"/>
 
 ---
 
@@ -696,13 +776,13 @@ Notes:
 
 ## AI Software Eco System
 
-| 	|  Machine Learning          	|     Deep Learning                            	|
-|------------------	|----------------------------	|-----------------------------	|
-| Java             	| - Weka <br/>- Mahout              	| - DeepLearning4J             	|
-| Python           	| - SciKit <br/>- (Numpy, Pandas)   	| - Tensorflow <br/>- Theano <br/>- Caffe  	|
-| R                	| - Many libraries            	| - Deepnet <br/>- Darch             	|
-| Distributed      	| - H20 <br/>- Spark                	| - H20 <br/>- Spark                 	|
-| Cloud            	| - AWS <br/>- Azure  <br/>- Google Cloud 	| - AWS  <br/>- Azure  <br/>- Google Cloud 	|
+|             | Machine Learning                        | Deep Learning                            |
+|-------------|-----------------------------------------|------------------------------------------|
+| Java        | - Weka <br/>- Mahout                    | - DeepLearning4J                         |
+| Python      | - SciKit <br/>- (Numpy, Pandas)         | - Tensorflow <br/>- Theano <br/>- Caffe  |
+| R           | - Many libraries                        | - Deepnet <br/>- Darch                   |
+| Distributed | - H20 <br/>- Spark                      | - H20 <br/>- Spark                       |
+| Cloud       | - AWS <br/>- Azure  <br/>- Google Cloud | - AWS  <br/>- Azure  <br/>- Google Cloud |
 
 Notes:
 
@@ -730,14 +810,15 @@ Notes:
 
 ## Machine Learning vs. Big Data
 
-| Traditional ML                                 	| ML on Big Data                               	|
-|------------------------------------------------	|----------------------------------------------	|
-| All (or most) data fits into single machine    	| Data is distributed across multiple machines 	|
-| Data almost / always in memory                 	| Memory is scarce                             	|
-| Optimized for heavy iterative computes         	| Optimized for single pass computes           	|
-| Maintains state between stages                 	| stateless                                    	|
-| CPU bound                                      	| IO bound (disk / network).                   	|
-| GPU (Graphical Processing Unit) seldom engaged 	| GPUs are utilized increasingly               	|
+| Traditional ML                                 | ML on Big Data                               |
+|------------------------------------------------|----------------------------------------------|
+| All (or most) data fits into single machine    | Data is distributed across multiple machines |
+| Data almost / always in memory                 | Memory is scarce                             |
+| Optimized for heavy iterative computes         | Optimized for single pass computes           |
+| Maintains state between stages                 | stateless                                    |
+| CPU bound                                      | IO bound (disk / network).                   |
+| GPU (Graphical Processing Unit) seldom engaged | GPUs are utilized increasingly               |          	|
+
 
 Notes:
 
@@ -880,10 +961,11 @@ Notes:
 
 <br clear="all" />
 
-| Algorithms     	| Description                                                            	| Applications                                	|
-|----------------	|------------------------------------------------------------------------	|---------------------------------------------	|
-| Classification 	| Categorize things into groups                                          	| -Spam classification <br/>-Fraud / no fraud      	|
-| Regression     	| Dealing with numbers and calculate the probability something happening 	| -Predict house prices <br/>-Predict stock market 	|
+| Algorithms     | Description                                                            | Applications                                     |
+|----------------|------------------------------------------------------------------------|--------------------------------------------------|
+| Classification | Categorize things into groups                                          | -Spam classification <br/>-Fraud / no fraud      |
+| Regression     | Dealing with numbers and calculate the probability something happening | -Predict house prices <br/>-Predict stock market |
+
 
 Notes:
 
@@ -991,12 +1073,12 @@ Notes:
 
 <br clear="all"/>
 
+| Algorithms               | Description                             | Applications                                                      |
+|--------------------------|-----------------------------------------|-------------------------------------------------------------------|
+| Clustering               | Find naturally present patterns in data | -Identify news stories (sports / business) <br/>-Gnome clustering |
+| Association              | Find similar patterns                   | -people who buy A also buy B                                      |
+| Dimensionality Reduction | Reduces number of features              | -Reducing 1000s of variables into manageable size                 |
 
-| Algorithms               	| Description                             	| Applications                                                 	|
-|--------------------------	|-----------------------------------------	|--------------------------------------------------------------	|
-| Clustering               	| Find naturally present patterns in data 	| -Identify news stories (sports / business) <br/>-Gnome clustering 	|
-| Association              	| Find similar patterns                   	| -people who buy A also buy B                                 	|
-| Dimensionality Reduction 	| Reduces number of features              	| -Reducing 1000s of variables into manageable size            	|
 
 Notes:
 
