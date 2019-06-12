@@ -83,6 +83,9 @@ Notes:
 ## Quiz for Class :
 ## Create a Tree to Classify These Animals
 
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+
+
 
  * Quiz for Class : Create a Tree to Classify These Animals
 
@@ -181,7 +184,7 @@ Notes:
 
 ## Tree Algorithm
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Algorithm-0.png" style="width:50%; position:absolute; "><!-- {"left" : 6.02, "top" : 2.2, "height" : 3.09, "width" : 3.96} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Algorithm-0.png" style="width:50%;float:right;"><!-- TODO {"left" : 6.02, "top" : 2.2, "height" : 3.09, "width" : 3.96} -->
 
 
  * Tree partitions the input space
@@ -213,26 +216,21 @@ Redo pictures and numbers
 
 
  * We divide all possible values for Y into regions (R1, R2 ... Rj)
-
      - Distinct
-
      - Non-overlapping (one data point only assigned to one region)
 
  * Regions R1, R2, ..., RJ are high-dimensional rectangles
-
      - Also called `boxes`
 
  * We want to find a set of boxes that will approximate our data
 
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="float:right;"/><!-- TODO {"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
  * Find the error (prediction vs actual) per each region
-
      - This is RSS (Residual Sum of Squares)
 
  * Try to  **minimize RSS across all regions**
-
      - The formula calculates RSS across all Regions ( 1 to J)
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:25%;position:absolute;top: 750px; right: 130px"/><!-- {"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
 
 
 
@@ -264,26 +262,21 @@ Notes:
 
 ## Example: Guessing Game
 
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="width:45%;float:right;"/><!-- TODO {"left" : 6.61, "top" : 2.56, "height" : 2.38, "width" : 3.05} -->
 
- * Let us say the first person choose <br/>
- a number in the range
-
-     - 1 through 100
+ * Let us say the first person choose a number in the range of 1 through 100
 
  * The second person should ask
-
-     - Is it bigger than 50? - Say, the <br/>
+     - Is it bigger than 50?  
      answer is `no`
 
-     - Next: is it bigger than 25? - Say,<br/>
+     - Next: is it bigger than 25?  
       the answer is `yes`
 
      - Next: is it bigger than 37?
 
- * `Greedy algorithm` for decision<br/>
-  trees works in a similar way
+ * **Greedy algorithm** for decision trees works in a similar way
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="width:45%; position:absolute;top:300px;right:10px"/><!-- {"left" : 6.61, "top" : 2.56, "height" : 2.38, "width" : 3.05} -->
 
 
 Notes:
@@ -319,6 +312,7 @@ Notes:
 
 ## What it means to be greedy?
 
+<img src="../../assets/images/machine-learning/Decision-Trees-What-it-means-to-be-greedy--0.png" style="width:50%;float:right;"/><!-- TODO {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
 
  * Select the `best split` from a<br/>
   set of possible splits
@@ -334,7 +328,6 @@ Notes:
      - Does not consider all steps <br/>
      together
 
-<img src="../../assets/images/machine-learning/Decision-Trees-What-it-means-to-be-greedy--0.png" style="width:50%; position:absolute;top:300px;right:10px"/><!-- {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
 
 
 Notes:
@@ -435,6 +428,7 @@ Notes:
 ## Stopping Criteria 1: 
 ### Min number of elements per node
 
+<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:40%;float:right;"/><!-- TODO {"left" : 6.3, "top" : 4.57, "height" : 2.16, "width" : 3.67} -->
 
  * Most common stopping criteria is Minimum instances per node
 
@@ -451,7 +445,6 @@ Notes:
 
      - Node B2 is split farther into C1 and C2
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:40%; position:absolute;top:500px;right:10px"/><!-- {"left" : 6.3, "top" : 4.57, "height" : 2.16, "width" : 3.67} -->
 
 
 Notes:
@@ -482,11 +475,8 @@ Notes:
  * While they predict training set well, they may overfit !
 
  * So prune the tree
-
      - Reduce overfitting
-
      - Stable predictions, even if they are not most accurate
-
      - Make the tree simpler -> easier to understand
 
 ---
@@ -559,6 +549,7 @@ Notes:
 
 ## Gini Index (G)
 
+<img src="../../assets/images/machine-Learning/Decision-Trees-Gini-Index-1.png" style="width:50%;float:right;"><!-- TODO {"left" : 5.37, "top" : 3.9, "height" : 3.28, "width" : 4.43} -->
 
  * Gini index measures the 'purity' of each node (how mixed data is in one Region)
 
@@ -572,7 +563,7 @@ Notes:
 
  *  **Goal: minimize G score**
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30% ;"><!-- {"left" : 0.73, "top" : 4.84, "height" : 1.4, "width" : 3.83} --><img src="../../assets/images/machine-Learning/Decision-Trees-Gini-Index-G--0.png" style="width:30%; position:absolute;top:500px;right:5px;"><!-- {"left" : 5.37, "top" : 3.9, "height" : 3.28, "width" : 4.43} -->
+<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30% ;"><!-- {"left" : 0.73, "top" : 4.84, "height" : 1.4, "width" : 3.83} -->
 
 
 
@@ -605,23 +596,14 @@ Notes:
 
 
  *  **Strengths**
-
      - All purpose classifier that does well in most scenarios
-
      - Easy to interpret and explain results
-
      - Fast learning and prediction
-
      - Can handle numeric and categorical data
-
      - No need to scale data
-
      - Can handle missing data
-
      - Excluded unimportant features
-
      - Can work with small datasets
-
      - But can also scale to large datasets
 
 Notes:
@@ -634,21 +616,14 @@ Notes:
 
 
  *  **Weaknesses**
-
      - Can overfit
-
      - Small changes in training data causes large changes in tree structure (High variance)
-
      - Trees can get arbitrarily deep
-
      - Often biased towards features with large number of splits
 
  *  **Parameters**
-
      - Max depth : how deep a tree can grow
-
      - Max bins : how many nodes/bins the tree can have
-
      - Min samples per leaf : stop keep dividing
 
 Notes:
@@ -705,6 +680,7 @@ Notes:
 
 ## Lab : Decision Trees
 
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
 
  *  **Overview**
  Create a classification decision tree
@@ -777,13 +753,14 @@ Notes:
 ## Each DT Exhibits High Variance and Overfits
 
 
+<img src="../../assets/images/machine-Learning/Decision-Trees-Each-DT-Exhibits-High-Variance-and-Overfits-0.png" style="width:50%;float:right;"><!-- TODO {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
+
  * A tree may fit some of the data well
 
  * But another tree may fit the other part of the data
 
  * Neither of them will work well in the real world
 
-<img src="../../assets/images/machine-Learning/Decision-Trees-Each-DT-Exhibits-High-Variance-and-Overfits-0.png" style="width:50%"><!-- {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
 
 
 Notes:
@@ -796,10 +773,9 @@ Notes:
  * Decision Trees have low bias, and that is good
 
  * By contrast, Linear Regression has high bias
-
      - It has less capacity to reflect complex data
 
-<img src="../../assets/images/machine-Learning/Decision-Trees-Bias-Variance-Tradeoff-0.png" style="width:50%"><!-- {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
+<img src="../../assets/images/machine-Learning/Decision-Trees-Bias-Variance-Tradeoff-0.png" style="width:60%;"><!-- TODO {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
 
 
 Notes:
@@ -859,6 +835,7 @@ Notes:
 
 ## Bagging (Boosting Aggregation) In Action
 
+<img src="../../assets/images/machine-Learning//Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%;float:right; "><!-- TODO {"left" : 2.95, "top" : 3.12, "height" : 3.72, "width" : 4.36} -->
 
  * We create 3 trees with  **Boosting**
 
@@ -868,7 +845,6 @@ Notes:
 
  * Final result is  **aggregated**  ( **bagging** )
 
-<img src="../../assets/images/machine-Learning//Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%; position:absolute; top:500px; right:5px;"><!-- {"left" : 2.95, "top" : 3.12, "height" : 3.72, "width" : 4.36} -->
 
 
 Notes:
@@ -885,17 +861,13 @@ Notes:
  * More trees will take more time
 
  * Stop creating more trees when accuracy stops increasing
-
      - This can be validated by  **cross-validation**  testing
 
  * Pros:
-
      - It will not over-fit the data.Because data is randomly split
 
  * Cons:
-
      - Even with bagging trees will have lot of structural similarities
-
      - Their predictions will be highly co-related
 
 Notes:
@@ -928,19 +900,16 @@ Notes:
 ## Data & Feature Bagging in Action
 
 
- * We have 3 trees<br/>
-  each operating on
+<img src="../../assets/images/machine-Learning//Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%;float:right; "><!-- TODO {"left" : 4.17, "top" : 2.9, "height" : 4.22, "width" : 5.75} -->
 
-     - Randomly selected<br/>
-      subset of data
+ * We have 3 trees, each operating on
 
-     - And randomly selected <br/>
-     features (A,B,C)
+     - Randomly selected subset of data
 
- * Their predictions are<br/>
-  aggregated for final result
+     - And randomly selected features (A,B,C)
 
-<img src="../../assets/images/machine-Learning//Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%; position:absolute; top:280px; right:10px"><!-- {"left" : 4.17, "top" : 2.9, "height" : 4.22, "width" : 5.75} -->
+ * Their predictions are aggregated for final result
+
 
 
 Notes:
@@ -953,21 +922,14 @@ Notes:
 
 
  * Aggregating regression trees
-
      - Average out results
-
      - Tree1 predicts 10,   Tree2 predicts 15,  Tree3 predicts 12
-
      - Final result = average = (10 + 15 + 12) / 3  = 12.33
 
  * For classification trees
-
      - A **soft voting** approach is used
-
      - Each tree makes a `soft` prediction: provides a probability for each possible output
-
      - The probabilities from all trees are averaged
-
      - The class with highest probability is predicted
 
 ---
@@ -1040,6 +1002,8 @@ Notes:
 
 ## Lab: Random Forest
 
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+
 
  *  **Overview**
 
@@ -1067,27 +1031,3 @@ Notes:
 
 
 
----
-
-# Backup Slides
-
----
-
-## Should I Accept the New Job Offer?
-
-<img src="../../assets/images/machine-Learning//3rd-party/Decision-Trees-Job-Offer.png" style="width:70%"><!-- {"left" : 1.02, "top" : 1.41, "height" : 5.15, "width" : 8.21} -->
-
-
-Notes:
-
-
-
----
-
-## Example of a Decision Tree
-
-<img src="../../assets/images/machine-Learning/Decision-Trees-Example-Decision-Trees.png" style="width:80%"><!-- {"left" : 1.02, "top" : 1.37, "height" : 5.23, "width" : 8.21} -->
-
-
-
-Notes:

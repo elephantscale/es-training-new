@@ -1488,7 +1488,7 @@ Source : https://www.dubber.net/unlocking-unstructured-data-voice-processing-pow
 
  * Deep Learning Algorithms scale better with data
 
-<img src="../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="machine_learning_vs_deep_learning_skitch.png" style="width:60%;"/>
+<img src="../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="machine_learning_vs_deep_learning.png" style="width:60%;"/>
 
 Notes:
 
@@ -1809,7 +1809,7 @@ https://www.analyticsvidhya.com/blog/2017/04/comparison-between-deep-learning-ma
 ## AI Scaling with Data
 
 
-<img src="../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" alt="machine_learning_vs_deep_learning_skitch.png" style="width:60%;"/>
+<img src="../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" style="width:60%;"/>
 
 
 [Video by Andrew Ng](https://www.youtube.com/watch?v=LcfLo7YP8O4)
@@ -2268,7 +2268,7 @@ Notes:
 
  * Deep Learning Algorithms scale better with data
 
-<img src="../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="machine_learning_vs_deep_learning_skitch.png" style="width:50%;"/>
+<img src="../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="machine_learning_vs_deep_learning.png" style="width:50%;"/>
 
 Notes:
 

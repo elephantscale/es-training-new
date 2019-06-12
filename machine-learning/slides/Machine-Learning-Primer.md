@@ -593,7 +593,7 @@ Notes:
 ## Machine Learning vs. Deep Learning
 
 
-<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning_skitch.png" style="width:60%;">
+<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" style="width:60%;">
 
 Notes:
 
@@ -603,7 +603,7 @@ Notes:
 
 ## 1980’s and 1990’s
 
-<img src="../../assets/images/machine-learning/1980-1990-01.png" style="max-width:80%;">
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-01.png" style="max-width:80%;">
 
 
 Notes:
@@ -615,7 +615,7 @@ Source: Jeff Dean
 
 ## 1990+
 
-<img src="../../assets/images/machine-learning/1980-1990-02.png" style="max-width:80%;">
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-02.png" style="max-width:80%;">
 
 Notes:
 
@@ -626,7 +626,7 @@ Source: Jeff Dean
 
 ## Now
 
-<img src="../../assets/images/machine-learning/1980-1990-03.png" style="max-width:80%;">
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-03.png" style="max-width:80%;">
 
 Notes:
 
