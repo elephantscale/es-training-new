@@ -83,7 +83,7 @@ Notes:
 
 ## Plotting Credit Approval Data
 
-<img src="../../assets/images/machine-learning/3rd-party/Regressions-Generic-07.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 1.28, "height" : 5.42, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/credit-approval-1.png" style="max-width:60%"/><!-- {"left" : 1.02, "top" : 1.28, "height" : 5.42, "width" : 8.21} -->
 
 
 
@@ -477,7 +477,7 @@ Notes:
 ## Exercise: College Admission
 
 
-<img src="../../assets/images/machine-learning/Classification-College-Admission-01.png" alt="Classification-College-Admission" style="max-width:50%;float:right;"/><!-- {"left" : 7.13, "top" : 4.64, "height" : 2.59, "width" : 2.82} -->
+<img src="../../assets/images/machine-learning/college-admission-1.png"  style="max-width:50%;float:right;"/><!-- {"left" : 7.13, "top" : 4.64, "height" : 2.59, "width" : 2.82} -->
 
 * Consider college application and admittance data
 
@@ -868,11 +868,11 @@ Notes:
 
 ## Naïve Bayes Implementations
 
-| Implementation  | Use Case                                                          	|
-|---------------- |-------------------------------------------------------------------	|
-| **Gaussian**    | continuous data (e.g. stock price)                                	|
-| **Bernoulli**   | Binary data                                                       	|
-| **Multinomial** | integer count data  (e.g. how often a word appears in a document) 	|
+| Implementation  | Use Case                                                          |
+|-----------------|-------------------------------------------------------------------|
+| **Gaussian**    | continuous data (e.g. stock price)                                |
+| **Bernoulli**   | Binary data                                                       |
+| **Multinomial** | integer count data  (e.g. how often a word appears in a document) |
 
 
 
@@ -882,19 +882,18 @@ Notes:
 
 ## Example 1
 
-| Weather        | Car     	| Class / Decision |
-|:---------:|:---------:	|:------------------:|
-| Sunny   | Working 	| Go-out           |
-| Rainy   | Broken  	| Go-out           |
-| Sunny   | Working 	| Go-out           |
-| Sunny   | Working 	| Go-out           |
-| Sunny   | Working 	| Go-out           |
-| Rainy   | Broken  	| Stay home        |
-| Rainy   | Broken  	| Stay home        |
-| Sunny   | Working 	| Stay home        |
-| Sunny   | Broken  	| Stay home        |
-| Rainy   | Broken  	| Stay home        |
-
+| Weather |   Car   | Class / Decision |
+|:-------:|:-------:|:----------------:|
+|  Sunny  | Working |      Go-out      |
+|  Rainy  |  Broken |      Go-out      |
+|  Sunny  | Working |      Go-out      |
+|  Sunny  | Working |      Go-out      |
+|  Sunny  | Working |      Go-out      |
+|  Rainy  |  Broken |     Stay home    |
+|  Rainy  |  Broken |     Stay home    |
+|  Sunny  | Working |     Stay home    |
+|  Sunny  |  Broken |     Stay home    |
+|  Rainy  |  Broken |     Stay home    |
 <br/>
 
 * **Question for class**:

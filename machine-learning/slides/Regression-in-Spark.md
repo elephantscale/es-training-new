@@ -19,11 +19,10 @@ Notes:
 ---
 
 ## Regression Algorithms In Spark ML
-
-| Algorithms                       	|                                                  	| Class / Package                                             	|
-|----------------------------------	|--------------------------------------------------	|-------------------------------------------------------------	|
-| Linear Regression                	|                                                  	| org.apache.spark.ml.regression. **LinearRegression**            	|
-| Generalized  Linear Models (GLM) 	| -  Logistic  Regression   <br /> -  Poisson Regression 	| org.apache.spark.ml.regression. **GeneralizedLinearRegression** 	|
+| Algorithms                       |                                                        | Class / Package                                                 |
+|----------------------------------|--------------------------------------------------------|-----------------------------------------------------------------|
+| Linear Regression                |                                                        | org.apache.spark.ml.regression. **LinearRegression**            |
+| Generalized  Linear Models (GLM) | -  Logistic  Regression   <br /> -  Poisson Regression | org.apache.spark.ml.regression. **GeneralizedLinearRegression** |
 
 Notes:
 
@@ -33,13 +32,13 @@ Notes:
 
 ## LinearRegression Parameters
 
-| Parameter        	| Function                    	| Description                                                                                                                                                                               	| Default Value 	|
-|------------------	|-----------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------	|
-| maxIter          	| setMaxIter(Int)             	| Max number of iterations                                                                                                                                                                  	| 100           	|
-| regParam         	| setRegParam(Double)         	| Regulation parameter                                                                                                                                                                      	| 0.0           	|
-| elasticNetPa ram 	| setElasticNetParam (Double) 	| ElasticNet mixing parameter.  Range 0 to 1.<br /> - For alpha = 0, the penalty is an L2 penalty<br /> - For alpha = 1, it is an L1 penalty<br /> - For alpha in (0,1), the penalty is a combination of L1 and L2. 	| 0.0  (L2)     	|
-| featuresCol      	| setFeaturesCol ()           	| Which column as input features                                                                                                                                                            	| "features"    	|
-| predictionCol    	| setPredictionCol ()         	| Output prediction column                                                                                                                                                                  	| "prediction"  	|
+| Parameter        | Function                    | Description                                                                                                                                                                                                       | Default Value |
+|------------------|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| maxIter          | setMaxIter(Int)             | Max number of iterations                                                                                                                                                                                          | 100           |
+| regParam         | setRegParam(Double)         | Regulation parameter                                                                                                                                                                                              | 0.0           |
+| elasticNetPa ram | setElasticNetParam (Double) | ElasticNet mixing parameter.  Range 0 to 1.<br /> - For alpha = 0, the penalty is an L2 penalty<br /> - For alpha = 1, it is an L1 penalty<br /> - For alpha in (0,1), the penalty is a combination of L1 and L2. | 0.0  (L2)     |
+| featuresCol      | setFeaturesCol ()           | Which column as input features                                                                                                                                                                                    | "features"    |
+| predictionCol    | setPredictionCol ()         | Output prediction column                                                                                                                                                                                          | "prediction"  |
 
 Notes:
 
@@ -407,15 +406,15 @@ Notes:
 
 ## Problem: House Prices
 
- | Sale Price $ 	| Bedrooms 	| Bathrooms 	| Sqft_Living 	| Sqft_Lot 	|
-|--------------	|----------	|-----------	|-------------	|----------	|
-| 280,000      	| 6        	| 3         	| 2,400       	| 9,373    	|
-| 1,000,000    	| 4        	| 3.75      	| 3,764       	| 20,156   	|
-| 745,000      	| 4        	| 1.75      	| 2.060       	| 26,036   	|
-| 425,000      	| 5        	| 3.75      	| 3,200       	| 8,618    	|
-| 240,000      	| 4        	| 1.75      	| 1,720       	| 8,620    	|
-| 327,000      	| 3        	| 1.5       	| 1,750       	| 34,465   	|
-| 347,000      	| 4        	| 1.75      	| 1,860       	| 14,650   	|
+| Sale Price $ | Bedrooms | Bathrooms | Sqft_Living | Sqft_Lot |
+|--------------|----------|-----------|-------------|----------|
+| 280,000      | 6        | 3         | 2,400       | 9,373    |
+| 1,000,000    | 4        | 3.75      | 3,764       | 20,156   |
+| 745,000      | 4        | 1.75      | 2.060       | 26,036   |
+| 425,000      | 5        | 3.75      | 3,200       | 8,618    |
+| 240,000      | 4        | 1.75      | 1,720       | 8,620    |
+| 327,000      | 3        | 1.5       | 1,750       | 34,465   |
+| 347,000      | 4        | 1.75      | 1,860       | 14,650   |
 
 
   * Multiple factors decide house prices
@@ -688,11 +687,12 @@ Notes:
 
 ## LogisticRegression Parameters
 
-| Parameter 	| Function            	| Description                                                                                                                                                                                                                                                                            	| Default Value 	|
-|-----------	|---------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------	|
-| maxIter   	| setMaxIter(Int)     	| Max number of iterations                                                                                                                                                                                                                                                               	| 100           	|
-| regParam  	| setRegParam(Double) 	| Regulation parameter                                                                                                                                                                                                                                                                   	| 0.0           	|
-| family    	| setFamily(String)   	| -binomial: Binary logistic regression with pivoting <br/>- multinomial: Multinomial logistic (softmax) regression without pivoting  <br/>- auto: Automatically select the family based on the number of classes: If numClasses == 1 OR numClasses == 2, set to binomial. Else, set to multinomial 	| "auto"        	|
+| Parameter | Function            | Description                                                                                                                                                                                                                                                                                       | Default Value |
+|-----------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| maxIter   | setMaxIter(Int)     | Max number of iterations                                                                                                                                                                                                                                                                          | 100           |
+| regParam  | setRegParam(Double) | Regulation parameter                                                                                                                                                                                                                                                                              | 0.0           |
+| family    | setFamily(String)   | -binomial: Binary logistic regression with pivoting <br/>- multinomial: Multinomial logistic (softmax) regression without pivoting  <br/>- auto: Automatically select the family based on the number of classes: If numClasses == 1 OR numClasses == 2, set to binomial. Else, set to multinomial | "auto"        |
+
 
 Notes:
 
@@ -702,12 +702,11 @@ Notes:
 
 ## LogisticRegression Parameters
 
-| Parameter        	| Function                    	| Description                                                                                                                                                                            	| Default Value 	|
-|------------------	|-----------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------	|
-| elasticNetPa ram 	| setElasticNetParam (Double) 	| ElasticNet mixing parameter.  Range 0 to 1.<br/>- For alpha = 0, the penalty is an L2 penalty<br/>- For alpha = 1, it is an L1 penalty<br/>- For alpha in (0,1), the penalty is a combination of L1 and L2. 	| 0.0  (L2)     	|
-| featuresCol      	| setFeaturesCol ()           	| Which column as input features                                                                                                                                                         	| features      	|
-| predictionCol    	| setPredictionCol ()         	| Output prediction column                                                                                                                                                               	| prediction    	|
-
+| Parameter        | Function                    | Description                                                                                                                                                                                                 | Default Value |
+|------------------|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| elasticNetPa ram | setElasticNetParam (Double) | ElasticNet mixing parameter.  Range 0 to 1.<br/>- For alpha = 0, the penalty is an L2 penalty<br/>- For alpha = 1, it is an L1 penalty<br/>- For alpha in (0,1), the penalty is a combination of L1 and L2. | 0.0  (L2)     |
+| featuresCol      | setFeaturesCol ()           | Which column as input features                                                                                                                                                                              | features      |
+| predictionCol    | setPredictionCol ()         | Output prediction column                                                                                                                                                                                    | prediction    |
 
 Notes:
 
@@ -722,21 +721,21 @@ Notes:
 
  * What is the chance someone with score of  **700**  getting a credit card approved?
 
-| Credit Score 	| Approved? 	|
-|--------------	|-----------	|
-| 560          	| No        	|
-| 750          	| Yes       	|
-| 680          	| Yes       	|
-| 650          	| No        	|
-| 450          	| No        	|
-| 800          	| Yes       	|
-| 775          	| Yes       	|
-| 525          	| No        	|
-| 620          	| No        	|
-| 705          	| No        	|
-| 830          	| Yes       	|
-| 610          	| Yes       	|
-| 690          	| No        	|
+ | Credit Score | Approved? |
+ |--------------|-----------|
+ | 560          | No        |
+ | 750          | Yes       |
+ | 680          | Yes       |
+ | 650          | No        |
+ | 450          | No        |
+ | 800          | Yes       |
+ | 775          | Yes       |
+ | 525          | No        |
+ | 620          | No        |
+ | 705          | No        |
+ | 830          | Yes       |
+ | 610          | Yes       |
+ | 690          | No        |
 
 Notes:
 
@@ -747,7 +746,7 @@ Image credit : (CC) : https://www.flickr.com/photos/cafecredit/27321078025
 
 ## Plotting Credit Approval Data
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Logistic-Regression-in-Spark-ML.png" style="width:70%"/>
+<img src="../../assets/images/machine-learning/credit-approval-1.png" style="max-width:70%"/>
 
 
 Notes:
@@ -1067,17 +1066,17 @@ Notes:
 ## Exercise: College Admission
 
 
-| gre 	| gpa  	| rank 	| admitted 	|
-|-----	|------	|------	|----------	|
-| 380 	| 3.6  	| 3    	| No       	|
-| 660 	| 3.67 	| 3    	| Yes      	|
-| 800 	| 4    	| 1    	| Yes      	|
-| 640 	| 3.19 	| 4    	| Yes      	|
-| 520 	| 2.93 	| 4    	| No       	|
-| 760 	| 3.0  	| 2    	| Yes      	|
-| 400 	| 3.08 	| 2    	| No       	|
-| 700 	| 4.0  	| 1    	| Yes      	|
-| 500 	| 3.17 	| 3    	| No       	|
+| gre | gpa  | rank | admitted |
+|-----|------|------|----------|
+| 380 | 3.6  | 3    | No       |
+| 660 | 3.67 | 3    | Yes      |
+| 800 | 4    | 1    | Yes      |
+| 640 | 3.19 | 4    | Yes      |
+| 520 | 2.93 | 4    | No       |
+| 760 | 3.0  | 2    | Yes      |
+| 400 | 3.08 | 2    | No       |
+| 700 | 4.0  | 1    | Yes      |
+| 500 | 3.17 | 3    | No       |
 
 Notes:
 

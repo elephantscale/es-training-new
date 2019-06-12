@@ -683,7 +683,7 @@ Notes:
      - So we need to turn it into a  **'category'**  , so statsmodel treats it properly
 
 
-<img src="../../assets/images/machine-learning/3rd-party/08.png" style="width:55%"/><!-- {"left" : 1.89, "top" : 4.22, "height" : 2.69, "width" : 6.47} -->
+<img src="../../assets/images/machine-learning/college-admission-2.png" style="width:55%"/><!-- {"left" : 1.89, "top" : 4.22, "height" : 2.69, "width" : 6.47} -->
 
 
 

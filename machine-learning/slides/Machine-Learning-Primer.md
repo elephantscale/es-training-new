@@ -508,7 +508,7 @@ Notes:
 
 ## AI Vocabulary : AI / Machine Learning / Deep Learning
 
-<img src="../../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="width:40%;float:right;"/>
 
  *  **Artificial Intelligence (AI):** Broader concept of "making machines smart"
 
@@ -527,7 +527,7 @@ Notes:
 ## AI / Machine Learning / Deep Learning
 
 
-<img src="../../assets/images/deep-learning/AI-ML-DL-02.png" alt="AI-ML-DL-02.png" style="max-width:100%;"/>
+<img src="../../assets/images/machine-learning/AI-ML-DL-2.png" alt="AI-ML-DL-02.png" style="max-width:100%;"/>
 
 Notes:
 
@@ -801,7 +801,7 @@ Notes:
  * Now Big Data tools make it possible to run machine learning algorithms at massive scale–distributed across a cluster
 
 
-<img src="../../assets/images/machine-learning/DL-cluster.png" style="width:70%;">
+<img src="../../assets/images/deep-learning/DL-cluster.png" style="width:70%;">
 
 Notes:
 
@@ -865,7 +865,7 @@ Notes:
 
 ## Tools for Scalable Deep Learning
 
-<img src="../../assets/images/machine-learning/3rd-party/tensorflow-logo.png" style="width:20%;float:right;">
+<img src="../../assets/images/logos/tensorflow-logo.png" style="width:20%;float:right;">
 
  *  **`TensorFlow`**
      - Based on “data flow graphs”
@@ -875,7 +875,7 @@ Notes:
 
 <br  clear="all"/>
 
-<img src="../../assets/images/machine-learning/3rd-party/bigdl-logo.png" style="width:25%;float:right; ">
+<img src="../../assets/images/logos/bigdl-logo.png" style="width:25%;float:right; ">
 
  *  **`Intel BigDL`**  
 
@@ -985,7 +985,7 @@ Image credit (Creative Commons) : Pexels.com
 
  * Predict no new data (unseen)
 
-<img src="../../assets/images/machine-learning/3rd-party/Regression-01.png" style="width:60%;">
+<img src="../../assets/images/machine-learning/3rd-party/stock-market-1.png" style="width:60%;">
 
 Notes:
 
@@ -1304,7 +1304,7 @@ Notes:
 
 ## Elon Musk:  "AI will take over humanity"
 
-<img src="../../assets/images/machine-learning/3rd-party/Elon-musk.png" style="max-width:40%;">
+<img src="../../assets/images/machine-learning/3rd-party/Elon-Musk-tweet-1.png" style="max-width:40%;">
 
 Notes:
 

@@ -451,7 +451,7 @@ Notes:
 ---
 ## Example of Convolutions 
 
-<img src="../../assets/images/deep-learning/3rd-party/Face-Recognition.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;width:35%;" /> 
+<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;width:35%;" /> 
 
 - Each layer builds on previous layer's work 
 

@@ -106,7 +106,7 @@ Notes:
     - Possible bugs!
     - Updating models is slow!
 
-<img src="../../assets/images/machine-learning/Mind-the-Gap.png" style="max-width:50%;"/><!-- {"left" : 1.47, "top" : 0.95, "height" : 3.69, "width" : 7.3} -->
+<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="max-width:50%;"/><!-- {"left" : 1.47, "top" : 0.95, "height" : 3.69, "width" : 7.3} -->
 
 
 Notes:
@@ -127,7 +127,7 @@ Notes:
 * Same model – no need to re-implement
 * Fast deploy!
 
-<img src="../../assets/images/machine-learning/Streamlining-Prototyping.png" style="max-width:40%;"/><!-- {"left" : 2.69, "top" : 1.02, "height" : 3.7, "width" : 4.88} -->
+<img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 2.69, "top" : 1.02, "height" : 3.7, "width" : 4.88} -->
 
 Notes:
 

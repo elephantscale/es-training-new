@@ -35,7 +35,7 @@
 
 ## Gradient Descent Demo
 
-<img src="../../assets/images/machine-learning/gradient-descent-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
+<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
 <img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-3.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
 
 [Animation 1](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-1.gif)

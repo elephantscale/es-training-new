@@ -555,7 +555,7 @@ https://clarifai.com/demo
 
 ## Definition of Machine Learning
 
-<img src="../assets/images/deep-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:15%;float:right;"/>
+<img src="../assets/images/machine-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:15%;float:right;"/>
 
 > "The field of study that gives computers the ability to learn without being explicitly programmed."  
 >   -- Arthur Samuel (1959)
@@ -645,7 +645,7 @@ Notes:
 ## Generic / Narrow AI
 
 ### Artificial Narrow Intelligence  (ANI)
-<img src="../assets/images/deep-learning/3rd-party/Driver_free_car.png" alt="Driver_free_car.png" style="width:25%;float:right;"/>
+<img src="../assets/images/machine-learning/3rd-party/Driver_free_car.png" alt="Driver_free_car.png" style="width:25%;float:right;"/>
 
 - Focused on a specific tasks 
 - Self driving, smart speaker, image recognition
@@ -776,8 +776,8 @@ Notes:
 
  * Self driving cars
 
-<img src="../assets/images/deep-learning/3rd-party/Driver_free_car.png" alt="Driver_free_car.png" style="width:40%;"/>
-<img src="../assets/images/deep-learning/3rd-party/Face_detection.png" alt="Face_detection.png" style="width:40%;"/>
+<img src="../assets/images/machine-learning/3rd-party/Driver_free_car.png" alt="Driver_free_car.png" style="width:40%;"/>
+<img src="../assets/images/machine-learning/3rd-party/Face_detection.png" alt="Face_detection.png" style="width:40%;"/>
 
 Notes:
 
@@ -788,7 +788,7 @@ Notes:
 
 
 
-<img src="../assets/images/deep-learning/3rd-party/cats-and-dogs.png" alt="cats-and-dogs.png" style="width:30%;"/>
+<img src="../assets/images/machine-learning/3rd-party/cats-and-dogs.png" alt="cats-and-dogs.png" style="width:30%;"/>
 
 Notes:
 
@@ -807,7 +807,7 @@ Notes:
  * https://www.kaggle.com/c/dogs-vs-cats
 
 
-<img src="../assets/images/deep-learning/3rd-party/Kaggle-Competition-01.png" alt="Kaggle-Competition-01.png" style="width:50%;"/>
+<img src="../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" alt="Kaggle-Competition-01.png" style="width:50%;"/>
 
 Notes:
 
@@ -876,7 +876,7 @@ https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
      - Running in parallel
 
 
-<img src="../assets/images/deep-learning/3rd-party/cpu-gpu.png" alt="cpu-gpu.png" style="width:40%;"/>
+<img src="../assets/images/machine-learning/3rd-party/cpu-gpu.png" alt="cpu-gpu.png" style="width:40%;"/>
 
 Notes:
 
@@ -1166,7 +1166,7 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 ---
 ## AI Vocabulary : AI / Machine Learning / Deep Learning
 
-<img src="../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="width:40%;float:right;"/>
+<img src="../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="width:40%;float:right;"/>
 
  *  **Artificial Intelligence (AI):** Broader concept of "making machines smart"
 
@@ -1183,7 +1183,7 @@ Notes:
 ## AI / Machine Learning / Deep Learning
 
 
-<img src="../assets/images/deep-learning/AI-ML-DL-02.png" alt="AI-ML-DL-02.png" style="width:50%;"/>
+<img src="../assets/images/machine-learning/AI-ML-DL-2.png" alt="AI-ML-DL-02.png" style="width:50%;"/>
 
 Notes:
 
@@ -1488,7 +1488,7 @@ Source : https://www.dubber.net/unlocking-unstructured-data-voice-processing-pow
 
  * Deep Learning Algorithms scale better with data
 
-<img src="../assets/images/deep-learning/machine_learning_vs_deep_learning_skitch.png" alt="machine_learning_vs_deep_learning_skitch.png" style="width:60%;"/>
+<img src="../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="machine_learning_vs_deep_learning_skitch.png" style="width:60%;"/>
 
 Notes:
 
@@ -1497,7 +1497,7 @@ Notes:
 
 ## 1980's and 1990's
 
-<img src="../assets/images/deep-learning/1980-1990-01.png" alt="1980-1990-01.png" style="width:76%;"/>
+<img src="../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-01.png" alt="1980-1990-01.png" style="width:76%;"/>
 
 
 Notes:
@@ -1509,7 +1509,7 @@ Source: Jeff Dean
 
 ## 1990+
 
-<img src="../assets/images/deep-learning/1980-1990-02.png" alt="1980-1990-02.png" style="width:76%;"/>
+<img src="../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-02.png" alt="1980-1990-02.png" style="width:76%;"/>
 
 
 Notes:
@@ -1521,7 +1521,7 @@ Source: Jeff Dean
 
 ## Now
 
-<img src="../assets/images/deep-learning/1980-1990-03.png" alt="1980-1990-03.png" style="width:76%;"/>
+<img src="../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-03.png" alt="1980-1990-03.png" style="width:76%;"/>
 
 
 Notes:
@@ -1762,7 +1762,7 @@ It may help to think along these lines
 
 ## Machine Learning / Deep Learning
 
-<img src="../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="max-width:90%"/>
+<img src="../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="max-width:90%"/>
 
 
 ---
@@ -1884,7 +1884,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 | Classification | Categorize things into groups                                          | -Spam classification,Fraud / no fraud       |
 | Regression     | Dealing with numbers and calculate the probability something happening | -Predict house prices,-Predict stock market |
 
-<img src="../assets/images/deep-learning/3rd-party/Supervised.png" alt="Supervised.png" style="width:40%;"/>
+<img src="../assets/images/machine-learning/3rd-party/Supervised.png" alt="Supervised.png" style="width:40%;"/>
 
 Notes:
 
@@ -1903,7 +1903,7 @@ Image credit (Creative Commons): Pexels.com
 
  * Predict no new data (unseen)
 
-<img src="../assets/images/deep-learning/3rd-party/Regression-01.png" alt="Regression-01.png" style="width:55%;"/>
+<img src="../assets/images/machine-learning/3rd-party/stock-market-1.png" alt="Regression-01.png" style="width:55%;"/>
 
 
 Notes:
@@ -1940,11 +1940,8 @@ Facebook used 95%/5% `Understanding text from scratch`
  * Classification is a model that predicts data into "buckets"
 
  * Examples:
-
      - Email is  **SPAM**  or  **HAM**  (not-SPAM)
-
      - A cell is  **cancerous**  or  **healthy**
-
      - Hand-written numbers --> any digits 0, 1, 2,..., 9
 
  * Classification algorithm learns from training data
@@ -1952,7 +1949,7 @@ Facebook used 95%/5% `Understanding text from scratch`
  * Then predicts on new/unseen data
 
 
-<img src="../assets/images/deep-learning/Classification-01.png" alt="Classification-01.png" style="width:45%;"/>
+<img src="../assets/images/machine-learning/Classification-01.png" alt="Classification-01.png" style="max-width:60%;"/>
 
 
 
@@ -2023,7 +2020,7 @@ http://obvious-art.com/
 | Association              | Find similar patterns                   | -people who buy A also buy B                                 |
 | Dimensionality Reduction | Reduces number of features              | -Reducing 1000s of variables into manageable size            |
 
-<img src="../assets/images/deep-learning/3rd-party/Un-Supervised.png" alt="Un-Supervised.png" style="width:40%;"/>
+<img src="../assets/images/machine-learning/3rd-party/Un-Supervised.png" alt="Un-Supervised.png" style="width:40%;"/>
 
 Notes:
 
@@ -2035,7 +2032,7 @@ Notes:
 
 ## Clustering Use Cases: Fraud / Anomaly Detection
 
-<img src="../assets/images/deep-learning/Clustering-Use-Cases.png" alt="Clustering-Use-Cases.png" style="width:40%;float:right;"/>
+<img src="../assets/images/machine-learning/Clustering-Use-Cases.png" alt="Clustering-Use-Cases.png" style="width:40%;float:right;"/>
 
  * Anomaly detection
 
@@ -2091,7 +2088,7 @@ Notes:
 
      - To find "more like this"
 
-<img src="../assets/images/deep-learning/Clustering-01.png" alt="Clustering-01.png" style="width:50%;"/>
+<img src="../assets/images/machine-learning/Clustering-01.png" alt="Clustering-01.png" style="width:50%;"/>
 
 
 Notes:
@@ -2239,7 +2236,7 @@ https://www.youtube.com/watch?v=V1eYniJ0Rnk
 ## Reinforcement Learning Demo: Open AI Bots Playing Dota
 
 
-<img src="../assets/images/deep-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" alt="Open-AI-Bots-Playing-Dota.png" style="width:60%;"/>
+<img src="../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" alt="Open-AI-Bots-Playing-Dota.png" style="width:60%;"/>
 
  [Link](https://www.youtube.com/watch?v=eHipy_j29Xw)
 
@@ -2257,7 +2254,7 @@ https://www.youtube.com/watch?v=eHipy_j29Xw
 ## Machine Learning / Deep Learning
 
 
-<img src="../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="max-width:100%;"/>
+<img src="../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="max-width:100%;"/>
 
 Notes:
 
@@ -2271,7 +2268,7 @@ Notes:
 
  * Deep Learning Algorithms scale better with data
 
-<img src="../assets/images/deep-learning/machine_learning_vs_deep_learning_skitch.png" alt="machine_learning_vs_deep_learning_skitch.png" style="width:50%;"/>
+<img src="../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="machine_learning_vs_deep_learning_skitch.png" style="width:50%;"/>
 
 Notes:
 
@@ -2463,7 +2460,7 @@ Notes:
 
 ## Deep Neural Network - Face Recognition
 
-<img src="../assets/images/deep-learning/3rd-party/Face-Recognition.png" alt="Face-Recognition.png" style="width:30%;"/>
+<img src="../assets/images/machine-learning/3rd-party/Face-Recognition.png" alt="Face-Recognition.png" style="width:30%;"/>
 
 
 Notes:
@@ -2667,7 +2664,7 @@ Notes:
 
 ## AI Workflow
 
-<img src="../assets/images/deep-learning/AI-Workflow-01.png" alt="AI-Workflow-01.png" style="width:60%;"/>
+<img src="../assets/images/AI/AI-Workflow-01.png" alt="AI-Workflow-01.png" style="width:60%;"/>
 
 
 Notes:
@@ -2738,7 +2735,7 @@ Notes:
 
 ## 2 - Collecting Data
 
-<img src="../assets/images/deep-learning/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/>
+<img src="../assets/images/AI/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/>
 
  * Data Sources can be
 
@@ -2778,7 +2775,7 @@ Notes:
 
 ## 3 - Data Preparation / Cleaning
 
-<img src="../assets/images/deep-learning/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/>
+<img src="../assets/images/AI/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/>
 
  * Problems with raw data sets
 
@@ -2849,7 +2846,7 @@ Notes:
 
 ## 4 - Model Building
 
-<img src="../assets/images/deep-learning/AI-Workflow-03.png" alt="AI-Workflow-03.png" style="width:40%;float:right;"/>
+<img src="../assets/images/AI/AI-Workflow-03.png" alt="AI-Workflow-03.png" style="width:40%;float:right;"/>
 
  * Don't do this until you have a good understanding of data.(See previous section.)
 
@@ -2891,7 +2888,7 @@ Notes:
 
      - Cloud vendors are providing solution
 
-<img src="../assets/images/deep-learning/Mind-the-Gap.png" alt="Mind-the-Gap.png" style="width:50%;"/>
+<img src="../assets/images/machine-learning/deployment-gap-1a.png" style="max-width:50%;"/>
 
 
 Notes:
@@ -2907,7 +2904,7 @@ Notes:
 
  * Fast deploy!
 
-<img src="../assets/images/deep-learning/Streamlining-Prototyping.png" alt="Streamlining-Prototyping.png" style="width:40%;"/>
+<img src="../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/>
 
 
 Notes:
@@ -2917,7 +2914,7 @@ https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize
 ---
 
 ## 5 - Model Validation
- <img src="../assets/images/deep-learning/AI-Workflow-04.png" alt="AI-Workflow-04.png" style="width:40%;float:right;"/>
+ <img src="../assets/images/AI/AI-Workflow-04.png" alt="AI-Workflow-04.png" style="width:40%;float:right;"/>
 
  * Models need to be `verified`  / `validated`
 
@@ -2946,7 +2943,7 @@ Notes:
 
 ## 6 - Improving the Model
 
-<img src="../assets/images/deep-learning/AI-Workflow-05.png" alt="AI-Workflow-05.png" style="width:40%;float:right;"/>
+<img src="../assets/images/AI/AI-Workflow-05.png" alt="AI-Workflow-05.png" style="width:40%;float:right;"/>
 
  * Sometimes we don't get desired accuracy from the model
 
@@ -2971,7 +2968,7 @@ Notes:
 
 ## 7 - Deploy Model
 
-<img src="../assets/images/deep-learning/AI-Workflow-06.png" alt="AI-Workflow-06" style="width:40%;float:right;"/>
+<img src="../assets/images/AI/AI-Workflow-06.png" alt="AI-Workflow-06" style="width:40%;float:right;"/>
 
  * We are happy with the model's performance
 
@@ -2998,7 +2995,7 @@ Notes:
 
      - Best practices?
      
-<img src="../assets/images/deep-learning/AI-Workflow-01.png" alt="AI-Workflow-06" style="width:40%;"/>
+<img src="../assets/images/AI/AI-Workflow-01.png" alt="AI-Workflow-06" style="width:40%;"/>
 
 Notes:
 
@@ -3010,7 +3007,7 @@ Notes:
 ## Reinforcement / Neural Net Demo: Alpha GO
 
 
-<img src="../assets/images/deep-learning/3rd-party/Neural-Net-Demo-Alpha-GO.png" alt="Neural-Net-Demo-Alpha-GO.png" style="width:60%;"/>
+<img src="../assets/images/machine-learning/3rd-party/Neural-Net-Demo-Alpha-GO.png" alt="Neural-Net-Demo-Alpha-GO.png" style="width:60%;"/>
 
 [Link](https://www.youtube.com/watch?v=9xlSy9F5WtE)
 
@@ -3171,7 +3168,7 @@ Browser-based notebook interface with support for code, text, mathematical expre
 <img src="../assets/images/logos/dl4j-logo.png" alt="XXX image missing" style="background:white;" width="20%"/>
 <img src="../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"  width="20%"/>
 <img src="../assets/images/logos/Caffe2-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
-<img src="../assets/images/logos/tf-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
+<img src="../assets/images/logos/tensorflow-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
 
 ---
 
@@ -3190,7 +3187,7 @@ Browser-based notebook interface with support for code, text, mathematical expre
 <img src="../assets/images/logos/dl4j-logo.png" alt="XXX image missing" style="background:white;" width="20%"/>
 <img src="../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"  width="20%"/>
 <img src="../assets/images/logos/Caffe2-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
-<img src="../assets/images/logos/tf-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
+<img src="../assets/images/logos/tensorflow-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
 
 ---
    
@@ -3206,7 +3203,7 @@ Browser-based notebook interface with support for code, text, mathematical expre
 
  - Supports both CPU and GPU runtimes
 
- <img src="../assets/images/logos/tf-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%" />
+ <img src="../assets/images/logos/tensorflow-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%" />
 
 
 
@@ -3266,7 +3263,7 @@ Notes:
      - Runs on bare metal, containers and VMs
      - Commercially supported
 
-<img src="../assets/images/deep-learning/3rd-party/h2o-ai.png" alt="h2o-ai.png" style="width:10%;"/>  &nbsp;  &nbsp;
+<img src="../assets/images/logos/h2o-ai.png" alt="h2o-ai.png" style="width:10%;"/>  &nbsp;  &nbsp;
 <img src="../assets/images/deep-learning/3rd-party/skymind.png" alt="skymind.png" style="width:20%;"/>
 
 
@@ -3756,7 +3753,7 @@ Notes:
 
 ## Elon Musk: "AI will take over humanity"
 
-<img src="../assets/images/deep-learning/3rd-party/Elon-musk.png" alt="Elon-musk.png" style="width:40%;"/>
+<img src="../assets/images/machine-learning/3rd-party/Elon-Musk-tweet-1.png" alt="Elon-musk.png" style="width:40%;"/>
 
 Notes:
 

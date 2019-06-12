@@ -447,8 +447,8 @@ Notes:
 
      -  **RMSE**  - Root Mean Square Error
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Linear-Regression-Models-0.png" style="width:45%"/>&nbsp;&nbsp;&nbsp;<!-- {"left" : 3.38, "top" : 3.14, "height" : 1.22, "width" : 3.48} -->
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-Linear-Regression-Models-1.png" style="width:45%"/><!-- {"left" : 2.85, "top" : 5.25, "height" : 0.99, "width" : 4.54} -->
+<img src="../../assets/images/machine-learning/equation-RMSE-1.png" style="width:45%"/>&nbsp;&nbsp;&nbsp;<!-- {"left" : 3.38, "top" : 3.14, "height" : 1.22, "width" : 3.48} -->
+<img src="../../assets/images/machine-learning/equation-RSS-1.png" style="width:45%"/><!-- {"left" : 2.85, "top" : 5.25, "height" : 0.99, "width" : 4.54} -->
 
 
 
@@ -593,7 +593,7 @@ Notes:
 
 ## Multiple Linear Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Multiple-Linear-Regression-0.png" style="width:90%"/><!-- {"left" : 2.01, "top" : 1.15, "height" : 0.43, "width" : 6.24} -->
+<img src="../../assets/images/machine-learning/equation-multiple-linear-regression-1.png" style="width:90%"/><!-- {"left" : 2.01, "top" : 1.15, "height" : 0.43, "width" : 6.24} -->
 
 
 
@@ -731,14 +731,14 @@ Notes:
 
     Square root of the average squared error in predicted values
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-The-Model-0.png" style="width:40%"/>
+<img src="../../assets/images/machine-learning/equation-RMSE-1.png" style="width:40%"/>
 
 
  *  **Residual Standard Error (RSE):**
 
     n - observations, p - predictors
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Evaluating-The-Model-1.png" style="width:40%"/>
+<img src="../../assets/images/machine-learning/equation-RSE-1.png" style="width:40%"/>
 
 
 Notes:
@@ -877,7 +877,7 @@ Notes:
 
 ## Deciding Important Variables
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Deciding-Important-Variables-0.png" style="width:50%"/><!-- {"left" : 1.92, "top" : 1.07, "height" : 0.44, "width" : 6.42} -->
+<img src="../../assets/images/machine-learning/equation-multiple-linear-regression-1.png" style="width:50%"/><!-- {"left" : 1.92, "top" : 1.07, "height" : 0.44, "width" : 6.42} -->
 
 
 

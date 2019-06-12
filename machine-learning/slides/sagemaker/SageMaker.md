@@ -90,6 +90,8 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
 
 ## Step 1: Data Wrangling
 
+<img src="../../../assets/images/AI/AI-Workflow-02.png" style="width:40%;float:right;"/>
+
   * Data Scientists often spend  a<br/>
  lot of time in 'data wrangling'
 
@@ -102,13 +104,14 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
   (few Kilo byts to Mega bytes)<br/>
    to huge datasets (TB, PB).
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Data-Wrangling1.png" style="width:40%; position:absolute;"/>
-
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Data-Wrangling2.png" style="width:20%; position:absolute;"/>
+<img src="../../../assets/images/logos/aws-s3-logo-1.png" style="width:20%; "/>
 
 ---
 
 ## Step 2: Train the Model
+
+
+<img src="../../../assets/images/AI/AI-Workflow-05.png" style="width:50%;float:right; "/>
 
   * First choose an algorithm
      - Depends on data
@@ -127,7 +130,6 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
      - Can use Jupyter notebook
      - Or built in SageMaker APIs
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Train-the-Model.png" style="width:50%; position:absolute; top:300px; right:10px;"/>
 
 ---
 

@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 
 ## AI / Machine Learning / Deep Learning
 
-<img src="../../assets/images/deep-learning/AI-ML-DL.png" alt="XXX image missing" style="background:white;float:right;" width="30%" /> <!-- {"left" : 3.07, "top" : 3.24, "height" : 4.11, "width" : 4.11} -->
+<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="XXX image missing" style="background:white;float:right;" width="30%" /> <!-- {"left" : 3.07, "top" : 3.24, "height" : 4.11, "width" : 4.11} -->
 
  *  **Artificial Intelligence (AI):** Broader concept of machines being able to carry out 'smart' tasks
 
@@ -102,8 +102,8 @@ Notes:
 - Face recognition
      - Facebook images: System learns from images manually tagged and then automatically detects faces in uploaded photos
 
-<img src="../../assets/images/deep-learning/3rd-party/Driver_free_car.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> <!-- {"left" : 0.55, "top" : 4.17, "height" : 2.97, "width" : 4.46} -->
-<img src="../../assets/images/deep-learning/3rd-party/Face_detection.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> <!-- {"left" : 5.26, "top" : 4.17, "height" : 2.97, "width" : 4.44} -->
+<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> <!-- {"left" : 0.55, "top" : 4.17, "height" : 2.97, "width" : 4.46} -->
+<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> <!-- {"left" : 5.26, "top" : 4.17, "height" : 2.97, "width" : 4.44} -->
 
 
 Notes:
@@ -292,7 +292,7 @@ Notes:
 - Each GPU core is capable of executing small set instructions, but there are 1000s of core per GPU
 Running in parallel
 
-<img src="../../assets/images/deep-learning/3rd-party/cpu-gpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="50%" />
+<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="50%" />
 
 Notes:
 
@@ -306,7 +306,7 @@ Notes:
 - [Intel Math Kernel Library](https://software.intel.com/en-us/mkl) : highly optimized, threaded, and vectorized math functions that maximize performance on each processor family
 
 
-<img src="../../assets/images/deep-learning/3rd-party/intel-cpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%" />
+<img src="../../assets/images/machine-learning/3rd-party/intel-cpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%" />
 
 Notes:
 - https://software.intel.com/en-us/mkl
@@ -335,7 +335,7 @@ Notes:
 ## Google Cloud TPU
 
 
-<img src="../../assets/images/deep-learning/3rd-party/google-cloud-tpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" />
+<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" />
 
 ---
 
@@ -487,7 +487,7 @@ https://www.youtube.com/watch?v=UsDhVx6cOrw
 
 - DL algorithms scale better with data
 
-<img src="../../assets/images/deep-learning/machine_learning_vs_deep_learning_skitch.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="50%"/>
+<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="50%"/>
 
 ---
 
@@ -548,7 +548,7 @@ https://www.youtube.com/watch?v=LcfLo7YP8O4
 <img src="../../assets/images/logos/dl4j-logo.png" alt="XXX image missing" style="background:white;" width="20%"/>
 <img src="../../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"  width="20%"/>
 <img src="../../assets/images/logos/Caffe2-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
-<img src="../../assets/images/logos/tf-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
+<img src="../../assets/images/logos/tensorflow-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
 
 ---
 
@@ -614,7 +614,7 @@ Notes:
 
  - Supports both CPU and GPU runtimes
 
- <img src="../../assets/images/logos/tf-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%" />
+ <img src="../../assets/images/logos/tensorflow-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%" />
 
 
 

@@ -88,7 +88,7 @@ Image credit: coursera
 
 ---
 ## Informal Definition of Machine Learning
-<img src="../../assets/images/deep-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:15%;float:right;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:15%;float:right;"/>
 
  "**The field of study that gives computers the ability to learn without being explicitly programmed.**"  
  -- Arthur Samuel
@@ -183,7 +183,7 @@ Primer is pronounced `primmer`
 
 ## AI / Machine Learning / Deep Learning
 
-<img src="../../assets/images/deep-learning/AI-ML-DL.png" alt="AI-ML-DL.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="width:40%;float:right;"/>
 
  *  **Artificial Intelligence (AI):** Broader concept of "making machines smart"
 
@@ -200,7 +200,7 @@ Notes:
 ## AI / Machine Learning / Deep Learning
 
 
-<img src="../../assets/images/deep-learning/AI-ML-DL-02.png" alt="AI-ML-DL-02.png" style="max-width:100%;"/>
+<img src="../../assets/images/machine-learning/AI-ML-DL-2.png" alt="AI-ML-DL-02.png" style="max-width:100%;"/>
 
 Notes:
 
@@ -259,8 +259,8 @@ Notes:
 
  * Self driving cars
 
-<img src="../../assets/images/deep-learning/3rd-party/Driver_free_car.png" alt="Driver_free_car.png" style="width:40%;"/>
-<img src="../../assets/images/deep-learning/3rd-party/Face_detection.png" alt="Face_detection.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" alt="Driver_free_car.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" alt="Face_detection.png" style="width:40%;"/>
 Notes:
 
 Image credit : Wikimedia: CCZero license 
@@ -272,7 +272,7 @@ Image credit : Wikimedia: CCZero license
 
 
 
-<img src="../../assets/images/deep-learning/3rd-party/cats-and-dogs.png" alt="cats-and-dogs.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" alt="cats-and-dogs.png" style="width:30%;"/>
 
 Notes:
 
@@ -293,7 +293,7 @@ All images are used with  'creative common zero-CCZero' permissions  from Pexels
  * https://www.kaggle.com/c/dogs-vs-cats
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Kaggle-Competition-01.png" alt="Kaggle-Competition-01.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" alt="Kaggle-Competition-01.png" style="width:50%;"/>
 
 Notes:
 
@@ -358,7 +358,7 @@ https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
      - Running in parallel
 
 
-<img src="../../assets/images/deep-learning/3rd-party/cpu-gpu.png" alt="cpu-gpu.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" alt="cpu-gpu.png" style="width:40%;"/>
 
 Notes:
 
@@ -434,7 +434,7 @@ https://github.com/tensorflow/tensorflow
 
 ## Google TPU System in Data Center
 
-<img src="../../assets/images/deep-learning/3rd-party/google-cloud-tpu.png" alt="google-cloud-tpu.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" alt="google-cloud-tpu.png" style="width:76%;"/>
 
 Notes:
 

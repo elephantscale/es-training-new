@@ -114,13 +114,15 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
 
   * Data stored in S3 - can support upto TBs, PBs of data
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Data-Wrangling1.png" style="width:40%; position:absolute;"/>
+<img src="../../../assets/images/AI/AI-Workflow-02.png" style="width:40%;"/>
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Data-Wrangling2.png" style="width:20%; position:absolute;"/>
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Data-Wrangling2.png" style="width:20%;"/>
 
 ---
 
 ## Step 2: Training the Model
+
+<img src="../../assets/images//AI/AI-Workflow-05.png" style="width:50%;float:right;"/>
 
   * Choose an algorithm
      - Depends on data and what needs to be predicted
@@ -132,7 +134,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
   * Evaluate the Model
      - SageMaker API or custom
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Train-the-Model.png" style="width:50%; position:absolute;"/>
+
 
 ---
 
@@ -176,6 +178,9 @@ TODO
 
 ## Step 3: Deploying a Model
 
+
+<img src="../../assets/images/AI/AI-Workflow-06.png" style="width:50%;float:right;"/>
+
   * Once the evaluation goes well, we can deploy the model to production
 
   * Continuous cycle:
@@ -185,7 +190,6 @@ TODO
 
   * SageMaker makes this process easy
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Deploy-the-Model.png" style="width:50%; position:absolute;"/>
 
 ---
 
