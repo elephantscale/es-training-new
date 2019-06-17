@@ -700,7 +700,7 @@ Notes:
 
 ## Spark ML Workflow
 
-<img src="../../assets/images/machine-learning/spark-ml-workflow.png" style="max-width:80%;"/><!-- {"left" : 1.05, "top" : 1.07, "height" : 5.83, "width" : 8.14} -->
+<img src="../../assets/images/machine-learning/spark-ml-workflow.png" style="max-width:100%;"/><!-- {"left" : 1.05, "top" : 1.07, "height" : 5.83, "width" : 8.14} -->
 
 
 

@@ -549,7 +549,7 @@ Notes:
 
 ## Gini Index (G)
 
-<img src="../../assets/images/machine-Learning/Decision-Trees-Gini-Index-1.png" style="width:50%;float:right;"><!-- TODO {"left" : 5.37, "top" : 3.9, "height" : 3.28, "width" : 4.43} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Gini-Index-1.png" style="width:50%;float:right;"><!-- TODO {"left" : 5.37, "top" : 3.9, "height" : 3.28, "width" : 4.43} -->
 
  * Gini index measures the 'purity' of each node (how mixed data is in one Region)
 
@@ -563,7 +563,7 @@ Notes:
 
  *  **Goal: minimize G score**
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30% ;"><!-- {"left" : 0.73, "top" : 4.84, "height" : 1.4, "width" : 3.83} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30% ;"><!-- {"left" : 0.73, "top" : 4.84, "height" : 1.4, "width" : 3.83} -->
 
 
 
@@ -584,7 +584,7 @@ Notes:
 
  * Calculating Gini index as follows
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-Example-0.png" style="width:30%"><!-- {"left" : 3.22, "top" : 3.28, "height" : 0.94, "width" : 3.81} --><img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Gini-Index-Example-1.png" style="width:80%"><!-- {"left" : 1.44, "top" : 4.55, "height" : 2.15, "width" : 8.14} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-Example-0.png" style="width:30%"><!-- {"left" : 3.22, "top" : 3.28, "height" : 0.94, "width" : 3.81} --><img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-Example-1.png" style="width:80%"><!-- {"left" : 1.44, "top" : 4.55, "height" : 2.15, "width" : 8.14} -->
 
 Notes:
 
@@ -646,7 +646,7 @@ Notes:
 
      - 113,937 loans with 81 variables
 
- <img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-About-the-Prosper-Dataset-0.png" style="width:30%; float:right"/><!-- {"left" : 7.32, "top" : 1.12, "height" : 0.63, "width" : 2.68} -->
+ <img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-About-the-Prosper-Dataset-0.png" style="width:30%; float:right"/><!-- {"left" : 7.32, "top" : 1.12, "height" : 0.63, "width" : 2.68} -->
 
 
 Notes:
@@ -691,7 +691,7 @@ Notes:
 
      -  **DT-1: college-admission**
 
-     -  **DT-2 : prosper-loans** <img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Lab-Decision-Trees-0.png" style="width:30%;float:right"><!-- {"left" : 3.46, "top" : 3.05, "height" : 1.88, "width" : 3.33} -->
+     -  **DT-2 : prosper-loans** <img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Lab-Decision-Trees-0.png" style="width:30%;float:right"><!-- {"left" : 3.46, "top" : 3.05, "height" : 1.88, "width" : 3.33} -->
 
 
 Notes:
@@ -707,7 +707,7 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Alogorithm-Summary.png" style="width:80%"><!-- {"left" : 0.87, "top" : 1.17, "height" : 5.63, "width" : 8.52} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Alogorithm-Summary.png" style="width:80%"><!-- {"left" : 0.87, "top" : 1.17, "height" : 5.63, "width" : 8.52} -->
 
 
 Notes:
@@ -753,7 +753,7 @@ Notes:
 ## Each DT Exhibits High Variance and Overfits
 
 
-<img src="../../assets/images/machine-Learning/Decision-Trees-Each-DT-Exhibits-High-Variance-and-Overfits-0.png" style="width:50%;float:right;"><!-- TODO {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Each-DT-Exhibits-High-Variance-and-Overfits-0.png" style="width:50%;float:right;"><!-- TODO {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
 
  * A tree may fit some of the data well
 
@@ -775,7 +775,7 @@ Notes:
  * By contrast, Linear Regression has high bias
      - It has less capacity to reflect complex data
 
-<img src="../../assets/images/machine-Learning/Decision-Trees-Bias-Variance-Tradeoff-0.png" style="width:60%;"><!-- TODO {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Bias-Variance-Tradeoff-0.png" style="width:60%;"><!-- TODO {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
 
 
 Notes:
@@ -824,7 +824,7 @@ Notes:
 
      - And aggregate their predictions
 
-<img src="../../assets/images/machine-Learning/3rd-party/Decision-Trees-Random-Forests-Idea-0.png" style="width:60%"><!-- {"left" : 1.02, "top" : 5.22, "height" : 1.67, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Random-Forests-Idea-0.png" style="width:60%"><!-- {"left" : 1.02, "top" : 5.22, "height" : 1.67, "width" : 8.21} -->
 
 
 Notes:
@@ -835,7 +835,7 @@ Notes:
 
 ## Bagging (Boosting Aggregation) In Action
 
-<img src="../../assets/images/machine-Learning//Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%;float:right; "><!-- TODO {"left" : 2.95, "top" : 3.12, "height" : 3.72, "width" : 4.36} -->
+<img src="../../assets/images/machine-learning//Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%;float:right; "><!-- TODO {"left" : 2.95, "top" : 3.12, "height" : 3.72, "width" : 4.36} -->
 
  * We create 3 trees with  **Boosting**
 
@@ -900,7 +900,7 @@ Notes:
 ## Data & Feature Bagging in Action
 
 
-<img src="../../assets/images/machine-Learning//Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%;float:right; "><!-- TODO {"left" : 4.17, "top" : 2.9, "height" : 4.22, "width" : 5.75} -->
+<img src="../../assets/images/machine-learning//Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%;float:right; "><!-- TODO {"left" : 4.17, "top" : 2.9, "height" : 4.22, "width" : 5.75} -->
 
  * We have 3 trees, each operating on
 
@@ -954,7 +954,7 @@ Notes:
 
  * Final Radom Forest overfits less than each individual tree
 
-<img src="../../assets/images/machine-Learning//3rd-party/Decision-Trees-Random-Forest-Example-0.png" style="width:70%"><!-- {"left" : 1.02, "top" : 2.6, "height" : 4.21, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning//3rd-party/Decision-Trees-Random-Forest-Example-0.png" style="width:70%"><!-- {"left" : 1.02, "top" : 2.6, "height" : 4.21, "width" : 8.21} -->
 
 
 Notes:
@@ -1028,6 +1028,3 @@ Notes:
 
 
 Notes:
-
-
-

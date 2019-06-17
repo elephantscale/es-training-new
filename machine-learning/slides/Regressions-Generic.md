@@ -1195,7 +1195,7 @@ Notes:
 ## Linear Regression: Further Reading
 
 
-* [`Very nice  video series by Brandon Foltz`](https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi)
+* [Very nice  video series by Brandon Foltz](https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi)
 
 Notes:
 
