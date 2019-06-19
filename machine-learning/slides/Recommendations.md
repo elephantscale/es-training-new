@@ -106,7 +106,7 @@ Notes:
 
 ## Recommendation is Two Step Process
 
-<img src="../../assets/images/machine-learning/00-001.png" style="width:90%"/><!-- {"left" : 0.68, "top" : 1.65, "height" : 4.21, "width" : 8.88} -->
+<img src="../../assets/images/machine-learning/recommendations-process.png" style="max-width:90%"/><!-- {"left" : 0.68, "top" : 1.65, "height" : 4.21, "width" : 8.88} -->
 
 
 Notes:
