@@ -405,7 +405,7 @@ Notes:
 
 ## Kafka Streaming : Filter
 
-<img src="../../assets/images/kafka/Filter.png" alt="Filter.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Filter-01.png" style="width:70%;"/>
 
 
  * Applying a filter to a stream produces another stream
@@ -775,5 +775,3 @@ Notes:
 Notes: 
 
  
-
-

@@ -9,7 +9,7 @@
 ## A Little Computing History
 
 
-<img src="../../assets/images/kafka/3rd-party/Computing-History-5.png" alt="Computing-History-5.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/kafka/3rd-party/cpu-1.png"  style="width:20%;float:right;"/>
 
  * 1990s we had single core processors
      - Programs ran in single ‘thread’ mode
@@ -17,7 +17,7 @@
      
 <br clear="all"/>
 
-<img src="../../assets/images/kafka/3rd-party/Computing-History-6.png" alt="Computing-History-6.png" style="width:20%;float:right; "/>
+<img src="../../assets/images/kafka/3rd-party/cpu-2.png" style="width:20%;float:right; "/>
 
  * 2000s: multi core processors
      - Multiple threads

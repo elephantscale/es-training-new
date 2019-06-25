@@ -201,7 +201,7 @@ Notes:
 ## Producer Acknowledgements
 
 
-<img src="../../assets/images/kafka/Producer-Acknowledgements.png" alt="Producer-Acknowledgements.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/Producer-Acknowledgements-01.png" style="width:65%;"/>
 
 | ACK                       	| Description                                                                                                                    	| Speed  	| Data safety                                             	|
 |---------------------------	|--------------------------------------------------------------------------------------------------------------------------------	|--------	|---------------------------------------------------------	|
@@ -797,7 +797,7 @@ Notes:
 
  * Each consumer is assigned a range – on a per-topic basis
 
-<img src="../../assets/images/kafka/cdn-images-1.png" alt="cdn-images-1.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/partition-range-1.png" style="width:65%;"/>
 
 Notes: 
 
@@ -810,7 +810,7 @@ https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignme
 ## Range Partitions – 2 Topics
 
 
-<img src="../../assets/images/kafka/cdn-images-2.png" alt="cdn-images-2.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/partition-range-2.png" style="width:65%;"/>
 
 Notes: 
 
@@ -842,7 +842,7 @@ Notes:
 
  *  Set partition.assignment.strategy to RoundRobinAssignor
 
-<img src="../../assets/images/kafka/cdn-images-3.png" alt="cdn-images-3.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/partition-range-3.png"  style="width:70%;"/>
 
 Notes: 
 
@@ -854,7 +854,7 @@ Notes:
 ## Round-robin Assignment – 2 Topics
 
 
-<img src="../../assets/images/kafka/cdn-images-4.png" alt="cdn-images-4.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/partition-range-4.png" style="width:65%;"/>
 
 Notes: 
 

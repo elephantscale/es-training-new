@@ -514,7 +514,7 @@ Notes:
 
  *  **Consumers**  consume messages
 
-<img src="../../assets/images/kafka/Kafka-Architecture.png" alt="Kafka-Architecture.png" style="max-width:80%;"/>
+<img src="../../assets/images/kafka/Kafka-Architecture-01.png"  style="max-width:80%;"/>
 
 Notes: 
 
@@ -1260,7 +1260,7 @@ Notes:
 
  * One consumer reads all partitions
 
-<img src="../../assets/images/kafka/Consumer-Behavior.png" alt="Consumer-Behavior.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Consumer-Behavior-01.png" style="width:70%;"/>
 
 Notes: 
 

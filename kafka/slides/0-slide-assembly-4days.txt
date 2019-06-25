@@ -15,7 +15,7 @@ About-Kafka-Class.md
 
 # Kafka 
 Kafka-Intro.md
-../../../es-training/zookeeper/slides/ZK-1__Intro.md
+#../../../es-training/zookeeper/slides/ZK-1__Intro.md
 zookeeper-primer.md
 Kafka-API.md
 Kafka-Streams.md
