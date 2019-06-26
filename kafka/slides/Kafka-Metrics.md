@@ -112,7 +112,7 @@ Notes:
 
 Notes: 
 
-Image used under fair use , source : grafana.org
+Image used under fair use , source: grafana.org
 
 
 ---
@@ -181,9 +181,9 @@ Notes:
 
  * Widely used by many projects (Hadoop / Spark / Cassandra)
 
- * Supported backends : Graphite, Ganglia
+ * Supported backends: Graphite, Ganglia
 
- * Supported UIs : built-in UI,   JMX
+ * Supported UIs: built-in UI,   JMX
 
  * http://metrics.dropwizard.io/ 
 
@@ -257,7 +257,7 @@ Notes:
 
 ---
 
-## Metrics Library : Meters
+## Metrics Library: Meters
 
 
  * A meter measures the rate of events over time.(e.g., “requests per second”). 
@@ -310,7 +310,7 @@ Notes:
 
 ---
 
-## Metrics Library : Histograms
+## Metrics Library: Histograms
 
 
  * A  **histogram**  measures the statistical distribution of values in a stream of data. 
@@ -335,7 +335,7 @@ Notes:
 
 ---
 
-## Metrics Library : Timers
+## Metrics Library: Timers
 
 
  * A  **timer**  measures the duration of piece of code
@@ -372,7 +372,7 @@ Notes:
 
  *  **Instructions**: 
 
-     - Please follow : lab 8
+     - Please follow: lab 8
 
  *  **To Instructor**: 
 

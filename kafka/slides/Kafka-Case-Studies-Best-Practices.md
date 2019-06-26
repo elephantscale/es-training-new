@@ -94,7 +94,7 @@ Notes:
 
 ---
 
-## Best Practices : Disks 
+## Best Practices: Disks 
 
 
  * Disks tend to be first bottleneck to be hit
@@ -155,7 +155,7 @@ https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
 
  * Always use MULTIPLE, LOCAL spindles
 
- * Recommended file systems : EXT4  or XFS
+ * Recommended file systems: EXT4  or XFS
 
  * XFS probably better
 
@@ -168,7 +168,7 @@ Notes:
 
 ---
 
-## Best Practices : Zookeeper
+## Best Practices: Zookeeper
 
 
  *  **Do not co-locate**  Zookeeper and Kafka brokers on same nodes
@@ -215,7 +215,7 @@ Notes:
 
  * Ensure number of partitions >= number of brokers
 
-     -  **Quiz** : Why?
+     -  **Quiz**: Why?
 
  * Partitions can always be increased later but not decreased
 
@@ -440,7 +440,7 @@ Notes:
 
 ---
 
-## Best Practices : Recommendations from Netflix
+## Best Practices: Recommendations from Netflix
 
 
  * Prefer multiple modest sized Kafka clusters rather than one giant Kafka cluster.   This will simplify operations

@@ -161,7 +161,7 @@ Notes:
 
 Notes: 
 
-Image permissions: CC0 public domain : https://pixabay.com/en/router-switch-wireless-computer-154290/
+Image permissions: CC0 public domain: https://pixabay.com/en/router-switch-wireless-computer-154290/
 
 
 ---
@@ -472,7 +472,7 @@ Notes:
 
 ---
 
-## Lab : Installing Kafka
+## Lab: Installing Kafka
 
 <img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/>
 
@@ -951,9 +951,9 @@ Notes:
 ## Using Producer / Consumer Utils
 
 
- *  **bin/**  **kafka**  **-console-producer** : utility for producing messages
+ *  **bin/**  **kafka**  **-console-producer**: utility for producing messages
 
- *  **bin/**  **kafka**  **-console-consumer** : utility for reading messages
+ *  **bin/**  **kafka**  **-console-consumer**: utility for reading messages
 
 <img src="../../assets/images/kafka/Using-Producer-01.png" alt="Using-Producer-03.png" style="width:70%;"/>
 
@@ -1379,7 +1379,7 @@ Notes:
 
 
 
-Image source : https://kafka.apache.org/documentation/
+Image source: https://kafka.apache.org/documentation/
 
 
 ---

@@ -171,7 +171,7 @@ Notes:
 
 
 ```text
-# config file : kafka/config/server.properties
+# config file: kafka/config/server.properties
 
 # The id of the broker. This must be set to a unique integer for each broker.
 broker.id=0

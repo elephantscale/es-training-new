@@ -220,7 +220,7 @@ Notes:
   "fields": [
      {"name": ”user_id", "type": "int"},
      {"name": ”video_id", "type": "string"},
-     {"name": ”time_of_view", "type": { "type" : "string", "logicalType" : "timestamp
+     {"name": ”time_of_view", "type": { "type": "string", "logicalType": "timestamp
 millis" }},
      {"name": ”time_spent", "type": ”int"}
 
@@ -270,7 +270,7 @@ Notes:
      {"name": ”user_id", "type": "int"},
      {"name": ”video_id", "type": "string"},
      {"name": ”time_of_rating", "type": 
-     { "type" : "string", "logicalType" : "timestamp-millis" }},
+     { "type": "string", "logicalType": "timestamp-millis" }},
      {"name": ”rating", "type": ”int"}
   ]
 }
@@ -317,7 +317,7 @@ Notes:
      {"name": ”user_id", "type": "int"},
      {"name": ”video_id", "type": "string"},
      {"name": ”time_of_rating", "type":
-     { "type" : "string", "logicalType" : "timestamp-millis" }},
+     { "type": "string", "logicalType": "timestamp-millis" }},
      {"name": ”comment", "type": ”string"
   ]
 }

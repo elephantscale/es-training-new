@@ -253,8 +253,8 @@ try {
     while (true) {
       ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)); // ** 3 **
       System.out.println("Got " + records.count() + " messages");
-      for (ConsumerRecord<Integer, String> record : records) {
-      System.out.println("Received message : " + record);
+      for (ConsumerRecord<Integer, String> record: records) {
+      System.out.println("Received message: " + record);
      }
    }
 }
@@ -312,8 +312,8 @@ try {
    while (true) {
     ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000); // ** 3 **
     System.out.println("Got " + records.count() + " messages");
-    for (ConsumerRecord<Integer, String> record : records) { 
-     System.out.println("Received message : " + record);
+    for (ConsumerRecord<Integer, String> record: records) { 
+     System.out.println("Received message: " + record);
     }
   }
 }
@@ -373,19 +373,19 @@ Notes:
 
  *  **org.apache.kafka.clients.consumer.ConsumerRecord**  **<K,V>** 
 
- *  **K  key()** : key for record (type K), can be null
+ *  **K  key()**: key for record (type K), can be null
 
- *  **V  value()** : record value (type V – String / Integer ..etc)
+ *  **V  value()**: record value (type V – String / Integer ..etc)
 
- *  **String topic()** : Topic where this record came from
+ *  **String topic()**: Topic where this record came from
 
- *  **int**  **partition()** : partition number
+ *  **int**  **partition()**: partition number
 
- *  **long offset()** : long offset in
+ *  **long offset()**: long offset in
 
 ```java
 ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)); 
-  for (ConsumerRecord<String, String> record : records) {
+  for (ConsumerRecord<String, String> record: records) {
      System.out.printf("topic = %s, partition = %d, offset = %d,
             key= %s, value = %s\n",
             record.topic(), record.partition(), record.offset(),
@@ -414,11 +414,11 @@ KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
 ```
  
 
- *  **max.partition.fetch.bytes**   (default : 1048576  (1M))
+ *  **max.partition.fetch.bytes**   (default: 1048576  (1M))
 
      - Max message size to fetch.  Also see  **message.max.bytes**  broker config
 
- *  **session.timeout.ms**  (default : 30000  (30 secs))
+ *  **session.timeout.ms**  (default: 30000  (30 secs))
 
      - If no heartbeats are not received by this window, consumer will be deemed dead and a partition rebalance will be triggered
 
@@ -491,7 +491,7 @@ Notes:
 
 ---
 
-## Lab : Kafka Producer / Consumer
+## Lab: Kafka Producer / Consumer
 
 <img src="../../assets/images/icons/individual-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
@@ -630,7 +630,7 @@ producer.send(record, new KafkaCallback());  // <-
 
 * Kafka will callback with meta or exception  (only one of them will be non-Null)
 
- * Note : This code is for demonstration purposes only.  Do not create new callback objects in production.
+ * Note: This code is for demonstration purposes only.  Do not create new callback objects in production.
 
      - You could be creating millions of objects
 
@@ -902,7 +902,7 @@ Notes:
 
  * When a Consumer calls Poll() it gets  **new records** from the offset 
 
- * Offsets are stored in Kafka (in a special topic :  **__**  **consumer_offsets**  **)** 
+ * Offsets are stored in Kafka (in a special topic:  **__**  **consumer_offsets**  **)** 
 
      - Used to be stored in ZK, but now stored in Kafka for performance reasons
 
@@ -1166,7 +1166,7 @@ KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
 
 while (true) {
   ConsumerRecords<Integer, String> records = consumer.poll(100);
-  for (ConsumerRecord<Integer, String> record : records)
+  for (ConsumerRecord<Integer, String> record: records)
   {
      System.out.println(String.format(
 	"topic = %s, partition = %s, offset = %d“, 
@@ -1369,10 +1369,10 @@ int count = 0;
 
 while (true) {
    ConsumerRecords<Integer, String> records = consumer.poll(100);
-   for (ConsumerRecord<Integer, String> record : records)
+   for (ConsumerRecord<Integer, String> record: records)
    {
       count++;
-      System.out.println("Received message : " + record);
+      System.out.println("Received message: " + record);
       
       // process message
       // and update offset map
@@ -1401,7 +1401,7 @@ Notes:
 
  * Use cases:
 
-     - Catching up to latest events first  (and then processing the backlog).See demo at : https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up-trick/
+     - Catching up to latest events first  (and then processing the backlog).See demo at: https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up-trick/
 
  * To go to end of partition
 
@@ -1488,7 +1488,7 @@ Notes:
 
 Notes: 
 
-More information at : https://www.confluent.io/product/connectors/
+More information at: https://www.confluent.io/product/connectors/
 
 
 ---
@@ -1511,7 +1511,7 @@ More information at : https://www.confluent.io/product/connectors/
 
 Notes: 
 
-More information at : https://www.confluent.io/product/connectors/
+More information at: https://www.confluent.io/product/connectors/
 
 
 ---
@@ -1535,7 +1535,7 @@ More information at : https://www.confluent.io/product/connectors/
 
 Notes: 
 
-More information at : https://www.confluent.io/product/connectors/
+More information at: https://www.confluent.io/product/connectors/
 
 
 ---
@@ -1845,7 +1845,7 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
  * We are going to be analyzing Clickstream data
 
 ```java
-{ "timestamp" :1451635200055, 
+{ "timestamp":1451635200055, 
 "session":"session_57" , 
 "domain":"twitter.com" ,
 "cost":24, 

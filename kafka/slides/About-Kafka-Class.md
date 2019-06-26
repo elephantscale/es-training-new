@@ -153,7 +153,7 @@ Notes:
 
 Notes: 
 
-Image credit : http://shop.oreilly.com/
+Image credit: http://shop.oreilly.com/
 
 
 ---

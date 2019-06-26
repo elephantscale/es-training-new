@@ -326,7 +326,7 @@ Notes:
 
 
 ```java
-// ** 1 : configure **
+// ** 1: configure **
 Properties config = new Properties();
 config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
        "localhost:9092");
@@ -337,14 +337,14 @@ config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG,
 config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG,
        Serdes.String().getClass().getName());
 
-// ** 2 : define processing **
+// ** 2: define processing **
 final StreamsBuilder builder = new StreamsBuilder();
 final KStream<String, String> clickstream = builder.stream("topic1");// topic
 
 clickstream.print(Printed.toSysOut());
 
 
-// ** 3 : start the stream **
+// ** 3: start the stream **
 final KafkaStreams streams = new KafkaStreams(builder.build(), config);
 streams.cleanUp();
 streams.start();
@@ -377,14 +377,14 @@ Notes:
 
 ---
 
-## Kafka Streaming  : ForEach
+## Kafka Streaming : ForEach
 
 
 ```java
 final StreamBuilder builder = new StreamBuilder();
 final KStream<String, String> clickstream = builder.stream("topic1");
 
-// Foreach : process events one by one
+// Foreach: process events one by one
 clickstream.foreach(new ForeachAction<String, String>() {
 
      public void apply(String key, String value) {
@@ -403,7 +403,7 @@ Notes:
 
 ---
 
-## Kafka Streaming : Filter
+## Kafka Streaming: Filter
 
 <img src="../../assets/images/kafka/Filter-01.png" style="width:70%;"/>
 
@@ -421,7 +421,7 @@ Notes:
 
 ---
 
-## Kafka Streaming  : Filter
+## Kafka Streaming : Filter
 
 
 ```java
@@ -481,11 +481,11 @@ final KStream<String, Integer> actionStream = clickstream.map( {
 
    public KeyValue<String, Integer> apply(String key, String value) {
 
-      logger.debug("map() : got : " + value);
+      logger.debug("map(): got: " + value);
       String new_key = key.toUpperCase();
       int new_value = 1;
       KeyValue<String, Integer> newKV =new KeyValue<>(new_key, new_value);
-      logger.debug("map() : returning : " + newKV);
+      logger.debug("map(): returning: " + newKV);
       return newKV;
   }
 }
