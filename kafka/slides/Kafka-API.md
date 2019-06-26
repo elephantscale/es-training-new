@@ -359,7 +359,7 @@ Notes:
      - Usually involves some processing
      - Saving data to a store
      - Don’t do high latency work between polls; otherwise the consumer could be deemed dead.
-     - Do heavy lifting in a seperate thread
+     - Do heavy lifting in a separate thread
 
 Notes: 
 

@@ -137,7 +137,6 @@ By the end of the class... .
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:20%;"/>
 <img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:20%;"/>
 
-
 Notes: 
 
 
