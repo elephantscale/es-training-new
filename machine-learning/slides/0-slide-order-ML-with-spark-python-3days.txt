@@ -38,6 +38,8 @@ Decision-Trees-Spark.md
 Unsupervised-Generic.md
 Unsupervised-Spark.md
 
+# Recommendations
+Recommendations.md
 
 ## Final Wrapup
 Algorithm-Summary-details.md

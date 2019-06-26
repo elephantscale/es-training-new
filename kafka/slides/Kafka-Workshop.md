@@ -78,6 +78,7 @@ Notes:
 
 ## MyVideos
 
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/>
 
  *  allows users to upload videos
 
@@ -97,7 +98,6 @@ Notes:
 
      - Design a system to handle these requirements
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 
 Notes: 
@@ -111,7 +111,7 @@ Have students draw a design on white board or project
 ## MyVideos Design: Our Solution 
 
 
-<img src="../../assets/images/kafka/Our-Solution-02.png" alt="Our-Solution-02.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Our-Solution-02.png" alt="Our-Solution-02.png" style="max-width:70%;"/>
 
 Notes: 
 
@@ -148,6 +148,8 @@ Notes:
 ## MyVideos: Topics and Messages
 
 
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/>
+
  * Producer 
 
      - Receives all events - views, ratings, comments as they occur
@@ -158,7 +160,6 @@ Notes:
 
  * Design Kafka topics and message formats
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 
 Notes: 
@@ -196,12 +197,12 @@ Notes:
 
 ## MyVideos: Messages Schema
 
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/>
 
  * Create Avro schemas
 
  * Reference: http://avro.apache.org/docs/current/spec.html
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 
@@ -374,6 +375,7 @@ Notes:
 
 ## MyVideos: Stream Processing
 
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/>
 
  * Check ratings and comments for fraud and unacceptable content
 
@@ -389,7 +391,6 @@ Notes:
 
  * Modify your design to handle these requirements
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 
@@ -414,6 +415,7 @@ Notes:
 
 ## MyVideos: Stream Processing
 
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/>
 
  * We want real-time summary statistics such as:
 
@@ -423,7 +425,6 @@ Notes:
 
  * How would you implement this?
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 
@@ -472,6 +473,7 @@ Notes:
 
 ## MyVideos: Bonus: User Devices
 
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/>
 
  * A user has multiple devices (TV, tablet, phone, computer)
 
@@ -489,7 +491,6 @@ Notes:
 
  * Modify your design to handle devices
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 
@@ -526,9 +527,7 @@ Notes:
 ## Next: Log Collection
 
 
- *  *abadonian*  */iStock/Getty Images Plus/Getty Images* 
-
-<img src="../../assets/images/kafka/3rd-party/Kafka-Workshop-Next-Log-Collection-3.jpg" alt="Kafka-Workshop-Next-Log-Collection-3.jpg" style="width:60%;"/>
+<img src="../../assets/images/kafka/3rd-party/logs-1.jpg"  style="width:60%;"/>
 
 Notes: 
 
@@ -541,31 +540,18 @@ Notes:
 
 
  * Collect and analyze logs on massive scale
-
  * Use cases:
-
      - Large data center
-
         * Keep track of logins
-
         * Detect attacks
-
      - Web properties (e-commerce sites or LinkedIn)
-
         * Log user activities
-
         * Analyze user activities (which button users click most…etc.)
-
  * Distributed log collection
-
      - Need to collect from multiple sources (100s or even 1000s)
-
  * Tools
-
      - Flume (part of Hadoop ecosystem)
-
      - Kafka (distributed message queue)
-
      - Log Stash
 
 Notes: 
@@ -577,6 +563,7 @@ Notes:
 
 ## Distributed Log Collection Tools: Flume
 
+<img src="../../assets/images/kafka/Distributed-Log-Collection-Tools-Flume.png" alt="Distributed-Log-Collection-Tools-Flume.png" style="max-width:50%;float:right;"/>
 
  * Part of Hadoop ecosystem
 
@@ -586,7 +573,6 @@ Notes:
 
  * Can handle failures
 
-<img src="../../assets/images/kafka/Distributed-Log-Collection-Tools-Flume.png" alt="Distributed-Log-Collection-Tools-Flume.png" style="width:30%; position:relative; top:600px; right:20px;"/>
 
 Notes: 
 
@@ -597,6 +583,7 @@ Notes:
 
 ## Log Processing: Log format
 
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/>
 
  * Logs contain:
 
@@ -614,7 +601,6 @@ Notes:
 
      - Find log events of a particular severity
 
-<img src="../../assets/images/kafka/3rd-party/clock.png" alt="clock.png" style="width:20%; position:relative; top:800px; right:20px;"/>
 
 Notes: 
 
@@ -643,7 +629,3 @@ Notes:
 
 
 Notes: 
-
-
-
-
