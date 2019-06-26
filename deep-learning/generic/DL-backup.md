@@ -58,8 +58,8 @@ Notes:
 
      -  There may, however, be parts of the run with a zero slope that are NOT the bottom (local minima).  
 
-![](../../assets/images/deep-learning/local_minima.png)  <!-- {"left" : 6.33, "top" : 4.79, "height" : 2.49, "width" : 3.44} -->
 
+<img src="../../assets/images/deep-learning/local_minima.png" style="max-width:20%"/>
 
 Notes:
 

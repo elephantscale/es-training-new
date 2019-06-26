@@ -204,7 +204,7 @@ Notes:
 |:-------------------:|:-------------------------:|:-------------------:|:--------------------------:|:------------------------:|
 | Fraud Detection     | Diagnosis                 | Recommendations     | Identify defects           | Identify security breach |
 | Algorithmic trading | Patient care              | Customer retentions | Fully automated assemblies | Facial recognition       |
-| Credit Approvals    | Treatment recommendations |                     |                            |                          |
+| Credit Approvals    | Treatment recommendations |                     |                            |                          &nbsp;|
 
 
 Notes:
@@ -633,7 +633,7 @@ Notes:
 
      - It gets better every day with more data it sees
 
-<img src="../assets/images/machine-learning/ML-vs-Rule-Based-Systems.png" alt="Rule-Based-Systems.png" style="width:60%;"/>
+<img src="../assets/images/machine-learning/ML-vs-Rule-Based-Systems-1.png" alt="Rule-Based-Systems.png" style="width:60%;"/>
 
 
 
@@ -1595,7 +1595,7 @@ AI starts with data, in this section we are going to look at some best practices
 | Tera byte | TB      | 1000 GB    | - typical laptop hard drive ~ 1 TB <br/> - Now we are entering 'big data' territory                                                                                                                                                |
 | Peta byte | PB      | 1000 TB    | - This is truly big data territory <br/> - Facebook generates 4 PB of data every day <br/> - Uber has 100+ PB data                                                                                                         |
 | Exa Byte  | EB      | 1000 PB    |                                                                                                                                                                                                                                    |
-| Zeta Byte | ZB      | 1000 EB    |                                                                                                                                                                                                                                    |
+| Zeta Byte | ZB      | 1000 EB    | &nbsp;                                                                                                                                                                                                                                   |
 
 ---
 
@@ -2648,7 +2648,6 @@ https://www.youtube.com/watch?v=UsDhVx6cOrw
 <img src="../assets/images/deep-learning/3rd-party/Quick-drew-01.png" alt="Quick-drew-01.png" style="width:60%;"/>
 
 
-Quick-drew-01.png
 
  * https://quickdraw.withgoogle.com/
 

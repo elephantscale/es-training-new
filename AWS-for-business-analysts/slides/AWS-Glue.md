@@ -75,11 +75,11 @@
 
   * Crawler functions can be managed via console:
 
-<img src="../../assets/images/aws/crawlers.png" style="width:76%;"/>
+<img src="../../assets/images/aws/crawlers.png" style="width:40%;float:right;"/>
 
   * Add a Classifier to the Crawler:
 
-<img src="../../assets/images/aws/classifier.png" style="width:76%;"/>
+<img src="../../assets/images/aws/classifier.png" style="width:60%;"/>
 
 ---
 
@@ -93,11 +93,11 @@
 
   * Schedule job execution
 
-<img src="../../assets/images/aws/job-overview.png" style="width:76%;"/>
+<img src="../../assets/images/aws/job-overview.png" style="width:50%;"/>
 
   * Monitor jobs via console
 
-<img src="../../assets/images/aws/jobs.png" style="width:76%;"/>
+<img src="../../assets/images/aws/jobs.png" style="width:50%;"/>
 
 
 ---

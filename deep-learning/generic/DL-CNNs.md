@@ -52,7 +52,7 @@ Notes:
     - 255 : white
     - in between : grey
 
-<img src="../../assets/images/deep-learning/pixel-representation-3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />
+<img src="../../assets/images/deep-learning/pixel-representation-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />
 
 ---
 
@@ -74,7 +74,7 @@ Notes:
 
 - Color images can be represented as 3D array
 
-<img src="../../assets/images/deep-learning/pixel-representation-5.png" alt="XXX image missing" style="background:white;max-width:100%;" width="80%" />
+<img src="../../assets/images/deep-learning/pixel-representation-5.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />
 
 ---
 
@@ -221,7 +221,7 @@ Notes:
 ---
 ## Fully Connected vs Convolutional
 
-<img src="../../assets/images/deep-learning/fully-connected-1a.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 3.01, "top" : 2, "height" : 4.19, "width" : 4.24} -->
+<img src="../../assets/images/deep-learning/fully-connected-1a.png" alt="XXX image missing" style="background:white;width:30%;"/><!-- {"left" : 3.01, "top" : 2, "height" : 4.19, "width" : 4.24} -->
 
 <img src="../../assets/images/deep-learning/Convolutional-1.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 3.52, "top" : 1.38, "height" : 2.47, "width" : 2.55} -->
 <img src="../../assets/images/deep-learning/Convolutional-2.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 3.59, "top" : 4.32, "height" : 2.47, "width" : 2.41} -->
@@ -438,13 +438,11 @@ Notes:
 ## Convolution Example (Contd.)
 
 
-
  * The effect of multiplying with vertical kernel filter is that all pixels except the vertical lines get subdued. Similarly with horizontal kernel filter, it accentuates the horizontal lines. 
 
  * The output image has a feature map, which highlights the areas in the image that are most similar to the filter.
 
-![](../../assets/images/deep-learning/CNN-Convolutional-Layer-Contd--1.png)
-
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="CNN-Convolutional-Layer-Contd--1.png" style="width:40%;" /> 
 
 Notes: 
 
@@ -574,7 +572,7 @@ Notes:
 
 - Called 'zero padding'
 
-<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" />   
+<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:60%;" />   
 
 ---
 
@@ -718,7 +716,7 @@ Notes:
 * Here input is shrunk by factor of 4 --> 1  
 so the resulting image is 25% of original image
 
-<img src="../../assets/images/deep-learning/CNN-Max-Pooling-2.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" /> <!-- {"left" : 1.02, "top" : 2.75, "height" : 3.98, "width" : 8.21} --> 
+<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" /> <!-- {"left" : 1.02, "top" : 2.75, "height" : 3.98, "width" : 8.21} --> 
 
 
 Notes: 
