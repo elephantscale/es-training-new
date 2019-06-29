@@ -6,7 +6,7 @@
 
 ## Lesson Objectives
 
- * Learn to use Kafka Java API
+ * Kafka Admin
 
 
 Notes: 
@@ -27,6 +27,8 @@ Notes:
  * Prepare hardware
 
  * Prepare basic software stack (OS / JDK ..etc)
+ 
+ * Install and configure zookeeper
 
  * Install Kafka on all machines
 
@@ -46,65 +48,79 @@ Notes:
 ## Kafka Hardware Requirements
 
 
- * Bare metal machines for high performance
+* Bare metal machines for high performance
 
-     - Virtual Machines (VM) are not recommended in production setup
+* Virtual Machines (VM) are not recommended in production setup
 
- * Specs
 
-     - CPU: 8 core + (Intel Xeon)
+ |        | CPU      | Memory       | Disk              | Network            |
+ |--------|----------|--------------|-------------------|--------------------|
+ | Modest | 8 cores  | 32 G         | 4 x SATA 7200 RPM | 2 x 1 Gig (bonded) |
+ | High   | 24 cores | 64 G - 128 G | 8 x SATA 7200 RPM | 10 Gig             |
+ 
+---
 
-     - Memory: 64G – 128G  
+## Kafka Hardware - Memory
 
-     - Disk: multiple drives (8 or more x 2TB each), SATA 7200 RPM.
+<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:30%;float:right;"/>
 
-     - Network: 10G preferred, or two 1G Ethernets (bonded)
+- Kafka uses very modest memory by careful heap management (~ 4-8 G per broker)
 
- * Memory Usage
+- The rest of the memory is for page cache
+    - Linux would allocate free memory to page cache
 
-     - Kafka uses very modest memory ( ~4G per broker)
+- Page cache buffers disk writes / reads
+    - This helps with IO throughput  (data seldom hits the disk between write and read)
 
-     - The rest of the memory is for page cache
-
-     - Page cache buffers disk writes / reads
-
-     - Page cache is what helps with IO throughput  (data seldom hits the disk between write and read)
-
-     - Page cache size  = throughput / sec  x  30 seconds
+- Good to have sufficient memory to buffer active reader/writers.  
+    - 30 second buffer is a good place to start 
+    - Quick calculation = Page cache size  = write_throughput x  30 seconds
+    - if write throughput is 10MB sec, page cache is   
+    = 10 MB/s x 30 secs   
+    = 300 MB
 
 Notes: 
 
 
-
-
 ---
 
-## Disks Setup
+## Kafka Hardware - CPUs
 
+- Kafka has modest CPU requirements
+
+- If using encryption, need significantly more CPU power
+
+- More cores --> better 
+    - Typical setup is 12 cores + 
+
+- Cores matter more than raw clock speed (2GHz, 3GHz ..etc )
+    - More cores will give much better scalability/performance than slightly faster CPU
+
+
+|        | CPU      | Memory       | Disk              | Network            |
+|--------|----------|--------------|-------------------|--------------------|
+| Modest | 8 cores  | 32 G         | 4 x SATA 7200 RPM | 2 x 1 Gig (bonded) |
+| High   | 24 cores | 64 G - 128 G | 8 x SATA 7200 RPM | 10 Gig      
+---
+
+## Kafka Hardware - Disks
 
  * More disks increase IO throughput
-
+ * Don't share Kafka disks with OS disk (minimize contention)
  * Disks can be combined by RAID or used as individual volumes
-
  * RAID 
-
      - Better data spread across disks
-
      - battery backup a must!
-
      - Might slow down writes
-
- * Individual volumes
-
+ * Individual volumes (better for most scenarios)
      - Kafka will stripe data across disks
+     - One partition MUST fit on ONE drive
+ * **Avoid network attached storage (NAS)**  
+   They are usually slower, exhibit high latencies, and single point of failure
 
-     - One partition MUST fit on ONE volume
 
-
-<img src="../../assets/images/kafka/Disks-Setup-01.png" alt="Disks-Setup-01.png" style="width:40%; position:relative; top:340px; left:894px;"/>
-
-<img src="../../assets/images/kafka/Disks-Setup-02.png" alt="Disks-Setup-02.png" style="width:40%; position:relative; top:700px; left:894px;"/>
-
+<img src="../../assets/images/kafka/Disks-Setup-01.png" style="width:20%;"/> &nbsp;  &nbsp;
+<img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:20%;"/>
 
 Notes: 
 
@@ -115,26 +131,23 @@ Notes:
 
 ## Zookeeper Hardware
 
+<img src="../../assets/images/logos/zookeeper-logo-2.png" style="width:35%;float:right;"/>
 
- * Run ZK on separate hardware
 
+ * ZK have very modest hardware requirements
+ * Run ZK on separate machines
      - Just run ZK, nothing else
-
- * Similar hardware as brokers is fine
-
+     - **Do not co-locate ZK and Kafka on same machines**  
+       They have different IO access patterns
  * Run ZK in odd numbers 3,5,7... .
-
-     - 3 is  minimum
-
+     - 3 is  minimum 
      - 5 can work with 2 ZK nodes down
-
- * Starting with v0.8 Kafka puts less load on ZK
-
-     - So ZK isn’t the bottle neck
-
  * One ZK ensemble per Kafka cluster per data center
-
      - To reduce latency
+
+| ZK Hardware | CPU     | Memory | Disk        | Network            |
+|-------------|---------|--------|-------------|--------------------|
+|             | 4 cores | 32 G   | 1 -2 drives | 2 x 1 Gig (bonded) |
 
 Notes: 
 
@@ -147,18 +160,18 @@ Notes:
 
 
  * Linux OS 
-
      - Most used for deployment
 
  * Java 8
-
      - Dev kit required for for programming
 
  * Zookeeper
-
-     - Starting with Kafka 0.8 ZK is required
-
      - ZK 3.4.x is stable and well tested with Kafka
+
+<img src="../../assets/images/logos/linux-logo-1.png" style="width:20%;"/>
+<img src="../../assets/images/logos/java-logo-1.png" style="width:20%;"/>
+<img src="../../assets/images/logos/zookeeper-logo-2.png" style="width:20%;"/>
+
 
 Notes: 
 
@@ -171,19 +184,21 @@ Notes:
 
 
 ```text
-# config file: kafka/config/server.properties
+# config file : kafka/config/server.properties
 
 # The id of the broker. This must be set to a unique integer for each broker.
 broker.id=0
 
-# A comma separated list of directories under which to store log files.  Kafka will balance data across multiple volumes
+# A comma separated list of directories under which to store log files.  
+# Kafka will balance data across multiple volumes
 log.dirs=/data1/kafka,/data2/kafka
 
 # port to listen, default 9042
 port=9042
 
 # Zookeeper connection string 
-# This is a comma separated host:port pairs, zookeeper.connect=zk_server1:2181,zk_server2:2181
+# This is a comma separated host:port pairs,
+zookeeper.connect=zk_server1:2181,zk_server2:2181
 
 # Create topics automatically when producer / consumer uses it?  (default true)
 auto.create.topics.enable=true
@@ -200,24 +215,18 @@ Notes:
 ## Topic Configuration
 
 
- * Specified when topic is created by ‘kafka-topics.sh’.Can be altered later.
+ * Specified when topic is created by 'kafka-topics.sh'.Can be altered later.
 
  * Num_partitions: (default 1)
-
      - Partitions will spread across brokers 
-
      - More partitions -> more scalability
-
      - Partition count can be increased later, but  can NOT be decreased!
 
  * Log.retention.ms: (default one week)
-
      - How long to keep a message
 
  * Log.retention.bytes
-
      - Set max size of messages per partition
-
      - If topic has 10 partitions and log retention size is set 1G, overall topic can have 10G total
 
 Notes: 
@@ -238,7 +247,7 @@ Notes:
 
      - So a producer can send a larger message ( > 1 MB) provided it compresses below the 1MB limit
 
-     - Kafka is not designed as large ‘blob store’.. Hence the limit on messages
+     - Kafka is not designed as large 'blob store'.. Hence the limit on messages
 
      - Increasing message size has implications
 
@@ -258,7 +267,7 @@ Notes:
 ---
 
 
-## Securing Kafka – Trusted Network
+## Securing Kafka - Trusted Network
 
 
  * Usually Kafka clusters are hosted in private / trusted networks
@@ -289,16 +298,6 @@ Notes:
 
 ---
 
-## Securing Kafka: Secure Points
-
-<img src="../../assets/images/kafka/Secure-Points.png" alt="Secure-Points.png" style="width:70%;"/>
-
-Notes: 
-
-
-
-
----
 
 ## Securing Kafka
 
@@ -313,6 +312,7 @@ Notes:
 
 ## Securing Kafka
 
+<img src="../../assets/images/kafka/Securing-Kafka.png" alt="Securing-Kafka.png" style="width:50%;float:right;"/>
 
  * Clients connect to Kafka brokers via  **Kerberos / TLS** 
 
@@ -323,6 +323,7 @@ Notes:
  * Data on disk (data at rest) is not encrypted by Kafka ( **transparent encryption** )
 
      - Use file system / OS based encryption schemes
+
 
 Notes: 
 
@@ -345,7 +346,7 @@ listeners=SSL://:9093,SASL_SSL://:9094
 
 security.inter.broker.protocol=SSL
 
-# further config required based on secure protcol (SSL/TLS)
+# further config required based on secure protocol (SSL/TLS)
 # ... Skipped ...
 
 
@@ -371,23 +372,23 @@ super.users=User:bob;User:alice
 
 ```
 
-```text
+```bash
 # adding user as producer
 
-kafka-acls –authorizer-properties
+kafka-acls -authorizer-properties
             zookeeper.connect=localhost:2181
-            –add –allow-principal User:Bob
-            –producer –topic test-topic
+            -add -allow-principal User:Bob
+            -producer -topic test-topic
 
 ```
 
-```text
+```bash
 # adding user as consumer
 
-kafka-acls –authorizer-properties
+kafka-acls -authorizer-properties
             zookeeper.connect=localhost:2181
-            –add –allow-principal User:Bob
-            –consumer –topic test-topic  –group Group1
+            -add -allow-principal User:Bob
+            -consumer -topic test-topic  -group Group1
 
 ```
 
@@ -401,25 +402,25 @@ Notes:
 ## Client Configuration
 
 
-```text
+```java
 Properties props = new Properties();
 
 props.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
-                  “localhost:9093”);
+                  "localhost:9093");
 props.setProperty(ConsumerConfig.GROUP_ID_CONFIG, 
-                  “securing-kafka-group”);
+                  "securing-kafka-group");
 
 // define protocol and specific properties
 props.setProperty(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG,
-                “SSL”);
+                "SSL");
 props.setProperty(SslConfigs.SSL_TRUSTSTORE_LOCATION_CONFIG,
-            “/etc/security/tls/kafka.client.truststore.jks”);
+            "/etc/security/tls/kafka.client.truststore.jks");
 props.setProperty(SslConfigs.SSL_TRUSTSTORE_PASSWORD_CONFIG,
-            “test1234”);
+            "test1234");
 props.setProperty(SslConfigs.SSL_KEYSTORE_PASSWORD_CONFIG,
-            “/etc/security/tls/kafka.client.keystore.jks”);
-props.setProperty(SslConfigs.SSL_KEYSTORE_LOCATION_CONFIG,“test1234”);
-props.setProperty(SslConfigs.SSL_KEY_PASSWORD_CONFIG, “test1234”);
+            "/etc/security/tls/kafka.client.keystore.jks");
+props.setProperty(SslConfigs.SSL_KEYSTORE_LOCATION_CONFIG,"test1234");
+props.setProperty(SslConfigs.SSL_KEY_PASSWORD_CONFIG, "test1234");
 
 new KafkaConsumer(props);
 
@@ -463,27 +464,20 @@ Notes:
 
 ---
 
-## Kafka Capacity Planning: Cluster Size
+## Cluster Size
 
 
  * Producer benchmark:How fast you can send messages from Producer into Kafka cluster
-
      - Depends on compression / batch sizing / ack
 
  * Consumer benchmarkHow fast a message can be processed
-
      - Depends on application logic
-
      - Really need to measure it
 
  * How to calculate optimal number of partitions?
-
      - Let's say Producer throughput to a single partition as P
-
      - Say Consumer throughput from a single partition as C
-
      - Target throughput T
-
      - Required partitions = Max (T/P,  T/C)
 
 Notes: 
@@ -493,26 +487,19 @@ Notes:
 
 ---
 
-## Kafka Capacity Planning: Partitions / Brokers
+## Partitions / Brokers
 
 
  * More partitions -> more time to recover in case of failure
-
      - Let's say we have 1000 partitions in a broker
-
      - When that broker fails, we need to find another 'leader / primary' broker for each partition
-
      - If it takes 10ms to elect a new primary broker for each partition
-
      - Total time to recovery = 10ms x 1000 = 10 secs
-
      - For this 10 seconds, these partitions are NOT available
 
  * Some recommendations:
-
-     - 2000 – 4000 partitions / broker
-
-     - 10k – 50k partitions / cluster
+     - 2000 - 4000 partitions / broker
+     - 10k - 50k partitions / cluster
 
 Notes: 
 
@@ -535,8 +522,3 @@ Notes:
 
 
 Notes: 
-
-
-
-
-
