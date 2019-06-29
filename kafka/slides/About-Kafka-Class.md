@@ -48,7 +48,7 @@ Notes:
      -  Workshop
 
  * Day 4
-     -  Workshop – continued
+     -  Workshop - continued
      -  Best Practices
 
  
@@ -129,13 +129,14 @@ By the end of the class... .
     - Your background (developer, admin, manager, etc.)
     - Technologies you are familiar with
     - Familiarity with Kafka  
-    (scale of 1 – 4 ;  1 – new, 2 - know some concepts,  3 – too a course, 4 -  using it at work)
+    (scale of 1 - 4 ;  1 - new, 2 - know some concepts,  3 - too a course, 4 -  using it at work)
     - Something non-technical about you!  
-    (favorite ice cream flavor / hobby…etc)
+    (favorite ice cream flavor / hobby  etc.)
 
 <img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:20%;"/>   &nbsp;
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:20%;"/>
 <img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:20%;"/>
+
 
 Notes: 
 
@@ -147,19 +148,19 @@ Notes:
 ## Recommended Books
 
 
- * Kafka – The Definitive Guide
+ * Kafka - The Definitive Guide
 
 <img src="../../assets/images/kafka/3rd-party/kafka-book-9781491936160.jpg"  />
 
 Notes: 
 
-Image credit: http://shop.oreilly.com/
+Image credit : http://shop.oreilly.com/
 
 
 ---
 ## Class Logistics
 
-* Instructor’s contact
+* Instructor's contact
 
 * Slides
     - For each session, slides will be emailed out or delivered via virtual classroom

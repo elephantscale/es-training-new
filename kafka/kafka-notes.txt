@@ -1,0 +1,4 @@
+TODO 
+- illustrate how batching works 
+  in user code and kafka library code 
+  
