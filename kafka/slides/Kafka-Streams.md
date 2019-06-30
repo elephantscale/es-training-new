@@ -25,6 +25,10 @@ Notes:
 
 ## Streaming Platforms
 
+* Kafka is a messaging bus 
+
+* The 'processing' portion was done outside Kafka
+
 
 <img src="../../assets/images/kafka/Streaming-Platforms.png" alt="Streaming-Platforms.png" style="width:70%;"/>
 
@@ -35,42 +39,50 @@ Notes:
 
 ---
 
-## Case for Kafka Streams
 
+## Kafka Application Using Java 
 
- * Kafka's strength is  **storing** streaming dataLike a Network Router
+- Pros : easy, simple 
 
- * The 'processing' portion was done outside Kafka
+- Cons : not scalable, not fault tolerant
 
- * Processor can be
-
-     - Java / Python application using Kafka Producer/Consumer APIs
-
-        * Simple
-
-        * Limited capability
-
-     - Distributed systems like  Spark / Flink
-
-        * Excellent capabilities
-
-        * Complex
-
- * 'Kafka Streams' aims to fill the sweet spot between capabilities & complexities
-
-Notes: 
-
-
-
+<img src="../../assets/images/kafka/kafka-java-app.png" style="max-width:80%;"/>
 
 ---
 
-## Kafka Processing Systems
+## Kafka Application Using Spark
 
-<img src="../../assets/images/kafka/Kafka-Processing-Systems.png" alt="Kafka-Processing-Systems.png" style="width:70%;"/>
+- Pros : distributed, fault tolerant, lots of functionality 
+
+- Cons : 
+    - Need to setup and maintain a Spark cluster 
+    - Not so simple
+
+<img src="../../assets/images/kafka/kafka-spark-distributed-processing-1.png" style="max-width:80%;"/>
+
+---
+
+## Kafka Application Using Kafka Streams
+
+<img src="../../assets/images/kafka/kafka-streams-1.png" style="max-width:80%;"/>
+
+---
+
+## Case for Kafka Streams
+
+<img src="../../assets/images/kafka/Kafka-Processing-Systems.png" alt="Kafka-Processing-Systems.png" style="width:50%;float:right;"/>
+
+- Java / Python application using Kafka Producer/Consumer APIs
+    * Simple
+    * Limited capability
+    
+- Distributed systems like  Spark / Flink
+    * Excellent capabilities
+    * Complex
+
+- 'Kafka Streams' aims to fill the sweet spot between capabilities & complexities
 
 Notes: 
-
 
 
 
@@ -96,37 +108,29 @@ Notes:
 Notes: 
 
 
-
-
 ---
 
 ## Comparing Streams
 
+- **Kafka Streams moto - "Build apps, not clusters"** 
 
-|      	| Simple Java App                              	| Kafka Streams                                	| Distributed Streaming </br>Frameworks                                                                                 	|
-|------	|----------------------------------------------	|----------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------	|
-|      	| Using Java/ Python                           	| Java                                         	| Spark / Flink / Samza                                                                                                 	|
-|      	|                                              	|                                              	|                                                                                                                       	|
-| Pros 	| -Simple to implement </br>- Simple to deploy 	| -Simple to implement,</br>- Simple to deploy 	| - Distributed out of the box,</br>- Very good scaling,</br>- Excellent capabilities like windowing / machine learning 	|
-|      	|                                              	|                                              	|                                                                                                                       	|
-| Cons 	| - Hard to scale                              	| - Medium difficulty                          	| - Heavy weight,</br>- Complex operations,</br>- Need to build a cluster,</br>- Monitor / maintain                     	|
+
+|      | Simple Java App                              | Kafka Streams                                | Distributed Streaming </br>Frameworks                                                                                 |
+|------|----------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+|      | Using Java/ Python                           | Java                                         | Spark / Flink / Samza                                                                                                 |
+|      |                                              |                                              |                                                                                                                       |
+| Pros | -Simple to implement </br>- Simple to deploy | -Simple to implement,</br>- Simple to deploy | - Distributed out of the box,</br>- Very good scaling,</br>- Excellent capabilities like windowing / machine learning |
+|      |                                              |                                              |                                                                                                                       |
+| Cons | - Hard to scale                              | - Medium difficulty                          | - Heavy weight,</br>- Complex operations,</br>- Need to build a cluster,</br>- Monitor / maintain                     |
  
-*  **Kafka Streams moto – "Build apps, not clusters"** 
 
 Notes: 
 
-
-
-
 ---
-
-# Kafka Streams Architecture
-
----
-
 
 ## Kafka Streams Architecture
 
+<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; float:right;"/>
 
  * A  **Stream Partition** is an ordered set of records and maps to a Topic partition
 
@@ -138,12 +142,11 @@ Notes:
 
  * A  **Thread**  executes one or more tasks
 
-<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; position:relative; top:-250px; left:450px;"/>
 
 Notes: 
 
 Kafka Streams allows the user to configure the number of threads to parallelize processing within an application instance. 
-No state is shared across threads. So you can start as many threads as there are input Kafka topic partitions so that every thread’s tasks has at least one partition to process
+No state is shared across threads. So you can start as many threads as there are input Kafka topic partitions so that every thread's tasks has at least one partition to process
 
 
 
@@ -152,7 +155,7 @@ No state is shared across threads. So you can start as many threads as there are
 ## Scaling Kafka Streams
 
 
-<img src="../../assets/images/kafka/Scaling-Kafka-Streams.png" alt="Scaling-Kafka-Streams.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Scaling-Kafka-Streams.png" alt="Scaling-Kafka-Streams.png" style="max-width:80%;"/>
 
 Notes: 
 
@@ -163,6 +166,7 @@ Notes:
 
 ## Processor Topology
 
+<img src="../../assets/images/kafka/streams-architecture-topology.png" alt="streams-architecture-topology.png" style="width:30%; float:right;"/>
 
  * Defines the logic for the application
 
@@ -182,7 +186,6 @@ Notes:
      - Has no downstream 
        </br> processor.*Writes* topic
 
-<img src="../../assets/images/kafka/streams-architecture-topology.png" alt="streams-architecture-topology.png" style="width:30%; position:relative; top:300px; right:20px;"/>
 
 Notes: 
 
@@ -192,18 +195,16 @@ Notes:
 
 ## State Store
 
+<img src="../../assets/images/kafka/State-Store.png" alt="State-Store.png" style="width:30%;float:right;"/>
 
  * Stateful operations like (Aggregations / Joins) require intermediate state storage
 
  * Kafka Streams provides this storage at per node level
 
  * Storage mediums
-
      - In memory cache
-
-     - RocksDB (a very fast embedded DB, developed by Facebook)
-
-        * Stored on disk on each node
+     - RocksDB (a very fast embedded DB, developed by Facebook)  
+     Stored on disk on each node
 
  * Tasks uses it to store and query data
 
@@ -213,7 +214,6 @@ Notes:
 
  * Automatic recovery 
 
-<img src="../../assets/images/kafka/State-Store.png" alt="State-Store.png" style="width:30%; position:relative; top:600px; right:10px"/>
 
 Notes: 
 
@@ -236,7 +236,7 @@ org.rocksdb.BlockBasedTableConfig();
 
      tableConfig.setBlockCacheSize(16 * 1024 * 1024L);
      /*
-      *   set more configuration here
+      * set more configuration here
       */
   }
 }
@@ -326,7 +326,7 @@ Notes:
 
 
 ```java
-// ** 1: configure **
+// ** 1 : configure **
 Properties config = new Properties();
 config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
        "localhost:9092");
@@ -337,14 +337,14 @@ config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG,
 config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG,
        Serdes.String().getClass().getName());
 
-// ** 2: define processing **
+// ** 2 : define processing **
 final StreamsBuilder builder = new StreamsBuilder();
 final KStream<String, String> clickstream = builder.stream("topic1");// topic
 
 clickstream.print(Printed.toSysOut());
 
 
-// ** 3: start the stream **
+// ** 3 : start the stream **
 final KafkaStreams streams = new KafkaStreams(builder.build(), config);
 streams.cleanUp();
 streams.start();
@@ -362,13 +362,13 @@ Notes:
 
 ## Streaming Operations
 
-| Function 	| Description                                               	|
-|----------	|-----------------------------------------------------------	|
-| ForEach  	| Process one record at a time                              	|
-| Filter   	| Filter stream event by event                              	|
-| map      	| Transform the stream,</br>(key1, value1) -> (key2, value2) 	|
-| groupBy  	| Group the stream by key                                   	|
-| count    	| Count the stream                                          	|
+| Function     | Description                                                   |
+|----------    |-----------------------------------------------------------    |
+| ForEach      | Process one record at a time                                  |
+| Filter       | Filter stream event by event                                  |
+| map          | Transform the stream,</br>(key1, value1) -> (key2, value2)     |
+| groupBy      | Group the stream by key                                       |
+| count        | Count the stream                                              |
 
 Notes: 
 
@@ -377,14 +377,14 @@ Notes:
 
 ---
 
-## Kafka Streaming : ForEach
+## Kafka Streaming  : ForEach
 
 
 ```java
 final StreamBuilder builder = new StreamBuilder();
 final KStream<String, String> clickstream = builder.stream("topic1");
 
-// Foreach: process events one by one
+// Foreach : process events one by one
 clickstream.foreach(new ForeachAction<String, String>() {
 
      public void apply(String key, String value) {
@@ -403,7 +403,7 @@ Notes:
 
 ---
 
-## Kafka Streaming: Filter
+## Kafka Streaming : Filter
 
 <img src="../../assets/images/kafka/Filter-01.png" style="width:70%;"/>
 
@@ -421,7 +421,7 @@ Notes:
 
 ---
 
-## Kafka Streaming : Filter
+## Kafka Streaming  : Filter
 
 
 ```java
@@ -481,11 +481,11 @@ final KStream<String, Integer> actionStream = clickstream.map( {
 
    public KeyValue<String, Integer> apply(String key, String value) {
 
-      logger.debug("map(): got: " + value);
+      logger.debug("map() : got : " + value);
       String new_key = key.toUpperCase();
       int new_value = 1;
       KeyValue<String, Integer> newKV =new KeyValue<>(new_key, new_value);
-      logger.debug("map(): returning: " + newKV);
+      logger.debug("map() : returning : " + newKV);
       return newKV;
   }
 }
@@ -542,9 +542,9 @@ Notes:
 
 ## Joins on Kstream and KTables
 
-| Kstream + KStream                                                                             	| Ktable + KTable                                                                                                                                       	| KTable + KStream                                                                      	|
-|-----------------------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------	|
-| It is a sliding window join.,</br>Results a KStream,</br>Supports Left, Inner and Outer Joins 	| Symmetric non-window join.,</br>Results a continuously updating Ktable.,</br>Supports Left, Inner and Outer Joins,</br>(think like 2 database tables) 	| Asymmetric non-window join.,</br>Results a KStream.,</br>Supports Left and Inner join 	|
+| Kstream + KStream                                                                                 | Ktable + KTable                                                                                                                                           | KTable + KStream                                                                          |
+|-----------------------------------------------------------------------------------------------    |-------------------------------------------------------------------------------------------------------------------------------------------------------    |---------------------------------------------------------------------------------------    |
+| It is a sliding window join.,</br>Results a KStream,</br>Supports Left, Inner and Outer Joins     | Symmetric non-window join.,</br>Results a continuously updating Ktable.,</br>Supports Left, Inner and Outer Joins,</br>(think like 2 database tables)     | Asymmetric non-window join.,</br>Results a KStream.,</br>Supports Left and Inner join     |
 
 Notes: 
 
@@ -559,7 +559,7 @@ Notes:
 final StreamsBuilder builder = new StreamsBuilder();
 final KStream<String, String> clickstream = builder.stream( "topic1");
 
-// map transform (String, String)Â¬â€  (String, Integer)
+// map transform (String, String) --> (String, Integer)
 
 final KStream<String, Integer> actionStream = clickstream.map( ... )
 
@@ -587,25 +587,25 @@ Notes:
 // Serializers/deserializers (serde) for String and Long types
 final Serde<String> stringSerde = Serdes.String();
 final Serde<Long> longSerde = Serdes.Long();
- 
-// Construct a `KStream` from the input topic ”topic1", where message values
+
+// Construct a `KStream` from the input topic "topic1", where message values
 // represent lines of text (for the sake of this example, we ignore whatever may be stored
 // in the message keys).
-KStream<String, String> textLines = builder.stream(”topic1",
-    Consumed.with(stringSerde, stringSerde);
- 
+KStream<String, String> textLines = builder.stream("topic1",
+.with(stringSerde, stringSerde);
+
 KTable<String, Long> wordCounts = textLines
-    // Split each text line, by whitespace, into words.
-    .flatMapValues(value -> Arrays.asList(value.toLowerCase().split("\\W+")))
- 
-    // Group the text words as message keys
-    .groupBy((key, value) -> value)
- 
-    // Count the occurrences of each word (message key).
-    .count();
- 
+    // Split each text line, by whitespace, into words.
+    .flatMapValues(value -> Arrays.asList(value.toLowerCase().split("\\W+")))
+ 
+    // Group the text words as message keys
+    .groupBy((key, value) -> value)
+ 
+    // Count the occurrences of each word (message key).
+    .count();
+ 
 // Store the running counts as a changelog stream to the output topic.
-wordCounts.toStream().to(”topic1-out", Produced.with(Serdes.String(), Serdes.Long()));
+wordCounts.toStream().to("topic1-out", Produced.with(Serdes.String(), Serdes.Long()));
 ```
 
 
@@ -624,11 +624,11 @@ Notes:
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 
-     - Please follow: lab 7.1 – 7.5
+     - Please follow: lab 7.1 - 7.5
 
  *  **To Instructor**: 
 
@@ -649,7 +649,7 @@ Notes:
 
         * Over the last 5 minutes? 
 
- * Create groups of records with the  *same key* for aggregations or joins into “ **windows** ”
+ * Create groups of records with the  *same key* for aggregations or joins into " **windows** "
 
 <img src="../../assets/images/kafka/Windowing-Operations.png" alt="Windowing-Operations.png" style="width:70%;"/>
 
@@ -687,7 +687,7 @@ Notes:
 ## Windowing Example
 
 
- * TimeWindows.of(”cpu-window", 60*1000)
+ * TimeWindows.of("cpu-window", 60*1000)
 
      - Returns a time window of 1 min. 
 
@@ -709,17 +709,16 @@ Notes:
 
 
 ```java
-# We have visits to our website
 KStreamBuilder builder = new KStreamBuilder();
-# Create visits stream 
-KStream<String, Long> visitsStream = builder.stream(Serdes.String(), Serdes.Long(), "visitsTopic");
+KStream<String, Long> visitsStream = builder.stream(Serdes.String(), Serdes.Long(),
+                                     "visitsTopic");
 
-# Group and count visits per URL/page
+// Group and count visits per URL/page
 KGroupedStream<String, Long> groupedStream = 
 visitsStream.groupByKey();
 KTable<String, Long> totalCount = groupedStream.count("totalVisitCount");
 
-# Create window for visits per hour
+// Create window for visits per hour
 KTable<Windowed<String>, Long> windowedCount =
 groupedStream.count(TimeWindows.of(60 * 60 * 1000), "hourlyVisitCount");
 ```
@@ -737,7 +736,7 @@ Notes:
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 
