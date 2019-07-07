@@ -23,7 +23,7 @@ Notes:
 ## Kafka Clients
 
 
- * Java is the ‘first class’ citizen in Kafka
+ * Java is the 'first class' citizen in Kafka
      - Officially maintained
  * Python on par with Java
      - Maintained by Confluent.io
@@ -80,7 +80,7 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 Properties props = new Properties();
 props.put("bootstrap.servers", "localhost:9092");
 props.put("client.id", "SimpleProducer");
-props.put("key.serializer",   "org.apache.kafka.common.serialization.IntegerSerializer");
+props.put("key.serializer",  "org.apache.kafka.common.serialization.IntegerSerializer");
 props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
 KafkaProducer<Integer, String> producer = new KafkaProducer<>(props);
@@ -109,16 +109,16 @@ Notes:
 Properties props = new Properties();
 props.put("bootstrap.servers", "localhost:9092");
 props.put("client.id", "SimpleProducer");
-props.put("key.serializer",   "org.apache.kafka.common.serialization.IntegerSerializer");
+props.put("key.serializer",  "org.apache.kafka.common.serialization.IntegerSerializer");
 props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
 
 KafkaProducer<Integer, String> producer = new KafkaProducer<>(props); 
 
 ```
- * We are using ‘KafkaProducer’ (org.apache.kafka.clients.producer.KafkaProducer)
+ * We are using 'KafkaProducer' (org.apache.kafka.clients.producer.KafkaProducer)
 
- *  **bootstrap.servers**: “broker1:9092, broker2:9092”
+ *  **bootstrap.servers**: "broker1:9092, broker2:9092"
 
      - Specify multiple servers, so no single point of failure
 
@@ -149,7 +149,7 @@ producer.close();
 
  * Here we have a <key,value> message
 
- * send() doesn’t wait for confirmation
+ * send() doesn't wait for confirmation
 
  * We send in batches 
 
@@ -178,16 +178,16 @@ props.put("batch.size", 16384);  // 16k
 props.put("linger.ms", 1);
 props.put("buffer.memory", 33554432); // 32 M
 props.put("key.serializer",
-                   "org.apache.kafka.common.serialization.IntegerSerializer"); 
+                   "org.apache.kafka.common.serialization.IntegerSerializer");
 props.put("value.serializer",
-                   "org.apache.kafka.common.serialization.StringSerializer"); 
+                   "org.apache.kafka.common.serialization.StringSerializer");
 KafkaProducer<Integer, String> producer = new KafkaProducer<>(props);
 
 for(int i = 0; i < 100; i++) {
   producer.send(new ProducerRecord<String, String>(
       "my-topic", Integer.toString(i), Integer.toString(i)));
 }
-producer.close();  
+producer.close(); 
 
 ```
 
@@ -203,11 +203,12 @@ Notes:
 
 <img src="../../assets/images/kafka/Producer-Acknowledgements-01.png" style="width:65%;"/>
 
-| ACK                       	| Description                                                                                                                    	| Speed  	| Data safety                                             	|
-|---------------------------	|--------------------------------------------------------------------------------------------------------------------------------	|--------	|---------------------------------------------------------	|
-| acks=0                    	| - Producer doesn't wait for any acks from broker,</br>- Producer won't know of any errors                                         	| High   	| Low </br></br>No guarantee that broker received the message  	|
-| acks=1,</br>(**default**) 	| - Broker will write the message to local log,</br>- Does not wait for replicas to complete                                       	| Medium 	| Medium</br></br>Message is at least persisted on lead broker 	|
-| acks=all                  	| - Message is persisted on lead broker and in replicas,</br>- Lead broker will wait for in-sync replicas to acknowledge the write 	| Low    	| High</br></br>Message is persisted in multiple brokers       	|
+| ACK                       | Description                                                                                                                      | Speed  | Data safety                                                  |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------|
+| acks=0                    | - Producer doesn't wait for any acks from broker,</br>- Producer won't know of any errors                                        | High   | Low </br></br>No guarantee that broker received the message  |
+| acks=1,</br>(**default**) | - Broker will write the message to local log,</br>- Does not wait for replicas to complete                                       | Medium | Medium</br></br>Message is at least persisted on lead broker |
+| acks=all                  | - Message is persisted on lead broker and in replicas,</br>- Lead broker will wait for in-sync replicas to acknowledge the write | Low    | High</br></br>Message is persisted in multiple brokers       |
+
 
 Notes: 
 
@@ -241,7 +242,7 @@ Properties props = new Properties(); // ** 1 **
 props.put("bootstrap.servers", "localhost:9092");
 props.put("group.id", "group1");
 props.put("key.deserializer",
-"org.apache.kafka.common.serialization.StringDeserializer");
+"org.apache.kafka.common.serialization.IntegerDeserializer");
 props.put("value.deserializer",
 "org.apache.kafka.common.serialization.StringDeserializer");
 
@@ -253,14 +254,14 @@ try {
     while (true) {
       ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)); // ** 3 **
       System.out.println("Got " + records.count() + " messages");
-      for (ConsumerRecord<Integer, String> record: records) {
-      System.out.println("Received message: " + record);
+      for (ConsumerRecord<Integer, String> record : records) {
+      System.out.println("Received message : " + record);
      }
    }
 }
 finally {
   consumer.close(Duration.OfSeconds(60));
-}   
+} 
 ```
 
 Notes: 
@@ -286,7 +287,7 @@ KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
 consumer.subscribe(Arrays.asList("topic1")); // ** 2 **  
  
 ```
- *  **bootstrap,servers**: “broker1:9092,broker2:9092”
+ *  **bootstrap,servers**: "broker1:9092,broker2:9092"
 
      - Connect to multiple brokers to avoid single point of failure
 
@@ -312,8 +313,8 @@ try {
    while (true) {
     ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000); // ** 3 **
     System.out.println("Got " + records.count() + " messages");
-    for (ConsumerRecord<Integer, String> record: records) { 
-     System.out.println("Received message: " + record);
+    for (ConsumerRecord<Integer, String> record : records) { 
+     System.out.println("Received message : " + record);
     }
   }
 }
@@ -323,7 +324,7 @@ consumer.close();
 ```
 
  * Consumers must subscribe to topics before starting polling
-     - Consumer.subscribe (“test.*”) // wildcard subscribe
+     - Consumer.subscribe ("test.*") // wildcard subscribe
 
  * Poll: This call will return in 1000 ms, with or without records
 
@@ -358,8 +359,8 @@ Notes:
  * Work done in poll loop
      - Usually involves some processing
      - Saving data to a store
-     - Don’t do high latency work between polls; otherwise the consumer could be deemed dead.
-     - Do heavy lifting in a separate thread
+     - Don't do high latency work between polls; otherwise the consumer could be deemed dead.
+     - Do heavy lifting in a seperate thread
 
 Notes: 
 
@@ -373,19 +374,19 @@ Notes:
 
  *  **org.apache.kafka.clients.consumer.ConsumerRecord**  **<K,V>** 
 
- *  **K  key()**: key for record (type K), can be null
+ *  **K  key()** : key for record (type K), can be null
 
- *  **V  value()**: record value (type V – String / Integer ..etc)
+ *  **V  value()** : record value (type V – String / Integer ..etc)
 
- *  **String topic()**: Topic where this record came from
+ *  **String topic()** : Topic where this record came from
 
- *  **int**  **partition()**: partition number
+ *  **int**  **partition()** : partition number
 
- *  **long offset()**: long offset in
+ *  **long offset()** : long offset in
 
 ```java
 ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)); 
-  for (ConsumerRecord<String, String> record: records) {
+  for (ConsumerRecord<String, String> record : records) {
      System.out.printf("topic = %s, partition = %d, offset = %d,
             key= %s, value = %s\n",
             record.topic(), record.partition(), record.offset(),
@@ -414,11 +415,11 @@ KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
 ```
  
 
- *  **max.partition.fetch.bytes**   (default: 1048576  (1M))
+ *  **max.partition.fetch.bytes**   (default : 1048576  (1M))
 
      - Max message size to fetch.  Also see  **message.max.bytes**  broker config
 
- *  **session.timeout.ms**  (default: 30000  (30 secs))
+ *  **session.timeout.ms**  (default : 30000  (30 secs))
 
      - If no heartbeats are not received by this window, consumer will be deemed dead and a partition rebalance will be triggered
 
@@ -491,7 +492,7 @@ Notes:
 
 ---
 
-## Lab: Kafka Producer / Consumer
+## Lab : Kafka Producer / Consumer
 
 <img src="../../assets/images/icons/individual-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
@@ -527,7 +528,7 @@ Notes:
 
 
  * **1: Fire and Forget**
-     - Send message, doesn’t wait for confirmation from Kafka
+     - Send message, doesn't wait for confirmation from Kafka
      - Writes messages to broker in batches (minimize network round-trips)
      - Risk of some messages being lost
      - Default and fastest
@@ -561,7 +562,7 @@ ProducerRecord<Integer, String> record =
 producer.send(record); // <-
 ```
 
- * The ‘record’ is placed in the send buffer
+ * The 'record' is placed in the send buffer
 
  * It will be sent to Kafka in a separate thread
 
@@ -630,7 +631,7 @@ producer.send(record, new KafkaCallback());  // <-
 
 * Kafka will callback with meta or exception  (only one of them will be non-Null)
 
- * Note: This code is for demonstration purposes only.  Do not create new callback objects in production.
+ * Note : This code is for demonstration purposes only.  Do not create new callback objects in production.
 
      - You could be creating millions of objects
 
@@ -704,11 +705,12 @@ Notes:
 
 ## Compression codecs comparison
 
-| Codec               	| Compression Ratio 	| Compressed Size 	| De-compressed Size 	|
-|--------------------	|-------------------	|-----------------	|--------------------	|
-| Zstd 1.3.4 --fast=1 	| 2.431             	| 530 MB/s        	| 1770 MB/s          	|
-| Lz4 1.8.1           	| 2.101             	| 750 MB/s        	| 3700 MB/s          	|
-| Snappy 1.1.4        	| 2.091             	| 530 MB/s        	| 1820 MB/s          	|
+| Codec               | Compression Ratio | Compressed Size | De-compressed Size |
+|---------------------|-------------------|-----------------|--------------------|
+| Zstd 1.3.4 --fast=1 | 2.431             | 530 MB/s        | 1770 MB/s          |
+| Lz4 1.8.1           | 2.101             | 750 MB/s        | 3700 MB/s          |
+| Snappy 1.1.4        | 2.091             | 530 MB/s        | 1820 MB/s          |
+
 
  * https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression
 
@@ -749,20 +751,20 @@ Notes:
 
 ## Advanced Consumer Properties
 
-| Property                      	| Description                                                           	| Default Value 	|
-|-------------------------------	|-----------------------------------------------------------------------	|---------------	|
-| fetch.min.bytes               	| Min. data to fetch.                                                   	|               	|
-| fetch.max.wait.ms             	| Max. wait time                                                        	| 500 ms        	|
-| Session.timeout.ms            	| Time after which consumer is deemed dead if it doesn’t contact broker 	| 3 seconds     	|
-| Heartbeat.interval.ms         	| Intervals in which heartbeats are sent                                	| 1 second      	|
-| Auto.offset.reset             	| Offset value to use when no committed offset exists                   	| “latest”      	|
-| Partition.assignment.strategy 	| Assign partitions by range or round-robin (next slide)                	| RangeAssignor 	|
-| Max.poll.records              	| Max. number of records poll can return                                	| &nbsp;              	|
+| Property                      | Description                                                           | Default Value |
+|-------------------------------|-----------------------------------------------------------------------|---------------|
+| fetch.min.bytes               | Min. data to fetch.                                                   |               |
+| fetch.max.wait.ms             | Max. wait time                                                        | 500 ms        |
+| Session.timeout.ms            | Time after which consumer is deemed dead if it doesn't contact broker | 3 seconds     |
+| Heartbeat.interval.ms         | Intervals in which heartbeats are sent                                | 1 second      |
+| Auto.offset.reset             | Offset value to use when no committed offset exists                   | "latest"      |
+| Partition.assignment.strategy | Assign partitions by range or round-robin (next slide)                | RangeAssignor |
+| Max.poll.records              | Max. number of records poll can return                                |               |
 
 Notes: 
 
 Broker will wait until fetch.min.bytes data accumulates before sending to consumer
-Auto.offset.reset other valid value is “earliest” – meaning read entire partition from start
+Auto.offset.reset other valid value is "earliest" – meaning read entire partition from start
 
 
 ---
@@ -774,13 +776,13 @@ Auto.offset.reset other valid value is “earliest” – meaning read entire pa
 
  * Each topic can have multiple partitions
 
- * Consumers belong to “Consumer Groups”
+ * Consumers belong to "Consumer Groups"
 
  * A consumer can read from multiple topics
 
  * How are partitions assigned to consumers?
 
-     - Based on “partition.assignment.strategy”
+     - Based on "partition.assignment.strategy"
 
      - Default value is RangeAssignor
 
@@ -810,7 +812,7 @@ https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignme
 ## Range Partitions – 2 Topics
 
 
-<img src="../../assets/images/kafka/partition-range-2.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/partition-range-2.png" style="max-width:65%;"/>
 
 Notes: 
 
@@ -842,7 +844,7 @@ Notes:
 
  *  Set partition.assignment.strategy to RoundRobinAssignor
 
-<img src="../../assets/images/kafka/partition-range-3.png"  style="width:70%;"/>
+<img src="../../assets/images/kafka/partition-range-3.png"  style="max-width:70%;"/>
 
 Notes: 
 
@@ -854,7 +856,7 @@ Notes:
 ## Round-robin Assignment – 2 Topics
 
 
-<img src="../../assets/images/kafka/partition-range-4.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/partition-range-4.png" style="max-width:65%;"/>
 
 Notes: 
 
@@ -896,13 +898,13 @@ Notes:
 ## Commits And Offsets
 
 
- * Kafka doesn't track 'read acknowledgements' of messages like other JMS systems
+ * Kafka does not track 'read acknowledgements' of messages like other JMS systems
 
  * It tracks the consumer progress using an  **offset** 
 
- * When a Consumer calls Poll() it gets  **new records** from the offset 
+ * When a Consumer calls `Poll()` it gets  **new records** from the offset 
 
- * Offsets are stored in Kafka (in a special topic:  **__**  **consumer_offsets**  **)** 
+ * Offsets are stored in Kafka (in a special topic :  **__**  **consumer_offsets**  **)** 
 
      - Used to be stored in ZK, but now stored in Kafka for performance reasons
 
@@ -910,7 +912,7 @@ Notes:
 
      - Partitions of that consumer are assigned to another consumer
 
-     - New ‘partition owner’ consumer  resumes from current offset
+     - New 'partition owner' consumer  resumes from current offset
 
 <img src="../../assets/images/kafka/Commits-And-Offsets.png" alt="Commits-And-Offsets.png" style="width:70%;"/>
 
@@ -928,7 +930,7 @@ Notes:
 
      - Convenient 
 
-     - But doesn't give full control to developer
+     - But doesn not give full control to developer
 
  * Manual offset management
 
@@ -946,9 +948,9 @@ Notes:
 ## Updating Offset: Auto Commit
 
 
- * If `’enable.auto.commit=true’` the client will save the offset when poll()
+ * If `'enable.auto.commit=true'` the client will save the offset when poll()
 
- * Frequency controlled by `‘auto.commit.interval.ms’` (default 5 secs)
+ * Frequency controlled by `'auto.commit.interval.ms'` (default 5 secs)
 
  * auto.commit is enabled by default
 
@@ -970,7 +972,7 @@ Notes:
 ## Auto Commit 
 
 
-<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="max-width:70%;"/>
 
 Notes: 
 
@@ -1072,7 +1074,7 @@ Notes:
 
  * This commits the offset to 8
 
-<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events.png" alt="Auto-Commit-Skipped-Events.png" style="width:60%;"/>
+<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events.png" alt="Auto-Commit-Skipped-Events.png" style="max-width:50%;"/>
 
 Notes: 
 
@@ -1086,7 +1088,7 @@ Notes:
 
  * Consumer1 crashes
 
-<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-02.png" alt="Auto-Commit-Skipped-Events-02.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-02.png" alt="Auto-Commit-Skipped-Events-02.png" style="max-width:60%;"/>
 
 Notes: 
 
@@ -1104,7 +1106,7 @@ Notes:
 
  * Messages 6 & 7 are skipped
 
-<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-00.png" alt="Auto-Commit-Skipped-Events-00.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-00.png" alt="Auto-Commit-Skipped-Events-00.png" style="max-width:60%;"/>
 
 Notes: 
 
@@ -1120,7 +1122,7 @@ Notes:
 
  * Duplicate Events
 
-     - This is ok if processing is  **'idempotent** ' (duplicate processing doesn't have any side effects)
+     - This is ok if processing is  **'idempotent'** (duplicate processing does not have any side effects)
 
         * e.g. saving an event to a database that over-writes the previous record (does not create duplicate records)
 
@@ -1166,15 +1168,15 @@ KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
 
 while (true) {
   ConsumerRecords<Integer, String> records = consumer.poll(100);
-  for (ConsumerRecord<Integer, String> record: records)
+  for (ConsumerRecord<Integer, String> record : records)
   {
      System.out.println(String.format(
-	"topic = %s, partition = %s, offset = %d“, 
+	"topic = %s, partition = %s, offset = %d", 
 	record.topic(), record.partition(), record.offset()));
   }
   try {
-    consumer.commitSync(); // ** 1 ** 
-    consumer.commitASync(); // or  ** 2 ** 
+    consumer.commitSync(); // <--- 1 
+    consumer.commitASync(); // <--- or  ** 2 ** 
   
   } catch (CommitFailedException e) {
     e.printStackTrace();
@@ -1198,7 +1200,7 @@ Notes:
 
      - Might slow down processing
 
- * commitAsync() is ‘fire and forget’
+ * commitAsync() is 'fire and forget'
 
      - Commits can be lost
 
@@ -1259,7 +1261,7 @@ Notes:
 
  * Producer  send can be  **idempotent** 
 
-     - Set in producer via   *“*  *enable.idempotence*  *=true”* 
+     - Set in producer via   *"*  *enable.idempotence*  *=true"* 
 
  * Producer can write a batch  **_atomically_** 
 
@@ -1293,7 +1295,7 @@ An idempotent operation is one which can be performed many times without causing
 
  * Kafka Streams API implements Exactly Once Processing
 
-     -  *“*  *processing.guarantee*  *=*  *exactly_once*  *”* 
+     -  *"*  *processing.guarantee*  *=*  *exactly_once*  *"* 
 
  * Processing happens once
 
@@ -1369,10 +1371,10 @@ int count = 0;
 
 while (true) {
    ConsumerRecords<Integer, String> records = consumer.poll(100);
-   for (ConsumerRecord<Integer, String> record: records)
+   for (ConsumerRecord<Integer, String> record : records)
    {
       count++;
-      System.out.println("Received message: " + record);
+      System.out.println("Received message : " + record);
       
       // process message
       // and update offset map
@@ -1401,7 +1403,7 @@ Notes:
 
  * Use cases:
 
-     - Catching up to latest events first  (and then processing the backlog).See demo at: https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up-trick/
+     - Catching up to latest events first  (and then processing the backlog).See demo at : https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up-trick/
 
  * To go to end of partition
 
@@ -1488,7 +1490,7 @@ Notes:
 
 Notes: 
 
-More information at: https://www.confluent.io/product/connectors/
+More information at : https://www.confluent.io/product/connectors/
 
 
 ---
@@ -1511,7 +1513,7 @@ More information at: https://www.confluent.io/product/connectors/
 
 Notes: 
 
-More information at: https://www.confluent.io/product/connectors/
+More information at : https://www.confluent.io/product/connectors/
 
 
 ---
@@ -1535,7 +1537,7 @@ More information at: https://www.confluent.io/product/connectors/
 
 Notes: 
 
-More information at: https://www.confluent.io/product/connectors/
+More information at : https://www.confluent.io/product/connectors/
 
 
 ---
@@ -1845,7 +1847,7 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
  * We are going to be analyzing Clickstream data
 
 ```java
-{ "timestamp":1451635200055, 
+{ "timestamp" :1451635200055, 
 "session":"session_57" , 
 "domain":"twitter.com" ,
 "cost":24, 
@@ -1855,7 +1857,7 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
 "blocked" }
 ```
 
- * Process the data and keep a running total of `‘domain-count’`
+ * Process the data and keep a running total of `'domain-count'`
 
      - Twitter.com: 10
 
@@ -1900,7 +1902,7 @@ Notes:
 
  * How does a Consumer retrieve messages?
 
- * How does the Consumer do a `‘clean shutdown’`?
+ * How does the Consumer do a `'clean shutdown'`?
 
      - Why is this important?
 
