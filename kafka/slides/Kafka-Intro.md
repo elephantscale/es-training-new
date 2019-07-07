@@ -17,76 +17,9 @@
 
 Notes: 
 
-
-# How to Think About Kafka
-
----
-## Kafka At a Glance
-
-* Used by tens of thousands of organizations
-* Including over a third of the Fortune 500
-* Among the fastest growing open source projects
-* Immense ecosystem around it
-* At the heart of a movement towards managing and processing streams of data
-
----
-## What Led to Kafka Decision
-
-* Built at LinkedIn
-* Lots of databases
-  - built to store data
-* Missing
-  - something to handle the continuous flow of data
-* Hence, LinkedIn built Kafka from scratch
-* Why the name "Kafka"
-  - Kafka is optimized for writing, and Jay Kreps liked Kafka's writing
-![](../../assets/images/kafka/kafka-the-writer.png)
-
----
-## Kafka's Focus
-* Instead of piles of data
-  - relational databases
-  - key-value stores
-  - search indexes
-  - caches
-* Re-focus on treating data as
-  - continually evolving
-  - ever growing stream
-
----
-## What Happened Then
-* Kafka started as
-  - powering real-time applications
-  - data flow
-  - in social network
-* Kafka continued as
-  - next-generation architectures
-  - retailers redo their business process as continuous business stream
-  - car companies are collecting and processing real-time data streams
-  - banks are rethinking their fundamental processes
-
----
-## What Kafka is Like and Not Like
-* Compare to
-  - enterprise messaging systems
-  - big data systems like Hadoop
-  - data integration or ETL tools
-* But not like them
-  - NOT ActiveMQ, RabbitMQ, IBM’s MQSeries
-    - runs on a cluster and can scale to 1000s of nodes
-    - replaces hand-wires message brokers
-  - NOT a regular storage system
-    - replicated
-    - persistent
-    - but can be kept around as long as you like
-  - NOT ETL
-    - instead of scraping data here and putting it there
-    - re-organize data as continuous stream
-* So... *a streaming platform*
-
 ---
 
-# Message Queues
+# Evolution of Data Platform
 
 ---
 
@@ -161,7 +94,6 @@ Notes:
 
 Notes: 
 
-Image permissions: CC0 public domain: https://pixabay.com/en/router-switch-wireless-computer-154290/
 
 
 ---
@@ -221,6 +153,57 @@ Notes:
 Notes: 
 
 
+---
+## Why LinkedIn Built Kafka?
+
+* Lots of databases
+  - Built to store data
+  - Piles of data : relational / key-value / caches / search indexes
+  
+* What is missing?
+  - Something to handle the continuous flow of data
+  
+<img src="../../assets/images/kafka/3rd-party/franz-kafka.png" style="width:15%;float:right;" />
+
+* Hence, LinkedIn built Kafka from scratch
+
+* **Trivia : Why name it Kafka?**   
+  Kafka's co-creator Jay Kreps says "Kafka is optimized for writing"  and named after popular author [Franz Kafka](https://en.wikipedia.org/wiki/Franz_Kafka)
+
+
+---
+
+## What Happened Then
+
+* Kafka started as
+  - powering real-time applications
+  - data flow
+  - in social network
+ 
+* Kafka continued as
+  - next-generation architectures
+  - retailers redo their business process as continuous business stream
+  - car companies are collecting and processing real-time data streams
+  - banks are rethinking their fundamental processes
+
+---
+## What Kafka is Like and Not Like
+* Compare to
+  - enterprise messaging systems
+  - big data systems like Hadoop
+  - data integration or ETL tools
+* But not like them
+  - NOT ActiveMQ, RabbitMQ, IBM’s MQSeries
+    - runs on a cluster and can scale to 1000s of nodes
+    - replaces hand-wires message brokers
+  - NOT a regular storage system
+    - replicated
+    - persistent
+    - but can be kept around as long as you like
+  - NOT ETL
+    - instead of scraping data here and putting it there
+    - re-organize data as continuous stream
+* So... **a streaming platform**
 
 
 ---
@@ -271,6 +254,19 @@ Notes:
 - https://labs.spotify.com/2016/02/25/spotifys-event-delivery-the-road-to-the-cloud-part-i/
 - https://labs.spotify.com/2016/03/03/spotifys-event-delivery-the-road-to-the-cloud-part-ii/
 
+
+---
+## Kafka's Growth
+
+* Used by tens of thousands of organizations
+
+* Including over a third of the Fortune 500
+
+* Among the fastest growing open source projects
+
+* Immense ecosystem around it
+
+* At the heart of a movement towards managing and processing streams of data
 
 
 ---
@@ -472,7 +468,7 @@ Notes:
 
 ---
 
-## Lab: Installing Kafka
+## Lab : Installing Kafka
 
 <img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/>
 
@@ -951,9 +947,9 @@ Notes:
 ## Using Producer / Consumer Utils
 
 
- *  **bin/**  **kafka**  **-console-producer**: utility for producing messages
+ *  **bin/**  **kafka**  **-console-producer** : utility for producing messages
 
- *  **bin/**  **kafka**  **-console-consumer**: utility for reading messages
+ *  **bin/**  **kafka**  **-console-consumer** : utility for reading messages
 
 <img src="../../assets/images/kafka/Using-Producer-01.png" alt="Using-Producer-03.png" style="width:70%;"/>
 
@@ -1379,7 +1375,7 @@ Notes:
 
 
 
-Image source: https://kafka.apache.org/documentation/
+Image source : https://kafka.apache.org/documentation/
 
 
 ---
