@@ -10,12 +10,12 @@
 
 
  * Understand Kafka design and architecture
- 
+
  * Gain knowledge of Kafka and Zookeeper
 
  * Get to know how Kafka operates
 
-Notes: 
+Notes:
 
 ---
 
@@ -26,10 +26,10 @@ Notes:
 
 ## A Reference Architecture For Hadoop
 
-<img src="../../assets/images/kafka/A-Reference-Architecture-For-Hadoop.png" alt="A-Reference-Architecture-For-Hadoop.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/A-Reference-Architecture-For-Hadoop.png" alt="A-Reference-Architecture-For-Hadoop.png" style="max-width:60%;"/>
 
 
-Notes: 
+Notes:
 
 Image credit: Hortonworks.com
 
@@ -47,7 +47,7 @@ Image credit: Hortonworks.com
 
  * Results may be exported to other systems
 
-Notes: 
+Notes:
 
 
 
@@ -56,18 +56,19 @@ Notes:
 
 ## Outgrowing Hadoop
 
+<img src="../../assets/images/kafka/Outgrowing-Hadoop-2.png" alt="Outgrowing-Hadoop-2.png" style="max-width:50%;float:right;"/>
 
  * Hadoop cannot do real time processing.  
- Reacting to events in ‘real time’ (milliseconds to seconds)
+ Reacting to events in 'real time' (milliseconds to seconds)
      - We need another system for that
 
- * Hadoop is not meant as a ‘data router’
-     - Hadoop gets data in ‘batches’
-     - Not designed for ‘fast data movement’ (millions events / sec).
+ * Hadoop is not meant as a 'data router'
+     - Hadoop gets data in 'batches'
+     - Not designed for 'fast data movement' (millions events / sec).
 
-<img src="../../assets/images/kafka/Outgrowing-Hadoop-2.png" alt="Outgrowing-Hadoop-2.png" style="max-width:50%;"/>
 
-Notes: 
+
+Notes:
 
 
 
@@ -79,20 +80,20 @@ Notes:
 <img src="../../assets/images/kafka/For-Data-Buffer-Router-3.png" alt="For-Data-Buffer-Router-3.png" style="width:20%;float:right;"/>
 
  * Efficiently deal with large volume of data
-     - Data usually comes in as events 
+     - Data usually comes in as events
      - Each event can be small size X  Billions of them
  * Transport data in and out of system
-     - Million events came in 
+     - Million events came in
      - Million events went out
  * Support multiple publishers and consumers
      - Same data can be read by multiple consumers
- * Completely ‘de couple’ publishers and consumers
+ * Completely 'de couple' publishers and consumers
      - Easy to add more pubs / subs
  * Scale seamlessly as a cluster
  * Safeguard data -- can not loose data
 
 
-Notes: 
+Notes:
 
 
 
@@ -105,23 +106,23 @@ Notes:
      - JMS (Java Messaging System) based
      - Used as enterprise message bus
      - Guarantee message delivery with acknowledgements
-     - Usually not ‘high’ throughput
+     - Usually not 'high' throughput
  * **Amazon Kinesis**
      - Fully managed queue system within Amazon Cloud (AWS)
  * **Kafka**
      - Designed for massive throughput
      - (more in the next section)
-     
-<img src="../../assets/images/logos/jms-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:15%;"/>
-<img src="../../assets/images/logos/IBM-MQ-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:10%;"/>
-<img src="../../assets/images/logos/rabbit-mq-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:15%;"/>
-<img src="../../assets/images/logos/aws-kinesis-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:15%;"/>
+
+<img src="../../assets/images/logos/jms-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/>
+<img src="../../assets/images/logos/IBM-MQ-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:10%;"/>
+<img src="../../assets/images/logos/rabbit-mq-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/>
+<img src="../../assets/images/logos/aws-kinesis-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/>
 
 
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -138,19 +139,19 @@ Notes:
 
  * Kafka is a Publisher / Subscriber (Pub-Sub) messaging system
 
- * Distributed 
+ * Distributed
      - Scales seamlessly
 
  * High throughput
      - Capable of handling billions of messages per day
 
- * Replicated 
+ * Replicated
      - Safeguards data in case of machine failures
 
  * Created @ LinkedIn in 2010
     - Now Apache Project (Open Source)
 
-Notes: 
+Notes:
 
 
 ---
@@ -159,10 +160,10 @@ Notes:
 * Lots of databases
   - Built to store data
   - Piles of data : relational / key-value / caches / search indexes
-  
+
 * What is missing?
   - Something to handle the continuous flow of data
-  
+
 <img src="../../assets/images/kafka/3rd-party/franz-kafka.png" style="width:15%;float:right;" />
 
 * Hence, LinkedIn built Kafka from scratch
@@ -179,7 +180,7 @@ Notes:
   - powering real-time applications
   - data flow
   - in social network
- 
+
 * Kafka continued as
   - next-generation architectures
   - retailers redo their business process as continuous business stream
@@ -193,7 +194,7 @@ Notes:
   - big data systems like Hadoop
   - data integration or ETL tools
 * But not like them
-  - NOT ActiveMQ, RabbitMQ, IBM’s MQSeries
+  - NOT ActiveMQ, RabbitMQ, IBM's MQSeries
     - runs on a cluster and can scale to 1000s of nodes
     - replaces hand-wires message brokers
   - NOT a regular storage system
@@ -220,7 +221,7 @@ Notes:
 | 2017 Oct   | 1.0     |                                                                                                                      |
 | 2018 Jul   | 2.0     |&nbsp;|                                                                                                                      |
 
-Notes: 
+Notes:
 
 
 
@@ -241,15 +242,15 @@ Notes:
      - Event delivery system
      - User interactions (add to play list ..etc)
  * Find more use cases at: [BigDataUseCases.info](https://bigdatausecases.info)
- 
+
 <img src="../../assets/images/logos/linkedin-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:25%;"/> &nbsp; &nbsp;
 <img src="../../assets/images/logos/netflix-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:20%;"/> &nbsp; &nbsp;
 <img src="../../assets/images/logos/spotify-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:20%;"/>
 
 
-Notes: 
+Notes:
 
-- https://cwiki.apache.org/confluence/display/KAFKA/Powered+By 
+- https://cwiki.apache.org/confluence/display/KAFKA/Powered+By
 - http://techblog.netflix.com/2013/12/announcing-suro-backbone-of-netflixs.html
 - https://labs.spotify.com/2016/02/25/spotifys-event-delivery-the-road-to-the-cloud-part-i/
 - https://labs.spotify.com/2016/03/03/spotifys-event-delivery-the-road-to-the-cloud-part-ii/
@@ -273,15 +274,15 @@ Notes:
 
 ## Kafka Benchmarks
 
-| Benchmark          	| Hardware                                                                                                 	| Performance                                                                                                           	|
-|--------------------	|----------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------	|
-| By Linkedin @ 2014 	| 3 machines,</br>- Xeon 2.5 G , 6 cores,</br>- Six 7200 RPM SATA drives,</br>- 32 G RAM,</br>- 1G ethernet 	| Multiple test setups.,</br>One throughput,</br>- 80 MB / sec,</br>- 2 million messages / sec (each message 100 bytes) 	|
+| Benchmark          | Hardware                                                                                                  | Performance                                                                                                           |
+|--------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| By Linkedin @ 2014 | 3 machines,</br>- Xeon 2.5 G , 6 cores,</br>- Six 7200 RPM SATA drives,</br>- 32 G RAM,</br>- 1G ethernet | Multiple test setups.,</br>One throughput,</br>- 80 MB / sec,</br>- 2 million messages / sec (each message 100 bytes) |
 
  * The machines are medium scale
 
  * Notice more than one disk per machine
 
-Notes: 
+Notes:
 
 https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines
 
@@ -298,7 +299,7 @@ https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-write
 
 <img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="max-width:50%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -310,10 +311,10 @@ Notes:
 
 ### Message deletion
 
- *  **Other Message Queues**: 
+ *  **Other Message Queues**:
      - In Most systems, after a message is 'read' it can be deleted
 
- *  **Kafka:** 
+ *  **Kafka:**
      - Messages are NOT deleted after they are consumed.
      - There is not even a client API to delete a message.
      - Messages are expired by Kafka automatically after a certain time (7 days default)
@@ -321,7 +322,7 @@ Notes:
 
  *  **Reason**: Many applications can subscribe to a topic.  A client deleting a message can deprive other clients of their input
 
-Notes: 
+Notes:
 
 
 
@@ -333,17 +334,17 @@ Notes:
 
 ### Message read order
 
- *  **Other Message Queues**: 
+ *  **Other Message Queues**:
      - Usually messages are read in order
      - FF & Rewind are not performant operations
 
- *  **Kafka:** 
+ *  **Kafka:**
      - Messages can be read in any order
      - Fast-forward & Rewind are very fast operations
 
  *  **Reason**: Clients can choose to skip messages if need to be
 
-Notes: 
+Notes:
 
 
 
@@ -354,15 +355,15 @@ Notes:
 
 ### Message processing guarantee
 
- *  **Other Message Queues**: 
+ *  **Other Message Queues**:
      - Hard to guarantee one message will only be processed by one client
 
- *  **Kafka:** 
+ *  **Kafka:**
      - Guarantees messages are sent to one consumer
      - No duplicate message processing
      - (more on this in 'offset management' section)
 
-Notes: 
+Notes:
 
 
 
@@ -374,17 +375,17 @@ Notes:
 
 ### Concurrency With Multiple Applications
 
- *  **Other Message Queues**: 
+ *  **Other Message Queues**:
 
      - Usually one / small number of clients can access simultaneously
 
- *  **Kafka:** 
+ *  **Kafka:**
 
      - Large number of clients can read / write to Kafka at high speed
 
      - No locking / blocking
 
-Notes: 
+Notes:
 
 
 
@@ -393,15 +394,16 @@ Notes:
 
 ## How is Kafka Different From Other Message Queues?
 
-| Feature                                                                         	| Kafka                                                          	| Other Queue Systems                           	|
-|---------------------------------------------------------------------------------	|----------------------------------------------------------------	|-----------------------------------------------	|
-| **Deleting messages**                                                           	| Clients can not delete.,</br>Kafka auto-expires </br>messages  	| Clients can delete                            	|
-| **Message processing order**                                                    	| Can read in or out-of order                                    	| Usually read in order                         	|
-| **Message processing guarantee**                                                	| Kafka guarantee no </br>duplicate processing of a </br>message 	| Usually no                                    	|
-| **Concurrent read / write**                                                     	| Supported.,</br>High throughput                                	| Low throughput due to </br>locking & blocking 	|
-| **Message priorities**                                                          	| None                                                           	| Yes                                           	|
-| **Message ACKs,(Client notify </br>producer that a </br>message is processed)** 	| No                                                             	| May be                                        	|
-Notes: 
+| Feature                                                                         | Kafka                                                          | Other Queue Systems                           |
+|---------------------------------------------------------------------------------|----------------------------------------------------------------|-----------------------------------------------|
+| **Deleting messages**                                                           | Clients can not delete.,</br>Kafka auto-expires </br>messages  | Clients can delete                            |
+| **Message processing order**                                                    | Can read in or out-of order                                    | Usually read in order                         |
+| **Message processing guarantee**                                                | Kafka guarantee no </br>duplicate processing of a </br>message | Usually no                                    |
+| **Concurrent read / write**                                                     | Supported.,</br>High throughput                                | Low throughput due to </br>locking & blocking |
+| **Message priorities**                                                          | None                                                           | Yes                                           |
+| **Message ACKs,(Client notify </br>producer that a </br>message is processed)** | No                                                             | May be                                        |
+
+Notes:
 
 
 
@@ -436,20 +438,20 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 Thanks to: https://www.quora.com/What-is-the-actual-role-of-ZooKeeper-in-Kafka
 
 
 ---
 
-## Lab Prep 
+## Lab Prep
 
 #### Instructions for Instructor
 
 <img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/>
 
- 
+
  * Distribute  **kafka-labs.zip**  to students
 
  * Distribute cloud VM details and assign each student a VM
@@ -461,7 +463,7 @@ Thanks to: https://www.quora.com/What-is-the-actual-role-of-ZooKeeper-in-Kafka
         * Native VNC client
 
 
-Notes: 
+Notes:
 
 
 
@@ -489,7 +491,7 @@ Notes:
  Please walk through this lab first on screen
 
 
-Notes: 
+Notes:
 
 
 
@@ -504,7 +506,7 @@ Notes:
 ## Kafka Architecture
 
 
- * Kafka is designed as a  **Pub-Sub messaging system** 
+ * Kafka is designed as a  **Pub-Sub messaging system**
 
  *  **Producers**  publish messages
 
@@ -512,7 +514,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Kafka-Architecture-01.png"  style="max-width:80%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -524,14 +526,14 @@ Notes:
 
  * Kafka is designed to run on many nodes as a cluster
 
- * Kafka machines are called ‘brokers’
+ * Kafka machines are called 'brokers'
 
  * Kafka automatically backs up data on at least another machine (broker)
 
 <img src="../../assets/images/kafka/Kafka-Architecture-02.png" alt="Kafka-Architecture-02.png" style="width:30%;"/>
 
 
-Notes: 
+Notes:
 
 
 
@@ -548,16 +550,16 @@ Notes:
      -  **Zookeeper**: Keep track of brokers
 
  * Data
-     -  **Message:**  ‘basic unit’ of data in Kafka
+     -  **Message:**  'basic unit' of data in Kafka
      -  **Topics**: Messages are organized as topics
      -  **Partitions**: Topics are split into partitions
      -  **Commit Log**: How data is organized
 
  * Advanced
-     - **Consumer Group**: a set of consumers for scaling 
-     - **Offset**: message’s position within a partition
+     - **Consumer Group**: a set of consumers for scaling
+     - **Offset**: message's position within a partition
 
-Notes: 
+Notes:
 
 
 
@@ -577,9 +579,9 @@ Notes:
      - We will use a message queue instead of database
      - We are going to send messages for each event
         * Each user email is sent as a message
-        * System metrics are sent as events 
+        * System metrics are sent as events
 
-Notes: 
+Notes:
 
 
 
@@ -591,7 +593,7 @@ Notes:
 
 <img src="../../assets/images/kafka/My-Connect-Design.png" alt="My-Connect-Design.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -610,7 +612,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Kafka-Concepts.png" alt="Kafka-Concepts.png" style="max-width:80%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -626,20 +628,20 @@ Notes:
 
  * We can set expiration-times & replication settings per topic
 
- * Topics are broken into smaller units called partitions 
+ * Topics are broken into smaller units called partitions
      - One to many ( 1 -> M)
      - Think HDFS file -> blocks
 
 <img src="../../assets/images/kafka/Topics.png" alt="Topics.png" style="max-width:80%;"/>
 
-Notes: 
+Notes:
 
 
 
 
 ---
 
-## Partitions 
+## Partitions
 
 
  * Partition is a physical entity
@@ -654,7 +656,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Partitions.png" alt="Partitions.png" style="width:50%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -667,14 +669,14 @@ Notes:
  * One partition is stored in one machine (broker)
  * Partitions are replicated to prevent data loss, in case a machine crashes
  * Default setup is 2 copies (one primary, one replica)
-     - One broker is the ‘ **owner** ’ for a partition
+     - One broker is the ' **owner** ' for a partition
  * Replicas are purely there to prevent data loss
  * Replicas are never written to,  nor read from
      - So increasing number of replicas does not increase throughput
 
 <img src="../../assets/images/kafka/Partitions-Replicas.png" alt="Partitions-Replicas.png" style="max-width:50%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -686,7 +688,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Kafka-Architecture-Topics-Partitions-Replicas.png" alt="Kafka-Architecture-Topics-Partitions-Replicas.png" style="max-width:40%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -697,20 +699,20 @@ Notes:
 <img src="../../assets/images/kafka/Commit-Log.png" alt="Commit-Log.png" style="width:27%;float:right; "/>
 
 
- * In Kafka, data is stored in  **commit logs** 
+ * In Kafka, data is stored in  **commit logs**
  * Commit Log is  **simple file on disk** that stores message bytes
  * Messages are always  **appended**  (to the end) of commit log
      - Commit log can not be modified in the middle ( **immutable** )
  * Commit log maintains order of messages
      - So clients can read messages in order
  * Provides high concurrency & high throughput
-     - No locking 
+     - No locking
  * Each Partition has it's own commit log
 
 
 <img src="../../assets/images/kafka/Commit-Log-02.png" alt="Commit-Log-02.png" style="max-width:50%; "/>
 
-Notes: 
+Notes:
 
 
 
@@ -721,23 +723,23 @@ Notes:
 
 <img src="../../assets/images/kafka/kafka-message-format.jpg" alt="Commit-Log-02.png" style="width:45%;float:right; "/>
 
- * In Kafka basic ‘data unit’ is a message
- 
- * Kafka treats messages as ‘bunch of bytes’
-     - Doesn’t really care what the message payload is
-     
+ * In Kafka basic 'data unit' is a message
+
+ * Kafka treats messages as 'bunch of bytes'
+     - Doesn't really care what the message payload is
+
  * Optionally messages can have metadata, like keys
     - Keys are bytes too
     - Keys are used to determine which partition to write to
         - Think 'hashing', Same key always go to same partition (more on this later)
-        
+
  * Messages can have optional schema
      - Uses AVRO to specify schema
      - This is for the benefit of clients, Kafka doesn't care about schema
-     
 
 
-Notes: 
+
+Notes:
 
 
 
@@ -749,7 +751,7 @@ Notes:
 
  * Messages are written  **in order** on each partition
 
- * Partitions are  **ordered and immutable** 
+ * Partitions are  **ordered and immutable**
 
  *  **No order** maintained across partitions
 
@@ -758,7 +760,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Putting-It-All-Together-Topics.png" alt="Putting-It-All-Together-Topics.png" style="max-width:50%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -789,7 +791,7 @@ Notes:
 ---
 
 ## Broker Services
- 
+
  * **Services to Producer**
      - Accepts messages from Producers
      - Assigns a unique offsets (incrementing) to messages
@@ -800,7 +802,7 @@ Notes:
      - Assign partitions to consumers in consumer groups
 
 
-Notes: 
+Notes:
 
 
 
@@ -812,7 +814,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Physical-and-Logical.png" alt="Physical-and-Logical.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -823,7 +825,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png" alt="Brokers-Leaders-Partitions-Replications.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -833,7 +835,7 @@ Notes:
 ## Brokers / Leaders / Partitions / Replications
 
 
- * Each partition has ONE broker as ‘leader’ (primary / owner) 
+ * Each partition has ONE broker as 'leader' (primary / owner)
 
  * One broker can be a leader for many partitions
 
@@ -845,7 +847,7 @@ Notes:
 
  * Consumers also read from partition leader
 
-Notes: 
+Notes:
 
 
 
@@ -857,7 +859,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png" alt="Producers-Consumers-Topics-Partitions.png" style="max-width:60%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -882,14 +884,14 @@ Notes:
  *  **Logs**: kafka logs
 
 
-Notes: 
+Notes:
 
 
 
 
 ---
 
-## Kafka Command Utilities in BIN 
+## Kafka Command Utilities in BIN
 
 
  * Starting Kafka brokers
@@ -910,7 +912,7 @@ Notes:
 
      - **bin/kafka-console-consumer.sh**
 
-Notes: 
+Notes:
 
 
 
@@ -937,7 +939,7 @@ $  bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test
 
 ```
 
-Notes: 
+Notes:
 
 
 
@@ -954,7 +956,7 @@ Notes:
 <img src="../../assets/images/kafka/Using-Producer-01.png" alt="Using-Producer-03.png" style="width:70%;"/>
 
 
-Notes: 
+Notes:
 
 
 
@@ -966,8 +968,8 @@ Notes:
 <img src="../../assets/images/icons/individual-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
 
- *  **Overview**: 
- Use Kafka CLI tools 
+ *  **Overview**:
+ Use Kafka CLI tools
 
  *  **Builds on previous labs**:   
  1-install Kafka
@@ -978,10 +980,10 @@ Notes:
  *  **Instructions**:   
  lab-2: labs/2-kafka-utils.md
 
- *  **To Instructor**: 
+ *  **To Instructor**:
 
 
-Notes: 
+Notes:
 
 
 
@@ -999,18 +1001,18 @@ Notes:
 
 
  * Producers create new messages
- * Producers typically don’t care which partition to write to
+ * Producers typically don't care which partition to write to
  * They will balance writing across multiple partitions.-> Provides scale & load balancing
- * Each message has a  **unique offset within a partition** 
+ * Each message has a  **unique offset within a partition**
      - Increasing number (Long)
      - Added by Kafka automatically when a message is written
- * Producers ‘ **append** ’ messages to the end of partition
- * If messages have a ‘ **key** ’ 
+ * Producers ' **append** ' messages to the end of partition
+ * If messages have a ' **key** '
      - A particular key is guaranteed to be written to the same partition
      - Done using hashing of key
      - Guarantees message order within a key
 
-Notes: 
+Notes:
 
 
 
@@ -1024,7 +1026,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Writing-To-Partitions.png" alt="Writing-To-Partitions.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1040,7 +1042,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Writing-With-Keys.png" alt="Writing-With-Keys.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1056,17 +1058,17 @@ Notes:
 
      - destination: google.com / yahoo.com  / facebook.com
 
-     - User ID: 
+     - User ID:
 
-     - From IP Address: 
+     - From IP Address:
 
      - Timestamp
 
- * Discuss the implication of choosing **key = destination** 
+ * Discuss the implication of choosing **key = destination**
 
  * Hint: Which domains do you think get a lot of traffic?
 
-Notes: 
+Notes:
 
 
 
@@ -1078,7 +1080,7 @@ Notes:
  * If each individual message is written to Kafka, this will increase network round trips.
      - Increased latency
 
- * Messages are written as batches 
+ * Messages are written as batches
      - Reduces round trip
      - Increases throughput
      - Batches can be compressed (reduces network payload)
@@ -1087,7 +1089,7 @@ Notes:
      - Increase throughput
      - But it will take longer for individual messages to propagate
 
-Notes: 
+Notes:
 
 
 
@@ -1111,7 +1113,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Commit-Log-02.png" alt="Commit-Log-02.png" style="max-width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1121,7 +1123,7 @@ Notes:
 ## Consumer Group
 
 
- * Consumers belong to a  **consumer group** 
+ * Consumers belong to a  **consumer group**
 
  * A consumer group is  **collection of consumers** that consume a particular topic
 
@@ -1131,9 +1133,9 @@ Notes:
 
  * One consumer can read one or more partitions (one to many relationship)
 
- * Partition to consumer is mapping is called  **ownership** 
+ * Partition to consumer is mapping is called  **ownership**
 
-Notes: 
+Notes:
 
 
 
@@ -1145,7 +1147,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Consumer-Group.png" alt="Consumer-Group.png" style="max-width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1163,15 +1165,15 @@ Notes:
 
      - Faster allocation times
 
- * For each group, one broker is selected as  **group coordinator** 
+ * For each group, one broker is selected as  **group coordinator**
 
  * Group coordinator handles partition assignment
 
-     - when new consumers arrive, 
+     - when new consumers arrive,
 
      - When old consumers leave
 
-Notes: 
+Notes:
 
 
 
@@ -1189,7 +1191,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Putting-It-All-Together.png" alt="Putting-It-All-Together.png" style="max-width:60%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1203,7 +1205,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Partition-Rebalance.png" alt="Partition-Rebalance.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1226,7 +1228,7 @@ Notes:
  * During rebalance period (usually few seconds) all consumers in a consumer group don't have access to data
      - 'Holding pattern'
 
-Notes: 
+Notes:
 
 
 
@@ -1244,7 +1246,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Multiple-Consumer-Groups.png" alt="Multiple-Consumer-Groups.png" style="max-width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1258,7 +1260,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Consumer-Behavior-01.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1272,7 +1274,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Consumer-Behavior-02.png" alt="Consumer-Behavior-02.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1288,7 +1290,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Consumer-Behavior-03.png" alt="Consumer-Behavior-03.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1302,11 +1304,11 @@ Notes:
 
      - Not a good use of resources
 
- *  **Quiz: How can we fix this scenario?** 
+ *  **Quiz: How can we fix this scenario?**
 
 <img src="../../assets/images/kafka/Consumer-Behavior-04.png" alt="Consumer-Behavior-04.png" style="max-width:40%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1315,21 +1317,21 @@ Notes:
 
 ## Message Retention
 
- *  **Period based** 
+ *  **Period based**
     - Retention period is configured per topic
-    - Default is  **7 days** 
+    - Default is  **7 days**
     - Examples:
        - Topic "emails": store for 7 days
        - Topic "metrics": store for 2 hours
        - Topic "alerts": store 1 day
 
- *  **Size based** 
+ *  **Size based**
     - Retention can be size-limited per topic
     - Once the limit is reached, Kafka will expire and purge messages automatically
     - Example:
        - Topic "temp_sensor": size limit 10 GB
 
-Notes: 
+Notes:
 
 
 
@@ -1355,9 +1357,9 @@ Notes:
  original data (before compaction) on top, after compaction at the bottom
 
 
- 
 
-Notes: 
+
+Notes:
 
 Key 1 @ 00:19 and key 6 @ 01:17 are retended.
 
@@ -1371,7 +1373,7 @@ Key 1 @ 00:19 and key 6 @ 01:17 are retended.
 
 <img src="../../assets/images/kafka/Log-Compaction-Illustrated.png" alt="Log-Compaction-Illustrated.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1392,7 +1394,7 @@ Image source : https://kafka.apache.org/documentation/
 
 <img src="../../assets/images/kafka/Log-Compaction.png" alt="Log-Compaction.png" style="max-width:80%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1404,15 +1406,15 @@ Notes:
 
  * The compaction is done in the background by Log Cleaner.
 
- * Log Cleaner uses a pool of background threads 
+ * Log Cleaner uses a pool of background threads
 
-     - that recopy log segment files, 
+     - that recopy log segment files,
 
      - removing records whose key appears in the head of the log
 
  *  **log .cleaner.min.compaction.lag.ms**: The minimum time a message will remain uncompacted in the log. Only applicable for logs that are being compacted.
 
-Notes: 
+Notes:
 
 
 
@@ -1428,11 +1430,11 @@ Notes:
 
  * It is no longer retained after delete retention point.
 
- * Will be deleted after delete retention point. 
+ * Will be deleted after delete retention point.
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -1451,7 +1453,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Multi-Data-Center-Deployment.png" alt="Multi-Data-Center-Deployment.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1464,14 +1466,14 @@ Notes:
  * Multi data center deployments are useful for
      - Disaster recovery
      - Isolating data according to local laws.E.g. European Union has stricter privacy rules.  So data collected there has to be hosted in a data center in EU.
- * Kafka has a utility called ‘mirror maker’
+ * Kafka has a utility called 'mirror maker'
  * It acts as both consumer and producer
      - It consumes data from one cluster
-     - Turns around and ‘produces’ data into another cluster
+     - Turns around and 'produces' data into another cluster
 
 <img src="../../assets/images/kafka/Multi-Data-Center-Deployment-01.png" alt="Multi-Data-Center-Deployment-01.png" style="max-width:50%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1483,7 +1485,7 @@ Notes:
 
 <img src="../../assets/images/kafka/My-Connect-Design-02.png" alt="My-Connect-Design-02.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -1496,7 +1498,7 @@ Notes:
 <img src="../../assets/images/icons/quiz-icon.png"  style="width:30%;float:right;"/>
 
 
- * How is Kafka different from 
+ * How is Kafka different from
      - Hadoop
      - Database
 
@@ -1506,4 +1508,4 @@ Notes:
  * Having more partitions will increase cluster throughput  
  True / False
 
-Notes: 
+Notes:
