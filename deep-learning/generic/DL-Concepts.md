@@ -316,7 +316,7 @@ Notes:
 
 - Then it measures the error (networks output (prediction) vs. the expected output)
 
-- It then computes how much each neuron in the last hidden layer contributed to each output neuron’s error
+- It then computes how much each neuron in the last hidden layer contributed to each output neuron's error
 
 - It traverses the network in reverse, computing errors from previous layer
     - until it reaches the input layer

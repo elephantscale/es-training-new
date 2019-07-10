@@ -11,7 +11,7 @@
 <img src="../../assets/images/deep-learning/3rd-party/Image-Classification.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%"/> <!-- {"left" : 2.61, "top" : 3.07, "height" : 3.9, "width" : 5.03} -->
 
 
- * [IBM’s Deep Blue supercomputer](https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer) beat the chess world champion Garry Kasparov back in 1996
+ * [IBM's Deep Blue supercomputer](https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer) beat the chess world champion Garry Kasparov back in 1996
  
  * But not until recently (2010) or so, computers were unable to recognize a cat or a dog from an image
  
@@ -255,7 +255,7 @@ https://en.wikipedia.org/wiki/Kernel_(image_processing)
 ## Process of Convolution
 
 
- * Assume the filter/kernel is a weight matrix “wk“. For example, let’s assume a 3X3 weighted matrix.
+ * Assume the filter/kernel is a weight matrix "wk". For example, let's assume a 3X3 weighted matrix.
 
 |   |   |   |
 |---|---|---|
@@ -853,7 +853,7 @@ Notes:
 
 - Rinse and repeat till the predictions become sufficiently accurate.
 
-- It’s quite likely that the initial iteration would have close to 0% accuracy. Repeating the process several times, however, can yield a highly accurate model (> 90%).
+- It's quite likely that the initial iteration would have close to 0% accuracy. Repeating the process several times, however, can yield a highly accurate model (> 90%).
 
 ---
 
@@ -944,7 +944,7 @@ Notes:
 ## MNIST Example
 
 
- * MNIST Dataset is the “hello world” of deep learning
+ * MNIST Dataset is the "hello world" of deep learning
  
  * 28x28 greyscale scanned digits
 

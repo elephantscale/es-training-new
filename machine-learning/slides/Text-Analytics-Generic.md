@@ -73,7 +73,7 @@ Notes:
 ## Text Analytics Use Case : Customer Service
 
 
- * Many companies use a “chat now” feature for customer interaction
+ * Many companies use a "chat now" feature for customer interaction
 
  * Why not mine this data?
 
@@ -81,7 +81,7 @@ Notes:
 ```text
    Mary: Welcome to Ultimate Widgets!  How can I help?
 
-   John: Hi!  I can’t get my widget to work.
+   John: Hi!  I can't get my widget to work.
 
    Mary: What seems to be the problem?
 
@@ -903,7 +903,7 @@ Notes:
 
  *  **CBOW (Continuous Bag of Words)**
 
-     - Tries to predict a word on bases of it’s neighbors.
+     - Tries to predict a word on bases of it's neighbors.
 
  *  **SkipGram**
 

@@ -220,7 +220,7 @@ https://medium.com/tensorflow/standardizing-on-keras-guidance-on-high-level-apis
 
 * Training a deep learning model from scratch on a multi-million-image database requires weeks of training time and lots of computational energy, making it a difficult task
 
-* Organizations that participated in the ImageNet competition open-sourced their trained models on Caffe’s website
+* Organizations that participated in the ImageNet competition open-sourced their trained models on Caffe's website
 
 * Models can be trained for
     - specific task (image recognition,  text analytics)

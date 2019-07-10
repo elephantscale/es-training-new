@@ -24,7 +24,7 @@ Notes:
 
      - Else, `y = 0`
 
-     - Not Differentiable (can’t use gradient descent to optimize)
+     - Not Differentiable (can't use gradient descent to optimize)
 
  * Possible Activation Funtions
    - None (just use raw output of neuron)
@@ -73,7 +73,7 @@ Notes:
 
  * Tanh is more popular, rather than Sigmoid.
 
- * The two are closely related, as tanh is a “stretched” Sigmoid
+ * The two are closely related, as tanh is a "stretched" Sigmoid
 
      - `Tanh(x) = 2 * logistic(2x) – 1`
 
@@ -126,7 +126,7 @@ Notes:
 ## Why ReLU?
 
 
- * Isn’t ReLU not differentiable?
+ * Isn't ReLU not differentiable?
 
      - It is not differentiable at zero
 
@@ -218,9 +218,9 @@ Notes:
 ## Logistic Regression Redux?
 
 
- * What we’ve done so far is essentially create a logistic regression classifier.
+ * What we've done so far is essentially create a logistic regression classifier.
 
- * In fact, with the Sigmoid activation function, we’ve done essentially exactly that.
+ * In fact, with the Sigmoid activation function, we've done essentially exactly that.
 
  * So are neural networks just a implementation scheme for logistic regression?
 
@@ -244,7 +244,7 @@ Notes:
 ---
 ## The XOR problem
 
- * What happens if we don’t have linear separability?
+ * What happens if we don't have linear separability?
 
  * For example, can we learn a function that does an exclusive or?
 
@@ -265,7 +265,7 @@ Notes:
 
  * Our problem is that our solution to a single layer neural network is linear.  
 
-     - We call the solution the “decision boundary”
+     - We call the solution the "decision boundary"
 
      - What if we could create a nonlinear decision boundary?
 
@@ -283,7 +283,7 @@ Notes:
 ---
 ## Why Hidden Layers
 
- * Hidden Layers allow us to solve the “XOR” problem
+ * Hidden Layers allow us to solve the "XOR" problem
 
      - Creating a nonlinear decision boundary
 
@@ -299,7 +299,7 @@ Notes:
 
      - Training that network may be difficult, however.
 
- * But it’s not enough
+ * But it's not enough
 
      - Current training methods mean that more than one layer is required in many cases.
 
@@ -325,7 +325,7 @@ Notes:
 ---
 ## Lab Review
 
- * What’s the minimum number of hidden layers required to correctly classify all the test data?
+ * What's the minimum number of hidden layers required to correctly classify all the test data?
 
  * Does adding any additional features help at all?
 
@@ -338,7 +338,7 @@ Notes:
 ---
 ## Training the Model
 
- * Rosenblatt’s original algorithm for training was simple:
+ * Rosenblatt's original algorithm for training was simple:
 
      - Iterate through weights and look at the output error
 
@@ -350,7 +350,7 @@ Notes:
 
      - With hidden layers, we now have a much greater number of weights to try.
 
-     - This kind of “brute force” method will take too long to train.
+     - This kind of "brute force" method will take too long to train.
 
 Notes:
 
@@ -361,7 +361,7 @@ Notes:
 
  * When we randomly initialize the weights, our first pass outputs of our network will almost certainly be wrong!
 
-     - We have training data, so we know the “right” answer
+     - We have training data, so we know the "right" answer
 
  * How do we calculate how wrong we are?
 

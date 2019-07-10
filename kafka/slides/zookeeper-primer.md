@@ -12,9 +12,9 @@
 <img src="../../assets/images/kafka/3rd-party/cpu-1.png"  style="width:20%;float:right;"/>
 
  * 1990s we had single core processors
-     - Programs ran in single ‘thread’ mode
+     - Programs ran in single 'thread' mode
      - The game was faster and faster clock speeds  (200MHZ ! …)
-     
+
 <br clear="all"/>
 
 <img src="../../assets/images/kafka/3rd-party/cpu-2.png" style="width:20%;float:right; "/>
@@ -28,7 +28,7 @@
 
 
 
-Notes: 
+Notes:
 
 Image credit: wikimedia.org
 
@@ -38,7 +38,7 @@ Image credit: wikimedia.org
 ## Now
 
 
- * Distributed systems with 
+ * Distributed systems with
 
      - Multiple nodes
 
@@ -48,7 +48,7 @@ Image credit: wikimedia.org
 
 <img src="../../assets/images/kafka/Now.png" alt="Now.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -64,7 +64,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
  * Source: Ki Young Lee via Flickr
 
@@ -77,7 +77,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Leader-Election-02.png" alt="Leader-Election-02.png" style="max-width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -89,7 +89,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Leader-Election-With-Zookeeper.png" alt="Leader-Election-With-Zookeeper.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -107,7 +107,7 @@ Notes:
 
 <img src="../../assets/images/kafka/Zookeeper-Cluster-Quorum.png" alt="Zookeeper-Cluster-Quorum.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -134,7 +134,7 @@ Notes:
      - Hadoop, HBase, Kafka
 
 
-Notes: 
+Notes:
 
 
 
@@ -150,12 +150,12 @@ Notes:
      - Odd number to break tie when voting
      - Minimum 3 nodes
      - Small number of nodes can support thousands of clients
- * Consensus protocol is called ‘ZAB’ - Zookeeper Atomic Broadcast.Similar to PAXOS protocol
- 
+ * Consensus protocol is called 'ZAB' - Zookeeper Atomic Broadcast.Similar to PAXOS protocol
+
 <img src="../../assets/images/kafka/zookeeper.png" style="max-width:40%;"/>
 
 
-Notes: 
+Notes:
 
 ZAB paper: http://web.stanford.edu/class/cs347/reading/zab.pdf
 Paxos: https://en.wikipedia.org/wiki/Paxos_(computer_science)
@@ -170,7 +170,7 @@ Paxos: https://en.wikipedia.org/wiki/Paxos_(computer_science)
 
 <img src="../../assets/images/kafka/ZK-File-System.png" alt="ZK-File-System.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 
 ---
@@ -186,4 +186,4 @@ Notes:
 
 <img src="../../assets/images/kafka/ZK-File-System.png" alt="ZK-File-System.png" style="width:50%;"/>
 
-Notes: 
+Notes:

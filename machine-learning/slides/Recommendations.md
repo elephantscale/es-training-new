@@ -276,23 +276,23 @@ Notes:
 ## Implicit vs Explicit Ratings
 
 
- * Some Applications have ”explicit” ratings:
+ * Some Applications have "explicit" ratings:
 
      - Netflix (1-5 stars)
 
-     - Facebook (“like”)
+     - Facebook ("like")
 
- * What if we don’t have explicit ratings?
+ * What if we don't have explicit ratings?
 
  * Example: Apple Itunes
 
-     - Doesn’t (probably) have a lot of star-ratings
+     - Doesn't (probably) have a lot of star-ratings
 
      - It does have your play history and counts.
 
-     - Can we “infer” a rating based on play history?
+     - Can we "infer" a rating based on play history?
 
-     - If you played a song 1000 times, does that indicate a “like?”
+     - If you played a song 1000 times, does that indicate a "like?"
 
 Notes:
 
@@ -361,7 +361,7 @@ Notes:
 
      - Most systems can compensate for this scenario
 
-        * Recommend  **‘popular items** '   (most people like popular items)
+        * Recommend  **'popular items** '   (most people like popular items)
 
         * Recommend based on location "people in San Jose watched these movies"
 

@@ -157,7 +157,7 @@ Notes:
 
      - To understand our data
 
-     - To find “more like this”
+     - To find "more like this"
 
 Notes:
 
@@ -398,7 +398,7 @@ Notes:
 Ways to Determine Distance between points
 Euclidian distance – (most obvious) Euclidian, which takes the distance in Euclidian space
 Cosine Distance – cosine of angle between vectors – ignores magnitude
-Manhattan distance: Effectively counts the number of square blocks one would “walk” to get there without cutting corners.
+Manhattan distance: Effectively counts the number of square blocks one would "walk" to get there without cutting corners.
 Tanimoto distance  Take both angle and magnitude into account.
 
 Most algorithms attempt to balance the
@@ -735,7 +735,7 @@ Notes:
 
  * Outliers may bias results.
 
- * Clusters not broadly (hyper)spherical don’t work well for k-means.
+ * Clusters not broadly (hyper)spherical don't work well for k-means.
 
      - Use hierarchical clustering for these situations.
 
@@ -918,7 +918,7 @@ Notes:
 
      - There are limitations
 
-     - They are called “variance”
+     - They are called "variance"
 
         * How much my reduce data preserve the nature of the original
 
@@ -1492,11 +1492,11 @@ Notes:
 
  * 1. Preprocessing, or feature scaling
 
- * 2. Compute the “covariance” matrix
+ * 2. Compute the "covariance" matrix
 
       - How each feature is related to another
 
- * 3. Find the “eigenvectors” of the covariance matrix
+ * 3. Find the "eigenvectors" of the covariance matrix
 
  * 4. Find the important principal components
 

@@ -60,7 +60,7 @@ Notes:
 | maxBins             | Max # of values for Categorical Variable                             | 3.2           |
 | minInstancesPerNode | Each child node must have at least this number of training instances | 0.0           |
 | minInfoGain         | Minimum Information Gain per split                                   |               |
-| impurity            | ‘gini’ = Measure Gini impurity ‘entropy’ = measure entropy impurity  | "gini"        |
+| impurity            | 'gini' = Measure Gini impurity 'entropy' = measure entropy impurity  | "gini"        |
 | featuresCol         | Which column as input features                                       | "features"    |
 | predictionCol       | Output prediction column                                             | "prediction"  |
 | labelCol            | Label Column                                                         | "label"       |
@@ -201,7 +201,7 @@ Notes:
 
 | **Parameter**     | **Description**                                                                    | **Default Value** |
 |-------------------|------------------------------------------------------------------------------------|-------------------|
-| criterion         | ‘gini’ for impurty vs. ‘entropy’ for information gain                              | `gini`            |
+| criterion         | 'gini' for impurty vs. 'entropy' for information gain                              | `gini`            |
 | max-features      | Maximum number of features to consider                                             | `auto`            |
 | max-depth         | Maximum depth of each tree                                                         | `auto`            |
 | min-samples-split | Min samples required to split in node                                              | 2                 |
@@ -319,7 +319,7 @@ Notes:
  |   **Parameter**   |                                   **Description**                                  | **Default Value** |
 |:-----------------:|:----------------------------------------------------------------------------------:|:-----------------:|
 | n_estimators      | Max Numbers of trees                                                               |         10        |
-| criterion         | ‘gini’ for impurty vs. ‘entropy’ for information gain                              |       `gini`      |
+| criterion         | 'gini' for impurty vs. 'entropy' for information gain                              |       `gini`      |
 | max_features      | Maximum number of features to consider                                             |       `auto`      |
 | max_depth         | Maximum depth of each tree                                                         |       `auto`      |
 | min_samples_split | Min samples required to split in node                                              |         2         |

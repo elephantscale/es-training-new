@@ -346,7 +346,7 @@ Notes:
 
 ## Vector Assembler
 * Transforms a Dataframe To Another Dataframe
-    - By adding (or appending) to a “features” column
+    - By adding (or appending) to a "features" column
 
 <img src="../../assets/images/machine-learning/vector-assembler-1.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 2.08, "height" : 5.05, "width" : 8.21} -->
 
@@ -683,9 +683,9 @@ Notes:
 
  * TF/IDF: Term Frequency/Inverse Document Frequency
 
-     - This essentially means the frequency of a term divided by its frequency in the larger group of documents (the “corpus”)
+     - This essentially means the frequency of a term divided by its frequency in the larger group of documents (the "corpus")
 
-     - Each word in the corpus is then a “dimension” – you would have thousands of dimensions.
+     - Each word in the corpus is then a "dimension" – you would have thousands of dimensions.
 
  * Word2Vec
 

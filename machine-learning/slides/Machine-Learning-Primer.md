@@ -66,7 +66,7 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 
 * Example: Self-driving cars
     - Historical approach:  
-    Write a massive program to instruct the car to handle all possible scenarios encountered while driving 
+    Write a massive program to instruct the car to handle all possible scenarios encountered while driving
         - This is immensely difficult
 
     - AI approach:  
@@ -109,14 +109,14 @@ Notes:
 ## Another AI Approach – Bottom Up
 
 
- * Computers can learn from 'ground up’ (data-driven)
+ * Computers can learn from 'ground up' (data-driven)
 
  * E.g. how babies learn to talk:
      - Learn from example
      - They don't know the 'whole dictionary' or 'grammatical rules'
 
  * The focus shifts from  **logic to data**
- 
+
  * More data => smarter systems
 
  * Success stories
@@ -308,7 +308,7 @@ Notes:
      - So running a 100 node cluster for 5 hrs --> $500
 
  *  **Advances in hardware** - CPU / GPUs / TPUs
- 
+
  - **Advances in Algorithms**
 
  - **Availability of pre-trained models**
@@ -601,7 +601,7 @@ Notes:
 
 ---
 
-## 1980’s and 1990’s
+## 1980's and 1990's
 
 <img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-01.png" style="max-width:80%;">
 
@@ -671,16 +671,16 @@ Notes:
 
 - Text data (CSV, JSON) can have structure too
 
-JSON data 
+JSON data
 
-```json 
+```json
 {   "name" : "Joe",
     "email" : "joe@gmail.com" }
 ```
 
 CSV data (Comma Seperated Values)
 ```
-joe,joe@gmail.com 
+joe,joe@gmail.com
 jane,jane@gmail.com
 ```
 
@@ -690,15 +690,15 @@ jane,jane@gmail.com
 
 
 - Text
-    - Documents : email, word documents 
+    - Documents : email, word documents
     - Survey results (customer feedback)
-    - customer support ticket notes 
+    - customer support ticket notes
 
-- Binary data 
+- Binary data
     - Audio (phone call recordings)
     - Images
     - Video (YouTube videos)
-    
+
 <img src="../../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
 <img src="../../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
 <img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
@@ -708,7 +708,7 @@ jane,jane@gmail.com
 
 ---
 
-## Semi-Structured Data 
+## Semi-Structured Data
 
 - This is 'between' structured and and unstructured
 
@@ -716,8 +716,8 @@ jane,jane@gmail.com
 
 - Example, tweet data
 
-```json 
-{   "user_id" : "user123", 
+```json
+{   "user_id" : "user123",
     "timestamp" : "2018-09-20 12:00:05 EST",
     "device" : "iPhone X",
     "location" : "34.893, 120.979",
@@ -766,7 +766,7 @@ jane,jane@gmail.com
     - Since it can be computationally very intensive;  So we may use cluster of computers for training
     - Clusters can contain 100s (or 1000s) of CPUs/GPUs/TPUs
 
-- The resulting model is orders of magnitude smaller in size 
+- The resulting model is orders of magnitude smaller in size
     - it could fit in your phone!
 
 <img src="../../assets/images/AI/data-size-vs-model-size.png" alt="AI-Vocabulary.png" style="max-width:100%;"/>
@@ -794,9 +794,9 @@ Notes:
 
 ## Machine Learning and Big Data
 
- * Until recently most of the machine learning is done on “single computer” (with lots of memory–100s of GBs)
+ * Until recently most of the machine learning is done on "single computer" (with lots of memory–100s of GBs)
 
- * Most R/Python/Java libraries are “single node based”
+ * Most R/Python/Java libraries are "single node based"
 
  * Now Big Data tools make it possible to run machine learning algorithms at massive scale–distributed across a cluster
 
@@ -845,10 +845,10 @@ Notes:
      - Wizards to guide
      - Virtually 'unlimited' scale
      - [Amazon Machine Learning](https://aws.amazon.com/machine-learning/), Azure Machine Learning,  Google ML
-     
-     
- <img src="../../assets/images/deep-learning/3rd-party/amazon-logo.png" alt="amazon-logo.png" style="width:25%;"/> 
- <img src="../../assets/images/deep-learning/3rd-party/azure-logo.png" alt="azure-logo.png" style="width:25%;"/> 
+
+
+ <img src="../../assets/images/deep-learning/3rd-party/amazon-logo.png" alt="amazon-logo.png" style="width:25%;"/>
+ <img src="../../assets/images/deep-learning/3rd-party/azure-logo.png" alt="azure-logo.png" style="width:25%;"/>
  <img src="../../assets/images/deep-learning/3rd-party/google-cloud.png" alt="google-cloud.png" style="width:25%;"/>
 
 
@@ -868,14 +868,14 @@ Notes:
 <img src="../../assets/images/logos/tensorflow-logo.png" style="width:20%;float:right;">
 
  *  **`TensorFlow`**
-     - Based on “data flow graphs”
-     - “Tensor” = batches of data
+     - Based on "data flow graphs"
+     - "Tensor" = batches of data
      - Language support: Python, C++
      - Run time: CPU, GPU
 
 <br  clear="all"/>
 
-<img src="../../assets/images/logos/bigdl-logo.png" style="width:25%;float:right; ">
+<img src="../../assets/images/logos/bigdl-logo-1.png" style="width:25%;float:right; ">
 
  *  **`Intel BigDL`**  
 
@@ -951,7 +951,7 @@ Notes:
 
 ---
 
-## Supervised Machine Learning 
+## Supervised Machine Learning
 
 <img src="../../assets/images/machine-learning/3rd-party/Supervised.png" style="width:40%;float:right;" />
 
@@ -1097,7 +1097,7 @@ Notes:
 
  * Why do we cluster?
      - To understand our data
-     - To find “more like this”
+     - To find "more like this"
 
 <img src="../../assets/images/machine-learning/Clustering-01.png" style="width:50%;">
 
@@ -1149,7 +1149,7 @@ Notes:
 
  * Marketing
 
-     - Consumer grouping ("soccer mom“...etc.) and behavior analysis
+     - Consumer grouping ("soccer mom"...etc.) and behavior analysis
 
  * Web
 
@@ -1265,7 +1265,7 @@ Notes:
 
  * [Deep Mind's AI beats GO champion](https://www.theverge.com/2017/10/18/16495548/deepmind-ai-go-alphago-zero-self-taught)
 
-    The company’s latest AlphaGo AI learned superhuman skills by playing itself over and over
+    The company's latest AlphaGo AI learned superhuman skills by playing itself over and over
 
  * [Google's Alpha-GO defeats GO master](https://qz.com/639952/googles-ai-won-the-game-go-by-defying-millennia-of-basic-human-instinct/)
 

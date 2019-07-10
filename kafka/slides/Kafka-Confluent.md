@@ -152,27 +152,27 @@ Notes:
 
 ```text
 // version 1
-{"namespace": ”com.example.videos",
+{"namespace": "com.example.videos",
   "type": "record",
-  "name": ”Event",
+  "name": "Event",
   "fields": [
      {"name": "id", "type": "int"},
-     {"name": ”type",  "type": "string"},
-     {"name": ”success",  "type": "string"}
+     {"name": "type",  "type": "string"},
+     {"name": "success",  "type": "string"}
 ]
 }
 ```
 
 ```text
 // version 2
-{"namespace": ”com.example.videos",
+{"namespace": "com.example.videos",
   "type": "record",
-  "name": ”Event",
+  "name": "Event",
   "fields": [
      {"name": "id", "type": "int"},
-     {"name": ”type",  "type": "string"},
-     {"name": ”success", "type": ”string"},
-     {"name": ”message", "type": "string"}  // <- new attribute
+     {"name": "type",  "type": "string"},
+     {"name": "success", "type": "string"},
+     {"name": "message", "type": "string"}  // <- new attribute
   ]}
 ```
 
@@ -257,7 +257,7 @@ Schemas can be registered for the Key as well.   …. /subjects/Kafka-key/versio
 
  * Register the same schema under a different subject
 
-     -  `curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" \ --data ‘{\"schema\": "{\"type\": \"string\"}"}’ http://localhost:8081/subjects/Kafka2-value/versions 
+     -  `curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" \ --data '{\"schema\": "{\"type\": \"string\"}"}' http://localhost:8081/subjects/Kafka2-value/versions 
 {"id":1} `
 
 
@@ -402,7 +402,7 @@ Notes:
        CREATE STREAM clickstream 
        (viewtime BIGINT, sessionid VARCHAR, domain VARCHAR) 
        WITH  (KAFKA_TOPIC= clickstream', 
-       VALUE_FORMAT='DELIMITED’, KEY=‘domain’);
+       VALUE_FORMAT='DELIMITED', KEY='domain');
 ```
 
  * Create a KSQL Table from a topic
@@ -411,7 +411,7 @@ Notes:
        CREATE TABLE clicks 
        (viewtime BIGINT, sessionid VARCHAR, domain VARCHAR) 
        WITH  (KAFKA_TOPIC= clickstream', 
-       VALUE_FORMAT= 'DELIMITED’, KEY=‘domain’);
+       VALUE_FORMAT= 'DELIMITED', KEY='domain');
 ```
 
 Notes: 

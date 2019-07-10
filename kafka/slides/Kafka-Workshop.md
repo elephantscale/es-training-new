@@ -11,7 +11,7 @@
 
 <img src="../../assets/images/kafka/3rd-party/Related-image.png" alt="Related-image.png" style="width:70%;"/>
 
-Notes: 
+Notes:
 
 Image from https://www.bright.consulting/service/implementation-services/
 
@@ -23,13 +23,13 @@ Image from https://www.bright.consulting/service/implementation-services/
 
  * Heavily hands-on
 
- * Based on: 
+ * Based on:
 
      - Actual use cases
 
      - Best practices available
 
-Notes: 
+Notes:
 
 
 
@@ -41,17 +41,17 @@ Notes:
 
  * We present a particular use case/problem
 
- * Work as groups to: 
+ * Work as groups to:
 
      - Come up with your solution
 
      - Present it to the class
 
- * Analyze 
+ * Analyze
 
      - Your solution
 
-     - Instructor’s solution
+     - Instructor's solution
 
 ---
 
@@ -69,7 +69,7 @@ Notes:
 
      - Kafka docs: https://kafka.apache.org/documentation/
 
-Notes: 
+Notes:
 
 
 
@@ -92,15 +92,15 @@ Notes:
 
  * Need to store all  **views** ,  **ratings** ,  **comments** in some kind of database
 
- * Assume some “processing” on ratings/comments will be required
+ * Assume some "processing" on ratings/comments will be required
 
- * Lab: 
+ * Lab:
 
      - Design a system to handle these requirements
 
 
 
-Notes: 
+Notes:
 
 Only design queueing portion and producer/consumers. Not DB or web app
 Have students draw a design on white board or project
@@ -108,12 +108,12 @@ Have students draw a design on white board or project
 
 ---
 
-## MyVideos Design: Our Solution 
+## MyVideos Design: Our Solution
 
 
 <img src="../../assets/images/kafka/Our-Solution-02.png" alt="Our-Solution-02.png" style="max-width:70%;"/>
 
-Notes: 
+Notes:
 
 Discussion: one topic vs multiple
 
@@ -123,7 +123,7 @@ Discussion: one topic vs multiple
 ## Lab: MyVideos Cluster setup
 
 
- *  **Overview**: 
+ *  **Overview**:
 
      - Setup a Kafka cluster for MyVideos
 
@@ -138,7 +138,7 @@ Discussion: one topic vs multiple
  *  **Approximate time**: 30 minutes
 
 
-Notes: 
+Notes:
 
 
 
@@ -150,7 +150,7 @@ Notes:
 
 <img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/>
 
- * Producer 
+ * Producer
 
      - Receives all events - views, ratings, comments as they occur
 
@@ -162,7 +162,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -186,9 +186,9 @@ Notes:
 
      - Rating:  user_id, video_id, time_of_rating, rating
 
-     - Comment: user_id, video_id, time_of_comment, comment 
+     - Comment: user_id, video_id, time_of_comment, comment
 
-Notes: 
+Notes:
 
 
 
@@ -204,7 +204,7 @@ Notes:
  * Reference: http://avro.apache.org/docs/current/spec.html
 
 
-Notes: 
+Notes:
 
 
 
@@ -214,21 +214,21 @@ Notes:
 ## MyVideos: View Schema: Our Solution
 
 ```text
-{"namespace": ”com.example.videos",
+{"namespace": "com.example.videos",
   "type": "record",
-  "name": ”View",
+  "name": "View",
   "fields": [
-     {"name": ”user_id", "type": "int"},
-     {"name": ”video_id", "type": "string"},
-     {"name": ”time_of_view", "type": { "type": "string", "logicalType": "timestamp
+     {"name": "user_id", "type": "int"},
+     {"name": "video_id", "type": "string"},
+     {"name": "time_of_view", "type": { "type": "string", "logicalType": "timestamp
 millis" }},
-     {"name": ”time_spent", "type": ”int"}
+     {"name": "time_spent", "type": "int"}
 
   ]
 }
 ```
 
-Notes: 
+Notes:
 
 
 
@@ -244,14 +244,14 @@ Example JSON data for Views:
   "user_id": 123,
   "video_id": "VID45128-1",
   "time_of_view": "2019-01-02T12:30:01",
-  ”time_spent_in_secs": 3.5
+  "time_spent_in_secs": 3.5
 }
 ```
 
 
  * Create schema at https://www.jsonschema.net/
 
-Notes: 
+Notes:
 
 
 
@@ -263,21 +263,21 @@ Notes:
 
 
 ```text
-{"namespace": ”com.example.videos",
+{"namespace": "com.example.videos",
  "type": "record",
- "name": ”Rating",
+ "name": "Rating",
  "fields": [
-     {"name": ”user_id", "type": "int"},
-     {"name": ”video_id", "type": "string"},
-     {"name": ”time_of_rating", "type": 
+     {"name": "user_id", "type": "int"},
+     {"name": "video_id", "type": "string"},
+     {"name": "time_of_rating", "type":
      { "type": "string", "logicalType": "timestamp-millis" }},
-     {"name": ”rating", "type": ”int"}
+     {"name": "rating", "type": "int"}
   ]
 }
 ```
 
 
-Notes: 
+Notes:
 
 
 
@@ -299,7 +299,7 @@ Example JSON data for Views:
 
  * Create schema at https://www.jsonschema.net/
 
-Notes: 
+Notes:
 
 
 
@@ -310,21 +310,21 @@ Notes:
 
 
 ```text
-{"namespace": ”com.example.videos",
+{"namespace": "com.example.videos",
  "type": "record",
- "name": ”Comment",
+ "name": "Comment",
  "fields": [
-     {"name": ”user_id", "type": "int"},
-     {"name": ”video_id", "type": "string"},
-     {"name": ”time_of_rating", "type":
+     {"name": "user_id", "type": "int"},
+     {"name": "video_id", "type": "string"},
+     {"name": "time_of_rating", "type":
      { "type": "string", "logicalType": "timestamp-millis" }},
-     {"name": ”comment", "type": ”string"
+     {"name": "comment", "type": "string"
   ]
 }
 ```
 
 
-Notes: 
+Notes:
 
 
 
@@ -334,7 +334,7 @@ Notes:
 ## Lab: MyVideos Producers
 
 
- *  **Overview**: 
+ *  **Overview**:
 
      - Create Producers for the Rating topics
 
@@ -345,7 +345,7 @@ Notes:
  *  **Approximate time**: 60-90 minutes
 
 
-Notes: 
+Notes:
 
 
 
@@ -355,7 +355,7 @@ Notes:
 ## Lab: MyVideos Producers
 
 
- *  **Overview**: 
+ *  **Overview**:
 
      - Create Producers for the Rating topics
 
@@ -366,7 +366,7 @@ Notes:
  *  **Approximate time**: 60-90 minutes
 
 
-Notes: 
+Notes:
 
 
 
@@ -392,21 +392,21 @@ Notes:
  * Modify your design to handle these requirements
 
 
-Notes: 
+Notes:
 
 HINT: Use sliding window in KStreams
 
 
 ---
 
-## MyVideos Design: Our Solution 
+## MyVideos Design: Our Solution
 
 <img src="../../assets/images/kafka/Design-Our-Solution-01.png" alt="Design-Our-Solution-01.png" style="width:70%;"/>
 
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -426,7 +426,7 @@ Notes:
  * How would you implement this?
 
 
-Notes: 
+Notes:
 
 HINT: Use sliding window in KStreams
 
@@ -436,15 +436,15 @@ HINT: Use sliding window in KStreams
 ## MyVideos: Statistics: Our Solution
 
 
- * Add a new Consumer app “statistics”
+ * Add a new Consumer app "statistics"
 
-     - Process ‘view’ and ‘rating’ topics using Kstreams:
+     - Process 'view' and 'rating' topics using Kstreams:
 
         * Create hopping windows of one minute
 
  * Reference: https://kafka.apache.org/20/documentation/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl-windowing
 
-Notes: 
+Notes:
 
 
 
@@ -453,18 +453,18 @@ Notes:
 
 ## Lab: MyVideos Consumers
 
- *  **Overview**: 
+ *  **Overview**:
 
      - Implement Statistics app
 
         * Consume Rating events
 
-        * Create Statistics topic 
+        * Create Statistics topic
 
  *  **Approximate time**: 1 hour
 
 
-Notes: 
+Notes:
 
 
 
@@ -492,7 +492,7 @@ Notes:
  * Modify your design to handle devices
 
 
-Notes: 
+Notes:
 
 
 
@@ -502,17 +502,17 @@ Notes:
 ## MyVideos: User Devices: Our Solution
 
 
- * Add following fields to “View” schema:
+ * Add following fields to "View" schema:
 
      - device_id, device_type
 
  * Add a new Consumer app
 
-     - Process ‘view’ topic using Kstreams:
+     - Process 'view' topic using Kstreams:
 
         * Group messages by device_type and count them
 
-Notes: 
+Notes:
 
 
 
@@ -529,7 +529,7 @@ Notes:
 
 <img src="../../assets/images/kafka/3rd-party/logs-1.jpg"  style="width:60%;"/>
 
-Notes: 
+Notes:
 
 
 
@@ -554,7 +554,7 @@ Notes:
      - Kafka (distributed message queue)
      - Log Stash
 
-Notes: 
+Notes:
 
 
 
@@ -574,7 +574,7 @@ Notes:
  * Can handle failures
 
 
-Notes: 
+Notes:
 
 
 
@@ -602,7 +602,7 @@ Notes:
      - Find log events of a particular severity
 
 
-Notes: 
+Notes:
 
 
 
@@ -618,7 +618,7 @@ Notes:
 
  * Consume messages and process using Kstreams/KSQL
 
-Notes: 
+Notes:
 
 
 
@@ -628,4 +628,4 @@ Notes:
 ## Review Questions
 
 
-Notes: 
+Notes:

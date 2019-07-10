@@ -65,7 +65,7 @@ Notes:
 | maxBins             | Max # of values for Categorical Variable                             | 32                |
 | minInstancesPerNode | Each child node must have at least this number of training instances | 0.0               |
 | minInfoGain         | Minimum Information Gain per split                                   |                   |
-| impurity            | ‘gini’ = Measure Gini impurity ‘entropy’ = measure entropy impurity  | `gini`            |
+| impurity            | 'gini' = Measure Gini impurity 'entropy' = measure entropy impurity  | `gini`            |
 | featuresCol         | Which column as input features                                       | "features"        |
 | predictionCol       | Output prediction column                                             | "prediction"      |
 | labelCol            | Label  Column                                                        | "label"           |
@@ -198,7 +198,7 @@ Notes:
 | maxBins             | Max # of values for Categorical Variable                             | 32                |
 | minInstancesPerNode | Each child node must have at least this number of training instances | 0.0               |
 | minInfoGain         | Minimum Information Gain per split                                   |                   |
-| impurity            | ‘                                                                    | `variance`        |
+| impurity            | '                                                                    | `variance`        |
 | featuresCol         | Which column as input features                                       | "features"        |
 | predictionCol       | Output prediction column                                             | "prediction"      |
 | labelCol            | Label Column                                                         | "label"           |

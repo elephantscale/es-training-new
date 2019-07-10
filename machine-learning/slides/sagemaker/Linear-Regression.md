@@ -105,7 +105,7 @@ Notes:
 <img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function.png" style="width:40%"/>
 
   * Where
-    - y’ is estimated
+    - y' is estimated
     - y is real value
 
 ---
@@ -238,7 +238,7 @@ Notes:
 ---
 
 ## Batch Gradient Descent
-  * We did “batch” gradient descent
+  * We did "batch" gradient descent
      - We used all training samples
      - There are versions that will use some groups of samples
   * There exists a precise solution in linear algebra
@@ -297,7 +297,7 @@ Notes:
 * Multiple factors are needed to predict house prices
 * This is called multiple linear regression
 * Terminology note
-    - “Multivariable” would mean a vector output, not scalar
+    - "Multivariable" would mean a vector output, not scalar
 
 ---
 

@@ -597,7 +597,7 @@ Amazon
 | AWS                                                                     | Azure                                                                                   | Google Cloud                                        |
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------|
 | P2 series : Nvidia K80 (pricing from $0.9 / hr)                         | ND series : NVIDIA Tesla P40 GPUs (starting at $0.9 / hr)                               | NVIDIA® Tesla® P100 (starting from $1.46 / gpu hr)  |
-| P3 series : Nvidia V100 (pricing from $3 / hr)                          | NC series : NVIDIA’s Tesla V100 GPUs (starting at $3 / hr)                              |  NVIDIA® Tesla® V100 (starting at $2.48 per GPU hr) |
+| P3 series : Nvidia V100 (pricing from $3 / hr)                          | NC series : NVIDIA's Tesla V100 GPUs (starting at $3 / hr)                              |  NVIDIA® Tesla® V100 (starting at $2.48 per GPU hr) |
 | [More Info](https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html) | [More Info](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/) | [More info](https://cloud.google.com/gpu/)          |
 
 <img src="../../assets/images/logos/aws-logo-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%"/>

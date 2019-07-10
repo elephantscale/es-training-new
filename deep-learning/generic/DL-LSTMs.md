@@ -31,7 +31,7 @@ Notes:
 
  * As data goes through when traversing an RNN, some information is lost after each time step
 
- * After a while, the RNN’s state contains virtually no trace of the first inputs
+ * After a while, the RNN's state contains virtually no trace of the first inputs
 
  * In some analysis we need to remember earlier inputs
 
@@ -43,9 +43,9 @@ Notes:
 ---
 ## Vanishing Gradient Problem (again)
 
- *  As we train, our network becomes more and more ”hardened” to new stimulus
+ *  As we train, our network becomes more and more "hardened" to new stimulus
 
- *  “You can’t teach an old dog new tricks!”
+ *  "You can't teach an old dog new tricks!"
 
      -  It means that new input data will have little impact
 
@@ -59,9 +59,9 @@ Notes:
 
  *  Why do human brains forget?
 
-     -  Is it because we can’t hold the information?
+     -  Is it because we can't hold the information?
 
-     -  No, when we “remember” something we realize the data was there all along.
+     -  No, when we "remember" something we realize the data was there all along.
 
      -  But we somehow de-emphasized it.
 
@@ -73,7 +73,7 @@ Notes:
 
      -  Past data should be increasingly less important
 
- *  We do need “forgetfulness”  
+ *  We do need "forgetfulness"  
 
 ![](../../assets/images/deep-learning/3rd-party/Long-Short-Term-Memory-LSTM-Neural-Networks-Forgetfulness-0.png) <!-- {"left" : 7.2, "top" : 4.91, "height" : 1.99, "width" : 2.82} -->
 
@@ -98,7 +98,7 @@ Image credit : https://pixabay.com/en/brain-turn-on-education-read-book-605603/
 
      -  Data can be accessed if a path to the memory is found
 
-     -  Older data, however, may be “ **forgotten**  ”, the path is not found.
+     -  Older data, however, may be " **forgotten**  ", the path is not found.
 
 ![](../../assets/images/deep-learning/which-parts-of-the-brain-affect-memory-.png) <!-- {"left" : 1.97, "top" : 4.5, "height" : 2.71, "width" : 6.31} -->
 
@@ -161,7 +161,7 @@ LM2Text Paper : https://github.com/handong1587/handong1587.github.io/blob/master
 ---
 ## LSTM: Long-Short-Term Memory
 
- *  LSTM contains a long-term memory, a “forget gate” and a short-term memory
+ *  LSTM contains a long-term memory, a "forget gate" and a short-term memory
 
 ![](../../assets/images/deep-learning/LSTM-2.png) <!-- {"left" : 1.02, "top" : 2.18, "height" : 3.61, "width" : 8.21} -->
 
@@ -272,7 +272,7 @@ Notes:
 ---
 ## Peepholes
 
- * One popular LSTM variant, introduced by Gers & Schmidhuber (2000), is adding “peephole connections.” 
+ * One popular LSTM variant, introduced by Gers & Schmidhuber (2000), is adding "peephole connections." 
 
  *  allow the current *state*  of the cell to be considered at the input
 

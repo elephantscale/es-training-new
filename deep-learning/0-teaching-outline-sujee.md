@@ -3,7 +3,7 @@
 ## day 1
 
 - start with a Overview video
-        - Google’s view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
+        - Google's view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
 
 
 DL intro 

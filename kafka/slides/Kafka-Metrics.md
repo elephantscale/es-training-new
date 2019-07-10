@@ -260,7 +260,7 @@ Notes:
 ## Metrics Library: Meters
 
 
- * A meter measures the rate of events over time.(e.g., “requests per second”). 
+ * A meter measures the rate of events over time.(e.g., "requests per second"). 
 
  * In addition to the mean rate, meters also track 1-, 5-, and 15-minute moving averages.
 

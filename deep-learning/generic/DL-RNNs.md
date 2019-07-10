@@ -41,9 +41,9 @@ aligned with **my** values," **she** said.
 <!-- {"left" : 0, "top" : 1.38, "height" : 1.65, "width" : 10.25} -->
 
 
- * Who does the first ”she” refer to?
+ * Who does the first "she" refer to?
 
- * Who does the “my” refer to?
+ * Who does the "my" refer to?
 
  * We need  **state** to be able to figure this out!
 
@@ -79,7 +79,7 @@ Source: Wikipedia
 
  *  In Time Series data, the value reflects a change over Time
 
-     -  So one value isn’t so important by itself
+     -  So one value isn't so important by itself
 
      -  It is the change in the value over time that matters.
 
@@ -195,7 +195,7 @@ Notes:
 ## Units
 
 
- *  To use the hardware analogy, it’s easiest to keep feedback loops inside of **units** .
+ *  To use the hardware analogy, it's easiest to keep feedback loops inside of **units** .
 
  *  Units then contain both memory (state) and transformation
 

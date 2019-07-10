@@ -96,7 +96,7 @@
   - National Aeronautics and Space Administration (NASA) has been working around the world
   - and off of it
   - trying to answer some basic questions: 
-    - What’s out there in space? 
+    - What's out there in space? 
     - How do we get there? 
     - What will we find? 
     
@@ -115,7 +115,7 @@
 ## NASA Video Library Key Features
 * A user interface that automatically scales for PCs, tablets, and mobile phones
 
-* A search interface that lets people easily find what they’re looking for
+* A search interface that lets people easily find what they're looking for
 
 * The ability to easily download any media found on the site—or share it on Pinterest, Facebook, Twitter, or Google+.
 
@@ -184,7 +184,7 @@
   
 * Brands
   - Expedia.com
-    - one of the world’s largest full service online travel agency
+    - one of the world's largest full service online travel agency
     - with sites localized for more than 20 countries
   - Hotels.com
     - hotel specialist with sites in more than 60 countries

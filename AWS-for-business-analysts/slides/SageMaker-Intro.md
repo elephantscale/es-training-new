@@ -166,7 +166,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
   * Evaluate model performance
      - metrics based on algorithm
   * Validate with
-     - “Hold out” sets (20-30%)
+     - "Hold out" sets (20-30%)
      - K-fold validation (5-10)
   * Deploy to test system for online prediction
     - Evaluate, tweak model until satisfied

@@ -690,7 +690,7 @@ Notes:
 
 Notes:
 
-Reference : Chapter 2, “Introduction to Machine Learning With Python”
+Reference : Chapter 2, "Introduction to Machine Learning With Python"
 
 ---
 
@@ -703,7 +703,7 @@ Reference : Chapter 2, “Introduction to Machine Learning With Python”
 
 Notes:
 
-Reference : Chapter 2, “Introduction to Machine Learning With Python”
+Reference : Chapter 2, "Introduction to Machine Learning With Python"
 
 ---
 
@@ -717,7 +717,7 @@ Reference : Chapter 2, “Introduction to Machine Learning With Python”
 
 Notes:
 
-Reference : Chapter 2, “Introduction to Machine Learning With Python”
+Reference : Chapter 2, "Introduction to Machine Learning With Python"
 
 ---
 

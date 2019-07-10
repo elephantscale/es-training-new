@@ -178,7 +178,7 @@ Notes:
 ---
 ## LAB: MINST in CNN
 
-  * MNIST Dataset is the “hello world” of deep learning
+  * MNIST Dataset is the "hello world" of deep learning
 
   * 28x28 greyscale scanned digits
 

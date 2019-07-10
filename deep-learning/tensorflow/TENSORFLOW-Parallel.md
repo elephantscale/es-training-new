@@ -56,7 +56,7 @@ Notes:
 ## Why does it matter?
 
 
- * Most TF models are trained on one “big box” with lots of GPU and CPU power
+ * Most TF models are trained on one "big box" with lots of GPU and CPU power
 
      - No need for distributed (at least on training)
 
@@ -81,7 +81,7 @@ Notes:
 ## How do we scale this?
 
 
- * Most users of tensorflow don’t try to scale
+ * Most users of tensorflow don't try to scale
 
  * Train model on one box with multiple GPUs (vertical)
 
@@ -126,7 +126,7 @@ Notes:
 
      - Natively supports cluster configuration
 
- * Much of Google’s cluster computing framework is not part of TensorFlow
+ * Much of Google's cluster computing framework is not part of TensorFlow
 
      - Rudimentary cluster management solution. 
 
@@ -195,8 +195,8 @@ From tf.contrib import learn
 
 def model_fn(X, Y_, mode):
   Yn = … #model layers
-  predictions = {“probabilites”: …, “digits”: …}
-  evaluations = {“accuracy”: metrics.accuracy(…){
+  predictions = {"probabilites": …, "digits": …}
+  evaluations = {"accuracy": metrics.accuracy(…){
   loss = …
   train = layers.optimize_loss(loss, …)
   return learn.ModelFnOps(mode, predictions,
@@ -285,7 +285,7 @@ Notes:
 
      - No Data Locality!
 
-     - TensorFlow nodes are basically ”edge” nodes at best
+     - TensorFlow nodes are basically "edge" nodes at best
 
  * Bottom line: Distributed TensorFlow by itself isn't enough to run a cluster.
 
@@ -334,7 +334,7 @@ Notes:
 ## Container Images
 
 
- * Google’s native container images are not released to the public.
+ * Google's native container images are not released to the public.
 
  * Google adapted Kubernetes to use the very popular Docker image format
 
@@ -356,7 +356,7 @@ Notes:
 
  * Creating Docker Images for GPUs is not easy
 
-     - Docker doesn’t support GPUs out of the box.
+     - Docker doesn't support GPUs out of the box.
 
      - No way to allocate GPU resources.
 
@@ -364,7 +364,7 @@ Notes:
 
      - No point in distributing unless we have access to GPUs.
 
-     - ”Better to add more GPUs than CPUs”
+     - "Better to add more GPUs than CPUs"
 
      - Bottom Line: TF was considered unsuitable for containers.
 
@@ -442,7 +442,7 @@ Notes:
 
      - This is particularly true for TF Serving
 
- * ”more data usually beats better algorithms” – Anant Ramarajan
+ * "more data usually beats better algorithms" – Anant Ramarajan
 
      - TF Training also needs access to large datasets.
 
@@ -459,7 +459,7 @@ Notes:
 
  * How do we get data locality?
 
-     - We don’t.  There is no data locality.
+     - We don't.  There is no data locality.
 
      - Need very fast network connection
 
@@ -565,11 +565,11 @@ Notes:
 
  * Google open-sourced TensorFlow itself
 
- * Google’s larger ecosystem is not open-source.
+ * Google's larger ecosystem is not open-source.
 
  * Much of what allows TensorFlow to be distributed across massive scale at Google is proprietary to Google.
 
-     - Doesn’t want to give away the store! 
+     - Doesn't want to give away the store! 
 
      - Open-source tensorflow on a single node is not nearly as interesting as massively scaled tensorflow.
 
@@ -701,7 +701,7 @@ Notes:
 
      - Data must be loaded onto servers at runtime
 
-     - But it’s a worthwhile tradeoff for ML purposes
+     - But it's a worthwhile tradeoff for ML purposes
 
 ![](../../assets/images/deep-learning/3rd-party/Scaling-Tensorflow-Why-Cloud-Storage--0.png) <!-- {"left" : 2.59, "top" : 4.61, "height" : 2.6, "width" : 5.07} -->
 
@@ -731,7 +731,7 @@ Notes:
 ## Why Cloud Dataflow?
 
 
- * It’s rare that we can plug our raw data directly into our models.
+ * It's rare that we can plug our raw data directly into our models.
 
      - Normally, we have to transform the data into features
 
@@ -755,7 +755,7 @@ Notes:
 ## Cloud Dataflow is Apache Beam
 
 
- * ”Collapsing Lambda” – putting both real-time and batch transformations in one framework.
+ * "Collapsing Lambda" – putting both real-time and batch transformations in one framework.
 
  * Allows pipeline-based transformation of data
 
@@ -908,7 +908,7 @@ Notes:
 
      - Based on open-source Apache Beam and Google TensorFlow
 
-     - We can’t directly translate our Cloud Architecture to open-source
+     - We can't directly translate our Cloud Architecture to open-source
 
      - Dataflow and Cloud ML are  **serverless**  offerings.
 
@@ -941,7 +941,7 @@ Notes:
 
 ## Traditional Open-Source Big Data Stack
 
- * TensorFlow doesn’t easily fit into this stack
+ * TensorFlow doesn't easily fit into this stack
 
  * YARN cluster management does not play well with TensorFlow (for now)
 
@@ -1119,7 +1119,7 @@ Notes:
 ## Questions?? 
 
 
- * I hope you’ve enjoyed this talk and am delighted to hear your questions.
+ * I hope you've enjoyed this talk and am delighted to hear your questions.
 
 Notes: 
 

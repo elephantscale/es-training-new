@@ -80,7 +80,7 @@ Notes:
 
 - Tanh is more popular, rather than Sigmoid
 
-- The two are closely related, as tanh is a “stretched” Sigmoid
+- The two are closely related, as tanh is a "stretched" Sigmoid
 
 - Just like Sigmod, Tanh is S-shaped, continuous, and differentiable
 
@@ -314,7 +314,7 @@ Source :
 ## Activation Functions - Review
 
 
- * A Sigmoid Function is a mathematical function with a Sigmoid Curve (“S” Curve) and outputs a probability between 0 and 1.
+ * A Sigmoid Function is a mathematical function with a Sigmoid Curve ("S" Curve) and outputs a probability between 0 and 1.
 
  * A rectifier or ReLU (Rectified Linear Unit) is a commonly used activation function that allows one to eliminate negative units in an ANN. It helps solve vanishing/exploding gradient problems associated with other activation functions.
 

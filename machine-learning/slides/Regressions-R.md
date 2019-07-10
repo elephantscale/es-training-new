@@ -108,7 +108,7 @@ Coefficients:
 bill         0.24286    0.02754   8.818 2.15e-05 ***
 - - -
 Signif. codes:  
-0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 1.546 on 8 degrees of freedom
 Multiple R-squared:  0.9067,	Adjusted R-squared:  0.8951
@@ -219,7 +219,7 @@ Coefficients:
 bill         0.24286    0.02754   8.818 2.15e-05 ***
 - - -
 Signif. codes:  
-0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 
 ```

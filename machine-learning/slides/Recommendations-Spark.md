@@ -164,7 +164,7 @@ Notes:
 
         * Assign a number, say, 5.0 for yes, and 1.0 for no.
 
-     - What if preferences are just “implied”?
+     - What if preferences are just "implied"?
 
         * User viewed item as 5.0, no data for unviewed item.
 
@@ -188,7 +188,7 @@ Notes:
 
  * Train Model using number of iterations and rank.
 
- * Class “Rating”, contains a UserId, ItemId, and numeric rating (i.e. 0-5).  
+ * Class "Rating", contains a UserId, ItemId, and numeric rating (i.e. 0-5).  
 
  * Train model using training data:
 

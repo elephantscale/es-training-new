@@ -113,7 +113,7 @@ Notes:
 
 ## Class Logistics
 
-* Instructor’s contact
+* Instructor's contact
 
 * Slides
     - For each session, slides will be emailed out or delivered via virtual classroom

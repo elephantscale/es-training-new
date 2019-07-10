@@ -23,7 +23,7 @@ Notes:
 ## Process of Convolution
 
 
- * Assume the filter/kernel is a weight matrix “wk“. For example, let’s assume a 3X3 weighted matrix.
+ * Assume the filter/kernel is a weight matrix "wk". For example, let's assume a 3X3 weighted matrix.
 
 |   |   |   |
 |---|---|---|
@@ -173,7 +173,7 @@ Notes:
 
      - Stride is 2 
 
- * Here stride is same across two dimensions, but in general it can be different across height “sh” and width “sw”.
+ * Here stride is same across two dimensions, but in general it can be different across height "sh" and width "sw".
 
 
 Notes: 

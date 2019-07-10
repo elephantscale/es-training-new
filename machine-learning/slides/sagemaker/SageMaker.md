@@ -172,7 +172,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.ht
      - Offline testing
      - Online testing with % of live data
   * Validate with
-     - “Hold out” sets (20-30%)
+     - "Hold out" sets (20-30%)
      - K-fold validation (5-10)
 
 Notes:
