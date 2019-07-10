@@ -502,7 +502,7 @@ Notes:
 
 ---
 
-## Linear Regression in Python – Wrap Up
+## Linear Regression in Python - Wrap Up
 
 
  * Linear Regression is very well supported in Python

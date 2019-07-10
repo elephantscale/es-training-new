@@ -109,7 +109,7 @@ Notes:
 ---
 ## LSTM Networks
 
- * LSTM networks are the most commonly used variation of Recurrent Neural Networks (RNN)
+ * LSTM networks are the most commonly used variation of Recurrent Neural Networks (RNN)
 
  * The Long Short-Term Memory (LSTM) cell was proposed in 1997 by Sepp Hochreiter and Jürgen Schmidhuber (Link to paper)
 

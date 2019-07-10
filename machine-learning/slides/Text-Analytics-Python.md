@@ -38,7 +38,7 @@ https://elitedatascience.com/python-nlp-libraries
 ## Python Libraries
 
 
- * NLTK – Natural Language Tool Kit
+ * NLTK - Natural Language Tool Kit
 
      - Very popular and versatile library
 
@@ -359,7 +359,7 @@ Notes:
 
 ```text
 // using pip tool
-$  pip install –U textblob
+$  pip install -U textblob
 
 // to get dataset (same as NLTK)
 $ python -m textblob.download_corpora

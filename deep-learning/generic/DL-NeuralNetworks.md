@@ -75,7 +75,7 @@ Notes:
 
  * The two are closely related, as tanh is a "stretched" Sigmoid
 
-     - `Tanh(x) = 2 * logistic(2x) – 1`
+     - `Tanh(x) = 2 * logistic(2x) - 1`
 
  * Tanh is symmetric around zero.
 
@@ -135,8 +135,8 @@ Notes:
  * Why do we use ReLU?
 
      - Simple
-     – very easy understand
-     - Fast – computationally very cheap
+     - very easy understand
+     - Fast - computationally very cheap
      - No Vanishing gradient problem
      - No Exploding Gradient problem
 
@@ -308,7 +308,7 @@ Notes:
 
 
 ---
-## Perceptron Spiral Mini Lab–5 Mins
+## Perceptron Spiral Mini Lab-5 Mins
 
  * Try this at http://playground.tensorflow.org
  * Select the Spiral dataset as shown.

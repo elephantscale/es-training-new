@@ -9,7 +9,7 @@
 ## CF in Spark ML
 
 
- * Spark ML implements ALS – Alternating Minimum Squares Algorithm
+ * Spark ML implements ALS - Alternating Minimum Squares Algorithm
 
  *  **org.apache.spark.ml.recommendation.ALS**  **pyspark.ml.recommendation.ALS**
 
@@ -116,7 +116,7 @@ https://en.wikipedia.org/wiki/Receiver_operating_characteristic
 
  *  **Approximate time**:
 
-    - 30 – 40 mins
+    - 30 - 40 mins
 
  *  **Instructions**:
 
@@ -134,7 +134,7 @@ Notes:
 
 
  * "[Recommender Systems](https://www.slideshare.net/xamat/recommender-systems-machine-learning-summer-school-2014-cmu
-)" – presentation by Xavier Amtriain, Research Director @  Netflix
+)" - presentation by Xavier Amtriain, Research Director @  Netflix
 
  * "[Gentle introduction to Recommender systems](https://www.slideshare.net/xamat/recommender-systems-machine-learning-summer-school-2014-cmu
 )"
@@ -196,7 +196,7 @@ Notes:
 
 Notes:
 
-ALS – Alternating Least Squares is an algorithm.
+ALS - Alternating Least Squares is an algorithm.
 
 
 
@@ -213,7 +213,7 @@ ALS – Alternating Least Squares is an algorithm.
 
     **Model.predict (RDDUsersItems)**
 
-     - Input Takes an RDD of user – item pairs as argument (NOT Ratings)
+     - Input Takes an RDD of user - item pairs as argument (NOT Ratings)
 
      - Returns RDD of Rating (user, item, double rating)
 

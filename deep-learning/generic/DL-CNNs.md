@@ -422,7 +422,7 @@ Notes:
 ## Convolution Example
 
 
- * The image shows two kernels – vertical and horizontal filters. Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter.
+ * The image shows two kernels - vertical and horizontal filters. Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter.
 
 <img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="XXX image missing" style="background:white;max-width:100%;" /> 
 
@@ -642,7 +642,7 @@ Notes:
 
  <img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;" />  
 
- * Images that are grayscale have just one channel. So it needs just 1 sublayer. Colored images have three channels – Red, Green and Blue. So it needs 3 sublayers.
+ * Images that are grayscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
 
  * Satellite imagery that capture extra light frequencies (eg infrared) can have more channels.
 
@@ -969,8 +969,8 @@ imagenet/
 └── animals
     └── domestic
         ├── cat
-        │   ├── cat1.jpg
-        │   └── cat2.jpg
+        │   ├── cat1.jpg
+        │   └── cat2.jpg
         └── dog
             ├── dog1.jpg
             └── dog2.jpg

@@ -122,7 +122,7 @@ Notes:
 
 ---
 
-## Visualizing Text – Word Clouds (State of the Union Speech 2014)
+## Visualizing Text - Word Clouds (State of the Union Speech 2014)
 
 
 <img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-4.png" alt="Text-Analytics-4.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.46, "height" : 5.05, "width" : 8.21} -->
@@ -347,7 +347,7 @@ Notes:
 ## Text Analytic : Word Count
 
 
- * Finally we have cleaned up text to do a simple analytics – word count
+ * Finally we have cleaned up text to do a simple analytics - word count
 
 
 ```text

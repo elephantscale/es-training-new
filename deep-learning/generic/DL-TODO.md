@@ -69,16 +69,16 @@ TODO Shiva:
 ```
 data
 ├── train
-│   ├── cat
-│   │   ├── cat1.jpg
-│   │   └── cat2.jpg
-│   └── dog
-│       ├── dog1.jpg
-│       └── dog2.jpg
+│   ├── cat
+│   │   ├── cat1.jpg
+│   │   └── cat2.jpg
+│   └── dog
+│       ├── dog1.jpg
+│       └── dog2.jpg
 └── val
     ├── cat
-    │   ├── cat3.jpg
-    │   └── cat4.jpg
+    │   ├── cat3.jpg
+    │   └── cat4.jpg
     └── dog
         ├── dog3.jpg
         └── dog4.jpg

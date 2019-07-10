@@ -106,7 +106,7 @@ Notes:
 
 ---
 
-## Another AI Approach – Bottom Up
+## Another AI Approach - Bottom Up
 
 
  * Computers can learn from 'ground up' (data-driven)
@@ -323,7 +323,7 @@ https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
 ## Hardware - GPU
 
 
- * Recently GPUs – Graphics Processing Units - have become popular (especially in Deep Learning)
+ * Recently GPUs - Graphics Processing Units - have become popular (especially in Deep Learning)
 
  * GPU cores are good at compute intensive calculations (math, matrix operations)
 
@@ -340,7 +340,7 @@ Notes:
 
 ---
 
-## Hardware – Modern CPU
+## Hardware - Modern CPU
 
 
  * Modern Intel Xeon CPUs (E5 or later) have vectorized linear algebra
@@ -360,7 +360,7 @@ Notes:
 
 ---
 
-## Hardware – TPU (Tensor Processing Unit)
+## Hardware - TPU (Tensor Processing Unit)
 
 <img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:40%;float:right;">
 
@@ -557,7 +557,7 @@ Notes:
 
 ---
 
-## Deep Neural Network – Face Recognition
+## Deep Neural Network - Face Recognition
 
 
 <img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" style="width:33%;">
@@ -794,11 +794,11 @@ Notes:
 
 ## Machine Learning and Big Data
 
- * Until recently most of the machine learning is done on "single computer" (with lots of memory–100s of GBs)
+ * Until recently most of the machine learning is done on "single computer" (with lots of memory-100s of GBs)
 
  * Most R/Python/Java libraries are "single node based"
 
- * Now Big Data tools make it possible to run machine learning algorithms at massive scale–distributed across a cluster
+ * Now Big Data tools make it possible to run machine learning algorithms at massive scale-distributed across a cluster
 
 
 <img src="../../assets/images/deep-learning/DL-cluster.png" style="width:70%;">
@@ -830,7 +830,7 @@ Notes:
 ## Tools for Scalable Machine Learning
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Primer-Tools-for-Scalable-Machine-Learning-0.png" style="width:20%;float:right;">
+<img src="../../assets/images/logos/spark-logo.png" style="width:20%;float:right;">
 
  *  **Spark ML**
      - Runs on top of popular Spark framework
@@ -974,7 +974,7 @@ Image credit (Creative Commons) : Pexels.com
 ---
 
 
-## Supervised Learning Example – Regression
+## Supervised Learning Example - Regression
 
 
  * Predicting stock market
@@ -1361,7 +1361,7 @@ Notes:
 ## Further Reading
 
 
- * [Great AI Awakening](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html) – New York Times profile of on Google Brain and the people behind it
+ * [Great AI Awakening](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html) - New York Times profile of on Google Brain and the people behind it
 
  * [Gentle Intro to Machine Learning](https://monkeylearn.com/blog/a-gentle-guide-to-machine-learning/)
 

@@ -180,7 +180,7 @@ Notes:
 
      - Comment
 
- * Messages – AVRO data format
+ * Messages - AVRO data format
 
      - View:    user_id, video_id, time_of_view, time_spent
 

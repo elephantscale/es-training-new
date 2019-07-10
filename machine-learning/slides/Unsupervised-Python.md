@@ -141,7 +141,7 @@ Notes:
 
  * Goal is to  **minimize WSSSE** with  **reasonable effort** 
 
- * We look for elbows – that indicates a reasonable clustering
+ * We look for elbows - that indicates a reasonable clustering
 
  * After the elbow, the improvement is minimal
 
@@ -168,11 +168,11 @@ k_wssse = pd.DataFrame(columns=('k', 'wssse'))
 
 # loop through K 
 for k in range(2,17): 
-   print ("k=", k) 
-   kmeans = KMeans().setK(k).setSeed(1)   
-   model = kmeans.fit(featureVector)  
-   wssse = model.inertia_    
-   print("k={}, wssse={}".format(k,wssse))  
+   print ("k=", k) 
+   kmeans = KMeans().setK(k).setSeed(1)   
+   model = kmeans.fit(featureVector)  
+   wssse = model.inertia_    
+   print("k={}, wssse={}".format(k,wssse))  
    k_wssse = k_wssse.append( {'k': k, 'wssse': wssse}, ignore_index=True)
    
 k_wssse 

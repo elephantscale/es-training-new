@@ -170,7 +170,7 @@ Notes:
 
 
 ---
-## Perceptron Mini Lab–5 Mins
+## Perceptron Mini Lab-5 Mins
 
 <img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="10%"/>
 

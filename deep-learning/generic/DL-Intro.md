@@ -118,7 +118,7 @@ Notes:
 ---
 
 
-## Early AI (1950s – 1980s):  Rule-Based Approaches
+## Early AI (1950s - 1980s):  Rule-Based Approaches
 
  * Early AI approaches were largely rule-based.
 
@@ -266,9 +266,9 @@ Notes:
 
 * In the modern era, Deep Learning has been successful.  The following factors made it possible
 
--  **'Big Data**' – now we have so much data to train our models
+-  **'Big Data**' - now we have so much data to train our models
 
--  **'Big Data ecosystem**' – excellent big data platforms (Hadoop, Spark, NoSQL) are available as open source
+-  **'Big Data ecosystem**' - excellent big data platforms (Hadoop, Spark, NoSQL) are available as open source
 
 -  **'Big Compute**'  -  **cloud**  platforms significantly lowered the barrier to massive compute power
     - $1 rents you a `16 core + 128 G + 10 Gigabit` machine for 1 hr on AWS! So running a 100 node cluster for 5 hrs $500
@@ -285,7 +285,7 @@ Notes:
 
 ## Hardware Advances: CPU & GPU
 
-- Recently GPUs – Graphics Processing Units - have become popular (especially in Deep Learning)
+- Recently GPUs - Graphics Processing Units - have become popular (especially in Deep Learning)
 
 - GPU cores are good at compute intensive calculations (math, matrix operations)
 
@@ -571,11 +571,11 @@ https://www.youtube.com/watch?v=LcfLo7YP8O4
 ---
 ## Deep Learning and Big Data
 
- * Until recently most of the machine learning is done on "single computer" (with lots of memory–100s of GBs)
+ * Until recently most of the machine learning is done on "single computer" (with lots of memory-100s of GBs)
 
  * Most R/Python/Java libraries are "single node based"
 
- * Now Big Data tools make it possible to run machine learning algorithms at massive scale–distributed across a cluster
+ * Now Big Data tools make it possible to run machine learning algorithms at massive scale-distributed across a cluster
 
 <img src="../../assets/images/deep-learning/DL-cluster.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" /> <!-- {"left" : 7.46, "top" : 0.99, "height" : 1.83, "width" : 2.03} -->
 

@@ -525,7 +525,7 @@ Notes:
 
 ---
 
-## Linear Regression in R – Wrap Up
+## Linear Regression in R - Wrap Up
 
 
  * Linear Regression is very well supported in R

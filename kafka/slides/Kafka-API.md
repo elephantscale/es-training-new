@@ -376,7 +376,7 @@ Notes:
 
  *  **K  key()** : key for record (type K), can be null
 
- *  **V  value()** : record value (type V – String / Integer ..etc)
+ *  **V  value()** : record value (type V - String / Integer ..etc)
 
  *  **String topic()** : Topic where this record came from
 
@@ -504,7 +504,7 @@ Notes:
  1-install Kafka
 
  *  **Approximate Time**:  
- 30 – 40 mins
+ 30 - 40 mins
 
  *  **Instructions**: 
      - Please follow: 3.1,    3.2,   3.3
@@ -651,7 +651,7 @@ Notes:
 
  *  **Builds on previous labs**: lab 3
 
- *  **Approximate Time**: 20 – 30 mins
+ *  **Approximate Time**: 20 - 30 mins
 
  *  **Instructions**: 
 
@@ -679,7 +679,7 @@ Notes:
 
      - Especially effective on batches
 
-     - Covers the full batch – larger == better compression
+     - Covers the full batch - larger == better compression
 
  * Supported compression codecs
 
@@ -728,7 +728,7 @@ https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStan
 
  *  **Builds on previous labs**: lab 4.1
 
- *  **Approximate Time**: 20 – 30 mins
+ *  **Approximate Time**: 20 - 30 mins
 
  *  **Instructions**: 
 
@@ -764,7 +764,7 @@ Notes:
 Notes: 
 
 Broker will wait until fetch.min.bytes data accumulates before sending to consumer
-Auto.offset.reset other valid value is "earliest" – meaning read entire partition from start
+Auto.offset.reset other valid value is "earliest" - meaning read entire partition from start
 
 
 ---
@@ -792,12 +792,12 @@ Notes:
 
 ---
 
-## Range Partition Assignment – 1 Topic
+## Range Partition Assignment - 1 Topic
 
 
  * Default assignment
 
- * Each consumer is assigned a range – on a per-topic basis
+ * Each consumer is assigned a range - on a per-topic basis
 
 <img src="../../assets/images/kafka/partition-range-1.png" style="width:65%;"/>
 
@@ -809,7 +809,7 @@ https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignme
 
 ---
 
-## Range Partitions – 2 Topics
+## Range Partitions - 2 Topics
 
 
 <img src="../../assets/images/kafka/partition-range-2.png" style="max-width:65%;"/>
@@ -853,7 +853,7 @@ Notes:
 
 ---
 
-## Round-robin Assignment – 2 Topics
+## Round-robin Assignment - 2 Topics
 
 
 <img src="../../assets/images/kafka/partition-range-4.png" style="max-width:65%;"/>
@@ -1321,7 +1321,7 @@ With idempotency and transactions support on producer, Streams API can support e
 
  *  **Builds on previous labs**: lab 3
 
- *  **Approximate Time**: 20 – 30 mins
+ *  **Approximate Time**: 20 - 30 mins
 
  *  **Instructions**: 
 
@@ -1432,7 +1432,7 @@ https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 20 – 30 mins
+ *  **Approximate Time**: 20 - 30 mins
 
  *  **Instructions**: 
 
@@ -1684,7 +1684,7 @@ Notes:
 
 ---
 
-## HDFS Connector – Sample Usage
+## HDFS Connector - Sample Usage
 
 
 ```java
@@ -1724,7 +1724,7 @@ Notes:
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 20 – 30 mins
+ *  **Approximate Time**: 20 - 30 mins
 
  *  **Instructions**: 
 
@@ -1877,7 +1877,7 @@ Notes:
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 

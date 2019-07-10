@@ -442,7 +442,7 @@ Notes:
 
      - This is particularly true for TF Serving
 
- * "more data usually beats better algorithms" – Anant Ramarajan
+ * "more data usually beats better algorithms" - Anant Ramarajan
 
      - TF Training also needs access to large datasets.
 
@@ -755,7 +755,7 @@ Notes:
 ## Cloud Dataflow is Apache Beam
 
 
- * "Collapsing Lambda" – putting both real-time and batch transformations in one framework.
+ * "Collapsing Lambda" - putting both real-time and batch transformations in one framework.
 
  * Allows pipeline-based transformation of data
 

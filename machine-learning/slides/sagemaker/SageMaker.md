@@ -26,13 +26,14 @@
 
 ## What is Amazon SageMaker?
 
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Amazon.png" style="width:30%;float:right;"/>
+
 * Fully managed machine learning service
 
 * Build and training machine learning models
 
 * Deploy models into production hosted environment
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Amazon.png" style="width:50%"/>
 
 ---
 
@@ -71,7 +72,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
 
   * Obtaining Data
      - In house (e.g. user click behavior)
-     - Purchase (e.g. from data brokers – user's search history ..etc.)
+     - Purchase (e.g. from data brokers - user's search history ..etc.)
      - Public data (e.g. Census data)
 
 ---
@@ -246,6 +247,8 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.htm
 
 ## Using MXNet
 
+<img src="../../../assets/images/logos/mxnet-logo-1.png" style="width:30%;float:right;"/>
+
   * MXNet is a neural network library for deep learning
   * Apache open source project
   * Features:
@@ -257,16 +260,16 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.htm
      - SageMaker supports MXNet kernel
      - Callable from SageMaker
 
-  * [ https://mxnet.apache.org/ ](https://mxnet.apache.org/)
+  * [https://mxnet.apache.org/](https://mxnet.apache.org/)
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Mxnet.png" style="width:30%; position:absolute;"/>
 
 Notes:
-https://mxnet.apache.org/
 
 ---
 
 ## Using Spark
+
+<img src="../../../assets/images/logos/spark-logo.png" style="width:20%;float:right; "/>
 
   * Spark is a modern distributed processing engine
 
@@ -278,21 +281,20 @@ https://mxnet.apache.org/
   * SageMaker supports Spark
      - Spark is one of the supported kernels
      - Run your Spark applications in SM
-     - SageMakerModel extends the org.apache.spark.ml.
+     - SageMakerModel extends the org.apache.spark.ml.
      - SageMaker handles the data transfers
 
-  * Amazon SageMaker Apache Spark Library - <br/>(https://github.com/aws/sagemaker-spark)
+  * Amazon SageMaker Apache Spark Library - <br/>(https://github.com/aws/sagemaker-spark)
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Spark.png" style="width:30%; position:absolute; "/>
 
 ---
 
 ## Monitoring Amazon SageMaker
 
-  * **Amazon CloudWatch** monitors your AWS resources and applications 
-  * Amazon CloudWatch Logs enables you to monitor, store, and access your log files from EC2 instances, AWS CloudTrail
+  * **Amazon CloudWatch** monitors your AWS resources and applications
+  * Amazon CloudWatch Logs enables you to monitor, store, and access your log files from EC2 instances, AWS CloudTrail
      - That includes logs from SageMaker Docker containes
-  * AWS CloudTrail captures API calls and related events made by or on behalf of your AWS account
+  * AWS CloudTrail captures API calls and related events made by or on behalf of your AWS account
      - Including SageMaker calls
 
 ---
@@ -300,10 +302,10 @@ https://mxnet.apache.org/
 ## SageMaker Lab
 
   * Use: ml-labs-sagemaker/README.html
-  * Runtime: 1hr – 1hr 30 mins
+  * Runtime: 1hr - 1hr 30 mins
   * Instructor: Explain the workflow
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Lab.png" style="width:50%; position:absolute;"/>
+<img src="../../../assets/images/machinbe-learning/Machine-Learning-SageMaker-Lab.png" style="width:50%; position:absolute;"/>
 
 ---
 
@@ -319,7 +321,7 @@ https://mxnet.apache.org/
 | imageclassification_caltech  	| image-classification   	| Neural network full training or  transfer knowledge 	|
 | lda_topic_modeling           	| lda                    	| LDA                                                 	|
 | linear_learner_mnist         	| linear-learner         	| Logistic regression Linear regression               	|
-| ntm_synthetic                	| ntm                    	| NTM – Neural Topic Modeling, cf. LDA                	|
+| ntm_synthetic                	| ntm                    	| NTM - Neural Topic Modeling, cf. LDA                	|
 
 ---
 
@@ -367,13 +369,13 @@ https://mxnet.apache.org/
   * Main (RESTful)
      - [https://docs.aws.amazon.com/sagemaker/latest/dg/API_Reference.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_Reference.html)
 
-  * Python – High Level Python SDK
+  * Python - High Level Python SDK
      - [https://github.com/aws/sagemaker-python-sdk](https://github.com/aws/sagemaker-python-sdk)
 
   * SparkScala
     - [https://github.com/aws/sagemaker-spark](https://github.com/aws/sagemaker-spark)
 
-  * Amazon SageMaker Apache Spark Library 
+  * Amazon SageMaker Apache Spark Library
     - [https://github.com/aws/sagemaker-spark](https://github.com/aws/sagemaker-spark)
 
 ---
@@ -386,11 +388,11 @@ https://mxnet.apache.org/
 
   * Input
      - (X,Y), where
-     - X – multidimensional vector
-     - Y – numeric label
+     - X - multidimensional vector
+     - Y - numeric label
 
   * Input formats
-     - recordIO wrapped protobuf 
+     - recordIO wrapped protobuf
      - CSV
 
 Notes:
@@ -436,4 +438,3 @@ https://docs.aws.amazon.com/sagemaker/latest/dg/ll_hyperparameters.html
 
 * Official documentation:<br/>
 [https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
-

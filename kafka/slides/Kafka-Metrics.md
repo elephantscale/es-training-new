@@ -247,7 +247,7 @@ GraphiteReporter.forRegistry(metrics).prefixedWith("myapp")
   .convertDurationsTo(TimeUnit.MILLISECONDS)
   .filter(MetricFilter.ALL)
   .build(graphite);
-graphiteReporter.start(30, TimeUnit.SECONDS);  
+graphiteReporter.start(30, TimeUnit.SECONDS);  
 ```
 
 Notes: 
@@ -347,7 +347,7 @@ private final Timer timerExec = metrics.timer("execTime"));
 
 Timer.Context context = timerExec.time();
 // do some work here
-f();  // calling a function
+f();  // calling a function
 context.stop(); 
 ```
 
@@ -368,7 +368,7 @@ Notes:
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 
@@ -433,7 +433,7 @@ Notes:
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 

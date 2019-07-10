@@ -196,7 +196,7 @@ Notes:
       - For logistic regression, y is 0 or 1 (binary classifier)
 
   * **Input formats**
-     - recordIO wrapped protobuf 
+     - recordIO wrapped protobuf 
      - CSV
 
   * **Self-tuning**

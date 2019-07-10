@@ -374,7 +374,7 @@ Notes:
 
      - multinomial logistic regression
 
- * For K possible outcomes
+ * For K possible outcomes
 
      - Chose one outcome as a pivot
 
@@ -520,7 +520,7 @@ Notes:
 
 ## Theory Behind SVM
 
-* Consider the following data points – Blue and Red
+* Consider the following data points - Blue and Red
 
 * Since they are in 2D data, a single line can potentially separate them
 
@@ -800,7 +800,7 @@ Notes:
 
     - SVM1 - 'college-admission' data
 
-    - SVM2 – Customer churn data
+    - SVM2 - Customer churn data
 
 
 Notes:
@@ -1225,7 +1225,7 @@ Notes:
 
 ## Further Reading
 
-* ["Introduction to Statistical Learning"](http://www-bcf.usc.edu/~gareth/ISL) – Chapter 9
+* ["Introduction to Statistical Learning"](http://www-bcf.usc.edu/~gareth/ISL) - Chapter 9
 
 * [http://tdlc.ucsd.edu/events/boot_camp_2009/tingfansvm.pdf](http://tdlc.ucsd.edu/events/boot_camp_2009/tingfansvm.pdf)
 

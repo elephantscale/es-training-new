@@ -482,7 +482,7 @@ Notes:
  None
 
  *  **Approximate Time**:   
- 30 – 40 mins
+ 30 - 40 mins
 
  *  **Instructions**:   
  lab-1: labs/1-installing-kafka.md
@@ -975,7 +975,7 @@ Notes:
  1-install Kafka
 
  *  **Approximate Time**:   
- 30 – 40 mins
+ 30 - 40 mins
 
  *  **Instructions**:   
  lab-2: labs/2-kafka-utils.md
@@ -1049,7 +1049,7 @@ Notes:
 
 ---
 
-## Class Discussion – Partition Data Skew
+## Class Discussion - Partition Data Skew
 
 <img src="../../assets/images/icons/quiz-icon.png"  style="width:30%;float:right;"/>
 

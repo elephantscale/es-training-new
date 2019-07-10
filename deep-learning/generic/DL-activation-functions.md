@@ -55,7 +55,7 @@ Notes:
 
 <img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" /> <!-- {"left" : 1.72, "top" : 3.21, "height" : 3.86, "width" : 6.81} -->
 
-- `σ(z) = 1 / (1 + exp(–z))`
+- `σ(z) = 1 / (1 + exp(-z))`
 
 - Sigmoid(Logistic) function has well defined non-zero derivative throughout
     - so we can use Gradient Descent
@@ -76,7 +76,7 @@ Notes:
 ---
 ## Tanh Activation
 
-- `tanh (z) = 2σ(2z) – 1`
+- `tanh (z) = 2σ(2z) - 1`
 
 - Tanh is more popular, rather than Sigmoid
 

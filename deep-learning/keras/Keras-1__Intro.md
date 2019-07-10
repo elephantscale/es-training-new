@@ -580,7 +580,7 @@ For full list see [Keras documentation](https://keras.io/losses/#available-loss-
 
 ## Loss Functions (Regressions)
 
-- **MAPE – Mean absolute percentage error**
+- **MAPE - Mean absolute percentage error**
 
 ```python
 keras.losses.mean_absolute_percentage_error
@@ -588,7 +588,7 @@ keras.losses.mean_absolute_percentage_error
 
 <img src="../../assets/images/deep-learning/3rd-party/mse_mape_eqs.png" alt="XXX image missing" style="width:30%;"/>
 
-- **MSLE – Mean square logarithmic error**
+- **MSLE - Mean square logarithmic error**
 
 ```python
 keras.losses.mean_squared_logarithmic_error

@@ -11,7 +11,7 @@
 
      - Apache Kafka
 
-     - Community features – free 
+     - Community features - free 
 
         * KSQL
 
@@ -19,7 +19,7 @@
 
         * Schema Registry
 
-     - Commercial features – 30 day trial (Beware!)
+     - Commercial features - 30 day trial (Beware!)
 
         * Control Center
 
@@ -38,7 +38,7 @@ Notes:
 
  *  **Builds on previous labs**: None
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 
@@ -275,7 +275,7 @@ Notes:
 
  *  **Builds on previous labs**: Lab 4
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 
@@ -455,7 +455,7 @@ Compare this code to what was done in the Kafka Streams lab to group by and coun
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 
