@@ -39,7 +39,7 @@ Image credit: Hortonworks.com
 ## Hadoop
 
 
- * Hadoop is designed as a  **single destination silo**
+ * Hadoop is designed as a **single destination silo**
 
  * Data comes into Hadoop from various sources
 
@@ -159,7 +159,7 @@ Notes:
 
 * Lots of databases
   - Built to store data
-  - Piles of data : relational / key-value / caches / search indexes
+  - Piles of data: relational / key-value / caches / search indexes
 
 * What is missing?
   - Something to handle the continuous flow of data
@@ -168,7 +168,7 @@ Notes:
 
 * Hence, LinkedIn built Kafka from scratch
 
-* **Trivia : Why name it Kafka?**   
+* **Trivia: Why name it Kafka?**   
   Kafka's co-creator Jay Kreps says "Kafka is optimized for writing"  and named after popular author [Franz Kafka](https://en.wikipedia.org/wiki/Franz_Kafka)
 
 
@@ -470,7 +470,7 @@ Notes:
 
 ---
 
-## Lab : Installing Kafka
+## Lab: Installing Kafka
 
 <img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/>
 
@@ -949,9 +949,9 @@ Notes:
 ## Using Producer / Consumer Utils
 
 
- *  **bin/**  **kafka**  **-console-producer** : utility for producing messages
+ *  **bin/**  **kafka**  **-console-producer**: utility for producing messages
 
- *  **bin/**  **kafka**  **-console-consumer** : utility for reading messages
+ *  **bin/**  **kafka**  **-console-consumer**: utility for reading messages
 
 <img src="../../assets/images/kafka/Using-Producer-01.png" alt="Using-Producer-03.png" style="width:70%;"/>
 
@@ -1377,7 +1377,7 @@ Notes:
 
 
 
-Image source : https://kafka.apache.org/documentation/
+Image source: https://kafka.apache.org/documentation/
 
 
 ---
