@@ -17,83 +17,16 @@
 
 Notes:
 
-
-# How to Think About Kafka
-
----
-## Kafka At a Glance
-
-* Used by tens of thousands of organizations
-* Including over a third of the Fortune 500
-* Among the fastest growing open source projects
-* Immense ecosystem around it
-* At the heart of a movement towards managing and processing streams of data
-
----
-## What Led to Kafka Decision
-
-* Built at LinkedIn
-* Lots of databases
-  - built to store data
-* Missing
-  - something to handle the continuous flow of data
-* Hence, LinkedIn built Kafka from scratch
-* Why the name "Kafka"
-  - Kafka is optimized for writing, and Jay Kreps liked Kafka's writing
-![](../../assets/images/kafka/kafka-the-writer.png)
-
----
-## Kafka's Focus
-* Instead of piles of data
-  - relational databases
-  - key-value stores
-  - search indexes
-  - caches
-* Re-focus on treating data as
-  - continually evolving
-  - ever growing stream
-
----
-## What Happened Then
-* Kafka started as
-  - powering real-time applications
-  - data flow
-  - in social network
-* Kafka continued as
-  - next-generation architectures
-  - retailers redo their business process as continuous business stream
-  - car companies are collecting and processing real-time data streams
-  - banks are rethinking their fundamental processes
-
----
-## What Kafka is Like and Not Like
-* Compare to
-  - enterprise messaging systems
-  - big data systems like Hadoop
-  - data integration or ETL tools
-* But not like them
-  - NOT ActiveMQ, RabbitMQ, IBM’s MQSeries
-    - runs on a cluster and can scale to 1000s of nodes
-    - replaces hand-wires message brokers
-  - NOT a regular storage system
-    - replicated
-    - persistent
-    - but can be kept around as long as you like
-  - NOT ETL
-    - instead of scraping data here and putting it there
-    - re-organize data as continuous stream
-* So... *a streaming platform*
-
 ---
 
-# Message Queues
+# Evolution of Data Platform
 
 ---
 
 
 ## A Reference Architecture For Hadoop
 
-<img src="../../assets/images/kafka/A-Reference-Architecture-For-Hadoop.png" alt="A-Reference-Architecture-For-Hadoop.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/A-Reference-Architecture-For-Hadoop.png" alt="A-Reference-Architecture-For-Hadoop.png" style="max-width:60%;"/>
 
 
 Notes:
@@ -123,16 +56,17 @@ Notes:
 
 ## Outgrowing Hadoop
 
+<img src="../../assets/images/kafka/Outgrowing-Hadoop-2.png" alt="Outgrowing-Hadoop-2.png" style="max-width:50%;float:right;"/>
 
  * Hadoop cannot do real time processing.  
- Reacting to events in ‘real time’ (milliseconds to seconds)
+ Reacting to events in 'real time' (milliseconds to seconds)
      - We need another system for that
 
- * Hadoop is not meant as a ‘data router’
-     - Hadoop gets data in ‘batches’
-     - Not designed for ‘fast data movement’ (millions events / sec).
+ * Hadoop is not meant as a 'data router'
+     - Hadoop gets data in 'batches'
+     - Not designed for 'fast data movement' (millions events / sec).
 
-<img src="../../assets/images/kafka/Outgrowing-Hadoop-2.png" alt="Outgrowing-Hadoop-2.png" style="max-width:50%;"/>
+
 
 Notes:
 
@@ -153,7 +87,7 @@ Notes:
      - Million events went out
  * Support multiple publishers and consumers
      - Same data can be read by multiple consumers
- * Completely ‘de-couple’ publishers and consumers
+ * Completely 'de couple' publishers and consumers
      - Easy to add more pubs / subs
  * Scale seamlessly as a cluster
  * Safeguard data -- can not loose data
@@ -161,7 +95,6 @@ Notes:
 
 Notes:
 
-Image permissions: CC0 public domain: https://pixabay.com/en/router-switch-wireless-computer-154290/
 
 
 ---
@@ -173,17 +106,17 @@ Image permissions: CC0 public domain: https://pixabay.com/en/router-switch-wirel
      - JMS (Java Messaging System) based
      - Used as enterprise message bus
      - Guarantee message delivery with acknowledgements
-     - Usually not ‘high’ throughput
+     - Usually not 'high' throughput
  * **Amazon Kinesis**
      - Fully managed queue system within Amazon Cloud (AWS)
  * **Kafka**
      - Designed for massive throughput
      - (more in the next section)
 
-<img src="../../assets/images/logos/jms-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:15%;"/>
-<img src="../../assets/images/logos/IBM-MQ-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:10%;"/>
-<img src="../../assets/images/logos/rabbit-mq-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:15%;"/>
-<img src="../../assets/images/logos/aws-kinesis-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:15%;"/>
+<img src="../../assets/images/logos/jms-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/>
+<img src="../../assets/images/logos/IBM-MQ-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:10%;"/>
+<img src="../../assets/images/logos/rabbit-mq-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/>
+<img src="../../assets/images/logos/aws-kinesis-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/>
 
 
 
@@ -221,6 +154,57 @@ Notes:
 Notes:
 
 
+---
+## Why LinkedIn Built Kafka?
+
+* Lots of databases
+  - Built to store data
+  - Piles of data : relational / key-value / caches / search indexes
+
+* What is missing?
+  - Something to handle the continuous flow of data
+
+<img src="../../assets/images/kafka/3rd-party/franz-kafka.png" style="width:15%;float:right;" />
+
+* Hence, LinkedIn built Kafka from scratch
+
+* **Trivia : Why name it Kafka?**   
+  Kafka's co-creator Jay Kreps says "Kafka is optimized for writing"  and named after popular author [Franz Kafka](https://en.wikipedia.org/wiki/Franz_Kafka)
+
+
+---
+
+## What Happened Then
+
+* Kafka started as
+  - powering real-time applications
+  - data flow
+  - in social network
+
+* Kafka continued as
+  - next-generation architectures
+  - retailers redo their business process as continuous business stream
+  - car companies are collecting and processing real-time data streams
+  - banks are rethinking their fundamental processes
+
+---
+## What Kafka is Like and Not Like
+* Compare to
+  - enterprise messaging systems
+  - big data systems like Hadoop
+  - data integration or ETL tools
+* But not like them
+  - NOT ActiveMQ, RabbitMQ, IBM's MQSeries
+    - runs on a cluster and can scale to 1000s of nodes
+    - replaces hand-wires message brokers
+  - NOT a regular storage system
+    - replicated
+    - persistent
+    - but can be kept around as long as you like
+  - NOT ETL
+    - instead of scraping data here and putting it there
+    - re-organize data as continuous stream
+* So... **a streaming platform**
 
 
 ---
@@ -272,14 +256,27 @@ Notes:
 - https://labs.spotify.com/2016/03/03/spotifys-event-delivery-the-road-to-the-cloud-part-ii/
 
 
+---
+## Kafka's Growth
+
+* Used by tens of thousands of organizations
+
+* Including over a third of the Fortune 500
+
+* Among the fastest growing open source projects
+
+* Immense ecosystem around it
+
+* At the heart of a movement towards managing and processing streams of data
+
 
 ---
 
 ## Kafka Benchmarks
 
-| Benchmark          	| Hardware                                                                                                 	| Performance                                                                                                           	|
-|--------------------	|----------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------	|
-| By Linkedin @ 2014 	| 3 machines,</br>- Xeon 2.5 G , 6 cores,</br>- Six 7200 RPM SATA drives,</br>- 32 G RAM,</br>- 1G ethernet 	| Multiple test setups.,</br>One throughput,</br>- 80 MB / sec,</br>- 2 million messages / sec (each message 100 bytes) 	|
+| Benchmark          | Hardware                                                                                                  | Performance                                                                                                           |
+|--------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| By Linkedin @ 2014 | 3 machines,</br>- Xeon 2.5 G , 6 cores,</br>- Six 7200 RPM SATA drives,</br>- 32 G RAM,</br>- 1G ethernet | Multiple test setups.,</br>One throughput,</br>- 80 MB / sec,</br>- 2 million messages / sec (each message 100 bytes) |
 
  * The machines are medium scale
 
@@ -397,14 +394,15 @@ Notes:
 
 ## How is Kafka Different From Other Message Queues?
 
-| Feature                                                                         	| Kafka                                                          	| Other Queue Systems                           	|
-|---------------------------------------------------------------------------------	|----------------------------------------------------------------	|-----------------------------------------------	|
-| **Deleting messages**                                                           	| Clients can not delete.,</br>Kafka auto-expires </br>messages  	| Clients can delete                            	|
-| **Message processing order**                                                    	| Can read in or out-of order                                    	| Usually read in order                         	|
-| **Message processing guarantee**                                                	| Kafka guarantee no </br>duplicate processing of a </br>message 	| Usually no                                    	|
-| **Concurrent read / write**                                                     	| Supported.,</br>High throughput                                	| Low throughput due to </br>locking & blocking 	|
-| **Message priorities**                                                          	| None                                                           	| Yes                                           	|
-| **Message ACKs,(Client notify </br>producer that a </br>message is processed)** 	| No                                                             	| May be                                        	|
+| Feature                                                                         | Kafka                                                          | Other Queue Systems                           |
+|---------------------------------------------------------------------------------|----------------------------------------------------------------|-----------------------------------------------|
+| **Deleting messages**                                                           | Clients can not delete.,</br>Kafka auto-expires </br>messages  | Clients can delete                            |
+| **Message processing order**                                                    | Can read in or out-of order                                    | Usually read in order                         |
+| **Message processing guarantee**                                                | Kafka guarantee no </br>duplicate processing of a </br>message | Usually no                                    |
+| **Concurrent read / write**                                                     | Supported.,</br>High throughput                                | Low throughput due to </br>locking & blocking |
+| **Message priorities**                                                          | None                                                           | Yes                                           |
+| **Message ACKs,(Client notify </br>producer that a </br>message is processed)** | No                                                             | May be                                        |
+
 Notes:
 
 
@@ -472,7 +470,7 @@ Notes:
 
 ---
 
-## Lab: Installing Kafka
+## Lab : Installing Kafka
 
 <img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/>
 
@@ -484,7 +482,7 @@ Notes:
  None
 
  *  **Approximate Time**:   
- 30 – 40 mins
+ 30 - 40 mins
 
  *  **Instructions**:   
  lab-1: labs/1-installing-kafka.md
@@ -528,7 +526,7 @@ Notes:
 
  * Kafka is designed to run on many nodes as a cluster
 
- * Kafka machines are called ‘brokers’
+ * Kafka machines are called 'brokers'
 
  * Kafka automatically backs up data on at least another machine (broker)
 
@@ -552,14 +550,14 @@ Notes:
      -  **Zookeeper**: Keep track of brokers
 
  * Data
-     -  **Message:**  ‘basic unit’ of data in Kafka
+     -  **Message:**  'basic unit' of data in Kafka
      -  **Topics**: Messages are organized as topics
      -  **Partitions**: Topics are split into partitions
      -  **Commit Log**: How data is organized
 
  * Advanced
      - **Consumer Group**: a set of consumers for scaling
-     - **Offset**: message’s position within a partition
+     - **Offset**: message's position within a partition
 
 Notes:
 
@@ -671,7 +669,7 @@ Notes:
  * One partition is stored in one machine (broker)
  * Partitions are replicated to prevent data loss, in case a machine crashes
  * Default setup is 2 copies (one primary, one replica)
-     - One broker is the ‘ **owner** ’ for a partition
+     - One broker is the ' **owner** ' for a partition
  * Replicas are purely there to prevent data loss
  * Replicas are never written to,  nor read from
      - So increasing number of replicas does not increase throughput
@@ -725,10 +723,10 @@ Notes:
 
 <img src="../../assets/images/kafka/kafka-message-format.jpg" alt="Commit-Log-02.png" style="width:45%;float:right; "/>
 
- * In Kafka basic ‘data unit’ is a message
+ * In Kafka basic 'data unit' is a message
 
- * Kafka treats messages as ‘bunch of bytes’
-     - Doesn’t really care what the message payload is
+ * Kafka treats messages as 'bunch of bytes'
+     - Doesn't really care what the message payload is
 
  * Optionally messages can have metadata, like keys
     - Keys are bytes too
@@ -837,7 +835,7 @@ Notes:
 ## Brokers / Leaders / Partitions / Replications
 
 
- * Each partition has ONE broker as ‘leader’ (primary / owner)
+ * Each partition has ONE broker as 'leader' (primary / owner)
 
  * One broker can be a leader for many partitions
 
@@ -951,9 +949,9 @@ Notes:
 ## Using Producer / Consumer Utils
 
 
- *  **bin/**  **kafka**  **-console-producer**: utility for producing messages
+ *  **bin/**  **kafka**  **-console-producer** : utility for producing messages
 
- *  **bin/**  **kafka**  **-console-consumer**: utility for reading messages
+ *  **bin/**  **kafka**  **-console-consumer** : utility for reading messages
 
 <img src="../../assets/images/kafka/Using-Producer-01.png" alt="Using-Producer-03.png" style="width:70%;"/>
 
@@ -977,7 +975,7 @@ Notes:
  1-install Kafka
 
  *  **Approximate Time**:   
- 30 – 40 mins
+ 30 - 40 mins
 
  *  **Instructions**:   
  lab-2: labs/2-kafka-utils.md
@@ -1003,13 +1001,13 @@ Notes:
 
 
  * Producers create new messages
- * Producers typically don’t care which partition to write to
+ * Producers typically don't care which partition to write to
  * They will balance writing across multiple partitions.-> Provides scale & load balancing
  * Each message has a  **unique offset within a partition**
      - Increasing number (Long)
      - Added by Kafka automatically when a message is written
- * Producers ‘ **append** ’ messages to the end of partition
- * If messages have a ‘ **key** ’
+ * Producers ' **append** ' messages to the end of partition
+ * If messages have a ' **key** '
      - A particular key is guaranteed to be written to the same partition
      - Done using hashing of key
      - Guarantees message order within a key
@@ -1051,7 +1049,7 @@ Notes:
 
 ---
 
-## Class Discussion – Partition Data Skew
+## Class Discussion - Partition Data Skew
 
 <img src="../../assets/images/icons/quiz-icon.png"  style="width:30%;float:right;"/>
 
@@ -1379,7 +1377,7 @@ Notes:
 
 
 
-Image source: https://kafka.apache.org/documentation/
+Image source : https://kafka.apache.org/documentation/
 
 
 ---
@@ -1468,10 +1466,10 @@ Notes:
  * Multi data center deployments are useful for
      - Disaster recovery
      - Isolating data according to local laws.E.g. European Union has stricter privacy rules.  So data collected there has to be hosted in a data center in EU.
- * Kafka has a utility called ‘mirror maker’
+ * Kafka has a utility called 'mirror maker'
  * It acts as both consumer and producer
      - It consumes data from one cluster
-     - Turns around and ‘produces’ data into another cluster
+     - Turns around and 'produces' data into another cluster
 
 <img src="../../assets/images/kafka/Multi-Data-Center-Deployment-01.png" alt="Multi-Data-Center-Deployment-01.png" style="max-width:50%;"/>
 

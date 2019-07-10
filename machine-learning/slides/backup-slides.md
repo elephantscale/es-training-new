@@ -2,8 +2,8 @@
 
 | Algorithm                                             	| Example                                     	| Input                                              	| Output                                      |
 |-------------------------------------------------	|-----------------------------------------	|----------------------------------------------------	|-------------------------------------	|
-| Classification – produces 'discrete' or 'qualitative' 	| Spam or not                                 	|**Features**<br/>(email text, origin IP address)        	|**Label**<br/>(Spam / Not-Spam)                  |
-| Regression – produces 'continuous' or 'quantitative'  	| Weather forecasting, predicting temperature 	|**Variables**<br/>(current temperature, pressure ..etc) 	|**Target**<br/>(predicted temperature -50.5 ' F) 	|
+| Classification - produces 'discrete' or 'qualitative' 	| Spam or not                                 	|**Features**<br/>(email text, origin IP address)        	|**Label**<br/>(Spam / Not-Spam)                  |
+| Regression - produces 'continuous' or 'quantitative'  	| Weather forecasting, predicting temperature 	|**Variables**<br/>(current temperature, pressure ..etc) 	|**Target**<br/>(predicted temperature -50.5 ' F) 	|
 
 
 Notes:
@@ -39,7 +39,7 @@ Notes:
 
   * Some other interesting attributes:
     - 'time of day'  (work hours,   after hours)
-    - 'day of week'  (Mon / Tue / Wed …   work day  / weekend)
+    - 'day of week'  (Mon / Tue / Wed ...   work day  / weekend)
 
   * **Question for class:**
     - Any other time based behavior?

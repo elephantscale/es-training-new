@@ -117,9 +117,9 @@ Notes:
 Notes:
 
 Ways to Determine Distance between points
-Euclidian distance – (most obvious) Euclidian, which takes the distance in Euclidian space
-Cosine Distance – cosine of angle between vectors – ignores magnitude
-Manhattan distance: Effectively counts the number of square blocks one would “walk” to get there without cutting corners.
+Euclidian distance - (most obvious) Euclidian, which takes the distance in Euclidian space
+Cosine Distance - cosine of angle between vectors - ignores magnitude
+Manhattan distance: Effectively counts the number of square blocks one would "walk" to get there without cutting corners.
 Tanimoto distance  Take both angle and magnitude into account.
 
 Most algorithms attempt to balance the
@@ -156,7 +156,7 @@ Angle
 
 *  **Approximate time** :
 
-   20 – 40 mins
+   20 - 40 mins
 
 *  **Instructions** :
 

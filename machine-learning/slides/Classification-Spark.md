@@ -47,7 +47,7 @@ Notes:
 | AggregationDepth | The number of features to aggregate                              | 2             |
 | standardization  | Whether to standardize  before running model                     | true          |
 | predictionCol    | Output  prediction column                                        | "prediction"  |
-| labelCol         | Label  Column                                                    | “label”       |
+| labelCol         | Label  Column                                                    | "label"       |
 
 
 Notes: 
@@ -144,10 +144,10 @@ Notes:
 | **Parameter** | **Description**                      | **Default Value** |
 |---------------|--------------------------------------|-------------------|
 | numIterations | Max number of iterations for fitting | 100               |
-| modelType     | ’multinomial’ or ‘bernoulli’         | ’multinomial’     |
+| modelType     | 'multinomial' or 'bernoulli'         | 'multinomial'     |
 | lambda        | Lambda smoothing                     | 1                 |
 | predictionCol | Output prediction column             | "prediction"      |
-| labelCol      | Label Column                         | “label”           |
+| labelCol      | Label Column                         | "label"           |
 
 
 Notes: 

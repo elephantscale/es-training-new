@@ -425,7 +425,7 @@ Notes:
 
 ---
 
-## Stopping Criteria 1: 
+## Stopping Criteria 1:
 ### Min number of elements per node
 
 <img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:40%;float:right;"/><!-- TODO {"left" : 6.3, "top" : 4.57, "height" : 2.16, "width" : 3.67} -->
@@ -451,7 +451,7 @@ Notes:
 
 ---
 
-## Stopping Criteria 1: 
+## Stopping Criteria 1:
 ### Min number of elements per node
 
 * If we set minimum_per_node =1
@@ -634,6 +634,8 @@ Notes:
 
 ## About the `Prosper` Dataset
 
+ <img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%; float:right"/><!-- {"left" : 7.32, "top" : 1.12, "height" : 0.63, "width" : 2.68} -->
+
  * https://www.prosper.com/
 
  * America's first peer-to-peer lending marketplace
@@ -646,7 +648,6 @@ Notes:
 
      - 113,937 loans with 81 variables
 
- <img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-About-the-Prosper-Dataset-0.png" style="width:30%; float:right"/><!-- {"left" : 7.32, "top" : 1.12, "height" : 0.63, "width" : 2.68} -->
 
 
 Notes:
@@ -691,7 +692,9 @@ Notes:
 
      -  **DT-1: college-admission**
 
-     -  **DT-2 : prosper-loans** <img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Lab-Decision-Trees-0.png" style="width:30%;float:right"><!-- {"left" : 3.46, "top" : 3.05, "height" : 1.88, "width" : 3.33} -->
+     -  **DT-2 : prosper-loans**
+
+<img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%;"><!-- {"left" : 3.46, "top" : 3.05, "height" : 1.88, "width" : 3.33} -->
 
 
 Notes:
@@ -753,7 +756,7 @@ Notes:
 ## Each DT Exhibits High Variance and Overfits
 
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Each-DT-Exhibits-High-Variance-and-Overfits-0.png" style="width:50%;float:right;"><!-- TODO {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
+<img src="../../assets/images/machine-learning/decision-trees-overfit-1.png" style="width:50%;float:right;"><!-- TODO {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
 
  * A tree may fit some of the data well
 
@@ -775,7 +778,7 @@ Notes:
  * By contrast, Linear Regression has high bias
      - It has less capacity to reflect complex data
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Bias-Variance-Tradeoff-0.png" style="width:60%;"><!-- TODO {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
+<img src="../../assets/images/machine-learning/decision-trees-overfit-2.png" style="width:60%;"><!-- TODO {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
 
 
 Notes:
@@ -811,20 +814,14 @@ Notes:
  * We want to keep low bias but add low variance
 
  *  **Approach**
-
      - Generate many decision trees
-
      - Each tree will operate on
-
         * Randomly bootstrapped subset of data (minimize overfitting)
-
         * Randomly chosen feature set (reduce correlation)
-
      - Each tree will be random and deep, and not pruned
-
      - And aggregate their predictions
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Random-Forests-Idea-0.png" style="width:60%"><!-- {"left" : 1.02, "top" : 5.22, "height" : 1.67, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Random-Forests-Idea-0.png" style="width:60%"><!-- {"left" : 1.02, "top" : 5.22, "height" : 1.67, "width" : 8.21} -->
 
 
 Notes:

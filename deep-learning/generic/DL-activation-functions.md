@@ -55,7 +55,7 @@ Notes:
 
 <img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" /> <!-- {"left" : 1.72, "top" : 3.21, "height" : 3.86, "width" : 6.81} -->
 
-- `σ(z) = 1 / (1 + exp(–z))`
+- `σ(z) = 1 / (1 + exp(-z))`
 
 - Sigmoid(Logistic) function has well defined non-zero derivative throughout
     - so we can use Gradient Descent
@@ -76,11 +76,11 @@ Notes:
 ---
 ## Tanh Activation
 
-- `tanh (z) = 2σ(2z) – 1`
+- `tanh (z) = 2σ(2z) - 1`
 
 - Tanh is more popular, rather than Sigmoid
 
-- The two are closely related, as tanh is a “stretched” Sigmoid
+- The two are closely related, as tanh is a "stretched" Sigmoid
 
 - Just like Sigmod, Tanh is S-shaped, continuous, and differentiable
 
@@ -314,7 +314,7 @@ Source :
 ## Activation Functions - Review
 
 
- * A Sigmoid Function is a mathematical function with a Sigmoid Curve (“S” Curve) and outputs a probability between 0 and 1.
+ * A Sigmoid Function is a mathematical function with a Sigmoid Curve ("S" Curve) and outputs a probability between 0 and 1.
 
  * A rectifier or ReLU (Rectified Linear Unit) is a commonly used activation function that allows one to eliminate negative units in an ANN. It helps solve vanishing/exploding gradient problems associated with other activation functions.
 

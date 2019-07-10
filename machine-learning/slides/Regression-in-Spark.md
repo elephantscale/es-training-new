@@ -84,21 +84,21 @@ Notes:
 ## Spark Linear Regression Code (Scala)
 
 ```
- import org.apache.spark.ml.regression.LinearRegression  
+ import org.apache.spark.ml.regression.LinearRegression  
 
  // Load training data
- val training = spark.read.....  
+ val training = spark.read.....  
 
- val lr = new LinearRegression()  
-    .setMaxIter(10)  
-    .setRegParam(0.3)  
-    .setElasticNetParam(0.8)    
+ val lr = new LinearRegression()  
+    .setMaxIter(10)  
+    .setRegParam(0.3)  
+    .setElasticNetParam(0.8)    
 
  // Fit the model
- val lrModel = lr.fit(training)  
+ val lrModel = lr.fit(training)  
 
  // Print the coefficients and intercept for linear regression
- println(s"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}")  
+ println(s"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}")  
 
  // Summarize the model over the training set and print out some metrics
  val trainingSummary = lrModel.summary
@@ -110,7 +110,7 @@ Notes:
 ```
 Notes:
 
-TODO – update for tips
+TODO - update for tips
 
 
 ---
@@ -123,11 +123,11 @@ TODO – update for tips
  import numpy as np
  import pandas as pd
 
- tip_data = pd.DataFrame({     
+ tip_data = pd.DataFrame({     
      'bill' : [50.00, 30.00, 60.00, 40.00, 65.00, 20.00, 10.00, 15.00, 25.00, 35.00],
-     'tip' : [12.00, 7.00, 13.00, 8.00, 15.00, 5.00, 2.00, 2.00, 3.00, 4.00]    
+     'tip' : [12.00, 7.00, 13.00, 8.00, 15.00, 5.00, 2.00, 2.00, 3.00, 4.00]    
      })
-print(tip_data)  
+print(tip_data)  
 
 
 #  **** 2 ****
@@ -145,7 +145,7 @@ Notes:
 
 ---
 
-## Spark Linear Regression Code (Python)  2/4 – Plotting Data
+## Spark Linear Regression Code (Python)  2/4 - Plotting Data
 
 ```
  import matplotlib.pyplot as plt
@@ -164,11 +164,11 @@ Notes:
 
 ---
 
-## Spark Linear Regression Code (Python) 3/4 – Create a Model, Fit Training Data
+## Spark Linear Regression Code (Python) 3/4 - Create a Model, Fit Training Data
 
 ```
- from pyspark.ml.regression import LinearRegression 
- from pyspark.ml.feature import VectorAssembler 
+ from pyspark.ml.regression import LinearRegression 
+ from pyspark.ml.feature import VectorAssembler 
 
  #  **** 3 ****
  assembler = VectorAssembler(inputCols=["bill"], outputCol="features")
@@ -180,7 +180,7 @@ Notes:
  lrModel = lr.fit(featureVector)
 
  #  **** 5 ****
- intercept = lrModel.intercept    # This is the intercept  
+ intercept = lrModel.intercept    # This is the intercept  
  slope = lrModel.coefficients[0]  # This is the slope
 ```
 <!-- {"left" : 0, "top" : 1.28, "height" : 3.49, "width" : 10.25} -->
@@ -191,12 +191,12 @@ Notes:
 
 ---
 
-## Spark Linear Regression Code (Python) 3/4 – Print Model Properties
+## Spark Linear Regression Code (Python) 3/4 - Print Model Properties
 
 ```
 # Print the coefficients and intercept for linear regression  
 print("Coefficients: %s" % str(lrModel.coefficients[0]))
-print("Intercept: %s" % str(lrModel.intercept))    
+print("Intercept: %s" % str(lrModel.intercept))    
 
 # Summarize the model over the training set and print out some metrics
 trainingSummary = lrModel.summary
@@ -273,7 +273,7 @@ Notes:
 
 ---
 
-## Evaluating Linear Regression Model – Calculate Coefficient of Determination (R2)
+## Evaluating Linear Regression Model - Calculate Coefficient of Determination (R2)
 
  * R2 is between 0 and 1.1 is perfect fit!
 
@@ -298,7 +298,7 @@ Notes:
 
 ---
 
-## Evaluating Linear Regression Model – Plot Residuals
+## Evaluating Linear Regression Model - Plot Residuals
 
   * Residuals are the error / difference between the actual tip and predicted tip
 
@@ -316,14 +316,14 @@ Notes:
 
 ---
 
-## Evaluating Linear Regression Model – Estimate Tip
+## Evaluating Linear Regression Model - Estimate Tip
 
 ```
- a = lrModel.coefficients[0]   # -0.8217112049846651
- b = lrModel.intercept         # 0.226334605857*   
+ a = lrModel.coefficients[0]   # -0.8217112049846651
+ b = lrModel.intercept         # 0.226334605857*   
 
- tip_for_100 = a * 100 + b   
- print(tip_for_100)   # 21.81     
+ tip_for_100 = a * 100 + b   
+ print(tip_for_100)   # 21.81     
 
  # add estimated tip to dataframe  
  tip_data['est_tip'] = tip_data.bill * a + b
@@ -339,16 +339,16 @@ Notes:
 
 ---
 
-## Evaluating Linear Regression Model – Estimate Tip
+## Evaluating Linear Regression Model - Estimate Tip
 
 ```
  ## Adding Estimated Tip column to Spark dataframe
  # This is a bit tricky. We need to use the sql expr function to make this work.
  # The formula: (bill * a) + b
 
- from pyspark.sql.functions import expr  
+ from pyspark.sql.functions import expr  
  formula = "(bill * " + str(a) + ") + " + str(b)
- print(formula)  
+ print(formula)  
 
  spark_tips_with_est = spark_tips.withColumn("est_tip", expr(formula))
  spark_tips_with_est.show()
@@ -460,7 +460,7 @@ Notes:
 
 ---
 
-## Multiple Linear Regression in Spark – Code (Python)
+## Multiple Linear Regression in Spark - Code (Python)
 
 ```
 import numpy as np
@@ -488,7 +488,7 @@ Notes:
 
 ---
 
-## Multiple Linear Regression in Spark – Code (Python)
+## Multiple Linear Regression in Spark - Code (Python)
 
 
 ```text
@@ -520,7 +520,7 @@ Notes:
 
 ---
 
-## Multiple Linear Regression in Spark – Code (Python)
+## Multiple Linear Regression in Spark - Code (Python)
 
 ```
 assembler = VectorAssembler(inputCols=["Bedrooms", "Bathrooms","SqFtTotLiving", "SqFtLot"], outputCol="features")
@@ -556,7 +556,7 @@ Notes:
 
 ---
 
-## Multiple Linear Regression in Spark – Code (Python)
+## Multiple Linear Regression in Spark - Code (Python)
 
 
 ```
@@ -592,7 +592,7 @@ Notes:
 
 ---
 
-### Multiple Linear Regression in Spark – Code (Python) - Let's Do Some Predictions
+### Multiple Linear Regression in Spark - Code (Python) - Let's Do Some Predictions
 
 
 ```
@@ -965,7 +965,7 @@ Notes:
 
 ---
 
-## LogisticRegression Code (Python) – Full Code
+## LogisticRegression Code (Python) - Full Code
 
 ```
 import numpy as np

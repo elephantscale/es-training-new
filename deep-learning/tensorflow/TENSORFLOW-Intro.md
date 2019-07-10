@@ -11,7 +11,7 @@
  * Gain an understanding of a basic TensorFlow installation
 
 
-Notes: 
+Notes:
 
 
 ---
@@ -20,14 +20,14 @@ Notes:
 
 ---
 
-## TensorFlow 
+## TensorFlow
 
 - Google open sourced TensorFlow in Nov 2015
 
-- Gained popularity very quickly because of its 
-    - clean design 
-    - flexibility 
-    - scalability 
+- Gained popularity very quickly because of its
+    - clean design
+    - flexibility
+    - scalability
     - huge community
     - and of course Google's push behind it
 
@@ -45,7 +45,7 @@ Notes:
 <img src="../../assets/images/deep-learning/Github_stars.png" alt="XXX image missing" style="background:white;max-width:100%;width:100%;" />  <!-- {"left" : 0.56, "top" : 2.36, "height" : 4.88, "width" : 9.13} -->
 
 
-Notes: 
+Notes:
 
 
 ---
@@ -55,19 +55,19 @@ Notes:
 
 
  <img src="../../assets/images/deep-learning/Introduction-to-Tensorflow-Used-More-and-More-0.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" /> <!-- {"left" : 1.01, "top" : 1.41, "height" : 5.5, "width" : 8.02} -->
- 
+
  Source: indeed.com
 
-Notes: 
+Notes:
 
 ---
 
-## TensorFlow Features 
+## TensorFlow Features
 
-- Runs on all platforms (Windows, Mac, Linux) and mobile devices 
+- Runs on all platforms (Windows, Mac, Linux) and mobile devices
 
 - Core is written in C++ ; very efficient implementation
-    - wrappers in Python for ease of use 
+    - wrappers in Python for ease of use
     - other language support improving : Java, Go, R
 
 - Other high level APIs are built on top of TesnorFlow ; e.g. [Keras](http://keras.io/) and [Pretty Tensor](https://github.com/google/prettytensor/)
@@ -96,7 +96,7 @@ Notes:
 <!-- {"left" : 0.61, "top" : 1.55, "height" : 3, "width" : 9.03, "columnwidth" : [2.01, 3.03, 3.98]} -->
 
 
-Notes: 
+Notes:
 
 
 ---
@@ -117,7 +117,7 @@ Notes:
 
      - TensorFlow builds a Directed Acyclic Graph of operations and executes it
 
-Notes: 
+Notes:
 
 
 
@@ -126,7 +126,7 @@ Notes:
 ## Using GPUs
 
 
- * One of TensorFlow’s most exciting features is using GPUs for compute capacity
+ * One of TensorFlow's most exciting features is using GPUs for compute capacity
 
      - ML is mainly linear algebra (matrix manipulation)
 
@@ -136,11 +136,11 @@ Notes:
 
  * Machines running with GPUs have been shown up to 10x faster.
 
- * TensorFlow will consume GPU + all its memory 
+ * TensorFlow will consume GPU + all its memory
 
-     - So, you can’t use the GPU for graphics at the same time
+     - So, you can't use the GPU for graphics at the same time
 
-     - No problem; servers don’t use graphics anyway!! 
+     - No problem; servers don't use graphics anyway!!
 
  * You have to use TensorFlow builds matched to your GPU
 
@@ -148,7 +148,7 @@ Notes:
 
      - Installation is a bit complicated. So on dev boxes we skip it
 
-Notes: 
+Notes:
 
 
 
@@ -157,20 +157,20 @@ Notes:
 ## Parallel TensorFlow
 
 
- * NN’s are known for being difficult to parallelize
+ * NN's are known for being difficult to parallelize
 
- * But, TensorFlow can in distributed mode 
-    - run on multiple CPU/GPU on a single machine 
+ * But, TensorFlow can in distributed mode
+    - run on multiple CPU/GPU on a single machine
     - run on distributed machines
 
  * Define a distributed master service plus worker services
 
-Notes: 
+Notes:
 
 
 ---
 
-## Tensorflow Parallelism 
+## Tensorflow Parallelism
 
 
 <img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> &nbsp;  &nbsp;
@@ -189,7 +189,7 @@ Notes:
 
      - Hortonworks has a TensorFlow assembly to run yarn on its Hadoop distribution
 
-Notes: 
+Notes:
 
 
 
@@ -214,13 +214,13 @@ Notes:
 
      - Immature
 
-Notes: 
+Notes:
 
 
 
 ---
 
-## Tensorflow on Spark 
+## Tensorflow on Spark
 
 
 <img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" />
@@ -238,12 +238,12 @@ Notes:
 
      - With more than one hidden layer
 
- * TensorFlow is the world’s most popular engine for deep learning
+ * TensorFlow is the world's most popular engine for deep learning
 
      - Execution Engine is Tuned to Facilitate Deep Learning
      - Runs very fast on GPUs!
 
-Notes: 
+Notes:
 
 
 ---
@@ -265,7 +265,7 @@ Notes:
 
  * Other libraries are more extensive in terms of features
 
-Notes: 
+Notes:
 
 # High Level TensorFlow
 
@@ -275,19 +275,19 @@ Notes:
 ## Base TensorFlow is Low Level
 
 
- * It is more of an execution model 
+ * It is more of an execution model
 
      - Handles the flows of Tensors
 
      - Does not automatically train models
- 
+
      - We can write code to do that
 
- *  Low Level TensorFlow does **NOT** have built-in training 
+ *  Low Level TensorFlow does **NOT** have built-in training
     - You have to do it yourself with Tensor Transformations
 
 
-Notes: 
+Notes:
 
 
 
@@ -320,7 +320,7 @@ Notes:
 
  * Used together with TensorFlow Datasets API
 
-Notes: 
+Notes:
 
 
 
@@ -339,7 +339,7 @@ Notes:
 
  * TensorFlow now includes bindings for Keras in `tf.keras` namespace
 
-Notes: 
+Notes:
 
 
 
@@ -358,7 +358,7 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 1.22, "height" : 4.55, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
-Notes: 
+Notes:
 
 ---
 
@@ -374,13 +374,13 @@ Notes:
      - Run `tensorflow-labs/package-labs.sh` script
      - Provide the lab zip bundle of lab files to students
      - Explain  '.ipynb'  and '.html' files
-     
+
  * Give access to virtual machines
 
  <img src="../../assets/images/generic/lab-setup.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.31, "top" : 2.41, "height" : 3.1, "width" : 9.62} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -399,7 +399,7 @@ Notes:
  * Recommended to install in virtualenv (or conda environment).
 
 ```bash
-$ (sudo) pip install tensorflow keras 
+$ (sudo) pip install tensorflow keras
 ```
 <!-- {"left" : 0, "top" : 2.93, "height" : 0.65, "width" : 8.27} -->
 
@@ -413,7 +413,7 @@ $ conda install tensorflow keras
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -426,7 +426,7 @@ Notes:
 
  *  **Overview**:   
  In this lab, we will become familiar with the lab environment, set up TensorFlow, and start.
- 
+
  * **Note** :   
  The training VMs are already setup, no need for this setup.  You can skip to next step
 
@@ -434,7 +434,7 @@ Notes:
 
  *  **Instructions for students**:
 
-     - Follow the **install.html** 
+     - Follow the **install.html**
 
 
 ---
@@ -453,7 +453,7 @@ Notes:
      - Follow  **basics/1-helloworld.ipynb** lab
 
 
-Notes: 
+Notes:
 
 ---
 

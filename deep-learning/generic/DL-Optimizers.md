@@ -249,7 +249,7 @@ Notes:
 - Hyperparameters
     - β1 is typically initialized to 0.9
     - β2  - scaling decay hyperparameter -  is often initialized to 0.999
-    -  ϵ - the smoothing term -  is usually initialized to a tiny number such as 10e–8
+    -  ϵ - the smoothing term -  is usually initialized to a tiny number such as 10e-8
 
 ---
 

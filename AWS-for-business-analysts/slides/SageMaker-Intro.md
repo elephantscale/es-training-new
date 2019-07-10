@@ -32,7 +32,7 @@
 
 * Deploy models into production cloud environment
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Amazon.png" style="width:50%"/>
+<img src="../../assets/images/logos/aws-sagemaker-logo-1.png" style="width:50%"/>
 
 ---
 
@@ -166,7 +166,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
   * Evaluate model performance
      - metrics based on algorithm
   * Validate with
-     - “Hold out” sets (20-30%)
+     - "Hold out" sets (20-30%)
      - K-fold validation (5-10)
   * Deploy to test system for online prediction
     - Evaluate, tweak model until satisfied
@@ -229,7 +229,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.htm
 ## SageMaker Lab
 
   * Use: ml-labs-sagemaker/README.html
-  * Runtime: 1hr – 1hr 30 mins
+  * Runtime: 1hr - 1hr 30 mins
   * Instructor: Explain the workflow
 
 <img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Lab.png" style="width:50%; position:absolute;"/>
@@ -248,7 +248,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.htm
 | imageclassification_caltech  	| image-classification   	| Neural network full training or  transfer knowledge 	|
 | lda_topic_modeling           	| lda                    	| LDA                                                 	|
 | linear_learner_mnist         	| linear-learner         	| Logistic regression Linear regression               	|
-| ntm_synthetic                	| ntm                    	| NTM – Neural Topic Modeling, cf. LDA                	|
+| ntm_synthetic                	| ntm                    	| NTM - Neural Topic Modeling, cf. LDA                	|
 
 ---
 
@@ -296,7 +296,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.htm
   * Main (RESTful)
      - [https://docs.aws.amazon.com/sagemaker/latest/dg/API_Reference.html](https://docs.aws.amazon.com/sagemaker/latest/dg/API_Reference.html)
 
-  * Python – High Level Python SDK
+  * Python - High Level Python SDK
      - [https://github.com/aws/sagemaker-python-sdk](https://github.com/aws/sagemaker-python-sdk)
 
   * SparkScala

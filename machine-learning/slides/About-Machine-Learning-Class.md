@@ -84,7 +84,7 @@ Notes:
 
 * Highly interactive (questions, discussions ..etc  are welcome)
 
-* Hands-on – lots and lots of labs! (learn by doing)
+* Hands-on - lots and lots of labs! (learn by doing)
 
 
 Notes:
@@ -195,9 +195,9 @@ Notes:
     - Your background (developer, admin, manager, etc.)
     - Technologies you are familiar with
     - Familiarity with Machine Learning   
-    (scale of 1 – 4 ;  1 – new, 2 - know some concepts,  3 – too a course, 4 -  using it at work)
+    (scale of 1 - 4 ;  1 - new, 2 - know some concepts,  3 - too a course, 4 -  using it at work)
     - Something non-technical about you!  
-    (favorite ice cream flavor / hobby…etc)
+    (favorite ice cream flavor / hobby...etc)
 
 <img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:30%;"/>   &nbsp;
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:25%;"/>
@@ -221,7 +221,7 @@ Notes:
 
 ## Class Logistics
 
-* Instructor’s contact
+* Instructor's contact
 
 * Slides
     - For each session, slides will be emailed out or delivered via virtual classroom

@@ -95,11 +95,11 @@ Notes:
 
  * About you
      - Your Name
-     - Your background (developer, admin, manager, …)
+     - Your background (developer, admin, manager, ...)
      - Technologies you are familiar with
-     - Familiarity with Python (scale of 1 – 4 ;  1 – new,   4 – expert)
-     - Familiarity with TensorFlow (scale of 1 – 4 ;  1 – new,   4 – expert)
-     - Something non-technical about you!(favorite ice cream flavor / hobby…)
+     - Familiarity with Python (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Familiarity with TensorFlow (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Something non-technical about you!(favorite ice cream flavor / hobby...)
      
  <img src="../../assets/images/generic/3rd-party/ice-cream-1.jpg" style="width:25%;"/>   &nbsp;
  <img src="../../assets/images/generic/3rd-party/hiking-2.jpg" style="width:30%;"/>
@@ -113,7 +113,7 @@ Notes:
 
 ## Class Logistics
 
-* Instructor’s contact
+* Instructor's contact
 
 * Slides
     - For each session, slides will be emailed out or delivered via virtual classroom

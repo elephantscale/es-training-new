@@ -124,7 +124,7 @@ Notes:
     - Save the model from laptop 
     - Load the saved model on production and deploy
 * Saved format language neutral (json + parquet)
-* Same model – no need to re-implement
+* Same model - no need to re-implement
 * Fast deploy!
 
 <img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 2.69, "top" : 1.02, "height" : 3.7, "width" : 4.88} -->
@@ -241,14 +241,14 @@ from pyspark.ml.linalg import Vectors
 
 v1 = Vectors.dense(3,2,1)
 print(v1)
-# [3.0,  2.0,   1.0]
+# [3.0,  2.0,   1.0]
 
-## sparse (size of array,  indexe array,  value array)
+## sparse (size of array,  indexe array,  value array)
 v2 = Vectors.sparse(10, (0, 9), (100, 200))
 print(v2) # (10,[0,9],[100.0,200.0])
 
 print(v2.toArray())
-# [ 100.    0.    0.    0.    0.    0.    0.    0.    0.  200.]
+# [ 100.    0.    0.    0.    0.    0.    0.    0.    0.  200.]
 
 ```
 <!-- {"left" : 0, "top" : 1.86, "height" : 3.13, "width" : 10.25} -->
@@ -346,7 +346,7 @@ Notes:
 
 ## Vector Assembler
 * Transforms a Dataframe To Another Dataframe
-    - By adding (or appending) to a “features” column
+    - By adding (or appending) to a "features" column
 
 <img src="../../assets/images/machine-learning/vector-assembler-1.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 2.08, "height" : 5.05, "width" : 8.21} -->
 
@@ -528,7 +528,7 @@ Notes:
 
  * Consider the following dataSalary with its larger range, might influence the outcome more
 
- *  Scaling can improve the convergence rate during the optimization process
+ *  Scaling can improve the convergence rate during the optimization process
 
  * Spark ML has  - Standard Scaler and - MinMax Scaler
 
@@ -568,8 +568,8 @@ import pandas as pd
 from pyspark.ml.feature import VectorAssembler
 
 df_pd = pd.DataFrame({
-  "home_runs": [ 30,  22,  17,  12, 44,   38,  40],
-  "salary_in_k":[ 700, 450,340, 250, 1200, 800, 950 ]})
+  "home_runs": [ 30,  22,  17,  12, 44,   38,  40],
+  "salary_in_k":[ 700, 450,340, 250, 1200, 800, 950 ]})
 df_spark = spark.createDataFrame(df_pd)
 assembler = VectorAssembler(inputCols=["home_runs", "salary_in_k"], outputCol="features")
 feature_vector = assembler.transform(df_spark)
@@ -641,7 +641,7 @@ Notes:
 ## Scaling : MinMaxScaler
 
 
-MinMax Scaler allows you to scale data at arbitrary range – 0.0 to 1.0 is default or  0 to 100)
+MinMax Scaler allows you to scale data at arbitrary range - 0.0 to 1.0 is default or  0 to 100)
 
 ```python 
 from pyspark.ml.feature import MinMaxScaler
@@ -683,9 +683,9 @@ Notes:
 
  * TF/IDF: Term Frequency/Inverse Document Frequency
 
-     - This essentially means the frequency of a term divided by its frequency in the larger group of documents (the “corpus”)
+     - This essentially means the frequency of a term divided by its frequency in the larger group of documents (the "corpus")
 
-     - Each word in the corpus is then a “dimension” – you would have thousands of dimensions.
+     - Each word in the corpus is then a "dimension" - you would have thousands of dimensions.
 
  * Word2Vec
 
@@ -719,7 +719,7 @@ Notes:
 
  *  **Approximate time**:
  
-     - 10 – 15 mins
+     - 10 - 15 mins
 
  *  **Instructions**:
 
@@ -778,10 +778,10 @@ df2 = df1.lowercase()
 # step2 - remove numbers / punctuations
 df3 = df2.removeNumbersPunct()
 
-# step3 – break into words
+# step3 - break into words
 df4 = df3.splitIntoWords()
 
-# step4 – create word vectors
+# step4 - create word vectors
 df5 = df4.word2Vec()
 
 # process df5

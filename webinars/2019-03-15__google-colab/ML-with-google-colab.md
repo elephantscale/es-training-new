@@ -6,10 +6,10 @@
 
 -  All the links from webinar are here :  
    http://bit.ly/2FctmXZ
-   
+
 - We will soon send an email with slides + recording + all the other info
 
-- Survey Please tell me about your background 
+- Survey Please tell me about your background
 
 - Q&A : Submit your questions (look for Q&A tab on your Zoom client)
 
@@ -23,14 +23,14 @@
 ### http://bit.ly/2FctmXZ
 
 
-- I am **Sujee Maniyam** 
+- I am **Sujee Maniyam**
 
 - Founder and principal trainer @ [Elephant Scale](https://elephantscale.com)
 
 - Background : Big Data, Data Science
 
 ```json
-{ "email" : "sujee@elephantscale.com", 
+{ "email" : "sujee@elephantscale.com",
   "Github" : "https://github.com/sujee",
   "LinkedIn" : "https://www.linkedin.com/in/sujeemaniyam"
 }
@@ -48,7 +48,7 @@
 
 ---
 
-# Part 1 : AI Intro 
+# Part 1 : AI Intro
 
 ---
 
@@ -263,7 +263,7 @@ Notes:
 <img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" alt="Face_detection.png" style="width:40%;"/>
 Notes:
 
-Image credit : Wikimedia: CCZero license 
+Image credit : Wikimedia: CCZero license
 
 
 ---
@@ -472,7 +472,7 @@ https://blog.openai.com/ai-and-compute/
 
 ## Video - CPU vs GPU Demonstration
 
-<img src="../../assets/images/deep-learning/3rd-party/Video-CPU-GPU-Demonstration.png" alt="Video-CPU-GPU-Demonstration.png" style="width:76%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/video-cpu-gpu.png" alt="video-cpu-gpu.png" style="width:76%;"/>
 
 [Video](https://www.youtube.com/watch?v=-P28LKWTzrI)
 
@@ -538,19 +538,19 @@ https://www.youtube.com/watch?v=056v4OxKwlI
 
 ---
 
-# Part 2 : Hands on / Demos 
+# Part 2 : Hands on / Demos
 
 ---
 
-## Getting Started With Machine Learning 
+## Getting Started With Machine Learning
 
-- Step 1: Setup your laptop with Python libraries 
+- Step 1: Setup your laptop with Python libraries
 
-- Step 2: Learn Python 
+- Step 2: Learn Python
 
 - Step 3: Learn and experiment with Machine Learning libraries
 
-- Most of our laptops have pretty decent CPUs 
+- Most of our laptops have pretty decent CPUs
     - how about if we want to experiment with GPU / TPU ?
 
 ---
@@ -561,7 +561,7 @@ https://www.youtube.com/watch?v=056v4OxKwlI
 
 ---
 
-## Choice 2 : Buy 
+## Choice 2 : Buy
 
 - [NewEgg.com](https://newegg.com)
 - [Amazon](https://amazon.com)
@@ -573,15 +573,15 @@ https://www.youtube.com/watch?v=056v4OxKwlI
 
 ---
 
-## Buying 
+## Buying
 
-Lambda Labs 
+Lambda Labs
 
 <img src="../../assets/images/deep-learning/3rd-party/lambda-labs-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/>
 
 ---
 
-## Buying 
+## Buying
 
 
 Amazon
@@ -590,14 +590,14 @@ Amazon
 
 ---
 
-## Choice 3 :  Cloud 
+## Choice 3 :  Cloud
 
 - Poll : Cloud Env
 
 | AWS                                                                     | Azure                                                                                   | Google Cloud                                        |
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------|
 | P2 series : Nvidia K80 (pricing from $0.9 / hr)                         | ND series : NVIDIA Tesla P40 GPUs (starting at $0.9 / hr)                               | NVIDIA® Tesla® P100 (starting from $1.46 / gpu hr)  |
-| P3 series : Nvidia V100 (pricing from $3 / hr)                          | NC series : NVIDIA’s Tesla V100 GPUs (starting at $3 / hr)                              |  NVIDIA® Tesla® V100 (starting at $2.48 per GPU hr) |
+| P3 series : Nvidia V100 (pricing from $3 / hr)                          | NC series : NVIDIA's Tesla V100 GPUs (starting at $3 / hr)                              |  NVIDIA® Tesla® V100 (starting at $2.48 per GPU hr) |
 | [More Info](https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html) | [More Info](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/) | [More info](https://cloud.google.com/gpu/)          |
 
 <img src="../../assets/images/logos/aws-logo-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%"/>
@@ -608,7 +608,7 @@ Amazon
 
 ---
 
-## Google Colab 
+## Google Colab
 
 > Colaboratory is a free Jupyter notebook environment that requires no setup and runs entirely in the cloud.
 >   https://colab.research.google.com
@@ -624,18 +624,18 @@ Amazon
 
 ---
 
-# Demos 
+# Demos
 <img src="../../assets/images/generic/3rd-party/live-demo-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;"  width="30%"/>
 
 ---
 
-## Demos 
+## Demos
 
 https://colab.research.google.com/
 
 ### Info : [bit.ly/2FctmXZ](http://bit.ly/2FctmXZ)
 
-### Demo Notebooks 
+### Demo Notebooks
 Available at : https://github.com/elephantscale/es-public/tree/master/colab-demo
 
 
@@ -654,7 +654,7 @@ Available at : https://github.com/elephantscale/es-public/tree/master/colab-demo
 
 ---
 
-## Demo 4 : Cats and Dogs 
+## Demo 4 : Cats and Dogs
 
 ---
 
@@ -677,7 +677,7 @@ Attend online, weekly, hands-on.
 Sign up here :  http://eepurl.com/gkScbf
 
 ```json
-{ "contact email" : "hello@elephantscale.com", 
+{ "contact email" : "hello@elephantscale.com",
   "web" : "https://elephantscale.com",
   "Github" : "https://github.com/elephantscale"
 }

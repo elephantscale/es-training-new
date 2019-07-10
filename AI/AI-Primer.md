@@ -6,15 +6,15 @@
 <img src="../assets/images/generic/3rd-party/terminator-2.png" alt="" style="width:50%;float:right;"/>
 
  * See the potential of AI
- 
+
  * Learn from industry use cases
- 
+
  * Understand the problems AI can solve
 
  * Understand the basic AI vocabulary
 
  * Learn about AI software & hardware
- 
+
  * Running an AI project
 
  * Building Data Science teams
@@ -51,7 +51,7 @@ Notes:
 ---
 ## Recommended Resources:
 
-- [AI for Everyone](https://www.coursera.org/learn/ai-for-everyone) - A very good course (free!) by Professor Andrew Ng 
+- [AI for Everyone](https://www.coursera.org/learn/ai-for-everyone) - A very good course (free!) by Professor Andrew Ng
 
 * [AI Tranformation Playbook](https://landing.ai/ai-transformation-playbook/) - Another great free ebook by Andrew Ng
 
@@ -91,7 +91,7 @@ Notes:
 
 
 <img src="../assets/images/deep-learning/3rd-party/Google-Assistant.png" alt="Google-Assistant.png" style="width:40%;"/>
- 
+
 [Link](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html)
 
 Notes:
@@ -250,13 +250,13 @@ https://venturebeat.com/2018/10/02/uber-eats-and-the-6b-bookings-run-rate-the-ai
 
 ## Uber Eats - AI
 
-Here are the actions in Uber Eats 
+Here are the actions in Uber Eats
 
 - Step 1: When user launches the app, need to display restaurants
 
-- Step 2: Choose menu items from a restaurant 
+- Step 2: Choose menu items from a restaurant
 
-- Step 3: Uber to dispatch a courier to pick up the food and deliver 
+- Step 3: Uber to dispatch a courier to pick up the food and deliver
     - Plan the optimal route for pick and up delivery
 
 - Step 4 : Gather feedback from user (ratings / reviews)
@@ -289,7 +289,7 @@ What factors Uber might consider when recommending a restaurant?
 
 
 ---
-## Uber Eats AI : Step 2 : Recommend Menu Items 
+## Uber Eats AI : Step 2 : Recommend Menu Items
 
 <img src="../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
@@ -301,7 +301,7 @@ What factors Uber might consider when recommending a items from a restaurant?
 
 ---
 
-## Uber Eats AI : Step 2 : Recommend Menu Items 
+## Uber Eats AI : Step 2 : Recommend Menu Items
 
 
 - Based on past orders
@@ -436,7 +436,7 @@ http://bigdatausecases.info/entry/airbnb-driving-a-higher-level-of-customer-supp
  * Capitol ONE:
      - 365 Billion in assets,
      - 8th largest bank, 4th largest credit issuer
-     
+
 * Challenge:
     - minimize fraudulent credit card transactions
     - Huge volume, 20 million transactions a day
@@ -461,11 +461,11 @@ Notes:
 
  * Bank of America virtual assistant
 
- * Searching through transactions 
+ * Searching through transactions
     - "show me my total expenses to Disneyland trip"
 
  * Bill pay ("Pay $50 to PTA")
- 
+
 <img src="../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;"/>
 
 Notes:
@@ -484,18 +484,18 @@ Notes:
  * So I go to Lyft app's help and start a chat with 'customer service'
 
 ```
-Me: 
+Me:
     Hi, My driver went to a wrong location.  
     So I had to cancel.  
     But I was charged a cancellation fee.
     Can that be refunded"`
 
-Customer Service: 
+Customer Service:
     I see, this is your first cancellation in past 2 months.  
     We will refund you the money.Have a nice day!"`
 ```
 
-- Hightlighs 
+- Hightlighs
      - Resolution time:  **about 20 seconds!**
      - No phone calls,
      - No wait time
@@ -514,12 +514,12 @@ Notes:
 
 * Case study at London's Morefield's Hospital
 
-* Typical eye diagnosis took 2 weeks 
+* Typical eye diagnosis took 2 weeks
 
 * AI can diagnose it in a flash
 
 * How?
-    - The AI system was trained on hundreds of thousands of previous eye scans and their diagnosis 
+    - The AI system was trained on hundreds of thousands of previous eye scans and their diagnosis
     - Once it has learned enough then when it sees a new image, it can predict the outcome
     - 90%+ accuracy
 
@@ -563,7 +563,7 @@ https://clarifai.com/demo
 
 * Example: Self-driving cars
     - Historical approach:  
-    Write a massive program to instruct the car to handle all possible scenarios encountered while driving 
+    Write a massive program to instruct the car to handle all possible scenarios encountered while driving
         - This is immensely difficult
 
     - AI approach:  
@@ -647,7 +647,7 @@ Notes:
 ### Artificial Narrow Intelligence  (ANI)
 <img src="../assets/images/machine-learning/3rd-party/Driver_free_car.png" alt="Driver_free_car.png" style="width:25%;float:right;"/>
 
-- Focused on a specific tasks 
+- Focused on a specific tasks
 - Self driving, smart speaker, image recognition
 - Tremendous progress in the last few years
 
@@ -656,9 +656,9 @@ Notes:
 ### Artificial Generic Intelligence (AGI)
 <img src="../assets/images/generic/3rd-party/terminator-1.jpg" alt="bank-of-america.png" style="width:25%;float:right;"/>
 
-- AI can do anything a human can do 
+- AI can do anything a human can do
 - We are decades or hundreds of years away from this
-- So no need to worry about killer robots yet :-) 
+- So no need to worry about killer robots yet :-)
 
 
 
@@ -702,11 +702,11 @@ Notes:
  * E.g. how babies learn to talk:
 
      - They don't start by learning the 'rules of the language'
-     
+
      - Learn by example
 
  * Train computers the similar way
- 
+
  * The focus shifts from  **logic to data**
 
  * More data --> smarter systems
@@ -851,7 +851,7 @@ Notes:
      - So running a 100 node cluster for 5 hrs --> $500
 
  *  **Advances in hardware** - CPU / GPUs / TPUs
- 
+
  - **Advances in Algorithms**
 
  - **Availability of pre-trained models**
@@ -995,7 +995,7 @@ Notes:
      - A TPU can process 100 million photos a day
 
  * Available in Google Cloud platform
- 
+
 
 
 Notes:
@@ -1190,11 +1190,11 @@ Notes:
 
 ---
 
-## AI Vocabulary: Data Science 
+## AI Vocabulary: Data Science
 
 <img src="../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:30%;float:right;"/>
 
-- **Data Science** : Deriving intelligence from data 
+- **Data Science** : Deriving intelligence from data
 
 - For example, a real estate company can use data science to figure out which types of homes to build to maximize profits
 
@@ -1216,9 +1216,9 @@ Notes:
 
 ## Data Science vs. Machine Learning
 
-- **Data Science** works with existing data and derive intelligence 
+- **Data Science** works with existing data and derive intelligence
 
-- **Machine Learning** learns from existing data and predicts on new/unseen data 
+- **Machine Learning** learns from existing data and predicts on new/unseen data
 
 - The definitions are not clear-cut,  some people use these interchangeably
 
@@ -1235,7 +1235,7 @@ Notes:
  - Used in Deep Learning
 
  - (More on this later)
- 
+
 <img src="../assets/images/deep-learning/Neural-Networks-Simulation.png" alt="AI-ML-DL.png" style="width:90%;"/>
 
 Notes:
@@ -1263,7 +1263,7 @@ Notes:
     - Since it can be computationally very intensive;  So we may use cluster of computers for training
     - Clusters can contain 100s (or 1000s) of CPUs/GPUs/TPUs
 
-- The resulting model is orders of magnitude smaller in size 
+- The resulting model is orders of magnitude smaller in size
     - it could fit in your phone!
 
 <img src="../assets/images/AI/data-size-vs-model-size.png" alt="AI-Vocabulary.png" style="max-width:100%;"/>
@@ -1273,19 +1273,19 @@ Notes:
 ## AI Vocabulary: Algorithm vs. Model
 
 * **Algorithm**
-    - Algorithms are 'generic' mathematical formulas 
+    - Algorithms are 'generic' mathematical formulas
 * **Model**
-    - algorithm + data ==> model 
+    - algorithm + data ==> model
 * Often Algorithm and Model are used interchangeably
 
 <img src="../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="width:66%;"/>
-    
+
 ---
 
 ## Algorithm and Model
 
-  <img src="../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:80%;"/> 
-  
+  <img src="../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:80%;"/>
+
 ---
 
 
@@ -1293,19 +1293,19 @@ Notes:
 
 ---
 
-## AI Starts with Data 
+## AI Starts with Data
 
-- Lot of AI algorithms learn from data 
+- Lot of AI algorithms learn from data
 
-- Generally, more data usually makes smarter algorithms 
-    - There are exceptions to this 
+- Generally, more data usually makes smarter algorithms
+    - There are exceptions to this
 
 
 ---
 
-## Learning From Data 
+## Learning From Data
 
-- Let's start with simple housing sales data 
+- Let's start with simple housing sales data
 
 | Bedrooms (input 1) | Bathrooms (input 2) | Size (input 3) | Sale Price (in thousands) (we are trying to predict) |
 |--------------------|---------------------|----------------|------------------------------------------------------|
@@ -1315,7 +1315,7 @@ Notes:
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
 
-- An machine learning algorithm learns from the above data, and then tries to predict house prices on new data 
+- An machine learning algorithm learns from the above data, and then tries to predict house prices on new data
 
 
 | Bedrooms (input 1) | Bathrooms (input 2) | Size (input 3) | Predicted Sale Price (in thousands) |
@@ -1331,7 +1331,7 @@ Notes:
      - This step can get computationally expensive.  
      Hours / days / weeks (this is why we use GPU / TPUs  and clusters of computers)
  *  **Phase 2 : Prediction / Inference**
-     - Once a model is created it can answer questions 
+     - Once a model is created it can answer questions
         - "what would be the sale price for this house"
         - "is this transaction fraud / not-fraud"
     - Prediction is very fast (milli seconds)
@@ -1368,16 +1368,16 @@ Notes:
 
 - Text data (CSV, JSON) can have structure too
 
-JSON data 
+JSON data
 
-```json 
+```json
 {   "name" : "Joe",
     "email" : "joe@gmail.com" }
 ```
 
 CSV data (Comma Seperated Values)
 ```
-joe,joe@gmail.com 
+joe,joe@gmail.com
 jane,jane@gmail.com
 ```
 
@@ -1387,15 +1387,15 @@ jane,jane@gmail.com
 
 
 - Text
-    - Documents : email, word documents 
+    - Documents : email, word documents
     - Survey results (customer feedback)
-    - customer support ticket notes 
+    - customer support ticket notes
 
-- Binary data 
+- Binary data
     - Audio (phone call recordings)
     - Images
     - Video (YouTube videos)
-    
+
 <img src="../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
 <img src="../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
 <img src="../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
@@ -1405,7 +1405,7 @@ jane,jane@gmail.com
 
 ---
 
-## Semi-Structured Data 
+## Semi-Structured Data
 
 - This is 'between' structured and and unstructured
 
@@ -1413,8 +1413,8 @@ jane,jane@gmail.com
 
 - Example, tweet data
 
-```json 
-{   "user_id" : "user123", 
+```json
+{   "user_id" : "user123",
     "timestamp" : "2018-09-20 12:00:05 EST",
     "device" : "iPhone X",
     "location" : "34.893, 120.979",
@@ -1427,24 +1427,24 @@ jane,jane@gmail.com
 
 ---
 
-## Data 
+## Data
 
 - Humanity is producing data at a rapid clip
     - 90% of data is generated in last 2 years!
     - 2.5 quintillion bytes of data per day
-    
+
 <img src="../assets/images/generic/3rd-party/domo_data-never-sleeps-5-01.png" alt="Data-growth-01.png" style="width:26%;"/>
-    
-Notes: 
+
+Notes:
 
 - [source: domo.com](https://www.domo.com/learn/data-never-sleeps-5?aid=ogsm072517_1&sf100871281=1)
 - [Forbes article](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#61df751760ba)
-    
+
 ---
 
 ## Data Growth Trends
 
-- As you can see, unstructured data is growing rapidly 
+- As you can see, unstructured data is growing rapidly
 
 <img src="../assets/images/deep-learning/3rd-party/Data-growth-01.png" alt="Data-growth-01.png" style="width:76%;"/>
 
@@ -1457,7 +1457,7 @@ Source : https://www.dubber.net/unlocking-unstructured-data-voice-processing-pow
 
 ---
 
-## Question For The Class 
+## Question For The Class
 
 **Q: Can you name some examples of structured/unstructured data is generated at your home/work ?**
 
@@ -1468,16 +1468,16 @@ Source : https://www.dubber.net/unlocking-unstructured-data-voice-processing-pow
 
 ---
 
-## Data And AI 
+## Data And AI
 
 - Majority of the machine learning projects use 'structured data'
     - predicting house prices, identifying credit card transactions ..etc.
-    
+
 - This will continue to grow as we get more and more data, and enterprises adopt more AI
 
-- We are only able to make significant headways in processing unstructured data 
+- We are only able to make significant headways in processing unstructured data
     - images , videos
-    
+
 - This is largely due to the advances of neural nets
 
 
@@ -1531,11 +1531,11 @@ Notes:
 
 ## Dos and Don'ts For Collecting Data for AI
 
-AI starts with data, in this section we are going to look at some best practices 
+AI starts with data, in this section we are going to look at some best practices
 
-- How to acquire data 
+- How to acquire data
 
-- How to curate/clean data 
+- How to curate/clean data
 
 - How to deal with 'big data'
 
@@ -1543,20 +1543,20 @@ AI starts with data, in this section we are going to look at some best practices
 
 ## Acquiring Data
 
-- Best data is the one you already have or  can collect on your own 
+- Best data is the one you already have or  can collect on your own
     - Data you already have in your database (e.g. customer data)
-    - Website logs 
-    
+    - Website logs
+
 - Data can be acquired from 'data brokers'
     - e.g. Stock market data
 
-- Some data is free 
+- Some data is free
     - e.g. Census data
 
 
 ---
 
-## Data Responsibilities 
+## Data Responsibilities
 
 - Usually IT team is responsible building the data infrastructure
 
@@ -1576,7 +1576,7 @@ AI starts with data, in this section we are going to look at some best practices
 
 - Most machine learning doesn't necessarily need 'Big Data'
     - Even modest data can yield surprisingly decent results
-    
+
 - However, more data can significantly produce better results
 
 > "More data usually beats better algorithms"   
@@ -1584,7 +1584,7 @@ AI starts with data, in this section we are going to look at some best practices
 
 ---
 
-## Comprehending Data Sizes 
+## Comprehending Data Sizes
 
 | Unit      | Acronym | Size       | Example                                                                                                                                                                                                                            |
 |-----------|---------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1607,19 +1607,19 @@ AI starts with data, in this section we are going to look at some best practices
 
 - How ever databases have their limitations:
     - they don't scale to huge data sizes
-    - or they can be incredibly expensive to store large amount of data 
+    - or they can be incredibly expensive to store large amount of data
     - they don't handle unstructured data well
 
 
 
 ---
 
-## Big Data Systems 
+## Big Data Systems
 
-- Storing big data requires large 'cluster' systems 
+- Storing big data requires large 'cluster' systems
 
 - Choices
-    - On premise :  Hadoop 
+    - On premise :  Hadoop
     - Cloud storage : Amazon S3, Google Cloud Storage, Azure storage
 
 ---
@@ -1638,7 +1638,7 @@ AI starts with data, in this section we are going to look at some best practices
 
 ---
 
-## Hadoop Storage Cost 
+## Hadoop Storage Cost
 
 <img src="../assets/images/hadoop/3rd-party/hadoop-cost2.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/>
 
@@ -1657,7 +1657,7 @@ For accurate pricing, see the provided links
 ---
 
 
-# Doing AI Projects 
+# Doing AI Projects
 
 ---
 
@@ -1674,13 +1674,13 @@ For accurate pricing, see the provided links
     - Customer support ticket routing
     - self driving car : figuring out what is in front of it
     - Identifying cancer cells from Xray image
-    
+
 <img src="../assets/images/generic/3rd-party/phone-screen-cracked-damage.jpg" alt="Data-Science.png" style="width:25%;"/> &nbsp; &nbsp;
 <img src="../assets/images/generic/3rd-party/car-3.png" alt="Data-Science.png" style="width:25%;"/>
 
 ---
 
-## What AI Can not do 
+## What AI Can not do
 
 - **Complex tasks that combines multiple skills**
 
@@ -1704,13 +1704,13 @@ For example, if a construction worker is waving you to stop or continue?
 
 - For example, let's say we are deploying AI to handle customer tickets.
 
-- AI can easily 'route' tickets to appropriate queues and priorities 
+- AI can easily 'route' tickets to appropriate queues and priorities
     - "Item arrived late, even though I paid for expedited shippping.  can I get a refund?" ==> Send it to 'refund' queue
     - "Item arrived damaged, can I return it?" ==> send it to 'return' queue
-    
+
 - What AI can not do  (the whole workflow):
-    - Read the support ticket 
-    - call customer to confirm the issue 
+    - Read the support ticket
+    - call customer to confirm the issue
     - then issue a refund
     - update the sales register
 ---
@@ -1730,31 +1730,31 @@ For example, if a construction worker is waving you to stop or continue?
 
 - An AI system can evaluate an MRI scan pretty quickly to determine if the patient has a tumor
 
-- How ever it is not going to be able replace an trained oncologist, because they do lot of other things 
-    - train interns 
-    - consult with patients 
+- How ever it is not going to be able replace an trained oncologist, because they do lot of other things
+    - train interns
+    - consult with patients
     - evaluate equipments and treatments
-    
+
 - So an oncologist may deploy an AI system to help him with reviewing MRI scans quickly.  
 So he/she can focus on other 'higher order' functions
 
 ---
-    
+
 ## Quiz For the Class: AI Projects
 <img src="../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/>
 
-- Pick a couple of potential AI projects that is applicable to you 
+- Pick a couple of potential AI projects that is applicable to you
 
 - What kind of data do you need for machine learning?  
-It may help to think along these lines 
+It may help to think along these lines
     -  Data we already have
-    - Data we can collect 
+    - Data we can collect
     - 3rd party data - FREE or minimal cost
-    - 3rd party data - Premium 
+    - 3rd party data - Premium
 
 - What kind of data infrastructure do you have now?  Can it scale to handle future growth?
 
-    
+
 ---
 # Machine Learning vs. Deep Learning
 
@@ -1792,18 +1792,18 @@ https://www.analyticsvidhya.com/blog/2017/04/comparison-between-deep-learning-ma
 
 ## Deciding Between Machine Learning(ML) and Deep Learning(DL)
 
-- This is not an easy decision, but here are some factors to think about 
+- This is not an easy decision, but here are some factors to think about
 
-- Have structured data?  Then both ML and DL can be used 
+- Have structured data?  Then both ML and DL can be used
 
-- Got unstructured data?  Probably deep learning 
+- Got unstructured data?  Probably deep learning
 
-- Do keep in mind, deep learning usually needs 
-    - lot of data 
+- Do keep in mind, deep learning usually needs
+    - lot of data
     - and lot of compute time   
     to produce good results
 
-    
+
 ---
 
 ## AI Scaling with Data
@@ -1945,7 +1945,7 @@ Facebook used 95%/5% `Understanding text from scratch`
      - Hand-written numbers --> any digits 0, 1, 2,..., 9
 
  * Classification algorithm learns from training data
- 
+
  * Then predicts on new/unseen data
 
 
@@ -2280,7 +2280,7 @@ Notes:
 
  * The human brain is a bunch of interconnected neurons.
  * The neuron is like a "gate" - produces an output
- * Some neurons will only 'fire' if they see color red 
+ * Some neurons will only 'fire' if they see color red
  * Some neurons will only fire if they detect a shape of 'hexagon'
  * If both of these cells fire together the brain can intrepret that I am seeing a red stop sign
 
@@ -2413,12 +2413,12 @@ Notes:
 ---
 
 
-## Power of Neural Networks 
+## Power of Neural Networks
 
 - Think of Neurons like 'legos'
 
 - Each neuron will do a little bit work   
-But when you stack them and combine them together, they can model some really complex functions 
+But when you stack them and combine them together, they can model some really complex functions
 
 - This is what makes them incredibly powerful
 
@@ -2445,7 +2445,7 @@ Notes:
 
 ---
 
-## Neural Network Example 
+## Neural Network Example
 
 - Say we are trying to build a neural net to predict house prices
 
@@ -2498,7 +2498,7 @@ Notes:
 
 
 <img src="../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="digit-recognition-1.png" style="width:50%;"/>
- 
+
 [Link](http://myselph.de/neuralNet.html)
 
 Notes:
@@ -2993,7 +2993,7 @@ Notes:
      - Issues
 
      - Best practices?
-     
+
 <img src="../assets/images/AI/AI-Workflow-01.png" alt="AI-Workflow-06" style="width:40%;"/>
 
 Notes:
@@ -3182,21 +3182,21 @@ Browser-based notebook interface with support for code, text, mathematical expre
 | TensorFlow     | Python, C++          | Linux, macOS, Windows, iOS, Android | Google                                | 2015 |
 | Theano         | Python               | Linux, macOS, iOS                   | University of Montreal                | 2010 |
 | Torch          | C++, Lua             | Linux, macOS, iOS, Android          | R.Collobert, K.Kavukcuoglu, C.Farabet | 2002 |
- 
+
 <img src="../assets/images/logos/dl4j-logo.png" alt="XXX image missing" style="background:white;" width="20%"/>
 <img src="../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"  width="20%"/>
 <img src="../assets/images/logos/Caffe2-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
 <img src="../assets/images/logos/tensorflow-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
 
 ---
-   
+
 ## Tools for Deep Learning - Tensorflow
 
  - [Tensorflow](https://www.tensorflow.org/) is an open source DL framework by Google
 
  - Became very popular in a very short period of time
 
- - Based on “data flow graphs”
+ - Based on "data flow graphs"
 
  - Language support: Python, C++
 
@@ -3237,7 +3237,7 @@ Notes:
 
 - https://bigdl-project.github.io
 
-<img src="../assets/images/logos/bigdl-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../assets/images/logos/bigdl-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
 <img src="../assets/images/logos/intel-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
 
 
@@ -3640,20 +3640,20 @@ Notes:
 
 ---
 
-## Target Algorithm Predicts Young Woman's Pregnancy 
+## Target Algorithm Predicts Young Woman's Pregnancy
 
 <img src="../assets/images/deep-learning/3rd-party/Predicts-Young-Woman-01.png" alt="Predicts-Young-Woman-01.png" style="width:30%;float:right;"/>
 
  * Target's Data Scientists identified 25 products that, when purchased together, predict a woman's pregnancy
- 
+
  * Target started sending out targeted coupons to women shoppers who they have identified as being pregnant
- 
+
  * One angry man walked into Target store and complained to the manager :  
   " *Why are you sending these baby coupons to my daughter, she is still in high school* "
-  
+
  * Few days later, the same man called the manager and apologized  
  " *Sorry, I just learned that my daughter is pregnant* "
- 
+
  * Links : [link1](https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-creeps/6/), [link2](https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?mtrref=www.google.com)
 
 ---

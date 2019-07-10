@@ -164,11 +164,11 @@ http://www.cabrillo.edu/~evenable/ch03.pdf
   * Mean / Average  
   = (40 + 42 + 45 + 50 + 55 + 60 + 65 + 70 ) / 8   
   = 53.4
-  
+
   * Median  
   = (50 + 55) / 2   
-  = 52.5 
-  
+  = 52.5
+
 <img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers.png" alt="Data-Exploration-Median-Mean-Outliers.png" style="max-width:80%;"/>
 
 Notes:
@@ -187,8 +187,8 @@ Notes:
 
 <img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="max-width:80%;"/>
 
-* So **median** is less influenced by outliers 
-* This is why we hear 'median' used in news stories 
+* So **median** is less influenced by outliers
+* This is why we hear 'median' used in news stories
     - '**Median** house price in San Jose is 1 M'
 
 Notes:
@@ -255,7 +255,7 @@ Notes:
 
 
  * Consider sample annual incomes from two cities.
- 
+
  * City1 = [ 30k, 32k, 35k, 40k, 45k, 48k, 50k ]   
    City2 = [ 10k, 15k, 20k, 40k, 60k, 65k, 70k ]
 
@@ -277,11 +277,11 @@ Notes:
 
 | Term | Description | Also known as |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| Range | Largest Value – Smallest Value | spread |
+| Range | Largest Value - Smallest Value | spread |
 | Deviations | Difference between estimated value and actual value | Residuals  , errors |
 | Variance | Sum(squared deviations from mean) / N <br/> N = number of samples | Mean-squared-error, MSE, S<sup>2</sup/> |
 | **Standard deviation** | Square root of variance. (most used measurement of dispersion) | l2-norm, Euclidean norm |
-| Percentile | The value such that P percent of the values take on this value or less and (100–P) percent take on this value or more | quantile |
+| Percentile | The value such that P percent of the values take on this value or less and (100-P) percent take on this value or more | quantile |
 | Interquartile range | The difference between the 75th percentile and the 25th percentile | IQR |
 
 Notes:
@@ -738,7 +738,7 @@ Notes:
 
 ## Correlation Formula
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Formula-0.png" alt="Data-Exploration-Correlation-Formula-0.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/correlation-formula-1.png"  style="width:60%;"/>
 
 Notes:
 
@@ -818,7 +818,7 @@ Notes:
 
 ---
 
-## Correlation Matrix 
+## Correlation Matrix
 
 * The diagonal cells are **1.0**  
 Each variable is perfectly correlated with itself
@@ -833,14 +833,14 @@ Each variable is perfectly correlated with itself
 <img src="../../assets/images/machine-learning/Data-Exploration--Covariance-Matrix-Code-R--0.png" alt="Data-Exploration-Covariance-Matrix.png" style="width:40%;float:right;"/>
 
 ```R
-a <- c(1,2,3,4,5,6) 
-b <- c(2,3,5,6,1,9) 
-c <- c(3,5,5,5,10,8) 
-d <- c(10,20,30,40,50,55) 
-e <- c(7,8,9,4,6,10) 
+a <- c(1,2,3,4,5,6)
+b <- c(2,3,5,6,1,9)
+c <- c(3,5,5,5,10,8)
+d <- c(10,20,30,40,50,55)
+e <- c(7,8,9,4,6,10)
 
-m <- cbind(a,b,c,d,e) 
-m 
+m <- cbind(a,b,c,d,e)
+m
 
 cor_matrix = cor(m)
 cor_matrix
@@ -861,7 +861,7 @@ Notes:
 
 ##  Correlaion Matrix Code (Python)
 
-```python 
+```python
 import numpy as np
 
 a = np.array([1,2,3,4,5,6])

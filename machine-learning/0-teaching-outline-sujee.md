@@ -6,7 +6,7 @@
 - administer PRE test
 
 - start with a Overview video
-        - Google’s view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
+        - Google's view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
 
 
 - ML Primer - 1hr

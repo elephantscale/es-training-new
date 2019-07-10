@@ -23,7 +23,7 @@ Notes:
 ## Process of Convolution
 
 
- * Assume the filter/kernel is a weight matrix “wk“. For example, let’s assume a 3X3 weighted matrix.
+ * Assume the filter/kernel is a weight matrix "wk". For example, let's assume a 3X3 weighted matrix.
 
 |   |   |   |
 |---|---|---|
@@ -173,7 +173,7 @@ Notes:
 
      - Stride is 2 
 
- * Here stride is same across two dimensions, but in general it can be different across height “sh” and width “sw”.
+ * Here stride is same across two dimensions, but in general it can be different across height "sh" and width "sw".
 
 
 Notes: 
@@ -185,7 +185,7 @@ Notes:
 ## Convolutional Layer
 
 
- * The image shows two kernels – vertical and horizontal filters. Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter.
+ * The image shows two kernels - vertical and horizontal filters. Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter.
 
 ![](../../assets/images/deep-learning/CNN-Convolutional-Layer-Contd--1.png)
 
@@ -307,7 +307,7 @@ Notes:
 ## Stacking Multiple Feature Maps (Contd.)
 
 
- * Images that are grayscale have just one channel. So it needs just 1 sublayer. Colored images have three channels – Red, Green and Blue. So it needs 3 sublayers.
+ * Images that are grayscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
 
  * Satellite imagery that capture extra light frequencies (eg infrared) can have more channels.
 
@@ -370,7 +370,7 @@ Notes:
 
  * Like a convolutional layer, a pooling layer is connected to a small set of neurons in input image which fall within a receptive field.
 
- * In detail, a pooling layer takes each feature map output from the convolutional layer and prepares a condensed feature map.
+ * In detail, a pooling layer takes each feature map output from the convolutional layer and prepares a condensed feature map.
 
  * This layer by itself does not have any weights.
 

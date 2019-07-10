@@ -11,7 +11,7 @@ Activation Functions
 
      - Else, `y = 0`
 
-     - Not Differentiable (can’t use gradient descent to optimize)
+     - Not Differentiable (can't use gradient descent to optimize)
 
  * Possible Activation Funtions
    - None (just use raw output of neuron)
@@ -60,9 +60,9 @@ Notes:
 
  * Tanh is more popular, rather than Sigmoid.
 
- * The two are closely related, as tanh is a “stretched” Sigmoid
+ * The two are closely related, as tanh is a "stretched" Sigmoid
 
-     - `Tanh(x) = 2 * logistic(2x) – 1`
+     - `Tanh(x) = 2 * logistic(2x) - 1`
 
  * Tanh is symmetric around zero.
 
@@ -113,7 +113,7 @@ Notes:
 ## Why ReLU?
 
 
- * Isn’t ReLU not differentiable?
+ * Isn't ReLU not differentiable?
 
      - It is not differentiable at zero
 
@@ -122,8 +122,8 @@ Notes:
  * Why do we use ReLU?
 
      - Simple
-     – very easy understand
-     - Fast – computationally very cheap
+     - very easy understand
+     - Fast - computationally very cheap
      - No Vanishing gradient problem
      - No Exploding Gradient problem
 
@@ -187,9 +187,9 @@ Notes:
 ## Logistic Regression Redux?
 
 
- * What we’ve done so far is essentially create a logistic regression classifier.
+ * What we've done so far is essentially create a logistic regression classifier.
 
- * In fact, with the Sigmoid activation function, we’ve done essentially exactly that.
+ * In fact, with the Sigmoid activation function, we've done essentially exactly that.
 
  * So are neural networks just a implementation scheme for logistic regression?
 
@@ -202,7 +202,7 @@ Notes:
 ## Review
 
 
- * A Sigmoid Function is a mathematical function with a Sigmoid Curve (“S” Curve) and outputs a probability between 0 and 1.
+ * A Sigmoid Function is a mathematical function with a Sigmoid Curve ("S" Curve) and outputs a probability between 0 and 1.
 
  * A rectifier or ReLU (Rectified Linear Unit) is a commonly used activation function that allows one to eliminate negative units in an ANN. It helps solve vanishing/exploding gradient problems associated with other activation functions.
 

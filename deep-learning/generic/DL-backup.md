@@ -1,6 +1,6 @@
 ## Training the Model
 
- * Rosenblatt’s original algorithm for training was simple:
+ * Rosenblatt's original algorithm for training was simple:
 
      - Iterate through weights and look at the output error
 
@@ -10,7 +10,7 @@
 
  * The Problem:
 
-     - This kind of “brute force” method will take too long to train.
+     - This kind of "brute force" method will take too long to train.
 
 Notes:
 
@@ -21,7 +21,7 @@ Notes:
 
  * When we randomly initialize the weights, our first pass outputs of our network will almost certainly be wrong!
 
-     - We have training data, so we know the “right” answer
+     - We have training data, so we know the "right" answer
 
  * How do we calculate how wrong we are?
 

@@ -260,7 +260,7 @@ Notes:
 
      - X is independent variable (we have more than one)
 
- * Log(odds) = ln (y / (1-y)) = β<sub>0</sub> + β<sub>1</sub>* X<sub>1</sub> + β<sub>2</sub>* X<sub>2</sub> + …. + β<sub>n</sub>* X<sub>n</sub> <br/><br/>
+ * Log(odds) = ln (y / (1-y)) = β<sub>0</sub> + β<sub>1</sub>* X<sub>1</sub> + β<sub>2</sub>* X<sub>2</sub> + .... + β<sub>n</sub>* X<sub>n</sub> <br/><br/>
 
  * Log (odds) or log-odds ration = <img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Multiple-Logistic-Regression-0.png" style="width:10%;"/><!-- {"left" : 6.86, "top" : 3.37, "height" : 1.74, "width" : 2.99} -->
 
@@ -374,7 +374,7 @@ Notes:
 
      - multinomial logistic regression
 
- * For K possible outcomes
+ * For K possible outcomes
 
      - Chose one outcome as a pivot
 
@@ -520,7 +520,7 @@ Notes:
 
 ## Theory Behind SVM
 
-* Consider the following data points – Blue and Red
+* Consider the following data points - Blue and Red
 
 * Since they are in 2D data, a single line can potentially separate them
 
@@ -690,7 +690,7 @@ Notes:
 
 Notes:
 
-Reference : Chapter 2, “Introduction to Machine Learning With Python”
+Reference : Chapter 2, "Introduction to Machine Learning With Python"
 
 ---
 
@@ -703,7 +703,7 @@ Reference : Chapter 2, “Introduction to Machine Learning With Python”
 
 Notes:
 
-Reference : Chapter 2, “Introduction to Machine Learning With Python”
+Reference : Chapter 2, "Introduction to Machine Learning With Python"
 
 ---
 
@@ -717,7 +717,7 @@ Reference : Chapter 2, “Introduction to Machine Learning With Python”
 
 Notes:
 
-Reference : Chapter 2, “Introduction to Machine Learning With Python”
+Reference : Chapter 2, "Introduction to Machine Learning With Python"
 
 ---
 
@@ -800,7 +800,7 @@ Notes:
 
     - SVM1 - 'college-admission' data
 
-    - SVM2 – Customer churn data
+    - SVM2 - Customer churn data
 
 
 Notes:
@@ -1225,7 +1225,7 @@ Notes:
 
 ## Further Reading
 
-* ["Introduction to Statistical Learning"](http://www-bcf.usc.edu/~gareth/ISL) – Chapter 9
+* ["Introduction to Statistical Learning"](http://www-bcf.usc.edu/~gareth/ISL) - Chapter 9
 
 * [http://tdlc.ucsd.edu/events/boot_camp_2009/tingfansvm.pdf](http://tdlc.ucsd.edu/events/boot_camp_2009/tingfansvm.pdf)
 

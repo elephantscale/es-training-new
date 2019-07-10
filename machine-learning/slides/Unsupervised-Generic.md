@@ -157,7 +157,7 @@ Notes:
 
      - To understand our data
 
-     - To find “more like this”
+     - To find "more like this"
 
 Notes:
 
@@ -396,9 +396,9 @@ Notes:
 Notes:
 
 Ways to Determine Distance between points
-Euclidian distance – (most obvious) Euclidian, which takes the distance in Euclidian space
-Cosine Distance – cosine of angle between vectors – ignores magnitude
-Manhattan distance: Effectively counts the number of square blocks one would “walk” to get there without cutting corners.
+Euclidian distance - (most obvious) Euclidian, which takes the distance in Euclidian space
+Cosine Distance - cosine of angle between vectors - ignores magnitude
+Manhattan distance: Effectively counts the number of square blocks one would "walk" to get there without cutting corners.
 Tanimoto distance  Take both angle and magnitude into account.
 
 Most algorithms attempt to balance the
@@ -547,7 +547,7 @@ Notes:
 
  * Goal is to  **minimize WSSSE** with  **reasonable effort**
 
- * We look for elbows – that indicates a reasonable clustering
+ * We look for elbows - that indicates a reasonable clustering
 
  * After the elbow, the improvement is minimal
 
@@ -735,7 +735,7 @@ Notes:
 
  * Outliers may bias results.
 
- * Clusters not broadly (hyper)spherical don’t work well for k-means.
+ * Clusters not broadly (hyper)spherical don't work well for k-means.
 
      - Use hierarchical clustering for these situations.
 
@@ -821,7 +821,7 @@ Notes:
 
  *  **Approximate time**:
 
-    - 20 – 40 mins
+    - 20 - 40 mins
 
  *  **Instructions**:
 
@@ -847,7 +847,7 @@ Notes:
 
  * " **Practical Statistics for Data Scientists** "  - O'Reilly Chapter 7
 
- * " **An Introduction to Statistical Learning** " – SpringerChapter 10
+ * " **An Introduction to Statistical Learning** " - SpringerChapter 10
 
  * Wikipedia: [https://en.wikipedia.org/wiki/K-means_clustering](https://en.wikipedia.org/wiki/K-means_clustering)
 
@@ -918,7 +918,7 @@ Notes:
 
      - There are limitations
 
-     - They are called “variance”
+     - They are called "variance"
 
         * How much my reduce data preserve the nature of the original
 
@@ -935,7 +935,7 @@ Notes:
 
  *  **Reason 1: Efficient computation**
 
- * Say we have N observations with P featuresX<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>, …. X<sub>P</sub>
+ * Say we have N observations with P featuresX<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>, .... X<sub>P</sub>
 
  * We can visualize this data by2D scatter plots
 
@@ -943,7 +943,7 @@ Notes:
 
      - X<sub>1</sub> vs X<sub>2</sub>
 
-     - So on…
+     - So on...
 
  * For P variables there are
  
@@ -1038,7 +1038,7 @@ Notes:
 
  * You want to email / SMS a beautiful sunset photo
 
- * original image is 10 MB – high resolution
+ * original image is 10 MB - high resolution
 
  * SMS program will resize / reduce resolution for sending
 
@@ -1049,7 +1049,7 @@ Notes:
 
 Notes:
 
-Image "Sunset at Mauii, Hawaii",  credit: Sujee Maniyam (author) – used with permission
+Image "Sunset at Mauii, Hawaii",  credit: Sujee Maniyam (author) - used with permission
 
 
 ---
@@ -1183,9 +1183,9 @@ http://oxis.oii.ox.ac.uk/wp-content/uploads/2014/11/OxIS-2013.pdf
 
  * So number of Eigen vectors = number of dimensions
 
- * EigenVector is a direction – vertical, horizontal, 45' degrees ..etc
+ * EigenVector is a direction - vertical, horizontal, 45' degrees ..etc
 
- * EigenValue is a number – denoting how much 'variance' in the data in that vector's direction
+ * EigenValue is a number - denoting how much 'variance' in the data in that vector's direction
 
  * Eigen Vector and Eigen Value go together(E Vector,   E Value)
 
@@ -1414,7 +1414,7 @@ Notes:
 
 ---
 
-## Evaluating PCA – Scree Plot
+## Evaluating PCA - Scree Plot
 
 
  * We use a  **scree plot** to understand PCA
@@ -1459,7 +1459,7 @@ Notes:
 
 ---
 
-## Choosing PCs – Practical Advice
+## Choosing PCs - Practical Advice
 
 
  * Adhoc
@@ -1492,11 +1492,11 @@ Notes:
 
  * 1. Preprocessing, or feature scaling
 
- * 2. Compute the “covariance” matrix
+ * 2. Compute the "covariance" matrix
 
       - How each feature is related to another
 
- * 3. Find the “eigenvectors” of the covariance matrix
+ * 3. Find the "eigenvectors" of the covariance matrix
 
  * 4. Find the important principal components
 
@@ -1513,17 +1513,17 @@ Notes:
 
  * Our variables are all in different ranges
 
-     - Age : 20– 70
+     - Age : 20- 70
 
      - Salary : 30,000  - 150,000
 
- * Normalize (one possible way)= (Value – min) / range
+ * Normalize (one possible way)= (Value - min) / range
 
  * Example, age values are[ 30,  45, 50,  70,  60, 25, 22]
 
      - Min = 22
 
-     - Range = 70 – 22 = 48
+     - Range = 70 - 22 = 48
 
 
 <img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-Step-1-Normalization-0.png" alt="Session-Unsupervised-Learning-Step-1-Normalization-0.png" style="width:35%;"/><!-- {"left" : 5.94, "top" : 3.82, "height" : 3.24, "width" : 3.89} -->
@@ -1537,17 +1537,17 @@ Notes:
 
 ## Step-1. Normalization
 
- * Normalized vector[ (30 – 22) / 48,    (45 – 22) / 48,  ….    (22 – 22) / 48 ] [0.17, 0.48,  0.58,  1.00, 0.79, 0.06, 0.00]
+ * Normalized vector[ (30 - 22) / 48,    (45 - 22) / 48,  ....    (22 - 22) / 48 ] [0.17, 0.48,  0.58,  1.00, 0.79, 0.06, 0.00]
 
  * Result
 
      - Our features (black) are all in the range of -1 to  1
 
- * Other possibility, mean based :   (x – mean) / range
+ * Other possibility, mean based :   (x - mean) / range
 
      - Mean = 43.14
 
-     - [ (30 – 43.14) / 48,    (45 – 43.14) / 48,  ….    (22 – 43.14) / 48 ] = [ -0.274,   0.039,  0.143,  0.560,  0.351,  0.378, 0.440 ]
+     - [ (30 - 43.14) / 48,    (45 - 43.14) / 48,  ....    (22 - 43.14) / 48 ] = [ -0.274,   0.039,  0.143,  0.560,  0.351,  0.378, 0.440 ]
 
 <img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-Step-1-Normalization-0.png" alt="Session-Unsupervised-Learning-Step-1-Normalization-0.png" style="width:35%;"/><!-- {"left" : 3.55, "top" : 4.61, "height" : 2.63, "width" : 3.16} -->
 
@@ -1751,7 +1751,7 @@ Notes:
 
  * `"Internet Cultures of UK"` study by Oxford Internet Institute
 
- * `"PCA for dummies"` – a nice blog post by George Dallas
+ * `"PCA for dummies"` - a nice blog post by George Dallas
 
  * `"Intro to PCA"`
 

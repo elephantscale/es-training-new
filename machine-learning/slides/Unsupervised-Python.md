@@ -49,7 +49,7 @@ Notes:
 ## Python ML Kmeans API - Python
 
 
- *  **sklearn.cluster.KMeans** (self, n_clusters=8, init=‘k-means++’ max_iter=300, tol=0.0001)
+ *  **sklearn.cluster.KMeans** (self, n_clusters=8, init='k-means++' max_iter=300, tol=0.0001)
 
 Notes: 
 
@@ -62,7 +62,7 @@ Notes:
 | Parameter  	| Description                                                                                                                                            	| Default Value 	|
 |------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------	|
 | n_clusters 	| Number of clusters                                                                                                                                     	| 8             	|
-| init       	| How to initialize cluster centers. <br/>Possible values: <br/>-"random" : choose random points <br/>-"k-means++ : Uses a well-known algorithm for quicker convergence 	| ”k-means++"   	|
+| init       	| How to initialize cluster centers. <br/>Possible values: <br/>-"random" : choose random points <br/>-"k-means++ : Uses a well-known algorithm for quicker convergence 	| "k-means++"   	|
 | tol        	| Threshold indicating the convergence o fclusters                                                                                                       	| 1e-4          	|
 | maxIter    	| How many iterations                                                                                                                                    	| 20            	|
 | n_init     	| Initial seed setting        	|               	| |
@@ -79,9 +79,9 @@ Notes:
  from sklearn.cluster 
  import KMeans import pandas as pd
 
- dataset = pd.read_csv(‘mtcars_header.csv)
+ dataset = pd.read_csv('mtcars_header.csv)
 
- mpg_cyl = dataset[[‘model’, ‘mpg’, ‘cyl’]] 
+ mpg_cyl = dataset[['model', 'mpg', 'cyl']] 
  featureVector = mpg_cyl.iloc[:,1:3].values 
  
  # Start KMeans with 2 clusters
@@ -89,7 +89,7 @@ Notes:
  model = kmeans.fit(featureVector) 
  wssse = model.inertia_
  print(wssse) 
- dataset[‘prediction’] = model.predict(featureVector)
+ dataset['prediction'] = model.predict(featureVector)
 ```
 
 Notes: 
@@ -112,7 +112,7 @@ Notes:
 ```
 
 ```text
-> predicted.sort_values(["prediction", "mpg”])
+> predicted.sort_values(["prediction", "mpg"])
 +-------------------+----+---+----------+----------+
 |model              |mpg |cyl|features  |prediction|
 +-------------------+----+---+----------+----------+
@@ -141,7 +141,7 @@ Notes:
 
  * Goal is to  **minimize WSSSE** with  **reasonable effort** 
 
- * We look for elbows – that indicates a reasonable clustering
+ * We look for elbows - that indicates a reasonable clustering
 
  * After the elbow, the improvement is minimal
 
@@ -168,11 +168,11 @@ k_wssse = pd.DataFrame(columns=('k', 'wssse'))
 
 # loop through K 
 for k in range(2,17): 
-   print ("k=", k) 
-   kmeans = KMeans().setK(k).setSeed(1)   
-   model = kmeans.fit(featureVector)  
-   wssse = model.inertia_    
-   print("k={}, wssse={}".format(k,wssse))  
+   print ("k=", k) 
+   kmeans = KMeans().setK(k).setSeed(1)   
+   model = kmeans.fit(featureVector)  
+   wssse = model.inertia_    
+   print("k={}, wssse={}".format(k,wssse))  
    k_wssse = k_wssse.append( {'k': k, 'wssse': wssse}, ignore_index=True)
    
 k_wssse 
@@ -247,7 +247,7 @@ Notes:
 ## Python ML Kmeans API - Python
 
 
- *  **sklearn.decomposition.PCA**  (self,n_components, init=‘k-means++’     max_iter=300, tol=0.0001)
+ *  **sklearn.decomposition.PCA**  (self,n_components, init='k-means++'     max_iter=300, tol=0.0001)
 
 Notes: 
 
@@ -260,7 +260,7 @@ Notes:
 | Parameter    	| Description                                                                                                                                                                                                      	| Default Value 	|
 |--------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------	|
 | n_components 	| Number of principal components                                                                                                                                                                                   	|               	|
-| svd_solver   	| How to use SVD to get PCA <br/>- Possible values:<br/>- ”full" : calculate exact SVD<br/>- ”arpack”: truncated SVD for speed <br/>- ”randomized”: uses Halko method for speed <br/>- “auto”: “full” for small data, “randomized” for larger data. 	| ”auto”        	|
+| svd_solver   	| How to use SVD to get PCA <br/>- Possible values:<br/>- "full" : calculate exact SVD<br/>- "arpack": truncated SVD for speed <br/>- "randomized": uses Halko method for speed <br/>- "auto": "full" for small data, "randomized" for larger data. 	| "auto"        	|
 | whiten       	| scale output to unit variance                                                                                                                                                                                    	| False         	|
 | tol          	| Threshold indicating the convergence o fclusters                                                                                                                                                                 	| 1e-4          	|
 | maxIter      	| How many iterations                                                                                                                                                                                              	| 20            	|

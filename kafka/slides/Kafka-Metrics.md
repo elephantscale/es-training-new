@@ -247,7 +247,7 @@ GraphiteReporter.forRegistry(metrics).prefixedWith("myapp")
   .convertDurationsTo(TimeUnit.MILLISECONDS)
   .filter(MetricFilter.ALL)
   .build(graphite);
-graphiteReporter.start(30, TimeUnit.SECONDS);  
+graphiteReporter.start(30, TimeUnit.SECONDS);  
 ```
 
 Notes: 
@@ -260,7 +260,7 @@ Notes:
 ## Metrics Library: Meters
 
 
- * A meter measures the rate of events over time.(e.g., “requests per second”). 
+ * A meter measures the rate of events over time.(e.g., "requests per second"). 
 
  * In addition to the mean rate, meters also track 1-, 5-, and 15-minute moving averages.
 
@@ -285,7 +285,7 @@ Notes:
 ## Metrics Library: Counters
 
 
- * A counter is used to 'count' things.Number of messages in queue, …etc
+ * A counter is used to 'count' things.Number of messages in queue, ...etc
 
  * Counter is an AtomicLongCan be incremented or decremented
 
@@ -347,7 +347,7 @@ private final Timer timerExec = metrics.timer("execTime"));
 
 Timer.Context context = timerExec.time();
 // do some work here
-f();  // calling a function
+f();  // calling a function
 context.stop(); 
 ```
 
@@ -368,7 +368,7 @@ Notes:
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 
@@ -433,7 +433,7 @@ Notes:
 
  *  **Builds on previous labs**: 
 
- *  **Approximate Time**: 30 – 40 mins
+ *  **Approximate Time**: 30 - 40 mins
 
  *  **Instructions**: 
 

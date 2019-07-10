@@ -129,7 +129,7 @@ Notes:
 
 ## Jupyter - Interactive Notebook
 
- * Jupyter is like the newspapers in ‘Harry Potter’ => they are live !
+ * Jupyter is like the newspapers in 'Harry Potter' => they are live !
 
  * [https://www.youtube.com/watch?v=xaBEFqFVSE8](https://www.youtube.com/watch?v=xaBEFqFVSE8)
 

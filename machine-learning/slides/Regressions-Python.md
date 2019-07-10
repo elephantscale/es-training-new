@@ -387,7 +387,7 @@ rsquared = summary(tip.lm)$r.squared   # 0.9067141
 Tip_for_100 = a * 100 + b   # 22.88571
 
 # calculate estimated tip using regression
-tip_data[‘est_tip’] = tip_data.bill * a + b
+tip_data['est_tip'] = tip_data.bill * a + b
 test_data_pd = pd.DataFrame({'bill' : [45., 55., 65.,] })
 test_data_pd['predicted_tip'] = result.predict(test_data_pd)
 ```
@@ -502,7 +502,7 @@ Notes:
 
 ---
 
-## Linear Regression in Python – Wrap Up
+## Linear Regression in Python - Wrap Up
 
 
  * Linear Regression is very well supported in Python
@@ -599,7 +599,7 @@ import statsmodels.formula.api as sm
 
 mortgage = pd.read_csv("mortgage-data.csv")
 
-mylogit = sm.Logit(mortgage[‘approved’], mortgage[0:3])
+mylogit = sm.Logit(mortgage['approved'], mortgage[0:3])
 
 Mylogit.summary()
 

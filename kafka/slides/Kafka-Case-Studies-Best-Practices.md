@@ -51,7 +51,7 @@ Notes:
 
  * Use G1 garbage collector
 
- * Jvm heap: 8G – 32 G
+ * Jvm heap: 8G - 32 G
 
 ```text
 Conf/kafka-env.sh
@@ -83,7 +83,7 @@ https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
 
      - Set open file descriptors to 128k
 
-     - Use `'ulimits –a'` to verify
+     - Use `'ulimits -a'` to verify
 
 <img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="width:40%; position:relative; top:-100px; left:300px;"/>
 
@@ -105,7 +105,7 @@ Notes:
 
  * RAIDs are usually more trouble than they are worth
 
-     - Just use individual disks (JBOD – Just a Bunch of Disks)
+     - Just use individual disks (JBOD - Just a Bunch of Disks)
 
  * Kafka will stripe data across disks using a round-robin fashion
 
@@ -421,7 +421,7 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 ## Monitoring Consumer Lag
 
 
- * Consumer Lag = Size of Partition (last offset) – Consumer offset (last committed)
+ * Consumer Lag = Size of Partition (last offset) - Consumer offset (last committed)
 
  * Large offsets means consumers can't  keep up with data
 
@@ -483,7 +483,7 @@ Notes:
 
      - Click on ' **slides** '
 
-     - Slide #6 – architecture diagram
+     - Slide #6 - architecture diagram
 
      - Slide #7: Partition keys
 
@@ -561,7 +561,7 @@ http://bigdatausecases.info/entry/from-three-nines-to-five-nines-a-kafka-journey
 
      - HDFS
 
- *  https://blog.griddynamics.com/in-stream-processing-service-blueprint 
+ *  https://blog.griddynamics.com/in-stream-processing-service-blueprint 
 
  * Highlight
 
@@ -569,7 +569,7 @@ http://bigdatausecases.info/entry/from-three-nines-to-five-nines-a-kafka-journey
 
 Notes: 
 
-https://blog.griddynamics.com/in-stream-processing-service-blueprint 
+https://blog.griddynamics.com/in-stream-processing-service-blueprint 
 
 
 

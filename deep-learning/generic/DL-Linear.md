@@ -83,7 +83,7 @@ Notes:
 ---
 ## Single Layer Perceptron
 
- * Let’s create the simplest neural network with one neuron:
+ * Let's create the simplest neural network with one neuron:
 
  * This is a linear model.  Finding a line that will separate.
 
@@ -101,7 +101,7 @@ Notes:
 ---
 ## A Trained Perceptron Model
 
- * After we’ve trained our model, we’ve now have a linear model
+ * After we've trained our model, we've now have a linear model
 
  * During training the values for  weights w1, w2 have been figured out
 
@@ -170,7 +170,7 @@ Notes:
 
 
 ---
-## Perceptron Mini Lab–5 Mins
+## Perceptron Mini Lab-5 Mins
 
 <img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="10%"/>
 
@@ -197,9 +197,9 @@ Notes:
 
 <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="20%"/>
 
- * Why didn’t we need hidden layers to converge on a solution?
+ * Why didn't we need hidden layers to converge on a solution?
 
- * What would happen if the dataset wasn’t linearly separable?
+ * What would happen if the dataset wasn't linearly separable?
 
 Notes:
 
@@ -213,7 +213,7 @@ Notes:
  * In our previous example, we defined a step function
      - If the output was greater than threshold b, `y = 1`,
      - Else, `y = 0`
-     - Not Differentiable (can’t use gradient descent to optimize)
+     - Not Differentiable (can't use gradient descent to optimize)
 
  * We will see more complex **Activation functions** later.  
  Some examples:
@@ -230,9 +230,9 @@ Notes:
 ## Logistic Regression Redux?
 
 
- * What we’ve done so far is essentially create a logistic regression classifier.
+ * What we've done so far is essentially create a logistic regression classifier.
 
- * In fact, with the Sigmoid activation function, we’ve done essentially exactly that.
+ * In fact, with the Sigmoid activation function, we've done essentially exactly that.
 
  * So are neural networks just a implementation scheme for logistic regression?
 
@@ -261,7 +261,7 @@ Notes:
 ---
 ## The XOR problem
 
- * What happens if we don’t have linear separability?
+ * What happens if we don't have linear separability?
 
  * For example, can we learn a function that does an exclusive or?
 

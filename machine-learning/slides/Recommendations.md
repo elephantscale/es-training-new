@@ -78,7 +78,7 @@ Notes:
 
 Notes:
 
-[1] – Recommender Systems : https://www.slideshare.net/xamat/recommender-systems-machine-learning-summer-school-2014-cmu
+[1] - Recommender Systems : https://www.slideshare.net/xamat/recommender-systems-machine-learning-summer-school-2014-cmu
 
 
 ---
@@ -244,7 +244,7 @@ Notes:
      - How will you go about recommending movies to  **u5**  ?
 
 
-<img src="../../assets/images/machine-learning/3rd-party/00-02.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 2.95, "height" : 3.97, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/rating-matrix-1.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 2.95, "height" : 3.97, "width" : 8.21} -->
 
 
 Notes:
@@ -264,7 +264,7 @@ Notes:
 
      - How will you go about recommending movies to  **u5**  ?
 
-<img src="../../assets/images/machine-learning/3rd-party/00-03.png" style="width:60%"/><!-- {"left" : 1.77, "top" : 3.13, "height" : 3.89, "width" : 6.71} -->
+<img src="../../assets/images/machine-learning/rating-matrix-2.png" style="width:60%"/><!-- {"left" : 1.77, "top" : 3.13, "height" : 3.89, "width" : 6.71} -->
 
 
 Notes:
@@ -276,23 +276,23 @@ Notes:
 ## Implicit vs Explicit Ratings
 
 
- * Some Applications have ”explicit” ratings:
+ * Some Applications have "explicit" ratings:
 
      - Netflix (1-5 stars)
 
-     - Facebook (“like”)
+     - Facebook ("like")
 
- * What if we don’t have explicit ratings?
+ * What if we don't have explicit ratings?
 
  * Example: Apple Itunes
 
-     - Doesn’t (probably) have a lot of star-ratings
+     - Doesn't (probably) have a lot of star-ratings
 
      - It does have your play history and counts.
 
-     - Can we “infer” a rating based on play history?
+     - Can we "infer" a rating based on play history?
 
-     - If you played a song 1000 times, does that indicate a “like?”
+     - If you played a song 1000 times, does that indicate a "like?"
 
 Notes:
 
@@ -332,7 +332,7 @@ Notes:
 
      - CF algorithms are O(MxN) complexity (worst case), for M customers (could be millions)  and N items (hundreds of thousands or millions)
 
-     - Best case  O (M+N) – we only have to consider a small number of products for customer
+     - Best case  O (M+N) - we only have to consider a small number of products for customer
 
  *  **Rating variance**
 
@@ -361,7 +361,7 @@ Notes:
 
      - Most systems can compensate for this scenario
 
-        * Recommend  **‘popular items** '   (most people like popular items)
+        * Recommend  **'popular items** '   (most people like popular items)
 
         * Recommend based on location "people in San Jose watched these movies"
 
@@ -394,7 +394,7 @@ Notes:
 
      - Above algorithms are supervised (they learn and then predict)
 
-     - Clustering – unsupervised – can find patterns without 'learning'
+     - Clustering - unsupervised - can find patterns without 'learning'
 
      - Can be a solution to  **'cold start** ' problem
 
@@ -443,8 +443,9 @@ Notes:
 
 ---
 
-## How Do We Measure Similarity Between Two Users?
+## Similarity Between Two Users
 
+<img src="../../assets/images/machine-learning/rating-matrix-3.png" style="width:35%;float:right;"/><!-- {"left" : 6.65, "top" : 3.18, "height" : 4.01, "width" : 3.29} -->
 
  * Let's say we want to compare U5<br/>
   with U1.<br/>
@@ -452,14 +453,13 @@ Notes:
   two of these users and their ratings
 
  * One approach is  **'cosine similarity**'<br/>
-  – that measures the<br/>
+  - that measures the<br/>
  similarity between vectors
 
 * Another approach: Correlation!
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-How-Do-We-Measure-Similarity-Between-Two-Users--0.png" style="width:20%"/><!-- {"left" : 2.2, "top" : 5.14, "height" : 2.37, "width" : 2.31} -->
+<img src="../../assets/images/machine-learning/3rd-party/cosine-distance-1.png" style="width:20%"/><!-- {"left" : 2.2, "top" : 5.14, "height" : 2.37, "width" : 2.31} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/00-04.png" style="width:35%;position:absolute;top:300px;right:5px"/><!-- {"left" : 6.65, "top" : 3.18, "height" : 4.01, "width" : 3.29} -->
 
 Notes:
 
@@ -484,7 +484,7 @@ Notes:
 Notes:
 
 * This is a matrix of users and items. Users in rows and items in columns.
-* When a user rates a item, that particular cell gets filled. Lot of empty cells – sparse matrix.
+* When a user rates a item, that particular cell gets filled. Lot of empty cells - sparse matrix.
 * Source: https://cran.r-project.org/web/packages/recommenderlab/vignettes/recommenderlab.pdf
 
 

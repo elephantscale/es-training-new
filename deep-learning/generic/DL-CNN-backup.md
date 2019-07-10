@@ -1,7 +1,7 @@
 ## Feedforward Network Limitations
 
 
- * Let’s imagine that we want to find a pattern in an image.
+ * Let's imagine that we want to find a pattern in an image.
 
  * For example, say we want to locate a number in an image.
 
@@ -15,7 +15,7 @@
 
      - A LOT of features!
 
- * But let’s think… is this going to work for us? 
+ * But let's think... is this going to work for us? 
 
      - What are some problems?
 
@@ -41,7 +41,7 @@ Notes:
 
  * Finding pattern in image?
 
-     - What if the “2” is in a different place?
+     - What if the "2" is in a different place?
 
      - Perhaps the right corner
 
@@ -66,7 +66,7 @@ Notes:
 
  * Too many features
 
-     - There’s just too many features here to learn.
+     - There's just too many features here to learn.
 
 ![](../../assets/images/deep-learning/Introduction-to-Neural-Networks--Problems-with-MLP-Multilayer-Perceptron--0.png) <!-- {"left" : 3.3, "top" : 2.47, "height" : 3.67, "width" : 3.64} -->
 

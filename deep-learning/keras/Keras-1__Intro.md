@@ -220,7 +220,7 @@ https://medium.com/tensorflow/standardizing-on-keras-guidance-on-high-level-apis
 
 * Training a deep learning model from scratch on a multi-million-image database requires weeks of training time and lots of computational energy, making it a difficult task
 
-* Organizations that participated in the ImageNet competition open-sourced their trained models on Caffe’s website
+* Organizations that participated in the ImageNet competition open-sourced their trained models on Caffe's website
 
 * Models can be trained for
     - specific task (image recognition,  text analytics)
@@ -580,7 +580,7 @@ For full list see [Keras documentation](https://keras.io/losses/#available-loss-
 
 ## Loss Functions (Regressions)
 
-- **MAPE – Mean absolute percentage error**
+- **MAPE - Mean absolute percentage error**
 
 ```python
 keras.losses.mean_absolute_percentage_error
@@ -588,7 +588,7 @@ keras.losses.mean_absolute_percentage_error
 
 <img src="../../assets/images/deep-learning/3rd-party/mse_mape_eqs.png" alt="XXX image missing" style="width:30%;"/>
 
-- **MSLE – Mean square logarithmic error**
+- **MSLE - Mean square logarithmic error**
 
 ```python
 keras.losses.mean_squared_logarithmic_error

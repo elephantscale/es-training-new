@@ -316,7 +316,7 @@ Notes:
 
 - Then it measures the error (networks output (prediction) vs. the expected output)
 
-- It then computes how much each neuron in the last hidden layer contributed to each output neuron’s error
+- It then computes how much each neuron in the last hidden layer contributed to each output neuron's error
 
 - It traverses the network in reverse, computing errors from previous layer
     - until it reaches the input layer
@@ -525,7 +525,7 @@ For reference only, please see the paper for underlying math.
 - (i) is the zero-centered and normalized input.
 - γ is the scaling parameter for the layer.
 - β is the shifting parameter (offset) for the layer.
-- ϵ is a tiny number to avoid division by zero (typically 10–5). This is called a smoothing term.
+- ϵ is a tiny number to avoid division by zero (typically 10-5). This is called a smoothing term.
 - z(i) is the output of the BN operation: it is a scaled and shifted version of the inputs.
 
 Notes:  

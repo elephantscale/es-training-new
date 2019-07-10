@@ -118,7 +118,7 @@ Notes:
 ---
 
 
-## Early AI (1950s – 1980s):  Rule-Based Approaches
+## Early AI (1950s - 1980s):  Rule-Based Approaches
 
  * Early AI approaches were largely rule-based.
 
@@ -190,7 +190,7 @@ ref : https://beamandrew.github.io/deeplearning/2017/02/23/deep_learning_101_par
      - Too hard to train
      - Resulting Model not transparent enough.
      - Not suitable for large datasets
-     - “Toy Problems”
+     - "Toy Problems"
 
 
 Notes:
@@ -237,7 +237,7 @@ Kept NN research going during 'AI Winter'
 
 - [Yoshua Bengio](https://en.wikipedia.org/wiki/Yoshua_Bengio) - Professor @ University of Montreal
 
-- These 3 won ACM Turning Award (Nobel price of computing) in 2019 
+- These 3 won ACM Turning Award (Nobel price of computing) in 2019
 
 
 <img src="../../assets/images/deep-learning/3rd-party/geoff7.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
@@ -266,9 +266,9 @@ Notes:
 
 * In the modern era, Deep Learning has been successful.  The following factors made it possible
 
--  **'Big Data**' – now we have so much data to train our models
+-  **'Big Data**' - now we have so much data to train our models
 
--  **'Big Data ecosystem**' – excellent big data platforms (Hadoop, Spark, NoSQL) are available as open source
+-  **'Big Data ecosystem**' - excellent big data platforms (Hadoop, Spark, NoSQL) are available as open source
 
 -  **'Big Compute**'  -  **cloud**  platforms significantly lowered the barrier to massive compute power
     - $1 rents you a `16 core + 128 G + 10 Gigabit` machine for 1 hr on AWS! So running a 100 node cluster for 5 hrs $500
@@ -285,7 +285,7 @@ Notes:
 
 ## Hardware Advances: CPU & GPU
 
-- Recently GPUs – Graphics Processing Units - have become popular (especially in Deep Learning)
+- Recently GPUs - Graphics Processing Units - have become popular (especially in Deep Learning)
 
 - GPU cores are good at compute intensive calculations (math, matrix operations)
 
@@ -563,19 +563,19 @@ https://www.youtube.com/watch?v=LcfLo7YP8O4
 | TensorFlow     | Python, C++          | Linux, macOS, Windows, iOS, Android | Google                                | 2015 |
 | Theano         | Python               | Linux, macOS, iOS                   | University of Montreal                | 2010 |
 | Torch          | C++, Lua             | Linux, macOS, iOS, Android          | R.Collobert, K.Kavukcuoglu, C.Farabet | 2002 |
- 
-   
- 
+
+
+
 
 
 ---
 ## Deep Learning and Big Data
 
- * Until recently most of the machine learning is done on “single computer” (with lots of memory–100s of GBs)
+ * Until recently most of the machine learning is done on "single computer" (with lots of memory-100s of GBs)
 
- * Most R/Python/Java libraries are “single node based”
+ * Most R/Python/Java libraries are "single node based"
 
- * Now Big Data tools make it possible to run machine learning algorithms at massive scale–distributed across a cluster
+ * Now Big Data tools make it possible to run machine learning algorithms at massive scale-distributed across a cluster
 
 <img src="../../assets/images/deep-learning/DL-cluster.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" /> <!-- {"left" : 7.46, "top" : 0.99, "height" : 1.83, "width" : 2.03} -->
 
@@ -608,7 +608,7 @@ Notes:
 
  - Became very popular in a very short period of time
 
- - Based on “data flow graphs”
+ - Based on "data flow graphs"
 
  - Language support: Python, C++
 
@@ -651,7 +651,7 @@ Notes:
 
 - https://bigdl-project.github.io
 
-<img src="../../assets/images/logos/bigdl-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../../assets/images/logos/bigdl-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
 <img src="../../assets/images/logos/intel-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
 
 

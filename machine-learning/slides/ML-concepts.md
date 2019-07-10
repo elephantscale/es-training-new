@@ -342,7 +342,7 @@ Notes:
     - Analyze house sales data 
 
   * **Approximate Time:**
-    - 20 – 25 mins
+    - 20 - 25 mins
 
   * **Instructions:**
     - **'exploration/explore-house-sales' lab for Python / R / Spark**
@@ -358,7 +358,7 @@ Notes:
     - Feature engineering exercises
 
   * **Approximate Time:**
-    - 20 – 30 mins
+    - 20 - 30 mins
 
   * **Instructions:**
     - **'feature-eng' lab for Python / R / Spark**
@@ -710,7 +710,7 @@ Notes:
 
 
   * Here we are doing a 5-fold cross validation
-  * Data is split into 5 splits – one held for testing, remaining 4 used for training
+  * Data is split into 5 splits - one held for testing, remaining 4 used for training
   * Accuracy varies from 80% to 90%
   * Average accuracy is `AVG(80,84,90,86,82) = 85%`
 
@@ -1006,7 +1006,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 * **Misclassifications / Error rate**  
 = (FP + FN) / total  
 = (0 + 1) / 100  
-= 1%  (1 – accuracy)
+= 1%  (1 - accuracy)
 
 ---
 
@@ -1248,7 +1248,7 @@ Image credit (CC) : https://commons.wikimedia.org/wiki/File:ROC_space-2.png
 ## Interpreting ROC Curve
 <img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 2.48, "top" : 3.80, "height" : 3.68, "width" : 5.28} -->
 
-  * Shows tradeoff of TPR (sensitivity) vs. FPR (1 – specificity)
+  * Shows tradeoff of TPR (sensitivity) vs. FPR (1 - specificity)
   * The closer to top-left , the more accurate </br>the model
   * Upper left corner (0,1) = perfect classification!
   * The closer to middle line (45 degree) </br>the less accurate the test
@@ -1263,7 +1263,7 @@ Notes:
 
 ---
 
-## Area Under Curve – AUC
+## Area Under Curve - AUC
 
 
 <img src="../../assets/images/machine-learning/ROC-04-AUC-2.png" alt="ROC-04-AUC-2.png" style="width:30%;float:right;"> <!-- {"left" : 6.66, "top" : 2.29, "height" : 2.28, "width" : 3.26} -->
@@ -1293,11 +1293,11 @@ Notes:
 
 | AUC        | Grade         |
 |--------    |----------     |
-| 0.9 – 1.00 | A - Excellent |
-| 0.80 – 0.90| B - good      |
+| 0.9 - 1.00 | A - Excellent |
+| 0.80 - 0.90| B - good      |
 | 0.70 - 0.80| C - fair      |
-| 0.60 – 0.70| D - poor      |
-| 0.50 – 0.60| F - Fail      |
+| 0.60 - 0.70| D - poor      |
+| 0.50 - 0.60| F - Fail      |
 
 <!-- {"left" : 6.7, "top" : 1.78, "height" : 2.38, "width" : 3.3, "columnwidth" : [1.61, 1.69]} -->
 

@@ -14,7 +14,7 @@ Step 2 - make sure they check their quota so they can run 'c4.xlarge', 'm4.xlarg
 - (optional) very quick spark primer (Spark-intro) - 30 mins
 
 - start with a Overview video
-        - Google’s view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
+        - Google's view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
 
 - ML Primer - 1hr
     demos

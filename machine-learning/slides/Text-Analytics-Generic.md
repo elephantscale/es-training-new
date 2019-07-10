@@ -73,7 +73,7 @@ Notes:
 ## Text Analytics Use Case : Customer Service
 
 
- * Many companies use a “chat now” feature for customer interaction
+ * Many companies use a "chat now" feature for customer interaction
 
  * Why not mine this data?
 
@@ -81,7 +81,7 @@ Notes:
 ```text
    Mary: Welcome to Ultimate Widgets!  How can I help?
 
-   John: Hi!  I can’t get my widget to work.
+   John: Hi!  I can't get my widget to work.
 
    Mary: What seems to be the problem?
 
@@ -122,7 +122,7 @@ Notes:
 
 ---
 
-## Visualizing Text – Word Clouds (State of the Union Speech 2014)
+## Visualizing Text - Word Clouds (State of the Union Speech 2014)
 
 
 <img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-4.png" alt="Text-Analytics-4.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.46, "height" : 5.05, "width" : 8.21} -->
@@ -347,7 +347,7 @@ Notes:
 ## Text Analytic : Word Count
 
 
- * Finally we have cleaned up text to do a simple analytics – word count
+ * Finally we have cleaned up text to do a simple analytics - word count
 
 
 ```text
@@ -870,7 +870,7 @@ Source: https://hackernoon.com/word2vec-part-1-fe2ec6514d70
 
      - Such as (TF, IDF)
 
-     - But (TF, IDF, …)
+     - But (TF, IDF, ...)
 
 Notes:
 
@@ -903,7 +903,7 @@ Notes:
 
  *  **CBOW (Continuous Bag of Words)**
 
-     - Tries to predict a word on bases of it’s neighbors.
+     - Tries to predict a word on bases of it's neighbors.
 
  *  **SkipGram**
 
