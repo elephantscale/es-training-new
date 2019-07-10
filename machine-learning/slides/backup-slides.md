@@ -39,7 +39,7 @@ Notes:
 
   * Some other interesting attributes:
     - 'time of day'  (work hours,   after hours)
-    - 'day of week'  (Mon / Tue / Wed …   work day  / weekend)
+    - 'day of week'  (Mon / Tue / Wed ...   work day  / weekend)
 
   * **Question for class:**
     - Any other time based behavior?

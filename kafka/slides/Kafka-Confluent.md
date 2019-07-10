@@ -235,7 +235,7 @@ Notes:
 
 Notes: 
 
-Schemas can be registered for the Key as well.   …. /subjects/Kafka-key/versions
+Schemas can be registered for the Key as well.   .... /subjects/Kafka-key/versions
 
 
 ---

@@ -1020,7 +1020,7 @@ Notes:
  * Examples:
      - Email is  **SPAM**  or  **HAM**  (not-SPAM)
      - A cell is  **cancerous**  or  **healthy**
-     - Hand-written numbers -> any digits 0, 1, 2,…, 9
+     - Hand-written numbers -> any digits 0, 1, 2,..., 9
  * Classification algorithm learns from training data
      - Supervised learning
  * Also predicted classes are **discrete** or **qualitative**

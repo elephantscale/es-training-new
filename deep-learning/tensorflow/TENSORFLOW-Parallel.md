@@ -194,11 +194,11 @@ Notes:
 From tf.contrib import learn
 
 def model_fn(X, Y_, mode):
-  Yn = … #model layers
-  predictions = {"probabilites": …, "digits": …}
-  evaluations = {"accuracy": metrics.accuracy(…){
-  loss = …
-  train = layers.optimize_loss(loss, …)
+  Yn = ... #model layers
+  predictions = {"probabilites": ..., "digits": ...}
+  evaluations = {"accuracy": metrics.accuracy(...){
+  loss = ...
+  train = layers.optimize_loss(loss, ...)
   return learn.ModelFnOps(mode, predictions,
  loss, train,    evaluations)
 
@@ -560,7 +560,7 @@ Notes:
 
 ---
 
-## Becoming Google… but How??
+## Becoming Google... but How??
 
 
  * Google open-sourced TensorFlow itself
@@ -918,7 +918,7 @@ Notes:
 
      - No direct support for Kubernetes 
 
-        * AWS does have ECS… which is sort of the same thing.
+        * AWS does have ECS... which is sort of the same thing.
 
 Notes: 
 
@@ -1060,10 +1060,10 @@ Notes:
 
 ---
 
-## Too complicated?  Enter Kubernetes…
+## Too complicated?  Enter Kubernetes...
 
 
- * Do one thing and do it well…
+ * Do one thing and do it well...
 
      - Use Microservices approach with Kubernetes
 

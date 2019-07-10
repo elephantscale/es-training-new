@@ -15,7 +15,7 @@
 
      - A LOT of features!
 
- * But let's think… is this going to work for us? 
+ * But let's think... is this going to work for us? 
 
      - What are some problems?
 

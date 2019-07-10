@@ -935,7 +935,7 @@ Notes:
 
  *  **Reason 1: Efficient computation**
 
- * Say we have N observations with P featuresX<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>, …. X<sub>P</sub>
+ * Say we have N observations with P featuresX<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>, .... X<sub>P</sub>
 
  * We can visualize this data by2D scatter plots
 
@@ -943,7 +943,7 @@ Notes:
 
      - X<sub>1</sub> vs X<sub>2</sub>
 
-     - So on…
+     - So on...
 
  * For P variables there are
  
@@ -1537,7 +1537,7 @@ Notes:
 
 ## Step-1. Normalization
 
- * Normalized vector[ (30 – 22) / 48,    (45 – 22) / 48,  ….    (22 – 22) / 48 ] [0.17, 0.48,  0.58,  1.00, 0.79, 0.06, 0.00]
+ * Normalized vector[ (30 – 22) / 48,    (45 – 22) / 48,  ....    (22 – 22) / 48 ] [0.17, 0.48,  0.58,  1.00, 0.79, 0.06, 0.00]
 
  * Result
 
@@ -1547,7 +1547,7 @@ Notes:
 
      - Mean = 43.14
 
-     - [ (30 – 43.14) / 48,    (45 – 43.14) / 48,  ….    (22 – 43.14) / 48 ] = [ -0.274,   0.039,  0.143,  0.560,  0.351,  0.378, 0.440 ]
+     - [ (30 – 43.14) / 48,    (45 – 43.14) / 48,  ....    (22 – 43.14) / 48 ] = [ -0.274,   0.039,  0.143,  0.560,  0.351,  0.378, 0.440 ]
 
 <img src="../../assets/images/machine-learning/Session-Unsupervised-Learning-Step-1-Normalization-0.png" alt="Session-Unsupervised-Learning-Step-1-Normalization-0.png" style="width:35%;"/><!-- {"left" : 3.55, "top" : 4.61, "height" : 2.63, "width" : 3.16} -->
 

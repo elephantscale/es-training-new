@@ -285,7 +285,7 @@ Notes:
 ## Metrics Library: Counters
 
 
- * A counter is used to 'count' things.Number of messages in queue, …etc
+ * A counter is used to 'count' things.Number of messages in queue, ...etc
 
  * Counter is an AtomicLongCan be incremented or decremented
 

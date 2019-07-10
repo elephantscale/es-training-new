@@ -7,7 +7,7 @@
 ## Lesson Objectives
 
 
- * Learn to design and build a Kafka-based application end-to-end … well almost!
+ * Learn to design and build a Kafka-based application end-to-end ... well almost!
 
 <img src="../../assets/images/kafka/3rd-party/Related-image.png" alt="Related-image.png" style="width:70%;"/>
 
@@ -546,7 +546,7 @@ Notes:
         * Detect attacks
      - Web properties (e-commerce sites or LinkedIn)
         * Log user activities
-        * Analyze user activities (which button users click most…etc.)
+        * Analyze user activities (which button users click most...etc.)
  * Distributed log collection
      - Need to collect from multiple sources (100s or even 1000s)
  * Tools

@@ -870,7 +870,7 @@ Source: https://hackernoon.com/word2vec-part-1-fe2ec6514d70
 
      - Such as (TF, IDF)
 
-     - But (TF, IDF, …)
+     - But (TF, IDF, ...)
 
 Notes:
 

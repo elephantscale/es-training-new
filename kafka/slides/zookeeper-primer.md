@@ -13,7 +13,7 @@
 
  * 1990s we had single core processors
      - Programs ran in single 'thread' mode
-     - The game was faster and faster clock speeds  (200MHZ ! …)
+     - The game was faster and faster clock speeds  (200MHZ ! ...)
 
 <br clear="all"/>
 
@@ -146,7 +146,7 @@ Notes:
 
  * Runs as a quorum (multiple nodes)
      - No single point of failure
- * Odd number of nodes (3, 5, 7 …etc)
+ * Odd number of nodes (3, 5, 7 ...etc)
      - Odd number to break tie when voting
      - Minimum 3 nodes
      - Small number of nodes can support thousands of clients
