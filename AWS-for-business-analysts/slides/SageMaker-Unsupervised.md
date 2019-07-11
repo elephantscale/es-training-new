@@ -53,7 +53,7 @@
 
 * Google News article grouping
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Clustering-Use-Cases-Google-News-0.png" alt="Session-Unsupervised-Learning-Clustering-Use-Cases-Google-News-0.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png"  style="max-width:70%;"/>
 
 ---
 

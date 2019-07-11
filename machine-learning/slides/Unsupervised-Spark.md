@@ -33,7 +33,7 @@ Notes:
 
   * Gaussian Mixture
 
-Notes: 
+Notes:
 
 
 
@@ -52,18 +52,18 @@ Notes:
 
 ```text
  import org.apache.spark.ml.clustering.KMeans   
- 
+
  val kmeans = new KMeans().setK(2).setMaxIter(10)
 
- val model = kmeans.fit(featureVector) 
- val WSSSE = model.computeCost(featureVector) 
+ val model = kmeans.fit(featureVector)
+ val WSSSE = model.computeCost(featureVector)
  val predicted = model.transform(featureVector)   
- 
- println("Cluster Centers: ") 
- model.clusterCenters.foreach(println) 
+
+ println("Cluster Centers: ")
+ model.clusterCenters.foreach(println)
 ```
 
-Notes: 
+Notes:
 
 
 
@@ -80,7 +80,7 @@ Notes:
 | maxIter   	| **setMaxIterations** (maxIterations: Int)              	| How many iterations                                                                                                                                                  	| 20            	|
 | Seed      	| **setSeed** (seed: Long)                               	| Initial seed setting                                	|               	| |
 
-Notes: 
+Notes:
 
 
 
@@ -89,38 +89,38 @@ Notes:
 ## Spark ML Kmeans API - Scala
 
 ```
-  import org.apache.spark.ml.clustering.KMeans 
-  import org.apache.spark.ml.feature.VectorAssembler 
+  import org.apache.spark.ml.clustering.KMeans
+  import org.apache.spark.ml.feature.VectorAssembler
   import org.apache.spark.ml.linalg.Vectors    
-  
+
   // Loads data.  
-  val dataset = spark.read.option("header", "true").option("inferschema", "true").csv("mtcars_header.csv") 
+  val dataset = spark.read.option("header", "true").option("inferschema", "true").csv("mtcars_header.csv")
   dataset.show(32)  // 32 data points, show all   
   // extract the columns we need  
   val dataset2 = dataset.select("model", "mpg", "cyl")   
-  
-  val assembler = new VectorAssembler().setInputCols(Array("mpg", "cyl")).setOutputCol("features")   
-  
-  val featureVector = assembler.transform(dataset2) 
-  featureVector.show    
-  
-  // Trains a k-means model, k=2, iterations=10  
-  val kmeans = new KMeans().setK(2).setMaxIter(10) 
-  val model = kmeans.fit(featureVector) 
 
-  println("Cluster Centers: ") 
+  val assembler = new VectorAssembler().setInputCols(Array("mpg", "cyl")).setOutputCol("features")   
+
+  val featureVector = assembler.transform(dataset2)
+  featureVector.show    
+
+  // Trains a k-means model, k=2, iterations=10  
+  val kmeans = new KMeans().setK(2).setMaxIter(10)
+  val model = kmeans.fit(featureVector)
+
+  println("Cluster Centers: ")
   model.clusterCenters.foreach(println)    
-  
+
   // Evaluate clustering by computing Within Set Sum of Squared Errors.  
   val WSSSE = model.computeCost(featureVector)  
 
   // Print results  
   val predicted = model.transform(featureVector)  
   // print sorted by 'prediction'  
-  predicted.sort("prediction").show(32,false) 
-  predicted.sort("prediction", "mpg").show(32,false) 
+  predicted.sort("prediction").show(32,false)
+  predicted.sort("prediction", "mpg").show(32,false)
 ```
-Notes: 
+Notes:
 
 
 
@@ -139,7 +139,7 @@ Notes:
     maxIter=20,     
     seed=None)
 
-Notes: 
+Notes:
 
 
 
@@ -157,7 +157,7 @@ Notes:
 | maxIter       | How many iterations                                                                                                                     	| 20            	|
 | seed          | Initial seed setting     	|               	|          |
 
-Notes: 
+Notes:
 
 
 
@@ -167,25 +167,25 @@ Notes:
 
 
  ```
- from pyspark.ml.feature import VectorAssembler 
- from pyspark.ml.clustering import KMeans 
+ from pyspark.ml.feature import VectorAssembler
+ from pyspark.ml.clustering import KMeans
 
- dataset = spark.read.csv("mtcars_header.csv", header=True, inferSchema=True) mpg_cyl = dataset.select("model", "mpg", "cyl") 
+ dataset = spark.read.csv("mtcars_header.csv", header=True, inferSchema=True) mpg_cyl = dataset.select("model", "mpg", "cyl")
  mpg_cyl.show(40)
 
- # select input / output 
- assembler = VectorAssembler(inputCols=["mpg", "cyl"], outputCol="features") featureVector = assembler.transform(mpg_cyl) 
+ # select input / output
+ assembler = VectorAssembler(inputCols=["mpg", "cyl"], outputCol="features") featureVector = assembler.transform(mpg_cyl)
  featureVector.show(40)
 
- # Start KMeans with 2 clusters 
- kmeans = KMeans().setK(2).setSeed(1) 
- model = kmeans.fit(featureVector) 
- wssse = model.computeCost(featureVector) 
- print(wssse) 
- model.transform(featureVector).show() 
+ # Start KMeans with 2 clusters
+ kmeans = KMeans().setK(2).setSeed(1)
+ model = kmeans.fit(featureVector)
+ wssse = model.computeCost(featureVector)
+ print(wssse)
+ model.transform(featureVector).show()
  ```
 
-Notes: 
+Notes:
 
 
 ---
@@ -193,28 +193,28 @@ Notes:
 ## Running Spark K-Means Code
 
 ```
-Scala 
+Scala
 
-    Interactive Mode 
+    Interactive Mode
       $ bin/spark-shell
       > # enter code
 
-    Script Mode 
+    Script Mode
       $ bin/spark-shell  -i   kmeans-script.scala
 
-Python 
+Python
 
-    Interactive Mode 
+    Interactive Mode
       $ bin/pyspark
       > # enter code
 
-    Script Mode 
+    Script Mode
       $ bin/pyspark   kmeans-script.py
 ```
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -249,7 +249,7 @@ Notes:
 
 ```
 
-Notes: 
+Notes:
 
 
 
@@ -258,7 +258,7 @@ Notes:
 ## Evaluating K-Means With WSSSE
 
 
-  Goal is to  minimize WSSSE with  reasonable effort 
+  Goal is to  minimize WSSSE with  reasonable effort
 
   We look for elbows - that indicates a reasonable clustering
 
@@ -266,11 +266,11 @@ Notes:
 
    Question for class: At  k=32  we have achieved  WSSSE=0 , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" alt="Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 3.44, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png"  style="width:76%;"/><!-- {"left" : 1.02, "top" : 3.44, "height" : 3.5, "width" : 8.21} -->
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -280,9 +280,9 @@ Notes:
 
 ```
 import pandas as pd   
-  
+
 k_wssse = pd.DataFrame(columns=('k', 'wssse'))    
-  
+
 # loop through K  
 for k in range(2,17):     
     print ("k=", k)     
@@ -290,9 +290,9 @@ for k in range(2,17):
     model = kmeans.fit(featureVector)     
     wssse = model.computeCost(featureVector)     
     print("k={}, wssse={}".format(k,wssse))     
-    k_wssse = k_wssse.append( {'k': k, 'wssse': wssse}, ignore_index=True) 
-  
-k_wssse 
+    k_wssse = k_wssse.append( {'k': k, 'wssse': wssse}, ignore_index=True)
+
+k_wssse
 ```
 <!-- {"left" : 0, "top" : 1.3, "height" : 3.5, "width" : 10.25} -->
 
@@ -309,7 +309,7 @@ k= 4
 <!-- {"left" : 0, "top" : 4.9, "height" : 1.86, "width" : 6.11} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -321,7 +321,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -329,15 +329,15 @@ Notes:
 
 ## K-Means Run Output
 
-* Question: How can we fix these warnings? 
+* Question: How can we fix these warnings?
 
 ```text
-val dataset = spark.read.option(...) 
-val dataset2 = dataset.select("model", "mpg", "cyl") 
-val assembler = new VectorAssembler()... 
-val featureVector = assembler.transform(dataset2) 
-val kmeans = new KMeans()..... 
-val model = kmeans.fit(featureVector) 
+val dataset = spark.read.option(...)
+val dataset2 = dataset.select("model", "mpg", "cyl")
+val assembler = new VectorAssembler()...
+val featureVector = assembler.transform(dataset2)
+val kmeans = new KMeans().....
+val model = kmeans.fit(featureVector)
 ```
 
 ```
@@ -350,7 +350,7 @@ WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRe
 WARN KMeans: The input data was not directly cached, which may hurt performance if its parent RDDs are also uncached.
 ```
 
-Notes: 
+Notes:
 
 
 
@@ -367,7 +367,7 @@ Notes:
 
      - Check the storage tab to understand caching storage
 
-Notes: 
+Notes:
 
 
 
@@ -376,15 +376,15 @@ Notes:
 ## Lab: K-Means in Spark
 
 
-   * **Overview** : 
-   
+   * **Overview** :
+
         K-Means in Spark
 
-   * **Approximate time** : 
-   
+   * **Approximate time** :
+
         30-40 mins
 
-   * **Instructions** : 
+   * **Instructions** :
 
      - KMEANS-1 lab (mtcars)
 
@@ -392,18 +392,16 @@ Notes:
 
      - Bonus Lab : KMEANS-3 : Walmart shopping data
 
-   * **Answers** : 
+   * **Answers** :
 
      - Upload appropriate HTML files
 
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
 
 # PCA in Spark
-
-

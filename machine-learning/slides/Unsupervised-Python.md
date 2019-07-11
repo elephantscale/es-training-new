@@ -10,9 +10,9 @@
 
  * Learn use cases
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -36,7 +36,7 @@ Notes:
 
  * Gaussian Mixture
 
-Notes: 
+Notes:
 
 
 
@@ -51,7 +51,7 @@ Notes:
 
  *  **sklearn.cluster.KMeans** (self, n_clusters=8, init='k-means++' max_iter=300, tol=0.0001)
 
-Notes: 
+Notes:
 
 
 
@@ -67,7 +67,7 @@ Notes:
 | maxIter    	| How many iterations                                                                                                                                    	| 20            	|
 | n_init     	| Initial seed setting        	|               	| |
 
-Notes: 
+Notes:
 
 
 
@@ -76,25 +76,25 @@ Notes:
 ## Python K-Means Code (Python)
 
 ```python
- from sklearn.cluster 
+ from sklearn.cluster
  import KMeans import pandas as pd
 
  dataset = pd.read_csv('mtcars_header.csv)
 
- mpg_cyl = dataset[['model', 'mpg', 'cyl']] 
- featureVector = mpg_cyl.iloc[:,1:3].values 
- 
+ mpg_cyl = dataset[['model', 'mpg', 'cyl']]
+ featureVector = mpg_cyl.iloc[:,1:3].values
+
  # Start KMeans with 2 clusters
  kmeans = Kmeans(n_clusters=2, n_init=1)
- model = kmeans.fit(featureVector) 
+ model = kmeans.fit(featureVector)
  wssse = model.inertia_
- print(wssse) 
+ print(wssse)
  dataset['prediction'] = model.predict(featureVector)
 ```
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -130,7 +130,7 @@ Notes:
 ```
 
 
-Notes: 
+Notes:
 
 
 
@@ -139,7 +139,7 @@ Notes:
 ## Evaluating K-Means With WSSSE
 
 
- * Goal is to  **minimize WSSSE** with  **reasonable effort** 
+ * Goal is to  **minimize WSSSE** with  **reasonable effort**
 
  * We look for elbows - that indicates a reasonable clustering
 
@@ -148,11 +148,11 @@ Notes:
 
  *  **Question for class:** At  **k=32**  we have achieved  **WSSSE=0** , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" alt="Session-Unsupervised-Learning-Evaluating-K-Means-With-WSSSE-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 3.46, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 3.46, "height" : 3.5, "width" : 8.21} -->
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -162,20 +162,20 @@ Notes:
 
 
 ```python
-import pandas as pd 
+import pandas as pd
 
-k_wssse = pd.DataFrame(columns=('k', 'wssse')) 
+k_wssse = pd.DataFrame(columns=('k', 'wssse'))
 
-# loop through K 
-for k in range(2,17): 
-   print ("k=", k) 
+# loop through K
+for k in range(2,17):
+   print ("k=", k)
    kmeans = KMeans().setK(k).setSeed(1)   
    model = kmeans.fit(featureVector)  
    wssse = model.inertia_    
    print("k={}, wssse={}".format(k,wssse))  
    k_wssse = k_wssse.append( {'k': k, 'wssse': wssse}, ignore_index=True)
-   
-k_wssse 
+
+k_wssse
 ```
 <!-- {"left" : 0, "top" : 0.9, "height" : 3.15, "width" : 10.25} -->
 
@@ -191,7 +191,7 @@ k= 4
 ```
 <!-- {"left" : 0, "top" : 4.8, "height" : 1.86, "width" : 6.11} -->
 
-Notes: 
+Notes:
 
 
 
@@ -203,7 +203,7 @@ Notes:
 <img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-With-Python-K-WSSSE-0.png" alt="Session-Unsupervised-Learning-With-Python-K-WSSSE-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.23, "height" : 5.51, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -212,15 +212,15 @@ Notes:
 ## Lab: K-Means in Python
 
 
- *  **Overview**: 
- 
+ *  **Overview**:
+
     K-Means in Python
 
- *  **Approximate time**: 
- 
+ *  **Approximate time**:
+
     30-40 mins
 
- *  **Instructions**: 
+ *  **Instructions**:
 
      - KMEANS-1 lab (mtcars)
 
@@ -228,14 +228,14 @@ Notes:
 
      - Bonus Lab: KMEANS-3: Walmart shopping data
 
- *  **Answers**: 
+ *  **Answers**:
 
      - Upload appropriate HTML files
 
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -249,7 +249,7 @@ Notes:
 
  *  **sklearn.decomposition.PCA**  (self,n_components, init='k-means++'     max_iter=300, tol=0.0001)
 
-Notes: 
+Notes:
 
 
 
@@ -266,7 +266,7 @@ Notes:
 | maxIter      	| How many iterations                                                                                                                                                                                              	| 20            	|
 | random_state 	| Initial seed setting    	|               	|      |
 
-Notes: 
+Notes:
 
 
 
@@ -275,7 +275,7 @@ Notes:
 ## PCA In Python
 
 
-Notes: 
+Notes:
 
 
 
@@ -284,7 +284,7 @@ Notes:
 ## PCA Notebook Demo
 
 
-Notes: 
+Notes:
 
 
 
@@ -293,7 +293,7 @@ Notes:
 ## Review Questions
 
 
-Notes: 
+Notes:
 
 
 
@@ -302,6 +302,4 @@ Notes:
 ## Further Reading
 
 
-Notes: 
-
-
+Notes:
