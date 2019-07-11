@@ -78,16 +78,16 @@ Notes:
 *  **Average / Mean** = Total sum of all salaries /  (number of salaries )  
  = (30k +  35k +  22k + 70k + 50k +  55k +  45k +  40k + 25k + 42k + 60k + 65k)  /  12  
  = 44.9k
+ * Mean is denoted by x 
 
-<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Mean-0.png" alt="Data-Exploration-Mean-0.png" style="width:20%;"/>
+<img src="../../assets/images/machine-learning/equation-mean-1.png"  style="width:40%;float:left"/>
 
-<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Mean-1.png" alt="Data-Exploration-Mean-1.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/equation-weighted-mean-1.png" style="width:40%;float:right;"/>
 
-<img src="../../assets/images/machine-learning/3rd-party/Data-Exploration-Mean-2.png" alt="Data-Exploration-Mean-2.png" style="width:20%;"/>
+
 
 Notes:
 
-Formula image credit : Wikimedia  (license : public domain)
 
 
 ---
@@ -320,9 +320,9 @@ Notes:
 
 **Variance & standard deviation** ( μ is mean )  
 
-<img src="../../assets/images/machine-learning/variance-formula.png"  style="max-width:60%;"/>
+<img src="../../assets/images/machine-learning/equation-variance-1.png"  style="max-width:60%;"/>
 
-<img src="../../assets/images/machine-learning/standard-deviation-formula.png"  style="max-width:60%;"/>
+<img src="../../assets/images/machine-learning/equation-standard-deviation-1.png"  style="max-width:60%;"/>
 
 
 Notes:
@@ -597,7 +597,7 @@ Notes:
 
 ## Covariance Formula
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Formula.png" alt="Data-Exploration-Covariance-0.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/equation-covariance-1.png" style="width:50%;"/>
 
 Notes:
 
@@ -738,7 +738,7 @@ Notes:
 
 ## Correlation Formula
 
-<img src="../../assets/images/machine-learning/3rd-party/correlation-formula-1.png"  style="width:60%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/equation-correlation-1.png"  style="width:60%;"/>
 
 Notes:
 
