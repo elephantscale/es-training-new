@@ -1,4 +1,4 @@
-# Session: Unsupervised Learning
+# Unsupervised Learning
 
 ---
 
@@ -22,7 +22,7 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-1.png" dstyle="max-width:70%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-1.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
 
 
 Notes:
@@ -82,14 +82,12 @@ References
 
 ## Supervised Vs. Unsupervised
 
-| Supervised                                                                                                           | Unsupervised                 |
-|----------------------------------------------------------------------------------------------------------------------|------------------------------|
-| Well understood                                                                                                      | More challenging             |
-| Lots of tools and algorithms                                                                                         |                              |
-| (such as logistic regression, linear discriminant analysis, classification trees, support vector machines, and more) |                              |
-| Assessing model performance is well defined                                                                          |                              |
-| (validation, cross-validation, independent test set)                                                                 | Tends to be more subjective. |
-| No universally accepted mechanisms for cross-validation ..etc                                                        |                              |
+| Supervised                                                                                                                                         | Unsupervised                 |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| most algorithms are supervised                                                                                                                     |                              |
+| Lots of tools and algorithms. <br/>(such as logistic regression, linear discriminant analysis, classification trees, support vector machines, and more) |                              |
+| Assessing model performance is well defined (validation, cross-validation, independent test set)                                                   | Tends to be more subjective. |
+
 
 Notes:
 
@@ -101,19 +99,16 @@ Notes:
 
 
  * Medicine / Genomics
-
      - Group cancer cells into sub groups
 
  * Online shopping
-
-     - Group customer purchases ('diaper run' )
+     - Group customer purchases ('grocery run' )
 
  * Web
-     - Prioritize search results based on other user's clicks.
-
+     - Prioritize search results based on other user's clicks.  
        E.g. search results for 'eclipse'
-
-     - Group news stories / articlese.g. Google News
+     - Group news stories / articles  
+       E.g. Google News
 
 Notes:
 
@@ -141,23 +136,18 @@ Notes:
 
 ## What is Clustering?
 
+<img src="../../assets/images/machine-learning/clustering-02.png" style="width:40%;float:right;" /> <!-- TODO shiva -->
 
- * Clustering finds natural (sub) groupings (clusters)  in data
-
-     - Observations in one group are quite similar
-
-     - While observations in other groups different from each other
+ * Clustering finds natural **groupings / clusters**  in data
+     - Each group shares similar traits with elements in its own group
+     - and is different from elements in other groups
 
  * Humans naturally cluster data we encounter
-
      - Categorizing, organizing, etc.
-
      - Our brains seek patterns
 
  * Why do we cluster?
-
      - To understand our data
-
      - To find "more like this"
 
 Notes:
@@ -172,17 +162,12 @@ Notes:
 <img src="../../assets/images/machine-learning/Clustering-Use-Cases.png"  style="width:40%;float:right;"/><!-- TODO shiva {"left" : 3.37, "top" : 4.21, "height" : 2.84, "width" : 3.5} -->
 
  * Anomaly detection
-
      - Find fraud
-
      - Detect network intrusion attack
-
      - Discover problems on servers
 
  * Clustering does not necessarily detects fraud
-
      - But it points to unusual data
-
      - And the need for further investigation
 
 
@@ -197,8 +182,9 @@ Notes:
 
 ## Clustering Use Cases:  Google News
 
+- Google News groups similar articles together.  This has to be done dynamically, as news stories change all the time
 
-<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 1.88, "height" : 4.21, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:50%;"/><!-- TODO shiva {"left" : 1.02, "top" : 1.88, "height" : 4.21, "width" : 8.21} -->
 
 
 
@@ -208,9 +194,10 @@ Notes:
 
 ## Clustering Use Case : Uber Trips
 
- * Figure out where demand is so more cars can be sent to that area
+ * Figure out where demand is so more cars can be sent to that area  
+ (we will do this lab!)
 
-<img src="../../assets/images/machine-learning/Uber-Trips-0.png" alt="Uber-Trips-0.png" style="width:60%;"/><!-- {"left" : 2.24, "top" : 1.83, "height" : 4.3, "width" : 5.77} -->
+<img src="../../assets/images/machine-learning/Uber-Trips-0.png" alt="Uber-Trips-0.png" style="max-width:50%;"/><!-- {"left" : 2.24, "top" : 1.83, "height" : 4.3, "width" : 5.77} -->
 
 
 Notes:
@@ -224,11 +211,11 @@ Notes:
 
  * Marketing / Sales
      - Segment the customer base; for promotion / advertisement
-     - Nascar dad  / soccer mom  / yoga mom
+     - Soccer mom  / new parents
 
  * Politics
      - Group potential voters for ad targeting
-     - Soccer moms / gun owners / Christians
+     - Farmers / Christians
 
  * See next slide
 
@@ -269,17 +256,13 @@ https://www.kaggle.com/c/walmart-recruiting-trip-type-classification
 ## Clustering Algorithms
 
 
-  **K-Means**
+*  **K-Means**
+    * we seek to partition the observations into a pre-specified number of clusters
 
- * we seek to partition the observations into a pre-specified number of clusters
-
- **Hierarchical clustering**
-
- * We do not know in advance how many clusters we want
-
- * We end up with a tree-like visual representation of the observations, called a  **dendrogram**
-
- * View the clusterings obtained for each possible number of clusters, from 1 to n
+* **Hierarchical clustering**
+    * We do not know in advance how many clusters we want
+    * We end up with a tree-like visual representation of the observations, called a  **dendrogram**
+    * View the clusterings obtained for each possible number of clusters, from 1 to n
 
 Notes:
 
@@ -344,7 +327,8 @@ Notes:
 
 
 
-*  **Step 1** : k numbers of points (centroids) are pre-seeded in the data.  Example: 3 centroids (red, green, blue)
+*  **Step 1** : Centroids are randomly seeded in the data.  
+Example: 3 centroids (red, green, blue)
 *  **Step 2** : Each point in the dataset is associated with its nearest centroid, as determined by a distance measurement.
 *  **Step 3** : The centroid (geometric center) of the clustered points becomes the new centroid of that cluster. Each centroid  updated.
 *  **Step 4** : Repeat steps 2 and 3 until convergence is reached (the points move less than the threshold amount).
@@ -355,25 +339,6 @@ Notes:
 <img src="../../assets/images/machine-learning/3rd-party/kmeans-3d.png"  style="width:20%;"/>
 
 Notes:
-
-
-
-
----
-
-## K-Means Clustering
-
-
-Ways to Determine Distance between points
-Euclidian distance - (most obvious) Euclidian, which takes the distance in Euclidian space
-Cosine Distance - cosine of angle between vectors - ignores magnitude
-Manhattan distance: Effectively counts the number of square blocks one would "walk" to get there without cutting corners.
-Tanimoto distance  Take both angle and magnitude into account.
-
-Most algorithms attempt to balance the
-Magnitude
-Angle
-
 
 
 
@@ -422,13 +387,13 @@ Formulate images : "Introduction to Statistical Learning", used with author's pe
 ## Evaluating K-means Performance
 
 
- * We use a method called WSSSE - Within cluster sum of squares by cluster  / Within-Cluster-SS
+ * We use a method called **WSSSE - Within cluster sum of squares by cluster  / Within-Cluster-SS**
 
  * Remember K-Means works like this
 
      - Each observation is allocated to closest cluster
 
-     - Distance between observation and cluster center
+     - Measure distance between observation and cluster center
 
      - Keep iterating until max-K is reached  or change in successive WSSSE is less than the threshold value
 
@@ -438,45 +403,24 @@ Notes:
 
 
 
----
-
-## K-Means Example Walkthrough
-
-
- * We will walk through a simple example of K-Means
-
- * We will be clustering cars
-
- * We use 'mtcars' dataset (from R)
-
-     - 32 data points
-
- * Attributes
-
-     - name - name of the car
-
-     - mpg - Miles/(US) gallon
-
-     - cyl - Number of cylinders
-
-     - disp - Displacement (cu.in.)
-
-     - hp - Gross horsepower
-
-     - drat - Rear axle ratio
-
-Notes:
-
-
 
 ---
 
 ## MTCars Clustering
 
+ <img src="../../assets/images/machine-learning/3rd-party/kmeans-8-mtcars.png" style="width:60%;float:right;"/><!-- TODO shiva {"left" : 1.16, "top" : 2.01, "height" : 3.94, "width" : 7.94} -->
 
  * We are going to cluster cars using two attributes : MPG & CYL
+ * This is `mtcars` dataset
+    - has 32 data points
+ * Attributes
+    - name - name of the car
+    - mpg - Miles/(US) gallon
+    - cyl - Number of cylinders
+    - disp - Displacement (cu.in.)
+    - hp - Gross horsepower
+    - drat - Rear axle ratio
 
- <img src="../../assets/images/machine-learning/3rd-party/kmeans-8-mtcars.png" style="width:80%;"/><!-- {"left" : 1.16, "top" : 2.01, "height" : 3.94, "width" : 7.94} -->
 
 
 
@@ -564,19 +508,13 @@ Source : https://en.wikipedia.org/wiki/K-means_clustering
 
 
  * Initial centroid positions are very important
-
      - Badly initialized centroids can lead to
-
         * sub-optimal solution ("local minima" phenomenon)
-
         * Can take too long to converge
 
  * No deterministic way to guarantee the clustering is optimal (NP hard)
-
      - Choose centroid randomly
-
      - Do several runs
-
      - Compare WSSSE score
 
  * `Lloyd's algorithm` can be used overcome some of these issues (outside the scope of this course)
@@ -613,24 +551,20 @@ https://www.naftaliharris.com/blog/visualizing-k-means-clustering/
 
 ## How to Find the Best K?
 
-
-* Practical approach
-
-* Number of Clusters (K) is usually determined by the application need
-
-* E.g. We want our customer base clustered into 5 groups (too many would be hard to manage)
-
-Notes:
-
----
-
-## How to Find the Best K?
+<img src="../../assets/images/machine-learning/kmeans-13-wssse.png" style="width:50%;float:right;"/><!-- TODO shiva {"left" : 2.37, "top" : 3.27, "height" : 3.22, "width" : 5.52} -->
 
 -  No single standard to find 'best' number of clusters
--  **Elbow**   **method**  is commonly used
+-  **Elbow method**  is commonly used
 - Increasing K beyond the elbow doesn't produce noticeable improvements in clustering
 
-<img src="../../assets/images/machine-learning/kmeans-13-wssse.png" style="width:50%;"/><!-- {"left" : 2.37, "top" : 3.27, "height" : 3.22, "width" : 5.52} -->
+- Practical approach
+    -  Number of Clusters (K) is usually determined by the application need
+    - See Walmart data on shopping-cart grouping
+        - 'grocery run',  'milk run'
+        - ~37 categories
+
+
+
 
 
 
@@ -644,10 +578,6 @@ Notes:
  *  **Cluster**
 
     A group of records that are similar
-
- *  **Cluster mean**
-
-    The vector of variable means for the records in the cluster
 
  *  **K**
 
@@ -669,7 +599,7 @@ Notes:
  * **Strengths**
     * K-Means is simple, well-understood
     * Verification straightforward
-    * Easy to parallelize (very important!)
+    * Easy to parallelize, scales to large datasets
 
  * **Weaknesses:**
     * Value of k must be known in advance, which may mean running the exercise many times to get optimum results.
@@ -692,7 +622,7 @@ Hierarchical Clustering is a cluster analysis that seeks to build a hierarchy of
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-hiearchical-clustering.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-hiearchical-clustering.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
 
 
 
@@ -751,28 +681,20 @@ Notes:
 ## Lab: KMeans
 
  *  **Instructor**:
-
-     - `Recommended to do the Uber lab as the last lab for the class `
+     - Recommended to do the Uber lab as the last lab for the class
 
  *  **Overview**:
-
     - Experiment with KMeans
 
  *  **Approximate time**:
-
     - 20 - 40 mins
 
  *  **Instructions**:
-
      - Follow appropriate Python / R / Spark instructions
-
      - KMEANS-1 lab (mtcars)
-
-     - `KMEANS-2: Uber trips`
-
+     - KMEANS-2: Uber trips
      - Bonus Lab: KMEANS-3: Walmart shopping data
 
- *  **Lab**
 
 Notes:
 
@@ -784,9 +706,9 @@ Notes:
 ## K-Means: Further Reading
 
 
- * " **Practical Statistics for Data Scientists** "  - O'Reilly Chapter 7
+ * "**Practical Statistics for Data Scientists**"  - O'Reilly Chapter 7
 
- * " **An Introduction to Statistical Learning** " - SpringerChapter 10
+ * "**An Introduction to Statistical Learning**" - SpringerChapter 10
 
  * Wikipedia: [https://en.wikipedia.org/wiki/K-means_clustering](https://en.wikipedia.org/wiki/K-means_clustering)
 
@@ -802,7 +724,7 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-dimensionality-reduction.png"  style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-dimensionality-reduction.png"  style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
 
 
 
@@ -816,23 +738,23 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
 ## Dimensionality Reduction
 
- *  **Problem**: you have too many variables
+ *  Imagine we have too many variables/features (hundreds or even thousands!)
 
  * But this is good!?
-
      - Not always
 
-     - Not when there are 10,000 of them
-
  * Too many variables
+    - complicate the model make it prone to overfit
+    - Slow down the calculation
+    - Require lots of compute power and resources
 
-     - Slow down the calculation
+&nbsp;
 
-     - Require
+| Feature 1 | F 2 | F 3 | ... | ... | F 99 | F  100 |
+|-----------|-----|-----|-----|-----|------|--------|
+|           |     |     |     |     |      |        |
+|           |     |     |     |     |      |        |
 
-        * Lots of RAM
-
-        * Lots of hard drive
 
 Notes:
 
@@ -840,28 +762,20 @@ Notes:
 
 ---
 
-## Benefits of Data Reduction
+## Can We Reduce the Features?
 
+* Can we use fewer features?
 
- * Efficient compute
+* Advantages
+    - Efficient compute
+        - Use compute more effectively, use less memory, reduce network traffic (in distributed scenarios)
+    - Simpler model
+        - Less susceptible for overfitting
+        - Quicker to train
 
-     - Use CPU more effectively
-
-     - Reduce the amount of RAM
-
-     - Reduce the amount of storage
-
-     - Indirectly, reduce the amount of network traffic
-
- * However, you cannot just decide to reduce the data
-
-     - There are limitations
-
-     - They are called "variance"
-
-        * How much my reduce data preserve the nature of the original
-
-     - More on this later
+* However, we can not just drop features
+     - We don't want to drop important features
+     - Also we don't want to loose too much of 'signal' from original data
 
 Notes:
 
@@ -873,24 +787,21 @@ Notes:
 
 
 <img src="../../assets/images/machine-learning/dimensionality-reduction-3.png"  style="width:40%;float:right;"/><!-- TODO shiva {"left" : 6.59, "top" : 5.25, "height" : 2.09, "width" : 3.5} -->
+
  *  **Reason 1: Efficient computation**
 
- * Say we have N observations with P featuresX<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>, .... X<sub>P</sub>
+ * Say we have N observations with P features  
+ X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>, .... X<sub>P</sub>
 
  * We can visualize this data by2D scatter plots
-
      - X<sub>1</sub> vs X<sub>2</sub>
-
      - X<sub>1</sub> vs X<sub>2</sub>
-
      - So on...
 
  * For P variables there are
-
-    p * (p - 1) / 2 combinations!
-
- * P = 10 -> 45 plot combinations!
- * P = 100 -> 4500 plot combinations!
+    - p * (p - 1) / 2 combinations!
+    - P = 10 --> 45 plot combinations!
+    - P = 100 --> 4500 plot combinations!
 
 
 
@@ -902,23 +813,15 @@ Notes:
 ## Why Dimensionality Reduction?
 
 
-  **Reason 2: To mask data**
-
+ *  **Reason 2: To mask data**
  * Imagine a dataset with sensitive data
+     - Patients in medical trial data, valuable customer data like SSN
+ * We want to make this data available to others.  
+ But we also need to protect the data
+    - we can mask sensitive data; here we are masking SSN
 
-     - Patients in medical trial
+<img src="../../assets/images/machine-learning/dimensionality-reduction-4.png" style="" />
 
-     - Valuable customer data for a retailer
-
- * We want to make this data available to others.But we also need to protect the data
-
- * Options
-
-    - Drop sensitive columns.But this may affect analytics, not always an option
-
-    - Mask in place
-        * Some attributes are easy mask - SSN -> md5(SSN + salt)
-        * But how do you mask 'Amount spent per shopping trip' ?
 
 Notes:
 
@@ -932,13 +835,10 @@ Notes:
  *  **Reason 3: Eliminate duplicate data**
 
  * When multiple datasets are merged there may be duplicates
-
      - Could be coming from different departments / different equipment
-
      - Sometimes hard to detect
 
  * Here is an example of 'height' recorded in feet and cm.
-
      - They may not even agree, due to rounding errors
 
 <img src="../../assets/images/machine-learning/3rd-party/dimensionality-reduction-1.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 3.99, "height" : 2.68, "width" : 8.21} -->
@@ -954,15 +854,13 @@ Notes:
 ## Dimensionality Reduction Solution
 
 
- * Say I have sensitive data set with 100 attributes
-
- * I want to create 10 attributes out of 100 and give this out for further analysis
-
+ * Say we have a data set with 100 attributes
+ * We want to create 10 attributes out of 100 and give this out for further analysis
      - Retains as much spirit' of original data
-
      - Hard to reverse engineer
+ * Here we are creating **totally new attributes** (a,b,c) from original attributes
 
-<img src="../../assets/images/machine-learning/dimensionality-reduction-2.png" style="width:80%;"/><!-- {"left" : 1.31, "top" : 3.44, "height" : 3.54, "width" : 7.63} -->
+<img src="../../assets/images/machine-learning/dimensionality-reduction-2.png" style="width:70%;"/><!-- {"left" : 1.31, "top" : 3.44, "height" : 3.54, "width" : 7.63} -->
 
 
 
@@ -976,11 +874,8 @@ Notes:
 
 
  * You want to email / SMS a beautiful sunset photo
-
  * original image is 10 MB - high resolution
-
  * SMS program will resize / reduce resolution for sending
-
      - Smaller size, but still maintains the image
 
 <img src="../../assets/images/machine-learning/dimensionality-reduction-3-beach.png" style="width:50%;"/><!-- {"left" : 1.97, "top" : 3.12, "height" : 3.7, "width" : 6.31} -->
@@ -1025,7 +920,7 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-pca.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-pca.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
 
 
 
@@ -1050,51 +945,31 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
  *  **Interesting**  is measured by the amount that the observations vary along each dimension
 
-Notes:
-
-
-
----
-
-## Clustering VS PCA
-
-
- * Both Clustering and PCA seek to simplify the data via small number of summaries / attributes
-
- * PCA looks to find a low-dimensional representation of the observations that explain a good fraction of the variance
-
- * Clustering looks to find homogeneous subgroups among the observations
+<img src="../../assets/images/machine-learning/PCA-14.png" style="max-width:70%;"/><!-- TODO shiva {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
 
 Notes:
 
 
 
 ---
+
 
 ## PCA Example: Cultures of Internet in UK
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-1-oxford-study.png"  style="width:30%;float:right;"/><!-- {"left" : 8.03, "top" : 4.1, "height" : 3.21, "width" : 2.03} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-1-oxford-study.png"  style="max-width:30%;float:right;"/><!-- {"left" : 8.03, "top" : 4.1, "height" : 3.21, "width" : 2.03} -->
 
  * This is an study by Oxford Internet Institute (OxIS)
 
  * 2500+ people were asked 15 questions in a survey
-
      - age
-
      - Hours on mobile
-
      - Hours on the internet
-
      - Etc.
 
  * The study summarized the findings in 4 PCA items
-
      - Enjoyable Escape
-
      - Instrumental efficiency
-
      - Problem generator
-
      - Social facilitator
 
 
@@ -1111,29 +986,32 @@ http://oxis.oii.ox.ac.uk/wp-content/uploads/2014/11/OxIS-2013.pdf
 
 
  * Say we are measuring the following responses
-
      - Age,   hours on the internet
-     - 2 variables -> 2 dimensional dataset -> 2 Eigen Vectors
-
-
+     - 2 variables --> 2 dimensional dataset --> 2 Eigen Vectors
  * If we measure
-
      - Age, hours on the internet, hours on the mobile phone
-     - 3 variables,  3 dimensional dataset -> 3 Eigen vectors
-
+     - 3 variables,  3 dimensional dataset --> 3 Eigen vectors
  * So number of Eigen vectors = number of dimensions
-
  * EigenVector is a direction - vertical, horizontal, 45' degrees ..etc
-
  * EigenValue is a number - denoting how much 'variance' in the data in that vector's direction
-
  * Eigen Vector and Eigen Value go together(E Vector,   E Value)
-
  * EigenVector with highest EigenValue (meaning lot of variance in that direction)  becomes a Principal Component
 
 Notes:
 
 
+---
+## Eigen Vector Example
+
+<img src="../../assets/images/machine-learning/PCA-15-eigen-vector-example.png"  style="max-width:50%;float:right;"/>
+
+- Imagine we are in a town with bunch of bars and restaurants
+
+- if we only travel on streets North and East, we wouldn't see most of the restaurants
+
+- But if we walk down the alley way, we will encounter most of the restaurants and bars
+
+- So the alleyway is a better street
 
 ---
 
@@ -1191,16 +1069,16 @@ Image adopted with thanks to: https://georgemdallas.wordpress.com/2013/10/30/pri
 ## PCA on Oxford Internet Study
 
 
+<img src="../../assets/images/machine-learning/3rd-party/PCA-5-oxford-study.png" style="max-width:30%;float:right;"/><!-- {"left" : 3.37, "top" : 1.23, "height" : 5.51, "width" : 3.51} -->
+
  * Say there were
-
      - 2500 people interviewed == 2500 observations
-
      - 15 questions = 15 dimensions = 15 EigenVectors & Values
 
- * Say our 15 Eigen Values are (in descending order)[  **`25, 22, 15, 13`** , 8, 5, 4, 3, 2, 1, 0.7, 0.5, 0.4,  0.3, 0.1 ]
+ * Say our 15 Eigen Values are (in descending order)  
+ [  **`25, 22, 15, 13`** , 8, 5, 4, 3, 2, 1, 0.7, 0.5, 0.4,  0.3, 0.1 ]
 
  * We see the first 4 have the biggest values
-
      - Indicating 4 directions with lots of information
 
  * We have identified our 4 Principal Components (PC)
@@ -1208,18 +1086,6 @@ Image adopted with thanks to: https://georgemdallas.wordpress.com/2013/10/30/pri
  * We have gone from 15 attributes to 4  (call them PC1, PC2, PC3, PC4)
 
 Notes:
-
-
-
----
-
-## Oxford Study With Top-4 PCA Items
-
-<img src="../../assets/images/machine-learning/3rd-party/PCA-5-oxford-study.png" style="width:35%;"/><!-- {"left" : 3.37, "top" : 1.23, "height" : 5.51, "width" : 3.51} -->
-
-
-Notes:
-
 
 
 ---
@@ -1275,6 +1141,7 @@ Diagram with thanks to : "An introduction to Statistical Learning" book.
 
 ## Understanding BiPlot
 
+<img src="../../assets/images/machine-learning/3rd-party/PCA-8-USArrests-biplot.png"  style="width:40%;float:right;"/><!-- TODO shiva {"left" : 5.63, "top" : 2.63, "height" : 4.28, "width" : 4.28} -->
 
  * Biplot displays both
 
@@ -1298,23 +1165,16 @@ Notes:
 
 ## Understanding BiPlot
 
+<img src="../../assets/images/machine-learning/3rd-party/PCA-8-USArrests-biplot.png"  style="width:40%;float:right;"/><!-- TODO shiva {"left" : 5.63, "top" : 2.63, "height" : 4.28, "width" : 4.28} -->
 
  * Crime related variables (Murder, Assault and Rape) are close to each other
-
  * UrbanPop is far from other three
-
      - Less correlated with others
-
  * States with large PC1 scores have high crime rates
-
      - California, Nevada, Florida
-
  * States with negative PC1 scores low crime rates
-
      - North Dakota
-
  * California also high on PC2 indicating more urbanized.While Mississippi and NC are least urbanized
-
  * States close to zero on both components like Indiana have average crime and urbanization
 
 Notes:
@@ -1325,31 +1185,22 @@ Notes:
 
 ## Effects of Scaling Variables Before PCA
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-9-USArrests-biplot.png"  style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
+<img src="../../assets/images/machine-learning/3rd-party/PCA-9-USArrests-biplot.png"  style="max-width:60%;float:right;"/><!-- TODO shiva {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+
+ * Left : Scaled data, centered at zero, with standard deviation one
+ * Right: Unscaled data
+ * With unscaled data we see 'Assault' having the largest loading on PC1 (b/c it has the highest variance)
+ * So it is exerting a lot of influence on the data
+ * So it is recommended to  **scale the data before performing** a PCA
+
+
 
 
 Notes:
 
 Diagram with thanks to : "An introduction to Statistical Learning" book.
 
-
-
----
-
-## Understanding Scaling
-
-
- * Left : Scaled data, centered at zero, with standard deviation one
-
- * Right: Unscaled data
-
- * With unscaled data we see 'Assault' having the largest loading on PC1 (b/c it has the highest variance)
-
- * So it is exerting a lot of influence on the data
-
- * So it is recommended to  **scale the data before performing** a PCA
-
-Notes:
 
 
 
@@ -1392,11 +1243,11 @@ Notes:
 Notes:
 
 
-
 ---
 
 ## Choosing PCs - Practical Advice
 
+<img src="../../assets/images/machine-learning/PCA-workflow-1.png" style="max-width:40%;float:right;"/> <!-- TODO Shiva -->
 
  * Adhoc
 
@@ -1406,7 +1257,7 @@ Notes:
 
  * Another
 
-     - Feed PCA'd data into a Supervised learning algorithm  (Principal Components Regression)
+     - Feed PCA'd data into a Supervised learning algorithm  (e.g. regression or classification)
 
      - Then use evaluation methods for Supervised Learning to tweak the number of PCs
 
@@ -1419,23 +1270,16 @@ Notes:
 ## Generalized PCA Algorithm
 
 
- * From n-dimension to k-dimension   (k < n)
-
+* From n-dimension to k-dimension   (k < n)
      - Find k vectors in Rn that will minimize the combined projection error of the data in Rn
 
 
-**Algorithm overview**
-
- * 1. Preprocessing, or feature scaling
-
- * 2. Compute the "covariance" matrix
-
-      - How each feature is related to another
-
- * 3. Find the "eigenvectors" of the covariance matrix
-
- * 4. Find the important principal components
-
+* **Algorithm overview**
+    1. Preprocessing, or feature scaling (normalization)
+    2. Compute the "covariance" matrix
+        - How each feature is related to another
+    3. Find the "eigenvectors" of the covariance matrix
+    4. Find the important principal components
       - Transform your features into k-dimension
 
 Notes:
@@ -1444,63 +1288,44 @@ Notes:
 
 ---
 
-## Step-1. Normalization
+## Normalizing Data
 
-<img src="../../assets/images/machine-learning/normalization-1.png"  style="width:35%;float:right;"/><!-- TODO shiva {"left" : 5.94, "top" : 3.82, "height" : 3.24, "width" : 3.89} -->
+| id | age | salary  |
+|----|-----|---------|
+| 1  | 32  | 60,000  |
+| 2  | 26  | 50,000  |
+| 3  | 40  | 100,000 |
+| 4  | 37  | 75,000  |
 
- * Our variables are all in different ranges
-
-     - Age : 20- 70
-
-     - Salary : 30,000  - 150,000
-
- * Normalize (one possible way)= (Value - min) / range
-
- * Example, age values are[ 30,  45, 50,  70,  60, 25, 22]
-
-     - Min = 22
-
-     - Range = 70 - 22 = 48
-
-
-
-
-
-Notes:
-
-
+* In this data variables are all in different ranges
+     - Age : 26- 40
+     - Salary : 50,000  - 100,000
 
 ---
 
-## Step-1. Normalization
+## Normalized Data
 
 
 <img src="../../assets/images/machine-learning/normalization-1.png"  style="width:35%;float:right;"/><!-- TODO shiva {"left" : 5.94, "top" : 3.82, "height" : 3.24, "width" : 3.89} -->
 
- * Normalized vector[ (30 - 22) / 48,    (45 - 22) / 48,  ....    (22 - 22) / 48 ] [0.17, 0.48,  0.58,  1.00, 0.79, 0.06, 0.00]
+* Age values are[ 32, 26, 40, 37]
+     - Min = 26,  Max = 40
+     - Range = 40 - 26 = 24
+* Normalize (age) = (value - min) / range
+* Scaled data is between 0.0 and 1.0
 
- * Result
-
-     - Our features (black) are all in the range of -1 to  1
-
- * Other possibility, mean based :   (x - mean) / range
-
-     - Mean = 43.14
-
-     - [ (30 - 43.14) / 48,    (45 - 43.14) / 48,  ....    (22 - 43.14) / 48 ] = [ -0.274,   0.039,  0.143,  0.560,  0.351,  0.378, 0.440 ]
-
-
-
-
-Notes:
-
-
+| id | age | salary  | age scaled  <br />(value - min) / range     |
+|----|-----|---------|--------------------------------------|
+| 1  | 32  | 60,000  | = (32 - 26)/ (40 - 26) <br />= 0.428571429 |
+| 2  | 26  | 50,000  | = (26 - 26) / (40 - 26)  <br />= 0.0        |
+| 3  | 40  | 100,000 | = (40 - 26) / (40 - 26)  <br />= 1.0        |
+| 4  | 37  | 75,000  | = (37-26) / (40 - 26)  <br />= 0.7857       |
 
 ---
 
-## Restoring Reduced Data
+## Restoring Original Data
 
-<img src="../../assets/images/machine-learning/PCA-10-restoring-reduced-data.png" style="width:50%;float:right;"/><!-- TODO shiva {"left" : 2.73, "top" : 3.56, "height" : 3.72, "width" : 4.79} -->
+<img src="../../assets/images/machine-learning/PCA-10-restoring-reduced-data.png" style="width:30%;float:right;"/><!-- TODO shiva {"left" : 2.73, "top" : 3.56, "height" : 3.72, "width" : 4.79} -->
 
  * Yes, you can restore original data
 
@@ -1508,8 +1333,15 @@ Notes:
 
  * But usually we only select a few Eigen Vectors -> you will lose some precision
 
- * Apply the same transforms backwards to the new points
 
+  * Apply the same transforms backwards to the new points
+
+<br clear="all"/>
+
+ <img src="../../assets/images/machine-learning/dimensionality-reduction-3-beach.png" style="width:35%;float:right;"/><!-- TODO shiva {"left" : 2.73, "top" : 3.56, "height" : 3.72, "width" : 4.79} -->
+
+
+ * See the beach picture (we can not 100% restore original image from a down-sampled image)
 
 
 
@@ -1547,28 +1379,16 @@ You may choose 95%, 90%, etc
 
 
  * Good use of PCA
-
-     - Compression
-
-        * Reduce memory requirements
-
-        * Reduce hard drive use
-
-        * Speed up supervised learning
-
+     - Compression of data for reduce resource requirements
+     - Speed up supervised learning
      - Visualization
-
-        * Reducing to K = 2 or K = 3
+        * Reducing to K = 2 (two dimensional) or K = 3 (three dimensional)
 
  * Bad use of PCA
-
      - To prevent overfitting
-
      - Your thinking: less features, less likely to overfit
-
      - Most likely it is not a good idea, since the data is the same
-
-     - Rather, use regularization parameter   λ
+     - Rather, use regularization parameter lambda (λ) to reduce overfitting
 
 Notes:
 
@@ -1599,26 +1419,18 @@ Image credit: https://www.1st-art-gallery.com/Joseph-Mallord-William-Turner/Rain
 ## Machine Learning Pipelines
 
 
- * Your plan
-
+ * Plan 1
      - Data gathering
-
      - PCA
-
      - Other algorithms
 
- * Better plan
-
+ * Plan 2 : Better plan
      - Data gathering
-
      - ~~PCA~~
-
      - Other algorithms
 
  * Try without PCA first
-
      - PCA may not be needed
-
      - It is used for specific purposes
 
 Notes:
@@ -1632,18 +1444,13 @@ Notes:
 
  * Two ways to implement PCA
 
- * Compute the matrices using linear algebra
-
+ * Option 1 : Compute the matrices using linear algebra
      - Not very stable numerically
-
      - Errors build up
-
      - Large matrix size
 
- * Compute eigenvectors iteratively
-
+ * Option 2 : Compute eigenvectors iteratively
      - Almost as precise as above
-
      - But much faster
 
 Notes:
@@ -1686,14 +1493,10 @@ Notes:
 ## PCA: Further Readings
 
 
- * `"Internet Cultures of UK"` study by Oxford Internet Institute
+ * ["Internet Cultures of UK"](http://oxis.oii.ox.ac.uk/wp-content/uploads/2014/11/OxIS-2013.pdf) study by Oxford Internet Institute
 
- * `"PCA for dummies"` - a nice blog post by George Dallas
+ * [PCA for dummies](https://georgemdallas.wordpress.com/2013/10/30/principal-component-analysis-4-dummies-eigenvectors-eigenvalues-and-dimension-reduction/) - a nice blog post by George Dallas
 
- * `"Intro to PCA"`
+ * [Intro to PCA](https://valiancesolutions.com/introduction-to-principal-component-analysis)
 
 Notes:
-
-http://oxis.oii.ox.ac.uk/wp-content/uploads/2014/11/OxIS-2013.pdf
-https://georgemdallas.wordpress.com/2013/10/30/principal-component-analysis-4-dummies-eigenvectors-eigenvalues-and-dimension-reduction/
-https://valiancesolutions.com/introduction-to-principal-component-analysis

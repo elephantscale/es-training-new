@@ -1099,7 +1099,7 @@ Notes:
      - To understand our data
      - To find "more like this"
 
-<img src="../../assets/images/machine-learning/Clustering-01.png" style="width:50%;">
+<img src="../../assets/images/machine-learning/clustering-01.png" style="width:50%;">
 
 Notes:
 

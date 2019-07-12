@@ -67,3 +67,48 @@ Notes:
 
 ---
 
+
+## Clustering VS PCA
+
+
+ * Both Clustering and PCA seek to simplify the data via small number of summaries / attributes
+
+ * PCA looks to find a low-dimensional representation of the observations that explain a good fraction of the variance
+
+ * Clustering looks to find homogeneous subgroups among the observations
+
+Notes:
+
+
+
+---
+
+# PCA
+
+---
+
+
+## Step-1. Normalization
+
+
+
+ * Normalized vector[ (30 - 22) / 48,    (45 - 22) / 48,  ....    (22 - 22) / 48 ] [0.17, 0.48,  0.58,  1.00, 0.79, 0.06, 0.00]
+
+ * Result
+
+     - Our features (black) are all in the range of -1 to  1
+
+ * Other possibility, mean based :   (x - mean) / range
+
+     - Mean = 43.14
+
+     - [ (30 - 43.14) / 48,    (45 - 43.14) / 48,  ....    (22 - 43.14) / 48 ] = [ -0.274,   0.039,  0.143,  0.560,  0.351,  0.378, 0.440 ]
+
+
+
+
+Notes:
+
+
+
+---
