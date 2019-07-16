@@ -78,9 +78,9 @@ Notes:
 *  **Average / Mean** = Total sum of all salaries /  (number of salaries )  
  = (30k +  35k +  22k + 70k + 50k +  55k +  45k +  40k + 25k + 42k + 60k + 65k)  /  12  
  = 44.9k
- * Mean is denoted by x 
+* Mean is denoted by  x&#772; 
 
-<img src="../../assets/images/machine-learning/equation-mean-1.png"  style="width:40%;float:left"/>
+<img src="../../assets/images/machine-learning/equation-mean-1.png"  style="width:50%;float:left"/>
 
 <img src="../../assets/images/machine-learning/equation-weighted-mean-1.png" style="width:40%;float:right;"/>
 
@@ -300,7 +300,7 @@ Notes:
     - Add them all up
     - Divide by number of observations (N)
 
-<img src="../../assets/images/machine-learning/variance-formula.png"  style="max-width:80%;"/>
+<img src="../../assets/images/machine-learning/equation-variance-1.png"  style="width:40%;"/>
 
 
 * Properties
@@ -320,9 +320,9 @@ Notes:
 
 **Variance & standard deviation** ( μ is mean )  
 
-<img src="../../assets/images/machine-learning/equation-variance-1.png"  style="max-width:60%;"/>
+<img src="../../assets/images/machine-learning/equation-variance-1.png"  style="width:40%;"/>
 
-<img src="../../assets/images/machine-learning/equation-standard-deviation-1.png"  style="max-width:60%;"/>
+<img src="../../assets/images/machine-learning/equation-standard-deviation-1.png"  style="width:40%;"/>
 
 
 Notes:
@@ -597,7 +597,7 @@ Notes:
 
 ## Covariance Formula
 
-<img src="../../assets/images/machine-learning/equation-covariance-1.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/equation-covariance-1.png" style="width:60%;"/>
 
 Notes:
 
@@ -1026,19 +1026,6 @@ Notes:
 income = c(22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70)
 
 bp = boxplot(income)
-
-bp
-
-$stats
-#    [,1]
-# [1,] 22.0
-# [2,] 32.5
-# [3,] 43.5
-# [4,] 57.5
-# [5,] 70.0
-
-$n
-# 12
 ```
 
 <img src="../../assets/images/machine-learning/Data-Exploration-BoxPlot-Sample-Code-R--0.png" alt="Data-Exploration-BoxPlot-Sample-Code-Python--0.png" style="width:40%;"/>
@@ -1062,7 +1049,7 @@ salaries = np.array([22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70])
 plt.boxplot(salaries)
 ```
 
-<img src="../../assets/images/machine-learning/Data-Exploration-BoxPlot-Sample-Code-Python--0.png" alt="Data-Exploration-BoxPlot-Sample-Code-Python--0.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png"  style="width:50%;"/>
 
 
 Notes:
