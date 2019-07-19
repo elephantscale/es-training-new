@@ -15,7 +15,7 @@
     - Algorithm + training data -> model
     - Model = Algorithm(data)
 
-<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="max-width:66%;"/><!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="max-width:50%;"/><!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
 
 
 
@@ -156,6 +156,7 @@ Notes:
 
 <img src="../../assets/images/machine-learning/Feature-Extraction.png" alt="Feature-Extraction" style="width:30%;"/> <!-- {"left" : 1.83, "top" : 2.67, "height" : 0.79, "width" : 3.49} -->
 
+
 |             |      |         | Age | Income | Marital Status | Owns a Home |
 |-------------|------|---------|-----|--------|----------------|-------------|
 |             |      |         | 24  | 45,000 | Single         | No          |
@@ -163,7 +164,6 @@ Notes:
 
 <!-- {"left" : 0.26, "top" : 3.54, "height" : 1.7, "width" : 9.75, "columnwidth" : [1.39, 1.39, 1.39, 1.39, 1.39, 1.39, 1.39]} -->
 
-<img src="../../assets/images/machine-learning/Feature-Extraction-02.png" alt="Feature-Extraction" style="width:40%;"/> <!-- {"left" : 1.89, "top" : 5.45, "height" : 1.59, "width" : 7.98} -->
 
 
 
@@ -929,7 +929,7 @@ https://en.wikipedia.org/wiki/Residual_sum_of_squares
     - Picks one of two outcomes  (spam / not-spam)
 * Say we are classifying 10 emails (6 spam, 4 not-spam)
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-04.png" alt="Confusion-Matrix-04.png" style="max-width:60%;"/> <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-04.png" alt="Confusion-Matrix-04.png" style="width:60%;"/> <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
 
 
 
@@ -956,7 +956,7 @@ Algorithm is good at identifying rabbits
 
 ## Interpreting Confusion Matrix (True/False Positives/Negatives)
 
-<img src="../../assets/images/machine-learning/confusion-matrix-12.png" alt="confusion-matrix-12.png" style="max-width:60%;"/> <!-- {"left" : 0.51, "top" : 0.9, "height" : 6.17, "width" : 9.22} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-12.png" alt="confusion-matrix-12.png" style="width:60%;"/> <!-- {"left" : 0.51, "top" : 0.9, "height" : 6.17, "width" : 9.22} -->
 
 
 

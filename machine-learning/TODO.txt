@@ -1,0 +1,8 @@
+- revamp naive bayes 
+    do a different scanario
+    copy images along with equaations for easy understanding 
+    
+- cleanup decision trees a bit...
+
+- fix decision trees notebook 
+- fix rf trees notebook

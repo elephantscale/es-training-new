@@ -224,7 +224,7 @@ Redo pictures and numbers
 
  * We want to find a set of boxes that will approximate our data
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="float:right;"/><!-- TODO {"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:30%;float:right;"/><!-- TODO {"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
  * Find the error (prediction vs actual) per each region
      - This is RSS (Residual Sum of Squares)
 

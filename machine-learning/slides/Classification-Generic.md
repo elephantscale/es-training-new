@@ -214,9 +214,9 @@ Coefficients for our credit card problem: b0 = -1.69754 ,  b1 = 0.002319
 
 For score of 700
 
-        e b0 + b1*X                      exp (-1.69754 + 0.002319 * 700)
+        e (b0 + b1*X)                    exp (-1.69754 + 0.002319 * 700)
  Y = ------------------------- =   ------------------------------------------------   =  0.84
-        1 + e b0 + b1 * X               1 + exp (-1.69754 + 0.002319 * 700)
+        1 + e (b0 + b1 * X)             1 + exp (-1.69754 + 0.002319 * 700)
 
 Predicts 84% chance of getting the loan approved.
 So this mapped to YES
@@ -802,27 +802,6 @@ Notes:
 
     - SVM2 - Customer churn data
 
-
-Notes:
-
----
-
-## Lab: Cross Validation: Hyper Parameter Tuning
-
-* **Instructor:**
-    - Run this lab if not done before
-
-* **Overview:**
-    - Learn to do Cross Validation
-
-* **Approximate Time:**
-    - 30 mins
-
-* **Instructions:**
-
-    - Follow appropriate Python / R / Spark instructions
-
-    - **Cross Validation 1:Tuning the model**
 
 Notes:
 
