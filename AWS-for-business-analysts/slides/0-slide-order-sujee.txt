@@ -1,5 +1,8 @@
-#   $ES_HOME/utils/presentations/slides-assembler-reveal.sh   0-slide-order-sujee.txt
-#
+## To assemble md slides
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    0-slide-order-sujee.txt
+## to make pdfs
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    0-slide-order-sujee.txt   pdf
+
 
 AWS-Overview.md
 AWS-Athena.md
@@ -8,10 +11,10 @@ AWS-Athena.md
 
 # ML
 ../../machine-learning/slides/Machine-Learning-Primer.md
-../../machine-learning/slides/Data-Exploration.md
-../../machine-learning/slides/ML-concepts.md
 
 # Sagemaker
 ../../machine-learning/slides/sagemaker/SageMaker.md
 
-../../machine-learning/slides/Regressions-Generic.md
+Regression-SageMaker.md
+../../machine-learning/slides/Classification-Generic.md
+../../machine-learning/slides/Unsupervised-Generic.md
