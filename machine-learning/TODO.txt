@@ -6,3 +6,5 @@
 
 - fix decision trees notebook 
 - fix rf trees notebook
+
+- logistic regression, illustrate how the percentage output from the equation is mapped to yes / no by threshold
