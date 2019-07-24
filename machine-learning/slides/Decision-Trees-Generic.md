@@ -80,14 +80,14 @@ Notes:
 
 ---
 
-## Quiz for Class :
+## Quiz for Class:
 ## Create a Tree to Classify These Animals
 
 <img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
 
 
- * Quiz for Class : Create a Tree to Classify These Animals
+ * Quiz for Class: Create a Tree to Classify These Animals
 
  * Design a tree with minimal number of questions to identify the following
 
@@ -106,9 +106,9 @@ Notes:
 
      - Has long history
 
-     - Classics : Binary Tree (guessing game, customer support)
+     - Classics: Binary Tree (guessing game, customer support)
 
-     - Modern variations : Random Forest, Boosted trees, Bagged trees
+     - Modern variations: Random Forest, Boosted trees, Bagged trees
 
  * Trees can be used for both classification and regression.So called  **'Classification and Regression Trees' (CART)**
 
@@ -184,7 +184,7 @@ Notes:
 
 ## Tree Algorithm
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Algorithm-0.png" style="width:50%;float:right;"><!-- TODO {"left" : 6.02, "top" : 2.2, "height" : 3.09, "width" : 3.96} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Algorithm-0.png" style="width:50%;float:right;"><!-- {"left" : 6.02, "top" : 2.2, "height" : 3.09, "width" : 3.96} -->
 
 
  * Tree partitions the input space
@@ -203,7 +203,7 @@ Notes:
      - Input
         * Years > 4.5?
         * Hits > 117.5?
-     - Output : R3
+     - Output: R3
 
 Notes:
 
@@ -224,13 +224,13 @@ Redo pictures and numbers
 
  * We want to find a set of boxes that will approximate our data
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:30%;float:right;"/><!-- TODO {"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
  * Find the error (prediction vs actual) per each region
      - This is RSS (Residual Sum of Squares)
 
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:30%;float:right;"/><!--{"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
+
  * Try to  **minimize RSS across all regions**
      - The formula calculates RSS across all Regions ( 1 to J)
-
 
 
 
@@ -262,7 +262,7 @@ Notes:
 
 ## Example: Guessing Game
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="width:45%;float:right;"/><!-- TODO {"left" : 6.61, "top" : 2.56, "height" : 2.38, "width" : 3.05} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="margin-left:5px; width:45%; float:right;"/><!--{"left" : 6.61, "top" : 2.56, "height" : 2.38, "width" : 3.05} -->
 
  * Let us say the first person choose a number in the range of 1 through 100
 
@@ -312,7 +312,7 @@ Notes:
 
 ## What it means to be greedy?
 
-<img src="../../assets/images/machine-learning/Decision-Trees-What-it-means-to-be-greedy--0.png" style="width:50%;float:right;"/><!-- TODO {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-What-it-means-to-be-greedy--0.png" style="width:50%;float:right;"/><!-- {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
 
  * Select the `best split` from a<br/>
   set of possible splits
@@ -395,7 +395,7 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
 Notes:
 
-Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C. Muller (ISBN: 9781449369415)
+Reference: Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C. Muller (ISBN: 9781449369415)
 
 
 ---
@@ -428,7 +428,7 @@ Notes:
 ## Stopping Criteria 1:
 ### Min number of elements per node
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:40%;float:right;"/><!-- TODO {"left" : 6.3, "top" : 4.57, "height" : 2.16, "width" : 3.67} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:50%;float:right;"/><!--{"left" : 6.3, "top" : 4.57, "height" : 2.16, "width" : 3.67} -->
 
  * Most common stopping criteria is Minimum instances per node
 
@@ -454,12 +454,13 @@ Notes:
 ## Stopping Criteria 1:
 ### Min number of elements per node
 
-* If we set minimum_per_node =1
+* If we set minimum_per_node = 1
 
      - Each node will have 1 data point
 
      - We will have number_of_leaf_nodes = number of data points
-     - => overfit !
+     - => overfit!
+
 
 Notes:
 
@@ -549,15 +550,15 @@ Notes:
 
 ## Gini Index (G)
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Gini-Index-1.png" style="width:50%;float:right;"><!-- TODO {"left" : 5.37, "top" : 3.9, "height" : 3.28, "width" : 4.43} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Gini-Index-1.png" style="margin-left:20px; width:50%;float:right;"><!--{"left" : 5.37, "top" : 3.9, "height" : 3.28, "width" : 4.43} -->
 
  * Gini index measures the 'purity' of each node (how mixed data is in one Region)
 
- * Pk = proportion of class k in that region
+ * P<sub>k</sub> = proportion of class k in that region
 
  * A region with all classes of same type will have G = 0
 
- * If all of  *p*  *mk*  are close to 0 or to 1, G is small
+ * If all of  *P*<sub>*mk*</sub>  are close to 0 or to 1, G is small
 
  * If region has 50%-50%  mix then G = 0.5  (worst purity)
 
@@ -576,11 +577,11 @@ Notes:
 ## Gini Index Example
 
 
- * Here we have a classifier : class-1  and class-2
+ * Here we have a classifier: class-1  and class-2
 
- * P1 : proportion of class-1
+ * P1: proportion of class-1
 
- * P2 : proportion of class-2
+ * P2: proportion of class-2
 
  * Calculating Gini index as follows
 
@@ -622,8 +623,8 @@ Notes:
      - Often biased towards features with large number of splits
 
  *  **Parameters**
-     - Max depth : how deep a tree can grow
-     - Max bins : how many nodes/bins the tree can have
+     - Max depth: how deep a tree can grow
+     - Max bins: how many nodes/bins the tree can have
      - Min samples per leaf : stop keep dividing
 
 Notes:
@@ -679,7 +680,7 @@ Notes:
 
 ---
 
-## Lab : Decision Trees
+## Lab: Decision Trees
 
 <img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
 
@@ -692,7 +693,7 @@ Notes:
 
      -  **DT-1: college-admission**
 
-     -  **DT-2 : prosper-loans**
+     -  **DT-2: prosper-loans**
 
 <img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%;"><!-- {"left" : 3.46, "top" : 3.05, "height" : 1.88, "width" : 3.33} -->
 
@@ -756,7 +757,6 @@ Notes:
 ## Each DT Exhibits High Variance and Overfits
 
 
-<img src="../../assets/images/machine-learning/decision-trees-overfit-1.png" style="width:50%;float:right;"><!-- TODO {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
 
  * A tree may fit some of the data well
 
@@ -764,6 +764,7 @@ Notes:
 
  * Neither of them will work well in the real world
 
+<img src="../../assets/images/machine-learning/decision-trees-overfit-1.png" style="width:40%;"><!-- {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
 
 
 Notes:
@@ -778,7 +779,7 @@ Notes:
  * By contrast, Linear Regression has high bias
      - It has less capacity to reflect complex data
 
-<img src="../../assets/images/machine-learning/decision-trees-overfit-2.png" style="width:60%;"><!-- TODO {"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
+<img src="../../assets/images/machine-learning/decision-trees-overfit-2.png" style="width:60%;"><!--{"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
 
 
 Notes:
@@ -821,7 +822,7 @@ Notes:
      - Each tree will be random and deep, and not pruned
      - And aggregate their predictions
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Random-Forests-Idea-0.png" style="width:60%"><!-- {"left" : 1.02, "top" : 5.22, "height" : 1.67, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Random-Forests-Idea-0.png" style="width:80%"><!-- {"left" : 1.02, "top" : 5.22, "height" : 1.67, "width" : 8.21} -->
 
 
 Notes:
@@ -832,7 +833,7 @@ Notes:
 
 ## Bagging (Boosting Aggregation) In Action
 
-<img src="../../assets/images/machine-learning//Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%;float:right; "><!-- TODO {"left" : 2.95, "top" : 3.12, "height" : 3.72, "width" : 4.36} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%;float:right; "><!-- {"left" : 2.95, "top" : 3.12, "height" : 3.72, "width" : 4.36} -->
 
  * We create 3 trees with  **Boosting**
 
@@ -841,8 +842,6 @@ Notes:
  * Each tree is predicting blue or red
 
  * Final result is  **aggregated**  ( **bagging** )
-
-
 
 Notes:
 
@@ -897,7 +896,7 @@ Notes:
 ## Data & Feature Bagging in Action
 
 
-<img src="../../assets/images/machine-learning//Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%;float:right; "><!-- TODO {"left" : 4.17, "top" : 2.9, "height" : 4.22, "width" : 5.75} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%;float:right; "><!--{"left" : 4.17, "top" : 2.9, "height" : 4.22, "width" : 5.75} -->
 
  * We have 3 trees, each operating on
 

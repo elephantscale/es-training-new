@@ -699,7 +699,7 @@ Notes:
 
  * A correlation |r| >= 0.8 is considered  **strong**
 
- * A correlation |r| < 0.5  is considered  **weak** .
+ * A correlation |r| < 0.5  is considered  **weak**.
 
  <img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" alt="Data-Exploration-Correlation-Coefficient--0.png" style="width:50%;"/>
 
@@ -823,7 +823,7 @@ Notes:
 * The diagonal cells are **1.0**  
 Each variable is perfectly correlated with itself
 
-<img src="../../assets/images/machine-learning/correlation-matrix-1.png"  style="max-width:60%;"/>
+<img src="../../assets/images/machine-learning/correlation-matrix-1.png"  style="width:60%;"/>
 
 
 ---
@@ -886,7 +886,7 @@ print(np.corrcoef(m))
 ```
 
 ```
-# output : correlation matrix
+# output: correlation matrix
        a             b           c           d           e
 a [[ 1.          0.54470478 0.84515425  0.99607842  0.09897433]
 b [ 0.54470478  1.          0.05370862  0.49341288  0.38786539]
@@ -921,7 +921,7 @@ Notes:
 
  *  **Ends here**
 
- * Jump off to  **data-analytics-R/slides/Analytics.pptx**
+ * Jump off to **data-analytics-R/slides/Analytics.pptx**
 
 Notes:
 
@@ -940,14 +940,14 @@ Notes:
 
 ---
 
-## Optional Lab : Basic Numpy, Pandas
+## Optional Lab: Basic Numpy, Pandas
 
 
- *  **Overview** : Get familiar with Numpy and Pandas
+ *  **Overview**: Get familiar with Numpy and Pandas
 
- *  **Approximate time** : 10 mins
+ *  **Approximate time**: 10 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      -  Numpy
 
@@ -963,11 +963,11 @@ Notes:
 ## Optional Lab: Statistics
 
 
- *  **Overview** : Learn basic statistics functions
+ *  **Overview**: Learn basic statistics functions
 
- *  **Approximate time** : 10 mins
+ *  **Approximate time**: 10 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      -  **Basics/stats**
 
@@ -1002,7 +1002,7 @@ Notes:
 ## Boxplot / Box-and-Whisker Plot
 
 
- * Boxplot displays 5 measures : min, Q1, Q2 (median), Q3, max
+ * Boxplot displays 5 measures: min, Q1, Q2 (median), Q3, max
 
  * Smallest / Largest values are measured within upper/lower fences
 
@@ -1019,7 +1019,7 @@ Notes:
 
 ---
 
-## BoxPlot : Sample Code (R)
+## BoxPlot: Sample Code (R)
 
 
 ```r
@@ -1037,7 +1037,7 @@ Notes:
 
 ---
 
-## BoxPlot : Sample Code (Python)
+## BoxPlot: Sample Code (Python)
 
 ```python
 %matplotlib inline
@@ -1126,16 +1126,16 @@ Notes:
 
 ---
 
-## Lab : Visualizing
+## Lab: Visualizing
 
 
- *  **Overview** : Learn basic plot functions
+ *  **Overview**: Learn basic plot functions
 
- *  **Builds on previous labs** :
+ *  **Builds on previous labs**:
 
- *  **Approximate time** : 10 mins
+ *  **Approximate time**s: 10 mins
 
- *  **Instructions** :
+ *  **Instructions**s:
 
      -  **basic/visualizing**
 
@@ -1148,15 +1148,15 @@ Notes:
 
 ---
 
-## Lab  Data Cleanup
+## Lab Data Cleanup
 
 
- *  **Overview** :
+ *  **Overview**:
   Cleaning up data, getting it ready for analytics
 
- *  **Approximate Time** : 10 - 15 mins
+ *  **Approximate Time**: 10 - 15 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      - '**exploration/data-cleanup** ' lab for Python / R / Spark
 
@@ -1171,7 +1171,7 @@ Notes:
 ## To Instructor
 
 
- * Option 1: STOP here,  if continuing onto **`ML-Concepts`**
+ * Option 1: STOP here, if continuing onto **`ML-Concepts`**
 
  * Option 2: continue to next 2 labs, if this is standalone module
 
@@ -1181,20 +1181,20 @@ Notes:
 
 ---
 
-## [Optional] Lab : Exploring Dataset
+## [Optional] Lab: Exploring Dataset
 
 
  *  **Instructor, If covering ML-Concepts, do this at the end of Part-1 ML-Concepts**
 
- *  **Overview** :  Explore a dataset
+ *  **Overview**:  Explore a dataset
 
- *  **Approximate Time** : 10 - 15 mins
+ *  **Approximate Time**: 10 - 15 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      -  **'exploration/explore-house-sales'**  lab for Python / R / Spark
 
- *  **To Instructor** : Demo this lab on screen first, and explain the results
+ *  **To Instructor**: Demo this lab on screen first, and explain the results
 
 Notes:
 
@@ -1203,18 +1203,18 @@ Notes:
 
 ---
 
-## BONUS Lab : Graphing And Visualizing
+## BONUS Labs: Graphing And Visualizing
 
 
- *  **Overview** : Visualize house-sales dataset
+ *  **Overview**s: Visualize house-sales dataset
 
- *  **Approximate Time** : 10 - 15 mins
+ *  **Approximate Time**: 10 - 15 mins
 
- *  **Instructions** :
+ *  **Instructions**:
 
      -  **exploration/visualize-house-sales**  lab for Python / R / Spark
 
- *  **To Instructor** : Demo this lab on screen first, and explain the results
+ *  **To Instructor**: Demo this lab on screen first, and explain the results
 
 Notes:
 
@@ -1232,11 +1232,11 @@ Notes:
 
  * Fantastic YouTube video series on Statistics by Brandon Foltz
 
-     - Covariance :  https://www.youtube.com/watch?v=xGbpuFNR1ME
+     - Covariance:  https://www.youtube.com/watch?v=xGbpuFNR1ME
 
-     - Correlation : https://www.youtube.com/watch?v=4EXNedimDMs  
+     - Correlation: https://www.youtube.com/watch?v=4EXNedimDMs  
 
-     - Covariance Matrix : https://www.youtube.com/watch?v=locZabK4Als
+     - Covariance Matrix: https://www.youtube.com/watch?v=locZabK4Als
 
 Notes:
 

@@ -203,11 +203,11 @@ Notes:
 ## Lab: Naïve Bayes
 
 
- *  **Overview** : Work with Naïve Bayes algorithm
+ *  **Overview**: Work with Naïve Bayes algorithm
 
- *  **Approximate time** : 20-30 mins
+ *  **Approximate time**: 20-30 mins
 
- *  **Instructions** : 
+ *  **Instructions**: 
 
      - Follow instructions for Spark Python / Scala
 
