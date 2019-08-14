@@ -55,6 +55,8 @@ Notes:
 
 
 ---
+
+
 ## Forgetfulness
 
  *  Why do human brains forget?
@@ -84,6 +86,54 @@ Image credit : https://pixabay.com/en/brain-turn-on-education-read-book-605603/
 
 
 ---
+
+## Gated Recurrent Units
+
+ * Gated Recurrent Units implement a Forget gate!
+ * They "gate" the hidden state
+   - With a learnable "weight"
+ 
+
+---
+
+## History of GRU
+ 
+ * Introduced by Kyungyun Cho (et al) in 2004
+![](../../assets/images/deep-learning/3rd-party/GRU_whitepaper.png) <!-- {"left" : 7.2, "top" : 4.91, "height" : 1.99, "width" : 2.82} -->
+
+
+
+Notes:
+
+https://arxiv.org/pdf/1406.1078v3.pdf
+
+---
+
+## GRU
+
+![](../../assets/images/deep-learning/3rd-party/GRU-wikipedia.png) <!-- {"left" : 7.2, "top" : 4.91, "height" : 1.99, "width" : 2.82} -->
+
+Notes:
+
+https://en.wikipedia.org/wiki/Gated_recurrent_unit#/media/File:Gated_Recurrent_Unit,_type_3.svg
+
+
+---
+
+
+## Limitations of GRUs
+
+ * GRUs help fix the vanishing gradient problem by "gating" the "hidden state"
+ * However, GRUs cannot diffentiate between short-term and long-term memory.
+ * They have *one* hidden state.
+ * This makes them perfect for shorter sequences.
+ * However, longer sequences have the same problem as basic RNNs 
+   - Don't handle either short-term OR long-term state very well.
+
+---
+
+		
+
 ## Long-term versus Short-term Memory
 
  *  Human Brains have two types of memory: short and long term
@@ -535,6 +585,7 @@ Notes:
 
 
 ---
+
 ## LSTM Take Aways
 
  *  LSTMs are very sequential
@@ -550,4 +601,5 @@ Notes:
 
 
 ---
+
 
