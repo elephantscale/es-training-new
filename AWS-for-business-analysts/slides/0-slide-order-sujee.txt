@@ -1,3 +1,4 @@
+## Execute these commands from within 'es-reveal-md' docker image
 ## To assemble md slides
 ##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    0-slide-order-sujee.txt
 ## to make pdfs
