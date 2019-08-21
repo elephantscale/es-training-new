@@ -26,7 +26,7 @@
 
 ## What is Amazon SageMaker?
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Amazon.png" style="width:30%;float:right;"/>
+<img src="../../../assets/images/logos/aws-sagemaker-logo-1.png" style="width:30%;float:right;"/>
 
 * Fully managed machine learning service
 
@@ -183,6 +183,8 @@ TODO
 
 ## Step 3: Deploy the Model
 
+<img src="../../../assets/images/AI/AI-Workflow-06.png" style="width:50%;float:right; "/>
+
   * Once the evaluation goes well, we can deploy the model to production:
 
   * Continuous cycle:
@@ -192,7 +194,6 @@ TODO
 
   * SageMaker makes this process easy
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Deploy-the-Model.png" style="width:50%; position:absolute;"/>
 
 ---
 
@@ -301,11 +302,12 @@ Notes:
 
 ## SageMaker Lab
 
+<img src="../../../assets/images/icons/individual-labs.png" style="width:20%;float:right;"/>
+
   * Use: ml-labs-sagemaker/README.html
   * Runtime: 1hr - 1hr 30 mins
   * Instructor: Explain the workflow
 
-<img src="../../../assets/images/machinbe-learning/Machine-Learning-SageMaker-Lab.png" style="width:50%; position:absolute;"/>
 
 ---
 

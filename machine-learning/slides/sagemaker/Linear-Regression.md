@@ -15,7 +15,7 @@
 
   * Data
 
-<img src="../../../assets/images/machine-learning/Linear-Regression.png" alt="Linear-Regression.png" width="60%"/>
+<img src="../../../assets/images/machine-learning/linear-regression-1b.png" alt="linear-regression-1b.png" width="60%"/>
 
 * Input variables => continuous output
 

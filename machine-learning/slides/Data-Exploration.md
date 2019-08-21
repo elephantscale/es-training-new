@@ -78,7 +78,7 @@ Notes:
 *  **Average / Mean** = Total sum of all salaries /  (number of salaries )  
  = (30k +  35k +  22k + 70k + 50k +  55k +  45k +  40k + 25k + 42k + 60k + 65k)  /  12  
  = 44.9k
-* Mean is denoted by  x&#772; 
+* Mean is denoted by  x&#772;
 
 <img src="../../assets/images/machine-learning/equation-mean-1.png"  style="width:50%;float:left"/>
 
@@ -830,7 +830,7 @@ Each variable is perfectly correlated with itself
 
 ##  Correlation Matrix Code ( R )
 
-<img src="../../assets/images/machine-learning/Data-Exploration--Covariance-Matrix-Code-R--0.png" alt="Data-Exploration-Covariance-Matrix.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/machine-learning/covariance-matrix-1.png" alt="covariance-matrix-1.png" style="width:40%;float:right;"/>
 
 ```R
 a <- c(1,2,3,4,5,6)

@@ -317,7 +317,7 @@ Notes:
 
 ## K - WSSSE
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Unsupervised-Learning-With-Python-K-WSSSE-0.png" alt="Session-Unsupervised-Learning-With-Spark-K-WSSSE-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.23, "height" : 5.51, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" alt="kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.23, "height" : 5.51, "width" : 8.21} -->
 
 
 

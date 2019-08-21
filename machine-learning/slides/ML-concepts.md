@@ -40,9 +40,9 @@ Notes:
 
   * **'Model'**:  
     Mathematical object describing the relationship between input and output
-    
+
   * We can treat ML model as a 'black box'
-  
+
   * Input goes in, model produces an output
 
  <img src="../../assets/images/machine-learning/Model.png" alt="Model" style="width:70%;"/><!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
@@ -54,25 +54,25 @@ Notes:
 
 
 ---
-# Machine Learning Process 
-
----
-
-## Machine Learning Process 
-
-<img src="../../assets/images/machine-learning/ML-Process.png"  style="max-width:90%;"/> 
+# Machine Learning Process
 
 ---
 
 ## Machine Learning Process
 
-- Step 1: Get Data 
+<img src="../../assets/images/machine-learning/ML-Process.png"  style="max-width:90%;"/>
 
-- Step 2: Explore Data and build model 
+---
 
-- Step 3: Evaluate model 
+## Machine Learning Process
 
-- Step 4: Optimize model 
+- Step 1: Get Data
+
+- Step 2: Explore Data and build model
+
+- Step 3: Evaluate model
+
+- Step 4: Optimize model
 
 - Step 5: Deploy and monitor
 
@@ -80,7 +80,7 @@ Notes:
 
 ## Machine Learning Process: Step 1: Data Exploration
 
-<img src="../../assets/images/machine-learning/ML-Process-02.png" style="max-width:90%;"/> 
+<img src="../../assets/images/machine-learning/ML-Process-02.png" style="max-width:90%;"/>
 
 ---
 # Feature Engineering
@@ -101,9 +101,9 @@ Notes:
 
 ---
 
-## Features / Output 
+## Features / Output
 
-* Features are inputs to the algorithm 
+* Features are inputs to the algorithm
 
 * Output is what are trying to predict
 
@@ -176,8 +176,8 @@ Notes:
 ## FE: Incorporating Domain Knowledge
 
 * In the previous example how did we figure out the features to consider?
-   - probably 'common sense' :-) 
-     
+   - probably 'common sense' :-)
+
 * In practice we use our **domain knowledge** to identify important features
 
 Notes:
@@ -339,7 +339,7 @@ Notes:
 ## Lab : Exploratory Data Analysis (EDA)
 
   * **Overview:**
-    - Analyze house sales data 
+    - Analyze house sales data
 
   * **Approximate Time:**
     - 20 - 25 mins
@@ -373,11 +373,11 @@ Notes:
 ---
 
 ## Machine Learning Process: Step 2: Developing a Model
-<img src="../../assets/images/machine-learning/ML-Process-03.png"  style="max-width:90%;"/> 
+<img src="../../assets/images/machine-learning/ML-Process-03.png"  style="max-width:90%;"/>
 
 ---
 
-## Sample Dataset:  Cars 
+## Sample Dataset:  Cars
 
 * We want to predict MPG of a car
 * What attributes to consider?
@@ -490,7 +490,7 @@ Notes:
 ---
 
 ## Machine Learning Process: Step 3: Model Evaluation
-<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="max-width:90%;"/> 
+<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="max-width:90%;"/>
 
 ---
 
@@ -719,16 +719,16 @@ Notes:
 
 ---
 
-## Cross Validation 
+## Cross Validation
 
 * Cross Validation is used to evaluate different algorithms
 
 * See the following CV runs of 3 different algorithms (A,B,C)
     - Algorithm A accuracy is : 60%  to 72%
     - Algorithm B accuracy is : 70%  to 85%
-    - Algorithm C accuracy is : 50%  to 90% 
+    - Algorithm C accuracy is : 50%  to 90%
 
-* We might select algorithm B, as it seems to produce decent range 
+* We might select algorithm B, as it seems to produce decent range
 
 * Algorithm C is not desirable as its accuracy varies so much (high variance)
 
@@ -780,7 +780,7 @@ Notes:
 
 ## Sampling Without Replacement
 
-<img src="../../assets/images/machine-learning/bootstrapping-2a.png" alt="bootstrapping1.png" style="width:55%;"/> <!-- {"left" : 1.5, "top" : 1.16, "height" : 5.85, "width" : 7.25} -->
+<img src="../../assets/images/machine-learning/bootstrapping-2a.png" alt="bootstrapping-2a.png" style="width:55%;"/> <!-- {"left" : 1.5, "top" : 1.16, "height" : 5.85, "width" : 7.25} -->
 
 
 
@@ -801,7 +801,7 @@ Notes:
 
 ## Bootstrapping Example 2
 
-<img src="../../assets/images/machine-learning/bootstrapping-1.png" alt="bootstrapping1-skitch.png" style="max-width:90%;"/> <!-- {"left" : 0.39, "top" : 1.75, "height" : 4.01, "width" : 9.48} -->
+<img src="../../assets/images/machine-learning/bootstrapping-1.png" alt="bootstrapping-1.png" style="max-width:90%;"/> <!-- {"left" : 0.39, "top" : 1.75, "height" : 4.01, "width" : 9.48} -->
 
 
 
@@ -860,7 +860,7 @@ Notes:
     - positive and negative errors cancel each other out
 
 <img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="max-width:50%;"/> &nbsp; &nbsp;<!-- {"left" : 1.84, "top" : 3.68, "height" : 3.24, "width" : 6.58} -->
-<img src="../../assets/images/machine-learning/Residuals.png" alt="Residuals.png" style="max-width:40%;"/> <!-- {"left" : 8.24, "top" : 2.49, "height" : 2.14, "width" : 1.57} --> 
+<img src="../../assets/images/machine-learning/Residuals.png" alt="Residuals.png" style="max-width:40%;"/> <!-- {"left" : 8.24, "top" : 2.49, "height" : 2.14, "width" : 1.57} -->
 
 
 
@@ -876,11 +876,11 @@ Notes:
 * Squaring residuals
  - To make them all positive (so negative and positive </br>don't cancel each other out)
  - To amplify 'outliers' (large deviations)
- 
+
 * Goal is to minimize SSE
 
 * **Question for the class**:  
-  Can SSE be zero? :-) 
+  Can SSE be zero? :-)
 
 
 <img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="max-width:45%;"/>
@@ -1048,7 +1048,7 @@ Notes:
   = 0.75  or 75%
 
   * **False Positive Rate (FPR)**   
-  How often model predicts 'negative' as 'positive' (incorrectly)  -- actual negative 
+  How often model predicts 'negative' as 'positive' (incorrectly)  -- actual negative
   = FP / (FP + TN)  
   = 10 / 80  
   = 0.125 or 12.5%
@@ -1318,7 +1318,7 @@ Notes:
 
   * Say our algorithm recognizes hand-written digits (postal code) into numbers.
   * Its ROC can be drawn as follows
-  * **Question for class**: 
+  * **Question for class**:
     - Which digit the classifier is doing well?
     - Which digit the classifier is not doing well?
 
@@ -1377,7 +1377,7 @@ Notes:
   * **Variance is the amount that the estimate of the target function will change if different training data was used**
   * Ideally target function should not change drastically from one training set to next
     - meaning that the algorithm is good at picking out the hidden underlying mapping between the inputs and the output variables
-    
+
 <img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:45%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
 
 ---
@@ -1458,7 +1458,7 @@ Notes:
 
 ---
 
-# Review Questions 
+# Review Questions
 
 ---
 
