@@ -1,4 +1,4 @@
-# Intro to Deep Learning
+# Introduction to Deep Learning
 
 ---
 
@@ -48,6 +48,19 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 
 ---
 
+## Hype Cycle
+
+**Question for the class**  
+Where do you think AI is in this cycle? :-)
+
+<img src="../../assets/images/deep-learning/3rd-party/Gartner_Hype_Cycle.png" alt="XXX image missing" style="background:white; max-width:98%;" width="58%"/>
+
+Notes:
+- https://en.wikipedia.org/wiki/Hype_cycle
+
+---
+
+
 ## AI / Machine Learning / Deep Learning
 
 <img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="XXX image missing" style="background:white;float:right;" width="30%" /> <!-- {"left" : 3.07, "top" : 3.24, "height" : 4.11, "width" : 4.11} -->
@@ -82,17 +95,6 @@ Notes:
 
 ---
 
-## Hype Cycle
-
-**Question for the class**  
-Where do you think AI is in this cycle? :-)
-
-<img src="../../assets/images/deep-learning/3rd-party/Gartner_Hype_Cycle.png" alt="XXX image missing" style="background:white; max-width:100%;" width="60%"/>
-
-Notes:
-- https://en.wikipedia.org/wiki/Hype_cycle
-
----
 
 ## Deep Learning Applications
 
@@ -237,12 +239,12 @@ Kept NN research going during 'AI Winter'
 
 - [Yoshua Bengio](https://en.wikipedia.org/wiki/Yoshua_Bengio) - Professor @ University of Montreal
 
-- These 3 won ACM Turning Award (Nobel price of computing) in 2019
+- **These 3 won ACM Turing Award (Nobel price of computing) in 2019**
 
 
-<img src="../../assets/images/deep-learning/3rd-party/geoff7.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
-<img src="../../assets/images/deep-learning/3rd-party/yann-lecun.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="25%" />
-<img src="../../assets/images/deep-learning/3rd-party/yoshua-bengio.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="24%" />
+<img src="../../assets/images/deep-learning/3rd-party/geoff7.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
+<img src="../../assets/images/deep-learning/3rd-party/yann-lecun.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
+<img src="../../assets/images/deep-learning/3rd-party/yoshua-bengio.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="18%" />
 
 Notes:
 - https://www.deeplearningitalia.com/godfather-2/
@@ -254,259 +256,40 @@ Notes:
 ---
 ## Thawing of AI Winter (2008 + )
 
+<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style="float:right; width:30%;" />
+
 - 2012 Google created a neural network that can 'identify' cats from YouTube videos
+- Up until now, traditional machine learning algorithms are trained on labeled data.  
+    - So to train an algorithm to distinguish between cats and dogs, we need thousands of images labeled as 'cat' and thousands of images labeled as 'dog'
+    - labeling takes a lot of work, and not a lot of labeled data is available
+- They built a huge neural network with **1 Billion+** connections and trained it on **16,000 CPU cores (distributed)**
+- The network watched a lot of stills from YouTube videos and 'intuitively learned' to recognize cats
+    - no one told the network what a cat looks like, it is 'self-taught'
 
-
-Notes:
-- https://torontolife.com/tech/ai-superstars-google-facebook-apple-studied-guy/
-
-
----
-## Deep Learning Right Now
-
-* In the modern era, Deep Learning has been successful.  The following factors made it possible
-
--  **'Big Data**' - now we have so much data to train our models
-
--  **'Big Data ecosystem**' - excellent big data platforms (Hadoop, Spark, NoSQL) are available as open source
-
--  **'Big Compute**'  -  **cloud**  platforms significantly lowered the barrier to massive compute power
-    - $1 rents you a `16 core + 128 G + 10 Gigabit` machine for 1 hr on AWS! So running a 100 node cluster for 5 hrs $500
-
-- **Advances in hardware** (see next slides)
-
-- **Advances in Algorithms**
-
-- **Availability of pre-trained models**
+- References : [1](https://googleblog.blogspot.com/2012/06/using-large-scale-brain-simulations-for.html),   [2](https://www.wired.com/2012/06/google-x-neural-network/)
 
 Notes:
 
----
-
-## Hardware Advances: CPU & GPU
-
-- Recently GPUs - Graphics Processing Units - have become popular (especially in Deep Learning)
-
-- GPU cores are good at compute intensive calculations (math, matrix operations)
-
-- Each GPU core is capable of executing small set instructions, but there are 1000s of core per GPU
-Running in parallel
-
-<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="50%" />
-
-Notes:
-
----
-## Hardware Advances - CPU
-
-- Modern Intel Xeon CPUs (E5 or later) have vectorized linear algebra
-    - Properly optimized, approaches speed of GPUs
-    - And offers faster I/O performance for Big Data.
-
-- [Intel Math Kernel Library](https://software.intel.com/en-us/mkl) : highly optimized, threaded, and vectorized math functions that maximize performance on each processor family
-
-
-<img src="../../assets/images/machine-learning/3rd-party/intel-cpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%" />
-
-Notes:
-- https://software.intel.com/en-us/mkl
+- References
+    - ['Using large-scale brain simulations for machine learning and A.I.' - Google Blog](https://googleblog.blogspot.com/2012/06/using-large-scale-brain-simulations-for.html)
+    - [Google AI learns to find cat videos -- Wired magazine](https://www.wired.com/2012/06/google-x-neural-network/)
 
 ---
 
-## Hardware Advances - TPU
+# The Great AI Revival (2010 on)
 
-- A **Tensor processing unit (TPU)** is an AI accelerator application-specific integrated circuit (ASIC) developed by Google specifically for neural network machine learning
-
-- More capable the CPUs / GPUs in certain tasks
-
-- Designed / optimized  for Tensorflow
-
-- Designed for high volume computes
-    - A TPU can process 100 million photos a day
-
-- Available in Google Cloud platform
-
-Notes:
-- https://cloud.google.com/tpu/
-- https://en.wikipedia.org/wiki/Tensor_processing_unit
+[../../machine-learning/slides/AI-brief-history.md#The Great AI Revival](../../machine-learning/slides/AI-brief-history.md#The Great AI Revival)
 
 ---
 
-## Google Cloud TPU
-
-
-<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" />
-
----
-
-## Video: CPU vs. GPU
-
-<img src="../../assets/images/deep-learning/3rd-party/video-cpu-gpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/>
-
-[Link](https://www.youtube.com/watch?v=-P28LKWTzrI)
-
-From Myth Busters hosts!
-
-Notes:
-
-https://www.youtube.com/watch?v=-P28LKWTzrI
-
----
-
-## Video: Nvidia Self Driving Car
-
-<img src="../../assets/images/deep-learning/3rd-party/video-nvidia-self-driving.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/>
-
-[Link](https://www.youtube.com/watch?v=0rc4RqYLtEU)
-
-Nice video showing Deep Learning perceptions during self driving.
-
-Notes:
-
-https://www.youtube.com/watch?v=0rc4RqYLtEU
-
----
-
-## Video: Audi Autonomous Driving
-
-<img src="../../assets/images/deep-learning/3rd-party/video-audi-self-driving.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/>
-
-[Link](https://www.youtube.com/watch?v=DjAJnQoNdMA)
-
-Audi's self driving car program explained.  
-Good comparison of brain vs. CPU vs. GPU around 50 second mark.
-
-Notes:
-
-https://www.youtube.com/watch?v=DjAJnQoNdMA
-
----
-## Video: Google TPU
-
-<img src="../../assets/images/deep-learning/3rd-party/video-google-cloud-tpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="40%"/>
-
-[Link](https://www.youtube.com/watch?v=UsDhVx6cOrw)
-
-- Google CEO Sundar Pichai announces TPU @ Google I/O 2017
-    - Training vs Inference performance @ 1:30
-    - AutoML @ 4:25
-
-Notes:
-
-https://www.youtube.com/watch?v=UsDhVx6cOrw
-
----
-
-## Advances in Deep Learning Research
-
-- In recent years, lot of money is chasing Deep Learning
-
-- Companies like Google / Facebook / Amazon are in an 'arms race' to hire the best talent in AI
-
-- Lot of research going on in public / private sectors
-
-- Organizations like OpenAI are fostering research in public domain
-
----
-## Creating Deep Learning Models Have Become Easier
-
-- Historically, neural network models had to be coded from scratch
-    - Converting math into code, testing and debugging
-    - This could take weeks or months
-
-- **Now tooling and libraries have gotten so much better**
-    - High level tools like Keras and efficient libraries like Tensorflow, allow us to code complex models very quickly
-
----
-## Availability of Pre-Trained Models
-
-> "If I have seen further it is by standing on the shoulders of giants"  
->  -- Isaac Newton
-
-<img src="../../assets/images/deep-learning/3rd-party/standing-on-shoulders.jpg" alt="XXX image missing" style="background:white;float:right;max-width:100%;" width="20%" />
-
-
-- Creating complex models takes lot of data and lot of training
-    - this can take huge amount of compute power (days or weeks of training)
-
-- Now, we don't have to start from scratch
-
-- There are lot of high quality models that are open source.  We can start with them and tweak them to fit our needs
-
-- _This is probably the biggest reason DL has become mainstream_
-
-- See example on next slide
-
----
-
-## Model Zoos
-
-<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
-
-- Building and training complex models from scratch takes a lot of effort and compute
-
-- Luckily, there are lot models available publicly  
-    - Computer vision models : LeNet, AlexNet, ZFNet, GoogLeNet, VGGNet, Inception
-
-- Available model zoos
-    - [Tensorflow model zoo](https://github.com/tensorflow/models)
-    - [Caffe model zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo)
-
-
-
----
-
-
-## Building on Other Models
-
-- Say we want to develop a model that can classify people into male / female
-
-- Rather than starting from scratch, we can start with a model that can recognize peopole
-
-- And then train it more to classify them into male/female
-
-<img src="../../assets/images/deep-learning/transfer-learning-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="80%" />
-
----
 
 # Machine Learning vs. Deep Learning
 
----
+[../../machine-learning/slides/ML-vs-DL.md](../../machine-learning/slides/ML-vs-DL.md)
 
-## Structured Data vs. Unstructured Data
-
-- Machine learning is usually used with 'structured data' (CSV files etc.)
-
-- Deep learning can handle both structured (e.g. csv) and unstructured data (e.g. Image files, Video files)
-
-<img src="../../assets/images/deep-learning/3rd-party/data-structure.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="50%"/>
 
 ---
 
-## Deep Learning Models Scale With Data
-
-- DL algorithms scale better with data
-
-<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="50%"/>
-
----
-
-## Data & AI -- Historical Perspective
-
-<img src="../../assets/images/deep-learning/data-growth-1.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" />
-
----
-## Data & AI -- Historical Perspective
-
-<img src="../../assets/images/deep-learning/data-growth-2.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" />
-
----
-
-## Data & AI -- Historical Perspective
-
-<img src="../../assets/images/deep-learning/data-growth-3.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" />
-
----
 
 ## Video: How Scale is Helping Deep Learning
 
@@ -526,225 +309,9 @@ https://www.youtube.com/watch?v=LcfLo7YP8O4
 
 # Deep Learning Software Ecosystem
 
+[DL-ecosystem.md](DL-ecosystem.md)
 
 ---
-## Deep Learning Libraries
-
-- **Java**
-    - [DL4J (Deep Learning 4J)](https://deeplearning4j.org/)
-- **Python**
-    - [TensorFlow](https://www.tensorflow.org/)
-    - [Theano](http://deeplearning.net/software/theano/)
-    - [Caffe2](https://caffe2.ai/)
-    - [Keras](https://keras.io/)
-- **R**
-    - Deepnet
-    - Darch
-- **Mobile**
-    - [CoreML](https://developer.apple.com/documentation/coreml) - by Apple
-    - [Tensorflow Lite](https://www.tensorflow.org/lite) - by Google
-
-
-<img src="../../assets/images/logos/dl4j-logo.png" alt="XXX image missing" style="background:white;" width="20%"/>
-<img src="../../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"  width="20%"/>
-<img src="../../assets/images/logos/Caffe2-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
-<img src="../../assets/images/logos/tensorflow-logo.png" alt="XXX image missing" style="background:white;" width="20%" />
-
----
-
-## Deep Learning Libraries
-
-|     Library    |          API         |              Platforms              |               Started by              | Year |
-|:--------------:|:--------------------:|:-----------------------------------:|:-------------------------------------:|:----:|
-| Caffe          | Python, C++, Matlab  | Linux, macOS, Windows               | Y.Jia, UC Berkeley(BVLC)              | 2013 |
-| Deeplearning4j | Java, Scala, Clojure | Linux, macOS, Windows, Android      | A. Gibson, J.Patterson                | 2014 |
-| H2O            | Python, R            | Linux, macOS, Windows               | H2O.ai                                | 2014 |
-| MXNet          | Python, C++, others  | Linux, macOS, Windows, iOS, Android | DMLC                                  | 2015 |
-| TensorFlow     | Python, C++          | Linux, macOS, Windows, iOS, Android | Google                                | 2015 |
-| Theano         | Python               | Linux, macOS, iOS                   | University of Montreal                | 2010 |
-| Torch          | C++, Lua             | Linux, macOS, iOS, Android          | R.Collobert, K.Kavukcuoglu, C.Farabet | 2002 |
-
-
-
-
-
----
-## Deep Learning and Big Data
-
- * Until recently most of the machine learning is done on "single computer" (with lots of memory-100s of GBs)
-
- * Most R/Python/Java libraries are "single node based"
-
- * Now Big Data tools make it possible to run machine learning algorithms at massive scale-distributed across a cluster
-
-<img src="../../assets/images/deep-learning/DL-cluster.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" /> <!-- {"left" : 7.46, "top" : 0.99, "height" : 1.83, "width" : 2.03} -->
-
-Notes:
-
----
-## Deep Learning Software Ecosystem (Distributed)
-
-- **Distributed**
-    - Tensorflow
-    - Spark
-    - BigDL
-- **Cloud Based**
-    - [Amazon Machine Learning](https://aws.amazon.com/machine-learning/)
-    - [Azure Machine Learning (Microsoft)](https://azure.microsoft.com/en-us/services/machine-learning-service/)
-    - [Google Cloud AI](https://cloud.google.com/products/ai/)
-
-
-
-
-Notes:
-- http://www.kdnuggets.com/2016/04/top-15-frameworks-machine-learning-experts.html
-- http://www.infoworld.com/article/2853707/machine-learning/11-open-source-tools-machine-learning.html
-
-
----
-## Tools for Deep Learning - Tensorflow
-
- - [Tensorflow](https://www.tensorflow.org/) is an open source DL framework by Google
-
- - Became very popular in a very short period of time
-
- - Based on "data flow graphs"
-
- - Language support: Python, C++
-
- - Supports both CPU and GPU runtimes
-
- <img src="../../assets/images/logos/tensorflow-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%" />
-
-
-
-Notes:
-
-
----
-## Tools for Scalable Deep Learning - Spark
-
-- Spark is very popular BigData processing platform (distributed compute engine)
-
-- Massively scalable (100s of TBs to PB of data)
-
-- Can cache data in memory for very fast iterations
-
-- Spark ML now supports Tensorflow and Keras as backends
-
-- Language support: Scala, Java, Python, R
-
-<img src="../../assets/images/logos/spark-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
-<img src="../../assets/images/logos/spark-mllib-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
-
----
-
-## Tools for Scalable Deep Learning - BigDL
-
-- BigDL is a scalable Deep Learning framework developed and open sourced by Intel
-
-- Built on Spark, so is very scalable
-
-- Can import models built with other frameworks (Torch, Caffe, TensorFlow)
-
-- Uses [Intel MKL Libraries](https://software.intel.com/en-us/intel-mkl) for  high performance
-
-- https://bigdl-project.github.io
-
-<img src="../../assets/images/logos/bigdl-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
-<img src="../../assets/images/logos/intel-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
-
-
-
----
-## Tools for Scalable Deep Learning - Cloud
-
-- Popular Cloud platforms now offer 'Machine Learning as Service'
-
-- Can provide huge scale
-
-- Pay for use billing
-
-- Offerings
-    - Amazon Machine Learning
-    - Azure ML Studio
-    - Google Cloud ML
-
-
-<img src="../../assets/images/logos/aws-logo.jpg" alt="aws logo" style="background:white; max-width:100%;"  width="20%"/>
-<img src="../../assets/images/logos/google-cloud-logo.jpg" alt=" google cloud logo" style="background:white; max-width:100%;" width="20%" />
-<img src="../../assets/images/logos/azure-cloud-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%" />
-
-Notes:
-
----
-
-## Image Recognition API Services
-
-- [Clarifai](https://www.clarifai.com/) : winner of the 2013 ImageNet Large Scale Visual Recognition Challenge (ILSVRC) classification
-
-- [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) : Microsoft won seven tasks at the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2015 with ResNet-152 (a 152 layer network)
-
-- [Google Cloud Vision](https://cloud.google.com/vision/) - Google won 2014 ImageNet Large Scale Visual Recognition Challenge (ILSVRC) with GoogLeNet (22 layers)
-
-- [Amazon Rekognition](https://aws.amazon.com/rekognition/)
-
-- [IBM Watson Visual Recognition](https://www.ibm.com/watson/services/visual-recognition/)
-
-
-<img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
-<img src="../../assets/images/logos/microsoft-cognitive-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
-<img src="../../assets/images/logos/google-cloud-vision-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
-<img src="../../assets/images/logos/amazon-rekognition-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="12%" />
-<img src="../../assets/images/logos/ibm-watson-visual-recognition-logo-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="12%" />
-
----
-## Deep Learning in Mobile
-
-- Why do DL on mobile?
-- **Privacy** : so no data leaves the device.  This is important with PII (Personaly Identifiable Information) and Europe's GDPR (General Data Protection Regulation)
-- **Reducing Cloud Cost** : By doing DL on the device and minimizing sending data to cloud, we can save time and money
-- **Speed** : Sending data to cloud and getting an answer back can take several seconds
-    - 10 seconds : user's keep their focus on a screen
-    - 1 second : to keep workflow going
-    - 0.1 second : users perceive system is working 'instantaneously'
-
-<img src="../../assets/images/deep-learning/face-id-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
-
-
----
-
-## Deep Learning Mobile Libraries
-
-- [CoreML](https://developer.apple.com/documentation/coreml) - by Apple
-    - only supported on IOS (Apple) devices
-    - supports models from  Keras, Caffe, XGBoost, Scikit-learn
-
-- [Tensorflow Lite](https://www.tensorflow.org/lite) by Google
-    - works on IOS and Android
-
-- [MobileNets](https://arxiv.org/abs/1704.04861) - Optimized Convolutional Neural Networks for Mobile Vision Applications
-
-<img src="../../assets/images/logos/core-ml-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
-<img src="../../assets/images/logos/tensorflow-lite-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
-
-Notes:  
-- https://developer.apple.com/documentation/coreml
-- https://www.tensorflow.org/lite
-
----
-
-## Model Benchmarks
-
-<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_accuracy-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />
-
-<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_latency-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />
-
-Notes:  
-Source : https://www.tensorflow.org/lite/performance/best_practices
-
----
-
 
 # Use Cases and Demos
 
@@ -764,9 +331,9 @@ Source : https://www.tensorflow.org/lite/performance/best_practices
 
 - [Link](https://venturebeat.com/wp-content/uploads/2016/09/uberids.gif?resize=343%2C600&strip=all)
 
-<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
 <img src="../../assets/images/deep-learning/3rd-party/uber-rides-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
-<img src="../../assets/images/deep-learning/3rd-party/uber-rides-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
+<img src="../../assets/images/deep-learning/3rd-party/uber-rides-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
 
 
 
@@ -853,7 +420,7 @@ http://scs.ryerson.ca/~aharley/vis/conv/flat.html
 - Examine the output.  
 Have fun :-)
 
-<img src="../../assets/images/deep-learning/3rd-party/clarifai-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%" />
+<img src="../../assets/images/deep-learning/3rd-party/clarifai-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
 
 Notes:  
 https://clarifai.com/demo
