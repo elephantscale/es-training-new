@@ -1,6 +1,3 @@
-# Algorithm Summary
----
-
 ## Algorithm Summary
 
 | Category            | Sub Category             | Example                                                                                  | Algorithms                                                                               |

@@ -2,6 +2,8 @@
 
 ---
 
+## Algorithms Summary
+
 [Algorithm-Summary.md](Algorithm-Summary.md)
 
 ---
@@ -431,7 +433,7 @@ Notes:
 
 ## Algorithm Summary
 
-[algorithm-summary](Algorithm-Summary.md)
+[Algorithm-Summary.md](Algorithm-Summary.md)
 
 ---
 

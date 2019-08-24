@@ -14,8 +14,8 @@ by  Aurélien Géron (ISBN: 9781492037347)
 * [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)  
 by  Aurélien Géron (ISBN: 9781492032649)
 
-<img src="../../assets/images/deep-learning/3rd-party/book-9781492037347.jpeg" alt="keras book1" style="width:17%;"/>
-<img src="../../assets/images/deep-learning/3rd-party/book-9781492034841.jpg" alt="keras book4" style="width:20%;"/>
+<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%;"/>
+<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/>
 
 ---
 
@@ -29,8 +29,8 @@ by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
 
 
 
-<img src="../../assets/images/deep-learning/3rd-party/book-9781491914250.jpeg" alt="keras book1" style="width:20%;"/>
-<img src="../../assets/images/deep-learning/3rd-party/book-9781492034841.jpg" alt="keras book4" style="width:20%;"/>
+<img src="../../assets/images/books/book-9781491914250-deep-learning.jpeg" alt="keras book1" style="width:20%;"/>
+<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/>
 
 ---
 ## Video: Why is Machine Learning Important
@@ -282,7 +282,11 @@ Notes:
 
 ---
 
+# AI Vocabulary
 
+[../../machine-learning/slides/AI-vocabulary.md](../../machine-learning/slides/AI-vocabulary.md)
+
+---
 # Machine Learning vs. Deep Learning
 
 [../../machine-learning/slides/ML-vs-DL.md](../../machine-learning/slides/ML-vs-DL.md)

@@ -65,6 +65,7 @@ Notes:
 ## TensorFlow Features
 
 - Runs on all platforms (Windows, Mac, Linux) and mobile devices
+- Can run in-browser (tensorflow.js)
 
 - Core is written in C++ ; very efficient implementation
     - wrappers in Python for ease of use
@@ -90,8 +91,8 @@ Notes:
 | 1.0     | 2017-01      | First Stable Release        |
 | 1.1     | 2017-07      | Installable with Pip/conda  |
 | 1.12    | 2018-12      |                             |
-| 1.13    | 2019-02      | Current Release             |
-| 2.0     | 2019-??      | Future release              |
+| 1.14    | 2019-02      | Stable  Release             |
+| 2.0RC   | 2019-08      | RC Release                  |
 
 <!-- {"left" : 0.61, "top" : 1.55, "height" : 3, "width" : 9.03, "columnwidth" : [2.01, 3.03, 3.98]} -->
 
@@ -102,57 +103,87 @@ Notes:
 ---
 
 
-## TensorFlow versus NumPy
+## Tensorflow 2
 
+ * Tensorflow is in a *big* shift to Tensorflow 2
 
- * TensorFlow is comparable to NumPy. (Really??)
-
-     - Both define highly optimized processing of n-dimensional arrays.
-
-     - Both do most of their work outside of Python in optimized C++
-
- * But there are key differences
-
-     - NumPy  **immediately**  processes the operation
-
-     - TensorFlow builds a Directed Acyclic Graph of operations and executes it
-
-Notes:
-
+<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> &nbsp;  &nbsp;
 
 
 ---
 
 ## Using GPUs
 
-
  * One of TensorFlow's most exciting features is using GPUs for compute capacity
-
      - ML is mainly linear algebra (matrix manipulation)
-
      - GPUs specialize in fast linear algebra.
-
      - GPUs + ML = match made in heaven.
 
  * Machines running with GPUs have been shown up to 10x faster.
 
  * TensorFlow will consume GPU + all its memory
-
      - So, you can't use the GPU for graphics at the same time
-
-     - No problem; servers don't use graphics anyway!!
-
- * You have to use TensorFlow builds matched to your GPU
-
-     - Nvidia CUDA
-
-     - Installation is a bit complicated. So on dev boxes we skip it
+     - Servers don't use graphics anyway
+     - Workstations should have two nvidia cards.
 
 Notes:
 
 
+---
+
+## GPU Support
+
+ * Nvidia GPUs are best supported
+   - use CUDA library
+   - very easy to get set up: install tensorflow-gpu
+   - Datacenters: *Must* use **Tesla** GPU line per Nvidia TOS
+   - Workstations: Recommend **Quadro** 
+   - Home/PC: GeForce (Gaming) GPUs work well
+ * Tensorflow 2.0 also supports AMD using OpenCL
+   - Support a bit new
+   - Not as fast as Nvidia but hardware is more affordable.
+   - Apple/Mac also uses AMD!
+ * Intel GPUs not currently supported.
 
 ---
+
+
+## TPU Support
+ * TPU is Google's custom ASIC for Tensor Processing Unit
+ * TPUs are have two very distict use cases:
+   - Training
+   - Interence (aka Edge TPU)
+ * Training TPUs only available in Google Cloud Platform for now
+   - *Free* evaluation with Google Colaboratory
+ * Edge TPUs
+   - Google Sells physical devices
+
+
+--- 
+
+
+## Google Colaboratory
+
+ * 
+
+## Cloud Cost
+
+* Cost on Google Cloud Platform: (Hourly)
+
+| Device | Type | Gen    | Year | Memory | Cost  |
+|--------|------|--------|------|--------|-------|
+| T4     | GPU  | Turing | 2018 | 16GB   | $0.95 |
+| P4     | GPU  | Pascal | 2016 | 16GB   | $0.60 |
+| K4     | GPU  | Kepler | 2014 | 16GB   | $0.45 |
+| TPUv3  | TPU  | 3rd    | 2019 | 64GB   | $8.00 |
+| TPUv2  | TPU  | 2nd    | 2017 | 64GB   | $4.50 |
+
+---
+
+
+
+
+
 
 ## Parallel TensorFlow
 
@@ -208,11 +239,13 @@ Notes:
 
      - Arguably, better to run TF on Spark than on Hadoop.
 
- * Yahoo: TensorFlow on Spark (TFoS)
-
+ * Yahoo / Databricks: TensorFlow on Spark (TFoS)
      - Framework for distributing TensorFlow apps on Spark / Hadoop
+     - Used by DataBricks in Spark Distribution
 
-     - Immature
+ * Intel: Analytics Zoo
+    - Allows users to do distributed tensorflow/keras/pytorch on Spark
+    - Does not support GPU acceleration
 
 Notes:
 
@@ -252,6 +285,8 @@ Notes:
 
 
  * TensorFlow can also be used for traditional Machine Learning
+   - `tf.estimator` API often used for this
+   - Alternative to scikit-learn
 
  * Traditional Machine Learning Algorithms:
 
@@ -266,6 +301,8 @@ Notes:
  * Other libraries are more extensive in terms of features
 
 Notes:
+
+---
 
 # High Level TensorFlow
 
@@ -311,14 +348,11 @@ Notes:
 
 
  * Packaged With TensorFlow core as of 1.0
-
      - Formerly named scikit-train, then `tf.contrib.learn`
-
  * Designed to be familiar to scikit-learn users
-
      - one-line models.
-
  * Used together with TensorFlow Datasets API
+ * Mainly used for general-purpose ML rather than Deep-Learning
 
 Notes:
 
@@ -328,16 +362,14 @@ Notes:
 
 ## Keras
 
-
- * Mature library that pre-dates TensorFlow
-
- * Allows for tensorflow-independent code
-
-     - Might want to use another underlying library?
-
- * Ensures stability within fast-paced TensorFlow release cycle
-
- * TensorFlow now includes bindings for Keras in `tf.keras` namespace
+ * Tensorflow 2.0 **encourages** use of the `tf.keras` API
+ * Keras is an API that pre-dates tensorflow
+   - The `keras.io` project is a API that can use `tensorflow`, `CNTK`, or `Theano`
+   - Able to write code that is tensorflow independent.
+ * Tensorflow has its own re-implementation of the Keras API:
+   - `tf.keras`
+   - Better optimized for Tensorflow than `keras.io`
+ * Tensorflow has said that the `tf.keras` API is **the** API going forward.
 
 Notes:
 
@@ -400,6 +432,7 @@ Notes:
 
 ```bash
 $ (sudo) pip install tensorflow keras
+$ (sudo) pip install tensorflow-gpu keras  # For GPU
 ```
 <!-- {"left" : 0, "top" : 2.93, "height" : 0.65, "width" : 8.27} -->
 
@@ -407,6 +440,7 @@ $ (sudo) pip install tensorflow keras
 
 ```bash
 $ conda install tensorflow keras
+$ conda install tensorflow-gpu keras  # For GPU
 ```
 <!-- {"left" : 0, "top" : 4.74, "height" : 0.73, "width" : 8.27} -->
 
@@ -416,6 +450,20 @@ $ conda install tensorflow keras
 Notes:
 
 
+---
+
+## Installing version 2.0 RC
+
+ * Currently version 2.0 is in Release Candidate status, but can still be installed
+ * Will *not* be installed unless we specify the version specifcally 
+
+```bash
+$ (sudo) pip install tensorflow==2.0.0-rc0 keras
+$ (sudo) pip install tensorflow-gpu==2.0.0-rc0 keras  #GPU version
+```
+
+ * Conda install does not support TF 2.0 (and will not until release is official)
+   - Just use `pip`.
 
 ---
 

@@ -23,8 +23,8 @@ by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
 
 
 
-<img src="../../assets/images/deep-learning/3rd-party/book-9781492032649.jpg" alt="keras book1" style="width:20%;"/>
-<img src="../../assets/images/deep-learning/3rd-party/book-9781492034841.jpg" alt="keras book4" style="width:20%;"/>
+<img src="../../assets/images/books/book-9781492032649-hands-on-machine-learning-with-scikit-learn.jpg" alt="keras book1" style="width:20%;"/>
+<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/>
 
 ---
 
@@ -36,8 +36,8 @@ by Manpreet Singh Ghotra, Rajdeep Dua (ISBN: 9781788621755)
 * [Learn Keras for Deep Neural Networks: A Fast-Track Approach to Modern Deep Learning with Python](https://learning.oreilly.com/library/view/learn-keras-for/9781484242407/) by Jojo Moolayil (ISBN : 9781484242407)  
 very good book that explains concepts pretty well
 
-<img src="../../assets/images/deep-learning/3rd-party/book-9781788621755.jpg" alt="keras book3" style="width:19%;"/>
-<img src="../../assets/images/deep-learning/3rd-party/book-9781484242407.jpg" alt="keras book3" style="width:15%;"/>
+<img src="../../assets/images/books/book-9781788621755-keras-deep-learning.jpg" alt="keras book3" style="width:19%;"/>
+<img src="../../assets/images/books/book-9781484242407-learn-keras-for-deep-neural-networks.jpg" alt="keras book3" style="width:15%;"/>
 ---
 ## Resources
 
@@ -46,7 +46,7 @@ by Sujit Pal, Antonio Gulli (ISBN: 9781787128422)
 
 * [Safari books online, Keras books](https://learning.oreilly.com/topics/keras)
 
-<img src="../../assets/images/deep-learning/3rd-party/book-9781787128422.jpg" alt="keras book2" style="maxwidth=100%;"/>
+<img src="../../assets/images/books/book-9781484242407-learn-keras-for-deep-neural-networks.jpg" alt="keras book2" style="maxwidth=100%;"/>
 ---
 
 ## Keras

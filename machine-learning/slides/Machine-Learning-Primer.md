@@ -236,8 +236,6 @@ Notes:
 [ML-vs-DL.md](ML-vs-DL.md)
 
 
----
-
 
 ---
 
@@ -359,7 +357,7 @@ Notes:
 
 ---
 
-## Machine Learning Algorithms
+# Machine Learning Algorithms
 
 [ML-Algorithms.md](ML-Algorithms.md)
 

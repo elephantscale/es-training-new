@@ -143,5 +143,3 @@ Notes:
 ## Algorithm and Model
 
   <img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model1" style="width:79%;"/>
-
----
