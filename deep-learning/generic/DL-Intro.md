@@ -242,9 +242,9 @@ Kept NN research going during 'AI Winter'
 - **These 3 won ACM Turing Award (Nobel price of computing) in 2019**
 
 
-<img src="../../assets/images/deep-learning/3rd-party/geoff7.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
-<img src="../../assets/images/deep-learning/3rd-party/yann-lecun.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
-<img src="../../assets/images/deep-learning/3rd-party/yoshua-bengio.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="18%" />
+<img src="../../assets/images/people/geoffrey-hinton-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
+<img src="../../assets/images/people/yann-lecun-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
+<img src="../../assets/images/people/yoshua-bengio-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="18%" />
 
 Notes:
 - https://www.deeplearningitalia.com/godfather-2/
