@@ -543,7 +543,7 @@ Notes:
 
 ## Lambda Architecture
 
-<img src="../../assets/images/streaming/Picture3.png" alt="Picture3.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Lambda-Architecture.png" alt="Lambda-Architecture.png" style="width:65%;"/>
 
 
 Notes: 
