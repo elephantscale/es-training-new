@@ -222,7 +222,7 @@ Predicts 84% chance of getting the loan approved.
 So this mapped to YES
 
 ```
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Applying-Logistic-Regression-To-Credit-Card-Application--0.png" style="max-width:40%;"/><!-- {"left" : 2.49, "top" : 3.13, "height" : 3.47, "width" : 5.26} -->
+<img src="../../assets/images/machine-learning/Session-Regressions-Applying-Logistic-Regression-To-Credit-Card-Application--0.png" style="max-width:40%;"/><!-- {"left" : 2.49, "top" : 3.13, "height" : 3.47, "width" : 5.26} -->
 
 
 Notes:
@@ -757,7 +757,7 @@ Notes:
 
 ---
 
-## SVM : Strengths, Weaknesses, and Parameters
+## SVM: Strengths, Weaknesses, and Parameters
 
 * **Strengths**
     - Linear SVM can learn fast on linearly separable data
@@ -775,7 +775,7 @@ Notes:
 
 ---
 
-## SVM : Strengths, Weaknesses, and Parameters
+## SVM: Strengths, Weaknesses, and Parameters
 
 * **Parameters**
     - Slack variable (C)
@@ -877,7 +877,7 @@ Notes:
 
 * **Question for class**:
 
-Are the input variables (weather / car) independent?
+    - Are the input variables (weather / car) independent?
 
 
 Notes:
@@ -913,7 +913,7 @@ Notes:
 
 * Let's convert this to numbers
 
-* Weather : Sunny=1,  rainy=0
+* Weather: Sunny=1,  rainy=0
 
 * Car: working=1,  broken=0
 

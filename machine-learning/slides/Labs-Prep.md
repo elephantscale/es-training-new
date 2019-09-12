@@ -85,15 +85,15 @@ Notes:
 <img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" />
 
 
- *  **Overview**: 
+ *  **Overview:** 
  
      - Setting up the environment
 
- *  **Approximate time**:
+ *  **Approximate time:**
  
      - 10 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
   
      - Follow  ' **setup.html** '  file in the lab bundle
 
@@ -108,15 +108,15 @@ Notes:
 
 <img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" />
 
- *  **Overview**: 
+ *  **Overview:**
  
      - Testing the environment
 
- *  **Approximate time**: 
+ *  **Approximate time:**
  
      - 5 mins
 
- *  **Instructions**:
+ *  **Instructions:**
 
      - Testing123
 

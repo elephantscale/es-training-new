@@ -166,7 +166,7 @@ Notes:
 
     When most elements have no value
 
-<img src="../../assets/images/machine-learning/ml-vectors-1.png" style="max-width:40%;"/><!-- {"left" : 2.27, "top" : 3.64, "height" : 3.21, "width" : 5.72} -->
+<img src="../../assets/images/machine-learning/ml-vectors-1.png" style="max-width:35%;"/><!-- {"left" : 2.27, "top" : 3.64, "height" : 3.21, "width" : 5.72} -->
 
 
 

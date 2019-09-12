@@ -188,7 +188,7 @@ Notes:
 
 ---
 
-## Naïve Bayes Example : College Admission
+## Naïve Bayes Example: College Admission
 
 
  * To Instructor <br/>

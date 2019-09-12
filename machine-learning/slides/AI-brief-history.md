@@ -8,9 +8,9 @@
 
  * Initial AI thinking was TOP DOWN (or symbolic logic)
 
- * Write a  **big, comprehensive**  program
+ * Write a **big, comprehensive** program
 
-     - Program  **all the rules**  (expert systems)
+     - Program **all the rules** (expert systems)
 
  * Problem:
 
@@ -119,11 +119,13 @@ Notes:
 
  * Then tested on 15,000 test images
 
- * Winning algorithm correctly classified 98.9% time !
+ * Winning algorithm correctly classified 98.9% time!
 
  * [https://www.kaggle.com/c/dogs-vs-cats](https://www.kaggle.com/c/dogs-vs-cats )
 
-<img src="../../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" style="width:40%;">
+&nbsp;
+
+<img src="../../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" style="width:50%;">
 
 
 
@@ -150,7 +152,7 @@ Notes:
 
 Notes:
 
-----
+---
 # The Great AI Revival
 ---
 
@@ -200,11 +202,11 @@ Notes:
 
 ## Hardware Advances - CPU
 
-- Modern Intel Xeon CPUs (E5 or later) have vectorized linear algebra
-    - Properly optimized, approaches speed of GPUs
-    - And offers faster I/O performance for Big Data.
+ * Modern Intel Xeon CPUs (E5 or later) have vectorized linear algebra
+     - Properly optimized, approaches speed of GPUs
+     - And offers faster I/O performance for Big Data.
 
-- [Intel Math Kernel Library](https://software.intel.com/en-us/mkl) : highly optimized, threaded, and vectorized math functions that maximize performance on each processor family
+ * [Intel Math Kernel Library](https://software.intel.com/en-us/mkl): highly optimized, threaded, and vectorized math functions that maximize performance on each processor family
 
 
 <img src="../../assets/images/machine-learning/3rd-party/intel-cpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%" />

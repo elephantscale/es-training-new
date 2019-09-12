@@ -897,10 +897,9 @@ Notes:
  * How ever  **'rank** ' can only be 1,2,3,4
 
      - Can not be 1.5 (does not behave like a number)
-
      - So we need to turn it into a  **'factor** ' , so GLM treats it properly
 
-<img src="../../assets/images/machine-learning/3rd-party/picture1.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3.49, "height" : 3.42, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/picture1.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 3.49, "height" : 3.42, "width" : 8.21} -->
 
 
 
