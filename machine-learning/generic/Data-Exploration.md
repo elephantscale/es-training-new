@@ -74,10 +74,6 @@ Notes:
 | Mean          | Sum (values) / total number of samples          |
 | Weighted Mean | Sum(values * weights) / total number of samples |
 
-&nbsp;
-&nbsp;
-
-
 * [30k, 35k, 22k, 70k, 50k, 55k, 45k, 40k, 25k, 42k, 60k, 65k]
 *  **Average / Mean** = Total sum of all salaries /  (number of salaries )  
  = (30k +  35k +  22k + 70k + 50k +  55k +  45k +  40k + 25k + 42k + 60k + 65k)  /  12  
@@ -297,7 +293,7 @@ Notes:
 ## Variance  -  S<sup>2</sup> , σ<sup>2</sup>,  var(x)
 
 * Measures how far apart the data is spread out from their mean
-* Symbols: **S<sup>2</sup>** , **σ<sup>2</sup>**,  **var(x)**
+* Symbols : **S<sup>2</sup>** , **σ<sup>2</sup>**,  **var(x)**
 * Method:
     - Find differences from Xi and mean (μ)
     - Square it
@@ -315,7 +311,7 @@ Notes:
 * Formula credit : wikipedia (creative commons): https://en.wikipedia.org/wiki/Variance
 
 ---
-## Standard Deviation (SD): σ  (sigma)
+## Standard Deviation (SD) : σ  (sigma)
 
 * SD is the most used measure of dispersion
 * Measures how closely data values are clustered around mean
@@ -335,12 +331,7 @@ Notes:
 
 ## Variability  / Dispersion
 
-&nbsp;
-&nbsp;
-
-&nbsp;
-
-<img src="../../assets/images/machine-learning/standard-deviation-2.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/standard-deviation-2.png" style="max-width:80%;"/>
 
 ---
 

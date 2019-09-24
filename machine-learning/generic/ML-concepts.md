@@ -5,8 +5,6 @@
 # Machine Learning Terminology
 ---
 
-
-
 ## Algorithm vs. Model
 
   * Often Algorithm and Model are used interchangeably
@@ -28,7 +26,7 @@ Notes:
 
 ## Algorithm and Model
 
-  <img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="max-width:80%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="max-width:80%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
 
 
 
@@ -45,7 +43,7 @@ Notes:
 
   * Input goes in, model produces an output
 
- <img src="../../assets/images/machine-learning/Model.png" alt="Model" style="width:70%;"/><!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
+<img src="../../assets/images/machine-learning/Model.png" alt="Model" style="width:70%;"/><!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
 
 
 
@@ -60,27 +58,30 @@ Notes:
 
 ## Machine Learning Process
 
-<img src="../../assets/images/machine-learning/ML-Process.png"  style="max-width:90%;"/>
+<img src="../../assets/images/machine-learning/ML-Process.png"  style="max-width:90%;"/><!-- {"left" : 1.02, "top" : 1.92, "height" : 4.13, "width" : 8.21} -->
+
+
 
 ---
 
 ## Machine Learning Process
 
-- Step 1: Get Data
+ * Step 1: Get Data
 
-- Step 2: Explore Data and build model
+ * Step 2: Explore Data and build model
 
-- Step 3: Evaluate model
+ * Step 3: Evaluate model
 
-- Step 4: Optimize model
+ * Step 4: Optimize model
 
-- Step 5: Deploy and monitor
+ * Step 5: Deploy and monitor
 
 ---
 
 ## Machine Learning Process: Step 1: Data Exploration
 
-<img src="../../assets/images/machine-learning/ML-Process-02.png" style="max-width:90%;"/>
+<img src="../../assets/images/machine-learning/ML-Process-02.png" style="max-width:90%;"/><!-- {"left" : 0.53, "top" : 1.68, "height" : 4.62, "width" : 9.19} -->
+
 
 ---
 # Feature Engineering
@@ -88,10 +89,10 @@ Notes:
 
 ## Feature Engineering
 
-  * **Feature Engineering:**
+ * **Feature Engineering:**
     - *"Using transformations of raw input data to create new features to be used in ML model"*
 
-  * Feature Engineering examples
+ * Feature Engineering examples
     - Join two database tables to have all data in one place
     - Convert to same units of measurements  (imperial to metric)
     - Enriching data by combining with other data sources e.g. combining house sales prices with census data
@@ -103,11 +104,11 @@ Notes:
 
 ## Features / Output
 
-* Features are inputs to the algorithm
+ * Features are inputs to the algorithm
 
-* Output is what are trying to predict
+ * Output is what are trying to predict
 
-* The following is an example of predicting house prices from various inputs / features
+ * The following is an example of predicting house prices from various inputs / features
 
 | Bedrooms <br/>(input 1) | Bathrooms <br/>(input 2) | Size sqft <br/>(input 3) | Sale Price (in thousands) <br/>(we are trying to predict) |
 |--------------------|---------------------|----------------|------------------------------------------------------|
@@ -122,7 +123,7 @@ Notes:
 
 ## Class Quiz: Feature Selection
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 6.95, "top" : 0.93, "height" : 2.12, "width" : 3.18} -->
 
   * Assume we are evaluating a credit card application
   * **Q: What features we might consider?**
@@ -133,7 +134,7 @@ Notes:
 |-------------|------|---------|---------------------|-----|--------|----------------|-------------|
 | 1           | Joe  | 11111   | Yes                 | 24  | 45,000 | Single         | No          |
 | 2           | Jane | 22222   | No                  | 34  | 84,000 | Married        | Yes         |
-<!-- {"left" : 0.25, "top" : 3.63, "height" : 1.69, "width" : 9.75} -->
+<!-- {"left" : 0.25, "top" : 4.72, "height" : 2.11, "width" : 9.75, "columnwidth" : [1.22, 1.22, 1.22, 1.22, 1.22, 1.22, 1.22, 1.22]} -->
 
 
 Notes:
@@ -142,19 +143,19 @@ Notes:
 
 ## Feature Extraction
 
-  * Here is a sample data for credit card applications
-  * Our algorithm only uses selected input (features) to determine credit worthiness
-  * Here 'name' and 'zipcode' aren't considered
+ * Here is a sample data for credit card applications
+ * Our algorithm only uses selected input (features) to determine credit worthiness
+ * Here 'name' and 'zipcode' aren't considered
 
 
   | Customer_id | Name | Zipcode | Have Direct Deposit | Age | Income | Marital Status | Owns a Home |
   |-------------|------|---------|---------------------|-----|--------|----------------|-------------|
   | 1           | Joe  | 11111   | Yes                 | 24  | 45,000 | Single         | No          |
   | 2           | Jane | 22222   | No                  | 34  | 84,000 | Married        | Yes         |
-<!-- {"left" : 0.26, "top" : 0.86, "height" : 1.7, "width" : 9.75, "columnwidth" : [1.39, 1.39, 1.39, 1.39, 1.39, 1.39, 1.39]} -->
+<!-- {"left" : 0.26, "top" : 2.79, "height" : 2.39, "width" : 9.74, "columnwidth" : [1.32, 0.94, 1.29, 1.5, 0.75, 1.08, 1.29, 1.57]} -->
 
 
-<img src="../../assets/images/machine-learning/Feature-Extraction.png" alt="Feature-Extraction" style="width:30%;"/> <!-- {"left" : 1.83, "top" : 2.67, "height" : 0.79, "width" : 3.49} -->
+<img src="../../assets/images/machine-learning/Feature-Extraction.png" alt="Feature-Extraction" style="width:30%;"/> <!-- {"left" : 4.14, "top" : 5.32, "height" : 0.45, "width" : 1.97} -->
 
 
 |             |      |         | Age | Income | Marital Status | Owns a Home |
@@ -162,7 +163,7 @@ Notes:
 |             |      |         | 24  | 45,000 | Single         | No          |
 |             |      |         | 34  | 84,000 | Married        | Yes         |
 
-<!-- {"left" : 0.26, "top" : 3.54, "height" : 1.7, "width" : 9.75, "columnwidth" : [1.39, 1.39, 1.39, 1.39, 1.39, 1.39, 1.39]} -->
+<!-- {"left" : 1.02, "top" : 5.87, "height" : 1.51, "width" : 8.2, "columnwidth" : [0.5, 0.5, 0.5, 1.09, 1.82, 1.82, 1.82]} -->
 
 
 
@@ -170,33 +171,30 @@ Notes:
 Notes:
 
 ---
-
-
 
 ## FE: Incorporating Domain Knowledge
 
-* In the previous example how did we figure out the features to consider?
+ * In the previous example how did we figure out the features to consider?
    - probably 'common sense' :-)
 
-* In practice we use our **domain knowledge** to identify important features
+ * In practice we use our **domain knowledge** to identify important features
 
 Notes:
 
 ---
 
-
 ## Categorical Variables
 
-  * Some of the variables have string content
-  * Example: Marital Status / Owns a Home
-  * Feature vectors must be numeric.
-  * We have to convert the variable to a numeric value.
-  * Example:  
+ * Some of the variables have string content
+ * Example: Marital Status / Owns a Home
+ * Feature vectors must be numeric.
+ * We have to convert the variable to a numeric value.
+ * Example:  
   `Owns A Home -> 0 = No, 1 = Yes`
-  * Categorical Variables are essentially structured data, despite being strings.
-  * Unstructured data would include things like: documents, emails, tweets
+ * Categorical Variables are essentially structured data, despite being strings.
+ * Unstructured data would include things like: documents, emails, tweets
 
-<img src="../../assets/images/machine-learning/Categorical-Variables.png" alt="Categorical-Variables" style="width:50%;"/> <!-- {"left" : 0.26, "top" : 5.16, "height" : 1.64, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/Categorical-Variables.png" alt="Categorical-Variables" style="width:60%;"/> <!-- {"left" : 0.26, "top" : 5.16, "height" : 1.64, "width" : 9.74} -->
 
 
 
@@ -208,8 +206,8 @@ Notes:
 
 ## Encoding Categorical Variables
 
-  * We have to convert our categorical variables into numbers
-  * 3 Strategies:
+ * We have to convert our categorical variables into numbers
+ * 3 Strategies:
     - Factorization / Indexing
     - One-Hot-Encoding/Dummy Variables
     - Quantization
@@ -221,14 +219,13 @@ Notes:
 
 ## Example of Factorization / Indexing
 
-  * We can convert our string variables into factors / numbers
-  * This means we assign a number to each unique value of the column
-  * Added benefits
+ * We can convert our string variables into factors / numbers
+ * This means we assign a number to each unique value of the column
+ * Added benefits
     - Numbers are more efficient to store
     - And compute!
 
-
-  <img src="../../assets/images/machine-learning/factorization-0.png" alt="factorization" style="max-width:70%"/>  
+<img src="../../assets/images/machine-learning/factorization-3.png" alt="factorization" style="max-width:70%"/>  
 
 
 Notes:
@@ -237,16 +234,16 @@ Notes:
 
 ## Potential Problems With Factorization / Indexing
 
-  * Some ML algorithms can start interpreting the numbers!
-  * In the example below, an ML algorithm can think
+ * Some ML algorithms can start interpreting the numbers!
+ * In the example below, an ML algorithm can think
     - 2 (Divorced)  >  1 (Single)  > 0 (Married)
 
-  * This can lead to surprising outcomes
-  * We can fix this by 'one-hot-encoding' method
+ * This can lead to surprising outcomes
+ * We can fix this by 'one-hot-encoding' method
 
 
 
-<img src="../../assets/images/machine-learning/factorization-0.png" alt="Factorization" style="max-width:60%;"/>
+<img src="../../assets/images/machine-learning/factorization-3.png" alt="Factorization" style="max-width:60%;"/>
 
 
 Notes:
@@ -255,18 +252,13 @@ Notes:
 
 ## Dummy Variables / One-Hot-Encoding
 
-  * Dummy variables can help us treat the different values separately
+ * Dummy variables can help us treat the different values separately
     - Without trying to infer some relationship between values.
-  * 'dummy variables' assigns  true / false to each.
+ * 'dummy variables' assigns  true / false to each.
     - Note, only one bit is on
     - This is called **ONE-HOT-Encoding**
 
-    <img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="max-width:90%;"/><!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
-
-
-
-
-
+<img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="max-width:90%;"/><!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
 
 
 Notes:
@@ -275,16 +267,16 @@ Notes:
 
 ## Quantization
 
-  * Sometimes we do want the ML model to interpret categorical variables
+ * Sometimes we do want the ML model to interpret categorical variables
     - Grades :  A > B > C > D
     - Domain specific meaning
-  * For example, colors in physics has a numeric meaning:
+ * For example, colors in physics has a numeric meaning:
     - Red: 480 THz frequency of light
     - Green: 600 THz
-  * This might allow our models to make inferences
+ * This might allow our models to make inferences
     - e.g., Orange is close to red on the spectrum, but more distant from violet.
 
-  <img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="max-width:80%;"/><!-- {"left" : 2.99, "top" : 5.04, "height" : 1.8, "width" : 4.27} -->
+<img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:50%;"/><!-- {"left" : 2.76, "top" : 5.42, "height" : 2, "width" : 4.73} -->
 
 
 
@@ -298,11 +290,11 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 
 ## FE: Generating New Dimensions
 
-  * Problem: Comparing house prices
-  * Can we say Mountain View is most expensive city?
+ * Problem: Comparing house prices
+ * Can we say Mountain View is most expensive city?
 
-  * On first table, there is no data point for 'size of the house'
-  * May be an 'apples-to-apples' comparison would be 'price per sq. foot'
+ * On first table, there is no data point for 'size of the house'
+ * May be an 'apples-to-apples' comparison would be 'price per sq. foot'
 
 
 
@@ -323,7 +315,6 @@ Notes:
 
 ---
 
-
 ## Converting Word to Vectors
 
 <img src="../../assets/images/machine-learning/word-to-vectors-1.png" alt="word-to-vectors" style="max-width:100%;"/> <!-- {"left" : 0.3, "top" : 1.07, "height" : 5.36, "width" : 9.66} -->
@@ -335,16 +326,15 @@ Notes:
 
 ---
 
-
 ## Lab : Exploratory Data Analysis (EDA)
 
-  * **Overview:**
+ * **Overview:**
     - Analyze house sales data
 
-  * **Approximate Time:**
+ * **Approximate Time:**
     - 20 - 25 mins
 
-  * **Instructions:**
+ * **Instructions:**
     - **'exploration/explore-house-sales' lab for Python / R / Spark**
 
 
@@ -352,15 +342,16 @@ Notes:
 Notes:
 
 ---
+
 ## Bonus Lab : Feature Engineering
 
-  * **Overview:**
+ * **Overview:**
     - Feature engineering exercises
 
-  * **Approximate Time:**
+ * **Approximate Time:**
     - 20 - 30 mins
 
-  * **Instructions:**
+ * **Instructions:**
     - **'feature-eng' lab for Python / R / Spark**
 
 
@@ -373,7 +364,9 @@ Notes:
 ---
 
 ## Machine Learning Process: Step 2: Developing a Model
-<img src="../../assets/images/machine-learning/ML-Process-03.png"  style="max-width:90%;"/>
+
+<img src="../../assets/images/machine-learning/ML-Process-03.png"  style="max-width:90%;"/><!-- {"left" : 0.81, "top" : 1.81, "height" : 4.35, "width" : 8.64} -->
+
 
 ---
 
@@ -392,7 +385,7 @@ Notes:
 
 ## Sample Model for Predicting MPG
 
-<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:70%;"/> <!-- {"left" : 0.02, "top" : 0.74, "height" : 6.36, "width" : 10.25} -->
+<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:70%;"/> <!-- {"left" : 0.26, "top" : 1.05, "height" : 6.03, "width" : 9.73} -->
 
 
 
@@ -402,13 +395,13 @@ Notes:
 
 ## Model Building
 
-  * Designate inputs as X
+ * Designate inputs as X
     - X<sub>1</sub>: first input  (e.g.  number of cylinders)
     - X<sub>2</sub>: second input  (e.g. weight of car)
     - X<sub>i</sub>: ith input  (e.g. horsepower)
-  * Output  / target variable is denoted as Y
+ * Output  / target variable is denoted as Y
 
-  * Our Mathematical model is
+ * Our Mathematical model is
     - `Y = f(X) + E`
       - Y: TargetX:
       - Inputs (X<sub>1</sub>, X<sub>2</sub> ..etc)
@@ -422,14 +415,14 @@ Notes:
 
 ## Using the Model
 
-  * Our Model:
+ * Our Model:
     - **MPG  = f  ( cylinders,   horse power,  weight)  + E**
 
-  * **Goal: figure out 'f' from given data**
+ * **Goal: figure out 'f' from given data**
     - Once we figure out 'f' then we can plug-in values for *cylinders , horse power and weight  and predict MPG*
     - Prediction is the most common use of ML
 
-  * **Inference**
+ * **Inference**
     - Which of the 3 attributes (cylinders / horse power / weight) influences MPG more?
     - Figuring this out might give us insight into better products.  
      *'what is the best way to get best MPG?'*
@@ -440,12 +433,12 @@ Notes:
 
 ## Modeling Techniques (Little Math!)
 
-  * ML model has two types: Parametric / Non-Parametric
-  * Parametric models assume a strong 'f'
+ * ML model has two types: Parametric / Non-Parametric
+ * Parametric models assume a strong 'f'
     - Tend to be simple models
     - May not be very accurate
 
-  * Non-parametric models don't assume a rigid 'f'
+ * Non-parametric models don't assume a rigid 'f'
     - Adopt to data very well
     - More accurate
     - More difficult to understand than parametric models
@@ -490,19 +483,21 @@ Notes:
 ---
 
 ## Machine Learning Process: Step 3: Model Evaluation
-<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="max-width:90%;"/>
+
+<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="max-width:90%;"/><!-- {"left" : 0.91, "top" : 1.87, "height" : 4.23, "width" : 8.43} -->
+
 
 ---
 
 ## Evaluating A Model
 
-  * How do we know our model is 'good'?
+ * How do we know our model is 'good'?
 
-  * One way to measure the performance, is how well it is predicting on 'new data'
+ * One way to measure the performance, is how well it is predicting on 'new data'
     - Model is trained with 'training data'
     - Measure its performance on 'test data' (the model hasn't seen 'test data')
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 2.87, "top" : 3.47, "height" : 2.88, "width" : 6.57} -->
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 1.84, "top" : 4.02, "height" : 2.88, "width" : 6.57} -->
 
 
 
@@ -514,12 +509,12 @@ Notes:
 
 ## Under-fitting / Over-fitting
 
-  * Here we have 3 models
-  * One on left: is not really capturing the essence of the data
+ * Here we have 3 models
+ * One on left: is not really capturing the essence of the data
     - Underfitting
-  * One on right: following every small variation of data, not really generalizing
+ * One on right: following every small variation of data, not really generalizing
     - Overfitting
-  * One in the middle is just right
+ * One in the middle is just right
 
 <img src="../../assets/images/machine-learning/underfit-overfit-03.png" alt="underfit-overfit" style="max-width:80%;"/> <!-- {"left" : 0.26, "top" : 4.13, "height" : 3.07, "width" : 9.74} -->
 
@@ -533,13 +528,13 @@ Notes:
 
 ## Under-fitting
 
-  * Model is 'too simple'  to capture the trends in input data
-  * Hot to detect under-fitting?
+ * Model is 'too simple'  to capture the trends in input data
+ * Hot to detect under-fitting?
     - We will get poor performance in both training & testing data
     - E.g.:
       - Training accuracy : 45%
       - Testing accuracy : 42%
-  * Resolution:
+ * Resolution:
     - Try a different algorithm / model, that better fits the data
 
 <img src="../../assets/images/machine-learning/underfit-overfit-01.png" alt="underfit-overfit" style="max-width:80%;"/>  <!-- {"left" : 0.83, "top" : 4.4, "height" : 2.79, "width" : 8.59} -->
@@ -553,13 +548,13 @@ Notes:
 
 ## Over-fitting
 
-  * Model is 'too complex'  that is 'memorizing' training data, but not **'generalizing' for new data**
-  * Hot to detect over-fitting?
+ * Model is 'too complex'  that is 'memorizing' training data, but not **'generalizing' for new data**
+ * Hot to detect over-fitting?
     - Excellent performance on training data, but poor performance on testing (new) data
     - E.g.:
       - Training accuracy : 95%
       - Testing accuracy : 62%
-  * Resolution:
+ * Resolution:
     - Try a different algorithm / model, that better fits the data
     - Simplify inputs
 
@@ -573,7 +568,7 @@ Notes:
 
 ## Achieving a Good Fit
 
-  * In ML we strive to find the 'sweet spot' between under-fitting models and over-fitting models
+ * In ML we strive to find the 'sweet spot' between under-fitting models and over-fitting models
 
 <img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="max-width:64%;"/> <!-- {"left" : 1.4, "top" : 1.97, "height" : 5.08, "width" : 6.96} -->
 
@@ -587,22 +582,22 @@ Notes:
 
 ## Achieving a Good Fit
 
-  * Both overfitting and underfitting can lead to poor model performance
+ * Both overfitting and underfitting can lead to poor model performance
 
-  * underfitting is easier to spot
+ * underfitting is easier to spot
     - Bad performance on training data
     - Bad performance on test data
 
-  * Overfitting can be hard to spot
+ * Overfitting can be hard to spot
     - because it performs well on training data
     - But doesn't do well on 'unseen' test data
 
-  * Avoiding overfitting
+ * Avoiding overfitting
     - Resampling technique
     - Hold back a validation dataset
     - Most popular method is: k-fold validation (more on this later)
 
-  * For **decision trees**, we **prune** the tree to limit overfitting
+ * For **decision trees**, we **prune** the tree to limit overfitting
 
 
 Notes:
@@ -613,26 +608,26 @@ Notes:
 
 ## Common Mistakes in Model Validation
 
-  * **Mistake: Re-using 'training data' as 'testing data'**
+ * **Mistake: Re-using 'training data' as 'testing data'**
     - Model can predict accurately on testing (because it has 'seen' the data before)
     - Giving the designer 'false confidence'
     - But will do badly on new data
 
-  * Solution:
+ * Solution:
     - **Cross Validation**
 
 ---
 
 ## Common Mistakes in Model Validation
 
-  * **Mistake: Using overly simplistic validation methods**
+ * **Mistake: Using overly simplistic validation methods**
     - Model might appear to be working well
 
-  * **Mistake: Using more parameters (20 attributes) than actual observations (10 observations)**
+ * **Mistake: Using more parameters (20 attributes) than actual observations (10 observations)**
     - Model will 'memorize' the data rather than learning
     - Will do well on testing data / but poorly on new data
 
-  * Solution:
+ * Solution:
     - Use more data
 
 
@@ -642,14 +637,14 @@ Notes:
 
 ## Hold Out Method (Validation Set)
 
-  * Do not use the same data for training and testing!
+ * Do not use the same data for training and testing!
     - Model will do well in testing (it has seen the questions before!)
-  * Separate the data set into
+ * Separate the data set into
     - Training set  (60-70%)
     - Testing set (30-40%)
-  * This is done  randomly
+ * This is done  randomly
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 2.16, "top" : 3.74, "height" : 2.61, "width" : 5.94} -->
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 2.16, "top" : 4.29, "height" : 2.61, "width" : 5.94} -->
 
 
 
@@ -660,7 +655,7 @@ Notes:
 
 ## Hold Out Method Drawbacks
 
-  * Drawbacks
+ * Drawbacks
     - Error rate can significantly fluctuate based on how data is divided (randomly)
     - When we do a randomly split data into training/test
     - If we are 'lucky', we get an easy test set -> resulting in higher than usual accuracy
@@ -670,7 +665,7 @@ Notes:
 
 ## Hold Out Method Drawbacks
 
-  * Example
+ * Example
     - Assume we want to test a student's knowledge in a subject
     - We have a pool of 20 questions
     - Test 1:
@@ -678,7 +673,7 @@ Notes:
       - Is this the final score?  No.
       - We need to do more tests and average out the score
 
-  * Solution: **k-fold Cross validation**
+ * Solution: **k-fold Cross validation**
     - Rigorously tests model accuracy
 
 
@@ -689,11 +684,11 @@ Notes:
 
 ## K-Fold Cross Validation
 
-  * Divide the data into equal k sections (k folds, usually 10 to 20)
-  * Reserve one fold for testing (say fold-i)
-  * Use others folds for training
-  * Then test with fold-I
-  * After we have cycled through all k folds, prediction accuracies are aggregated and compared
+ * Divide the data into equal k sections (k folds, usually 10 to 20)
+ * Reserve one fold for testing (say fold-i)
+ * Use others folds for training
+ * Then test with fold-I
+ * After we have cycled through all k folds, prediction accuracies are aggregated and compared
 
 <img src="../../assets/images/machine-learning/k-fold-1.png" alt="k-fold-1" style="max-width:60%;"/> <!-- {"left" : 2.32, "top" : 4.11, "height" : 3.08, "width" : 5.61} -->
 
@@ -706,13 +701,13 @@ Notes:
 
 ## Cross-Validation Example
 
-<img src="../../assets/images/machine-learning/Cross-Validation-1.png" alt="Cross-Validation-1.png" style="max-width:70%;"/> <!-- {"left" : 0.67, "top" : 0.81, "height" : 2.31, "width" : 8.92} -->
+<img src="../../assets/images/machine-learning/Cross-Validation-1.png" alt="Cross-Validation-1.png" style="max-width:70%;"/> <!-- {"left" : 0.67, "top" : 1.02, "height" : 2.31, "width" : 8.92} -->
 
 
-  * Here we are doing a 5-fold cross validation
-  * Data is split into 5 splits - one held for testing, remaining 4 used for training
-  * Accuracy varies from 80% to 90%
-  * Average accuracy is `AVG(80,84,90,86,82) = 85%`
+ * Here we are doing a 5-fold cross validation
+ * Data is split into 5 splits - one held for testing, remaining 4 used for training
+ * Accuracy varies from 80% to 90%
+ * Average accuracy is `AVG(80,84,90,86,82) = 85%`
 
 
 Notes:
@@ -721,32 +716,33 @@ Notes:
 
 ## Cross Validation
 
-* Cross Validation is used to evaluate different algorithms
+ * Cross Validation is used to evaluate different algorithms
 
-* See the following CV runs of 3 different algorithms (A,B,C)
+ * See the following CV runs of 3 different algorithms (A,B,C)
     - Algorithm A accuracy is : 60%  to 72%
     - Algorithm B accuracy is : 70%  to 85%
     - Algorithm C accuracy is : 50%  to 90%
 
-* We might select algorithm B, as it seems to produce decent range
+ * We might select algorithm B, as it seems to produce decent range
 
-* Algorithm C is not desirable as its accuracy varies so much (high variance)
+ * Algorithm C is not desirable as its accuracy varies so much (high variance)
 
-<img src="../../assets/images/machine-learning/cross-validation-2.png" alt="Cross-Validation-1.png" style="max-width:70%;"/>
+<img src="../../assets/images/machine-learning/cross-validation-2.png" alt="Cross-Validation-1.png" style="max-width:70%;"/><!-- {"left" : 1.92, "top" : 5.32, "height" : 1.94, "width" : 6.4} -->
+
 
 ---
 
 ## Cross Validation Takeaways
 
-  * We don't choose the 'best performing model' from CV
+ * We don't choose the 'best performing model' from CV
     - CV is used to understand a particular algorithm's performance for the given data
     - And how well it can generalize to new data
 
-  * Pros
+ * Pros
     - Helps us systematically tests a model through the data
     - Can identify high-variance / over-fitting models
 
-  * Cons
+ * Cons
     - Increased compute time to create multiple models and test
       - Solution: run CV tasks in parallel across multiple CPU-cores or on a cluster (embarrassingly parallelizable problem)
 
@@ -760,18 +756,18 @@ Notes:
 
 ## Bootstrapping
 
-* Randomly selecting data for training with replacement
+ * Randomly selecting data for training with replacement
 
-* Data points : [a, b, c, d, e ]
+ * Data points : [a, b, c, d, e ]
     - Bootstrap selection 1 : [  b,  d,  d,   c ]
     - Bootstrap selection 2 : [ d,  a, d,  a ]
 
 
-* It may seem counter-intuitive to draw the same data again and again
+ * It may seem counter-intuitive to draw the same data again and again
 
-* But in some scenarios, bootstrapping really helps to train the model
+ * But in some scenarios, bootstrapping really helps to train the model
 
-* See next slides to understand sampling with and without replacement
+ * See next slides to understand sampling with and without replacement
 
 
 Notes:
@@ -827,7 +823,7 @@ These sub sections are included in other sections
 
 ## Estimating Tips for Meals
 
-* Let's consider tips at a restaurant
+ * Let's consider tips at a restaurant
 
 
 | Meal # | Tip ($)  |
@@ -839,7 +835,7 @@ These sub sections are included in other sections
 | 5      | 15       |
 | 7      | 5        |
 
-<!-- {"left" : 0.25, "top" : 3.57, "height" : 3.5, "width" : 9.75} -->
+<!-- {"left" : 0.25, "top" : 2.24, "height" : 3.5, "width" : 9.75} -->
 
 
 
@@ -849,14 +845,12 @@ Notes:
 
 ---
 
-
-
 ## Residuals / Errors
 
-  * None of the tip amounts are exactly $10
-  * $10 is just an average of all tip amounts
-  * **`Residual = actual tip - predicted tip`**
-  * Sum of all residuals = **ZERO**
+ * None of the tip amounts are exactly $10
+ * $10 is just an average of all tip amounts
+ * **`Residual = actual tip - predicted tip`**
+ * Sum of all residuals = **ZERO**
     - positive and negative errors cancel each other out
 
 <img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="max-width:50%;"/> &nbsp; &nbsp;<!-- {"left" : 1.84, "top" : 3.68, "height" : 3.24, "width" : 6.58} -->
@@ -871,21 +865,19 @@ Notes:
 
 ## Sum of Squared Errors (SSE)
 
-<img src="../../assets/images/machine-learning/Sum-of-Squared.png" alt="Sum-of-Squared.png" style="max-width:50%;float:right;"/> <!-- {"left" : 6.9, "top" : 0.94, "height" : 2.62, "width" : 3.12} -->
+<img src="../../assets/images/machine-learning/Sum-of-Squared.png" alt="Sum-of-Squared.png" style="max-width:50%;float:right;"/><!-- {"left" : 6.9, "top" : 0.94, "height" : 2.62, "width" : 3.12} -->
 
-* Squaring residuals
- - To make them all positive (so negative and positive </br>don't cancel each other out)
- - To amplify 'outliers' (large deviations)
+ * Squaring residuals
+   - To make them all positive (so negative and positive don't cancel each other out)
+   - To amplify 'outliers' (large deviations)
 
-* Goal is to minimize SSE
+ * Goal is to minimize SSE
 
-* **Question for the class**:  
+ * **Question for the class**:  
   Can SSE be zero? :-)
 
 
-<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="max-width:45%;"/>
-
-
+<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="max-width:45%;"/><!-- {"left" : 2.38, "top" : 4.35, "height" : 2.7, "width" : 5.48} -->
 
 
 
@@ -896,20 +888,20 @@ Notes:
 
 ## Sum of Squared Errors (SSE)
 
-* Also known as
+ * Also known as
     - **Residual Sum of Squares (RSS)**
     - **Sum of Squared Residuals (SSR)**
-* In Regressions RSS/SSE is a measure used to select / optimize models
-* Lower RSS indicates a tighter model fit to data
-* Example:
+ * In Regressions RSS/SSE is a measure used to select / optimize models
+ * Lower RSS indicates a tighter model fit to data
+ * Example:
     - If model-A yields  SSE = 70
     - And model-B yields SSE = 50
     - Model-B might be better fit
-* In this formula
+ * In this formula
     - Yi: actual value
     - Ŷi: predicted value
 
-<img src="../../assets/images/machine-learning/equation-error-SSE-1.png" alt="equation-error-SSE-1" style="width:30%;"/> <!-- {"left" : 5.35, "top" : 5.16, "height" : 1.49, "width" : 4.21} -->
+<img src="../../assets/images/machine-learning/equation-error-SSE-1.png" alt="equation-error-SSE-1" style="width:30%;"/> <!-- {"left" : 6.81, "top" : 3.94, "height" : 1.19, "width" : 3.38} -->
 
 
 Notes:
@@ -925,9 +917,9 @@ https://en.wikipedia.org/wiki/Residual_sum_of_squares
 
 ## Confusion Matrix / Error Matrix
 
-* Let's consider a binary classifier
+ * Let's consider a binary classifier
     - Picks one of two outcomes  (spam / not-spam)
-* Say we are classifying 10 emails (6 spam, 4 not-spam)
+ * Say we are classifying 10 emails (6 spam, 4 not-spam)
 
 <img src="../../assets/images/machine-learning/Confusion-Matrix-04.png" alt="Confusion-Matrix-04.png" style="width:60%;"/> <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
 
@@ -969,15 +961,15 @@ Story: A shepherd who cried wolf
 
 ## Confusion Matrix: Accuracy / Error Rate
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-02.png" alt="Confusion-Matrix-02.png" style="width:50%;float:right;"/> <!-- {"left" : 4.4, "top" : 3.62, "height" : 3.46, "width" : 5.45} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-02.png" alt="Confusion-Matrix-02.png" style="width:50%;float:right;"/> <!-- {"left" : 2.4, "top" : 3.9, "height" : 3.46, "width" : 5.45} -->
 
-* **Accuracy**  
+ * **Accuracy**  
 Overall how accurate is the model?  
 = (TP + TN) / total  
 = (90 + 70) / 200  
 = 0.8  or 80%
 
-* **Misclassifications / Error rate**  
+ * **Misclassifications / Error rate**  
 How wrong is the model?  
 = (FP + FN) / total  
 = (10 + 30) / 200  
@@ -993,17 +985,17 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Accuracy May Not Be Enough
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-03-Accuracy.png" alt="Confusion-Matrix-03-Accuracy.png" style="width:50%;float:right;"/> <!-- {"left" : 2.39, "top" : 3.52, "height" : 3.47, "width" : 5.47} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-03-Accuracy.png" alt="Confusion-Matrix-03-Accuracy.png" style="width:50%;float:right;"/> <!-- {"left" : 4.67, "top" : 5.19, "height" : 2.12, "width" : 3.34} -->
 
-* Let's say our classifier is used to diagnose cancer patients.
-* We have total 100 patients
+ * Let's say our classifier is used to diagnose cancer patients.
+ * We have total 100 patients
     - 98 healthy
     - 2 have cancer
-* **Accuracy**  
+ * **Accuracy**  
   = (TP + TN) / total   
   = (1 + 98) / 100   
   = 99%  (very good!)
-* **Misclassifications / Error rate**  
+ * **Misclassifications / Error rate**  
 = (FP + FN) / total  
 = (0 + 1) / 100  
 = 1%  (1 - accuracy)
@@ -1012,7 +1004,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Accuracy May Not Be Enough
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/><!-- {"left" : 7.44, "top" : 1.21, "height" : 1.66, "width" : 2.49} -->
 
   * **Question for class:**
     * What is the implication of 'False Positive'
@@ -1028,20 +1020,20 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 Notes:
 
-* Answers
+ * Answers
   - False positive : a healthy patient is diagnosed as cancer patient.They have to go through additional testing.  Costing time and money and of course causing mental anxiety
   - False negative : a caner patient is diagnosed as healthy.This is pretty serious, because now a patient has missed treatment, potentially leading to health deterioration and may be loss of life.
 
-* http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
+ * http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ---
 
 
 ## Confusion Matrix: TPR / FPR
 
- <img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:50%;float:right;"/> <!-- {"left" : 2.35, "top" : 3.54, "height" : 3.58, "width" : 5.54} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:50%;float:right;"/> <!-- {"left" : 5.19, "top" : 2.19, "height" : 3.12, "width" : 4.83} -->
 
-  * **True Positive Rate (TPR)  /Sensitivity / Hit Rate / Recall**  
+ * **True Positive Rate (TPR)  /Sensitivity / Hit Rate / Recall**  
   How often model predicts 'positive' as 'positive' (correctly) ? -- actual positive  
   = TP / (TP + FN)  
   = 90 / 120  
@@ -1065,7 +1057,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Specificity / Precision / Prevalence
 
-  <img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 2.22, "top" : 3.47, "height" : 3.74, "width" : 5.81} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 3.09, "top" : 4.54, "height" : 2.62, "width" : 4.07} -->
 
   * **Specificity**   
   How often model predicts negative' as negative' (correctly)?  -- actual no  
@@ -1074,7 +1066,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
   = 0.875 or 87.5 %  
   = 1 - FPR
 
-* **Precision / Positive Predictive Value (PPV)**  
+ * **Precision / Positive Predictive Value (PPV)**  
 When model predicts 'positive' how often it is right?  -- true / predicted positive   
 = TP / (TP + FP)   
 = 90 / (90 + 10)  
@@ -1093,15 +1085,15 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: PPV / Null Error Rate
 
-<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 2.25, "top" : 3.48, "height" : 3.75, "width" : 5.76} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 3, "top" : 4.51, "height" : 2.77, "width" : 4.26} -->
 
-  * **Prevalence**   
+ * **Prevalence**   
   How often does 'positive' occurs in our sample  
   = actual positive  / total  
   = 120 / 200  
   = 0.6  or 60%
 
-  * **Null Error Rate**  
+ * **Null Error Rate**  
 How often would the model be wrong if it always predicted the majority class?  
 Here our majority = Positive  
 If we always predicted 'positive' we would be wrong 80 times (negative)  
@@ -1123,10 +1115,10 @@ https://en.wikipedia.org/wiki/Positive_and_negative_predictive_values
 
 ## Confusion Matrix : F-Score
 
-  * So, while precision and recall are very important measures, looking at only one of them will not provide us with the full picture.
-  * One way to summarize them is the f-score or f-measure, which is with the harmonic mean of precision and recall
+ * So, while precision and recall are very important measures, looking at only one of them will not provide us with the full picture.
+ * One way to summarize them is the f-score or f-measure, which is with the harmonic mean of precision and recall
 
-  * **F = 2 * (Precision * Recall) / (Precision + Recall)**
+ * **F = 2 * (Precision * Recall) / (Precision + Recall)**
 
 
 Notes:
@@ -1135,17 +1127,17 @@ Notes:
 
 ## How is ROC Curve Generated
 
-  * Y-axis: True Positive Rate (TPR)
+ * Y-axis: True Positive Rate (TPR)
     - Actual=positive, predicted=positive
     - Correct!
 
-  * X-axis: False Positive Rate (FPR)
+ * X-axis: False Positive Rate (FPR)
     - Actual=negative, predicted=positive
     - Incorrect!
 
-  * `0.0 <= TPR & FPR  <= 1.0`
+ * `0.0 <= TPR & FPR  <= 1.0`
 
-  * Plot TPR / FPR while varying 'threshold'
+ * Plot TPR / FPR while varying 'threshold'
     - what is threshold?
 
 Notes:
@@ -1153,21 +1145,28 @@ Notes:
 ---
 
 ## Threshold
-<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 7.01, "top" : 2.83, "height" : 4.36, "width" : 3.07} -->
+<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 7.36, "top" : 2.85, "height" : 3.66, "width" : 2.57} -->
 
-  * Our spam classifier provides a 'spam probability' for each email
+ * Our spam classifier provides a 'spam probability' for each email
     - Probability is between 0.0. and 1.0 (or 0 to 100%)
     - 1.0  definitely spam
     - 0.0 definitely not spam
-  * When an email's 'spam score' is above a certain number we mark it as spam
-    * This is called 'threshold'
-  * If spam threshold is lower (say 50%)
+ * When an email's 'spam score' is above a certain number we mark it as spam
+    - This is called 'threshold'
+
+---
+
+## Threshold
+<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 7.36, "top" : 2.85, "height" : 3.66, "width" : 2.57} -->
+
+
+ * If spam threshold is lower (say 50%)
     - more emails will be classified as spam (email1, email3)
     - Users will miss emails (as they are in Spam folder)
-  * If spam threshold is higher (70%)
+ * If spam threshold is higher (70%)
     - Fewer emails will be classified as spam (email3)
     - Users will see more spam emails be in Inbox
-  * We need to find the sweet spot for threshold
+ * We need to find the sweet spot for threshold
 
 
 
@@ -1180,15 +1179,14 @@ Notes:
 
 ## Threshold
 
-  * In first table our threshold is 0.7
+ * In first table our threshold is 0.7
     - 90 emails are correctly predicted as spam
 
-  * Next table, our threshold is higher 0.8
+ * Next table, our threshold is higher 0.8
     - Only 70 emails are classified as spam
 Lower TPR
 
-<img src="../../assets/images/machine-learning/confusion-matrix-08-Threshold.png" alt="confusion-matrix-08-Threshold.png" style="width:50%;"/>&nbsp;<!-- {"left" : 0.57, "top" : 2.93, "height" : 2.62, "width" : 4.8} -->
-<img src="../../assets/images/machine-learning/confusion-matrix-09-Threshold.png" alt="confusion-matrix-09-Threshold.png" style="width:42%;"/> <!-- {"left" : 5.7, "top" : 4.14, "height" : 2.7, "width" : 4.12} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-08-Threshold.png" alt="confusion-matrix-08-Threshold.png" style="width:50%;"/> &nbsp; <!-- {"left" : 0.51, "top" : 3.63, "height" : 2.62, "width" : 4.8} --><img src="../../assets/images/machine-learning/confusion-matrix-09-Threshold.png" alt="confusion-matrix-09-Threshold.png" style="width:42%;"/> <!-- {"left" : 5.62, "top" : 3.59, "height" : 2.7, "width" : 4.12} -->
 
 
 
@@ -1222,14 +1220,14 @@ Notes:
 
 ## Interpreting ROC Curve
 
-<img src="../../assets/images/machine-learning/ROC-02-space-2b.png" alt="ROC-02-space-2b.png" style="width:45%;float:right;"/> <!-- {"left" : 3, "top" : 2.67, "height" : 4.49, "width" : 4.25} -->
+<img src="../../assets/images/machine-learning/ROC-02-space-2b.png" alt="ROC-02-space-2b.png" style="width:45%;float:right;"/> <!-- {"left" : 6.19, "top" : 1.78, "height" : 3.93, "width" : 3.72} -->
 
-  * The red line plots 'random guess' = B
+ * The red line plots 'random guess' = B
 
-  * Approaching 'top left' corner would be a perfect classifier!
+ * Approaching 'top left' corner would be a perfect classifier!
     - So  D is better A
 
-  * C performs worse than random --> bad
+ * C performs worse than random --> bad
 
 
 
@@ -1246,17 +1244,13 @@ Image credit (CC) : https://commons.wikimedia.org/wiki/File:ROC_space-2.png
 ---
 
 ## Interpreting ROC Curve
-<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 2.48, "top" : 3.80, "height" : 3.68, "width" : 5.28} -->
+<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 5.6, "top" : 2.44, "height" : 3.09, "width" : 4.44} -->
 
-  * Shows tradeoff of TPR (sensitivity) vs. FPR (1 - specificity)
-  * The closer to top-left , the more accurate </br>the model
-  * Upper left corner (0,1) = perfect classification!
-  * The closer to middle line (45 degree) </br>the less accurate the test
+ * Shows tradeoff of TPR (sensitivity) vs. FPR (1 - specificity)
+ * The closer to top-left , the more accurate </br>the model
+ * Upper left corner (0,1) = perfect classification!
+ * The closer to middle line (45 degree) </br>the less accurate the test
     - Middle line represents: random classification (50%)
-
-
-
-
 
 
 Notes:
@@ -1268,17 +1262,17 @@ Notes:
 
 <img src="../../assets/images/machine-learning/ROC-04-AUC-2.png" alt="ROC-04-AUC-2.png" style="width:30%;float:right;"> <!-- {"left" : 6.66, "top" : 2.29, "height" : 2.28, "width" : 3.26} -->
 
-  * Measures the percentage of area<br/>
+ * Measures the percentage of area<br/>
    'under the curve'
-  * AUC is between 0 and 1.0
-  * Higher AUC --> more accurate the model
-  * See 3 scenarios below
+ * AUC is between 0 and 1.0
+ * Higher AUC --> more accurate the model
+ * See 3 scenarios below
     - Leftmost is bad (50%)
     - Middle: OK (70%)
     - Rightmost: very good (90%)
 
 
-<img src="../../assets/images/machine-learning/ROC-5-AUC-3.png" alt="ROC-5-AUC-3.png" style="max-width:60%;"/> <!-- {"left" : 1.02, "top" : 4.94, "height" : 2.1, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/ROC-5-AUC-3.png" alt="ROC-5-AUC-3.png" style="max-width:60%;"/> <!-- {"left" : 1.02, "top" : 5.31, "height" : 2.1, "width" : 8.21} -->
 
 
 
@@ -1288,7 +1282,7 @@ Notes:
 
 ## Using AUC to Measure Accuracy
 
-* Accuracy can be specified using a grading system
+ * Accuracy can be specified using a grading system
 
 
 | AUC        | Grade         |
@@ -1308,21 +1302,21 @@ Notes:
 
 Notes:
 
-* https://www.youtube.com/watch?v=21Igj5Pr6u4
-* http://gim.unmc.edu/dxtests/roc3.htm
+ * https://www.youtube.com/watch?v=21Igj5Pr6u4
+ * http://gim.unmc.edu/dxtests/roc3.htm
 
-* Image credit (CC) : http://gim.unmc.edu/dxtests/roc3.htm
+ * Image credit (CC) : http://gim.unmc.edu/dxtests/roc3.htm
 
 ---
 ## ROC / AUC For Multiclass Classifiers
 
-  * Say our algorithm recognizes hand-written digits (postal code) into numbers.
-  * Its ROC can be drawn as follows
-  * **Question for class**:
+ * Say our algorithm recognizes hand-written digits (postal code) into numbers.
+ * Its ROC can be drawn as follows
+ * **Question for class**:
     - Which digit the classifier is doing well?
     - Which digit the classifier is not doing well?
 
-<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:35%;"/> <!-- {"left" : 2.28, "top" : 2.58, "height" : 4.24, "width" : 5.69} -->
+<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:35%;"/> <!-- {"left" : 3.05, "top" : 3.93, "height" : 3.1, "width" : 4.15} -->
 
 
 
@@ -1334,17 +1328,17 @@ Notes:
 
 ## Estimating Target Function
 
-  * In supervised algorithms try to estimate target function
+ * In supervised algorithms try to estimate target function
 'f'  
 `Y = f(X)`  
 `Y: output,  X: input`
 
-  * The error can be broken down to
+ * The error can be broken down to
     - Bias error
     - Variance error
     - Irreducible error
 
-* Irreducible error can not be minimized.May be caused by unknown variables, noise ..etc
+ * Irreducible error can not be minimized.May be caused by unknown variables, noise ..etc
 
 Notes:
 
@@ -1352,16 +1346,16 @@ Notes:
 
 ## Bias Error
 
-  * Bias are the **simplifying assumptions** made by a model to make target function easier to learn
-  * Generally **parametric algorithms have high bias**
+ * Bias are the **simplifying assumptions** made by a model to make target function easier to learn
+ * Generally **parametric algorithms have high bias**
     - Fast learning
     - Easier to understand
     - But less flexible
     - Lower predicting performance on complex data (That doesn't fit the simplifying assumptions of algorithm)
-  * **Low Bias (good!):**
+ * **Low Bias (good!):**
     - Less assumptions made about target function
     - E.g. Decision Trees, KNN, SVM
-  * **High Bias (not good):**
+ * **High Bias (not good):**
     - more assumptions of target function
     - E.g. Linear regression, Logistic regression
 
@@ -1372,22 +1366,22 @@ Notes:
 
 ## Variance
 
-  * Target function is estimated from training data
+ * Target function is estimated from training data
     - So it is influenced by training data
-  * **Variance is the amount that the estimate of the target function will change if different training data was used**
-  * Ideally target function should not change drastically from one training set to next
+ * **Variance is the amount that the estimate of the target function will change if different training data was used**
+ * Ideally target function should not change drastically from one training set to next
     - meaning that the algorithm is good at picking out the hidden underlying mapping between the inputs and the output variables
 
-<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:45%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:45%;"/> <!-- {"left" : 3.03, "top" : 4.72, "height" : 2.54, "width" : 4.2} -->
 
 ---
 
 ## Variance
 
-  * **Low Variance:**
+ * **Low Variance:**
     - Suggests small changes to the estimate of the target function with changes to the training dataset
     - E.g. parametric algorithms: Linear Regression, Logistic Regression
-  * **High Variance:**
+ * **High Variance:**
     - Suggests large changes to the estimate of the target function with changes to the training dataset.
     - Generally nonparametric machine learning algorithms that have a lot of flexibility have a high variance
     - E.g. decision trees have a high variance, that is even higher if the trees are not pruned before use
@@ -1399,12 +1393,12 @@ Notes:
 
 ## Bias - Variance Tradeoff
 
-  * Goal of supervised algorithm is to achieve **low bias and low variance**
-  * Low bias: less assumptions of target function form --> more flexibility
-  * Low variance: less swings in target function for changes in training data --> stable algorithm
-  * **Parametric or linear algorithms** often have a high bias but a low variance
-  * **Nonparametric or nonlinear algorithms** often have a low bias but a high variance
-  * There is no escaping the relationship between bias and variance in machine learning
+ * Goal of supervised algorithm is to achieve **low bias and low variance**
+ * Low bias: less assumptions of target function form --> more flexibility
+ * Low variance: less swings in target function for changes in training data --> stable algorithm
+ * **Parametric or linear algorithms** often have a high bias but a low variance
+ * **Nonparametric or nonlinear algorithms** often have a low bias but a high variance
+ * There is no escaping the relationship between bias and variance in machine learning
     - Increasing the bias will decrease the variance
     - Increasing the variance will decrease the bias
   * Bias-Variance can be adjusted for particular algorithms
@@ -1464,7 +1458,7 @@ Notes:
 
 ## Review Questions
 
-  * Define the following:
+ * Define the following:
     - Supervised learning
     - Model  / Algorithm
     - Feature
@@ -1477,13 +1471,13 @@ Notes:
 
 ## Review Questions
 
-* Explain the following
-* Confusion Matrix
-* ROC curve
-* Area under Curve  (AUC)
-* Over / under fitting
-* Cross validation / Boosting
-* Feature Engineering
+ * Explain the following
+ * Confusion Matrix
+ * ROC curve
+ * Area under Curve  (AUC)
+ * Over / under fitting
+ * Cross validation / Boosting
+ * Feature Engineering
 
 
 Notes:

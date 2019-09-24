@@ -14,7 +14,9 @@ Notes:
 
 ---
 
-# Clustering in Spark
+# Unsupervised Generic
+
+[../generic/Unsupervised-Generic.md](../generic/Unsupervised-Generic.md)
 
 ---
 

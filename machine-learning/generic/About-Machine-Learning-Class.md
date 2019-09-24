@@ -42,8 +42,8 @@ Notes:
 
 * Our approach:
     - We acknowledge Math / Stats are essential inner workings of Machine Learning
-    - A practitioner can go far in ML with a little fundamentals and without too deep knowledge in Math / Stats 
-    
+    - A practitioner can go far in ML with a little fundamentals and without too deep knowledge in Math / Stats
+
 *  **Learn by practicing**
     - We do recommend you review the theories behind ML at your leisure
 
@@ -95,7 +95,7 @@ Notes:
 
 ## Some Highlights of this Class
 
-* Machine Learning is the focus of this course 
+* Machine Learning is the focus of this course
 * The concepts are generic you can implement them any ML platforms (R, Python, Spark)
 
 <img src="../../assets/images/machine-learning/some-highlights.png" alt="some-highlights.png" style="width:70%;"/> <!-- {"left" : 0.97, "top" : 3.87, "height" : 2.91, "width" : 8.3} -->
@@ -199,8 +199,8 @@ Notes:
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby...etc)
 
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:25%;"/>
 <img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:30%;"/>   &nbsp;
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:25%;"/>
 <img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:25%;"/>
 
 

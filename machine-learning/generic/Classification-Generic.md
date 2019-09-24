@@ -193,7 +193,7 @@ Notes:
 
  * 'Logit' function calculates 'odds'
 
- 
+
  <img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Logistic-Regression-1.png" style="max-width:40%;float:right;"/><!-- {"left" : 4.31, "top" : 0.95, "height" : 3.85, "width" : 5.77} -->
 <img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Math-Behind-Logistic-Regression-0.png" style="width:50%;float:left"/><!-- {"left" : 0.29, "top" : 4.05, "height" : 2.99, "width" : 7.05} -->
 
@@ -222,7 +222,7 @@ Predicts 84% chance of getting the loan approved.
 So this mapped to YES
 
 ```
-<img src="../../assets/images/machine-learning/Session-Regressions-Applying-Logistic-Regression-To-Credit-Card-Application--0.png" style="max-width:40%;"/><!-- {"left" : 2.49, "top" : 3.13, "height" : 3.47, "width" : 5.26} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Applying-Logistic-Regression-To-Credit-Card-Application--0.png" style="max-width:40%;"/><!-- {"left" : 2.49, "top" : 3.13, "height" : 3.47, "width" : 5.26} -->
 
 
 Notes:
@@ -411,6 +411,7 @@ Notes:
 
 ## Lab: Logistic Regression
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/>
 
  *  **Overview**:
 
@@ -437,6 +438,7 @@ Notes:
 
 ## Lab: Cross Validation: Hyper Parameter Tuning
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/>
 
  *  **Overview**:
 
@@ -757,7 +759,7 @@ Notes:
 
 ---
 
-## SVM: Strengths, Weaknesses, and Parameters
+## SVM : Strengths, Weaknesses, and Parameters
 
 * **Strengths**
     - Linear SVM can learn fast on linearly separable data
@@ -775,7 +777,7 @@ Notes:
 
 ---
 
-## SVM: Strengths, Weaknesses, and Parameters
+## SVM : Strengths, Weaknesses, and Parameters
 
 * **Parameters**
     - Slack variable (C)
@@ -787,6 +789,8 @@ Notes:
 ---
 
 ## Lab: SVM
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/>
 
 * **Overview:**
     - Work with SVM algorithm
@@ -877,7 +881,7 @@ Notes:
 
 * **Question for class**:
 
-    - Are the input variables (weather / car) independent?
+Are the input variables (weather / car) independent?
 
 
 Notes:
@@ -913,7 +917,7 @@ Notes:
 
 * Let's convert this to numbers
 
-* Weather: Sunny=1,  rainy=0
+* Weather : Sunny=1,  rainy=0
 
 * Car: working=1,  broken=0
 
@@ -1185,6 +1189,8 @@ Notes:
 ---
 
 ## Lab: Naïve Bayes
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/>
 
 * **Overview:** Use Naïve Bayes implementation
 

@@ -1,4 +1,4 @@
-# Session: Regressions in Spark
+# Regressions in Spark
 
 ---
 
@@ -9,12 +9,17 @@
 
 Notes:
 
+---
+
+# Regressions Generic
+
+[../generic/Regressions-Generic.md](../generic/Regressions-Generic.md)
 
 
 
 ---
 
-# Linear Regression in Spark
+# Regressions in Spark
 
 ---
 
@@ -167,8 +172,8 @@ Notes:
 ## Spark Linear Regression Code (Python) 3/4 - Create a Model, Fit Training Data
 
 ```
- from pyspark.ml.regression import LinearRegression 
- from pyspark.ml.feature import VectorAssembler 
+ from pyspark.ml.regression import LinearRegression
+ from pyspark.ml.feature import VectorAssembler
 
  #  **** 3 ****
  assembler = VectorAssembler(inputCols=["bill"], outputCol="features")

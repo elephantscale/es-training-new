@@ -5,11 +5,16 @@
 ## Lesson Objectives
 
 
- * Learn classification algorithms in Spark 
+ * Learn classification algorithms in Spark
 
-Notes: 
+Notes:
 
- 
+---
+
+# Classification Generic
+
+[../generic/Classification-Generic.md](../generic/Classification-Generic.md)
+
 
 
 ---
@@ -23,13 +28,13 @@ Notes:
 
  * Implemented by  **pyspark.ml.classification.LinearSVC**    (python) **org.apache.spark.ml.classification.LinearSVC**   (Scala)
 
- * Currently supports binary classification. 
+ * Currently supports binary classification.
 
-     - More than 2 classes 
+     - More than 2 classes
 
  * Only supports linear classification (kernel SVM not supported).
 
-Notes: 
+Notes:
 
 
 
@@ -50,7 +55,7 @@ Notes:
 | labelCol         | Label  Column                                                    | "label"       |
 
 
-Notes: 
+Notes:
 
 
 
@@ -59,19 +64,19 @@ Notes:
 ## SVM Sample Code (Python)
 ```python
  from pyspark.ml.classification import LinearSVC  
- # Load training data 
- training = spark.read(...) 
- lsvc = LinearSVC(maxIter=10, regParam=0.1) 
+ # Load training data
+ training = spark.read(...)
+ lsvc = LinearSVC(maxIter=10, regParam=0.1)
  # Fit the model  
- lsvcModel = lsvc.fit(training) 
+ lsvcModel = lsvc.fit(training)
  # Print the coefficients and intercept for linearsSVC
- print("Coefficients: " + str(lsvcModel.coefficients)) 
- print("Intercept: " + str(lsvcModel.intercept)) 
+ print("Coefficients: " + str(lsvcModel.coefficients))
+ print("Intercept: " + str(lsvcModel.intercept))
  ```
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -79,7 +84,7 @@ Notes:
 ## Model Evaluation Sample Code (Python)
 ```python
 from pyspark.ml.evaluation import MultiClassClassificationEvaluator  
-#select (prediction, true label) and compute test error 
+#select (prediction, true label) and compute test error
 
 evaluator = MulticlassClassificationEvaluator(labelCol="indexedLabel", \
 predictionCol="prediction", metricName="accuracy")
@@ -90,9 +95,9 @@ print("Test Error = %g " % (1.0 - accuracy))
 ```
 <!-- {"left" : 0, "top" : 0.9, "height" : 2.13, "width" : 10.25} -->
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -104,19 +109,19 @@ Notes:
 
  *  **Approximate time**: 20-30 mins
 
- *  **Instructions**: 
+ *  **Instructions**:
 
      - Follow instructions for Spark Python / Scala
 
      - 'college-admission' data, use SVM to predict admission status
 
- *  **To Instructor** 
+ *  **To Instructor**
 
      - Demo this lab on screen
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -128,12 +133,12 @@ Notes:
 
 
  * Implemented by  
- **pyspark.ml.classification.NaïveBayes**  (python) 
+ **pyspark.ml.classification.NaïveBayes**  (python)
  **org.apache.spark.ml.classification.NaïveBayes**  (Scala)
 
  * Mostly used for text classification
 
-Notes: 
+Notes:
 
 
 
@@ -150,7 +155,7 @@ Notes:
 | labelCol      | Label Column                         | "label"           |
 
 
-Notes: 
+Notes:
 
 
 
@@ -165,9 +170,9 @@ nb = NaïveBayes(training, 1.0, modelType='multinomial')
 # Fit the model  
 nbModel = nb.fit(training)
 ```
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -175,7 +180,7 @@ Notes:
 ## Model Evaluation Sample Code (Python)
 ```python
 from pyspark.ml.evaluation import MultiClassClassificationEvaluator
-# select (prediction, true label) and compute test error* 
+# select (prediction, true label) and compute test error*
 
 evaluator = MulticlassClassificationEvaluator(    labelCol="indexedLabel", \
 predictionCol="prediction", metricName="accuracy")
@@ -184,17 +189,17 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Test Error = %g " % (1.0 - accuracy))
 ```
-Notes: 
+Notes:
 
 ---
 
-## Naïve Bayes Example: College Admission
+## Naïve Bayes Example : College Admission
 
 
  * To Instructor <br/>
  Please walk through Naïve Bayes demo
 
-Notes: 
+Notes:
 
 
 
@@ -207,13 +212,13 @@ Notes:
 
  *  **Approximate time**: 20-30 mins
 
- *  **Instructions**: 
+ *  **Instructions**:
 
      - Follow instructions for Spark Python / Scala
 
      - 'spam' data, use Naïve Bayes to predict SMS spam status
 
 
-Notes: 
+Notes:
 
 ---

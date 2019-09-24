@@ -4,13 +4,13 @@
 
 ## AI / Machine Learning / Deep Learning
 
-<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="width:37%;float:right;"/><!-- {"left" : 6.86, "top" : 2.22, "height" : 3.07, "width" : 3.07} -->
 
- *  **Artificial Intelligence (AI):** Broader concept of "making machines smart"
+ * **Artificial Intelligence (AI):** Broader concept of "making machines smart"
 
- *  **Machine Learning:** Current application of AI that machines learn from data using mathematical, statistical models
+ * **Machine Learning:** Current application of AI that machines learn from data using mathematical, statistical models
 
- *  **Deep Learning: (Hot!)** Using Neural Networks to solve some hard problems
+ * **Deep Learning: (Hot!)** Using Neural Networks to solve some hard problems
 
 
 
@@ -23,13 +23,12 @@ Notes:
 ## AI / Machine Learning / Deep Learning
 
 
-<img src="../../assets/images/machine-learning/AI-ML-DL-2.png" alt="AI-ML-DL-02.png" style="max-width:100%;"/>
+<img src="../../assets/images/machine-learning/AI-ML-DL-2.png" alt="AI-ML-DL-02.png" style="max-width:100%;"/><!-- {"left" : 1.02, "top" : 1.85, "height" : 4.26, "width" : 8.21} -->
+
 
 Notes:
 
 ---
-
-
 
 ## Deep Learning (DL)
 
@@ -58,7 +57,8 @@ Notes:
 ## Deep Neural Network - Face Recognition
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" style="width:32%;">
+<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" style="width:32%;"/><!-- {"left" : 2.9, "top" : 1.08, "height" : 5.9, "width" : 4.46} -->
+
 
 Notes:
 
@@ -81,6 +81,12 @@ Notes:
 | Feature Engineering                  | Features needs to specified manually (by experts)             | DL can learn high level features from data automatically         |
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
+
+<!-- {"left" : 0.13, "top" : 0.83, "height" : 6.74, "width" : 9.99, "columnwidth" : [2.59, 3.32, 4.09]} -->
+
+
+
+
 Notes:
 
 * https://www.analyticsvidhya.com/blog/2017/04/comparison-between-deep-learning-machine-learning/
@@ -91,7 +97,8 @@ Notes:
 ## Machine Learning vs. Deep Learning
 
 
-<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" style="width:60%;">
+<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" style="width:60%;"/><!-- {"left" : 1.18, "top" : 1.29, "height" : 5.98, "width" : 7.88} -->
+
 
 Notes:
 
@@ -101,7 +108,9 @@ Notes:
 
 ## 1980's and 1990's
 
-<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-01.png" style="width:80%;">
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-01.png" style="width:80%;"/><!-- {"left" : 0.71, "top" : 1.44, "height" : 5.08, "width" : 8.83} -->
+
+
 
 
 Notes:
@@ -113,7 +122,9 @@ Source: Jeff Dean
 
 ## 1990+
 
-<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-02.png" style="width:80%;">
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-02.png" style="width:80%;"/><!-- {"left" : 0.22, "top" : 1.16, "height" : 5.64, "width" : 9.8} -->
+
+
 
 Notes:
 
@@ -124,7 +135,9 @@ Source: Jeff Dean
 
 ## Now
 
-<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-03.png" style="width:80%;">
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-03.png" style="width:80%;"/><!-- {"left" : 0.31, "top" : 1.21, "height" : 5.55, "width" : 9.64} -->
+
+
 
 Notes:
 
@@ -143,6 +156,12 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
+<!-- {"left" : 0.25, "top" : 0.76, "height" : 6.89, "width" : 9.75, "columnwidth" : [2.86, 3.17, 3.72]} -->
+
+Notes:
+
+
+
 ---
 
 ## Structured Data vs. Unstructured Data
@@ -152,7 +171,14 @@ Notes:
 | Data has well defined structure.                         | Structure is not well defined or non existing |
 | Data in a database tables are well defined.  10 columns, first column is integer, second column is timestamp ..etc | videos, images                                             |
 
-<img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="XXX image not found" style="max-width:60%;"/>
+<!-- {"left" : 0.26, "top" : 0.92, "height" : 2.65, "width" : 9.82, "columnwidth" : [6.33, 3.49]} -->
+
+<img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="XXX image not found" style="max-width:60%;"/><!-- {"left" : 1.9, "top" : 3.72, "height" : 3.44, "width" : 6.45} -->
+
+
+Notes:
+
+
 ---
 
 ## Structured Data Examples
@@ -167,7 +193,15 @@ Notes:
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
 
-- Text data (CSV, JSON) can have structure too
+<!-- {"left" : 2.1, "top" : 1.48, "height" : 2.68, "width" : 6.04, "columnwidth" : [1.36, 1.44, 1.22, 2.02]} -->
+
+
+
+---
+
+## Structured Data Examples
+
+ * Text data (CSV, JSON) can have structure too
 
 JSON data
 
@@ -175,44 +209,49 @@ JSON data
 {   "name" : "Joe",
     "email" : "joe@gmail.com" }
 ```
+<!-- {"left" : 0, "top" : 2.05, "height" : 0.87, "width" : 6.39} -->
 
 CSV data (Comma Seperated Values)
+
 ```
 joe,joe@gmail.com
 jane,jane@gmail.com
 ```
+<!-- {"left" : 0, "top" : 4.22, "height" : 1.3, "width" : 6.39} -->
+
+
+Notes:
+
 
 ---
 
 ## Unstructured Data Examples
 
 
-- Text
-    - Documents : email, word documents
+ * Text
+    - Documents: email, word documents
     - Survey results (customer feedback)
     - customer support ticket notes
 
-- Binary data
+ * Binary data
     - Audio (phone call recordings)
     - Images
     - Video (YouTube videos)
 
-<img src="../../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
-<img src="../../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
-<img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
-<img src="../../assets/images/generic/3rd-party/video-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
-<img src="../../assets/images/generic/3rd-party/audio-headphones-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 2.21, "top" : 5.33, "height" : 1.22, "width" : 0.97} --><img src="../../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 3.53, "top" : 5.45, "height" : 0.97, "width" : 0.97} --><img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 4.85, "top" : 5.15, "height" : 1.51, "width" : 0.97} --><img src="../../assets/images/generic/3rd-party/video-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 6.14, "top" : 5.42, "height" : 1.04, "width" : 0.97} --><img src="../../assets/images/generic/3rd-party/audio-headphones-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/><!-- {"left" : 7.43, "top" : 5.45, "height" : 0.97, "width" : 1.17} -->
 
+
+Notes:
 
 ---
 
 ## Semi-Structured Data
 
-- This is 'between' structured and and unstructured
+ * This is 'between' structured and and unstructured
 
-- Data has some structure, but it may not be well defined
+ * Data has some structure, but it may not be well defined
 
-- Example, tweet data
+ * Example, tweet data
 
 ```json
 {   "user_id" : "user123",
@@ -223,8 +262,12 @@ jane,jane@gmail.com
     "image_url" : "https://imgurl.com/1234"
 }
 ```
-
+<!-- {"left" : 0, "top" : 3, "height" : 1.41, "width" : 10.25} -->
 **Question to the class: What data points you can extract from above tweet?      Which is structured / unstructured?**
+
+Notes:
+
+
 
 ---
 
@@ -241,8 +284,13 @@ jane,jane@gmail.com
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
----
+<!-- {"left" : 0.25, "top" : 0.76, "height" : 6.89, "width" : 9.75, "columnwidth" : [2.86, 3.17, 3.72]} -->
 
+
+Notes:
+
+
+---
 
 ## Deciding Between Machine Learning(ML) and Deep Learning(DL)
 
@@ -256,3 +304,9 @@ jane,jane@gmail.com
     - lot of data
     - and lot of compute time   
     to produce good results
+
+
+Notes:
+
+
+

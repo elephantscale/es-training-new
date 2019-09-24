@@ -32,7 +32,7 @@ Notes:
 
 *  **Output**
 
-     - Admitted: Yes or No
+     - Admitted : Yes or No
 
 
 | **gre** | **gpa** | **rank** | **admitted** |

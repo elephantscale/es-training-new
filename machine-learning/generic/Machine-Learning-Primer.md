@@ -330,7 +330,7 @@ Notes:
 
 ## Tools for Scalable Deep Learning
 
-<img src="../../assets/images/logos/tensorflow-logo.png" style="width:20%;float:right;">
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;">
 
  *  **`TensorFlow`**
      - Based on "data flow graphs"
@@ -378,15 +378,15 @@ Notes:
 
 <img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Primer-Lab-Design-ML-Algorithm-0.png" style="width:40%;float:right;">
 
- *  **Problem:**
+ *  **Problem** :
 
      - Domestic tension
 
- *  **Solution:** 
+ *  **Solution** :
 
      - Buy flowers
 
- *  **Questions:** 
+ *  **Questions** :
 
      - How much $$$ to spend
 
