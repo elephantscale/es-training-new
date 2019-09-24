@@ -3,11 +3,12 @@
 ._.DS_Store
 *.log
 *.out
+out/
 *.swp
 
 ## ES Slides stuff
 *-gen.md
-assembly.out/*
+assembly.out*
 # generated pptx
 *-gen.pptx
 

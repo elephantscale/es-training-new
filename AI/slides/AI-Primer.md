@@ -648,7 +648,7 @@ Notes:
 # A Brief History of AI
 
 
-[../../machine-learning/slides/AI-brief-history.md](../../machine-learning/slides/AI-brief-history.md)
+[../../machine-learning/generic/AI-brief-history.md](../../machine-learning/generic/AI-brief-history.md)
 
 ---
 
@@ -679,7 +679,7 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 
 # AI Vocabulary
 
-[../../machine-learning/slides/AI-vocabulary.md](../../machine-learning/slides/AI-vocabulary.md)
+[../../machine-learning/generic/AI-vocabulary.md](../../machine-learning/generic/AI-vocabulary.md)
 
 ---
 
@@ -1154,7 +1154,7 @@ It may help to think along these lines
 
 # Machine Learning vs. Deep Learning
 
-[../../machine-learning/slides/ML-vs-DL.md](../../machine-learning/slides/ML-vs-DL.md)
+[../../machine-learning/generic/ML-vs-DL.md](../../machine-learning/generic/ML-vs-DL.md)
 
 ---
 
@@ -1175,7 +1175,7 @@ https://www.youtube.com/watch?v=LcfLo7YP8O4
 
 # Machine Learning Algorithms
 
-[../../machine-learning/slides/ML-Algorithms.md](../../machine-learning/slides/ML-Algorithms.md)
+[../../machine-learning/generic/ML-Algorithms.md](../../machine-learning/generic/ML-Algorithms.md)
 
 ---
 
