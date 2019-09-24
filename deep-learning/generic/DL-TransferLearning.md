@@ -1,50 +1,73 @@
-Transfer Leraning
-======
+# Transfer Learning
+---
 ## Learning Objectives
    * You will be able to:
      - Understand Transfer Learning
      - Understand Pre-Trained Models
      - Customize pretrained models
 
+Notes:
+
+
 ---
 
 # About Transfer Learning
 
+---
+
 ## Transfer Learning
 
  * Let us say you need an expert in a certain field:
-   - Say you need someone who knows brain surgery! 
+   - Say you need someone who knows brain surgery!
    - And let's say that there are no brain surgeons to be found!
    - What to do?
+
  * Well, you could start studying brain surgery!
-   - But that would take some time. 
+   - But that would take some time.
    - A LOT of time!
    - YEARS of time!
+
+---
+
+## Transfer Learning
+
  * OR, you could try to find someone else
    - Maybe an expert in, say some other type of surgery.
    - Say heart surgery.
+
  * Will the heart surgeon be able to perform brain surgery?
    - Not right away.
    - But she probably would be better off than you would be!
    - And if she studied brain surgery, she could learn it quickly.
    - Because she knows a lot about surgery in general.
 
+
+
+Notes:
+
+
 ---
 
 ## What is Transfer Learning?
 
  * Deep layers require  **LOTS**  of time and effort to train
- 
+
  * They also may require huge amounts of **data** to train
    - Maybe **petabytes** of training data.
-   - Do you have that much data? 
+   - Do you have that much data?
    - Then what to do?
 
  * Much of the early layers are for extracting features
      - Mostly the same for most real world use cases.
      - Early layers are about identifying areas of interest in the data
      - Later layers are about applying that to a problem.
- 
+
+
+
+Notes:
+
+
+
 ---
 
 ## Pre trained Model
@@ -53,25 +76,24 @@ Transfer Leraning
    - Others have worked on it before.
    - Much of their work is useful to you
    - "Stand on the shoulders of giants"
-
  * Instead of starting from scratch, why not start from a known point?
-   - We often "preinitialize" weights to random values.
-   - Random values are *guarunteed* not to work.
+   - We often "pre-initialize" weights to random values.
+   - Random values are *guaranteed* not to work.
    - But a known working state would at least work for *some* problem.
-
  * Examples of Pre-trained models for Image Recognition
    - Inception
    - Resnet
- * Eample of Pre-Trained model for Natural Language
+ * Example of Pre-Trained model for Natural Language
      - Word2Vec
 
-Notes: 
+Notes:
 
 
 
 ---
 
 ## The Surprise
+
  * The surprise is that a pre-trained model works pretty well!
  * Even if it was trained totally differently from your data
  * Why is this?
@@ -82,15 +104,28 @@ Notes:
  * In real life:
    - We usually like to do some transfer learning if possible.
 
+
+Notes:
+
+
+
+---
+
 ## Applying the Model to your data.
 
  * Adding Layers
    - We often several `dense` layers to the back end of the network.
-   - This allows us to apply the data to our problem. 
+   - This allows us to apply the data to our problem.
 
+
+Notes:
+
+
+---
 
 # Example Transfer Learning Architectures
 
+---
 
 ## LeNet
 
@@ -101,9 +136,9 @@ Notes:
   - Mostly constrained by resources of the day
 
 
-![https://cdn-images-1.medium.com/max/1600/0\*MU7G1aH1jw-6eFiD.png](../../assets/images/deep-learning/lenet-architecture.png) <!-- {"left" : 1.02, "top" : 4.11, "height" : 2.02, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/lenet-architecture.png" style="width:90%;" /> <!-- {"left" : 1.02, "top" : 4.11, "height" : 2.02, "width" : 8.21} -->
 
-Notes: 
+Notes:
 
 ---
 
@@ -112,31 +147,36 @@ Notes:
 * Applied LeNet to full size RGB imags (224x224x3) with 1000 classes.
 * Still very popular
 
-![CNN-Imagenet.png](../../assets/images/deep-learning/CNN-Imagenet.png) <!-- {"left" : 1.02, "top" : 2.49, "height" : 3.97, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/CNN-Imagenet.png" style="width:90%;" /> <!-- {"left" : 1.02, "top" : 2.49, "height" : 3.97, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 ---
 
 ## VGGNet
 
 * Most popular transfer learning architecture
+
 * Simplified Architecture
 
 
-![CNN-VGGNet.png](../../assets/images/deep-learning/CNN-VGG.png) <!-- {"left" : 1.02, "top" : 2.03, "height" : 4.85, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/CNN-VGG.png" style="width:70%;" /> <!-- {"left" : 1.02, "top" : 2.03, "height" : 4.85, "width" : 8.21} -->
 
-Notes: 
+Notes:
 
 ---
 
 ## VGGNet
 
-![CNN-VGGNet-2.png](../../assets/images/deep-learning/CNN-VGG-2.png) <!-- {"left" : 0.62, "top" : 2.21, "height" : 2.1, "width" : 9.01} -->
+
+&nbsp;
+&nbsp;
+
+<img src="../../assets/images/deep-learning/CNN-VGG-2.png" style="width:90%;"/> <!-- {"left" : 0.62, "top" : 2.21, "height" : 2.1, "width" : 9.01} -->
 
 
-Notes: 
+Notes:
 
 
 ---
@@ -146,32 +186,32 @@ Notes:
 * Uses Residual Neural Networks (RNNs) - Not FeedforardR
 * Both Residual and Convolutional
 
-![https://cdn-images-1.medium.com/max/1600/0\*pkrso8DZa0m6IAcJ.png](../../assets/images/deep-learning/CNN_resnet.png) <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
+<img src="../../assets/images/deep-learning/CNN_resnet.png" style="width:90%;" /> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
 
-Notes: 
+Notes:
 
 
 ---
 
 ## Inception
 
-* Created by Google; state of the art ConvNet 
+* Created by Google; state of the art ConvNet
 
-![](../../assets/images/deep-learning/CNN-Inception.png) <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
+<img src="../../assets/images/deep-learning/CNN-Inception.png" style="width:90%;"/> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
 
-Notes: 
+Notes:
 
 
 ---
 
 ## Comparison of Transfer Learning Architectures
 
-![https://cdn-images-1.medium.com/max/2000/1\*ZqkLRkMU2ObOQWIHLBg8sw.png](../../assets/images/deep-learning/CNN-tl-comparison.png) <!-- {"left" : 0.52, "top" : 2.11, "height" : 3.75, "width" : 9.2} -->
+<img src="../../assets/images/deep-learning/CNN-tl-comparison.png" style="width:90%;"/> <!-- {"left" : 0.52, "top" : 2.11, "height" : 3.75, "width" : 9.2} -->
 
 
 
 
-Notes: 
+Notes:
 
 ---
 
@@ -181,15 +221,16 @@ Notes:
  * ResNet is a close second with some valid use cases.
  * Inception and ResNet are often ensembled (combined together).
 
+---
+
 ## Transfer Learning Lab
 
 
  * Download inception Dataset
 
- * Perform Transfer Learning on image classification dataset. 
+ * Perform Transfer Learning on image classification dataset.
 
-Notes: 
+Notes:
 
 
 
----

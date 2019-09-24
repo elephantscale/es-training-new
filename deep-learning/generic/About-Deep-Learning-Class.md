@@ -1,5 +1,9 @@
 # Deep Learning With TensorFlow & Keras
 
+<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" style="background:white;width:20%;"/> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="background:white;width:15%;"/> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/keras-logo-1.png" style="background:white;width:15%;"/>
+
 ---
 
 ## About This Class
@@ -19,27 +23,27 @@ Notes:
 ---
 ## Pre-requisites and Expectations
 
-* Basic Python knowledge is assumed
+<img src="../../assets/images/logos/python-logo-1.png" style="background:white;width:25%;float:right;"/><!-- {"left" : 6.71, "top" : 1.48, "height" : 0.76, "width" : 3.15} -->
 
-* Have a Python development environment
-   - We will set this up in class
- 
-* We don't expect Math / Statistics background
+ * Basic Python knowledge is assumed
+    - if you are new to Python, we will provide some resources
 
-* Curiosity! Ask a lot of questions 
+ * We don't expect Math / Statistics background
 
-* This is a **Intro** Deep Learning class
+ * Curiosity! Ask a lot of questions
+
+ * This is a **Intro** Deep Learning class
     - No previous knowledge is assumed
     - Class will be based on the pace of majority of the students
 
 
-Notes: 
+Notes:
 
 
 ---
 ## Data Science Totem pole
 
-<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 0.55, "top" : 1.09, "height" : 5.48, "width" : 9.16} -->
+<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/><!-- {"left" : 0.55, "top" : 1.25, "height" : 5.48, "width" : 9.16} -->
 
 
 Notes:
@@ -49,33 +53,22 @@ Notes:
 ## Agenda - 3 Days
 
 
-*  **Day 1 (Introducing TensorFlow and Machine Learning)** 
-
-    - Machine Learning Intro
-    - Data Exploration
+*  **Day 1 (Introducing TensorFlow and Deep Learning)**
+    - Deep Learning Intro
     - TensorFlow Intro
     - TensorFlow Playground
-
-*  **Day 2 (TensorFlow APIs)** 
-     - TensorFlow Low Level API
-     - Datasets
-     - Estimator API
+    - Deep Learning concepts
+*  **Day 2 (TensorFlow / Keras)**
+     - Keras Intro
      - Regression
-     - Neural Networks
+     - Classification
+*  **Day 3  (Deep Learning)**
+     - CNNs (Images)
+     - RNNs (Text, Translation)
+     - Model serving
+     - Workshop
 
-Notes: 
-
-
----
-## Agenda Continued
-
- *  **Day 3  (Deep Learning)**
-
-     - CNNs
-     - RNNs
-     - Parallel TensorFlow
-
-Notes: 
+Notes:
 
 
 ---
@@ -85,11 +78,11 @@ Notes:
  * Highly interactive (questions and discussions are welcome)
  * Hands-on (learn by doing)
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX Image Missing" style="width:50%;"/> <!-- {"left" : 1.7, "top" : 0.97, "height" : 5.53, "width" : 6.85} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX Image Missing" style="width:40%;"/> <!-- {"left" : 2.54, "top" : 2.75, "height" : 4.17, "width" : 5.17} -->
 
 ---
 
-## About You And Me
+## Introductions
 
  * About Instructor
 
@@ -98,14 +91,11 @@ Notes:
      - Your background (developer, admin, manager, ...)
      - Technologies you are familiar with
      - Familiarity with Python (scale of 1 - 4 ;  1 - new,   4 - expert)
-     - Familiarity with TensorFlow (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Familiarity with TensorFlow / Deep Learning (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
-     
- <img src="../../assets/images/generic/3rd-party/ice-cream-1.jpg" style="width:25%;"/>   &nbsp;
- <img src="../../assets/images/generic/3rd-party/hiking-2.jpg" style="width:30%;"/>
 
-
-Notes: 
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 5.22, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 5.24, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 5.22, "height" : 1.76, "width" : 1.99} -->
+Notes:
 
 
 

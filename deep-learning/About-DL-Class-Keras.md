@@ -3,12 +3,14 @@
 ---
 
 ## Class Objectives
+
 - Objective 1
 - Objective 2
 
 ----
 
 ## Logistics
+
 - Instructor will provide contact details
 
 - Slides will be emailed to you

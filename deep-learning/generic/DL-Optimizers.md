@@ -35,7 +35,7 @@
 
 ## Gradient Descent Demo
 
-<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
+<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
 <img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-3.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
 
 [Animation 1](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-1.gif)
@@ -153,7 +153,7 @@ Image credit : AZQuotes
 
 Here you see Nestrov approach is slightly closer to optimum
 
-<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/>
+<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="width:40%;"/>
 
 
 ---
@@ -269,10 +269,11 @@ keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.
 ---
 ## Animations of Various Optimizers
 
-#### Long valley
-"Algos without scaling based on gradient information really struggle to break symmetry here - SGD gets no where and Nesterov Accelerated Gradient / Momentum exhibits oscillations until they build up velocity in the optimization direction. Algos that scale step size based on the gradient quickly break symmetry and begin descending quickly"
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-2-long-valley.png" alt="XXX image missing" style="width:45%;float:right;"/>
 
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-2-long-valley.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%"/>
+**Long valley**
+* "Algos without scaling based on gradient information really struggle to break symmetry here - SGD gets no where and Nesterov Accelerated Gradient / Momentum exhibits oscillations until they build up velocity in the optimization direction. Algos that scale step size based on the gradient quickly break symmetry and begin descending quickly"
+
 
 [Link for animation](https://s3.amazonaws.com/elephantscale-public/media/optimizer-animation-2-long-valley.gif)
 
@@ -285,10 +286,11 @@ Notes:
 
 ## Animations of Various Optimizers
 
-#### Saddle Point
-"Behavior around a saddle point. NAG/Momentum again like to explore around, almost taking a different path. Adadelta/Adagrad/RMSProp proceed like accelerated SGD."
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="width:50%;float:right;"/>
 
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%"/>
+**Saddle Point**
+* "Behavior around a saddle point. NAG/Momentum again like to explore around, almost taking a different path. Adadelta/Adagrad/RMSProp proceed like accelerated SGD."
+
 
 [Link for animation](https://s3.amazonaws.com/elephantscale-public/media/optimizers-animation-3-saddle-point.gif)
 

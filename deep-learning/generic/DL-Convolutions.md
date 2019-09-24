@@ -1,18 +1,19 @@
-Introducing Convolutions
-======
+# Introducing Convolutions
+---
 
 ## Process of Convolution
 
 
- * Imagine a small patch being slid across the input image. This sliding is called  **convolving** .
+ * Imagine a small patch being slid across the input image. This sliding is called  **convolving**.
 
- * It is similar to a flashlight moving from the top left end progressively scanning the entire image. This patch is called the  **filter/kernel** . The area under the filter is the receptive field.
-
-![](../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png)
+ * It is similar to a flashlight moving from the top left end progressively scanning the entire image. This patch is called the  **filter/kernel**. The area under the filter is the receptive field.
 
  * The idea is to detect local features in a smaller section of the input space, section by section to eventually cover the entire image.
 
  * In other words, the CNN layer neurons depends only on nearby neurons from the previous layer. This has the impact of discovering the features in a certain limited area of the input feature map.
+
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png" alt="CNN-Process-of-Convolution-1.png" style="background:white;width:20%;margin-top:-35px;"/>
+
 
 Notes: 
 
@@ -22,7 +23,6 @@ Notes:
 
 ## Process of Convolution
 
-
  * Assume the filter/kernel is a weight matrix "wk". For example, let's assume a 3X3 weighted matrix.
 
 |   |   |   |
@@ -31,9 +31,7 @@ Notes:
 | 1 | 0 | 0 |
 | 1 | 0 | 1 |
 <!-- {"left" : 0.39, "top" : 1.52, "height" : 1.6, "width" : 3.53} -->
-
  * The weight matrix is a filter to extract some particular features from the original image. It could be for  extracting curves, identifying a specific color, or recognizing a particular voice.
-
  * Assume the input to be 6X6
 
 |    |    |     |    |    |     |
@@ -59,8 +57,7 @@ Notes:
 
 
  * As the filter/kernel is slided across the input layer, the convolved layer is obtained by adding the values obtained by element wise multiplication of the weight matrix.
-
- *  **Input layer**          /            **Filter** 
+ *  **Input layer** / **Filter** 
 
 |        |        | Input   | Layer |    |     |
 |--------|--------|---------|-------|----|-----|
@@ -72,7 +69,7 @@ Notes:
 |   4    |   23   |   2     | 1     | 3  | 9   |
 
 <!-- {"left" : 0.73, "top" : 3.08, "height" : 2.8, "width" : 5.46} -->
-
+&nbsp;
 
 |   | Filter |   |
 |---|--------|---|
@@ -81,6 +78,9 @@ Notes:
 | 1 | 0      | 1 |
 
 <!-- {"left" : 6.67, "top" : 3.08, "height" : 1.6, "width" : 2.28} -->
+
+
+---
 
 ## Weighted Matrix
 
@@ -106,12 +106,9 @@ Notes:
 
 ## Process of Convolution (Contd.)
 
-
  * The filter then moves by 1 pixel to the next receptive field and the process is repeated. The output layer obtained after the filter slides over the entire image would be a 4X4 matrix.
-
- * This is called an  **activation map/ feature map** .
-
- *  **Input layer**           /              **Filter**
+ * This is called an  **activation map/ feature map**.
+ *  **Input layer**/**Filter**
 
 |    |        | Input   | Layer  |    |     |
 |----|--------|---------|--------|----|-----|
@@ -124,8 +121,6 @@ Notes:
 
 <!-- {"left" : 0.73, "top" : 3.08, "height" : 2.8, "width" : 5.46} -->
 
-
-
 |   | Filter |   |
 |---|--------|---|
 | 0 | 1      | 1 |
@@ -133,6 +128,9 @@ Notes:
 | 1 | 0      | 1 |
 
 <!-- {"left" : 6.67, "top" : 3.08, "height" : 1.6, "width" : 2.28} -->
+
+
+---
 
 ## Output
 
@@ -184,10 +182,9 @@ Notes:
 
 ## Convolutional Layer
 
-
  * The image shows two kernels - vertical and horizontal filters. Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter.
 
-![](../../assets/images/deep-learning/CNN-Convolutional-Layer-Contd--1.png)
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="CNN-Convolutional-Layer-Contd--1.png" style="background:white;width:40%;"/>
 
  *  **VERTICAL AND HORIZONTAL FILTERS** 
 
@@ -201,13 +198,11 @@ Notes:
 
 ## Convolutional Layer (Contd.)
 
-
-
  * The effect of multiplying with vertical kernel filter is that all pixels except the vertical lines get subdued. Similarly with horizontal kernel filter, it accentuates the horizontal lines. 
 
  * The output image has a feature map, which highlights the areas in the image that are most similar to the filter.
 
-![](../../assets/images/deep-learning/CNN-Convolutional-Layer-Contd--1.png)
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="CNN-Convolutional-Layer-Contd--1.png" style="background:white;width:50%;"/>
 
 
 Notes: 
@@ -217,24 +212,19 @@ Notes:
 
 ---
 
-
 # Padding
 
+---
 
 ## Zero Padding
 
-
  * A neuron located in row i, column j of a given layer is connected to neurons in the previous layer located in rows i to i+fh-1, columns j to j+fw-1, where fh and fw are the height and width of the receptive field.
-
  * To maintain height and width dimensions of convolutional layer same as previous layer, one zero-pads the input layer.
 
-![](../../assets/images/deep-learning/CNN-Zero-Padding-1.png)
-
+<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png" alt="CNN-Zero-Padding-1.png" style="background:white;width:40%;"/>
  *  *CNN layer with zero padding* 
 
 Notes: 
-
-
 
 
 ---
@@ -261,7 +251,6 @@ Notes:
 
 ---
 
-
 ## Convolutional Layer Hyperparameters
 
  * The hyperparameters of CNN are:
@@ -280,9 +269,8 @@ Notes:
 
 
 ---
-
-
 # Stacking Filters
+---
 
 ## Stacking Multiple Feature Maps
 
@@ -296,7 +284,8 @@ Notes:
  *  *CNN layers with multiple feature maps* 
 
 
-![](../../assets/images/deep-learning/CNN-Stacking-Multiple-Feature-Maps-1.png)
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;"/>
+
 Notes: 
 
 
@@ -305,7 +294,6 @@ Notes:
 ---
 
 ## Stacking Multiple Feature Maps (Contd.)
-
 
  * Images that are grayscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
 
@@ -313,7 +301,7 @@ Notes:
 
  *  *CNN layers with multiple feature maps* 
 
-![](../../assets/images/deep-learning/CNN-Stacking-Multiple-Feature-Maps-1.png)
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;margin-top:-100px;"/>
 
 
 Notes: 
@@ -324,34 +312,26 @@ Notes:
 
 ## Stacking Multiple Feature Maps (Contd.)
 
-
  * The fact that all neurons in a feature map has just one set of parameters dramatically reduces the no of parameters needed.
-
  * This also means that once a CNN has learned to recognize a pattern in one location, it can recognize it in any other location. This is known as location invariance. 
-
  * In contrast, if a regular DNN has learned to recognize a pattern in one location, it can recognize it only in that location.
 
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;margin-top:-30px;"/>
 
-![](../../assets/images/deep-learning/CNN-Stacking-Multiple-Feature-Maps-1.png)
 Notes: 
 
 
 
 ---
 
-
 ## ReLU Layer
 
-![](../../assets/images/deep-learning/activation-sigmoid-vs-relu.png)
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="activation-sigmoid-vs-relu.png" style="background:white;width:60%;"/>
 
  * After every conventional layer, a non linearity is applied to the neural network. 
-
  * Research has found that ReLU layers can train the neural networks much faster than other activation functions.
-
  * In ANN, non linearity functions like sigmoid is used. 
-
  * ReLU layers apply an activation function,     **f(x)= max(0,x),** 
-
  * which essentially drops all negative units.
 
 Notes: 
@@ -363,19 +343,13 @@ Notes:
 
 ## Pooling Layer
 
-
-![](../../assets/images/deep-learning/CNN-Max-Pooling.png)
+<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:40%;"/>
 
  * A pooling layer is used to sub-sample (i.e., shrink) the input image.
-
  * Like a convolutional layer, a pooling layer is connected to a small set of neurons in input image which fall within a receptive field.
-
  * In detail, a pooling layer takes each feature map output from the convolutional layer and prepares a condensed feature map.
-
  * This layer by itself does not have any weights.
-
  * Its function is to progressively reduce the spatial size of the representation to reduce the weight of the parameters in the network. This also controls overfitting.
-
  * A pooling layer has size, stride and padding type, as in case of a convolutional layer.
 
 Notes: 
@@ -387,28 +361,26 @@ Notes:
 ## Pooling Layer
 
 
- * Advantages :
+ * Advantages:
    - Reduce computational load
    - Reduce memory usage
    - Reduce no of parameters (thereby help reduce overfitting)
    - Increase location invariance (i.e. tolerate a little bit of image shift)
+
  * Pooling allows invariance, which means that output is less sensitive to changes to input. Invariance is useful when it is more imp. to test for presence of certain features rather than the location of those features. Eg in face detection, we wish to detect left eye and right eye, their precise locations are less important. This is what we mean by invariance.- In certain cases where location is important, invariance is not acceptable. Eg when we wish to detect in an image the edge where the two walls meet
 
+Notes: 
 
 
 ---
 
 ## Pooling Layer
 
-
-![](../../assets/images/deep-learning/CNN-Max-Pooling.png)
+<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:50%;"/>
 
  * The figure shows a max pooling layer with 2x2 kernel, stride 2 and no padding. 
-
  * Max-pooling involves taking the maximum value out of a group of input values.
-
  * Prioritizes the *largest* of the values from among a group of values.
-
  * Instead of height and weight pooling, one can pool over the depth dimension also, in which case the no of channels will reduce.
 
 

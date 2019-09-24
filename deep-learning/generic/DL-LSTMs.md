@@ -1,16 +1,20 @@
-Long Short Term Memory (LSTM) Neural Networks 
-======
+# Long Short Term Memory (LSTM) Neural Networks
+
+---
+
 ## Lesson Objectives
 
- * Learn about Long Short Term Memory (LSTM) Neural Networks 
+ * Learn about Long Short Term Memory (LSTM) Neural Networks
 
- * Understand how to use LSTM 
+ * Understand how to use LSTM
 
-Notes: 
+
+Notes:
 
 
 ---
-## Issues With RNN : Long Training Time
+
+## Issues With RNN: Long Training Time
 
  * To train an RNN on long sequences, you will need to run it over many time steps
 
@@ -22,9 +26,10 @@ Notes:
 
  * Large amount of inputs (100+) means the training time can still be long
 
-Notes: 
+Notes:
 
 ---
+
 ## Issues With RNN : Memory
 
  * Memory of the first inputs gradually fades away
@@ -37,10 +42,11 @@ Notes:
 
  * Sentiment analysis of text data
 
-Notes: 
+Notes:
 
 
 ---
+
 ## Vanishing Gradient Problem (again)
 
  *  As we train, our network becomes more and more "hardened" to new stimulus
@@ -51,36 +57,33 @@ Notes:
 
  *  Unfairly biases earlier inputs rather than later ones
 
-Notes: 
+Notes:
 
 
 ---
 
-
 ## Forgetfulness
+
+<img src="../../assets/images/deep-learning/3rd-party/Long-Short-Term-Memory-LSTM-Neural-Networks-Forgetfulness-0.png" style="width:25%;float:right;"/><!-- {"left" : 7.67, "top" : 1.08, "height" : 1.64, "width" : 2.32} -->
 
  *  Why do human brains forget?
 
      -  Is it because we can't hold the information?
-
      -  No, when we "remember" something we realize the data was there all along.
-
      -  But we somehow de-emphasized it.
 
  *  Forgetfulness is actually a good thing
 
      -  New data is the most important.
-
      -  We want to respond to changing situations.
-
      -  Past data should be increasingly less important
 
- *  We do need "forgetfulness"  
-
-![](../../assets/images/deep-learning/3rd-party/Long-Short-Term-Memory-LSTM-Neural-Networks-Forgetfulness-0.png) <!-- {"left" : 7.2, "top" : 4.91, "height" : 1.99, "width" : 2.82} -->
+ *  We do need "forgetfulness"
 
 
-Notes: 
+
+
+Notes:
 
 Image credit : https://pixabay.com/en/brain-turn-on-education-read-book-605603/
 
@@ -90,17 +93,18 @@ Image credit : https://pixabay.com/en/brain-turn-on-education-read-book-605603/
 ## Gated Recurrent Units
 
  * Gated Recurrent Units implement a Forget gate!
+
  * They "gate" the hidden state
    - With a learnable "weight"
- 
+
 
 ---
 
 ## History of GRU
- 
- * Introduced by Kyungyun Cho (et al) in 2004
-![](../../assets/images/deep-learning/3rd-party/GRU_whitepaper.png) <!-- {"left" : 7.2, "top" : 4.91, "height" : 1.99, "width" : 2.82} -->
 
+ * Introduced by Kyungyun Cho (et al) in 2004
+
+<img src="../../assets/images/deep-learning/3rd-party/GRU_whitepaper.png" style="width:60%;"/> <!-- {"left" : 1.79, "top" : 1.91, "height" : 4.7, "width" : 6.66} -->
 
 
 Notes:
@@ -111,7 +115,7 @@ https://arxiv.org/pdf/1406.1078v3.pdf
 
 ## GRU
 
-![](../../assets/images/deep-learning/3rd-party/GRU-wikipedia.png) <!-- {"left" : 7.2, "top" : 4.91, "height" : 1.99, "width" : 2.82} -->
+<img src="../../assets/images/deep-learning/3rd-party/GRU-wikipedia.png" style="width:80%;"/><!-- {"left" : 1.29, "top" : 1.28, "height" : 5.42, "width" : 7.68} -->
 
 Notes:
 
@@ -120,43 +124,40 @@ https://en.wikipedia.org/wiki/Gated_recurrent_unit#/media/File:Gated_Recurrent_U
 
 ---
 
-
 ## Limitations of GRUs
 
  * GRUs help fix the vanishing gradient problem by "gating" the "hidden state"
+
  * However, GRUs cannot diffentiate between short-term and long-term memory.
+
  * They have *one* hidden state.
+
  * This makes them perfect for shorter sequences.
- * However, longer sequences have the same problem as basic RNNs 
+
+ * However, longer sequences have the same problem as basic RNNs
+
    - Don't handle either short-term OR long-term state very well.
 
 ---
 
-		
-
 ## Long-term versus Short-term Memory
 
- *  Human Brains have two types of memory: short and long term
-
- *  Short-term memory holds data in the immediate context
-
+* Human Brains have two types of memory: short and long term
+* Short-term memory holds data in the immediate context
      -  Around 30 seconds or so
-
      -  After this, data is erased
-
- *  Long-term Memory is indefinite
-
+* Long-term Memory is indefinite
      -  Data can be accessed if a path to the memory is found
-
      -  Older data, however, may be " **forgotten**  ", the path is not found.
 
-![](../../assets/images/deep-learning/which-parts-of-the-brain-affect-memory-.png) <!-- {"left" : 1.97, "top" : 4.5, "height" : 2.71, "width" : 6.31} -->
+<img src="../../assets/images/deep-learning/which-parts-of-the-brain-affect-memory.png" style="width:50%;"/><!-- {"left" : 1.97, "top" : 4.37, "height" : 2.71, "width" : 6.31} -->
 
 
-Notes: 
+Notes:
 
 
 ---
+
 ## LSTM Networks
 
  * LSTM networks are the most commonly used variation of Recurrent Neural Networks (RNN)
@@ -168,7 +169,7 @@ Notes:
  * If we consider the LSTM cell as a black box, it can be used very much like a basic cell, except it will perform much better; training will converge faster and it will detect long-term dependencies in the data
 
 
-Notes: 
+Notes:
 
 1997 paper : https://goo.gl/j39AGv
 
@@ -176,52 +177,49 @@ https://www.safaribooksonline.com/library/view/Neural+networks+and+deep+learning
 
 
 ---
+
 ## LSTM Applications
 
  * LSTM offers
-
- * Better update equations
-
- * Better backpropagation
+   * Better update equations
+   * Better backpropagation
 
  * LSTM applications
+   * Generating sentences (e.g., character-level language models)
+   * Classifying time-series
+   * Speech recognition
+   * Handwriting recognition
 
- * Generating sentences (e.g., character-level language models)
-
- * Classifying time-series
-
- * Speech recognition
-
- * Handwriting recognition
-
-Notes: 
+Notes:
 
 
 ---
+
 ## LSTM Applications : Image / Video Captioning
 
-![](../../assets/images/deep-learning/Long-Short-Term-Memory-LSTM-Neural-Networks-LSTM-Applications-Image-Video-Captioning-0.png) <!-- {"left" : 0.81, "top" : 1.92, "height" : 3.67, "width" : 8.64} -->
+<img src="../../assets/images/deep-learning/Long-Short-Term-Memory-LSTM-Neural-Networks-LSTM-Applications-Image-Video-Captioning-0.png" style="width:70%;" /> <!-- {"left" : 0.81, "top" : 1.92, "height" : 3.67, "width" : 8.64} -->
 
 
-Notes: 
+Notes:
 
 LM2Text Paper : https://github.com/handong1587/handong1587.github.io/blob/master/_posts/deep_learning/2015-10-09-captioning.md
 
 
 ---
+
 ## LSTM: Long-Short-Term Memory
 
  *  LSTM contains a long-term memory, a "forget gate" and a short-term memory
 
-![](../../assets/images/deep-learning/LSTM-2.png) <!-- {"left" : 1.02, "top" : 2.18, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:80%;" /> <!-- {"left" : 1.02, "top" : 2.47, "height" : 3.61, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 ---
-## Components of the LSTM
 
+## Components of the LSTM
 
  *  Input Gate
 
@@ -231,17 +229,18 @@ Notes:
 
  *  Self-Recurrent Connection (memory)
 
-![](../../assets/images/deep-learning/LSTM-2.png) <!-- {"left" : 1.02, "top" : 3.16, "height" : 3.61, "width" : 8.21} -->
+
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;"/> <!-- {"left" : 1.02, "top" : 3.17, "height" : 3.61, "width" : 8.21} -->
 
 
-
-Notes: 
+Notes:
 
 
 ---
+
 ## LSTM Architecture
 
-![](../../assets/images/deep-learning/LSTM-3.png)<!-- {"left" : 0.29, "top" : 1.77, "height" : 3.97, "width" : 9.68} -->
+<img src="../../assets/images/deep-learning/LSTM-3.png" style="width:90%;" /><!-- {"left" : 0.29, "top" : 1.77, "height" : 3.97, "width" : 9.68} -->
 
 
 
@@ -250,21 +249,22 @@ Notes:
 
 
 ---
+
 ## Input Gate
 
  * The Input Gate contains the new information
 
  * LSTM input can either be user input (training data) or output of the last LSTM layer.
 
-![](../../assets/images/deep-learning/LSTM-2.png) <!-- {"left" : 1.02, "top" : 2.18, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 2.88, "height" : 3.61, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 ---
-## Output Gate
 
+## Output Gate
 
  * The Output gate is sent on to the next layer
 
@@ -275,16 +275,16 @@ Notes:
  * The memory cell value can be read as well.
 
 
-![](../../assets/images/deep-learning/LSTM-2.png) <!-- {"left" : 1.02, "top" : 3.07, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 3.17, "height" : 3.61, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 
 ---
-## Forget gate
 
+## Forget gate
 
  *  The forget gate is an example of *negative*  feedback
 
@@ -296,40 +296,41 @@ Notes:
 
      -  Prevents vanishing gradient.
 
-![](../../assets/images/deep-learning/LSTM-2.png) <!-- {"left" : 1.02, "top" : 3.43, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 3.49, "height" : 3.61, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 ---
+
 ## Self-Recurrence
 
  *  Self Recurrence is the *memory*  part of LSTM
 
  *  It means that the current value will be stored
 
- *  However, the forget gate will cause the current memory to *decay* 
+ *  However, the forget gate will cause the current memory to *decay*
 
      -  unless reinforced by the input gate.
 
-![](../../assets/images/deep-learning/LSTM-2.png) <!-- {"left" : 1.02, "top" : 3.28, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 3.43, "height" : 3.61, "width" : 8.21} -->
 
-
-Notes: 
+Notes:
 
 
 ---
+
 ## Peepholes
 
- * One popular LSTM variant, introduced by Gers & Schmidhuber (2000), is adding "peephole connections." 
+ * One popular LSTM variant, introduced by Gers & Schmidhuber (2000), is adding "peephole connections."
 
  *  allow the current *state*  of the cell to be considered at the input
 
  *  Otherwise current state cannot be directly compared with the gated input.
 
 
-Notes: 
+Notes:
 
 Link to paper : ftp://ftp.idsia.ch/pub/juergen/TimeCount-IJCNN2000.pdf
 
@@ -337,6 +338,7 @@ Good intro to LSTM : https://colah.github.io/posts/2015-08-Understanding-LSTMs/
 
 
 ---
+
 ## Activation Functions
 
  * Generally  **sigmoid**  or  **tanh**  (rather than ReLU as in CNN)
@@ -349,12 +351,14 @@ Good intro to LSTM : https://colah.github.io/posts/2015-08-Understanding-LSTMs/
 ![](../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png) <!-- {"left" : 0.64, "top" : 3.16, "height" : 3.34, "width" : 8.97} -->
 
 
-Notes: 
+Notes:
 
 
 ---
+
 ## Predicting Time Series data
 
+<img src="../../assets/images/deep-learning/time-series-stocks.png" style="width:40%;float:right;"/> <!-- {"left" : 5.69, "top" : 2.85, "height" : 2.28, "width" : 4.31} -->
  *  How do we predict time-series data?
 
  *  We can view the SP500 index a series of timestamps and data
@@ -369,15 +373,14 @@ Notes:
 
  *  Is this a Classification problem or Regression?
 
-![](../../assets/images/deep-learning/time-series-stocks.png) <!-- {"left" : 2.5, "top" : 4.51, "height" : 2.78, "width" : 5.26} -->
 
-Notes: 
+Notes:
 
 
 
 ---
-## SP500 Example
 
+## SP500 Example
 
  *  We are going to use a network something like this:
 
@@ -389,14 +392,14 @@ Notes:
 
      -  Output Layer with Linear Activation (1 output)
 
-![](../../assets/images/deep-learning/SP500.png) <!-- {"left" : 0.39, "top" : 3.93, "height" : 1.02, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/SP500.png" style="width:80%;" /> <!-- {"left" : 0.39, "top" : 3.93, "height" : 1.02, "width" : 9.48} -->
 
-Notes: 
+Notes:
 
 
 ---
-## Memory Cells
 
+## Memory Cells
 
  *  We have 2 LSTM Layers:
 
@@ -416,46 +419,44 @@ Notes:
 
      -  and predict the next 50 values after.
 
-Notes: 
+Notes:
 
 
 ---
+
 ## Training Sequences
 
+<img src="../../assets/images/deep-learning/input-sequence.png" style="width:40%;float:right;"/><!-- {"left" : 6.16, "top" : 2.16, "height" : 3.66, "width" : 3.73} -->
 
  *  We are training with sequences of 50 prices of SP500.
 
      -  50 prices
-
      -  No need for timestamps
 
  *  We then have a label of size 1 which is the 51st price in the sequence.
-
  *  We then make a new training sequence.
 
-![](../../assets/images/deep-learning/input-sequence.png) <!-- {"left" : 3.26, "top" : 3.64, "height" : 3.66, "width" : 3.73} -->
 
 
-
-Notes: 
+Notes:
 
 
 
 ---
+
 ## Feeding the Sequence
 
-
-![](../../assets/images/deep-learning/Prediction.png) <!-- {"left" : 0.31, "top" : 1.6, "height" : 4.3, "width" : 9.63} -->
-
+<img src="../../assets/images/deep-learning/Prediction.png" style="width:80%;" /> <!-- {"left" : 0.31, "top" : 1.6, "height" : 4.3, "width" : 9.63} -->
 
 
-Notes: 
+
+Notes:
 
 
 
 ---
-## Prediction
 
+## Prediction
 
  *  Each Sequence is "fed" sequentially into the neural net (only 1 input)
 
@@ -463,7 +464,7 @@ Notes:
 
      -  Layer 1: 50 cells
 
-     -  Layer 2: 100 cells 
+     -  Layer 2: 100 cells
 
  * We also predict with sequences of 50
 
@@ -471,12 +472,12 @@ Notes:
 
  *  We then compare the 50 predicted with the actual data.
 
-Notes: 
+Notes:
 
 
 ---
-## Testing the Model
 
+## Testing the Model
 
  *  We evaluate the model with the prediction
 
@@ -486,16 +487,17 @@ Notes:
 
  *  We have to take a window in time.
 
-![](../../assets/images/deep-learning/testing-the-model.png) <!-- {"left" : 2.7, "top" : 3.16, "height" : 4.25, "width" : 4.84} -->
+<img src="../../assets/images/deep-learning/testing-the-model.png" style="width:40%;"/> <!-- {"left" : 2.7, "top" : 3.16, "height" : 4.25, "width" : 4.84} -->
 
-
-Notes: 
+Notes:
 
 
 
 ---
+
 ## Our Results?
 
+<img src="../../assets/images/deep-learning/3rd-party/Upward-trend.png" style="width:15%;float:right;"/> <!-- {"left" : 8.17, "top" : 3.3, "height" : 1.68, "width" : 1.69} -->
 
  *  Does our model predict the future?
 
@@ -515,33 +517,34 @@ Notes:
 
      -  Real financial models will be far more complex.
 
-![](../../assets/images/deep-learning/3rd-party/Upward-trend.png) <!-- {"left" : 7.93, "top" : 4.12, "height" : 2.12, "width" : 2.13} -->
 
 Notes:
 
 
 
 ---
+
 ## Lab: LSTM S&P 500 stock prediction
 
- *  **Overview**:
+ *  **Overview:**
 
     - Implement LSTM based sequence detection.We will build sequences of 50, and then predict outcomes of 50.
 
- *  **Runtime**:
+ *  **Runtime:**
 
     - 30-45 minutes
 
- *  **Instructions**:
+ *  **Instructions:**
 
     - Follow the lab steps in the lab guide
 
 
 
-Notes: 
+Notes:
 
 
 ---
+
 ## LSTMs and natural language
 
  *  NLP is also treated as a sequence.
@@ -554,34 +557,36 @@ Notes:
 
  *  LSTMs are a great way to look at *semantic*  models.
 
-Notes: 
+Notes:
 
 
 ---
+
 ## Machine Translation Model
 
  *  Machine translation model is essentially a deep recurrent neural network
 
  *  The following example shows how this is done.
 
-![](../../assets/images/deep-learning/machine-translation-model.png) <!-- {"left" : 1.68, "top" : 2.54, "height" : 4.58, "width" : 6.9} -->
+<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;" /> <!-- {"left" : 1.68, "top" : 2.54, "height" : 4.58, "width" : 6.9} -->
 
 
-Notes: 
+Notes:
 
 
 
 ---
+
 ## Encoding an Output at Prediction Time
 
  *  The previous time step is fed in at the left.
 
  *  The next word in sequence is fed from the bottom, for example "go".
 
-![](../../assets/images/deep-learning/go.png) <!-- {"left" : 0.67, "top" : 2.89, "height" : 4.12, "width" : 8.91} -->
+<img src="../../assets/images/deep-learning/go.png" style="width:60%;" /> <!-- {"left" : 0.67, "top" : 2.89, "height" : 4.12, "width" : 8.91} -->
 
 
-Notes: 
+Notes:
 
 
 ---
@@ -596,10 +601,7 @@ Notes:
 
  *  Only use LSTMs when you *must*.
 
-Notes: 
+Notes:
 
-
-
----
 
 

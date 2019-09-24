@@ -1,0 +1,68 @@
+- DL Concepts
+    - flow isn't smooth
+
+    - add a basic training data flow
+
+    - use house prices as an example above
+        - guess 200k... off by -100k go back... guess 250k... off by -50k go back... guess 290k.. .off by -10k... accepted
+
+    - this is before epoch / batch / iteration
+
+    - use the analogy of a restaurant serving food for a table of guests,
+    they have to make every one reasonably happy...
+    not just one person
+    back propagation is like sending the food back... until it is cooked close to perfection
+
+    - Revisit loss / error section
+
+    - revisit activation functions
+
+    - optimizers
+    use mini golf game as example
+    hit the ball off to an angle, optimizer corrects it
+    then right angle.. hit it too short... optimizer adds a little more power
+
+    - Add a quiz at the end
+
+    - double check equations and replace them graphics
+
+    - NOTE: In this case, using the RMSprop optimization algorithm is preferable to stochastic gradient descent (SGD), because RMSprop automates learning-rate tuning for us. (Other optimizers, such as Adam and Adagrad, also automatically adapt the learning rate during training, and would work equally well here.)
+
+    - do part-1 and part-2
+
+- Gradient Descent
+    - add few more graphics, starting with no error curve.. and finding the way to bottom
+
+=====================================
+
+- DL Linear  , DL-Feedforward
+    - merge with DL-Neural-Networks
+
+    - Do linear and then FFN
+
+    - do Playground exercises here
+
+=====================================
+
+DL-RNN.md
+    - add ball prediction Example
+    https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9
+
+    - Add animations from above post
+
+    - best video : https://www.youtube.com/watch?v=LHXXI4-IEns
+
+=====================================
+
+DL-LSTMs.md
+    - https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+
+    - add animations
+
+    - best video explanation : https://www.youtube.com/watch?time_continue=40&v=8HyCNIVRbSU
+    
+========
+
+deep-learning-labs
+    - add model.plot to all notebooks
+    - fix first hidden layer being called 'input_layer'

@@ -1,5 +1,11 @@
 ## To Make slides
-##          $ES_HOME/utils/presentations/slide-assembler-v2.sh    0-slide-assembly-DL-3-days-v2.txt
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-DL-tf2-3-days.txt
+## (-d will cleanup  current assembly.out)
+
+## To Make pdfs, supply pdf arg at the end
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-tf2-3-days.txt  pdf
+## (-d will cleanup  current assembly.out)
+
 
 ## Course outline
 ./outline-Intro-to-Deep-Learning-With-TensorFlow-and-Keras.docx
@@ -7,35 +13,30 @@
 ## About
 ./generic/About-Deep-Learning-Class.md
 
-## Intro
+## DL Intro / Primer
 generic/DL-Intro.md
 
 # TensorFlow
 ./tensorflow/TENSORFLOW-Intro.md
-./tensorflow/TENSORFLOW-Lowlevel.md
 
 # A little theory
+../machine-learning/generic/ML-concepts.md
 generic/DL-Concepts.md
+
+./generic/DL-Linear.md
 
 # Introduce TensorFlow Playground
 ./generic/DL-Playground.md
 
-# TF Linear
-./tensorflow/TENSORFLOW-Linear.md
-
-./tensorflow/TENSORFLOW-Highlevel.md
+# Feed Forward
+generic/DL-Feed-Forward.md
 
 # Keras
 keras/Keras-1__Intro.md
 
-# Feed Forward
-generic/DL-Feed-Forward.md
-
-## Linear
-./keras/Keras-2__Linear.md
 
 ## CNN
-./tensorflow/TENSORFLOW-CNN.md
+./generic/DL-CNNs.md
 
 ## RNN
 ./generic/DL-RNNs.md
@@ -46,9 +47,3 @@ generic/DL-Feed-Forward.md
 
 # Parallel
 ./tensorflow/TENSORFLOW-Parallel.md
-
-
-## todo -- upto here --- 
-
-# Deep Learning
-#./generic/DL-NeuralNetworks.md

@@ -242,14 +242,15 @@ Notes:
 
  * Rank 2 Tensors are *matrices*
  
- * Here are some *matrices (rank 2) 
+ * Here are some *matrices* (rank 2) 
  
  * Initialize with Python lists or NumPy arrays
 
 ```python
-counts = tf.Variable([10,20,30], tf.int16)
-distances = tf.Variable([3.1,2.2,5.5], tf.float32)
+a = np.array ([(1,2,3), (4,5,6), (7,8,9) ])
+b = np.array ([(9, 8, 7), (6, 5, 4), (3,2,1)])
 ```
+
 <!-- {"left" : 0, "top" : 2.56, "height" : 0.91, "width" : 10.25} -->
 
 Notes: 
@@ -456,6 +457,103 @@ Notes:
 
 ---
 
+
+## Eager Execution vs Sessions
+
+ * Tensorflow's *default* mode of operation is called Eager Execution
+   - As of 2.0
+ * It means that operations are processed **immediately**
+   - Like NumPy
+ * 
+
+## About Eager Execution
+
+ * TF's Session API is very efficient:
+    - Lazy Evaluation
+    - More efficient distribution
+
+ * But, sometimes we just want **interactive** execution
+    - Think like ordinary NumPy/Pandas
+    - More interactive
+    - Great for exploration
+
+```python
+import tensorflow as tf
+tf.enable_eager_execution()
+```
+<!-- {"left" : 0, "top" : 4.26, "height" : 1.13, "width" : 7.38} -->
+
+Notes: 
+
+
+---
+
+## Example Eager Execution
+
+ * It is enabled now by default in v2.0+!
+ * Here is how we enable Eager Execution:
+
+```pycon
+>>> import tensorflow as tf
+>>> tf.enable_eager_execution()
+>>> a = tf.constant([[1,2],[3,4]])
+>>> print(a)
+
+<tf.Tensor: id=0, shape=(2, 2), dtype=int32, numpy=
+array([[1, 2],
+       [3, 4]], dtype=int32)>
+```
+<!-- {"left" : 0, "top" : 1.49, "height" : 2.64, "width" : 10.25} -->
+
+Notes: 
+
+---
+## Eager Execution and NumPy
+
+  * We can use NumPy with Eager Execution
+
+```pycon
+>>> import tensorflow as tf
+>>> tf.enable_eager_execution()
+>>> a = tf.constant([[1, 2],
+                     [3, 4]])
+>>> a.numpy()
+# => [[1 2]
+#     [3 4]]
+>>> np.multiply(a, 2)
+```
+<!-- {"left" : 0, "top" : 1.57, "height" : 3.55, "width" : 8.83} -->
+
+Notes: 
+
+---
+## Models With Eager Execution 
+  
+  * Keras layers work well with Eager Execution
+  * Here is an MNIST
+
+```python
+class MNISTModel(tf.keras.Model):
+  def __init__(self):
+    super(MNISTModel, self).__init__()
+    self.dense1 = tf.keras.layers.Dense(units=10)
+    self.dense2 = tf.keras.layers.Dense(units=10)
+
+  def call(self, input):
+    """Run the model."""
+    result = self.dense1(input)
+    result = self.dense2(result)
+    result = self.dense2(result)
+    return result
+
+model = MNISTModel()
+```
+<!-- {"left" : 0, "top" : 1.96, "height" : 4.55, "width" : 10.25} -->
+
+Notes: 
+
+---
+
 ## Session
 
 
@@ -526,28 +624,30 @@ Notes:
 ---
 
 
-## Tensorflow Dataflow Graph Lifecycle
-
-<img src="../../assets/images/deep-learning/Introduction-to-Tensorflow-Dataflow-Graph-Lifecycle.png" alt="XXX image missing" style="background:white;max-width:100%;width:50%;float:right;" />  <!-- {"left" : 5.27, "top" : 1.38, "height" : 5.68, "width" : 4.96} -->
-
-* Tensor is **created** by:
-  - Loading an external dataset
-  - Loading a python array
-* Tensor is **transformed**
-  - E.g., addition operation
-  - Result: a new tensor 
-  - Often have a sequence of transformations
-* Data is eventually **Processed**
-  - By running the session.
-  - e.g, saving data
-* At right, we:
-    - read/transform
-    - save the result.
+## Tensorflow Graph Example
 
 
-Notes: 
+<img src="../../assets/images/deep-learning/3rd-party/tensors_flowing.gif" alt="XXX image missing" style="background:white;max-width:100%;width:80%;" />
+
 
 ---
+
+
+## Dataflow
+
+ * Dataflow has several advantages that TensorFlow leverages when executing your programs:
+
+ * **Parallelism**. By using explicit edges to represent dependencies between operations, it is easy for the system to identify operations that can execute in parallel.
+
+ * **Distributed execution**. By using explicit edges to represent the values that flow between operations, it is possible for TensorFlow to partition your program across multiple devices (CPUs, GPUs, and TPUs) attached to different machines. TensorFlow inserts the necessary communication and coordination between devices.
+
+ * **Compilation**. TensorFlow's XLA compiler can use the information in your dataflow graph to generate faster code, for example, by fusing together adjacent operations.
+
+ * **Portability**. The dataflow graph is a language-independent representation of the code in your model. You can build a dataflow graph in Python, store it in a SavedModel, and restore it in a C++ program for low-latency inference.
+
+
+---
+
 
 ## All Transformations Are Lazy
 
@@ -784,97 +884,6 @@ Notes:
 
  * We only have one layer, so we are training a linear model.
  * This is basically a **logistic regression** model.
-
-Notes: 
-
----
-
-# Eager Execution
-
----
-
-## About Eager Execution
-
- * TF's Session API is very efficient:
-    - Lazy Evaluation
-    - More efficient distribution
-
- * But, sometimes we just want **interactive** execution
-    - Think like ordinary NumPy/Pandas
-    - More interactive
-    - Great for exploration
-
-```python
-import tensorflow as tf
-tf.enable_eager_execution()
-```
-<!-- {"left" : 0, "top" : 4.26, "height" : 1.13, "width" : 7.38} -->
-
-Notes: 
-
-
----
-
-## Example Eager Execution
-
- * Here is how we enable Eager Execution:
-
-```pycon
->>> import tensorflow as tf
->>> tf.enable_eager_execution()
->>> a = tf.constant([[1,2],[3,4]])
->>> print(a)
-
-<tf.Tensor: id=0, shape=(2, 2), dtype=int32, numpy=
-array([[1, 2],
-       [3, 4]], dtype=int32)>
-```
-<!-- {"left" : 0, "top" : 1.49, "height" : 2.64, "width" : 10.25} -->
-
-Notes: 
-
----
-## Eager Execution and NumPy
-
-  * We can use NumPy with Eager Execution
-
-```pycon
->>> import tensorflow as tf
->>> tf.enable_eager_execution()
->>> a = tf.constant([[1, 2],
-                     [3, 4]])
->>> a.numpy()
-# => [[1 2]
-#     [3 4]]
->>> np.multiply(a, 2)
-```
-<!-- {"left" : 0, "top" : 1.57, "height" : 3.55, "width" : 8.83} -->
-
-Notes: 
-
----
-## Models With Eager Execution 
-  
-  * Keras layers work well with Eager Execution
-  * Here is an MNIST
-
-```python
-class MNISTModel(tf.keras.Model):
-  def __init__(self):
-    super(MNISTModel, self).__init__()
-    self.dense1 = tf.keras.layers.Dense(units=10)
-    self.dense2 = tf.keras.layers.Dense(units=10)
-
-  def call(self, input):
-    """Run the model."""
-    result = self.dense1(input)
-    result = self.dense2(result)
-    result = self.dense2(result)
-    return result
-
-model = MNISTModel()
-```
-<!-- {"left" : 0, "top" : 1.96, "height" : 4.55, "width" : 10.25} -->
 
 Notes: 
 

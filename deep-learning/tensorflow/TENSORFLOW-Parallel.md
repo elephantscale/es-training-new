@@ -5,7 +5,7 @@
 ## Objectives
 
 
- * Review an Overview of Distributed TensorFlow 
+ * Review an Overview of Distributed TensorFlow
 
  * Discuss How Container Cluster Orchestration can help us.
 
@@ -17,7 +17,7 @@
 
      - Open-source / On-prem
 
-Notes: 
+Notes:
 
 
 
@@ -29,7 +29,7 @@ Notes:
 
  * TensorFlow is amazing
 
-     - High performing 
+     - High performing
 
      - Complete coverage
 
@@ -47,7 +47,7 @@ Notes:
 
      - Other techniques
 
-Notes: 
+Notes:
 
 
 
@@ -72,7 +72,7 @@ Notes:
 
      - Training for massive parallelization
 
-Notes: 
+Notes:
 
 
 
@@ -90,7 +90,7 @@ Notes:
 ![](../../assets/images/deep-learning/Scaling-Tensorflow-How-do-we-scale-this--0.png) <!-- {"left" : 1.04, "top" : 3.08, "height" : 2.98, "width" : 8.17} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -106,7 +106,7 @@ Notes:
 ![](../../assets/images/deep-learning/Scaling-Tensorflow-We-need-horizontal-scalability--0.png) <!-- {"left" : 0.81, "top" : 2.73, "height" : 2.51, "width" : 8.64} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -128,11 +128,11 @@ Notes:
 
  * Much of Google's cluster computing framework is not part of TensorFlow
 
-     - Rudimentary cluster management solution. 
+     - Rudimentary cluster management solution.
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -142,11 +142,11 @@ Notes:
 
  * Most TensorFlow configurations include a separate Training versus Serving cluster.
  (PS - Parameter Server)
- 
+
 ![](../../assets/images/deep-learning/Distributed-Tensorflow.png) <!-- {"left" : 1.02, "top" : 2.09, "height" : 4.26, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -157,7 +157,7 @@ Notes:
 <img src="../../assets/images/deep-learning/Sharded-data.png" alt="XXX image missing" style="background:white;max-width:70%;" />  <!-- {"left" : 1.04, "top" : 1.08, "height" : 5.35, "width" : 8.17} -->
 
 
-Notes: 
+Notes:
 
 - https://stackoverflow.com/questions/39559183/what-is-the-reason-to-use-parameter-server-in-distributed-tensorflow-learning
 
@@ -169,7 +169,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -206,9 +206,9 @@ def model_fn(X, Y_, mode):
 <!-- {"left" : 0, "top" : 3.84, "height" : 2.72, "width" : 10.25} -->
 
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -235,9 +235,9 @@ tf.train.ClusterSpec({
 <!-- {"left" : 0, "top" : 2.93, "height" : 2.1, "width" : 10.25} -->
 
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
@@ -247,7 +247,7 @@ Notes:
 ![](../../assets/images/deep-learning/CORE.png) <!-- {"left" : 0.73, "top" : 2.38, "height" : 3.22, "width" : 8.8} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -262,7 +262,7 @@ Notes:
 
  * Allows us to replicate and serve TensorFlow models
 
-Notes: 
+Notes:
 
 
 
@@ -289,7 +289,7 @@ Notes:
 
  * Bottom line: Distributed TensorFlow by itself isn't enough to run a cluster.
 
-Notes: 
+Notes:
 
 ---
 
@@ -302,7 +302,7 @@ Notes:
  * Libraries like scikit-learn, pandas, etc are *not* scalable.
  * Dask allows parallelization of these workloads
  * Target Framework can be dask-agnostic
- 
+
 
 ---
 
@@ -325,7 +325,7 @@ Notes:
 <img src="../../assets/images/deep-learning/Scaling-Tensorflow-Kubernetes-can-help-solve-our-problem-0.png" alt="XXX image missing" style="background:white;max-width:50%;" /> <!-- {"left" : 1.75, "top" : 3.93, "height" : 2.8, "width" : 6.75} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -342,10 +342,13 @@ Notes:
 
  * Very good cross-platform developer tools for creating Docker Images.
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Container-Images-0.png) <!-- {"left" : 3.42, "top" : 3.99, "height" : 2.86, "width" : 3.4} -->
+&nbsp;
+&nbsp;
+
+<img src="../../assets/images/deep-learning/3rd-party/Scaling-Tensorflow-Container-Images-0.png" alt="Scaling-Tensorflow-Container-Images-0.png" style="background:white;max-width:50%;"/>
 
 
-Notes: 
+Notes:
 
 
 
@@ -353,6 +356,7 @@ Notes:
 
 ## Creating Docker Images
 
+<img src="../../assets/images//logos/nvidia-logo-1.png" alt="nvidia-logo-1.png" style="background:white;max-width:50%;float:right;"/>
 
  * Creating Docker Images for GPUs is not easy
 
@@ -374,10 +378,10 @@ Notes:
 
      - Provides container management of GPU resources
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Creating-Docker-Images-0.png) <!-- {"left" : 7.67, "top" : 0.58, "height" : 2.35, "width" : 2.35} -->
 
 
-Notes: 
+
+Notes:
 
 
 
@@ -388,7 +392,7 @@ Notes:
 ![](../../assets/images/deep-learning/Nvidia-docker.png) <!-- {"left" : 1.06, "top" : 1.39, "height" : 5.2, "width" : 8.13} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -397,12 +401,12 @@ Notes:
 ## Kubernetes
 
 
- * Kubernetes gives us a master-worker cluster management solution 
+ * Kubernetes gives us a master-worker cluster management solution
 
 <img src="../../assets/images/deep-learning/Scaling-Tensorflow-Kubernetes-0.png" alt="XXX image missing" style="background:white;max-width:60%;" /> <!-- {"left" : 2.09, "top" : 2, "height" : 5.1, "width" : 6.07} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -421,7 +425,7 @@ Notes:
 
  * With Kubernetes, we can then combine the images for integration.
 
-Notes: 
+Notes:
 
 
 
@@ -446,7 +450,7 @@ Notes:
 
      - TF Training also needs access to large datasets.
 
-Notes: 
+Notes:
 
 
 
@@ -469,7 +473,7 @@ Notes:
 
  * Only suitable for compute-bound problems.
 
-Notes: 
+Notes:
 
 
 
@@ -494,7 +498,7 @@ Notes:
 
      - Unfortunately, Hadoop 3.x is alpha, so not released yet.
 
-Notes: 
+Notes:
 
 
 
@@ -511,7 +515,7 @@ Notes:
 
  * Only supports Python as language at this time.
 
-Notes: 
+Notes:
 
 
 
@@ -522,15 +526,16 @@ Notes:
 <img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 0.95, "top" : 1.27, "height" : 5.42, "width" : 8.34} -->
 
 
-Notes: 
+Notes:
 
- 
+
 
 
 ---
 
 ## Spark Deep Learning Pipelines
 
+<img src="../../assets/images/logos/spark-mllib-logo.png" alt="Scaling-Tensorflow-Spark-Deep-Learning-Pipelines-0.png" style="background:white;width:30%;float:right;"/>  
 
  * Spark ML pipelines on top of TensorFlow
 
@@ -546,11 +551,7 @@ Notes:
 
      - Integrating TF Models with Spark SQL as UDFs
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Spark-Deep-Learning-Pipelines-0.png) <!-- {"left" : 3.6, "top" : 4.1, "height" : 2.76, "width" : 3.06} -->
-
-
-
-Notes: 
+Notes:
 
 
 
@@ -569,28 +570,26 @@ Notes:
 
  * Much of what allows TensorFlow to be distributed across massive scale at Google is proprietary to Google.
 
-     - Doesn't want to give away the store! 
+     - Doesn't want to give away the store!
 
      - Open-source tensorflow on a single node is not nearly as interesting as massively scaled tensorflow.
 
  * We may want to try to implement this ourselves in the cloud.
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Becoming-Google-but-How--0.png) <!-- {"left" : 7.38, "top" : 0.89, "height" : 0.85, "width" : 2.61} -->
+
+<img src="../../assets/images/logos/google-logo-1.png" alt="google-logo-1.png" style="background:white;width:25%;"/>  &nbsp; &nbsp; <img src="../../assets/images/logos/google-cloud-logo-2.png" alt="google-cloud-logo-2.png" style="background:white;width:25%;"/>  
 
 
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Becoming-Google-but-How--1.png) <!-- {"left" : 3.14, "top" : 4.62, "height" : 2.44, "width" : 3.97} -->
-
-
-
-
-Notes: 
+Notes:
 
 
 
 ---
 
 ## What about AWS?
+
+<img src="../../assets/images/logos/aws-logo-2.png" alt="gaws-logo-2.png" style="background:white;width:20%;float:right;"/>
 
 
  * AWS is the market leader in cloud  (nearly 50% market share)
@@ -613,12 +612,10 @@ Notes:
 
  * Engineering a solution on AWS is our responsibility.
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-What-about-AWS--0.png) <!-- {"left" : 3.29, "top" : 6, "height" : 1.35, "width" : 3.63} -->
 
 
 
-
-Notes: 
+Notes:
 
 
 
@@ -643,12 +640,12 @@ Notes:
 
      - Market share: 4.7% (2/2017) -- minor player compared to Amazon and Microsoft.
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-The-Alternative-Google-Cloud-Platform-0.png) <!-- {"left" : 3.14, "top" : 4.86, "height" : 2.45, "width" : 3.98} -->
+<img src="../../assets/images/logos/google-cloud-logo-2.png" alt="google-cloud-logo-2.png" style="background:white;width:25%;float:right;margin-top:-700px;"/>  
 
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -664,11 +661,12 @@ Notes:
 
      - Cloud Machine Learning
 
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:70%;"/>  
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png) <!-- {"left" : 0.73, "top" : 2.96, "height" : 3.99, "width" : 8.78} -->
 
 
-Notes: 
+
+Notes:
 
 
 
@@ -679,10 +677,10 @@ Notes:
 
  * First we must gather data into Cloud Storage
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png) <!-- {"left" : 0.73, "top" : 1.99, "height" : 3.99, "width" : 8.78} -->
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:90%;"/>  
 
 
-Notes: 
+Notes:
 
 
 
@@ -703,12 +701,12 @@ Notes:
 
      - But it's a worthwhile tradeoff for ML purposes
 
-![](../../assets/images/deep-learning/3rd-party/Scaling-Tensorflow-Why-Cloud-Storage--0.png) <!-- {"left" : 2.59, "top" : 4.61, "height" : 2.6, "width" : 5.07} -->
+
+<img src="../../assets/images/deep-learning/3rd-party/Scaling-Tensorflow-Why-Cloud-Storage--0.png" alt="Scaling-Tensorflow-Why-Cloud-Storage--0.png" style="background:white;width:30%;"/>  
 
 
 
-
-Notes: 
+Notes:
 
 
 
@@ -719,10 +717,10 @@ Notes:
 
  * We need a layer to perform our feature extraction and feature engineering.  Cloud Dataflow is the ideal choice.
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png) <!-- {"left" : 0.73, "top" : 1.99, "height" : 3.99, "width" : 8.78} -->
 
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:90%;"/>  
 
-Notes: 
+Notes:
 
 
 
@@ -743,10 +741,11 @@ Notes:
 
      - Example: One-Hot Encoding transformation
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Why-Cloud-Dataflow--0.png" alt="XXX image missing" style="background:white;max-width:30%;" />  <!-- {"left" : 3.13, "top" : 4.08, "height" : 3.31, "width" : 3.99} -->
+
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Why-Cloud-Dataflow--0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:30%;"/> <!-- {"left" : 3.13, "top" : 4.08, "height" : 3.31, "width" : 3.99} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -759,17 +758,12 @@ Notes:
 
  * Allows pipeline-based transformation of data
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Dataflow-is-Apache-Beam-0.png" alt="XXX image missing" style="background:white;max-width:30%;" />  <!-- {"left" : 0.87, "top" : 3.07, "height" : 3.21, "width" : 3.21} -->
-
-
-
-<!-- ![](../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Dataflow-is-Apache-Beam-0.png)  -->
-<!-- {"left" : 5.81, "top" : 2.38, "height" : 4.58, "width" : 3.34} -->
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Dataflow-is-Apache-Beam-0.png" alt="XXX image missing" style="background:white;max-width:30%;"/> <!-- {"left" : 5.81, "top" : 2.38, "height" : 4.58, "width" : 3.34} -->
 
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -780,10 +774,11 @@ Notes:
 
  * We want transparently scaled and sharded ML training and models.  Cloud ML is a great serverless choice.
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png) <!-- {"left" : 0.73, "top" : 2.36, "height" : 3.99, "width" : 8.78} -->
 
 
-Notes: 
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;max-width:85%;" />
+
+Notes:
 
 
 
@@ -803,7 +798,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -828,14 +823,14 @@ Notes:
 gcloud ml-engine jobs submit training $JOB_NAME \         
 --scale-tier $SCALE_TIER --runtime-version 1.0 \
 --job-dir $GCS_JOB_DIR \                                   
---module-name trainer.task \ 
+--module-name trainer.task \
 --package-path trainer/ \                                    
 --region us-central1 \                                    
 --train-files $TRAIN_GCS_FILE \     --eval-files $EVAL_GCS_FILE \        --train-steps $TRAIN_STEPS
 
 ```
 <!-- {"left" : 0, "top" : 3.78, "height" : 2.33, "width" : 10.25} -->
-Notes: 
+Notes:
 
 
 
@@ -869,7 +864,7 @@ hyperparameters:
 <!-- {"left" : 0, "top" : 1.94, "height" : 5.12, "width" : 7.78} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -891,7 +886,7 @@ Notes:
      - Vendor lock-in
      - (The same concerns are even more true of AWS/Azure)
 
-Notes: 
+Notes:
 
 
 
@@ -916,11 +911,11 @@ Notes:
 
      - AWS does not support TensorFlow as a serverless offering.
 
-     - No direct support for Kubernetes 
+     - No direct support for Kubernetes
 
         * AWS does have ECS... which is sort of the same thing.
 
-Notes: 
+Notes:
 
 
 
@@ -933,9 +928,9 @@ Notes:
  * Hadoop YARN
  * Spark on YARN
  * Storm (for real-time)
- * Hbase / Cassandra 
+ * Hbase / Cassandra
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Traditional-Open-Source-Big-Data-Stack-0.png" alt="XXX image missing" style="background:white;max-width:50%;" /> <!-- {"left" : 1.91, "top" : 3.83, "height" : 3.45, "width" : 6.41} -->
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Traditional-Open-Source-Big-Data-Stack-0.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 1.91, "top" : 3.83, "height" : 3.45, "width" : 6.41} -->
 
 ---
 
@@ -947,7 +942,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -968,27 +963,22 @@ Notes:
 
  * Kafka: For high speed data pub-sub:
 
-<!-- ![](../../assets/images/deep-learning/Scaling-Tensorflow-We-need-a-new-STACK-0.png)  -->
-<!-- {"left" : 8.43, "top" : 1.1, "height" : 0.6, "width" : 1.12} -->
+
+<img src="../../assets/images/logos/spark-logo.png" alt="spark-logo.png" style="background:white;width:10%;float:right;margin-top:-490px;"/>
+&nbsp;
+
+<img src="../../assets/images/logos/tensorflow-logo-1.png" alt="tensorflow-logo-1.png" style="background:white;width:10%;float:right;margin-top:-470px;"/>
+&nbsp;
+
+<img src="../../assets/images/logos/STACK-2.png" alt="STACK-2.png" style="background:white;width:7%;float:right;margin-top:-380px;"/>
+&nbsp;
+
+<img src="../../assets/images/logos/cassandra-logo.png" alt="cassandra-logo.png" style="background:white;width:10%;float:right;margin-top:-350px;"/>
+&nbsp;
+
+<img src="../../assets/images/logos/kafka-logo-1.png" alt="kafka-logo-1.png" style="background:white;width:8%;float:right;margin-top:-320px;"/>
 
 
-
-<!-- ![](../../assets/images/deep-learning/Scaling-Tensorflow-We-need-a-new-STACK-1.png)  -->
-<!-- {"left" : 8.56, "top" : 2.03, "height" : 0.74, "width" : 0.86} -->
-
-
-<!-- ![](../../assets/images/deep-learning/3rd-party/Scaling-Tensorflow-We-need-a-new-STACK-2.png)  -->
-<!-- {"left" : 8.75, "top" : 3.07, "height" : 0.74, "width" : 0.74} -->
-
-
-
-<!-- ![](../../assets/images/deep-learning/Scaling-Tensorflow-We-need-a-new-STACK-3.png)  -->
-<!-- {"left" : 8.56, "top" : 3.91, "height" : 0.76, "width" : 1.12} -->
-
-
-
-<!-- ![](../../assets/images/deep-learning/Scaling-Tensorflow-We-need-a-new-STACK-4.png)  -->
-<!-- {"left" : 8.88, "top" : 4.91, "height" : 0.76, "width" : 0.48} -->
 
 
 ---
@@ -996,7 +986,7 @@ Notes:
 ## Advantages of the STACK
 
 
- * Allows us to operate with Big Data 
+ * Allows us to operate with Big Data
 
  * Store data in real time in-memory (Arrow) or on-disk (Cassandra)
 
@@ -1006,11 +996,11 @@ Notes:
 
  * No need for proprietary cloud solutions (Google, Microsoft, Amazon)
 
- * Not Complete enough for you? Try the 
+ * Not Complete enough for you? Try the
 
      - PANCAKE STACK! (next slide)
 
-Notes: 
+Notes:
 
 
 
@@ -1019,13 +1009,12 @@ Notes:
 ## The New Data Science Stack: Pancake Stack
 
 
-![](../../assets/images/deep-learning/PancakeStack.png) <!-- {"left" : 0, "top" : 0.77, "height" : 5.95, "width" : 10.25} -->
+<img src="../../assets/images/deep-learning/PancakeStack.png" alt="PancakeStack.png" style="background:white;width:80%;"/> <!-- {"left" : 0, "top" : 0.77, "height" : 5.95, "width" : 10.25} -->
 
 
 
 
-
-Notes: 
+Notes:
 
 
 
@@ -1054,7 +1043,7 @@ Notes:
 
  * Visualize: Kibana
 
-Notes: 
+Notes:
 
 
 
@@ -1064,26 +1053,19 @@ Notes:
 
 
  * Do one thing and do it well...
-
      - Use Microservices approach with Kubernetes
-
      - Each container does ONE task on One Technology
-
  * Kubernetes can orchestrate the stack.
-
  * Use docker images for each component on each node:
-
      - Spark master, spark worker
-
      - Arrow worker
-
      - Etc
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-Too-complicated-Enter-Kubernetes--0.png) <!-- {"left" : 3.56, "top" : 3.85, "height" : 3.13, "width" : 3.13} -->
+<!-- TODO: shiva -->
+<img src="../../assets/images/logos/kubernetes-logo-2.png" alt="kubernetes-logo-2.png" style="background:white;width:80%;"/> <!-- {"left" : 3.56, "top" : 3.85, "height" : 3.13, "width" : 3.13} -->
 
 
-
-Notes: 
+Notes:
 
 
 
@@ -1110,19 +1092,15 @@ Notes:
 
  * Use Elements of PANCAKE STACK for specific data science use cases.
 
-Notes: 
+Notes:
 
 
 
 ---
 
-## Questions?? 
+## Questions??
 
 
  * I hope you've enjoyed this talk and am delighted to hear your questions.
 
-Notes: 
-
-
-
----
+Notes:

@@ -22,16 +22,16 @@ Notes:
 
 ## TensorFlow
 
-- Google open sourced TensorFlow in Nov 2015
+ * Google open sourced TensorFlow in Nov 2015
 
-- Gained popularity very quickly because of its
+ * Gained popularity very quickly because of its
     - clean design
     - flexibility
     - scalability
     - huge community
     - and of course Google's push behind it
 
-- Google is actively developing and supporting TensorFlow; also offers it in Google Cloud platform ;  wants to see TensorFlow as _the_ AI software)
+ * Google is actively developing and supporting TensorFlow; also offers it in Google Cloud platform ;  wants to see TensorFlow as _the_ AI software)
 
 - [tensorflow.org](http://www.tensorflow.org/)
 
@@ -42,7 +42,7 @@ Notes:
  * Tensorflow has outpaced its rivals in popularity:
  * Survey of Github Stars:
 
-<img src="../../assets/images/deep-learning/Github_stars.png" alt="XXX image missing" style="background:white;max-width:100%;width:100%;" />  <!-- {"left" : 0.56, "top" : 2.36, "height" : 4.88, "width" : 9.13} -->
+<img src="../../assets/images/deep-learning/Github_stars.png" alt="XXX image missing" style="background:white;max-width:100%;width:100%;"/>  <!-- {"left" : 0.56, "top" : 2, "height" : 4.88, "width" : 9.13} -->
 
 
 Notes:
@@ -50,11 +50,9 @@ Notes:
 
 ---
 
-
 ## Big Spike in Job Postings
 
-
- <img src="../../assets/images/deep-learning/Introduction-to-Tensorflow-Used-More-and-More-0.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" /> <!-- {"left" : 1.01, "top" : 1.41, "height" : 5.5, "width" : 8.02} -->
+ <img src="../../assets/images/deep-learning/Introduction-to-Tensorflow-Used-More-and-More-0.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/> <!-- {"left" : 1.83, "top" : 1.11, "height" : 4.52, "width" : 6.59} -->
 
  Source: indeed.com
 
@@ -64,37 +62,37 @@ Notes:
 
 ## TensorFlow Features
 
-- Runs on all platforms (Windows, Mac, Linux) and mobile devices
-- Can run in-browser (tensorflow.js)
+ * Runs on all platforms (Windows, Mac, Linux) and mobile devices
+ * Can run in-browser (tensorflow.js)
 
-- Core is written in C++ ; very efficient implementation
+ * Core is written in C++ ; very efficient implementation
     - wrappers in Python for ease of use
     - other language support improving : Java, Go, R
 
-- Other high level APIs are built on top of TesnorFlow ; e.g. [Keras](http://keras.io/) and [Pretty Tensor](https://github.com/google/prettytensor/)
+ * Other high level APIs are built on top of TesnorFlow ; e.g. [Keras](http://keras.io/) and [Pretty Tensor](https://github.com/google/prettytensor/)
 
-- Has a very nice UI called **Tensorboard** to visualize graphs and learning process
+ * Has a very nice UI called **Tensorboard** to visualize graphs and learning process
 
-- Great community
+ * Great community
     - https://github.com/jtoy/awesome-tensorflow
 
 ---
 
-
-
 ## TensorFlow Noteworthy Versions
 
-| Version | Release Date | Noteworthy Features         |
-|---------|--------------|-----------------------------|
-| 0.01    | 2015-11      | Initial Release from Google |
-| 0.20    | 2016-05      | TensorFlow Reaches Maturity |
-| 1.0     | 2017-01      | First Stable Release        |
-| 1.1     | 2017-07      | Installable with Pip/conda  |
-| 1.12    | 2018-12      |                             |
-| 1.14    | 2019-02      | Stable  Release             |
-| 2.0RC   | 2019-08      | RC Release                  |
 
-<!-- {"left" : 0.61, "top" : 1.55, "height" : 3, "width" : 9.03, "columnwidth" : [2.01, 3.03, 3.98]} -->
+| Version 	| Release Date 	| Noteworthy Features         	|
+|---------	|--------------	|-----------------------------	|
+| 0.01    	| 2015-11      	| Initial Release from Google 	|
+| 0.20    	| 2016-05      	| TensorFlow Reaches Maturity 	|
+| 1.0     	| 2017-01      	| First Stable Release        	|
+| 1.1     	| 2017-07      	| Installable with Pip/conda  	|
+| 1.12    	| 2018-12      	| x                           	|
+| 1.14    	| 2019-02      	| Stable Release              	|
+| 2.0RC   	| 2019-08      	| RC Release                  	|
+
+
+
 
 
 Notes:
@@ -107,7 +105,7 @@ Notes:
 
  * Tensorflow is in a *big* shift to Tensorflow 2
 
-<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> &nbsp;  &nbsp;
+<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;width:50%;"/> <!-- {"left" : 1.02, "top" : 1.71, "height" : 4.56, "width" : 8.21} -->
 
 
 ---
@@ -137,7 +135,7 @@ Notes:
    - use CUDA library
    - very easy to get set up: install tensorflow-gpu
    - Datacenters: *Must* use **Tesla** GPU line per Nvidia TOS
-   - Workstations: Recommend **Quadro** 
+   - Workstations: Recommend **Quadro**
    - Home/PC: GeForce (Gaming) GPUs work well
  * Tensorflow 2.0 also supports AMD using OpenCL
    - Support a bit new
@@ -157,18 +155,31 @@ Notes:
    - *Free* evaluation with Google Colaboratory
  * Edge TPUs
    - Google Sells physical devices
+   - Designed to be used in IOT type devices, robotics, etc
 
 
---- 
+---
 
 
 ## Google Colaboratory
 
- * 
+ * Google Colaboratory is a **free** hosted Juyter notebook
+ * Provides GPU and TPU workloads!
+   - The only **free** GPU and TPU access available!
+ * Great for light workloads and evaluation
+ * Serious users will want to upgrade to Google Cloud
+   - security
+   - Guarunteed performance access
+
+
+---
 
 ## Cloud Cost
 
 * Cost on Google Cloud Platform: (Hourly)
+
+ &nbsp;
+
 
 | Device | Type | Gen    | Year | Memory | Cost  |
 |--------|------|--------|------|--------|-------|
@@ -179,10 +190,6 @@ Notes:
 | TPUv2  | TPU  | 2nd    | 2017 | 64GB   | $4.50 |
 
 ---
-
-
-
-
 
 
 ## Parallel TensorFlow
@@ -204,8 +211,9 @@ Notes:
 ## Tensorflow Parallelism
 
 
-<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> &nbsp;  &nbsp;
-<img src="../../assets/images/deep-learning/tensorflow-graph-2.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" />
+<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> &nbsp;  &nbsp; &nbsp; <!-- {"left" : 0.49, "top" : 2.9, "height" : 2.61, "width" : 4.85} -->
+<img src="../../assets/images/deep-learning/tensorflow-graph-2.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;"/><!-- {"left" : 5.48, "top" : 1.84, "height" : 4.72, "width" : 4.45} -->
+
 
 ---
 
@@ -227,7 +235,6 @@ Notes:
 ---
 
 ## TensorFlow + Spark
-
 
  * Spark is becoming more popular than Hadoop itself these days:
 
@@ -256,7 +263,8 @@ Notes:
 ## Tensorflow on Spark
 
 
-<img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" />
+<img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/><!-- {"left" : 1.02, "top" : 1.31, "height" : 5.35, "width" : 8.21} -->
+
 
 Notes:  
 - RMDA : Remote Memory Direct Access  
@@ -265,7 +273,6 @@ Notes:
 ---
 
 ## Deep Learning in TensorFlow
-
 
  * Deep Learning simply means a Neural Network:
 
@@ -308,7 +315,6 @@ Notes:
 
 ---
 
-
 ## Base TensorFlow is Low Level
 
 
@@ -338,14 +344,13 @@ Notes:
    - Mid-Level
    - High-Level
 
-<img src="../../assets/images/deep-learning/tensorflow_layers_small.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.35, "top" : 3.25, "height" : 2.80, "width" : 9.53} -->
+<img src="../../assets/images/deep-learning/tensorflow_layers_small.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.6, "top" : 3.32, "height" : 2.65, "width" : 9.03} -->
 
 
 
 ---
 
 ## tf.estimator API
-
 
  * Packaged With TensorFlow core as of 1.0
      - Formerly named scikit-train, then `tf.contrib.learn`
@@ -394,6 +399,112 @@ Notes:
 
 ---
 
+## Tensorflow 2.x
+
+ * Tensorflow is in a *big* shift to Tensorflow 2
+
+<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> <!-- {"left" : 2.06, "top" : 1.52, "height" : 3.4, "width" : 6.13} -->
+
+&nbsp;
+&nbsp;
+
+ * We will review some of the major differences
+
+---
+
+## Eager Execution
+
+ * Eager Execution is now the **default** mode of execution
+ * This means that code will execute like Python normally does
+ * Graphs and Sessions are more like implementation details
+ * We will still use the graph/session execution for production workloads
+ * Allows us to set breakpoints, step through code, etc
+   - `tf.config.experimental_run_functions_eagely(True)`
+   - Not for production!  But great for development
+
+---
+
+## Globals and Garbage Collection
+
+ * In Tensorflow 1.x, all variables were added to the global graph
+ * No Garbage Collection!
+ * Very difficult to keep track of old variables littering the Tensorflow Session Graph
+   - much like C/C++ memory leaks!
+ * Now -- If you lose a reference to a variable, it is garbage collected
+   - Just like in regular Python (or Java, C#, ....)
+
+
+---
+
+## Functions
+
+ * Tensorflow 1.x Didn't really have functions
+   - You could use a **Python** function, but it was difficult to optimize
+   - It was also difficult to share with other models.
+
+ * Tensorflow 2.x allows **functions** at the tensorflow Graph Level
+   - use the `@tf.function` annotation
+   - Kind of like a SQL Stored Procedure
+   - Allows you to embed common functionality at the *tensorflow* level
+   - More efficient / better reuse
+
+ * Allows Shared Libraries and Code
+   - Common Functions
+   - Can be serialized and deserialized
+
+---
+
+## AutoGraph
+
+ * **AutoGraph** allows python loops like **for**, **while** to be converted into tensorflow graph code
+
+ * Alows us to write loops that will allow dynamic placement of layers / cells
+
+ * Example (Dynamic RNN):
+
+
+```python
+for i in tf.range(input_data.shape[0]): # Note the For loop
+  output, state = self.cell(input_data[i], state)
+  outputs = outputs.write(i, output)
+
+```
+<!-- {"left" : 0, "top" : 3.47, "height" : 1.03, "width" : 10.25} -->
+
+
+---
+
+## Keras
+
+ * Keras is now the **recommended** API for all Tensorflow work
+   - Keras API is stable (**UNLIKE** Tensorflow Core API)
+   - Used in other frameworks too!
+
+ * Keras is *much* easier to use in most cases
+
+ * We can "wrap" low-level TF code in Keras wrappers
+   - mostly for experts
+
+ * Other tensorflow APIs (`tf.estimator`) now are just Keras layers
+
+
+---
+
+## Dataset API
+
+ * The Dataset API is much expanded
+   - Handles Data Management side of things!
+   - Very important part of Data Science
+
+ * Used now with Keras API, not just Estimator API
+
+ * Recommended way to handle structured data
+   - or when mixing structured data with unstructured data in the same model.
+
+ * Dataset API allows us to use very large datasets (too big for Pandas dataframes, etc)
+
+---
+
 # Installing TesnorFlow
 
 ---
@@ -409,8 +520,7 @@ Notes:
 
  * Give access to virtual machines
 
- <img src="../../assets/images/generic/lab-setup.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.31, "top" : 2.41, "height" : 3.1, "width" : 9.62} -->
-
+ <img src="../../assets/images/generic/lab-setup.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.31, "top" : 3.54, "height" : 3.1, "width" : 9.62} -->
 
 Notes:
 
@@ -434,7 +544,7 @@ Notes:
 $ (sudo) pip install tensorflow keras
 $ (sudo) pip install tensorflow-gpu keras  # For GPU
 ```
-<!-- {"left" : 0, "top" : 2.93, "height" : 0.65, "width" : 8.27} -->
+<!-- {"left" : 0, "top" : 3.05, "height" : 0.73, "width" : 9.29} -->
 
  * Anaconda: Now officially supported
 
@@ -442,7 +552,7 @@ $ (sudo) pip install tensorflow-gpu keras  # For GPU
 $ conda install tensorflow keras
 $ conda install tensorflow-gpu keras  # For GPU
 ```
-<!-- {"left" : 0, "top" : 4.74, "height" : 0.73, "width" : 8.27} -->
+<!-- {"left" : 0, "top" : 5.1, "height" : 0.82, "width" : 9.29} -->
 
 
 
@@ -455,48 +565,31 @@ Notes:
 ## Installing version 2.0 RC
 
  * Currently version 2.0 is in Release Candidate status, but can still be installed
- * Will *not* be installed unless we specify the version specifcally 
+ * Will *not* be installed unless we specify the version specifcally
 
 ```bash
 $ (sudo) pip install tensorflow==2.0.0-rc0 keras
 $ (sudo) pip install tensorflow-gpu==2.0.0-rc0 keras  #GPU version
 ```
+<!-- {"left" : 0, "top" : 2.39, "height" : 0.98, "width" : 10.25} -->
+
+&nbsp;
 
  * Conda install does not support TF 2.0 (and will not until release is official)
    - Just use `pip`.
 
 ---
 
-## Lab: Installing Tensorflow and Keras
-
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
-
-
- *  **Overview**:   
- In this lab, we will become familiar with the lab environment, set up TensorFlow, and start.
-
- * **Note** :   
- The training VMs are already setup, no need for this setup.  You can skip to next step
-
- *  **Approximate time**: 15-20 minutes
-
- *  **Instructions for students**:
-
-     - Follow the **install.html**
-
-
----
-
 ## Lab: Hello World in TensorFlow
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
 
 
- *  **Overview**: In this lab, we will do a hello world for TensorFlow and Keras.
+ *  **Overview:** In this lab, we will do a hello world for TensorFlow and Keras.
 
- *  **Approximate time**: 15-20 minutes
+ *  **Approximate time:** 15-20 minutes
 
- *  **Instructions for students**:
+ *  **Instructions for students:**
 
      - Follow  **basics/1-helloworld.ipynb** lab
 
@@ -505,7 +598,33 @@ Notes:
 
 ---
 
-
-
-
 ## Review and Questions
+
+---
+# Backup slides
+---
+
+## Lab: Installing Tensorflow and Keras
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 7.11, "top" : 2.69, "height" : 3.25, "width" : 2.44} -->
+
+ *  **Overview:**
+     - In this lab, we will become familiar with the lab environment, set up TensorFlow, and start.
+
+ * **Note :** 
+     - The training VMs are already setup, no need for this setup. You can skip to next step
+
+ *  **Approximate time:** 15-20 minutes
+
+ *  **Instructions for students:**
+
+     - Follow the **install.html**
+
+
+
+
+
+
+
+
+

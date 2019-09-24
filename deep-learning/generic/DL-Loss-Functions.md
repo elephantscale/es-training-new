@@ -55,12 +55,12 @@ Total error  = `(+2) + (-1) + (-1) + (+3) + (-3) = 0`
 | Sum of Squared Errors (SSE) | Binary Class Entrophy   | Cosine Error   |
 | Mean Square Error (MSE)     | Negative Log Likelihood | L1 Hinge Error |
 | Mean Absolute Error (MAE)   | Margin Classifier       |                |
-|                             | Soft Margin Classifier  |                |
+|                             | Soft Margin Classifier  | &nbsp;         |
 
 ---
 ## Regression Loss Functions
 
-Summary
+**Summary**
 
 - Sum of Squared Errors (SSE)
 
@@ -96,7 +96,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 $$ SSE = \sum_{i=1}^{n}(y_i - \hat y_i)^2 $$
 
-<!-- <img src="../../assets/images/machine-learning/equation-error-SSE-1" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
+<!-- <img src="../../assets/images/machine-learning/equation-error-SSE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%;"/> -->
 
 - Also known as
     - **Residual Sum of Squares (RSS)**
@@ -109,7 +109,7 @@ $$ SSE = \sum_{i=1}^{n}(y_i - \hat y_i)^2 $$
 
 ## Mean Squared Error (MSE) (L2)
 
-<!-- <img src="../../assets/images/machine-learning/equation-error-MSE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /> -->
+<!-- <img src="../../assets/images/machine-learning/equation-error-MSE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%;"/> -->
 
 $$  MSE = \frac{1}{n} \sum_{i=1}^{n}(y_i - \hat y_i)^2  $$
 
@@ -137,7 +137,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Mean Absolute Error (MAE) (L1)
 
-<!-- <img src="../../assets/images/machine-learning/equation-error-MAE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> -->
+<!-- <img src="../../assets/images/machine-learning/equation-error-MAE-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%;"/> -->
 
 $$  MAE = \frac{1}{n} \sum_{i=1}^{n} \lvert y_i - \hat y_i \rvert  $$
 
@@ -161,7 +161,7 @@ $$  MAE = \frac{1}{n} \sum_{i=1}^{n} \lvert y_i - \hat y_i \rvert  $$
 
 ## Classification Loss Functions
 
-Summary
+**Summary**
 
 - Binary Class Entrophy
 
@@ -217,11 +217,17 @@ $$ E =\frac{1}{n}\sum_{i=1}^{n}\big(\hat{y}^{(i)}-y^{(i)}\cdot\log(\hat{y}^{(i)}
     - Vectors are 'not similar' if they are perpendicular / orthogonal
 
 
-$$ E =-\frac{\mathbf{y}\cdot\mathbf{\hat{y}}}{||\mathbf{y}||_{2}\cdot||\mathbf{\hat{y}}||_{2}}=-\frac{\sum_{i=1}^{n}y^{(i)}\cdot\hat{y}^{(i)}}{\sqrt{\sum_{i=1}^{n}\big(y^{(i)}\big)^{2}}\centerdot\sqrt{\sum_{i=1}^{n}\big(\hat{y}^{(i)}\big)^{2}}} $$
+<img src="../../assets/images/deep-learning/formula-01.png" alt="formula-01.png" style="background:white;max-width:100%;" width="60%" />
+
 
 $$ \mathbf{y} (actual) =\{y^{(1)},y^{(2)},\dots,y^{(n)}\}\in\mathbb{R}^{n} $$
 
 $$ \mathbf{\hat{y}} (predicted)=\{\hat{y}^{(1)},\hat{y}^{(2)},\dots,\hat{y}^{(n)}\}\in\mathbb{R}^{n} $$
+
+
+Notes:
+
+$$ E =-\frac{\mathbf{y}\cdot\mathbf{\hat{y}}}{||\mathbf{y}||_{2}\cdot||\mathbf{\hat{y}}||_{2}}=-\frac{\sum_{i=1}^{n}y^{(i)}\cdot\hat{y}^{(i)}}{\sqrt{\sum_{i=1}^{n}\big(y^{(i)}\big)^{2}}\centerdot\sqrt{\sum_{i=1}^{n}\big(\hat{y}^{(i)}\big)^{2}}} $$
 
 ---
 

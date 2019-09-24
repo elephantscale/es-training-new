@@ -66,14 +66,15 @@ Notes:
     - Single Layer (Linear)
     - Sigmoid Activation Function
 
-- Note: Historically Sigmoid function has been very popular.  
+- Note : Historically Sigmoid function has been very popular.  
 Recently, ReLU functions work better and are more popular now.
 
 
-Notes:
+Notes:  
 
 
 ---
+
 ## Tanh Activation
 
 - `tanh (z) = 2σ(2z) - 1`
@@ -212,7 +213,7 @@ Notes:
 
 <img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%;"/>
 
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%;"/>
 
 ---
 
@@ -326,5 +327,3 @@ Source :
 ## Activation Functions Review
 
 <img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
-
----
