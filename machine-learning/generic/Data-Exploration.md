@@ -80,9 +80,9 @@ Notes:
  = 44.9k
 * Mean is denoted by  x&#772;
 
-<img src="../../assets/images/machine-learning/equation-mean-1.png"  style="width:50%;float:left"/>
+<img src="../../assets/images/formulas-equations/mean-1.png"  style="width:50%;float:left"/>
 
-<img src="../../assets/images/machine-learning/equation-weighted-mean-1.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/formulas-equations/mean-weighted-2.png" style="width:40%;float:right;"/>
 
 
 
@@ -300,7 +300,7 @@ Notes:
     - Add them all up
     - Divide by number of observations (N)
 
-<img src="../../assets/images/machine-learning/equation-variance-1.png"  style="width:40%;"/>
+<img src="../../assets/images/formulas-equations/variance-1.png"  style="width:40%;"/>
 
 
 * Properties
@@ -320,9 +320,9 @@ Notes:
 
 **Variance & standard deviation** ( μ is mean )  
 
-<img src="../../assets/images/machine-learning/equation-variance-1.png"  style="width:40%;"/>
+<img src="../../assets/images/formulas-equations/variance-1.png"  style="width:40%;"/>
 
-<img src="../../assets/images/machine-learning/equation-standard-deviation-1.png"  style="width:40%;"/>
+<img src="../../assets/images/formulas-equations/standard-deviation-1.png"  style="width:40%;"/>
 
 
 Notes:
@@ -597,7 +597,7 @@ Notes:
 
 ## Covariance Formula
 
-<img src="../../assets/images/machine-learning/equation-covariance-1.png" style="width:60%;"/>
+<img src="../../assets/images/formulas-equations/covariance-1.png" style="width:60%;"/>
 
 Notes:
 

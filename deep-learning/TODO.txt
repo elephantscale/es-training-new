@@ -30,6 +30,8 @@
 
     - do part-1 and part-2
 
+    - convert optimizer formulas to images
+
 - Gradient Descent
     - add few more graphics, starting with no error curve.. and finding the way to bottom
 
@@ -60,7 +62,7 @@ DL-LSTMs.md
     - add animations
 
     - best video explanation : https://www.youtube.com/watch?time_continue=40&v=8HyCNIVRbSU
-    
+
 ========
 
 deep-learning-labs

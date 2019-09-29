@@ -1,4 +1,9 @@
-# Introduction to Machine Learning With Spark & Python
+# Machine Learning With Apache Spark & Python
+
+<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:15%;" /> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/python-logo-1.png" style="width:20%;" /> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" />
+
 
 ---
 
@@ -27,6 +32,9 @@ Notes:
         - If you don't know these, don't worry, we will walk you through it
 
 * We don't expect Math / Statistics background
+
+* This is an **Introductory** class.
+    - No previous knowledge of ML is assumed
 
 Notes:
 
@@ -188,6 +196,7 @@ Notes:
 
 ## About You And Me
 
+* About the Instructor
 * About you
     - Your Name
     - Your background (developer, admin, manager, etc.)
@@ -197,9 +206,9 @@ Notes:
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby...etc)
 
-<img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:30%;"/>   &nbsp;
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:25%;"/>
-<img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:25%;"/>
+<img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/>   &nbsp;
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:20%;"/>
+<img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:20%;"/>
 
 
 
@@ -208,14 +217,6 @@ Notes:
 
 ---
 
-## Recommended Resources
-
-* Please see our handout
-
-Notes:
-
-
----
 
 ## Class Logistics
 

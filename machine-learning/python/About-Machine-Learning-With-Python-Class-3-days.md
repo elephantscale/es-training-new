@@ -201,14 +201,6 @@ Introductions
 Notes:
 
 
----
-
-## Recommended Resources
-
-* Please see our handout
-
-Notes:
-
 
 ---
 

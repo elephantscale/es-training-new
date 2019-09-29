@@ -56,7 +56,7 @@ Notes:
 
 ## Supervised Machine Learning
 
-<img src="../../assets/images/machine-learning/3rd-party/Supervised.png" style="width:39%;float:right;" />
+<img src="../../assets/images/machine-learning/3rd-party/Supervised.png" style="width:39%;float:right;" /><!-- {"left" : 6.51, "top" : 0.87, "height" : 2.39, "width" : 3.59} -->
 
  * Algorithm learns from (training) data
 
@@ -69,6 +69,7 @@ Notes:
 | Classification | Categorize things into groups                                          | -Spam classification <br/>-Fraud / no fraud      |
 | Regression     | Dealing with numbers and calculate the probability something happening | -Predict house prices <br/>-Predict stock market |
 
+<!-- {"left" : 0.25, "top" : 4.58, "height" : 2.17, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
 
 Notes:
 
@@ -88,7 +89,8 @@ Image credit (Creative Commons) : Pexels.com
 
  * Predict no new data (unseen)
 
-<img src="../../assets/images/machine-learning/3rd-party/stock-market-1.png" style="width:59%;">
+<img src="../../assets/images/machine-learning/3rd-party/stock-market-1.png" style="width:59%;"><!-- {"left" : 1.02, "top" : 3.23, "height" : 3.44, "width" : 8.21} -->
+
 
 Notes:
 
@@ -109,7 +111,8 @@ Notes:
  * Start with 69% training, 29% test
     - Tweak the dials to increase or decrease the proportion
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="max-width:59%;">
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="max-width:59%;"><!-- {"left" : 2.69, "top" : 4.19, "height" : 2.14, "width" : 4.87} -->
+
 
 Notes:
 
@@ -129,7 +132,8 @@ Facebook used 95%/5% `Understanding text from scratch`
      - Supervised learning
  * Also predicted classes are **discrete** or **qualitative**
 
-<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;">
+<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 2.06, "top" : 4.81, "height" : 2.25, "width" : 6.13} -->
+
 
 
 Notes:
@@ -169,14 +173,13 @@ Notes:
 
 ## Un Supervised Machine Learning
 
-<img src="../../assets/images/machine-learning/3rd-party/Un-Supervised.png" style="width:29%;float:right;" />
+<img src="../../assets/images/machine-learning/3rd-party/Un-Supervised.png" style="width:29%;float:right;" /><!-- {"left" : 5.44, "top" : 0.84, "height" : 2.62, "width" : 4.65} -->
+
 
  * No training needed
 
  * Algorithm tries to find patterns in data
 
-
-<br clear="all"/>
 
 | Algorithms               | Description                             | Applications                                                      |
 |--------------------------|-----------------------------------------|-------------------------------------------------------------------|
@@ -184,6 +187,7 @@ Notes:
 | Association              | Find similar patterns                   | -people who buy A also buy B                                      |
 | Dimensionality Reduction | Reduces number of features              | -Reducing 999s of variables into manageable size                 |
 
+<!-- {"left" : 0.25, "top" : 3.78, "height" : 3.13, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
 
 Notes:
 
@@ -193,7 +197,7 @@ Notes:
 
 ## Clustering
 
-<img src="../../assets/images/machine-learning/clustering-02.png" style="width:49%;float:right;">
+<img src="../../assets/images/machine-learning/clustering-02.png" style="width:49%;float:right;"><!-- {"left" : 4.99, "top" : 0.9, "height" : 1.92, "width" : 5.06} -->
 
  * Clustering finds natural groupings in data
 
@@ -217,9 +221,6 @@ Notes:
 
 ## Clustering Use Cases: Fraud / Anomaly Detection
 
-
-<img src="../../assets/images/machine-learning/Clustering-Use-Cases.png" style="width:29%;float:right;">
-
  * Anomaly detection
 
      - Find fraud
@@ -228,6 +229,7 @@ Notes:
 
      - Discover problems on servers
 
+<img src="../../assets/images/machine-learning/Clustering-Use-Cases.png" style="width:29%;"><!-- {"left" : 3.04, "top" : 3.76, "height" : 3.39, "width" : 4.18} -->
 
 
 Notes:
@@ -276,7 +278,9 @@ Notes:
 
  * Google News algorithm automatically groups **related news stories**  into sections
 
-<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:89%;">
+<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:89%;"><!-- {"left" : 2.98, "top" : 2.24, "height" : 4.31, "width" : 4.29} -->
+
+
 
 Notes:
 
@@ -285,7 +289,7 @@ Notes:
 
 ## Clustering Use Case: Customer Purchases @ Walmart
 
-<img src="../../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:40%;float:right;"/><!-- {"left" : 6.54, "top" : 0.94, "height" : 2.05, "width" : 3.41} -->
 
  * Here is how Walmart is segmenting customer purchases
      * Pharmacy Runs
@@ -300,9 +304,15 @@ Notes:
      * **Booze and Calories**
      * and more ...
 
+
+---
+
+## Clustering Use Case: Customer Purchases @ Walmart
+
  * **Question for class**: What is the use case for this?
 
 
+<img src="../../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:40%;float:right;"/><!-- {"left" : 6.54, "top" : 0.94, "height" : 2.05, "width" : 3.41} -->
 
 
 
@@ -321,7 +331,8 @@ https://www.kaggle.com/c/walmart-recruiting-trip-type-classification
 
  * But by grouping data points together, the algorithm can 'infer' information, even when labels are missing
 
-<img src="../../assets/images/machine-learning/Semi-Supervised.png" style="max-width:49%;">
+<img src="../../assets/images/machine-learning/Semi-Supervised.png" style="max-width:49%;"><!-- {"left" : 1.95, "top" : 2.41, "height" : 4.68, "width" : 6.35} -->
+
 
 Notes:
 
@@ -329,9 +340,7 @@ Notes:
 
 ## Semi-Supervised Learning Video
 
-
-
-<img src="../../assets/images/deep-learning/3rd-party/Semi-Supervised-Learning-Video.png" alt="Semi-Supervised-Learning-Video.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Semi-Supervised-Learning-Video.png" alt="Semi-Supervised-Learning-Video.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 0.96, "height" : 4.59, "width" : 8.21} -->
 
 
 [Link](https://www.youtube.com/watch?v=b-yhKUINb7o)
@@ -367,7 +376,8 @@ Notes:
 
  * Here the robot gets rewarded for 'food' and penalized for walking into fire
 
-<img src="../../assets/images/machine-learning/Reinforcement-Learning.png" style="max-width:79%;">
+<img src="../../assets/images/machine-learning/Reinforcement-Learning.png" style="max-width:79%;"><!-- {"left" : 1.45, "top" : 2.27, "height" : 4.25, "width" : 7.36} -->
+
 
 Notes:
 
@@ -378,7 +388,9 @@ Notes:
 ## Reinforcement Learning Demo: Atari Breakout
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Atari-Breakout.png" style="width:29%;">
+<img src="../../assets/images/deep-learning/3rd-party/Atari-Breakout.png" style="width:29%;"><!-- {"left" : 3.03, "top" : 0.96, "height" : 4.78, "width" : 4.19} -->
+
+
 
 [Link](https://www.youtube.com/watch?v=V0eYniJ-1Rnk)
 
@@ -394,9 +406,10 @@ Notes:
 ## Reinforcement Learning Demo : Open AI Bots Playing Dota
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" style="width:69%;">
+<img src="../../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" style="width:69%;"><!-- {"left" : 1.63, "top" : 0.99, "height" : 3.94, "width" : 6.99} -->
 
-<a href="https://www.youtube.com/watch?v=eHipy_j28Xw">Link</a>
+[Link](https://www.youtube.com/watch?v=eHipy_j28Xw)
+
 
 Notes:
 
@@ -439,6 +452,8 @@ Notes:
 
 ## ML Algorithm Cheat Sheet
 
-<img src="../../assets/images/machine-learning/cheat-sheet.png" style="width:79%;">
+
+<img src="../../assets/images/machine-learning/cheat-sheet.png" style="width:79%;"><!-- {"left" : 0.29, "top" : 1.08, "height" : 5.82, "width" : 9.67} -->
+
 
 Notes:

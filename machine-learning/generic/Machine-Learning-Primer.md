@@ -295,7 +295,7 @@ Notes:
 ## Tools for Scalable Machine Learning
 
 
-<img src="../../assets/images/logos/spark-logo.png" style="width:20%;float:right;">
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;">
 
  *  **Spark ML**
      - Runs on top of popular Spark framework

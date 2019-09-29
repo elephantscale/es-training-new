@@ -4,12 +4,19 @@
 ##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-order-3-days.txt  pdf
 ##          (-d will replace current assembly.out)
 
+## Course outline
+../outline-Machine-Learning-With-Python-3-days.docx
+
+## About
 About-Machine-Learning-With-Python-Class-3-days.md
 
 ## high level overview
 ../generic/Machine-Learning-Primer.md
 
-## Python basics
+## Hands on starts
+../generic/Labs-Prep.md
+
+## Python basics - reference only
 ../../data-analysis-python/slides/PYTHON-NumPy.md
 ../../data-analysis-python/slides/PYTHON-Pandas.md
 

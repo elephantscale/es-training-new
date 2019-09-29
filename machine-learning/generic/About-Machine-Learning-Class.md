@@ -1,5 +1,7 @@
-
 # Introduction to Machine Learning
+
+<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:20%;" /> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/python-logo-1.png" style="width:40%;" />
 
 ---
 

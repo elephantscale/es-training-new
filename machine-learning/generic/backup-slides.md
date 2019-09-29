@@ -83,6 +83,191 @@ Notes:
 Notes:
 
 
+---
+
+# Linear Regression
+
+---
+
+##  Linear Regression Code ( R )
+
+
+```
+> house.sales = read.csv("house-sales.csv")
+27,000 entries
+
+## run mlr
+> house.lm = lm(SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving + SqFtLot,  
+              data = house.prices, na.action = na.omit)
+
+> summary(house.lm)
+
+Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot,
+
+data = house.prices, na.action = na.omit)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+ -1955089  -114575   -13670    81734  9081935
+
+Coefficients:
+                 Estimate   Std. Error t value             Pr(>|t|)
+(Intercept)   106303.30612   6254.77558  16.996 < 0.0000000000000002 ***
+Bedrooms      -65211.73613   2151.67471 -30.307 < 0.0000000000000002 ***
+Bathrooms      16274.19139   2970.77108   5.478         0.0000000434 ***
+SqFtTotLiving    277.84805      2.66890 104.106 < 0.0000000000000002 ***
+SqFtLot           -0.07457      0.05472  -1.363                0.173    
+
+---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 246400 on 27058 degrees of freedom
+Multiple R-squared:  0.4835,	Adjusted R-squared:  0.4834
+F-statistic:  6332 on 4 and 27058 DF,  p-value: < 0.00000000000000022
+
+```
+<!-- {"left" : 0, "top" : 1.19, "height" : 3.69, "width" : 10.25} -->
+
+
+Notes:
+
+
+
+---
+
+## Interpreting Results
+
+
+```
+> summary(house.lm)
+
+Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot,
+          data = house.prices, na.action = na.omit)
+
+Residuals:
+    Min       1Q   Median       3Q      Max
+-1955089  -114575   -13670    81734  9081935
+
+Coefficients:
+                  Estimate   Std. Error t value             Pr(>|t|)
+(Intercept)   106303.30612   6254.77558  16.996 < 0.0000000000000002 ***
+Bedrooms      -65211.73613   2151.67471 -30.307 < 0.0000000000000002 ***
+Bathrooms      16274.19139   2970.77108   5.478         0.0000000434 ***
+SqFtTotLiving    277.84805      2.66890 104.106 < 0.0000000000000002 ***
+SqFtLot           -0.07457      0.05472  -1.363                0.173    
+
+---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+<!-- {"left" : 0, "top" : 1.19, "height" : 2.55, "width" : 10.25} -->
+
+
+ * Adding one extra 'sqftTotLiving' space increases the house price by $277.85
+
+     - While holding all other variables the same
+
+Notes:
+
+
+
+---
+
+## Interpreting Results
+
+
+```
+> summary(house.lm)
+
+Call:lm(formula = SalePrice ~ Bedrooms + Bathrooms + SqFtTotLiving +     SqFtLot,
+         data = house.prices, na.action = na.omit)
+
+Residuals:
+    Min       1Q   Median       3Q      Max
+-1955089  -114575   -13670    81734  9081935
+
+Coefficients:
+                 Estimate   Std. Error t value             Pr(>|t|)
+(Intercept)   106303.30612   6254.77558  16.996 < 0.0000000000000002 ***
+Bedrooms      -65211.73613   2151.67471 -30.307 < 0.0000000000000002 ***
+Bathrooms      16274.19139   2970.77108   5.478         0.0000000434 ***
+SqFtTotLiving    277.84805      2.66890 104.106 < 0.0000000000000002 ***
+SqFtLot           -0.07457      0.05472  -1.363                0.173    
+
+---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+```
+<!-- {"left" : 0, "top" : 1.19, "height" : 2.55, "width" : 10.25} -->
+
+  * Question for class:
+     - Interpret parameters for 'Bedrooms'
+
+
+Notes:
+
+
+---
+
+## Calculating AIC - Sample Code ( R )
+
+
+```R
+options(scipen=999)
+library(MASS)
+
+house.prices = read.csv("house-sales-full.csv")
+
+# using all attributes for LM
+house.lm.full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms +
+                                BldgGrade + PropertyType + NbrLivingUnits + SqFtFinBasement +
+                                YrBuilt + YrRenovated + NewConstruction,
+                    data=house.prices, na.action=na.omit)
+
+step <- stepAIC(house.lm.full, direction="both")
+
+step
+```
+
+Notes:
+
+
+
+---
+
+## Calculating AIC Sample Code ( R )
+
+
+```R
+# original LM formula
+house.lm.full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms +
+                                BldgGrade + PropertyType + NbrLivingUnits + SqFtFinBasement +
+                                YrBuilt + YrRenovated + NewConstruction,
+                    data=house.prices, na.action=na.omit)
+```
+
+```R
+
+lm(formula = SalePrice ~ SqFtTotLiving + Bathrooms + Bedrooms +     
+                         BldgGrade + PropertyType + SqFtFinBasement +
+                         YrBuilt + NewConstruction,
+            data = house.prices, na.action = na.omit)
+
+Coefficients:
+             (Intercept)              SqFtTotLiving                  Bathrooms
+              5730856.779                    170.255                  37950.708
+                   Bedrooms                  BldgGrade  PropertyTypeSingle Family
+                -44124.897                 122498.089                  14862.934
+    PropertyTypeTownhouse            SqFtFinBasement                    YrBuilt
+                  77562.844                      8.153                  -3286.098
+       NewConstructionTRUE                   7886.546  
+```
+
+ *  **stepAIC**  has come up with a new formula
+
+ * Dropped attributes : SqFtLot, NbrLivingUnits, YrRenovated, and NewConstruction.
+
+Notes:
+
+
+
+---
 
 ---
 
@@ -111,6 +296,3 @@ Notes:
 
 
 Notes:
-
-
-

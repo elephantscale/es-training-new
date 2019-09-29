@@ -26,15 +26,15 @@
 - ReLU
 - Leaky ReLU
 
-<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
+<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 1.1, "top" : 4.22, "height" : 2.75, "width" : 8.05} -->
+
 
 Notes:
 
 ---
 ## Activation Function - Linear
 
-<img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
-
+<img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 5.05, "top" : 2.06, "height" : 3.85, "width" : 4.88} -->
 
 * `y = a.X + b`
 
@@ -53,7 +53,7 @@ Notes:
 ---
 ## Activation Function - Sigmoid
 
-<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" /> <!-- {"left" : 1.72, "top" : 3.21, "height" : 3.86, "width" : 6.81} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.78, "top" : 2.32, "height" : 2.86, "width" : 3.36} -->
 
 - `σ(z) = 1 / (1 + exp(-z))`
 
@@ -88,7 +88,7 @@ Notes:
 - Tanh is symmetric around zero and ranges from **`-1 to +1`**   
 (sigmoid ranges from **`0 to +1`**)
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />  <!-- {"left" : 0.77, "top" : 3.3, "height" : 3.24, "width" : 8.71} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%" /><!-- {"left" : 0.77, "top" : 4.16, "height" : 3.24, "width" : 8.71} -->
 
 
 Notes:
@@ -115,13 +115,18 @@ Notes:
 
 ## Vanishing / Exploding Gradient Problems
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%" />
+<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="40%" /><!-- {"left" : 6.96, "top" : 2.56, "height" : 2.38, "width" : 3.11} -->
 
 - Sigmoid and Tanh both suffer from the **Vanis hing Gradient** problem.
      - The derivative of a Sigmoid is less than .25
      - As we propagate that through many layers, that gradient becomes much less.
 - And their slopes (derivatives) get closer to zero for large input values
     - this is called **saturating**
+
+---
+
+## Vanishing / Exploding Gradient Problems
+
 - Another issue is sometimes the gradients become too big
     - **Exploding gradients**
 - One way is to fix the vanishing/exploding gradient problem is repeated scaling.
@@ -142,28 +147,41 @@ Notes:
 
 ##  Use a Different Activation Function Than Sigmoid
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%" />
-
-#### Problem:
+<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;width:30%;float:right"/><!-- {"left" : 6.96, "top" : 2.56, "height" : 2.38, "width" : 3.11} -->
+* **Problem:**
 - Sigmoid function was the most popular activation function used at that time   
     - Because sigmoid like functions are found in biological neurons.  (What is good for Mother Nature must be good for us too!)
 
 - How ever, Sigmoid functions tend to 'saturate' at high values (towards the edges), that meand derivatives get close to zero.
     - Leads to vanishing gradients problem
 
-#### Solution
+
+---
+
+##  Use a Different Activation Function Than Sigmoid
+
+
+* **Solution:**
+
 - Use other activation functions like ReLU or variants (LeakyReLU)
+
+<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;width:30%;"/><!-- {"left" : 3.01, "top" : 3.91, "height" : 3.23, "width" : 4.23} -->
 
 ---
 
 ## Activation Function - Rectified Linear Unit (ReLU)
 
-<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" /> <!-- {"left" : 0.58, "top" : 3.26, "height" : 3.57, "width" : 9.09} -->
+<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.31, "top" : 2.17, "height" : 3.16, "width" : 3.79} -->
 
 - `ReLU (z) = max (0, z)`
 - ReLU is Linear when greater than zero, and constant (zero) less than zero
 - So for positive values, doesn't have a maximum value
 - For values less than zero, differential becomes zero
+
+---
+
+## Activation Function - Rectified Linear Unit (ReLU)
+
 - ReLU is used very heavily
     - Simple: very easy to understand
     - Fast: computationally cheap to compute
@@ -171,23 +189,33 @@ Notes:
     - No Exploding Gradient problem
     - and **works well in real life scenarios**
 
+<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="background:white;width:30%" /><!-- {"left" : 3.23, "top" : 3.91, "height" : 3.16, "width" : 3.79} -->
+
 
 Notes:
 
 
 ---
 
-## Activation Function : Leaky ReLU
+## Activation Function: Leaky ReLU
 
-<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
+<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.5, "top" : 2.35, "height" : 2.81, "width" : 3.46} -->
 
 - ReLU isn't perfect; For values at or below zero or values, ReLU derivative is zero
     - Gradient Descent can not be used
     - Called **dying ReLU** problem
+
 - **Leaky ReLU** fixes this by introducing a slope for negative values
+
 - `LeakyReLUα(z) = max(αz, z)`  
 `here ⍺ = 0.001` (small value, configurable)
+
+---
+
+## Activation Function: Leaky ReLU
+
 - `α` controls how much the ReLU function 'leaks'
+
 - This leak ensures that the signals never die (zero) and have a chance to wake up during later training phases  
 (Going into coma vs. death :-)
 
@@ -211,15 +239,16 @@ Notes:
 
 - ELU outpermed all other ReLU variants, it trained quicker, and test accuracy was higher too.
 
-<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 5.38, "top" : 2.76, "height" : 1.52, "width" : 4.59} -->
 
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%;"/>
+<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 3.18, "top" : 4.6, "height" : 2.83, "width" : 3.9} -->
+
 
 ---
 
 ## ELU Highlights
 
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
+<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.31, "top" : 1.92, "height" : 2.75, "width" : 3.8} -->
 
 - Not zero for negative values (z < 0)
     - prevents signals dying out
@@ -278,6 +307,7 @@ Notes:
 |--------------|-----|------|-----|------|------|-----|-----|-----|-----|-----|
 | probability  | 0.0 | 0.15 | 0.0 | 0.00 | 0.05 | 0.0 | 0.0 | 0.8 | 0.0 | 0.0 |
 
+<!-- {"left" : 0.26, "top" : 2.39, "height" : 1, "width" : 9.73, "columnwidth" : [1.62, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81]} -->
 
 - The resultant array must add up to 1, because the output enumerates all probabilities
 
@@ -289,7 +319,7 @@ Notes:
 ---
 ## Softmax Function
 
-<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.38, "top" : 1.5, "height" : 4.5, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.9, "top" : 1.82, "height" : 4.32, "width" : 8.45} -->
 
 
 
@@ -326,4 +356,5 @@ Source :
 ---
 ## Activation Functions Review
 
-<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
+<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.44, "top" : 2.38, "height" : 3.2, "width" : 9.38} -->
+

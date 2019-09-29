@@ -7,7 +7,7 @@
  * [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  
 by  Aurélien Géron (ISBN: 9781492037347)
 
-<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%;"/><!-- {"left" : 3.92, "top" : 2.59, "height" : 3.63, "width" : 2.4} -->
+<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 3.92, "top" : 2.59, "height" : 3.63, "width" : 2.4} -->
 
 
 
@@ -29,7 +29,7 @@ by  Aurélien Géron (ISBN: 9781492037347)
 For example planes are inspired by birds first, but now modern planes have evolved a lot from their original designs
 
 
-<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/><!-- {"left" : 2.4, "top" : 4.43, "height" : 2.86, "width" : 5.45} -->
+<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 2.4, "top" : 4.43, "height" : 2.86, "width" : 5.45} -->
 
 
 
@@ -81,7 +81,7 @@ Notes:
 
      - Weights (Wn) were set manually; No way to automatically train weights
 
-<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" /> <!-- {"left" : 2.65, "top" : 5.13, "height" : 2.17, "width" : 4.95} -->
+<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%" /> <!-- {"left" : 2.65, "top" : 5.13, "height" : 2.17, "width" : 4.95} -->
 
 Notes:  
 - https://scholar.google.com/scholar?q=A+Logical+Calculus+of+Ideas+Immanent+in+Nervous+Activity
@@ -91,7 +91,7 @@ Notes:
 
 ## Neuron operations
 
-<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%;"/><!-- {"left" : 0.71, "top" : 2.49, "height" : 2.98, "width" : 8.84} -->
+<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 2.49, "height" : 2.98, "width" : 8.84} -->
 
 
 Notes:  
@@ -108,7 +108,7 @@ Source : [Neural networks and deep learning](https://learning.oreilly.com/librar
 
  * Simplest type of feedforward neural network
 
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%;"/> &nbsp;<!-- {"left" : 0.61, "top" : 3.53, "height" : 2.89, "width" : 5.57} --> <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="30%;"/><!-- {"left" : 6.68, "top" : 3.18, "height" : 3.59, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/> &nbsp;<!-- {"left" : 0.61, "top" : 3.53, "height" : 2.89, "width" : 5.57} --> <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 6.68, "top" : 3.18, "height" : 3.59, "width" : 2.93} -->
 
 
 
@@ -132,7 +132,7 @@ In matrix operations this is
     - if sum is positive (`z >= 0`) --> output is 1
     - otherwise, output is 0
 
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%;"/><!-- {"left" : 2.8, "top" : 4.71, "height" : 2.51, "width" : 4.65} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 2.8, "top" : 4.71, "height" : 2.51, "width" : 4.65} -->
 
 
 ---
@@ -221,17 +221,23 @@ Notes:
 
 ## Batch Size Calculations
 
-| Batch Size                            | Algorithm                    | Description                                        |
-|---------------------------------------|------------------------------|----------------------------------------------------|
-| Size of Training Set                  | Batch Gradient Descent       | All data goes in a single batch                    |  
-| 1                                     | Stochastic Gradient Descent  | Each batch has one data sample                     |  
-| 1 < batch size < size of training set | Mini-Batch Gradient Descent. | Batch size is usually power of 2 (32, 64, 128...)  |  
-&nbsp;
+
+
 
 - What if data size is not divisable evenly by batch size?
     - That is fine, the last batch will have what is left, and will be smaller than previous batches
     - For example, if we have 10 data points and batch size is 4
         - batch-1 = 4, batch-2 = 4, batch-3 = 2
+
+
+| Batch Size                            | Algorithm                    | Description                                        |
+|---------------------------------------|------------------------------|----------------------------------------------------|
+| Size of Training Set                  | Batch Gradient Descent       | All data goes in a single batch                    |  
+| 1                                     | Stochastic Gradient Descent  | Each batch has one data sample                     |  
+| 1 < batch size < size of training set | Mini-Batch Gradient Descent. | Batch size is usually power of 2 (32, 64, 128...)  |  
+
+<!-- {"left" : 0.16, "top" : 4.29, "height" : 2.46, "width" : 9.93, "columnwidth" : [2.88, 3.74, 3.31]} -->
+
 
 
 ---
@@ -265,7 +271,7 @@ for e  in number_of_epochs {
 
  * Iterations = 10 / 4 = 3 (round up!)
 
-<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" alt="XXX image missing" style="background:white;max-width:100%;"/><!-- {"left" : 0.7, "top" : 3.6, "height" : 1.46, "width" : 8.85} -->
+<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" alt="XXX image missing" style="background:white;max-width:100%"/><!-- {"left" : 0.7, "top" : 3.6, "height" : 1.46, "width" : 8.85} -->
 
 
 ---
@@ -287,7 +293,7 @@ for e  in number_of_epochs {
 
 # Loss Functions
 
-[DL-Loss-Functions](DL-Loss-Functions.md)
+[../../machine-learning/generic/Errors-and-Loss-Functions.md](../../machine-learning/generic/Errors-and-Loss-Functions.md)
 
 ---
 
@@ -303,6 +309,15 @@ for e  in number_of_epochs {
     - **"Learning representations by back-propagating errors"**   
     by  [David Rumelhart](http://en.wikipedia.org/wiki/David_Rumelhart), [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/), and [Ronald Williams](http://en.wikipedia.org/wiki/Ronald_J._Williams)  
     - [pdf](http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf), [Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Learning+representations+by+back-propagating+errors&btnG=)
+
+
+
+Notes:   
+- http://neuralnetworksanddeeplearning.com/chap2.html
+
+---
+
+## Backpropagation Intro
 
 * This paper showed, how backpropagation can be an effective way to train neural networks.  And it worked much faster than previous approaches.
 
@@ -325,6 +340,12 @@ Notes:
 
  * It then computes how much each neuron in the last hidden layer contributed to each output neuron's error
 
+
+
+---
+
+## Backpropagation
+
  * It traverses the network in reverse, computing errors from previous layer
     - until it reaches the input layer
     - this is called 'reverse pass'
@@ -337,7 +358,7 @@ Notes:
 
 ## Backpropagation Math
 
-<img src="../../assets/images/icons/math-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+<img src="../../assets/images/icons/math-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="25%"/><!-- {"left" : 7.49, "top" : 0.96, "height" : 1.63, "width" : 2.44} -->
 
  * Given a cost function `C`
 
@@ -377,8 +398,8 @@ Notes:
 
  * [Demo2](https://www.youtube.com/watch?v=Ilg3gGewQ5U)  - Goes through pretty good details (~14 mins)
 
-<img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" height="20%" width="15%"/> <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-3.png" alt="XXX image missing" style="background:white;max-width:100%;"  width="20%"/>
-<img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-2.png" alt="XXX image missing" style="background:white;max-width:100%;"  width="20%"/>
+<img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-1.png" alt="XXX image missing" style="background:white;max-width:100%" height="20%" width="15%"/><!-- {"left" : 1.6, "top" : 3.3, "height" : 3.7, "width" : 1.69} --> &nbsp; <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-3.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/> &nbsp; <!-- {"left" : 3.6, "top" : 4.1, "height" : 1.6, "width" : 2.76} --> <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-2.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/><!-- {"left" : 6.95, "top" : 3.77, "height" : 2.25, "width" : 2.68} -->
+
 
 ---
 
@@ -388,8 +409,6 @@ Notes:
 [Activation Functions](DL-activation-functions.md)
 
 ---
-
-
 
 # Optimizers
 
@@ -426,7 +445,8 @@ Notes:
     - Measure validation accuracy every few steps (say 20)
     - If it scores higher than previous snapshot, save the current model snapshot as 'winner'
 
-<img src="../../assets/images/deep-learning/early-stopping-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/>
+<img src="../../assets/images/deep-learning/early-stopping-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 2.69, "top" : 4.17, "height" : 3.26, "width" : 4.88} -->
+
 
 ---
 
@@ -453,6 +473,11 @@ Notes:
  * By omitting half the neurons' signal (50% dropout rate), they were able to increase an accuracy of state of the art model from 95%  to 97.5%  
     - This may not seem like a lot, but the error rate improved from 5% to 2.5%  (that is 50% reduction in error!)
 
+
+---
+
+## Dropout
+
  * How does it work?
     - At every trainng step, each neuron has a chance (probablity) of being 'dropped'.  
     Meaning, it's output ignored during this step
@@ -466,7 +491,8 @@ Notes:
 
 ## Dropout
 
-<img src="../../assets/images/deep-learning/dropout-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/>
+<img src="../../assets/images/deep-learning/dropout-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 1.78, "top" : 1.14, "height" : 5.7, "width" : 6.69} -->
+
 
 ---
 
@@ -491,11 +517,12 @@ Decrease it if it is underfitting
 ## Max-Norm Regularization
 
  * Max-Norm regularization is very popular for neural networks
- 
+
  * for each neuron, it constrains the weights `w` of the incoming connections such that ||w||2 ≤ r
     - where r is the max-norm hyperparameter and ||.||2 is the L2 norm
 
-<img src="../../assets/images/deep-learning/min-max-regularization-1.png" alt="XXX image missing" style="background:white;width:20%;" />
+<img src="../../assets/images/deep-learning/min-max-regularization-1.png" alt="XXX image missing" style="background:white;width:20%"/><!-- {"left" : 3.72, "top" : 2.83, "height" : 0.68, "width" : 2.81} -->
+
 
 - Max-norm regularization can also help reduce the vanishing/exploding gradients
 
@@ -520,7 +547,9 @@ Decrease it if it is underfitting
 
 ## Data Augmentation Example
 
-<img src="../../assets/images/deep-learning/image-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%"/>
+<img src="../../assets/images/deep-learning/image-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.25, "top" : 2, "height" : 3.98, "width" : 9.75} -->
+
+
 
 ---
 
@@ -549,7 +578,7 @@ Decrease it if it is underfitting
 These are discussed in the following sections/slides
 
  * Using ReLU activation functions (we just saw this)
- 
+
  * Xavier and He Initialization
 
  * Batch Normalization
@@ -581,17 +610,21 @@ These are discussed in the following sections/slides
 
  * Normal distribution with mean 0 and standard deviation σ as follows  
 
-<img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%" /><!-- {"left" : 3.07, "top" : 2.18, "height" : 0.99, "width" : 4.1} -->
 
  * Or Uniform distribution between -r and r with r  
 
-<img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
+<img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%" width="40%"/><!-- {"left" : 3.07, "top" : 4.84, "height" : 0.99, "width" : 4.1} -->
 
+
+---
+
+## Xavier and He Initialization
 
  * When number of inputs == number of outputs, we get a simplified equation  
 
-<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />   &nbsp;  &nbsp; &nbsp;  &nbsp;
-<img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 1.93, "top" : 2.77, "height" : 0.54, "width" : 2.58} -->&nbsp;  &nbsp; &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 5.94, "top" : 2.77, "height" : 0.54, "width" : 2.38} -->
+
 
 Notes:  
 Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/ch02.html), Ch 2
@@ -601,7 +634,8 @@ Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/librar
 ## Xe Initialization Parameters
 
 
-<img src="../../assets/images/deep-learning/xavier-init-params.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
+<img src="../../assets/images/deep-learning/xavier-init-params.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.43, "top" : 1.39, "height" : 4.99, "width" : 9.39} -->
+
 
 
 ---
@@ -648,6 +682,7 @@ Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/librar
 ```python
 tf.layers.batch_normalization
 ```
+<!-- {"left" : 0, "top" : 1.52, "height" : 0.65, "width" : 6.76} -->
 
  * In Keras
 ```python
@@ -658,6 +693,7 @@ keras.layers.BatchNormalization(axis=-1, momentum=0.99,
           beta_regularizer=None, gamma_regularizer=None,
           beta_constraint=None, gamma_constraint=None)
 ```
+<!-- {"left" : 0, "top" : 2.93, "height" : 1.4, "width" : 10.25} -->
 
 ---
 
@@ -665,7 +701,8 @@ keras.layers.BatchNormalization(axis=-1, momentum=0.99,
 
 For reference only, please see the paper for underlying math.
 
-<img src="../../assets/images/deep-learning/mini-batch-equation.png" alt="XXX image missing" style="background:white;max-width:100%;" width="45%" />
+<img src="../../assets/images/deep-learning/mini-batch-equation.png" alt="XXX image missing" style="background:white;max-width:100%" width="45%" /><!-- {"left" : 2.49, "top" : 1.87, "height" : 4.66, "width" : 5.27} -->
+
 
 Notes:  
 [Reference paper](https://arxiv.org/pdf/1502.03167v3.pdf)
@@ -716,7 +753,8 @@ Notes:
 
 ## Learning Rate
 
-<img src="../../assets/images/deep-learning/learning-rate-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%"/>
+<img src="../../assets/images/deep-learning/learning-rate-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.77, "top" : 2.18, "height" : 3.61, "width" : 8.72} -->
+
 
 ---
 
@@ -726,7 +764,7 @@ Notes:
 
  * Run a few epochs of training
 
- * Watch the convergence using a tool like **[Tensorboard](https://www.tensorflow.org/guide/summaries_and_tensorboard)**
+ * Watch the convergence using a tool like [Tensorboard](https://www.tensorflow.org/guide/summaries_and_tensorboard)
 
  * Adjust learning rate, rinse and repeat
 
@@ -747,7 +785,8 @@ These default values should get you started, and should work well in most scenar
 
 ## Review Questions
 
- <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%" />
+ <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="30%" /><!-- {"left" : 7.27, "top" : 0.87, "height" : 1.95, "width" : 2.93} -->
+
 
  * **Q:** Can you name 3 activation functions and when they are used?
 
@@ -759,10 +798,3 @@ These default values should get you started, and should work well in most scenar
  * **Q:** In which cases you would use the following activation functions: ELU, leaky ReLU (and its variants), ReLU, tanh, logistic, and softmax?
 
  * **Q:** Explain how Dropoff works
-
-
-
-
-
-
-

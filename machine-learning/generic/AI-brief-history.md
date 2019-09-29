@@ -83,7 +83,7 @@ Notes:
 
 ##  Translation - 'Bottom Up' Approach (Google Translate)
 
-<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="max-width:60%;float:right;">
+<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="max-width:60%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
  * Google Translate has been ported to 'Google Brain' on Sept 2016
  * System learned from 'data'
@@ -101,7 +101,8 @@ Notes:
 
 ## Image Recognition: Cats & Dogs
 
-<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="max-width:35%;">
+<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="max-width:35%;"><!-- {"left" : 2.92, "top" : 1.08, "height" : 5.81, "width" : 4.4} -->
+
 
 Notes:
 
@@ -121,7 +122,9 @@ Notes:
 
  * [https://www.kaggle.com/c/dogs-vs-cats](https://www.kaggle.com/c/dogs-vs-cats )
 
-<img src="../../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" style="width:40%;">
+<img src="../../assets/images/machine-learning/3rd-party/Kaggle-Competition-01.png" style="width:40%;"><!-- {"left" : 1.02, "top" : 4.05, "height" : 2.55, "width" : 8.21} -->
+
+
 
 
 

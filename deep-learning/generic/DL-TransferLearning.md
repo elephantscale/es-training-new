@@ -173,7 +173,7 @@ Notes:
 &nbsp;
 &nbsp;
 
-<img src="../../assets/images/deep-learning/CNN-VGG-2.png" style="width:90%;"/> <!-- {"left" : 0.62, "top" : 2.21, "height" : 2.1, "width" : 9.01} -->
+<img src="../../assets/images/deep-learning/CNN-VGG-2.png" style="width:90%;"/> <!-- {"left" : 0.35, "top" : 3.39, "height" : 1.19, "width" : 9.55} -->
 
 
 Notes:

@@ -93,7 +93,7 @@ Notes:
 ---
 ## Tools for Scalable Deep Learning - Spark
 
-<img src="../../assets/images/logos/spark-logo.png" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 7.02, "top" : 1.08, "height" : 1.59, "width" : 2.99} -->
+<img src="../../assets/images/logos/spark-logo-1.png" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 7.02, "top" : 1.08, "height" : 1.59, "width" : 2.99} -->
 
  * Spark is very popular BigData processing platform (distributed compute engine)
 

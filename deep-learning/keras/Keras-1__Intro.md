@@ -1,5 +1,5 @@
 # Introduction to Keras
-<img src="../../assets/images/logos/keras_logo.png" alt="XXX image missing" style="background:white;"/>
+<img src="../../assets/images/logos/keras-logo-1.png" alt="keras-logo-1.png" style="background:white;"/>
 
 ---
 
@@ -20,7 +20,7 @@ Notes:
   * [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/) by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
 
 
-<img src="../../assets/images/books/book-9781492032649-hands-on-machine-learning-with-scikit-learn.jpg" alt="keras book1" style="width:20%;"/><!-- {"left" : 2.51, "top" : 3.72, "height" : 3.24, "width" : 2.47} --> &nbsp;&nbsp; <img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.28, "top" : 3.72, "height" : 3.24, "width" : 2.47} -->
+<img src="../../assets/images/books/book-9781492032649-hands-on-machine-learning-with-scikit-learn.jpg" alt="keras book1" style="width:20%;"/><!-- {"left" : 2.62, "top" : 4.41, "height" : 2.93, "width" : 2.23} --> &nbsp;&nbsp; <img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.39, "top" : 4.41, "height" : 2.93, "width" : 2.23} -->
 
 ---
 
@@ -30,8 +30,7 @@ Notes:
 
   * [Learn Keras for Deep Neural Networks:A Fast-Track Approach to Modern Deep Learning with Python](https://learning.oreilly.com/library/view/learn-keras-for/9781484242407/)by Jojo Moolayil (ISBN : 9781484242407)very good book that explains concepts pretty well
 
-<img src="../../assets/images/books/book-9781788621755-keras-deep-learning.jpg" alt="keras book3" style="width:19.1%;"/> &nbsp;&nbsp; <!-- {"left" : 3.12, "top" : 4.34, "height" : 2.44, "width" : 1.99} -->
- <img src="../../assets/images/books/book-9781484242407-learn-keras-for-deep-neural-networks.jpg" alt="keras book3" style="width:15.5%;"/><!-- {"left" : 5.52, "top" : 4.34, "height" : 2.44, "width" : 1.61} -->
+<img src="../../assets/images/books/book-9781788621755-keras-deep-learning.jpg" alt="keras book3" style="width:19.1%;"/> &nbsp;&nbsp; <!-- {"left" : 3.3, "top" : 4.69, "height" : 2.24, "width" : 1.83} --><img src="../../assets/images/books/book-9781484242407-learn-keras-for-deep-neural-networks.jpg" alt="keras book3" style="width:15.5%;"/><!-- {"left" : 5.47, "top" : 4.69, "height" : 2.24, "width" : 1.48} -->
 ---
 ## Resources
 
@@ -80,7 +79,7 @@ https://www.quora.com/Why-has-Keras-been-so-successful-lately-at-Kaggle-competit
 
 ## Keras Guiding Principles
 
-<img src="../../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; float:right;"/><!-- {"left" : 3.77, "top" : 1.07, "height" : 2.04, "width" : 2.72} -->
+<img src="../../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; float:right;"/><!-- {"left" : 7.85, "top" : 0.96, "height" : 1.69, "width" : 2.26} -->
 
  * **User Friendliness**  
    - Offers consistent, simple APIs
@@ -154,7 +153,7 @@ https://github.com/keras-team/keras/releases
     - Run on[multiple GPUs on Google Cloud cluster](https://cloud.google.com/solutions/running-distributed-tensorflow-on-compute-engine) using distributed Tensorflow
     - Use [dist keras](https://github.com/cerndb/dist-keras) on Spark engine
 
-<img src="../../assets/images/deep-learning/DL-cluster.png" alt="cluster" style="width:50%;"/><!-- {"left" : 5.1, "top" : 5.24, "height" : 2.01, "width" : 4.73} -->
+<img src="../../assets/images/deep-learning/DL-cluster.png" alt="cluster" style="width:50%;"/><!-- {"left" : 3.31, "top" : 5.9, "height" : 1.54, "width" : 3.63} -->
 
 
 ---
@@ -265,24 +264,22 @@ Source : [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly
 # if using Anaconda Python  (highly recommended)
 $  conda install tensorflow
 $  conda install keras
-
 # if using vanilla Python
 $  pip install tensorflow
 $  pip install keras
-```
-<!-- {"left" : 0, "top" : 1.97, "height" : 2.13, "width" : 8.78} -->
- 
+``` 
+<!-- {"left" : 0, "top" : 2.05, "height" : 1.35, "width" : 6.38} -->
+
 * Testing configuration
 
 ```python
 $  python
-
 >>> import keras
 Using TensorFlow backend.
-
 >>> keras.__version__
 '2.2.4'
 ```
+<!-- {"left" : 0, "top" : 5.83, "height" : 1.35, "width" : 4.19} -->
 
 ---
 
@@ -298,7 +295,12 @@ Using TensorFlow backend.
     "backend": "tensorflow"
 }
 ```
-<!-- {"left" : 0, "top" : 1.95, "height" : 1.86, "width" : 7.61} -->
+<!-- {"left" : 0, "top" : 2.25, "height" : 2.13, "width" : 8.7} -->
+
+
+---
+
+## Configuring Keras Backend
 
   * Change the `backend` to "theano", "tensorflow", or "cntk"
   * Overwrite the config file by defining an environment variable `KERAS_BACKEND`
@@ -308,6 +310,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
 
 >  "Using TensorFlow backend."
 ```
+<!-- {"left" : 0, "top" : 2.47, "height" : 0.94, "width" : 10.25} -->
 
 ---
 
@@ -321,7 +324,13 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
     "backend": "tensorflow"
 }
 ```
-<!-- {"left" : 0, "top" : 0.9, "height" : 2.04, "width" : 8.33} -->
+<!-- {"left" : 0, "top" : 1.15, "height" : 2.51, "width" : 10.25} -->
+
+
+---
+
+## Keras Config Explained
+
   * **image_data_format:**  
     - It specifies which data format convention Keras will follow. (keras.backend.image_data_format() returns it.)  
     - For 2D data (e.g. image), "channels_last" assumes (rows, cols, channels) while "channels_first" assumes (channels, rows, cols).
@@ -340,7 +349,12 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
     "backend": "tensorflow"
 }
 ```
-<!-- {"left" : 0, "top" : 0.88, "height" : 1.86, "width" : 7.61} -->
+<!-- {"left" : 0, "top" : 1.15, "height" : 2.51, "width" : 10.25} -->
+
+---
+
+## Keras Config Explained
+
   * **epsilon:**
     - A numeric fuzzing constant used to avoid dividing by zero in some operations.
 
@@ -421,8 +435,13 @@ keras.layers.Dense(
     bias_constraint=None)
 
 ```
-<!-- {"left" : 0, "top" : 0.9, "height" : 3.18, "width" : 8.94} -->
+
+
+---
+## Keras Core Layers: Dense
+
   * Usage:
+
 ```python
 from keras.layers import Dense
 
@@ -431,6 +450,7 @@ from keras.layers import Dense
 # output array shape [*,32]
 d = Dense(32, input_shape=(16,)))
 ```
+<!-- {"left" : 0, "top" : 1.56, "height" : 2.35, "width" : 8.34} -->
 
 ---
 
@@ -444,7 +464,9 @@ d = Dense(32, input_shape=(16,)))
 keras.layers.Dropout(rate, noise_shape=None, seed=None)
 ```
 <!-- {"left" : 0, "top" : 2.82, "height" : 0.54, "width" : 9.94} -->
+
   * Usage:
+
 ```python
 from keras.layers import Dropout
 
@@ -478,7 +500,14 @@ sgd = SGD(lr=0.01,
 
 model.compile(optimizer='sgd', loss='mean_squared_error')
 ```
-<!-- {"left" : 0, "top" : 0.9, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1, "height" : 2.39, "width" : 10.25} -->
+
+
+
+---
+
+## Optimizer: SGD
+
   * Arguments
     - `lr`: float >= 0. Learning rate.
     - `momentum`: float >= 0. Parameter that accelerates SGD in the relevant direction and dampens oscillations.
@@ -536,7 +565,12 @@ adam = keras.optimizers.Adam(lr=0.001,
 
 model.compile(optimizer='adam', ...)
 ```
-<!-- {"left" : 0, "top" : 0.9, "height" : 2.39, "width" : 7.94} -->
+<!-- {"left" : 0, "top" : 0.9, "height" : 3.09, "width" : 10.25} -->
+
+
+---
+
+## Optimizer: Adam
 
   * Arguments
     - `lr`: float >= 0. Learning rate.
@@ -712,6 +746,11 @@ fit(x=None, y=None,
     steps_per_epoch=None, validation_steps=None, validation_freq=1)
 ```
 <!-- {"left" : 0, "top" : 0.9, "height" : 1.82, "width" : 10.25} -->
+
+
+---
+
+## Fit method
 
   * This method does training
 
@@ -995,9 +1034,7 @@ plt.show()
 ---
 ## Training Accuracy & Loss
 
-<img src="../../assets/images/deep-learning/viz-accuracy1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 0.92, "top" : 2.3, "height" : 2.91, "width" : 3.9} -->
-
-<br clear="all;"/>
+<img src="../../assets/images/deep-learning/viz-accuracy1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 0.92, "top" : 2.3, "height" : 2.91, "width" : 3.9} --><br clear="all;"/>
 <img src="../../assets/images/deep-learning/viz-loss1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 5.43, "top" : 2.3, "height" : 2.91, "width" : 3.9} -->
 
 
