@@ -1,10 +1,10 @@
 # Linear Regression
 
-----
+---
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/Regressions-Generic-02.png" alt="Regressions-Generic-02.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-regressions-linear-1.png"  style="width:80%;" /><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
 
 
 Notes:
@@ -20,7 +20,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
  * Do you see any correlation?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 4.23, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 4.23, "width" : 8.21} -->
 
 
 Notes:
@@ -39,7 +39,7 @@ Notes:
 
  * This is **linear regression**!
 
-<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png" alt="Session-Regressions-in-Spark-Tips-vs-Bill-0.png" style="width:50%;"/><!-- {"left" : 2.25, "top" : 2.54, "height" : 4.34, "width" : 5.74} -->
+<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" alt="bill-tips-model-plot.png" style="width:50%;"/><!-- {"left" : 2.25, "top" : 2.54, "height" : 4.34, "width" : 5.74} -->
 
 
 
@@ -51,7 +51,7 @@ Notes:
 
 ## Graph Review!
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Graph-Review--0.png"  style="width:50%;float:right"/><!-- {"left" : 6.8, "top" : 1.01, "height" : 3.1, "width" : 3.24} -->
+<img src="../../assets/images/machine-learning/3rd-party/linear-regressions-graph-review-1.png"  style="width:50%;float:right"/><!-- {"left" : 6.8, "top" : 1.01, "height" : 3.1, "width" : 3.24} -->
 
 *  **Y = aX + b**
 
@@ -100,7 +100,7 @@ Notes:
 
 ## Using Linear Regression for Tips
 
-<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png"  style="max-width:50%;float:right;"/><!-- {"left" : 2.35, "top" : 3.07, "height" : 4.2, "width" : 5.56} -->
+<img src="../../assets/images/machine-learning/bill-tips-model-plot.png"  style="max-width:50%;float:right;"/><!-- {"left" : 2.35, "top" : 3.07, "height" : 4.2, "width" : 5.56} -->
 
 
  * Linear regression model closely resembles algebra model
@@ -148,7 +148,7 @@ Notes:
 
 ## Predicting Tips with Linear Model
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Using-Linear-Regression-Model.png"  style="width:30%;float:right;"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
+<img src="../../assets/images/machine-learning/bill-tip-3.png"  style="width:30%;float:right;"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
 
 
 * __`Tip = 0.2428571 * bill - 1.40`__  
@@ -175,7 +175,7 @@ Notes:
 
 ## Evaluating Our Model Accuracy
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Using-Linear-Regression-Model.png"  style="width:30%;float:right;"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
+<img src="../../assets/images/machine-learning/bill-tip-3.png"  style="width:30%;float:right;"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
 
 - As we can see our model is not predicting the tips 100% accurately
 
@@ -192,7 +192,7 @@ Notes:
 
 ## Errors and Residuals
 
-[Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions](Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions)
+[ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions](ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions)
 
 ---
 

@@ -290,14 +290,14 @@ Notes:
 
 <!-- TODO: Shiva -->
 
-<img src="../../assets/images/formulas/scaling-z-score-1.png" style="width:25%;float:right;"/><!-- {"left" : 4.2, "top" : 4.73, "height" : 0.34, "width" : 1.84} -->
+<img src="../../assets/images/formulas-equations/scaling-z-score-1.png" style="width:25%;float:right;"/><!-- {"left" : 4.2, "top" : 4.73, "height" : 0.34, "width" : 1.84} -->
 
 * Z-Scoring:
     - Subtract mean and divide standard deviation
 
 <br clear="all" />
 
-<img src="../../assets/images/formulas/scaling-min-max-1.png" style="width:25%;float:right;"/>
+<img src="../../assets/images/formulas-equations/scaling-min-max-1.png" style="width:25%;float:right;"/>
 
 * Min-Max Scaling
     - Scale between a range (0 to 1   or 1 to 100)

@@ -738,7 +738,7 @@ Notes:
 
 ## Correlation Formula
 
-<img src="../../assets/images/machine-learning/3rd-party/equation-correlation-1.png"  style="width:60%;"/>
+<img src="../../assets/images/formulas-equations/correlation-1.png"  style="width:60%;"/>
 
 Notes:
 

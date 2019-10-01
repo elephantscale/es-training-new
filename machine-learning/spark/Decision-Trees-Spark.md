@@ -14,9 +14,9 @@ Notes:
 
 ---
 
-# Decision Trees (Classifier)
+## Decision Trees
 
-[../generic/Decision-Trees-Generic.md](../generic/Decision-Trees-Generic.md)
+[../generic/Decision-Trees-Generic.md#Decision Trees](../generic/Decision-Trees-Generic.md#Decision Trees)
 
 ---
 
@@ -24,10 +24,8 @@ Notes:
 
 
  * Implemented by  
-
- **pyspark.ml.classification.DecisionTreeClassifier** (python)
-
- **org.apache.spark.ml.classification.DecisionTreeClassifier** (Scala)
+    - __pyspark.ml.classification.DecisionTreeClassifier__ (python)
+    - __org.apache.spark.ml.classification.DecisionTreeClassifier__ (Scala)
 
  * Supports Binary and Multi-class Classification
 
@@ -37,17 +35,20 @@ Notes:
 
 ---
 
-## Decision Tree Sample Code (Python)
+## Decision Tree Classifier in Spark ML (Python)
+
 ```python
 from pyspark.ml.classification import DecisionTreeClassifier
 
 # Load training data
-training = spark.read(...)
+(training, testing) = ...
 
 dt= DecisionTreeClassifier(labelColumn='label', featuresCol = 'features')
 
 # Fit the model
-dtModel = dt.fit(training)
+model = dt.fit(training)
+
+predictions = model.transform(testing)
 ```
 <!-- {"left" : 0, "top" : 1.18, "height" : 2.1, "width" : 10.25} -->
 
@@ -60,7 +61,7 @@ Notes:
 
 ## Decision Trees Parameters (Classification)
 
-| **Parameter**       | **Description**                                                      | **Default Value** |
+| Parameter       | Description                                                      | Default Value |
 |---------------------|----------------------------------------------------------------------|-------------------|
 | maxIter             | Max number of iterations                                             | 100               |
 | maxDepth            | Max Depth of Tree                                                    | 5                 |
@@ -85,12 +86,12 @@ Notes:
 from pyspark.ml.evaluation import MultiClassClassificationEvaluator
 
 # select (prediction, true label) and compute test error
-evaluator = MulticlassClassificationEvaluator(labelCol="indexedLabel", \
- predictionCol="prediction", metricName="accuracy")
+evaluator = MulticlassClassificationEvaluator(labelCol="indexedLabel",
+            predictionCol="prediction", metricName="accuracy")
 
 accuracy = evaluator.evaluate(predictions)
 
-print("Test Error = %g " % (1.0 - accuracy))
+print("Accuracy = %g " , accuracy)
 ```
 <!-- {"left" : 0, "top" : 1.18, "height" : 2.13, "width" : 10.25} -->
 
@@ -99,69 +100,16 @@ Notes:
 
 
 
----
-
-## Model Output in Spark
-
-```
-+-------------+--------------------+----------+
-|rawprediction|probability         |prediction|
-+-------------+--------------------+----------+
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-|[1961.0,75.0]|[0.96316306483300...|       0.0|
-+-------------+--------------------+----------+
-
-```
-
-Notes:
-
-
 
 ---
 
-## Lab: Decision Tree Classification
 
-
- *  **Overview**: Work with Decision Tree algorithm
-
- *  **Approximate time**: 20-30 mins
-
- *  **Instructions**:
-
-     - Follow instructions for Spark Python / Scala
-
-     - 'prosper loan' data, use Decision Tree classification to predict loan status
-
-     - Navigate to 'decisiontrees/3-randomf-election-regression.ipynb
-
-
-Notes:
-
-
-
-
----
-
-# Decision Trees (Regression)
-
----
-
-## Regression Trees in Spark
+## Regression Trees in Spark ML
 
 
  * Implemented by  
-
- **pyspark.ml.regression.DecisionTreeRegressor** (python)
-
- **org.apache.spark.ml.regressionRegressor**  (Scala)
+    - __pyspark.ml.regression.DecisionTreeRegressor__ (python)
+    - __org.apache.spark.ml.regressionRegressor__  (Scala)
 
  * Allows us to do a regression (numeric) output column
 
@@ -171,16 +119,20 @@ Notes:
 
 ---
 
-## Decision Tree Sample Code (Python)
+## Decision Tree Regressor in Spark ML (Python)
+
 ```python
 from pyspark.ml.classification import DecisionTreeRegressor
 
 # Load training data
-training = spark.read(...) dt= DecisionTreeRegressor
-(labelColumn='label', featuresCol = 'features')
+(training,testing) = ...
+
+dt= DecisionTreeRegressor (labelColumn='label', featuresCol = 'features')
 
 # Fit the model
-dtModel = dt.fit(training)
+model = dt.fit(training)
+
+predictions = model.transform(test)
 ```
 <!-- {"left" : 0, "top" : 1.18, "height" : 2.31, "width" : 10.25} -->
 
@@ -191,7 +143,7 @@ Notes:
 
 ---
 
-## DecisionTrees Parameters (Classification)
+## DecisionTrees Parameters (Regressor)
 
 | **Parameter**       | **Description**                                                      | **Default Value** |
 |---------------------|----------------------------------------------------------------------|-------------------|
@@ -212,6 +164,7 @@ Notes:
 ---
 
 ## Model Evaluation Sample Code (Python)
+
 ```python
 from pyspark.ml.evaluation import RegressionEvaluator
 
@@ -221,7 +174,7 @@ predictionCol="prediction", metricName="rmse")
 
 accuracy = evaluator.evaluate(predictions)
 
-print("Test Error = %g " % (1.0 - accuracy))
+print("Accuracy = %g " , accuracy)
 ```
 Notes:
 
@@ -230,7 +183,13 @@ Notes:
 
 ---
 
-# Random Forest (Classifier)
+# Random Forests
+
+---
+
+## Random Forest
+
+[../generic/Decision-Trees-Generic.md#Random Forest](../generic/Decision-Trees-Generic.md#Random Forest)
 
 ---
 
@@ -238,12 +197,8 @@ Notes:
 
 
  * Implemented by  
-
- **pyspark.ml.regression.RandomForestClassifier**    (python)
-
- **org.apache.spark.ml.regression.RandomForestClassifier**  (Scala)
-
- * Allows us to do a regression (numeric) output column
+    - __pyspark.ml.regression.RandomForestClassifier__    (python)
+    - __org.apache.spark.ml.regression.RandomForestClassifier__  (Scala)
 
 Notes:
 
@@ -252,16 +207,19 @@ Notes:
 ---
 
 ## Random Forest Sample Code (Python)
+
 ```python
 from pyspark.ml.classification import RandomForestClassifer
 
 # Load training data
-training = spark.read(...)
+(training, testing) = ...
 
 rf = RandomForestClassifier(labelColumn='label', featuresCol = 'features')
 
 # Fit the model
-rfModel= rf.fit(training)
+model= rf.fit(training)
+
+predictions = model.transform(test)
 ```
 Notes:
 
@@ -270,26 +228,6 @@ Notes:
 
 ---
 
-## Random Forest Parameters
-
-
- * All the same parameters as Decision Trees
-
-     - These parameters are run on a per-tree basis
-
- * numTrees
-
-     - This is the number of trees to be trained
-
- * subSamplingRate
-
-     - This is the rate (percentage) of data sampled the original data per tree
-
-Notes:
-
-
-
----
 
 ## RandomForest Parameters (Classification)
 
@@ -312,83 +250,15 @@ Notes:
 
 ---
 
-## Random Forest Parameters
 
 
- * All the same parameters as Decision Trees
-
-     - These parameters are run on a per-tree basis
-
- * numTrees
-
-     - This is the number of trees to be trained
-
- * subSamplingRate
-
-     - This is the rate (percentage) of data sampled the original data per tree
-
-Notes:
+## Random Forest Classifier in Spark
 
 
+* Implemented by  
+  - **pyspark.ml.regression.RandomForestRegressor** (python)
+  - **org.apache.spark.ml.regression.RandomForestRegressor**  (Scala)
 
----
-
-## Model Output in Spark
-
-```
-+--------------------+--------------------+----------+
-|probability         |rawprediction       |prediction|
-+--------------------+--------------------+----------+
-|[0.51021080634302...|[10.2042161268605...|       0.0|
-|[0.06486703371183...|[1.29734067423667...|       2.0|
-|[0.56770347232184...|[11.3540694464368...|       0.0|
-|[0.89201623617251...|[17.8403247234502...|       0.0|
-|[0.45421891667160...|[9.08437833343213...|       0.0|
-|[0.83489325412351...|[16.6978650824702...|       0.0|
-|[0.38250283196206...|[7.65005663924123...|       0.0|
-|[0.35234467819467...|[7.04689356389342...|       0.0|
-```
-
-Notes:
-
-
-
----
-
-## Lab: Random Forest Classification
-
-
- *  **Overview**: Work with Random Forest for Classification
-
- *  **Approximate time**: 20-30 mins
-
- *  **Instructions**:
-
-     - Follow instructions for Spark Python / Scala
-
-     - Election contribution' data, use Random Forest Classification to predict candidate in donation
-
-Notes:
-
-
-
-
----
-
-# Random Forest (Regression)
-
----
-
-## Random Forests in Spark
-
-
- * Implemented by  
-
- **pyspark.ml.regression.RandomForestRegressor**    (python)
-
- **org.apache.spark.ml.regression.RandomForestRegressor**  (Scala)
-
- * Allows us to do a regression (numeric) output column
 
 Notes:
 
@@ -397,16 +267,21 @@ Notes:
 ---
 
 ## Random Forest Sample Code (Python)
+
 ```python
 from pyspark.ml.classification import RandomForestRegressor
 
 # Load training data
-training = spark.read(...)
+(training, test) = ...
+
 rf = RandomForestRegression(labelColumn='label', featuresCol = 'features')
 
 # Fit the model
-rfModel= rf.fit(training)
+model = rf.fit(training)
+
+predictions = model.transform(test)
 ```
+
 Notes:
 
 
@@ -424,7 +299,7 @@ Notes:
  * Additional Parameters
 
 
- | **Parameter**   | **Description**                            | **Default Value** |
+ | Parameter   | Description                            | Default Value |
 |-----------------|--------------------------------------------|-------------------|
 | numtrees        | Max Numbers of trees                       | 20                |
 | subSamplingRate | Adjusts Sampling rate of data for boosting | 5                 |
@@ -441,36 +316,11 @@ from pyspark.ml.evaluation import RegressionEvaluator
 
 # select (prediction, true label) and compute test error
 evaluator = RegressionEvaluator(labelCol="indexedLabel",
-predictionCol="prediction", metricName="rmse")
+                predictionCol="prediction",
+                metricName="rmse")
 
 accuracy = evaluator.evaluate(predictions)
 
-print("Test Error = %g " % (1.0 - accuracy))
+print("Accuracy = %g " , accuracy)
 ```
 Notes:
-
-
-
-
----
-
-## Lab: Random Forest Regression
-
-
- *  **Overview** :
-
- Work with Random Forest for Regression
-
- *  **Approximate time** :
-
- 20-30 mins
-
- *  **Instructions** :
-
-     - Follow instructions for Spark Python / Scala
-
-     - Election contribution' data, use Random Forest Regression to predict amount donated
-
-Notes:
-
----

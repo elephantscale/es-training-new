@@ -34,7 +34,7 @@
 
 - Let's do a simple bill/tip regression
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 4.23, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 4.23, "width" : 8.21} -->
 
 
 ---
@@ -168,7 +168,7 @@ RMSE :  246378.1736452015
 
 ## Regularization
 
-[../generic/Regularization.md](../generic/Regularization.md)
+[../generic/ML-Concepts-Regularization.md](../generic/ML-Concepts-Regularization.md)
 
 ---
 ## Review and Q&A

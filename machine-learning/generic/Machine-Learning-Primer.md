@@ -62,7 +62,7 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 > **"The field of study that gives computers the ability to learn without being explicitly programmed."**  
  -- Arthur Samuel
 
-<img src="../../assets/images/machine-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/>
 
 * Example: Self-driving cars
     - Historical approach:  

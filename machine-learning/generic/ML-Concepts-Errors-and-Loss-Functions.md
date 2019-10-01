@@ -304,7 +304,3 @@ Notes:
 - https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html
 
 - https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23
-
----
-
-## END : Error / Loss Functions

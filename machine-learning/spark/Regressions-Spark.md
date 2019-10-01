@@ -53,7 +53,7 @@ Notes:
 
  * Do you see any correlation?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 2.38, "height" : 4.23, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 2.38, "height" : 4.23, "width" : 8.21} -->
 
 
 
@@ -72,7 +72,7 @@ Notes:
 
  * This is **linear regression**!
 
-<img src="../../assets/images/machine-learning/Session-Regressions-in-Spark-Tips-vs-Bill-0.png" style="width:50%"><!-- {"left" : 2.24, "top" : 2.6, "height" : 4.36, "width" : 5.77} -->
+<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" style="width:50%"><!-- {"left" : 2.24, "top" : 2.6, "height" : 4.36, "width" : 5.77} -->
 
 
 Notes:
@@ -603,7 +603,7 @@ Notes:
 
 ## Regularization
 
-[../generic/Regularization.md](../generic/Regularization.md)
+[../generic/ML-Concepts-Regularization.md](../generic/ML-Concepts-Regularization.md)
 
 ---
 ## Review and Q&A

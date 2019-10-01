@@ -19,7 +19,7 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2019-09-29 09:10:58 +0000</dc:date>
+    <dc:date>2019-09-29 20:52:52 +0000</dc:date>
   </metadata>
   <g id="Canvas_1" fill="none" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill-opacity="1">
     <title>Canvas 1</title>
@@ -41,15 +41,8 @@
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#360077" x="28.798828" y="40">x</tspan>
         </text>
       </g>
-      <g id="Graphic_8">
-        <circle cx="728" cy="-319" r="35.0000559265664" fill="#d99f2b"/>
-        <circle cx="728" cy="-319" r="35.0000559265664" stroke="#350078" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      </g>
-      <g id="Line_7">
-        <line x1="660" y1="-390" x2="800" y2="-246.15385" stroke="#af1207" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-      </g>
       <g id="Graphic_5">
-        <text transform="translate(809.4834 -356)" fill="#360077">
+        <text transform="translate(690.2595 -419)" fill="#360077">
           <tspan font-family="Century Gothic" font-size="49" font-weight="700" fill="#360077" x="0" y="49">Error for x1</tspan>
         </text>
       </g>
@@ -71,17 +64,30 @@
         <path d="M 948.7405 -28 L 951.7405 -28 C 952.2928 -28 952.7405 -27.552285 952.7405 -27 L 952.7405 2 C 952.7405 2.5522847 952.2928 3 951.7405 3 L 948.7405 3 C 948.1882 3 947.7405 2.5522847 947.7405 2 L 947.7405 -27 C 947.7405 -27.552285 948.1882 -28 948.7405 -28 Z" fill="#1a2180"/>
         <path d="M 948.7405 -28 L 951.7405 -28 C 952.2928 -28 952.7405 -27.552285 952.7405 -27 L 952.7405 2 C 952.7405 2.5522847 952.2928 3 951.7405 3 L 948.7405 3 C 948.1882 3 947.7405 2.5522847 947.7405 2 L 947.7405 -27 C 947.7405 -27.552285 948.1882 -28 948.7405 -28 Z" stroke="#3f0073" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
-      <g id="Graphic_21">
-        <circle cx="950.2405" cy="-192" r="35.0000559265664" fill="#d99f2b"/>
-        <circle cx="950.2405" cy="-192" r="35.0000559265664" stroke="#350078" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      </g>
-      <g id="Line_20">
-        <line x1="834.6154" y1="-216" x2="1040" y2="-157" stroke="#af1207" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      <g id="Line_22">
+        <line x1="729.9109" y1="-310.0449" x2="727.6337" y2="-29" stroke="#1504af" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="2"/>
       </g>
       <g id="Graphic_19">
-        <text transform="translate(1056.4834 -202.5)" fill="#360077">
+        <text transform="translate(1007 -222)" fill="#360077">
           <tspan font-family="Century Gothic" font-size="49" font-weight="700" fill="#360077" x="0" y="49">Error for x2</tspan>
         </text>
+      </g>
+      <g id="Graphic_23">
+        <circle cx="730" cy="-321.04454" r="10.0000159790189" fill="#d99f2b"/>
+        <circle cx="730" cy="-321.04454" r="10.0000159790189" stroke="#350078" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_25">
+        <circle cx="950.2405" cy="-182" r="10.000015979019" fill="#d99f2b"/>
+        <circle cx="950.2405" cy="-182" r="10.000015979019" stroke="#350078" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_24">
+        <line x1="950.2405" y1="-171" x2="950.2405" y2="-29" stroke="#1504af" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="2"/>
+      </g>
+      <g id="Line_20">
+        <line x1="834.6154" y1="-216" x2="1040" y2="-157" stroke="#af1207" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_7">
+        <line x1="660" y1="-390" x2="800" y2="-246.15385" stroke="#af1207" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
       </g>
     </g>
   </g>

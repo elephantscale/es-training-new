@@ -16,7 +16,7 @@
 
  * In the equation below, assume b<sub>1</sub>=20 and b<sub>2</sub>=2000Which variable X<sub>1</sub> or X<sub>2</sub> will have a large impact on outcome?
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Regularization-0.png" style="width:60%"/><!-- {"left" : 1.21, "top" : 6.19, "height" : 0.97, "width" : 7.83} -->
+<img src="../../assets/images/machine-learning/3rd-party/regularization-1.png" style="width:60%"/><!-- {"left" : 1.21, "top" : 6.19, "height" : 0.97, "width" : 7.83} -->
 
 
 
@@ -64,7 +64,7 @@ Notes:
 
      - Called  **variable/feature selection**
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Ridge-vs-Lasso-0.png" style="width:80%"/><!-- {"left" : 1.3, "top" : 5.87, "height" : 1.13, "width" : 7.65} -->
+<img src="../../assets/images/machine-learning/3rd-party/regularization-ridge-vs-lasso-1.png" style="width:80%"/><!-- {"left" : 1.3, "top" : 5.87, "height" : 1.13, "width" : 7.65} -->
 
 
 

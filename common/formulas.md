@@ -88,6 +88,26 @@ $$ E=\frac{1}{n}\sum_{i=1}^{n}\max(0,m-y^{(i)}\cdot\hat{y}^{(i)}) $$
 
 ## Machine Learning
 
+### Logistic Regression / Sigmoid Equation
+
+
+$$  \sigma(x) = \frac{1}{1 + e^{-x}}  $$
+
+$$ log(odds) = ln (\frac{p}{1-p})  $$
+
+$$ log(odds) = ln (\frac{p}{1-p}) = \beta_0 + \beta_1 * X_1 + \beta_2 * X_2 + ... + \beta_n * X_n  $$
+
+### SVM
+
+Linear SVM hyper plane
+
+$$ \beta_0 + \beta_1 * X_1 +  \beta_2 * X_2 = 0   $$
+
+$$ \beta_0 + \beta_1 * X_1 +  \beta_2 * X_2 ... + \beta_n * X_n = 0   $$
+
+### Decision Trees
+
+
 ### KMeans Compute Expense
 
 $$ O (n^{dk+1})  $$

@@ -293,7 +293,7 @@ for e  in number_of_epochs {
 
 # Loss Functions
 
-[../../machine-learning/generic/Errors-and-Loss-Functions.md](../../machine-learning/generic/Errors-and-Loss-Functions.md)
+[../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md](../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md)
 
 ---
 

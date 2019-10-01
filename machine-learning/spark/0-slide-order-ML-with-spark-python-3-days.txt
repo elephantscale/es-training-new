@@ -18,7 +18,7 @@ About-Machine-Learning-With-Spark-Python-Class.md
 ../generic/Labs-Prep.md
 ../generic/Data-Exploration.md
 ../generic/Feature-Engineering.md
-../generic/ML-concepts.md
+../generic/ML-Concepts-All.md
 
 ## spark
 ML-Spark-Overview.md

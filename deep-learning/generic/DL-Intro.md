@@ -88,7 +88,7 @@ Notes:
 
 ## What is  Machine Learning
 
-<img src="../../assets/images/machine-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 8.18, "top" : 1.04, "height" : 2.61, "width" : 1.86} -->
+<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 8.18, "top" : 1.04, "height" : 2.61, "width" : 1.86} -->
 
 * **"The field of study that gives computers the ability to learn without being explicitly programmed."** -- Arthur Samuel
 

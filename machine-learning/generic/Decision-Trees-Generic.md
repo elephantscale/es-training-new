@@ -1,4 +1,4 @@
-# Decision Trees
+# Decision Trees and Random Forest
 ---
 
 ## Lesson Objectives
@@ -13,9 +13,13 @@ Notes:
 
 ---
 
+# Decision Trees
+
+---
+
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Alogorithm-Summary.png" style="width:80%"><!-- {"left" : 0.57, "top" : 0.98, "height" : 6.02, "width" : 9.11} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-DT-1.png" style="width:80%"><!-- {"left" : 0.57, "top" : 0.98, "height" : 6.02, "width" : 9.11} -->
 
 
 Notes:
@@ -51,9 +55,6 @@ Notes:
 
 
 
----
-
-# Decision Trees
 
 ---
 
@@ -80,18 +81,14 @@ Notes:
 
 ---
 
-## Quiz for Class:
-## Create a Tree to Classify These Animals
+## Class Quiz
 
 <img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
 
+ * **Create a Tree to Classify These Animals**
 
-
- * Quiz for Class: Create a Tree to Classify These Animals
-
- * Design a tree with minimal number of questions to identify the following
-
- **Bear, Dolphin, Penguin, Eagle, Elephant**
+ * Design a tree with __minimal number of questions__ to identify the following  
+ __Bear, Dolphin, Penguin, Eagle, Elephant__
 
 Notes:
 
@@ -139,7 +136,7 @@ Medical decision tree use case: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC425
 ## Baseball Player Salary Prediction with Regression Tree
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Baseball-Player-Salary-Prediction-with-Regression-Tree-0.png" style="width:65%"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
+<img src="../../assets/images/machine-learning/decision-trees-baseball-player-1.png" style="width:65%"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
 
 
 Notes:
@@ -149,9 +146,17 @@ Image from "An introduction to Statistical Learning"  with thanks to authors
 
 ---
 
-## Tree Data Model
+## Decision Tree Terminology
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Storing-The-Tree-Model-0.png" style="width:80%"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
+<!-- TODO shiva  -->
+<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
+
+- Decision Trees are implemnted as binary trees
+
+- Question node (years < 4.5)  is called __Test node__
+
+- Leaf nodes / Terminal nodes are __Decision node__
+
 
 
 Notes:
@@ -163,8 +168,12 @@ Image from "An introduction to Statistical Learning"  with thanks to authors
 
 ## Storing The Tree Model
 
-```text
-Decision Tree can be saved to a file as a graph or set of rules
+<!-- TODO shiva  -->
+<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
+
+- Decision Tree can be saved to a file as a graph or set of rules
+
+```code
 
 If years < 4.5 Then Salary=5.11
 If years >= 4.5 and Hits < 117.5 Then Salary = 6.0
@@ -173,7 +182,6 @@ If years >= 4.5 and Hits >= 117.5 Then Salary = 6.74
 <!-- {"left" : 0, "top" : 1.11, "height" : 1.45, "width" : 10.25} -->
 
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Data-Model-0.png" style="max-width:35%;"><!-- {"left" : 3.4, "top" : 2.91, "height" : 3.95, "width" : 3.45} -->
 
 
 Notes:
@@ -184,21 +192,14 @@ Notes:
 
 ## Tree Algorithm
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Algorithm-0.png" style="width:50%;float:right;"><!-- {"left" : 6.02, "top" : 2.2, "height" : 3.09, "width" : 3.96} -->
-
+<img src="../../assets/images/machine-learning/decision-trees-region-split-1.png" style="width:40%;float:right;"><!-- {"left" : 6.02, "top" : 2.2, "height" : 3.09, "width" : 3.96} -->
 
  * Tree partitions the input space
-
- * Each input variable as a dimension<br/>
- on an p-dimensional space<br/>
-
- * When p=2 => rectangle p > 2 => hyper<br/>
-  rectangles (high dimensional)
-
- * New data gets filtered through the tree<br/>
- and lands on one rectangle
+ * Each input variable as a dimension on an p-dimensional space
+ * For 2-dimensional (p-2) data the region is rectangle
+ * For higher dimensions (p > 2) => hyper rectangles
+ * New data gets filtered through the tree and lands on one rectangle
      - That is the prediction
-
  * Example
      - Input
         * Years > 4.5?
@@ -227,7 +228,7 @@ Redo pictures and numbers
  * Find the error (prediction vs actual) per each region
      - This is RSS (Residual Sum of Squares)
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:30%;float:right;"/><!--{"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
+<img src="../../assets/images/formulas-equations/decision-tree-RSS-1.png" style="width:30%;float:right;"/><!--{"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
 
  * Try to  **minimize RSS across all regions**
      - The formula calculates RSS across all Regions ( 1 to J)
@@ -288,6 +289,7 @@ Source: https://uploads7.wikiart.org/images/honore-daumier/chess-players.jpg!Hal
 
 ## Greedy Algorithm
 
+<img src="../../assets/images/machine-learning/decision-trees-greedy-1.png" style="width:30%;float:right;"/><!-- {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
 
  * Greedy approach used to divide up the input space is called 'binary recursive split'
 
@@ -301,7 +303,6 @@ Source: https://uploads7.wikiart.org/images/honore-daumier/chess-players.jpg!Hal
 
  * Best split is chosen each time / level
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Greedy-Algorithm-0.png" style="width:30%;"/><!-- {"left" : 3.26, "top" : 4.72, "height" : 1.69, "width" : 3.72} -->
 
 
 Notes:
@@ -312,7 +313,7 @@ Notes:
 
 ## What it means to be greedy?
 
-<img src="../../assets/images/machine-learning/Decision-Trees-What-it-means-to-be-greedy--0.png" style="width:50%;float:right;"/><!-- {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
+<img src="../../assets/images/machine-learning/decision-trees-greedy-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
 
  * Select the `best split` from a<br/>
   set of possible splits
@@ -550,7 +551,11 @@ Notes:
 
 ## Gini Index (G)
 
+<!-- TODO shiva  -->
+
 <img src="../../assets/images/machine-learning/Decision-Trees-Gini-Index-1.png" style="margin-left:20px; width:50%;float:right;"><!--{"left" : 5.37, "top" : 3.9, "height" : 3.28, "width" : 4.43} -->
+
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30%;float:right;clear:both;"><!-- {"left" : 0.73, "top" : 4.84, "height" : 1.4, "width" : 3.83} -->
 
  * Gini index measures the 'purity' of each node (how mixed data is in one Region)
 
@@ -564,7 +569,6 @@ Notes:
 
  *  **Goal: minimize G score**
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30% ;"><!-- {"left" : 0.73, "top" : 4.84, "height" : 1.4, "width" : 3.83} -->
 
 
 
@@ -691,6 +695,8 @@ Notes:
 
  *  **Instructions**
 
+     -  Review next few slides for sample code in  Python / Spark / R
+
      -  **DT-1: college-admission**
 
      -  **DT-2: prosper-loans**
@@ -709,9 +715,10 @@ Notes:
 
 ---
 
+
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Alogorithm-Summary.png" style="width:80%"><!-- {"left" : 0.87, "top" : 1.17, "height" : 5.63, "width" : 8.52} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-RF-1.png" style="width:80%"><!-- {"left" : 0.87, "top" : 1.17, "height" : 5.63, "width" : 8.52} -->
 
 
 Notes:
@@ -750,7 +757,9 @@ Notes:
 
 ---
 
-[ML-concepts.md#Bias Variance Tradeoff](ML-concepts.md#Bias Variance Tradeoff)
+## Bias Variance Tradeoff
+
+[ML-Concepts-Bias-Variance.md](ML-Concepts-Bias-Variance.md)
 
 ---
 
@@ -1005,7 +1014,9 @@ Notes:
 
  *  **Approximate Time** 30 mins
 
- *  **Instructions** Follow  appropriate Python, R, or Spark instructions
+ *  **Instructions** 
+
+     -  Review next few slides for sample code in  Python / Spark / R
 
      - RF1: Prosper loan data (classification)
 
