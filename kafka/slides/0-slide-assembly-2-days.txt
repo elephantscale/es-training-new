@@ -1,0 +1,24 @@
+## To assemble md slides
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-assembly-2-days.txt
+## to make pdfs (supply pdf arg)
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-assembly-2-days.txt  pdf
+
+
+## Course outline
+../Intro-Kafka-Outline.docx
+
+# About
+About-Kafka-Class-2-days.md
+
+# Streaming
+../../streaming/slides/Streaming-Primer.md
+
+# Kafka
+Kafka-Intro.md
+zookeeper-primer.md
+Kafka-API.md
+Kafka-Streams.md
+Kafka-Case-Studies-Best-Practices.md
+Kafka-Admin.md
+
+Kafka-Workshop.md

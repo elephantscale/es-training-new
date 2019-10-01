@@ -8,12 +8,12 @@
 ../Intro-Kafka-Outline.docx
 
 # About
-About-Kafka-Class.md
+About-Kafka-Class-4-days.md
 
-# Streaming 
+# Streaming
 ../../streaming/slides/Streaming-Primer.md
 
-# Kafka 
+# Kafka
 Kafka-Intro.md
 #../../../es-training/zookeeper/slides/ZK-1__Intro.md
 #zookeeper-primer.md

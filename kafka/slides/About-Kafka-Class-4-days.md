@@ -4,30 +4,6 @@
 
 
 ---
-## Workshop Overview - 3 Days
-
-<img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/>
-
- * Day 1
-     -  Streaming Overview
-     -  Kafka Overview
-
- * Day 2
-     -  Using Kafka API
-     -  Kafka Metrics
-
- * Day 3
-
-     -  Workshop
-     -  Best Practices
-
- 
-
-Notes: 
-
-
----
-
 
 ## Workshop Overview - 4 Days
 
@@ -45,15 +21,15 @@ Notes:
 
  * Day 3
      -  Kafka Streams, KSQL, Schema
-     -  Workshop
+     -  Kafka Admin
 
  * Day 4
      -  Workshop - continued
      -  Best Practices
 
- 
 
-Notes: 
+
+Notes:
 
 
 
@@ -70,17 +46,17 @@ Notes:
 
  * Basic understanding of Linux development environment
 
-     - Command line navigation 
+     - Command line navigation
      - Running commands
 
- * This is a **Kafka Introductory** class. 
+ * This is a **Kafka Introductory** class.
 
      - No previous Kafka knowledge is assumed
-     - Class will be paced based on the pace of majority of the students. 
+     - Class will be paced based on the pace of majority of the students.
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -89,7 +65,7 @@ Notes:
 
 ## Our Teaching Philosophy
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:50%;float:right;"/> 
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:50%;float:right;"/>
 
  * Emphasis on concepts & fundamentals
 
@@ -101,7 +77,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -114,7 +90,7 @@ Notes:
 <img src="../../assets/images/kafka/3rd-party/AFTER_THE_CLASS-kafka.png" alt="AFTER_THE_CLASS-kafka.png" style="width:60%;"/>
 
 
-Notes: 
+Notes:
 
 By the end of the class... .
 
@@ -138,7 +114,7 @@ By the end of the class... .
 <img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:20%;"/>
 
 
-Notes: 
+Notes:
 
 
 
@@ -152,7 +128,7 @@ Notes:
 
 <img src="../../assets/images/kafka/3rd-party/kafka-book-9781491936160.jpg"  />
 
-Notes: 
+Notes:
 
 Image credit : http://shop.oreilly.com/
 
