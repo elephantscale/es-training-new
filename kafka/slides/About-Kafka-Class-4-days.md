@@ -8,7 +8,7 @@
 ## Workshop Overview - 4 Days
 
 
-<img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/>
+<img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/><!-- {"left" : 8.32, "top" : 0.88, "height" : 1.9, "width" : 1.74} -->
 
  * Day 1
      -  Streaming Overview
@@ -65,7 +65,6 @@ Notes:
 
 ## Our Teaching Philosophy
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:50%;float:right;"/>
 
  * Emphasis on concepts & fundamentals
 
@@ -74,6 +73,8 @@ Notes:
  * Highly interactive (questions, discussions, etc.  are welcome)
 
  * Hands-on (learn by doing)
+
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:45%;"/><!-- {"left" : 2.91, "top" : 3.22, "height" : 3.58, "width" : 4.44} -->
 
 
 
@@ -87,7 +88,7 @@ Notes:
 ## After The Class...
 
 
-<img src="../../assets/images/kafka/3rd-party/AFTER_THE_CLASS-kafka.png" alt="AFTER_THE_CLASS-kafka.png" style="width:60%;"/>
+<img src="../../assets/images/kafka/3rd-party/AFTER_THE_CLASS-kafka.png" alt="AFTER_THE_CLASS-kafka.png" style="width:60%;"/><!-- {"left" : 1.6, "top" : 1.1, "height" : 5.77, "width" : 7.06} -->
 
 
 Notes:
@@ -109,9 +110,9 @@ By the end of the class... .
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby  etc.)
 
-<img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:20%;"/>   &nbsp;
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:20%;"/>
-<img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:20%;"/>
+
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 5.22, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 5.24, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 5.22, "height" : 1.76, "width" : 1.99} -->
+
 
 
 Notes:
@@ -126,7 +127,7 @@ Notes:
 
  * Kafka - The Definitive Guide
 
-<img src="../../assets/images/kafka/3rd-party/kafka-book-9781491936160.jpg"  />
+<img src="../../assets/images/kafka/3rd-party/kafka-book-9781491936160.jpg" /><!-- {"left" : 4.02, "top" : 2.53, "height" : 2.91, "width" : 2.22} -->
 
 Notes:
 

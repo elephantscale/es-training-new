@@ -34,8 +34,8 @@ Notes:
  * REST proxy provides a language neutral way to access Kafka
  * Full list: https://cwiki.apache.org/confluence/display/KAFKA/Clients
  
- <img src="../../assets/images/logos/java-logo-1.png" style="max-width:10%;"/>
-  <img src="../../assets/images/logos/python-logo-1.png" style="max-width:30%;"/>
+<img src="../../assets/images/logos/java-logo-1.png" style="max-width:14%;"/><!-- {"left" : 1.85, "top" : 6.14, "height" : 2.34, "width" : 2.34} --> &nbsp; &nbsp; <img src="../../assets/images/logos/python-logo-1.png" style="max-width:30%;"/><!-- {"left" : 4.71, "top" : 7.13, "height" : 0.88, "width" : 3.69} -->
+
 
 
 Notes: 
@@ -47,7 +47,8 @@ Notes:
 
 ## Kafka Java API
 
- <img src="../../assets/images/logos/java-logo-1.png" style="max-width:20%;float:right;"/>
+ <img src="../../assets/images/logos/java-logo-1.png" style="max-width:20%;float:right;"/><!-- {"left" : 7.58, "top" : 1.02, "height" : 2.63, "width" : 2.63} -->
+
 
  * Rich library that provides high level abstractions
      - No need to worry about networking / data format ..etc
@@ -94,6 +95,8 @@ producer.send(record);
 producer.close(); 
 
 ```
+<!-- {"left" : 0, "top" : 1.15, "height" : 4.04, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -116,6 +119,8 @@ props.put("value.serializer", "org.apache.kafka.common.serialization.StringSeria
 KafkaProducer<Integer, String> producer = new KafkaProducer<>(props); 
 
 ```
+<!-- {"left" : 0, "top" : 1.23, "height" : 1.76, "width" : 10.25} -->
+
  * We are using 'KafkaProducer' (org.apache.kafka.clients.producer.KafkaProducer)
 
  *  **bootstrap.servers**: "broker1:9092, broker2:9092"
@@ -144,6 +149,7 @@ ProducerRecord<Integer, String> record = new ProducerRecord<> (topic, key, value
 producer.send(record);
 producer.close(); 
 ```
+<!-- {"left" : 0, "top" : 1.13, "height" : 1.51, "width" : 10.25} -->
 
  * Each  **record**  represents a message
 
@@ -190,6 +196,8 @@ for(int i = 0; i < 100; i++) {
 producer.close(); 
 
 ```
+<!-- {"left" : 0, "top" : 1.15, "height" : 3.94, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -201,13 +209,15 @@ Notes:
 ## Producer Acknowledgements
 
 
-<img src="../../assets/images/kafka/Producer-Acknowledgements-01.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/Producer-Acknowledgements-01.png" style="width:65%;"/><!-- {"left" : 1.67, "top" : 1.16, "height" : 1.6, "width" : 6.91} -->
+
 
 | ACK                       | Description                                                                                                                      | Speed  | Data safety                                                  |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------|
 | acks=0                    | - Producer doesn't wait for any acks from broker,</br>- Producer won't know of any errors                                        | High   | Low </br></br>No guarantee that broker received the message  |
-| acks=1,</br>(**default**) | - Broker will write the message to local log,</br>- Does not wait for replicas to complete                                       | Medium | Medium</br></br>Message is at least persisted on lead broker |
+| acks=1,</br>**(default)** | - Broker will write the message to local log,</br>- Does not wait for replicas to complete                                       | Medium | Medium</br></br>Message is at least persisted on lead broker |
 | acks=all                  | - Message is persisted on lead broker and in replicas,</br>- Lead broker will wait for in-sync replicas to acknowledge the write | Low    | High</br></br>Message is persisted in multiple brokers       |
+
 
 
 Notes: 
@@ -220,7 +230,8 @@ Notes:
 ## Producer Acknowledgements
 
 
-<img src="../../assets/images/kafka/Producer-Acknowledgements-02.png" alt="Producer-Acknowledgements-02.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Producer-Acknowledgements-02.png" alt="Producer-Acknowledgements-02.png" style="width:70%;"/><!-- {"left" : 0.58, "top" : 1.59, "height" : 6.47, "width" : 9.1} -->
+
 
 Notes: 
 
@@ -263,6 +274,7 @@ finally {
   consumer.close(Duration.OfSeconds(60));
 } 
 ```
+<!-- {"left" : 0, "top" : 1.09, "height" : 4.7, "width" : 10.25} -->
 
 Notes: 
 
@@ -287,6 +299,8 @@ KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
 consumer.subscribe(Arrays.asList("topic1")); // ** 2 **  
  
 ```
+<!-- {"left" : 0, "top" : 1.15, "height" : 2.46, "width" : 10.25} -->
+
  *  **bootstrap,servers**: "broker1:9092,broker2:9092"
 
      - Connect to multiple brokers to avoid single point of failure
@@ -322,6 +336,7 @@ finally {
 consumer.close();
 } 
 ```
+<!-- {"left" : 0, "top" : 1.17, "height" : 2.1, "width" : 10.25} -->
 
  * Consumers must subscribe to topics before starting polling
      - Consumer.subscribe ("test.*") // wildcard subscribe
@@ -348,8 +363,10 @@ Notes:
         do poll
     }
 ```
- 
- <img src="../../assets/images/kafka/client-polling.png" style="max-width:30%;float:right;"/>
+<!-- {"left" : 0, "top" : 1.73, "height" : 1.07, "width" : 4.61} -->
+
+<img src="../../assets/images/kafka/client-polling.png" style="max-width:30%;float:right;"/><!-- {"left" : 7.58, "top" : 2.94, "height" : 3.18, "width" : 2.51} -->
+
 
  * First time poll is called
      - Finds the GroupCoordinator
@@ -372,17 +389,17 @@ Notes:
 ## ConsumerRecord
 
 
- *  **org.apache.kafka.clients.consumer.ConsumerRecord**  **<K,V>** 
+ *  **org.apache.kafka.clients.consumer.ConsumerRecord <K,V>** 
 
- *  **K  key()** : key for record (type K), can be null
+ *  **K  key():** key for record (type K), can be null
 
- *  **V  value()** : record value (type V - String / Integer ..etc)
+ *  **V  value():** record value (type V - String / Integer ..etc)
 
- *  **String topic()** : Topic where this record came from
+ *  **String topic():** Topic where this record came from
 
- *  **int**  **partition()** : partition number
+ *  **int partition():** partition number
 
- *  **long offset()** : long offset in
+ *  **long offset():** long offset in
 
 ```java
 ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)); 
@@ -394,6 +411,7 @@ ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)
 } 
 
 ```
+<!-- {"left" : 0, "top" : 4.78, "height" : 1.49, "width" : 10.25} -->
 
 Notes: 
 
@@ -413,7 +431,8 @@ props.put("max.partition.fetch.bytes", 5 * 1024 * 1024); // 5 M
 
 KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props); 
 ```
- 
+<!-- {"left" : 0, "top" : 1.1, "height" : 1.77, "width" : 10.25} -->
+
 
  *  **max.partition.fetch.bytes**   (default : 1048576  (1M))
 
@@ -456,6 +475,8 @@ finally {
 } 
 
 ```
+<!-- {"left" : 0, "top" : 2.9, "height" : 3.27, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -484,6 +505,8 @@ Runtime.getRuntime().addShutdownHook(new Thread() {
  }
 } 
 ```
+<!-- {"left" : 0, "top" : 2.48, "height" : 2.98, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -494,7 +517,8 @@ Notes:
 
 ## Lab : Kafka Producer / Consumer
 
-<img src="../../assets/images/icons/individual-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 7.13, "top" : 1.16, "height" : 3.74, "width" : 2.81} -->
+
 
 
  *  **Overview**:   
@@ -561,6 +585,8 @@ ProducerRecord<Integer, String> record =
 		new ProducerRecord<> (topic, key, value);
 producer.send(record); // <-
 ```
+<!-- {"left" : 0, "top" : 1, "height" : 1.8, "width" : 8.68} -->
+
 
  * The 'record' is placed in the send buffer
 
@@ -596,6 +622,8 @@ RecordMetadata recordMetaData = future.get(); // <-
  
 
 ```
+<!-- {"left" : 0, "top" : 1, "height" : 1.5, "width" : 10.25} -->
+
 
  * Send() returns a Java Future object 
 
@@ -629,6 +657,8 @@ class KafkaCallback implements Callback {
 producer.send(record, new KafkaCallback());  // <- 
 ```
 
+<!-- {"left" : 0, "top" : 1.08, "height" : 3.13, "width" : 10.25} -->
+
 * Kafka will callback with meta or exception  (only one of them will be non-Null)
 
  * Note : This code is for demonstration purposes only.  Do not create new callback objects in production.
@@ -647,17 +677,17 @@ Notes:
 ## Lab 4.1: Kafka Producer Benchmark
 
 
- *  **Overview**: Try different send methods in Producer
+ *  **Overview:** Try different send methods in Producer
 
- *  **Builds on previous labs**: lab 3
+ *  **Builds on previous labs:** lab 3
 
- *  **Approximate Time**: 20 - 30 mins
+ *  **Approximate Time:** 20 - 30 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - Please follow: lab 4.1
 
- *  **To Instructor**: 
+ *  **To Instructor:** 
 
 
 Notes: 
@@ -712,6 +742,8 @@ Notes:
 | Snappy 1.1.4        | 2.091             | 530 MB/s        | 1820 MB/s          |
 
 
+<!-- {"left" : 0.25, "top" : 1.09, "height" : 2.19, "width" : 9.75} -->
+
  * https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression
 
 Notes: 
@@ -724,17 +756,17 @@ https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStan
 ## Lab 4: Compression Benchmark
 
 
- *  **Overview**: Try different compression codecs in Producer
+ *  **Overview:** Try different compression codecs in Producer
 
- *  **Builds on previous labs**: lab 4.1
+ *  **Builds on previous labs:** lab 4.1
 
- *  **Approximate Time**: 20 - 30 mins
+ *  **Approximate Time:** 20 - 30 mins
 
- *  **Instructions**: 
+ *  **Instructions:** 
 
      - Please follow: lab 4.2
 
- *  **To Instructor**: 
+ *  **To Instructor:**
 
 
 Notes: 
@@ -759,7 +791,9 @@ Notes:
 | Heartbeat.interval.ms         | Intervals in which heartbeats are sent                                | 1 second      |
 | Auto.offset.reset             | Offset value to use when no committed offset exists                   | "latest"      |
 | Partition.assignment.strategy | Assign partitions by range or round-robin (next slide)                | RangeAssignor |
-| Max.poll.records              | Max. number of records poll can return                                |               |
+| Max.poll.records              | Max. number of records poll can return                                |              &nbsp;|
+
+<!-- {"left" : 0.25, "top" : 1.24, "height" : 5.24, "width" : 9.75} -->
 
 Notes: 
 
@@ -799,7 +833,8 @@ Notes:
 
  * Each consumer is assigned a range - on a per-topic basis
 
-<img src="../../assets/images/kafka/partition-range-1.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/partition-range-1.png" style="width:65%;"/><!-- {"left" : 0.5, "top" : 3.43, "height" : 3.82, "width" : 9.26} -->
+
 
 Notes: 
 
@@ -812,7 +847,8 @@ https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignme
 ## Range Partitions - 2 Topics
 
 
-<img src="../../assets/images/kafka/partition-range-2.png" style="max-width:65%;"/>
+<img src="../../assets/images/kafka/partition-range-2.png" style="max-width:65%;"/><!-- {"left" : 1.02, "top" : 1.32, "height" : 7.01, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -844,7 +880,8 @@ Notes:
 
  *  Set partition.assignment.strategy to RoundRobinAssignor
 
-<img src="../../assets/images/kafka/partition-range-3.png"  style="max-width:70%;"/>
+<img src="../../assets/images/kafka/partition-range-3.png"  style="max-width:70%;"/><!-- {"left" : 0.79, "top" : 3.31, "height" : 3.57, "width" : 8.66} -->
+
 
 Notes: 
 
@@ -856,7 +893,8 @@ Notes:
 ## Round-robin Assignment - 2 Topics
 
 
-<img src="../../assets/images/kafka/partition-range-4.png" style="max-width:65%;"/>
+<img src="../../assets/images/kafka/partition-range-4.png" style="max-width:65%;"/><!-- {"left" : 1.02, "top" : 1.39, "height" : 6.86, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -872,16 +910,16 @@ Notes:
 
 ## Understanding Offsets
 
-<img src="../../assets/images/kafka/Understanding-Offsets.png" alt="Understanding-Offsets.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Understanding-Offsets.png" alt="Understanding-Offsets.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 6.19, "height" : 1.95, "width" : 8.21} -->
 
 
- *  **Last committed offset**: from client commit (auto or manual)
+ *  **Last committed offset:** from client commit (auto or manual)
 
- *  **Current position**: where client is reading from
+ *  **Current position:** where client is reading from
 
- *  **High watermark**: latest replicated offset.
+ *  **High watermark:** latest replicated offset.
 
- *  **Log End**: offset of last message
+ *  **Log End:** offset of last message
 
  * Consumers can only read up to  **high watermark** 
 
@@ -914,7 +952,8 @@ Notes:
 
      - New 'partition owner' consumer  resumes from current offset
 
-<img src="../../assets/images/kafka/Commits-And-Offsets.png" alt="Commits-And-Offsets.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Commits-And-Offsets.png" alt="Commits-And-Offsets.png" style="width:70%;"/><!-- {"left" : 0.54, "top" : 6.95, "height" : 1.51, "width" : 9.16} -->
+
 
 Notes: 
 
@@ -972,7 +1011,8 @@ Notes:
 ## Auto Commit 
 
 
-<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="max-width:70%;"/>
+<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="max-width:70%;"/><!-- {"left" : 0.65, "top" : 2.97, "height" : 3.7, "width" : 8.96} -->
+
 
 Notes: 
 
@@ -984,9 +1024,14 @@ Notes:
 ## Auto Commit 
 
 
-<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:40%; position:relative; top:50px; right:500px;"/>
+<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:40%; float:left;"/><!-- {"left" : 0.46, "top" : 1.24, "height" : 2.29, "width" : 5.55} -->
 
-<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:60%; position:relative; top:100px; left: 200px;"/>
+<br clear="all"/>
+
+
+<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:60%; float:right;"/><!-- {"left" : 0.56, "top" : 4.87, "height" : 3.22, "width" : 9.13} -->
+
+
 
 Notes: 
 
@@ -998,9 +1043,12 @@ Notes:
 ## Auto Commit 
 
 
-<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:40%; position:relative; top:50px; right:500px;"/>
+<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:40%; float:left;"/><!-- {"left" : 0.29, "top" : 1.31, "height" : 2.04, "width" : 5.79} -->
 
-<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:60%; position:relative; top:50px; left:200px;"/>
+<br clear="all"/>
+
+<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:60%; float:right;"/><!-- {"left" : 0.71, "top" : 4.03, "height" : 4.45, "width" : 8.84} -->
+
 
 Notes: 
 
@@ -1012,9 +1060,12 @@ Notes:
 ## Auto Commit 
 
 
-<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:30%; position:relative; top:50px; right:500px;"/>
+<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:30%; float:left;"/><!-- {"left" : 0.13, "top" : 1.15, "height" : 2.97, "width" : 5.89} -->
 
-<img src="../../assets/images/kafka/Auto-Commit-03.png" alt="Auto-Commit-03.png" style="width:60%; position:relative; top:30px; left: 200px;"/>
+<br clear="all"/>
+
+<img src="../../assets/images/kafka/Auto-Commit-03.png" alt="Auto-Commit-03.png" style="width:60%; float:right;"/><!-- {"left" : 1.02, "top" : 4.35, "height" : 4.36, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -1028,7 +1079,8 @@ Notes:
 
  * Consumer 1 reads records, but crashes in the middle of processing (after processing messages 5, 6  and 7)
 
-<img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing.png" alt="Auto-Commit-Duplicate-Processing.png" style="width:60%;"/>
+<img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing.png" alt="Auto-Commit-Duplicate-Processing.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.78, "height" : 5.4, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -1044,7 +1096,9 @@ Notes:
 
  * And processes messages 5, 6 and 7 again. This is duplicate processing
 
-<img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing-02.png" alt="Auto-Commit-Duplicate-Processing-02.png" style="width:55%;"/>
+<img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing-02.png" alt="Auto-Commit-Duplicate-Processing-02.png" style="width:55%;"/><!-- {"left" : 1.02, "top" : 3.12, "height" : 5.4, "width" : 8.21} -->
+
+
 
 Notes: 
 
@@ -1058,7 +1112,9 @@ Notes:
 
  * Consumer1 polls the events and hands them off to another thread for processing
 
-<img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing-03.png" alt="Auto-Commit-Duplicate-Processing-03.png" style="width:60%;"/>
+<img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing-03.png" alt="Auto-Commit-Duplicate-Processing-03.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.75, "height" : 6.01, "width" : 8.21} -->
+
+
 
 Notes: 
 
@@ -1074,7 +1130,8 @@ Notes:
 
  * This commits the offset to 8
 
-<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events.png" alt="Auto-Commit-Skipped-Events.png" style="max-width:50%;"/>
+<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events.png" alt="Auto-Commit-Skipped-Events.png" style="max-width:50%;"/><!-- {"left" : 1.02, "top" : 2.75, "height" : 5.97, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -1088,7 +1145,8 @@ Notes:
 
  * Consumer1 crashes
 
-<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-02.png" alt="Auto-Commit-Skipped-Events-02.png" style="max-width:60%;"/>
+<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-02.png" alt="Auto-Commit-Skipped-Events-02.png" style="max-width:60%;"/><!-- {"left" : 0.73, "top" : 1.63, "height" : 6.38, "width" : 8.79} -->
+
 
 Notes: 
 
@@ -1106,7 +1164,8 @@ Notes:
 
  * Messages 6 & 7 are skipped
 
-<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-00.png" alt="Auto-Commit-Skipped-Events-00.png" style="max-width:60%;"/>
+<img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-00.png" alt="Auto-Commit-Skipped-Events-00.png" style="max-width:60%;"/><!-- {"left" : 0.66, "top" : 3.31, "height" : 4.56, "width" : 8.92} -->
+
 
 Notes: 
 
@@ -1145,10 +1204,12 @@ Notes:
 
  *  **Offset updated but not processed -> Skipped events** 
 
-<img src="../../assets/images/kafka/Duplicate-Skipped-Events.png" alt="Duplicate-Skipped-Events.png" style="width:45%; position:relative; top: 60px; right:600px;"/>
+<img src="../../assets/images/kafka/Duplicate-Skipped-Events.png" alt="Duplicate-Skipped-Events.png" style="width:45%; float:left;"/><!-- {"left" : 0.44, "top" : 2.96, "height" : 1.41, "width" : 6.05} -->
 
 
-<img src="../../assets/images/kafka/Duplicate-Skipped-Events-09.png" alt="Duplicate-Skipped-Events-09.png" style="width:70%; position:relative; top:10px; left:308px;"/>
+
+  <img src="../../assets/images/kafka/Duplicate-Skipped-Events-09.png" alt="Duplicate-Skipped-Events-09.png" style="width:70%; float:right;"/><!-- {"left" : 0.88, "top" : 5.97, "height" : 1.68, "width" : 8.48} -->
+
 
 Notes: 
 
@@ -1184,6 +1245,8 @@ while (true) {
 }
 
 ```
+<!-- {"left" : 0, "top" : 1.38, "height" : 4.86, "width" : 10.25} -->
+
 
 
 Notes: 
@@ -1283,6 +1346,8 @@ Notes:
 
      }
 ```
+<!-- {"left" : 0, "top" : 3.03, "height" : 4.09, "width" : 10.25} -->
+
 Notes: 
 
 An idempotent operation is one which can be performed many times without causing a different effect than only being performed once.
@@ -1315,19 +1380,19 @@ With idempotency and transactions support on producer, Streams API can support e
 ## Lab 3: Consumer Commits
 
 
- *  **Overview**: Try different commit methods in Consumers
+ *  **Overview:** Try different commit methods in Consumers
 
      - At-most once, At-least once
 
- *  **Builds on previous labs**: lab 3
+ *  **Builds on previous labs:** lab 3
 
- *  **Approximate Time**: 20 - 30 mins
+ *  **Approximate Time:** 20 - 30 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - Please follow: lab 3.4, 3.5
 
- *  **To Instructor**: 
+ *  **To Instructor:**
 
 
 Notes: 
@@ -1352,6 +1417,8 @@ org.apache.kafka.common.TopicPartition (String topic, int partition)
 org.apache.kafka.clients.consumer.OffsetAndMetadata(long offset)
 org.apache.kafka.clients.consumer.OffsetAndMetadata(long offset, String meta)
 ```
+<!-- {"left" : 0, "top" : 2.07, "height" : 1.79, "width" : 10.25} -->
+
 Notes: 
 
 
@@ -1390,6 +1457,7 @@ while (true) {
 } 
 
 ```
+<!-- {"left" : 0, "top" : 1.5, "height" : 5.51, "width" : 10.25} -->
 
 Notes: 
 
@@ -1428,17 +1496,17 @@ https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up
 ## Lab 5: Jumping Offsets
 
 
- *  **Overview**: Seek and read various offsets in  a partition
+ *  **Overview:** Seek and read various offsets in  a partition
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:**
 
- *  **Approximate Time**: 20 - 30 mins
+ *  **Approximate Time:** 20 - 30 mins
 
- *  **Instructions**: 
+ *  **Instructions:** 
 
      - Please follow: lab 5
 
- *  **To Instructor**: 
+ *  **To Instructor:**
 
 
 Notes: 
@@ -1460,7 +1528,8 @@ Notes:
 
  * It's goal is to make it easy to add new systems to your scalable and secure stream data pipelines.
 
-<img src="../../assets/images/kafka/kafkaconnect.png" alt="kafkaconnect.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/kafkaconnect.png" alt="kafkaconnect.png" style="width:70%;"/><!-- {"left" : 0.82, "top" : 3.86, "height" : 1.92, "width" : 8.61} -->
+
 
 Notes: 
 
@@ -1486,6 +1555,7 @@ Notes:
 |                	|                     	|              	|
 | JMS            	| Source              	| Confluent    	|
 
+<!-- {"left" : 0.25, "top" : 1.11, "height" : 7, "width" : 9.75} -->
 
 
 Notes: 
@@ -1509,6 +1579,8 @@ More information at : https://www.confluent.io/product/connectors/
 | Vertica           	   | Source and Sink  	        | HP    	|
 |                	   |                     	|              	|
 | VoltDB                   | Sink              	        | VoltDB        |
+
+<!-- {"left" : 0.25, "top" : 1.11, "height" : 5, "width" : 9.75} -->
 
 
 Notes: 
@@ -1534,6 +1606,7 @@ More information at : https://www.confluent.io/product/connectors/
 |                	   |                     	                    |               	     |
 | Many more                |              	                            |&nbsp;                  |
 
+<!-- {"left" : 0.25, "top" : 1.11, "height" : 6.38, "width" : 9.75} -->
 
 Notes: 
 
@@ -1546,12 +1619,13 @@ More information at : https://www.confluent.io/product/connectors/
 
 | Concept       	   | Description         	                                              |
 |----------------	   |--------------------	                                              |
-| Connectors               |‫-‬ Defines the source and destination of data </br>‫-‬ Coordinates Tasks     |
-| Tasks               	   |‫-‬ Implementations of data transfer </br>‫-‬ Introduces parallelism         |
+| Connectors               |- Defines the source and destination of data </br>- Coordinates Tasks     |
+| Tasks               	   |- Implementations of data transfer </br>- Introduces parallelism         |
 | Workers                  |Connectors and tasks are logical units and are scheduled in workers       |
 | Converters          	   |Convert data formats to bytes and vice versa 	                      |
 | Transforms          	   |Does simple modification to Kafka messages                                |
 
+<!-- {"left" : 0.25, "top" : 1.22, "height" : 4.01, "width" : 9.75} -->
 
 Notes: 
 
@@ -1588,7 +1662,8 @@ Notes:
 
  * Kafka Connect example - stream a file through Kafka
 
-<img src="../../assets/images/kafka/Connect-file-01.png" alt="Connect-file.png" style="width:50%; position:relative; top:190px; left:50px;"/><img src="../../assets/images/kafka/Connect-file.png" alt="Connect-file.png" style="width:40%; position:relative; top:5px; left:100px;"/>
+<img src="../../assets/images/kafka/Connect-file-01.png" alt="Connect-file.png" style="width:50%; float:left;"/> <!-- {"left" : 0.53, "top" : 4.02, "height" : 2.57, "width" : 3.52} --> &nbsp; &nbsp; <img src="../../assets/images/kafka/Connect-file.png" alt="Connect-file.png" style="width:40%; float:right;"/><!-- {"left" : 4.73, "top" : 3.84, "height" : 1.88, "width" : 4.96} -->
+
 
 
 Notes: 
@@ -1611,6 +1686,8 @@ Notes:
  * value.converter.schemas.enable=false
 
  * #The internal converter used for offsets and config data is configurable and must be specified. Can use the built-in default
+
+
 ---
 
 ## Standalone configuration
@@ -1644,6 +1721,8 @@ config/connect-standalone.properties
     file=test.log
     topic=test_log
 ```
+<!-- {"left" : 0, "top" : 1.01, "height" : 1.4, "width" : 6.56} -->
+
 
  * The file stream can be run by executing  *connect-standalone.sh* with standalone configuration and source file configuration as given below
 
@@ -1652,6 +1731,7 @@ bin/connect-standalone.sh /
     config/connect-standalone.properties /
     config/connect-file-source.properties
 ```
+<!-- {"left" : 0, "top" : 5.48, "height" : 1.34, "width" : 10.25} -->
 
 
 Notes: 
@@ -1698,11 +1778,15 @@ hdfs.url=hdfs://localhost:9000
 flush.size=3
 
 ```
+<!-- {"left" : 0, "top" : 1.46, "height" : 2.39, "width" : 10.25} -->
+
 
 ```java
 $  confluent load hdfs-sink -d hdfs-connector.properties
 
 ```
+<!-- {"left" : 0, "top" : 4.99, "height" : 0.55, "width" : 10.25} -->
+
 
 ```java
 $ hadoop fs -ls /topics/test_hdfs/partition=0
@@ -1710,6 +1794,7 @@ $ hadoop fs -ls /topics/test_hdfs/partition=0
 /topics/test_hdfs/partition=0/test_hdfs+0+0000000000+0000000002.avro
 
 ```
+<!-- {"left" : 0, "top" : 6.66, "height" : 1.07, "width" : 10.25} -->
 
 Notes: 
 
@@ -1720,17 +1805,17 @@ Notes:
 ## Lab 10: Kafka Connect
 
 
- *  **Overview**: Use Kafka Connect to read data from a file
+ *  **Overview:** Use Kafka Connect to read data from a file
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:**
 
- *  **Approximate Time**: 20 - 30 mins
+ *  **Approximate Time:** 20 - 30 mins
 
- *  **Instructions**: 
+ *  **Instructions:** 
 
      - Please follow: lab 10
 
- *  **To Instructor**: 
+ *  **To Instructor:**
 
 
 Notes: 
@@ -1754,7 +1839,8 @@ Notes:
 
      - Real-time data store for interactive queries
 
-<img src="../../assets/images/kafka/Lambda-Streaming-Architecture-03.png" alt="Lambda-Streaming-Architecture-03.png" style="width:80%;"/>
+<img src="../../assets/images/kafka/Lambda-Streaming-Architecture-03.png" alt="Lambda-Streaming-Architecture-03.png" style="width:80%;"/><!-- {"left" : 0.82, "top" : 2.82, "height" : 1.97, "width" : 8.61} -->
+
 
 
  *  *Source:*  *http://lambda-architecture.net/* 
@@ -1800,6 +1886,7 @@ object DirectKafkaWordCount {
 }
 
 ```
+<!-- {"left" : 0, "top" : 1.5, "height" : 5.49, "width" : 10.25} -->
 
 
 Notes: 
@@ -1826,6 +1913,8 @@ val s1 = spark.
 
 
 ```
+<!-- {"left" : 0, "top" : 1.78, "height" : 3.13, "width" : 10.25} -->
+
 
 
 Notes: 
@@ -1856,6 +1945,7 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
 "ip":"ip_64","action": 
 "blocked" }
 ```
+<!-- {"left" : 0, "top" : 1.73, "height" : 1.98, "width" : 4.79} -->
 
  * Process the data and keep a running total of `'domain-count'`
 
@@ -1873,17 +1963,17 @@ Notes:
 ## Lab 6: Clickstream Lab
 
 
- *  **Overview**: Process clickstream data
+ *  **Overview:** Process clickstream data
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:**
 
- *  **Approximate Time**: 30 - 40 mins
+ *  **Approximate Time:** 30 - 40 mins
 
- *  **Instructions**: 
+ *  **Instructions:** 
 
-     - Please follow: lab 6
+     - Please follow lab 6
 
- *  **To Instructor**: 
+ *  **To Instructor:** 
 
 
 Notes: 

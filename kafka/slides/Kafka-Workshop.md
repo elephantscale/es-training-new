@@ -9,7 +9,8 @@
 
  * Learn to design and build a Kafka-based application end-to-end ... well almost!
 
-<img src="../../assets/images/kafka/3rd-party/Related-image.png" alt="Related-image.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/3rd-party/Related-image.png" alt="Related-image.png" style="width:70%;"/><!-- {"left" : 1.1, "top" : 2.1, "height" : 5.45, "width" : 8.05} -->
+
 
 Notes:
 
@@ -78,7 +79,7 @@ Notes:
 
 ## MyVideos
 
-<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/>
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/><!-- {"left" : 8.29, "top" : 1.18, "height" : 2.9, "width" : 1.59} -->
 
  *  allows users to upload videos
 
@@ -110,8 +111,8 @@ Have students draw a design on white board or project
 
 ## MyVideos Design: Our Solution
 
+<img src="../../assets/images/kafka/Our-Solution-02.png" alt="Our-Solution-02.png" style="width:70%;"/><!-- {"left" : 0.76, "top" : 2.82, "height" : 4, "width" : 8.73} -->
 
-<img src="../../assets/images/kafka/Our-Solution-02.png" alt="Our-Solution-02.png" style="max-width:70%;"/>
 
 Notes:
 
@@ -123,7 +124,7 @@ Discussion: one topic vs multiple
 ## Lab: MyVideos Cluster setup
 
 
- *  **Overview**:
+ *  **Overview*:*
 
      - Setup a Kafka cluster for MyVideos
 
@@ -133,9 +134,9 @@ Discussion: one topic vs multiple
 
         * Think about replicas, partitions
 
- *  **Builds on previous labs**: None
+ *  **Builds on previous labs:** None
 
- *  **Approximate time**: 30 minutes
+ *  **Approximate time:** 30 minutes
 
 
 Notes:
@@ -148,7 +149,8 @@ Notes:
 ## MyVideos: Topics and Messages
 
 
-<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/>
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/><!-- {"left" : 8.29, "top" : 1.18, "height" : 2.9, "width" : 1.59} -->
+
 
  * Producer
 
@@ -197,7 +199,8 @@ Notes:
 
 ## MyVideos: Messages Schema
 
-<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/>
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/><!-- {"left" : 8.29, "top" : 1.18, "height" : 2.9, "width" : 1.59} -->
+
 
  * Create Avro schemas
 
@@ -227,6 +230,9 @@ millis" }},
   ]
 }
 ```
+<!-- {"left" : 0, "top" : 1.4, "height" : 2.42, "width" : 10.25} -->
+
+
 
 Notes:
 
@@ -247,6 +253,7 @@ Example JSON data for Views:
   "time_spent_in_secs": 3.5
 }
 ```
+<!-- {"left" : 0, "top" : 1.21, "height" : 2.13, "width" : 7.44} -->
 
 
  * Create schema at https://www.jsonschema.net/
@@ -275,6 +282,7 @@ Notes:
   ]
 }
 ```
+<!-- {"left" : 0, "top" : 1.35, "height" : 2.93, "width" : 10.25} -->
 
 
 Notes:
@@ -296,6 +304,8 @@ Example JSON data for Views:
   "rating": 4
 }
 ```
+<!-- {"left" : 0, "top" : 1.21, "height" : 2.13, "width" : 7.78} -->
+
 
  * Create schema at https://www.jsonschema.net/
 
@@ -322,6 +332,7 @@ Notes:
   ]
 }
 ```
+<!-- {"left" : 0, "top" : 1.31, "height" : 2.93, "width" : 10.25} -->
 
 
 Notes:
@@ -375,7 +386,8 @@ Notes:
 
 ## MyVideos: Stream Processing
 
-<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/>
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right; "/><!-- {"left" : 8.29, "top" : 1.18, "height" : 2.9, "width" : 1.59} -->
+
 
  * Check ratings and comments for fraud and unacceptable content
 
@@ -401,7 +413,8 @@ HINT: Use sliding window in KStreams
 
 ## MyVideos Design: Our Solution
 
-<img src="../../assets/images/kafka/Design-Our-Solution-01.png" alt="Design-Our-Solution-01.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Design-Our-Solution-01.png" alt="Design-Our-Solution-01.png" style="width:70%;"/><!-- {"left" : 0.8, "top" : 2.4, "height" : 4.85, "width" : 8.65} -->
+
 
 
 
@@ -415,7 +428,8 @@ Notes:
 
 ## MyVideos: Stream Processing
 
-<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/>
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/><!-- {"left" : 8.29, "top" : 1.18, "height" : 2.9, "width" : 1.59} -->
+
 
  * We want real-time summary statistics such as:
 
@@ -473,7 +487,8 @@ Notes:
 
 ## MyVideos: Bonus: User Devices
 
-<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/>
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/><!-- {"left" : 8.29, "top" : 1.18, "height" : 2.9, "width" : 1.59} -->
+
 
  * A user has multiple devices (TV, tablet, phone, computer)
 
@@ -527,7 +542,9 @@ Notes:
 ## Next: Log Collection
 
 
-<img src="../../assets/images/kafka/3rd-party/logs-1.jpg"  style="width:60%;"/>
+<img src="../../assets/images/kafka/3rd-party/logs-1.jpg"  style="width:60%;"/><!-- {"left" : 0.75, "top" : 1.58, "height" : 6.47, "width" : 8.75} -->
+
+
 
 Notes:
 
@@ -563,7 +580,8 @@ Notes:
 
 ## Distributed Log Collection Tools: Flume
 
-<img src="../../assets/images/kafka/Distributed-Log-Collection-Tools-Flume.png" alt="Distributed-Log-Collection-Tools-Flume.png" style="max-width:50%;float:right;"/>
+<img src="../../assets/images/kafka/Distributed-Log-Collection-Tools-Flume.png" alt="Distributed-Log-Collection-Tools-Flume.png" style="max-width:50%;float:right;"/><!-- {"left" : 5.34, "top" : 2.15, "height" : 4.59, "width" : 4.6} -->
+
 
  * Part of Hadoop ecosystem
 
@@ -583,7 +601,8 @@ Notes:
 
 ## Log Processing: Log format
 
-<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/>
+<img src="../../assets/images/generic/3rd-party/hourglass-timer-2.png" style="float:right;"/><!-- {"left" : 8.29, "top" : 1.18, "height" : 2.9, "width" : 1.59} -->
+
 
  * Logs contain:
 

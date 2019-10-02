@@ -26,7 +26,8 @@ Notes:
 
 ## A Reference Architecture For Hadoop
 
-<img src="../../assets/images/kafka/A-Reference-Architecture-For-Hadoop.png" alt="A-Reference-Architecture-For-Hadoop.png" style="max-width:60%;"/>
+<img src="../../assets/images/kafka/A-Reference-Architecture-For-Hadoop.png" alt="A-Reference-Architecture-For-Hadoop.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.34, "width" : 8.21} -->
+
 
 
 Notes:
@@ -56,7 +57,7 @@ Notes:
 
 ## Outgrowing Hadoop
 
-<img src="../../assets/images/kafka/Outgrowing-Hadoop-2.png" alt="Outgrowing-Hadoop-2.png" style="max-width:50%;float:right;"/>
+<img src="../../assets/images/kafka/Outgrowing-Hadoop-2.png" alt="Outgrowing-Hadoop-2.png" style="max-width:50%;float:right;"/><!-- {"left" : 5.61, "top" : 3.25, "height" : 2.57, "width" : 4.17} -->
 
  * Hadoop cannot do real time processing.  
  Reacting to events in 'real time' (milliseconds to seconds)
@@ -77,7 +78,7 @@ Notes:
 
 ## Requirements For Data Buffer / Router
 
-<img src="../../assets/images/kafka/For-Data-Buffer-Router-3.png" alt="For-Data-Buffer-Router-3.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/kafka/For-Data-Buffer-Router-3.png" alt="For-Data-Buffer-Router-3.png" style="width:20%;float:right;"/><!-- {"left" : 8.31, "top" : 1.11, "height" : 0.99, "width" : 1.3} -->
 
  * Efficiently deal with large volume of data
      - Data usually comes in as events
@@ -113,10 +114,8 @@ Notes:
      - Designed for massive throughput
      - (more in the next section)
 
-<img src="../../assets/images/logos/jms-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/>
-<img src="../../assets/images/logos/IBM-MQ-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:10%;"/>
-<img src="../../assets/images/logos/rabbit-mq-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/>
-<img src="../../assets/images/logos/aws-kinesis-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/>
+<img src="../../assets/images/logos/jms-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/><!-- {"left" : 0, "top" : 6.34, "height" : 1.22, "width" : 2.44} --> &nbsp; <img src="../../assets/images/logos/IBM-MQ-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:10%;"/><!-- {"left" : 2.56, "top" : 6.34, "height" : 1.22, "width" : 1.41} --> &nbsp; <img src="../../assets/images/logos/rabbit-mq-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/><!-- {"left" : 4.31, "top" : 6.34, "height" : 1.22, "width" : 2.49} --> &nbsp; <img src="../../assets/images/logos/aws-kinesis-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="width:15%;"/><!-- {"left" : 7.13, "top" : 6.34, "height" : 1.22, "width" : 3} -->
+
 
 
 
@@ -164,7 +163,7 @@ Notes:
 * What is missing?
   - Something to handle the continuous flow of data
 
-<img src="../../assets/images/kafka/3rd-party/franz-kafka.png" style="width:15%;float:right;" />
+<img src="../../assets/images/kafka/3rd-party/franz-kafka.png" style="width:15%;float:right;" /><!-- {"left" : 8.4, "top" : 1.08, "height" : 2.16, "width" : 1.7} -->
 
 * Hence, LinkedIn built Kafka from scratch
 
@@ -221,6 +220,9 @@ Notes:
 | 2017 Oct   | 1.0     |                                                                                                                      |
 | 2018 Jul   | 2.0     |&nbsp;|                                                                                                                      |
 
+<!-- {"left" : 0.25, "top" : 1.13, "height" : 5.06, "width" : 9.75} -->
+
+
 Notes:
 
 
@@ -243,9 +245,7 @@ Notes:
      - User interactions (add to play list ..etc)
  * Find more use cases at: [BigDataUseCases.info](https://bigdatausecases.info)
 
-<img src="../../assets/images/logos/linkedin-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:25%;"/> &nbsp; &nbsp;
-<img src="../../assets/images/logos/netflix-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:20%;"/> &nbsp; &nbsp;
-<img src="../../assets/images/logos/spotify-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:20%;"/>
+<img src="../../assets/images/logos/linkedin-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:25%;"/><!-- {"left" : 1.4, "top" : 7.12, "height" : 0.76, "width" : 2.29} --> &nbsp; &nbsp; <img src="../../assets/images/logos/netflix-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:20%;"/><!-- {"left" : 4.31, "top" : 7.12, "height" : 0.76, "width" : 1.63} --> &nbsp; &nbsp; <img src="../../assets/images/logos/spotify-logo-1.png" alt="Outgrowing-Hadoop-2.png" style="max-width:20%;"/><!-- {"left" : 6.56, "top" : 7.12, "height" : 0.76, "width" : 2.51} -->
 
 
 Notes:
@@ -278,6 +278,11 @@ Notes:
 |--------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | By Linkedin @ 2014 | 3 machines,</br>- Xeon 2.5 G , 6 cores,</br>- Six 7200 RPM SATA drives,</br>- 32 G RAM,</br>- 1G ethernet | Multiple test setups.,</br>One throughput,</br>- 80 MB / sec,</br>- 2 million messages / sec (each message 100 bytes) |
 
+<!-- {"left" : 0.25, "top" : 4.32, "height" : 1.77, "width" : 9.75} -->
+
+<br/>
+
+
  * The machines are medium scale
 
  * Notice more than one disk per machine
@@ -297,7 +302,8 @@ https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-write
  * Read: The data from page cache can be transferred to network interface very efficiently
      - 99% of the time data is read from page cache, no disk access at all.(source: Loggly)
 
-<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="max-width:50%;"/>
+<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="max-width:50%;"/><!-- {"left" : 2.53, "top" : 3.67, "height" : 4.2, "width" : 5.18} -->
+
 
 Notes:
 
@@ -309,7 +315,7 @@ Notes:
 ## Kafka vs. Other Message Queues
 
 
-### Message deletion
+ * **Message deletion**
 
  *  **Other Message Queues**:
      - In Most systems, after a message is 'read' it can be deleted
@@ -332,7 +338,7 @@ Notes:
 ## Kafka vs. Other Message Queues
 
 
-### Message read order
+ * **Message read order**
 
  *  **Other Message Queues**:
      - Usually messages are read in order
@@ -353,7 +359,7 @@ Notes:
 
 ## Kafka vs. Other Message Queues
 
-### Message processing guarantee
+ * **Message processing guarantee**
 
  *  **Other Message Queues**:
      - Hard to guarantee one message will only be processed by one client
@@ -373,7 +379,7 @@ Notes:
 ## Kafka vs. Other Message Queues
 
 
-### Concurrency With Multiple Applications
+ * **Concurrency With Multiple Applications**
 
  *  **Other Message Queues**:
 
@@ -403,6 +409,8 @@ Notes:
 | **Message priorities**                                                          | None                                                           | Yes                                           |
 | **Message ACKs,(Client notify </br>producer that a </br>message is processed)** | No                                                             | May be                                        |
 
+<!-- {"left" : 0.25, "top" : 1.49, "height" : 5.32, "width" : 9.75} -->
+
 Notes:
 
 
@@ -410,7 +418,7 @@ Notes:
 
 ---
 
-## ZooKeeper
+# ZooKeeper
 
 [ZooKeeper](zookeeper-primer.md)
 
@@ -420,7 +428,7 @@ Notes:
 
 ## Kafka And Zookeeper
 
-<img src="../../assets/images/kafka/Kafka-And-Zookeeper.png" alt="Kafka-And-Zooeeper.png" style="max-width:40%;float:right; "/>
+<img src="../../assets/images/kafka/Kafka-And-Zookeeper.png" alt="Kafka-And-Zooeeper.png" style="max-width:40%;float:right; "/><!-- {"left" : 6.44, "top" : 1.37, "height" : 3.27, "width" : 3.53} -->
 
  * Kafka uses ZK
 
@@ -447,10 +455,9 @@ Thanks to: https://www.quora.com/What-is-the-actual-role-of-ZooKeeper-in-Kafka
 
 ## Lab Prep
 
-#### Instructions for Instructor
+* **Instructions for Instructor**
 
-<img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/>
-
+<img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/><!-- {"left" : 7.24, "top" : 1.28, "height" : 3.63, "width" : 2.72} -->
 
  * Distribute  **kafka-labs.zip**  to students
 
@@ -472,23 +479,23 @@ Notes:
 
 ## Lab: Installing Kafka
 
-<img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/>
+<img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/><!-- {"left" : 7.24, "top" : 1.28, "height" : 3.63, "width" : 2.72} -->
 
 
  *  **Overview**:   
- Install Kafka on provided virtual machines
+   - Install Kafka on provided virtual machines
 
  *  **Builds on previous labs**:   
- None
+   - None
 
  *  **Approximate Time**:   
- 30 - 40 mins
+   - 30 - 40 mins
 
  *  **Instructions**:   
- lab-1: labs/1-installing-kafka.md
+   - lab-1: labs/1-installing-kafka.md
 
  *  **To Instructor**:   
- Please walk through this lab first on screen
+   - Please walk through this lab first on screen
 
 
 Notes:
@@ -512,7 +519,10 @@ Notes:
 
  *  **Consumers**  consume messages
 
-<img src="../../assets/images/kafka/Kafka-Architecture-01.png"  style="max-width:80%;"/>
+<img src="../../assets/images/kafka/Kafka-Architecture-01.png"  style="max-width:80%;"/><!-- {"left" : 2.51, "top" : 3.36, "height" : 3.93, "width" : 5.22} -->
+
+
+
 
 Notes:
 
@@ -530,7 +540,8 @@ Notes:
 
  * Kafka automatically backs up data on at least another machine (broker)
 
-<img src="../../assets/images/kafka/Kafka-Architecture-02.png" alt="Kafka-Architecture-02.png" style="width:30%;"/>
+<img src="../../assets/images/kafka/Kafka-Architecture-02.png" alt="Kafka-Architecture-02.png" style="width:30%;"/><!-- {"left" : 3.17, "top" : 3.43, "height" : 4.72, "width" : 3.91} -->
+
 
 
 Notes:
@@ -591,7 +602,8 @@ Notes:
 ## 'My Connect' Design
 
 
-<img src="../../assets/images/kafka/My-Connect-Design.png" alt="My-Connect-Design.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/My-Connect-Design.png" alt="My-Connect-Design.png" style="width:70%;"/><!-- {"left" : 0.49, "top" : 2.63, "height" : 3.8, "width" : 9.27} -->
+
 
 Notes:
 
@@ -610,7 +622,9 @@ Notes:
      - Topics are like 'queues'
      - Sample topics could be: `emails` / `alerts`
 
-<img src="../../assets/images/kafka/Kafka-Concepts.png" alt="Kafka-Concepts.png" style="max-width:80%;"/>
+<img src="../../assets/images/kafka/Kafka-Concepts.png" alt="Kafka-Concepts.png" style="max-width:80%;"/><!-- {"left" : 2.53, "top" : 4.3, "height" : 2.84, "width" : 5.2} -->
+
+
 
 Notes:
 
@@ -632,7 +646,8 @@ Notes:
      - One to many ( 1 -> M)
      - Think HDFS file -> blocks
 
-<img src="../../assets/images/kafka/Topics.png" alt="Topics.png" style="max-width:80%;"/>
+<img src="../../assets/images/kafka/Topics.png" alt="Topics.png" style="max-width:80%;"/><!-- {"left" : 0.39, "top" : 4.86, "height" : 2.78, "width" : 9.47} -->
+
 
 Notes:
 
@@ -654,7 +669,8 @@ Notes:
 
      - Possibly from many topics
 
-<img src="../../assets/images/kafka/Partitions.png" alt="Partitions.png" style="width:50%;"/>
+<img src="../../assets/images/kafka/Partitions.png" alt="Partitions.png" style="width:50%;"/><!-- {"left" : 1.44, "top" : 4.4, "height" : 3.67, "width" : 7.37} -->
+
 
 Notes:
 
@@ -674,7 +690,8 @@ Notes:
  * Replicas are never written to,  nor read from
      - So increasing number of replicas does not increase throughput
 
-<img src="../../assets/images/kafka/Partitions-Replicas.png" alt="Partitions-Replicas.png" style="max-width:50%;"/>
+<img src="../../assets/images/kafka/Partitions-Replicas.png" alt="Partitions-Replicas.png" style="max-width:50%;"/><!-- {"left" : 1.7, "top" : 5.41, "height" : 3.07, "width" : 6.84} -->
+
 
 Notes:
 
@@ -686,7 +703,8 @@ Notes:
 ## Kafka Architecture Topics + Partitions + Replicas
 
 
-<img src="../../assets/images/kafka/Kafka-Architecture-Topics-Partitions-Replicas.png" alt="Kafka-Architecture-Topics-Partitions-Replicas.png" style="max-width:40%;"/>
+<img src="../../assets/images/kafka/Kafka-Architecture-Topics-Partitions-Replicas.png" alt="Kafka-Architecture-Topics-Partitions-Replicas.png" style="max-width:40%;"/><!-- {"left" : 2.09, "top" : 1.74, "height" : 6.16, "width" : 6.08} -->
+
 
 Notes:
 
@@ -696,8 +714,8 @@ Notes:
 ---
 
 ## Commit Log
-<img src="../../assets/images/kafka/Commit-Log.png" alt="Commit-Log.png" style="width:27%;float:right; "/>
 
+<img src="../../assets/images/kafka/Commit-Log.png" alt="Commit-Log.png" style="width:27%;float:right; "/><!-- {"left" : 7.47, "top" : 1.14, "height" : 2.83, "width" : 2.56} -->
 
  * In Kafka, data is stored in  **commit logs**
  * Commit Log is  **simple file on disk** that stores message bytes
@@ -710,7 +728,8 @@ Notes:
  * Each Partition has it's own commit log
 
 
-<img src="../../assets/images/kafka/Commit-Log-02.png" alt="Commit-Log-02.png" style="max-width:50%; "/>
+<img src="../../assets/images/kafka/Commit-Log-02.png" alt="Commit-Log-02.png" style="max-width:50%; "/><!-- {"left" : 1.81, "top" : 7.38, "height" : 1.49, "width" : 6.63} -->
+
 
 Notes:
 
@@ -721,7 +740,7 @@ Notes:
 
 ## Kafka Message
 
-<img src="../../assets/images/kafka/kafka-message-format.jpg" alt="Commit-Log-02.png" style="width:45%;float:right; "/>
+<img src="../../assets/images/kafka/kafka-message-format.jpg" alt="Commit-Log-02.png" style="width:45%;float:right; "/><!-- {"left" : 2.26, "top" : 7.27, "height" : 1.48, "width" : 5.73} -->
 
  * In Kafka basic 'data unit' is a message
 
@@ -758,7 +777,8 @@ Notes:
  * Producers write at the end of partition (append)
      - Sequential writes -> higher throughput
 
-<img src="../../assets/images/kafka/Putting-It-All-Together-Topics.png" alt="Putting-It-All-Together-Topics.png" style="max-width:50%;"/>
+<img src="../../assets/images/kafka/Putting-It-All-Together-Topics.png" alt="Putting-It-All-Together-Topics.png" style="max-width:50%;"/><!-- {"left" : 1.02, "top" : 4.29, "height" : 2.97, "width" : 8.21} -->
+
 
 Notes:
 
@@ -769,8 +789,7 @@ Notes:
 
 ## Brokers
 
-
-<img src="../../assets/images/kafka/Kafka-Architecture-02.png"  style="max-width:40%;float:right;"/>
+<img src="../../assets/images/kafka/Kafka-Architecture-02.png"  style="max-width:40%;float:right;"/><!-- {"left" : 8.12, "top" : 2.34, "height" : 2.39, "width" : 1.98} -->
 
 
  * A Kafka broker is a Java process that runs on a  node (machine / host)
@@ -812,7 +831,9 @@ Notes:
 ## Kafka: Physical and Logical
 
 
-<img src="../../assets/images/kafka/Physical-and-Logical.png" alt="Physical-and-Logical.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Physical-and-Logical.png" alt="Physical-and-Logical.png" style="width:70%;"/><!-- {"left" : 1.05, "top" : 2.56, "height" : 4.52, "width" : 8.14} -->
+
+
 
 Notes:
 
@@ -823,7 +844,8 @@ Notes:
 ## Brokers / Leaders / Partitions / Replications
 
 
-<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png" alt="Brokers-Leaders-Partitions-Replications.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png" alt="Brokers-Leaders-Partitions-Replications.png" style="width:70%;"/><!-- {"left" : 0.54, "top" : 2.56, "height" : 4.53, "width" : 9.16} -->
+
 
 Notes:
 
@@ -857,7 +879,8 @@ Notes:
 ## Producers / Consumers / Topics / Partitions
 
 
-<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png" alt="Producers-Consumers-Topics-Partitions.png" style="max-width:60%;"/>
+<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png" alt="Producers-Consumers-Topics-Partitions.png" style="max-width:60%;"/><!-- {"left" : 1.27, "top" : 1.97, "height" : 5.7, "width" : 7.71} -->
+
 
 Notes:
 
@@ -873,7 +896,7 @@ Notes:
 
 ## Kafka Bundle
 
-<img src="../../assets/images/kafka/3rd-party/Bundle-2.png" alt="Bundle-2.png" style="width:25%;float:right;"/>
+<img src="../../assets/images/kafka/3rd-party/Bundle-2.png" alt="Bundle-2.png" style="width:25%;float:right;"/><!-- {"left" : 6.83, "top" : 1.3, "height" : 3.81, "width" : 3.16} -->
 
  *  **Bin**: has executables and utilities
 
@@ -938,6 +961,7 @@ $  bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test
 # 1	Leader: 0	Replicas: 0	Isr: 0
 
 ```
+<!-- {"left" : 0, "top" : 1.07, "height" : 2.74, "width" : 10.25} -->
 
 Notes:
 
@@ -953,7 +977,8 @@ Notes:
 
  *  **bin/**  **kafka**  **-console-consumer**: utility for reading messages
 
-<img src="../../assets/images/kafka/Using-Producer-01.png" alt="Using-Producer-03.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Using-Producer-01.png" alt="Using-Producer-03.png" style="width:70%;"/><!-- {"left" : 0.88, "top" : 3.77, "height" : 3.55, "width" : 8.49} -->
+
 
 
 Notes:
@@ -965,20 +990,20 @@ Notes:
 
 ## Lab: Using Kafka Utilities
 
-<img src="../../assets/images/icons/individual-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 7.15, "top" : 1.3, "height" : 3.62, "width" : 2.71} -->
 
 
  *  **Overview**:
- Use Kafka CLI tools
+   - Use Kafka CLI tools
 
  *  **Builds on previous labs**:   
- 1-install Kafka
+   - 1-install Kafka
 
  *  **Approximate Time**:   
- 30 - 40 mins
+   - 30 - 40 mins
 
  *  **Instructions**:   
- lab-2: labs/2-kafka-utils.md
+    - lab-2: labs/2-kafka-utils.md
 
  *  **To Instructor**:
 
@@ -997,7 +1022,7 @@ Notes:
 
 ## Producing Messages
 
-<img src="../../assets/images/kafka/Kafka-Architecture-02.png"  style="max-width:30%;float:right;"/>
+<img src="../../assets/images/kafka/Kafka-Architecture-02.png"  style="max-width:30%;float:right;"/><!-- {"left" : 7.84, "top" : 1.17, "height" : 2.61 , "width" : 2.16} -->
 
 
  * Producers create new messages
@@ -1024,7 +1049,9 @@ Notes:
 
  * Kafka randomly distributes data across partitions
 
-<img src="../../assets/images/kafka/Writing-To-Partitions.png" alt="Writing-To-Partitions.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Writing-To-Partitions.png" alt="Writing-To-Partitions.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.84, "height" : 3.97, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -1040,7 +1067,8 @@ Notes:
 
  * So all data for one key is maintained in order (as they are in ONE partition)
 
-<img src="../../assets/images/kafka/Writing-With-Keys.png" alt="Writing-With-Keys.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Writing-With-Keys.png" alt="Writing-With-Keys.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 3.79, "height" : 3.1, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1051,7 +1079,7 @@ Notes:
 
 ## Class Discussion - Partition Data Skew
 
-<img src="../../assets/images/icons/quiz-icon.png"  style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png"  style="width:30%;float:right;"/><!-- {"left" : 6.18, "top" : 1.34, "height" : 2.58, "width" : 3.89} -->
 
 
  * We are capturing network access logs in Kafka.
@@ -1111,7 +1139,8 @@ Notes:
 
  * Consumers can resume after a crash by starting from the last seen offset
 
-<img src="../../assets/images/kafka/Commit-Log-02.png" alt="Commit-Log-02.png" style="max-width:70%;"/>
+<img src="../../assets/images/kafka/Commit-Log-02.png" alt="Commit-Log-02.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 5.64, "height" : 1.84, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1145,7 +1174,9 @@ Notes:
 ## Consumer Group
 
 
-<img src="../../assets/images/kafka/Consumer-Group.png" alt="Consumer-Group.png" style="max-width:70%;"/>
+<img src="../../assets/images/kafka/Consumer-Group.png" alt="Consumer-Group.png" style="max-width:70%;"/><!-- {"left" : 0.31, "top" : 3.3, "height" : 3.04, "width" : 9.62} -->
+
+
 
 Notes:
 
@@ -1189,7 +1220,9 @@ Notes:
      - 1-consumer-to-1 partition  or1 consumer-to-many-partitions
  * If a consumer fails, partition ownership is assigned to other consumers ( **rebalancing** )
 
-<img src="../../assets/images/kafka/Putting-It-All-Together.png" alt="Putting-It-All-Together.png" style="max-width:60%;"/>
+<img src="../../assets/images/kafka/Putting-It-All-Together.png" alt="Putting-It-All-Together.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 4.77, "height" : 3.22, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -1203,7 +1236,8 @@ Notes:
 
  * When a new consumer joins a consumer group, partitions are re-assigned.
 
-<img src="../../assets/images/kafka/Partition-Rebalance.png" alt="Partition-Rebalance.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Partition-Rebalance.png" alt="Partition-Rebalance.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 3, "height" : 3.64, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1221,7 +1255,7 @@ Notes:
  * Consumers leaving a consumer group
      - a consumer crashes
      - Doesn't send heartbeat in time
-     - Adjust  **max.poll.interval.ms**  **** and ****  **session.timeout.ms**  **** to set the timeout
+     - Adjust  **max.poll.interval.ms and session.timeout.ms** to set the timeout
 
  * Topic is modified by adding more partitions
 
@@ -1244,7 +1278,8 @@ Notes:
 
      - Different semantics than other Q systems
 
-<img src="../../assets/images/kafka/Multiple-Consumer-Groups.png" alt="Multiple-Consumer-Groups.png" style="max-width:70%;"/>
+<img src="../../assets/images/kafka/Multiple-Consumer-Groups.png" alt="Multiple-Consumer-Groups.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 3.7, "height" : 3.65, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1258,7 +1293,8 @@ Notes:
 
  * One consumer reads all partitions
 
-<img src="../../assets/images/kafka/Consumer-Behavior-01.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Consumer-Behavior-01.png" style="width:70%;"/><!-- {"left" : 1.42, "top" : 2.7, "height" : 4.25, "width" : 7.41} -->
+
 
 Notes:
 
@@ -1272,7 +1308,8 @@ Notes:
 
  * Consumers share partitions
 
-<img src="../../assets/images/kafka/Consumer-Behavior-02.png" alt="Consumer-Behavior-02.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Consumer-Behavior-02.png" alt="Consumer-Behavior-02.png" style="width:70%;"/><!-- {"left" : 1.06, "top" : 2.49, "height" : 4.66, "width" : 8.13} -->
+
 
 Notes:
 
@@ -1288,7 +1325,8 @@ Notes:
 
      - Maximum scalability
 
-<img src="../../assets/images/kafka/Consumer-Behavior-03.png" alt="Consumer-Behavior-03.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Consumer-Behavior-03.png" alt="Consumer-Behavior-03.png" style="width:70%;"/><!-- {"left" : 1.59, "top" : 2.79, "height" : 4.07, "width" : 7.07} -->
+
 
 Notes:
 
@@ -1306,7 +1344,9 @@ Notes:
 
  *  **Quiz: How can we fix this scenario?**
 
-<img src="../../assets/images/kafka/Consumer-Behavior-04.png" alt="Consumer-Behavior-04.png" style="max-width:40%;"/>
+<img src="../../assets/images/kafka/Consumer-Behavior-04.png" alt="Consumer-Behavior-04.png" style="max-width:40%;"/><!-- {"left" : 2.66, "top" : 3.52, "height" : 4.07, "width" : 4.94} -->
+
+
 
 Notes:
 
@@ -1345,7 +1385,7 @@ Notes:
 
 ## Log Compaction
 
-<img src="../../assets/images/kafka/Log-Compaction-02.png" alt="Log-Compaction-02.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/kafka/Log-Compaction-02.png" alt="Log-Compaction-02.png" style="width:50%;float:right;"/><!-- {"left" : 5.84, "top" : 2.77, "height" : 3.23, "width" : 4.24} -->
 
  * Retains latest value of every key in the log.
 
@@ -1371,7 +1411,8 @@ Key 1 @ 00:19 and key 6 @ 01:17 are retended.
 
  * Offsets don't change after compaction (Offsets uniquely identify messages)
 
-<img src="../../assets/images/kafka/Log-Compaction-Illustrated.png" alt="Log-Compaction-Illustrated.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Log-Compaction-Illustrated.png" alt="Log-Compaction-Illustrated.png" style="width:70%;"/><!-- {"left" : 1.22, "top" : 3.02, "height" : 4.93, "width" : 7.81} -->
+
 
 Notes:
 
@@ -1392,7 +1433,8 @@ Image source: https://kafka.apache.org/documentation/
  * Compacted offsets are valid and next highest offset value is read
      - Eg: 3 , 4 and 5 are equivalent (3 and 4 are missing because of compaction)
 
-<img src="../../assets/images/kafka/Log-Compaction.png" alt="Log-Compaction.png" style="max-width:80%;"/>
+<img src="../../assets/images/kafka/Log-Compaction.png" alt="Log-Compaction.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 5.03, "height" : 2, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1422,7 +1464,7 @@ Notes:
 
 ## Delete in compaction
 
-<img src="../../assets/images/kafka/Delete-in-compaction.png" alt="Delete-in-compaction.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/kafka/Delete-in-compaction.png" alt="Delete-in-compaction.png" style="width:50%;float:right;"/><!-- {"left" : 5.1, "top" : 2.74, "height" : 3.25, "width" : 5.02} -->
 
  * A delete marker deletes prior messages with the same key.
 
@@ -1451,7 +1493,8 @@ Notes:
 
      - Not enough bandwidth for a single cluster.
 
-<img src="../../assets/images/kafka/Multi-Data-Center-Deployment.png" alt="Multi-Data-Center-Deployment.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Multi-Data-Center-Deployment.png" alt="Multi-Data-Center-Deployment.png" style="width:70%;"/><!-- {"left" : 1.11, "top" : 4.87, "height" : 2.73, "width" : 8.03} -->
+
 
 Notes:
 
@@ -1471,7 +1514,8 @@ Notes:
      - It consumes data from one cluster
      - Turns around and 'produces' data into another cluster
 
-<img src="../../assets/images/kafka/Multi-Data-Center-Deployment-01.png" alt="Multi-Data-Center-Deployment-01.png" style="max-width:50%;"/>
+<img src="../../assets/images/kafka/Multi-Data-Center-Deployment-01.png" alt="Multi-Data-Center-Deployment-01.png" style="max-width:50%;"/><!-- {"left" : 1.31, "top" : 5.64, "height" : 2.59, "width" : 7.63} -->
+
 
 Notes:
 
@@ -1483,7 +1527,8 @@ Notes:
 ## 'My Connect' Design
 
 
-<img src="../../assets/images/kafka/My-Connect-Design-02.png" alt="My-Connect-Design-02.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/My-Connect-Design-02.png" alt="My-Connect-Design-02.png" style="width:70%;"/><!-- {"left" : 0.74, "top" : 2.21, "height" : 4.65, "width" : 8.78} -->
+
 
 Notes:
 
@@ -1495,7 +1540,7 @@ Notes:
 ## Review Questions
 
 
-<img src="../../assets/images/icons/quiz-icon.png"  style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png"  style="width:30%;float:right;"/><!-- {"left" : 6.03, "top" : 1.26, "height" : 2.82, "width" : 4.23} -->
 
 
  * How is Kafka different from

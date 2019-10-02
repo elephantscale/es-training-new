@@ -9,7 +9,8 @@
 ## A Little Computing History
 
 
-<img src="../../assets/images/kafka/3rd-party/cpu-1.png"  style="width:20%;float:right;"/>
+<img src="../../assets/images/kafka/3rd-party/cpu-1.png"  style="width:20%;float:right;"/><!-- {"left" : 8.13, "top" : 1.11, "height" : 1.71, "width" : 1.85} -->
+
 
  * 1990s we had single core processors
      - Programs ran in single 'thread' mode
@@ -17,7 +18,7 @@
 
 <br clear="all"/>
 
-<img src="../../assets/images/kafka/3rd-party/cpu-2.png" style="width:20%;float:right; "/>
+<img src="../../assets/images/kafka/3rd-party/cpu-2.png" style="width:20%;float:right; "/><!-- {"left" : 7.67, "top" : 4.34, "height" : 1.84, "width" : 2.45} -->
 
  * 2000s: multi core processors
      - Multiple threads
@@ -46,7 +47,8 @@ Image credit: wikimedia.org
 
  * How do we co-ordinate them all?
 
-<img src="../../assets/images/kafka/Now.png" alt="Now.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Now.png" alt="Now.png" style="width:70%;"/><!-- {"left" : 0.52, "top" : 4.15, "height" : 3.08, "width" : 9.21} -->
+
 
 Notes:
 
@@ -57,10 +59,11 @@ Notes:
 
 ## Distributed System Problem: Leader Election
 
- * There Can Be Only One !
+ * There Can Be Only One!
 
 
-<img src="../../assets/images/kafka/3rd-party/leader-election.png" alt="leader-election.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/3rd-party/leader-election.png" alt="leader-election.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.82, "height" : 3.42, "width" : 8.21} -->
+
 
 
 
@@ -75,7 +78,8 @@ Notes:
 ## A Distributed System Problem: Leader Election
 
 
-<img src="../../assets/images/kafka/Leader-Election-02.png" alt="Leader-Election-02.png" style="max-width:70%;"/>
+<img src="../../assets/images/kafka/Leader-Election-02.png" alt="Leader-Election-02.png" style="max-width:70%;"/><!-- {"left" : 1.01, "top" : 1.93, "height" : 5.2, "width" : 8.22} -->
+
 
 Notes:
 
@@ -87,7 +91,8 @@ Notes:
 ## Leader Election With Zookeeper
 
 
-<img src="../../assets/images/kafka/Leader-Election-With-Zookeeper.png" alt="Leader-Election-With-Zookeeper.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Leader-Election-With-Zookeeper.png" alt="Leader-Election-With-Zookeeper.png" style="width:70%;"/><!-- {"left" : 0.72, "top" : 2.33, "height" : 4.4, "width" : 8.81} -->
+
 
 Notes:
 
@@ -105,7 +110,8 @@ Notes:
 
      - No single point of failure
 
-<img src="../../assets/images/kafka/Zookeeper-Cluster-Quorum.png" alt="Zookeeper-Cluster-Quorum.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Zookeeper-Cluster-Quorum.png" alt="Zookeeper-Cluster-Quorum.png" style="width:70%;"/><!-- {"left" : 0.73, "top" : 3.26, "height" : 3.79, "width" : 8.78} -->
+
 
 Notes:
 
@@ -116,7 +122,7 @@ Notes:
 
 ## Zookeeper
 
-<img src="../../assets/images/logos/zookeeper-logo-1.png" style="max-width:30%;float:right;"/>
+<img src="../../assets/images/logos/zookeeper-logo-1.png" style="max-width:30%;float:right;"/><!-- {"left" : 7.86, "top" : 1.32, "height" : 2.9, "width" : 2.03} -->
 
 
  * Distributed service that provides
@@ -152,7 +158,9 @@ Notes:
      - Small number of nodes can support thousands of clients
  * Consensus protocol is called 'ZAB' - Zookeeper Atomic Broadcast.Similar to PAXOS protocol
 
-<img src="../../assets/images/kafka/zookeeper.png" style="max-width:40%;"/>
+<img src="../../assets/images/kafka/zookeeper.png" style="max-width:40%;"/><!-- {"left" : 1.94, "top" : 5.29, "height" : 2.76, "width" : 6.37} -->
+
+
 
 
 Notes:
@@ -165,10 +173,10 @@ Paxos: https://en.wikipedia.org/wiki/Paxos_(computer_science)
 
 ## ZK File System / Configuration
 
-
  * ZK exposes a virtual, file system hierarchy
 
-<img src="../../assets/images/kafka/ZK-File-System.png" alt="ZK-File-System.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/ZK-File-System.png" alt="ZK-File-System.png" style="width:70%;"/><!-- {"left" : 0.88, "top" : 2.46, "height" : 3.79, "width" : 8.49} -->
+
 
 Notes:
 
@@ -184,6 +192,7 @@ Notes:
 
  * Clients can be notified of changes."Notify me when '*zoo.lion.feeding_time*' changes"
 
-<img src="../../assets/images/kafka/ZK-File-System.png" alt="ZK-File-System.png" style="width:50%;"/>
+<img src="../../assets/images/kafka/ZK-File-System.png" alt="ZK-File-System.png" style="width:50%;"/><!-- {"left" : 1.61, "top" : 4.36, "height" : 3.14, "width" : 7.03} -->
+
 
 Notes:

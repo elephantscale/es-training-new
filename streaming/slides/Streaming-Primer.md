@@ -33,7 +33,8 @@ Notes:
     - Reporting
 
 
-<img src="../../assets/images/streaming/big-data-Evolution.png" alt="big-data-Evolution.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/big-data-Evolution.png" alt="big-data-Evolution.png" style="width:65%;"/><!-- {"left" : 1.46, "top" : 3.21, "height" : 3.71, "width" : 7.33} -->
+
 
 
 Notes: 
@@ -45,7 +46,8 @@ Notes:
 
 ## Moving Towards Fast Data: Version2
 
-<img src="../../assets/images/streaming/toward-fast-data.png" alt="toward-fast-data.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/streaming/toward-fast-data.png" alt="toward-fast-data.png" style="width:30%;float:right;"/><!-- {"left" : 6.62, "top" : 1.23, "height" : 3.24, "width" : 3.27} -->
+
 
   * Decision time: (near) real time
     - Seconds (or milliseconds)
@@ -58,8 +60,8 @@ Notes:
   * Beyond Batch
     - We need faster processing and analytics
 
-<img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" alt="Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" style="width:20%; "/>
-<img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-4.png" alt="Streaming-Primer-Moving-Towards-Fast-Data-Version-2-4.png" style="width:17%; "/>
+<img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" alt="Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" style="width:20.5%; "/><!-- {"left" : 2.58, "top" : 6.9, "height" : 1.81, "width" : 2.63} --> &nbsp; <img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-4.png" alt="Streaming-Primer-Moving-Towards-Fast-Data-Version-2-4.png" style="width:18.3%; "/><!-- {"left" : 5.24, "top" : 6.9, "height" : 1.81, "width" : 2.43} -->
+
 
 
 
@@ -72,7 +74,8 @@ Notes:
 
 ## Streaming Volumes: Texas Utilities Smart Meter Data
 
-<img src="../../assets/images/streaming/Texas-Utilities-Smart-Meter-Data.png" alt="Texas-Utilities-Smart-Meter-Data.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Texas-Utilities-Smart-Meter-Data.png" alt="Texas-Utilities-Smart-Meter-Data.png" style="width:65%;"/><!-- {"left" : 0.94, "top" : 1.81, "height" : 3.88, "width" : 8.37} -->
+
 
 
 Notes: 
@@ -95,8 +98,10 @@ Notes:
 
   * More use cases at [BigDataUseCases.info](www.BigDataUseCases.info)
 
-<img src="../../assets/images/logos/netflix-logo-1.png" alt="netflix.png" style="width:25%;"/>  &nbsp;  &nbsp;
-<img src="../../assets/images/streaming/3rd-party/the-weather-company.png" alt="the-weather-company.png" style="width:20%;"/>
+<img src="../../assets/images/logos/netflix-logo-1.png" alt="netflix.png" style="width:25%;"/><!-- {"left" : 2.12, "top" : 5.52, "height" : 1.47, "width" : 3.18} -->
+  &nbsp;  &nbsp;
+<img src="../../assets/images/streaming/3rd-party/the-weather-company.png" alt="the-weather-company.png" style="width:20%;"/><!-- {"left" : 6.24, "top" : 5.52, "height" : 1.47, "width" : 1.89} -->
+
 
 
 Notes: 
@@ -168,7 +173,9 @@ Notes:
     - Slightly higher latency (due to batching)
     - Frameworks: Spark Streaming
 
-<img src="../../assets/images/streaming/Streaming-proccessing-model.png" alt="Streaming-proccessing-model.png" style="width:35%;"/>
+<img src="../../assets/images/streaming/Streaming-proccessing-model.png" alt="Streaming-proccessing-model.png" style="width:35%;"/><!-- {"left" : 2.44, "top" : 6.32, "height" : 2.46, "width" : 5.38} -->
+
+
 
 
 Notes: 
@@ -180,7 +187,8 @@ Notes:
 ## Event Based Vs. Batch
 
 
-<img src="../../assets/images/streaming/event-based-batch.png" alt="event-based-batch.png" style="width:70%;"/>
+<img src="../../assets/images/streaming/event-based-batch.png" alt="event-based-batch.png" style="width:70%;"/><!-- {"left" : 1.17, "top" : 1.94, "height" : 5.19, "width" : 7.91} -->
+
 
 
 
@@ -255,8 +263,8 @@ Notes:
 - When applying a new 'batch' of counts, how can we make sure we are not duplicate counting?
 
 
-<img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-9.png" alt="Streaming-Primer-Processing-Guarantees-9.png" style="width:30%;"/>  &nbsp;  &nbsp;
-<img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-10.png" alt="Streaming-Primer-Processing-Guarantees-10.png" style="width:30%;"/>
+<img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-9.png" alt="Streaming-Primer-Processing-Guarantees-9.png" style="width:30%;"/><!-- {"left" : 0.94, "top" : 6.22, "height" : 2.17, "width" : 3.84} -->  &nbsp;  &nbsp; <img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-10.png" alt="Streaming-Primer-Processing-Guarantees-10.png" style="width:30%;"/><!-- {"left" : 5.18, "top" : 6.78, "height" : 1.67, "width" : 4.12} -->
+
 
 
 Notes: 
@@ -275,6 +283,8 @@ Notes:
 | GPS routing app                    | -At most once. We can skip past events to catch up to latest events ('next turn' is more important than past data) </br>-At least once can work too |
 | Credit card transaction processing | -Exactly once we don't want to charge credit cards twice due to duplicate processing                                                                |
 | Sending Emails                     | -At least once We don't want drop any emails.,Duplicate processing is OK (we might send duplicate emails)                                           |
+
+<!-- {"left" : 0.25, "top" : 1.48, "height" : 3.73, "width" : 9.75} -->
 
 Notes: 
 
@@ -329,10 +339,13 @@ Notes:
 ---
 ## State Management Strategies
 
-<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-011.png" alt="Streaming-Primer-State-Management-Strategies-011.png.png" style="width:40%;"/>  &nbsp;
-<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-11.png" alt="Streaming-Primer-State-Management-Strategies-11.png" style="width:40%;"/> &nbsp;
+<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-011.png" alt="Streaming-Primer-State-Management-Strategies-011.png.png" style="width:40%;"/><!-- {"left" : 0.43, "top" : 1.59, "height" : 1.85, "width" : 4.9} -->
+  &nbsp; <img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-11.png" alt="Streaming-Primer-State-Management-Strategies-11.png" style="width:40%;"/> &nbsp; <!-- {"left" : 5.6, "top" : 1.83, "height" : 2.88, "width" : 4.23} -->
 
-<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-12.png" alt="Streaming-Primer-State-Management-Strategies-12.png" style="width:30%;"/>
+
+<img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-12.png" alt="Streaming-Primer-State-Management-Strategies-12.png" style="width:30%;"/><!-- {"left" : 1.89, "top" : 5.35, "height" : 2.57, "width" : 6.47} -->
+
+
 
 
 
@@ -374,7 +387,8 @@ Notes:
   * Event Time < Arrival Time
   * Some times events may arrive 'out of order' 
 
-<img src="../../assets/images/streaming/Streaming-Primer-Event-Time-and-Arrival-Time-13.png" alt="Streaming-Primer-Event-Time-and-Arrival-Time-13.png" style="width:50%;"/>
+<img src="../../assets/images/streaming/Streaming-Primer-Event-Time-and-Arrival-Time-13.png" alt="Streaming-Primer-Event-Time-and-Arrival-Time-13.png" style="width:50%;"/><!-- {"left" : 2.12, "top" : 5.02, "height" : 3.42, "width" : 6.01} -->
+
 
 
 Notes: 
@@ -386,7 +400,9 @@ Notes:
 
 ## Event Time vs. Arrival Time Illustrated
 
-<img src="../../assets/images/streaming/event-time-002.png" alt="event-time-002.png" style="width:70%;"/>
+<img src="../../assets/images/streaming/event-time-002.png" alt="event-time-002.png" style="width:70%;"/><!-- {"left" : 0.61, "top" : 1.92, "height" : 4.13, "width" : 9.03} -->
+
+
 
 
 Notes: 
@@ -398,7 +414,8 @@ Notes:
 
 ## Back Pressure
 
-<img src="../../assets/images/streaming/3rd-party/Back-Pressure.png" alt="Back-Pressure.png" style="width:45%;float:right;"/>
+<img src="../../assets/images/streaming/3rd-party/Back-Pressure.png" alt="Back-Pressure.png" style="width:45%;float:right;"/><!-- {"left" : 6.91, "top" : 1.55, "height" : 1.76, "width" : 2.98} -->
+
 
   * Some times processing lags behind 
     - Processing system is too busy
@@ -421,9 +438,11 @@ Notes:
 ## Back Pressure
 
 
-<img src="../../assets/images/streaming/Picture1.png" alt="Picture1.png" style="width:50%;"/>
+<img src="../../assets/images/streaming/Picture1.png" alt="Picture1.png" style="width:50%;"/><!-- {"left" : 1.86, "top" : 1.95, "height" : 2.74, "width" : 6.54} -->
 
-<img src="../../assets/images/streaming/Picture2.png" alt="Picture2.png" style="width:50%;"/>
+
+<img src="../../assets/images/streaming/Picture2.png" alt="Picture2.png" style="width:50%;"/><!-- {"left" : 2, "top" : 4.95, "height" : 2.74, "width" : 6.25} -->
+
 
 
 Notes: 
@@ -440,7 +459,9 @@ Notes:
 ## Streaming Architecture - Over Simplified
 
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified.png" alt="Streaming-Over-Simplified.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Streaming-Over-Simplified.png" alt="Streaming-Over-Simplified.png" style="width:65%;"/><!-- {"left" : 0.56, "top" : 3.04, "height" : 3.56, "width" : 9.13} -->
+
+
 
 
 Notes: 
@@ -451,7 +472,8 @@ Notes:
 ---
 ## Streaming Architecture - Data Bucket
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified-01.png" alt="Streaming-Over-Simplified-01.png" style="max-width:55%;float:right;"/>
+<img src="../../assets/images/streaming/Streaming-Over-Simplified-01.png" alt="Streaming-Over-Simplified-01.png" style="max-width:55%;float:right;"/><!-- {"left" : 5.88, "top" : 3.48, "height" : 1.89, "width" : 4.21} -->
+
 
   * 'data bucket'
     - Captures incoming data
@@ -474,7 +496,8 @@ Notes:
 
 ## Streaming Architecture - Processing Engine
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified-02.png" alt="Streaming-Over-Simplified-02.png" style="max-width:55%;float:right;"/>
+<img src="../../assets/images/streaming/Streaming-Over-Simplified-02.png" alt="Streaming-Over-Simplified-02.png" style="max-width:55%;float:right;"/><!-- {"left" : 4.84, "top" : 1.78, "height" : 2.41, "width" : 5.15} -->
+
 
 * Need to process events with low latency
 * So many to choose from!
@@ -506,7 +529,9 @@ Notes:
 |                      |                                                   |                 |                                  |             |
 | At-least-once        | YES                                               | YES             | YES                              | YES         |
 | At-most-once         |                                                   |                 |                                  |             |
-| Exactly-once         |                                                   |                 |                                  |             |
+| Exactly-once         |                                                   |                 |                                  |            &nbsp; |
+
+<!-- {"left" : 0.25, "top" : 1.71, "height" : 5.15, "width" : 9.75} -->
 
 
 
@@ -518,7 +543,8 @@ Notes:
 
 ---
 ## Streaming Architecture - Data Store
-<img src="../../assets/images/streaming/Streaming-Over-Simplified-03.png" alt="Streaming-Over-Simplified-03.png" style="width:55%;float:right;"/>
+
+<img src="../../assets/images/streaming/Streaming-Over-Simplified-03.png" alt="Streaming-Over-Simplified-03.png" style="width:55%;float:right;"/><!-- {"left" : 5.95, "top" : 1.41, "height" : 2.02, "width" : 4.15} -->
 
   * Where processed data ends up
   * Two requirements:
@@ -543,7 +569,8 @@ Notes:
 
 ## Lambda Architecture
 
-<img src="../../assets/images/streaming/Lambda-Architecture.png" alt="Lambda-Architecture.png" style="width:65%;"/>
+<img src="../../assets/images/streaming/Lambda-Architecture.png" alt="Lambda-Architecture.png" style="width:65%;"/><!-- {"left" : 1.02, "top" : 2.44, "height" : 4.76, "width" : 8.21} -->
+
 
 
 Notes: 
@@ -575,7 +602,9 @@ Notes:
 ---
 ## Incorporating Lambda Architecture
 
-<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png" alt="Lambda-Streaming-Architecture-03.png" style="width:75%;"/>
+<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png" alt="Lambda-Streaming-Architecture-03.png" style="width:75%;"/><!-- {"left" : 0.72, "top" : 3.53, "height" : 2.01, "width" : 8.8} -->
+
+
 
 
 
@@ -587,7 +616,8 @@ Notes:
 ---
 ## Streaming Stack
 
-<img src="../../assets/images/streaming/Streaming-Platforms.png" alt="Streaming-Platforms.png" style="width:75%;"/>
+<img src="../../assets/images/streaming/Streaming-Platforms.png" alt="Streaming-Platforms.png" style="width:75%;"/><!-- {"left" : 0.41, "top" : 2.4, "height" : 4.26, "width" : 9.43} -->
+
 
 
 
@@ -632,7 +662,9 @@ Notes:
 | Supports window based functions | Yes starting with 1.0  | Yes                 |
 | Latency                         | Sub seconds to seconds | Yes                 |
 | Caching                         | no                     |                     |
-| Supported languages             | Java, Python           |                     |
+| Supported languages             | Java, Python           |             &nbsp;         |
+
+<!-- {"left" : 0.25, "top" : 3.93, "height" : 4.19, "width" : 9.75} -->
 
 Notes: 
 
@@ -654,6 +686,8 @@ Notes:
   | Latency                         | seconds                      |
   | Caching                         | yes                          |
   | Supported languages             | Java, Scala, Python          |
+
+<!-- {"left" : 0.25, "top" : 2.07, "height" : 3.5, "width" : 9.75} -->
 
 Notes: 
 
@@ -677,6 +711,7 @@ Notes:
   | Supported languages             | Java, Scala, Python         |
 
 
+<!-- {"left" : 0.25, "top" : 2.78, "height" : 3.5, "width" : 9.75} -->
 
 
 
@@ -704,6 +739,8 @@ Notes:
 | Caching                         | ?                      |
 | Supported languages             | Java, Scala, Python    |
   
+<!-- {"left" : 0.25, "top" : 3.82, "height" : 3.5, "width" : 9.75} -->
+
   
 Notes: 
 
@@ -730,6 +767,9 @@ Notes:
 | Caching                         | ?                      |
 | Supported languages             | Java, Scala, Python    |
 
+
+<!-- {"left" : 0.25, "top" : 3.82, "height" : 3.5, "width" : 9.75} -->
+
 Notes: 
 
 
@@ -746,10 +786,11 @@ Notes:
 | **State**                | Yes (from 1.0)                                         | Yes             | Yes                                      | Yes             | Yes         |
 | **Latency**              | Sub seconds                                            | Seconds         | Sub seconds                              | Sub seconds     | Sub seconds |
 | **Back Pressure**        | Yes                                                    |                 | Yes                                      |                 |             |
-|                          |                                                        |                 |                                          |                 |             |
 | **At-least-once**        | YES                                                    | YES             | YES                                      | YES             | YES         |
 | **At-most-once**         |                                                        |                 |                                          |                 |             |
-| **Exactly-once**         |                                                        |                 |                                          |                 |             |
+| **Exactly-once**         |                                                        |                 |                                          |                 |             &nbsp;|
+
+<!-- {"left" : 0.25, "top" : 1.13, "height" : 7.39, "width" : 9.75} -->
 
 Notes: 
 
@@ -759,6 +800,8 @@ Notes:
 ---
 ## Class Discussion
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/><!-- {"left" : 5.59, "top" : 0.87, "height" : 3.12, "width" : 4.67} -->
+
+
 
   * What are your streaming uses cases ?

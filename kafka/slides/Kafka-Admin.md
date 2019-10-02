@@ -58,11 +58,14 @@ Notes:
  | Modest | 8 cores  | 32 G         | 4 x SATA 7200 RPM | 2 x 1 Gig (bonded) |
  | High   | 24 cores | 64 G - 128 G | 8 x SATA 7200 RPM | 10 Gig             |
  
+<!-- {"left" : 0.25, "top" : 2.81, "height" : 1.88, "width" : 9.75} -->
+
+
 ---
 
 ## Kafka Hardware - Memory
 
-<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:30%;float:right;"/><!-- {"left" : 7.12, "top" : 1.08, "height" : 2.41, "width" : 2.97} -->
 
 - Kafka uses very modest memory by careful heap management (~ 4-8 G per broker)
 
@@ -119,8 +122,9 @@ Notes:
    They are usually slower, exhibit high latencies, and single point of failure
 
 
-<img src="../../assets/images/kafka/Disks-Setup-01.png" style="width:20%;"/> &nbsp;  &nbsp;
-<img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:20%;"/>
+<img src="../../assets/images/kafka/Disks-Setup-01.png" style="width:20%;"/><!-- {"left" : 1.53, "top" : 7.17, "height" : 1.52, "width" : 3.01} --> &nbsp;  &nbsp; <img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:20%;"/><!-- {"left" : 5.41, "top" : 7.16, "height" : 1.61, "width" : 3.19} -->
+
+
 
 Notes: 
 
@@ -131,8 +135,7 @@ Notes:
 
 ## Zookeeper Hardware
 
-<img src="../../assets/images/logos/zookeeper-logo-2.png" style="width:35%;float:right;"/>
-
+<img src="../../assets/images/logos/zookeeper-logo-2.png" style="width:35%;float:right;"/><!-- {"left" : 7, "top" : 1.15, "height" : 1.03, "width" : 3.09} -->
 
  * ZK have very modest hardware requirements
  * Run ZK on separate machines
@@ -148,6 +151,8 @@ Notes:
 | ZK Hardware | CPU     | Memory | Disk        | Network            |
 |-------------|---------|--------|-------------|--------------------|
 |             | 4 cores | 32 G   | 1 -2 drives | 2 x 1 Gig (bonded) |
+
+<!-- {"left" : 0.25, "top" : 7.44, "height" : 1.19, "width" : 9.75} -->
 
 Notes: 
 
@@ -168,9 +173,8 @@ Notes:
  * Zookeeper
      - ZK 3.4.x is stable and well tested with Kafka
 
-<img src="../../assets/images/logos/linux-logo-1.png" style="width:20%;"/>
-<img src="../../assets/images/logos/java-logo-1.png" style="width:20%;"/>
-<img src="../../assets/images/logos/zookeeper-logo-2.png" style="width:20%;"/>
+<img src="../../assets/images/logos/linux-logo-1.png" style="width:20%;"/><!-- {"left" : 0.99, "top" : 4.91, "height" : 1.46, "width" : 2.94} --> &nbsp; &nbsp; <img src="../../assets/images/logos/java-logo-1.png" style="width:20%;"/><!-- {"left" : 4.08, "top" : 4.6, "height" : 2.08, "width" : 2.08} --> &nbsp; &nbsp; <img src="../../assets/images/logos/zookeeper-logo-2.png" style="width:20%;"/><!-- {"left" : 6.31, "top" : 5.04, "height" : 1.19, "width" : 3.57} -->
+
 
 
 Notes: 
@@ -204,6 +208,9 @@ zookeeper.connect=zk_server1:2181,zk_server2:2181
 auto.create.topics.enable=true
 
 ```
+<!-- {"left" : 0, "top" : 1.47, "height" : 3.68, "width" : 10.25} -->
+
+
 
 Notes: 
 
@@ -278,7 +285,8 @@ Notes:
 
  * Openly accessible to all clients
 
-<img src="../../assets/images/kafka/Securing-Kafka-Trusted-Network.png" alt="Securing-Kafka-Trusted-Network.png" style="width:55%;"/>
+<img src="../../assets/images/kafka/Securing-Kafka-Trusted-Network.png" alt="Securing-Kafka-Trusted-Network.png" style="width:55%;"/><!-- {"left" : 1.68, "top" : 3.55, "height" : 3.96, "width" : 6.89} -->
+
 
 Notes: 
 
@@ -289,7 +297,8 @@ Notes:
 
 ## Quiz For The Class: Identify Points to Secure
 
-<img src="../../assets/images/kafka/Identify-Points-to-Secure.png" alt="Identify-Points-to-Secure.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Identify-Points-to-Secure.png" alt="Identify-Points-to-Secure.png" style="width:70%;"/><!-- {"left" : 0.52, "top" : 2.21, "height" : 5.23, "width" : 9.22} -->
+
 
 Notes: 
 
@@ -301,7 +310,9 @@ Notes:
 
 ## Securing Kafka
 
-<img src="../../assets/images/kafka/Securing-Kafka.png" alt="Securing-Kafka.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Securing-Kafka.png" alt="Securing-Kafka.png" style="width:70%;"/><!-- {"left" : 0.51, "top" : 2.2, "height" : 5.23, "width" : 9.23} -->
+
+
 
 Notes: 
 
@@ -312,7 +323,8 @@ Notes:
 
 ## Securing Kafka
 
-<img src="../../assets/images/kafka/Securing-Kafka.png" alt="Securing-Kafka.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/kafka/Securing-Kafka.png" alt="Securing-Kafka.png" style="width:50%;float:right;"/><!-- {"left" : 2, "top" : 5, "height" : 3.54, "width" : 6.25} -->
+
 
  * Clients connect to Kafka brokers via  **Kerberos / TLS** 
 
@@ -352,6 +364,8 @@ security.inter.broker.protocol=SSL
 
 
 ```
+<!-- {"left" : 0, "top" : 1.77, "height" : 2.77, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -371,6 +385,8 @@ Notes:
 super.users=User:bob;User:alice
 
 ```
+<!-- {"left" : 0, "top" : 1.88, "height" : 1.07, "width" : 6.78} -->
+
 
 ```bash
 # adding user as producer
@@ -381,6 +397,8 @@ kafka-acls -authorizer-properties
             -producer -topic test-topic
 
 ```
+<!-- {"left" : 0, "top" : 3.3, "height" : 1.86, "width" : 8.11} -->
+
 
 ```bash
 # adding user as consumer
@@ -391,6 +409,8 @@ kafka-acls -authorizer-properties
             -consumer -topic test-topic  -group Group1
 
 ```
+<!-- {"left" : 0, "top" : 5.52, "height" : 1.86, "width" : 9.78} -->
+
 
 Notes: 
 
@@ -425,6 +445,7 @@ props.setProperty(SslConfigs.SSL_KEY_PASSWORD_CONFIG, "test1234");
 new KafkaConsumer(props);
 
 ```
+<!-- {"left" : 0, "top" : 1.39, "height" : 4.58, "width" : 10.25} -->
 
 Notes: 
 

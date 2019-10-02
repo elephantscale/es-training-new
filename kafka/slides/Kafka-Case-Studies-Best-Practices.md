@@ -33,6 +33,8 @@ Notes:
 | Kafka REST Proxy | REST interface into Kafka cluster.,Produce / </br>Consume using RESTFUL APIs |
 | Camus            | Kafka / HDFS integration                                                     |
 
+<!-- {"left" : 0.25, "top" : 1.45, "height" : 3.38, "width" : 9.75} -->
+
 Notes:
 
 
@@ -54,12 +56,15 @@ Conf/kafka-env.sh
 
 export KAFKA_HEAP_OPTS="-Xmx16g -Xms16g"
 
-export KAFKA_JVM_PERFORMANCE_OPTS="-XX:MetaspaceSize=96m -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35
+export KAFKA_JVM_PERFORMANCE_OPTS=
+"-XX:MetaspaceSize=96m -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35
 -XX:G1HeapRegionSize=16M
 -XX:MinMetaspaceFreeRatio=50
 -XX:MaxMetaspaceFreeRatio=80"
 
 ```
+<!-- {"left" : 0, "top" : 3.4, "height" : 2.04, "width" : 10.25} -->
+
 
 Notes:
 
@@ -70,7 +75,8 @@ https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
 
 ## Best Practices: OS Setting
 
-<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:40%;float:right;"/><!-- {"left" : 5.26, "top" : 3.61, "height" : 3.98, "width" : 4.91} -->
+
 
  * Give rest of the memory (minus JVM heap) to Page Cache
 
@@ -92,7 +98,7 @@ Notes:
 
 ## Best Practices: Disks
 
-<img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:50%;float:right;"/><!-- {"left" : 6.07, "top" : 2.3, "height" : 2.01, "width" : 3.98} -->
 
  * Disks tend to be first bottleneck to be hit
 
@@ -278,7 +284,8 @@ Notes:
 ## Compression Comparisons
 
 
-<img src="../../assets/images/kafka/Compression-Comparisons.png" alt="Compression-Comparisons.png" style="width:60%;"/>
+<img src="../../assets/images/kafka/Compression-Comparisons.png" alt="Compression-Comparisons.png" style="width:60%;"/><!-- {"left" : 1.08, "top" : 1.61, "height" : 6.42, "width" : 8.09} -->
+
 
 Notes:
 
@@ -554,7 +561,8 @@ https://blog.griddynamics.com/in-stream-processing-service-blueprint
 
  * http://apps.griddynamics.com/realtime-twitter-sentiment-analysis-example
 
-<img src="../../assets/images/kafka/3rd-party/Reference-Impl-04.png" alt="Reference-Impl-04.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/3rd-party/Reference-Impl-04.png" alt="Reference-Impl-04.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.97, "height" : 4.58, "width" : 8.21} -->
+
 
 Notes:
 
@@ -880,7 +888,8 @@ https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons
 
  * And assemble the files on the other end
 
-<img src="../../assets/images/kafka/Through-Kafka.png" alt="Through-Kafka.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Through-Kafka.png" alt="Through-Kafka.png" style="width:70%;"/><!-- {"left" : 0.75, "top" : 3.7, "height" : 2.25, "width" : 8.76} -->
+
 
 
 Notes:
