@@ -21,6 +21,7 @@ generic/DL-Intro.md
 
 # A little theory
 ../machine-learning/generic/ML-concepts.md
+
 generic/DL-Concepts.md
 
 ./generic/DL-Linear.md

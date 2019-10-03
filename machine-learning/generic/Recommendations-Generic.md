@@ -15,26 +15,24 @@ Notes:
 
 ---
 
-# Recommendations
+# Recommendations Intro
 
 ---
 
 ## Recommendations Are Everywhere: Amazon
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Recommendations-Are-Everywhere-Amazon-0.png" style="width:70%"/><!-- {"left" : 1.85, "top" : 1.09, "height" : 3.06, "width" : 6.55} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-1-amazon.png" style="width:70%"/><!-- {"left" : 1.85, "top" : 1.09, "height" : 3.06, "width" : 6.55} -->
 
-
-*Source: Amazon*
+ *Source: Amazon*
 
 Notes:
 
-- Pictures courtesy of Amazon.com
 
 ---
 
 ## Recommendations by Amazon Prime
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Recommendations-by-Amazon-Prime-0.png" style="width:70%"/><!-- {"left" : 1.51, "top" : 1.01, "height" : 4.65, "width" : 7.23} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-2-amazon-prime.png" style="width:70%"/><!-- {"left" : 1.51, "top" : 1.01, "height" : 4.65, "width" : 7.23} -->
 
 
 
@@ -53,7 +51,7 @@ Notes:
 <img src="../../assets/images/machine-learning/Netflix-1.png" style="width:40%"/><!-- {"left" : 2.6, "top" : 1.02, "height" : 2.37, "width" : 5.04} -->
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Recommendations-With-Profiles-by-Netflix-0.png" style="width:40%"/><!-- {"left" : 2.02, "top" : 3.65, "height" : 2.48, "width" : 6.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-3-netflix.png" style="width:40%"/><!-- {"left" : 2.02, "top" : 3.65, "height" : 2.48, "width" : 6.21} -->
 
 
  *Source: Netflix*
@@ -158,25 +156,19 @@ Notes:
 
 ---
 
-## Netflix Prize
+## Netflix Prize competition (2009)
 
+<img src="../../assets/images/machine-learning/3rd-party/netflix-prize-1.png"  style="width:20%;float:right;"/>
 
  * Netflix Prize was an open competition for the best collaborative filtering algorithm to predict user ratings for films, based on previous ratings without any other information about the users or films
-
  * Target: Improve Netflix's own recommender system by at least 10%
-
+ * https://www.netflixprize.com/
  * Dataset
-
      -  **100 Million ratings by 480k users to 18k movies**
-
      - Format: (userid,  movieid, rating, date)
-
  * Prize of US $1 Million was claimed in Sept 2009 by 'Pragmatic Chaos' team
-
      - Improved Netflix ratings by 10.06 %
-
  * Sequel cancelled due to privacy concerns
-
      - Researchers were able to identify individual users by correlating Netflix ratings with Internet Movie Database (IMDB)!
 
 Notes:
@@ -186,12 +178,20 @@ https://en.wikipedia.org/wiki/Netflix_Prize
 
 ---
 
+## Netflix Prize Results
+
+- Can you guys spot the difference between top-2 teams in the leaderboard? :-) 
+
+<img src="../../assets/images/machine-learning/3rd-party/netflix-prize-2.png" style="width:70%;"/>
+
+---
+
 ## Netflix Prize Findings
 
 
  * It is really  **extremely simple to produce** "reasonable" recommendations and **extremely** **difficult to improve** **them**.
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Netflix-Prize-Findings-0.png" style="width:35%;margin-top:50px"/><!-- {"left" : 2.72, "top" : 2.11, "height" : 4.93, "width" : 4.81} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-4-netflix-prize-findings.png" style="width:35%;margin-top:50px"/><!-- {"left" : 2.72, "top" : 2.11, "height" : 4.93, "width" : 4.81} -->
 
 
 Notes:
@@ -354,25 +354,14 @@ Notes:
 
 
  *  **Cold Start**
-
      - CF works well when there are ratings for a user
-
      - What if a new user joins the system, and he hasn't got a ratings history?
-
      - Most systems can compensate for this scenario
-
         * Recommend  **'popular items** '   (most people like popular items)
-
         * Recommend based on location "people in San Jose watched these movies"
-
-        * Etc.
-
  *  **Spoofing**
-
      - Users can rate their items higher, and rate competition lower
-
      - Rating systems need to have safeguards for this
-
      - Also before running CF the data has to be sanitized
 
 Notes:
@@ -385,23 +374,15 @@ Notes:
 
 
  * Collaborative Filtering
-
      - K-Nearest Neighbors
-
      - Matrix decomposition (ALS, SVD)
 
  * Clustering
-
      - Above algorithms are supervised (they learn and then predict)
-
      - Clustering - unsupervised - can find patterns without 'learning'
-
      - Can be a solution to  **'cold start** ' problem
-
      - And a way to break up massive data into manageable sized clusters
-
      - Each cluster is assigned typical preferences, based on users that belong in the cluster
-
      - Users within each cluster will receive recommendations computed at the cluster level
 
 ---
@@ -458,12 +439,39 @@ Notes:
 
 * Another approach: Correlation!
 
-<img src="../../assets/images/machine-learning/3rd-party/cosine-distance-1.png" style="width:20%"/><!-- {"left" : 2.2, "top" : 5.14, "height" : 2.37, "width" : 2.31} -->
 
 
 Notes:
 
 
+---
+
+## Cosine Similarity
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/machine-learning/cosine-distance-1.png" style="width:40%;float:left;"/><!-- {"left" : 2.2, "top" : 5.14, "height" : 2.37, "width" : 2.31} -->  &nbsp;  &nbsp;
+<img src="../../assets/images/machine-learning/error-cosine-1.png" style="width:40%;float:right;"/>
+
+---
+
+## Cosine Similarity for Ratings
+
+- Here we are representing ratings as vectors
+- (Left) Start with ratings for 'movie-1'
+- (Middle) Add ratings for 'movie-2'
+- (Right) Generalize it to any number of movies
+
+| User | m1 | m2 | m3 |
+|------|----|----|----|
+| u1   | 4  | 3  | 5  |
+| u2   | 4  | 5  | 5  |
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/machine-learning/ratings-vector-1.png" style="width:30%;"/> &nbsp;
+<img src="../../assets/images/machine-learning/ratings-vector-2.png" style="width:30%;"/> &nbsp;
+<img src="../../assets/images/machine-learning/ratings-vector-3.png" style="width:30%;"/> &nbsp;
 
 ---
 
@@ -478,7 +486,7 @@ Notes:
  * Can also do K-nearest items (columns)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-K-Nearest-Neighbor-0.png" style="width:90%"/><!-- {"left" : 0.92, "top" : 2.54, "height" : 3.61, "width" : 8.4} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-knearest-neighbor-1.png" style="width:90%"/><!-- {"left" : 0.92, "top" : 2.54, "height" : 3.61, "width" : 8.4} -->
 
 
 Notes:
@@ -572,23 +580,14 @@ Notes:
 
 
  * To solve matrices U and V, we can utilize
-
      - SVD : Requires inverting a very large matrix -> computationally expensive
-
      - Apply ALS to approximate it
-
  * ALS we only need to solve one vector at time -> parallelizable !!
-
  * This is why Spark ML implements ALS
-
  * Basic algorithm:
-
      - Randomly initialize U and solve for V
-
      - Then go back and solve U using our solution for V
-
      - Keep iterating back and forth until we converge and approximate R as best as we can
-
  * After the matrix work is done, we can simply take the dot product of U and V to see what a predicted rating would be for a (user, item) combination
 
 Notes:

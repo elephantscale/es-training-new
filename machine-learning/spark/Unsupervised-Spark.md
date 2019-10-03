@@ -1,4 +1,4 @@
-# Session: Unsupervised Learning With Spark
+# Unsupervised Learning With Spark
 
 ---
 
@@ -14,9 +14,18 @@ Notes:
 
 ---
 
-# Unsupervised Generic
+## Unsupervised Intro
 
-[../generic/Unsupervised-Generic.md](../generic/Unsupervised-Generic.md)
+[../generic/Unsupervised-Intro.md](../generic/Unsupervised-Intro.md)
+
+---
+
+## Clustering
+[../generic/Unsupervised-Clustering.md](../generic/Unsupervised-Clustering.md)
+
+---
+
+# Clustering in Spark ML
 
 ---
 
@@ -41,18 +50,14 @@ Notes:
 
 ---
 
-# K-Means in Spark
-
----
-
-## Spark ML Kmeans API - Scala
+## KMeans in Spark ML - Scala
 
 
   * Class: org.apache.spark.mllib.clustering.Kmeans
 
-  * Constructs a KMeans instance with default parameters: {k: 2, maxIterations: 20, initializationMode: "k-means||", initializationSteps: 2, epsilon: 1e-4, seed: random}.
+  * Constructs a KMeans instance with parameters: k: 2, maxIterations: 20
 
-```text
+```scala
  import org.apache.spark.ml.clustering.KMeans   
 
  val kmeans = new KMeans().setK(2).setMaxIter(10)
@@ -73,14 +78,14 @@ Notes:
 
 ## Spark ML Kmeans API - Scala
 
-| Parameter 	| Method                                                 	| Description                                                                                                                                                          	| Default Value 	|
-|-----------	|--------------------------------------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------	|
-| k         	| setK()                                                 	| Number of clusters                                                                                                                                                   	| 2             	|
-| initMode  	| **setInitializationMode** (initializationMode: String) 	| How to initialize cluster centers.<br/> Possible values:<br/>- "random" : choose random points<br/>- "k-means II" : to use a parallel variant of k-means++'                            	| k-means II     	|
-| initSteps 	| **setInitializationSteps** (initializationSteps: Int)  	| Set the number of steps for the "k-means II" initialization mode. This is an advanced setting -- the default of 2 is almost always enough                             	| 2             	|
-| Epsilon   	| **setEpsilon** (epsilon: Double)                       	| Set the distance threshold within which we've considered centers to have converged. If all centers move less than this Euclidean distance, we stop iterating one run 	| 1e-4          	|
-| maxIter   	| **setMaxIterations** (maxIterations: Int)              	| How many iterations                                                                                                                                                  	| 20            	|
-| Seed      	| **setSeed** (seed: Long)                               	| Initial seed setting                                	|               	| |
+| Parameter | Method                                                 | Description                                                                                                                                                          | Default Value |
+|-----------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| k         | setK()                                                 | Number of clusters                                                                                                                                                   | 2             |
+| initMode  | **setInitializationMode** (initializationMode: String) | How to initialize cluster centers.<br/> Possible values:<br/>- "random" : choose random points<br/>- "k-means II" : to use a parallel variant of k-means++'          | k-means II    |
+| initSteps | **setInitializationSteps** (initializationSteps: Int)  | Set the number of steps for the "k-means II" initialization mode. This is an advanced setting -- the default of 2 is almost always enough                            | 2             |
+| Epsilon   | **setEpsilon** (epsilon: Double)                       | Set the distance threshold within which we've considered centers to have converged. If all centers move less than this Euclidean distance, we stop iterating one run | 1e-4          |
+| maxIter   | **setMaxIterations** (maxIterations: Int)              | How many iterations                                                                                                                                                  | 20            |
+| Seed      | **setSeed** (seed: Long)                               | Initial seed setting                                                                                                                                                 |               |
 
 Notes:
 
@@ -130,16 +135,20 @@ Notes:
 
 ## Spark ML Kmeans API - Python
 
+- class : __pyspark.ml.clustering.Kmeans__
 
-* **pyspark.ml.clustering.Kmeans** (self,     
-    featuresCol="features",     
-    predictionCol="prediction",     
-    k=2,     
-    initMode="k-means||",     
-    initSteps=2,     
-    tol=1e-4,     
-    maxIter=20,     
-    seed=None)
+```python
+pyspark.ml.clustering.Kmeans (self,     
+        featuresCol="features",     
+        predictionCol="prediction",     
+        k=2,     
+        initMode="k-means||",     
+        initSteps=2,     
+        tol=1e-4,     
+        maxIter=20,     
+        seed=None)
+```
+
 
 Notes:
 
@@ -148,16 +157,17 @@ Notes:
 ---
 
 ## Spark ML Kmeans API - Python
-| Parameter     | Description                                                                                                                             	| Default Value 	|
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------	|---------------	|
-| featuresCol   | Features vectors to consider                                                                                                            	| "features"    	|
-| predictionCol | Prediction column (where cluster assignment will appear)                                                                                	| "prediction"  	|
-| k             | Number of clusters                                                                                                                      	| 2             	|
-| initMode      | How to initialize cluster centers.<br/> Possible values: <br/>- "random" : choose random points<br/>- "k-means" : to use a parallel variant of k-means++' 	| k-means       	|
-| initSteps     | TODO                                                                                                                                    	| 2             	|
-| tol           | Threshold indicating   the convergence o fclusters                                                                                      	| 1e-4          	|
-| maxIter       | How many iterations                                                                                                                     	| 20            	|
-| seed          | Initial seed setting     	|               	|          |
+
+| Parameter     | Description                                                                                                                                               | Default Value |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| featuresCol   | Features vectors to consider                                                                                                                              | "features"    |
+| predictionCol | Prediction column (where cluster assignment will appear)                                                                                                  | "prediction"  |
+| k             | Number of clusters                                                                                                                                        | 2             |
+| initMode      | How to initialize cluster centers.<br/> Possible values: <br/>- "random" : choose random points<br/>- "k-means" : to use a parallel variant of k-means++' | k-means       |
+| initSteps     | TODO                                                                                                                                                      | 2             |
+| tol           | Threshold indicating   the convergence o fclusters                                                                                                        | 1e-4          |
+| maxIter       | How many iterations                                                                                                                                       | 20            |
+| seed          | Initial seed setting                                                                                                                                      |               |
 
 Notes:
 
@@ -168,23 +178,27 @@ Notes:
 ## Spark K-Means Code (Python)
 
 
- ```
- from pyspark.ml.feature import VectorAssembler
- from pyspark.ml.clustering import KMeans
+ ```python
+from pyspark.ml.feature import VectorAssembler
+from pyspark.ml.clustering import KMeans
 
- dataset = spark.read.csv("mtcars_header.csv", header=True, inferSchema=True) mpg_cyl = dataset.select("model", "mpg", "cyl")
- mpg_cyl.show(40)
+dataset = spark.read.csv("mtcars_header.csv", header=True, inferSchema=True)
+mpg_cyl = dataset.select("model", "mpg", "cyl")
+mpg_cyl.show(40)
 
- # select input / output
- assembler = VectorAssembler(inputCols=["mpg", "cyl"], outputCol="features") featureVector = assembler.transform(mpg_cyl)
- featureVector.show(40)
+# select input / output
+assembler = VectorAssembler(inputCols=["mpg", "cyl"], outputCol="features")
+featureVector = assembler.transform(mpg_cyl)
+featureVector.show(40)
 
- # Start KMeans with 2 clusters
- kmeans = KMeans().setK(2).setSeed(1)
- model = kmeans.fit(featureVector)
- wssse = model.computeCost(featureVector)
- print(wssse)
- model.transform(featureVector).show()
+# Start KMeans with 2 clusters
+kmeans = KMeans().setK(2).setSeed(1)
+model = kmeans.fit(featureVector)
+wssse = model.computeCost(featureVector)
+print(wssse)
+
+predictions =  model.transform(featureVector)
+predictions.show()
  ```
 
 Notes:
@@ -223,7 +237,7 @@ Notes:
 
 ## K-Means Run Output
 
-```text
+```console
 // for k=2
 > model.clusterCenters.foreach(println)
 [25.478571428571428,4.428571428571428]
@@ -232,7 +246,7 @@ Notes:
 ```
 
 
-```text
+```console
 > predicted.sort("prediction", "mpg").show(32,false)
 
 +-------------------+----+---+----------+----------+
@@ -260,15 +274,16 @@ Notes:
 ## Evaluating K-Means With WSSSE
 
 
-  Goal is to  minimize WSSSE with  reasonable effort
+-  Goal is to  minimize WSSSE with  reasonable effort
 
-  We look for elbows - that indicates a reasonable clustering
+-  We look for elbows - that indicates a reasonable clustering
 
-  After the elbow, the improvement is minimal
+-  After the elbow, the improvement is minimal
 
-   Question for class: At  k=32  we have achieved  WSSSE=0 , as in perfect fit !How is that?
+-   __Question for class__:  
+ At  k=32  we have achieved  WSSSE=0 , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/kmeans-11-wssse.png"  style="width:76%;"/><!-- {"left" : 1.02, "top" : 3.44, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 3.44, "height" : 3.5, "width" : 8.21} -->
 
 
 
@@ -333,7 +348,7 @@ Notes:
 
 * Question: How can we fix these warnings?
 
-```text
+```scala
 val dataset = spark.read.option(...)
 val dataset2 = dataset.select("model", "mpg", "cyl")
 val assembler = new VectorAssembler()...
@@ -343,13 +358,17 @@ val model = kmeans.fit(featureVector)
 ```
 
 ```
-WARN KMeans: `The input data is not directly cached`, which may hurt performance if its parent RDDs are also uncached.
+WARN KMeans: `The input data is not directly cached`,    
+which may hurt performance if its parent RDDs are also uncached.
 
-WARN BLAS: `Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS`
+WARN BLAS: `Failed to load implementation from:  
+com.github.fommil.netlib.NativeSystemBLAS`
 
-WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+WARN BLAS: Failed to load implementation from:   
+com.github.fommil.netlib.NativeRefBLAS
 
-WARN KMeans: The input data was not directly cached, which may hurt performance if its parent RDDs are also uncached.
+WARN KMeans: The input data was not directly cached,  
+which may hurt performance if its parent RDDs are also uncached.
 ```
 
 Notes:
@@ -369,6 +388,8 @@ Notes:
 
      - Check the storage tab to understand caching storage
 
+* Do multiple runs with multiple K values to determine the best range for K
+
 Notes:
 
 
@@ -378,32 +399,153 @@ Notes:
 ## Lab: K-Means in Spark
 
 
-   * **Overview** :
-
+   * **Overview** :  
         K-Means in Spark
 
-   * **Approximate time** :
-
+   * **Approximate time** :   
         30-40 mins
 
    * **Instructions** :
-
      - KMEANS-1 lab (mtcars)
 
      - KMEANS-2 : Uber trips
 
      - Bonus Lab : KMEANS-3 : Walmart shopping data
 
-   * **Answers** :
-
-     - Upload appropriate HTML files
 
 
 Notes:
 
+---
 
 
+## Dimensionality Reduction
+
+[../generic/Unsupervised-Dimensionality-Reduction.md](../generic/Unsupervised-Dimensionality-Reduction.md)
 
 ---
 
-# PCA in Spark
+# PCA in Spark ML
+
+---
+
+## PCA in Spark ML
+
+- Class : __pyspark.ml.feature.PCA__
+
+---
+
+## PCA in Spark ML : Sample Code (Python)
+
+```python
+from pyspark.ml.feature import PCA
+from pyspark.ml.feature import StandardScaler
+
+## abbreviated code
+data = spark.read...
+feature_vector = VectorAssembler().transform(data)
+
+## recommended to scale feature vector before PCA
+scaler = StandardScaler(inputCol="features", outputCol="scaledFeatures",
+                        withStd=True, withMean=False)
+                        scaler_model = scaler.fit(feature_vector)
+
+# Normalize each feature to have unit standard deviation.
+fv_scaled = scaler.fit(feature_vector).transform(feature_vector)
+
+
+## apply PCA for 5 Principal Component
+num_pc = 5
+pca = PCA(k=num_pc, inputCol="scaledFeatures", outputCol="pcaFeatures")
+model = pca.fit(fv_scaled)
+pca_features = model.transform(fv_scaled).select("pcaFeatures")
+
+```
+
+---
+
+## PCA in Spark ML : Sample Code (Python)
+
+- Here with 5 Principal Components we are getting 79% coverage! (not bad considering original dataset had 11 features)
+
+```python
+## Evaluate variance
+variance = model.explainedVariance.toArray()
+print(variance)
+print ("Original data had {} features,  principal components {}".format(len(data2.columns), num_pc))
+print("Cumulative Explained Variance: " + str(np.cumsum(variance)[-1]))
+```
+
+```
+[0.28 0.18 0.14 0.11 0.09]
+Original data had 11 features,  principal components 5
+Cumulative Explained Variance: 0.7952827473412729
+```
+---
+
+## PCA in Spark ML : Sample Code (Python)
+
+- Correlation matrix for PC components should be mostly zero (remember these Eigen vectors are orthogonal to each other!)
+
+```python
+from pyspark.ml.stat import Correlation
+import numpy as np
+
+## correlation matrix for PC,  should be very close to zero
+corr_pc = Correlation.corr(pca_features, "pcaFeatures").head()[0]
+corr_pc_nparr = corr_pc.toArray()
+
+print ("Correlation Matrtix for Principal Components")
+np.set_printoptions(precision=2, suppress=True)
+print(corr_pc_nparr)
+
+```
+
+```
+Correlation Matrtix for Principal Components
+[[ 1.  0.  0. -0.  0.]
+ [ 0.  1. -0.  0.  0.]
+ [ 0. -0.  1.  0.  0.]
+ [-0.  0.  0.  1. -0.]
+ [ 0.  0.  0. -0.  1.]]
+```
+
+---
+
+## PCA in Spark ML : Sample Code (Python)
+
+```python
+import matplotlib.pyplot as plt
+
+variance = model.explainedVariance.toArray()
+fig = plt.figure(figsize=(8,5))
+sing_vals = np.arange(num_pc) + 1
+plt.plot(np.arange(num_pc) + 1, np.cumsum(variance), 'ro-', linewidth=2)
+plt.title('Scree Plot')
+plt.xlabel('Principal Component')
+plt.ylabel('Explained Variance')
+
+leg = plt.legend(['Explained Variance'], loc='best', borderpad=0.3,
+                 shadow=False, prop=matplotlib.font_manager.FontProperties(size='small'),
+                 markerscale=0.4)
+
+```
+
+<img  src="../../assets/images/machine-learning/PCA-screeplot-1.png" style="width:34%;"/>
+
+---
+
+## LAB : PCA in Spark ML
+
+
+ *  **Overview**  
+    Reduce data dimension with PCA
+
+ *  **Approximate Time**  
+    30 mins
+
+ *  **Instructions**  
+    Follow  appropriate Python, R, or Scala instructions
+
+
+Notes:

@@ -229,7 +229,7 @@ Notes:
 
      - Discover problems on servers
 
-<img src="../../assets/images/machine-learning/Clustering-Use-Cases.png" style="width:29%;"><!-- {"left" : 3.04, "top" : 3.76, "height" : 3.39, "width" : 4.18} -->
+<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png" style="width:29%;"><!-- {"left" : 3.04, "top" : 3.76, "height" : 3.39, "width" : 4.18} -->
 
 
 Notes:

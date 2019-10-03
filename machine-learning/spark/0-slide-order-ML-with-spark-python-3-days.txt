@@ -36,7 +36,7 @@ Decision-Trees-Spark.md
 Unsupervised-Spark.md
 
 # Recommendations
-#Recommendations.md
+Recommendations-Spark.md
 
 ## Final Wrapup
 ../generic/Algorithm-Summary-details.md

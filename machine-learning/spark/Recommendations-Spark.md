@@ -1,4 +1,10 @@
-# Recommendations -Spark
+# Recommendations in Spark
+
+---
+
+## Recommendations Intro
+
+[../generic/Recommendations-Generic.md](../generic/Recommendations-Generic.md)
 
 ---
 
@@ -9,11 +15,11 @@
 ## CF in Spark ML
 
 
- * Spark ML implements ALS - Alternating Minimum Squares Algorithm
+* Spark ML implements ALS - Alternating Minimum Squares Algorithm
+  -  __org.apache.spark.ml.recommendation.ALS__   (Scala)
+  -  __pyspark.ml.recommendation.ALS__ (Python)
 
- *  **org.apache.spark.ml.recommendation.ALS**  **pyspark.ml.recommendation.ALS**
-
- * The DataFrame-based API for ALS currently only supports integers for user and item ids
+* The DataFrame-based API for ALS currently only supports integers for user and item ids
 
 Notes:
 
@@ -23,13 +29,13 @@ Notes:
 
 ## ALS Parameters
 
-| parameter         	| Description                                                                                             	| default                       	|
-|-------------------	|---------------------------------------------------------------------------------------------------------	|-------------------------------	|
-| numBlocks         	| number of blocks the users and items will be partitioned into in order to parallelize computation       	| 10                            	|
-| rank              	| the number of latent factors in the model                                                               	| 10                            	|
-| maxIter           	| maximum number of iterations to run                                                                     	| 10                            	|
-| implicitPrefs     	| specifies whether to use the explicit feedback ALS variant or one adapted for implicit feedback data    	| False (use explicit feedback) 	|
-| coldStartStrategy 	| How to handle missing ratings data for new user / new item <br/>- NaN : Not a Number <br/>- "drop" : drop this data 	| NaN                           	|
+| parameter         | Description                                                                                                         | default                       |
+|-------------------|---------------------------------------------------------------------------------------------------------------------|-------------------------------|
+| numBlocks         | number of blocks the users and items will be partitioned into in order to parallelize computation                   | 10                            |
+| rank              | the number of latent factors in the model                                                                           | 10                            |
+| maxIter           | maximum number of iterations to run                                                                                 | 10                            |
+| implicitPrefs     | specifies whether to use the explicit feedback ALS variant or one adapted for implicit feedback data                | False (use explicit feedback) |
+| coldStartStrategy | How to handle missing ratings data for new user / new item <br/>- NaN : Not a Number <br/>- "drop" : drop this data | NaN                           |
 
 Notes:
 
@@ -73,13 +79,18 @@ Notes:
 
      - RDD-based API: spark.mllib.recommendations (more mature)
 
-```text
-als = ALS(maxIter=5, regParam=0.01, userCol="userId", itemCol="movieId", ratingCol="rating",coldStartStrategy ="drop")
+```python
+import _pyspark.ml.recommendation.ALS
+
+als = ALS(maxIter=5, regParam=0.01,
+          userCol="userId", itemCol="movieId", ratingCol="rating",
+          coldStartStrategy ="drop")
 
 model = als.fit(training)
-datapredictions = model.transform(test)
+predictions = model.transform(test)
 
-evaluator = RegressionEvaluator( metricName="rmse", labelCol="rating", predictionCol = "prediction")
+evaluator = RegressionEvaluator( metricName="rmse",
+                labelCol="rating", predictionCol = "prediction")
 
 rmse = evaluator.evaluate(predictions)
 
@@ -97,7 +108,7 @@ Notes:
 ## Evaluating CF Recommendations (ROC)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Spark-01.png" style="width:80%"/><!-- {"left" : 0.76, "top" : 1.22, "height" : 5.53, "width" : 8.73} -->
+<img src="../../assets/images/data-analysis-python/recommendations-comparison-1.png" style="width:80%"/><!-- {"left" : 0.76, "top" : 1.22, "height" : 5.53, "width" : 8.73} -->
 
 
 Notes:
