@@ -1,0 +1,45 @@
+## To assemble md slides
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-order.txt
+## to make pdfs
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-order.txt    pdf
+## to make pptx
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-order.txt    pptx
+## to make pdf & pptx
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-order.txt    pdf   pptx
+##  (-d will replace current assembly.out)
+##  e.g     $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-order.txt
+
+
+## Course outline
+../outline-Machine-Learning-With-Apache-Spark-3-days.docx
+
+## About
+About-Machine-Learning-Class.md
+
+## High level Intro
+Machine-Learning-Primer.md
+
+## Hands on starts
+Labs-Prep.md
+Data-Exploration.md
+Feature-Engineering.md
+ML-Concepts-All.md
+
+
+## Regressions
+Regressions-All.md
+
+## classifications
+Classifications-All.md
+
+## Trees
+Decision-Trees-Generic.md
+
+## Unsupervised
+Unsupervised-All.md
+
+# Recommendations
+Recommendations-Generic.md
+
+## Final Wrapup
+Algorithm-Summary-details.md
