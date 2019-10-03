@@ -20,7 +20,7 @@ generic/DL-Intro.md
 ./tensorflow/TENSORFLOW-Intro.md
 
 # A little theory
-../machine-learning/generic/ML-concepts.md
+../machine-learning/generic/ML-Concepts-All.md
 
 generic/DL-Concepts.md
 
