@@ -13,7 +13,7 @@
     - Algorithm + training data -> model
     - Model = Algorithm(data)
 
-<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="max-width:50%;"/><!-- {"left" : 1.9, "top" : 3.63, "height" : 3.5, "width" : 6.44} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model1.png" alt="algorithm-vs-model1" style="max-width:50%;"/><!-- {"left" : 1.9, "top" : 4.49, "height" : 3.5, "width" : 6.44} -->
 
 
 
@@ -26,7 +26,7 @@ Notes:
 
 ## Algorithm and Model
 
-<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="max-width:80%;"/> <!-- {"left" : 0.63, "top" : 1.2, "height" : 5.44, "width" : 8.98} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="max-width:80%;"/> <!-- {"left" : 0.63, "top" : 2.1, "height" : 5.44, "width" : 8.98} -->
 
 
 
@@ -43,7 +43,7 @@ Notes:
 
   * Input goes in, model produces an output
 
-<img src="../../assets/images/machine-learning/Model.png" alt="Model" style="width:70%;"/><!-- {"left" : 0.53, "top" : 3.99, "height" : 1.68, "width" : 9.19} -->
+<img src="../../assets/images/machine-learning/Model.png" alt="Model" style="width:70%;"/><!-- {"left" : 0.53, "top" : 4.79, "height" : 1.68, "width" : 9.19} -->
 
 
 
@@ -64,7 +64,7 @@ Notes:
 Pause here, and go to next section
 
 ---
-# ML Concepts : Part 2
+# ML Concepts: Part 2
 
 * To Instructor:  
 These sub sections are included in other sections

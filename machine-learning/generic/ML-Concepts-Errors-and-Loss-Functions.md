@@ -30,6 +30,7 @@
 | 5      | 15       |
 | 7      | 5        |
 
+<!-- {"left" : 0.25, "top" : 2.3, "height" : 3.5, "width" : 9.75} -->
 
 
 
@@ -49,7 +50,8 @@ Notes:
     * __`Residual = actual tip - predicted tip`__
  * Sum of all residuals = **ZERO**  (positive and negative errors are canceling each other)
 
-<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:40%;float:right;"/><!-- {"left" : 0.23, "top" : 5.62, "height" : 1.89, "width" : 3.83} -->
+
 
 | Actual Tip | Predicted Tip | Error or Residual = (Actual - Predicted) |
 |------------|---------------|------------------------------------------|
@@ -62,6 +64,7 @@ Notes:
 |            |               | SUM = 0  (+2 -3 +3 -2 +5 -5)             |
 
 
+<!-- {"left" : 4.18, "top" : 4.57, "height" : 3.98, "width" : 5.98, "columnwidth" : [1.08, 1.39, 3.51]} -->
 
 
 Notes:
@@ -96,7 +99,7 @@ Notes:
 
 ## Sum of Squared Errors (SSE)
 
-<img src="../../assets/images/formulas-equations/sum-of-squared-error-SSE-1.png" alt="equation-error-SSE-1" style="width:40%;float:right;"/>
+<img src="../../assets/images/formulas-equations/sum-of-squared-error-SSE-1.png" alt="equation-error-SSE-1" style="width:40%;float:right;"/><!-- {"left" : 6.65, "top" : 1.94, "height" : 1.33, "width" : 3.45} -->
 
  * Also known as
     - **Residual Sum of Squares (RSS)**
@@ -122,8 +125,8 @@ Notes:
 
 ## Mean Squared Error (MSE) (L2)
 
+<img src="../../assets/images/formulas-equations/mean-square-error-MSE-1.png" alt="XXX image missing" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.82, "top" : 2.47, "height" : 1.2, "width" : 3.17} -->
 
-<img src="../../assets/images/formulas-equations/mean-square-error-MSE-1.png" alt="XXX image missing" style="background:white;width:30%;float:right;"/>
 
 | Actual Tip | Predicted Tip | Error = (Actual - Predicted) | Error Squared |
 |------------|---------------|------------------------------|---------------|
@@ -135,6 +138,7 @@ Notes:
 | 5          | 10            | -5 = (5 - 10)                | 25            |
 |            | Total ==>     | 0                            | 76            |
 
+<!-- {"left" : 0.31, "top" : 1.33, "height" : 3.47, "width" : 6.22, "columnwidth" : [1.32, 1.69, 2.08, 1.13]} -->
 
 
 - `MSE = (4  + 9 + 9 + 4 + 25 + 25)/6 = 76 / 6 = 12.6`
@@ -151,7 +155,8 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Mean Absolute Error (MAE)
 
-<img src="../../assets/images/formulas-equations/mean-absolute-error-MAE-1.png"  style="width:30%;float:right;"/>
+<img src="../../assets/images/formulas-equations/mean-absolute-error-MAE-1.png"  style="width:30%;float:right;"/><!-- {"left" : 6.71, "top" : 2.3, "height" : 1.2, "width" : 3.17} -->
+
 
 
 | Actual Tip | Predicted Tip | Error = (Actual - Predicted) | **Absolute Error** | Error Squared |
@@ -164,6 +169,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 | 5          | 10            | -5 = (5 - 10)                | 5                  | 25            |
 |            | Total ==>     | 0                            | 20                 | 76            |
 
+<!-- {"left" : 0.18, "top" : 1.1, "height" : 3.73, "width" : 6.68, "columnwidth" : [1.39, 1.4, 2.06, 0.62, 1.22]} -->
 
 - `MAE = (2 + 3 + 3 + 2 + 5 + 5) = 20 / 6 = 3.33`
 - Properties:
@@ -202,6 +208,8 @@ https://isaacchanghau.github.io/post/loss_functions/
 | Mean Square Error (MSE)     | Negative Log Likelihood | L1 Hinge Error |
 | Mean Absolute Error (MAE)   | Margin Classifier       |                |
 |                             | Soft Margin Classifier  | &nbsp;         |
+
+<!-- {"left" : 0.25, "top" : 1.64, "height" : 2.69, "width" : 9.75} -->
 
 ---
 
@@ -254,7 +262,7 @@ Notes:
 
 ## Cosine Proximity
 
-<img src="../../assets/images/machine-learning/error-cosine-1.png" alt="XXX image missing" style="background:white; width: 30%;float:right;" /><!-- {"left" : 1.85, "top" : 4.85, "height" : 2.62, "width" : 6.54} -->
+<img src="../../assets/images/machine-learning/error-cosine-1.png" alt="XXX image missing" style="background:white; width: 30%;float:right;" /><!-- {"left" : 6.62, "top" : 1.15, "height" : 3.05, "width" : 3.43} -->
 
 
 - Computes the cosine proximity between predicted value and actual value
@@ -264,7 +272,7 @@ Notes:
     - Vectors are 'not similar' if they are perpendicular / orthogonal
 
 
-<img src="../../assets/images/formulas-equations/cosine-similarity-1.png" alt="formula-01.png" style="background:white;width:70%" /><!-- {"left" : 2.5, "top" : 5.37, "height" : 2.1, "width" : 5.24} -->
+<img src="../../assets/images/formulas-equations/cosine-similarity-1.png" alt="formula-01.png" style="background:white;width:70%" /><!-- {"left" : 1.79, "top" : 6.36, "height" : 2.67, "width" : 6.67} -->
 
 
 
@@ -280,7 +288,7 @@ Notes:
 
 - For binary output
 
-<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-1.png"  style="background:white;width:70%" /><!-- {"left" : 2.47, "top" : 2.28, "height" : 1.42, "width" : 5.31} -->
+<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-1.png"  style="background:white;width:70%" /><!-- {"left" : 2.47, "top" : 2, "height" : 1.42, "width" : 5.31} -->
 
 
 - For multi-class classifier

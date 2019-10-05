@@ -1,4 +1,7 @@
 # Introduction to spaCy
+
+<img src="../../assets/images/logos/spacy-logo-1.png" style="width:20%;" />
+
 ---
 ## NLP Libraries
 
@@ -20,6 +23,8 @@ Notes:
 
 ---
 ## Spacy Intro
+
+<img src="../../assets/images/logos/spacy-logo-1.png" style="width:30%;float:right;" />
 
  * Spacy is a Python library  for advanced natural language processing (NLP)
 

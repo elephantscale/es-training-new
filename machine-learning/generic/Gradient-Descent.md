@@ -4,8 +4,7 @@
 
 ## Find the Optimal Value for a Variable
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/machine-learning/gradient-descent-1b.png" style="width:40%;float:right;"/><!-- {"left" : 2.3, "top" : 1.48, "height" : 5.64, "width" : 5.66} -->
+<img src="../../assets/images/machine-learning/gradient-descent-1b.png" style="width:40%;float:right;"/><!-- {"left" : 3.55, "top" : 1, "height" : 2.53, "width" : 3.15} -->
 
  * Now we understand **error/loss functions** let's try this:
 
@@ -23,18 +22,16 @@
 
 * Challenge is find the optimal value of X without knowing the graph!
 
-<img src="../../assets/images/machine-learning/gradient-descent-4a.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/gradient-descent-4a.png" style="width:60%;"/><!-- {"left" : 1.94, "top" : 2.05, "height" : 5.55, "width" : 6.37} -->
 
-<!-- TODO Shiva -->
+
+
 
 ---
 
-
 ## Gradient Descent Process - Step 1
 
-<!-- TODO Shiva -->
-
-<img src="../../assets/images/machine-learning/gradient-descent-4b.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/machine-learning/gradient-descent-4b.png" style="width:50%;float:right;"/><!-- {"left" : 3.52, "top" : 0.92, "height" : 2.54, "width" : 3.2} -->
 
 - We are going to start at some random value of X (say x1)
 
@@ -49,9 +46,7 @@
 
 ## Gradient Descent Process - Step 2
 
-<!-- TODO Shiva -->
-
-<img src="../../assets/images/machine-learning/gradient-descent-4c.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/machine-learning/gradient-descent-4c.png" style="width:50%;float:right;"/><!-- {"left" : 2.28, "top" : 0.91, "height" : 4.11, "width" : 5.7} -->
 
 - Using the error derivative, we can see the error function sloping to the right
 
@@ -66,9 +61,7 @@
 
 ## Gradient Descent Process - Step 3
 
-<!-- TODO shiva  -->
-
-<img src="../../assets/images/machine-learning/gradient-descent-4d.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/machine-learning/gradient-descent-4d.png" style="width:50%;float:right;"/><!-- {"left" : 2.76, "top" : 0.92, "height" : 3.42, "width" : 4.73} -->
 
 - Now we calculate the error for x2  
 `error = f(x2)`
@@ -83,7 +76,7 @@
 
 ## Gradiant Descent
 
-<img src="../../assets/images/machine-learning/gradient-descent-1a.png" style="width:50%;float:right;"/><!-- {"left" : 2.3, "top" : 1.48, "height" : 5.64, "width" : 5.66} -->
+<img src="../../assets/images/machine-learning/gradient-descent-1a.png" style="width:50%;float:right;"/><!-- {"left" : 5.5, "top" : 1.73, "height" : 4.47, "width" : 4.48} -->
 
  * This is basically what a Gradient Descent algorithm does
 
@@ -96,8 +89,7 @@
 
 ## Avoiding Getting Trapped in Local Minima
 
-<!-- TODO shiva  -->
-<img src="../../assets/images/machine-learning/gradient-descent-avoid-local-minima-1.png" style="width:50%;float:right;"/><!-- {"left" : 2.3, "top" : 1.48, "height" : 5.64, "width" : 5.66} -->
+<img src="../../assets/images/machine-learning/gradient-descent-avoid-local-minima-1.png" style="width:50%;float:right;"/><!-- {"left" : 2.62, "top" : 1.29, "height" : 3.7, "width" : 5.01} -->
 
 - Sometimes the descent algorithm will get stuck on local minima
 
@@ -117,7 +109,7 @@ Notes:
 
  * Another example in 2D data
 
-<img src="../../assets/images/machine-learning/gradient-descent-3.png" style="width:80%"/><!-- {"left" : 0.57, "top" : 1.4, "height" : 5.18, "width" : 9.11} -->
+<img src="../../assets/images/machine-learning/gradient-descent-3.png" style="width:80%"/><!-- {"left" : 0.57, "top" : 2.65, "height" : 5.18, "width" : 9.11} -->
 
 
 Notes:
@@ -128,12 +120,12 @@ Image credit to KDNuggets : https://www.kdnuggets.com/2017/04/simple-understand-
 ---
 ## Gradient Descent Demo
 
-<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
-<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-3.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
+<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /><!-- {"left" : 0.57, "top" : 3.65, "height" : 3.87, "width" : 3.9} --> &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-3.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" /><!-- {"left" : 4.8, "top" : 4.63, "height" : 1.91, "width" : 4.88} -->
 
-[Animation 1](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-1.gif)
 
-[Animation 2](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-3.gif)
+ - [Animation 1](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-1.gif)
+
+ - [Animation 2](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-3.gif)
 
 Notes:
 
