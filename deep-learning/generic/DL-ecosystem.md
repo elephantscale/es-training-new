@@ -29,7 +29,7 @@ Notes:
 | Theano         | Python               | Linux, macOS, iOS                   | University of Montreal                | 2010 |
 | Torch          | C++, Lua             | Linux, macOS, iOS, Android          | R.Collobert, K.Kavukcuoglu, C.Farabet | 2002 |
 
-<!-- {"left" : 0.26, "top" : 0.9, "height" : 6.49, "width" : 9.75, "columnwidth" : [1.95, 1.95, 1.95, 1.95, 1.95]} -->
+<!-- {"left" : 0.26, "top" : 1.24, "height" : 6.49, "width" : 9.75, "columnwidth" : [1.95, 1.95, 1.95, 1.95, 1.95]} -->
 
 
 Notes:
@@ -43,7 +43,7 @@ Notes:
 
  * Now Big Data tools make it possible to run machine learning algorithms at massive scale-distributed across a cluster
 
-<img src="../../assets/images/deep-learning/DL-cluster.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;"/><!-- {"left" : 0.81, "top" : 3.41, "height" : 3.67, "width" : 8.63} -->
+<img src="../../assets/images/deep-learning/DL-cluster.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;"/><!-- {"left" : 0.81, "top" : 4.25, "height" : 3.67, "width" : 8.63} -->
 
 
 Notes:
@@ -140,7 +140,7 @@ Notes:
     - Google Cloud ML
 
 
-<img src="../../assets/images/logos/aws-logo.jpg" alt="aws logo" style="background:white; max-width:100%;"  width="20%;"/>&nbsp; &nbsp;<!-- {"left" : 0.67, "top" : 5.26, "height" : 0.88, "width" : 2.7} --><img src="../../assets/images/logos/google-cloud-logo.jpg" alt=" google cloud logo" style="background:white;width:20%;"/>&nbsp; &nbsp;<!-- {"left" : 3.69, "top" : 4.8, "height" : 1.8, "width" : 2.7} --><img src="../../assets/images/logos/azure-cloud-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%;"/><!-- {"left" : 6.7, "top" : 4.8, "height" : 1.8, "width" : 2.88} -->
+<img src="../../assets/images/logos/aws-logo.jpg" alt="aws logo" style="background:white; max-width:100%;"  width="20%;"/>&nbsp; &nbsp;<!-- {"left" : 0.67, "top" : 6.08, "height" : 0.88, "width" : 2.7} --><img src="../../assets/images/logos/google-cloud-logo.jpg" alt=" google cloud logo" style="background:white;width:20%;"/>&nbsp; &nbsp;<!-- {"left" : 3.69, "top" : 5.62, "height" : 1.8, "width" : 2.7} --><img src="../../assets/images/logos/azure-cloud-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%;"/><!-- {"left" : 6.7, "top" : 5.62, "height" : 1.8, "width" : 2.88} -->
 
 
 Notes:
@@ -167,7 +167,7 @@ Notes:
 ---
 ## Deep Learning in Mobile
 
-<img src="../../assets/images/deep-learning/face-id-1.png" alt="XXX image missing" style="width:32%;float:right;"/><!-- {"left" : 8.49, "top" : 1.63, "height" : 1.73, "width" : 1.73} -->
+<img src="../../assets/images/deep-learning/face-id-1.png" alt="XXX image missing" style="width:32%;float:right;"/><!-- {"left" : 7.73, "top" : 1.07, "height" : 2.49, "width" : 2.49} -->
 
  * Why do DL on mobile?
  * **Privacy:** so no data leaves the device.This is important with PII (Personaly  Identifiable Information) and Europe's GDPR (General Data Protection Regulation)
@@ -207,10 +207,10 @@ Notes:
 
 ## Deep Learning Model Benchmarks
 
-<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_accuracy-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%;"/><!-- {"left" : 1.81, "top" : 1.44, "height" : 2.48, "width" : 6.62} -->
+<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_accuracy-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%;"/><!-- {"left" : 1.81, "top" : 2.02, "height" : 2.48, "width" : 6.62} -->
 
 
-<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_latency-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%;"/><!-- {"left" : 1.81, "top" : 4.6, "height" : 2.45, "width" : 6.62} -->
+<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_latency-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%;"/><!-- {"left" : 1.81, "top" : 5.18, "height" : 2.45, "width" : 6.62} -->
 
 
 Notes:  
@@ -220,7 +220,7 @@ Source : https://www.tensorflow.org/lite/performance/best_practices
 
 ## Commercial DL Software
 
-<img src="../../assets/images/logos/h2o-ai.png" alt="h2o-ai.png" style="width:20%;float:right;"/><!-- {"left" : 7.8, "top" : 0.99, "height" : 2.17, "width" : 2.17} -->
+<img src="../../assets/images/logos/h2o-ai.png" alt="h2o-ai.png" style="width:16%;float:right;"/><!-- {"left" : 7.8, "top" : 0.99, "height" : 2.17, "width" : 2.17} -->
 
  *  **H2O**
     - Easy to use API
@@ -230,13 +230,10 @@ Source : https://www.tensorflow.org/lite/performance/best_practices
     - Commercially supported
     - Vendor: 0xData
 
+&nbsp;
+&nbsp;
 
-
----
-
-## Commercial DL Software
-
-<img src="../../assets/images/deep-learning/3rd-party/skymind.png" alt="skymind.png" style="width:30%;float:right;"/><!-- {"left" : 6.13, "top" : 1.18, "height" : 0.76, "width" : 3.87} -->
+<img src="../../assets/images/deep-learning/3rd-party/skymind.png" alt="skymind.png" style="width:25%;float:right;"/><!-- {"left" : 6.13, "top" : 5.2, "height" : 0.76, "width" : 3.87} -->
 
  * SkyMind SKIL
     - Java based ML stack (DJ4J)

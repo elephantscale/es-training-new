@@ -136,7 +136,7 @@ Notes:
   - Mostly constrained by resources of the day
 
 
-<img src="../../assets/images/deep-learning/lenet-architecture.png" style="width:90%;" /> <!-- {"left" : 1.02, "top" : 4.11, "height" : 2.02, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/lenet-architecture.png" style="width:90%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
 
 Notes:
 
@@ -147,7 +147,7 @@ Notes:
 * Applied LeNet to full size RGB imags (224x224x3) with 1000 classes.
 * Still very popular
 
-<img src="../../assets/images/deep-learning/CNN-Imagenet.png" style="width:90%;" /> <!-- {"left" : 1.02, "top" : 2.49, "height" : 3.97, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/CNN-Imagenet.png" style="width:90%;" /> <!-- {"left" : 1.02, "top" : 3.18, "height" : 3.97, "width" : 8.21} -->
 
 
 Notes:
@@ -161,7 +161,7 @@ Notes:
 * Simplified Architecture
 
 
-<img src="../../assets/images/deep-learning/CNN-VGG.png" style="width:70%;" /> <!-- {"left" : 1.02, "top" : 2.03, "height" : 4.85, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/CNN-VGG.png" style="width:70%;" /> <!-- {"left" : 1.02, "top" : 2.87, "height" : 4.85, "width" : 8.21} -->
 
 Notes:
 
@@ -173,7 +173,7 @@ Notes:
 &nbsp;
 &nbsp;
 
-<img src="../../assets/images/deep-learning/CNN-VGG-2.png" style="width:90%;"/> <!-- {"left" : 0.35, "top" : 3.39, "height" : 1.19, "width" : 9.55} -->
+<img src="../../assets/images/deep-learning/CNN-VGG-2.png" style="width:90%;"/> <!-- {"left" : 0.35, "top" : 3.94, "height" : 1.19, "width" : 9.55} -->
 
 
 Notes:
@@ -206,7 +206,7 @@ Notes:
 
 ## Comparison of Transfer Learning Architectures
 
-<img src="../../assets/images/deep-learning/CNN-tl-comparison.png" style="width:90%;"/> <!-- {"left" : 0.52, "top" : 2.11, "height" : 3.75, "width" : 9.2} -->
+<img src="../../assets/images/deep-learning/CNN-tl-comparison.png" style="width:90%;"/> <!-- {"left" : 0.52, "top" : 2.95, "height" : 3.75, "width" : 9.2} -->
 
 
 

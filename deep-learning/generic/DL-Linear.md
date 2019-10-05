@@ -24,7 +24,7 @@ Notes:
     - Output: YES / NO  
     If the final score is > 50, then the answer is YES, otherwise NO
 
-<img src="../../assets/images/deep-learning/perceptron-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 0.91, "top" : 3.97, "height" : 2.77, "width" : 8.43} -->
+<img src="../../assets/images/deep-learning/perceptron-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 0.91, "top" : 4.69, "height" : 2.77, "width" : 8.43} -->
 
 ---
 ## Simple Perceptron Example
@@ -39,7 +39,7 @@ Notes:
 
  * Please note, here the weights are assigned manually
 
-<img src="../../assets/images/deep-learning/perceptron-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 1.07, "top" : 4.47, "height" : 2.66, "width" : 8.11} -->
+<img src="../../assets/images/deep-learning/perceptron-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 1.07, "top" : 5.07, "height" : 2.66, "width" : 8.11} -->
 
 
 ---
@@ -50,7 +50,7 @@ Notes:
  * Each input has their weights (W1, W2, ... Wm)
  * The inupt '1' and weight 'W0' is bias term
 
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 1.19, "top" : 2.83, "height" : 4.24, "width" : 7.86} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 1.19, "top" : 3.83, "height" : 4.24, "width" : 7.86} -->
 
 
 ---
@@ -58,7 +58,7 @@ Notes:
 
  * Find a divider to separate these two classes (blue / orange)
 
-<img src="../../assets/images/deep-learning/sample-01.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%;"/><!-- {"left" : 2.69, "top" : 1.77, "height" : 4.99, "width" : 4.88} -->
+<img src="../../assets/images/deep-learning/sample-01.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%;"/><!-- {"left" : 2.69, "top" : 2.33, "height" : 4.99, "width" : 4.88} -->
 
 
 
@@ -66,7 +66,7 @@ Notes:
 
 ## Solution
 
-<img src="../../assets/images/deep-learning/sample-01b.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%;"/><!-- {"left" : 6.4, "top" : 1.93, "height" : 3.64, "width" : 3.56} -->
+<img src="../../assets/images/deep-learning/sample-01b.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%;"/><!-- {"left" : 5.95, "top" : 1.84, "height" : 4.1, "width" : 4.01} -->
 
  * We can draw line that separates these two classes;  Essentially  a linear model
 
@@ -97,7 +97,7 @@ Notes:
 
  * Output is binary
 
-<img src="../../assets/images/deep-learning/perceptron-01.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 0.87, "top" : 4.05, "height" : 2.28, "width" : 8.51} -->
+<img src="../../assets/images/deep-learning/perceptron-01.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 0.87, "top" : 4.65, "height" : 2.28, "width" : 8.51} -->
 
 Notes:
 
@@ -110,7 +110,7 @@ Notes:
 
  * During training the values for  weights w1, w2 have been figured out
 
-<img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%"/><!-- {"left" : 3.18, "top" : 2.66, "height" : 3.96, "width" : 3.9} -->
+<img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%"/><!-- {"left" : 3.18, "top" : 3.18, "height" : 3.96, "width" : 3.9} -->
 
 Notes:
 
@@ -136,7 +136,7 @@ Notes:
 
 ## Gradient Descent
 
-<img src="../../assets/images/machine-learning/gradient-descent-1a.png" style="width:50%;float:right;"/><!-- {"left" : 6.69, "top" : 2.37, "height" : 3.23, "width" : 3.24} -->
+<img src="../../assets/images/machine-learning/gradient-descent-1a.png" style="width:50%;float:right;"/><!-- {"left" : 6.14, "top" : 2.37, "height" : 3.78, "width" : 3.79} -->
 
  * Start with initial values of coefficients (zero or random value)
  *  **cost = cost_function(coefficients)**
@@ -153,7 +153,7 @@ Notes:
 
  * Here we are adjusting 2 coefficients, so the descent is a 'surface' (think 3D)
 
-<img src="../../assets/images/machine-learning/gradient-descent-3.png" alt="XXX image missing" style="background:white;width:80%;"/><!-- {"left" : 1.02, "top" : 2.07, "height" : 4.68, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/gradient-descent-3.png" alt="XXX image missing" style="background:white;width:80%;"/><!-- {"left" : 1.02, "top" : 2.99, "height" : 4.68, "width" : 8.21} -->
 
 
 Notes:
@@ -178,7 +178,7 @@ Notes:
 
 ## Perceptron Mini Lab-5 Mins
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="10%;"/><!-- {"left" : 8.63, "top" : 0.92, "height" : 1.67, "width" : 1.25} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="10%;"/><!-- {"left" : 7.87, "top" : 1.15, "height" : 2.84, "width" : 2.13} -->
 
  * Try this at [playground.tensorflow.org](https://playground.tensorflow.org/)
 
@@ -188,7 +188,7 @@ Notes:
     - Select zero hidden layers
     - Press play to converge on a solution (as shown on right)
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="25%"/> &nbsp; &nbsp; <!-- {"left" : 2.6, "top" : 4.99, "height" : 2, "width" : 1.94} --><img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%"/> &nbsp; &nbsp; <!-- {"left" : 4.69, "top" : 5.55, "height" : 0.89, "width" : 0.89} --><img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="25%"/><!-- {"left" : 5.71, "top" : 4.99, "height" : 1.96, "width" : 1.94} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="25%"/> &nbsp; &nbsp; <!-- {"left" : 2.6, "top" : 5.68, "height" : 2, "width" : 1.94} --><img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%"/> &nbsp; &nbsp; <!-- {"left" : 4.69, "top" : 6.24, "height" : 0.89, "width" : 0.89} --><img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="25%"/><!-- {"left" : 5.71, "top" : 5.68, "height" : 1.96, "width" : 1.94} -->
 
 
 Notes:
@@ -281,7 +281,7 @@ Notes:
      - And so the single-layer perceptron will never converge.
      - This is known as the XOR problem (though many other datasets are not linearly separable).
 
-<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="background:white;max-width:100%;" width="45%;"/> <!-- {"left" : 3.24, "top" : 4.57, "height" : 2.64, "width" : 3.76} -->
+<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="background:white;max-width:100%;" width="45%;"/> <!-- {"left" : 2.58, "top" : 4.57, "height" : 3.57, "width" : 5.08} -->
 
 
 Notes:

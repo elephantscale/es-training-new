@@ -40,8 +40,7 @@ I was talking with **my** mother about politics.
 "I voted for Hillary Clinton because **she** was most
 aligned with **my** values," **she** said.
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 1.65, "width" : 10.25} -->
-
+<!-- {"left" : 0, "top" : 1.57, "height" : 0.94, "width" : 8.45} -->
 
  * Who does the first "she" refer to?
 
@@ -63,7 +62,7 @@ Notes:
 
  * Other cases where the data changes on temporal basis
 
-  <img src="../../assets/images/deep-learning/time-series-stocks.png" alt="XXX image missing" style="background:white;max-width:80%;" />   <!-- {"left" : 0.74, "top" : 2.54, "height" : 4.63, "width" : 8.77} -->
+  <img src="../../assets/images/deep-learning/time-series-stocks.png" alt="XXX image missing" style="background:white;max-width:80%;" />   <!-- {"left" : 0.74, "top" : 3.07, "height" : 4.63, "width" : 8.77} -->
 
 
 
@@ -85,7 +84,7 @@ Source: Wikipedia
 
  * Feedforward neural networks cannot handle time series data well.
 
-<img src="../../assets/images/deep-learning/time-series-stocks.png" alt="XXX image missing" style="background:white;max-width:80%;"/><!-- {"left" : 1.43, "top" : 3.27, "height" : 3.9, "width" : 7.39} -->
+<img src="../../assets/images/deep-learning/time-series-stocks.png" alt="XXX image missing" style="background:white;max-width:80%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
 
 
 Notes:
@@ -99,7 +98,7 @@ Notes:
  * One way to picture this is called unrolling through time
  * This means that each neuron is like a chain of neurons, one for each time slice.
 
-<img src="../../assets/images/deep-learning/RNN-rolling.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.81, "top" : 3.81, "height" : 3.33, "width" : 4.64} -->
+<img src="../../assets/images/deep-learning/RNN-rolling.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.43, "top" : 4.45, "height" : 3.87, "width" : 5.4} -->
 
 
 Notes:
@@ -113,7 +112,7 @@ Notes:
  * For unrolling, we can treat each time step as a new layer.
      -  It's really not any different than conventional backpropagation once unrolled.
 
-<img src="../../assets/images/deep-learning/BPTT.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 2.45, "top" : 3.24, "height" : 3.82, "width" : 5.36} -->
+<img src="../../assets/images/deep-learning/BPTT.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 2.02, "top" : 3.95, "height" : 4.43, "width" : 6.22} -->
 
 
 
@@ -130,7 +129,7 @@ Notes:
      -  This is similar to feedforward neural network.
  *  However, Combinational Logic cannot maintain state.
 
-<img src="../../assets/images/deep-learning/logic-gate.png" alt="XXX image missing" style="background:white;max-width:30%;"/> &nbsp; &nbsp; &nbsp; &nbsp; <!-- {"left" : 3.34, "top" : 3.86, "height" : 1.5, "width" : 3.57} -->  <img src="../../assets/images/deep-learning/NOR_from_NAND.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 2.33, "top" : 5.46, "height" : 1.82, "width" : 5.58} -->
+<img src="../../assets/images/deep-learning/logic-gate.png" alt="XXX image missing" style="background:white;max-width:30%;"/> &nbsp; &nbsp; &nbsp; &nbsp; <!-- {"left" : 3.34, "top" : 4.89, "height" : 1.5, "width" : 3.57} -->  <img src="../../assets/images/deep-learning/NOR_from_NAND.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 2.33, "top" : 6.7, "height" : 1.82, "width" : 5.58} -->
 
 
 Notes:
@@ -146,7 +145,7 @@ Image credit : (creative commons license)  :  https://commons.wikimedia.org/wiki
  * Note the feedback loops!
  * This is a computer hardware memory cell.
 
-<img src="../../assets/images/deep-learning/feedback-loop.png" alt="XXX image missing" style="background:white;width:40%;" />  <!-- {"left" : 2.77, "top" : 4.05, "height" : 3.09, "width" : 4.22} -->
+<img src="../../assets/images/deep-learning/feedback-loop.png" alt="XXX image missing" style="background:white;width:40%;" />  <!-- {"left" : 2.53, "top" : 4.65, "height" : 3.49, "width" : 4.77} -->
 
 
 Notes:
@@ -216,7 +215,7 @@ Notes:
  * Input 1 represents the input signal at various times
  * Input 2 is the output of the neuron at the current time step
 
-<img src="../../assets/images/deep-learning/Recurrent-Neurons.png" alt="XXX image missing" style="background:white;max-width:45%;" />  <!-- {"left" : 2.13, "top" : 3.69, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/Recurrent-Neurons.png" alt="XXX image missing" style="background:white;max-width:45%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 
 
@@ -236,7 +235,7 @@ Notes:
 
      -  Then we have a vector that is itself unrolled through time.
 
- <img src="../../assets/images/deep-learning/layer-of-Recurrent-Neurons.png" alt="XXX image missing" style="background:white;max-width:100%;" />  <!-- {"left" : 0.76, "top" : 4, "height" : 2.57, "width" : 8.73} -->
+ <img src="../../assets/images/deep-learning/layer-of-Recurrent-Neurons.png" alt="XXX image missing" style="background:white;max-width:100%;" />  <!-- {"left" : 0.76, "top" : 4.53, "height" : 2.57, "width" : 8.73} -->
 
 
 Notes:
@@ -257,7 +256,7 @@ Notes:
 
  *  Tanh is the most commonly used in RNNs.
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="XXX image missing" style="background:white;max-width:40%;" />  <!-- {"left" : 3.03, "top" : 4.02, "height" : 1.64, "width" : 4.18} --> <img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:40%;" />  <!-- {"left" : 2.92, "top" : 5.83, "height" : 1.64, "width" : 4.41} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="XXX image missing" style="background:white;max-width:40%;" />  <!-- {"left" : 2.36, "top" : 4.3, "height" : 2.16, "width" : 5.51} --> <img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:40%;" />  <!-- {"left" : 2.22, "top" : 6.69, "height" : 2.16, "width" : 5.82} -->
 
 
 Notes:
@@ -274,7 +273,7 @@ Notes:
 
      -  The output would be a prediction of what the next step *would*  be
 
-<img src="../../assets/images/deep-learning/Sequence-to-Sequence.png" alt="XXX image missing" style="background:white;max-width:70%;" />  <!-- {"left" : 0.77, "top" : 3.02, "height" : 3.9, "width" : 8.71} -->
+<img src="../../assets/images/deep-learning/Sequence-to-Sequence.png" alt="XXX image missing" style="background:white;max-width:70%;" />  <!-- {"left" : 0.77, "top" : 4.05, "height" : 3.9, "width" : 8.71} -->
 
 
 Notes:
@@ -289,7 +288,7 @@ Notes:
 
  *  Natural Language vectorizers can be implemented this way
 
-<img src="../../assets/images/deep-learning/Sequence-to-Vector.png" alt="XXX image missing" style="background:white;max-width:50%;"/><!-- {"left" : 2.23, "top" : 2.91, "height" : 4.12, "width" : 5.79} -->
+<img src="../../assets/images/deep-learning/Sequence-to-Vector.png" alt="XXX image missing" style="background:white;max-width:50%;"/><!-- {"left" : 2.23, "top" : 3.55, "height" : 4.12, "width" : 5.79} -->
 
 
 Notes:
@@ -302,7 +301,7 @@ Notes:
 
  *  Examples: Image annotation. Image is a vector, annotation is a character sequence.
 
-<img src="../../assets/images/deep-learning/Vector-to-Sequence.png" alt="XXX image missing" style="background:white;max-width:50%;"/>  <!-- {"left" : 1.02, "top" : 2.5, "height" : 4.67, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/Vector-to-Sequence.png" alt="XXX image missing" style="background:white;max-width:50%;"/>  <!-- {"left" : 1.02, "top" : 3.38, "height" : 4.67, "width" : 8.21} -->
 
 
 Notes:
@@ -317,7 +316,7 @@ Notes:
 
  *  Language Translation
 
-<img src="../../assets/images/deep-learning/Sequence-to-Sequence--01.png" alt="XXX image missing" style="background:white;max-width:50%;"/><!-- {"left" : 1.84, "top" : 2.97, "height" : 4.13, "width" : 6.57} -->
+<img src="../../assets/images/deep-learning/Sequence-to-Sequence--01.png" alt="XXX image missing" style="background:white;max-width:50%;"/><!-- {"left" : 1.84, "top" : 3.61, "height" : 4.13, "width" : 6.57} -->
 
 
 Notes:
@@ -331,7 +330,7 @@ Notes:
 
  *  They provide a way to maintain state in the network.
 
-<img src="../../assets/images/deep-learning/Memory-Cells.png" alt="XXX image missing" style="background:white;width:80%;"/><!-- {"left" : 0.5, "top" : 2.74, "height" : 3.14, "width" : 9.24} -->
+<img src="../../assets/images/deep-learning/Memory-Cells.png" alt="XXX image missing" style="background:white;width:80%;"/><!-- {"left" : 0.5, "top" : 2.96, "height" : 3.14, "width" : 9.24} -->
 
 
 
@@ -346,7 +345,7 @@ Notes:
 
      -  Sequence to Sequence
 
-<img src="../../assets/images/deep-learning/RNNs--01.png" alt="XXX image missing" style="background:white;max-width:100%;" /> <!-- {"left" : 0.3, "top" : 2.75, "height" : 3.19, "width" : 9.64} -->
+<img src="../../assets/images/deep-learning/RNNs--01.png" alt="XXX image missing" style="background:white;max-width:100%;" /> <!-- {"left" : 0.3, "top" : 3.23, "height" : 3.19, "width" : 9.64} -->
 
 
 Notes:
@@ -356,7 +355,7 @@ Notes:
 ---
 ## One to One
 
-<img src="../../assets/images/deep-learning/RNNs--01-one-to-one.png" alt="XXX image missing" style="background:white;max-width:15%;float:right;"/> <!-- {"left" : 8.21, "top" : 0.87, "height" : 4.2, "width" : 1.51} -->
+<img src="../../assets/images/deep-learning/RNNs--01-one-to-one.png" alt="XXX image missing" style="background:white;max-width:15%;float:right;"/> <!-- {"left" : 7.59, "top" : 1.67, "height" : 5.73, "width" : 2.06} -->
 
  *  One to One is basically a feedforward network
 
@@ -375,7 +374,7 @@ Notes:
 ---
 ## One to Many
 
-<img src="../../assets/images/deep-learning/RNNs--01-one-to-many-01.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;" /> <!-- {"left" : 6.97, "top" : 0.99, "height" : 5.99, "width" : 2.9} -->
+<img src="../../assets/images/deep-learning/RNNs--01-one-to-many-01.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;" /> <!-- {"left" : 6.97, "top" : 1.54, "height" : 5.99, "width" : 2.9} -->
 
  *  Input is fixed
 
@@ -397,7 +396,7 @@ Notes:
 ---
 ## Many to One
 
-<img src="../../assets/images/deep-learning/RNNs--01-many-to-one.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;"/> <!-- {"left" : 8.39, "top" : 0.94, "height" : 3.38, "width" : 1.64} -->
+<img src="../../assets/images/deep-learning/RNNs--01-many-to-one.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;"/> <!-- {"left" : 7.3, "top" : 1.84, "height" : 5.4, "width" : 2.62} -->
 
  *  Input is a sequence
 
@@ -419,7 +418,7 @@ Notes:
 ---
 ## Many to Many
 
-<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-01.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;"/><!-- {"left" : 6.7, "top" : 1.6, "height" : 4.05, "width" : 3.27} -->
+<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-01.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;"/><!-- {"left" : 6.06, "top" : 2.14, "height" : 4.8, "width" : 3.88} -->
 
  *  Input is a Sequence
 
@@ -439,7 +438,7 @@ Notes:
 ---
 ## Many to Many (Synchronized)
 
-<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-02.png" alt="XXX image missing" style="background:white;width:25%;float:right;" /> <!-- {"left" : 6.37, "top" : 1.11, "height" : 5.74, "width" : 3.43} -->
+<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-02.png" alt="XXX image missing" style="background:white;width:25%;float:right;" /> <!-- {"left" : 6.37, "top" : 1.32, "height" : 5.74, "width" : 3.43} -->
 
  *  Input is a Sequence
 
@@ -464,7 +463,7 @@ Notes:
 
      -  Spoken words
 
-<img src="../../assets/images/deep-learning/Sequence-Classifier.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 2.01, "top" : 2.09, "height" : 4.9, "width" : 6.23} -->
+<img src="../../assets/images/deep-learning/Sequence-Classifier.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 2.01, "top" : 3.01, "height" : 4.9, "width" : 6.23} -->
 
 
 Notes:
@@ -495,7 +494,7 @@ Notes:
      -  To perform final classification (or regression)
      -  Apply model to our problem.
 
-<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" alt="XXX image missing" style="background:white;width:27%;"/><!-- {"left" : 5.58, "top" : 3.49, "height" : 3.66, "width" : 4.16} -->
+<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" alt="XXX image missing" style="background:white;width:27%;"/><!-- {"left" : 5.1, "top" : 2.7, "height" : 4.24, "width" : 4.82} -->
 
 
 Notes:
@@ -511,7 +510,7 @@ Notes:
 
  *  So far we have only looked at single layer RNNs.
 
-<img src="../../assets/images/deep-learning/Deep-RNNs.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 0.39, "top" : 2.51, "height" : 4.56, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/Deep-RNNs.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 0.39, "top" : 3.11, "height" : 4.56, "width" : 9.48} -->
 
 
 
@@ -526,7 +525,7 @@ Notes:
 
  *  The following example shows how this is done.
 
-<img src="../../assets/images/deep-learning/machine-translation-model.png" alt="XXX image missing" style="background:white;max-width:60%;" />  <!-- {"left" : 1.57, "top" : 2.56, "height" : 4.71, "width" : 7.1} -->
+<img src="../../assets/images/deep-learning/machine-translation-model.png" alt="XXX image missing" style="background:white;max-width:60%;" />  <!-- {"left" : 1.57, "top" : 3.13, "height" : 4.71, "width" : 7.1} -->
 
 
 
@@ -542,7 +541,7 @@ Notes:
 
  *  The next word in sequence is fed from the bottom, for example "go".
 
-<img src="../../assets/images/deep-learning/go.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 0.48, "top" : 2.73, "height" : 4.3, "width" : 9.3} -->
+<img src="../../assets/images/deep-learning/go.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 0.48, "top" : 3.19, "height" : 4.3, "width" : 9.3} -->
 
 
 

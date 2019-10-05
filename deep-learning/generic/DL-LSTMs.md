@@ -64,7 +64,7 @@ Notes:
 
 ## Forgetfulness
 
-<img src="../../assets/images/deep-learning/3rd-party/Long-Short-Term-Memory-LSTM-Neural-Networks-Forgetfulness-0.png" style="width:25%;float:right;"/><!-- {"left" : 7.67, "top" : 1.08, "height" : 1.64, "width" : 2.32} -->
+<img src="../../assets/images/deep-learning/3rd-party/Long-Short-Term-Memory-LSTM-Neural-Networks-Forgetfulness-0.png" style="width:25%;float:right;"/><!-- {"left" : 6.61, "top" : 1.28, "height" : 2.33, "width" : 3.3} -->
 
  *  Why do human brains forget?
 
@@ -104,7 +104,7 @@ Image credit : https://pixabay.com/en/brain-turn-on-education-read-book-605603/
 
  * Introduced by Kyungyun Cho (et al) in 2004
 
-<img src="../../assets/images/deep-learning/3rd-party/GRU_whitepaper.png" style="width:60%;"/> <!-- {"left" : 1.79, "top" : 1.91, "height" : 4.7, "width" : 6.66} -->
+<img src="../../assets/images/deep-learning/3rd-party/GRU_whitepaper.png" style="width:60%;"/> <!-- {"left" : 1.07, "top" : 2.3, "height" : 5.72, "width" : 8.11} -->
 
 
 Notes:
@@ -115,7 +115,7 @@ https://arxiv.org/pdf/1406.1078v3.pdf
 
 ## GRU
 
-<img src="../../assets/images/deep-learning/3rd-party/GRU-wikipedia.png" style="width:80%;"/><!-- {"left" : 1.29, "top" : 1.28, "height" : 5.42, "width" : 7.68} -->
+<img src="../../assets/images/deep-learning/3rd-party/GRU-wikipedia.png" style="width:80%;"/><!-- {"left" : 1.29, "top" : 2.11, "height" : 5.42, "width" : 7.68} -->
 
 Notes:
 
@@ -150,7 +150,7 @@ https://en.wikipedia.org/wiki/Gated_recurrent_unit#/media/File:Gated_Recurrent_U
      -  Data can be accessed if a path to the memory is found
      -  Older data, however, may be " **forgotten**  ", the path is not found.
 
-<img src="../../assets/images/deep-learning/which-parts-of-the-brain-affect-memory.png" style="width:50%;"/><!-- {"left" : 1.97, "top" : 4.37, "height" : 2.71, "width" : 6.31} -->
+<img src="../../assets/images/deep-learning/which-parts-of-the-brain-affect-memory.png" style="width:50%;"/><!-- {"left" : 1.97, "top" : 5.09, "height" : 2.71, "width" : 6.31} -->
 
 
 Notes:
@@ -197,7 +197,7 @@ Notes:
 
 ## LSTM Applications : Image / Video Captioning
 
-<img src="../../assets/images/deep-learning/Long-Short-Term-Memory-LSTM-Neural-Networks-LSTM-Applications-Image-Video-Captioning-0.png" style="width:70%;" /> <!-- {"left" : 0.81, "top" : 1.92, "height" : 3.67, "width" : 8.64} -->
+<img src="../../assets/images/deep-learning/Long-Short-Term-Memory-LSTM-Neural-Networks-LSTM-Applications-Image-Video-Captioning-0.png" style="width:70%;" /> <!-- {"left" : 0.81, "top" : 2.7, "height" : 3.67, "width" : 8.64} -->
 
 
 Notes:
@@ -211,7 +211,7 @@ LM2Text Paper : https://github.com/handong1587/handong1587.github.io/blob/master
 
  *  LSTM contains a long-term memory, a "forget gate" and a short-term memory
 
-<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:80%;" /> <!-- {"left" : 1.02, "top" : 2.47, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:80%;" /> <!-- {"left" : 1.02, "top" : 3.02, "height" : 3.61, "width" : 8.21} -->
 
 
 Notes:
@@ -230,7 +230,7 @@ Notes:
  *  Self-Recurrent Connection (memory)
 
 
-<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;"/> <!-- {"left" : 1.02, "top" : 3.17, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;"/> <!-- {"left" : 1.02, "top" : 3.78, "height" : 3.61, "width" : 8.21} -->
 
 
 Notes:
@@ -240,7 +240,7 @@ Notes:
 
 ## LSTM Architecture
 
-<img src="../../assets/images/deep-learning/LSTM-3.png" style="width:90%;" /><!-- {"left" : 0.29, "top" : 1.77, "height" : 3.97, "width" : 9.68} -->
+<img src="../../assets/images/deep-learning/LSTM-3.png" style="width:90%;" /><!-- {"left" : 0.29, "top" : 2.55, "height" : 3.97, "width" : 9.68} -->
 
 
 
@@ -256,7 +256,7 @@ Notes:
 
  * LSTM input can either be user input (training data) or output of the last LSTM layer.
 
-<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 2.88, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 3.02, "height" : 3.61, "width" : 8.21} -->
 
 
 Notes:
@@ -275,7 +275,7 @@ Notes:
  * The memory cell value can be read as well.
 
 
-<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 3.17, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 3.56, "height" : 3.61, "width" : 8.21} -->
 
 
 Notes:
@@ -296,7 +296,7 @@ Notes:
 
      -  Prevents vanishing gradient.
 
-<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 3.49, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 3.81, "height" : 3.61, "width" : 8.21} -->
 
 
 Notes:
@@ -314,7 +314,7 @@ Notes:
 
      -  unless reinforced by the input gate.
 
-<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 3.43, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 4, "height" : 3.61, "width" : 8.21} -->
 
 Notes:
 
@@ -348,7 +348,7 @@ Good intro to LSTM : https://colah.github.io/posts/2015-08-Understanding-LSTMs/
 
  * Default activation is tanh.
 
-![](../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png) <!-- {"left" : 0.64, "top" : 3.16, "height" : 3.34, "width" : 8.97} -->
+![](../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png) <!-- {"left" : 0.64, "top" : 3.62, "height" : 3.34, "width" : 8.97} -->
 
 
 Notes:
@@ -358,7 +358,7 @@ Notes:
 
 ## Predicting Time Series data
 
-<img src="../../assets/images/deep-learning/time-series-stocks.png" style="width:40%;float:right;"/> <!-- {"left" : 5.69, "top" : 2.85, "height" : 2.28, "width" : 4.31} -->
+<img src="../../assets/images/deep-learning/time-series-stocks.png" style="width:40%;float:right;"/> <!-- {"left" : 5.59, "top" : 1.08, "height" : 2.35, "width" : 4.42} -->
  *  How do we predict time-series data?
 
  *  We can view the SP500 index a series of timestamps and data
@@ -426,7 +426,7 @@ Notes:
 
 ## Training Sequences
 
-<img src="../../assets/images/deep-learning/input-sequence.png" style="width:40%;float:right;"/><!-- {"left" : 6.16, "top" : 2.16, "height" : 3.66, "width" : 3.73} -->
+<img src="../../assets/images/deep-learning/input-sequence.png" style="width:40%;float:right;"/><!-- {"left" : 5.14, "top" : 2.16, "height" : 4.75, "width" : 4.84} -->
 
  *  We are training with sequences of 50 prices of SP500.
 
@@ -446,7 +446,7 @@ Notes:
 
 ## Feeding the Sequence
 
-<img src="../../assets/images/deep-learning/Prediction.png" style="width:80%;" /> <!-- {"left" : 0.31, "top" : 1.6, "height" : 4.3, "width" : 9.63} -->
+<img src="../../assets/images/deep-learning/Prediction.png" style="width:80%;" /> <!-- {"left" : 0.31, "top" : 2.38, "height" : 4.3, "width" : 9.63} -->
 
 
 
@@ -487,7 +487,7 @@ Notes:
 
  *  We have to take a window in time.
 
-<img src="../../assets/images/deep-learning/testing-the-model.png" style="width:40%;"/> <!-- {"left" : 2.7, "top" : 3.16, "height" : 4.25, "width" : 4.84} -->
+<img src="../../assets/images/deep-learning/testing-the-model.png" style="width:40%;"/> <!-- {"left" : 2.7, "top" : 3.88, "height" : 4.25, "width" : 4.84} -->
 
 Notes:
 
@@ -497,7 +497,7 @@ Notes:
 
 ## Our Results?
 
-<img src="../../assets/images/deep-learning/3rd-party/Upward-trend.png" style="width:15%;float:right;"/> <!-- {"left" : 8.17, "top" : 3.3, "height" : 1.68, "width" : 1.69} -->
+<img src="../../assets/images/deep-learning/3rd-party/Upward-trend.png" style="width:15%;float:right;"/> <!-- {"left" : 7.53, "top" : 1.44, "height" : 2.28, "width" : 2.3} -->
 
  *  Does our model predict the future?
 
@@ -568,7 +568,7 @@ Notes:
 
  *  The following example shows how this is done.
 
-<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;" /> <!-- {"left" : 1.68, "top" : 2.54, "height" : 4.58, "width" : 6.9} -->
+<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;" /> <!-- {"left" : 1.68, "top" : 3.15, "height" : 4.58, "width" : 6.9} -->
 
 
 Notes:
@@ -583,7 +583,7 @@ Notes:
 
  *  The next word in sequence is fed from the bottom, for example "go".
 
-<img src="../../assets/images/deep-learning/go.png" style="width:60%;" /> <!-- {"left" : 0.67, "top" : 2.89, "height" : 4.12, "width" : 8.91} -->
+<img src="../../assets/images/deep-learning/go.png" style="width:60%;" /> <!-- {"left" : 0.67, "top" : 3.43, "height" : 4.12, "width" : 8.91} -->
 
 
 Notes:

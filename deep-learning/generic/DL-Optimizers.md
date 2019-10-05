@@ -58,9 +58,9 @@ $$\theta  = \theta -  \alpha  \nabla _\theta J(\theta)$$
 - Calculates the momentum and adds it to the next weight updates
     - so it accelerates the updates
 
-<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:23%"/><!-- {"left" : 6.31, "top" : 1.94, "height" : 0.83, "width" : 3.71} -->
+<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:23%"/><!-- {"left" : 6.31, "top" : 2.44, "height" : 0.83, "width" : 3.71} -->
 
-<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%"/><!-- {"left" : 7.08, "top" : 2.89, "height" : 0.81, "width" : 2.18} -->
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%"/><!-- {"left" : 7.08, "top" : 3.26, "height" : 0.81, "width" : 2.18} -->
 
 - Hyperparameter β, is called the momentum; ranges between 0 (high friction) and 1 (no friction). A typical momentum value is 0.9.
 
@@ -91,13 +91,14 @@ Notes:
 optimizer = tf.train.MomentumOptimizer(learning_rate=?,
                                        momentum=0.9)
 ```
-<!-- {"left" : 0, "top" : 1.37, "height" : 0.83, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.61, "height" : 0.48, "width" : 5.98} -->
+
 
 * **Keras**
 ```python
 sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ```
-<!-- {"left" : 0, "top" : 4.08, "height" : 0.45, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.79, "height" : 0.45, "width" : 10.25} -->
 
 ---
 ## Nesterov Accelerated Gradient
@@ -106,11 +107,11 @@ sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 
 - **Nesterov Accelerated Gradient (NAG)** measures the gradient of the cost function not at the local position but slightly ahead in the direction of the momentum
 
-<img src="../../assets/images/deep-learning/Formula-m-02.png" alt="Formula-m-02.png" style="background:white;width:30%"/><!-- {"left" : 3.13, "top" : 3.22, "height" : 0.73, "width" : 3.99} -->
+<img src="../../assets/images/deep-learning/Formula-m-02.png" alt="Formula-m-02.png" style="background:white;width:30%"/><!-- {"left" : 3.13, "top" : 3.93, "height" : 0.73, "width" : 3.99} -->
 
-<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%"/><!-- {"left" : 4.17, "top" : 4.11, "height" : 0.71, "width" : 1.92} -->
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%"/><!-- {"left" : 4.17, "top" : 4.82, "height" : 0.71, "width" : 1.92} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/wayne-grekzky.jpg" alt="XXX image missing" style="background:white;max-width:100%" width="40%"/><!-- {"left" : 2.83, "top" : 5.05, "height" : 2.24, "width" : 4.6} -->
+<img src="../../assets/images/deep-learning/3rd-party/wayne-grekzky.jpg" alt="XXX image missing" style="background:white;max-width:100%" width="40%"/><!-- {"left" : 2.83, "top" : 5.76, "height" : 2.24, "width" : 4.6} -->
 
 
 Notes:  
@@ -124,7 +125,7 @@ $$ m =  \beta m  - \alpha \nabla _\theta J(\theta + \beta m) $$
 
 Here you see Nestrov approach is slightly closer to optimum
 
-<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="width:40%"/><!-- {"left" : 2.9, "top" : 1.79, "height" : 5.1, "width" : 4.44} -->
+<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="width:40%"/><!-- {"left" : 2.9, "top" : 2.61, "height" : 5.1, "width" : 4.44} -->
 
 
 
@@ -139,13 +140,14 @@ optimizer = tf.train.MomentumOptimizer(learning_rate=?,
                                        momentum=0.9,
                                        use_nesterov=True) # <-- here
 ```
-<!-- {"left" : 0, "top" : 1.46, "height" : 0.91, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.54, "height" : 0.54, "width" : 3.79} -->
+
 
 * **Keras**
 ```python
 sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ```
-<!-- {"left" : 0, "top" : 4, "height" : 0.45, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.71, "height" : 0.47, "width" : 10.25} -->
 
 ---
 
@@ -156,7 +158,7 @@ sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 - Adagrad ([paper](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf)) adjusts the direction and velocity by scaling the direction vector
     - 'points in the right direction (gloabl minimum)' better :-)
 
-<img src="../../assets/images/deep-learning/optimizer-ada-grad-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="60%"/><!-- {"left" : 2.2, "top" : 4.05, "height" : 3.14, "width" : 5.85} -->
+<img src="../../assets/images/deep-learning/optimizer-ada-grad-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="60%"/><!-- {"left" : 2.2, "top" : 4.46, "height" : 3.14, "width" : 5.85} -->
 
 
 ---
@@ -174,7 +176,7 @@ sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
     - Outperforms Adagrad most of the times
     - Was the default choice until 'Adam Optimizer' was devised
 
-<img src="../../assets/images/deep-learning/optimizer-rmsprop-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.71, "top" : 6.01, "height" : 1.13, "width" : 6.82} -->
+<img src="../../assets/images/deep-learning/optimizer-rmsprop-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.71, "top" : 6.65, "height" : 1.13, "width" : 6.82} -->
 
 
 Notes:  
@@ -216,7 +218,7 @@ Notes:
 ---
 ## Adam Math (Reference Only)
 
-<img src="../../assets/images/deep-learning/optimizer-adam-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.15, "top" : 1.93, "height" : 4.24, "width" : 7.96} -->
+<img src="../../assets/images/deep-learning/optimizer-adam-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.15, "top" : 2.7, "height" : 4.24, "width" : 7.96} -->
 
 
 
@@ -240,13 +242,14 @@ Notes:
 ```python
 optimizer = tf.train.AdamOptimizer(learning_rate=?)
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 0.6, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.63, "height" : 0.45, "width" : 5.1} -->
 
 * **Keras**
 ```python
 keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
 ```
-<!-- {"left" : 0, "top" : 2.82, "height" : 0.33, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.79, "height" : 0.45, "width" : 10.25} -->
+
 
 ---
 ## Animations of Various Optimizers
@@ -259,22 +262,17 @@ keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.
 
 [Link for animation](https://s3.amazonaws.com/elephantscale-public/media/optimizer-animation-2-long-valley.gif)
 
-Notes:  
-- Animations credit to Alec Radford
-- http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html
-- https://imgur.com/a/Hqolp
-
 ---
-
 ## Animations of Various Optimizers
 
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="width:50%;float:right"/><!-- {"left" : 5.89, "top" : 1.03, "height" : 3.16, "width" : 4.07} -->
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="width:50%;float:right"/><!-- {"left" : 5.89, "top" : 1.37, "height" : 3.16, "width" : 4.07} -->
 
 **Saddle Point**
 * "Behavior around a saddle point. NAG/Momentum again like to explore around, almost taking a different path. Adadelta/Adagrad/RMSProp proceed like accelerated SGD."
 
-
 [Link for animation](https://s3.amazonaws.com/elephantscale-public/media/optimizers-animation-3-saddle-point.gif)
+
+
 
 Notes:  
 - Animations credit to Alec Radford

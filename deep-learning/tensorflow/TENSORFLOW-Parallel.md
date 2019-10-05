@@ -87,7 +87,7 @@ Notes:
 
  * Distribute model in application
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-How-do-we-scale-this--0.png) <!-- {"left" : 1.04, "top" : 3.08, "height" : 2.98, "width" : 8.17} -->
+![](../../assets/images/deep-learning/Scaling-Tensorflow-How-do-we-scale-this--0.png) <!-- {"left" : 1.04, "top" : 3.33, "height" : 2.98, "width" : 8.17} -->
 
 
 Notes:
@@ -103,7 +103,7 @@ Notes:
 
  * GPUs are great but we can only have so many in one box
 
-![](../../assets/images/deep-learning/Scaling-Tensorflow-We-need-horizontal-scalability--0.png) <!-- {"left" : 0.81, "top" : 2.73, "height" : 2.51, "width" : 8.64} -->
+![](../../assets/images/deep-learning/Scaling-Tensorflow-We-need-horizontal-scalability--0.png) <!-- {"left" : 0.81, "top" : 3.28, "height" : 2.51, "width" : 8.64} -->
 
 
 Notes:
@@ -143,7 +143,7 @@ Notes:
  * Most TensorFlow configurations include a separate Training versus Serving cluster.
  (PS - Parameter Server)
 
-![](../../assets/images/deep-learning/Distributed-Tensorflow.png) <!-- {"left" : 1.02, "top" : 2.09, "height" : 4.26, "width" : 8.21} -->
+![](../../assets/images/deep-learning/Distributed-Tensorflow.png) <!-- {"left" : 1.02, "top" : 2.69, "height" : 4.26, "width" : 8.21} -->
 
 
 Notes:
@@ -154,7 +154,7 @@ Notes:
 
 ## Distributed TensorFlow on Sharded Data
 
-<img src="../../assets/images/deep-learning/Sharded-data.png" alt="XXX image missing" style="background:white;max-width:70%;" />  <!-- {"left" : 1.04, "top" : 1.08, "height" : 5.35, "width" : 8.17} -->
+<img src="../../assets/images/deep-learning/Sharded-data.png" alt="XXX image missing" style="background:white;max-width:70%;" />  <!-- {"left" : 1.04, "top" : 2.15, "height" : 5.35, "width" : 8.17} -->
 
 
 Notes:
@@ -165,7 +165,7 @@ Notes:
 
 ## Worker Nodes for Distributed Execution
 
-![](../../assets/images/deep-learning/worker-nodes.png) <!-- {"left" : 0.33, "top" : 1.97, "height" : 3.56, "width" : 9.59} -->
+![](../../assets/images/deep-learning/worker-nodes.png) <!-- {"left" : 0.33, "top" : 2.75, "height" : 3.56, "width" : 9.59} -->
 
 
 
@@ -244,7 +244,7 @@ Notes:
 
 ## TensorFlow Serving Architecture
 
-![](../../assets/images/deep-learning/CORE.png) <!-- {"left" : 0.73, "top" : 2.38, "height" : 3.22, "width" : 8.8} -->
+![](../../assets/images/deep-learning/CORE.png) <!-- {"left" : 0.73, "top" : 2.92, "height" : 3.22, "width" : 8.8} -->
 
 
 Notes:
@@ -322,7 +322,7 @@ Notes:
 
      - At least from a compute perspective
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Kubernetes-can-help-solve-our-problem-0.png" alt="XXX image missing" style="background:white;max-width:50%;" /> <!-- {"left" : 1.75, "top" : 3.93, "height" : 2.8, "width" : 6.75} -->
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Kubernetes-can-help-solve-our-problem-0.png" alt="XXX image missing" style="background:white;max-width:50%;" /> <!-- {"left" : 1.75, "top" : 4.67, "height" : 2.8, "width" : 6.75} -->
 
 
 Notes:
@@ -345,7 +345,7 @@ Notes:
 &nbsp;
 &nbsp;
 
-<img src="../../assets/images/logos/docker-logo-2.png" alt="docker-logo-2.png" style="background:white;width:20%;"/><!-- {"left" : 3.42, "top" : 3.96, "height" : 2.86, "width" : 3.4} -->
+<img src="../../assets/images/logos/docker-logo-2.png" alt="docker-logo-2.png" style="background:white;width:20%;"/><!-- {"left" : 3.42, "top" : 4.51, "height" : 2.86, "width" : 3.4} -->
 
 
 
@@ -358,7 +358,7 @@ Notes:
 
 ## Creating Docker Images
 
-<img src="../../assets/images//logos/nvidia-logo-1.png" alt="nvidia-logo-1.png" style="background:white;max-width:50%;float:right;"/><!-- {"left" : 8.59, "top" : 0.9, "height" : 1.13, "width" : 1.53} -->
+<img src="../../assets/images//logos/nvidia-logo-1.png" alt="nvidia-logo-1.png" style="background:white;max-width:50%;float:right;"/><!-- {"left" : 7.34, "top" : 1.3, "height" : 1.87, "width" : 2.54} -->
 
  * Creating Docker Images for GPUs is not easy
 
@@ -391,7 +391,7 @@ Notes:
 
 ## Nvidia-docker
 
-![](../../assets/images/deep-learning/Nvidia-docker.png) <!-- {"left" : 1.06, "top" : 1.39, "height" : 5.2, "width" : 8.13} -->
+![](../../assets/images/deep-learning/Nvidia-docker.png) <!-- {"left" : 1.06, "top" : 1.93, "height" : 5.2, "width" : 8.13} -->
 
 
 Notes:
@@ -405,7 +405,7 @@ Notes:
 
  * Kubernetes gives us a master-worker cluster management solution
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Kubernetes-0.png" alt="XXX image missing" style="background:white;max-width:60%;" /> <!-- {"left" : 2.09, "top" : 2, "height" : 5.1, "width" : 6.07} -->
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Kubernetes-0.png" alt="XXX image missing" style="background:white;max-width:60%;" /> <!-- {"left" : 2.09, "top" : 2.27, "height" : 5.1, "width" : 6.07} -->
 
 
 Notes:
@@ -525,7 +525,7 @@ Notes:
 
 ## TensorFlow On Spark
 
-<img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 0.95, "top" : 1.27, "height" : 5.42, "width" : 8.34} -->
+<img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 0.95, "top" : 2.11, "height" : 5.42, "width" : 8.34} -->
 
 
 Notes:
@@ -537,7 +537,7 @@ Notes:
 
 ## Spark Deep Learning Pipelines
 
-<img src="../../assets/images/logos/spark-mllib-logo.png" alt="Scaling-Tensorflow-Spark-Deep-Learning-Pipelines-0.png" style="background:white;width:30%;float:right;"/>  <!-- {"left" : 6.91, "top" : 0.87, "height" : 1.18, "width" : 3.31} -->
+<img src="../../assets/images/logos/spark-mllib-logo.png" alt="Scaling-Tensorflow-Spark-Deep-Learning-Pipelines-0.png" style="background:white;width:30%;float:right;"/>  <!-- {"left" : 6.15, "top" : 1.46, "height" : 1.36, "width" : 3.82} -->
 
  * Spark ML pipelines on top of TensorFlow
 
@@ -592,7 +592,7 @@ Notes:
 
 ## What about AWS?
 
-<img src="../../assets/images/logos/aws-logo-2.png" alt="gaws-logo-2.png" style="background:white;width:20%;float:right;"/> <!-- {"left" : 8.36, "top" : 0.87, "height" : 0.64, "width" : 1.68} -->
+<img src="../../assets/images/logos/aws-logo-2.png" alt="gaws-logo-2.png" style="background:white;width:20%;float:right;"/> <!-- {"left" : 7.83, "top" : 1.04, "height" : 0.86, "width" : 2.26} -->
 
  * AWS is the market leader in cloud  (nearly 50% market share)
 
@@ -625,7 +625,7 @@ Notes:
 
 ## The Alternative: Google Cloud Platform
 
-<img src="../../assets/images/logos/google-cloud-logo-2.png" alt="google-cloud-logo-2.png" style="background:white;width:25%;float:right;"/> <!-- {"left" : 6.26, "top" : 0.94, "height" : 1.25, "width" : 3.84} --> 
+<img src="../../assets/images/logos/google-cloud-logo-2.png" alt="google-cloud-logo-2.png" style="background:white;width:25%;float:right;"/> <!-- {"left" : 6.26, "top" : 1.22, "height" : 1.25, "width" : 3.84} --> 
 
  * Google Cloud Platform has all the support we need:
 
@@ -662,7 +662,7 @@ Notes:
 
      - Cloud Machine Learning
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:70%;"/> <!-- {"left" : 1.02, "top" : 3.18, "height" : 3.73, "width" : 8.21} --> 
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:70%;"/> <!-- {"left" : 1.02, "top" : 3.36, "height" : 3.73, "width" : 8.21} --> 
  
 
 
@@ -679,7 +679,7 @@ Notes:
 
  * First we must gather data into Cloud Storage
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:90%;"/> <!-- {"left" : 0.54, "top" : 2.12, "height" : 4.16, "width" : 9.17} --> 
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:90%;"/> <!-- {"left" : 0.54, "top" : 2.45, "height" : 4.16, "width" : 9.17} --> 
  
 
 
@@ -705,7 +705,7 @@ Notes:
      - But it's a worthwhile tradeoff for ML purposes
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Scaling-Tensorflow-Why-Cloud-Storage--0.png" alt="Scaling-Tensorflow-Why-Cloud-Storage--0.png" style="background:white;width:30%;"/> <!-- {"left" : 2.89, "top" : 4.33, "height" : 2.76, "width" : 4.47} --> 
+<img src="../../assets/images/deep-learning/3rd-party/Scaling-Tensorflow-Why-Cloud-Storage--0.png" alt="Scaling-Tensorflow-Why-Cloud-Storage--0.png" style="background:white;width:30%;"/> <!-- {"left" : 2.89, "top" : 4.76, "height" : 2.76, "width" : 4.47} --> 
  
 
 
@@ -722,7 +722,7 @@ Notes:
  * We need a layer to perform our feature extraction and feature engineering.  Cloud Dataflow is the ideal choice.
 
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:90%;"/><!-- {"left" : 0.67, "top" : 2.39, "height" : 4.05, "width" : 8.92} --> 
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:90%;"/><!-- {"left" : 0.67, "top" : 2.8, "height" : 4.05, "width" : 8.92} --> 
   
 
 Notes:
@@ -747,7 +747,7 @@ Notes:
      - Example: One-Hot Encoding transformation
 
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Why-Cloud-Dataflow--0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:30%;"/> <!-- {"left" : 3.13, "top" : 4.08, "height" : 3.31, "width" : 3.99} -->
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Why-Cloud-Dataflow--0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:30%;"/> <!-- {"left" : 3.13, "top" : 4.63, "height" : 3.31, "width" : 3.99} -->
 
 
 Notes:
@@ -763,7 +763,7 @@ Notes:
 
  * Allows pipeline-based transformation of data
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Dataflow-is-Apache-Beam-0.png" alt="XXX image missing" style="background:white;max-width:30%;"/> <!-- {"left" : 3.46, "top" : 2.6, "height" : 4.58, "width" : 3.34} -->
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Dataflow-is-Apache-Beam-0.png" alt="XXX image missing" style="background:white;max-width:30%;"/> <!-- {"left" : 3.46, "top" : 3.19, "height" : 4.58, "width" : 3.34} -->
 
 
 
@@ -781,7 +781,7 @@ Notes:
 
 
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;max-width:85%;"/><!-- {"left" : 0.6, "top" : 2.5, "height" : 4.11, "width" : 9.05} -->
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Cloud-Machine-Learning-0.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;max-width:85%;"/><!-- {"left" : 0.6, "top" : 2.77, "height" : 4.11, "width" : 9.05} -->
 
 
 Notes:
@@ -799,7 +799,7 @@ Notes:
 
  * Data
 
-<img src="../../assets/images/deep-learning/cloud-ML.png" alt="XXX image missing" style="background:white;max-width:50%;" />  <!-- {"left" : 2.05, "top" : 2.25, "height" : 4.42, "width" : 6.14} -->
+<img src="../../assets/images/deep-learning/cloud-ML.png" alt="XXX image missing" style="background:white;max-width:50%;" />  <!-- {"left" : 2.05, "top" : 3.08, "height" : 4.42, "width" : 6.14} -->
 
 
 
@@ -869,7 +869,7 @@ hyperparameters:
       scaleType: UNIT_LINEAR_SCALE
 
 ```
-<!-- {"left" : 0, "top" : 1.94, "height" : 5.12, "width" : 7.78} -->
+<!-- {"left" : 0, "top" : 2.26, "height" : 5.12, "width" : 7.78} -->
 
 
 Notes:
@@ -938,7 +938,7 @@ Notes:
  * Storm (for real-time)
  * Hbase / Cassandra
 
-<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Traditional-Open-Source-Big-Data-Stack-0.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 1.91, "top" : 3.83, "height" : 3.45, "width" : 6.41} -->
+<img src="../../assets/images/deep-learning/Scaling-Tensorflow-Traditional-Open-Source-Big-Data-Stack-0.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 1.91, "top" : 4.38, "height" : 3.45, "width" : 6.41} -->
 
 ---
 
@@ -1005,7 +1005,7 @@ Notes:
 ## The New Data Science Stack: Pancake Stack
 
 
-<img src="../../assets/images/deep-learning/PancakeStack.png" alt="PancakeStack.png" style="background:white;width:80%;"/> <!-- {"left" : 0, "top" : 0.77, "height" : 5.95, "width" : 10.25} -->
+<img src="../../assets/images/deep-learning/PancakeStack.png" alt="PancakeStack.png" style="background:white;width:80%;"/> <!-- {"left" : 0.32, "top" : 2.03, "height" : 5.58, "width" : 9.61} -->
 
 
 
@@ -1048,7 +1048,7 @@ Notes:
 ## Too complicated?  Enter Kubernetes...
 
 
-<img src="../../assets/images/logos/kubernetes-logo-2.png" alt="kubernetes-logo-2.png" style="background:white;float:right;width:30%;"/> <!-- {"left" : 6.23, "top" : 1.05, "height" : 0.78, "width" : 3.63} -->
+<img src="../../assets/images/logos/kubernetes-logo-2.png" alt="kubernetes-logo-2.png" style="background:white;float:right;width:30%;"/> <!-- {"left" : 6.23, "top" : 1.45, "height" : 0.78, "width" : 3.63} -->
 
  * Do one thing and do it well...
      - Use Microservices approach with Kubernetes

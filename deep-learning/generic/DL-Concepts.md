@@ -7,7 +7,7 @@
  * [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  
 by  Aurélien Géron (ISBN: 9781492037347)
 
-<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 3.92, "top" : 2.59, "height" : 3.63, "width" : 2.4} -->
+<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 3.92, "top" : 3.01, "height" : 3.63, "width" : 2.4} -->
 
 
 
@@ -29,7 +29,7 @@ by  Aurélien Géron (ISBN: 9781492037347)
 For example planes are inspired by birds first, but now modern planes have evolved a lot from their original designs
 
 
-<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 2.4, "top" : 4.43, "height" : 2.86, "width" : 5.45} -->
+<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 1.84, "top" : 5.09, "height" : 3.45, "width" : 6.58} -->
 
 
 
@@ -81,7 +81,7 @@ Notes:
 
      - Weights (Wn) were set manually; No way to automatically train weights
 
-<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%" /> <!-- {"left" : 2.65, "top" : 5.13, "height" : 2.17, "width" : 4.95} -->
+<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%" /> <!-- {"left" : 1.97, "top" : 5.77, "height" : 2.77, "width" : 6.31} -->
 
 Notes:  
 - https://scholar.google.com/scholar?q=A+Logical+Calculus+of+Ideas+Immanent+in+Nervous+Activity
@@ -91,7 +91,7 @@ Notes:
 
 ## Neuron operations
 
-<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 2.49, "height" : 2.98, "width" : 8.84} -->
+<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 3.33, "height" : 2.98, "width" : 8.84} -->
 
 
 Notes:  
@@ -132,7 +132,7 @@ In matrix operations this is
     - if sum is positive (`z >= 0`) --> output is 1
     - otherwise, output is 0
 
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 2.8, "top" : 4.71, "height" : 2.51, "width" : 4.65} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 2.8, "top" : 5.19, "height" : 2.51, "width" : 4.65} -->
 
 
 ---
@@ -260,6 +260,7 @@ for e  in number_of_epochs {
     }
 }
 ```
+<!-- {"left" : 0, "top" : 3.96, "height" : 2.39, "width" : 9.11} -->
 
 ---
 
@@ -358,7 +359,7 @@ Notes:
 
 ## Backpropagation Math
 
-<img src="../../assets/images/icons/math-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="25%"/><!-- {"left" : 7.49, "top" : 0.96, "height" : 1.63, "width" : 2.44} -->
+<img src="../../assets/images/icons/math-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="25%"/><!-- {"left" : 6.15, "top" : 1.14, "height" : 2.58, "width" : 3.86} -->
 
  * Given a cost function `C`
 
@@ -445,7 +446,7 @@ Notes:
     - Measure validation accuracy every few steps (say 20)
     - If it scores higher than previous snapshot, save the current model snapshot as 'winner'
 
-<img src="../../assets/images/deep-learning/early-stopping-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 2.69, "top" : 4.17, "height" : 3.26, "width" : 4.88} -->
+<img src="../../assets/images/deep-learning/early-stopping-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 2.69, "top" : 4.86, "height" : 3.26, "width" : 4.88} -->
 
 
 ---
@@ -491,7 +492,7 @@ Notes:
 
 ## Dropout
 
-<img src="../../assets/images/deep-learning/dropout-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 1.78, "top" : 1.14, "height" : 5.7, "width" : 6.69} -->
+<img src="../../assets/images/deep-learning/dropout-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 1.78, "top" : 1.97, "height" : 5.7, "width" : 6.69} -->
 
 
 ---
@@ -521,7 +522,7 @@ Decrease it if it is underfitting
  * for each neuron, it constrains the weights `w` of the incoming connections such that ||w||2 ≤ r
     - where r is the max-norm hyperparameter and ||.||2 is the L2 norm
 
-<img src="../../assets/images/deep-learning/min-max-regularization-1.png" alt="XXX image missing" style="background:white;width:20%"/><!-- {"left" : 3.72, "top" : 2.83, "height" : 0.68, "width" : 2.81} -->
+<img src="../../assets/images/deep-learning/min-max-regularization-1.png" alt="XXX image missing" style="background:white;width:20%"/><!-- {"left" : 3.72, "top" : 3.01, "height" : 0.68, "width" : 2.81} -->
 
 
 - Max-norm regularization can also help reduce the vanishing/exploding gradients
@@ -547,7 +548,7 @@ Decrease it if it is underfitting
 
 ## Data Augmentation Example
 
-<img src="../../assets/images/deep-learning/image-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.25, "top" : 2, "height" : 3.98, "width" : 9.75} -->
+<img src="../../assets/images/deep-learning/image-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.25, "top" : 2.54, "height" : 3.98, "width" : 9.75} -->
 
 
 
@@ -610,20 +611,16 @@ These are discussed in the following sections/slides
 
  * Normal distribution with mean 0 and standard deviation σ as follows  
 
-<img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%" /><!-- {"left" : 3.07, "top" : 2.18, "height" : 0.99, "width" : 4.1} -->
+<img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%" /><!-- {"left" : 3.07, "top" : 2.69, "height" : 0.99, "width" : 4.1} -->
 
  * Or Uniform distribution between -r and r with r  
 
-<img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%" width="40%"/><!-- {"left" : 3.07, "top" : 4.84, "height" : 0.99, "width" : 4.1} -->
+<img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%" width="40%"/><!-- {"left" : 3.07, "top" : 5.12, "height" : 0.99, "width" : 4.1} -->
 
-
----
-
-## Xavier and He Initialization
 
  * When number of inputs == number of outputs, we get a simplified equation  
 
-<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 1.93, "top" : 2.77, "height" : 0.54, "width" : 2.58} -->&nbsp;  &nbsp; &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 5.94, "top" : 2.77, "height" : 0.54, "width" : 2.38} -->
+<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 2.77, "top" : 8.39, "height" : 0.43, "width" : 2.04} -->&nbsp;  &nbsp; &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 5.59, "top" : 8.39, "height" : 0.43, "width" : 1.88} -->
 
 
 Notes:  
@@ -682,7 +679,8 @@ Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/librar
 ```python
 tf.layers.batch_normalization
 ```
-<!-- {"left" : 0, "top" : 1.52, "height" : 0.65, "width" : 6.76} -->
+<!-- {"left" : 0, "top" : 1.56, "height" : 0.54, "width" : 5.61} -->
+
 
  * In Keras
 ```python
@@ -693,7 +691,7 @@ keras.layers.BatchNormalization(axis=-1, momentum=0.99,
           beta_regularizer=None, gamma_regularizer=None,
           beta_constraint=None, gamma_constraint=None)
 ```
-<!-- {"left" : 0, "top" : 2.93, "height" : 1.4, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3, "height" : 1.38, "width" : 10.25} -->
 
 ---
 
@@ -701,7 +699,7 @@ keras.layers.BatchNormalization(axis=-1, momentum=0.99,
 
 For reference only, please see the paper for underlying math.
 
-<img src="../../assets/images/deep-learning/mini-batch-equation.png" alt="XXX image missing" style="background:white;max-width:100%" width="45%" /><!-- {"left" : 2.49, "top" : 1.87, "height" : 4.66, "width" : 5.27} -->
+<img src="../../assets/images/deep-learning/mini-batch-equation.png" alt="XXX image missing" style="background:white;max-width:100%" width="45%" /><!-- {"left" : 2.49, "top" : 2.49, "height" : 4.66, "width" : 5.27} -->
 
 
 Notes:  
@@ -753,7 +751,7 @@ Notes:
 
 ## Learning Rate
 
-<img src="../../assets/images/deep-learning/learning-rate-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.77, "top" : 2.18, "height" : 3.61, "width" : 8.72} -->
+<img src="../../assets/images/deep-learning/learning-rate-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.77, "top" : 2.73, "height" : 3.61, "width" : 8.72} -->
 
 
 ---
@@ -781,11 +779,16 @@ These default values should get you started, and should work well in most scenar
 | **Regularization**         | Dropout                              |
 | **Optimizer**              | Adam / Nesterov Accelerated Gradient |
 | **Learning rate schedule** | None                                 |
+
+
+<!-- {"left" : 0.25, "top" : 3.5, "height" : 2.55, "width" : 9.75} -->
+
+
 ---
 
 ## Review Questions
 
- <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="30%" /><!-- {"left" : 7.27, "top" : 0.87, "height" : 1.95, "width" : 2.93} -->
+ <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="30%" /><!-- {"left" : 6.58, "top" : 1.2, "height" : 2.34, "width" : 3.52} -->
 
 
  * **Q:** Can you name 3 activation functions and when they are used?

@@ -42,7 +42,7 @@ Notes:
  * Tensorflow has outpaced its rivals in popularity:
  * Survey of Github Stars:
 
-<img src="../../assets/images/deep-learning/Github_stars.png" alt="XXX image missing" style="background:white;max-width:100%;width:100%;"/>  <!-- {"left" : 0.56, "top" : 2, "height" : 4.88, "width" : 9.13} -->
+<img src="../../assets/images/deep-learning/Github_stars.png" alt="XXX image missing" style="background:white;max-width:100%;width:100%;"/>  <!-- {"left" : 0.56, "top" : 2.93, "height" : 4.88, "width" : 9.13} -->
 
 
 Notes:
@@ -52,7 +52,7 @@ Notes:
 
 ## Big Spike in Job Postings
 
- <img src="../../assets/images/deep-learning/Introduction-to-Tensorflow-Used-More-and-More-0.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/> <!-- {"left" : 1.83, "top" : 1.11, "height" : 4.52, "width" : 6.59} -->
+ <img src="../../assets/images/deep-learning/Introduction-to-Tensorflow-Used-More-and-More-0.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/> <!-- {"left" : 1.83, "top" : 1.52, "height" : 4.52, "width" : 6.59} -->
 
  Source: indeed.com
 
@@ -92,7 +92,7 @@ Notes:
 | 2.0RC   	| 2019-08      	| RC Release                  	|
 
 
-
+<!-- {"left" : 0.25, "top" : 1.7, "height" : 4.19, "width" : 9.75} -->
 
 
 Notes:
@@ -105,7 +105,7 @@ Notes:
 
  * Tensorflow is in a *big* shift to Tensorflow 2
 
-<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;width:50%;"/> <!-- {"left" : 1.02, "top" : 1.71, "height" : 4.56, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;width:50%;"/> <!-- {"left" : 1.02, "top" : 2.25, "height" : 4.56, "width" : 8.21} -->
 
 
 ---
@@ -189,6 +189,8 @@ Notes:
 | TPUv3  | TPU  | 3rd    | 2019 | 64GB   | $8.00 |
 | TPUv2  | TPU  | 2nd    | 2017 | 64GB   | $4.50 |
 
+<!-- {"left" : 0.25, "top" : 2.18, "height" : 3, "width" : 9.75} -->
+
 ---
 
 
@@ -211,8 +213,8 @@ Notes:
 ## Tensorflow Parallelism
 
 
-<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> &nbsp;  &nbsp; &nbsp; <!-- {"left" : 0.49, "top" : 2.9, "height" : 2.61, "width" : 4.85} -->
-<img src="../../assets/images/deep-learning/tensorflow-graph-2.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;"/><!-- {"left" : 5.48, "top" : 1.84, "height" : 4.72, "width" : 4.45} -->
+<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> &nbsp;  &nbsp; &nbsp; <!-- {"left" : 0.41, "top" : 3.23, "height" : 2.61, "width" : 4.85} -->
+<img src="../../assets/images/deep-learning/tensorflow-graph-2.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;"/><!-- {"left" : 5.4, "top" : 2.17, "height" : 4.72, "width" : 4.45} -->
 
 
 ---
@@ -263,7 +265,7 @@ Notes:
 ## Tensorflow on Spark
 
 
-<img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/><!-- {"left" : 1.02, "top" : 1.31, "height" : 5.35, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.35, "width" : 8.21} -->
 
 
 Notes:  
@@ -344,7 +346,7 @@ Notes:
    - Mid-Level
    - High-Level
 
-<img src="../../assets/images/deep-learning/tensorflow_layers_small.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.6, "top" : 3.32, "height" : 2.65, "width" : 9.03} -->
+<img src="../../assets/images/deep-learning/tensorflow_layers_small.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.6, "top" : 4.32, "height" : 2.65, "width" : 9.03} -->
 
 
 
@@ -403,7 +405,7 @@ Notes:
 
  * Tensorflow is in a *big* shift to Tensorflow 2
 
-<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> <!-- {"left" : 2.06, "top" : 1.52, "height" : 3.4, "width" : 6.13} -->
+<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /> <!-- {"left" : 2.06, "top" : 1.85, "height" : 3.4, "width" : 6.13} -->
 
 &nbsp;
 &nbsp;
@@ -520,7 +522,7 @@ for i in tf.range(input_data.shape[0]): # Note the For loop
 
  * Give access to virtual machines
 
- <img src="../../assets/images/generic/lab-setup.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.31, "top" : 3.54, "height" : 3.1, "width" : 9.62} -->
+ <img src="../../assets/images/generic/lab-setup.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.31, "top" : 4.39, "height" : 3.1, "width" : 9.62} -->
 
 Notes:
 
@@ -544,7 +546,7 @@ Notes:
 $ (sudo) pip install tensorflow keras
 $ (sudo) pip install tensorflow-gpu keras  # For GPU
 ```
-<!-- {"left" : 0, "top" : 3.05, "height" : 0.73, "width" : 9.29} -->
+<!-- {"left" : 0, "top" : 2.95, "height" : 0.53, "width" : 6.23} -->
 
  * Anaconda: Now officially supported
 
@@ -552,7 +554,7 @@ $ (sudo) pip install tensorflow-gpu keras  # For GPU
 $ conda install tensorflow keras
 $ conda install tensorflow-gpu keras  # For GPU
 ```
-<!-- {"left" : 0, "top" : 5.1, "height" : 0.82, "width" : 9.29} -->
+<!-- {"left" : 0, "top" : 4.26, "height" : 0.53, "width" : 6.23} -->
 
 
 
@@ -606,12 +608,12 @@ Notes:
 
 ## Lab: Installing Tensorflow and Keras
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 7.11, "top" : 2.69, "height" : 3.25, "width" : 2.44} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.87, "top" : 1.27, "height" : 3.88, "width" : 2.92} -->
 
  *  **Overview:**
      - In this lab, we will become familiar with the lab environment, set up TensorFlow, and start.
 
- * **Note :** 
+ * **Note:** 
      - The training VMs are already setup, no need for this setup. You can skip to next step
 
  *  **Approximate time:** 15-20 minutes
