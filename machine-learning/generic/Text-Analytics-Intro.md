@@ -4,6 +4,8 @@
 
 ## Lesson Objectives
 
+- Understand text analytics tools, algorithms and use cases
+
 
 Notes:
 
@@ -18,6 +20,9 @@ Notes:
 
 ## Text Analytics Has Become Very Prominent
 
+<!-- TODO Shiva -->
+
+<img src="../../assets/images/machine-learning/Text-Analytics-0.png" style="width:40%;float:right;"/><!-- {"left" : 5.31, "top" : 2.12, "height" : 3.73, "width" : 4.66} -->
 
  * Rise of social media<br/>
  (Twitter / Facebook) allows<br/>
@@ -36,7 +41,6 @@ Notes:
  given right tools
 
 
-<img src="../../assets/images/machine-learning/Text-Analytics-0.png" alt="Text-Analytics-0.png" style="width:50%; position:absolute; top:30%; right:0"/><!-- {"left" : 5.31, "top" : 2.12, "height" : 3.73, "width" : 4.66} -->
 
 
 Notes:
@@ -45,10 +49,10 @@ Notes:
 
 ---
 
-## Text Use Case: Customer Service Via Social Media
+## Use Case: Customer Service Via Social Media
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-1.png" alt="Text-Analytics-1.png" style="width:60%"/><!-- {"left" : 0.27, "top" : 1.31, "height" : 5.35, "width" : 9.72} -->
+<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-1.png" alt="Text-Analytics-1.png" style="width:55%"/><!-- {"left" : 0.27, "top" : 1.31, "height" : 5.35, "width" : 9.72} -->
 
 
 Notes:
@@ -57,64 +61,62 @@ Notes:
 
 ---
 
-## Text Analytics Use Case: Brand Analytics
+## Use Case: Sentiment Analysis
+
+- What are customers saying about a brand / product
 
 
-<img src="../../assets/images/machine-learning/Text-Analytics-2.png" alt="Text-Analytics-2.png" style="width:70%"/><!-- {"left" : 1, "top" : 1.44, "height" : 5.09, "width" : 8.25} -->
+<img src="../../assets/images/machine-learning/Text-Analytics-2.png" alt="Text-Analytics-2.png" style="width:60%;"/><!-- {"left" : 1, "top" : 1.44, "height" : 5.09, "width" : 8.25} -->
 
 
 Notes:
 
+---
 
+## Use Case - Sentiment Analytics
+
+<img src="../../assets/images/data-analysis-python/3rd-party/twitter-sentiment-analysis.jpeg" style="width:75%;" />
 
 
 ---
 
-## Text Analytics Use Case : Customer Service
+## Use Case : Support Tickets
 
+- Automatic ticket routing
+    - Parse the ticket / understand the context and send it to the right queue
 
- * Many companies use a "chat now" feature for customer interaction
+- Assign priority (High, Medium, Low) based on ticket text
 
- * Why not mine this data?
-
-
-```text
-   Mary: Welcome to Ultimate Widgets!  How can I help?
-
-   John: Hi!  I can't get my widget to work.
-
-   Mary: What seems to be the problem?
-
-   John: When I turn on the widget it makes a funny sound.
 ```
-<!-- {"left" : 0, "top" : 2.36, "height" : 2.09, "width" : 10.25} -->
+Ticket-123
+
+When I try to save the document as PDF, it crashes
+```
 
 
 Notes:
-
-
 
 
 ---
 
-## Text - Sentiment Analytics
+# Text Analytics Tools and Algorithms
 
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-3.png" alt="Text-Analytics-3.png" style="width:90%"/><!-- {"left" : 0.51, "top" : 1.06, "height" : 5.85, "width" : 9.23} -->
-
-
-Notes:
 ---
 
 ## Text Analytics Tools and Algorithms
 
 
- * Tools
-
-     - Text visualizers: Word Cloud
+ * Text visualizers: Word Cloud
 
  * 'Bag of Words'
 
- * TF-IDF
+ * Top-N words
+
+ * Ngrams
+
+ * Vectorizing
+    - TF-IDF
+    - Word2Vec
 
 Notes:
 
@@ -124,13 +126,19 @@ Notes:
 
 ## Visualizing Text - Word Clouds (State of the Union Speech 2014)
 
+<!-- TODO shiva -->
 
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-4.png" alt="Text-Analytics-4.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.46, "height" : 5.05, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/text-analytics-word-cloud-1.png"  style="width:70%;float:right;"/><!-- {"left" : 1.02, "top" : 1.46, "height" : 5.05, "width" : 8.21} -->
+
+- Word Clouds are really neat way to get a 'sense' of the text
+
+- Most frequent words are the biggest
+    - 'America',  'Cheers'
+
+
 
 
 Notes:
-
-
 
 ---
 
@@ -143,37 +151,20 @@ Notes:
 
  * Split the document(s) into words
 
-<img src="../../assets/images/machine-learning/Text-Analytics--Bag-of-Words--0.png" alt="Text-Analytics--Bag-of-Words--0.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.85, "height" : 4.66, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-1.png"  style="width:79%"/><!-- {"left" : 1.02, "top" : 1.85, "height" : 4.66, "width" : 8.21} -->
 
 
 Notes:
 
 
 
----
-
-## Tokenizing Text
-
-
- * Tokenizing is breaking the text into tokens (words / sentences)
-
- * Most text algorithms work on 'tokens'
-
- * Can you spot the differences in word-tokenization below?
-
-<img src="../../assets/images/machine-learning/Text-Analytics-5.png" alt="Text-Analytics-5.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 2.89, "height" : 3.79, "width" : 8.21} -->
-
-
-
-Notes:
-
 
 
 ---
 
-## Bag Words Analytics Example: 'Moby Dick' by Herman Melville
+## Bag Words Example 1: 'Moby Dick' by Herman Melville
 
-<img src="../../assets/images/machine-learning/Text-Analytics-6.png" alt="Text-Analytics-6.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.28, "height" : 5.41, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-moby-dick-1.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.28, "height" : 5.41, "width" : 8.21} -->
 
 
 
@@ -184,19 +175,45 @@ Notes:
 
 ---
 
-## Bag Words Analytics Example2: 'Alice in Wonderland' by Lewis Carrol
+## Bag Words Example2: 'Alice in Wonderland' by Lewis Carrol
 
-<img src="../../assets/images/machine-learning/Text-Analytics-66.png" alt="Text-Analytics-66.png" style="width:60%"/><!-- {"left" : 1.89, "top" : 1.31, "height" : 4.21, "width" : 6.47} -->
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:60%"/><!-- {"left" : 1.89, "top" : 1.31, "height" : 4.21, "width" : 6.47} -->
 
 
 
- * cleaned
+Notes:
+
+
+---
+
+## Bag of Words Process
+
+
+ *  **Cleanup**
+     -  **Step 1: Lowercase text:**
+        (The Sun was bright -> the sun was bright)
+
+     -  **Step 2: Remove punctuations**
+        (!  ,   .  #)
+
+     -  **Step 3: Remove numbers (optional)**
+        (1, 2, 3)
+
+     -  **Step 4: Remove STOP words (and any other unnecessary words)**  
+        ( the, is, in, and)*
+
+ *  **Tokenize**
+
+     - Break text into words  (bag of words)
+
+ *  **Analyze**
 
 Notes:
 
 
 
 ---
+
 
 ## Bag of Words Example: "Tale of Two Cities" by Charles Dickens
 
@@ -215,38 +232,6 @@ Notes:
 
 ---
 
-## Bag of Words Process
-
-
- *  **Cleanup**
-
-     -  **Step 1: Lowercase text:**
-
-        (The Sun was bright -> the sun was bright)
-
-     -  **Step 2: Remove punctuations**
-
-        (!  ,   .  #)
-
-     -  **Step 3: Remove numbers (optional)**
-
-        (1, 2, 3)
-
-     -  **Step 4: Remove STOP words (and any other unnecessary words)**  
-
-        ( the, is, in, and)*
-
- *  **Tokenize**
-
-     - Break text into words  (bag of words)
-
- *  **Analyze**
-
-Notes:
-
-
-
----
 
 ## Text Cleanup: Lowercase, Remove Punctuations
 
@@ -282,18 +267,16 @@ Notes:
 
 ## Dealing With Stop Words
 
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:50%;float:right;"/><!-- {"left" : 1.89, "top" : 1.31, "height" : 4.21, "width" : 6.47} -->
 
- * Stop words occur a lot
-
+ * Sample stop words
      - English (total 153):  *'a', 'about', 'above', 'after', 'again', 'against',..*
-
      - Spanish (total 313): *'a', 'al', '*  *algo*  *', '*  *algunas*  *', '*  *algunos*  *',*  *...*
-
      - German (total 231):  *'*  *wie*  *', 'also', '*  *alle*  *', '*  *anderer*  *', 'des',*
 
  * However they don't contribute much to analytics
-
-     - Usually noise
+     - Here we see an example of 'Alice in Wonderland' analysis.  And there are lot of stop words
 
  * Most text mining packages has a built in stop words dictionaries for various languages
 
@@ -316,11 +299,11 @@ it was the best of times it was the worst of times it was the age of wisdom
 ```text
 English stopwords
  a, able, about, across, after, all, almost, also, am, among, an, and, any, are,
- as, at, be, because, been, but, by, can, cannot, could, dear, did, do, does, 
+ as, at, be, because, been, but, by, can, cannot, could, dear, did, do, does,
  either, else, ever, every, for, from, get, got, had, has, have, he, her, hers,
  him, his, how, however, i, if, in, into, is, it, its, just, least, let, like,
  likely, may, me, might, most, must, my, neither, no, nor, not, of, off, often,
- on, only, or, other, our, own, rather, said, say, says, she, should, since, 
+ on, only, or, other, our, own, rather, said, say, says, she, should, since,
  so, some, than, that, the, their, them, then, there, these, they, this, tis,
  to, too, twas, us, wants, was, we, were, what, when, where, which, while,
  who, whom, why, will, with, would, yet, you, your
@@ -340,6 +323,22 @@ best times worst times age wisdom
 
 Notes:
 
+---
+
+## Tokenizing Text
+
+
+ * Tokenizing is breaking the text into tokens (words / sentences)
+
+ * Most text algorithms work on 'tokens'
+
+ * Can you spot the differences in word-tokenization below?
+
+<img src="../../assets/images/machine-learning/text-analytics-tokenizing-1.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 2.89, "height" : 3.79, "width" : 8.21} -->
+
+
+
+Notes:
 
 
 ---
@@ -352,6 +351,8 @@ Notes:
 
 ```text
 Original text
+-------------
+
 It was the best of times. It was the worst of times! It was the age of wisdom!!
 $123
 
@@ -361,13 +362,16 @@ $123
 
 ```text
 Cleaned text
+-------------
+
 best times worst times age wisdom
 
 ```
 <!-- {"left" :0, "top" : 2.87, "height" : 0.81, "width" : 6.28} -->
 
 ```text
-Cleaned text
+Word count
+----------
 
 Total number of words = 6
 
@@ -392,27 +396,46 @@ Notes:
 
 ---
 
-## N-gram analytics
+## Bag of Words Review
 
+
+ *  **Pros**
+
+    * Easy to implement, well understood
+
+ *  **Cons**
+
+    * Context is lost.Both sentences below map to same 'bag of words'.But the meaning is very different.
+
+<img src="../../assets/images/machine-learning/text-bag-of-words-2.png" style="width:70%"/><!-- {"left" : 0.29, "top" : 4.05, "height" : 1.45, "width" : 9.67} -->
+
+
+
+Notes:
+
+---
+
+# N-gram Analysis
+
+---
+
+## N-gram Analysis
+
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/text-ngrams-1.png" style="width:50%;float:right;" />
 
  * N-gram: sequence of  'n' number of words
-
      - Words have to be sequential
-
      - Order matters
 
  * N = 1: unigram (single word)
 
  * N = 2: bigram
-
      - "American people"
-
      - "black cats"
 
  * N-gram applications:
-
      - Predict the next word
-
        "Please call me `back`"
 
 Notes:
@@ -421,18 +444,16 @@ Notes:
 
 ---
 
-## Sample N-gram Analytics Results for 'Moby Dick'
+## N-gram(2) Analysis Results for 'Moby Dick'
 
 
  * Moby-dick novel from project Gutenberg
-
      - 22,108 lines
-
      - 215,136 words
-
      - 1,257,274 characters
 
  * Below the 'bigram' analysis
+    - Lot's of filler words
 
 ```text
 ('of', 'the'): 1873,
@@ -447,7 +468,6 @@ Notes:
 ('at', 'the'): 318
 
 ```
-<img src="../../assets/images/machine-learning/Text-Analytics-11.png" style="width:30%;    padding-bottom: 100px; margin-top:-250px"/><!-- {"left" : 4.13, "top" : 3.98, "height" : 1.56, "width" : 4.41} -->
 
 
 Notes:
@@ -456,41 +476,18 @@ Notes:
 
 ---
 
-## Analytics After Stop Words
+## N-gram(2) Analysis After Removing Stop Words
 
 
  * Here we show the results of top bigrams analysis on both
-
  * Moby-dick.txt
 
      - Before cleanup: 215,136  words
-
      - After 'stop word' cleanup: 115,093  words
 
- <img src="../../assets/images/machine-learning/Text-Analytics-12.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3.09, "height" : 3.8, "width" : 8.21} -->
+ <img src="../../assets/images/machine-learning/text-ngrams-moby-dick-1.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 3.09, "height" : 3.8, "width" : 8.21} -->
 
 
-
-
-
-Notes:
-
-
-
----
-
-## Bag of Words Review
-
-
- *  **Pros**
-
-    * Easy to implement, well understood
-
- *  **Cons**
-
-    * Context is lost.Both sentences below map to same 'bag of words'.But the meaning is very different.
-
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-14.png" style="width:70%"/><!-- {"left" : 0.29, "top" : 4.05, "height" : 1.45, "width" : 9.67} -->
 
 
 
@@ -514,16 +511,16 @@ Notes:
 ## Lab: Work With Raw Text
 
 
- *  **Overview**: 
- 
+ *  **Overview**:
+
      - Tokenize / Clean / Stem raw text.
 
- *  **Builds on previous labs**: 
- 
+ *  **Builds on previous labs**:
+
      - None
 
  *  **Approximate time**:
- 
+
      - 15 mins
 
  *  **Instructions**:
@@ -541,16 +538,16 @@ Notes:
 ## Lab: Text Analytics: ngrams
 
 
- *  **Overview**: 
- 
+ *  **Overview**:
+
      - N-gram analytics
 
- *  **Builds on previous labs**: 
- 
+ *  **Builds on previous labs**:
+
      - None
 
- *  **Approximate time**: 
-  
+ *  **Approximate time**:
+
      -  15 mins
 
  *  **Instructions**:
