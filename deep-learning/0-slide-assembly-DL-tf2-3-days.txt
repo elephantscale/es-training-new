@@ -1,0 +1,50 @@
+## To Make slides
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-DL-tf2-3-days.txt
+## (-d will cleanup  current assembly.out)
+
+## To Make pdfs, supply pdf arg at the end
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-tf2-3-days.txt  pdf
+## (-d will cleanup  current assembly.out)
+
+
+## Course outline
+./outline-Intro-to-Deep-Learning-With-TensorFlow-and-Keras.docx
+
+## About
+./generic/About-Deep-Learning-Class.md
+
+## DL Intro / Primer
+generic/DL-Intro.md
+
+# TensorFlow
+./tensorflow/TENSORFLOW-Intro.md
+
+# A little theory
+../machine-learning/generic/ML-Concepts-All.md
+
+generic/DL-Concepts.md
+
+./generic/DL-Linear.md
+
+# Introduce TensorFlow Playground
+./generic/DL-Playground.md
+
+# Feed Forward
+generic/DL-Feed-Forward.md
+
+# Keras
+keras/Keras-1__Intro.md
+
+
+## CNN
+./generic/DL-CNNs.md
+
+## RNN
+./generic/DL-RNNs.md
+./generic/DL-LSTMs.md
+
+## TransferLearning
+./generic/DL-TransferLearning.md
+
+# Parallel
+./tensorflow/TENSORFLOW-Parallel.md

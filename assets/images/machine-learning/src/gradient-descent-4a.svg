@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="245 -165 709 618" width="709" height="618">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#150080">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2019-09-29 08:49:31 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill="none" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_4">
+        <line x1="297.55532" y1="-84.10001" x2="297.04317" y2="427.64296" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_3">
+        <line x1="893.4497" y1="426.84817" x2="297.04317" y2="427.64296" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(334 -2)" fill="#360077">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#360077" x="0" y="40">We don’t know the error curve !</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#360077" x="0" y="89">Where do we start?</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(250 -160)" fill="#360077">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#360077" x="0" y="40">error</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(926 399)" fill="#360077">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#360077" x="0" y="40">x</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 618.83436 298.62282 L 618.83436 282.15043 C 618.7914 278.3991 619.0399 274.6501 619.5776 270.93724 C 620.0212 268.01897 620.9294 265.1906 622.2678 262.55967 C 623.644 259.95652 625.355 257.54474 627.35735 255.38582 C 629.4524 253.0861 631.9945 250.34204 634.9836 247.15366 L 658.0159 223.82248 C 662.9977 218.84063 665.4913 212.35885 665.4967 204.37713 C 665.4967 196.60007 662.9546 190.2691 657.8705 185.3842 C 652.7863 180.4993 646.353 178.05685 638.5705 178.05685 C 630.20104 178.05685 623.3234 180.89784 617.9376 186.57984 C 612.5545 192.24367 609.28035 199.5848 608.6633 207.37432 L 570.3624 204.3933 C 571.3629 195.5001 573.8938 186.84692 577.8432 178.81624 C 581.4598 171.55886 586.4951 165.10053 592.6514 159.8233 C 598.85926 154.58094 606.0178 150.58201 613.7367 148.04461 C 622.2331 145.26825 631.1272 143.9037 640.0651 144.00528 C 648.5453 143.92657 656.981 145.23927 665.0362 147.89112 C 672.379 150.28726 679.1862 154.08733 685.0794 159.08007 C 690.8439 164.07168 695.3967 170.30974 698.393 177.32169 C 701.5814 184.59787 703.1756 192.92428 703.1756 202.30092 C 703.2855 208.19704 702.3754 214.0678 700.4854 219.65389 C 698.7363 224.5411 696.3194 229.16284 693.3035 233.38761 C 690.2267 237.67415 686.7742 241.67813 682.987 245.35212 C 679.0931 249.12216 674.9568 253.11033 670.5782 257.31662 C 667.783 259.91256 665.3863 262.2069 663.3882 264.19964 C 661.5122 266.04453 659.8583 268.1024 658.4602 270.33134 C 657.116 272.5459 656.1547 274.97114 655.6165 277.5052 C 654.97236 280.69538 654.6717 283.94538 654.7198 287.1996 L 654.7198 298.56627 Z M 612.8481 340.19563 C 612.7818 333.9701 615.3317 328.00263 619.8765 323.74747 C 624.3435 319.2639 630.4408 316.78826 636.769 316.8887 C 642.9955 316.8251 649.0031 319.18296 653.52414 323.4647 C 658.16765 327.53896 660.79 333.4452 660.698 339.62204 C 660.7636 345.84977 658.2139 351.81946 653.66956 356.0783 C 646.78755 362.81413 636.5587 364.8116 627.6482 361.15976 C 624.84635 360.0231 622.26526 358.40444 620.0219 356.3772 C 617.8128 354.36363 616.0347 351.92322 614.795 349.20334 C 613.48445 346.38255 612.8167 343.3059 612.84 340.19563 Z" fill="#74000c"/>
+      </g>
+    </g>
+  </g>
+</svg>

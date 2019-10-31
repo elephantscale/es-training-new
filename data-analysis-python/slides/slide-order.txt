@@ -1,0 +1,15 @@
+## to generate slides
+##  $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
+
+./About-Data-Analytics-With-Python.md
+./Data_Science_Intro.md
+../../python/slides/PYTHON-Intro.md
+./PYTHON-NumPy.md
+./PYTHON-Pandas.md
+./PYTHON-SciPy.md
+./PYTHON-Visualization.md
+./FeatureEngineering.md
+./PYTHON-Sklearn.md
+./PYTHON-Recommendations.md
+./PYTHON-Text-Spacy.md
+

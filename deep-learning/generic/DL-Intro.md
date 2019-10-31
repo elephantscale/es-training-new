@@ -14,8 +14,8 @@ by  Aurélien Géron (ISBN: 9781492037347)
 * [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)  
 by  Aurélien Géron (ISBN: 9781492032649)
 
-<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%;"/>
-<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/>
+<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%;"/>&nbsp;&nbsp;<!-- {"left" : 2.78, "top" : 4.55, "height" : 3.15, "width" : 2.09} -->
+<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:19.5%;"/><!-- {"left" : 5.18, "top" : 4.55, "height" : 3.15, "width" : 2.4} -->
 
 ---
 
@@ -28,75 +28,147 @@ by by Adam Gibson, Josh Patterson(ISBN: 9781491914250)
 by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
 
 
+<img src="../../assets/images/books/book-9781491914250-deep-learning.jpeg" alt="keras book1" style="width:20%;"/>&nbsp;&nbsp;<!-- {"left" : 2.71, "top" : 4.53, "height" : 3.02, "width" : 2.3} -->
+<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.27, "top" : 4.53, "height" : 3.02, "width" : 2.31} -->
 
-<img src="../../assets/images/books/book-9781491914250-deep-learning.jpeg" alt="keras book1" style="width:20%;"/>
-<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/>
+
 
 ---
-## Video: Why is Machine Learning Important
 
-<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="50%"/>
+## Question for Audience
+
+ * Think of something you did today / this week that is AI powered?
+
+Notes:
+
+---
+## Demo - Gmail AI Helper
+
+<img src="../../assets/images/deep-learning/3rd-party/Demo-1.png" alt="Demo-1.png" style="width:50%;"/><!-- {"left" : 1.74, "top" : 2.5, "height" : 1.9, "width" : 6.78} -->
+
+
+<img src="../../assets/images/deep-learning/3rd-party/Demo-2.png" alt="Demo-2.png" style="width:50%;"/><!-- {"left" : 2.1, "top" : 4.55, "height" : 2.6, "width" : 6.06} -->
+
+
+
+
+Notes:
+
+
+---
+
+## Why Machine Learning Matters?
+
+<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.61, "height" : 4.27, "width" : 8.21} -->
+
+
 
 [Link](https://www.youtube.com/watch?v=HcqpanDadyQ)
-
-Nice introduction to ML from Google.
 
 Notes:
 
 https://www.youtube.com/watch?v=HcqpanDadyQ
 
-
 ---
+
 
 ## Hype Cycle
 
-**Question for the class**  
-Where do you think AI is in this cycle? :-)
+ * **Question for the class:**  
+   - Where do you think AI is in this cycle? :-)
 
-<img src="../../assets/images/deep-learning/3rd-party/Gartner_Hype_Cycle.png" alt="XXX image missing" style="background:white; max-width:98%;" width="58%"/>
+<img src="../../assets/images/deep-learning/Gartner-Hype-Cycle.png" alt="Gartner-Hype-Cycle.png" style="background:white;width:55%;"/><!-- {"left" : 1.23, "top" : 2.93, "height" : 5.06, "width" : 7.8} -->
+
 
 Notes:
 - https://en.wikipedia.org/wiki/Hype_cycle
 
 ---
 
+## What is  Machine Learning
 
-## AI / Machine Learning / Deep Learning
+<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 7.44, "top" : 1.34, "height" : 3.48, "width" : 2.48} -->
 
-<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="XXX image missing" style="background:white;float:right;" width="30%" /> <!-- {"left" : 3.07, "top" : 3.24, "height" : 4.11, "width" : 4.11} -->
+* **"The field of study that gives computers the ability to learn without being explicitly programmed."** -- Arthur Samuel
 
- *  **Artificial Intelligence (AI):** Broader concept of machines being able to carry out 'smart' tasks
+* Example: Self-driving cars
+    - Historical approach:  
+    Write a massive program to instruct the car to handle all possible scenarios encountered while driving
+        - This is immensely difficult
 
- *  **Machine Learning:** A type of AI that allows software to learn from data without explicitly programmed
+    - AI approach:  
+        - Let AI learn by observing the scenery and your  reactions
+        - Once it learnt enough, let the AI predict the next reaction for a scenary
 
- *  **Deep Learning:** Using Neural Networks to solve some hard problems
+Notes:
+
+
+---
+
+## Spam Detection - Traditional (Rule Based) Approach
+
+ * Here is an example of spam detection rule engine
+
+ * The rules are coded by developers
+
+ * There could be 100s of 1000s of rules!
+
+```java
+
+if (email.from_ip.one_of("ip1", "ip2", "ip3")) {
+  result = "no-spam"
+}
+else if ( email.text.contains ("free loans", "cheap degrees"))
+{
+  result = "spam"
+}
+
+```
+<!-- {"left" : 0, "top" : 3, "height" : 2.13, "width" : 10.25} -->
+
+Notes:
+
+
+
+
+---
+
+## Spam Detection - AI Approach
+
+
+ * Show the algorithm with spam and non-spam emails
+
+ * Algorithm 'learns' which attributes are indicative of spam
+
+ * Then algorithm predicts spam/no-spam on new email
+
+<img src="../../assets/images/deep-learning/AI-Approach.png" alt="AI-Approach.png" style="width:55%;"/><!-- {"left" : 0.77, "top" : 3.58, "height" : 4.39, "width" : 8.78} -->
+
+Notes:
+
+
+---
+
+## How is AI Different from Rule Based Systems
+
+
+ * Rule based systems are static
+    - They are programmed in
+    - They don't learn from data
+
+ * AI can learn from data
+     - It gets better every day with more data it sees
+
+<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" alt="Rule-Based-Systems.png" style="width:55%;"/><!-- {"left" : 1.02, "top" : 4.51, "height" : 3.09, "width" : 8.21} -->
+
+
 
 
 Notes:
 
-http://www.teglor.com/b/deep-learning-libraries-language-cm569/
-
----
-## Deep Learning
-
-- **Deep Learning** is a special subset of Machine Learning that uses '**Neural Nets**' (loosely fashioned from neurons from human brain)
-
-- Can do supervised and unsupervised learning
-
-- Getting very popular due to availability of huge amount of data and vast compute power
-
-
-
-Notes:
-
-- https://www.quora.com/What-is-the-difference-between-deep-learning-and-usual-machine-learning
-- https://www.wired.com/2016/06/deep-learning-isnt-dangerous-magic-genie-just-math/
-- https://en.wikipedia.org/wiki/AlphaGo
-
 ---
 
-
-## Deep Learning Applications
+##  AI Applications
 
 - Self Driving Cars
      - ML system recognizes edge of the road, road sign and car in front
@@ -104,8 +176,8 @@ Notes:
 - Face recognition
      - Facebook images: System learns from images manually tagged and then automatically detects faces in uploaded photos
 
-<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> <!-- {"left" : 0.55, "top" : 4.17, "height" : 2.97, "width" : 4.46} -->
-<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> <!-- {"left" : 5.26, "top" : 4.17, "height" : 2.97, "width" : 4.44} -->
+<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> <!-- {"left" : 0.55, "top" : 4.7, "height" : 2.97, "width" : 4.46} -->
+<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /> <!-- {"left" : 5.26, "top" : 4.7, "height" : 2.97, "width" : 4.44} -->
 
 
 Notes:
@@ -115,7 +187,7 @@ Notes:
 
 
 ---
-# Deep Learning History
+# AI History
 
 ---
 
@@ -174,7 +246,8 @@ Notes:
 ---
 ## Neural Networks Timeline
 
-<img src="../../assets/images/deep-learning/3rd-party/nn_timeline.jpg" alt="XXX image missing" style="background:white;max-width:100%;" />
+<img src="../../assets/images/deep-learning/3rd-party/nn_timeline.jpg" alt="XXX image missing" style="background:white;max-width:100%;"/><!-- {"left" : 0.66, "top" : 2.72, "height" : 4.2, "width" : 8.93} -->
+
 
 Notes:
 ref : https://beamandrew.github.io/deeplearning/2017/02/23/deep_learning_101_part1.html
@@ -232,19 +305,18 @@ Notes:
 ---
 ## Godfathers of Neural Networks
 
-- [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton) @ Google, University of Toronto.  
+ * [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton) @ Google, University of Toronto.  
 Kept NN research going during 'AI Winter'
 
-- [Yann LeCun](http://yann.lecun.com/) - Chief AI researcher @ Facebook, Professor @ University of New York
+ * [Yann LeCun](http://yann.lecun.com/) - Chief AI researcher @ Facebook, Professor @ University of New York
 
-- [Yoshua Bengio](https://en.wikipedia.org/wiki/Yoshua_Bengio) - Professor @ University of Montreal
+ * [Yoshua Bengio](https://en.wikipedia.org/wiki/Yoshua_Bengio) - Professor @ University of Montreal
 
-- **These 3 won ACM Turing Award (Nobel price of computing) in 2019**
+ * **These 3 won ACM Turing Award (Nobel price of computing) in 2019**
 
-
-<img src="../../assets/images/people/geoffrey-hinton-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
-<img src="../../assets/images/people/yann-lecun-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
-<img src="../../assets/images/people/yoshua-bengio-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="18%" />
+<img src="../../assets/images/people/geoffrey-hinton-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="15.6%" />&nbsp;<!-- {"left" : 1.1, "top" : 5.52, "height" : 2.77, "width" : 2.07} -->
+<img src="../../assets/images/people/yann-lecun-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20.5%" />&nbsp;<!-- {"left" : 3.58, "top" : 5.52, "height" : 2.77, "width" : 2.71} -->
+<img src="../../assets/images/people/yoshua-bengio-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="17.9%" /><!-- {"left" : 6.77, "top" : 5.52, "height" : 2.77, "width" : 2.37} -->
 
 Notes:
 - https://www.deeplearningitalia.com/godfather-2/
@@ -256,17 +328,28 @@ Notes:
 ---
 ## Thawing of AI Winter (2008 + )
 
-<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style="float:right; width:30%;" />
+<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style=" width:25%;float:right;"/><!-- {"left" : 7.34, "top" : 1.09, "height" : 2.36, "width" : 2.74} -->
 
 - 2012 Google created a neural network that can 'identify' cats from YouTube videos
+
 - Up until now, traditional machine learning algorithms are trained on labeled data.  
     - So to train an algorithm to distinguish between cats and dogs, we need thousands of images labeled as 'cat' and thousands of images labeled as 'dog'
     - labeling takes a lot of work, and not a lot of labeled data is available
+
+
+---
+## Thawing of AI Winter (2008 + )
+
+
 - They built a huge neural network with **1 Billion+** connections and trained it on **16,000 CPU cores (distributed)**
+
 - The network watched a lot of stills from YouTube videos and 'intuitively learned' to recognize cats
     - no one told the network what a cat looks like, it is 'self-taught'
 
-- References : [1](https://googleblog.blogspot.com/2012/06/using-large-scale-brain-simulations-for.html),   [2](https://www.wired.com/2012/06/google-x-neural-network/)
+- References: 
+    - [1](https://googleblog.blogspot.com/2012/06/using-large-scale-brain-simulations-for.html), [2](https://www.wired.com/2012/06/google-x-neural-network/)
+
+
 
 Notes:
 
@@ -278,18 +361,18 @@ Notes:
 
 # The Great AI Revival (2010 on)
 
-[../../machine-learning/slides/AI-brief-history.md#The Great AI Revival](../../machine-learning/slides/AI-brief-history.md#The Great AI Revival)
+[../../machine-learning/generic/AI-brief-history.md#The Great AI Revival](../../machine-learning/generic/AI-brief-history.md#The Great AI Revival)
 
 ---
 
 # AI Vocabulary
 
-[../../machine-learning/slides/AI-vocabulary.md](../../machine-learning/slides/AI-vocabulary.md)
+[../../machine-learning/generic/AI-vocabulary.md](../../machine-learning/generic/AI-vocabulary.md)
 
 ---
 # Machine Learning vs. Deep Learning
 
-[../../machine-learning/slides/ML-vs-DL.md](../../machine-learning/slides/ML-vs-DL.md)
+[../../machine-learning/generic/ML-vs-DL.md](../../machine-learning/generic/ML-vs-DL.md)
 
 
 ---
@@ -297,7 +380,8 @@ Notes:
 
 ## Video: How Scale is Helping Deep Learning
 
-<img src="../../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/>
+<img src="../../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 1.36, "top" : 1.34, "height" : 4.04, "width" : 7.52} -->
+
 
 [Link](https://www.youtube.com/watch?v=LcfLo7YP8O4)
 
@@ -320,14 +404,17 @@ https://www.youtube.com/watch?v=LcfLo7YP8O4
 # Use Cases and Demos
 
 
-<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
-<img src="../../assets/images/logos/photobucket-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
-<img src="../../assets/images/logos/staples-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
+<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="width:15%"/> 
 
+
+<img src="../../assets/images/logos/photobucket-logo-1.png" alt="XXX image missing" style="width:15%"/>
+
+
+<img src="../../assets/images/logos/staples-logo.png" alt="XXX image missing" style="width:15%"/>
 
 ---
 
-## Use Case 1 : Uber driver verification
+## Use Case 1: Uber driver verification
 
 - To increase passenger safety, Uber drivers have to verify their identity before accepting rides
 
@@ -335,15 +422,13 @@ https://www.youtube.com/watch?v=LcfLo7YP8O4
 
 - [Link](https://venturebeat.com/wp-content/uploads/2016/09/uberids.gif?resize=343%2C600&strip=all)
 
-<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
-<img src="../../assets/images/deep-learning/3rd-party/uber-rides-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
-<img src="../../assets/images/deep-learning/3rd-party/uber-rides-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
+<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />&nbsp;&nbsp;<!-- {"left" : 1.59, "top" : 4.9, "height" : 1.42, "width" : 1.95} --><img src="../../assets/images/deep-learning/3rd-party/uber-rides-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />&nbsp;&nbsp;<!-- {"left" : 3.91, "top" : 4.78, "height" : 1.64, "width" : 2.93} --><img src="../../assets/images/deep-learning/3rd-party/uber-rides-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" /><!-- {"left" : 7.19, "top" : 4.33, "height" : 2.56, "width" : 1.46} -->
 
 
 
 ---
 
-## Use Case 2 : Photobucket
+## Use Case 2: Photobucket
 
 - [Photobucket](http://photobucket.com/) is a image / video hosting service
 
@@ -356,8 +441,7 @@ Illegal images (child pornography ..etc) are flagged for law enforcement
 
 - [Link](https://blog.clarifai.com/how-photobucket-uses-image-recognition-to-protect-its-community-from-unwanted-content)
 
-<img src="../../assets/images/logos/photobucket-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
-<img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../../assets/images/logos/photobucket-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%;"/> &nbsp; &nbsp; <!-- {"left" : 1.21, "top" : 6.23, "height" : 0.74, "width" : 3.9} --><img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 6.11, "top" : 6.29, "height" : 0.62, "width" : 2.93} -->
 
 
 Notes:  
@@ -365,7 +449,7 @@ Notes:
 
 ---
 
-## Use Case 3 : Staples
+## Use Case 3: Staples
 
 - [Staples](https://www.staples.com) relies on organic search traffic to drive sales
 
@@ -377,8 +461,8 @@ Notes:
 
 - [Link](https://clarifai.com/customers/staples)
 
-<img src="../../assets/images/logos/staples-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
-<img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../../assets/images/logos/staples-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%;"/> &nbsp; &nbsp; <!-- {"left" : 1.48, "top" : 5.39, "height" : 0.58, "width" : 2.93} --><img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 5.84, "top" : 5.38, "height" : 0.62, "width" : 2.93} -->
+
 
 Notes:  
 - https://clarifai.com/customers/staples
@@ -389,7 +473,8 @@ Notes:
 
 - Simple NN to recognize hand-written digits
 
-<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/>
+<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 2.2, "top" : 1.97, "height" : 4.02, "width" : 5.85} -->
+
 
 [Link](http://myselph.de/neuralNet.html)
 
@@ -405,7 +490,8 @@ http://myselph.de/neuralNet.html
 
 - Cool visualization of signal path through NN
 
-<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-2.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="40%"/>
+<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-2.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="40%;"/><!-- {"left" : 2.93, "top" : 2.34, "height" : 4.39, "width" : 4.39} -->
+
 
 [Link](http://scs.ryerson.ca/~aharley/vis/conv/flat.html)
 
@@ -417,14 +503,15 @@ http://scs.ryerson.ca/~aharley/vis/conv/flat.html
 
 ## Clarifai Demo
 
-- Go to : https://clarifai.com/demo
+- Go to: https://clarifai.com/demo
 
 - Upload an image (or give a image URL)
 
 - Examine the output.  
 Have fun :-)
 
-<img src="../../assets/images/deep-learning/3rd-party/clarifai-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
+<img src="../../assets/images/deep-learning/3rd-party/clarifai-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%;"/><!-- {"left" : 1.83, "top" : 3.43, "height" : 4.21, "width" : 6.58} -->
+
 
 Notes:  
 https://clarifai.com/demo
@@ -433,4 +520,6 @@ https://clarifai.com/demo
 
 ## Wrap up & Any Questions?
 
----
+
+
+

@@ -16,77 +16,38 @@
 
 ---
 
-## Gradient Descent
-
-<img src="../../assets/images/machine-learning/gradient-descent-1a.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%" />
-
-- Gradient Descent is a popular optimization algorithm
-- Basic idea:
-    - Start with initial values of coefficients (zero or random value)
-    - `cost = evaluate (f(coefficients)`
-    - Calculate 'derivative'  to determine the 'slope' or 'direction'
-    - Update coefficients in the right 'direction' and calculate cost again
-    - 'learning rate parameter' (alpha, ⍺) determines how much coefficients can change
-    - Iterate  until you find global minimum
-- Algorithm will converge after multiple iterations
-- As it gets closer to convergence the 'steps' gets smaller
+[../../machine-learning/generic/Gradient-Descent.md](../../machine-learning/generic/Gradient-Descent.md)
 
 ---
-
-## Gradient Descent Demo
-
-<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
-<img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-3.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
-
-[Animation 1](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-1.gif)
-
-[Animation 2](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-3.gif)
-
----
-
-## Gradient Descent in 3D
-
-Imagine you are a skier standing on top of the hill.  
-You need to find the bottom, just using the 'feel under your feet'.  
-Here we are changing `a` and `b` trying to find the lowest point.
-
-<img src="../../assets/images/machine-learning/gradient-descent-3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/>
-
----
-
-## Stochastic Gradient Descent (SGD)
-
-- Classic Gradient Descent can be slow on large datasets (each iteration requires calculation over millions of data points)
-
-- SGD updates coefficients for each training instance, rather than at the end of the batch of instances
-
-- Also randomizes training set to
-    - Reduce coefficients jumping all over the place
-    - And to avoid 'getting stuck' at local minima
-
-- Features
-    - Very effective for large datasets
-    - Requires very few passes (usually 10-20) to converge
-
----
-
 ## Momentum Optimization
-
-<img src="../../assets/images/deep-learning/ball-rolling-down.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%"/>
 
 - Imagine a ball rolling down a smooth surface;  it will start slowly, but keep accelerating and quickly picking up momentum until it reaches terminal velocity
 
 - This is the idea behind **Momentum Optimization** ([paper by Boris Polyak, 1964](https://www.researchgate.net/publication/243648538_Some_methods_of_speeding_up_the_convergence_of_iteration_methods))
     - Regular Gradient Descent will get there too, but will take many steps and take longer
 
+<img src="../../assets/images/deep-learning/ball-rolling-down.png" alt="XXX image missing" style="background:white;width:40%"/><!-- {"left" : 3.43, "top" : 4.2, "height" : 2.14, "width" : 3.4} -->
+
+
+---
+
+## Momentum Optimization
+
 - Regular Gradient Descent updates the new weights using learning rate (always constant).  if the local gradient is very small, the updates are small too  
-$$\theta  = \theta -  \alpha  \nabla _\theta J(\theta)$$
+
+<img src="../../assets/images/deep-learning/Formula-theta-01.png" alt="Formula-theta-01.png" style="background:white;width:30%"/><!-- {"left" : 3.45, "top" : 2.4, "height" : 0.91, "width" : 3.35} -->
+
 
 - Here
     - θ: is current weights
     - ⍺ : learning rate
     - J(θ) : cost
     - ∇(θ) : is derivative
+
+
+Notes:
+
+$$\theta  = \theta -  \alpha  \nabla _\theta J(\theta)$$
 
 ---
 
@@ -97,8 +58,9 @@ $$\theta  = \theta -  \alpha  \nabla _\theta J(\theta)$$
 - Calculates the momentum and adds it to the next weight updates
     - so it accelerates the updates
 
-$$ m =  \beta m  - \alpha \nabla _\theta J(\theta) $$
-$$ \theta  = \theta + m $$
+<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:23%"/><!-- {"left" : 6.31, "top" : 2.44, "height" : 0.83, "width" : 3.71} -->
+
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%"/><!-- {"left" : 7.08, "top" : 3.26, "height" : 0.81, "width" : 2.18} -->
 
 - Hyperparameter β, is called the momentum; ranges between 0 (high friction) and 1 (no friction). A typical momentum value is 0.9.
 
@@ -106,12 +68,16 @@ $$ \theta  = \theta + m $$
     - Could be 10x faster than Gradient Descent
     - Also doesn't get trapped in local minima
 
+Notes:
+- $$ m =  \beta m  - \alpha \nabla _\theta J(\theta) $$
+
+- $$ \theta  = \theta + m $$
 
 ---
 
 ## Momentum Video Tutorial
 
-<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-momentum.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/>
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-momentum.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.34, "top" : 1.12, "height" : 4.61, "width" : 7.57} -->
 
 [Link](https://www.youtube.com/watch?v=k8fTYJPd3_I)
 
@@ -119,17 +85,20 @@ $$ \theta  = \theta + m $$
 
 ## Momentum Implementation
 
-#### Tensorflow
+* **Tensorflow**
 
 ```python
 optimizer = tf.train.MomentumOptimizer(learning_rate=?,
                                        momentum=0.9)
 ```
+<!-- {"left" : 0, "top" : 1.61, "height" : 0.48, "width" : 5.98} -->
 
-#### Keras
+
+* **Keras**
 ```python
 sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ```
+<!-- {"left" : 0, "top" : 2.79, "height" : 0.45, "width" : 10.25} -->
 
 ---
 ## Nesterov Accelerated Gradient
@@ -138,14 +107,17 @@ sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 
 - **Nesterov Accelerated Gradient (NAG)** measures the gradient of the cost function not at the local position but slightly ahead in the direction of the momentum
 
-$$ m =  \beta m  - \alpha \nabla _\theta J(\theta + \beta m) $$
-$$ \theta  = \theta + m $$
+<img src="../../assets/images/deep-learning/Formula-m-02.png" alt="Formula-m-02.png" style="background:white;width:30%"/><!-- {"left" : 3.13, "top" : 3.93, "height" : 0.73, "width" : 3.99} -->
 
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%"/><!-- {"left" : 4.17, "top" : 4.82, "height" : 0.71, "width" : 1.92} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/wayne-grekzky.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="60%"/>
+<img src="../../assets/images/deep-learning/3rd-party/wayne-grekzky.jpg" alt="XXX image missing" style="background:white;max-width:100%" width="40%"/><!-- {"left" : 2.83, "top" : 5.76, "height" : 2.24, "width" : 4.6} -->
+
 
 Notes:  
 Image credit : AZQuotes
+
+$$ m =  \beta m  - \alpha \nabla _\theta J(\theta + \beta m) $$
 
 ---
 
@@ -153,25 +125,30 @@ Image credit : AZQuotes
 
 Here you see Nestrov approach is slightly closer to optimum
 
-<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/>
+<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="width:40%"/><!-- {"left" : 2.9, "top" : 2.61, "height" : 5.1, "width" : 4.44} -->
+
 
 
 ---
 
 ## Nestrov Implementation
 
-#### Tensorflow
+* **Tensorflow**
 
 ```python
 optimizer = tf.train.MomentumOptimizer(learning_rate=?,
                                        momentum=0.9,
                                        use_nesterov=True) # <-- here
 ```
+<!-- {"left" : 0, "top" : 1.54, "height" : 0.54, "width" : 3.79} -->
 
-#### Keras
+
+* **Keras**
 ```python
 sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ```
+<!-- {"left" : 0, "top" : 2.71, "height" : 0.47, "width" : 10.25} -->
+
 ---
 
 ## Adagrad
@@ -181,7 +158,8 @@ sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 - Adagrad ([paper](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf)) adjusts the direction and velocity by scaling the direction vector
     - 'points in the right direction (gloabl minimum)' better :-)
 
-<img src="../../assets/images/deep-learning/optimizer-ada-grad-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%"/>
+<img src="../../assets/images/deep-learning/optimizer-ada-grad-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="60%"/><!-- {"left" : 2.2, "top" : 4.46, "height" : 3.14, "width" : 5.85} -->
+
 
 ---
 
@@ -198,7 +176,8 @@ sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
     - Outperforms Adagrad most of the times
     - Was the default choice until 'Adam Optimizer' was devised
 
-<img src="../../assets/images/deep-learning/optimizer-rmsprop-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/>
+<img src="../../assets/images/deep-learning/optimizer-rmsprop-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.71, "top" : 6.65, "height" : 1.13, "width" : 6.82} -->
+
 
 Notes:  
 - http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf
@@ -208,7 +187,8 @@ Notes:
 
 ## RMS Prop Video Tutorial 1
 
-<img src="../../assets/images/deep-learning/3rd-party/geoffrey-hinton-rmsprop.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/>
+<img src="../../assets/images/deep-learning/3rd-party/geoffrey-hinton-rmsprop.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.17, "top" : 1.28, "height" : 4.26, "width" : 7.91} -->
+
 
 [Link](https://www.youtube.com/watch?v=defQQqkXEfE&list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9&index=29)
 
@@ -216,7 +196,8 @@ Notes:
 
 ## RMS Prop Video Tutorial 2
 
-<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-rmsprop.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/>
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-rmsprop.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.31, "top" : 1.2, "height" : 4.29, "width" : 7.63} -->
+
 
 [Link](https://www.youtube.com/watch?v=_e-LFe_igno)
 
@@ -237,7 +218,8 @@ Notes:
 ---
 ## Adam Math (Reference Only)
 
-<img src="../../assets/images/deep-learning/optimizer-adam-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/>
+<img src="../../assets/images/deep-learning/optimizer-adam-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.15, "top" : 2.7, "height" : 4.24, "width" : 7.96} -->
+
 
 
 ---
@@ -255,43 +237,43 @@ Notes:
 
 ## Adam Optimizer Implementation
 
-#### Tensorflow
+* **Tensorflow**
 
 ```python
 optimizer = tf.train.AdamOptimizer(learning_rate=?)
 ```
+<!-- {"left" : 0, "top" : 1.63, "height" : 0.45, "width" : 5.1} -->
 
-#### Keras
+* **Keras**
 ```python
 keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
 ```
+<!-- {"left" : 0, "top" : 2.79, "height" : 0.45, "width" : 10.25} -->
+
 
 ---
 ## Animations of Various Optimizers
 
-#### Long valley
-"Algos without scaling based on gradient information really struggle to break symmetry here - SGD gets no where and Nesterov Accelerated Gradient / Momentum exhibits oscillations until they build up velocity in the optimization direction. Algos that scale step size based on the gradient quickly break symmetry and begin descending quickly"
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-2-long-valley.png" alt="XXX image missing" style="width:45%;float:right"/><!-- {"left" : 6.04, "top" : 1.37, "height" : 3.04, "width" : 3.94} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-2-long-valley.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%"/>
+**Long valley**
+* "Algos without scaling based on gradient information really struggle to break symmetry here - SGD gets no where and Nesterov Accelerated Gradient / Momentum exhibits oscillations until they build up velocity in the optimization direction. Algos that scale step size based on the gradient quickly break symmetry and begin descending quickly"
+
 
 [Link for animation](https://s3.amazonaws.com/elephantscale-public/media/optimizer-animation-2-long-valley.gif)
 
-Notes:  
-- Animations credit to Alec Radford
-- http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html
-- https://imgur.com/a/Hqolp
-
 ---
-
 ## Animations of Various Optimizers
 
-#### Saddle Point
-"Behavior around a saddle point. NAG/Momentum again like to explore around, almost taking a different path. Adadelta/Adagrad/RMSProp proceed like accelerated SGD."
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="width:50%;float:right"/><!-- {"left" : 5.89, "top" : 1.37, "height" : 3.16, "width" : 4.07} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%"/>
+**Saddle Point**
+* "Behavior around a saddle point. NAG/Momentum again like to explore around, almost taking a different path. Adadelta/Adagrad/RMSProp proceed like accelerated SGD."
 
 [Link for animation](https://s3.amazonaws.com/elephantscale-public/media/optimizers-animation-3-saddle-point.gif)
 
+
+
 Notes:  
 - Animations credit to Alec Radford
 - http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html
@@ -299,7 +281,7 @@ Notes:
 
 ---
 
-## Optimizers : Resources
+## Optimizers: Resources
 
 - http://ruder.io/optimizing-gradient-descent/
 
@@ -308,3 +290,7 @@ Notes:
 - [RMSProp video tutorial by Andew Ng](https://www.youtube.com/watch?v=_e-LFe_igno)
 
 - [Animations of various optimizers](http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html)
+
+
+
+

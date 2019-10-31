@@ -1,13 +1,19 @@
-TENSORFLOW CNN
-======
+# TENSORFLOW CNN
+---
 ## Lesson Objectives
 
  * Learn how to implement CNNs within TensorFlow
+
  * Discuss the process of convolution and how it work for image processing or other tasks
+
  * Describe what CNNs are and their applications
+
  * Illustrate how zero padding works with variations in kernel weights
+
  * Elaborate the pooling concepts in CNNs
+
  * Explain how to calculate the weighted inputs for all the feature maps stacked together
+
  * Explain how CNNs differ from ANNs
 
 Notes: 
@@ -17,16 +23,21 @@ Notes:
 # Introducing CNNs
 
 [Introducing CNNs](../generic/DL-CNNs.md)
+---
 
 ## Lab: MNIST Low-Level with CNN:
 
-  * **Note**:
-  * **Instructions for the trainer**:
+  * **Note :**
+
+  * **Instructions for the trainer:**
     - This lab is run with Jupyter Notebook
     - Help the students start a Jupyter Notebook
+
   * **Overview**: In this lab, we will do a hello world for TensorFlow and Keras.
-  * **Approximate time**: 15-20 minutes
-  * **Instructions for students**:
+
+  * **Approximate time:** 15-20 minutes
+
+  * **Instructions for students:**
     - (Tensorflow)  **03-lowlevel/3.3-mnist-cnn.ipynb** lab
 
 
@@ -37,9 +48,11 @@ Notes:
 # Convolutions
 
 [Convolutions](../generic/DL-Convolutions.md)
-
+---
 
 # CNN in Tensorflow
+
+---
 
 ## CNNs in TensorFlow
 
@@ -88,6 +101,7 @@ Note that the stride here is 2 in both height and width, which will reduce dimen
 
 
 ---
+
 ## Pooling Layer
 
 
@@ -115,6 +129,7 @@ convolutions. So it's index 1 (second from left), and 2 (third from left) that i
 
 
 ---
+
 ## CNNs in TensorFlow (Contd.)
 
 
@@ -140,6 +155,7 @@ Code image is same as previous slide. Adding it here to make it easy to relate t
 
 
 ---
+
 ## CNNs in TensorFlow
 
 
@@ -154,18 +170,26 @@ Notes:
 
 
 ---
+
 ## Lab: Introducing CNNs
 
   * Demonstrate how to create CNNs in TensorFlow
 
-    - **Objective**: Demonstrate various aspects of CNN with TensorFlow.
+    - **Objective:** Demonstrate various aspects of CNN with TensorFlow.
+
   * **Steps:** 
     - Load `china.jpg` and `flower.jpg` images from Python dataset module.
     - Develop a CNN to apply a vertical and horizontal 7x7 kernel filter to highlight vertical and horizontal lines respectively in the images loaded with SAME padding. Plot the output for the two images.
 
+
+Notes: 
+
+---
+
 ## Lab: Introducing CNNs
 
   * **Steps:** 
+
     - Try using the higher level TensorFlow layers API for convolution and check the output image.
     - Using a dataset of numbers between 1 and 13, try to apply a prime number filter first with SAME and then with VALID padding. Check the output of this convolutional layer in the two cases.
     - Create a max pooling layer using a 2x2 kernel, stride 2 and no padding. Apply this to the images in the china image dataset. Plot the output of the pooling layer.
@@ -176,6 +200,7 @@ Notes:
 
 
 ---
+
 ## LAB: MINST in CNN
 
   * MNIST Dataset is the "hello world" of deep learning
@@ -183,81 +208,90 @@ Notes:
   * 28x28 greyscale scanned digits
 
   * How to classify them?
+
   * CNNs for MNIST image classifcation
 
     - **Objective**: Use CNNs for MNIST image classification.
+    - **Steps:** 
 
-    - **Steps**  **:** 
-
-    - Apply CNNs for MNIST image classification. Print training and test accuracy of the trained model. 
-
-    - **Dataset used:** MNIST dataset to test a CNN-based classification network.
-
-    - **Skills required:** In-depth understanding of CNNs and all their features like kernel, stride, padding, pooling etc.
+      - Apply CNNs for MNIST image classification. Print training and test accuracy of the trained model. 
+      - **Dataset used:** MNIST dataset to test a CNN-based classification network.
+      - **Skills required:** In-depth understanding of CNNs and all their features like kernel, stride, padding, pooling etc.
 
 Notes: 
 
 ---
+
 ## Lab: MNIST Low-Level with CNN:
 
 
-  * **Note**:
-  * **Instructions for the trainer**:
+  * **Note :**
+
+  * **Instructions for the trainer:**
 
     - This lab is run with Jupyter Notebook
     - Help the students start a Jupyter Notebook
 
-  * **Overview**: In this lab, we will do a hello world for TensorFlow and Keras.
-  * **Approximate time**: 15-20 minutes
-  * **Instructions for students**:
+  * **Overview:** In this lab, we will do a hello world for TensorFlow and Keras.
+
+  * **Approximate time:** 15-20 minutes
+
+  * **Instructions for students:**
     - (Tensorflow)  **03-lowlevel/3.3-mnist-cnn.ipynb** lab
 
 
 Notes:
 
 ---
+
 ## CNN in Keras
 
   * Low-Level TF is a bit cumbersome to do for deep learning.
+
   * Estimator has too little control out of the box
     - though we can "wrap" customized layers in estimators
     - Estimator becomes high-level "glue."
+
   * Keras is the best mid-level API
     - Not as verbose or as cumbersome as Tensorflow Core (Low-Level)
     - Gives us full control of layers.
+
   * We can "wrap" keras inside of estimator if we want.
     - Gives us best of both worlds
     - Control + High-level
 
 ---
+
 ## Lab: Fashion MNist with Keras
 
+  * **Note :**
 
-  * **Note**:
-
-  * **Instructions for the trainer**:
+  * **Instructions for the trainer:**
 
     - This lab is run with Jupyter Notebook
     - Help the students start a Jupyter Notebook
 
-  * **Overview**: In this lab, we will do a hello world for TensorFlow and Keras.
+  * **Overview:** In this lab, we will do a hello world for TensorFlow and Keras.
 
-  * **Approximate time**: 15-20 minutes
+  * **Approximate time:** 15-20 minutes
 
-  * **Instructions for students**:
+  * **Instructions for students:**
 
     - (Keras)  **06-cnn/6.1-cnn-fashion.ipynb** lab
 
 Notes:
 
 ---
+
 ## Lab: Image Classification Example
 
-
   * Perform Image Classification with CNN.
+
   * Download cat/dog dataset
+
     - Large Images
     - Real-World.
+
   * Will be **very** slow without GPU.
     - Do with caution.
     - Recommend using AWS DL AMI.
@@ -275,6 +309,11 @@ Notes:
 
   * CNNs can detect multiple features in the input by use of stacked feature maps.
 
+
+Notes:
+
+---
+
 ## Summary
 
   * CNNs are neural networks that contain at least 1 convolutional layer. They are majorly used for image classification.
@@ -286,5 +325,4 @@ Notes:
 
 Notes: 
 
----
 

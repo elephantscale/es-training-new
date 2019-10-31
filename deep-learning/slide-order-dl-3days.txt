@@ -4,7 +4,7 @@
 ./generic/About-Deep-Learning-Class.md
 
 ## Intro
-../../machine-learning/slides/Machine-Learning-Primer.pptx
+../../machine-learning/generic/Machine-Learning-Primer.pptx
 
 # Entertain and introduce TensorFlow
 ./generic/DL-Playground.md
@@ -14,7 +14,7 @@
 ./tensorflow/TENSORFLOW-Lowlevel.md
 
 #Linear
-../../machine-learning/slides/sagemaker/Linear-Regression.pptx
+../../machine-learning/generic/sagemaker/Linear-Regression.pptx
 ./tensorflow/TENSORFLOW-Linear.md
 
 # Tensorflow Slides

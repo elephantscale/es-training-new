@@ -1,4 +1,4 @@
-# Kafka Best Practices and Case Studies 
+# Kafka Best Practices and Case Studies
 
 
 ---
@@ -11,7 +11,7 @@
 
  * Learn from published use cases of Kafka
 
-Notes: 
+Notes:
 
 
 
@@ -25,19 +25,17 @@ Notes:
 
 ## Kafka Eco System
 
-| Product          	| Description                                                                  	|
-|------------------	|------------------------------------------------------------------------------	|
-| Kafka Streams    	| Build streaming applications easily                                          	|
-|                  	|                                                                              	|
-| Kafka Connect    	| Move data between Kafka and other systems (DB / file system)                 	|
-|                  	|                                                                              	|
-| Kafka Registry   	| Metadata /schema store for data                                              	|
-|                  	|                                                                              	|
-| Kafka REST Proxy 	| REST interface into Kafka cluster.,Produce / </br>Consume using RESTFUL APIs 	|
-|                  	|                                                                              	|
-| Camus            	| Kafka / HDFS integration                                                     	|
+| Product          | Description                                                                  |
+|------------------|------------------------------------------------------------------------------|
+| Kafka Streams    | Build streaming applications easily                                          |
+| Kafka Connect    | Move data between Kafka and other systems (DB / file system)                 |
+| Kafka Registry   | Metadata /schema store for data                                              |
+| Kafka REST Proxy | REST interface into Kafka cluster.,Produce / </br>Consume using RESTFUL APIs |
+| Camus            | Kafka / HDFS integration                                                     |
 
-Notes: 
+<!-- {"left" : 0.25, "top" : 1.45, "height" : 3.38, "width" : 9.75} -->
+
+Notes:
 
 
 
@@ -53,19 +51,22 @@ Notes:
 
  * Jvm heap: 8G - 32 G
 
-```text
+```bash
 Conf/kafka-env.sh
 
 export KAFKA_HEAP_OPTS="-Xmx16g -Xms16g"
 
-export KAFKA_JVM_PERFORMANCE_OPTS="-XX:MetaspaceSize=96m -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35
+export KAFKA_JVM_PERFORMANCE_OPTS=
+"-XX:MetaspaceSize=96m -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35
 -XX:G1HeapRegionSize=16M
 -XX:MinMetaspaceFreeRatio=50
 -XX:MaxMetaspaceFreeRatio=80"
 
 ```
+<!-- {"left" : 0, "top" : 3.4, "height" : 2.04, "width" : 10.25} -->
 
-Notes: 
+
+Notes:
 
 https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
 
@@ -73,6 +74,8 @@ https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
 ---
 
 ## Best Practices: OS Setting
+
+<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:40%;float:right;"/><!-- {"left" : 5.26, "top" : 3.61, "height" : 3.98, "width" : 4.91} -->
 
 
  * Give rest of the memory (minus JVM heap) to Page Cache
@@ -85,17 +88,17 @@ https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
 
      - Use `'ulimits -a'` to verify
 
-<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="width:40%; position:relative; top:-100px; left:300px;"/>
 
-Notes: 
+Notes:
 
 
 
 
 ---
 
-## Best Practices: Disks 
+## Best Practices: Disks
 
+<img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:50%;float:right;"/><!-- {"left" : 6.07, "top" : 2.3, "height" : 2.01, "width" : 3.98} -->
 
  * Disks tend to be first bottleneck to be hit
 
@@ -113,9 +116,8 @@ Notes:
 
      - And create alerts if disks are getting full
 
-<img src="../../assets/images/kafka/Disks-Setup-02.png" alt="Disks-Setup-02.png" style="width:40%; position: relative; top: 700px; right: 10px"/>
 
-Notes: 
+Notes:
 
 
 
@@ -127,7 +129,7 @@ Notes:
 
  * SSDs don't offer remarkable boost in performance
 
- * Kafka writes/reads data sequentially to/from commit logs 
+ * Kafka writes/reads data sequentially to/from commit logs
 
      - No random seeks
 
@@ -141,7 +143,7 @@ Notes:
 
  * Zookeeper can benefit from SSD drives
 
-Notes: 
+Notes:
 
 https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
 
@@ -161,7 +163,7 @@ https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
 
  * Formatting TB disk drives with XFS is significantly faster  
 
-Notes: 
+Notes:
 
 
 
@@ -189,7 +191,7 @@ Notes:
 
  * Monitor memory usage of ZK using JMX or other monitoring programs
 
-Notes: 
+Notes:
 
 
 
@@ -200,30 +202,19 @@ Notes:
 
 
  * Number of partitions correspond parallelism
-
  * Higher the partitions -> more consumers can be added
-
  * How to calculate optimal number of partitions?
-
      - Let's say Producer throughput to a single partition as P
-
      - Say Consumer throughput from a single partition as C
-
      - Target throughput T
-
      - Required partitions = Max (T/P,  T/C)
-
  * Ensure number of partitions >= number of brokers
-
      -  **Quiz**: Why?
-
  * Partitions can always be increased later but not decreased
-
  * Altering number of partitions in a KEY-VALUE topic is a little tricky?
-
      - Keys have to be re-hashed to partitions
 
-Notes: 
+Notes:
 
 
 
@@ -251,7 +242,7 @@ Notes:
 
      - More partitions -> more batches -> more memory needed
 
-Notes: 
+Notes:
 
 
 
@@ -261,7 +252,7 @@ Notes:
 ## Best Practices: Compression
 
 
- * Enabling compression 
+ * Enabling compression
 
      - reduces the data size goes on network
 
@@ -277,13 +268,13 @@ Notes:
 
  * Compression uses CPU
 
-     - More threads can speed up throughput with compression 
+     - More threads can speed up throughput with compression
 
  * Compression types: none, gzip, snappy, or lz4
 
      - See comparisons in next slides
 
-Notes: 
+Notes:
 
 
 
@@ -293,9 +284,10 @@ Notes:
 ## Compression Comparisons
 
 
-<img src="../../assets/images/kafka/Compression-Comparisons.png" alt="Compression-Comparisons.png" style="width:60%;"/>
+<img src="../../assets/images/kafka/Compression-Comparisons.png" alt="Compression-Comparisons.png" style="width:60%;"/><!-- {"left" : 1.08, "top" : 1.61, "height" : 6.42, "width" : 8.09} -->
 
-Notes: 
+
+Notes:
 
 
 
@@ -317,7 +309,7 @@ Notes:
 
  * Larger batch sizes will use more memory for buffering
 
-Notes: 
+Notes:
 
 
 
@@ -335,11 +327,11 @@ Notes:
 
  * If sending large messages set the following properties:
 
-     -  **messages.max.bytes**  (on broker) 
+     -  **messages.max.bytes**  (on broker)
 
      -  **fetch.message.max.bytes**  (on consumer)
 
-Notes: 
+Notes:
 
 https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
 
@@ -350,30 +342,19 @@ https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
 
 
  * Kafka exposes lot of metrics
-
      - Collect them via JMX plugin
-
-     - Or use any of the open source collectors 
-
+     - Or use any of the open source collectors
  * Send metrics to a collector (graphite, open TSDB ..etc.)
-
  * Use a nice graphic tool to slice & dice metrics (Grafana)
-
  * Some important metrics to keep an eye on
-
      - Log flush latency (95th percentile)
-
      - Under Replicated Partitions
-
      - Messages in / sec per broker and per topic
-
-     - Bytes in / sec per broker 
-
+     - Bytes in / sec per broker
      - Bytes in / sec per topicBytes / message
-
      - End-to-End time for a message
 
-Notes: 
+Notes:
 
 https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
@@ -383,13 +364,13 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 ## Best Practices: Monitor, Monitor, Monitor
 
 
- *  **Log flush latency** 
+ *  **Log flush latency**
 
      - How long does it take to flush to disk
 
      - Longer it takes, longer the write pipeline backs up!
 
- *  **Under Replicated Partitions** 
+ *  **Under Replicated Partitions**
 
      - Replication is lagging behind
 
@@ -405,13 +386,13 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
 ## Best Practices: Monitor, Monitor, Monitor
 
- *  **End-to-End time** 
+ *  **End-to-End time**
 
      - How long does it take for a message to arrive from Producer to Consumer
 
      - Indicates overall speed / latency of kafka pipeline
 
-Notes: 
+Notes:
 
 https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
@@ -425,7 +406,7 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
  * Large offsets means consumers can't  keep up with data
 
- * Burrow - https://github.com/linkedin/Burrow 
+ * Burrow - https://github.com/linkedin/Burrow
 
      - Open sourced by LinkedIn
 
@@ -433,7 +414,7 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
      - Provides REST API for query
 
-Notes: 
+Notes:
 
 
 
@@ -449,7 +430,7 @@ Notes:
 
  * Use dedicated Zookeeper cluster for each Kafka cluster
 
-Notes: 
+Notes:
 
 https://medium.com/netflix-techblog/kafka-inside-keystone-pipeline-dd5aeabaf6bb
 
@@ -464,11 +445,11 @@ https://medium.com/netflix-techblog/kafka-inside-keystone-pipeline-dd5aeabaf6bb
 ## Kafka Case Studies
 
 
- * We will be discussing some published use cases 
+ * We will be discussing some published use cases
 
  * To instructor:The URLs are in 'Notes' section
 
-Notes: 
+Notes:
 
 
 
@@ -489,7 +470,7 @@ Notes:
 
      - Slide #10: stats
 
-Notes: 
+Notes:
 
 http://bigdatausecases.info/entry/kafka-used-at-scale-to-deliver-real-time-notifications
 
@@ -503,17 +484,17 @@ http://bigdatausecases.info/entry/kafka-used-at-scale-to-deliver-real-time-notif
 
  * Highlight / Discuss
 
-     - Slide #44: 
+     - Slide #44:
 
      - Slide #46: use cases
 
      - Slide #47: stats
 
-     - Slide #48: architecture 
+     - Slide #48: architecture
 
-     - Slide #50: architecture 
+     - Slide #50: architecture
 
-Notes: 
+Notes:
 
 http://bigdatausecases.info/entry/apache-kafka-use-cases-within-search-system-atwalmartlabs
 
@@ -537,7 +518,7 @@ http://bigdatausecases.info/entry/apache-kafka-use-cases-within-search-system-at
 
      - Slide #20: production tips
 
-Notes: 
+Notes:
 
 http://bigdatausecases.info/entry/from-three-nines-to-five-nines-a-kafka-journey
 
@@ -561,15 +542,15 @@ http://bigdatausecases.info/entry/from-three-nines-to-five-nines-a-kafka-journey
 
      - HDFS
 
- *  https://blog.griddynamics.com/in-stream-processing-service-blueprint 
+ *  https://blog.griddynamics.com/in-stream-processing-service-blueprint
 
  * Highlight
 
      - architecture
 
-Notes: 
+Notes:
 
-https://blog.griddynamics.com/in-stream-processing-service-blueprint 
+https://blog.griddynamics.com/in-stream-processing-service-blueprint
 
 
 
@@ -580,9 +561,10 @@ https://blog.griddynamics.com/in-stream-processing-service-blueprint
 
  * http://apps.griddynamics.com/realtime-twitter-sentiment-analysis-example
 
-<img src="../../assets/images/kafka/3rd-party/Reference-Impl-04.png" alt="Reference-Impl-04.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/3rd-party/Reference-Impl-04.png" alt="Reference-Impl-04.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.97, "height" : 4.58, "width" : 8.21} -->
 
-Notes: 
+
+Notes:
 
 Source: Grid Dynamics
 http://apps.griddynamics.com/realtime-twitter-sentiment-analysis-example
@@ -605,7 +587,7 @@ http://apps.griddynamics.com/realtime-twitter-sentiment-analysis-example
 
  * Class to suggest solution
 
-Notes: 
+Notes:
 
 
 
@@ -619,7 +601,7 @@ Notes:
 
  * (answer next slide)
 
-Notes: 
+Notes:
 
 
 
@@ -637,7 +619,7 @@ Notes:
 
      - Increase Java Heap size
 
-Notes: 
+Notes:
 
 
 
@@ -653,7 +635,7 @@ Notes:
 
  * (answer next slide)
 
-Notes: 
+Notes:
 
 
 
@@ -665,11 +647,11 @@ Notes:
 
  * Message size is too large
 
- * Double check  **messages.max.bytes**  (on broker) 
+ * Double check  **messages.max.bytes**  (on broker)
 
  * And match  **fetch.message.max.bytes**  (on consumer)
 
-Notes: 
+Notes:
 
 
 
@@ -683,7 +665,7 @@ Notes:
 
  * (answer next slide)
 
-Notes: 
+Notes:
 
 
 
@@ -703,7 +685,7 @@ Notes:
 
      - Decrease number of consumers
 
-Notes: 
+Notes:
 
 
 
@@ -713,11 +695,11 @@ Notes:
 ## Troubleshooting: Issue
 
 
- * Producer is getting QueueFullException 
+ * Producer is getting QueueFullException
 
  * (answer next slide)
 
-Notes: 
+Notes:
 
 
 
@@ -727,7 +709,7 @@ Notes:
 ## Troubleshooting Possible Solutions
 
 
- *  **Reason** 
+ *  **Reason**
 
  * Producer is sending events faster than Kafka brokers can handle
 
@@ -743,7 +725,7 @@ Notes:
 
      - Add more broker nodes to handle the load
 
-Notes: 
+Notes:
 
 
 
@@ -757,7 +739,7 @@ Notes:
 
  * (answer next slide)
 
-Notes: 
+Notes:
 
 
 
@@ -767,13 +749,13 @@ Notes:
 ## Troubleshooting Possible Solutions
 
 
- *  **Reason** 
+ *  **Reason**
 
  * Creating replicas is lagging behind
 
  * IO throughput between brokers is not keeping up with incoming data
 
- * This is  **serious issue** , as it will 
+ * This is  **serious issue** , as it will
 
      - backup write pipeline
 
@@ -791,7 +773,7 @@ Notes:
 
      - Is the NIC saturated?
 
-Notes: 
+Notes:
 
 
 
@@ -816,9 +798,9 @@ Notes:
 
  * Q2: Then, we want to continuously monitor the output log file as it is produced and send to Kafka
 
- *  **Answer next slide** 
+ *  **Answer next slide**
 
-Notes: 
+Notes:
 
 
 
@@ -832,17 +814,17 @@ Notes:
 
  * Option2: Write a (Java) program to read files
 
- * Extract events 
+ * Extract events
 
  * Push individual events into Kafka
 
  * Write in batch mode for increased throughput
 
- *  **Question for class:** 
+ *  **Question for class:**
 
      - What would we use for key?
 
-Notes: 
+Notes:
 
 
 
@@ -858,9 +840,9 @@ Notes:
 
  * Need to continuously monitor the log files and send logs to Kafka
 
- *  **Answer next slide** 
+ *  **Answer next slide**
 
-Notes: 
+Notes:
 
 
 
@@ -888,7 +870,7 @@ Notes:
 
      - Apache Commons has a [Tailor](https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons/io/input/Tailer.html) class
 
-Notes: 
+Notes:
 
 https://www.elastic.co/products/logsta
 https://logging.apache.org/log4j/2.0/manual/appenders.htmlsh
@@ -906,10 +888,11 @@ https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons
 
  * And assemble the files on the other end
 
-<img src="../../assets/images/kafka/Through-Kafka.png" alt="Through-Kafka.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Through-Kafka.png" alt="Through-Kafka.png" style="width:70%;"/><!-- {"left" : 0.75, "top" : 3.7, "height" : 2.25, "width" : 8.76} -->
 
 
-Notes: 
+
+Notes:
 
 
 
@@ -921,17 +904,17 @@ Notes:
 
    * Chop the file into smaller chunks and send them with SAME key (so all chunks of one file will be written to ONE partition,  and a consumer can re-construct the file on the other end)
 
-   * **Questions for class** 
+   * **Questions for class**
 
         -  What can we use for key?
 
         - How do we make sure the files aren't corrupted?
 
-   * **Instructor:** 
+   * **Instructor:**
 
         - Draw out the payload send order
 
-Notes: 
+Notes:
 
 
 
@@ -951,9 +934,9 @@ Notes:
 
  * How can we accomplish this?Remember, number of partitions can not be reduced!
 
- *  **Answer next slide** 
+ *  **Answer next slide**
 
-Notes: 
+Notes:
 
 
 
@@ -963,7 +946,7 @@ Notes:
 ## Solution: Reducing Number of Partitions
 
 
-Notes: 
+Notes:
 
 
 
@@ -985,9 +968,9 @@ Notes:
 
      - These awards are sent via email & mobile app push notifications
 
- *  **Answer next slide** 
+ *  **Answer next slide**
 
-Notes: 
+Notes:
 
 
 
@@ -999,7 +982,7 @@ Notes:
 
  * Kafka REST
 
-Notes: 
+Notes:
 
 
 
@@ -1010,7 +993,7 @@ Notes:
 ## Review Questions
 
 
-Notes: 
+Notes:
 
 
 
@@ -1020,5 +1003,4 @@ Notes:
 ## Lesson Summary
 
 
-Notes: 
-
+Notes:

@@ -24,7 +24,8 @@
 - Information flows through ONE-WAY (no feedback loop)
 - Composed of : Input, Output and Middle (Hidden) layers
 
-<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="XXX image missing" style="max-width:100%;width:35%;" />
+<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="XXX image missing" style="max-width:100%;width:35%;"/><!-- {"left" : 3.09, "top" : 4.13, "height" : 3.73, "width" : 4.06} -->
+
 
 ---
 
@@ -33,8 +34,8 @@
 - Layers between Input and Output are called **Hidden Layers**
 - If there is more than one hidden layers, it is called **Deep Neural Network**
 
-<img src="../../assets/images/deep-learning/hidden-layer.png" alt="XXX image missing" style="max-width:100%;width:35%;" /> &nbsp; &nbsp; &nbsp;
-<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="XXX image missing" style="max-width:100%;width:35%;" />
+<img src="../../assets/images/deep-learning/hidden-layer.png" alt="XXX image missing" style="max-width:100%;width:35%;"/> &nbsp; &nbsp; &nbsp; <!-- {"left" : 0.9, "top" : 3.4, "height" : 3.53, "width" : 3.66} --><img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="XXX image missing" style="max-width:100%;width:35%;"/><!-- {"left" : 5.28, "top" : 3.35, "height" : 3.62, "width" : 3.94} -->
+
 
 ---
 
@@ -48,8 +49,8 @@
 
 - But using hidden layers, we can solve it very easily
 
-<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="max-width:100%;width:35%;" /> &nbsp;  &nbsp;
-<img src="../../assets/images/deep-learning/3rd-party/XOR_perceptron_net.png" alt="XXX image missing" style="max-width:auto%;width:35%;" />
+<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="max-width:100%;width:35%;"/> &nbsp;  &nbsp; <!-- {"left" : 0.83, "top" : 4.35, "height" : 3.32, "width" : 4.74} --><img src="../../assets/images/deep-learning/3rd-party/XOR_perceptron_net.png" alt="XXX image missing" style="max-width:auto%;width:35%;"/><!-- {"left" : 6.07, "top" : 4.55, "height" : 3.32, "width" : 3.35} -->
+
 
 ---
 
@@ -95,15 +96,22 @@ Notes:
 - And then do the labs in the next section
 
 ---
+
 ## Lab: Tensorflow MNist Example
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.81, "top" : 1.11, "height" : 3.95, "width" : 2.96} -->
 
- *  **Overview** :   
+ *  **Overview:**   
  In this lab, we will explore MNIST 
 
- *  **Approximate time** : 15-20 minutes
+ *  **Approximate time:** 15-20 minutes
 
- *  **Lab Instructions** :
+ *  **Lab Instructions:**
 
      - follow  **lowlevel/3.2-NoHidden.ipynb** file
+
+
+
+
+
+

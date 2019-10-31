@@ -1,5 +1,6 @@
-Introduction to Neural Networks.
-======
+# Introduction to Neural Networks
+---
+
 ## Lesson Objectives
 
  * Learn about MultiLayer Perceptron
@@ -13,6 +14,7 @@ Notes:
 
 ---
 # Perceptrons
+---
 
 ## Activation Functions
 
@@ -41,10 +43,13 @@ Notes:
 ## Linear Activation Function
 
    * `Output * weight + constant`
+
    * Commonly used for **Regresssion**
+
    * Linear Regression:
      - Single Layer (Linear)
      - Linear Activation Function
+
    * Differentiable
      - So we *can* use gradient descent
 
@@ -56,12 +61,15 @@ Notes:
 ## Sigmoid
 
    * Comes from Logistic Regression
+
    * Solve for the "log-odds-ratio"
+
    * Logistic Regression:
      - Single Layer (Linear)
      - Sigmoid Activation Function
 
-![](../../assets/images/deep-learning/activation-sigmoid.png) <!-- {"left" : 1.72, "top" : 3.21, "height" : 3.86, "width" : 6.81} -->
+
+<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="activation-sigmoid.png" style="background:white;width:50%;float: right; margin-top:-250px;"/><!-- {"left" : 2.81, "top" : 3.28, "height" : 3.95, "width" : 4.63} -->
 
 
 
@@ -79,7 +87,8 @@ Notes:
 
  * Tanh is symmetric around zero.
 
-![](../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png) <!-- {"left" : 0.77, "top" : 3.3, "height" : 3.24, "width" : 8.71} -->
+
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="activation-sigmoid-vs-tanh.png" style="background:white;width:60%;"/><!-- {"left" : 0.77, "top" : 3.3, "height" : 3.24, "width" : 8.71} -->
 
 
 
@@ -115,14 +124,15 @@ Notes:
 
  * ReLU is Linear when greater than zero, and constant (zero) less than zero
 
-![](../../assets/images/deep-learning/activation-sigmoid-vs-relu.png) <!-- {"left" : 0.58, "top" : 3.26, "height" : 3.57, "width" : 9.09} -->
 
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="activation-sigmoid-vs-relu.png" style="background:white;width:70%;"/><!-- {"left" : 0.58, "top" : 3.26, "height" : 3.57, "width" : 9.09} -->
 
 Notes:
 
 
 
 ---
+
 ## Why ReLU?
 
 
@@ -147,6 +157,7 @@ Notes:
 
 
 ---
+
 ## The single-layer network
 
  * We can combine perceptron inputs to a feedforward neural network.
@@ -168,6 +179,7 @@ Notes:
 
 
 ---
+
 ## Multi-class (non-binary) Outputs
 
  * So far, our neural networks have had exactly one output neuron.
@@ -190,6 +202,7 @@ Notes:
 
 
 ---
+
 ## Softmax output
 
  * The Softmax function converts an array of values to an array of probabilities.
@@ -204,10 +217,11 @@ Notes:
 
 
 ---
+
 ## Softmax Function
 
-![](../../assets/images/deep-learning/Softmax-Function.png) <!-- {"left" : 0.38, "top" : 1.5, "height" : 4.5, "width" : 9.48} -->
 
+<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="Softmax-Function.png" style="background:white;width:80%;"/><!-- {"left" : 0.38, "top" : 1.5, "height" : 4.5, "width" : 9.48} -->
 
 
 Notes:
@@ -215,6 +229,7 @@ Notes:
 
 
 ---
+
 ## Logistic Regression Redux?
 
 
@@ -231,6 +246,7 @@ Notes:
 
 
 ---
+
 ## Lab: Logistic Regression
 
  * In this lab, we will be implementing a logistic regression classifier using Neural Networks in Tensorflow.
@@ -242,6 +258,7 @@ Notes:
 
 
 ---
+
 ## The XOR problem
 
  * What happens if we don't have linear separability?
@@ -254,26 +271,28 @@ Notes:
 
      - This is known as the XOR problem (though many other datasets are not linearly separable).
 
-![](../../assets/images/deep-learning/xor.png) <!-- {"left" : 2.63, "top" : 3.98, "height" : 3.49, "width" : 4.99} -->
+<img src="../../assets/images/deep-learning/xor.png" alt="xor.png" style="background:white;width:40%;"/><!-- {"left" : 2.63, "top" : 3.98, "height" : 3.49, "width" : 4.99} -->
+
+
 
 Notes:
 
 
 
 ---
+
 ## The solution: a Hidden Layer
 
  * Our problem is that our solution to a single layer neural network is linear.  
 
      - We call the solution the "decision boundary"
-
      - What if we could create a nonlinear decision boundary?
-
      - How would we do that?
 
  * What if we add a new layer to our network?
 
-![](../../assets/images/deep-learning/hidden-layer.png) <!-- {"left" : 3.29, "top" : 3.78, "height" : 3.52, "width" : 3.66} -->
+<img src="../../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="background:white;width:35%;"/><!-- {"left" : 3.29, "top" : 3.78, "height" : 3.52, "width" : 3.66} -->
+
 
 
 Notes:
@@ -281,6 +300,7 @@ Notes:
 
 
 ---
+
 ## Why Hidden Layers
 
  * Hidden Layers allow us to solve the "XOR" problem
@@ -308,21 +328,27 @@ Notes:
 
 
 ---
+
 ## Perceptron Spiral Mini Lab-5 Mins
 
  * Try this at http://playground.tensorflow.org
+
  * Select the Spiral dataset as shown.
+
  * Select some features
+
  * You will need hidden layers.  Experiment to see your results.
+
  * Press play to converge on a solution.
 
-![](../../assets/images/deep-learning/3rd-party/playground-sprial-1.png) <!-- {"left" : 3.18, "top" : 3.55, "height" : 3.72, "width" : 3.9} -->
 
+<img src="../../assets/images/deep-learning/3rd-party/playground-sprial-1.png" alt="playground-sprial-1.png" style="background:white;width:30%;"/><!-- {"left" : 3.18, "top" : 3.55, "height" : 3.72, "width" : 3.9} -->
 
 Notes:
 
 
 ---
+
 ## Lab Review
 
  * What's the minimum number of hidden layers required to correctly classify all the test data?
@@ -336,6 +362,7 @@ Notes:
 
 
 ---
+
 ## Training the Model
 
  * Rosenblatt's original algorithm for training was simple:
@@ -357,6 +384,7 @@ Notes:
 
 
 ---
+
 ## Calculating the Error
 
  * When we randomly initialize the weights, our first pass outputs of our network will almost certainly be wrong!
@@ -382,29 +410,36 @@ Notes:
 
 
 ---
+
 ## Gradient Descent
 
  * We want to optimize our model so error is  **minimized**
 
  * Gradient Descent is a common optimization algorithm.
 
+<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 2.23, "top" : 2.61, "height" : 3.94, "width" : 5.78} -->
+
+
+
+---
+
+## Gradient Descent
+
  * Imagine a snowboarder going down the slope of a mountain
 
      - The snowboarder descends because the slope is steep.
-
      - Descent slows as she approaches the bottom, because the slope is less.
-
      - At the bottom of the hill, the slope is zero, so the snowboarder stops. This is the minimum.
-
      -  There may, however, be parts of the run with a zero slope that are NOT the bottom (local minima).  
 
-![](../../assets/images/deep-learning/local_minima.png)  <!-- {"left" : 6.33, "top" : 4.79, "height" : 2.49, "width" : 3.44} -->
+<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 3.12, "top" : 4.41, "height" : 2.74, "width" : 4.02} -->
 
 
 Notes:
 
 
 ---
+
 ## Backpropagation
 
 
@@ -417,33 +452,23 @@ Notes:
 
 
 ---
+
 ## Feedforward Network Sizing
 
-
  * Input Layer:
-
      - Size: Equal to Number of Input Dimensions
-
         * Possibly add one extra neuron for bias term.
-
      - What if we have thousands of sparse dimensions?
-
         * Consider Wide and Deep Neural Network
 
  * Hidden Layer(s)
-
-     - Deep Learning =  Multiple Hidden Layer (more than 2)
-
+     - Deep Learning=  Multiple Hidden Layer (more than 2)
      - Size depends on training sample, input features, outputs
 
  * Output Layer:
-
      - Regression: 1 single neuron (continuous output)
-
      - Binomial Classification: 1 single neuron (binary output)
-
      - Multinomial Classification: Softmax Layer
-
         * Size: 1 node per class label
 
 Notes:
@@ -451,6 +476,7 @@ Notes:
 
 
 ---
+
 ## Lab: Iris Dataset
 
  * In this lab, we will be using the Iris dataset.
@@ -461,4 +487,3 @@ Notes:
 
 
 
----

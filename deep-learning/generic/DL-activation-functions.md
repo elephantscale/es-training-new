@@ -26,15 +26,15 @@
 - ReLU
 - Leaky ReLU
 
-<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
+<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 1.1, "top" : 4.91, "height" : 2.75, "width" : 8.05} -->
+
 
 Notes:
 
 ---
 ## Activation Function - Linear
 
-<img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
-
+<img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 5.05, "top" : 2.06, "height" : 3.85, "width" : 4.88} -->
 
 * `y = a.X + b`
 
@@ -53,7 +53,7 @@ Notes:
 ---
 ## Activation Function - Sigmoid
 
-<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" /> <!-- {"left" : 1.72, "top" : 3.21, "height" : 3.86, "width" : 6.81} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.58, "top" : 2.26, "height" : 3, "width" : 3.52} -->
 
 - `σ(z) = 1 / (1 + exp(-z))`
 
@@ -66,14 +66,15 @@ Notes:
     - Single Layer (Linear)
     - Sigmoid Activation Function
 
-- Note: Historically Sigmoid function has been very popular.  
+- Note : Historically Sigmoid function has been very popular.  
 Recently, ReLU functions work better and are more popular now.
 
 
-Notes:
+Notes:  
 
 
 ---
+
 ## Tanh Activation
 
 - `tanh (z) = 2σ(2z) - 1`
@@ -87,7 +88,7 @@ Notes:
 - Tanh is symmetric around zero and ranges from **`-1 to +1`**   
 (sigmoid ranges from **`0 to +1`**)
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" />  <!-- {"left" : 0.77, "top" : 3.3, "height" : 3.24, "width" : 8.71} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%" /><!-- {"left" : 0.77, "top" : 4.85, "height" : 3.24, "width" : 8.71} -->
 
 
 Notes:
@@ -114,13 +115,14 @@ Notes:
 
 ## Vanishing / Exploding Gradient Problems
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%" />
+<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="40%" /><!-- {"left" : 6.33, "top" : 1.94, "height" : 2.85, "width" : 3.72} -->
 
 - Sigmoid and Tanh both suffer from the **Vanis hing Gradient** problem.
      - The derivative of a Sigmoid is less than .25
      - As we propagate that through many layers, that gradient becomes much less.
 - And their slopes (derivatives) get closer to zero for large input values
     - this is called **saturating**
+
 - Another issue is sometimes the gradients become too big
     - **Exploding gradients**
 - One way is to fix the vanishing/exploding gradient problem is repeated scaling.
@@ -141,23 +143,23 @@ Notes:
 
 ##  Use a Different Activation Function Than Sigmoid
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%" />
-
-#### Problem:
+<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;width:30%;float:right"/><!-- {"left" : 6.64, "top" : 1.63, "height" : 2.67, "width" : 3.49} -->
+* **Problem:**
 - Sigmoid function was the most popular activation function used at that time   
     - Because sigmoid like functions are found in biological neurons.  (What is good for Mother Nature must be good for us too!)
 
 - How ever, Sigmoid functions tend to 'saturate' at high values (towards the edges), that meand derivatives get close to zero.
     - Leads to vanishing gradients problem
 
-#### Solution
+* **Solution:**
+
 - Use other activation functions like ReLU or variants (LeakyReLU)
 
 ---
 
 ## Activation Function - Rectified Linear Unit (ReLU)
 
-<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" /> <!-- {"left" : 0.58, "top" : 3.26, "height" : 3.57, "width" : 9.09} -->
+<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.28, "top" : 1.84, "height" : 3.16, "width" : 3.79} -->
 
 - `ReLU (z) = max (0, z)`
 - ReLU is Linear when greater than zero, and constant (zero) less than zero
@@ -170,25 +172,28 @@ Notes:
     - No Exploding Gradient problem
     - and **works well in real life scenarios**
 
-
 Notes:
 
 
 ---
 
-## Activation Function : Leaky ReLU
+## Activation Function: Leaky ReLU
 
-<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
+<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.5, "top" : 1.81, "height" : 2.81, "width" : 3.46} -->
 
 - ReLU isn't perfect; For values at or below zero or values, ReLU derivative is zero
     - Gradient Descent can not be used
     - Called **dying ReLU** problem
+
 - **Leaky ReLU** fixes this by introducing a slope for negative values
+
 - `LeakyReLUα(z) = max(αz, z)`  
 `here ⍺ = 0.001` (small value, configurable)
+
 - `α` controls how much the ReLU function 'leaks'
+
 - This leak ensures that the signals never die (zero) and have a chance to wake up during later training phases  
-(Going into coma vs. death :-)
+(Going into coma vs. death
 
 ---
 
@@ -210,15 +215,16 @@ Notes:
 
 - ELU outpermed all other ReLU variants, it trained quicker, and test accuracy was higher too.
 
-<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 5.38, "top" : 2.76, "height" : 1.52, "width" : 4.59} -->
 
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 3.18, "top" : 4.6, "height" : 2.83, "width" : 3.9} -->
+
 
 ---
 
 ## ELU Highlights
 
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%" />
+<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 5.27, "top" : 2.15, "height" : 3.34, "width" : 4.61} -->
 
 - Not zero for negative values (z < 0)
     - prevents signals dying out
@@ -277,6 +283,7 @@ Notes:
 |--------------|-----|------|-----|------|------|-----|-----|-----|-----|-----|
 | probability  | 0.0 | 0.15 | 0.0 | 0.00 | 0.05 | 0.0 | 0.0 | 0.8 | 0.0 | 0.0 |
 
+<!-- {"left" : 0.26, "top" : 2.64, "height" : 1, "width" : 9.73, "columnwidth" : [1.62, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81]} -->
 
 - The resultant array must add up to 1, because the output enumerates all probabilities
 
@@ -288,7 +295,7 @@ Notes:
 ---
 ## Softmax Function
 
-<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.38, "top" : 1.5, "height" : 4.5, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.9, "top" : 2.37, "height" : 4.32, "width" : 8.45} -->
 
 
 
@@ -303,6 +310,8 @@ Notes:
 | 1 or 2 class              | binary      | binary_crossentropy      | sigmoid                      |
 | Multi-class, single label | categorical | categorical_crossentropy | softmax                      |
 | Multi-class, multi-label  | categorical | binary_crossentropy      | sigmoid                      |
+
+<!-- {"left" : 0.25, "top" : 1.54, "height" : 2.57, "width" : 9.75} -->
 
 Notes:   
 Source :
@@ -325,6 +334,5 @@ Source :
 ---
 ## Activation Functions Review
 
-<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" />
+<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.44, "top" : 2.93, "height" : 3.2, "width" : 9.38} -->
 
----
