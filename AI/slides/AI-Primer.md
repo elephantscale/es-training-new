@@ -3,7 +3,7 @@
 
 ## Lesson Objectives 2
 
-<img src="../../assets/images/generic/3rd-party/terminator-2.png" alt="" style="width:50%;float:right;"/>
+<img src="../../assets/images/generic/3rd-party/terminator-2.png" alt="" style="width:50%;float:right;"/><!-- {"left" : 5.51, "top" : 1.25, "height" : 3.32, "width" : 4.43} -->
 
  * See the potential of AI
 
@@ -29,7 +29,6 @@ Notes:
 
 ## About You and Me
 
-
  * About you
 
      - Your name
@@ -42,9 +41,8 @@ Notes:
 
      -  **Something non-technical about you!**  **(favorite ice cream flavor, hobby, etc.)**
 
-<img src="../../assets/images/generic/3rd-party/ice-cream-1.jpg" alt="icecream.jpg" style="width:25%;"/>   &nbsp;
-<img src="../../assets/images/generic/3rd-party/hiking-2.jpg"  style="width:30%;"/>
 
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 0.81, "top" : 5.96, "height" : 2.12, "width" : 2.4} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.24, "top" : 5.99, "height" : 2.05, "width" : 3.78} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 7.04, "top" : 5.96, "height" : 2.12, "width" : 2.4} -->
 
 Notes:
 
@@ -71,9 +69,10 @@ Notes:
 
 ## Demo - Gmail AI Helper
 
-<img src="../../assets/images/deep-learning/3rd-party/Demo-1.png" alt="Demo-1.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Demo-1.png" alt="Demo-1.png" style="width:50%;"/><!-- {"left" : 0.35, "top" : 1.87, "height" : 2.68, "width" : 9.55} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/Demo-2.png" alt="Demo-2.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Demo-2.png" alt="Demo-2.png" style="width:50%;"/><!-- {"left" : 1.3, "top" : 4.49, "height" : 3.29, "width" : 7.67} -->
+
 
 
 Notes:
@@ -90,7 +89,9 @@ Notes:
  * Also Google Voice has gotten a lot better in recent years
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Google-Assistant.png" alt="Google-Assistant.png" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Google-Assistant.png" alt="Google-Assistant.png" style="width:40%;"/><!-- {"left" : 2.06, "top" : 2.94, "height" : 4.63, "width" : 6.14} -->
+
+
 
 [Link](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html)
 
@@ -108,7 +109,8 @@ https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html
 
 ## AI is a Huge Disruptor / Enabler
 
-<img src="../../assets/images/deep-learning/AI-Huge-Disruptor.png" alt="AI-Huge-Disruptor.png" style="width:76%;"/>
+<img src="../../assets/images/deep-learning/AI-Huge-Disruptor.png" alt="AI-Huge-Disruptor.png" style="width:76%;"/><!-- {"left" : 0.8, "top" : 2.48, "height" : 4.1, "width" : 8.66} -->
+
 
 
 Notes:
@@ -119,7 +121,8 @@ Notes:
 ## AI Growing at a Phenomenal Rate
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Phenomenal-Rate.png" alt="Phenomenal-Rate.png" style="width:76%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Phenomenal-Rate.png" alt="Phenomenal-Rate.png" style="width:76%;"/><!-- {"left" : 0.54, "top" : 2.09, "height" : 4.9, "width" : 9.17} -->
+
 
 Notes:
 
@@ -130,7 +133,9 @@ https://mapr.com/blog/ai-ml-2018-and-beyond/
 
 ## Question for Class: Are We in a AI Hype Cycle?
 
-<img src="../../assets/images/deep-learning/Gartner-Hype-Cycle.png" alt="Gartner-Hype-Cycle.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/Gartner-Hype-Cycle.png" alt="Gartner-Hype-Cycle.png" style="width:50%;"/><!-- {"left" : 1.18, "top" : 1.93, "height" : 5.78, "width" : 7.89} -->
+
+
 
 Notes:
 
@@ -139,7 +144,8 @@ Notes:
 
 ## Case for AI
 
-<img src="../../assets/images/deep-learning/3rd-party/Case-for-AI.png" alt="Case-for-AI.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Case-for-AI.png" alt="Case-for-AI.png" style="width:50%;"/><!-- {"left" : 1.38, "top" : 2.01, "height" : 5.63, "width" : 7.5} -->
+
 
 Notes:
 
@@ -148,10 +154,10 @@ Image credit: coursera
 ---
 ## How Important is AI ?
 
-> "AI will create US$13 Trillion value by year 2030"  
->   -- McKinsey Global Institute
+* **"AI will create US$13 Trillion value by year 2030"  -- McKinsey Global Institute**
 
-<img src="../../assets/images/AI/3rd-party/mckinsey-AI-impact-1.png" alt="XXX image missing" style="background:white;max-width:100%;max-height:100%;" width="40%"  />
+<img src="../../assets/images/AI/3rd-party/mckinsey-AI-impact-1.png" alt="XXX image missing" style="background:white;width:40%;" /><!-- {"left" : 2.33, "top" : 2.96, "height" : 5.32, "width" : 5.59} -->
+
 
 Notes:  
 - [Link](https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning)
@@ -160,8 +166,8 @@ Notes:
 
 ## How Important is AI
 
+<img src="../../assets/images/AI/3rd-party/mckinsey-AI-impact-2.png" alt="XXX image missing" style="width:50%;"/><!-- {"left" : 1.89, "top" : 1.7, "height" : 6.25, "width" : 6.48} -->
 
-<img src="../../assets/images/AI/3rd-party/mckinsey-AI-impact-2.png" alt="XXX image missing" style="background:white;max-width:100%;max-height:100%;" width="50%"  />
 
 Notes:  
 - [Link](https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning)
@@ -169,11 +175,9 @@ Notes:
 
 ---
 
-## How Important is AI ?
+## How Important is AI?
 
-
-> "8 out of 10 companies are already implementing, or planning to adopt AI by 2020"  
->    -- Oracle
+ * **"8 out of 10 companies are already implementing, or planning to adopt AI by 2020"  -- Oracle**
 
  * AI is no longer 'novel'
 
@@ -206,6 +210,8 @@ Notes:
 | Algorithmic trading | Patient care              | Customer retentions | Fully automated assemblies | Facial recognition       |
 | Credit Approvals    | Treatment recommendations |                     |                            |                          &nbsp;|
 
+<!-- {"left" : 0.25, "top" : 1.43, "height" : 3.05, "width" : 9.75} -->
+
 
 Notes:
 
@@ -215,9 +221,11 @@ Notes:
 
 
 ## Use Case - Uber Eats
-<img src="../../assets/images/logos/uber-eats-03.png" alt="uber-eats-03.png" style="width:10%;float:right;"/>
+<img src="../../assets/images/logos/uber-eats-03.png" alt="uber-eats-03.png" style="width:10%;float:right;"/><!-- {"left" : 8.75, "top" : 0.98, "height" : 1.28, "width" : 1.28} -->
 
-<img src="../../assets/images/deep-learning/Use-Case-Uber-Eats-01.png" alt="Use-Case-Uber-Eats-01.png" style="width:60%;"/>
+
+<img src="../../assets/images/deep-learning/Use-Case-Uber-Eats-01.png" alt="Use-Case-Uber-Eats-01.png" style="width:60%;"/><!-- {"left" : 1.91, "top" : 1.75, "height" : 4.47, "width" : 6.44} -->
+
 
 <!-- <img src="../../assets/images/deep-learning/3rd-party/uber-eats-2.png" alt="uber-eats-2.png" style="width:10%;"/> -->
 
@@ -238,7 +246,8 @@ https://www.youtube.com/watch?v=AiinFkL-pmw&feature=youtu.be
 
  * UberEats is built with AI from ground up
 
-<img src="../../assets/images/deep-learning/3rd-party/AI-ubereats.png" alt="AI&ubereats.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/AI-ubereats.png" alt="AI&ubereats.png" style="width:60%;"/><!-- {"left" : 1.4, "top" : 3.6, "height" : 4.14, "width" : 7.44} -->
+
 
 
 Notes:
@@ -263,19 +272,19 @@ Here are the actions in Uber Eats
 
 ---
 
-## Uber AI : Step 1 : Recommending Restaurants
+## Uber AI: Step 1: Recommending Restaurants
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.28, "top" : 1.21, "height" : 3.27, "width" : 4.92} -->
 
 
-**Question for class**     
-What factors Uber might consider when recommending a restaurant?
+ * **Question for class**     
+    - What factors Uber might consider when recommending a restaurant?
 
 (Answer next slide)
 
 ---
 
-## Uber AI : Step 1 : Recommending Restaurants
+## Uber AI: Step 1: Recommending Restaurants
 
 - Recommend restaurants based on past orders
 
@@ -283,27 +292,28 @@ What factors Uber might consider when recommending a restaurant?
 
 - Balance new restaurants vs. established restaurants
 
-<img src="../../assets/images/deep-learning/3rd-party/Buildin-a-afair-marketplace.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;"/>
-<img src="../../assets/images/deep-learning/Efficient-frontier.png" alt="Efficient-frontier.png" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Buildin-a-afair-marketplace.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;"/><!-- {"left" : 0.47, "top" : 4.4, "height" : 2.31, "width" : 3.72} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Efficient-frontier.png" alt="Efficient-frontier.png" style="width:30%;"/><!-- {"left" : 5.3, "top" : 3.73, "height" : 3.64, "width" : 4.2} -->
+
 <!-- <img src="../../assets/images/deep-learning/Recommender-System.png" alt="Recommender-System.png" style="width:30%;"/> -->
 
 
 ---
-## Uber Eats AI : Step 2 : Recommend Menu Items
+## Uber Eats AI: Step 2: Recommend Menu Items
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.53, "top" : 1.37, "height" : 3.06, "width" : 4.59} -->
 
 
-**Question for class** :   
-What factors Uber might consider when recommending a items from a restaurant?
+ * **Question for class:**   
+    - What factors Uber might consider when recommending a items from a restaurant?
 
 (Answer next slide)
 
 ---
 
-## Uber Eats AI : Step 2 : Recommend Menu Items
+## Uber Eats AI: Step 2: Recommend Menu Items
 
-<img src="../../assets/images/generic/3rd-party/anthony-bordain-1.jpg" alt="Buildin-a-afair-marketplace.png" style="width:15%;float:right;"/>
+<img src="../../assets/images/generic/3rd-party/anthony-bordain-1.jpg" alt="Buildin-a-afair-marketplace.png" style="width:15%;float:right;"/><!-- {"left" : 7.21, "top" : 1.27, "height" : 3.69, "width" : 2.65} -->
+
 
 - Based on past orders
 
@@ -311,10 +321,7 @@ What factors Uber might consider when recommending a items from a restaurant?
 
 - 'Specials'
 
-<br clear="all"/>
-
-> "Don't order fish at restaurants on Mondays"  
->   -- Anthony Bourdain, Chef and Author "Kitchen Confidentials"
+ * **"Don't order fish at restaurants on Mondays"  -- Anthony Bourdain, Chef and Author "Kitchen Confidentials"**
 
 
 
@@ -327,7 +334,8 @@ Notes:
 
 ## UberEats - AI Architecture / Workflow
 
-<img src="../../assets/images/deep-learning/UberEats-AI-Architecture-Workflow-01.png" alt="UberEats-AI-Architecture-Workflow-01" style="width:76%;"/>
+<img src="../../assets/images/deep-learning/UberEats-AI-Architecture-Workflow-01.png" alt="UberEats-AI-Architecture-Workflow-01" style="width:76%;"/><!-- {"left" : 0.75, "top" : 3.24, "height" : 2.58, "width" : 8.74} -->
+
 
 
 
@@ -346,15 +354,14 @@ Source : https://www.youtube.com/watch?v=AiinFkL-pmw&feature=youtu.be
 
 - [Link](https://venturebeat.com/wp-content/uploads/2016/09/uberids.gif?resize=343%2C600&strip=all)
 
-<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="25%" />
-<img src="../../assets/images/deep-learning/3rd-party/uber-rides-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />
-<img src="../../assets/images/deep-learning/3rd-party/uber-rides-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" />
+<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="25%" /><!-- {"left" : 1.35, "top" : 4.82, "height" : 1.77, "width" : 2.44} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/uber-rides-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" /> <!-- {"left" : 4.3, "top" : 4.97, "height" : 1.48, "width" : 2.63} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/uber-rides-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" /><!-- {"left" : 7.44, "top" : 4.43, "height" : 2.56, "width" : 1.46} -->
+
 
 
 
 ---
 
-## Use Case : Photobucket
+## Use Case: Photobucket
 
 - [Photobucket](http://photobucket.com/) is a image / video hosting service
 
@@ -367,8 +374,9 @@ Illegal images (child pornography ..etc) are flagged for law enforcement
 
 - [Link](https://blog.clarifai.com/how-photobucket-uses-image-recognition-to-protect-its-community-from-unwanted-content)
 
-<img src="../../assets/images/logos/photobucket-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" />
-<img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../../assets/images/logos/photobucket-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /><!-- {"left" : 0.64, "top" : 5.94, "height" : 0.87, "width" : 4.6} --> &nbsp;&nbsp; <img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 6.16, "top" : 6.01, "height" : 0.73, "width" : 3.45} -->
+
+
 
 
 Notes:  
@@ -376,7 +384,7 @@ Notes:
 
 ---
 
-## Use Case : Staples
+## Use Cas: Staples
 
 - [Staples](https://www.staples.com) relies on organic search traffic to drive sales
 
@@ -388,8 +396,9 @@ Notes:
 
 - [Link](https://clarifai.com/customers/staples)
 
-<img src="../../assets/images/logos/staples-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
-<img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />
+<img src="../../assets/images/logos/staples-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 1.12, "top" : 5.4, "height" : 0.7, "width" : 3.54} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 5.6, "top" : 5.37, "height" : 0.75, "width" : 3.54} -->
+
+
 
 Notes:  
 - https://clarifai.com/customers/staples
@@ -399,7 +408,9 @@ Notes:
 
 ## Use Case - AirBnB - Customer Service
 
-<img src="../../assets/images/deep-learning/3rd-party/airbnb.png" alt="airbnb.png" style="width:40%;"/><img src="../../assets/images/deep-learning/3rd-party/AirBnB-01.png" alt="AirBnB-01.png" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/airbnb.png" alt="airbnb.png" style="width:40%;"/><!-- {"left" : 0.54, "top" : 2.82, "height" : 3.42, "width" : 4.08} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/AirBnB-01.png" alt="AirBnB-01.png" style="width:40%;"/><!-- {"left" : 5.3, "top" : 2.82, "height" : 3.42, "width" : 4.41} -->
+
+
 
 
 Notes:
@@ -433,7 +444,7 @@ http://bigdatausecases.info/entry/airbnb-driving-a-higher-level-of-customer-supp
 
 ## Use Case in Finance: Capitol One - Credit Card Fraud Prevention
 
-<img src="../../assets/images/deep-learning/3rd-party/capitalone-logo.png" alt="capitalone-logo.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/capitalone-logo.png" alt="capitalone-logo.png" style="width:20%;float:right;"/><!-- {"left" : 6.35, "top" : 1.45, "height" : 1.23, "width" : 3.5} -->
 
  * Capitol ONE:
      - 365 Billion in assets,
@@ -459,7 +470,7 @@ Notes:
 
 ## AI in Customer Service @ Bank of America
 
-<img src="../../assets/images/logos/bank-of-america.png" alt="bank-of-america.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/logos/bank-of-america.png" alt="bank-of-america.png" style="width:30%;float:right;"/><!-- {"left" : 6.26, "top" : 1.33, "height" : 1.43, "width" : 3.67} -->
 
  * Bank of America virtual assistant
 
@@ -468,7 +479,8 @@ Notes:
 
  * Bill pay ("Pay $50 to PTA")
 
-<img src="../../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;"/><!-- {"left" : 6.08, "top" : 4.59, "height" : 3.13, "width" : 4.04} -->
+
 
 Notes:
 
@@ -479,7 +491,8 @@ Notes:
 ---
 
 ## AI Chatbots @ Lyft (A personal story)
-<img src="../../assets/images/logos/lyft-logo-1.png" alt="lyft.png" style="width:20%;float:right;"/>
+
+<img src="../../assets/images/logos/lyft-logo-1.png" alt="lyft.png" style="width:20%;float:right;"/><!-- {"left" : 8.33, "top" : 1.09, "height" : 1.66, "width" : 1.71} -->
 
  * Scenario: I ordered a Lyft car, but the driver went to a wrong location. So I cancelled the ride, but charged a $5 cancellation fee.
 
@@ -491,11 +504,11 @@ Me:
     So I had to cancel.  
     But I was charged a cancellation fee.
     Can that be refunded"`
-
 Customer Service:
     I see, this is your first cancellation in past 2 months.  
     We will refund you the money.Have a nice day!"`
 ```
+<!-- {"left" : 0, "top" : 3.62, "height" : 0.99, "width" : 5.6} -->
 
 - Hightlighs
      - Resolution time:  **about 20 seconds!**
@@ -510,7 +523,7 @@ Notes:
 
 ## AI in Healthcare
 
-<img src="../../assets/images/deep-learning/3rd-party/AI-in-Healthcare.png" alt="AI-in-Healthcare.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/AI-in-Healthcare.png" alt="AI-in-Healthcare.png" style="width:50%;float:right;"/><!-- {"left" : 5.86, "top" : 1.17, "height" : 2.77, "width" : 4.15} -->
 
 * DeepMind's AI can detect over 50 eye diseases as accurately as a doctor
 
@@ -543,7 +556,8 @@ Notes:
 - Examine the output.  
 Have fun :-)
 
-<img src="../../assets/images/deep-learning/3rd-party/clarifai-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" />
+<img src="../../assets/images/deep-learning/3rd-party/clarifai-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" /><!-- {"left" : 1.77, "top" : 3.45, "height" : 4.29, "width" : 6.71} -->
+
 
 Notes:  
 https://clarifai.com/demo
@@ -557,11 +571,9 @@ https://clarifai.com/demo
 
 ## Definition of Machine Learning
 
-<img src="../../assets/images/machine-learning/3rd-party/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:15%;float:right;"/>
+<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:15%;float:right;"/><!-- {"left" : 7.53, "top" : 1.21, "height" : 3.48, "width" : 2.46} -->
 
-> "The field of study that gives computers the ability to learn without being explicitly programmed."  
->   -- Arthur Samuel (1959)
-
+* **"The field of study that gives computers the ability to learn without being explicitly programmed."  -- Arthur Samuel (1959)**
 
 * Example: Self-driving cars
     - Historical approach:  
@@ -598,6 +610,7 @@ else if ( email.text.contains ("free loans", "cheap degrees"))
 }
 
 ```
+<!-- {"left" : 0, "top" : 2.77, "height" : 1.96, "width" : 10.25} -->
 
 Notes:
 
@@ -615,7 +628,8 @@ Notes:
 
  * Then algorithm predicts spam/no-spam on new email
 
-<img src="../../assets/images/deep-learning/AI-Approach.png" alt="AI-Approach.png" style="width:55%;"/>
+<img src="../../assets/images/deep-learning/AI-Approach.png" alt="AI-Approach.png" style="width:55%;"/><!-- {"left" : 1.12, "top" : 3.62, "height" : 4, "width" : 8} -->
+
 
 Notes:
 
@@ -635,7 +649,9 @@ Notes:
 
      - It gets better every day with more data it sees
 
-<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-1.png" alt="Rule-Based-Systems.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-1.png" alt="Rule-Based-Systems.png" style="width:60%;"/><!-- {"left" : 0.73, "top" : 4.88, "height" : 2.59, "width" : 8.79} -->
+
+
 
 
 
@@ -653,20 +669,19 @@ Notes:
 ---
 
 
-# End of Part 1 : State of AI
+# End of Part 1: State of AI
 
 ---
 
-# Part 2 : AI Technologies
+# Part 2: AI Technologies
 
 ---
 
 ## Demo: Machine Learning Basics
 
 
+<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.55, "height" : 4.27, "width" : 8.21} -->
 
-
-<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/>
 
 [Link](https://www.youtube.com/watch?v=HcqpanDadyQ)
 
@@ -710,6 +725,14 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
 
+<!-- {"left" : 0.25, "top" : 2.31, "height" : 3.19, "width" : 9.75, "columnwidth" : [1.61, 1.81, 1.33, 5]} -->
+
+
+---
+
+## Learning From Data
+
+
 - An machine learning algorithm learns from the above data, and then tries to predict house prices on new data
 
 
@@ -718,14 +741,17 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 | 3                  | 2                   | 1900           | ???                                 |
 | 4                  | 3                   | 2300           | ???                                 |
 
+<!-- {"left" : 0.25, "top" : 3.16, "height" : 1.69, "width" : 9.75, "columnwidth" : [1.61, 1.86, 1.92, 4.36]} -->
+
 ---
+
 ## Learning Process
 
- *  **Phase 1 : Training**
+ *  **Phase 1: Training**
      - Algorithm learns from the data to create a model
      - This step can get computationally expensive.  
      Hours / days / weeks (this is why we use GPU / TPUs  and clusters of computers)
- *  **Phase 2 : Prediction / Inference**
+ *  **Phase 2: Prediction / Inference**
      - Once a model is created it can answer questions
         - "what would be the sale price for this house"
         - "is this transaction fraud / not-fraud"
@@ -733,7 +759,8 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 
 
 
-<img src="../../assets/images/deep-learning/AI-Vocabulary.png" alt="AI-Vocabulary.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/AI-Vocabulary.png" alt="AI-Vocabulary.png" style="width:60%;"/><!-- {"left" : 1.21, "top" : 5.86, "height" : 2.6, "width" : 7.84} -->
+
 
 Notes:
 
@@ -746,7 +773,11 @@ Notes:
 | Data has well defined structure.                         | Structure is not well defined or non existing |
 | Data in a database tables are well defined.  10 columns, first column is integer, second column is timestamp ..etc | videos, images                                             |
 
-<img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="Structured-Data-Unstructured-Data.png" style="width:40%;"/>
+<!-- {"left" : 0.21, "top" : 1.26, "height" : 2.65, "width" : 9.82, "columnwidth" : [6.33, 3.49]} -->
+
+<img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="XXX image not found" style="max-width:60%;"/><!-- {"left" : 1.46, "top" : 4.26, "height" : 3.91, "width" : 7.33} -->
+
+
 ---
 
 ## Structured Data Examples
@@ -761,7 +792,15 @@ Notes:
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
 
-- Text data (CSV, JSON) can have structure too
+<!-- {"left" : 2.1, "top" : 2.31, "height" : 2.68, "width" : 6.04, "columnwidth" : [1.36, 1.44, 1.22, 2.02]} -->
+
+
+
+---
+
+## Structured Data Examples
+
+ * Text data (CSV, JSON) can have structure too
 
 JSON data
 
@@ -769,12 +808,16 @@ JSON data
 {   "name" : "Joe",
     "email" : "joe@gmail.com" }
 ```
+<!-- {"left" : 0, "top" : 2.07, "height" : 0.46, "width" : 3.35} -->
 
 CSV data (Comma Seperated Values)
+
 ```
 joe,joe@gmail.com
 jane,jane@gmail.com
 ```
+<!-- {"left" : 0, "top" : 3.11, "height" : 0.67, "width" : 3.27} -->
+
 
 ---
 
@@ -791,22 +834,18 @@ jane,jane@gmail.com
     - Images
     - Video (YouTube videos)
 
-<img src="../../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
-<img src="../../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
-<img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
-<img src="../../assets/images/generic/3rd-party/video-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
-<img src="../../assets/images/generic/3rd-party/audio-headphones-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%" />
+<img src="../../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 0.99, "top" : 5.93, "height" : 1.58, "width" : 1.26} --><img src="../../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 2.7, "top" : 6.09, "height" : 1.26, "width" : 1.26} --><img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 4.41, "top" : 5.7, "height" : 1.96, "width" : 1.26} --><img src="../../assets/images/generic/3rd-party/video-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 6.08, "top" : 6.05, "height" : 1.35, "width" : 1.26} --><img src="../../assets/images/generic/3rd-party/audio-headphones-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/><!-- {"left" : 7.75, "top" : 6.09, "height" : 1.26, "width" : 1.52} -->
 
 
 ---
 
 ## Semi-Structured Data
 
-- This is 'between' structured and and unstructured
+ * This is 'between' structured and and unstructured
 
-- Data has some structure, but it may not be well defined
+ * Data has some structure, but it may not be well defined
 
-- Example, tweet data
+ * Example, tweet data
 
 ```json
 {   "user_id" : "user123",
@@ -817,14 +856,16 @@ jane,jane@gmail.com
     "image_url" : "https://imgurl.com/1234"
 }
 ```
-
+<!-- {"left" : 0, "top" : 3, "height" : 1.41, "width" : 10.25} -->
 **Question to the class: What data points you can extract from above tweet?      Which is structured / unstructured?**
+
 
 ---
 
 ## Data
 
-<img src="../../assets/images/generic/3rd-party/domo_data-never-sleeps-5-01.png" alt="Data-growth-01.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/generic/3rd-party/domo_data-never-sleeps-5-01.png" alt="Data-growth-01.png" style="width:30%;float:right;"/><!-- {"left" : 6.37, "top" : 1.34, "height" : 5.98, "width" : 3.5} -->
+
 
 - Humanity is producing data at a rapid clip
     - 90% of data is generated in last 2 years!
@@ -842,7 +883,8 @@ Notes:
 
 - As you can see, unstructured data is growing rapidly
 
-<img src="../../assets/images/deep-learning/3rd-party/Data-growth-01.png" alt="Data-growth-01.png" style="width:76%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Data-growth-01.png" alt="Data-growth-01.png" style="width:76%;"/><!-- {"left" : 0.71, "top" : 2.56, "height" : 4.53, "width" : 8.83} -->
+
 
 
 
@@ -861,6 +903,8 @@ Source : https://www.dubber.net/unlocking-unstructured-data-voice-processing-pow
 | Structured Data | Unstructured Data |
 |-----------------|-------------------|
 | ???             | ???               |
+
+<!-- {"left" : 0.25, "top" : 2.62, "height" : 1, "width" : 9.75} -->
 
 ---
 
@@ -884,7 +928,7 @@ Source : https://www.dubber.net/unlocking-unstructured-data-voice-processing-pow
 
  * Deep Learning Algorithms scale better with data
 
-<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="machine_learning_vs_deep_learning.png" style="width:60%;"/>
+<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" style="width:60%;"/><!-- {"left" : 1.18, "top" : 2.24, "height" : 5.98, "width" : 7.88} -->
 
 Notes:
 
@@ -893,7 +937,7 @@ Notes:
 
 ## 1980's and 1990's
 
-<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-01.png" alt="1980-1990-01.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-01.png" style="width:80%;"/><!-- {"left" : 0.71, "top" : 2.28, "height" : 5.08, "width" : 8.83} -->
 
 
 Notes:
@@ -905,7 +949,7 @@ Source: Jeff Dean
 
 ## 1990+
 
-<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-02.png" alt="1980-1990-02.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-02.png" style="width:80%;"/><!-- {"left" : 0.65, "top" : 1.96, "height" : 5.15, "width" : 8.95} -->
 
 
 Notes:
@@ -917,7 +961,7 @@ Source: Jeff Dean
 
 ## Now
 
-<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-03.png" alt="1980-1990-03.png" style="width:76%;"/>
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-03.png" style="width:80%;"/><!-- {"left" : 0.31, "top" : 1.76, "height" : 5.55, "width" : 9.64} -->
 
 
 Notes:
@@ -963,7 +1007,8 @@ AI starts with data, in this section we are going to look at some best practices
     - Involve AI team early on, so they can give feedback on data
 
 
-<img src="../../assets/images/AI/data-team-and-AI-team.png" alt="XXX image missing" style="max-width:100%;width:50%;" />
+<img src="../../assets/images/AI/data-team-and-AI-team.png" alt="XXX image missing" style="max-width:100%;width:50%;" /><!-- {"left" : 1.33, "top" : 4.46, "height" : 3.56, "width" : 7.6} -->
+
 
 
 ---
@@ -975,8 +1020,8 @@ AI starts with data, in this section we are going to look at some best practices
 
 - However, more data can significantly produce better results
 
-> "More data usually beats better algorithms"   
->     [Anand Rajaraman](https://anand.typepad.com/datawocky/2008/03/more-data-usual.html)  (Walmart Labs)
+* **"More data usually beats better algorithms"   
+[Anand Rajaraman](https://anand.typepad.com/datawocky/2008/03/more-data-usual.html)  (Walmart Labs)**
 
 ---
 
@@ -993,11 +1038,13 @@ AI starts with data, in this section we are going to look at some best practices
 | Exa Byte  | EB      | 1000 PB    |                                                                                                                                                                                                                                    |
 | Zeta Byte | ZB      | 1000 EB    | &nbsp;                                                                                                                                                                                                                                   |
 
+<!-- {"left" : 0.26, "top" : 1.3, "height" : 6.42, "width" : 9.75, "columnwidth" : [1.5, 1.34, 1.57, 5.34]} -->
+
 ---
 
 ## Big Data
 
-<img src="../../assets/images/bigdata/bigdata-pyramid2.png" alt="XXX image missing" style="background:white;max-width:100%;width:50%;float:right;"/>
+<img src="../../assets/images/bigdata/bigdata-pyramid2.png" alt="XXX image missing" style="background:white;max-width:100%;width:50%;float:right;"/><!-- {"left" : 5.88, "top" : 2.03, "height" : 3.65, "width" : 4.1} -->
 
 - Traditionally structured data has been stored in databases
 
@@ -1015,8 +1062,8 @@ AI starts with data, in this section we are going to look at some best practices
 - Storing big data requires large 'cluster' systems
 
 - Choices
-    - On premise :  Hadoop
-    - Cloud storage : Amazon S3, Google Cloud Storage, Azure storage
+    - On premise:  Hadoop
+    - Cloud storage: Amazon S3, Google Cloud Storage, Azure storage
 
 ---
 
@@ -1030,13 +1077,15 @@ AI starts with data, in this section we are going to look at some best practices
 
 - Can scale upto 1000s of nodes
 
-<img src="../../assets/images/hadoop/hadoop-highlevel.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/>
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/><!-- {"left" : 1.02, "top" : 4.53, "height" : 3.74, "width" : 8.21} -->
+
 
 ---
 
 ## Hadoop Storage Cost
 
-<img src="../../assets/images/hadoop/3rd-party/hadoop-cost2.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/>
+<img src="../../assets/images/hadoop/Cost-Comparison.png" alt="XXX image missing" style="background:white;width:65%;"/><!-- {"left" : 0.65, "top" : 2.02, "height" : 5.6, "width" : 8.96} -->
+
 
 ---
 
@@ -1050,6 +1099,8 @@ For accurate pricing, see the provided links
 | Cost per TB / month | $23                                             |   $26                                                   | $20                                                               |
 |                     | [More info](https://aws.amazon.com/s3/pricing/) | [More Info](https://cloud.google.com/storage/pricing) | [More info](https://azure.microsoft.com/en-us/pricing/calculator) |
 
+<!-- {"left" : 0.25, "top" : 3.14, "height" : 1.69, "width" : 9.75, "columnwidth" : [2.44, 2.44, 2.44, 2.44]} -->
+
 ---
 
 
@@ -1059,9 +1110,10 @@ For accurate pricing, see the provided links
 
 ## What Problems Can AI Solve?
 
-<img src="../../assets/images/generic/3rd-party/phone-screen-cracked-damage.jpg" alt="Data-Science.png" style="width:25%;float:right;"/>
+<img src="../../assets/images/generic/3rd-party/phone-screen-cracked-damage.jpg" alt="Data-Science.png" style="width:25%;float:right;"/><!-- {"left" : 7.33, "top" : 1.29, "height" : 1.16, "width" : 1.75} -->
 
-<img src="../../assets/images/generic/3rd-party/car-3.png" alt="Data-Science.png" style="width:25%;float:right;clear:right;"/>
+
+<img src="../../assets/images/generic/3rd-party/car-3.png" alt="Data-Science.png" style="width:25%;float:right;clear:right;"/><!-- {"left" : 6.53, "top" : 3.1, "height" : 2.21, "width" : 3.35} -->
 
 - Andrew Ng's  __"one second"__ rule  
 "If you can do a task with less than ONE second of thought process, AI can do that easily"
@@ -1088,8 +1140,8 @@ For accurate pricing, see the provided links
 - Understand human intension  
 For example, if a construction worker is waving you to stop or continue?
 
-<img src="../../assets/images/generic/3rd-party/crossing-guard-2.png" alt="" style="width:25%;"/> &nbsp; &nbsp;
-<img src="../../assets/images/generic/3rd-party/hitchhiker-1.jpg"  style="width:28%;"/>
+<img src="../../assets/images/generic/3rd-party/crossing-guard-2.png" alt="" style="width:24%;"/> &nbsp; &nbsp; <!-- {"left" : 0.86, "top" : 5.29, "height" : 2.7, "width" : 3.48} --> <img src="../../assets/images/generic/3rd-party/hitchhiker-1.jpg"  style="width:28%;"/><!-- {"left" : 5.33, "top" : 5.29, "height" : 2.7, "width" : 4.06} -->
+
 
 ---
 
@@ -1117,7 +1169,8 @@ For example, if a construction worker is waving you to stop or continue?
 - For example let's say you want to identify damaged products off the assembly line, do you have enough pictures of good items and damaged items?
 
 
-<img src="../../assets/images/generic/3rd-party/phone-screen-cracked-damage.jpg" alt="Data-Science.png" style="width:25%;"/>
+<img src="../../assets/images/generic/3rd-party/phone-screen-cracked-damage.jpg" alt="Data-Science.png" style="width:25%;"/><!-- {"left" : 3.11, "top" : 4, "height" : 2.68, "width" : 4.04} -->
+
 
 ---
 
@@ -1136,7 +1189,7 @@ So he/she can focus on other 'higher order' functions
 ---
 
 ## Quiz For the Class: AI Projects
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/><!-- {"left" : 6, "top" : 1.13, "height" : 2.78, "width" : 4.16} -->
 
 - Pick a couple of potential AI projects that is applicable to you
 
@@ -1158,12 +1211,9 @@ It may help to think along these lines
 
 ---
 
-
 ## AI Scaling with Data
 
-
-<img src="../../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" style="width:60%;"/>
-
+<img src="../../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.44, "height" : 4.41, "width" : 8.21} -->
 
 [Video by Andrew Ng](https://www.youtube.com/watch?v=LcfLo7YP8O4)
 
@@ -1187,7 +1237,8 @@ https://www.youtube.com/watch?v=LcfLo7YP8O4
 
  * [obvious-art.com](http://obvious-art.com/)
 
-<img src="../../assets/images/deep-learning/3rd-party/Art-Sold.png" alt="Art-Sold.png" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Art-Sold.png" alt="Art-Sold.png" style="width:40%;"/><!-- {"left" : 2.1, "top" : 2.61, "height" : 5.31, "width" : 6.04} -->
+
 
 
 Notes:
@@ -1206,7 +1257,7 @@ http://obvious-art.com/
 ## Machine Learning / Deep Learning
 
 
-<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="max-width:100%;"/>
+<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL-1.png" style="width:50%;"/><!-- {"left" : 2.56, "top" : 2.26, "height" : 5.13, "width" : 5.13} -->
 
 Notes:
 
@@ -1220,7 +1271,7 @@ Notes:
 
  * Deep Learning Algorithms scale better with data
 
-<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" alt="machine_learning_vs_deep_learning.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" style="width:60%;"/><!-- {"left" : 1.18, "top" : 2.04, "height" : 5.98, "width" : 7.88} -->
 
 Notes:
 
@@ -1236,8 +1287,8 @@ Notes:
  * Some neurons will only fire if they detect a shape of 'hexagon'
  * If both of these cells fire together the brain can intrepret that I am seeing a red stop sign
 
-<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="neuron_anatomy.png" style="width:50%;"/>
-<img src="../../assets/images/generic/3rd-party/stop-sign-1.png" alt="neuron_anatomy.png" style="width:20%;"/>
+<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="neuron_anatomy.png" style="width:50%;"/><!-- {"left" : 0.51, "top" : 5.02, "height" : 2.84, "width" : 5.41} --> &nbsp; &nbsp; <img src="../../assets/images/generic/3rd-party/stop-sign-1.png" alt="neuron_anatomy.png" style="width:20%;"/><!-- {"left" : 6.5, "top" : 4.82, "height" : 3.24, "width" : 3.24} -->
+
 
 Notes:
 
@@ -1254,7 +1305,8 @@ Notes:
      - Binary Output
      - No way to automatically train weights Wn
 
-<img src="../../assets/images/deep-learning/McCulloch.png" alt="McCulloch.png" style="max-width:100%;width:70%;"/>
+<img src="../../assets/images/deep-learning/McCulloch.png" alt="McCulloch.png" style="max-width:100%;width:60%;"/><!-- {"left" : 1.1, "top" : 4.59, "height" : 3.63, "width" : 8.06} -->
+
 
 Notes:
 
@@ -1267,7 +1319,8 @@ Notes:
  * Frank Rosenblatt invented the Perceptron:
  	- Simplest type of feedforward neural network
 
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="perceptron-03.png" style="max-width:100%;"/>
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="perceptron-03.png" style="max-width:100%;"/><!-- {"left" : 1.02, "top" : 3.07, "height" : 4.43, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1283,7 +1336,8 @@ Notes:
 
  * Mark 1 Perceptron
 
-<img src="../../assets/images/deep-learning/3rd-party/Perceptron-04.png" alt="Perceptron-04.png" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Perceptron-04.png" alt="Perceptron-04.png" style="width:30%;"/><!-- {"left" : 3.21, "top" : 3.18, "height" : 4.72, "width" : 3.83} -->
+
 
 
 Notes:
@@ -1302,17 +1356,6 @@ Notes:
 
  * If the final score is > 50, then the answer is YES
 
-<img src="../../assets/images/deep-learning/perceptron-02.png" alt="perceptron-02.png" style="width:76%;"/>
-
-
-Notes:
-
-
----
-
-## A Very Simple Perceptron
-
-
  * What is the outcome if
     * Weather is good
     * And a friend can join?
@@ -1321,7 +1364,9 @@ Notes:
     * You can go by public transit
     * And a friend can
 
-<img src="../../assets/images/deep-learning/perceptron-02.png" alt="perceptron-02.png" style="width:76%;"/>
+<img src="../../assets/images/deep-learning/perceptron-02.png" alt="perceptron-02.png" style="width:76%;"/><!-- {"left" : 1.67, "top" : 6.45, "height" : 2.27, "width" : 6.9} -->
+
+
 
 Notes:
 
@@ -1341,8 +1386,11 @@ Notes:
 | N           | number of inputs                                                                  |
 | b           | Bias term (does not depend on input values, shifts decision boundary from origin) |
 
+<!-- {"left" : 0.96, "top" : 1.66, "height" : 3.29, "width" : 8.34, "columnwidth" : [4.17, 4.17]} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/Generalized-01.png" alt="Generalized-01.png" style="width:40%;"/>
+
+<img src="../../assets/images/deep-learning/3rd-party/Generalized-01.png" alt="Generalized-01.png" style="width:40%;"/><!-- {"left" : 3.04, "top" : 6.27, "height" : 2.48, "width" : 4.16} -->
+
 
 Notes:
 
@@ -1356,7 +1404,8 @@ Notes:
 
  * Each layer can have many neurons
 
-<img src="../../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="width:40%;"/><!-- {"left" : 2.84, "top" : 2.97, "height" : 4.41, "width" : 4.57} -->
+
 
 
 Notes:
@@ -1374,15 +1423,17 @@ But when you stack them and combine them together, they can model some really co
 
 - This is what makes them incredibly powerful
 
-<img src="../../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; "/> &nbsp;  &nbsp;
-<img src="../../assets/images/generic/3rd-party/legos-2.jpg" alt="legos" style="width:50%; "/>
+<img src="../../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; "/> &nbsp;  &nbsp; <!-- {"left" : 0.55, "top" : 4.62, "height" : 2.54, "width" : 3.38} -->
+<img src="../../assets/images/generic/3rd-party/legos-2.jpg" alt="legos" style="width:50%; "/><!-- {"left" : 5.28, "top" : 4.49, "height" : 2.81, "width" : 4.48} -->
+
 
 ---
 
 
 ## 'Deep' Neural Networks
 
-<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="Deep-Neural-Networks.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="Deep-Neural-Networks.png" style="width:40%;float:right;"/><!-- {"left" : 5.68, "top" : 1.9, "height" : 4.02, "width" : 4.38} -->
+
 
  * If the network has more than ONE hidden layer, it is called DEEP network (or more than 3 layers total including input an output)
 
@@ -1406,13 +1457,13 @@ Notes:
 - If we provide enough data to the network, it will automatically learn the functions of each neuron !!
 
 
+<img src="../../assets/images/deep-learning/neural-net-01.png" alt="Face-Recognition.png" style="max-width:100%;"/><!-- {"left" : 1.02, "top" : 4.38, "height" : 2.94, "width" : 8.21} -->
 
-<img src="../../assets/images/deep-learning/neural-net-01.png" alt="Face-Recognition.png" style="max-width:100%;"/>
 ---
 
 ## Deep Neural Network - Face Recognition
 
-<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" alt="Face-Recognition.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" alt="Face-Recognition.png" style="width:30%;"/><!-- {"left" : 2.79, "top" : 1.73, "height" : 6.18, "width" : 4.67} -->
 
 
 Notes:
@@ -1426,7 +1477,8 @@ Source: https://deeplearning4j.org/neuralnet-overview
 
 ## 'Deep' Neural Networks Simulation
 
-<img src="../../assets/images/deep-learning/Neural-Networks-Simulation.png" alt="Neural-Networks-Simulation.png" style="width:90%;"/>
+<img src="../../assets/images/deep-learning/Neural-Networks-Simulation.png" alt="Neural-Networks-Simulation.png" style="width:90%;"/><!-- {"left" : 0.37, "top" : 3.7, "height" : 2.24, "width" : 9.5} -->
+
 
 Notes:
 
@@ -1438,7 +1490,8 @@ Notes:
 
  * Image Recognition: ResNet (from 2015) with 152 layers
 
-<img src="../../assets/images/deep-learning/3rd-party/ResNet.png" alt="ResNet.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/ResNet.png" alt="ResNet.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.75, "height" : 3.56, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1449,7 +1502,9 @@ Notes:
 ## DL Application Demo: Digit Recognition
 
 
-<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="digit-recognition-1.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="digit-recognition-1.png" style="width:50%;"/><!-- {"left" : 1.93, "top" : 1.6, "height" : 4.39, "width" : 6.39} -->
+
+
 
 [Link](http://myselph.de/neuralNet.html)
 
@@ -1461,7 +1516,8 @@ Notes:
 ## DL Application Demo: Digit Recognition
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Digit-Recognition-01.png" alt="Digit-Recognition-01.png" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Digit-Recognition-01.png" alt="Digit-Recognition-01.png" style="width:30%;"/><!-- {"left" : 2.63, "top" : 1.77, "height" : 5, "width" : 5} -->
+
 
 [Link](http://scs.ryerson.ca/~aharley/vis/conv/flat.html)
 
@@ -1500,7 +1556,8 @@ Notes:
 
      - [Link](https://research.fb.com/publications/)
 
-<img src="../../assets/images/deep-learning/3rd-party/cnn-happy-net-01.png" alt="cnn-happy-net-01.png" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/cnn-happy-net-01.png" alt="cnn-happy-net-01.png" style="width:40%;"/><!-- {"left" : 1.2, "top" : 3.72, "height" : 4.03, "width" : 7.86} -->
+
 
 
 Notes:
@@ -1519,7 +1576,8 @@ Source: Yaniv Taigman, Ming Yang, Marc'Aurelio Ranzato, Lior Wolf - https://rese
 
  * [Link](https://www.youtube.com/watch?v=MDHtzOdnSgA)
 
-<img src="../../assets/images/deep-learning/3rd-party/cnn-happy-net-02.png" alt="cnn-happy-net.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/cnn-happy-net-02.png" alt="cnn-happy-net.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.74, "height" : 4.16, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1537,8 +1595,8 @@ https://www.youtube.com/watch?v=MDHtzOdnSgA
 
      - Machine translation
 
+<img src="../../assets/images/deep-learning/Recurrent-Neural-Networks.png" alt="Recurrent-Neural-Networks.png" style="width:60%;"/><!-- {"left" : 0.88, "top" : 3.07, "height" : 4.68, "width" : 8.49} -->
 
-<img src="../../assets/images/deep-learning/Recurrent-Neural-Networks.png" alt="Recurrent-Neural-Networks.png" style="width:60%;"/>
 
 
 Notes:
@@ -1551,7 +1609,8 @@ Source: Rowel Atienza - https://towardsdatascience.com/lstm-by-example-using-ten
 
 ## RNNs (translation)
 
-<img src="../../assets/images/deep-learning/3rd-party/Rnns-01.png" alt="Rnns-01.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Rnns-01.png" alt="Rnns-01.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.22, "height" : 4.62, "width" : 8.21} -->
+
 
 Notes:
 
@@ -1570,7 +1629,8 @@ Source: https://www.analyticsindiamag.com/overview-of-recurrent-neural-networks-
      - And captions it (RNN)
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Combining-Neural-Networks-01.png" alt="Combining-Neural-Networks-01.png" style="width:30%;"/><img src="../../assets/images/deep-learning/3rd-party/Combining-Neural-Networks-02.png" alt="Combining-Neural-Networks-02.png" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Combining-Neural-Networks-01.png" alt="Combining-Neural-Networks-01.png" style="width:30%;"/><!-- {"left" : 0.47, "top" : 3.07, "height" : 3.5, "width" : 3.47} --> &nbsp;&nbsp; <img src="../../assets/images/deep-learning/3rd-party/Combining-Neural-Networks-02.png" alt="Combining-Neural-Networks-02.png" style="width:40%;"/><!-- {"left" : 4.72, "top" : 4.09, "height" : 1.47, "width" : 5.08} -->
+
 
 
 Notes:
@@ -1583,7 +1643,8 @@ Source: Source: Andrej Karpathy, Li Fei-Fei - https://cs.stanford.edu/people/kar
 
 ## Video - Advances in Hardware
 
-<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" alt="cloud-tpu-01.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" alt="cloud-tpu-01.png" style="width:60%;"/><!-- {"left" : 3.03, "top" : 1.85, "height" : 3.44, "width" : 4.97} -->
+
 
  * [Google TPU](https://www.youtube.com/watch?v=UsDhVx6cOrw) (up to 5 min mark)
 
@@ -1597,7 +1658,8 @@ https://www.youtube.com/watch?v=UsDhVx6cOrw
 
 ## DL Application Demo: Google Draw
 
-<img src="../../assets/images/deep-learning/3rd-party/Quick-drew-01.png" alt="Quick-drew-01.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Quick-drew-01.png" alt="Quick-drew-01.png" style="width:60%;"/><!-- {"left" : 1.59, "top" : 1.57, "height" : 4.17, "width" : 7.06} -->
+
 
 
 
@@ -1615,7 +1677,9 @@ Notes:
 
 ## AI Workflow
 
-<img src="../../assets/images/AI/AI-Workflow-01.png" alt="AI-Workflow-01.png" style="width:60%;"/>
+<img src="../../assets/images/AI/AI-Workflow-01.png" alt="AI-Workflow-01.png" style="width:60%;"/><!-- {"left" : 1.48, "top" : 1.8, "height" : 5.47, "width" : 7.29} -->
+
+
 
 
 Notes:
@@ -1675,7 +1739,8 @@ Notes:
 
 ## Class Discussion:
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.2, "top" : 1.39, "height" : 3.33, "width" : 4.99} -->
+
 
  * What are some of the problems you are facing that Data Science / Machine Learning might be a solution?
 
@@ -1686,7 +1751,8 @@ Notes:
 
 ## 2 - Collecting Data
 
-<img src="../../assets/images/AI/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/AI/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/><!-- {"left" : 5.18, "top" : 1.23, "height" : 3.82, "width" : 4.89} -->
+
 
  * Data Sources can be
 
@@ -1702,6 +1768,13 @@ Notes:
 
      - Is the data in useable format?
 
+---
+
+## 2 - Collecting Data
+
+<img src="../../assets/images/AI/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/><!-- {"left" : 5.31, "top" : 1.26, "height" : 3.74, "width" : 4.79} -->
+
+
  * May need to bring data from different systems and in usually in different formats.
 
      - Clicklogs are text files.
@@ -1715,7 +1788,8 @@ Notes:
 
 ## Class Discussion: Data Collection Challenges
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.55, "top" : 1.22, "height" : 3.09, "width" : 4.64} -->
+
 
  * What are some of the problems you are facing / anticipating for collecting data?
 
@@ -1726,7 +1800,8 @@ Notes:
 
 ## 3 - Data Preparation / Cleaning
 
-<img src="../../assets/images/AI/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/AI/AI-Workflow-02.png" alt="AI-Workflow-02.png" style="width:40%;float:right;"/><!-- {"left" : 5.55, "top" : 1.19, "height" : 3.51, "width" : 4.49} -->
+
 
  * Problems with raw data sets
 
@@ -1756,7 +1831,8 @@ Notes:
 
 ## Class Discussion: Data Cleanup
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.77, "top" : 1.06, "height" : 2.97, "width" : 4.46} -->
+
 
  *  **What do you think involves in cleaning up data?**
 
@@ -1769,7 +1845,8 @@ Notes:
 
 ## 3.5 - Exploratory Data Analysis (EDA)
 
-<img src="../../assets/images/deep-learning/EDA-01.png" alt="EDA-01.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/deep-learning/EDA-01.png" alt="EDA-01.png" style="width:30%;float:right;"/><!-- {"left" : 6.22, "top" : 1.22, "height" : 2.65, "width" : 3.72} -->
+
 
  * Before doing `machine learning` on data, understand the data.
 
@@ -1797,7 +1874,7 @@ Notes:
 
 ## 4 - Model Building
 
-<img src="../../assets/images/AI/AI-Workflow-03.png" alt="AI-Workflow-03.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/AI/AI-Workflow-03.png" alt="AI-Workflow-03.png" style="width:40%;float:right;"/><!-- {"left" : 5.32, "top" : 1.07, "height" : 3.87, "width" : 4.88} -->
 
  * Don't do this until you have a good understanding of data.(See previous section.)
 
@@ -1839,7 +1916,8 @@ Notes:
 
      - Cloud vendors are providing solution
 
-<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="max-width:50%;"/>
+<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="max-width:50%;"/><!-- {"left" : 1.3, "top" : 4.78, "height" : 3.86, "width" : 7.65} -->
+
 
 
 Notes:
@@ -1855,7 +1933,8 @@ Notes:
 
  * Fast deploy!
 
-<img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/>
+<img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 1.63, "top" : 3.18, "height" : 5.12, "width" : 6.99} -->
+
 
 
 Notes:
@@ -1865,7 +1944,9 @@ https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize
 ---
 
 ## 5 - Model Validation
- <img src="../../assets/images/AI/AI-Workflow-04.png" alt="AI-Workflow-04.png" style="width:40%;float:right;"/>
+
+ <img src="../../assets/images/AI/AI-Workflow-04.png" alt="AI-Workflow-04.png" style="width:40%;float:right;"/><!-- {"left" : 5.9, "top" : 1.22, "height" : 3.38, "width" : 4.27} -->
+
 
  * Models need to be `verified`  / `validated`
 
@@ -1881,7 +1962,8 @@ https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize
 
  * Training set should represent data well enough.
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:30%;"/><!-- {"left" : 5.55, "top" : 6.63, "height" : 1.97, "width" : 4.48} -->
+
 
 
 
@@ -1894,7 +1976,8 @@ Notes:
 
 ## 6 - Improving the Model
 
-<img src="../../assets/images/AI/AI-Workflow-05.png" alt="AI-Workflow-05.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/AI/AI-Workflow-05.png" alt="AI-Workflow-05.png" style="width:40%;float:right;"/><!-- {"left" : 5.09, "top" : 1.22, "height" : 4.15, "width" : 4.86} -->
+
 
  * Sometimes we don't get desired accuracy from the model
 
@@ -1919,7 +2002,8 @@ Notes:
 
 ## 7 - Deploy Model
 
-<img src="../../assets/images/AI/AI-Workflow-06.png" alt="AI-Workflow-06" style="width:40%;float:right;"/>
+<img src="../../assets/images/AI/AI-Workflow-06.png" alt="AI-Workflow-06" style="width:40%;float:right;"/><!-- {"left" : 5.19, "top" : 1.45, "height" : 3.69, "width" : 4.66} -->
+
 
  * We are happy with the model's performance
 
@@ -1938,7 +2022,8 @@ Notes:
 
 ## Class Discussion : AI Life Cycle
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 6.55, "top" : 1.28, "height" : 2.41, "width" : 3.62} -->
+
 
  * Do you have any stories to share about AI work flow?
 
@@ -1946,7 +2031,8 @@ Notes:
 
      - Best practices?
 
-<img src="../../assets/images/AI/AI-Workflow-01.png" alt="AI-Workflow-06" style="width:40%;"/>
+<img src="../../assets/images/AI/AI-Workflow-01.png" alt="AI-Workflow-06" style="width:40%;"/><!-- {"left" : 2.64, "top" : 4.97, "height" : 3.72, "width" : 4.96} -->
+
 
 Notes:
 
@@ -1957,8 +2043,8 @@ Notes:
 
 ## Reinforcement / Neural Net Demo: Alpha GO
 
+<img src="../../assets/images/machine-learning/3rd-party/Neural-Net-Demo-Alpha-GO.png" alt="Neural-Net-Demo-Alpha-GO.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.32, "height" : 4.64, "width" : 8.21} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/Neural-Net-Demo-Alpha-GO.png" alt="Neural-Net-Demo-Alpha-GO.png" style="width:60%;"/>
 
 [Link](https://www.youtube.com/watch?v=9xlSy9F5WtE)
 
@@ -1974,8 +2060,8 @@ Notes:
 ## Reinforcement/ Neural Net Demo: Alpha GO Explained
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Alpha-GO-01.png" alt="Alpha-GO-01.png" style="width:30%;"/>
-<img src="../../assets/images/deep-learning/3rd-party/Alpha-GO-02.png" alt="Alpha-GO-02.png" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Alpha-GO-01.png" alt="Alpha-GO-01.png" style="width:30%;"/><!-- {"left" : 0.33, "top" : 2.81, "height" : 3.23, "width" : 4.1} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/Alpha-GO-02.png" alt="Alpha-GO-02.png" style="width:30%;"/><!-- {"left" : 4.77, "top" : 3.27, "height" : 2.32, "width" : 5.15} -->
+
 
  [Link](https://deepmind.com/blog/alphago-zero-learning-scratch/)
 
@@ -2000,6 +2086,7 @@ https://deepmind.com/blog/alphago-zero-learning-scratch/
 | Distributed | Spark                     | Spark                       |
 | Cloud       | -AWS<br/>-Azure<br/>-Google Cloud | -AWS<br/>-Azure<br/>-Google Cloud   |
 
+<!-- {"left" : 0.25, "top" : 1.48, "height" : 3, "width" : 9.75} -->
 
 Notes:
 
@@ -2014,7 +2101,9 @@ Notes:
 
  * Now Big Data tools make it possible to run AI algorithms at massive scale-distributed across a cluster
 
-<img src="../../assets/images/deep-learning/DL-cluster.png" alt="DL-cluster.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/DL-cluster.png" alt="DL-cluster.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 4.43, "height" : 3.49, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -2032,6 +2121,8 @@ Notes:
 | CPU bound                                      | IO bound (disk / network).                   |
 | GPU (Graphical Processing Unit) seldom engaged | GPUs are utilized increasingly               |
 
+<!-- {"left" : 0.25, "top" : 1.43, "height" : 3.88, "width" : 9.75} -->
+
 Notes:
 
 
@@ -2039,7 +2130,9 @@ Notes:
 
 ## AI Ecosystem and Tools
 
-<img src="../../assets/images/deep-learning/AI-Ecosystem.png" alt="AI-Ecosystem.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/AI-Ecosystem.png" alt="AI-Ecosystem.png" style="width:60%;"/><!-- {"left" : 0.36, "top" : 1.97, "height" : 5.14, "width" : 9.54} -->
+
+
 
 
 Notes:
@@ -2111,7 +2204,8 @@ Browser-based notebook interface with support for code, text, mathematical expre
 
 ## Infrastructure Tools
 
-<img src="../../assets/images/deep-learning/Infrastructure-Tools.png" alt="Infrastructure-Tools.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/Infrastructure-Tools.png" alt="Infrastructure-Tools.png" style="width:60%;"/><!-- {"left" : 1.28, "top" : 1.75, "height" : 5.56, "width" : 7.69} -->
+
 
 
 Notes:
@@ -2135,7 +2229,8 @@ Notes:
 
  * (https://www.kubeflow.org/)
 
-<img src="../../assets/images/deep-learning/3rd-party/Kubeflow.png" alt="Kubeflow.png" style="width:20%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Kubeflow.png" alt="Kubeflow.png" style="width:20%;"/><!-- {"left" : 7.49, "top" : 1.25, "height" : 2.46, "width" : 2.47} -->
+
 
 
 Notes:
@@ -2145,7 +2240,8 @@ Notes:
 
 ## Big Data Infrastructure - Hadoop
 
-<img src="../../assets/images/deep-learning/3rd-party/Big-Data-Infrastructure-Hadoop.png" alt="Big-Data-Infrastructure-Hadoop.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Big-Data-Infrastructure-Hadoop.png" alt="Big-Data-Infrastructure-Hadoop.png" style="width:30%;float:right;"/><!-- {"left" : 7.32, "top" : 1.53, "height" : 4.26, "width" : 2.55} -->
+
 
  * Hadoop is the popular on-premise Big Data platform
 
@@ -2157,7 +2253,7 @@ Notes:
 
      - Docker containers
 
-     - AI frameworks : Tensorflow, Pytorch ..etc.
+     - AI frameworks: Tensorflow, Pytorch ..etc.
 
  * HDFS improvements
 
@@ -2171,7 +2267,8 @@ Notes:
 
 ## A Hadoop 3 Reference Architecture
 
-<img src="../../assets/images/hadoop/3rd-party/hadoop3-reference-architecture-1.png" alt="Big-Data-Infrastructure-Hadoop.png" style="max-width:100%;"/>
+<img src="../../assets/images/hadoop/3rd-party/hadoop3-reference-architecture-1.png" alt="Big-Data-Infrastructure-Hadoop.png" style="max-width:100%;"/><!-- {"left" : 0.18, "top" : 2.24, "height" : 4.58, "width" : 9.9} -->
+
 
 Notes:
 - [Source: Hortonworks](https://hortonworks.com/blog/trying-containerized-applications-apache-hadoop-yarn-3-1/)
@@ -2192,7 +2289,8 @@ Notes:
 
  * Multi Language support: Scala, Java, Python, R
 
-<img src="../../assets/images/deep-learning/3rd-party/Apache_Spark_logo.png" alt="Apache_Spark_logo.png" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Apache_Spark_logo.png" alt="Apache_Spark_logo.png" style="width:30%;"/><!-- {"left" : 2.8, "top" : 5.26, "height" : 2.42, "width" : 4.66} -->
+
 
 Notes:
 
@@ -2210,7 +2308,8 @@ Notes:
 
  * Data is processed on the node it is located
 
-<img src="../../assets/images/deep-learning/Distributed-Data-Processing.png" alt="Distributed-Data-Processing.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/Distributed-Data-Processing.png" alt="Distributed-Data-Processing.png" style="width:60%;"/><!-- {"left" : 0.9, "top" : 4.05, "height" : 3.42, "width" : 8.46} -->
+
 
 
 
@@ -2228,7 +2327,8 @@ Notes:
 
  * In the diagram below, you can see all the infrastructure goes into building a large scale ML system
 
-<img src="../../assets/images/deep-learning/production_ML_system-02.png" alt="production_ML_system-02.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/production_ML_system-02.png" alt="production_ML_system-02.png" style="width:60%;"/><!-- {"left" : 0.82, "top" : 3.47, "height" : 3.07, "width" : 8.61} -->
+
 
 
 Notes:
@@ -2238,7 +2338,8 @@ Notes:
 
 ## A Reference Scalable AI Infrastructure
 
-<img src="../../assets/images/deep-learning/Reference-Scalable-AI-Infrastructure.png" alt="Reference-Scalable-AI-Infrastructure.png" style="width:80%;"/>
+<img src="../../assets/images/deep-learning/Reference-Scalable-AI-Infrastructure.png" alt="Reference-Scalable-AI-Infrastructure.png" style="width:80%;"/><!-- {"left" : 0.89, "top" : 2.51, "height" : 3.13, "width" : 8.47} -->
+
 
 
 Notes:
@@ -2295,13 +2396,18 @@ Notes:
 |---------------------------|-----------------------------------|----------------------------|
 | -AI as service,'Sagemaker | -AI as service,-'Azure ML Studio' | -AI as service,-'Cloud ML' |
 
+<!-- {"left" : 0.99, "top" : 1.33, "height" : 1.88, "width" : 8.27, "columnwidth" : [2.76, 2.76, 2.76]} -->
 
 
-<img src="../../assets/images/deep-learning/3rd-party/amazon-logo.png" alt="amazon-logo.png" style="width:30%;"/>
 
-<img src="../../assets/images/deep-learning/3rd-party/azure-logo.png" alt="azure-logo.png" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/amazon-logo.png" alt="amazon-logo.png" style="width:30%;"/><!-- {"left" : 2.75, "top" : 4.07, "height" : 1.1, "width" : 4.76} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/google-cloud.png" alt="google-cloud.png" style="width:30%;"/>
+
+<img src="../../assets/images/deep-learning/3rd-party/azure-logo.png" alt="azure-logo.png" style="width:30%;"/><!-- {"left" : 2.99, "top" : 5.51, "height" : 1.23, "width" : 4.28} -->
+
+
+<img src="../../assets/images/deep-learning/3rd-party/google-cloud.png" alt="google-cloud.png" style="width:30%;"/><!-- {"left" : 3.45, "top" : 7.08, "height" : 0.76, "width" : 3.37} -->
+
 
 
 Notes:
@@ -2313,7 +2419,8 @@ Notes:
 
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Video-Advances-Robotics.png" alt="Video-Advances-Robotics.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Video-Advances-Robotics.png" alt="Video-Advances-Robotics.png" style="width:50%;"/><!-- {"left" : 1.95, "top" : 1.35, "height" : 4.98, "width" : 6.35} -->
+
 
 [Link](https://www.youtube.com/watch?v=8vIT2da6N_o)
 
@@ -2326,7 +2433,8 @@ https://www.youtube.com/watch?v=8vIT2da6N_o
 
 ## Demo: Human Powered AI
 
-<img src="../../assets/images/deep-learning/3rd-party/Demo-Human-Powered-AI-01.png" alt="Demo-Human-Powered-AI-01.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Demo-Human-Powered-AI-01.png" alt="Demo-Human-Powered-AI-01.png" style="width:40%;float:right;"/><!-- {"left" : 6.01, "top" : 1.22, "height" : 3.75, "width" : 3.98} -->
+
 
  * Hive is paying 600,000 strangers to help him build human-powered AI that's 'whole orders of magnitude better than Google'
 
@@ -2351,7 +2459,8 @@ https://finance.yahoo.com/news/ceo-paying-600-000-strangers-150000655.html
 ## AI Gone Wrong
 
 
-<img src="../../assets/images/deep-learning/3rd-party/AI-Gone-Wrong.png" alt="AI-Gone-Wrong.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/AI-Gone-Wrong.png" alt="AI-Gone-Wrong.png" style="width:40%;float:right;"/><!-- {"left" : 5.98, "top" : 1.22, "height" : 4, "width" : 4} -->
+
 
  * Here we are going look at some cases where AI experiments haven't gone well
 
@@ -2371,7 +2480,8 @@ https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-cr
 
 ## Facebook's Bots Invent their own language
 
-<img src="../../assets/images/deep-learning/3rd-party/Facebook-Bots-0.png" alt="Facebook-Bots-0.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Facebook-Bots-0.png" alt="Facebook-Bots-0.png" style="width:40%;float:right;"/><!-- {"left" : 6.4, "top" : 1.08, "height" : 2.45, "width" : 3.68} -->
+
 
  * Facebook designed to chat bots to talk to each other
 
@@ -2384,7 +2494,6 @@ https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-cr
 
        - `Alice: "Balls have zero to me to me to me to me  
         to me to me to me to me to."`
-
 
  * This indecipherable language is actually a 'new bot language'
  * Bots developed this on their own
@@ -2402,7 +2511,8 @@ https://www.independent.co.uk/voices/facebook-shuts-down-robots-ai-artificial-in
 
 ## Facebook Bots
 
-<img src="../../assets/images/deep-learning/3rd-party/Facebook-Bots.png" alt="Facebook-Bots.png" style="width:80%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Facebook-Bots.png" alt="Facebook-Bots.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 2.56, "height" : 4.53, "width" : 8.21} -->
+
 
 
 Notes:
@@ -2412,7 +2522,7 @@ Notes:
 
 ## Target Algorithm Predicts Young Woman's Pregnancy
 
-<img src="../../assets/images/deep-learning/3rd-party/Predicts-Young-Woman-01.png" alt="Predicts-Young-Woman-01.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Predicts-Young-Woman-01.png" alt="Predicts-Young-Woman-01.png" style="width:30%;float:right;"/><!-- {"left" : 6.52, "top" : 1.13, "height" : 2.51, "width" : 3.56} -->
 
  * Target's Data Scientists identified 25 products that, when purchased together, predict a woman's pregnancy
 
@@ -2424,7 +2534,7 @@ Notes:
  * Few days later, the same man called the manager and apologized  
  " *Sorry, I just learned that my daughter is pregnant* "
 
- * Links : [link1](https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-creeps/6/), [link2](https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?mtrref=www.google.com)
+ * Links: [link1](https://www.zdnet.com/pictures/im-sorry-dave-9-real-times-ai-has-given-us-the-creeps/6/), [link2](https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?mtrref=www.google.com)
 
 ---
 
@@ -2439,7 +2549,8 @@ Notes:
  * Links : [link1](https://www.theregister.co.uk/2017/06/20/tesla_death_crash_accident_report_ntsb/)
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Tesla-AutoPilot-Crashes-Car-01.png" alt="Tesla-AutoPilot-Crashes-Car-01.png" style="width:38%;"/><img src="../../assets/images/deep-learning/3rd-party/Tesla-AutoPilot-Crashes-Car-02.png" alt="Tesla-AutoPilot-Crashes-Car-02.png" style="width:35%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Tesla-AutoPilot-Crashes-Car-01.png" alt="Tesla-AutoPilot-Crashes-Car-01.png" style="width:38%;"/><!-- {"left" : 0.57, "top" : 4.46, "height" : 2.92, "width" : 4.38} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/Tesla-AutoPilot-Crashes-Car-02.png" alt="Tesla-AutoPilot-Crashes-Car-02.png" style="width:35%;"/><!-- {"left" : 5.67, "top" : 4.46, "height" : 2.92, "width" : 4.01} -->
+
 
 
 
@@ -2452,7 +2563,7 @@ https://www.theregister.co.uk/2017/06/20/tesla_death_crash_accident_report_ntsb/
 
 ## AI Mis-Identifying Dogs as Wolfs
 
-<img src="../../assets/images/deep-learning/3rd-party/Dogs-as-Wolfs.png" alt="Dogs-as-Wolfs.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Dogs-as-Wolfs.png" alt="Dogs-as-Wolfs.png" style="width:40%;float:right;"/><!-- {"left" : 5.27, "top" : 1.32, "height" : 2.85, "width" : 4.77} -->
 
  * Farmers used an algorithm to identify dogs vs wolves
 
@@ -2483,7 +2594,7 @@ http://innovation.uci.edu/2017/08/husky-or-wolf-using-a-black-box-learning-model
 ## Amazon uses AI to Identify Job Applicants
 
 
-<img src="../../assets/images/deep-learning/3rd-party/global-headcount.png" alt="global-headcount.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/global-headcount.png" alt="global-headcount.png" style="width:40%;float:right;"/><!-- {"left" : 6.12, "top" : 1.26, "height" : 4.23, "width" : 3.97} -->
 
  * Amazon tried an AI algorithm to short-list candidates
 
@@ -2507,7 +2618,8 @@ https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scr
 
 ## Class Discussion
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" alt="" style="width:30%;float:right;"/><!-- {"left" : 5.39, "top" : 1.22, "height" : 3.22, "width" : 4.82} -->
+
 
  * Do you know of any cases where AI failed / gone wrong?Please share with the class.
 
@@ -2524,7 +2636,9 @@ Notes:
 
 ## Elon Musk: "AI will take over humanity"
 
-<img src="../../assets/images/machine-learning/3rd-party/Elon-Musk-tweet-1.png" alt="Elon-musk.png" style="width:40%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/Elon-Musk-tweet-1.png" alt="Elon-musk.png" style="width:40%;"/><!-- {"left" : 2.17, "top" : 1.68, "height" : 6.27, "width" : 5.9} -->
+
+
 
 Notes:
 
@@ -2553,7 +2667,7 @@ Notes:
 
 ## Design an AI Project
 
-<img src="../../assets/images/icons/group-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/group-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.28, "top" : 1.31, "height" : 3.39, "width" : 4.67} -->
 
  *  **Class Project**
 
@@ -2575,7 +2689,7 @@ Notes:
 ---
 ## Closing Demo: Everybody Dance Now
 
-<img src="../../assets/images/deep-learning/3rd-party/Closing-Demo.png" alt="Closing-Demo.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Closing-Demo.png" alt="Closing-Demo.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.75, "height" : 3.67, "width" : 8.21} -->
 
 
  [Link](https://www.youtube.com/watch?v=PCBTZh41Ris)

@@ -16,7 +16,10 @@ Notes:
 
  * From Mike Conway: A practice spanning multiple disciplines
 
-<img src="../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:35%;"/>
+
+<img src="../../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:35%;"/><!-- {"left" : 2.86, "top" : 2.41, "height" : 4.25, "width" : 4.54} -->
+
+
 
 
 Notes:
@@ -62,7 +65,8 @@ https://en.wikipedia.org/wiki/Jeff_Hammerbacher
 
  *  **Question for the class:** What comes to your mind when you think of "Data Scientist"?
 
-<img src="../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist-01.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist-01.png" style="width:50%;"/><!-- {"left" : 1.02, "top" : 3.3, "height" : 3.94, "width" : 8.21} -->
+
 
 
 Notes:
@@ -83,7 +87,8 @@ Notes:
 
 ## So Here Is Data Scientist
 
-<img src="../assets/images/deep-learning/here-is-data.png" alt="here-is-data.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/here-is-data.png" alt="here-is-data.png" style="width:60%;"/><!-- {"left" : 1.03, "top" : 2.16, "height" : 4.74, "width" : 8.2} -->
+
 
 
 Notes:
@@ -94,7 +99,9 @@ Notes:
 
 ## Data Scientist Profile
 
-<img src="../assets/images/deep-learning/Data-Scientist-Profile.png" alt="Data-Scientist-Profile.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/Data-Scientist-Profile.png" alt="Data-Scientist-Profile.png" style="width:60%;"/><!-- {"left" : 1.47, "top" : 1.98, "height" : 5.69, "width" : 7.31} -->
+
+
 
 
 Notes:
@@ -135,7 +142,8 @@ Notes:
 
  * Modern visualizations: Heat maps, Animations (D3JS etc.)
 
-<img src="../assets/images/deep-learning/3rd-party/Visualizations-01.png" alt=Visualizations-01.png" style="width:30%;"/><img src="../assets/images/deep-learning/3rd-party/Visualizations-02.png" alt=Visualizations-02.png" style="width:30%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Visualizations-01.png" alt=Visualizations-01.png" style="width:30%;"/><!-- {"left" : 0.69, "top" : 5.14, "height" : 2.54, "width" : 4.5} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/Visualizations-02.png" alt=Visualizations-02.png" style="width:30%;"/><!-- {"left" : 5.76, "top" : 5, "height" : 2.83, "width" : 3.8} -->
+
 
 
 
@@ -150,7 +158,8 @@ National debt visualization: https://ricochet.com/archives/problem-no-one-dc-wan
 ## Visualizations Demo: Google Music Trends
 
 
-<img src="../assets/images/deep-learning/3rd-party/Google-Music-Trends.png" alt="Google-Music-Trends.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Google-Music-Trends.png" alt="Google-Music-Trends.png" style="width:60%;"/><!-- {"left" : 0.46, "top" : 2.84, "height" : 3.38, "width" : 9.34} -->
+
 
 Notes:
 
@@ -162,7 +171,8 @@ http://research.google.com/bigpicture/music/
 ## Visualizations Demo: American Workday
 
 
-<img src="../assets/images/deep-learning/3rd-party/American-Workday-01.png" alt="American-Workday-01.png" style="width:25%;"/><img src="../assets/images/deep-learning/3rd-party/American-Workday-02.png" alt="American-Workday-02.png" style="width:25%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/American-Workday-01.png" alt="American-Workday-01.png" style="width:25%;"/><!-- {"left" : 0.65, "top" : 3.21, "height" : 3.22, "width" : 4.2} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/American-Workday-02.png" alt="American-Workday-02.png" style="width:25%;"/><!-- {"left" : 5.4, "top" : 3.21, "height" : 3.22, "width" : 4.2} -->
+
 
 
 
@@ -184,7 +194,8 @@ https://www.npr.org/sections/money/2014/08/27/343415569/whos-in-the-office-the-a
  * [Link to Demonocracy](http://demonocracy.info/infographics/usa/us_debt/us_debt.html)
 
 
-<img src="../assets/images/deep-learning/3rd-party/National-Debt-Visualized-01.png" alt="National-Debt-Visualized-01.png" style="width:55%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/National-Debt-Visualized-01.png" alt="National-Debt-Visualized-01.png" style="width:55%;"/><!-- {"left" : 1.02, "top" : 2.14, "height" : 5.36, "width" : 8.21} -->
+
 
 Notes:
 
@@ -195,7 +206,8 @@ http://demonocracy.info/infographics/usa/us_debt/us_debt.html
 
 ## Visualizations Demo: US Budget
 
-<img src="../assets/images/deep-learning/3rd-party/US-Budget.png" alt="US-Budget.png" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/US-Budget.png" alt="US-Budget.png" style="width:40%;"/><!-- {"left" : 2.63, "top" : 1.23, "height" : 5.05, "width" : 5} -->
+
 
  * [Link to NYTimes article](https://archive.nytimes.com/www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html)
 
@@ -212,16 +224,17 @@ https://archive.nytimes.com/www.nytimes.com/interactive/2012/02/13/us/politics/2
 
 | Eco system 	| Package    	| Description                                                                     	|
 |------------	|------------	|---------------------------------------------------------------------------------	|
-| Python     	| Matplotlib 	| -Powerful, portable -Very versatile and capable -Default library for many tools 	|
-|            	| Seaborn    	| -Higher level API based on Matplotlib -Stylish graphs by default                	|
-|            	| Bokeh      	| -Streaming data -Interactive, web ready plots                                   	|
-|            	| Plotly     	| -Online and python -Interactive graphs                                          	|
-| JavaScript 	| D3         	| -online, web ready -interactive                                                 	|
-| R          	| Ggplot2    	| -powerful, very capable -Can be complex                                         	|
-|            	| GgVis      	| -Web ready graphs                                                               	|
+| Python     	| Matplotlib 	| - Powerful, portable <br/>- Very versatile and capable Default library for many tools 	|
+|            	| Seaborn    	| - Higher level API based on Matplotlib <br/>- Stylish graphs by default                	|
+|            	| Bokeh      	| - Streaming data <br/>- Interactive, web ready plots                                   	|
+|            	| Plotly     	| - Online and python <br/>- Interactive graphs                                          	|
+| JavaScript 	| D3         	| - online, web ready <br/>- Interactive                                                 	|
+| R          	| Ggplot2    	| - powerful, very capable <br/>- Can be complex                                         	|
+|            	| GgVis      	| -  Web ready graphs                                                               	|
 
+
+<!-- {"left" : 0.25, "top" : 1.65, "height" : 4.38, "width" : 9.75, "columnwidth" : [2.01, 2.26, 5.48]} -->
 
 Notes:
 
 
----
