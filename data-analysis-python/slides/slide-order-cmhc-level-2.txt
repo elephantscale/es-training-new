@@ -1,0 +1,15 @@
+## to generate slides
+##  $ES_HOME/utils/presentations/slides-assembler.sh   	slide-order-cmhc-level-2.txt
+
+About-Data-Analytics-With-Python-CMHC-Level-2.md
+./Data_Science_Intro.md
+./PYTHON-Scipy.md
+../../machine-learning/generic/Data-Exploration.md
+./PYTHON-Statsmodels.md
+./PYTHON-Visualization.md
+./PYTHON-Sklearn.md
+../../../es-training/spark/slides/v2/Intro.pptx
+../../../es-training/spark/slides/v2/Data-Model-2.pptx
+
+
+

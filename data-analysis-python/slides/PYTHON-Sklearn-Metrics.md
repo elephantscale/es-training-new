@@ -1,4 +1,5 @@
 # Python Sklearn: Metrics 
+
 ---
 
 ## Lesson Objectives
@@ -8,6 +9,7 @@
 ---
 
 # Model Evaluation 
+
 ---
 
 ## What is Model Evaluation?
@@ -20,9 +22,12 @@
 Notes:
 
 ---
+
 # Regression
+
 ---
  # Regression models 
+
 ---
 
 ## Evaluating a Regression Model
@@ -48,10 +53,10 @@ Notes:
 
 Notes:
 
-```math
 $F(\theta) = \int r\,g(r)\,\ln f(r;\theta)$
-```
+
 ---
+
 
 ## Explained Variance in Python
 
@@ -70,17 +75,15 @@ Notes:
 
 ## Mean Absolute Error
 
- * Mean Absolute Error is different than
+ * Mean Absolute Error is different than MSE
+ * Take absolute value of each error and take the mean of that.
 
 
 <img src="../../assets/images/data-analysis-python/3rd-party/math02.png" alt="math02.png" style="width:40%;"/><!-- {"left" : 3.33, "top" : 2.45, "height" : 0.38, "width" : 3.59} -->
 
 Notes:
 
-```math
-$\mathrm{MAE} = \frac{\sum_{i=1}^n\left| y_i-x_i\right|}{n} =\frac{\sum_{i=1}^n\left| e_i \right|}{n}$
-```
----
+`$\mathrm{MAE} = \frac{\sum_{i=1}^n\left| y_i-x_i\right|}{n} =\frac{\sum_{i=1}^n\left| e_i \right|}{n}$`
 
 ## Mean Absolute Error in Python
 
@@ -106,9 +109,7 @@ Notes:
 
 Notes:
 
-```math
-$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(Y_i-\hat{Y_i})^2$
-```
+`$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(Y_i-\hat{Y_i})^2$`
 ---
 
 ## Mean Squared Error in Python

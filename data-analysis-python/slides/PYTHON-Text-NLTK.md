@@ -1,13 +1,9 @@
-# PYTHON Text
----
-
 # Text Analytics With Python
 ---
 
 ## Lesson Objectives
 
   * Learn Python libraries for text analytics
-
 
 
 Notes:
@@ -377,17 +373,17 @@ text = """TextBlob aims to provide access to common text-processing operations
 tb = TextBlob(text)
 
 print(tb.words)
-['TextBlob', 'aims', 'to', 'provide', 'access', 'to', 'common',
-'text-processing', 'operations', 'through', 'a', 'familiar',
-'interface', 'You', 'can', 'treat', 'TextBlob', 'objects',
-'as', 'if', 'they', 'were', 'Python', 'strings', 'that',
-'learned', 'how', 'to', 'do', 'Natural', 'Language', 'Processing']
+# ['TextBlob', 'aims', 'to', 'provide', 'access', 'to', 'common',
+# 'text-processing', 'operations', 'through', 'a', 'familiar',
+# 'interface', 'You', 'can', 'treat', 'TextBlob', 'objects',
+# 'as', 'if', 'they', 'were', 'Python', 'strings', 'that',
+# 'learned', 'how', 'to', 'do', 'Natural', 'Language', 'Processing']
 
 print(tb.sentences)
-[Sentence("TextBlob aims to provide access to common text-processing
-operations through a familiar interface."),
-Sentence("You can treat TextBlob objects as if they were Python strings that
- learned how to do Natural Language Processing.")]
+# [Sentence("TextBlob aims to provide access to common text-processing
+# operations through a familiar interface."),
+# Sentence("You can treat TextBlob objects as if they were Python strings that
+# learned how to do Natural Language Processing.")]
 ```
 <!-- {"left" : 0.0, "top" : 0.97, "height" : 5.18, "width" : 10.25} -->
 
@@ -416,7 +412,9 @@ tweets = ["I love bigmacs",
 for tweet in tweets:
     tb = TextBlob(tweet)
     print("{} ==> {}".format(tweet, tb.sentiment))
+```
 
+```text
 I love bigmacs ==> Sentiment(polarity=0.5, subjectivity=0.6)
 I hate this traffic! ==> Sentiment(polarity=-1.0, subjectivity=0.9)
 American Idol is awesome! ==> Sentiment(polarity=0.5, subjectivity=0.5)
@@ -443,15 +441,15 @@ sunny day!"""
 tb = TextBlob(text)
 
 print(tb.word_counts)
-defaultdict(<class 'int'>, {'it': 2, 'was': 2, 'a': 3, 'sunny': 2, 'day': 2,
- 'we': 1, 'went': 1, 'to': 2, 'the': 2, 'dog': 2, 'park': 1, 'lots': 1,
- 'of': 1, 'dogs': 1, 'were': 1, 'running': 1, 'around': 1, 'my': 1,
- 'likes': 1, 'run': 1, 'too': 1, 'so': 1, 'he': 1, 'had': 1,
- 'great': 1, 'time': 1, 'i': 1, 'bought': 1, 'ice': 2, 'cream': 2,
- 'from': 1, 'truck': 1, 'yummy': 1, 'perfect': 1})
+#defaultdict(<class 'int'>, {'it': 2, 'was': 2, 'a': 3, 'sunny': 2, 'day': 2,
+#'we': 1, 'went': 1, 'to': 2, 'the': 2, 'dog': 2, 'park': 1, 'lots': 1,
+# 'of': 1, 'dogs': 1, 'were': 1, 'running': 1, 'around': 1, 'my': 1,
+# 'likes': 1, 'run': 1, 'too': 1, 'so': 1, 'he': 1, 'had': 1,
+# 'great': 1, 'time': 1, 'i': 1, 'bought': 1, 'ice': 2, 'cream': 2,
+# 'from': 1, 'truck': 1, 'yummy': 1, 'perfect': 1})
 
 print(tb.word_counts['sunny'])
-2
+# 2
 ```
 <!-- {"left" : 0.0, "top" : 1.04, "height" : 3.84, "width" : 9.75} -->
 
@@ -472,17 +470,17 @@ tb = TextBlob(text)
 
 print(tb.ngrams(n=2))
 
-[WordList(['It', 'was']), WordList(['was', 'a']), 
- WordList(['a', 'sunny']),
- WordList(['sunny', 'day']), WordList(['day', 'We']), 
- WordList(['We','went']), WordList(['went', 'to']), 
- WordList(['to', 'the']), WordList(['the', 'dog']), 
- WordList(['dog', 'park']),
- WordList(['park', 'Lots']), WordList(['Lots', 'of']),
- WordList(['of', 'dogs']), WordList(['dogs', 'were']),
- WordList(['were', 'running'])
-...
-...]
+# [WordList(['It', 'was']), WordList(['was', 'a']),
+#  WordList(['a', 'sunny']),
+#  WordList(['sunny', 'day']), WordList(['day', 'We']),
+#  WordList(['We','went']), WordList(['went', 'to']),
+#  WordList(['to', 'the']), WordList(['the', 'dog']),
+#  WordList(['dog', 'park']),
+#  WordList(['park', 'Lots']), WordList(['Lots', 'of']),
+#  WordList(['of', 'dogs']), WordList(['dogs', 'were']),
+#  WordList(['were', 'running'])
+# ...
+# ...]
 ```
 <!-- {"left" : 0.0, "top" : 0.9, "height" : 4.02, "width" : 9.75} -->
 
@@ -501,14 +499,14 @@ Notes:
 text_en = "I just had dinner"
 
 TextBlob(text_en).translate(to='es')
-Acabo de cenar
+# Acabo de cenar
 
 TextBlob(text_en).translate(to='ja')
-私はちょうど夕食
+# 私はちょうど夕食
 
 text_jp = u"私はちょうど夕食"
 TextBlob(text_jp).detect_language()
-ja
+# ja
 ```
 <!-- {"left" : 0.0, "top" : 2.16, "height" : 3.18, "width" : 6.78} -->
 

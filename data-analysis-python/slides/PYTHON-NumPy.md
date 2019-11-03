@@ -1,13 +1,14 @@
 # PYTHON NumPy
 
-<img src="../../assets/images/logos/numpy-logo-2.png" style="width:40%;" />
+<img src="../../assets/images/logos/numpy-logo-2.png" style="width:40%;" />  <!-- {"left" : 0.3, "top" : 6.0, "height" : 2.2, "width" : 5.5} -->
+
 
 ---
 
 ## Lesson Objectives
 
-  * Introduction to Numpy and why its needed
-  * Creating Numpy arrays
+  * Introduction to NumPy and why its needed
+  * Creating NumPy arrays
   * Multidimensional Arrays
   * Upcasting and Broadcasting
   * Indexing and Slicing
@@ -48,7 +49,7 @@ Notes:
 
   * Fast
 
-    - Numpy does numeric computation in native code
+    - NumPy does numeric computation in native code
     - (Fast C++)
 
   * Full Featured
@@ -66,13 +67,13 @@ Notes:
 Notes:
 
 ---
-## Numpy and SciPy
+## NumPy and SciPy
 
-<img src="../../assets/images/data-analysis-python/3rd-party/python-datascience-stack.jpg"  style="width:40%;float:right;"/><!-- {"left" : 7.21, "top" : 1.08, "height" : 1.19, "width" : 2.08} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/python-datascience-stack.jpg"  style="width:40%;float:right;"/><!-- {"left" : 5.5, "top" : 4.5, "height" : 3.5, "width" : 4.6} -->
 
   * SciPy is a companion package to NumPy
 
-    - Designed for Scientific computing
+    - Scientific computing
     - Built on top of NumPy
 
   * Some features:
@@ -81,11 +82,14 @@ Notes:
     - Linear Algebra
     - FFT
 
-  * Many packages built using NumPy and SciPy:
+  * Basis of **MANY** other packages:
+
+    - [Link](https://www.scipy.org/topical-software.html)
+
+Notes:
 
     - https://www.scipy.org/topical-software.html
 
-Notes:
 
 ---
 
@@ -124,16 +128,12 @@ Notes:
     - Native code (C++)
     - N-dimensional arrays
 
-  * Homogenously typed (usually numeric types: int64, float64, etc.)
+  * Homogeneously typed (usually numeric types: int64, float64, etc.)
 
   * NumPy needs to be imported
+    - `import numpy as np`
 
-```python
->>> import numpy as np
-```
-<!-- {"left" : 0, "top" : 3.67, "height" : 0.61, "width" : 4.98} -->
-
-  * Syntax to initialize a numpy array and check its data type
+  * Syntax to initialize a NumPy array and check its data type
 
 
 ```python
@@ -149,20 +149,22 @@ Notes:
 
 ---
 
-## Enter the NdArray
+## Enter the Ndarray
 
-* Numpy Arrays are fast:
+* NumPy Arrays are fast:
 
 - Native Code (C++)
 - Fast vectorized operations.
 
-* Homogenously typed (usually numeric types: int64, float64, etc.)
+* Homogeneously typed (usually numeric types: int64, float64, etc.)
 
 Notes:
 
 ---
 
 ## An ndarray
+ * Here is an example of how to create the array
+ * The name of the class is `np.ndarray`)
 
 ```python
 >>> a = np.array([1,2,3,4])
@@ -179,9 +181,9 @@ Notes:
 
 ## Array Types
 
-  * Arrays have types: (np.int64, np.float64, np.complex etc.)
+  * Arrays have types: (`np.int64`, `np.float64`, `np.complex` etc.)
 
-  * Types can be inferred implicitly. For Example, numpy infers the following as np.int64
+  * Types can be inferred implicitly. For Example, NumPy infers the following as `np.int64`
 
 ```python
 >>> a = np.array([1,2,3,4])
@@ -193,9 +195,10 @@ dtype(‘int64’)
 <!-- {"left" : 0, "top" : 2.4, "height" : 2.45, "width" : 8.09} -->
 
 ---
+
 ## Array Types
 
-  * Types can also be specified explicitly. For Example: numpy may infer the following as  np.int64, but we explicitly set the data type to be np.float64
+  * Types can also be specified explicitly. For Example: NumPy may infer the following as  `np.int64`, but we explicitly set the data type to be `np.float64`
 
 ```python
 >>> a = np.array([1,2,3,4], dtype=np.float64)
@@ -235,16 +238,16 @@ Notes:
 
 ---
 
-## MultiDim Arrays – shape, reshape, ndim
+## Multi-Dim Arrays – shape, reshape, ndim
 
 
   * Arrays can be multidimensional
 
   * Example of a 2D array:
 
-    - <npArray>.reshape – Reshapes array into desired dimensions
-    - <npArray>.shape – Returns shape of the array
-    - <npArray>.ndim – Returns rank or number of dimensions in array
+    - `<npArray>.reshape` – Reshapes array into desired dimensions
+    - `<npArray>.shape` – Returns shape of the array
+    - `<npArray>.ndim` – Returns rank or number of dimensions in array
 
 ```python
 >>> a = np.arange(15).reshape(3,5)
@@ -257,7 +260,7 @@ array[[ 0,  1,  2,  3,  4],
 >>> a.ndim
 2
 ```
-<!-- {"left" : 0, "top" : 3.54, "height" : 3.12, "width" : 7.57} -->
+<!-- {"left" : 0, "top" : 4.5, "height" : 3.12, "width" : 7.57} -->
 
 Notes:
 
@@ -266,16 +269,16 @@ Notes:
 
   * There are many ways to create arrays:
 
-  * Convert from list:  np.array(mylist)
+  * Convert from list:  `np.array(mylist)`
 
-  * Pre-initialized with np.zeroes or np.ones – type float64
+  * Pre-initialized with `np.zeroes` or `np.ones` – type `float64`
 
 
 ```python
->>> np.zeroes((3,2)) #float64 by default
+>>> np.zeroes((2,3)) #float64 by default
 array([[0., 0., 0.]
        [0., 0., 0.]]
->>> np.ones((3,2))
+>>> np.ones((2,3))
 array([[1., 1., 1.]
        [1., 1., 1.]]
 ```
@@ -290,15 +293,17 @@ Notes:
   * Range with np.arange
 
 ```python
->>> np.arange(10, 30, 5) #use for int types only
+>>> np.arange(10, 30, 5)
 array([10,15,20,25])
 ```
 <!-- {"left" : 0, "top" : 1.55, "height" : 0.81, "width" : 8.78} -->
 
+  * 
+
   * Linspace (n numbers from a to b)
 
 ```python
->>> np.linspace(0, 2, 9) #better for float types
+>>> np.linspace(0, 2, 9) 
 array([0., 0.25, 0.5, 0.75, 1., 1.25, 1.5, 1.75, 2.])
 ```
 <!-- {"left" : 0, "top" : 3.73, "height" : 0.81, "width" : 9.61} -->
@@ -309,7 +314,7 @@ Notes:
 
 ## Element-wise operations
 
-  * Basic arithmetic (+,-,*, /, //, ** ) is performed element-wise (on arrays)
+  * Basic arithmetic (`+`,`-`,`*`, `/`, `//`, `**` ) is performed element-wise (on arrays)
 
 ```python
 >>> a = np.array([1,2,3,4])
@@ -332,6 +337,7 @@ array([1, 64, 2187, 65536])
 Notes:
 
 ---
+
 ## Upcasting
 
   * When mixing types on arrays, results are  always “Upcasted”
@@ -379,7 +385,67 @@ Notes:
 Notes:
 
 ---
-## Broadcasting
+
+## Broadcasting Scenario 1
+
+  * Arrays have exactly the same shape.
+  * Perform Element-wise
+
+```python
+>>> a = np.array([1,2,3,4]).reshape(2,2)
+>>> b = np.array([5,6,7,8]).reshpae(2,2)
+>>> a
+array([[1, 2],
+       [3, 4]])
+>>> b
+array([[5, 6],
+       [7, 8]])
+>>> a + b
+array([[ 6,  8],
+       [10, 12]])
+```
+
+---
+
+## Broadcasting Scenario 2:
+  * Array times a scalar
+  * Notice how scalar product is element-wise
+```pycon
+>>> a = np.arange(4).reshape(2,2)
+>>> a
+array([[0, 1],
+       [2, 3]])
+>>> a * 3.
+array([[0., 3.],
+       [6., 9.]])
+>>>
+```
+
+---
+
+## Broadcasting Scenario 3:
+  * Matching in one dimension, 1 in other dimension
+
+```pycon
+>>> a = np.arange(9.).reshape(3,3)
+>>> a
+array([[0., 1., 2.],
+       [3., 4., 5.],
+       [6., 7., 8.]])
+>>> b = np.arange(3).reshape(3,1)
+>>> b
+array([[0],
+       [1],
+       [2]])
+>>> a + b
+array([[ 0.,  1.,  2.],
+       [ 4.,  5.,  6.],
+       [ 8.,  9., 10.]])
+```
+
+---
+
+## Broadcasting Scenario 4:
 
   * Example for broadcasting in 2D arrays
 
@@ -436,7 +502,7 @@ Notes:
 
 ## Slicing
 
-  * Syntax **- <npArray>[m : n : i]** – NumPy slices the array from index **“m”** to index **“n-1”** while incrementing the index by **“i”**
+  * Syntax: `<npArray>[m : n : i]` – NumPy slices the array from index **“m”** to index **“n-1”** while incrementing the index by **“i”**
 
 
 ```python
@@ -483,16 +549,16 @@ Notes:
 
   * Access elements from Array using indexes
 
-    - Indexes start with 0 v1[3] => 3
-    - v1[np.array([1,3])] =>  1,3
-    - v1[2:4] => 2,3
+    - Indexes start with 0: `v1[3] => 3`
+    - `v1[np.array([1,3])]` =>  1,3
+    - `v1[2:4]` => 2,3
 
 
 Notes:
 
 ---
 
-## Numpy Array Operations
+## NumPy Array Operations
 
   * Arrays can be operated on just like first class variables
 
@@ -516,7 +582,7 @@ Notes:
 
 ---
 
-## Numpy Array Operations
+## NumPy Array Operations
 
 
 ```python
@@ -566,7 +632,7 @@ array([[-3, -2, -1, 0, 1],
 Notes:
 
 ---
-## Numpy Operations
+## NumPy Operations
 
 
 ```python
@@ -619,6 +685,7 @@ array([5, 4, 3, 2, 1])
 Notes:
 
 ---
+
 ## Advanced Array Operations
 
   * NumPy works with Python to **append** or **delete** elements by simple function calls
@@ -642,7 +709,7 @@ Notes:
 ---
 ## Advanced Array Operations - Filtering
 
-  * Filtering is an important numpy operation
+  * Filtering is an important NumPy operation
 
   * **np.any()** and **np.all()** help in ’or’ and ‘and’ operations
 
@@ -676,8 +743,8 @@ Notes:
 
 ## Matrices
 
-  * Matrices in NumPy are basically 2-D arrays
-
+  * NumPy has a special `matrix` class which differs slightly from the array class
+  * Matrices in NumPy are basically 2-D arrays (with one difference)
   * They contain elements of the SAME type.
 
 
@@ -698,13 +765,13 @@ Notes:
 
 ## Matrix Manipulation
 
-  * Numpy can represent matrices 2 ways:
+  * NumPy can represent matrices 2 ways:
 
     - As 2-D ndarrays (**preferred for Python > 3.5**)
 
     - np.mat class (subclassed from ndarray) (Python 2.x)
 
-  * Main difference is matrix multiply syntax
+  * Main difference is matrix multiply syntax: (`*` vs `@`)
 
 
 ```python
@@ -734,7 +801,7 @@ Notes:
 
 ## Matrix Manipulation
 
-  * Numpy represents matrices as 2D ndarrays in Python >3.5
+  * NumPy represents matrices as 2D ndarrays in Python >3.5
 
 
 ```python
@@ -764,7 +831,8 @@ Notes:
 
 ## Matrix Manipulation
 
-  * Numpy represents matrices as 2D ndarrays in Python >3.5
+  * NumPy represents matrices as 2D ndarrays in Python >3.5
+  * Internally, NumPy stores matrices the same way as 2-D ndarrays in Python > 3.5
 
 
 ```python
@@ -774,7 +842,7 @@ matrix([[1, 2],
         [3, 4]])
 
 >>> print(np.linalg.det(a)) # determinant(a)
--2.0000000000000004
+-2.0
 
 >>> print(np.inv) # inverse(a)
 matrix([[-2. ,  1. ],
@@ -818,7 +886,7 @@ Notes:
 
 ## Sparse Matrices
 
-  * The scipy.sparse package has a sparse matrix
+  * The `scipy.sparse` namespace has a sparse matrix
 
   * Great for times where we have a large matrix
 
@@ -834,9 +902,9 @@ Matrix([0,0,0,0],
 ```
 <!-- {"left" : 0, "top" : 2.44, "height" : 1.67, "width" : 10.25} -->
 
-* Sparse.csr_matrix: row oriented matrix
+* `scipy.parse.csr_matrix`: row oriented matrix
 
-* Sparse.csc_matrix: column oriented matrix.
+* `scipy.sparse.csc_matrix`: column oriented matrix.
 
 Notes:
 
@@ -867,7 +935,7 @@ Notes:
 
 ---
 
-## Lab: Numpy
+## Lab: NumPy
 
 
   * Overview:
@@ -880,6 +948,6 @@ Notes:
 
   * Instructions:
 
-    - **01-intro / 03-numpy.ipynb**
+    - **numpy/1-numpy.ipynb**
 
 Notes:

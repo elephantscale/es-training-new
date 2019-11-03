@@ -7,21 +7,23 @@
 
  * 3 days
 
- *  **Day 1 (Learning Python: Intro)** 
+ *  **Day 1 (Learning Python: Level 2)** 
+     - Data Science Intro
 
-     - Python intro (types, lists, arrays…)
-
-     - NumPy
-
-     - Pandas
-
- *  **Day 2 (Learning Analytics: Intro - Intermediate)** 
-
-     - Statistics
+     - Scipy
+    
+     - Stats in Python
 
      - Visualization
 
+
+ *  **Day 2 (Learning Analytics:  Intermediate)** 
+
      - Introducing Scikit-learn
+
+     - Data Transformation
+
+     - Dimensionality Reduction
 
      - Regression Analysis
 
@@ -31,27 +33,7 @@ Notes:
 ---
 
 
-## Agenda Continued
-
- *  **Day 3  (Data Analysis: Intermediate**  **)** 
-
-     - Cluster Analysis
-
-     - Classification
-
-     - Text Analytics
-
-     - Topic Modeling
-
-     - Recommendations
-
-
-Notes: 
-
-
----
-
-## Pre-requisites for Python Class
+## Pre-requisites for Python Level 2 Class
 
 
  * Basic Python knowledge is assumed

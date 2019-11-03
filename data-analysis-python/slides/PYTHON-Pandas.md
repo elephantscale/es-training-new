@@ -14,7 +14,9 @@
 * Reading a real world dataset into pandas and doing some data exploration
 
 ---
+
 # Introduction
+
 ---
 
 ## Why Pandas
@@ -58,13 +60,13 @@ Notes:
                          'Seattle', 'New York'])
 >>> cities
 
-# 0    San Francisco
-# 1      Los Angeles
-# 2          Seattle
-# 3         New York
-# dtype: object
+0    San Francisco
+1      Los Angeles
+2          Seattle
+3         New York
+dtype: object
 ```
-<!-- {"left" : 0.0, "top" : 4.42, "height" : 2.9, "width" : 6.94} -->
+<!-- {"left" : 0.57, "top" : 6.4, "height" : 2.16, "width" : 6.05} -->
 
 Notes:
 
@@ -75,13 +77,7 @@ Notes:
   * All elements in a Series must be of same type (NaN is okay)
   * Defaults to float64 (notice that it is converted!)
   * Pandas needs to be imported
-
-```python
->>> import pandas as pd
-```
-<!-- {"left" : 0.0, "top" : 3.0, "height" : 0.57, "width" : 4.61} -->
-
-
+    -  `import pandas as pd`
   * Example - Creating a Series
 
 ```python
@@ -100,37 +96,23 @@ dtype: float64
 Notes:
 
 ---
+
+
 ## Dtypes
 
 
-  * Series in pandas have a dtype:
+  * Series in pandas have a `dtype`:
 
-    - types of np.number (float, int) of lengths 8,16,32,64 (e.g. float64, int8)
-    - bool (Boolean)
-    - datetime types (datetime64, timedelta64)
-    - Sn (fixed witdth string) - not commonly used.
-    - "category": an enum or factor type variable.
-    - object (a pointer to any object, including a string)
+    - types of `np.number` (`float, int`) of lengths `8`,`16`,`32`,`64` (e.g. `float64`, `int8`)
+    - `bool` (Boolean)
+    - `datetime` types (`datetime64`, `timedelta64`)
+    - `Sn` (fixed width string) - not commonly used.
+    - `category`: an enum or factor type variable.
+    - `object` (a pointer to any object, including a string)
 
   * Same type (no mix and match)
 
-    - Though object types can include pointers to any python object
-
-
-Notes:
-
----
-
-## Series - Data types
-
-  * Series in pandas have a single dtype. Multiple elements in a Pandas Series cannot have different dtypes.
-  * The dtypes can be:
-    - types of np.number (float, int) of lengths 8,16,32,64 (e.g. float64, int8, int16 etc.)
-    - bool (Boolean)
-    - datetime types (datetime64, timedelta64)
-    - A few more like Sn (fixed witdth string) - not commonly used,
-    - "category": an enum or factor type variable.
-    - object (a pointer to any object, including a string)
+    - Though `object` types can include pointers to any python object
 
 
 Notes:
@@ -139,7 +121,7 @@ Notes:
 
 ## Creating Series
 
-* Here are more examples of creating Series
+* Here are more examples of creating Series:
 
 ```python
 >>> data = np.array(["a", "b", "c", "d"])
@@ -151,7 +133,7 @@ Notes:
 3    d
 dtype: object
 ```
-<!-- {"left" : 0.0, "top" : 1.32, "height" : 2.2, "width" : 6.41} -->
+<!-- {"left" : 0.0, "top" : 1.56, "height" : 2.2, "width" : 6.41} -->
 
 
 ```python
@@ -162,7 +144,7 @@ dtype: object
 2    5
 dtype: int64
 ```
-<!-- {"left" : 0.0, "top" : 3.64, "height" : 1.88, "width" : 6.43} -->
+<!-- {"left" : 0.0, "top" : 4.0, "height" : 1.88, "width" : 6.43} -->
 
 ```python
 >>> s = pd.Series(5, index=["a", "b", "c"], dtype = np.complex)
@@ -170,9 +152,9 @@ dtype: int64
 a    (5+0j)
 b    (5+0j)
 c    (5+0j)
-dtype: int64
+dtype: complex
 ```
-<!-- {"left" : 0.0, "top" : 5.64, "height" : 1.74, "width" : 9.69} -->
+<!-- {"left" : 0.0, "top" : 6.15, "height" : 1.74, "width" : 9.69} -->
 
 
 Notes:
@@ -187,16 +169,16 @@ Notes:
 >>> s = pd.Series(["a", "b", "c"], index = [1, 2, "favorite"])
 >>> s = pd.Series(s)
 >>> s
-1						a
-2						b
+1			a
+2			b
 favorite		c
 dtype: object
->>> s[1]
+>>> s[0]
 'a'
 >>> s["favorite"]
 'c'
 ```
-<!-- {"left" : 0.0, "top" : 1.38, "height" : 3.22, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.65, "height" : 3.22, "width" : 10.25} -->
 
 Notes:
 
@@ -240,9 +222,9 @@ Notes:
 |--------------------------------|---------------------------------------|----------------------------------------------------------------------------------	|
 | Is it typed?                   | Yes, same type.                       | Yes, same type,  but can use "object" type that  can point to different objects. 	|
 | Multi-Dimensional?             | Any number of dimensions              | Single Dimensional                                                               	|
-| Has Index?                     | mplicitly an integer index myarray[0] | Explicitly has an settable  index. myseries['abc'],  defaults to integer index.  	|
-| Follows numpyarray  interface? | Yes                                   | Yes                                                                              	|
-| Convert to numpyarray?         | Already is!                           | Series.values                                                                    	|
+| Has Index?                     | implicitly an integer index myarray[0] | Explicitly has an settable  index. myseries['abc'],  defaults to integer index.  	|
+| Follows NumPy  interface? | Yes                                   | Yes                                                                              	|
+| Convert to numpy array?         | Already is!                           | Series.values                                                                    	|
 
 <!-- {"left" : 0.65, "top" : 1.57, "height" : 3.87, "width" : 8.96, "columnwidth" : [2.81, 3.08, 3.07]} -->
 
@@ -251,6 +233,7 @@ Notes:
 ---
 
 # DataFrame
+
 ---
 
 ## Data Frame
@@ -355,6 +338,7 @@ Notes:
 ---
 
 # Operations on DataFrame
+
 ---
 
 ## Operations on DataFrame - Create
@@ -372,7 +356,7 @@ city  pop  rain
 2    Los Angeles   20   1.0
 3      San Diego   24   3.4
 ```
-<!-- {"left" : 0.0, "top" : 1.38, "height" : 3.21, "width" : 10.27} -->
+<!-- {"left" : 0.0, "top" : 1.5, "height" : 3.21, "width" : 10.27} -->
 
 |   | city          | pop | rain |
 |---|---------------|-----|------|
@@ -386,6 +370,7 @@ city  pop  rain
 Notes:
 
 ---
+
 ## Operations on DataFrame - dtypes
 
   * Checking Data Types in a DataFrame
@@ -398,7 +383,7 @@ pop       int64
 rain    float64
 dtype: object
 ```
-<!-- {"left" : 0.0, "top" : 1.38, "height" : 1.74, "width" : 3.61} -->
+<!-- {"left" : 0.0, "top" : 1.5, "height" : 1.74, "width" : 3.61} -->
 
 |   | city          | pop | rain |
 |---|---------------|-----|------|
@@ -434,15 +419,16 @@ Notes:
 	       'rain' : [2, 10,1]})
 
 
-> sandiego = pd.DataFrame( {'city' :'San Diego','pop':24, 'rain':3.4)
+>>> sandiego = pd.DataFrame( {'city' :'San Diego','pop':24, 'rain':3.4)
 
-> cities = cities.append(sandiego)
+>>> cities = cities.append(sandiego)
 ```
 <!-- {"left" : 0.0, "top" : 4.18, "height" : 2.42, "width" : 10.25} -->
 
 Notes:
 
 ---
+
 ## Slicing Data Frames
 
 
@@ -453,6 +439,7 @@ Notes:
 Notes:
 
 ---
+
 ## Data Frame Slicing
 
 
@@ -478,7 +465,7 @@ Notes:
 ```python
 # note we specify row index
 
-> cities.iloc[[1]]  # gets a dataframe of one row
+> cities.iloc[[0]]  # gets a dataframe of one row
 
    city  pop  rain
 0  San Francisco   10     2
@@ -509,7 +496,7 @@ Columns are returned as series
 # by name  dataframe['column_name'] or dataframe.
 > cities['pop']  # can also say cities.pop
 0  10
-15
+1  15
 Name: cities, dtype: Int64 [ ]:
 
 # specify index: dataframe[:,idx ]
@@ -554,7 +541,7 @@ Notes:
 1       Seattle 15
 2   Los Angeles 20
 
-type(cities.iloc[:,[1]])
+type(cities.iloc[:,[0]])
 "Dataframe"
 ```
 <!-- {"left" : 0.0, "top" : 3.62, "height" : 3.59, "width" : 10.25} -->
@@ -589,7 +576,7 @@ Sub dataframe
 | **2** | Los Angeles   | **20** | 1    |
 | **3** | San Diego     | **24** | 3.4  |
 
-<!-- {"left" : 4.56, "top" : 1.38, "height" : 2.01, "width" : 5.46, "columnwidth" : [0.9, 1.91, 1.24, 1.41]} -->
+<!-- {"left" : 4.56, "top" : 1.5, "height" : 2.01, "width" : 5.46, "columnwidth" : [0.9, 1.91, 1.24, 1.41]} -->
 
 Notes:
 
@@ -598,11 +585,13 @@ Notes:
 ## Accessing Dataframes : Series vs. Sub Dataframe
 
 ```python
-Series
+# Series
 
 > cities.iloc[:,1]
-
-10  15  20  24
+0  10
+1  15
+2  20
+3  24
 
 > type(cities.iloc[:,1])
 "< 'pandas.core.series.Series'>"
@@ -626,9 +615,9 @@ Notes:
 
   * Dataframes, like Series, have an index.
 
-  * By default autoincrementing integer type.
+  * By default auto-incrementing integer type.
 
-  * Access with.loc[](not iloc[])
+  * Access with `.loc[]` (not `iloc[]`)
 
   * Access
 
@@ -748,7 +737,7 @@ Notes:
 3        San Diego
 Name: city, dtype: object
 ```
-<!-- {"left" : 0.0, "top" : 1.38, "height" : 2.03, "width" : 4.94} -->
+<!-- {"left" : 0.0, "top" : 1.5, "height" : 2.03, "width" : 4.94} -->
 
 |     | city              | pop    | rain |
 |-----|---------------    |--------|------|
@@ -938,7 +927,7 @@ Notes:
 1      Seattle   15  10.0
 2  Los Angeles   20   1.0
 ```
-<!-- {"left" : 0.0, "top" : 1.38, "height" : 1.44, "width" : 8.28} -->
+<!-- {"left" : 0.0, "top" : 1.5, "height" : 1.44, "width" : 8.28} -->
 
 |       | city           | pop   | rain |   	
 |----   |--------------  |----   |----- |
@@ -1071,7 +1060,7 @@ Notes:
 ---
 ## Operations on DataFrame - Sub-setting
 
-  * Reinitializing our DataFrame
+  * Re-initializing our DataFrame
 
 ```python
 >>> cities = pd.DataFrame({"city" :
@@ -1088,7 +1077,7 @@ Notes:
 3      San Diego   24   3.4  372.39
 4       Portland   12   8.3  145.09
 ```
-<!-- {"left" : 0.0, "top" : 1.38, "height" : 4.26, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.5, "height" : 4.26, "width" : 10.25} -->
 
 Notes:
 
@@ -1153,7 +1142,7 @@ Los Angeles     20   1.0  502.76
 San Diego       24   3.4  372.39
 Portland        12   8.3  145.09
 ```
-<!-- {"left" : 0.0, "top" : 1.38, "height" : 2.9, "width" : 6.94} -->
+<!-- {"left" : 0.0, "top" : 1.5, "height" : 2.9, "width" : 6.94} -->
 
 
 | city              | pop | rain | area   |
@@ -1235,7 +1224,9 @@ Los Angeles     20   1.0
 Notes:
 
 ---
+
 # Statistics Operations
+
 ---
 
 ## Statistics Operations
@@ -1340,6 +1331,8 @@ Notes:
  *  **Instructions**:
     - Lab : Basic Stats
 
+ *  **Location**:
+    - `stats/1-stats-basics.ipynb`
 
 Notes:
 
@@ -1349,6 +1342,7 @@ Notes:
 ---
 
 # Advanced Operations
+
 ---
 
 ## Working With Raw Data
@@ -1373,7 +1367,7 @@ Notes:
 
   * Missing values can often skew analysis
 
-  * Fields like Machine Learning often see lower accuracies in model predictions due
+  * Fields like Machine Learning often see lower accuracy in model predictions due
     to missing values
 
   * Python represents them with NA (Not Available)
@@ -1395,8 +1389,9 @@ Notes:
 Notes:
 
 ---
+
 ## Row or Column wise function application
-  * Pandas allows operations to be done on a column/row or a group of columns/rows using **apply()**
+  * Pandas allows operations to be done on a column/row or a group of columns/rows using `apply()`
 ```python
 >>> cities["popPerArea"] = cities.apply(lambda x : cities["pop"] / cities["area"])
 >>> cities
@@ -1418,7 +1413,7 @@ Notes:
 ## Sorting - Rows - by values
 
 
-  * Pandas allows sorting (by values) to be done on the entire DataFrame using **sort_values()**
+  * Pandas allows sorting (by values) to be done on the entire DataFrame using `sort_values()`
 
 ```python
 >>> cities = cities.sort_values("rain", ascending = False) # sorts by values
@@ -1439,7 +1434,7 @@ Notes:
 
 ## Sorting - Rows - by index
 
-  * Pandas allows sorting (by index) to be done on the entire DataFrame using **sort_index()**
+  * Pandas allows sorting (by index) to be done on the entire DataFrame using `sort_index()`
 
 ```python
 >>> cities = cities.sort_index() # sorts by index label
@@ -1457,9 +1452,10 @@ Seattle         15  10.0  142.55    0.105226
 Notes:
 
 ---
+
 ## Sorting - Rows - by index
 
-  * The "ascending" parameter can be set to "False" for sorting in descending order
+  * The `ascending` parameter can be set to `False` for sorting in descending order
 
 ```python
 >>> cities = cities.sort_index(ascending = False)
@@ -1473,7 +1469,7 @@ Notes:
 
 ## Sorting - Columns - by column header
 
-  * Pandas allows sorting (by column header) to be done on the entire DataFrame using **sort_index(axis = 1)**
+  * Pandas allows sorting (by column header) to be done on the entire DataFrame using `sort_index(axis = 1)`
 
 ```python
 >>> cities = cities.sort_index(axis = 1) # sorts by column header
@@ -1491,6 +1487,7 @@ Seattle        142.55   15    0.105226  10.0
 Notes:
 
 ---
+
 ## Splitting data into groups
 
   * The following adds another column "state" to our DataFrame
@@ -1522,6 +1519,7 @@ Seattle        142.55   15    0.105226  10.0    WA
 Notes:
 
 ---
+
 ## Splitting data into groups
 
   * The following splits our DataFrame into groups
@@ -1545,7 +1543,7 @@ San Francisco  231.89   10    0.043124   2.0    CA
 | **San Francisco**| **231.89** | **10** | **0.043124** | **2.0** | **CA**|
 | Seattle          | 142.55     | 15     | 0.105226     | 10.0    | WA    |
 
-<!-- {"left" : 1, "top" : 4.04, "height" : 3, "width" : 8.25, "columnwidth" : [2.01, 1.38, 1.1, 1.78, 1.1, 0.88]} -->
+<!-- {"left" : 1, "top" : 4.04, "height" : 3, "width" : 8.25, "columnwidth" : [2.01, 1.5, 1.1, 1.78, 1.1, 0.88]} -->
 
 Notes:
 
@@ -1563,7 +1561,7 @@ Notes:
 'Name':['Felton', 'Gloria', 'Hilson', 'Icarus',
  'John'], 'subject_id':['History', 'Math', 'Math', 'CS', 'Biology']})
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 2.42, "width" : 10.24} -->
+<!-- {"left" : 0, "top" : 1.5, "height" : 2.42, "width" : 10.24} -->
 
 ```python
 >>> left
@@ -1591,9 +1589,9 @@ Notes:
 
 ---
 
-## Concatenating DataFrames - rowwise
+## Concatenating DataFrames - row-wise
 
-  * The following concatenates DataFrames rowwise
+  * The following concatenates DataFrames row-wise
 
 ```python
 >>> concat0 = pd.concat([left, right], axis = 0)
@@ -1610,14 +1608,14 @@ Notes:
 3   9  Icarus         CS
 4  10    John    Biology
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 3.71, "width" : 8.78} -->
+<!-- {"left" : 0, "top" : 1.5, "height" : 3.71, "width" : 8.78} -->
 
 Notes:
 
 ---
-## Concatenating DataFrames - columnwise
+## Concatenating DataFrames - column-wise
 
-  * The following concatenates DataFrames columnwise
+  * The following concatenates DataFrames column-wise
 
 
 ```python
@@ -1630,7 +1628,7 @@ Notes:
 3   4  Dustin    History   9  Icarus       CS
 4   5    Elsa         CS  10    John  Biology
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 2.39, "width" : 8.78} -->
+<!-- {"left" : 0, "top" : 1.5, "height" : 2.39, "width" : 8.78} -->
 
 Notes:
 
@@ -1654,11 +1652,12 @@ Notes:
 3   6  Felton         CS
 4  10    John         CS
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 4.01, "width" : 9.75} -->
+<!-- {"left" : 0, "top" : 1.5, "height" : 4.01, "width" : 9.75} -->
 
 Notes:
 
 ---
+
 ## Merging DataFrames
 
   * The following merges "concat0 "+"toMerge" to one DataFrame
@@ -1699,28 +1698,29 @@ Notes:
 
   * Instructions:
 
-    - **01-intro/**
+    - **pandas/1-intro**
 
 Notes:
 
 ---
 
 # Pandas and Files
+
 ---
 
 ## Reading Data From Files
 
   * Python can read from a variety of files.
 
-  * Text : CSV, TSV   - **pd.read_csv(), pd.read_table()**
+  * Text : CSV, TSV   - `pd.read_csv()`, `pd.read_table()`
 
-  * JSON: pd.read_json- **pd.read_json()**
+  * JSON: pd.read_json- `pd.read_json()`
 
-  * Excel spreadsheets  - **pd.read_excel()**
+  * Excel spreadsheets  - `pd.read_excel()`
 
-  * Stata/SAS files - **pd.read_stata(), pd.read_sas()**
+  * Stata/SAS files - `pd.read_stata()`, `pd.read_sas()`
 
-  * More handy functions in  **read.***
+  * More handy functions in  `read_*`
 
 
 ```python
@@ -1736,57 +1736,28 @@ Notes:
 
 ---
 
-## Reading data from files
-
-  * Python can read from a variety of files.
-
-    - Text : CSV, TSV   - pd.read_csv(), pd.read_table()
-    - JSON: pd.read_json- pd.read_json()
-    - Excel spreadsheets  - pd.read_excel()
-    - Stata/SAS files - pd.read_stata(), pd.read_sas()
-    - More handy functions in  read.*
-
-  * Reading from csv file using pd.read_csv()
-
-```python
->>> fileName = "/path/to/file/csvFile.csv"
->>> df = pd.read_csv(fileName)
-```
-<!-- {"left" : 0, "top" : 4.26, "height" : 0.86, "width" : 7.78} -->
-
-  * Reading from url using pd.read_csv()
-
-```python
->>> url = "http://someDomain.com/data.csv"
->>> df = pd.read_csv(url)
-```
-<!-- {"left" : 0, "top" : 6.18, "height" : 0.86, "width" : 7.78} -->
-
-Notes:
-
----
-
 ## Reading data from files - Schema Inference
 
-  * pd.read_csv() will try to infer the data schema
+  * `pd.read_csv()` will try to infer the data schema
 
   * Column Header
 
     - It will infer first line as header
     - No header? => Sets header = None
     - Can also explicitly set column headers with the names attribute
-      - pd.read_csv(fileName, names=['one', 'two', 'three'])
+      - `pd.read_csv(fileName, names=['one', 'two', 'three'])`
 
-  * pd.read_json(), pd.read_parquet() will read metadata
+  * `pd.read_json()`,` pd.read_parquet()` will read metadata
 
     - No need for header or column names
+
 Notes:
 
 ---
 
 ## Inferring types
 
-  * Pandas read_csv and similar functions will try to infer types
+  * Pandas `read_csv` and similar functions will try to infer types
 
   * Strings and types that appear to be mixed are treated as type object (pointer to value) - which are basically strings.
 
@@ -1802,11 +1773,9 @@ Notes:
 ## Reading From Databases
 
   * Pandas has good connectivity with databases.
-
-  * pyodbc - uses ODBC protocol
-
-  * Various database packages
-
+  * Any DB-API compliant database package will work.
+    - example: `pyodbc` (ODBC Protocol)
+    - various other packages
   * Importing large datasets (> 1GB) from DB could be slow.
 
   * For faster imports:
@@ -1839,9 +1808,9 @@ Notes:
 ## Saving data to files
 
 
-  * write.* family supports exporting to multiple formats
+  * `df.to_*` family supports exporting to multiple formats
 
-  * Can use <df>.to_csv("fileName"), <df>.to_excel("fileName"), <df>.to_dict("fileName"), <df>.to_json("fileName") etc
+  * Can use `<df>.to_csv("fileName")`, `<df>.to_excel("fileName")`, `<df>.to_dict("fileName")`, `<df>.to_json("fileName")` etc
 
   * Example:
 
@@ -1853,31 +1822,16 @@ Notes:
 
   * Note :
 
-    - Separator is ',' by default, but can be changed to '\t' etc
-    - Encoding can be changed
+    - Separator is `','` by default, but can be changed to `'\t'` etc
+    - Encoding can be changed, UTF-8 preferred.
     - Python will write the index too, unless you say (index = False)
 
-  * There are many other "pd.to_*()" type functions
+  * There are many other `pd.to_*()` type functions
 
 Notes:
 
 ---
 
-## Working With Raw Data
-
-* Datasets are seldom in a format to be used.
-
-* Big part of data science is
-
-- Cleaning data up
-- Combining data sets etc.
-
-* The 'not so sexy part of data science'
-
-
-Notes:
-
----
 
 ## Dealing With Missing Values
 
@@ -1889,9 +1843,9 @@ Notes:
 
   * Python represents them with `np.nan`, also known as **NA**  (Not Available).
 
-  * Use **df.dropna()** to remove **NA** values.
+  * Use `df.dropna()` to remove **NA** values.
 
-  * Use df.fillna() to fill them with a value (more on this later)
+  * Use `df.fillna()` to fill them with a value (more on this later)
 
 
 <img src="../../assets/images/data-analysis-python/Dealing-With-Missing-Values-01.png" alt="Dealing-With-Missing-Values-01.png" style="width:60%;"/><!-- {"left" : 0.81, "top" : 4.66, "height" : 2.4, "width" : 8.62} -->
@@ -1902,7 +1856,7 @@ Notes:
 
 ## Combining Datasets: concat()
 
-  * **concat()** will merge two dataframes column-wise
+  * `concat()` will merge two DataFrames column-wise
 
 
 <img src="../../assets/images/data-analysis-python/Combining-Datasets.png" alt="Combining-Datasets.png" style="width:60%;"/><!-- {"left" : 0.17, "top" : 1.69, "height" : 4.74, "width" : 9.91} -->
@@ -1915,7 +1869,7 @@ Notes:
 
 ## Combining Dataframes : merge()
 
-  * **merge()** will try to take into account common column names and row names
+  * `merge()` will try to take into account common column names and row names
 
 
 <img src="../../assets/images/data-analysis-python/merge.png" alt="merge.png" style="width:60%;"/><!-- {"left" : 0.73, "top" : 1.93, "height" : 4.69, "width" : 8.79} -->
@@ -1932,7 +1886,7 @@ Notes:
 
   * This is called **'de-duping'**
 
-  * Use **df.drop_duplicates()**  function
+  * Use `df.drop_duplicates()`  function
 
 Notes:
 
@@ -1940,7 +1894,7 @@ Notes:
 
 ## Sorting Data Frames : sort_values()
 
-  * **sort_values()** function can help you sort a dataframe by columns
+  * `sort_values()` function can help you sort a DataFrame by columns
 
 
 ```python
@@ -1953,7 +1907,7 @@ Notes:
 3   Los Angeles  20    1
 4     San Diego  20    2
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 2.39, "width" : 8.44} -->
+<!-- {"left" : 0, "top" : 1.5, "height" : 2.39, "width" : 8.44} -->
 
 Notes:
 
@@ -1968,12 +1922,12 @@ Notes:
 
 
            city pop rain
+3   Los Angeles  20    1
+4     San Diego  20    2
 2       Seattle  15   10
 1 San Francisco  10    2
-4     San Diego  20    2
-3   Los Angeles  20    1
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 2.56, "width" : 9.22} -->
+<!-- {"left" : 0, "top" : 1.5, "height" : 2.56, "width" : 9.22} -->
 
 Notes:
 
@@ -2010,52 +1964,16 @@ Notes:
 
   * Pandas can help us in dealing with categorical variables
 
-    - Dtype="category"
+    - `type="category"`
 
-  * factorize()
+  * `factorize()`
 
     - Indexes and converts data into a index
 
-  * get_dummies()
+  * `get_dummies()`
 
     - Converts into a group of "one-hot" encoded variables.
 
-
-Notes:
-
----
-## Lab: Pandas
-
-  * Overview:
-
-    - Load data from files and cleanup
-
-  * Approximate time:
-
-    - 15 minutes
-
-  * Instructions:
-
-    - **01-intro / 04-Pandas**
-
-
-Notes:
-
----
-
-## Lab: Pandas - Intro
-
-  * Overview:
-
-    - Learning Pandas
-
-  * Approximate time:
-
-    - 10 minutes
-
-  * Instructions:
-
-    - **05__pythonPandas | 5.1-pandasIntro.ipynb**
 
 Notes:
 
@@ -2100,42 +2018,7 @@ Notes:
 
   * Instructions:
 
-    - **01-intro / 05-Exploring_Pandas**
-
-Notes:
-
----
-
-## Lab: Data Preparation
-
-  * Overview:
-
-    - Load data from files and cleanup
-
-  * Approximate time:
-
-    - 15 minutes
-
-  * Instructions:
-
-    - **07-data-frame / 7.3-data-prep.md**
-
-Notes:
-
----
-## Lab: Pandas - Exploration
-
-  * Overview:
-
-    - Learning Pandas by exploration on the famous NYCflights13 dataset
-
-  * Approximate time:
-
-    - 20 minutes
-
-  * Instructions:
-
-    - **005__pythonPandas | 5.2-pandasExploration.ipynb**
+    - **pandas/2-Exploring_Pandas**
 
 Notes:
 

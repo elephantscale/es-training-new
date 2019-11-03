@@ -26,7 +26,7 @@ Notes:
 * Scikit-Learn is a machine learning library written in Python
 * Developed by David Cournapeau in 2007
   * Now most popular ML library after Tensorflow
-* Why Scikit-Learn is popular?
+* Why is Scikit-Learn popular?
   * Consistent API
   * Complete Documentation
   * Comprehensive - has lots of popular algorithms implemented
@@ -40,6 +40,7 @@ Notes:
 ---
 
 ## Version History
+ * Current: July 2019: scikit-learn 0.21.3
  * July 2017. scikit-learn 0.19.0
  * September 2016. scikit-learn 0.18.0
  * November 2015. scikit-learn 0.17.0[9]
@@ -261,8 +262,9 @@ plt.scatter(x[:, 0], x[:, 1], marker='o', c=y,
 
 ## Estimators
 
-<img src="../../assets/images/data-analysis-python/scikit-estimator-1.png" style="width:40%;float:right;"/>
-<img src="../../assets/images/data-analysis-python/scikit-estimator-2.png" style="width:40%;float:right;clear:both;"/>
+<img src="../../assets/images/data-analysis-python/scikit-estimator-1.png" style="width:40%;float:right;"/> <!-- {"left" : 0.25, "top" : 6, "height" : 1.17, "width" : 9.32} -->
+<img src="../../assets/images/data-analysis-python/scikit-estimator-2.png" style="width:40%;float:right;clear:both;"/> <!-- {"left" : 0.25, "top" : 7, "height" : 1.28, "width" : 8.13} -->
+
 
 
  * Estimators are used to
@@ -270,18 +272,11 @@ plt.scatter(x[:, 0], x[:, 1], marker='o', c=y,
     - and create models by training on data
 
  * Algorithms (Regressions / Classifications) are implemented as Estimator
-
- ```python
-    # training
-    estimator.fit(data)
- ```
-<!-- {"left" : 0, "top" : 1.59, "height" : 0.54, "width" : 3.94} -->
+   - training:  `estimator.fit(data)`
 
  * An example of transforming data
-
- ```python
- transformed = estimator.transform(data)
- ```
+   - transforming data: 
+   - `transformed = estimator.transform(data)`
 
 
 Notes:
@@ -309,19 +304,12 @@ scaled_data = scaler.transform(data)
 * Can take 1 or 2 parameters
 * 1 Parameter is just data
    - usually for unsupervised learning
-
-```python
-estimator.fit(x)
-```
-<!-- {"left" : 0, "top" : 2.93, "height" : 0.54, "width" : 3.94} -->
+   - `estimator.fit(data)`
 
 * 2 parameters are data + labels
    - usually for supervised learning
+   - `estimator.fit(x_train, y_train)`
 
-```python
-estimator.fit(x_train, y_train)
-```
-<!-- {"left" : 0, "top" : 4.74, "height" : 0.54, "width" : 5.28} -->
 
 Notes:
 
@@ -331,15 +319,8 @@ Notes:
  * Most estimators have a .predict() method
  * Designed for delivering labels on new data
  * For unsupervised learning, for example clustering, `predict()` will assign data to cluster
-
-```python
-
-# training
-stimator.fit(x_train, y_train)
-
-# predict
-y_pred = model.predict(x_test)
-```
+ * Training: `estimator.fit(x_train, y_train)
+ * Prediction: `estimatro.predict(x_test)`
 
 Notes:
 
@@ -418,10 +399,10 @@ Notes:
 
  * Not just for ice-cream!
  * Scikit-learn has several mix-ins for class
-   - TransformerMixIn
-   - ClassifierMixIn
-   - ClusterMixIn
-   - RegressorMixIn
+   - `TransformerMixIn`
+   - `ClassifierMixIn`
+   - `ClusterMixIn`
+   - `RegressorMixIn`
  * Added to class with multiple-inheritance
 
 Notes:
@@ -430,8 +411,8 @@ Notes:
 
 ## Transformer Mix-In
   * Transformer mix-in adds 2 methods:
-    - transform()
-    - fit_transform() # calls fit, then transform)
+    - `transform()`
+    - `fit_transform()`: calls fit, then transform
   * Transformers are used for transformations
     - like PCA
   * A trivial Example:
@@ -468,8 +449,8 @@ Notes:
 ---
 
 ## Cluster Mix-In
-  * fit_predict()
-    - call fit() then predict()
+  * `fit_predict()`
+    - call `fit()` then `predict()`
   * score: Too many!
     - a number of scoring options for clusters.
     - depends on type

@@ -45,7 +45,7 @@ Notes:
 
  * Advanced NLP (Natural Languae Processing)
 
- * Web and social informatin extraction
+ * Web and social information extraction
 
  * Pre-process text for deep learning
 
@@ -58,7 +58,7 @@ Notes:
 
  * Tokenization
 
- * POS (Part Of Speech) taging
+ * POS (Part Of Speech) tagging
 
  * Dependency parsing
 
@@ -106,7 +106,7 @@ Notes:
 | Dependency parsing      | Yes       | No       | Yes         |
 | Entity recognition      | Yes       | Yes      | Yes         |
 | Entity linking          | No        | No       | No          |
-| Coreference resolution  | No        | No       | Yes         |
+| Co-reference resolution  | No        | No       | Yes         |
 
 
 Notes:
@@ -181,7 +181,7 @@ Notes:
 ---
 ## Alpha Languages Status
 
- * Most alpha lanauages have tokenization support
+ * Most alpha languages have tokenization support
  * Immature language models:
    - Stop Words
    - Stemming
@@ -277,20 +277,6 @@ San
 Francisco
 !
 ```
-
-Notes:
-
----
-## Tokenizer Exception
-
-* Exception rules to split a string into tokens:
- - Prefix: e.g. `$`,`(`,`"`.
- - Suffix: e.g. `km`.`)`.`"`.`!`.
- - Infix: e.g. `-`,`--`,`/`,`...`.
-
-
-<img src="../../assets/images/data-analysis-python/spacy-exception.png"  style="width:60%;"/>
-
 
 Notes:
 
@@ -497,7 +483,7 @@ for t1 in doc:
     print(t1.text, t2.text, t1.similarity(t2))
 ```
 
-- Ouput next slide
+- Output next slide
 
 Notes:
 
@@ -579,6 +565,52 @@ fries   0.106902  0.180607  0.099612  0.141509  0.079438  0.796376  1.000000
 Notes:
 
 ---
+## Architecture
+
+<img src="../../assets/images/data-analysis-python/spacy-architecture-1.png"  style="width:65%;"/>
+
+
+Notes:
+
+---
+
+## Lab: Spacy Labs
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" />
+
+ *  **Overview**:
+    - Get familiar with Spacy
+
+ *  **Approximate Time**:
+    - 1 hr
+
+ *  **Instructions**:
+     - Instructor : Please demo the first lab
+     - Spacy-1 : Spacy Intro
+     - Spacy-2 : Working with Spacy
+
+
+Notes:
+
+---
+
+# Backup Slides
+
+---
+## Tokenizer Exception
+
+* Exception rules to split a string into tokens:
+ - Prefix: e.g. `$`,`(`,`"`.
+ - Suffix: e.g. `km`.`)`.`"`.`!`.
+ - Infix: e.g. `-`,`--`,`/`,`...`.
+
+
+<img src="../../assets/images/data-analysis-python/spacy-exception.png"  style="width:60%;"/>
+
+
+Notes:
+
+---
 ## Vocab
 
  * Data is stored in vocab when possible
@@ -596,7 +628,7 @@ Notes:
 
 ## Serialization
 
- * Used for saving modified pipeline, vocab, vectors, entites and models
+ * Used for saving modified pipeline, vocab, vectors, entities and models
 
  * Supports pickle protocol
 
@@ -642,29 +674,3 @@ Notes:
 Notes:
 
 ---
-## Architecture
-
-<img src="../../assets/images/data-analysis-python/spacy-architecture-1.png"  style="width:65%;"/>
-
-
-Notes:
-
----
-
-## Lab: Spacy Labs
-
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" />
-
- *  **Overview**:
-    - Get familiar with Spacy
-
- *  **Approximate Time**:
-    - 1 hr
-
- *  **Instructions**:
-     - Instructor : Please demo the first lab
-     - Spacy-1 : Spacy Intro
-     - Spacy-2 : Working with Spacy
-
-
-Notes:

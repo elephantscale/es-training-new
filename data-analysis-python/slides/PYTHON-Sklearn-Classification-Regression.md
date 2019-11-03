@@ -58,7 +58,7 @@ Notes:
 
 ---
 
-## Cassification Support in Scikit-learn
+## Classification Support in Scikit-learn
   * The following algorithms are well-represented in Scikit-learn:
     - Linear methods: SVM, Logistic Regression
     - Decision trees

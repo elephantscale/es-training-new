@@ -55,7 +55,7 @@ knn = NearestNeighbors(metric="cosine",
 algorithm="brute")
 knn.fit(mtx)
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 2.69, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.5, "height" : 2.69, "width" : 10.25} -->
 
 Notes:
 

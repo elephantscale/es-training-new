@@ -1,4 +1,5 @@
 # Python: SciPy
+
 ---
 
 ## Lesson Objectives
@@ -67,7 +68,7 @@ Notes:
 
   * scipy.cluster is used for vector quantization and primarily K-Means clustering
 
-  * K-Means clustering is an unsupervised machine learning algorithm to find clusters in  unlabelled data (will be covered with machine learning)
+  * K-Means clustering is an unsupervised machine learning algorithm to find clusters in  unlabeled data (will be covered with machine learning)
 
   * Let’s do a whiteboard analysis on K-Means clustering algorithm
 
@@ -184,6 +185,7 @@ Notes:
 ---
 
 # scipy.fftpack
+
 ---
 
 ## scipy.fftpack
@@ -372,25 +374,26 @@ Notes:
 ---
 ## scipy.interpolate
 
-  * Running interpolation – What are np.mgrid(), bisplev() and bisplrep()?
+  * Running interpolation – What are `np.mgrid()`, `bisplev()` and `bisplrep()`?
 
-  * np.mdgrid()
+  * `np.mdgrid()`
 
     - Returns a multidimensional mesh grid
 
     - https://docs.scipy.org/doc/numpy/reference/generated/numpy.mgrid.html#numpy.mgrid
 
 Notes:
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.mgrid.html#numpy.mgrid
 
 ---
 
 ## scipy.interpolate
 
-  * bisplev() and bisplrep()
+  * `bisplev()` and `bisplrep()`
 
-    - bisplrep() takes x, y, z and outputs tck = [tx, ty, c, kx, ky].
+    - `bisplrep()` takes x, y, z and outputs `tck = [tx, ty, c, kx, ky]`.
 
-    - bisplev() takes two 1D vectors whose cross product defines the domain of evaluation and the variable “tck”
+    - `bisplev()` takes two 1D vectors whose cross product defines the domain of evaluation and the variable “tck”
 
     - https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.bisplev.html#scipy.interpolate.bisplev
 
@@ -398,10 +401,15 @@ Notes:
 
 
 Notes:
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.bisplev.html#scipy.interpolate.bisplev
+
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.bisplrep.html#scipy.interpolate.bisplrep
+
 
 ---
 
 # scipy.linalg
+
 ---
 
 ## scipy.linalg
@@ -434,7 +442,7 @@ Notes:
 
 ## scipy.linalg
 
-  * Example: finding eigen values and eigen vectors
+  * Example: finding eigenvalues and eigenvectors
 
 ```python
 from scipy import linalg
@@ -474,6 +482,8 @@ Notes:
 
      - https://www.youtube.com/watch?v=yMgFHbjbAW8
 Notes:
+
+https://www.youtube.com/watch?v=yMgFHbjbAW8
 
 ---
 
@@ -533,6 +543,7 @@ Notes:
 ---
 
 # scipy.sparse
+
 ---
 
 ## scipy.sparse
@@ -586,6 +597,7 @@ Notes:
 ---
 
 # scipy.stats
+
 ---
 
 ## scipy.stats
@@ -607,4 +619,24 @@ Notes:
 <!-- {"left" : 0.20, "top" : 1.74, "height" : 5.65, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 Notes:
+
+
+
+## Lab: Scipy Stats
+
+
+  * Overview:
+
+    - Use Scipy Stats
+
+  * Approximate time:
+
+    - 10 mins
+
+  * Instructions:
+
+    - **stats/1-stats-basics.ipynb**
+
+Notes:
+
 

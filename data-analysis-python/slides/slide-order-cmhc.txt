@@ -2,13 +2,9 @@
 ##  $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
 
 ./About-Data-Analytics-With-Python.md
-./Data_Science_Intro.md
 ../../python/slides/PYTHON-Intro.md
+../../python/slides/PYTHON-
 ./PYTHON-NumPy.md
 ./PYTHON-Pandas.md
-./PYTHON-Scipy.md
 ./PYTHON-Visualization.md
-./PYTHON-Sklearn.md
-./PYTHON-Recommendations.md
-./PYTHON-Text-Spacy.md
 

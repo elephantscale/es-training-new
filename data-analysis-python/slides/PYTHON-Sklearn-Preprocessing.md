@@ -1,4 +1,5 @@
 # Python Sklearn: Preprocessing
+
 ---
 
 ## Lesson Objectives
@@ -12,6 +13,7 @@ Notes:
 ---
 
 # Feature Engineering
+
 ---
 
 ## What is Feature Engineering?
@@ -49,7 +51,7 @@ Notes:
 
 ## Strategy 1: Factorization
  * Factorization
-   - Call pd.factorize() on the dimension
+   - Call `pd.factorize()` on the dimension
    - Will assign an integer to each unique value
    - E.g. (red = 1, green = 2… etc)
  * See next slide for details
@@ -144,9 +146,9 @@ data2 = pd.concat([data,marital_dummies],axis=1)
 data2
 ```
 
-<img src="../../assets/images/machine-learning/factorization-5.png" style="width:35%;"/>
-<img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;"/>
-<img src="../../assets/images/machine-learning/factorization-6.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/factorization-5.png" style="width:35%;"/> <!-- {"left" : 0.0, "top" : 4.05, "height" : 1.62, "width" : 10.25} -->
+<img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;"/> <!-- {"left" : 3.3, "top" : 4.3, "height" : 1.0, "width" : 1.0} -->
+<img src="../../assets/images/machine-learning/factorization-6.png" style="width:50%;"/> <!-- {"left" : 4.6, "top" : 4.05, "height" : 1.62, "width" : 5.3} -->
 
 Notes:
 
