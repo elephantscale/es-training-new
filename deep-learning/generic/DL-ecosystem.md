@@ -95,13 +95,13 @@ Notes:
 
 <img src="../../assets/images/logos/spark-logo-1.png" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 7.02, "top" : 1.08, "height" : 1.59, "width" : 2.99} -->
 
- * Spark is very popular BigData processing platform (distributed compute engine)
+ * Spark is very popular Big Data processing platform (distributed compute engine)
 
  * Massively scalable (100s of TBs to PB of data)
 
  * Can cache data in memory for very fast iterations
 
- * Spark ML now supports Tensorflow and Keras as backends
+ * Spark ML now supports Tensorflow and Keras as back-ends
 
  * Language support: Scala, Java, Python, R
 
@@ -170,7 +170,7 @@ Notes:
 <img src="../../assets/images/deep-learning/face-id-1.png" alt="XXX image missing" style="width:32%;float:right;"/><!-- {"left" : 7.73, "top" : 1.07, "height" : 2.49, "width" : 2.49} -->
 
  * Why do DL on mobile?
- * **Privacy:** so no data leaves the device.This is important with PII (Personaly  Identifiable Information) and Europe's GDPR (General Data Protection Regulation)
+ * **Privacy:** so no data leaves the device.This is important with PII (Personally  Identifiable Information) and Europe's GDPR (General Data Protection Regulation)
  * **Reducing Cloud Cost:** By doing DL on the device and minimizing sending data to cloud, we can save time and money
  * **Speed:** Sending data to cloud and getting an answer back can take several seconds
     - 10 seconds: user's keep their focus on a screen

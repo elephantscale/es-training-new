@@ -66,7 +66,7 @@ Notes:
 
  * Several Use Cases for distributed training.
 
-     - Hyperparameter Tuning: iteratively running through many permutations of hyperparameters to get optimal models
+     - Hyperparameter Tuning: iterative running through many permutations of hyperparameters to get optimal models
 
      - Large Data training:  Training with massive datasets (Example: Google Translate)
 
@@ -301,7 +301,7 @@ Notes:
  * Now more often used for analytics
  * Libraries like scikit-learn, pandas, etc are *not* scalable.
  * Dask allows parallelization of these workloads
- * Target Framework can be dask-agnostic
+ * Target Framework can be Dask-agnostic
 
 
 ---

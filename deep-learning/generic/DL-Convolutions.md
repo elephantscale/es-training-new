@@ -3,6 +3,7 @@
 
 ## Process of Convolution
 
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png" alt="CNN-Process-of-Convolution-1.png" style="background:white;width:20%;float:right;"/><!-- {"left" : 7.81, "top" : 0.99, "height" : 2.29, "width" : 2.29} -->
 
  * Imagine a small patch being slid across the input image. This sliding is called  **convolving**.
 
@@ -12,7 +13,6 @@
 
  * In other words, the CNN layer neurons depends only on nearby neurons from the previous layer. This has the impact of discovering the features in a certain limited area of the input feature map.
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png" alt="CNN-Process-of-Convolution-1.png" style="background:white;width:20%;margin-top:-35px;"/>
 
 
 Notes: 
@@ -30,7 +30,8 @@ Notes:
 | 0 | 1 | 1 |
 | 1 | 0 | 0 |
 | 1 | 0 | 1 |
-<!-- {"left" : 0.39, "top" : 1.52, "height" : 1.6, "width" : 3.53} -->
+<!-- {"left" : 3.36, "top" : 2.17, "height" : 1.6, "width" : 3.53} -->
+
  * The weight matrix is a filter to extract some particular features from the original image. It could be for  extracting curves, identifying a specific color, or recognizing a particular voice.
  * Assume the input to be 6X6
 
@@ -43,7 +44,7 @@ Notes:
 | 2  | 32 | 23  | 58 | 8  | 208 |
 | 4  | 23 | 2   | 1  | 3  | 9   |
 
-<!-- {"left" : 5.95, "top" : 4.92, "height" : 2.8, "width" : 4.3} -->
+<!-- {"left" : 5.69, "top" : 5.98, "height" : 2.8, "width" : 4.3} -->
 
 
 Notes: 
@@ -68,7 +69,7 @@ Notes:
 |   2    |   32   |   23    | 58    | 8  | 208 |
 |   4    |   23   |   2     | 1     | 3  | 9   |
 
-<!-- {"left" : 0.73, "top" : 3.08, "height" : 2.8, "width" : 5.46} -->
+<!-- {"left" : 1.02, "top" : 3.88, "height" : 2.8, "width" : 5.46} -->
 &nbsp;
 
 |   | Filter |   |
@@ -77,7 +78,7 @@ Notes:
 | 1 | 0      | 0 |
 | 1 | 0      | 1 |
 
-<!-- {"left" : 6.67, "top" : 3.08, "height" : 1.6, "width" : 2.28} -->
+<!-- {"left" : 6.96, "top" : 3.88, "height" : 1.6, "width" : 2.28} -->
 
 
 ---
@@ -92,6 +93,8 @@ Notes:
 | 515 | 0 | 0 | 0 |
 | 0   | 0 | 0 | 0 |
 | 0   | 0 | 0 | 0 |
+
+<!-- {"left" : 0.25, "top" : 1.66, "height" : 2, "width" : 9.75} -->
 
  * For example, when the weighted matrix starts from the top left corner of the input layer, the output value is calculated as:
 
@@ -119,7 +122,7 @@ Notes:
 | 2  |   32   |   23    |   58   | 8  | 208 |
 | 4  |   23   |   2     |   1    | 3  | 9   |
 
-<!-- {"left" : 0.73, "top" : 3.08, "height" : 2.8, "width" : 5.46} -->
+<!-- {"left" : 1.02, "top" : 4.39, "height" : 2.8, "width" : 5.46} -->
 
 |   | Filter |   |
 |---|--------|---|
@@ -127,7 +130,7 @@ Notes:
 | 1 | 0      | 0 |
 | 1 | 0      | 1 |
 
-<!-- {"left" : 6.67, "top" : 3.08, "height" : 1.6, "width" : 2.28} -->
+<!-- {"left" : 6.96, "top" : 4.39, "height" : 1.6, "width" : 2.28} -->
 
 
 ---
@@ -142,6 +145,8 @@ Notes:
 | 515 | 374 | 0 | 0 |
 | 0   | 0   | 0 | 0 |
 | 0   | 0   | 0 | 0 |
+
+<!-- {"left" : 0.25, "top" : 1.6, "height" : 2, "width" : 9.75} -->
 
  *  **(Activation/Feature Map)** 
 
@@ -161,7 +166,7 @@ Notes:
 
  * It is also possible to connect a large input layer to a much smaller layer by spacing out the receptive fields, i.e., increasing the stride.
 
- * In the diagram :
+ * In the diagram:
 
      - Input layer is 5x7
 
@@ -184,7 +189,8 @@ Notes:
 
  * The image shows two kernels - vertical and horizontal filters. Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter.
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="CNN-Convolutional-Layer-Contd--1.png" style="background:white;width:40%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="CNN-Convolutional-Layer-Contd--1.png" style="background:white;width:40%;"/><!-- {"left" : 2.59, "top" : 2.93, "height" : 3.2, "width" : 5.06} -->
+
 
  *  **VERTICAL AND HORIZONTAL FILTERS** 
 
@@ -202,12 +208,11 @@ Notes:
 
  * The output image has a feature map, which highlights the areas in the image that are most similar to the filter.
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="CNN-Convolutional-Layer-Contd--1.png" style="background:white;width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="CNN-Convolutional-Layer-Contd--1.png" style="background:white;width:50%;"/><!-- {"left" : 2.11, "top" : 3.89, "height" : 3.81, "width" : 6.02} -->
+
 
 
 Notes: 
-
-
 
 
 ---
@@ -221,7 +226,8 @@ Notes:
  * A neuron located in row i, column j of a given layer is connected to neurons in the previous layer located in rows i to i+fh-1, columns j to j+fw-1, where fh and fw are the height and width of the receptive field.
  * To maintain height and width dimensions of convolutional layer same as previous layer, one zero-pads the input layer.
 
-<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png" alt="CNN-Zero-Padding-1.png" style="background:white;width:40%;"/>
+<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png" alt="CNN-Zero-Padding-1.png" style="background:white;width:40%;"/><!-- {"left" : 3, "top" : 4.13, "height" : 3.17, "width" : 4.26} -->
+
  *  *CNN layer with zero padding* 
 
 Notes: 
@@ -283,8 +289,8 @@ Notes:
 
  *  *CNN layers with multiple feature maps* 
 
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;"/><!-- {"left" : 3.02, "top" : 5.73, "height" : 2.75, "width" : 4.2} -->
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;"/>
 
 Notes: 
 
@@ -295,14 +301,14 @@ Notes:
 
 ## Stacking Multiple Feature Maps (Contd.)
 
- * Images that are grayscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;"/><!-- {"left" : 5.23, "top" : 1.69, "height" : 3.21, "width" : 4.92} -->
 
- * Satellite imagery that capture extra light frequencies (eg infrared) can have more channels.
+ * Images that are greyscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
+
+ * Satellite imagery that capture extra light frequencies (e.g. infrared) can have more channels.
 
  *  *CNN layers with multiple feature maps* 
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;margin-top:-100px;"/>
-
 
 Notes: 
 
@@ -311,12 +317,13 @@ Notes:
 ---
 
 ## Stacking Multiple Feature Maps (Contd.)
+
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;"/><!-- {"left" : 5.23, "top" : 1.69, "height" : 3.21, "width" : 4.92} -->
 
  * The fact that all neurons in a feature map has just one set of parameters dramatically reduces the no of parameters needed.
  * This also means that once a CNN has learned to recognize a pattern in one location, it can recognize it in any other location. This is known as location invariance. 
  * In contrast, if a regular DNN has learned to recognize a pattern in one location, it can recognize it only in that location.
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;margin-top:-30px;"/>
 
 Notes: 
 
@@ -326,12 +333,12 @@ Notes:
 
 ## ReLU Layer
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="activation-sigmoid-vs-relu.png" style="background:white;width:60%;"/>
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="activation-sigmoid-vs-relu.png" style="background:white;width:60%;"/><!-- {"left" : 1.44, "top" : 0.96, "height" : 2.93, "width" : 7.36} -->
 
  * After every conventional layer, a non linearity is applied to the neural network. 
  * Research has found that ReLU layers can train the neural networks much faster than other activation functions.
  * In ANN, non linearity functions like sigmoid is used. 
- * ReLU layers apply an activation function,     **f(x)= max(0,x),** 
+ * ReLU layers apply an activation function,   **f(x)= max(0,x),** 
  * which essentially drops all negative units.
 
 Notes: 
@@ -343,7 +350,7 @@ Notes:
 
 ## Pooling Layer
 
-<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:40%;"/>
+<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:40%;"/><!-- {"left" : 3.03, "top" : 0.96, "height" : 2.07, "width" : 4.19} -->
 
  * A pooling layer is used to sub-sample (i.e., shrink) the input image.
  * Like a convolutional layer, a pooling layer is connected to a small set of neurons in input image which fall within a receptive field.
@@ -367,7 +374,7 @@ Notes:
    - Reduce no of parameters (thereby help reduce overfitting)
    - Increase location invariance (i.e. tolerate a little bit of image shift)
 
- * Pooling allows invariance, which means that output is less sensitive to changes to input. Invariance is useful when it is more imp. to test for presence of certain features rather than the location of those features. Eg in face detection, we wish to detect left eye and right eye, their precise locations are less important. This is what we mean by invariance.- In certain cases where location is important, invariance is not acceptable. Eg when we wish to detect in an image the edge where the two walls meet
+ * Pooling allows invariance, which means that output is less sensitive to changes to input. Invariance is useful when it is more imp. to test for presence of certain features rather than the location of those features. e.g. in face detection, we wish to detect left eye and right eye, their precise locations are less important. This is what we mean by invariance.- In certain cases where location is important, invariance is not acceptable. e.g. when we wish to detect in an image the edge where the two walls meet
 
 Notes: 
 
@@ -376,7 +383,7 @@ Notes:
 
 ## Pooling Layer
 
-<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:50%;"/>
+<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:50%;"/><!-- {"left" : 2.26, "top" : 1.1, "height" : 2.83, "width" : 5.73} -->
 
  * The figure shows a max pooling layer with 2x2 kernel, stride 2 and no padding. 
  * Max-pooling involves taking the maximum value out of a group of input values.

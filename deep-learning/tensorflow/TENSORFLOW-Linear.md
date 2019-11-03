@@ -23,10 +23,11 @@
 ---
 
 ## Placeholder Variables
+
  * X: Placeholder for input
-   - Univariate (single varialble)
+   - Univariate (single variable)
  * Y: Placeholder for output
-   - Continuous Output (regresssion)
+   - Continuous Output (regression)
 
 ```python
 X = tf.placeholder(dtype=tf.float32,
@@ -56,6 +57,7 @@ B = tf.Variable(tf.zeros(shape=(1)),
 ---
 
 ## Output
+
  * We will define `y_` as an output.
  * formula: `Y_ = W * X + B`
 
@@ -87,12 +89,13 @@ for i in range(num_epochs):
 ---
 
 ## Multivariate Problems
+
  * The previous example was *univariate*
    - `X` was just a scalar number
    - What if X is a vector?
  * New Formula
    - `Y = W x X + B`
- * in this case, we have a matrix mutiply
+ * in this case, we have a matrix multiply
 
 ```python
 Y_ = tf.squeeze(tf.matmul(W,X) + B)
@@ -101,6 +104,7 @@ Y_ = tf.squeeze(tf.matmul(W,X) + B)
 ---
 
 ## Classification Outputs
+
  * Classification outputs differ from Regression outputs.
  * They use the softmax layer
 

@@ -47,7 +47,7 @@ TODO Shiva:
 
 ## Caching the Frozen Layers
 
-- Since frozen layer weights don't change, when an insfance of training data goes through, the output is the same
+- Since frozen layer weights don't change, when an instance of training data goes through, the output is the same
 
 - So by caching the output, we can get huge speed boost
 

@@ -13,12 +13,12 @@ Activation Functions
 
      - Not Differentiable (can't use gradient descent to optimize)
 
- * Possible Activation Funtions
+ * Possible Activation Functions
    - None (just use raw output of neuron)
    - Linear (apply linear transformation)
    - Sigmoid
    - Tanh
-   - Relu
+   - ReLU
 
 Notes:
 

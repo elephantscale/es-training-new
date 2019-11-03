@@ -7,7 +7,7 @@
    - Mid-Level
    - High-Level
 
-![https://www.tensorflow.org/images/tensorflow_programming_environment.png](../../assets/images/deep-learning/tensorflow_layers_small.png) <!-- {"left" : 0.59, "top" : 3.34, "height" : 2.66, "width" : 9.07} -->
+![https://www.tensorflow.org/images/tensorflow_programming_environment.png](../../assets/images/deep-learning/tensorflow_layers_small.png) <!-- {"left" : 0.59, "top" : 3.54, "height" : 2.66, "width" : 9.07} -->
 
 Notes:
 
@@ -68,7 +68,7 @@ classifier = tf.estimator.DNNClassifier(
     # The model must choose between 3 classes.
     n_classes=3)
 ```
-<!-- {"left" : 0, "top" : 2.48, "height" : 2.46, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.96, "height" : 2.46, "width" : 10.25} -->
 
 
 Notes:
@@ -89,7 +89,7 @@ def input_func(data)
    return tf.data.Dataset.from_tensor_slices(
         features, labels)
 ```
-<!-- {"left" : 0, "top" : 2.85, "height" : 2.15, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.13, "height" : 2.15, "width" : 10.25} -->
 
 
 
@@ -126,7 +126,7 @@ fc = [numeric_column(key='A'),
       numeric_column(key='B'),
       numeric_column(key='C')
 ```
-<!-- {"left" : 0, "top" : 1.49, "height" : 2.15, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.85, "height" : 2.15, "width" : 10.25} -->
 
 
 
@@ -150,7 +150,7 @@ vocabulary_feature_column =
         "electronics", "sports"])
 
 ```
-<!-- {"left" : 0, "top" : 1.89, "height" : 3.3, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.14, "height" : 3.3, "width" : 10.25} -->
 
 
 
@@ -169,7 +169,7 @@ classifier.train(
     train_y, args.batch_size),
     steps=args.train_steps)
 ```
-<!-- {"left" : 0, "top" : 1.97, "height" : 1.83, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.22, "height" : 1.83, "width" : 10.25} -->
 
 
 
@@ -189,7 +189,7 @@ def eval_input_function(test_x, test_y, batch_size)
    return tf.data.Dataset.from_tensor_slices(
         features, labels)
 ```
-<!-- {"left" : 0, "top" : 1.93, "height" : 1.92, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.18, "height" : 1.92, "width" : 10.25} -->
 
 
 
@@ -209,7 +209,7 @@ print('\nTest set accuracy:
     {accuracy:0.3f}\n'.format(**eval_result))
 
 ```
-<!-- {"left" : 0, "top" : 1.01, "height" : 2.87, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.37, "height" : 2.87, "width" : 10.25} -->
 
 
 
@@ -219,14 +219,14 @@ Notes:
 
 ## Lab: Estimator API
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 7.01, "top" : 1.4, "height" : 3.78, "width" : 2.83} -->
 
-*  **Overview** :   
+*  **Overview:** 
 In this lab, we will use Estimator API with IRIS data
 
-*  **Approximate time** : 15-20 minutes
+*  **Approximate time:** 15-20 minutes
 
-*  **Lab Instructions** :
+*  **Lab Instructions:**
 
     - Follow the `high-level/4.1-Estimator-LinRegress-Cars.ipynb` lab
 
@@ -278,7 +278,7 @@ est_inception_v3.train(input_fn=train_input_fn,
                         steps=2000)
 
 ```
-<!-- {"left" : 0, "top" : 0.74, "height" : 6.77, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.15, "height" : 6.77, "width" : 10.25} -->
 
 
 Notes:
@@ -295,4 +295,3 @@ Notes:
 
 Notes:
 
----

@@ -3,7 +3,7 @@
 
 ## Lesson Objectives
 
- * Learn about MultiLayer Perceptron
+ * Learn about Multi-Layer Perceptron
 
  * Understand how Gradient Descent and Backpropagation help us train neural networks.
 
@@ -28,12 +28,12 @@ Notes:
 
      - Not Differentiable (can't use gradient descent to optimize)
 
- * Possible Activation Funtions
+ * Possible Activation Functions
    - None (just use raw output of neuron)
    - Linear (apply linear transformation)
    - Sigmoid
    - Tanh
-   - Relu (Covered later)
+   - ReLU (Covered later)
 
 Notes:
 
@@ -44,7 +44,7 @@ Notes:
 
    * `Output * weight + constant`
 
-   * Commonly used for **Regresssion**
+   * Commonly used for **Regression**
 
    * Linear Regression:
      - Single Layer (Linear)

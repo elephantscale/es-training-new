@@ -36,7 +36,7 @@ Notes:
 
  * As data goes through when traversing an RNN, some information is lost after each time step
 
- * After a while, the RNN's state contains virtually no trace of the first inputs
+ * After a while, the RNNs state contains virtually no trace of the first inputs
 
  * In some analysis we need to remember earlier inputs
 
@@ -128,7 +128,7 @@ https://en.wikipedia.org/wiki/Gated_recurrent_unit#/media/File:Gated_Recurrent_U
 
  * GRUs help fix the vanishing gradient problem by "gating" the "hidden state"
 
- * However, GRUs cannot diffentiate between short-term and long-term memory.
+ * However, GRUs cannot differentiate between short-term and long-term memory.
 
  * They have *one* hidden state.
 
@@ -407,7 +407,7 @@ Notes:
 
      -  The next has 100 cells
 
- *  How long a sequence can we *remember*  ?
+ *  How long a sequence can we *remember*?
 
      -  The network is limited in how far into the future it can predict.
 
@@ -591,7 +591,7 @@ Notes:
 
 ---
 
-## LSTM Take Aways
+## LSTM Takeaways
 
  *  LSTMs are very sequential
 

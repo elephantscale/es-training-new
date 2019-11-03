@@ -78,7 +78,7 @@ Notes:
 
  * TF  *conv2d*  is a convolutional layer, with zero padding (add padding if needed) and stride of 2 in this case.
 
-  *  *strides*  is a 4 element 1D array, where two centre elements represent sh and sw.
+  *  *strides*  is a 4 element 1D array, where two center elements represent sh and sw.
 
 ```python
 
@@ -123,7 +123,7 @@ max_pool = tf.nn.max_pool(X, ksize=[1,2,2,1],
 Notes: 
 
 Note that we specify the ksize in 4 dimensions because X is four dimensions: row, height, width, channels.  We almost never
-use a stride across row (which makes no sense) and rarely across channes (RGB).  Mainly stride is used for height and width
+use a stride across row (which makes no sense) and rarely across channels (RGB).  Mainly stride is used for height and width
 convolutions. So it's index 1 (second from left), and 2 (third from left) that is altered.
 
 
@@ -161,7 +161,7 @@ Code image is same as previous slide. Adding it here to make it easy to relate t
 
   * Apart from `conv2d()`, TensorFlow offers other kinds of convolutional layers also, some of which are:
 
-     - `conv1d()` creates a convolutional layer for 1D inputs. This is useful, for example, in natural language processing, where a sentence may be represented as a 1D array of words, and the receptive field covers a few neighbouring words.
+     - `conv1d()` creates a convolutional layer for 1D inputs. This is useful, for example, in natural language processing, where a sentence may be represented as a 1D array of words, and the receptive field covers a few neighboring words.
 
      - `conv3d()` creates a convolutional layer for 3D inputs, such as 3D PET scan.
 
@@ -209,7 +209,7 @@ Notes:
 
   * How to classify them?
 
-  * CNNs for MNIST image classifcation
+  * CNNs for MNIST image classification
 
     - **Objective**: Use CNNs for MNIST image classification.
     - **Steps:** 
@@ -256,7 +256,7 @@ Notes:
     - Not as verbose or as cumbersome as Tensorflow Core (Low-Level)
     - Gives us full control of layers.
 
-  * We can "wrap" keras inside of estimator if we want.
+  * We can "wrap" Keras inside of estimator if we want.
     - Gives us best of both worlds
     - Control + High-level
 

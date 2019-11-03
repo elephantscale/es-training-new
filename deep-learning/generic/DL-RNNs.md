@@ -35,12 +35,13 @@ Notes:
 
  * In NLP, we often need to determine reference.
 
+<br/>
 ```text
 I was talking with **my** mother about politics.
 "I voted for Hillary Clinton because **she** was most
 aligned with **my** values," **she** said.
 ```
-<!-- {"left" : 0, "top" : 1.57, "height" : 0.94, "width" : 8.45} -->
+<!-- {"left" : 0, "top" : 1.68, "height" : 1.14, "width" : 10.25} -->
 
  * Who does the first "she" refer to?
 
@@ -446,7 +447,7 @@ Notes:
 
  *  Examples:
 
-     -  Frame by Frame video identificaiton
+     -  Frame by Frame video identification
 
 
 

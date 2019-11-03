@@ -4,7 +4,7 @@
    * You will be able to:
      - Understand Transfer Learning
      - Understand Pre-Trained Models
-     - Customize pretrained models
+     - Customize pre-trained models
 
 Notes:
 
@@ -82,7 +82,7 @@ Notes:
    - But a known working state would at least work for *some* problem.
  * Examples of Pre-trained models for Image Recognition
    - Inception
-   - Resnet
+   - ResNet
  * Example of Pre-Trained model for Natural Language
      - Word2Vec
 
@@ -144,7 +144,7 @@ Notes:
 
 ## Imagenet / AlexNet
 
-* Applied LeNet to full size RGB imags (224x224x3) with 1000 classes.
+* Applied LeNet to full size RGB images (224x224x3) with 1000 classes.
 * Still very popular
 
 <img src="../../assets/images/deep-learning/CNN-Imagenet.png" style="width:90%;" /> <!-- {"left" : 1.02, "top" : 3.18, "height" : 3.97, "width" : 8.21} -->
@@ -183,7 +183,7 @@ Notes:
 
 ## ResNet
 
-* Uses Residual Neural Networks (RNNs) - Not FeedforardR
+* Uses Residual Neural Networks (RNNs) - Not Feedforward
 * Both Residual and Convolutional
 
 <img src="../../assets/images/deep-learning/CNN_resnet.png" style="width:90%;" /> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->

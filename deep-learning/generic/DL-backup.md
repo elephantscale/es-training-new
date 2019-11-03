@@ -77,3 +77,54 @@ Notes:
 
 
 ---
+
+## Use Case 3: Staples
+
+- [Staples](https://www.staples.com) relies on organic search traffic to drive sales
+
+- One way the ways to score high on search engine results is put meaningful ALT tags for each product images
+
+- Doing it manually was an expensive proposition
+
+- They use  [Clarify](https://www.clarifai.com/) to automatically tag images
+
+- [Link](https://clarifai.com/customers/staples)
+
+<img src="../../assets/images/logos/staples-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%;"/> &nbsp; &nbsp; <!-- {"left" : 1.48, "top" : 5.39, "height" : 0.58, "width" : 2.93} --><img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 5.84, "top" : 5.38, "height" : 0.62, "width" : 2.93} -->
+
+
+Notes:  
+- https://clarifai.com/customers/staples
+
+---
+
+## Demo: Digit Recognition
+
+- Simple NN to recognize hand-written digits
+
+<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 2.2, "top" : 1.97, "height" : 4.02, "width" : 5.85} -->
+
+
+[Link](http://myselph.de/neuralNet.html)
+
+
+
+Notes:
+
+http://myselph.de/neuralNet.html
+
+---
+
+## Demo: Digit Recognition 2
+
+- Cool visualization of signal path through NN
+
+<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-2.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="40%;"/><!-- {"left" : 2.93, "top" : 2.34, "height" : 4.39, "width" : 4.39} -->
+
+
+[Link](http://scs.ryerson.ca/~aharley/vis/conv/flat.html)
+
+
+Notes:  
+http://scs.ryerson.ca/~aharley/vis/conv/flat.html
+

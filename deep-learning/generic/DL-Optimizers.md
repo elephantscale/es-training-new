@@ -87,18 +87,19 @@ Notes:
 
 * **Tensorflow**
 
+<br/>
 ```python
 optimizer = tf.train.MomentumOptimizer(learning_rate=?,
                                        momentum=0.9)
 ```
-<!-- {"left" : 0, "top" : 1.61, "height" : 0.48, "width" : 5.98} -->
+<!-- {"left" : 0, "top" : 1.63, "height" : 0.98, "width" : 10.25} -->
 
 
 * **Keras**
 ```python
 sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ```
-<!-- {"left" : 0, "top" : 2.79, "height" : 0.45, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.02, "height" : 0.45, "width" : 10.25} -->
 
 ---
 ## Nesterov Accelerated Gradient
@@ -121,9 +122,9 @@ $$ m =  \beta m  - \alpha \nabla _\theta J(\theta + \beta m) $$
 
 ---
 
-## Nestrov Accelerated Momentum
+## Nesterov Accelerated Momentum
 
-Here you see Nestrov approach is slightly closer to optimum
+Here you see Nesterov approach is slightly closer to optimum
 
 <img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="width:40%"/><!-- {"left" : 2.9, "top" : 2.61, "height" : 5.1, "width" : 4.44} -->
 
@@ -131,23 +132,25 @@ Here you see Nestrov approach is slightly closer to optimum
 
 ---
 
-## Nestrov Implementation
+## Nesterov Implementation
 
 * **Tensorflow**
+
+<br/>
 
 ```python
 optimizer = tf.train.MomentumOptimizer(learning_rate=?,
                                        momentum=0.9,
                                        use_nesterov=True) # <-- here
 ```
-<!-- {"left" : 0, "top" : 1.54, "height" : 0.54, "width" : 3.79} -->
+<!-- {"left" : 0, "top" : 1.63, "height" : 0.98, "width" : 10.25} -->
 
 
 * **Keras**
 ```python
 sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ```
-<!-- {"left" : 0, "top" : 2.71, "height" : 0.47, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.02, "height" : 0.47, "width" : 10.25} -->
 
 ---
 
@@ -156,7 +159,7 @@ sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 - In Gradient Descent animation algorithm takes 'smaller steps' when going down 'valleys'
 
 - Adagrad ([paper](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf)) adjusts the direction and velocity by scaling the direction vector
-    - 'points in the right direction (gloabl minimum)' better :-)
+    - 'points in the right direction (global minimum)' better :-)
 
 <img src="../../assets/images/deep-learning/optimizer-ada-grad-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="60%"/><!-- {"left" : 2.2, "top" : 4.46, "height" : 3.14, "width" : 5.85} -->
 
@@ -239,16 +242,17 @@ Notes:
 
 * **Tensorflow**
 
+<br/>
 ```python
 optimizer = tf.train.AdamOptimizer(learning_rate=?)
 ```
-<!-- {"left" : 0, "top" : 1.63, "height" : 0.45, "width" : 5.1} -->
+<!-- {"left" : 0, "top" : 1.68, "height" : 0.83, "width" : 9.48} -->
 
 * **Keras**
 ```python
 keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
 ```
-<!-- {"left" : 0, "top" : 2.79, "height" : 0.45, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.77, "height" : 0.45, "width" : 10.25} -->
 
 
 ---

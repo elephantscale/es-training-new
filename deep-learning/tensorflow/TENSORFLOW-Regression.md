@@ -1,13 +1,16 @@
-TensorFlow Regression
-=====================
+# TensorFlow Regression
+
+---
 
 # Linear Regression 
+---
 
 ## Linear Regression
 
  * Here we will see how to do linear regression in Tensorflow.
  * This will be using the *high-level* API.
  * Specifically, the tf.estimator API.
+---
 
 ## Example Bill/Tip Data
  * Here is our bill and tip data: 
@@ -23,7 +26,7 @@ tip_data = pd.DataFrame(
     })
 ```
 
-<!-- {"left" : 0.0, "top" : 1.58, "height" : 3.44, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.78, "height" : 3.44, "width" : 10.25} -->
 
 
 Notes:
@@ -40,7 +43,7 @@ feature_columns = [
     tf.feature_column.numeric_column(key="bill"),
 ]
 ```
-<!-- {"left" : 0.0, "top" : 2.03, "height" : 1.32, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.23, "height" : 1.32, "width" : 10.25} -->
 
 
 Notes:
@@ -56,7 +59,7 @@ Notes:
 my_optimizer=tf.train.GradientDescentOptimizer(
    learning_rate=0.02)
 ```
-<!-- {"left" : 0.0, "top" : 2, "height" : 1.03, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.22, "height" : 1.03, "width" : 10.25} -->
 
 
 Notes:
@@ -72,7 +75,7 @@ linear_regressor = tf.estimator.LinearRegressor(
     optimizer=my_optimizer
 )
 ```
-<!-- {"left" : 0.0, "top" : 1.6, "height" : 1.69, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.91, "height" : 1.69, "width" : 10.25} -->
 
 Notes:
 
@@ -112,7 +115,7 @@ def my_input_fn(features, targets,
       ds.make_one_shot_iterator().get_next()
     return features, labels
 ```
-<!-- {"left" : 0.0, "top" : 1.38, "height" : 3.05, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.87, "height" : 3.05, "width" : 10.25} -->
 
 
 Notes:
@@ -131,7 +134,7 @@ linear_regressor.train(
     steps=20
 )
 ```
-<!-- {"left" : 0.0, "top" : 1.97, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.3, "height" : 2.39, "width" : 10.25} -->
 
 
 Notes:
@@ -149,7 +152,7 @@ prediction_input_fn =
       tip_data[['bill']], tip_data['tip'], 
       num_epochs=1, shuffle=False)
 ```
-<!-- {"left" : 0.0, "top" : 2.42, "height" : 1.86, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.93, "height" : 1.86, "width" : 10.25} -->
 
 
 Notes:
@@ -169,7 +172,7 @@ predictions = linear_regressor.predict(
 predictions = np.array(
    [item['predictions'][0] for item in predictions])
 ```
-<!-- {"left" : 0.0, "top" : 1.92, "height" : 2.52, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.21, "height" : 2.52, "width" : 10.25} -->
 
 
 Notes:
@@ -195,7 +198,7 @@ print("Root Mean Squared Error: %0.3f" %
    root_mean_squared_error)
 ```
 
-<!-- {"left" : 0.0, "top" : 2.38, "height" : 3.85, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.61, "height" : 3.85, "width" : 10.25} -->
 
 
 Notes:
@@ -218,7 +221,7 @@ bias = linear_regressor.
 
 print((weight[0],bias[0]))
 ```
-<!-- {"left" : 0.0, "top" : 1.89, "height" : 4.69, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.48, "height" : 4.69, "width" : 10.25} -->
 
 Notes:
 
@@ -235,6 +238,7 @@ Notes:
 
 ---
 # Logistic Regression
+---
 
 ## Logistic Regression
    * It requires a binary output
@@ -251,5 +255,4 @@ Notes:
 
 Notes:
 
----
 

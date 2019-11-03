@@ -13,8 +13,8 @@
 ## About
 ./generic/About-Deep-Learning-Class.md
 
-## DL Intro / Primer
-generic/DL-Intro.md
+## ML Intro
+../machine-learning/generic/Machine-Learning-Primer.md
 
 # TensorFlow
 ./tensorflow/TENSORFLOW-Intro.md
@@ -24,13 +24,10 @@ generic/DL-Intro.md
 
 generic/DL-Concepts.md
 
-./generic/DL-Linear.md
+./generic/DL-Neural-Networks.md
 
 # Introduce TensorFlow Playground
 ./generic/DL-Playground.md
-
-# Feed Forward
-generic/DL-Feed-Forward.md
 
 # Keras
 keras/Keras-1__Intro.md
@@ -44,7 +41,7 @@ keras/Keras-1__Intro.md
 ./generic/DL-LSTMs.md
 
 ## TransferLearning
-./generic/DL-TransferLearning.md
+./generic/DL-Transfer-Learning.md
 
 # Parallel
 ./tensorflow/TENSORFLOW-Parallel.md

@@ -49,9 +49,9 @@ Notes:
 ## Greyscale Images
 
 - Pixels are represented as numbers ranging from 0 - 255
-    - 0 : black
-    - 255 : white
-    - in between : grey
+    - 0: black
+    - 255: white
+    - in between: grey
 
 <img src="../../assets/images/deep-learning/pixel-representation-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" /><!-- {"left" : 0.9, "top" : 3.56, "height" : 4.3, "width" : 8.44} -->
 
@@ -205,7 +205,7 @@ Notes:
     - Pooling layer
 
 Notes:  
-[1998 paper by Yann Lecun](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
+[1998 paper by Yann LeCun](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
 
 
 ---
@@ -478,7 +478,7 @@ Notes:
 
 - First layer detects simple shapes - horizontal lines, slanted lines ..etc 
 
-- Second layer recognizes more complex features : eyes / nose ..etc 
+- Second layer recognizes more complex features: eyes / nose ..etc 
 
 - Third layer recognizes faces
 
@@ -667,9 +667,9 @@ Notes:
 
  <img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;" /> <!-- {"left" : 5.24, "top" : 2.13, "height" : 3.15, "width" : 4.81} -->
 
- * Images that are grayscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
+ * Images that are greyscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
 
- * Satellite imagery that capture extra light frequencies (eg infrared) can have more channels.
+ * Satellite imagery that capture extra light frequencies (e.g. infrared) can have more channels.
 
 
 
@@ -725,7 +725,7 @@ Notes:
     - MAX pooling 
     - Average pooling 
     - L2-Norm pooling 
-    - Stochastic poooling
+    - Stochastic pooling
 
 
 ---
@@ -758,7 +758,7 @@ Notes:
 
 ---
 
-## Pooling HyperParameters
+## Pooling Hyperparameters
 
 
 - Filter / Spatial Extent F: (for example, F = 2 is 2x2 filter)
@@ -929,7 +929,7 @@ From : https://learning.oreilly.com/library/view/practical-deep-learning/9781492
     
 - Augmentation tools 
     - Keras ImageDataGenerator
-    - [imgaug library](https://github.com/aleju/imgaug)
+    - [imaging library](https://github.com/aleju/imgaug)
 
 
 Notes:  
@@ -1046,20 +1046,15 @@ imagenet/
 ## Cats & Dogs
 
 - In 2014 Microsoft Research was working on a CAPTCHA system
-
 - For that they were using ASIRRA (Animal Species Image Recognition for Restricting Access)
-
 - 3 million images  (800 MB in size)
-
-- Labelled by animal shelters throughout US and also [PetFinder.com](https://petfinder.com)
-
+- Labeled by animal shelters throughout US and also [PetFinder.com](https://petfinder.com)
 - When the dataset came out the accuracy was around 80%.  Within a few weeks the top algorithms were scoring 98% accuracy!
-
 - This image set has become a 'classic' test for image recognition algorithms!  
 (The cuteness doesn't hurt either!)
 
 
-<img src="../../assets/images/deep-learning/3rd-party/dog-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" /><!-- {"left" : 0.83, "top" : 6.63, "height" : 1.95, "width" : 1.95} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/dog-3.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" /><!-- {"left" : 3.07, "top" : 6.63, "height" : 1.95, "width" : 2.46} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" /><!-- {"left" : 5.81, "top" : 6.63, "height" : 1.94, "width" : 1.85} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" /><!-- {"left" : 8.09, "top" : 6.63, "height" : 1.95, "width" : 1.33} -->
+<img src="../../assets/images/deep-learning/3rd-party/dog-1.jpg" alt="XXX image missing" style="background:white;width:16%;" /><!-- {"left" : 0.83, "top" : 6.63, "height" : 1.95, "width" : 1.95} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/dog-3.jpg" alt="XXX image missing" style="background:white;width:20.1%" /><!-- {"left" : 3.07, "top" : 6.63, "height" : 1.95, "width" : 2.46} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-1.jpg" alt="XXX image missing" style="background:white;width:14.5%" /><!-- {"left" : 5.81, "top" : 6.63, "height" : 1.94, "width" : 1.85} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;width:10.3%;" /><!-- {"left" : 8.09, "top" : 6.63, "height" : 1.95, "width" : 1.33} -->
 
 
 Notes:

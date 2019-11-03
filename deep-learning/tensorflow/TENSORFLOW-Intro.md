@@ -69,7 +69,7 @@ Notes:
     - wrappers in Python for ease of use
     - other language support improving : Java, Go, R
 
- * Other high level APIs are built on top of TesnorFlow ; e.g. [Keras](http://keras.io/) and [Pretty Tensor](https://github.com/google/prettytensor/)
+ * Other high level APIs are built on top of TensorFlow ; e.g. [Keras](http://keras.io/) and [Pretty Tensor](https://github.com/google/prettytensor/)
 
  * Has a very nice UI called **Tensorboard** to visualize graphs and learning process
 
@@ -122,7 +122,7 @@ Notes:
  * TensorFlow will consume GPU + all its memory
      - So, you can't use the GPU for graphics at the same time
      - Servers don't use graphics anyway
-     - Workstations should have two nvidia cards.
+     - Workstations should have two NVIDIA cards.
 
 Notes:
 
@@ -131,15 +131,15 @@ Notes:
 
 ## GPU Support
 
- * Nvidia GPUs are best supported
+ * NVIDIA GPUs are best supported
    - use CUDA library
    - very easy to get set up: install tensorflow-gpu
-   - Datacenters: *Must* use **Tesla** GPU line per Nvidia TOS
+   - Datacenters: *Must* use **Tesla** GPU line per NVIDIA TOS
    - Workstations: Recommend **Quadro**
    - Home/PC: GeForce (Gaming) GPUs work well
  * Tensorflow 2.0 also supports AMD using OpenCL
    - Support a bit new
-   - Not as fast as Nvidia but hardware is more affordable.
+   - Not as fast as NVidia but hardware is more affordable.
    - Apple/Mac also uses AMD!
  * Intel GPUs not currently supported.
 
@@ -150,7 +150,7 @@ Notes:
  * TPU is Google's custom ASIC for Tensor Processing Unit
  * TPUs are have two very distict use cases:
    - Training
-   - Interence (aka Edge TPU)
+   - Inference (aka Edge TPU)
  * Training TPUs only available in Google Cloud Platform for now
    - *Free* evaluation with Google Colaboratory
  * Edge TPUs
@@ -163,13 +163,13 @@ Notes:
 
 ## Google Colaboratory
 
- * Google Colaboratory is a **free** hosted Juyter notebook
+ * Google Colaboratory is a **free** hosted Jupyter notebook
  * Provides GPU and TPU workloads!
    - The only **free** GPU and TPU access available!
  * Great for light workloads and evaluation
  * Serious users will want to upgrade to Google Cloud
    - security
-   - Guarunteed performance access
+   - Guaranteed performance access
 
 
 ---
@@ -186,8 +186,8 @@ Notes:
 | T4     | GPU  | Turing | 2018 | 16GB   | $0.95 |
 | P4     | GPU  | Pascal | 2016 | 16GB   | $0.60 |
 | K4     | GPU  | Kepler | 2014 | 16GB   | $0.45 |
-| TPUv3  | TPU  | 3rd    | 2019 | 64GB   | $8.00 |
-| TPUv2  | TPU  | 2nd    | 2017 | 64GB   | $4.50 |
+| TPU3  | TPU  | 3rd    | 2019 | 64GB   | $8.00 |
+| TPU2  | TPU  | 2nd    | 2017 | 64GB   | $4.50 |
 
 <!-- {"left" : 0.25, "top" : 2.18, "height" : 3, "width" : 9.75} -->
 
@@ -253,7 +253,7 @@ Notes:
      - Used by DataBricks in Spark Distribution
 
  * Intel: Analytics Zoo
-    - Allows users to do distributed tensorflow/keras/pytorch on Spark
+    - Allows users to do distributed tensorflow/Keras/PyTorch on Spark
     - Does not support GPU acceleration
 
 Notes:
@@ -460,7 +460,7 @@ Notes:
 
  * **AutoGraph** allows python loops like **for**, **while** to be converted into tensorflow graph code
 
- * Alows us to write loops that will allow dynamic placement of layers / cells
+ * Allows us to write loops that will allow dynamic placement of layers / cells
 
  * Example (Dynamic RNN):
 
@@ -507,7 +507,7 @@ for i in tf.range(input_data.shape[0]): # Note the For loop
 
 ---
 
-# Installing TesnorFlow
+# Installing TensorFlow
 
 ---
 
@@ -567,7 +567,7 @@ Notes:
 ## Installing version 2.0 RC
 
  * Currently version 2.0 is in Release Candidate status, but can still be installed
- * Will *not* be installed unless we specify the version specifcally
+ * Will *not* be installed unless we specify the version specifically
 
 ```bash
 $ (sudo) pip install tensorflow==2.0.0-rc0 keras
@@ -613,7 +613,7 @@ Notes:
  *  **Overview:**
      - In this lab, we will become familiar with the lab environment, set up TensorFlow, and start.
 
- * **Note:** 
+ * **Note :** 
      - The training VMs are already setup, no need for this setup. You can skip to next step
 
  *  **Approximate time:** 15-20 minutes

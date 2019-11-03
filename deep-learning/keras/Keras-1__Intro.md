@@ -65,7 +65,7 @@ NVIDIA - leading GPU vendor - provides CUDA (Compute Unified Device Architecture
     - easier to write
     - faster to experiment
 
-* Can support multiple backends
+* Can support multiple back-ends
 
 * Runs seamlessly on CPU and GPU
 
@@ -185,7 +185,7 @@ Image source : https://keras.io/why-use-keras/
   * Isn't Keras a wrapper for other DL frameworks?
     - Nope, this is a common (but understandable) misconception.
     - Keras is an API standard for defining and training machine learning models.
-    - Keras uses backend engines (like Tensorflow) for execution
+    - Keras uses back-end engines (like Tensorflow) for execution
     - Keras is not tied to a specific implementation
 
   * But wait, isn't Tensorflow the most popular framework?
@@ -217,7 +217,7 @@ https://medium.com/tensorflow/standardizing-on-keras-guidance-on-high-level-apis
 
 ## Model Zoos
 
-  * A model zoo is a place whered open-source models are shared so others can use them
+  * A model zoo is a place wheres open-source models are shared so others can use them
     - started with Caffe framework
 
   * Training a deep learning model from scratch on a multi-million-image database requires weeks of training time and lots of computational energy, making it a difficult task
@@ -233,7 +233,6 @@ https://medium.com/tensorflow/standardizing-on-keras-guidance-on-high-level-apis
 ## Model Zoos in Keras
 
 ImageNet trained models
-<small>
 
 | Model               | Size  | Top 1 Accuracy | Top 5 Accuracy | Parameters  | Depth |
 |---------------------|-------|----------------|----------------|-------------|-------|
@@ -250,6 +249,8 @@ ImageNet trained models
 
 <!-- {"left" : 0.15, "top" : 1.87, "height" : 5.86, "width" : 9.95, "columnwidth" : [1.66, 1.66, 1.66, 1.66, 1.66, 1.66 ]} -->
 
+<small>
+
 Source : [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch01.html#image_classification_with_keras), Ch 2
 </small>
 
@@ -265,7 +266,7 @@ Source : [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly
 
 ## Installing Keras
 
- * Before installing Keras, need to install a backend engine.
+ * Before installing Keras, need to install a back-end engine.
 
  * **With Tensorflow (Default Keras Engine)**
 
@@ -291,7 +292,7 @@ Using TensorFlow backend.
 
 ---
 
-## Configuring Keras Backend
+## Configuring Keras Back-end
 
   * Linux / Mac :  `$HOME/.keras/keras.json`  
   * Windows : `%USERPROFILE%/.keras/keras.json`
@@ -308,7 +309,7 @@ Using TensorFlow backend.
 
 ---
 
-## Configuring Keras Backend
+## Configuring Keras Back-end
 
   * Change the `backend` to "theano", "tensorflow", or "cntk"
   * Overwrite the config file by defining an environment variable `KERAS_BACKEND`
@@ -488,7 +489,7 @@ d = Dropout(rate = 0.1,seed=100)
 
   * Choice of optimizers
     - SGD : Stochastic Gradient Descent Optimizer
-    - Momentum / Nestrov
+    - Momentum / Nesterov
     - Adagrad
     - RMSProp
     - Adam
@@ -605,8 +606,8 @@ model.compile(optimizer='adam', ...)
     - Mean Squared Logarithmic Error
 
   * For Classifications:
-    - Categorical Crossentropy
-    - Binary Crossentropy
+    - Categorical Cross-entropy
+    - Binary Cross-entropy
 
 ---
 
@@ -654,7 +655,7 @@ keras.losses.mean_squared_logarithmic_error
 
 ## Loss Functions  (Categorical)
 
-  *  **Binary Crossentropy**
+  *  **Binary Cross-entropy**
     - Used when outcome is binary (yes/now,  0/1)
 
 ```
@@ -667,7 +668,7 @@ keras.losses.binary_crossentropy(y_true, y_pred)
 ```
 <!-- {"left" : 0, "top" : 2.43, "height" : 0.45, "width" : 7.29} -->
 
-  * **Categorical Crossentropy**
+  * **Categorical Cross-entropy**
     - Used for multi-class classifications (class-1, class-2, class-3  ..etc)
 
 ```python
@@ -735,13 +736,12 @@ compile(optimizer,
         weighted_metrics=None,
         target_tensors=None)
 ```
-<!-- {"left" : 0, "top" : 1.01, "height" : 1.36, "width" : 3.91} -->
-
+<!-- {"left" : 0, "top" : 1, "height" : 1.06, "width" : 3.04} -->
 
   * Arguments
-    - **optimzer** : optimizer name ('adam', 'sgd') or optimizer instance
-    - **loss** : loss function name or instance
-    - **metrics** : metrics to evaluate during training/testing  
+    - **optimzer:** optimizer name ('adam', 'sgd') or optimizer instance
+    - **loss:** loss function name or instance
+    - **metrics:** metrics to evaluate during training/testing  
       `metrics = ['accuracy']`
 
 ---
@@ -769,9 +769,9 @@ fit(x=None, y=None,
   * Arguments
     - x : training input data (numpy array or list of numpy arrays)
     - y : training target data (numpy array)
-    - batch_size : integer, usually powers of two (default = 32)
-    - epochs : integer, how many times to go through data
-    - verbose : 0 or 1 or 2  (0 = silent, 1 = progress bar, 2 = one line per epoch)
+    - batch_size: integer, usually powers of two (default = 32)
+    - epochs: integer, how many times to go through data
+    - verbose: 0 or 1 or 2  (0 = silent, 1 = progress bar, 2 = one line per epoch)
 
 ---
 
@@ -789,7 +789,7 @@ evaluate(x=None, y=None,
   * Arguments
     - x : test data inputs (numpy array(s) )
     - y : test data labels (numpy array(s) )
-    - batch_size : integer, usually powers of two (default = 32)
+    - batch_size: integer, usually powers of two (default = 32)
     - verbose: 0 or 1. Verbosity mode. 0 = silent, 1 = progress bar.
 
 ---
@@ -905,7 +905,7 @@ model.compile( optimizer = 'adam',
 
 **Step 3: Fit Model to Data (or Training)**
   
-  * Training might take a while depending on amont of data and model.
+  * Training might take a while depending on amount of data and model.
 
 ```python
 ## without validation
@@ -1054,7 +1054,7 @@ plt.show()
 
 ---
 
-## Visualizing Trainng History With Tensorboard (3)
+## Visualizing Training History With Tensorboard (3)
 
 Use Keras callback for saving your training and test metrics, as well as activation histograms for the different layers in your model
 
@@ -1066,7 +1066,7 @@ Use Keras callback for saving your training and test metrics, as well as activat
 ```
 <!-- {"left" : 0, "top" : 2.34, "height" : 1.45, "width" : 9.74} -->
 
-Saved data can then be visualized with TensorBoad
+Saved data can then be visualized with Tensorboard
 
 ```bash
 $   tensorboard --logdir=/full_path_to_your_logs
@@ -1079,14 +1079,14 @@ See next slide for a visualization.
 
 ## Keras and Tensorboard
 
-<img src="../../assets/images/deep-learning/tensorboard-keras.png" alt="XXX image missing" style="width:75%;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
+<img src="../../assets/images/deep-learning/tensorboard-keras.png" alt="tensorboard-keras.png" style="width:75%;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
 
 
 ---
 
 ## Lab
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 6.73, "top" : 2.04, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="individual-labs.png" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 6.73, "top" : 2.04, "height" : 3.9, "width" : 2.93} -->
 
   * **Overview:**
      - KERAS-1: Simple Keras network to classify IRIS

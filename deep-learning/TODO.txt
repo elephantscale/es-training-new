@@ -1,3 +1,9 @@
+- Tensorflow-Intro
+    - cleanup
+
+- DL Intro
+    - merge with Machine Learning Primer and delete
+
 - DL Concepts
     - flow isn't smooth
 
@@ -32,17 +38,6 @@
 
     - convert optimizer formulas to images
 
-- Gradient Descent
-    - add few more graphics, starting with no error curve.. and finding the way to bottom
-
-=====================================
-
-- DL Linear  , DL-Feedforward
-    - merge with DL-Neural-Networks
-
-    - Do linear and then FFN
-
-    - do Playground exercises here
 
 =====================================
 

@@ -81,7 +81,7 @@ Notes:
 
      - Weights (Wn) were set manually; No way to automatically train weights
 
-<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%" /> <!-- {"left" : 1.97, "top" : 5.77, "height" : 2.77, "width" : 6.31} -->
+<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="background:white;max-width:100%" width="40%;" /> <!-- {"left" : 1.97, "top" : 5.77, "height" : 2.77, "width" : 6.31} -->
 
 Notes:  
 - https://scholar.google.com/scholar?q=A+Logical+Calculus+of+Ideas+Immanent+in+Nervous+Activity
@@ -106,7 +106,7 @@ Source : [Neural networks and deep learning](https://learning.oreilly.com/librar
 
  * Inputs are numbers (not binary as before)
 
- * Simplest type of feedforward neural network
+ * Simplest type of Feedforward neural network
 
 <img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/> &nbsp;<!-- {"left" : 0.61, "top" : 3.53, "height" : 2.89, "width" : 5.57} --> <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 6.68, "top" : 3.18, "height" : 3.59, "width" : 2.93} -->
 
@@ -180,6 +180,28 @@ In matrix operations this is
 
 ---
 
+## Training the Model
+
+ * Rosenblatt's original algorithm for training was simple:
+
+     - Iterate through weights and look at the output error
+
+     - Adjust weights until output error was zero.
+
+     - Will converge only if the outputs are linearly separable.
+
+ * The Problem:
+
+     - With hidden layers, we now have a much greater number of weights to try.
+
+     - This kind of "brute force" method will take too long to train.
+
+Notes:
+
+
+
+---
+
 ## Epoch
 
  * One **Epoch** means when an entire dataset passed forward and backward exactly ONCE
@@ -202,7 +224,7 @@ Notes:
 
 ## Batch size
 
- * When we are trining on large dataset, we can not fit the entire dataset into the network due to memory constraints / processing restraints
+ * When we are training on large dataset, we can not fit the entire dataset into the network due to memory constraints / processing restraints
 
  * So we send data into batches
 
@@ -212,7 +234,7 @@ Notes:
     - The algorithm will then calculate error gradient and make the move to minimize the error during the next cycle
 
 
- * Batch size is uaually power of 2 (4, 8, 16, 64 ...)
+ * Batch size is usually power of 2 (4, 8, 16, 64 ...)
 
 Notes:  
 - https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/
@@ -224,7 +246,7 @@ Notes:
 
 
 
-- What if data size is not divisable evenly by batch size?
+- What if data size is not divisible evenly by batch size?
     - That is fine, the last batch will have what is left, and will be smaller than previous batches
     - For example, if we have 10 data points and batch size is 4
         - batch-1 = 4, batch-2 = 4, batch-3 = 2
@@ -276,7 +298,7 @@ for e  in number_of_epochs {
 
 
 ---
-## Determning Optimal Values or Batch Size / Epochs
+## Determining Optimal Values or Batch Size / Epochs
 
  * Typical epochs values are in 100s to thousands
 
@@ -309,7 +331,7 @@ for e  in number_of_epochs {
 * But it's usefulness wasn't appreciated until a seminal paper in 1986.  
     - **"Learning representations by back-propagating errors"**   
     by  [David Rumelhart](http://en.wikipedia.org/wiki/David_Rumelhart), [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/), and [Ronald Williams](http://en.wikipedia.org/wiki/Ronald_J._Williams)  
-    - [pdf](http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf), [Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Learning+representations+by+back-propagating+errors&btnG=)
+    - [PDF](http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf), [Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Learning+representations+by+back-propagating+errors&btnG=)
 
 
 
@@ -480,7 +502,7 @@ Notes:
 ## Dropout
 
  * How does it work?
-    - At every trainng step, each neuron has a chance (probablity) of being 'dropped'.  
+    - At every training step, each neuron has a chance (probability) of being 'dropped'.  
     Meaning, it's output ignored during this step
     - The neuron can become active during the next step
     - Neurons in input layer and hidden layer can be dropped
@@ -506,7 +528,7 @@ Imagine this scenario
     - Every morning they toss a coin
     - 'Heads' they come to work, 'tails' they don't
     - So that means 50% of workers don't show up at any day
-    - 'Dropput' method says, this makes the 'company' as a whole, perform better :-)
+    - 'Dropout' method says, this makes the 'company' as a whole, perform better :-)
 
  * Increase dropout rate, if you notice the model is overfitting.  
 Decrease it if it is underfitting
@@ -532,7 +554,7 @@ Decrease it if it is underfitting
 ## Data Augmentation
 
  * **Data augmentation** creates new training instances from existing ones
-    - this artifically boosts training set size
+    - this artificially boosts training set size
 
  * This technique is mostly used in image training
 
@@ -641,7 +663,7 @@ Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/librar
 
 ## Batch Normalization
 
- * So far we have seen **Xe initialization** and **ReLU varaiants**
+ * So far we have seen **Xe initialization** and **ReLU variants**
 
  * These can help avoid vanishing/exploding gradient problems at the start of training
     - how ever during later phases of training, it may occur
@@ -657,7 +679,7 @@ Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/librar
 
  * Significantly reduced vanishing gradient problems
 
- * They could even try saturating functions like sigmod and tanh
+ * They could even try saturating functions like sigmoid and tanh
 
  * Network was less sensitive to initial weight initialization
 

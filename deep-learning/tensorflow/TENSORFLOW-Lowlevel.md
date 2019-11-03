@@ -27,7 +27,7 @@
 | 3    | Number Cube |
 | n    | n-Tensor    |
 
-<!-- {"left" : 2.9, "top" : 3.23, "height" : 3, "width" : 4.44, "columnwidth" : [2.22, 2.22]} -->
+<!-- {"left" : 2.9, "top" : 5.12, "height" : 3, "width" : 4.44, "columnwidth" : [2.22, 2.22]} -->
 
 Notes: 
 
@@ -37,7 +37,8 @@ Notes:
 ## Tensors
 
 
-<img src="../../assets/images/deep-learning/tensors-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" />
+<img src="../../assets/images/deep-learning/tensors-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:60%;" /><!-- {"left" : 1.57, "top" : 1.55, "height" : 6.6, "width" : 7.15} -->
+
 
 ---
 
@@ -86,7 +87,7 @@ Notes:
   
   * TF types can be *inferred*, but only at creation time.
     - Example: `10.0` : `tf.float64`
-    - Exmple: `5` : `tf.int64`
+    - Example: `5` : `tf.int64`
 
 Notes: 
 
@@ -107,10 +108,12 @@ Notes:
 | tf.uint32     | 32-bit unsigned integer                |
 | tf.uint64     | 64-bit unsigned integer                |
 
+<!-- {"left" : 0.25, "top" : 1.53, "height" : 6, "width" : 9.75} -->
+
 Notes: 
 
 ---
-## Tensorflow Types (continuted)
+## Tensorflow Types (continued)
 
 |     Type    |            Description            |
 |:-----------:|:---------------------------------:|
@@ -127,6 +130,7 @@ Notes:
 | tf.resource | Handle to a mutable resource      |
 | tf.variant  | Values of arbitrary types         |
 
+<!-- {"left" : 0.25, "top" : 1.53, "height" : 6.5, "width" : 9.75} -->
 
 Notes: 
 
@@ -154,13 +158,15 @@ Notes:
  
  * Here are some Example scalars:
 
+<br/>
+
 ```python
 person = tf.Variable("Tim", tf.string)
 count = tf.Variable(30, tf.int16)
 floating_point = tf.Variable(5.5, tf.float64)
 complex_number = tf.Variable(4.1 + 3.3j, tf.complex64)
 ```
-<!-- {"left" : 0, "top" : 2.15, "height" : 1.4, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.04, "height" : 1.4, "width" : 10.25} -->
 
  * Note that the scalars are converted from python types to TF types.
 
@@ -180,7 +186,7 @@ Notes:
 counts = tf.Variable([10,20,30], tf.int16)
 distances = tf.Variable([3.1,2.2,5.5], tf.float32)
 ```
-<!-- {"left" : 0, "top" : 2.56, "height" : 0.91, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.74, "height" : 0.91, "width" : 10.25} -->
 
 Notes: 
 
@@ -213,6 +219,7 @@ print(a.dtype)
 # > int64
 
 ```
+<!-- {"left" : 0, "top" : 1.19, "height" : 6.69, "width" : 5.78} -->
 
 ---
 ## Rank 1 Example
@@ -230,6 +237,7 @@ with tf.Session() as sess:
 # > [1 2 3 4]
 ```
 
+<!-- {"left" : 0, "top" : 1.35, "height" : 3.47, "width" : 10.25} -->
 
 
 
@@ -251,7 +259,7 @@ a = np.array ([(1,2,3), (4,5,6), (7,8,9) ])
 b = np.array ([(9, 8, 7), (6, 5, 4), (3,2,1)])
 ```
 
-<!-- {"left" : 0, "top" : 2.56, "height" : 0.91, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.74, "height" : 0.91, "width" : 10.25} -->
 
 Notes: 
 
@@ -285,6 +293,7 @@ with tf.Session() as sess:
 # >      [ 84  69  54]
 # >      [138 114  90]]
 ```
+<!-- {"left" : 0, "top" : 1.23, "height" : 7.28, "width" : 9.28} -->
 
 ---
 
@@ -302,7 +311,7 @@ tf.rank(rubiks) # Will get value of rank after session runs
 tf.shape(rubiks) # Will get [3,3,3] after session runs
 tf.reshape(rubiks, [9,3]) # Will reshape into 9 x3 Matrix
 ```
-<!-- {"left" : 0, "top" : 1.68, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.84, "height" : 2.39, "width" : 10.25} -->
 
 Notes: 
 
@@ -324,7 +333,7 @@ rubiks[0:2,:,0]
 # ([[1, 4, 7],
 #   [1, 4, 7]])
 ```
-<!-- {"left" : 0, "top" : 2.06, "height" : 2.13, "width" : 9.11} -->
+<!-- {"left" : 0, "top" : 2.38, "height" : 2.13, "width" : 9.11} -->
 
 
 Notes: 
@@ -352,7 +361,7 @@ Notes:
 ---
 ## Placeholders
 
-  * Placeholders are not changable by the model
+  * Placeholders are not changeable by the model
     - Can't hold state
     - Once set by the outside, they are fixed.
     
@@ -423,15 +432,15 @@ with tf.Session() as sess:
 print(result)
 #  > result 42
 ```
+<!-- {"left" : 0, "top" : 4.08, "height" : 4.65, "width" : 8.78} -->
 
-<!-- {"left" : 0, "top" : 4.26, "height" : 0.95, "width" : 10.25} -->
 
 Notes: 
 
 ---
 ## Global Initialization
 
-- Rather than initializing each variable seperately, we can use **global initializer**
+- Rather than initializing each variable separately, we can use **global initializer**
 
 - This doesn't initialize variables right away, but create a node that will initialize all variables when it is run
 
@@ -451,20 +460,21 @@ with tf.Session() as sess:
 print (result)
 #  > result 42
 ```
-<!-- {"left" : 0, "top" : 2.26, "height" : 2.25, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.21, "height" : 3.91, "width" : 10.25} -->
 
 Notes: 
 
 ---
 
-
 ## Eager Execution vs Sessions
 
  * Tensorflow's *default* mode of operation is called Eager Execution
    - As of 2.0
+
  * It means that operations are processed **immediately**
    - Like NumPy
- * 
+ 
+---
 
 ## About Eager Execution
 
@@ -481,7 +491,7 @@ Notes:
 import tensorflow as tf
 tf.enable_eager_execution()
 ```
-<!-- {"left" : 0, "top" : 4.26, "height" : 1.13, "width" : 7.38} -->
+<!-- {"left" : 0, "top" : 4.5, "height" : 1.13, "width" : 7.38} -->
 
 Notes: 
 
@@ -503,7 +513,7 @@ Notes:
 array([[1, 2],
        [3, 4]], dtype=int32)>
 ```
-<!-- {"left" : 0, "top" : 1.49, "height" : 2.64, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.02, "height" : 2.64, "width" : 10.25} -->
 
 Notes: 
 
@@ -522,7 +532,7 @@ Notes:
 #     [3 4]]
 >>> np.multiply(a, 2)
 ```
-<!-- {"left" : 0, "top" : 1.57, "height" : 3.55, "width" : 8.83} -->
+<!-- {"left" : 0, "top" : 1.93, "height" : 3.55, "width" : 8.83} -->
 
 Notes: 
 
@@ -548,7 +558,7 @@ class MNISTModel(tf.keras.Model):
 
 model = MNISTModel()
 ```
-<!-- {"left" : 0, "top" : 1.96, "height" : 4.55, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.26, "height" : 4.55, "width" : 10.25} -->
 
 Notes: 
 
@@ -576,7 +586,7 @@ with tf.Session() as sess:
    sess.run(c)
    # session is closed here
 ```
-<!-- {"left" : 0, "top" : 1.8, "height" : 2.8, "width" : 10.03} -->
+<!-- {"left" : 0, "top" : 3.93, "height" : 2.9, "width" : 5.61} -->
 
 Notes: 
 
@@ -587,7 +597,7 @@ Notes:
  
  * Will create Session **and** make it the default
  
- * It will rrun statements as soon as they are defined
+ * It will rerun statements as soon as they are defined
 
 
 ```python
@@ -605,7 +615,7 @@ print(c.eval()) # evaluated immediately
 
 sess.close()  # be sure to close the session
 ```
-<!-- {"left" : 0, "top" : 2.62, "height" : 1.06, "width" : 9.11} -->
+<!-- {"left" : 0, "top" : 3.21, "height" : 4.07, "width" : 8.94} -->
 
 Notes: 
 
@@ -614,12 +624,14 @@ Notes:
 
 * Tensorflow executes operations as graphs
 
-<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:80%;" />
+<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:80%;" /><!-- {"left" : 1.39, "top" : 2.52, "height" : 4.02, "width" : 7.47} -->
+
 
 ---
 ## Tensorflow Graphs 
 
-<img src="../../assets/images/deep-learning/tf-architecture-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;"  />
+<img src="../../assets/images/deep-learning/tf-architecture-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;"/><!-- {"left" : 3.06, "top" : 1.52, "height" : 6.6, "width" : 4.13} -->
+
 
 ---
 
@@ -627,7 +639,8 @@ Notes:
 ## Tensorflow Graph Example
 
 
-<img src="../../assets/images/deep-learning/3rd-party/tensors_flowing.gif" alt="XXX image missing" style="background:white;max-width:100%;width:80%;" />
+<img src="../../assets/images/deep-learning/3rd-party/tensors_flowing.gif" alt="XXX image missing" style="background:white;width:30%;"/><!-- {"left" : 3.38, "top" : 1.71, "height" : 6.22, "width" : 3.5} -->
+
 
 
 ---
@@ -636,14 +649,10 @@ Notes:
 ## Dataflow
 
  * Dataflow has several advantages that TensorFlow leverages when executing your programs:
-
- * **Parallelism**. By using explicit edges to represent dependencies between operations, it is easy for the system to identify operations that can execute in parallel.
-
- * **Distributed execution**. By using explicit edges to represent the values that flow between operations, it is possible for TensorFlow to partition your program across multiple devices (CPUs, GPUs, and TPUs) attached to different machines. TensorFlow inserts the necessary communication and coordination between devices.
-
- * **Compilation**. TensorFlow's XLA compiler can use the information in your dataflow graph to generate faster code, for example, by fusing together adjacent operations.
-
- * **Portability**. The dataflow graph is a language-independent representation of the code in your model. You can build a dataflow graph in Python, store it in a SavedModel, and restore it in a C++ program for low-latency inference.
+ * **Parallelism.** By using explicit edges to represent dependencies between operations, it is easy for the system to identify operations that can execute in parallel.
+ * **Distributed execution.** By using explicit edges to represent the values that flow between operations, it is possible for TensorFlow to partition your program across multiple devices (CPUs, GPUs, and TPUs) attached to different machines. TensorFlow inserts the necessary communication and coordination between devices.
+ * **Compilation.** TensorFlow's XLA compiler can use the information in your dataflow graph to generate faster code, for example, by fusing together adjacent operations.
+ * **Portability.** The dataflow graph is a language-independent representation of the code in your model. You can build a dataflow graph in Python, store it in a SavedModel, and restore it in a C++ program for low-latency inference.
 
 
 ---
@@ -707,20 +716,20 @@ Notes:
 
 ## Lab: Tensorflow Intro
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 7.2, "top" : 1.04, "height" : 3.78, "width" : 2.83} -->
 
 
- *  **Overview** :   
+ *  **Overview:**
  In this lab, we will explore sessions in tensorflow 
 
- *  **Approximate time** : 15-20 minutes
+ *  **Approximate time:** 15-20 minutes
 
  *  **Lab Instructions:**  
-     - **basics-1 : basics/1-hello-world.ipynb**
-     - **basics-2 : basics/2-sessions.ipynb**
-     - **basics-3 : basics/3-tensors.ipynb**
-     - **basics-4 : basics/4-variables.ipynb**
-     - **basics-5 : basics/5-tensorboard.ipynb**
+     - **basics-1: basics/1-hello-world.ipynb**
+     - **basics-2: basics/2-sessions.ipynb**
+     - **basics-3: basics/3-tensors.ipynb**
+     - **basics-4: basics/4-variables.ipynb**
+     - **basics-5: basics/5-tensorboard.ipynb**
 
 
 Notes:
@@ -732,7 +741,7 @@ Notes:
  * We saw that we did not **immediately** see results from a session graph.
  * We saw we had to **run** the session graph.
  * We run the session graph with `.eval()`
- * `InteractiveSession` allows us to call `.eval()` without specifiying the session
+ * `InteractiveSession` allows us to call `.eval()` without specifying the session
 
 Notes: 
 
@@ -763,7 +772,7 @@ simple_save(session,
             inputs={"x": x, "y": y},
             outputs={"z": z})
 ```
-<!-- {"left" : 0, "top" : 2.01, "height" : 2.02, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.37, "height" : 2.02, "width" : 10.25} -->
 
 Notes: 
 
@@ -779,19 +788,20 @@ with tf.Session(graph=tf.Graph()) as sess:
                        [tag_constants.TRAINING], 
                        export_dir)
 ```
-<!-- {"left" : 0, "top" : 1.66, "height" : 1.83, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.86, "height" : 1.83, "width" : 10.25} -->
 
 Notes: 
 
 ---
 
-## Lab : MNIST Dataset
+## Lab: MNIST Dataset
 
   * MNIST is a dataset of 28x28 pixel images (784 total inputs)
   * It contains greyscale handwritten digits from 0-9. (10 outputs)
   * It is often used as a hello world example for Deep Learning.
 
-![](../../assets/images/deep-learning/LowLevel-mnist.jpeg) <!-- {"left" : 2, "top" : 2.93, "height" : 4.14, "width" : 6.25} -->
+
+<img src="../../assets/images/deep-learning/LowLevel-mnist.jpeg" alt="XXX image missing" style="background:white;max-width:100%;width:50%;" /><!-- {"left" : 2, "top" : 3.45, "height" : 4.14, "width" : 6.25} -->
 
 Notes: 
 
@@ -801,7 +811,7 @@ Notes:
  * We are going to define
    - x: This is a placeholder for our input. (784 pixels)
    - W: This is our weights for our input
-   - b: THis is our bias for out input.
+   - b: This is our bias for out input.
 
 ```python
 
@@ -809,7 +819,7 @@ x = tf.placeholder(tf.float32, [None, 784])
 W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
 ```
-<!-- {"left" : 0, "top" : 2.82, "height" : 1.38, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.3, "height" : 1.38, "width" : 10.25} -->
 
 Notes: 
 
@@ -828,7 +838,7 @@ Notes:
 ```python
 y = tf.nn.softmax(tf.matmul(x, W) + b)
 ```
-<!-- {"left" : 0, "top" : 4.74, "height" : 0.74, "width" : 9.77} -->
+<!-- {"left" : 0, "top" : 5.13, "height" : 0.74, "width" : 9.77} -->
 
 Notes: 
 
@@ -838,7 +848,7 @@ Notes:
  * We will define our `y_` (y-hat) 
    - This is the actual output (0-9)
  * `y` is our *predicted* output
- * `correct_prediction` is whether we were right or worng
+ * `correct_prediction` is whether we were right or wrong
 
 ```python
 y_ = tf.placeholder(tf.float32, [None, 10])
@@ -846,7 +856,7 @@ correct_prediction =
 tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
 
 ```
-<!-- {"left" : 0, "top" : 3.17, "height" : 1.4, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.44, "height" : 1.4, "width" : 10.25} -->
 
 Notes: 
 
@@ -875,7 +885,7 @@ mnist.train.next_batch(100)
 {x: batch_xs, y_: batch_ys})
 
 ```
-<!-- {"left" : 0, "top" : 2.82, "height" : 2.84, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.4, "height" : 2.84, "width" : 10.25} -->
 
 Notes: 
 
@@ -891,30 +901,31 @@ Notes:
 
 ## Lab : Simple Linear Regression 
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.63, "top" : 1.1, "height" : 4.4, "width" : 3.3} -->
 
- *  **Overview** :   
+ *  **Overview:**  
  In this lab, we will implement a simple linear regression using Tensorflow
 
- *  **Approximate time** : 20-30 minutes
+ *  **Approximate time:** 20-30 minutes
 
- *  **Lab Instructions** :
+ *  **Lab Instructions:**
 
      - **lowlevel/1-linear.ipynb** file
-     - bonus : **lowlevel/2-linear-tips-a.ipynb** file
+     - bonus: **lowlevel/2-linear-tips-a.ipynb** file
 
 
 ---
 ## Lab: Tensorflow MNist Example
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.63, "top" : 1.1, "height" : 4.4, "width" : 3.3} -->
 
- *  **Overview** :   
+
+ *  **Overview:**   
  In this lab, we will explore MNIST 
 
- *  **Approximate time** : 15-20 minutes
+ *  **Approximate time*:* 15-20 minutes
 
- *  **Lab Instructions** :
+ *  **Lab Instructions:**
 
      - follow  **lowlevel/3.2-NoHidden.ipynb** file
 
@@ -936,4 +947,3 @@ Notes:
    
 Notes: 
 
----

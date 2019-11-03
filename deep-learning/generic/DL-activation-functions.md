@@ -83,7 +83,7 @@ Notes:
 
 - The two are closely related, as tanh is a "stretched" Sigmoid
 
-- Just like Sigmod, Tanh is S-shaped, continuous, and differentiable
+- Just like Sigmoid, Tanh is S-shaped, continuous, and differentiable
 
 - Tanh is symmetric around zero and ranges from **`-1 to +1`**   
 (sigmoid ranges from **`0 to +1`**)
@@ -117,7 +117,7 @@ Notes:
 
 <img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="40%" /><!-- {"left" : 6.33, "top" : 1.94, "height" : 2.85, "width" : 3.72} -->
 
-- Sigmoid and Tanh both suffer from the **Vanis hing Gradient** problem.
+- Sigmoid and Tanh both suffer from the **Vanishing Gradient** problem.
      - The derivative of a Sigmoid is less than .25
      - As we propagate that through many layers, that gradient becomes much less.
 - And their slopes (derivatives) get closer to zero for large input values
@@ -148,7 +148,7 @@ Notes:
 - Sigmoid function was the most popular activation function used at that time   
     - Because sigmoid like functions are found in biological neurons.  (What is good for Mother Nature must be good for us too!)
 
-- How ever, Sigmoid functions tend to 'saturate' at high values (towards the edges), that meand derivatives get close to zero.
+- How ever, Sigmoid functions tend to 'saturate' at high values (towards the edges), that meant derivatives get close to zero.
     - Leads to vanishing gradients problem
 
 * **Solution:**
@@ -213,7 +213,7 @@ Notes:
 
 - A 2015 [paper](https://arxiv.org/pdf/1511.07289v5.pdf) by Djork-Arne Clevert, Thomas Unterthiner & Sepp Hochreiter introduced ELUs
 
-- ELU outpermed all other ReLU variants, it trained quicker, and test accuracy was higher too.
+- ELU outperformed all other ReLU variants, it trained quicker, and test accuracy was higher too.
 
 <img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 5.38, "top" : 2.76, "height" : 1.52, "width" : 4.59} -->
 
