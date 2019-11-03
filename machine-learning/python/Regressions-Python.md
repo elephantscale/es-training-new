@@ -24,9 +24,17 @@
 |-------------------|---------------------------------------|---------------|
 | Linear Regression | sklearn.linear_model.LinearRegression | SKlearn       |
 | Linear Regression | scipy.stats.linregress                | SciPy package |
+| Linear Regression | statsmodels.api.formula.OLS           | Statsmodels   |
 
 - [sklearn.linear_model  docs](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model)
 - [scipy.stats.linregres](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.linregress.html)
+
+Notes:
+
+- https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model
+- https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.linregress.html
+
+
 
 ---
 

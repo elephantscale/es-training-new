@@ -18,11 +18,13 @@ Notes:
 
 | Library                                              	| Pros                                   	| Cons                                                         	|
 |------------------------------------------------------	|----------------------------------------	|--------------------------------------------------------------	|
-| **NLTK**                                                 	| - 'the'library <br/>- modular         	| - Can be steep learning curve <br/>- Might not be high performant 	|
+| **NLTK**                                                 	| - 'the' library <br/>- modular         	| - Can be steep learning curve <br/>- Might not be high performant 	|
 | **TextBlob** <br/>- Built on top of NLTK                      	| - Easily accessible <br/>- fast prototyping<br/> 	| - Performance may not be high                            	|
 | **Stanford CoreNLP** <br/>- Core java library python wrappers 	| - Fast <br/>- Lot of use in production      	|                                                              	|
 | **SpaCy** <br/>- New                                          	|                                        	|                                                              	|
 | **Gensim** <br/>- Topic modeling                              	|                                        	|                                      |                        	|
+<!-- {"left" : 0.25, "top" : 1.98, "height" : 5.11, "width" : 9.75} -->
+
 
 Notes: 
 
@@ -87,6 +89,8 @@ $  python3
 > nltk.data.path.append("/Users/sujee/data/nltk_data")
 
 ```
+<!-- {"left" : 0, "top" : 2.79, "height" : 3.49, "width" : 9.78} -->
+
 
 Notes: 
 
@@ -121,6 +125,7 @@ print(words_en[:10])
 # ['A', 'a', 'aa', 'aal', 'aalii', 'aam', 'Aani', 'aardvark', 'aardwolf', 'Aaron']
 
 ```
+<!-- {"left" : 0, "top" : 2.46, "height" : 3.37, "width" : 10.25} -->
 
 Notes: 
 
@@ -160,6 +165,7 @@ gw2006_sentences = state_union.sents('2006-GWBush.txt')
 print(gw2006_sentences[:10])
 
 ```
+<!-- {"left" : 0, "top" : 2.42, "height" : 2.09, "width" : 10.25} -->
 
 Notes: 
 
@@ -191,6 +197,8 @@ print (len(moby_dick_words))
 # 260819
 
 ```
+<!-- {"left" : 0, "top" : 1.7, "height" : 0.71, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -207,11 +215,9 @@ Notes:
 
  * Nltk.tokenize package offers few handy ones
 
-     - Word_tokenize : gives out words
-
-     - Workpunct_tokenize : numbers and punctuations in their own words
-
-     - Sent_tokenize : splits into sentences
+     - Word_tokenize: gives out words
+     - Workpunct_tokenize: numbers and punctuations in their own words
+     - Sent_tokenize: splits into sentences
 
 ```text
 import nltk
@@ -232,6 +238,7 @@ print(wordpunct_tokenize(text))
 # ['I', 'went', 'to', 'Starbucks', '.', 'And', 'bought', 'a', 'latte', 'for', '$', '4', '.', '50', '!', 'Yum', ':-)']
 
 ```
+<!-- {"left" : 0, "top" : 4.49, "height" : 2.5, "width" : 10.25} -->
 
 Notes: 
 
@@ -242,19 +249,19 @@ Notes:
 ## Lab: TEXT-1: NLTK Intro
 
 
- *  **Overview**: 
+ *  **Overview:**
  
      - Get to know NLTK library
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:** 
  
      - None
 
- *  **Approximate time**: 
+ *  **Approximate time:**
  
      - 15 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - 1-NLTK-Intro
 
@@ -270,19 +277,19 @@ Notes:
 ## Lab: Text-2: Text Analytics With NLTK
 
 
- *  **Overview**: 
+ *  **Overview:**
  
      - Analyzing raw text with NLTK library
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:** 
  
      - TEXT-1: NLTK intro
 
- *  **Approximate time**: 
+ *  **Approximate time:**
     
      - 15 mins
 
- *  **Instructions** : 
+ *  **Instructions:** 
 
      - 2-analyzing-text-with-nltk
 
@@ -297,19 +304,19 @@ Notes:
 ## Lab: Text-3:  Ngrams
 
 
- *  **Overview**: 
+ *  **Overview:**
  
      - Analyzing text for Ngrams
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:**
  
      - TEXT-2: NLTK
 
- *  **Approximate time**:
+ *  **Approximate time:**
  
      - 15 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - 3-ngrams 
 
@@ -372,6 +379,8 @@ $ python -m textblob.download_corpora
 
 ```
 
+<!-- {"left" : 0, "top" : 1.54, "height" : 3.65, "width" : 10.25} -->
+
 Notes: 
 
 
@@ -395,6 +404,7 @@ tb = TextBlob(text)
 print(tb)
 
 ```
+<!-- {"left" : 0, "top" : 1.24, "height" : 1, "width" : 10.25} -->
 
 Notes: 
 
@@ -422,6 +432,8 @@ print(tb.sentences)
 
 
 ```
+<!-- {"left" : 0, "top" : 1.24, "height" : 1, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -458,6 +470,7 @@ this song is lame ==> Sentiment(polarity=-0.5, subjectivity=0.75)
 Let's go to beach ==> Sentiment(polarity=0.0, subjectivity=0.0)
 
 ```
+<!-- {"left" : 0, "top" : 3.7, "height" : 4.26, "width" : 10.25} -->
 
 
 Notes: 
@@ -482,6 +495,8 @@ print(tb.word_counts['sunny'])
 2
 
 ```
+<!-- {"left" : 0, "top" : 1.5, "height" : 1, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -504,6 +519,7 @@ print(tb.ngrams(n=2))
 ...]
 
 ```
+<!-- {"left" : 0, "top" : 1.5, "height" : 1, "width" : 10.25} -->
 
 Notes: 
 
@@ -534,6 +550,7 @@ text_jp = u"私はちょうど夕食"
 TextBlob(text_jp).detect_language()
 ja
 ```
+<!-- {"left" : 0, "top" : 2.44, "height" : 3.49, "width" : 6.78} -->
 
 Notes: 
 
@@ -543,22 +560,22 @@ https://developers.google.com/translate/
 
 ---
 
-## Lab:  Text-4 :  TextBlob
+## Lab:  Text-4:  TextBlob
 
 
- *  **Overview**: 
+ *  **Overview:**
  
      - Get familiar with TextBlob API
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:**
  
      - None
 
- *  **Approximate time**: 
+ *  **Approximate time:**
  
      - 15 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - 4-ngrams 
 
@@ -584,19 +601,19 @@ Notes:
 ## Lab: Text-5: TF-IDF
 
 
- *  **Overview**: 
+ *  **Overview:**
  
      - Calculate and understand TF-IDF scores
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:**
  
      - TEXT4: TextBlob
 
- *  **Approximate time**: 
+ *  **Approximate time:**
  
      - 15 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - 5-tfidf
 
@@ -661,6 +678,8 @@ feature vectors
 ...
 
 ```
+<!-- {"left" : 0, "top" : 1.07, "height" : 7.59, "width" : 10.25} -->
+
 
 Notes: 
 
@@ -671,19 +690,19 @@ Notes:
 ## Lab: Text-6: TF-IDF With SciKit-Learn
 
 
- *  **Overview**: 
+ *  **Overview:**
  
      - Calculate TF-IDF with SciKit-Learn
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:**
  
      - TEXT5: TFIDF intro
 
- *  **Approximate time**: 
+ *  **Approximate time:**
  
      - 15 mins
 
- *  **Instructions**: 
+ *  **Instructions:** 
 
      - 6-tfidf-with-scikit-learn
 

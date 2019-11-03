@@ -1,8 +1,9 @@
 # Machine Learning With Apache Spark & Python
 
-<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:15%;" /> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/python-logo-1.png" style="width:20%;" /> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" />
+<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:15%;" /><!-- {"left" : 3.06, "top" : 7, "height" : 1.61, "width" : 1.61} --> &nbsp;  &nbsp; 
+<img src="../../assets/images/logos/python-logo-1.png" style="width:20%;" /><!-- {"left" : 5.23, "top" : 7.52, "height" : 0.56, "width" : 2.36} --> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /><!-- {"left" : 8.15, "top" : 7.33, "height" : 0.94, "width" : 1.77} -->
+
 
 
 ---
@@ -59,7 +60,7 @@ Notes:
 
 ## Data Science Totem pole
 
-<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 0.55, "top" : 1.09, "height" : 5.48, "width" : 9.16} -->
+<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 0.55, "top" : 1.79, "height" : 5.48, "width" : 9.16} -->
 
 
 Notes:
@@ -70,7 +71,7 @@ Notes:
 
 * Goal for this class is to give you 'ML Engineer' level of knowledge
 
-<img src="../../assets/images/machine-learning/data-practitioner.png" alt="data-practitioner.png" style="width:70%;"/> <!-- {"left" : 0.93, "top" : 1.84, "height" : 5.27, "width" : 8.39} -->
+<img src="../../assets/images/machine-learning/data-practitioner.png" alt="data-practitioner.png" style="width:70%;"/> <!-- {"left" : 0.93, "top" : 2.56, "height" : 5.27, "width" : 8.39} -->
 
 
 
@@ -122,10 +123,10 @@ Notes:
     - Prosper loan data
     - NYSE Stock data
 
-<img src="../../assets/images/logos/netflix-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/prosper-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/walmart-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/netflix-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /><!-- {"left" : 0.33, "top" : 5.85, "height" : 0.83, "width" : 1.8} --> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/prosper-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /><!-- {"left" : 2.53, "top" : 5.99, "height" : 0.55, "width" : 2.29} --> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /><!-- {"left" : 5.22, "top" : 5.64, "height" : 1.24, "width" : 1.7} --> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/walmart-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> <!-- {"left" : 7.31, "top" : 5.95, "height" : 0.75, "width" : 2.6} -->
 
 
 
@@ -173,9 +174,9 @@ Notes:
 Notes:
 ---
 
-## Lots of Labs : Learn By Doing
+## Lots of Labs: Learn By Doing
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.7, "top" : 0.97, "height" : 5.53, "width" : 6.85} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.7, "top" : 2.06, "height" : 5.53, "width" : 6.85} -->
 
 
 
@@ -185,7 +186,7 @@ Notes:
 
 ## After The Class...
 
-<img src="../../assets/images/machine-learning/3rd-party/AFTER_THE_CLASS.jpg" alt="AFTER_THE_CLASS.jpg" style="width:50%;"/> <!-- {"left" : 1.69, "top" : 0.93, "height" : 5.65, "width" : 6.88} -->
+<img src="../../assets/images/machine-learning/3rd-party/AFTER_THE_CLASS.jpg" alt="AFTER_THE_CLASS.jpg" style="width:50%;"/> <!-- {"left" : 1.69, "top" : 2, "height" : 5.65, "width" : 6.88} -->
 
 
 Notes:
@@ -206,10 +207,7 @@ Notes:
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby...etc)
 
-<img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/>   &nbsp;
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:20%;"/>
-<img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:20%;"/>
-
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 
 Notes:

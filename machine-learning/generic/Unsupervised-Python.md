@@ -67,6 +67,9 @@ Notes:
 | maxIter    	| How many iterations                                                                                                                                    	| 20            	|
 | n_init     	| Initial seed setting        	|               	| |
 
+<!-- {"left" : 0.25, "top" : 1.54, "height" : 4.54, "width" : 9.75} -->
+
+
 Notes:
 
 
@@ -91,6 +94,7 @@ Notes:
  print(wssse)
  dataset['prediction'] = model.predict(featureVector)
 ```
+<!-- {"left" : 0, "top" : 1.25, "height" : 3.97, "width" : 9.61} -->
 
 Notes:
 
@@ -110,6 +114,7 @@ Notes:
 [15.899999999999999,7.555555555555555])
 
 ```
+<!-- {"left" : 0, "top" : 1.34, "height" : 1.33, "width" : 8.44} -->
 
 ```text
 > predicted.sort_values(["prediction", "mpg"])
@@ -128,6 +133,7 @@ Notes:
 +-------------------+----+---+----------+----------+
 
 ```
+<!-- {"left" : 0, "top" : 3.1, "height" : 3.97, "width" : 9.44} -->
 
 
 Notes:
@@ -148,7 +154,7 @@ Notes:
 
  *  **Question for class:** At  **k=32**  we have achieved  **WSSSE=0** , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 3.46, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 4.17, "height" : 3.5, "width" : 8.21} -->
 
 
 
@@ -177,7 +183,7 @@ for k in range(2,17):
 
 k_wssse
 ```
-<!-- {"left" : 0, "top" : 0.9, "height" : 3.15, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.28, "height" : 3.15, "width" : 10.25} -->
 
 
 ```text
@@ -212,15 +218,15 @@ Notes:
 ## Lab: K-Means in Python
 
 
- *  **Overview**:
+ *  **Overview:**
 
     K-Means in Python
 
- *  **Approximate time**:
+ *  **Approximate time:**
 
     30-40 mins
 
- *  **Instructions**:
+ *  **Instructions:**
 
      - KMEANS-1 lab (mtcars)
 
@@ -228,7 +234,7 @@ Notes:
 
      - Bonus Lab: KMEANS-3: Walmart shopping data
 
- *  **Answers**:
+ *  **Answers:**
 
      - Upload appropriate HTML files
 
@@ -265,6 +271,9 @@ Notes:
 | tol          	| Threshold indicating the convergence o fclusters                                                                                                                                                                 	| 1e-4          	|
 | maxIter      	| How many iterations                                                                                                                                                                                              	| 20            	|
 | random_state 	| Initial seed setting    	|               	|      |
+
+
+<!-- {"left" : 0.25, "top" : 1.49, "height" : 4.82, "width" : 9.75, "columnwidth" : [2.27, 5.23, 2.25]} -->
 
 Notes:
 

@@ -73,6 +73,8 @@ Notes:
 | predictionCol       | Output prediction column                                             | "prediction"      |
 | labelCol            | Label  Column                                                        | "label"           |
 
+<!-- {"left" : 0.25, "top" : 1.27, "height" : 6.53, "width" : 9.75} -->
+
 Notes:
 
 
@@ -157,6 +159,8 @@ Notes:
 | predictionCol       | Output prediction column                                             | "prediction"      |
 | labelCol            | Label Column                                                         | "label"           |
 
+<!-- {"left" : 0.25, "top" : 1.27, "height" : 6.05, "width" : 9.75} -->
+
 Notes:
 
 
@@ -176,6 +180,8 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Accuracy = %g " , accuracy)
 ```
+<!-- {"left" : 0, "top" : 1.34, "height" : 2.9, "width" : 10.11} -->
+
 Notes:
 
 
@@ -221,6 +227,8 @@ model= rf.fit(training)
 
 predictions = model.transform(test)
 ```
+<!-- {"left" : 0, "top" : 1.34, "height" : 2.71, "width" : 10.25} -->
+
 Notes:
 
 
@@ -239,10 +247,12 @@ Notes:
  * Additional Parameters
 
 
-| **Parameter**   | **Description**                            | **Default Value** |
+| Parameter   | Description                          | Default Value |
 |-----------------|--------------------------------------------|-------------------|
 | numtrees        | Max Numbers of trees                       | 20                |
 | subSamplingRate | Adjusts Sampling rate of data for boosting | 5                 |
+
+<!-- {"left" : 0.25, "top" : 2.83, "height" : 1.69, "width" : 9.75} -->
 
 Notes:
 
@@ -281,6 +291,8 @@ model = rf.fit(training)
 
 predictions = model.transform(test)
 ```
+<!-- {"left" : 0, "top" : 1.3, "height" : 2.71, "width" : 10.25} -->
+
 
 Notes:
 
@@ -304,6 +316,8 @@ Notes:
 | numtrees        | Max Numbers of trees                       | 20                |
 | subSamplingRate | Adjusts Sampling rate of data for boosting | 5                 |
 
+<!-- {"left" : 0.25, "top" : 2.83, "height" : 1.69, "width" : 9.75} -->
+
 Notes:
 
 
@@ -323,4 +337,6 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Accuracy = %g " , accuracy)
 ```
+<!-- {"left" : 0, "top" : 1.2, "height" : 3.19, "width" : 10.25} -->
+
 Notes:

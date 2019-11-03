@@ -102,7 +102,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
 
   * Data is stored in S3:S3<br/>
  can support small<br/>
-  (few Kilo byts to Mega bytes)<br/>
+  (few Kilo bytes to Mega bytes)<br/>
    to huge datasets (TB, PB).
 
 <img src="../../../assets/images/logos/aws-s3-logo-1.png" style="width:20%; "/>
@@ -294,7 +294,7 @@ Notes:
 
   * **Amazon CloudWatch** monitors your AWS resources and applications
   * Amazon CloudWatch Logs enables you to monitor, store, and access your log files from EC2 instances, AWS CloudTrail
-     - That includes logs from SageMaker Docker containes
+     - That includes logs from SageMaker Docker containers
   * AWS CloudTrail captures API calls and related events made by or on behalf of your AWS account
      - Including SageMaker calls
 

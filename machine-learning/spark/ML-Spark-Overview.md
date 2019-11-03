@@ -18,7 +18,7 @@ Notes:
 
 ## Spark Illustrated
 
-<img src="../../assets/images/machine-learning/01.png" style="width:70%;"/><!-- {"left" : 0.74, "top" : 1.52, "height" : 4.93, "width" : 8.77} -->
+<img src="../../assets/images/machine-learning/01.png" style="width:70%;"/><!-- {"left" : 0.74, "top" : 2.07, "height" : 4.93, "width" : 8.77} -->
 
 
 Notes:
@@ -58,7 +58,7 @@ Notes:
 
  * Utilities: Linear algebra, statistics, data handling
  
- * Feature Engineering : feature extraction / transformation / dimensionality reduction / selection
+ * Feature Engineering: feature extraction / transformation / dimensionality reduction / selection
 
  * Pipelines: create, evaluate and tune Pipeline
 
@@ -106,7 +106,7 @@ Notes:
     - Possible bugs!
     - Updating models is slow!
 
-<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="max-width:50%;"/><!-- {"left" : 1.47, "top" : 0.95, "height" : 3.69, "width" : 7.3} -->
+<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="max-width:50%;"/><!-- {"left" : 1.84, "top" : 5.39, "height" : 3.33, "width" : 6.58} -->
 
 
 Notes:
@@ -127,7 +127,7 @@ Notes:
 * Same model - no need to re-implement
 * Fast deploy!
 
-<img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 2.69, "top" : 1.02, "height" : 3.7, "width" : 4.88} -->
+<img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 3.29, "top" : 3.81, "height" : 4.74, "width" : 6.26} -->
 
 Notes:
 
@@ -139,7 +139,7 @@ Notes:
 
 ## ML Algorithm overview
 
-<img src="../../assets/images/machine-learning/ML-Algorithm-overview-02.png" style="max-width:75%;"/><!-- {"left" : 1.11, "top" : 1.42, "height" : 5.13, "width" : 8.04} -->
+<img src="../../assets/images/machine-learning/ML-Algorithm-overview-02.png" style="max-width:75%;"/><!-- {"left" : 1.11, "top" : 2.26, "height" : 5.13, "width" : 8.04} -->
 
 
 Notes:
@@ -160,13 +160,13 @@ Notes:
 
  *  **DenseVector**
 
-    When most positions in the vector have value
+    - When most positions in the vector have value
 
  *  **SparseVector**
 
-    When most elements have no value
+    - When most elements have no value
 
-<img src="../../assets/images/machine-learning/ml-vectors-1.png" style="max-width:40%;"/><!-- {"left" : 2.27, "top" : 3.64, "height" : 3.21, "width" : 5.72} -->
+<img src="../../assets/images/machine-learning/ml-vectors-1.png" style="max-width:35%;"/><!-- {"left" : 2.71, "top" : 3.95, "height" : 4.2, "width" : 4.82} -->
 
 
 
@@ -196,6 +196,9 @@ Vectors.sparse(10,  (0,9),   (100,200) )
      - first element @ index 0  = 100
      - last element @ index 9 = 200
 ```
+<!-- {"left" : 0, "top" : 3.83, "height" : 2.61, "width" : 9.94} -->
+
+
 
 Notes:
 
@@ -221,7 +224,7 @@ val sv1: Vector = Vectors.sparse(3, Array(0, 2), Array(1.0, 3.0))
 val sv2: Vector = Vectors.sparse(3, Seq((0, 1.0), (2, 3.0)))
 
 ```
-<!-- {"left" : 0, "top" : 1.69, "height" : 1.54, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.86, "height" : 1.54, "width" : 10.25} -->
 
 
 
@@ -286,6 +289,7 @@ Notes:
 (train, test) = df.randomSplit( [0.7, 0.3], seed=123)
 
 ```
+<!-- {"left" : 0, "top" : 3.15, "height" : 2.16, "width" : 10.25} -->
 
 Notes:
 
@@ -295,7 +299,7 @@ Notes:
 
 ## Training / Test Split  Code (Python)
 
-<img src="../../assets/images/machine-learning/training2.png" style="float:right;max-width:50%;"/><!-- {"left" : 1.02, "top" : 1.34, "height" : 5.3, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/training2.png" style="float:right;max-width:50%;"/><!-- {"left" : 2.91, "top" : 1.25, "height" : 3.35, "width" : 5.19} -->
 
 ```python 
 df = spark.range(1,100)
@@ -314,6 +318,8 @@ print("count: ", common.count())
 common.show() 
 
 ```
+<!-- {"left" : 0, "top" : 4.83, "height" : 3.54, "width" : 6.31} -->
+
 
 
 
@@ -345,10 +351,11 @@ Notes:
 ---
 
 ## Vector Assembler
+
 * Transforms a Dataframe To Another Dataframe
     - By adding (or appending) to a "features" column
 
-<img src="../../assets/images/machine-learning/vector-assembler-1.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 2.08, "height" : 5.05, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/vector-assembler-1.png" style="max-width:80%;"/><!-- {"left" : 1.1, "top" : 2.8, "height" : 5.05, "width" : 8.21} -->
 
 
 
@@ -367,8 +374,10 @@ assembler = VectorAssembler(inputCols=["mpg", "cyl"], outputCol="features")
 feature_vector = assembler.transform(mpg_cyl)
 feature_vector.show(40)
 ```
+<!-- {"left" : 0, "top" : 1.26, "height" : 2.24, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/vector-assembler-3.png" style="max-width:70%;"/><!-- {"left" : 0.64, "top" : 1.2, "height" : 5.57, "width" : 8.98} -->
+<img src="../../assets/images/machine-learning/vector-assembler-3.png" style="max-width:70%;"/><!-- {"left" : 0.7, "top" : 4.77, "height" : 2.32, "width" : 8.85} -->
+
 
 Notes:
 
@@ -385,7 +394,7 @@ Notes:
 
  * Most frequently used label gets 0 and so on
 
-<img src="../../assets/images/machine-learning/string-indexer-1.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 2.73, "height" : 3.84, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/string-indexer-1.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 3.4, "height" : 3.84, "width" : 8.21} -->
 
 
 
@@ -410,8 +419,11 @@ model = str_indexer.fit(df_spark)
 indexed = model.transform(df_spark)
 
 ```
+<!-- {"left" : 0, "top" : 1.31, "height" : 2.03, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/string-indexer-3.png" style="max-width:70%;"/><!-- {"left" : 0.71, "top" : 1.07, "height" : 5.84, "width" : 8.83} -->
+
+<img src="../../assets/images/machine-learning/string-indexer-3.png" style="max-width:70%;"/><!-- {"left" : 0.68, "top" : 4.83, "height" : 2.6, "width" : 8.89} -->
+
 
 
 
@@ -429,9 +441,10 @@ converted = converter.transform(indexed)
 converted.show() 
 
 ```
+<!-- {"left" : 0, "top" : 1.7, "height" : 0.89, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/reverse-string-indexer-2.png" style="max-width:80%;"/><!-- {"left" : 0.51, "top" : 1.83, "height" : 3.83, "width" : 9.22} -->
 
+<img src="../../assets/images/machine-learning/reverse-string-indexer-2.png" style="max-width:80%;"/><!-- {"left" : 0.86, "top" : 3.62, "height" : 2.49, "width" : 8.53} -->
 
 
 
@@ -452,7 +465,7 @@ Notes:
      - Note, only one bit is on
      - This is called  **ONE-HOT-Encoding**   
      
-<img src="../../assets/images/machine-learning/one-hot-encoding-2.png" style="max-width:60%;"/><!-- {"left" : 1.48, "top" : 4.84, "height" : 2.4, "width" : 7.3} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-2.png" style="max-width:60%;"/><!-- {"left" : 0.93, "top" : 5.78, "height" : 2.76, "width" : 8.39} -->
 
 
 
@@ -487,6 +500,8 @@ encoded.show()
 print(encoded.toPandas()) # print pandas df
 
 ```
+<!-- {"left" : 0, "top" : 1.29, "height" : 3.82, "width" : 10.25} -->
+
 
 
 
@@ -498,7 +513,7 @@ Notes:
 ## Hot Encoder Code (Python)
 
 
-<img src="../../assets/images/machine-learning/one-hot-encoding-3.png" style="max-width:70%;"/><!-- {"left" : 1.01, "top" : 1.06, "height" : 5.85, "width" : 8.99} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-3.png" style="max-width:70%;"/><!-- {"left" : 0.82, "top" : 1.94, "height" : 5.85, "width" : 8.99} -->
 
 
 Notes:
@@ -510,7 +525,7 @@ Notes:
 ## Understanding Hot Encoded Sparse Vectors
 
 
-<img src="../../assets/images/machine-learning/one-hot-encoding-4.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 5.84, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-4.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 1.9, "height" : 5.84, "width" : 8.21} -->
 
 
 Notes:
@@ -539,6 +554,8 @@ Notes:
 | 40  | 100,000 |
 | 35  | 86,000  |
 | 30  | 75,000  |
+
+<!-- {"left" : 3.36, "top" : 5.77, "height" : 2.41, "width" : 3.54, "columnwidth" : [1.3, 2.24]} -->
 
 Notes:
 
@@ -575,6 +592,7 @@ assembler = VectorAssembler(inputCols=["home_runs", "salary_in_k"], outputCol="f
 feature_vector = assembler.transform(df_spark)
 feature_vector.show()
 ```
+<!-- {"left" : 0, "top" : 1.38, "height" : 2.1, "width" : 10.25} -->
 
 
 ```text
@@ -614,6 +632,7 @@ scaledData = scalerModel.transform(feature_vector)
 scaledData.show() 
 
 ```
+<!-- {"left" : 0, "top" : 1.47, "height" : 2.9, "width" : 9.61} -->
 
 
 ```text
@@ -630,7 +649,7 @@ scaledData.show()
 +---------+-----------+-------------+---------------------------------------+
 
 ```
-<!-- {"left" : 0, "top" : 3.67, "height" : 2.4, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.92, "height" : 2.4, "width" : 10.25} -->
 
 Notes:
 
@@ -655,6 +674,7 @@ scaledData2 = scaledModel2.transform(feature_vector)
 scaledData2.show(10, False) 
 
 ```
+<!-- {"left" : 0, "top" : 2.46, "height" : 2.9, "width" : 9.61} -->
 
 ```text
 +---------+-----------+-------------+-----------------------------+
@@ -670,7 +690,7 @@ scaledData2.show(10, False)
 +---------+-----------+-------------+-----------------------------+
 
 ```
-<!-- {"left" : 0, "top" : 4.58, "height" : 2.76, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.71, "height" : 2.76, "width" : 10.25} -->
 
 Notes:
 
@@ -700,7 +720,7 @@ Notes:
 
 ## Spark ML Workflow
 
-<img src="../../assets/images/machine-learning/spark-ml-workflow.png" style="max-width:100%;"/><!-- {"left" : 1.05, "top" : 1.07, "height" : 5.83, "width" : 8.14} -->
+<img src="../../assets/images/machine-learning/spark-ml-workflow.png" style="max-width:100%;"/><!-- {"left" : 1.05, "top" : 1.62, "height" : 5.83, "width" : 8.14} -->
 
 
 
@@ -713,15 +733,15 @@ Notes:
 ## Lab 5.1: ML Basics
 
 
- *  **Overview**:
+ *  **Overview:**
 
      - Get familiar with ML APIs in Spark
 
- *  **Approximate time**:
+ *  **Approximate time:**
  
      - 10 - 15 mins
 
- *  **Instructions**:
+ *  **Instructions:**
 
      -  **5.1: 'basics/spark-ml-basics'** lab for Scala / Python
 
@@ -746,7 +766,7 @@ Notes:
 
      - Makes very modular code
 
- * This feature is modelled after the Python 'Scikit.Learn' pipeline feature
+ * This feature is modeled after the Python 'Scikit.Learn' pipeline feature
 
  * Also allows tuning various parameters of the pipeline.'Hyper Tuning'
 
@@ -765,7 +785,7 @@ Notes:
 
  * On right we create a pipeline encompassing multiple steps
 
- * This pipeline is re-useable by other programs too!
+ * This pipeline is re-usable by other programs too!
 
 ```python
 # text processing
@@ -787,14 +807,14 @@ df5 = df4.word2Vec()
 # process df5
 
 ```
-<!-- {"left" : 0, "top" : 2.98, "height" : 4.21, "width" : 6.43} -->
+<!-- {"left" : 0, "top" : 3.4, "height" : 4.21, "width" : 6.43} -->
 
 Notes:
 
 ---
 ## Pipeline Example
 
-<img src="../../assets/images/machine-learning/pipeline-1.png" style="max-width:15%;"/><!-- {"left" : 4.17, "top" : 1.5, "height" : 4.98, "width" : 1.91} -->
+<img src="../../assets/images/machine-learning/pipeline-1.png" style="max-width:15%;"/><!-- {"left" : 4.17, "top" : 2.04, "height" : 4.98, "width" : 1.91} -->
 
 
 Notes:
@@ -806,19 +826,19 @@ Notes:
 ## Pipeline Concepts
 
 
- *  **Dataframe**: Contains data
- *  **Transformer**: Converts one dataframe into another
+ *  **Dataframe:** Contains data
+ *  **Transformer:** Converts one dataframe into another
 
-<img src="../../assets/images/machine-learning/transformers-1.png" style="width:50%;"/><!-- {"left" : 3.35, "top" : 1.86, "height" : 0.81, "width" : 4.32} -->
+<img src="../../assets/images/machine-learning/transformers-1.png" style="width:50%;"/><!-- {"left" : 2.96, "top" : 2.05, "height" : 0.81, "width" : 4.32} -->
 
- *  **Estimator**: fits the data in Dataframe to create a transformer.
+ *  **Estimator:** fits the data in Dataframe to create a transformer.
      - E.g. a learning model is an estimator
 
-<img src="../../assets/images/machine-learning/transformers-2.png" style="width:50%;"/><!-- {"left" : 3.31, "top" : 3.74, "height" : 0.7, "width" : 4.4} -->
+<img src="../../assets/images/machine-learning/transformers-2.png" style="width:50%;"/><!-- {"left" : 2.93, "top" : 3.99, "height" : 0.7, "width" : 4.4} -->
 
 
- *  **Pipeline**: Contains multiple Transformers and Estimators
- *  **Parameter**: Parameters can be passed uniformly to all components within a pipeline
+ *  **Pipeline:** Contains multiple Transformers and Estimators
+ *  **Parameter:** Parameters can be passed uniformly to all components within a pipeline
 
 Notes:
 
@@ -855,6 +875,7 @@ test_data = spark.read(...)
 predicted_data = model.predict(test_data) 
 
 ```
+<!-- {"left" : 0, "top" : 3.83, "height" : 3.46, "width" : 10.25} -->
 
 
 
@@ -867,15 +888,14 @@ Notes:
 
 ## Pipeline Explained
 
-
  * 3 stage pipeline shown
 
  * First two (Tokenizer, hashingTF) are transformers (blue),  third LogisticRegression is estimator (red)
 
  * Pipeline executes 'transform' on first two and 'fit' on Logistic Regression
 
-<img src="../../assets/images/machine-learning/Session-Machine-Learning-in-Spark-Pipeline-Explained-0.png"; style="width:70%;"/><!-- {"left" : 0.98, "top" : 3.87, "height" : 2.12, "width" : 8.29} -->
 
+<img src="../../assets/images/machine-learning/Session-Machine-Learning-in-Spark-Pipeline-Explained-0.png" style="width:70%;"/><!-- {"left" : 0.98, "top" : 4.18, "height" : 2.12, "width" : 8.29} -->
 
 Notes:
 

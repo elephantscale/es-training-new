@@ -37,6 +37,9 @@ Notes:
 | implicitPrefs     | specifies whether to use the explicit feedback ALS variant or one adapted for implicit feedback data                | False (use explicit feedback) |
 | coldStartStrategy | How to handle missing ratings data for new user / new item <br/>- NaN : Not a Number <br/>- "drop" : drop this data | NaN                           |
 
+<!-- {"left" : 0.25, "top" : 1.42, "height" : 4.73, "width" : 9.75, "columnwidth" : [2.29, 4.9, 2.56]} -->
+
+
 Notes:
 
 
@@ -95,7 +98,8 @@ evaluator = RegressionEvaluator( metricName="rmse",
 rmse = evaluator.evaluate(predictions)
 
 ```
-<!-- {"left" : 0, "top" : 2.82, "height" : 1.2, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.05, "height" : 3.54, "width" : 10.25} -->
+
 
 
 Notes:
@@ -108,7 +112,7 @@ Notes:
 ## Evaluating CF Recommendations (ROC)
 
 
-<img src="../../assets/images/data-analysis-python/recommendations-comparison-1.png" style="width:80%"/><!-- {"left" : 0.76, "top" : 1.22, "height" : 5.53, "width" : 8.73} -->
+<img src="../../assets/images/data-analysis-python/recommendations-comparison-1.png" style="width:80%"/><!-- {"left" : 0.76, "top" : 2.1, "height" : 5.53, "width" : 8.73} -->
 
 
 Notes:
@@ -121,15 +125,15 @@ https://en.wikipedia.org/wiki/Receiver_operating_characteristic
 ## Lab: Recommendations
 
 
- *  **Overview**:
+ *  **Overview:**
 
     - Use CF recommender in Spark ML
 
- *  **Approximate time**:
+ *  **Approximate time:**
 
     - 30 - 40 mins
 
- *  **Instructions**:
+ *  **Instructions:**
 
     - Follow 'recommender' lab instructions for Scala or Python
 
@@ -162,10 +166,10 @@ Notes:
 
 ---
 
-## Preparing Data for MLlib
+## Preparing Data for MLLib
 
 
- * MLlib only looks at integer userid and itemid.
+ * MLLib only looks at integer userid and itemid.
 
      - Assign your data with unique integer userid and itemid.
 
@@ -190,7 +194,7 @@ Notes:
 
 ---
 
-## MLlib Recommendations Model (ALS)
+## MLLib Recommendations Model (ALS)
 
 
  * Uses the Recommendations.ALS

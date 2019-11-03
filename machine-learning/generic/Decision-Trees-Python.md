@@ -65,6 +65,8 @@ Notes:
 | predictionCol       | Output prediction column                                             | "prediction"  |
 | labelCol            | Label Column                                                         | "label"       |
 
+<!-- {"left" : 0.25, "top" : 1.43, "height" : 6.53, "width" : 9.75} -->
+
 Notes: 
 
 
@@ -81,6 +83,9 @@ Notes:
 | n-outputs-           | Number of outputs                             | Int                 |
 | Feature-importances- | Relative importance based on OOB observations | array[float]        |
 | Tree-                | Underlying tree object                        | Tree                |
+
+<!-- {"left" : 0.25, "top" : 1.43, "height" : 3.69, "width" : 9.75} -->
+
 
 Notes: 
 
@@ -101,7 +106,7 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Test Error = %g " % (1.0 - accuracy))
 ```
-<!-- {"left" : 0, "top" : 1.17, "height" : 2.13, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.43, "height" : 2.13, "width" : 10.25} -->
 
 Notes: 
 
@@ -129,6 +134,8 @@ Notes:
 +--------------+--------------------+-----------+
  
 ```
+<!-- {"left" : 0, "top" : 1.43, "height" : 3.97, "width" : 8.94} -->
+
 Notes: 
 
 
@@ -138,11 +145,11 @@ Notes:
 ## Lab: Decision Tree Classification
 
 
- *  **Overview** : Work with Decision Tree algorithm
+ *  **Overview:** Work with Decision Tree algorithm
 
- *  **Approximate time** : 20-30 mins
+ *  **Approximate time:** 20-30 mins
 
- *  **Instructions** : 
+ *  **Instructions:**
 
      - Follow instructions for Python Python / Scala
 
@@ -165,7 +172,7 @@ Notes:
 ## Regression Trees in Python
 
 
- * Implemented by  **sklearn.tree.DecisionTreeRegressor**    (python)
+ * Implemented by **sklearn.tree.DecisionTreeRegressor** (python)
 
  * Allows us to do a regression (numeric) output column
 
@@ -188,7 +195,7 @@ dt= DecisionTreeRegressor(labelColumn='label', featuresCol = 'features')
 # Fit the model
 dtModel = dt.fit(training)
 ```
-<!-- {"left" : 0, "top" : 1.17, "height" : 2.34, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.43, "height" : 2.34, "width" : 10.25} -->
 
 Notes: 
 
@@ -201,12 +208,15 @@ Notes:
 
 | **Parameter**     | **Description**                                                                    | **Default Value** |
 |-------------------|------------------------------------------------------------------------------------|-------------------|
-| criterion         | 'gini' for impurty vs. 'entropy' for information gain                              | `gini`            |
+| criterion         | 'gini' for impurity vs. 'entropy' for information gain                              | `gini`            |
 | max-features      | Maximum number of features to consider                                             | `auto`            |
 | max-depth         | Maximum depth of each tree                                                         | `auto`            |
 | min-samples-split | Min samples required to split in node                                              | 2                 |
 | min-samples-leaf  | Min samples required to be leaf node                                               | 1                 |
 | Class-weight      | How to weight input classes (default is to balance based on class value frequency) | `balance`         |
+
+<!-- {"left" : 0.25, "top" : 1.6, "height" : 4.93, "width" : 9.75} -->
+
 Notes: 
 
 ---
@@ -214,7 +224,7 @@ Notes:
 ## Random Forest Attributes
 
 
-| **Atribute**           | **Description**                               | **Type**           |
+| **Attribute**           | **Description**                               | **Type**           |
 |------------------------|-----------------------------------------------|--------------------|
 | estimators_            | Collection of trees                           | List of Estimators |
 | classes_               | Class label for output                        | Array of str       |
@@ -224,6 +234,8 @@ Notes:
 | Feature-importances-   | Relative importance based on OOB observations | array[float]       |
 | oob-score-             | Score metric based on OOB observations        | float              |
 | oob-decision-function- | OOB decision function                         | 2-d array          |
+
+<!-- {"left" : 0.25, "top" : 1.6, "height" : 4.88, "width" : 9.75} -->
 
 Notes:
 ---
@@ -240,7 +252,7 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Test Error = %g " % (1.0 - accuracy))
 ```
-<!-- {"left" : 0, "top" : 1.17, "height" : 2.6, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.43, "height" : 2.6, "width" : 10.25} -->
 
 Notes: 
 
@@ -267,6 +279,7 @@ Notes:
 ---
 
 ## Random Forest Sample Code (Python)
+
 ```python
 from sklearn.ensemble import RandomForestClassifer
 
@@ -278,6 +291,8 @@ rf = RandomForestClassifier(labelColumn='label', featuresCol = 'features')
 # Fit the model
 rfModel= rf.fit(training)
 ```
+<!-- {"left" : 0, "top" : 1.43, "height" : 2.07, "width" : 10.25} -->
+
 Notes: 
 
  
@@ -319,12 +334,14 @@ Notes:
  |   **Parameter**   |                                   **Description**                                  | **Default Value** |
 |:-----------------:|:----------------------------------------------------------------------------------:|:-----------------:|
 | n_estimators      | Max Numbers of trees                                                               |         10        |
-| criterion         | 'gini' for impurty vs. 'entropy' for information gain                              |       `gini`      |
+| criterion         | 'gini' for impurity vs. 'entropy' for information gain                              |       `gini`      |
 | max_features      | Maximum number of features to consider                                             |       `auto`      |
 | max_depth         | Maximum depth of each tree                                                         |       `auto`      |
 | min_samples_split | Min samples required to split in node                                              |         2         |
 | min_samples_leaf  | Min samples required to be leaf node                                               |         1         |
 | Class_weight      | How to weight input classes (default is to balance based on class value frequency) |     `balance`     |
+
+<!-- {"left" : 0.25, "top" : 2.85, "height" : 5.45, "width" : 9.75, "columnwidth" : [2.65, 5.38, 1.72]} -->
 
 Notes: 
 
@@ -366,6 +383,8 @@ Notes:
 | oob_score_             | Score metric based on OOB observations        | float                 |
 | oob_decision_function_ | OOB decision function                         | 2-d array             |
 
+<!-- {"left" : 0.25, "top" : 1.43, "height" : 4.88, "width" : 9.75} -->
+
 Notes: 
 
 
@@ -389,6 +408,8 @@ Notes:
 |[0.35234467819467...|[7.04689356389342...|       0.0|
 
 ```
+<!-- {"left" : 0, "top" : 1.43, "height" : 3.18, "width" : 9.78} -->
+
 
 Notes: 
 
@@ -399,11 +420,11 @@ Notes:
 ## Lab: Random Forest Classification
 
 
- *  **Overview**: Work with Random Forest for Classification
+ *  **Overview:** Work with Random Forest for Classification
 
- *  **Approximate time**: 20-30 mins
+ *  **Approximate time:** 20-30 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - Follow instructions for Python Python / Scala
 
@@ -446,6 +467,8 @@ rf = RandomForestRegression(labelColumn='label', featuresCol = 'features')
 # Fit the model
 rfModel= rf.fit(training)
 ```
+<!-- {"left" : 0, "top" : 1.26, "height" : 2.07, "width" : 10.25} -->
+
 Notes: 
 
  
@@ -468,6 +491,8 @@ Notes:
 | numtrees        | Max Numbers of trees                       | 20                |
 | subSamplingRate | Adjusts Sampling rate of data for boosting | 5                 |
 
+<!-- {"left" : 0.25, "top" : 3.27, "height" : 1.69, "width" : 9.75} -->
+
 Notes: 
 
 
@@ -486,7 +511,7 @@ predictionCol="prediction", metricName="rmse")
 
  print("Test Error = %g " % (1.0 - accuracy))
 ```
-<!-- {"left" : 0, "top" : 1.17, "height" : 2.6, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.43, "height" : 2.6, "width" : 10.25} -->
 
 Notes: 
 
@@ -498,11 +523,11 @@ Notes:
 ## Lab: Random Forest Regression
 
 
- *  **Overview**: Work with Random Forest for Regression
+ *  **Overview:** Work with Random Forest for Regression
 
- *  **Approximate time**: 20-30 mins
+ *  **Approximate time:** 20-30 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - Follow instructions for Python
 

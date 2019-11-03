@@ -19,4 +19,4 @@
      - A cell is  **cancerous**  or  **healthy**
      - Hand-written numbers -> any digits -1, 0, 1,..., 8
 
-<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 2.06, "top" : 4.81, "height" : 2.25, "width" : 6.13} -->
+<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 1.17, "top" : 5.26, "height" : 2.91, "width" : 7.92} -->

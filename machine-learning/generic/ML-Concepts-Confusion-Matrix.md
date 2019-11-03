@@ -9,7 +9,7 @@
     - Picks one of two outcomes  (spam / not-spam)
  * Say we are classifying 10 emails (6 spam, 4 not-spam)
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-04.png" alt="Confusion-Matrix-04.png" style="width:60%;"/> <!-- {"left" : 1.71, "top" : 2.48, "height" : 4.55, "width" : 6.82} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-04.png" alt="Confusion-Matrix-04.png" style="width:60%;"/> <!-- {"left" : 1.35, "top" : 3.22, "height" : 5.03, "width" : 7.54} -->
 
 
 
@@ -19,7 +19,7 @@ Notes:
 
 ## Confusion Matrix: More Than 2 Outcomes
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-01.png" alt="Confusion-Matrix-01.png" style="max-width:60%;"/> <!-- {"left" : 1.13, "top" : 0.99, "height" : 2.79, "width" : 7.98} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-01.png" alt="Confusion-Matrix-01.png" style="max-width:60%;"/> <!-- {"left" : 1.13, "top" : 1.19, "height" : 2.79, "width" : 7.98} -->
 
 
   * Which animal the algorithm has trouble classifying? (too many misclassifications)
@@ -36,7 +36,7 @@ Algorithm is good at identifying rabbits
 
 ## Interpreting Confusion Matrix (True/False Positives/Negatives)
 
-<img src="../../assets/images/machine-learning/confusion-matrix-12.png" alt="confusion-matrix-12.png" style="width:60%;"/> <!-- {"left" : 0.51, "top" : 0.9, "height" : 6.17, "width" : 9.22} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-12.png" alt="confusion-matrix-12.png" style="width:60%;"/> <!-- {"left" : 0.51, "top" : 1.45, "height" : 6.17, "width" : 9.22} -->
 
 
 
@@ -49,7 +49,7 @@ Story: A shepherd who cried wolf
 
 ## Confusion Matrix: Accuracy / Error Rate
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-02.png" alt="Confusion-Matrix-02.png" style="width:50%;float:right;"/> <!-- {"left" : 2.4, "top" : 3.9, "height" : 3.46, "width" : 5.45} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-02.png" alt="Confusion-Matrix-02.png" style="width:50%;float:right;"/> <!-- {"left" : 1.93, "top" : 4.37, "height" : 4.05, "width" : 6.39} -->
 
  * **Accuracy**  
 Overall how accurate is the model?  
@@ -73,7 +73,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Accuracy May Not Be Enough
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-03-Accuracy.png" alt="Confusion-Matrix-03-Accuracy.png" style="width:50%;float:right;"/> <!-- {"left" : 4.67, "top" : 5.19, "height" : 2.12, "width" : 3.34} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-03-Accuracy.png" alt="Confusion-Matrix-03-Accuracy.png" style="width:50%;float:right;"/> <!-- {"left" : 2.81, "top" : 5.78, "height" : 2.94, "width" : 4.63} -->
 
  * Let's say our classifier is used to diagnose cancer patients.
  * We have total 100 patients
@@ -92,7 +92,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Accuracy May Not Be Enough
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/><!-- {"left" : 7.44, "top" : 1.21, "height" : 1.66, "width" : 2.49} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/><!-- {"left" : 5.45, "top" : 1.21, "height" : 2.99, "width" : 4.48} -->
 
   * **Question for class:**
     * What is the implication of 'False Positive'
@@ -119,7 +119,7 @@ Notes:
 
 ## Confusion Matrix: TPR / FPR
 
-<img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:50%;float:right;"/> <!-- {"left" : 5.19, "top" : 2.19, "height" : 3.12, "width" : 4.83} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:50%;float:right;"/> <!-- {"left" : 5.58, "top" : 2.19, "height" : 2.87, "width" : 4.44} -->
 
  * **True Positive Rate (TPR)  /Sensitivity / Hit Rate / Recall**  
   How often model predicts 'positive' as 'positive' (correctly) ? -- actual positive  
@@ -145,7 +145,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Specificity / Precision / Prevalence
 
-<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 3.09, "top" : 4.54, "height" : 2.62, "width" : 4.07} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 2.36, "top" : 4.91, "height" : 3.56, "width" : 5.53} -->
 
   * **Specificity**   
   How often model predicts negative' as negative' (correctly)?  -- actual no  
@@ -173,7 +173,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: PPV / Null Error Rate
 
-<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 3, "top" : 4.51, "height" : 2.77, "width" : 4.26} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 2.14, "top" : 4.85, "height" : 3.89, "width" : 5.98} -->
 
  * **Prevalence**   
   How often does 'positive' occurs in our sample  
@@ -233,7 +233,7 @@ Notes:
 ---
 
 ## Threshold
-<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 7.36, "top" : 2.85, "height" : 3.66, "width" : 2.57} -->
+<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 6.42, "top" : 2.18, "height" : 5.29, "width" : 3.72} -->
 
  * Our spam classifier provides a 'spam probability' for each email
     - Probability is between 0.0. and 1.0 (or 0 to 100%)
@@ -245,7 +245,8 @@ Notes:
 ---
 
 ## Threshold
-<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 7.36, "top" : 2.85, "height" : 3.66, "width" : 2.57} -->
+
+<img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 6.67, "top" : 2.55, "height" : 5.04, "width" : 3.54} -->
 
 
  * If spam threshold is lower (say 50%)
@@ -274,7 +275,7 @@ Notes:
     - Only 70 emails are classified as spam
 Lower TPR
 
-<img src="../../assets/images/machine-learning/confusion-matrix-08-Threshold.png" alt="confusion-matrix-08-Threshold.png" style="width:50%;"/> &nbsp; <!-- {"left" : 0.51, "top" : 3.63, "height" : 2.62, "width" : 4.8} --><img src="../../assets/images/machine-learning/confusion-matrix-09-Threshold.png" alt="confusion-matrix-09-Threshold.png" style="width:42%;"/> <!-- {"left" : 5.62, "top" : 3.59, "height" : 2.7, "width" : 4.12} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-08-Threshold.png" alt="confusion-matrix-08-Threshold.png" style="width:50%;"/> &nbsp; <!-- {"left" : 0.51, "top" : 4.23, "height" : 2.62, "width" : 4.8} --><img src="../../assets/images/machine-learning/confusion-matrix-09-Threshold.png" alt="confusion-matrix-09-Threshold.png" style="width:42%;"/> <!-- {"left" : 5.62, "top" : 4.19, "height" : 2.7, "width" : 4.12} -->
 
 
 
@@ -286,7 +287,7 @@ Notes:
 
 ## ROC (Receiver Operating Characteristic) Curve
 
-<img src="../../assets/images/machine-learning/ROC-07.png" alt="ROC-07.png" style="max-width:80%;"/> <!-- {"left" : 1.27, "top" : 1, "height" : 5.98, "width" : 7.7} -->
+<img src="../../assets/images/machine-learning/ROC-07.png" alt="ROC-07.png" style="max-width:80%;"/> <!-- {"left" : 1.27, "top" : 1.83, "height" : 5.98, "width" : 7.7} -->
 
 
 
@@ -297,7 +298,7 @@ Notes:
 
 ## ROC Curve Example
 
-<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:75%;"/> <!-- {"left" : 1.19, "top" : 1.24, "height" : 5.5, "width" : 7.88} -->
+<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:75%;"/> <!-- {"left" : 1.19, "top" : 2.07, "height" : 5.5, "width" : 7.88} -->
 
 
 
@@ -308,7 +309,7 @@ Notes:
 
 ## Interpreting ROC Curve
 
-<img src="../../assets/images/machine-learning/ROC-02-space-2b.png" alt="ROC-02-space-2b.png" style="width:45%;float:right;"/> <!-- {"left" : 6.19, "top" : 1.78, "height" : 3.93, "width" : 3.72} -->
+<img src="../../assets/images/machine-learning/ROC-02-space-2b.png" alt="ROC-02-space-2b.png" style="width:45%;float:right;"/> <!-- {"left" : 6.05, "top" : 1.86, "height" : 4.35, "width" : 4.12} -->
 
  * The red line plots 'random guess' = B
 
@@ -332,7 +333,8 @@ Image credit (CC) : https://commons.wikimedia.org/wiki/File:ROC_space-2.png
 ---
 
 ## Interpreting ROC Curve
-<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 5.6, "top" : 2.44, "height" : 3.09, "width" : 4.44} -->
+
+<img src="../../assets/images/machine-learning/ROC-03-AUC-1.png" alt="ROC-03-AUC-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 5.77, "top" : 2.55, "height" : 2.64, "width" : 4.34} -->
 
  * Shows tradeoff of TPR (sensitivity) vs. FPR (1 - specificity)
  * The closer to top-left , the more accurate </br>the model
@@ -348,7 +350,7 @@ Notes:
 ## Area Under Curve - AUC
 
 
-<img src="../../assets/images/machine-learning/ROC-04-AUC-2.png" alt="ROC-04-AUC-2.png" style="width:30%;float:right;"> <!-- {"left" : 6.66, "top" : 2.29, "height" : 2.28, "width" : 3.26} -->
+<img src="../../assets/images/machine-learning/ROC-04-AUC-2.png" alt="ROC-04-AUC-2.png" style="width:30%;float:right;"> <!-- {"left" : 5.61, "top" : 2.08, "height" : 3.11, "width" : 4.45} -->
 
  * Measures the percentage of area<br/>
    'under the curve'
@@ -360,7 +362,7 @@ Notes:
     - Rightmost: very good (90%)
 
 
-<img src="../../assets/images/machine-learning/ROC-5-AUC-3.png" alt="ROC-5-AUC-3.png" style="max-width:60%;"/> <!-- {"left" : 1.02, "top" : 5.31, "height" : 2.1, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/ROC-5-AUC-3.png" alt="ROC-5-AUC-3.png" style="max-width:60%;"/> <!-- {"left" : 0.57, "top" : 6.35, "height" : 2.33, "width" : 9.1} -->
 
 
 
@@ -381,9 +383,9 @@ Notes:
 | 0.60 - 0.70| D - poor      |
 | 0.50 - 0.60| F - Fail      |
 
-<!-- {"left" : 6.7, "top" : 1.78, "height" : 2.38, "width" : 3.3, "columnwidth" : [1.61, 1.69]} -->
+<!-- {"left" : 6.7, "top" : 1.98, "height" : 2.38, "width" : 3.3, "columnwidth" : [1.61, 1.69]} -->
 
-<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:35%;"/> <!-- {"left" : 0.42, "top" : 2.75, "height" : 4.26, "width" : 5.71} -->
+<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:35%;"/> <!-- {"left" : 0.42, "top" : 4.36, "height" : 4.26, "width" : 5.71} -->
 
 
 
@@ -404,7 +406,7 @@ Notes:
     - Which digit the classifier is doing well?
     - Which digit the classifier is not doing well?
 
-<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:35%;"/> <!-- {"left" : 3.05, "top" : 3.93, "height" : 3.1, "width" : 4.15} -->
+<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:35%;"/> <!-- {"left" : 2.43, "top" : 4.43, "height" : 4.03, "width" : 5.4} -->
 
 
 

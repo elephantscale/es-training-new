@@ -4,7 +4,7 @@
 
 ## Algorithm Map
 
-<img src="../../assets/images/machine-learning/algorithm-summary-classifications-logistic-1.png"  style="width:75%;" /><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-classifications-logistic-1.png"  style="width:75%;" /><!-- {"left" : 1.02, "top" : 1.50, "height" : 5.48, "width" : 8.21} -->
 
 ---
 
@@ -18,7 +18,7 @@
 
  * Credit score is a big determining factor when applying for loans / mortgages / credit cards
 
-<img src="../../assets/images/machine-learning/3rd-party/credit-scores-1.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 3.28, "height" : 3.66, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/credit-scores-1.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 3.82, "height" : 3.66, "width" : 8.21} -->
 
 
 
@@ -50,6 +50,9 @@ Image credit : (CC) : https://www.flickr.com/photos/cafecredit/27321078025
 | 830          | Yes       |
 | 610          | Yes       |
 
+<!-- {"left" : 3.6, "top" : 3.43, "height" : 4.77, "width" : 3.06} -->
+
+
 Notes:
 
 
@@ -59,7 +62,7 @@ Notes:
 
 ## Plotting Credit Approval Data
 
-<img src="../../assets/images/machine-learning/credit-approval-1.png" style="max-width:60%"/><!-- {"left" : 1.02, "top" : 1.28, "height" : 5.42, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/credit-approval-1.png" style="max-width:60%"/><!-- {"left" : 1.02, "top" : 1.82, "height" : 5.42, "width" : 8.21} -->
 
 
 
@@ -78,7 +81,7 @@ Notes:
 
  * There is no linear fit line!
 
-<img src="../../assets/images/machine-learning/credit-approval-2.png" style="width:50%"/><!-- {"left" : 2.11, "top" : 2.49, "height" : 4.61, "width" : 6.03} -->
+<img src="../../assets/images/machine-learning/credit-approval-2.png" style="width:50%"/><!-- {"left" : 2.11, "top" : 3.21, "height" : 4.61, "width" : 6.03} -->
 
 
 
@@ -99,7 +102,7 @@ Notes:
 
  * Logistic Regression produces numbers that are probabilities
 
-<img src="../../assets/images/machine-learning/Linear-vs-Logistic-1.png" style="max-width:50%"/><!-- {"left" : 2.02, "top" : 2.41, "height" : 4.2, "width" : 6.22} -->
+<img src="../../assets/images/machine-learning/Linear-vs-Logistic-1.png" style="max-width:50%"/><!-- {"left" : 1.6, "top" : 3.08, "height" : 4.76, "width" : 7.05} -->
 
 
 Notes:
@@ -110,7 +113,7 @@ Notes:
 
 ## Logistic Regression
 
-<img src="../../assets/images/people/david-cox-1.png" style="width:20%;float:right;"/><!-- {"left" : 7.7, "top" : 4.24, "height" : 3.03, "width" : 2.37} -->
+<img src="../../assets/images/people/david-cox-1.png" style="width:20%;float:right;"/><!-- {"left" : 6.96, "top" : 1.14, "height" : 3.84, "width" : 3} -->
 
  * Logistic Regression gives out probability between 0 to 1
 
@@ -118,16 +121,13 @@ Notes:
 
      - 40% this loan will fail
 
- * This probability is mapped into<br/>
-  binary outcome (true/false,  yes / no)
+ * This probability is mapped into binary outcome (true/false,  yes / no)
 
- * **Logistic uses Regression algorithm,<br/>
-  but used for classification**
+ * **Logistic uses Regression algorithm, but used for classification**
 
  * Logistic regression is Linear (classification) algorithm
 
- * Invented by Sir David Cox<br/>
-   (author of 364 books and papers!)
+ * Invented by Sir David Cox (author of 364 books and papers!)
 
 
 
@@ -144,9 +144,10 @@ Notes:
 
 - So we can treat the output of Sigmoid function as  __probability__
 
-<img src="../../assets/images/formulas-equations/sigmoid-1.png" style="width:30%;float:left"/>
+<img src="../../assets/images/formulas-equations/sigmoid-1.png" style="width:30%;float:left"/><!-- {"left" : 3.36, "top" : 2.22, "height" : 1.32, "width" : 3.52} -->
 
-<img src="../../assets/images/deep-learning/activation-sigmoid.png" style="width:40%;float:right;" />
+<img src="../../assets/images/deep-learning/activation-sigmoid.png" style="width:40%;float:right;" /><!-- {"left" : 2.43, "top" : 3.99, "height" : 4.6, "width" : 5.4} -->
+
 
 <!-- <img src="../../assets/images/machine-learning/sigmoid-function-1.png" style="width:40%;" /> -->
 
@@ -159,11 +160,11 @@ Notes:
 
 ## Math Behind Logistic Regression
 
-<img src="../../assets/images/formulas-equations/sigmoid-1.png" style="width:30%;"/> &nbsp;  &nbsp;
-<img src="../../assets/images/formulas-equations/sigmoid-2.png" style="width:30%;"/>
+<img src="../../assets/images/formulas-equations/sigmoid-1.png" style="width:30%;"/> <!-- {"left" : 2.88, "top" : 1.11, "height" : 0.96, "width" : 2.58} --> &nbsp;  &nbsp;
+<img src="../../assets/images/formulas-equations/sigmoid-2.png" style="width:30%;"/><!-- {"left" : 5.94, "top" : 1.13, "height" : 0.91, "width" : 3.39} --> &nbsp;  &nbsp;
+<img src="../../assets/images/formulas-equations/sigmoid-3.png" style="width:90%;"/><!-- {"left" : 0.4, "top" : 5.01, "height" : 0.87, "width" : 9.45} -->
 
 
-<img src="../../assets/images/formulas-equations/sigmoid-3.png" style="width:90%;"/>
 
  * Here
      - β represents parameters
@@ -184,7 +185,7 @@ Notes:
 
 ## Applying Logistic Regression To Credit Card Application
 
-<img src="../../assets/images/machine-learning/credit-approval-3.png" style="max-width:40%;float:right;"/><!-- {"left" : 2.49, "top" : 3.13, "height" : 3.47, "width" : 5.26} -->
+<img src="../../assets/images/machine-learning/credit-approval-3.png" style="max-width:40%;float:right;"/><!-- {"left" : 5.85, "top" : 1.02, "height" : 2.72, "width" : 4.13} -->
 
 ```text
 X : input
@@ -214,6 +215,8 @@ For score of 700
 Predicts 84% chance of getting the loan approved.
 So this mapped to YES
 ```
+<!-- {"left" : 0, "top" : 3.01, "height" : 4.91, "width" : 5.59} -->
+
 
 
 Notes:
@@ -231,7 +234,7 @@ Notes:
 
      - This is called 'multiple logistic regression'
 
-<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="max-width:60%;"/><!-- {"left" : 0.77, "top" : 3.36, "height" : 3.63, "width" : 8.71} -->
+<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="max-width:60%;"/><!-- {"left" : 0.77, "top" : 4.11, "height" : 3.63, "width" : 8.71} -->
 
 
 
@@ -247,7 +250,7 @@ Notes:
 
  * We are going to look college admission data
 
-<img src="../../assets/images/machine-learning/college-admission-3.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 1.57, "height" : 5.02, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/college-admission-3.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 5.02, "width" : 8.21} -->
 
 
 
@@ -282,11 +285,11 @@ Notes:
      - Confusion Matrix
      - ROC and AUC (Area Under Curve)
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Measuring-Accuracy-of-Logistic-Model-0.png" style="width:60%;float:right;"/><!-- {"left" : 3.71, "top" : 4.55, "height" : 2.54, "width" : 6.31} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Measuring-Accuracy-of-Logistic-Model-0.png" style="width:60%;float:right;"/><!-- {"left" : 3.36, "top" : 6.12, "height" : 2.74, "width" : 6.8} -->
 
  * Confusion Matrix:
-    - correct : 14 + 5 = 19
-    - missed : 3 + 1 = 4
+    - correct: 14 + 5 = 19
+    - missed: 3 + 1 = 4
     - accuracy = 19/(19+4) = 82.6%
 
  * ROC / AUC = 0.874
@@ -386,17 +389,17 @@ Notes:
 
 ## Lab: Logistic Regression
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/>
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
 
- *  **Overview**:
+ *  **Overview:**
 
      - Practice Logistic Regression
 
- *  **Approximate Time**:
+ *  **Approximate Time:**
 
      - 30 mins
 
- *  **Instructions**:
+ *  **Instructions:**
     - See next few slides for sample code in Python / R / Spark
     -  **LOGIT-1: Credit card approval (single variable)**
     -  **LOGIT-2: College Admission (multiple variables)**
@@ -407,17 +410,17 @@ Notes:
 
 ## Lab: Cross Validation: Hyper Parameter Tuning
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/>
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
 
- *  **Overview**:
+ *  **Overview:**
 
     - Learn to do Cross Validation
 
- *  **Approximate Time**:
+ *  **Approximate Time:**
 
     - 30 mins
 
- *  **Instructions**:
+ *  **Instructions:**
 
      - Follow  appropriate Python / R / Spark instructions
 
@@ -426,5 +429,3 @@ Notes:
 
 Notes:
 
-
----

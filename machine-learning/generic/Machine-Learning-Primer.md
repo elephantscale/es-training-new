@@ -5,7 +5,8 @@
 
 ## Lesson Objectives
 
-<img src="../../assets/images/generic/3rd-party/terminator-2.png" style="width:40%;float:right;">
+<img src="../../assets/images/generic/3rd-party/terminator-2.png" style="width:40%;float:right;"><!-- {"left" : 5.3, "top" : 1.23, "height" : 3.54, "width" : 4.72} -->
+
 
  * Learn Machine Learning use cases
 
@@ -33,9 +34,11 @@ Notes:
 ---
 ## Demo - Gmail AI Helper
 
-<img src="../../assets/images/deep-learning/3rd-party/Demo-1.png" alt="Demo-1.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Demo-1.png" alt="Demo-1.png" style="width:50%;"/><!-- {"left" : 0.1, "top" : 1.92, "height" : 2.82, "width" : 10.06} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/Demo-2.png" alt="Demo-2.png" style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/Demo-2.png" alt="Demo-2.png" style="width:50%;"/><!-- {"left" : 1.35, "top" : 4.48, "height" : 3.24, "width" : 7.56} -->
+
+
 
 
 Notes:
@@ -45,7 +48,8 @@ Notes:
 
 ## Why Machine Learning Matters?
 
-<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/><!-- {"left" : 0.88, "top" : 1.34, "height" : 4.42, "width" : 8.49} -->
+
 
 [Link](https://www.youtube.com/watch?v=HcqpanDadyQ)
 
@@ -55,14 +59,25 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 
 ---
 
+## Hype Cycle
+
+ * **Question for the class:**  
+   - Where do you think AI is in this cycle? :-)
+
+<img src="../../assets/images/deep-learning/Gartner-Hype-Cycle.png" alt="Gartner-Hype-Cycle.png" style="background:white;width:55%;"/><!-- {"left" : 1.23, "top" : 2.93, "height" : 5.06, "width" : 7.8} -->
+
+
+Notes:
+- https://en.wikipedia.org/wiki/Hype_cycle
+
+---
 
 ## What is  Machine Learning
 
-
-> **"The field of study that gives computers the ability to learn without being explicitly programmed."**  
+* **"The field of study that gives computers the ability to learn without being explicitly programmed."**  
  -- Arthur Samuel
 
-<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 7.41, "top" : 1.1, "height" : 3.71, "width" : 2.63} -->
 
 * Example: Self-driving cars
     - Historical approach:  
@@ -99,6 +114,7 @@ else if ( email.text.contains ("free loans", "cheap degrees"))
 }
 
 ```
+<!-- {"left" : 0, "top" : 2.81, "height" : 1.98, "width" : 10.25} -->
 
 Notes:
 
@@ -116,7 +132,8 @@ Notes:
 
  * Then algorithm predicts spam/no-spam on new email
 
-<img src="../../assets/images/deep-learning/AI-Approach.png" alt="AI-Approach.png" style="width:55%;"/>
+<img src="../../assets/images/deep-learning/AI-Approach.png" alt="AI-Approach.png" style="width:55%;"/><!-- {"left" : 0.96, "top" : 3.83, "height" : 4.16, "width" : 8.33} -->
+
 
 Notes:
 
@@ -125,7 +142,6 @@ Notes:
 
 ## How is AI Different from Rule Based Systems
 
-
  * Rule based systems are static
     - They are programmed in
     - They don't learn from data
@@ -133,101 +149,34 @@ Notes:
  * AI can learn from data
      - It gets better every day with more data it sees
 
-<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" alt="Rule-Based-Systems.png" style="width:55%;"/>
-
+<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" alt="Rule-Based-Systems.png" style="width:55%;"/><!-- {"left" : 0.78, "top" : 4.13, "height" : 3.28, "width" : 8.7} -->
 
 
 Notes:
+
+---
+
+## Machine Learning Use Cases
+
+|       Finance       |         Healthcare        |        Retail       |        Manufacturing       |    Network & Security    |
+|:-------------------:|:-------------------------:|:-------------------:|:--------------------------:|:------------------------:|
+| Fraud Detection     | Diagnosis                 | Recommendations     | Identify defects           | Identify security breach |
+| Algorithmic trading | Patient care              | Customer retentions | Fully automated assemblies | Facial recognition       |
+| Credit Approvals    | Treatment recommendations |                     |                            |                          &nbsp;|
+
+<!-- {"left" : 0.1, "top" : 1.17, "height" : 3.08, "width" : 10.05, "columnwidth" : [1.88, 2.14, 2.23, 1.94, 1.86]} -->
 
 ---
 
 # A Brief History of AI
 
-
 [AI-brief-history.md](AI-brief-history.md)
 
 ---
 
-
-# Machine Learning Use Cases
-
----
-
-## How ML Can Help a Business
-
- * Credit Card Application use case
-
- * In the beginning, all applications are reviewed manually by analysts
-
-     - Approved or rejected based on criteria
-
- * As the application volume goes up
-
-     - Hire more analysts to keep up with volume
-     - Human bias might lead to inconsistent or unfair approval process
-
-<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-1.png" style="width:60%;">
-
-
-Notes:
-
----
-
-
-
-## How ML Can Help a Business
-
-
- * Machine Learning algorithm can learn from past loan applications
-
-     - E.g., if applicant already has a credit line and making minimum payments, he/she is likely to default on new credit
-
- * ML can process applications very quickly and only send "flagged" applications for manual review
-
-<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" style="width:70%;">
-
-Notes:
-
-
-
-
----
-
-## ML Advantages/Challenges
-
-|Advantages                                   |Challenges                                   |
-|-------------------------------------------------------- |-------------------------------------------------------- |
-|**- Accurate:** ML can learn from data, the more data it learns from the better it gets <br/>**- Automated:** Bulk of the decisions can be automated <br/>**- Fast:** ML can process data within milliseconds <br/>**- Customizable:** ML algorithms can be adopted for various scenarios <br/>**- Scalable:** ML algorithms can scale for large amount of data       |<br/>**- Data prep:**  Data may not be in ready-to-use form <br/>**- Accuracy:** Measuring accuracy can get complicated <br/>**- Algorithm Choice:** Different algorithms perform differently, choosing the best algorithm is very important   |
-
-
-Notes:
-
-
----
-
-## Machine Learning Applications
-
-
- * Detect credit card fraud
-
- * Recommendations
-     - Millions of products
-     - To millions of users
-
- * Genome analysis
-
- * Language translation
-
-Notes:
-
----
-
-
-# AI Vocabulary
+## AI Vocabulary
 
 [AI-vocabulary.md](AI-vocabulary.md)
-
-
 
 ---
 
@@ -248,6 +197,9 @@ Notes:
 | R           | - Many libraries                        | - Deepnet <br/>- Darch                   |
 | Distributed | - H20 <br/>- Spark                      | - H20 <br/>- Spark                       |
 | Cloud       | - AWS <br/>- Azure  <br/>- Google Cloud | - AWS  <br/>- Azure  <br/>- Google Cloud |
+
+<!-- {"left" : 0.25, "top" : 1.25, "height" : 4.53, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
+
 
 Notes:
 
@@ -284,6 +236,9 @@ Notes:
 | CPU bound                                      | IO bound (disk / network).                   |
 | GPU (Graphical Processing Unit) seldom engaged | GPUs are utilized increasingly               |            |
 
+<!-- {"left" : 0.25, "top" : 1.48, "height" : 3.88, "width" : 9.75} -->
+
+
 
 Notes:
 
@@ -294,15 +249,13 @@ Notes:
 
 ## Tools for Scalable Machine Learning
 
-
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;">
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;"><!-- {"left" : 7.64, "top" : 1.04, "height" : 1.3, "width" : 2.44} -->
 
  *  **Spark ML**
      - Runs on top of popular Spark framework
      - Massively scalable
      - Can use memory (caching) effectively for iterative algorithms
      - Language support: Scala, Java, Python, R
-
 
  *  **Cloud Vendors**
      - Ready to go algorithms
@@ -312,9 +265,8 @@ Notes:
      - [Amazon Machine Learning](https://aws.amazon.com/machine-learning/), Azure Machine Learning,  Google ML
 
 
- <img src="../../assets/images/deep-learning/3rd-party/amazon-logo.png" alt="amazon-logo.png" style="width:25%;"/>
- <img src="../../assets/images/deep-learning/3rd-party/azure-logo.png" alt="azure-logo.png" style="width:25%;"/>
- <img src="../../assets/images/deep-learning/3rd-party/google-cloud.png" alt="google-cloud.png" style="width:25%;"/>
+ <img src="../../assets/images/deep-learning/3rd-party/amazon-logo.png" alt="amazon-logo.png" style="width:25%;"/> &nbsp; <!-- {"left" : 0.18, "top" : 7.52, "height" : 0.86, "width" : 3.74} --> <img src="../../assets/images/deep-learning/3rd-party/azure-logo.png" alt="azure-logo.png" style="width:25%;"/> &nbsp; <!-- {"left" : 4.03, "top" : 7.55, "height" : 0.8, "width" : 2.77} --> <img src="../../assets/images/deep-learning/3rd-party/google-cloud.png" alt="google-cloud.png" style="width:25%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 7.6, "height" : 0.71, "width" : 3.15} -->
+
 
 
 
@@ -330,7 +282,7 @@ Notes:
 
 ## Tools for Scalable Deep Learning
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;">
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 7.58, "top" : 1.07, "height" : 2.02, "width" : 2.37} -->
 
  *  **`TensorFlow`**
      - Based on "data flow graphs"
@@ -340,7 +292,7 @@ Notes:
 
 <br  clear="all"/>
 
-<img src="../../assets/images/logos/bigdl-logo-1.png" style="width:25%;float:right; ">
+<img src="../../assets/images/logos/bigdl-logo-1.png" style="width:25%;float:right;"/><!-- {"left" : 7.52, "top" : 4.71, "height" : 1.14, "width" : 2.48} -->
 
  *  **`Intel BigDL`**  
 
@@ -362,44 +314,69 @@ Notes:
 [ML-Algorithms.md](ML-Algorithms.md)
 
 ---
+# Use Cases and Demos
 
-## Elon Musk:  "AI will take over humanity"
-
-<img src="../../assets/images/machine-learning/3rd-party/Elon-Musk-tweet-1.png" style="max-width:40%;">
-
-Notes:
-
+<img src="../../assets/images/logos/uber-logo-1.png" style="width:15%;"/>  <!-- {"left" : 2.97, "top" : 7.55, "height" : 1.23, "width" : 1.69} -->    &nbsp; &nbsp;
+ <img src="../../assets/images/logos/photobucket-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.29, "top" : 8.34, "height" : 0.44, "width" : 2.31} -->    &nbsp; &nbsp;
+<img src="../../assets/images/logos/staples-logo.png" style="white;width:15%;"/>  <!-- {"left" : 8.29, "top" : 8.46, "height" : 0.34, "width" : 1.71} -->
 
 
 
 ---
 
-## Lab: Design ML Algorithm
+## Use Case 1: Uber driver verification
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Primer-Lab-Design-ML-Algorithm-0.png" style="width:40%;float:right;">
+- To increase passenger safety, Uber drivers have to verify their identity before accepting rides
 
- *  **Problem** :
+- Uber uses [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to recognize 7 million+ drivers in milli seconds
 
-     - Domestic tension
+- [Link](https://venturebeat.com/wp-content/uploads/2016/09/uberids.gif?resize=343%2C600&strip=all)
 
- *  **Solution** :
+<img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%" />&nbsp;&nbsp;<!-- {"left" : 1.59, "top" : 4.9, "height" : 1.42, "width" : 1.95} --><img src="../../assets/images/deep-learning/3rd-party/uber-rides-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" />&nbsp;&nbsp;<!-- {"left" : 3.91, "top" : 4.78, "height" : 1.64, "width" : 2.93} --><img src="../../assets/images/deep-learning/3rd-party/uber-rides-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="15%" /><!-- {"left" : 7.19, "top" : 4.33, "height" : 2.56, "width" : 1.46} -->
 
-     - Buy flowers
-
- *  **Questions** :
-
-     - How much $$$ to spend
-
-     - Which flowers to choose
-
-
-
-Notes:
-
-- Image used with 'Creative Commons Zero' permissions from pexels.com   (https://www.pexels.com/photo/man-in-gray-suit-holding-bouquet-of-pink-and-blue-petaled-flowers-30196/)
 
 
 ---
+
+## Use Case 2: Photobucket
+
+- [Photobucket](http://photobucket.com/) is a image / video hosting service
+
+- They want to identify and tag NSFW (Not Safe For Work) images and offensive images
+
+- Previously, their human moderation team was only able to monitor about 1% of content
+
+- Now AI system (Using [Clarify](https://www.clarifai.com/)), screens images and tags them properly.  
+Illegal images (child pornography ..etc) are flagged for law enforcement
+
+- [Link](https://blog.clarifai.com/how-photobucket-uses-image-recognition-to-protect-its-community-from-unwanted-content)
+
+<img src="../../assets/images/logos/photobucket-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%;"/> &nbsp; &nbsp; <!-- {"left" : 1.21, "top" : 6.23, "height" : 0.74, "width" : 3.9} --><img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 6.11, "top" : 6.29, "height" : 0.62, "width" : 2.93} -->
+
+
+Notes:  
+- https://blog.clarifai.com/how-photobucket-uses-image-recognition-to-protect-its-community-from-unwanted-content
+
+---
+
+## Clarifai Demo
+
+- Go to: https://clarifai.com/demo
+
+- Upload an image (or give a image URL)
+
+- Examine the output.  
+Have fun :-)
+
+<img src="../../assets/images/deep-learning/3rd-party/clarifai-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%;"/><!-- {"left" : 1.83, "top" : 3.43, "height" : 4.21, "width" : 6.58} -->
+
+
+Notes:  
+https://clarifai.com/demo
+
+---
+
+## Wrap up & Any Questions?
 
 ## Review Questions
 
@@ -433,3 +410,30 @@ Notes:
 * https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
 * https://monkeylearn.com/blog/a-gentle-guide-to-machine-learning/
 * https://www.analyticsvidhya.com/blog/2015/06/machine-learning-basics/
+
+---
+
+## Resources
+
+* [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  
+by  Aurélien Géron (ISBN: 9781492037347)
+
+* [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)  
+by  Aurélien Géron (ISBN: 9781492032649)
+
+<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%;"/>&nbsp;&nbsp;<!-- {"left" : 2.78, "top" : 4.55, "height" : 3.15, "width" : 2.09} -->
+<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:19.5%;"/><!-- {"left" : 5.18, "top" : 4.55, "height" : 3.15, "width" : 2.4} -->
+
+---
+
+## Resources
+
+* [Deep Learning](https://learning.oreilly.com/library/view/deep-learning/9781491924570/)  
+by by Adam Gibson, Josh Patterson(ISBN: 9781491914250)
+
+* [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/)  
+by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
+
+
+<img src="../../assets/images/books/book-9781491914250-deep-learning.jpeg" alt="keras book1" style="width:20%;"/>&nbsp;&nbsp;<!-- {"left" : 2.71, "top" : 4.53, "height" : 3.02, "width" : 2.3} -->
+<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.27, "top" : 4.53, "height" : 3.02, "width" : 2.31} -->

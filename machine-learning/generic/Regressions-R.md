@@ -13,7 +13,7 @@
 ## Linear Regression Background
 
 
- * Reference : ML-03__Supervised.pptx
+ * Reference: ML-03__Supervised.pptx
 
 Notes:
 
@@ -27,7 +27,7 @@ Notes:
 
  * We will use Linear Regression to predict tips
 
-<img src="../../assets/images/machine-learning/Calculation-Using-Linear-Regression-0.png" style="width:60%;float:left"/><!-- {"left" : 4.69, "top" : 2.43, "height" : 3.96, "width" : 5.25} -->
+<img src="../../assets/images/machine-learning/Calculation-Using-Linear-Regression-0.png" style="width:50%;float:left"/><!-- {"left" : 4.69, "top" : 3.14, "height" : 3.96, "width" : 5.25} -->
 
 
 
@@ -43,7 +43,7 @@ Notes:
 | 8      	| 15       	| 2       	|
 | 9      	| 25       	| 3       	|
 | 10     	| 35       	| 4       	|
-<!-- {"left" : 0.34, "top" : 1.67, "height" : 5.5, "width" : 4.1, "columnwidth" : [1.23, 1.37, 1.37]} -->
+<!-- {"left" : 0.33, "top" : 2.38, "height" : 5.5, "width" : 4.1, "columnwidth" : [1.23, 1.37, 1.37]} -->
 
 Notes:
 
@@ -67,7 +67,7 @@ Data : dataframe
 Subset : optional specify subset of observations in fitting process
 
 ```
-<!-- {"left" : 0, "top" : 2.11, "height" : 1.37, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.51, "height" : 1.37, "width" : 10.25} -->
 
 ```text
 # sample usage:
@@ -115,6 +115,7 @@ Multiple R-squared:  0.9067,	Adjusted R-squared:  0.8951
 F-statistic: 77.76 on 1 and 8 DF,  p-value: 2.153e-05
 
 ```
+<!-- {"left" : 0, "top" : 1.32, "height" : 3.25, "width" : 10.25} -->
 
 Notes:
 
@@ -139,8 +140,11 @@ Coefficients:
 bill         0.24286    0.02754   8.818 2.15e-05 ***
 
 ```
+<!-- {"left" : 0, "top" : 1.19, "height" : 2.2, "width" : 10.25} -->
 
- * Formula :  **tip ~ bill**
+<br/>
+
+ * Formula:  **tip ~ bill**
 
      - Y (target / response variable)  ~ X (predictor)
 
@@ -164,8 +168,11 @@ Coefficients:
 bill         0.24286    0.02754   8.818 2.15e-05 ***
 
 ```
+<!-- {"left" : 0, "top" : 1.28, "height" : 2.05, "width" : 10.25} -->
 
- * Residuals : Difference between 'actual' and 'predicted'
+<br/>
+
+ * Residuals: Difference between 'actual' and 'predicted'
  * Ideally should fit 'standard distribution' -> mean value is zero. Not the case here (close enough)
 
 Notes:
@@ -190,12 +197,16 @@ bill         0.24286    0.02754   8.818 2.15e-05 ***
 
 
 ```
+<!-- {"left" : 0, "top" : 1.22, "height" : 2.72, "width" : 8.66} -->
+
+<br/>
+<br/>
 
 * Coefficients
 
-     - Slope of line : bill :  **0.24286**
+     - Slope of line: bill: **0.24286**
 
-     - Intercept : where line meets Y-axis :  **-1.4** (below zero line (X axis))
+     - Intercept: where line meets Y-axis: **-1.4** (below zero line (X axis))
 
 Notes:
 
@@ -204,15 +215,11 @@ Notes:
 
 ---
 
-
-
 ## Understanding LM
 
 ```text
 > summary(tip.lm)
-
 ...
-
 Coefficients:
             Estimate Std. Error t value Pr(>|t|)    
 (Intercept) -1.40000    1.08078  -1.295    0.231
@@ -221,11 +228,13 @@ bill         0.24286    0.02754   8.818 2.15e-05 ***
 Signif. codes:  
 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-
 ```
+<!-- {"left" : 0, "top" : 1, "height" : 2.9, "width" : 9.44} -->
+
+<br/>
+<br/>
 
  * **Pr(>|t|)** should be very small, in our case it is very close to zero
-
  * Along with  **'**  **Signif**  **. Codecs** ' of  **three stars** is good
 
 
@@ -249,12 +258,16 @@ Multiple R-squared:  0.9067,	Adjusted R-squared:  0.8951
 F-statistic: 77.76 on 1 and 8 DF,  p-value: 2.153e-05
 
 ```
+<!-- {"left" : 0, "top" : 1.24, "height" : 2.24, "width" : 10.25} -->
+
+<br/>
+<br/>
 
  *  **Coefficient of Determination (r<sup>2</sup>)** determines how well the model fits data
 
  * 0 <= r<sup>2</sup> <= 1  ,  close to 1 meaning strong fit
 
- * Here 0.9067 or  **90.67** % of 'tip' can be explained by 'bill amount'
+ * Here 0.9067 or  **90.67%**  of 'tip' can be explained by 'bill amount'
 
      - Very strong predictor!
 
@@ -280,10 +293,10 @@ tip.lm = lm (tip ~ bill, data=tip_data)
 abline(tip.lm, col='red')  # red line
 
 ```
-<!-- {"left" : 0, "top" : 0.96, "height" : 1.47, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.49, "height" : 1.47, "width" : 10.25} -->
 
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/><!-- {"left" : 2.06, "top" : 2.91, "height" : 4.22, "width" : 6.12} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/><!-- {"left" : 2.06, "top" : 3.97, "height" : 4.22, "width" : 6.12} -->
 
 
 Notes:
@@ -312,7 +325,11 @@ tip.for.100 = a * 100 + b
 # 22.88571
 
 ```
-<!-- {"left" : 0, "top" : 1.04, "height" : 3.42, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.3, "height" : 3.42, "width" : 10.25} -->
+
+<br/>
+<br/>
+<br/>
 
  * Once we figure the  **coefficients a & b** , we can predict tip amount for any bill amount
 
@@ -324,8 +341,6 @@ Notes:
 ---
 
 ## Predicting Tips
-
-
 
 ```text
 # formula : tip = a * bill + b
@@ -345,7 +360,11 @@ print(newdata)
 2  200 47.17143
 
 ```
-<!-- {"left" : 0, "top" : 1.06, "height" : 3.91, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.16, "height" : 3.91, "width" : 10.25} -->
+
+<br/>
+<br/>
+<br/>
 
 
  * predict ( regression_model, new_data)
@@ -375,7 +394,10 @@ predict(tip.lm, newdata, interval='confidence', level=0.95)
 2 47.17143   36.63191    57.71095   #   bill = $200
 
 ```
-<!-- {"left" : 0, "top" : 1.03, "height" : 3.18, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.21, "height" : 3.18, "width" : 10.25} -->
+
+<br/>
+<br/>
 
  * Here we see the 'lower' and 'upper' estimates as well
 
@@ -385,7 +407,7 @@ predict(tip.lm, newdata, interval='confidence', level=0.95)
 
      - Estimated tip is  $22.88
 
- * (Homework for students : Read up on 'Confidence Level')
+ * (Homework for students: Read up on 'Confidence Level')
 
 Notes:
 
@@ -432,7 +454,7 @@ newdata$est_tip = predict(tip.lm, newdata)
 View(newdata)
 
 ```
-<!-- {"left" : 0, "top" : 1, "height" : 5.97, "width" : 9.02} -->
+<!-- {"left" : 0, "top" : 1.37, "height" : 6.78, "width" : 10.25} -->
 
 
 Notes:
@@ -445,12 +467,12 @@ Notes:
 ## Lab: LIR-1: Demo
 
 
- *  **Overview**:
+ *  **Overview:**
      - Predicting tips using Linear Regression.
 
  *  **Instructor will demo this lab**
 
- *  **Run time**:
+ *  **Run time:**
     - 10-15 mins
 
 
@@ -465,11 +487,11 @@ Notes:
 ## Lab: LIR-2: Pollution Estimate
 
 
- *  **Overview**:
-    - Predicting pollution level using Linear Regression.
+ * **Overview:**
+   - Predicting pollution level using Linear Regression.
 
- *  **Run time**:
-    - 10-15 mins
+ * **Run time:**
+   - 10-15 mins
 
 
 
@@ -483,11 +505,11 @@ Notes:
 ## [Optional] Lab: LIR-3: Building Height
 
 
- *  **Overview**:
-    - Predicting building height using Linear Regression.
+ * **Overview:**
+   - Predicting building height using Linear Regression.
 
- *  **Run time**:
-    - 10-15 mins
+ * **Run time:**
+   - 10-15 mins
 
 
 Notes:
@@ -500,21 +522,21 @@ Notes:
 ## [Optional  /Bonus] Lab: LIR-4 : Tips
 
 
- *  **Overview** :
+ * **Overview:**
 
-    Predicting using some real world tips data (reshape2 package)
+    - Predicting using some real world tips data (reshape2 package)
 
- *  **Run time** :
+ * **Run time:**
 
-    10-15 mins
+    - 10-15 mins
 
- *  **Answer these questions**:
+ * **Answer these questions:**
 
-     - Estimate relationship between  *'bill amount'* and 'tip'
+    - Estimate relationship between  *'bill amount'* and 'tip'
 
-     - How about ' *party-size'*  and ' *tip'*
+    - How about ' *party-size'*  and ' *tip'*
 
-     - Which attribute (' *bill-amount'*  or ' *party-size'* ) is a better indicator of tip  (Use  *'coefficient of determination* ')
+    - Which attribute (' *bill-amount'*  or ' *party-size'* ) is a better indicator of tip  (Use  *'coefficient of determination* ')
 
 
 
@@ -562,7 +584,7 @@ Notes:
 
     glm(formula,   data = x,  family = f)
 
- *  **family**  : specify a choice of variance and link functions
+ *  **family:** specify a choice of variance and link functions
 
      - 6 choices
 
@@ -576,6 +598,8 @@ Notes:
 | possion          	| possion          	| log, identity, sqrt    	|
 | inverse.gaussian 	| inverse.gaussian 	| 1/mu^2                 	|
 | quasi            	| user-defined     	| user-defined           	|
+
+<!-- {"left" : 0.25, "top" : 4.55, "height" : 3.5, "width" : 9.75} -->
 
 Notes:
 
@@ -598,8 +622,9 @@ plot(x, y, xlab="X", ylab="P(Y=1)")
 title(main="Sigmoid (Logistic) Function")
 
 ```
+<!-- {"left" : 0, "top" : 1.27, "height" : 2.32, "width" : 7.78} -->
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-R--Sigmoid-Curve-S-Curve--0.png" style="width:60%" /><!-- {"left" : 2.5, "top" : 3.17, "height" : 3.79, "width" : 5.26} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-R--Sigmoid-Curve-S-Curve--0.png" style="width:60%" /><!-- {"left" : 1.66, "top" : 3.95, "height" : 4.14, "width" : 6.32} -->
 
 
 Notes:
@@ -640,6 +665,7 @@ print(mydata)
 # ...
 
 ```
+<!-- {"left" : 0, "top" : 1.46, "height" : 4.58, "width" : 10.25} -->
 
 Notes:
 
@@ -649,8 +675,6 @@ Notes:
 ---
 
 ## Predicting With GLM
-
-
 
 ```text
 mydata = data.frame ( score = c(550, 750, 680, 650, 450, 800, 775, 525, 620, 705, 830, 610, 690),
@@ -669,7 +693,10 @@ print(newdata)
 # 810         0.9355370
 
 ```
+<!-- {"left" : 0, "top" : 1.22, "height" : 2.64, "width" : 10.25} -->
 
+<br/>
+<br/>
 
  * We use 'predict' function to estimate the outcomes
 
@@ -701,8 +728,9 @@ plot(sorted.data$score, sorted.data$approved)
 lines(sorted.data$score, sorted.data$prob, col="red") # red line
 
 ```
+<!-- {"left" : 0, "top" : 1.2, "height" : 2.11, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-0.png" style="width:50%"/><!-- {"left" : 2.47, "top" : 3.12, "height" : 3.82, "width" : 5.3} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-0.png" style="width:50%"/><!-- {"left" : 1.8, "top" : 4.06, "height" : 4, "width" : 6.66} -->
 
 
 Notes:
@@ -725,8 +753,10 @@ library(popbio)
 logi.hist.plot(mydata$score, mydata$approved, boxp=FALSE)
 
 ```
+<!-- {"left" : 0, "top" : 1.2, "height" : 1.41, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-With-PopBio-Package-0.png" style="width:65%"/><!-- {"left" : 1.96, "top" : 2.44, "height" : 4.57, "width" : 6.34} -->
+
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-With-PopBio-Package-0.png" style="width:65%"/><!-- {"left" : 1.77, "top" : 4.41, "height" : 3.75, "width" : 6.71} -->
 
 
 Notes:
@@ -758,6 +788,7 @@ View(newdata)
 print(newdata)
 
 ```
+<!-- {"left" : 0, "top" : 1.32, "height" : 2.99, "width" : 10.25} -->
 
 Notes:
 
@@ -769,15 +800,15 @@ Notes:
 ## Lab: LOG-1: Credit Approval (DEMO)
 
 
- *  **Overview**: Estimating credit approval using Logistic Regression.
+ *  **Overview:** Estimating credit approval using Logistic Regression.
 
  *   **Instructor to demo this lab**
 
- *  **Run time**:
+ *  **Run time:**
 
     - 10-15 mins
 
- *  **Solution (Instructor)**:
+ *  **Solution (Instructor):**
     -  /data-science/solutions/R/logistic-regression/1-credit-approval-solution.R
 
 
@@ -802,7 +833,7 @@ mylogit = glm (approved ~ fico + salary + debt,
 summary(mylogit)
 
 ```
-<!-- {"left" : 0, "top" : 0.9, "height" : 1.97, "width" : 7.11} -->
+<!-- {"left" : 0, "top" : 1.35, "height" : 1.97, "width" : 7.11} -->
 
 
 | fico 	| salary 	| debt 	| approv ed 	|
@@ -811,10 +842,10 @@ summary(mylogit)
 | 760  	| 50000  	| 5000 	| 1         	|
 | 700  	| 80000  	| 5000 	| 1         	|
 
-<!-- {"left" : 4.98, "top" : 5.02, "height" : 2.11, "width" : 5.06, "columnwidth" : [1.22, 1.41, 1.41, 1.41]} -->
+<!-- {"left" : 2.4, "top" : 3.77, "height" : 2.11, "width" : 5.06, "columnwidth" : [1.22, 1.41, 1.41, 1.41]} -->
 
 
-<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:65%"/><!-- {"left" : 4.98, "top" : 5.02, "height" : 2.11, "width" : 5.06} -->
+<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:55%"/><!-- {"left" : 2.59, "top" : 6.3, "height" : 2.11, "width" : 5.06} -->
 
 
 
@@ -843,14 +874,19 @@ debt             -0.005716      21.377501       0        1
 
 
 ```
-<div align="left">
-ln(y/(1-y)) = β0 + β1 * fico +  β2 * salary + β3 * debt<br/>
- β0 (intercept) = -303.9788<br/>
+<!-- {"left" : 0, "top" : 1.18, "height" : 2.31, "width" : 10.25} -->
+
+
+<br/>
+<br/>
+
+* ln(y/(1-y)) = β0 + β1 * fico +  β2 * salary + β3 * debt<br/>
+ β0 (intercept) = - 303.9788<br/>
  β1 (fico) = 0.4539185<br/>
  β2 (salary) = 0.001060338<br/>
- β3 (debt) = -0.005715547
+ β3 (debt) = - 0.005715547
 
-</div>
+
 Notes:
 
 
@@ -867,7 +903,9 @@ Notes:
  -303.978784284    0.453918542    0.001060338   -0.005715547
 
 ```
+<!-- {"left" : 0, "top" : 1.24, "height" : 1.4, "width" : 10.25} -->
 
+<br/>
 
  * When fico score goes up by ONE unit, it increases the odd by 0.45
 
@@ -900,7 +938,7 @@ Notes:
 
      - So we need to turn it into a  **'factor** ' , so GLM treats it properly
 
-<img src="../../assets/images/machine-learning/3rd-party/picture1.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3.49, "height" : 3.42, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/picture1.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 4.05, "height" : 3.42, "width" : 8.21} -->
 
 
 
@@ -938,6 +976,9 @@ Mean   :0.3175   Mean   :587.7   Mean   :3.390   Mean   :2.485   4: 67
 Max.   :1.0000   Max.   :800.0   Max.   :4.000   Max.   :4.000
 
 ```
+<!-- {"left" : 0, "top" : 1.24, "height" : 4.82, "width" : 10.25} -->
+
+
 
 Notes:
 
@@ -956,6 +997,9 @@ Notes:
                 data=admission, family = "binomial")
 
 ```
+<!-- {"left" : 0, "top" : 1.11, "height" : 1.89, "width" : 10.25} -->
+
+<br/>
 
  * Running GLM against ' **rank_factor** ' not rank
 
@@ -965,16 +1009,16 @@ Notes:
 
 ---
 
-## Lab: LOG-2 : Mortgage Approval
+## Lab: LOG-2: Mortgage Approval
 
 
- *  **Overview**:
+ *  **Overview:**
     - Estimating mortgage approval using Multiple Logistic Regression.
 
- *  **Run time**:
+ *  **Run time:**
     - 10-15 mins
 
- *  **Solution (Instructor)**:
+ *  **Solution (Instructor):**
     - /data-science/solutions/R/logistic-regression/2-mortgage-approval-solution.R
 
 
@@ -989,11 +1033,11 @@ Notes:
 ## Lab: LOG-3: College Admission
 
 
- *  **Overview**:
+ *  **Overview:**
 
      - Using Multiple Logistic Regression with factored data.
 
- *  **Run time**:
+ *  **Run time:**
     - 10-15 mins
 
  *  **Solution (Instructor)**

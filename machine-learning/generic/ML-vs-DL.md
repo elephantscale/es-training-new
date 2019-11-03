@@ -305,4 +305,18 @@ Notes:
 Notes:
 
 
+---
 
+## Video: How Scale is Helping Deep Learning
+
+<img src="../../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 1.36, "top" : 1.34, "height" : 4.04, "width" : 7.52} -->
+
+
+[Link](https://www.youtube.com/watch?v=LcfLo7YP8O4)
+
+Andrew Ng explains how Deep Learning algorithms can scale better with data size.
+
+
+Notes:
+
+https://www.youtube.com/watch?v=LcfLo7YP8O4

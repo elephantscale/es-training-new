@@ -14,7 +14,7 @@
 | 327,000      | 3        | 1.5       | 1,750       | 34,465   |
 | 347,000      | 4        | 1.75      | 1,860       | 14,650   |
 
-<br/>
+<!-- {"left" : 0.25, "top" : 1.1, "height" : 4, "width" : 9.75} -->
 
  * Multiple factors decide house prices
 
@@ -30,9 +30,7 @@ Notes:
 
 ## Multiple Linear Regression
 
-<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:90%"/><!-- {"left" : 2.01, "top" : 1.15, "height" : 0.43, "width" : 6.24} -->
-
-
+<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:90%"/><!-- {"left" : 2.01, "top" : 1.37, "height" : 0.43, "width" : 6.24} -->
 
  * Outcome depends on multiple variables
  * __β<sub>1</sub>__ , __β<sub>2</sub>__ are coefficients
@@ -62,8 +60,10 @@ model = LinearRegression ().fit(x,y)
 # predict
 predictions = model.predict(x)
 ```
-<img src="../../assets/images/machine-learning/linear-regression-house-price-1a.png" style="width:40%;float:left;"/>
-<img src="../../assets/images/machine-learning/linear-regression-house-price-1b.png" style="width:40%;float:right;"/>
+<!-- {"left" : 0, "top" : 1.27, "height" : 3.88, "width" : 10.25} -->
+
+<img src="../../assets/images/machine-learning/linear-regression-house-price-1a.png" style="width:40%;float:left;"/><!-- {"left" : 0.19, "top" : 5.92, "height" : 2.01, "width" : 4.6} -->
+<img src="../../assets/images/machine-learning/linear-regression-house-price-1b.png" style="width:40%;float:right;"/><!-- {"left" : 4.89, "top" : 5.93, "height" : 2.12, "width" : 5.17} -->
 
 ---
 
@@ -76,6 +76,8 @@ coef = pd.DataFrame({"input_column" : input_columns,
 print(coef)
 
 ```
+<!-- {"left" : 0, "top" : 1.27, "height" : 1.44, "width" : 9.78} -->
+
 
 ```text
 # output
@@ -91,6 +93,7 @@ MSE :  60702204448.745056
 RMSE :  246378.1736452015
 
 ```
+<!-- {"left" : 0, "top" : 3.64, "height" : 3.49, "width" : 5.61} -->
 
 ---
 
@@ -105,6 +108,9 @@ input_column  coefficient
 2  SqFtTotLiving       277.85
 3        SqFtLot        -0.07
 ```
+<!-- {"left" : 0, "top" : 1.11, "height" : 2.32, "width" : 5.61} -->
+
+<br/>
 
 - Above table lists coefficients for each input variable
 - Coefficient for 'SqFtTotLiving' is '277.85'  
@@ -127,12 +133,8 @@ input_column  coefficient
     * Measures how well the model fits the data
     * 1.0 is a perfet fit
 
-<br />
 
-<!-- TODO Shiva  -->
-
-<img src="../../assets/images/formulas-equations/RMSE-1.png" style="width:40%;float:left;"/>
-<img src="../../assets/images/formulas-equations/R2-1.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/formulas-equations/RMSE-1.png" style="width:40%;float:left;"/><!-- {"left" : 0.74, "top" : 5.11, "height" : 0.79, "width" : 3.62} --><img src="../../assets/images/formulas-equations/R2-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.49, "top" : 4.87, "height" : 1.26, "width" : 4.01} -->
 
 Notes:
 
@@ -149,7 +151,10 @@ from sklearn.metrics import r2_score
 print ("R2 : " , r2_score(y, predictions))
 # R2 :  0.483482252362197
 ```
+<!-- {"left" : 0, "top" : 1.19, "height" : 1.72, "width" : 9.28} -->
 
+<br/>
+<br/>
 
  * R<sup>2</sup> is 0.4835  - not a great fit
 
@@ -161,18 +166,18 @@ Notes:
 ---
 
 
-## Class Discussion : Why is the Accuracy Low?
+## Class Discussion: Why is the Accuracy Low?
 
 
  *  **R<sup>2</sup> is 0.4835** - not a great fit
 
- *  **Question for class** :
+ *  **Question for class:**
 
     Why is R<sup>2</sup>  not close to 1?  (as in why is it not a great fit?)
 
      - Can you guys come up with some reasons
 
-     - Hint : Look at Sale date in the dataset?  Think about what happened in that time frame
+     - Hint: Look at Sale date in the dataset?  Think about what happened in that time frame
 
  * Answers are in next slide
 
@@ -237,6 +242,7 @@ predictions = model.predict(x)
 print ("R2 : " , r2_score(y, predictions))
 # R2 = 0.48
 ```
+<!-- {"left" : 0, "top" : 2.71, "height" : 4.86, "width" : 10.25} -->
 
 ---
 
@@ -267,13 +273,14 @@ predictions = model.predict(x)
 print ("R2 : " , r2_score(y, predictions))
 # R2 = 0.76
 ```
+<!-- {"left" : 0, "top" : 2.36, "height" : 4.26, "width" : 10.25} -->
 
 ---
 
 
 ## Deciding Important Variables
 
-<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:50%"/><!-- {"left" : 1.92, "top" : 1.07, "height" : 0.44, "width" : 6.42} -->
+<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:50%"/><!-- {"left" : 1.92, "top" : 1.3, "height" : 0.44, "width" : 6.42} -->
 
 
 
@@ -346,6 +353,8 @@ p - number of variables
 n - number of records
 
 ```
+<!-- {"left" : 0, "top" : 5.25, "height" : 1.44, "width" : 5.28} -->
+
 
 Notes:
 
@@ -410,6 +419,7 @@ predictions = model.predict(x)
 print ("R2 : " , r2_score(y, predictions))
 # R2 = 0.84
 ```
+<!-- {"left" : 0, "top" : 1.9, "height" : 4.83, "width" : 10.25} -->
 
 ---
 
@@ -426,6 +436,8 @@ coef = pd.DataFrame({"input_column" : input_columns,
 coef
 
 ```
+<!-- {"left" : 0, "top" : 2.1, "height" : 1.29, "width" : 8.72} -->
+
 
 ```text
 input_column  coefficient
@@ -446,6 +458,7 @@ input_column  coefficient
 14  NewConstruction    27,870.93
 
 ```
+<!-- {"left" : 0, "top" : 3.59, "height" : 4.94, "width" : 6.11} -->
 
 ---
 
@@ -472,15 +485,15 @@ Notes:
 
 ## Lab: Multiple Linear Regression
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" />
+<img src="../../assets/images/icons/individual-labs.png" alt="individual-labs.png" style="max-width:30%;float:right;" /><!-- {"left" : 7.22, "top" : 1.13, "height" : 3.68, "width" : 2.76} -->
 
- *  **Overview**:
+ *  **Overview:**
     - Practice Multiple Linear Regressions
 
- *  **Approximate Time**:
+ *  **Approximate Time:**
     - 30 mins
 
- *  **Instructions**:
+ *  **Instructions:**
     - Follow  appropriate Python / R / Spark instructions
     - See next few slides for sample code
     - LIR-2: House prices

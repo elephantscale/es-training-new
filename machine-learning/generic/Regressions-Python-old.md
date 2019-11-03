@@ -29,7 +29,7 @@ Notes:
 
  * We will use Linear Regression to predict tips
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.93, "height" : 4.11, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 2.48, "height" : 4.11, "width" : 8.21} -->
 
 
 Notes:
@@ -51,6 +51,7 @@ X array: numpy array with X variable
 
 Y array: numpy array with Y Varibale
 ```
+<!-- {"left" : 0, "top" : 1.94, "height" : 1.2, "width" : 10.25} -->
 
 ```text
 # sample usage:
@@ -63,6 +64,7 @@ tip_data = pd.DataFrame({
 from scipy import stats
 gradient,intercept,r_value,p_value,std_err=stats.linregress(X array, Y array)
 ```
+<!-- {"left" : 0, "top" : 3.66, "height" : 1.85, "width" : 10.25} -->
 
 Notes:
 
@@ -106,6 +108,7 @@ Gradient and intercept 0.242857142857 -1.4
 R-squared 0.906714076553
 p-value 2.15282168529e-05
 ```
+<!-- {"left" : 0, "top" : 1.38, "height" : 1.37, "width" : 9.28} -->
 
 Notes:
 
@@ -130,7 +133,7 @@ X array: numpy array with X variable
 Y array: numpy array with Y Varibale
 
 ```
-<!-- {"left" : 0, "top" : 1.88, "height" : 1.83, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.46, "height" : 1.83, "width" : 10.25} -->
 
 ```text
 # sample usage:
@@ -140,8 +143,8 @@ tip_data = pd.DataFrame({'bill' : [50.00, 30.00, 60.00, 40.00, 65.00, 20.00, 10.
 from scipy import stats
 gradient,intercept,r_value,p_value,std_err=stats.linregress(X array, Y array)
 
-
 ```
+<!-- {"left" : 0, "top" : 4.9, "height" : 1.14, "width" : 10.25} -->
 
 Notes:
 
@@ -174,6 +177,8 @@ Skew:	-0.996							Prob(JB):	0.437
 Kurtosis:	3.036					Cond. No.	86.8
 
 ```
+<!-- {"left" : 0, "top" : 1.28, "height" : 3.78, "width" : 10.25} -->
+
 
 Notes:
 
@@ -185,7 +190,7 @@ http://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R
 ## Understanding Summary
 
 
-<img src="../../assets/images/machine-learning/3rd-party/01.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.34, "height" : 5.29, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/01.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.89, "height" : 5.29, "width" : 8.21} -->
 
 
 
@@ -198,7 +203,7 @@ Notes:
 
 ## Understanding Statsmodel output
 
-<img src="../../assets/images/machine-learning/3rd-party/02.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 3.27, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/02.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.55, "height" : 3.27, "width" : 8.21} -->
 
  * Residuals : Difference between 'actual' and 'predicted'
 
@@ -217,14 +222,14 @@ Notes:
 ## Understanding Statsmodel output
 
 
-<img src="../../assets/images/machine-learning/3rd-party/03.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 2.24, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/03.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.42, "height" : 2.24, "width" : 8.21} -->
 
 
  * Coefficients
 
-     - Slope of line: bill:  **0.2429**
+     - Slope of line: bill: **0.2429**
 
-     - Intercept: where line meets Y-axis:  **-1.4** (below zero line (X axis))
+     - Intercept: where line meets Y-axis: **-1.4** (below zero line (X axis))
 
 
 Notes:
@@ -236,7 +241,7 @@ Notes:
 
 ## Understanding Statsmodel Output
 
-<img src="../../assets/images/machine-learning/3rd-party/04.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.07, "height" : 2.19, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/04.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 1.52, "height" : 2.19, "width" : 8.21} -->
 
 
 
@@ -254,7 +259,7 @@ http://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R
 ## Understanding Statsmodel output
 
 
-<img src="../../assets/images/machine-learning/3rd-party/05.png" style="width:70%"/><!-- {"left" : 2.08, "top" : 1.15, "height" : 1.62, "width" : 6.09} -->
+<img src="../../assets/images/machine-learning/3rd-party/05.png" style="width:70%"/><!-- {"left" : 1.29, "top" : 5.9, "height" : 2.04, "width" : 7.66} -->
 
 
  *  **Coefficient of Determination (r**  **2**  **)** determines how well the model fits data
@@ -288,7 +293,7 @@ abline_plot(model_results=result, ax=ax)
 ```
 <!-- {"left" : 0, "top" : 1.18, "height" : 0.9, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/><!-- {"left" : 2.18, "top" : 2.86, "height" : 4.07, "width" : 5.9} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/><!-- {"left" : 2.18, "top" : 3.11, "height" : 4.07, "width" : 5.9} -->
 
 
 Notes:
@@ -299,6 +304,10 @@ Notes:
 ---
 
 ## Calculating Coefficients
+
+
+<br/>
+<br/>
 
 ```text
 # formula : tip = a * bill + b
@@ -313,6 +322,7 @@ b = result.params[0] #  -1.4
 tip.for.100 = a * 100 + b   
 # 22.88571
 ```
+<!-- {"left" : 0, "top" : 1.18, "height" : 1.95, "width" : 10.25} -->
 
 
   * Once we figure the  **coefficients a & b** , we can predict tip amount for any bill amount
@@ -348,6 +358,7 @@ test_data_pd['predicted_tip'] = result.predict(test_data_pd)
 2	65.0		14.385714
 
 ```
+<!-- {"left" : 0, "top" : 1.93, "height" : 2.61, "width" : 10.25} -->
 
 Notes:
 
@@ -391,6 +402,7 @@ tip_data['est_tip'] = tip_data.bill * a + b
 test_data_pd = pd.DataFrame({'bill' : [45., 55., 65.,] })
 test_data_pd['predicted_tip'] = result.predict(test_data_pd)
 ```
+<!-- {"left" : 0, "top" : 1.25, "height" : 5.04, "width" : 10.25} -->
 
 Notes:
 
@@ -421,6 +433,7 @@ test_data_pd['predicted_tip'] = model.predict(test_data_pd)
 2	65.0		14.385714
 
 ```
+<!-- {"left" : 0, "top" : 1.86, "height" : 2.45, "width" : 10.25} -->
 
 Notes:
 
@@ -428,15 +441,15 @@ Notes:
 
 ---
 
-## Lab: LIR-1 : Demo
+## Lab: LIR-1: Demo
 
 
-  *  **Overview** :
+  *  **Overview:**
      - Predicting tips using Linear Regression.
 
   *  **Instructor will demo this lab**
 
-  *  **Run time** :
+  *  **Run time:**
      - 10-15 mins
 
 
@@ -447,13 +460,13 @@ Notes:
 
 ---
 
-## Lab: LIR-2 : Pollution Estimate
+## Lab: LIR-2: Pollution Estimate
 
 
-  *  **Overview**:
+  *  **Overview:**
       - Predicting pollution level using Linear Regression.
 
-  *  **Run time**:
+  *  **Run time:**
      - 10-15 mins
 
 Notes:
@@ -461,13 +474,13 @@ Notes:
 
 ---
 
-## [Optional] Lab: LIR-3 : Building Height
+## [Optional] Lab: LIR-3: Building Height
 
 
-  *  **Overview**:
+  *  **Overview:**
      - Predicting building height using Linear Regression.
 
-  *  **Run time**:
+  *  **Run time:**
      - 10-15 mins
 
 
@@ -478,16 +491,16 @@ Notes:
 
 ---
 
-## [Optional  /Bonus] Lab: LIR-4 : Tips
+## [Optional  /Bonus] Lab: LIR-4: Tips
 
 
- *  **Overview**:
+ *  **Overview:**
      - Predicting using some real world tips data (reshape2 package)
 
- *  **Run time**:
+ *  **Run time:**
      - 10-15 mins
 
- *  **Answer these questions**:
+ *  **Answer these questions:**
 
       - Estimate relationship between  *'bill amount'* and *'tip'*
 
@@ -548,6 +561,8 @@ Notes:
 | inverse.gaussian | inverse.gaussian | 1/mu^2                 |
 | quasi            | user-defined     | user-defined           |
 
+<!-- {"left" : 0.25, "top" : 3.8, "height" : 3.5, "width" : 9.75} -->
+
 Notes:
 
 * http://www.statmethods.net/advstats/glm.html
@@ -569,18 +584,18 @@ Notes:
 
 ---
 
-## Lab: LOG-1 : Credit Approval (DEMO)
+## Lab: LOG-1: Credit Approval (DEMO)
 
 
- *  **Overview**:
+ *  **Overview:**
     - Estimating credit approval using Logistic Regression.
 
  * ‌ **Instructor to demo this lab**
 
- *  **Run time**:
+ *  **Run time:**
     - 10-15 mins
 
- *  **Solution (Instructor)**:
+ *  **Solution (Instructor):**
     - /data-science/solutions/R/logistic-regression/1-credit-approval-solution.R
 
 
@@ -604,7 +619,7 @@ mylogit = sm.Logit(mortgage['approved'], mortgage[0:3])
 Mylogit.summary()
 
 ```
-<!-- {"left" : 0, "top" : 0.93, "height" : 1.63, "width" : 7.63} -->
+<!-- {"left" : 0, "top" : 1.25, "height" : 1.63, "width" : 7.63} -->
 
 | fico | salary | debt | approved |
 |------|--------|------|----------|
@@ -612,9 +627,9 @@ Mylogit.summary()
 | 760  | 50000  | 5000 | 1        |
 | 700  | 80000  | 5000 | 1        |
 
-<!-- {"left" : 0.25, "top" : 2.75, "height" : 2, "width" : 4.99, "columnwidth" : [1, 1.41, 1.41, 1.41]} -->
+<!-- {"left" : 2.51, "top" : 3.53, "height" : 2, "width" : 4.99, "columnwidth" : [1, 1.41, 1.41, 1.41]} -->
 
-<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:50%"/><!-- {"left" : 4.08, "top" : 4.74, "height" : 2.47, "width" : 5.94} -->
+<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:50%"/><!-- {"left" : 2.16, "top" : 5.88, "height" : 2.47, "width" : 5.94} -->
 
 
 Notes:
@@ -627,7 +642,7 @@ Notes:
 ## Understanding Multiple Logistic Regression
 
 
-<img src="../../assets/images/machine-learning/3rd-party/06.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.04, "height" : 3.07, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/06.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.29, "height" : 3.07, "width" : 8.21} -->
 
 
 
@@ -649,7 +664,7 @@ Notes:
 
 ## Understanding Multiple Logistic Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/07.png" style="width:70%"/><!-- {"left" : 0.3, "top" : 1.18, "height" : 1.74, "width" : 9.64} -->
+<img src="../../assets/images/machine-learning/3rd-party/07.png" style="width:70%"/><!-- {"left" : 0.3, "top" : 1.48, "height" : 1.74, "width" : 9.64} -->
 
 
  * When fico score goes up by ONE unit, it increases the odd by 0.45
@@ -724,6 +739,7 @@ test_data_pd['predicted_tip'] = result.predict(test_data_pd)
 2	65.0		14.385714
 
 ```
+<!-- {"left" : 0, "top" : 1.25, "height" : 2.61, "width" : 10.25} -->
 
 Notes:
 
@@ -731,16 +747,16 @@ Notes:
 
 ---
 
-## Lab: LOG-2 : Mortgage Approval
+## Lab: LOG-2: Mortgage Approval
 
 
-  *  **Overview**:
+  *  **Overview:**
       - Estimating mortgage approval using Multiple Logistic Regression.
 
-  *  **Run time**:
+  *  **Run time:**
       - 10-15 mins
 
-  *  **Solution (Instructor)**:
+  *  **Solution (Instructor):**
       - /data-science/solutions/R/logistic-regression/2-mortgage-approval-solution.R
 
 
@@ -751,16 +767,16 @@ Notes:
 
 ---
 
-## Lab: LOG-3 : College Admission
+## Lab: LOG-3: College Admission
 
 
-  *  **Overview**:
+  *  **Overview:**
      - Using Multiple Logistic Regression with factored data.
 
-  *  **Run time**:
+  *  **Run time:**
      - 10-15 mins
 
-  *  **Solution (Instructor)**:
+  *  **Solution (Instructor):**
      - /data-science/solutions/R/logistic-regression/3-college-admission-solution.R
 
 

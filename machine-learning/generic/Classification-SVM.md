@@ -16,7 +16,7 @@ Notes:
 ## Exercise: College Admission
 
 
-<img src="../../assets/images/machine-learning/college-admission-1.png"  style="max-width:50%;float:right;"/><!-- {"left" : 7.13, "top" : 4.64, "height" : 2.59, "width" : 2.82} -->
+<img src="../../assets/images/machine-learning/college-admission-1.png"  style="max-width:50%;float:right;"/><!-- {"left" : 6, "top" : 2.09, "height" : 3.71, "width" : 4.04} -->
 
 * Consider college application and admittance data
 
@@ -65,7 +65,7 @@ Notes:
 
 * Out of many possibilities we choose one, that separates the classes cleanly
 
-<img src="../../assets/images/machine-learning/SVM-hyper-plane-1.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 3.3, "height" : 3.84, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/SVM-hyper-plane-1.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 3.89, "height" : 3.84, "width" : 8.21} -->
 
 
 
@@ -77,8 +77,7 @@ Diagram from "Introduction to Statistical Learning" with thanks to authors
 
 ## Hyper Planes
 
-<!-- TODO shiva  -->
-<img src="../../assets/images/machine-learning/SVM-hyper-plane-2.png" style="width:40%;float:right;"/><!-- {"left" : 2.83, "top" : 3.06, "height" : 3.97, "width" : 4.58} -->
+<img src="../../assets/images/machine-learning/SVM-hyper-plane-2.png" style="width:40%;float:right;"/><!-- {"left" : 5.56, "top" : 1.54, "height" : 3.97, "width" : 4.58} -->
 
 * When we choose a separating boundary, we want to choose one that separates the points by widest margin
   * more confidence in the classification
@@ -100,7 +99,7 @@ Notes:
 
 * This leads to lower confidence in prediction
 
-<img src="../../assets/images/machine-learning/SVM-hyper-plane-3.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 3.3, "height" : 3.83, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/SVM-hyper-plane-3.png" style="width:70%;"/><!-- {"left" : 0.79, "top" : 3.8, "height" : 4.05, "width" : 8.67} -->
 
 
 Notes:
@@ -120,7 +119,9 @@ Notes:
     * When you plugin X to the equation, if it evaluates to positive, it belongs in one class
     * If it evaluates to negative, belongs in the other class
 
-<img src="../../assets/images/formulas-equations/SVM-linear-1.png" style="width:70%;"/>
+<img src="../../assets/images/formulas-equations/SVM-linear-1.png" style="width:70%;"/><!-- {"left" : 1.7, "top" : 5.79, "height" : 1.73, "width" : 6.85} -->
+
+
 
 Notes:
 
@@ -128,8 +129,7 @@ Notes:
 
 ## What if Linear Separation is Not Possible
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/machine-learning/SVM-linear-separation-1.png" style="width:40%;float:right;"/><!-- {"left" : 2.13, "top" : 1.66, "height" : 5.78, "width" : 5.99} -->
+<img src="../../assets/images/machine-learning/SVM-linear-separation-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.25, "top" : 1.59, "height" : 4.55, "width" : 4.71} -->
 
 * Here no linear line to __cleanly__ separate blue / orange dots
 
@@ -158,7 +158,7 @@ Notes:
 
 * Here points 8, 11 & 12 are on the wrong side of hyper plane
 
-<img src="../../assets/images/machine-learning/SVM-soft-margin-classifier.png" style="width:70%;"/><!-- {"left" : 0.71, "top" : 3.01, "height" : 3.61, "width" : 8.84} -->
+<img src="../../assets/images/machine-learning/SVM-soft-margin-classifier.png" style="width:70%;"/><!-- {"left" : 0.71, "top" : 3.76, "height" : 3.61, "width" : 8.84} -->
 
 
 Notes:
@@ -211,7 +211,7 @@ Notes:
 
 * Right: Radical kernel
 
-<img src="../../assets/images/machine-learning/3rd-party/SVM-Kernel-01.png" alt="SVM-Kernel" style="width:70%;"/><!-- {"left" : 0.73, "top" : 2.18, "height" : 4.62, "width" : 8.78} -->
+<img src="../../assets/images/machine-learning/3rd-party/SVM-Kernel-01.png" alt="SVM-Kernel" style="width:70%;"/><!-- {"left" : 0.73, "top" : 2.51, "height" : 4.62, "width" : 8.78} -->
 
 
 Notes:
@@ -223,7 +223,7 @@ Notes:
 * In this (synthetic) data linear separation is not possible
 
 
-<img src="../../assets/images/machine-learning/SVM-Kernel-02.png" alt="SVM-Kernel-02" style="width:40%;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- {"left" : 0.61, "top" : 2.41, "height" : 3.14, "width" : 4.42} --><img src="../../assets/images/machine-learning/SVM-Kernel-03.png" alt="SVM-Kernel-03" style="width:40%;"/><!-- {"left" : 5.22, "top" : 2.41, "height" : 3.14, "width" : 4.42} -->
+<img src="../../assets/images/machine-learning/SVM-Kernel-02.png" alt="SVM-Kernel-02" style="width:40%;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- {"left" : 0.61, "top" : 2.96, "height" : 3.14, "width" : 4.42} --><img src="../../assets/images/machine-learning/SVM-Kernel-03.png" alt="SVM-Kernel-03" style="width:40%;"/><!-- {"left" : 5.22, "top" : 2.96, "height" : 3.14, "width" : 4.42} -->
 
 Notes:
 
@@ -235,7 +235,7 @@ Reference : Chapter 2, "Introduction to Machine Learning With Python"
 
 * But adding a higher dimension allows us to separate the points (feature1^2)
 
-<img src="../../assets/images/machine-learning/SVM-Kernel-04.png" style="width:40%;"/>&nbsp;<!-- {"left" : 0.58, "top" : 2.71, "height" : 3.33, "width" : 4.54} --><img src="../../assets/images/machine-learning/SVM-Kernel-05.png" style="width:40%;"/><!-- {"left" : 5.14, "top" : 2.71, "height" : 3.33, "width" : 4.54} -->
+<img src="../../assets/images/machine-learning/SVM-Kernel-04.png" style="width:40%;"/>&nbsp;<!-- {"left" : 0.58, "top" : 3.16, "height" : 3.33, "width" : 4.54} --><img src="../../assets/images/machine-learning/SVM-Kernel-05.png" style="width:40%;"/><!-- {"left" : 5.14, "top" : 3.16, "height" : 3.33, "width" : 4.54} -->
 
 
 Notes:
@@ -248,7 +248,7 @@ Reference : Chapter 2, "Introduction to Machine Learning With Python"
 
 * This is the decision boundary of SVM kernel in the above example
 
-<img src="../../assets/images/machine-learning/SVM-Kernel-06.png" alt="SVM-Kernel-04.png" style="width:60%;"/><!-- {"left" : 1.91, "top" : 2.23, "height" : 4.36, "width" : 6.43} -->
+<img src="../../assets/images/machine-learning/SVM-Kernel-06.png" alt="SVM-Kernel-04.png" style="width:60%;"/><!-- {"left" : 1.91, "top" : 2.64, "height" : 4.36, "width" : 6.43} -->
 
 
 
@@ -262,7 +262,7 @@ Reference : Chapter 2, "Introduction to Machine Learning With Python"
 
 * [Link](https://www.youtube.com/watch?v=3liCbRZPrZA)
 
-<img src="../../assets/images/machine-learning/3rd-party/SVM-Kernel-05.png" alt="SVM-Kernel-05.png" style="width:50%;"/><!-- {"left" : 1.71, "top" : 1.16, "height" : 4.55, "width" : 6.82} -->
+<img src="../../assets/images/machine-learning/3rd-party/SVM-Kernel-05.png" alt="SVM-Kernel-05.png" style="width:50%;"/><!-- {"left" : 1.86, "top" : 1.62, "height" : 4.35, "width" : 6.53} -->
 
 
 
@@ -277,7 +277,7 @@ https://www.youtube.com/watch?v=3liCbRZPrZA
 ## Preparing Data for SVM
 
 * **Binary Classification**
-    - Standard SVM is a binary classifier (class A or B).Extensions are developed for multiclass classification and regressions
+    - Standard SVM is a binary classifier (class A or B).Extensions are developed for multi-class classification and regressions
 
 * **Numerical Inputs**
     - SVM assumes inputs are numerical.If you have categorical inputs convert it to binary dummy variables
@@ -325,7 +325,8 @@ Notes:
 
 ## Lab: SVM
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/>
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
 
 * **Overview:**
     - Work with SVM algorithm

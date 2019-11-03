@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="-334 216 1241 334" width="1241" height="334">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#6d2f29">
+      <g>
+        <path d="M -2.6666667 0 L 0 1 L 0 -1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#6d2f29">
+      <g>
+        <path d="M -2.6666667 0 L 0 1 L 0 -1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2019-10-06 09:50:40 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M -110 441 L 721 441 C 721.5523 441 722 441.4477 722 442 L 722 450 C 722 450.5523 721.5523 451 721 451 L -110 451 C -110.55228 451 -111 450.5523 -111 450 L -111 442 C -111 441.4477 -110.55228 441 -110 441 Z" fill="#033299"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M -113.1725 467.0925 L -113.1725 424.0925 C -113.1725 423.5402 -112.72478 423.0925 -112.1725 423.0925 L -103.1725 423.0925 C -102.62022 423.0925 -102.1725 423.5402 -102.1725 424.0925 L -102.1725 467.0925 C -102.1725 467.6448 -102.62022 468.0925 -103.1725 468.0925 L -112.1725 468.0925 C -112.72478 468.0925 -113.1725 467.6448 -113.1725 467.0925 Z" fill="#033299"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 719.8275 467.0925 L 719.8275 424.0925 C 719.8275 423.5402 720.2752 423.0925 720.8275 423.0925 L 729.8275 423.0925 C 730.3798 423.0925 730.8275 423.5402 730.8275 424.0925 L 730.8275 467.0925 C 730.8275 467.6448 730.3798 468.0925 729.8275 468.0925 L 720.8275 468.0925 C 720.2752 468.0925 719.8275 467.6448 719.8275 467.0925 Z" fill="#033299"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(-118.87367 479)" fill="#1c0069">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1c0069" x="0" y="40">0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(714.1263 479)" fill="#1c0069">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1c0069" x="0" y="40">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(151.92578 496)" fill="#1c0069">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1c0069" x="0" y="40">cosine similarity</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(-328.0729 358)" fill="#1c0069">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1c0069" x="0" y="40">vectors are orthogonal</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(549.35094 358)" fill="#1c0069">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1c0069" x="0" y="40">vectors are similar</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(383.0072 221)" fill="#1c0069">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1c0069" x="0" y="40">vector are more</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1c0069" x="0" y="89">like each other</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(-108.1725 221)" fill="#1c0069">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1c0069" x="0" y="40">vector are less</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1c0069" x="0" y="89">like each other</tspan>
+        </text>
+      </g>
+      <g id="Line_13">
+        <path d="M 404.5469 419.73256 C 398.3748 403.5285 395.8315 379.5883 414.8148 353 C 422.2215 342.62608 432.1602 332.8925 443.2088 324" marker-start="url(#FilledArrow_Marker)" stroke="#6d2f29" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Line_14">
+        <path d="M 184.8519 420.7571 C 195.37124 401.73567 204.1882 371.88677 181.48148 342.5926 C 176.32218 335.93652 169.86875 329.73912 162.57419 324" marker-start="url(#FilledArrow_Marker_2)" stroke="#6d2f29" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+    </g>
+  </g>
+</svg>

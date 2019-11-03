@@ -39,7 +39,7 @@ Notes:
     - Testing set (30-40%)
  * This is done  randomly
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 2.16, "top" : 4.29, "height" : 2.61, "width" : 5.94} -->
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 2.16, "top" : 4.63, "height" : 2.61, "width" : 5.94} -->
 
 
 
@@ -85,7 +85,7 @@ Notes:
  * Then test with fold-I
  * After we have cycled through all k folds, prediction accuracies are aggregated and compared
 
-<img src="../../assets/images/machine-learning/k-fold-1.png" alt="k-fold-1" style="max-width:60%;"/> <!-- {"left" : 2.32, "top" : 4.11, "height" : 3.08, "width" : 5.61} -->
+<img src="../../assets/images/machine-learning/k-fold-1.png" alt="k-fold-1" style="max-width:60%;"/> <!-- {"left" : 1.42, "top" : 4.43, "height" : 4.07, "width" : 7.41} -->
 
 
 
@@ -96,7 +96,7 @@ Notes:
 
 ## Cross-Validation Example
 
-<img src="../../assets/images/machine-learning/Cross-Validation-1.png" alt="Cross-Validation-1.png" style="max-width:70%;"/> <!-- {"left" : 0.67, "top" : 1.02, "height" : 2.31, "width" : 8.92} -->
+<img src="../../assets/images/machine-learning/Cross-Validation-1.png" alt="Cross-Validation-1.png" style="max-width:70%;"/> <!-- {"left" : 0.36, "top" : 1.1, "height" : 2.47, "width" : 9.54} -->
 
 
  * Here we are doing a 5-fold cross validation
@@ -122,7 +122,7 @@ Notes:
 
  * Algorithm C is not desirable as its accuracy varies so much (high variance)
 
-<img src="../../assets/images/machine-learning/cross-validation-2.png" alt="Cross-Validation-1.png" style="max-width:70%;"/><!-- {"left" : 1.92, "top" : 5.32, "height" : 1.94, "width" : 6.4} -->
+<img src="../../assets/images/machine-learning/cross-validation-2.png" alt="Cross-Validation-1.png" style="max-width:70%;"/><!-- {"left" : 0.76, "top" : 5.64, "height" : 2.65, "width" : 8.73} -->
 
 
 ---
@@ -153,9 +153,9 @@ Notes:
 
  * Randomly selecting data for training with replacement
 
- * Data points : [a, b, c, d, e ]
-    - Bootstrap selection 1 : [  b,  d,  d,   c ]
-    - Bootstrap selection 2 : [ d,  a, d,  a ]
+ * Data points: [a, b, c, d, e ]
+    - Bootstrap selection 1: [  b,  d,  d,   c ]
+    - Bootstrap selection 2: [ d,  a, d,  a ]
 
 
  * It may seem counter-intuitive to draw the same data again and again
@@ -171,7 +171,7 @@ Notes:
 
 ## Sampling Without Replacement
 
-<img src="../../assets/images/machine-learning/bootstrapping-2a.png" alt="bootstrapping-2a.png" style="width:55%;"/> <!-- {"left" : 1.5, "top" : 1.16, "height" : 5.85, "width" : 7.25} -->
+<img src="../../assets/images/machine-learning/bootstrapping-2a.png" alt="bootstrapping-2a.png" style="width:55%;"/> <!-- {"left" : 1.02, "top" : 1.51, "height" : 6.62, "width" : 8.2} -->
 
 
 
@@ -181,7 +181,7 @@ Notes:
 
 ## Sampling With Replacement (aka Bootstrapping)
 
-<img src="../../assets/images/machine-learning/bootstrapping-2b.png" alt="bootstrapping-2a.png" style="width:40%;"/> <!-- {"left" : 2.33, "top" : 1.21, "height" : 5.56, "width" : 5.59} -->
+<img src="../../assets/images/machine-learning/bootstrapping-2b.png" alt="bootstrapping-2a.png" style="width:40%;"/> <!-- {"left" : 1.66, "top" : 1.38, "height" : 6.89, "width" : 6.92} -->
 
 
 
@@ -192,7 +192,7 @@ Notes:
 
 ## Bootstrapping Example 2
 
-<img src="../../assets/images/machine-learning/bootstrapping-1.png" alt="bootstrapping-1.png" style="max-width:90%;"/> <!-- {"left" : 0.39, "top" : 1.75, "height" : 4.01, "width" : 9.48} -->
+<img src="../../assets/images/machine-learning/bootstrapping-1.png" alt="bootstrapping-1.png" style="max-width:90%;"/> <!-- {"left" : 0.39, "top" : 2.82, "height" : 4.01, "width" : 9.48} -->
 
 
 

@@ -261,7 +261,7 @@ Notes:
 <img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Stochastic.png" style="width:45%; position:absolute; top:300px; right:10px;"/>
 
 Notes:
-* By Joe pharos at the English language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=42498187
+* By Joe Pharos at the English language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=42498187
 
 ---
 ## Lab: Linear Regressions
@@ -297,7 +297,7 @@ Notes:
 * Multiple factors are needed to predict house prices
 * This is called multiple linear regression
 * Terminology note
-    - "Multivariable" would mean a vector output, not scalar
+    - "Multivariate" would mean a vector output, not scalar
 
 ---
 

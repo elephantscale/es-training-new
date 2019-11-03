@@ -5,7 +5,7 @@
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-1.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-1.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 1.48, "height" : 5.48, "width" : 8.21} -->
 
 
 Notes:
@@ -71,6 +71,8 @@ References
 | Lots of tools and algorithms. <br/>(such as logistic regression, linear discriminant analysis, classification trees, support vector machines, and more) |                              |
 | Assessing model performance is well defined (validation, cross-validation, independent test set)                                                   | Tends to be more subjective. |
 
+<!-- {"left" : 0.25, "top" : 1.4, "height" : 3.25, "width" : 9.75} -->
+
 
 Notes:
 
@@ -106,5 +108,7 @@ Notes:
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
 | Clustering          | -Analyze web clicks and segment customers. And improve their web <br/>-Analyze network traffic and isolate anomalies (potential attacks) | - K-means <br/>- Hierarchical clustering |
 | Dimension Reduction | - Par down the data to manageable set of variables (e.g Sensor data)                                                                     | - Principal Component Analysis(PCA)      |
+
+<!-- {"left" : 0.25, "top" : 1.4, "height" : 3.34, "width" : 9.75} -->
 
 Notes:

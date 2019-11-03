@@ -4,7 +4,7 @@
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-regressions-linear-1.png"  style="width:80%;" /><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-regressions-linear-1.png"  style="width:80%;" /><!-- {"left" : 1.02, "top" : 1.4, "height" : 5.48, "width" : 8.21} -->
 
 
 Notes:
@@ -20,7 +20,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
  * Do you see any correlation?
 
-<img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 4.23, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.71, "height" : 4.23, "width" : 8.21} -->
 
 
 Notes:
@@ -39,7 +39,7 @@ Notes:
 
  * This is **linear regression**!
 
-<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" alt="bill-tips-model-plot.png" style="width:50%;"/><!-- {"left" : 2.25, "top" : 2.54, "height" : 4.34, "width" : 5.74} -->
+<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" alt="bill-tips-model-plot.png" style="width:50%;"/><!-- {"left" : 1.9, "top" : 3.19, "height" : 4.88, "width" : 6.46} -->
 
 
 
@@ -51,7 +51,7 @@ Notes:
 
 ## Graph Review!
 
-<img src="../../assets/images/machine-learning/3rd-party/linear-regressions-graph-review-1.png"  style="width:50%;float:right"/><!-- {"left" : 6.8, "top" : 1.01, "height" : 3.1, "width" : 3.24} -->
+<img src="../../assets/images/machine-learning/3rd-party/linear-regressions-graph-review-1.png"  style="width:40%;float:right"/><!-- {"left" : 5.57, "top" : 1.19, "height" : 4.16, "width" : 4.35} -->
 
 *  **Y = aX + b**
 
@@ -62,8 +62,6 @@ Notes:
  * 4 - intercept
 
 
-<br/>
-
 |   |                                   |
 |---|-----------------------------------|
 | Y | Dependent variable (depends on X) |
@@ -71,7 +69,7 @@ Notes:
 | a | Slope of line                     |
 | b | Intercept (line meets y-axis)     |
 
-<!-- {"left" : 0.69, "top" : 4.24, "height" : 2.5, "width" : 5.43, "columnwidth" : [1.13, 4.3]} -->
+<!-- {"left" : 2.41, "top" : 5.84, "height" : 2.5, "width" : 5.43, "columnwidth" : [1.13, 4.3]} -->
 
 
 Notes:
@@ -83,14 +81,16 @@ Notes:
 ## Linear Regression Vocabulary
 
 
-### **Y = aX + b &nbsp;&nbsp;&nbsp;&nbsp; Y = b<sub>0</sub> + b<sub>1</sub>X**
+* **Y = aX + b   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Y = b<sub>0</sub> + b<sub>1</sub>X**
 
 | Term                   | Description                                                                   | Synonyms                                         |
 |------------------------|-------------------------------------------------------------------------------|--------------------------------------------------|
-| **Independent Variable**   | The variable used to predict the response.                                    | -X-variable <br/>-Feature <br/>-attribute                  |
-| **Response**               | The variable we are trying to predict.                                        | -Y-variable <br/>-Dependent variable <br/>-Target <br/>-Outcome |
-| **Intercept**              | The intercept of the regression line - that is, the predicted value when X= 0 | -b , b<sub>0</sub> , β<sub>0</sub>                                     |
-| **Regression coefficient** | The slope of the regression line.                                             | -Slope <br/>-parameter estimates <br/>-Weights <br/>-a , b1     |
+| **Independent Variable**   | The variable used to predict the response.                                    | -X-variable <br/>- Feature <br/>- attribute                  |
+| **Response**               | The variable we are trying to predict.                                        | -Y-variable <br/>- Dependent variable <br/>- Target <br/>- Outcome |
+| **Intercept**              | The intercept of the regression line - that is, the predicted value when X= 0 | - b , b<sub>0</sub> , β<sub>0</sub>                                     |
+| **Regression coefficient** | The slope of the regression line.                                             | - Slope <br/>- parameter estimates <br/>- Weights <br/>- a , b1     |
+
+<!-- {"left" : 0.25, "top" : 2.32, "height" : 5.01, "width" : 9.75} -->
 
 Notes:
 
@@ -100,7 +100,7 @@ Notes:
 
 ## Using Linear Regression for Tips
 
-<img src="../../assets/images/machine-learning/bill-tips-model-plot.png"  style="max-width:50%;float:right;"/><!-- {"left" : 2.35, "top" : 3.07, "height" : 4.2, "width" : 5.56} -->
+<img src="../../assets/images/machine-learning/bill-tips-model-plot.png"  style="max-width:50%;float:right;"/><!-- {"left" : 5.46, "top" : 1.89, "height" : 3.46, "width" : 4.57} -->
 
 
  * Linear regression model closely resembles algebra model
@@ -123,7 +123,7 @@ Notes:
 
 ## Calculating Linear Regression Model
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png"  style="max-width:40%;float:right;"/><!-- {"left" : 5.28, "top" : 3.91, "height" : 3.24, "width" : 4.7} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png"  style="max-width:40%;float:right;"/><!-- {"left" : 5.29, "top" : 2.2, "height" : 3.31, "width" : 4.8} -->
 
  * Here is the linear regression model coefficients for billing data
 
@@ -208,18 +208,17 @@ This is called **perfect fit**
 This is called **residual**
 
 
-<img src="../../assets/images/machine-learning/linear-regression-1a.png" alt="XXX image missing" style="width:30%;"/>
-<img src="../../assets/images/machine-learning/linear-regression-1b.png" alt="XXX image missing" style="width:30%;"/>
-<img src="../../assets/images/machine-learning/linear-regression-1c.png" alt="XXX image missing" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/linear-regression-1a.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 0.52, "top" : 3.99, "height" : 2.14, "width" : 4.18} -->
+&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1b.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 2.97, "top" : 3.99, "height" : 2.14, "width" : 4.12} -->
+&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1c.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 5.7, "top" : 3.99, "height" : 2.14, "width" : 4.02} -->
+
 
 ---
 
 
 ## Calculating Linear Regression Model
 
-<!-- TODO Shiva -->
-
-<img src="../../assets/images/machine-learning/Regressions-Generic-05.png" style="max-width:50%;float:right;"/><!-- {"left" : 4.45, "top" : 1.31, "height" : 4.89, "width" : 5.44} -->
+<img src="../../assets/images/machine-learning/Regressions-Generic-05.png" style="max-width:50%;float:right;"/><!-- {"left" : 5.51, "top" : 1.81, "height" : 4.19, "width" : 4.66} -->
 
  * Here is the linear regression model equation
 
@@ -262,9 +261,11 @@ This is called **residual**
 
 ## Evaluating Linear Regression Models
 
-<img src="../../assets/images/formulas-equations/RSS-1.png" style="width:25%;float:right;"/><!-- {"left" : 2.85, "top" : 5.25, "height" : 0.99, "width" : 4.54} -->
+<img src="../../assets/images/formulas-equations/RSS-1.png" style="width:25%;float:right;"/><!-- {"left" : 6.84, "top" : 2.15, "height" : 1.08, "width" : 3.09} -->
 
-<img src="../../assets/images/formulas-equations/RMSE-1.png" style="width:25%;float:right;clear:both;"/><!-- {"left" : 3.38, "top" : 3.14, "height" : 1.22, "width" : 3.48} -->
+<img src="../../assets/images/formulas-equations/RMSE-1.png" style="width:25%;float:right;clear:both;"/><!-- {"left" : 6.47, "top" : 4.46, "height" : 0.72, "width" : 3.32} -->
+
+
 
 * Simple measures
      - Residual Sum of Squares( **RSS** ) / Sum of the Squared Errors ( **SSE** ) / Sum of Squared Residuals ( **SSR** )
@@ -294,7 +295,7 @@ Notes:
 
  *  **r =**  **0.9522154 -** pretty strong correlation
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" style="width:50%"/><!-- {"left" : 1.55, "top" : 3.08, "height" : 3.19, "width" : 7.16} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" style="width:50%"/><!-- {"left" : 1.55, "top" : 4.12, "height" : 3.19, "width" : 7.16} -->
 
 
 Notes:
@@ -312,7 +313,7 @@ Notes:
 
  * 0 <= r<sup>2</sup> <= 1
 
-* r<sup>2</sup> = 1 : perfet fit  
+* r<sup>2</sup> = 1: perfet fit  
 Regression line passes through all data points
 
 ---
@@ -320,12 +321,12 @@ Regression line passes through all data points
 ## Evaluating Linear Regression Model: Coefficient of Determination
 
  * In our model  
-    **r<sup>2</sup> = 0.9067141 = 90.67 %**   
+    **r<sup>2</sup> = 0.9067141 = 90.67%**   
     That is a pretty good fit !
 
  * Represents the percent of the data that is the closest to the line of best fit
 
-     - So in our case : 90.67% of total variation in Y (tips) can be explained by linear relation between Y (tip) and X (bill)
+     - So in our case: 90.67% of total variation in Y (tips) can be explained by linear relation between Y (tip) and X (bill)
 
      - The rest is 'unexplained' by the model
 
@@ -338,7 +339,7 @@ https://en.wikipedia.org/wiki/Coefficient_of_determination
 
 ## Preparing Data for Linear Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Preparing-Data-for-Linear-Regression-0.png" style="max-width:70%"/><!-- {"left" : 1.02, "top" : 1.41, "height" : 5.14, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Preparing-Data-for-Linear-Regression-0.png" style="max-width:70%"/><!-- {"left" : 1.02, "top" : 2.25, "height" : 5.14, "width" : 8.21} -->
 
 
 
@@ -361,13 +362,13 @@ Notes:
 ---
 ## Preparing Data For Linear Regressions
 
- *  **Remove Collinearity**:
+ *  **Remove Collinearity:**
 
-    Linear regression will over-fit your data when you have highly correlated input variables
+    - Linear regression will over-fit your data when you have highly correlated input variables
 
- *  **Gaussian Distributions**
+ *  **Gaussian Distributions:**
 
-    Linear regression will make more reliable predictions if your input and output variables have a Gaussian distribution. Transform data (e.g. logarithmic) make their distribution more Gaussian looking for better results
+    - Linear regression will make more reliable predictions if your input and output variables have a Gaussian distribution. Transform data (e.g. logarithmic) make their distribution more Gaussian looking for better results
 
 Notes:
 
@@ -375,18 +376,18 @@ Notes:
 
 ## Lab: Linear Regressions
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" />
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" /><!-- {"left" : 7.34, "top" : 1.07, "height" : 3.62, "width" : 2.72} -->
 
- *  **Overview**:
+ *  **Overview:**
     - Practice Linear Regressions
 
- *  **Approximate Time**:
+ *  **Approximate Time:**
     - 30 mins
 
- *  **Instructions**:
-     - Instructor : Please demo this lab
+ *  **Instructions:**
+     - Instructor: Please demo this lab
      - See next few slides for sample code  in Python / R / Spark
-     - LIR-1 : Bill and Tips data
+     - LIR-1: Bill and Tips data
 
 
 Notes:

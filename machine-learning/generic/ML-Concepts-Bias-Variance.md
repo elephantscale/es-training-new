@@ -48,7 +48,7 @@ Notes:
  * Ideally target function should not change drastically from one training set to next
     - meaning that the algorithm is good at picking out the hidden underlying mapping between the inputs and the output variables
 
-<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:45%;"/> <!-- {"left" : 3.03, "top" : 4.72, "height" : 2.54, "width" : 4.2} -->
+<img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model2" style="width:45%;"/> <!-- {"left" : 2.07, "top" : 4.94, "height" : 3.69, "width" : 6.1} -->
 
 ---
 
@@ -91,6 +91,8 @@ Notes:
 | Decision Trees, k-Nearest Neighbors and Support Vector Machines 	| Linear Regression, Linear Discriminant Analysis and Logistic Regression 	|
 | More able to adopt to complex data                              	| May not be able to adopt to complex data                                	|
 
+<!-- {"left" : 0.25, "top" : 1.35, "height" : 1.69, "width" : 9.75} -->
+
 <br/>
 
 | Low Variance (good)                                                     	| High Variance (not good)                                                                      	|
@@ -99,13 +101,14 @@ Notes:
 | Parametric methods usually have low variance                            	| nonparametric machine learning algorithms that have a lot of flexibility have a high variance 	|
 | Linear Regression, Linear Discriminant Analysis and Logistic Regression 	| Decision Trees, k-Nearest Neighbors and Support Vector Machines.                              	|
 
+<!-- {"left" : 0.25, "top" : 3.49, "height" : 2.67, "width" : 9.75} -->
 
 Notes:
 
 ---
 ## Bias Variance Trade Off
 
-<img src="../../assets/images/machine-learning/Bias-Variance.png" alt="Bias-Variance.png" style="max-width:70%;"/> <!-- {"left" : 1.59, "top" : 1.5, "height" : 5.32, "width" : 7.07} -->
+<img src="../../assets/images/machine-learning/Bias-Variance.png" alt="Bias-Variance.png" style="max-width:70%;"/> <!-- {"left" : 1.59, "top" : 2.16, "height" : 5.32, "width" : 7.07} -->
 
 
 
@@ -118,7 +121,7 @@ Notes:
 
 ## Bias-Variance Trade Off
 
-<img src="../../assets/images/machine-learning/Bias-Variance-Trade-Off.png" alt="Bias-Variance-Trade-Off.png" style="max-width:70%;"/> <!-- {"left" : 1.02, "top" : 1.5, "height" : 5.32, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/Bias-Variance-Trade-Off.png" alt="Bias-Variance-Trade-Off.png" style="max-width:70%;"/> <!-- {"left" : 1.02, "top" : 2.16, "height" : 5.32, "width" : 8.21} -->
 
 
 

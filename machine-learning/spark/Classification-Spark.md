@@ -6,7 +6,7 @@
 
  * Learn classification algorithms in Spark
  * Logistic Regression
- * SVM  (Support Vector Machines)
+ * SVM (Support Vector Machines)
  * Naive Bayes
 
 Notes:
@@ -56,9 +56,11 @@ Notes:
 | maxIter   | setMaxIter(Int)     | Max number of iterations                                                                                                                                                                                                                                                                          | 100           |
 | regParam  | setRegParam(Double) | Regulation parameter                                                                                                                                                                                                                                                                              | 0.0           |
 | family    | setFamily(String)   | -binomial: Binary logistic regression with pivoting <br/>- multinomial: Multinomial logistic (softmax) regression without pivoting  <br/>- auto: Automatically select the family based on the number of classes: If numClasses == 1 OR numClasses == 2, set to binomial. Else, set to multinomial | "auto"        |
-| elasticNetPa ram | setElasticNetParam (Double) | ElasticNet mixing parameter.  Range 0 to 1.<br/>- For alpha = 0, the penalty is an L2 penalty<br/>- For alpha = 1, it is an L1 penalty<br/>- For alpha in (0,1), the penalty is a combination of L1 and L2. | 0.0  (L2)     |
+| elasticNetParam | setElasticNetParam (Double) | ElasticNet mixing parameter.  Range 0 to 1.<br/>- For alpha = 0, the penalty is an L2 penalty<br/>- For alpha = 1, it is an L1 penalty<br/>- For alpha in (0,1), the penalty is a combination of L1 and L2. | 0.0  (L2)     |
 | featuresCol      | setFeaturesCol ()           | Which column as input features                                                                                                                                                                              | features      |
 | predictionCol    | setPredictionCol ()         | Output prediction column                                                                                                                                                                                    | prediction    |
+
+<!-- {"left" : 0.16, "top" : 1.1, "height" : 7.45, "width" : 9.93, "columnwidth" : [1.45, 1.55, 5.08, 1.85]} -->
 
 Notes:
 
@@ -85,6 +87,7 @@ Notes:
 | 610          | Yes       |
 | 690          | No        |
 
+<!-- {"left" : 3.35, "top" : 3.69, "height" : 4.77, "width" : 3.55, "columnwidth" : [1.74, 1.81]} -->
 
 Notes:
 
@@ -108,7 +111,7 @@ mydata = pd.DataFrame({
             })
 credit_data = spark.createDataFrame(mydata)
 ```
-
+<!-- {"left" : 0, "top" : 1.92, "height" : 2.13, "width" : 10.25} -->
 
 Notes:
 
@@ -125,6 +128,8 @@ Notes:
  featureVector = featureVector.withColumn("label",featureVector['approved'])
  featureVector.show()
 ```
+<!-- {"left" : 0, "top" : 1.47, "height" : 1.12, "width" : 10.25} -->
+
 
 ```text
 +--------+-----+--------+-----+
@@ -146,6 +151,8 @@ Notes:
 +--------+-----+--------+-----+
 
 ```
+<!-- {"left" : 0, "top" : 3.09, "height" : 5.24, "width" : 5.94} -->
+
 
 Notes:
 
@@ -166,12 +173,14 @@ lrModel = lr.fit(featureVector)
 print("Coefficients: " + str(lrModel.coefficients))
 print("Intercept: " + str(lrModel.intercept))
 ```
+<!-- {"left" : 0, "top" : 1.36, "height" : 2.15, "width" : 10.25} -->
 
 ```text
 Coefficients: [0.00231936473739]
 Intercept: -1.697546464447156
 
 ```
+<!-- {"left" : 0, "top" : 4.1, "height" : 0.96, "width" : 6.85} -->
 
 Notes:
 
@@ -184,6 +193,7 @@ Notes:
 ```
  lrModel.summary.predictions.show()
 ```
+<!-- {"left" : 0, "top" : 1.23, "height" : 0.69, "width" : 7.82} -->
 
 ```text
 +--------+-----+--------+-----+--------------------+--------------------+----------+
@@ -205,6 +215,12 @@ Notes:
 +--------+-----+--------+-----+--------------------+--------------------+----------+
 
 ```
+
+<!-- {"left" : 0, "top" : 2.12, "height" : 3.15, "width" : 8.82} -->
+
+<br/>
+<br/>
+<br/>
 
  *  **Question for the class:** Notice when the prediction differs from actual ('approved')
 
@@ -229,12 +245,14 @@ Notes:
  plt.title("ROC Curve")
  plt.plot([0.0, 1.0], [0.0, 1.0], 'r')
 ```
+<!-- {"left" : 0, "top" : 1.29, "height" : 2.95, "width" : 10.25} -->
 
- <img src="../../assets/images/machine-learning/college-admission-spark-ROC-1.png" style="width:40%;float:right;"/>
+ <img src="../../assets/images/machine-learning/college-admission-spark-ROC-1.png" style="width:40%;float:right;"/><!-- {"left" : 4.56, "top" : 4.89, "height" : 3.86, "width" : 5.4} -->
+
 
  * Here AUC = 0.857
 
- * Pretty good !
+ * Pretty good!
 
 
 
@@ -258,6 +276,8 @@ predicted = lrModel.transform(newfeatures)
 predicted.show(10, False)
 
 ```
+<!-- {"left" : 0, "top" : 1.02, "height" : 1.56, "width" : 6.36} -->
+
 
 ```text
    score
@@ -275,9 +295,12 @@ predicted.show(10, False)
 +-----+--------+--------------------+--------------------+----------+
 
 ```
+<!-- {"left" : 0, "top" : 2.7, "height" : 2.13, "width" : 6.4} -->
 
- * TODO : verify this credit score 600 has only 14% (probability 0.14) chance of getting approved
+<br/>
+<br/>
 
+ * TODO: verify this credit score 600 has only 14% (probability 0.14) chance of getting approved
  * credit score of 810 has 93% chance of approval
 
 Notes:
@@ -310,6 +333,7 @@ lrModel = lr.fit(featureVector)
 print("Coefficients: " + str(lrModel.coefficients))
 print("Intercept: " + str(lrModel.intercept))
 ```
+<!-- {"left" : 0, "top" : 1.39, "height" : 4.39, "width" : 10.25} -->
 
 Notes:
 
@@ -319,7 +343,8 @@ Notes:
 
 ## Lab: Logistic Regression
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;"/><!-- {"left" : 6.45, "top" : 1.39, "height" : 4.36, "width" : 3.27} -->
+
 
 ---
 
@@ -336,7 +361,7 @@ Notes:
 ## SVM Support in Spark
 
 
- * Implemented by  **pyspark.ml.classification.LinearSVC**    (python) **org.apache.spark.ml.classification.LinearSVC**   (Scala)
+ * Implemented by  **pyspark.ml.classification.LinearSVC** (python) **org.apache.spark.ml.classification.LinearSVC**   (Scala)
 
  * Currently supports binary classification.
 
@@ -364,6 +389,7 @@ Notes:
 | predictionCol    | Output  prediction column                                        | "prediction"  |
 | labelCol         | Label  Column                                                    | "label"       |
 
+<!-- {"left" : 0.25, "top" : 1.42, "height" : 6.24, "width" : 9.75} -->
 
 Notes:
 
@@ -386,6 +412,8 @@ Notes:
  print("Coefficients: " + str(lsvcModel.coefficients))
  print("Intercept: " + str(lsvcModel.intercept))
  ```
+<!-- {"left" : 0, "top" : 1.39, "height" : 3.96, "width" : 10.25} -->
+
 
 Notes:
 
@@ -395,6 +423,7 @@ Notes:
 ---
 
 ## Model Evaluation Sample Code (Python)
+
 ```python
 from pyspark.ml.evaluation import MultiClassClassificationEvaluator  
 
@@ -408,7 +437,7 @@ accuracy = evaluator.evaluate(predictions)
 print("Accuracy = %g " , accuracy)
 # 0.76
 ```
-<!-- {"left" : 0, "top" : 0.9, "height" : 2.13, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.44, "height" : 2.13, "width" : 10.25} -->
 
 Notes:
 
@@ -420,7 +449,7 @@ Notes:
 ## Lab: SVM
 
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;"/><!-- {"left" : 6.45, "top" : 1.39, "height" : 4.36, "width" : 3.27} -->
 
 
 ---
@@ -456,7 +485,7 @@ Notes:
 | predictionCol | Output prediction column             | "prediction"      |
 | labelCol      | Label Column                         | "label"           |
 
-
+<!-- {"left" : 0.25, "top" : 1.52, "height" : 3.19, "width" : 9.75} -->
 Notes:
 
 
@@ -476,6 +505,7 @@ dataset = spark.read.format("csv").\
 dataset.printSchema()
 dataset.show()
 ```
+<!-- {"left" : 0, "top" : 1.29, "height" : 2.9, "width" : 9.11} -->
 
 ```text
 root
@@ -491,6 +521,7 @@ root
  |   ham|U dun say so earl...|
 
 ```
+<!-- {"left" : 0, "top" : 4.57, "height" : 3.49, "width" : 6.94} -->
 
 ---
 ## Naive Bayes in Spark ML (Python) - SPAM classification
@@ -514,6 +545,7 @@ featureVector2 = idfModel.transform(featurizedData)
 featureVector2.show()
 
 ```
+<!-- {"left" : 0, "top" : 1.67, "height" : 3.02, "width" : 10.25} -->
 
 ```text
 +------+--------------------+--------------------+--------------------+--------------------+
@@ -523,6 +555,7 @@ featureVector2.show()
 |   ham|Ok lar... Joking ...|[ok, lar..., joki...|(2000,[20,484,131...|(2000,[20,484,131...|
 |  spam|Free entry in 2 a...|[free, entry, in,...|(2000,[30,128,140...|(2000,[30,128,140...|
 ```
+<!-- {"left" : 0, "top" : 5.44, "height" : 1.29, "width" : 10.25} -->
 
 ---
 
@@ -530,7 +563,7 @@ featureVector2.show()
 
 ```python
 
-## Step 3 : Shape / index data
+## Step 3: Shape / index data
 
 from pyspark.ml.feature import StringIndexer
 
@@ -540,6 +573,7 @@ indexed.select(['text', 'isspam', 'label', 'features']).show()
 
 (train, test) = indexed.randomSplit([.8, .2])
 ```
+<!-- {"left" : 0, "top" : 1.53, "height" : 2.7, "width" : 10.25} -->
 
 ```text
 +--------------------+------+-----+--------------------+
@@ -550,6 +584,7 @@ indexed.select(['text', 'isspam', 'label', 'features']).show()
 |Free entry in 2 a...|  spam|  1.0|(2000,[30,128,140...|
 |U dun say so earl...|   ham|  0.0|(2000,[57,372,381...|
 ```
+<!-- {"left" : 0, "top" : 4.85, "height" : 2.32, "width" : 10.25} -->
 
 ---
 ## Naive Bayes in Spark ML (Python) - SPAM classification
@@ -571,8 +606,8 @@ evaluator = MulticlassClassificationEvaluator(labelCol="label",
 print("Test set accuracy = " , evaluator.evaluate(predictions))
 ## 0.86
 ```
+<!-- {"left" : 0, "top" : 1.6, "height" : 3.99, "width" : 10.25} -->
 
 
 Notes:
 
----

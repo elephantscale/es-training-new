@@ -23,16 +23,19 @@ Notes:
  * Output is what are trying to predict
 
  * The following is an example
-    - Inputs : Bedrooms, Bathrooms, Size
-    - Output : Sale Price
+    - Inputs: Bedrooms, Bathrooms, Size
+    - Output: Sale Price
 
-| Bedrooms <br/>(input 1) | Bathrooms <br/>(input 2) | Size sqft <br/>(input 3) | Sale Price (in thousands) <br/>(we are trying to predict) |
+| Bedrooms (input 1) | Bathrooms (input 2) | Size sqft (input 3) | Sale Price (in thousands)(we are trying to predict) |
 |--------------------|---------------------|----------------|------------------------------------------------------|
 | 3                  | 1                   | 1500           | 230                                                  |
 | 3                  | 2                   | 1800           | 320                                                  |
 | 5                  | 3                   | 2400           | 600                                                  |
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
+
+<!-- {"left" : 0.25, "top" : 4.01, "height" : 3.19, "width" : 9.75, "columnwidth" : [1.83, 1.94, 1.74, 4.25]} -->
+
 
 ---
 
@@ -69,7 +72,7 @@ Notes:
 
 ## Class Quiz: Feature Selection
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 6.95, "top" : 0.93, "height" : 2.12, "width" : 3.18} -->
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 6.24, "top" : 1.14, "height" : 2.59, "width" : 3.89} -->
 
   * Assume we are evaluating a credit card application
   * **Q: What features we might consider?**
@@ -80,7 +83,7 @@ Notes:
 |-------------|------|---------|---------------------|-----|--------|----------------|-------------|
 | 1           | Joe  | 11111   | Yes                 | 24  | 45,000 | Single         | No          |
 | 2           | Jane | 22222   | No                  | 34  | 84,000 | Married        | Yes         |
-<!-- {"left" : 0.25, "top" : 4.72, "height" : 2.11, "width" : 9.75, "columnwidth" : [1.22, 1.22, 1.22, 1.22, 1.22, 1.22, 1.22, 1.22]} -->
+<!-- {"left" : 0.13, "top" : 4.72, "height" : 2.58, "width" : 10, "columnwidth" : [1.25, 1.01, 1.32, 1.61, 1.15, 1.23, 1.21, 1.21]} -->
 
 
 Notes:
@@ -98,10 +101,10 @@ Notes:
   |-------------|------|---------|---------------------|-----|--------|----------------|-------------|
   | 1           | Joe  | 11111   | Yes                 | 24  | 45,000 | Single         | No          |
   | 2           | Jane | 22222   | No                  | 34  | 84,000 | Married        | Yes         |
-<!-- {"left" : 0.26, "top" : 2.79, "height" : 2.39, "width" : 9.74, "columnwidth" : [1.32, 0.94, 1.29, 1.5, 0.75, 1.08, 1.29, 1.57]} -->
+<!-- {"left" : 0.26, "top" : 3.21, "height" : 2.39, "width" : 9.74, "columnwidth" : [1.32, 0.94, 1.29, 1.5, 0.75, 1.08, 1.29, 1.57]} -->
 
 
-<img src="../../assets/images/machine-learning/Feature-Extraction.png" alt="Feature-Extraction" style="width:30%;"/> <!-- {"left" : 4.14, "top" : 5.32, "height" : 0.45, "width" : 1.97} -->
+<img src="../../assets/images/machine-learning/Feature-Extraction.png" alt="Feature-Extraction" style="width:30%;"/> <!-- {"left" : 3.23, "top" : 5.89, "height" : 0.87, "width" : 3.79} -->
 
 
 |             |      |         | Age | Income | Marital Status | Owns a Home |
@@ -109,7 +112,7 @@ Notes:
 |             |      |         | 24  | 45,000 | Single         | No          |
 |             |      |         | 34  | 84,000 | Married        | Yes         |
 
-<!-- {"left" : 1.02, "top" : 5.87, "height" : 1.51, "width" : 8.2, "columnwidth" : [0.5, 0.5, 0.5, 1.09, 1.82, 1.82, 1.82]} -->
+<!-- {"left" : 1.02, "top" : 7.15, "height" : 1.51, "width" : 8.2, "columnwidth" : [0.5, 0.5, 0.5, 1.09, 1.82, 1.82, 1.82]} -->
 
 
 
@@ -140,7 +143,7 @@ Notes:
  * Categorical Variables are essentially structured data, despite being strings.
  * Unstructured data would include things like: documents, emails, tweets
 
-<img src="../../assets/images/machine-learning/Categorical-Variables.png" alt="Categorical-Variables" style="width:60%;"/> <!-- {"left" : 0.26, "top" : 5.16, "height" : 1.64, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/Categorical-Variables.png" alt="Categorical-Variables" style="width:60%;"/> <!-- {"left" : 0.26, "top" : 5.52, "height" : 1.64, "width" : 9.74} -->
 
 
 
@@ -171,7 +174,8 @@ Notes:
     - Numbers are more efficient to store
     - And compute!
 
-<img src="../../assets/images/machine-learning/factorization-3.png" alt="factorization" style="max-width:70%"/>  
+<img src="../../assets/images/machine-learning/factorization-3.png" alt="factorization" style="max-width:70%"/><!-- {"left" : 1.02, "top" : 4.38, "height" : 3.11, "width" : 8.21} -->
+
 
 
 Notes:
@@ -187,9 +191,8 @@ Notes:
  * This can lead to surprising outcomes
  * We can fix this by 'one-hot-encoding' method
 
+<img src="../../assets/images/machine-learning/factorization-3.png" alt="Factorization" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 4.09, "height" : 3.11, "width" : 8.21} -->
 
-
-<img src="../../assets/images/machine-learning/factorization-3.png" alt="Factorization" style="max-width:60%;"/>
 
 
 Notes:
@@ -204,7 +207,7 @@ Notes:
     - Note, only one bit is on
     - This is called **ONE-HOT-Encoding**
 
-<img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="max-width:90%;"/><!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="max-width:90%;"/><!-- {"left" : 0.52, "top" : 4.55, "height" : 2.9, "width" : 9.21} -->
 
 
 Notes:
@@ -222,7 +225,7 @@ Notes:
  * This might allow our models to make inferences
     - e.g., Orange is close to red on the spectrum, but more distant from violet.
 
-<img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:50%;"/><!-- {"left" : 2.76, "top" : 5.42, "height" : 2, "width" : 4.73} -->
+<img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:50%;"/><!-- {"left" : 1.83, "top" : 5.97, "height" : 2.79, "width" : 6.59} -->
 
 
 
@@ -250,9 +253,9 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 | San Francisco  | 1,000 k (1 M) |
 | Gilroy         | 700 k         |
 
-<!-- {"left" : 0.49, "top" : 3.62, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
+<!-- {"left" : 0.49, "top" : 4.95, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
 
-<img src="../../assets/images/machine-learning/feature-envgineering-1.png" alt="feature-envgineering" style="max-width:30%;"/> <!-- {"left" : 4.35, "top" : 3.59, "height" : 2.64, "width" : 5.47} -->
+<img src="../../assets/images/machine-learning/feature-envgineering-1.png" alt="feature-envgineering" style="max-width:30%;"/> <!-- {"left" : 4.33, "top" : 4.64, "height" : 2.64, "width" : 5.47} -->
 
 
 
@@ -262,7 +265,7 @@ Notes:
 
 ## Converting Word to Vectors
 
-<img src="../../assets/images/machine-learning/word-to-vectors-1.png" alt="word-to-vectors" style="max-width:100%;"/> <!-- {"left" : 0.3, "top" : 1.07, "height" : 5.36, "width" : 9.66} -->
+<img src="../../assets/images/machine-learning/word-to-vectors-1.png" alt="word-to-vectors" style="max-width:100%;"/> <!-- {"left" : 0.29, "top" : 1.85, "height" : 5.36, "width" : 9.66} -->
 
 
 
@@ -278,26 +281,27 @@ Notes:
 ## Scaling
  * Usually data needs to be cleaned up and transformed before creating features
  * In the data below, we see **age** and **income** are in two different scales
-    - age : ranges from 33 - 60
+    - age: ranges from 33 - 60
     - income ranges from 32,000  to 120,000
  * Some algorithms will yield better results if these different ranges can be scaled to a uniform range
     - Remove high magnitude data
 
-<img src="../../assets/images/machine-learning/scaling-1.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/scaling-1.png" style="width:50%;"/><!-- {"left" : 1.5, "top" : 5.43, "height" : 3.09, "width" : 7.26} -->
+
 
 ---
 ## Scaling Approaches
 
-<!-- TODO: Shiva -->
+<img src="../../assets/images/formulas-equations/scaling-z-score-1.png" style="width:25%;float:right;"/><!-- {"left" : 7.06, "top" : 1.26, "height" : 2.16, "width" : 2.89} -->
 
-<img src="../../assets/images/formulas-equations/scaling-z-score-1.png" style="width:25%;float:right;"/><!-- {"left" : 4.2, "top" : 4.73, "height" : 0.34, "width" : 1.84} -->
 
 * Z-Scoring:
     - Subtract mean and divide standard deviation
 
 <br clear="all" />
 
-<img src="../../assets/images/formulas-equations/scaling-min-max-1.png" style="width:25%;float:right;"/>
+<img src="../../assets/images/formulas-equations/scaling-min-max-1.png" style="width:25%;float:right;"/><!-- {"left" : 5.54, "top" : 4.08, "height" : 1.48, "width" : 4.63} -->
+
 
 * Min-Max Scaling
     - Scale between a range (0 to 1   or 1 to 100)
@@ -310,25 +314,28 @@ Notes:
 
 ## Scaling Example
 
+<br/>
+
 ```python
 import pandas as pd
-
 data = pd.DataFrame ( { 'age' : [33,45,42,35,60],
                         'income' : [40000,80000,120000,32000,110000]
                     })
-
 ## z-score scaling
 data_scaled_z =  (data - data.mean()) / data.std()
-
 ## min-max scaling
 data_scaled_mm = (data - data.min()) / (data.max() - data.min())
 ```
+<!-- {"left" : 0, "top" : 1.12, "height" : 2.03, "width" : 10.25} -->
+
+
 
 - Here our original data (left) , z-scaling (middle) is on a uniform distribution;   and min-max scale (right) is between 0 to 1.0
 
-<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/>
-<img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/>
-<img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/>
+<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.14, "top" : 5.25, "height" : 3.46, "width" : 3.42} --> <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 6.49, "top" : 5.38, "height" : 3.46, "width" : 3.62} -->
+
+
+
 
 ---
 ## Scaling Example 2
@@ -348,10 +355,11 @@ data['age_z'] = (data['age'] - data['age'].mean()) / data['age'].std()
 data['income_z'] = (data['income'] - data['income'].mean()) / data['income'].std()
 data
 ```
-<!-- TODO shiva -->
+<!-- {"left" : 0, "top" : 1.28, "height" : 2.22, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/scaling-1.png" style="width:35%;float:left;"/>
-<img src="../../assets/images/machine-learning/scaling-2.png" style="width:50%;float:right;"/>
+
+<img src="../../assets/images/machine-learning/scaling-1.png" style="width:35%;float:left;"/><!-- {"left" : 0.17, "top" : 4.82, "height" : 1.97, "width" : 4.64} --><img src="../../assets/images/machine-learning/scaling-2.png" style="width:50%;float:right;"/><!-- {"left" : 4.81, "top" : 4.92, "height" : 2.1, "width" : 5.3} -->
+
 
 
 Notes:
@@ -359,7 +367,7 @@ Notes:
 ---
 
 
-## Lab : Exploratory Data Analysis (EDA)
+## Lab: Exploratory Data Analysis (EDA)
 
  * **Overview:**
     - Analyze house sales data
@@ -376,7 +384,7 @@ Notes:
 
 ---
 
-## Bonus Lab : Feature Engineering
+## Bonus Lab: Feature Engineering
 
  * **Overview:**
     - Feature engineering exercises
@@ -391,4 +399,3 @@ Notes:
 Notes:
 
 
----

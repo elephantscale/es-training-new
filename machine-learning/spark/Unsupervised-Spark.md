@@ -69,6 +69,8 @@ Notes:
  println("Cluster Centers: ")
  model.clusterCenters.foreach(println)
 ```
+<!-- {"left" : 0, "top" : 2.88, "height" : 3.19, "width" : 9.11} -->
+
 
 Notes:
 
@@ -86,6 +88,9 @@ Notes:
 | Epsilon   | **setEpsilon** (epsilon: Double)                       | Set the distance threshold within which we've considered centers to have converged. If all centers move less than this Euclidean distance, we stop iterating one run | 1e-4          |
 | maxIter   | **setMaxIterations** (maxIterations: Int)              | How many iterations                                                                                                                                                  | 20            |
 | Seed      | **setSeed** (seed: Long)                               | Initial seed setting                                                                                                                                                 |               |
+
+
+<!-- {"left" : 0.13, "top" : 1.17, "height" : 7.39, "width" : 9.99, "columnwidth" : [1.38, 1.76, 4.62, 2.23]} -->
 
 Notes:
 
@@ -127,6 +132,9 @@ Notes:
   predicted.sort("prediction").show(32,false)
   predicted.sort("prediction", "mpg").show(32,false)
 ```
+
+<!-- {"left" : 0, "top" : 1.16, "height" : 5.02, "width" : 10.25} -->
+
 Notes:
 
 
@@ -135,7 +143,7 @@ Notes:
 
 ## Spark ML Kmeans API - Python
 
-- class : __pyspark.ml.clustering.Kmeans__
+- class: __pyspark.ml.clustering.Kmeans__
 
 ```python
 pyspark.ml.clustering.Kmeans (self,     
@@ -148,6 +156,7 @@ pyspark.ml.clustering.Kmeans (self,
         maxIter=20,     
         seed=None)
 ```
+<!-- {"left" : 0, "top" : 1.89, "height" : 2.9, "width" : 7.44} -->
 
 
 Notes:
@@ -165,9 +174,10 @@ Notes:
 | k             | Number of clusters                                                                                                                                        | 2             |
 | initMode      | How to initialize cluster centers.<br/> Possible values: <br/>- "random" : choose random points<br/>- "k-means" : to use a parallel variant of k-means++' | k-means       |
 | initSteps     | TODO                                                                                                                                                      | 2             |
-| tol           | Threshold indicating   the convergence o fclusters                                                                                                        | 1e-4          |
+| tol           | Threshold indicating   the convergence of clusters                                                                                                        | 1e-4          |
 | maxIter       | How many iterations                                                                                                                                       | 20            |
 | seed          | Initial seed setting                                                                                                                                      |               |
+
 
 Notes:
 
@@ -199,7 +209,8 @@ print(wssse)
 
 predictions =  model.transform(featureVector)
 predictions.show()
- ```
+```
+<!-- {"left" : 0, "top" : 1.21, "height" : 4.66, "width" : 10.25} -->
 
 Notes:
 
@@ -227,6 +238,7 @@ Python
     Script Mode
       $ bin/pyspark   kmeans-script.py
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 5.24, "width" : 8.94} -->
 
 Notes:
 
@@ -244,6 +256,7 @@ Notes:
 [15.899999999999999,7.555555555555555]
 
 ```
+<!-- {"left" : 0, "top" : 1.25, "height" : 1.44, "width" : 7.28} -->
 
 
 ```console
@@ -264,6 +277,8 @@ Notes:
 +-------------------+----+---+----------+----------+
 
 ```
+<!-- {"left" : 0, "top" : 3.03, "height" : 4.65, "width" : 9.44} -->
+
 
 Notes:
 
@@ -283,7 +298,7 @@ Notes:
 -   __Question for class__:  
  At  k=32  we have achieved  WSSSE=0 , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/kmeans-11-wssse.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 3.44, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.18, "height" : 3.5, "width" : 8.21} -->
 
 
 
@@ -323,7 +338,7 @@ k= 4
    k=4, wssse=140.88452380952572
 
 ```
-<!-- {"left" : 0, "top" : 4.9, "height" : 1.86, "width" : 6.11} -->
+<!-- {"left" : 0, "top" : 5.47, "height" : 1.86, "width" : 6.11} -->
 
 
 Notes:
@@ -356,6 +371,7 @@ val featureVector = assembler.transform(dataset2)
 val kmeans = new KMeans().....
 val model = kmeans.fit(featureVector)
 ```
+<!-- {"left" : 0, "top" : 1.69, "height" : 2.03, "width" : 9.44} -->
 
 ```
 WARN KMeans: `The input data is not directly cached`,    
@@ -370,6 +386,7 @@ com.github.fommil.netlib.NativeRefBLAS
 WARN KMeans: The input data was not directly cached,  
 which may hurt performance if its parent RDDs are also uncached.
 ```
+<!-- {"left" : 0, "top" : 4.34, "height" : 3.12, "width" : 10.25} -->
 
 Notes:
 
@@ -399,18 +416,18 @@ Notes:
 ## Lab: K-Means in Spark
 
 
-   * **Overview** :  
+   * **Overview:**
         K-Means in Spark
 
-   * **Approximate time** :   
+   * **Approximate time:**  
         30-40 mins
 
-   * **Instructions** :
+   * **Instructions:**
      - KMEANS-1 lab (mtcars)
 
-     - KMEANS-2 : Uber trips
+     - KMEANS-2: Uber trips
 
-     - Bonus Lab : KMEANS-3 : Walmart shopping data
+     - Bonus Lab: KMEANS-3: Walmart shopping data
 
 
 
@@ -431,11 +448,11 @@ Notes:
 
 ## PCA in Spark ML
 
-- Class : __pyspark.ml.feature.PCA__
+- Class: __pyspark.ml.feature.PCA__
 
 ---
 
-## PCA in Spark ML : Sample Code (Python)
+## PCA in Spark ML: Sample Code (Python)
 
 ```python
 from pyspark.ml.feature import PCA
@@ -461,10 +478,11 @@ model = pca.fit(fv_scaled)
 pca_features = model.transform(fv_scaled).select("pcaFeatures")
 
 ```
+<!-- {"left" : 0, "top" : 1.53, "height" : 5.14, "width" : 10.25} -->
 
 ---
 
-## PCA in Spark ML : Sample Code (Python)
+## PCA in Spark ML: Sample Code (Python)
 
 - Here with 5 Principal Components we are getting 79% coverage! (not bad considering original dataset had 11 features)
 
@@ -475,15 +493,18 @@ print(variance)
 print ("Original data had {} features,  principal components {}".format(len(data2.columns), num_pc))
 print("Cumulative Explained Variance: " + str(np.cumsum(variance)[-1]))
 ```
+<!-- {"left" : 0, "top" : 2.69, "height" : 1.02, "width" : 10.25} -->
 
 ```
 [0.28 0.18 0.14 0.11 0.09]
 Original data had 11 features,  principal components 5
 Cumulative Explained Variance: 0.7952827473412729
 ```
+<!-- {"left" : 0, "top" : 3.96, "height" : 1.15, "width" : 9.78} -->
+
 ---
 
-## PCA in Spark ML : Sample Code (Python)
+## PCA in Spark ML: Sample Code (Python)
 
 - Correlation matrix for PC components should be mostly zero (remember these Eigen vectors are orthogonal to each other!)
 
@@ -500,6 +521,7 @@ np.set_printoptions(precision=2, suppress=True)
 print(corr_pc_nparr)
 
 ```
+<!-- {"left" : 0, "top" : 2.36, "height" : 2.82, "width" : 10.25} -->
 
 ```
 Correlation Matrtix for Principal Components
@@ -509,10 +531,11 @@ Correlation Matrtix for Principal Components
  [-0.  0.  0.  1. -0.]
  [ 0.  0.  0. -0.  1.]]
 ```
+<!-- {"left" : 0, "top" : 5.54, "height" : 2.03, "width" : 8.11} -->
 
 ---
 
-## PCA in Spark ML : Sample Code (Python)
+## PCA in Spark ML: Sample Code (Python)
 
 ```python
 import matplotlib.pyplot as plt
@@ -530,22 +553,25 @@ leg = plt.legend(['Explained Variance'], loc='best', borderpad=0.3,
                  markerscale=0.4)
 
 ```
+<!-- {"left" : 0, "top" : 1.16, "height" : 2.67, "width" : 10.25} -->
 
-<img  src="../../assets/images/machine-learning/PCA-screeplot-1.png" style="width:34%;"/>
+<img  src="../../assets/images/machine-learning/PCA-screeplot-1.png" style="width:34%;"/><!-- {"left" : 1.79, "top" : 4.11, "height" : 4.43, "width" : 6.67} -->
+
+
 
 ---
 
-## LAB : PCA in Spark ML
+## LAB: PCA in Spark ML
 
 
  *  **Overview**  
-    Reduce data dimension with PCA
+    - Reduce data dimension with PCA
 
  *  **Approximate Time**  
-    30 mins
+    - 30 mins
 
  *  **Instructions**  
-    Follow  appropriate Python, R, or Scala instructions
+    - Follow  appropriate Python, R, or Scala instructions
 
 
 Notes:

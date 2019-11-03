@@ -8,6 +8,8 @@
 | Classification - produces 'discrete' or 'qualitative' 	| Spam or not                                 	|**Features**<br/>(email text, origin IP address)        	|**Label**<br/>(Spam / Not-Spam)                  |
 | Regression - produces 'continuous' or 'quantitative'  	| Weather forecasting, predicting temperature 	|**Variables**<br/>(current temperature, pressure ..etc) 	|**Target**<br/>(predicted temperature -50.5 ' F) 	|
 
+<!-- {"left" : 0.25, "top" : 1.55, "height" : 2.75, "width" : 9.75} -->
+
 
 Notes:
 
@@ -63,7 +65,9 @@ Use https://www.epochconverter.com/ to easily convert unix time and human readab
 
  * Self driving cars
 
-<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%;">
+<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%;"><!-- {"left" : 0.64, "top" : 4.31, "height" : 2.88, "width" : 4.33} -->
+ &nbsp;&nbsp;&nbsp;&nbsp; <img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%;"><!-- {"left" : 5.3, "top" : 4.31, "height" : 2.88, "width" : 4.31} -->
+
 
 Notes:
 
@@ -157,7 +161,7 @@ SqFtLot           -0.07457      0.05472  -1.363                0.173
 
 ---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
-<!-- {"left" : 0, "top" : 1.19, "height" : 2.55, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.1, "height" : 2.55, "width" : 10.25} -->
 
 
  * Adding one extra 'sqftTotLiving' space increases the house price by $277.85
@@ -194,7 +198,7 @@ SqFtLot           -0.07457      0.05472  -1.363                0.173
 ---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 ```
-<!-- {"left" : 0, "top" : 1.19, "height" : 2.55, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.1, "height" : 2.55, "width" : 10.25} -->
 
   * Question for class:
      - Interpret parameters for 'Bedrooms'
@@ -224,6 +228,7 @@ step <- stepAIC(house.lm.full, direction="both")
 
 step
 ```
+<!-- {"left" : 0, "top" : 1.27, "height" : 2.5, "width" : 10.25} -->
 
 Notes:
 
@@ -241,6 +246,7 @@ house.lm.full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms +
                                 YrBuilt + YrRenovated + NewConstruction,
                     data=house.prices, na.action=na.omit)
 ```
+<!-- {"left" : 0, "top" : 4.03, "height" : 1.01, "width" : 10.25} -->
 
 ```R
 
@@ -258,6 +264,7 @@ Coefficients:
                   77562.844                      8.153                  -3286.098
        NewConstructionTRUE                   7886.546  
 ```
+<!-- {"left" : 0, "top" : 5.53s, "height" : 2.66, "width" : 10.25} -->
 
  *  **stepAIC**  has come up with a new formula
 

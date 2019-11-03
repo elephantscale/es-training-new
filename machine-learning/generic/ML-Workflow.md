@@ -4,7 +4,7 @@
 
 ## Machine Learning Process
 
-<img src="../../assets/images/machine-learning/ML-Process.png"  style="max-width:90%;"/><!-- {"left" : 1.02, "top" : 1.92, "height" : 4.13, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/ML-Process.png"  style="max-width:90%;"/><!-- {"left" : 1.02, "top" : 2.47, "height" : 4.13, "width" : 8.21} -->
 
 
 
@@ -26,7 +26,7 @@
 
 ## Machine Learning Process: Step 1: Data Exploration
 
-<img src="../../assets/images/machine-learning/ML-Process-02.png" style="max-width:90%;"/><!-- {"left" : 0.53, "top" : 1.68, "height" : 4.62, "width" : 9.19} -->
+<img src="../../assets/images/machine-learning/ML-Process-02.png" style="max-width:90%;"/><!-- {"left" : 0.53, "top" : 2.22, "height" : 4.62, "width" : 9.19} -->
 
 
 ---
@@ -36,7 +36,7 @@
 
 ## Machine Learning Process: Step 2: Developing a Model
 
-<img src="../../assets/images/machine-learning/ML-Process-03.png"  style="max-width:90%;"/><!-- {"left" : 0.81, "top" : 1.81, "height" : 4.35, "width" : 8.64} -->
+<img src="../../assets/images/machine-learning/ML-Process-03.png"  style="max-width:90%;"/><!-- {"left" : 0.81, "top" : 2.36, "height" : 4.35, "width" : 8.64} -->
 
 
 ---
@@ -46,7 +46,7 @@
 * We want to predict MPG of a car
 * What attributes to consider?
 
-<img src="../../assets/images/machine-learning/Sample-Cars.png" alt="Sample-Cars" style="width:70%;"/> <!-- {"left" : 0.39, "top" : 2.08, "height" : 4.71, "width" : 9.48} -->
+<img src="../../assets/images/machine-learning/Sample-Cars.png" alt="Sample-Cars" style="width:70%;"/> <!-- {"left" : 0.39, "top" : 2.47, "height" : 4.71, "width" : 9.48} -->
 
 
 
@@ -56,7 +56,7 @@ Notes:
 
 ## Sample Model for Predicting MPG
 
-<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:70%;"/> <!-- {"left" : 0.26, "top" : 1.05, "height" : 6.03, "width" : 9.73} -->
+<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:70%;"/> <!-- {"left" : 0.49, "top" : 1.66, "height" : 5.74, "width" : 9.26} -->
 
 
 
@@ -123,10 +123,12 @@ Notes:
 
 |               | Parametric                                                                                  | Non Parametric                                                                                                                                          |
 |---------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Advantages    | - Simpler <br/>- Very fast to learn from data <br/>- Don't required, a lot of training data | -Flexible: can adopt to complex data, <br/>-No assumptions about underlying function, <br/>-good prediction performance                                 |
-| Disadvantages | - limited by function <br/>- Can not adopt to complex data - Can underfit                   | -Complex to understand and explain, <br/>-Require more data for learning,<br/>-Slower to train as they have more parameters to tweak, <br/>-Canover-fit |
-| Algorithms    | - Linear Regression <br/>- Logistic Regression <br/>- Linear Discriminant Analysis          | -Decision Trees, <br/>-Support Vector Machines, <br/>-Naïve Bayes                                                                                       |
+| Advantages    | - Simpler <br/>- Very fast to learn from data <br/>- Don't required, a lot of training data | -Flexible: can adopt to complex data, <br/>- No assumptions about underlying function, <br/>- good prediction performance                                 |
+| Disadvantages | - limited by function <br/>- Can not adopt to complex data - Can underfit                   | -Complex to understand and explain, <br/>- Require more data for learning,<br/>- Slower to train as they have more parameters to tweak, <br/>- Canover-fit |
+| Algorithms    | - Linear Regression <br/>- Logistic Regression <br/>- Linear Discriminant Analysis          | - Decision Trees, <br/>- Support Vector Machines, <br/>- Naïve Bayes                                                                                       |
 | Best for      | - small size data with previous knowledge of features                                       | when having lots of data and no prior knowledge of features                                                                                             |
+
+<!-- {"left" : 0.25, "top" : 1.06, "height" : 7.43, "width" : 9.75, "columnwidth" : [1.65, 3.57, 4.54]} -->
 
 
 Notes:
@@ -145,6 +147,7 @@ Notes:
 | Adopting to data        | simple data        | complex data      |
 | Prediction accuracy     | good               | better            |
 
+<!-- {"left" : 0.25, "top" : 1.4, "height" : 4, "width" : 9.75} -->
 
 Notes:
 
@@ -154,7 +157,7 @@ Notes:
 
 ## Machine Learning Process: Step 3: Model Evaluation
 
-<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="max-width:90%;"/><!-- {"left" : 0.91, "top" : 1.87, "height" : 4.23, "width" : 8.43} -->
+<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="max-width:90%;"/><!-- {"left" : 0.91, "top" : 2.42, "height" : 4.23, "width" : 8.43} -->
 
 
 ---
@@ -167,7 +170,7 @@ Notes:
     - Model is trained with 'training data'
     - Measure its performance on 'test data' (the model hasn't seen 'test data')
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 1.84, "top" : 4.02, "height" : 2.88, "width" : 6.57} -->
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
 
 
 
@@ -186,7 +189,7 @@ Notes:
     - Overfitting
  * One in the middle is just right
 
-<img src="../../assets/images/machine-learning/underfit-overfit-03.png" alt="underfit-overfit" style="max-width:80%;"/> <!-- {"left" : 0.26, "top" : 4.13, "height" : 3.07, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-03.png" alt="underfit-overfit" style="max-width:80%;"/> <!-- {"left" : 0.26, "top" : 5.16, "height" : 3.07, "width" : 9.74} -->
 
 
 
@@ -207,7 +210,7 @@ Notes:
  * Resolution:
     - Try a different algorithm / model, that better fits the data
 
-<img src="../../assets/images/machine-learning/underfit-overfit-01.png" alt="underfit-overfit" style="max-width:80%;"/>  <!-- {"left" : 0.83, "top" : 4.4, "height" : 2.79, "width" : 8.59} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-01.png" alt="underfit-overfit" style="max-width:80%;"/>  <!-- {"left" : 0.83, "top" : 5.38, "height" : 2.79, "width" : 8.59} -->
 
 
 
@@ -228,7 +231,7 @@ Notes:
     - Try a different algorithm / model, that better fits the data
     - Simplify inputs
 
-<img src="../../assets/images/machine-learning/underfit-overfit-02.png" alt="underfit-overfit" style="max-width:50%;"/> <!-- {"left" : 3.67, "top" : 5.07, "height" : 2.13, "width" : 6.38} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-02.png" alt="underfit-overfit" style="max-width:50%;"/> <!-- {"left" : 1.05, "top" : 5.95, "height" : 2.72, "width" : 8.16} -->
 
 
 
@@ -240,7 +243,7 @@ Notes:
 
  * In ML we strive to find the 'sweet spot' between under-fitting models and over-fitting models
 
-<img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="max-width:64%;"/> <!-- {"left" : 1.4, "top" : 1.97, "height" : 5.08, "width" : 6.96} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="max-width:64%;"/> <!-- {"left" : 1.4, "top" : 2.85, "height" : 5.08, "width" : 6.96} -->
 
 
 

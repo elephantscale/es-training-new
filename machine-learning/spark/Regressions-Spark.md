@@ -24,6 +24,8 @@
 | Linear Regression                |                                                        | org.apache.spark.ml.regression. **LinearRegression**            |
 | Generalized  Linear Models (GLM) | -  Logistic  Regression   <br /> -  Poisson Regression | org.apache.spark.ml.regression. **GeneralizedLinearRegression** |
 
+<!-- {"left" : 0.25, "top" : 1.62, "height" : 2.46, "width" : 9.75} -->
+
 Notes:
 
 
@@ -39,6 +41,7 @@ Notes:
 | elasticNetParam | setElasticNetParam (Double) | ElasticNet mixing parameter.  Range 0 to 1.<br /> - For alpha = 0, the penalty is an L2 penalty<br /> - For alpha = 1, it is an L1 penalty<br /> - For alpha in (0,1), the penalty is a combination of L1 and L2. | 0.0  (L2)     |
 | featuresCol      | setFeaturesCol ()           | Which column as input features                                                                                                                                                                                    | "features"    |
 | predictionCol    | setPredictionCol ()         | Output prediction column                                                                                                                                                                                          | "prediction"  |
+
 
 Notes:
 
@@ -72,7 +75,7 @@ Notes:
 
  * This is **linear regression**!
 
-<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" style="width:50%"><!-- {"left" : 2.24, "top" : 2.6, "height" : 4.36, "width" : 5.77} -->
+<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" style="width:50%"><!-- {"left" : 2.24, "top" : 3.2, "height" : 4.36, "width" : 5.77} -->
 
 
 Notes:
@@ -108,6 +111,8 @@ Notes:
  println(s"RMSE: ${trainingSummary.rootMeanSquaredError}")
  println(s"r2: ${trainingSummary.r2}")
 ```
+<!-- {"left" : 0, "top" : 1.15, "height" : 4.85, "width" : 10.25} -->
+
 Notes:
 
 TODO - update for tips
@@ -134,10 +139,14 @@ print(tip_data)
 spark_tips = spark.createDataFrame(tip_data)
 spark_tips.show()
 ```
+<!-- {"left" : 0, "top" : 1.07, "height" : 3.19, "width" : 10.25} -->
 
- * ** 1 **: importing Numpy and Pandas libraries
+<br/>
+<br/>
 
- * ** 2 **: Constructing a Panda dataframe and converting it into Spark dataframe
+ * **1** importing Numpy and Pandas libraries
+
+ * **2** Constructing a Panda dataframe and converting it into Spark dataframe
 
 Notes:
 
@@ -154,8 +163,9 @@ Notes:
  plt.xlabel('bill')
  plt.show()
 ```
+<!-- {"left" : 0, "top" : 1.42, "height" : 1.74, "width" : 7.61} -->
 
-<img src="../../assets/images/machine-learning/Python-2-4-Plotting-Data-0.png" style="width:50%;"/><!-- {"left" : 2.17, "top" : 2.87, "height" : 4.16, "width" : 5.91} -->
+<img src="../../assets/images/machine-learning/Python-2-4-Plotting-Data-0.png" style="width:50%;"/><!-- {"left" : 1.33, "top" : 3.66, "height" : 4.89, "width" : 6.94} -->
 
 
 Notes:
@@ -263,7 +273,7 @@ Notes:
 <!-- {"left" : 0, "top" : 1.24, "height" : 2.65, "width" : 10.25} -->
 
 
-<img src="../../assets/images/machine-learning/Model-Plot-the-regression-0.png" style="width:40%"><!-- {"left" : 3.01, "top" : 3.97, "height" : 3.19, "width" : 4.24} -->
+<img src="../../assets/images/machine-learning/Model-Plot-the-regression-0.png" style="width:40%"><!-- {"left" : 2.28, "top" : 4.22, "height" : 4.28, "width" : 5.69} -->
 
 
 Notes:
@@ -276,7 +286,7 @@ Notes:
 
  * R2 is between 0 and 1.1 is perfect fit!
 
- * Here our R2 is 0.90 -> pretty good fit !
+ * Here our R2 is 0.90 -> pretty good fit!
 
 ```python
  # Summarize the model over the training set and print out some metrics
@@ -300,7 +310,7 @@ Notes:
 
 ## Evaluating Linear Regression Model - Estimate Tip
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Evaluating-Linear-Regression-Model-Estimate-Tip-0.png" style="width:20%;float:right;"/><!-- {"left" : 4.35, "top" : 3.7, "height" : 3.19, "width" : 1.55} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Evaluating-Linear-Regression-Model-Estimate-Tip-0.png" style="width:20%;float:right;"/><!-- {"left" : 4.13, "top" : 1.23, "height" : 4.09, "width" : 1.99} -->
 
 ```python
  a = lrModel.coefficients[0]   # -0.8217112049846651
@@ -314,6 +324,7 @@ Notes:
  tip_data
 ```
 
+<!-- {"left" : 0, "top" : 5.46, "height" : 2.9, "width" : 9.28} -->
 
 
 Notes:
@@ -336,6 +347,7 @@ Notes:
  spark_tips_with_est = spark_tips.withColumn("est_tip", expr(formula))
  spark_tips_with_est.show()
 ```
+<!-- {"left" : 0, "top" : 1.24, "height" : 2.21, "width" : 9.75} -->
 
 ```text
 (bill * 0.226334605857) + -0.8217112049846651
@@ -356,6 +368,8 @@ Notes:
 +----+----+------------------+
 
 ```
+<!-- {"left" : 0, "top" : 3.66, "height" : 4.94, "width" : 8.28} -->
+
 
 Notes:
 
@@ -384,6 +398,7 @@ Notes:
 | 327,000      | 3        | 1.5       | 1,750       | 34,465   |
 | 347,000      | 4        | 1.75      | 1,860       | 14,650   |
 
+<!-- {"left" : 0.25, "top" : 1.2, "height" : 4, "width" : 9.75} -->
 
   * Multiple factors decide house prices
 
@@ -435,6 +450,7 @@ housePrices.select("SalePrice", "Bedrooms", "Bathrooms", "SqFtTotLiving", "SqFtL
 housePrices_compact.count() ## 27,063 observations
 
 ```
+<!-- {"left" : 0, "top" : 1.35, "height" : 2.68, "width" : 10.25} -->
 
 
 Notes:
@@ -468,6 +484,7 @@ Row count = 27063
 +---------+--------+---------+-------------+-------+
 
 ```
+<!-- {"left" : 0, "top" : 1.25, "height" : 5.82, "width" : 9.44} -->
 
 Notes:
 
@@ -488,6 +505,7 @@ featureVector = featureVector.withColumnRenamed("SalePrice", "label")
 featureVector.show(10,False)
 
 ```
+<!-- {"left" : 0, "top" : 1.33, "height" : 2.18, "width" : 10.25} -->
 
 
 ```text
@@ -508,6 +526,7 @@ featureVector.show(10,False)
 only showing top 10 rows
 
 ```
+<!-- {"left" : 0, "top" : 4.25, "height" : 3.37, "width" : 9.75} -->
 
 Notes:
 
@@ -528,6 +547,7 @@ print("r2: %f" % lrModel.summary.r2)
 print("numIterations: %d" % lrModel.summary.totalIterations)
 print("objectiveHistory: %s" % str(lrModel.summary.objectiveHistory))
 ```
+<!-- {"left" : 0, "top" : 1.12, "height" : 2.18, "width" : 10.25} -->
 
 ```text
 Coefficents:[-69405.457812,25714.1481078,274.458312769,-0.0]
@@ -542,10 +562,15 @@ objectiveHistory: [0.5000000000000002, 0.4565457266170319, 0.3376986997173243,
 0.26332624819112604, 0.26138384191458414, 0.25967594157902535, 0.25839392000729794]
 
 ```
+<!-- {"left" : 0, "top" : 3.47, "height" : 2.13, "width" : 9.75} -->
+
+<br/>
+<br/>
+<br/>
 
  *  **Question for the class:**
 
-    Is this model a good fit?  Explain!
+    - Is this model a good fit?  Explain!
 
 Notes:
 
@@ -569,6 +594,7 @@ new_featureVector.show(10,False)
 predicted_prices = lrModel.transform(new_featureVector)
 predicted_prices.show(10, False)
 ```
+<!-- {"left" : 0, "top" : 1.07, "height" : 3.2, "width" : 10.25} -->
 
 ```text
 # output: new_feature_vector
@@ -581,6 +607,7 @@ predicted_prices.show(10, False)
 +---------+--------+-------+-------------+------------------------+
 
 ```
+<!-- {"left" : 0, "top" : 4.44, "height" : 2.26, "width" : 10.25} -->
 
 ```text
 # output: predicted_prices
@@ -593,6 +620,7 @@ predicted_prices.show(10, False)
 +---------+--------+-------+-------------+------------------------+------------------+
 
 ```
+<!-- {"left" : 0, "top" : 6.83, "height" : 1.77, "width" : 10.25} -->
 
 Notes:
 
@@ -608,10 +636,12 @@ Notes:
 ---
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" />
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 7.66, "top" : 1.1, "height" : 1.65, "width" : 2.23} -->
+
 
 - Let's go over what we have covered so far
 
 - Any questions?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" />
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.18, "top" : 3.77, "height" : 3.93, "width" : 5.9} -->
+

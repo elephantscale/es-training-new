@@ -151,7 +151,7 @@ Image from "An introduction to Statistical Learning"  with thanks to authors
 <!-- TODO shiva  -->
 <img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
 
-- Decision Trees are implemnted as binary trees
+- Decision Trees are implemented as binary trees
 
 - Question node (years < 4.5)  is called __Test node__
 
@@ -525,7 +525,7 @@ Notes:
 ## Classification Decision Trees
 
 
- * Instead of predicting a number, predict a classification (Spam / NotSpam)
+ * Instead of predicting a number, predict a classification (Spam / Not-Spam)
 
  * In Regression Trees we use RSS (minimizing RSS) to find best regions
 
@@ -957,7 +957,7 @@ Notes:
 
  * Ad they overfit
 
- * Final Radom Forest overfits less than each individual tree
+ * Final Random Forest overfits less than each individual tree
 
 <img src="../../assets/images/machine-learning//3rd-party/Decision-Trees-Random-Forest-Example-0.png" style="width:70%"><!-- {"left" : 1.02, "top" : 2.6, "height" : 4.21, "width" : 8.21} -->
 

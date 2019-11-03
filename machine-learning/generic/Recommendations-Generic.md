@@ -21,9 +21,11 @@ Notes:
 
 ## Recommendations Are Everywhere: Amazon
 
-<img src="../../assets/images/machine-learning/3rd-party/recommendations-1-amazon.png" style="width:70%"/><!-- {"left" : 1.85, "top" : 1.09, "height" : 3.06, "width" : 6.55} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-1-amazon.png" style="width:70%"/><!-- {"left" : 1.63, "top" : 1.21, "height" : 3.27, "width" : 6.99} -->
 
- *Source: Amazon*
+
+
+* *Source: Amazon*
 
 Notes:
 
@@ -32,11 +34,11 @@ Notes:
 
 ## Recommendations by Amazon Prime
 
-<img src="../../assets/images/machine-learning/3rd-party/recommendations-2-amazon-prime.png" style="width:70%"/><!-- {"left" : 1.51, "top" : 1.01, "height" : 4.65, "width" : 7.23} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-2-amazon-prime.png" style="width:70%"/><!-- {"left" : 1.68, "top" : 1.36, "height" : 4.42, "width" : 6.88} -->
 
 
 
-*Source: Amazon*
+* *Source: Amazon*
 
 Notes:
 
@@ -48,13 +50,13 @@ Notes:
 
 ## Recommendations With Profiles by Netflix
 
-<img src="../../assets/images/machine-learning/Netflix-1.png" style="width:40%"/><!-- {"left" : 2.6, "top" : 1.02, "height" : 2.37, "width" : 5.04} -->
+<img src="../../assets/images/machine-learning/Netflix-1.png" style="width:40%"/><!-- {"left" : 1.95, "top" : 1.14, "height" : 2.99, "width" : 6.36} -->
 
 
-<img src="../../assets/images/machine-learning/3rd-party/recommendations-3-netflix.png" style="width:40%"/><!-- {"left" : 2.02, "top" : 3.65, "height" : 2.48, "width" : 6.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-3-netflix.png" style="width:40%"/><!-- {"left" : 1.15, "top" : 4.36, "height" : 3.17, "width" : 7.95} -->
 
 
- *Source: Netflix*
+* *Source: Netflix*
 
 Notes:
 
@@ -88,7 +90,7 @@ Notes:
 
  * Based on
 
-     - Past behavior : User has rated other items
+     - Past behavior: User has rated other items
 
      - Relations to other users: age group, subscribes to the same playlist, etc.
 
@@ -104,7 +106,7 @@ Notes:
 
 ## Recommendation is Two Step Process
 
-<img src="../../assets/images/machine-learning/recommendations-process.png" style="max-width:90%"/><!-- {"left" : 0.68, "top" : 1.65, "height" : 4.21, "width" : 8.88} -->
+<img src="../../assets/images/machine-learning/recommendations-process.png" style="max-width:90%"/><!-- {"left" : 0.33, "top" : 2.26, "height" : 4.55, "width" : 9.6} -->
 
 
 Notes:
@@ -118,19 +120,19 @@ Notes:
 
  *  **Collaborative Filtering:** recommend items based on  **only on users past** behavior
 
-     -  **User based**: find similar users to me and recommend what they liked
+     -  **User based:** find similar users to me and recommend what they liked
 
-     -  **Item based**: find similar items to those that I have previously liked
+     -  **Item based:** find similar items to those that I have previously liked
 
- *  **Content based**: Recommend based on item features (Actor: Bruce Willis,  Genre: Action)
+ *  **Content based:** Recommend based on item features (Actor: Bruce Willis,  Genre: Action)
 
- *  **Personalized Rank**: Treat recommendations like a ranking problem
+ *  **Personalized Rank:** Treat recommendations like a ranking problem
 
- *  **Demographic**: based on user features (age, location, interests)
+ *  **Demographic:** based on user features (age, location, interests)
 
- *  **Social recommendations**: recommend friends' items (trust based)
+ *  **Social recommendations:** recommend friends' items (trust based)
 
- *  **Hybrid**: combine any of the above
+ *  **Hybrid:** combine any of the above
 
 Notes:
 
@@ -143,12 +145,15 @@ Notes:
 |                     |                                                                             |
 |---------------------|-----------------------------------------------------------------------------|
 | Traditional Methods | Collaborative Filtering                                                     |
-|                     | Content based <br/>recommendations                                               |
+|                     | - Content based <br/>- recommendations                                               |
 | Novel               | Learning to rank                                                            |
-|                     | Context aware recommendations <br/>-Tensor Factorization <br/>-Factorization Machines |
+|                     | - Context aware recommendations <br/>- Tensor Factorization <br/>- Factorization Machines |
 |                     | Deep learning                                                               |
 |                     | Similarity                                                                  |
 |                     | Social recommendations                                                      |
+
+<!-- {"left" : 0.25, "top" : 1.36, "height" : 4.67, "width" : 9.75} -->
+
 
 Notes:
 
@@ -158,7 +163,7 @@ Notes:
 
 ## Netflix Prize competition (2009)
 
-<img src="../../assets/images/machine-learning/3rd-party/netflix-prize-1.png"  style="width:20%;float:right;"/>
+<img src="../../assets/images/machine-learning/3rd-party/netflix-prize-1.png"  style="width:20%;float:right;"/><!-- {"left" : 8.65, "top" : 0.96, "height" : 0.34, "width" : 1.54} -->
 
  * Netflix Prize was an open competition for the best collaborative filtering algorithm to predict user ratings for films, based on previous ratings without any other information about the users or films
  * Target: Improve Netflix's own recommender system by at least 10%
@@ -182,7 +187,8 @@ https://en.wikipedia.org/wiki/Netflix_Prize
 
 - Can you guys spot the difference between top-2 teams in the leaderboard? :-) 
 
-<img src="../../assets/images/machine-learning/3rd-party/netflix-prize-2.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/netflix-prize-2.png" style="width:70%;"/><!-- {"left" : 1.08, "top" : 2.52, "height" : 5.62, "width" : 8.09} -->
+
 
 ---
 
@@ -191,7 +197,7 @@ https://en.wikipedia.org/wiki/Netflix_Prize
 
  * It is really  **extremely simple to produce** "reasonable" recommendations and **extremely** **difficult to improve** **them**.
 
-<img src="../../assets/images/machine-learning/3rd-party/recommendations-4-netflix-prize-findings.png" style="width:35%;margin-top:50px"/><!-- {"left" : 2.72, "top" : 2.11, "height" : 4.93, "width" : 4.81} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-4-netflix-prize-findings.png" style="width:35%;"/><!-- {"left" : 2.47, "top" : 2.57, "height" : 5.44, "width" : 5.31} -->
 
 
 Notes:
@@ -239,12 +245,12 @@ Notes:
 
  *  **Questions for the class**
 
-     - Will this be a sparse matrix or dense matrix ?
+     - Will this be a sparse matrix or dense matrix?
 
-     - How will you go about recommending movies to  **u5**  ?
+     - How will you go about recommending movies to **u5**?
 
 
-<img src="../../assets/images/machine-learning/rating-matrix-1.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 2.95, "height" : 3.97, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/rating-matrix-1.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 3.63, "height" : 3.97, "width" : 8.21} -->
 
 
 Notes:
@@ -260,11 +266,11 @@ Notes:
 
  *  **Questions for the class**
 
-     - Will this be a sparse matrix or dense matrix ?
+     - Will this be a sparse matrix or dense matrix?
 
-     - How will you go about recommending movies to  **u5**  ?
+     - How will you go about recommending movies to **u5**?
 
-<img src="../../assets/images/machine-learning/rating-matrix-2.png" style="width:60%"/><!-- {"left" : 1.77, "top" : 3.13, "height" : 3.89, "width" : 6.71} -->
+<img src="../../assets/images/machine-learning/rating-matrix-2.png" style="width:60%"/><!-- {"left" : 1.36, "top" : 3.64, "height" : 4.37, "width" : 7.53} -->
 
 
 Notes:
@@ -311,13 +317,13 @@ Notes:
 
  *  **Data Size**
 
-     - A streaming service may have100 Million users,  100,000 titles,   and say every user rates 20 movies.
+     - A streaming service may have100 Million users, 100,000 titles, and say every user rates 20 movies.
 
-     - 100 Million x 20 = 2,000 million = 2 Billion ratings !
+     - 100 Million x 20 = 2,000 million = 2 Billion ratings!
 
      - Netflix has 5 Billion ratings
 
-     - Huge matrix --> won't fit on a single machine,  need to distribute the data on a cluster
+     - Huge matrix --> won't fit on a single machine, need to distribute the data on a cluster
 
 Notes:
 
@@ -426,18 +432,14 @@ Notes:
 
 ## Similarity Between Two Users
 
-<img src="../../assets/images/machine-learning/rating-matrix-3.png" style="width:35%;float:right;"/><!-- {"left" : 6.65, "top" : 3.18, "height" : 4.01, "width" : 3.29} -->
+<img src="../../assets/images/machine-learning/rating-matrix-3.png" style="width:35%;float:right;"/><!-- {"left" : 6.03, "top" : 1.7, "height" : 4.87, "width" : 3.99} -->
 
- * Let's say we want to compare U5<br/>
-  with U1.<br/>
-  Let's imagine a matrix with just<br/>
-  two of these users and their ratings
+ * Let's say we want to compare U5 with U1. Let's imagine a matrix with just two of these users and their ratings
 
- * One approach is  **'cosine similarity**'<br/>
-  - that measures the<br/>
- similarity between vectors
+ * One approach is  **'cosine similarity**'
+  - that measures the similarity between vectors
 
-* Another approach: Correlation!
+ * Another approach: Correlation!
 
 
 
@@ -448,10 +450,8 @@ Notes:
 
 ## Cosine Similarity
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/machine-learning/cosine-distance-1.png" style="width:40%;float:left;"/><!-- {"left" : 2.2, "top" : 5.14, "height" : 2.37, "width" : 2.31} -->  &nbsp;  &nbsp;
-<img src="../../assets/images/machine-learning/error-cosine-1.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/machine-learning/cosine-distance-1.png" style="width:40%;float:left;"/><!-- {"left" : 0.64, "top" : 3, "height" : 3.73, "width" : 3.63} -->  &nbsp;  &nbsp;
+<img src="../../assets/images/machine-learning/error-cosine-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.72, "top" : 3, "height" : 3.46, "width" : 3.89} --> 
 
 ---
 
@@ -467,11 +467,11 @@ Notes:
 | u1   | 4  | 3  | 5  |
 | u2   | 4  | 5  | 5  |
 
-<!-- TODO shiva -->
+<!-- {"left" : 0.25, "top" : 3.16, "height" : 1.5, "width" : 9.75} --> 
 
-<img src="../../assets/images/machine-learning/ratings-vector-1.png" style="width:30%;"/> &nbsp;
-<img src="../../assets/images/machine-learning/ratings-vector-2.png" style="width:30%;"/> &nbsp;
-<img src="../../assets/images/machine-learning/ratings-vector-3.png" style="width:30%;"/> &nbsp;
+<img src="../../assets/images/machine-learning/ratings-vector-1.png" style="width:30%;"/><!-- {"left" : 0.26, "top" : 6.91, "height" : 1.66, "width" : 5.28} -->  &nbsp;
+<img src="../../assets/images/machine-learning/ratings-vector-2.png" style="width:30%;"/><!-- {"left" : 4.13, "top" : 5.39, "height" : 2.28, "width" : 2.75} -->  &nbsp;
+<img src="../../assets/images/machine-learning/ratings-vector-3.png" style="width:30%;"/><!-- {"left" : 7.24, "top" : 5.32, "height" : 2.42, "width" : 2.97} --> 
 
 ---
 
@@ -486,7 +486,7 @@ Notes:
  * Can also do K-nearest items (columns)
 
 
-<img src="../../assets/images/machine-learning/3rd-party/recommendations-knearest-neighbor-1.png" style="width:90%"/><!-- {"left" : 0.92, "top" : 2.54, "height" : 3.61, "width" : 8.4} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-knearest-neighbor-1.png" style="width:90%"/><!-- {"left" : 0.13, "top" : 3.41, "height" : 4.29, "width" : 9.99} -->
 
 
 Notes:
@@ -511,7 +511,7 @@ Notes:
 
      - Trying to reduce huge amount of vectors (users x items) into smaller size, while still keeping the relevant information
 
-     - PCA !
+     - PCA!
 
  * Done by  **'matrix factorization** '
 
@@ -544,7 +544,7 @@ Notes:
 
 ## Matrix Refactorization Explained
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:90%;"/><!-- {"left" : 0.72, "top" : 1.51, "height" : 4.96, "width" : 8.82} -->
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:90%;"/><!-- {"left" : 0.4, "top" : 2.16, "height" : 5.32, "width" : 9.45} -->
 
 
 Notes:

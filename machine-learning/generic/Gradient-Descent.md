@@ -4,7 +4,7 @@
 
 ## Find the Optimal Value for a Variable
 
-<img src="../../assets/images/machine-learning/gradient-descent-1b.png" style="width:40%;float:right;"/><!-- {"left" : 3.55, "top" : 1, "height" : 2.53, "width" : 3.15} -->
+<img src="../../assets/images/machine-learning/gradient-descent-1b.png" style="width:40%;float:right;"/><!-- {"left" : 5.92, "top" : 2.07, "height" : 3.15, "width" : 3.92} -->
 
  * Now we understand **error/loss functions** let's try this:
 
@@ -22,7 +22,7 @@
 
 * Challenge is find the optimal value of X without knowing the graph!
 
-<img src="../../assets/images/machine-learning/gradient-descent-4a.png" style="width:60%;"/><!-- {"left" : 1.94, "top" : 2.05, "height" : 5.55, "width" : 6.37} -->
+<img src="../../assets/images/machine-learning/gradient-descent-4a.png" style="width:50%;"/><!-- {"left" : 1.94, "top" : 2.05, "height" : 5.55, "width" : 6.37} -->
 
 
 
@@ -31,7 +31,7 @@
 
 ## Gradient Descent Process - Step 1
 
-<img src="../../assets/images/machine-learning/gradient-descent-4b.png" style="width:50%;float:right;"/><!-- {"left" : 3.52, "top" : 0.92, "height" : 2.54, "width" : 3.2} -->
+<img src="../../assets/images/machine-learning/gradient-descent-4b.png" style="width:50%;float:right;"/><!-- {"left" : 5.83, "top" : 1.73, "height" : 3.16, "width" : 3.98} -->
 
 - We are going to start at some random value of X (say x1)
 
@@ -46,7 +46,7 @@
 
 ## Gradient Descent Process - Step 2
 
-<img src="../../assets/images/machine-learning/gradient-descent-4c.png" style="width:50%;float:right;"/><!-- {"left" : 2.28, "top" : 0.91, "height" : 4.11, "width" : 5.7} -->
+<img src="../../assets/images/machine-learning/gradient-descent-4c.png" style="width:50%;float:right;"/><!-- {"left" : 5.11, "top" : 1.81, "height" : 3.42, "width" : 4.74} -->
 
 - Using the error derivative, we can see the error function sloping to the right
 
@@ -61,7 +61,7 @@
 
 ## Gradient Descent Process - Step 3
 
-<img src="../../assets/images/machine-learning/gradient-descent-4d.png" style="width:50%;float:right;"/><!-- {"left" : 2.76, "top" : 0.92, "height" : 3.42, "width" : 4.73} -->
+<img src="../../assets/images/machine-learning/gradient-descent-4d.png" style="width:50%;float:right;"/><!-- {"left" : 5.18, "top" : 1.63, "height" : 3.42, "width" : 4.73} -->
 
 - Now we calculate the error for x2  
 `error = f(x2)`
@@ -74,7 +74,7 @@
 
 ---
 
-## Gradiant Descent
+## Gradient Descent
 
 <img src="../../assets/images/machine-learning/gradient-descent-1a.png" style="width:50%;float:right;"/><!-- {"left" : 5.5, "top" : 1.73, "height" : 4.47, "width" : 4.48} -->
 
@@ -89,7 +89,7 @@
 
 ## Avoiding Getting Trapped in Local Minima
 
-<img src="../../assets/images/machine-learning/gradient-descent-avoid-local-minima-1.png" style="width:50%;float:right;"/><!-- {"left" : 2.62, "top" : 1.29, "height" : 3.7, "width" : 5.01} -->
+<img src="../../assets/images/machine-learning/gradient-descent-avoid-local-minima-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.81, "top" : 1.52, "height" : 3.2, "width" : 4.33} -->
 
 - Sometimes the descent algorithm will get stuck on local minima
 
@@ -165,4 +165,4 @@ Notes:
 
 ---
 
-## End : Gradient Descent
+## End: Gradient Descent
