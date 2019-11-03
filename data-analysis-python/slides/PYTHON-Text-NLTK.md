@@ -12,14 +12,14 @@ Notes:
 
 ##  Text Analytics / NLP Libraries for Python
 
+| Library | Pros | Cons |
+|-------------------------------------------------------------------------|-----------------------------------------------|--------------------------------------------------------------------|
+| **NLTK** | * 'the' library <br/> * modular | * Can be steep learning curve <br/> * Might not be high performant |
+| **TextBlob** <br/>   * Built on top of NLTK <br/> |  * Easily accessible <br/> * Fast prototyping | * Performance may not be high |
+| **Stanford Core** <br /> *Core java library with python wrapper **NLP** | * Fast <br/> * Lot of use in production |  |
+| **SpaCy**  <br/>  * New |  |  |
+| **Gensim** <br/>  * Topic modeling |  |  |
 
-| Library                                                          	| Pros                                   	| Cons                                                         	|
-|------------------------------------------------------------------	|----------------------------------------	|--------------------------------------------------------------	|
-| **NLTK**                                                         	| * 'the' library * modular              	| * Can be steep learning curve * Might not be high performant 	|
-| **TextBlob** * Built on top of NLTK                              	| * Easily accessible * Fast prototyping 	| * Performance may not be high                                	|
-| **Stanford Core** *Core java library with python wrapper **NLP** 	| * Fast * Lot of use in production      	|                                                              	|
-| **SpaCy**  * New                                                 	|                                        	|                                                              	|
-| **Gensim** * Topic modeling                                      	|                                        	|   &nbsp;                                                    	|
 
 <!-- {"left" : 0.26, "top" : 1.14, "height" : 4.15, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
 
@@ -88,8 +88,8 @@ Notes:
 
 ```python
 import nltk
-from os.path import expanduser
-nltk.data.path.append( expanduser("~") + "/data/nltk_data")
+# from os.path import expanduser
+# nltk.data.path.append( expanduser("~") + "/data/nltk_data")
 from nltk.corpus import words
 
 print (words.readme())
@@ -286,6 +286,7 @@ Notes:
 ---
 
 # TextBlob
+
 ---
 
 ## TextBlob
@@ -537,113 +538,9 @@ Notes:
 
 ---
 
-## Jump Point: TFIDF Theory
-
-  * Go to: Text Analytics Core : TF-IDF section
-
-
-Notes:
-
----
-
-## Lab:  Text-5: TF-IDF
-
-  * Overview:
-
-    - Calculate and understand TF-IDF scores
-
-  * Builds on previous labs:
-
-    - TEXT4: TextBlob
-
-  * Approximate time:
-
-    - 15 mins
-
-  * Instructions:
-
-    - 5-tfidf
-Notes:
-
----
-
-## TF-IDF With SciKit Learn Library
-
-  * Scikit-Learn has a good TFIDF Implementation
-
-    - sklearn.feature_extraction.text.TfidfVectorizer
-
-  * TFidfVectorizer
-
-    - Can read a corpus (files / collection of strings)
-    - And compute TFIDF
-    - It gives 'document term matrix'
-
-Notes:
-
----
-
-## TF-IDF with SciKit Learn Code
-
-```python
-from sklearn.feature_extraction.text import TfidfVectorizer
-
-d0 = "the brown dog likes the white cow"
-d1 = "the grass is brown"
-d2 = "the spotted cow likes green grass"
-documents = [d0,d1,d2]
-tf = TfidfVectorizer(analyzer='word', ngram_range=(1,1),
-                    min_df = 0, stop_words=None)
-tfidf_matrix = tf.fit_transform(documents)
-print(tfidf_matrix)  # document term matrix
-
-document-term matrix
-  (0, 8)	0.521500948636
-  (0, 0)	0.335763711163
-  ...
-  (1, 8)	0.373118805931
-  (1, 0)	0.480458397292
-
-feature_names = tf.get_feature_names()
-for i, feature in enumerate(feature_names):
-    print(i,feature)
-feature vectors
-0 brown
-1 cow
-2 dog
-...
-```
-<!-- {"left" : 0.0, "top" : 0.91, "height" : 6.38, "width" : 9.48} -->
-
-Notes:
-
----
-
-## Lab: Text-6: TF-IDF With SciKit-Learn
-
-  * Overview:
-
-    - Calculate TF-IDF with SciKit-Learn
-
-  * Builds on previous labs:
-
-    - TEXT5: TFIDF intro
-
-  * Approximate time:
-
-   - 15 mins
-
-  * Instructions:
-
-    - 6-tfidf-with-scikit-learn
-
-
-Notes:
-
----
 
 ## Lesson Summary
 
-  * Learned Python libraries: TextBlob, NLTK, SciKit
+  * Learned Python libraries: NLTK, TextBlob
 
   * Implemented text analytics algorithms in Python
