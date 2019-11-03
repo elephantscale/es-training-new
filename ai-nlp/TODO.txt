@@ -1,0 +1,7 @@
+Text-Generic
+	- add stemming section
+
+Text-Python
+
+Python-spacy
+	- add relationship diagram

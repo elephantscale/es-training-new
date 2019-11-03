@@ -1,0 +1,65 @@
+Lab 1:
+data-analytics-python-labs/06-text/1-nltk-intro.ipynb
+More NLTK labs?
+
+Lab 2: TF-IDF and NaiveBayes
+ml-labs-spark-python/naive-bayes/naive-bayes-1-spam.ipynb
+
+Lab 3: Hello TF
+git clone git@github.com:elephantscale/tensorflow-labs.git
+
+Lab 4: Session
+03-lowlevel/3.1-sessions.ipynb
+
+Lab 5: MNIST with TensorFlow
+03-lowlevel/3.2-NoHidden.ipynb
+
+Lab 6: Linear Regression
+ml-labs-spark-python/linear-regression/1-lr-tips.ipynb
+
+Lab 7: Linear Regression with TensorFlow
+tensorflow-labs/03-lowlevel/3.2-lr-tips.ipynb
+
+Lab 8: High-Level
+tensorflow-labs/04-highlevel/4.2K-Keras-Linear-Mnist.ipynb
+
+Lab 9: Colab environment
+tensorflow-labs/05-dnn/3.3-MNIST-NoHidden.ipynb
+
+Lab 10: Estimators
+ tensorflow-labs/In:05-dnn/5.3-iris.ipynb
+
+Lab 11: Estimators Keras
+tensorflow-labs/In:05-dnn/5.3-K-iris.ipynb
+
+Lab 12: CNN
+tensorflow-labs/06-cnn/6.1-convolutions-intro.ipynb
+
+Lab 13: CNN - MNIST
+tensorflow-labs/06-cnn/6.2-cnn-mnist.ipynb
+
+Lab 14: CNN - Fashion
+tensorflow-labs/06-cnn/6.3-cnn-fashion.ipynb
+
+Lab 15: Transfer Knowledge
+tensorflow-labs/07-transfer/7.1-catdog-inceptionv3.ipynb
+
+Lab 16: RNN
+08-rnn/8.1-rnn-intro.ipynb
+
+Lab 17: LSTM Stocks
+08-rnn/8.3-lstm-stocks.ipynb
+
+Lab 18: word2vec
+08-rnn/8.4-word2vec.ipynb
+
+Lab 19: Bert
+tensorflow-labs/nlp/bert.ipynb
+
+
+
+
+
+
+
+

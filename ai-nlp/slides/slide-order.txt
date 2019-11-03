@@ -1,0 +1,55 @@
+## $ES_HOME/utils/presentations/slides-assembler.sh slide-order.txt
+
+## About
+About-AI-NLP.md
+
+# Text with NLTK
+# (Labs here: https://github.com/elephantscale/data-analytics-python-labs/tree/master/06-text)
+$ES_HOME/es-training/data-analysis-python/slides/PYTHON-Text.md
+$ES_HOME/es-training/machine-learning/generic/Text-Analytics-Generic.pptx
+$ES_HOME/es-training/machine-learning/generic/Text-Analytics-Python.pptx
+
+## ML Intro
+$ES_HOME/es-training/machine-learning/generic/sagemaker/Machine-Learning-Primer.pptx
+
+# TensorFlow Playground
+$ES_HOME/es-training/deep-learning/slides/generic/DL-Playground.md
+
+# Continue introducing TensorFlow
+$ES_HOME/es-training/deep-learning/slides/tensorflow/TENSORFLOW-Intro.md
+$ES_HOME/es-training/deep-learning/slides/tensorflow/TENSORFLOW-Lowlevel.md
+
+# Linear
+$ES_HOME/es-training/machine-learning/generic/sagemaker/Linear-Regression.pptx
+$ES_HOME/es-training/machine-learning/generic/sagemaker/Logistic-Regression.pptx
+$ES_HOME/es-training/deep-learning/slides/tensorflow/TENSORFLOW-Linear.md
+
+# Tensorflow Slides
+$ES_HOME/es-training/deep-learning/slides/tensorflow/TENSORFLOW-Highlevel.md
+
+# Deep Learning
+$ES_HOME/es-training/deep-learning/slides/generic/DL-Neural-Networks.md
+$ES_HOME/es-training/deep-learning/slides/tensorflow/TENSORFLOW-CNN.md
+# Deep Learning with Text
+word2vec.md
+../doc/word2vec-paper.pdf
+
+$ES_HOME/es-training/deep-learning/slides/generic/DL-Transfer-Learning.md
+BERT.md
+../doc/BERT-paper.pdf
+../doc/Attention_is_all_you_need.pdf
+$ES_HOME/es-training/deep-learning/slides/generic/DL-RNNs.md
+$ES_HOME/es-training/deep-learning/slides/generic/DL-LSTMs.md
+
+# TODO - fix this link
+$ES_HOME/es-training-collaboration/data-analysis-python/slides/FeatureEngineering.md
+
+
+# Rasa
+./rasa-intro.md
+./rasa-usecases.md
+./rasa-using.md
+./rasa-pipeline.md
+
+# Spacy
+../../data-analysis-python/slides/PYTHON-Text-Spacy.md

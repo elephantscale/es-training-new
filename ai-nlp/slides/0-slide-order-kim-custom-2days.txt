@@ -1,0 +1,48 @@
+## Execute these commands from within 'es-reveal-md' docker image
+## To assemble md slides,
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    0-slide-order-kim-custom-2days.txt
+## to make pdfs
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh      0-slide-order-kim-custom-2days.txt  pdf
+
+
+
+## About
+About-AI-NLP-custom.md
+
+## ML Intro
+../../machine-learning/generic/Machine-Learning-Primer.md
+
+## Basic Text Python
+../../machine-learning/generic/Text-Analytics-Intro.md
+../../data-analysis-python/slides/PYTHON-Text-NLTK.md
+../../data-analysis-python/slides/PYTHON-Text-Spacy.md
+../../machine-learning/generic/Text-Analytics-Vectorization.md
+
+## word2vec
+word2vec.md
+../doc/word2vec-paper.pdf
+
+## Theory part-1
+../../machine-learning/generic/ML-Concepts-All.md
+
+## Neural Networks
+../../deep-learning/generic/DL-Neural-Networks.md
+
+## Theory part-2
+../../deep-learning/generic/DL-Concepts.md
+
+## TensorFlow
+../../deep-learning/tensorflow/TENSORFLOW-Intro.md
+## Keras
+../../deep-learning/keras/Keras-1__Intro.md
+
+## CNN
+../../deep-learning/generic/DL-CNNs.md
+
+## RNN
+#../../deep-learning/generic/DL-RNNs.md
+#../../deep-learning/generic/DL-LSTMs.md
+
+
+## TransferLearning
+../../deep-learning/generic/DL-Transfer-Learning.md

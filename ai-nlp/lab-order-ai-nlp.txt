@@ -1,0 +1,36 @@
+# Lab Order
+# $ES_HOME/utils/labs/labs-assembler.sh lab-order-ai-nlp.txt
+
+# Lab 1: NLTK Labs (all)
+$ES_HOME/data-analytics-python-labs/06-text/
+
+# Lab 2: TF-IDF and NaiveBayes
+$ES_HOME/ml-labs-python/naive-bayes/naive-bayes-1-spam.ipynb
+
+# Lab 3: Hello TF
+$ES_HOME/tensorflow-labs/01-basics/1.2-helloworld.ipynb
+
+# Lab 4: Linear MNIST
+$ES_HOME/tensorflow-labs/04-highlevel/4.2K-Keras-Linear-Mnist.ipynb
+
+# Lab 5: DNN MNIST
+$ES_HOME/tensorflow-labs/05-dnn/5.1K-DNN-intro.ipynb
+
+# Lab 6: Iris Keras 
+$ES_HOME/tensorflow-labs/05-dnn/5.3K-iris.ipynb
+
+# Lab 7: RNN labs 
+$ES_HOME/tensorflow-labs/08-rnn
+
+# Lab 8: NLP Labs
+$ES_HOME/tensorflow-labs/nlp
+
+# Lab 9: Advanced NLP labs in AI 
+$ES_HOME/ai-labs/nlp advanced-nlp
+
+
+
+
+
+
+
