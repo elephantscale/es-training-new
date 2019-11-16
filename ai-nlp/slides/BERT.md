@@ -11,7 +11,8 @@ Notes:
 
 ## BERT Whitepaper
 
-<img src="../../assets/images/ai-nlp/bert-whitepaper.png" style="width:70%;"/>
+<img src="../../assets/images/ai-nlp/bert-whitepaper.png" style="width:70%;"/><!-- {"left" : 0.65, "top" : 1.44, "height" : 6.76, "width" : 8.94} -->
+
 
 Notes: 
 
@@ -32,7 +33,8 @@ Notes:
 
 ## ULM-Fit, ELMo, and BERT
 
-<img src="../../assets/images/ai-nlp/transformer-ber-ulmfit-elmo.png" style="width:70%;"/>
+<img src="../../assets/images/ai-nlp/transformer-ber-ulmfit-elmo.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.94, "height" : 3.77, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -41,7 +43,8 @@ Notes:
 
 ## BERT Transfer Learning
 
-<img src="../../assets/images/ai-nlp/bert-transfer-learning.png" style="width:80%;"/>
+<img src="../../assets/images/ai-nlp/bert-transfer-learning.png" style="width:80%;"/><!-- {"left" : 0.6, "top" : 2.33, "height" : 4.99, "width" : 9.06} -->
+
 
 
 Notes: 
@@ -50,7 +53,8 @@ Notes:
 
 ## Classification of SPAM	
 
-<img src="../../assets/images/ai-nlp/BERT-classification-spam.png" style="width:80%;"/>
+<img src="../../assets/images/ai-nlp/BERT-classification-spam.png" style="width:80%;"/><!-- {"left" : 0.75, "top" : 3.2, "height" : 3.25, "width" : 8.75} -->
+
 
 
 Notes: 
@@ -60,7 +64,8 @@ Notes:
 
 ## Results
 
-<img src="../../assets/images/ai-nlp/spam-labeled-dataset.png" style="width:80%;"/>
+<img src="../../assets/images/ai-nlp/spam-labeled-dataset.png" style="width:80%;"/><!-- {"left" : 0.79, "top" : 2.72, "height" : 3.64, "width" : 8.67} -->
+
 
 Notes: 
 
@@ -69,7 +74,8 @@ Notes:
 
 ## Bert Base vs Bert Lage
 
-<img src="../../assets/images/ai-nlp/bert-base-bert-large.png" style="width:80%;"/>
+<img src="../../assets/images/ai-nlp/bert-base-bert-large.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 3.13, "height" : 3.38, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -77,7 +83,8 @@ Notes:
 
 ## Layers
 
-<img src="../../assets/images/ai-nlp/bert-base-bert-large-encoders.png" style="width:80%;"/>
+<img src="../../assets/images/ai-nlp/bert-base-bert-large-encoders.png" style="width:80%;"/><!-- {"left" : 0.06, "top" : 2.41, "height" : 4.26, "width" : 10.13} -->
+
 
 Notes: 
 
@@ -85,7 +92,8 @@ Notes:
 
 ## BERT Input Output
 
-<img src="../../assets/images/ai-nlp/bert-input-output.png" style="width:80%;"/>
+<img src="../../assets/images/ai-nlp/bert-input-output.png" style="width:80%;"/><!-- {"left" : 0.56, "top" : 2.79, "height" : 3.49, "width" : 9.13} -->
+
 
 Notes: 
 
@@ -210,7 +218,7 @@ Notes:
 
      -  **MLM**  allows us to pretrain a deep bidirectional Transformer
 
- * They also use a  **“next sentence prediction”** task that jointly  **pretrains text-pair representations**.
+ * They also use a **“next sentence prediction”** task that jointly  **pretrains text-pair representations**.
 
 
 Notes: 
@@ -308,7 +316,8 @@ Notes:
 
         * The  model is first initialized with the  **pre-trained parameters** , and all of the parameters are fine-tuned using labeled data from the downstream tasks.
 
-<img src="../../assets/images/ai-nlp/bert1.png" alt="bert1.png" style="width:60%;"/>
+<img src="../../assets/images/ai-nlp/bert1.png" alt="bert1.png" style="width:60%;"/><!-- {"left" : 1.2, "top" : 4.42, "height" : 3.31, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -330,10 +339,10 @@ Notes:
     - Results on two model sizes:
 
       - 𝑩𝑬𝑹𝑻<sub>𝑩𝑨𝑺𝑬</sub>: 
-         - **L**= 12,  **H**= 768,  **A**= 12,  **Total Parameters**= 110M 
+         - **L**= 12, **H**= 768, **A**= 12, **Total Parameters**= 110M 
 
       - 𝑩𝑬𝑹𝑻<sub>𝑳𝑨𝑹𝑮𝑬</sub>: 
-         - **L**=24,  **H**=1024,  **A**=16,  **Total Parameters**= 340M 
+         - **L**=24,  **H**=1024,  **A**=16, **Total Parameters**= 340M 
 
 
 
@@ -375,7 +384,8 @@ Notes:
 
  *  **BERT input representation** 
 
-<img src="../../assets/images/ai-nlp/bert2.png" alt="bert2.png" style="width:80%;"/>
+<img src="../../assets/images/ai-nlp/bert2.png" alt="bert2.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 2.3, "height" : 3.31, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -486,9 +496,7 @@ Notes:
 
   * **Results are presented in Table:**
 
-<img src="../../assets/images/ai-nlp/Experiments-3.png" alt="Experiments-3.png" style="width:80%;"/>
-
-
+<img src="../../assets/images/ai-nlp/Experiments-3.png" alt="Experiments-3.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.56, "height" : 1.76, "width" : 8.21} -->
   * **𝑩𝑬𝑹𝑻**<sub>𝑩𝑨𝑺𝑬</sub> and **𝑩𝑬𝑹𝑻**<sub>𝑳𝑨𝑹𝑮𝑬</sub> outperform all systems on all tasks by a substantial margin
 
   * 𝐵𝐸𝑅𝑇<sub>𝐿𝐴𝑅𝐺𝐸</sub> **significantly outperforms** 𝐵𝐸𝑅𝑇<sub>𝐵𝐴𝑆𝐸</sub> across all tasks, especially those with very little training data.
@@ -512,7 +520,7 @@ Notes:
       - End vector 𝐄 ∈ 𝑹<sup>𝑯</sup>
       - probability of word **i**:
 
-<img src="../../assets/images/ai-nlp/formula1.png" alt="formula1.png" style="width:20%;"/>
+<img src="../../assets/images/ai-nlp/formula1.png" alt="formula1.png" style="width:20%;"/><!-- {"left" : 6.43, "top" : 5.11, "height" : 1.29, "width" : 1.84} -->
 
  * Fine-tune for **3** epochs with a learning rate of **5e-5** and a batch size of **32**
 
@@ -528,7 +536,7 @@ Notes:
 
  *  **Results from top published systems:** 
 
-<img src="../../assets/images/ai-nlp/Experiments-4.png" alt="Experiments-5.png" style="width:40%;"/>
+<img src="../../assets/images/ai-nlp/Experiments-4.png" alt="Experiments-5.png" style="width:40%;"/><!-- {"left" : 2.86, "top" : 1.69, "height" : 3.97, "width" : 4.52} -->
 
  *  **BERT model** outperforms the top ensemble system in terms of F1 score.
 
@@ -548,7 +556,7 @@ Notes:
 
   * Treat questions that do not have an answer **as having an answer span** with start and end at the [CLS] token
   * For prediction, compare:
-    - The score of the no-answer span : 𝑠<sub>𝑛𝑢𝑙𝑙</sub>=𝑆.𝐶+𝐸.𝐶 
+    - The score of the no-answer span: 𝑠<sub>𝑛𝑢𝑙𝑙</sub>=𝑆.𝐶+𝐸.𝐶 
     - The score of the best non-null span: 𝑠<sub>𝑖<sup>⋏</sup>.𝑗</sub>= 𝑚𝑎𝑥<sub>𝑖>𝑗</sub> 𝑆.𝑇<sub>𝑖</sub>+𝐸.𝑇<sub>𝑗</sub>
 
   * Fine-tuned for **2** epochs with a learning rate of **5e-5** and a batch size of **48**
@@ -565,10 +573,9 @@ Notes:
 
  *  **The results compared to prior leaderboard entries and top published work** 
 
-<img src="../../assets/images/ai-nlp/Experiments-5.png" alt="Experiments-5.png" style="width:40%;"/>
+<img src="../../assets/images/ai-nlp/Experiments-5.png" alt="Experiments-5.png" style="width:40%;"/><!-- {"left" : 2.57, "top" : 2, "height" : 3.45, "width" : 5.11} -->
 
-
- * Observe  **a +5.1 F1 improvement** over the previous best system.
+ * Observe **a +5.1 F1 improvement** over the previous best system.
 
 
 Notes: 
@@ -607,7 +614,9 @@ Notes:
 
  *  **Results are presented in Table** 
 
-<img src="../../assets/images/ai-nlp/Experiments-6.png" alt="Experiments-6.png" style="width:50%;"/>
+<img src="../../assets/images/ai-nlp/Experiments-6.png" alt="Experiments-6.png" style="width:50%;"/><!-- {"left" : 2.24, "top" : 2.33, "height" : 4.41, "width" : 5.77} -->
+
+
 
 Notes: 
 
@@ -649,7 +658,8 @@ Notes:
 
   * Ablation over the pre-training tasks using the **𝑩𝑬𝑹𝑻<sub>𝑩𝑨𝑺𝑬</sub> architecture**
 
-<img src="../../assets/images/ai-nlp/Ablation-Studies-7.png" alt="Ablation-Studies-7.png" style="width:50%;"/>
+<img src="../../assets/images/ai-nlp/Ablation-Studies-7.png" alt="Ablation-Studies-7.png" style="width:50%;"/><!-- {"left" : 1.43, "top" : 5.38, "height" : 2.8, "width" : 7.39} -->
+
 
 Notes: 
 
@@ -684,7 +694,9 @@ Notes:
 
  *  **Results on selected GLUE tasks are shown in Table** 
 
-<img src="../../assets/images/ai-nlp/Ablation-Studies-8.png" alt="Ablation-Studies-8.png" style="width:60%;"/>
+<img src="../../assets/images/ai-nlp/Ablation-Studies-8.png" alt="Ablation-Studies-8.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.69, "height" : 4.26, "width" : 8.21} -->
+
+
 
 Notes: 
 
@@ -720,7 +732,8 @@ Notes:
 
  *  **CoNLL-2003 Named Entity Recognition results are presented in Table** 
 
-<img src="../../assets/images/ai-nlp/Ablation-Studies-9.png" alt="Ablation-Studies-9.png" style="width:40%;"/>
+<img src="../../assets/images/ai-nlp/Ablation-Studies-9.png" alt="Ablation-Studies-9.png" style="width:40%;"/><!-- {"left" : 5.47, "top" : 1.93, "height" : 3.72, "width" : 4.52} -->
+
 
 
  *  **BERT is effective** for both **finetuning** and **feature-based** approaches
@@ -740,7 +753,7 @@ Notes:
 ## Conclusion
 
 
- *  **Unsupervised pre-training** is an integral part of many  **language understanding systems** 
+ *  **Unsupervised pre-training** is an integral part of many **language understanding systems** 
 
  * These results enable even  **low-resource tasks**  to benefit from  **deep unidirectional architectures** 
 
@@ -755,7 +768,8 @@ Notes:
 ## Question
 
 
-<img src="../../assets/images/generic/Question.png" alt="Question.png" style="width:40%;"/>
+<img src="../../assets/images/generic/Question.png" alt="Question.png" style="width:40%;"/><!-- {"left" : 3.17, "top" : 2.58, "height" : 3.91, "width" : 3.91} -->
+
 
 Notes: 
 

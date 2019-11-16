@@ -8,7 +8,7 @@
 
  * Open Source Conversational AI
  * Build Chatbots
- * Uses Deeep Learning Models
+ * Uses Deep Learning Models
  * Written in Python
 
 Notes: 
@@ -16,7 +16,8 @@ Notes:
 ---
 ## Rasa
 
-<img src="../../assets/images/ai-nlp/rasa-core-diagram.png" style="width:40%;"/>
+<img src="../../assets/images/ai-nlp/rasa-core-diagram.png" style="width:40%;"/><!-- {"left" : 2.72, "top" : 1.57, "height" : 6.5, "width" : 4.8} -->
+
 
 
 Notes: 
@@ -67,6 +68,7 @@ Notes:
   pip install rasa-core rasa-nlu[spacy]
   pip install tensorflow keras spacy
 ```
+<!-- {"left" : 0, "top" : 2.22, "height" : 0.86, "width" : 6.94} -->
 
 Notes: 
 
@@ -83,7 +85,8 @@ Notes:
 
 ## Rasa Ecosystem
 
-<img src="../../assets/images/ai-nlp/rasa-ecosystem.png" style="width:70%;"/>
+<img src="../../assets/images/ai-nlp/rasa-ecosystem.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 1.97, "height" : 5.13, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -101,7 +104,8 @@ Notes:
 ---
 ## Contextual Dialogues
 
-<img src="../../assets/images/ai-nlp/rasa-core-diagram.png" style="width:40%;"/>
+<img src="../../assets/images/ai-nlp/rasa-core-diagram.png" style="width:40%;"/><!-- {"left" : 2.72, "top" : 1.57, "height" : 6.5, "width" : 4.8} -->
+
 
 
 Notes: 
@@ -119,14 +123,16 @@ Notes:
 
   * Performs **probabalistic** classification
 
-<img src="../../assets/images/ai-nlp/rasa-stack-recognition.png" style="width:40%;"/>
+<img src="../../assets/images/ai-nlp/rasa-stack-recognition.png" style="width:40%;"/><!-- {"left" : 1.56, "top" : 4.1, "height" : 4.46, "width" : 7.13} -->
+
 
 Notes: 
 
 ---
 ## Intent Recognition
 
-<img src="../../assets/images/ai-nlp/rasa-stack-recognition.png" style="width:70%;"/>
+<img src="../../assets/images/ai-nlp/rasa-stack-recognition.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 1.97, "height" : 5.13, "width" : 8.21} -->
+
 
 Notes: 
 
@@ -140,7 +146,8 @@ Notes:
 
   * Train your own!
 
-<img src="../../assets/images/ai-nlp/rasa-stack-extract-entities.png" style="width:50%;"/>
+<img src="../../assets/images/ai-nlp/rasa-stack-extract-entities.png" style="width:50%;"/><!-- {"left" : 1.02, "top" : 3.33, "height" : 5.3, "width" : 8.21} -->
+
 
 
 Notes: 
@@ -148,7 +155,9 @@ Notes:
 ---
 ## Entity Extraction
 
-<img src="../../assets/images/ai-nlp/rasa-stack-extract-entities.png" style="width:70%;"/>
+<img src="../../assets/images/ai-nlp/rasa-stack-extract-entities.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 1.89, "height" : 5.3, "width" : 8.21} -->
+
+
 
 
 Notes: 
@@ -159,4 +168,6 @@ Notes:
  * You can use your own custom APIs / DB, etc.
  
 
-<img src="../../assets/images/ai-nlp/rasa-stack-apis.png" style="width:60%;"/>
+<img src="../../assets/images/ai-nlp/rasa-stack-apis.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.28, "height" : 4.51, "width" : 8.21} -->
+
+

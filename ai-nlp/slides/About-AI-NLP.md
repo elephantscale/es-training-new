@@ -87,9 +87,7 @@ Notes:
      - Familiarity with Python (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
-<img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/>   &nbsp;
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:20%;"/>
-<img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:20%;"/>
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 
 
@@ -112,4 +110,4 @@ Notes:
 
 ---
 
-## Let's Get Started !
+## Let's Get Started!

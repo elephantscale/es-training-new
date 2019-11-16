@@ -27,6 +27,7 @@ pipeline:
 - name: "ner_synonyms"
 - name: "intent_classifier_sklearn"
 ```
+<!-- {"left" : 0, "top" : 1.89, "height" : 3.19, "width" : 7.44} -->
 
 Notes: 
 
@@ -49,6 +50,7 @@ pipeline:
 - name: "ner_synonyms"
 - name: "intent_classifier_sklearn"
 ```
+<!-- {"left" : 0, "top" : 2.79, "height" : 3.19, "width" : 7.44} -->
 
 
 
@@ -83,6 +85,8 @@ pipeline:
 - name: "intent_entity_featurizer_regex"
 - name: "intent_classifier_mitie"
 ```
+<!-- {"left" : 0, "top" : 1.61, "height" : 3.19, "width" : 8.78} -->
+
 
 Notes: 
 
@@ -102,6 +106,7 @@ pipeline:
 - name: "intent_featurizer_mitie"
 - name: "intent_classifier_sklearn"
 ```
+<!-- {"left" : 0, "top" : 1.54, "height" : 3.49, "width" : 8.78} -->
 
 Notes: 
 
@@ -119,6 +124,7 @@ pipeline:
   intent_tokenization_flag: true
   intent_split_symbol: "_"
 ```
+<!-- {"left" : 0, "top" : 2.02, "height" : 2.32, "width" : 8.78} -->
 
 Notes: 
 
@@ -138,6 +144,7 @@ pipeline:
   model: "en_core_web_md"
   case_sensitive: false
 ```
+<!-- {"left" : 0, "top" : 2.4, "height" : 1.74, "width" : 5.11} -->
 
 Notes: 
 
@@ -185,6 +192,7 @@ Notes:
   # feature vectors with character ngrams
   max_number_of_ngrams: 10
 ```
+<!-- {"left" : 0, "top" : 4.1, "height" : 1.44, "width" : 9.28} -->
 
 Notes: 
 
@@ -208,6 +216,7 @@ Notes:
   "max_ngram": 1
   "max_features": None
 ```
+<!-- {"left" : 0, "top" : 2.91, "height" : 2.49, "width" : 10.25} -->
 
 Notes: 
 
@@ -221,6 +230,7 @@ Notes:
     "intent": {"name": "greet", "confidence": 0.98343}
 }
 ```
+<!-- {"left" : 0, "top" : 1.48, "height" : 1.15, "width" : 9.78} -->
 
 Notes: 
 
@@ -235,6 +245,7 @@ Notes:
     "intent": {"name": "greet", "confidence": 0.98343}
 }
 ```
+<!-- {"left" : 0, "top" : 1.88, "height" : 1.15, "width" : 9.78} -->
 
 Notes: 
 
@@ -260,6 +271,7 @@ Notes:
     ]
 }
 ```
+<!-- {"left" : 0, "top" : 2.29, "height" : 4.07, "width" : 9.94} -->
 
 Notes: 
 
@@ -271,6 +283,7 @@ Notes:
   C: [1, 2, 5, 10, 20, 100]
   kernels: ["linear"]
 ```
+<!-- {"left" : 0, "top" : 1.57, "height" : 1.37, "width" : 7.87} -->
 
 Notes: 
 
@@ -294,6 +307,7 @@ Notes:
     ]
 }
 ```
+<!-- {"left" : 0, "top" : 1.88, "height" : 4.07, "width" : 9.78} -->
 
 Notes: 
 
@@ -320,6 +334,7 @@ Notes:
   "intent_tokenization_flag": false
   "intent_split_symbol": "_"
 ```
+<!-- {"left" : 0, "top" : 1.43, "height" : 5.26, "width" : 10.25} -->
 
 Notes: 
 
@@ -359,6 +374,7 @@ Notes:
 pipeline:
 - name: "tokenizer_mitie"
 ```
+<!-- {"left" : 0, "top" : 2.29, "height" : 1, "width" : 5.77} -->
 
 Notes: 
 
@@ -394,6 +410,7 @@ Notes:
                   "extractor": "ner_mitie"}]
 }
 ```
+<!-- {"left" : 0, "top" : 3.56, "height" : 2.61, "width" : 8.11} -->
 
 Notes: 
 
@@ -414,6 +431,7 @@ Notes:
                   "extractor": "ner_spacy"}]
 }
 ```
+<!-- {"left" : 0, "top" : 2.33, "height" : 2.61, "width" : 8.11} -->
 
 Notes: 
 
@@ -442,6 +460,7 @@ Notes:
                }]
 }]
 ```
+<!-- {"left" : 0, "top" : 1.77, "height" : 5.53, "width" : 6.94} -->
 
 Notes: 
 
@@ -464,6 +483,7 @@ Notes:
                   "extractor": "ner_crf"}]
 }
 ```
+<!-- {"left" : 0, "top" : 5.07, "height" : 2.61, "width" : 7.78} -->
 
 Notes: 
 
@@ -479,6 +499,7 @@ pipeline:
   L1_c: 1.0
   L2_c: 1e-3
 ```
+<!-- {"left" : 0, "top" : 1.57, "height" : 1.79, "width" : 10.25} -->
 
 Notes: 
 
@@ -501,6 +522,7 @@ Notes:
                   "extractor": "ner_duckling"}]
 }
 ```
+<!-- {"left" : 0, "top" : 3.27, "height" : 2.52, "width" : 10.25} -->
 
 Notes: 
 
@@ -513,6 +535,7 @@ pipeline:
   # dimensions to extract
   dimensions: ["time", "number", "amount-of-money", "distance"]
 ```
+<!-- {"left" : 0, "top" : 1.5, "height" : 1.31, "width" : 10.25} -->
 
 Notes: 
 
@@ -525,6 +548,7 @@ Notes:
 pipeline:
 - name: "sentiment.SentimentAnalyzer"
 ```
+<!-- {"left" : 0, "top" : 2.77, "height" : 0.94, "width" : 7.56} -->
 
 Notes: 
 

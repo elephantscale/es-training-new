@@ -19,7 +19,8 @@ Notes:
 
 ---
 ## Banking UseCase: Raiffeisen
-<img src="../../assets/images/ai-nlp/raiffeisen_accountbalance.png" style="width:30%;"/>
+<img src="../../assets/images/ai-nlp/raiffeisen_accountbalance.png" style="width:30%;"/><!-- {"left" : 3.35, "top" : 1.68, "height" : 6.28, "width" : 3.54} -->
+
 
 Notes: 
 
@@ -59,7 +60,8 @@ Notes:
 ---
 ## Insurance UseCase: Helvetia
 
-<img src="../../assets/images/ai-nlp/helvetia_insurance.png" style="width:30%;"/>
+<img src="../../assets/images/ai-nlp/helvetia_insurance.png" style="width:30%;"/><!-- {"left" : 3.46, "top" : 1.85, "height" : 5.94, "width" : 3.33} -->
+
 
 Notes: 
 
@@ -91,7 +93,8 @@ Notes:
 ---
 ## Tia screenshort
 
-<img src="../../assets/images/ai-nlp/raiffeisen_accountbalance.png" style="width:30%;"/>
+<img src="../../assets/images/ai-nlp/raiffeisen_accountbalance.png" style="width:30%;"/><!-- {"left" : 3.35, "top" : 1.68, "height" : 6.28, "width" : 3.54} -->
+
 
 Notes: 
 
@@ -111,7 +114,8 @@ Notes:
 ## Example: Telecom
 
 
-<img src="../../assets/images/ai-nlp/telecombot_upgrade_plan.png" style="width:30%;"/>
+<img src="../../assets/images/ai-nlp/telecombot_upgrade_plan.png" style="width:30%;"/><!-- {"left" : 3.3, "top" : 1.57, "height" : 6.5, "width" : 3.65} -->
+
 
 Notes: 
 
@@ -132,5 +136,6 @@ Notes:
 ---
 ## Example: Travel
 
-<img src="../../assets/images/ai-nlp/travelbot_add_luggage.png" style="width:30%;"/>
+<img src="../../assets/images/ai-nlp/travelbot_add_luggage.png" style="width:30%;"/><!-- {"left" : 3.3, "top" : 1.57, "height" : 6.5, "width" : 3.65} -->
+
 

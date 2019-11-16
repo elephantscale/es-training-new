@@ -33,11 +33,11 @@ Notes:
 
 ## Abstract
 
- *  **Problem**:
+ *  **Problem:**
 
     - The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. **Which do not work well in all situation**.
 
- *  **Solution**:
+ *  **Solution:**
 
      -  **Propose a new simple network architecture**, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. these models to be  **superior in quality** while being  **more parallelizable**  and requiring significantly less time to train
 
@@ -55,10 +55,10 @@ Notes:
 
 ## Introduction
 
- *  **Recurrent neural networks**:
+ *  **Recurrent neural networks:**
     - state of the art approaches in sequence modeling and transduction problems such as language modeling and machine translation
 
- *  **Recurrent models**: 
+ *  **Recurrent models:** 
     - Typically factor computation along the symbol positions of the input and output sequences.
 
     - They generate a sequence of hidden states 𝒉_𝒕
@@ -116,7 +116,7 @@ Notes:
 
     - This makes it  **more difficult to learn dependencies between distant positions** 
 
- * In the **Transformer**:
+ * In the **Transformer:**
     - **the number of operations required reduced to a constant number of operations** 
 
 Notes: 
@@ -259,20 +259,20 @@ Notes:
 
 ## Model Architecture
 
- *  **Scaled Dot-Product Attention
+<img src="../../assets/images/ai-nlp/Model-Architecture-2.png" style="width:20%;float:right;"/> <!-- {"left" : 7.52, "top" : 1.28, "height" : 5.39, "width" : 2.5} -->
+
+
+ *  **Scaled Dot-Product Attention**
  *  Dot-product attention is identical to the algorithm in this paper that call:
     -  **“Scaled Dot-Product Attention”**
  *   **Input:**
-    -  **Queries** and  **keys ** of dimension 𝑑<sub>𝑘 and  **values ** of dimension 𝑑<sub>𝑣
+    -  **Queries** and  **keys** of dimension 𝑑<sub>𝑘 and  **values** of dimension 𝑑<sub>𝑣
 
  *   **Formula of Matrix of outputs:**
 
-<img src="../../assets/images/ai-nlp/Formula-of-Matrix.png" style="width:40%;"/>
+<img src="../../assets/images/ai-nlp/Formula-of-Matrix.png" style="width:40%;"/> <!-- {"left" : 0.84, "top" : 5.86, "height" : 0.52, "width" : 5.02} -->
 
 
-
-
-<img src="../../assets/images/ai-nlp/Model-Architecture-2.png" style="width:20%; float:right;margin-top:-400px;"/>
 
 Notes: 
 
@@ -304,6 +304,9 @@ Notes:
 
  *  **linearly project** the queries, keys and values **𝒉** times with different, learned linear projections to **𝒅<sub>𝒌**, **𝒅<sub>𝒌** and **𝒅<sub>𝒗** dimensions.
 
+<img src="../../assets/images/ai-nlp/Model-Architecture-3.png" style="width:30%; float:right;"/><!-- {"left" : 6.39, "top" : 4.56, "height" : 4.22, "width" : 3.54} -->
+
+
  *  **Formula of Matrix of outputs:**
 
     -  **𝑴𝒖𝒍𝒕𝒊𝑯𝒆𝒂𝒅(𝑸,𝑲,𝑽)= 𝑪𝒐𝒏𝒄𝒂𝒕 (𝒉𝒆𝒂𝒅<sub>𝟏</sub>,...,𝒉𝒆𝒂𝒅<sub>𝒉</sub> ) 𝑾<sup>𝑶</sup>**
@@ -318,7 +321,8 @@ Notes:
     -  𝑊<sup>𝑂</sup>  ∈ 𝑅<sup>(ℎ𝑑<sub>𝑣</sub>  × 𝑑<sub>𝑚𝑜𝑑𝑒𝑙 )</sup>
 
 
-<img src="../../assets/images/ai-nlp/Model-Architecture-3.png" style="width:30%; float:right;margin-top:-600px;"/>
+
+
 
 
 
@@ -381,15 +385,15 @@ Notes:
 
      - use some information about the relative or absolute position of the tokens in the sequence(in table), to make use of the order of the sequence
 
-       -  **n**  is the sequence length
+       -  **n** is the sequence length
 
-       -  **d**  is the representation dimension
+       -  **d** is the representation dimension
 
-       -  **k**  is the kernel size of convolutions
+       -  **k** is the kernel size of convolutions
 
-       -  **r**  the size of the neighborhood in restricted self-attention
+       -  **r** the size of the neighborhood in restricted self-attention
 
-<img src="../../assets/images/ai-nlp/Model-Architecture-4.png" style="width:60%;"/>
+<img src="../../assets/images/ai-nlp/Model-Architecture-4.png" style="width:60%;"/><!-- {"left" : 0.77, "top" : 5.32, "height" : 1.76, "width" : 8.21} -->
 
 Notes: 
 
@@ -431,15 +435,15 @@ Notes:
 
      -  **Computational complexity** per layer
 
-        *  **self-attention**  layers are  **faster**  than  **recurrent**  layers when the sequence length  **n**  is smaller than the representation dimensionality  **d** 
+        *  **self-attention** layers are  **faster**  than  **recurrent**  layers when the sequence length  **n**  is smaller than the representation dimensionality **d** 
 
-        * To improve  **computational performance** :
+        * To improve  **computational performance:**
 
           * self-attention could be restricted to considering only a neighborhood of size  **r**  in the input sequence centered around the respective output position.
 
      -  **Amount of computation** that can be parallelized
 
-     - The  **path length** between long-range dependencies in the network
+     - The **path length** between long-range dependencies in the network
 
  *  **self-attention could yield more interpretable models** 
 
@@ -535,13 +539,15 @@ Notes:
 
  *  **English-to-German dataset:** 
 
-     - The  **Transformer**  achieves better BLEU scores than  **previous models** 
+     - The **Transformer**  achieves better BLEU scores than  **previous models** 
 
  *  **English-to-French dataset:** 
 
      -  **big model** achieves better BLEU score
 
-<img src="../../assets/images/ai-nlp/Results1.png" style="width:60%;"/>
+<img src="../../assets/images/ai-nlp/Results1.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 4.35, "height" : 3.55, "width" : 8.21} -->
+
+
 
 
 
@@ -556,15 +562,15 @@ Notes:
  *  **Model Variations:**
      - To evaluate the importance of different components of the Transformer
  *  according to the table in next slide
-     - Row **A**:
+     - Row **A‫:‬**
        - **worse** than the best setting
        - **quality** also drops off with too many heads
-     - Row **B**:
+     - Row **B‫:‬**
        - reducing the attention key size 𝒅<sub>𝒌 hurts model quality
-     - Row **C** and **D**:
+     - Row **C** and **D:**
        - **bigger models** are better
        - dropout is very helpful in avoiding over-fitting
-     - Row **E**:
+     - Row **E:**
        - **nearly identical results to the base model**
 
 
@@ -576,7 +582,7 @@ Notes:
 
 ## Results
 
-<img src="../../assets/images/ai-nlp/Results2.png" style="width:70%;"/>
+<img src="../../assets/images/ai-nlp/Results2.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.19, "height" : 5.26, "width" : 8.21} -->
 
 
 Notes: 
@@ -611,7 +617,7 @@ Notes:
 
 ## Results
 
-<img src="../../assets/images/ai-nlp/Results3.png" style="width:70%;"/>
+<img src="../../assets/images/ai-nlp/Results3.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.97, "height" : 3.71, "width" : 8.21} -->
 
 
 Notes: 
@@ -630,7 +636,7 @@ Notes:
 
  * Presented the  **Transformer** 
 
-     - the  **first sequence transduction model** based entirely on attention
+     - The **first sequence transduction model** based entirely on attention
 
  *  **Replacing the recurrent layers** most commonly used in encoder-decoder architectures with multi-headed self-attention.
 
@@ -648,7 +654,8 @@ Notes:
 
 ## Question
 
-<img src="../../assets/images/generic/Question.png" style="width:30%;"/>
+<img src="../../assets/images/generic/Question.png" style="width:30%;"/><!-- {"left" : 3.07, "top" : 2.48, "height" : 4.12, "width" : 4.12} -->
+
 
 
 

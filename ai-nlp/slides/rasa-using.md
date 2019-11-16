@@ -128,6 +128,7 @@ class ActionCheckRestaurants(Action):
       return [SlotSet("matches", 
         result if result is not None else [])]
 ```
+<!-- {"left" : 0, "top" : 1.87, "height" : 4.65, "width" : 8.94} -->
 
 Notes: 
 
@@ -144,6 +145,8 @@ templates:
   - text: "Here is something to cheer you up:"
 
 ```
+<!-- {"left" : 0, "top" : 1.84, "height" : 1.74, "width" : 8.44} -->
+
 Notes: 
 
 ---
@@ -161,6 +164,7 @@ Notes:
 }
 ]
 ```
+<!-- {"left" : 0, "top" : 1.53, "height" : 3.19, "width" : 5.11} -->
 
 Notes: 
 
@@ -176,6 +180,8 @@ Notes:
 ]
 
 ```
+<!-- {"left" : 0, "top" : 1.56, "height" : 2.03, "width" : 7.44} -->
+
 Notes: 
 
 ---
@@ -189,12 +195,19 @@ Notes:
 ```bash 
 pip install rasa_nlu[spacy]
 ```
+<!-- {"left" : 0, "top" : 1.96, "height" : 0.64, "width" : 5.95} -->
+
+<br/>
+
  * MITIE: MIT Information Extraction
 
 ```bash
 pip install git+https://github.com/mit-nlp/MITIE.git
 pip install rasa_nlu[mitie]
 ```
+
+<!-- {"left" : 0, "top" : 3.53, "height" : 0.86, "width" : 9.44} -->
+
 Notes: 
 
 ---
@@ -238,6 +251,7 @@ Notes:
 
 - [0-9]{5}
 ```
+<!-- {"left" : 0, "top" : 1.42, "height" : 2.28, "width" : 10.25} -->
 
 Notes: 
 
@@ -251,6 +265,7 @@ python -m rasa_nlu.train \
   --data rasa_training_data/order-status/nlu.json 
   --path ./models/nlu
 ```
+<!-- {"left" : 0, "top" : 1.39, "height" : 1.91, "width" : 10.01} -->
 
 Notes: 
 
@@ -271,6 +286,10 @@ Notes:
 ```bash
 python -m rasa_nlu.server --path projects
 ```
+<!-- {"left" : 0, "top" : 1.89, "height" : 0.64, "width" : 8.54} -->
+
+<br/>
+
   * This will run the service and look in the path projects
 
 Notes: 
@@ -291,6 +310,9 @@ trainer = Trainer(config.load("sample_configs/config_spacy.yml"))
 trainer.train(training_data)
 model_directory = trainer.persist('./projects/default/')  
 ```
+
+<!-- {"left" : 0, "top" : 1.65, "height" : 2.56, "width" : 10.25} -->
+
 Notes: 
 
 ---
@@ -305,6 +327,8 @@ interpreter = Interpreter.load(model_directory)
 
 interpreter.parse(u"The text I want to understand")
 ```
+<!-- {"left" : 0, "top" : 1.67, "height" : 1.65, "width" : 10.25} -->
+
 Notes: 
 
 ---
@@ -325,6 +349,7 @@ trainer = Trainer(config.load("sample_configs/config_spacy.yml"), builder)
 trainer.train(training_data)
 model_directory = trainer.persist('./projects/default/') 
 ```
+<!-- {"left" : 0, "top" : 1.74, "height" : 2.73, "width" : 10.25} -->
 
 Notes: 
 
@@ -345,6 +370,8 @@ interpreter = Interpreter.load(model_directory, builder)     # to use the builde
 # the clone will share resources with the first model, as long as the same builder is passed!
 interpreter_clone = Interpreter.load(model_directory, builder)
 ```
+<!-- {"left" : 0, "top" : 1.77, "height" : 1.4, "width" : 10.25} -->
+
 Notes: 
 
 ---
@@ -367,5 +394,7 @@ interpreter = Interpreter.load(model_directory, builder)
 # , as long as the same builder is passed!
 interpreter_clone = Interpreter.load(model_directory, builder)
 ```
+<!-- {"left" : 0, "top" : 1.84, "height" : 3.48, "width" : 10.25} -->
+
 Notes: 
 

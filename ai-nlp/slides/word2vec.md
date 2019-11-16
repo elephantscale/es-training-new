@@ -12,7 +12,7 @@
 * Words are represented as indices in a vocabulary
 
 
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-1.png"  style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.85, "height" : 4.66, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-1.png"  style="width:60%;"/><!-- {"left" : 1.02, "top" : 3.39, "height" : 4.66, "width" : 8.21} -->
 
 
 ---
@@ -47,7 +47,7 @@
   - Not enough data for simple bag-of-words
   - (Even though there are enough use cases for them)
 
-<img src="../../assets/images/machine-learning/text-bag-of-words-2.png" style="width:70%"/><!-- {"left" : 0.29, "top" : 4.05, "height" : 1.45, "width" : 9.67} -->
+<img src="../../assets/images/machine-learning/text-bag-of-words-2.png" style="width:70%"/><!-- {"left" : 1.04, "top" : 6.97, "height" : 1.22, "width" : 8.16} -->
 
 ---
 
@@ -114,8 +114,7 @@ Notes:
   - (Practically between 100 and 1000)
 * word => vector
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/word2vec-1.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/word2vec-1.png" style="width:50%;"/><!-- {"left" : 1.39, "top" : 3.79, "height" : 4.45, "width" : 7.47} -->
 
 ---
 
@@ -126,16 +125,13 @@ Notes:
     * In this example we see 'food items' are close together on top-left
     * And music items are close together on right
 
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-2.png" style="width:50%;"/><!-- {"left" : 2.02, "top" : 3.75, "height" : 4.68, "width" : 6.21} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-2.png" style="width:50%;"/>
 
 ---
 ## Word2Vec Relationships Between Vectors
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-3.png" style="width:55%;float:right;"/>
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-3.png" style="width:55%;float:right;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
 
 * Another amazing thing word2vec can do is, it can describe relationships between vectors!
 
@@ -163,19 +159,24 @@ list of 50 numbers
 0.34344 , -0.25663 , -0.8523 , 0.1661 , 0.40102 , 1.1685 , -1.0137 , -0.21585 , -0.15155 ,
 0.78321 , -0.91241 , -1.6106 , -0.64426 , -0.51042 ]
 ```
+<!-- {"left" : 0, "top" : 3.24, "height" : 1.48, "width" : 10.25} -->
+
+<br/>
 
 - Let's color code the cells based on their values (red if they're close to 2, white if they're close to 0, blue if they're close to -2)
 
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-embedding-king-1.png" style="width:85%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-embedding-king-1.png" style="width:85%;"/><!-- {"left" : 0.17, "top" : 6.1, "height" : 1.48, "width" : 9.91} -->
+
 
 Notes:
 - Reference : http://jalammar.github.io/illustrated-word2vec/
 
 ---
 
-## Word Embeddings : Magic of Word2Vec
+## Word Embeddings: Magic of Word2Vec
 
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-embedding-king-man-woman-1.png" style="width:85%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-embedding-king-man-woman-1.png" style="width:85%;"/><!-- {"left" : 0.56, "top" : 1.58, "height" : 3.17, "width" : 9.14} -->
+
 
 - See how 'man' and 'woman' are much close to each other than 'king' ?
 
@@ -186,16 +187,14 @@ Notes:
 
 ## Magic of Word2Vec
 
-<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/3rd-party/wor2vec-embeddings-queen-woman-girl-1.png" style="width:85%;"/><!-- {"left" : 1.02, "top" : 2.62, "height" : 4.39, "width" : 8.21} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/wor2vec-embeddings-queen-woman-girl-1.png" style="width:85%;"/>
 
 ---
 
 ## Magic of Word2Vec
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/3rd-party/wor2vec-embeddings-queen-woman-girl-1.png" style="width:55%;float:right;"/>
+<img src="../../assets/images/machine-learning/3rd-party/wor2vec-embeddings-queen-woman-girl-1.png" style="width:55%;float:right;"/><!-- {"left" : 6.9, "top" : 1.02, "height" : 1.72, "width" : 3.21} -->
 
 - There's a straight red column through all of these different words. They're similar along that dimension (and we don't know what each dimensions codes for)
 
@@ -208,14 +207,15 @@ Notes:
 
 ---
 
-## Magic of Word2Vec : Relationship Between Vectors
+## Magic of Word2Vec: Relationship Between Vectors
 
 - One of the really cool featurs of word2vec is it can infer meanings between vectors
 
 - The most famous example is the following formula:  
 __`king - man + woman --> queen`__
 
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-king-man-woman-2.png" style="width:55%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-king-man-woman-2.png" style="width:55%;"/><!-- {"left" : 1.41, "top" : 3.94, "height" : 2.78, "width" : 7.43} -->
+
 
 Notes:
 - Reference : http://jalammar.github.io/illustrated-word2vec/
@@ -226,7 +226,8 @@ Notes:
 
 - Here you can see, when we add / substract vectors, the resulting vector of __(King - Man + Woman)__ is remarkably similar to __Queen__ !
 
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-king-man-woman-3.png" style="width:85%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-king-man-woman-3.png" style="width:85%;"/><!-- {"left" : 1.25, "top" : 2.93, "height" : 3.88, "width" : 7.75} -->
+
 
 Notes:
 - Reference : http://jalammar.github.io/illustrated-word2vec/
@@ -238,15 +239,15 @@ Notes:
 
 - Words are input, vectors are output
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-5.png" style="width:80%;"/>
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-5.png" style="width:80%;"/><!-- {"left" : 0.8, "top" : 3, "height" : 3.64, "width" : 8.21} -->
+
 
 ---
 
 ## Training word2vec Model  using Neural Net
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/word2vec-neural-net-1.png" style="width:60%;float:right;"/>
+<img src="../../assets/images/machine-learning/word2vec-neural-net-1.png" style="width:60%;float:right;"/><!-- {"left" : 5.14, "top" : 1.21, "height" : 2.93, "width" : 4.93} -->
+
 
 - Word2Vec is a shallow 2 layer neural network
 
@@ -274,9 +275,9 @@ Notes:
 * Example:   
 "Soviet __???__"
 * Output is probabilities of next possible words
-    - "Union" : 0.9 (90%)
-    - "Russia" : 0.8 (80%)
-    - "pie" : 0.04  (4%)
+    - "Union": 0.9 (90%)
+    - "Russia": 0.8 (80%)
+    - "pie": 0.04  (4%)
 
 * [original word2vec white paper](https://arxiv.org/pdf/1301.3781.pdf)
 
@@ -302,6 +303,7 @@ Notes:
  - Canada
  - Mexico
 ```
+<!-- {"left" : 0, "top" : 4.35, "height" : 2.03, "width" : 9.11} -->
 
 ---
 
@@ -329,7 +331,7 @@ Notes:
 
 - Some really good models are available as open source
 
-- Here is a repo : https://github.com/RaRe-Technologies/gensim-data
+- Here is a repo: https://github.com/RaRe-Technologies/gensim-data
 
 | model | size | number of vectors | description |
 |--------------------------|----------|-------------------|------------------------------------------------------|
@@ -341,16 +343,15 @@ Notes:
 
 ## Lab: Word2Vec
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" />
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" /><!-- {"left" : 6.77, "top" : 1, "height" : 4.43, "width" : 3.32} -->
 
-
- * **Overview**:
+ * **Overview:**
     - Use word2vec
 
- * **Builds on previous labs**:
+ * **Builds on previous labs:**
     - None
 
- * **Approximate time**:
+ * **Approximate time:**
     - 30 mins
 
  * **Instructions**"
@@ -404,4 +405,3 @@ Notes:
     - 5 for CBOW
 
 
----
