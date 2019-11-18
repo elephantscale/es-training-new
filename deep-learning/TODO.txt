@@ -1,9 +1,6 @@
 - Tensorflow-Intro
     - cleanup
 
-- DL Intro
-    - merge with Machine Learning Primer and delete
-
 - DL Concepts
     - flow isn't smooth
 
@@ -23,20 +20,11 @@
 
     - revisit activation functions
 
-    - optimizers
-    use mini golf game as example
-    hit the ball off to an angle, optimizer corrects it
-    then right angle.. hit it too short... optimizer adds a little more power
 
     - Add a quiz at the end
 
-    - double check equations and replace them graphics
-
-    - NOTE: In this case, using the RMSprop optimization algorithm is preferable to stochastic gradient descent (SGD), because RMSprop automates learning-rate tuning for us. (Other optimizers, such as Adam and Adagrad, also automatically adapt the learning rate during training, and would work equally well here.)
-
     - do part-1 and part-2
 
-    - convert optimizer formulas to images
 
 
 =====================================
