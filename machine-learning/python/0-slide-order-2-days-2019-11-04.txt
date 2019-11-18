@@ -1,0 +1,39 @@
+## To assemble md slides
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-order-2-days-2019-11-04.txt
+## to make pdfs
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-order-2-days-2019-11-04.txt  pdf
+##          (-d will replace current assembly.out)
+
+About-Machine-Learning-With-Python-Class-2-days-2019-11-04.md
+
+## high level overview
+../generic/Machine-Learning-Primer.md
+
+## Python basics
+../../data-analysis-python/slides/PYTHON-NumPy.md
+../../data-analysis-python/slides/PYTHON-Pandas.md
+
+## Basic Text Python
+../../machine-learning/generic/Text-Analytics-Intro.md
+../../data-analysis-python/slides/PYTHON-Text-NLTK.md
+../../data-analysis-python/slides/PYTHON-Text-Spacy.md
+../../machine-learning/generic/Text-Analytics-Vectorization.md
+
+## word2vec
+../../ai-nlp/slides/word2vec.md
+../../ai-nlp/doc/word2vec-paper.pdf
+
+## ML
+../generic/Data-Exploration.md
+../generic/ML-Concepts-All.md
+
+## Introducing SciKit Learn
+../../data-analysis-python/slides/PYTHON-Sklearn.md
+
+## Algorithms
+Regressions-Python.md
+Classifications-Python.md
+Unsupervised-Python.md
+
+## Final summary
+../generic/Algorithm-Summary-details.md

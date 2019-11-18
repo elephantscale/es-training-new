@@ -2,13 +2,31 @@
 
 ---
 
-# Unsupervised Generic
+## Lesson Objectives
 
-[../../machine-learning/generic/Unsupervised-Generic.md](../../machine-learning/generic/Unsupervised-Generic.md)
+
+  * Learn about unsupervised algorithms in Scikit-Learn
+
+  * Learn use cases
+
+Notes:
+
 
 ---
 
-# Clustering in Scikit-learn
+## Unsupervised Intro
+
+[../generic/Unsupervised-Intro.md](../generic/Unsupervised-Intro.md)
+
+---
+
+## Clustering
+
+[../generic/Unsupervised-Clustering.md](../generic/Unsupervised-Clustering.md)
+
+---
+
+# Clustering in Scikit-Learn
 
 ---
 
@@ -19,7 +37,7 @@
 
     - Put data in ndarray
     - Perform clustering with a specified number of iterations
-    - Evaluate the “fit” of the cluster. Is it a good run?
+    - Evaluate the "fit" of the cluster. Is it a good run?
     - If not, change the number of clusters (value of k)
     - Once we have a good clustering run:
        - Map each vector to its nearest cluster
@@ -32,12 +50,23 @@ Notes:
 
 ## K-Means in Scikit-learn
 
+```python
+from sklearn.cluster import KMeans
+import numpy as np
 
-  * k-means clustering
-  * Must do import:
-    -  `from sklearn import kmeans`
-  * Default values: just provide `KMeans(n_clusters=value-of-k)`
-    - `kmeans = kmeans.KMeans(n_clusters=2. random_state=0).fit(X)`
+X = np.array([[1, 2], [1, 4], [1, 0],
+             [10, 2], [10, 4], [10, 0]])
+kmeans = KMeans(n_clusters=2, random_state=0).fit(X)
+
+print (kmeans.labels_)
+
+print (kmeans.predict([[0, 0], [12, 3]]))
+
+print (kmeans.cluster_centers_)
+
+## WSSSE
+print (kmeans._inertia)
+```
 
 Notes:
 
@@ -45,38 +74,25 @@ Notes:
 
 ## Evaluating Cluster Performance
 
+<img src="../../assets/images/machine-learning/kmeans-13-wssse.png" alt="kmeans-13-wssse.png" style="width:40%;float:right;"/><!-- {"left" : 6.26, "top" : 0.98, "height" : 2.29, "width" : 3.91} -->
+
   * WSSSE: Within Set Sum of Squared Errors
-
-  * WSSSSE = `kmeans._inertia`
-
     - COST = sum of squared distances of points to cluster center.
-
+  * WSSSSE = `kmeans._inertia`
   * What does this mean?
-
     - WSSSE will decrease with increasing values of k.
-    - “Law of Diminishing Returns”
+    - "Law of Diminishing Returns"
       - High values of k give marginal gain.
-
   * We can iterate across k until we get good results.
+  * __Question for class:__
+    - Identify the 'elbow' region
+    - What would be a reasonably good K in this case?
 
 Notes:
-
----
-
-## The Elbow Method
-
-* Identify the “elbow” on the curve
-
-* Example: What value of K to select in this case?
-
-<img src="../../assets/images/machine-learning/kmeans-13-wssse.png" alt="kmeans-13-wssse.png" style="width:50%;"/><!-- {"left" : 1.01, "top" : 2.26, "height" : 4.69, "width" : 8.03} -->
-
-
-Notes:
-
 Elbow method is basically plotting “variance” % of a data against number of clusters and find the point after which  adding more clusters will not make a huge difference. That is called Elbow method.
 
 ---
+
 
 ## Using Scikit-Learn KMeans Model
 
@@ -109,6 +125,13 @@ Notes:
 
 
 Notes:
+
+---
+
+
+## Dimensionality Reduction
+
+[../generic/Unsupervised-Dimensionality-Reduction.md](../generic/Unsupervised-Dimensionality-Reduction.md)
 
 ---
 

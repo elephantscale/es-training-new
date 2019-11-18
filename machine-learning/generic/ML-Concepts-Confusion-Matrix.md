@@ -213,24 +213,6 @@ Notes:
 
 ---
 
-## How is ROC Curve Generated
-
- * Y-axis: True Positive Rate (TPR)
-    - Actual=positive, predicted=positive
-    - Correct!
-
- * X-axis: False Positive Rate (FPR)
-    - Actual=negative, predicted=positive
-    - Incorrect!
-
- * `0.0 <= TPR & FPR  <= 1.0`
-
- * Plot TPR / FPR while varying 'threshold'
-    - what is threshold?
-
-Notes:
-
----
 
 ## Threshold
 <img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 6.42, "top" : 2.18, "height" : 5.29, "width" : 3.72} -->
@@ -285,12 +267,23 @@ Notes:
 
 ---
 
-## ROC (Receiver Operating Characteristic) Curve
+## How is ROC Curve Generated
 
-<img src="../../assets/images/machine-learning/ROC-07.png" alt="ROC-07.png" style="max-width:80%;"/> <!-- {"left" : 1.27, "top" : 1.83, "height" : 5.98, "width" : 7.7} -->
+<!-- TODO shiva -->
 
+<img src="../../assets/images/machine-learning/ROC-07.png" alt="ROC-07.png" style="width:50%;float:right;"/> <!-- {"left" : 1.27, "top" : 1.83, "height" : 5.98, "width" : 7.7} -->
 
+ * Y-axis: True Positive Rate (TPR)
+    - Actual=positive, predicted=positive
+    - Correct!
 
+ * X-axis: False Positive Rate (FPR)
+    - Actual=negative, predicted=positive
+    - Incorrect!
+
+ * `0.0 <= TPR & FPR  <= 1.0`
+
+ * Plot TPR / FPR while varying 'threshold'
 
 Notes:
 
@@ -372,8 +365,11 @@ Notes:
 
 ## Using AUC to Measure Accuracy
 
+
  * Accuracy can be specified using a grading system
 
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:45%;float:right;"/> <!-- {"left" : 0.42, "top" : 4.36, "height" : 4.26, "width" : 5.71} -->
 
 | AUC        | Grade         |
 |--------    |----------     |
@@ -385,7 +381,6 @@ Notes:
 
 <!-- {"left" : 6.7, "top" : 1.98, "height" : 2.38, "width" : 3.3, "columnwidth" : [1.61, 1.69]} -->
 
-<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:35%;"/> <!-- {"left" : 0.42, "top" : 4.36, "height" : 4.26, "width" : 5.71} -->
 
 
 
@@ -400,13 +395,15 @@ Notes:
 ---
 ## ROC / AUC For Multiclass Classifiers
 
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:45%;float:right;"/> <!-- {"left" : 2.43, "top" : 4.43, "height" : 4.03, "width" : 5.4} -->
+
  * Say our algorithm recognizes hand-written digits (postal code) into numbers.
  * Its ROC can be drawn as follows
  * **Question for class**:
     - Which digit the classifier is doing well?
     - Which digit the classifier is not doing well?
 
-<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:35%;"/> <!-- {"left" : 2.43, "top" : 4.43, "height" : 4.03, "width" : 5.4} -->
 
 
 

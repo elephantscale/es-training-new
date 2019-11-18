@@ -32,11 +32,11 @@ Notes:
 
 * Consider college application and admittance data
 
-*  **Inputs**: GRE:  max 800; GPA: 1.0  to4.0; Rank: 1 (better) to 4
+*  **Inputs:** GRE:  max 800; GPA: 1.0  to4.0; Rank: 1 (better) to 4
 
 *  **Output**
 
-     - Admitted : Yes or No
+     - Admitted: Yes or No
 
 
 | **gre** | **gpa** | **rank** | **admitted** |
@@ -315,19 +315,15 @@ Notes:
 
 <img src="../../assets/images/machine-learning/decision-trees-greedy-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
 
- * Select the `best split` from a<br/>
-  set of possible splits
+ * Select the `best split` from a set of possible splits
 
- * Maximize the information <br/>
- gain at a tree node
+ * Maximize the information gain at a tree node
 
- * Greedy algorithm may not <br/>
- find the best tree
+ * Greedy algorithm may not find the best tree
 
      - Grabs the best at each step
 
-     - Does not consider all steps <br/>
-     together
+     - Does not consider all steps together
 
 
 
@@ -427,7 +423,8 @@ Notes:
 ---
 
 ## Stopping Criteria 1:
-### Min number of elements per node
+
+*  **Min number of elements per node**
 
 <img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:50%;float:right;"/><!--{"left" : 6.3, "top" : 4.57, "height" : 2.16, "width" : 3.67} -->
 
@@ -441,8 +438,7 @@ Notes:
 
      - Node B2 = 6 observations
 
-     - Now Node B1 is considered a leaf node<br/>
-       (4 < minimum 5) (no more splitting it)
+     - Now Node B1 is considered a leaf node (4 < minimum 5) (no more splitting it)
 
      - Node B2 is split farther into C1 and C2
 
@@ -453,7 +449,7 @@ Notes:
 ---
 
 ## Stopping Criteria 1:
-### Min number of elements per node
+* **Min number of elements per node**
 
 * If we set minimum_per_node = 1
 
@@ -629,7 +625,7 @@ Notes:
  *  **Parameters**
      - Max depth: how deep a tree can grow
      - Max bins: how many nodes/bins the tree can have
-     - Min samples per leaf : stop keep dividing
+     - Min samples per leaf: stop keep dividing
 
 Notes:
 
@@ -1016,7 +1012,7 @@ Notes:
 
  *  **Instructions** 
 
-     -  Review next few slides for sample code in  Python / Spark / R
+     - Review next few slides for sample code in  Python / Spark / R
 
      - RF1: Prosper loan data (classification)
 
