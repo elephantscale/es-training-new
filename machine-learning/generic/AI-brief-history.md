@@ -238,30 +238,6 @@ Notes:
     - [Google AI learns to find cat videos -- Wired magazine](https://www.wired.com/2012/06/google-x-neural-network/)
 
 ---
-## Godfathers of Neural Networks
-
- * [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton) @ Google, University of Toronto.  
-Kept NN research going during 'AI Winter'
-
- * [Yann LeCun](http://yann.lecun.com/) - Chief AI researcher @ Facebook, Professor @ University of New York
-
- * [Yoshua Bengio](https://en.wikipedia.org/wiki/Yoshua_Bengio) - Professor @ University of Montreal
-
- * **These 3 won ACM Turing Award (Nobel price of computing) in 2019**
-
-<img src="../../assets/images/people/geoffrey-hinton-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="15.6%" />&nbsp;<!-- {"left" : 1.1, "top" : 5.52, "height" : 2.77, "width" : 2.07} -->
-<img src="../../assets/images/people/yann-lecun-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20.5%" />&nbsp;<!-- {"left" : 3.58, "top" : 5.52, "height" : 2.77, "width" : 2.71} -->
-<img src="../../assets/images/people/yoshua-bengio-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="17.9%" /><!-- {"left" : 6.77, "top" : 5.52, "height" : 2.77, "width" : 2.37} -->
-
-Notes:
-- https://www.deeplearningitalia.com/godfather-2/
-- https://torontolife.com/tech/ai-superstars-google-facebook-apple-studied-guy/
-- https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
-- https://www.wired.com/story/godfathers-ai-boom-win-computings-highest-honor/
-- https://www.theverge.com/2019/3/27/18280665/ai-godfathers-turing-award-2018-yoshua-bengio-geoffrey-hinton-yann-lecun
-
----
-
 ## The Great AI Revival (2010 on)
 
 
@@ -502,6 +478,30 @@ Notes:
 ref : https://beamandrew.github.io/deeplearning/2017/02/23/deep_learning_101_part1.html
 
 ---
+## Godfathers of Neural Networks
+
+ * [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton) @ Google, University of Toronto.  
+Kept NN research going during 'AI Winter'
+
+ * [Yann LeCun](http://yann.lecun.com/) - Chief AI researcher @ Facebook, Professor @ University of New York
+
+ * [Yoshua Bengio](https://en.wikipedia.org/wiki/Yoshua_Bengio) - Professor @ University of Montreal
+
+ * **These 3 won ACM Turing Award (Nobel price of computing) in 2019**
+
+<img src="../../assets/images/people/geoffrey-hinton-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="15.6%" />&nbsp;<!-- {"left" : 1.1, "top" : 5.52, "height" : 2.77, "width" : 2.07} -->
+<img src="../../assets/images/people/yann-lecun-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20.5%" />&nbsp;<!-- {"left" : 3.58, "top" : 5.52, "height" : 2.77, "width" : 2.71} -->
+<img src="../../assets/images/people/yoshua-bengio-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="17.9%" /><!-- {"left" : 6.77, "top" : 5.52, "height" : 2.77, "width" : 2.37} -->
+
+Notes:
+- https://www.deeplearningitalia.com/godfather-2/
+- https://torontolife.com/tech/ai-superstars-google-facebook-apple-studied-guy/
+- https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
+- https://www.wired.com/story/godfathers-ai-boom-win-computings-highest-honor/
+- https://www.theverge.com/2019/3/27/18280665/ai-godfathers-turing-award-2018-yoshua-bengio-geoffrey-hinton-yann-lecun
+
+---
+
 
 ## AI History Recap
 
