@@ -1,6 +1,7 @@
 # PYTHON:Pandas
 
-<img src="../../assets/images/logos/pandas-logo-1.png" style="width:50%;" />
+<img src="../../assets/images/logos/pandas-logo-1.png" style="width:50%;" /><!-- {"left" : 2.83, "top" : 5.27, "height" : 0.86, "width" : 4.12} -->
+
 
 ---
 ## Lesson Objectives
@@ -46,8 +47,7 @@ Notes:
 
 ## Series
 
-<!-- TODO shiva -->
-<img src="../../assets/images/data-analysis-python/pandas-series-1.png" style="width:40%;float:right;" />
+<img src="../../assets/images/data-analysis-python/pandas-series-1.png" style="width:40%;float:right;" /><!-- {"left" : 6.84, "top" : 1.09, "height" : 3.1, "width" : 3.19} -->
 
   * Pandas has a Series type (single column in a database table)
   * All elements in a Series must be of same type (NaN is okay)
@@ -66,7 +66,7 @@ Notes:
 3         New York
 dtype: object
 ```
-<!-- {"left" : 0.57, "top" : 6.4, "height" : 2.16, "width" : 6.05} -->
+<!-- {"left" : 0, "top" : 5.21, "height" : 2.48, "width" : 6.94} -->
 
 Notes:
 
@@ -133,7 +133,7 @@ Notes:
 3    d
 dtype: object
 ```
-<!-- {"left" : 0.0, "top" : 1.56, "height" : 2.2, "width" : 6.41} -->
+<!-- {"left" : 0.0, "top" : 1.78, "height" : 2.2, "width" : 6.41} -->
 
 
 ```python
@@ -144,7 +144,7 @@ dtype: object
 2    5
 dtype: int64
 ```
-<!-- {"left" : 0.0, "top" : 4.0, "height" : 1.88, "width" : 6.43} -->
+<!-- {"left" : 0.0, "top" : 4.17, "height" : 1.88, "width" : 6.43} -->
 
 ```python
 >>> s = pd.Series(5, index=["a", "b", "c"], dtype = np.complex)
@@ -154,7 +154,7 @@ b    (5+0j)
 c    (5+0j)
 dtype: complex
 ```
-<!-- {"left" : 0.0, "top" : 6.15, "height" : 1.74, "width" : 9.69} -->
+<!-- {"left" : 0.0, "top" : 6.25, "height" : 1.74, "width" : 9.69} -->
 
 
 Notes:
@@ -209,7 +209,7 @@ Feb 3.0
 Mar 5.0
 dtype: float64
 ```
-<!-- {"left" : 0.0, "top" : 5.29, "height" : 1.74, "width" : 8.44} -->
+<!-- {"left" : 0.0, "top" : 5.43, "height" : 1.74, "width" : 8.44} -->
 
 Notes:
 
@@ -217,14 +217,13 @@ Notes:
 
 ## Numpy Array versus Pandas Series
 
-
-|                                | Numpy Array                           | Pandas Series                                                                    	|
-|--------------------------------|---------------------------------------|----------------------------------------------------------------------------------	|
-| Is it typed?                   | Yes, same type.                       | Yes, same type,  but can use "object" type that  can point to different objects. 	|
-| Multi-Dimensional?             | Any number of dimensions              | Single Dimensional                                                               	|
-| Has Index?                     | implicitly an integer index myarray[0] | Explicitly has an settable  index. myseries['abc'],  defaults to integer index.  	|
-| Follows NumPy  interface? | Yes                                   | Yes                                                                              	|
-| Convert to numpy array?         | Already is!                           | Series.values                                                                    	|
+|  | Numpy Array | Pandas Series |
+|---------------------------|----------------------------------------|----------------------------------------------------------------------------------|
+| Is it typed? | Yes, same type. | Yes, same type,  but can use "object" type that  can point to different objects. |
+| Multi-Dimensional? | Any number of dimensions | Single Dimensional |
+| Has Index? | implicitly an integer index myarray[0] | Explicitly has an settable  index. myseries['abc'],  defaults to integer index. |
+| Follows NumPy  interface? | Yes | Yes |
+| Convert to numpy array? | Already is! | Series.values |
 
 <!-- {"left" : 0.65, "top" : 1.57, "height" : 3.87, "width" : 8.96, "columnwidth" : [2.81, 3.08, 3.07]} -->
 
@@ -269,7 +268,6 @@ Notes:
 ## DataFrame
 
 
-  * Pandas has a DataFrame data structure
   * DataFrame is a 2D data structure to hold 'tabular' data
   * Think of an 'Excel spreadsheet' or a 'database table' with rows and columns
   * Each column can be a different data type
@@ -300,6 +298,15 @@ Notes:
 
 ---
 
+## Dataframe
+
+* Dataframe is a collection of series
+
+<img src="../../assets/images/data-analysis-python/pandas-series-3.png" style="width:90%;" /><!-- {"left" : 0.5, "top" : 2.71, "height" : 2.49, "width" : 9.25} -->
+
+
+---
+
 ## Creating DataFrame
 
 * Here are more examples of creating a DataFrame
@@ -314,7 +321,7 @@ Name  Age
 2  Steve   29
 3  Ricky   42
 ```
-<!-- {"left" : 0.0, "top" : 1.55, "height" : 1.88, "width" : 10.27} -->
+<!-- {"left" : 0.0, "top" : 1.7, "height" : 1.88, "width" : 10.27} -->
 
 |   | Name  | Age |
 |---|-------|-----|
@@ -356,7 +363,7 @@ city  pop  rain
 2    Los Angeles   20   1.0
 3      San Diego   24   3.4
 ```
-<!-- {"left" : 0.0, "top" : 1.5, "height" : 3.21, "width" : 10.27} -->
+<!-- {"left" : 0.0, "top" : 1.86, "height" : 3.21, "width" : 10.27} -->
 
 |   | city          | pop | rain |
 |---|---------------|-----|------|
@@ -365,7 +372,7 @@ city  pop  rain
 | 2 | Los Angeles   | 20  | 1    |
 | 3 | San Diego     | 24  | 3.4  |
 
-<!-- {"left" : 2.34, "top" : 5, "height" : 2.01, "width" : 5.58, "columnwidth" : [0.95, 2.37, 1.08, 1.18]} -->
+<!-- {"left" : 2.34, "top" : 5.94, "height" : 2.01, "width" : 5.58, "columnwidth" : [0.95, 2.37, 1.08, 1.18]} -->
 
 Notes:
 
@@ -383,7 +390,7 @@ pop       int64
 rain    float64
 dtype: object
 ```
-<!-- {"left" : 0.0, "top" : 1.5, "height" : 1.74, "width" : 3.61} -->
+<!-- {"left" : 0.0, "top" : 1.76, "height" : 1.74, "width" : 3.61} -->
 
 |   | city          | pop | rain |
 |---|---------------|-----|------|
@@ -433,7 +440,7 @@ Notes:
 
 
 
-<img src="../../assets/images/data-analysis-python/Slicing-Data-Frames.png" alt="Slicing-Data-Frames.png" style="width:70%;"/><!-- {"left" : 0.14, "top" : 1.05, "height" : 5.94, "width" : 9.97} -->
+<img src="../../assets/images/data-analysis-python/Slicing-Data-Frames.png" alt="Slicing-Data-Frames.png" style="width:70%;"/><!-- {"left" : 0.14, "top" : 1.56, "height" : 5.94, "width" : 9.97} -->
 
 
 Notes:
@@ -443,7 +450,7 @@ Notes:
 ## Data Frame Slicing
 
 
-<img src="../../assets/images/data-analysis-python/Data-Frame-Slicing.png" alt="Data-Frame-Slicing.png" style="width:70%;"/><!-- {"left" : 0, "top" : 0.79, "height" : 5.93, "width" : 10.25} -->
+<img src="../../assets/images/data-analysis-python/Data-Frame-Slicing.png" alt="Data-Frame-Slicing.png" style="width:70%;"/><!-- {"left" : 0, "top" : 1.57, "height" : 5.93, "width" : 10.25} -->
 
 Notes:
 
@@ -459,7 +466,7 @@ Notes:
 | Los Angeles       | 20     | 1     |
 | San Diego         | 24     | 3.4   |
 
-<!-- {"left" : 2.97, "top" : 1.25, "height" : 2.03, "width" : 4.32, "columnwidth" : [2.08, 1.08, 1.08]} -->
+<!-- {"left" : 2.97, "top" : 1.45, "height" : 2.03, "width" : 4.32, "columnwidth" : [2.08, 1.08, 1.08]} -->
 
 
 ```python
@@ -470,7 +477,7 @@ Notes:
    city  pop  rain
 0  San Francisco   10     2
 ```
-<!-- {"left" : 0.0, "top" : 3.78, "height" : 2.03, "width" : 8.94} -->
+<!-- {"left" : 0.0, "top" : 4.01, "height" : 2.03, "width" : 8.94} -->
 
 Notes:
 
@@ -487,7 +494,7 @@ Notes:
 | Los Angeles    | **20** | 1    |
 | San Diego      | **24** | 3.4  |
 
-<!-- {"left" : 3.01, "top" : 0.92, "height" : 2.03, "width" : 4.24, "columnwidth" : [2.08, 1.08, 1.08]} -->
+<!-- {"left" : 3.01, "top" : 1.47, "height" : 2.03, "width" : 4.24, "columnwidth" : [2.08, 1.08, 1.08]} -->
 
 
 ```python
@@ -512,7 +519,7 @@ float64
 > cities.iloc[:,1]
 10  15  20  24
 ```
-<!-- {"left" : 0.0, "top" : 3.12, "height" : 4.18, "width" : 9.48} -->
+<!-- {"left" : 0.0, "top" : 4.05, "height" : 4.18, "width" : 9.48} -->
 
 
 Notes:
@@ -567,7 +574,7 @@ Sub dataframe
 > type(cities.iloc[:,[2]])
 <class 'pandas.core.frame.DataFrame'>
 ```
-<!-- {"left" : 0.0, "top" : 0.9, "height" : 3.78, "width" : 6.94} -->
+<!-- {"left" : 0.0, "top" : 1.51, "height" : 3.78, "width" : 6.94} -->
 
 | Raw   | city          | pop    | rain |
 |----   |-------------- |------  |------|
@@ -576,7 +583,7 @@ Sub dataframe
 | **2** | Los Angeles   | **20** | 1    |
 | **3** | San Diego     | **24** | 3.4  |
 
-<!-- {"left" : 4.56, "top" : 1.5, "height" : 2.01, "width" : 5.46, "columnwidth" : [0.9, 1.91, 1.24, 1.41]} -->
+<!-- {"left" : 4.56, "top" : 1.83, "height" : 2.01, "width" : 5.46, "columnwidth" : [0.9, 1.91, 1.24, 1.41]} -->
 
 Notes:
 
@@ -596,7 +603,7 @@ Notes:
 > type(cities.iloc[:,1])
 "< 'pandas.core.series.Series'>"
 ```
-<!-- {"left" : 0.0, "top" : 4.82, "height" : 2.61, "width" : 6.11} -->
+<!-- {"left" : 0.0, "top" : 1.56, "height" : 2.61, "width" : 6.11} -->
 
 | city          | pop    | rain |
 |---------------|------  |------|
@@ -605,7 +612,7 @@ Notes:
 | Los Angeles   | **20** | 1    |
 | San Diego     | **24** | 3.4  |
 
-<!-- {"left" : 5.89, "top" : 4.82, "height" : 2.01, "width" : 4.09, "columnwidth" : [2.08, 1.1, 0.92]} -->
+<!-- {"left" : 3.08, "top" : 5.06, "height" : 2.01, "width" : 4.09, "columnwidth" : [2.08, 1.1, 0.92]} -->
 
 Notes:
 
@@ -632,7 +639,7 @@ cities.loc[['c1']]
    city  pop  rain
 c1  San Francisco   10     2
 ```
-<!-- {"left" : 0.0, "top" : 2.82, "height" : 2.9, "width" : 8.44} -->
+<!-- {"left" : 0.0, "top" : 3.71, "height" : 2.9, "width" : 8.44} -->
 
 Notes:
 
@@ -650,6 +657,8 @@ def clean(x):
 
 data['revenue'] = data['Revenue'].apply(clean)
 ```
+<!-- {"left" : 0.0, "top" : 2, "height" : 1.65, "width" : 10.25} -->
+
 Notes:
 
 ---
@@ -664,7 +673,7 @@ Notes:
 data['revenue'] = data['revenue'].apply(
   lambda x : x.replace("," ""))
 ```
-<!-- {"left" : 0.0, "top" : 1.94, "height" : 3.04, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.66, "height" : 0.98, "width" : 8.51} -->
 
 Notes:
 
@@ -682,7 +691,7 @@ Notes:
 3        San Diego
 Name: city, dtype: object
 ```
-<!-- {"left" : 0.0, "top" : 1.92, "height" : 2.03, "width" : 4.94} -->
+<!-- {"left" : 0.0, "top" : 2.33, "height" : 2.28, "width" : 5.55} -->
 
 
 |       | city              | pop    | rain |
@@ -692,7 +701,7 @@ Name: city, dtype: object
 | **2** | **Los Angeles**   | 20     | 1    |
 | **3** | **San Diego**     | 24     | 3.4  |
 
-<!-- {"left" : 3.1, "top" : 4.61, "height" : 1.99, "width" : 4.05, "columnwidth" : [0.64, 1.85, 0.78, 0.78]} -->
+<!-- {"left" : 3.1, "top" : 5.72, "height" : 1.99, "width" : 4.05, "columnwidth" : [0.64, 1.85, 0.78, 0.78]} -->
 
 Notes:
 
@@ -710,7 +719,7 @@ city  pop
 2    Los Angeles   20
 3      San Diego   24
 ```
-<!-- {"left" : 0.0, "top" : 1.92, "height" : 2.03, "width" : 4.94} -->
+<!-- {"left" : 0.0, "top" : 2.14, "height" : 2.31, "width" : 5.63} -->
 
 |     | city          | pop    | rain |
 |-----|-------------- |--------|------|
@@ -719,7 +728,7 @@ city  pop
 | 2   | Los Angeles   | 20     | 1    |
 | 3   | San Diego     | 24     | 3.4  |
 
-<!-- {"left" : 3.1, "top" : 4.61, "height" : 1.99, "width" : 4.05, "columnwidth" : [0.64, 1.85, 0.78, 0.78]} -->
+<!-- {"left" : 3.1, "top" : 5.3, "height" : 1.99, "width" : 4.05, "columnwidth" : [0.64, 1.85, 0.78, 0.78]} -->
 
 Notes:
 
@@ -737,7 +746,7 @@ Notes:
 3        San Diego
 Name: city, dtype: object
 ```
-<!-- {"left" : 0.0, "top" : 1.5, "height" : 2.03, "width" : 4.94} -->
+<!-- {"left" : 0.0, "top" : 1.77, "height" : 2.31, "width" : 5.62} -->
 
 |     | city              | pop    | rain |
 |-----|---------------    |--------|------|
@@ -746,7 +755,7 @@ Name: city, dtype: object
 | 2   | **Los Angeles**   | 20     | 1    |
 | 3   | **San Diego**     | 24     | 3.4  |
 
-<!-- {"left" : 2.87, "top" : 4.03, "height" : 2.03, "width" : 4.53, "columnwidth" : [0.57, 2.08, 0.93, 0.93]} -->
+<!-- {"left" : 2.87, "top" : 4.95, "height" : 2.03, "width" : 4.53, "columnwidth" : [0.57, 2.08, 0.93, 0.93]} -->
 
 Notes:
 
@@ -764,7 +773,7 @@ city  pop
 2    Los Angeles   20
 3      San Diego   24
 ```
-<!-- {"left" : 0.0, "top" : 1.95, "height" : 2.03, "width" : 5.28} -->
+<!-- {"left" : 0.0, "top" : 2.2, "height" : 2.35, "width" : 6.12} -->
 
 |       | city              | pop    | rain |
 |-----  |---------------    |------  |------|
@@ -773,7 +782,7 @@ city  pop
 | **2** | **Los Angeles**   | **20** | 1    |
 | **3** | **San Diego**     | **24** | 3.4  |
 
-<!-- {"left" : 2.87, "top" : 4.03, "height" : 2.03, "width" : 4.53, "columnwidth" : [0.57, 2.08, 0.93, 0.93]} -->
+<!-- {"left" : 2.87, "top" : 5.38, "height" : 2.03, "width" : 4.53, "columnwidth" : [0.57, 2.08, 0.93, 0.93]} -->
 
 Notes:
 
@@ -792,7 +801,7 @@ city  pop  rain    area
 2    Los Angeles   20   1.0  502.76
 3      San Diego   24   3.4  372.39
 ```
-<!-- {"left" : 0.0, "top" : 1.52, "height" : 2.08, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.85, "height" : 2.08, "width" : 10.25} -->
 
 
 |    | city          | pop | rain | **area**   |
@@ -827,7 +836,7 @@ Notes:
 3    372.39
 Name: area, dtype: float64
 ```
-<!-- {"left" : 0.0, "top" : 1.48, "height" : 3.87, "width" : 5.02} -->
+<!-- {"left" : 0.0, "top" : 1.79, "height" : 4.56, "width" : 5.92} -->
 
 Notes:
 
@@ -842,7 +851,7 @@ Notes:
 | 2 | Los Angeles   | 20  | 1    | **502.76** |
 | 3 | San Diego     | 24  | 3.4  | **372.39** |
 
-<!-- {"left" : 4.98, "top" : 2.74, "height" : 2.01, "width" : 5.17, "columnwidth" : [0.61, 1.74, 0.84, 0.85, 1.13]} -->
+<!-- {"left" : 2.54, "top" : 2.49, "height" : 2.01, "width" : 5.17, "columnwidth" : [0.61, 1.74, 0.84, 0.85, 1.13]} -->
 
 &nbsp;
 &nbsp;
@@ -854,7 +863,7 @@ Notes:
 | &nbsp;**502.76**&nbsp; |
 | &nbsp;**372.39**&nbsp; |
 
-<!-- {"left" : 7.4, "top" : 5.18, "height" : 2.03, "width" : 1.04, "columnwidth" : [1.04]} -->
+<!-- {"left" : 4.61, "top" : 5.43, "height" : 2.03, "width" : 1.04, "columnwidth" : [1.04]} -->
 
 Notes:
 
@@ -868,7 +877,7 @@ Notes:
 >>> cities[1] # row index 1
 <ERROR!!!>
 ```
-<!-- {"left" : 0.0, "top" : 1.35, "height" : 0.88, "width" : 5.38} -->
+<!-- {"left" : 0.0, "top" : 2.06, "height" : 0.88, "width" : 5.38} -->
 
 ```python
 >>> cities.iloc[1]
@@ -877,7 +886,7 @@ pop          15
 rain       10.0
 Name: 1, dtype: object
 ```
-<!-- {"left" : 0.0, "top" : 2.4, "height" : 1.6, "width" : 4.11} -->
+<!-- {"left" : 0.0, "top" : 3.73, "height" : 1.6, "width" : 4.11} -->
 
 ```python
 >>> cities.iloc[[1]]
@@ -885,7 +894,7 @@ Name: 1, dtype: object
 city              
 Seattle   15  10.0
 ```
-<!-- {"left" : 4.25, "top" : 2.57, "height" : 1.44, "width" : 4.11} -->
+<!-- {"left" : 0, "top" : 6.13, "height" : 1.44, "width" : 4.11} -->
 
 Notes:
 
@@ -927,7 +936,7 @@ Notes:
 1      Seattle   15  10.0
 2  Los Angeles   20   1.0
 ```
-<!-- {"left" : 0.0, "top" : 1.5, "height" : 1.44, "width" : 8.28} -->
+<!-- {"left" : 0.0, "top" : 2.17, "height" : 1.44, "width" : 8.28} -->
 
 |       | city           | pop   | rain |   	
 |----   |--------------  |----   |----- |
@@ -936,7 +945,7 @@ Notes:
 | **2** | **Los Angeles**| **20**| 1    |
 | 3     | San Diego      | 24    | 3.4  |  
 
-<!-- {"left" : 5.31, "top" : 2.05, "height" : 2.01, "width" : 4.74, "columnwidth" : [0.73, 1.94, 1.01, 1.06]} -->
+<!-- {"left" : 2.76, "top" : 4.88, "height" : 2.01, "width" : 4.74, "columnwidth" : [0.73, 1.94, 1.01, 1.06]} -->
 
 Notes:
 
@@ -950,7 +959,7 @@ Notes:
 1    Seattle   15  10.0
 3  San Diego   24   3.4
 ```
-<!-- {"left" : 0.0, "top" : 4.27, "height" : 1.26, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.16, "height" : 1.26, "width" : 10.25} -->
 
 
 |      | city         | pop    | rain   |   	
@@ -960,7 +969,7 @@ Notes:
 | 2    | Los Angeles  | 20     | 1      |
 | **3**| **San Diego**| **24** | **3.4**|
 
-<!-- {"left" : 5.31, "top" : 5.08, "height" : 2.01, "width" : 4.74, "columnwidth" : [0.73, 1.94, 1.01, 1.06]} -->
+<!-- {"left" : 2.76, "top" : 4.66, "height" : 2.01, "width" : 4.74, "columnwidth" : [0.73, 1.94, 1.01, 1.06]} -->
 
 Notes:
 
@@ -982,7 +991,7 @@ Notes:
 3      San Diego   24   3.4
 0       Portland   12   8.3
 ```
-<!-- {"left" : 0.0, "top" : 1.56, "height" : 2.06, "width" : 10.27} -->
+<!-- {"left" : 0.0, "top" : 1.81, "height" : 2.06, "width" : 10.27} -->
 
 |       | city         | pop   | rain   |   	
 |----   |--------------|-----  |------  |
@@ -1013,7 +1022,7 @@ Notes:
 3      San Diego   24   3.4
 4       Portland   12   8.3
 ```
-<!-- {"left" : 0.0, "top" : 1.84, "height" : 2.65, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.28, "height" : 2.65, "width" : 10.25} -->
 
 
 |    | city         | pop | rain |   	
@@ -1024,7 +1033,7 @@ Notes:
 | 3  | San Diego    | 24  | 3.4  |
 | 4  | Portland     | 12  | 8.3  |
 
-<!-- {"left" : 2.51, "top" : 4.78, "height" : 2.41, "width" : 5.23, "columnwidth" : [1.01, 1.95, 1.11, 1.15]} -->
+<!-- {"left" : 2.51, "top" : 5.67, "height" : 2.41, "width" : 5.23, "columnwidth" : [1.01, 1.95, 1.11, 1.15]} -->
 
 Notes:
 
@@ -1043,7 +1052,7 @@ Notes:
 2    Los Angeles   20   1.0
 4       Portland   12   8.3
 ```
-<!-- {"left" : 0.0, "top" : 1.51, "height" : 2.32, "width" : 5.28} -->
+<!-- {"left" : 0.0, "top" : 1.73, "height" : 2.32, "width" : 5.28} -->
 
 |       | city          | pop    | rain   |   	
 |----   |---------------|----    |-----   |
@@ -1053,7 +1062,7 @@ Notes:
 | **3** | **San Diego** | **24** | **3.4**|
 | 4     | Portland      | 12     | 8.3    |
 
-<!-- {"left" : 2.51, "top" : 4.18, "height" : 2.41, "width" : 5.23, "columnwidth" : [1.01, 1.95, 1.11, 1.15]} -->
+<!-- {"left" : 2.51, "top" : 4.87, "height" : 2.41, "width" : 5.23, "columnwidth" : [1.01, 1.95, 1.11, 1.15]} -->
 
 Notes:
 
@@ -1077,7 +1086,7 @@ Notes:
 3      San Diego   24   3.4  372.39
 4       Portland   12   8.3  145.09
 ```
-<!-- {"left" : 0.0, "top" : 1.5, "height" : 4.26, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.92, "height" : 4.26, "width" : 10.25} -->
 
 Notes:
 
@@ -1142,7 +1151,7 @@ Los Angeles     20   1.0  502.76
 San Diego       24   3.4  372.39
 Portland        12   8.3  145.09
 ```
-<!-- {"left" : 0.0, "top" : 1.5, "height" : 2.9, "width" : 6.94} -->
+<!-- {"left" : 0.0, "top" : 1.71, "height" : 2.9, "width" : 6.94} -->
 
 
 | city              | pop | rain | area   |
@@ -1153,7 +1162,7 @@ Portland        12   8.3  145.09
 | **San Diego**     | 24  | 3.4  | 372.39 |
 | **Portland**      | 12  | 8.3  | 145.09 |
 
-<!-- {"left" : 2.93, "top" : 4.62, "height" : 2.41, "width" : 5.15, "columnwidth" : [2.02, 0.91, 1.03, 1.19]} -->
+<!-- {"left" : 2.55, "top" : 5.4, "height" : 2.41, "width" : 5.15, "columnwidth" : [2.02, 0.91, 1.03, 1.19]} -->
 
 Notes:
 
@@ -1170,7 +1179,7 @@ rain      3.40
 area    372.39
 Name: San Diego, dtype: float64
 ```
-<!-- {"left" : 0.0, "top" : 1.39, "height" : 1.82, "width" : 7.11} -->
+<!-- {"left" : 0.0, "top" : 1.7, "height" : 1.82, "width" : 7.11} -->
 
 
 ```python
@@ -1179,7 +1188,7 @@ Name: San Diego, dtype: float64
 city                        
 San Diego   24   3.4  372.39
 ```
-<!-- {"left" : 0.0, "top" : 3.37, "height" : 1.44, "width" : 7.11} -->
+<!-- {"left" : 0.0, "top" : 3.78, "height" : 1.44, "width" : 7.11} -->
 
 
 |   city        | pop    | rain    | area       |
@@ -1190,7 +1199,7 @@ San Diego   24   3.4  372.39
 | **San Diego** | **24** | **3.4** | **372.39** |
 | Portland      | 12     | 8.3     | 145.09     |
 
-<!-- {"left" : 2.55, "top" : 4.81, "height" : 2.41, "width" : 5.15, "columnwidth" : [2.02, 0.91, 1.03, 1.19]} -->
+<!-- {"left" : 2.55, "top" : 5.61, "height" : 2.41, "width" : 5.15, "columnwidth" : [2.02, 0.91, 1.03, 1.19]} -->
 
 Notes:
 
@@ -1240,7 +1249,7 @@ rain      1.00
 area    142.55
 dtype: float64
 ```
-<!-- {"left" : 0.0, "top" : 2.03, "height" : 1.76, "width" : 3.79} -->
+<!-- {"left" : 0.0, "top" : 2.28, "height" : 1.76, "width" : 3.79} -->
 
 ```python
 >>> cities.max()
@@ -1249,7 +1258,7 @@ rain     10.00
 area    502.76
 dtype: float64
 ```
-<!-- {"left" : 0.0, "top" : 3.89, "height" : 1.67, "width" : 3.79} -->
+<!-- {"left" : 0.0, "top" : 4.14, "height" : 1.67, "width" : 3.79} -->
 
 ```python
 >>> cities.mean()
@@ -1258,7 +1267,7 @@ rain      4.940
 area    278.936
 dtype: float64
 ```
-<!-- {"left" : 0.0, "top" : 5.66, "height" : 1.67, "width" : 3.79} -->
+<!-- {"left" : 0.0, "top" : 5.91, "height" : 1.67, "width" : 3.79} -->
 
 ---
 
@@ -1271,7 +1280,7 @@ rain      3.40
 area    231.89
 dtype: float64
 ```
-<!-- {"left" : 4.36, "top" : 2.04, "height" : 1.67, "width" : 3.79} -->
+<!-- {"left" : 0, "top" : 2.04, "height" : 1.67, "width" : 3.79} -->
 
 ```python
 >>> cities.std()
@@ -1280,7 +1289,7 @@ rain      3.982210
 area    156.173023
 dtype: float64
 ```
-<!-- {"left" : 4.36, "top" : 3.86, "height" : 1.67, "width" : 3.79} -->
+<!-- {"left" : 0, "top" : 3.86, "height" : 1.67, "width" : 3.79} -->
 
 ```python
 >>> cities.var()
@@ -1289,7 +1298,7 @@ rain       15.85800
 area    24390.01298
 dtype: float64
 ```
-<!-- {"left" : 4.36, "top" : 5.68, "height" : 1.67, "width" : 3.79} -->
+<!-- {"left" : 0, "top" : 5.68, "height" : 1.67, "width" : 3.79} -->
 
 Notes:
 
@@ -1312,7 +1321,7 @@ min    10.000000   1.00000  142.550000
 75%    20.000000   8.30000  372.390000
 max    24.000000  10.00000  502.760000
 ```
-<!-- {"left" : 0, "top" : 1.86, "height" : 2.92, "width" : 7.11} -->
+<!-- {"left" : 0, "top" : 2.42, "height" : 3.82, "width" : 9.3} -->
 
 Notes:
 
@@ -1320,18 +1329,19 @@ Notes:
 
 ## Lab: Statistics
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/icons/individual-labs.png" style="width:20%;float:right;"/><!-- {"left" : 7.16, "top" : 1.06, "height" : 3.91, "width" : 2.93} -->
 
- *  **Overview**:
+
+ *  **Overview:**
      - Practice Stats functions in Pandas / Numpy
 
- *  **Approximate Time**:
+ *  **Approximate Time:**
      - 10 mins
 
- *  **Instructions**:
+ *  **Instructions*:*
     - Lab : Basic Stats
 
- *  **Location**:
+ *  **Location:**
     - `stats/1-stats-basics.ipynb`
 
 Notes:
@@ -1373,7 +1383,7 @@ Notes:
   * Python represents them with NA (Not Available)
 
 
-<img src="../../assets/images/data-analysis-python/Dealing-With-Missing-Values.png" alt="Dealing-With-Missing-Values.png" style="width:60%;"/><!-- {"left" : 1.19, "top" : 3.85, "height" : 2.74, "width" : 7.87} -->
+<img src="../../assets/images/data-analysis-python/Dealing-With-Missing-Values.png" alt="Dealing-With-Missing-Values.png" style="width:60%;"/><!-- {"left" : 1.19, "top" : 4.52, "height" : 2.74, "width" : 7.87} -->
 
 
 ---
@@ -1403,7 +1413,11 @@ Los Angeles     20   1.0  502.76    0.039780
 San Diego       24   3.4  372.39    0.064449
 Portland        12   8.3  145.09    0.082707
 ```
-<!-- {"left" : 0, "top" : 1.9, "height" : 2.22, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.23, "height" : 2.45, "width" : 10.25} -->
+
+<br/>
+<br/>
+
   * A single operation or a single function can be applied to the entire DataFrame too. This is done using a function similar to apply(), called **applymap()**
 
 Notes:
@@ -1426,7 +1440,7 @@ San Diego       24   3.4  372.39    0.064449
 San Francisco   10   2.0  231.89    0.043124
 Los Angeles     20   1.0  502.76    0.039780
 ```
-<!-- {"left" : 0, "top" : 1.86, "height" : 1.92, "width" : 9.75} -->
+<!-- {"left" : 0, "top" : 2.36, "height" : 2.02, "width" : 10.25} -->
 
 Notes:
 
@@ -1504,7 +1518,7 @@ San Diego      372.39   24    0.064449   3.4    CA
 San Francisco  231.89   10    0.043124   2.0    CA
 Seattle        142.55   15    0.105226  10.0    WA
 ```
-<!-- {"left" : 0, "top" : 1.47, "height" : 2.73, "width" : 9.48} -->
+<!-- {"left" : 0, "top" : 1.93, "height" : 2.73, "width" : 9.48} -->
 
 | city         | area   | pop | popPerArea | rain | state |
 |--------------|--------|-----|------------|------|-------|
@@ -1514,7 +1528,7 @@ Seattle        142.55   15    0.105226  10.0    WA
 | San Francisco| 231.89 | 10  | 0.043124   | 2.0  | CA    |
 | Seattle      | 142.55 | 15  | 0.105226   | 10.0 | WA    |
 
-<!-- {"left" : 1.69, "top" : 4.27, "height" : 3, "width" : 6.86, "columnwidth" : [1.87, 1.07, 0.82, 1.63, 0.75, 0.75]} -->
+<!-- {"left" : 1.69, "top" : 5.24, "height" : 3, "width" : 6.86, "columnwidth" : [1.87, 1.07, 0.82, 1.63, 0.75, 0.75]} -->
 
 Notes:
 
@@ -1533,7 +1547,7 @@ Los Angeles    502.76   20    0.039780   1.0    CA
 San Diego      372.39   24    0.064449   3.4    CA
 San Francisco  231.89   10    0.043124   2.0    CA
 ```
-<!-- {"left" : 0, "top" : 1.51, "height" : 2.32, "width" : 9.11} -->
+<!-- {"left" : 0, "top" : 1.9, "height" : 2.32, "width" : 9.11} -->
 
 | city             | area       | pop    | popPerArea   | rain    | state |
 |---------------   |--------    |-----   |------------  |-----    |-------|
@@ -1543,7 +1557,7 @@ San Francisco  231.89   10    0.043124   2.0    CA
 | **San Francisco**| **231.89** | **10** | **0.043124** | **2.0** | **CA**|
 | Seattle          | 142.55     | 15     | 0.105226     | 10.0    | WA    |
 
-<!-- {"left" : 1, "top" : 4.04, "height" : 3, "width" : 8.25, "columnwidth" : [2.01, 1.5, 1.1, 1.78, 1.1, 0.88]} -->
+<!-- {"left" : 1, "top" : 4.82, "height" : 3, "width" : 8.25, "columnwidth" : [2.01, 1.5, 1.1, 1.78, 1.1, 0.88]} -->
 
 Notes:
 
@@ -1561,7 +1575,7 @@ Notes:
 'Name':['Felton', 'Gloria', 'Hilson', 'Icarus',
  'John'], 'subject_id':['History', 'Math', 'Math', 'CS', 'Biology']})
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 2.42, "width" : 10.24} -->
+<!-- {"left" : 0, "top" : 1.72, "height" : 2.42, "width" : 10.24} -->
 
 ```python
 >>> left
@@ -1572,7 +1586,7 @@ Notes:
 3   4  Dustin    History
 4   5    Elsa         CS
 ```
-<!-- {"left" : 0, "top" : 3.86, "height" : 1.68, "width" : 3.77} -->
+<!-- {"left" : 0, "top" : 4.51, "height" : 1.68, "width" : 3.77} -->
 
 ```python
 >>> right
@@ -1583,7 +1597,7 @@ Notes:
 3   9  Icarus       CS
 4  10    John  Biology
 ```
-<!-- {"left" : 0, "top" : 5.61, "height" : 1.81, "width" : 3.77} -->
+<!-- {"left" : 0, "top" : 6.55, "height" : 1.81, "width" : 3.77} -->
 
 Notes:
 
@@ -1608,7 +1622,7 @@ Notes:
 3   9  Icarus         CS
 4  10    John    Biology
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 3.71, "width" : 8.78} -->
+<!-- {"left" : 0, "top" : 1.94, "height" : 3.71, "width" : 8.78} -->
 
 Notes:
 
@@ -1628,7 +1642,7 @@ Notes:
 3   4  Dustin    History   9  Icarus       CS
 4   5    Elsa         CS  10    John  Biology
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 2.39, "width" : 8.78} -->
+<!-- {"left" : 0, "top" : 2.03, "height" : 2.39, "width" : 8.78} -->
 
 Notes:
 
@@ -1652,7 +1666,7 @@ Notes:
 3   6  Felton         CS
 4  10    John         CS
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 4.01, "width" : 9.75} -->
+<!-- {"left" : 0, "top" : 2, "height" : 4.01, "width" : 9.75} -->
 
 Notes:
 
@@ -1677,7 +1691,7 @@ Notes:
 8   9  Icarus         CS        NaN
 9  10    John    Biology         CS
 ```
-<!-- {"left" : 0, "top" : 1.86, "height" : 3.71, "width" : 9.78} -->
+<!-- {"left" : 0, "top" : 2, "height" : 3.71, "width" : 9.78} -->
 
   * Notice that pd.merge() takes into account common values
 
@@ -1730,7 +1744,7 @@ df = pd.read_csv(file)
 # reading a URL
 df_url = pd.read_csv('http://somedomain.com/data.csv')
 ```
-<!-- {"left" : 0, "top" : 4.09, "height" : 1.6, "width" : 9.78} -->
+<!-- {"left" : 0, "top" : 4.53, "height" : 1.6, "width" : 9.78} -->
 
 Notes:
 
@@ -1799,7 +1813,7 @@ Notes:
 >>> df = pd.read_sql_query("select * from airlines limit 5;", conn)
 >>> df
 ```
-<!-- {"left" : 0, "top" : 1.86, "height" : 2.09, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.61, "height" : 2.09, "width" : 10.25} -->
 
 Notes:
 
@@ -1814,11 +1828,12 @@ Notes:
 
   * Example:
 
+<br/>
+
 ```python
 >>> df.to_csv("flights.csv", sep = '\t', encoding = "utf-8", index = False)
 ```
-<!-- {"left" : 0, "top" : 2.83, "height" : 0.86, "width" : 10.25} -->
-
+<!-- {"left" : 0, "top" : 3.88, "height" : 0.78, "width" : 10.25} -->
 
   * Note :
 
@@ -1848,7 +1863,7 @@ Notes:
   * Use `df.fillna()` to fill them with a value (more on this later)
 
 
-<img src="../../assets/images/data-analysis-python/Dealing-With-Missing-Values-01.png" alt="Dealing-With-Missing-Values-01.png" style="width:60%;"/><!-- {"left" : 0.81, "top" : 4.66, "height" : 2.4, "width" : 8.62} -->
+<img src="../../assets/images/data-analysis-python/Dealing-With-Missing-Values-01.png" alt="Dealing-With-Missing-Values-01.png" style="width:60%;"/><!-- {"left" : 0.81, "top" : 5.83, "height" : 2.4, "width" : 8.62} -->
 
 Notes:
 
@@ -1859,7 +1874,7 @@ Notes:
   * `concat()` will merge two DataFrames column-wise
 
 
-<img src="../../assets/images/data-analysis-python/Combining-Datasets.png" alt="Combining-Datasets.png" style="width:60%;"/><!-- {"left" : 0.17, "top" : 1.69, "height" : 4.74, "width" : 9.91} -->
+<img src="../../assets/images/data-analysis-python/Combining-Datasets.png" alt="Combining-Datasets.png" style="width:60%;"/><!-- {"left" : 0.17, "top" : 2.16, "height" : 4.74, "width" : 9.91} -->
 
 
 
@@ -1872,7 +1887,7 @@ Notes:
   * `merge()` will try to take into account common column names and row names
 
 
-<img src="../../assets/images/data-analysis-python/merge.png" alt="merge.png" style="width:60%;"/><!-- {"left" : 0.73, "top" : 1.93, "height" : 4.69, "width" : 8.79} -->
+<img src="../../assets/images/data-analysis-python/merge.png" alt="merge.png" style="width:60%;"/><!-- {"left" : 0.73, "top" : 2.48, "height" : 4.69, "width" : 8.79} -->
 
 Notes:
 
@@ -1907,7 +1922,7 @@ Notes:
 3   Los Angeles  20    1
 4     San Diego  20    2
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 2.39, "width" : 8.44} -->
+<!-- {"left" : 0, "top" : 2.25, "height" : 2.39, "width" : 8.44} -->
 
 Notes:
 
@@ -1927,7 +1942,7 @@ Notes:
 2       Seattle  15   10
 1 San Francisco  10    2
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 2.56, "width" : 9.22} -->
+<!-- {"left" : 0, "top" : 1.89, "height" : 2.56, "width" : 9.22} -->
 
 Notes:
 
@@ -1954,7 +1969,7 @@ min        1.0
 75%        2.5
 max        3.0
 ```
-<!-- {"left" : 0, "top" : 3.17, "height" : 2.65, "width" : 5.94} -->
+<!-- {"left" : 0, "top" : 3.5, "height" : 2.65, "width" : 5.94} -->
 
 Notes:
 

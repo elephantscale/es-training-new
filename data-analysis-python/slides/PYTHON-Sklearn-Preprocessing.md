@@ -74,9 +74,12 @@ data ['home_owner_f'] = pd.factorize(data['home_owner'])[0]
 data ['marital_status_f'] = pd.factorize(data['marital_status'])[0]
 data
 ```
-<img src="../../assets/images/machine-learning/factorization-1.png" style="width:30%;float:left;"/>
-<img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;"/>
-<img src="../../assets/images/machine-learning/factorization-2.png" style="width:50%;float:right;"/>
+<!-- {"left" : 0, "top" : 1.35, "height" : 2.44, "width" : 10.25} -->
+
+<img src="../../assets/images/machine-learning/factorization-1.png" style="width:30%;float:left;"/><!-- {"left" : 0.39, "top" : 5.05, "height" : 2.09, "width" : 3.33} -->
+<img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;"/><!-- {"left" : 3.93, "top" : 5.33, "height" : 1.11, "width" : 1.11} -->
+<img src="../../assets/images/machine-learning/factorization-2.png" style="width:50%;float:right;"/><!-- {"left" : 5.19, "top" : 5.2, "height" : 1.36, "width" : 4.67} -->
+
 
 ---
 ## Problems with Factorization
@@ -88,7 +91,9 @@ data
   `Married(0)  < Single (1) < Divorced (2)`
 - "Finding signal in the noise" - can lead to bad results
 
-<img src="../../assets/images/machine-learning/factorization-3.png" style="width:70%;"/>
+<img src="../../assets/images/machine-learning/factorization-3.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.98, "height" : 3.11, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -101,7 +106,7 @@ Notes:
     - Note, only one bit is on
     - This is called **ONE-HOT-Encoding**
 
-<img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="max-width:90%;"/><!-- {"left" : 0.52, "top" : 3.76, "height" : 2.9, "width" : 9.21} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="max-width:90%;"/><!-- {"left" : 0.52, "top" : 5.02, "height" : 2.9, "width" : 9.21} -->
 
 Notes:
 
@@ -123,8 +128,10 @@ data = pd.DataFrame ( { 'age' : [33,45,42,35,60],
 marital_dummies = pd.get_dummies(data['marital_status'])
 marital_dummies
 ```
+<!-- {"left" : 0, "top" : 2.07, "height" : 2.11, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/factorization-4.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/factorization-4.png" style="width:30%;"/><!-- {"left" : 3.04, "top" : 4.85, "height" : 3.3, "width" : 4.16} -->
+
 
 ---
 
@@ -145,10 +152,12 @@ marital_dummies = pd.get_dummies(data['marital_status'])
 data2 = pd.concat([data,marital_dummies],axis=1)
 data2
 ```
+<!-- {"left" : 0, "top" : 1.38, "height" : 2.29, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/factorization-5.png" style="width:35%;"/> <!-- {"left" : 0.0, "top" : 4.05, "height" : 1.62, "width" : 10.25} -->
-<img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;"/> <!-- {"left" : 3.3, "top" : 4.3, "height" : 1.0, "width" : 1.0} -->
-<img src="../../assets/images/machine-learning/factorization-6.png" style="width:50%;"/> <!-- {"left" : 4.6, "top" : 4.05, "height" : 1.62, "width" : 5.3} -->
+
+<img src="../../assets/images/machine-learning/factorization-5.png" style="width:35%;"/><!-- {"left" : 0.43, "top" : 4.58, "height" : 1.43, "width" : 3.35} --> 
+<img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;"/> <!-- {"left" : 3.87, "top" : 4.79, "height" : 1, "width" : 1} -->
+<img src="../../assets/images/machine-learning/factorization-6.png" style="width:50%;"/> <!-- {"left" : 5.15, "top" : 4.58, "height" : 1.43, "width" : 4.66} -->
 
 Notes:
 
@@ -164,7 +173,7 @@ from sklearn.preprocessing import OneHotEncoder
 fact = pd.factorize(dimensions)
 OneHotEncoder().fit(fact).transform(fact)
 ```
-<!-- {"left" : 0.0, "top" : 1.16, "height" : 1.62, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.52, "height" : 1.62, "width" : 10.25} -->
 
 Notes:
 
@@ -193,7 +202,8 @@ Notes:
     - income ranges from 32,000  to 120,000
  * Some algorithms will yield better results if these different ranges can be scaled to a uniform range
 
-<img src="../../assets/images/machine-learning/scaling-1.png" style="width:50%;"/>
+<img src="../../assets/images/machine-learning/scaling-1.png" style="width:50%;"/><!-- {"left" : 1.85, "top" : 5.13, "height" : 2.6, "width" : 6.11} -->
+
 
 ---
 ## Scaling
@@ -203,7 +213,8 @@ Notes:
  * Z-Scoring:
    - Subtract mean and divide standard deviation
 
-<img src="../../assets/images/formulas/scaling-z-score-1.png" style="width:15%;"/><!-- {"left" : 4.2, "top" : 4.73, "height" : 0.34, "width" : 1.84} -->
+<img src="../../assets/images/formulas/scaling-z-score-1.png" style="width:25%;"/><!-- {"left" : 3.13, "top" : 3.91, "height" : 2.48, "width" : 3.32} -->
+
 
 
 Notes:
@@ -230,10 +241,13 @@ data['age_z'] = (data['age'] - data['age'].mean()) / data['age'].std()
 data['income_z'] = (data['income'] - data['income'].mean()) / data['income'].std()
 data
 ```
-<!-- TODO shiva -->
+<!-- {"left" : 0, "top" : 2.35, "height" : 2.44, "width" : 10.25} -->
 
-<img src="../../assets/images/machine-learning/scaling-1.png" style="width:35%;float:left;"/>
-<img src="../../assets/images/machine-learning/scaling-2.png" style="width:50%;float:right;"/>
+
+<img src="../../assets/images/machine-learning/scaling-1.png" style="width:35%;float:left;"/><!-- {"left" : 0.21, "top" : 5.97, "height" : 1.68, "width" : 3.94} -->
+<img src="../../assets/images/machine-learning/scaling-2.png" style="width:50%;float:right;"/><!-- {"left" : 4.74, "top" : 5.97, "height" : 2.1, "width" : 5.3} -->
+
+
 
 
 Notes:
@@ -241,6 +255,7 @@ Notes:
 ---
 
 ## StandardScaler class
+
  * StandardScaler class used for Z-scoring
 
 ```python
@@ -248,7 +263,7 @@ from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 scaled_data = scaler.fit_transform(data)
 ```
-<!-- {"left" : 0.0, "top" : 1.53, "height" : 1.32, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.83, "height" : 1.32, "width" : 10.25} -->
 
 Notes:
 
@@ -262,7 +277,7 @@ from sklearn.preprocessing import Normalizer
 normalizer = Normalizer()
 norm_data = normalizer.fit_transform(data)
 ```
-<!-- {"left" : 0.0, "top" : 1.6, "height" : 1.35, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.78, "height" : 1.35, "width" : 10.25} -->
 
 
 Notes:
