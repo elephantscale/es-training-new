@@ -1,60 +1,62 @@
 File Name,License,Source
-Caffe2-logo.png,Fair use under Apache 2,Caffe websitel
-CIFAR-10-dataset.png,Fair use under Apache 2,
-keras-book1.jpg,Fair use,https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/
-keras-book2.jpg,Fair use,https://learning.oreilly.com/library/view/deep-learning-with/9781787128422/
-keras-book3.jpg,Fair use,https://learning.oreilly.com/library/view/keras-deep-learning/9781788621755/
-duplo-1981724_640.jpg,Pixabay license(https://pixabay.com/en/service/license/),https://pixabay.com/en/duplo-lego-build-toys-children-1981724/
-dl_frameworks_power_scores.png,Fair use,https://keras.io/why-use-keras/
-nn_timeline.jpg,Unknown,https://beamandrew.github.io/deeplearning/2017/02/23/deep_learning_101_part1.html
-geoff7.jpg,fair use, http://www.cs.toronto.edu/~hinton/
-yann-lecun.jpg,fair use, https://research.fb.com/people/lecun-yann/
-yoshua-bengio.jpeg,Creative commons, wikimedia
-image-augmentation-1,Fair Use, "Practical Deep Learning for Cloud and Mobile" book
-model_size_vs_accuracy-1,Fair use,https://www.tensorflow.org/lite/performance/best_practices
-model_size_vs_latency-1,Fair use,https://www.tensorflow.org/lite/performance/best_practices
 activation_functions,Fair use, 'Neural Network and Deep Learning' book
 AI/3rd-party/mckinsey-AI-impact-1.png,Fair Use, https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning
 AI/3rd-party/mckinsey-AI-impact-2.png,Fair Use, https://www.mckinsey.Gcom/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning
-generic/3rd-party/anthony-bordain-1.jpg,WikiMedia license, https://en.wikipedia.org/wiki/Anthony_Bourdain
-deep-learning/3rd-party/Driver_free_car.png,WikiMedia License,https://commons.wikimedia.org/wiki/File:Driver_free_car.jpg
-images/deep-learning/3rd-party/Face_detection.png,WikiMedia license, https://commons.wikimedia.org/wiki/File:Face_detection.jpg
-https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
-https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/
-https://www.pexels.com/photo/tabby-cat-side-view-26511/
-https://www.pexels.com/photo/cat-whiskers-kitty-tabby-20787/
-https://www.pexels.com/photo/animal-dog-pet-brown-5018/
-https://www.pexels.com/photo/light-golden-retriever-puppy-close-up-photography-159541/
-https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
-https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
-https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
-https://www.pexels.com/photo/dogs-pets-puppies-animals-38008/
-https://www.pexels.com/photo/orange-tabby-cat-beside-fawn-short-coated-puppy-24104/
-deep-learning/3rd-party/hubble-image-1, public license, NASA
-deep-learning/3rd-party/lighthouse-1, public license, Pixabay
-deep-learning/3rd-party/girl-praying,CC, https://pixabay.com/photos/little-girl-praying-people-wishing-1894125/
-generic/3rd-party/video-1.jpg, Pixabay License (Free), https://pixabay.com/photos/youtube-iphone-smartphone-mobile-2617510/
-generic/3rd-party/audio-1.png, Pixabay License (Free), https://pixabay.com/vectors/wave-waveform-aural-audio-sonic-1837426/
-generic/3rd-party/email-1.png, Pixabay License (Free), https://pixabay.com/vectors/at-sign-email-news-e-mail-at-icon-1083508/
-generic/3rd-party/word-document-1.png, Pixabay License (Free), https://pixabay.com/vectors/word-document-document-text-150594/
-generic/3rd-party/domo_data-never-sleeps-5-01.png, Fair use, https://www.domo.com/learn/data-never-sleeps-5?aid=ogsm072517_1&sf100871281=1
-generic/3rd-party/stop-sign-1.png, pixabay license (free), https://pixabay.com/vectors/stop-road-sign-warning-symbol-2717058/
-hadoop/3rd-party/Big-Data-Infrastructure-Hadoop,Fair Use, https://hortonworks.com/blog/trying-containerized-applications-apache-hadoop-yarn-3-1/
-generic/3rd-party/car-1.png, pexels license (free), https://www.pexels.com/photo/black-vehicle-on-road-near-green-leaf-plants-1128527/
-generic/3rd-party/phone-screen-damaaged-1.png, pixabay license (free), https://pixabay.com/photos/apple-iphone-display-damage-broken-1120730/
+Caffe2-logo.png,Fair use under Apache 2,Caffe websitel
 ,CC WikiMedia License,https://commons.wikimedia.org/wiki/File:Driver_free_car.jpg
 ,CC wikimedia license, https://commons.wikimedia.org/wiki/File:Face_detection.jpg
-,,https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
-,,https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/
-,,https://www.pexels.com/photo/tabby-cat-side-view-26511/
-,,https://www.pexels.com/photo/cat-whiskers-kitty-tabby-20787/
-,,https://www.pexels.com/photo/animal-dog-pet-brown-5018/
-,,https://www.pexels.com/photo/light-golden-retriever-puppy-close-up-photography-159541/
-,,https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
-,,https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
-,,https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
-,,https://www.pexels.com/photo/dogs-pets-puppies-animals-38008/
-,,https://www.pexels.com/photo/orange-tabby-cat-beside-fawn-short-coated-puppy-24104/
-,,https://pixabay.com/photos/wanderer-backpack-hike-away-path-455338/
+CIFAR-10-dataset.png,Fair use under Apache 2,
+deep-learning/3rd-party/Driver_free_car.png,WikiMedia License,https://commons.wikimedia.org/wiki/File:Driver_free_car.jpg
+deep-learning/3rd-party/girl-praying,CC, https://pixabay.com/photos/little-girl-praying-people-wishing-1894125/
+deep-learning/3rd-party/hubble-image-1, public license, NASA
+deep-learning/3rd-party/lighthouse-1, public license, Pixabay
+dl_frameworks_power_scores.png,Fair use,https://keras.io/why-use-keras/
+duplo-1981724_640.jpg,Pixabay license(https://pixabay.com/en/service/license/),https://pixabay.com/en/duplo-lego-build-toys-children-1981724/
+generic/3rd-party/anthony-bordain-1.jpg,WikiMedia license, https://en.wikipedia.org/wiki/Anthony_Bourdain
+generic/3rd-party/audio-1.png, Pixabay License (Free), https://pixabay.com/vectors/wave-waveform-aural-audio-sonic-1837426/
+generic/3rd-party/car-1.png, pexels license (free), https://www.pexels.com/photo/black-vehicle-on-road-near-green-leaf-plants-1128527/
+generic/3rd-party/domo_data-never-sleeps-5-01.png, Fair use, https://www.domo.com/learn/data-never-sleeps-5?aid=ogsm072517_1&sf100871281=1
+generic/3rd-party/email-1.png, Pixabay License (Free), https://pixabay.com/vectors/at-sign-email-news-e-mail-at-icon-1083508/
+generic/3rd-party/phone-screen-damaaged-1.png, pixabay license (free), https://pixabay.com/photos/apple-iphone-display-damage-broken-1120730/
+generic/3rd-party/stop-sign-1.png, pixabay license (free), https://pixabay.com/vectors/stop-road-sign-warning-symbol-2717058/
+generic/3rd-party/video-1.jpg, Pixabay License (Free), https://pixabay.com/photos/youtube-iphone-smartphone-mobile-2617510/
+generic/3rd-party/word-document-1.png, Pixabay License (Free), https://pixabay.com/vectors/word-document-document-text-150594/
+geoff7.jpg,fair use, http://www.cs.toronto.edu/~hinton/
+hadoop/3rd-party/Big-Data-Infrastructure-Hadoop,Fair Use, https://hortonworks.com/blog/trying-containerized-applications-apache-hadoop-yarn-3-1/
 ,,https://pixabay.com/photos/bicycle-hiking-mountain-biking-2540180/
-/streaming/3rd-party/streaming-data.png,,http://cmr.berkeley.edu/browse/articles/58_3/5816/
+,,https://pixabay.com/photos/wanderer-backpack-hike-away-path-455338/
+,,https://www.pexels.com/photo/animal-dog-pet-brown-5018/
+https://www.pexels.com/photo/animal-dog-pet-brown-5018/
+,,https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
+,,https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
+https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
+https://www.pexels.com/photo/brown-and-black-belgian-shepherd-on-green-grassy-field-200008/
+,,https://www.pexels.com/photo/cat-whiskers-kitty-tabby-20787/
+https://www.pexels.com/photo/cat-whiskers-kitty-tabby-20787/
+,,https://www.pexels.com/photo/dogs-pets-puppies-animals-38008/
+https://www.pexels.com/photo/dogs-pets-puppies-animals-38008/
+,,https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/
+https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/
+,,https://www.pexels.com/photo/light-golden-retriever-puppy-close-up-photography-159541/
+https://www.pexels.com/photo/light-golden-retriever-puppy-close-up-photography-159541/
+,,https://www.pexels.com/photo/orange-tabby-cat-beside-fawn-short-coated-puppy-24104/
+https://www.pexels.com/photo/orange-tabby-cat-beside-fawn-short-coated-puppy-24104/
+,,https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
+,,https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
+https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
+https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/
+,,https://www.pexels.com/photo/tabby-cat-side-view-26511/
+https://www.pexels.com/photo/tabby-cat-side-view-26511/
+image-augmentation-1,Fair Use, "Practical Deep Learning for Cloud and Mobile" book
+images/deep-learning/3rd-party/Face_detection.png,WikiMedia license, https://commons.wikimedia.org/wiki/File:Face_detection.jpg
+images/generic/3rd-party/golf-1.jpg,Pexel license,https://www.pexels.com/photo/boy-holding-golf-club-in-front-of-crouching-woman-1325655/
+images/generic/3rd-party/golf-2.jpg,Pexel license, https://www.pexels.com/photo/two-men-playing-golfs-1325672/
+keras-book1.jpg,Fair use,https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/
+keras-book2.jpg,Fair use,https://learning.oreilly.com/library/view/deep-learning-with/9781787128422/
+keras-book3.jpg,Fair use,https://learning.oreilly.com/library/view/keras-deep-learning/9781788621755/
+model_size_vs_accuracy-1,Fair use,https://www.tensorflow.org/lite/performance/best_practices
+model_size_vs_latency-1,Fair use,https://www.tensorflow.org/lite/performance/best_practices
+nn_timeline.jpg,Unknown,https://beamandrew.github.io/deeplearning/2017/02/23/deep_learning_101_part1.html
+streaming/3rd-party/streaming-data.png,,http://cmr.berkeley.edu/browse/articles/58_3/5816/
+yann-lecun.jpg,fair use, https://research.fb.com/people/lecun-yann/
+yoshua-bengio.jpeg,Creative commons, wikimedia
