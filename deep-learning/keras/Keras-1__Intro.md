@@ -61,6 +61,10 @@ NVIDIA - leading GPU vendor - provides CUDA (Compute Unified Device Architecture
 
 ## Keras Features
 
+<!-- TODO shiva -->
+
+<img src="../../assets/images/machine-learning/keras-cpu-gpu-tpu-1.png" style="width:50%;float:right;"/><!-- {"left" : 2.31, "top" : 4.71, "height" : 2.98, "width" : 5.64} -->
+
 * Write high level code
     - easier to write
     - faster to experiment
@@ -71,7 +75,6 @@ NVIDIA - leading GPU vendor - provides CUDA (Compute Unified Device Architecture
 
 * [Wins Machine Learning competitions](https://www.quora.com/Why-has-Keras-been-so-successful-lately-at-Kaggle-competitions)
 
-<img src="../../assets/images/machine-learning/cpu-gpu-tpu-1.png" alt="cpu gpu tpu" width="50%" style="background:white;"/><!-- {"left" : 2.31, "top" : 4.71, "height" : 2.98, "width" : 5.64} -->
 
 
 Notes:
@@ -277,7 +280,7 @@ $  conda install keras
 # if using vanilla Python
 $  pip install tensorflow
 $  pip install keras
-``` 
+```
 
 * Testing configuration
 
@@ -904,7 +907,7 @@ model.compile( optimizer = 'adam',
 ## Keras Sequential Model for Classifying IRIS
 
 **Step 3: Fit Model to Data (or Training)**
-  
+
   * Training might take a while depending on amount of data and model.
 
 ```python
