@@ -5,12 +5,16 @@
 *.out
 out/
 *.swp
+*.zip
+*.html
 
 ## ES Slides stuff
 *-gen.md
 assembly.out*
 # generated pptx
 *-gen.pptx
+# generated pdf
+*-gen.pdf
 
 # any pptx
 *.pptx
@@ -23,6 +27,7 @@ assembly.out*
 __pycache__/
 *.py[cod]
 *$py.class
+.ipynb_checkpoints
 
 # node
 node_modules/
