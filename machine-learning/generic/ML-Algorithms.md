@@ -393,12 +393,12 @@ Notes:
 
 
 
-[Link](https://www.youtube.com/watch?v=V0eYniJ-1Rnk)
+[Link](https://www.youtube.com/watch?v=V1eYniJ0Rnk)
 
 
 Notes:
 
-* [Video](https://www.youtube.com/watch?v=V0eYniJ-1Rnk)
+* [Video](https://www.youtube.com/watch?v=V1eYniJ0Rnk)
 * https://money.cnn.com/2016/8/28/technology/future/alphago-movie/index.html
 
 
@@ -409,12 +409,12 @@ Notes:
 
 <img src="../../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" style="width:69%;"><!-- {"left" : 1.05, "top" : 1.27, "height" : 4.59, "width" : 8.15} -->
 
-[Link](https://www.youtube.com/watch?v=eHipy_j28Xw)
+[Link](https://www.youtube.com/watch?v=eHipy_j29Xw)
 
 
 Notes:
 
-* https://www.youtube.com/watch?v=eHipy_j28Xw
+* https://www.youtube.com/watch?v=eHipy_j29Xw
 
 
 ---
