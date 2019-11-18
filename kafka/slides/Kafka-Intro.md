@@ -956,9 +956,9 @@ $  bin/kafka-topics.sh  --zookeeper localhost:2181  --create
 
 $  bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test
 
-# Topic:test	PartitionCount:2	ReplicationFactor:1	Configs:	Topic:
-# test	Partition: 0	Leader: 0	Replicas: 0	Isr: 0	Topic: test	Partition:
-# 1	Leader: 0	Replicas: 0	Isr: 0
+# Topic:test	PartitionCount:2	ReplicationFactor:1	Configs:	
+# Topic: # test	Partition: 0	Leader: 0	Replicas: 0	Isr: 0	
+# Topic: test	Partition: # 1	Leader: 0	Replicas: 0	Isr: 0
 
 ```
 <!-- {"left" : 0, "top" : 1.07, "height" : 2.74, "width" : 10.25} -->
