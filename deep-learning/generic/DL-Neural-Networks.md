@@ -11,16 +11,124 @@
 Notes:
 
 ---
+
+# Artificial Neural Networks (ANN)
+
+---
+
+## Artificial Neural Networks (ANN)
+
+ * ANNs are at the core of Deep Learning
+    - they are powerful, scalable and can solve complex problems like classifying billions of images (Google Images)
+
+ * ANNs were inspired by neurons in human brain
+
+ * How ever ANNs have evolved quite a bit from their original inception.  
+For example planes are inspired by birds first, but now modern planes have evolved a lot from their original designs
+
+
+<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="XXX image missing" style="background:white;max-width:100%" width="45%"/><!-- {"left" : 1.84, "top" : 5.09, "height" : 3.45, "width" : 6.58} -->
+
+
+
+Notes:  
+- https://en.wikipedia.org/wiki/Artificial_neuron
+
+---
+
+## ANN History
+
+ * 1943: McCulloch Pitts Neural model
+
+ * 1962: Frank Rosenblatt invented the Perceptron:
+
+ * 1969: Marvin Minsky's paper threw cold water on ANNs.  
+He demonstrated the ANNs can't solve a simple XOR problem
+
+ * 1970s: First AI Winter
+
+ * 1980s: some revival in ANNs  (new models + training techniques)
+
+ * 1986: D. E. Rumelhart et al. published a [groundbreaking paper](https://scholar.google.com/scholar?q=Learning+Internal+Representations+by+Error+Propagation) introducing the backpropagation training algorithm.
+
+ * 1990s: Second AI winter (Methods like SVMs were producing better results)
+
+ * 2010s: huge revival in AI after some promising results
+
+ * Now: The race is on!
+
+Notes:  
+- https://en.wikipedia.org/wiki/Artificial_neuron
+- https://medium.com/@jayeshbahire/the-xor-problem-in-neural-networks-50006411840b
+
+---
+
+## 1943: McCulloch Pitts Neural Model
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="width:50%;float:right;" /> <!-- {"left" : 1.97, "top" : 5.77, "height" : 2.77, "width" : 6.31} -->
+
+ * McCulloch and Pitts defined a simple model of a Neuron ([paper](https://scholar.google.com/scholar?q=A+Logical+Calculus+of+Ideas+Immanent+in+Nervous+Activity))
+
+ * It consisted of N inputs In and N Weights
+
+ * Inputs are binary (on/off)
+
+ * Inputs and weights are summed up and a threshold function produces output
+
+ * Limitations:
+
+     - Binary input / output
+
+     - Weights (Wn) were set manually; No way to automatically train weights
+
+
+Notes:  
+- https://scholar.google.com/scholar?q=A+Logical+Calculus+of+Ideas+Immanent+in+Nervous+Activity
+- https://towardsdatascience.com/mcculloch-pitts-model-5fdf65ac5dd1
+
+---
+
+## Neuron operations
+
+<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 3.33, "height" : 2.98, "width" : 8.84} -->
+
+
+Notes:  
+Source : [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  by  Aurélien Géron (ISBN: 9781492037347)
+
+---
+
 # Perceptrons
 
 ---
 
+## 1962: The Perceptron
+
+ * Frank Rosenblatt invented the Perceptron
+
+ * Inputs are numbers (not binary as before)
+
+ * Simplest type of Feedforward neural network
+
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/> &nbsp;<!-- {"left" : 0.61, "top" : 3.53, "height" : 2.89, "width" : 5.57} --> <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 6.68, "top" : 3.18, "height" : 3.59, "width" : 2.93} -->
+
+
+
+Notes:  
+Mark I Perceptron at the Cornell Aeronautical Laboratory', hardware implementation of the first Perceptron (Source: Wikipedia)
+
+---
+
+
+
 ## Simple Perceptron Example
 
  * Design a perceptron that will decide if I should go to a concert, based on a few inputs
-    - Inputs: Weather,  Close to public transit, if a friend can join
-    - Assign weights to each of the above inputs
-    - Output: YES / NO  
+ * Inputs: Weather,  Close to public transit, if a friend can join
+ * Assign weights to each of the above inputs
+ * Output: YES / NO  
     If the final score is > 50, then the answer is YES, otherwise NO
 
 <img src="../../assets/images/deep-learning/perceptron-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 0.91, "top" : 4.69, "height" : 2.77, "width" : 8.43} -->
@@ -51,9 +159,32 @@ Notes:
 
 <img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 1.19, "top" : 3.83, "height" : 4.24, "width" : 7.86} -->
 
+---
+
+## Perceptron Operations
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 2.8, "top" : 5.19, "height" : 2.51, "width" : 4.65} -->
+
+ * Step 1: Calculate sum of inputs and weights  
+`z = w0 + w1.x1 + w2.x2 + ... + wn.xn`  
+In matrix operations this is  
+`wT · x`
+
+ * Step 2: Apply Step function to the sum  
+`hw(x) = step (z)`  
+`hw(x) = step (wT · x)`
+
+ * Simple step function
+    - if sum is positive (`z >= 0`) --> output is 1
+    - otherwise, output is 0
+
+
 
 ---
-## Another Example (Classification)
+
+## Classification Example
 
  * Find a divider to separate these two classes (blue / orange)
 
@@ -86,7 +217,7 @@ Notes:
 ---
 ## Single Layer Perceptron
 
- * Let's create the simplest neural network with one neuron:
+ * Let's create the simplest neural network with one neuron
 
  * This is a linear model.  Finding a line that will separate.
 
@@ -106,23 +237,108 @@ Notes:
 
  * After we've trained our model, we've now have a linear model
 
- * During training the values for  weights w1, w2 have been figured out
+ * How do we figure out the weights w1, w2?
+    - This is done during training
 
-<img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%"/><!-- {"left" : 3.18, "top" : 3.18, "height" : 3.96, "width" : 3.9} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="width:35%;" /><!-- {"left" : 3.18, "top" : 3.18, "height" : 3.96, "width" : 3.9} -->
 
 Notes:
 
+---
 
+## Quiz : Guessing the Weights
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:50%;float:right;" />
+
+- Let's revisit our 'concert going' perceptron.  
+- Here is some new training data.
+- Can you guess the weights w1 / w2 / w3  to match the training data?
+- (Threshold is now changed to 60)
+
+<br clear="all" />
+
+<!-- TODO shiva -->
+
+| Weather | Public Transit | Friend Can Join | Outcome (0 / 1) |
+|---------|----------------|-----------------|-----------------|
+| 1       | 1              | 1               | 1               |
+| 1       | 0              | 1               | 1               |
+| 1       | 0              | 0               | 0               |
+| 1       | 1              | 0               | 0               |
+| 0       | 1              | 1               | 0               |
+| 0       | 1              | 0               | 0               |
+| 0       | 0              | 1               | 0               |
+
+---
+
+## Quiz : Guessing the Weights
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:50%;float:right;" />
+
+- Let's start with equal weights for all inputs:  
+weather = 33, public transit = 33, friend = 33
+- We got 2 wrong!
+- Can we do better?
+
+<br clear="all" />
+
+<!-- TODO shiva -->
+
+| Weather | Public Transit | Friend Can Join | Total | Predicted (> 60) | Actual |
+|---------|----------------|-----------------|-------|------------------|--------|
+| 1 * 33  | 1 * 33         | 1 * 33          | 99    | 1 - ok           | 1      |
+| 1 * 33  | 0 * 33         | 1 * 33          | 66    | 1 - ok           | 1      |
+| 1 * 33  | 0  * 33        | 0  * 33         | 33    | 0 - ok           | 0      |
+| 1 * 33  | 1 * 33         | 0 * 33          | 66    | 1 - wrong        | 0      |
+| 0 * 33  | 1  * 33        | 1 * 33          | 66    | 1 - wrong        | 0      |
+| 0 * 33  | 1 * 33         | 0 * 33          | 33    | 0 - ok           | 0      |
+| 0 * 33  | 0  * 33        | 1 * 33          | 33    | 0 - ok           | 0      |
+
+---
+
+## Quiz : Guessing the Weights
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:45%;float:right;" />
+
+- Looks like 'public transit' isn't as important as 'friend'
+- And 'weather' seems important
+- Let's adjust the weights to reflect this
+- weather = 35, public transit = 20, friend = 30
+- __we got all right !!__
+
+<br clear="all" />
+
+| Weather | Public Transit | Friend Can Join | Total | Predicted (> 60) | Actual |
+|---------|----------------|-----------------|-------|------------------|--------|
+| 1 * 35  | 1 * 20         | 1 * 30          | 85    | 1 - ok           | 1      |
+| 1 * 35  | 0 * 20         | 1 * 30          | 65    | 1 - ok           | 1      |
+| 1 * 35  | 0  * 20        | 0  * 30         | 35    | 0 - ok           | 0      |
+| 1 * 35  | 1 * 20         | 0 * 30          | 55    | 0 - ok           | 0      |
+| 0 * 35  | 1 * 20         | 1 * 30          | 50    | 0 - ok           | 0      |
+| 0 * 35  | 1 * 20         | 0 * 30          | 20    | 0 - ok           | 0      |
+| 0 * 35  | 0  * 20        | 1 * 30          | 30    | 0 - ok           | 0      |
+
+
+<!-- TODO shiva -->
 
 ---
 
 ## How do We Train?
 
+ * In the last example, we lucked out by guessing the weights in 2 rounds (2 iterations)
+
+ * But for large complex datasets, we need a more systamatic way of calculating and adjusting weights
+
  * For a single perceptron with no hidden layers, we can train using Gradient Descent.
 
  * Gradient Descent is a popular optimization algorithm
 
- * It tweaks the values of parameters ( **coefficients** ) of  **target function** (f) that  **minimizes cost function**
+ * See next few slides
+
 
 
 
@@ -137,41 +353,10 @@ Notes:
 
 ---
 
-## Sample Neural Network Visualizer
-
- * Go to [playground.tensorflow.org](https://playground.tensorflow.org/)
-
-<img src="../../assets/images/deep-learning/3rd-party/playground-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/><!-- {"left" : 1.18, "top" : 2.72, "height" : 3.67, "width" : 7.89} -->
-
-
-Notes:
-
-
-
----
-
-## Perceptron Mini Lab-5 Mins
-
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="10%;"/><!-- {"left" : 7.87, "top" : 1.15, "height" : 2.84, "width" : 2.13} -->
-
- * Try this at [playground.tensorflow.org](https://playground.tensorflow.org/)
-
- * Instructions
-    - Select the Linearly Separable dataset as shown (on left)
-    - Select x1 and x2 as features.
-    - Select zero hidden layers
-    - Press play to converge on a solution (as shown on right)
-
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="25%"/> &nbsp; &nbsp; <!-- {"left" : 2.6, "top" : 5.68, "height" : 2, "width" : 1.94} --><img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%"/> &nbsp; &nbsp; <!-- {"left" : 4.69, "top" : 6.24, "height" : 0.89, "width" : 0.89} --><img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-2.png" alt="XXX image missing" style="background:white;max-width:100%;" width="25%"/><!-- {"left" : 5.71, "top" : 5.68, "height" : 1.96, "width" : 1.94} -->
-
-
-Notes:
-
----
 
 # DL Playground: Introduction
 
-[DL-Playground.md](DL-Playground.md#Introduction)
+[DL-Playground.md](DL-Playground.md#Introduction to Tensorflow Playground)
 
 ---
 
@@ -180,50 +365,15 @@ Notes:
 [DL-Playground.md](DL-Playground.md#Playground Linear Regression)
 
 ---
-## Lab Review
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 5.98, "top" : 2.4, "height" : 2.71, "width" : 4.06} -->
-
-
- * Why didn't we need hidden layers to converge on a solution?
-
- * What would happen if the dataset wasn't linearly separable?
-
-Notes:
-
----
-
-## Logistic Regression Redux?
-
-
- * What we've done so far is essentially create a logistic regression classifier.
-
- * In fact, with the Sigmoid activation function, we've done essentially exactly that.
-
- * So are neural networks just a implementation scheme for logistic regression?
-    - Not really.
-
-Notes:
-
-
-
----
-## Mini Lab: Logistic Regression
-
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="20%;"/><!-- {"left" : 7.13, "top" : 0.95, "height" : 3.34, "width" : 2.51} -->
-
-
- * In this lab, we will be implementing a logistic regression classifier using Neural Networks in Tensorflow.
-
- * The result will be a linear model (no hidden layer) with a Sigmoid output
-
-Notes:
-
----
 
 ## Playground : Classification
 
 [DL-Playground.md](DL-Playground.md#Classification Examples 1)
+
+---
+
+# Hidden Layers
 
 ---
 ## The XOR problem
@@ -283,41 +433,11 @@ Notes:
 Notes:
 
 
-
 ---
 
-## Circle Dataset With Hidden Layers
+## Playground : Hidden Layers
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-1.png" style="width:40%;float:right;"/><!-- {"left" : 6.01, "top" : 1.26, "height" : 4.02, "width" : 4} -->
-
- * Select the circle dataset:
-
- * Try this at http://playground.tensorflow.org
-
- * Select the Spiral dataset as shown.
-
- * Select some features
-
- * You will need hidden layers.  Experiment to see your results.
-
- * Press play to converge on a solution.
-
-
-
-Notes:
-
-
----
-
-## Lab Review
-
- * What's the minimum number of hidden layers required to correctly classify all the test data?
-
- * Does adding any additional features help at all?
-
- * Do we necessarily get better results with more neurons and/or hidden layers?
-
-Notes:
+[DL-Playground.md](DL-Playground.md#Playground Hidden Layers)
 
 
 ---
@@ -391,14 +511,7 @@ Notes:
 
 - But using hidden layers, we can solve it very easily
 
-<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="max-width:90%;width:30%;"/> &nbsp;  &nbsp; <!-- {"left" : 0.83, "top" : 4.35, "height" : 3.32, "width" : 4.74} --><img src="../../assets/images/deep-learning/3rd-party/XOR_perceptron_net.png" alt="XXX image missing" style="max-width:auto%;width:30%;"/><!-- {"left" : 6.07, "top" : 4.55, "height" : 3.32, "width" : 3.35} -->
-
-
----
-
-## Playing with Hidden Layers
-
-[DL-Playground.md](DL-Playground.md#Hidden Layers)
+<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="width:27%;"/> &nbsp;  &nbsp; <!-- {"left" : 0.83, "top" : 4.35, "height" : 3.32, "width" : 4.74} --><img src="../../assets/images/deep-learning/3rd-party/XOR_perceptron_net.png" alt="XXX image missing" style="width:27%;"/><!-- {"left" : 6.07, "top" : 4.55, "height" : 3.32, "width" : 3.35} -->
 
 
 ---
@@ -478,21 +591,19 @@ Notes:
 
 ## Feedforward Network Sizing
 
- * Input Layer:
-     - Size: Equal to Number of Input Dimensions
-        * Possibly add one extra neuron for bias term.
-     - What if we have thousands of sparse dimensions?
-        * Consider Wide and Deep Neural Network
-
- * Hidden Layer(s)
-     - Deep Learning=  Multiple Hidden Layer (more than 2)
-     - Size depends on training sample, input features, outputs
-
- * Output Layer:
-     - Regression: 1 single neuron (continuous output)
-     - Binomial Classification: 1 single neuron (binary output)
-     - Multinomial Classification: Softmax Layer
-        * Size: 1 node per class label
+* __Input Layer__
+   - Size: Equal to Number of Input Dimensions
+   -  Possibly add one extra neuron for bias term.
+   - What if we have thousands of sparse dimensions?
+   - Consider Wide and Deep Neural Network
+* __Hidden Layer(s)__
+   - Deep Learning=  Multiple Hidden Layer (more than 2)
+   - Size depends on training sample, input features, outputs
+* __Output Layer__
+   - Regression: 1 single neuron (continuous output)
+   - Binomial Classification: 1 single neuron (binary output)
+   - Multinomial Classification: Softmax Layer
+   - Size: 1 node per class label
 
 Notes:
 
