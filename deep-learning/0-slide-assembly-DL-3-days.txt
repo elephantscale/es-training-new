@@ -16,15 +16,21 @@
 ## ML Intro
 ../machine-learning/generic/Machine-Learning-Primer.md
 
-# TensorFlow
+## Get the labs setup
+../machine-learning/generic/Labs-Prep.md
+
+## TensorFlow
 ./tensorflow/TENSORFLOW-Intro.md
 
-# A little theory
+## Reference only
 ../machine-learning/generic/ML-Concepts-All.md
 
+## Introduce Neural Networks
+./generic/DL-Neural-Networks.md
+
+## Get some theory
 generic/DL-Concepts.md
 
-./generic/DL-Neural-Networks.md
 
 # Introduce TensorFlow Playground
 ./generic/DL-Playground.md
@@ -42,6 +48,3 @@ keras/Keras-1__Intro.md
 
 ## TransferLearning
 ./generic/DL-Transfer-Learning.md
-
-# Parallel
-./tensorflow/TENSORFLOW-Parallel.md
