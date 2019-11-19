@@ -2,7 +2,7 @@
 
 <!-- TODO shiva -->
 
-<img src="../../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;" />
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;" />
 ---
 
 ## Lesson Objectives
@@ -28,8 +28,8 @@ Notes:
 
 <!-- TODO shiva -->
 
-<img src="../../../assets/images/logos/tensorflow-logo-1.png" style="float:right;" />
-<img src="../../../assets/images/logos/google-ai-logo-1.png" style="float:right;clear:both;" />
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="float:right;" />
+<img src="../../assets/images/logos/google-ai-logo-1.png" style="float:right;clear:both;" />
 
  * __Tensorflow__ is a free and open source library for deep learning with neural networks
 
