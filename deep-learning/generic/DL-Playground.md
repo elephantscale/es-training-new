@@ -58,18 +58,23 @@ Notes:
 
 ## Linear Regression: Setup
 
+<img src="../../assets/images/deep-learning/3rd-party/playground-regression-dropdown.png" alt="playground-regression-dropdown.png" style="width:15%;float:right;"/><!-- {"left" : 4.18, "top" : 1.85, "height" : 1.13, "width" : 1.89} -->
+
   * Click on the dropdown at the upper right, select 'Regression'
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-regression-dropdown.png" alt="playground-regression-dropdown.png" style="width:15%;"/><!-- {"left" : 4.18, "top" : 1.85, "height" : 1.13, "width" : 1.89} -->
+<br clear="all" />
+
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-lregression-1.png" alt="playground-dataset-lregression-1.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 4.09, "top" : 4.05, "height" : 2.14, "width" : 2.06} -->
 
   * Select the dataset in lower left
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-lregression-1.png" alt="playground-dataset-lregression-1.png" style="width:15%;"/><!-- {"left" : 4.09, "top" : 4.05, "height" : 2.14, "width" : 2.06} -->
+<br clear="all" />
+
+<img src="../../assets/images/deep-learning/3rd-party/playground-lowest-learning-rate.png" alt="playground-lowest-learning-rate.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 4, "top" : 7.25, "height" : 1.21, "width" : 2.26} -->
 
 
   * Select the **lowest** setting of Learning Rate
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-lowest-learning-rate.png" alt="playground-lowest-learning-rate.png" style="width:15%;"/><!-- {"left" : 4, "top" : 7.25, "height" : 1.21, "width" : 2.26} -->
 
 Notes:
 
