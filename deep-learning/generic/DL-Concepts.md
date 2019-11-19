@@ -1,141 +1,3 @@
-# Deep Learning Concepts
-
----
-
-## Resources
-
- * [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  
-by  Aurélien Géron (ISBN: 9781492037347)
-
-<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 3.92, "top" : 3.01, "height" : 3.63, "width" : 2.4} -->
-
-
-
-
----
-
-# Artificial Neural Networks (ANN)
-
----
-
-## Artificial Neural Networks (ANN)
-
- * ANNs are at the core of Deep Learning
-    - they are powerful, scalable and can solve complex problems like classifying billions of images (Google Images)
-
- * ANNs were inspired by neurons in human brain
-
- * How ever ANNs have evolved quite a bit from their original inception.  
-For example planes are inspired by birds first, but now modern planes have evolved a lot from their original designs
-
-
-<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 1.84, "top" : 5.09, "height" : 3.45, "width" : 6.58} -->
-
-
-
-Notes:  
-- https://en.wikipedia.org/wiki/Artificial_neuron
-
----
-
-## ANN History
-
- * 1943: McCulloch Pitts Neural model
-
- * 1962: Frank Rosenblatt invented the Perceptron:
-
- * 1969: Marvin Minsky's paper threw cold water on ANNs.  
-He demonstrated the ANNs can't solve a simple XOR problem
-
- * 1970s: First AI Winter
-
- * 1980s: some revival in ANNs  (new models + training techniques)
-
- * 1986: D. E. Rumelhart et al. published a [groundbreaking paper](https://scholar.google.com/scholar?q=Learning+Internal+Representations+by+Error+Propagation) introducing the backpropagation training algorithm.
-
- * 1990s: Second AI winter (Methods like SVMs were producing better results)
-
- * 2010s: huge revival in AI after some promising results
-
- * Now: The race is on!
-
-Notes:  
-- https://en.wikipedia.org/wiki/Artificial_neuron
-- https://medium.com/@jayeshbahire/the-xor-problem-in-neural-networks-50006411840b
-
----
-
-## 1943: McCulloch Pitts Neural Model
-
- * McCulloch and Pitts defined a simple model of a Neuron ([paper](https://scholar.google.com/scholar?q=A+Logical+Calculus+of+Ideas+Immanent+in+Nervous+Activity))
-
- * It consisted of N inputs In and N Weights
-
- * Inputs are binary (on/off)
-
- * Inputs and weights are summed up and a threshold function produces output
-
- * Limitations:
-
-     - Binary input / output
-
-     - Weights (Wn) were set manually; No way to automatically train weights
-
-<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="background:white;max-width:100%" width="40%;" /> <!-- {"left" : 1.97, "top" : 5.77, "height" : 2.77, "width" : 6.31} -->
-
-Notes:  
-- https://scholar.google.com/scholar?q=A+Logical+Calculus+of+Ideas+Immanent+in+Nervous+Activity
-- https://towardsdatascience.com/mcculloch-pitts-model-5fdf65ac5dd1
-
----
-
-## Neuron operations
-
-<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 3.33, "height" : 2.98, "width" : 8.84} -->
-
-
-Notes:  
-Source : [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  by  Aurélien Géron (ISBN: 9781492037347)
-
----
-
-
-## 1962: The Perceptron
-
- * Frank Rosenblatt invented the Perceptron
-
- * Inputs are numbers (not binary as before)
-
- * Simplest type of Feedforward neural network
-
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/> &nbsp;<!-- {"left" : 0.61, "top" : 3.53, "height" : 2.89, "width" : 5.57} --> <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 6.68, "top" : 3.18, "height" : 3.59, "width" : 2.93} -->
-
-
-
-Notes:  
-Mark I Perceptron at the Cornell Aeronautical Laboratory', hardware implementation of the first Perceptron (Source: Wikipedia)
-
----
-
-## Perceptron Operations
-
- * Step 1: Calculate sum of inputs and weights  
-`z = w0 + w1.x1 + w2.x2 + ... + wn.xn`  
-In matrix operations this is  
-`wT · x`
-
- * Step 2: Apply Step function to the sum  
-`hw(x) = step (z)`  
-`hw(x) = step (wT · x)`
-
- * Simple step function
-    - if sum is positive (`z >= 0`) --> output is 1
-    - otherwise, output is 0
-
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 2.8, "top" : 5.19, "height" : 2.51, "width" : 4.65} -->
-
-
----
 
 # Neural Network Concepts
 
@@ -160,16 +22,17 @@ In matrix operations this is
 
 ---
 
-## Data Instance / Sample
+## Data Instance / Features
 
  * Sample is a single row of data
-
  * Sample has inputs (vectors) and output
     - algorithm makes a prediction from inputs, and compares the prediction with actual (expected) output
-
  * Sample = instance / observation / input vector / feature vector
+ * In the following example, we have 5 data points / samples (instances 1 - 5)
+ - And 3 dimensional input / features : Inputs A,B,C
 
- * In the following example, we have 3 data points / samples
+
+ <br />
 
 
 | Instance   | Input A | Input B | Input C | Output Y |
@@ -177,6 +40,8 @@ In matrix operations this is
 | Instance 1 | a1      | b1      | c1      | y1       |
 | Instance 2 | a2      | b2      | c2      | y2       |
 | Instance 3 | a3      | b3      | c3      | y3       |
+| Instance 4 | a4      | b4      | c4      | y4       |
+| Instance 5 | a5      | b5      | c5      | y5       |
 
 ---
 
@@ -198,11 +63,35 @@ In matrix operations this is
 
 Notes:
 
+---
+
+## A Restaurant on an Alien Planet
+
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/generic/3rd-party/group-dinner-1.jpg" alt="XXX image missing" style="width:35%;float:right;"/>
+<img src="../../assets/images/generic/3rd-party/robot-chef-1.jpg" alt="XXX image missing" style="width:20%;float:right;clear:both;"/>
+
+- Imagine you are at restaurant, but you and the waitstaff don't speak the same language (remember they are aliens!)
+
+- You tell them what you want (_"I want a burger, well done"_)
+
+- The kitchen will try to make your meal and bring it out
+
+- If it is not to your liking, you send it back with feedback (_"meat is not cooked well"_,  _"I need more avocado"_ ..etc)
+
+- You keep sending the meal back until they get your order right!
+
+- This happens until every one's order is cooked correctly!!
 
 
 ---
 
 ## Epoch
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:35%;float:right;"/>
 
  * One **Epoch** means when an entire dataset passed forward and backward exactly ONCE
 
@@ -218,9 +107,12 @@ Notes:
 
  * Epoch values are typically in hundreds or thousands
 
+ * Restaurant Example : Entire table's meal is sent back once and re-delivered
+
 Notes:   
 - https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9
 ---
+
 
 ## Batch size
 
@@ -233,8 +125,9 @@ Notes:
     - Error is calculated
     - The algorithm will then calculate error gradient and make the move to minimize the error during the next cycle
 
-
  * Batch size is usually power of 2 (4, 8, 16, 64 ...)
+
+ * Alien Restaurant Example : We send back meals in batches of 3, not the entire table.
 
 Notes:  
 - https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/
@@ -243,13 +136,13 @@ Notes:
 
 ## Batch Size Calculations
 
-
-
-
 - What if data size is not divisible evenly by batch size?
-    - That is fine, the last batch will have what is left, and will be smaller than previous batches
-    - For example, if we have 10 data points and batch size is 4
-        - batch-1 = 4, batch-2 = 4, batch-3 = 2
+
+- That is fine, the last batch will have what is left, and will be smaller than previous batches
+
+- For example, if we have 10 data points and batch size is 4
+
+- batch-1 = 4, batch-2 = 4, batch-3 = 2
 
 
 | Batch Size                            | Algorithm                    | Description                                        |
@@ -320,7 +213,7 @@ for e  in number_of_epochs {
 
 ---
 
-# NN Concepts: Backpropagation
+# Backpropagation
 
 ---
 
@@ -329,24 +222,17 @@ for e  in number_of_epochs {
 * Backpropagation algorithm was proposed in 1970s
 
 * But it's usefulness wasn't appreciated until a seminal paper in 1986.  
-    - **"Learning representations by back-propagating errors"**   
-    by  [David Rumelhart](http://en.wikipedia.org/wiki/David_Rumelhart), [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/), and [Ronald Williams](http://en.wikipedia.org/wiki/Ronald_J._Williams)  
-    - [PDF](http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf), [Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Learning+representations+by+back-propagating+errors&btnG=)
 
-
-
-Notes:   
-- http://neuralnetworksanddeeplearning.com/chap2.html
-
----
-
-## Backpropagation Intro
+* **"Learning representations by back-propagating errors"**   
+    by  [David Rumelhart](http://en.wikipedia.org/wiki/David_Rumelhart), [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/), and [Ronald Williams](http://en.wikipedia.org/wiki/Ronald_J._Williams)   
+ ([PDF](http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf), [Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Learning+representations+by+back-propagating+errors&btnG=))
 
 * This paper showed, how backpropagation can be an effective way to train neural networks.  And it worked much faster than previous approaches.
 
 * This enabled neural networks to solve difficult problems that were unsolvable before
 
 * This kicked started the current research boom in neural nets
+
 
 
 Notes:   
@@ -823,3 +709,12 @@ These default values should get you started, and should work well in most scenar
  * **Q:** In which cases you would use the following activation functions: ELU, leaky ReLU (and its variants), ReLU, tanh, logistic, and softmax?
 
  * **Q:** Explain how Dropoff works
+
+---
+
+## Resources
+
+ * [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  
+by  Aurélien Géron (ISBN: 9781492037347)
+
+<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 3.92, "top" : 3.01, "height" : 3.63, "width" : 2.4} -->
