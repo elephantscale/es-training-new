@@ -159,7 +159,9 @@ Notes:
 
 ## Activation Function - Rectified Linear Unit (ReLU)
 
-<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.28, "top" : 1.84, "height" : 3.16, "width" : 3.79} -->
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="width:40%;float:right" /><!-- {"left" : 6.28, "top" : 1.84, "height" : 3.16, "width" : 3.79} -->
 
 - `ReLU (z) = max (0, z)`
 - ReLU is Linear when greater than zero, and constant (zero) less than zero
@@ -179,7 +181,8 @@ Notes:
 
 ## Activation Function: Leaky ReLU
 
-<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.5, "top" : 1.81, "height" : 2.81, "width" : 3.46} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"  /><!-- {"left" : 6.5, "top" : 1.81, "height" : 2.81, "width" : 3.46} -->
 
 - ReLU isn't perfect; For values at or below zero or values, ReLU derivative is zero
     - Gradient Descent can not be used
@@ -215,8 +218,9 @@ Notes:
 
 - ELU outperformed all other ReLU variants, it trained quicker, and test accuracy was higher too.
 
-<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 5.38, "top" : 2.76, "height" : 1.52, "width" : 4.59} -->
+<!-- TODO shiva -->
 
+<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 5.38, "top" : 2.76, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp; 
 <img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 3.18, "top" : 4.6, "height" : 2.83, "width" : 3.9} -->
 
 
@@ -335,4 +339,3 @@ Source :
 ## Activation Functions Review
 
 <img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.44, "top" : 2.93, "height" : 3.2, "width" : 9.38} -->
-
