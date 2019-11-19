@@ -321,7 +321,7 @@ Notes:
     - u1: [8,3]
     - u2: [1,9]
 - __Question for class:__
-  
+
 Looking at the matrix, which users __have similar tastes__ ?
 
 ---
@@ -432,10 +432,6 @@ Looking at the matrix, which users __have similar tastes__ ?
 ## Cosine Similarity
 
 <img src="../../assets/images/formulas-equations/cosine-similarity-1.png" alt="formula-01.png" style="background:white;width:70%" /><!-- {"left" : 0.41, "top" : 2.93, "height" : 3.77, "width" : 9.43} -->
-
----
-
-# Resources
 
 ---
 
