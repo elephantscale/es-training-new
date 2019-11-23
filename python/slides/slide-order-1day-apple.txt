@@ -1,0 +1,9 @@
+## To generate slides
+## $    $ES_HOME/utils/presentations/slides-assembler.sh   slide-order-1day-apple.txt
+
+PYTHON-Intro.md
+PYTHON-File.md
+PYTHON-Database.md
+PYTHON-C.md
+PYTHON_Reactive.md
+
