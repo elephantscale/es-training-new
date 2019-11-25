@@ -40,7 +40,7 @@ Notes:
     - flexibility
     - scalability
     - huge community
-    - and of course Google brand :-)
+    - and of course the Google brand :-)
 
  * Google is actively developing and supporting TensorFlow; also offers it in Google Cloud platform
 
@@ -51,27 +51,20 @@ Notes:
 ## TensorFlow Popularity
 
  * Tensorflow has outpaced its rivals in popularity
- * Here is a survey of Github Stars
+ * Here is a survey of
+    - Github Stars (left) and
+    - Indeed job postings (right)
 
 <!-- TODO shiva -->
 
-<img src="../../assets/images/deep-learning/Github_stars.png" alt="XXX image missing" style="width:80%;"/>  <!-- {"left" : 0.56, "top" : 2.93, "height" : 4.88, "width" : 9.13} -->
-
+<img src="../../assets/images/deep-learning/tensorflow-github-stars.png"  style="width:45%;"/>  <!-- {"left" : 0.56, "top" : 2.93, "height" : 4.88, "width" : 9.13} -->
+ <img src="../../assets/images/deep-learning/tensorflow-indeed-postings.png" style="width:45%;"/> <!-- {"left" : 1.83, "top" : 1.52, "height" : 4.52, "width" : 6.59} -->
 
 Notes:
 
 
 ---
 
-## Big Spike in Job Postings
-
- <img src="../../assets/images/deep-learning/Introduction-to-Tensorflow-Used-More-and-More-0.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.83, "top" : 1.52, "height" : 4.52, "width" : 6.59} -->
-
- Source: indeed.com
-
-Notes:
-
----
 
 ## TensorFlow Features
 
