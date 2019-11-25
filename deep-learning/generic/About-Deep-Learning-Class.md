@@ -59,14 +59,16 @@ Notes:
     - Deep Learning Intro
     - TensorFlow Intro
     - TensorFlow Playground
-    - Deep Learning concepts
 *  **Day 2 (TensorFlow / Keras)**
      - Keras Intro
+     - Neural Network intro
+     - Deep Learning concepts
      - Regression
      - Classification
 *  **Day 3  (Deep Learning)**
      - CNNs (Images)
      - RNNs (Text, Translation)
+     - Transfer Learning
      - Model serving
      - Workshop
 
@@ -76,11 +78,16 @@ Notes:
 ---
 ## Our Teaching Philosophy
 
+<!-- TODO shiva -->
+
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;float:right;"/> <!-- {"left" : 2.05, "top" : 3.24, "height" : 4.97, "width" : 6.16} -->
+
  * Emphasis on concepts & fundamentals
+
  * Highly interactive (questions and discussions are welcome)
+ 
  * Hands-on (learn by doing)
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX Image Missing" style="width:40%;"/> <!-- {"left" : 2.05, "top" : 3.24, "height" : 4.97, "width" : 6.16} -->
 
 ---
 

@@ -305,15 +305,12 @@ Notes:
 
 <img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:50%;float:right;"><!-- {"left" : 5.34, "top" : 1.24, "height" : 2.19, "width" : 4.6} -->
 
- * A [Tensor processing unit (TPU)](https://github.com/tensorflow/tensorflow) is an AI accelerator application-specific integrated circuit (ASIC) developed by Google specifically for neural network machine learning
+ * TPU is Google's custom chip built for AI workloads
+    - 3rd generation as of March 2018
 
  * More capable the CPUs / GPUs in certain tasks
 
  * Designed for [Tensorflow](https://github.com/tensorflow/tensorflow)
-
- * Designed for high volume computes
-
-     - A TPU can process 100 million photos a day
 
  * Available in Google Cloud platform
 
@@ -324,68 +321,30 @@ Notes:
 
 ---
 
-## Video: CPU vs. GPU
+## TPU Features
 
-<img src="../../assets/images/deep-learning/3rd-party/video-cpu-gpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%;"/><!-- {"left" : 1.65, "top" : 1.29, "height" : 4.23, "width" : 6.95} -->
+<!-- TODO shiva -->
 
-[Link](https://www.youtube.com/watch?v=-P28LKWTzrI)
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/>
 
-From Myth Busters hosts!
+ * TPU Use cases:
+    - Processing Google Streetview photos (extract street numbers / text)
+    - Image processing Google Photos (A single TPU can process 100 millions photos / day)
+    - AlphaGo game
+ * TPUs are have two very distinct use cases: Training and Inference
+ * Training TPUs only available in Google Cloud Platform for now
+   - High power chip
+   - *Free* evaluation with Google Colaboratory
+ * Edge TPUs
+   - Much smaller and consumes far less power compared to 'data center TPUs'
+   - Google Sells physical devices
+   - Designed to be used in IOT type devices, robotics, etc
 
 Notes:
-
-https://www.youtube.com/watch?v=-P28LKWTzrI
-
+- https://en.wikipedia.org/wiki/Tensor_processing_unit
 
 ---
 
-
-## Video: Nvidia Self Driving Car
-
-<img src="../../assets/images/deep-learning/3rd-party/video-nvidia-self-driving.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 1.56, "top" : 1.35, "height" : 4.32, "width" : 7.12} -->
-
-[Link](https://www.youtube.com/watch?v=0rc4RqYLtEU)
-
-Nice video showing Deep Learning perceptions during self driving.
-
-Notes:
-
-https://www.youtube.com/watch?v=0rc4RqYLtEU
-
----
-
-
-## Video: Audi Autonomous Driving
-
-<img src="../../assets/images/deep-learning/3rd-party/video-audi-self-driving.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%;"/><!-- {"left" : 0.86, "top" : 1.54, "height" : 3.12, "width" : 8.53} -->
-
-[Link](https://www.youtube.com/watch?v=DjAJnQoNdMA)
-
-Audi's self driving car program explained.  
-Good comparison of brain vs. CPU vs. GPU around 50 second mark.
-
-Notes:
-
-https://www.youtube.com/watch?v=DjAJnQoNdMA
-
----
-
-## Video - TPU
-
-
-<img src="../../assets/images/deep-learning/3rd-party/video-google-cloud-tpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="40%;"/><!-- {"left" : 2.74, "top" : 1.29, "height" : 3.55, "width" : 4.77} -->
-
-[Link](https://www.youtube.com/watch?v=UsDhVx6cOrw)
-
- * Google CEO Sundar Pichai announces TPU @ Google I/O 2017
-    - Training vs Inference performance @ 1:30
-    - AutoML @ 4:25
-
-Notes:
-
-https://www.youtube.com/watch?v=UsDhVx6cOrw
-
----
 ## Incredible Growth of AI Power
 
 <img src="../../assets/images/deep-learning/3rd-party/Incredible-Growth-of-AI-Power.png" alt="Incredible-Growth-of-AI-Power.png" style="width:60%;float:right;"/><!-- {"left" : 5.38, "top" : 2.04, "height" : 5.73, "width" : 4.77} -->
@@ -502,6 +461,76 @@ Notes:
 
 ---
 
+## Video Demos
+
+- In the following sections, we have some really cool videos illustrating the hardware advances
+
+- Instructor : show as time permits
+
+---
+
+## Video: CPU vs. GPU
+
+<img src="../../assets/images/deep-learning/3rd-party/video-cpu-gpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%;"/><!-- {"left" : 1.65, "top" : 1.29, "height" : 4.23, "width" : 6.95} -->
+
+[Link](https://www.youtube.com/watch?v=-P28LKWTzrI)
+
+From Myth Busters hosts!
+
+Notes:
+
+https://www.youtube.com/watch?v=-P28LKWTzrI
+
+
+---
+
+
+## Video: Nvidia Self Driving Car
+
+<img src="../../assets/images/deep-learning/3rd-party/video-nvidia-self-driving.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 1.56, "top" : 1.35, "height" : 4.32, "width" : 7.12} -->
+
+[Link](https://www.youtube.com/watch?v=0rc4RqYLtEU)
+
+Nice video showing Deep Learning perceptions during self driving.
+
+Notes:
+
+https://www.youtube.com/watch?v=0rc4RqYLtEU
+
+---
+
+
+## Video: Audi Autonomous Driving
+
+<img src="../../assets/images/deep-learning/3rd-party/video-audi-self-driving.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%;"/><!-- {"left" : 0.86, "top" : 1.54, "height" : 3.12, "width" : 8.53} -->
+
+[Link](https://www.youtube.com/watch?v=DjAJnQoNdMA)
+
+Audi's self driving car program explained.  
+Good comparison of brain vs. CPU vs. GPU around 50 second mark.
+
+Notes:
+
+https://www.youtube.com/watch?v=DjAJnQoNdMA
+
+---
+
+## Video - TPU
+
+
+<img src="../../assets/images/deep-learning/3rd-party/video-google-cloud-tpu.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="40%;"/><!-- {"left" : 2.74, "top" : 1.29, "height" : 3.55, "width" : 4.77} -->
+
+[Link](https://www.youtube.com/watch?v=UsDhVx6cOrw)
+
+ * Google CEO Sundar Pichai announces TPU @ Google I/O 2017
+    - Training vs Inference performance @ 1:30
+    - AutoML @ 4:25
+
+Notes:
+
+https://www.youtube.com/watch?v=UsDhVx6cOrw
+
+---
 
 ## AI History Recap
 
