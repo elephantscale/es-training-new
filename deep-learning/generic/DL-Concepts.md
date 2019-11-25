@@ -91,23 +91,19 @@ Notes:
 ## Epoch
 
 <!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:35%;float:right;"/>
+<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:30%;float:right;"/>
 
  * One **Epoch** means when an entire dataset passed forward and backward exactly ONCE
-
+    - Restaurant Example : Entire table's meal is sent back once and re-delivered
  * Why do we need more than one epoch?
-
- * Optimizer algorithms try to adjust the weights of neural networks  based on training data
-
- * Just one-pass isn't enough to tweak the weights
+    - Optimizer algorithms try to adjust the weights of neural networks  based on training data
+    - Just one-pass isn't enough to tweak the weights
     - leads to under-fitting
-
- * As we pass the data back and forth multiple times (multiple epochs) the model gets more accurate
+ * As we pass the data back and forth multiple times (multiple epochs) the network gets more chance to learn from data and tweak the parameters  further
+    - model gets more accurate
     - Too many epochs, will lead to overfitting (not good either)
-
  * Epoch values are typically in hundreds or thousands
 
- * Restaurant Example : Entire table's meal is sent back once and re-delivered
 
 Notes:   
 - https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9
@@ -115,6 +111,9 @@ Notes:
 
 
 ## Batch size
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/epoch-batch-2.png" style="width:45%;float:right;"/>
 
  * When we are training on large dataset, we can not fit the entire dataset into the network due to memory constraints / processing restraints
 
@@ -187,7 +186,7 @@ for e  in number_of_epochs {
 
  * Iterations = 10 / 4 = 3 (round up!)
 
-<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" alt="XXX image missing" style="background:white;max-width:100%"/><!-- {"left" : 0.7, "top" : 3.6, "height" : 1.46, "width" : 8.85} -->
+<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" style="width:100%;"/><!-- {"left" : 0.7, "top" : 3.6, "height" : 1.46, "width" : 8.85} -->
 
 
 ---
@@ -217,7 +216,23 @@ for e  in number_of_epochs {
 
 ---
 
-## Backpropagation Intro
+## Difficulty in Training Neural Networks
+
+- In early days (1980s) neural networks' parameters were tuned by hand by experts
+
+- Hand engineering required a lot of knowledge and effort; and usually a very very slow process
+
+- Can the networks be trained automatically ?
+
+- Enter __backpropagation__
+
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/>
+
+---
+
+## Backpropagation
 
 * Backpropagation algorithm was proposed in 1970s
 
@@ -240,20 +255,46 @@ Notes:
 
 ---
 
-## Backpropagation
+## Backpropagation Process : Forward Pass
 
- * During training phase, algorithm feeds training data to network and calculates output for every neuron in each layer
-    - This is the 'forward pass'
+ * During training phase, training data is fed to network
 
- * Then it measures the error (networks output (prediction) vs. the expected output)
-
- * It then computes how much each neuron in the last hidden layer contributed to each output neuron's error
+ * Neurons in each layer calculate output
 
 
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:50%;"/>
 
 ---
 
-## Backpropagation
+## Backpropagation Process : Prediction
+
+ * Network predicts an outcome
+
+ * This prediction is not usually the same as expected outcome
+
+ * Then it measures the error (networks output (prediction) vs. the expected output)
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/backpropagation-2.png" style="width:70%;"/>
+
+---
+## Backpropagation Process : Backward Pass
+
+ * It then computes how much each neuron in the last hidden layer contributed to each output neuron's error
+
+ * And the network weights are adjusted accordingly to minimize the error
+
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:60%;"/>
+
+---
+
+## Backpropagation : Backward Pass
 
  * It traverses the network in reverse, computing errors from previous layer
     - until it reaches the input layer
@@ -262,6 +303,11 @@ Notes:
     - hence called **back propagation**
 
  * During the last step algorithm applies 'Gradient Descent' algorithm on connection weights to tweak them
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/backpropagation-4.png" style="width:45%;"/>
+
 
 ---
 
