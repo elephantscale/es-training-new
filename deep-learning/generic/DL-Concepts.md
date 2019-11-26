@@ -339,6 +339,10 @@ Notes:
 
  * And finally slightly tweaks the connection weights to reduce the error (Gradient Descent step).
 
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:30%;"/>
+
 Notes:  
 - https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c
 - http://neuralnetworksanddeeplearning.com/chap2.html
