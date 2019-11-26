@@ -260,27 +260,6 @@ Notes:
 
 ---
 
-## Cosine Proximity
-
-<img src="../../assets/images/machine-learning/error-cosine-1.png" alt="XXX image missing" style="background:white; width: 30%;float:right;" /><!-- {"left" : 6.62, "top" : 1.15, "height" : 3.05, "width" : 3.43} -->
-
-
-- Computes the cosine proximity between predicted value and actual value
-
-- Based on [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
-    - Vectors are 'similar' if they are parallel
-    - Vectors are 'not similar' if they are perpendicular / orthogonal
-
-
-<img src="../../assets/images/formulas-equations/cosine-similarity-1.png" alt="formula-01.png" style="background:white;width:70%" /><!-- {"left" : 1.79, "top" : 6.36, "height" : 2.67, "width" : 6.67} -->
-
-
-
-
-
-Notes:
-
----
 
 ## Hinge Loss / Max Margin Loss
 
@@ -429,9 +408,25 @@ Looking at the matrix, which users __have similar tastes__ ?
 
 ---
 
-## Cosine Similarity
+## Cosine Proximity
 
-<img src="../../assets/images/formulas-equations/cosine-similarity-1.png" alt="formula-01.png" style="background:white;width:70%" /><!-- {"left" : 0.41, "top" : 2.93, "height" : 3.77, "width" : 9.43} -->
+<img src="../../assets/images/machine-learning/error-cosine-1.png" alt="XXX image missing" style="background:white; width: 30%;float:right;" /><!-- {"left" : 6.62, "top" : 1.15, "height" : 3.05, "width" : 3.43} -->
+
+
+- Computes the cosine proximity between predicted value and actual value
+
+- Based on [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
+    - Vectors are 'similar' if they are parallel
+    - Vectors are 'not similar' if they are perpendicular / orthogonal
+
+
+<img src="../../assets/images/formulas-equations/cosine-similarity-1.png" alt="formula-01.png" style="background:white;width:70%" /><!-- {"left" : 1.79, "top" : 6.36, "height" : 2.67, "width" : 6.67} -->
+
+
+
+
+
+Notes:
 
 ---
 
