@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="26 151 1006 486" width="1006" height="486">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="18 151 958 486" width="958" height="486">
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#9f2e21">
       <g>
@@ -29,10 +29,11 @@
     </marker>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2019-11-26 19:54:09 +0000</dc:date>
+    <dc:date>2019-11-26 20:25:08 +0000</dc:date>
   </metadata>
   <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill="none">
     <title>Canvas 1</title>
+    <rect fill="white" x="18" y="151" width="958" height="486"/>
     <g id="Canvas_1: Layer 1">
       <title>Layer 1</title>
       <g id="Line_24">
@@ -119,7 +120,8 @@
       <g id="Graphic_63">
         <text transform="translate(418.91443 475.2267)" fill="#250060">
           <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#250060" x="0" y="32">backward pass</tspan>
-          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#250060" x="0" y="110">adjust parameters</tspan>
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#250060" x="0" y="110">adjust </tspan>
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#aa3323" y="110">weights</tspan>
           <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#250060" x="0" y="149">to reduce error</tspan>
         </text>
       </g>
@@ -239,20 +241,9 @@
         <path d="M 704.86756 463.27015 L 704.86756 458.72985 C 704.86756 458.17756 704.4198 457.72985 703.86756 457.72985 L 408.21656 457.72985 C 407.6643 457.72985 407.21656 457.28213 407.21656 456.72985 L 407.21656 442.03706 C 407.21656 441.48477 406.76885 441.03706 406.21656 441.03706 C 405.9952 441.03706 405.7801 441.1105 405.60494 441.2459 L 381.07577 460.20885 C 380.63883 460.54664 380.55845 461.1747 380.89624 461.6116 C 380.9482 461.67885 381.00854 461.7392 381.07577 461.79115 L 405.60494 480.7541 C 406.0419 481.0919 406.66993 481.0115 407.0077 480.57456 C 407.1431 480.3994 407.21656 480.1843 407.21656 479.96294 L 407.21656 465.27015 C 407.21656 464.71787 407.6643 464.27015 408.21656 464.27015 L 703.86756 464.27015 C 704.4198 464.27015 704.86756 463.82244 704.86756 463.27015 Z" fill="#ab97fd"/>
         <path d="M 704.86756 463.27015 L 704.86756 458.72985 C 704.86756 458.17756 704.4198 457.72985 703.86756 457.72985 L 408.21656 457.72985 C 407.6643 457.72985 407.21656 457.28213 407.21656 456.72985 L 407.21656 442.03706 C 407.21656 441.48477 406.76885 441.03706 406.21656 441.03706 C 405.9952 441.03706 405.7801 441.1105 405.60494 441.2459 L 381.07577 460.20885 C 380.63883 460.54664 380.55845 461.1747 380.89624 461.6116 C 380.9482 461.67885 381.00854 461.7392 381.07577 461.79115 L 405.60494 480.7541 C 406.0419 481.0919 406.66993 481.0115 407.0077 480.57456 C 407.1431 480.3994 407.21656 480.1843 407.21656 479.96294 L 407.21656 465.27015 C 407.21656 464.71787 407.6643 464.27015 408.21656 464.27015 L 703.86756 464.27015 C 704.4198 464.27015 704.86756 463.82244 704.86756 463.27015 Z" stroke="#25006b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
-      <g id="Graphic_102">
-        <text transform="translate(745.6026 202)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#250060" x="0" y="32">adjust </tspan>
-          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#aa3323" y="32">weights</tspan>
-        </text>
-      </g>
       <g id="Graphic_103">
-        <text transform="translate(886.4151 268.27143)" fill="#250060">
+        <text transform="translate(830.8472 268.27143)" fill="#250060">
           <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#250060" x="0" y="32">error = -5</tspan>
-        </text>
-      </g>
-      <g id="Graphic_104">
-        <text transform="translate(745.6026 334.54286)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#250060" x="0" y="32">adjust parameters</tspan>
         </text>
       </g>
       <g id="Graphic_106">
@@ -295,12 +286,12 @@
         <line x1="235.63915" y1="267.6302" x2="267.4332" y2="266.86207" marker-start="url(#FilledArrow_Marker_4)" stroke="#9f2e21" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
       </g>
       <g id="Graphic_120">
-        <text transform="translate(59 445)" fill="#2b1c64">
-          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#2b1c64" x="0" y="32">adjust weights</tspan>
+        <text transform="translate(51 445)" fill="#2b1c64">
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#2b1c64" x="0" y="32">adjusted weights</tspan>
         </text>
       </g>
       <g id="Graphic_121">
-        <circle cx="38.1875" cy="467.625" r="11.5000183758718" fill="#9f2e21"/>
+        <circle cx="30.1875" cy="467.625" r="11.5000183758718" fill="#9f2e21"/>
       </g>
       <g id="Graphic_122">
         <circle cx="338.5" cy="338.73077" r="7.50001198426423" fill="#9f2e21"/>
