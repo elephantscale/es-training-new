@@ -24,41 +24,49 @@
 - Imagine a golfer is trying to get the ball in the hole
 
 - He is getting help from a coach
-    - Coach is giving him feedback after each shot
+
+- Coach is giving him feedback after each shot
 
 ---
 
 ## Optimizing a Golf Game
 
 - First swing is off to the right a little
-
-- Error is measured by __loss function__
-
+- Error is measured by __loss function__  (_error-1_)
 - Optimizer ('golf coach') gives feedback on first shot
+    - _"swing a little to left"_
 
 <!-- TODO Shiva -->
 
-<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:40%;"/> &nbsp;
-<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:22%;"/> &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:35%;"/>
 
 
 ---
 
 ## Optimizing a Golf Game
 
-- Second shot is aimed at the hole, but stops a little short
-
+- Second shot is aimed at the hole, but stops a little short (_error-2_)
 - Optimizer corrects the swing again
-
-- And the final swing makes the hole !
+    - _"give it little more power"_
+- And the third swing makes the hole !
 
 <!-- TODO Shiva -->
 
-<img src="../../assets/images/deep-learning/optimizer-4.png" style="width:40%;"/> &nbsp;
-<img src="../../assets/images/deep-learning/optimizer-5.png" style="width:40%;"/>
+<img src="../../assets/images/deep-learning/optimizer-4.png" style="width:32%;"/> &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-5.png" style="width:32%;"/>
 
 
+---
 
+## Optimizing a Golf Game - Summary
+
+<!-- TODO Shiva -->
+
+<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:12%;"/> &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:25%;"/>
+<img src="../../assets/images/deep-learning/optimizer-4.png" style="width:25%;"/> &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-5.png" style="width:25%;"/>
 
 ---
 
