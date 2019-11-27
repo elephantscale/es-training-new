@@ -160,9 +160,7 @@ Notes:
 
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
-<img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:30%;"/> <!-- {"left" : 0.0, "top" : 5.3, "height" : 2.4, "width" : 4.4} -->  &nbsp;
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:25%;"/> <!-- {"left" : 4.4, "top" : 5.3, "height" : 2.3, "width" : 2.6} -->
-<img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:25%;"/>  <!-- {"left" : 7.4, "top" : 5.3, "height" : 2.3, "width" : 2.6} -->
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
  
 
 Notes: 

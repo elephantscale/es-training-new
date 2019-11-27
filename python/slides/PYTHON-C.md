@@ -1,5 +1,6 @@
 # Python C Extensions
 
+---
 
 ## Why an Extension?
 
@@ -103,19 +104,15 @@ static PyObject *MyFunction( PyObject *self, PyObject *args);
 ## Types of Function Definitions
 
   * There are only 4 types of function definitions
-
   * Function With No Arguments
     - `static PyObject *MyFunction( PyObject *self);`
-
   * Function with Exactly One Argument
     - `static PyObject *MyFunction( PyObject *self, PyObject *arg);`
     - `arg` here represents a pointer to PyObject with exactly one argument 
-  
   * Function With Positional Arguments
     - `static PyObject *MyFunction( PyObject *self, PyObject *args);`
     - Allows a variable number of arguments
     - `args` here represents a pointer to PyObject with multiple arguments 
- 
   * Function With Keyword Arguments and Positional Arguments
     - `static PyObject *MyFunction( PyObject *self, PyObject *args, PyObject *kwargs);`
     - This allows both Positional arguments and keyword arguments
@@ -182,8 +179,10 @@ setup(name = 'myModule', version = '1.0',  \
    ext_modules = [Extension('myModule', ['test.c'])])
 ```
 
+---
 
 # Cython
+---
 
 ## About Cython
 
@@ -191,6 +190,7 @@ setup(name = 'myModule', version = '1.0',  \
  * The generator produces code that can be easily extended with vanilla C code
  * Cython is technically a *superset* of Python
 
+---
 
 ## Coding Cython
 
@@ -199,7 +199,7 @@ setup(name = 'myModule', version = '1.0',  \
  * You then will be able to convert the code to a *generated* .c file
  * The generated .c file will be then compiled as any other C program
 
-
+---
 
 ## Setup.py file
 
@@ -214,6 +214,7 @@ setup(name='Hello world app',
       ext_modules=cythonize("hello.pyx"))
 ```
 
+---
 
 ## An example code 
 
@@ -234,6 +235,7 @@ setup(name='Hello world app',
       ext_modules=cythonize("hello.pyx"))
 ```
 
+---
 
 ## Build and run
  * We can build as follows:

@@ -1,5 +1,5 @@
-Python Intro
-===================
+# Python Intro
+---
 
 ## Lesson Objectives
 
@@ -9,8 +9,10 @@ Python Intro
   * Learn about Python Integrated Development Environments (IDEs)
   * Learn, Install and Use Jupyter Notebooks
 
+---
 
 # Introduction
+---
 
 ## About Python
 
@@ -48,6 +50,8 @@ Notes:
   * Open source
 
     - Commercial packages costs thousands
+
+---
 
 ## Why Python
 
@@ -256,7 +260,8 @@ Notes:
 
   * Python Most popular language in 2018 on Stack Overflow
 
-![](../images/3rdparty/Future-Traffic-on-Major-Programming-Languages-Stackoverflow.png) <!-- {"left" : 1.21, "top" : 1.81, "height" : 5.45, "width" : 7.83} -->
+<img src="../../assets/images/python/3rd-party/Future-Traffic-on-Major-Programming-Languages-Stackoverflow.png" style="max-width:70%;"/>
+
 
 Notes:
 
@@ -264,12 +269,12 @@ Notes:
 
 ## A simple “Hello, world!” comparison
 
-![](../images/Pythonv2.x.png) <!-- {"left" : 0.13, "top" : 0.97, "height" : 6.2, "width" : 5.25} -->
+
+<img src="../../assets/images/python/3rd-party/Pythonv2.x.png" style="max-width:70%;"/>
 
 
 
-![](../images/c++.png) <!-- {"left" : 5.38, "top" : 0.88, "height" : 6.28, "width" : 4.65} -->
-
+<img src="../../assets/images/python/3rd-party/c++.png" style="max-width:70%;"/>
 
 Notes:
 
@@ -337,7 +342,9 @@ Notes:
 
 ## Installation
 
-![](../images/Installing-Python.png) <!-- {"left" : 3.17, "top" : 3.25, "height" : 3.38, "width" : 3.92} -->
+
+<img src="../../assets/images/python/Installing-Python.png" style="max-width:70%;"/>
+
 
 Notes:
 
@@ -353,11 +360,9 @@ Notes:
 
   * Ensure to get the Python `3.*` version
 
+<img src="../../assets/images/python/Installing-Python.png" style="max-width:60%;"/>
+&nbsp; &nbsp; <img src="../../assets/images/python/3rd-party/anaconda.png" style="max-width:30%;"/>
 
-![](../images/Installing-Python.png) <!-- {"left" : 5.12, "top" : 1.0, "height" : 2.55, "width" : 2.95} -->
-
-
-![](../images/anaconda.png) <!-- {"left" : 5.12, "top" : 3.7, "height" : 3.67, "width" : 4.22} -->
 
 
 Notes:
@@ -546,6 +551,7 @@ Notes:
 ---
 
 # IDEs
+---
 
 ## IDEs
 
@@ -573,7 +579,8 @@ Notes:
 
   * Website - https://github.com/spyder-ide/spyder
 
-![](../images/Spyder.png) <!-- {"left" : 3.54, "top" : 3.02, "height" : 4.07, "width" : 6.48} -->
+
+<img src="../../assets/images/python/3rd-party/Spyder.png" style="width:50%;"/>
 
 Notes:
 
@@ -587,7 +594,8 @@ Notes:
 
   * Pretty Heavyweight
 
-![](../images/Pycharm.png) <!-- {"left" : 0.9, "top" : 2.55, "height" : 4.43, "width" : 8.44} -->
+
+<img src="../../assets/images/python/3rd-party/Pycharm.png" style="width:50%;"/>
 
 Notes:
 
@@ -599,7 +607,9 @@ Notes:
 
 * Website - http://www.pydev.org/
 
-![](../images/PyDev.png) <!-- {"left" : 1.08, "top" : 2.08, "height" : 4.55, "width" : 8.09} -->
+
+<img src="../../assets/images/python/3rd-party/PyDev.png" style="width:50%;"/>
+
 
 Notes:
 
@@ -621,7 +631,8 @@ Notes:
 
   * Website - https://code.visualstudio.com/
 
-![](../images/Visual-Studio-Code.png) <!-- {"left" : 2.07, "top" : 2.65, "height" : 4.36, "width" : 6.12} -->
+
+<img src="../../assets/images/python/3rd-party/Visual-Studio-Code.png" style="width:50%;"/>
 
 Notes:
 
@@ -679,6 +690,8 @@ Notes:
 
 # Jupyter Notebook
 
+---
+
 ## Jupyter Notebooks
 
   * Jupyter notebooks are a great way to showcase working python code.
@@ -706,7 +719,8 @@ Notes:
 
   * Example:
 
-![](../images/Jupyter.png) <!-- {"left" : 0.5, "top" : 1.48, "height" : 5.49, "width" : 9.26} -->
+<img src="../../assets/images/python/3rd-party/Jupyter.png" style="width:50%;"/>
+
 
 Notes:
 
@@ -722,7 +736,8 @@ https://jupyter.org/
     individually too -
     https://jupyter.org/install
 
-![](../images/Jupyter-Notebook-Installation.png) <!-- {"left" : 5.21, "top" : 2.81, "height" : 4.04, "width" : 4.26} -->
+
+<img src="../../assets/images/python/3rd-party/Jupyter-Notebook-Installation.png" style="width:40%;"/>
 
 Notes:
 
@@ -759,7 +774,8 @@ Notes:
 
 ## Browser for Jupyter Notebook
 
-![](../images/Browser-for-Jupyter-Notebook.png) <!-- {"left" : 0.7, "top" : 1.16, "height" : 6.17, "width" : 8.85} -->
+
+<img src="../../assets/images/python/3rd-party/Browser-for-Jupyter-Notebook.png" style="width:50%;"/>
 
 Notes:
 
@@ -813,5 +829,4 @@ Notes:
 
     - **02__pythonIntro | learningJupyter.ipynb**
 
----
 

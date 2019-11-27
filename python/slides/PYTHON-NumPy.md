@@ -298,7 +298,7 @@ array([10,15,20,25])
 ```
 <!-- {"left" : 0, "top" : 1.55, "height" : 0.81, "width" : 8.78} -->
 
-  * 
+  
 
   * Linspace (n numbers from a to b)
 

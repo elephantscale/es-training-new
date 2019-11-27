@@ -101,14 +101,14 @@ with open(filename, 'r') as myfile:
 # File is auto-closed
 ```
 
---
+---
 
 ## Reading a File Line by Line
 
   * Once we open a file, we may want to read line-by-line
   * Must be open in text mode
 
- ```python
+```python
 filename = "../data/files/file.txt"
 with open(filename, 'r') as myfile:
   for line in myfile:
@@ -122,7 +122,8 @@ with open(filename, 'r') as myfile:
 ## Python File Exceptions
 
   * Python will throw IO exceptions
-  ```python
+
+```python
 try:
   with open(filename, 'r') as myfile:
   for line in myfile:
@@ -156,7 +157,7 @@ Notes:
   * must say `import csv` at top 
   * Example:
 
- ```python
+```python
 filename = "../data/files/file.csv"
 with open(filename, 'r') as myfile:
   myfilereader = csv.reader
@@ -172,15 +173,15 @@ Notes:
 ---
 
 ## JSON Files
+
  * What about JSON files?
  * We need to say `import json` at the top
 
- ```python
+```python
 import json
 filename = "../data/files/file.json"
 with open(filename, 'r') as myfile:
    my_dict = json.load(myfile) # loads into dict
-
 ```
 
 ---
@@ -189,8 +190,7 @@ with open(filename, 'r') as myfile:
 
  * These kinds of files are best handled by the `BeautifulSoup` package
 
-
- ```python
+```python
 
 from bs4 import BeautifulSoup
 filename = "../data/files/file.xml"

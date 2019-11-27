@@ -30,6 +30,8 @@ Notes:
 
 ---
 # Classes/Objects
+---
+
 ## Classes and Objects
 
   * Python allows Classes to be defined.
@@ -69,7 +71,8 @@ Notes:
     - Security Doors have a locked variable (True/False)
 
 
-![](../images/Door-Class.png) <!-- {"left" : 2.3, "top" : 3.16, "height" : 4.1, "width" : 5.65} -->
+
+<img src="../../assets/images/python/Door-Class.png" style="width:50%;"/>
 
 
 Notes:
@@ -78,10 +81,7 @@ Notes:
 
 ## OOP in Python
 
-![](../images/OOP-in-Python.png) <!-- {"left" : 1.02, "top" : 1.37, "height" : 5.35, "width" : 8.21} -->
-
-
-
+<img src="../../assets/images/python/OOP-in-Python.png" style="width:60%;"/>
 
 
 Notes:
@@ -489,9 +489,7 @@ Notes:
 
 ## Multiple Inheritance
 
-
   * Python has multiple inheritance (can inherit from multiple parent classes)
-
   * Example of the ”diamond problem”:
 
 ```python
@@ -509,9 +507,8 @@ class D(B,C):
 ```
 <!-- {"left" : 0, "top" : 2.42, "height" : 3.18, "width" : 5.78} -->
 
-![](../images/Multiple-Inheritance.png) <!-- {"left" : 5.99, "top" : 3.32, "height" : 3.55, "width" : 3.8} -->
 
-
+<img src="../../assets/images/python/Multiple-Inheritance.png" style="width:30%;"/>
 
 
 
@@ -642,4 +639,3 @@ Notes:
 
 Notes:
 
----

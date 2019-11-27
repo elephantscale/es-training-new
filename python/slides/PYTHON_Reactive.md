@@ -4,8 +4,9 @@ Notes:
 
 * Labs are here https://github.com/elephantscale/python-labs
  
-
+---
 # Reactive Programming 
+---
 
 ## What is reactive programming?
 
@@ -19,12 +20,13 @@ Notes:
   - Cure for
      - state machines or callback hell
      
-![](../images/01-reactive.png)
+
+<img src="../../assets/images/data-analysis-python/3rd-party/01-reactive.png" alt="01-reactive.png" style="width:40%;"/>
 
 Notes: 
 
 http://reactivex.io/
-
+---
 
 ## ReactiveX Languages
 * Java: RxJava
@@ -37,6 +39,7 @@ http://reactivex.io/
 * Lua: RxLua
 * Ruby: Rx.rb
 * **Python: RxPY**
+---
 
 ## Reactive Languages cont'd
 * Go: RxGo
@@ -48,14 +51,18 @@ http://reactivex.io/
 * Elixir: reaxive
 * Dart: RxDart
 
+---
 
 ## Event-driven programming
 
-![](../images/02-reactive-Event_driven_programming_Simply_Explained.jpg)
+
+<img src="../../assets/images/data-analysis-python/02-reactive-Event_driven_programming_Simply_Explained.jpg" alt="02-reactive-Event_driven_programming_Simply_Explained.jpg" style="width:60%;"/>
+
 
 Notes:
 
 https://commons.wikimedia.org/wiki/File:Event_driven_programming_Simply_Explained.jpg
+---
 
 ## Event-driven Programming Incarnations
 
@@ -72,11 +79,14 @@ Implementations:
 * promises
 * streams
 
+---
+
 ## Event-driven programming is hard
 * That is, hard to use correctly. Why?
 * Instead of a sequence of actions
 * The beginning of an action starts when an event occurs
 * The actions that are triggered are often dispersed within the program
+---
 
 ## Event-driven programming in GUI
 * Graphical user interfaces (GUIs):
@@ -84,13 +94,18 @@ Implementations:
   - C++ on Windows
   - C or eventually C++ on Unix (with X11)
   - Java
-  
+---
+
 ## Sequential vs. Event-Driven Programming
-![](../images/03-reactive-sequential-vs-event-driven.png)
+
+<img src="../../assets/images/data-analysis-python/03-reactive-sequential-vs-event-driven.png" alt="03-reactive-sequential-vs-event-driven.png" style="width:60%;"/>
+
 
 Notes:
 
 Image from book
+
+---
 
 ## How a Reactor Works
 * The Reactor design principle
@@ -98,11 +113,21 @@ Image from book
   - Event handler
   - Event demultiplexer
   
+---
+
 ## The Reactor Design Principle
-![](../images/04-reactor-design.png)
+
+
+<img src="../../assets/images/data-analysis-python/04-reactor-design.png" alt="04-reactor-design.png" style="width:60%;"/>
+
+
+---
 
 ## The Proactor Design Principle
-![](../images/05-reactive-proactor.png)
+
+<img src="../../assets/images/data-analysis-python/05-reactive-proactor.png" alt="05-reactive-proactor.png" style="width:60%;"/>
+
+---
 
 ## What is Reactive After All?
 * We cover RxPY, Reactive Programming framework
@@ -111,8 +136,13 @@ Image from book
 * Reactive systems are described in
 * **[The Reactive Manifesto](https://www.reactivemanifesto.org/)**
 
+---
+
 ## Reactive Systems
-![](../images/06-reactive-system.png)
+
+<img src="../../assets/images/data-analysis-python/06-reactive-system.png" alt="06-reactive-system.png" style="width:60%;"/>
+
+---
 
 ## Reactive System Are
 * Responsive:
@@ -130,7 +160,10 @@ Image from book
     - allows to isolate components
     - saturation is controlled via back-pressure.
   
+---
+
 # Asynchronous responses
+---
 
 ## AsyncIO
 
@@ -140,6 +173,8 @@ Image from book
 * Python philosophy: There should be only one obvious way to do something
 * AsyncIO is it
 
+---
+
 ## AsynIO Components
 * Futures
   - represent values that will be available later
@@ -147,9 +182,14 @@ Image from book
   - allow you to execute asynchronous actions
 * Event loops
   - schedule the execution of the active tasks
-  
+
+---
+
 ## Use of Futures
-![](../images/07-reactive-future-use.png)
+
+<img src="../../assets/images/data-analysis-python/07-reactive-future-use.png" alt="07-reactive-future-use.png" style="width:60%;"/>
+
+---
 
 ## Future Code
 
@@ -162,11 +202,15 @@ print("Future is done: {}".format(f.done()))
 print("result is: {}".format(f.result())
 ```
 * Output
+
 ```text
 Future is done: False
 Future is done: True
 result is: 42
 ```
+
+---
+
 
 ## Co-routines
 
@@ -185,6 +229,8 @@ wait(3)
 <coroutine object wait at 0x10b807570>
 ```
 
+---
+
 ## Event Loop
 * Entity of AsyncIO
 * Scheduling all asynchronous actions
@@ -194,6 +240,8 @@ wait(3)
   - execute handlers associated with these events
   - these handlers are co-routines
   
+---
+
 ## Event Loop Code
 
 ```python
@@ -209,11 +257,17 @@ wait for 2 seconds at 23:8:22
 waited for 2 seconds at 23:8:24
 ```
   
+---
+
 ## Executing co-routines
-![](../images/08-reactive-coroutines.png)
+
+<img src="../../assets/images/data-analysis-python/08-reactive-coroutines.png" alt="08-reactive-coroutines.png" style="width:60%;"/>
 
   
+---
+
 # RxPY: Reactive Python
+---
 
 ## RxPY Lab
 * Please do the RxPY lab

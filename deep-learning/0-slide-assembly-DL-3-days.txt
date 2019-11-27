@@ -19,6 +19,9 @@
 ## Get the labs setup
 ../machine-learning/generic/Labs-Prep.md
 
+../machine-learning/generic/Decision-Trees-Generic.md
+
+
 ## TensorFlow
 ./tensorflow/TENSORFLOW-Intro.md
 

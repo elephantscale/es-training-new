@@ -140,6 +140,7 @@ Notes:
 ---
 
 ## Accuracy can Lie!
+
  * Accuracy is the most deceptive evaluation
  * Class Balance can affect results.
  * Imagine a test for a rare medical condition
@@ -156,6 +157,7 @@ Notes:
 ---
 
 ## Accuracy in Scikit-Learn
+
  * Here is how we do accuracy in Scikit-Learn
  * Returns number from 0.0 to 1.0
 
@@ -170,6 +172,7 @@ Notes:
 ---
 
 ## Classification Report
+
  * Classification Report Gives us a lot!
  * Includes:
    - Accuracy
@@ -184,6 +187,7 @@ Notes:
 ---
 
 ## Classification Report in Python
+
  * Here is how we do classification report:
 
 ```python

@@ -1,6 +1,6 @@
 # Python Scikit-Learn
 
-<img src="../../assets/images/logos/scikit-learn-logo-1.png" style="width:50%;"/>
+<img src="../../assets/images/logos/scikit-learn-logo-1.png" style="width:40%;"/>
 
 ---
 
@@ -235,7 +235,7 @@ plt.scatter(x[:, 0], x[:, 1], c=y)
 
 ---
 
-## SkLearn Datasets : make_classification
+## SkLearn Datasets: make_classification
 
 
 <img src="../../assets/images/data-analysis-python/scikit-make-classification-1.png" style="width:40%;float:right;"/>
@@ -458,4 +458,3 @@ Notes:
 
 Notes:
 
----

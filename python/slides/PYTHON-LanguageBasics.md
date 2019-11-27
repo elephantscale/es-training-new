@@ -186,6 +186,7 @@ Notes:
 ---
 
 ## More About Lists
+
   * Lists are stored as **references** to objects
   * Not the objects themselves!
   * Remember **EVERYTHING** in Python is an object!
@@ -193,8 +194,7 @@ Notes:
   * If the objects pointed to change,
     the values in the list will change too!
 
---- 
-
+---
 
 ## Slicing Lists
 
@@ -424,7 +424,7 @@ Notes:
     - **range**(1,10, 2) => 1,3,5,7,9
     - **range**(0, 0.1, 0.01) =>  0.0, 0.01, …,  0.10
 
-  * More options:  **?range**
+  * More options: **?range**
 
 
 
@@ -503,8 +503,7 @@ Notes:
 
   * Overview:
 
-     - Conditional Statements in Python
-lab
+     - Conditional Statements in Python lab
 
   * Approximate time: 
     - 10 mins
@@ -550,7 +549,7 @@ Notes:
 
   * Can also operate over strings
 
- ```python
+```python
  list = ['Tim', 'Mark', 'Sujee']
   if 'Sujee' in list:
     print 'Present!'
@@ -568,7 +567,7 @@ Notes:
   * The following is the syntax for loops in Python
 
 
- ```python
+```python
 # for loop
 for (x in range(10)):
 		print(x)
@@ -612,8 +611,7 @@ Notes:
   * The example below is a list comprehension
 
 
-![](../images/Comprehensions.png) <!-- {"left" : 1.02, "top" : 2.72, "height" : 1.97, "width" : 8.21} -->
-
+<img src="../../assets/images/python/Comprehensions.png" style="width:60%;"/>
 
  ```python
 >>> a_list = [1, "4", 9, "a", 0, 4]
@@ -662,6 +660,8 @@ Notes:
 
 # Functions
 
+---
+
 ## User Functions
 
   * Easy to write custom user functions and extend Python.
@@ -674,8 +674,8 @@ Notes:
 
 
 
- ```python
-def function (arg1, arg2, …. ):
+```python
+def function (arg1, arg2, .... ):
 	statements
 	return(result)  
 #don't need to say return
@@ -691,7 +691,7 @@ Notes:
 
   * Concept of modular programming
 
-![](../images/User-Functions.png) <!-- {"left" : 3.43, "top" : 1.25, "height" : 3.63, "width" : 3.39} -->
+<img src="../../assets/images/python/User-Functions.png" style="width:20%;"/>
 
 
   * Easy to write custom user functions and extend Python
@@ -699,7 +699,7 @@ Notes:
   * "return" statements are optional
 
 
- ```python
+```python
 def function (arg1, arg2, … ):
 		statements
 		return(result) # don't need to say return
@@ -713,7 +713,7 @@ Notes:
 ---
 ## User Function Example
 
- ```python
+```python
 def my_max(x,y): 
    if (x > y) 
        return x
@@ -730,8 +730,6 @@ Notes:
   * Return type can be any type - scalar/complex data type or user defined object / `None`
 
   * If end of function is reached without explicit return, the value of last evaluated expression is returned.
-
-
 
 ```python
 def my_max(x,y):
@@ -760,7 +758,7 @@ Notes:
   * Functions can (and should) define a docstring to help understand the inputs and outputs of the function
 
 
- ```python
+```python
 def my_max(x,y):
 '''
 This function re-implements the max function
@@ -795,7 +793,7 @@ Notes:
   * Usually used as an argument to another function
   * The syntax is as follows:
 
- ```python
+```python
 lambda <inputs> : <output>
 ```
 <!-- {"left" : 0, "top" : 2.34, "height" : 0.77, "width" : 7.29} -->
@@ -803,7 +801,7 @@ lambda <inputs> : <output>
   * Many functions require other functions as parameters. For example, sorting a list of tuples by the second element in the tuple
 
 
- ```python
+```python
 >>> people = [(2, "Sara"), (1, "Bob"), (3, "Mary")]
 >>> people.sort()
 >>> print(people)
@@ -825,7 +823,7 @@ Notes:
   * The syntax is as follows:
 
 
- ```python
+```python
 map(<function>, <sequence>)
 ```
 <!-- {"left" : 0, "top" : 1.86, "height" : 0.78, "width" : 7.57} -->
@@ -833,7 +831,7 @@ map(<function>, <sequence>)
   * Example:
 
 
- ```python
+```python
 >>> a = [1, 2, 3, 4, 5]
 >>> a_square = list(map(lambda x : x*x, a))
 >>> print(a_square)
@@ -854,7 +852,7 @@ Notes:
 
   * The syntax is as follows:
 
- ```python
+```python
 filter(<function>, <sequence>)
 ```
 <!-- {"left" : 0, "top" : 2.34, "height" : 0.76, "width" : 8.06} -->
@@ -863,7 +861,7 @@ filter(<function>, <sequence>)
   * Example:
 
 
- ```python
+```python
 >>> a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 >>> a_even = list(filter(lambda x : x%2==0, a))
 >>> a_odd = list(filter(lambda x : x%2!=0, a))
@@ -880,15 +878,15 @@ Notes:
 ## Reduce
 
 
-Performs a reduce operation on any list type. It continually applies a function to the input sequence and returns a single result.
+* Performs a reduce operation on any list type. It continually applies a function to the input sequence and returns a single result.
 
 
-![](../images/Reduce.png) <!-- {"left" : 3.5, "top" : 2.04, "height" : 1.89, "width" : 3.25} -->
+<img src="../../assets/images/python/Reduce.png" style="width:30%;"/>
 
 
-Example: One line statement to find the maximum number from a sequence
+* Example: One line statement to find the maximum number from a sequence
 
- ```python
+```python
 from functools import reduce
 reduce(lambda a,b: a if (a>b) else b, [47,11,42,102,13])
 102
@@ -931,8 +929,8 @@ Notes:
 Notes:
 
 ---
-
 # Strings
+---
 
 
 ## Strings
@@ -964,7 +962,7 @@ Notes:
   * Uses C (not C++) style printf syntax
 
 
- ```python
+```python
 text = ("Hi %s! You are the %dth 
 visitor here today" % ("Mary", 56))
 ```
@@ -1004,7 +1002,7 @@ Notes:
     - `'Hello'[1:-1]` gives `ell`       # start from 1 up to but not including last
 
 
- ```python
+```python
 >>> text = "Hello world!"
 >>> print(text)
 'Hello world!'
@@ -1046,7 +1044,7 @@ Notes:
 
   * Python has very powerful (and fast) regex engine
 
- ```python
+```python
 import re
 p = re.compile(r'ab*', re.IGNORECASE)
 p.match('abbb')
@@ -1056,7 +1054,7 @@ p.match('abbb')
 <!-- {"left" : 0, "top" : 1.59, "height" : 1.8, "width" : 10.25} -->
 
 
- ```python
+```python
 m = p.match('abbb').group(0)   #returns string
 ```
 <!-- {"left" : 0, "top" : 3.66, "height" : 0.66, "width" : 10.25} -->
@@ -1107,18 +1105,18 @@ Notes:
 
 ---
 
-
 # Exceptions
 
-
+---
 # Files and Exception Handling
+---
 
 ## Files
 
 
   * Syntax to open a file – txt
 
- ```python
+```python
 filename = "../data/files/file.txt"
 with open(filename, 'r') as myfile:
 		for line in myfile:
@@ -1130,7 +1128,7 @@ with open(filename, 'r') as myfile:
   * Syntax to open a file – csv
 
 
- ```python
+```python
 filename = "../data/files/file.csv"
 with open(filename) as myfile:
 		myfilereader = csv.reader
@@ -1151,7 +1149,7 @@ Notes:
   * We should catch Exceptions
 
 
-  ```python
+```python
 try:
     f = open(filename, 'rU')
     text = f.read()
@@ -1173,7 +1171,7 @@ Notes:
   * Python can throw exceptions
 
 
-  ```python
+```python
 try:
 		with open(filename, 'r') as myfile:
         for line in myfile:
@@ -1217,9 +1215,9 @@ Notes:
 Notes:
 
 ---
-
 # Multithreaded Programming
 
+---
 
 ## Multithreaded programming
 
@@ -1230,11 +1228,8 @@ Notes:
   * The `threading` class is used
 
 
-![](../images/Multithreaded2.png) <!-- {"left" : 1.36, "top" : 2.48, "height" : 4.85, "width" : 4.08} -->
 
-
-![](../images/Multithreaded1.png) <!-- {"left" : 6.05, "top" : 3, "height" : 3.79, "width" : 2.86} -->
-
+<img src="../../assets/images/python/Multithreaded2.png" style="width:33%;"/> <img src="../../assets/images/python/Multithreaded1.png" style="width:29.6%;"/>
 
 
 Notes:
@@ -1298,14 +1293,7 @@ Notes:
 
 ---
 
-Multithreaded programming
-
-
-
-
-
-
-Notes:
+# Multithreaded programming
 
 ---
 
@@ -1317,51 +1305,10 @@ Notes:
   * Python provides the signal class to handle messaging.
 
 
-![](../images/Callbacks.png) <!-- {"left" : 0.8, "top" : 3.23, "height" : 3.54, "width" : 5.51} -->
-
+<img src="../../assets/images/python/Callbacks.png" style="width:50%;"/>
 
 
 Notes:
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

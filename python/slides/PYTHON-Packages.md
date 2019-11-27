@@ -20,7 +20,3 @@
   * import numpy as np
 
 Notes:
-
----
-
-
