@@ -5,7 +5,7 @@ About-AI-NLP.md
 
 # Text with NLTK
 # (Labs here: https://github.com/elephantscale/data-analytics-python-labs/tree/master/06-text)
-$ES_HOME/es-training/data-analysis-python/slides/PYTHON-Text.md
+$ES_HOME/es-training/python/slides/PYTHON-Text.md
 $ES_HOME/es-training/machine-learning/generic/Text-Analytics-Generic.pptx
 $ES_HOME/es-training/machine-learning/generic/Text-Analytics-Python.pptx
 
@@ -42,7 +42,7 @@ $ES_HOME/es-training/deep-learning/slides/generic/DL-RNNs.md
 $ES_HOME/es-training/deep-learning/slides/generic/DL-LSTMs.md
 
 # TODO - fix this link
-$ES_HOME/es-training-collaboration/data-analysis-python/slides/FeatureEngineering.md
+$ES_HOME/es-training-collaboration/python/slides/FeatureEngineering.md
 
 
 # Rasa
@@ -52,4 +52,4 @@ $ES_HOME/es-training-collaboration/data-analysis-python/slides/FeatureEngineerin
 ./rasa-pipeline.md
 
 # Spacy
-../../data-analysis-python/slides/PYTHON-Text-Spacy.md
+../../python/slides/PYTHON-Text-Spacy.md
