@@ -75,8 +75,9 @@ results = smf.ols('Lottery ~ Literacy +
 
 ---
 
+## Results of Summary()
 
-### Results of Summary()
+
 ```text
                             OLS Regression Results
 ==============================================================================
@@ -106,5 +107,6 @@ Kurtosis:                       3.003   Cond. No.                         702.
 ---
 
 # Logistic Regression
+---
 
 ## Logistic Regression in Statsmodels

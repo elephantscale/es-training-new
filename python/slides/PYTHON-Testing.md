@@ -4,9 +4,10 @@
 ---
 
 ## Lesson Objectives
+
 * Being familiar with different testing platforms and IDEs
 * Running a few simple test to see real application
-* 
+
 
 Notes:  
 
@@ -14,8 +15,7 @@ Notes:
 
 # Test approaches
 
---- 
-
+---
 
 ## Automated vs. Manual Testing
 
@@ -48,16 +48,19 @@ Notes:
 ---
 
 ## A failed example
+
 * If everything is OK nothing comes up
 * In case of any problem with the code we get an error
 
-![](../images/assertion_error.png)
+
+<img src="../../assets/images/python/assertion_error.png" style="max-width:70%;"/>
 
 Notes:
 
 ---
 
 ## Test Python file
+
 * Putting the test into a Python file:
 
 ```python
@@ -69,6 +72,7 @@ if __name__ == "__main__":
     print("Everything is OK")
 ```
 * To execute the Python file:
+
 ```bash
 $ python testing_sum.py
 Everythin is OK
@@ -79,8 +83,13 @@ Notes:
 ---
 
 # Different kinds of test runners
+
+---
+
 ## Why test runner
+
 * Consider the following file: `test_sum_tuple.py`
+
 ```python
 def testing_sum():
     assert sum([1, 2]) == 3, "Should be 3"
@@ -101,6 +110,7 @@ Notes:
 ## Why test runner (contd)
 
 * The output:
+
 ```bash
 $ python test_sum_tuple.py
 Traceback (most recent call last):
@@ -117,6 +127,7 @@ Notes:
 ---
 
 ## Choosing a test runner
+
 * The most common test runners are:
   - `unittest`
   - `nose` or `nose2`
@@ -127,7 +138,9 @@ Notes:
 ---
 
 ## Enabling test runners
+
 * For `unittest`:
+
 ```python
 "python.unitTest.unittestEnabled": true,
 "python.unitTest.pyTestEnabled": false,
@@ -135,6 +148,7 @@ Notes:
 ```
 
 * For `pytest`:
+
 ```python
 "python.unitTest.unittestEnabled": false,
 "python.unitTest.pyTestEnabled": true,
@@ -142,6 +156,7 @@ Notes:
 ```
 
 * For `nose`:
+
 ```python
 "python.unitTest.unittestEnabled": false,
 "python.unitTest.pyTestEnabled": false,
@@ -151,6 +166,7 @@ Notes:
 ---
 
 ## unittest
+
 * Built into the Python standard library
 * Contains either a testing framework and a test runner
 * Requires that:
@@ -175,6 +191,7 @@ Notes:
 ---
 
 ## Example
+
 * FileName = `test_sum_unittest.py`
 
 ```python
@@ -199,13 +216,15 @@ Notes:
 
 ## The output
 
-![](../images/unit_tuple.png)
+<img src="../../assets/images/python/unit_tuple.png" style="width:60%;"/>
+
 
 Notes:
 
 ---
 
 ## nose
+
 * Is compatible with tests created by `unittest`
 * As a drop-in replacement for `unittest`
 * `nose2` is recommended 
@@ -215,6 +234,7 @@ Notes:
 ---
 
 ## How to run?
+
 * Install `nose2` from PyPI
   - `pip install nose2`
 * Execute it on the command line
@@ -236,13 +256,14 @@ $ python -m nose2
 
 * Output:
 
-![](../images/nose.png)
+<img src="../../assets/images/python/nose.png" style="max-width:70%;"/>
 
 Notes:
 
 ---
 
 ## Pytest
+
 * Supports execution of `unittest` test cases
 * Advantage of `pytest` is writing `pytest` test cases
 * These are some functions in a Python file starting with `test_` in their names
@@ -273,8 +294,11 @@ Notes:
 ---
 
 # PyCharm IDE
+---
+
 ## A simple project
-Let's create a simple project in python and run unittest on it
+
+* Let's create a simple project in python and run unittest on it
 
 Notes:
 
@@ -284,7 +308,7 @@ Notes:
 
 * Choose `File > New Project` and set the path and the name of the project
 
-![](../images/create_pro.png)
+<img src="../../assets/images/python/create_pro.png" style="max-width:70%;"/>
 
 * Then right click on the left panel and choose `new` and then `Python File`
 * Name the file `Solver`
@@ -296,7 +320,9 @@ Notes:
 ## Code
 
 * The following code creates a simple script which solves a quadratic equation.
+
 ```python
+
 import math
  
 class Solver:
@@ -311,6 +337,7 @@ class Solver:
             else:
                  raise Exception
  Solver().demo(2,1,0)
+
 ```
 
 Notes:
@@ -322,7 +349,8 @@ Notes:
 * Click on `Solver` and press `Ctrl+Shift+T` and click on `Create New Test` 
 * Check the `test_demo` and click on `OK`
 
-![](../images/test_pycharm.png)
+<img src="../../assets/images/python/test_pycharm.png" style="max-width:70%;"/>
+
 
 Notes:
 
@@ -332,7 +360,8 @@ Notes:
 
 * We need to add an import:
 
-![](../images/solver.png)
+<img src="../../assets/images/python/solver.png" style="max-width:70%;"/>
+
 
 Notes:
 
@@ -368,7 +397,7 @@ Notes:
 
 * Just press `Ctrl+Shift+F10` to run the test
 
-![](../images/result.png)
+<img src="../../assets/images/python/3rd-party/result.png" style="max-width:70%;"/>
 
 Notes:
 
@@ -379,6 +408,7 @@ Notes:
 ---
 
 ## Test discovery
+
 * Uses currently enabled testing framework
 * It can be triggered at any time 
 * By default `python.unitTest.autoTestDiscoverOnSaveEnabled` is `true`
@@ -390,17 +420,20 @@ Notes:
 ---
 
 ## CodeLens adornment
+
 * After recognizing test files, some items appear in the window
 * You can easily click on them to run the test
 * If discovery fails a notification shows up
 
-![](../images/codelens.png)
+<img src="../../assets/images/python/3rd-party/codelens.png" style="max-width:70%;"/>
+
 
 Notes:
 
 ---
 
 ## Running test
+
 * There are four ways:
   - By opening test file and using `CodeLens` 
   - By selecting `Run Tests` on the status bar (which can change appearance based on results). Then selecting one of the commands like `Run All Unit Tests` or `Run Failed Unit Tests`
@@ -409,4 +442,3 @@ Notes:
 
 Notes:
 
----

@@ -147,7 +147,7 @@ print(gw2006_sentences[:10])
 Notes:
 
 ---
-## NLTK Corpus : Novels
+## NLTK Corpus: Novels
 
   * These are public domain novels from Gutenberg project
 
@@ -183,9 +183,9 @@ Notes:
 
   * Nltk.tokenize package offers few handy ones
 
-    - Word_tokenize : gives out words
-    - Workpunct_tokenize : numbers and punctuations in their own words
-    - Sent_tokenize : splits into sentences
+    - Word_tokenize: gives out words
+    - Workpunct_tokenize: numbers and punctuations in their own words
+    - Sent_tokenize: splits into sentences
 
 ```python
 import nltk
@@ -490,7 +490,7 @@ Notes:
 
 ---
 
-## TextBlob Usage : Language Detection and Translation
+## TextBlob Usage: Language Detection and Translation
 
   * Detect languages and even translate!
 
@@ -515,7 +515,7 @@ Notes:
 
 ---
 
-## Lab:  Text-4 :  TextBlob
+## Lab:  Text-4:  TextBlob
 
   * Overview:
 

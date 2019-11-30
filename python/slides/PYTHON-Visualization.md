@@ -379,6 +379,8 @@ Notes:
 
   * Undamped vs Damped oscillations using subplot():
 
+<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-subplot.png" alt="Matplotlib-subplot.png" style="width:35%; float:right;"/><!-- {"left" : 5.91, "top" : 4.75, "height" : 3.37, "width" : 4.29} -->
+
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -407,7 +409,6 @@ plt.show()
 ```
 <!-- {"left" : 0, "top" : 2.0, "height" : 6.17, "width" : 9.59} -->
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-subplot.png" alt="Matplotlib-subplot.png" style="width:50%;"/><!-- {"left" : 5.91, "top" : 4.75, "height" : 3.37, "width" : 4.29} -->
 
 Notes:
 
@@ -456,7 +457,7 @@ plt.show()
 ```
 <!-- {"left" : 0, "top" : 2.0, "height" : 3.18, "width" : 8.44} -->
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-scatter01.png" alt="Matplotlib-scatter01.png" style="width:50%;"/><!-- {"left" : 5.83, "top" : 4.71, "height" : 4.33, "width" : 3.29} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-scatter01.png" alt="Matplotlib-scatter01.png" style="width:35%;"/><!-- {"left" : 5.83, "top" : 4.71, "height" : 4.33, "width" : 3.29} -->
 
 Notes:
 
@@ -658,9 +659,6 @@ Notes:
 ---
 
 
----
-
-
 # Examples
 
 ---
@@ -707,6 +705,7 @@ Notes:
 ---
 
 ## Heatmap
+
  * We can do Heatmaps in seaborn
 
 
@@ -743,6 +742,7 @@ sns.heatmap(flights, annot=True, fmt="d", linewidths=.5, ax=ax)
 
     - **visualization/3-heatmap.ipynb**
 
+---
 
 
 # Other Visualiztion
@@ -856,16 +856,12 @@ Notes:
 ## Lab: Graphs / ggplot
 
   * Overview:
-
     - Exploring graphing with Python
 
-
   * Approximate time:
-
-     - 30 minutes
+    - 30 minutes
 
   * Instructions:
-
     - **visualization/4-ggplot.ipynb**
 
 
@@ -901,6 +897,7 @@ Notes:
  * Bokeh is a plotting library for web-based *interactive* visualizations
  * Excellent for dashboarding and interactive web and mobile visualizations
 
+---
 
 ## Review
 

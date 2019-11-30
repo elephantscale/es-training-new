@@ -31,6 +31,7 @@ Notes:
 ---
 
 ## Evaluating a Regression Model
+
  * We can use the following:
    - Explained Variance
    - Mean Absolute Error (MAE)

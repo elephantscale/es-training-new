@@ -7,7 +7,9 @@
   * Zeppelin notebooks are another solution for data visualization with coding and collaboration in one tool
   * Apache Zeppelin provides Apache Spark integration
 
-![](../images/Zeppelin.png) <!-- {"left" : 1.08, "top" : 2.42, "height" : 4.68, "width" : 8.17} -->
+
+<img src="../../assets/images/python/Zeppelin.png" style="width:60%;"/>
+
 
 Notes:
 
@@ -26,7 +28,7 @@ Notes:
     technetwork/java/javase
     /downloads/index.html
 
-![](../images/Zeppelin-Notebook-Installation.png) <!-- {"left" : 5.40, "top" : 2.91, "height" : 4.44, "width" : 4.3} -->
+<img src="../../assets/images/python/Zeppelin-Notebook-Installation.png" style="width:30%;"/>
 
 Notes:
 
@@ -56,7 +58,8 @@ Notes:
 
 ## Browser for Zeppelin Notebook
 
-![](../images/Browser-for-Zeppelin-Notebook.png) <!-- {"left" : 0.26, "top" : 1.67, "height" : 4.63, "width" : 9.74} -->
+<img src="../../assets/images/python/Browser-for-Zeppelin-Notebook.png" style="width:70%;"/>
+
 
 Notes:
 
@@ -74,8 +77,8 @@ Notes:
 
 ## Review
 
-![](../../assets/images/generic/3rd-party/Review.png) <!-- {"left" : 0.26, "top" : 1.25, "height" : 5.48, "width" : 9.74} -->
+<img src="../../assets/images/generic/3rd-party/Review.png" style="width:50%;"/>
 
 
 
----
+
