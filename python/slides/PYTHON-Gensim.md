@@ -66,7 +66,7 @@ Document 1 : the brown dog likes the white cow
 Document 2 : the grass is brown
 Document 3 : the spotted cow likes green grass
 ```
-<!-- {"left" : 0.0, "top" : 1.54, "height" : 1.3, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.66, "height" : 1.3, "width" : 10.25} -->
 
 
 |      | brown| cow |dog  | grass |green |is  | likes |spotted |the  | white |
@@ -92,10 +92,10 @@ Notes:
 TF(t) = ----------------------------------------------
         Total number of terms in the document
 ```
-<!-- {"left" : 0.0, "top" : 2.31, "height" : 1.13, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.62, "height" : 1.13, "width" : 10.25} -->
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Term-Frequency.png" alt="Term-Frequency.png" style="width:55%;"/><!-- {"left" : 0.25, "top" : 3.75, "height" : 3.24, "width" : 9.75} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Term-Frequency.png" alt="Term-Frequency.png" style="width:55%;"/><!-- {"left" : 0.25, "top" : 4.19, "height" : 3.24, "width" : 9.75} -->
 
 Notes:
 
@@ -118,7 +118,7 @@ Source : tf-idf.xls
                   IDF(t) = log_e (  ---------------------------------------  )
                   number of documents with term 't' in it
 ```
-<!-- {"left" : 0.0, "top" : 4.65, "height" : 1.36, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 4.72, "height" : 1.36, "width" : 10.25} -->
 
 
 Notes:
@@ -155,10 +155,10 @@ Document 1 : the brown dog likes the white cow
 Document 2 : the grass is brown
 Document 3 : the spotted cow likes green grass
 ```
-<!-- {"left" : 0.0, "top" : 0.98, "height" : 1.3, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.35, "height" : 1.3, "width" : 10.25} -->
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/TF-IDF.png" alt="TF-IDF.png" style="width:55%;"/><!-- {"left" : 0.24, "top" : 2.44, "height" : 4.18, "width" : 9.74} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/TF-IDF.png" alt="TF-IDF.png" style="width:55%;"/><!-- {"left" : 0.24, "top" : 3.08, "height" : 4.18, "width" : 9.74} -->
 
 
 Notes:
@@ -171,7 +171,7 @@ Document 1 : the brown dog likes the white cow
 Document 2 : the grass is brown
 Document 3 : the spotted cow likes green grass
 ```
-<!-- {"left" : 0.0, "top" : 0.75, "height" : 1.04, "width" : 8.44} -->
+<!-- {"left" : 0.0, "top" : 2.83, "height" : 1.04, "width" : 8.44} -->
 
 
 | term	 | d1   | d2   |d3   | Document rank |
@@ -187,7 +187,7 @@ Document 3 : the spotted cow likes green grass
 | the    | 0 	| 0    | 0   | **All zero**  |  
 | white  | 0.16 | 0    | 0   | **d1** 	     |  
 
-<!-- {"left" : 0.26, "top" : 1.8, "height" : 5.5, "width" : 9.75, "columnwidth" : [1.95, 1.95, 1.95, 1.95, 1.95]} -->
+<!-- {"left" : 0.26, "top" : 2.83, "height" : 5.5, "width" : 9.75, "columnwidth" : [1.95, 1.95, 1.95, 1.95, 1.95]} -->
 
 Notes:
 

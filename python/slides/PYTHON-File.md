@@ -25,6 +25,8 @@
 | 'b'  | Opens a file in binary mode                        |
 | '+'  | Opens a file for both reading and writing          |
 
+<!-- {"left" : 0.25, "top" : 1.27, "height" : 4.38, "width" : 9.75} -->
+
 ---
 
 ## File Mode Examples
@@ -35,6 +37,8 @@
 |  'w'    | Overwrite existing file if exist in text mode |
 | '+b'    | Read and write binary mode                    |
 | 'xb'    | Open a file id not exists in binary mode      |
+
+<!-- {"left" : 0.25, "top" : 1.27, "height" : 2.5, "width" : 9.75} -->
 
 ---
 
@@ -57,6 +61,8 @@
 | utf-16   | Unicode 16 bit, used by Windows           |
 | cp1252   | Windows 1252 encoding, default on Windows |
 | ascii    | Legacy 8-bit ASCII, default on Python 2.x |
+
+<!-- {"left" : 0.25, "top" : 1.27, "height" : 2.69, "width" : 9.75} -->
 
 ---
 
@@ -100,6 +106,7 @@ with open(filename, 'r') as myfile:
 
 # File is auto-closed
 ```
+<!-- {"left" : 0, "top" : 3.15, "height" : 1.74, "width" : 6.61} -->
 
 ---
 
@@ -114,7 +121,7 @@ with open(filename, 'r') as myfile:
   for line in myfile:
     print(line)
 ```
-<!-- {"left" : 0, "top" : 1.53, "height" : 1.96, "width" : 9.74} -->
+<!-- {"left" : 0, "top" : 2.16, "height" : 1.96, "width" : 9.74} -->
 
 ---
 
@@ -132,8 +139,9 @@ except IOError:
   sys.stderr.write('problem reading:' + filename)
 
 ```
-<!-- {"left" : 0, "top" : 1.55, "height" : 1.92, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.55, "height" : 1.82, "width" : 9.74} -->
 
+<br/>
 
   * Exception handling helps in attempts to open non-existent files, corrupt files etc
 
@@ -145,7 +153,7 @@ try:
 except:
     print("Sorry! The file either doesn't exist or is corrupt!")
 ```
-<!-- {"left" : 0, "top" : 5.7, "height" : 1.68, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.51, "height" : 1.6, "width" : 9.74} -->
 
 Notes:
 
@@ -165,7 +173,7 @@ with open(filename, 'r') as myfile:
      for row in myfilereader:
 	print(' '.join(row))
 ```
-<!-- {"left" : 0, "top" : 4.33, "height" : 1.62, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.77, "height" : 2.03, "width" : 6.61} -->
 
 
 Notes:
@@ -183,6 +191,7 @@ filename = "../data/files/file.json"
 with open(filename, 'r') as myfile:
    my_dict = json.load(myfile) # loads into dict
 ```
+<!-- {"left" : 0, "top" : 2.17, "height" : 1.44, "width" : 8.78} -->
 
 ---
 
@@ -198,6 +207,7 @@ with open(filename, 'r') as myfile:
   soup = BeautifulSoup(myfile, 'xml')
   
 ```
+<!-- {"left" : 0, "top" : 2.19, "height" : 1.44, "width" : 6.94} -->
 
 ---
 
@@ -211,6 +221,7 @@ with open(filename, 'r') as myfile:
   soup = BeautifulSoup(myfile, 'xml')
 
 ```
+<!-- {"left" : 0, "top" : 2.27, "height" : 0.86, "width" : 6.94} -->
 
 ---
 
@@ -226,6 +237,7 @@ with open(filename, 'rb') as f:
   f.seek(1000) # read next 1000 bytes
   f.read(2) # read 2 bytes
 ```
+<!-- {"left" : 0, "top" : 2.34, "height" : 1.74, "width" : 6.94} -->
 
 
 ---

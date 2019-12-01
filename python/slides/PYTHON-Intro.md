@@ -250,7 +250,7 @@ Notes:
 | Native Code                       | Usually use native code in packages                               | Not common.                                             |
 | Summary                           | Good for science, data science, AI/machine learning, data munging | Good for web services and back-end for web development  |
 
-<!-- {"left" : 0.25, "top" : 0.87, "height" : 6.42, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
+<!-- {"left" : 0.25, "top" : 1.08, "height" : 6.42, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
 
 Notes:
 
@@ -260,7 +260,8 @@ Notes:
 
   * Python Most popular language in 2018 on Stack Overflow
 
-<img src="../../assets/images/python/3rd-party/Future-Traffic-on-Major-Programming-Languages-Stackoverflow.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/3rd-party/Future-Traffic-on-Major-Programming-Languages-Stackoverflow.png" style="max-width:70%;"/><!-- {"left" : 1.91, "top" : 2.13, "height" : 5.39, "width" : 6.44} -->
+
 
 
 Notes:
@@ -270,11 +271,8 @@ Notes:
 ## A simple “Hello, world!” comparison
 
 
-<img src="../../assets/images/python/3rd-party/Pythonv2.x.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/3rd-party/Pythonv2.x.png" style="max-width:70%;"/><!-- {"left" : 0.95, "top" : 2.31, "height" : 5.02, "width" : 4.25} -->  &nbsp; &nbsp;  <img src="../../assets/images/python/3rd-party/c++.png" style="max-width:70%;"/><!-- {"left" : 5.59, "top" : 2.31, "height" : 5.02, "width" : 3.71} -->
 
-
-
-<img src="../../assets/images/python/3rd-party/c++.png" style="max-width:70%;"/>
 
 Notes:
 
@@ -343,7 +341,8 @@ Notes:
 ## Installation
 
 
-<img src="../../assets/images/python/Installing-Python.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/Installing-Python.png" style="max-width:70%;"/><!-- {"left" : 2.38, "top" : 2.16, "height" : 4.75, "width" : 5.49} -->
+
 
 
 Notes:
@@ -360,8 +359,8 @@ Notes:
 
   * Ensure to get the Python `3.*` version
 
-<img src="../../assets/images/python/Installing-Python.png" style="max-width:60%;"/>
-&nbsp; &nbsp; <img src="../../assets/images/python/3rd-party/anaconda.png" style="max-width:30%;"/>
+<img src="../../assets/images/python/Installing-Python.png" style="max-width:60%;"/><!-- {"left" : 1.54, "top" : 4.89, "height" : 2.94, "width" : 3.4} --> &nbsp; &nbsp; <img src="../../assets/images/python/3rd-party/anaconda.png" style="max-width:30%;"/><!-- {"left" : 5.34, "top" : 4.89, "height" : 2.94, "width" : 3.38} -->
+
 
 
 
@@ -451,7 +450,7 @@ $ python
 # To exit python, back to the Linux prompt,
 >>> control + D
 ```
-<!-- {"left" : 0, "top" : 2.06, "height" : 4.8, "width" : 10.21} -->
+<!-- {"left" : 0, "top" : 2.18, "height" : 4.8, "width" : 10.21} -->
 
 
 Notes:
@@ -488,7 +487,7 @@ c = "hello world"
 ```
 <!-- {"left" : 0, "top" : 1.23, "height" : 2.55, "width" : 9.52} -->
 
-Lab: 01-helloworld/1.1-REPL.md
+* Lab: 01-helloworld/1.1-REPL.md
 
 Notes:
 
@@ -580,7 +579,8 @@ Notes:
   * Website - https://github.com/spyder-ide/spyder
 
 
-<img src="../../assets/images/python/3rd-party/Spyder.png" style="width:50%;"/>
+<img src="../../assets/images/python/3rd-party/Spyder.png" style="width:50%;"/><!-- {"left" : 1.94, "top" : 3.7, "height" : 4, "width" : 6.36} -->
+
 
 Notes:
 
@@ -595,7 +595,8 @@ Notes:
   * Pretty Heavyweight
 
 
-<img src="../../assets/images/python/3rd-party/Pycharm.png" style="width:50%;"/>
+<img src="../../assets/images/python/3rd-party/Pycharm.png" style="width:50%;"/><!-- {"left" : 0.9, "top" : 3.08, "height" : 4.43, "width" : 8.44} -->
+
 
 Notes:
 
@@ -608,7 +609,8 @@ Notes:
 * Website - http://www.pydev.org/
 
 
-<img src="../../assets/images/python/3rd-party/PyDev.png" style="width:50%;"/>
+<img src="../../assets/images/python/3rd-party/PyDev.png" style="width:50%;"/><!-- {"left" : 1.08, "top" : 2.54, "height" : 4.56, "width" : 8.08} -->
+
 
 
 Notes:
@@ -632,7 +634,8 @@ Notes:
   * Website - https://code.visualstudio.com/
 
 
-<img src="../../assets/images/python/3rd-party/Visual-Studio-Code.png" style="width:50%;"/>
+<img src="../../assets/images/python/3rd-party/Visual-Studio-Code.png" style="width:50%;"/><!-- {"left" : 2.07, "top" : 3, "height" : 4.36, "width" : 6.11} -->
+
 
 Notes:
 
@@ -719,7 +722,9 @@ Notes:
 
   * Example:
 
-<img src="../../assets/images/python/3rd-party/Jupyter.png" style="width:50%;"/>
+<img src="../../assets/images/python/3rd-party/Jupyter.png" style="width:50%;"/><!-- {"left" : 0.5, "top" : 2.08, "height" : 5.49, "width" : 9.25} -->
+
+
 
 
 Notes:
@@ -737,7 +742,8 @@ https://jupyter.org/
     https://jupyter.org/install
 
 
-<img src="../../assets/images/python/3rd-party/Jupyter-Notebook-Installation.png" style="width:40%;"/>
+<img src="../../assets/images/python/3rd-party/Jupyter-Notebook-Installation.png" style="width:40%;"/><!-- {"left" : 2.45, "top" : 2.93, "height" : 5.08, "width" : 5.34} -->
+
 
 Notes:
 
@@ -766,7 +772,7 @@ your browser when you connect for the first time,
 to login with a token:        
 http://localhost:8888/?token=YOURTOKEN
 ```
- <!-- {"left" : 0, "top" : 2.34, "height" : 4.15, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.34, "height" : 4.15, "width" : 10.25} -->
 
 Notes:
 
@@ -775,7 +781,8 @@ Notes:
 ## Browser for Jupyter Notebook
 
 
-<img src="../../assets/images/python/3rd-party/Browser-for-Jupyter-Notebook.png" style="width:50%;"/>
+<img src="../../assets/images/python/3rd-party/Browser-for-Jupyter-Notebook.png" style="width:50%;"/><!-- {"left" : 0.71, "top" : 1.74, "height" : 6.17, "width" : 8.83} -->
+
 
 Notes:
 
@@ -807,7 +814,7 @@ Notes:
 
     - 10 mins
 
-  * Instructions::
+  * Instructions:
 
     - **02-notebooks / 2.2-LearningNotebooks.ipynb**
 

@@ -243,15 +243,16 @@ Notes:
 >>> a
 [1, 2, 3.1, 10, 'abc']
 ```
-<!-- {"left" : 0.0, "top" : 1.93, "height" : 2.25, "width" : 9.6} -->
+<!-- {"left" : 0.0, "top" : 1.7, "height" : 2.25, "width" : 9.6} -->
 
+<br/>
 
   * Frozen Sets
 
 ```python
 >>> a = frozenset({"a", "b", "c"})
 ```
-<!-- {"left" : 0.0, "top" : 5.8, "height" : 0.7, "width" : 8.37} -->
+<!-- {"left" : 0.0, "top" : 4.56, "height" : 0.7, "width" : 8.37} -->
 
 Notes:
 
@@ -270,7 +271,7 @@ Notes:
 >>> a["cats"]
 8
 ```
-<!-- {"left" : 0.0, "top" : 2.08, "height" : 1.96, "width" : 9.97} -->
+<!-- {"left" : 0.0, "top" : 2.36, "height" : 1.96, "width" : 9.97} -->
 
 ```python
 >>> stock = {"symbol" : "aapl", "ask" : 190.1, "sell" : 196.5}
@@ -279,7 +280,7 @@ Notes:
 >>> stock["ask"]
 100.1
 ```
-<!-- {"left" : 0.0, "top" : 4.25, "height" : 1.46, "width" : 10.13} -->
+<!-- {"left" : 0.0, "top" : 4.85, "height" : 1.46, "width" : 10.13} -->
 
 Notes:
 
@@ -354,7 +355,7 @@ Notes:
 >>> coordinates.append(3.4)
 <error>
 ```
-<!-- {"left" : 0.0, "top" : 1.46, "height" : 2.17, "width" : 7.41} -->
+<!-- {"left" : 0.0, "top" : 1.68, "height" : 2.17, "width" : 7.41} -->
 
 ```python
 >>> p = list(coordinates)
@@ -367,7 +368,7 @@ Notes:
 >>> coordinates
 (5.3, 4.8, 3.4)
 ```
-<!-- {"left" : 0.0, "top" : 3.86, "height" : 3.22, "width" : 6.21} -->
+<!-- {"left" : 0.0, "top" : 4.24, "height" : 3.22, "width" : 6.21} -->
 
 Notes:
 
@@ -448,8 +449,10 @@ statement:
 statement: 
    statements
 ```
-<!-- {"left" : 0.0, "top" : 1.93, "height" : 2.49, "width" : 5.62} -->
+<!-- {"left" : 0.0, "top" : 2.09, "height" : 2.38, "width" : 5.36} -->
 
+
+<br/>
 
   * Whitespace matters! But why?
 
@@ -545,7 +548,9 @@ Notes:
     sum += num
   print sum  ## 30
 ```
-<!-- {"left" : 0.0, "top" : 1.41, "height" : 1.94, "width" : 5.59} -->
+<!-- {"left" : 0.0, "top" : 1.96, "height" : 1.94, "width" : 5.59} -->
+
+<br/>
 
   * Can also operate over strings
 
@@ -554,7 +559,9 @@ Notes:
   if 'Sujee' in list:
     print 'Present!'
 ```
-<!-- {"left" : 0.0, "top" : 4.91, "height" : 1.51, "width" : 8.4} -->
+<!-- {"left" : 0.0, "top" : 4.8, "height" : 1.51, "width" : 8.4} -->
+
+<br/>
 
   * In by itself tests membership in a list
 
@@ -572,7 +579,7 @@ Notes:
 for (x in range(10)):
 		print(x)
 ```
-<!-- {"left" : 0.0, "top" : 1.39, "height" : 1.6, "width" : 6.39} -->
+<!-- {"left" : 0.0, "top" : 1.7, "height" : 1.6, "width" : 6.39} -->
 
 ```python
 # while loop
@@ -581,7 +588,7 @@ while (x >= 0):
 		print(x)
 		x = x - 1
 ```
-<!-- {"left" : 0.0, "top" : 3.08, "height" : 1.69, "width" : 3.83} -->
+<!-- {"left" : 0.0, "top" : 3.56, "height" : 1.69, "width" : 3.83} -->
 
 ```python
 # while loop with break and continue
@@ -594,7 +601,7 @@ while (x >= 0):
 				x -= 1
 				continue
 ```
-<!-- {"left" : 0.0, "top" : 4.86, "height" : 2.58, "width" : 6.6} -->
+<!-- {"left" : 0.0, "top" : 5.5, "height" : 2.58, "width" : 6.6} -->
 
 
 
@@ -611,7 +618,8 @@ Notes:
   * The example below is a list comprehension
 
 
-<img src="../../assets/images/python/Comprehensions.png" style="width:60%;"/>
+<img src="../../assets/images/python/Comprehensions.png" style="width:60%;"/><!-- {"left" : 0.63, "top" : 2.78, "height" : 2.16, "width" : 8.99} -->
+
 
  ```python
 >>> a_list = [1, "4", 9, "a", 0, 4]
@@ -620,7 +628,7 @@ for e in a_list if "int" in str(type(e))]
 >>> print(squared_ints)
 [1, 81, 0, 16]
 ```
-<!-- {"left" : 0, "top" : 5.1, "height" : 1.97, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.54, "height" : 1.97, "width" : 10.25} -->
 
 Notes:
 
@@ -680,7 +688,7 @@ def function (arg1, arg2, .... ):
 	return(result)  
 #don't need to say return
 ```
-<!-- {"left" : 0, "top" : 3.04, "height" : 2.33, "width" : 10.1} -->
+<!-- {"left" : 0, "top" : 3.17, "height" : 2.33, "width" : 10.1} -->
 
 
 Notes:
@@ -691,7 +699,8 @@ Notes:
 
   * Concept of modular programming
 
-<img src="../../assets/images/python/User-Functions.png" style="width:20%;"/>
+<img src="../../assets/images/python/User-Functions.png" style="width:20%;"/><!-- {"left" : 3.19, "top" : 1.78, "height" : 3.31, "width" : 3.09} -->
+
 
 
   * Easy to write custom user functions and extend Python
@@ -705,7 +714,7 @@ def function (arg1, arg2, … ):
 		return(result) # don't need to say return
 
 ```
-<!-- {"left" : 0, "top" : 6.18, "height" : 1.13, "width" : 9.48} -->
+<!-- {"left" : 0, "top" : 6.5, "height" : 1.13, "width" : 9.48} -->
 
 
 Notes:
@@ -738,7 +747,7 @@ if (x > y):
 else:
   return y
 ```
-<!-- {"left" : 0, "top" : 2.82, "height" : 2.24, "width" : 6.7} -->
+<!-- {"left" : 0, "top" : 3.03, "height" : 2.24, "width" : 6.7} -->
 
 
 
@@ -747,7 +756,7 @@ else:
 >>> print(val)
 8
 ```
-<!-- {"left" : 0, "top" : 5.32, "height" : 1.68, "width" : 6.7} -->
+<!-- {"left" : 0, "top" : 5.53, "height" : 1.68, "width" : 6.7} -->
 
 Notes:
 
@@ -770,7 +779,7 @@ if (x > y):
 else:
   return y
 ```
-<!-- {"left" : 0, "top" : 1.86, "height" : 3.37, "width" : 9.37} -->
+<!-- {"left" : 0, "top" : 2.1, "height" : 3.37, "width" : 9.37} -->
 
 
 
@@ -780,7 +789,7 @@ This function re-implements the max function
 Inputs: Two numbers x, y
 Outputs: The maximum of the two numbers
 ```
-<!-- {"left" : 0, "top" : 5.46, "height" : 1.54, "width" : 9.37} -->
+<!-- {"left" : 0, "top" : 5.7, "height" : 1.54, "width" : 9.37} -->
 
 
 Notes:
@@ -796,7 +805,9 @@ Notes:
 ```python
 lambda <inputs> : <output>
 ```
-<!-- {"left" : 0, "top" : 2.34, "height" : 0.77, "width" : 7.29} -->
+<!-- {"left" : 0, "top" : 2.88, "height" : 0.69, "width" : 6.52} -->
+
+<br/>
 
   * Many functions require other functions as parameters. For example, sorting a list of tuples by the second element in the tuple
 
@@ -810,7 +821,7 @@ lambda <inputs> : <output>
 >>> print(people)
 [(1, 'Bob'), (3, 'Mary'), (2, 'Sara')]
 ```
-<!-- {"left" : 0, "top" : 4.74, "height" : 2.35, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.5, "height" : 2.35, "width" : 10.25} -->
 
 
 Notes:
@@ -826,7 +837,9 @@ Notes:
 ```python
 map(<function>, <sequence>)
 ```
-<!-- {"left" : 0, "top" : 1.86, "height" : 0.78, "width" : 7.57} -->
+<!-- {"left" : 0, "top" : 2.26, "height" : 0.78, "width" : 7.57} -->
+
+<br/>
 
   * Example:
 
@@ -837,7 +850,9 @@ map(<function>, <sequence>)
 >>> print(a_square)
 [1, 4, 9, 16, 25]
 ```
-<!-- {"left" : 0, "top" : 3.43, "height" : 1.72, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.2, "height" : 1.72, "width" : 10.25} -->
+
+<br/>
 
   * Note that map returns a map-object that is converted to a list, set, etc.
 
@@ -855,8 +870,9 @@ Notes:
 ```python
 filter(<function>, <sequence>)
 ```
-<!-- {"left" : 0, "top" : 2.34, "height" : 0.76, "width" : 8.06} -->
+<!-- {"left" : 0, "top" : 3, "height" : 0.76, "width" : 8.06} -->
 
+<br/>
 
   * Example:
 
@@ -870,7 +886,7 @@ filter(<function>, <sequence>)
 >>> print(a_odd)
 [1, 4, 9, 16, 25]
 ```
-<!-- {"left" : 0, "top" : 3.78, "height" : 2.53, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.54, "height" : 2.53, "width" : 10.25} -->
 
 Notes:
 
@@ -881,7 +897,7 @@ Notes:
 * Performs a reduce operation on any list type. It continually applies a function to the input sequence and returns a single result.
 
 
-<img src="../../assets/images/python/Reduce.png" style="width:30%;"/>
+<img src="../../assets/images/python/Reduce.png" style="width:30%;"/><!-- {"left" : 3.33, "top" : 2.14, "height" : 2.08, "width" : 3.58} -->
 
 
 * Example: One line statement to find the maximum number from a sequence
@@ -891,7 +907,7 @@ from functools import reduce
 reduce(lambda a,b: a if (a>b) else b, [47,11,42,102,13])
 102
 ```
-<!-- {"left" : 0, "top" : 5.09, "height" : 1.08, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.45, "height" : 1.08, "width" : 10.25} -->
 
 Notes:
 
@@ -966,7 +982,9 @@ Notes:
 text = ("Hi %s! You are the %dth 
 visitor here today" % ("Mary", 56))
 ```
-<!-- {"left" : 0, "top" : 1.42, "height" : 1.25, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.95, "height" : 1.08, "width" : 8.85} -->
+
+<br/>
 
   * Use parenthesis for longer formatted strings (as shown above)
 
@@ -985,7 +1003,9 @@ visitor %d today" % ("Mary", 56))
 >>> print(text)
 'Hi Mary! You are visitor 56 today'
 ```
-<!-- {"left" : 0, "top" : 1.99, "height" : 1.6, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.87, "height" : 1.42, "width" : 9.08} -->
+
+<br/>
 
   * Use parenthesis for longer formatted strings (as shown above)
 
@@ -1015,7 +1035,7 @@ Notes:
 >>> print(text[6:-1])
 'world'
 ```
-<!-- {"left" : 0, "top" : 2.95, "height" : 4.14, "width" : 6.44} -->
+<!-- {"left" : 0, "top" : 3.61, "height" : 4.14, "width" : 6.44} -->
 
 Notes:
 
@@ -1034,7 +1054,7 @@ Notes:
 | `.split(',')`                             | Returns a list of strings given by delimiter (comma in this case),"a,b,c,d" => ['a','b','c','d'] |
 | `.join(['a','b','c',d']`                  | Will join the list using the string itself as delimiter: ",".join(['a','b','c','d'])             |
 
-<!-- {"left" : 0.26, "top" : 0.83, "height" : 6.11, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
+<!-- {"left" : 0.26, "top" : 1.44, "height" : 6.11, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 Notes:
 
@@ -1051,7 +1071,7 @@ p.match('abbb')
 
 <_sre.SRE_Match object; span=(0, 4), match='abbb'>
 ```
-<!-- {"left" : 0, "top" : 1.59, "height" : 1.8, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.67, "height" : 1.8, "width" : 10.25} -->
 
 
 ```python
@@ -1122,8 +1142,9 @@ with open(filename, 'r') as myfile:
 		for line in myfile:
 				print(line)
 ```
-<!-- {"left" : 0, "top" : 1.53, "height" : 1.96, "width" : 9.74} -->
+<!-- {"left" : 0, "top" : 1.79, "height" : 1.65, "width" : 8.23} -->
 
+<br/>
 
   * Syntax to open a file – csv
 
@@ -1136,7 +1157,7 @@ with open(filename) as myfile:
 				for row in myfilereader:
 						print(' '.join(row))
 ```
-<!-- {"left" : 0, "top" : 4.33, "height" : 1.62, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.37, "height" : 1.62, "width" : 10.25} -->
 
 
 Notes:
@@ -1161,7 +1182,7 @@ try:
  ## In any case, the code then continues with the 
 line after the try/except
 ```
-<!-- {"left" : 0, "top" : 1.96, "height" : 3.34, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.3, "height" : 3.34, "width" : 10.25} -->
 
 Notes:
 
@@ -1180,8 +1201,9 @@ except IOError:
 		sys.stderr.write('problem reading:' + filename)
 
 ```
-<!-- {"left" : 0, "top" : 1.55, "height" : 1.92, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.7, "height" : 1.92, "width" : 10.25} -->
 
+<br/>
 
   * Exception handling helps in attempts to open non-existent files, corrupt files etc
 
@@ -1193,7 +1215,7 @@ try:
 except:
     print("Sorry! The file either doesn't exist or is corrupt!")
 ```
-<!-- {"left" : 0, "top" : 5.7, "height" : 1.68, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.99, "height" : 1.68, "width" : 10.25} -->
 
 Notes:
 
@@ -1229,7 +1251,9 @@ Notes:
 
 
 
-<img src="../../assets/images/python/Multithreaded2.png" style="width:33%;"/> <img src="../../assets/images/python/Multithreaded1.png" style="width:29.6%;"/>
+<img src="../../assets/images/python/Multithreaded2.png" style="width:33%;"/><!-- {"left" : 1.56, "top" : 3.37, "height" : 3.79, "width" : 3.19} --> &nbsp; &nbsp;
+ <img src="../../assets/images/python/Multithreaded1.png" style="width:29.6%;"/><!-- {"left" : 5.83, "top" : 3.37, "height" : 3.79, "width" : 2.86} -->
+
 
 
 Notes:
@@ -1249,9 +1273,10 @@ def dowork():
 
 threading.Thread(target=dowork).start()
 ```
-<!-- {"left" : 0, "top" : 2.09, "height" : 2.42, "width" : 9.48} -->
+<!-- {"left" : 0, "top" : 2.29, "height" : 2.08, "width" : 8.14} -->
 
 
+<br/>
 
   * Can also inherit from Thread class
 
@@ -1261,7 +1286,7 @@ class MyThread(threading.Thread);
    def run(self):  #override this
       #Do Something
 ```
-<!-- {"left" : 0, "top" : 5.7, "height" : 1.45, "width" : 8.49} -->
+<!-- {"left" : 0, "top" : 5.02, "height" : 1.39, "width" : 8.14} -->
 
 Notes:
 
@@ -1305,7 +1330,8 @@ Notes:
   * Python provides the signal class to handle messaging.
 
 
-<img src="../../assets/images/python/Callbacks.png" style="width:50%;"/>
+<img src="../../assets/images/python/Callbacks.png" style="width:50%;"/><!-- {"left" : 1.61, "top" : 3.57, "height" : 4.51, "width" : 7.03} -->
+
 
 
 Notes:

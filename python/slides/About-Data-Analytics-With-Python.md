@@ -97,7 +97,7 @@ Notes:
 
  * Where is the ANY key?
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:50%;"/> <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:50%;"/> <!-- {"left" : 1.18, "top" : 1.69, "height" : 6.35, "width" : 7.88} -->
 
 
 
@@ -111,7 +111,7 @@ Notes:
 ## Analogy: Learning To Fly...
 
 
-<img src="../../assets/images/generic/3rd-party/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+<img src="../../assets/images/generic/3rd-party/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.25, "top" : 1.74, "height" : 6.17, "width" : 9.74} -->
 
 
 
@@ -125,7 +125,7 @@ Notes:
 ## Instruction
 
 
-<img src="../../assets/images/generic/3rd-party/classroom-instruction.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+<img src="../../assets/images/generic/3rd-party/classroom-instruction.png" style="width:80%;"/> <!-- {"left" : 0.25, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 Notes: 
 
@@ -137,7 +137,7 @@ http://aviation-schools.regionaldirectory.us/learn-to-fly-720.jpg
 
 ## + Flight Time
 
-<img src="../../assets/images/generic/3rd-party/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+<img src="../../assets/images/generic/3rd-party/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.25, "top" : 1.74, "height" : 6.17, "width" : 9.74} -->
 
 
 Notes: 
@@ -150,7 +150,8 @@ http://www.wikihow.com/Become-a-Certified-Flight-Instructor
 
 ## This Will Take A Lot Of Practice
 
-<img src="../../assets/images/generic/3rd-party/practice.png" style="width:70%;"/> 
+<img src="../../assets/images/generic/3rd-party/practice.png" style="width:70%;"/><!-- {"left" : 0.24, "top" : 1.72, "height" : 6.17, "width" : 9.74} -->
+ 
  
 
 Notes: 
@@ -178,7 +179,7 @@ Notes:
 
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.02, "top" : 5.93, "height" : 2.02, "width" : 2.28} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.33, "top" : 5.96, "height" : 1.95, "width" : 3.59} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.94, "top" : 5.93, "height" : 2.02, "width" : 2.28} -->
  
 
 Notes: 

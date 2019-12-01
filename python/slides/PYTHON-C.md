@@ -65,6 +65,8 @@
 ```c
 #include <Python.h>
 ```
+<!-- {"left" : 0, "top" : 1.53, "height" : 0.5, "width" : 3.49} -->
+
 
  * That should be sufficient 
 
@@ -81,6 +83,7 @@
 ```c
 static PyObject *MyFunction( PyObject *self, PyObject *args);
 ```
+<!-- {"left" : 0, "top" : 3.15, "height" : 0.53, "width" : 10.25} -->
 
 
 ---
@@ -142,6 +145,7 @@ static PyMethodDef myMethods[] = {
     { NULL, NULL, 0, NULL }
 };
 ```
+<!-- {"left" : 0, "top" : 1.46, "height" : 4.18, "width" : 10.25} -->
 
 ---
 
@@ -165,6 +169,7 @@ PyMODINIT_FUNC PyInit_myModule(void)
 
 
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 4.36, "width" : 8.78} -->
 
 ---
 
@@ -178,6 +183,7 @@ from distutils.core import setup, Extension
 setup(name = 'myModule', version = '1.0',  \
    ext_modules = [Extension('myModule', ['test.c'])])
 ```
+<!-- {"left" : 0, "top" : 2.75, "height" : 1.23, "width" : 10.25} -->
 
 ---
 
@@ -213,6 +219,7 @@ from Cython.Build import cythonize
 setup(name='Hello world app',
       ext_modules=cythonize("hello.pyx"))
 ```
+<!-- {"left" : 0, "top" : 2.31, "height" : 1.86, "width" : 8.15} -->
 
 ---
 
@@ -224,6 +231,9 @@ setup(name='Hello world app',
 def hello_cython(name):
   print("Hello to %s from Cython!" % name)
 ```
+<!-- {"left" : 0, "top" : 1.71, "height" : 0.86, "width" : 7.78} -->
+
+<br/>
 
  * Then we can create the setup.py file:
 
@@ -234,6 +244,7 @@ from Cython.Build import cythonize
 setup(name='Hello world app',
       ext_modules=cythonize("hello.pyx"))
 ```
+<!-- {"left" : 0, "top" : 3.95, "height" : 1.74, "width" : 7.61} -->
 
 ---
 
@@ -243,6 +254,9 @@ setup(name='Hello world app',
 ```bash
 python setup.py build_ext --inplace
 ```
+<!-- {"left" : 0, "top" : 1.94, "height" : 0.6, "width" : 7.01} -->
+
+<br/>
 
 * And then import and run the module from python:
 
@@ -252,3 +266,4 @@ python setup.py build_ext --inplace
 Hello to Tim from Cython!
 ```
 
+<!-- {"left" : 0, "top" : 3.56, "height" : 1.15, "width" : 7.61} -->

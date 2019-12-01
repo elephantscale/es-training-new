@@ -5,7 +5,7 @@
 ## Data Science Intro
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/data.png" alt="data.png" style="width:50%;"/><!-- {"left" : 0.26, "top" : 0.95, "height" : 6.17, "width" : 9.74} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/data.png" alt="data.png" style="width:50%;"/><!-- {"left" : 0.25, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 Notes:
 
@@ -30,7 +30,7 @@ Notes:
 
     - Anand Rajaraman (Walmart Labs)
 
-  * New hot thing !
+  * New hot thing!
 
 Notes:
 
@@ -49,7 +49,7 @@ Notes:
     - Profiles with photos get more clicks
     - ‘you both know this person’ removes creepy factor
 
-<img src="../../assets/images/data-analysis-python/3rd-party/DDD.png" alt="DDD.png" style="width:24%;"/><!-- {"left" : 0.68, "top" : 3.83, "height" : 3.36, "width" : 4.36} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/DDD.png" alt="DDD.png" style="width:24%;"/><!-- {"left" : 2.56, "top" : 4.32, "height" : 3.96, "width" : 5.14} -->
 
 Notes:
 
@@ -58,7 +58,7 @@ Notes:
 ## Data Scientist
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Data-Scientist.png" alt="Data-Scientist.png" style="width:50%;"/><!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Data-Scientist.png" alt="Data-Scientist.png" style="width:50%;"/><!-- {"left" : 0.25, "top" : 1.78, "height" : 6.17, "width" : 9.74} -->
 
 Notes:
 
@@ -120,7 +120,7 @@ Notes:
 | Both have deep domain knowledge (banking etc.)                                  |                                          |
 | Need to create good visualizations to narrate the story to others               |    &nbsp;                                |
 
-<!-- {"left" : 0.26, "top" : 1.09, "height" : 5.07, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
+<!-- {"left" : 0.26, "top" : 1.19, "height" : 5.07, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 Notes:
 
@@ -138,13 +138,15 @@ Notes:
 | **Similarities:**                                  |                                                           |
 | Have strong knowledge of stats, modeling techniques|     &nbsp;                                                |
 
-<!-- {"left" : 0.26, "top" : 1.12, "height" : 4.88, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
+<!-- {"left" : 0.26, "top" : 1.19, "height" : 4.88, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 Notes:
 
 ---
 
 ## Reports vs. Insights
+
+<img src="../../assets/images/data-analysis-python/3rd-party/Reports.png" alt="Reports.png" style="width:30%;float:right;"/><!-- {"left" : 6.07, "top" : 1.22, "height" : 2.81, "width" : 3.89} -->
 
   * Reports  (“Known Unknowns”)
     - Weekly sales etc.
@@ -155,8 +157,6 @@ Notes:
   * Insight example
     - Bill pay data & click stream data
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Reports.png" alt="Reports.png" style="width:30%;float:right; margin-top:-400px;"/><!-- {"left" : 6.31, "top" : 4.46, "height" : 2.65, "width" : 3.67} -->
-
 
 Notes:
 
@@ -165,7 +165,7 @@ Notes:
 ## So Here Is Data Scientist
 
 
-<img src="../../assets/images/data-analysis-python/data-scientist-skills.png" alt="data-scientist-skills.png" style="width:70%;"/><!-- {"left" : 1.03, "top" : 1.65, "height" : 4.67, "width" : 8.18} -->
+<img src="../../assets/images/data-analysis-python/data-scientist-skills.png" alt="data-scientist-skills.png" style="width:70%;"/><!-- {"left" : 1.03, "top" : 2.2, "height" : 4.67, "width" : 8.18} -->
 
 Notes:
 
@@ -275,6 +275,8 @@ Notes:
 
 ## Understanding Data
 
+<img src="../../assets/images/data-analysis-python/3rd-party/Understanding-Data.png" alt="Understanding-Data.png" style="width:30%;float:right;"/><!-- {"left" : 6.15, "top" : 1.16, "height" : 2.67, "width" : 3.9} -->
+
   * Before doing ‘deep learning’ of data, understand the data.
 
   * Basic questions
@@ -288,7 +290,6 @@ Notes:
 
   * Need to sample?  Or process entire data set?
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Understanding-Data.png" alt="Understanding-Data.png" style="width:30%;float:right; margin-top:-300px;"/><!-- {"left" : 0.9, "top" : 5.17, "height" : 1.97, "width" : 2.88} -->
 
 
 Notes:
@@ -319,10 +320,10 @@ Notes:
 
   * Split the data set into
 
-    - Training set : build / train model
+    - Training set: build / train model
     - Test set: validate the model
 
-  * Initially 70% training,  30% validation.
+  * Initially 70% training, 30% validation.
 
   * Tweak the dials to decrease training and increase validation.
 
@@ -330,7 +331,7 @@ Notes:
 
 
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:40%;"/><!-- {"left" : 2.46, "top" : 5.2, "height" : 1.43, "width" : 5.33} -->
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:40%;"/><!-- {"left" : 2.38, "top" : 5.39, "height" : 2.41, "width" : 5.49} -->
 
 Notes:
 
@@ -381,7 +382,7 @@ Notes:
 ## Data Science Methodology: Iterative Learning Process
 
 
-<img src="../../assets/images/data-analysis-python/Methodology.png" alt="Methodology.png" style="width:55%;"/><!-- {"left" : 0.55, "top" : 1.65, "height" : 5.38, "width" : 9.14} -->
+<img src="../../assets/images/data-analysis-python/Methodology.png" alt="Methodology.png" style="width:55%;"/><!-- {"left" : 0.55, "top" : 1.84, "height" : 5.38, "width" : 9.14} -->
 
 Notes:
 
@@ -399,7 +400,7 @@ Notes:
     - Almost free
 
 
-<img src="../../assets/images/data-analysis-python/Analytics.png" alt="Analytics.png" style="width:30%;"/><!-- {"left" : 5.12, "top" : 4.26, "height" : 2.82, "width" : 4.6} -->
+<img src="../../assets/images/data-analysis-python/Analytics.png" alt="Analytics.png" style="width:30%;"/><!-- {"left" : 5.22, "top" : 3.41, "height" : 2.82, "width" : 4.6} -->
 
 Notes:
 

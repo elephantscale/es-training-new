@@ -51,6 +51,10 @@ df.corr()[['label']]
 label  1.000000
 
 ```
+<!-- {"left" : 0, "top" : 2.13, "height" : 2.9, "width" : 4.11} -->
+
+<br/>
+<br/>
 
 * Here, we see that all 3 features 0,1,2 are very highly correlated with the output label
 
@@ -86,12 +90,14 @@ top_features = utils.feature_importances(
   clf, top_features, n=20)
 
 ```
+<!-- {"left" : 0, "top" : 3.16, "height" : 2.03, "width" : 9.28} -->
 
 Notes:
 
 ---
 
 ## Forward and Reverse Selection
+
  * We can try running the model with different combinations of features
    - Choose the best combination of features
    - Forward Selection: Start with no features and add

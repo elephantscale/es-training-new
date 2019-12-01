@@ -72,18 +72,20 @@ import pymssql
 conn =  pymssql.connect(host='username\SQLEXPRESS’, 
            user='username',password='pwd',database='master')
 ```
-<!-- {"left" : 0, "top" : 1.47, "height" : 1.79, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.7, "height" : 1.79, "width" : 10.25} -->
 
 
+---
 
 ## Cursors
+
   * We need a `Cursor` object to query
   * We get the cursor object by calling `.cursor()` on the connection
 
 ```python
 cursor = conn.cursor()
 ```
-<!-- {"left" : 0, "top" : 4.57, "height" : 0.74, "width" : 6.1} -->
+<!-- {"left" : 0, "top" : 2.7, "height" : 0.74, "width" : 6.1} -->
 
 Notes:
 
@@ -101,7 +103,7 @@ while row:
     print("ID=%d, Name=%s" % (row[0], row[1]))
     row = cursor.fetchone()
 ```
-<!-- {"left" : 0, "top" : 1.56, "height" : 2.31, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.82, "height" : 2.31, "width" : 10.25} -->
 
 Notes:
 
@@ -140,7 +142,7 @@ df = pd.read_sql_query
 
 df
 ```
-<!-- {"left" : 0, "top" : 2.07, "height" : 2.74, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.2, "height" : 2.74, "width" : 10.25} -->
 
 Notes:
 
@@ -184,6 +186,7 @@ released  | version | status
            | 2.6.0   | devel
            | 3.0.0   | alpha
 ```
+<!-- {"left" : 0, "top" : 1.82, "height" : 5.42, "width" : 10.25} -->
 
 ---
 
@@ -191,6 +194,7 @@ released  | version | status
 ## Transactions
 
  * Here is how we do the same thing with DB-API
+
 ```python
 
 cur = db.cursor()
@@ -201,6 +205,7 @@ try:
 except Exception, e:
     db.rollback()
 ```
+<!-- {"left" : 0, "top" : 1.74, "height" : 1.65, "width" : 10.25} -->
 
 ---
 
@@ -223,6 +228,9 @@ except Exception, e:
 from sqlalchemy import create_engine
 engine = create_engine('sqlite:///:memory:', echo=True)
 ```
+<!-- {"left" : 0, "top" : 1.8, "height" : 0.86, "width" : 9.94} -->
+
+<br/>
 
  * Notice that we need to pass the connection string to the DB
  * We get a "engine" object as the output 
@@ -304,11 +312,11 @@ Notes:
 ---
 
 ## ORM Patterns
- * **Unit of Work**: objects are maintained by the ORM to track changes, and then transparently **flushes** those pending changes
- * **Identity Map**: objects tracked by their primary key with within the unit of work, then are kept **unique** on that primary key identity.
- * **Lazy Loading**:   Attributes of an object may emit additional SQL queries only when accessed.
- * **Eager Loading**: Multiple Tables will be queried at once to load related objects
- * **Method Chaining**: Queries are composed using a string of method calls which each return a new query object
+ * **Unit of Work:** objects are maintained by the ORM to track changes, and then transparently **flushes** those pending changes
+ * **Identity Map:** objects tracked by their primary key with within the unit of work, then are kept **unique** on that primary key identity.
+ * **Lazy Loading:**   Attributes of an object may emit additional SQL queries only when accessed.
+ * **Eager Loading:** Multiple Tables will be queried at once to load related objects
+ * **Method Chaining:** Queries are composed using a string of method calls which each return a new query object
 
 ---
 

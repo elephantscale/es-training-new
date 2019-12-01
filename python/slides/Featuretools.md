@@ -3,7 +3,7 @@
 
 ## Introducing Featuretools
 
-<img src="../../assets/images/logos/featuretools-logo-1.png" alt="featuretools-logo-1.png" style="width:30%;"/><!-- {"left" : 0.63, "top" : 2.08, "height" : 1.64, "width" : 7.05} -->
+<img src="../../assets/images/logos/featuretools-logo-1.png" alt="featuretools-logo-1.png" style="width:30%;"/><!-- {"left" : 2.53, "top" : 1.73, "height" : 1.21, "width" : 5.19} -->
 
 
  * Featuretools is a package to help in feature engineering in python
@@ -70,6 +70,8 @@ label_times = utils.make_labels(es=es,
 label_times.head(5)
 
 ```
+<!-- {"left" : 0, "top" : 2.72, "height" : 2.19, "width" : 9.48} -->
+
 Notes:
 
 ---
@@ -124,6 +126,8 @@ fm_encoded, features_encoded = ft.encode_features(feature_matrix,
 print("Number of features %s" % len(features_encoded))
 
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 3.08, "width" : 10.25} -->
+
 Notes:
 
 ---
