@@ -9,7 +9,7 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2019-12-04 19:08:16 +0000</dc:date>
+    <dc:date>2019-12-04 19:17:00 +0000</dc:date>
   </metadata>
   <g id="Canvas_1" stroke-dasharray="none" fill-opacity="1" stroke="none" stroke-opacity="1" fill="none">
     <title>Canvas 1</title>
@@ -32,12 +32,12 @@
         <path d="M 53.320706 305.7384 L 54.18778 303.35613 L 314.74676 398.19184 L 319.7214 384.5241 L 325.36562 403.4057 L 308.90503 414.24186 L 313.8797 400.5741 Z" stroke="#27006d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_7">
-        <path d="M 50.01319 359.30002 L 50.88027 356.91776 L 287.89287 443.1833 L 292.86752 429.51553 L 298.51173 448.39717 L 282.05113 459.2333 L 287.0258 445.56555 Z" fill="#ab97fd"/>
-        <path d="M 50.01319 359.30002 L 50.88027 356.91776 L 287.89287 443.1833 L 292.86752 429.51553 L 298.51173 448.39717 L 282.05113 459.2333 L 287.0258 445.56555 Z" stroke="#27006d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 46.83458 435.3447 L 46.83458 432.80953 L 299.0581 432.80953 L 299.0581 418.2646 L 310.81984 434.0771 L 299.0581 449.8896 L 299.0581 435.3447 Z" fill="#ab97fd"/>
+        <path d="M 46.83458 435.3447 L 46.83458 432.80953 L 299.0581 432.80953 L 299.0581 418.2646 L 310.81984 434.0771 L 299.0581 449.8896 L 299.0581 435.3447 Z" stroke="#27006d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_8">
-        <path d="M 58.403065 441.19995 L 57.059637 439.05 L 316.18574 277.13005 L 308.4781 264.79526 L 326.83195 271.97226 L 325.2368 291.61478 L 317.52917 279.28 Z" fill="#ab97fd"/>
-        <path d="M 58.403065 441.19995 L 57.059637 439.05 L 316.18574 277.13005 L 308.4781 264.79526 L 326.83195 271.97226 L 325.2368 291.61478 L 317.52917 279.28 Z" stroke="#27006d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 46.29939 362.2545 L 45.60061 359.81754 L 309.22856 284.22345 L 305.21944 270.24197 L 320.88404 282.19995 L 313.93647 300.64187 L 309.92735 286.6604 Z" fill="#ab97fd"/>
+        <path d="M 46.29939 362.2545 L 45.60061 359.81754 L 309.22856 284.22345 L 305.21944 270.24197 L 320.88404 282.19995 L 313.93647 300.64187 L 309.92735 286.6604 Z" stroke="#27006d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_9">
         <text transform="translate(-79.52344 204.5625)" fill="#290058">
@@ -65,8 +65,8 @@
         </text>
       </g>
       <g id="Graphic_14">
-        <text transform="translate(379.959 238.9375)" fill="#290058">
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#290058" x="0" y="40">(A, a2)</tspan>
+        <text transform="translate(383.15234 238.9375)" fill="#290058">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#290058" x="0" y="40">(B, b2)</tspan>
         </text>
       </g>
       <g id="Graphic_15">
@@ -75,8 +75,8 @@
         </text>
       </g>
       <g id="Graphic_16">
-        <text transform="translate(379.959 456)" fill="#290058">
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#290058" x="0" y="40">(B, b2)</tspan>
+        <text transform="translate(376.76562 456)" fill="#290058">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#290058" x="0" y="40">(A, a2)</tspan>
         </text>
       </g>
       <g id="Graphic_17">
