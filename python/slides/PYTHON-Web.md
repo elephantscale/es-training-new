@@ -30,7 +30,7 @@ Notes:
 | **Web2Py**        |                                                                                                                                              |
 | **TurboGears**    |                                                                                                                                              |
 
-<!-- {"left" : 0.25, "top" : 0.86, "height" : 5.77, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
+<!-- {"left" : 0.25, "top" : 1.3, "height" : 5.77, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 
 Notes:
@@ -67,7 +67,7 @@ Notes:
 | Speed                     | Acceptable Speed                                                           | Faster Speed                                                                   |
 | Summary                   | Good for big webapps and heavy-weight services where all-inclusive is good | Good for lightweight apps, Microservices, and places where speed is essential. |
 
-<!-- {"left" : 0.26, "top" : 0.82, "height" : 6.36, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
+<!-- {"left" : 0.26, "top" : 1.3, "height" : 6.36, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
 
 
 Notes:
@@ -80,7 +80,7 @@ Notes:
 * For vanilla python installations, we recommend a virtual-env setup
 
 
-```bashn
+```bash
 $ mkdir webapp
 $ cd webapp
 $ virtualenv flask
@@ -90,7 +90,7 @@ Installing pip...................done.
 
 $ pip install flask
 ```
-<!-- {"left" : 0, "top" : 2.41, "height" : 2.5, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.6, "height" : 2.5, "width" : 10.25} -->
 
 Notes:
 
@@ -112,15 +112,15 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)  
 ```
-<!-- {"left" : 0, "top" : 1.01, "height" : 2.58, "width" : 10.25} -->
 
+<!-- {"left" : 0, "top" : 1.64, "height" : 3.78, "width" : 5.11} -->
 
-```nbash
+```bash
 $ python ./app.py
  * Running on http://127.0.0.1:5000/ 
  * Restarting with reloader
 ```
-<!-- {"left" : 0, "top" : 3.84, "height" : 1.26, "width" : 8.19} -->
+<!-- {"left" : 0, "top" : 5.62, "height" : 1.15, "width" : 6.94} -->
 
 
 Notes:
@@ -161,7 +161,7 @@ Notes:
 |             |                                       |
 
 
-<!-- {"left" : 0.26, "top" : 1.01, "height" : 3, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
+<!-- {"left" : 0.26, "top" : 1.37, "height" : 3, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 
 

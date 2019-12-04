@@ -101,7 +101,7 @@ clx,_ = vq(data,centroids)
 # check clusters of observation
 print(clx)
 ```
-<!-- {"left" : 0.0, "top" : 1.51, "height" : 5.29, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.89, "height" : 5.29, "width" : 10.25} -->
 
 Notes:
 
@@ -121,7 +121,7 @@ Notes:
 ……………………
 ……………………
 ```
-<!-- {"left" : 0.0, "top" : 1.89, "height" : 2.54, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.43, "height" : 2.54, "width" : 10.25} -->
 
 Notes:
 
@@ -136,7 +136,9 @@ Notes:
  [3.15339406 2.74945654 2.78052967]
  [1.77053939 2.2379303  2.33445638]]
 ```
-<!-- {"left" : 0.0, "top" : 1.83, "height" : 1.07, "width" : 6.78} -->
+<!-- {"left" : 0.0, "top" : 1.91, "height" : 1.13, "width" : 7.18} -->
+
+<br/>
 
 - print(clx)
 
@@ -148,7 +150,7 @@ Notes:
  0 0 2 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 2 2 0 0 0 0 0 0
  0 0 0 0 0 0 0 0 0 0 0 0 0 2 0]
 ```
-<!-- {"left" : 0.0, "top" : 4.03, "height" : 1.91, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 4.08, "height" : 1.91, "width" : 10.25} -->
 
 Notes:
 
@@ -178,7 +180,7 @@ Notes:
 >>> m_e
 9.10938356e-31
 ```
-<!-- {"left" : 0.0, "top" : 1.82, "height" : 5.1, "width" : 7.55} -->
+<!-- {"left" : 0.0, "top" : 2.27, "height" : 5.1, "width" : 7.55} -->
 
 Notes:
 
@@ -227,11 +229,11 @@ plt.plot(xf, 2.0/N * np.abs(yf[0:N//2]), color = "r")
 plt.grid()
 plt.show()
 ```
-<!-- {"left" : 0.0, "top" : 1.38, "height" : 5.67, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.7, "height" : 5.67, "width" : 10.25} -->
 
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/scipy.fftpack.png" alt="scipy.fftpack.png" style="width:30%;"/><!-- {"left" : 6.76, "top" : 1.38, "height" : 1.89, "width" : 3.39} --><img src="../../assets/images/data-analysis-python/3rd-party/scipy.fftpack01.png" alt="scipy.fftpack01.png" style="width:30%;"/><!-- {"left" : 7.2, "top" : 4.18, "height" : 1.61, "width" : 2.89} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/scipy.fftpack.png" alt="scipy.fftpack.png" style="width:30%;"/><!-- {"left" : 2.78, "top" : 6.97, "height" : 1.89, "width" : 3.39} --> &nbsp; &nbsp; <img src="../../assets/images/data-analysis-python/3rd-party/scipy.fftpack01.png" alt="scipy.fftpack01.png" style="width:30%;"/><!-- {"left" : 6.47, "top" : 6.94, "height" : 1.96, "width" : 3.52} -->
 
 
 Notes:
@@ -243,10 +245,10 @@ Notes:
 
 ## scipy.integrate
 
-Example: Single Integrals –
+- Example: Single Integrals –
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/scipy1.png" alt="scipy1.png" style="width:10%;"/><!-- {"left" : 5.06, "top" : 0.88, "height" : 0.51, "width" : 0.9} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/scipy1.png" alt="scipy1.png" style="width:10%;"/><!-- {"left" : 5.65, "top" : 1.12, "height" : 1.14, "width" : 2.02} -->
 
 
 ```python
@@ -257,7 +259,7 @@ Example: Single Integrals –
 >>> print(i)
 (0.7468241328124271, 8.291413475940725e-15)
 ```
-<!-- {"left" : 0, "top" : 1.67, "height" : 2.38, "width" : 10.14} -->
+<!-- {"left" : 0, "top" : 3.01, "height" : 2.38, "width" : 10.14} -->
 
 Notes:
 
@@ -265,10 +267,10 @@ Notes:
 
 ## scipy.integrate
 
-Example: Double Integrals –
+- Example: Double Integrals –
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/scipy2.png" alt="scipy2.png" style="width:20%;"/><!-- {"left" : 5.1, "top" : 0.88, "height" : 0.61, "width" : 2.39} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/scipy2.png" alt="scipy2.png" style="width:20%;"/><!-- {"left" : 5.17, "top" : 1.15, "height" : 0.91, "width" : 3.58} -->
 
 ```python
 >>> import scipy.integrate
@@ -278,7 +280,7 @@ Example: Double Integrals –
 >>> print(i)
 (0.7468241328124271, 8.291413475940725e-15)
 ```
-<!-- {"left" : 0, "top" : 2.14, "height" : 2.44, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.09, "height" : 2.44, "width" : 10.25} -->
 
 Notes:
 
@@ -293,7 +295,7 @@ Notes:
 
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/scipy.interpolate1.png" alt="scipy.interpolate1.png" style="width:40%;"/><!-- {"left" : 5.21, "top" : 2.5, "height" : 3.55, "width" : 4.7} --> &nbsp; &nbsp;<img src="../../assets/images/data-analysis-python/3rd-party/scipy.interpolate2.png" alt="scipy.interpolate2.png" style="width:40%;"/><!-- {"left" : 5.21, "top" : 2.5, "height" : 3.55, "width" : 4.7} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/scipy.interpolate1.png" alt="scipy.interpolate1.png" style="width:40%;"/><!-- {"left" : 0.32, "top" : 3.09, "height" : 3.55, "width" : 4.7} --> &nbsp; &nbsp;<img src="../../assets/images/data-analysis-python/3rd-party/scipy.interpolate2.png" alt="scipy.interpolate2.png" style="width:40%;"/><!-- {"left" : 5.23, "top" : 3.09, "height" : 3.55, "width" : 4.7} -->
 
 
 Notes:
@@ -334,7 +336,7 @@ Notes:
 
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Running-interpolation.png" alt="Running-interpolation.png" style="width:40%;"/><!-- {"left" : 5.21, "top" : 2.5, "height" : 3.55, "width" : 4.7} --> &nbsp; &nbsp;<img src="../../assets/images/data-analysis-python/3rd-party/Running-interpolation1.png" alt="Running-interpolation1.png" style="width:40%;"/><!-- {"left" : 5.21, "top" : 2.5, "height" : 3.55, "width" : 4.7} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Running-interpolation.png" alt="Running-interpolation.png" style="width:40%;"/><!-- {"left" : 0.26, "top" : 3.11, "height" : 3.55, "width" : 4.7} --> &nbsp; &nbsp;<img src="../../assets/images/data-analysis-python/3rd-party/Running-interpolation1.png" alt="Running-interpolation1.png" style="width:40%;"/><!-- {"left" : 5.29, "top" : 3.07, "height" : 3.55, "width" : 4.7} -->
 
 
 Notes:
@@ -367,7 +369,7 @@ plt.colorbar()
 plt.title("Interpolated function."
 plt.show()
 ```
-<!-- {"left" : 0.0, "top" : 1.49, "height" : 5.56, "width" : 7.61} -->
+<!-- {"left" : 0.0, "top" : 1.75, "height" : 5.56, "width" : 7.61} -->
 
 Notes:
 
@@ -456,14 +458,14 @@ l, v = linalg.eig(A)
 print(l)
 print(v)
 ```
-<!-- {"left" : 0.0, "top" : 1.5, "height" : 3.2, "width" : 9.99} -->
+<!-- {"left" : 0.0, "top" : 1.67, "height" : 3.2, "width" : 9.99} -->
 
 ```python
 [-0.37228132+0.j  5.37228132+0.j]
 [[-0.82456484 -0.41597356]
  [ 0.56576746 -0.90937671]]
 ```
-<!-- {"left" : 0.0, "top" : 5.01, "height" : 1.24, "width" : 7.28} -->
+<!-- {"left" : 0.0, "top" : 5.23, "height" : 1.24, "width" : 7.28} -->
 
 
 Notes:
@@ -526,7 +528,7 @@ plt.ylabel("y")
 plt.legend(loc='lower right')
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 2.26, "height" : 5.3, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.65, "height" : 5.3, "width" : 10.25} -->
 
 Notes:
 
@@ -535,7 +537,7 @@ Notes:
 ## scipy.optimize
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/scipy.optimize1.png" alt="scipy.optimize1.png" style="width:50%;"/><!-- {"left" : 8.04, "top" : 3, "height" : 1.3, "width" : 1.79} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/scipy.optimize1.png" alt="scipy.optimize1.png" style="width:50%;"/><!-- {"left" : 2.09, "top" : 2.33, "height" : 4.41, "width" : 6.07} -->
 
 
 Notes:
@@ -559,8 +561,10 @@ Matrix([0,0,0,0],
        [0,0,0,0]
        [0,0,0,0]])
 ```
-<!-- {"left" : 0, "top" : 2.88, "height" : 2.21, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.95, "height" : 2.21, "width" : 10.25} -->
 
+
+<br/>
 
   * There are various types of sparse matrices. Two most common are:
      - csr_matrix – Compressed Sparse Row Matrix
@@ -590,7 +594,7 @@ Notes:
  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]]
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 4.74, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.89, "height" : 4.74, "width" : 10.25} -->
 
 Notes:
 
@@ -616,7 +620,7 @@ Notes:
 | iqr()      | Computes the IQR of the data  along the specified axis                             |
 | zscore()   | Computes zscore of each  value relative to the sample  eman and standard  deviation|
 
-<!-- {"left" : 0.20, "top" : 1.74, "height" : 5.65, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
+<!-- {"left" : 0.20, "top" : 2.25, "height" : 5.65, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 Notes:
 

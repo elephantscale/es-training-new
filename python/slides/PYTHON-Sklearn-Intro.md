@@ -1,6 +1,8 @@
 # Python Scikit-Learn
 
-<img src="../../assets/images/logos/scikit-learn-logo-1.png" style="width:40%;"/>
+<img src="../../assets/images/logos/scikit-learn-logo-1.png" style="width:40%;"/><!-- {"left" : 2.92, "top" : 6.17, "height" : 1.61, "width" : 2.99} -->
+
+
 
 ---
 
@@ -21,7 +23,7 @@ Notes:
 
 ## What is Scikit-learn?
 
-<img src="../../assets/images/logos/scikit-learn-logo-1.png" style="width:20%; float:right;"/><!-- {"left" : 7.2, "top" : 0.9, "height" : 1.69, "width" : 2.52} -->
+<img src="../../assets/images/logos/scikit-learn-logo-1.png" style="width:20%; float:right;"/><!-- {"left" : 7.2, "top" : 1.36, "height" : 1.69, "width" : 2.52} -->
 
 * Scikit-Learn is a machine learning library written in Python
 * Developed by David Cournapeau in 2007
@@ -101,20 +103,28 @@ Notes:
 ## Installing Scikit-Learn
 
 - Using Conda
+
 ```bash
     conda install numpy
     conda install pandas
     conda install scipy
     conda install scikit-learn
 ```
+<!-- {"left" : 0, "top" : 2.04, "height" : 1.44, "width" : 5.78} -->
+
+
+<br/>
 
 - Using Pip
+
 ```bash
     pip3 install numpy
     pip3 install pandas
     pip3 install scipy
     pip3 install scikit-learn
 ```
+<!-- {"left" : 0, "top" : 4.43, "height" : 1.49, "width" : 5.78} -->
+
 
 ---
 
@@ -125,9 +135,9 @@ Notes:
 
 ## SKLearn Classes
 
-- **Estimators**  : An estimator is any object that learns from data; it may be a classification, regression or clustering algorithm or a transformer that extracts/filters useful features from raw data.
+- **Estimators:** An estimator is any object that learns from data; it may be a classification, regression or clustering algorithm or a transformer that extracts/filters useful features from raw data.
 
-- **Datasets** : built-in datasets for ease of use
+- **Datasets:** built-in datasets for ease of use
 
 ---
 
@@ -179,6 +189,8 @@ y.shape
 # > (150, )
 
 ```
+<!-- {"left" : 0, "top" : 1.54, "height" : 4.49, "width" : 10.25} -->
+
 ---
 
 ## SKLearn Datasets : Boston
@@ -199,11 +211,14 @@ y.shape
 # (506, )
 
 ```
+<!-- {"left" : 0, "top" : 1.54, "height" : 3.78, "width" : 7.28} -->
+
 ---
 
 ## SKLearn Datasets : make_blobs
 
-<img src="../../assets/images/data-analysis-python/scikit-make-blobs-1.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/data-analysis-python/scikit-make-blobs-1.png" style="width:40%;float:right;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+
 
 ```python
 import sklearn
@@ -232,13 +247,15 @@ print(y)
 plt.scatter(x[:, 0], x[:, 1], c=y)
 
 ```
+<!-- {"left" : 0, "top" : 3.62, "height" : 5.16, "width" : 6.46} -->
 
 ---
 
 ## SkLearn Datasets: make_classification
 
 
-<img src="../../assets/images/data-analysis-python/scikit-make-classification-1.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/data-analysis-python/scikit-make-classification-1.png" style="width:40%;float:right;"/><!-- {"left" : 2.56, "top" : 1.21, "height" : 3.44, "width" : 5.14} -->
+
 
 ```python
 import sklearn
@@ -253,6 +270,7 @@ x, y = sklearn.datasets.make_classification(n_samples = 1000 ,
 plt.scatter(x[:, 0], x[:, 1], marker='o', c=y,
             s=25, edgecolor='k')
 ```
+<!-- {"left" : 0, "top" : 4.96, "height" : 3.24, "width" : 10.25} -->
 
 ---
 
@@ -262,9 +280,9 @@ plt.scatter(x[:, 0], x[:, 1], marker='o', c=y,
 
 ## Estimators
 
-<img src="../../assets/images/data-analysis-python/scikit-estimator-1.png" style="width:40%;float:right;"/> <!-- {"left" : 0.25, "top" : 6, "height" : 1.17, "width" : 9.32} -->
-<img src="../../assets/images/data-analysis-python/scikit-estimator-2.png" style="width:40%;float:right;clear:both;"/> <!-- {"left" : 0.25, "top" : 7, "height" : 1.28, "width" : 8.13} -->
+<img src="../../assets/images/data-analysis-python/scikit-estimator-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.2, "top" : 3, "height" : 0.61, "width" : 4.9} -->
 
+<img src="../../assets/images/data-analysis-python/scikit-estimator-2.png" style="width:40%;float:right;clear:both;"/><!-- {"left" : 5.15, "top" : 3.87, "height" : 0.93, "width" : 5} -->
 
 
  * Estimators are used to
@@ -296,6 +314,7 @@ data = [....]
 scaled_data = scaler.transform(data)
 
 ```
+<!-- {"left" : 0, "top" : 2.3, "height" : 1.88, "width" : 9.15} -->
 
 ---
 
@@ -341,7 +360,7 @@ clf.fit(x_train, y_train) #(notice 2 params)
 y_pred = clf.predict(x_test)
 
 ```
-<!-- {"left" : 0, "top" : 1.21, "height" : 2.65, "width" : 7.28} -->
+<!-- {"left" : 0, "top" : 1.47, "height" : 2.65, "width" : 7.28} -->
 
 
 Notes:
@@ -379,14 +398,15 @@ Notes:
 | Categorical Encoding             | LDA (Latent Dirichlet Allocation)  | Naive Bayes                   |                         |                         | Metrics (Regressions, Classifications, Clustering) |
 | Imputation                       |                                    | Decision Trees                |                         |                         |                                                    |
 | FunctionTransformer              |                                    | Ensemble Decision Trees       |                         |                         |                                                    |
-|                                  |                                    | Neural Networks               |                         |                         |                                                    |
-|                                  |                                    |                               |                         |                         |                                                    |
-|                                  |                                    |                               |                         |                         |                                                    |               |
+|                                  |                                    | Neural Networks               |                         |                         |                                                    
+
+
 ---
 
 ## Scikit-Learn Algorithm Map
 
-<img src="../../assets/images/data-analysis-python/3rd-party/scikit-learn-algorithm-cheatsheet-1.png" style="max-width:80%;" />
+<img src="../../assets/images/data-analysis-python/3rd-party/scikit-learn-algorithm-cheatsheet-1.png" style="max-width:80%;" /><!-- {"left" : 1.02, "top" : 2.26, "height" : 5.12, "width" : 8.21} -->
+
 
 ---
 
@@ -422,7 +442,7 @@ transformer = FunctionTransformer(np.log1p)
 transformer.transform(np.array[1,2])
 [0.69314718, 1.09861229]
 ```
-<!-- {"left" : 0, "top" : 3.78, "height" : 1.07, "width" : 7.94} -->
+<!-- {"left" : 0, "top" : 4, "height" : 1.07, "width" : 7.94} -->
 
 Notes:
 

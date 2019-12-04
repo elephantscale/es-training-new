@@ -51,7 +51,7 @@ Notes:
 
 ## Decision Tree
 
-<img src="../../assets/images/data-analysis-python/decision-tree.png" alt="data.png" style="width:40%;"/><!-- {"left" : 2.71, "top" : 1.14, "height" : 5.86, "width" : 4.83} -->
+<img src="../../assets/images/data-analysis-python/decision-tree.png" alt="data.png" style="width:40%;"/><!-- {"left" : 2.71, "top" : 1.89, "height" : 5.86, "width" : 4.83} -->
 
 
 Notes:
@@ -89,7 +89,7 @@ Notes:
 | Actual Spam       | 4 Count  \\ 66%  True Positive  Rate (Sensitivity) | 2 Count  33%  False Negative  Rate  |
 | Actual Not Spam   | 1 Count  \\ 16%  False Positive  Rate              | 3 Count    True Negative Rate       |
 
-<!-- {"left" : 0.25, "top" : 1.12, "height" : 1.88, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
+<!-- {"left" : 0.25, "top" : 1.65, "height" : 1.88, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
 
 
 Notes:

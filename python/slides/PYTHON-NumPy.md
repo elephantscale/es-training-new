@@ -1,6 +1,6 @@
 # PYTHON NumPy
 
-<img src="../../assets/images/logos/numpy-logo-2.png" style="width:40%;" />  <!-- {"left" : 0.3, "top" : 6.0, "height" : 2.2, "width" : 5.5} -->
+<img src="../../assets/images/logos/numpy-logo-2.png" style="width:40%;" />  <!-- {"left" : 2.89, "top" : 6.48, "height" : 1, "width" : 2.49} -->
 
 
 ---
@@ -24,7 +24,7 @@ Notes:
 
 ## About NumPy and Python
 
-<img src="../../assets/images/logos/numpy-logo-2.png" alt="numpy-logo-2.png" style="width:30%;float:right;"/><!-- {"left" : 7.21, "top" : 1.08, "height" : 1.19, "width" : 2.08} -->
+<img src="../../assets/images/logos/numpy-logo-2.png" alt="numpy-logo-2.png" style="width:30%;float:right;"/><!-- {"left" : 7.45, "top" : 1.23, "height" : 1, "width" : 2.49} -->
 
   * Python is a rich language with ecosystem.
 
@@ -69,7 +69,7 @@ Notes:
 ---
 ## NumPy and SciPy
 
-<img src="../../assets/images/data-analysis-python/3rd-party/python-datascience-stack.jpg"  style="width:40%;float:right;"/><!-- {"left" : 5.5, "top" : 4.5, "height" : 3.5, "width" : 4.6} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/python-datascience-stack.jpg"  style="width:40%;float:right;"/><!-- {"left" : 5.62, "top" : 2.78, "height" : 3.5, "width" : 4.6} -->
 
   * SciPy is a companion package to NumPy
 
@@ -112,7 +112,7 @@ Notes:
 >>> a + b
 [1, 2, 3, 4, 5, 6, 7, 8]
 ```
-<!-- {"left" : 0, "top" : 3.01, "height" : 3.21, "width" : 5.58} -->
+<!-- {"left" : 0, "top" : 3.22, "height" : 3.21, "width" : 5.58} -->
 
 Notes:
 
@@ -173,7 +173,7 @@ array[1, 2, 3, 4]
 >>> a.dtype # What is the type of a?
 dtype(‘int64’)
 ```
-<!-- {"left" : 0, "top" : 3.49, "height" : 2.27, "width" : 8.27} -->
+<!-- {"left" : 0, "top" : 2.48, "height" : 2.27, "width" : 8.27} -->
 
 Notes:
 
@@ -192,7 +192,7 @@ array[1, 2, 3, 4]
 >>> a.dtype
 dtype(‘int64’)
 ```
-<!-- {"left" : 0, "top" : 2.4, "height" : 2.45, "width" : 8.09} -->
+<!-- {"left" : 0, "top" : 3.06, "height" : 2.45, "width" : 8.09} -->
 
 ---
 
@@ -232,7 +232,7 @@ array([1, 2, 3, 4])
 >>> a_list
 [1, 2, 3, 4]
 ```
-<!-- {"left" : 0, "top" : 2.49, "height" : 3.62, "width" : 6.39} -->
+<!-- {"left" : 0, "top" : 2.72, "height" : 3.62, "width" : 6.39} -->
 
 Notes:
 
@@ -296,9 +296,9 @@ Notes:
 >>> np.arange(10, 30, 5)
 array([10,15,20,25])
 ```
-<!-- {"left" : 0, "top" : 1.55, "height" : 0.81, "width" : 8.78} -->
+<!-- {"left" : 0, "top" : 2.04, "height" : 0.98, "width" : 5.42} -->
 
-  
+<br/>
 
   * Linspace (n numbers from a to b)
 
@@ -306,7 +306,7 @@ array([10,15,20,25])
 >>> np.linspace(0, 2, 9) 
 array([0., 0.25, 0.5, 0.75, 1., 1.25, 1.5, 1.75, 2.])
 ```
-<!-- {"left" : 0, "top" : 3.73, "height" : 0.81, "width" : 9.61} -->
+<!-- {"left" : 0, "top" : 4.29, "height" : 0.81, "width" : 9.61} -->
 
 Notes:
 
@@ -332,7 +332,7 @@ array([ 0, 0, 0, 0])
 >>> print(a ** b)
 array([1, 64, 2187, 65536])
 ```
-<!-- {"left" : 0, "top" : 2.03, "height" : 4.51, "width" : 8.65} -->
+<!-- {"left" : 0, "top" : 2.21, "height" : 4.51, "width" : 8.65} -->
 
 Notes:
 
@@ -404,6 +404,7 @@ array([[5, 6],
 array([[ 6,  8],
        [10, 12]])
 ```
+<!-- {"left" : 0, "top" : 2.23, "height" : 3.49, "width" : 7.44} -->
 
 ---
 
@@ -420,10 +421,12 @@ array([[0., 3.],
        [6., 9.]])
 >>>
 ```
+<!-- {"left" : 0, "top" : 2.32, "height" : 2.61, "width" : 6.28} -->
 
 ---
 
 ## Broadcasting Scenario 3:
+
   * Matching in one dimension, 1 in other dimension
 
 ```pycon
@@ -442,6 +445,7 @@ array([[ 0.,  1.,  2.],
        [ 4.,  5.,  6.],
        [ 8.,  9., 10.]])
 ```
+<!-- {"left" : 0, "top" : 1.73, "height" : 4.36, "width" : 6.44} -->
 
 ---
 
@@ -479,7 +483,9 @@ Notes:
 >>> a[1] # zero-based index
 2
 ```
-<!-- {"left" : 0, "top" : 1.7, "height" : 1.13, "width" : 5.59} -->
+<!-- {"left" : 0, "top" : 1.87, "height" : 1.13, "width" : 5.59} -->
+
+<br/>
 
   * Multiple Dimensions: use array[m,n] syntax
 
@@ -494,7 +500,7 @@ array[[ 0,  1,  2,  3,  4],
 >>> a[1,0] #  This is faster
 5
 ```
-<!-- {"left" : 0, "top" : 3.95, "height" : 2.81, "width" : 7.34} -->
+<!-- {"left" : 0, "top" : 4.18, "height" : 2.81, "width" : 7.34} -->
 
 Notes:
 
@@ -512,7 +518,9 @@ array([3, 4])
 >>> a[0:4:2] # incrementing index by 2
 array([1, 3])
 ```
-<!-- {"left" : 0, "top" : 1.92, "height" : 1.6, "width" : 7.11} -->
+<!-- {"left" : 0, "top" : 2.7, "height" : 1.6, "width" : 7.11} -->
+
+<br/>
 
   * Multi-dimensional array: (separate slices by commas)
 
@@ -526,7 +534,7 @@ array([[ 0,  1,  2,  3,  4],
 array([[ 6,  7],
        [11, 12]])
 ```
-<!-- {"left" : 0, "top" : 5.51, "height" : 1.87, "width" : 6.23} -->
+<!-- {"left" : 0, "top" : 5.06, "height" : 2.13, "width" : 7.11} -->
 
 Notes:
 
@@ -627,7 +635,7 @@ array([[-3, -2, -1, 0, 1],
 >>> np.var(a)
 8.25
 ```
-<!-- {"left" : 0, "top" : 2.02, "height" : 4.5, "width" : 9.78} -->
+<!-- {"left" : 0, "top" : 2.23, "height" : 4.5, "width" : 9.78} -->
 
 Notes:
 
@@ -654,7 +662,7 @@ v3
 V3.delete[2:4]
 [1, 5, 6, 7]
 ```
-<!-- {"left" : 0, "top" : 1.07, "height" : 5.22, "width" : 5.79} -->
+<!-- {"left" : 0, "top" : 1.33, "height" : 5.22, "width" : 5.79} -->
 
 Notes:
 
@@ -680,7 +688,7 @@ array([5, 4, 3, 2, 1])
 >>> a = np.array(sorted(a, reverse = True))
 array([5, 4, 3, 2, 1])
 ```
-<!-- {"left" : 0, "top" : 2, "height" : 4.37, "width" : 10.09} -->
+<!-- {"left" : 0, "top" : 2.2, "height" : 4.37, "width" : 10.09} -->
 
 Notes:
 
@@ -702,7 +710,7 @@ array([1, 3, 5, 4, 2, 7, 9, 0, 6])
 >>> a
 array([1, 3, 4, 2, 7, 9, 0, 6])
 ```
-<!-- {"left" : 0, "top" : 2, "height" : 2.72, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.14, "height" : 2.72, "width" : 10.25} -->
 
 Notes:
 
@@ -722,7 +730,9 @@ array([False, False, False,  True,  True, False, False,  True, False])
 >>> a[a < 0]
 array([-1, -4, -3])
 ```
-<!-- {"left" : 0, "top" : 2.69, "height" : 1.6, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.73, "height" : 1.6, "width" : 10.25} -->
+
+<br/>
 
   * Example: select only the negative odd number elements
 
@@ -732,7 +742,7 @@ array([False, False, False,  True, False, False, False,  True, False])
 >>> a[np.all([a<0, a%2!=0], axis = 0)]
 array([-1, -3])
 ```
-<!-- {"left" : 0, "top" : 5.82, "height" : 1.51, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.26, "height" : 1.51, "width" : 10.25} -->
 
 Notes:
 
@@ -757,7 +767,7 @@ matrix([[1, 2, 3, 4]])
 matrix([[1, 2, 3],
         [4, 5, 6]])
 ```
-<!-- {"left" : 0, "top" : 2.12, "height" : 2.55, "width" : 9.95} -->
+<!-- {"left" : 0, "top" : 3.59, "height" : 2.55, "width" : 9.95} -->
 
 Notes:
 
@@ -782,7 +792,7 @@ Notes:
 [[13 20]
  [ 5  8]]
 ```
-<!-- {"left" : 0, "top" : 2.82, "height" : 1.86, "width" : 10.11} -->
+<!-- {"left" : 0, "top" : 3.17, "height" : 1.86, "width" : 10.11} -->
 
 
 ```python
@@ -793,7 +803,7 @@ Notes:
 [[13 20]
  [ 5  8]]
 ```
-<!-- {"left" : 0, "top" : 5.21, "height" : 1.86, "width" : 6.11} -->
+<!-- {"left" : 0, "top" : 5.33, "height" : 1.86, "width" : 6.11} -->
 
 Notes:
 
@@ -848,7 +858,7 @@ matrix([[1, 2],
 matrix([[-2. ,  1. ],
         [ 1.5, -0.5]])
 ```
-<!-- {"left" : 0, "top" : 1.7, "height" : 4, "width" : 10.2} -->
+<!-- {"left" : 0, "top" : 2.53, "height" : 4, "width" : 10.2} -->
 
 Notes:
 
@@ -865,7 +875,9 @@ array([[1., 0., 0., 0.],
        [0., 0., 1., 0.],
        [0., 0., 0., 1.]])
 ```
-<!-- {"left" : 0, "top" : 1.67, "height" : 1.6, "width" : 4.94} -->
+<!-- {"left" : 0, "top" : 1.78, "height" : 1.6, "width" : 4.94} -->
+
+<br/>
 
   * Create custom diagonals with np.eye(n,  m, k)
 
@@ -878,7 +890,7 @@ array([[0., 1., 0., 0., 0., 0., 0.],
        [0., 0., 0., 0., 1., 0., 0.],
        [0., 0., 0., 0., 0., 1., 0.]])
 ```
-<!-- {"left" : 0, "top" : 4.74, "height" : 1.86, "width" : 7.28} -->
+<!-- {"left" : 0, "top" : 4.27, "height" : 1.86, "width" : 7.28} -->
 
 Notes:
 
@@ -900,7 +912,9 @@ Matrix([0,0,0,0],
        [0,0,0,0]
        [0,0,0,0]])
 ```
-<!-- {"left" : 0, "top" : 2.44, "height" : 1.67, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.61, "height" : 1.67, "width" : 10.25} -->
+
+<br/>
 
 * `scipy.parse.csr_matrix`: row oriented matrix
 
@@ -929,7 +943,7 @@ Matrix([0,0,3,0],
        [1,0,2,0]
        [0,0,0,0]])
 ```
-<!-- {"left" : 0, "top" : 3.3, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.67, "height" : 2.39, "width" : 10.25} -->
 
 Notes:
 

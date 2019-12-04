@@ -63,10 +63,10 @@ Pandas: https://pandas.pydata.org/pandas-docs/stable/visualization.html
 >>> plt.ylabel('Delay')
 >>> plt.title('Average Arrival Delay')
 ```
-<!-- {"left" : 0, "top" : 1.1, "height" : 1.86, "width" : 8.78} -->
+<!-- {"left" : 0, "top" : 1.38, "height" : 1.86, "width" : 8.78} -->
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Pandas-visualization.png" alt="Pandas-visualization.png" style="width:50%;"/><!-- {"left" : 2.54, "top" : 3.31, "height" : 3.55, "width" : 5.23} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Pandas-visualization.png" alt="Pandas-visualization.png" style="width:50%;"/><!-- {"left" : 2.54, "top" : 3.7, "height" : 3.55, "width" : 5.23} -->
 
 
 Notes:
@@ -152,9 +152,9 @@ plt.grid(True)
 plt.savefig("test.png")
 ```
 
-<!-- {"left" : 0, "top" : 1.07, "height" : 2.39, "width" : 5.61} -->
+<!-- {"left" : 0, "top" : 1.47, "height" : 2.39, "width" : 5.61} -->
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib.png" alt="Matplotlib.png" style="width:50%;"/><!-- {"left" : 2.83, "top" : 3.78, "height" : 3.43, "width" : 4.6} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib.png" alt="Matplotlib.png" style="width:50%;"/><!-- {"left" : 2.83, "top" : 4.42, "height" : 3.43, "width" : 4.6} -->
 
 Notes:
 
@@ -169,15 +169,14 @@ Notes:
 | histogram       | Plot of frequency table                                     |
 | Density plot     | Smoothed version of histogram. (Kernel Density Estimate)     |
 
-<!-- {"left" : 0.26, "top" : 1.09, "height" : 2.88, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
+<!-- {"left" : 0.26, "top" : 1.3, "height" : 2.88, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 Notes:
 
 ---
 ## Boxplot / Box-and-Whisker Plot
 
-
-* Boxplot displays 5 measures : min, Q1, Q2 (median), Q3, max
+* Boxplot displays 5 measures: min, Q1, Q2 (median), Q3, max
 
 * Q1, Q2, Q3 are the first, second and third quartiles
 
@@ -186,7 +185,7 @@ Notes:
 * Fences are usually 1.5 times IQR (Q3 - Q1)
 
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" alt="Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" style="width:40%;"/><!-- {"left" : 3.21, "top" : 3.82, "height" : 3.36, "width" : 4.6} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" alt="Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" style="width:40%;"/><!-- {"left" : 2.82, "top" : 4.24, "height" : 3.36, "width" : 4.6} -->
 
 Notes:
 
@@ -214,9 +213,9 @@ s = sns.boxplot(data = salaries)
 plt.title("seaborn boxplot")
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 2, "height" : 3.54, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.69, "height" : 3.54, "width" : 10.25} -->
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Box-and-Whisker-Plot.png" alt="Box-and-Whisker-Plot.png" style="width:30%;"/><!-- {"left" : 5.48, "top" : 3.69, "height" : 3.28, "width" : 4.39} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Box-and-Whisker-Plot.png" alt="Box-and-Whisker-Plot.png" style="width:30%;"/><!-- {"left" : 5.48, "top" : 4.8, "height" : 3.28, "width" : 4.39} -->
 
 
 Notes:
@@ -244,11 +243,11 @@ plt.grid(True)
 plt.title("seaborn Histogram")
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 1.56, "height" : 4.5, "width" : 8.28} -->
+<!-- {"left" : 0, "top" : 1.72, "height" : 4.5, "width" : 8.28} -->
 
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Histograms.png" alt="Histograms.png" style="width:30%;"/><!-- {"left" : 7.11, "top" : 5.23, "height" : 2.22, "width" : 2.85} -->&nbsp;&nbsp;<img src="../../assets/images/data-analysis-python/3rd-party/Histograms-1.png" alt="Histograms-1.png" style="width:30%;"/><!-- {"left" : 7.11, "top" : 5.23, "height" : 2.22, "width" : 2.85} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Histograms.png" alt="Histograms.png" style="width:30%;"/><!-- {"left" : 1.65, "top" : 6.29, "height" : 2.46, "width" : 3.19} --> &nbsp;&nbsp;<img src="../../assets/images/data-analysis-python/3rd-party/Histograms-1.png" alt="Histograms-1.png" style="width:30%;"/><!-- {"left" : 5.38, "top" : 6.28, "height" : 2.47, "width" : 3.22} -->
 
 
 
@@ -273,7 +272,7 @@ plt.scatter(bills, tips)
 <!-- {"left" : 0, "top" : 2, "height" : 2.39, "width" : 8.94} -->
 
 
-<img src="../../assets/images/data-analysis-python/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:50%;"/><!-- {"left" : 1, "top" : 5, "height" : 3.45, "width" : 5} -->
+<img src="../../assets/images/data-analysis-python/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:50%;"/><!-- {"left" : 2.63, "top" : 4.88, "height" : 3.45, "width" : 5} -->
 
 Notes:
 
@@ -311,9 +310,9 @@ ax2.plot(x2, y2, 'r.-')
 ax2.set(xlabel='time (s)', ylabel='Undamped')
 ```
 
-<!-- {"left" : 0, "top" : 1.5, "height" : 1.86, "width" : 8.44} -->
+<!-- {"left" : 0, "top" : 1.84, "height" : 1.86, "width" : 8.44} -->
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-subplots.png" alt="Matplotlib-subplots.png" style="width:50%;"/><!-- {"left" : 2.47, "top" : 3.45, "height" : 3.71, "width" : 5.31} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-subplots.png" alt="Matplotlib-subplots.png" style="width:50%;"/><!-- {"left" : 2.47, "top" : 4.23, "height" : 3.71, "width" : 5.31} -->
 
 Notes:
 
@@ -336,7 +335,9 @@ import matplotlib.pyplot as plt
 
 fig,ax = plt.subplots() # Just one plot
 ```
-<!-- {"left" : 0, "top" : 3.45, "height" : 1.07, "width" : 7.28} -->
+<!-- {"left" : 0, "top" : 4.17, "height" : 1.17, "width" : 7.97} -->
+
+<br/>
 
   * More than one (subplots)
 
@@ -345,7 +346,7 @@ import matplotlib.pyplot as plt
 
 fig, (ax1,ax2)	 = plt.subplots(2) #Two subplots
 ```
-<!-- {"left" : 0, "top" : 5.76, "height" : 1.07, "width" : 9.11} -->
+<!-- {"left" : 0, "top" : 6.1, "height" : 1.07, "width" : 9.11} -->
 
 Notes:
 
@@ -379,7 +380,7 @@ Notes:
 
   * Undamped vs Damped oscillations using subplot():
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-subplot.png" alt="Matplotlib-subplot.png" style="width:35%; float:right;"/><!-- {"left" : 5.91, "top" : 4.75, "height" : 3.37, "width" : 4.29} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-subplot.png" alt="Matplotlib-subplot.png" style="width:35%; float:right;"/><!-- {"left" : 6.63, "top" : 6.17, "height" : 2.72, "width" : 3.52} -->
 
 ```python
 import matplotlib.pyplot as plt
@@ -407,8 +408,7 @@ plt.grid(True)
 plt.savefig("matplotlib2.png")
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 2.0, "height" : 6.17, "width" : 9.59} -->
-
+<!-- {"left" : 0, "top" : 2.06, "height" : 4.28, "width" : 6.65} -->
 
 Notes:
 
@@ -431,7 +431,7 @@ plt.show()
 <!-- {"left" : 0, "top" : 2.0, "height" : 3.18, "width" : 8.78} -->
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-scatter-1.png" alt="Matplotlib-scatter-1.png" style="width:40%;"/><!-- {"left" : 5.76, "top" : 4.78, "height" : 4.79, "width" : 4.26} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-scatter-1.png" alt="Matplotlib-scatter-1.png" style="width:40%;"/><!-- {"left" : 5.47, "top" : 4.74, "height" : 3.18, "width" : 4.3} -->
 
 
 Notes:
@@ -457,7 +457,8 @@ plt.show()
 ```
 <!-- {"left" : 0, "top" : 2.0, "height" : 3.18, "width" : 8.44} -->
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-scatter01.png" alt="Matplotlib-scatter01.png" style="width:35%;"/><!-- {"left" : 5.83, "top" : 4.71, "height" : 4.33, "width" : 3.29} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-scatter01.png" alt="Matplotlib-scatter01.png" style="width:35%;"/><!-- {"left" : 5.54, "top" : 5.08, "height" : 3.27, "width" : 4.4} -->
+
 
 Notes:
 
@@ -476,10 +477,10 @@ width = 1/1.5
 plt.bar(x, y, width)
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 1.53, "height" : 2.13, "width" : 6.94} -->
+<!-- {"left" : 0, "top" : 1.74, "height" : 2.13, "width" : 6.94} -->
 
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-Python--0.png" alt="Data-Exploration-Histogram-Python--0.png" style="width:45%;"/><!-- {"left" : 2.99, "top" : 3.89, "height" : 3.23, "width" : 4.26} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-Python--0.png" alt="Data-Exploration-Histogram-Python--0.png" style="width:45%;"/><!-- {"left" : 2.68, "top" : 4.49, "height" : 3.71, "width" : 4.89} -->
 
 Notes:
 
@@ -500,7 +501,7 @@ plt.show()
 <!-- {"left" : 0, "top" : 2.0, "height" : 1.8, "width" : 10.25} -->
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-pie.png" alt="Matplotlib-pie.png" style="width:45%;"/><!-- {"left" : 3.09, "top" : 4.0, "height" : 3.47, "width" : 4.07} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Matplotlib-pie.png" alt="Matplotlib-pie.png" style="width:45%;"/><!-- {"left" : 3.09, "top" : 4.57, "height" : 3.47, "width" : 4.07} -->
 
 Notes:
 
@@ -558,7 +559,7 @@ color='y', yerr=women_std)
 ax.set_xticks(ind + width / 2)
 ax.legend((rects1[0], rects2[0]), ('Men', 'Women'))
 ```
-<!-- {"left" : 0, "top" : 2.09, "height" : 2.37, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.28, "height" : 2.37, "width" : 10.25} -->
 
 
 <img src="../../assets/images/data-analysis-python/3rd-party/Seabornbarplot.png" alt="Seabornbarplot.png" style="width:30%;"/><!-- {"left" : 3.42, "top" : 4.82, "height" : 2.76, "width" : 3.41} -->
@@ -574,7 +575,7 @@ Notes:
   * Condensed shorter code in seaborn for the same plot
     - `ax = sns.barplot(x="day", y="total_bill", hue="sex", data=tips)`
 
-<img src="../../assets/images/data-analysis-python/3rd-party/barplot.png" alt="barplot.png" style="width:40%;"/><!-- {"left" : 2.51, "top" : 2.93, "height" : 3.73, "width" : 5.18} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/barplot.png" alt="barplot.png" style="width:40%;"/><!-- {"left" : 3.16, "top" : 3.62, "height" : 3.19, "width" : 3.94} -->
 
 Notes:
 
@@ -587,7 +588,7 @@ Notes:
 * Take a look at the `tips.csv` dataset (used in example below)
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Seaborn.png" alt="Seaborn.png" style="width:40%;"/><!-- {"left" : 1.94, "top" : 2.13, "height" : 4.75, "width" : 6.35} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Seaborn.png" alt="Seaborn.png" style="width:40%;"/><!-- {"left" : 1.94, "top" : 3.11, "height" : 4.75, "width" : 6.35} -->
 
 Notes:
 
@@ -632,10 +633,12 @@ scatter_kws = {"color" : "green"},
 line_kws = {"color" : "red", "linewidth" : 4})
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 1.48, "height" : 3.34, "width" : 9.75} -->
+<!-- {"left" : 0, "top" : 1.64, "height" : 3.34, "width" : 9.75} -->
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Regression.png" alt="Regression.png" style="width:40%;"/><!-- {"left" : 3.15, "top" : 4.94, "height" : 5, "width" : 4} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Regression.png" alt="Regression.png" style="width:40%;"/><!-- {"left" : 2.53, "top" : 5.11, "height" : 3.58, "width" : 4.7} -->
+
+
 
 Notes:
 
@@ -678,10 +681,10 @@ color='y', yerr=women_std)
 ax.set_xticks(ind + width / 2)
 ax.legend((rects1[0], rects2[0]), ('Men', 'Women'))
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 2.58, "width" : 9.75} -->
+<!-- {"left" : 0, "top" : 1.92, "height" : 2.58, "width" : 9.75} -->
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Seabornbarplot.png" alt="Seabornbarplot.png" style="width:30%;"/><!-- {"left" : 3.17, "top" : 4.12, "height" : 3.17, "width" : 3.91} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Seabornbarplot.png" alt="Seabornbarplot.png" style="width:30%;"/><!-- {"left" : 3.17, "top" : 5.07, "height" : 3.17, "width" : 3.91} -->
 
 Notes:
 
@@ -694,10 +697,10 @@ Notes:
 ```python
 ax = sns.barplot(x="day", y="total_bill", hue="sex", data=tips)
 ```
-<!-- {"left" : 0, "top" : 1.50, "height" : 0.49, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.85, "height" : 0.49, "width" : 10.25} -->
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/barplot.png" alt="barplot.png" style="width:40%;"/><!-- {"left" : 1.89, "top" : 2.35, "height" : 4.76, "width" : 6.61} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/barplot.png" alt="barplot.png" style="width:40%;"/><!-- {"left" : 2.14, "top" : 3.28, "height" : 4.3, "width" : 5.97} -->
 
 
 Notes:
@@ -723,7 +726,7 @@ sns.heatmap(flights, annot=True, fmt="d", linewidths=.5, ax=ax)
 ```
 <!-- {"left" : 0, "top" : 1.66, "height" : 2.88, "width" : 7.84} -->
 
-<img src="../../assets/images/data-analysis-python/3rd-party/heatmap_annotation.png" alt="barplot.png" style="width:40%;"/><!-- {"left" : 3.1, "top" : 4.52, "height" : 4.76, "width" : 6.61} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/heatmap_annotation.png" alt="barplot.png" style="width:40%;"/><!-- {"left" : 4.07, "top" : 4.73, "height" : 4.13, "width" : 5.73} -->
 
 ---
 
@@ -781,10 +784,10 @@ Notes:
 
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/ggplot-examples-1.png" alt="ggplot-examples-1.png" style="width:30%;"/><!-- {"left" : 5.4, "top" : 1.02, "height" : 2.56, "width" : 4.1} -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/data-analysis-python/3rd-party/ggplot-examples-2.png" alt="ggplot-examples-2.png" style="width:25%;"/><!-- {"left" : 1.5, "top" : 0.91, "height" : 2.78, "width" : 3.47} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/ggplot-examples-1.png" alt="ggplot-examples-1.png" style="width:30%;"/><!-- {"left" : 1.36, "top" : 1.69, "height" : 2.56, "width" : 4.1} -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../assets/images/data-analysis-python/3rd-party/ggplot-examples-2.png" alt="ggplot-examples-2.png" style="width:25%;"/><!-- {"left" : 5.26, "top" : 1.69, "height" : 2.78, "width" : 3.47} -->
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/ggplot-examples-3.png" alt="ggplot-examples-3.png" style="width:40%;"/><!-- {"left" : 1.03, "top" : 3.7, "height" : 3.56, "width" : 8.18} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/ggplot-examples-3.png" alt="ggplot-examples-3.png" style="width:40%;"/><!-- {"left" : 1.03, "top" : 4.61, "height" : 3.56, "width" : 8.18} -->
 
 Notes:
 
@@ -825,7 +828,7 @@ ggplot(mtcars, aes(hp, mpg))  #Error: No layers in plot
 ggplot(mtcars, aes(hp, mpg)) + geom_point() #point layer
 ggplot(mtcars, aes(hp, mpg)) + geom_line() #line layer
 ```
-<!-- {"left" : 0, "top" : 1.55, "height" : 1.33, "width" : 10.11} -->
+<!-- {"left" : 0, "top" : 1.76, "height" : 1.33, "width" : 10.11} -->
 
 
 

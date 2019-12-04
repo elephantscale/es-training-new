@@ -72,7 +72,8 @@ Notes:
 
 
 
-<img src="../../assets/images/python/Door-Class.png" style="width:50%;"/>
+<img src="../../assets/images/python/Door-Class.png" style="width:50%;"/><!-- {"left" : 2, "top" : 3.72, "height" : 4.54, "width" : 6.24} -->
+
 
 
 Notes:
@@ -81,7 +82,8 @@ Notes:
 
 ## OOP in Python
 
-<img src="../../assets/images/python/OOP-in-Python.png" style="width:60%;"/>
+<img src="../../assets/images/python/OOP-in-Python.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.34, "width" : 8.21} -->
+
 
 
 Notes:
@@ -107,13 +109,13 @@ class Door:
 		def close(self):
 				self.status = “closed“
 ```
-<!-- {"left" : 0, "top" : 3.37, "height" : 2.73, "width" : 9.09} -->
+<!-- {"left" : 0, "top" : 3.65, "height" : 2.73, "width" : 9.09} -->
 
 
 ```python
 door1 = Door(10, “open“)
 ```
-<!-- {"left" : 0, "top" : 6.32, "height" : 0.76, "width" : 6.66} -->
+<!-- {"left" : 0, "top" : 6.6, "height" : 0.76, "width" : 6.66} -->
 
 
 
@@ -142,13 +144,13 @@ class Door:
 				self.status = “closed“
 
 ```
-<!-- {"left" : 0, "top" : 3.16, "height" : 2.95, "width" : 8.83} -->
+<!-- {"left" : 0, "top" : 3.44, "height" : 2.95, "width" : 8.83} -->
 
 
 ```python
 door1 = Door(10, “open“)
 ```
-<!-- {"left" : 0, "top" : 6.32, "height" : 0.76, "width" : 6.66} -->
+<!-- {"left" : 0, "top" : 6.6, "height" : 0.76, "width" : 6.66} -->
 
 Notes:
 
@@ -227,7 +229,7 @@ class Door:
 		def __del__(self):
 				print(“Destructor Running!“)
 ```
-<!-- {"left" : 0, "top" : 1.09, "height" : 4.15, "width" : 9.97} -->
+<!-- {"left" : 0, "top" : 1.24, "height" : 4.15, "width" : 9.97} -->
 
 
 ```python
@@ -320,7 +322,7 @@ class Door
     def __del__(self): #Destructor method
         print “Bye!“
 ```
-<!-- {"left" : 0, "top" : 5.01, "height" : 2.2, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.2, "height" : 2.2, "width" : 10.25} -->
 
 
 Notes:
@@ -344,13 +346,13 @@ class Door:
 		def __del__(self):
 				print(“Destructor Running!“)
 ```
-<!-- {"left" : 0, "top" : 1.46, "height" : 3.94, "width" : 9.48} -->
+<!-- {"left" : 0, "top" : 1.74, "height" : 3.94, "width" : 9.48} -->
 
 
 ```python
 door1 = Door(10, “open“)
 ```
-<!-- {"left" : 0, "top" : 5.66, "height" : 0.72, "width" : 6.36} -->
+<!-- {"left" : 0, "top" : 5.94, "height" : 0.72, "width" : 6.36} -->
 
 Notes:
 
@@ -432,7 +434,7 @@ class Lockable(Door, Lockable):
      def __init__(self, locked):
          self.locked = locked
 ```
-<!-- {"left" : 0, "top" : 3.43, "height" : 1.28, "width" : 7.33} -->
+<!-- {"left" : 0, "top" : 3.57, "height" : 1.28, "width" : 7.33} -->
 
 
 ```python
@@ -442,7 +444,7 @@ class SecurityDoor(Door, Lockable):
             return
         super().open()
 ```
-<!-- {"left" : 0, "top" : 4.91, "height" : 1.77, "width" : 7.33} -->
+<!-- {"left" : 0, "top" : 5.05, "height" : 1.77, "width" : 7.33} -->
 
 
 Notes:
@@ -453,12 +455,16 @@ Notes:
 
 * Python allows us to inherit attributes from one or more base classes
 
+
 ```python
 class SubClassName(ParentClass1[, ParentClass2, ...]):
 	<class body>
 ```
-<!-- {"left" : 0, "top" : 1.9, "height" : 0.84, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.52, "height" : 0.84, "width" : 10.25} -->
 
+<br/>
+
+<img src="../../assets/images/python/Inheritance.png" style="width:15%;float:right;"/><!-- {"left" : 8.04, "top" : 5.18, "height" : 3.22, "width" : 1.87} -->
 
 * Example:
 
@@ -472,16 +478,16 @@ class SecurityDoor(Door):
 		def unlock(self):
 				self.locked = “unlocked“
 ```
-<!-- {"left" : 0, "top" : 3.78, "height" : 2.5, "width" : 8.76} -->
+<!-- {"left" : 0, "top" : 4.46, "height" : 2.19, "width" : 7.68} -->
 
 
 
 ```python
 door2 = SecurityDoor()
 ```
-<!-- {"left" : 0, "top" : 6.51, "height" : 0.66, "width" : 5.38} -->
+<!-- {"left" : 0, "top" : 6.91, "height" : 0.66, "width" : 5.38} -->
 
-![](../images/Inheritance.png) <!-- {"left" : 8.32, "top" : 2.46, "height" : 3.05, "width" : 1.77} -->
+
 
 Notes:
 
@@ -505,11 +511,10 @@ class C(A):
 class D(B,C):
     pass
 ```
-<!-- {"left" : 0, "top" : 2.42, "height" : 3.18, "width" : 5.78} -->
+<!-- {"left" : 0, "top" : 3.79, "height" : 3.18, "width" : 5.78} -->
 
 
-<img src="../../assets/images/python/Multiple-Inheritance.png" style="width:30%;"/>
-
+<img src="../../assets/images/python/Multiple-Inheritance.png" style="width:30%;"/><!-- {"left" : 6.22, "top" : 3.59, "height" : 3.59, "width" : 3.84} -->
 
 
 Notes:
@@ -540,7 +545,7 @@ class D(B,C):
 				super().m()
 ```
 
-<!-- {"left" : 0, "top" : 1.49, "height" : 3.71, "width" : 6.22} -->
+<!-- {"left" : 0, "top" : 1.73, "height" : 3.71, "width" : 6.22} -->
 
 
 ```python
@@ -551,7 +556,7 @@ m of B called
 m of C called
 m of A called
 ```
-<!-- {"left" : 0, "top" : 5.35, "height" : 1.86, "width" : 2.94} -->
+<!-- {"left" : 0, "top" : 5.73, "height" : 1.86, "width" : 2.94} -->
 
 Notes:
 
@@ -605,7 +610,7 @@ class MyTesla(TeslaModelS):
 	def checkVersion(self):
 		return self._updateVersion
 ```
-<!-- {"left" : 0, "top" : 0.9, "height" : 4.5, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.32, "height" : 4.5, "width" : 10.25} -->
 
 
 
@@ -616,7 +621,7 @@ print(myCar.color)
 print(myCar.checkVersion())
 print(myCar.checkModule())
 ```
-<!-- {"left" : 0, "top" : 5.54, "height" : 1.39, "width" : 8.6} -->
+<!-- {"left" : 0, "top" : 6.1, "height" : 1.39, "width" : 8.6} -->
 
 Notes:
 

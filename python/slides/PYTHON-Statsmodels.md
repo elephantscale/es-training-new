@@ -72,6 +72,7 @@ dat = sm.datasets.get_rdataset("Guerry",
 results = smf.ols('Lottery ~ Literacy + 
   np.log(Pop1831)', data=dat).fit()
 ```
+<!-- {"left" : 0, "top" : 1.84, "height" : 4.07, "width" : 7.44} -->
 
 ---
 
@@ -103,6 +104,7 @@ Skew:                          -0.487   Prob(JB):                        0.183
 Kurtosis:                       3.003   Cond. No.                         702.
 ==============================================================================
 ```
+<!-- {"left" : 0, "top" : 1.38, "height" : 4.9, "width" : 10.25} -->
 
 ---
 

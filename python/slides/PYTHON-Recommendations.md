@@ -36,7 +36,7 @@ from scipy.sparse import csr_matrix
 
 mtx = csr_matrix(df.values.fillna(0.)
 ```
-<!-- {"left" : 0, "top" : 2.02, "height" : 1.97, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.19, "height" : 1.97, "width" : 10.25} -->
 
 
 Notes:
@@ -55,7 +55,7 @@ knn = NearestNeighbors(metric="cosine",
 algorithm="brute")
 knn.fit(mtx)
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 2.69, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.97, "height" : 2.69, "width" : 10.25} -->
 
 Notes:
 
@@ -67,7 +67,7 @@ Notes:
 ## What is Surprise?
 
 
-<img src="../../assets/images/logos/surprise-logo.png" alt="surprise-logo.png" style="width:50%;"/><!-- {"left" : 0, "top" : 2.06, "height" : 3.38, "width" : 6.17} -->
+<img src="../../assets/images/logos/surprise-logo.png" alt="surprise-logo.png" style="width:50%;"/><!-- {"left" : 1.52, "top" : 2.56, "height" : 3.95, "width" : 7.22} -->
 
 Notes:
 
@@ -101,7 +101,7 @@ Notes:
 ## ROC Curve
 
 
-<img src="../../assets/images/data-analysis-python/recommendations-comparison-1.png" style="width:70%;"/><!-- {"left" : 0.09, "top" : 0.94, "height" : 6.37, "width" : 10.06} -->
+<img src="../../assets/images/data-analysis-python/recommendations-comparison-1.png" style="width:70%;"/><!-- {"left" : 0.69, "top" : 2.66, "height" : 4.42, "width" : 8.88} -->
 
 
 Notes:

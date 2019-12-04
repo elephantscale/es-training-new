@@ -74,7 +74,7 @@ $  python3
 
 > nltk.data.path.append("/Users/sujee/data/nltk_data")
 ```
-<!-- {"left" : 0.0, "top" : 2.03, "height" : 3.18, "width" : 9.78} -->
+<!-- {"left" : 0.0, "top" : 2.22, "height" : 3.18, "width" : 9.78} -->
 
 Notes:
 
@@ -111,7 +111,7 @@ Notes:
 
 ---
 
-## NLTK Corpus : State of the Union
+## NLTK Corpus: State of the Union
 
   * Each corpus has a 'readme()' function
   * State of the Union addresses from 1945 to 2006
@@ -142,7 +142,7 @@ print (len(gw2006_words))
 gw2006_sentences = state_union.sents('2006-GWBush.txt')
 print(gw2006_sentences[:10])
 ```
-<!-- {"left" : 0.0, "top" : 1.86, "height" : 5.47, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 2.17, "height" : 5.47, "width" : 10.25} -->
 
 Notes:
 
@@ -207,7 +207,7 @@ print(wordpunct_tokenize(text))
 # ['I', 'went', 'to', 'Starbucks', '.', 'And', 'bought', 'a',
 'latte', 'for', '$', '4', '.', '50', '!', 'Yum', ':-)']
 ```
-<!-- {"left" : 0.0, "top" : 4.05, "height" : 3.26, "width" : 8.71} -->
+<!-- {"left" : 0.0, "top" : 4.34, "height" : 3.26, "width" : 8.71} -->
 
 
 Notes:
@@ -386,14 +386,14 @@ print(tb.sentences)
 # Sentence("You can treat TextBlob objects as if they were Python strings that
 # learned how to do Natural Language Processing.")]
 ```
-<!-- {"left" : 0.0, "top" : 0.97, "height" : 5.18, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.19, "height" : 5.18, "width" : 10.25} -->
 
 
 Notes:
 
 ---
 
-##  TextBlob Usage : Sentiment Analysis
+## TextBlob Usage: Sentiment Analysis
 
 * 'sentiment' returns a tuple (polarity, subjectivity)
 
@@ -414,6 +414,7 @@ for tweet in tweets:
     tb = TextBlob(tweet)
     print("{} ==> {}".format(tweet, tb.sentiment))
 ```
+<!-- {"left" : 0.0, "top" : 3.3, "height" : 3.49, "width" : 9.11} -->
 
 ```text
 I love bigmacs ==> Sentiment(polarity=0.5, subjectivity=0.6)
@@ -422,7 +423,7 @@ American Idol is awesome! ==> Sentiment(polarity=0.5, subjectivity=0.5)
 this song is lame ==> Sentiment(polarity=-0.5, subjectivity=0.75)
 Let's go to beach ==> Sentiment(polarity=0.0, subjectivity=0.0)
 ```
-<!-- {"left" : 0.0, "top" : 3.16, "height" : 4.2, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 7.09, "height" : 1.42, "width" : 10.25} -->
 
 Notes:
 
@@ -452,7 +453,7 @@ print(tb.word_counts)
 print(tb.word_counts['sunny'])
 # 2
 ```
-<!-- {"left" : 0.0, "top" : 1.04, "height" : 3.84, "width" : 9.75} -->
+<!-- {"left" : 0.0, "top" : 1.33, "height" : 4.04, "width" : 10.25} -->
 
 
 Notes:
@@ -483,7 +484,7 @@ print(tb.ngrams(n=2))
 # ...
 # ...]
 ```
-<!-- {"left" : 0.0, "top" : 0.9, "height" : 4.02, "width" : 9.75} -->
+<!-- {"left" : 0.0, "top" : 1.25, "height" : 4.23, "width" : 10.25} -->
 
 
 Notes:
@@ -515,7 +516,7 @@ Notes:
 
 ---
 
-## Lab:  Text-4:  TextBlob
+## Lab: Text-4: TextBlob
 
   * Overview:
 

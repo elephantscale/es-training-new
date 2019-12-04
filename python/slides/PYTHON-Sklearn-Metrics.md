@@ -49,7 +49,7 @@ Notes:
  * Computes the explained variance regression
  * Basically same as r-squared for linear model
 
-<img src="../../assets/images/data-analysis-python/3rd-party/math01.png" alt="math01.png" style="width:30%;"/><!-- {"left" : 3.33, "top" : 2.45, "height" : 0.38, "width" : 3.59} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/math01.png" alt="math01.png" style="width:30%;"/><!-- {"left" : 3.33, "top" : 2.62, "height" : 0.38, "width" : 3.59} -->
 
 
 Notes:
@@ -67,7 +67,7 @@ $F(\theta) = \int r\,g(r)\,\ln f(r;\theta)$
 from sklearn.metrics import explained_variance_score
 explained_variance_score(y_true, hy_pred)
 ```
-<!-- {"left" : 0.0, "top" : 1.47, "height" : 0.87, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.73, "height" : 0.87, "width" : 10.25} -->
 
 
 Notes:
@@ -80,11 +80,16 @@ Notes:
  * Take absolute value of each error and take the mean of that.
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/math02.png" alt="math02.png" style="width:40%;"/><!-- {"left" : 3.33, "top" : 2.45, "height" : 0.38, "width" : 3.59} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/math02.png" alt="math02.png" style="width:40%;"/><!-- {"left" : 2.57, "top" : 2.78, "height" : 0.7, "width" : 5.12} -->
+
+
 
 Notes:
 
 `$\mathrm{MAE} = \frac{\sum_{i=1}^n\left| y_i-x_i\right|}{n} =\frac{\sum_{i=1}^n\left| e_i \right|}{n}$`
+
+---
+
 
 ## Mean Absolute Error in Python
 
@@ -92,7 +97,7 @@ Notes:
 from sklearn.metrics import mean_absolute_error
 
 ```
-<!-- {"left" : 0.0, "top" : 1.01, "height" : 0.7, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.53, "height" : 0.7, "width" : 10.25} -->
 
 
 Notes:
@@ -119,7 +124,7 @@ Notes:
 from sklearn.metrics import mean_squared_error_score
 
 ```
-<!-- {"left" : 0.0, "top" : 1.01, "height" : 0.7, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 1.53, "height" : 0.7, "width" : 10.25} -->
 
 
 Notes:
@@ -166,7 +171,7 @@ Notes:
 from sklearn.metrics import accuracy_score
 accuracy_score(y_test, predicted)
 ```
-<!-- {"left" : 0.0, "top" : 1.98, "height" : 1.05, "width" : 10.16} -->
+<!-- {"left" : 0.0, "top" : 2.13, "height" : 1.05, "width" : 10.16} -->
 
 Notes:
 
@@ -210,7 +215,7 @@ Notes:
 array([[1015,   35],
        [ 25,   2284]])
 ```
-<!-- {"left" : 0.0, "top" : 1.09, "height" : 1.1, "width" : 6.07} -->
+<!-- {"left" : 0.0, "top" : 1.53, "height" : 1.1, "width" : 6.07} -->
 
 
 

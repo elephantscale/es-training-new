@@ -28,6 +28,7 @@ Notes:
 ---
 
 ## Categorical Variables
+
  * Algorithms run on ndarrays and matrices of type **float64**
    - Bool, int64 will be upcasted to float64
  * Your data may have string or categorical variables
@@ -50,6 +51,7 @@ Notes:
 ---
 
 ## Strategy 1: Factorization
+
  * Factorization
    - Call `pd.factorize()` on the dimension
    - Will assign an integer to each unique value
@@ -165,7 +167,7 @@ Notes:
 
 ## One-Hot Encoder in SKLearn
 
-<!-- TODO TIm -->
+<!-- {TODO Tim} -->
 
 ```python
 from sklearn.preprocessing import OneHotEncoder

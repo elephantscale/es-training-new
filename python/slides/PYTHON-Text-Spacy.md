@@ -1,6 +1,7 @@
 # Introduction to spaCy
 
-<img src="../../assets/images/logos/spacy-logo-1.png" style="width:20%;" />
+<img src="../../assets/images/logos/spacy-logo-1.png" style="width:20%;" /><!-- {"left" : 2.79, "top" : 6.22, "height" : 1.51, "width" : 2.79} -->
+
 
 ---
 ## NLP Libraries
@@ -24,7 +25,8 @@ Notes:
 ---
 ## Spacy Intro
 
-<img src="../../assets/images/logos/spacy-logo-1.png" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/spacy-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 7.33, "top" : 1.18, "height" : 1.38, "width" : 2.54} -->
+
 
  * Spacy is a Python library  for advanced natural language processing (NLP)
 
@@ -108,6 +110,7 @@ Notes:
 | Entity linking          | No        | No       | No          |
 | Co-reference resolution  | No        | No       | Yes         |
 
+<!-- {"left" : 0.25, "top" : 1, "height" : 7.32, "width" : 9.75} -->
 
 Notes:
 
@@ -214,15 +217,15 @@ Notes:
 
  * First step to use Spacy is to grab the language models available
  * Models are language and genre specific
- * For example :  __en_core_web_sm__
+ * For example:  __en_core_web_sm__
     - __English__ language
     - __Core__ vocabulary
     - Trained on __Web__ text (others could __news__)
     - Size __small__  (__sm__ for small, __md__for medium, __lg__ for large)
  * Model sizes (for English)
-    - small : ~ 50 MB
-    - medium : ~120 MB
-    - large : ~850 MB
+    - small: ~ 50 MB
+    - medium: ~120 MB
+    - large: ~850 MB
 
 ```bash
 # only need one of these
@@ -230,6 +233,7 @@ $   python -m spacy download en_core_web_sm
 $   python -m spacy download en_core_web_md
 $   python -m spacy download en_core_web_lg  
 ```
+<!-- {"left" : 0, "top" : 6.69, "height" : 1.44, "width" : 7.94} -->
 
 ---
 
@@ -242,6 +246,7 @@ print ("spacy version ", spacy.__version__)
 nlp = spacy.load("en_core_web_sm")
 # now we can use this model to parse text
 ```
+<!-- {"left" : 0, "top" : 1.39, "height" : 1.89, "width" : 8.63} -->
 
 
 Notes:
@@ -262,6 +267,7 @@ doc = nlp(text)
 for token in doc:
     print(token)
 ```
+<!-- {"left" : 0, "top" : 1.7, "height" : 2.76, "width" : 10.25} -->
 
 ```text
 # output
@@ -277,6 +283,7 @@ San
 Francisco
 !
 ```
+<!-- {"left" : 0, "top" : 4.75, "height" : 3.78, "width" : 2.28} -->
 
 Notes:
 
@@ -310,6 +317,11 @@ for token in doc:
     print ("    token.is_stop : ", token.is_stop)
     print()
 ```
+<!-- {"left" : 0, "top" : 3.47, "height" : 4.26, "width" : 9.3} -->
+
+<br/>
+<br/>
+<br/>
 
 - output next slide
 
@@ -347,6 +359,7 @@ token.text :  the
     token.is_alpha :  True
     token.is_stop :  True
 ```
+<!-- {"left" : 0, "top" : 1.29, "height" : 6.28, "width" : 10.25} -->
 
 Notes:
 
@@ -365,16 +378,18 @@ Notes:
 | is alpha   | Is the token an alpha character?                                              |
 | is_stop    | Is the token part of a stop list, i.e. the most common words of the language? |
 
+<!-- {"left" : 0.25, "top" : 1.31, "height" : 5.07, "width" : 9.75} -->
+
 Notes:
 
 
 ---
 ## Entity Recognition
 
- * Entity :  a person, a place, date, Organization
+ * Entity:  a person, a place, date, Organization
  * Needs statistical model to predict
  * We can see entities are recognized as
-    - Organization : Apple
+    - Organization: Apple
     - Geographical (GPE: Countries, Cities, Sates) : San Francisco & California
     - Person : Steve Jobs
  * __Question for class__ : Can you recognize an entity that is classified incorrectly? :-)
@@ -383,8 +398,10 @@ Notes:
 Apple unveiled the first iPhone in 2007 in San Francisco, California.  
 Steve Jobs did a flawless live demonstration of the phone
 ```
+<!-- {"left" : 0, "top" : 5.35, "height" : 0.7, "width" : 10.25} -->
 
-<img src="../../assets/images/data-analysis-python/spacy-entities-1.png" style="width:90%;" />
+<img src="../../assets/images/data-analysis-python/spacy-entities-1.png" style="width:90%;" /><!-- {"left" : 0.8, "top" : 7.04, "height" : 0.79, "width" : 8.65} -->
+
 
 Notes:
 
@@ -406,6 +423,7 @@ doc = nlp(text)
 for ent in doc.ents:
   print(ent.text, ":", ent.label_)
 ```
+<!-- {"left" : 0, "top" : 1.33, "height" : 2.64, "width" : 9.75} -->
 
 ```text
 Apple : ORG
@@ -416,6 +434,7 @@ San Francisco : GPE
 California : GPE
 Steve Jobs : PERSON
 ```
+<!-- {"left" : 0, "top" : 4.38, "height" : 2.32, "width" : 3.94} -->
 
 
 Notes:
@@ -443,7 +462,10 @@ displacy.serve(doc, style="ent", port=9000)
 ## Now go to port number 9000 in the browser to see the output
 
 ```
-<img src="../../assets/images/data-analysis-python/spacy-entities-1.png" style="width:90%;" />
+<!-- {"left" : 0, "top" : 1.42, "height" : 3.46, "width" : 9.75} -->
+
+<img src="../../assets/images/data-analysis-python/spacy-entities-1.png" style="width:90%;" /><!-- {"left" : 0.58, "top" : 6.17, "height" : 0.83, "width" : 9.09} -->
+
 
 
 ---
@@ -471,6 +493,7 @@ $ python -m spacy download en_core_web_lg
 # medium model (~120 MB)
 $ python -m spacy download en_core_web_md
 ```
+<!-- {"left" : 0, "top" : 3.22, "height" : 1.6, "width" : 6.98} -->
 
 ```python
 import spacy
@@ -482,6 +505,11 @@ for t1 in doc:
   for t2 in doc:
     print(t1.text, t2.text, t1.similarity(t2))
 ```
+<!-- {"left" : 0, "top" : 5.01, "height" : 2.31, "width" : 7.61} -->
+
+<br/>
+<br/>
+<br/>
 
 - Output next slide
 
@@ -513,10 +541,12 @@ cloud fries 0.079438336
 ...
 fries fries 1.0
 ```
+<!-- {"left" : 0, "top" : 1.48, "height" : 6.11, "width" : 4.61} -->
 
 ---
 
 ## Similarity Prettier Output
+
 ```python
 import spacy
 import pandas as pd
@@ -536,6 +566,7 @@ for t1 in doc:
 
 df
 ```
+<!-- {"left" : 0, "top" : 1.1, "height" : 5.24, "width" : 8.61} -->
 
 ```text
 
@@ -548,6 +579,7 @@ cloud   0.219230  0.156812  0.154032  0.556401  1.000000  0.112236  0.079438
 burger  0.209346  0.269560  0.160535  0.144394  0.112236  1.000000  0.796376
 fries   0.106902  0.180607  0.099612  0.141509  0.079438  0.796376  1.000000
 ```
+<!-- {"left" : 0, "top" : 6.53, "height" : 1.89, "width" : 9.75} -->
 
 ---
 ## Making pipeline
@@ -559,7 +591,8 @@ fries   0.106902  0.180607  0.099612  0.141509  0.079438  0.796376  1.000000
  * No need to do the same operations over and over again
 
 
-<img src="../../assets/images/data-analysis-python/nlp-pipeline-1.png"  style="width:70%;"/>
+<img src="../../assets/images/data-analysis-python/nlp-pipeline-1.png"  style="width:70%;"/><!-- {"left" : 0.99, "top" : 4.55, "height" : 1.33, "width" : 8.28} -->
+
 
 
 Notes:
@@ -567,7 +600,9 @@ Notes:
 ---
 ## Architecture
 
-<img src="../../assets/images/data-analysis-python/spacy-architecture-1.png"  style="width:65%;"/>
+<img src="../../assets/images/data-analysis-python/spacy-architecture-1.png"  style="width:65%;"/><!-- {"left" : 1.02, "top" : 1.69, "height" : 6.27, "width" : 8.21} -->
+
+
 
 
 Notes:
@@ -576,18 +611,19 @@ Notes:
 
 ## Lab: Spacy Labs
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" />
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" /><!-- {"left" : 7.25, "top" : 1.24, "height" : 3.6, "width" : 2.7} -->
 
- *  **Overview**:
+
+ *  **Overview:**
     - Get familiar with Spacy
 
- *  **Approximate Time**:
+ *  **Approximate Time:**
     - 1 hr
 
- *  **Instructions**:
-     - Instructor : Please demo the first lab
-     - Spacy-1 : Spacy Intro
-     - Spacy-2 : Working with Spacy
+ *  **Instructions:**
+     - Instructor: Please demo the first lab
+     - Spacy-1: Spacy Intro
+     - Spacy-2: Working with Spacy
 
 
 Notes:
@@ -605,7 +641,8 @@ Notes:
  - Infix: e.g. `-`,`--`,`/`,`...`.
 
 
-<img src="../../assets/images/data-analysis-python/spacy-exception.png"  style="width:60%;"/>
+<img src="../../assets/images/data-analysis-python/spacy-exception.png"  style="width:60%;"/><!-- {"left" : 1.02, "top" : 3.45, "height" : 4.9, "width" : 8.21} -->
+
 
 
 Notes:
@@ -620,7 +657,8 @@ Notes:
  * Vocab is encoded to hash values in order to save memory
 
 
-<img src="../../assets/images/data-analysis-python/spacy-vocab-1.png"  style="width:60%;"/>
+<img src="../../assets/images/data-analysis-python/spacy-vocab-1.png"  style="width:60%;"/><!-- {"left" : 1.02, "top" : 3.23, "height" : 4.42, "width" : 8.21} -->
+
 
 Notes:
 
@@ -645,7 +683,8 @@ Notes:
 
  * Predicting phase on unlabeled data
 
-<img src="../../assets/images/data-analysis-python/spacy-training-1.png"  style="width:90%;"/>
+<img src="../../assets/images/data-analysis-python/spacy-training-1.png"  style="width:90%;"/><!-- {"left" : 0.66, "top" : 3.61, "height" : 1.85, "width" : 8.93} -->
+
 
 Notes:
 
@@ -668,7 +707,8 @@ Notes:
 ## Structure of language data
 
 
-<img src="../../assets/images/data-analysis-python/spacy-language-1.png"  style="width:80%;"/>
+<img src="../../assets/images/data-analysis-python/spacy-language-1.png"  style="width:80%;"/><!-- {"left" : 1.02, "top" : 2.36, "height" : 4.35, "width" : 8.21} -->
+
 
 
 Notes:

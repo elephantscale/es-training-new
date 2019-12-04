@@ -41,6 +41,8 @@ Notes:
 ```python
 assert sum([1,2,3]) == 6 "Error: Must be 6"
 ```
+<!-- {"left" : 0, "top" : 3.37, "height" : 0.57, "width" : 7.94} -->
+
 * Checks if the built-in function `sum` works properly
 
 Notes:
@@ -53,7 +55,8 @@ Notes:
 * In case of any problem with the code we get an error
 
 
-<img src="../../assets/images/python/assertion_error.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/assertion_error.png" style="max-width:70%;"/><!-- {"left" : 0.39, "top" : 2.41, "height" : 1.69, "width" : 9.46} -->
+
 
 Notes:
 
@@ -71,12 +74,17 @@ if __name__ == "__main__":
     testing_sum()
     print("Everything is OK")
 ```
+<!-- {"left" : 0, "top" : 1.86, "height" : 2.03, "width" : 8.61} -->
+
+<br/>
+
 * To execute the Python file:
 
 ```bash
 $ python testing_sum.py
 Everythin is OK
 ```
+<!-- {"left" : 0, "top" : 4.76, "height" : 0.86, "width" : 4.61} -->
 
 Notes:
 
@@ -102,6 +110,7 @@ if __name__ == "__main__":
     testing_sum_tuple()
     print("Everything is OK")
 ```
+<!-- {"left" : 0, "top" : 1.77, "height" : 3.19, "width" : 7.78} -->
 
 Notes:
 
@@ -120,6 +129,10 @@ Traceback (most recent call last):
     assert sum((1, 1)) == 3, "Should be 3"
 AssertionError: Should be 3
 ```
+<!-- {"left" : 0, "top" : 1.63, "height" : 2.32, "width" : 10.11} -->
+
+<br/>
+
 * Here we have just one mistake. What if we have more than one mistake? Answer is test runner
 
 Notes:
@@ -146,6 +159,7 @@ Notes:
 "python.unitTest.pyTestEnabled": false,
 "python.unitTest.nosetestsEnabled": false,
 ```
+<!-- {"left" : 0, "top" : 1.53, "height" : 1, "width" : 6.78} -->
 
 * For `pytest`:
 
@@ -154,6 +168,7 @@ Notes:
 "python.unitTest.pyTestEnabled": true,
 "python.unitTest.nosetestsEnabled": false,
 ```
+<!-- {"left" : 0, "top" : 3.02, "height" : 1, "width" : 6.78} -->
 
 * For `nose`:
 
@@ -162,6 +177,7 @@ Notes:
 "python.unitTest.pyTestEnabled": false,
 "python.unitTest.nosetestsEnabled": true,
 ```
+<!-- {"left" : 0, "top" : 4.45, "height" : 1, "width" : 6.78} -->
 
 ---
 
@@ -209,6 +225,8 @@ class TestingSum(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
+<!-- {"left" : 0, "top" : 1.73, "height" : 4.07, "width" : 9.94} -->
+
 
 Notes:
 
@@ -216,7 +234,8 @@ Notes:
 
 ## The output
 
-<img src="../../assets/images/python/unit_tuple.png" style="width:60%;"/>
+<img src="../../assets/images/python/unit_tuple.png" style="width:60%;"/><!-- {"left" : 1.58, "top" : 2.58, "height" : 3.91, "width" : 7.09} -->
+
 
 
 Notes:
@@ -253,10 +272,14 @@ Notes:
 $ pip install nose2
 $ python -m nose2
 ```
+<!-- {"left" : 0, "top" : 2, "height" : 1.01, "width" : 4.63} -->
+
+<br/>
 
 * Output:
 
-<img src="../../assets/images/python/nose.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/nose.png" style="max-width:70%;"/><!-- {"left" : 1.6, "top" : 4.22, "height" : 3.1, "width" : 7.04} -->
+
 
 Notes:
 
@@ -288,6 +311,7 @@ def testing_sum():
 def testing_sum_tuple():
     assert sum((1, 1)) == 3, "Should be 3"
 ```
+<!-- {"left" : 0, "top" : 1.81, "height" : 1.74, "width" : 7.78} -->
 
 Notes:
 
@@ -308,7 +332,15 @@ Notes:
 
 * Choose `File > New Project` and set the path and the name of the project
 
-<img src="../../assets/images/python/create_pro.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/create_pro.png" style="max-width:70%;"/><!-- {"left" : 2.74, "top" : 2.12, "height" : 3.47, "width" : 4.77} -->
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 * Then right click on the left panel and choose `new` and then `Python File`
 * Name the file `Solver`
@@ -339,6 +371,7 @@ class Solver:
  Solver().demo(2,1,0)
 
 ```
+<!-- {"left" : 0, "top" : 2.11, "height" : 4.36, "width" : 7.61} -->
 
 Notes:
 
@@ -349,7 +382,8 @@ Notes:
 * Click on `Solver` and press `Ctrl+Shift+T` and click on `Create New Test` 
 * Check the `test_demo` and click on `OK`
 
-<img src="../../assets/images/python/test_pycharm.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/test_pycharm.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 3.19, "height" : 4.19, "width" : 8.21} -->
+
 
 
 Notes:
@@ -360,7 +394,8 @@ Notes:
 
 * We need to add an import:
 
-<img src="../../assets/images/python/solver.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/solver.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 2.44, "height" : 4.19, "width" : 8.21} -->
+
 
 
 Notes:
@@ -388,6 +423,8 @@ class TestSolver(TestCase):
  
         self.fail()
 ```
+<!-- {"left" : 0, "top" : 1.85, "height" : 4.65, "width" : 8.94} -->
+
 
 Notes:
 
@@ -397,7 +434,9 @@ Notes:
 
 * Just press `Ctrl+Shift+F10` to run the test
 
-<img src="../../assets/images/python/3rd-party/result.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/result.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 3.09, "height" : 4.1, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -425,7 +464,8 @@ Notes:
 * You can easily click on them to run the test
 * If discovery fails a notification shows up
 
-<img src="../../assets/images/python/3rd-party/codelens.png" style="max-width:70%;"/>
+<img src="../../assets/images/python/codelens.png" style="width:40%;"/><!-- {"left" : 2.54, "top" : 3.09, "height" : 3.56, "width" : 5.18} -->
+
 
 
 Notes:

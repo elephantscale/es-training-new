@@ -850,7 +850,7 @@ map(<function>, <sequence>)
 >>> print(a_square)
 [1, 4, 9, 16, 25]
 ```
-<!-- {"left" : 0, "top" : 4.2, "height" : 1.72, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.08, "height" : 1.72, "width" : 10.25} -->
 
 <br/>
 
