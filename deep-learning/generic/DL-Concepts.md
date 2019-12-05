@@ -29,11 +29,9 @@
     - algorithm makes a prediction from inputs, and compares the prediction with actual (expected) output
  * Sample = instance / observation / input vector / feature vector
  * In the following example, we have 5 data points / samples (instances 1 - 5)
- - And 3 dimensional input / features : Inputs A,B,C
+ - And 3 dimensional input / features: Inputs A,B,C
 
-
- <br />
-
+ <br/>
 
 | Instance   | Input A | Input B | Input C | Output Y |
 |------------|---------|---------|---------|----------|
@@ -42,6 +40,8 @@
 | Instance 3 | a3      | b3      | c3      | y3       |
 | Instance 4 | a4      | b4      | c4      | y4       |
 | Instance 5 | a5      | b5      | c5      | y5       |
+
+<!-- {"left" : 0.25, "top" : 4.86, "height" : 3, "width" : 9.75} -->
 
 ---
 
@@ -67,11 +67,10 @@ Notes:
 
 ## A Restaurant on an Alien Planet
 
+<img src="../../assets/images/generic/3rd-party/group-dinner-1.jpg" alt="XXX image missing" style="width:35%;float:right;"/><!-- {"left" : 7.29, "top" : 1.06, "height" : 1.89, "width" : 2.84} -->
 
-<!-- TODO shiva -->
+<img src="../../assets/images/generic/3rd-party/robot-chef-1.jpg" alt="XXX image missing" style="width:20%;float:right;clear:both;"/><!-- {"left" : 7.91, "top" : 3.1, "height" : 3.07, "width" : 2.22} -->
 
-<img src="../../assets/images/generic/3rd-party/group-dinner-1.jpg" alt="XXX image missing" style="width:35%;float:right;"/>
-<img src="../../assets/images/generic/3rd-party/robot-chef-1.jpg" alt="XXX image missing" style="width:20%;float:right;clear:both;"/>
 
 - Imagine you are at restaurant, but you and the waitstaff don't speak the same language (remember they are aliens!)
 
@@ -90,8 +89,7 @@ Notes:
 
 ## Epoch
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:30%;float:right;"/>
+<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 8.45, "top" : 1.28, "height" : 2.39, "width" : 1.74} -->
 
  * One **Epoch** means when an entire dataset passed forward and backward exactly ONCE
     - Restaurant Example : Entire table's meal is sent back once and re-delivered
@@ -109,11 +107,10 @@ Notes:
 - https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9
 ---
 
-
 ## Batch size
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/epoch-batch-2.png" style="width:45%;float:right;"/>
+<img src="../../assets/images/deep-learning/epoch-batch-2.png" style="width:45%;float:right;"/><!-- {"left" : 2.13, "top" : 1.6, "height" : 1.07, "width" : 5.98} -->
+
 
  * When we are training on large dataset, we can not fit the entire dataset into the network due to memory constraints / processing restraints
 
@@ -126,7 +123,7 @@ Notes:
 
  * Batch size is usually power of 2 (4, 8, 16, 64 ...)
 
- * Alien Restaurant Example : We send back meals in batches of 3, not the entire table.
+ * Alien Restaurant Example: We send back meals in batches of 3, not the entire table.
 
 Notes:  
 - https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/
@@ -186,7 +183,7 @@ for e  in number_of_epochs {
 
  * Iterations = 10 / 4 = 3 (round up!)
 
-<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" style="width:100%;"/><!-- {"left" : 0.7, "top" : 3.6, "height" : 1.46, "width" : 8.85} -->
+<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" style="width:100%;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
 
 
 ---
@@ -226,9 +223,9 @@ for e  in number_of_epochs {
 
 - Enter __backpropagation__
 
+<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/><!-- {"left" : 0.61, "top" : 4.43, "height" : 2.97, "width" : 9.04} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/>
+
 
 ---
 
@@ -261,10 +258,9 @@ Notes:
 
  * Neurons in each layer calculate output
 
+<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:50%;"/><!-- {"left" : 2.04, "top" : 3.19, "height" : 4.18, "width" : 6.17} -->
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:50%;"/>
 
 ---
 
@@ -276,9 +272,9 @@ Notes:
 
  * Then it measures the error (networks output (prediction) vs. the expected output)
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/deep-learning/backpropagation-2.png" style="width:70%;"/>
+<img src="../../assets/images/deep-learning/backpropagation-2.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.01, "height" : 3.06, "width" : 8.21} -->
+
 
 ---
 ## Backpropagation Process : Backward Pass
@@ -288,13 +284,12 @@ Notes:
  * And the network weights are adjusted accordingly to minimize the error
 
 
-<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:60%;"/><!-- {"left" : 1.44, "top" : 3.78, "height" : 4.13, "width" : 7.36} -->
 
-<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:60%;"/>
 
 ---
 
-## Backpropagation : Backward Pass
+## Backpropagation: Backward Pass
 
  * It traverses the network in reverse, computing errors from previous layer
     - until it reaches the input layer
@@ -304,9 +299,9 @@ Notes:
 
  * During the last step algorithm applies 'Gradient Descent' algorithm on connection weights to tweak them
 
-<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/backpropagation-4.png" style="width:45%;"/><!-- {"left" : 2.07, "top" : 5.24, "height" : 3.1, "width" : 6.1} -->
 
-<img src="../../assets/images/deep-learning/backpropagation-4.png" style="width:45%;"/>
+
 
 
 ---
@@ -339,9 +334,8 @@ Notes:
 
  * And finally slightly tweaks the connection weights to reduce the error (Gradient Descent step).
 
-<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:30%;"/><!-- {"left" : 2.93, "top" : 4.44, "height" : 4.06, "width" : 4.38} -->
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:30%;"/>
 
 Notes:  
 - https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c

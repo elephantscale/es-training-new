@@ -323,9 +323,8 @@ Notes:
 
 ## TPU Features
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 8.52, "top" : 0.92, "height" : 1.2, "width" : 1.73} -->
 
  * TPU Use cases:
     - Processing Google Streetview photos (extract street numbers / text)

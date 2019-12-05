@@ -115,7 +115,7 @@ Notes:
 
 ## Vanishing / Exploding Gradient Problems
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="40%" /><!-- {"left" : 6.33, "top" : 1.94, "height" : 2.85, "width" : 3.72} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="40%" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
 
 - Sigmoid and Tanh both suffer from the **Vanishing Gradient** problem.
      - The derivative of a Sigmoid is less than .25
@@ -159,9 +159,7 @@ Notes:
 
 ## Activation Function - Rectified Linear Unit (ReLU)
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="width:40%;float:right" /><!-- {"left" : 6.28, "top" : 1.84, "height" : 3.16, "width" : 3.79} -->
+<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="width:40%;float:right" /><!-- {"left" : 6.53, "top" : 1.68, "height" : 3.04, "width" : 3.65} -->
 
 - `ReLU (z) = max (0, z)`
 - ReLU is Linear when greater than zero, and constant (zero) less than zero
@@ -181,8 +179,7 @@ Notes:
 
 ## Activation Function: Leaky ReLU
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"  /><!-- {"left" : 6.5, "top" : 1.81, "height" : 2.81, "width" : 3.46} -->
+<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"/><!-- {"left" : 6.78, "top" : 2.95, "height" : 2.73, "width" : 3.36} -->
 
 - ReLU isn't perfect; For values at or below zero or values, ReLU derivative is zero
     - Gradient Descent can not be used
@@ -218,10 +215,7 @@ Notes:
 
 - ELU outperformed all other ReLU variants, it trained quicker, and test accuracy was higher too.
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 5.38, "top" : 2.76, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp; 
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 3.18, "top" : 4.6, "height" : 2.83, "width" : 3.9} -->
+<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 0.57, "top" : 5.26, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 5.49, "top" : 4.5, "height" : 3.04, "width" : 4.19} -->
 
 
 ---

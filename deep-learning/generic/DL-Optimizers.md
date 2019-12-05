@@ -17,9 +17,10 @@
 ---
 
 
-## Understanding Optimzers : A Golf Game Analogy  :-)
+## Understanding Optimzers: A Golf Game Analogy  :-)
 
-<img src="../../assets/images/generic/3rd-party/golf-2b.jpg" style="width:50%;float:right;"/>
+<img src="../../assets/images/generic/3rd-party/golf-2b.jpg" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+
 
 - Imagine a golfer is trying to get the ball in the hole
 
@@ -36,10 +37,10 @@
 - Optimizer ('golf coach') gives feedback on first shot
     - _"swing a little to left"_
 
-<!-- TODO Shiva -->
+<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:22%;"/><!-- {"left" : 1.17, "top" : 3.38, "height" : 4.84, "width" : 2.85} --> &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:35%;"/><!-- {"left" : 5.3, "top" : 3.38, "height" : 4.84, "width" : 4.55} -->
 
-<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:22%;"/> &nbsp;
-<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:35%;"/>
+
 
 
 ---
@@ -49,24 +50,21 @@
 - Second shot is aimed at the hole, but stops a little short (_error-2_)
 - Optimizer corrects the swing again
     - _"give it little more power"_
-- And the third swing makes the hole !
+- And the third swing makes the hole!
 
-<!-- TODO Shiva -->
+<img src="../../assets/images/deep-learning/optimizer-4.png" style="width:32%;"/><!-- {"left" : 0.78, "top" : 3.81, "height" : 4.34, "width" : 3.98} --> &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-5.png" style="width:32%;"/><!-- {"left" : 5.49, "top" : 3.81, "height" : 4.34, "width" : 3.98} -->
 
-<img src="../../assets/images/deep-learning/optimizer-4.png" style="width:32%;"/> &nbsp;
-<img src="../../assets/images/deep-learning/optimizer-5.png" style="width:32%;"/>
 
 
 ---
 
 ## Optimizing a Golf Game - Summary
 
-<!-- TODO Shiva -->
+<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:14.4%;"/><!-- {"left" : 0.15, "top" : 3.33, "height" : 2.95, "width" : 1.74} --> &nbsp; &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:23%;"/><!-- {"left" : 1.95, "top" : 3.35, "height" : 2.95, "width" : 2.78} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/optimizer-4.png" style="width:23%;"/><!-- {"left" : 4.8, "top" : 3.33, "height" : 2.95, "width" : 2.71} -->
+ &nbsp; &nbsp; <img src="../../assets/images/deep-learning/optimizer-5.png" style="width:23%;"/><!-- {"left" : 7.36, "top" : 3.35, "height" : 2.95, "width" : 2.71} -->
 
-<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:12%;"/> &nbsp;
-<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:25%;"/>
-<img src="../../assets/images/deep-learning/optimizer-4.png" style="width:25%;"/> &nbsp;
-<img src="../../assets/images/deep-learning/optimizer-5.png" style="width:25%;"/>
 
 ---
 
@@ -77,9 +75,7 @@
 ---
 ## Momentum Optimization
 
-
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/ball-rolling-down.png" alt="XXX image missing" style="width:40%;float:right;"/><!-- {"left" : 3.43, "top" : 4.2, "height" : 2.14, "width" : 3.4} -->
+<img src="../../assets/images/deep-learning/ball-rolling-down.png" alt="XXX image missing" style="width:40%;float:right;"/><!-- {"left" : 5.88, "top" : 2.19, "height" : 2.61, "width" : 4.15} -->
 
 - Imagine a ball rolling down a smooth surface;  it will start slowly, but keep accelerating and quickly picking up momentum until it reaches terminal velocity
 
@@ -94,14 +90,14 @@
 
 - Regular Gradient Descent updates the new weights using learning rate (always constant).  if the local gradient is very small, the updates are small too  
 
-<img src="../../assets/images/deep-learning/Formula-theta-01.png" alt="Formula-theta-01.png" style="background:white;width:30%"/><!-- {"left" : 3.45, "top" : 2.4, "height" : 0.91, "width" : 3.35} -->
+<img src="../../assets/images/deep-learning/Formula-theta-01.png" alt="Formula-theta-01.png" style="background:white;width:30%"/><!-- {"left" : 3.13, "top" : 2.6, "height" : 1.08, "width" : 3.98} -->
 
 
 - Here
     - θ: is current weights
-    - ⍺ : learning rate
-    - J(θ) : cost
-    - ∇(θ) : is derivative
+    - ⍺: learning rate
+    - J(θ): cost
+    - ∇(θ): is derivative
 
 
 Notes:
@@ -111,11 +107,9 @@ Notes:
 
 ## Momentum Optimizer
 
-<!-- TODO Shiva -->
+<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.87, "top" : 2.12, "height" : 0.74, "width" : 3.32} -->
 
-<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.31, "top" : 2.44, "height" : 0.83, "width" : 3.71} -->
-
-<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:30%;float:right;clear:both;"/><!-- {"left" : 7.08, "top" : 3.26, "height" : 0.81, "width" : 2.18} -->
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:30%;float:right;clear:both;"/><!-- {"left" : 7.6, "top" : 2.97, "height" : 0.91, "width" : 2.46} -->
 
 - Momentum takes into account of what previous gradients were
 
@@ -164,14 +158,12 @@ sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 ---
 ## Nesterov Accelerated Gradient
 
-<!-- TODO Shiva -->
+<img src="../../assets/images/deep-learning/Formula-m-02.png" alt="Formula-m-02.png" style="background:white;width:30%;"/><!-- {"left" : 3.13, "top" : 1.27, "height" : 0.73, "width" : 3.99} -->
 
-<img src="../../assets/images/deep-learning/Formula-m-02.png" alt="Formula-m-02.png" style="background:white;width:30%;"/><!-- {"left" : 3.13, "top" : 3.93, "height" : 0.73, "width" : 3.99} -->
-
-<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%;"/><!-- {"left" : 4.17, "top" : 4.82, "height" : 0.71, "width" : 1.92} -->
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%;"/><!-- {"left" : 4.16, "top" : 2.36, "height" : 0.71, "width" : 1.92} -->
 
 
-<img src="../../assets/images/deep-learning/3rd-party/wayne-grekzky.jpg" alt="XXX image missing" style="background:white;width:40%;float:right;" /> <!-- {"left" : 2.83, "top" : 5.76, "height" : 2.24, "width" : 4.6} -->
+<img src="../../assets/images/deep-learning/3rd-party/wayne-grekzky.jpg" alt="XXX image missing" style="background:white;width:40%;float:right;" /> <!-- {"left" : 5.62, "top" : 3.47, "height" : 2.13, "width" : 4.38} -->
 
 - This is an update to Momentum Descent ([Paper by Yurii Nesterov in 1983](https://scholar.google.com/citations?view_op=view_citation&citation_for_view=DJ8Ep8YAAAAJ:hkOj_22Ku90C))
 
@@ -305,14 +297,16 @@ Notes:
 ```python
 optimizer = tf.train.AdamOptimizer(learning_rate=?)
 ```
-<!-- {"left" : 0, "top" : 1.68, "height" : 0.83, "width" : 9.48} -->
+<!-- {"left" : 0, "top" : 1.87, "height" : 0.83, "width" : 9.48} -->
+
+<br/>
 
 * **Keras**
 
 ```python
 keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
 ```
-<!-- {"left" : 0, "top" : 3.77, "height" : 0.45, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4, "height" : 0.45, "width" : 10.25} -->
 
 
 ---

@@ -76,17 +76,17 @@ Notes:
 
 
 ---
+
 ## Our Teaching Philosophy
-
-<!-- TODO shiva -->
-
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;float:right;"/> <!-- {"left" : 2.05, "top" : 3.24, "height" : 4.97, "width" : 6.16} -->
 
  * Emphasis on concepts & fundamentals
 
  * Highly interactive (questions and discussions are welcome)
  
  * Hands-on (learn by doing)
+
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;"/> <!-- {"left" : 2.05, "top" : 3.28, "height" : 4.97, "width" : 6.16} -->
+
 
 
 ---
