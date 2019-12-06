@@ -65,9 +65,7 @@ Notes:
 
 ## 1943: McCulloch Pitts Neural Model
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="width:50%;float:right;" /> <!-- {"left" : 1.97, "top" : 5.77, "height" : 2.77, "width" : 6.31} -->
+<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="width:50%;float:right;" /> <!-- {"left" : 5.98, "top" : 1.27, "height" : 1.81, "width" : 4.11} -->
 
  * McCulloch and Pitts defined a simple model of a Neuron ([paper](https://scholar.google.com/scholar?q=A+Logical+Calculus+of+Ideas+Immanent+in+Nervous+Activity))
 
@@ -95,7 +93,8 @@ Notes:
 <img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 3.33, "height" : 2.98, "width" : 8.84} -->
 
 
-Notes:  
+Notes:
+  
 Source : [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  by  Aurélien Géron (ISBN: 9781492037347)
 
 ---
@@ -163,9 +162,7 @@ Mark I Perceptron at the Cornell Aeronautical Laboratory', hardware implementati
 
 ## Perceptron Operations
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 2.8, "top" : 5.19, "height" : 2.51, "width" : 4.65} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 5.58, "top" : 1.5, "height" : 2.24, "width" : 4.16} -->
 
  * Step 1: Calculate sum of inputs and weights  
 `z = w0 + w1.x1 + w2.x2 + ... + wn.xn`  
@@ -240,17 +237,16 @@ Notes:
  * How do we figure out the weights w1, w2?
     - This is done during training
 
-<!-- TODO shiva -->
 <img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="width:35%;" /><!-- {"left" : 3.18, "top" : 3.18, "height" : 3.96, "width" : 3.9} -->
 
 Notes:
 
 ---
 
-## Quiz : Guessing the Weights
+## Quiz: Guessing the Weights
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:50%;float:right;" />
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:50%;float:right;" /><!-- {"left" : 5.67, "top" : 1.35, "height" : 1.44, "width" : 4.29} -->
+
 
 - Let's revisit our 'concert going' perceptron.  
 - Here is some new training data.
@@ -259,7 +255,6 @@ Notes:
 
 <br clear="all" />
 
-<!-- TODO shiva -->
 
 | Weather | Public Transit | Friend Can Join | Outcome (0 / 1) |
 |---------|----------------|-----------------|-----------------|
@@ -271,12 +266,13 @@ Notes:
 | 0       | 1              | 0               | 0               |
 | 0       | 0              | 1               | 0               |
 
+<!-- {"left" : 3.45, "top" : 5.09, "height" : 3.73, "width" : 6.8, "columnwidth" : [1.25, 1.61, 1.81, 2.13]} -->
+
 ---
 
-## Quiz : Guessing the Weights
+## Quiz: Guessing the Weights
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:50%;float:right;" />
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:50%;float:right;" /><!-- {"left" : 5.37, "top" : 1.03, "height" : 1.59, "width" : 4.74} -->
 
 - Let's start with equal weights for all inputs:  
 weather = 33, public transit = 33, friend = 33
@@ -285,7 +281,6 @@ weather = 33, public transit = 33, friend = 33
 
 <br clear="all" />
 
-<!-- TODO shiva -->
 
 | Weather | Public Transit | Friend Can Join | Total | Predicted (> 60) | Actual |
 |---------|----------------|-----------------|-------|------------------|--------|
@@ -297,12 +292,13 @@ weather = 33, public transit = 33, friend = 33
 | 0 * 33  | 1 * 33         | 0 * 33          | 33    | 0 - ok           | 0      |
 | 0 * 33  | 0  * 33        | 1 * 33          | 33    | 0 - ok           | 0      |
 
+<!-- {"left" : 2.48, "top" : 4.62, "height" : 3.95, "width" : 7.57, "columnwidth" : [1.25, 1.17, 1.58, 1, 1.47, 1.1]} -->
+
 ---
 
-## Quiz : Guessing the Weights
+## Quiz: Guessing the Weights
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:45%;float:right;" />
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:45%;float:right;" /><!-- {"left" : 5.76, "top" : 1.28, "height" : 1.45, "width" : 4.33} -->
 
 - Looks like 'public transit' isn't as important as 'friend'
 - And 'weather' seems important
@@ -322,8 +318,8 @@ weather = 33, public transit = 33, friend = 33
 | 0 * 35  | 1 * 20         | 0 * 30          | 20    | 0 - ok           | 0      |
 | 0 * 35  | 0  * 20        | 1 * 30          | 30    | 0 - ok           | 0      |
 
+<!-- {"left" : 3.85, "top" : 4.65, "height" : 3.91, "width" : 6.41, "columnwidth" : [1.26, 1.14, 1.06, 0.9, 0.98, 1.06]} -->
 
-<!-- TODO shiva -->
 
 ---
 
