@@ -4,7 +4,8 @@
 ## to make pdfs
 ##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    slide-order.txt   pdf
 
+# For regular slides, do
+# $ES_HOME/utils/presentations/slides-assembler.sh slide-order.txt
 
-
-## About
 About-AI-for-Kids.md
+Intro.md
