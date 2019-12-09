@@ -1,0 +1,10 @@
+## Execute these commands from within 'es-reveal-md' docker image
+## To assemble md slides,
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    slide-order.txt
+## to make pdfs
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    slide-order.txt   pdf
+
+
+
+## About
+About-AI-for-Kids.md
