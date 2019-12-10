@@ -1,7 +1,7 @@
 ## To assemble md slides
-##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-assembly-4days.txt
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-assembly-4-days.txt
 ## to make pdfs (supply pdf arg)
-##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-assembly-4days.txt  pdf
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   0-slide-assembly-4-days.txt  pdf
 
 
 ## Course outline
