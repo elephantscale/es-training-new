@@ -4,15 +4,37 @@
 
 ## Activation Functions
 
-- Once we have the output of neuron, what do we do it?
 
-- In our previous example, we defined a step function
+- Let's consider our 'simple perceptron' example
 
-     - If the output was greater than threshold b, `y = 1`,
+- The perceptron sums up all inputs and weights
 
-     - Else, `y = 0`
+- The output of the perceptron  would be   
+__`output = weather * 40 + public * 20 + friend * 20`__
 
-     - Not Differentiable (no gradient, and can't use gradient descent to optimize)
+- Then we defined an __activation function__
+     - If the output was greater than threshold (50) then __`answer = 1`__
+
+     - Else, __`answer = 0`__
+
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/>
+
+---
+
+## Why Activation Functions?
+
+- Without the activation function, the output of the perceptron would be __linear__
+
+- Linear functions, tend to be simple; they can not solve complex problems
+
+- Neural Nets are seen as __'universal function approximators'__
+    - they can compute and learn any function
+
+- So we need __'non linearity'__ so our NNs can compute complex functions
+    - Hence we need __'activation functions'__
+
 
 ---
 
@@ -23,8 +45,7 @@
 - Linear
 - Sigmoid
 - Tanh
-- ReLU
-- Leaky ReLU
+- ReLU (Leaky ReLU ... etc)
 
 <img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 1.1, "top" : 4.91, "height" : 2.75, "width" : 8.05} -->
 
@@ -36,14 +57,14 @@ Notes:
 
 <img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 5.05, "top" : 2.06, "height" : 3.85, "width" : 4.88} -->
 
-* `y = a.X + b`
+* __`y = a.X + b`__
 
 * Differentiable
    - So we *can* use gradient descent
 
 * Commonly used for **Regresssion**
 
-* Linear Regression:
+* E.g. Linear Regression:
    - Single Layer (Linear)
    - Linear Activation Function
 
@@ -55,7 +76,7 @@ Notes:
 
 <img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.58, "top" : 2.26, "height" : 3, "width" : 3.52} -->
 
-- `σ(z) = 1 / (1 + exp(-z))`
+- __`σ(z) = 1 / (1 + exp(-z))`__
 
 - Sigmoid(Logistic) function has well defined non-zero derivative throughout
     - so we can use Gradient Descent
@@ -77,9 +98,9 @@ Notes:
 
 ## Tanh Activation
 
-- `tanh (z) = 2σ(2z) - 1`
+- __`tanh (z) = 2σ(2z) - 1`__
 
-- Tanh is more popular, rather than Sigmoid
+- Recently Tanh is more popular, rather than Sigmoid
 
 - The two are closely related, as tanh is a "stretched" Sigmoid
 
@@ -88,7 +109,7 @@ Notes:
 - Tanh is symmetric around zero and ranges from **`-1 to +1`**   
 (sigmoid ranges from **`0 to +1`**)
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%" /><!-- {"left" : 0.77, "top" : 4.85, "height" : 3.24, "width" : 8.71} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="width:65%" /><!-- {"left" : 0.77, "top" : 4.85, "height" : 3.24, "width" : 8.71} -->
 
 
 Notes:
@@ -103,10 +124,23 @@ Notes:
 
 - As we know backpropagation works by going from output  layer to input layer (in reverse)
     - It propagates the error gradient backwards
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:55%" />
+
+---
+
+## Vanishing/Exploding Gradients Problems
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:35%;float:right;" />
+
 - As it moves through the layers, the gradients gets smaller and smaller as it reaches lower layers
+
 - So the Gradient Descent algorithm will leave lower layer connection weights virtually unchanged
     - and training never converges to a solution
     - this is **vanishing gradients problem**
+
 - In some instances, the opposite would happen, the gradients will get larger and larger
     - so layers will get huge weight updates
     - and the algorithm will be bouncing around, never converging
@@ -144,16 +178,15 @@ Notes:
 ##  Use a Different Activation Function Than Sigmoid
 
 <img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;width:30%;float:right"/><!-- {"left" : 6.64, "top" : 1.63, "height" : 2.67, "width" : 3.49} -->
-* **Problem:**
-- Sigmoid function was the most popular activation function used at that time   
+* **Problem:**  
+    - Sigmoid function was the most popular activation function used at that time   
     - Because sigmoid like functions are found in biological neurons.  (What is good for Mother Nature must be good for us too!)
 
 - How ever, Sigmoid functions tend to 'saturate' at high values (towards the edges), that meant derivatives get close to zero.
     - Leads to vanishing gradients problem
 
 * **Solution:**
-
-- Use other activation functions like ReLU or variants (LeakyReLU)
+    - Use other activation functions like ReLU or variants (LeakyReLU)
 
 ---
 
@@ -161,7 +194,7 @@ Notes:
 
 <img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="width:40%;float:right" /><!-- {"left" : 6.53, "top" : 1.68, "height" : 3.04, "width" : 3.65} -->
 
-- `ReLU (z) = max (0, z)`
+- __`ReLU (z) = max (0, z)`__
 - ReLU is Linear when greater than zero, and constant (zero) less than zero
 - So for positive values, doesn't have a maximum value
 - For values less than zero, differential becomes zero
@@ -187,17 +220,21 @@ Notes:
 
 - **Leaky ReLU** fixes this by introducing a slope for negative values
 
-- `LeakyReLUα(z) = max(αz, z)`  
+- __`LeakyReLUα(z) = max(αz, z)`__  
 `here ⍺ = 0.001` (small value, configurable)
 
 - `α` controls how much the ReLU function 'leaks'
 
 - This leak ensures that the signals never die (zero) and have a chance to wake up during later training phases  
-(Going into coma vs. death
+(Going into coma vs. death)
 
 ---
 
 ## ReLU Variants
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"  /><!-- {"left" : 6.5, "top" : 1.81, "height" : 2.81, "width" : 3.46} -->
 
 - [This paper](https://arxiv.org/pdf/1505.00853.pdf) compares various ReLU implementations
 
@@ -215,7 +252,10 @@ Notes:
 
 - ELU outperformed all other ReLU variants, it trained quicker, and test accuracy was higher too.
 
-<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 0.57, "top" : 5.26, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 5.49, "top" : 4.5, "height" : 3.04, "width" : 4.19} -->
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 5.38, "top" : 2.76, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp;
+<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 3.18, "top" : 4.6, "height" : 2.83, "width" : 3.9} -->
 
 
 ---
@@ -242,29 +282,57 @@ Notes:
 
 - So which ReLU to use? :-)
 
--  `ELU > leaky ReLU (and its variants) > ReLU > tanh > logistic`
+-  __`ELU > leaky ReLU (and its variants) > ReLU > tanh > logistic`__
 
 - If enough compute power is available, use **cross validation** to tweak hyper parameters like α
 
 ---
 
-## Multi-class (non-binary) Outputs
+## Activation Functions for Regression
 
- * So far, our neural networks have had exactly one output neuron.
+<!-- TODO shiva -->
 
-     - For regression problems, the output neuron generates the response variable (a continuous value, e.g.  `stock price = 60.4`).
+<img src="../../assets/images/deep-learning/output-layer-1-regression.png" alt="XXX image missing" style="width:50;%;float:right;" />
 
-     - For classification problems, the output is binary (`0/1`)
+
+ * For regression problems, the output neuron generates the response variable (a continuous value)
+    - e.g.  stock price = 60.4
+
+ * The following can be used as activation Functions    
+    - Linear
+    - Sigmoid / Logistic
+    - Tanh
+    - ReLU variants
+
+
+---
+
+## Actication Function for Binary Classification
+
+<img src="../../assets/images/deep-learning/output-layer-2-binary-classification.png" alt="XXX image missing" style="width:50;%;float:right;" />
+
+- For classification problems, the output is binary (0/1  or True / False)
+    - e.g. is the transaction fraud?  True / False
+    - e.g. will this loan default? True / False
+
+- Again one neuron at the output layer can handle this
+
+- Activation Functions to use:
+    - Sigmoid / Logistic
+
+---
+## Activation Function for Multi-class (non-binary) Outputs
+
+<img src="../../assets/images/deep-learning/output-layer-3-multi-classification.png" alt="XXX image missing" style="width:50;%;float:right;" />
 
  * What about multi-class classification? (non-binary)  
- For example, classifying a digit into one of `0, 1, 2 ... 9`
+    - e.g., classifying a digit into one of `0, 1, 2 ... 9`
 
-     - We need more than one output neuron.
+ * We need more than one output neuron.
 
-     - Exactly one neuron for each class in classification.
+ * Exactly one neuron for each class in classification.
 
  * How do we generate the output classes?
-
      - We can use a function called `Softmax`
 
 Notes:
@@ -273,22 +341,23 @@ Notes:
 ---
 ## Activation Function - Softmax
 
-- The Softmax function converts an array of values to an array of probabilities.
+<img src="../../assets/images/deep-learning/output-layer-4-softmax-activation.png" alt="XXX image missing" style="width:50;%;float:right;" />
 
-- For example a digit classifier can produce the following output
+- Assume we have an image classifier that classifies animals into 4 categories : cat / dog / elephant / lion
 
-| output class | 0   | 1    | 2   | 3    | 4    | 5   | 6   | 7   | 8   | 9   |
-|--------------|-----|------|-----|------|------|-----|-----|-----|-----|-----|
-| probability  | 0.0 | 0.15 | 0.0 | 0.00 | 0.05 | 0.0 | 0.0 | 0.8 | 0.0 | 0.0 |
+- So the final layer will have 4 neurons, so they match the output classes (4)
 
-<!-- {"left" : 0.26, "top" : 2.64, "height" : 1, "width" : 9.73, "columnwidth" : [1.62, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81]} -->
+- And the output layer will have __softmax__ activation function
 
-- The resultant array must add up to 1, because the output enumerates all probabilities
+- The Softmax function produces probabilities for output values.
 
-- We can implement the softmax function on the output, where we have k neurons indicating that we expect to see k number of output classes.
+- In the above example, prediction is __CAT__ as it has the highest probability (80% or 0.8)
 
-Notes:
+<!-- TODO shiva  -->
 
+| Output Class            | Cat  | Dog  | Elephant | Lion |
+|-------------------------|------|------|----------|------|
+| Probability (Total 1.0) | 0.80 | 0.05 | 0.02     | 0.13 |
 
 ---
 ## Softmax Function
@@ -301,7 +370,7 @@ Notes:
 
 
 ---
-## Deciding the loss and activation type based on the task
+## Deciding the Loss and Activation Type Based on the Task
 
 | Classification Type       | Class Mode  | Loss                     | Activation on the last layer |
 |---------------------------|-------------|--------------------------|------------------------------|
@@ -318,16 +387,29 @@ Source :
 
 ---
 
+## Activation Functions Cheatsheet
+
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/3rd-party/activation-functions-cheat-sheet-1.png" style="width:60%;"/>
+
+- source: [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
+
+Notes:
+- source [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
+---
+
 ## Activation Functions - Review
 
 
- * A Sigmoid Function is a mathematical function with a Sigmoid Curve ("S" Curve) and outputs a probability between 0 and 1.
+ * A __Sigmoid Function__ is a mathematical function with a Sigmoid Curve ("S" Curve) and outputs a probability between 0 and 1.
 
- * A rectifier or ReLU (Rectified Linear Unit) is a commonly used activation function that allows one to eliminate negative units in an ANN. It helps solve vanishing/exploding gradient problems associated with other activation functions.
+ * A rectifier or __ReLU__ (Rectified Linear Unit) is a commonly used activation function that allows one to eliminate negative units in an ANN. It helps solve vanishing/exploding gradient problems associated with other activation functions.
 
- * Hyperbolic or tan h function is an extension of logistic sigmoid with output stretching between -1 and +1. It enables faster learning compared to a Sigmoid.
+ * Hyperbolic or __tan__ h function is an extension of logistic sigmoid with output stretching between -1 and +1. It enables faster learning compared to a Sigmoid.
 
- * The Softmax activation function is used to output the probability of the result belonging to certain classes.
+ * The __Softmax__ activation function is used to output the probability of the result belonging to certain classes.
 
 ---
 ## Activation Functions Review
