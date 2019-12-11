@@ -44,6 +44,10 @@ Notes:
 
 ---
 
+# Part 1 - Keras Intro
+
+---
+
 ## Keras
 
 
@@ -51,7 +55,7 @@ Notes:
 * Written in Python
 * Works with [Tensorflow](https://github.com/tensorflow/tensorflow)(from Google), [CNTK](https://github.com/Microsoft/cntk)(from Microsoft) and [Theano](https://github.com/Theano/Theano)
 
-<img src="../../assets/images/deep-learning/keras-architecture.png" alt="XXX image missing" style="background:white;border: 5px solid grey; max-width:100%;"  width="60%"/><!-- {"left" : 2.2, "top" : 3.57, "height" : 4.13, "width" : 5.85} -->
+<img src="../../assets/images/deep-learning/keras-architecture.png" alt="XXX image missing" style="border: 5px solid grey;width:55%;"/><!-- {"left" : 2.2, "top" : 3.57, "height" : 4.13, "width" : 5.85} -->
 
 
 Notes:  
@@ -98,7 +102,7 @@ https://www.quora.com/Why-has-Keras-been-so-successful-lately-at-Kaggle-competit
  * **Works 100% in Python**  
    - No other libraries needed
 
-**"Keras is designed for human beings, not machines"**
+ * ___"Keras is designed for human beings, not machines"___
 
 ---
 
@@ -165,35 +169,22 @@ https://github.com/keras-team/keras/releases
     - Run on[multiple GPUs on Google Cloud cluster](https://cloud.google.com/solutions/running-distributed-tensorflow-on-compute-engine) using distributed Tensorflow
     - Use [dist keras](https://github.com/cerndb/dist-keras) on Spark engine
 
-<img src="../../assets/images/deep-learning/DL-cluster.png" alt="cluster" style="width:50%;"/><!-- {"left" : 1.66, "top" : 5.73, "height" : 2.94, "width" : 6.94} -->
+<img src="../../assets/images/deep-learning/DL-cluster.png" alt="cluster" style="width:45%;"/><!-- {"left" : 1.66, "top" : 5.73, "height" : 2.94, "width" : 6.94} -->
 
-
----
-
-
-## Keras and Other DL Frameworks
-
-<img src="../../assets/images/deep-learning/3rd-party/dl_frameworks_power_scores.png" alt="legos" style="width:70%;"/><!-- {"left" : 1.66, "top" : 1.1, "height" : 4.45, "width" : 6.92} -->
-
-<small>src : https://keras.io/why-use-keras/</small>
-
-
-Notes:
-Image source : https://keras.io/why-use-keras/
 
 ---
 
 ## Keras and Other DL Frameworks
 
-  * Isn't Keras a wrapper for other DL frameworks?
-    - Nope, this is a common (but understandable) misconception.
-    - Keras is an API standard for defining and training machine learning models.
-    - Keras uses back-end engines (like Tensorflow) for execution
-    - Keras is not tied to a specific implementation
+* Isn't Keras a wrapper for other DL frameworks?
+   - Nope, this is a common (but understandable) misconception.
+   - Keras is an API standard for defining and training machine learning models.
+   - Keras uses back-end engines (like Tensorflow) for execution
+   - Keras is not tied to a specific implementation
 
-  * But wait, isn't Tensorflow the most popular framework?
+* But wait, isn't Tensorflow the most popular framework?
 
-  * Newsflash!:
+* Newsflash!:
 [Tensorflow 2.0 is standardizing on Keras](https://medium.com/tensorflow/standardizing-on-keras-guidance-on-high-level-apis-in-tensorflow-2-0-bad2b04c819a)
 
 Notes:
@@ -339,10 +330,6 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
 <!-- {"left" : 0, "top" : 1.15, "height" : 2.51, "width" : 10.25} -->
 
 
----
-
-## Keras Config Explained
-
   * **image_data_format:**  
     - It specifies which data format convention Keras will follow. (keras.backend.image_data_format() returns it.)  
     - For 2D data (e.g. image), "channels_last" assumes (rows, cols, channels) while "channels_first" assumes (channels, rows, cols).
@@ -363,9 +350,6 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
 ```
 <!-- {"left" : 0, "top" : 1.15, "height" : 2.51, "width" : 10.25} -->
 
----
-
-## Keras Config Explained
 
   * **epsilon:**
     - A numeric fuzzing constant used to avoid dividing by zero in some operations.
@@ -380,7 +364,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
 
 ---
 
-# Keras API
+# Part 2 : Keras API
 
 ---
 
@@ -434,6 +418,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
 ## Keras Core Layers: Dense
 
 ```python
+## API
 keras.layers.Dense(
     units,   # number of neurons
     activation=None, # default is linear : f(x)=x
@@ -450,12 +435,10 @@ keras.layers.Dense(
 <!-- {"left" : 0, "top" : 1.73, "height" : 3.64, "width" : 10.25} -->
 
 
----
-## Keras Core Layers: Dense
-
-  * Usage:
-
+<!-- TODO shiva -->
 ```python
+## Usage 
+
 from keras.layers import Dense
 
 # has 32 neurons
@@ -474,12 +457,15 @@ d = Dense(32, input_shape=(16,)))
   * The dropout layer drops out a few neurons or sets them to 0 and reduces computation in the training process.
 
 ```python
+## API 
+
 keras.layers.Dropout(rate, noise_shape=None, seed=None)
 ```
 
-  * Usage:
 
 ```python
+## Usage 
+
 from keras.layers import Dropout
 
 d = Dropout(rate = 0.1,seed=100)
@@ -502,22 +488,22 @@ d = Dropout(rate = 0.1,seed=100)
 ## Optimizer: SGD
 
 ```python
-from keras.optimizers import SGD
 
+# Use default values
+model.compile(optimizer='sgd', loss='mean_squared_error')
+
+# ~~~~~~~~~
+
+# or Customize 
+from keras.optimizers import SGD
 sgd = SGD(lr=0.01,
           decay=1e-6,
           momentum=0.9,
           nesterov=True)  # using Nestrov momentum
+model.compile(optimizer=sgd, loss='mean_squared_error')
 
-model.compile(optimizer='sgd', loss='mean_squared_error')
 ```
 <!-- {"left" : 0, "top" : 1.22, "height" : 2.39, "width" : 10.25} -->
-
-
-
----
-
-## Optimizer: SGD
 
   * Arguments
     - `lr`: float >= 0. Learning rate.
@@ -530,11 +516,18 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 ## Optimizer: Adagrad
 
 ```python
+# use defaut args 
+model.compile(optimizer='adagrad', ...)
+
+# ~~~~~~~~~
+
+# or Customize 
+from keras.optimizers import Adagrad
 adagrad = keras.optimizers.Adagrad(lr=0.01,
                                    epsilon=None,
                                    decay=0.0)
+model.compile(optimizer=adagrad, ...)
 
-model.compile(optimizer='adagrad', ...)
 ```
 <!-- {"left" : 0, "top" : 1.02, "height" : 1.05, "width" : 5.76} -->
 
@@ -549,12 +542,19 @@ model.compile(optimizer='adagrad', ...)
 ## Optimizer: RMSProp
 
 ```python
+# use default values
+model.compile(optimizer='rmsprop', ...)
+
+# ~~~~~~~~~
+
+# or customize
+from keras.optimizers import RMSprop
 rmsprop = keras.optimizers.RMSprop(lr=0.001,
                                    rho=0.9,
                                    epsilon=None,
                                    decay=0.0)
+model.compile(optimizer=rmsprop, ...)
 
-model.compile(optimizer='rmsprop', ...)
 ```
 <!-- {"left" : 0, "top" : 0.99, "height" : 1.07, "width" : 5.05} -->
 
@@ -569,14 +569,20 @@ model.compile(optimizer='rmsprop', ...)
 ## Optimizer: Adam
 
 ```python
+# use default values
+model.compile(optimizer='adam', ...)
+
+# or customize
+from keras.optimizers import Adam
 adam = keras.optimizers.Adam(lr=0.001,
                              beta_1=0.9,
                              beta_2=0.999,
                              epsilon=None,
                              decay=0.0,
                              amsgrad=False)
+model.compile(optimizer=adam, ...)
 
-model.compile(optimizer='adam', ...)
+                             
 ```
 <!-- {"left" : 0, "top" : 1.37, "height" : 3.09, "width" : 10.25} -->
 
