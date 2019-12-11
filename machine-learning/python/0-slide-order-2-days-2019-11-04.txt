@@ -10,13 +10,13 @@ About-Machine-Learning-With-Python-Class-2-days-2019-11-04.md
 ../generic/Machine-Learning-Primer.md
 
 ## Python basics
-../../data-analysis-python/slides/PYTHON-NumPy.md
-../../data-analysis-python/slides/PYTHON-Pandas.md
+../../python/slides/PYTHON-NumPy.md
+../../python/slides/PYTHON-Pandas.md
 
 ## Basic Text Python
 ../../machine-learning/generic/Text-Analytics-Intro.md
-../../data-analysis-python/slides/PYTHON-Text-NLTK.md
-../../data-analysis-python/slides/PYTHON-Text-Spacy.md
+../../python/slides/PYTHON-Text-NLTK.md
+../../python/slides/PYTHON-Text-Spacy.md
 ../../machine-learning/generic/Text-Analytics-Vectorization.md
 
 ## word2vec
@@ -28,7 +28,7 @@ About-Machine-Learning-With-Python-Class-2-days-2019-11-04.md
 ../generic/ML-Concepts-All.md
 
 ## Introducing SciKit Learn
-../../data-analysis-python/slides/PYTHON-Sklearn.md
+../../python/slides/PYTHON-Sklearn.md
 
 ## Algorithms
 Regressions-Python.md

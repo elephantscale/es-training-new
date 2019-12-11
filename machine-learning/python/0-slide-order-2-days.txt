@@ -10,15 +10,15 @@ About-Machine-Learning-With-Python-Class-2-days.md
 ../generic/Machine-Learning-Primer.md
 
 ## Python basics
-../../data-analysis-python/slides/PYTHON-NumPy.md
-../../data-analysis-python/slides/PYTHON-Pandas.md
+../../python/slides/PYTHON-NumPy.md
+../../python/slides/PYTHON-Pandas.md
 
 ## ML
 ../generic/Data-Exploration.md
 ../generic/ML-concepts.md
 
 ## Introducing SciKit Learn
-../../data-analysis-python/slides/PYTHON-Sklearn2.md
+../../python/slides/PYTHON-Sklearn2.md
 
 ## Algorithms
 Regressions-Python.md
