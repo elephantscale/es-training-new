@@ -88,7 +88,7 @@ Notes:
 
 ---
 
-## Neuron operations
+## Neuron Operations
 
 <img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 3.33, "height" : 2.98, "width" : 8.84} -->
 
@@ -512,80 +512,99 @@ Notes:
 
 ---
 
+# Sizing Neural Networks
 
-## The single-layer network
+---
+## Sizing a Regression  Network
 
- * We can combine perceptron inputs to a feedforward neural network.
+<!-- TODO shiva -->
 
- * We have an input-layer and an output layer
+| Bedrooms (input 1 | Bathrooms (input 2) | House Size (input 3) | Lot Size (input 4) | Sale Price (in thousands) |
+|-------------------|---------------------|----------------------|--------------------|---------------------------|
+| 2                 | 1                   | 1200                 | 2000               | 229                       |
+| 3                 | 1                   | 1500                 | 3500               | 319                       |
+| 4                 | 2                   | 2300                 | 5000               | 599                       |
 
-     - Why do we call it single layer? (When there is input + output)
+<br clear="all" />
 
-     - Because the input layer only passes through the inputs.
+<img src="../../assets/images/deep-learning/network-sizing-1-regression.png" alt="XXX image missing" style="width:50%;float:right;"/>
 
- * What is the size of the input and output layers?
 
-     - Input: number of features variables from input
+- Input layer sizing:
+  - Match the number of input dimensions = 4 (bedrooms, bathrooms, house size, lot size)
+- Output layer sizing:
+  - Only one neuron 
+  - As we are predicting a number (sale price)
+- Hidden layer sizing:
+  - flexible
 
-     - Output: 1 neuron (unless we use a softmax output layer)
+---
+
+## Sizing Binary Classification Network
+  
+<!-- TODO shiva -->
+
+| Income (input 1) | Credit Score (input 2) | Current Debt (input 3) | Loan Approved (output) |
+|------------------|------------------------|------------------------|------------------------|
+| 40,000           | 620                    | 0                      | 0                      |
+| 80,000           | 750                    | 100,000                | 1                      |
+| 100,000          | 800                    | 50,000                 | 1                      |
+
+<img src="../../assets/images/deep-learning/network-sizing-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;"/>
+
+- Input layer sizing 
+  -  Same as input dimensions = 3 (input, credit score, debt)
+  
+- Output layer sizing
+    - one neuron for 0/1 output
+    
+- Hidden layer  sizing 
+  - flexible
+    
+---
+
+## Sizing Multi Classification Network 
+
+<img src="../../assets/images/deep-learning/LowLevel-mnist.jpeg" alt="XXX image missing" style="width:33%;float:right;"/>
+
+<img src="../../assets/images/deep-learning/network-sizing-3-multi-classification.png" alt="XXX image missing" style="width:50%;float:right;clear:both;"/>
+
+- Input layer sizing 
+  - Match input dimensions
+  - 784 = 28 x 28 pixels
+  
+- Output layer sizing 
+  - Softmax layer 
+  - one neuron per output class 
+  - 10 (one for each digit; 0, 1, ..8,9)
+  
+- Hidden layer sizing 
+  - flexible
+
+---
+
+
+
+## Softmax Output
+
+| Output Class | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|-------------------------------|-----|-----|------|------|-----|-----|-----|-----|------|-----|
+| Probability <br/> (Total 1.0) | 0.0 | 0.0 | 0.02 | 0.95 | 0.0 | 0.0 | 0.0 | 0.0 | 0.03 | 0.0 |
+
+- The Softmax function produces probabilities for output values.
+
+- Here output is predicted as '3' as it has the highest probability (95%)
+
+- The resultant array must add up to 1, because the output enumerates all probabilities
+
 
 Notes:
 
 
-
----
-
-## Multi-class (non-binary) Outputs
-
- * So far, our neural networks have had exactly one output neuron.
-
-     - For regression problems, the output neuron generates the response variable (a continuous value).
-
-     - For classification problems, the output is binary
-
- * What about multi-class classification? (non-binary)
-
-     - We need more than one output neuron.
-
-     - Exactly one neuron for each class in classification.
-
- * How do we generate the output classes?
-
-     - We can use a function called Softmax
-
-Notes:
-
-
----
-
-## Softmax output
-
- * The Softmax function converts an array of values to an array of probabilities.
-
-     - For example `[1, 2, 3, 4, 1, 2, 3] => [.024, .064, .175, .475, .024, .064, .175]`
-
-     - The resultant array must add up to 1, because the output enumerates all probabilities
-
- * We can implement the softmax function on the output, where we have k neurons indicating that we expect to see k number of output classes.
-
-Notes:
-
-
----
-
-## Softmax Function
-
-
-<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="Softmax-Function.png" style="background:white;width:80%;"/><!-- {"left" : 0.38, "top" : 1.5, "height" : 4.5, "width" : 9.48} -->
-
-
-Notes:
-
 ---
 
 
-
-## Feedforward Network Sizing
+## Feedforward Network Sizing Summary
 
 * __Input Layer__
    - Size: Equal to Number of Input Dimensions
@@ -597,9 +616,9 @@ Notes:
    - Size depends on training sample, input features, outputs
 * __Output Layer__
    - Regression: 1 single neuron (continuous output)
-   - Binomial Classification: 1 single neuron (binary output)
-   - Multinomial Classification: Softmax Layer
-   - Size: 1 node per class label
+   - Binary Classification: 1 single neuron (binary output)
+   - Multi-class Classification: Softmax Layer
+     - Size: 1 node per class label
 
 Notes:
 
