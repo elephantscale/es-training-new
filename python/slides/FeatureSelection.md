@@ -51,7 +51,7 @@ df.corr()[['label']]
 label  1.000000
 
 ```
-<!-- {"left" : 0, "top" : 2.13, "height" : 2.9, "width" : 4.11} -->
+<!-- {"left" : 0, "top" : 2.40, "height" : 2.9, "width" : 4.11} -->
 
 <br/>
 <br/>
@@ -64,9 +64,11 @@ Notes:
 ## Correlation Can Lie!
 
  * Highly correlated with outcome is generally a good thing.
+
  * But, correlation can lie to you!
    - High correlation isn't necessarily signifiant
    - Need to look at p-value and f-value
+
  * Low correlation features can still be *empirically* predictive
   - It means that including the feature gives you better results than not including it.
 

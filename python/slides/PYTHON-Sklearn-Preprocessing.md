@@ -167,7 +167,7 @@ Notes:
 
 ## One-Hot Encoder in SKLearn
 
-<!-- {TODO Tim} -->
+<!--TODO Tim-->
 
 ```python
 from sklearn.preprocessing import OneHotEncoder

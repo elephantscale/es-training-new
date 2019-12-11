@@ -620,7 +620,7 @@ Notes:
 | iqr()      | Computes the IQR of the data  along the specified axis                             |
 | zscore()   | Computes zscore of each  value relative to the sample  eman and standard  deviation|
 
-<!-- {"left" : 0.20, "top" : 2.25, "height" : 5.65, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
+<!-- {"left" : 0.25, "top" : 2.25, "height" : 5.65, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
 
 Notes:
 

@@ -165,19 +165,15 @@ Notes:
 ## About You And Me
 
 
- * About Instructor
+* About Instructor
 
- * About you
+* About you
 
-     - Your Name
-
-     - Your background (developer, admin, manager,...)
-
-     - Technologies you are familiar with
-
-     - Familiarity with Python (scale of 1 – 4 ;  1 – new,   4 – expert)
-
-     - Something non-technical about you!(favorite ice cream flavor / hobby...)
+   - Your Name
+   - Your background (developer, admin, manager,...)
+   - Technologies you are familiar with
+   - Familiarity with Python (scale of 1 – 4 ;  1 – new,   4 – expert)
+   - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.02, "top" : 5.93, "height" : 2.02, "width" : 2.28} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.33, "top" : 5.96, "height" : 1.95, "width" : 3.59} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.94, "top" : 5.93, "height" : 2.02, "width" : 2.28} -->
  
