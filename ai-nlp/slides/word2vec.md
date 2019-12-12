@@ -360,6 +360,56 @@ Notes:
 ---
 
 
+## Doc2Vec 
+ * Word2Vec gives us a vector representation of a word.
+ * But what about a **document**?
+ * Word2vec is not really suitable for anything but the smallest documents (e.g. tweets)
+ * Because it will store 100-1000 dimensional vector for each word!
+   - too much information!
+ * On eSolution is Paragraph Vectors (PV) better known as Doc2Vec
+ * Published by Quoc Le and Tomas Mikolov from Google (as Paragraph Vectors)
+ * [Link](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
+
+
+---
+
+
+## Deep Learning Approaches
+  * Sometimes we use a deep learning approach instead of PV/Doc2Vec
+  * Treat the paragraph / document as a sequence of the word vectors
+  * Then use a neural network to create a document vector from the word vector
+  * THe advantage of htis is that you can make a neural network very well-tuned to your particular problem and dataset.
+ 
+
+---
+
+## GloVE
+ * GloVE is another Word (not document) vectorization approach.
+ * Alternative to Word2Vec
+ * Uses the whole-document approach rather than a limited neighborhood approach as word2vec does.
+ * [Paper](https://nlp.stanford.edu/pubs/glove.pdf)
+
+---
+
+## Sense2Vec
+
+ * A better word2vec for some applications
+ * Query vectors for multi-word phrases based on part-of-speech tags and entity labels.
+ * spaCy pipeline component and extension attributes.
+ * Fully serializable so you can easily ship your sense2vec vectors with your spaCy model packages.
+ * Optional caching of nearest neighbors for super fast "most similar" queries.
+ * Train your own vectors using a pretrained spaCy model, raw text and GloVe or Word2Vec via fastText (details).
+ * Prodigy annotation recipes for evaluating models, creating lists of similar multi-word phrases and converting them to match patterns, e.g. for rule-based NER or to boostrap NER annotation (details & examples).
+ * [Demo](https://explosion.ai/demos/sense2vec)
+
+ 
+---
+
+  
+
+
+
+
 # Backup Slides
 
 ---

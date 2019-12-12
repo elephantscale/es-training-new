@@ -462,4 +462,179 @@ Notes:
 
 ---
 
+## Dimensionality Reduction of Document-Term Matrix
+
+ * The Document-Term matrix is usually *very* dimensinoal
+   - Typically 10k to millions of dimensions!!
+   - With all n-gram combinations it could be 10s-100s of Millions of dimensions!
+   - every instance of a word or n-gram is a dimension
+   - We usually use a sparse vector / sparse matrix representation
+ * Can be filtered somewhat to exclude very uncommmon words or n-grams
+   - but some uncommon word can be very important
+   - sometimes in fact the most important term is an uncommon one.
+ * Can we reduce dimensionality of this huge matrix?
+   - Yes!
+   - We can apply dimensionality Reduction
+
+---
+
+## PCA
+
+  * PCA is effective at reducing dimensions
+  * It is formed by taking the SVD of the Covariance matrix of the dimenisions
+  * But PCA works better for dense dimensions of numeric data.
+  * Natural Language has sparse dimensions of TF-IDF scores
+  * PCA is not an ideal fit
+
+--- 
+
+## Latent Semantic Indexing
+  * Latent Semantic Indexing, aka Latent Semantic Analysis
+    - Latent means hidden: it means we are trying to find "hidden" features that help us predict the data
+    - the numbe of latent features is defined by the "rank"
+    - Semantic means grammatical context.   But LSI is using a Bag-of-Words representation which is not semantic!!?
+    - But the idea is that using a lot of data, we can infer relationships about the meaning
+  * LSI is a low-rank **approximation** of the original matrix.
+    - Wait... isn't approximation bad?
+    - wouldn't we rather get exact representation?
+  * Not necessarily!
+    - The original matrix is very noisy
+    - LSI can help "de-noisify" the matrix
+
+  * [Video Link](https://upload.wikimedia.org/wikipedia/commons/transcoded/7/70/Topic_model_scheme.webm/Topic_model_scheme.webm.480p.vp9.webm#t=00:00:01,00:00:17.600)
+
+---
+
+## How LSI works
+  * LSI uses the Singular Value Decomposition to find two matrices U and V
+    * U is the tall-skinny matrix
+    * V is the short-fat matrix
+  * U and V are dense matrices of a pre-defined **rank**
+    - the **rank** is the numbe of columns in **U** -- the tall skinny
+    - the **rank** is the number of rows in **V** -- the short fat
+  * Usually, we use an **approximation** of the SVD such as ALS
+   - Alternating Least Squares
+  * The result is that we get 2 **dense** matrices
+
+---
+
+
+## Alternating Least Squares
+
+
+ * ALS is an algorithm to figure out how users / items relate to each other
+
+ * Similar to 'dimensionality reduction'
+
+     - Trying to reduce huge amount of vectors (users x items) into smaller size, while still keeping the relevant information
+
+     - PCA!
+
+ * Done by  **'matrix factorization** '
+
+ * We take a large users x items matrix and figure out 'hidden' (latent) features that results in much smaller matrix and explains the relationship
+
+Notes:
+
+
+
+---
+
+## Matrix Refactorization Explained
+
+
+ * R is matrix is  M (users)  x N (items)
+
+     - Can be really large  - 100 million users x 1 million items
+
+ * Factorize R into two smaller matrices ,
+
+     - U : latent vectors for each user , MxK dimension,
+
+     - V : latent vectors for each item,  KxN dimension
+
+ * Multiplying U and V will  **approximately**  give R
+
+ * But matrices U & V are  **dense** !  So can be stored effectively
+
+---
+
+## Matrix Refactorization Explained
+
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:90%;"/><!-- {"left" : 0.4, "top" :
+ 2.16, "height" : 5.32, "width" : 9.45} -->
+
+
+Notes:
+
+
+
+---
+
+## Singular Value Decomposition
+
+
+ * We can also perform the Singular Value Decomposition of the Matrix
+
+ * Singular Value Decomposition finds 2 Matrices: U and V
+
+     - U dot V = rating.
+
+ * Problem: In most real-world cases the SVD is very hard!
+
+ * Typical Use case:
+
+     - Millions rows times Millions of Columns!
+
+ * Can we approximate the SVD?
+
+Notes:
+
+
+
+---
+
+## ALS
+
+ * To solve matrices U and V, we can utilize
+     - SVD : Requires inverting a very large matrix -> computationally expensive
+     - Apply ALS to approximate it
+ * ALS we only need to solve one vector at time -> parallelizable !!
+ * This is why Spark ML implements ALS
+ * Basic algorithm:
+     - Randomly initialize U and solve for V
+     - Then go back and solve U using our solution for V
+     - Keep iterating back and forth until we converge and approximate R as best as we can
+ * After the matrix work is done, we can simply take the dot product of U and V to see what a predicted rating would be for a (user, item) combination
+
+Notes:
+
+
+---
+
+## Result of LSI
+
+ * LSI gives us an approximation the the TF-IDF matrix that is both:
+   - much smaller
+   - usually more accurate for new data
+ * LSI is very effective at problems like:
+   - Document Similarity
+   - Document Categorization
+   - Clustering
+   - Keyword extraction 
+ 
+ * Problems with LSI
+   - bag-of-words limitations
+   - TF-IDF limitations (thouguh we don't necessarily need to use tf-idf)
+
+---
+
+## Going Beyond TF-IDF
+ * TF-IDF is surprisingly effective
+ * But by today's standards other approaches are better:
+    - Word2Vec / Doc2Vec
+    - Deep Learning methods: ULM-Fit, ELMO, BERT, etc.
+
+---
+
 # Next : Word2Vec
