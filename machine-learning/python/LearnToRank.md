@@ -80,6 +80,35 @@
 
 ---
 
+## Pointwise approaches
+ * Look at a single document at a time in cost funcitno
+ * Train a regressor and predict the relevance of tehquery
+ * Pointwise approaches look at a single document at a time in the loss function. 
+ * Standard Regression / Classfification approaches work well.
+
+--
+
+
+## Pairwise approaches
+ * Looks at two documents (a pair) in the cost / loss funciton
+ * Binary Classification (order is correct, or order is incorrect)
+ * Easier approach than pointwise because classification is easier to get right than regression
+ * Examples:
+   - RankNet
+   - LambdaRank
+   - LambdaMART
+
+---
+
+## Listwise approaches
+  * Try to rank the entire list and come up with an optimal ordering
+  * Two approaches: 
+     - Direct optimization of IR measures such as NDCG. E.g. SoftRank [3], AdaRank [4]
+     - Minimize a loss function that is defined based on understanding the unique properties of the kind of ranking you are trying to achieve. E.g. ListNet [5], ListMLE 
+  * Complex 
+
+---
+
 ## Example: Home Depot Data
   * Data has example search queries and a "relevance score"
   * Relevance Score was annotated by humans, therefore as supervised regression problem
