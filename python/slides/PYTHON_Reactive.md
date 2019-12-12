@@ -221,7 +221,7 @@ f.set_result(42) # this is done asynchronously in a real code
 print("Future is done: {}".format(f.done()))
 print("result is: {}".format(f.result())
 ```
-<!-- {"left" : 0, "top" : 1.31, "height" : 1.92, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.55, "height" : 1.92, "width" : 10.25} -->
 
 <br/>
 
@@ -248,7 +248,7 @@ async def wait(delay):
         delay, now.hour, now.minute, now.second))
     return True
 ```
-<!-- {"left" : 0, "top" : 1.11, "height" : 2.24, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.2, "height" : 2.24, "width" : 10.25} -->
 
 <br/>
 

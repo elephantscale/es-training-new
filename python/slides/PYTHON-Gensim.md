@@ -171,7 +171,7 @@ Document 1 : the brown dog likes the white cow
 Document 2 : the grass is brown
 Document 3 : the spotted cow likes green grass
 ```
-<!-- {"left" : 0.0, "top" : 2.83, "height" : 1.04, "width" : 8.44} -->
+<!-- {"left" : 0.0, "top" : 1.25, "height" : 1.04, "width" : 8.44} -->
 
 
 | term	 | d1   | d2   |d3   | Document rank |
