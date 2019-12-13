@@ -1,6 +1,7 @@
 # Zookeeper Primer
 
-<img src="../../assets/images/logos/zookeeper-logo-1.png" style="max-width:15%;"/>
+<img src="../../assets/images/logos/zookeeper-logo-1.png" style="max-width:15%;"/><!-- {"left" : 2.75, "top" : 5.85, "height" : 2.92, "width" : 2.05} -->
+
 
 
 ---
@@ -11,10 +12,9 @@
 
 <img src="../../assets/images/kafka/3rd-party/cpu-1.png"  style="width:20%;float:right;"/><!-- {"left" : 8.13, "top" : 1.11, "height" : 1.71, "width" : 1.85} -->
 
-
  * 1990s we had single core processors
      - Programs ran in single 'thread' mode
-     - The game was faster and faster clock speeds  (200MHZ ! ...)
+     - The game was faster and faster clock speeds (200MHZ ! ...)
 
 <br clear="all"/>
 

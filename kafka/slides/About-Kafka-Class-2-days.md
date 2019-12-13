@@ -1,12 +1,13 @@
 # Introduction to Apache Kafka
 
-<img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" />
+<img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
+
 
 
 ---
 ## Workshop Overview - 2 Days
 
-<img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/><!-- {"left" : 7.73, "top" : 1.2, "height" : 2.39, "width" : 2.19} -->
+<img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/><!-- {"left" : 7.39, "top" : 1.2, "height" : 2.76, "width" : 2.53} -->
 
 
  * Day 1
@@ -101,7 +102,7 @@ By the end of the class... .
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby  etc.)
 
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 5.22, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 5.24, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 5.22, "height" : 1.76, "width" : 1.99} -->
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 0.85, "top" : 5.47, "height" : 2.1, "width" : 2.38} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.25, "top" : 5.49, "height" : 2.03, "width" : 3.74} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 7.02, "top" : 5.47, "height" : 2.1, "width" : 2.38} -->
 
 
 Notes:
@@ -116,7 +117,7 @@ Notes:
 
  * Kafka - The Definitive Guide
 
-<img src="../../assets/images/kafka/3rd-party/kafka-book-9781491936160.jpg" /><!-- {"left" : 4.02, "top" : 2.53, "height" : 2.91, "width" : 2.22} -->
+<img src="../../assets/images/kafka/3rd-party/kafka-book-9781491936160.jpg" /><!-- {"left" : 3.78, "top" : 2.78, "height" : 3.52, "width" : 2.68} -->
 
 
 Notes:

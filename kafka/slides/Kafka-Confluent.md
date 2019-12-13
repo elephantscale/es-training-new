@@ -36,15 +36,15 @@ Notes:
 
  *  **Overview**: Download, install and start Confluent
 
- *  **Builds on previous labs**: None
+ *  **Builds on previous labs:** None
 
- *  **Approximate Time**: 30 - 40 mins
+ *  **Approximate Time:** 30 - 40 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - Please follow: lab 8.1
 
- *  **To Instructor**: 
+ *  **To Instructor:**
 
 
 Notes: 
@@ -68,7 +68,8 @@ Notes:
 
  * Consumers read bytes from Kafka and convert them back to Objects
 
-<img src="../../assets/images/kafka/Deserializers.png" alt="Deserializers.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Deserializers.png" alt="Deserializers.png" style="width:70%;"/><!-- {"left" : 0.62, "top" : 3.61, "height" : 2.51, "width" : 9} -->
+
 
 Notes: 
 
@@ -79,16 +80,16 @@ Notes:
 
 ## Standard Kafka SerDe
 
+<img src="../../assets/images/kafka/3rd-party/Standard-Kafka-SerDe-2.png" alt="Standard-Kafka-SerDe-2.png"style="width: 30%;float:right;"/><!-- {"left" : 6.94, "top" : 1.05, "height" : 5.69, "width" : 3.19} -->
 
- * Kafka comes with Serializers /<br/> Deserializers for standard Java types
+ * Kafka comes with Serializers Deserializers for standard Java types
 
- * Can be found in package<br/>**org.apache.kafka.common.serialization** 
+ * Can be found in package **org.apache.kafka.common.serialization** 
 
- * We need to provide SerDe<br/>classes for custom types
+ * We need to provide SerDe classes for custom types
 
  * Can use Avro  
 
-<img src="../../assets/images/kafka/3rd-party/Standard-Kafka-SerDe-2.png" alt="Standard-Kafka-SerDe-2.png"style="width: 30%; position:relative; top:-500px; left:500px;"/>
 
 Notes: 
 
@@ -106,6 +107,7 @@ Notes:
 |-------	|-------	|---------	|
 | 12345 	| Click 	| YES     	|
 
+<!-- {"left" : 0.25, "top" : 1.79, "height" : 1, "width" : 9.75} -->
 
 
  * Version 2
@@ -113,6 +115,8 @@ Notes:
 | Id    	| Type  	| Success 	| Message        	|
 |-------	|-------	|---------	|----------------	|
 | 12345 	| Click 	| YES     	| Page not found 	|
+
+<!-- {"left" : 0.25, "top" : 3.67, "height" : 1, "width" : 9.75} -->
 
  * Q: How will the consumer process this?
 
@@ -162,6 +166,7 @@ Notes:
 ]
 }
 ```
+<!-- {"left" : 0, "top" : 1.35, "height" : 3.19, "width" : 7.94} -->
 
 ```text
 // version 2
@@ -175,6 +180,7 @@ Notes:
      {"name": "message", "type": "string"}  // <- new attribute
   ]}
 ```
+<!-- {"left" : 0, "top" : 4.99, "height" : 2.93, "width" : 10.25} -->
 
 
 Notes: 
@@ -187,7 +193,8 @@ Notes:
 ## Schema Registry
 
 
-<img src="../../assets/images/kafka/Schema-Registry.png" alt="Schema-Registry.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Schema-Registry.png" alt="Schema-Registry.png" style="width:70%;"/><!-- {"left" : 0.4, "top" : 2.75, "height" : 3.57, "width" : 9.44} -->
+
 
 Notes: 
 
@@ -271,17 +278,17 @@ Notes:
 ## Lab 8.2: AVRO Schema Lab
 
 
- *  **Overview**: Create a schema for clickstream data
+ *  **Overview:** Create a schema for clickstream data
 
- *  **Builds on previous labs**: Lab 4
+ *  **Builds on previous labs:** Lab 4
 
- *  **Approximate Time**: 30 - 40 mins
+ *  **Approximate Time:** 30 - 40 mins
 
- *  **Instructions**: 
+ *  **Instructions:** 
 
      - Please follow: lab 8.2
 
- *  **To Instructor**: 
+ *  **To Instructor:** 
 
 
 Notes: 
@@ -319,7 +326,9 @@ Notes:
 
 ## KSQL Architecture
 
-<img src="../../assets/images/kafka/KSQL-Architecture-01.png" alt="KSQL-Architecture-01.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/KSQL-Architecture-01.png" alt="KSQL-Architecture-01.png" style="width:70%;"/><!-- {"left" : 0.68, "top" : 2.15, "height" : 4.77, "width" : 8.89} -->
+
+
 
 
 Notes: 
@@ -359,7 +368,8 @@ Notes:
 ## KSQL and Kafka Streams
 
 
-<img src="../../assets/images/kafka/KSQL-Kafka-Streams.png" alt="KSQL-Kafka-Streams.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/KSQL-Kafka-Streams.png" alt="KSQL-Kafka-Streams.png" style="width:70%;"/><!-- {"left" : 0.44, "top" : 2.68, "height" : 4.28, "width" : 9.36} -->
+
 
 Notes: 
 
@@ -404,6 +414,7 @@ Notes:
        WITH  (KAFKA_TOPIC= clickstream', 
        VALUE_FORMAT='DELIMITED', KEY='domain');
 ```
+<!-- {"left" : 0, "top" : 1.94, "height" : 1.37, "width" : 10.25} -->
 
  * Create a KSQL Table from a topic
 
@@ -413,6 +424,7 @@ Notes:
        WITH  (KAFKA_TOPIC= clickstream', 
        VALUE_FORMAT= 'DELIMITED', KEY='domain');
 ```
+<!-- {"left" : 0, "top" : 3.85, "height" : 1.37, "width" : 10.25} -->
 
 Notes: 
 
@@ -426,20 +438,24 @@ Notes:
 
  * Aggregations in KSQL always result in a KSQL Table
 
-     ```text
+```text
       CREATE TABLE click_counts AS
           SELECT domain, count(*) FROM clickstream 
               GROUP BY domain;
 ```
 
+<!-- {"left" : 0, "top" : 2.12, "height" : 1.22, "width" : 8.94} -->
+
+
  * Aggregate over a tumbling window
 
-     ```text
+```text
      CREATE TABLE clicks_per_min AS
          SELECT domain, count(*) FROM clickstream
            WINDOW TUMBLING (SIZE 60 SECONDS)
              GROUP BY domain;
 ```
+<!-- {"left" : 0, "top" : 3.71, "height" : 2.32, "width" : 8.94} -->
 
 Notes: 
 
@@ -451,13 +467,13 @@ Compare this code to what was done in the Kafka Streams lab to group by and coun
 ## Lab 8: KSQL Lab
 
 
- *  **Overview**: Use KSQL to build streams and tables
+ *  **Overview:** Use KSQL to build streams and tables
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:**
 
- *  **Approximate Time**: 30 - 40 mins
+ *  **Approximate Time:** 30 - 40 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      - Do Lab 8.3
 

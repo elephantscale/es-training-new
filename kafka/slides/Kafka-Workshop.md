@@ -184,9 +184,9 @@ Notes:
 
  * Messages - AVRO data format
 
-     - View:    user_id, video_id, time_of_view, time_spent
+     - View: user_id, video_id, time_of_view, time_spent
 
-     - Rating:  user_id, video_id, time_of_rating, rating
+     - Rating: user_id, video_id, time_of_rating, rating
 
      - Comment: user_id, video_id, time_of_comment, comment
 
@@ -253,8 +253,9 @@ Example JSON data for Views:
   "time_spent_in_secs": 3.5
 }
 ```
-<!-- {"left" : 0, "top" : 1.21, "height" : 2.13, "width" : 7.44} -->
+<!-- {"left" : 0, "top" : 1.29, "height" : 2.13, "width" : 7.44} -->
 
+<br/>
 
  * Create schema at https://www.jsonschema.net/
 
@@ -345,7 +346,7 @@ Notes:
 ## Lab: MyVideos Producers
 
 
- *  **Overview**:
+ *  **Overview:**
 
      - Create Producers for the Rating topics
 
@@ -353,7 +354,7 @@ Notes:
 
  * Bonus: Create producers for the other topics as well!
 
- *  **Approximate time**: 60-90 minutes
+ *  **Approximate time:** 60-90 minutes
 
 
 Notes:
@@ -467,7 +468,7 @@ Notes:
 
 ## Lab: MyVideos Consumers
 
- *  **Overview**:
+ *  **Overview:**
 
      - Implement Statistics app
 
@@ -475,7 +476,7 @@ Notes:
 
         * Create Statistics topic
 
- *  **Approximate time**: 1 hour
+ *  **Approximate time:** 1 hour
 
 
 Notes:

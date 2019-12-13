@@ -74,7 +74,8 @@ Notes:
 ## Metrics Mechanics
 
 
-<img src="../../assets/images/kafka/Metrics-Mechanics.png" alt="Metrics-Mechanics.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/Metrics-Mechanics.png" alt="Metrics-Mechanics.png" style="width:70%;"/><!-- {"left" : 0.7, "top" : 1.53, "height" : 6.01, "width" : 8.86} -->
+
 
 Notes: 
 
@@ -91,15 +92,22 @@ Notes:
 | Easy to setup and maintain                     | Easy to setup and maintain             | Considerable effort required to setup and maintain |
 | May not scale well for large amount of metrics | Good performance                       | Massively scalable                                 |
 | open source                                    | Not open source (Single instance free) | Open source                                        |
-<img src="../../assets/images/logos/graphite-logo.png" alt="graphlte-logo.png" style="width:30%;"/>
-<img src="../../assets/images/logos/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; "/>
-<img src="../../assets/images/logos/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:25%;" />
+
+<!-- {"left" : 0.25, "top" : 1.39, "height" : 3.07, "width" : 9.75} -->
+
+
+
+<img src="../../assets/images/logos/graphite-logo.png" alt="graphlte-logo.png" style="width:30%;"/><!-- {"left" : 0.37, "top" : 5.6, "height" : 0.91, "width" : 2.84} -->
+&nbsp;<img src="../../assets/images/logos/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; "/><!-- {"left" : 3.67, "top" : 5.51, "height" : 1.08, "width" : 2.5} -->&nbsp;<img src="../../assets/images/logos/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:25%;" /><!-- {"left" : 7.13, "top" : 5.77, "height" : 0.56, "width" : 2.74} -->
 
 ---
 
 ## Metrics Visualization - Grafana
 
-<img src="../../assets/images/kafka/3rd-party/Visualization-Choices-5.png" alt="Visualization-Choices-5.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/kafka/3rd-party/Visualization-Choices-5.png" alt="Visualization-Choices-5.png" style="width:50%;float:right;"/><!-- {"left" : 2.01, "top" : 1.33, "height" : 4.01, "width" : 6.23} -->
+
+
+<br/>
 
  * Modern, Open source
 
@@ -119,7 +127,10 @@ Image used under fair use , source: grafana.org
 
 ## Integrated Monitoring Choices - Nagios
 
-<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-6.png" alt="Monitoring-Choices-6.png" style="width:46%;float:right; "/>
+<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-6.png" alt="Monitoring-Choices-6.png" style="width:46%;float:right; "/><!-- {"left" : 2.17, "top" : 1, "height" : 4.14, "width" : 5.92} -->
+
+<br/>
+<br/>
 
  *  [**Nagios**](https://www.nagios.org/)
 
@@ -143,9 +154,10 @@ Notes:
 
 ## Integrated Monitoring Choices - Ganglia
 
-<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-7.png" alt="Monitoring-Choices-7.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/kafka/3rd-party/Monitoring-Choices-7.png" alt="Monitoring-Choices-7.png" style="width:50%;float:right;"/><!-- {"left" : 2.52, "top" : 1.16, "height" : 3.91, "width" : 5.21} -->
 
- *  [**Ganglia**](ganglia.info/) 
+
+ * [**Ganglia**](ganglia.info/) 
 
  * Scalable 
 
@@ -166,7 +178,8 @@ Notes:
 
 ## Metrics Demo 
 
-<img src="../../assets/images/kafka/3rd-party/grafana-1.png"  style="max-width:80%;"/>
+<img src="../../assets/images/kafka/3rd-party/grafana-1.png"  style="max-width:80%;"/><!-- {"left" : 0.45, "top" : 2.46, "height" : 4.73, "width" : 9.34} -->
+
 
 
 ---
@@ -209,6 +222,8 @@ https://github.com/dropwizard/metrics
   </dependency>
 </dependencies> 
 ```
+<!-- {"left" : 0, "top" : 1.78, "height" : 2.47, "width" : 8.65} -->
+
 
 Notes: 
 
@@ -249,6 +264,7 @@ GraphiteReporter.forRegistry(metrics).prefixedWith("myapp")
   .build(graphite);
 graphiteReporter.start(30, TimeUnit.SECONDS);  
 ```
+<!-- {"left" : 0, "top" : 1.46, "height" : 6.81, "width" : 10.25} -->
 
 Notes: 
 
@@ -271,8 +287,10 @@ public void handleRequest(Request request, Response response) {
     requests.mark();
 } 
 ```
+<!-- {"left" : 0, "top" : 3.36, "height" : 1.58, "width" : 10.25} -->
 
-<img src="../../assets/images/kafka/3rd-party/metrics-meter-1.png" style="max-width:65%;"/>
+<img src="../../assets/images/kafka/3rd-party/metrics-meter-1.png" style="max-width:65%;"/><!-- {"left" : 1.63, "top" : 5.88, "height" : 2.43, "width" : 6.99} -->
+
 
 
 Notes: 
@@ -300,8 +318,10 @@ msgCounter.dec();
 msgCounter.dec(5); 
 
 ```
+<!-- {"left" : 0, "top" : 3.06, "height" : 2.37, "width" : 10.25} -->
 
-<img src="../../assets/images/kafka/3rd-party/metrics-counter-1.png" style="max-width:65%;"/>
+<img src="../../assets/images/kafka/3rd-party/metrics-counter-1.png" style="max-width:65%;"/><!-- {"left" : 1.45, "top" : 5.68, "height" : 2.89, "width" : 7.36} -->
+
 
 Notes: 
 
@@ -324,8 +344,10 @@ msgSizes.update(100);
 msgSizes.update(50); 
  
 ```
+<!-- {"left" : 0, "top" : 3.73, "height" : 1.17, "width" : 10.25} -->
 
-<img src="../../assets/images/kafka/3rd-party/metrics-histogram-1.png"  style="max-width:65%;"/>
+<img src="../../assets/images/kafka/3rd-party/metrics-histogram-1.png"  style="max-width:65%;"/><!-- {"left" : 0.45, "top" : 5.72, "height" : 2.29, "width" : 9.36} -->
+
 
 
 Notes: 
@@ -350,8 +372,10 @@ Timer.Context context = timerExec.time();
 f();  // calling a function
 context.stop(); 
 ```
+<!-- {"left" : 0, "top" : 2.38, "height" : 1.98, "width" : 10.25} -->
 
-<img src="../../assets/images/kafka/3rd-party/metrics-timer-1.png" alt="big-data-Evolution.png" style="max-width:65%;"/>
+<img src="../../assets/images/kafka/3rd-party/metrics-timer-1.png" alt="big-data-Evolution.png" style="max-width:65%;"/><!-- {"left" : 1.51, "top" : 5.02, "height" : 2.67, "width" : 7.22} -->
+
 
 
 Notes: 
@@ -364,17 +388,17 @@ Notes:
 ## Lab 8: Metrics Labs
 
 
- *  **Overview**: Create and use Kafka streams
+ *  **Overview:** Create and use Kafka streams
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:** 
 
- *  **Approximate Time**: 30 - 40 mins
+ *  **Approximate Time:** 30 - 40 mins
 
- *  **Instructions**: 
+ *  **Instructions:** 
 
      - Please follow: lab 8
 
- *  **To Instructor**: 
+ *  **To Instructor:** 
 
 
 Notes: 
@@ -417,6 +441,7 @@ clickstream.foreach(new ForeachAction<String, String>() {
 });
 // start the stream 
 ```
+<!-- {"left" : 0, "top" : 1.5, "height" : 6.64, "width" : 10.25} -->
 
 
 Notes: 
@@ -429,17 +454,17 @@ Notes:
 ## Lab 9: Kafka Metrics Labs
 
 
- *  **Overview**: Use Metrics with Kafka
+ *  **Overview:** Use Metrics with Kafka
 
- *  **Builds on previous labs**: 
+ *  **Builds on previous labs:** 
 
- *  **Approximate Time**: 30 - 40 mins
+ *  **Approximate Time:** 30 - 40 mins
 
- *  **Instructions**: 
+ *  **Instructions:** 
 
      - Please follow: lab 9
 
- *  **To Instructor**: 
+ *  **To Instructor:** 
 
 
 Notes: 

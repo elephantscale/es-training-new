@@ -1,4 +1,4 @@
-# Kafka Streams Intro
+<br/># Kafka Streams Intro
 
 
 ---
@@ -122,13 +122,13 @@ Notes:
 - **Kafka Streams moto - "Build apps, not clusters"** 
 
 
-|      | Simple Java App                              | Kafka Streams                                | Distributed Streaming </br>Frameworks                                                                                 |
+|      | Simple Java App                              | Kafka Streams                                | Distributed Streaming <br/>Frameworks                                                                                 |
 |------|----------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 |      | Using Java/ Python                           | Java                                         | Spark / Flink / Samza                                                                                                 |
 |      |                                              |                                              |                                                                                                                       |
-| Pros | -Simple to implement </br>- Simple to deploy | -Simple to implement,</br>- Simple to deploy | - Distributed out of the box,</br>- Very good scaling,</br>- Excellent capabilities like windowing / machine learning |
+| Pros | -Simple to implement <br/>- Simple to deploy | -Simple to implement,<br/>- Simple to deploy | - Distributed out of the box,<br/>- Very good scaling,<br/>- Excellent capabilities like windowing / machine learning |
 |      |                                              |                                              |                                                                                                                       |
-| Cons | - Hard to scale                              | - Medium difficulty                          | - Heavy weight,</br>- Complex operations,</br>- Need to build a cluster,</br>- Monitor / maintain                     |
+| Cons | - Hard to scale                              | - Medium difficulty                          | - Heavy weight,<br/>- Complex operations,<br/>- Need to build a cluster,<br/>- Monitor / maintain                     |
  
 <!-- {"left" : 0.25, "top" : 2.04, "height" : 5.59, "width" : 9.75, "columnwidth" : [0.88, 2.88, 2.88, 3.11]} -->
 
@@ -138,7 +138,7 @@ Notes:
 
 ## Kafka Streams Architecture
 
-<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; float:right;"/><!-- {"left" : 6.54, "top" : 3.87, "height" : 4.5, "width" : 3.49} -->
+<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; float:right;"/><!-- {"left" : 6.67, "top" : 1.7, "height" : 4.5, "width" : 3.49} -->
 
  * A  **Stream Partition** is an ordered set of records and maps to a Topic partition
 
@@ -175,7 +175,7 @@ Notes:
 
 ## Processor Topology
 
-<img src="../../assets/images/kafka/streams-architecture-topology.png" alt="streams-architecture-topology.png" style="width:30%; float:right;"/><!-- {"left" : 6.79, "top" : 2.42, "height" : 4.23, "width" : 2.98} -->
+<img src="../../assets/images/kafka/streams-architecture-topology.png" alt="streams-architecture-topology.png" style="width:30%; float:right;"/><!-- {"left" : 6.82, "top" : 1.65, "height" : 4.23, "width" : 2.98} -->
 
 
  * Defines the logic for the application
@@ -188,13 +188,11 @@ Notes:
 
  *  **Source processor** 
 
-     - Has no upstream 
-       </br> processors. *Reads* topic
+     - Has no upstream processors. *Reads* topic
 
  *  **Sink processor** 
 
-     - Has no downstream 
-       </br> processor.*Writes* topic
+     - Has no downstream processor. *Writes* topic
 
 
 Notes: 
@@ -381,7 +379,7 @@ Notes:
 |----------    |-----------------------------------------------------------    |
 | ForEach      | Process one record at a time                                  |
 | Filter       | Filter stream event by event                                  |
-| map          | Transform the stream,</br>(key1, value1) -> (key2, value2)     |
+| map          | Transform the stream,<br/>(key1, value1) -> (key2, value2)     |
 | groupBy      | Group the stream by key                                       |
 | count        | Count the stream                                              |
 
@@ -572,7 +570,7 @@ Notes:
 
 | Kstream + KStream                                                                                 | Ktable + KTable                                                                                                                                           | KTable + KStream                                                                          |
 |-----------------------------------------------------------------------------------------------    |-------------------------------------------------------------------------------------------------------------------------------------------------------    |---------------------------------------------------------------------------------------    |
-| It is a sliding window join.,</br>Results a KStream,</br>Supports Left, Inner and Outer Joins     | Symmetric non-window join.,</br>Results a continuously updating Ktable.,</br>Supports Left, Inner and Outer Joins,</br>(think like 2 database tables)     | Asymmetric non-window join.,</br>Results a KStream.,</br>Supports Left and Inner join     |
+| It is a sliding window join.,<br/>Results a KStream,<br/>Supports Left, Inner and Outer Joins     | Symmetric non-window join.,<br/>Results a continuously updating Ktable.,<br/>Supports Left, Inner and Outer Joins,<br/>(think like 2 database tables)     | Asymmetric non-window join.,<br/>Results a KStream.,<br/>Supports Left and Inner join     |
 
 <!-- {"left" : 0.25, "top" : 1.44, "height" : 2.36, "width" : 9.75} -->
 

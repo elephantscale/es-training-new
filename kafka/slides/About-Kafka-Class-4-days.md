@@ -1,6 +1,7 @@
 # Introduction to Apache Kafka
 
-<img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" />
+<img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
+
 
 
 ---
@@ -8,7 +9,8 @@
 ## Workshop Overview - 4 Days
 
 
-<img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/><!-- {"left" : 8.32, "top" : 0.88, "height" : 1.9, "width" : 1.74} -->
+<img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/><!-- {"left" : 7.39, "top" : 1.2, "height" : 2.76, "width" : 2.53} -->
+
 
  * Day 1
      -  Streaming Overview
@@ -74,7 +76,7 @@ Notes:
 
  * Hands-on (learn by doing)
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:45%;"/><!-- {"left" : 2.91, "top" : 3.22, "height" : 3.58, "width" : 4.44} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:45%;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
 
 
 
@@ -88,7 +90,7 @@ Notes:
 ## After The Class...
 
 
-<img src="../../assets/images/kafka/3rd-party/AFTER_THE_CLASS-kafka.png" alt="AFTER_THE_CLASS-kafka.png" style="width:60%;"/><!-- {"left" : 1.6, "top" : 1.1, "height" : 5.77, "width" : 7.06} -->
+<img src="../../assets/images/kafka/3rd-party/AFTER_THE_CLASS-kafka.png" alt="AFTER_THE_CLASS-kafka.png" style="width:60%;"/><!-- {"left" : 1.3, "top" : 1.69, "height" : 6.26, "width" : 7.66} -->
 
 
 Notes:
@@ -111,8 +113,7 @@ By the end of the class... .
     (favorite ice cream flavor / hobby  etc.)
 
 
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 5.22, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 5.24, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 5.22, "height" : 1.76, "width" : 1.99} -->
-
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 0.85, "top" : 5.47, "height" : 2.1, "width" : 2.38} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.25, "top" : 5.49, "height" : 2.03, "width" : 3.74} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 7.02, "top" : 5.47, "height" : 2.1, "width" : 2.38} -->
 
 
 Notes:
@@ -127,7 +128,7 @@ Notes:
 
  * Kafka - The Definitive Guide
 
-<img src="../../assets/images/kafka/3rd-party/kafka-book-9781491936160.jpg" /><!-- {"left" : 4.02, "top" : 2.53, "height" : 2.91, "width" : 2.22} -->
+<img src="../../assets/images/kafka/3rd-party/kafka-book-9781491936160.jpg" /><!-- {"left" : 3.78, "top" : 2.78, "height" : 3.52, "width" : 2.68} -->
 
 Notes:
 

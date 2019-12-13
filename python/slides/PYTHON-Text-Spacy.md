@@ -472,7 +472,7 @@ displacy.serve(doc, style="ent", port=9000)
 
 ## Recognized Entities
 
-TODO Sujee
+<!--TODO Sujee-->
 
 https://spacy.io/api/annotation
 

@@ -119,11 +119,14 @@ props.put("value.serializer", "org.apache.kafka.common.serialization.StringSeria
 KafkaProducer<Integer, String> producer = new KafkaProducer<>(props); 
 
 ```
-<!-- {"left" : 0, "top" : 1.23, "height" : 1.76, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.29, "height" : 1.76, "width" : 10.25} -->
+
+<br/>
+<br/>
 
  * We are using 'KafkaProducer' (org.apache.kafka.clients.producer.KafkaProducer)
 
- *  **bootstrap.servers**: "broker1:9092, broker2:9092"
+ *  **bootstrap.servers:** "broker1:9092, broker2:9092"
 
      - Specify multiple servers, so no single point of failure
 
@@ -149,7 +152,9 @@ ProducerRecord<Integer, String> record = new ProducerRecord<> (topic, key, value
 producer.send(record);
 producer.close(); 
 ```
-<!-- {"left" : 0, "top" : 1.13, "height" : 1.51, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.45, "height" : 1.51, "width" : 10.25} -->
+
+<br/>
 
  * Each  **record**  represents a message
 
@@ -196,7 +201,7 @@ for(int i = 0; i < 100; i++) {
 producer.close(); 
 
 ```
-<!-- {"left" : 0, "top" : 1.15, "height" : 3.94, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.29, "height" : 3.94, "width" : 10.25} -->
 
 
 Notes: 
@@ -214,10 +219,11 @@ Notes:
 
 | ACK                       | Description                                                                                                                      | Speed  | Data safety                                                  |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------|
-| acks=0                    | - Producer doesn't wait for any acks from broker,</br>- Producer won't know of any errors                                        | High   | Low </br></br>No guarantee that broker received the message  |
-| acks=1,</br>**(default)** | - Broker will write the message to local log,</br>- Does not wait for replicas to complete                                       | Medium | Medium</br></br>Message is at least persisted on lead broker |
-| acks=all                  | - Message is persisted on lead broker and in replicas,</br>- Lead broker will wait for in-sync replicas to acknowledge the write | Low    | High</br></br>Message is persisted in multiple brokers       |
+| acks=0                    | - Producer doesn't wait for any acks from broker,<br/>- Producer won't know of any errors                                        | High   | Low <br/><br/>No guarantee that broker received the message  |
+| acks=1,<br/>**(default)** | - Broker will write the message to local log,<br/>- Does not wait for replicas to complete                                       | Medium | Medium<br/><br/>Message is at least persisted on lead broker |
+| acks=all                  | - Message is persisted on lead broker and in replicas,<br/>- Lead broker will wait for in-sync replicas to acknowledge the write | Low    | High<br/><br/>Message is persisted in multiple brokers       |
 
+<!-- {"left" : 0.25, "top" : 3.38, "height" : 4.61, "width" : 9.75, "columnwidth" : [1.61, 3.58, 1.45, 3.11]} -->
 
 
 Notes: 
@@ -274,7 +280,7 @@ finally {
   consumer.close(Duration.OfSeconds(60));
 } 
 ```
-<!-- {"left" : 0, "top" : 1.09, "height" : 4.7, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.29, "height" : 4.7, "width" : 10.25} -->
 
 Notes: 
 
@@ -299,13 +305,15 @@ KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
 consumer.subscribe(Arrays.asList("topic1")); // ** 2 **  
  
 ```
-<!-- {"left" : 0, "top" : 1.15, "height" : 2.46, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.07, "height" : 2.46, "width" : 10.25} -->
 
- *  **bootstrap,servers**: "broker1:9092,broker2:9092"
+<br/>
+
+ *  **bootstrap,servers:** "broker1:9092,broker2:9092"
 
      - Connect to multiple brokers to avoid single point of failure
 
- *  **group.id**: consumers belong in a Consumer Group
+ *  **group.id:** consumers belong in a Consumer Group
 
  * We are using standard serializers
 
@@ -336,7 +344,9 @@ finally {
 consumer.close();
 } 
 ```
-<!-- {"left" : 0, "top" : 1.17, "height" : 2.1, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.29, "height" : 2.1, "width" : 10.25} -->
+
+<br/>
 
  * Consumers must subscribe to topics before starting polling
      - Consumer.subscribe ("test.*") // wildcard subscribe
@@ -431,8 +441,9 @@ props.put("max.partition.fetch.bytes", 5 * 1024 * 1024); // 5 M
 
 KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props); 
 ```
-<!-- {"left" : 0, "top" : 1.1, "height" : 1.77, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.18, "height" : 1.77, "width" : 10.25} -->
 
+<br/>
 
  *  **max.partition.fetch.bytes**   (default : 1048576  (1M))
 
@@ -521,19 +532,19 @@ Notes:
 
 
 
- *  **Overview**:   
+ *  **Overview:**  
  Use Kafka Java API to write Producer and Consumer
 
- *  **Builds on previous labs**:   
+ *  **Builds on previous labs:**   
  1-install Kafka
 
- *  **Approximate Time**:  
+ *  **Approximate Time:** 
  30 - 40 mins
 
- *  **Instructions**: 
-     - Please follow: 3.1,    3.2,   3.3
+ *  **Instructions:**
+     - Please follow: 3.1, 3.2, 3.3
 
- *  **To Instructor**: 
+ *  **To Instructor:** 
 
 
 Notes: 
@@ -585,8 +596,9 @@ ProducerRecord<Integer, String> record =
 		new ProducerRecord<> (topic, key, value);
 producer.send(record); // <-
 ```
-<!-- {"left" : 0, "top" : 1, "height" : 1.8, "width" : 8.68} -->
+<!-- {"left" : 0, "top" : 1.19, "height" : 1.8, "width" : 8.68} -->
 
+<br/>
 
  * The 'record' is placed in the send buffer
 
@@ -611,7 +623,7 @@ Notes:
 
 ---
 
-## Producer Send Mode:  Sync
+## Producer Send Mode: Sync
 
 ```java
 ProducerRecord<Integer, String> record = 
@@ -622,8 +634,9 @@ RecordMetadata recordMetaData = future.get(); // <-
  
 
 ```
-<!-- {"left" : 0, "top" : 1, "height" : 1.5, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.45, "height" : 1.5, "width" : 10.25} -->
 
+<br/>
 
  * Send() returns a Java Future object 
 
@@ -639,7 +652,7 @@ Notes:
 
 ---
 
-## Producer Send Mode:  Async
+## Producer Send Mode: Async
 
 
 ```java
@@ -657,7 +670,10 @@ class KafkaCallback implements Callback {
 producer.send(record, new KafkaCallback());  // <- 
 ```
 
-<!-- {"left" : 0, "top" : 1.08, "height" : 3.13, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.09, "height" : 2.84, "width" : 9.21} -->
+
+<br/>
+<br/>
 
 * Kafka will callback with meta or exception  (only one of them will be non-Null)
 
@@ -742,7 +758,9 @@ Notes:
 | Snappy 1.1.4        | 2.091             | 530 MB/s        | 1820 MB/s          |
 
 
-<!-- {"left" : 0.25, "top" : 1.09, "height" : 2.19, "width" : 9.75} -->
+<!-- {"left" : 0.25, "top" : 1.29, "height" : 2.19, "width" : 9.75} -->
+
+<br/>
 
  * https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression
 
@@ -1598,9 +1616,9 @@ More information at : https://www.confluent.io/product/connectors/
 |                	   |                     	                    |              	     |
 | Apache Ignite            | Source and Sink (File System)                  | Community              |
 |                	   |                     	                    |              	     |
-| Blockchain               | Source </br>Bitcoin,Blockchain                 | Community              |
+| Blockchain               | Source <br/>Bitcoin,Blockchain                 | Community              |
 |                	   |                     	                    |              	     |
-| Cassandra           	   | Sink </br>NoSQL                                | Community              |
+| Cassandra           	   | Sink <br/>NoSQL                                | Community              |
 |                	   |                     	                    |              	     |
 | Github                   | Source              	                    | Community              |
 |                	   |                     	                    |               	     |
@@ -1619,8 +1637,8 @@ More information at : https://www.confluent.io/product/connectors/
 
 | Concept       	   | Description         	                                              |
 |----------------	   |--------------------	                                              |
-| Connectors               |- Defines the source and destination of data </br>- Coordinates Tasks     |
-| Tasks               	   |- Implementations of data transfer </br>- Introduces parallelism         |
+| Connectors               |- Defines the source and destination of data <br/>- Coordinates Tasks     |
+| Tasks               	   |- Implementations of data transfer <br/>- Introduces parallelism         |
 | Workers                  |Connectors and tasks are logical units and are scheduled in workers       |
 | Converters          	   |Convert data formats to bytes and vice versa 	                      |
 | Transforms          	   |Does simple modification to Kafka messages                                |
@@ -1721,8 +1739,10 @@ config/connect-standalone.properties
     file=test.log
     topic=test_log
 ```
-<!-- {"left" : 0, "top" : 1.01, "height" : 1.4, "width" : 6.56} -->
+<!-- {"left" : 0, "top" : 1.19, "height" : 1.72, "width" : 8.07} -->
 
+<br/>
+<br/>
 
  * The file stream can be run by executing  *connect-standalone.sh* with standalone configuration and source file configuration as given below
 
@@ -1778,14 +1798,14 @@ hdfs.url=hdfs://localhost:9000
 flush.size=3
 
 ```
-<!-- {"left" : 0, "top" : 1.46, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.54, "height" : 2.39, "width" : 10.25} -->
 
 
 ```java
 $  confluent load hdfs-sink -d hdfs-connector.properties
 
 ```
-<!-- {"left" : 0, "top" : 4.99, "height" : 0.55, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 4.42, "height" : 0.55, "width" : 10.25} -->
 
 
 ```java
@@ -1794,7 +1814,7 @@ $ hadoop fs -ls /topics/test_hdfs/partition=0
 /topics/test_hdfs/partition=0/test_hdfs+0+0000000000+0000000002.avro
 
 ```
-<!-- {"left" : 0, "top" : 6.66, "height" : 1.07, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.47, "height" : 1.07, "width" : 10.25} -->
 
 Notes: 
 
@@ -1945,7 +1965,9 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
 "ip":"ip_64","action": 
 "blocked" }
 ```
-<!-- {"left" : 0, "top" : 1.73, "height" : 1.98, "width" : 4.79} -->
+<!-- {"left" : 0, "top" : 1.9, "height" : 1.98, "width" : 4.79} -->
+
+<br/>
 
  * Process the data and keep a running total of `'domain-count'`
 

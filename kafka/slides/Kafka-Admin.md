@@ -323,7 +323,7 @@ Notes:
 
 ## Securing Kafka
 
-<img src="../../assets/images/kafka/Securing-Kafka.png" alt="Securing-Kafka.png" style="width:50%;float:right;"/><!-- {"left" : 2, "top" : 5, "height" : 3.54, "width" : 6.25} -->
+<img src="../../assets/images/kafka/Securing-Kafka.png" alt="Securing-Kafka.png" style="width:50%;float:right;"/><!-- {"left" : 5.22, "top" : 1.07, "height" : 2.79, "width" : 4.92} -->
 
 
  * Clients connect to Kafka brokers via  **Kerberos / TLS** 

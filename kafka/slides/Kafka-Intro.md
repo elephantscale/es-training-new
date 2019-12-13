@@ -1,6 +1,7 @@
 # Apache Kafka Intro
 
-<img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" />
+<img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
+
 
 
 ---
@@ -78,7 +79,7 @@ Notes:
 
 ## Requirements For Data Buffer / Router
 
-<img src="../../assets/images/kafka/For-Data-Buffer-Router-3.png" alt="For-Data-Buffer-Router-3.png" style="width:20%;float:right;"/><!-- {"left" : 8.31, "top" : 1.11, "height" : 0.99, "width" : 1.3} -->
+<img src="../../assets/images/kafka/For-Data-Buffer-Router-3.png" alt="For-Data-Buffer-Router-3.png" style="width:20%;float:right;"/><!-- {"left" : 8.25, "top" : 1.17, "height" : 1.34, "width" : 1.76} -->
 
  * Efficiently deal with large volume of data
      - Data usually comes in as events
@@ -156,14 +157,14 @@ Notes:
 ---
 ## Why LinkedIn Built Kafka?
 
+<img src="../../assets/images/kafka/3rd-party/franz-kafka.png" style="width:15%;float:right;" /><!-- {"left" : 7.85, "top" : 1.08, "height" : 2.86, "width" : 2.25} -->
+
 * Lots of databases
   - Built to store data
   - Piles of data: relational / key-value / caches / search indexes
 
 * What is missing?
   - Something to handle the continuous flow of data
-
-<img src="../../assets/images/kafka/3rd-party/franz-kafka.png" style="width:15%;float:right;" /><!-- {"left" : 8.4, "top" : 1.08, "height" : 2.16, "width" : 1.7} -->
 
 * Hence, LinkedIn built Kafka from scratch
 
@@ -214,7 +215,7 @@ Notes:
 |------------|---------|----------------------------------------------------------------------------------------------------------------------|
 | 2011 |         | Open sourced                                                                                                         |
 | 2012 Oct    |         | Apache incubator                                                                                                     |
-| 2015  | 0.9     | - Security (Kerberos, encryption),</br>- Kafka connect: connect other systems to Kafka,</br>- Quotas (multi tenancy) |
+| 2015  | 0.9     | - Security (Kerberos, encryption),<br/>- Kafka connect: connect other systems to Kafka,<br/>- Quotas (multi tenancy) |
 | 2016       | 0.10    | - Producers for Unit testing                                                                                         |
 | 2017       | 0.11    | - Exactly once delivery                                                                                              |
 | 2017 Oct   | 1.0     |                                                                                                                      |
@@ -276,12 +277,12 @@ Notes:
 
 | Benchmark          | Hardware                                                                                                  | Performance                                                                                                           |
 |--------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| By Linkedin @ 2014 | 3 machines,</br>- Xeon 2.5 G , 6 cores,</br>- Six 7200 RPM SATA drives,</br>- 32 G RAM,</br>- 1G ethernet | Multiple test setups.,</br>One throughput,</br>- 80 MB / sec,</br>- 2 million messages / sec (each message 100 bytes) |
+| By Linkedin @ 2014 | 3 machines,- Xeon 2.5 G , 6 cores,<br/>- Six 7200 RPM SATA drives,<br/>- 32 G RAM,<br/>- 1G ethernet | Multiple test setups.,<br/>One throughput,<br/>- 80 MB / sec,<br/>- 2 million messages / sec (each message 100 bytes) |
 
-<!-- {"left" : 0.25, "top" : 4.32, "height" : 1.77, "width" : 9.75} -->
+<!-- {"left" : 0.25, "top" : 1.14, "height" : 2.45, "width" : 9.75} -->
 
 <br/>
-
+<br/>
 
  * The machines are medium scale
 
@@ -402,12 +403,12 @@ Notes:
 
 | Feature                                                                         | Kafka                                                          | Other Queue Systems                           |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------|-----------------------------------------------|
-| **Deleting messages**                                                           | Clients can not delete.,</br>Kafka auto-expires </br>messages  | Clients can delete                            |
+| **Deleting messages**                                                           | Clients can not delete.<br/>,Kafka auto-expires <br/>messages  | Clients can delete                            |
 | **Message processing order**                                                    | Can read in or out-of order                                    | Usually read in order                         |
-| **Message processing guarantee**                                                | Kafka guarantee no </br>duplicate processing of a </br>message | Usually no                                    |
-| **Concurrent read / write**                                                     | Supported.,</br>High throughput                                | Low throughput due to </br>locking & blocking |
+| **Message processing guarantee**                                                | Kafka guarantee no <br/>duplicate processing of <br/>a message | Usually no                                    |
+| **Concurrent read / write**                                                     | Supported.,High throughput                                | Low throughput due to locking & blocking |
 | **Message priorities**                                                          | None                                                           | Yes                                           |
-| **Message ACKs,(Client notify </br>producer that a </br>message is processed)** | No                                                             | May be                                        |
+| **Message ACKs,(Client <br/>notify producer that <br/>a message is processed)** | No                                                             | May be                                        |
 
 <!-- {"left" : 0.25, "top" : 1.49, "height" : 5.32, "width" : 9.75} -->
 
@@ -442,7 +443,7 @@ Notes:
 
      - Consumer assignments
 
- * Clients don't have ZK dependency</br>starting from v0.9 (discussed later)
+ * Clients don't have ZK dependencystarting from v0.9 (discussed later)
 
 
 
@@ -961,7 +962,7 @@ $  bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test
 # Topic: test	Partition: # 1	Leader: 0	Replicas: 0	Isr: 0
 
 ```
-<!-- {"left" : 0, "top" : 1.07, "height" : 2.74, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.29, "height" : 2.74, "width" : 10.25} -->
 
 Notes:
 
@@ -973,9 +974,9 @@ Notes:
 ## Using Producer / Consumer Utils
 
 
- *  **bin/**  **kafka**  **-console-producer**: utility for producing messages
+ *  **bin/ kafka-console-producer:** utility for producing messages
 
- *  **bin/**  **kafka**  **-console-consumer**: utility for reading messages
+ *  **bin/kafka-console-consumer:** utility for reading messages
 
 <img src="../../assets/images/kafka/Using-Producer-01.png" alt="Using-Producer-03.png" style="width:70%;"/><!-- {"left" : 0.88, "top" : 3.77, "height" : 3.55, "width" : 8.49} -->
 
@@ -1385,7 +1386,7 @@ Notes:
 
 ## Log Compaction
 
-<img src="../../assets/images/kafka/Log-Compaction-02.png" alt="Log-Compaction-02.png" style="width:50%;float:right;"/><!-- {"left" : 5.84, "top" : 2.77, "height" : 3.23, "width" : 4.24} -->
+<img src="../../assets/images/kafka/Log-Compaction-02.png" alt="Log-Compaction-02.png" style="width:50%;float:right;"/><!-- {"left" : 5.53, "top" : 1.07, "height" : 3.53, "width" : 4.64} -->
 
  * Retains latest value of every key in the log.
 
@@ -1464,7 +1465,7 @@ Notes:
 
 ## Delete in compaction
 
-<img src="../../assets/images/kafka/Delete-in-compaction.png" alt="Delete-in-compaction.png" style="width:50%;float:right;"/><!-- {"left" : 5.1, "top" : 2.74, "height" : 3.25, "width" : 5.02} -->
+<img src="../../assets/images/kafka/Delete-in-compaction.png" alt="Delete-in-compaction.png" style="width:50%;float:right;"/><!-- {"left" : 5.16, "top" : 1.18, "height" : 3.25, "width" : 5.02} -->
 
  * A delete marker deletes prior messages with the same key.
 
