@@ -72,10 +72,11 @@ Notes:
 
 
 *  **Day 1**
-    - AI  Intro
-    - Text analytics
-*  **Day 2**
+    - ML  Intro
+    - Data exploration
+    - Feature extraction
     - Machine Learning concepts
+*  **Day 2**
     - Regressions
     - Classifications
     - Clustering

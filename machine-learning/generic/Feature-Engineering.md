@@ -46,8 +46,11 @@ Notes:
 ## Feature Selection
 
 - We could have a lot of features to choose from
+
 - Let's say there are 100 features in our dataset
+
 - Not all of them would be important in predicting the outcome
+
 - We don't want to input all the possible features into the algorithm
     - More features will take more compute power / resources
     - Can result in more noise than signal
@@ -61,8 +64,13 @@ Notes:
 ## 'Curse of Dimensionality'
 
 - ['Curse of Dimensionality'](https://en.wikipedia.org/wiki/Curse_of_dimensionality) says more features, required more _observations_ (rows)
-    - This is not a linear relationship;  
-    More features --> **many** more rows
+    
+- This is not a linear relationship;
+    - More features --> **many** more rows
+    
+- For example, let's say we have only 100 rows/samples of data.
+  - Say each row has lots of features / columns (100+), 
+  - then we'd need more samples for ML algorithm to learn effectively
 
 
 Notes:
@@ -121,12 +129,19 @@ Notes:
 
 ---
 
-## Incorporating Domain Knowledge
+##  How do We Select Features? 
 
- * In the previous example how did we figure out the features to consider?
-   - probably 'common sense' :-)
-
- * In practice we use our **domain knowledge** to identify important features
+* __Using Domain Knowledge__
+  - In the previous example how did we figure out the features to consider?  
+  Probably 'common sense' :-)
+  
+*  In practice we use our **domain knowledge** to identify important features
+ 
+* For example if you work in finance domain, you know what attributes are good signals
+    - e.g How did Alan Greenspan predict labor market ?
+    
+* __Some algorithms can help__  
+  Some ML algorithms can take in all features and provide _'feature importance'_
 
 Notes:
 
