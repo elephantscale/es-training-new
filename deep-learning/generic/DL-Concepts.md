@@ -3,6 +3,10 @@
 
 ---
 
+# Part 1 : Essentials
+
+---
+
 ## NN Concepts (Overview)
 
  * Learning rate, Loss function, Cost
@@ -366,6 +370,10 @@ Notes:
 # Optimizers
 
 [Optimizers](DL-Optimizers.md)
+
+---
+
+# Part 2 : Advanced Concepts
 
 ---
 

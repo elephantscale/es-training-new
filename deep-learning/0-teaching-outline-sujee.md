@@ -8,18 +8,18 @@
 
 DL intro 
     save videos for later
-    todo : flesh it out more
 
-- TF Intro 
 
 --- lunch--- 
 
-- TF low level
-    labs
+- Lab setup
+- TF Intro 
+
+=====
 
 ## day 2
 
-- TF linear 
+- ML Concepts reference only, 
 
 Nvidia self driving car : https://www.youtube.com/watch?v=0rc4RqYLtEU
 - DL Concepts

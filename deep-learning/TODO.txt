@@ -1,3 +1,14 @@
+see 'generic/DL-TODO.txt'
+
+===
+
+Ml Intro
+    -  machien learning methodology
+    - dupe walmart slide
+    - 
+    
+======
+
 Tensorflow Intro 
     - lab example of regression 
     
