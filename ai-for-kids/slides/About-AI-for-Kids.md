@@ -2,7 +2,7 @@
 ---
 ## About This Class
 
-* An **AI for Kids** to be taught in school or on your own
+* An **AI for Kids**, to be taught in school or learned on your own
 
 * Goals
     - **Fun**
