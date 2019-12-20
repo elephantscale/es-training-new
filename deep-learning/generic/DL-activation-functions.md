@@ -17,9 +17,8 @@ __`output = weather * 40 + public * 20 + friend * 20`__
 
      - Else, __`answer = 0`__
 
+<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/><!-- {"left" : 1.02, "top" : 5.21, "height" : 2.7, "width" : 8.21} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/>
 
 ---
 
@@ -47,7 +46,7 @@ __`output = weather * 40 + public * 20 + friend * 20`__
 - Tanh
 - ReLU (Leaky ReLU ... etc)
 
-<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 1.1, "top" : 4.91, "height" : 2.75, "width" : 8.05} -->
+<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.63, "top" : 4.66, "height" : 3.07, "width" : 8.98} -->
 
 
 Notes:
@@ -55,7 +54,7 @@ Notes:
 ---
 ## Activation Function - Linear
 
-<img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 5.05, "top" : 2.06, "height" : 3.85, "width" : 4.88} -->
+<img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 5.22, "top" : 1.22, "height" : 3.85, "width" : 4.88} -->
 
 * __`y = a.X + b`__
 
@@ -125,15 +124,15 @@ Notes:
 - As we know backpropagation works by going from output  layer to input layer (in reverse)
     - It propagates the error gradient backwards
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:55%" />
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:50%" /><!-- {"left" : 2.35, "top" : 3.73, "height" : 4.17, "width" : 5.56} -->
+
+
 
 ---
 
 ## Vanishing/Exploding Gradients Problems
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:35%;float:right;" />
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:35%;float:right;" /><!-- {"left" : 7.06, "top" : 1.01, "height" : 2.33, "width" : 3.11} -->
 
 - As it moves through the layers, the gradients gets smaller and smaller as it reaches lower layers
 
@@ -232,9 +231,7 @@ Notes:
 
 ## ReLU Variants
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"  /><!-- {"left" : 6.5, "top" : 1.81, "height" : 2.81, "width" : 3.46} -->
+<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"  /><!-- {"left" : 6.72, "top" : 1.02, "height" : 2.81, "width" : 3.46} -->
 
 - [This paper](https://arxiv.org/pdf/1505.00853.pdf) compares various ReLU implementations
 
@@ -252,10 +249,8 @@ Notes:
 
 - ELU outperformed all other ReLU variants, it trained quicker, and test accuracy was higher too.
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 5.38, "top" : 2.76, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp;
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 3.18, "top" : 4.6, "height" : 2.83, "width" : 3.9} -->
+<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 0.66, "top" : 5.47, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp;
+<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 5.69, "top" : 4.82, "height" : 2.83, "width" : 3.9} -->
 
 
 ---
@@ -290,10 +285,7 @@ Notes:
 
 ## Activation Functions for Regression
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/output-layer-1-regression.png" alt="XXX image missing" style="width:50;%;float:right;" />
-
+<img src="../../assets/images/deep-learning/output-layer-1-regression.png" alt="XXX image missing" style="width:50%;float:right;" /><!-- {"left" : 5.24, "top" : 1.26, "height" : 2.44, "width" : 4.92} -->
 
  * For regression problems, the output neuron generates the response variable (a continuous value)
     - e.g.  stock price = 60.4
@@ -309,7 +301,7 @@ Notes:
 
 ## Actication Function for Binary Classification
 
-<img src="../../assets/images/deep-learning/output-layer-2-binary-classification.png" alt="XXX image missing" style="width:50;%;float:right;" />
+<img src="../../assets/images/deep-learning/output-layer-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;" /><!-- {"left" : 5.59, "top" : 1.18, "height" : 2.01, "width" : 4.5} -->
 
 - For classification problems, the output is binary (0/1  or True / False)
     - e.g. is the transaction fraud?  True / False
@@ -323,7 +315,8 @@ Notes:
 ---
 ## Activation Function for Multi-class (non-binary) Outputs
 
-<img src="../../assets/images/deep-learning/output-layer-3-multi-classification.png" alt="XXX image missing" style="width:50;%;float:right;" />
+<img src="../../assets/images/deep-learning/output-layer-3-multi-classification.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 5.74, "top" : 1.22, "height" : 3.93, "width" : 4.28} -->
+
 
  * What about multi-class classification? (non-binary)  
     - e.g., classifying a digit into one of `0, 1, 2 ... 9`
@@ -341,23 +334,20 @@ Notes:
 ---
 ## Activation Function - Softmax
 
-<img src="../../assets/images/deep-learning/output-layer-4-softmax-activation.png" alt="XXX image missing" style="width:50;%;float:right;" />
+<img src="../../assets/images/deep-learning/output-layer-4-softmax-activation.png" alt="XXX image missing" style="width:60%;float:right;" /><!-- {"left" : 5.39, "top" : 1.06, "height" : 2.1, "width" : 4.79} -->
 
-- Assume we have an image classifier that classifies animals into 4 categories : cat / dog / elephant / lion
-
+- Assume we have an image classifier that classifies animals into 4 categories: cat / dog / elephant / lion
 - So the final layer will have 4 neurons, so they match the output classes (4)
-
 - And the output layer will have __softmax__ activation function
-
 - The Softmax function produces probabilities for output values.
-
 - In the above example, prediction is __CAT__ as it has the highest probability (80% or 0.8)
 
-<!-- TODO shiva  -->
 
 | Output Class            | Cat  | Dog  | Elephant | Lion |
 |-------------------------|------|------|----------|------|
 | Probability (Total 1.0) | 0.80 | 0.05 | 0.02     | 0.13 |
+
+<!-- {"left" : 4.85, "top" : 7.24, "height" : 1.23, "width" : 5.36, "columnwidth" : [1.81, 0.69, 0.69, 1.38, 0.8]} -->
 
 ---
 ## Softmax Function
@@ -389,10 +379,8 @@ Source :
 
 ## Activation Functions Cheatsheet
 
+<img src="../../assets/images/deep-learning/3rd-party/activation-functions-cheat-sheet-1.png" style="width:60%;"/><!-- {"left" : 1.96, "top" : 1.02, "height" : 4.75, "width" : 6.34} -->
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/3rd-party/activation-functions-cheat-sheet-1.png" style="width:60%;"/>
 
 - source: [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
 

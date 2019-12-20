@@ -27,7 +27,7 @@ Notes:
 
  * Make sure they can see the sandbox splash page
 
-<img src="../../assets/images/generic/lab-setup.png" style="max-width:50%;"/><!-- {"left" : 1.84, "top" : 6.67, "height" : 2.18, "width" : 6.57} -->
+<img src="../../assets/images/generic/lab-setup.png" style="max-width:50%;"/><!-- {"left" : 1.84, "top" : 6.25, "height" : 2.18, "width" : 6.57} -->
 
 
 
@@ -63,10 +63,17 @@ Notes:
 
  *  **To instructor:**
     - create a lab bundle
-     ```bash
+
+```bash
         $   cd labs-dir
         $  ./package-labs.sh
     ```
+
+<!-- {"left" : 0, "top" : 2.14, "height" : 0.86, "width" : 4.61} -->
+
+
+<br/>
+
     - This will create a zip file
     -  Distribute this bundle to students
         - Upload it to Google drive or Amazon S3
@@ -154,7 +161,7 @@ https://www.youtube.com/watch?v=xaBEFqFVSE8
     - If not, demo ' **Hello Jupyter** ' lab.
     - Explain how Jupyter works
 
-<img src="../../assets/images/machine-learning/jupyter.png" style="width:55%;"><!-- {"left" : 2.07, "top" : 5.32, "height" : 3.3, "width" : 6.1} -->
+<img src="../../assets/images/machine-learning/jupyter.png" style="width:55%;"><!-- {"left" : 2.07, "top" : 5.09, "height" : 3.3, "width" : 6.1} -->
 
 
 Notes:

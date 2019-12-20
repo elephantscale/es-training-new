@@ -65,9 +65,7 @@ NVIDIA - leading GPU vendor - provides CUDA (Compute Unified Device Architecture
 
 ## Keras Features
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/machine-learning/keras-cpu-gpu-tpu-1.png" style="width:50%;float:right;"/><!-- {"left" : 2.31, "top" : 4.71, "height" : 2.98, "width" : 5.64} -->
+<img src="../../assets/images/machine-learning/keras-cpu-gpu-tpu-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.96, "top" : 2.11, "height" : 2.15, "width" : 4.08} -->
 
 * Write high level code
     - easier to write
@@ -313,7 +311,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
 
 >  "Using TensorFlow backend."
 ```
-<!-- {"left" : 0, "top" : 2.47, "height" : 0.94, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.87, "height" : 0.94, "width" : 10.25} -->
 
 ---
 
@@ -327,8 +325,9 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
     "backend": "tensorflow"
 }
 ```
-<!-- {"left" : 0, "top" : 1.15, "height" : 2.51, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.24, "height" : 2.08, "width" : 8.51} -->
 
+<br/>
 
   * **image_data_format:**  
     - It specifies which data format convention Keras will follow. (keras.backend.image_data_format() returns it.)  
@@ -348,8 +347,9 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
     "backend": "tensorflow"
 }
 ```
-<!-- {"left" : 0, "top" : 1.15, "height" : 2.51, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.12, "height" : 1.88, "width" : 7.68} -->
 
+<br/>
 
   * **epsilon:**
     - A numeric fuzzing constant used to avoid dividing by zero in some operations.
@@ -403,7 +403,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
   * Refer to [Keras.io](keras.io) for complete details.
 
 ---
-## Keras Core Layers : Dense
+## Keras Core Layers: Dense
 
   * A dense layer connects every neuron in this layer to every neuron in previous layer.
 
@@ -432,10 +432,9 @@ keras.layers.Dense(
     bias_constraint=None)
 
 ```
-<!-- {"left" : 0, "top" : 1.73, "height" : 3.64, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.17, "height" : 3.64, "width" : 10.25} -->
 
 
-<!-- TODO shiva -->
 ```python
 ## Usage 
 
@@ -446,11 +445,11 @@ from keras.layers import Dense
 # output array shape [*,32]
 d = Dense(32, input_shape=(16,)))
 ```
-<!-- {"left" : 0, "top" : 1.56, "height" : 2.35, "width" : 8.34} -->
+<!-- {"left" : 0, "top" : 5.07, "height" : 2.35, "width" : 8.34} -->
 
 ---
 
-## Keras Core Layers : Dropout
+## Keras Core Layers: Dropout
 
   * The dropout layer in DL helps reduce overfitting by introducing regularization and generalization
 
@@ -461,6 +460,7 @@ d = Dense(32, input_shape=(16,)))
 
 keras.layers.Dropout(rate, noise_shape=None, seed=None)
 ```
+<!-- {"left" : 0, "top" : 3.16, "height" : 1.19, "width" : 10.25} -->
 
 
 ```python
@@ -470,6 +470,7 @@ from keras.layers import Dropout
 
 d = Dropout(rate = 0.1,seed=100)
 ```
+<!-- {"left" : 0, "top" : 4.74, "height" : 1.74, "width" : 6.11} -->
 
 ---
 ## Keras Optimizers
@@ -503,7 +504,9 @@ sgd = SGD(lr=0.01,
 model.compile(optimizer=sgd, loss='mean_squared_error')
 
 ```
-<!-- {"left" : 0, "top" : 1.22, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.01, "height" : 2.39, "width" : 10.25} -->
+
+<br/>
 
   * Arguments
     - `lr`: float >= 0. Learning rate.
@@ -529,7 +532,9 @@ adagrad = keras.optimizers.Adagrad(lr=0.01,
 model.compile(optimizer=adagrad, ...)
 
 ```
-<!-- {"left" : 0, "top" : 1.02, "height" : 1.05, "width" : 5.76} -->
+<!-- {"left" : 0, "top" : 1.14, "height" : 2.39, "width" : 7.37} -->
+
+<br/>
 
   * Arguments
     - `lr`: float >= 0. Initial learning rate.
@@ -556,7 +561,9 @@ rmsprop = keras.optimizers.RMSprop(lr=0.001,
 model.compile(optimizer=rmsprop, ...)
 
 ```
-<!-- {"left" : 0, "top" : 0.99, "height" : 1.07, "width" : 5.05} -->
+<!-- {"left" : 0, "top" : 1.11, "height" : 2.82, "width" : 6.55} -->
+
+<br/>
 
   * Arguments
     - `lr`: float >= 0. Learning rate.
@@ -584,8 +591,8 @@ model.compile(optimizer=adam, ...)
 
                              
 ```
-<!-- {"left" : 0, "top" : 1.37, "height" : 3.09, "width" : 10.25} -->
 
+<!-- {"left" : 0, "top" : 1.35, "height" : 3.78, "width" : 7.94} -->
 
 ---
 
@@ -745,7 +752,9 @@ compile(optimizer,
         weighted_metrics=None,
         target_tensors=None)
 ```
-<!-- {"left" : 0, "top" : 1, "height" : 1.06, "width" : 3.04} -->
+<!-- {"left" : 0, "top" : 1.11, "height" : 2.23, "width" : 5.87} -->
+
+<br/>
 
   * Arguments
     - **optimzer:** optimizer name ('adam', 'sgd') or optimizer instance
@@ -793,11 +802,13 @@ evaluate(x=None, y=None,
          batch_size=None, verbose=1,
          sample_weight=None, steps=None, callbacks=None)
 ```
-<!-- {"left" : 0, "top" : 1.54, "height" : 1.07, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.02, "height" : 1.07, "width" : 10.25} -->
+
+<br/>
 
   * Arguments
-    - x : test data inputs (numpy array(s) )
-    - y : test data labels (numpy array(s) )
+    - x: test data inputs (numpy array(s) )
+    - y: test data labels (numpy array(s) )
     - batch_size: integer, usually powers of two (default = 32)
     - verbose: 0 or 1. Verbosity mode. 0 = silent, 1 = progress bar.
 
@@ -809,7 +820,9 @@ evaluate(x=None, y=None,
 predictions = predict(x, batch_size=None,
                       verbose=0, steps=None, callbacks=None)
 ```
-<!-- {"left" : 0, "top" : 1.03, "height" : 0.56, "width" : 7.51} -->
+<!-- {"left" : 0, "top" : 1.43, "height" : 0.82, "width" : 10.25} -->
+
+<br/>
 
   * Arguments
     - x: The input data, as a Numpy array (or list of Numpy arrays if the model has multiple inputs).
@@ -1025,9 +1038,9 @@ import matplotlib.pyplot as plt
  plt.legend(['Train', 'Test'], loc='upper left')
  plt.show()
 ```
-<!-- {"left" : 0, "top" : 1, "height" : 3.18, "width" : 8.78} -->
+<!-- {"left" : 0, "top" : 1.11, "height" : 3.18, "width" : 8.78} -->
 
-<img src="../../assets/images/deep-learning/viz-accuracy1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 3.18, "top" : 5.1, "height" : 2.91, "width" : 3.9} -->
+<img src="../../assets/images/deep-learning/viz-accuracy1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 2.72, "top" : 4.76, "height" : 3.59, "width" : 4.82} -->
 
 
 
@@ -1051,7 +1064,7 @@ plt.show()
 ```
 <!-- {"left" : 0, "top" : 1.11, "height" : 3.18, "width" : 8.61} -->
 
-<img src="../../assets/images/deep-learning/viz-loss1.png" alt="XXX image missing" width="40%" style="background:white;"/><!-- {"left" : 3.18, "top" : 5.06, "height" : 2.91, "width" : 3.9} -->
+<img src="../../assets/images/deep-learning/viz-loss1.png" alt="XXX image missing" width="40%" style="background:white;"/><!-- {"left" : 2.78, "top" : 4.77, "height" : 3.5, "width" : 4.69} -->
 
 
 ---
@@ -1073,16 +1086,18 @@ Use Keras callback for saving your training and test metrics, as well as activat
                             write_graph=True,
                             write_images=False) )
 ```
-<!-- {"left" : 0, "top" : 2.34, "height" : 1.45, "width" : 9.74} -->
+<br/>
 
-Saved data can then be visualized with Tensorboard
+
+- Saved data can then be visualized with Tensorboard
+
 
 ```bash
 $   tensorboard --logdir=/full_path_to_your_logs
 ```
-<!-- {"left" : 0, "top" : 5.22, "height" : 0.54, "width" : 8.78} -->
 
-See next slide for a visualization.
+<br/>
+- See next slide for a visualization.
 
 ---
 

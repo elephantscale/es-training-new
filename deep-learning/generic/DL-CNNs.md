@@ -563,8 +563,7 @@ Notes:
   * Reduces need for fully connected neurons.
   * Depth (in this case 5) is the number of filters used.
 
-![](../../assets/images/deep-learning/depthcol.png) <!-- {"left" : 2.27, "top" : 3.41, "height" : 3.41, "width" : 5.41} -->
-
+<img src="../../assets/images/deep-learning/depthcol.png" alt="XXX image missing" style="background:white;max-width:100%;width:30%;" />
 Notes: 
 
 
@@ -574,11 +573,11 @@ Notes:
 
   * Three Hyperparameters control the convolution:
 
-    - **Depth**: The number of filters, and the number of neurons per convolution
+    - **Depth:** The number of filters, and the number of neurons per convolution
 
-    - **Stride**: Usually 1 or 2: the number of pixels we "jump" when applying the filter.
+    - **Stride:** Usually 1 or 2: the number of pixels we "jump" when applying the filter.
 
-    - **Zero Padding**: Creates a "frame" of zero (black) pixels around the border of image.
+    - **Zero Padding:** Creates a "frame" of zero (black) pixels around the border of image.
 
   * Stride > 1 will reduce dimensions
 
@@ -646,7 +645,7 @@ Notes:
 
 ## Stacking Multiple Feature Maps
 
- <img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:40%;float:right;" />  <!-- {"left" : 6.03, "top" : 1.72, "height" : 2.64, "width" : 4.02} -->
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:40%;float:right;" />  <!-- {"left" : 6.03, "top" : 1.72, "height" : 2.64, "width" : 4.02} -->
 
  * A single feature map has same parameters as a single kernel has the same weights/parameters as it moves across the image; however, different feature maps can have different parameters (weights + biases).
 
@@ -665,7 +664,7 @@ Notes:
 ## Stacking Multiple Feature Maps (Contd.)
 
 
- <img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;" /> <!-- {"left" : 5.24, "top" : 2.13, "height" : 3.15, "width" : 4.81} -->
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;" /> <!-- {"left" : 5.24, "top" : 2.13, "height" : 3.15, "width" : 4.81} -->
 
  * Images that are greyscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
 
@@ -682,7 +681,7 @@ Notes:
 ## Stacking Multiple Feature Maps (Contd.)
 
 
- <img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;" /> <!-- {"left" : 5.24, "top" : 2.13, "height" : 3.15, "width" : 4.81} -->
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;" /> <!-- {"left" : 5.24, "top" : 2.13, "height" : 3.15, "width" : 4.81} -->
 
  * The fact that all neurons in a feature map has just one set of parameters dramatically reduces the no of parameters needed.
 
@@ -847,9 +846,7 @@ Notes:
 
  * Softmax Layer At end (for classification problems.)
 
-![](../../assets/images/deep-learning/Input_FC.png) <!-- {"left" : 0.71, "top" : 4.63, "height" : 1.1, "width" : 8.83} -->
-
-
+<img src="../../assets/images/deep-learning/Input_FC.png" alt="XXX image missing" style="background:white;max-width:100%;width:45%;" />  
 
 Notes: 
 
@@ -859,8 +856,7 @@ Notes:
 
 ## Example Convolutional Network
 
-![](../../assets/images/deep-learning/3rd-party/Introduction-to-Neural-Networks--CNN.png) <!-- {"left" : 0.69, "top" : 2.7, "height" : 4.25, "width" : 8.86} -->
-
+<img src="../../assets/images/deep-learning/3rd-party/Introduction-to-Neural-Networks--CNN.png" alt="XXX image missing" style="background:white;max-width:100%;width:45%;" />  
 
 Notes: 
 

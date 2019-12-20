@@ -167,7 +167,7 @@ Notes:
 
 ## TPU Support
 
-<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 8.52, "top" : 1.02, "height" : 1.14, "width" : 1.65} -->
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 8.92, "top" : 0.95, "height" : 0.91, "width" : 1.32} -->
 
 
  * TPU is Google's custom chip built for AI workloads
@@ -442,6 +442,8 @@ x =  a * a * b + b + c
 with tf.Session() as sess:
     output = sess.run (x, feed_dict = { a : 10, b : 5.0})
 ```
+<!-- {"left" : 0, "top" : 4.56, "height" : 3.19, "width" : 10.25} -->
+
 Notes:
 
 
@@ -624,7 +626,7 @@ for i in tf.range(input_data.shape[0]): # Note the For loop
 $ (sudo) pip install tensorflow keras
 $ (sudo) pip install tensorflow-gpu keras  # For GPU
 ```
-<!-- {"left" : 0, "top" : 3.84, "height" : 0.7, "width" : 8.25} -->
+<!-- {"left" : 0, "top" : 3.9, "height" : 0.74, "width" : 8.71} -->
 
 <br/>
 
@@ -634,7 +636,7 @@ $ (sudo) pip install tensorflow-gpu keras  # For GPU
 $ conda install tensorflow keras
 $ conda install tensorflow-gpu keras  # For GPU
 ```
-<!-- {"left" : 0, "top" : 5.38, "height" : 0.53, "width" : 6.23} -->
+<!-- {"left" : 0, "top" : 5.63, "height" : 0.74, "width" : 8.71} -->
 
 
 
