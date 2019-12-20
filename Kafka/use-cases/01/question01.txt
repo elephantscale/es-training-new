@@ -1,0 +1,9 @@
+# Use case 01 question
+
+Topic 1 had 100,000 records
+Topic 2 has no records
+So nothing in the kSQL join
+
+When topic 1 begins to get data, the KSQL join may be huge. 
+Suddenly we become slow or run out of memory.
+Is that true?
