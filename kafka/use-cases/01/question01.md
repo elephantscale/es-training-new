@@ -11,4 +11,5 @@ Suddenly we become slow or run out of memory. Is that true?
 This depends on the internal implementation of of KSQL join.
 
 ### Answer
+* The implementation is documented [here](https://docs.confluent.io/current/ksql/docs/developer-guide/join-streams-and-tables.html) 
 * ??? 
