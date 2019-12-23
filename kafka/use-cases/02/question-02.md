@@ -9,4 +9,6 @@ onto 3 topics, T1, T2, and T3.
 * 
 
 ### Answer
-* ??? 
+* There are three legacy applications that publish their results into an SQL database
+* The database will publish three topics, one per each application
+* 
