@@ -2,6 +2,13 @@ Google Cloud for Data Scientists
 © Elephant Scale
 Dec. 20, 2019
 
+Major topics to be practically covered
+
+- Google big query
+- data proc
+- basic TensorFlow
+- visualication tools 
+
 Overview
 Data Science is all the rage today, and Google is one of the major promoters of it. Google Cloud Platform (GCP) is one of the leading platforms for Data Science.
 In this course, the students will get an overview of Data Science with Python, a standard environment for Data Science. They will also learn the specifics of the GCP and the capabilities that it offers to Data Scientists.
@@ -35,12 +42,6 @@ an SSH client (Linux and Mac already have ssh clients, for Windows Putty is reco
 a browser to access the cluster. We recommend Chrome browser
 
 
-Major topics to be practically covered
-
-- Google big query
-- data proc
-- basic TensorFlow
-- visualication tools 
 Detailed outline
 Data Science
 Data Science and Machine Learning
