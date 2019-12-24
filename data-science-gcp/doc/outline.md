@@ -1,6 +1,6 @@
 Google Cloud for Data Scientists
 © Elephant Scale
-June 17, 2019
+Dec. 20, 2019
 
 Overview
 Data Science is all the rage today, and Google is one of the major promoters of it. Google Cloud Platform (GCP) is one of the leading platforms for Data Science.
@@ -33,6 +33,14 @@ Zero Install: There is no need to install any software on students’ machines! 
 Students will need the following
 an SSH client (Linux and Mac already have ssh clients, for Windows Putty is recommended)
 a browser to access the cluster. We recommend Chrome browser
+
+
+Major topics to be practically covered
+
+- Google big query
+- data proc
+- basic TensorFlow
+- visualication tools 
 Detailed outline
 Data Science
 Data Science and Machine Learning
