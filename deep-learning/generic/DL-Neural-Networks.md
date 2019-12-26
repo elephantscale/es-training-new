@@ -363,7 +363,7 @@ Notes:
 ---
 
 
-## Playground : Classification
+## Playground: Classification
 
 [DL-Playground.md](DL-Playground.md#Classification Examples 1)
 
@@ -517,18 +517,17 @@ Notes:
 ---
 ## Sizing a Regression  Network
 
-<!-- TODO shiva -->
-
 | Bedrooms (input 1 | Bathrooms (input 2) | House Size (input 3) | Lot Size (input 4) | Sale Price (in thousands) |
 |-------------------|---------------------|----------------------|--------------------|---------------------------|
 | 2                 | 1                   | 1200                 | 2000               | 229                       |
 | 3                 | 1                   | 1500                 | 3500               | 319                       |
 | 4                 | 2                   | 2300                 | 5000               | 599                       |
 
+<!-- {"left" : 0.25, "top" : 1.01, "height" : 2.19, "width" : 9.75} -->
+
 <br clear="all" />
 
-<img src="../../assets/images/deep-learning/network-sizing-1-regression.png" alt="XXX image missing" style="width:50%;float:right;"/>
-
+<img src="../../assets/images/deep-learning/network-sizing-1-regression.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 5.78, "top" : 3.48, "height" : 1.46, "width" : 4.34} -->
 
 - Input layer sizing:
   - Match the number of input dimensions = 4 (bedrooms, bathrooms, house size, lot size)
@@ -542,7 +541,6 @@ Notes:
 
 ## Sizing Binary Classification Network
   
-<!-- TODO shiva -->
 
 | Income (input 1) | Credit Score (input 2) | Current Debt (input 3) | Loan Approved (output) |
 |------------------|------------------------|------------------------|------------------------|
@@ -550,7 +548,10 @@ Notes:
 | 80,000           | 750                    | 100,000                | 1                      |
 | 100,000          | 800                    | 50,000                 | 1                      |
 
-<img src="../../assets/images/deep-learning/network-sizing-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;"/>
+<!-- {"left" : 0.26, "top" : 1, "height" : 2.19, "width" : 9.75} -->
+
+<img src="../../assets/images/deep-learning/network-sizing-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 5.49, "top" : 3.83, "height" : 1.4, "width" : 4.48} -->
+
 
 - Input layer sizing 
   -  Same as input dimensions = 3 (input, credit score, debt)
@@ -558,16 +559,16 @@ Notes:
 - Output layer sizing
     - one neuron for 0/1 output
     
-- Hidden layer  sizing 
+- Hidden layer sizing 
   - flexible
     
 ---
 
 ## Sizing Multi Classification Network 
 
-<img src="../../assets/images/deep-learning/LowLevel-mnist.jpeg" alt="XXX image missing" style="width:33%;float:right;"/>
+<img src="../../assets/images/deep-learning/LowLevel-mnist.jpeg" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 7.38, "top" : 1.05, "height" : 1.81, "width" : 2.73} -->
 
-<img src="../../assets/images/deep-learning/network-sizing-3-multi-classification.png" alt="XXX image missing" style="width:50%;float:right;clear:both;"/>
+<img src="../../assets/images/deep-learning/network-sizing-3-multi-classification.png" alt="XXX image missing" style="width:50%;float:right;clear:both;"/><!-- {"left" : 5.87, "top" : 3.63, "height" : 1.63, "width" : 4.22} -->
 
 - Input layer sizing 
   - Match input dimensions
@@ -590,6 +591,9 @@ Notes:
 | Output Class | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |-------------------------------|-----|-----|------|------|-----|-----|-----|-----|------|-----|
 | Probability <br/> (Total 1.0) | 0.0 | 0.0 | 0.02 | 0.95 | 0.0 | 0.0 | 0.0 | 0.0 | 0.03 | 0.0 |
+
+<!-- {"left" : 0.55, "top" : 1.1, "height" : 1.19, "width" : 9.75, "columnwidth" : [1.76, 0.74, 0.74, 0.74, 0.74, 0.74,0.74,0.74,0.74,0.74,0.74]} -->
+
 
 - The Softmax function produces probabilities for output values.
 

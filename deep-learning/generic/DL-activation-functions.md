@@ -124,7 +124,8 @@ Notes:
 - As we know backpropagation works by going from output  layer to input layer (in reverse)
     - It propagates the error gradient backwards
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:50%" /><!-- {"left" : 2.35, "top" : 3.73, "height" : 4.17, "width" : 5.56} -->
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:50%" /><!-- {"left" : 1.51, "top" : 3.6, "height" : 3.62, "width" : 7.24} -->
+
 
 
 
@@ -132,7 +133,7 @@ Notes:
 
 ## Vanishing/Exploding Gradients Problems
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:35%;float:right;" /><!-- {"left" : 7.06, "top" : 1.01, "height" : 2.33, "width" : 3.11} -->
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:35%;float:right;" /><!-- {"left" : 6.76, "top" : 1.14, "height" : 1.68, "width" : 3.36} -->
 
 - As it moves through the layers, the gradients gets smaller and smaller as it reaches lower layers
 

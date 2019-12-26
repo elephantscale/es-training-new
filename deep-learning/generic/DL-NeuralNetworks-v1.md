@@ -221,7 +221,7 @@ Notes:
 ## Softmax Function
 
 
-<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="Softmax-Function.png" style="background:white;width:80%;"/><!-- {"left" : 0.38, "top" : 1.5, "height" : 4.5, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="Softmax-Function.png" style="background:white;width:80%;"/><!-- {"left" : 0.38, "top" : 2.28, "height" : 4.5, "width" : 9.48} -->
 
 
 Notes:
@@ -271,7 +271,7 @@ Notes:
 
      - This is known as the XOR problem (though many other datasets are not linearly separable).
 
-<img src="../../assets/images/deep-learning/xor.png" alt="xor.png" style="background:white;width:40%;"/><!-- {"left" : 2.63, "top" : 3.98, "height" : 3.49, "width" : 4.99} -->
+<img src="../../assets/images/deep-learning/xor.png" alt="xor.png" style="background:white;width:40%;"/><!-- {"left" : 2.63, "top" : 4.71, "height" : 3.49, "width" : 4.99} -->
 
 
 
@@ -291,7 +291,7 @@ Notes:
 
  * What if we add a new layer to our network?
 
-<img src="../../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="background:white;width:35%;"/><!-- {"left" : 3.29, "top" : 3.78, "height" : 3.52, "width" : 3.66} -->
+<img src="../../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="background:white;width:35%;"/><!-- {"left" : 3.29, "top" : 4.44, "height" : 3.52, "width" : 3.66} -->
 
 
 
@@ -342,7 +342,7 @@ Notes:
  * Press play to converge on a solution.
 
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-sprial-1.png" alt="playground-sprial-1.png" style="background:white;width:30%;"/><!-- {"left" : 3.18, "top" : 3.55, "height" : 3.72, "width" : 3.9} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-sprial-1.png" alt="playground-sprial-1.png" style="background:white;width:30%;"/><!-- {"left" : 2.86, "top" : 3.93, "height" : 4.33, "width" : 4.54} -->
 
 Notes:
 
@@ -417,7 +417,7 @@ Notes:
 
  * Gradient Descent is a common optimization algorithm.
 
-<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 2.23, "top" : 2.61, "height" : 3.94, "width" : 5.78} -->
+<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 1.7, "top" : 3.14, "height" : 4.67, "width" : 6.85} -->
 
 
 
@@ -432,7 +432,7 @@ Notes:
      - At the bottom of the hill, the slope is zero, so the snowboarder stops. This is the minimum.
      -  There may, however, be parts of the run with a zero slope that are NOT the bottom (local minima).  
 
-<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 3.12, "top" : 4.41, "height" : 2.74, "width" : 4.02} -->
+<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 2.58, "top" : 4.84, "height" : 3.46, "width" : 5.08} -->
 
 
 Notes:

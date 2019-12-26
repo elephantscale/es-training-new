@@ -426,7 +426,7 @@ Notes:
 
 ## Training Sequences
 
-<img src="../../assets/images/deep-learning/input-sequence.png" style="width:40%;float:right;"/><!-- {"left" : 5.14, "top" : 2.16, "height" : 4.75, "width" : 4.84} -->
+<img src="../../assets/images/deep-learning/input-sequence.png" style="width:40%;float:right;"/><!-- {"left" : 5.14, "top" : 1.37, "height" : 4.75, "width" : 4.84} -->
 
  *  We are training with sequences of 50 prices of SP500.
 
@@ -599,7 +599,7 @@ Notes:
 
  *  CNN variations may be more effective.
 
- *  Only use LSTMs when you *must*.
+ *  Only use LSTMs when you *must.*
 
 Notes:
 

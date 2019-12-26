@@ -350,7 +350,7 @@ Notes:
 
 ## Pooling Layer
 
-<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:40%;"/><!-- {"left" : 3.03, "top" : 0.96, "height" : 2.07, "width" : 4.19} -->
+<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:40%;"/><!-- {"left" : 8.13, "top" : 1, "height" : 0.99, "width" : 2.01} -->
 
  * A pooling layer is used to sub-sample (i.e., shrink) the input image.
  * Like a convolutional layer, a pooling layer is connected to a small set of neurons in input image which fall within a receptive field.

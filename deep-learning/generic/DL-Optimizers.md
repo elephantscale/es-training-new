@@ -107,9 +107,9 @@ Notes:
 
 ## Momentum Optimizer
 
-<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.87, "top" : 2.12, "height" : 0.74, "width" : 3.32} -->
+<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.87, "top" : 1.09, "height" : 0.74, "width" : 3.32} -->
 
-<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:30%;float:right;clear:both;"/><!-- {"left" : 7.6, "top" : 2.97, "height" : 0.91, "width" : 2.46} -->
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:30%;float:right;clear:both;"/><!-- {"left" : 7.6, "top" : 2, "height" : 0.91, "width" : 2.46} -->
 
 - Momentum takes into account of what previous gradients were
 

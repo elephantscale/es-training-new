@@ -3,7 +3,7 @@
 
 ---
 
-# Part 1 : Essentials
+# Part 1: Essentials
 
 ---
 
@@ -96,7 +96,7 @@ Notes:
 <img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 8.45, "top" : 1.28, "height" : 2.39, "width" : 1.74} -->
 
  * One **Epoch** means when an entire dataset passed forward and backward exactly ONCE
-    - Restaurant Example : Entire table's meal is sent back once and re-delivered
+    - Restaurant Example: Entire table's meal is sent back once and re-delivered
  * Why do we need more than one epoch?
     - Optimizer algorithms try to adjust the weights of neural networks  based on training data
     - Just one-pass isn't enough to tweak the weights
@@ -256,7 +256,7 @@ Notes:
 
 ---
 
-## Backpropagation Process : Forward Pass
+## Backpropagation Process: Forward Pass
 
  * During training phase, training data is fed to network
 
@@ -268,7 +268,7 @@ Notes:
 
 ---
 
-## Backpropagation Process : Prediction
+## Backpropagation Process: Prediction
 
  * Network predicts an outcome
 
@@ -281,7 +281,7 @@ Notes:
 
 
 ---
-## Backpropagation Process : Backward Pass
+## Backpropagation Process: Backward Pass
 
  * It then computes how much each neuron in the last hidden layer contributed to each output neuron's error
 
@@ -338,7 +338,7 @@ Notes:
 
  * And finally slightly tweaks the connection weights to reduce the error (Gradient Descent step).
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:30%;"/><!-- {"left" : 2.93, "top" : 4.44, "height" : 4.06, "width" : 4.38} -->
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:50%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
 
 
 Notes:  
@@ -373,7 +373,7 @@ Notes:
 
 ---
 
-# Part 2 : Advanced Concepts
+# Part 2: Advanced Concepts
 
 ---
 
@@ -580,7 +580,7 @@ These are discussed in the following sections/slides
 
  * When number of inputs == number of outputs, we get a simplified equation  
 
-<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 2.77, "top" : 8.39, "height" : 0.43, "width" : 2.04} -->&nbsp;  &nbsp; &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 5.59, "top" : 8.39, "height" : 0.43, "width" : 1.88} -->
+<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 2.77, "top" : 7.93, "height" : 0.43, "width" : 2.04} -->&nbsp;  &nbsp; &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 5.59, "top" : 7.93, "height" : 0.43, "width" : 1.88} -->
 
 
 Notes:  

@@ -36,12 +36,14 @@ Notes:
  * In NLP, we often need to determine reference.
 
 <br/>
+
 ```text
 I was talking with **my** mother about politics.
 "I voted for Hillary Clinton because **she** was most
 aligned with **my** values," **she** said.
+
 ```
-<!-- {"left" : 0, "top" : 1.68, "height" : 1.14, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.76, "height" : 1.14, "width" : 10.25} -->
 
  * Who does the first "she" refer to?
 
@@ -63,7 +65,7 @@ Notes:
 
  * Other cases where the data changes on temporal basis
 
-  <img src="../../assets/images/deep-learning/time-series-stocks.png" alt="XXX image missing" style="background:white;max-width:80%;" />   <!-- {"left" : 0.74, "top" : 3.07, "height" : 4.63, "width" : 8.77} -->
+<img src="../../assets/images/deep-learning/time-series-stocks.png" alt="XXX image missing" style="background:white;max-width:80%;" />   <!-- {"left" : 0.74, "top" : 3.3, "height" : 4.63, "width" : 8.77} -->
 
 
 
@@ -257,7 +259,7 @@ Notes:
 
  *  Tanh is the most commonly used in RNNs.
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="XXX image missing" style="background:white;max-width:40%;" />  <!-- {"left" : 2.36, "top" : 4.3, "height" : 2.16, "width" : 5.51} --> <img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:40%;" />  <!-- {"left" : 2.22, "top" : 6.69, "height" : 2.16, "width" : 5.82} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="XXX image missing" style="background:white;max-width:40%;" /> &nbsp;  <!-- {"left" : 2.36, "top" : 4.3, "height" : 2.16, "width" : 5.51} -->  &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:40%;" /><!-- {"left" : 2.22, "top" : 6.69, "height" : 2.16, "width" : 5.82} -->
 
 
 Notes:
@@ -356,7 +358,7 @@ Notes:
 ---
 ## One to One
 
-<img src="../../assets/images/deep-learning/RNNs--01-one-to-one.png" alt="XXX image missing" style="background:white;max-width:15%;float:right;"/> <!-- {"left" : 7.59, "top" : 1.67, "height" : 5.73, "width" : 2.06} -->
+<img src="../../assets/images/deep-learning/RNNs--01-one-to-one.png" alt="XXX image missing" style="background:white;max-width:15%;float:right;"/> <!-- {"left" : 7.78, "top" : 1.2, "height" : 5.73, "width" : 2.06} -->
 
  *  One to One is basically a feedforward network
 
@@ -375,7 +377,7 @@ Notes:
 ---
 ## One to Many
 
-<img src="../../assets/images/deep-learning/RNNs--01-one-to-many-01.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;" /> <!-- {"left" : 6.97, "top" : 1.54, "height" : 5.99, "width" : 2.9} -->
+<img src="../../assets/images/deep-learning/RNNs--01-one-to-many-01.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;" /> <!-- {"left" : 6.97, "top" : 1.2, "height" : 5.99, "width" : 2.9} -->
 
  *  Input is fixed
 
@@ -397,7 +399,7 @@ Notes:
 ---
 ## Many to One
 
-<img src="../../assets/images/deep-learning/RNNs--01-many-to-one.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;"/> <!-- {"left" : 7.3, "top" : 1.84, "height" : 5.4, "width" : 2.62} -->
+<img src="../../assets/images/deep-learning/RNNs--01-many-to-one.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;"/> <!-- {"left" : 7.3, "top" : 1.2, "height" : 5.4, "width" : 2.62} -->
 
  *  Input is a sequence
 
@@ -419,7 +421,7 @@ Notes:
 ---
 ## Many to Many
 
-<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-01.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;"/><!-- {"left" : 6.06, "top" : 2.14, "height" : 4.8, "width" : 3.88} -->
+<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-01.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;"/><!-- {"left" : 6.06, "top" : 1.2, "height" : 4.8, "width" : 3.88} -->
 
  *  Input is a Sequence
 
@@ -439,7 +441,7 @@ Notes:
 ---
 ## Many to Many (Synchronized)
 
-<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-02.png" alt="XXX image missing" style="background:white;width:25%;float:right;" /> <!-- {"left" : 6.37, "top" : 1.32, "height" : 5.74, "width" : 3.43} -->
+<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-02.png" alt="XXX image missing" style="background:white;width:25%;float:right;" /> <!-- {"left" : 6.37, "top" : 1.2, "height" : 5.74, "width" : 3.43} -->
 
  *  Input is a Sequence
 
@@ -495,7 +497,7 @@ Notes:
      -  To perform final classification (or regression)
      -  Apply model to our problem.
 
-<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" alt="XXX image missing" style="background:white;width:27%;"/><!-- {"left" : 5.1, "top" : 2.7, "height" : 4.24, "width" : 4.82} -->
+<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" alt="XXX image missing" style="background:white;width:27%;"/><!-- {"left" : 2.71, "top" : 4.21, "height" : 4.24, "width" : 4.82} -->
 
 
 Notes:

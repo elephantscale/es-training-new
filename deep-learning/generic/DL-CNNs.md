@@ -89,7 +89,7 @@ Notes:
     
 - Here is an example of Hubble image taken using multiple cameras in multiple wave lengths, combined together
 
-<img src="../../assets/images/deep-learning/3rd-party/hubble-image-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /><!-- {"left" : 2.69, "top" : 3.73, "height" : 3.66, "width" : 4.88} -->
+<img src="../../assets/images/deep-learning/3rd-party/hubble-image-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /><!-- {"left" : 2.25, "top" : 3.62, "height" : 4.32, "width" : 5.76} -->
 
 
 Notes:  
@@ -114,8 +114,7 @@ source : https://photographingspace.com/ap-color/
 
 ## Fully Connected Network's Limitations
 
-<img src="../../assets/images/deep-learning/fully-connected-2c.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%"/><!-- {"left" : 1.88, "top" : 4.92, "height" : 2.59, "width" : 2.93} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/fully-connected-2d.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%"/><!-- {"left" : 5.44, "top" : 4.92, "height" : 2.59, "width" : 2.93} --> 
-
+<img src="../../assets/images/deep-learning/fully-connected-2c.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%"/><!-- {"left" : 1.88, "top" : 5.12, "height" : 2.59, "width" : 2.93} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/fully-connected-2d.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%"/><!-- {"left" : 5.44, "top" : 5.12, "height" : 2.59, "width" : 2.93} --> 
 
 - The second layer will have  
     - 40,000 connections per pixels x (200 px x 200 px) = 1.6 billion connections
@@ -563,7 +562,8 @@ Notes:
   * Reduces need for fully connected neurons.
   * Depth (in this case 5) is the number of filters used.
 
-<img src="../../assets/images/deep-learning/depthcol.png" alt="XXX image missing" style="background:white;max-width:100%;width:30%;" />
+<img src="../../assets/images/deep-learning/depthcol.png" alt="XXX image missing" style="background:white;max-width:100%;width:30%;" /><!-- {"left" : 1.6, "top" : 3.27, "height" : 5.06, "width" : 7.04} -->
+
 Notes: 
 
 
@@ -596,7 +596,7 @@ Notes:
 
 - Called 'zero padding'
 
-<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:60%;" /> <!-- {"left" : 2.38, "top" : 2.78, "height" : 4.09, "width" : 5.49} -->
+<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:60%;" /> <!-- {"left" : 1.91, "top" : 2.88, "height" : 4.79, "width" : 6.43} -->
   
 
 ---
@@ -638,7 +638,7 @@ Notes:
 ## Stacking Feature Maps 
 
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 1.02, "top" : 1.85, "height" : 5.36, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 1.02, "top" : 2.14, "height" : 5.36, "width" : 8.21} -->
 
 
 ---
@@ -753,7 +753,7 @@ Notes:
 * With 2x2 window, stride=2,  and max pooling, the image is reduced to 25% of original size
 
 
-<img src="../../assets/images/deep-learning/3rd-party/lighthouse-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /><!-- {"left" : 0.4, "top" : 3.67, "height" : 2.3, "width" : 3.45} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:10%;" /><!-- {"left" : 4.67, "top" : 4.09, "height" : 1.67, "width" : 1.67} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/lighthouse-1-small.jpg" alt="XXX image missing" style="background:white;max-width:100%;width:20%;" /><!-- {"left" : 6.97, "top" : 4.15, "height" : 1.54, "width" : 2.32} --> 
+<img src="../../assets/images/deep-learning/3rd-party/lighthouse-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /><!-- {"left" : 0.68, "top" : 3.67, "height" : 2.3, "width" : 3.45} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:10%;" /><!-- {"left" : 4.95, "top" : 4.09, "height" : 1.67, "width" : 1.67} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/lighthouse-1-small.jpg" alt="XXX image missing" style="background:white;max-width:100%;width:20%;" /><!-- {"left" : 7.25, "top" : 4.15, "height" : 1.54, "width" : 2.32} --> 
 
 ---
 
@@ -846,7 +846,8 @@ Notes:
 
  * Softmax Layer At end (for classification problems.)
 
-<img src="../../assets/images/deep-learning/Input_FC.png" alt="XXX image missing" style="background:white;max-width:100%;width:45%;" />  
+<img src="../../assets/images/deep-learning/Input_FC.png" alt="XXX image missing" style="background:white;max-width:100%;width:45%;" />  <!-- {"left" : 0.69, "top" : 5.12, "height" : 1.11, "width" : 8.88} -->
+
 
 Notes: 
 
@@ -856,7 +857,8 @@ Notes:
 
 ## Example Convolutional Network
 
-<img src="../../assets/images/deep-learning/3rd-party/Introduction-to-Neural-Networks--CNN.png" alt="XXX image missing" style="background:white;max-width:100%;width:45%;" />  
+<img src="../../assets/images/deep-learning/3rd-party/Introduction-to-Neural-Networks--CNN.png" alt="XXX image missing" style="background:white;max-width:100%;width:45%;" /> <!-- {"left" : 1.02, "top" : 2.57, "height" : 3.94, "width" : 8.21} -->
+ 
 
 Notes: 
 
@@ -935,9 +937,9 @@ Notes:
 
 ## Image Augmentation Example
 
-- Use techniques like : rotate slightly to left and right,  flip the image ...etc.
+- Use techniques like: rotate slightly to left and right,  flip the image ...etc.
 
-<img src="../../assets/images/deep-learning/image-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 1.27, "top" : 2.79, "height" : 3.15, "width" : 7.72} -->
+<img src="../../assets/images/deep-learning/image-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="100%" /> <!-- {"left" : 0.95, "top" : 3.12, "height" : 3.41, "width" : 8.36} -->
 
 
 
@@ -1003,7 +1005,7 @@ imagenet/
 
 ## Imagenet 
 
-<img src="../../assets/images/deep-learning/3rd-party/imagenet-1.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 1.8, "top" : 1.88, "height" : 5.3, "width" : 6.66} -->
+<img src="../../assets/images/deep-learning/3rd-party/imagenet-1.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 1.8, "top" : 2.17, "height" : 5.3, "width" : 6.66} -->
 
 
 ---
@@ -1034,7 +1036,7 @@ imagenet/
 
 - over 600,000 images
 
-<img src="../../assets/images/deep-learning/3rd-party/street-numbers-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%" /><!-- {"left" : 1.07, "top" : 3.09, "height" : 3.15, "width" : 4.72} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/google-streetview-car.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 6.26, "top" : 3.41, "height" : 1.99, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/3rd-party/street-numbers-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%" /><!-- {"left" : 1.07, "top" : 3.09, "height" : 3.48, "width" : 4.72} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/google-streetview-car.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 6.26, "top" : 4.06, "height" : 1.99, "width" : 2.93} -->
 
 
 ---
