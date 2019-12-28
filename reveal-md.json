@@ -18,5 +18,12 @@
 
     "data-separator": "^\n---\n$",
     "data-separator-vertical": "^\n----\n$",
-    "data-separator-notes": "^Notes:"
+    "data-separator-notes": "^Notes:",
+	
+	"copyright" : {
+    "text" : "Copyright (c) CURRENT_YEAR  Elephant Scale Inc.  All rights reserved.", 
+    "visible" : true,
+    "position" : "bottom-left"
+	}
+	
 }
