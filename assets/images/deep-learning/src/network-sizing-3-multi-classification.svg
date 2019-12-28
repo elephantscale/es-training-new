@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="-645 74 2195 844" width="2195" height="844">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-645 28 2195 890" width="2195" height="890">
   <defs>
     <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
       <font-face-src>
@@ -24,9 +24,9 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2019-12-25 15:04:28 +0000</dc:date>
+    <dc:date>2019-12-28 17:31:19 +0000</dc:date>
   </metadata>
-  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" stroke="none" fill="none">
+  <g id="Canvas_1" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke-dasharray="none">
     <title>Canvas 1</title>
     <g id="Canvas_1: Layer 1">
       <title>Layer 1</title>
@@ -90,37 +90,37 @@
         <circle cx="324.42854" cy="517.24726" r="42.8730570611474" stroke="#160069" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_31">
-        <text transform="translate(823 79)" fill="#1e0064">
+        <text transform="translate(823 33.761905)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">0</tspan>
         </text>
       </g>
       <g id="Graphic_33">
-        <rect x="925.9517" y="161.92072" width="57.65678" height="66.16271" fill="#a4f8fd"/>
-        <rect x="925.9517" y="161.92072" width="57.65678" height="66.16271" stroke="#1e0061" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <rect x="930.555" y="247.98137" width="57.65678" height="66.16271" fill="#a4f8fd"/>
+        <rect x="930.555" y="247.98137" width="57.65678" height="66.16271" stroke="#1e0061" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_34">
-        <rect x="925.9517" y="275.7559" width="482.0483" height="66.16271" fill="#a4f8fd"/>
-        <rect x="925.9517" y="275.7559" width="482.0483" height="66.16271" stroke="#1e0061" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <rect x="925.9517" y="349.85055" width="482.0483" height="66.16271" fill="#a4f8fd"/>
+        <rect x="925.9517" y="349.85055" width="482.0483" height="66.16271" stroke="#1e0061" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_35">
-        <rect x="920" y="558.26035" width="92.91167" height="66.16271" fill="#a4f8fd"/>
-        <rect x="920" y="558.26035" width="92.91167" height="66.16271" stroke="#1e0061" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <rect x="920" y="564.71734" width="92.91167" height="66.16271" fill="#a4f8fd"/>
+        <rect x="920" y="564.71734" width="92.91167" height="66.16271" stroke="#1e0061" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_32">
-        <rect x="913.9156" y="80.26035" width="18" height="597.1716" fill="#033399"/>
+        <rect x="913.9156" y="43.04762" width="18" height="677.9524" fill="#033399"/>
       </g>
       <g id="Graphic_37">
-        <text transform="translate(1445.2963 282.00654)" fill="#1e0064">
+        <text transform="translate(1445.2963 356.1012)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">95%</tspan>
         </text>
       </g>
       <g id="Graphic_39">
-        <text transform="translate(1028.7037 162.08343)" fill="#1e0064">
+        <text transform="translate(1034.6676 248.14408)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">2%</tspan>
         </text>
       </g>
       <g id="Graphic_40">
-        <text transform="translate(1028.7037 563.26035)" fill="#1e0064">
+        <text transform="translate(1028.7037 569.71734)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">3%</tspan>
         </text>
       </g>
@@ -159,38 +159,47 @@
         <circle cx="521.8644" cy="631.0824" r="42.8730570611474" stroke="#160069" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_49">
-        <text transform="translate(823 157.875)" fill="#1e0064">
+        <text transform="translate(823 140.95299)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">1</tspan>
         </text>
       </g>
       <g id="Graphic_50">
-        <text transform="translate(823 236.75)" fill="#1e0064">
+        <text transform="translate(823 248.14408)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">2</tspan>
         </text>
       </g>
       <g id="Graphic_51">
-        <text transform="translate(823 315.625)" fill="#1e0064">
+        <text transform="translate(823 355.33516)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">3</tspan>
         </text>
       </g>
       <g id="Graphic_52">
-        <text transform="translate(823 394.5)" fill="#1e0064">
+        <text transform="translate(823 462.52625)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">4</tspan>
         </text>
       </g>
       <g id="Graphic_55">
-        <text transform="translate(823 538.5096)" fill="#1e0064">
+        <text transform="translate(823 569.71734)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">8</tspan>
         </text>
       </g>
       <g id="Graphic_56">
-        <text transform="translate(823 617.3846)" fill="#1e0064">
+        <text transform="translate(823 676.9084)" fill="#1e0064">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e0064" x="0" y="50">9</tspan>
         </text>
       </g>
       <g id="Graphic_57">
         <path d="M -91.86086 371.80757 L -91.86086 354.2055 C -91.86086 353.65322 -91.41314 353.2055 -90.86086 353.2055 L -7.730621 353.2055 C -7.1783365 353.2055 -6.730621 352.7578 -6.730621 352.2055 L -6.730621 336.6934 C -6.730621 336.1411 -6.282906 335.6934 -5.730621 335.6934 C -5.455491 335.6934 -5.192515 335.80675 -5.003605 336.00677 L 19.847473 362.3199 C 20.21145 362.7053 20.21145 363.30777 19.847473 363.69316 L -5.003605 390.0063 C -5.382815 390.40782 -6.0157214 390.4259 -6.4172414 390.0467 C -6.617266 389.8578 -6.730621 389.5948 -6.730621 389.3197 L -6.730621 373.80757 C -6.730621 373.2553 -7.1783365 372.80757 -7.730621 372.80757 L -90.86086 372.80757 C -91.41314 372.80757 -91.86086 372.35985 -91.86086 371.80757 Z" fill="#e4a82e"/>
         <path d="M -91.86086 371.80757 L -91.86086 354.2055 C -91.86086 353.65322 -91.41314 353.2055 -90.86086 353.2055 L -7.730621 353.2055 C -7.1783365 353.2055 -6.730621 352.7578 -6.730621 352.2055 L -6.730621 336.6934 C -6.730621 336.1411 -6.282906 335.6934 -5.730621 335.6934 C -5.455491 335.6934 -5.192515 335.80675 -5.003605 336.00677 L 19.847473 362.3199 C 20.21145 362.7053 20.21145 363.30777 19.847473 363.69316 L -5.003605 390.0063 C -5.382815 390.40782 -6.0157214 390.4259 -6.4172414 390.0467 C -6.617266 389.8578 -6.730621 389.5948 -6.730621 389.3197 L -6.730621 373.80757 C -6.730621 373.2553 -7.1783365 372.80757 -7.730621 372.80757 L -90.86086 372.80757 C -91.41314 372.80757 -91.86086 372.35985 -91.86086 371.80757 Z" stroke="#160069" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_58">
+        <rect x="883" y="274.7357" width="38.00293" height="12.654078" fill="#033399"/>
+      </g>
+      <g id="Graphic_59">
+        <rect x="883" y="379.50813" width="38.00293" height="12.654078" fill="#033399"/>
+      </g>
+      <g id="Graphic_60">
+        <rect x="883" y="593.8903" width="38.00293" height="12.654078" fill="#033399"/>
       </g>
     </g>
   </g>
