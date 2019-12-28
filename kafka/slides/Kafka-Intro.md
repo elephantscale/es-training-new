@@ -318,7 +318,7 @@ Notes:
 
  * **Message deletion**
 
- *  **Other Message Queues**:
+ *  **Other Message Queues:**
      - In Most systems, after a message is 'read' it can be deleted
 
  *  **Kafka:**
@@ -327,7 +327,7 @@ Notes:
      - Messages are expired by Kafka automatically after a certain time (7 days default)
      - Deletion is possible if compaction is enabled (more on this later).
 
- *  **Reason**: Many applications can subscribe to a topic.  A client deleting a message can deprive other clients of their input
+ *  **Reason:** Many applications can subscribe to a topic.  A client deleting a message can deprive other clients of their input
 
 Notes:
 
@@ -339,9 +339,9 @@ Notes:
 ## Kafka vs. Other Message Queues
 
 
- * **Message read order**
+ *  **Message read order**
 
- *  **Other Message Queues**:
+ *  **Other Message Queues:**
      - Usually messages are read in order
      - FF & Rewind are not performant operations
 
@@ -349,7 +349,7 @@ Notes:
      - Messages can be read in any order
      - Fast-forward & Rewind are very fast operations
 
- *  **Reason**: Clients can choose to skip messages if need to be
+ *  **Reason:** Clients can choose to skip messages if need to be
 
 Notes:
 
@@ -360,9 +360,9 @@ Notes:
 
 ## Kafka vs. Other Message Queues
 
- * **Message processing guarantee**
+ *  **Message processing guarantee**
 
- *  **Other Message Queues**:
+ *  **Other Message Queues:**
      - Hard to guarantee one message will only be processed by one client
 
  *  **Kafka:**
@@ -382,7 +382,7 @@ Notes:
 
  * **Concurrency With Multiple Applications**
 
- *  **Other Message Queues**:
+ *  **Other Message Queues:**
 
      - Usually one / small number of clients can access simultaneously
 
@@ -483,19 +483,19 @@ Notes:
 <img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/><!-- {"left" : 7.24, "top" : 1.28, "height" : 3.63, "width" : 2.72} -->
 
 
- *  **Overview**:   
+ *  **Overview:**   
    - Install Kafka on provided virtual machines
 
- *  **Builds on previous labs**:   
+ *  **Builds on previous labs:**
    - None
 
- *  **Approximate Time**:   
+ *  **Approximate Time:**  
    - 30 - 40 mins
 
- *  **Instructions**:   
+ *  **Instructions:**   
    - lab-1: labs/1-installing-kafka.md
 
- *  **To Instructor**:   
+ *  **To Instructor:**  
    - Please walk through this lab first on screen
 
 
@@ -556,20 +556,20 @@ Notes:
 
 
  * Roles
-     -  **Producers**: write data to Kafka
-     -  **Consumers**: read data from Kafka
-     -  **Brokers**: Kafka nodes
-     -  **Zookeeper**: Keep track of brokers
+     -  **Producers:** write data to Kafka
+     -  **Consumers:** read data from Kafka
+     -  **Brokers:** Kafka nodes
+     -  **Zookeeper:** Keep track of brokers
 
  * Data
      -  **Message:**  'basic unit' of data in Kafka
-     -  **Topics**: Messages are organized as topics
-     -  **Partitions**: Topics are split into partitions
-     -  **Commit Log**: How data is organized
+     -  **Topics:** Messages are organized as topics
+     -  **Partitions:** Topics are split into partitions
+     -  **Commit Log:** How data is organized
 
  * Advanced
-     - **Consumer Group**: a set of consumers for scaling
-     - **Offset**: message's position within a partition
+     - **Consumer Group:** a set of consumers for scaling
+     - **Offset:** message's position within a partition
 
 Notes:
 
@@ -616,10 +616,10 @@ Notes:
 ## Kafka Concepts
 
 
- * In Kafka a basic unit of data is a  **'message'**
+ * In Kafka a basic unit of data is a  '**message**'
      - Message can be email / connection request / alert event
 
- * Messages are stored in  **'topics**'
+ * Messages are stored in  '**topics**'
      - Topics are like 'queues'
      - Sample topics could be: `emails` / `alerts`
 
@@ -686,7 +686,7 @@ Notes:
  * One partition is stored in one machine (broker)
  * Partitions are replicated to prevent data loss, in case a machine crashes
  * Default setup is 2 copies (one primary, one replica)
-     - One broker is the ' **owner** ' for a partition
+     - One broker is the '**owner**' for a partition
  * Replicas are purely there to prevent data loss
  * Replicas are never written to,  nor read from
      - So increasing number of replicas does not increase throughput
@@ -899,13 +899,13 @@ Notes:
 
 <img src="../../assets/images/kafka/3rd-party/Bundle-2.png" alt="Bundle-2.png" style="width:25%;float:right;"/><!-- {"left" : 6.83, "top" : 1.3, "height" : 3.81, "width" : 3.16} -->
 
- *  **Bin**: has executables and utilities
+ *  **Bin:** has executables and utilities
 
- *  **Config**: config files
+ *  **Config:** config files
 
- *  **Libs**: jar files
+ *  **Libs:** jar files
 
- *  **Logs**: kafka logs
+ *  **Logs:** kafka logs
 
 
 Notes:
@@ -926,7 +926,7 @@ Notes:
 
  * Managing topics
 
-     - **bin/kafka-topics**: Lists / create / delete topics
+     - **bin/kafka-topics:** Lists / create / delete topics
 
  * Sending Messages
 
@@ -994,19 +994,19 @@ Notes:
 <img src="../../assets/images/icons/individual-labs.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 7.15, "top" : 1.3, "height" : 3.62, "width" : 2.71} -->
 
 
- *  **Overview**:
+ *  **Overview:**
    - Use Kafka CLI tools
 
- *  **Builds on previous labs**:   
+ *  **Builds on previous labs:**  
    - 1-install Kafka
 
- *  **Approximate Time**:   
+ *  **Approximate Time:** 
    - 30 - 40 mins
 
- *  **Instructions**:   
+ *  **Instructions:**  
     - lab-2: labs/2-kafka-utils.md
 
- *  **To Instructor**:
+ *  **To Instructor:**
 
 
 Notes:
@@ -1032,8 +1032,8 @@ Notes:
  * Each message has a  **unique offset within a partition**
      - Increasing number (Long)
      - Added by Kafka automatically when a message is written
- * Producers ' **append** ' messages to the end of partition
- * If messages have a ' **key** '
+ * Producers '**append**' messages to the end of partition
+ * If messages have a '**key**'
      - A particular key is guaranteed to be written to the same partition
      - Done using hashing of key
      - Guarantees message order within a key
@@ -1136,7 +1136,7 @@ Notes:
 
  * Resume from the  **offset**  of last message read
 
- * This offset is stored in Kafka ( **__offsets**  topic)
+ * This offset is stored in Kafka ( **offsets**  topic)
 
  * Consumers can resume after a crash by starting from the last seen offset
 
@@ -1455,7 +1455,7 @@ Notes:
 
      - removing records whose key appears in the head of the log
 
- *  **log .cleaner.min.compaction.lag.ms**: The minimum time a message will remain uncompacted in the log. Only applicable for logs that are being compacted.
+ *  **log .cleaner.min.compaction.lag.ms:** The minimum time a message will remain uncompacted in the log. Only applicable for logs that are being compacted.
 
 Notes:
 

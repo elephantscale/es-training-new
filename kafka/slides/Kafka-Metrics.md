@@ -98,7 +98,7 @@ Notes:
 
 
 <img src="../../assets/images/logos/graphite-logo.png" alt="graphlte-logo.png" style="width:30%;"/><!-- {"left" : 0.37, "top" : 5.6, "height" : 0.91, "width" : 2.84} -->
-&nbsp;<img src="../../assets/images/logos/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; "/><!-- {"left" : 3.67, "top" : 5.51, "height" : 1.08, "width" : 2.5} -->&nbsp;<img src="../../assets/images/logos/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:25%;" /><!-- {"left" : 7.13, "top" : 5.77, "height" : 0.56, "width" : 2.74} -->
+&nbsp;<img src="../../assets/images/logos/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; "/><!-- {"left" : 3.67, "top" : 5.51, "height" : 1.08, "width" : 2.5} --> &nbsp;&nbsp; &nbsp;<img src="../../assets/images/logos/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:30%;" /><!-- {"left" : 7.13, "top" : 5.77, "height" : 0.56, "width" : 2.74} -->
 
 ---
 

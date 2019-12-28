@@ -367,7 +367,7 @@ Notes:
 ## Lab: MyVideos Producers
 
 
- *  **Overview**:
+ *  **Overview:**
 
      - Create Producers for the Rating topics
 
@@ -375,7 +375,7 @@ Notes:
 
  * Bonus: Create producers for the other topics as well!
 
- *  **Approximate time**: 60-90 minutes
+ *  **Approximate time:** 60-90 minutes
 
 
 Notes:

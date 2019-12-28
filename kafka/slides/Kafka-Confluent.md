@@ -34,7 +34,7 @@ Notes:
 ## Lab 8.1: Setup Confluent
 
 
- *  **Overview**: Download, install and start Confluent
+ *  **Overview:** Download, install and start Confluent
 
  *  **Builds on previous labs:** None
 
@@ -80,7 +80,7 @@ Notes:
 
 ## Standard Kafka SerDe
 
-<img src="../../assets/images/kafka/3rd-party/Standard-Kafka-SerDe-2.png" alt="Standard-Kafka-SerDe-2.png"style="width: 30%;float:right;"/><!-- {"left" : 6.94, "top" : 1.05, "height" : 5.69, "width" : 3.19} -->
+<img src="../../assets/images/kafka/3rd-party/Standard-Kafka-SerDe-2.png" alt="Standard-Kafka-SerDe-2.png" style="width:30%;float:right;"/><!-- {"left" : 6.94, "top" : 1.05, "height" : 5.69, "width" : 3.19} -->
 
  * Kafka comes with Serializers Deserializers for standard Java types
 

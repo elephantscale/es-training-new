@@ -1342,7 +1342,7 @@ Notes:
 
  * Producer  send can be  **idempotent** 
 
-     - Set in producer via   *"*  *enable.idempotence*  *=true"* 
+     - Set in producer via   **"enable.idempotence= true"** 
 
  * Producer can write a batch  **_atomically_** 
 
@@ -1378,7 +1378,7 @@ An idempotent operation is one which can be performed many times without causing
 
  * Kafka Streams API implements Exactly Once Processing
 
-     -  *"*  *processing.guarantee*  *=*  *exactly_once*  *"* 
+     -  **"processing.guarantee= exactly_once"**
 
  * Processing happens once
 

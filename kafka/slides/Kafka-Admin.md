@@ -173,7 +173,7 @@ Notes:
  * Zookeeper
      - ZK 3.4.x is stable and well tested with Kafka
 
-<img src="../../assets/images/logos/linux-logo-1.png" style="width:20%;"/><!-- {"left" : 0.99, "top" : 4.91, "height" : 1.46, "width" : 2.94} --> &nbsp; &nbsp; <img src="../../assets/images/logos/java-logo-1.png" style="width:20%;"/><!-- {"left" : 4.08, "top" : 4.6, "height" : 2.08, "width" : 2.08} --> &nbsp; &nbsp; <img src="../../assets/images/logos/zookeeper-logo-2.png" style="width:20%;"/><!-- {"left" : 6.31, "top" : 5.04, "height" : 1.19, "width" : 3.57} -->
+<img src="../../assets/images/logos/linux-logo-1.png" style="width:20%;"/><!-- {"left" : 0.99, "top" : 4.91, "height" : 1.46, "width" : 2.94} --> &nbsp; &nbsp; <img src="../../assets/images/logos/java-logo-1.png" style="width:20%;"/><!-- {"left" : 4.08, "top" : 4.6, "height" : 2.08, "width" : 2.08} --> &nbsp; &nbsp; <img src="../../assets/images/logos/zookeeper-logo-2.png" style="width:30%;"/><!-- {"left" : 6.31, "top" : 5.04, "height" : 1.19, "width" : 3.57} -->
 
 
 

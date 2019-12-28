@@ -1,4 +1,4 @@
-<br/># Kafka Streams Intro
+# Kafka Streams Intro
 
 
 ---
@@ -43,9 +43,9 @@ Notes:
 
 ## Kafka Application Using Java 
 
-- Pros : easy, simple 
+- Pros: easy, simple 
 
-- Cons : not scalable, not fault tolerant
+- Cons: not scalable, not fault tolerant
 
 <img src="../../assets/images/kafka/kafka-java-app.png" style="max-width:80%;"/><!-- {"left" : 1.2, "top" : 2.55, "height" : 4.55, "width" : 7.84} -->
 
@@ -55,9 +55,9 @@ Notes:
 
 ## Kafka Application Using Spark
 
-- Pros : distributed, fault tolerant, lots of functionality 
+- Pros: distributed, fault tolerant, lots of functionality 
 
-- Cons : 
+- Cons: 
     - Need to setup and maintain a Spark cluster 
     - Not so simple
 
@@ -393,7 +393,7 @@ Notes:
 
 ---
 
-## Kafka Streaming  : ForEach
+## Kafka Streaming: ForEach
 
 
 ```java
@@ -420,7 +420,7 @@ Notes:
 
 ---
 
-## Kafka Streaming : Filter
+## Kafka Streaming: Filter
 
 <img src="../../assets/images/kafka/Filter-01.png" style="width:70%;"/><!-- {"left" : 1.83, "top" : 1.28, "height" : 1.18, "width" : 6.59} -->
 
