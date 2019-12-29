@@ -33,7 +33,7 @@ Notes:
     - This lab is run with Jupyter Notebook
     - Help the students start a Jupyter Notebook
 
-  * **Overview**: In this lab, we will do a hello world for TensorFlow and Keras.
+  * **Overview:** In this lab, we will do a hello world for TensorFlow and Keras.
 
   * **Approximate time:** 15-20 minutes
 
@@ -92,7 +92,7 @@ c = tf.nn.conv2d(X, filters, strides=[1,2,2,1],
                  padding="SAME")
 
 ```
-<!-- {"left" : 0.0, "top" : 4.51, "height" : 2.34, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 4.82, "height" : 2.34, "width" : 10.25} -->
 
 
 Notes: 

@@ -827,7 +827,7 @@ Notes:
 
  - We can also reduce features simply by resizing the image.
 
- <img src="../../assets/images/deep-learning/pool.png" alt="XXX image missing" style="background:white;max-width:100%;width:45%;" />  <!-- {"left" : 2.84, "top" : 3.65, "height" : 4.07, "width" : 4.57} -->
+<img src="../../assets/images/deep-learning/pool.png" alt="XXX image missing" style="background:white;max-width:100%;width:45%;" />  <!-- {"left" : 2.84, "top" : 3.65, "height" : 4.07, "width" : 4.57} -->
 
 
 
@@ -846,7 +846,7 @@ Notes:
 
  * Softmax Layer At end (for classification problems.)
 
-<img src="../../assets/images/deep-learning/Input_FC.png" alt="XXX image missing" style="background:white;max-width:100%;width:45%;" />  <!-- {"left" : 0.69, "top" : 5.12, "height" : 1.11, "width" : 8.88} -->
+<img src="../../assets/images/deep-learning/Input_FC.png" alt="XXX image missing" style="background:white;max-width:100%;width:60%;" />  <!-- {"left" : 0.69, "top" : 5.12, "height" : 1.11, "width" : 8.88} -->
 
 
 Notes: 

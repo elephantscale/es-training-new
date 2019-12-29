@@ -325,7 +325,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
     "backend": "tensorflow"
 }
 ```
-<!-- {"left" : 0, "top" : 1.24, "height" : 2.08, "width" : 8.51} -->
+<!-- {"left" : 0, "top" : 1.37, "height" : 2.08, "width" : 8.51} -->
 
 <br/>
 
@@ -752,7 +752,7 @@ compile(optimizer,
         weighted_metrics=None,
         target_tensors=None)
 ```
-<!-- {"left" : 0, "top" : 1.11, "height" : 2.23, "width" : 5.87} -->
+<!-- {"left" : 0, "top" : 1.2, "height" : 2.23, "width" : 5.87} -->
 
 <br/>
 
@@ -820,7 +820,7 @@ evaluate(x=None, y=None,
 predictions = predict(x, batch_size=None,
                       verbose=0, steps=None, callbacks=None)
 ```
-<!-- {"left" : 0, "top" : 1.43, "height" : 0.82, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.62, "height" : 0.82, "width" : 10.25} -->
 
 <br/>
 
@@ -1086,6 +1086,8 @@ Use Keras callback for saving your training and test metrics, as well as activat
                             write_graph=True,
                             write_images=False) )
 ```
+<!-- {"left" : 0, "top" : 2.61, "height" : 1.44, "width" : 8.94} -->
+
 <br/>
 
 
@@ -1095,6 +1097,7 @@ Use Keras callback for saving your training and test metrics, as well as activat
 ```bash
 $   tensorboard --logdir=/full_path_to_your_logs
 ```
+<!-- {"left" : 0, "top" : 5.21, "height" : 0.58, "width" : 8.94} -->
 
 <br/>
 - See next slide for a visualization.

@@ -12,8 +12,6 @@
 
 # Introducing Linear Models
 
----
-
 [GENERIC Linear Model](../generic/DL-Linear.md)
 
 ---
@@ -110,7 +108,5 @@ Y_ = tf.squeeze(tf.matmul(W,X) + B)
 
 ---
 # Tensorflow High-Level Models
-
----
 
 [TENSORFLOW Regression](./TENSORFLOW-Regression.md)

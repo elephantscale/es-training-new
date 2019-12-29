@@ -345,7 +345,7 @@ Notes:
 &nbsp;
 &nbsp;
 
-<img src="../../assets/images/logos/docker-logo-2.png" alt="docker-logo-2.png" style="background:white;width:20%;"/><!-- {"left" : 3.42, "top" : 4.51, "height" : 2.86, "width" : 3.4} -->
+<img src="../../assets/images/logos/docker-logo-1.png" alt="docker-logo-1.png" style="background:white;width:25%;"/><!-- {"left" : 3.42, "top" : 4.51, "height" : 2.86, "width" : 3.4} -->
 
 
 
@@ -358,7 +358,7 @@ Notes:
 
 ## Creating Docker Images
 
-<img src="../../assets/images//logos/nvidia-logo-1.png" alt="nvidia-logo-1.png" style="background:white;max-width:50%;float:right;"/><!-- {"left" : 7.34, "top" : 1.3, "height" : 1.87, "width" : 2.54} -->
+<img src="../../assets/images/logos/nvidia-logo-1.png" alt="nvidia-logo-1.png" style="background:white;max-width:50%;float:right;"/><!-- {"left" : 7.34, "top" : 1.3, "height" : 1.87, "width" : 2.54} -->
 
  * Creating Docker Images for GPUs is not easy
 

@@ -167,7 +167,7 @@ Notes:
 
 ## TPU Support
 
-<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 8.92, "top" : 0.95, "height" : 0.91, "width" : 1.32} -->
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 9.24, "top" : 0.95, "height" : 0.69, "width" : 1} -->
 
 
  * TPU is Google's custom chip built for AI workloads
@@ -626,7 +626,7 @@ for i in tf.range(input_data.shape[0]): # Note the For loop
 $ (sudo) pip install tensorflow keras
 $ (sudo) pip install tensorflow-gpu keras  # For GPU
 ```
-<!-- {"left" : 0, "top" : 3.9, "height" : 0.74, "width" : 8.71} -->
+<!-- {"left" : 0, "top" : 4.08, "height" : 0.74, "width" : 8.71} -->
 
 <br/>
 
