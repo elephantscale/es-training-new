@@ -19,3 +19,11 @@ Notes:
 https://www.politico.eu/article/finland-one-percent-ai-artificial-intelligence-courses-learning-training/
 ---
 
+## Teaching Assumptions
+
+* 2 hours
+* 15-30 students
+* Internet available (at least for the first runs)
+* Ages 9-15
+---
+
