@@ -128,7 +128,7 @@ Notes:
 
  * Kafka - The Definitive Guide
 
-<img src="../../assets/images/kafka/3rd-party/kafka-book-9781491936160.jpg" /><!-- {"left" : 3.78, "top" : 2.78, "height" : 3.52, "width" : 2.68} -->
+<img src="../../assets/images/books/kafka-9781491936160.jpg" /><!-- {"left" : 3.78, "top" : 2.78, "height" : 3.52, "width" : 2.68} -->
 
 Notes:
 

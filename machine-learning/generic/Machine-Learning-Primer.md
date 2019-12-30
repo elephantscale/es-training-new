@@ -421,8 +421,8 @@ by  Aurélien Géron (ISBN: 9781492037347)
 * [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)  
 by  Aurélien Géron (ISBN: 9781492032649)
 
-<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%;"/>&nbsp;&nbsp;<!-- {"left" : 2.78, "top" : 4.55, "height" : 3.15, "width" : 2.09} -->
-<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:19.5%;"/><!-- {"left" : 5.18, "top" : 4.55, "height" : 3.15, "width" : 2.4} -->
+<img src="../../assets/images/books/neural-networks-and-deep-learning-9781492037347.jpeg" alt="keras book1" style="width:17%;"/>&nbsp;&nbsp;<!-- {"left" : 2.78, "top" : 4.55, "height" : 3.15, "width" : 2.09} -->
+<img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:19.5%;"/><!-- {"left" : 5.18, "top" : 4.55, "height" : 3.15, "width" : 2.4} -->
 
 ---
 
@@ -435,5 +435,5 @@ by by Adam Gibson, Josh Patterson(ISBN: 9781491914250)
 by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
 
 
-<img src="../../assets/images/books/book-9781491914250-deep-learning.jpeg" alt="keras book1" style="width:20%;"/>&nbsp;&nbsp;<!-- {"left" : 2.71, "top" : 4.53, "height" : 3.02, "width" : 2.3} -->
-<img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.27, "top" : 4.53, "height" : 3.02, "width" : 2.31} -->
+<img src="../../assets/images/books/deep-learning-9781491914250.jpeg" alt="keras book1" style="width:20%;"/>&nbsp;&nbsp;<!-- {"left" : 2.71, "top" : 4.53, "height" : 3.02, "width" : 2.3} -->
+<img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.27, "top" : 4.53, "height" : 3.02, "width" : 2.31} -->

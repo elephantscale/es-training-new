@@ -769,4 +769,4 @@ These default values should get you started, and should work well in most scenar
  * [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  
 by  Aurélien Géron (ISBN: 9781492037347)
 
-<img src="../../assets/images/books/book-9781492037347-neural-networks-and-deep-learning.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 3.92, "top" : 3.01, "height" : 3.63, "width" : 2.4} -->
+<img src="../../assets/images/books/neural-networks-and-deep-learning-9781492037347.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 3.92, "top" : 3.01, "height" : 3.63, "width" : 2.4} -->

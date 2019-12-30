@@ -22,7 +22,7 @@ Notes:
   * [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/) by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
 
 
-<img src="../../assets/images/books/book-9781492032649-hands-on-machine-learning-with-scikit-learn.jpg" alt="keras book1" style="width:20%;"/><!-- {"left" : 2.62, "top" : 4.41, "height" : 2.93, "width" : 2.23} --> &nbsp;&nbsp; <img src="../../assets/images/books/book-9781492034841-practical-deep-learning-for-cloud-and-mobile.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.39, "top" : 4.41, "height" : 2.93, "width" : 2.23} -->
+<img src="../../assets/images/books/hands-on-machine-learning-with-scikit-learn-9781492032649.jpg" alt="keras book1" style="width:20%;"/><!-- {"left" : 2.62, "top" : 4.41, "height" : 2.93, "width" : 2.23} --> &nbsp;&nbsp; <img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.39, "top" : 4.41, "height" : 2.93, "width" : 2.23} -->
 
 ---
 
@@ -32,7 +32,7 @@ Notes:
 
   * [Learn Keras for Deep Neural Networks:A Fast-Track Approach to Modern Deep Learning with Python](https://learning.oreilly.com/library/view/learn-keras-for/9781484242407/)by Jojo Moolayil (ISBN : 9781484242407)very good book that explains concepts pretty well
 
-<img src="../../assets/images/books/book-9781788621755-keras-deep-learning.jpg" alt="keras book3" style="width:19.1%;"/> &nbsp;&nbsp; <!-- {"left" : 2.66, "top" : 4.69, "height" : 3.03, "width" : 2.48} --><img src="../../assets/images/books/book-9781484242407-learn-keras-for-deep-neural-networks.jpg" alt="keras book3" style="width:15.5%;"/><!-- {"left" : 5.59, "top" : 4.69, "height" : 3.03, "width" : 2} -->
+<img src="../../assets/images/books/keras-deep-learning-9781788621755.jpg" alt="keras book3" style="width:19.1%;"/> &nbsp;&nbsp; <!-- {"left" : 2.66, "top" : 4.69, "height" : 3.03, "width" : 2.48} --><img src="../../assets/images/books/learn-keras-for-deep-neural-networks-9781484242407.jpg" alt="keras book3" style="width:15.5%;"/><!-- {"left" : 5.59, "top" : 4.69, "height" : 3.03, "width" : 2} -->
 ---
 ## Resources
 
@@ -40,7 +40,7 @@ Notes:
 
   * [Safari books online, Keras books](https://learning.oreilly.com/topics/keras)
 
-<img src="../../assets/images/books/book-9781484242407-learn-keras-for-deep-neural-networks.jpg" alt="keras book2" style="width:15%;"/><!-- {"left" : 3.99, "top" : 3.9, "height" : 3.44, "width" : 2.26} -->
+<img src="../../assets/images/books/deep-learning-with-keras-9781787128422.jpg" alt="keras book2" style="width:18%;"/><!-- {"left" : 3.99, "top" : 3.9, "height" : 3.44, "width" : 2.26} -->
 
 ---
 
@@ -436,7 +436,7 @@ keras.layers.Dense(
 
 
 ```python
-## Usage 
+## Usage
 
 from keras.layers import Dense
 
@@ -456,7 +456,7 @@ d = Dense(32, input_shape=(16,)))
   * The dropout layer drops out a few neurons or sets them to 0 and reduces computation in the training process.
 
 ```python
-## API 
+## API
 
 keras.layers.Dropout(rate, noise_shape=None, seed=None)
 ```
@@ -464,7 +464,7 @@ keras.layers.Dropout(rate, noise_shape=None, seed=None)
 
 
 ```python
-## Usage 
+## Usage
 
 from keras.layers import Dropout
 
@@ -495,7 +495,7 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 
 # ~~~~~~~~~
 
-# or Customize 
+# or Customize
 from keras.optimizers import SGD
 sgd = SGD(lr=0.01,
           decay=1e-6,
@@ -519,12 +519,12 @@ model.compile(optimizer=sgd, loss='mean_squared_error')
 ## Optimizer: Adagrad
 
 ```python
-# use defaut args 
+# use defaut args
 model.compile(optimizer='adagrad', ...)
 
 # ~~~~~~~~~
 
-# or Customize 
+# or Customize
 from keras.optimizers import Adagrad
 adagrad = keras.optimizers.Adagrad(lr=0.01,
                                    epsilon=None,
@@ -589,7 +589,7 @@ adam = keras.optimizers.Adam(lr=0.001,
                              amsgrad=False)
 model.compile(optimizer=adam, ...)
 
-                             
+
 ```
 
 <!-- {"left" : 0, "top" : 1.35, "height" : 3.78, "width" : 7.94} -->
