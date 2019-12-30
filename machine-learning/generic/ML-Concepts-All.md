@@ -36,7 +36,7 @@ Notes:
 
 ## Model
 
-  * **'Model'**:  
+  * **'Model':**
     Mathematical object describing the relationship between input and output
 
   * We can treat ML model as a 'black box'

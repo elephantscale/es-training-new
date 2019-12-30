@@ -167,7 +167,7 @@ Notes:
 
 ## TPU Support
 
-<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 9.24, "top" : 0.95, "height" : 0.69, "width" : 1} -->
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 9.46, "top" : 0.93, "height" : 0.53, "width" : 0.77} -->
 
 
  * TPU is Google's custom chip built for AI workloads

@@ -49,7 +49,7 @@ Story: A shepherd who cried wolf
 
 ## Confusion Matrix: Accuracy / Error Rate
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-02.png" alt="Confusion-Matrix-02.png" style="width:50%;float:right;"/> <!-- {"left" : 1.93, "top" : 4.37, "height" : 4.05, "width" : 6.39} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-02.png" alt="Confusion-Matrix-02.png" style="width:50%;float:right;"/> <!-- {"left" : 5.38, "top" : 1.51, "height" : 3.01, "width" : 4.76} -->
 
  * **Accuracy**  
 Overall how accurate is the model?  
@@ -73,7 +73,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Accuracy May Not Be Enough
 
-<img src="../../assets/images/machine-learning/Confusion-Matrix-03-Accuracy.png" alt="Confusion-Matrix-03-Accuracy.png" style="width:50%;float:right;"/> <!-- {"left" : 2.81, "top" : 5.78, "height" : 2.94, "width" : 4.63} -->
+<img src="../../assets/images/machine-learning/Confusion-Matrix-03-Accuracy.png" alt="Confusion-Matrix-03-Accuracy.png" style="width:50%;float:right;"/> <!-- {"left" : 5.39, "top" : 1.51, "height" : 3.04, "width" : 4.79} -->
 
  * Let's say our classifier is used to diagnose cancer patients.
  * We have total 100 patients
@@ -119,7 +119,7 @@ Notes:
 
 ## Confusion Matrix: TPR / FPR
 
-<img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:50%;float:right;"/> <!-- {"left" : 5.58, "top" : 2.19, "height" : 2.87, "width" : 4.44} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-10-TPR-FPR.png" alt="confusion-matrix-10-TPR-FPR.png" style="width:50%;float:right;"/> <!-- {"left" : 5.35, "top" : 2.02, "height" : 3.11, "width" : 4.81} -->
 
  * **True Positive Rate (TPR)  /Sensitivity / Hit Rate / Recall**  
   How often model predicts 'positive' as 'positive' (correctly) ? -- actual positive  
@@ -145,7 +145,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: Specificity / Precision / Prevalence
 
-<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 2.36, "top" : 4.91, "height" : 3.56, "width" : 5.53} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 5.23, "top" : 1.49, "height" : 3.19, "width" : 4.95} -->
 
   * **Specificity**   
   How often model predicts negative' as negative' (correctly)?  -- actual no  
@@ -173,7 +173,7 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 ## Confusion Matrix: PPV / Null Error Rate
 
-<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 2.14, "top" : 4.85, "height" : 3.89, "width" : 5.98} -->
+<img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 5.39, "top" : 1.36, "height" : 3.08, "width" : 4.73} -->
 
  * **Prevalence**   
   How often does 'positive' occurs in our sample  
@@ -269,9 +269,7 @@ Notes:
 
 ## How is ROC Curve Generated
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/machine-learning/ROC-07.png" alt="ROC-07.png" style="width:50%;float:right;"/> <!-- {"left" : 1.27, "top" : 1.83, "height" : 5.98, "width" : 7.7} -->
+<img src="../../assets/images/machine-learning/ROC-07.png" alt="ROC-07.png" style="width:50%;float:right;"/> <!-- {"left" : 5.69, "top" : 1.1, "height" : 3.43, "width" : 4.41} -->
 
  * Y-axis: True Positive Rate (TPR)
     - Actual=positive, predicted=positive
@@ -368,8 +366,7 @@ Notes:
 
  * Accuracy can be specified using a grading system
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:45%;float:right;"/> <!-- {"left" : 0.42, "top" : 4.36, "height" : 4.26, "width" : 5.71} -->
+<img src="../../assets/images/machine-learning/ROC-01-Compare.png" alt="ROC-01-Compare.png" style="width:45%;float:right;"/> <!-- {"left" : 4.84, "top" : 2.71, "height" : 3.65, "width" : 4.9} -->
 
 | AUC        | Grade         |
 |--------    |----------     |
@@ -379,7 +376,7 @@ Notes:
 | 0.60 - 0.70| D - poor      |
 | 0.50 - 0.60| F - Fail      |
 
-<!-- {"left" : 6.7, "top" : 1.98, "height" : 2.38, "width" : 3.3, "columnwidth" : [1.61, 1.69]} -->
+<!-- {"left" : 0.52, "top" : 3.34, "height" : 2.38, "width" : 3.3, "columnwidth" : [1.61, 1.69]} -->
 
 
 
@@ -395,12 +392,11 @@ Notes:
 ---
 ## ROC / AUC For Multiclass Classifiers
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:45%;float:right;"/> <!-- {"left" : 2.43, "top" : 4.43, "height" : 4.03, "width" : 5.4} -->
+<img src="../../assets/images/machine-learning/ROC-5-digits.png" alt="ROC-5-digits.png" style="width:45%;float:right;"/> <!-- {"left" : 5.33, "top" : 1.13, "height" : 3.59, "width" : 4.81} -->
 
  * Say our algorithm recognizes hand-written digits (postal code) into numbers.
  * Its ROC can be drawn as follows
- * **Question for class**:
+ * **Question for class:**
     - Which digit the classifier is doing well?
     - Which digit the classifier is not doing well?
 

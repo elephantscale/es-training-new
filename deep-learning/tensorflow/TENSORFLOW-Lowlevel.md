@@ -14,9 +14,9 @@
  *  **Everything**  in TensorFlow is a tensor (`tf.Tensor`)
  
  *  Tensors have rank, shape, and type
-    - rank : dimension of tensor
-    - shape : number of rows / columns 
-    - type : data type (int, float ..etc.)
+    - rank: dimension of tensor
+    - shape: number of rows / columns 
+    - type: data type (int, float ..etc.)
     
 
 | Rank | Tensor      |
