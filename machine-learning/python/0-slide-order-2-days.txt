@@ -4,7 +4,12 @@
 ##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-order-2-days.txt  pdf
 ##          (-d will replace current assembly.out)
 
+## About
 About-Machine-Learning-With-Python-Class-2-days.md
+
+## Resources / References
+../generic/ML-Resources.md
+
 
 ## high level overview
 ../generic/Machine-Learning-Primer.md

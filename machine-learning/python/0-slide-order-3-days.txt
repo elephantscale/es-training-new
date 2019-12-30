@@ -10,6 +10,9 @@
 ## About
 About-Machine-Learning-With-Python-Class-3-days.md
 
+## Resources / References
+../generic/ML-Resources.md
+
 ## high level overview
 ../generic/Machine-Learning-Primer.md
 

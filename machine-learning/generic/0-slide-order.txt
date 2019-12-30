@@ -16,6 +16,9 @@
 ## About
 About-Machine-Learning-Class.md
 
+## Resources / References
+ML-Resources.md
+
 ## High level Intro
 Machine-Learning-Primer.md
 
