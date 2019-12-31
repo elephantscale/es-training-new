@@ -26,8 +26,10 @@ Notes:
 <img src="../../assets/images/logos/scikit-learn-logo-1.png" style="width:20%; float:right;"/><!-- {"left" : 7.2, "top" : 1.36, "height" : 1.69, "width" : 2.52} -->
 
 * Scikit-Learn is a machine learning library written in Python
+
 * Developed by David Cournapeau in 2007
   * Now most popular ML library after Tensorflow
+  
 * Why is Scikit-Learn popular?
   * Consistent API
   * Complete Documentation
@@ -58,9 +60,12 @@ Notes:
 
  * Single Node Only
    - No Parallelization (other than threads)
+   - Can use multiple CPU cores in ONE machine (by using `n_jobs` parameter)
    - No Cluster Computing
+   
  * Limited Data Size
    - Data Size should fit in memory
+   
  * No Deep Learning
    - Limited neural network support
    - No Deep Learning
@@ -148,12 +153,12 @@ Notes:
 ## SKLearn Datasets
 
 - `scikit.datasets` package has some very popular datasets
-    - `load_iris` : popular IRIS dataset
-    - `load_boston` : Boston housing data
+    - __`load_iris`__ : popular IRIS dataset
+    - __`load_boston`__ : Boston housing data
 
 - It also has some **data generators** to dynamically generate data
-    - `make_blobs`
-    - `make_classification`
+    - __`make_blobs`__
+    - __`make_classification`__
 
 - For more information see [reference doc](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets)
 
@@ -290,11 +295,11 @@ plt.scatter(x[:, 0], x[:, 1], marker='o', c=y,
     - and create models by training on data
 
  * Algorithms (Regressions / Classifications) are implemented as Estimator
-   - training:  `estimator.fit(data)`
+   - training:  __`estimator.fit(data)`__
 
  * An example of transforming data
    - transforming data: 
-   - `transformed = estimator.transform(data)`
+   - __`transformed = estimator.transform(data)`__
 
 
 Notes:
@@ -323,11 +328,11 @@ scaled_data = scaler.transform(data)
 * Can take 1 or 2 parameters
 * 1 Parameter is just data
    - usually for unsupervised learning
-   - `estimator.fit(data)`
+   - __`estimator.fit(data)`__
 
 * 2 parameters are data + labels
    - usually for supervised learning
-   - `estimator.fit(x_train, y_train)`
+   - __`estimator.fit(x_train, y_train)`__
 
 
 Notes:
@@ -336,10 +341,14 @@ Notes:
 
 ## estimator.predict() Method
  * Most estimators have a .predict() method
+ 
  * Designed for delivering labels on new data
+ 
  * For unsupervised learning, for example clustering, `predict()` will assign data to cluster
- * Training: `estimator.fit(x_train, y_train)
- * Prediction: `estimatro.predict(x_test)`
+ 
+ * Training: __`estimator.fit(x_train, y_train)`__
+ 
+ * Prediction: __`estimator.predict(x_test)`__
 
 Notes:
 
@@ -375,13 +384,16 @@ Notes:
 
 ## Algorithms
   * Sklearn has many algorithms
-  * Categorized by type
-  * Types of Algorithms
     1. Preprocessing: Getting the data into shape for Machine Learning
+    
     2. Dimensionality Reduction: Reducing redundancy in variables
+    
     3. Classification: Predicting one of a finite set of classes for data.
+    
     4. Regression: Predicting a response variable
+    
     5. Clustering: Finding natural patterns in the data.
+    
     6. Model Selection: Finding the best model for our data.
 
 
@@ -419,11 +431,13 @@ Notes:
 ## Mix-ins
 
  * Not just for ice-cream!
+ 
  * Scikit-learn has several mix-ins for class
-   - `TransformerMixIn`
-   - `ClassifierMixIn`
-   - `ClusterMixIn`
-   - `RegressorMixIn`
+   - __`TransformerMixIn`__
+   - __`ClassifierMixIn`__
+   - __`ClusterMixIn`__
+   - __`RegressorMixIn`__
+   
  * Added to class with multiple-inheritance
 
 Notes:
@@ -432,10 +446,12 @@ Notes:
 
 ## Transformer Mix-In
   * Transformer mix-in adds 2 methods:
-    - `transform()`
-    - `fit_transform()`: calls fit, then transform
+    - __`transform()`__
+    - __`fit_transform()`__: calls fit, then transform
+    
   * Transformers are used for transformations
     - like PCA
+    
   * A trivial Example:
 
 ```python
@@ -470,12 +486,13 @@ Notes:
 ---
 
 ## Cluster Mix-In
-  * `fit_predict()`
-    - call `fit()` then `predict()`
+  * __`fit_predict()`__
+    - call __`fit()`__ then __`predict()`__
   * score: Too many!
     - a number of scoring options for clusters.
     - depends on type
 
 
 Notes:
+
 

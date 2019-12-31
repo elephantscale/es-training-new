@@ -20,7 +20,4 @@
 
 ---
 
-# Prediction
-
-[Prediction](./PYTHON-Sklearn-Classification-Regression.md)
-
+## Review and Questions

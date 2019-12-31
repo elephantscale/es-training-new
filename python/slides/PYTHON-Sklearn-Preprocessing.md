@@ -18,8 +18,11 @@ Notes:
 
 ## What is Feature Engineering?
  * Columns are not Features!
+ 
  * Features are the input to your model.
+ 
  * Columns are the source of your features.
+ 
  * Feature engineering is transforming raw data into features.
 
 
@@ -32,9 +35,9 @@ Notes:
  * Algorithms run on ndarrays and matrices of type **float64**
    - Bool, int64 will be upcasted to float64
  * Your data may have string or categorical variables
-   - Here we have : _home_owner_  and _marital status_
+   - Here we have : __home_owner__  and __marital status__
    - usually pandas type 'object'
- * Label (_approved_): Usually doesn't matter
+ * Label (__approved__): Usually doesn't matter
    - can use LabelEncoder class
  * We have to convert the input columns (features)  into numbers
 
@@ -53,9 +56,10 @@ Notes:
 ## Strategy 1: Factorization
 
  * Factorization
-   - Call `pd.factorize()` on the dimension
+   - Call __`pd.factorize()`__ on the dimension
    - Will assign an integer to each unique value
    - E.g. (red = 1, green = 2… etc)
+   
  * See next slide for details
 
 ---
@@ -183,11 +187,13 @@ Notes:
 
 ## Quantization
    * Turn the category into a real-world number
+   
    * Example colors:
      - Blue: 668 THz
      - Green: 526 THz
      - Red: 400 THz
-   * Usually join (pd.merge) to a ”lookup table”
+     
+   * Usually join (pd.merge) to a "lookup table"
 
 
 Notes:
@@ -199,10 +205,13 @@ Notes:
 
 ## Scaling
  * Usually data needs to be cleaned up and transformed before creating features
+ 
  * In the data below, we see **age** and **income** are in two different scales
     - age : ranges from 33 - 60
     - income ranges from 32,000  to 120,000
+    
  * Some algorithms will yield better results if these different ranges can be scaled to a uniform range
+ 
 
 <img src="../../assets/images/machine-learning/scaling-1.png" style="width:50%;"/><!-- {"left" : 1.85, "top" : 5.13, "height" : 2.6, "width" : 6.11} -->
 
@@ -211,7 +220,9 @@ Notes:
 ## Scaling
 
  * StandardScaler class will scale data down
+ 
  * Remove high magnitude data
+ 
  * Z-Scoring:
    - Subtract mean and divide standard deviation
 
@@ -292,6 +303,7 @@ Notes:
 
 ## Variable Correlation
  * Data can be heavily Correlated
+ 
  * Pearson Correlation Coefficient
    - unit-norm covariance
    - -1.0 to +1.0
@@ -303,12 +315,14 @@ Notes:
 
 ## Is Correlation a Problem?
  * Maybe!
+ 
  * Imagine if you measure stats of basketball player:
    - Points Scored In Season
    - Points Per Game
    - Shots on Goal
    - Field Goals Scored
    - Minutes Played
+   
  * Are any of these variables correlated?
 
 
