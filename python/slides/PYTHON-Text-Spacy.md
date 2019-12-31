@@ -136,47 +136,26 @@ Notes:
 
 ## Spacy Languages
 
- * Pre-trained models for 7 languages:
-
-    - English
-    - French
-    - German
-    - Spanish
-    - Portuguese
-    - Italian
-    - Dutch
-
-Notes:
+| supported fully | alpha 1   | alpha 2  |
+|-----------------|-----------|----------|
+| English         | Swedish   | Romanian |
+| French          | Finnish   | Croatian |
+| German          | Norwegian | Turkish  |
+| Spanish         | Danish    | Hebrew   |
+| Portuguese      | Hungarian | Persian  |
+| Italian         | Polish    | Irish    |
+| Dutch           | Russian   | Bengali  |
 
 ---
-## More Spacy (Alpha) Languages
 
- * Swedish
- * Finnish
- * Norwegian
- * Danish
- * Hungarian
- * Polish
- * Russian
- * Romanian
- * Croatian
- * Turkish
-
-Notes:
-
----
 ## More Spacy (Alpha) Languages, cont'd
 
- * Hebrew
- * Persian
- * Irish
- * Bengali
- * Hindi
- * Indonesian
- * Thai
- * Chinese
- * Japanese
- * Vietnamese
+- Hindi
+- Indonesian
+- Thai
+- Chinese
+- Japanese
+- Vietnamese
 
 
 Notes:
@@ -712,4 +691,3 @@ Notes:
 
 
 Notes:
-
