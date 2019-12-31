@@ -1,6 +1,6 @@
 # Introduction to Machine Learning
 
-<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:20%;" /> &nbsp;  &nbsp;<!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} --> 
+<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:20%;" /> &nbsp;  &nbsp;<!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
 <img src="../../assets/images/logos/python-logo-1.png" style="width:40%;" /><!-- {"left" : 6.26, "top" : 6.96, "height" : 0.81, "width" : 3.39} -->
 
 
@@ -63,11 +63,18 @@ Notes:
 
 ---
 
-## Goal For This ML Class
+## Goal For This ML Class : 'ML Engineer'
 
-* Goal for this class is to give you 'ML Engineer' level of knowledge
 
-<img src="../../assets/images/machine-learning/data-practitioner.png" alt="data-practitioner.png" style="width:70%;"/> <!-- {"left" : 0.93, "top" : 2.19, "height" : 5.27, "width" : 8.39} -->
+|                                     |          API users         |                                               ML Engineer                                               |                    Data Scientists                    |
+|:-----------------------------------:|:--------------------------:|:-------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------:|
+|          __In a nutshell__          |            What            |                                                What & Why                                               |                   What, Why and How                   |
+|            __Background__           |         Developers         |                                     Developers, Analysts, Architects                                    |               Scientists (usually PhDs)               |
+|               __API__               |   Knows the basic of API   |                                           Sound API knowledge                                           |                Excellent API knowledge                |
+|              __Models__             | No understanding of models | Knows the fundamentals of model behind API (not necessarily the math/stats theories powering the model) | Has deep understanding of math/stats behind the model |
+|         __Model Validation__        |    copy-paste and pray!    |                           Knows how to test and improve the model iteratively                           |        Knows how to test and improve the model        |
+| __Can Come up with New Algorithms__ |             no             |                                        Can adopt a new algorithm                                        |            Can come up with new algorithms            |
+
 
 
 

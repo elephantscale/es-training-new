@@ -1,6 +1,6 @@
 # Machine Learning With Apache Spark & Python
 
-<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:15%;" /><!-- {"left" : 3.06, "top" : 7, "height" : 1.61, "width" : 1.61} --> &nbsp;  &nbsp; 
+<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:15%;" /><!-- {"left" : 3.06, "top" : 7, "height" : 1.61, "width" : 1.61} --> &nbsp;  &nbsp;
 <img src="../../assets/images/logos/python-logo-1.png" style="width:20%;" /><!-- {"left" : 5.23, "top" : 7.52, "height" : 0.56, "width" : 2.36} --> &nbsp;  &nbsp;
 <img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /><!-- {"left" : 8.15, "top" : 7.33, "height" : 0.94, "width" : 1.77} -->
 
@@ -67,11 +67,18 @@ Notes:
 
 ---
 
-## Goal For This ML Class
+## Goal For This ML Class : 'ML Engineer'
 
-* Goal for this class is to give you 'ML Engineer' level of knowledge
 
-<img src="../../assets/images/machine-learning/data-practitioner.png" alt="data-practitioner.png" style="width:70%;"/> <!-- {"left" : 0.93, "top" : 2.56, "height" : 5.27, "width" : 8.39} -->
+|                                     |          API users         |                                               ML Engineer                                               |                    Data Scientists                    |
+|:-----------------------------------:|:--------------------------:|:-------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------:|
+|          __In a nutshell__          |            What            |                                                What & Why                                               |                   What, Why and How                   |
+|            __Background__           |         Developers         |                                     Developers, Analysts, Architects                                    |               Scientists (usually PhDs)               |
+|               __API__               |   Knows the basic of API   |                                           Sound API knowledge                                           |                Excellent API knowledge                |
+|              __Models__             | No understanding of models | Knows the fundamentals of model behind API (not necessarily the math/stats theories powering the model) | Has deep understanding of math/stats behind the model |
+|         __Model Validation__        |    copy-paste and pray!    |                           Knows how to test and improve the model iteratively                           |        Knows how to test and improve the model        |
+| __Can Come up with New Algorithms__ |             no             |                                        Can adopt a new algorithm                                        |            Can come up with new algorithms            |
+
 
 
 
