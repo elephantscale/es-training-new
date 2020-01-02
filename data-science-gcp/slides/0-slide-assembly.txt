@@ -1,0 +1,3 @@
+
+## outline
+../data-science-on-google-cloud-outline.pdf

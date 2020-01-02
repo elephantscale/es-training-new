@@ -16,8 +16,9 @@ assembly.out*
 # generated pdf
 *-gen.pdf
 
-# any pptx
+# any office formats
 *.pptx
+*.docx
 *.pdf
 1
 1.md
