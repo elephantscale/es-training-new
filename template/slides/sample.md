@@ -176,4 +176,4 @@ md
 ---
 
 ## Include Other md
-[template-include.md](template-include.md)
+[sample-include.md](sample-include.md)
