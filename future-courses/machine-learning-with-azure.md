@@ -38,3 +38,55 @@ Lectures and hands-on labs. (50%, 50%)
   - SSH client for your platform
 
 ## Detailed outline
+
+* Introduction to Machine Learning
+  - Machine Learning Concepts
+  - Machine Learning Approaches
+  - Supervised Learning
+  - Unsupervised Learning
+  - Machine Learning Life Cycle
+  - Machine Learning Languages and Platforms
+* Introduction to R
+  - Installing RStudio, Installing Packages
+  - R Data Structure
+  - Vector, Factor, Lists, Data Frames
+  - R for Statistical Analysis
+  - R for Machine Learning
+  - R for Visualization
+* Introduction to Python
+  - Python IDE
+  - Install Packages
+  - Python for Statistical Summary
+  - Statistical Distribution
+  - Python for Visualization
+  - Python for Machine Learning
+* R Visualization in Power BI
+  - Power BI
+  - Setting Up R in Power BI
+  - Writing R Code in Power BI
+  - R Features in Power BI
+  - Slice and Dice
+  - Edit R Code in RStudio
+  - Predictive Analysis in Power Query with R
+  - Neural Networks
+  - Decision Trees
+  - Automated Machine Learning Inside Power Query
+* Azure Databricks - Spark
+  - Databricks Environment
+  - Machine Learning on Databricks
+  - Linear Regression
+  - Logistic Regression
+  - SVN
+  - Decision Trees, Random Forests
+* Machine Learning in Azure
+  - R in Azure Data Lake
+  - Azure Data Lake Environment
+  - Running R Scripts in U-SQL
+  - Azure Machine Learning Studio
+* Machine Learning in Azure Stream Analytics
+  - Event Hub
+  - Application
+  - Azure Stream Analytics
+  - Azure Machine Learning (ML) Workbench
+* Data Science Virtual Machine and AI Frameworks
+  - Deep Learning Tools with Cognitive Toolkit 
