@@ -21,9 +21,9 @@ Notes:
 
 ## Pre-requisites and Expectations
 
- * Basic Python knowledge is assumed
+ * No knowledge is assumed
 
- * Have a Python development environment
+ * Learning will be computer-based
 
      - We will set this up in class
 
@@ -31,7 +31,7 @@ Notes:
 
    - Ask a lot of questions
 
- * This is a Deep Learning class
+ * This is a AI class
    - No previous knowledge is assumed (but may be helpful)
    - Class will be based on the pace of majority of the students
 
