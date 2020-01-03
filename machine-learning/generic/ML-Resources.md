@@ -35,6 +35,16 @@
 
 ---
 
+## Machine Learning - Gentle Introduction
+
+* [Great AI Awakening](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html) - New York Times profile of on Google Brain and the people behind it
+
+* [Gentle Intro to Machine Learning](https://monkeylearn.com/blog/a-gentle-guide-to-machine-learning/)
+
+* [Machine Learning Basics](https://www.analyticsvidhya.com/blog/2015/06/machine-learning-basics/)
+
+---
+
 ## Machine Learning Basics
 
 - Book - [Think Stats](https://greenteapress.com/wp/think-stats-2e/)
@@ -63,3 +73,30 @@
 <img src="../../assets/images/books/real-world-machine-learning-9781617291920.png" style="width:20%;" /> &nbsp;  &nbsp;
 <img src="../../assets/images/books/introduction-to-statistical-learning-9781461471370.jpg" style="width:18%;" /> &nbsp; &nbsp;
 <img src="../../assets/images/books/elemants-of-statistical-learning-9780387848570.jpg" style="width:18%;" /> &nbsp; &nbsp;
+
+---
+
+## Deep Learning
+
+* [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  
+by  Aurélien Géron (ISBN: 9781492037347)
+
+* [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)  
+by  Aurélien Géron (ISBN: 9781492032649)
+
+<img src="../../assets/images/books/neural-networks-and-deep-learning-9781492037347.jpeg" alt="keras book1" style="width:17%;"/>&nbsp;&nbsp;<!-- {"left" : 2.78, "top" : 4.55, "height" : 3.15, "width" : 2.09} -->
+<img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:19.5%;"/><!-- {"left" : 5.18, "top" : 4.55, "height" : 3.15, "width" : 2.4} -->
+
+---
+
+## Deep Learning
+
+* [Deep Learning](https://learning.oreilly.com/library/view/deep-learning/9781491924570/)  
+by by Adam Gibson, Josh Patterson(ISBN: 9781491914250)
+
+* [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/)  
+by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
+
+
+<img src="../../assets/images/books/deep-learning-9781491914250.jpeg" alt="keras book1" style="width:20%;"/>&nbsp;&nbsp;<!-- {"left" : 2.71, "top" : 4.53, "height" : 3.02, "width" : 2.3} -->
+<img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.27, "top" : 4.53, "height" : 3.02, "width" : 2.31} -->

@@ -7,30 +7,6 @@
 [Algorithm-Summary.md](Algorithm-Summary.md)
 
 ---
-## How to do Machine Learning
-
-
- *  **Collect data**
-    More data we have, the better the algorithms become.  This data can come from internal logs (clickstreams) or external sources (credit scores of customers)
-
- *  **Prepare Data**
-    Raw data is hardly in a form to be used.  It needs to be cleansed, tagged and curated before ready to use
-
- *  **Train a model**
-    Feed the training data to model so it can learn
-
- *  **Evaluate the model**
-    Test the model accuracy
-
- *  **Improve the model**
-    Either by adding more training data, choosing a different algorithm ..etc.
-
-Notes:
-
-
-
-
----
 
 ## Types of Machine Learning
 
@@ -44,7 +20,6 @@ Notes:
 
  *  **Semi-Supervised Learning**
      - Algorithm is trained with a training set which contains unlabeled (usually lot) and labeled (usually little) data
-     - Example: Large images archive only a few of them are labeled (cat, dog, person) and majority are unlabeled
 
  *  **Reinforcement Learning**
      - Based on 'game play'  (rewards vs penalties)
@@ -108,7 +83,9 @@ Notes:
 
      - **Test set:** Validate the model
 
- * Start with 69% training, 29% test
+ * We do this, so we can test the model without the model cheating
+
+ * Start with 80% training, 20% test
     - Tweak the dials to increase or decrease the proportion
 
 <img src="../../assets/images/machine-learning/Model-Validation-1.png" style="max-width:59%;"><!-- {"left" : 2.69, "top" : 5.16, "height" : 2.14, "width" : 4.87} -->
@@ -124,13 +101,13 @@ Facebook used 95%/5% `Understanding text from scratch`
 
 
  * Classification is a model that predicts data into "buckets"
- * Examples:
      - Email is  **SPAM**  or  **HAM**  (not-SPAM)
      - A cell is  **cancerous**  or  **healthy**
      - Hand-written numbers -> any digits -1, 0, 1,..., 8
- * Classification algorithm learns from training data
-     - Supervised learning
- * Also predicted classes are **discrete** or **qualitative**
+
+ * Classification algorithm learns from training data (Supervised learning) and predicts on new data
+
+ * In the example below, we input mixed data to the model, and the model classifies them into A or B
 
 <img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 1.21, "top" : 5.37, "height" : 2.88, "width" : 7.83} -->
 
@@ -181,6 +158,7 @@ Notes:
  * Algorithm tries to find patterns in data
 
 
+ <br clear="all" />
 
 | Algorithms               | Description                             | Applications                                                      |
 |--------------------------|-----------------------------------------|-------------------------------------------------------------------|
@@ -222,7 +200,7 @@ Notes:
 
 ## Clustering Use Cases: Fraud / Anomaly Detection
 
- * Anomaly detection
+ * Anomaly detection is used to:
 
      - Find fraud
 
@@ -292,12 +270,10 @@ Notes:
 
 <img src="../../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:40%;float:right;"/><!-- {"left" : 5.38, "top" : 1.11, "height" : 2.78, "width" : 4.62} -->
 
- * Here is how Walmart is segmenting customer purchases
+ * Here is how Walmart is segmenting customer purchases ([link](https://www.kaggle.com/c/walmart-recruiting-trip-type-classification))
      * Pharmacy Runs
      * Strictly Grocery
      * Grocery and General Merchandise
-     * Michaels Run
-     * Party Trip
      * Toys
      * Electronics
      * Baby
@@ -305,23 +281,10 @@ Notes:
      * **Booze and Calories**
      * and more ...
 
-
----
-
-## Clustering Use Case: Customer Purchases @ Walmart
-
  * **Question for class:** What is the use case for this?
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:40%;float:right;"/><!-- {"left" : 1.41, "top" : 2.3, "height" : 4.46, "width" : 7.42} -->
-
-
-
 Notes:
-
-https://www.kaggle.com/c/walmart-recruiting-trip-type-classification
-
-
 
 ---
 
