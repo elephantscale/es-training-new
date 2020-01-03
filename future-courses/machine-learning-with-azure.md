@@ -11,30 +11,26 @@ In this course, the students will get an overview of ML with Python and R, the t
 One of the goals of the course is to prepare the students for taking the Azure certification exam.
 
 
-## What you will learn:
+## What you will learn
 - TODO
 
 
-## Audience:
+## Audience
 Developers, Architects
 
-## Duration:
+## Duration
 Three to four days depending on the need
 
-## Format:
+## Format
 Lectures and hands-on labs. (50%, 50%)
 
 ## Prerequisites
 
-* Interested in Machine Learning (Machine Learning overview is included in the course)
+* Interest in Machine Learning (Machine Learning overview is included in the course)
 * Familiarity with Python or R is a plus
 
 
 ## Lab environment
-* Zero Install: There is no need to install any software on students' machines!
-A lab environment in the cloud will be provided for students.
-
-**Students will need the following**  
 
 * A reasonably modern laptop
 * Unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly
