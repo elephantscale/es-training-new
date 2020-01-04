@@ -2400,13 +2400,9 @@ Notes:
 
 
 
-<img src="../../assets/images/deep-learning/3rd-party/amazon-logo.png" alt="amazon-logo.png" style="width:30%;"/><!-- {"left" : 2.75, "top" : 4.07, "height" : 1.1, "width" : 4.76} -->
-
-
-<img src="../../assets/images/deep-learning/3rd-party/azure-logo.png" alt="azure-logo.png" style="width:30%;"/><!-- {"left" : 2.99, "top" : 5.51, "height" : 1.23, "width" : 4.28} -->
-
-
-<img src="../../assets/images/deep-learning/3rd-party/google-cloud.png" alt="google-cloud.png" style="width:30%;"/><!-- {"left" : 3.45, "top" : 7.08, "height" : 0.76, "width" : 3.37} -->
+<img src="../../assets/images/logos/aws-logo-2.png"  style="width:20%;"/> &nbsp; <!-- {"left" : 2.75, "top" : 4.07, "height" : 1.1, "width" : 4.76} -->
+<img src="../../assets/images/logos/azure-logo-1.png"  style="width:30%;"/> &nbsp; &nbsp; <!-- {"left" : 2.99, "top" : 5.51, "height" : 1.23, "width" : 4.28} -->
+<img src="../../assets/images/deep-learning/3rd-party/google-cloud.png"  style="width:30%;"/><!-- {"left" : 3.45, "top" : 7.08, "height" : 0.76, "width" : 3.37} -->
 
 
 

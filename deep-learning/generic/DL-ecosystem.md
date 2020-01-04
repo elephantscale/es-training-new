@@ -140,7 +140,7 @@ Notes:
     - Google Cloud ML
 
 
-<img src="../../assets/images/logos/aws-logo.jpg" alt="aws logo" style="background:white; max-width:100%;"  width="20%;"/>&nbsp; &nbsp;<!-- {"left" : 0.67, "top" : 6.08, "height" : 0.88, "width" : 2.7} --><img src="../../assets/images/logos/google-cloud-logo.jpg" alt=" google cloud logo" style="background:white;width:20%;"/>&nbsp; &nbsp;<!-- {"left" : 3.69, "top" : 5.62, "height" : 1.8, "width" : 2.7} --><img src="../../assets/images/logos/azure-cloud-logo.png" alt=" azure cloud logo" style="background:white; max-width:100%;" width="20%;"/><!-- {"left" : 6.7, "top" : 5.62, "height" : 1.8, "width" : 2.88} -->
+<img src="../../assets/images/logos/aws-logo.jpg" style="background:white; max-width:100%;"  width="20%;"/>&nbsp; &nbsp;<!-- {"left" : 0.67, "top" : 6.08, "height" : 0.88, "width" : 2.7} --><img src="../../assets/images/logos/google-cloud-logo.jpg" style="background:white;width:20%;"/>&nbsp; &nbsp;<!-- {"left" : 3.69, "top" : 5.62, "height" : 1.8, "width" : 2.7} --><img src="../../assets/images/logos/azure-logo-2.png"  style="background:white; max-width:100%;" width="20%;"/><!-- {"left" : 6.7, "top" : 5.62, "height" : 1.8, "width" : 2.88} -->
 
 
 Notes:
@@ -243,8 +243,4 @@ Source : https://www.tensorflow.org/lite/performance/best_practices
 
 
 
-Notes: 
-
-
-
-
+Notes:
