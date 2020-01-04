@@ -173,8 +173,7 @@ Image from "An introduction to Statistical Learning"  with thanks to authors
 
 - Decision Tree can be saved to a file as a graph or set of rules
 
-```code
-
+```
 If years < 4.5 Then Salary=5.11
 If years >= 4.5 and Hits < 117.5 Then Salary = 6.0
 If years >= 4.5 and Hits >= 117.5 Then Salary = 6.74
