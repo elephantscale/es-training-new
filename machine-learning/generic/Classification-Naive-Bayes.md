@@ -70,7 +70,7 @@ Notes:
 
 <br/>
 
-* **Question for class**:
+* **Question for class‫:‬**
 
 Are the input variables (weather / car) independent?
 
@@ -79,7 +79,7 @@ Notes:
 
 ---
 
-## Example Data 2 : Gender Classification Data (fictional)
+## Example Data 2: Gender Classification Data (fictional)
 
 * **Question for class**: Are the inputs independent in this dataset?
 
@@ -106,7 +106,7 @@ Notes:
 
 * Let's convert this to numbers
 
-* Weather : Sunny=1,  rainy=0
+* Weather: Sunny=1,  rainy=0
 
 * Car: working=1,  broken=0
 
@@ -178,6 +178,7 @@ Notes:
 ---
 
 ## Calculating Conditional Probabilities
+
 ```text
                                   count(weather=sunny AND class=go-out)
 P(class=go-out | weather=sunny ) = ------------------------------------
@@ -369,7 +370,7 @@ Notes:
     - can also scale to large datasets
 ---
 
-## Naïve Bayes :Strengths, Weaknesses, and Parameters
+## Naïve Bayes:Strengths, Weaknesses, and Parameters
 
 * **Weaknesses**
     - Assumes all features are independent
@@ -399,9 +400,9 @@ Notes:
 
     - See next few slides for code samples in Spark / Python / R
 
-    - NB1 : Spam classification
+    - NB1: Spam classification
 
-    - BONUS : NB2 : Income classification
+    - BONUS: NB2: Income classification
 
 Notes:
 

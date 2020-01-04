@@ -220,6 +220,7 @@ Notes:
 ---
 ## 2012 - AI Recognizes Cats in YouTube Videos
 
+<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style=" width:25%;float:right;"/><!-- {"left" : 6.51, "top" : 1.3, "height" : 2.98, "width" : 3.45} -->
 
 - They built a huge neural network with **1 Billion+** connections and trained it on **16,000 CPU cores (distributed)**
 
@@ -324,7 +325,7 @@ Notes:
 ## TPU Features
 
 
-<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 8.52, "top" : 0.92, "height" : 1.2, "width" : 1.73} -->
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 9.27, "top" : 0.92, "height" : 0.67, "width" : 0.98} -->
 
  * TPU Use cases:
     - Processing Google Streetview photos (extract street numbers / text)
@@ -346,7 +347,7 @@ Notes:
 
 ## Incredible Growth of AI Power
 
-<img src="../../assets/images/deep-learning/3rd-party/Incredible-Growth-of-AI-Power.png" alt="Incredible-Growth-of-AI-Power.png" style="width:60%;float:right;"/><!-- {"left" : 5.38, "top" : 2.04, "height" : 5.73, "width" : 4.77} -->
+<img src="../../assets/images/deep-learning/3rd-party/Incredible-Growth-of-AI-Power.png" alt="Incredible-Growth-of-AI-Power.png" style="width:60%;float:right;"/><!-- {"left" : 5.38, "top" : 1.21, "height" : 5.73, "width" : 4.77} -->
 
  * Since 2012, the amount of compute used in the largest AI training runs has been increasing exponentially with a 3.5 month-doubling time
 
@@ -464,7 +465,7 @@ Notes:
 
 - In the following sections, we have some really cool videos illustrating the hardware advances
 
-- Instructor : show as time permits
+- Instructor: show as time permits
 
 ---
 
