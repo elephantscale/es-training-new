@@ -197,8 +197,9 @@ P (class = go-out | weather = rainy)    = 1 / 5 = 0.2
 P (class = stay-home | weather = sunny) = 2 / 5 = 0.2
 P (class = stay-home | weather = rainy) = 3 / 5 = 0.6
 ```
-<!-- {"left" : 0, "top" : 2.52, "height" : 0.93, "width" : 6.73} -->
+<!-- {"left" : 0, "top" : 2.94, "height" : 0.93, "width" : 6.73} -->
 
+<br/>
 
 * **How car influences decision**
 
@@ -208,7 +209,7 @@ P (class = stay-home | weather = rainy) = 3 / 5 = 0.6
  P (class = stay-home | car = working) = 1 / 5 = 0.2
  P (class = stay-home | car = broken)  = 4 / 5 = 0.8
 ```
-<!-- {"left" : 0, "top" : 3.99, "height" : 1.08, "width" : 7.65} -->
+<!-- {"left" : 0, "top" : 4.77, "height" : 1.08, "width" : 7.65} -->
 
 
 Notes:
