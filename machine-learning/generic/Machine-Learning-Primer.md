@@ -72,12 +72,12 @@ Notes:
 
 ---
 
-## What is  Machine Learning
+## What is Machine Learning
+
+<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 7.41, "top" : 1.1, "height" : 3.71, "width" : 2.63} -->
 
 * **"The field of study that gives computers the ability to learn without being explicitly programmed."**  
  -- Arthur Samuel
-
-<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 7.41, "top" : 1.1, "height" : 3.71, "width" : 2.63} -->
 
 * Example: Self-driving cars
     - Historical approach:  

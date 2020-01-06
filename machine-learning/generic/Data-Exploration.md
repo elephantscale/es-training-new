@@ -18,7 +18,7 @@ Notes:
 
 ## Data Types
 
-| **Type**    | **Description**                                                | **Example**                             |
+| Type    | Description                                                | Example                            |
 |-------------|----------------------------------------------------------------|-----------------------------------------|
 | Continuous  | Data can take any value within an interval Numeric, float, int | Exam score: 0  - 100                    |
 | Discrete    | Only integer values                                            | Clicks per day                          |
@@ -105,9 +105,9 @@ Notes:
 |                                   |                                                                                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Outliers                          | Extreme values. These influence plain mean. <br/>e.g. When Bill Gates walks into a bar, everyone's net worth goes up by few 100s of millions!                                                                                                                                                                                                                                    |
-| Trimmed Mean       Truncated Mean | Take mean, after dropping a number of extreme values from the bottom and top. <br/> <br/>  10% Trimmed Mean drops 10% of largest and 10% of smallest values and calculates mean in remaining 80% of data. <br/> <br/>Used in competition scoring, to avoid one judge influencing the outcome.<br/><br/> Example :  [ 5,  6, 7,  8,  10] <br/>Mean = sum(5+6+7+8+10) / 5 = 7.2 <br/>Trimmed Mean = sum (6,7,8) / 3 = 7 |
+| Trimmed Mean       Truncated Mean | Take mean, after dropping a number of extreme values from the bottom and top. <br/>   10% Trimmed Mean drops 10% of largest and 10% of smallest values and calculates mean in remaining 80% of data. <br/> Used in competition scoring, to avoid one judge influencing the outcome.<br/> Example:  [ 5,  6, 7,  8,  10] <br/>Mean = sum(5+6+7+8+10) / 5 = 7.2 <br/>Trimmed Mean = sum (6,7,8) / 3 = 7 |
 
-<!-- {"left" : 0.25, "top" : 1.92, "height" : 4.63, "width" : 9.75} -->
+<!-- {"left" : 0.25, "top" : 1.3, "height" : 2.63, "width" : 9.75} -->
 
 
 Notes:
@@ -197,8 +197,10 @@ Notes:
   = 91.89
 * Median = 55
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="max-width:80%;"/><!-- {"left" : 3.06, "top" : 3.08, "height" : 1.13, "width" : 4.13} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="max-width:80%;"/><!-- {"left" : 0.3, "top" : 3.54, "height" : 1.62, "width" : 5.9} -->
 
+
+<br/>
 
 * So **median** is less influenced by outliers
 * This is why we hear 'median' used in news stories
@@ -209,7 +211,7 @@ Notes:
 
 ---
 
-## Mean : Sample Code ( R )
+## Mean: Sample Code ( R )
 
 
 ```R
@@ -240,7 +242,7 @@ Notes:
 
 ---
 
-## Mean : Sample Code (Python)
+## Mean: Sample Code (Python)
 
 ```python
 import numpy as np
@@ -302,7 +304,7 @@ Notes:
 | Percentile | The value such that P percent of the values take on this value or less and (100-P) percent take on this value or more | quantile |
 | Interquartile range | The difference between the 75th percentile and the 25th percentile | IQR |
 
-<!-- {"left" : 0.25, "top" : 1.4, "height" : 6.68, "width" : 9.75} -->
+<!-- {"left" : 0.25, "top" : 1.3, "height" : 6.68, "width" : 9.75} -->
 
 Notes:
 
@@ -313,7 +315,7 @@ Notes:
 ## Variance  -  S<sup>2</sup> , σ<sup>2</sup>,  var(x)
 
 * Measures how far apart the data is spread out from their mean
-* Symbols : **S<sup>2</sup>** , **σ<sup>2</sup>**,  **var(x)**
+* Symbols: **S<sup>2</sup>** , **σ<sup>2</sup>**,  **var(x)**
 * Method:
     - Find differences from Xi and mean (μ)
     - Square it
@@ -332,7 +334,7 @@ Notes:
 * Formula credit : Wikipedia (creative commons): https://en.wikipedia.org/wiki/Variance
 
 ---
-## Standard Deviation (SD) : σ  (sigma)
+## Standard Deviation (SD): σ  (sigma)
 
 * SD is the most used measure of dispersion
 * Measures how closely data values are clustered around mean
@@ -536,20 +538,19 @@ Notes:
 
 ## Calculating Percentiles Example
 
- * Income data (sorted): <br/>
+ * Income data (sorted): 
  [22k, 25k, 30k, 35k, 40k, 42k, 45k, 50k, 55k, 60k, 65k, 70k]
 
  * Finding k percentile  point = k * N / 100 <br/>
- N = number of data points  = 12
+ N = number of data points = 12
 
  * Find 30th percentile point: <br/>
  = 30 * 12 / 100 = 3.6th item = 4th item (approx) <br/>
  = 35k <br/>
- = 30% of data is below 35k
+ = 30% of data is below 35k<br/>
 
  * Finding percentile rank k <br/>
- = number of values less than Xk * 100 / N <br/>
- (N number of items)
+ = number of values less than Xk * 100 / N (N number of items)
 
  * What is the percentile rank of income 52k <br/>
  = number of items less than 52k / 12 * 100 <br/>
@@ -562,7 +563,7 @@ Notes:
 
 ---
 
-## Percentiles : Sample Code (R)
+## Percentiles: Sample Code (R)
 
 ```r
 income = c(22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70)
