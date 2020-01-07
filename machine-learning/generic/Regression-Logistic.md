@@ -285,7 +285,7 @@ Notes:
      - Confusion Matrix
      - ROC and AUC (Area Under Curve)
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Measuring-Accuracy-of-Logistic-Model-0.png" style="width:60%;float:right;"/><!-- {"left" : 3.36, "top" : 6.12, "height" : 2.74, "width" : 6.8} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Measuring-Accuracy-of-Logistic-Model-0.png" style="width:60%;float:right;"/><!-- {"left" : 5.55, "top" : 4.57, "height" : 1.88, "width" : 4.67} -->
 
  * Confusion Matrix:
     - correct: 14 + 5 = 19
@@ -354,7 +354,7 @@ Notes:
 
  * For K possible outcomes
 
-     - Chose one outcome as a pivot
+     - Chose one outcome as a pivot
 
         * against the pivot outcome
 
@@ -422,9 +422,9 @@ Notes:
 
  *  **Instructions:**
 
-     - Follow  appropriate Python / R / Spark instructions
+     - Follow appropriate Python / R / Spark instructions
 
-     -  **Cross Validation 1 : Tuning the model**
+     -  **Cross Validation 1: Tuning the model**
 
 
 Notes:

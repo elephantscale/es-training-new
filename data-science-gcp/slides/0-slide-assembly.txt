@@ -1,3 +1,40 @@
 
 ## outline
 ../data-science-on-google-cloud-outline.pdf
+
+## About
+About-Data-Science-on-Google-Cloud-Class.md
+
+Google-Cloud-Intro.md
+
+Data-in-the-Cloud.md
+
+Data-Studio.md
+
+Data-Analysis-on-Google-Cloud.md
+
+Cloud-SQL.md
+
+Big-Query.md
+
+App-Engine.md
+
+Cloud-Dataflow.md
+
+## Spark-Intro
+
+Dataproc.md
+
+## Machine Learning
+../../machine-learning/generic/Machine-Learning-Primer-Compact.md
+../../machine-learning/generic/ML-Resources.md
+
+# Spark-ML.md
+
+../../deep-learning/tensorflow/TENSORFLOW-Intro.md
+
+Big-Table.md
+
+Workshop-1.md
+
+Workshop-2.md

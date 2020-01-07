@@ -123,12 +123,12 @@ Notes:
 
 |               | Parametric                                                                                  | Non Parametric                                                                                                                                          |
 |---------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Advantages    | - Simpler <br/>- Very fast to learn from data <br/>- Don't required, a lot of training data | -Flexible: can adopt to complex data, <br/>- No assumptions about underlying function, <br/>- good prediction performance                                 |
-| Disadvantages | - limited by function <br/>- Can not adopt to complex data - Can underfit                   | -Complex to understand and explain, <br/>- Require more data for learning,<br/>- Slower to train as they have more parameters to tweak, <br/>- Canover-fit |
+| Advantages    | - Simpler <br/>- Very fast to learn from data <br/>- Don't required, a lot of training data | - Flexible: can adopt to complex data, <br/>- No assumptions about underlying function, <br/>- good prediction performance                                 |
+| Disadvantages | - limited by function <br/>- Can not adopt to complex data <br/>- Can underfit                   | - Complex to understand and explain, <br/>- Require more data for learning,<br/>- Slower to train as they have more parameters to tweak, <br/>- Canover-fit |
 | Algorithms    | - Linear Regression <br/>- Logistic Regression <br/>- Linear Discriminant Analysis          | - Decision Trees, <br/>- Support Vector Machines, <br/>- Naïve Bayes                                                                                       |
 | Best for      | - small size data with previous knowledge of features                                       | when having lots of data and no prior knowledge of features                                                                                             |
 
-<!-- {"left" : 0.25, "top" : 1.06, "height" : 7.43, "width" : 9.75, "columnwidth" : [1.65, 3.57, 4.54]} -->
+<!-- {"left" : 0.25, "top" : 1.06, "height" : 4.43, "width" : 9.75, "columnwidth" : [1.65, 3.57, 4.54]} -->
 
 
 Notes:

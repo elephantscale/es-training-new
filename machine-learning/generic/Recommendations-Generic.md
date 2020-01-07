@@ -346,7 +346,7 @@ Notes:
 
      - For example user1 ratings are between 3 and 5 (3 is a minimum rating)
 
-     - While user2's ratings are between 2-4  (never a 5)
+     - While user2's ratings are between 2-4 (never a 5)
 
      - Ratings need to be normalized before processing begins(Z-Scoring is a popular method)
 
@@ -526,7 +526,7 @@ Notes:
 ## Matrix Refactorization Explained
 
 
- * R is matrix is  M (users)  x N (items)
+ * R is matrix is M (users) x N (items)
 
      - Can be really large  - 100 million users x 1 million items
 
@@ -534,11 +534,11 @@ Notes:
 
      - U : latent vectors for each user , MxK dimension,
 
-     - V : latent vectors for each item,  KxN dimension
+     - V : latent vectors for each item, KxN dimension
 
- * Multiplying U and V will  **approximately**  give R
+ * Multiplying U and V will **approximately**  give R
 
- * But matrices U & V are  **dense** !  So can be stored effectively
+ * But matrices U & V are **dense** ! So can be stored effectively
 
 ---
 
@@ -580,7 +580,7 @@ Notes:
 
 
  * To solve matrices U and V, we can utilize
-     - SVD : Requires inverting a very large matrix -> computationally expensive
+     - SVD: Requires inverting a very large matrix -> computationally expensive
      - Apply ALS to approximate it
  * ALS we only need to solve one vector at time -> parallelizable !!
  * This is why Spark ML implements ALS

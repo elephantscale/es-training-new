@@ -1,5 +1,12 @@
 #!/bin/bash
 
+## to generate pdf 
+##	./gen.sh  pdf
+## to generate pptx
+##	./gen.sh  pptx
+## to generate pptx and pdf
+##	./gen.sh  pptx pdf
+
 ## generate outline doc pdf
 pandoc ../data-science-on-google-cloud-outline.md  -f markdown -o  ../data-science-on-google-cloud-outline.docx
 pandoc ../data-science-on-google-cloud-outline.md  -f markdown  -o ../data-science-on-google-cloud-outline.pdf

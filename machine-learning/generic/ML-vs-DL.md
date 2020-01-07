@@ -82,7 +82,7 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
-<!-- {"left" : 0.13, "top" : 1.22, "height" : 6.74, "width" : 9.99, "columnwidth" : [2.59, 3.32, 4.09]} -->
+<!-- {"left" : 0.13, "top" : 1.18, "height" : 6.74, "width" : 9.99, "columnwidth" : [2.59, 3.32, 4.09]} -->
 
 
 
@@ -156,7 +156,7 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
-<!-- {"left" : 0.25, "top" : 1.26, "height" : 6.89, "width" : 9.75, "columnwidth" : [2.86, 3.17, 3.72]} -->
+<!-- {"left" : 0.25, "top" : 1.18, "height" : 6.89, "width" : 9.75, "columnwidth" : [2.86, 3.17, 3.72]} -->
 
 Notes:
 
@@ -171,7 +171,7 @@ Notes:
 | Data has well defined structure.                         | Structure is not well defined or non existing |
 | Data in a database tables are well defined.  10 columns, first column is integer, second column is timestamp ..etc | videos, images                                             |
 
-<!-- {"left" : 0.26, "top" : 1.31, "height" : 2.65, "width" : 9.82, "columnwidth" : [6.33, 3.49]} -->
+<!-- {"left" : 0.26, "top" : 1.18, "height" : 2.65, "width" : 9.82, "columnwidth" : [6.33, 3.49]} -->
 
 <img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="XXX image not found" style="max-width:60%;"/><!-- {"left" : 1.53, "top" : 4.35, "height" : 3.83, "width" : 7.19} -->
 
@@ -280,7 +280,7 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
-<!-- {"left" : 0.25, "top" : 1.3, "height" : 6.89, "width" : 9.75, "columnwidth" : [2.86, 3.17, 3.72]} -->
+<!-- {"left" : 0.25, "top" : 1.18, "height" : 6.89, "width" : 9.75, "columnwidth" : [2.86, 3.17, 3.72]} -->
 
 
 Notes:

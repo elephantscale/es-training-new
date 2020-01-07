@@ -21,14 +21,14 @@ Notes:
 * Consider college application and admittance data
 
 * **Inputs:**
-    - GRE:  max 800
+    - GRE: max 800
     - GPA: 1.0  to4.0
     - Rank: 1 (better) to 4
 
 * **Output**
-    - Admitted : Yes or No
+    - Admitted: Yes or No
 
-* We did this Multiple Logistics Regression before. <br/> Now we will try SVM
+* We did this Multiple Logistics Regression before.Now we will try SVM
 
 
 

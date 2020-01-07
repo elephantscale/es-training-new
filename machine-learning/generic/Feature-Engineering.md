@@ -232,7 +232,7 @@ Notes:
 ## Quantization
 
  * Sometimes we do want the ML model to interpret categorical variables
-    - Grades :  A > B > C > D
+    - Grades:  A > B > C > D
     - Domain specific meaning
  * For example, colors in physics has a numeric meaning:
     - Red: 480 THz frequency of light
@@ -240,7 +240,7 @@ Notes:
  * This might allow our models to make inferences
     - e.g., Orange is close to red on the spectrum, but more distant from violet.
 
-<img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:50%;"/><!-- {"left" : 1.83, "top" : 5.97, "height" : 2.79, "width" : 6.59} -->
+<img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:50%;"/><!-- {"left" : 1.83, "top" : 5.77, "height" : 2.79, "width" : 6.59} -->
 
 
 

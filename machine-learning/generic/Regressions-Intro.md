@@ -50,7 +50,7 @@ Notes:
 | Polynomial Regression | If power of independent variable is more than 1. <br/>  Y = a * X + b * X<sup>2</sup>   <br/>- Can be prone to overfitting  <br/>- Results can be hard to explain      |                                        |
 | Stepwise Regression   | -When we have multiple independent variables, automatically selects significant variables  <br/>- No human intervention  <br/>- AIC                                    | - House price predictor                |
 
-<!-- {"left" : 0.25, "top" : 1.11, "height" : 7.51, "width" : 9.75, "columnwidth" : [2.64, 4.61, 2.5]} -->
+<!-- {"left" : 0.25, "top" : 1.1, "height" : 5.51, "width" : 9.75, "columnwidth" : [2.64, 4.61, 2.5]} -->
 
 
 Notes:

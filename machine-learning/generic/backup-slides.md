@@ -1,6 +1,26 @@
-# ML Terminology
+# ML Backup slides
 ---
+## How to do Machine Learning
 
+
+ *  **Collect data**
+    More data we have, the better the algorithms become.  This data can come from internal logs (clickstreams) or external sources (credit scores of customers)
+
+ *  **Prepare Data**
+    Raw data is hardly in a form to be used.  It needs to be cleansed, tagged and curated before ready to use
+
+ *  **Train a model**
+    Feed the training data to model so it can learn
+
+ *  **Evaluate the model**
+    Test the model accuracy
+
+ *  **Improve the model**
+    Either by adding more training data, choosing a different algorithm ..etc.
+
+Notes:
+
+---
 ## ML Terminology
 
 | Algorithm                                             	| Example                                     	| Input                                              	| Output                                      |
