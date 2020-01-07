@@ -1,10 +1,12 @@
-# Machine Learning on Azure
+# Data Science on Azure
 © Elephant Scale
-Jan. 03, 2020
+Jan. 06, 2020
 
 ## Overview
 
-Machine Learning (ML) is a game-changer and Microsoft Azure is the second-largest cloud computing provider.  Azure’s particular strength is in the usability and integration with the Microsoft stack.
+Data Science includes statistics, data visualization and exploration,
+and Machine learning. Since Microsoft Azure is the second-largest cloud computing provider, knowledge of its Data Science capabilities is essential for
+building best-of-breed solutions. Azure’s particular strength is in the usability and integration with the Microsoft stack.
 
 In this course, the students will get an overview of ML with Python and R, the two standard environments for ML. They will also learn the specifics of the Azure and the capabilities that it offers to ML developers.
 
@@ -12,14 +14,18 @@ One of the goals of the course is to prepare the students for taking the Azure c
 
 
 ## What you will learn
-- TODO
+* The basic of the two most popular data science languages, R and Python
+* Azure Machine Learning and Data Science IDE
+* Spark and Databricks runtime
+* Machine Learning
+* Streaming analytics
 
 
 ## Audience
 Developers, Architects
 
 ## Duration
-Three to four days depending on the need
+4 days
 
 ## Format
 Lectures and hands-on labs. (50%, 50%)
@@ -89,4 +95,4 @@ Lectures and hands-on labs. (50%, 50%)
   - Azure Stream Analytics
   - Azure Machine Learning (ML) Workbench
 * Data Science Virtual Machine and AI Frameworks
-  - Deep Learning Tools with Cognitive Toolkit 
+  - Deep Learning Tools with Cognitive Toolkit
