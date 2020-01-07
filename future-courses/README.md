@@ -1,9 +1,8 @@
-# Future courses
+# Future courses folder
 
-* We stored the outline in *.md format
+* We store the outline in the *.md format
 * To generate the Word outline, do this
 
 ```
-$ES_HOME/utils/presentations/md2docx.sh *.md 
+$ES_HOME/utils/presentations/md2docx.sh <script-name>.md
 ```
-

@@ -11,7 +11,7 @@ In this course, the students will get an overview of ML with Python and R, the t
 One of the goals of the course is to prepare the students for taking the Azure certification exam.
 
 
-## What you will
+## What you will learn
 - Get introduced to Machine Learning
 - Find out how to use Machine Learning tools on Microsoft Azure
 - Understand how to use automated Machine Learning
@@ -21,7 +21,7 @@ One of the goals of the course is to prepare the students for taking the Azure c
 Developers, Architects
 
 ## Duration
-Four days depending on the need
+Four days 
 
 ## Format
 Lectures and hands-on labs. (50%, 50%)
