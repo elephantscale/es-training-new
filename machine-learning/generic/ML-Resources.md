@@ -21,10 +21,9 @@
 
 <br />
 
-<!-- TODO shiva -->
+<img src="../../assets/images/books/python-for-data-analysis-9781449319793.jpg" style="width:20%;" /><!-- {"left" : 2.25, "top" : 3.99, "height" : 3.4, "width" : 2.6} --> &nbsp; &nbsp; <img src="../../assets/images/books/natural-language-processing-with-python-9780596516499.jpg" style="width:20%;" /><!-- {"left" : 5.41, "top" : 3.99, "height" : 3.4, "width" : 2.59} -->
 
-<img src="../../assets/images/books/python-for-data-analysis-9781449319793.jpg" style="width:20%;" /> &nbsp; &nbsp;
-<img src="../../assets/images/books/natural-language-processing-with-python-9780596516499.jpg" style="width:20%;" />
+
 
 ---
 
@@ -53,10 +52,9 @@
 
 <br />
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/books/think-stats-9781491907337.jpg" style="width:20%;" /> &nbsp;  &nbsp;
-<img src="../../assets/images/books/practical-statistics-for-data-scientists-9781491952962.jpg" style="width:20%;" />
+<img src="../../assets/images/books/think-stats-9781491907337.jpg" style="width:20%;" /><!-- {"left" : 1.82, "top" : 3.51, "height" : 3.98, "width" : 3.04} --> &nbsp;  &nbsp; <img src="../../assets/images/books/practical-statistics-for-data-scientists-9781491952962.jpg" style="width:20%;" /><!-- {"left" : 5.4, "top" : 3.51, "height" : 3.98, "width" : 3.03} -->
+
 
 ---
 
@@ -69,10 +67,7 @@
 
 <br />
 
-<!-- TODO shiva -->
-<img src="../../assets/images/books/real-world-machine-learning-9781617291920.png" style="width:20%;" /> &nbsp;  &nbsp;
-<img src="../../assets/images/books/introduction-to-statistical-learning-9781461471370.jpg" style="width:18%;" /> &nbsp; &nbsp;
-<img src="../../assets/images/books/elemants-of-statistical-learning-9780387848570.jpg" style="width:18%;" /> &nbsp; &nbsp;
+<img src="../../assets/images/books/real-world-machine-learning-9781617291920.png" style="width:20%;" /><!-- {"left" : 0.7, "top" : 4.7, "height" : 3.47, "width" : 2.67} --> &nbsp;  &nbsp; <img src="../../assets/images/books/introduction-to-statistical-learning-9781461471370.jpg" style="width:18%;" /><!-- {"left" : 4.15, "top" : 4.7, "height" : 3.47, "width" : 2.32} --> &nbsp; &nbsp; <img src="../../assets/images/books/elemants-of-statistical-learning-9780387848570.jpg" style="width:18%;" /><!-- {"left" : 7.25, "top" : 4.7, "height" : 3.47, "width" : 2.3} -->
 
 ---
 
@@ -84,8 +79,8 @@ by  Aurélien Géron (ISBN: 9781492037347)
 * [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)  
 by  Aurélien Géron (ISBN: 9781492032649)
 
-<img src="../../assets/images/books/neural-networks-and-deep-learning-9781492037347.jpeg" alt="keras book1" style="width:17%;"/>&nbsp;&nbsp;<!-- {"left" : 2.78, "top" : 4.55, "height" : 3.15, "width" : 2.09} -->
-<img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:19.5%;"/><!-- {"left" : 5.18, "top" : 4.55, "height" : 3.15, "width" : 2.4} -->
+<img src="../../assets/images/books/neural-networks-and-deep-learning-9781492037347.jpeg" alt="keras book1" style="width:17%;"/>&nbsp;&nbsp;<!-- {"left" : 2.41, "top" : 4.2, "height" : 3.57, "width" : 2.37} -->
+<img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:19.5%;"/><!-- {"left" : 5.12, "top" : 4.2, "height" : 3.57, "width" : 2.72} -->
 
 ---
 
@@ -98,5 +93,5 @@ by by Adam Gibson, Josh Patterson(ISBN: 9781491914250)
 by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
 
 
-<img src="../../assets/images/books/deep-learning-9781491914250.jpeg" alt="keras book1" style="width:20%;"/>&nbsp;&nbsp;<!-- {"left" : 2.71, "top" : 4.53, "height" : 3.02, "width" : 2.3} -->
-<img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.27, "top" : 4.53, "height" : 3.02, "width" : 2.31} -->
+<img src="../../assets/images/books/deep-learning-9781491914250.jpeg" alt="keras book1" style="width:20%;"/>&nbsp;&nbsp;<!-- {"left" : 2.21, "top" : 4.21, "height" : 3.62, "width" : 2.75} -->
+<img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.27, "top" : 4.21, "height" : 3.62, "width" : 2.77} -->

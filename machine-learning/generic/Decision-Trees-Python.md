@@ -206,9 +206,9 @@ Notes:
 
 ## DecisionTrees Parameters (Classification)
 
-| **Parameter**     | **Description**                                                                    | **Default Value** |
+| Parameter         | Description                                                                        | Default Value     |
 |-------------------|------------------------------------------------------------------------------------|-------------------|
-| criterion         | 'gini' for impurity vs. 'entropy' for information gain                              | `gini`            |
+| criterion         | 'gini' for impurity vs. 'entropy' for information gain                             | `gini`           |
 | max-features      | Maximum number of features to consider                                             | `auto`            |
 | max-depth         | Maximum depth of each tree                                                         | `auto`            |
 | min-samples-split | Min samples required to split in node                                              | 2                 |
@@ -224,7 +224,7 @@ Notes:
 ## Random Forest Attributes
 
 
-| **Attribute**           | **Description**                               | **Type**           |
+| Attribute              | Description                                   | Type               |
 |------------------------|-----------------------------------------------|--------------------|
 | estimators_            | Collection of trees                           | List of Estimators |
 | classes_               | Class label for output                        | Array of str       |
@@ -331,10 +331,10 @@ Notes:
  * Additional Parameters
 
 
- |   **Parameter**   |                                   **Description**                                  | **Default Value** |
+ |   Parameter      |                                     Description                                    |   Default Value   |
 |:-----------------:|:----------------------------------------------------------------------------------:|:-----------------:|
 | n_estimators      | Max Numbers of trees                                                               |         10        |
-| criterion         | 'gini' for impurity vs. 'entropy' for information gain                              |       `gini`      |
+| criterion         | 'gini' for impurity vs. 'entropy' for information gain                             |       `gini`      |
 | max_features      | Maximum number of features to consider                                             |       `auto`      |
 | max_depth         | Maximum depth of each tree                                                         |       `auto`      |
 | min_samples_split | Min samples required to split in node                                              |         2         |
@@ -372,7 +372,7 @@ Notes:
 
 ## Random Forest Attributes
 
-| **Attribute**          | **Description**                               | **Type**              |
+|   Attribute            |   Description                                 |    Type               |
 |------------------------|-----------------------------------------------|-----------------------|
 | estimators_            | Collection of trees                           | OOB decision function |
 | classes_               | Class label for output                        | Array of  str         |
@@ -486,7 +486,7 @@ Notes:
  * Additional Parameters
 
 
- | **Parameter**   | **Description**                            | **Default Value** |
+ |  Parameter     |  Description                               |   Default Value   |
 |-----------------|--------------------------------------------|-------------------|
 | numtrees        | Max Numbers of trees                       | 20                |
 | subSamplingRate | Adjusts Sampling rate of data for boosting | 5                 |

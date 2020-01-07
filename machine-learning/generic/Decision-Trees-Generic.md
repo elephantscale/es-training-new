@@ -19,7 +19,7 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-DT-1.png" style="width:80%"><!-- {"left" : 0.57, "top" : 0.98, "height" : 6.02, "width" : 9.11} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-DT-1.png" style="width:80%"><!-- {"left" : 0.57, "top" : 1.3, "height" : 6.02, "width" : 9.11} -->
 
 
 Notes:
@@ -39,7 +39,7 @@ Notes:
      - Admitted: Yes or No
 
 
-| **gre** | **gpa** | **rank** | **admitted** |
+| gre     | gpa     | rank.    | admitted     |
 |---------|---------|----------|--------------|
 | 380     | 3.6     | 3        | No           |
 | 660     | 3.67    | 3        | Yes          |
@@ -51,6 +51,9 @@ Notes:
 | 700     | 4.0     | 1        | Yes          |
 | 500     | 3.17    | 3        | No           |
 
+<!-- {"left" : 0.25, "top" : 3.25, "height" : 5, "width" : 9.75} -->
+
+
 Notes:
 
 
@@ -60,7 +63,7 @@ Notes:
 
 ## Should I Accept the New Job Offer?
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Job-Offer.png" style="width:80%"><!-- {"left" : 0.86, "top" : 1.31, "height" : 5.36, "width" : 8.53} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Job-Offer.png" style="width:80%"><!-- {"left" : 0.86, "top" : 2.14, "height" : 5.36, "width" : 8.53} -->
 
 
 Notes:
@@ -71,7 +74,7 @@ Notes:
 
 ## Example of Decision Tree
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Example-Decision-Trees.png" style="width:70%"><!-- {"left" : 0.5, "top" : 1.04, "height" : 5.89, "width" : 9.25} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Example-Decision-Trees.png" style="width:70%"><!-- {"left" : 0.5, "top" : 1.59, "height" : 5.89, "width" : 9.25} -->
 
 
 
@@ -83,7 +86,7 @@ Notes:
 
 ## Class Quiz
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.95, "top" : 1.12, "height" : 2.86, "width" : 4.29} -->
 
  * **Create a Tree to Classify These Animals**
 
@@ -136,7 +139,7 @@ Medical decision tree use case: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC425
 ## Baseball Player Salary Prediction with Regression Tree
 
 
-<img src="../../assets/images/machine-learning/decision-trees-baseball-player-1.png" style="width:65%"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
+<img src="../../assets/images/machine-learning/decision-trees-baseball-player-1.png" style="width:65%"><!-- {"left" : 0.57, "top" : 2.08, "height" : 5.49, "width" : 9.1} -->
 
 
 Notes:
@@ -148,8 +151,7 @@ Image from "An introduction to Statistical Learning"  with thanks to authors
 
 ## Decision Tree Terminology
 
-<!-- TODO shiva  -->
-<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
+<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 6.34, "top" : 1.23, "height" : 4.32, "width" : 3.83} -->
 
 - Decision Trees are implemented as binary trees
 
@@ -168,8 +170,8 @@ Image from "An introduction to Statistical Learning"  with thanks to authors
 
 ## Storing The Tree Model
 
-<!-- TODO shiva  -->
-<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 0.57, "top" : 1.24, "height" : 5.49, "width" : 9.1} -->
+<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 6.65, "top" : 1.05, "height" : 3.93, "width" : 3.48} -->
+
 
 - Decision Tree can be saved to a file as a graph or set of rules
 
@@ -178,7 +180,7 @@ If years < 4.5 Then Salary=5.11
 If years >= 4.5 and Hits < 117.5 Then Salary = 6.0
 If years >= 4.5 and Hits >= 117.5 Then Salary = 6.74
 ```
-<!-- {"left" : 0, "top" : 1.11, "height" : 1.45, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.65, "height" : 1.15, "width" : 9.44} -->
 
 
 
@@ -227,7 +229,10 @@ Redo pictures and numbers
  * Find the error (prediction vs actual) per each region
      - This is RSS (Residual Sum of Squares)
 
-<img src="../../assets/images/formulas-equations/decision-tree-RSS-1.png" style="width:30%;float:right;"/><!--{"left" : 3.48, "top" : 5.53, "height" : 1.5, "width" : 3.3} -->
+<img src="../../assets/images/formulas-equations/decision-tree-RSS-1.png" style="width:30%;float:right;"/><!-- {"left" : 0.27, "top" : 4.83, "height" : 1.78, "width" : 3.93} -->
+
+
+<br/>
 
  * Try to  **minimize RSS across all regions**
      - The formula calculates RSS across all Regions ( 1 to J)
@@ -262,7 +267,7 @@ Notes:
 
 ## Example: Guessing Game
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="margin-left:5px; width:45%; float:right;"/><!--{"left" : 6.61, "top" : 2.56, "height" : 2.38, "width" : 3.05} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="margin-left:5px; width:45%; float:right;"/><!-- {"left" : 5.6, "top" : 1.03, "height" : 3.55, "width" : 4.55} -->
 
  * Let us say the first person choose a number in the range of 1 through 100
 
@@ -339,7 +344,7 @@ Notes:
 
  * We will create a decision tree to identify the classes
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Creation-Example-0.png" style="width:60%"><!-- {"left" : 1.74, "top" : 2.24, "height" : 4.52, "width" : 6.76} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Creation-Example-0.png" style="width:60%"><!-- {"left" : 1.74, "top" : 2.56, "height" : 4.52, "width" : 6.76} -->
 
 
 Notes:
@@ -354,7 +359,7 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
  * At depth=1
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-1.png" style="width:80%"><!-- {"left" : 0.49, "top" : 2.32, "height" : 3.33, "width" : 9.27} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-1.png" style="width:80%"><!-- {"left" : 0.75, "top" : 2.59, "height" : 3.15, "width" : 8.74} -->
 
 
 Notes:
@@ -369,7 +374,7 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
  * At depth=2
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-2.png" style="width:80%"><!-- {"left" : 0.64, "top" : 2.37, "height" : 3.23, "width" : 8.97} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-2.png" style="width:80%"><!-- {"left" : 0.24, "top" : 2.48, "height" : 2.84, "width" : 9.77} -->
 
 
 Notes:
@@ -386,7 +391,7 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
  * We can see the tree is over fitting
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-3.png" style="width:80%"><!-- {"left" : 0.64, "top" : 2.26, "height" : 3.45, "width" : 8.97} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-3.png" style="width:80%"><!-- {"left" : 0.25, "top" : 2.91, "height" : 3.25, "width" : 9.74} -->
 
 
 Notes:
@@ -425,7 +430,7 @@ Notes:
 
 *  **Min number of elements per node**
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:50%;float:right;"/><!--{"left" : 6.3, "top" : 4.57, "height" : 2.16, "width" : 3.67} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:50%;float:right;"/><!--{"left" : 5.98, "top" : 2.55, "height" : 2.42, "width" : 4.11} -->
 
  * Most common stopping criteria is Minimum instances per node
 
@@ -546,11 +551,7 @@ Notes:
 
 ## Gini Index (G)
 
-<!-- TODO shiva  -->
-
-<img src="../../assets/images/machine-learning/Decision-Trees-Gini-Index-1.png" style="margin-left:20px; width:50%;float:right;"><!--{"left" : 5.37, "top" : 3.9, "height" : 3.28, "width" : 4.43} -->
-
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30%;float:right;clear:both;"><!-- {"left" : 0.73, "top" : 4.84, "height" : 1.4, "width" : 3.83} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Gini-Index-1.png" style="margin-left:20px; width:40%;float:right;"><!--{"left" : 5.71, "top" : 1.27, "height" : 3.3, "width" : 4.46} -->
 
  * Gini index measures the 'purity' of each node (how mixed data is in one Region)
 
@@ -560,9 +561,12 @@ Notes:
 
  * If all of  *P*<sub>*mk*</sub>  are close to 0 or to 1, G is small
 
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30%;float:right;clear:both;"><!--{"left" : 6.05, "top" : 6.36, "height" : 1.44, "width" : 3.96} -->
+
  * If region has 50%-50%  mix then G = 0.5  (worst purity)
 
  *  **Goal: minimize G score**
+
 
 
 
@@ -658,7 +662,7 @@ Notes:
 
 ## Variables in the Prosper Dataset
 
-| **#** | **Name**                  |**Name** | **#**                  |
+| #     | Name                      |Name     | #                      |
 |-------|---------------------------|---------|------------------------|
 | 1     | ListingKey                |2        | ListingNumber          |
 | 3     | ListingCreationDate       |4        | CreditGrade            |
@@ -681,7 +685,8 @@ Notes:
 
 ## Lab: Decision Trees
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!--{"left" : 7.23, "top" : 1, "height" : 3.9, "width" : 2.92} -->
+
 
  *  **Overview**
  Create a classification decision tree
@@ -696,7 +701,7 @@ Notes:
 
      -  **DT-2: prosper-loans**
 
-<img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%;"><!-- {"left" : 3.46, "top" : 3.05, "height" : 1.88, "width" : 3.33} -->
+<img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%;"><!--{"left" : 2.81, "top" : 5.85, "height" : 1.08, "width" : 4.62} -->
 
 
 Notes:
@@ -713,7 +718,7 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-RF-1.png" style="width:80%"><!-- {"left" : 0.87, "top" : 1.17, "height" : 5.63, "width" : 8.52} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-RF-1.png" style="width:80%"><!-- {"left" : 0.57, "top" : 1.53, "height" : 6.02, "width" : 9.11} -->
 
 
 Notes:
@@ -837,7 +842,8 @@ Notes:
 
 ## Bagging (Boosting Aggregation) In Action
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%;float:right; "><!-- {"left" : 2.95, "top" : 3.12, "height" : 3.72, "width" : 4.36} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%;float:right; "><!-- {"left" : 6.04, "top" : 1.18, "height" : 3.51, "width" : 4.11} -->
+
 
  * We create 3 trees with  **Boosting**
 
@@ -900,7 +906,8 @@ Notes:
 ## Data & Feature Bagging in Action
 
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%;float:right; "><!--{"left" : 4.17, "top" : 2.9, "height" : 4.22, "width" : 5.75} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%;float:right; "><!-- {"left" : 5.67, "top" : 1.15, "height" : 3.41, "width" : 4.47} -->
+
 
  * We have 3 trees, each operating on
 
@@ -954,7 +961,7 @@ Notes:
 
  * Final Random Forest overfits less than each individual tree
 
-<img src="../../assets/images/machine-learning//3rd-party/Decision-Trees-Random-Forest-Example-0.png" style="width:70%"><!-- {"left" : 1.02, "top" : 2.6, "height" : 4.21, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning//3rd-party/Decision-Trees-Random-Forest-Example-0.png" style="width:70%"><!-- {"left" : 1.02, "top" : 3.12, "height" : 4.21, "width" : 8.21} -->
 
 
 Notes:
@@ -1002,8 +1009,7 @@ Notes:
 
 ## Lab: Random Forest
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/>
-
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!--{"left" : 7.23, "top" : 1, "height" : 3.9, "width" : 2.92} -->
 
  *  **Overview**
 

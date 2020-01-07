@@ -67,23 +67,23 @@ Notes:
 ```bash
         $   cd labs-dir
         $  ./package-labs.sh
-    ```
+```
 
-<!-- {"left" : 0, "top" : 2.14, "height" : 0.86, "width" : 4.61} -->
-
+<!-- {"left" : 0, "top" : 2.37, "height" : 1.05, "width" : 5.62} -->
 
 <br/>
 
-    - This will create a zip file
-    -  Distribute this bundle to students
-        - Upload it to Google drive or Amazon S3
-    -  **Explain the difference between .md, .ipynb, .html files**
+ * This will create a zip file
+ *  Distribute this bundle to students
+    - Upload it to Google drive or Amazon S3
+    - **Explain the difference between .md, .ipynb, .html files**
 
  *  **To students**
      - You can open html files in browser to see lab instructions
      - If you have Jupyter environment setup, you can run   
      __`./run-jupyter.sh`__   
      and view the notebooks
+
 Notes:
 
 
@@ -93,6 +93,7 @@ Notes:
 ## Step 4: Setup
 
 <img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.02, "top" : 1.16, "height" : 3.88, "width" : 2.91} -->
+
  *  **Overview:**
 
      - Setting up the environment
@@ -106,7 +107,6 @@ Notes:
      - Follow  ' **setup** '  instructions in the lab bundle
 
 Notes:
-
 
 
 
@@ -132,7 +132,6 @@ Notes:
 
 
 
-
 ---
 
 ## Jupyter - Interactive Notebook
@@ -148,6 +147,9 @@ Notes:
 Notes:
 
 https://www.youtube.com/watch?v=xaBEFqFVSE8
+
+
+
 
 
 ---
