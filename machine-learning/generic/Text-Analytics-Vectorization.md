@@ -78,7 +78,7 @@ Notes:
 doc-1:
       The brown cow is sleeping
 ```
-<!-- {"left" : 0, "top" : 1.2, "height" : 0.86, "width" : 5.94} -->
+<!-- {"left" : 0, "top" : 1.25, "height" : 0.86, "width" : 5.94} -->
 
 
 <br/>
@@ -87,7 +87,7 @@ doc-1:
 doc-2:
       The brown dog is near the brown cow
 ```
-<!-- {"left" : 0, "top" : 2.49, "height" : 0.86, "width" : 7.61} -->
+<!-- {"left" : 0, "top" : 2.64, "height" : 0.86, "width" : 7.61} -->
 
 <br/>
 
@@ -95,7 +95,7 @@ doc-2:
 doc-3:
       The black cat is sleeping
 ```
-<!-- {"left" : 0, "top" : 3.96, "height" : 0.86, "width" : 5.94} -->
+<!-- {"left" : 0, "top" : 4.01, "height" : 0.86, "width" : 5.94} -->
 
 - In Document-Term-Matrix (DTM)
     - We count the word occurrences (frequency) per document
@@ -108,7 +108,7 @@ doc-3:
 | doc-2 | 0 | 2 | 0 | 2 | 1 | 1 | 1 | 0 | 2 |
 | doc-3 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 |
 
-<!-- {"left" : 0.23, "top" : 5.39, "height" : 2, "width" : 9.79, "columnwidth" : [1.59, 1, 0.98, 0.96, 0.79, 0.85, 0.69, 0.8, 1.37, 0.76]} -->
+<!-- {"left" : 0.23, "top" : 6.56, "height" : 2, "width" : 9.79, "columnwidth" : [1.59, 1, 0.98, 0.96, 0.79, 0.85, 0.69, 0.8, 1.37, 0.76]} -->
 
 ---
 
@@ -144,7 +144,7 @@ Which result do we show first?  doc1 or doc2 ?
 
 - What is the result when searching for the term __the__ ?
 
-- We get all documents : doc-1, doc-2,  doc-3
+- We get all documents: doc-1, doc-2, doc-3
 
 - Most common words will be present in many documents
     - like stop words (is, the, and ...)
@@ -410,7 +410,7 @@ feature vectors
 2 dog
 ...
 ```
-<!-- {"left" : 0.0, "top" : 0.91, "height" : 6.38, "width" : 9.48} -->
+<!-- {"left" : 0.0, "top" : 1.2, "height" : 6.38, "width" : 9.48} -->
 
 Notes:
 
@@ -486,9 +486,10 @@ Notes:
   * Natural Language has sparse dimensions of TF-IDF scores
   * PCA is not an ideal fit
 
---- 
+---
 
 ## Latent Semantic Indexing
+
   * Latent Semantic Indexing, aka Latent Semantic Analysis
     - Latent means hidden: it means we are trying to find "hidden" features that help us predict the data
     - the numbe of latent features is defined by the "rank"
@@ -506,6 +507,7 @@ Notes:
 ---
 
 ## How LSI works
+
   * LSI uses the Singular Value Decomposition to find two matrices U and V
     * U is the tall-skinny matrix
     * V is the short-fat matrix
@@ -530,7 +532,7 @@ Notes:
 
      - PCA!
 
- * Done by  **'matrix factorization** '
+ * Done by **'matrix factorization'**
 
  * We take a large users x items matrix and figure out 'hidden' (latent) features that results in much smaller matrix and explains the relationship
 
@@ -543,26 +545,25 @@ Notes:
 ## Matrix Refactorization Explained
 
 
- * R is matrix is  M (users)  x N (items)
+ * R is matrix is  M (users) x N (items)
 
-     - Can be really large  - 100 million users x 1 million items
+     - Can be really large - 100 million users x 1 million items
 
- * Factorize R into two smaller matrices ,
+ * Factorize R into two smaller matrices,
 
-     - U : latent vectors for each user , MxK dimension,
+     - U: latent vectors for each user , MxK dimension,
 
-     - V : latent vectors for each item,  KxN dimension
+     - V: latent vectors for each item, KxN dimension
 
- * Multiplying U and V will  **approximately**  give R
+ * Multiplying U and V will **approximately** give R
 
- * But matrices U & V are  **dense** !  So can be stored effectively
+ * But matrices U & V are **dense**! So can be stored effectively
 
 ---
 
 ## Matrix Refactorization Explained
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:90%;"/><!-- {"left" : 0.4, "top" :
- 2.16, "height" : 5.32, "width" : 9.45} -->
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:90%;"/><!-- {"left" : 0.91, "top" : 2.16, "height" : 4.74, "width" : 8.43} -->
 
 
 Notes:
@@ -572,7 +573,6 @@ Notes:
 ---
 
 ## Singular Value Decomposition
-
 
  * We can also perform the Singular Value Decomposition of the Matrix
 
@@ -599,7 +599,7 @@ Notes:
  * To solve matrices U and V, we can utilize
      - SVD : Requires inverting a very large matrix -> computationally expensive
      - Apply ALS to approximate it
- * ALS we only need to solve one vector at time -> parallelizable !!
+ * ALS we only need to solve one vector at time -> parallelizable!!
  * This is why Spark ML implements ALS
  * Basic algorithm:
      - Randomly initialize U and solve for V
@@ -637,4 +637,4 @@ Notes:
 
 ---
 
-# Next : Word2Vec
+# Next: Word2Vec

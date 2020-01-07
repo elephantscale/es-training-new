@@ -47,6 +47,8 @@ clf.score(X, y)
 # 0.97
 
 ```
+<!-- {"left" : 0, "top" : 1.3, "height" : 3.49, "width" : 10.25} -->
+
 
 ---
 
@@ -77,6 +79,7 @@ predictions = clf.predict (X)
 clf.score(X,y)
 
 ```
+<!-- {"left" : 0, "top" : 1.3, "height" : 4.07, "width" : 10.25} -->
 
 ---
 
@@ -102,7 +105,7 @@ clf.score(X,y)
 ## Naïve Bayes in Scikit-Learn
 
 * Sci-kit has following Naive Bayes implementations
-    - Gaussian :
+    - Gaussian:
     - Multinomial
     - Bernoulli
 
@@ -123,5 +126,5 @@ predictions = gnb.predict(iris.data)
 gnb.score(iris.data, iris.target)
 
 ```
+<!-- {"left" : 0, "top" : 1.34, "height" : 3.19, "width" : 7.78} -->
 
----

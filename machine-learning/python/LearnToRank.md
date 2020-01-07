@@ -40,6 +40,7 @@
 ---
 
 ## Features
+
  * All ML algorithms depend on **features.**
    - LTR is no exception!
    - Good features -> Good Results!
@@ -49,8 +50,7 @@
  * **Query level** features or **query** features, which depend only on the query. For example, the number of words in a query
 
 
---- 
-
+---
 
 ## How to Evaluate
 
@@ -81,15 +81,17 @@
 ---
 
 ## Pointwise approaches
+
  * Look at a single document at a time in cost funcitno
  * Train a regressor and predict the relevance of tehquery
  * Pointwise approaches look at a single document at a time in the loss function. 
  * Standard Regression / Classfification approaches work well.
 
---
+---
 
 
 ## Pairwise approaches
+
  * Looks at two documents (a pair) in the cost / loss funciton
  * Binary Classification (order is correct, or order is incorrect)
  * Easier approach than pointwise because classification is easier to get right than regression

@@ -145,14 +145,14 @@ Notes:
 ## Evaluating K-Means With WSSSE
 
 
- * Goal is to  **minimize WSSSE** with  **reasonable effort**
+ * Goal is to **minimize WSSSE** with **reasonable effort**
 
  * We look for elbows - that indicates a reasonable clustering
 
  * After the elbow, the improvement is minimal
 
 
- *  **Question for class:** At  **k=32**  we have achieved  **WSSSE=0** , as in perfect fit !How is that?
+ *  **Question for class:** At **k=32** we have achieved **WSSSE=0**, as in perfect fit !How is that?
 
 <img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 4.17, "height" : 3.5, "width" : 8.21} -->
 

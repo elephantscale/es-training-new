@@ -5,7 +5,7 @@
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-dimensionality-reduction-1.png"  style="max-width:70%;"/><!-- {"left" : 0.56, "top" : 2, "height" : 5.65, "width" : 9.14} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-dimensionality-reduction-1.png"  style="max-width:70%;"/><!-- {"left" : 0.56, "top" : 1.71, "height" : 5.65, "width" : 9.14} -->
 
 
 
@@ -596,8 +596,8 @@ Notes:
 
 
 * In this data variables are all in different ranges
-     - Age : 26- 40
-     - Salary : 50,000  - 100,000
+     - Age: 26- 40
+     - Salary: 50,000 - 100,000
 
 ---
 
@@ -792,7 +792,7 @@ Notes:
 
  *  **Instructions:**
 
-    - Follow  appropriate Python, R, or Scala instructions
+    - Follow appropriate Python, R, or Scala instructions
 
 
 Notes:
