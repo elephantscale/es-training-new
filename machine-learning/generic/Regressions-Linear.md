@@ -161,10 +161,10 @@ Notes:
     = `$ 22.88`
 
 * In table to the right, observe 2 columns
-    - **Actual Tip:** This column is the actual tip we recorded
-    - **Estimated Tip:** This the amount our model (formula) is predicting
+    - __Actual Tip:__ This column is the actual tip we recorded
+    - __Estimated Tip:__ This the amount our model (formula) is predicting
 
-* **Question for the Class:** Are the amounts identical?
+* __Question for the Class:__ Are the amounts identical?
 
 
 

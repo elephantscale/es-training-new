@@ -47,18 +47,18 @@ Notes:
 
  * (In our supervised learning, we trained models and then used them for prediction)
 
- * Unsupervised learning also  **builds models from data** , but  **does not distinguish between response variable and predictor variable**
+ * Unsupervised learning also **builds models from data**, but **does not distinguish between response variable and predictor variable**
 
  * Big part of exploratory data analysis
 
      - Sift through large amount of data or large amount of variables
 
-     -  **Cold-start**  : when we start out a project, we may not have 'training data'.  So we can use Clustering to identify pockets and analyze them independently
+     -  **Cold-start:** when we start out a project, we may not have 'training data'.  So we can use Clustering to identify pockets and analyze them independently
 
 Notes:
 
 References
-"Practical Statistics for Data Scientists"  , Chapter 7 - Oreilly
+"Practical Statistics for Data Scientists", Chapter 7 - Oreilly
 
 
 ---
@@ -106,7 +106,7 @@ Notes:
 
 | Unsupervised        | Use Cases                                                                                                                                | Algorithms                               |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| Clustering          | -Analyze web clicks and segment customers. And improve their web <br/>-Analyze network traffic and isolate anomalies (potential attacks) | - K-means <br/>- Hierarchical clustering |
+| Clustering          | - Analyze web clicks and segment customers. And improve their web <br/>- Analyze network traffic and isolate anomalies (potential attacks) | - K-means <br/>- Hierarchical clustering |
 | Dimension Reduction | - Par down the data to manageable set of variables (e.g Sensor data)                                                                     | - Principal Component Analysis(PCA)      |
 
 <!-- {"left" : 0.25, "top" : 1.4, "height" : 3.34, "width" : 9.75} -->

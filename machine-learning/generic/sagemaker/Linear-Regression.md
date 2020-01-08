@@ -24,7 +24,7 @@
 ## Linear Regression Example
   * Blood pressure as function of age
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Linear-Regression-Example.png" style="width:70%"/>
+<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Linear-Regression-Example.png" style="width:60%"/>
 
 Notes:
 * Source: http://tmedweb.tulane.edu/pharmwiki/doku.php/hypertension_pathophysiology
@@ -33,7 +33,7 @@ Notes:
 
 ## House Price vs Size
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-House-Price.png" style="width:70%"/>
+<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-House-Price.png" style="width:60%"/>
 
 * Not a perfect fit
 * More predictors may be needed
@@ -265,8 +265,8 @@ Notes:
 
 ---
 ## Lab: Linear Regressions
-  * Overview: Practice Linear Regression
 
+  * Overview: Practice Linear Regression
 
   * Approximate Time: 30 mins
 
@@ -309,8 +309,8 @@ Notes:
 ---
 
 ## Linear Regression With Many Variables
-  * Multiple linear regression
 
+  * Multiple linear regression
   * Many inputs => One output
   * (x1, x2, x3, ..., xn) => y
   * Our hypothesis (or model)
@@ -320,6 +320,7 @@ Notes:
 ---
 
 ## Cost Function
+
   * Cost of replacing data with our model
   * Measures the accuracy of our hypothesis (model)
 

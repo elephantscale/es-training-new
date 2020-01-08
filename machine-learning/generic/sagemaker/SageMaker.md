@@ -20,13 +20,14 @@
      - Trained on large amount of data
   * Going from development to deployment isn't always easy
 
-<img src="../../../assets/images/machine-learning/SageMaker-Workflow.png" alt="SageMaker-Workflow.png" style="width:76%;"/>
+<img src="../../../assets/images/machine-learning/SageMaker-Workflow.png" alt="SageMaker-Workflow.png" style="width:76%;"/><!-- {"left" : 1.13, "top" : 5.17, "height" : 2.78, "width" : 8} -->
+
 
 ---
 
 ## What is Amazon SageMaker?
 
-<img src="../../../assets/images/logos/aws-sagemaker-logo-1.png" style="width:30%;float:right;"/>
+<img src="../../../assets/images/logos/aws-sagemaker-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 6.81, "top" : 1.16, "height" : 1.27, "width" : 3.34} -->
 
 * Fully managed machine learning service
 
@@ -39,10 +40,11 @@
 
 ## What Does SageMaker Provide?
 
-  * **Development**: Jupyter authoring notebook instance
+  * **Development‫:‬** Jupyter authoring notebook instance
+
      - For data sources exploration and analysis
 
-  * **Deployment**: Easy deployment at production scale
+  * **Deployment‫:‬** Easy deployment at production scale
 
   * Common machine learning algorithms
 
@@ -56,7 +58,9 @@
 
 ## How SageMaker Works?
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Works.png" style="width:70%"/>
+<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Works.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.74, "height" : 6.16, "width" : 8.21} -->
+
+
 
 Notes:
 Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html
@@ -91,41 +95,31 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
 
 ## Step 1: Data Wrangling
 
-<img src="../../../assets/images/AI/AI-Workflow-02.png" style="width:40%;float:right;"/>
+<img src="../../../assets/images/AI/AI-Workflow-02.png" style="width:40%;float:right;"/><!-- {"left" : 5.32, "top" : 1.09, "height" : 3.76, "width" : 4.81} -->
 
-  * Data Scientists often spend  a<br/>
- lot of time in 'data wrangling'
+  * Data Scientists often spend a lot of time in 'data wrangling'
 
-  * In SageMaker, we do this part<br/>
- using Jupyter notebook<br/>
-  environment provided
+  * In SageMaker, we do this part using Jupyter notebook environment provided
 
-  * Data is stored in S3:S3<br/>
- can support small<br/>
-  (few Kilo bytes to Mega bytes)<br/>
-   to huge datasets (TB, PB).
+  * Data is stored in S3:S3 can support small (few Kilo bytes to Mega bytes) to huge datasets (TB, PB).
 
-<img src="../../../assets/images/logos/aws-s3-logo-1.png" style="width:20%; "/>
+<img src="../../../assets/images/logos/aws-s3-logo-1.png" style="width:20%; "/><!-- {"left" : 3.58, "top" : 7.01, "height" : 1.29, "width" : 3.09} -->
+
 
 ---
 
 ## Step 2: Train the Model
 
-
-<img src="../../../assets/images/AI/AI-Workflow-05.png" style="width:50%;float:right; "/>
+<img src="../../../assets/images/AI/AI-Workflow-05.png" style="width:50%;float:right; "/><!-- {"left" : 5.82, "top" : 1.09, "height" : 3.67, "width" : 4.3} -->
 
   * First choose an algorithm
      - Depends on data
-     - Can use algorithms provided<br/>
-     by SageMaker
+     - Can use algorithms provided by SageMaker
      - Or bring your own
 
-  * Training can consume lot of<br/>
- resources (CPU, GPU, Memory,<br/>
-  multiple machines)
+  * Training can consume lot of resources (CPU, GPU, Memory, multiple machines)
 
-     - SageMaker provides elastic<br/>
-     scalability on AWS
+     - SageMaker provides elastic scalability on AWS
 
   * Evaluating the Model:
      - Can use Jupyter notebook
@@ -136,7 +130,8 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
 
 ## Training a Model with SageMaker
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Training-a-Model-with-SageMaker.png" style="width:60%"/>
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Training-a-Model-with-SageMaker.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 1.35, "height" : 6.94, "width" : 8.21} -->
+
 
 Notes:
 Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html
@@ -147,7 +142,8 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.ht
 
   * SageMaker can automatically spin up many instances to scale training jobs.
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Scalable-Training.png" style="width:90%"/>
+<img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Scalable-Training.png" style="width:90%"/><!-- {"left" : 1.02, "top" : 2.92, "height" : 3.81, "width" : 8.21} -->
+
 
 ---
 
@@ -183,7 +179,7 @@ TODO
 
 ## Step 3: Deploy the Model
 
-<img src="../../../assets/images/AI/AI-Workflow-06.png" style="width:50%;float:right; "/>
+<img src="../../../assets/images/AI/AI-Workflow-06.png" style="width:50%;float:right; "/><!-- {"left" : 5.67, "top" : 1.07, "height" : 3.5, "width" : 4.42} -->
 
   * Once the evaluation goes well, we can deploy the model to production:
 
@@ -199,7 +195,8 @@ TODO
 
 ## Deploying a SageMaker Model
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Deploying.png" style="width:60%"/>
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Deploying.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 1.33, "height" : 6.98, "width" : 8.21} -->
+
 
 Notes:
 Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.html
@@ -248,7 +245,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.htm
 
 ## Using MXNet
 
-<img src="../../../assets/images/logos/mxnet-logo-1.png" style="width:30%;float:right;"/>
+<img src="../../../assets/images/logos/mxnet-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 6.85, "top" : 1.11, "height" : 1.08, "width" : 3.16} -->
 
   * MXNet is a neural network library for deep learning
   * Apache open source project
@@ -270,13 +267,12 @@ Notes:
 
 ## Using Spark
 
-<img src="../../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right; "/>
+<img src="../../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 7.82, "top" : 0.97, "height" : 1.25, "width" : 2.35} -->
 
   * Spark is a modern distributed processing engine
 
   * Features:
-     - Supports multiple languages<br/>
-    Scala, Java, Python, R
+     - Supports multiple languages Scala, Java, Python, R
      - Scales to Big Data
 
   * SageMaker supports Spark
@@ -285,7 +281,7 @@ Notes:
      - SageMakerModel extends the org.apache.spark.ml.
      - SageMaker handles the data transfers
 
-  * Amazon SageMaker Apache Spark Library - <br/>(https://github.com/aws/sagemaker-spark)
+  * Amazon SageMaker Apache Spark Library -(https://github.com/aws/sagemaker-spark)
 
 
 ---
@@ -302,7 +298,7 @@ Notes:
 
 ## SageMaker Lab
 
-<img src="../../../assets/images/icons/individual-labs.png" style="width:20%;float:right;"/>
+<img src="../../../assets/images/icons/individual-labs.png" style="width:20%;float:right;"/><!-- {"left" : 6.96, "top" : 1.07, "height" : 4.06, "width" : 3.05} -->
 
   * Use: ml-labs-sagemaker/README.html
   * Runtime: 1hr - 1hr 30 mins
@@ -325,6 +321,9 @@ Notes:
 | linear_learner_mnist         	| linear-learner         	| Logistic regression Linear regression               	|
 | ntm_synthetic                	| ntm                    	| NTM - Neural Topic Modeling, cf. LDA                	|
 
+<!-- {"left" : 0.25, "top" : 1.31, "height" : 3.76, "width" : 9.75} -->
+
+
 ---
 
 ## SageMaker Built-in Algorithms (Difficulty = Easy)
@@ -335,6 +334,7 @@ Notes:
 | seq2seq_translation                	| seq2seg           	| Machine translation Based on MXNet                                      	|
 | xgboost_abalone (continuous valus) 	| xgboost           	| Gradient Boosting Improved Random Forests Learns from previous mistakes 	|
 | xgboost_mnist (classifier)         	| Same              	| Same                                                                    	|
+<!-- {"left" : 0.25, "top" : 1.31, "height" : 3.17, "width" : 9.75} -->
 
 ---
 
@@ -348,6 +348,8 @@ Notes:
 | video_games_sales_xgboost          	| XGBoost                	| Combine data from different review sources                                     	|
 | xgboost_direct_marketing_sagemaker 	| XGBoost                	| Dealing with unbalanced classes Cleaning the data to improve model performance 	|
 
+<!-- {"left" : 0.25, "top" : 1.31, "height" : 3.96, "width" : 9.75} -->
+
 ---
 
 ## SageMaker Advanced (Difficulty = Hard)
@@ -359,6 +361,8 @@ Notes:
 | kmeans_bring_your_own_model  	| Kmeans in Python               	| Model conversion and Deployment                        	|
 | scikit_bring_your_own        	| A Python algorithm             	| Creates a Docker container Registers it with SageMaker 	|
 | tensorflow_distributed_mnist 	| TensorFlow In Distributed Mode 	| Creating a job that is running a  TensorFlow model     	|
+
+<!-- {"left" : 0.25, "top" : 1.31, "height" : 4.05, "width" : 9.75} -->
 
 ---
 
@@ -409,7 +413,9 @@ https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html
 | feature_dim    	| Number of features in input data. Required.<br/>Valid values: positive integer<br/>Default value: -                                                  	|
 | predictor_type 	| Whether the target variable is binary classification or regression. Required.<br/>Valid values:  binary_classifier or regressor<br/>Default value: - 	|
 
-<br/><br/><br/><br/><br/><br/>
+<!-- {"left" : 0.25, "top" : 1.45, "height" : 3.04, "width" : 9.75} -->
+
+<br/><br/><br/><br/>
 
 * [https://docs.aws.amazon.com/sagemaker/latest/dg/ll_hyperparameters.html](https://docs.aws.amazon.com/sagemaker/latest/dg/ll_hyperparameters.html)
 

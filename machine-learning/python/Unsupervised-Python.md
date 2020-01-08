@@ -67,6 +67,7 @@ print (kmeans.cluster_centers_)
 ## WSSSE
 print (kmeans._inertia)
 ```
+<!-- {"left" : 0, "top" : 1.34, "height" : 4.65, "width" : 9.46} -->
 
 Notes:
 
