@@ -206,8 +206,7 @@ Notes:
 ## K - WSSSE
 
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-wssse-1.png" alt="kmeans-wssse-1.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.23, "height" : 5.51, "width" : 8.21} -->
-
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" alt="kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 4.17, "height" : 3.5, "width" : 8.21} -->
 
 Notes:
 
@@ -220,11 +219,11 @@ Notes:
 
  *  **Overview:**
 
-    K-Means in Python
+    - K-Means in Python
 
  *  **Approximate time:**
 
-    30-40 mins
+    - 30-40 mins
 
  *  **Instructions:**
 
