@@ -7,5 +7,4 @@
 # For regular slides, do
 # $ES_HOME/utils/presentations/slides-assembler.sh slide-order.txt
 
-About-AI-for-Kids.md
-Intro.md
+AI-for-Kids.md
