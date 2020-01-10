@@ -147,7 +147,7 @@ Notes:
 
 ## DecisionTrees Parameters (Regressor)
 
-| **Parameter**       | **Description**                                                      | **Default Value** |
+| Parameter       | Description                                                      | Default Value |
 |---------------------|----------------------------------------------------------------------|-------------------|
 | maxIter             | Max number of iterations                                             | 100               |
 | maxDepth            | Max Depth of Tree                                                    | 5                 |
@@ -311,7 +311,7 @@ Notes:
  * Additional Parameters
 
 
- | Parameter   | Description                            | Default Value |
+ | Parameter      | Description                                | Default Value  |
 |-----------------|--------------------------------------------|-------------------|
 | numtrees        | Max Numbers of trees                       | 20                |
 | subSamplingRate | Adjusts Sampling rate of data for boosting | 5                 |

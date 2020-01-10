@@ -139,7 +139,7 @@ print(tip_data)
 spark_tips = spark.createDataFrame(tip_data)
 spark_tips.show()
 ```
-<!-- {"left" : 0, "top" : 1.07, "height" : 3.19, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.18, "height" : 3.19, "width" : 10.25} -->
 
 <br/>
 <br/>
@@ -547,7 +547,7 @@ print("r2: %f" % lrModel.summary.r2)
 print("numIterations: %d" % lrModel.summary.totalIterations)
 print("objectiveHistory: %s" % str(lrModel.summary.objectiveHistory))
 ```
-<!-- {"left" : 0, "top" : 1.12, "height" : 2.18, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1, "height" : 2.18, "width" : 10.25} -->
 
 ```text
 Coefficents:[-69405.457812,25714.1481078,274.458312769,-0.0]
@@ -562,15 +562,14 @@ objectiveHistory: [0.5000000000000002, 0.4565457266170319, 0.3376986997173243,
 0.26332624819112604, 0.26138384191458414, 0.25967594157902535, 0.25839392000729794]
 
 ```
-<!-- {"left" : 0, "top" : 3.47, "height" : 2.13, "width" : 9.75} -->
+<!-- {"left" : 0, "top" : 3.3, "height" : 2.13, "width" : 9.75} -->
 
-<br/>
 <br/>
 <br/>
 
  *  **Question for the class:**
 
-    - Is this model a good fit?  Explain!
+    - Is this model a good fit? Explain!
 
 Notes:
 
