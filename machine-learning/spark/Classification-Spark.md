@@ -60,7 +60,7 @@ Notes:
 | featuresCol      | setFeaturesCol ()           | Which column as input features                                                                                                                                                                              | features      |
 | predictionCol    | setPredictionCol ()         | Output prediction column                                                                                                                                                                                    | prediction    |
 
-<!-- {"left" : 0.16, "top" : 1.1, "height" : 7.45, "width" : 9.93, "columnwidth" : [1.45, 1.55, 5.08, 1.85]} -->
+<!-- {"left" : 0.14, "top" : 1.03, "height" : 4.6, "width" : 9.97, "columnwidth" : [1.63, 1.55, 5.53, 1.26]} -->
 
 Notes:
 
@@ -87,7 +87,7 @@ Notes:
 | 610          | Yes       |
 | 690          | No        |
 
-<!-- {"left" : 3.35, "top" : 3.69, "height" : 4.77, "width" : 3.55, "columnwidth" : [1.74, 1.81]} -->
+<!-- {"left" : 3.35, "top" : 3.42, "height" : 4.77, "width" : 3.55, "columnwidth" : [1.74, 1.81]} -->
 
 Notes:
 

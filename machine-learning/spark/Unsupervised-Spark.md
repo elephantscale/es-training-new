@@ -90,7 +90,7 @@ Notes:
 | Seed      | **setSeed** (seed: Long)                               | Initial seed setting                                                                                                                                                 |               |
 
 
-<!-- {"left" : 0.13, "top" : 1.17, "height" : 7.39, "width" : 9.99, "columnwidth" : [1.38, 1.76, 4.62, 2.23]} -->
+<!-- {"left" : 0.13, "top" : 1.17, "height" : 4.89, "width" : 9.99, "columnwidth" : [1.38, 2.45, 4.7, 1.46]} -->
 
 Notes:
 
