@@ -1,6 +1,7 @@
 # DevOps on Amazon AWS
 
 © Elephant Scale
+
 January 13, 2020
 
 Amazon Web Services (AWS) is the leading cloud platform. It offers an unprecedented environment in which developers can implement world-class and world-scalable applications. Additionally, when done right, a cloud-based application usually offers about 50% cost saving when compared to self-hosting.

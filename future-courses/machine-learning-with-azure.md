@@ -1,5 +1,7 @@
 # Machine Learning on Azure
+
 © Elephant Scale
+
 Jan. 03, 2020
 
 ## Overview

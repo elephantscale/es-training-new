@@ -1,6 +1,7 @@
 # DevOps Tools with Git and Jenkins
 
 © Elephant Scale
+
 January 13, 2020
 
 Developers and DevOps engineers need collaboration tools to write effective code, 
