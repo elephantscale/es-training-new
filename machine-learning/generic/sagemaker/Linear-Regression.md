@@ -154,7 +154,8 @@ Notes:
 
 𝐶(𝑇0, 𝑇1)= 0
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Cost-Zero.png" style="width:70%"/>
+<img src="../../../assets/images/machine-learning/linear-regression-1b.png" style="width:70%"/><!-- {"left" : 1.19, "top" : 3.5, "height" : 4.09, "width" : 7.87} -->
+
 
 ---
 
@@ -164,7 +165,8 @@ Notes:
   * Each line will have a cost
   * We want to find a line that will minimize the cost
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Cost-Function-Illuminated.png" style="width:70%"/>
+<img src="../../../assets/images/machine-learning/linear-regression-1c.png" style="width:70%"/><!-- {"left" : 1.22, "top" : 3.61, "height" : 4.16, "width" : 7.81} -->
+
 
 ---
 
@@ -410,7 +412,7 @@ Notes:
 * Sufficiently small learning rate gives always improving cost
 * Avoid jumps up and down
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Learning-Rate-0.png" style="width:20%;"/><!-- {"left" : 1.39, "top" : 3.43, "height" : 3.75, "width" : 2.67} --> &nbsp;&nbsp;&nbsp; <img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Learning-Rate-1.png" style="width:20%"/><!-- {"left" : 6.04, "top" : 3.33, "height" : 3.96, "width" : 2.82} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Learning-Rate-0.png" style="width:20%;"/><!-- {"left" : 1.39, "top" : 3.43, "height" : 3.75, "width" : 2.67} --> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Learning-Rate-1.png" style="width:20%"/><!-- {"left" : 6.04, "top" : 3.33, "height" : 3.96, "width" : 2.82} -->
 
 
 ---
