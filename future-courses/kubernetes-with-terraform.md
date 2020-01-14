@@ -1,5 +1,10 @@
 # Kubernetes with Docker
 
+© Elephant Scale
+
+January 13, 2020
+
+
 ## Overview
 Containerization has taken the IT world by storm, in the last few years. Large software houses, starting from Google and Amazon, are running significant portions of their production load in containers.
 
@@ -62,4 +67,8 @@ Zero Install : There is no need to install any software on students’ machines!
      - etcd, the primary Kubernetes datastore
      - etcd security and backup
 
-
+ * Automating Kubernetes Deployments with Terraform
+   - Automating Infrastructure deployment
+   - Introducing Terraform
+   - Terraform and Kubernetes
+   - Vendor-Neutral Cloud deployments with Terraform
