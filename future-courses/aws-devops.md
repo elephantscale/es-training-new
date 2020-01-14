@@ -10,12 +10,12 @@ However, in order to achieve this, one needs to be well-versed in the services t
 ## Duration: 3 days
 ## Audience: Software developers
 ## Prerequisites:
-    - familiarity with programming in at least one language
-    - be able to navigate Linux command line
-    - basic knowledge of command line Linux editors (VI / nano)
+ * familiarity with programming in at least one language
+ * be able to navigate Linux command line
+ * basic knowledge of command line Linux editors (VI / nano)
 
 ## Lab environment:
-Lab  AWS environment will be provided for students.  
+Lab AWS environment will be provided for students.  
 
 **Zero Install:** There is no need to install software on students' machines.
 
