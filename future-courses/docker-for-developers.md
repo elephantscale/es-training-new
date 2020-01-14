@@ -6,21 +6,18 @@ Jan. 06, 2020
 
 ## Overview
 
-Data Science includes statistics, data visualization and exploration,
-and Machine learning. Since Microsoft Azure is the second-largest cloud computing provider, knowledge of its Data Science capabilities is essential for
-building best-of-breed solutions. Azure’s particular strength is in the usability and integration with the Microsoft stack.
+Containerization is one of the most important developments in application
+deployment in many years, and paves the way for many other exciting 
+possibilities in dev/ops.
 
-In this course, the students will get an overview of ML with Python and R, the two standard environments for ML. They will also learn the specifics of the Azure and the capabilities that it offers to ML developers.
-
-One of the goals of the course is to prepare the students for taking the Azure certification exam.
+Docker is the industry-standard container format and Docker tools are the
+cross-platform standard for creating containers. 
 
 
 ## What you will learn
-* The basic of the two most popular data science languages, R and Python
-* Azure Machine Learning and Data Science IDE
-* Spark and Databricks runtime
-* Machine Learning
-* Streaming analytics
+ * Containerization Technologiues
+ * How to use Docker
+ * Details of Docker Containers
 
 
 ## Audience
