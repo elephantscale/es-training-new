@@ -1,5 +1,9 @@
 # Kubernetes with Docker
 
+© Elephant Scale
+January 13, 2020
+
+
 ## Overview
 Containerization has taken the IT world by storm, in the last few years. Large software houses, starting from Google and Amazon, are running significant portions of their production load in containers.
 

@@ -1,8 +1,8 @@
 # Docker for Developers
----
 
- Elephant Scale
-Jan. 06, 2020
+© Elephant Scale
+January 13, 2020
+
 
 ## Overview
 
