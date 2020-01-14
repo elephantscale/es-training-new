@@ -68,7 +68,7 @@ Zero Install : There is no need to install any software on students’ machines!
      - etcd security and backup
 
  * Automating Kubernetes Deployments with Terraform
-   - Automating Infrastructure deployment
-   - Introducing Terraform
-   - Terraform and Kubernetes
-   - Vendor-Neutral Cloud deployments with Terraform
+     - Automating Infrastructure deployment
+     - Introducing Terraform
+     - Terraform and Kubernetes
+     - Vendor-Neutral Cloud deployments with Terraform
