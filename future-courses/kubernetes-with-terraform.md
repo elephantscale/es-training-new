@@ -29,37 +29,37 @@ Zero Install : There is no need to install any software on students’ machines!
 ## Detailed Outline:
 
  * Container Fundamentals (prerequisite, will be covered if needed)
-   - Docker Overview
-   - Docker Operations
-   - Docker use cases
-   - CLI tools
-   - Health checks
-   - Labs
+     - Docker Overview
+     - Docker Operations
+     - Docker use cases
+     - CLI tools
+     - Health checks
+     - Labs
 
  * Kubernetes Specific Curriculum
-   - Container Review
-   - Orchestration
-   - Kubernetes Architecture
-   - Pods and Configs
-   - Deployments and Replica Sets
-   - Autoscaling
-   - Services and Networking
-   - Managing State
-   - Labs
+     - Container Review
+     - Orchestration
+     - Kubernetes Architecture
+     - Pods and Configs
+     - Deployments and Replica Sets
+     - Autoscaling
+     - Services and Networking
+     - Managing State
+     - Labs
 
 * Overview of the following concepts for Kubernetes
-   - Kubernetes Design Patterns and Stateful Sets
-   - Inside Services and Load Balancing
-   - DNS and Service Discovery
-   - Kubernetes in the Cloud and SDN
-   - Labs
+     - Kubernetes Design Patterns and Stateful Sets
+     - Inside Services and Load Balancing
+     - DNS and Service Discovery
+     - Kubernetes in the Cloud and SDN
+     - Labs
 
  * Stateful Applications and Kubernetes
-   - Storing the state of an application
-   - NoSQL overview
-   - etcd, a distributed key-value store
-   - Setup, administration, deployment
-   - etcd, the primary Kubernetes datastore
-   - etcd security and backup
+     - Storing the state of an application
+     - NoSQL overview
+     - etcd, a distributed key-value store
+     - Setup, administration, deployment
+     - etcd, the primary Kubernetes datastore
+     - etcd security and backup
 
 
