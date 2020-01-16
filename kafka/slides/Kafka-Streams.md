@@ -68,7 +68,7 @@ Notes:
 
 ## Kafka Application Using Kafka Streams
 
-<img src="../../assets/images/kafka/kafka-streams-1.png" style="max-width:80%;"/><!-- {"left" : 0.4, "top" : 2.08, "height" : 5.49, "width" : 9.46} -->
+<img src="../../assets/images/kafka/kafka-streams-1.png" style="max-width:70%;"/><!-- {"left" : 0.4, "top" : 2.08, "height" : 5.49, "width" : 9.46} -->
 
 
 
