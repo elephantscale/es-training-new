@@ -98,19 +98,17 @@ Notes:
 ## Kafka Streams Features
 
 
- * Kafka Streams is a library for building distributed applications for Kafka
+ * Kafka Streams is a **client-side** library for building distributed applications for Kafka
 
  * Features:
 
-     - Event based processing (one event at a time).Not micro batch
+     - Event-based processing (one event at a time). Not micro batch
 
      - Stateful processing for joins / aggregations
 
      - High level operations (map, filter, reduce)
 
- * It is not:
-
-     - Designed for analytics like Spark / Hive
+     - **Not** designed for analytics like Spark or Hive
 
 Notes:
 
@@ -119,7 +117,7 @@ Notes:
 
 ## Comparing Streams
 
-- **Kafka Streams moto - "Build apps, not clusters"**
+- **Kafka Streams motto - "Build apps, not clusters"**
 
 
 |      | Simple Java App                              | Kafka Streams                                | Distributed Streaming <br/>Frameworks                                                                                 |
@@ -142,7 +140,7 @@ Notes:
 
  * A  **Stream Partition** is an ordered set of records and maps to a Topic partition
 
- * A  **Data Record** in the stream **** maps to a Kafka message
+ * A  **Data Record** in the stream => maps to a Kafka message
 
  * A  **Task**  processes a fixed set of partitions
 
@@ -379,7 +377,7 @@ Notes:
 |----------    |-----------------------------------------------------------    |
 | ForEach      | Process one record at a time                                  |
 | Filter       | Filter stream event by event                                  |
-| map          | Transform the stream,<br/>(key1, value1) -> (key2, value2)     |
+| map          | Transform the stream,<br/>(key1, value1) => (key2, value2)     |
 | groupBy      | Group the stream by key                                       |
 | count        | Count the stream                                              |
 
@@ -411,7 +409,7 @@ clickstream.foreach(new ForeachAction<String, String>() {
 ```
 <!-- {"left" : 0, "top" : 1.36, "height" : 2.66, "width" : 10.25} -->
 
- * Using Java8 Lambda functions
+ * Using Java 8 Lambda functions
 
 Notes:
 
@@ -809,16 +807,16 @@ Notes:
 
 ## Why Streaming from Database (CDC)?
 
-* Integrations with Legacy Applications‫.‬
-  ‫-‬ Avoid dual writes when Integrating with legacy systems.
-‫*‬ Smart Cache Invalidation
-  ‫-‬ Automatically invalidate entries in a cache as soon as the record(s) for entries change or are removed.
-‫*‬ Monitoring Data Changes
-  ‫-‬ Immediately react to data changes committed by application/user.
-‫*‬ Data Warehousing
-  ‫-‬ Atomic operation synchronizations for ETL-type solutions.
-‫*‬ Event Sourcing (CQRS)
-  ‫-‬ Totally ordered collection of events to asynchronously update the read-only views while writes can be recorded as normal.
+* Integrations with Legacy Applications‫
+  - Avoid dual writes when integrating with legacy systems
+* Smart Cache Invalidation
+  - Automatically invalidate entries in a cache as soon as the record(s) for entries change or are removed.
+* Monitoring Data Changes
+  - Immediately react to data changes committed by application/user.
+* Data Warehousing
+  - Atomic operation synchronizations for ETL-type solutions.
+* Event Sourcing (CQRS)
+* ‫Totally ordered collection of events to asynchronously update the read-only views while writes can be recorded as normal
 
 
 Notes:
@@ -927,7 +925,7 @@ Connector configuration allows set to maximum number of tasks can be run by a co
   - For more distributed mode worker configuration: http://docs.confluent.io/current/connect/userguide.html#configuring-workers
 
 ---
-## Kafka Connect – Running A Instance
+## Kafka Connect – Running an Instance
 
 * It is recommended to run Kafka Connect on containerized environments such as Kubernetes, Mesos, Docker Swarm, or  YARN.
 
@@ -964,21 +962,21 @@ confluentinc/cp-kafka-connect:3.3.0
 ---
 ## How Blizzard Used Kafka to Save Data Pipeline
 
-* When Blizzard started sending gameplay data to Hadoop in 2013, we went through several iterations before settling on Flumes in many data centers around the world reading from RabbitMQ and writing to central flumes in our Los Angeles datacenter. While this worked at first, by 2015 we were hitting problems scaling to the number of events required. This is how we used Kafka to save our pipeline.
+* "When Blizzard started sending gameplay data to Hadoop in 2013, we went through several iterations before settling on Flumes in many data centers around the world reading from RabbitMQ and writing to central flumes in our Los Angeles datacenter. While this worked at first, by 2015 we were hitting problems scaling to the number of events required. This is how we used Kafka to save our pipeline."
 
 
 ---
 
 ## Yelp’s Real-time Data Pipeline
 
-* Yelp moved quickly into building out a comprehensive service oriented architecture, and before long had over 100 data-owning production services. Distributing data across an organization creates a number of issues, particularly around the cost of joining disparate data sources, dramatically increasing the complexity of bulk data applications. Straightforward solutions like bulk data APIs and sharing data snapshots have significant drawbacks. Yelp’s Data Pipeline makes it easier for these services to communicate with each other, provides a framework for real-time data processing, and facilitates high-performance bulk data applications – making large SOAs easier to work with. The Data Pipeline provides a series of guarantees that makes it easy to create universal data producers and consumers that can be mashed up into interesting real-time data flows. We’ll show how a few simple services at Yelp lay the foundation that powers everything from search to our experimentation framework.
+* "Yelp moved quickly into building out a comprehensive service oriented architecture, and before long had over 100 data-owning production services. Distributing data across an organization creates a number of issues, particularly around the cost of joining disparate data sources, dramatically increasing the complexity of bulk data applications. Straightforward solutions like bulk data APIs and sharing data snapshots have significant drawbacks. Yelp’s Data Pipeline makes it easier for these services to communicate with each other, provides a framework for real-time data processing, and facilitates high-performance bulk data applications – making large SOAs easier to work with. The Data Pipeline provides a series of guarantees that makes it easy to create universal data producers and consumers that can be mashed up into interesting real-time data flows. We’ll show how a few simple services at Yelp lay the foundation that powers everything from search to our experimentation framework."
 
 
 ---
 
 ## Body Armor for Distributed System
 
-* We show a way to make Kafka end-to-end encrypted. It means that data is ever decrypted only at the side of producers and consumers of the data. The data is never decrypted broker-side. Importantly, all Kafka clients have their own encryption keys. There is no pre-shared encryption key. Our approach can be compared to TLS implemented for more than two parties connected together.
+* "We show a way to make Kafka end-to-end encrypted. It means that data is ever decrypted only at the side of producers and consumers of the data. The data is never decrypted broker-side. Importantly, all Kafka clients have their own encryption keys. There is no pre-shared encryption key. Our approach can be compared to TLS implemented for more than two parties connected together."
 
 
 ---
@@ -1301,7 +1299,7 @@ configuration that needs to be called out is the gtid.source.includes
   - No indexes
 * BI Reports
   - No indexes
-  - No JDBC (note : BI tools are not good with continuous results)
+  - No JDBC (BI tools are not good with continuous results)
 
 
 ---
@@ -1331,7 +1329,7 @@ configuration that needs to be called out is the gtid.source.includes
 
 ---
 
-## KSQLDB Architecture (push, meet pull)
+## ksqlDB Architecture (push, meet pull)
 
 * It stores replicated, fault-tolerant tables of data
 * It allows queries and processing in SQL
@@ -1418,3 +1416,18 @@ configuration that needs to be called out is the gtid.source.includes
 
 
 <img src="../../assets/images/kafka/ksql-dedicating.png" alt="ksql-dedicating.png" style="width:65%;"/>
+
+
+---
+
+## Review Questions
+
+* What is the difference between KStreams and KTables?
+* What are the good use cases for each?
+
+Notes: 
+
+ 
+
+
+---
