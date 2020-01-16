@@ -1003,7 +1003,7 @@ confluentinc/cp-kafka-connect:3.3.0
 ## Streaming databases in realtime with MySQL, Debezium, and Kafka
 
 
-<img src="../../assets/images/kafka/kafka-connect-02.png" alt="Kafka-Connect-02.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/kafka-connect-02.png" alt="Kafka-Connect-02.png" style="width:60%;"/>
 
 Notes:
 Instructor read: https://wecode.wepay.com/posts/streaming-databases-in-realtime-with-mysql-debezium-kafka
