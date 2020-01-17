@@ -11,9 +11,9 @@
 
 ## Google Compute Engine
 
-* On demand virtual machines 
+* On demand virtual machines
 
-* Wide variety of machine types for various work loads 
+* Wide variety of machine types for various work loads
 
 * Preemptible VMs : Low-cost, short-term instances for fault tolerant workloads
 
@@ -26,6 +26,16 @@
 * Fully supports containers using Docker and Kubenetes
 
 Notes:
+
+---
+## Google Compute Engine 
+
+<!-- TODO shiva -->
+<img src="../../assets/images/data-science-gcp/3rd-party/google-compute-1.png" style="width:80%;" />
+
+* Can rent virtual machines and manage them ourselves
+
+* Or use serverless services, infrastructure is managed by Google
 
 ---
 
@@ -55,27 +65,27 @@ Notes:
 [https://cloud.google.com/compute/docs/machine-types](https://cloud.google.com/compute/docs/machine-types)
 
 ---
-## Disks 
+## Disks
 
 * There are 2 kinds of disks offered:
-    - Persistent disk 
+    - Persistent disk
     - local disk
-    
+
 *  __Persistent disks__ are great when we have to persist data beyond the life-cycle of VM
     - Databases
     - Backups
 
 * Persistent disks supports multiple readers; they can all read the data without too much performance loss
-    
+
 * When a VM terminates, the persistent disk can be attached to another VM
 
 * Persistent disks can be __snapshotted__ for backup and reuse
 
 ---
 ## Disks
-    
+
 * __Local drives__ are attached to the actual physical server
-  
+
 * They offer very high input/output operations
 
 * Data is not persisted when VM terminates
@@ -86,19 +96,19 @@ Notes:
 
 ---
 
-## Preemptible VMs 
+## Preemptible VMs
 
 * Typically VM instances run until shutdown
 
-* Their cost is fixed per hr 
-  - You can get discount if you commit to longer period 
+* Their cost is fixed per hr
+  - You can get discount if you commit to longer period
 
 * Preemptible VMs can be 'taken away from you' with a 30 second notice!
 
 * You get a huge discount on pricing (upto 80% off)
 
-* This will work if our work load 
-    - runs as a cluster 
+* This will work if our work load
+    - runs as a cluster
     - can tolerate failures
 
 * https://cloud.google.com/preemptible-vms/
@@ -114,20 +124,20 @@ Notes:
     - We need to process the videos
     - And stream them for the right device type (Desktop, Phone, Tablet)
     - We need a lot of compute, and we want them cheap
- 
+
 * __Question for class__
     - Can you design a solution?
 
 ---
 
-## Solution with Preemptible VMs 
+## Solution with Preemptible VMs
 
-* Our processing pool consists of 
+* Our processing pool consists of
     - a few VMs that are permanent (these run 24x7)
-    - and few preemptible VMs 
+    - and few preemptible VMs
 
 * This helps us expand our compute cluster
-    - when cloud capacity is available 
+    - when cloud capacity is available
     - and pricing is cheap enough
 
 * And when demand for compute instances goes up, Google may 'take away' our preemptible instances from us with some notice
@@ -136,7 +146,7 @@ Notes:
 
 ---
 
-## Solution with Preemptible VMs 
+## Solution with Preemptible VMs
 
 
 - With larger pool
@@ -153,7 +163,7 @@ Notes:
 
 ---
 
-## Spining up a Linux Instance 
+## Spining up a Linux Instance
 
 <img src="../../assets/images/data-science-gcp/3rd-party/cloud-compute-2.png" style="width: 30%;  float:right;" />
 
@@ -166,11 +176,11 @@ Notes:
 
 ---
 
-## Accessing the Instance 
+## Accessing the Instance
 
 <img src="../../assets/images/data-science-gcp/compute-engine-3.png" style="width: 40%;  float:right;" />
 
-* We will use SSH to login to our instance 
+* We will use SSH to login to our instance
 
 * Use the web based SSH console (easy, no keys ..etc)
 
@@ -226,5 +236,3 @@ Notes:
 - Any questions?
 
 <img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
-
-

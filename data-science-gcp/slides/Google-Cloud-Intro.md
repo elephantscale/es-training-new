@@ -44,38 +44,106 @@
 ## Google Cloud Services Overview
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-services-1.png" style="width:50%; border-width:3px; border-style:solid;" />
+<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-services-1.png" style="width:50%; " />
 
 ---
 
-## Google Cloud Services Overview 
+## Google Cloud Services Overview
 
 * __Compute__ : Scalable VMs
 
-* __Storage__ : Scalable, 'unlimited' storage 
+* __Storage__ : Scalable, 'unlimited' storage
 
 * __Databases__ : Relational databases
 
 * __Networking__ : Build your own networking
 
-* __Big Data__ : Analyze huge amount of data 
+* __Big Data__ : Analyze huge amount of data
 
 * __Machine Learning__ : Scalable ML platform
 
 ---
 
-## Google Compute Engine 
+## Google Cloud Resource Hierarchy
 
-<!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/google-compute-1.png" style="width:80%;" />
+<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:70%; " />
 
-* Can rent virtual machines and manage them ourselves 
+- Source : https://cloud.google.com/billing/docs/concepts
 
-* Or use serverless services, infrastructure is managed by Google
+- Source : https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations
 
 ---
 
-# Google Cloud Use Cases 
+## Google Cloud Resource Hierarchy
+
+<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:70%; float:right;" />
+
+- Domain
+
+- Organization
+
+- Folders
+
+- Projects
+
+- Resources
+
+- Labels
+
+- Billing
+
+---
+
+## Google Cloud Resources : Domain
+
+<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:50%; float:right;" />
+
+- Domain identifies your company
+
+- If the domain is linked to a [GSuite](https://gsuite.google.com/) or [Cloud Identity](https://cloud.google.com/identity/) account
+
+- Domains are managed by [Google Admin Console](https://admin.google.com)
+
+- Reference : https://cloud.google.com/billing/docs/concepts
+
+---
+
+## Google Cloud Resources : Organization & Folders
+
+<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:50%; float:right;" />
+
+* A domain can have multiple organizations
+
+* E.g. company.com can have following orgs
+    - Marketing
+    - Engineering
+    - Customer support
+    - ..etc
+
+* Also helps to contain billing per organization
+
+* __Folders__ are used to organize projects
+
+* Reference : https://cloud.google.com/billing/docs/concepts
+---
+
+## Google Cloud Resources : Projects
+
+<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:50%; float:right;" />
+
+* __Projects__ are required to use any resources and services
+
+* All resources (VMs, DBs) belong to ONE project
+
+* Projects also allow access control for users
+
+* Billing can be setup per project basis
+
+* Reference : https://cloud.google.com/billing/docs/concepts
+
+---
+
+# Google Cloud Use Cases
 
 ---
 
@@ -92,3 +160,54 @@
 <img src="../../assets/images/logos/target-logo-1.png" style="width:10%; " />  &nbsp;  &nbsp;
 <img src="../../assets/images/logos/hsbc-logo-1.png" style="width:20%; " />  &nbsp;  &nbsp;
 
+---
+
+## Lab: Access Google Cloud
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Get access to Google Cloud environmnet
+
+* **Approximate run time:**
+    - 15 mins
+
+* **Instructions:**
+    - Please follow instructions for
+    - **Getting started / Setup Google cloud**
+
+
+Notes:
+
+---
+## Lab: Setup a Working Project
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Create a working project we will use for this class
+
+* **Approximate run time:**
+    - 15 mins
+
+* **Instructions:**
+    - Please follow instructions for
+    - **Getting started / Project setup**
+
+
+Notes:
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+
+
+- Let's go over what we have covered so far
+
+- Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
