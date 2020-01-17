@@ -11,6 +11,7 @@
 
 - When data is/was small, Data Science can be done on a laptop
 
+<!-- TODO shiva -->
 <img src="../../assets/images/generic/3rd-party/laptop-3-python.jpg" style="width:40%;"/> &nbsp;  &nbsp;
 <img src="../../assets/images/generic/3rd-party/laptop-1-charts.jpg" style="width:40%;"/> &nbsp;  &nbsp;
 
@@ -26,7 +27,8 @@
     - Distributed data (can store huge amount of data; 100s TB or PB)
     - Distributed computing - Running processing on many machines in parallel
 
-<img src="../../assets/images/bigdata/cluster-distributed-processing-2.png" style="width:60%;"/> &nbsp;  &nbsp;
+<!-- TODO shiva -->
+<img src="../../assets/images/data-science-gcp/data-science-laptop-to-cluster-1.png" style="width:43%;"/> &nbsp;  &nbsp;
 
 ---
 ## Data Science on Large Scale
@@ -37,7 +39,8 @@
 - Then they would hand over the models to Data Engineers to re-implement the model for cluster
     - Could be using a different language like Java
 
-<img src="../../assets/images/data-science-gcp/data-science-laptop-to-cluster-1.png" style="width:70%;"/> &nbsp;  &nbsp;
+<!-- TODO shiva -->
+<img src="../../assets/images/data-science-gcp/data-science-laptop-to-cluster-1.png" style="width:40%;"/> 
 
 ---
 
@@ -55,7 +58,8 @@
 
 ##  Multiple Teams are Involved --> Operational Complexity
 
-<img src="../../assets/images/data-science-gcp/data-science-big-data-infrastructure.png" style="width:60%;"/> &nbsp;  &nbsp;
+<!-- TODO shiva -->
+<img src="../../assets/images/data-science-gcp/data-science-big-data-infrastructure.png" style="width:35%;"/> 
 
 ---
 
@@ -75,6 +79,7 @@
 
 ## Modern Data Science
 
+<!-- TODO shiva -->
 <img src="../../assets/images/generic/3rd-party/cloud-2-kid.png" style="width:40%;float:right;"/>
 
 - Luckily with modern cloud technology we can achieve all the above goals
@@ -87,6 +92,7 @@
 
 <br clear="all" />
 
+<!-- TODO shiva -->
  <img src="../../assets/images/logos/aws-logo-2.png" style="width:25%;"/> &nbsp; &nbsp;
  <img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:25%;"/> &nbsp; &nbsp;
  <img src="../../assets/images/logos/azure-logo-2.png" style="width:25%;"/> &nbsp; &nbsp;
