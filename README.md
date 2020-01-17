@@ -8,3 +8,20 @@ Setup [elephantscale/es-reveal-md](https://hub.docker.com/r/elephantscale/es-rev
 ## Sample Starter Templates
 - Course template in  [template/slides/Course-Template-1.md](template/slides/Course-Template-1.md).  Start by copying this
 - For Markdown reference see [template/slides/sample.md](template/slides/sample.md)
+
+## Images
+
+All images live in [assets/images](assets/images) directory
+
+Free image resources
+- https://www.pexels.com/
+- https://pixabay.com/
+
+Vector graphics
+- https://undraw.co/ : funky, customizable graphics
+- https://www.freepik.com/
+- https://www.vecteezy.com/
+
+Cartoons
+- https://xkcd.com/
+- http://geek-and-poke.com/
