@@ -2,7 +2,7 @@
 
 <!-- TODO shiva -->
 
-<img src="../../assets/images/logos/google-cloud-logo-2.png" style="white;width:40%;"/>  
+<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:40%;"/>  
 
 
 

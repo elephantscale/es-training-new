@@ -7,7 +7,7 @@ About-Data-Science-on-Google-Cloud-Class.md
 
 Google-Cloud-Intro.md
 
-Data-in-the-Cloud.md
+Cloud-Storage.md
 
 Data-Studio.md
 
