@@ -151,6 +151,39 @@ Notes:
 
 ---
 
+## Cloud Storage Utility Reference
+
+* The Cloud Storage utility is : __`gsutil`__
+
+* Reference : https://cloud.google.com/storage/docs/gsutil
+
+* The following commands can work on Cloud Shell (recommended) or your laptop (if setup correctly)
+
+```bash
+
+# To get help
+$   gsutil
+
+# To see buckets
+$   gsutil ls
+$   gsutil ls  gs://bucket_name/dir_name
+
+# To create a bucket
+$   gsutil  mb  gs://bucket_name
+
+# To copy files into a bucket
+$   gsutil  cp  <files to copy>  gs://bucket_name/dir_name  
+$   gsutil  cp  flights-*.csv  gs://bucket_name/flights/
+
+# To download files from bucket
+$   gsutil  cp  'gs://bucket_name/flights/*' .
+
+
+```
+
+
+---
+
 ## Lab : Ingesting Data into Google Cloud
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
