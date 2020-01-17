@@ -2,7 +2,7 @@
 
 <img src="../../assets/images/logos/uber-logo-1.png" style="width:15%;"/>  <!-- {"left" : 2.97, "top" : 7.87, "height" : 0.91, "width" : 1.26} -->    &nbsp; &nbsp;
  <img src="../../assets/images/logos/photobucket-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.29, "top" : 8.34, "height" : 0.44, "width" : 2.31} -->    &nbsp; &nbsp;
-<img src="../../assets/images/logos/staples-logo.png" style="white;width:15%;"/>  <!-- {"left" : 8.29, "top" : 8.46, "height" : 0.34, "width" : 1.71} -->
+<img src="../../assets/images/logos/staples-logo.png" style="width:15%;"/>  <!-- {"left" : 8.29, "top" : 8.46, "height" : 0.34, "width" : 1.71} -->
 
 
 
