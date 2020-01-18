@@ -1,8 +1,7 @@
 # Data Science on Google Cloud
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:40%;"/>  
+<img src="../../assets/images/logos/google-cloud-logo-2.png" style="white;width:40%;"/><!-- {"left" : 4.37, "top" : 7, "height" : 1.19, "width" : 3.65} -->
 
 
 
@@ -20,7 +19,7 @@ Notes:
 ---
 ## Pre-requisites and Expectations
 
-<img src="../../assets/images/logos/python-logo-1.png" style="background:white;width:25%;float:right;"/><!-- {"left" : 6.19, "top" : 1.61, "height" : 0.91, "width" : 3.79} -->
+<img src="../../assets/images/logos/python-logo-1.png" style="background:white;width:25%;float:right;"/><!-- {"left" : 6.31, "top" : 1.38, "height" : 0.91, "width" : 3.79} -->
 
  * Interest in Data Science
 
@@ -75,8 +74,7 @@ Notes:
 
 ## Our Teaching Philosophy
 
-<!-- TODO shiva  -->
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;float:right;"/> <!-- {"left" : 2.05, "top" : 3.28, "height" : 4.97, "width" : 6.16} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 
  * Emphasis on concepts & fundamentals
 

@@ -1,6 +1,6 @@
 # Google Compute Engine
 
-<img src="../../assets/images/logos/google-compute-engine-logo-1.png" />
+<img src="../../assets/images/logos/google-compute-engine-logo-1.png" /><!-- {"left" : 5.12, "top" : 6.4, "height" : 2.14, "width" : 2.14} -->
 
 ---
 
@@ -17,7 +17,7 @@
 
 * Preemptible VMs : Low-cost, short-term instances for fault tolerant workloads
 
-* GPU : For computationally intensive workloads like machine learning
+* GPU: For computationally intensive workloads like machine learning
 
 * OS of choice : Linux, Windows
 
@@ -46,6 +46,9 @@ Notes:
 | Description       | Day-to-day computing at a lower cost                                                                                                              | Balanced price/performance across a wide range of VM shapes                    | Ultra high-memory workloads                                           | Ultra high performance for compute-intensive workloads          |
 | Example workloads | - Web serving <br/> - App serving <br/> - Small-medium databases <br/> - Microservices <br/> - Virtual desktops <br/> - Development environments | - Web serving <br/> - App serving <br/> - Medium-Large databases <br/> - Cache | - Large in-memory databases like SAP HANA <br/> - In-memory analytics | - HPC <br/> - Electronic Design Automation (EDA) <br/> - Gaming |
 
+<!-- {"left" : 0.25, "top" : 1.26, "height" : 5.3, "width" : 9.75} -->
+
+<br />
 <br />
 
 [https://cloud.google.com/compute/docs/machine-types](https://cloud.google.com/compute/docs/machine-types)
@@ -58,6 +61,8 @@ Notes:
 | N1 - General Purpose   | 1 - 96   | 0.95 - 6.5 GB    |
 | C2 - Compute-optimized | 4 - 60   | 4 GB           |
 | Memory Optimized       | 40 - 416 | 24 GB          |
+
+<!-- {"left" : 0.25, "top" : 1.26, "height" : 2, "width" : 9.75} -->
 
 
 <br />
@@ -114,11 +119,11 @@ Notes:
 * https://cloud.google.com/preemptible-vms/
 
 ---
-## Design Lab : A Preemptible VM  Use Case
+## Design Lab: A Preemptible VM  Use Case
 
-<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.43, "top" : 1.15, "height" : 2.71, "width" : 3.74} -->
 
-* __Use case : Video processing__
+* __Use case: Video processing__
     - Say we have a video hosting service
     - Users upload lot of videos
     - We need to process the videos
@@ -151,34 +156,32 @@ Notes:
 
 - With larger pool
 
-<!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/preemptible-vm-1.png" style="width:50%;"/>
+<img src="../../assets/images/data-science-gcp/preemptible-vm-1.png" style="width:50%;"/><!-- {"left" : 1.88, "top" : 1.95, "height" : 2.34, "width" : 6.49} -->
 
 <br clear="all" />
 
 - VMS are taken away --> smaller compute pool
 
-<!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/preemptible-vm-2.png" style="width:50%;"/>
+<img src="../../assets/images/data-science-gcp/preemptible-vm-2.png" style="width:50%;"/><!-- {"left" : 1.88, "top" : 6.07, "height" : 2.34, "width" : 6.49} -->
 
 ---
 
 ## Spining up a Linux Instance
 
-<img src="../../assets/images/data-science-gcp/3rd-party/cloud-compute-2.png" style="width: 30%;  float:right;" />
+<img src="../../assets/images/data-science-gcp/3rd-party/cloud-compute-2.png" style="width: 30%;  float:right;" /><!-- {"left" : 6.75, "top" : 1.13, "height" : 5.75, "width" : 3.28} -->
 
 * Goto [VM Instances page](https://console.cloud.google.com/compute/instances)
 * Create a new instance with the following properties
-    - Instance type : N1
-    - Boot image : Ubuntu 18.04
-    - Disk size : 10 GB
+    - Instance type: N1
+    - Boot image: Ubuntu 18.04
+    - Disk size: 10 GB
 
 
 ---
 
 ## Accessing the Instance
 
-<img src="../../assets/images/data-science-gcp/compute-engine-3.png" style="width: 40%;  float:right;" />
+<img src="../../assets/images/data-science-gcp/compute-engine-3.png" style="width: 40%;  float:right;" /><!-- {"left" : 5.59, "top" : 1.26, "height" : 3.55, "width" : 4.25} -->
 
 * We will use SSH to login to our instance
 
@@ -186,9 +189,9 @@ Notes:
 
 ---
 
-## Lab : Estimate Compute Pricing
+## Lab: Estimate Compute Pricing
 
-<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.43, "top" : 1.15, "height" : 2.71, "width" : 3.74} -->
 
 
 * **Overview:**

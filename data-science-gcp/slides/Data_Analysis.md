@@ -17,7 +17,8 @@
    * To put it simply data analysis helps you make better decisions.
 ---
 ## Real world example of data analysis
-<img src="../../assets/images/data-science-gcp/3rd-party/buying-a-car.jpg">
+
+<img src="../../assets/images/data-science-gcp/3rd-party/buying-a-car.jpg" style="width:70%;"/> <!-- {"left" : 1.02, "top" : 1.9, "height" : 5.26, "width" : 8.21} -->  
 
 
 
@@ -46,7 +47,8 @@
 ---
 ## Data and Data after EDA
 
-<img src="../../assets/images/data-science-gcp/3rd-party/cats.png">
+<img src="../../assets/images/data-science-gcp/3rd-party/cats.png" style="width:60%;"/><!-- {"left" : 1.76, "top" : 1.28, "height" : 4.16, "width" : 6.72} -->  
+
 
 * After EDA there are only 3 important features.   
 * The number of cats, cat colors, and how many Miaows
@@ -73,7 +75,9 @@
 * Least sexy
 ---
 ## Example of Data that needs to be cleaned
-<img src="../../assets/images/data-science-gcp/3rd-party/Dirtydata.png">
+
+<img src="../../assets/images/data-science-gcp/3rd-party/Dirtydata.png" style="width:70%;"/><!-- {"left" : 0.83, "top" : 3.18, "height" : 2.72, "width" : 8.6} -->  
+
 
 
 ---
@@ -95,8 +99,9 @@
 
 ---
 ## Correlation
-  * One way is to look at the correlation of features to target/label
-  * If the feature is correlated, it might be important
+
+ * One way is to look at the correlation of features to target/label
+ * If the feature is correlated, it might be important
  * Highly Correlated with outcome is generally a good thing.
 ---
 ## How to find correlation in python
@@ -176,7 +181,9 @@ top_features = utils.feature_importances(
 ---
 
 ## Data Visualizations
-<img src="../../assets/images/data-science-gcp/3rd-party/viz.png">
+
+<img src="../../assets/images/data-science-gcp/3rd-party/viz.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.23, "height" : 4.62, "width" : 8.21} -->  
+
 ---
 
 ## Visualizations
@@ -198,7 +205,8 @@ top_features = utils.feature_importances(
 
 ---
 ## Examples of Data visualizations
-<img src="../../assets/images/data-science-gcp/3rd-party/dataviz.png">
+<img src="../../assets/images/data-science-gcp/3rd-party/dataviz.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.86, "height" : 3.35, "width" : 8.21} -->  
+
 
 ---
 ## Great python libraries to deal with visualizations
@@ -216,7 +224,12 @@ import datasist as ds
 ds.visualizations.histogram(df)
 
 ```
-<img src="../../assets/images/data-science-gcp/3rd-party/viz1.png">
+<!-- {"left" : 0, "top" : 1.62, "height" : 0.86, "width" : 5.94} -->  
+
+<br/>
+
+<img src="../../assets/images/data-science-gcp/3rd-party/viz1.png" style="width:40%;"/><!-- {"left" : 2.42, "top" : 3.33, "height" : 4.53, "width" : 5.42} -->  
+
 ---
 ## Quiz
 

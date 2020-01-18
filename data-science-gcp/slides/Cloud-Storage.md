@@ -1,6 +1,6 @@
 # Google Cloud Storage
 
-<img src="../../assets/images/logos/google-cloud-storage-logo-1.png" style="width:30%;"/>  
+<img src="../../assets/images/logos/google-cloud-storage-logo-1.png" style="width:30%;"/><!-- {"left" : 5.32, "top" : 6.8, "height" : 1.75, "width" : 1.75} -->  
 
 ---
 
@@ -31,12 +31,14 @@
 * The data can be transferred from 'storage' to 'compute' nodes very fast; over high speed network
 
 
-<img src="../../assets/images/data-science-gcp/cloud-storage-and-compute-1.png" style="width:50%;"/>  
+<img src="../../assets/images/data-science-gcp/cloud-storage-and-compute-1.png" style="width:50%;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+
 
 ---
 ## Storage Classes
 
-<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-storage-classes-1.png" style="width:80%;"/>  
+<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-storage-classes-1.png" style="width:80%;"/>  <!-- {"left" : 1.04, "top" : 1.25, "height" : 4.03, "width" : 8.17} -->  
+
 
 - Source : https://cloud.google.com/storage/
 
@@ -44,16 +46,16 @@
 
 ## Storage Classes
 
-* __Standard Storage__ :
+* __Standard Storage:__
     - Frequently accessed data (hot data)
     - 99.99%  availability
-* __Nearline Storage__ :
+* __Nearline Storage:__
     - Infrequently accessed data ( )
     - Suited for archival, backup, long tail media storage
-* __Coldline Storage__ :
+* __Coldline Storage:__
     - Suited for archival
     - Very low cost storage
-* __Archival Storage__ :
+* __Archival Storage:__
     - Cheapest storage
     - Data stored for legal / regulatory reasons, but not accessed frequently
 * Reference : https://cloud.google.com/storage/
@@ -70,11 +72,13 @@
 |----------|------------------|----------|----------|----------|
 | TB/Month | $26              | $10      | $7       | $4       |
 
+<!-- {"left" : 0.25, "top" : 3.13, "height" : 1.19, "width" : 9.75} -->  
+
 <br />
 
 * Egress / Ingress fees
-    - Within same region : FREE
-    - Across region : ~ 1c / GB
+    - Within same region: FREE
+    - Across region: ~ 1c / GB
 
 ---
 
@@ -88,7 +92,8 @@
 
 * Google manages encryption keys (proven and hardened)
 
-<img src="../../assets/images/data-science-gcp/cloud-storage-encryption-1.png" style="width:80%;"/>  
+<img src="../../assets/images/data-science-gcp/cloud-storage-encryption-1.png" style="width:80%;"/>  <!-- {"left" : 1.02, "top" : 4.72, "height" : 2.71, "width" : 8.21} -->  
+
 
 ---
 
@@ -100,7 +105,8 @@
 
 * Clients must manage its own encryption keys
 
-<img src="../../assets/images/data-science-gcp/cloud-storage-encryption-2.png" style="width:80%;"/>  
+<img src="../../assets/images/data-science-gcp/cloud-storage-encryption-2.png" style="width:80%;"/>  <!-- {"left" : 0.63, "top" : 4.24, "height" : 3.22, "width" : 8.99} -->  
+
 
 ---
 
@@ -143,7 +149,8 @@ Notes:
 
 ## Ingesting Large Amount of Data
 
-<img src="../../assets/images/data-science-gcp/cloud-storage-transfer-1.png" style="width:50%;"/>  
+<img src="../../assets/images/data-science-gcp/cloud-storage-transfer-1.png" style="width:50%;"/>  <!-- {"left" : 2.45, "top" : 1.32, "height" : 3.49, "width" : 5.35} -->  
+
 
 * For large data ingests we recommend a 'direct transfer  ( C )'
 * Because you will have much greater bandwidth point-to-point
@@ -181,10 +188,12 @@ $   gsutil  cp  'gs://bucket_name/flights/*' .
 
 ```
 
+<!-- {"left" : 0, "top" : 3.26, "height" : 4.64, "width" : 10.12} -->  
+
 
 ---
 
-## Lab : Ingesting Data into Google Cloud
+## Lab: Ingesting Data into Google Cloud
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
