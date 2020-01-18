@@ -207,6 +207,33 @@ Notes:
 
 ---
 
+## Cloud Compute Command Reference 
+
+- Reference : https://cloud.google.com/sdk/gcloud/reference/compute/
+
+```bash 
+
+# List images 
+$   gcloud compute images list
+
+# List Instances 
+$   gcloud compute list
+
+# To create VM
+$  gcloud compute instances create instance_name
+    --image ubuntu-1804 \
+    --zone=us-west1-b 
+    
+# Spin up latest tensorflow
+$  gcloud compute instances create my_instance_name
+  --zone=us-west1-b \
+  --image-family=tf-latest-cpu \
+  --image-project=deeplearning-platform-release
+
+```
+
+---
+
 ## Lab: Spin up an Instance
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->

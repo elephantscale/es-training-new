@@ -9,6 +9,8 @@ Google-Cloud-Intro.md
 
 Cloud-Storage.md
 
+Cloud-Compute.md
+
 Data-Studio.md
 
 Data-Analysis-on-Google-Cloud.md
