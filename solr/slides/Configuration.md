@@ -1,15 +1,17 @@
-Solr Configuration
-=================
-
-
+# Solr Configuration
+---
 # Solr Home
+
+---
 
 ## About Solr Home
 
  * Solr home is the home for your solr configuration
- * It would depend on whether you are running in :
+ * It would depend on whether you are running in:
    - Solr Standalone
    - SolrCloud
+
+---
 
 ## Solr Home for Standalone Mode
 
@@ -28,6 +30,8 @@ Solr Configuration
        -  `managed-schema`
     -  `data/`
 
+---
+
 ## Solr Home for SolrCloud Mode
 
  * `<solr-home-directory>/`
@@ -38,6 +42,8 @@ Solr Configuration
    - `core_name2/
       - `core.properties
       - `data/
+
+---
 
 ## Configuration Files
 
@@ -50,12 +56,16 @@ Solr Configuration
      - the collection the core belongs to
      - the location of the schema, etc 
 
+---
+
 ## Configuration Files Contd
 
  * Per Solr Core:
   - `solrconfig.xml` controls high-level behavior. You can, for example, specify an alternate location for the data directory. For more information on solrconfig.xml, see Configuring solrconfig.xml.
   - `managed-schema` (or `schema.xml` instead) describes the documents you will ask Solr to index. The Schema define a document as a collection of fields. You get to define both the field types and the fields themselves. Field type definitions are powerful and include information about how Solr processes incoming field values and query values. 
   - `data/` The directory containing the low level index files.
+
+---
 
 ## Other files
 * there is no longer a `conf` directory for SolrCore

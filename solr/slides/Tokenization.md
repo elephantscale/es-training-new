@@ -1,10 +1,12 @@
-Tokenization
-===================
+# Tokenization
+---
 
 ## Basic Indexing Pipeline
+
  * Recall our Processing Pipeline
 
-![](../images/Inverted-Index-construction.png) <!-- {"left" : 0.7, "top" : 1.15, "height" : 5.66, "width" : 8.85} -->
+<img src="../../assets/images/solr/Inverted-Index-construction.png" style="width:55%;"/>  <!-- {"left" : 0.7, "top" : 2, "height" : 5.66, "width" : 8.85} -->
+
 
 Notes:
 
@@ -23,6 +25,8 @@ Notes:
    - Rule-Based
    - Machine Learning
  
+---
+
 ## Format and Language
 
  * Documents being indexed can include docs from many different languages
@@ -36,6 +40,8 @@ Notes:
  There are special packages that can do this
  Requires some design Decisions
 
+---
+
 ## What is a document
 
  * What do we want to consider a "document"
@@ -44,7 +50,10 @@ Notes:
    - Post
    - Tweet
 
+---
+
 ## Tokenization
+
   * Input: `Friends, Romans and Countrymen`
   * Output:
     - Friends
@@ -54,6 +63,8 @@ Notes:
   * Each token will maybe be an index entry
     - After *further processing*
   * What tokens do we want to emit?
+
+---
 
 ## Tokenization Issues:
   * `Ireland's capital`:
@@ -68,7 +79,10 @@ Notes:
     - One token or two?
     - How to decide?
 
+---
+
 ## Numbers:
+
   * Datetimes  `02-01-2019`
   * `The B-52s`
   * `Call me 408-324-2343`
@@ -77,8 +91,10 @@ Notes:
     - What about searching for error codes, for example
   * Metadata is usually separate
     - Creation Date
+---
 
 ## Language Issues
+
  * `L'ensemble`: One Towken or Two?
     - `L`, `L'`,`Le`, '`Le `?  
     - Should `L`ensemble` match with `un emsemble`?
@@ -89,8 +105,10 @@ Notes:
    - Should this be a single token?
    - German is usually noun-split into root stems.
 
+---
 
 ## Spacing in CJK Languages
+
  * In some languages spacing is inconsistent or not present.
  * Example in Chinese:
    - "莎拉波娃现在居住在美国东南部的佛罗里达。"
@@ -100,13 +118,18 @@ Notes:
    - Katakana / Hiaragana / Kanji, and Romanji!
    - But query might be entirely in Hiragana!
 
+---
+
 ## RTL Languages
+
  * Some Languages are stored RTL (Right to Left)
    - Hebrew, Arabic, Persian.
  * But, not always
    - Numbers are stored LTR
    - Foreign words (English) are written LTR.
  
+---
+
 ## Stop Words
 
  * With a stop list, you exclude from the dictionary entirely the commonest words. Intuition:
@@ -123,8 +146,10 @@ Notes:
 Notes:
 Nevertheless: “Google ignores common words and characters such as where, the, how, and other digits and letters which slow down your search without improving the results.” (Though you can explicitly ask for them to remain.)
 
+---
 
 ## Normalization to Terms
+
  * We may need to “normalize” words in indexed text as well as query words into the same form
    - We want to match U.S.A. and USA
 
@@ -140,6 +165,7 @@ Notes:
 ---
 
 ## Normalization: other languages
+
  * Accents: e.g., French résumé vs. resume.
  * Umlauts: e.g., German: Tuebingen vs. Tübingen
    - Should be equivalent

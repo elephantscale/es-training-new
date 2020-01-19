@@ -1,5 +1,5 @@
-Solr: SolrCloud
-===================
+# Solr: SolrCloud
+---
 
 ## Section Objectives
 
@@ -16,6 +16,7 @@ Notes:
 
 # Introduction to SolrCloud
 
+---
 
 ## What is SolrCloud?
 
@@ -24,6 +25,7 @@ Notes:
  * Designed to allow for distributed Data
  * Most Current (7.x) Solr installations use SolrCloud.
 
+---
 
 ## SolrCloud major components
 
@@ -74,14 +76,11 @@ Notes:
 ---
 
 # How SolrCloud works
-
+---
 
 ## SolrCloud architecture
 
-
-![](../images/SolrCloud-architecture.png) <!-- {"left" : 1.35, "top" : 1.17, "height" : 5.47, "width" : 7.55} -->
-
-
+<img src="../../assets/images/solr/SolrCloud-architecture.png" style="width:65%;"/> <!-- {"left" : 1.05, "top" : 1.59, "height" : 5.9, "width" : 8.14} -->
 
 Notes:
 
@@ -89,6 +88,7 @@ Notes:
 ---
 
 # Distributed Solr
+---
 
 ## History
 
@@ -98,6 +98,7 @@ Notes:
  * Divide and Conquer 
  * *Collections* allow us to *shard* our cores.
 
+---
 
 ## Use cases for multiple cores
 
@@ -120,29 +121,19 @@ Notes:
 
 ---
 
-
 ## Collections vs cores
 
   * Solr core
-
     - uniquely named
-
     - Managed
-
     - configured index
-
     - runs in a Solr server
-
     - Solr server can host one or more cores
-
     - typically used to separate documents with different schemas
 
   * Solr collection
-
     - Index that is
-
     - split into shards
-
     - distributed across multiple servers
 
 
@@ -153,21 +144,21 @@ Notes:
 
 ---
 
-
 ## Collection
 
-![](../images/Collection.png) <!-- {"left" : 1.45, "top" : 1.07, "height" : 5.91, "width" : 7.35} -->
+<img src="../../assets/images/solr/Collection.png" style="width:55%;"/> <!-- {"left" : 1.45, "top" : 1.58, "height" : 5.91, "width" : 7.35} -->
 
 Notes:
 
 
 ---
 
-
-
 # ZooKeeper
+---
 
 ## ZooKeeper
+
+<img src="../../assets/images/logos/zookeeper-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 7.69, "top" : 1.09, "height" : 3.46, "width" : 2.43} -->
 
   * Centralized service for maintaining configuration information and naming
   * Provides distributed synchronization
@@ -175,14 +166,15 @@ Notes:
   * Comes from Hadoop world
   * Kinds of services used by distributed applications
 
-![](../images/ZooKeeper.png) <!-- {"left" : 7.23, "top" : 3.26, "height" : 3.46, "width" : 2.43} -->
 
 Notes:
 
 
 ---
 
-# ZooKeeper concepts
+## ZooKeeper concepts
+
+<img src="../../assets/images/solr/ZooKeeper-concepts.png" style="width:20%;float:right;"/><!-- {"left" : 7.74, "top" : 1.19, "height" : 2.39, "width" : 2.39} -->
 
   * Concurrent design patterns without toil
   * Leader election (shard leader and overseer)
@@ -192,9 +184,6 @@ Notes:
   * Needs 3 nodes for **quorum** in production
 
 
-![](../images/ZooKeeper-concepts.png) <!-- {"left" : 7.75, "top" : 0.89, "height" : 2.18, "width" : 2.18} -->
-
-
 
 Notes:
 
@@ -202,6 +191,7 @@ Notes:
 ---
 
 ## Lab: SolrCloud install
+
 * Overview: We will install a minimal SolrCloud, with one collection 
 containing two shards
 * Pre-requisites: solr-labs/install/README.md   
@@ -234,6 +224,7 @@ Notes:
 ---
 
 # Commit strategies
+---
 
 ## Commits
 
@@ -330,6 +321,7 @@ Notes:
 ---
 
 # Managing Solr config files
+---
 
 ## Managing Solr config files
 
@@ -346,5 +338,4 @@ Notes:
 Notes:
 
 
----
 

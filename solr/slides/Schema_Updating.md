@@ -1,5 +1,5 @@
-Solr: Schema Updating
-===================
+# Solr: Schema Updating
+---
 ## Section Objectives
 
   * Being able to customize Solr schema for your use case
@@ -12,10 +12,11 @@ Notes:
 ---
 
 # Adding fields to schema
+---
 
 ## Schema design
 
-![](../images/Schema-design.png) <!-- {"left" : 0.96, "top" : 0.99, "height" : 5.52, "width" : 8.33} -->
+<img src="../../assets/images/solr/3rd-party/Schema-design.png" style="width:60%;"/><!-- {"left" : 0.96, "top" : 1.77, "height" : 5.52, "width" : 8.33} -->
 
 
 Notes:
@@ -41,6 +42,8 @@ Notes:
   * In fact, because SolrCloud distributes the file via zookeeper, it is not permitted to hand-edit the file in SolrCloud.
   * And nowadays most users will use SolrCloud
  
+---
+
 ## Tweet structure – which would you search?
 
 | Field             | Value                                                                                                                                          |
@@ -61,8 +64,7 @@ Notes:
 ## Sample tweet search form
 
 
-![](../images/Sample-tweet-search-form.png) <!-- {"left" : 1.17, "top" : 1.09, "height" : 5.85, "width" : 7.91} -->
-
+<img src="../../assets/images/solr/3rd-party/Sample-tweet-search-form.png" style="width:55%;"/> <!-- {"left" : 1.17, "top" : 1.9, "height" : 5.85, "width" : 7.91} -->
 
 Notes:
 
@@ -84,8 +86,8 @@ Notes:
 
 ## Lucene doc in XML
 
-![](../images/Lucene-doc-in-XML.png) <!-- {"left" : 0.35, "top" : 2.15, "height" : 3.04, "width" : 9.61} -->
 
+<img src="../../assets/images/solr/3rd-party/Lucene-doc-in-XML.png" style="width:65%;float:left;"/><!-- {"left" : 0.35, "top" : 3.01, "height" : 3.04, "width" : 9.61} -->
 
 Notes:
 
@@ -183,8 +185,7 @@ Notes:
 
 ## Example schema
 
-
-![](../images/Example-schema.png) <!-- {"left" : 0.11, "top" : 1.93, "height" : 3.63, "width" : 10.04} -->
+<img src="../../assets/images/solr/3rd-party/Example-schema.png" style="width:60%;float:left;"/><!-- {"left" : 0.41, "top" : 1.9, "height" : 3.41, "width" : 9.42} -->
 
 
 Notes:
@@ -194,7 +195,8 @@ Notes:
 
 ## Tweet schema
 
-![](../images/Tweet-schem-01.png) <!-- {"left" : 0.23, "top" : 2.02, "height" : 3.46, "width" : 9.79} -->
+
+<img src="../../assets/images/solr/Tweet-schem-01.png" style="width:60%;float:left;"/><!-- {"left" : 0.32, "top" : 1.85, "height" : 3.4, "width" : 9.62} -->
 
 
 Notes:
@@ -205,7 +207,7 @@ Notes:
 ## Dynamic fields
 
   * apply the same definition to any field with a prefix or suffix pattern
-    - Example:  `s_* or *_s`
+    - Example: `s_* or *_s`
   * Used for
     - Modeling documents with many fields
     - Supporting documents from diverse sources
@@ -235,6 +237,8 @@ Notes:
  <copyField source="link" dest="catch_all" />
 </schema>
 ```
+<!-- {"left" : 0, "top" : 2.72, "height" : 2.74, "width" : 10.25} -->
+
 
 Notes:
 
@@ -265,8 +269,10 @@ Notes:
 
 
 
+---
 
 # Analyzing text
+---
 
 ## Non-text and text analysis
 
@@ -339,7 +345,7 @@ Notes:
 ## Here is what we really need in the index
 
 
-![](../images/solr-text-analysis.png) <!-- {"left" : 0.23, "top" : 2.02, "height" : 3.46, "width" : 9.79} -->
+<img src="../../assets/images/solr/solr-text-analysis.png" style="width:60%;"/><!-- {"left" : 0.49, "top" : 2.52, "height" : 3.28, "width" : 9.28} -->
 
 
 Notes:
@@ -395,7 +401,6 @@ Notes:
 Notes:
 
 
----
 
 
 

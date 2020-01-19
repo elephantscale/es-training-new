@@ -1,5 +1,5 @@
-Solr: Extended Features
-===================
+# Solr: Extended Features
+---
 
 ## Section Objectives
 
@@ -13,6 +13,8 @@ Notes:
 ---
 
 # More-like-this
+
+---
 
 ## More-like-this – 2	
 
@@ -36,8 +38,7 @@ Notes:
 
   * Based on document clustering
 
-
-![](../images/More-like-this.png) <!-- {"left" : 1.59, "top" : 1.94, "height" : 4.13, "width" : 7.07} -->
+<img src="../../assets/images/solr/3rd-party/More-like-this.png" style="width:65%;"/> <!-- {"left" : 0.97, "top" : 2.39, "height" : 4.86, "width" : 8.32} -->
 
 
 Notes:
@@ -62,7 +63,8 @@ Notes:
 
 ## Clustering in Solr - Carrot
 
-![](../images/Clustering.png) <!-- {"left" : 1.74, "top" : 1.49, "height" : 5.06, "width" : 6.76} -->
+
+<img src="../../assets/images/solr/3rd-party/Clustering.png" style="width:50%;"/> <!-- {"left" : 1.44, "top" : 1.78, "height" : 5.52, "width" : 7.37} -->
 
 Notes:
 
@@ -72,8 +74,7 @@ Notes:
 ## Clustering in Solr – with Carrot
 
 
-![](../images/with-Carrot.png) <!-- {"left" : 0.9, "top" : 1.28, "height" : 4.94, "width" : 8.46} -->
-
+<img src="../../assets/images/solr/3rd-party/with-Carrot.png" style="width:60%;"/> <!-- {"left" : 0.58, "top" : 1.88, "height" : 5.31, "width" : 9.09} -->
 
 
 Notes:
@@ -83,7 +84,9 @@ Notes:
 
 ## Clustering in Solr – setup
 
-![](../images/setup.png) <!-- {"left" : 1.34, "top" : 1.34, "height" : 4.83, "width" : 7.57} -->
+
+<img src="../../assets/images/solr/3rd-party/setup.png" style="width:60%;"/> <!-- {"left" : 0.98, "top" : 1.89, "height" : 5.29, "width" : 8.29} -->
+
 
 
 Notes:
@@ -93,8 +96,8 @@ Notes:
 
 ## Clustering in Solr – result
 
-![](../images/result.png) <!-- {"left" : 1.85, "top" : 1.21, "height" : 5.09, "width" : 6.55} -->
 
+<img src="../../assets/images/solr/3rd-party/result.png" style="width:55%;"/> <!-- {"left" : 1.55, "top" : 1.76, "height" : 5.56, "width" : 7.15} -->
 
 Notes:
 
@@ -116,6 +119,8 @@ Notes:
 ---
 
 # Geospatial
+---
+
 ## Geospatial search
 
   * Location-based searching
@@ -163,7 +168,8 @@ Notes:
 
 ## Geospatial search – document
 
-![](../images/Geospatial-search-document.png) <!-- {"left" : 1.51, "top" : 0.81, "height" : 5.88, "width" : 7.23} -->
+
+<img src="../../assets/images/solr/3rd-party/Geospatial-search-document.png" style="width:50%;float:left;"/> <!-- {"left" : 0.38, "top" : 1.59, "height" : 5.88, "width" : 7.23} -->
 
 Notes:
 
@@ -172,7 +178,9 @@ Notes:
 
 ## Geospatial search – result
 
-![](../images/Geospatial-search-result.png) <!-- {"left" : 1.87, "top" : 1.36, "height" : 4.78, "width" : 6.52} -->
+
+<img src="../../assets/images/solr/3rd-party/Geospatial-search-result.png" style="width:53%;"/> <!-- {"left" : 1.22, "top" : 1.67, "height" : 5.73, "width" : 7.82} -->
+
 
 Notes:
 
@@ -181,10 +189,13 @@ Notes:
 
 # Spell checking
 
+---
+
+
 ## Spell checking - result
 
 
-![](../images/Spell-checking-result.png) <!-- {"left" : 1.31, "top" : 1.68, "height" : 4.15, "width" : 7.63} -->
+<img src="../../assets/images/solr/3rd-party/Spell-checking-result.png" style="width:53%;float:left;"/> <!-- {"left" : 0.36, "top" : 1.68, "height" : 4.54, "width" : 8.35} -->
 
 Notes:
 
@@ -194,7 +205,8 @@ Notes:
 ## Spell checking - setup
 
 
-![](../images/Spell-checking-setup.png) <!-- {"left" : 0.99, "top" : 1.62, "height" : 4.25, "width" : 8.26} -->
+<img src="../../assets/images/solr/3rd-party/Spell-checking-setup.png" style="width:63%;float:left;"/> <!-- {"left" : 0.36, "top" : 1.68, "height" : 4.56, "width" : 8.86} -->
+
 
 Notes:
 
@@ -216,7 +228,7 @@ Notes:
 ## Solr suggester - setup
 
 
-![](../images/Solr-suggester-setup.png) <!-- {"left" : 0.46, "top" : 1.76, "height" : 3.98, "width" : 9.33} -->
+<img src="../../assets/images/solr/3rd-party/Solr-suggester-setup.png" style="width:63%;float:left;"/> <!-- {"left" : 0.36, "top" : 1.68, "height" : 3.98, "width" : 9.33} -->
 
 Notes:
 
@@ -226,7 +238,7 @@ Notes:
 ## Solr suggester - response
 
 
-![](../images/Solr-suggester-response.png) <!-- {"left" : 0.65, "top" : 1.83, "height" : 3.85, "width" : 8.95} -->
+<img src="../../assets/images/solr/3rd-party/Solr-suggester-response.png" style="width:63%;float:left;"/> <!-- {"left" : 0.36, "top" : 1.68, "height" : 3.85, "width" : 8.95} -->
 
 Notes:
 
@@ -234,13 +246,14 @@ Notes:
 ---
 
 # Highlighting
+---
+
 ## Benefits of hit highlighting
 
   * Pinpoint the text which lead to the document being selected
   * Find the portion of the document to show on the screen
 
-![](../images/Benefits-of-hit-highlighting.png) <!-- {"left" : 1.9, "top" : 1.91, "height" : 5.44, "width" : 6.46} -->
-
+<img src="../../assets/images/solr/3rd-party/Benefits-of-hit-highlighting.png" style="width:40%;"/> <!-- {"left" : 1.9, "top" : 2.64, "height" : 5.44, "width" : 6.46} -->
 
 
 Notes:
@@ -250,7 +263,7 @@ Notes:
 
 ## Example: FreeEed
 
-![](../images/Example-FreeEed.png) <!-- {"left" : 0.85, "top" : 0.93, "height" : 6.17, "width" : 8.55} -->
+<img src="../../assets/images/solr/3rd-party/Example-FreeEed.png" style="width:50%;"/> <!-- {"left" : 0.85, "top" : 1.45, "height" : 6.17, "width" : 8.55} -->
 
 
 Notes:
@@ -260,7 +273,7 @@ Notes:
 
 ## Highlighting
 
-![](../images/Highlighting.png) <!-- {"left" : 0.93, "top" : 1.02, "height" : 5.47, "width" : 8.4} -->
+<img src="../../assets/images/solr/3rd-party/Highlighting.png" style="width:53%;float:left;"/> <!-- {"left" : 0.46, "top" : 1.68, "height" : 5.47, "width" : 8.4} -->
 
 
 
@@ -271,7 +284,8 @@ Notes:
 
 ## How hit highlighting works
 
-![](../images/How-hit-highlighting-works.png) <!-- {"left" : 2.05, "top" : 0.93, "height" : 6.17, "width" : 6.16} -->
+
+<img src="../../assets/images/solr/How-hit-highlighting-works.png" style="width:53%;"/> <!-- {"left" : 1.82, "top" : 1.51, "height" : 6.62, "width" : 6.61} -->
 
 
 Notes:
@@ -308,7 +322,8 @@ Notes:
     - GapFragmenter – based on a target length
     - RegexFragmenter, such as 
 
-![](../images/RegexFragmenter.png) <!-- {"left" : 3.49, "top" : 4.47, "height" : 0.43, "width" : 3.28} -->
+
+<img src="../../assets/images/solr/3rd-party/RegexFragmenter.png" style="width:33%;"/> <!-- {"left" : 2.44, "top" : 5.11, "height" : 0.7, "width" : 5.37} -->
 
 Notes:
 
@@ -327,7 +342,8 @@ Notes:
 
 ## Lab: contd
 
-![](../images/highlighting01.png) <!-- {"left" : 0.95, "top" : 1.28, "height" : 4.95, "width" : 8.71} -->
+
+<img src="../../assets/images/solr/3rd-party/highlighting01.png" style="width:63%;"/>  <!-- {"left" : 0.57, "top" : 1.95, "height" : 5.17, "width" : 9.1} -->
 
 
 Notes:
@@ -336,6 +352,7 @@ Notes:
 ---
 
 # Pseudo-fields
+---
 
 ## Pseudo-fields
 
@@ -356,7 +373,7 @@ Notes:
 
   * Example:
 
-`/select?fl=RETURN_FIELD_1, RETURN_FIELD_2&q={!join from=FROM_FIELDto=TO_FIELD}CONSTRAINT_FIELD:CONSTRAINT_VALUE MeaningSelect RETURN_FIELD_1, RETURN_FIELD_2 FROM join-data WHERE TO_FIELD IN (SELECT FROM_FIELD from join-data WHERE CONSTRAINT_FIELD = 'CONSTRAINT_VALUE')`
+    - `/select?fl=RETURN_FIELD_1, RETURN_FIELD_2&q={!join from=FROM_FIELDto=TO_FIELD}CONSTRAINT_FIELD:CONSTRAINT_VALUE MeaningSelect RETURN_FIELD_1, RETURN_FIELD_2 FROM join-data WHERE TO_FIELD IN (SELECT FROM_FIELD from join-data WHERE CONSTRAINT_FIELD = 'CONSTRAINT_VALUE')`
 
 
 Notes:
@@ -376,10 +393,12 @@ Notes:
 ---
 
 # Multi-language
+---
 
 ## Multi-language: multi-core
 
-![](../images/multi-core.png) <!-- {"left" : 0.46, "top" : 1.79, "height" : 3.93, "width" : 9.33} -->
+
+<img src="../../assets/images/solr/3rd-party/multi-core.png" style="width:63%;float:left;"/>  <!-- {"left" : 0.29, "top" : 1.67, "height" : 3.93, "width" : 9.33} -->
 
 Notes:
 
@@ -416,7 +435,6 @@ Notes:
 Notes:
 
 
----
 
 
 

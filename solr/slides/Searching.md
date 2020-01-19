@@ -1,5 +1,5 @@
-Solr: Searching
-===================
+# Solr: Searching
+---
 
 ## Session Objectives
 
@@ -12,6 +12,7 @@ Notes:
 
 ---
 # Introduction
+---
 
 ## Ranked Retrieval
 
@@ -95,6 +96,7 @@ Notes:
 Notes:
 
 ---
+
 ## Lab – Expanded Search/Solritas
 
 * Overview: we will experiment with the advanced search features, as provided in the Solritas example
@@ -107,14 +109,15 @@ Notes:
 Notes:
 
 ---
+
 ## Extended Solr features (Solritas example)
 
-
-![](../images/Solritas.png) <!-- {"left" : 1.83, "top" : 0.93, "height" : 6.17, "width" : 6.58} -->
+<img src="../../assets/images/solr/3rd-party/Solritas.png" style="width:40%;"/><!-- {"left" : 1.83, "top" : 1.74, "height" : 6.17, "width" : 6.58} -->
 
 Notes:
 
 ---
+
 ## Sorting - Details
 
   * Sorting can be done on the "score" of the document, or 
@@ -128,6 +131,7 @@ Notes:
 Notes:
 
 ---
+
 ## Sorting On Function Queries
 
   * Allows deep customization of ranking, for example
@@ -147,7 +151,9 @@ http://localhost:8983/solr/select/? fl=score,id&q=DDR&sort=termfreq(text,memory)
 Notes:
 
 ---
+
 # Query Parsers
+---
 
 ## Query Parsers
 
@@ -158,13 +164,16 @@ Notes:
 Notes:
 
 ---
+
 ## Components
 
-![](../images/Request-handlers.png) <!-- {"left" : 0.87, "top" : 0.85, "height" : 6.47, "width" : 8.52} -->
+
+<img src="../../assets/images/solr/Request-handlers.png" style="width:55%;"/> <!-- {"left" : 0.86, "top" : 1.59, "height" : 6.47, "width" : 8.52} -->
 
 Notes:
 
 ---
+
 ## Query Parser Basics
 
   * When executing a search, QueryComponent handles the primary user query (the q parameter)
@@ -175,31 +184,34 @@ Notes:
 Notes:
 
 ---
+
 ## Specifying A Default Query Parser
 
   * Default query parser is specified with the defType parameter
 
-`/select?defType=edismax&q=…`
-`/select?defType=term&q=…`
+    - `/select?defType=edismax&q=...`
+    - `/select?defType=term&q=...`
 
 
 Notes:
 
 ---
+
 ## Specifying your Query Parser
 
 * Specific query parser is specified with the defType parameter
 
-`/select?q={!edismax}hello world`
-`/select?q={!term}hello`
-`/select?q={!edismax}hello world OR {!lucene}title:"my title“`
+  - `/select?q={!edismax}hello world`
+  - `/select?q={!term}hello`
+  - `/select?q={!edismax}hello world OR {!lucene}title:"my title“`
 
-**Two query parsers used!**
+* **Two query parsers used!**
 
 
 Notes:
 
 ---
+
 ## What Query Parser To Use?
 
   * LuceneQParserPlugin
@@ -218,7 +230,10 @@ Notes:
 Notes:
 
 ---
+
 # Defining Fields
+---
+
 ## Introduction
 
 * Fields are defined in the fields element of `schema.xml`
@@ -236,6 +251,7 @@ Notes:
 Notes:
 
 ---
+
 ## Field Properties
 
 * `name`
@@ -252,6 +268,7 @@ Notes:
 Notes:
 
 ---
+
 ## Field Types
 
 * All are `true` or `false`
@@ -266,7 +283,9 @@ Notes:
 Notes:
 
 ---
+
 ## Field Types, contd
+
   - `omitNorms`: omits the norms associated with this field
   - `omitTermFreqAndPositions`: omits term frequency, positions, and payloads from postings for this field
   - `omitPositions`: Similar to `omitTermFreqAndPositions` but preserves term frequency information
@@ -277,6 +296,7 @@ Notes:
 Notes:
 
 ---
+
 ## Field Types, contd
   - `required`: Instructs Solr to reject any attempts to add a document which does not have a value for this field
 
@@ -289,6 +309,7 @@ Notes:
 Notes:
 
 ---
+
 ## Dynamic Fields
 
 * Allows Solr to index fields that you did not explicitly define in your schema
@@ -308,12 +329,13 @@ Notes:
 ```java
 <dynamicField name="*_i" type="int" indexed="true"  stored="true"/>
 ```
-<!-- {"left" : 0, "top" : 5.97, "height" : 0.6, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 6.21, "height" : 0.6, "width" : 10.25} -->
 
 
 Notes:
 
 ---
+
 ## Copying Fields
 
 * The field you copy is `source` and the copy is `destination`
@@ -322,7 +344,7 @@ Notes:
 ```java
 <copyField source="cat" dest="text" maxChars="30000" />
 ```
-<!-- {"left" : 0, "top" : 2.52, "height" : 0.56, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.45, "height" : 0.48, "width" : 8.82} -->
 
 * Copies the `cat` field to another field `text`
 * Now we have two fields with same original content
@@ -331,6 +353,7 @@ Notes:
 Notes:
 
 ---
+
 ## Using Wildcards
 
 * Copy the contents of all incoming fields that match the wildcard pattern `*_t` to the text field:
@@ -338,7 +361,7 @@ Notes:
 ```java
 <copyField source="*_t" dest="text" maxChars="25000" />
 ```
-<!-- {"left" : 0, "top" : 2, "height" : 0.56, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.97, "height" : 0.47, "width" : 8.58} -->
 
 
 * Chain copy is impossible. All must be copies from original source
@@ -347,13 +370,15 @@ Notes:
 <copyField source="here" dest="there"/>
 <copyField source="here" dest="elsewhere"/>
 ```
-<!-- {"left" : 0, "top" : 3.78, "height" : 0.98, "width" : 9.63} -->
+<!-- {"left" : 0, "top" : 3.49, "height" : 0.98, "width" : 9.63} -->
 
 
 Notes:
 
 ---
+
 # Faceting
+---
 
 ## What Is It?
 
@@ -366,6 +391,7 @@ Notes:
 Notes:
 
 ---
+
 ## General Parameters
 
 * Two general parameters for controlling faceting:
@@ -378,6 +404,7 @@ Notes:
 Notes:
 
 ---
+
 ## Facet Query
 
 * By default, faceting determines the unique terms for a field and returns a count for each of those terms
@@ -396,7 +423,9 @@ Notes:
 Notes:
 
 ---
+
 ## facet.field Parameter
+
 * Identifies a field that should be treated as a facet
 * Iterates over each term in the field and generate a facet count using that term as the constraint
 * Can be specified multiple times in a query to select multiple facet fields
@@ -406,7 +435,9 @@ Notes:
 Notes:
 
 ---
+
 ## facet.prefix Parameter
+
 * Limits the terms on which to facet to those starting with the given string prefix
 * Does not limit the query in any way, only the facets that would be returned in response to the query
 * Can be specified on a per-field basis with this syntax:
@@ -420,7 +451,9 @@ f.<fieldname>.facet.prefix
 Notes:
 
 ---
+
 ## facet.limit Parameter
+
 * Specifies the maximum number of constraint counts that should be returned for the facet fields
 * essentially, the number of facets for a field that are returned
 * Negative value means that Solr will return unlimited number of constraint counts
@@ -431,20 +464,24 @@ Notes:
 ```java 
 f.<fieldname>.facet.limit
 ```
-<!-- {"left" : 0, "top" : 5.09, "height" : 0.63, "width" : 5.78} -->
+<!-- {"left" : 0, "top" : 5.26, "height" : 0.63, "width" : 5.78} -->
 
 
 Notes:
 
 ---
+
 ## Range Faceting
+
 * Can be used for any date or numeric field that supports range queries
 * Good for stitching together a series of range queries (as facet by query) for things like prices
 
 Notes:
 
 ---
+
 ## Parameters Related to Range (table)
+
 
 | Parameter           | Description                                                                                                                            |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -457,10 +494,14 @@ Notes:
 | facet.range.other   | Specifies counts for Solr to compute in addition to the counts for each facet range constraint                                         |
 | facet.range.method  | Specifies the algorithm or method to use for calculating facets                                                                        |
 
+<!-- {"left" : 0.25, "top" : 1.09, "height" : 4.61, "width" : 9.75} -->
+
 Notes:
 
 ---
+
 ## Interval Faceting vs Facet querying
+
 * Seems similar to rang faceting, but actually its functionality is like doing facet queries with range queries
 * Allows us to set variable intervals and count the number of documents that have values within those intervals in the specified field
 * Interval faceting: works for multiple intervals for the same fields
@@ -469,7 +510,9 @@ Notes:
 Notes:
 
 ---
+
 ## Parameters
+
 * `facet.interval`
   - Indicates the field where interval faceting must be applied
   - Can be used multiple times in the same request to indicate multiple fields
@@ -478,6 +521,7 @@ Notes:
 Notes:
 
 ---
+
 ## Parameters, contd
 
 * `facet.interval.set`
@@ -490,14 +534,14 @@ Notes:
   ```java
   f.<fieldname>.facet.interval.set
   ```
-<!-- {"left" : 0, "top" : 4.08, "height" : 0.6, "width" : 6.76} -->
+<!-- {"left" : 0, "top" : 4.15, "height" : 0.45, "width" : 5.09} -->
 
   - Example:
 
   ```java
   f.price.facet.interval.set=[0,10]&f.price.facet.interval.set=(10,100]
   ```
-<!-- {"left" : 0, "top" : 5.56, "height" : 0.45, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.34, "height" : 0.45, "width" : 10.25} -->
 
 Notes:
 
@@ -515,6 +559,7 @@ Notes:
 ---
 
 ## Result Grouping 
+
 * Different from `Faceting`
 * Groups documents with a common field value into groups
 * Returns the top documents for each group
@@ -523,18 +568,21 @@ Notes:
 Notes:
 
 ---
+
 ## Result Grouping Overview
 
 * Example domain
 
-![](../images/resultg.png) <!-- {"left" : 1.88, "top" : 1.73, "height" : 3.61, "width" : 6.49} -->
+<img src="../../assets/images/solr/resultg.png" style="width:55%;"/> <!-- {"left" : 1.88, "top" : 1.88, "height" : 3.61, "width" : 6.49} -->
 
 * Each Product-item is a document, but includes the product data.
 
 Notes:
 
 ---
+
 ## Parameters
+
 * `group`: query results will be grouped
 * `group.field`: The name of the field by which to group results
 * `group.func`: Group based on the unique values of a function query
@@ -546,6 +594,8 @@ Notes:
 ---
 
 # Geospatial
+---
+
 ## Geospatial search
 
   * Location-based searching
@@ -593,7 +643,8 @@ Notes:
 
 ## Geospatial search – document
 
-![](../images/Geospatial-search-document.png) <!-- {"left" : 1.51, "top" : 0.81, "height" : 5.88, "width" : 7.23} -->
+
+<img src="../../assets/images/solr/3rd-party/Geospatial-search-document.png" style="width:45%;float:left;"/> <!-- {"left" : 0.27, "top" : 1.44, "height" : 5.88, "width" : 7.23} -->
 
 Notes:
 
@@ -602,7 +653,8 @@ Notes:
 
 ## Geospatial search – result
 
-![](../images/Geospatial-search-result.png) <!-- {"left" : 1.87, "top" : 1.36, "height" : 4.78, "width" : 6.52} -->
+<img src="../../assets/images/solr/3rd-party/Geospatial-search-result.png" style="width:45%;"/> <!-- {"left" : 1.46, "top" : 1.56, "height" : 5.37, "width" : 7.33} -->
+
 
 Notes:
 

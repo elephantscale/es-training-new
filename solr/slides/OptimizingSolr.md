@@ -1,5 +1,5 @@
-Solr: Optimizing
-===================
+# Solr: Optimizing
+---
 ## Session Objectives
 
 * Being familiar with sharding and considerations
@@ -13,6 +13,7 @@ Notes:
 
 ---
 # Sharding Strategies
+---
 
 ## What is Sharding?
 
@@ -26,14 +27,17 @@ Notes:
 Notes:
 
 ---
+
 ## Sharding Strategies
 
-![](../images/strategy.png) <!-- {"left" : 1.48, "top" : 1.55, "height" : 4.86, "width" : 7.29} -->
+<img src="../../assets/images/solr/3rd-party/strategy.png" style="width:60%;"/> <!-- {"left" : 1.48, "top" : 1.55, "height" : 4.86, "width" : 7.29} -->
 
 Notes:
 
 ---
+
 ## Sharding Strategies
+
 * Which shard contains a specific document in a collection?
 * Sharding strategy
   - for example, by a field, like country
@@ -44,7 +48,9 @@ Notes:
 Notes:
 
 ---
+
 ## Advantages of Sharding
+
 * Maximizes Indexing performance
 * Enables horizontal scaling to massive content repositories
 * When the document count exceeds 50 million in the repository
@@ -52,6 +58,7 @@ Notes:
 Notes:
 
 ---
+
 ## Sharding Implementation
 
 * In SolrCloud there are no masters or slaves
@@ -68,7 +75,9 @@ Notes:
 Notes:
 
 ---
+
 ## Sharding Use
+
 * When a document is sent to a Solr node for indexing
    - the system first determines which Shard that document belongs to
      - based on sharding policy
@@ -81,6 +90,7 @@ Notes:
 Notes:
 
 ---
+
 ## How Many Documents and Shards?
 
 * No explicit rule but, generally one shard for every 50 million documents
@@ -95,6 +105,7 @@ Notes:
 
 ---
 # Document Routing
+---
 
 ## What is Document Routing?
 * How do we decide to which shard a document belongs?
@@ -111,6 +122,7 @@ Notes:
 Notes:
 
 ---
+
 ## Document Routers
 
 * A shared key is added to the unique document id
@@ -120,6 +132,7 @@ Notes:
 Notes:
 
 ---
+
 ## How Does CompositeId Router Work?
 * If your customer is "Walmart"
 * Document with the ID "13579"
@@ -131,7 +144,9 @@ Notes:
 Notes:
 
 ---
+
 ## Query Using Routing
+
 * At query time
 * include the prefix(es) into your query with the _route_ parameter
    - `q=solr&_route_=Walmart!`
@@ -143,31 +158,37 @@ Notes:
    - prefix routing first by region
    - then by customer: `USA!Walmart!12345`  
 
+---
+
 ## Query Without Routing
+
+<img src="../../assets/images/solr/no-routing.png" style="width:40%;float:right;"/><!-- {"left" : 2.05, "top" : 2.65, "height" : 4.48, "width" : 6.15-->
+
+
 * Less effective effective way to:
   - Import documents
   - Make queries
 
-![image of query without routing](../images/no-routing.png) <!-- {"left" : 2.05, "top" : 2.65, "height" : 4.48, "width" : 6.15} -->
-
 
 Notes:
 
 
 ---
+
 ## Query With Routing
+
+<img src="../../assets/images/solr/routing.png" style="width:40%;float:right;"/><!-- {"left" : 2.05, "top" : 2.65, "height" : 4.48, "width" : 6.15} -->
 
 * Control where documents are going
 * Control where queries are going
 
-![image of query with routing](../images/routing.png) <!-- {"left" : 2.05, "top" : 2.65, "height" : 4.48, "width" : 6.15} -->
-
-
 Notes:
 
 
 ---
+
 ## Use Cases
+
 * Two primary use cases:
 * Multi-tenancy
   - In multi-tenant environments
@@ -179,7 +200,9 @@ Notes:
 
 
 ---
+
 ## Use Cases, contd
+
 * Co-location
   - Some features like grouping's `ngroups` requires documents to be co-located in the same core or VM
   - For example documents need to be co-located by the grouping key
@@ -190,6 +213,7 @@ Notes:
 
 ---
 # Cross Data Center Replication
+---
 
 ## Securing Your Data
 
@@ -205,15 +229,17 @@ Notes:
 
 
 ---
+
 ## Disaster Recovery
 
-![](../images/disaster.png) <!-- {"left" : 0.78, "top" : 1.08, "height" : 5.8, "width" : 8.7} -->
+<img src="../../assets/images/solr/3rd-party/disaster.png" style="width:60%;"/><!-- {"left" : 0.78, "top" : 1.08, "height" : 5.8, "width" : 8.7} -->
 
 
 Notes:
 
 
 ---
+
 ## Disaster Recovery Strategies
 
 | Option                                           	| Risk                                                                                                                                                                                                        	|
@@ -228,7 +254,9 @@ Notes:
 
 
 ---
+
 ## What is CDCR?
+
 * Cross Data Center Replication (CDCR) 
 * Allows to 
   - create multiple SolrCloud data centers
@@ -243,7 +271,9 @@ Notes:
 
 
 ---
+
 ## CDCR Details
+
 * Source data center
 * Target data center
 * Source => Target
@@ -254,6 +284,7 @@ Notes:
 
 
 ---
+
 ## CDCR Glossary
 
 * Zookeeper: Centralized service for maintaining configuration and cluster state info
@@ -266,7 +297,9 @@ Notes:
 
 
 ---
+
 ## CDCR Glossary contd
+
 * Node
   - A JVM instance running Solr; a server
 * Cluster
@@ -290,15 +323,18 @@ Notes:
 
 
 ---
+
 ## CDCR Architecture
 
-![](../images/replica.png) <!-- {"left" : 0.96, "top" : 1.83, "height" : 4.31, "width" : 8.32} -->
+<img src="../../assets/images/solr/replica.png" style="width:70%;"/> <!-- {"left" : 0.96, "top" : 1.83, "height" : 4.31, "width" : 8.32} -->
 
 Notes:
 
 
 ---
+
 ## Cross Data Center Replication (CDCR)
+
 * Version 6 or later
 * Supports unidirectional (active-passive) and bidirectional (active-active)
 * At collection level data is replicated not configurations
@@ -313,18 +349,22 @@ Notes:
 Notes:
 
 ---
+
 ## Image Of Unidirectional
+
 * Direction: source to target
 * If source goes down, you need to point querying and indexing to target cluster collection
 
-![](../images/uni.png) <!-- {"left" : 2.02, "top" : 2.52, "height" : 4.54, "width" : 6.21} -->
+<img src="../../assets/images/solr/uni.png" style="width:50%;"/>  <!-- {"left" : 2.02, "top" : 2.52, "height" : 4.54, "width" : 6.21} -->
 
 
 Notes:
 
 
 ---
+
 ## Concept
+
 * Updating forwards from source data center leader nodes to target data center leader nodes at regular intervals
 * Each update operation contains unique `version`, time-based import clock
 * Example: _version_:1601701044254525698
@@ -333,6 +373,7 @@ Notes:
 
 
 ---
+
 ## Concept, contd
 
 * The unique `version` is maintained as checkpoint, as ephemeral node on source and persistent node on target across all solr nodes
@@ -344,25 +385,30 @@ Notes:
 
 
 ---
+
 ## Core Components
 
-![](../images/component.png) <!-- {"left" : 0.35, "top" : 2.03, "height" : 3.45, "width" : 9.54} -->
+<img src="../../assets/images/solr/component.png" style="width:70%;"/>  <!-- {"left" : 0.35, "top" : 2.03, "height" : 3.45, "width" : 9.54} -->
 
 Notes:
 
 
 ---
+
 ## Image Of Bidirectional 
+
 * Indexing and querying must be done on a single cluster
 * Second cluster is used when the first cluster is down
 
-![](../images/bidirectional.png) <!-- {"left" : 1.38, "top" : 1.83, "height" : 5.45, "width" : 7.45} -->
+<img src="../../assets/images/solr/bidirectional.png" style="width:50%;"/> <!-- {"left" : 1.38, "top" : 1.83, "height" : 5.45, "width" : 7.45} -->
 
 Notes:
 
 
 ---
+
 ## CDCR Bidirectional Approach
+
 * Decentralized, no source nor target
 * No single point of failure anymore
 * Indexing can be redirected to failover clusters swiftly without much human effort
@@ -373,29 +419,32 @@ Notes:
 
 ---
 ## Update Strategy
+
 * Must provide consistency between source and target data centers
 * Minimal network traffic
 
-
-![](../images/update.png) <!-- {"left" : 1.72, "top" : 2.37, "height" : 4.9, "width" : 6.8} -->
+<img src="../../assets/images/solr/update.png" style="width:50%;"/><!-- {"left" : 1.72, "top" : 2.37, "height" : 4.9, "width" : 6.8} -->
 
 Notes:
 
 
 ---
+
 ## Decentralized Multi-Cluster Setup
 
 * Avoids single point of failure
 
-![](../images/multi-cluster.png) <!-- {"left" : 1.03, "top" : 1.83, "height" : 5.0, "width" : 8.2} -->
+<img src="../../assets/images/solr/multi-cluster.png" style="width:60%;"/><!-- {"left" : 1.03, "top" : 1.83, "height" : 5.0, "width" : 8.2} -->
 
 Notes:
 
 
 ---
 # Running Solr In YARN Container
+---
 
 ## What Is YARN?
+
 * Yet Another Resource Negotiator
 * Introduced by Hadoop2
 * Supports multi-purpose data processing platform
@@ -406,7 +455,9 @@ Notes:
 
 
 ---
+
 ## Why SolrCloud On YARN?
+
 * Improves operational efficiency
 * Adding computing capacity is much easier than deploying a new cluster
 * Admins can monitor the apps on a single point
@@ -419,16 +470,21 @@ Notes:
 
 
 ---
+
 ## Mechanism
+
 * Follow the instructions on next slides
 
-![](../images/yarn.png) <!-- {"left" : 0.7, "top" : 1.83, "height" : 5.35, "width" : 8.86} -->
+<img src="../../assets/images/solr/yarn.png" style="width:65%;"/><!-- {"left" : 0.7, "top" : 1.83, "height" : 5.35, "width" : 8.86} -->
+
 
 Notes:
 
 
 ---
+
 ## Step 0: Uploading Packages?
+
 * Upload the Solr distribution bundle (solr.tgz) and Solr YARN client JAR (solr-yarn.jar) to HDFS
 
 ```java
@@ -443,7 +499,9 @@ Notes:
 
 
 ---
+
 ## Step 1: Running SolrClient
+
 * It's a java application 
 * Uses YARN Java API
 * Launches the SolrMaster app in the cluster
@@ -470,6 +528,7 @@ ensemble before deploying Solr on YARN; running Solr with the embedded ZooKeeper
 is not supported for YARN clusters.
 
 ---
+
 ## Step 2: Allocate Container To Run SolrMaster
 
 * Upon request of SolrClient, ResourceManager selects a node
@@ -480,6 +539,7 @@ Notes:
 
 
 ---
+
 ## Step 3: Requests Containers To Run Nodes
 
 * SolrMaster performs:
@@ -491,6 +551,7 @@ Notes:
 
 
 ---
+
 ## Step 4: Containers Allocated Across Cluster
 
 * SolrMaster adds the path to the Solr distribution bundle (solr.tgz) as a local resource to each container
@@ -507,6 +568,7 @@ Notes:
 
 
 ---
+
 ## Step 5: Node Connects To ZooKeeper
 
 * It connects to ZooKeeper to join the SolrCloud cluster
@@ -518,6 +580,7 @@ Notes:
 
 
 ---
+
 ## Shutting down A SolrCloud Cluster
 
 * It's done by custom Jetty shutdown hook
@@ -529,14 +592,17 @@ Notes:
 
 
 ---
+
 # SolrCloud Autoscaling
+---
 
 ## Overview
+
 * Provides good defaults
 * Results in a `SolrCloud` cluster remaining balanced and stable in cluster change events
 * Easier, more automatic and intelligent
 
-![image of auto scaling](../images/auto_scaling.png) <!-- {"left" : 2.56, "top" : 2.71, "height" : 1.18, "width" : 5.13} -->
+<img src="../../assets/images/solr/auto_scaling.png" style="width:65%;"/> <!-- {"left" : 2.56, "top" : 2.71, "height" : 1.18, "width" : 5.13} -->
 
 
 * Example:
@@ -546,6 +612,7 @@ Notes:
 
 
 ---
+
 ## Goals
 
 * Making cluster management easier
@@ -557,6 +624,7 @@ Notes:
 
 
 ---
+
 ## Use Cases
 
 * Problems will be addressed:
@@ -570,24 +638,29 @@ Notes:
 
 
 ---
+
 ## A Problem
 
+<img src="../../assets/images/solr/3rd-party/problem.png" style="width:30%;float:right"/><!-- {"left" : 3.38, "top" : 4.25, "height" : 2.89, "width" : 3.12} -->
+
+
 * Maintaining three replicas for every shard:
+
 ```java
 replication Factor = 3
 ```
- <!-- {"left" : 0, "top" : 1.54, "height" : 0.61, "width" : 4.99} -->
+<!-- {"left" : 0, "top" : 1.54, "height" : 0.61, "width" : 4.99} -->
 
 * Problem: What if a node with replica(s) crashed?
 * Solution: We need additional replicas to replace
 * There is an simple way. See the next slide
 
-![](../images/problem.png) <!-- {"left" : 3.38, "top" : 4.25, "height" : 2.89, "width" : 3.12} -->
 
 Notes:
 
 
 ---
+
 ## Adding Replicas Automatically
 
 * Additional parameter when creating a collection with `CREATE` command of the collection API
@@ -615,11 +688,13 @@ Notes:
 
 
 ---
+
 ## Cluster Preferences
 
 * Will be applied on all collections
 * Is a set of conditions that helps `Solr` select nodes that either maximize or minimize given metrics
 * Example
+
 ```java
 {minimize:cores}
 ```
@@ -632,6 +707,7 @@ Notes:
 
 
 ---
+
 ## Cluster Policy
 
 * A set of conditions that nodes, shards and collections must satisfy
@@ -644,12 +720,13 @@ Notes:
 <!-- {"left" : 0, "top" : 2.76, "height" : 0.72, "width" : 7.25} -->
 
 
-Any node must have less than 5 `Solr` cores in total regardless of which collection they belong to
+* Any node must have less than 5 `Solr` cores in total regardless of which collection they belong to
 
 Notes:
 
 
 ---
+
 ## Other Metrics
 
 * System load Average
@@ -660,6 +737,7 @@ Notes:
 
 
 ---
+
 ## Collection-Specific Policies
 
 * `set-policy` API is used to create a new policy
@@ -683,7 +761,9 @@ Notes:
 
 
 ---
+
 ## Conditions
+
 * The collection follows all conditions:
   - Cluster policy
   - Collection specific policy. Only if the collection is addressed by this policy
@@ -693,6 +773,7 @@ Notes:
 
 
 ---
+
 ## Triggers
 
 * Watches for events like node joining or leaving the cluster
@@ -704,6 +785,7 @@ Notes:
 
 
 ---
+
 ## Example
 
 * `autoAddReplicas` parameter we talked about
@@ -716,32 +798,36 @@ Notes:
 
 
 ---
+
 ## Trigger Actions
+
+<img src="../../assets/images/solr/3rd-party/trigger.png" style="width:40%;float:right;"/> <!-- {"left" : 2.72, "top" : 4.3, "height" : 2.62, "width" : 4.49} -->
 
 * A trigger executes actions that tell Solr what to do in response to the trigger.
 * Two actions are added to every trigger by default:
 - `ComputePlanAction` computes the cluster management operations necessary to stabilize the cluster 
 - `ExecutePlanAction` executes them on the cluster
 
-![](../images/trigger.png) <!-- {"left" : 2.72, "top" : 4.3, "height" : 2.62, "width" : 4.49} -->
 
 Notes:
 
 
 ---
+
 ## Listeners
+
+<img src="../../assets/images/solr/3rd-party/strategy.png" style="width:40%;float:right;"/><!-- {"left" : 2.75, "top" : 3.44, "height" : 3.57, "width" : 4.75} -->
 
 * Can be attached to a trigger
 * Solr calls it every time the trigger fires
 * As a call back mechanism
 * Example: Logs details about trigger fire to `.system` collection
 
-![](../images/strategy.png) <!-- {"left" : 2.75, "top" : 3.44, "height" : 3.57, "width" : 4.75} -->
-
 Notes:
 
 
 ---
+
 ## Autoscaling APIs
 
 * Is available at:

@@ -1,6 +1,5 @@
-IR Metrics
-===================
-
+# IR Metrics
+---
 
 ## How to Measure Search?
  * How fast does it index
@@ -15,12 +14,17 @@ IR Metrics
  * Uncluttered UI
  * Free?
 
+---
+
+
 ## Measurability
  * All these are *measurable*: we can *quantify* terms like speed or size.
  * What is the real measure?  **User Happiness**
    - What is this?
    - Speed is importnat
  * How can we *quantify* how **User Happieness**
+
+---
 
 ## IR Metric Types
 
@@ -95,8 +99,7 @@ SERP = Search Engine Results Page
     - In short, how much junk do I get?
   * More precisely, fraction of documents judge *relevant* to user's need.
 
-![](../images/precision-definition.png) <!-- {"left" : 2.04, "top" : 2.82, "height" : 0.84, "width" : 6.94} -->
-
+<img src="../../assets/images/solr/3rd-party/precision-definition.png" style="width:65%;"/> <!-- {"left" : 2.04, "top" : 3.14, "height" : 0.84, "width" : 6.94} -->
 
   * For example, let's say I search for *"curry"* and I am delivered 10 results.
     - I'm really looking for Indian food recipes (relevant)
@@ -127,10 +130,9 @@ SERP = Search Engine Results Page
     - In short, did any "good stuff" get left out?
     - What was left on the table?
 
-![](../images/recall-definition.png) <!-- {"left" : 3.4, "top" : 2.71, "height" : 0.8, "width" : 5.93} -->
+<img src="../../assets/images/solr/3rd-party/recall-definition.png" style="width:65%;"/> <!-- {"left" : 3.98, "top" : 2.94, "height" : 0.8, "width" : 5.93} -->
 
-
-  * aka *Sensitivity* :  Probability a relevant document is returned by the query.
+  * aka *Sensitivity:* Probability a relevant document is returned by the query.
   * Trivial Solution: Return *all* documents
     - But that would have precision very low
   * Example, say my search engine indexes 100 pages. 20 of them are relevant. 
@@ -163,8 +165,7 @@ Notes:
 
  * The proportion of *non-relevant* documents retrieved, out of all non-relevant documents
 
-![](../images/fallout-definition.png) <!-- {"left" : 2.96, "top" : 1.99, "height" : 0.88, "width" : 6.64} -->
-
+<img src="../../assets/images/solr/3rd-party/fallout-definition.png" style="width:65%;"/><!-- {"left" : 2.51, "top" : 2.16, "height" : 1, "width" : 7.55} -->
 
  * Probability that a non-relevant document is returned by the query.
  * Related to *specificity* -- it is (1-specificity)
@@ -178,8 +179,7 @@ Notes:
  * F-Score is a weighted harmonic mean of precision and recall.
  * The most common is F1, where precision and recall are balanced.
 
-![](../images/f1-definition.png) <!-- {"left" : 5.23, "top" : 2.07, "height" : 1.18, "width" : 4.22} -->
-
+<img src="../../assets/images/solr/3rd-party/f1-definition.png" style="width:40%;"/><!-- {"left" : 6.07, "top" : 2.1, "height" : 1.12, "width" : 4.01} -->
 
  * F-Score takes into account *both* precision and recall
  * Precision / Recall are in tension
@@ -206,12 +206,11 @@ Notes:
 ---
 
 ## Precision Recall Curve
+
  * We can plot the curve for precision versus recall for all of our first N search results 
  * The plotted points will have a precision recall curve.
 
-![](../images/precision-recall-curve.png) <!-- {"left" : 2.44, "top" : 2.7, "height" : 4.11, "width" : 5.36} -->
-
-
+<img src="../../assets/images/solr/3rd-party/precision-recall-curve.png" style="width:40%;"/><!-- {"left" : 1.83, "top" : 2.87, "height" : 5.05, "width" : 6.59} -->
 
 ---
 
@@ -221,7 +220,10 @@ Notes:
  * We can measure the AUC as a metric. (Higher the better!)
  * The way we define this is as follows:
 
-![](../images/avep-definition.png)
+<img src="../../assets/images/solr/3rd-party/avep-definition.png" style="width:40%;"/><!-- {"left" : 2.32, "top" : 3.89, "height" : 1.87, "width" : 5.62} -->
+
+
+---
 
 ## Lab: Precision And Recall Of Search Engines
 

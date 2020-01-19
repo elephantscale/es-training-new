@@ -1,12 +1,16 @@
-Search Introduction
-===================
+# Search Introduction
+---
+
 ## Section Objectives
 
   * Understand Information Retrieval Concepts
   * Understand Inverted Indexes
   * Build An Index
 
+---
+
 # IR Overview
+---
 
 ## Information Retrieval
 
@@ -31,8 +35,7 @@ Notes:
 ## Unstructured (text) vs. structured (database) data in the mid-nineties
 
 
-![](../images/lecture1-intro-unstructured-90s.png) <!-- {"left" : 0.3, "top" : 1.5, "height" : 5.16, "width" : 9.66} -->
-
+<img src="../../assets/images/solr/3rd-party/lecture1-intro-unstructured-90s.png" style="width:60%;"/> <!-- {"left" : 0.3, "top" : 1.95, "height" : 5.16, "width" : 9.66} -->
 
 Notes:
 
@@ -43,7 +46,7 @@ Mostly structured data in those days.
 
 ## Unstructured (text) vs. structured (database) data today
 
-![](../images/lecture1-intro-unstructured-today.png) <!-- {"left" : 0.3, "top" : 1.5, "height" : 5.16, "width" : 9.66} -->
+<img src="../../assets/images/solr/lecture1-intro-unstructured-today.png" style="width:60%;"/> <!-- {"left" : 0.3, "top" : 1.95, "height" : 5.16, "width" : 9.66} -->
 
 
 Notes:
@@ -110,7 +113,7 @@ Notes:
 
  * E.g., this slide has distinctly identified zones such as the  *Title*  and  *Bullets*
 
-        * … to say nothing of linguistic structure
+     -  ... to say nothing of linguistic structure
 
  * Facilitates “semi-structured” search such as
 
@@ -118,7 +121,7 @@ Notes:
 
  * Or even
 
-     -  *Title*  is about Object Oriented Programming AND  *Author*   something like `stro*rup`
+     -  *Title* is about Object Oriented Programming AND  *Author*  something like `stro*rup`
 
      - where `*` is the wild-card operator
 
@@ -145,9 +148,8 @@ Notes:
 
 ## The Classic search model
 
-![](../images/lecture1-intro-classic-search-model.png) <!-- {"left" : 0.92, "top" : 1.38, "height" : 5.2, "width" : 8.4} -->
 
-
+<img src="../../assets/images/solr/lecture1-intro-classic-search-model.png" style="width:60%;"/> <!-- {"left" : 0.93, "top" : 1.93, "height" : 5.2, "width" : 8.4} -->
 
 
 Notes:
@@ -160,9 +162,9 @@ Notes:
 ## How good are the retrieved docs?
 
 
- *  *Precision* : Fraction of retrieved docs that are relevant to the user’s information need
+ *  *Precision:* Fraction of retrieved docs that are relevant to the user’s information need
 
- *  *Recall*  : Fraction of relevant docs in collection that are retrieved
+ *  *Recall:* Fraction of relevant docs in collection that are retrieved
 
      - More precise definitions and measurements to follow later
 
@@ -177,8 +179,7 @@ Notes:
 
  * Term-document incidence matrices
 
-![](../images/lecture1-intro-term-document-incident-matrices.png) <!-- {"left" : 0.81, "top" : 1.8, "height" : 4.38, "width" : 8.21} -->
-
+<img src="../../assets/images/solr/3rd-party/lecture1-intro-term-document-incident-matrices.png" style="width:60%;"/> <!-- {"left" : 1.02, "top" : 2.34, "height" : 4.38, "width" : 8.21} -->
 
 Notes:
 
@@ -193,7 +194,7 @@ Notes:
  * Why is that not the answer?
      - Slow (for large corpora)
      -  *NOT*   **Calpurnia**  is non-trivial
-     - Other operations (e.g., find the word  **Romans** near ****  **countrymen** ) not feasible
+     - Other operations (e.g., find the word  **Romans near countrymen** ) not feasible
      - Ranked retrieval (best documents to return)
 
 
@@ -223,17 +224,17 @@ Notes:
 
  * So we have a 0/1 vector for each term.
 
- * To answer query: take the vectors for  **Brutus, Caesar**  and  **Calpurnia**  (complemented) -> bitwise  *AND* .
+ * To answer query: take the vectors for  **Brutus, Caesar**  and  **Calpurnia**  (complemented) -> bitwise  *AND*.
 
      - 110100  *AND*
 
      - 110111  *AND*
 
-     - 101111 =
+     - 101111=
 
      -  **100100**
 
- *
+ 
 
 Notes:
 
@@ -243,10 +244,11 @@ Notes:
 
 ## Answers to query
 
+<img src="../../assets/images/solr/3rd-party/lecture1-intro-Answers-to-query-0.png" style="width:30%;float:right;"/> <!-- {"left" : 7.79, "top" : 1.05, "height" : 2.93, "width" : 2.3} -->
 
   * Antony and Cleopatra, Act III, Scene ii
 
-  *  *Agrippa*  [Aside to DOMITIUS ENOBARBUS]: Why, Enobarbus,
+  *  *Agrippa* [Aside to DOMITIUS ENOBARBUS]: Why, Enobarbus,
 
   * When Antony found Julius **Caesar** dead,
 
@@ -256,12 +258,10 @@ Notes:
 
   * Hamlet, Act III, Scene ii
 
-  * *Lord Polonius:*  I did enact Julius **Caesar** I was killed i’ the
+  * *Lord Polonius:* I did enact Julius **Caesar** I was killed i’ the
 
   * Capitol; **Brutus** killed me.
 
-
-![](../images/lecture1-intro-Answers-to-query-0.png) <!-- {"left" : 8.21, "top" : 4.86, "height" : 2.4, "width" : 1.88} -->
 
 
 Notes:
@@ -274,13 +274,13 @@ Wikimedia commons picture of Shake
 ## Bigger collections
 
 
- * Consider  *N* = 1 million documents, each with about 1000 words.
+ * Consider *N* = 1 million documents, each with about 1000 words.
 
  * Avg 6 bytes/word including spaces/punctuation
 
      - 6GB of data in the documents.
 
- * Say there are  *M* = 500K  *distinct*  terms among these.
+ * Say there are *M* = 500K  *distinct*  terms among these.
 
 
 Notes:
@@ -290,7 +290,6 @@ Notes:
 ---
 
 ## Can’t build the matrix
-
 
  * 500K x 1M matrix has half-a-trillion 0’s and 1’s.
 
@@ -311,6 +310,7 @@ Notes:
 
 ---
 # Inverted Index
+---
 
 ## Inverted Index
 
@@ -318,8 +318,7 @@ Notes:
   * For each term “t” we must store a list of all documents that contain “t”.
   * Identify each document by its id.
 
-
-![](../images/Inverted-Index-01.png) <!-- {"left" : 5.42, "top" : 3.01, "height" : 4.14, "width" : 4.6} -->
+<img src="../../assets/images/solr/3rd-party/Inverted-Index-01.png" style="width:30%;"/> <!-- {"left" : 2.82, "top" : 3.62, "height" : 4.14, "width" : 4.6} -->
 
 Notes:
 
@@ -328,19 +327,19 @@ Notes:
 ---
 ## Inverted Index
 
-  * For each term -t- , we must store a list of all documents that contain t .
-  * Identify each doc by a **docID** , a document serial number
+  * For each term -t- , we must store a list of all documents that contain t.
+  * Identify each doc by a **docID**, a document serial number
   * Can we used fixed-size arrays for this?
   * What happens if the word **Caesar** is added to document 14?
 
-![](../images/Inverted-Index-02.png) <!-- {"left" : 1.02, "top" : 4.75, "height" : 1.96, "width" : 8.21} -->
-
+<img src="../../assets/images/solr/Inverted-Index-02.png" style="width:45%;"/> <!-- {"left" : 1.02, "top" : 4.75, "height" : 1.96, "width" : 8.21} -->
 
 Notes:
 
 
 
 ---
+
 ## Inverted index
 
   * We need variable-size postings lists
@@ -348,9 +347,7 @@ Notes:
     - In memory, can use linked lists or variable length arrays
       - Some tradeoffs in size/ease of insertion
 
-![](../images/Inverted-Index-03.png) <!-- {"left" : 1.9, "top" : 4.81, "height" : 1.54, "width" : 6.46} -->
-
-
+<img src="../../assets/images/solr/Inverted-Index-03.png" style="width:45%;"/> <!-- {"left" : 1.9, "top" : 4.81, "height" : 1.54, "width" : 6.46} -->
 
   * Sorted by docID (more later on why).
 
@@ -359,15 +356,17 @@ Notes:
 
 
 ---
+
 ## Inverted Index construction
 
-![](../images/Inverted-Index-construction.png) <!-- {"left" : 0.7, "top" : 1.15, "height" : 5.66, "width" : 8.85} -->
+<img src="../../assets/images/solr/Inverted-Index-construction.png" style="width:60%;"/>  <!-- {"left" : 0.7, "top" : 1.99, "height" : 5.66, "width" : 8.85} -->
 
 Notes:
 
 
 
 ---
+
 ## Initial stages of text processing
 
   * Tokenization
@@ -389,11 +388,12 @@ Notes:
 
 
 ---
+
 ## Indexer steps: Token sequence
 
   *  Sequence of (Modified token, Document ID) pairs.
 
-![](../images/Token-sequence.png) <!-- {"left" : 1.02, "top" : 1.79, "height" : 4.38, "width" : 8.21} -->
+<img src="../../assets/images/solr/3rd-party/Token-sequence.png" style="width:60%;"/>  <!-- {"left" : 0.7, "top" : 2.17, "height" : 4.72, "width" : 8.85} -->
 
 Notes:
 
@@ -402,11 +402,12 @@ Notes:
 ---
 ## Indexer steps: Sort
 
+<img src="../../assets/images/solr/3rd-party/Sort.png" style="width:25%;float:right"/>  <!-- {"left" : 5.49, "top" : 1.2, "height" : 6.28, "width" : 4.5} -->
+
   * Sort by terms
     - And then docID
   * **Core indexing step**
 
-![](../images/Sort.png) <!-- {"left" : 5.41, "top" : 1.01, "height" : 5.96, "width" : 4.27} -->
 
 Notes:
 
@@ -415,30 +416,33 @@ Notes:
 ---
 ## Indexer steps: Dictionary & Postings
 
+<img src="../../assets/images/solr/3rd-party/Dictionary-Postings.png" style="width:25%;float:right"/>  <!-- {"left" : 6.54, "top" : 1.26, "height" : 6, "width" : 3.29} -->
+
   * Multiple term entries in a single document are merged.
   * Split into Dictionary and Postings
   * Doc. frequency information is added.
-
-![](../images/Dictionary-Postings.png) <!-- {"left" : 6.97, "top" : 1.82, "height" : 5.16, "width" : 2.83} -->
 
 Notes:
 
 
 
 ---
+
 ## Where do we pay in storage?
+
+<img src="../../assets/images/solr/3rd-party/storage.png" style="width:25%;float:right"/>  <!-- {"left" : 6.47, "top" : 1.38, "height" : 6.32, "width" : 3.47} -->
 
   * IR system implementation
     - How do we index efficiently?
     - How much storage do we need?
 
-![](../images/storage.png) <!-- {"left" : 6.99, "top" : 1.47, "height" : 5.03, "width" : 2.76} -->
 
 Notes:
 
 
 
 ---
+
 ## The index we just built
 
   * How do we process a query?
@@ -451,6 +455,7 @@ Notes:
 
 
 ---
+
 ## Query processing: AND
 
   * Consider processing the query:
@@ -471,6 +476,7 @@ Notes:
 
 
 ---
+
 ## The merge
 
   * Walk through the two postings simultaneously, in time linear in the total number of postings entries
@@ -483,18 +489,20 @@ Notes:
 
 
 ---
+
 ## Intersecting two postings lists
 
   * (a “merge” algorithm)
 
-![](../images/Intersecting-two-postings-lists.png) <!-- {"left" : 1.55, "top" : 1.45, "height" : 5.91, "width" : 7.92} -->
 
+<img src="../../assets/images/solr/3rd-party/Intersecting-two-postings-lists.png" style="width:40%;float:left;"/>  <!-- {"left" : 0.27, "top" : 2.07, "height" : 5.33, "width" : 7.14} -->
 
 Notes:
 
 
 
 ---
+
 ## Boolean queries: Exact match
 
   * The Boolean retrieval model is being able to ask a query that is a Boolean expression:
@@ -511,7 +519,8 @@ Notes:
 
 
 ---
-## Example: WestLaw   http://www.westlaw.com/
+
+## Example: WestLaw http://www.westlaw.com/
 
   * Largest commercial (paying subscribers) legal search service (started 1975; ranking added 1992)
   * Tens of terabytes of data; ~700,000 users
@@ -527,6 +536,7 @@ Notes:
 
 
 ---
+
 ## Example: WestLaw   http://www.westlaw.com/
 
   * Another example query:
@@ -543,6 +553,7 @@ Notes:
 
 
 ---
+
 ## Boolean queries:
 
  * More general merges
@@ -557,6 +568,7 @@ Notes:
 
 
 ---
+
 ## Merging
 
   * What about an arbitrary Boolean formula?
@@ -572,6 +584,7 @@ Notes:
 
 
 ---
+
 ## Query optimization
 
   * What is the best order for query processing?
@@ -581,14 +594,14 @@ Notes:
   * Query: Brutus  AND  Calpurnia  AND  Caesar
 
 
-![](../images/Query-optimization.png) <!-- {"left" : 1.02, "top" : 4.82, "height" : 1.79, "width" : 8.21} -->
-
+<img src="../../assets/images/solr/Query-optimization.png" style="width:50%;"/>  <!-- {"left" : 1.02, "top" : 4.82, "height" : 1.79, "width" : 8.21} -->
 
 Notes:
 
 
 
 ---
+
 ## Query Optimization Example
 
   * Process in order of increasing freq:
@@ -596,11 +609,10 @@ Notes:
   * This is why we kept document freq. in dictionary
 
 
-  * Execute the query as ( **Calpurnia** *AND* **Brutus**) *AND* **Caesar** .
+  * Execute the query as ( **Calpurnia** *AND* **Brutus**) *AND* **Caesar.**
 
 
-![](../images/Query-Optimization-01.png) <!-- {"left" : 1.02, "top" : 4.67, "height" : 1.79, "width" : 8.21} -->
-
+<img src="../../assets/images/solr/Query-Optimization-01.png" style="width:50%;"/> <!-- {"left" : 1.02, "top" : 4.67, "height" : 1.79, "width" : 8.21} -->
 
 
 Notes:
@@ -608,6 +620,7 @@ Notes:
 
 
 ---
+
 ## More general optimization
 
 
@@ -693,7 +706,7 @@ Notes:
 
  * For this, it no longer suffices to store only
 
- *    < *term* :  *docs* > entries
+ *    < *term*:  *docs* > entries
 
 
 Notes: 
@@ -767,9 +780,9 @@ Notes:
 
      - < **term**  `*,*` number of docs containing  **term** ;
 
-     -  *doc1* : position1, position2 … ;
+     -  *doc1*: position1, position2 ... ;
 
-     -  *doc2* : position1, position2 … ;
+     -  *doc2*: position1, position2 ... ;
 
      - etc.>
 
@@ -790,8 +803,9 @@ Notes:
     4 : 17, 191, 291, 430, 434;
     5 : 363, 367, …>
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 1.93, "width" : 4.81} -->
+<!-- {"left" : 0, "top" : 1.7, "height" : 2.2, "width" : 5.49} -->
 
+<br/>
 
  * For phrase queries, we use a merge algorithm recursively at the document level
 
@@ -813,9 +827,9 @@ Notes:
 
  * Merge their  *doc:position*  lists to enumerate all positions with “ **to be or not to be** ”.
 
-    -  **to** :   *2* :1,17,74,222,551;  **4:8,16,190,429,433;**  *7* :13,23,191; ...
+    -  **to:**  *2* :1,17,74,222,551;  **4:8,16,190,429,433;**  *7* :13,23,191; ...
 
-    -  **be**  :  *1* :17,19;  **4:17,191,291,430,434;**  *5* :14,19,101; ...
+    -  **be:**  *1* :17,19; **4:17,191,291,430,434;**  *5* :14,19,101; ...
 
  * Same general method for proximity searches
 
@@ -849,7 +863,7 @@ Notes:
 ## Positional index size
 
 
- * A positional index expands postings storage  *substantially* 
+ * A positional index expands postings storage *substantially* 
 
      - Even though indices can be compressed
 
@@ -939,6 +953,7 @@ Notes:
 
 ---
 # IR Metrics
+---
 
 ## How to Measure Search?
  * How fast does it index
@@ -952,20 +967,23 @@ Notes:
    - Speed on complex queries
  * Uncluttered UI
  * Free?
+---
 
 ## Measurability
  * All these are *measurable*: we can *quantify* terms like speed or size.
- * What is the real measure?  **User Happiness**
+ * What is the real measure? **User Happiness**
    - What is this?
    - Speed is importnat
  * How can we *quantify* how **User Happieness**
+
+---
 
 ## IR Metric Types
 
   * Online: Data we gather from the system:
     - Usually from log files
     - Data mining
-  * Offline: Data we obtain by judging::
+  * Offline: Data we obtain by judging:
     - Supervised Training Examples:
       -  This input should yield this result
     - After the fact judging:
@@ -1033,7 +1051,8 @@ SERP = Search Engine Results Page
     - In short, how much junk do I get?
   * More precisely, fraction of documents judge *relevant* to user's need.
 
-![](../images/precision-definition.png) <!-- {"left" : 1.68, "top" : 2.92, "height" : 0.84, "width" : 6.89} -->
+
+<img src="../../assets/images/solr/3rd-party/precision-definition.png" style="width:50%;"/>  <!-- {"left" : 2.07, "top" : 3.11, "height" : 0.84, "width" : 6.89} -->
 
 
   * For example, let's say I search for *"curry"* and I am delivered 10 results.
@@ -1065,10 +1084,9 @@ SERP = Search Engine Results Page
     - In short, did any "good stuff" get left out?
     - What was left on the table?
 
-![](../images/recall-definition.png) <!-- {"left" : 3.34, "top" : 2.68, "height" : 0.82, "width" : 6.09} -->
+<img src="../../assets/images/solr/3rd-party/recall-definition.png" style="width:40%;"/>  <!-- {"left" : 3.8, "top" : 2.81, "height" : 0.85, "width" : 6.33} -->
 
-
-  * aka *Sensitivity* :  Probability a relevant document is returned by the query.
+  * aka *Sensitivity:*  Probability a relevant document is returned by the query.
   * Trivial Solution: Return *all* documents
     - But that would have precision very low
   * Example, say my search engine indexes 100 pages. 20 of them are relevant. 
@@ -1096,13 +1114,12 @@ Notes:
 
 ---
    
-
 ## Fallout
 
  * The proportion of *non-relevant* documents retrieved, out of all non-relevant documents
 
-![](../images/fallout-definition.png) <!-- {"left" : 2.19, "top" : 1.94, "height" : 0.88, "width" : 6.64} -->
 
+<img src="../../assets/images/solr/3rd-party/fallout-definition.png" style="width:40%;"/>  <!-- {"left" : 1.24, "top" : 2.12, "height" : 1.03, "width" : 7.76} -->
 
  * Probability that a non-relevant document is returned by the query.
  * Related to *specificity* -- it is (1-specificity)
@@ -1116,8 +1133,7 @@ Notes:
  * F-Score is a weighted harmonic mean of precision and recall.
  * The most common is F1, where precision and recall are balanced.
 
-![](../images/f1-definition.png) <!-- {"left" : 5.22, "top" : 2.1, "height" : 1.18, "width" : 4.22} -->
-
+<img src="../../assets/images/solr/3rd-party/f1-definition.png" style="width:30%;"/> <!-- {"left" : 6.73, "top" : 1.97, "height" : 0.96, "width" : 3.41} -->
 
  * F-Score takes into account *both* precision and recall
  * Precision / Recall are in tension
@@ -1130,6 +1146,7 @@ Notes:
 ---
 
 ## Average Precision at K
+
  * We usually have a ranked list of results. 
  * We can calculate Precision and Recall at K
  * For example:
@@ -1144,11 +1161,12 @@ Notes:
 ---
 
 ## Precision Recall Curve
- * We can plot the curve for precision versus recall for all of our first N search results 
+
+ * We can plot the curve for precision versus recall for all of our first N search results. 
  * The plotted points will have a precision recall curve.
 
-![](../images/precision-recall-curve.png) <!-- {"left" : 2.67, "top" : 2.8, "height" : 3.76, "width" : 4.9} -->
 
+<img src="../../assets/images/solr/3rd-party/precision-recall-curve.png" style="width:40%;"/> <!-- {"left" : 2.16, "top" : 2.93, "height" : 4.54, "width" : 5.92} -->
 
 
 ---
@@ -1159,8 +1177,10 @@ Notes:
  * We can measure the AUC as a metric. (Higher the better!)
  * The way we define this is as follows:
 
-![](../images/avep-definition.png) <!-- {"left" : 0.77, "top" : 3.3, "height" : 0.89, "width" : 2.67} -->
 
+<img src="../../assets/images/solr/3rd-party/avep-definition.png" style="width:30%;"/> <!-- {"left" : 2.51, "top" : 3.66, "height" : 1.74, "width" : 5.23} -->
+
+---
 
 ## Lab: Precision And Recall Of Search Engines
 
@@ -1177,6 +1197,7 @@ Notes:
 ---
 
 # About Solr
+---
 
 ## What Is Solr
 
@@ -1188,15 +1209,17 @@ Notes:
 * Extensible
 
 ---
+
 ## What Is Solr, contd
+
+<img src="../../assets/images/solr/3rd-party/Whats-Solr.png" style="width:40%;float:right;"/> <!-- {"left" : 5.37, "top" : 1.13, "height" : 3.31, "width" : 4.65} -->
+
 * Ready to deploy
 * Optimized for search
 * Large volumes of documents
 * Text-Centric
 * Results sorted by relevance
 
-
-![](../images/Whats-Solr.png) <!-- {"left" : 4.41, "top" : 3.41, "height" : 3.92, "width" : 5.5} -->
 
 Notes:
 
@@ -1205,20 +1228,23 @@ Notes:
 
 ## Overview of Solr
 
-![](../images/solr-api-service.png) <!-- {"left" : 1.83, "top" : 1.22, "height" : 5.52, "width" : 6.59} -->
+<img src="../../assets/images/solr/solr-api-service.png" style="width:50%;"/> <!-- {"left" : 1.55, "top" : 1.83, "height" : 5.99, "width" : 7.15} -->
 
-
+---
 
 ## What Data Is Handled By Solr?
+
 * Text-Centric
 * Read-dominant
 * Document-oriented
 * Flexible schema
 
+---
+
 ## Example Search Application
 
 
-![](../images/search-application.png) <!-- {"left" : 0.66, "top" : 0.95, "height" : 6.17, "width" : 8.74} -->
+<img src="../../assets/images/solr/3rd-party/search-application.png" style="width:50%;"/> <!-- {"left" : 0.75, "top" : 1.45, "height" : 6.17, "width" : 8.74} -->
 
 
 Notes:
@@ -1241,19 +1267,17 @@ Notes:
 
 ## Brief History 
 
+<img src="../../assets/images/solr/3rd-party/history1.png" style="width:14%;float:right;"/> <!-- {"left" : 8.03, "top" : 1.22, "height" : 2.34, "width" : 1.98} -->
+
   * Lucene written by Doug Cutting in 1999
   * Replaces commercial search engines, such as Inktomi ($10K/year => $0)
   * Solr written by Yonik Seeley for CNET and contributed to Apache in 2006
   * LucidWorks – 2009
   * ElasticSearch – 2010
 
-![](../images/history1.png) <!-- {"left" : 7.47, "top" : 2.83, "height" : 2.34, "width" : 1.98} -->
+<img src="../../assets/images/solr/3rd-party/history2.png" style="width:16%;float:right;"/> <!-- {"left" : 7.97, "top" : 4.1, "height" : 2.09, "width" : 2.09} --> &nbsp;&nbsp; <img src="../../assets/images/solr/3rd-party/history3.png" style="width:24%;"/> &nbsp; &nbsp;<!-- {"left" : 0.33, "top" : 5.78, "height" : 2.79, "width" : 4.2} --> <img src="../../assets/images/solr/3rd-party/history4.png" style="width:27%;"/><!-- {"left" : 4.8, "top" : 6.43, "height" : 2.09, "width" : 2.79} -->
 
-![](../images/history2.png) <!-- {"left" : 7.54, "top" : 5.35, "height" : 1.9, "width" : 1.9} -->
 
-![](../images/history3.png) <!-- {"left" : 4.71, "top" : 4.17, "height" : 1.54, "width" : 2.06} -->
-
-![](../images/history4.png) <!-- {"left" : 0.67, "top" : 4.39, "height" : 2.33, "width" : 3.5} -->
 
 
 Notes:
@@ -1292,8 +1316,7 @@ Notes:
 ## Solr Major Features
 
 
-![](../images/Solr-major-features.png) <!-- {"left" : 1.34, "top" : 1.21, "height" : 5.62, "width" : 7.58} -->
-
+<img src="../../assets/images/solr/3rd-party/Solr-major-features.png" style="width:50%;"/><!-- {"left" : 1.05, "top" : 1.52, "height" : 6.04, "width" : 8.14} -->
 
 Notes:
 
@@ -1302,8 +1325,8 @@ Notes:
 
 ## Solr Major Features, contd
 
-![](../images/Solr-major-features-01.png) <!-- {"left" : 1.58, "top" : 0.94, "height" : 6.38, "width" : 7.09} -->
 
+<img src="../../assets/images/solr/Solr-major-features-01.png" style="width:40%;"/><!-- {"left" : 1.58, "top" : 1.63, "height" : 6.38, "width" : 7.09} -->
 
 
 Notes:
@@ -1386,10 +1409,5 @@ Notes:
 
 
 Notes:
-
-
----
-
-
 
 

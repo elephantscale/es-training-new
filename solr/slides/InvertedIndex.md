@@ -1,5 +1,5 @@
-Inverted Index
-===================
+# Inverted Index
+---
 
 ## Inverted Index
 
@@ -7,14 +7,15 @@ Inverted Index
   * For each term “t” we must store a list of all documents that contain “t”.
   * Identify each document by its id.
 
+<img src="../../assets/images/solr/3rd-party/Inverted-Index-01.png" style="width:40%;"/> <!-- {"left" : 2.82, "top" : 3.51, "height" : 4.14, "width" : 4.6} -->
 
-![](../images/Inverted-Index-01.png) <!-- {"left" : 5.42, "top" : 3.01, "height" : 4.14, "width" : 4.6} -->
 
 Notes:
 
 
 
 ---
+
 ## Inverted Index
 
   * For each term -t- , we must store a list of all documents that contain t .
@@ -22,14 +23,15 @@ Notes:
   * Can we used fixed-size arrays for this?
   * What happens if the word **Caesar** is added to document 14?
 
-![](../images/Inverted-Index-02.png) <!-- {"left" : 1.02, "top" : 4.75, "height" : 1.96, "width" : 8.21} -->
 
+<img src="../../assets/images/solr/Inverted-Index-02.png" style="width:60%;"/> <!-- {"left" : 1.02, "top" : 4.75, "height" : 1.96, "width" : 8.21} -->
 
 Notes:
 
 
 
 ---
+
 ## Inverted index
 
   * We need variable-size postings lists
@@ -37,8 +39,7 @@ Notes:
     - In memory, can use linked lists or variable length arrays
       - Some tradeoffs in size/ease of insertion
 
-![](../images/Inverted-Index-03.png) <!-- {"left" : 1.9, "top" : 4.81, "height" : 1.54, "width" : 6.46} -->
-
+<img src="../../assets/images/solr/Inverted-Index-03.png" style="width:60%;"/><!-- {"left" : 1.3, "top" : 4.81, "height" : 1.82, "width" : 7.64} -->
 
 
   * Sorted by docID (more later on why).
@@ -48,15 +49,17 @@ Notes:
 
 
 ---
+
 ## Inverted Index construction
 
-![](../images/Inverted-Index-construction.png) <!-- {"left" : 0.7, "top" : 1.15, "height" : 5.66, "width" : 8.85} -->
+<img src="../../assets/images/solr/Inverted-Index-construction.png" style="width:60%;"/><!-- {"left" : 0.7, "top" : 1.99, "height" : 5.66, "width" : 8.85} -->
 
 Notes:
 
 
 
 ---
+
 ## Initial stages of text processing
 
   * Tokenization
@@ -78,56 +81,65 @@ Notes:
 
 
 ---
+
 ## Indexer steps: Token sequence
 
   *  Sequence of (Modified token, Document ID) pairs.
 
-![](../images/Token-sequence.png) <!-- {"left" : 1.02, "top" : 1.79, "height" : 4.38, "width" : 8.21} -->
+
+<img src="../../assets/images/solr/3rd-party/Token-sequence.png" style="width:60%;"/><!-- {"left" : 0.62, "top" : 2.13, "height" : 4.81, "width" : 9.01} -->
 
 Notes:
 
 
 
 ---
+
 ## Indexer steps: Sort
+
+<img src="../../assets/images/solr/3rd-party/Sort.png" style="width:30%;float:right;"/><!-- {"left" : 5.29, "top" : 1.24, "height" : 6.58, "width" : 4.71} -->
 
   * Sort by terms
     - And then docID
   * **Core indexing step**
 
-![](../images/Sort.png) <!-- {"left" : 5.41, "top" : 1.01, "height" : 5.96, "width" : 4.27} -->
 
 Notes:
 
 
 
 ---
+
 ## Indexer steps: Dictionary & Postings
+
+<img src="../../assets/images/solr/3rd-party/Dictionary-Postings.png" style="width:25%;float:right"/><!-- {"left" : 6.4, "top" : 1.3, "height" : 6.46, "width" : 3.54} -->
 
   * Multiple term entries in a single document are merged.
   * Split into Dictionary and Postings
   * Doc. frequency information is added.
 
-![](../images/Dictionary-Postings.png) <!-- {"left" : 6.97, "top" : 1.82, "height" : 5.16, "width" : 2.83} -->
 
 Notes:
 
 
 
 ---
+
 ## Where do we pay in storage?
+
+<img src="../../assets/images/solr/3rd-party/storage.png" style="width:25%;float:right;"/><!-- {"left" : 6.22, "top" : 1.31, "height" : 6.62, "width" : 3.63} -->
 
   * IR system implementation
     - How do we index efficiently?
     - How much storage do we need?
 
-![](../images/storage.png) <!-- {"left" : 6.99, "top" : 1.47, "height" : 5.03, "width" : 2.76} -->
 
 Notes:
 
 
 
 ---
+
 ## The index we just built
 
   * How do we process a query?
@@ -140,6 +152,7 @@ Notes:
 
 
 ---
+
 ## Query processing: AND
 
   * Consider processing the query:
@@ -160,6 +173,7 @@ Notes:
 
 
 ---
+
 ## The merge
 
   * Walk through the two postings simultaneously, in time linear in the total number of postings entries
@@ -172,11 +186,13 @@ Notes:
 
 
 ---
+
 ## Intersecting two postings lists
 
   * (a “merge” algorithm)
 
-![](../images/Intersecting-two-postings-lists.png) <!-- {"left" : 1.55, "top" : 1.45, "height" : 5.91, "width" : 7.92} -->
+
+<img src="../../assets/images/solr/3rd-party/Intersecting-two-postings-lists.png" style="width:50%;float:left;"/><!-- {"left" : 0.26, "top" : 2.07, "height" : 4.92, "width" : 6.6} -->
 
 
 Notes:
@@ -184,6 +200,7 @@ Notes:
 
 
 ---
+
 ## Boolean queries: Exact match
 
   * The Boolean retrieval model is being able to ask a query that is a Boolean expression:
@@ -200,6 +217,7 @@ Notes:
 
 
 ---
+
 ## Example: WestLaw   http://www.westlaw.com/
 
   * Largest commercial (paying subscribers) legal search service (started 1975; ranking added 1992)
@@ -216,7 +234,8 @@ Notes:
 
 
 ---
-## Example: WestLaw   http://www.westlaw.com/
+
+## Example: WestLaw  http://www.westlaw.com/
 
   * Another example query:
     - Requirements for disabled people to be able to access a workplace
@@ -232,6 +251,7 @@ Notes:
 
 
 ---
+
 ## Boolean queries:
 
  * More general merges
@@ -239,13 +259,14 @@ Notes:
  * Exercise: Adapt the merge for the queries:
  * **Brutus** *AND NOT* **Caesar**
  * **Brutus** *OR NOT* **Caesar**
- * Can we still run through the merge in time O( x+y )?   What can we achieve?
+ * Can we still run through the merge in time O( x+y )? What can we achieve?
 
 Notes:
 
 
 
 ---
+
 ## Merging
 
   * What about an arbitrary Boolean formula?
@@ -261,16 +282,17 @@ Notes:
 
 
 ---
+
 ## Query optimization
 
   * What is the best order for query processing?
   * Consider a query that is an AND of n terms.
   * For each of the n terms, get its postings, then AND them together.
 
-  * Query: Brutus  AND  Calpurnia  AND  Caesar
+  * Query: Brutus AND Calpurnia  AND Caesar
 
 
-![](../images/Query-optimization.png) <!-- {"left" : 1.02, "top" : 4.82, "height" : 1.79, "width" : 8.21} -->
+<img src="../../assets/images/solr/Query-optimization.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 4.82, "height" : 1.79, "width" : 8.21} -->
 
 
 Notes:
@@ -278,18 +300,15 @@ Notes:
 
 
 ---
+
 ## Query Optimization Example
 
   * Process in order of increasing freq:
-  * start with smallest set, then keep ** cutting further .
+  * start with smallest set, then keep cutting further.
   * This is why we kept document freq. in dictionary
+  * Execute the query as ( **Calpurnia** *AND* **Brutus**) *AND* **Caesar.**
 
-
-  * Execute the query as ( **Calpurnia** *AND* **Brutus**) *AND* **Caesar** .
-
-
-![](../images/Query-Optimization-01.png) <!-- {"left" : 1.02, "top" : 4.67, "height" : 1.79, "width" : 8.21} -->
-
+<img src="../../assets/images/solr/Query-Optimization-01.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 4.67, "height" : 1.79, "width" : 8.21} -->
 
 
 Notes:
@@ -297,6 +316,7 @@ Notes:
 
 
 ---
+
 ## More general optimization
 
 
@@ -382,7 +402,7 @@ Notes:
 
  * For this, it no longer suffices to store only
 
- *    < *term* :  *docs* > entries
+ *    < *term*:  *docs* > entries
 
 
 Notes: 
@@ -456,9 +476,9 @@ Notes:
 
      - < **term**  `*,*` number of docs containing  **term** ;
 
-     -  *doc1* : position1, position2 … ;
+     -  *doc1*: position1, position2 ... ;
 
-     -  *doc2* : position1, position2 … ;
+     -  *doc2*: position1, position2 ... ;
 
      - etc.>
 
@@ -477,10 +497,11 @@ Notes:
     1 : 7, 18, 33, 72, 86, 231;
     2 : 3, 149;
     4 : 17, 191, 291, 430, 434;
-    5 : 363, 367, …>
+    5 : 363, 367, ...>
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 1.93, "width" : 4.81} -->
+<!-- {"left" : 0, "top" : 1.8, "height" : 2.05, "width" : 5.11} -->
 
+<br/>
 
  * For phrase queries, we use a merge algorithm recursively at the document level
 
@@ -498,13 +519,13 @@ Notes:
 ## Processing a phrase query
 
 
- * Extract inverted index entries for each distinct term:  **to, be, or, not.** 
+ * Extract inverted index entries for each distinct term: **to, be, or, not.** 
 
- * Merge their  *doc:position*  lists to enumerate all positions with “ **to be or not to be** ”.
+ * Merge their *doc:position* lists to enumerate all positions with “ **to be or not to be** ”.
 
-    -  **to** :   *2* :1,17,74,222,551;  **4:8,16,190,429,433;**  *7* :13,23,191; ...
+    -  **to:** *2* :1,17,74,222,551; **4:8,16,190,429,433;** *7* :13,23,191; ...
 
-    -  **be**  :  *1* :17,19;  **4:17,191,291,430,434;**  *5* :14,19,101; ...
+    -  **be:** *1* :17,19;  **4:17,191,291,430,434;** *5* :14,19,101; ...
 
  * Same general method for proximity searches
 
@@ -626,4 +647,3 @@ Notes:
 Notes:
 
 
----

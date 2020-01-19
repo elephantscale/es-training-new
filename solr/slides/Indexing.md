@@ -1,5 +1,5 @@
-Solr: Indexing
-===================
+ # Solr: Indexing
+---
 
 ## Section Objectives
 
@@ -14,6 +14,8 @@ Notes:
 ---
 
 # Adding Your Own Contents To Solr
+
+---
 
 ## Solr Import Options
 
@@ -45,6 +47,7 @@ Notes:
 * Instructions: solr-labs/indexing/2-tweets.md
 
 
+---
 
 ## Solr Request Handlers
 
@@ -84,6 +87,8 @@ Notes:
 ---
 
 # Building a bookstore search
+---
+
 ## Bookstore example
 
   * Using provided books.xml data
@@ -111,6 +116,8 @@ Notes:
 ---
 
 # De-duplication
+
+---
 
 ## De-duplication
 
@@ -169,7 +176,6 @@ Notes:
 Notes:
 
 
----
 
 
 

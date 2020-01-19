@@ -1,5 +1,6 @@
-Developing With Lucene API
-===================
+# Developing With Lucene API
+---
+
 ## Section Objectives
 
 * Learn about Lucene
@@ -12,6 +13,8 @@ Notes:
 ---
 
 # About Lucene 
+
+---
 
 ## Open source IR systems
 
@@ -51,6 +54,7 @@ Notes:
 
 
 ---
+
 ## Resources
 
 
@@ -82,15 +86,19 @@ Notes:
 Notes: 
 
 
+---
 
 # Lucene Index
+---
 
 ## Let's Create An Index
+
 * Tree Structure
   - Sorted for range queries
   - O(log(n)) search
 
-![](../images/index.png) <!-- {"left" : 1.3, "top" : 2.52, "height" : 2.46, "width" : 7.65} -->
+<img src="../../assets/images/solr/index.png" style="width:65%;"/> <!-- {"left" : 0.76, "top" : 2.63, "height" : 2.81, "width" : 8.73} -->
+
 
 * But Lucene does not index this way
 
@@ -99,22 +107,23 @@ Notes:
 ---
 
 ## A New Index
+
 * Terms and documents are stored in arrays
 
-![](../images/NewIndex.png) <!-- {"left" : 0.45, "top" : 2.25, "height" : 3.47, "width" : 9.34} -->
-
+<img src="../../assets/images/solr/NewIndex.png" style="width:70%;"/> <!-- {"left" : 0.45, "top" : 2.36, "height" : 3.47, "width" : 9.34} -->
 
 Notes:
 
 ---
 
 ## Insertions
+
 * Means writing a new segment
 * In case of too many segments, merge them
 * Merging: concatenate docs, merge terms dictionaries and postings lists (merge sort)
 
-![](../images/insertion.png) <!-- {"left" : 0.15, "top" : 3.35, "height" : 3.62, "width" : 9.95} -->
 
+<img src="../../assets/images/solr/insertion.png" style="width:65%;"/> <!-- {"left" : 0.15, "top" : 3.35, "height" : 3.62, "width" : 9.95} -->
 
 Notes:
 
@@ -122,19 +131,19 @@ Notes:
 
 ## Insertion, contd
 
-![](../images/insertion2.png) <!-- {"left" : 0.32, "top" : 2.22, "height" : 3.52, "width" : 9.61} -->
 
-
+<img src="../../assets/images/solr/insertion2.png" style="width:70%;"/> <!-- {"left" : 0.32, "top" : 2.22, "height" : 3.52, "width" : 9.61} -->
 Notes:
 
 ---
 
 ## Deletion
+
 * Means a bit off
 * Ignore deleted documents when searching and merging 
 * Merge policies favor segments with many deletions
 
-![](../images/deletion.png) <!-- {"left" : 0.18, "top" : 3.32, "height" : 2.61, "width" : 9.89} -->
+<img src="../../assets/images/solr/3rd-party/deletion.png" style="width:70%;"/> <!-- {"left" : 0.18, "top" : 3.32, "height" : 2.61, "width" : 9.89} -->
 
 
 Notes:
@@ -142,6 +151,7 @@ Notes:
 ---
 
 ## Pros And Cons
+
 * Pros:
   - Segments never modified
     - Properly used cache by file system
@@ -158,6 +168,7 @@ Notes:
 ---
 
 ## Pros and Cons (contd)
+
 * Cons:
   - When updating, a new segment is written
     - Better to update in bulk not single
@@ -179,6 +190,8 @@ IOException{
   w.addDocument(doc);
 }
 ```
+<!-- {"left" : 0, "top" : 1.84, "height" : 1.8, "width" : 10.25} -->
+
 
 
 
@@ -220,7 +233,7 @@ public Indexer(String dir) throws IOException {
   writer = new IndexWriter (indexDir, cfg)
 }
 ```
-<!-- {"left" : 0, "top" : 0.94, "height" : 3.9, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.44, "height" : 3.9, "width" : 10.25} -->
 
 Notes: 
 
@@ -234,7 +247,7 @@ Notes:
  * `Document`
      - Represents a collection of named Fields.  Text in these Fields are indexed.
  * Field
-     - Note: Lucene Fields can represent both “fields” and “zones” as described in the textbook
+     - Note : Lucene Fields can represent both “fields” and “zones” as described in the textbook
      - Or even other things like numbers.
      - `StringFields` are indexed but not tokenized
      - `TextFields` are indexed and tokenized
@@ -263,7 +276,7 @@ protected Document getDocument(File f) throws Exception {
   return doc;
 }
 ```
-<!-- {"left" : 0, "top" : 0.97, "height" : 3.84, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.44, "height" : 3.84, "width" : 10.25} -->
 
 
 Notes: 
@@ -283,6 +296,7 @@ Notes:
   	writer.addDocument (doc);
   }
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 2.6, "width" : 8.15} -->
 
 Notes: 
 
@@ -308,6 +322,7 @@ public int index(String dataDir,
   	return writer. numDocs ();
 }
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 4.73, "width" : 10.25} -->
 
 Notes: 
 
@@ -324,6 +339,7 @@ public void close() throws IOException {
   writer.close ();
 }
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 2.06, "width" : 8.85} -->
 
 Notes: 
 
@@ -355,17 +371,21 @@ Notes:
 ---
 
 # Searching, Viewing and Debugging
+---
 
-# Reading Query
+## Reading Query
 
 ```java
 String qstr = args.length > 0 ?args[0]:"lucene";
 Query qry = new
 QueryParser(Version.LUCENE_40,"title",analyzer)/parse(qstr);
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 1.1, "width" : 10.25} -->
+
 Notes:
 
 ---
+
 ## Searching
 
 * You can create a searcher to search the index by query
@@ -381,9 +401,12 @@ TopScoreDocCollector cltr = TopScoreDocCollector.create(hitsPerPage,true);
 srchr.search(q,collector);
 ScoreDoc[] hits = cltr.topDocs().scoreDocs
 ```
+<!-- {"left" : 0, "top" : 2.74, "height" : 1.59, "width" : 10.25} -->
+
 Notes:
 
 ---
+
 ## Providing View For Users 
 
 * Now it's time to display results to the user
@@ -398,7 +421,6 @@ for (int i = 0; i < hits.lengh;++i){
 <!-- {"left" : 0, "top" : 1.74, "height" : 1.62, "width" : 10.25} -->
 
 ---
-
 
 ## Core searching classes
 
@@ -448,6 +470,7 @@ public static void search(String indexDir, String q)
   	...
   }
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 3.41, "width" : 10.25} -->
 
 Notes: 
 
@@ -473,7 +496,7 @@ Query query = parser.parse (q);
 ... 
 }
 ```
-<!-- {"left" : 0, "top" : 1.18, "height" : 3.41, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.44, "height" : 3.41, "width" : 10.25} -->
 
 Notes: 
 
@@ -510,6 +533,7 @@ Notes:
   	 TopDocs  hits = is. search (query, 10);
   }
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 4.25, "width" : 10.25} -->
 
 Notes: 
 
@@ -535,6 +559,8 @@ Notes:
   	}
   }
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 4.57, "width" : 10.25} -->
+
 Notes: 
 
 
@@ -553,6 +579,8 @@ Notes:
   	is.close ();
   }
 ```
+<!-- {"left" : 0, "top" : 1.44, "height" : 2.94, "width" : 10.25} -->
+
 Notes: 
 
 
@@ -584,23 +612,14 @@ Notes:
 
 ## Fields
 
-
  * Fields may
-
      - Be indexed or not
-
         * Indexed fields may or may not be analyzed (i.e., tokenized with an Analyzer)
-
           * Non-analyzed fields view the entire value as a single token (useful for URLs, paths, dates, social security numbers, ...)
-
      - Be stored or not
-
         * Useful for fields that you’d like to display to users
-
      - Optionally store term vectors
-
         * Like a positional index on the Field’s terms
-
         * Useful for highlighting, finding similar documents, categorization
 
 Notes: 
@@ -610,8 +629,8 @@ Notes:
 ---
 
 ## Field construction
-Lots of different constructors
 
+ * Lots of different constructors
 
  * Field constructionLots of different constructors
 
@@ -624,6 +643,9 @@ Field(String name,
 	 String value,
      FieldType type);
 ```
+<!-- {"left" : 0, "top" : 2.24, "height" : 2.61, "width" : 8.96} -->
+
+---
 
 ## Field construction
 
@@ -649,6 +671,8 @@ Notes:
 | `NO`           | Yes   | NO                       | Document Type           |
 | `NOT_ANALYZED` | No    | NO                       | Hidden Keywords         |
 
+<!-- {"left" : 0.25, "top" : 1.47, "height" : 3.53, "width" : 9.75} -->
+
 Notes: 
 
 
@@ -670,6 +694,7 @@ doc. add (new  TextField (“author”,
 					     “prabhakar raghavan”));
 ...
 ```
+<!-- {"left" : 0, "top" : 2.66, "height" : 2.19, "width" : 9.48} -->
 
 Notes: 
 
@@ -792,6 +817,7 @@ Notes:
 void deleteDocuments(Term... terms);
 void deleteDocuments(Query... queries);   
 ```
+<!-- {"left" : 0, "top" : 3.44, "height" : 2.19, "width" : 10.25} -->
 
 Notes: 
 
@@ -836,6 +862,9 @@ Directory dir = FSDirectory.open(...);
 DirectoryReader reader = DirectoryReader.open(dir);
 IndexSearcher searcher = new IndexSearcher(reader);
 ```
+<!-- {"left" : 0, "top" : 1.24, "height" : 1.27, "width" : 10.25} -->
+
+<br/>
 
  * Above reader does not reflect changes to the index unless you reopen it.
 
@@ -876,7 +905,7 @@ if (newReader != null) {
   searcher = new IndexSearcher(reader);
 }
 ```
-<!-- {"left" : 0, "top" : 0.99, "height" : 3.53, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 1.44, "height" : 3.53, "width" : 10.25} -->
 
 Notes: 
 
@@ -915,6 +944,7 @@ Notes:
 | `java~`                                   | Fuzzy Matches                                                     |
 | `lastmodified:[1/1/19 TO 12/31/19]`       | Range Matches                                                     |
 
+<!-- {"left" : 0.25, "top" : 1.51, "height" : 6.05, "width" : 9.75} -->
 
 Notes: 
 
@@ -1020,6 +1050,7 @@ BM25Similarity custom =
   new BM25Similarity(1.2, 0.75); // k1, b
 indexSearcher.setSimilarity(custom);
 ```
+<!-- {"left" : 0, "top" : 3.18, "height" : 1.98, "width" : 8.66} -->
 
 Notes: 
 
@@ -1028,8 +1059,10 @@ Notes:
 ---
 
 # Tika
+---
 
 ## The Main Problem
+
 * Many documents are not in plain text
   - Audio
   - Video
@@ -1037,19 +1070,24 @@ Notes:
   - Picture
   and many more...
 
-![](../images/extr_challenge.png) <!-- {"left" : 1.65, "top" : 3.33, "height" : 4.03, "width" : 6.96} -->
+
+<img src="../../assets/images/solr/extr_challenge.png" style="width:55%;"/><!-- {"left" : 1.65, "top" : 3.89, "height" : 4.03, "width" : 6.96} -->
 
 Notes:
 
 ---
 
 ## Other Problems
+
 * License
 * Dependencies
 * Efforts breaking up
 * Custom solution limits
 
+---
+
 ## Tika Design
+
 * Parser interface
 * Document input stream
 * XHTML SAX events
@@ -1066,9 +1104,10 @@ void parse(InputStream stream, ContentHandler handler,
 Metadata metadata) throws IOException, 
 SAXException, TikaException;
 ```
-<!-- {"left" : 0, "top" : 0.9, "height" : 0.96, "width" : 9.75} -->
+<!-- {"left" : 0, "top" : 1.44, "height" : 1.01, "width" : 10.25} -->
 
-![](../images/parser.png) <!-- {"left" : 0.71, "top" : 2, "height" : 5.11, "width" : 8.39} -->
+
+<img src="../../assets/images/solr/parser.png" style="width:50%;"/><!-- {"left" : 1.01, "top" : 3.19, "height" : 4.71, "width" : 7.73} -->
 
 Notes:
 
@@ -1076,7 +1115,7 @@ Notes:
 
 ## Document input stream
 
-![](../images/in_stream.png) <!-- {"left" : 1.02, "top" : 1.46, "height" : 5.05, "width" : 8.21} -->
+<img src="../../assets/images/solr/in_stream.png" style="width:65%;"/><!-- {"left" : 1.02, "top" : 2.01, "height" : 5.05, "width" : 8.21} -->
 
 
 Notes:
@@ -1093,9 +1132,9 @@ Notes:
   <body>...</body>
 </html>
 ```
+<!-- {"left" : 1.02, "top" : 1.38, "height" : 2.03, "width" : 7.94} -->
 
-![](../images/sax.png)  <!-- {"left" : 0.7, "top" : 3.24, "height" : 3.72, "width" : 8.84} -->
-
+<img src="../../assets/images/solr/sax.png" style="width:65%;"/><!-- {"left" : 0.7, "top" : 4.26, "height" : 3.72, "width" : 8.84} -->
 
 Notes:
 
@@ -1123,6 +1162,8 @@ Notes:
   - PDFParser
   - OfficeParser
 
+---
+
 ## parser Implementation
 
 * AutoDetectParser:
@@ -1139,9 +1180,13 @@ Notes:
 
 Notes:
 
+---
 
 # Lucene Performance Tuning
+---
+
 ## Best practices
+
 * Run a Java profiler; `System.nanoTime`
 * Run your JVM with the `-server` switch
 * Upgrade to the latest release of `Lucene`
@@ -1176,6 +1221,7 @@ Notes:
 ---
 
 ## Metrics
+
 * You have to understand which metric you need to improve
   - Index-to-search delay
   - Indexing throughput
@@ -1205,7 +1251,8 @@ Notes:
 
 ## indexing throughput on Wikipedia
 
-![](../images/wikipedia.png) <!-- {"left" : 3.54, "top" : 0.9, "height" : 6.4, "width" : 3.1} -->
+
+<img src="../../assets/images/solr/wikipedia.png" style="width:24%;"/> <!-- {"left" : 3.54, "top" : 1.62, "height" : 6.4, "width" : 3.1} -->
 
 Notes:
 
@@ -1273,6 +1320,8 @@ Notes:
 * Index into separate indices
 * Test the speed of creating the documents and just tokenizing them by using the `ReadTokens` task in your algorithm
 
+---
+
 ## Search latency and throughput
 
 * Use enough threads to fully utilize your computer's concurrency
@@ -1314,11 +1363,13 @@ Notes:
 
 ## Threads & concurrency
 
+<img src="../../assets/images/solr/thread.png" style="width:30%;float:right;"/> <!-- {"left" : 6.59, "top" : 1.24, "height" : 5.35, "width" : 3.5} -->
+
 * Using threads for searching
 * Using threads for indexing
   - A simple utility class that extends `IndexWriter` and uses `java.util.concurrent`
 
-![](../images/thread.png) <!-- {"left" : 3.21, "top" : 2.75, "height" : 4.67, "width" : 3.05} -->
+
 
 Notes:
 
@@ -1359,7 +1410,15 @@ Notes:
 ## Repairing an index
 
 * Final resort is `CheckIndex` tool
+
 ```java
 java org.apache.lucene.index.CheckIndex <pathToIndex> -fix
 ```
+<!-- {"left" : 0, "top" : 1.53, "height" : 0.53, "width" : 9.74} -->
 * Forcefully removes those segments that hit problems
+
+
+
+
+
+

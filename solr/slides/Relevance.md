@@ -1,5 +1,5 @@
-Solr: Relevance
-===================
+# Solr: Relevance
+---
 ## Section Objectives
 
   * Know how to tune Solr to return more relevant results.
@@ -11,6 +11,8 @@ Notes:
 ---
 
 # Field weighting
+
+---
 
 ## The big picture
 
@@ -30,7 +32,7 @@ Notes:
 ## Request handlers
 
 
-![](../images/Request-handlers-01.png) <!-- {"left" : 1.45, "top" : 1.07, "height" : 5.91, "width" : 7.35} -->
+<img src="../../assets/images/solr/Request-handlers-01.png" style="width:55%;"/><!-- {"left" : 1.45, "top" : 1.58, "height" : 5.91, "width" : 7.35} -->
 
 Notes:
 
@@ -41,14 +43,13 @@ Notes:
 
   * By example, what does this mean?
 
-title:solr
-title:"apache solr" content:(search engine)
+    - title:solr
+       - title:"apache solr" content:(search engine)
 
   * Are these the same:
 
-solr
-content:solr
-(hint: “content” is default field)
+    - solr
+       - content:solr (hint: “content” is default field)
 
 Notes:
 
@@ -85,6 +86,7 @@ Notes:
 ---
 
 # Phrase queries
+---
 
 ## Phrase queries
 
@@ -173,12 +175,12 @@ Notes:
 Solr in Action
   * Using Lucene query parser
 
-(((title:solr) OR (description:solr) OR (author:solr)) AND ((title:in) OR (description:in) OR (author:in)) AND ((title:action) OR (description:action) OR (author:action)))
+    - (((title:solr) OR (description:solr) OR (author:solr)) AND ((title:in) OR (description:in) OR (author:in)) AND ((title:action) OR (description:action) OR (author:action)))
 
   * With eDisMax query parser
 
-q=solr in action&qf=title description author
-Try it on your example (hint: /select?defType=edismax)
+    - q=solr in action&qf=title description author
+      -Try it on your example (hint: /select?defType=edismax)
 
 Notes:
 
@@ -217,10 +219,7 @@ Notes:
 
 ## Field boosting at index time
 
-
-
-![](../images/Field-boosting-at-index-time.png) <!-- {"left" : 0.94, "top" : 0.92, "height" : 5.91, "width" : 8.38} -->
-
+<img src="../../assets/images/solr/3rd-party/Field-boosting-at-index-time.png" style="width:50%;float:left;"/><!-- {"left" : 0.77, "top" : 1.45, "height" : 5.91, "width" : 8.38} -->
 
 Notes:
 
@@ -279,6 +278,8 @@ Notes:
 ---
 
 # Function queries
+---
+
 ## Function queries
 
   * Use a function to provide a relevancy boost for more recent documents:
@@ -321,6 +322,8 @@ Notes:
 ---
 
 # Fuzzy search
+---
+
 ## Fuzzy searches
 
   * Wildcards 
@@ -337,14 +340,12 @@ Notes:
 ---
 
 # Sounds-like
+---
 
 ## Sounds like – spell check in solrconfig.xml 
 
-
-![](../images/ounds-lik.png) <!-- {"left" : 0.42, "top" : 1.33, "height" : 4.84, "width" : 9.41} -->
+<img src="../../assets/images/solr/3rd-party/ounds-lik.png" style="width:65%;float:left;"/><!-- {"left" : 0.42, "top" : 1.50, "height" : 4.84, "width" : 9.41} -->
 
 Notes:
 
-
----
 

@@ -1,5 +1,5 @@
-Solr – Modern development environment
-===================
+# Solr – Modern development environment
+---
 
 ## Section Objectives
 
@@ -13,6 +13,8 @@ Notes:
 ---
 
 # Agile approach
+
+---
 
 ## Agile approach
 
@@ -41,6 +43,8 @@ Notes:
 ---
 
 # Solr API
+
+---
 
 ## Lucene index
 
@@ -113,9 +117,12 @@ Notes:
 
 # Not just SOLR
 
+---
+
 ## Beyond IR – Information Extraction
 
-![](../images/Information-Extraction.png) <!-- {"left" : 0.31, "top" : 1.06, "height" : 5.92, "width" : 9.63} -->
+
+<img src="../../assets/images/solr/3rd-party/Information-Extraction.png" style="width:70%;"/> <!-- {"left" : 0.52, "top" : 1.71, "height" : 5.66, "width" : 9.2} -->
 
 Notes:
 
@@ -160,7 +167,7 @@ Notes:
   * ElasticSearch came up as “search done right”
   * For a while, ElasticSearch was moving faster
   * By now, they have evened out
-  * Note: Cloudera integrated SOLR, not ES
+  * Note : Cloudera integrated SOLR, not ES
 
 
 Notes:
@@ -208,7 +215,7 @@ Notes:
 
 ## What is Blur?
 
-  * Blur = Lucene + Hadoop (HDFS)
+  * Blur= Lucene + Hadoop (HDFS)
   * Take out SOLR!
   * Store Lucene indices in HDFS
   * Serve Lucene indices in memory
@@ -226,6 +233,8 @@ Notes:
 
 # SOLR future
 
+---
+
 ## SOLR 2016 in review
 
   * From Google Search Appliance to SOLR
@@ -242,6 +251,8 @@ Notes:
 
 ## From GSA to SOLR
 
+<img src="../../assets/images/logos/infoblox.png" style="width:25%;float:right;"/> <!-- {"left" : 6.54, "top" : 1.27, "height" : 0.99, "width" : 3.52} -->
+
   * What was good about GSA?
     - Immediate results
     - Easy to deploy
@@ -256,15 +267,14 @@ Notes:
     - Cost effective at scale
 
 
-![](../images/infoblox.png) <!-- {"left" : 6.43, "top" : 1.05, "height" : 0.99, "width" : 3.52} -->
-
-
 Notes:
 
 
 ---
 
 ## Building agency platform on SOLR
+
+<img src="../../assets/images/logos/Nasa.png" style="width:13%;float:right;"/> <!-- {"left" : 8.94, "top" : 1.01, "height" : 1.01, "width" : 1.22} -->
 
   * County of Sacramento (withdrawn?)
   * NASA
@@ -274,6 +284,9 @@ Notes:
     - Provides relevant answers from the most relevant docs
   * USPTO
     - Patent search
+
+<img src="../../assets/images/logos/memex.png" style="width:23%;float:right;"/> <!-- {"left" : 8.06, "top" : 5.24, "height" : 0.56, "width" : 2.13} -->
+
   * DARPA/Memex
     - 300 hundred researchers
     - Dozens of projects
@@ -281,10 +294,6 @@ Notes:
     - Any group can query the other group’s work
 
 
-![](../images/Nasa.png) <!-- {"left" : 8, "top" :0.9, "height" : 1.67, "width" : 2.01} -->
-
-
-![](../images/memex.png) <!-- {"left" : 4.74, "top" : 3.73, "height" : 1.42, "width" : 5.41} -->
 
 Notes:
 
@@ -293,15 +302,14 @@ Notes:
 
 ## SOLR and Spark
 
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;"/> <!-- {"left" : 7.28, "top" : 1.15, "height" : 1.45, "width" : 2.71} -->
+
   * What is Apache Spark?
   * In-memory computation engine
   * Can replace Hadoop, 100 time s faster
   * Spark 2 offers DataFrames
     - Think of them as data with description
   * Each query into Solr can be transformed into Spark DataFrame
-
-
-![](../images/Scaling-Tensorflow-The-New-Data-Science-Stack-Pancake-Stack-9.png) <!-- {"left" : 6.59, "top" : 0.89, "height" : 1.84, "width" : 3.44} -->
 
 
 Notes:
@@ -322,15 +330,6 @@ Notes:
 
 
 Notes:
-
-
----
-
-
-
-
-
-
 
 
 

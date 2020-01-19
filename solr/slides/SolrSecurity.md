@@ -1,5 +1,5 @@
-Solr: Security
-===================
+# Solr: Security
+---
 
 ## Section Objectives
 
@@ -12,7 +12,7 @@ Notes:
 ---
 
 # Introduction to Security
-
+---
 
 ## Options
 
@@ -27,13 +27,13 @@ Notes:
 
 ## Secutiry framework architecture
 
-![](../images/sec-arc.png) <!-- {"left" : 0.5, "top" : 1.93, "height" : 4.12, "width" : 9.26} -->
-
+<img src="../../assets/images/solr/sec-arc.png" style="width:80%;"/>  <!-- {"left" : 0.5, "top" : 1.93, "height" : 4.12, "width" : 9.26} -->
 
 Notes:
 
 ---
 # Authentication
+---
 
 ## Authentication framework
 
@@ -41,7 +41,7 @@ Notes:
 * Only on SolrCloud
 * Two implementations: Kerberos and basic authentication
 
-![](../images/auth-frame.png) <!-- {"left" : 0.39, "top" : 2.91, "height" : 2.48, "width" : 9.48} -->
+<img src="../../assets/images/solr/auth-frame.png" style="width:70%;"/><!-- {"left" : 0.39, "top" : 3.29, "height" : 2.48, "width" : 9.48} -->
 
 
 Notes:
@@ -66,6 +66,9 @@ Notes:
 ---
 
 ## Kerberos plugin
+
+<img src="../../assets/images/solr/kerberos.png" style="width:30%;float:right;"/><!-- {"left" : 5.99, "top" : 1.2, "height" : 2.94, "width" : 4.04} -->
+
 * Prerequisites:
   - Enabled by `/security.json` before starting Solr
   - Solr node must have:
@@ -75,21 +78,20 @@ Notes:
     - Kerberized ZooKeeper 
   - Start Solr with the correct host-speciﬁc parameters 
 
-![](../images/kerberos.png) <!-- {"left" : 3.69, "top" : 4.99, "height" : 2.09, "width" : 2.87} -->
-
 
 Notes:
 
 ---
 
 ## Delegation tokens
+
 * From Solr 6.2 on
 * Again built on top of hadoop-auth library
 * Reduces load on KDC
 * Completes Kerberos plugin
   - supports operations `RENEW`, `GET`, `CANCEL`
 
-Nodes:
+Notes:
 
 ---
 
@@ -107,6 +109,7 @@ Notes:
 ---
 
 ## Basic steps
+
 * Setting up ZK with `security.json` with:
   - `authc` plugin as `BasicAuthPlugin`
   - A default admin username and password hash
@@ -117,7 +120,7 @@ Notes:
 curl --user solr:SolrRocks http://localhost:8983/solr/admin/authentication -H 
 'Content-type:application/json'-d '{"set-user": {"bob" : "BobIsCool", "Tim":"TimsSecret"}}' 
 ```
-<!-- {"left" : 0, "top" : 3.49, "height" : 0.52, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.75, "height" : 0.52, "width" : 10.25} -->
 
 Notes:
 
@@ -147,6 +150,8 @@ Notes:
 
 ---
 # Authorization
+---
+
 ## Authorization framework
 
 * From Solr 5.2 on
@@ -173,12 +178,15 @@ Notes:
 ## Basics
 
 * Add user to a role:
+
 ```bash
 curl --user solr:SolrRocks 
 http://localhost:8983/solr/admin/authorization -H 'Content- type:application/json' 
 -d '{ "set-user-role": {"tom": ["admin","dev"}}' 
 ```
-<!-- {"left" : 0, "top" : 1.64, "height" : 0.76, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.13, "height" : 0.76, "width" : 10.25} -->
+
+<br/>
 
 * Add permission for a role: 
 
@@ -233,13 +241,16 @@ public abstract class AuthorizationContext {
   public abstract Object getHandler(); 
   } 
 ```
+<!-- {"left" : 0, "top" : 1.34, "height" : 3.69, "width" : 10.25} -->
 
 Notes:
 
 ---
-
 # SSL
+---
+
 ## Basic steps
+
 * From Solr 4.2 for standalone and Solr 4.7 for cloud
 * Basic steps:
   - Generate/obtain a certificate 
@@ -265,7 +276,7 @@ secret -storepass secret -validity 9999 -keystore solr-ssl.keystore.jks
 -ext SAN=DNS:localhost,IP:192.168.1.3,IP:127.0.0.1 -dname "CN=localhost, 
 OU=Organizational Unit, O=Organization, L=Location, ST=State, C=Country"
 ```
-<!-- {"left" : 0, "top" : 2, "height" : 1.06, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.5, "height" : 1.06, "width" : 10.25} -->
 
 Notes:
 
@@ -279,14 +290,18 @@ Notes:
 keytool -importkeystore -srckeystore solr-ssl.keystore.jks -destkeystore 
 solr-ssl.keystore.p12 -srcstoretype jks -deststoretype pkcs12
 ```
-<!-- {"left" : 0, "top" : 1.67, "height" : 0.64, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.08, "height" : 0.64, "width" : 10.25} -->
+
+<br/>
 
 * PKCS12 to PEM
 
 ```bash
 openssl pkcs12 -in solr-ssl.keystore.p12 -out solr-ssl.pem
 ```
-<!-- {"left" : 0, "top" : 3.49, "height" : 0.53, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.72, "height" : 0.53, "width" : 10.25} -->
+
+---
 
 ## Setting common SSL-related properties
 
@@ -305,7 +320,7 @@ SOLR_SSL_WANT_CLIENT_AUTH=false
 SOLR_SSL_KEY_STORE_TYPE=JKS
 SOLR_SSL_TRUST_STORE_TYPE=JKS
 ```
-<!-- {"left" : 0, "top" : 1.6, "height" : 3.56, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2, "height" : 3.56, "width" : 10.25} -->
 
 Notes:
 
@@ -318,13 +333,15 @@ Notes:
 ```bash
 bin/solr -p 8984
 ```
-<!-- {"left" : 0, "top" : 1.56, "height" : 0.64, "width" : 4.07} -->
+<!-- {"left" : 0, "top" : 1.77, "height" : 0.64, "width" : 4.07} -->
 
 Notes:
 
 ---
 
 # Other security options
+---
+
 ## Storage level security
 
 * Index encryption 
@@ -354,7 +371,6 @@ Notes:
 
 Notes:
 
----
 
 
 
