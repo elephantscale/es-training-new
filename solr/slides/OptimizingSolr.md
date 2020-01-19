@@ -30,7 +30,9 @@ Notes:
 
 ## Sharding Strategies
 
-<img src="../../assets/images/solr/3rd-party/strategy.png" style="width:60%;"/> <!-- {"left" : 1.48, "top" : 1.55, "height" : 4.86, "width" : 7.29} -->
+<img src="../../assets/images/solr/3rd-party/strategy.png" style="width:60%;"/><!-- {"left" : 1.05, "top" : 2.1, "height" : 5.44, "width" : 8.16} -->
+
+
 
 Notes:
 
@@ -134,6 +136,7 @@ Notes:
 ---
 
 ## How Does CompositeId Router Work?
+
 * If your customer is "Walmart"
 * Document with the ID "13579"
 * insert the prefix into the document id field: "IBM!12345"
@@ -162,8 +165,8 @@ Notes:
 
 ## Query Without Routing
 
-<img src="../../assets/images/solr/no-routing.png" style="width:40%;float:right;"/><!-- {"left" : 2.05, "top" : 2.65, "height" : 4.48, "width" : 6.15-->
 
+<img src="../../assets/images/solr/no-routing.png" style="width:40%;float:right;"/><!-- {"left" : 5.21, "top" : 1.19, "height" : 3.55, "width" : 4.87} -->
 
 * Less effective effective way to:
   - Import documents
@@ -177,7 +180,7 @@ Notes:
 
 ## Query With Routing
 
-<img src="../../assets/images/solr/routing.png" style="width:40%;float:right;"/><!-- {"left" : 2.05, "top" : 2.65, "height" : 4.48, "width" : 6.15} -->
+<img src="../../assets/images/solr/routing.png" style="width:40%;float:right;"/><!-- {"left" : 5.22, "top" : 1.08, "height" : 3.58, "width" : 4.91} -->
 
 * Control where documents are going
 * Control where queries are going
@@ -232,7 +235,8 @@ Notes:
 
 ## Disaster Recovery
 
-<img src="../../assets/images/solr/3rd-party/disaster.png" style="width:60%;"/><!-- {"left" : 0.78, "top" : 1.08, "height" : 5.8, "width" : 8.7} -->
+<img src="../../assets/images/solr/3rd-party/disaster.png" style="width:60%;"/><!-- {"left" : 0.78, "top" : 1.63, "height" : 5.8, "width" : 8.7} -->
+
 
 
 Notes:
@@ -249,6 +253,7 @@ Notes:
 | Regular Backups                                  	| - Works if you have low volume index updates with controlled schedule - Managing backups, storing offsite and retrieving quickly when needed is a challenge - If backup is incomplete, index gets corrupted 	|
 | Backup API                                       	| - Available in Solr at collection level - Takes backup of entire data of collection along with configurations - Prone to failure at live indexing and abrupt event                                          	|
 
+<!-- {"left" : 0.25, "top" : 1.25, "height" : 4.17, "width" : 9.75} -->
 
 Notes:
 
@@ -302,19 +307,29 @@ Notes:
 
 * Node
   - A JVM instance running Solr; a server
+
 * Cluster
   - A set of Solr nodes managed as a single unit by a ZooKeeper ensemble, hosting one or more Collections.
+
 * Leader
   - Each shard has one node identified as its leader
-  - All the writes for documents belonging to a shard are routed through the leader
+  - All the writes for documents belonging to a shard are routed through the leader.
+
+---
+
+## CDCR Glossary contd
+
 * Replica
   - A copy of a shard for use in failover or load balancing
-  - Replicas comprising a shard can either be leaders or non-leaders
+  - Replicas comprising a shard can either be leaders or non-leaders.
+
 * Follower
   - A convenience term for a replica that is not the leader of a shard.
+
 * Collection
   - Multiple documents that make up one logical index
   - A cluster can have multiple collections.
+
 * Updates Log
   - An append-only log of write operations maintained by each node.
 
@@ -326,7 +341,8 @@ Notes:
 
 ## CDCR Architecture
 
-<img src="../../assets/images/solr/replica.png" style="width:70%;"/> <!-- {"left" : 0.96, "top" : 1.83, "height" : 4.31, "width" : 8.32} -->
+<img src="../../assets/images/solr/replica.png" style="width:70%;"/> <!-- {"left" : 0.43, "top" : 1.82, "height" : 5.42, "width" : 9.39} -->
+
 
 Notes:
 
@@ -339,12 +355,13 @@ Notes:
 * Supports unidirectional (active-passive) and bidirectional (active-active)
 * At collection level data is replicated not configurations
 * APIs: 
+
 ```bash
 /cdcr/action=START
 /cdcr/action=STOP
 /cdcr/action=STATUS
 ```
-<!-- {"left" : 0, "top" : 3.61, "height" : 1.67, "width" : 6.17} -->
+<!-- {"left" : 0, "top" : 3.67, "height" : 1.72, "width" : 5.9} -->
 
 Notes:
 
@@ -355,7 +372,7 @@ Notes:
 * Direction: source to target
 * If source goes down, you need to point querying and indexing to target cluster collection
 
-<img src="../../assets/images/solr/uni.png" style="width:50%;"/>  <!-- {"left" : 2.02, "top" : 2.52, "height" : 4.54, "width" : 6.21} -->
+<img src="../../assets/images/solr/uni.png" style="width:50%;"/><!-- {"left" : 1.02, "top" : 2.72, "height" : 5.99, "width" : 8.21} -->
 
 
 Notes:
@@ -388,7 +405,8 @@ Notes:
 
 ## Core Components
 
-<img src="../../assets/images/solr/component.png" style="width:70%;"/>  <!-- {"left" : 0.35, "top" : 2.03, "height" : 3.45, "width" : 9.54} -->
+<img src="../../assets/images/solr/component.png" style="width:70%;"/> <!-- {"left" : 0.31, "top" : 2.31, "height" : 3.48, "width" : 9.63} -->
+
 
 Notes:
 
@@ -400,7 +418,9 @@ Notes:
 * Indexing and querying must be done on a single cluster
 * Second cluster is used when the first cluster is down
 
-<img src="../../assets/images/solr/bidirectional.png" style="width:50%;"/> <!-- {"left" : 1.38, "top" : 1.83, "height" : 5.45, "width" : 7.45} -->
+<img src="../../assets/images/solr/bidirectional.png" style="width:50%;"/> <!-- {"left" : 1.02, "top" : 2.38, "height" : 6.07, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -423,7 +443,9 @@ Notes:
 * Must provide consistency between source and target data centers
 * Minimal network traffic
 
-<img src="../../assets/images/solr/update.png" style="width:50%;"/><!-- {"left" : 1.72, "top" : 2.37, "height" : 4.9, "width" : 6.8} -->
+<img src="../../assets/images/solr/update.png" style="width:50%;"/><!-- {"left" : 1.02, "top" : 2.8, "height" : 5.9, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -434,7 +456,9 @@ Notes:
 
 * Avoids single point of failure
 
-<img src="../../assets/images/solr/multi-cluster.png" style="width:60%;"/><!-- {"left" : 1.03, "top" : 1.83, "height" : 5.0, "width" : 8.2} -->
+<img src="../../assets/images/solr/multi-cluster.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.34, "height" : 4.96, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -475,7 +499,8 @@ Notes:
 
 * Follow the instructions on next slides
 
-<img src="../../assets/images/solr/yarn.png" style="width:65%;"/><!-- {"left" : 0.7, "top" : 1.83, "height" : 5.35, "width" : 8.86} -->
+<img src="../../assets/images/solr/yarn.png" style="width:65%;"/><!-- {"left" : 0.72, "top" : 2.16, "height" : 5.33, "width" : 8.82} -->
+
 
 
 Notes:
@@ -491,7 +516,9 @@ Notes:
 hdfs dfs -put solr-yarn/jar solr/
 hdfs dfs -put solr.tgz solr/
 ```
-<!-- {"left" : 0.0, "top" : 2, "height" : 1.05, "width" : 8.19} -->
+<!-- {"left" : 0, "top" : 2.31, "height" : 1.09, "width" : 7.93} -->
+
+<br/>
 
 * Then run SolrClient
 
@@ -516,7 +543,7 @@ hadoop jar solr-yarn.jar org.apache.solr.cloud.yarn.SolrClient
 -memory 512
 -hdfs_home=hdfs://localhost:9000/solr/index_data
 ```
-<!-- {"left" : 0.0, "top" : 3.28, "height" : 2.13, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.23, "height" : 2.14, "width" : 10.25} -->
 
 Notes:
 
@@ -561,7 +588,7 @@ Notes:
 ```bash
 ./solr/bin/solr
 ```
-<!-- {"left" : 0.0, "top" : 3.64, "height" : 0.69, "width" : 4.19} -->
+<!-- {"left" : 0, "top" : 3.65, "height" : 0.78, "width" : 4.47} -->
 
 
 Notes:
@@ -602,11 +629,12 @@ Notes:
 * Results in a `SolrCloud` cluster remaining balanced and stable in cluster change events
 * Easier, more automatic and intelligent
 
-<img src="../../assets/images/solr/auto_scaling.png" style="width:65%;"/> <!-- {"left" : 2.56, "top" : 2.71, "height" : 1.18, "width" : 5.13} -->
+<img src="../../assets/images/solr/auto_scaling.png" style="width:65%;"/><!-- {"left" : 1.75, "top" : 3.03, "height" : 1.55, "width" : 6.76} -->
 
+<br/>
 
 * Example:
- Adding a replica for a `SolrCloud` collection When a node containing an existing replica goes down
+  - Adding a replica for a `SolrCloud` collection When a node containing an existing replica goes down
 
 Notes:
 
@@ -641,19 +669,18 @@ Notes:
 
 ## A Problem
 
-<img src="../../assets/images/solr/3rd-party/problem.png" style="width:30%;float:right"/><!-- {"left" : 3.38, "top" : 4.25, "height" : 2.89, "width" : 3.12} -->
-
+<img src="../../assets/images/solr/3rd-party/problem.png" style="width:30%;float:right"/><!-- {"left" : 6.77, "top" : 2.44, "height" : 3.1, "width" : 3.33} -->
 
 * Maintaining three replicas for every shard:
 
 ```java
 replication Factor = 3
 ```
-<!-- {"left" : 0, "top" : 1.54, "height" : 0.61, "width" : 4.99} -->
+<!-- {"left" : 0, "top" : 4.58, "height" : 0.57, "width" : 4.44} -->
 
 * Problem: What if a node with replica(s) crashed?
 * Solution: We need additional replicas to replace
-* There is an simple way. See the next slide
+* There is a simple way. See the next slide
 
 
 Notes:
@@ -665,10 +692,12 @@ Notes:
 
 * Additional parameter when creating a collection with `CREATE` command of the collection API
 
+<br/>
+
 ```java
 autoAddReplicas = true
 ```
-<!-- {"left" : 0, "top" : 1.92, "height" : 0.6, "width" : 4.91} -->
+<!-- {"left" : 0, "top" : 2.21, "height" : 0.77, "width" : 5.99} -->
 
 * Solr monitors this collection 
 * Adds new replica on other nodes after 30 sec. waiting
@@ -677,12 +706,13 @@ autoAddReplicas = true
 ```java
 /admin/collections?action=CREATE&name
 ```
-<!-- {"left" : 0, "top" : 4.37, "height" : 0.54, "width" : 6.89} -->
+<!-- {"left" : 0, "top" : 4.92, "height" : 0.6, "width" : 7.36} -->
+
 
 ```java
 =_name_of_collection_&numShards =1&replicationFactor =3&autoAddReplicas=true
 ```
-<!-- {"left" : 0, "top" : 5.38, "height" : 0.41, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.81, "height" : 0.43, "width" : 10.25} -->
 
 Notes:
 
@@ -698,7 +728,9 @@ Notes:
 ```java
 {minimize:cores}
 ```
-<!-- {"left" : 0, "top" : 2.82, "height" : 0.72, "width" : 4.55} -->
+<!-- {"left" : 0, "top" : 3.54, "height" : 0.71, "width" : 4.3} -->
+
+<br/>
 
 * Helps `Solr` select nodes that the number. of cores on each node is minimized
 * To reduce the overall load on the system
@@ -717,7 +749,7 @@ Notes:
 ```java
 {"cores":"<5","node":"#ANY"}
 ```
-<!-- {"left" : 0, "top" : 2.76, "height" : 0.72, "width" : 7.25} -->
+<!-- {"left" : 0, "top" : 2.87, "height" : 0.57, "width" : 5.44} -->
 
 
 * Any node must have less than 5 `Solr` cores in total regardless of which collection they belong to
@@ -743,16 +775,18 @@ Notes:
 * `set-policy` API is used to create a new policy
 * `policy = <policy_name` parameter of `CREATE` command
 
+<br/>
+
 ```java
 /admin/collections?action=CREATE&name= myCollection&
 ```
-<!-- {"left" : 0, "top" : 2.58, "height" : 0.59, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.62, "height" : 0.57, "width" : 9.44} -->
 
 
 ```java
 numShards=1&replicationFactor =2&policy=myPolicy
 ```
-<!-- {"left" : 0, "top" : 3.43, "height" : 0.63, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.5, "height" : 0.61, "width" : 9.48} -->
 
 
 * Associates `myPolicy` with `myCollection`
@@ -801,7 +835,7 @@ Notes:
 
 ## Trigger Actions
 
-<img src="../../assets/images/solr/3rd-party/trigger.png" style="width:40%;float:right;"/> <!-- {"left" : 2.72, "top" : 4.3, "height" : 2.62, "width" : 4.49} -->
+<img src="../../assets/images/solr/3rd-party/trigger.png" style="width:40%;float:right;"/><!-- {"left" : 6.52, "top" : 1.11, "height" : 2.05, "width" : 3.51} -->
 
 * A trigger executes actions that tell Solr what to do in response to the trigger.
 * Two actions are added to every trigger by default:
@@ -816,8 +850,8 @@ Notes:
 
 ## Listeners
 
-<img src="../../assets/images/solr/3rd-party/strategy.png" style="width:40%;float:right;"/><!-- {"left" : 2.75, "top" : 3.44, "height" : 3.57, "width" : 4.75} -->
-
+<img src="../../assets/images/solr/3rd-party/strategy.png" style="width:40%;float:right;"/><!-- {"left" : 6.1, "top" : 1.17, "height" : 2.62, "width" : 3.93} -->
+ 
 * Can be attached to a trigger
 * Solr calls it every time the trigger fires
 * As a call back mechanism
@@ -831,7 +865,9 @@ Notes:
 ## Autoscaling APIs
 
 * Is available at:
-`/admin/autoscaling`
+
+  - `/admin/autoscaling`
+
 * can be used to read and modify each of the components discussed above
 
 Notes:
