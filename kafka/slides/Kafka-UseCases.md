@@ -6,7 +6,7 @@
 
 ## Lesson Objectives
 
- * Go through specific Kafka use cases
+* Go through specific Kafka use cases
 
 
 Notes: 
