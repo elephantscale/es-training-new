@@ -27,7 +27,8 @@ Notes:
   - Hit highlighting
   - Advanced analysis and tokenization
 
-<img src="../../assets/images/elastic/3rd-party/Lucene.png" alt="Lucene.png" style="width:50%;"/>
+<img src="../../assets/images/elastic/3rd-party/Lucene.png" alt="Lucene.png" style="width:50%;"/><!-- {"left" : 0.25, "top" : 1.4, "height" : 3.36, "width" : 9.75} -->
+
 
 
 Notes:
@@ -54,14 +55,18 @@ Notes:
 
 ## Brief history
 
-* **Lucene** written by Doug Cutting in 1999
-* Replaces commercial search engines, such as Inktomi ($10K/year => $0)
-* **Solr** written by Yonik Seeley for CNET and 
-contributed to Apache in 2006
-* LucidWorks – 2009
-* **ElasticSearch** – 2010
+## Brief History 
 
-<img src="../../assets/images/elastic/3rd-party/Brief-history.png" alt="Brief-history.png" style="width:50%;"/>
+<img src="../../assets/images/solr/3rd-party/history1.png" style="width:14%;float:right;"/> <!-- {"left" : 8.03, "top" : 1.22, "height" : 2.34, "width" : 1.98} -->
+
+  * Lucene written by Doug Cutting in 1999
+  * Replaces commercial search engines, such as Inktomi ($10K/year => $0)
+  * Solr written by Yonik Seeley for CNET and contributed to Apache in 2006
+  * LucidWorks – 2009
+  * ElasticSearch – 2010
+
+<img src="../../assets/images/solr/3rd-party/history2.png" style="width:16%;float:right;"/> <!-- {"left" : 7.97, "top" : 4.1, "height" : 2.09, "width" : 2.09} --> &nbsp;&nbsp; <img src="../../assets/images/solr/3rd-party/history3.png" style="width:24%;"/> &nbsp; &nbsp;<!-- {"left" : 0.33, "top" : 5.78, "height" : 2.79, "width" : 4.2} --> <img src="../../assets/images/solr/3rd-party/history4.png" style="width:27%;"/><!-- {"left" : 4.8, "top" : 6.43, "height" : 2.09, "width" : 2.79} -->
+
 
 
 
@@ -106,7 +111,9 @@ Notes:
 
 ## Search Application Steps
 
-<img src="../../assets/images/elastic/Search-Application-Steps.png" alt="Search-Application-Steps.png" style="width:50%;"/>
+<img src="../../assets/images/elastic/Search-Application-Steps.png" alt="Search-Application-Steps.png" style="width:50%;"/><!-- {"left" : 3.78, "top" : 1.57, "height" : 6.5, "width" : 2.7} -->
+
+
 
 
 Notes:
@@ -190,8 +197,7 @@ Notes:
 
 ## Indexing Steps: Structure the Document
 
-<img src="../../assets/images/elastic/3rd-party/Structure-01.png" alt="Structure-01.png" style="width:60%;"/>
-
+<img src="../../assets/images/elastic/3rd-party/Structure-01.png" alt="Structure-01.png" style="width:60%;"/><!-- {"left" : 6.75, "top" : 1, "height" : 2.25, "width" : 3.38} -->
 
 * Indexing a book or a large document
   - What is ‘body text’?
@@ -249,7 +255,9 @@ Notes:
 ## Indexing Code
 
 
-<img src="../../assets/images/elastic/3rd-party/Indexing-Code.png" alt="Indexing-Code.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/Indexing-Code.png" alt="Indexing-Code.png" style="width:60%;"/><!-- {"left" : 0.23, "top" : 1.16, "height" : 5.54, "width" : 9.05} -->
+
+
 
 
 Notes:
@@ -259,7 +267,8 @@ Notes:
 
 ## Write the Index
 
-<img src="../../assets/images/elastic/3rd-party/Write-Index.png" alt="Write-Index.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/Write-Index.png" alt="Write-Index.png" style="width:60%;"/><!-- {"left" : 0.27, "top" : 1.18, "height" : 6.58, "width" : 8.57} -->
+
 
 Notes:
 
@@ -269,7 +278,8 @@ Notes:
 ## Indexing Text Files
 
 
-<img src="../../assets/images/elastic/3rd-party/Indexing-Text-Files.png" alt="Indexing-Text-Files.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/Indexing-Text-Files.png" alt="Indexing-Text-Files.png" style="width:60%;"/><!-- {"left" : 0.25, "top" : 1.11, "height" : 5.76, "width" : 9.15} -->
+
 
 
 Notes:
@@ -351,9 +361,11 @@ Notes:
 
 * ./index
 
-<img src="../../assets/images/elastic/3rd-party/index-01.png" alt="index-01.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/index-01.png" alt="index-01.png" style="width:60%;"/><!-- {"left" : 0.31, "top" : 2.25, "height" : 1.34, "width" : 9.64} -->
 
-<img src="../../assets/images/elastic/3rd-party/index-02.png" alt="index-02.png" style="width:60%;"/>
+
+<img src="../../assets/images/elastic/3rd-party/index-02.png" alt="index-02.png" style="width:60%;"/><!-- {"left" : 0.41, "top" : 4.55, "height" : 2.87, "width" : 9.43} -->
+
 
 Notes:
 
@@ -414,8 +426,9 @@ Notes:
 
 <img src="../../assets/images/elastic/3rd-party/eDiscover-01.png" alt="eDiscover-01.png" style="width:60%;"/>
 
+<img src="../../assets/images/elastic/3rd-party/eDiscover-02.png" alt="eDiscover-02.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 4.25, "height" : 2.87, "width" : 8.21} -->
 
-<img src="../../assets/images/elastic/3rd-party/eDiscover-02.png" alt="eDiscover-02.png" style="width:60%;"/>
+
 
 
 
@@ -426,7 +439,8 @@ Notes:
 
 ## Process
 
-<img src="../../assets/images/elastic/3rd-party/Process-01.png" alt="Process-01.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/Process-01.png" alt="Process-01.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.33, "height" : 6.98, "width" : 8.21} -->
+
 
 
 Notes:
@@ -454,7 +468,8 @@ Notes:
 
 ## Demo: FreeEed and FreeEedUI
 
-<img src="../../assets/images/elastic/3rd-party/FreeEed-FreeEedUI.png" alt="FreeEed-FreeEedUI.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/FreeEed-FreeEedUI.png" alt="FreeEed-FreeEedUI.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.33, "height" : 6.98, "width" : 8.21} -->
+
 
 
 

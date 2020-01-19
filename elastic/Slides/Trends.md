@@ -22,7 +22,8 @@ Notes:
 ## Beyond IR – Information Extraction
 
 
-<img src="../../assets/images/elastic/3rd-party/Beyond-IR.png" alt="Beyond-IR.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/Beyond-IR.png" alt="Beyond-IR.png" style="width:60%;"/><!-- {"left" : 0.54, "top" : 1.72, "height" : 5.63, "width" : 9.18} -->
+
 
 ---
 
@@ -53,7 +54,8 @@ Notes:
 
 ## Elasticsearch and Spark
 
-<img src="../../assets/images/logos/spark-logo-1.png" alt="spark-logo-1.png" style="width:20%;float:right"/>
+<img src="../../assets/images/logos/spark-logo-1.png" alt="spark-logo-1.png" style="width:20%;float:right"/><!-- {"left" : 7.08, "top" : 1.17, "height" : 1.51, "width" : 2.83} -->
+
 
 * What is Apache Spark?
 * In-memory computation engine

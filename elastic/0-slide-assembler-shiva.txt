@@ -8,5 +8,12 @@
 
 
 
-
 ./Slides/Elasticsearch_Intro.md
+./Slides/Kibana.md
+./Slides/Logstash.md
+./Slides/Lucene.md
+./Slides/Relationships.md
+./Slides/Relevancy.md
+./Slides/Search_Intro.md
+./Slides/Template_v6.md
+./Slides/Trends.md

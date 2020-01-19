@@ -34,7 +34,8 @@ Notes:
 * IR returns relevant information
 * Usually, it comes from unstructured data
 
-<img src="../../assets/images/elastic/3rd-party/Character-IR.png" alt="Character-IR.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Character-IR.png" alt="Character-IR.png" style="width:60%;float:left;"/><!-- {"left" : 1.02, "top" : 2.56, "height" : 4.52, "width" : 8.21} -->
+
 
 
 Notes:
@@ -44,7 +45,7 @@ Notes:
 
 ## NASA – a Case in Point
 
-<img src="../../assets/images/elastic/3rd-party/nasa.png" alt="nasa.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/nasa.png" alt="nasa.png" style="width:60%;"/><!-- {"left" : 0.39, "top" : 1.41, "height" : 2.12, "width" : 9.46} -->
 
 * NASA employs 50,000 engineers
 * Some people leave, new people come
@@ -60,7 +61,7 @@ Notes:
 
 ## How is IR different from SQL?
 
-<img src="../../assets/images/elastic/3rd-party/sql.png" alt="sql.png" style="width:20%;float:right"/>
+<img src="../../assets/images/elastic/3rd-party/sql.png" alt="sql.png" style="width:20%;float:right"/><!-- {"left" : 5.99, "top" : 1.02, "height" : 2.76, "width" : 4.13} -->
 
 * IR returns relevant information
 * Usually it is ranked by relevance
@@ -76,7 +77,7 @@ Notes:
 
 ## IR metrics
 
-<img src="../../assets/images/elastic/3rd-party/ir-metric.png" alt="ir-metric.png" style="width:20%;float:right"/>
+<img src="../../assets/images/elastic/3rd-party/ir-metric.png" alt="ir-metric.png" style="width:20%;float:right"/><!-- {"left" : 6.68, "top" : 1, "height" : 4.09, "width" : 3.47} -->
 
 * How good is an IR system?
 * **Precision:** Fraction of retrieved docs that are relevant to user’s information need
@@ -108,7 +109,8 @@ Notes:
 * There is usually a mechanism called
 * **Inverted Index**
 
-<img src="../../assets/images/elastic/3rd-party/search-done.png" alt="search-done.png" style="width:40%;"/>
+<img src="../../assets/images/elastic/3rd-party/search-done.png" alt="search-done.png" style="width:40%;"/><!-- {"left" : 2.8, "top" : 3.15, "height" : 4.19, "width" : 4.65} -->
+
 
 
 Notes:
@@ -123,7 +125,9 @@ Notes:
 * Identify each document by its **id**
 
 
-<img src="../../assets/images/elastic/3rd-party/search-done-01.png" alt="search-done-01.png" style="width:40%;"/>
+<img src="../../assets/images/elastic/3rd-party/search-done-01.png" alt="search-done-01.png" style="width:40%;"/><!-- {"left" : 3.01, "top" : 3.7, "height" : 3.81, "width" : 4.23} -->
+
+
 
 
 

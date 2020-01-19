@@ -55,7 +55,7 @@ Notes:
   - how many times a term appears in a document
 
 
-<img src="../../assets/images/elastic/3rd-party/Term-Frequency.png" alt="Term-Frequency.png" style="width:70%;"/>
+<img src="../../assets/images/elastic/3rd-party/Term-Frequency.png" alt="Term-Frequency.png" style="width:70%;"/><!-- {"left" : 0.46, "top" : 2.22, "height" : 1.04, "width" : 9.33} -->
 
 Notes:
 
@@ -99,7 +99,7 @@ Notes:
 ## Lucene Scoring Formula
 
 
-<img src="../../assets/images/elastic/3rd-party/Lucene-Scoring-Formula.png" alt="Lucene-Scoring-Formula.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/Lucene-Scoring-Formula.png" alt="Lucene-Scoring-Formula.png" style="width:60%;"/><!-- {"left" : 0.33, "top" : 1.52, "height" : 1.33, "width" : 9.58} -->
 
 * The higher the term frequency, the higher the score
 * The higher the inverse document frequency the rarer is a term
@@ -133,8 +133,7 @@ Notes:
 
 ## How to Set Similarity
 
-<img src="../../assets/images/elastic/3rd-party/How-Similarity.png" alt="How-Similarity.png" style="width:70%;float:left"/>
-
+<img src="../../assets/images/elastic/3rd-party/How-Similarity.png" alt="How-Similarity.png" style="width:70%;float:left"/><!-- {"left" : 0.25, "top" : 1.26, "height" : 2.73, "width" : 8.76} -->
 
 
 
@@ -148,7 +147,9 @@ Notes:
 * In `elasticsearch.yml`
 
 
-<img src="../../assets/images/elastic/3rd-party/Global-Scoring.png" alt="Global-Scoring.png" style="width:70%;float:left"/>
+<img src="../../assets/images/elastic/3rd-party/Global-Scoring.png" alt="Global-Scoring.png" style="width:70%;float:left"/><!-- {"left" : 0.52, "top" : 2.11, "height" : 0.91, "width" : 9.21} -->
+
+
 
 
 
@@ -192,7 +193,7 @@ Notes:
 
 ## Boosting at Index Time
 
-<img src="../../assets/images/elastic/3rd-party/Boosting-Time.png" alt="Boosting-Time.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/Boosting-Time.png" alt="Boosting-Time.png" style="width:60%;"/><!-- {"left" : 0.52, "top" : 1.22, "height" : 3.69, "width" : 7.89} -->
 
 * Boosting the name field
   - in the group type
@@ -202,7 +203,7 @@ Notes:
 
 ## Boosting at Query Time
 
-<img src="../../assets/images/elastic/3rd-party/Boosting-Time-01.png" alt="Boosting-Time-01.png" style="width:50%;"/>
+<img src="../../assets/images/elastic/3rd-party/Boosting-Time-01.png" alt="Boosting-Time-01.png" style="width:50%;"/><!-- {"left" : 0.56, "top" : 1.22, "height" : 4.19, "width" : 6.4} -->
 
 * Query-time boosting 
   - using the match query
@@ -211,7 +212,8 @@ Notes:
 
 ## Explain Scoring
 
-<img src="../../assets/images/elastic/3rd-party/Explain-Scoring.png" alt="Explain-Scoring.png" style="width:50%;"/>
+<img src="../../assets/images/elastic/3rd-party/Explain-Scoring.png" alt="Explain-Scoring.png" style="width:50%;"/><!-- {"left" : 0.53, "top" : 1.33, "height" : 2.53, "width" : 8.21} -->
+
 
 * `Explain` parameter
 * Verbose output
@@ -220,20 +222,20 @@ Notes:
 ## Explain Scoring Output
 
 
-<img src="../../assets/images/elastic/3rd-party/Explain-Scoring-Output.png" alt="Explain-Scoring-Output.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Explain-Scoring-Output.png" alt="Explain-Scoring-Output.png" style="width:60%;float:left;"/><!-- {"left" : 0.27, "top" : 1.24, "height" : 4.36, "width" : 9.07} -->
 
 ---
 
 ## Custom Score Structure
 
-<img src="../../assets/images/elastic/3rd-party/Custom-Score-Structure.png" alt="Custom-Score-Structure.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Custom-Score-Structure.png" alt="Custom-Score-Structure.png" style="width:60%;float:left;"/><!-- {"left" : 0.31, "top" : 1.26, "height" : 3.71, "width" : 8.74} -->
 
 
 ---
 
 ## Custom Score Example
 
-<img src="../../assets/images/elastic/3rd-party/Custom-Score-Example.png" alt="Custom-Score-Example.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Custom-Score-Example.png" alt="Custom-Score-Example.png" style="width:60%;float:left;"/><!-- {"left" : 0.29, "top" : 1.26, "height" : 3.91, "width" : 8.71} -->
 
 
 
@@ -251,7 +253,7 @@ Notes:
   - title:"apache solr" content:(search engine)
 * Are these the same:
   - solr
-  - **content:**solr
+  - **content:** solr
   - (hint: “content” is default field)
 
 
@@ -336,9 +338,9 @@ Notes:
 
 * Is the meaning below obvious?
 * What would be required of fields?
-  - number:**[**12.5 **TO** 100**]**
-  - date:**[**2013-11-04T10:05:00Z **TO** NOW-1DAY**]**
-  - string:**[**ape **TO** apple**]**
+  - number: **[12.5 TO 100]**
+  - date: **[2013-11-04T10:05:00Z TO NOW-1DAY]**
+  - string: **[ape TO apple]**
 
 
 
@@ -373,7 +375,9 @@ Notes:
 
 ## Field boosting at index time
 
-<img src="../../assets/images/elastic/3rd-party/Field-boosting-time.png" alt="Field-boosting-time.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Field-boosting-time.png" alt="Field-boosting-time.png" style="width:60%;float:left;"/><!-- {"left" : 0.29, "top" : 1.26, "height" : 4.37, "width" : 8.97} -->
+
+
 
 
 Notes:

@@ -44,7 +44,8 @@ Notes:
 
 ## Elasticsearch Cluster Indices
 
-<img src="../../assets/images/elastic/Elasticsearch-01.png" alt="Elasticsearch-01.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/Elasticsearch-01.png" alt="Elasticsearch-01.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.6, "height" : 6.44, "width" : 8.21} -->
+
 
 
 Notes:
@@ -186,13 +187,16 @@ Notes:
 
 * This used to work
 
- <img src="../../assets/images/elastic/3rd-party/Breaking-01.png" alt="Breaking-01.png" style="width:60%;"/>
+ <img src="../../assets/images/elastic/3rd-party/Breaking-01.png" alt="Breaking-01.png" style="width:60%;"/><!-- {"left" : 0, "top" : 1.73, "height" : 2.29, "width" : 6.57} -->
+
 
 * Not anymore
   - Clarity
   - Security
 
- <img src="../../assets/images/elastic/3rd-party/Breaking-02.png" alt="Breaking-02.png" style="width:60%;"/>
+ <img src="../../assets/images/elastic/3rd-party/Breaking-02.png" alt="Breaking-02.png" style="width:60%;"/><!-- {"left" : 0, "top" : 6.39, "height" : 0.75, "width" : 7.63} -->
+
+
 
 
 
@@ -286,7 +290,9 @@ Notes:
 ## Logical and Physical Layout
 
 
-<img src="../../assets/images/elastic/Logical-Physical-Layout.png" alt="Logical-Physical-Layout.png" style="width:70%;"/>
+<img src="../../assets/images/elastic/Logical-Physical-Layout.png" alt="Logical-Physical-Layout.png" style="width:70%;"/><!-- {"left" : 0.66, "top" : 2.34, "height" : 4.39, "width" : 8.92} -->
+
+
 
 
 Notes:
@@ -337,7 +343,8 @@ Notes:
 
 ## Think of Document as JSON
 
-<img src="../../assets/images/elastic/3rd-party/JSON-01.png" alt="JSON-01.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/JSON-01.png" alt="JSON-01.png" style="width:60%;float:left;"/><!-- {"left" : 0.21, "top" : 1.36, "height" : 2.33, "width" : 7.23} -->
+
 
 
 Notes:
@@ -348,7 +355,8 @@ Notes:
 
 ## Hierarchical Document
 
-<img src="../../assets/images/elastic/3rd-party/Hierarchical-Document.png" alt="Hierarchical-Document.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Hierarchical-Document.png" alt="Hierarchical-Document.png" style="width:60%;float:left;"/><!-- {"left" : 0.21, "top" : 1.36, "height" : 3.05, "width" : 7.58} -->
+
 
 Notes:
 
@@ -359,7 +367,8 @@ Notes:
 ## Document Field can have an Array of Values
 
 
-<img src="../../assets/images/elastic/3rd-party/Document-Values.png" alt="Document-Values.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Document-Values.png" alt="Document-Values.png" style="width:60%;float:left;"/><!-- {"left" : 0.21, "top" : 1.36, "height" : 2.25, "width" : 8.86} -->
+
 
 
 Notes:
@@ -377,6 +386,7 @@ Notes:
 | Name        | string     |
 | Geolocation | geo_point  |
 
+<!-- {"left" : 0.25, "top" : 1.84, "height" : 1, "width" : 9.75} -->
 
 * But Documents are schema-free!?
   - Documents do not have to have all fields
@@ -398,7 +408,7 @@ Notes:
 * Each index has its own settings
   - Important to break indices and optimize them separately
 
-<img src="../../assets/images/elastic/3rd-party/Indices.png" alt="Indices.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/elastic/3rd-party/Indices.png" alt="Indices.png" style="width:30%;float:right;"/><!-- {"left" : 6.9, "top" : 2.31, "height" : 2.14, "width" : 3.2} -->
 
 * Example: `refresh_interval`
   - Determines refresh for near-real time
@@ -434,8 +444,8 @@ Notes:
 * File shards
 * One replica per shard
 
+<img src="../../assets/images/elastic/sharing-architecture.png" alt="sharing-architecture.png" style="width:70%;"/><!-- {"left" : 0.67, "top" : 3.12, "height" : 3.49, "width" : 8.91} -->
 
-<img src="../../assets/images/elastic/sharing-architecture.png" alt="sharing-architecture.png" style="width:70%;"/>
 
 Notes:
 
@@ -466,9 +476,7 @@ Notes:
 
 ## What Happens in Indexing
 
-<img src="../../assets/images/elastic/Happens-ndexing.png" alt="Happens-ndexing.png" style="width:70%;"/>
-
-
+<img src="../../assets/images/elastic/Happens-ndexing.png" alt="Happens-ndexing.png" style="width:70%;"/><!-- {"left" : 0.59, "top" : 1.93, "height" : 5.21, "width" : 9.07} -->
 
 
 Notes:
@@ -519,7 +527,8 @@ Notes:
 ## Shard = Lucene Index
 
 
-<img src="../../assets/images/elastic/Lucene-Index.png" alt="Lucene-Index.png" style="width:70%;"/>
+<img src="../../assets/images/elastic/Lucene-Index.png" alt="Lucene-Index.png" style="width:70%;"/><!-- {"left" : 0.75, "top" : 2.6, "height" : 3.87, "width" : 8.76} -->
+
 
 
 
@@ -601,7 +610,9 @@ Notes:
 
 ## Indexing with Sharding and Replicas
 
-<img src="../../assets/images/elastic/Indexing-Replicas.png" alt="Indexing-Replicas.png" style="width:50%;"/>
+<img src="../../assets/images/elastic/Indexing-Replicas.png" alt="Indexing-Replicas.png" style="width:50%;"/><!-- {"left" : 1.61, "top" : 1.44, "height" : 6.77, "width" : 7.02} -->
+
+
 
 Notes:
 
@@ -630,7 +641,8 @@ Notes:
 ## Search with Shards and Replicas
 
 
-<img src="../../assets/images/elastic/Search-Replicas.png" alt="Search-Replicas.png" style="width:70%;"/>
+<img src="../../assets/images/elastic/Search-Replicas.png" alt="Search-Replicas.png" style="width:70%;"/><!-- {"left" : 0.39, "top" : 2.16, "height" : 5.33, "width" : 9.46} -->
+
 
 Notes:
 
@@ -653,7 +665,8 @@ Notes:
 
 ## Index A Document
 
-<img src="../../assets/images/elastic/3rd-party/Index-Document.png" alt="Index-Document.png" style="width:65%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Index-Document.png" alt="Index-Document.png" style="width:65%;float:left;"/><!-- {"left" : 0.04, "top" : 1.53, "height" : 1.69, "width" : 10.21} -->
+
 
 Notes:
 
@@ -663,7 +676,8 @@ Notes:
 
 ## Index A Document - Reply
 
-<img src="../../assets/images/elastic/3rd-party/Index-Document-reply.png" alt="Index-Document-reply.png" style="width:50%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Index-Document-reply.png" alt="Index-Document-reply.png" style="width:50%;float:left;"/><!-- {"left" : 0.19, "top" : 1.53, "height" : 5.98, "width" : 6.88} -->
+
 
 
 Notes:
@@ -690,7 +704,7 @@ Notes:
 
 ## Index Operations
 
-<img src="../../assets/images/elastic/3rd-party/Index-Operations.png" alt="Index-Operations.png" style="width:50%;"/>
+<img src="../../assets/images/elastic/3rd-party/Index-Operations.png" alt="Index-Operations.png" style="width:50%;"/><!-- {"left" : 1.02, "top" : 1.53, "height" : 2.49, "width" : 8.21} -->
 
 * Why create an index manually?
 * Creating the index takes time 
@@ -715,7 +729,8 @@ Notes:
   - This would show you mappings for all types within that index
   - For a specific mapping, specify the type name
 
-<img src="../../assets/images/elastic/3rd-party/mapping-01.png" alt="mapping-01.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/mapping-01.png" alt="mapping-01.png" style="width:60%;float:left;"/><!-- {"left" : 0.22, "top" : 5.18, "height" : 0.87, "width" : 9.81} -->
+
 
 
 Notes:
@@ -726,7 +741,8 @@ Notes:
 
 ## Mapping Reply
 
-<img src="../../assets/images/elastic/3rd-party/mapping-02.png" alt="mapping-02.png" style="width:35%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/mapping-02.png" alt="mapping-02.png" style="width:35%;float:left;"/><!-- {"left" : 0.21, "top" : 1.17, "height" : 7.3, "width" : 5.21} -->
+
 
 Notes:
 
@@ -768,7 +784,8 @@ Notes:
 
 ## Search Example
 
-<img src="../../assets/images/elastic/3rd-party/Search-Example.png" alt="Search-Example.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/Search-Example.png" alt="Search-Example.png" style="width:60%;"/><!-- {"left" : 0.37, "top" : 1.14, "height" : 2.01, "width" : 7.46} -->
+
 
 * URL indicates where to search
   - in the group type of the get-together index
@@ -813,11 +830,12 @@ Notes:
 
 ## Search in Multiple Types
 
-Use a comma-separated list
-Example
-Both group and event types
+* Use a comma-separated list
+* Example
+* Both group and event types
 
-<img src="../../assets/images/elastic/3rd-party/multiple-type.png" alt="multiple-type.png" style="width:70%;"/>
+<img src="../../assets/images/elastic/3rd-party/multiple-type.png" alt="multiple-type.png" style="width:70%;"/><!-- {"left" : 0.19, "top" : 3, "height" : 1.18, "width" : 9.86} -->
+
 
 
 Notes:
@@ -829,7 +847,9 @@ Notes:
 ## Multi-type Search Result
 
 
-<img src="../../assets/images/elastic/3rd-party/Multi-typeSearch-Result.png" alt="Multi-typeSearch-Result.png" style="width:50%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Multi-typeSearch-Result.png" alt="Multi-typeSearch-Result.png" style="width:50%;float:left;"/><!-- {"left" : 0.27, "top" : 1.11, "height" : 7.51, "width" : 8.21} -->
+
+
 
 
 Notes:
@@ -843,7 +863,8 @@ Notes:
 * Search in all types of an index
 * Send your request to the _search endpoint of the index’s URL
 
-<img src="../../assets/images/elastic/3rd-party/search-type01.png" alt="search-type01.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/search-type01.png" alt="search-type01.png" style="width:60%;float:left;"/><!-- {"left" : 0.27, "top" : 2.5, "height" : 1.59, "width" : 9.41} -->
+
 
 Notes:
 
@@ -857,7 +878,8 @@ Notes:
 * Separate them with a comma:
 * (Question: why will the line below likely fail?)
 
-<img src="../../assets/images/elastic/3rd-party/Multiple-indices.png" alt="Multiple-indices.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Multiple-indices.png" alt="Multiple-indices.png" style="width:60%;float:left;"/><!-- {"left" : 0.27, "top" : 2.94, "height" : 1.12, "width" : 9.87} -->
+
 
 
 Notes:
@@ -869,7 +891,8 @@ Notes:
 ## Reading the Search Reply
 
 
-<img src="../../assets/images/elastic/3rd-party/Reading-Search-Reply.png" alt="Reading-Search-Reply.png" style="width:65%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Reading-Search-Reply.png" alt="Reading-Search-Reply.png" style="width:65%;float:left;"/><!-- {"left" : 0.29, "top" : 1.12, "height" : 6.08, "width" : 9.07} -->
+
 
 Notes:
 Elasticsearch in Practice
@@ -1029,27 +1052,6 @@ Notes:
   - if an update fails because of a concurrency issue
 
 Notes:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

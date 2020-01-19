@@ -127,7 +127,8 @@ Notes:
 ## Object Type Example
 
 
-<img src="../../assets/images/elastic/3rd-party/Object-Example.png" alt="Object-Example.png" style="width:50%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Object-Example.png" alt="Object-Example.png" style="width:50%;float:left;"/><!-- {"left" : 0.25, "top" : 1.13, "height" : 4.91, "width" : 8.21} -->
+
 
 
 
@@ -139,7 +140,8 @@ Notes:
 
 ## Nested Type Example
 
-<img src="../../assets/images/elastic/3rd-party/Nested-Type-Example.png" alt="Nested-Type-Example.png" style="width:70%;"/>
+<img src="../../assets/images/elastic/3rd-party/Nested-Type-Example.png" alt="Nested-Type-Example.png" style="width:70%;"/><!-- {"left" : 0.69, "top" : 2.09, "height" : 3.87, "width" : 8.87} -->
+
 
 
 
@@ -151,7 +153,7 @@ Notes:
 ## Parent-Child Relationship Example
 
 
-<img src="../../assets/images/elastic/3rd-party/Relationship-Example.png" alt="Relationship-Example.png" style="width:70%;"/>
+<img src="../../assets/images/elastic/3rd-party/Relationship-Example.png" alt="Relationship-Example.png" style="width:70%;"/><!-- {"left" : 0.77, "top" : 2.17, "height" : 4.73, "width" : 8.72} -->
 
 
 Notes:
@@ -163,7 +165,7 @@ Notes:
 ## Denormalization Example
 
 
-<img src="../../assets/images/elastic/Denormalization.png" alt="Denormalization.png" style="width:70%;"/>
+<img src="../../assets/images/elastic/Denormalization.png" alt="Denormalization.png" style="width:70%;"/><!-- {"left" : 0.44, "top" : 2.55, "height" : 3.96, "width" : 9.36} -->
 
 Notes:
 
@@ -173,7 +175,7 @@ Notes:
 
 ## Objects as Field Values
 
-<img src="../../assets/images/elastic/3rd-party/Objects-Field-Values.png" alt="Objects-Field-Values.png" style="width:60%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Objects-Field-Values.png" alt="Objects-Field-Values.png" style="width:60%;float:left;"/><!-- {"left" : 0.29, "top" : 1.11, "height" : 2.94, "width" : 8.21} -->
 
 
 
@@ -203,7 +205,8 @@ Notes:
 
 ## Objects Mapped to Lucene
 
-<img src="../../assets/images/elastic/3rd-party/Objects-Mapped-Lucene.png" alt="Objects-Mapped-Lucene.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/3rd-party/Objects-Mapped-Lucene.png" alt="Objects-Mapped-Lucene.png" style="width:60%;"/><!-- {"left" : 0.54, "top" : 2.35, "height" : 3.41, "width" : 9.18} -->
+
 
 
 Notes:
@@ -214,7 +217,7 @@ Notes:
 
 ## Searching in Objects - Diagram
 
-<img src="../../assets/images/elastic/3rd-party/Searching-Objects.png" alt="Searching-Objects.png" style="width:70%;float:left;"/>
+<img src="../../assets/images/elastic/3rd-party/Searching-Objects.png" alt="Searching-Objects.png" style="width:70%;float:left;"/><!-- {"left" : 0.26, "top" : 1.72, "height" : 2.01, "width" : 9.73} -->
 
 
 Notes:
@@ -225,7 +228,7 @@ Notes:
 
 ## Denormalization Explained
 
-<img src="../../assets/images/elastic/Denormalization-Explained.png" alt="Denormalization-Explained.png" style="width:60%;"/>
+<img src="../../assets/images/elastic/Denormalization-Explained.png" alt="Denormalization-Explained.png" style="width:60%;"/><!-- {"left" : 0.28, "top" : 2.13, "height" : 3.35, "width" : 9.69} -->
 
 
 Notes:
@@ -241,26 +244,6 @@ Notes:
   - deal with one-to-many relationships
 * Denormalizing and application-side joins
   - Mostly helpful with many-to-many relationships
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
