@@ -1,96 +1,120 @@
-# Machine Learning on Azure
+# Advanced Apache Kafka
 
 © Elephant Scale
 
-Jan. 03, 2020
+Jan. 18, 2020
 
 ## Overview
 
-Machine Learning (ML) is a game-changer and Microsoft Azure is the second-largest cloud computing provider.  Azure’s particular strength is in the usability and integration with the Microsoft stack.
-
-In this course, the students will get an overview of ML with Python and R, the two standard environments for ML. They will also learn the specifics of the Azure and the capabilities that it offers to ML developers.
-
-One of the goals of the course is to prepare the students for taking the Azure certification exam.
-
+Kafka is definitely one of the leading distributed messaging queues, 
+found in use everywhere. More correctly called “a distributed messaging platform,” 
+it provides three key capabilities: publish-and-subscribe, store streams, and process streams. 
+This course introduces the students to using Kafka and continues with Kafka's advanced capabilities.
+It is recommended for those who have already started using Kafka and are now looking
+to make sure that they follow the best practices, want to build industrial-strength
+Kafka applications, and utilize the full power of stream processing.
 
 ## What you will learn
-- Get introduced to Machine Learning
-- Find out how to use Machine Learning tools on Microsoft Azure
-- Understand how to use automated Machine Learning
-- Learn the best practices and real-world use cases
+* Overview of Streaming technologies
+* Kafka concepts and architecture
+* Programming using Kafka API
+* Kafka Streams
+* Advanced KStreams
+* Kafka Connectors
+* KSQL and KTables
+* Monitoring Kafka
+* Tuning / Troubleshooting Kafka
 
 ## Audience
 Developers, Architects
 
 ## Duration
-Four days 
+4 days 
 
 ## Format
 Lectures and hands-on labs. (50%, 50%)
 
 ## Prerequisites
 
-* Interest in Machine Learning (Machine Learning overview is included in the course)
-* Familiarity with Python or R is a plus
+* Comfortable with Java programming language (programming exercises are in Java)
+* Comfortable in Linux environment (be able to navigate Linux command line, run commands)
 
 
 ## Lab environment
 
 * A reasonably modern laptop
-* Unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly
-* Chrome browser
-  - SSH client for your platform
+* Unrestricted connection to the Internet. 
+Laptops with overly restrictive VPNs or firewalls may not work properly
+* A browser (Chrome recommended)
+* SSH client for your platform (Putty or Terminal)
 
 ## Detailed outline
 
-* Machine Learning Overview
-   - Model Parameters
-   - Hyperparameters
-   - Understand the Decision Process
-   - Establish Performance Metrics
-   - Focus on Transparency to Gain Trust
-   - Embrace Experimentation
-   - Don’t Operate in a Silo
-   - An Iterative and Time-Consuming Process
-   - Feature Engineering
-   - Algorithm Selection
-   - Growing Demand
-* How Automated Machine Learning Works
-   - What Is Automated Machine Learning?
-   - Understanding Data
-   - Detecting Tasks
-   - Choosing Evaluation Metrics
-   - Monitoring and Retraining
-   - Automated ML
-   - Guardrails
-   - End-to-End Model Life-Cycle Management
-* Microsoft Azure Machine Learning and Automated ML
-   - The Machine Learning Process
-   - Collaboration and Monitoring
-   - Deployment
-   - Setting Up an Azure Machine Learning Workspace for Automated ML
-   - Azure Notebooks
-   - Notebook VM
-* Feature Engineering and Automated Machine Learning
-   - Auto-Featurization
-   - Deploying Automated Machine Learning Models
-* Azure Databricks - Spark
-    - Databricks Environment
-    - Machine Learning on Databricks
-    - Linear Regression
-    - Logistic Regression
-    - SVN
-    - Decision Trees, Random Forests
-    - Using Automated ML for Classification and Regression
-* How Enterprises Are Using Automated Machine Learning
-    - Model Interpretability and Transparency with Automated ML
-    - Guardrails
-* Automated ML for Everyone
-    - Azure Portal UI
-    - Power BI
-    - Preparing the Data
-    - Automated ML Training
-    - Understanding the Best Model
-    - Understanding the Automated ML Training Process
-    - Model Deployment and Inferencing
-    - Enabling Collaboration
+* Introduction to Streaming Systems
+    - Fast data
+    - Streaming architecture
+    - Lambda architecture
+    - Message queues
+    - Streaming processors
+* Introduction to Kafka 
+    - Architecture
+    - Comparing Kafka with other queue systems (JMS / MQ)
+    - Kaka concepts: Messages, Topics, Partitions, Brokers, Producers, commit logs
+    - Kafka & Zookeeper
+    - Producing messages
+    - Consuming messages (Consumers, Consumer Groups)
+    - Message retention
+    - Scaling Kafka
+    - Labs: 
+      - Getting Kafka up and running
+      - Using Kafka utilities
+* Programming With Kafka
+    - Configuration parameters
+    - Producer API (Sending messages to Kafka)
+    - Consumer API (consuming messages from Kafka)
+    - Commits, Offsets, Seeking
+    - Schema with Avro
+    - Lab:
+      - Writing Kafka clients in Java
+      - Benchmarking Producer APIs
+* Intro to Kafka Streams
+    - Streams overview and architecture
+    - Streams use cases and comparison with other platforms
+    - Learning Kafka Streaming concepts (KStream, KTable, KStore)
+    - KStreaming operations (transformations, filters, joins, aggregations)
+    - Labs:
+      - Kafka Streaming labs
+* Advanced Kafka Streams    
+    - Expressing your business use case as Kafka Streams topology
+    - Developing Kafka Streams
+    - Streams and state
+    - KTables
+    - KSQL
+    - KStreams vs KSQL use cases
+    - Kafka connectors and KSQL
+    - Connectors and KStreams
+    = Debezium connector
+    - Building a real-life KStream application
+    - The Processor API      
+* Administering Kafka
+    - Hardware / Software requirements
+    - Deploying Kafka
+    - Configuration of brokers / topics / partitions / producers / consumers
+    - Security: How secure Kafka cluster, and secure client communications (SASL, Kerberos)
+    - Monitoring: monitoring tools
+    - Capacity Planning: estimating usage and demand
+    - Troubleshooting: failure scenarios and recovery
+    - Administering KStreams
+* Monitoring and Instrumenting Kafka
+    - Monitoring Kafka
+    - Instrumenting with Metrics library
+    - Labs
+      - Monitor Kafka cluster
+      - Instrument Kafka applications and monitor their performance
+* Final workshop (time permitting)
+    - Students will build an end-to-end application simulating web traffic and send metrics to Grafana.
+    - See screenshot and video below!
+    TODO - Shiva to put links from here
+    https://elephantscale.com/training/kafka/
+    
+    
