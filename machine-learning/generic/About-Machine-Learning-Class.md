@@ -175,7 +175,7 @@ Notes:
 Notes:
 ---
 
-## Lots of Labs : Learn By Doing
+## Lots of Labs: Learn By Doing
 
 <img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.15, "top" : 1.32, "height" : 6.42, "width" : 7.96} -->
 

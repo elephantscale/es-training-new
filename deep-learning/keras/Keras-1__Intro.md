@@ -286,8 +286,9 @@ Using TensorFlow backend.
 
 ## Configuring Keras Back-end
 
-  * Linux / Mac :  `$HOME/.keras/keras.json`  
-  * Windows : `%USERPROFILE%/.keras/keras.json`
+  * Linux / Mac:  `$HOME/.keras/keras.json`  
+  * Windows: `%USERPROFILE%/.keras/keras.json`
+
 ```json
 {
     "image_data_format": "channels_last",
@@ -478,7 +479,7 @@ d = Dropout(rate = 0.1,seed=100)
   * We can specify the optimizers by 'name' or initialize the respective classes for customization
 
   * Choice of optimizers
-    - SGD : Stochastic Gradient Descent Optimizer
+    - SGD: Stochastic Gradient Descent Optimizer
     - Momentum / Nesterov
     - Adagrad
     - RMSProp
@@ -785,8 +786,8 @@ fit(x=None, y=None,
   * This method does training
 
   * Arguments
-    - x : training input data (numpy array or list of numpy arrays)
-    - y : training target data (numpy array)
+    - x: training input data (numpy array or list of numpy arrays)
+    - y: training target data (numpy array)
     - batch_size: integer, usually powers of two (default = 32)
     - epochs: integer, how many times to go through data
     - verbose: 0 or 1 or 2  (0 = silent, 1 = progress bar, 2 = one line per epoch)
@@ -916,6 +917,7 @@ model.compile( optimizer = 'adam',
                metrics = ['accuracy'] )
 ```
 <!-- {"left" : 0, "top" : 1.77, "height" : 1.07, "width" : 8.94} -->
+
   * Parameters explained:
     - Optimizer: one of 'adam', 'sgd', 'rmsprop'
     - loss function: how to measure the loss/error  (regression / classification)
@@ -974,7 +976,7 @@ print("\n%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
 
   * In Keras we can visualize **models** and **training history**
 
-  * Models  are visualized using python plot library **graphviz**
+  * Models are visualized using python plot library **graphviz**
 
   * Training history can be visualized using python **matplotlib** or **Tensorboard**
 
@@ -1023,6 +1025,7 @@ history = (model.fit(x, y,
 
 
 ---
+
 ## Visualizing Training History 1 - Accuracy
 
 ```python
@@ -1086,7 +1089,7 @@ Use Keras callback for saving your training and test metrics, as well as activat
                             write_graph=True,
                             write_images=False) )
 ```
-<!-- {"left" : 0, "top" : 2.61, "height" : 1.44, "width" : 8.94} -->
+<!-- {"left" : 0, "top" : 2.72, "height" : 1.44, "width" : 8.94} -->
 
 <br/>
 
