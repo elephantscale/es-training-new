@@ -1,8 +1,12 @@
 # Google Cloud Intro
 
+<img src="../../assets/images/logos/google-cloud-logo-2.png" style="white;width:40%;"/><!-- {"left" : 4.37, "top" : 7, "height" : 1.19, "width" : 3.65} -->
+
 ---
 
 ## Objectives
+- Learn about advantages of Cloud Computing 
+- Learn about fetures of Google Cloud
 
 ---
 
@@ -158,10 +162,8 @@
 
 <br />
 
-<img src="../../assets/images/logos/paypal-logo-1.png" style="width:20%; " /><!-- {"left" : 0.55, "top" : 4.46, "height" : 0.82, "width" : 3.08} -->  
-  &nbsp;  &nbsp;
-<img src="../../assets/images/logos/target-logo-1.png" style="width:10%; " /><!-- {"left" : 4.19, "top" : 3.62, "height" : 2.49, "width" : 1.87} -->  
-  &nbsp;  &nbsp;
+<img src="../../assets/images/logos/paypal-logo-1.png" style="width:20%; " /><!-- {"left" : 0.55, "top" : 4.46, "height" : 0.82, "width" : 3.08} --> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/target-logo-1.png" style="width:10%; " /><!-- {"left" : 4.19, "top" : 3.62, "height" : 2.49, "width" : 1.87} --> &nbsp;  &nbsp;
 <img src="../../assets/images/logos/hsbc-logo-1.png" style="width:20%; " /><!-- {"left" : 6.93, "top" : 4.49, "height" : 0.75, "width" : 2.78} -->  
 
 

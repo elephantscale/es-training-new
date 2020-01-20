@@ -1,6 +1,6 @@
 # Advantages of Cloud
 
-<img src="../../assets/images/generic/3rd-party/cloud-6.jpg" style="width:45%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/generic/3rd-party/cloud-6.jpg" style="width:40%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
 
 
 
@@ -75,6 +75,7 @@
 - Infrastructure like __hot water__
     - On demand
     - Pay for use
+    - Don't even have to think about  it
 
 ---
 

@@ -169,7 +169,7 @@ Notes:
   - Change the graph type (e.g. from line --> bar)
   - Try other customizations 
 
-<img src="../../assets/images/data-science-gcp/data-studio-5.png" style="width:50%;"/><!-- {"left" : 1.67, "top" : 5.62, "height" : 3.05, "width" : 6.47} -->
+<img src="../../assets/images/data-science-gcp/3rd-party/data-studio-5.png" style="width:50%;"/><!-- {"left" : 1.67, "top" : 5.62, "height" : 3.05, "width" : 6.47} -->
   
 
 Notes:

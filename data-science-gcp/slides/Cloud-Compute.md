@@ -31,7 +31,7 @@ Notes:
 ## Google Compute Engine 
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/google-compute-1.png" style="width:80%;" />
+<img src="../../assets/images/data-science-gcp/google-compute-1.png" style="width:80%;" />
 
 * Can rent virtual machines and manage them ourselves
 
@@ -181,7 +181,7 @@ Notes:
 
 ## Accessing the Instance
 
-<img src="../../assets/images/data-science-gcp/compute-engine-3.png" style="width: 40%;  float:right;" /><!-- {"left" : 5.59, "top" : 1.26, "height" : 3.55, "width" : 4.25} -->
+<img src="../../assets/images/data-science-gcp/3rd-party/compute-engine-3.png" style="width: 40%;  float:right;" /><!-- {"left" : 5.59, "top" : 1.26, "height" : 3.55, "width" : 4.25} -->
 
 * We will use SSH to login to our instance
 

@@ -65,7 +65,7 @@ Notes:
 * **Day 4**
      - Streaming with Beam
      - Bigtable
-     - Deploying ML models
+     - Workshop
 
 Notes:
 
@@ -103,6 +103,15 @@ Notes:
 Notes:
 
 
+---
+
+## Recommended Resources
+
+- "Data Science on Google Cloud Platform" - Valliappa Lakshmanan
+- [Google cloud tutorials](https://cloud.google.com/docs/tutorials)
+- [Google Cloud Platform examples on Github](https://github.com/GoogleCloudPlatform)
+
+<img src="../../assets/images/books/data-science-on-google-cloud.jpg" style="width:20%;" />
 
 ---
 
@@ -117,7 +126,7 @@ Notes:
     - Lab files will be distributed
 
 * Lab environment
-    - Provided in the cloud
+    - Work on Google Cloud environment
 
 ---
 

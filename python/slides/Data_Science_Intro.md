@@ -13,7 +13,7 @@ Notes:
 
 ## What Is Data Science?
 
-  * “Data-driven application development”
+  * "Data-driven application development"
 
   * A new breed of discipline fueled by
 
@@ -26,30 +26,28 @@ Notes:
     - Computer Science
     - Statistics etc.
 
-  * “More data usually beats better algorithms”
-
-    - Anand Rajaraman (Walmart Labs)
-
-  * New hot thing!
+  * "More data usually beats better algorithms"
 
 Notes:
 
 ---
 
-## DDD Example: LinkedIn’s People You May Know
+## DDD Example: LinkedIn's People You May Know
+
+<!-- TODO shiva -->
+<img src="../../assets/images/data-analysis-python/3rd-party/DDD.png"  style="width:30%; float:right;"/><!-- {"left" : 2.56, "top" : 4.32, "height" : 3.96, "width" : 5.14} -->
 
   * Question for class
 
   * How will you implement this?
 
-  * First version is pretty simple (email matching)
+  * First version is pretty simple (contact email matching)
 
-  * ‘finds’
+  * 'finds'
 
     - Profiles with photos get more clicks
-    - ‘you both know this person’ removes creepy factor
+    - 'you both know this person' removes creepy factor
 
-<img src="../../assets/images/data-analysis-python/3rd-party/DDD.png" alt="DDD.png" style="width:24%;"/><!-- {"left" : 2.56, "top" : 4.32, "height" : 3.96, "width" : 5.14} -->
 
 Notes:
 
@@ -58,17 +56,17 @@ Notes:
 ## Data Scientist
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/Data-Scientist.png" alt="Data-Scientist.png" style="width:50%;"/><!-- {"left" : 0.25, "top" : 1.78, "height" : 6.17, "width" : 9.74} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Data-Scientist.png" alt="Data-Scientist.png" style="width:55%;"/><!-- {"left" : 0.25, "top" : 1.78, "height" : 6.17, "width" : 9.74} --> 
+<img src="../../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist.png" style="width:35%;"/><!-- {"left" : 0.25, "top" : 1.78, "height" : 6.17, "width" : 9.74} -->
 
 Notes:
 
 ---
 
-## Data Scientist
+## Who is a Data Scientist?
 
-  * “A data scientist is a business analyst working in Silicon Valley.”
-
-    - unknown on Twitter
+  * "A data scientist is a business analyst working in Silicon Valley."
 
   * Data Scientist must have a firm grasp on computer science
 
@@ -112,9 +110,9 @@ Notes:
 | BusinessAnalyst                                                                 | Data Scientist                           |
 |---------------------------------------------------------------------------------|----------------------------------------- |
 | **Differences:**                                                                |                                          |
-| Usually works with high-level tools (Business Intelligence (BI) tools,,Excel …) | Usually works with languages, packages … |
-| Reports                                                                         | ‘Insights’                               |
-| “Known Unknowns”                                                                | “UnknownUnknowns”                        |
+| Usually works with high-level tools (Business Intelligence (BI) tools,,Excel ...) | Usually works with languages, packages ... |
+| Reports                                                                         | 'Insights'                               |
+| "Known Unknowns"                                                                | "UnknownUnknowns"                        |
 |                                                                                 |                                          |
 | **Similarities:**                                                               |                                          |
 | Both have deep domain knowledge (banking etc.)                                  |                                          |
@@ -133,7 +131,7 @@ Notes:
 | **Differences:**                                   |                                                           |
 | Not much software engineering                      | Lot of development work                                   |
 | Use existing tools (Matlab, R, ...)                | Use and create tools that do not exist yet                |
-| Usually analyze a ‘sample’ of data                 | Analyze all data using Big Data technologies (Hadoop etc.)|
+| Usually analyze a 'sample' of data                 | Analyze all data using Big Data technologies (Hadoop etc.)|
 |                                                    |                                                           |
 | **Similarities:**                                  |                                                           |
 | Have strong knowledge of stats, modeling techniques|     &nbsp;                                                |
@@ -144,31 +142,28 @@ Notes:
 
 ---
 
-## Reports vs. Insights
-
-<img src="../../assets/images/data-analysis-python/3rd-party/Reports.png" alt="Reports.png" style="width:30%;float:right;"/><!-- {"left" : 6.07, "top" : 1.22, "height" : 2.81, "width" : 3.89} -->
-
-  * Reports  (“Known Unknowns”)
-    - Weekly sales etc.
-
-  * Insights (“Unknown Unknowns”)
-    - Is there a relation between X & Y?
-
-  * Insight example
-    - Bill pay data & click stream data
-
-
-Notes:
-
----
-
-## So Here Is Data Scientist
-
+## Skill Set for a Data Scientist
 
 <img src="../../assets/images/data-analysis-python/data-scientist-skills.png" alt="data-scientist-skills.png" style="width:70%;"/><!-- {"left" : 1.03, "top" : 2.2, "height" : 4.67, "width" : 8.18} -->
 
 Notes:
 
+---
+
+## Your Data Science Skills!
+
+- Instructor, please distribute : __`Data-Scientist-Skill-Matrix.xlsx`__
+
+- Please use the provided spreadsheet to self evaluate
+
+
+<!-- TODO shiva -->
+<img src="../../assets/images/data-analysis-python/data-sciece-skills-1.png"  style="width:40%;"/>
+
+
+---
+
+# Doing Data Science
 ---
 
 ## Doing Data Science
@@ -239,7 +234,7 @@ Notes:
 
 ## Data Pipelines
 
-  * Once the ‘one time’ analysis is successful, you may want to do analysis on new data routinely.
+  * Once the 'one time' analysis is successful, you may want to do analysis on new data routinely.
 
   * Need a data pipeline to
     - Gather data from multiple sources
@@ -277,7 +272,7 @@ Notes:
 
 <img src="../../assets/images/data-analysis-python/3rd-party/Understanding-Data.png" alt="Understanding-Data.png" style="width:30%;float:right;"/><!-- {"left" : 6.15, "top" : 1.16, "height" : 2.67, "width" : 3.9} -->
 
-  * Before doing ‘deep learning’ of data, understand the data.
+  * Before doing 'deep learning' of data, understand the data.
 
   * Basic questions
     - Is there a pattern?
@@ -286,7 +281,7 @@ Notes:
   * **Visualizations** can help greatly!
     - Just do some quick & dirty graphs.
 
-  * Identify ‘interesting segments’
+  * Identify 'interesting segments'
 
   * Need to sample?  Or process entire data set?
 
@@ -298,7 +293,7 @@ Notes:
 
 ## Model Building
 
-  * Don’t do this until you have a good understanding of data.(See previous section.)
+  * Don't do this until you have a good understanding of data.(See previous section.)
 
   * Pick right modeling technique
     - Clustering
@@ -306,7 +301,7 @@ Notes:
     - Etc.
 
   * Pick the right model for data
-    - Don’t get ‘hung up’ on one model.
+    - Don't get 'hung up' on one model.
     - Try a few to identify the best fitting model.
     - Experience counts!
 
@@ -316,7 +311,7 @@ Notes:
 
 ## Model Validation
 
-  * Models need to be ‘verified’  / ‘validated.’
+  * Models need to be 'verified'  / 'validated.'
 
   * Split the data set into
 
@@ -424,23 +419,18 @@ Notes:
 
 ## Data Science:  The Future
 
-  * “Data scientist: The hot new gig in tech”, Fortune, 2011
 
-  * The internet of things
+  * We are going to have more data
 
    - Sensors, sensors everywhere
    - Connected devices driving a deluge of data
-   - Most of our current devices will get “smarter” thanks to data
+   - Most of our current devices will get "smarter" thanks to data
 
-  * Real-time machine learning
-
+  * Real-time data processing
    - Able to process, analyze, and learn data in real-time
-   - Amazing applications in robotics and automated expert systems (“Google car”)
-
-  * Deep learning
-
-    - Using biological systems to model learning
-    - Human brain is a good example – holds tremendous promise
+   - Amazing applications in robotics and automated expert systems ("Google car")
+   
+  * AI will dominate
 
 
 Notes:
@@ -450,25 +440,17 @@ Notes:
 ## Recommended Resources
 
   * On-line course by Dr. Ng from Stanford University
-
   * Machine Learning for Hackers
-
    - Conway and White
    - Practical examples in R
-
   * Information Theory, Inference, and Learning Algorithms
-
     - David Mackay
     - Free downloadable PDF!
     - Great introduction to the learning theory
-
   * Pattern Recognition and Machine Learning
-
     - Bishop
     - More theoretical but good topical coverage
-
   * The elements of statistical learning
-
     - Hastie, Tibshirani, and Friedman
 
 
