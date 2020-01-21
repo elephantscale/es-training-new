@@ -1,4 +1,4 @@
-# Cloud SQL
+# Google Cloud SQL
 
 
 <img src="../../assets/images/logos/google-cloud-logo-2.png" style="white;width:40%;"/><!-- {"left" : 4.37, "top" : 7, "height" : 1.19, "width" : 3.65} -->
@@ -9,11 +9,11 @@
 
 ## About This Class
 
-* Introduces Cloud SQL
+* Introduction to Cloud SQL
 
-* How does it work?
+* What is SQL
 
-* Cloud SQL in action.   
+* Cloud SQL Launch Checklist
 
 
 Notes:
@@ -36,7 +36,7 @@ Notes:
 
 ## What is Cloud SQL
 
-<img src="../../assets/images/data-science-on-gcp/3rd-party/cloud-sql-1.png" style="background:white;width:25%;float:right;"/><!-- {"left" : 6.31, "top" : 1.38, "height" : 0.91, "width" : 3.79} -->
+<img src="../../assets/images/logos/cloud-sql.png" style="background:white;width:25%;float:right;"/><!-- {"left" : 6.31, "top" : 1.38, "height" : 0.91, "width" : 3.79} -->
 
  * Easy-to-manage compatible relational database in the cloud.    
  * Automates database provisioning, storage capacity management, and other time-consuming tasks.   
@@ -47,7 +47,7 @@ Notes:
 
 ## Secure and Compliant
 
-<img src="../../assets/images/generic/3rd-party/cloud-sql-1.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/data-science-gcp/3rd-party/cloud-sql-1.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 * Automatic data encryption at rest and in transit.
 * Private connectivity with Virtual Private Cloud and user controlled network access, includes firewall protection.
 * Compliant with SSAE 16, ISO 27001, PCI DSS v3.0, and HIPPA.
@@ -59,7 +59,7 @@ Notes:
 
 ## Scale as you go
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/data-science-gcp/3rd-party/cloud-sql-2.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 
  * Emphasis on concepts & fundamentals
 
@@ -67,52 +67,91 @@ Notes:
 
  * Hands-on (learn by doing)
 
-
-
-
 ---
 
-## Introductions
+## Setup in minutes
 
- * About Instructor
- * About you
-     - Your Name
-     - Your background (developer, admin, manager, ...)
-     - Technologies you are familiar with
-     - Familiarity with Python (scale of 1 - 4 ;  1 - new,   4 - expert)
-     - Familiarity with Google Cloud (scale of 1 - 4 ;  1 - new,   4 - expert)
-     - Something non-technical about you!(favorite ice cream flavor / hobby...)
-
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
+ * Standard connection drivers
+ * Built in migrational tools allow you to create and connect to your first database in just a few minutes.
 
 Notes:
 
 
 ---
 
-## Recommended Resources
 
-- "Data Science on Google Cloud Platform" - Valliappa Lakshmanan
-- [Google cloud tutorials](https://cloud.google.com/docs/tutorials)
-- [Google Cloud Platform examples on Github](https://github.com/GoogleCloudPlatform)
+_"Using Google App Engine and Google Cloud SQL make our applications go live in half the time and have provided us with hassle-free control over all processes.  The shift to Google Cloud SQL has allowed us to focus on making our applications even better. "_
 
-<img src="../../assets/images/books/data-science-on-google-cloud.jpg" style="width:20%;" />
+-Yogesh Agarwal, CEO, Daffodil
+
 
 ---
 
-## Class Logistics
+## What is SQL
 
-* Instructor's contact
+* SQL stands for Structured Query Language
 
-* Slides
-    - For each session, slides will be emailed out or delivered via virtual classroom
+* It is a database language used to query and manipulate the data in the database.  
 
-* Labs
-    - Lab files will be distributed
+* Domain-specific language used designed for managing data held in a regional database management system(RDBMS) or for stream processing in a relational data stream management system(RDSMS)
 
-* Lab environment
-    - Work on Google Cloud environment
+* Specifically useful in handling structured data.
+
+<img src="../../assets/images/data-science-gcp/3rd-party/cloud-sql-3.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 
 ---
 
-## Let's Get Started!
+## Cloud SQL Launch Checklist
+
+* Launch checklist for Cloud SQL gives recommended activites that you should complete for launching a commercial application that uses Cloud SQL.
+* The checklist is broken down into three sections.
+    - Architecture Design and Development
+    - Alpha Testing
+    - Final launching
+
+<img src="../../assets/images/data-science-gcp/3rd-party/cloud-sql-4.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+
+---
+## Architecture Design and Development
+
+* Recommended use this checklist in the early stage of development.
+*  This part of checklist requires most time to complete.
+
+---
+## Architecture Design and Development checklist
+
+*  Assess the performance characteristics of Cloud SQL and the service's limitations and restrictions.
+*  Ensure your DevOps team is familiar with the Cloud Console and Cloud SDK.
+*  Consult Cloud SQL community support for information and practical advice on Cloud SQL.
+*  Subscribe to the Cloud SQL announce group.  Posts are made to this group for service updates, issues, and incident reports.  
+
+---
+
+## Alpha Testing
+
+*  Use when you are close to code complete.
+*  Want to get initial metrics about application.  
+
+----
+
+## Alpha Testing Checklist
+
+* Remain current on the drivers that provide data access for your development platform.
+* Load test, early, and realistically.   
+* If you are connecting from Compute Engine, make sure the firewall behavior related to idle connections does not harm the application.
+*  Observe the connection limits for the App engine apps.
+*  Make sure there is a strategy in place for doing schema changes and the impact of doing them is well understood.  
+
+---
+## Final Launch
+
+*  Use before and shortly before and during your launch.
+
+<img src="../../assets/images/data-science-gcp/3rd-party/cloud-sql-5.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+
+---
+
+## Final Launch Checklist
+
+* There are no Cloud SQL specific activities for launch.
+* If you have followed the checklist to this point you are ready for the applications launch.
