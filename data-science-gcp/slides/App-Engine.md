@@ -1,6 +1,10 @@
 # Google App Engine
 
+<<<<<<< HEAD
  <img src="../../assets/images/logos/google-cloud-logo-2.png" style="white;width:40%;"/>   
+=======
+ <img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.25, "top" : 6.52, "height" : 1.61, "width" : 1.89} -->    &nbsp; &nbsp;
+>>>>>>> b3e5b5029a06ef7eadd5114d567d69ee1855c014
 
 ---
 

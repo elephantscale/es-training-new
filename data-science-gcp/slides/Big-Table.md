@@ -1,6 +1,6 @@
 # Google Big Table
 
- <img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+ <img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.25, "top" : 6.52, "height" : 1.61, "width" : 1.89} -->   &nbsp; &nbsp;
 
 ---
 

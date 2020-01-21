@@ -211,7 +211,7 @@ Notes:
 
   * CNNs for MNIST image classification
 
-    - **Objective**: Use CNNs for MNIST image classification.
+    - **Objective:** Use CNNs for MNIST image classification.
     - **Steps:** 
 
       - Apply CNNs for MNIST image classification. Print training and test accuracy of the trained model. 
@@ -237,7 +237,7 @@ Notes:
   * **Approximate time:** 15-20 minutes
 
   * **Instructions for students:**
-    - (Tensorflow)  **03-lowlevel/3.3-mnist-cnn.ipynb** lab
+    - (Tensorflow) **03-lowlevel/3.3-mnist-cnn.ipynb** lab
 
 
 Notes:
@@ -277,7 +277,7 @@ Notes:
 
   * **Instructions for students:**
 
-    - (Keras)  **06-cnn/6.1-cnn-fashion.ipynb** lab
+    - (Keras) **06-cnn/6.1-cnn-fashion.ipynb** lab
 
 Notes:
 

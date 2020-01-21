@@ -67,7 +67,7 @@ Notes:
 
 ---
 
-## Goal For This ML Class : 'ML Engineer'
+## Goal For This ML Class: 'ML Engineer'
 
 
 |                                     |          API users         |                                               ML Engineer                                               |                    Data Scientists                    |
@@ -80,6 +80,7 @@ Notes:
 | __Can Come up with New Algorithms__ |             no             |                                        Can adopt a new algorithm                                        |            Can come up with new algorithms            |
 
 
+<!-- {"left" : 0.26, "top" : 1.22, "height" : 5.9, "width" : 9.75} -->
 
 
 Notes:

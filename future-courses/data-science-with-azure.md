@@ -1,5 +1,7 @@
 # Data Science on Azure
+
 © Elephant Scale
+
 Jan. 06, 2020
 
 ## Overview

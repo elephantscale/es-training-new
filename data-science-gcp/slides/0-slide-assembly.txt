@@ -1,28 +1,48 @@
 
 ## outline
+
+## Day-1
 ../data-science-on-google-cloud-outline.pdf
 
 ## About
 About-Data-Science-on-Google-Cloud-Class.md
 
+../../python/slides/Data_Science_Intro.md
+../../python/Data-Scientist-Skill-Matrix.xlsx
+
 Google-Cloud-Intro.md
 
-Data-in-the-Cloud.md
+Cloud-Compute.md
+
+Cloud-Storage.md
+
+Data-Analytics-on-Google-Cloud.md
 
 Data-Studio.md
 
-Data-Analysis-on-Google-Cloud.md
+../../machine-learning/generic/Data-Exploration.md
 
+exit
+
+## TODO
 Cloud-SQL.md
 
+## TODO
 Big-Query.md
 
+## TODO
 App-Engine.md
 
+## TODO
 Cloud-Dataflow.md
 
-## Spark-Intro
+## Hadoop & Spark Intro
+$ES_HOME/es-training/hadoop/slides/Hadoop-Intro.pptx
+$ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-1.pptx
+$ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-2.pptx
+$ES_HOME/es-training/spark/slides/v2/SPARK__MLlib.pptx
 
+## TODO
 Dataproc.md
 
 ## Machine Learning
@@ -33,6 +53,7 @@ Dataproc.md
 
 ../../deep-learning/tensorflow/TENSORFLOW-Intro.md
 
+## TODO
 Big-Table.md
 
 Workshop-1.md

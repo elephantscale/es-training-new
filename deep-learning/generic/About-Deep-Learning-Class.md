@@ -2,7 +2,7 @@
 
 <img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" style="width:20%;"/>  <!-- {"left" : 2.91, "top" : 6.29, "height" : 2.14, "width" : 2.33} -->    &nbsp; &nbsp;
  <img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
-<img src="../../assets/images/logos/keras-logo-1.png" style="white;width:15%;"/>  <!-- {"left" : 7.97, "top" : 6.91, "height" : 0.52, "width" : 1.81} -->
+<img src="../../assets/images/logos/keras-logo-1.png" style="width:15%;"/>  <!-- {"left" : 7.97, "top" : 6.91, "height" : 0.52, "width" : 1.81} -->
 
 
 
@@ -82,7 +82,7 @@ Notes:
  * Emphasis on concepts & fundamentals
 
  * Highly interactive (questions and discussions are welcome)
- 
+
  * Hands-on (learn by doing)
 
 <img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;"/> <!-- {"left" : 2.05, "top" : 3.28, "height" : 4.97, "width" : 6.16} -->

@@ -1,5 +1,4 @@
 # Google Cloud for Data Scientists
-© Elephant Scale
 Dec. 20, 2019
 
 ## Overview
