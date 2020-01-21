@@ -1,10 +1,8 @@
 # Google App Engine
 
-<<<<<<< HEAD
  <img src="../../assets/images/logos/google-cloud-logo-2.png" style="white;width:40%;"/>   
-=======
- <img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.25, "top" : 6.52, "height" : 1.61, "width" : 1.89} -->    &nbsp; &nbsp;
->>>>>>> b3e5b5029a06ef7eadd5114d567d69ee1855c014
+
+
 
 ---
 
@@ -19,21 +17,15 @@
 
 - App Engine is Google's application platform
 
-
-
 - Fully managed and hosted on the Google Cloud platform
-
-
 
 - Easy to build and deploy application
 
-
-
 - No need to manage infrastructure of application
-
 
 - Application infrastructure hosted in a specific region
 
+ <img src="../../assets/images/logos/google-appengine-logo.png" style="white;width:40%;"/>  
 
 Notes:
 
@@ -45,7 +37,7 @@ Notes:
 
 - Allows for custom runtimes with Docker containers
 
-- Allows for different libraries
+- Allows for different supported libraries
 
 - Fully managed infrastructure
 
@@ -89,10 +81,6 @@ Notes:
     - Can use a custom runtime or code written in a non-supported language but must be in a Docker container
 
     - Uses resources of project in Compute Engine.
-
-
-
-
 
 Notes:
 
@@ -153,22 +141,6 @@ Notes:
 
 Notes:
 Source: https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine
----
-## Components of an application
-
-- Versions:
-  - Multiple versions of apps are supported.
-  - Traffic can be routed to certain versions or split between them
-  - Allows for easy testing and rollback
-
-- Instances  
-  - Versions run on Instances
-  - App Engine will scale app to match traffic Loading
-  - Scale up: increases number of instances to mantain performance
-  - Scale down: reduce amount of inactive instances and minimize costs
-
-
-Notes:
 
 ---
 
@@ -188,7 +160,128 @@ Notes:
 
 Notes:
 
+
 ---
+## Instances
+
+- Provide the resources hosting your application
+
+- Application can run on one or multiple instances with requests distributed between the instances
+
+- Instance Types
+  - Dynamic: based on current needs
+  - Resident: always running
+
+
+
+
+Notes:
+
+---
+
+## Instances
+
+- Scaling types:
+  - Affect how instances are created
+  - Automatic
+    - Makes new dynamic instances depending on response latencies and request rate.
+  - Basic
+    - Makes dynamic instances when the app gets a request. Instance is shut down when app is idle.
+  - Manual
+    - Uses resident instances that run the explicitly specified number of instances
+
+
+Notes:
+
+---
+
+## Instances
+
+- States:
+  - Auto-scaled instances are always running
+  - Manual or basic instances can be either stopped or running
+
+- Startup
+  - A service instance is created by a empty HTTP GET request by the App Engine
+    - Runs a program indefinitely
+    - Initializes an instance before it receives additional traffic
+
+
+Notes:
+
+---
+
+## Instances
+
+- Shutdown:
+  - by manually stopping an instance
+  - deploying a new version to the service
+  - instance using too much memory
+  - application exceeded instance hours
+  - the instance moved by App Engine to another machine
+
+  - The App Engine typically keeps manual and basic instances continually running
+
+Notes:
+
+---
+
+## Python 3 Runtime Environment
+
+- App Dependencies
+  - Almost any python library can be deployed with the application
+
+  - App Engine uses pip (Python package manager) to install every library defined in requirements.txt file in app's directory
+
+  - These are installed upon app deployment
+
+
+Notes:
+
+---
+
+## Python 3 Runtime Environment
+
+- Configuration file:
+  - application configuration is specified by app.yaml file
+  - minimum specification in the configuration file is the runtime language
+- Startup
+    - runtime is started using the entrypoint field
+    - an optional entry point can be specified using web servers such as gunicorn, uwsgi and Tornado
+
+Notes:
+
+---
+
+## Data Storage
+
+- Can use Google Cloud service or another storage service.
+- Third-party databases can also be connected to an App Engine instance
+
+- Google Cloud Storage
+  - Cloud Firestore (NoSQL)
+  - Cloud SQL for MySQL
+  - Cloud Storage to write files, read, store static files in the runtime environment
+
+Notes:
+
+---
+## Conclusion
+
+- App Engine is a fully managed and hosted application service on the Google Cloud
+
+- There is no requirement to work with application infrastructure
+
+- App services will automatically scale up and down based on load
+
+- Most popular language runtimes are supported such as Python
+
+- Can connect to different data storage structures including Cloud SQL
+
+Notes:
+
+---
+
 ## Review and Q&A
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
