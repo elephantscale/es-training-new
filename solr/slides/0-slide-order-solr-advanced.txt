@@ -1,0 +1,21 @@
+## to generate slides
+##     $    $ES_HOME/utils/presentations/slides-assembler.sh   slide-order-advanced-solr.txt
+
+./About-Advanced-Solr-Class.md
+../outlines/Advanced-Solr.md
+./Solr-Intro.md
+./SolrCloud.md
+$ES_HOME/es-training/zookeeper/slides/ZK-1__Intro.pptx
+./Searching.md
+./Indexing.md
+$ES_HOME/es-training/kubernetes/slides/Kubernetes-Intro.md
+./Configuration.md
+./Schema_Updating.md
+./DevEnvironment.md
+./Performance_Tuning.md
+./Relevance.md
+./Extended_Features.md
+./Lucene_API.md
+./OptimizingSolr.md
+./SolrSecurity.md
+
