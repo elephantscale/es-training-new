@@ -1167,7 +1167,7 @@ Simple HTML page that posts a document to Elasticsearch without authenticating.
 Sending JSON as Plain Text
 
 Strict checking of content-type is also useful as a layer of protection against Cross Site Request Forgery attacks.
-If you run an out-of-the-box install of Elasticsearch 5 on your local computer, and then open up the page noted in the slide, in your web browser, it will add a new document in your Elasticsearch cluster that stores your browser’s User Agent and the time that you loaded the page. That’s not so scary, but with minimal changes we could make that same page overwrite or delete existing documents.
+If you run an out-of-the-box install of Elasticsearch 5 on your local computer, and then open up the page noted in the slide, in your web browser, it will add a new document in your Elasticsearch cluster that stores your browser’s User Agent and the time that you loaded the page. That’s not so scary, but with minimal changes we could make that same page overwrite or delete existing documents.
 
 
 ---
