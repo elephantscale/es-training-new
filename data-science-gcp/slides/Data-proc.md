@@ -151,6 +151,13 @@ Notes:
 <img src="../../assets/images/data-science-gcp/3rd-party/dataproc-jobs.png" style="width:50%;float:center;"/>
 
 ---
+## Dataproc Outputs
+
+- Application on the cluster
+- Dataproc jobs
+- GCP Products
+
+---
 ## Cloud Dataproc Workload
 
 
