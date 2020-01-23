@@ -68,22 +68,6 @@ Notes:
 
 ---
 
-## Meet the instructor
-
-<img src="../../assets/images/people/george-niece.png" alt="george-niece.png" style="width:25%;float:right;"/>
-
-* **George Niece**
-  - Digital Transformation Consultant with a background in AppDev, DevOps, InfoSec, Chaos Engineering and Enterprise Architecture. Focused on cloud-native technologies: automation, containers & orchestration
-
-* Twitter: @georgeniece
-
-* LinkedIn: Linkedin.com/in/GeorgeNiece
-
-* Mail: George.Niece@DigitalTransformationStrategies.net
-
-
-
----
 
 ## Introductions
 
