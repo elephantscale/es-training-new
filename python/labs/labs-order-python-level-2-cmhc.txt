@@ -1,0 +1,14 @@
+#$ES_HOME/utils/labs/labs-assembler.sh labs-order-python-level-2-cmhc.txt
+
+$ES_HOME/python-labs/stats
+$ES_HOME/python-labs/exploration
+$ES_HOME/python-labs/visualization
+
+$ES_HOME/python-labs/sklearn
+
+$ES_HOME/python-labs/images
+$ES_HOME/python-labs/data
+
+$ES_HOME/spark-labs/04-dataframe/4.1-dataframe-python.ipynb pyspark/
+$ES_HOME/spark-labs/04-dataframe/4.2-sql-python.ipynb pyspark/
+
