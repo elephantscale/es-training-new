@@ -17,4 +17,7 @@ Relationships.md
 Relevancy.md
 Kibana.md
 Logstash.md
+X-Pack.md
 Trends.md
+
+
