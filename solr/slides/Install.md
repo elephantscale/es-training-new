@@ -1,7 +1,12 @@
 # Solr Install 
+
 ---
+
+
 # Installing And Running Solr
+
 ---
+
 
 ## Installing Solr
 
@@ -28,8 +33,8 @@ Notes:
 
 ## Lab, contd
 
+![](../images/slor-01.png) <!-- {"left" : 1.18, "top" : 0.92, "height" : 6.3, "width" : 7.61} -->
 
-<img src="../../assets/images/solr/3rd-party/slor-01.png" style="width:50%;"/> <!-- {"left" : 0.97, "top" : 1.38, "height" : 6.87, "width" : 8.3} -->
 
 
 Notes:
@@ -40,7 +45,8 @@ Notes:
 ## Solr Example Structure
 
 
-<img src="../../assets/images/solr/solr-structure.png" style="width:60%;"/> <!-- {"left" : 0.71, "top" : 2.14, "height" : 5.36, "width" : 8.83} -->
+![](../images/solr-structure.png) <!-- {"left" : 0.71, "top" : 1.34, "height" : 5.36, "width" : 8.83} -->
+
 
 Notes:
 
@@ -50,35 +56,35 @@ Notes:
 
 ## Directory Layout
 
+![](../images/solr-directory-layout.png) <!-- {"left" : 1.02, "top" : 2.14, "height" : 3.69, "width" : 8.21} -->
 
-<img src="../../assets/images/solr/3rd-party/solr-directory-layout.png" style="width:70%;"/> <!-- {"left" : 1.02, "top" : 2.14, "height" : 3.69, "width" : 8.21} -->
 
 
 ---
 
+
 ## Directory Layout
+* After installing Solr, you’ll see the following directories and files within them:
 
- * After installing Solr, you’ll see the following directories and files within them:
-
- * **bin/:**  This directory includes several important scripts that will make using Solr easier.
-   -  `solr` and `solr.cmd`: start and stop Solr, create  collections or cores, configure autentication, work with configuration files in SolrCloud.
-   - `post`: The PostTool, which provides a simple command line interface for POSTing content to Solr.
-   - `solr.in.sh` and solr.in.cmd`:  System-level properties for Java, Jetty, and Solr - set properties in one place.
-   - `install_solr_services.sh`: run solr as a service.
+* **bin/** :  This directory includes several important scripts that will make using Solr easier.
+  -  `solr` and `solr.cmd` : start and stop Solr, create  collections or cores, configure authentication, work with configuration files in SolrCloud.
+  - `post` : The PostTool, which provides a simple command line interface for POSTing content to Solr.
+  - `solr.in.sh` and solr.in.cmd` :  System-level properties for Java, Jetty, and Solr - set properties in one place.
+  - `install_solr_services.sh` : run solr as a service.
 
 ---
 
 ## Directory Layout
 
  * **contrib/** Solr’s contrib directory includes add-on plugins for specialized features of Solr.
- * **dist/:**  main Solr .jar files.
- * **docs/:** link to online Javadocs for Solr.
- * **example/:** examples demonstrate various Solr capabilities.
- * **licenses/:** The licenses directory includes all of the licenses for 3rd party libraries used by Solr.
+ * **dist/** :  main Solr .jar files.
+ * **docs/**  : link to online Javadocs for Solr.
+ * **example/** :  examples demonstrate various Solr capabilities.
+ * **licenses/** :  The licenses directory includes all of the licenses for 3rd party libraries used by Solr.
 
 ---
 
-## Directory Layout: Server
+### Directory Layout: Server
 
  * **server/** This directory is where the heart of the Solr application resides. 
    - Solr Admin UI (server/solr-webapp)
@@ -90,6 +96,8 @@ Notes:
 ---
 
 # Content and Query 
+
+
 ---
 
 ## Lab: Simple Query
@@ -107,10 +115,7 @@ Notes:
 
 ## Lab, contd
 
-
-<img src="../../assets/images/solr/3rd-party/solr-02.png" style="width:35%;"/><!-- {"left" : 2.28, "top" : 1.67, "height" : 6.31, "width" : 5.69} -->
-
-
+![](../images/solr-02.png) <!-- {"left" : 0.71, "top" : 1.34, "height" : 5.36, "width" : 8.83} -->
 
 
 Notes:
@@ -119,12 +124,10 @@ Notes:
 ---
 
 # Reading Solr XML Response
----
 
 ## Example
 
-
-<img src="../../assets/images/solr/3rd-party/solr-03.png" style="width:50%;"/> <!-- {"left" : 1.01, "top" : 1.6, "height" : 6.45, "width" : 8.22} -->
+![](../images/solr-03.png) <!-- {"left" : 1.02, "top" : 0.9, "height" : 6.45, "width" : 8.22} -->
 
 
 Notes:
@@ -133,12 +136,10 @@ Notes:
 ---
 
 # Changing Parameters In The URL
----
 
 ## Example
 
-
-<img src="../../assets/images/solr/3rd-party/solr-04.png" style="width:40%;"/> <!-- {"left" : 1.83, "top" : 1.71, "height" : 6.23, "width" : 6.59} -->
+![](../images/solr-04.png) <!-- {"left" : 1.83, "top" : 0.96, "height" : 6.23, "width" : 6.59} -->
 
 Notes:
 
@@ -148,7 +149,7 @@ Notes:
 ## Let’s Break Up The Query
 
 
-<img src="../../assets/images/solr/3rd-party/query.png" style="width:60%;float:left;"/> <!-- {"left" : 0.6, "top" : 2.46, "height" : 2.58, "width" : 9.06} -->
+![](../images/query.png) <!-- {"left" : 0.6, "top" : 2.46, "height" : 2.58, "width" : 9.06} -->
 
 
 Notes:
@@ -170,6 +171,7 @@ Notes:
 Notes:
 
 
+---
 
 
 

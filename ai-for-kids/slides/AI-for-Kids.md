@@ -71,7 +71,43 @@ Notes:
 
 ---
 
-## Let's Look at Finland
+## Finland
+
+![](../artwork/finland.png)
+---
+
+## Invented a Computer
+    
+* Really, Linux, an operating system
+![](../artwork/linux-maskot.jpg)
+
+
+---
+
+## Invented Linux Thorvalds
+    
+![](../artwork/Linus_Torvalds_story.png)
+
+---
+
+## Invented Chat
+    
+* In 1998, before most of the kids here were born
+* Also, invented the first Internet browser
+![](../artwork/irc-chat.png)
+
+
+---
+
+## Invented Angry Birds
+    
+* For that company, it was game number 50!
+![](../artwork/angry-birds.jpg)
+
+
+---
+
+## Finland Facts
     
 * Birthplace of Linux Thorvalds
 * Obsessed with texting
@@ -88,6 +124,22 @@ https://www.politico.eu/article/finland-one-percent-ai-artificial-intelligence-c
 
 ---
 
+## Finland AI
+    
+* Population 5.8 million
+* Taught 1% of its population AI a year ago
+* Makes its course open and in 24 languages
+
+![](../artwork/finland-ai.png)
+
+
+Notes:
+
+
+https://www.elementsofai.com/
+---
+
+# Let us do AI!
 
 ## What is Quick Draw?
 
@@ -107,7 +159,7 @@ https://www.politico.eu/article/finland-one-percent-ai-artificial-intelligence-c
   
 ---
 
-## Why Data is Important?
+## Why is Data Important?
 ![](../artwork/dataisthenewoil.png)
 
 ---
@@ -118,7 +170,7 @@ https://www.politico.eu/article/finland-one-percent-ai-artificial-intelligence-c
 ---
 
 ## Cats vs Dogs Explained
-* The teacher show Cat vs Dogs Kaggle competitions
+* The teacher show Cat vs Dogs recognizer
 * Let the student create their own recognizer
 * Promises to explain how the recognizer works
 * Here is a picture of a cat as your reward
