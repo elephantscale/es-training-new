@@ -231,7 +231,16 @@ Notes:
 We will look at the two major metrics: precision and recall.
 - Pre-requisites: None  
 - Approximate time: 30 minutes
-- Instructions: `solr-labs/intro/1-IR.md`
+- Instructions: `solr-labs/intro/1-IR.md` (solr)
+- Elastic: `precision-recall/README.md`
+
+
+Notes:
+
+
+---
+
+
 
 
 Notes:

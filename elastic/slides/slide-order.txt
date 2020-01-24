@@ -10,13 +10,18 @@
 ##       $ES_HOME/utils/presentations/slides-assembler.sh slide-order.txt
 
 About_Elastic_Class.md
-Search_Intro.md
+../../search-common/slides/Search_Intro.md
 ../../search-common/slides/Lucene_API.md
 Elasticsearch_Intro.md
-Relationships.md
+Elastic-SQL.md
+../../microservices/slides/REST-Intro.md
+Mappings.md
 Relevancy.md
-Kibana.md
+Python-API.md
 Logstash.md
+Analytics.md
+Kibana.md
+Filebeat.md
 X-Pack.md
 Trends.md
 
