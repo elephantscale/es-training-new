@@ -800,8 +800,13 @@ Once it figured out the document it can map it to a shard and redirect to approp
 
 ## Primary and Replica Shards
 
+* This **index** has two **primary shards** and a **replication factor of 2.**
+* Your application should round-robin requests amongst nodes.
 
-<img src="../../assets/images/elastic/primary-replica.png" alt="primary-replica.png" style="width:70%;"/>
+<img src="../../assets/images/elastic/primary-replica-shards-00.png" alt="primary-replica-shards-00.png" style="width:70%;"/>
+
+* **Write** requests are routed to the primary shard, then replicated  
+* **Read** requests are routed to the primary or any replica
 
 
 Notes:
