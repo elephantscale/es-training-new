@@ -551,3 +551,114 @@ curl -H 'Content-Type: application/json' -XGET '10.0.2.15:9200/shakespeare/_sear
 ```
 
 
+# Search as You Type
+
+
+Notes:
+
+search as you type wikipedia, google etc.. 
+
+---
+
+## Search-as-you-type
+
+<img src="../../assets/images/elastic/3rd-party/search-as-you-type.png" alt="search-as-you-type.png" style="width:60%;"/>
+
+
+Notes:
+
+don't have to index data, just using prefix search like in last lab. 
+Resource intensive, if large scale you want to index the solution. 
+
+
+
+---
+
+## Index with N-grams
+
+<img src="../../assets/images/elastic/3rd-party/N-grams.png" alt="N-grams.png" style="width:40%;"/>
+
+* Edge n-grams are built only on the beginning of each term.
+
+Notes:
+
+All we care about for autocomplete are the beginning of the term. 
+if computing just the edge n-grams for star, only a single,  s, st, sta, star 
+
+
+---
+
+## Indexing N-grams
+
+* Create an “autocomplete” analyzer
+
+<img src="../../assets/images/elastic/3rd-party/N-grams02.png" alt="N-grams02.png" style="width:40%;"/>
+
+* filter for edge n-grams min = 1 max = 20 
+
+* custom analyzer, in addition to standard lowercase filter also has autocomplete filter (n-grams)
+
+
+Notes:
+
+Create custom analyzer/filter 
+up to 20 letters long 
+
+
+---
+
+## Map your Field  
+
+<img src="../../assets/images/elastic/3rd-party/Map-your-Field.png" alt="Map-your-Field.png" style="width:60%;"/>
+
+
+* Title is of type "string" and uses our custom analyzer "autocomplete
+
+
+
+Notes:
+
+
+Now creating a mapping, tell it to use autocomplete analyzer 
+
+
+---
+
+## N-grams only on Index
+
+* Use n-grams only on the index side or query will also get split into n-grams, and we’ll get results for  everything that matches ‘s’, ‘t’, ‘a’, ‘st’, etc.
+
+<img src="../../assets/images/elastic/3rd-party/n-grams-only-index.png" alt="n-grams-only-index.png" style="width:60%;"/>
+
+* Analyzer = standard so don't split up what was typed into n-grams.
+
+Notes:
+
+want to use standard for queries, don't want it split up into n-grams.
+
+---
+
+## Completion Suggester
+
+
+* You can also upload a list of all possible completions ahead of time  using **completion suggester.**
+
+  - Most customizable 
+  - Reliable results
+  - Most control
+
+* Suggesters
+  - Completion – auto-complete/search-as-you-type
+  - Term – spell correction
+  - Phrase – did-you-mean
+
+
+---
+
+## Lab: Query tips
+
+* Lab 10: Pagination, sorting, filtering and fuzzy matching
+* Lab 11: Prefix/wildcard and auto-completion
+
+---
+
