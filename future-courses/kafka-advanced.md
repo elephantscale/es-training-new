@@ -119,9 +119,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly
 
 [![Metrics With Kafka From Elephant Scale](https://res.cloudinary.com/marcomontalbano/image/upload/v1579880452/video_to_markdown/images/vimeo--218108535-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://vimeo.com/218108535 "Metrics With Kafka From Elephant Scale")
 
-[![Metrics With Kafka From Elephant Scale](https://vimeo.com/218108535)
-
-<img src="../../assets/images/kafka/3rd-party/Grafana_-_Kafka_Metrics.png" alt="Grafana_-_Kafka_Metrics.png" style="width:60%;float:right; "/>
+<img src="../../assets/images/kafka/3rd-party/Grafana-Kafka-Metrics.png" alt="Grafana-Kafka-Metrics.png" style="width:60%; "/>
 
     
     
