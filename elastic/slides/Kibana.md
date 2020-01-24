@@ -1,4 +1,4 @@
-# Kibana
+Kibana
 ---
 
 ## Section Objectives
@@ -30,6 +30,15 @@ Notes:
 
 
 ---
+
+## What is Kibana?
+
+<img src="../../assets/images/elastic/3rd-party/what-kibana.png" alt="what-kibana.png" style="width:80%;"/>
+
+
+---
+
+
 
 ## Kibana UI
 
@@ -432,67 +441,25 @@ Notes:
 Notes:
 
 
----
-
-## If You Have X-Pack
-
-* (bin/kibana-plugin install xpack)
-
-<img src="../../assets/images/elastic/3rd-party/Have-X-Pack.png" alt="Have-X-Pack.png" style="width:60%;"/><!-- {"left" : 0.54, "top" : 2.26, "height" : 5.13, "width" : 9.17} -->
-
-
-
-
-
-Notes:
-
-
----
-
-## What is Added in X-Pack
-
-* Machine Learning
-* Graph
-* Monitoring
-* Management
-  - Security
-* Much more...
-
-
-
-Notes:
-
-
----
-
-## Security
-
-<img src="../../assets/images/elastic/3rd-party/Security.png" alt="Security.png" style="width:60%;"/><!-- {"left" : 0.23, "top" : 1.45, "height" : 4.6, "width" : 9.8} -->
-
-
-
-Notes:
-
-
----
-
-## Dashboard Sharing with Reporting
-
-
-<img src="../../assets/images/elastic/3rd-party/Dashboard-Reporting.png" alt="Dashboard-Reporting.png" style="width:60%;"/><!-- {"left" : 0.36, "top" : 1.48, "height" : 5, "width" : 9.52} -->
-
-
-
-
-Notes:
-
-
----
 
 ## Lab: Configure Kibana
 
 * Please do this lab: 
 
   - `kibana/configure.md`
+
+
+
+---
+
+## Lab: Shakespeare
+
+
+<img src="../../assets/images/people/william-shakespeare.png" alt="william-shakespeare.png" style="width:30%;float:right;"/>
+
+* Let’s analyze the works of william shakespeare...
+
+* Because we can.
+
 
 

@@ -21,6 +21,12 @@ Notes:
 
 ---
 
+## Not just for search anymore
+
+<img src="../../assets/images/elastic/search-anymore.png" alt="search-anymore.png" style="width:70%;"/>
+
+---
+
 ## Analytics or Aggregation?
 
 <img src="../../assets/images/elastic/3rd-party/Analytics-Aggregation-01.png" alt="Analytics-Aggregation-01.png" style="width:20%;float:right;"/><!-- {"left" : 7.22, "top" : 1.07, "height" : 4.98, "width" : 2.89} -->
@@ -44,6 +50,22 @@ Image: http://www.visionsoftravel.org/
 
 
 ---
+
+
+
+## Analytics is Amazing
+
+* **elasticsearch aggregations can sometimes take the place of hadoop / spark / etc – and return results instantly!**
+
+* It Gets Better
+
+* You can even nest aggregations  together!
+
+* Pair aggregations with search queries
+
+---
+
+
 
 ## Analytics Use Cases
 
@@ -350,6 +372,75 @@ Notes:
 
 
 Notes:
+
+---
+## Let’s Learn by Example
+
+
+* Bucket by rating value:
+
+<img src="../../assets/images/elastic/3rd-party/example-001.png" alt="example-001.png" style="width:60%;"/>
+
+
+* Sum up all documents that have a "rating" value.
+
+
+---
+
+## Let’s Learn by Example
+
+
+* Count only 5-star ratings:
+
+<img src="../../assets/images/elastic/3rd-party/example-002.png" alt="example-002.png" style="width:60%;"/>
+
+
+* Query narrows down movies to only 5.0 rating
+* Aggregates sum up all those values.
+
+---
+
+
+## Let’s Learn by Example
+
+* Average rating for Star Wars:
+
+<img src="../../assets/images/elastic/3rd-party/example-003.png" alt="example-003.png" style="width:60%;"/>
+
+
+* Find Star Wars Episode IV
+* Return average rating for that specific movie.
+
+
+---
+ 
+# Histograms
+
+---
+
+## What is a Histogram
+
+
+* Display totals of documents bucketed by some **interval range.**
+
+<img src="../../assets/images/elastic/3rd-party/histogram-01.png" alt="histogram-01.png" style="width:70%;"/>
+
+
+---
+
+## Rating Intervals
+
+* Group ratings together by whole number.
+
+<img src="../../assets/images/elastic/3rd-party/rating-intervals01.png" alt="rating-intervals01.png" style="width:60%;"/>
+
+
+---
+
+## Sort by Decade
+
+<img src="../../assets/images/elastic/3rd-party/sort-decade.png" alt="sort-decade.png" style="width:60%;"/>
+
 
 ---
 
