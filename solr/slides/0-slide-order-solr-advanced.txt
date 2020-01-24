@@ -1,5 +1,5 @@
 ## to generate slides
-##     $    $ES_HOME/utils/presentations/slides-assembler.sh   slide-order-advanced-solr.txt
+##     $    $ES_HOME/utils/presentations/slides-assembler.sh   0-slide-order-solr-advanced.txt
 
 ./About-Advanced-Solr-Class.md
 ../outlines/Advanced-Solr.md
