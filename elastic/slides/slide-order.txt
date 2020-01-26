@@ -1,11 +1,23 @@
 ## Assembly instruction in the top directory
 
 About_Elastic_Class.md
-Search_Intro.md
+../../search-common/slides/Search_Intro.md
 ../../search-common/slides/Lucene_API.md
 Elasticsearch_Intro.md
-Relationships.md
+Lab-Setup.md
+Elastic-SQL.md
+../../microservices/slides/REST-Intro.md
+Indexing.md
+Mappings.md
+Query-Syntax.md
 Relevancy.md
-Kibana.md
+Python-API.md
 Logstash.md
+Analytics.md
+Kibana.md
+Filebeat.md
+X-Pack.md
+Elasticseach_Admin.md
 Trends.md
+
+
