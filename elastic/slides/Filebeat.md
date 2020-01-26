@@ -20,7 +20,7 @@
 ## This is Called the Elastic Stack
 
 
-* prior to beats, you’d hear about the “ELK stack” – elasticsearch, logstash, kibana.
+* prior to beats, you’d hear about the “ELK stack” – Elasticsearch, Logstash, Kibana.
 
 
 
