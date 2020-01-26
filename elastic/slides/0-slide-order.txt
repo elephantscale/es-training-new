@@ -1,7 +1,7 @@
 ## Assembly instruction in the top directory
 
 About_Elastic_Class.md
-../../search-common/slides/Search_Intro.md
+../../search-common/slides/Search-Intro.md
 ../../search-common/slides/Lucene_API.md
 Elasticsearch_Intro.md
 Lab-Setup.md
@@ -17,7 +17,7 @@ Analytics.md
 Kibana.md
 Filebeat.md
 X-Pack.md
-Elasticseach_Admin.md
+Elasticsearch_Admin.md
 Trends.md
 
 
