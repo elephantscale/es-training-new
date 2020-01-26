@@ -107,25 +107,11 @@ Notes:
 
 ---
 
-## Finland Facts
-    
-* Birthplace of Linux Thorvalds
-* Obsessed with texting
-  - Finnish PM ditches his GF with a text "That's it!"
-* Population 5.8 million
-* Taught 1% of its population AI
-
-![](../artwork/Linus_Torvalds_story.png)
-
-
-Notes:
-
-https://www.politico.eu/article/finland-one-percent-ai-artificial-intelligence-courses-learning-training/
-
----
 
 ## Finland AI
     
+* Obsessed with texting
+  - Finnish PM ditches his GF with a text ***"That's it!"***    
 * Population 5.8 million
 * Taught 1% of its population AI a year ago
 * Makes its course open and in 24 languages
@@ -135,28 +121,30 @@ https://www.politico.eu/article/finland-one-percent-ai-artificial-intelligence-c
 
 Notes:
 
-
+https://www.politico.eu/article/finland-one-percent-ai-artificial-intelligence-courses-learning-training/
 https://www.elementsofai.com/
+
 ---
 
 # Let us do AI!
 
-## What is Quick Draw?
+
+## Let's Draw
+
+* [Quick Draw](https://quickdraw.withgoogle.com/) works
+
+![](../artwork/quickdraw.png)
+
+  
+---
+
+## Google Stores All Sketches
+![](../artwork/50mm-drawings.png)
+
+## Many Pictures of an Angel?
 
 ![](../artwork/AI__Google-QuickDraw.png)
 
----
-## Let's Draw
-
-* The teacher explains how [Quick Draw](https://quickdraw.withgoogle.com/) works
-* Lets the students play and complete a game
-* Then show the 50 million drawings already accumulated
-* Points out the the trend is to collect all user-input data (next cartoon)
-* And explains how the algorithm works
-  - Quick Draw selects a shape out of all that it knows
-  - Asks a person to draw exactly that shapes
-  - Invokes a software that can recognize this or close shapes
-  
 ---
 
 ## Why is Data Important?
@@ -164,6 +152,21 @@ https://www.elementsofai.com/
 
 ---
 
+## How Does QuickDraw Work?
+
+* Quick Draw selects a shape out of all that it knows
+* Asks a person to draw exactly that shapes
+* Invokes a software that can recognize this or close shapes
+  
+## Some Terms: Supervised Learning
+![](../artwork/AI__Supervised-Learning.png)
+
+## Neural Networks (Optional)
+* Coverage depends upon the level of the students and their interests
+* Teacher will explain live ad libitum
+![](../artwork/playground.png)
+---
+  
 ## Cats vs Dogs
 ![](../artwork/AI__Cats-Dogs.png)
 
@@ -182,41 +185,43 @@ https://www.elementsofai.com/
 ## Lab Cats vs Dogs 
 * Create a Kaggle account
 * Watch how recognizer works
-* Create your own with another set of animal pictures
----
+* Create your own with another set of pictures, suggestion:
+  - boys vs girls
+  - kids vs adults
 
-## Some Terms: Supervised Learning
-![](../artwork/AI__Supervised-Learning.png)
-
-## Neural Networks (Optional)
-* Coverage depends upon the level of the students and their interests
-* Teacher will explain live ad libitum
-![](../artwork/playground.png)
 ---
 
 
-## AI That Talks
-![](../artwork/AI__robot-testimony.jpg)
----
+## BERT Trained
 
-
-## BERT Software
-* Demonstrate an article on the screen (to avoid image copyright issues)
-* Here is [the link](https://medium.com/syncedreview/baidus-ernie-tops-google-s-bert-in-chinese-nlp-tasks-d6a42b49223d)
 * Explain how BERT is trained
   - Send computer to middle and hight school
   - Teach it to understand basic English by 
     - taking some words out of the text
     - then playing with the text to restore the words
     - this is self-supervised learning
+![](../artwork/bert-ernie.png)
+Notes:
+
+* Here is [the link](https://medium.com/syncedreview/baidus-ernie-tops-google-s-bert-in-chinese-nlp-tasks-d6a42b49223d)
+---
+
+## BERT Software
+
 * Then finish it up by telling it how to
   - answer questions (Stanford test)
   - guess people's sentiments
   - or any language task
 
+![](../artwork/AI__robot-testimony.jpg)
 ---
   
-## BERT Lab
+## NLP lab - Rasa
+* Rasa in open source conversations in AI
+![](../artwork/pizza-rasa.png)
+---
+ 
+## NLP lab - BERT
 * Sentiment analysis tutorial for movie review
 * Run the lab
 * Let BERT guess the sentiment of a review
