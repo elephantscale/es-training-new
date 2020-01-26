@@ -2,6 +2,159 @@
 
 ---
 
+
+# Searching
+
+---
+
+## Search Example
+
+<img src="../../assets/images/elastic/3rd-party/Search-Example.png" alt="Search-Example.png" style="width:60%;"/><!-- {"left" : 0.37, "top" : 1.14, "height" : 2.01, "width" : 7.46} -->
+
+
+* URL indicates where to search
+  - in the group type of the get-together index
+* URI parameters give the details of the search
+  - find documents containing “elasticsearch”
+  - But return only the name and location fields for the top result.
+* Pretty
+  - flag to print the JSON reply in a more readable format
+
+
+Notes:
+
+
+
+---
+
+## Structure Your Query
+
+* Where to search
+* Contents of the reply
+* What and how to search
+
+
+Notes:
+
+
+
+---
+
+## Where to Search
+
+* In a specific type of a specific index
+* In multiple types in the same index
+* In multiple indices
+* In all indices
+
+Notes:
+
+
+
+---
+
+## Search in Multiple Types
+
+* Use a comma-separated list
+* Example
+* Both group and event types
+
+<img src="../../assets/images/elastic/3rd-party/multiple-type.png" alt="multiple-type.png" style="width:70%;"/><!-- {"left" : 0.19, "top" : 3, "height" : 1.18, "width" : 9.86} -->
+
+
+
+Notes:
+
+
+
+---
+
+## Multi-type Search Result
+
+
+<img src="../../assets/images/elastic/3rd-party/Multi-typeSearch-Result.png" alt="Multi-typeSearch-Result.png" style="width:50%;float:left;"/><!-- {"left" : 0.27, "top" : 1.11, "height" : 7.51, "width" : 8.21} -->
+
+
+
+
+Notes:
+
+
+
+---
+
+## Search in All Types
+
+* Search in all types of an index
+* Send your request to the `_search` endpoint of the index’s URL
+
+<img src="../../assets/images/elastic/3rd-party/search-type01.png" alt="search-type01.png" style="width:60%;float:left;"/><!-- {"left" : 0.27, "top" : 2.5, "height" : 1.59, "width" : 9.41} -->
+
+
+Notes:
+
+
+
+---
+
+## Search in Multiple Indices
+
+* To search in multiple indices
+* Separate them with a comma:
+* (Question: why will the line below likely fail?)
+
+<img src="../../assets/images/elastic/3rd-party/Multiple-indices.png" alt="Multiple-indices.png" style="width:60%;float:left;"/><!-- {"left" : 0.27, "top" : 2.94, "height" : 1.12, "width" : 9.87} -->
+
+
+
+Notes:
+
+
+
+---
+
+## Reading the Search Reply
+
+
+<img src="../../assets/images/elastic/3rd-party/Reading-Search-Reply.png" alt="Reading-Search-Reply.png" style="width:65%;float:left;"/><!-- {"left" : 0.29, "top" : 1.12, "height" : 6.08, "width" : 9.07} -->
+
+
+Notes:
+Elasticsearch in Practice
+
+
+
+---
+
+## Deleting Data
+
+* Delete individual documents or groups of documents
+  - Documents are marked as deleted
+* Delete complete indices
+  - Works almost instantly
+  - Deletes a directory
+* Close indices
+  - Not removing
+  - A closed index doesn’t allow read or write operations
+  - Similar to removing but data remains on disk
+  - Easy to restore: you open the closed index
+
+
+Notes:
+
+
+
+---
+
+## Lab: Searching
+
+* Please do this lab:
+
+  - `elasticsearch/searching.md`
+
+
+Notes:
+
 # Query-line Search
 
 Notes:
