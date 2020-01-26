@@ -9,7 +9,7 @@
 
  *  **Day 1 (Learning Python: Intro)** 
 
-     - Python intro (types, lists, arrays…)
+     - Python intro (types, lists, arrays...)
 
      - NumPy
 
@@ -33,7 +33,7 @@ Notes:
 
 ## Agenda Continued
 
- *  **Day 3  (Data Analysis: Intermediate**  **)** 
+ *  **Day 3 (Data Analysis: Intermediate)**
 
      - Cluster Analysis
 
@@ -56,7 +56,7 @@ Notes:
 
  * Basic Python knowledge is assumed
 
- * Some software development experience (languages, databases, …)
+ * Some software development experience (languages, databases, ...)
 
  * Have a Python development environment
 

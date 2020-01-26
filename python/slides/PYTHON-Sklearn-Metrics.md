@@ -52,15 +52,13 @@ Notes:
  
  * Basically same as r-squared for linear model
 
-<img src="../../assets/images/data-analysis-python/3rd-party/math01.png" alt="math01.png" style="width:30%;"/><!-- {"left" : 3.33, "top" : 2.62, "height" : 0.38, "width" : 3.59} -->
-
-<!-- TODO shiva  -->
+<img src="../../assets/images/data-analysis-python/3rd-party/math01.png" alt="math01.png" style="width:30%;"/><!-- {"left" : 2.97, "top" : 2.69, "height" : 0.46, "width" : 4.31} -->
 
 ```python
 from sklearn.metrics import explained_variance_score
 explained_variance_score(y_true, hy_pred)
 ```
-<!-- {"left" : 0.0, "top" : 1.73, "height" : 0.87, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 3.77, "height" : 0.87, "width" : 10.25} -->
 
 Notes:
 
@@ -79,13 +77,12 @@ $F(\theta) = \int r\,g(r)\,\ln f(r;\theta)$
 <img src="../../assets/images/data-analysis-python/3rd-party/math02.png" alt="math02.png" style="width:40%;"/><!-- {"left" : 2.57, "top" : 2.78, "height" : 0.7, "width" : 5.12} -->
 
 
-<!-- TODO shiva  -->
 ```python
 # python
 from sklearn.metrics import mean_absolute_error
 
 ```
-<!-- {"left" : 0.0, "top" : 1.53, "height" : 0.7, "width" : 10.25} -->
+<!-- {"left" : 0.0, "top" : 3.99, "height" : 0.7, "width" : 10.25} -->
 
 
 Notes:
@@ -102,14 +99,14 @@ Notes:
  * The mean squared error is defined as the following:
 
 
-<img src="../../assets/images/data-analysis-python/3rd-party/math03.png" alt="math03.png" style="width:30%;"/><!-- {"left" : 3.02, "top" : 2.49, "height" : 0.5, "width" : 4.21} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/math03.png" alt="math03.png" style="width:30%;"/><!-- {"left" : 3.02, "top" : 2.69, "height" : 0.5, "width" : 4.21} -->
 
-<!-- TODO shiva  -->
 
 ```python
 from sklearn.metrics import mean_squared_error_score
 
 ```
+<!-- {"left" : 0.0, "top" : 3.88, "height" : 0.57, "width" : 9.44} -->
 
 Notes:
 
@@ -161,7 +158,7 @@ Notes:
 from sklearn.metrics import accuracy_score
 accuracy_score(y_test, predicted)
 ```
-<!-- {"left" : 0.0, "top" : 2.13, "height" : 1.05, "width" : 10.16} -->
+<!-- {"left" : 0.0, "top" : 2.56, "height" : 1.05, "width" : 10.16} -->
 
 Notes:
 
@@ -190,7 +187,7 @@ Notes:
 from sklearn.metrics import classification_report
 classification_report(y_test, predicted)
 ```
-<!-- {"left" : 0.0, "top" : 1.54, "height" : 0.93, "width" : 10.32} -->
+<!-- {"left" : 0.0, "top" : 1.87, "height" : 0.93, "width" : 10.25} -->
 
 
 Notes:
