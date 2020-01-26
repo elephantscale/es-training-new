@@ -20,42 +20,30 @@ Data-Analytics-on-Google-Cloud.md
 
 Data-Studio.md
 
-../../machine-learning/generic/Data-Exploration.md
-
-exit
-
-## TODO
-Cloud-SQL.md
-
-## TODO
 Big-Query.md
 
-## TODO
-App-Engine.md
+../../machine-learning/generic/Data-Exploration.md
 
-## TODO
-Cloud-Dataflow.md
 
-## Hadoop & Spark Intro
-$ES_HOME/es-training/hadoop/slides/Hadoop-Intro.pptx
+## Spark Intro
+$ES_HOME/es-training/spark/slides/v2/SPARK__Intro.pptx
 $ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-1.pptx
 $ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-2.pptx
-$ES_HOME/es-training/spark/slides/v2/SPARK__MLlib.pptx
 
-## TODO
 Dataproc.md
 
 ## Machine Learning
 ../../machine-learning/generic/Machine-Learning-Primer-Compact.md
 ../../machine-learning/generic/ML-Resources.md
+../../machine-learning/generic/Feature-Engineering.md
+../../machine-learning/spark/ML-Spark-Overview.md
+../../machine-learning/generic/ML-Concepts-All.md
+../../machine-learning/spark/Regressions-Spark.md
+../../machine-learning/spark/Classification-Spark.md
+../../machine-learning/spark/Unsupervised-Spark.md
 
-# Spark-ML.md
-
+## Tensorflow
 ../../deep-learning/tensorflow/TENSORFLOW-Intro.md
 
-## TODO
-Big-Table.md
+Workshop.md
 
-Workshop-1.md
-
-Workshop-2.md

@@ -9,28 +9,6 @@
 
 ## Course outline
 
-./slides/About-Data-Analytics-With-Python-CMHC-Level-2.md
-./slides/About-Data-Analytics-With-Python.md
-./slides/Data_Science_Intro.md
-./slides/FeatureSelection.md
-./slides/Featuretools.md
-./slides/PYTHON_Reactive.md
-./slides/PYTHON-C.md
-./slides/PYTHON-Database.md
-./slides/PYTHON-File.md
-./slides/PYTHON-Gensim.md
-./slides/PYTHON-Intro.md
-./slides/PYTHON-LanguageBasics.md
-./slides/PYTHON-NumPy.md
-./slides/PYTHON-OOP.md
-./slides/PYTHON-Packages.md
-./slides/PYTHON-Pandas.md
-./slides/PYTHON-Recommendations.md
-./slides/PYTHON-Scipy.md
-./slides/PYTHON-Sklearn-Classification-Regression.md
-./slides/PYTHON-Sklearn-Clustering.md
-./slides/PYTHON-SKlearn-Intro-bak.md
-./slides/PYTHON-Sklearn-Intro.md
 ./slides/PYTHON-Sklearn-Metrics.md
 ./slides/PYTHON-Sklearn-PCA.md
 ./slides/PYTHON-Sklearn-Preprocessing.md

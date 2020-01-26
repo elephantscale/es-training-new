@@ -17,7 +17,7 @@
      - Visualization
 
 
- *  **Day 2 (Learning Analytics:  Intermediate)** 
+ *  **Day 2 (Learning Analytics: Intermediate)** 
 
      - Introducing Scikit-learn
 
@@ -145,7 +145,6 @@ Notes:
 
 
 ## About You And Me
-
 
  * About Instructor
  * About you

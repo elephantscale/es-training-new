@@ -34,8 +34,7 @@ Notes:
 
 ## DDD Example: LinkedIn's People You May Know
 
-<!-- TODO shiva -->
-<img src="../../assets/images/data-analysis-python/3rd-party/DDD.png"  style="width:30%; float:right;"/><!-- {"left" : 2.56, "top" : 4.32, "height" : 3.96, "width" : 5.14} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/DDD.png"  style="width:30%; float:right;"/><!-- {"left" : 5.74, "top" : 1.11, "height" : 3.32, "width" : 4.31} -->
 
   * Question for class
 
@@ -55,10 +54,8 @@ Notes:
 
 ## Data Scientist
 
-
-<!-- TODO shiva -->
-<img src="../../assets/images/data-analysis-python/3rd-party/Data-Scientist.png" alt="Data-Scientist.png" style="width:55%;"/><!-- {"left" : 0.25, "top" : 1.78, "height" : 6.17, "width" : 9.74} --> 
-<img src="../../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist.png" style="width:35%;"/><!-- {"left" : 0.25, "top" : 1.78, "height" : 6.17, "width" : 9.74} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/Data-Scientist.png" alt="Data-Scientist.png" style="width:55%;"/><!-- {"left" : 0.3, "top" : 1.14, "height" : 4.56, "width" : 7.21} --> 
+<img src="../../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist.png" style="width:35%;"/><!-- {"left" : 5.59, "top" : 5.74, "height" : 2.76, "width" : 4.36} -->
 
 Notes:
 
@@ -156,9 +153,8 @@ Notes:
 
 - Please use the provided spreadsheet to self evaluate
 
+<img src="../../assets/images/data-analysis-python/data-sciece-skills-1.png"  style="width:40%;"/><!-- {"left" : 2.57, "top" : 2.9, "height" : 5.24, "width" : 5.12} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/data-analysis-python/data-sciece-skills-1.png"  style="width:40%;"/>
 
 
 ---
@@ -417,7 +413,7 @@ Notes:
 
 ---
 
-## Data Science:  The Future
+## Data Science: The Future
 
 
   * We are going to have more data

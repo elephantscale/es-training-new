@@ -5,7 +5,6 @@
 
 <img src="../../assets/images/logos/featuretools-logo-1.png" alt="featuretools-logo-1.png" style="width:30%;"/><!-- {"left" : 2.53, "top" : 1.73, "height" : 1.21, "width" : 5.19} -->
 
-
  * Featuretools is a package to help in feature engineering in python
 
 

@@ -412,7 +412,7 @@ Notes:
 | FunctionTransformer              |                                    | Ensemble Decision Trees       |                         |                         |                                                    |
 |                                  |                                    | Neural Networks               |                         |                         |                                                    
 
-<!-- {"left" : 0, "top" : 0.93, "height" : 7.87, "width" : 10.25, "columnwidth" : [1.73, 1.77, 1.74, 1.62, 1.65, 1.74]} -->
+<!-- {"left" : 0.07, "top" : 1.05, "height" : 4.26, "width" : 10.12, "columnwidth" : [1.96, 1.92, 1.78, 1.49, 1.5, 1.47]} -->
 
 ---
 

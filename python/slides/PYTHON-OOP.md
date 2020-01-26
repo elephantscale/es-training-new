@@ -62,7 +62,6 @@ Notes:
 ---
 ## Example: The Door Class
 
-
   * **CONSTRAINTS**
 
     - All Doors are brown
@@ -70,9 +69,7 @@ Notes:
     - Normal Doors have double handles and can be “big”/”small”
     - Security Doors have a locked variable (True/False)
 
-
-
-<img src="../../assets/images/python/Door-Class.png" style="width:50%;"/><!-- {"left" : 2, "top" : 3.72, "height" : 4.54, "width" : 6.24} -->
+<img src="../../assets/images/python/Door-Class.png" style="width:40%;"/><!-- {"left" : 2, "top" : 3.72, "height" : 4.54, "width" : 6.24} -->
 
 
 
@@ -498,6 +495,8 @@ Notes:
   * Python has multiple inheritance (can inherit from multiple parent classes)
   * Example of the ”diamond problem”:
 
+<img src="../../assets/images/python/Multiple-Inheritance.png" style="width:30%;float:right;"/><!-- {"left" : 6.22, "top" : 3.59, "height" : 3.59, "width" : 3.84} -->
+
 ```python
 class A:
 		def m(self):
@@ -513,8 +512,6 @@ class D(B,C):
 ```
 <!-- {"left" : 0, "top" : 3.79, "height" : 3.18, "width" : 5.78} -->
 
-
-<img src="../../assets/images/python/Multiple-Inheritance.png" style="width:30%;"/><!-- {"left" : 6.22, "top" : 3.59, "height" : 3.59, "width" : 3.84} -->
 
 
 Notes:
