@@ -4,8 +4,7 @@ About_Elastic_Class.md
 ../../search-common/slides/Search-Intro.md
 ../../search-common/slides/Lucene_API.md
 Elasticsearch_Intro.md
-Lab-Setup.md
-Elastic-SQL.md
+MovieLens-Dataset.md
 ../../microservices/slides/REST-Intro.md
 Indexing.md
 Mappings.md
@@ -15,6 +14,7 @@ Python-API.md
 Logstash.md
 Analytics.md
 Kibana.md
+Elastic-SQL.md
 Filebeat.md
 X-Pack.md
 Elasticsearch_Admin.md
