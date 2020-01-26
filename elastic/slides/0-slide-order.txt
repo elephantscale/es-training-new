@@ -18,6 +18,6 @@ Elastic-SQL.md
 Filebeat.md
 X-Pack.md
 Elasticsearch_Admin.md
-Trends.md
+Conclusion.md
 
 
