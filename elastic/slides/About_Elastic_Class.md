@@ -7,8 +7,9 @@
 |-----|---------------------------------------------------------------------------------|
 | 1   | Search Fundamentals. Lucene. Elasticsearch                                      |
 | 2   | Advanced Elasticsearch: <br/>Relevancy, Document Relations, Analytics                |
-| 3   | Developing with Elasticksearch API, Developing with Lucene API <br/>Logstash, Kibana |
-| 4   | X-Pack, Application Design                                                      |
+| 3   | Developing with Elasticksearch API, Developing with Lucene API  |
+| 4   | Logstash, Kibana |
+| 5   | X-Pack, Application Design                                                      |
 
 <!-- {"left" : 0.25, "top" : 1.4, "height" : 3.36, "width" : 9.75} -->
 
@@ -25,7 +26,7 @@ Notes:
 * Basic understanding of Linux development environment
   - Command line navigation 
   - Editing files (e.g. using VI or nano)
-* This is an **ELK** class 
+* This is an **Elastic Stack** class 
   - You may be missing some pre-requisites, that’s OK
   - You should be willing to work hard, that is a must
 
@@ -96,8 +97,7 @@ Notes:
      - Your Name
      - Your background (developer, admin, manager, ...)
      - Technologies you are familiar with
-     - Familiarity with Python (scale of 1 - 4 ;  1 - new,   4 - expert)
-     - Familiarity with TensorFlow / Deep Learning (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Familiarity with Elastic Stack (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
