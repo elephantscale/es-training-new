@@ -21,55 +21,56 @@ $ES_HOME/elastic-labs/install 03-install
 
 $ES_HOME/elastic-labs/lucene 04-lucene
 $ES_HOME/elastic-labs/luceneapi 05-luceneapi
+$ES_HOME/elastic-labs/luke 06-luke
 
 # Dataset overview
 
-$ES_HOME/elastic-labs/movielens/02-movielens 06-movielens
+$ES_HOME/elastic-labs/movielens/02-movielens 07-movielens
 
 # Indexing / Mapping 
 
-$ES_HOME/elastic-labs/indexing 07-indexing
+$ES_HOME/elastic-labs/indexing 08-indexing
 
-$ES_HOME/elastic-labs/movielens/03-movielens-mapping 08-movielens-mapping
-$ES_HOME/elastic-labs/movielens/04-movielens-data  09-movielens-data
-$ES_HOME/elastic-labs/movielens/05-update-document 10-update-document
-$ES_HOME/elastic-labs/movielens/06-versions 11-versions
-$ES_HOME/elastic-labs/movielens/07-analyzers  12-analyzers
-$ES_HOME/elastic-labs/movielens/08-join 13-join
+$ES_HOME/elastic-labs/movielens/03-movielens-mapping 09-movielens-mapping
+$ES_HOME/elastic-labs/movielens/04-movielens-data  10-movielens-data
+$ES_HOME/elastic-labs/movielens/05-update-document 11-update-document
+$ES_HOME/elastic-labs/movielens/06-versions 12-versions
+$ES_HOME/elastic-labs/movielens/07-analyzers  13-analyzers
+$ES_HOME/elastic-labs/movielens/08-join 14-join
 
 
 # Searching
 
-$ES_HOME/elastic-labs/elasticsearch/searching/ 14-searching
+$ES_HOME/elastic-labs/elasticsearch/searching/ 15-searching
 
 # Searching Movielens stuff
-$ES_HOME/elastic-labs/movielens/09-search  15-search 
-$ES_HOME/elastic-labs/movielens/10-more-search 16-more-search
-$ES_HOME/elastic-labs/movielens/11-prefix-wildcard 17-prefix-wildcard
-$ES_HOME/elastic-labs/movielens/12-python 18-python
+$ES_HOME/elastic-labs/movielens/09-search  16-search 
+$ES_HOME/elastic-labs/movielens/10-more-search 17-more-search
+$ES_HOME/elastic-labs/movielens/11-prefix-wildcard 18-prefix-wildcard
+$ES_HOME/elastic-labs/movielens/12-python 19-python
 
 # Logstash
 
-$ES_HOME/elastic-labs/logstash 19-logstash-install
-$ES_HOME/elastic-labs/movielens/13-logstash 20-logstash
+$ES_HOME/elastic-labs/logstash 20-logstash-install
+$ES_HOME/elastic-labs/movielens/13-logstash 21-logstash
 
 # Analytics
 
 $ES_HOME/elastic-labs/analytics 21-analytics
-$ES_HOME/elastic-labs/movielens/14-aggs 22-aggs
+$ES_HOME/elastic-labs/movielens/14-aggs 23-aggs
 
 # Kibana
-$ES_HOME/elastic-labs/kibana/ 23-kibana-install
-$ES_HOME/elastic-labs/movielens/15-kibana 24-kibana
+$ES_HOME/elastic-labs/kibana/ 24-kibana-install
+$ES_HOME/elastic-labs/movielens/15-kibana 25-kibana
 
-$ES_HOME/elastic-labs/movielens/16-filebeat 25-filebeat
-$ES_HOME/elastic-labs/movielens/16-xpack 26-xpack
-$ES_HOME/elastic-labs/movielens/17-multi-node 27-multi-node
+$ES_HOME/elastic-labs/movielens/16-filebeat 26-filebeat
+$ES_HOME/elastic-labs/movielens/16-xpack 27-xpack
+$ES_HOME/elastic-labs/movielens/17-multi-node 28-multi-node
 
-$ES_HOME/elastic-labs/movielens/18-complex-queries 28-complex-queries
+$ES_HOME/elastic-labs/movielens/18-complex-queries 29-complex-queries
 
 
 #Spark 
-$ES_HOME/elastic-labs/spark-elastic 29-spark-elastic
+$ES_HOME/elastic-labs/spark-elastic 30-spark-elastic
 
 
