@@ -218,15 +218,16 @@ Notes:
 
 ---
 
-## Example: WestLaw   http://www.westlaw.com/
+## Example: WestLaw   
 
-  * Largest commercial (paying subscribers) legal search service (started 1975; ranking added 1992)
-  * Tens of terabytes of data; ~700,000 users
-  * Majority of users still use boolean queries
-  * Example query:
-    - What is the statute of limitations in cases involving the federal tort claims act?
-    - LIMIT! /3 STATUTE ACTION /S FEDERAL /2 TORT /3 CLAIM
-      `- /3 = within 3 words, /S = in same sentence`
+* http://www.westlaw.com/
+* Largest commercial (paying subscribers) legal search service (started 1975; ranking added 1992)
+* Tens of terabytes of data; ~700,000 users
+* Majority of users still use boolean queries
+* Example query:
+  - What is the statute of limitations in cases involving the federal tort claims act?
+  - LIMIT! /3 STATUTE ACTION /S FEDERAL /2 TORT /3 CLAIM
+   `- /3 = within 3 words, /S = in same sentence`
 
 
 Notes:
@@ -235,7 +236,7 @@ Notes:
 
 ---
 
-## Example: WestLaw  http://www.westlaw.com/
+## Example: WestLaw 
 
   * Another example query:
     - Requirements for disabled people to be able to access a workplace
@@ -637,10 +638,8 @@ Notes:
 
 ## Lab: What Is An Inverted Index
 
-- Overview: We will build both regular and inverted index
-- Pre-requisites: solr-labs/install/README.md   
 - Approximate time: 30 minutes
-- Instructions: solr-labs/inverted-index/README.md
+- Instructions: inverted-index/README.md
 
 
 

@@ -45,15 +45,15 @@ Notes:
 ## Information Retrieval
 
 
-     - These days we frequently think first of web search, but there are many other cases:
+* These days, we frequently think first of web search, but there are many other cases:
 
-        * E-mail search
+* E-mail search
 
-        * Searching your laptop
+* Searching your laptop
 
-        * Corporate knowledge bases
+* Corporate knowledge bases
 
-        * Legal information retrieval
+* Legal information retrieval
 
 Notes:
 
@@ -226,7 +226,7 @@ Notes:
 * NASA employs 50,000 engineers
 * Some people leave, new people come
 * NASA made search a central point of new employee orientation
-  - (We taught them SOLR ;: a few years back)
+  - (We taught them search with a few years back)
 * Now new engineers can search for the exact manuals the need to start with
 
 

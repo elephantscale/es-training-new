@@ -2,6 +2,7 @@
 
 About_Elastic_Class.md
 ../../search-common/slides/Search-Intro.md
+../../search-common/slides/Lucene.md
 ../../search-common/slides/Lucene_API.md
 Elasticsearch_Intro.md
 MovieLens-Dataset.md
