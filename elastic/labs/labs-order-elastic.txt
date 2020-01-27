@@ -41,7 +41,7 @@ $ES_HOME/elastic-labs/movielens/08-join 14-join
 
 # Searching
 
-$ES_HOME/elastic-labs/elasticsearch/searching/ 15-searching
+$ES_HOME/elastic-labs/searching/ 15-searching
 
 # Searching Movielens stuff
 $ES_HOME/elastic-labs/movielens/09-search  16-search 
