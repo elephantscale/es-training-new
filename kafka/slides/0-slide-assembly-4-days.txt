@@ -19,8 +19,9 @@ Kafka-Intro.md
 #zookeeper-primer.md
 Kafka-API.md
 Kafka-Streams.md
-Kafka-Confluent.md
 Kafka-Metrics.md
+Kafka-Confluent.md
+KSQL.md
 Kafka-Case-Studies-Best-Practices.md
 Kafka-Admin.md
 
