@@ -1,0 +1,19 @@
+## To assemble md slides
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-order-ML-Search.txt 
+## to make pdfs
+##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-order-ML-Search.txt  pdf
+##          (-d will replace current assembly.out)
+
+About-Machine-Learning-With-Python-Class-2-days.md
+
+../generic/About-Machine-Learning-Search-Class.md
+
+## high level overview
+../generic/Machine-Learning-Primer.md
+
+../generic/Text-Analytics-Generic.md
+../generic/Text-Analytics-Spacy.md
+../generic/Text-Analytics-Vectorization.md
+../../ai-nlp/slides/word2vec.md
+./LearnToRank.md
+
