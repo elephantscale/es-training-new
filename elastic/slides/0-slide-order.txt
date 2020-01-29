@@ -19,6 +19,8 @@ Elastic-SQL.md
 Filebeat.md
 X-Pack.md
 Elasticsearch_Admin.md
-Conclusion.md
-
-
+# Search and Machine Learning (AI)
+../../machine-learning/python/LearnToRank.md
+../../python/slides/PYTHON-Text-Spacy.md Text-Spacy
+../../machine-learning/generic/Text-Analytics-Intro.md
+../../ai-nlp/slides/word2vec.md
