@@ -22,6 +22,7 @@ Kafka-Streams.md
 Kafka-Metrics.md
 Kafka-Confluent.md
 KSQL.md
+Kafka-Connect.md
 Kafka-Case-Studies-Best-Practices.md
 Kafka-Admin.md
 
