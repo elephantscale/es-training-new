@@ -1,6 +1,5 @@
 # Kafka Best Practices
 
-
 ---
 
 
@@ -413,6 +412,410 @@ Notes:
 
 
 ---
+
+# Troubleshooting Kafka
+
+---
+
+
+## Kafka Troubleshooting
+
+
+ * We are going to do these as a class / group exercise!
+
+ * Show a problem
+
+ * Class to suggest solution
+
+Notes:
+
+
+
+
+---
+
+## Issue
+
+
+ * Consumer errors with Out of Memory error
+
+ * (answer next slide)
+
+Notes:
+
+
+
+
+---
+
+## Possible Solutions
+
+
+ * Too many partitions
+
+     - More partitions consume more memory
+
+ * Messages are large
+
+     - Increase Java Heap size
+
+Notes:
+
+
+
+
+---
+
+## Issue
+
+
+ * Consumer seems to stuck on one offset, can not go beyond that message.
+
+ * Gets InvalidMessageSizeException
+
+ * (answer next slide)
+
+Notes:
+
+
+
+
+---
+
+## Possible Solutions
+
+
+ * Message size is too large
+
+ * Double check  **messages.max.bytes**  (on broker)
+
+ * And match  **fetch.message.max.bytes**  (on consumer)
+
+Notes:
+
+
+
+
+---
+
+## Issue
+
+
+ * Some consumers are not receiving any messages
+
+ * (answer next slide)
+
+Notes:
+
+
+
+
+---
+
+## Possible Solutions
+
+<img src="../../assets/images/kafka/Consumer-Behavior-04.png"  style="max-width:50%;float:right;" />
+
+ * Probably have more consumers than number of partitions
+
+ * Solutions:
+
+     - Match  # consumers = # partitions  in a consumer group
+
+     - Increase number of partitions
+
+     - Decrease number of consumers
+
+Notes:
+
+
+
+
+---
+
+## Issue
+
+
+ * Producer is getting QueueFullException
+
+ * (answer next slide)
+
+Notes:
+
+
+
+
+---
+
+## Possible Solutions
+
+
+ *  **Reason**
+
+   - Producer is sending events faster than Kafka brokers can handle
+
+ * Fixes:
+
+    - Slow down producer sending
+
+       - Switch `ack` setting to 1 or `all` to Producer will wait for acknowledgement from Broker
+
+ * Expand Kafka capacity
+
+     - Add more partitions if possible
+
+     - Add more broker nodes to handle the load
+
+Notes:
+
+
+
+
+---
+
+## Issue
+
+
+ * Number of Under Replicated partitions are going up
+
+ * (answer next slide)
+
+Notes:
+
+
+
+
+---
+
+## Possible Solutions
+
+<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png"  style="max-width:50%;float:right;" />
+
+ *  **Reason**
+   - Creating replicas is lagging behind
+   - IO throughput between brokers is not keeping up with incoming data
+ * This is  **serious issue** , as it will
+     - backup write pipeline
+     - Increase probability of loosing data
+     - And slow down consumers! (why ?)
+ * **Fixes:**
+    - Inspect disk bottleneck on replica machines
+    - Are the disks slow / full?
+    - Is the NIC saturated?
+
+Notes:
+
+
+
+
+---
+
+# Kafka Design Exercises
+
+---
+
+
+## Problem: Transporting Existing Log Files Via Kafka
+
+
+ * We have an application that generates log files on disk
+
+ * Each file size is about 1G
+
+ * Each file contains approximately a few hundred thousands to million log entries
+
+ * Q1: We have hundreds of these log files accumulated, first we need to send them via Kafka
+
+ * Q2: Then, we want to continuously monitor the output log file as it is produced and send to Kafka
+
+ *  **Answer next slide**
+
+Notes:
+
+
+
+
+---
+
+## Solution: Transporting Existing Log Files Via Kafka
+
+
+ * Option1: Kafka Connect
+
+ * Option2: Write a (Java) program to read files
+
+ * Extract events
+
+ * Push individual events into Kafka
+
+ * Write in batch mode for increased throughput
+
+ *  **Question for class:**
+
+     - What would we use for key?
+
+Notes:
+
+
+
+
+---
+
+## Problem: Monitor log files and send logs into Kafka
+
+
+ * Programs writes log files to disk
+
+ * We want to transport these logs via Kafka
+
+ * Need to continuously monitor the log files and send logs to Kafka
+
+ *  **Answer next slide**
+
+Notes:
+
+
+
+
+---
+
+## Solution: Monitor log files and send logs into Kafka
+
+
+ * Kafka Connect
+
+ * [LogStash](https://www.elastic.co/products/logstash)
+
+     - Can parse pretty much any log files
+
+     - And send them to any 'stash'
+
+     - Has input / output plugins for Kafka(can read from / write to  Kafka)
+
+ * [Log4J](https://logging.apache.org/log4j/)
+
+     - Log4j has appenders to Kafka
+
+ * Roll your Own
+
+     - Apache Commons has a [Tailor](https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons/io/input/Tailer.html) class
+
+Notes:
+
+https://www.elastic.co/products/logsta
+https://logging.apache.org/log4j/2.0/manual/appenders.htmlsh
+https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons/io/input/Tailer.html
+
+
+---
+
+## Problem: Sending Large Video Files Through Kafka
+
+
+ * We have video files that are of size from 100s of MB in size to few Gigs.
+
+ * We want to send these files using Kafka
+
+ * And assemble the files on the other end
+
+<img src="../../assets/images/kafka/Through-Kafka.png" alt="Through-Kafka.png" style="width:70%;"/><!-- {"left" : 0.75, "top" : 3.7, "height" : 2.25, "width" : 8.76} -->
+
+
+
+Notes:
+
+
+
+
+---
+
+## Solution: Sending Large Video Files Through Kafka
+
+
+   * Chop the file into smaller chunks and send them with SAME key (so all chunks of one file will be written to ONE partition,  and a consumer can re-construct the file on the other end)
+
+   * **Questions for class**
+
+        -  What can we use for key?
+
+        - How do we make sure the files aren't corrupted?
+
+   * **Instructor:**
+
+        - Draw out the payload send order
+
+Notes:
+
+
+
+
+---
+
+## Problem: Too Many Partitions Making Kafka Cluster Unstable
+
+
+ * We have a  **created**  topic with 1000 partitions
+
+ * And we have been sending data to the topic.  All partitions have data
+
+ * But this is proving to be too many partitions for our little kafka cluster.
+
+ * We want to cut down the number of partitions to 100
+
+ * How can we accomplish this?Remember, number of partitions can not be reduced!
+
+ *  **Answer next slide**
+
+Notes:
+
+
+
+
+---
+
+## Solution: Reducing Number of Partitions
+
+
+Notes:
+
+
+
+
+---
+
+## Problem: How to Capture Events From an IOT device and push it to Kafka?
+
+
+ * Imagine we have IOT devices sending data 'home'
+
+ * These devices are outside our firewall!
+
+ * Capture the data in Kafka
+
+ * Design a system do this
+
+ * We want to award badges to users who accomplish certain milestonese.g.  Fitbit send "well done" when a user completes 10,000 steps a day
+
+     - These awards are sent via email & mobile app push notifications
+
+ *  **Answer next slide**
+
+Notes:
+
+
+
+
+---
+
+## Solution: IOT Data Capture
+
+
+ * Kafka REST
+
+Notes:
+
+---
+
 
 ## Review and Q&A
 

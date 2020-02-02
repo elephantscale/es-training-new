@@ -23,8 +23,8 @@ Kafka-Metrics.md
 Kafka-Confluent.md
 KSQL.md
 Kafka-Connect.md
-Kafka-Case-Studies-Best-Practices.md
 Kafka-Admin.md
-
+Kafka-Best-Practices.md
+Kafka-Case-Studies.md
 
 Kafka-Workshop.md
