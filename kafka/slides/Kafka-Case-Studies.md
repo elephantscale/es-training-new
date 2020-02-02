@@ -15,10 +15,15 @@ Notes:
 
 # Kafka @ Zendesk
 
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/zendesk-logo-1.png"  style="width:25%;" />
+
 ---
 
 ## Zendesk : Event Notifications
 
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/zendesk-logo-1.png"  style="width:30%;float:right;" />
 
  * [Reference](http://bigdatausecases.info/entry/kafka-used-at-scale-to-deliver-real-time-notifications),  [slides](https://www.slideshare.net/SrgioNunes/kafka-used-at-scale-to-deliver-realtime-notifications)
  
@@ -66,9 +71,16 @@ Notes:
 
 # Kafka @ WalmartLabs
 
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/walmartlabs-logo-1.png"  style="width:60%;" />
+
+
 ---
 
 ## Kafka @ WalmartLabs
+
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/walmartlabs-logo-1.png"  style="width:30%;float:right;" />
 
 
  * [Reference](http://bigdatausecases.info/entry/apache-kafka-use-cases-within-search-system-atwalmartlabs),  [slides](https://www.slideshare.net/snehal_nagmote/apache-kafka-women-who-code-meetup)
@@ -120,9 +132,17 @@ Notes:
 
 # Kafka @ Netflix
 
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/netflix-logo-1.png"  style="width:35%;" />
+
+
 ---
 
 ## Netflix
+
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/netflix-logo-1.png"  style="width:30%;float:right;" />
+
 
 
  * [Reference](http://bigdatausecases.info/entry/from-three-nines-to-five-nines-a-kafka-journey),   [slides](https://www.slideshare.net/Naveen1914/net-flix-kafka-seattle-meetup)
@@ -170,9 +190,16 @@ Notes:
 
 # Kafka @ Grid Dynamics
 
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;" />
+
+
 ---
 
 ## Kafka @ Grid Dynamics
+
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;float:right;" />
 
  * [Reference](https://blog.griddynamics.com/in-stream-processing-service-blueprint)
 
