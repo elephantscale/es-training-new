@@ -1,5 +1,7 @@
 # Introduction to Apache Kafka
 
+(C) Copyright Elephant Scale
+
 Feb 01, 2020
 
 
