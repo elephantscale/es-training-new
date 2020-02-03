@@ -7,8 +7,8 @@
 ## to generate pptx and pdf
 ##	./gen.sh  pptx pdf
 
-#pandoc ../data-science-on-google-cloud-outline.md  -f markdown -o  ../data-science-on-google-cloud-outline.docx
-#pandoc ../data-science-on-google-cloud-outline.md  -f markdown  -o ../data-science-on-google-cloud-outline.pdf
+pandoc ../Intro-to-Apache-Kafka-outline-4days.md  -o ../Intro-to-Apache-Kafka-outline-4days.docx
+pandoc ../Intro-to-Apache-Kafka-outline-4days.md  -o ../Intro-to-Apache-Kafka-outline-4days.pdf
 
 ## -d will delete existing files in assembly  folder
 $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-assembly-4-days.txt $@
