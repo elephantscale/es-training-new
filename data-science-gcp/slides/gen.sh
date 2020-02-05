@@ -9,6 +9,7 @@
 
 ## generate outline doc pdf
 pandoc ../data-science-on-google-cloud-outline.md  -f markdown -o  ../data-science-on-google-cloud-outline.docx
+
 pandoc ../data-science-on-google-cloud-outline.md  -f markdown  -o ../data-science-on-google-cloud-outline.pdf
 
 ## -d will delete existing files in assembly  folder
