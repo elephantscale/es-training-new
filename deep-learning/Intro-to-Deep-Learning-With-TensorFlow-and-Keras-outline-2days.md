@@ -46,53 +46,57 @@ Even if you haven't done any Python programming, Python is such an easy language
 
 ## Lab environment
 - Cloud based lab environment will be provided to students, no need to install anything on the laptop
-- Since labs are done in the cloud, students would need fairly unrestricted access to Internet.  Laptops with overly restrictive VPNs and firewalls may not work properly
+
+### Students will need the following
+* A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
+* Chrome browser 
+* SSH client for your platform
 
 
 ## Detailed Course Outline
 
-- **Section 1: Introduction to Deep Learning**
-  - Understanding Deep Learning use cases 
-  - Understanding AI / Machine Learning / Deep Learning 
-  - Data and AI
-  - AI vocabulary
-  - Hardware and software ecosystem
-  - Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
+### Section 1: Introduction to Deep Learning
+- Understanding Deep Learning use cases 
+- Understanding AI / Machine Learning / Deep Learning 
+- Data and AI
+- AI vocabulary
+- Hardware and software ecosystem
+- Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
 
-- **Section 2: Introducing TensorFlow**
-  - TensorFlow intro
-  - TensorFlow features
-  - Execution graph
-  - TensorFlow on GPU and TPU 
-  - TensorFlow API
-  - Lab: Setting up and Running TensorFlow
+### Section 2: Introducing TensorFlow
+- TensorFlow intro
+- TensorFlow features
+- Execution graph
+- TensorFlow on GPU and TPU 
+- TensorFlow API
+- Lab: Setting up and Running TensorFlow
   
-- **Section 3: Introducing Keras**
-  - Keras Intro
-  - Keras concepts (models, layers)
-  - Using Keras API
-  - Lab
+### Section 3: Introducing Keras
+- Keras Intro
+- Keras concepts (models, layers)
+- Using Keras API
+- Lab
 
-- **Section 4: Deep Learning Concepts**
-  - Introducing Perceptrons
-  - Linear Perceptrons
-  - Activation Functions (Sigmoid, Tanh, Relu, Softmax)
-  - Backpropagation
-  - Optimizers (Gradient Descent, Adam, RMSProp)
-  - Loss functions for regressions and classifications
-  - Vanishing/exploding gradient problem
-  - Lab: Tensorflow playground
+### Section 4: Deep Learning Concepts
+- Introducing Perceptrons
+- Linear Perceptrons
+- Activation Functions (Sigmoid, Tanh, Relu, Softmax)
+- Backpropagation
+- Optimizers (Gradient Descent, Adam, RMSProp)
+- Loss functions for regressions and classifications
+- Vanishing/exploding gradient problem
+- Lab: Tensorflow playground
 
-- **Section 5: Feedforward Network**
-  - FFNN architecture
-  - Input layer, output layer
-  - Hidden layers and Deep neural networks
-  - Sizing neural networks
-  - Lab: Feedforward Neural Networks
+### Section 5: Feedforward Network
+- FFNN architecture
+- Input layer, output layer
+- Hidden layers and Deep neural networks
+- Sizing neural networks
+- Lab: Feedforward Neural Networks
   
-- **Section 6: Computer Vision**
-  - Introducing Convolutional Neural Networks (CNN)
-  - CNN architecture
-  - CNN concepts
-  - Lab: Image recognition using CNNs
+### Section 6: Computer Vision
+- Introducing Convolutional Neural Networks (CNN)
+- CNN architecture
+- CNN concepts
+- Lab: Image recognition using CNNs
 

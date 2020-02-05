@@ -8,7 +8,7 @@
 
 
 ## Course outline
-./outline-Intro-to-Deep-Learning-With-TensorFlow-and-Keras.docx
+./Intro-to-Deep-Learning-With-TensorFlow-and-Keras-outline-3days.pdf
 
 ## About
 ./generic/About-Deep-Learning-Class.md
