@@ -37,14 +37,14 @@ Zero Install: There is no need to install any software on students' machines!
 ### Google Cloud Overview
 * Benefits of Cloud computing
 * Google Cloud eco system overview
-* Lab : Getting up and running in Google Cloud
+* Lab: Getting up and running in Google Cloud
 
 ### Google Compute Engine
 * Compute Engine Intro
 * Understanding different types of compute resources
 * Using compute resources effectively
 * Customizing a cloud VM
-* Lab : Using Compute Engine
+* Lab: Using Compute Engine
 
 
 ### Cloud Storage
@@ -52,7 +52,7 @@ Zero Install: There is no need to install any software on students' machines!
 * Data storage options in Google cloud
 * Ingesting Data
 * Scheduling data ingestion
-* Lab : Ingesting Data into Google Cloud
+* Lab: Ingesting Data into Google Cloud
 
 ### Google Big Query
 * Introduction to Big Query
