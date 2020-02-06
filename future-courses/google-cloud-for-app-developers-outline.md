@@ -8,13 +8,13 @@ This class will teach how to use Google Cloud platform to develop reliable, scal
 ## What you will learn:
 * Understand Google Cloud's features
 * Using Compute Engine
-* Using Google Cloud Storage 
- 
+* Using Google Cloud Storage
+
 ## Audience:
 Developers, Architects
 
 ## Duration:
-Three days
+Three to four days, depending on coverage
 
 ## Format:
 Lectures and hands*on labs. (50%, 50%)
@@ -34,13 +34,13 @@ Zero Install: There is no need to install any software on students' machines!
 
 ## Detailed outline
 
-### Google Cloud Overview 
+### Google Cloud Overview
 * Benefits of Cloud computing
 * Google Cloud eco system overview
 * Lab : Getting up and running in Google Cloud
 
 ### Google Compute Engine
-* Compute Engine Intro 
+* Compute Engine Intro
 * Understanding different types of compute resources
 * Using compute resources effectively
 * Customizing a cloud VM
@@ -56,7 +56,7 @@ Zero Install: There is no need to install any software on students' machines!
 
 ### Google Big Query
 * Introduction to Big Query
-* Running queries on Big Query 
+* Running queries on Big Query
 * Labs
 
 ### Python Development in Google Cloud
@@ -67,18 +67,18 @@ Zero Install: There is no need to install any software on students' machines!
 * Labs
 
 
-### Google Cloud SQL 
-* Introduction to Cloud SQL 
+### Google Cloud SQL
+* Introduction to Cloud SQL
 * Use cases and applications
 * Loading Data into Google Cloud SQL
 * Creating tables
-* Running queries 
+* Running queries
 * Lab
 
 ### Google App Engine
-* Introduction to Google App Engine 
+* Introduction to Google App Engine
 * Scaling up and out
-* Writing apps 
+* Writing apps
 * Labs
 
 ## Google Cloud Pub/Sub
@@ -96,25 +96,25 @@ Zero Install: There is no need to install any software on students' machines!
 * Querying from Cloud Bigtable
 * Labs
 
-### Real-time data streaming 
-* Streaming fundamentals 
-* Apache Beam / Cloud Dataflow 
+### Real-time data streaming
+* Streaming fundamentals
+* Apache Beam / Cloud Dataflow
 * Running the Pipeline in the Cloud
 * Real-Time Stream Processing
 * Streaming in Java Dataflow
 * Executing the Stream Processing
 * Real-Time Dashboard
 * Labs
-    
-### Large Scale Data Processing with Apache Spark
+
+### Large Scale Data Processing with Apache Spark (4th day)
 * Spark Intro
 * Spark Shell
-* Loading and analyzing data in Spark 
+* Loading and analyzing data in Spark
 * Spark Dataframes
 * Spark SQL
-* Labs 
+* Labs
 
-### Google Dataproc
+### Google Dataproc (4th day)
 * Introduction to Google Dataproc
 * Running Hadoop, Spark clusters using DataProc
 * Labs
