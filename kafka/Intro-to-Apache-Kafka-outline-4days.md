@@ -144,4 +144,7 @@ Lectures and hands on labs. (50%   50%)
 ### Workshop (Time permitting)
 *  Students will work as teams 
 *  Each team will identify a real world problem and design and build an end-to-end solution featuring Kafka
+
+---
+[![Metrics With Kafka From Elephant Scale](https://res.cloudinary.com/marcomontalbano/image/upload/v1579880452/video_to_markdown/images/vimeo--218108535-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://vimeo.com/218108535 "Metrics With Kafka From Elephant Scale")
  

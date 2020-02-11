@@ -8,6 +8,8 @@ deep-learning/Intro-to-Deep-Learning-With-TensorFlow-and-Keras-outline-2days.md
 deep-learning/Intro-to-Deep-Learning-With-TensorFlow-and-Keras-outline-3days.md
 machine-learning/Machine-Learning-With-Apache-Spark-outline.md
 machine-learning/Machine-Learning-With-Python-outline.md
+
+future-courses/google-cloud-for-app-developers-outline.md
 "
 
 output_dir="outlines.out"
