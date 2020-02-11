@@ -5,7 +5,7 @@
 ##          (-d will replace current assembly.out)
 
 ## Course outline
-../outline-Machine-Learning-With-Python-3-days.docx
+../Machine-Learning-With-Python-outline.pdf
 
 ## About
 About-Machine-Learning-With-Python-Class-3-days.md
@@ -20,15 +20,15 @@ About-Machine-Learning-With-Python-Class-3-days.md
 ../generic/Labs-Prep.md
 
 ## Python basics - reference only
-../../data-analysis-python/slides/PYTHON-NumPy.md
-../../data-analysis-python/slides/PYTHON-Pandas.md
+../../python/slides/PYTHON-NumPy.md
+../../python/slides/PYTHON-Pandas.md
 
 ## ML
 ../generic/Data-Exploration.md
-../generic/ML-concepts.md
+../generic/ML-Concepts-All.md
 
 ## Introducing SciKit Learn
-../../data-analysis-python/slides/PYTHON-Sklearn2.md
+../../python/slides/PYTHON-Sklearn2.md
 
 ## Algorithms
 Regressions-Python.md

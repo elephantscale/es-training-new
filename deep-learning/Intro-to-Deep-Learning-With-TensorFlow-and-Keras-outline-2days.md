@@ -31,7 +31,7 @@ We will study and solve some of most common industry use cases; listed below
 
 * Finance
   - Predicting loan defaults at Prosper
-  - Stocks analysis (time series)
+  - Predicting house prices
 * Health care
   - Predicting diabetes outcome
 * Customer service

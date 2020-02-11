@@ -33,7 +33,7 @@ We will study and solve some of most common industry use cases; listed below
 
 * Finance
   - Predicting loan defaults at Prosper
-  - Stocks analysis (time series)
+  - Predicting house prices
 * Health care
   - Predicting diabetes outcome
 * Customer service
@@ -57,7 +57,6 @@ Even if you haven't done any Python programming, Python is such an easy language
 ### Students will need the following
 * A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
 * Chrome browser 
-* SSH client for your platform
 
 
 ## Detailed Course Outline
