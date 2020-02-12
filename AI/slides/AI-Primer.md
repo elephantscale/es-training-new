@@ -2289,7 +2289,7 @@ Notes:
 
  * Multi Language support: Scala, Java, Python, R
 
-<img src="../../assets/images/deep-learning/3rd-party/Apache_Spark_logo.png" alt="Apache_Spark_logo.png" style="width:30%;"/><!-- {"left" : 2.8, "top" : 5.26, "height" : 2.42, "width" : 4.66} -->
+<img src="../../assets/images/logos/spark-logo-1.png"  style="width:30%;"/><!-- {"left" : 2.8, "top" : 5.26, "height" : 2.42, "width" : 4.66} -->
 
 
 Notes:
