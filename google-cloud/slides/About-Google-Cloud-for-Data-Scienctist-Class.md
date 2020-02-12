@@ -1,4 +1,4 @@
-# Data Science on Google Cloud
+# Google Cloud for Data Scientists
 
 
 <img src="../../assets/images/logos/google-cloud-logo-2.png" style="white;width:40%;"/><!-- {"left" : 4.37, "top" : 7, "height" : 1.19, "width" : 3.65} -->

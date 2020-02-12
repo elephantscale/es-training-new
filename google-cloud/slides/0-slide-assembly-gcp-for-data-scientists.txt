@@ -5,7 +5,7 @@
 ../google-cloud-for-data-scientists-outline.pdf
 
 ## About
-About-Data-Science-on-Google-Cloud-Class.md
+About-Google-Cloud-for-Data-Scienctist-Class.md
 
 ../../python/slides/Data_Science_Intro.md
 ../../python/Data-Scientist-Skill-Matrix.xlsx
@@ -46,4 +46,3 @@ Dataproc.md
 ../../deep-learning/tensorflow/TENSORFLOW-Intro.md
 
 Workshop.md
-
