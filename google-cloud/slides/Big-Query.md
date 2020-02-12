@@ -1,6 +1,7 @@
-# Title
+# Google Big Query
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/google-big-query-logo-1.png" style="width:50%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
 
 ---
 

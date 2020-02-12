@@ -43,14 +43,14 @@ Notes:
 
 *  **Day 1**
     - Google Cloud Intro
+    - Compute Engine
     - Data storage in Google Cloud
-    - Data analyis in Google Cloud
-    - Visualizations
+    - Visualizations in Data Studio
 
 *  **Day 2**
      - Big Query
-     - Cloud SQL
-     - App Engine
+     - Data Analytics with Python
+     - Google Colab and Datalab
 
 ---
 
@@ -58,14 +58,15 @@ Notes:
 
 *  **Day 3**
      - Hadoop and Spark
+     - Large scale data analytics with Spark
+     - Spark SQL
      - DataProc
-     - Machine Learning in Spark
-     - Tensorflow
 
 * **Day 4**
-     - Streaming with Beam
-     - Bigtable
-     - Workshop
+     - Machine Learning Intro
+     - Regressions
+     - Classifications
+     - Clustering
 
 Notes:
 
