@@ -4,5 +4,9 @@
 * To generate the Word outline, do this
 
 ```bash
-$ES_HOME/utils/presentations/md2docx.sh <script-name>.md
+$   $ES_HOME/utils/presentations/md2docx.sh <script-name>.md
+
+# or to generate all
+
+$   ./gen.sh
 ```
