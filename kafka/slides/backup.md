@@ -12,7 +12,7 @@
 
 ---
 
-# Kafka Connect 
+# Kafka Connect
 ---
 
 # Kafka Connect	- Debezium Stream MySQL events to Kafka
@@ -57,7 +57,7 @@ Debezium currently able to support following list of database software.
   - PostgreSQL
 * For more Information: http://debezium.io/docs/connectors/
 
-<img src="../../assets/images/logos/mysql-01.png" alt="mysql-01.png" style="width:12%;"/> &nbsp; &nbsp;&nbsp;  &nbsp;<img src="../../assets/images/logos/mongodb-logo-01.png" alt="mongodb-logo-01.png" style="width:16%;"/>&nbsp;  &nbsp; &nbsp;  &nbsp; <img src="../../assets/images/logos/postgrsql-logo-01.png" alt="postgrsql-logo-01.png" style="width:12%;"/>
+<img src="../../assets/images/logos/mysql-logo-1.png" style="width:12%;"/> &nbsp; &nbsp;&nbsp;  &nbsp;<img src="../../assets/images/logos/mongodb-logo-01.png" alt="mongodb-logo-01.png" style="width:16%;"/>&nbsp;  &nbsp; &nbsp;  &nbsp; <img src="../../assets/images/logos/postgresql-logo-1.png"  style="width:12%;"/>
 
 ---
 
@@ -266,5 +266,3 @@ configuration that needs to be called out is the gtid.source.includes
   - Dev: https://gitter.im/debezium/dev
 
 ---
-
-
