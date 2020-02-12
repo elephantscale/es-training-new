@@ -6,7 +6,7 @@
 
 
 ## Course outline
-../outline-Machine-Learning-With-Apache-Spark-3-days.docx
+../Machine-Learning-With-Apache-Spark-outline.pdf
 
 ## About
 About-Machine-Learning-With-Spark-Python-Class.md

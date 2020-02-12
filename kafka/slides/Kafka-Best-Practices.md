@@ -1,5 +1,4 @@
-# Kafka Best Practices and Case Studies
-
+# Kafka Best Practices
 
 ---
 
@@ -9,47 +8,19 @@
 
  * Learn to use Kafka effectively
 
- * Learn from published use cases of Kafka
 
 Notes:
 
-
-
-
 ---
 
-# Kafka Best Practices
-
----
-
-
-## Kafka Eco System
-
-| Product          | Description                                                                  |
-|------------------|------------------------------------------------------------------------------|
-| Kafka Streams    | Build streaming applications easily                                          |
-| Kafka Connect    | Move data between Kafka and other systems (DB / file system)                 |
-| Kafka Registry   | Metadata /schema store for data                                              |
-| Kafka REST Proxy | REST interface into Kafka cluster.,Produce / </br>Consume using RESTFUL APIs |
-| Camus            | Kafka / HDFS integration                                                     |
-
-<!-- {"left" : 0.25, "top" : 1.45, "height" : 3.38, "width" : 9.75} -->
-
-Notes:
-
-
-
-
----
 
 ## Best Practices: Use latest Java & Modern GC
-
-
- * Use Java 8
-
+ * Use recommended Java / JDK version
+    - Do not deviate from this, as you might encounter mysterious crashes ..etc
+    - Kafka is a high performance system, it pushes JVM to its limits;  It might expose JVM bugs that a 'normal' program might not
  * Use G1 garbage collector
-
  * Jvm heap: 8G - 32 G
+ * [Reference](https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html)
 
 ```bash
 Conf/kafka-env.sh
@@ -68,9 +39,6 @@ export KAFKA_JVM_PERFORMANCE_OPTS=
 
 Notes:
 
-https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
-
-
 ---
 
 ## Best Practices: OS Setting
@@ -78,7 +46,7 @@ https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
 <img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:40%;float:right;"/><!-- {"left" : 5.26, "top" : 3.61, "height" : 3.98, "width" : 4.91} -->
 
 
- * Give rest of the memory (minus JVM heap) to Page Cache
+ * Give rest of the memory (minus JVM heap) to Page Cache (Linux will do this automatically)
 
      - So throughput is fastest
 
@@ -90,9 +58,6 @@ https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html
 
 
 Notes:
-
-
-
 
 ---
 
@@ -119,29 +84,22 @@ Notes:
 
 Notes:
 
-
-
-
 ---
 
 ## Best Practices: SSD Drives?
+<!-- TODO shiva -->
+<img src="../../assets/images/generic/3rd-party/hdd-vs-sdd-1.png"  style="width:50%;float:right;" />
 
 
  * SSDs don't offer remarkable boost in performance
-
  * Kafka writes/reads data sequentially to/from commit logs
-
      - No random seeks
-
      - Modern spinning disks can provide very good scan performance
-
      - Also Linux and Linux file systems are optimized for good sequential IO
-
  * In Kafka write to disks are asynchronous
-
      - No waiting for disk ops to complete
-
  * Zookeeper can benefit from SSD drives
+ * Case study from Uber [link1](https://www.youtube.com/watch?v=q3e5QjTH59o),  [link2](http://bigdatausecases.info/entry/ssd-benchmarks-for-apache-kafka)
 
 Notes:
 
@@ -152,6 +110,7 @@ https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
 
 ## Best Practices: File System
 
+<img src="../../assets/images/kafka/kafka-drives-1.png"  style="width:50%;float:right;" />
 
  * Never, never, never use shared file systems (SAN / NFS)
 
@@ -172,34 +131,28 @@ Notes:
 
 ## Best Practices: Zookeeper
 
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/kafka-zookeeper-1.png"  style="width:60%;float:right;" />
+
 
  *  **Do not co-locate**  Zookeeper and Kafka brokers on same nodes
-
  * ZK and Kafka has very different IO patterns
-
      - Kafka is very disk IO heavy
-
      - ZK doesn't need a lot of horsepower, it needs to stay alive
-
  * Dedicate one ZK ensemble to Kafka,  do not share this ZK with other applications (e.g. Hadoop)
-
      - Kafka uses ZK pretty heavily
-
      - Can benefit from a dedicated ZK cluster
-
  * Make sure ZK has sufficient memory (4G+)
-
  * Monitor memory usage of ZK using JMX or other monitoring programs
 
 Notes:
-
-
-
 
 ---
 
 ## Best Practices: Topics / Partitions
 
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:40%;float:right;" />
 
  * Number of partitions correspond parallelism
  * Higher the partitions -> more consumers can be added
@@ -224,23 +177,19 @@ Notes:
 ## Best Practices: Partitions & Memory
 
 
+
  * More partitions also need more memory on brokers & clients
 
  * Producer side
 
-     - New Kafka client buffers messages on producer side before sending to brokers
-
-        * To reduce network round-trips
-
-     - The message buffer is maintained for partition
-
-        * More partitions -> more buffer memory needed
+    - New Kafka client buffers messages on producer side before sending to brokers (to reduce network round-trips)
+    - The message buffer is maintained for partition
+    - More partitions -> more buffer memory needed
 
  * Consumer side
 
-     - Consumers fetch messages in batches per partitions
-
-     - More partitions -> more batches -> more memory needed
+    - Consumers fetch messages in batches per partitions
+    - More partitions -> more batches -> more memory needed
 
 Notes:
 
@@ -251,16 +200,13 @@ Notes:
 
 ## Best Practices: Compression
 
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" />
 
  * Enabling compression
 
-     - reduces the data size goes on network
-
-        * Faster throughput
-
-     - Reduces data footprint on disk
-
-        * Less data to write to disk -> faster
+     - Reduces the data size goes on network --> faster throughput
+     - Reduces data footprint on disk --> less data to write to disk -> faster
 
  * Compression is performed on a batch
 
@@ -296,6 +242,8 @@ Notes:
 
 ## Best Practices: Use Batching
 
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" />
 
  * Batching will dramatically increase throughput, specially in producers
 
@@ -318,6 +266,8 @@ Notes:
 
 ## Best Practices: Message Sizing
 
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/message-size-1.png"  style="width:50%;float:right;" />
 
  * Kafka is engineered for moving small messages
 
@@ -330,15 +280,20 @@ Notes:
      -  **messages.max.bytes**  (on broker)
 
      -  **fetch.message.max.bytes**  (on consumer)
+     
+ * [Reference](https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/)
+
 
 Notes:
 
-https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
 
 
 ---
 
 ## Best Practices: Monitor, Monitor, Monitor
+
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/3rd-party/dashboard-body-kafka.jpg"  style="width:50%;float:right;" />
 
 
  * Kafka exposes lot of metrics
@@ -346,17 +301,23 @@ https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
      - Or use any of the open source collectors
  * Send metrics to a collector (graphite, open TSDB ..etc.)
  * Use a nice graphic tool to slice & dice metrics (Grafana)
- * Some important metrics to keep an eye on
-     - Log flush latency (95th percentile)
-     - Under Replicated Partitions
-     - Messages in / sec per broker and per topic
-     - Bytes in / sec per broker
-     - Bytes in / sec per topicBytes / message
-     - End-to-End time for a message
+ * References 
+   - [Datadog](https://www.datadoghq.com/dashboards/kafka-dashboard/)
+   - [Monitoring Kafka @ SingalFX](https://www.signalfx.com/blog/how-we-monitor-and-run-kafka-at-scale/)
+   
+---
+
+## Kafka Monitoring Vital Stats 
+
+- Log flush latency (95th percentile)
+- Under Replicated Partitions
+- Messages in / sec per broker and per topic
+- Bytes in / sec per broker
+- Bytes in / sec per topicBytes / message
+- End-to-End time for a message
 
 Notes:
 
-https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
 
 ---
@@ -384,13 +345,18 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
 ---
 
-## Best Practices: Monitor, Monitor, Monitor
+## Kafka Monitoring : End to End Lag
 
  *  **End-to-End time**
+    - How long does it take for a message to arrive from Producer to Consumer
+    - Indicates overall speed / latency of kafka pipeline
+ * Below, is an example (see next slide for graph)
+   - (t2 - t1) :  how long message was waiting in Kafka queue
+   - (t3 - t2) : consumer side processing time
+   - (t3 - t1) : overall processing
 
-     - How long does it take for a message to arrive from Producer to Consumer
-
-     - Indicates overall speed / latency of kafka pipeline
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/end-to-end-time-1.png" style="width:70%;"/>
 
 Notes:
 
@@ -399,20 +365,28 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
 ---
 
-## Monitoring Consumer Lag
+## Best Practices: End to End Latency
 
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/end-to-end-time-1.png" style="width:70%;"/>
+
+<img src="../../assets/images/kafka/end-to-end-2.png" style="width:70%;"/>
+
+---
+
+## Kafka Monitoring Consumer Lag
+
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/kafka-consumer-lag-1.png"  style="width:75%;" />
 
  * Consumer Lag = Size of Partition (last offset) - Consumer offset (last committed)
-
  * Large offsets means consumers can't  keep up with data
-
- * Burrow - https://github.com/linkedin/Burrow
-
-     - Open sourced by LinkedIn
-
-     - Keeps track of committed offsets by consumers and last offsets for partitions
-
-     - Provides REST API for query
+ * **Question for class** : What can cause consumer lag?
+ * Tools to monitor consumer lag:
+    - JMX stats 
+    - [Burrow](https://github.com/linkedin/Burrow)
+    - Confluent dashboard
+    - Datadog 
 
 Notes:
 
@@ -423,152 +397,18 @@ Notes:
 
 ## Best Practices: Recommendations from Netflix
 
+<img src="../../assets/images/logos/netflix-logo-1.png"  style="max-width:30%;float:right;" />
+
 
  * Prefer multiple modest sized Kafka clusters rather than one giant Kafka cluster.   This will simplify operations
 
  * Number of partitions per cluster around 10,000.This improves availability and latency
 
  * Use dedicated Zookeeper cluster for each Kafka cluster
+ 
+ * [Reference](https://medium.com/netflix-techblog/kafka-inside-keystone-pipeline-dd5aeabaf6bb)
 
 Notes:
-
-https://medium.com/netflix-techblog/kafka-inside-keystone-pipeline-dd5aeabaf6bb
-
-
----
-
-# Kafka Case Studies
-
----
-
-
-## Kafka Case Studies
-
-
- * We will be discussing some published use cases
-
- * To instructor:The URLs are in 'Notes' section
-
-Notes:
-
-
-
----
-
-## Zendesk
-
-
- * (http://bigdatausecases.info/entry/kafka-used-at-scale-to-deliver-real-time-notifications)
-
- * Highlight / Discuss
-
-     - Click on ' **slides** '
-
-     - Slide #6 - architecture diagram
-
-     - Slide #7: Partition keys
-
-     - Slide #10: stats
-
-Notes:
-
-http://bigdatausecases.info/entry/kafka-used-at-scale-to-deliver-real-time-notifications
-
-
----
-
-## WalmartLabs
-
-
- * http://bigdatausecases.info/entry/apache-kafka-use-cases-within-search-system-atwalmartlabs
-
- * Highlight / Discuss
-
-     - Slide #44:
-
-     - Slide #46: use cases
-
-     - Slide #47: stats
-
-     - Slide #48: architecture
-
-     - Slide #50: architecture
-
-Notes:
-
-http://bigdatausecases.info/entry/apache-kafka-use-cases-within-search-system-atwalmartlabs
-
-
----
-
-## Netflix
-
-
- * http://bigdatausecases.info/entry/from-three-nines-to-five-nines-a-kafka-journey
-
- * Highlight / Discuss
-
-     - Slide #1 - #3: data sizes
-
-     - Slide #5: architecture
-
-     - Slide #9: configuration
-
-     - Slide #10: data loss
-
-     - Slide #20: production tips
-
-Notes:
-
-http://bigdatausecases.info/entry/from-three-nines-to-five-nines-a-kafka-journey
-
-
----
-
-## Grid Dynamics Template
-
-
- * Blueprint
-
-     - Kafka
-
-     - Spark
-
-     - Cassandra
-
-     - ZooKeeper
-
-     - Redis
-
-     - HDFS
-
- *  https://blog.griddynamics.com/in-stream-processing-service-blueprint
-
- * Highlight
-
-     - architecture
-
-Notes:
-
-https://blog.griddynamics.com/in-stream-processing-service-blueprint
-
-
-
----
-
-## In-Stream Processing Reference Impl
-
-
- * http://apps.griddynamics.com/realtime-twitter-sentiment-analysis-example
-
-<img src="../../assets/images/kafka/3rd-party/Reference-Impl-04.png" alt="Reference-Impl-04.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.97, "height" : 4.58, "width" : 8.21} -->
-
-
-Notes:
-
-Source: Grid Dynamics
-http://apps.griddynamics.com/realtime-twitter-sentiment-analysis-example
-
 
 
 ---
@@ -594,7 +434,7 @@ Notes:
 
 ---
 
-## Troubleshooting:  Issue
+## Issue
 
 
  * Consumer errors with Out of Memory error
@@ -608,7 +448,7 @@ Notes:
 
 ---
 
-## Troubleshooting Possible Solutions
+## Possible Solutions
 
 
  * Too many partitions
@@ -626,7 +466,7 @@ Notes:
 
 ---
 
-## Troubleshooting: Issue
+## Issue
 
 
  * Consumer seems to stuck on one offset, can not go beyond that message.
@@ -642,7 +482,7 @@ Notes:
 
 ---
 
-## Troubleshooting Possible Solutions
+## Possible Solutions
 
 
  * Message size is too large
@@ -658,7 +498,7 @@ Notes:
 
 ---
 
-## Troubleshooting:  Issue
+## Issue
 
 
  * Some consumers are not receiving any messages
@@ -672,8 +512,9 @@ Notes:
 
 ---
 
-## Troubleshooting Possible Solutions
+## Possible Solutions
 
+<img src="../../assets/images/kafka/Consumer-Behavior-04.png"  style="max-width:50%;float:right;" />
 
  * Probably have more consumers than number of partitions
 
@@ -692,7 +533,7 @@ Notes:
 
 ---
 
-## Troubleshooting: Issue
+## Issue
 
 
  * Producer is getting QueueFullException
@@ -706,18 +547,18 @@ Notes:
 
 ---
 
-## Troubleshooting Possible Solutions
+## Possible Solutions
 
 
  *  **Reason**
 
- * Producer is sending events faster than Kafka brokers can handle
+   - Producer is sending events faster than Kafka brokers can handle
 
  * Fixes:
 
- * Slow down producer sending
+    - Slow down producer sending
 
-     - Switch `ack` setting to 1 or `all` to Producer will wait for acknowledgement from Broker
+       - Switch `ack` setting to 1 or `all` to Producer will wait for acknowledgement from Broker
 
  * Expand Kafka capacity
 
@@ -732,7 +573,7 @@ Notes:
 
 ---
 
-## Troubleshooting: Issue
+## Issue
 
 
  * Number of Under Replicated partitions are going up
@@ -746,32 +587,21 @@ Notes:
 
 ---
 
-## Troubleshooting Possible Solutions
+## Possible Solutions
 
+<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png"  style="max-width:50%;float:right;" />
 
  *  **Reason**
-
- * Creating replicas is lagging behind
-
- * IO throughput between brokers is not keeping up with incoming data
-
+   - Creating replicas is lagging behind
+   - IO throughput between brokers is not keeping up with incoming data
  * This is  **serious issue** , as it will
-
      - backup write pipeline
-
      - Increase probability of loosing data
-
      - And slow down consumers! (why ?)
-
- * Fixes:
-
- * Inspect disk bottleneck on replica machines
-
-     - Are the disks slow / full?
-
- * Check IO throughput between brokers
-
-     - Is the NIC saturated?
+ * **Fixes:**
+    - Inspect disk bottleneck on replica machines
+    - Are the disks slow / full?
+    - Is the NIC saturated?
 
 Notes:
 
@@ -984,23 +814,18 @@ Notes:
 
 Notes:
 
-
-
-
 ---
 
 
-## Review Questions
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
 
 
-Notes:
+- Let's go over what we have covered so far
+
+- Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
 
 
-
-
----
-
-## Lesson Summary
-
-
-Notes:

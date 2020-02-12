@@ -2,6 +2,23 @@
 
 ---
 
+## Kafka Eco System
+
+| Product          | Description                                                                  |
+|------------------|------------------------------------------------------------------------------|
+| Kafka Streams    | Build streaming applications easily                                          |
+| Kafka Connect    | Move data between Kafka and other systems (DB / file system)                 |
+| Kafka Registry   | Metadata /schema store for data                                              |
+| Kafka REST Proxy | REST interface into Kafka cluster.,Produce / </br>Consume using RESTFUL APIs |
+| Camus            | Kafka / HDFS integration                                                     |
+
+<!-- {"left" : 0.25, "top" : 1.45, "height" : 3.38, "width" : 9.75} -->
+
+Notes:
+
+---
+
+
 ## Kafka Connect
 
 
