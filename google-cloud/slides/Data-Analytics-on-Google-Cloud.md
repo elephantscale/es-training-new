@@ -22,15 +22,13 @@ Notes:
 
 * __Data Studio__: For creating beautiful visualizations of data
 
-* __Big Query__: SQL for large (any size) datasets 
+* __Big Query__: SQL for large (any size) datasets
 
 * __Colaboratory__: A FREE hosted environment for data analytics and machine learning
 
 * __Data Lab__ : (Paid) A hosted environment for data analytics and machine learning
 
 Notes:
-
----
 
 ---
 
@@ -52,7 +50,7 @@ Notes:
     - 20 mins
 
 * **Instructions:**
-    - Please see instructions for 
+    - Please see instructions for
     - **COLAB-1**
 
 
@@ -71,7 +69,7 @@ Notes:
     - 30-40 mins
 
 * **Instructions:**
-    - Please see instructions for 
+    - Please see instructions for
     - **DataLab-1**
     - **DataLab-2**
 
