@@ -18,18 +18,14 @@ This course teaches Machine Learning from a practical perspective. In-depth cove
 * Classifications
   - Naive Bayes
   - SVM
-  - Decision Trees
-  - Random Forest
 * Clustering algorithms (K-Means)
-* Principal Component Analysis (PCA)
-* Recommendations
 
 
 ## Audience:
 Data analysts,  Software Engineers, Data scientists
 
 ## Duration:
-Three Days
+Two Days
 
 ## Skill Level:
 Beginner to Intermediate
@@ -40,7 +36,6 @@ We will study and solve some of most common industry use cases; listed below
 * Finance
   - Predicting house prices
   - Predicting loan defaults at Prosper
-  - Predicting income from customs data
 * Health care
   - Predicting diabetes outcome
 * Customer service
@@ -49,13 +44,7 @@ We will study and solve some of most common industry use cases; listed below
   - Spam classification
 * Travel
   - Predicting Uber demand
-* Politics
-  - Predicting election contributions
-* Recommendations
-  - Predicting movie ratings
-  - Recommending songs
 * Other
-  - Predicting wine quality
   - Predicting college admissions
 
 ## Prerequisites
@@ -136,18 +125,6 @@ Cloud based lab environment will be provided to students, no need to install any
 * Labs:
    -Customer churn data
 
-### Classification: Decision Trees & Random Forests
-* Classification and Regression Trees (CART) introduction
-* Decision Tree concepts
-* Pruning trees
-* Gini index
-* Bias Variance Tradeoff
-* Random Forest concepts
-* Random Forests features and examples
-* Labs:
-  - Predicting loan defaults
-  - Estimating election contributions
-
 ### Classification: Naive Bayes
 * Naive Bayes theory
 * Running Naive Bayes algorithm
@@ -167,27 +144,6 @@ Cloud based lab environment will be provided to students, no need to install any
 * Labs:
   - Predicting Uber demand
   - Clustering shopping trips
-
-
-### Unsupervised: Principal Component Analysis (PCA)
-* Understanding dimensions
-* 'Curse of dimensionality'
-* Reducing dimensions
-* Overview of Principal Component Analysis (PCA)
-* Eigen vectors and values
-* Implementing PCA algorithm
-* Labs:
-  - Predicting wine quality
-  - Predicting income from census data
-
-### Recommendations
-* Recommendation use cases
-* Recommender systems
-* Collaborative Filtering (CF)
-* Implementing CF algorithm
-* Lab:
-   - Movie ratings recommendation
-   - Songs rating recommendation
 
 ### Final workshop (time permitting)
 * This is a group workshop
