@@ -9,9 +9,9 @@
 
 
 ## generate outline doc pdf
-pandoc ../google-cloud-for-data-scientists-outline.md  -o  ../google-cloud-for-data-scientists-outline.docx
+pandoc ../google-cloud-for-data-scientists.md  -o  ../google-cloud-for-data-scientists.docx
 
-pandoc ../google-cloud-for-data-scientists-outline.md   -o ../google-cloud-for-data-scientists-outline.pdf
+pandoc ../google-cloud-for-data-scientists.md   -o ../google-cloud-for-data-scientists.pdf
 
 ## -d will delete existing files in assembly  folder
 $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d     0-slide-assembly-gcp-for-data-scientists.txt  $@
