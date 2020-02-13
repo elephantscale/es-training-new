@@ -3,7 +3,7 @@
 
 ## Overview
 
-Machine Learning (ML) is changing the world. To use ML effectively, one needs to understand the algorithms and how to utilize them. This course provides an introduction into the most popular machine learning algorithms. 
+Machine Learning (ML) is changing the world. To use ML effectively, one needs to understand the algorithms and how to utilize them. This course provides an introduction into the most popular machine learning algorithms.
 
 This course teaches doing Machine Learning using popular SciKit-Learn package in Python language.
 
@@ -24,7 +24,7 @@ This course teaches Machine Learning from a practical perspective. In-depth cove
 * Principal Component Analysis (PCA)
 * Recommendations
 
- 
+
 ## Audience:
 Data analysts,  Software Engineers, Data scientists
 
@@ -46,7 +46,7 @@ We will study and solve some of most common industry use cases; listed below
 * Customer service
   - Predicting customer turnover
 * Text analytics
-  - Spam classification 
+  - Spam classification
 * Travel
   - Predicting Uber demand
 * Politics
@@ -57,12 +57,11 @@ We will study and solve some of most common industry use cases; listed below
 * Other
   - Predicting wine quality
   - Predicting college admissions
- 
+
 ## Prerequisites
 * Good programming background
 * familiarity with Python would be a plus, but not required
 * No machine learning knowledge is assumed
-* No Spark knowledge is assumed
 
 
 ## Lab environment
@@ -70,7 +69,7 @@ Cloud based lab environment will be provided to students, no need to install any
 
 ### Students will need the following
 * A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
-* Chrome browser 
+* Chrome browser
 
 ## Detailed Course Outline
 
@@ -83,8 +82,8 @@ Cloud based lab environment will be provided to students, no need to install any
 
 ### Machine Learning (ML) Overview
 * Machine Learning landscape
-* Understanding Deep Learning use cases 
-* Understanding AI / Machine Learning / Deep Learning 
+* Understanding Deep Learning use cases
+* Understanding AI / Machine Learning / Deep Learning
 * Data and AI
 * AI vocabulary
 * Hardware and software ecosystem
@@ -101,7 +100,7 @@ Cloud based lab environment will be provided to students, no need to install any
 * Data cleanup
 * Extracting features, enhancing data
 * Visualizing Data
-* Labs: 
+* Labs:
   - Data cleanup
   - Exploring data
   - Visualizing data
@@ -155,7 +154,7 @@ Cloud based lab environment will be provided to students, no need to install any
 * Evaluating model performance
 * Lab
   - Spam filtering
-  
+
 ### Unsupervised Algorithms
 * Overview of unsupervised algorithms
 * Supervised vs. unsupervised
@@ -180,19 +179,17 @@ Cloud based lab environment will be provided to students, no need to install any
 * Labs:
   - Predicting wine quality
   - Predicting income from census data
-  
-### Recommendations 
+
+### Recommendations
 * Recommendation use cases
 * Recommender systems
 * Collaborative Filtering (CF)
 * Implementing CF algorithm
 * Lab:
-   - Movie ratings recommendation 
+   - Movie ratings recommendation
    - Songs rating recommendation
-   
+
 ### Final workshop (time permitting)
 * This is a group workshop
 * Each group will analyze a couple of real world datasets and run ML algorithms
 * Each group will present their findings to the class
-   
-

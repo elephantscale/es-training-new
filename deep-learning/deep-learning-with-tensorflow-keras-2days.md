@@ -1,0 +1,1 @@
+../course-outlines/deep-learning-with-tensorflow-keras-2days.md

@@ -3,9 +3,9 @@
 ## To generate slides
 Execute these from within 'es-reveal-md' docker
 
-```bash 
+```bash
    $   cd slides;   
-   
+
    # generate md assembly
    $  ./gen.sh  
 
@@ -16,7 +16,7 @@ Execute these from within 'es-reveal-md' docker
 ## To generate course outline
 
 ```bash
-   $    $ES_HOME/utils/presentations/md2docx.sh   Machine-Learning-With-Apache-Spark-outline.md
-   
-   $    $ES_HOME/utils/presentations/md2docx.sh    Machine-Learning-With-Python-outline.md
+   $    $ES_HOME/utils/presentations/md2docx.sh   machine-learning-with-spark.md
+
+   $    $ES_HOME/utils/presentations/md2docx.sh   machine-learning-with-python.md
 ```

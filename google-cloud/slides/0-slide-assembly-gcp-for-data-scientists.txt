@@ -2,7 +2,7 @@
 ## outline
 
 ## Day-1
-../google-cloud-for-data-scientists-outline.pdf
+../google-cloud-for-data-scientists.pdf
 
 ## About
 About-Google-Cloud-for-Data-Scienctist-Class.md
