@@ -5,7 +5,7 @@
 
 
 ## Course outline
-../Intro-to-Apache-Kafka-outline-3days.pdf
+../kafka-intro-3days-outline.pdf
 
 # About
 About-Kafka-Class-3-days.md
