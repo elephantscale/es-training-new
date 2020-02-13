@@ -6,7 +6,7 @@
 
 
 ## Course outline
-../Machine-Learning-With-Apache-Spark-outline.pdf
+../machine-learning-with-spark.pdf
 
 ## About
 About-Machine-Learning-With-Spark-Python-Class.md
