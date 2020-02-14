@@ -137,7 +137,7 @@ Notes:
 - Every application has at least the default service but different services can be deployed to split a large app into parts
 
 
-<img src="../../assets/images/data-science-gcp/3rd-party/app-engine-1.png" style="white;width:40%;"/>   
+<img src="../../assets/images/google-cloud/3rd-party/app-engine-1.png" style="white;width:40%;"/>   
 
 Notes:
 Source: https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine

@@ -1,4 +1,4 @@
-# AI for Images
+# AI for Image Processing
 
 ## Overview
 

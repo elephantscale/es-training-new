@@ -63,7 +63,7 @@ Notes:
 
 ## Secure and Compliant
 
-<img src="../../assets/images/data-science-gcp/3rd-party/cloud-sql-1.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/cloud-sql-1.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 
 * Automatic data encryption at rest and in transit.
 
@@ -119,7 +119,7 @@ __`Java, Python, PHP, Node.js, GO, Ruby`__
 ## Cloud SQL Launch Checklist
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/cloud-sql-4.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/cloud-sql-4.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 
 * The checklist is broken down into three sections.
     - Architecture Design and Development
@@ -162,7 +162,7 @@ __`Java, Python, PHP, Node.js, GO, Ruby`__
 ## Checklist: Final Launch
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/cloud-sql-5.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/cloud-sql-5.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 
 *  Use before and shortly before and during your launch.
 

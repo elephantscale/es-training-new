@@ -31,13 +31,13 @@
 * The data can be transferred from 'storage' to 'compute' nodes very fast; over high speed network
 
 
-<img src="../../assets/images/data-science-gcp/cloud-storage-and-compute-1.png" style="width:50%;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:50%;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
 
 
 ---
 ## Storage Classes
 
-<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-storage-classes-1.png" style="width:80%;"/>  <!-- {"left" : 1.04, "top" : 1.25, "height" : 4.03, "width" : 8.17} -->  
+<img src="../../assets/images/google-cloud/3rd-party/google-cloud-storage-classes-1.png" style="width:80%;"/>  <!-- {"left" : 1.04, "top" : 1.25, "height" : 4.03, "width" : 8.17} -->  
 
 
 - Source : https://cloud.google.com/storage/
@@ -92,7 +92,7 @@
 
 * Google manages encryption keys (proven and hardened)
 
-<img src="../../assets/images/data-science-gcp/cloud-storage-encryption-1.png" style="width:80%;"/>  <!-- {"left" : 1.02, "top" : 4.72, "height" : 2.71, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-encryption-1.png" style="width:80%;"/>  <!-- {"left" : 1.02, "top" : 4.72, "height" : 2.71, "width" : 8.21} -->  
 
 
 ---
@@ -105,7 +105,7 @@
 
 * Clients must manage its own encryption keys
 
-<img src="../../assets/images/data-science-gcp/cloud-storage-encryption-2.png" style="width:80%;"/>  <!-- {"left" : 0.63, "top" : 4.24, "height" : 3.22, "width" : 8.99} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-encryption-2.png" style="width:80%;"/>  <!-- {"left" : 0.63, "top" : 4.24, "height" : 3.22, "width" : 8.99} -->  
 
 
 ---
@@ -149,7 +149,7 @@ Notes:
 
 ## Ingesting Large Amount of Data
 
-<img src="../../assets/images/data-science-gcp/cloud-storage-transfer-1.png" style="width:50%;"/>  <!-- {"left" : 2.45, "top" : 1.32, "height" : 3.49, "width" : 5.35} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-transfer-1.png" style="width:50%;"/>  <!-- {"left" : 2.45, "top" : 1.32, "height" : 3.49, "width" : 5.35} -->  
 
 
 * For large data ingests we recommend a 'direct transfer  ( C )'

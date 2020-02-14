@@ -27,7 +27,7 @@
     - Distributed data (can store huge amount of data; 100s TB or PB)
     - Distributed computing - Running processing on many machines in parallel
 
-<img src="../../assets/images/data-science-gcp/data-science-laptop-to-cluster-1.png" style="width:43%;"/><!-- {"left" : 1.28, "top" : 4.2, "height" : 4.36, "width" : 7.69} -->
+<img src="../../assets/images/google-cloud/data-science-laptop-to-cluster-1.png" style="width:43%;"/><!-- {"left" : 1.28, "top" : 4.2, "height" : 4.36, "width" : 7.69} -->
 
 
 ---
@@ -39,7 +39,7 @@
 - Then they would hand over the models to Data Engineers to re-implement the model for cluster
     - Could be using a different language like Java
 
-<img src="../../assets/images/data-science-gcp/data-science-laptop-to-cluster-1.png" style="width:40%;"/> <!-- {"left" : 1.02, "top" : 4.08, "height" : 4.65, "width" : 8.21} -->
+<img src="../../assets/images/google-cloud/data-science-laptop-to-cluster-1.png" style="width:40%;"/> <!-- {"left" : 1.02, "top" : 4.08, "height" : 4.65, "width" : 8.21} -->
 
 
 
@@ -59,7 +59,7 @@
 
 ##  Multiple Teams are Involved --> Operational Complexity
 
-<img src="../../assets/images/data-science-gcp/data-science-big-data-infrastructure.png" style="width:35%;"/> <!-- {"left" : 2.37, "top" : 1.46, "height" : 6.72, "width" : 5.52} -->
+<img src="../../assets/images/google-cloud/data-science-big-data-infrastructure.png" style="width:35%;"/> <!-- {"left" : 2.37, "top" : 1.46, "height" : 6.72, "width" : 5.52} -->
 
 
 ---

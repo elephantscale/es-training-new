@@ -34,7 +34,7 @@ Notes:
 
 ## Viz: US Population
 
-<img src="../../assets/images/data-science-gcp/3rd-party/viz-US-population-1.png" style="width:80%;"/><!-- {"left" : 1.57, "top" : 1.15, "height" : 4.02, "width" : 7.11} -->
+<img src="../../assets/images/google-cloud/3rd-party/viz-US-population-1.png" style="width:80%;"/><!-- {"left" : 1.57, "top" : 1.15, "height" : 4.02, "width" : 7.11} -->
    
 
 * [Source](https://www.someka.net/excel-template/usa-heat-map-generator/)
@@ -43,7 +43,7 @@ Notes:
 
 ## Viz: US Debt
 
-<img src="../../assets/images/data-science-gcp/3rd-party/viz-US-debt-1.png" style="width:60%;"/>  <!-- {"left" : 1.98, "top" : 1.18, "height" : 4.69, "width" : 6.29} -->
+<img src="../../assets/images/google-cloud/3rd-party/viz-US-debt-1.png" style="width:60%;"/>  <!-- {"left" : 1.98, "top" : 1.18, "height" : 4.69, "width" : 6.29} -->
 
 
 * [Source](https://ricochet.com/archives/problem-no-one-dc-wants-talk/)
@@ -53,7 +53,7 @@ Notes:
 ---
 ## Viz: Australian Bush Fires of 2019
 
-<img src="../../assets/images/data-science-gcp/3rd-party/viz-Australian-bush-fires-2019.jpg" style="width:50%;"/> <!-- {"left" : 2.2, "top" : 1.21, "height" : 5.17, "width" : 5.85} -->
+<img src="../../assets/images/google-cloud/3rd-party/viz-Australian-bush-fires-2019.jpg" style="width:50%;"/> <!-- {"left" : 2.2, "top" : 1.21, "height" : 5.17, "width" : 5.85} -->
 
 - [Source](https://www.reddit.com/r/dataisbeautiful/comments/ejhw7w/area_of_land_burnt_in_australia_and_area_of_smoke/)
 
@@ -61,7 +61,7 @@ Notes:
 ---
 ## Viz: Camera vs. Smartphone Sales
 
-<img src="../../assets/images/data-science-gcp/3rd-party/viz-camera-vs-smartphone-sales-1.jpg" style="width:40%;"/>  <!-- {"left" : 2.97, "top" : 1.24, "height" : 4.32, "width" : 4.32} -->
+<img src="../../assets/images/google-cloud/3rd-party/viz-camera-vs-smartphone-sales-1.jpg" style="width:40%;"/>  <!-- {"left" : 2.97, "top" : 1.24, "height" : 4.32, "width" : 4.32} -->
 
 
 - __"Correlation vs Causation"__
@@ -70,7 +70,7 @@ Notes:
 ---
 ## Viz: Cardiac Deaths vs. Waffle House
 
-<img src="../../assets/images/data-science-gcp/3rd-party/viz-cardiac-deaths-vs-waffle-houses.jpg" style="width:65%;"/> <!-- {"left" : 1.54, "top" : 1.09, "height" : 4.55, "width" : 7.16} -->
+<img src="../../assets/images/google-cloud/3rd-party/viz-cardiac-deaths-vs-waffle-houses.jpg" style="width:65%;"/> <!-- {"left" : 1.54, "top" : 1.09, "height" : 4.55, "width" : 7.16} -->
  
 
 - __"Correlation vs Causation"__
@@ -85,7 +85,7 @@ Notes:
 
 ## Google Data Studio 
 
-<img src="../../assets/images/data-science-gcp/3rd-party/data-studio-1.png" style="width:50%; float:right;"/>   <!-- {"left" : 5.44, "top" : 1.03, "height" : 2.88, "width" : 4.72} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-studio-1.png" style="width:50%; float:right;"/>   <!-- {"left" : 5.44, "top" : 1.03, "height" : 2.88, "width" : 4.72} -->
 
 * An online tool to visualize data 
     - Think Tablaue, but  online
@@ -122,7 +122,7 @@ Notes:
   - Google drive, Cloud Storage, Cloud SQL, Big Query 
 * Reference: https://datastudio.google.com/data
 
-<img src="../../assets/images/data-science-gcp/3rd-party/data-studio-2.png" style="width:75%; "/>  <!-- {"left" : 1.02, "top" : 3.3, "height" : 4.29, "width" : 8.21} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-studio-2.png" style="width:75%; "/>  <!-- {"left" : 1.02, "top" : 3.3, "height" : 4.29, "width" : 8.21} -->
 
 ---
 ## Data Sources
@@ -131,7 +131,7 @@ Notes:
   - Adroll, Facebook Ads, Quickbooks
 * Reference: https://datastudio.google.com/data
 
-<img src="../../assets/images/data-science-gcp/3rd-party/data-studio-3.png" style="width:65%; "/>  <!-- {"left" : 1.02, "top" : 3.06, "height" : 4.83, "width" : 8.21} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-studio-3.png" style="width:65%; "/>  <!-- {"left" : 1.02, "top" : 3.06, "height" : 4.83, "width" : 8.21} -->
 
 
 
@@ -144,7 +144,7 @@ Notes:
 
 - Please analyze the [visualization](https://datastudio.google.com/reporting/0B6vuEpR8jgX2R29GVzJxWDlOak0/page/vbQ) and discuss your thoughts
 
-<img src="../../assets/images/data-science-gcp/3rd-party/viz-night-shyamalan.png" style="width:60%;"/>  <!-- {"left" : 2.01, "top" : 4.6, "height" : 3.75, "width" : 6.22} -->
+<img src="../../assets/images/google-cloud/3rd-party/viz-night-shyamalan.png" style="width:60%;"/>  <!-- {"left" : 2.01, "top" : 4.6, "height" : 3.75, "width" : 6.22} -->
 
 
 
@@ -156,7 +156,7 @@ Notes:
 
 - Please analyze the [visualization](https://datastudio.google.com/reporting/1HWH0xFoTRvMi8JonyeeqnOct9wua26j-/page/YwMf) and discuss your thoughts
 
-<img src="../../assets/images/data-science-gcp/3rd-party/viz-are-we-alone-1.png" style="width:60%;"/>  <!-- {"left" : 1.34, "top" : 4.99, "height" : 3.58, "width" : 7.58} -->
+<img src="../../assets/images/google-cloud/3rd-party/viz-are-we-alone-1.png" style="width:60%;"/>  <!-- {"left" : 1.34, "top" : 4.99, "height" : 3.58, "width" : 7.58} -->
 
 ---
 
@@ -169,7 +169,7 @@ Notes:
   - Change the graph type (e.g. from line --> bar)
   - Try other customizations 
 
-<img src="../../assets/images/data-science-gcp/3rd-party/data-studio-5.png" style="width:50%;"/><!-- {"left" : 1.67, "top" : 5.62, "height" : 3.05, "width" : 6.47} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-studio-5.png" style="width:50%;"/><!-- {"left" : 1.67, "top" : 5.62, "height" : 3.05, "width" : 6.47} -->
   
 
 Notes:
