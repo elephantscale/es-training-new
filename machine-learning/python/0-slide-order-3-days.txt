@@ -5,7 +5,7 @@
 ##          (-d will replace current assembly.out)
 
 ## Course outline
-../Machine-Learning-With-Python-outline.pdf
+../machine-learning-with-python.pdf
 
 ## About
 About-Machine-Learning-With-Python-Class-3-days.md

@@ -31,7 +31,7 @@ Notes:
 ## Google Compute Engine 
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/google-compute-1.png" style="width:80%;" />
+<img src="../../assets/images/google-cloud/google-compute-1.png" style="width:80%;" />
 
 * Can rent virtual machines and manage them ourselves
 
@@ -156,19 +156,19 @@ Notes:
 
 - With larger pool
 
-<img src="../../assets/images/data-science-gcp/preemptible-vm-1.png" style="width:50%;"/><!-- {"left" : 1.88, "top" : 1.95, "height" : 2.34, "width" : 6.49} -->
+<img src="../../assets/images/google-cloud/preemptible-vm-1.png" style="width:50%;"/><!-- {"left" : 1.88, "top" : 1.95, "height" : 2.34, "width" : 6.49} -->
 
 <br clear="all" />
 
 - VMS are taken away --> smaller compute pool
 
-<img src="../../assets/images/data-science-gcp/preemptible-vm-2.png" style="width:50%;"/><!-- {"left" : 1.88, "top" : 6.07, "height" : 2.34, "width" : 6.49} -->
+<img src="../../assets/images/google-cloud/preemptible-vm-2.png" style="width:50%;"/><!-- {"left" : 1.88, "top" : 6.07, "height" : 2.34, "width" : 6.49} -->
 
 ---
 
 ## Spining up a Linux Instance
 
-<img src="../../assets/images/data-science-gcp/3rd-party/cloud-compute-2.png" style="width: 30%;  float:right;" /><!-- {"left" : 6.75, "top" : 1.13, "height" : 5.75, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/3rd-party/cloud-compute-2.png" style="width: 30%;  float:right;" /><!-- {"left" : 6.75, "top" : 1.13, "height" : 5.75, "width" : 3.28} -->
 
 * Goto [VM Instances page](https://console.cloud.google.com/compute/instances)
 * Create a new instance with the following properties
@@ -181,7 +181,7 @@ Notes:
 
 ## Accessing the Instance
 
-<img src="../../assets/images/data-science-gcp/3rd-party/compute-engine-3.png" style="width: 40%;  float:right;" /><!-- {"left" : 5.59, "top" : 1.26, "height" : 3.55, "width" : 4.25} -->
+<img src="../../assets/images/google-cloud/3rd-party/compute-engine-3.png" style="width: 40%;  float:right;" /><!-- {"left" : 5.59, "top" : 1.26, "height" : 3.55, "width" : 4.25} -->
 
 * We will use SSH to login to our instance
 

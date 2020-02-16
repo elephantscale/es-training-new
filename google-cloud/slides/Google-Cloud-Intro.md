@@ -37,7 +37,7 @@
 
 ## Google Cloud vs. Others
 
-<img src="../../assets/images/data-science-gcp/3rd-party/gartner-quadrant-cloud.jpg" style="width:50%;float:right;" /><!-- {"left" : 5.8, "top" : 1.04, "height" : 4.64, "width" : 4.44} -->  
+<img src="../../assets/images/google-cloud/3rd-party/gartner-quadrant-cloud.jpg" style="width:50%;float:right;" /><!-- {"left" : 5.8, "top" : 1.04, "height" : 4.64, "width" : 4.44} -->  
 
 - Source: [Gartner Magic Quadrant for Cloud Infrastructure as a Service 2019](https://cloud.google.com/gartner-cloud-infrastructure-as-a-service/)
 
@@ -45,7 +45,7 @@
 
 ## Google Cloud Services Overview
 
-<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-services-1.png" style="width:50%; border-width:3px; border-style:solid;" /><!-- {"left" : 1.95, "top" : 1.57, "height" : 6.5, "width" : 6.34} -->  
+<img src="../../assets/images/google-cloud/3rd-party/google-cloud-services-1.png" style="width:50%; border-width:3px; border-style:solid;" /><!-- {"left" : 1.95, "top" : 1.57, "height" : 6.5, "width" : 6.34} -->  
 
 
 ---
@@ -68,7 +68,7 @@
 
 ## Google Cloud Resource Hierarchy
 
-<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:70%; " /><!-- {"left" : 1.58, "top" : 1.48, "height" : 3.7, "width" : 7.09} -->  
+<img src="../../assets/images/google-cloud/3rd-party/google-cloud-organization-2.png" style="width:70%; " /><!-- {"left" : 1.58, "top" : 1.48, "height" : 3.7, "width" : 7.09} -->  
 
 
 - Source: https://cloud.google.com/billing/docs/concepts
@@ -79,7 +79,7 @@
 
 ## Google Cloud Resource Hierarchy
 
-<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:70%; float:right;" /><!-- {"left" : 5.22, "top" : 1.09, "height" : 2.59, "width" : 4.97} -->  
+<img src="../../assets/images/google-cloud/3rd-party/google-cloud-organization-2.png" style="width:70%; float:right;" /><!-- {"left" : 5.22, "top" : 1.09, "height" : 2.59, "width" : 4.97} -->  
 
 
 - Domain
@@ -100,7 +100,7 @@
 
 ## Google Cloud Resources: Domain
 
-<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:50%; float:right;" /><!-- {"left" : 5.25, "top" : 1.04, "height" : 2.56, "width" : 4.92} -->  
+<img src="../../assets/images/google-cloud/3rd-party/google-cloud-organization-2.png" style="width:50%; float:right;" /><!-- {"left" : 5.25, "top" : 1.04, "height" : 2.56, "width" : 4.92} -->  
 
 
 - Domain identifies your company
@@ -115,7 +115,7 @@
 
 ## Google Cloud Resources: Organization & Folders
 
-<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:50%; float:right;" /><!-- {"left" : 5.5, "top" : 1.04, "height" : 2.43, "width" : 4.67} -->  
+<img src="../../assets/images/google-cloud/3rd-party/google-cloud-organization-2.png" style="width:50%; float:right;" /><!-- {"left" : 5.5, "top" : 1.04, "height" : 2.43, "width" : 4.67} -->  
 
 
 * A domain can have multiple organizations
@@ -135,7 +135,7 @@
 
 ## Google Cloud Resources: Projects
 
-<img src="../../assets/images/data-science-gcp/3rd-party/google-cloud-organization-2.png" style="width:50%; float:right;" /><!-- {"left" : 5.5, "top" : 1.04, "height" : 2.43, "width" : 4.67} -->  
+<img src="../../assets/images/google-cloud/3rd-party/google-cloud-organization-2.png" style="width:50%; float:right;" /><!-- {"left" : 5.5, "top" : 1.04, "height" : 2.43, "width" : 4.67} -->  
 
 
 * __Projects__ are required to use any resources and services

@@ -42,27 +42,27 @@ Notes:
   - Pig
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/dataproc-jobs.png" style="width:50%;float:center;"/>
+<img src="../../assets/images/google-cloud/3rd-party/dataproc-jobs.png" style="width:50%;float:center;"/>
 
 ---
 
 ## Traditional Spark and Hadoop Clusters
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/data-proc-4.png" style="width:80%;"/>
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-4.png" style="width:80%;"/>
 
 ---
 ## Google Cloud Dataproc
 
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/data-proc-5.png" style="width:80%;"/>
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-5.png" style="width:80%;"/>
 
 ---
 ## Fast and Scalable
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/data-proc-speed.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-speed.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 
 * Cloud Dataproc clusters can be created quickly (typically couple of minutes)
 
@@ -78,7 +78,7 @@ Notes:
 ## Low Cost
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/data-proc-1.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-1.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 
 * Low and fixed price
 
@@ -101,7 +101,7 @@ Notes:
   - and more
 
 <!-- TODO shiva -->
-<img src="../../assets/images/data-science-gcp/3rd-party/data-proc-2.jpg" style="width:70%;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-2.jpg" style="width:70%;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
 
 ---
 

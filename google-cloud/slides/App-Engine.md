@@ -1,6 +1,6 @@
 # Google App Engine
 
- <img src="../../assets/images/logos/google-cloud-logo-2.png" style="white;width:40%;"/>   
+ <img src="../../assets/images/logos/google-app-engine-logo-1.png" style="white;width:40%;"/>   
 
 
 
@@ -8,12 +8,15 @@
 
 ## Objectives
 - Introduction to Google App Engine
-- Scaling up and out
+- App Engine features
 - Writing apps
 
 ---
 
-## Introduction
+## App Engine Intro
+
+ <!-- TODO shiva -->
+ <img src="../../assets/images/logos/google-app-engine-logo-1.png" style="width:30%;float:right;"/>  
 
 - App Engine is Google's application platform
 
@@ -23,15 +26,13 @@
 
 - No need to manage infrastructure of application
 
-- Application infrastructure hosted in a specific region
 
- <img src="../../assets/images/logos/google-appengine-logo.png" style="white;width:40%;"/>  
 
 Notes:
 
 ---
 
-## Key Features
+## App Engine Features
 
 - Many popular languages supported
 
@@ -53,7 +54,7 @@ Notes:
 
 - Two different options for applications
 
-- Standard Environment
+- **Standard Environment**
     - Application run in sandbox
 
     - Can handle rapid scaling
@@ -73,7 +74,7 @@ Notes:
 ---
 ## App Engine Environments
 
-- Flexible Environment
+- **Flexible Environment**
     - Application run within a Docker container on virtual machine on Compute Engine
 
     - Can handle consistent traffic, deal with traffic fluctuations, or scale up and down gradually
@@ -90,18 +91,19 @@ Notes:
 ## Standard Supported Languages
 
 - In the Standard Environment, the following languages are supported as runtime environment languages
+  - Go
+  - PHP
+  - Java
+  - Python
+  - Node.js
+  - Ruby
 
-- Go
-
-- PHP
-
-- Java
-
-- Python (Most important to this course)
-
-- Node.js
-
-- Ruby
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/golang-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/logos/java-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/logos/php-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/logos/python-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/logos/nodejs-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
 
 Notes:
 
@@ -113,18 +115,24 @@ Notes:
     - Django
     - CherryPy
     - Pyramid
-    - Flask,
+    - Flask
     - web2py
     - webapp2
+
 - Python third-party libraries can also be used but must be uploaded with application source code
 
+<img src="../../assets/images/logos/django-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/logos/flask-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
 
 
 Notes:
 
 
 ---
-## Components of an application
+## Components of an Application
+
+<!-- TODO shiva -->
+<img src="../../assets/images/google-cloud/3rd-party/app-engine-1.png" style="width:60%;float:right"/>   
 
 - An application resource is tied to a specific Google Cloud Project
 
@@ -137,14 +145,13 @@ Notes:
 - Every application has at least the default service but different services can be deployed to split a large app into parts
 
 
-<img src="../../assets/images/data-science-gcp/3rd-party/app-engine-1.png" style="white;width:40%;"/>   
 
 Notes:
 Source: https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine
 
 ---
 
-## Components of an application
+## Components of an Application
 
 - Versions:
   - Multiple versions of apps are supported.
@@ -154,7 +161,7 @@ Source: https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-
 - Instances  
   - Versions run on Instances
   - App Engine will scale app to match traffic Loading
-  - Scale up: increases number of instances to mantain performance
+  - Scale up: increases number of instances to maintain performance
   - Scale down: reduce amount of inactive instances and minimize costs
 
 
@@ -179,29 +186,31 @@ Notes:
 
 ---
 
-## Instances
+## Instance Scaling Types
 
-- Scaling types:
-  - Affect how instances are created
-  - Automatic
-    - Makes new dynamic instances depending on response latencies and request rate.
-  - Basic
-    - Makes dynamic instances when the app gets a request. Instance is shut down when app is idle.
-  - Manual
-    - Uses resident instances that run the explicitly specified number of instances
+- Affect how instances are created
+
+- **Automatic**
+  - Makes new dynamic instances depending on response latencies and request rate.
+
+- **Basic**
+  - Makes dynamic instances when the app gets a request. Instance is shut down when app is idle.
+
+- **Manual**
+  - Uses resident instances that run the explicitly specified number of instances
 
 
 Notes:
 
 ---
 
-## Instances
+## Instance States
 
-- States:
-  - Auto-scaled instances are always running
-  - Manual or basic instances can be either stopped or running
+- Auto-scaled instances are always running
 
-- Startup
+- Manual or basic instances can be either stopped or running
+
+- **Startup**
   - A service instance is created by a empty HTTP GET request by the App Engine
     - Runs a program indefinitely
     - Initializes an instance before it receives additional traffic
@@ -211,9 +220,9 @@ Notes:
 
 ---
 
-## Instances
+## Instance States
 
-- Shutdown:
+- **Shutdown:**
   - by manually stopping an instance
   - deploying a new version to the service
   - instance using too much memory
@@ -228,12 +237,11 @@ Notes:
 
 ## Python 3 Runtime Environment
 
-- App Dependencies
-  - Almost any python library can be deployed with the application
+- Almost any python library can be deployed with the application
 
-  - App Engine uses pip (Python package manager) to install every library defined in requirements.txt file in app's directory
+- App Engine uses pip (Python package manager) to install every library defined in requirements.txt file in app's directory
 
-  - These are installed upon app deployment
+- These are installed upon app deployment
 
 
 Notes:
@@ -245,6 +253,7 @@ Notes:
 - Configuration file:
   - application configuration is specified by app.yaml file
   - minimum specification in the configuration file is the runtime language
+
 - Startup
     - runtime is started using the entrypoint field
     - an optional entry point can be specified using web servers such as gunicorn, uwsgi and Tornado
@@ -260,8 +269,10 @@ Notes:
 
 - Google Cloud Storage
   - Cloud Firestore (NoSQL)
-  - Cloud SQL for MySQL
+  - Cloud SQL for Relational
   - Cloud Storage to write files, read, store static files in the runtime environment
+
+<img src="../../assets/images/google-cloud/app-storage-1.png" style="width:45%;"/>
 
 Notes:
 
@@ -277,6 +288,42 @@ Notes:
 - Most popular language runtimes are supported such as Python
 
 - Can connect to different data storage structures including Cloud SQL
+
+Notes:
+
+---
+## Lab: Working With App Engine 1
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Work with App Engine
+
+* **Approximate run time:**
+    - 20-30 mins
+
+* **Instructions:**
+    - Follow instructions for **APP-ENGINE-1** lab
+
+
+Notes:
+
+---
+## Lab: Working With App Engine 2
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Work with App Engine
+
+* **Approximate run time:**
+    - 20-30 mins
+
+* **Instructions:**
+    - Follow instructions for **APP-ENGINE-2** lab
+
 
 Notes:
 

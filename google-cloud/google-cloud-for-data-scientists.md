@@ -1,0 +1,1 @@
+../course-outlines/google-cloud-for-data-scientists.md

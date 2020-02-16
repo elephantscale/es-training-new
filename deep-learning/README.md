@@ -3,9 +3,9 @@
 ## To generate slides
 Execute these from within 'es-reveal-md' docker
 
-```bash 
+```bash
    $   cd slides;   
-   
+
    # generate md assembly
    $  ./gen.sh  
 
@@ -16,7 +16,7 @@ Execute these from within 'es-reveal-md' docker
 ## To generate course outline
 
 ```bash
-   $    $ES_HOME/utils/presentations/md2docx.sh   Intro-to-Deep-Learning-With-TensorFlow-and-Keras-outline-3days.md
-   
-   $    $ES_HOME/utils/presentations/md2docx.sh   Intro-to-Deep-Learning-With-TensorFlow-and-Keras-outline-2days.md
+   $    $ES_HOME/utils/presentations/md2docx.sh   deep-learning-with-tensorflow-keras-2days.md
+
+   $    $ES_HOME/utils/presentations/md2docx.sh   deep-learning-with-tensorflow-keras-3days.md
 ```

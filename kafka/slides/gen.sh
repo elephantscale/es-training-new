@@ -8,13 +8,13 @@
 ##	./gen.sh  pptx pdf
 
 ## 3 days 
-pandoc ../Intro-to-Apache-Kafka-outline-3days.md  -o ../Intro-to-Apache-Kafka-outline-3days.docx
-pandoc ../Intro-to-Apache-Kafka-outline-3days.md  -o ../Intro-to-Apache-Kafka-outline-3days.pdf
+pandoc ../kafka-intro-3days-outline.md  -o ../kafka-intro-3days-outline.docx
+pandoc ../kafka-intro-3days-outline.md  -o ../kafka-intro-3days-outline.pdf
 
 
 ## 4 days
-pandoc ../Intro-to-Apache-Kafka-outline-4days.md  -o ../Intro-to-Apache-Kafka-outline-4days.docx
-pandoc ../Intro-to-Apache-Kafka-outline-4days.md  -o ../Intro-to-Apache-Kafka-outline-4days.pdf
+pandoc ../kafka-intro-4days-outline.md  -o ../kafka-intro-4days-outline.docx
+pandoc ../kafka-intro-4days-outline.md  -o ../kafka-intro-4days-outline.pdf
 
 ## -d will delete existing files in assembly  folder
 ## 4 days
