@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="7 -23 1096 511" width="1096" height="511">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="32" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-02-17 13:18:17 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 13.298462 -21 L 1096.9069 -21 C 1099.6684 -21 1101.9069 -18.761424 1101.9069 -16 L 1101.9069 94.2906 C 1101.9069 97.05202 1099.6684 99.2906 1096.9069 99.2906 L 13.298462 99.2906 C 10.537038 99.2906 8.298462 97.05202 8.298462 94.2906 L 8.298462 -16 C 8.298462 -18.761424 10.537038 -21 13.298462 -21 Z" fill="#ecdea4"/>
+        <path d="M 13.298462 -21 L 1096.9069 -21 C 1099.6684 -21 1101.9069 -18.761424 1101.9069 -16 L 1101.9069 94.2906 C 1101.9069 97.05202 1099.6684 99.2906 1096.9069 99.2906 L 13.298462 99.2906 C 10.537038 99.2906 8.298462 97.05202 8.298462 94.2906 L 8.298462 -16 C 8.298462 -18.761424 10.537038 -21 13.298462 -21 Z" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_4">
+        <rect x="9.524951" y="248.25088" width="316.52593" height="54.82064" fill="#e4a82e"/>
+        <rect x="9.524951" y="248.25088" width="316.52593" height="54.82064" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_5">
+        <rect x="9.524951" y="303.0715" width="316.52593" height="183.43829" fill="white"/>
+        <rect x="9.524951" y="303.0715" width="316.52593" height="183.43829" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_6">
+        <rect x="31.263442" y="325.73774" width="273.04894" height="54.82064" fill="#a4f8fd"/>
+        <rect x="31.263442" y="325.73774" width="273.04894" height="54.82064" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_7">
+        <rect x="31.263442" y="409.02294" width="273.04894" height="54.82064" fill="#a4f8fd"/>
+        <rect x="31.263442" y="409.02294" width="273.04894" height="54.82064" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 167.60573 117.66318 L 192.82795 155.66318 L 180.21684 155.66318 L 180.21684 192.66318 L 192.82795 192.66318 L 167.60573 230.66318 L 142.3835 192.66318 L 154.99462 192.66318 L 154.99462 155.66318 L 142.3835 155.66318 Z" fill="#ab97fd"/>
+        <path d="M 167.60573 117.66318 L 192.82795 155.66318 L 180.21684 155.66318 L 180.21684 192.66318 L 192.82795 192.66318 L 167.60573 230.66318 L 142.3835 192.66318 L 154.99462 192.66318 L 154.99462 155.66318 L 142.3835 155.66318 Z" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(415.67737 8.645299)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1d005b" x="0" y="50">Kafka Cluster</tspan>
+        </text>
+      </g>
+      <g id="Group_24">
+        <g id="Graphic_14">
+          <circle cx="353.4991" cy="38.618874" r="12.8887434315576" stroke="#1f165b" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+        </g>
+        <g id="Graphic_15">
+          <circle cx="353.46516" cy="1.0395099" r="9.77269858184829" stroke="#1f165b" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        </g>
+        <g id="Graphic_16">
+          <circle cx="385.68696" cy="20.033078" r="9.77269858184829" stroke="#1f165b" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        </g>
+        <g id="Graphic_17">
+          <circle cx="385.68696" cy="57.357625" r="9.77269858184828" stroke="#1f165b" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        </g>
+        <g id="Graphic_18">
+          <circle cx="353.46516" cy="77.25109" r="9.77269858184829" stroke="#1f165b" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        </g>
+        <g id="Line_19">
+          <line x1="353.2189" y1="12.841428" x2="353.41337" y2="30.73061" stroke="#1f165b" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6"/>
+        </g>
+        <g id="Line_20">
+          <line x1="353.4834" y1="56.5076" x2="353.47682" y2="63.978406" stroke="#1f165b" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6"/>
+        </g>
+        <g id="Line_21">
+          <line x1="368.96264" y1="47.621253" x2="374.21367" y2="50.678237" stroke="#1f165b" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6"/>
+        </g>
+        <g id="Line_22">
+          <line x1="374.18996" y1="26.671634" x2="368.9946" y2="29.671528" stroke="#1f165b" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6"/>
+        </g>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(26.030105 256.1612)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#1d005b" x="0" y="32">JVM App Instance</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(38.31129 335.43294)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1d005b" x="0" y="30">Application Code</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(78.3885 417.93326)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1d005b" x="0" y="30">KSQL Engine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_42">
+        <rect x="396.2265" y="248.25088" width="316.52593" height="54.82064" fill="#e4a82e"/>
+        <rect x="396.2265" y="248.25088" width="316.52593" height="54.82064" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_41">
+        <rect x="396.2265" y="303.0715" width="316.52593" height="183.43829" fill="white"/>
+        <rect x="396.2265" y="303.0715" width="316.52593" height="183.43829" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_40">
+        <rect x="417.965" y="325.73774" width="273.04894" height="54.82064" fill="#a4f8fd"/>
+        <rect x="417.965" y="325.73774" width="273.04894" height="54.82064" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_39">
+        <rect x="417.965" y="409.02294" width="273.04894" height="54.82064" fill="#a4f8fd"/>
+        <rect x="417.965" y="409.02294" width="273.04894" height="54.82064" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_38">
+        <path d="M 554.30726 117.66318 L 579.5295 155.66318 L 566.9184 155.66318 L 566.9184 192.66318 L 579.5295 192.66318 L 554.30726 230.66318 L 529.08504 192.66318 L 541.69615 192.66318 L 541.69615 155.66318 L 529.08504 155.66318 Z" fill="#ab97fd"/>
+        <path d="M 554.30726 117.66318 L 579.5295 155.66318 L 566.9184 155.66318 L 566.9184 192.66318 L 579.5295 192.66318 L 554.30726 230.66318 L 529.08504 192.66318 L 541.69615 192.66318 L 541.69615 155.66318 L 529.08504 155.66318 Z" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(412.73164 256.1612)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#1d005b" x="0" y="32">JVM App Instance</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <text transform="translate(425.01283 335.43294)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1d005b" x="0" y="30">Application Code</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(465.09004 417.93326)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1d005b" x="0" y="30">KSQL Engine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <rect x="784.1545" y="248.25088" width="316.52593" height="54.82064" fill="#e4a82e"/>
+        <rect x="784.1545" y="248.25088" width="316.52593" height="54.82064" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_49">
+        <rect x="784.1545" y="303.0715" width="316.52593" height="183.43829" fill="white"/>
+        <rect x="784.1545" y="303.0715" width="316.52593" height="183.43829" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_48">
+        <rect x="805.893" y="325.73774" width="273.04894" height="54.82064" fill="#a4f8fd"/>
+        <rect x="805.893" y="325.73774" width="273.04894" height="54.82064" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_47">
+        <rect x="805.893" y="409.02294" width="273.04894" height="54.82064" fill="#a4f8fd"/>
+        <rect x="805.893" y="409.02294" width="273.04894" height="54.82064" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_46">
+        <path d="M 942.4175 117.66318 L 967.6397 155.66318 L 955.0286 155.66318 L 955.0286 192.66318 L 967.6397 192.66318 L 942.4175 230.66318 L 917.1953 192.66318 L 929.8064 192.66318 L 929.8064 155.66318 L 917.1953 155.66318 Z" fill="#ab97fd"/>
+        <path d="M 942.4175 117.66318 L 967.6397 155.66318 L 955.0286 155.66318 L 955.0286 192.66318 L 967.6397 192.66318 L 942.4175 230.66318 L 917.1953 192.66318 L 929.8064 192.66318 L 929.8064 155.66318 L 917.1953 155.66318 Z" stroke="#42006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_45">
+        <text transform="translate(800.6597 256.1612)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#1d005b" x="0" y="32">JVM App Instance</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(812.9409 335.43294)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1d005b" x="0" y="30">Application Code</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(853.0181 417.93326)" fill="#1d005b">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1d005b" x="0" y="30">KSQL Engine</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

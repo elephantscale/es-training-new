@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="120 476 1238 690" width="1238" height="690">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#e4814e">
+      <g>
+        <path d="M -2.6666667 0 L 0 1 L 0 -1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-02-15 11:00:06 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke-dasharray="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_8">
+        <line x1="253.16005" y1="649.5435" x2="326.50583" y2="576.8178" stroke="#4500a8" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_9">
+        <line x1="380.65475" y1="576.73906" x2="454.588" y2="649.62224" stroke="#4500a8" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_10">
+        <line x1="253.4889" y1="702.8219" x2="326.177" y2="773.1379" stroke="#4500a8" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_11">
+        <line x1="380.9826" y1="773.2175" x2="454.26014" y2="702.7423" stroke="#4500a8" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_12">
+        <line x1="353.54137" y1="837.682" x2="353.54137" y2="1011.1349" stroke="#4500a8" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_6">
+        <circle cx="353.54137" cy="550.0108" r="37.0728560754408" fill="#a4f8fd"/>
+        <circle cx="353.54137" cy="550.0108" r="37.0728560754408" stroke="#24005b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_5">
+        <circle cx="226.1245" cy="676.3505" r="37.0728560754408" fill="#a4f8fd"/>
+        <circle cx="226.1245" cy="676.3505" r="37.0728560754408" stroke="#24005b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="353.54137" cy="799.6092" r="37.0728560754408" fill="#a4f8fd"/>
+        <circle cx="353.54137" cy="799.6092" r="37.0728560754408" stroke="#24005b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_3">
+        <circle cx="481.70136" cy="676.3505" r="37.0728560754408" fill="#a4f8fd"/>
+        <circle cx="481.70136" cy="676.3505" r="37.0728560754408" stroke="#24005b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="353.54137" cy="1049.2077" r="37.0728560754408" fill="#a4f8fd"/>
+        <circle cx="353.54137" cy="1049.2077" r="37.0728560754408" stroke="#24005b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_13">
+        <path d="M 389.5311 501.02906 C 398.62887 492.50676 409.1446 485.21425 420.71494 481.5861 C 460.5526 469.09407 494.15896 505.9168 494.15896 505.9168" marker-start="url(#FilledArrow_Marker)" stroke="#e4814e" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Line_14">
+        <path d="M 432.24037 772.575 C 441.6157 787.4496 456.5991 805.4655 476.7799 811.7888 C 513.3424 823.245 549.77204 790.9339 549.77204 790.9339" marker-start="url(#FilledArrow_Marker)" stroke="#e4814e" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(461 517.938)" fill="#1e0062">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1e0062" x="0" y="40">Stream processor</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(561.4004 760.2466)" fill="#1e0062">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1e0062" x="0" y="40">Stream</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(125.16246 1112)" fill="#1e0062">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1e0062" x="0" y="40">PROCESSOR TOPOLOGY</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(875 604.8214)" fill="#7f7c93">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#7f7c93" x="0" y="30">Read input from Kafka</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(875 703.6717)" fill="#7f7c93">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#7f7c93" x="0" y="30">Operator DAG</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(904.7778 762.6717)" fill="#7f7c93">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#7f7c93" x="0" y="30">Filter/ map/ aggregation/ joins</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(904.7778 821.6717)" fill="#7f7c93">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#7f7c93" x="0" y="30">Operator can be stateful</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(875 927.6717)" fill="#7f7c93">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#7f7c93" x="0" y="30">Write result back to Kafka</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <circle cx="886.0728" cy="785.7445" r="5.07280494258024" fill="#7f7c93"/>
+      </g>
+      <g id="Graphic_25">
+        <circle cx="886.0728" cy="845.0223" r="5.07280494258023" fill="#7f7c93"/>
+      </g>
+    </g>
+  </g>
+</svg>
