@@ -16,20 +16,20 @@ This course introduces Julia language, tools and programming.
 * Profiling and performance evaluation
 * Machine learning introduction
 
-## Audience :
+## Audience:
 Developers, Architects
 
 ## Skill Level:
 Introductory
 
-## Duration :
+## Duration:
 Three days
 
-## Format :
+## Format:
 Lectures and hands on labs. (50%   50%)
 
 ## Prerequisites
-* Programming experience with Python / Java
+* Programming experience with Python or Java
 
 ## Students will need the following
 * A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
