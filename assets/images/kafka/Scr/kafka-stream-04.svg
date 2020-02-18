@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-12 451 902 417" width="902" height="417">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-12 451 902 417" width="902" height="417">
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#200060">
       <g>
@@ -19,9 +19,9 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2020-02-17 14:54:27 +0000</dc:date>
+    <dc:date>2020-02-18 14:30:51 +0000</dc:date>
   </metadata>
-  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none">
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>Canvas 1</title>
     <g id="Canvas_1: Layer 1">
       <title>Layer 1</title>
@@ -198,12 +198,12 @@
       </g>
       <g id="Graphic_45">
         <text transform="translate(-6.830083 737.4286) rotate(-90)" fill="#300051">
-          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#300051" x="0" y="32">Inster</tspan>
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#300051" x="0" y="32">Insert</tspan>
         </text>
       </g>
       <g id="Graphic_46">
         <text transform="translate(31.169917 737.4286) rotate(-90)" fill="#300051">
-          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#300051" x="0" y="32">Inster</tspan>
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#300051" x="0" y="32">Insert</tspan>
         </text>
       </g>
       <g id="Graphic_47">
@@ -212,8 +212,8 @@
         </text>
       </g>
       <g id="Graphic_48">
-        <text transform="translate(107.16992 737.4286) rotate(-90)" fill="#300051">
-          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#300051" x="0" y="32">Updme</tspan>
+        <text transform="translate(107.16992 737.7489) rotate(-90)" fill="#300051">
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#300051" x="0" y="32">Update</tspan>
         </text>
       </g>
       <g id="Graphic_49">
