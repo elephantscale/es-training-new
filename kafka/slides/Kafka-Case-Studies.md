@@ -15,15 +15,14 @@ Notes:
 
 # Kafka @ Zendesk
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/zendesk-logo-1.png"  style="width:25%;" />
+<img src="../../assets/images/logos/zendesk-logo-1.png"  style="width:25%;" /><!-- {"left" : 2.67, "top" : 5.14, "height" : 2.26, "width" : 2.26} -->
+
 
 ---
 
-## Zendesk : Event Notifications
+## Zendesk: Event Notifications
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/zendesk-logo-1.png"  style="width:30%;float:right;" />
+<img src="../../assets/images/logos/zendesk-logo-1.png"  style="width:30%;float:right;" /><!-- {"left" : 7.4, "top" : 0.76, "height" : 2.83, "width" : 2.83} -->
 
  * [Reference](http://bigdatausecases.info/entry/kafka-used-at-scale-to-deliver-real-time-notifications),  [slides](https://www.slideshare.net/SrgioNunes/kafka-used-at-scale-to-deliver-realtime-notifications)
  
@@ -46,42 +45,42 @@ Notes:
 
 ---
 
-## Zendesk : Architecture
+## Zendesk: Architecture
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/zendesk-kafka-1.png"  style="width:80%;" />
+<img src="../../assets/images/kafka/3rd-party/zendesk-kafka-1.png" style="width:80%;" /><!-- {"left" : 0.53, "top" : 2.08, "height" : 4.91, "width" : 9.19} -->
 
 
----
-
-## Zendesk : Partition Keys
-
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/zendesk-kafka-2.png"  style="width:80%;" />
 
 
 ---
 
-## Zendesk : Stats
+## Zendesk: Partition Keys
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/zendesk-kafka-3.png"  style="width:60%;" />
+<img src="../../assets/images/kafka/3rd-party/zendesk-kafka-2.png" style="width:80%;" /><!-- {"left" : 0.45, "top" : 2, "height" : 5.08, "width" : 9.36} -->
+
+
+
+---
+
+## Zendesk: Stats
+
+<img src="../../assets/images/kafka/3rd-party/zendesk-kafka-3.png" style="width:60%;" /><!-- {"left" : 0.72, "top" : 1.45, "height" : 6.75, "width" : 8.8} -->
+
 
 ---
 
 # Kafka @ WalmartLabs
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/walmartlabs-logo-1.png"  style="width:60%;" />
+<img src="../../assets/images/logos/walmartlabs-logo-1.png" style="width:60%;" /><!-- {"left" : 2.75, "top" : 8.27, "height" : 0.68, "width" : 3.54} -->
+
+
 
 
 ---
 
 ## Kafka @ WalmartLabs
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/walmartlabs-logo-1.png"  style="width:30%;float:right;" />
-
+<img src="../../assets/images/logos/walmartlabs-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 5.58, "top" : 1.26, "height" : 0.87, "width" : 4.52} -->
 
  * [Reference](http://bigdatausecases.info/entry/apache-kafka-use-cases-within-search-system-atwalmartlabs),  [slides](https://www.slideshare.net/snehal_nagmote/apache-kafka-women-who-code-meetup)
 
@@ -102,47 +101,45 @@ Notes:
 
 ---
 
-## Kafka @ WalmartLabs : Technologies 
+## Kafka @ WalmartLabs: Technologies 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/walmart-kafka-2.png"  style="width:60%;" />
+<img src="../../assets/images/kafka/3rd-party/walmart-kafka-2.png"  style="width:60%;" /><!-- {"left" : 0.78, "top" : 1.79, "height" : 5.49, "width" : 8.68} -->
 
----
-
-## Kafka @ WalmartLabs : Usecases
-
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/walmart-kafka-3.png"  style="width:60%;" />
 
 ---
 
-## Kafka @ WalmartLabs : Volume
+## Kafka @ WalmartLabs: Usecases
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/walmart-kafka-4.png"  style="width:60%;" />
+<img src="../../assets/images/kafka/3rd-party/walmart-kafka-3.png"  style="width:60%;" /><!-- {"left" : 1.02, "top" : 1.74, "height" : 5.59, "width" : 8.21} -->
+
 
 ---
 
-## Kafka @ WalmartLabs : Architecture
+## Kafka @ WalmartLabs: Volume
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/walmart-kafka-5.png"  style="width:60%;" />
+<img src="../../assets/images/kafka/3rd-party/walmart-kafka-4.png"  style="width:60%;" /><!-- {"left" : 1.02, "top" : 1.39, "height" : 6.87, "width" : 8.21} -->
+
+
+---
+
+## Kafka @ WalmartLabs: Architecture
+
+<img src="../../assets/images/kafka/3rd-party/walmart-kafka-5.png"  style="width:60%;" /><!-- {"left" : 1.02, "top" : 2.03, "height" : 5.01, "width" : 8.21} -->
+
 
 ---
 
 # Kafka @ Netflix
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/netflix-logo-1.png"  style="width:35%;" />
+<img src="../../assets/images/logos/netflix-logo-1.png"  style="width:35%;" /><!-- {"left" : 2.9, "top" : 5.36, "height" : 1.05, "width" : 2.28} -->
+
 
 
 ---
 
 ## Netflix
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/netflix-logo-1.png"  style="width:30%;float:right;" />
-
+<img src="../../assets/images/logos/netflix-logo-1.png"  style="width:30%;float:right;" /><!-- {"left" : 7.47, "top" : 1.13, "height" : 1.18, "width" : 2.55} -->
 
 
  * [Reference](http://bigdatausecases.info/entry/from-three-nines-to-five-nines-a-kafka-journey),   [slides](https://www.slideshare.net/Naveen1914/net-flix-kafka-seattle-meetup)
@@ -163,43 +160,47 @@ Notes:
 
 ---
 
-## Kafka @ Netflix : Data Volume 
+## Kafka @ Netflix: Data Volume 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/netflix-kafka-1.png"  style="width:70%;" />
+<img src="../../assets/images/kafka/3rd-party/netflix-kafka-1.png"  style="width:70%;" /><!-- {"left" : 0.63, "top" : 1.9, "height" : 5.27, "width" : 8.99} -->
 
----
-## Kafka @ Netflix : Architecture
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/netflix-kafka-2.png"  style="width:80%;" />
 
 ---
-## Kafka @ Netflix : Configurations
+## Kafka @ Netflix: Architecture
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/netflix-kafka-3.png"  style="width:80%;" />
+<img src="../../assets/images/kafka/3rd-party/netflix-kafka-2.png"  style="width:80%;" /><!-- {"left" : 0.46, "top" : 1.98, "height" : 5.11, "width" : 9.34} -->
+
+
 
 ---
-## Kafka @ Netflix : Best Practices
+## Kafka @ Netflix: Configurations
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/netflix-kafka-4.png"  style="width:80%;" />
+<img src="../../assets/images/kafka/3rd-party/netflix-kafka-3.png"  style="width:80%;" /><!-- {"left" : 0.42, "top" : 1.95, "height" : 5.18, "width" : 9.4} -->
+
+
+
+---
+## Kafka @ Netflix: Best Practices
+
+<img src="../../assets/images/kafka/3rd-party/netflix-kafka-4.png"  style="width:80%;" /><!-- {"left" : 0.5, "top" : 2.07, "height" : 4.93, "width" : 9.25} -->
+
+
 
 ---
 
 # Kafka @ Grid Dynamics
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;" />
+<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;" /><!-- {"left" : 2.65, "top" : 4.74, "height" : 1.87, "width" : 3.55} -->
+
+
 
 
 ---
 
 ## Kafka @ Grid Dynamics
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;float:right;" />
+<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;float:right;" /><!-- {"left" : 6.64, "top" : 0.87, "height" : 1.83, "width" : 3.48} -->
 
  * [Reference](https://blog.griddynamics.com/in-stream-processing-service-blueprint)
 
@@ -226,17 +227,19 @@ Notes:
 
 ---
 
-## Kafka @ Grid Dynamics : Architecture
+## Kafka @ Grid Dynamics: Architecture
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/grid-dynamics-kafka-1.png"  style="width:80%;" />
+<img src="../../assets/images/kafka/3rd-party/grid-dynamics-kafka-1.png"  style="width:80%;" /><!-- {"left" : 0.55, "top" : 2.52, "height" : 4.04, "width" : 9.15} -->
+
 
 
 ---
-## Kafka @ Grid Dynamics : Architecture
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/grid-dynamics-kafka-2.png"  style="width:80%;" />
+## Kafka @ Grid Dynamics: Architecture
+
+<img src="../../assets/images/kafka/3rd-party/grid-dynamics-kafka-2.png"  style="width:80%;" /><!-- {"left" : 0.56, "top" : 2.26, "height" : 5.11, "width" : 9.13} -->
+
+
 
 ---
 

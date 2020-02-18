@@ -5,6 +5,7 @@
 
 
 ---
+
 ## Workshop Overview - 3 Days
 
 <img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/><!-- {"left" : 7.39, "top" : 1.2, "height" : 2.76, "width" : 2.53} -->
@@ -61,17 +62,16 @@ Notes:
 
 ## Our Teaching Philosophy
 
-<!-- TODO shiva -->
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png"  style="width:45%;float:right;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
 
  * Emphasis on concepts & fundamentals
 
  * Learn the API
 
- * Highly interactive (questions, discussions, etc.  are welcome)
+ * Highly interactive (questions, discussions, etc. are welcome)
 
  * Hands-on (learn by doing)
 
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:45%;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
 
 
 Notes:

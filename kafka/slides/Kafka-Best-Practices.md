@@ -34,7 +34,7 @@ export KAFKA_JVM_PERFORMANCE_OPTS=
 -XX:MaxMetaspaceFreeRatio=80"
 
 ```
-<!-- {"left" : 0, "top" : 3.4, "height" : 2.04, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 5.04, "height" : 2.04, "width" : 10.25} -->
 
 
 Notes:
@@ -43,7 +43,7 @@ Notes:
 
 ## Best Practices: OS Setting
 
-<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:40%;float:right;"/><!-- {"left" : 5.26, "top" : 3.61, "height" : 3.98, "width" : 4.91} -->
+<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:40%;float:right;"/><!-- {"left" : 5.61, "top" : 1.42, "height" : 3.72, "width" : 4.59} -->
 
 
  * Give rest of the memory (minus JVM heap) to Page Cache (Linux will do this automatically)
@@ -63,7 +63,7 @@ Notes:
 
 ## Best Practices: Disks
 
-<img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:50%;float:right;"/><!-- {"left" : 6.07, "top" : 2.3, "height" : 2.01, "width" : 3.98} -->
+<img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:50%;float:right;"/><!-- {"left" : 6.47, "top" : 1.21, "height" : 1.82, "width" : 3.61} -->
 
  * Disks tend to be first bottleneck to be hit
 
@@ -87,9 +87,8 @@ Notes:
 ---
 
 ## Best Practices: SSD Drives?
-<!-- TODO shiva -->
-<img src="../../assets/images/generic/3rd-party/hdd-vs-sdd-1.png"  style="width:50%;float:right;" />
 
+<img src="../../assets/images/generic/3rd-party/hdd-vs-sdd-1.png"  style="width:50%;float:right;" /><!-- {"left" : 7.07, "top" : 1.13, "height" : 1.73, "width" : 3.06} -->
 
  * SSDs don't offer remarkable boost in performance
  * Kafka writes/reads data sequentially to/from commit logs
@@ -110,7 +109,7 @@ https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
 
 ## Best Practices: File System
 
-<img src="../../assets/images/kafka/kafka-drives-1.png"  style="width:50%;float:right;" />
+<img src="../../assets/images/kafka/kafka-drives-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.01, "top" : 1.16, "height" : 2.04, "width" : 4.07} -->
 
  * Never, never, never use shared file systems (SAN / NFS)
 
@@ -131,9 +130,7 @@ Notes:
 
 ## Best Practices: Zookeeper
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/kafka-zookeeper-1.png"  style="width:60%;float:right;" />
-
+<img src="../../assets/images/kafka/kafka-zookeeper-1.png"  style="width:60%;float:right;" /><!-- {"left" : 6.56, "top" : 1.06, "height" : 1.72, "width" : 3.57} -->
 
  *  **Do not co-locate**  Zookeeper and Kafka brokers on same nodes
  * ZK and Kafka has very different IO patterns
@@ -151,8 +148,7 @@ Notes:
 
 ## Best Practices: Topics / Partitions
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:40%;float:right;" />
+<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:40%;float:right;" /><!-- {"left" : 8.6, "top" : 0.95, "height" : 1.17, "width" : 1.59} -->
 
  * Number of partitions correspond parallelism
  * Higher the partitions -> more consumers can be added
@@ -176,8 +172,6 @@ Notes:
 
 ## Best Practices: Partitions & Memory
 
-
-
  * More partitions also need more memory on brokers & clients
 
  * Producer side
@@ -200,8 +194,7 @@ Notes:
 
 ## Best Practices: Compression
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" />
+<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
  * Enabling compression
 
@@ -242,8 +235,7 @@ Notes:
 
 ## Best Practices: Use Batching
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" />
+<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
  * Batching will dramatically increase throughput, specially in producers
 
@@ -253,7 +245,7 @@ Notes:
 
  * Too small a batch size may not be effective
 
- * Choose the batch size that gives best   **latency vs. throughput** for your application
+ * Choose the batch size that gives best **latency vs. throughput** for your application
 
  * Larger batch sizes will use more memory for buffering
 
@@ -266,8 +258,8 @@ Notes:
 
 ## Best Practices: Message Sizing
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/message-size-1.png"  style="width:50%;float:right;" />
+<img src="../../assets/images/kafka/message-size-1.png"  style="width:50%;float:right;" /><!-- {"left" : 5.52, "top" : 1.29, "height" : 1.17, "width" : 4.47} -->
+
 
  * Kafka is engineered for moving small messages
 
@@ -292,9 +284,7 @@ Notes:
 
 ## Best Practices: Monitor, Monitor, Monitor
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/3rd-party/dashboard-body-kafka.jpg"  style="width:50%;float:right;" />
-
+<img src="../../assets/images/kafka/3rd-party/dashboard-body-kafka.jpg"  style="width:50%;float:right;" /><!-- {"left" : 5.73, "top" : 1.03, "height" : 2.71, "width" : 4.3} -->
 
  * Kafka exposes lot of metrics
      - Collect them via JMX plugin
@@ -324,7 +314,6 @@ Notes:
 
 ## Best Practices: Monitor, Monitor, Monitor
 
-
  *  **Log flush latency**
 
      - How long does it take to flush to disk
@@ -345,18 +334,19 @@ Notes:
 
 ---
 
-## Kafka Monitoring : End to End Lag
+## Kafka Monitoring: End to End Lag
 
  *  **End-to-End time**
     - How long does it take for a message to arrive from Producer to Consumer
     - Indicates overall speed / latency of kafka pipeline
  * Below, is an example (see next slide for graph)
-   - (t2 - t1) :  how long message was waiting in Kafka queue
-   - (t3 - t2) : consumer side processing time
-   - (t3 - t1) : overall processing
+   - (t2 - t1):  how long message was waiting in Kafka queue
+   - (t3 - t2): consumer side processing time
+   - (t3 - t1): overall processing
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/end-to-end-time-1.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/end-to-end-time-1.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 5.55, "height" : 1.97, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -367,21 +357,23 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
 ## Best Practices: End to End Latency
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/end-to-end-time-1.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/end-to-end-time-1.png" style="width:70%;"/><!-- {"left" : 1.39, "top" : 1.55, "height" : 1.8, "width" : 7.48} -->
 
-<img src="../../assets/images/kafka/end-to-end-2.png" style="width:70%;"/>
+
+<img src="../../assets/images/kafka/end-to-end-2.png" style="width:70%;"/><!-- {"left" : 1.29, "top" : 4.3, "height" : 3.57, "width" : 7.67} -->
+
 
 ---
 
 ## Kafka Monitoring Consumer Lag
 
-<!-- TODO shiva -->
-<img src="../../assets/images/kafka/kafka-consumer-lag-1.png"  style="width:75%;" />
+<img src="../../assets/images/kafka/kafka-consumer-lag-1.png"  style="width:75%;" /><!-- {"left" : 0.68, "top" : 1.14, "height" : 1.56, "width" : 8.89} -->
+
+<br/>
 
  * Consumer Lag = Size of Partition (last offset) - Consumer offset (last committed)
  * Large offsets means consumers can't  keep up with data
- * **Question for class** : What can cause consumer lag?
+ * **Question for class‫:‬** What can cause consumer lag?
  * Tools to monitor consumer lag:
     - JMX stats 
     - [Burrow](https://github.com/linkedin/Burrow)
@@ -397,8 +389,7 @@ Notes:
 
 ## Best Practices: Recommendations from Netflix
 
-<img src="../../assets/images/logos/netflix-logo-1.png"  style="max-width:30%;float:right;" />
-
+<img src="../../assets/images/logos/netflix-logo-1.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.53, "top" : 1.29, "height" : 1.12, "width" : 2.42} -->
 
  * Prefer multiple modest sized Kafka clusters rather than one giant Kafka cluster.   This will simplify operations
 
@@ -487,9 +478,9 @@ Notes:
 
  * Message size is too large
 
- * Double check  **messages.max.bytes**  (on broker)
+ * Double check **messages.max.bytes** (on broker)
 
- * And match  **fetch.message.max.bytes**  (on consumer)
+ * And match **fetch.message.max.bytes** (on consumer)
 
 Notes:
 
@@ -514,7 +505,7 @@ Notes:
 
 ## Possible Solutions
 
-<img src="../../assets/images/kafka/Consumer-Behavior-04.png"  style="max-width:50%;float:right;" />
+<img src="../../assets/images/kafka/Consumer-Behavior-04.png"  style="max-width:50%;float:right;" /><!-- {"left" : 6.04, "top" : 1.12, "height" : 3.6, "width" : 4.08} -->
 
  * Probably have more consumers than number of partitions
 
@@ -589,7 +580,7 @@ Notes:
 
 ## Possible Solutions
 
-<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png"  style="max-width:50%;float:right;" />
+<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png"  style="max-width:50%;float:right;" /><!-- {"left" : 6.28, "top" : 1.07, "height" : 1.91, "width" : 3.85} -->
 
  *  **Reason**
    - Creating replicas is lagging behind
@@ -826,6 +817,6 @@ Notes:
 
 - Any questions?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 3.91, "height" : 3.24, "width" : 4.86} -->
 
 

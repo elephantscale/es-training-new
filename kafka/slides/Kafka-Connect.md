@@ -9,7 +9,7 @@
 | Kafka Streams    | Build streaming applications easily                                          |
 | Kafka Connect    | Move data between Kafka and other systems (DB / file system)                 |
 | Kafka Registry   | Metadata /schema store for data                                              |
-| Kafka REST Proxy | REST interface into Kafka cluster.,Produce / </br>Consume using RESTFUL APIs |
+| Kafka REST Proxy | REST interface into Kafka cluster.,Produce / <br‫/‬>Consume using RESTFUL APIs |
 | Camus            | Kafka / HDFS integration                                                     |
 
 <!-- {"left" : 0.25, "top" : 1.45, "height" : 3.38, "width" : 9.75} -->
@@ -26,7 +26,8 @@ Notes:
 
  * It's goal is to make it easy to add new systems to your scalable and secure stream data pipelines.
 
-<img src="../../assets/images/kafka/Kafka-Connect-01.png" alt="Kafka-Connect-01.png" style="width:80%;"/>
+<img src="../../assets/images/kafka/Kafka-Connect-01.png" alt="Kafka-Connect-01.png" style="width:80%;"/><!-- {"left" : 0.35, "top" : 3.92, "height" : 1.89, "width" : 9.56} -->
+
 
 
 Notes: 
