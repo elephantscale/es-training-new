@@ -1,0 +1,24 @@
+## To Make slides
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-DL-3-days.txt
+## (-d will cleanup  current assembly.out)
+
+## To Make pdfs, supply pdf arg at the end
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-3-days.txt  pdf
+## (-d will cleanup  current assembly.out)
+
+
+./slides/About-Kafka-Class-2-days.md
+./slides/About-Kafka-Class-3-days.md
+./slides/About-Kafka-Class-4-days.md
+./slides/Kafka-Admin.md
+./slides/Kafka-API.md
+./slides/Kafka-Best-Practices.md
+./slides/Kafka-Case-Studies.md
+./slides/Kafka-Confluent.md
+./slides/Kafka-Connect.md
+./slides/Kafka-Intro.md
+./slides/Kafka-Metrics.md
+./slides/Kafka-Streams.md
+./slides/Kafka-Workshop.md
+./slides/KSQL.md
+./slides/zookeeper-primer.md

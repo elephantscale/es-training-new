@@ -157,15 +157,11 @@ producer.close();
 <br/>
 
  * Each  **record**  represents a message
-
  * Here we have a <key,value> message
-
  * send() doesn't wait for confirmation
-
  * We send in batches 
 
      - for increased throughput
-
      - Minimize network round trips
 
 
@@ -312,11 +308,8 @@ consumer.subscribe(Arrays.asList("topic1")); // ** 2 **
  *  **bootstrap,servers:** "broker1:9092,broker2:9092"
 
      - Connect to multiple brokers to avoid single point of failure
-
  *  **group.id:** consumers belong in a Consumer Group
-
  * We are using standard serializers
-
  * Consumers can subscribe to one or more subjects  *// ** 2 ***   
 
 
@@ -382,7 +375,6 @@ Notes:
      - Finds the GroupCoordinator
      - Joining Consumer Group
      - Receiving partition assignment
-
  * Work done in poll loop
      - Usually involves some processing
      - Saving data to a store
@@ -500,7 +492,6 @@ Notes:
 
 
  * Can be done from another thread or shutdown hook
-
  *  **'**  **consumer.wakeup**  **()** '  is safe to call from another thread
 
 ```java
@@ -536,14 +527,11 @@ Notes:
  Use Kafka Java API to write Producer and Consumer
 
  *  **Builds on previous labs:**   
- 1-install Kafka
-
+    - 1-install Kafka
  *  **Approximate Time:** 
- 30 - 40 mins
-
+    - 30 - 40 mins
  *  **Instructions:**
-     - Please follow: 3.1, 3.2, 3.3
-
+    - Please follow: 3.1, 3.2, 3.3
  *  **To Instructor:** 
 
 
@@ -601,17 +589,12 @@ producer.send(record); // <-
 <br/>
 
  * The 'record' is placed in the send buffer
-
  * It will be sent to Kafka in a separate thread
-
  * Send() returns a Java Future object (that we are not checking) 
-
  * Some messages can be dropped
-
  * Use cases:
 
      - Metrics data
-
      - Low important data
 
 
@@ -680,7 +663,6 @@ producer.send(record, new KafkaCallback());  // <-
  * Note : This code is for demonstration purposes only.  Do not create new callback objects in production.
 
      - You could be creating millions of objects
-
      - Can induce intense garbage collection
 
 Notes: 
@@ -955,19 +937,12 @@ Notes:
 
 
  * Kafka does not track 'read acknowledgements' of messages like other JMS systems
-
  * It tracks the consumer progress using an  **offset** 
-
  * When a Consumer calls `Poll()` it gets  **new records** from the offset 
-
  * Offsets are stored in Kafka (in a special topic :  **__**  **consumer_offsets**  **)** 
-
      - Used to be stored in ZK, but now stored in Kafka for performance reasons
-
  * When a consumer crashes..
-
      - Partitions of that consumer are assigned to another consumer
-
      - New 'partition owner' consumer  resumes from current offset
 
 <img src="../../assets/images/kafka/Commits-And-Offsets.png" alt="Commits-And-Offsets.png" style="width:70%;"/><!-- {"left" : 0.54, "top" : 6.95, "height" : 1.51, "width" : 9.16} -->

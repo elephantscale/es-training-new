@@ -80,14 +80,13 @@ Notes:
 
 
 
----
-
 
 ---
 ## KSQL - the Streaming SQL Engine
 
 
-<img src="../../assets/images/kafka/ksql-01.png" alt="ksql-01.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/ksql-01.png" alt="ksql-01.png" style="width:65%;"/><!-- {"left" : 0.58, "top" : 2.2, "height" : 4.66, "width" : 9.1} -->
+
 
 
 ---
@@ -95,7 +94,9 @@ Notes:
 
 ## KStreams vs. KSQL
 
-<img src="../../assets/images/kafka/kstream-03.png" alt="kstream-03.png" style="width:45%;"/> &nbsp; &nbsp; <img src="../../assets/images/kafka/3rd-party/kstream-04.png" alt="kstream-04.png" style="width:45%;"/>
+<img src="../../assets/images/kafka/kstream-03.png" alt="kstream-03.png" style="width:45%;"/><!-- {"left" : 0.5, "top" : 2.98, "height" : 2.51, "width" : 4.5} -->
+ &nbsp; &nbsp; <img src="../../assets/images/kafka/3rd-party/kstream-04.png" alt="kstream-04.png" style="width:45%;"/><!-- {"left" : 5.45, "top" : 3.25, "height" : 1.98, "width" : 4.3} -->
+
 
 ---
 
@@ -180,7 +181,6 @@ Notes:
 
 
 ---
----
 
 ## Do not use KSQL for ...
 
@@ -207,7 +207,8 @@ Notes:
 
 ## KSQL works with Topics on same node
 
-<img src="../../assets/images/kafka/ksql-001.png" alt="ksql-001.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/kafka/ksql-001.png" alt="ksql-001.png" style="width:50%;float:right;"/><!-- {"left" : 5.66, "top" : 1.16, "height" : 1.76, "width" : 4.44} -->
+
 
 * KSQL uses Kafka’s Streams API
 * Kafka + KSQL turn the database inside out
@@ -215,7 +216,8 @@ Notes:
 * Any Kafka consumer can access the new stream
 
 
-<img src="../../assets/images/kafka/ksql-002.png" alt="ksql-002.png" style="width:70%;float:left;"/>
+<img src="../../assets/images/kafka/ksql-002.png" alt="ksql-002.png" style="width:70%;float:left;"/><!-- {"left" : 0.58, "top" : 5.54, "height" : 1.24, "width" : 9.09} -->
+
 
 ---
 
@@ -226,8 +228,9 @@ Notes:
 * You can work interactively against a cluster via a (RESTful) network API
 * With EMIT CHANGES, this will be transformed into a push query that produces a continuously updating stream of current driver position coordinates, not just the current state
 
+<img src="../../assets/images/kafka/ksqldb-01.png" alt="ksqldb-01.png" style="width:40%;"/><!-- {"left" : 1.82, "top" : 4.81, "height" : 3.48, "width" : 6.6} -->
 
-<img src="../../assets/images/kafka/ksqldb-01.png" alt="ksqldb-01.png" style="width:65%;"/>
+
 
 
 
@@ -236,75 +239,98 @@ Notes:
 
 * Checking for Malicious users
 
-<img src="../../assets/images/kafka/3rd-party/usecase-01.png" alt="usecase-01.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/3rd-party/usecase-01.png" alt="usecase-01.png" style="width:65%;"/><!-- {"left" : 0.39, "top" : 2.12, "height" : 1.28, "width" : 9.48} -->
+
 
 * Use Grafana to visualize
 
 
-<img src="../../assets/images/kafka/3rd-party/usecase-02.png" alt="usecase-02.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/3rd-party/usecase-02.png" alt="usecase-02.png" style="width:65%;"/><!-- {"left" : 0.39, "top" : 5.82, "height" : 1.7, "width" : 9.48} -->
+
 
 
 ---
 ## Malicious User Sessions in Grafana
 
 
-<img src="../../assets/images/kafka/3rd-party/malicious01.png" alt="malicious01.png" style="width:70%;"/>
+<img src="../../assets/images/kafka/3rd-party/malicious01.png" alt="malicious01.png" style="width:70%;"/><!-- {"left" : 0.62, "top" : 2.11, "height" : 3.77, "width" : 9.02} -->
+
+
 
 ---
+
 ## Configure Kafka connect to get new KSQL Streams into Grafana
 
-<img src="../../assets/images/kafka/3rd-party/configure-kafka-01.png" alt="configure-kafka-01.png" style="width:65%;float:left;"/>
+<img src="../../assets/images/kafka/3rd-party/configure-kafka-01.png" alt="configure-kafka-01.png" style="width:65%;float:left;"/><!-- {"left" : 0.37, "top" : 1.76, "height" : 3.77, "width" : 9.5} -->
+
 
 ---
+
 ## KSQL Stream -> User Friendly Grafana Dashboard
 
 * Malicious User Sessions Monitoring
 
-<img src="../../assets/images/kafka/3rd-party/ksql-stream-01.png" alt="ksql-stream-01.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/3rd-party/ksql-stream-01.png" alt="ksql-stream-01.png" style="width:65%;"/><!-- {"left" : 1.02, "top" : 2.25, "height" : 4.57, "width" : 8.21} -->
+
 
 ---
+
 ## KSQL Select, CREATE STREAM Syntax
 
-<img src="../../assets/images/kafka/3rd-party/ksql-select-01.png" alt="ksql-select-01.png" style="width:45%;"/>&nbsp; &nbsp; <img src="../../assets/images/kafka/3rd-party/ksql-select-02.png" alt="ksql-select-02.png" style="width:40%;"/>
+<img src="../../assets/images/kafka/3rd-party/ksql-select-01.png" alt="ksql-select-01.png" style="width:45%;"/><!-- {"left" : 0.15, "top" : 3.04, "height" : 2.45, "width" : 5.01} --> &nbsp; &nbsp; <img src="../../assets/images/kafka/3rd-party/ksql-select-02.png" alt="ksql-select-02.png" style="width:40%;"/><!-- {"left" : 5.88, "top" : 2.99, "height" : 2.54, "width" : 4.05} -->
 
 ---
+
 ## Automatic Inference of Topic Schema (leveraging Confluent Schema Registry)
 
-<img src="../../assets/images/kafka/3rd-party/automatic-01.png" alt="automatic-01.png" style="width:50%;"/>
+<img src="../../assets/images/kafka/3rd-party/automatic-01.png" alt="automatic-01.png" style="width:50%;"/><!-- {"left" : 0.77, "top" : 1.65, "height" : 5.76, "width" : 8.71} -->
+
 
 ---
+
 ## WINDOWing
 
-<img src="../../assets/images/kafka/3rd-party/windowing-01.png" alt="windowing-01.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/3rd-party/windowing-01.png" alt="windowing-01.png" style="width:65%;"/><!-- {"left" : 0.57, "top" : 1.79, "height" : 4.56, "width" : 9.11} -->
+
 
 
 ---
+
 ## KSQL Components
 
-<img src="../../assets/images/kafka/3rd-party/ksql-components.png" alt="ksql-components.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/3rd-party/ksql-components.png" alt="ksql-components.png" style="width:65%;"/><!-- {"left" : 0.47, "top" : 1.65, "height" : 3.04, "width" : 9.31} -->
+
 
 ---
+
 ## KSQL - Client-Server (Interactive Mode)
 
-<img src="../../assets/images/kafka/ksql-client.png" alt="ksql-client.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/ksql-client.png" alt="ksql-client.png" style="width:65%;"/><!-- {"left" : 1.02, "top" : 1.87, "height" : 5.34, "width" : 8.21} -->
+
 
 
 ---
+
 ## KSQL - Standalone App (Headless Mode)
 
-<img src="../../assets/images/kafka/sql-standalone.png" alt="sql-standalone.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/sql-standalone.png" alt="sql-standalone.png" style="width:65%;"/><!-- {"left" : 1.02, "top" : 1.87, "height" : 5.34, "width" : 8.21} -->
+
+
 
 ---
 ## KSQL - Embedded in Application (JVM Mode)
 
 
-<img src="../../assets/images/kafka/ksql-embedded.png" alt="ksql-embedded.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/ksql-embedded.png" alt="ksql-embedded.png" style="width:65%;"/><!-- {"left" : 0.43, "top" : 2.35, "height" : 4.38, "width" : 9.39} -->
+
 
 
 ---
 ## KSQL - Dedicating Resources
 
 
-<img src="../../assets/images/kafka/ksql-dedicating.png" alt="ksql-dedicating.png" style="width:65%;"/>
+<img src="../../assets/images/kafka/ksql-dedicating.png" alt="ksql-dedicating.png" style="width:65%;"/><!-- {"left" : 0.63, "top" : 2.31, "height" : 4.45, "width" : 8.98} -->
+
+
 
 

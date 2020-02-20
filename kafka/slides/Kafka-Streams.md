@@ -135,15 +135,15 @@ Notes:
 
 ## Stream Processing - Concepts
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/kafka/stream-01.png"  style="width:90%;"/> &nbsp; &nbsp; 
+<img src="../../assets/images/kafka/stream-01.png"  style="width:90%;"/><!-- {"left" : 0.28, "top" : 2.32, "height" : 4.43, "width" : 9.69} -->
+
 
 
 ---
 ## Stream Processing - Concepts
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/kafka/stream-02.png"  style="width:90%;"/>
+<img src="../../assets/images/kafka/stream-02.png"  style="width:90%;"/><!-- {"left" : 0.48, "top" : 2.26, "height" : 2.42, "width" : 9.29} -->
+
 
 ---
 
@@ -155,7 +155,7 @@ Notes:
 
  * A  **Data Record** in the stream => maps to a Kafka message
 
- * A  **Task**  processes a fixed set of partitions
+ * A  **Task** processes a fixed set of partitions
 
      - Stream tasks can be processed parallely
 
@@ -173,7 +173,7 @@ Notes:
 
  * No state is shared across threads. So you can start as many threads as there are input Kafka topic partitions so that every thread's tasks has at least one partition to process
 
-<img src="../../assets/images/kafka/Scaling-Kafka-Streams.png" alt="Scaling-Kafka-Streams.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 1.72, "height" : 6.21, "width" : 8.21} -->
+<img src="../../assets/images/kafka/Scaling-Kafka-Streams.png" alt="Scaling-Kafka-Streams.png" style="max-width:80%;"/><!-- {"left" : 1.88, "top" : 3.11, "height" : 4.97, "width" : 6.57} -->
 
 
 Notes:
@@ -265,7 +265,7 @@ streamsSettings.put(
   StreamsConfig.ROCKSDB_CONFIG_SETTER_CLASS_CONFIG,
   CustomRocksDBConfig.class);
 ```
-<!-- {"left" : 0, "top" : 1.4, "height" : 4.03, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.13, "height" : 4.03, "width" : 10.25} -->
 
 
 Notes:
@@ -577,7 +577,6 @@ Notes:
 
 ## Kstream and KTable
 
-<!-- TODO Shiva -->
 ```java
 
 //-------- KStream example ------
@@ -589,6 +588,7 @@ KStream<byte[], String> textLines = builder.stream("textlines-topic",
 // Transforming data 
 KStream<byte[], String> upperCaseLines = textLines.mapValues(String::toUpperCase));
 ```
+<!-- {"left" : 0, "top" : 1.74, "height" : 1.83, "width" : 10.25} -->
 
 ```java 
 
@@ -600,6 +600,7 @@ KTable<String, Long> wordCounts = textLines.flatMapValues(
         count()
 
 ```
+<!-- {"left" : 0, "top" : 4.39, "height" : 1.61, "width" : 10.25} -->
 
 ---
 

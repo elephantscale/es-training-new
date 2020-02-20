@@ -237,8 +237,197 @@ Notes:
 
 ---
 
-## Spark Use Cases 
+## Spark Use Cases
 
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/netflix-logo-1.png" style="width:30%;float:right;" />
+
+* Netflix
+    - Recommendations using Spark + Cassandra
+    - Analyzes streaming events (450 billion events per day)
+    - Personalization through recommendations
+    - Sources: [1](http://bigdatausecases.info/entry/netflix-recommendations-using-spark-and-cassandra-cassandra-summit-2016),  [2](https://www.slideshare.net/DataStax/netflix-recommendations-using-spark-cassandra)
+
+* More case studies @ [BigDataUseCases.Info](http://bigdatausecases.info/)
+
+---
+
+## Spark at Large Scale
+
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/tencent-logo-1.png" style="width:15%;float:right;" />
+
+* Tencent (Social network in China)
+  - 8000 nodes
+  - 400 TB+ data
+
+<br clear="all"/>  
+<img src="../../assets/images/logos/alibaba-logo-1.png" style="width:20%;float:right;" />
+
+* Alibaba (largest e-commerce site in China)
+  - 1 PB scale processing
+  - Large scale image processing
+
+<br clear="all"/>  
+<img src="../../assets/images/logos/janelia-logo-1.png" style="width:20%;float:right;" />
+* Streaming @ Jenelia Farm
+  - 1 TB per hour
+  - Analyze medical images
+
+---
+
+# Spark vs. Hadoop
+
+---
+
+## Spark and Hadoop Timeline
+
+| Hadoop    | Year | Spark                                      |
+|-----------|------|--------------------------------------------|
+| Created   | 2006 |                                            |
+|           | 2009 | Starts at AMP lab                          |
+|           | 2010 | Open sourced                               |
+| Version 1 | 2011 |                                            |
+| Version 2 | 2013 |                                            |
+|           | 2014 | Version 1, <br /> Apache top level project |
+|           | 2016 | Version 2                                  |
+| Version 3 | 2019 |                                            |
+|           | 2020 | Version 3                                  |
+
+
+---
+
+## Hadoop vs. Spark
+
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/hadoop-vs-spark-1.png" style="width:50%;" />
+
+[Video](https://www.youtube.com/watch?v=qfv6Ah_MVJU)
+
+---
+
+## Spark vs. MapReduce
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/3rd-party/mapreduce-vs-spark-1.png" style="width:70%;" />
+
+---
+
+## Spark vs. MapReduce
+
+* Spark is easier to use than MapReduce
+
+* Friendlier development environment
+  - Interactive shells allow faster development
+  - Web based UI notebooks allow easier development
+
+* Multiple language support: Java, Python, Scala, R
+
+* Spark is high performant than MR
+
+---
+
+## Spark vs. MapReduce Benchmark
+
+* Daytona Grey Benchmark: Sort 100TB of data
+* References:
+    - [Databricks blog](https://databricks.com/blog/2014/11/05/spark-officially-sets-a-new-record-in-large-scale-sorting.html)
+    - http://sortbenchmark.org/
+
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/3rd-party/spark-vs-mapreduce-benchmark-1.png" style="width:70%;" />
+
+---
+
+## Spark and Hadoop
+
+* Spark is a better distributed engine the MapReduce
+
+* Works well with Hadoop components : HDFS, YARN and Hive
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/spark-and-hadoop-2.png" style="width:90%;" />
+
+---
+
+# Running Spark
+
+---
+
+## Spark Runtimes
+
+* On-Premise
+  - Spark is part of most modern Hadoop distributions
+  - Spark can also be downloaded and installed as a standalone system
+
+* Hosted solutions
+  - Databricks cloud - hosted Spark platform
+  - Cloud vendors: Amazon, Azure, Google
+
+<br clear="all" />
+
+<!-- TODO shiva -->
+<img src="../../assets/images/logos/databricks-logo-1.png" style="width:20%;" /> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /> &nbsp;  &nbsp;
+
+---
+
+## Databricks
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/3rd-party/databricks-gartner-1.png" style="width:50%;float:right;clear:both;" />
+
+* Founded by Spark's founders
+
+* Develops majority of Spark platform and offers commercial support
+
+* Also provides hosted Spark platform (**Databricks Cloud**)
+
+* Databricks is recognized as a leading provider for Data Analytics and Machine Learning platform  (Source : [Gartner report](https://databricks.com/p/whitepaper/gartner-magic-quadrant-2020-data-science-machine-learning))
+
+<img src="../../assets/images/logos/databricks-logo-1.png" style="width:30%;float:left;" />
+
+---
+
+## Databricks Cloud
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/3rd-party/databricks-cloud-1.png" style="width:60%;float:right;" />
+
+* A hosted platform of Spark
+
+* Zero maintenance
+
+* Auto scale  based on work loads
+
+* Community edition is free
+  - A single node with 6GB memory
+  - Notebook environment
+
+* https://community.cloud.databricks.com/
+
+---
+
+## System Requirements
+
+* Operating system
+  - Development: Windows, Mac, Linux
+  - Deployment: Linux
+* Languages:
+    - JDK 8
+    - Scala 2.11
+    - Python 3
+* Hardware
+
+| Resource | Development                       | Production                                                        |
+|----------|-----------------------------------|-------------------------------------------------------------------|
+| CPU      | 2+ core                           | 12+ core                                                          |
+| Memory   | 4+ G                              | 256+ G                                                            |
+| Disk     | - Single spindle <br/> - Few gigs | - Multiple spindles <br /> - Several Terabytes per node <br /> -  |
 
 ---
 ## Lab: Doing XYZ

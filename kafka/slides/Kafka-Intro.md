@@ -279,7 +279,7 @@ Notes:
 |--------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | By Linkedin @ 2014 | 3 machines,- Xeon 2.5 G , 6 cores,<br/>- Six 7200 RPM SATA drives,<br/>- 32 G RAM,<br/>- 1G ethernet | Multiple test setups.,<br/>One throughput,<br/>- 80 MB / sec,<br/>- 2 million messages / sec (each message 100 bytes) |
 
-<!-- {"left" : 0.25, "top" : 1.14, "height" : 2.45, "width" : 9.75} -->
+<!-- {"left" : 0.25, "top" : 1.14, "height" : 1.5, "width" : 9.75} -->
 
 <br/>
 <br/>
