@@ -15,6 +15,7 @@ how they navigate a site, what demographics they belong to and much more.
 * Acquisition: how traffic arrives at your site
 * Behavior: what traffic does when it arrives 
 * What this means for how you can improve user experience (UX)
+* Integration: Google Tag Manager
 
 ## Audience
 
@@ -103,5 +104,14 @@ Students will need the following:
   - Account
   - Property
   - All Data
-  
+
+### Google Tags
+  - Similarity and difference with GA
+  - Installation
+  - Tags
+  - Triggers
+  - Variables
+  - Folders
+  - Templates
+      
 ### Conclusion
