@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="416 27 1317 490" width="1317" height="490">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="38" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-02-20 10:41:10 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <text transform="translate(586.5996 47.94805)" fill="#12003f">
+          <tspan font-family="Century Gothic" font-size="38" font-weight="700" fill="#12003f" x="0" y="38">Small message (few KB in size)</tspan>
+          <tspan font-family="Century Gothic" font-size="38" font-weight="700" fill="#12003f" x="0" y="84">{&quot;custome_id&quot;: 123, &quot;order_id&quot;: &quot;ZJWUA&quot;, &quot;order_total&quot; : 32.45 ...}</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(586.5996 228.5092)" fill="#12003f">
+          <tspan font-family="Century Gothic" font-size="38" font-weight="700" fill="#12003f" x="0" y="38">Large message like image/ video file (few MB in size)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 529.63855 47.29259 C 516.7556 34.404834 499.86814 27.96656 482.9823 27.96656 C 466.09643 27.96656 449.2106 34.404834 436.3244 47.29259 C 410.55853 73.05849 410.55853 114.83601 436.3244 140.6019 C 449.2106 153.48486 466.09643 159.92953 482.9823 159.92953 C 499.86814 159.92953 516.7556 153.48486 529.63855 140.6019 C 555.40445 114.83601 555.40445 73.05849 529.63855 47.29259 Z" fill="#1eb40f"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 472.3493 100.89782 L 455.183 83.73146 L 439.52225 99.39064 L 472.3493 132.21771 L 472.3524 132.21307 L 488.0085 116.55699 L 526.4407 78.126315 L 510.78155 62.465594 Z" fill="white"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 529.6373 227.85374 C 516.7543 214.9708 499.8684 208.52771 482.9825 208.52771 C 466.0966 208.52771 449.20747 214.9708 436.3245 227.85374 C 410.5585 253.61964 410.5585 295.39876 436.3245 321.16466 C 449.20747 334.0476 466.0966 340.4907 482.9825 340.4907 C 499.8684 340.4907 516.7543 334.0476 529.6373 321.16466 C 555.4049 295.39876 555.4049 253.61964 529.6373 227.85374 Z" fill="#ef1301"/>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 502.397 238.9185 L 482.9799 258.33565 L 463.56595 238.92334 L 446.92407 255.5636 L 466.3396 274.97915 L 446.92407 294.3963 L 463.56595 311.03656 L 482.9799 291.61942 L 502.397 311.03656 L 519.0389 294.3963 L 499.62176 274.97915 L 519.0389 255.5636 Z" fill="white"/>
+      </g>
+      <g id="Graphic_21">
+        <rect x="1064.8872" y="333" width="184" height="184" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image8.png" width="800" height="800" transform="translate(1064.8872 333) scale(.23)"/>
+        </g>
+      </g>
+      <g id="Graphic_22">
+        <rect x="824" y="333" width="184" height="184" id="path_2"/>
+        <clipPath id="clip_path_2">
+          <use xl:href="#path_2"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_2)">
+          <image xl:href="image9.png" width="800" height="800" transform="translate(824 333) scale(.23)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

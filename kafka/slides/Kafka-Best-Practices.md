@@ -148,7 +148,7 @@ Notes:
 
 ## Best Practices: Topics / Partitions
 
-<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:40%;float:right;" /><!-- {"left" : 8.6, "top" : 0.95, "height" : 1.17, "width" : 1.59} -->
+<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:40%;float:right;" /><!-- {"left" : 5.95, "top" : 1.16, "height" : 3.06, "width" : 4.16} -->
 
  * Number of partitions correspond parallelism
  * Higher the partitions -> more consumers can be added
@@ -157,16 +157,26 @@ Notes:
      - Say Consumer throughput from a single partition as C
      - Target throughput T
      - Required partitions = Max (T/P,  T/C)
- * Ensure number of partitions >= number of brokers
+
+
+Notes:
+
+
+
+
+---
+
+## Best Practices: Topics / Partitions
+
+<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:40%;float:right;" /><!-- {"left" : 5.95, "top" : 1.16, "height" : 3.06, "width" : 4.16} -->
+
+* Ensure number of partitions >= number of brokers
      -  **Quiz**: Why?
  * Partitions can always be increased later but not decreased
  * Altering number of partitions in a KEY-VALUE topic is a little tricky?
      - Keys have to be re-hashed to partitions
 
 Notes:
-
-
-
 
 ---
 
@@ -258,7 +268,7 @@ Notes:
 
 ## Best Practices: Message Sizing
 
-<img src="../../assets/images/kafka/message-size-1.png"  style="width:50%;float:right;" /><!-- {"left" : 5.52, "top" : 1.29, "height" : 1.17, "width" : 4.47} -->
+<img src="../../assets/images/kafka/message-size-1.png"  style="width:50%;float:right;" /><!-- {"left" : 5.4, "top" : 1.19, "height" : 1.78, "width" : 4.78} -->
 
 
  * Kafka is engineered for moving small messages
@@ -357,10 +367,10 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
 
 ## Best Practices: End to End Latency
 
-<img src="../../assets/images/kafka/end-to-end-time-1.png" style="width:70%;"/><!-- {"left" : 1.39, "top" : 1.55, "height" : 1.8, "width" : 7.48} -->
+<img src="../../assets/images/kafka/end-to-end-time-1.png" style="width:65%;"/><!-- {"left" : 1.39, "top" : 1.55, "height" : 1.8, "width" : 7.48} -->
 
 
-<img src="../../assets/images/kafka/end-to-end-2.png" style="width:70%;"/><!-- {"left" : 1.29, "top" : 4.3, "height" : 3.57, "width" : 7.67} -->
+<img src="../../assets/images/kafka/end-to-end-2.png" style="width:65%;"/><!-- {"left" : 1.29, "top" : 4.3, "height" : 3.57, "width" : 7.67} -->
 
 
 ---

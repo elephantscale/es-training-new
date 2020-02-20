@@ -313,7 +313,7 @@ Notes:
 
 ## KSQL - Standalone App (Headless Mode)
 
-<img src="../../assets/images/kafka/sql-standalone.png" alt="sql-standalone.png" style="width:65%;"/><!-- {"left" : 1.02, "top" : 1.87, "height" : 5.34, "width" : 8.21} -->
+<img src="../../assets/images/kafka/sql-standalone.png" alt="sql-standalone.png" style="width:50%;"/><!-- {"left" : 1.02, "top" : 1.87, "height" : 5.34, "width" : 8.21} -->
 
 
 

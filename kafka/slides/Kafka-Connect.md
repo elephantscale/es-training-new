@@ -376,7 +376,7 @@ Notes:
 
 ---
 
-## Lab : Kafka Connect
+## Lab: Kafka Connect
 
 
  *  **Overview:** Use Kafka Connect to read data from a file
@@ -394,4 +394,3 @@ Notes:
 
 Notes: 
 
----

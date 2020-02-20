@@ -62,6 +62,7 @@ Notes:
 
 ## Our Teaching Philosophy
 
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:45%;float:right;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
 
  * Emphasis on concepts & fundamentals
 
@@ -71,7 +72,6 @@ Notes:
 
  * Hands-on (learn by doing)
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:45%;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
 
 
 Notes:
