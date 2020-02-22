@@ -20,7 +20,6 @@ _Heraclitus, 530-470 BC_
 
 ---
 
-
 ## Session Objectives
 
 * To understand:
@@ -152,6 +151,16 @@ This is the important point. Unlike the past, the rate of innovation, adoption a
 Notes:
 
 Image Credit: www.onlinemarketing-trends.com
+
+---
+
+## The Economic Reality
+
+<img src="assets/images/lesson02/world economic forum.png" style="width:15%;float:right;"/>
+
+* According to the World Economic Forum (2019)
+
+> We stand on the brink of a technological revolution that will fundamentally alter the way we live, work, and relate to one another. In its scale, scope, and complexity, the transformation will be unlike anything humankind has experienced before. We do not yet know just how it will unfold, but one thing is clear: the response to it must be integrated and comprehensive, involving all stakeholders of the global polity, from the public and private sectors to academia and civil society.
 
 ---
 
