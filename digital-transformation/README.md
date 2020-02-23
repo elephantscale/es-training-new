@@ -26,4 +26,6 @@ Most of what is presented should be verifiable by the students' own observations
 
 The previous lesson introduced the idea of what the digital transformation is but now in this lesson we look at the specific mechanisms of the transformation and the technologies that are emerging  The next lesson will focus on business and personal impact and responses to the transformation
 
-**Lesson 03: Yada Yada**
+**Lesson 03: Driving a Digital Culture and Mindset**
+
+This module title is a bit ambiguous and could mean "How the digital transformation is changing society and business"  or it could mean "How do we adapt to the new digital economy?"  To be safe, I'm covering both in this lesson.
