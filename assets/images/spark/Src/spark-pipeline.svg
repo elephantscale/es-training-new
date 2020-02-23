@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="185 2089 2305 373" width="2305" height="373">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-02-22 11:26:09 +0000</dc:date>
+  </metadata>
+  <g id="spark-pipeline" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1">
+    <title>spark-pipeline</title>
+    <g id="spark-pipeline: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_105">
+        <path d="M 194.67653 2096.7298 L 393.3167 2096.7298 C 397.735 2096.7298 401.3167 2100.3115 401.3167 2104.7298 L 401.3167 2281.906 C 401.3167 2286.3242 397.735 2289.906 393.3167 2289.906 L 194.67653 2289.906 C 190.25825 2289.906 186.67653 2286.3242 186.67653 2281.906 L 186.67653 2104.7298 C 186.67653 2100.3115 190.25825 2096.7298 194.67653 2096.7298 Z" fill="#f0e1a5"/>
+        <path d="M 194.67653 2096.7298 L 393.3167 2096.7298 C 397.735 2096.7298 401.3167 2100.3115 401.3167 2104.7298 L 401.3167 2281.906 C 401.3167 2286.3242 397.735 2289.906 393.3167 2289.906 L 194.67653 2289.906 C 190.25825 2289.906 186.67653 2286.3242 186.67653 2281.906 L 186.67653 2104.7298 C 186.67653 2100.3115 190.25825 2096.7298 194.67653 2096.7298 Z" stroke="#1b0065" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_110">
+        <path d="M 579.07344 2091 L 2480.1013 2091 C 2484.5195 2091 2488.1013 2094.5817 2488.1013 2099 L 2488.1013 2287.6358 C 2488.1013 2292.054 2484.5195 2295.6358 2480.1013 2295.6358 L 579.07344 2295.6358 C 574.65516 2295.6358 571.07344 2292.054 571.07344 2287.6358 L 571.07344 2099 C 571.07344 2094.5817 574.65516 2091 579.07344 2091 Z" fill="#ab97fd"/>
+        <path d="M 579.07344 2091 L 2480.1013 2091 C 2484.5195 2091 2488.1013 2094.5817 2488.1013 2099 L 2488.1013 2287.6358 C 2488.1013 2292.054 2484.5195 2295.6358 2480.1013 2295.6358 L 579.07344 2295.6358 C 574.65516 2295.6358 571.07344 2292.054 571.07344 2287.6358 L 571.07344 2099 C 571.07344 2094.5817 574.65516 2091 579.07344 2091 Z" stroke="#1b0065" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_106">
+        <ellipse cx="759.7476" cy="2193.318" rx="106.410766060182" ry="69.5762701162733" fill="white"/>
+        <ellipse cx="759.7476" cy="2193.318" rx="106.410766060182" ry="69.5762701162733" stroke="#21006f" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_122">
+        <text transform="translate(675.1529 2156.318)" fill="#21006f">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#21006f" x="8.701172" y="30">Convert to </tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#21006f" x="0" y="67">Lower Case</tspan>
+        </text>
+      </g>
+      <g id="Graphic_124">
+        <ellipse cx="1145.6907" cy="2193.318" rx="106.410766060183" ry="69.5762701162733" fill="white"/>
+        <ellipse cx="1145.6907" cy="2193.318" rx="106.410766060183" ry="69.5762701162733" stroke="#21006f" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_123">
+        <text transform="translate(1053.8889 2156.318)" fill="#21006f">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#21006f" x="31.794434" y="30">Remove</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#21006f" x="0" y="67"> punctuation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_128">
+        <ellipse cx="1531.6337" cy="2193.318" rx="106.410766060183" ry="69.5762701162733" fill="white"/>
+        <ellipse cx="1531.6337" cy="2193.318" rx="106.410766060183" ry="69.5762701162733" stroke="#21006f" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_131">
+        <ellipse cx="1917.5767" cy="2193.318" rx="106.410766060182" ry="69.5762701162733" fill="white"/>
+        <ellipse cx="1917.5767" cy="2193.318" rx="106.410766060182" ry="69.5762701162733" stroke="#21006f" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_137">
+        <path d="M 884.7801 2202.8352 L 884.7801 2183.8006 L 976.6498 2183.8006 L 976.6498 2166.7152 L 1020.6582 2193.318 L 976.6498 2219.9205 L 976.6498 2202.8352 Z" fill="#033399"/>
+      </g>
+      <g id="Graphic_141">
+        <ellipse cx="2303.5198" cy="2193.318" rx="106.410766060182" ry="69.5762701162733" fill="white"/>
+        <ellipse cx="2303.5198" cy="2193.318" rx="106.410766060182" ry="69.5762701162733" stroke="#21006f" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <text transform="translate(2223.3913 2174.818)" fill="#21006f">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#21006f" x="9.940491" y="30">Algorithm</tspan>
+        </text>
+      </g>
+      <g id="Graphic_145">
+        <path d="M 422.0986 2198.2166 L 422.0986 2188.419 L 515.17463 2188.419 L 515.17463 2166.7152 L 557.97675 2193.318 L 515.17463 2219.9205 L 515.17463 2198.2166 Z" fill="#8671ec"/>
+        <path d="M 422.0986 2198.2166 L 422.0986 2188.419 L 515.17463 2188.419 L 515.17463 2166.7152 L 557.97675 2193.318 L 515.17463 2219.9205 L 515.17463 2198.2166 Z" stroke="#1f0076" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_163">
+        <path d="M 1270.7231 2202.8352 L 1270.7231 2183.8006 L 1362.5929 2183.8006 L 1362.5929 2166.7152 L 1406.6013 2193.318 L 1362.5929 2219.9205 L 1362.5929 2202.8352 Z" fill="#033399"/>
+      </g>
+      <g id="Graphic_164">
+        <path d="M 1656.6662 2202.8352 L 1656.6662 2183.8006 L 1748.536 2183.8006 L 1748.536 2166.7152 L 1792.5443 2193.318 L 1748.536 2219.9205 L 1748.536 2202.8352 Z" fill="#033399"/>
+      </g>
+      <g id="Graphic_165">
+        <path d="M 2042.6092 2202.8352 L 2042.6092 2183.8006 L 2134.479 2183.8006 L 2134.479 2166.7152 L 2178.4873 2193.318 L 2134.479 2219.9205 L 2134.479 2202.8352 Z" fill="#033399"/>
+      </g>
+    </g>
+    <g id="spark-pipeline: text">
+      <title>text</title>
+      <g id="Graphic_130">
+        <text transform="translate(1828.4776 2156.318)" fill="#21006f">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#21006f" x="24.902344" y="30">Create a </tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#21006f" x="0" y="67">word-vector</tspan>
+        </text>
+      </g>
+      <g id="Graphic_121">
+        <text transform="translate(203.606 2148.4106)" fill="#3c0093">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#3c0093" x="5.595703" y="40">Raw Text </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#3c0093" x="43.984375" y="89">Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_127">
+        <text transform="translate(1459.036 2156.318)" fill="#21006f">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#21006f" x="0" y="30">Break into</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#21006f" x="25.50293" y="67"> words</tspan>
+        </text>
+      </g>
+      <g id="Graphic_136">
+        <text transform="translate(1230.0024 2372)" fill="#21006f">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#21006f" x="0" y="70">Spark ML pipeline</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
