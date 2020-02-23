@@ -16,8 +16,14 @@ Each lesson dealing with a technology follows the same general format.
 4. Future directions and impact
 5. Numbers on growth and markets or adoption where available
 
-**Lesson 01 - introduction**
+**Lesson 01 - Introduction**
 
 Basically introduces the idea of digital transformation as a real and massive phenomenon rather than some sort of cool marketing hype. One of the main objectives is to provide a context for the rest of the lesson.
 
 Most of what is presented should be verifiable by the students' own observations and experiences.
+
+**Lesson 02: Blueprint for Digital Transformation**
+
+The previous lesson introduced the idea of what the digital transformation is but now in this lesson we look at the specific mechanisms of the transformation and the technologies that are emerging  The next lesson will focus on business and personal impact and responses to the transformation
+
+**Lesson 03: Yada Yada**
