@@ -9,13 +9,13 @@ This lesson introduces the idea of big data and analytics, the specific technolo
 ## Big Data
 
 
-<img src="assets/images/lesson04/idcpage6.png" style="width:80%;">
+<img src="../assets/images/digital-transformation/3rd-party/idcpage6.png" style="width:80%;">
 
-* Big data is the phenomena of explosion of _available_ digital data
+* Big data is the name for the explosion of _available_ digital data
 
 * 175 Zettabytes is 175 trillion gigabytes
 
-* Digitization and connectivity have enabled Big Data
+* Digitization and connectivity created Big Data
 
 * Every activity in a digital world generates data which is captured, stored and can be potentially used
 
@@ -28,7 +28,7 @@ Slide ties back to original thesis pointing out that Big Data would not be possi
 ---
 
 ## The V's of Big Data  
- <img src="assets/images/lesson04/The Vs.png" style="width:80%;">
+ <img src="../assets/images/digital-transformation/3rd-party/The Vs.png" style="width:80%;">
 
  * Big Data is defined by a number of "V" characteristics.
 
@@ -51,7 +51,7 @@ I picked this 4V model since it seems to have that "value" component that is pro
 
 * Internet users generate 2.5 quintillion bytes of data each day
 
-* Every 2 days more data is created than all the years before  2003 together
+* Every 2 days more data is created than all the years before 2003 combined
 
 * 90% of all data was created within the last 2 years
 
@@ -68,7 +68,7 @@ Just some "golly gee" numbers on how much data there actually is
 ---
 
 ## Big Data - Velocity
-   <img src="assets/images/lesson04/track_please.jpg" style="width:30%;float:right">
+   <img src="../assets/images/digital-transformation/3rd-party/track_please.jpg" style="width:30%;float:right">
 
 * Every second:
   - 972 Instagram photos uploaded
@@ -79,9 +79,20 @@ Just some "golly gee" numbers on how much data there actually is
   - 83,000 YouTube videos playing
   - 2.9 million emails sent
 
-   <img src="assets/images/BigData/track_please.jpg" style="width:30%;float:right">
 
-* This does not include passive data collected like:
+Notes:
+
+Image Source: https://www.commondreams.org/views/2013/10/08/data-hackers-mining-your-information-big-brother
+
+As opposed to volume which is data amount, this contrasts the rate at which data is created. Point to make is that this is created in real time
+
+---
+
+## Big Data - Velocity
+   <img src="../assets/images/digital-transformation/3rd-party/track_please.jpg" style="width:30%;float:right">
+
+* Precious slide does not include amounts of passive data collected like:
+
   - GPS location data
   - Data from devices like phones, cars, CCTV etc
   - Data from embedded sensors, monitors, etc
@@ -95,9 +106,10 @@ As opposed to volume which is data amount, this contrasts the rate at which data
 
 ---
 
+
 ## Big Data - Variety
 
- <img src="assets/images/lesson04/big-data-unstructured-structured-1024x552.jpg" style="width:60%;">
+ <img src="../assets/images/digital-transformation/3rd-party/big-data-unstructured-structured-1024x552.jpg" style="width:60%;">
 
  * Most of the data nowadays is unstructured
   - Text, tweets, GPS data, clicks, videos, images, sensor data, etc.
@@ -115,10 +127,10 @@ A couple of points that can be made are that big data cannot be utilized unless 
 
 ## Big Data - Value
 
- <img src="assets/images/lesson04/BigDataValue.jpg" style="width:70%;">
+ <img src="../assets/images/digital-transformation/3rd-party/BigDataValue.jpg" style="width:70%;">
 
  * Data is only useful when actionable information is extracted
-  - Done by other technologies like Machine Learning and Data Analytics
+  - Done by technologies like Machine Learning and Data Analytics
 
  * Big Data is concerned with acquiring, storing and managing all this data
 
@@ -129,7 +141,7 @@ Image Credit: https://www.slideshare.net/shilpis6878/big-data-101-slide-share-12
 ---
 
 ## Big Data Tools - Storage
-<img src="assets/images/lesson04/HADOOP ECOSYSTEM.png" style="width:50%;">
+<img src="../assets/images/digital-transformation/3rd-party/HADOOP ECOSYSTEM.png" style="width:50%;">
 
 * Hadoop is an example of a Big Data management tool
 
@@ -145,7 +157,7 @@ These three sides are a couple of examples of Big Data tools.  Since we have tal
 
 ## Big Data Tools - NoSql Databases
 
-<img src="assets/images/lesson04/sql-nosql-dbs.jpg" style="width:50%;">
+<img src="../assets/images/digital-transformation/3rd-party/sql-nosql-dbs.jpg" style="width:50%;">
 
 * NoSql databases, like MongoDB, are use to store unstructured data and documents
 
@@ -158,7 +170,7 @@ Image Credit: https://bloggingskg.blogspot.com/2019/01/big-data-analytics-tools
 
 ## Big Data Tools - Graph Databases
 
-<img src="assets/images/lesson04/graphdatabases.png" style="width:50%;">
+<img src="../assets/images/digital-transformation/3rd-party/graphdatabases.png" style="width:50%;">
 
 * These databases store data about the relationships between things
 
@@ -172,7 +184,7 @@ Image Credit: researchgate.net
 
 ## Data Analytics
 
-<img src="assets/images/lesson04/GT-Analytics-Process-170707.jpg" style="width:70%;">
+<img src="../assets/images/digital-transformation/3rd-party/GT-Analytics-Process-170707.jpg" style="width:70%;">
 
 * Data Analytics is what we do with all that data
 
@@ -189,7 +201,7 @@ Since time is limited, I think that the simple message is that analytics is just
 
 ## Types of Analtyics
 
-<img src="assets/images/lesson04/gartner-analytic-ascendancy-model.png  " style="width:50%;">
+<img src="../assets/images/digital-transformation/3rd-party/gartner-analytic-ascendancy-model.png  " style="width:50%;">
 
 * Analytics looks at the past to understand what happened and why
 
@@ -203,7 +215,7 @@ Image Credit: https://www.clickz.com/how-can-ai-allow-marketers-to-predict-the-f
 
 ## Data Visualzation
 
-<img src="assets/images/lesson04/datavisualization.jpg" style="width:40%;">
+<img src="../assets/images/digital-transformation/3rd-party/datavisualization.jpg" style="width:40%;">
 
 * Data tends to be so complex that we often can only understand patterns and trends when we see them graphically
 
@@ -217,7 +229,7 @@ Image Credit: http://www.sciencegl.com/3Dsurf/Shots/screenShots.htm
 
 ## Data Analytics Tools
 
-<img src="assets/images/lesson04/datatools.png" style="width:40%;">
+<img src="../assets/images/digital-transformation/3rd-party/datatools.png" style="width:40%;">
 
 * There is a profusion of analytics tools, products, services and programming environments in use today
 
@@ -232,11 +244,11 @@ Not really time in the presentation to do the range of tools justice.. The graph
 ---
 
 ## Big Data Wins
-<img src="assets/images/lesson04/Amazon-logo-700x433.jpg" style="width:20%;">
+<img src="../assets/images/digital-transformation/3rd-party/Amazon-logo-700x433.jpg" style="width:20%;">
 
-* An early adopter of bid data analytics, Amazon haa a patent that allows them to ship goods before an order has even been placed (predictive analytics!)
+* An early adopter of big data analytics, Amazon has a patent that allows them to ship goods before an order has even been placed (predictive analytics!)
 
-* Recommendation system uses big data analytics to determine what a customer is likely to be genuinely interested in.
+* Recommendation system uses big data analytics to determine what a customer is likely to be genuinely interested in
 
 * Used to create a very accurate profile of a customer's probable future behavior
 
@@ -250,7 +262,7 @@ This should be familiar to any students who have used Amazon
 
 ## Big Data Wins
 
-<img src="assets/images/lesson04/2000px-Nissan-logo.svg.png" style="width:20%;">
+<img src="../assets/images/digital-transformation/3rd-party/2000px-Nissan-logo.svg.png" style="width:20%;">
 
 * Nissan uses localized websites where they record what kinds of cars customers are looking at and querying about online.
 
@@ -266,7 +278,7 @@ There is an old saying that 9 out of ten advertising dollars are wasted, but nob
 
 ## Big Data Wins
 
-<img src="assets/images/lesson04/players-triumph-West-German-trophy-2014-FIFA-October-1990.jpg" style="width:40%;">
+<img src="../assets/images/digital-transformation/3rd-party/players-triumph-West-German-trophy-2014-FIFA-October-1990.jpg" style="width:30%;">
 
 * FIFA World Cup Germany used analytics to win in 2014
 
@@ -284,6 +296,6 @@ There are other examples of sports teams using analytics to improve performance
 
 ##   
 
-<img src="assets/images/lesson04/quote-it-is-vital-to-remember-that-information-in-the-sense-of-raw-data-is-not-knowledge-that-arthur-c-clarke-65-13-25.jpg" style="width:100%;">
+<img src="../assets/images/digital-transformation/3rd-party/quote-it-is-vital-to-remember-that-information-in-the-sense-of-raw-data-is-not-knowledge-that-arthur-c-clarke-65-13-25.jpg" style="width:100%;">
 
 Notes:
