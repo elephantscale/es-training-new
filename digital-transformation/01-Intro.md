@@ -10,7 +10,7 @@ I have not included the standard intro to the instructor since I am assuming thi
 
 ## Digital Transformation
 
-<img src="assets/images/lesson01/heraclitus2.jpg" style="width:25%;float:right;"/>
+<img src="../assets/images/digital-transformation/3rd-party/heraclitus2.jpg" style="width:25%;float:right;"/>
 
 <br/> <br/><br/>
 
@@ -40,7 +40,7 @@ These points are gleaned from the brief overview provided but they seem to make 
 
 ## Social Transformations
 
-<img src="assets/images/lesson01/Neolithic.jpg" style="width:70%;" />
+<img src="../assets/images/digital-transformation/3rd-party/Neolithic.jpg" style="width:70%;" />
 
 * Human society has undergone two major transformations
 
@@ -58,7 +58,7 @@ Although I am not presenting this course, I will attest as both an cultural anth
 
 ## How Transformations Happen
 
-<img src="assets/images/lesson01/revenue-chart.png" style="width:50%;" />
+<img src="../assets/images/digital-transformation/3rd-party/revenue-chart.png" style="width:50%;" />
 
 * Innovative technology allows people live and work in new and novel ways
 
@@ -74,8 +74,8 @@ This is one of the classic case studies.  It may require explanation for younger
 
 ## Innovation is Not Disruption
 
-<img src="assets/images/lesson01/330px-Benz-1.jpg" style="width:30%;float:right;" />
-<img src="assets/images/lesson01/6-ford-model-t_12.jpg" style="width:30%;float:right;clear:both;" />
+<img src="../assets/images/digital-transformation/3rd-party/330px-Benz-1.jpg" style="width:30%;float:right;" />
+<img src="../assets/images/digital-transformation/3rd-party/6-ford-model-t_12.jpg" style="width:30%;float:right;clear:both;" />
 
 * The Car: Not Disruptive
 
@@ -98,7 +98,7 @@ Lots of innovative technologies do not disrupt markets because they are never ad
 
 ## Adoption is Disruption
 
-<img src="assets/images/lesson01/Disruption1.png" style="width:70%;" />
+<img src="../assets/images/digital-transformation/3rd-party/Disruption1.png" style="width:70%;" />
 
 * Technology has to produce an overwhelming change of behavior in order to be disruptive
 
@@ -112,7 +112,7 @@ The point that we will return to in the following modules is that these sorts or
 
 ## Technological Revolutions
 
-<img src="assets/images/lesson01/4thIndustrial.png" style="width:70%;" />
+<img src="../assets/images/digital-transformation/3rd-party/4thIndustrial.png" style="width:70%;" />
 
 * When multiple disruptive technologies are integrated and combined, then we have a technological revolution
 
@@ -126,7 +126,7 @@ There is cumulative effect of disruptive technologies, and when enough change ta
 
 ## It's Happening Faster
 
-<img src="assets/images/lesson01/TechAdoptionCurves.jpg" style="width:60%;" />
+<img src="../assets/images/digital-transformation/3rd-party/TechAdoptionCurves.jpg" style="width:60%;" />
 
 * Compared to previous revolutions, the rate of adoption, disruption and transformation is accelerating
 
@@ -141,7 +141,7 @@ This is the important point. Unlike the past, the rate of innovation, adoption a
 
 ## Adapt or Die
 
-<img src="assets/images/lesson01/amazon_walmart_chart.png" style="width:70%;" />
+<img src="../assets/images/digital-transformation/3rd-party/amazon_walmart_chart.png" style="width:70%;" />
 
 * We are seeing the winners and losers of digital transformation in every segment of the economy
 
@@ -166,7 +166,7 @@ Image Credit: www.onlinemarketing-trends.com
 
 ## The Road Ahead
 
-<img src="assets/images/lesson01/changes-ahead.jpg" style="width:30%;float:right" />
+<img src="../assets/images/digital-transformation/3rd-party/changes-ahead.jpg" style="width:30%;float:right" />
 
 * We will look at
   - Some of the main disruptive technologies
@@ -183,7 +183,7 @@ I put these at the end of this module since I feel that now that the context has
 
 ## Digital Darwinism
 
-<img src="assets/images/lesson01/timthumb.jpeg" style="width:7100%;" />
+<img src="../assets/images/digital-transformation/3rd-party/timthumb.jpeg" style="width:7100%;" />
 
 Notes:
 
