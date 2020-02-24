@@ -5,15 +5,20 @@ This module's original title is a bit ambiguous so there are two main sections i
 
 ---
 
-## Lesson objectives
+## Lesson Objectives
 
-* Left for later
+* To understand:
+
+  - The economic impact of the 4th Industrial Revolution
+  - The challenges faced by business and the economy
+  - The challenges for individuals in the new economy
+  - How the nature of work will change
 
 ---
 
 ## Digital Transformation Impact
 
-<img src="assets/images/lesson03/slide-23-1024.jpg" style="width:80%;" />
+<img src="../assets/images/digital-transformation/3rd-party/slide-23-1024.jpg" style="width:80%;" />
 
 * The new digital economy changes how we work and live
 
@@ -21,16 +26,16 @@ Notes:
 
 Image Credit: https://www.slideshare.net/montymetzger/the-future-of-digital-health/23-2014_Ahead_of_Time_GmbHAhead
 
-I think this image is quite cook because it does recap all the great transformations
+I think this image is quite cool because it does recap all the great transformations
 
 ---
 
 ## Projected Changes
-<img src="assets/images/lesson03/CanadianHorizons.png" style="width:60%;" />
+<img src="../assets/images/digital-transformation/3rd-party/CanadianHorizons.png" style="width:50%;" />
 
 * There are a number of significant changes already taking place that will continue to grow and accelerate
 
-* These are the changes that will affect businesses, markets and society
+* These are changes that will affect businesses, markets and society
 
 Notes:
 
@@ -156,7 +161,7 @@ This is often overlooked but as functionality is migrated to the digital aspects
 
 ## Winners and Losers
 
-<img src="assets/images/lesson03/winnerslosers.jpg" style="width:30%; float:right;" />
+<img src="../assets/images/digital-transformation/3rd-party/winnerslosers.jpg" style="width:30%; float:right;" />
 
 * The digital transformation has produced a series of challenges for business and individuals
 
@@ -254,7 +259,7 @@ Notes:
 
 ## Individual Challenges
 
-<img src="assets/images/lesson03/istockphoto-947743050-612x612.jpg" style="width:50%;" />
+<img src="../assets/images/digital-transformation/3rd-party/istockphoto-947743050-612x612.jpg" style="width:50%;" />
 
 * It's not just businesses but also individuals who will have to face challenges in the digital economy
 
@@ -304,7 +309,7 @@ We come back to these issues in the last module as we discuss how to respond to 
 
 ##   
 
-<img src="assets/images/lesson03/11-digital-transformation-quotes-to-lead-change-inspire-action-10-638.jpg" style="width:80%;" />
+<img src="../assets/images/digital-transformation/3rd-party/11-digital-transformation-quotes-to-lead-change-inspire-action-10-638.jpg" style="width:80%;" />
 
 Notes:
 
