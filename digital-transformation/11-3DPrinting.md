@@ -8,7 +8,7 @@ This is a really important technology and it's a bit different than the others. 
 
 ## A Different Type of Transformation
 
-<img src="assets/images/lesson11/Captura-de-pantalla-2016-09-15-a-las-01.51.43.png" style="width:60%;">
+<img src="../assets/images/digital-transformation/3rd-party/Captura-de-pantalla-2016-09-15-a-las-01.51.43.png" style="width:60%;">
 
 * 3d Printing is the major enabler of the 4th Industrial Revolution
 
@@ -28,7 +28,7 @@ Image is of matal part manufactured through 3d metal printing.  The part was mad
 
 ## Additive Manufacturing
 
-<img src="assets/images/lesson11/20130907_TQP006_0.jpg" style="width:25%;float:right">
+<img src="../assets/images/digital-transformation/3rd-party/20130907_TQP006_0.jpg" style="width:25%;float:right">
 
 * 3d printing is a enhanced type of additive manufacturing
   - Product is built up in layers by adding material
@@ -49,7 +49,7 @@ Industrial 3d printer
 
 ## 3d The Printing Process
 
-<img src="assets/images/lesson11/General-3D-printing-process.png" style="width:70%">
+<img src="../assets/images/digital-transformation/3rd-party/General-3D-printing-process.png" style="width:70%">
 
 * An object is scanned or designed to produce a 3D digital model
 
@@ -66,7 +66,7 @@ There is a lot implied here.  In order for this to work, there needs to be a ver
 ---
 
 ## Example: Printing Prostheses
-<img src="assets/images/lesson11/noseandears1-1-768x432.jpg" style="width:5
+<img src="../assets/images/digital-transformation/3rd-party/noseandears1-1-768x432.jpg" style="width:5
 0%">
 
 * Already used to make prosthetics, artificial skin, heart valves, veins and other body parts
@@ -84,7 +84,7 @@ Image is of actual ear and nose prostheses custom designed for specific patients
 
 
 ## Example: Bio-Printing
-<img src="assets/images/lesson11/bioprinting.png" style="width:60%">
+<img src="../assets/images/digital-transformation/3rd-party/bioprinting.png" style="width:60%">
 
 * Bio-printing (often called "meat printing") is in the early stages
 
@@ -97,7 +97,7 @@ Image Credit: https://3dbioprinting.weebly.com/how-it-works.html
 ---
 
 ## Example: Metal Fabrication
-<img src="assets/images/lesson11/MetalPrinting.jpg" style="width:70%">
+<img src="../assets/images/digital-transformation/3rd-party/MetalPrinting.jpg" style="width:70%">
 
 * Metal 3d printing allows for complex metal parts to be build in one piece
 
@@ -114,7 +114,7 @@ Image Credit: https://newsroom.posco.com/en/future-manufacturing-metal-3d-printi
 
 ---
 ## Example: Extreme Printing
-<img src="assets/images/lesson11/metal-1024x675.jpg" style="width:50%">
+<img src="../assets/images/digital-transformation/3rd-party/metal-1024x675.jpg" style="width:50%">
 
 * Demonstration of how complex a metal part can be
 
@@ -127,7 +127,7 @@ Image Credit: http://engatech.com/metal-3d-printing/
 ---
 
 ## Example: Industrial Production
-<img src="assets/images/lesson11/fuel tank.jpg" style="width:50%;float:right;">
+<img src="../assets/images/digital-transformation/3rd-party/fuel tank.jpg" style="width:50%;float:right;">
 
 * Relativity Space Inc. is 3d printing metal rocket fuel tanks
 
@@ -160,7 +160,7 @@ Notes:
 ---
 
 ## Market is Expanding
-<img src="assets/images/lesson11/3D-Printing-Forecast2.jpg" style="width:50%">
+<img src="../assets/images/digital-transformation/3rd-party/3D-Printing-Forecast2.jpg" style="width:50%">
 
 * Improvements in digital technology increased what 3d printing could do
 
@@ -194,7 +194,7 @@ This is the reason for why 3d printing might be the most disruptive -- it makes 
 
 ## Traditional Value Chain
 
-<img src="assets/images/lesson11/1 Dime-Value-Chain-ENG2-2-1024x957.jpg" style="width:50%">
+<img src="../assets/images/digital-transformation/3rd-party/1 Dime-Value-Chain-ENG2-2-1024x957.jpg" style="width:50%">
 
 Notes:
 
@@ -208,7 +208,7 @@ The value chain represents a number of economic sectors like transportation, man
 
 ## E-Commerce Value Chain
 
-<img src="assets/images/lesson11/Dime-Value-Chain-ENG3-1-1024x957.jpg" style="width:50%">
+<img src="../assets/images/digital-transformation/3rd-party/Dime-Value-Chain-ENG3-1-1024x957.jpg" style="width:50%">
 
 Notes:
 
@@ -222,7 +222,7 @@ This is the transitional model we are seeing currently
 
 ## Industry 4.0 First Stage
 
-<img src="assets/images/lesson11/Dime-Value-Chain-ENG4-1-1024x951.jpg" style="width:50%">
+<img src="../assets/images/digital-transformation/3rd-party/Dime-Value-Chain-ENG4-1-1024x951.jpg" style="width:50%">
 
 * Hybrid manufacturing uses flexible robotics and 3D printing to deliver affordable short-run and on-demand production
 
@@ -232,7 +232,7 @@ Notes:
 
 ## Distributed Manufacturing
 
-<img src="assets/images/lesson11/Dime-Value-Chain-ENG5-1-1024x957.jpg" style="width:50%">
+<img src="../assets/images/digital-transformation/3rd-party/Dime-Value-Chain-ENG5-1-1024x957.jpg" style="width:50%">
 
 * Bypasses tradition manufacturers  
 
@@ -248,7 +248,7 @@ Ephemeral value chains based on economies of scope
 
 ## Full Digital Transformation
 
-<img src="assets/images/lesson11/Dime-Value-Chain-ENG6-1-1024x951.jpg" style="width:45%">
+<img src="../assets/images/digital-transformation/3rd-party/Dime-Value-Chain-ENG6-1-1024x951.jpg" style="width:45%">
 
 * Artificial Intelligence (AI) reduces the burden of considering many or all options
 
@@ -260,7 +260,7 @@ Notes:
 
 ## It's Happening Now
 
-<img src="assets/images/lesson11/Makerbot-farm-3d-printer.jpg" style="width:70%">
+<img src="../assets/images/digital-transformation/3rd-party/Makerbot-farm-3d-printer.jpg" style="width:70%">
 
 * 3d Printer farm for mass production
 
@@ -272,7 +272,7 @@ Image Credit: https://3dprintingindustry.com/wp-content/uploads/2014/12/Makerbot
 
 ## Space Exploration
 
-<img src="assets/images/lesson11/ism_logo_2016.jpg" style="width:20%;float:right;">
+<img src="../assets/images/digital-transformation/3rd-party/ism_logo_2016.jpg" style="width:20%;float:right;">
 
 * 3d printing is being implemented by NASA as a way to avoid launching tons of supplies into space
 
@@ -288,7 +288,7 @@ Image Credit: https://www.nasa.gov/oem/inspacemanufacturing
 
 ##  
 
-<img src="assets/images/lesson11/quote.jpg" style="width:80%">
+<img src="../assets/images/digital-transformation/3rd-party/quote.jpg" style="width:80%">
 
 Notes:
 
