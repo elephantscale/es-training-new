@@ -8,7 +8,7 @@ Notes:
 
 <img src="../assets/images/digital-transformation/3rd-party/us-blockchain-technology-market.png" style="width:70%;" />
 
-* BLockchain is a technology created by an anonymous to implement Bitcoin
+* BLockchain is a technology created by an anonymous developer to implement the Bitcoin crypto-currency
 
 * However, Blockchain has many other important applications and the market for BLockchain technology is expanding rapidly   
 
@@ -38,7 +38,7 @@ Image Credit: https://webrootsdemocracy.files.wordpress.com/2017/12/blockchain-g
   - Institutions, banks, individuals, companies, etc
 
 * The nodes are all "voting" members of that Blockchain
-  - They collectively decide to allow new transactions to be added to the ledger
+  - They collectively decide whether or not to allow new transactions to be added to the ledger
 
 Notes:
 
@@ -91,7 +91,7 @@ Notes:
 ## Blockchain Applications
 <img src="../assets/images/digital-transformation/3rd-party/Applications-of-BlockChain-Technology.jpg" style="width:40%;" />
 
-* Blockchain can be used anywhere that secure transactions or authentication are needed
+* Blockchain can be used anywhere that a secure transaction or authentication is needed
 
 * Has the potential to revolutionize
   - Financial transactions of all types
@@ -123,7 +123,7 @@ The implications of BlockChain replacing the supply chain mechanisms are quite s
 
 <img src="../assets/images/digital-transformation/3rd-party/Hyperledger-London-1-Car-Leasing.png" style="width:60%;" />
 
-* Existing model - multiple parts with their own records
+* Existing model - multiple parties with their own records
   - System is disjointed and requires constant reconciliation
 
 Notes:
@@ -159,7 +159,7 @@ Image Credit: https://www.kryptographe.com/blockchain-quotes-from-successful-lea
 
 * The Internet first wave connected people and their applications
 
-* The IoT is the second wave: IoT connects "things" over the Internet
+* The IoT is the Internet second wave: connecting "things"
 
 Notes:
 
@@ -170,9 +170,9 @@ Image Credit: https://pioneerserviceinc.com/the-industrial-internet-of-things-ii
 ## Internet of Things (IoT)
 <img src="../assets/images/digital-transformation/3rd-party/IOT1.png" style="width:50%;" />
 
-* Eliminates human intermediaries in automation
+* Eliminates need for human intermediaries in automation
 
-* Allows the direct interaction of devices at a distance
+* Allows the direct interaction of devices indifferent locations
 
 * Allows real time data collection about the real world to enable real time responses
 
@@ -187,9 +187,10 @@ Image Credit: https://virtualhrd.wordpress.com/2014/04/12/whats-the-internet-of-
 ## Smart Cities
 <img src="../assets/images/digital-transformation/3rd-party/smart-city-slider.jpg" style="width:50%;" />
 
-* Different types of IoT sensors:
-  - Collect data from multiple sources -- cell phones, traffic cameras, sensors etc
-  - Data analytics produces insights to manage resources and services efficiently
+* Different types of IoT sensors collect data from multiple sources
+  - cell phones, traffic cameras, sensors etc
+
+* Data analytics produces insights to manage resources and services efficiently
   - Automated resources are issued instructions (changing traffic light timing for example)
 
 
