@@ -1,17 +1,18 @@
 # Terraform and Packer
 
-# Docker for Developers
 February 26, 2020
 
 
 ## Overview
 
-IaS (Infrastructure as Code) is one of the most important developments in application
+* IaS (Infrastructure as Code) is one of the most important developments in application
 deployment in many years, and paves the way for many other exciting
 possibilities in DevOps.
 
-Terraform is a HashiCorp open source tool for deploying infrastructure
+* Terraform is a HashiCorp open source tool for deploying infrastructure
 in multiple cloud environments.
+* Packer is a HashiCorp open source tool for creating images in 
+multiple environments
 
 
 ## What you will learn
