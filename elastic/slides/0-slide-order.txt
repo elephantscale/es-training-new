@@ -21,6 +21,7 @@ X-Pack.md
 Elasticsearch_Admin.md
 # Search and Machine Learning (AI)
 ../../machine-learning/python/LearnToRank.md
+../../python/slides/PYTHON-Text-NLTK.md
 ../../python/slides/PYTHON-Text-Spacy.md Text-Spacy
 ../../machine-learning/generic/Text-Analytics-Intro.md
 ../../ai-nlp/slides/word2vec.md
