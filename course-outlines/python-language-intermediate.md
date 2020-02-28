@@ -64,7 +64,7 @@ Lectures and hands-on labs. (50%, 50%)
  * Visualization 
       - Matplotlib
       - Seaborn
- * Advanced Pandas Pandas
+ * Advanced  Pandas
       - DataFrames
       - Schema inferences
       - Data exploration
