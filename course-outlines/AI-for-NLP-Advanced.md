@@ -1,42 +1,37 @@
-# Artificial Intelligence (AI) for Natural Language Processing (NLP)
+# Artificial Intelligence (AI) for Natural Language Processing (NLP) - Advanced
 
 ## Overview
-We live in an era of so much data - a lot of it is text (emails, tweets, customer tickets, Yelp reviews, product reviews ..etc.)
+We live in an era of so much data - and a lot of it is text (emails, tweets, customer tickets, Yelp reviews, product reviews, etc.)
 
-In the field of AI, there is a revolution going on in the past few years.  The researchers from companies like Google, Facebook, Microsoft and Baidu has come up with break through algorithms that can understand text data more than ever before.
+In the field of AI, there is a revolution going on in the past few years.  The researchers from companies like Google, Facebook, Microsoft and Baidu have come up with break-through technologies that work with text based on its meaning and not the keywords in it.
 
 The applications are wide ranging, including understanding documents, processing customer service tickets and analyzing reviews.
 
-In this course, we will teach how to handle text data using modern AI technologies.
+In this course, we will give you practical skill in handling text with modern AI NLP technologies.
 
 
 ## What you will learn:
-- How to prepare text for machine learning
-- Steming,  tokenizing and filtering stop words in text
-- Analyzing documents using word-frequency, bag-of-words techniques
-- Visualizing text data
-- Classic toolsets for text processign : NLTK, Textblob, TF-IDF
-- Naive Bayes for text classifications
-- Modern techniques for text : Spacy, Word2Vec
+- Modern techniques for text: Spacy, Word2Vec
 - Topic modeling with Gensim
-- Neural Network frameworks : Tensorflow & Keras
+- Neural Network frameworks: Tensorflow & Keras
 - NN models for text processing: LSTM, RNN
 - Modern NN models for text processing: ELMO, ULMFIT, BERT
+- Practical skills in builing BERT model
+- Hugging Face Library
 
 
 ## Duration:
-Four Days
+Three Days
 
 ## Audience:
 Developers, Data analysts, data scientists
 
 ## Skill level
-Introductory to Intermediate
+Intermediate to Advanced
 
 ## Industry Use Cases Covered
 We will study and solve some of most common industry use cases; listed below
 
-* Determining if a text message is a spam (Telco)
 * Sentiment analysis of Tweets (Social)
 * IMDB Movie ratings and reviews analysis
 
@@ -64,25 +59,6 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Hardware and software ecosystem
 * Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
 
-
-### Text Preparation
-* Filtering
-* Stopwords
-* Stemming
-* Parsing and tokenization
-* Word-clouds
-* Working with Unicode
-
-### Text Algorithms
-* N-grams
-* Bag-of-words
-* NLTK
-* TextBlob
-* TF-IDF
-
-### Text Classification
-* Naive Bayes
-* SVM
 
 ### Text datasets and Benchmarks
 * Public text datasets
@@ -127,6 +103,14 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Transformer architecture
 * Bidirectional LSTM
 * Pre-trained Models for Text Processing (ElMO, ULMFIT,  BERT)
+
+### BERT
+* BERT model
+* BERT use cases
+    - Legal
+    - Financial
+    - Medical
+* BERT implemented in Hugging Face
 
 ### Conversational AI
 * Understanding natural language
