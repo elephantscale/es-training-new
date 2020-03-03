@@ -55,7 +55,7 @@ Notes:
 | Division         | `/`      | `a / b`       |
 | Exponent         | `**`     | `a ** 2`      |
 | Modulus          | `%`      | `5 % 2 is 1`  |
-| Integer Division | `//`       | `5 // 2 is 2` |
+| Integer Division | `//`     | `5 // 2 is 2` |
 
 <!-- {"left" : 0.25, "top" : 1.11, "height" : 3.5, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
 
