@@ -7,9 +7,9 @@
     _"Using transformations of raw input data to create new features to be used in ML model"_
 
  * Feature Engineering examples
-    - Join two database tables to have all data in one place
+    - Data cleanup
     - Convert to same units of measurements  (imperial to metric)
-    - Enriching data by combining with other data sources e.g. combining house sales prices with census data
+    - Enriching data by combining with other data sources (e.g. combining house sales prices with census data)
 
 
 Notes:
@@ -25,6 +25,8 @@ Notes:
  * The following is an example
     - Inputs: Bedrooms, Bathrooms, Size
     - Output: Sale Price
+
+<br />
 
 | Bedrooms (input 1) | Bathrooms (input 2) | Size sqft (input 3) | Sale Price (in thousands)(we are trying to predict) |
 |--------------------|---------------------|----------------|------------------------------------------------------|
@@ -42,7 +44,6 @@ Notes:
 # Feature Selection
 
 ---
-
 ## Feature Selection
 
 - We could have a lot of features to choose from
@@ -61,29 +62,13 @@ Notes:
 
 ---
 
-## 'Curse of Dimensionality'
-
-- ['Curse of Dimensionality'](https://en.wikipedia.org/wiki/Curse_of_dimensionality) says more features, required more _observations_ (rows)
-    
-- This is not a linear relationship;
-    - More features --> **many** more rows
-    
-- For example, let's say we have only 100 rows/samples of data.
-  - Say each row has lots of features / columns (100+), 
-  - then we'd need more samples for ML algorithm to learn effectively
-
-
-Notes:
-- https://en.wikipedia.org/wiki/Curse_of_dimensionality
-
----
 
 ## Class Quiz: Feature Selection
 
 <img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 6.24, "top" : 1.14, "height" : 2.59, "width" : 3.89} -->
 
-  * Assume we are evaluating a credit card application
-  * **Q: What features we might consider?**
+* Assume we are evaluating a credit card application
+* **Q: What features we might consider?**
 
 <br clear="all"/>
 
@@ -122,41 +107,133 @@ Notes:
 
 <!-- {"left" : 1.02, "top" : 7.15, "height" : 1.51, "width" : 8.2, "columnwidth" : [0.5, 0.5, 0.5, 1.09, 1.82, 1.82, 1.82]} -->
 
+Notes:
 
+---
 
+## Class Quiz: Predicting Credit Card Fraud
+
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 6.24, "top" : 1.14, "height" : 2.59, "width" : 3.89} -->
+
+* Assume we are evaluating if a credit card transaction is fraud or not
+
+* **Q: What features we might consider? (open ended)**
 
 Notes:
 
 ---
 
-##  How do We Select Features? 
+##  How do We Select Features?
 
 * __Using Domain Knowledge__
   - In the previous example how did we figure out the features to consider?  
   Probably 'common sense' :-)
-  
+
 *  In practice we use our **domain knowledge** to identify important features
- 
+
 * For example if you work in finance domain, you know what attributes are good signals
     - e.g How did Alan Greenspan predict labor market ?
-    
+
 * __Some algorithms can help__  
   Some ML algorithms can take in all features and provide _'feature importance'_
 
 Notes:
 
+Alan Greenspan used suites and ties sold by Sears department store to predict the labor market conditions.  Remember, this was in 50s/60s.  So it worked then.   Will you think it will work now in 2020? :-)
+
+---
+
+## Feature Selection
+
+* __Question:What makes a good feature?__
+
+* Known at model building time  (during training)
+
+* Has to be meaningful to the objective
+
+* Has enough examples in data
+
+* Numeric features are **preferred but not required**
+
+* Must be legal to use (See next slide)
+
+Notes:
+
+---
+
+## Legal Implications
+
+* Some features can not be used legally !
+
+* Some examples:
+    - **Race** of a person
+    - **Age** of a person
+    - **Address** may not be used in some instances ('red lining')
+    - Can you think of any thing else that may not be used?
+
+
+
+Notes:
+
+---
+
+
+## 'Curse of Dimensionality'
+
+- ['Curse of Dimensionality'](https://en.wikipedia.org/wiki/Curse_of_dimensionality) says more features, required more _observations_ (rows)
+
+- This is not a linear relationship;
+    - More features --> **many** more rows
+
+- For example, let's say we have only 100 rows/samples of data.
+  - Say each row has lots of features / columns (100+),
+  - then we'd need more samples for ML algorithm to learn effectively
+
+
+Notes:
+- https://en.wikipedia.org/wiki/Curse_of_dimensionality
+
+---
+
+# Non-numeric Features
+
+---
+## Numeric Features
+
+* Most ML algorithms deal in numbers (vectors)
+
+* So numeric features are preferred
+
+* Which of these is numeric?
+
+<br />
+
+| Feature            | Sample Value                                            | Numeric? |
+|--------------------|---------------------------------------------------------|----------|
+| Number of Bedrooms | 3                                                       | ?        |
+| House Type         | - Single Family <br /> - Townhome <br /> - Apartment    | ?        |
+| Discount           | 10%                                                     | ?        |
+| Owns a home        | Yes / No                                                | ?        |
+| Item Category      | - Jewelry <br/> - Groceries <br /> - Electronics <br /> | ?        |
+
+Notes:
+Bedrooms : yes,   House Type : No,  Discount : Yes, Owns a Home : No, Item : No
 ---
 
 ## Categorical Variables
 
- * Some of the variables have string content
- * Example: Marital Status / Owns a Home
- * Feature vectors must be numeric.
- * We have to convert the variable to a numeric value.
+ * Some of the variables are non-numeric
+
+ * Example: Marital Status (Married / Divorced / Single) / Owns a Home (Yes / No)
+
+ * We have to convert the variable to a numeric value
+
  * Example:  
   `Owns A Home -> 0 = No, 1 = Yes`
- * Categorical Variables are essentially structured data, despite being strings.
- * Unstructured data would include things like: documents, emails, tweets
+
+ * Categorical Variables are essentially structured data, despite being strings
+
+ * (Unstructured data would include things like: documents, emails, tweets)
 
 <img src="../../assets/images/machine-learning/Categorical-Variables.png" alt="Categorical-Variables" style="width:60%;"/> <!-- {"left" : 0.26, "top" : 5.52, "height" : 1.64, "width" : 9.74} -->
 
@@ -171,6 +248,7 @@ Notes:
 ## Encoding Categorical Variables
 
  * We have to convert our categorical variables into numbers
+
  * 3 Strategies:
     - Factorization / Indexing
     - One-Hot-Encoding/Dummy Variables
@@ -184,7 +262,9 @@ Notes:
 ## Example of Factorization / Indexing
 
  * We can convert our string variables into factors / numbers
+
  * This means we assign a number to each unique value of the column
+
  * Added benefits
     - Numbers are more efficient to store
     - And compute!
@@ -200,10 +280,12 @@ Notes:
 ## Potential Problems With Factorization / Indexing
 
  * Some ML algorithms can start interpreting the numbers!
+
  * In the example below, an ML algorithm can think
     - 2 (Divorced)  >  1 (Single)  > 0 (Married)
 
  * This can lead to surprising outcomes
+
  * We can fix this by 'one-hot-encoding' method
 
 <img src="../../assets/images/machine-learning/factorization-3.png" alt="Factorization" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 4.09, "height" : 3.11, "width" : 8.21} -->
@@ -218,6 +300,7 @@ Notes:
 
  * Dummy variables can help us treat the different values separately
     - Without trying to infer some relationship between values.
+
  * 'dummy variables' assigns  true / false to each.
     - Note, only one bit is on
     - This is called **ONE-HOT-Encoding**
@@ -255,10 +338,15 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 ## Generating New Dimensions
 
  * Problem: Comparing house prices
+
  * Can we say Mountain View is most expensive city?
+
  * On first table, there is no data point for 'size of the house'
+
  * May be an 'apples-to-apples' comparison would be 'price per sq. foot'
 
+<!-- TODO Shiva -->
+<img src="../../assets/images/machine-learning/feature-envgineering-1.png"  style="width:40%;float:right;"/> <!-- {"left" : 4.33, "top" : 4.64, "height" : 2.64, "width" : 5.47} -->
 
 
 | City           | House Price   |
@@ -270,7 +358,6 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 
 <!-- {"left" : 0.49, "top" : 4.95, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
 
-<img src="../../assets/images/machine-learning/feature-envgineering-1.png" alt="feature-envgineering" style="max-width:30%;"/> <!-- {"left" : 4.33, "top" : 4.64, "height" : 2.64, "width" : 5.47} -->
 
 
 
@@ -295,9 +382,11 @@ Notes:
 
 ## Scaling
  * Usually data needs to be cleaned up and transformed before creating features
+
  * In the data below, we see **age** and **income** are in two different scales
     - age: ranges from 33 - 60
     - income ranges from 32,000  to 120,000
+    
  * Some algorithms will yield better results if these different ranges can be scaled to a uniform range
     - Remove high magnitude data
 
@@ -412,5 +501,3 @@ Notes:
 
 
 Notes:
-
-
