@@ -15,7 +15,7 @@ About-Machine-Learning-With-Python-Class-2-days.md
 
 
 ## high level overview
-../generic/Machine-Learning-Primer.md
+../generic/Machine-Learning-Primer-Compact.md
 
 ## Python basics
 ../../python/slides/PYTHON-NumPy.md
