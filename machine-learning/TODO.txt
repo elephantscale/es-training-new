@@ -1,10 +1,28 @@
-- revamp naive bayes 
+- revamp naive bayes
     do a different scanario
-    copy images along with equaations for easy understanding 
-    
+    copy images along with equaations for easy understanding
+
 - cleanup decision trees a bit...
 
-- fix decision trees notebook 
+- fix decision trees notebook
 - fix rf trees notebook
 
 - logistic regression, illustrate how the percentage output from the equation is mapped to yes / no by threshold
+
+- Feature Engineering
+    - how to deal with timestamps
+    - these are not reproducable (what happened 2019-01-01 12:09:08 will never happen again)
+    - want to convert them to day of week / day of month ..etc
+    - predicting taxi fare : look at this slide - https://docs.google.com/presentation/d/1Bc3fJTgXCFwXN-MO_z3xThKzDb8mtKkoTeW9NQJIGkQ/edit#slide=id.p39
+
+- ML use cases
+    - investigate slide 51  - https://docs.google.com/presentation/d/1Bc3fJTgXCFwXN-MO_z3xThKzDb8mtKkoTeW9NQJIGkQ/edit#slide=id.p51
+
+- ML Concepts
+    - cover further splitting test set into test + validation
+        - https://docs.google.com/presentation/d/1Bc3fJTgXCFwXN-MO_z3xThKzDb8mtKkoTeW9NQJIGkQ/edit#slide=id.p56
+
+    - linear / logistic / multiclass
+    https://docs.google.com/presentation/d/1Bc3fJTgXCFwXN-MO_z3xThKzDb8mtKkoTeW9NQJIGkQ/edit#slide=id.p62
+
+    - 
