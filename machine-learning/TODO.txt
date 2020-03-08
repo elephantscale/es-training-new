@@ -29,3 +29,6 @@
 - ML-Concepts
         - Testing / Cross Validation needs better flow 
         - better diagrams of random selection
+
+	- Confusion Matrix:
+		- show perfect confusion matrix
