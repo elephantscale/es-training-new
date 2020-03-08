@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="28 187 870 350" width="870" height="350">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="28 187 870 350" width="870" height="350">
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#4b007c">
       <g>
@@ -14,9 +14,9 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2020-03-05 12:29:34 +0000</dc:date>
+    <dc:date>2020-03-08 11:06:57 +0000</dc:date>
   </metadata>
-  <g id="Canvas_1" stroke-dasharray="none" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none">
+  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none">
     <title>Canvas 1</title>
     <g id="Canvas_1: Layer 1">
       <title>Layer 1</title>
@@ -71,8 +71,8 @@
         </text>
       </g>
       <g id="Graphic_15">
-        <text transform="translate(651.112 428)" fill="#2d0074">
-          <tspan font-family="Century Gothic" font-size="33" font-weight="700" fill="#2d0074" x="0" y="33">Cloud Stronge</tspan>
+        <text transform="translate(656.6328 428)" fill="#2d0074">
+          <tspan font-family="Century Gothic" font-size="33" font-weight="700" fill="#2d0074" x="0" y="33">Cloud Storage</tspan>
         </text>
       </g>
       <g id="Graphic_16">
