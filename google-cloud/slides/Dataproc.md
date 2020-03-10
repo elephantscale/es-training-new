@@ -1,11 +1,13 @@
 # Google Dataproc
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/dataproc-logo.png" style="width:30%;"/><!-- {"left" : 4.37, "top" : 7, "height" : 1.19, "width" : 3.65} -->
+<img src="../../assets/images/logos/dataproc-logo.png" style="width:30%;"/><!-- {"left" : 3.06, "top" : 6.23, "height" : 2.24, "width" : 2.24} -->
+
+
 
 ---
 
 ## Objectives
+
 - Understanding Dataproc
 - Dataproc features
 - Dataproc in action
@@ -20,9 +22,8 @@
 
 * Dataproc uses Compute Engine, Cloud Storage, and Cloud Ops tools.  
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/spark-logo-1.png"  style="width:30%;"/>  &nbsp;  &nbsp;
-<img src="../../assets/images/logos/hadoop-logo-1.png"  style="width:40%;"/>
+<img src="../../assets/images/logos/spark-logo-1.png"  style="width:30%;"/><!-- {"left" : 1.43, "top" : 5.25, "height" : 1.49, "width" : 2.79} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/hadoop-logo-1.png"  style="width:40%;"/><!-- {"left" : 5.49, "top" : 5.6, "height" : 0.78, "width" : 3.33} -->
+
 
 Notes:
 
@@ -41,28 +42,29 @@ Notes:
   - Hive
   - Pig
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/dataproc-jobs.png" style="width:50%;float:center;"/>
+<img src="../../assets/images/google-cloud/3rd-party/dataproc-jobs.png" style="width:50%;float:center;"/><!-- {"left" : 1.02, "top" : 5.17, "height" : 2.7, "width" : 8.21} -->
+
 
 ---
 
 ## Traditional Spark and Hadoop Clusters
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/data-proc-4.png" style="width:80%;"/>
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-4.png" style="width:80%;"/><!-- {"left" : 0.53, "top" : 2.86, "height" : 3.34, "width" : 9.19} -->
+
+
 
 ---
 ## Google Cloud Dataproc
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/data-proc-5.png" style="width:80%;"/>
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-5.png" style="width:80%;"/><!-- {"left" : 0.33, "top" : 3.3, "height" : 3.04, "width" : 9.58} -->
+
 
 ---
+
 ## Fast and Scalable
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/data-proc-speed.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-speed.jpg" style="width:40%;float:right;"/> <!-- {"left" : 6.44, "top" : 1.17, "height" : 3.58, "width" : 3.58} -->
 
 * Cloud Dataproc clusters can be created quickly (typically couple of minutes)
 
@@ -77,8 +79,7 @@ Notes:
 
 ## Low Cost
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/data-proc-1.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-1.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.53, "top" : 1.12, "height" : 2.31, "width" : 4.52} -->
 
 * Low and fixed price
 
@@ -100,8 +101,9 @@ Notes:
   - Big Query 
   - and more
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/data-proc-2.jpg" style="width:70%;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/data-proc-2.jpg" style="width:70%;"/><!-- {"left" : 0.72, "top" : 3.89, "height" : 4.1, "width" : 8.82} -->
+ 
+
 
 ---
 
@@ -155,16 +157,19 @@ Notes:
 
 * Initialization Actions
    - Run initialization actions to install or customize the settings and libraries you need when your cluster is created.
-   - E.g.   Run `install-hbase.sh` during initialization
+   - E.g. Run `install-hbase.sh` during initialization
 
 ---
 ## Dataproc Features
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/jupyter-logo-1.png" style="width:15%;float:right;"/>
-<img src="../../assets/images/logos/zeppelin-logo-1.png" style="width:15%;float:right;clear:both;"/>
-<img src="../../assets/images/logos/druid-logo-1.png" style="width:15%;float:right;clear:both;"/>
-<img src="../../assets/images/logos/presto-logo-1.png" style="width:15%;float:right;clear:both;"/>
+<img src="../../assets/images/logos/jupyter-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 8.97, "top" : 0.99, "height" : 1.25, "width" : 1.08} -->
+ 
+<img src="../../assets/images/logos/zeppelin-logo-1.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 8.14, "top" : 2.39, "height" : 1.02, "width" : 1.92} -->
+ 
+<img src="../../assets/images/logos/druid-logo-1.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 7.84, "top" : 3.78, "height" : 0.84, "width" : 2.22} -->
+ 
+<img src="../../assets/images/logos/presto-logo-1.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 8.22, "top" : 4.84, "height" : 0.84, "width" : 1.83} -->
+ 
 
 * Use optional components to install and configure additional components on the cluster.
 
@@ -214,11 +219,12 @@ Notes:
 |:-------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|
 | Copy your data to Google Cloud Storage(GCS) by installing the connector or by copying manually.   | Update the file location prefix in your scripts from  hdfs:// to gcs:// to access your data in GCS. | Create a Cloud Dataproc cluster and run your job on the cluster against the data you copied to GCS.  Done. |
 
+<!-- {"left" : 0.25, "top" : 1.65, "height" : 1.77, "width" : 9.75} -->
+
 ---
 
 ## Using Dataproc API
 
-<!-- TODO shiva -->
 ```bash 
 ## 1 master + 3 worker nodes
 $ gcloud dataproc clusters create cluster1 \
@@ -228,6 +234,7 @@ $ gcloud dataproc clusters create cluster1 \
      --worker-boot-disk-size 500 \
      --image-version 1.4
 ```
+<!-- {"left" : 0, "top" : 1.42, "height" : 1.91, "width" : 10.25} -->
 
 ```bash 
 ## installing optional components: Anaconda & Jupyter
@@ -239,6 +246,7 @@ $ gcloud dataproc clusters create cluster1 \
      --image-version 1.4 \
      --optional-components ANACONDA,JUPYTER
 ```
+<!-- {"left" : 0, "top" : 3.84, "height" : 2.15, "width" : 10.25} -->
 
 ---
 

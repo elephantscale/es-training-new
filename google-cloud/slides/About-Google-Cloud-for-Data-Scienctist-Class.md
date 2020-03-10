@@ -112,7 +112,8 @@ Notes:
 - [Google cloud tutorials](https://cloud.google.com/docs/tutorials)
 - [Google Cloud Platform examples on Github](https://github.com/GoogleCloudPlatform)
 
-<img src="../../assets/images/books/data-science-on-google-cloud.jpg" style="width:20%;" />
+<img src="../../assets/images/books/data-science-on-google-cloud.jpg" style="width:20%;" /><!-- {"left" : 3.72, "top" : 3.76, "height" : 3.68, "width" : 2.81} -->
+
 
 ---
 

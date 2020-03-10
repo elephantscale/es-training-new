@@ -1,6 +1,6 @@
 # Google App Engine
 
- <img src="../../assets/images/logos/google-app-engine-logo-1.png" style="white;width:40%;"/>   
+ <img src="../../assets/images/logos/google-app-engine-logo-1.png" style="white;width:30%;"/><!-- {"left" : 5.06, "top" : 6.42, "height" : 1.77, "width" : 2.27} -->
 
 
 
@@ -15,8 +15,7 @@
 
 ## App Engine Intro
 
- <!-- TODO shiva -->
- <img src="../../assets/images/logos/google-app-engine-logo-1.png" style="width:30%;float:right;"/>  
+ <img src="../../assets/images/logos/google-app-engine-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 7.57, "top" : 1.03, "height" : 2.13, "width" : 2.73} -->
 
 - App Engine is Google's application platform
 
@@ -98,12 +97,11 @@ Notes:
   - Node.js
   - Ruby
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/golang-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
-<img src="../../assets/images/logos/java-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
-<img src="../../assets/images/logos/php-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
-<img src="../../assets/images/logos/python-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
-<img src="../../assets/images/logos/nodejs-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/logos/golang-logo-1.png" style="width:15%;"/><!-- {"left" : 0.23, "top" : 5.38, "height" : 1.86, "width" : 1.86} --> &nbsp; &nbsp;
+<img src="../../assets/images/logos/java-logo-1.png" style="width:15%;"/><!-- {"left" : 1.68, "top" : 5.17, "height" : 2.19, "width" : 2.19} --> &nbsp; &nbsp;
+<img src="../../assets/images/logos/php-logo-1.png" style="width:15%;"/><!-- {"left" : 3.62, "top" : 5.47, "height" : 1.77, "width" : 1.77} --> &nbsp; &nbsp;
+<img src="../../assets/images/logos/python-logo-1.png" style="width:20%;"/><!-- {"left" : 5.59, "top" : 6.03, "height" : 0.74, "width" : 3.11} --> &nbsp; &nbsp;
+<img src="../../assets/images/logos/nodejs-logo-1.png" style="width:13%;"/><!-- {"left" : 8.7, "top" : 5.47, "height" : 1.49, "width" : 1.31} --> &nbsp; &nbsp;
 
 Notes:
 
@@ -121,8 +119,7 @@ Notes:
 
 - Python third-party libraries can also be used but must be uploaded with application source code
 
-<img src="../../assets/images/logos/django-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
-<img src="../../assets/images/logos/flask-logo-1.png" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/logos/django-logo-1.png" style="width:15%;"/><!-- {"left" : 1.46, "top" : 5.97, "height" : 1.25, "width" : 2.9} --> &nbsp; &nbsp;<img src="../../assets/images/logos/flask-logo-1.png" style="width:15%;"/> <!-- {"left" : 5.9, "top" : 5.74, "height" : 1.71, "width" : 2.28} -->
 
 
 Notes:
@@ -131,8 +128,7 @@ Notes:
 ---
 ## Components of an Application
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/app-engine-1.png" style="width:60%;float:right"/>   
+<img src="../../assets/images/google-cloud/3rd-party/app-engine-1.png" style="width:60%;float:right"/>   <!-- {"left" : 5.54, "top" : 1.49, "height" : 1.96, "width" : 4.68} -->
 
 - An application resource is tied to a specific Google Cloud Project
 
@@ -272,7 +268,9 @@ Notes:
   - Cloud SQL for Relational
   - Cloud Storage to write files, read, store static files in the runtime environment
 
-<img src="../../assets/images/google-cloud/app-storage-1.png" style="width:45%;"/>
+<img src="../../assets/images/google-cloud/app-storage-1.png" style="width:45%;"/><!-- {"left" : 1.02, "top" : 4.87, "height" : 3.3, "width" : 8.21} -->
+
+
 
 Notes:
 

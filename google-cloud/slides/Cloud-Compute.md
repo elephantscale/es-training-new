@@ -15,11 +15,11 @@
 
 * Wide variety of machine types for various work loads
 
-* Preemptible VMs : Low-cost, short-term instances for fault tolerant workloads
+* Preemptible VMs: Low-cost, short-term instances for fault tolerant workloads
 
 * GPU: For computationally intensive workloads like machine learning
 
-* OS of choice : Linux, Windows
+* OS of choice: Linux, Windows
 
 * Billing per second usage
 
@@ -28,10 +28,11 @@
 Notes:
 
 ---
+
 ## Google Compute Engine 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/google-compute-1.png" style="width:80%;" />
+<img src="../../assets/images/google-cloud/google-compute-1.png" style="width:80%;" /><!-- {"left" : 0.76, "top" : 1.28, "height" : 2.44, "width" : 8.72} -->
+
 
 * Can rent virtual machines and manage them ourselves
 
@@ -201,7 +202,7 @@ Notes:
     - 5 minutes
 
 * **Instructions:**
-    - Go to : https://cloud.google.com/compute/all-pricing
+    - Go to: https://cloud.google.com/compute/all-pricing
     - Calculate cost per day / month for the following
     - A db instance with 8 CPU core and 32 G memory
 
@@ -212,7 +213,7 @@ Notes:
 
 ## Cloud Compute Command Reference 
 
-- Reference : https://cloud.google.com/sdk/gcloud/reference/compute/
+- Reference: https://cloud.google.com/sdk/gcloud/reference/compute/
 
 ```bash 
 
@@ -234,6 +235,7 @@ $  gcloud compute instances create my_instance_name
   --image-project=deeplearning-platform-release
 
 ```
+<!-- {"left" : 0, "top" : 2.35, "height" : 4.94, "width" : 9.28} -->
 
 ---
 

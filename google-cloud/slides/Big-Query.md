@@ -1,7 +1,7 @@
 # Google Big Query
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/google-big-query-logo-1.png" style="width:50%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/logos/google-big-query-logo-1.png" style="width:50%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+  
 
 ---
 

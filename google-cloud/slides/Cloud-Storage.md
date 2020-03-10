@@ -31,7 +31,7 @@
 * The data can be transferred from 'storage' to 'compute' nodes very fast; over high speed network
 
 
-<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:50%;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:45%;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
 
 
 ---
@@ -40,7 +40,7 @@
 <img src="../../assets/images/google-cloud/3rd-party/google-cloud-storage-classes-1.png" style="width:80%;"/>  <!-- {"left" : 1.04, "top" : 1.25, "height" : 4.03, "width" : 8.17} -->  
 
 
-- Source : https://cloud.google.com/storage/
+- Source: https://cloud.google.com/storage/
 
 ---
 
@@ -160,9 +160,9 @@ Notes:
 
 ## Cloud Storage Utility Reference
 
-* The Cloud Storage utility is : __`gsutil`__
+* The Cloud Storage utility is: __`gsutil`__
 
-* Reference : https://cloud.google.com/storage/docs/gsutil
+* Reference: https://cloud.google.com/storage/docs/gsutil
 
 * The following commands can work on Cloud Shell (recommended) or your laptop (if setup correctly)
 
@@ -213,7 +213,7 @@ $   gsutil  cp  'gs://bucket_name/flights/*' .
 Notes:
 
 ---
-## Lab : Scheduling Data Ingest
+## Lab: Scheduling Data Ingest
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
