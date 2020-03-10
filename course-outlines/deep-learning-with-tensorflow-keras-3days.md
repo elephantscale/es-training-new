@@ -38,13 +38,10 @@ We will study and solve some of most common industry use cases; listed below
   - Predicting diabetes outcome
 * Customer service
   - Predicting customer turnover
-* Text analytics
-  - Telecom: Determining if a text message is a spam
-  - Natural language processing (NLP)
-  - Sentiment analysis of Tweets
-  - IMDB Movie ratings and reviews analysis
 * Computer vision
   - Various image analysis
+* Time series
+  - Analyze stock behavior
 
 ## Prerequisites
 - Basic knowledge of Python language and Jupyter notebooks is assumed.  
