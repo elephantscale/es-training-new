@@ -30,14 +30,13 @@
 keras/Keras-1__Intro.md
 
 
-## Reference only
-
 ## Introduce Neural Networks
 ./generic/DL-Neural-Networks.md
 
 ## Get some theory
 generic/DL-Concepts.md
 
+keras/Keras-2__API.md
 
 
 ## CNN
