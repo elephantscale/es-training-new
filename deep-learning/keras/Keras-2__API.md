@@ -816,7 +816,7 @@ plt.show()
 ```
 <!-- {"left" : 0, "top" : 1.11, "height" : 3.18, "width" : 8.61} -->
 
-<img src="../../assets/images/deep-learning/viz-loss1.png" alt="XXX image missing" width="38%" style="background:white;"/><!-- {"left" : 2.78, "top" : 4.77, "height" : 3.5, "width" : 4.69} -->
+<img src="../../assets/images/deep-learning/viz-loss1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 2.78, "top" : 4.77, "height" : 3.5, "width" : 4.69} -->
 
 
 ---
