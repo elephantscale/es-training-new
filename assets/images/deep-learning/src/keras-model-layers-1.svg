@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="1087 591 990 525" width="990" height="525">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#6a2dcd">
+      <g>
+        <path d="M -2.5142857 0 L 0 .9428571 L 0 -.9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-03-11 10:55:17 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke="none" fill-opacity="1" fill="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_15">
+        <path d="M 1103.4697 594.0041 L 2060.5303 594.0041 C 2067.71 594.0041 2073.5303 599.8244 2073.5303 607.0041 L 2073.5303 958.9959 C 2073.5303 966.1756 2067.71 971.9959 2060.5303 971.9959 L 1103.4697 971.9959 C 1096.29 971.9959 1090.4697 966.1756 1090.4697 958.9959 L 1090.4697 607.0041 C 1090.4697 599.8244 1096.29 594.0041 1103.4697 594.0041 Z" fill="white"/>
+        <path d="M 1103.4697 594.0041 L 2060.5303 594.0041 C 2067.71 594.0041 2073.5303 599.8244 2073.5303 607.0041 L 2073.5303 958.9959 C 2073.5303 966.1756 2067.71 971.9959 2060.5303 971.9959 L 1103.4697 971.9959 C 1096.29 971.9959 1090.4697 966.1756 1090.4697 958.9959 L 1090.4697 607.0041 C 1090.4697 599.8244 1096.29 594.0041 1103.4697 594.0041 Z" stroke="#410078" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Group_20">
+        <g id="Graphic_5">
+          <path d="M 1225.1425 667.266 L 1302.9562 667.266 L 1356.9372 782.8554 L 1302.7522 898.5685 L 1223.7961 898.5685 L 1282.1624 782.733 Z" fill="#ecdea4"/>
+          <path d="M 1225.1425 667.266 L 1302.9562 667.266 L 1356.9372 782.8554 L 1302.7522 898.5685 L 1223.7961 898.5685 L 1282.1624 782.733 Z" stroke="#4700bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_12">
+          <path d="M 1365.8712 667.2689 L 1443.685 667.2689 L 1497.666 782.8583 L 1443.481 898.5714 L 1364.525 898.5714 L 1422.8912 782.7359 Z" fill="#ecdea4"/>
+          <path d="M 1365.8712 667.2689 L 1443.685 667.2689 L 1497.666 782.8583 L 1443.481 898.5714 L 1364.525 898.5714 L 1422.8912 782.7359 Z" stroke="#4700bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_13">
+          <path d="M 1662.431 667.266 L 1740.2447 667.266 L 1794.2257 782.8554 L 1740.0407 898.5685 L 1661.0847 898.5685 L 1719.4509 782.733 Z" fill="#ecdea4"/>
+          <path d="M 1662.431 667.266 L 1740.2447 667.266 L 1794.2257 782.8554 L 1740.0407 898.5685 L 1661.0847 898.5685 L 1719.4509 782.733 Z" stroke="#4700bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_14">
+          <path d="M 1808.4091 667.266 L 1886.2228 667.266 L 1940.2039 782.8554 L 1886.0188 898.5685 L 1807.0628 898.5685 L 1865.429 782.733 Z" fill="#ecdea4"/>
+          <path d="M 1808.4091 667.266 L 1886.2228 667.266 L 1940.2039 782.8554 L 1886.0188 898.5685 L 1807.0628 898.5685 L 1865.429 782.733 Z" stroke="#4700bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(1530.3984 758.5)" fill="#3b0083">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#3b0083" x="0" y="40">Model</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(1530.3984 1062)" fill="#3b0083">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#3b0083" x="0" y="40">Layers</tspan>
+        </text>
+      </g>
+      <g id="Line_18">
+        <line x1="1846.5424" y1="914.58" x2="1612.3077" y2="1058.1509" marker-start="url(#FilledArrow_Marker)" stroke="#6a2dcd" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_19">
+        <line x1="1273.1729" y1="911.7311" x2="1544.0216" y2="1056.6124" marker-start="url(#FilledArrow_Marker)" stroke="#6a2dcd" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+    </g>
+  </g>
+</svg>
