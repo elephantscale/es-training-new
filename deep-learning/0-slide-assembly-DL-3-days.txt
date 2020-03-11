@@ -13,6 +13,9 @@
 ## About
 ./generic/About-Deep-Learning-Class.md
 
+## Resources
+../machine-learning/generic/ML-Resources.md
+
 ## ML Intro
 ../machine-learning/generic/Machine-Learning-Primer.md
 
@@ -28,7 +31,6 @@ keras/Keras-1__Intro.md
 
 
 ## Reference only
-../machine-learning/generic/ML-Concepts-All.md
 
 ## Introduce Neural Networks
 ./generic/DL-Neural-Networks.md
@@ -36,9 +38,6 @@ keras/Keras-1__Intro.md
 ## Get some theory
 generic/DL-Concepts.md
 
-
-# Introduce TensorFlow Playground
-./generic/DL-Playground.md
 
 
 ## CNN
@@ -50,3 +49,10 @@ generic/DL-Concepts.md
 
 ## TransferLearning
 ./generic/DL-Transfer-Learning.md
+
+## ---- Reference only ----
+# TensorFlow Playground
+./generic/DL-Playground.md
+
+## ML-Concepts
+../machine-learning/generic/ML-Concepts-All.md
