@@ -78,11 +78,11 @@ Notes:
 
 - Imagine you are at restaurant, but you and the waitstaff don't speak the same language (remember they are aliens!)
 
-- You tell them what you want (_"I want a burger, well done"_)
+- You tell them what you want (_"I want a cheese pizza"_)
 
 - The kitchen will try to make your meal and bring it out
 
-- If it is not to your liking, you send it back with feedback (_"meat is not cooked well"_,  _"I need more avocado"_ ..etc)
+- If it is not to your liking, you send it back with feedback (_"it is not cooked well"_,  _"it needs more sauce"_ ..etc)
 
 - You keep sending the meal back until they get your order right!
 
@@ -288,7 +288,7 @@ Notes:
  * And the network weights are adjusted accordingly to minimize the error
 
 
-<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:60%;"/><!-- {"left" : 1.44, "top" : 3.78, "height" : 4.13, "width" : 7.36} -->
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:50%;"/><!-- {"left" : 1.44, "top" : 3.78, "height" : 4.13, "width" : 7.36} -->
 
 
 ---
@@ -338,7 +338,7 @@ Notes:
 
  * And finally slightly tweaks the connection weights to reduce the error (Gradient Descent step).
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:50%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:40%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
 
 
 Notes:  
@@ -406,7 +406,7 @@ Notes:
     - Measure validation accuracy every few steps (say 20)
     - If it scores higher than previous snapshot, save the current model snapshot as 'winner'
 
-<img src="../../assets/images/deep-learning/early-stopping-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 2.69, "top" : 4.86, "height" : 3.26, "width" : 4.88} -->
+<img src="../../assets/images/deep-learning/early-stopping-1.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.69, "top" : 4.86, "height" : 3.26, "width" : 4.88} -->
 
 
 ---
@@ -591,7 +591,7 @@ Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/librar
 ## Xe Initialization Parameters
 
 
-<img src="../../assets/images/deep-learning/xavier-init-params.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.43, "top" : 1.39, "height" : 4.99, "width" : 9.39} -->
+<img src="../../assets/images/deep-learning/xavier-init-params.png" alt="XXX image missing" style="width:90%;"/><!-- {"left" : 0.43, "top" : 1.39, "height" : 4.99, "width" : 9.39} -->
 
 
 
