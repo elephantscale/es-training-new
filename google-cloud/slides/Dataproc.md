@@ -160,17 +160,11 @@ Notes:
    - E.g. Run `install-hbase.sh` during initialization
 
 ---
+
 ## Dataproc Features
 
-<img src="../../assets/images/logos/jupyter-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 8.97, "top" : 0.99, "height" : 1.25, "width" : 1.08} -->
+<img src="../../assets/images/google-cloud/3rd-party/Dataproc-Features.png" style="width:20%;float:right;"/> <!-- {"left" : 7.95, "top" : 1.31, "height" : 4.72, "width" : 2.24} -->
  
-<img src="../../assets/images/logos/zeppelin-logo-1.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 8.14, "top" : 2.39, "height" : 1.02, "width" : 1.92} -->
- 
-<img src="../../assets/images/logos/druid-logo-1.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 7.84, "top" : 3.78, "height" : 0.84, "width" : 2.22} -->
- 
-<img src="../../assets/images/logos/presto-logo-1.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 8.22, "top" : 4.84, "height" : 0.84, "width" : 1.83} -->
- 
-
 * Use optional components to install and configure additional components on the cluster.
 
 * Optional components are integrated with Dataproc components and fully configured and functional
