@@ -17,6 +17,8 @@ Tensorflow Intro
 =====
 - DL Concepts
     - flow isn't smooth
+    
+    - TODO : a diagram on illustrating where activation function is used
 
     - add a basic training data flow
 

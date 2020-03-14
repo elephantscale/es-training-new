@@ -7,10 +7,10 @@ Execute these from within 'es-reveal-md' docker
    $   cd slides;   
 
    # generate md assembly
-   $  ./gen.sh  
+   $  ./gen-tf2.sh  
 
    # to generate pdf & pptx
-   $  ./gen.sh  pdf  pptx
+   $  ./gen-tf2.sh  pdf  pptx
 ```
 
 ## To generate course outline

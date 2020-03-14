@@ -1,9 +1,9 @@
 ## To Make slides
-##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-DL-3-days.txt
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-DL-tf2-3-days.txt
 ## (-d will cleanup  current assembly.out)
 
 ## To Make pdfs, supply pdf arg at the end
-##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-3-days.txt  pdf
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-tf2-3-days.txt  pdf
 ## (-d will cleanup  current assembly.out)
 
 
@@ -24,7 +24,7 @@
 
 
 ## TensorFlow
-./tensorflow/TENSORFLOW-Intro.md
+./tf2/Tensorflow-Intro.md
 
 # Keras
 keras/Keras-1__Intro.md
@@ -50,6 +50,7 @@ keras/Keras-2__API.md
 ./generic/DL-Transfer-Learning.md
 
 ## ---- Reference only ----
+
 # TensorFlow Playground
 ./generic/DL-Playground.md
 
