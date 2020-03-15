@@ -95,7 +95,7 @@ model = keras.Sequential([
 * Finally we create your model from inputs and outputs:
 * Model is a __sequence of layers__
 
-<img src="../../assets/images/deep-learning/regression-house-prices-model-viz-1.png"  style="width:30%;float:right;"/><!-- {"left" : 7.02, "top" : 1.09, "height" : 2.84, "width" : 3.11} -->
+<img src="../../assets/images/deep-learning/keras-model-viz-1.png"  style="width:30%;float:right;"/><!-- {"left" : 7.02, "top" : 1.09, "height" : 2.84, "width" : 3.11} -->
 
 ```python
 from tensorflow import keras
@@ -1202,6 +1202,169 @@ Notes:
 
 ---
 
+# Metrics
+
+---
+
+## Metrics - Console
+
+* During training metrics are printed out on console
+* Controlled by __`verbose`__ flag
+    - verbose=0 : silent
+    - verbose=1 : progress bar
+    - verbose=2 : one line per epoch
+* Pros:
+    - Easy to understand
+    - No extra setup required
+* Cons:
+    - Can get verbose
+    - If we are doing 100s of epochs, it can clutter the program output
+
+```python
+model.fit (x_test, y_test, verbose=1)
+```
+
+```text
+Train on 96 samples, validate on 24 samples
+
+Epoch   1/100 [==============================] - loss: 2.1204 - accuracy: 0.9023
+...
+...
+Epoch 100/100 [==============================] - loss: 0.2375 - accuracy: 0.9583
+```
+
+---
+
+## Metrics - History
+
+* The __`fit()`__ method on a Keras Model returns a __`History`__ object.
+
+* The __`History.history`__ attribute is a dictionary recording training loss values and metrics values at successive epochs
+
+```python
+# training
+history = model.fit (x_test, y_test, verbose=1)
+
+# plot
+plt.plot(history.history['acc'])
+if 'val_acc' in history.history:
+     plt.plot(history.history['val_acc'])
+# ...
+plt.show()
+```
+
+<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 2.72, "top" : 4.76, "height" : 3.59, "width" : 4.82} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 2.78, "top" : 4.77, "height" : 3.5, "width" : 4.69} -->
+
+---
+
+## Metrics - History
+
+* Pros:
+    - Better visualization than plain text
+    - Just takes a few extra lines of code
+
+* Cons:
+    - History object available __only after__ the training is __complete__
+    - So we won't
+
+<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 2.72, "top" : 4.76, "height" : 3.59, "width" : 4.82} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 2.78, "top" : 4.77, "height" : 3.5, "width" : 4.69} -->
+
+---
+
+# TensorBoard
+
+---
+
+## TensorBoard
+
+* [TensorBoard](https://www.tensorflow.org/tensorboard) is a tool for visualizing machine learning
+
+* It is part of TensorFlow library
+
+* TB features:
+    - Tracking and visualizing metrics such as loss and accuracy
+    - Visualizing the model graph (ops and layers)
+    - Viewing histograms of weights, biases, or other tensors as they change over time
+    - Projecting embeddings to a lower dimensional space
+    - Displaying images, text, and audio data
+    - Profiling TensorFlow programs
+
+* See next slide for animation
+
+---
+
+## TensorBoard
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/deep-learning/3rd-party/tensorboard.gif" style="width:60%;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
+
+[Image source](https://www.tensorflow.org/tensorboard/images/tensorboard.gif)
+
+
+---
+
+## Keras and TensorBoard
+
+<img src="../../assets/images/deep-learning/tensorboard-keras.png" alt="tensorboard-keras.png" style="width:70%;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
+
+---
+
+## Setting up TensorBoard
+
+```bash
+## Step 1: Run Tensorboard app - it will be monitoring a logs directory
+$   tensorboard --logdir=/tmp/tensorboard-logs
+```
+
+```python
+## Step 2: Setup Tensorboard in our application
+import datetime
+import os
+
+app_name = 'classification-iris-1' # you can change this, if you like
+
+tb_top_level_dir= '/tmp/tensorboard-logs' # this is the top level log dir
+
+# Create an 'app dir' within logdir
+tensorboard_logs_dir= os.path.join (tb_top_level_dir, app_name,
+                                    datetime.datetime.now().strftime("%Y-%m-%d--%H-%M-%S"))
+print ("Saving TB logs to : " , tensorboard_logs_dir)
+# Saving TB logs to :  /tmp/tensorboard-logs/classification-iris-1/2020-02-05--18-47-10
+```
+
+```python
+## Step 3: provide tb-callback function during training
+tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=tensorboard_logs_dir, histogram_freq=1)
+```
+---
+
+## TensorBoard Log Directory
+
+<!-- TODO shiva  -->
+
+<img src="../../assets/images/deep-learning/tensorboard-2.png" style="width:60%;float:right;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
+
+* Each application will write their own directory within logs directory
+
+* It is also recommended, that each run is its own directory;  so we can compare runs
+
+* Each run is timestamped
+
+* Here we see two runs of __'app1'__; check timestamps
+
+
+```text
+tensorboard-logs/
+├── app1__2020-01-01--12-30-10
+├── app1__2020-01-01--12-32-30
+└── app2__2020-01-01--12-33-00
+
+```
+
+---
 
 # Classifications with NNs
 
@@ -1493,7 +1656,7 @@ history = model.fit( x_train, y_train,
 
 ---
 
-## Keras and Tensorboard
+## TensorBoard Visualization
 
 <img src="../../assets/images/deep-learning/tensorboard-keras.png" alt="tensorboard-keras.png" style="width:70%;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
 
