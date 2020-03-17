@@ -1365,6 +1365,25 @@ tensorboard-logs/
 ```
 
 ---
+## Lab: Using TensorBoard
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Incorporate TensorBoard into NN
+
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - Please follow instructions for
+        - **Metrics-1:** Multiple metrics
+        - **Metrics-2:** TensorBoard
+
+Notes:
+
+---
 
 # Classifications with NNs
 
