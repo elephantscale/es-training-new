@@ -572,7 +572,7 @@ Notes:
 
 ## Sizing Multi Classification Network
 
-<img src="../../assets/images/deep-learning/LowLevel-mnist.jpeg" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 7.38, "top" : 1.05, "height" : 1.81, "width" : 2.73} -->
+<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 7.38, "top" : 1.05, "height" : 1.81, "width" : 2.73} -->
 
 <img src="../../assets/images/deep-learning/network-sizing-3-multi-classification.png" alt="XXX image missing" style="width:50%;float:right;clear:both;"/><!-- {"left" : 5.87, "top" : 3.63, "height" : 1.63, "width" : 4.22} -->
 
