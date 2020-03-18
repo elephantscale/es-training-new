@@ -40,7 +40,7 @@ keras/Keras-2__API.md
 
 
 ## CNN
-./generic/DL-CNNs.md
+./tf2/Tensorflow-CNN.md
 
 ## RNN
 ./generic/DL-RNNs.md
