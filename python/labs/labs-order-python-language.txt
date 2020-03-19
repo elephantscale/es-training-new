@@ -20,12 +20,11 @@ $ES_HOME/python-labs/numpy
 
 ## Pandas
 
-$ES_HOME/python-labs/numpy
+$ES_HOME/python-labs/pandas
 
 ## Visualization
 
 $ES_HOME/python-labs/visualization
-#$ES_HOME/utils/labs/labs-assembler.sh labs-order-1day-apple.txt
 
 #Images, data, etc
 
