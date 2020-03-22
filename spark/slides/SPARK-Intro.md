@@ -1,10 +1,12 @@
 # Spark Introduction
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+
 
 ---
 
 ## Objectives
+
 * Learn about Spark ecosystem
 * Understand Spark use cases
 * Installing and running Spark
@@ -18,18 +20,19 @@
 
 ## Big Data V1: Hadoop
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/hadoop-logo-1.png" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/hadoop-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.31, "top" : 0.97, "height" : 0.66, "width" : 2.83} -->
+
 
 * Hadoop was the first Big Data platform to be widely adopted
 
 * Hadoop has three main components
+
     - Storage: **HDFS** - Store huge amount of data in a distributed fashion
     - Operating System: **YARN** - manage the cluster
     - Processing: **MapReduce Engine** - distributed computing
 
-<!-- TODO shiva -->
-<img src="../../assets/images/hadoop/hadoop-1.png" style="width:50%;" />
+<img src="../../assets/images/hadoop/hadoop-1.png" style="width:50%;" /><!-- {"left" : 2.02, "top" : 5.6, "height" : 2.98, "width" : 6.21} -->
+
 
 
 Notes:
@@ -38,8 +41,8 @@ Notes:
 
 ## MapReduce Engine
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/hadoop-mapreduce-logo-1.png" style="width:40%;float:right;" />
+<img src="../../assets/images/logos/hadoop-mapreduce-logo-1.png" style="width:40%;float:right;" /><!-- {"left" : 6.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
 
 * MapReduce was state of the art around 2008
 
@@ -60,8 +63,8 @@ Notes:
 ## Spark
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.11, "top" : 1.11, "height" : 1.01, "width" : 1.91} -->
+
 
 * [Spark](https://spark.apache.org) is an **open Source distributed computing engine**
     - Very fast: On-disk ops are **10x** faster than MR
@@ -127,14 +130,8 @@ Notes:
 | 2.4     | 2020-01      | Stable v2 release      |
 | 3.0     | 2020 Q2      | V3 release             |
 
-Notes:
+<!-- {"left" : 0.25, "top" : 1.5, "height" : 3, "width" : 9.75} -->
 
----
-
-## Spark Components
-
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" />
 
 Notes:
 
@@ -142,21 +139,30 @@ Notes:
 
 ## Spark Components
 
-* __Data Storage__: Pluggable data storage systems
+<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+
+Notes:
+
+---
+
+## Spark Components
+
+* __Data Storage:__ Pluggable data storage systems
     - Integrates with HDFS, S3, Cassandra DB, and more
 
-* __Cluster Manager__: Manages distributed node clusters
+* __Cluster Manager:__ Manages distributed node clusters
     - Provides the distributed execution environment
     - Works with Mesos, Yarn, and its own standalone manager
 
-* __Spark Core__: Distributed computing engine
+* __Spark Core:__ Distributed computing engine
 
 
 Notes:
 
 ---
 
-## Spark Components : Core
+## Spark Components: Core
 
 * **Core** has basic building blocks for distributed computing engine
 
@@ -178,19 +184,19 @@ Notes:
 
 ## Spark Components
 
-* __Spark SQL__: Analyze structured data
+* __Spark SQL:__ Analyze structured data
     - Supports SQL and HQL (Hive Query Language)
     - Data sources include Hive tables, JSON, CSV, Parquet
 
-* __Spark Streaming__: Live streams of data in real-time
+* __Spark Streaming:__ Live streams of data in real-time
     - Low latency, high throughput (1000s events per second)
     - Log files, stock ticks, sensor data, IOT (Internet of Things)
 
-* __Spark ML__: Machine Learning at scale
+* __Spark ML:__ Machine Learning at scale
     - Classification/regression, collaborative filtering
     - Model evaluation and data import
 
-* __GraphX / GraphFrames__: Graph manipulation, graph-parallel computation
+* __GraphX / GraphFrames:__ Graph manipulation, graph-parallel computation
     - Social network friendships, link data
     - Graph manipulation, operations, and common algorithms
 
@@ -215,8 +221,7 @@ Notes:
 
 ## Spark Use Cases
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/teralytics-logo-1.jpg" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/teralytics-logo-1.jpg" style="width:30%;float:right;" /><!-- {"left" : 8.22, "top" : 0.96, "height" : 0.83, "width" : 1.99} -->
 
 * Teralytics (Telco data)
     - Processing cell phone events
@@ -225,8 +230,7 @@ Notes:
     - Estimating usage patterns to enhance coverage (sporting events, commuting, etc.)
     - Source: [1](http://bigdatausecases.info/entry/origin-destination-matrix-using-mobile-network-data-with-spark), [2](https://databricks.com/session/origin-destination-matrix-using-mobile-network-data-with-spark)
 
-<br clear="all" />
-<img src="../../assets/images/logos/yahoo-logo-1.png" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/yahoo-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.35, "top" : 4.29, "height" : 0.49, "width" : 1.85} -->
 
 * Spark at Yahoo
     - News personalization
@@ -239,8 +243,7 @@ Notes:
 
 ## Spark Use Cases
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/netflix-logo-1.png" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/netflix-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.43, "top" : 1.09, "height" : 1.21, "width" : 2.63} -->
 
 * Netflix
     - Recommendations using Spark + Cassandra
@@ -254,22 +257,23 @@ Notes:
 
 ## Spark at Large Scale
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/tencent-logo-1.png" style="width:15%;float:right;" />
+<img src="../../assets/images/logos/tencent-logo-1.png" style="width:15%;float:right;" /><!-- {"left" : 8.59, "top" : 1.02, "height" : 0.91, "width" : 1.58} -->
+
 
 * Tencent (Social network in China)
   - 8000 nodes
   - 400 TB+ data
 
 <br clear="all"/>  
-<img src="../../assets/images/logos/alibaba-logo-1.png" style="width:20%;float:right;" />
+<img src="../../assets/images/logos/alibaba-logo-1.png" style="width:20%;float:right;" /><!-- {"left" : 7.72, "top" : 2.86, "height" : 0.5, "width" : 2.52} -->
 
 * Alibaba (largest e-commerce site in China)
   - 1 PB scale processing
   - Large scale image processing
 
 <br clear="all"/>  
-<img src="../../assets/images/logos/janelia-logo-1.png" style="width:20%;float:right;" />
+<img src="../../assets/images/logos/janelia-logo-1.png" style="width:20%;float:right;" /><!-- {"left" : 7.96, "top" : 4.01, "height" : 0.91, "width" : 2.16} -->
+
 * Streaming @ Jenelia Farm
   - 1 TB per hour
   - Analyze medical images
@@ -294,14 +298,15 @@ Notes:
 | Version 3 | 2019 |                                            |
 |           | 2020 | Version 3                                  |
 
+<!-- {"left" : 0.25, "top" : 1.32, "height" : 5.19, "width" : 9.75} -->
 
 ---
 
 ## Hadoop vs. Spark
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/hadoop-vs-spark-1.png" style="width:50%;" />
+<img src="../../assets/images/spark/hadoop-vs-spark-1.png" style="width:50%;" /><!-- {"left" : 1.65, "top" : 1.45, "height" : 5.17, "width" : 6.94} -->
+
 
 [Video](https://www.youtube.com/watch?v=qfv6Ah_MVJU)
 
@@ -309,8 +314,8 @@ Notes:
 
 ## Spark vs. MapReduce
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/3rd-party/mapreduce-vs-spark-1.png" style="width:70%;" />
+<img src="../../assets/images/spark/3rd-party/mapreduce-vs-spark-1.png" style="width:70%;" /><!-- {"left" : 0.66, "top" : 1.53, "height" : 6.02, "width" : 8.93} -->
+
 
 ---
 
@@ -336,8 +341,9 @@ Notes:
     - http://sortbenchmark.org/
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/3rd-party/spark-vs-mapreduce-benchmark-1.png" style="width:70%;" />
+<img src="../../assets/images/spark/3rd-party/spark-vs-mapreduce-benchmark-1.png" style="width:70%;" /><!-- {"left" : 1.02, "top" : 3.48, "height" : 4.52, "width" : 8.21} -->
+
+
 
 ---
 
@@ -345,10 +351,11 @@ Notes:
 
 * Spark is a better distributed engine the MapReduce
 
-* Works well with Hadoop components : HDFS, YARN and Hive
+* Works well with Hadoop components: HDFS, YARN and Hive
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/spark-and-hadoop-2.png" style="width:90%;" />
+<img src="../../assets/images/spark/spark-and-hadoop-2.png" style="width:90%;" /><!-- {"left" : 0.48, "top" : 3.29, "height" : 3.07, "width" : 9.29} -->
+
+
 
 ---
 
@@ -368,18 +375,17 @@ Notes:
 
 <br clear="all" />
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/databricks-logo-1.png" style="width:20%;" /> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/databricks-logo-1.png" style="width:20%;" /><!-- {"left" : 0.32, "top" : 5.52, "height" : 0.37, "width" : 2.19} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 3, "top" : 5.35, "height" : 0.71, "width" : 2.17} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 5.56, "top" : 5.38, "height" : 0.63, "width" : 1.68} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 7.63, "top" : 5.35, "height" : 0.71, "width" : 2.46} -->
 
 ---
 
 ## Databricks
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/3rd-party/databricks-gartner-1.png" style="width:50%;float:right;clear:both;" />
+<img src="../../assets/images/spark/3rd-party/databricks-gartner-1.png" style="width:50%;float:right;clear:both;" /><!-- {"left" : 5.84, "top" : 1.09, "height" : 4.5, "width" : 4.4} -->
+
 
 * Founded by Spark's founders
 
@@ -387,16 +393,16 @@ Notes:
 
 * Also provides hosted Spark platform (**Databricks Cloud**)
 
-* Databricks is recognized as a leading provider for Data Analytics and Machine Learning platform  (Source : [Gartner report](https://databricks.com/p/whitepaper/gartner-magic-quadrant-2020-data-science-machine-learning))
+* Databricks is recognized as a leading provider for Data Analytics and Machine Learning platform  (Source: [Gartner report](https://databricks.com/p/whitepaper/gartner-magic-quadrant-2020-data-science-machine-learning))
 
-<img src="../../assets/images/logos/databricks-logo-1.png" style="width:30%;float:left;" />
+<img src="../../assets/images/logos/databricks-logo-1.png" style="width:30%;float:left;" /><!-- {"left" : 0.6, "top" : 7.87, "height" : 0.56, "width" : 3.28} -->
+
 
 ---
 
 ## Databricks Cloud
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/3rd-party/databricks-cloud-1.png" style="width:60%;float:right;" />
+<img src="../../assets/images/spark/3rd-party/databricks-cloud-1.png" style="width:60%;float:right;" /><!-- {"left" : 5.58, "top" : 1.26, "height" : 2.8, "width" : 4.34} -->
 
 * A hosted platform of Spark
 
@@ -428,6 +434,7 @@ Notes:
 | CPU      | 2+ core                           | 12+ core                                                          |
 | Memory   | 4+ G                              | 256+ G                                                            |
 | Disk     | - Single spindle <br/> - Few gigs | - Multiple spindles <br /> - Several Terabytes per node <br /> -  |
+
 
 ---
 ## Lab: Doing XYZ

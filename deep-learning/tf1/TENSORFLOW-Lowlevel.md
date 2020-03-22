@@ -801,7 +801,7 @@ Notes:
   * It is often used as a hello world example for Deep Learning.
 
 
-<img src="../../assets/images/deep-learning/LowLevel-mnist.jpeg" alt="XXX image missing" style="background:white;max-width:100%;width:50%;" /><!-- {"left" : 2, "top" : 3.45, "height" : 4.14, "width" : 6.25} -->
+<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;width:50%;" /><!-- {"left" : 2, "top" : 3.45, "height" : 4.14, "width" : 6.25} -->
 
 Notes: 
 

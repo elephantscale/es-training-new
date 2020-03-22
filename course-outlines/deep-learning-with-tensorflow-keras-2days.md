@@ -14,7 +14,6 @@ This course introduces Deep Learning concepts and TensorFlow and Keras libraries
 - We will build neural networks to solve the following problems
   - Regression
   - Classification
-  - Computer vision / Image analytics
 
 
 ## Duration:
@@ -36,8 +35,6 @@ We will study and solve some of most common industry use cases; listed below
   - Predicting diabetes outcome
 * Customer service
   - Predicting customer turnover
-* Computer vision
-  - Various image analysis
 
 ## Prerequisites
 - Basic knowledge of Python language and Jupyter notebooks is assumed.  
@@ -94,9 +91,6 @@ Even if you haven't done any Python programming, Python is such an easy language
 - Sizing neural networks
 - Lab: Feedforward Neural Networks
   
-### Section 6: Computer Vision
-- Introducing Convolutional Neural Networks (CNN)
-- CNN architecture
-- CNN concepts
-- Lab: Image recognition using CNNs
-
+### Applying NNs
+- Lab : Solving classification / regression problems with DN
+- Lab : CPU vs GPU benchmark

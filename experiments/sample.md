@@ -65,7 +65,7 @@ plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
 ```
-<img src="../assets/images/deep-learning/viz-accuracy1.png" alt="XXX image missing" width="40%" style="background:white;"/>
+<img src="../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="40%" style="background:white;"/>
 
 ---
 

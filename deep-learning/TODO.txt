@@ -5,18 +5,20 @@ see 'generic/DL-TODO.txt'
 Ml Intro
     -  machien learning methodology
     - dupe walmart slide
-    - 
-    
+    -
+
 ======
 
-Tensorflow Intro 
-    - lab example of regression 
-    
+Tensorflow Intro
+    - lab example of regression
+
     - lab holder
-    
+
 =====
 - DL Concepts
     - flow isn't smooth
+    
+    - TODO : a diagram on illustrating where activation function is used
 
     - add a basic training data flow
 
@@ -38,18 +40,20 @@ Tensorflow Intro
     - Add a quiz at the end
 
     - do part-1 and part-2
-    
+
+    - lab place holders at the end of part 1
+
 =======
 
-DL-Neural Net 
+DL-Neural Net
     - expand on network sizing, wiht examples on regression, binary classification, softmax
 
 
 
 =====
-KERAS Intro 
-    - insert lab 
-    
+KERAS Intro
+    - insert lab
+
     - optimizes revisit and make sure we have the correct api and text  ("adam")
 
     - keras example of regression and classification
@@ -80,3 +84,10 @@ DL-LSTMs.md
 deep-learning-labs
     - add model.plot to all notebooks
     - fix first hidden layer being called 'input_layer'
+
+=====
+
+DL-CNN
+    - picture to illustrate convolution : scanning a painting with a flashlight.  Identifying features (oh I see a sword, I see a horse)
+
+    - each neuron getting good at identifying features, like workers in the McDonald assembly line only do one thing (toast buns, put a burger patty on top, butter the buns ..etc)

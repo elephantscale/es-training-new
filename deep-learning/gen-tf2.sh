@@ -9,4 +9,4 @@ pandoc deep-learning-with-tensorflow-keras-3days.md  -o deep-learning-with-tenso
 pandoc deep-learning-with-tensorflow-keras-3days.md  -o deep-learning-with-tensorflow-keras-3days.pdf
 
 
-$ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-3-days.txt $@
+$ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-tf2-3-days.txt $@

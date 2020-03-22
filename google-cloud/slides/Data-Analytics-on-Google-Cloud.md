@@ -20,13 +20,13 @@ Notes:
 
 ## Google Cloud Tools for Data Analytics
 
-* __Data Studio__: For creating beautiful visualizations of data
+* __Data Studio:__ For creating beautiful visualizations of data
 
-* __Big Query__: SQL for large (any size) datasets
+* __Big Query:__ SQL for large (any size) datasets
 
-* __Colaboratory__: A FREE hosted environment for data analytics and machine learning
+* __Colaboratory:__ A FREE hosted environment for data analytics and machine learning
 
-* __Data Lab__ : (Paid) A hosted environment for data analytics and machine learning
+* __Data Lab:__ (Paid) A hosted environment for data analytics and machine learning
 
 Notes:
 

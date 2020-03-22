@@ -1,7 +1,13 @@
 # Introduction to Neural Networks
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/artificial-neural-network-2-brain.png"  style="width:15%;" />
 ---
 
 ## Lesson Objectives
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/artificial-neural-network-2-brain.png"  style="width:45%;float:right;" />
 
 - Understand neural network architectures
 
@@ -94,7 +100,7 @@ Notes:
 
 
 Notes:
-  
+
 Source : [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  by  Aurélien Géron (ISBN: 9781492037347)
 
 ---
@@ -517,7 +523,7 @@ Notes:
 ---
 ## Sizing a Regression  Network
 
-| Bedrooms (input 1 | Bathrooms (input 2) | House Size (input 3) | Lot Size (input 4) | Sale Price (in thousands) |
+| Bedrooms (input 1 | Bathrooms (input 2) | House Size (input 3) | Lot Size (input 4) | Sale Price (in thousands) (OUTPUT) |
 |-------------------|---------------------|----------------------|--------------------|---------------------------|
 | 2                 | 1                   | 1200                 | 2000               | 229                       |
 | 3                 | 1                   | 1500                 | 3500               | 319                       |
@@ -532,7 +538,7 @@ Notes:
 - Input layer sizing:
   - Match the number of input dimensions = 4 (bedrooms, bathrooms, house size, lot size)
 - Output layer sizing:
-  - Only one neuron 
+  - Only one neuron
   - As we are predicting a number (sale price)
 - Hidden layer sizing:
   - flexible
@@ -540,7 +546,7 @@ Notes:
 ---
 
 ## Sizing Binary Classification Network
-  
+
 
 | Income (input 1) | Credit Score (input 2) | Current Debt (input 3) | Loan Approved (output) |
 |------------------|------------------------|------------------------|------------------------|
@@ -553,33 +559,33 @@ Notes:
 <img src="../../assets/images/deep-learning/network-sizing-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 5.49, "top" : 3.83, "height" : 1.4, "width" : 4.48} -->
 
 
-- Input layer sizing 
+- Input layer sizing
   -  Same as input dimensions = 3 (input, credit score, debt)
-  
+
 - Output layer sizing
     - one neuron for 0/1 output
-    
-- Hidden layer sizing 
+
+- Hidden layer sizing
   - flexible
-    
+
 ---
 
-## Sizing Multi Classification Network 
+## Sizing Multi Classification Network
 
-<img src="../../assets/images/deep-learning/LowLevel-mnist.jpeg" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 7.38, "top" : 1.05, "height" : 1.81, "width" : 2.73} -->
+<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 7.38, "top" : 1.05, "height" : 1.81, "width" : 2.73} -->
 
 <img src="../../assets/images/deep-learning/network-sizing-3-multi-classification.png" alt="XXX image missing" style="width:50%;float:right;clear:both;"/><!-- {"left" : 5.87, "top" : 3.63, "height" : 1.63, "width" : 4.22} -->
 
-- Input layer sizing 
+- Input layer sizing
   - Match input dimensions
   - 784 = 28 x 28 pixels
-  
-- Output layer sizing 
-  - Softmax layer 
-  - one neuron per output class 
+
+- Output layer sizing
+  - Softmax layer
+  - one neuron per output class
   - 10 (one for each digit; 0, 1, ..8,9)
-  
-- Hidden layer sizing 
+
+- Hidden layer sizing
   - flexible
 
 ---
@@ -630,10 +636,13 @@ Notes:
 
 ---
 
-## Lab: Iris Dataset
+## Review and Q&A
 
- * In this lab, we will be using the Iris dataset.
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
 
- * We will be training a multi-layer perceptron feedforward neural network.
 
-Notes:
+* Let's go over what we have covered so far
+
+* Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->

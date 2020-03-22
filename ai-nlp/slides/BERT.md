@@ -745,10 +745,64 @@ Notes:
 
 ---
 
-# Conclusion
+
+# Beyond BERT
 
 ---
 
+## RoBERTa
+
+
+<img src="../../assets/images/ai-nlp/3rd-party/whitepaper-roberta.png" style="width:70%;"/><!-- {"left" : 0.65, "top" : 1.44, "height" : 6.76, "width" : 8.94} -->
+
+
+---
+
+## About RoBERTa
+
+ * Created by Facebook
+ * Aims for **Robust** training
+
+---
+
+## AlBERT
+
+<img src="../../assets/images/ai-nlp/3rd-party/whitepaper-albert.png" style="width:70%;"/><!-- {"left" : 0.65, "top" : 1.44, "height" : 6.76, "width" : 8.94} -->
+
+---
+
+## DistilBERT
+
+
+<img src="../../assets/images/ai-nlp/3rd-party/whitepaper-distilbert.png" style="width:70%;"/><!-- {"left" : 0.65, "top" : 1.44, "height" : 6.76, "width" : 8.94} -->
+
+
+---
+
+## XLNet
+
+
+<img src="../../assets/images/ai-nlp/3rd-party/whitepaper-distilbert.png" style="width:70%;"/><!-- {"left" : 0.65, "top" : 1.44, "height" : 6.76, "width" : 8.94} -->
+
+---
+
+## ERNIE
+
+<img src="../../assets/images/ai-nlp/3rd-party/ernie-diagram.png" style="width:70%;"/><!-- {"left" : 0.65, "top" : 1.44, "height" : 6.76, "width" : 8.94} -->
+
+---
+
+## About ERNIE
+
+ * Created by Baidu
+   - ERNIE 1.0
+   - ERNIE 2.0 October 2019
+ * Outperforms BERT
+
+
+# Conclusion
+
+---
 
 ## Conclusion
 

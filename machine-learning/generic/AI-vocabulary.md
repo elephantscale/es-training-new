@@ -16,7 +16,7 @@
 
 <img src="../../assets/images/generic/3rd-party/terminator-1.jpg" alt="bank-of-america.png" style="width:26%;float:right;"/><!-- {"left" : 6.29, "top" : 5.37, "height" : 2.7, "width" : 3.65} -->
 
- * **Artificial Generic Intelligence (AGI)**
+ * **Artificial General Intelligence (AGI)**
     - AI can do anything a human can do
     - We are decades or hundreds of years away from this
     - So no need to worry about killer robots yet :-)
@@ -158,9 +158,3 @@ Notes:
 ## Algorithm and Model
 
   <img src="../../assets/images/machine-learning/algorithm-vs-model2.png" alt="algorithm-vs-model1" style="width:79%;"/><!-- {"left" : 0.6, "top" : 2.17, "height" : 5.31, "width" : 9.04} -->
-
-
-
-
-
-

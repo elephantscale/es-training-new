@@ -415,16 +415,21 @@ Notes:
 
 ## Model Zoos
 
-<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="50%;"/><!-- {"left" : 5.49, "top" : 1.14, "height" : 4.61, "width" : 4.61} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="float:right;width:40%;"/><!-- {"left" : 5.49, "top" : 1.14, "height" : 4.61, "width" : 4.61} -->
 
  * Building and training complex models from scratch takes a lot of effort and compute
+
+ * A model zoo is a place wheres open-source models are shared so others can use them
 
  * Luckily, there are lot models available publicly  
     - Computer vision models : LeNet, AlexNet, ZFNet, GoogLeNet, VGGNet, Inception
 
- * Available model zoos
+ * Model zoos
     - [Tensorflow model zoo](https://github.com/tensorflow/models)
     - [Caffe model zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo)
+    - https://modelzoo.co/
+    - https://github.com/albertomontesg/keras-model-zoo
 
 ---
 
@@ -446,7 +451,7 @@ Kept NN research going during 'AI Winter'
 
  * [Yoshua Bengio](https://en.wikipedia.org/wiki/Yoshua_Bengio) - Professor @ University of Montreal
 
- * **These 3 won ACM Turing Award (Nobel price of computing) in 2019**
+ * **These 3 won ACM Turing Award (Nobel prize of computing) in 2019**
 
 <img src="../../assets/images/people/geoffrey-hinton-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="15.6%" />&nbsp;<!-- {"left" : 1.1, "top" : 5.52, "height" : 2.77, "width" : 2.07} -->
 <img src="../../assets/images/people/yann-lecun-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="20.5%" />&nbsp;<!-- {"left" : 3.58, "top" : 5.52, "height" : 2.77, "width" : 2.71} -->

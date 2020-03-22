@@ -1,8 +1,7 @@
 # Google Cloud SQL
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/google-cloud-sql-logo-1.png" style="white;width:30%;"/><!-- {"left" : 4.37, "top" : 7, "height" : 1.19, "width" : 3.65} -->
+<img src="../../assets/images/logos/google-cloud-sql-logo-1.png" style="white;width:30%;"/><!-- {"left" : 5.1, "top" : 6.2, "height" : 2.18, "width" : 2.18} -->
 
 
 
@@ -20,24 +19,23 @@
 Notes:
 
 ---
+
 ## Google Cloud SQL
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/google-cloud-sql-logo-1.png" style="width:25%;float:right;"/><!-- {"left" : 6.31, "top" : 1.38, "height" : 0.91, "width" : 3.79} -->
+<img src="../../assets/images/logos/google-cloud-sql-logo-1.png" style="width:25%;float:right;"/><!-- {"left" : 7.99, "top" : 0.97, "height" : 2.14, "width" : 2.14} -->
+
 
  * Cloud SQL is a full managed relational database instance.
 
  * Fully managed database service that makes it easy to set up, maintain, manage, and administer your relational database on Google Cloud Platform.  
 
  * Supported databases
+
    - [MySQL](https://www.mysql.com/)
    - [PostgreSQL](https://www.postgresql.org/)
    - [MS SQL Server](https://www.microsoft.com/en-us/sql-server/)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/mysql-logo-1.png" style="width:20%;"/> &nbsp;  &nbsp; <!-- {"left" : 6.31, "top" : 1.38, "height" : 0.91, "width" : 3.79} -->
-<img src="../../assets/images/logos/postgresql-logo-1.png" style="width:23%;"/> &nbsp; &nbsp; <!-- {"left" : 6.31, "top" : 1.38, "height" : 0.91, "width" : 3.79} -->
-<img src="../../assets/images/logos/microsoft-sql-server-logo-1.png" style="width:20%;"/> &nbsp; &nbsp; <!-- {"left" : 6.31, "top" : 1.38, "height" : 0.91, "width" : 3.79} -->
+<img src="../../assets/images/logos/mysql-logo-1.png" style="width:20%;"/><!-- {"left" : 0.93, "top" : 6.8, "height" : 1.18, "width" : 2.28} --> &nbsp;  &nbsp;  <img src="../../assets/images/logos/postgresql-logo-1.png" style="width:23%;"/><!-- {"left" : 4.18, "top" : 6.8, "height" : 1.18, "width" : 2.57} --> &nbsp; &nbsp;  <img src="../../assets/images/logos/microsoft-sql-server-logo-1.png" style="width:20%;"/> <!-- {"left" : 7.72, "top" : 6.68, "height" : 1.43, "width" : 1.76} --> 
 
 
 Notes:
@@ -63,7 +61,8 @@ Notes:
 
 ## Secure and Compliant
 
-<img src="../../assets/images/google-cloud/3rd-party/cloud-sql-1.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/cloud-sql-1.png" style="width:40%;float:right;"/> <!-- {"left" : 6.07, "top" : 1.13, "height" : 4.59, "width" : 4.13} -->
+
 
 * Automatic data encryption at rest and in transit.
 
@@ -82,8 +81,7 @@ Notes:
 
 * Built in migration tools import data in just a few minutes.
 
-<!-- TODO shiva -->
-> "Using Google App Engine and Google Cloud SQL make our applications go live in half the time and have provided us with hassle-free control over all processes.  The shift to Google Cloud SQL has allowed us to focus on making our applications even better. "   
+* "Using Google App Engine and Google Cloud SQL make our applications go live in half the time and have provided us with hassle-free control over all processes.  The shift to Google Cloud SQL has allowed us to focus on making our applications even better. "  
 -Yogesh Agarwal, CEO, Daffodil
 
 
@@ -91,6 +89,7 @@ Notes:
 
 
 ---
+
 ## Scale as you go
 
 * With Cloud SQL you can choose a machine to scale up
@@ -98,11 +97,10 @@ Notes:
 
 * Scale out by having multiple replicas
 
-<!-- TODO shiva -->
-<img src="../../assets/images/generic/scale-up-scale-out.png" style="width:40%;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/generic/scale-up-scale-out.png" style="width:40%;"/> <!-- {"left" : 1.52, "top" : 3.39, "height" : 4.48, "width" : 7.21} -->
+ 
 
 ---
-
 
 ## Easy Connectivity
 
@@ -114,12 +112,17 @@ __`mysql, psql`__ etc...
 * Supported languages:  
 __`Java, Python, PHP, Node.js, GO, Ruby`__
 
+
+
 ---
 
 ## Cloud SQL Launch Checklist
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/cloud-sql-4.png" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/cloud-sql-4.png" style="width:40%;float:right;"/>  <!-- {"left" : 6.56, "top" : 1.02, "height" : 2.4, "width" : 3.62} --> 
+
+
+
+
 
 * The checklist is broken down into three sections.
     - Architecture Design and Development
@@ -128,6 +131,7 @@ __`Java, Python, PHP, Node.js, GO, Ruby`__
 
 
 ---
+
 ## Checklist: Architecture Design and Development
 
 *  This part of checklist requires most time to complete.
@@ -161,8 +165,8 @@ __`Java, Python, PHP, Node.js, GO, Ruby`__
 ---
 ## Checklist: Final Launch
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/cloud-sql-5.jpg" style="width:40%;float:right;"/> <!-- {"left" : 5.84, "top" : 1.16, "height" : 3.49, "width" : 4.33} -->
+<img src="../../assets/images/google-cloud/3rd-party/cloud-sql-5.jpg" style="width:40%;float:right;"/> <!-- {"left" : 6.72, "top" : 1.49, "height" : 3.51, "width" : 3.51} --> 
+
 
 *  Use before and shortly before and during your launch.
 
@@ -191,6 +195,7 @@ $  gcloud sql instances restart db1
 $  gcloud sql instances stop db1
 
 ```
+<!-- {"left" : 0, "top" : 1.46, "height" : 3, "width" : 10.25} --> 
 
 ---
 ## Lab: Launching a Cloud SQL

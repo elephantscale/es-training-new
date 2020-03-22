@@ -189,7 +189,7 @@ Notes:
 
  * The image shows two kernels - vertical and horizontal filters. Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter.
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="CNN-Convolutional-Layer-Contd--1.png" style="background:white;width:40%;"/><!-- {"left" : 2.59, "top" : 2.93, "height" : 3.2, "width" : 5.06} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-convolutions-example-3.png" alt="CNN-convolutions-example-3.png" style="background:white;width:40%;"/><!-- {"left" : 2.59, "top" : 2.93, "height" : 3.2, "width" : 5.06} -->
 
 
  *  **VERTICAL AND HORIZONTAL FILTERS** 
@@ -208,7 +208,7 @@ Notes:
 
  * The output image has a feature map, which highlights the areas in the image that are most similar to the filter.
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-Convolutional-Layer-Contd--1.png" alt="CNN-Convolutional-Layer-Contd--1.png" style="background:white;width:50%;"/><!-- {"left" : 2.11, "top" : 3.89, "height" : 3.81, "width" : 6.02} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-convolutions-example-3.png" alt="CNN-convolutions-example-3.png" style="background:white;width:50%;"/><!-- {"left" : 2.11, "top" : 3.89, "height" : 3.81, "width" : 6.02} -->
 
 
 

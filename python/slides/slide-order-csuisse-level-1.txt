@@ -1,0 +1,10 @@
+## to generate slides
+##     $    $ES_HOME/utils/presentations/slides-assembler.sh   slide-order-csuisse-level-1.txt
+
+#day 1
+About-Python-Language-CSuisse.md
+PYTHON-Intro.md
+PYTHON-LanguageBasics.md
+PYTHON-Pandas.md
+
+

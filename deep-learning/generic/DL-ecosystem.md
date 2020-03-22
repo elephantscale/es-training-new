@@ -9,7 +9,7 @@
 
 <!-- {"left" : 1.18, "top" : 1.18, "height" : 2.48, "width" : 7.9, "columnwidth" : [1.97, 1.97, 1.97, 1.97]} -->
 
-<img src="../../assets/images/logos/dl4j-logo.png" alt="XXX image missing" style="background:white;" width="20%"/> &nbsp; <!-- {"left" : 0.59, "top" : 5.6, "height" : 0.72, "width" : 1.95} --><img src="../../assets/images/logos/keras-logo-1.png" alt="XXX image missing" style="background:white;"  width="18%;"/> &nbsp; <!-- {"left" : 2.83, "top" : 5.68, "height" : 0.57, "width" : 1.95} --><img src="../../assets/images/logos/Caffe2-logo.png" alt="XXX image missing" style="background:white;" width="20%" /> &nbsp; <!-- {"left" : 5.07, "top" : 5.6, "height" : 0.72, "width" : 1.95} --><img src="../../assets/images/logos/tensorflow-logo-1.png" alt="XXX image missing" style="background:white;" width="20%" /><!-- {"left" : 7.31, "top" : 4.73, "height" : 1.66, "width" : 1.95} -->
+<img src="../../assets/images/logos/dl4j-logo-1.png" alt="XXX image missing" style="background:white;" width="20%"/> &nbsp; <!-- {"left" : 0.59, "top" : 5.6, "height" : 0.72, "width" : 1.95} --><img src="../../assets/images/logos/keras-logo-1.png" alt="XXX image missing" style="background:white;"  width="18%;"/> &nbsp; <!-- {"left" : 2.83, "top" : 5.68, "height" : 0.57, "width" : 1.95} --><img src="../../assets/images/logos/caffe2-logo-1.png" alt="XXX image missing" style="background:white;" width="20%" /> &nbsp; <!-- {"left" : 5.07, "top" : 5.6, "height" : 0.72, "width" : 1.95} --><img src="../../assets/images/logos/tensorflow-logo-1.png" alt="XXX image missing" style="background:white;" width="20%" /><!-- {"left" : 7.31, "top" : 4.73, "height" : 1.66, "width" : 1.95} -->
 
 
 Notes:

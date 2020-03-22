@@ -1,9 +1,9 @@
 ## To Make slides
-##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-DL-3-days.txt
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-DL-tf2-3-days.txt
 ## (-d will cleanup  current assembly.out)
 
 ## To Make pdfs, supply pdf arg at the end
-##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-3-days.txt  pdf
+##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-tf2-3-days.txt  pdf
 ## (-d will cleanup  current assembly.out)
 
 
@@ -13,6 +13,9 @@
 ## About
 ./generic/About-Deep-Learning-Class.md
 
+## Resources
+../machine-learning/generic/ML-Resources.md
+
 ## ML Intro
 ../machine-learning/generic/Machine-Learning-Primer.md
 
@@ -21,14 +24,11 @@
 
 
 ## TensorFlow
-./tensorflow/TENSORFLOW-Intro.md
+./tf2/Tensorflow-Intro.md
 
 # Keras
 keras/Keras-1__Intro.md
 
-
-## Reference only
-../machine-learning/generic/ML-Concepts-All.md
 
 ## Introduce Neural Networks
 ./generic/DL-Neural-Networks.md
@@ -36,13 +36,11 @@ keras/Keras-1__Intro.md
 ## Get some theory
 generic/DL-Concepts.md
 
-
-# Introduce TensorFlow Playground
-./generic/DL-Playground.md
+keras/Keras-2__API.md
 
 
 ## CNN
-./generic/DL-CNNs.md
+./tf2/Tensorflow-CNN.md
 
 ## RNN
 ./generic/DL-RNNs.md
@@ -50,3 +48,11 @@ generic/DL-Concepts.md
 
 ## TransferLearning
 ./generic/DL-Transfer-Learning.md
+
+## ---- Reference only ----
+
+# TensorFlow Playground
+./generic/DL-Playground.md
+
+## ML-Concepts
+../machine-learning/generic/ML-Concepts-All.md

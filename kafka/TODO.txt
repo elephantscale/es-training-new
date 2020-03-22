@@ -1,4 +1,11 @@
-TODO 
-- illustrate how batching works 
-  in user code and kafka library code 
-  
+TODO
+- illustrate how batching works
+  in user code and kafka library code
+
+- Streaming vs. bounded dataset
+https://docs.google.com/presentation/d/1EKaG1NyKZgXQMgBwwv8t1D5CjPK9LhTy8Mr1LZU350E/edit#slide=id.p3
+
+- Streaming :  why do we need a quueue / buffer
+	- https://docs.google.com/presentation/d/1izkxwbfNj9_gItKvxhOOOobvC0bqUIHNxhqnVkUxYRk/edit#slide=id.p6
+
+- 

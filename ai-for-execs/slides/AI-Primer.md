@@ -444,7 +444,7 @@ http://bigdatausecases.info/entry/airbnb-driving-a-higher-level-of-customer-supp
 
 ## Use Case in Finance: Capitol One - Credit Card Fraud Prevention
 
-<img src="../../assets/images/deep-learning/3rd-party/capitalone-logo.png" alt="capitalone-logo.png" style="width:20%;float:right;"/><!-- {"left" : 6.35, "top" : 1.45, "height" : 1.23, "width" : 3.5} -->
+<img src="../../assets/images/logos/capitalone-logo-1.png" alt="capitalone-logo.png" style="width:20%;float:right;"/><!-- {"left" : 6.35, "top" : 1.45, "height" : 1.23, "width" : 3.5} -->
 
  * Capitol ONE:
      - 365 Billion in assets,
