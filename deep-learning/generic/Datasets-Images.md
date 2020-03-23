@@ -19,8 +19,6 @@
 
 ## MNIST Example
 
-<!-- TODO shiva -->
-
 * MNIST Dataset is the "hello world" of deep learning
 
 * 28x28 greyscale scanned digits
@@ -28,7 +26,9 @@
 * [Reference](http://yann.lecun.com/exdb/mnist/)
 
 
-<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg"  style="width:55%;" />
+<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg"  style="width:55%;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+
+
 
 Notes:
 
@@ -36,7 +36,8 @@ Notes:
 
 ## CIFAR-10
 
-<img src="../../assets/images/deep-learning/CIFAR-10-dataset.png"  style="width:50%;float:right;" />
+<img src="../../assets/images/deep-learning/CIFAR-10-dataset.png"  style="width:50%;float:right;" /><!-- {"left" : 5.42, "top" : 1.05, "height" : 3.45, "width" : 4.69} -->
+
 
 * CIFFAR-10 dataset consists of
     - 60,000 color images
@@ -84,6 +85,7 @@ import matplotlib.pyplot as plt
 # Normalize pixel values to be between 0 and 1
 train_images, test_images = train_images / 255.0, test_images / 255.0
 ```
+<!-- {"left" : 0, "top" : 1.56, "height" : 1.75, "width" : 10.25} -->
 
 ---
 
@@ -161,7 +163,7 @@ imagenet/
 - [Link to download](https://www.microsoft.com/en-us/download/details.aspx?id=54765)
 
 
-<img src="../../assets/images/deep-learning/3rd-party/dog-1.jpg" alt="XXX image missing" style="background:white;width:16%;" /><!-- {"left" : 0.83, "top" : 6.63, "height" : 1.95, "width" : 1.95} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/dog-3.jpg" alt="XXX image missing" style="background:white;width:20.1%" /><!-- {"left" : 3.07, "top" : 6.63, "height" : 1.95, "width" : 2.46} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-1.jpg" alt="XXX image missing" style="background:white;width:14.5%" /><!-- {"left" : 5.81, "top" : 6.63, "height" : 1.94, "width" : 1.85} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;width:10.3%;" /><!-- {"left" : 8.09, "top" : 6.63, "height" : 1.95, "width" : 1.33} -->
+<img src="../../assets/images/deep-learning/3rd-party/dog-1.jpg" alt="XXX image missing" style="background:white;width:16%;" /><!-- {"left" : 2.09, "top" : 7.31, "height" : 1.38, "width" : 1.38} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/dog-3.jpg" alt="XXX image missing" style="background:white;width:20.1%" /><!-- {"left" : 3.67, "top" : 7.31, "height" : 1.38, "width" : 1.74} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-1.jpg" alt="XXX image missing" style="background:white;width:14.5%" /><!-- {"left" : 5.61, "top" : 7.31, "height" : 1.37, "width" : 1.31} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;width:10.3%;" /><!-- {"left" : 7.22, "top" : 7.31, "height" : 1.38, "width" : 0.94} -->
 
 
 Notes:
