@@ -13,7 +13,7 @@
  * Gain insight on streaming architectures
 
 
-Notes: 
+Notes:
 
 
 
@@ -28,8 +28,8 @@ Notes:
 
   * Decision times: batch ( hours / days)
   * Use cases:
-    - Modeling 
-    - ETL 
+    - Modeling
+    - ETL
     - Reporting
 
 
@@ -37,7 +37,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -65,7 +65,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -78,7 +78,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -90,7 +90,7 @@ Notes:
   * Netflix
     - Recommendations
     - 450 billion events/day
-  
+
   * Weather Company
     - Analyze weather sensor data
     - Billions of events/day
@@ -104,7 +104,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -133,7 +133,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -154,7 +154,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -178,7 +178,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -193,19 +193,19 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
 ---
 
-## Processing Guarantees 
+## Processing Guarantees
 
-* At Least Once 
+* At Least Once
 
-* At Most Once 
+* At Most Once
 
-* Exactly Once 
+* Exactly Once
 
 * In the order of effort required:
     - At-most-once <  At-least-once  < exactly-once
@@ -246,7 +246,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -267,7 +267,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -286,10 +286,15 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 1.48, "height" : 3.73, "width" : 9.75} -->
 
-Notes: 
+Notes:
 
 
 
+---
+
+## Exactly Once
+
+<img src="../../assets/images/streaming/3rd-party/distributed-systems-exactly-once.png"  style="width:80%;"/>
 
 ---
 
@@ -307,7 +312,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -331,7 +336,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -349,7 +354,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -371,7 +376,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -383,15 +388,15 @@ Notes:
   * Event Time:
     - When the event occurred / generated
   * Arrival Time:
-    - When event arrives for processing 
+    - When event arrives for processing
   * Event Time < Arrival Time
-  * Some times events may arrive 'out of order' 
+  * Some times events may arrive 'out of order'
 
 <img src="../../assets/images/streaming/Streaming-Primer-Event-Time-and-Arrival-Time-13.png" alt="Streaming-Primer-Event-Time-and-Arrival-Time-13.png" style="width:50%;"/><!-- {"left" : 2.12, "top" : 5.02, "height" : 3.42, "width" : 6.01} -->
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -405,7 +410,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -417,7 +422,7 @@ Notes:
 <img src="../../assets/images/streaming/3rd-party/Back-Pressure.png" alt="Back-Pressure.png" style="width:45%;float:right;"/><!-- {"left" : 6.91, "top" : 1.55, "height" : 1.76, "width" : 2.98} -->
 
 
-  * Some times processing lags behind 
+  * Some times processing lags behind
     - Processing system is too busy
     - Temporary spike in input data (Twitter stream exploding after an election results is announced)
   * Events pile up
@@ -425,10 +430,10 @@ Notes:
       -> un-acceptable in most of the situations
   * Solutions
     - signal 'upstream' processors to slow down?
-    - Leave events in the persistent buffer longer 
+    - Leave events in the persistent buffer longer
 
 
-Notes: 
+Notes:
 
 
 
@@ -445,7 +450,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -464,7 +469,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -479,15 +484,15 @@ Notes:
     - Captures incoming data
     - Acts as a 'buffer' - smoothes out bursts
     - So even if our processing offline, we won't loose data
-    
+
   * Choices
     - Kafka
     - MQ (RabittMQ ..etc)
-    - Amazon Kinesis 
+    - Amazon Kinesis
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -511,7 +516,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -536,7 +541,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -560,7 +565,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -573,7 +578,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -594,7 +599,7 @@ Notes:
     - Answers queries using batch & real-time views
 
 
-Notes: 
+Notes:
 
 
 
@@ -608,7 +613,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -621,7 +626,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -639,7 +644,7 @@ Notes:
   * Samza
 
 
-Notes: 
+Notes:
 
 
 
@@ -666,7 +671,7 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 3.93, "height" : 4.19, "width" : 9.75} -->
 
-Notes: 
+Notes:
 
 
 
@@ -689,7 +694,7 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 2.07, "height" : 3.5, "width" : 9.75} -->
 
-Notes: 
+Notes:
 
 
 
@@ -715,7 +720,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -726,7 +731,7 @@ Notes:
   * Event flow and processing system
   * Open sourced by National Security Agency (NSA)
   * A startup (Onviya) was acquired by Horton Works
-  * Hortonworks'  'data flow' product 
+  * Hortonworks'  'data flow' product
 
 
 
@@ -738,11 +743,11 @@ Notes:
 | Latency                         | Sub seconds to seconds |
 | Caching                         | ?                      |
 | Supported languages             | Java, Scala, Python    |
-  
+
 <!-- {"left" : 0.25, "top" : 3.82, "height" : 3.5, "width" : 9.75} -->
 
-  
-Notes: 
+
+Notes:
 
 
 
@@ -770,7 +775,7 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 3.82, "height" : 3.5, "width" : 9.75} -->
 
-Notes: 
+Notes:
 
 
 
@@ -792,7 +797,7 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 1.13, "height" : 7.39, "width" : 9.75} -->
 
-Notes: 
+Notes:
 
 
 
