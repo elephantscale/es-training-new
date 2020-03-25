@@ -8,19 +8,19 @@ In this course, the students will learn to do Data Science with Python,  and the
 
 ## What you will learn:
 * Understand Google Cloud's features for Data Science
-* Process of doing Data Science 
+* Process of doing Data Science
 * Using Google Compute Engine
-* Using Google Cloud Storage 
+* Using Google Cloud Storage
 * Visualizing data using Google Data Studio
 * Running SQL queries using Big Query
-* Data analytics with Python 
+* Data analytics with Python
 * Running Python code on Google Cloud
 * Large scale data analytics with Apache Spark
 * Running Spark using Google DataProc
 * Machine Learning fundamentals
 * Spark ML library
 * Doing ML with Spark ML on Google Cloud
- 
+
 ## Audience:
 Data Analysts, Data Scientists
 
@@ -37,7 +37,7 @@ Lectures and hands*on labs. (50%, 50%)
 * Some programming experience is highly recommended
 
 ## Lab environment
-Zero Install: There is no need to install any software on students' machines!
+Students need to have access to Google Cloud environment.  We encourage to use free credits provided by Google, if possible.
 
 ### Students will need the following
 * A reasonably modern laptop
@@ -47,13 +47,13 @@ Zero Install: There is no need to install any software on students' machines!
 
 ## Detailed outline
 
-### Google Cloud Overview 
+### Google Cloud Overview
 * Benefits of Cloud computing
 * Google Cloud eco system overview (Data Studio, Compute Cloud, Colossus, Big Query, Data Proc)
 * Lab: Getting up and running in Google Cloud
 
 ### Google Compute Engine
-* Compute Engine Intro 
+* Compute Engine Intro
 * Understanding different types of compute resources
 * Using compute resources effectively
 * Customizing a cloud VM
@@ -68,21 +68,21 @@ Zero Install: There is no need to install any software on students' machines!
 
 ### Google Data Studio
 * Overview of Data Studio
-* Visualizing data using Data Studio 
+* Visualizing data using Data Studio
 * Labs
-    
+
 ### Google Big Query
 * Introduction to Big Query
-* Running queries on Big Query 
+* Running queries on Big Query
 * Labs
 
 ### Data Analytics With Python
-* Exploring and understanding datasets 
+* Exploring and understanding datasets
 * Cleaning data
 * Feature selection
 * Visualizing data
 * Labs
- 
+
 ### Python Development in Google Cloud
 * Introduction to Google Colab
 * Introduction to Datalab
@@ -93,10 +93,10 @@ Zero Install: There is no need to install any software on students' machines!
 ### Large Scale Data Processing with Apache Spark
 * Spark Intro
 * Spark Shell
-* Loading and analyzing data in Spark 
+* Loading and analyzing data in Spark
 * Spark Dataframes
 * Spark SQL
-* Labs 
+* Labs
 
 ### Google Dataproc
 * Introduction to Google Dataproc
@@ -107,18 +107,18 @@ Zero Install: There is no need to install any software on students' machines!
 * Overview of Machine Learning
 * Machine Learning algorithms
 * Feature Engineering
-* Regressions 
+* Regressions
 * Classifications
 * Clustering
-    
+
 ### Machine Learning in Spark (4th day)
-* Introduction to Spark ML library 
+* Introduction to Spark ML library
 * Feature Engineering with Spark ML
 * Regressions with Spark ML
 * Classification with Spark ML
 * Clustering with Spark ML
 * Labs
-* Lab: CPU vs. GPU benchmarking 
+* Lab: CPU vs. GPU benchmarking
 
 ### Final Workshop (Time Permitting)    
 * Students will work in teams

@@ -24,7 +24,7 @@ Lectures and hands*on labs. (50%, 50%)
 * Familiarity with Java and/or Python is highly recommended
 
 ## Lab environment
-Zero Install: There is no need to install any software on students' machines!
+Students need to have access to Google Cloud environment.  We encourage to use free credits provided by Google, if possible.
 
 **Students will need the following**  
 * A reasonably modern laptop
