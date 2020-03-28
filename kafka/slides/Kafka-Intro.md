@@ -692,10 +692,11 @@ Notes:
 
 ---
 
-## Kafka Architecture Topics + Partitions + Replicas
+## Topics + Partitions + Replicas
 
+<!-- TODO shiva -->
 
-<img src="../../assets/images/kafka/Kafka-Architecture-Topics-Partitions-Replicas.png" alt="Kafka-Architecture-Topics-Partitions-Replicas.png" style="max-width:40%;"/><!-- {"left" : 2.09, "top" : 1.74, "height" : 6.16, "width" : 6.08} -->
+<img src="../../assets/images/kafka/topics-partitions-replicas.png" style="width:50%;"/><!-- {"left" : 2.09, "top" : 1.74, "height" : 6.16, "width" : 6.08} -->
 
 
 Notes:
@@ -801,19 +802,17 @@ Notes:
 ## Broker Services
 
 <!-- TODO shiva -->
-<img src="../../assets/images/kafka/brokers-1.png"  style="max-width:40%;float:right;"/><!-- {"left" : 8.12, "top" : 2.34, "height" : 2.39, "width" : 1.98} -->
+<img src="../../assets/images/kafka/brokers-1.png"  style="width:40%;float:right;"/><!-- {"left" : 8.12, "top" : 2.34, "height" : 2.39, "width" : 1.98} -->
 
  * **Cluster**
      - One broker is designated as **controller / administrator** of cluster
      - Selected automatically from all brokers
      - Monitors other brokers and handles failures
      - Assigns partition ownership
-
  * **Services to Producer**
      - Accepts messages from Producers
      - Assigns a unique offsets (incrementing) to messages
      - Commits the messages to commitlog
-
  * **Services to Consumer**
      - Serve message requests
      - Assign partitions to consumers in consumer groups
@@ -839,10 +838,11 @@ Notes:
 
 ---
 
-## Brokers / Leaders / Partitions / Replications
+## Brokers / Leaders / Partitions / Replicas
 
+<!-- TODO shiva -->
 
-<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png" alt="Brokers-Leaders-Partitions-Replications.png" style="width:70%;"/><!-- {"left" : 0.54, "top" : 2.56, "height" : 4.53, "width" : 9.16} -->
+<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replicas.png"  style="width:80%;"/><!-- {"left" : 0.54, "top" : 2.56, "height" : 4.53, "width" : 9.16} -->
 
 
 Notes:
@@ -852,7 +852,7 @@ Notes:
 
 ---
 
-## Brokers / Leaders / Partitions / Replications
+## Brokers / Leaders / Partitions / Replicas
 
 
  * Each partition has ONE broker as 'leader' (primary / owner)
@@ -1023,7 +1023,7 @@ Notes:
 
 <!-- TODO shiva -->
 
-<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png" alt="Brokers-Leaders-Partitions-Replications.png" style="width:60%;float:right"/><!-- {"left" : 0.54, "top" : 2.56, "height" : 4.53, "width" : 9.16} -->
+<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replicas.png"  style="width:60%;float:right"/><!-- {"left" : 0.54, "top" : 2.56, "height" : 4.53, "width" : 9.16} -->
 
  * Producers publish messages to Kafka
 
