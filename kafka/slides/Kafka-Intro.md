@@ -119,13 +119,7 @@ Notes:
 
 
 
-
-
-
 Notes:
-
-
-
 
 ---
 
@@ -135,6 +129,10 @@ Notes:
 
 
 ## Apache Kafka
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/logos/kafka-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
 
 
  * Kafka is a Publisher / Subscriber (Pub-Sub) messaging system
@@ -157,14 +155,20 @@ Notes:
 ---
 ## Why LinkedIn Built Kafka?
 
-<img src="../../assets/images/kafka/3rd-party/franz-kafka.png" style="width:15%;float:right;" /><!-- {"left" : 7.85, "top" : 1.08, "height" : 2.86, "width" : 2.25} -->
+<!-- TODO shiva -->
 
-* Lots of databases
+<img src="../../assets/images/logos/linkedin-logo-1.png" style="width:25%;float:right;" /><!-- {"left" : 7.85, "top" : 1.08, "height" : 2.86, "width" : 2.25} -->
+
+<img src="../../assets/images/kafka/3rd-party/franz-kafka.png" style="width:20%;float:right;clear:both" /><!-- {"left" : 7.85, "top" : 1.08, "height" : 2.86, "width" : 2.25} -->
+
+* They had lots of databases
   - Built to store data
   - Piles of data: relational / key-value / caches / search indexes
 
-* What is missing?
+* What was missing?
   - Something to handle the continuous flow of data
+
+* Existing message systems like ActiveMQ, were not able to handle the volume LinkedIn was seeing
 
 * Hence, LinkedIn built Kafka from scratch
 
@@ -173,38 +177,17 @@ Notes:
 
 
 ---
+## Kafka's Growth
 
-## What Happened Then
+* Used by tens of thousands of organizations
 
-* Kafka started as
-  - powering real-time applications
-  - data flow
-  - in social network
+* Including over a third of the Fortune 500
 
-* Kafka continued as
-  - next-generation architectures
-  - retailers redo their business process as continuous business stream
-  - car companies are collecting and processing real-time data streams
-  - banks are rethinking their fundamental processes
+* Among the fastest growing open source projects
 
----
-## What Kafka is Like and Not Like
-* Compare to
-  - enterprise messaging systems
-  - big data systems like Hadoop
-  - data integration or ETL tools
-* But not like them
-  - NOT ActiveMQ, RabbitMQ, IBM's MQSeries
-    - runs on a cluster and can scale to 1000s of nodes
-    - replaces hand-wires message brokers
-  - NOT a regular storage system
-    - replicated
-    - persistent
-    - but can be kept around as long as you like
-  - NOT ETL
-    - instead of scraping data here and putting it there
-    - re-organize data as continuous stream
-* So... **a streaming platform**
+* Immense ecosystem around it
+
+* At the heart of a movement towards managing and processing streams of data
 
 
 ---
@@ -258,20 +241,7 @@ Notes:
 
 
 ---
-## Kafka's Growth
 
-* Used by tens of thousands of organizations
-
-* Including over a third of the Fortune 500
-
-* Among the fastest growing open source projects
-
-* Immense ecosystem around it
-
-* At the heart of a movement towards managing and processing streams of data
-
-
----
 
 ## Kafka Benchmarks
 
@@ -301,15 +271,13 @@ https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-write
  * Write: Disk writes are buffered in page cache
 
  * Read: The data from page cache can be transferred to network interface very efficiently
-     - 99% of the time data is read from page cache, no disk access at all.(source: Loggly)
+
+ * 99% of the time data is read from page cache, no disk access at all.(source: Loggly)
 
 <img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" alt="Kafka-is-Very-Fast.png" style="max-width:50%;"/><!-- {"left" : 2.53, "top" : 3.67, "height" : 4.2, "width" : 5.18} -->
 
 
 Notes:
-
-
-
 
 ---
 
@@ -415,7 +383,36 @@ Notes:
 Notes:
 
 
+---
 
+## Kafka vs. Relational Databases
+
+<!-- TODO shiva -->
+
+|   Feature            | RDBMS                                                              | Kafka                         |
+|------------------|--------------------------------------------------------------------|-------------------------------|
+| Data Type        | Designed for structured data                                       | Can handle any type of data   |
+| Access Type      | Can query for individual record <br /> (e.g. find customer_id=123) | Designed for sequential scan  |
+| Storage Duration | Long term                                                          | Short term (typically days)   |
+| SQL support      | Supports full SQL                                                  | KSQL supports limited queries |
+| Query patterns   | Can query by any column                                            | Not supported                 |
+| Indexes          | Indexes are fully supported                                        | Not supported                 |
+| Transactions     | Transactions are supported                                         | Not supported                 |
+
+---
+
+## Kafka vs.  Hadoop/HDFS
+
+|   Feature        | Hadoop / HDFS                               | Kafka                                       |
+|------------------|---------------------------------------------|---------------------------------------------|
+| Similarities     |                                             |                                             |
+| Data Type        | Can handle structured and unstructured data | Can handle structured and unstructured data |
+| Storage units    | Data is stored as files                     | Data is stored as messages                  |
+| Access Type      | Designed for sequential scan                | Designed for sequential scan                |
+|                  |                                             |                                             |
+| Differences      |                                             |                                             |
+| Storage Duration | Long term                                   | Short term (typically days)                 |
+| SQL support      | Decent support using Hive SQL               | KSQL supports limited queries               |
 
 ---
 
@@ -431,11 +428,9 @@ Notes:
 
 <img src="../../assets/images/kafka/Kafka-And-Zookeeper.png" alt="Kafka-And-Zooeeper.png" style="max-width:40%;float:right; "/><!-- {"left" : 6.44, "top" : 1.37, "height" : 3.27, "width" : 3.53} -->
 
- * Kafka uses ZK
-
  * Starting from v0.8 Kafka requires ZK
 
- * Kafka brokers
+ * Kafka brokers use ZK to store:
 
      - Cluster membership
 
@@ -465,10 +460,9 @@ Thanks to: https://www.quora.com/What-is-the-actual-role-of-ZooKeeper-in-Kafka
  * Distribute cloud VM details and assign each student a VM
 
  * Walk students through logging in via
-     - SSH
+     - SSH via Jupyter
      - UI
         * Web based desktop (port 80)
-        * Native VNC client
 
 
 Notes:
@@ -493,7 +487,7 @@ Notes:
    - 30 - 40 mins
 
  *  **Instructions:**   
-   - lab-1: labs/1-installing-kafka.md
+   - lab-1: installing-kafka.md
 
  *  **To Instructor:**  
    - Please walk through this lab first on screen
@@ -534,6 +528,9 @@ Notes:
 
 ## Kafka Architecture
 
+<!-- TODO shiva -->
+
+<img src="../../assets/images/kafka/Kafka-Architecture-02.png" alt="Kafka-Architecture-02.png" style="width:40%;float:right;"/><!-- {"left" : 3.17, "top" : 3.43, "height" : 4.72, "width" : 3.91} -->
 
  * Kafka is designed to run on many nodes as a cluster
 
@@ -541,7 +538,6 @@ Notes:
 
  * Kafka automatically backs up data on at least another machine (broker)
 
-<img src="../../assets/images/kafka/Kafka-Architecture-02.png" alt="Kafka-Architecture-02.png" style="width:30%;"/><!-- {"left" : 3.17, "top" : 3.43, "height" : 4.72, "width" : 3.91} -->
 
 
 
@@ -552,7 +548,7 @@ Notes:
 
 ---
 
-## Kafka Terminology
+## Kafka Terminology (Discussed in Next Slides)
 
 
  * Roles
@@ -560,13 +556,11 @@ Notes:
      -  **Consumers:** read data from Kafka
      -  **Brokers:** Kafka nodes
      -  **Zookeeper:** Keep track of brokers
-
  * Data
      -  **Message:**  'basic unit' of data in Kafka
      -  **Topics:** Messages are organized as topics
      -  **Partitions:** Topics are split into partitions
      -  **Commit Log:** How data is organized
-
  * Advanced
      - **Consumer Group:** a set of consumers for scaling
      - **Offset:** message's position within a partition
@@ -620,7 +614,7 @@ Notes:
      - Message can be email / connection request / alert event
 
  * Messages are stored in  '**topics**'
-     - Topics are like 'queues'
+     - Topics are like **'queues'**
      - Sample topics could be: `emails` / `alerts`
 
 <img src="../../assets/images/kafka/Kafka-Concepts.png" alt="Kafka-Concepts.png" style="max-width:80%;"/><!-- {"left" : 2.53, "top" : 4.3, "height" : 2.84, "width" : 5.2} -->
@@ -628,9 +622,6 @@ Notes:
 
 
 Notes:
-
-
-
 
 ---
 
@@ -641,7 +632,7 @@ Notes:
 
  * Logical / virtual entity
 
- * We can set expiration-times & replication settings per topic
+ * We can set **expiration-times & replication settings** per topic
 
  * Topics are broken into smaller units called partitions
      - One to many ( 1 -> M)
@@ -766,7 +757,7 @@ Notes:
 
 ---
 
-## Putting It All Together: Topics / Partitions / Messages
+## Partitions / Messages
 
 
  * Messages are written  **in order** on each partition
@@ -778,7 +769,7 @@ Notes:
  * Producers write at the end of partition (append)
      - Sequential writes -> higher throughput
 
-<img src="../../assets/images/kafka/Putting-It-All-Together-Topics.png" alt="Putting-It-All-Together-Topics.png" style="max-width:50%;"/><!-- {"left" : 1.02, "top" : 4.29, "height" : 2.97, "width" : 8.21} -->
+<img src="../../assets/images/kafka/topics-partitions-1.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.29, "height" : 2.97, "width" : 8.21} -->
 
 
 Notes:
@@ -795,22 +786,28 @@ Notes:
 
  * A Kafka broker is a Java process that runs on a  node (machine / host)
      - Runs as a daemon (background process)
+
  * One broker daemon per node
+
  * Brokers are designed to run as cluster
- * One broker is designated as controller
-     - Selected automatically from all brokers
- * Controller
-     - `administrator` of cluster
-     - Monitors other brokers and handles failures
-     - Assigns partition ownership
- * Performance
-     - Usually bare metal preferred for performance  as opposed to virtualized machines
-     - A single broker can handle thousands of partitions and millions of messages
+
+ * Usually bare metal preferred for performance  as opposed to virtualized machines
+
+ * A single broker can handle thousands of partitions and millions of messages
 
 
 ---
 
 ## Broker Services
+
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/brokers-1.png"  style="max-width:40%;float:right;"/><!-- {"left" : 8.12, "top" : 2.34, "height" : 2.39, "width" : 1.98} -->
+
+ * **Cluster**
+     - One broker is designated as **controller / administrator** of cluster
+     - Selected automatically from all brokers
+     - Monitors other brokers and handles failures
+     - Assigns partition ownership
 
  * **Services to Producer**
      - Accepts messages from Producers
@@ -895,7 +892,7 @@ Notes:
 ---
 
 
-## Kafka Bundle
+## Kafka Directory Structure
 
 <img src="../../assets/images/kafka/3rd-party/Bundle-2.png" alt="Bundle-2.png" style="width:25%;float:right;"/><!-- {"left" : 6.83, "top" : 1.3, "height" : 3.81, "width" : 3.16} -->
 
@@ -957,8 +954,8 @@ $  bin/kafka-topics.sh  --zookeeper localhost:2181  --create
 
 $  bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test
 
-# Topic:test	PartitionCount:2	ReplicationFactor:1	Configs:	
-# Topic: # test	Partition: 0	Leader: 0	Replicas: 0	Isr: 0	
+# Topic:test	PartitionCount:2	ReplicationFactor:1	Configs:
+# Topic: # test	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
 # Topic: test	Partition: # 1	Leader: 0	Replicas: 0	Isr: 0
 
 ```
@@ -1000,11 +997,12 @@ Notes:
  *  **Builds on previous labs:**  
    - 1-install Kafka
 
- *  **Approximate Time:** 
+ *  **Approximate Time:**
    - 30 - 40 mins
 
  *  **Instructions:**  
-    - lab-2: labs/2-kafka-utils.md
+    - lab-2.1: kafka-utils.md
+    - (optional) lab-2.2: kafka-utils.md
 
  *  **To Instructor:**
 
@@ -1023,32 +1021,39 @@ Notes:
 
 ## Producing Messages
 
-<img src="../../assets/images/kafka/Kafka-Architecture-02.png"  style="max-width:30%;float:right;"/><!-- {"left" : 7.84, "top" : 1.17, "height" : 2.61 , "width" : 2.16} -->
+<!-- TODO shiva -->
 
+<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png" alt="Brokers-Leaders-Partitions-Replications.png" style="width:60%;float:right"/><!-- {"left" : 0.54, "top" : 2.56, "height" : 4.53, "width" : 9.16} -->
 
- * Producers create new messages
+ * Producers publish messages to Kafka
+
  * Producers typically don't care which partition to write to
- * They will balance writing across multiple partitions.-> Provides scale & load balancing
- * Each message has a  **unique offset within a partition**
-     - Increasing number (Long)
-     - Added by Kafka automatically when a message is written
- * Producers '**append**' messages to the end of partition
- * If messages have a '**key**'
-     - A particular key is guaranteed to be written to the same partition
-     - Done using hashing of key
-     - Guarantees message order within a key
+
+ * They will balance writing across multiple partitions.
+    - Provides scale & load balancing
 
 Notes:
 
 
+---
 
+## Producing Messages
 
+ * Producers '**append**' messages to the end of partition
+
+ * Each message has a  **unique offset within a partition**
+     - Increasing number (Long)
+     - Added by Kafka automatically when a message is written
+
+<img src="../../assets/images/kafka/topics-partitions-1.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.29, "height" : 2.97, "width" : 8.21} -->
 ---
 
 ## Writing To Partitions
 
 
  * Kafka randomly distributes data across partitions
+
+ * This distributes data across partitions and provides good load balancing
 
 <img src="../../assets/images/kafka/Writing-To-Partitions.png" alt="Writing-To-Partitions.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.84, "height" : 3.97, "width" : 8.21} -->
 
@@ -1057,12 +1062,13 @@ Notes:
 Notes:
 
 
-
-
 ---
 
 ## Writing With Keys
 
+ * If messages have a '**key**'
+     - A particular key is guaranteed to be written to the same partition
+     - Guarantees message order within a key
 
  * Kafka will 'hash' same key to same partition
 
@@ -1120,69 +1126,75 @@ Notes:
 
 Notes:
 
-
-
-
 ---
 
 ## Consuming Messages
 
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/consumer-1.png" style="width:40%;float:right;"/>
 
- * Consumers read messages off partitions
+* Consumers can subscribe one or more topics
 
- * Consumers can subscribe one or more topics
+* Consumers read messages from partitions
 
- * They read messages in order (within a partition)
+* They read messages in order (within a partition)
 
- * Resume from the  **offset**  of last message read
+* They may read in 'round-robin' way across partitions (load balancing)
 
- * This offset is stored in Kafka ( **offsets**  topic)
+---
 
- * Consumers can resume after a crash by starting from the last seen offset
+## Consuming Messages and Offsets
 
-<img src="../../assets/images/kafka/Commit-Log-02.png" alt="Commit-Log-02.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 5.64, "height" : 1.84, "width" : 8.21} -->
+<!-- TODO shiva -->
+* As consumers read messages, the **offsets are incremented**
+    - This is a **very fast** operation (just updating pointer within a file)
+    - That is why reading messages is very fast in Kafka
+
+* Kafka keeps track of the offsets
+    - They are stored in **__consumer_offsets**  topic
+
+<img src="../../assets/images/kafka/consumer-offsets-1.png" style="width:70%;"/>
+
+---
+
+## Resuming from a Crash
+
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/consumer-crash-1.png"  style="width:40%;float:right;"/>
+
+* Here consumer-1 starts from **offset=0**
+
+* Consumer-1 reads a few messages, offset get incremented to 5
+
+* Then consumer-1 crashes
+
+* Kafka remembers the last offset for Consumer-1 (offset=5)
+
+* When replacement consumer (Consumer-2) comes online, it will resume from where the last consumer left off  (offset=5)
+
 
 
 Notes:
-
-
 
 
 ---
 
 ## Consumer Group
 
+<!-- TODO shiva -->
 
- * Consumers belong to a  **consumer group**
+ * Consumers are assigned to a  **consumer group**
 
- * A consumer group is  **collection of consumers** that consume a particular topic
 
- * Group makes sure each partition is only processed by one consumer  (no duplicate processing)
-
- * One partition is only read by one consumer
+ * One partition is only read by one consumer in a group
+    - This prevents duplicate processing of an event by multiple consumers
 
  * One consumer can read one or more partitions (one to many relationship)
 
- * Partition to consumer is mapping is called  **ownership**
+
+<img src="../../assets/images/kafka/Consumer-Group.png"  style="width:80%;"/>
 
 Notes:
-
-
-
-
----
-
-## Consumer Group
-
-
-<img src="../../assets/images/kafka/Consumer-Group.png" alt="Consumer-Group.png" style="max-width:70%;"/><!-- {"left" : 0.31, "top" : 3.3, "height" : 3.04, "width" : 9.62} -->
-
-
-
-Notes:
-
-
-
 
 ---
 
@@ -1214,6 +1226,7 @@ Notes:
 
 ## Putting It All Together
 
+<!-- TODO shiva -->
 
  * Consumers can read at a different pace than producers
      - If consumers fall behind in processing, messages are safely stored in Kafka
@@ -1221,7 +1234,7 @@ Notes:
      - 1-consumer-to-1 partition  or1 consumer-to-many-partitions
  * If a consumer fails, partition ownership is assigned to other consumers ( **rebalancing** )
 
-<img src="../../assets/images/kafka/Putting-It-All-Together.png" alt="Putting-It-All-Together.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 4.77, "height" : 3.22, "width" : 8.21} -->
+<img src="../../assets/images/kafka/Putting-It-All-Together.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.77, "height" : 3.22, "width" : 8.21} -->
 
 
 
@@ -1234,10 +1247,11 @@ Notes:
 
 ## Partition Rebalance
 
+<!-- TODO shiva -->
 
  * When a new consumer joins a consumer group, partitions are re-assigned.
 
-<img src="../../assets/images/kafka/Partition-Rebalance.png" alt="Partition-Rebalance.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 3, "height" : 3.64, "width" : 8.21} -->
+<img src="../../assets/images/kafka/Partition-Rebalance.png" style="width:90%;"/><!-- {"left" : 1.02, "top" : 3, "height" : 3.64, "width" : 8.21} -->
 
 
 Notes:
@@ -1338,14 +1352,15 @@ Notes:
 
 ## Consumer Behavior
 
+<!-- TODO shiva -->
+<img src="../../assets/images/kafka/Consumer-Behavior-04.png" style="width:60%;float:right;"/><!-- {"left" : 2.66, "top" : 3.52, "height" : 4.07, "width" : 4.94} -->
 
  * Too many consumers.  Some are idle
 
-     - Not a good use of resources
+ * Not a good use of resources
 
  *  **Quiz: How can we fix this scenario?**
 
-<img src="../../assets/images/kafka/Consumer-Behavior-04.png" alt="Consumer-Behavior-04.png" style="max-width:40%;"/><!-- {"left" : 2.66, "top" : 3.52, "height" : 4.07, "width" : 4.94} -->
 
 
 
@@ -1540,8 +1555,10 @@ Notes:
 
 ## Review Questions
 
+<!-- TODO shiva -->
 
-<img src="../../assets/images/icons/quiz-icon.png"  style="width:30%;float:right;"/><!-- {"left" : 6.03, "top" : 1.26, "height" : 2.82, "width" : 4.23} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
 
 
  * How is Kafka different from

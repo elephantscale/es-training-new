@@ -103,7 +103,7 @@ By the end of the class... .
     - Your background (developer, admin, manager, etc.)
     - Technologies you are familiar with
     - Familiarity with Kafka  
-    (scale of 1 - 4 ;  1 - new, 2 - know some concepts,  3 - too a course, 4 -  using it at work)
+    (scale of 1 - 4 ;  1 - new, 2 - know some concepts,  3 - took a course, 4 -  using it at work)
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby  etc.)
 
