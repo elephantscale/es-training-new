@@ -1210,9 +1210,9 @@ Notes:
 
 * During training metrics are printed out on console
 * Controlled by __`verbose`__ flag
-    - verbose=0 : silent
-    - verbose=1 : progress bar
-    - verbose=2 : one line per epoch
+    - verbose=0: silent
+    - verbose=1: progress bar
+    - verbose=2: one line per epoch
 * Pros:
     - Easy to understand
     - No extra setup required
@@ -1223,6 +1223,7 @@ Notes:
 ```python
 model.fit (x_test, y_test, verbose=1)
 ```
+<!-- {"left" : 0, "top" : 6.3, "height" : 0.57, "width" : 6.94} -->
 
 ```text
 Train on 96 samples, validate on 24 samples
@@ -1232,6 +1233,7 @@ Epoch   1/100 [==============================] - loss: 2.1204 - accuracy: 0.9023
 ...
 Epoch 100/100 [==============================] - loss: 0.2375 - accuracy: 0.9583
 ```
+<!-- {"left" : 0, "top" : 7.24, "height" : 1.47, "width" : 10.25} -->
 
 ---
 
@@ -1252,9 +1254,10 @@ if 'val_acc' in history.history:
 # ...
 plt.show()
 ```
+<!-- {"left" : 0, "top" : 3.46, "height" : 2.15, "width" : 6.37} -->
 
-<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 2.72, "top" : 4.76, "height" : 3.59, "width" : 4.82} -->
-<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 2.78, "top" : 4.77, "height" : 3.5, "width" : 4.69} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 1.06, "top" : 5.8, "height" : 2.83, "width" : 3.81} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 5.04, "top" : 5.67, "height" : 3.09, "width" : 4.15} -->
 
 ---
 
@@ -1268,8 +1271,8 @@ plt.show()
     - History object available __only after__ the training is __complete__
     - So we won't
 
-<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 2.72, "top" : 4.76, "height" : 3.59, "width" : 4.82} -->
-<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 2.78, "top" : 4.77, "height" : 3.5, "width" : 4.69} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 0.29, "top" : 4.89, "height" : 3.59, "width" : 4.82} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 5.27, "top" : 4.94, "height" : 3.5, "width" : 4.69} -->
 
 ---
 
@@ -1297,9 +1300,10 @@ plt.show()
 
 ## TensorBoard
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/deep-learning/3rd-party/tensorboard.gif" style="width:60%;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
+<img src="../../assets/images/deep-learning/3rd-party/tensorboard.gif" style="width:60%;"/><!-- {"left" : 1.81, "top" : 1.14, "height" : 5.02, "width" : 6.64} -->
+
+
 
 [Image source](https://www.tensorflow.org/tensorboard/images/tensorboard.gif)
 
@@ -1318,6 +1322,7 @@ plt.show()
 ## Step 1: Run Tensorboard app - it will be monitoring a logs directory
 $   tensorboard --logdir=/tmp/tensorboard-logs
 ```
+<!-- {"left" : 0, "top" : 1.56, "height" : 0.7, "width" : 10.25} -->
 
 ```python
 ## Step 2: Setup Tensorboard in our application
@@ -1334,18 +1339,20 @@ tensorboard_logs_dir= os.path.join (tb_top_level_dir, app_name,
 print ("Saving TB logs to : " , tensorboard_logs_dir)
 # Saving TB logs to :  /tmp/tensorboard-logs/classification-iris-1/2020-02-05--18-47-10
 ```
+<!-- {"left" : 0, "top" : 2.7, "height" : 2.62, "width" : 10.25} -->
 
 ```python
 ## Step 3: provide tb-callback function during training
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=tensorboard_logs_dir, histogram_freq=1)
 ```
+<!-- {"left" : 0, "top" : 5.76, "height" : 0.5, "width" : 10.25} -->
+
 ---
 
 ## TensorBoard Log Directory
 
-<!-- TODO shiva  -->
+<img src="../../assets/images/deep-learning/tensorboard-2.png" style="width:60%;float:right;"/><!-- {"left" : 5.8, "top" : 1.05, "height" : 2.07, "width" : 4.27} -->
 
-<img src="../../assets/images/deep-learning/tensorboard-2.png" style="width:60%;float:right;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
 
 * Each application will write their own directory within logs directory
 
@@ -1363,8 +1370,12 @@ tensorboard-logs/
 └── app2__2020-01-01--12-33-00
 
 ```
+<!-- {"left" : 0, "top" : 6.8, "height" : 1.44, "width" : 5.78} -->
+
+
 
 ---
+
 ## Lab: Using TensorBoard
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->

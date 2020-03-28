@@ -200,8 +200,7 @@ Next major (and final) release of Keras will be 2.3
 
 ## Keras Model Zoos
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="float:right;width:40%;"/><!-- {"left" : 5.49, "top" : 1.14, "height" : 4.61, "width" : 4.61} -->
+<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="float:right;width:40%;"/><!-- {"left" : 6.99, "top" : 1.14, "height" : 3.11, "width" : 3.11} -->
 
   * A model zoo is a place wheres open-source models are shared so others can use them
 
