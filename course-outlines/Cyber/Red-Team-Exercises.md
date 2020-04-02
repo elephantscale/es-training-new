@@ -108,3 +108,5 @@ Lectures and hands on labs. (50%   50%)
     * Jacob G. Oakley
 * Hands-on Red Team Practice
     * Himanshu Sharma and Harpreet Singh    
+    
+    
