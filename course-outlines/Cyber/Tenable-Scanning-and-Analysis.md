@@ -1,28 +1,29 @@
 * Matthew is working on this.
-# Tenable. Scanning and Analysis
+# Tenable Scanning and Analysis
 
 (C) Copyright Elephant Scale
 
-March 30, 2020
+April 2, 2020
 
 ## Overview
-This course will teach Red Team Exercises - theory and practice
+This course will teach use of Tenable.sc for scan creation for vulnerability acquisition of data. There will also be coverage of tools for data analysis. Tenable.sc topics will include reporting options, report creation, report dissemination and advanced reporting for executives.
 
 ## Audience
-Hackers, Attackers
+Security professionals using Tenable.sc and Nessus products
 
 ## Skill Level
 Introductory - Intermediate
 
 ## Duration
-Five days
+Two days
 
 ## Format
 Lectures and hands on labs. (50%   50%)
 
 ## Prerequisites
 * Recommended: Cybersecurity awareness
-* Nice to have: Comfortable in Linux environment (be able to navigate Linux command line, run commands)
+* Recommended: Understanding of TCP/IP networking, operating systems security, common client/server applications
+* Nice to have: Unix/Linux command line experience, common TCP/IP network protocols
 
 
 ## Lab environment
@@ -36,76 +37,49 @@ Lectures and hands on labs. (50%   50%)
 
 ## Detailed outline
 
-### Red Teams in Cyberspace
-* Why Human Hackers
-* Innovation and Automation
-* Modeling Technology
-* Nonpivot Technology
-* Pivoting and Exploiting Technology
-* Automation Advantages and Disadvantages
-* Example Scenarios
-* Threat Hunting
+### Introduction to Tenable's Unified Security Monitoring Approach
 
-### The State of Modern Offensive Security
+* Cybersecurity overview
+* Overview of integrated security approach
+* Tenable Securitycenter
 
-* The Challenge of Advanced Persistent Threats
-* No Rules of Engagement
-* Environmental Challenges
-* Regulatory Standards
-* Adversarial Customers
-* Technical Personnel
-* Effective Red Team Staffing        
+### Tenable's Resources
 
-### Shaping
-* Who
-    * Customer Technical Personnel
-    * Customer Operational Personnel
-    * Provider Technical Personnel
-    * Provider Operational Personnel
-* When
-    * Preventing Incidents
-    * Balancing Scope Attributes
-* What
-    * Motivation of the Assessment
-    * Prior Testing
-    * Existing Security
-    * Scope Footprint
-    * Inorganic Constraints    
+* Introduction to Tenable's offerings
+* Tenable's online resource center
+* Application of Securitycenter to cybersecurity       
 
-### Rules of Engagement
-* Activity Types
-* Physical
-* Social Engineering
-* External Network
-* Internal Network
-* Pivoting
-* Wireless Network
-* Category
-* Escalation of Force
-* Incident Handling
-* Tools
-* Certification Requirements
-* Personnel Information        
+### Event, Vulnerability and Compliance Data
+* Event data using Log Correlation Engine
+* Vulnerability database in Securitycenter
+* Simplifying compliance reporting
 
-### Reporting
-* Necessary Inclusions
-* Types of Findings
-* Exploited Vulnerabilities
-* Nonexploited Vulnerabilities
-* Technical Vulnerabilities
-* Nontechnical Vulnerabilities
-* Documenting Findings
-* Findings Summaries
-* Individual Findings
-* Briefing
-* The No-Results Assessment
+### Securitycenter User Interface
 
-### What is Next?        
+* Introduction to the UI of Securitycenter  
 
-### Books
-* Physical Red Team Operations
-    * By: Jeremiah Talamantes
-* Professional Red Teaming
-    * Jacob G. Oakley
-* Hands-on Red Team Practice
-    * Himanshu Sharma and Harpreet Singh    
+### Vulnerability and Compliance Scan Automation
+
+* Vulnerability and compliance scanning
+* Setting up automated scans of vulnerabilities
+
+### Data Analysis and Queries     
+
+* Analysis of scan vulnerability data
+* Performing queries of databases
+
+### Workflow - Alerting and Ticketing
+
+* Setting up workflows
+* Creating alerts from vulnerability scans
+* Ticketing and documentation of cybersecurity anomalies
+
+### Securitycenter Dashboard
+
+* Customizing dashboards from vulnerability and compliance data
+* Creating charts and visualizations from the vulnerability data
+
+### Advanced Reporting
+
+* Generating custom reports in Securitycenter
+* Configuring reports to details of scans
