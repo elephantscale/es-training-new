@@ -1,4 +1,4 @@
-* Matthew is working on this.
+
 # Tenable Scanning and Analysis
 
 (C) Copyright Elephant Scale
