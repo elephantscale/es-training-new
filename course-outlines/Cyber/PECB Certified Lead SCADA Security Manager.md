@@ -40,7 +40,37 @@ Lectures and hands on labs. (50%   50%)
 ### Introduction to SCADA and ICS
 * Course objective and structure
 * Fundamental principles and concepts of SCADA and SCADA Security
-* Industrial Control Systems (ICS) characteristics, threats and vulnerabilities
+    *  What is SCADA?
+    *  SCADA architecture
+    *  SCADA Protocols
+    *  SCADA Security Standards
+
+* Industrial Control Systems (ICS)
+    * What is ICS?
+    * Types of Industrial Control systems
+    * ICS components
+    * Control Systems strengths and weaknesses
+
+###  Operation, Design and Vulnerabilities
+* Learn how to simply a complex ICS architecture in terms of resources
+* Understand why ICS "operational" security is different from traditional IT "information" security
+* Understand why ICS are more vulnerable to cyber threats than other IT assets
+* Understand the typical vulnerabilities that exist within ICS architectures
+
+### Networking and Industrial Protocols
+* Understand the OSI 7-Layer Model
+* Learn important Networking Terminology and Concepts
+* Understand common Protocols, Ports and Services
+* Understand the difference between Routers and Firewalls
+* Understand Network Data Analysis
+* Learn about Fieldbus Industrial Protocols
+* Learn about Backend Industrial Protocols
+
+### Standards and Best Practices for Industrial Security [1h30m]
+* Understand governmental impact on standards and regulations around cyber security
+* Gain insight into the varous cyber security standards and best practices, and how they can be used "concurrently"
+* Understand the difference between "compliance" standards and "performance" standards
+* Familiarize yourself with "industry" specific standards relating to cyber security
 
 ### Designing a Security Program and Network Security Architecture:
 * SCADA Security program
@@ -62,16 +92,16 @@ Lectures and hands on labs. (50%   50%)
 * Documentation of the test, quality review and report
 * Maintaining a testing program
 * Competence and evaluation of SCADA Security Managers
-* Closing the training
+
 
 
 
 ### What is Next?        
 
 ### Books
-* SCADA Security What's broken and how to fix it
-    * By: Andrew Ginter
-* Cyber-security of SCADA and Other Industrial Control Systems
-    * By: Edward J. M. Colbert
+* Industrial Network Security: Securing Critical Infrastructure Networks for Smart Grid, SCADA, and Other Industrial Control Systems
+    *  By Eric D. Knapp and Joel Thomas Langill
+* Applied Cyber Security and the Smart Grid: Implementing Security Controls into the Modern Power Infrastructure
+    *  By Eric D. Knapp and Raj Samani
 * Hacking Exposed Industrial Control Systems: ICS and SCADA Security Secrets & Solutions
     * By: Clint Bodungen and Bryan Singer  
