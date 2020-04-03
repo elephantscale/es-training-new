@@ -7,18 +7,4 @@
 ## (-d will cleanup  current assembly.out)
 
 
-./slides/About-Kafka-Class-2-days.md
-./slides/About-Kafka-Class-3-days.md
-./slides/About-Kafka-Class-4-days.md
-./slides/Kafka-Admin.md
-./slides/Kafka-API.md
-./slides/Kafka-Best-Practices.md
-./slides/Kafka-Case-Studies.md
-./slides/Kafka-Confluent.md
-./slides/Kafka-Connect.md
 ./slides/Kafka-Intro.md
-./slides/Kafka-Metrics.md
-./slides/Kafka-Streams.md
-./slides/Kafka-Workshop.md
-./slides/KSQL.md
-./slides/zookeeper-primer.md

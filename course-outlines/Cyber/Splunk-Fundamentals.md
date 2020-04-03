@@ -1,15 +1,15 @@
 * Matthew is working on this.
-# Tenable Scanning and Analysis
+# Splunk Fundamentals
 
 (C) Copyright Elephant Scale
 
 April 2, 2020
 
 ## Overview
-This course will teach use of Tenable.sc for scan creation for vulnerability acquisition of data. There will also be coverage of tools for data analysis. Tenable.sc topics will include reporting options, report creation, report dissemination and advanced reporting for executives.
+This course will cover the fundamentals of the Splunk search program. 
 
 ## Audience
-Security professionals using Tenable.sc and Nessus products
+IT professionals, Data Analysts, Software Developers
 
 ## Skill Level
 Introductory - Intermediate
