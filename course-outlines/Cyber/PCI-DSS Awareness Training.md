@@ -1,6 +1,6 @@
 *  William is working on This
 
-# PCI-DSS Awareness Training
+# PCI-DSS(Payment Card Industry Data Security Standard) Awareness Training
 
 (C) Copyright Elephant Scale
 
@@ -10,7 +10,7 @@ March 30, 2020
 This course will teach about the Payment Card Industry Data Security Standard.  Learn proper collection and storage of payment card data and become familiar with method to protect payment card data.
 
 ## Audience
-Hackers, Attackers
+Business professionals, IT, Risk analysts, Compliance officers
 
 ## Skill Level
 Introductory - Intermediate
@@ -39,33 +39,42 @@ Lectures and hands on labs. (50%   50%)
 
 ### Introduction to Payment Card Industry Standards
 * Course Introduction
-* PCI/DSS
-* Identifying Payment Card data
-* Threats
-* Cost and Penalties
+* What is PCI/DSS?
+* Payment Card Basics
+* Current Payments Era and Insight into Future
+* Card Anatomy
+* PCI Data Security Standard
+* PCI Compliance and Importance
 
-### Collection and Storage of Payment Card Data
-* Minimizing Collection
-* Data Storage
-* Physical Security
-* Data Disposal
+### PCI Standards Familiarity
+* Structure of PCI Standards
+* Assessment Environment
+* Application compliance
+* Payment Application Data Security Standard
+* Best practices to ensure Security of Cardholder data
+* Mandatory Regulatory requirements
 
-### Protecting your Credit Card Data
-* Passwords
-* Protecting the Network
-* Checking for Tampering
+### Payment Security with PCI Standards and guidelines against security threats
+* Protecting CHD from Malware
+* Phishing & Social Engineering Attacks
+* Skimming
+* Data Breaches
 
-### Preparing For and Passing Your Audit
-* Compensating Controls
-* Policy Template
-* Prioritized Approach
-* Scoping
-* Summary
+### PCI Data Security Standard
+* Relationship between PCI DSS & PA DSS
+* PCI Scope Identification and Reduction
+* PCI DSS Objectives and requirements
+
+##  Overview of PCI DSS Requirements
+* Building and maintaining secure network
+* Implementing Controlled access
+* Protecting Cardholder data
+* Build and Maintain Secure network
 
 ### What is Next?        
 
 ### Books
-* PSI Compliance Version 3.2 - The Latest on PCI DSS Compliance
-    * By:  Dr. Branden R. Williams and James K. Adamson
 * PCI DSS 3.2 - A Comprehensive Understanding to Effectively Achieve PCI DSS Compliance
     * By: Haseen Usman Ahmed
+* PSI DSS made easy
+    * By: Yvest B. Desharnais and Francois Desharnais
