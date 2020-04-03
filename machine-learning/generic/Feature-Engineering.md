@@ -345,8 +345,8 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 
  * May be an 'apples-to-apples' comparison would be 'price per sq. foot'
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/machine-learning/feature-envgineering-1.png"  style="width:40%;float:right;"/> <!-- {"left" : 4.33, "top" : 4.64, "height" : 2.64, "width" : 5.47} -->
+<img src="../../assets/images/machine-learning/feature-envgineering-1.png"  style="width:40%;float:right;"/> <!-- {"left" : 5.21, "top" : 2.19, "height" : 2.35, "width" : 4.88} -->
+
 
 
 | City           | House Price   |
@@ -356,7 +356,7 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 | San Francisco  | 1,000 k (1 M) |
 | Gilroy         | 700 k         |
 
-<!-- {"left" : 0.49, "top" : 4.95, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
+<!-- {"left" : 0.75, "top" : 6.25, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
 
 
 

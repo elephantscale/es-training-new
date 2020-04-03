@@ -1,7 +1,7 @@
 # State of AI NLP
 
-<!-- TODO shiva -->
-<img src="../../assets/images/AI/3rd-party/NLP-1.jpg" style="width:45%;"/>  
+<img src="../../assets/images/AI/3rd-party/NLP-1.jpg" style="width:45%;"/>  <!-- {"left" : 4.7, "top" : 6.84, "height" : 2.02, "width" : 3.54} -->
+
 
 ---
 
