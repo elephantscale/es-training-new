@@ -5,12 +5,11 @@
 ---
 
 ## Objectives
-- Learn about advantages of Cloud Computing 
+- Learn about advantages of Cloud Computing
 - Learn about fetures of Google Cloud
 
 ---
-
-## Cloud Advantages
+# Cloud Advantages
 
 [Cloud-Advantages.md](Cloud-Advantages.md)
 

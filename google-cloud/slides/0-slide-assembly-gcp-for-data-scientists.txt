@@ -5,7 +5,7 @@
 ../google-cloud-for-data-scientists.pdf
 
 ## About
-About-Google-Cloud-for-Data-Scienctist-Class.md
+About-Google-Cloud-for-Data-Scientist-Class.md
 
 ../../python/slides/Data_Science_Intro.md
 ../../python/Data-Scientist-Skill-Matrix.xlsx
