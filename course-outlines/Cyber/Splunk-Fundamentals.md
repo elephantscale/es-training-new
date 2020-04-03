@@ -6,7 +6,7 @@
 April 2, 2020
 
 ## Overview
-This course will cover the fundamentals of the Splunk search program. 
+This course will cover the fundamentals of the Splunk search program.
 
 ## Audience
 IT professionals, Data Analysts, Software Developers
@@ -15,7 +15,7 @@ IT professionals, Data Analysts, Software Developers
 Introductory - Intermediate
 
 ## Duration
-Two days
+Five days
 
 ## Format
 Lectures and hands on labs. (50%   50%)
@@ -37,49 +37,74 @@ Lectures and hands on labs. (50%   50%)
 
 ## Detailed outline
 
-### Introduction to Tenable's Unified Security Monitoring Approach
+### Introduction to Splunk
 
-* Cybersecurity overview
-* Overview of integrated security approach
-* Tenable Securitycenter
 
-### Tenable's Resources
 
-* Introduction to Tenable's offerings
-* Tenable's online resource center
-* Application of Securitycenter to cybersecurity       
+### Search Fundamentals
 
-### Event, Vulnerability and Compliance Data
-* Event data using Log Correlation Engine
-* Vulnerability database in Securitycenter
-* Simplifying compliance reporting
 
-### Securitycenter User Interface
 
-* Introduction to the UI of Securitycenter  
+### Transforming Commands for Visualizations
 
-### Vulnerability and Compliance Scan Automation
 
-* Vulnerability and compliance scanning
-* Setting up automated scans of vulnerabilities
+### Mapping and Single Value Commands
 
-### Data Analysis and Queries     
 
-* Analysis of scan vulnerability data
-* Performing queries of databases
 
-### Workflow - Alerting and Ticketing
+### Filtering and Formatting Results
 
-* Setting up workflows
-* Creating alerts from vulnerability scans
-* Ticketing and documentation of cybersecurity anomalies
 
-### Securitycenter Dashboard
+### Correlating Events     
 
-* Customizing dashboards from vulnerability and compliance data
-* Creating charts and visualizations from the vulnerability data
 
-### Advanced Reporting
 
-* Generating custom reports in Securitycenter
-* Configuring reports to details of scans
+### Knowledge Objects
+
+
+
+### Creating and Managing Fields
+
+
+
+### Field Aliases and Field Calculation
+
+
+### Tags and Event Types
+
+
+### Workflow Actions
+
+
+### Data Models
+
+
+### The Common Information Model (CIM)
+
+
+
+### Statistical Commands
+
+
+### Eval Command Functions
+
+
+### Lookups
+
+
+### Alerts
+
+
+### Advanced Field Management
+
+
+### Self-Describing Data and Files
+
+
+### Search Macros
+
+
+### Acceleration Options 1: Reports and Summary Indexing
+
+
+### Acceleration Options 2: Data Models and TSIDX Files
