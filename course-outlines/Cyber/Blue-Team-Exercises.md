@@ -1,7 +1,7 @@
 Blue Team Exercises
 ===================
 
-1.  Copyright Elephant Scale
+(C) Copyright Elephant Scale
 
 April 5, 2020
 
