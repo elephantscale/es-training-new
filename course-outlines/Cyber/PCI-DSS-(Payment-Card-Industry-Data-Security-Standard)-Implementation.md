@@ -1,5 +1,3 @@
-*  William is working on This
-
 # PCI-DSS Implementation
 
 (C) Copyright Elephant Scale

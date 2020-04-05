@@ -1,4 +1,3 @@
-* Matthew is working on this.
 # Splunk Fundamentals
 
 (C) Copyright Elephant Scale

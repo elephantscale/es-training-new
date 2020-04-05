@@ -1,5 +1,3 @@
-*  William is working on This
-
 # PCI-DSS(Payment Card Industry Data Security Standard) Awareness Training
 
 (C) Copyright Elephant Scale
@@ -24,7 +22,6 @@ Lectures and hands on labs. (50%   50%)
 ## Prerequisites
 * Recommended: Familiarity with security compliance.
 * Nice to have: Comfortable in Linux environment (be able to navigate Linux command line, run commands)
-
 
 ## Lab environment
 * Zero Install: There is no need to install software on students' machines!

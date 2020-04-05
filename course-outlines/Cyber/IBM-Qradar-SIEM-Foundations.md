@@ -1,4 +1,3 @@
-
 # IBM QRadar SIEM Foundations
 
 (C) Copyright Elephant Scale

@@ -5,24 +5,22 @@
 April 4, 2020
 
 ## Overview
-This course will cover advanced topics of IBM QRadar SIEM. This is intended as the follow-up to IBM QRadar SIEM Foundations. Specifically, this will focus more on installation and configuring of the QRadar system, data management, advanced filtering, advanced searching with AQL, and analyzing a simulated large scale attack.
+This course will cover Cybersecurity defences using Fidelis and other tools
 
 ## Audience
-Security professionals using QRadar, IT professionals, System Administrators responsible for implementing and configuring QRadar SIEM
+Security professionals, penetration testers, developers looking to secure their code
 
 ## Skill Level
-Advanced
+Intermediate to advanced
 
 ## Duration
-Two days
+Five days
 
 ## Format
 Lectures and hands on labs. (50%   50%)
 
 ## Prerequisites
-* Required : IBM QRadar SIEM Foundations or Equivalent
 * Recommended: Cybersecurity awareness, IT Security experience
-* Recommended: Understanding of TCP/IP networking, Syslog
 * Nice to have: Linux command line experience, common TCP/IP network protocols
 
 

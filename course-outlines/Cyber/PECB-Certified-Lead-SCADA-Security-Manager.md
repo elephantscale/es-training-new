@@ -1,5 +1,3 @@
-* William is working on it
-
 # PECB Certified Lead SCADA Security Manager
 
 (C) Copyright Elephant Scale

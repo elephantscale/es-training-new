@@ -14,7 +14,7 @@ Security professionals using QRadar, IT professionals, System Administrators res
 Advanced
 
 ## Duration
-Two days
+Five days
 
 ## Format
 Lectures and hands on labs. (50%   50%)
