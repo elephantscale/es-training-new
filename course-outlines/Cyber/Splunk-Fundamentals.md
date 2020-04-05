@@ -171,53 +171,17 @@ Lectures and hands on labs. (50%   50%)
 * Directory structure of an index
 * When to create more indexes
 * Testing data
-The lifecycle of a bucket
-Sizing an index
-Using volumes to manage multiple indexes
-Deploying the Splunk binary
-Deploying from a tar file
-Deploying using msiexec
-Adding a base configuration
-Configuring Splunk to launch at boot
-Using apps to organize configuration
-Separate configurations by purpose
-Configuration distribution
-Using your own deployment system
-Using Splunk deployment server 354
-355
-356
-358
-359
-359
-360
-360
-361
-361
-366
-366
-367
-Using LDAP for authentication
-Using Single Sign On
-Load balancers and Splunk
-web
-splunktcp
-deployment server
-Multiple search heads
-Summary 374
-375
-376
-376
-376
-377
-377
-378
-Step 1 – Deciding where your deployment server will run
-Step 2 – Defining your deploymentclient.conf configuration
-Step 3 – Defining our machine types and locations
-Step 4 – Normalizing our configurations into apps appropriately
-Step 5 – Mapping these apps to deployment clients in serverclass.conf
-Step 6 – Restarting the deployment server
-Step 7 – Installing deploymentclient.conf
+* The lifecycle of a bucket
+* Sizing an index
+* Using volumes to manage multiple indexes
+* Deploying the Splunk binary
+* Configuring Splunk to launch at boot
+* Using apps to organize configuration
+* Using your own deployment system
+* Using Splunk deployment server 354
+* Using LDAP for authentication
+* Using Single Sign On
+* Load balancers and Splunk
 ### Extending Splunk
 * Writing a scripted input to gather data
 * Capturing script output with no date
