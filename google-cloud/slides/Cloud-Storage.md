@@ -33,8 +33,47 @@
 
 <img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:45%;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
 
+---
+
+## Data Locality vs. Network Data
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:35%;float:right;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+
+* Hadoop/Spark systems emphasized 'data local' processing
+
+* Works well on high speed networks (1 GB)
+
+* Google built the next gen network for their data centers  using custom hardware, software, network switches ([source](https://cloudplatform.googleblog.com/2015/06/A-Look-Inside-Googles-Data-Center-Networks.html))
+
+* It can deliver more than **1 Petabit/sec** of total bisection bandwidth.
+
+* To put this in perspective,
+    - enough for 100,000 servers to exchange information at 10Gb/s each
+    - enough to read the entire scanned contents of the Library of Congress in less than 1/10th of a second
 
 ---
+## Data Locality vs. Network Data
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:35%;float:right;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+
+* **'Data Locality'** (Storage and Compute on same node) works well
+
+* How ever, cluster size is typically fixed.
+
+* It is hard to scale cluster dynamically (scaling from 10 nodes --> to 20 nodes)
+
+* when separating storage & compute, clusters can be scaled dynamicaly
+
+* How ever, this does require a lot of bandwidth (like Petabit/sec!)
+
+---
+
 ## Storage Classes
 
 <img src="../../assets/images/google-cloud/3rd-party/google-cloud-storage-classes-1.png" style="width:80%;"/>  <!-- {"left" : 1.04, "top" : 1.25, "height" : 4.03, "width" : 8.17} -->  
