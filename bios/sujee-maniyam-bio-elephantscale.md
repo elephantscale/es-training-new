@@ -24,4 +24,5 @@
 
 * Contact:
     - [ElephantScale.com](http://elephantscale.com)
+    - [https://www.linkedin.com/in/sujeemaniyam](https://www.linkedin.com/in/sujeemaniyam)
     - sujee@elephantscale.com
