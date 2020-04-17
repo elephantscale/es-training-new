@@ -17,4 +17,5 @@
 * Open source contributor : [github.com/sujee](https://github.com/sujee)
 
 * Contact:
+    - [https://www.linkedin.com/in/sujeemaniyam](https://www.linkedin.com/in/sujeemaniyam)
     - sujee@sujee.net
