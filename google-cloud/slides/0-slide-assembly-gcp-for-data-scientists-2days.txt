@@ -1,0 +1,33 @@
+
+## outline
+
+## Day-1
+../google-cloud-for-data-scientists.pdf
+
+## About
+About-Google-Cloud-for-Data-Scientist-Class-2days.md
+
+../../python/slides/Data_Science_Intro.md
+
+../../python/Data-Scientist-Skill-Matrix.xlsx
+
+Google-Cloud-Intro.md
+
+Cloud-Compute.md
+
+Cloud-Storage.md
+
+Data-Analytics-on-Google-Cloud.md
+
+Data-Studio.md
+
+Big-Query.md
+
+../../machine-learning/generic/Data-Exploration.md
+
+
+## Spark Intro
+$ES_HOME/es-training/spark/slides/v2/SPARK__Intro.pptx
+$ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-2.pptx
+
+Dataproc.md
