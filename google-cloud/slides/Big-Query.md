@@ -302,13 +302,13 @@ Notes:
 
 * [Reference](https://www.troposphere.tech/wp-content/uploads/2019/06/BigQuery-Query-Optimization-with-Troposphere.pdf?x10155)
 
-<img src="../../assets/images/google-cloud/bigquery-architecture-1.png" style="width:   85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/3rd-party/bigquery-architecture-1.png" style="width:   85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 ## Dremel Architecture
 
 <!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/dremel-architecture-1.png" style="width:   85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/3rd-party/dremel-architecture-1.png" style="width:   85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * [Reference](https://www.troposphere.tech/wp-content/uploads/2019/06/BigQuery-Query-Optimization-with-Troposphere.pdf?x10155)
 
@@ -317,7 +317,7 @@ Notes:
 
 
 <!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/dremel-query-execution-1.png" style="width:   85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/3rd-party/dremel-query-execution-1.png" style="width:   85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * [Reference](https://www.troposphere.tech/wp-content/uploads/2019/06/BigQuery-Query-Optimization-with-Troposphere.pdf?x10155)
 
@@ -407,10 +407,8 @@ Notes:
 ## Querying
 
 * Let's find the top-10 type of subscribers who rent bikes
-
-* The query is done in 0.5 secs!
-
-<img src="../../assets/images/google-cloud/bigquery-query-4.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+* **Job information** tells us more details
+    - The query is done in 0.5 secs!
 
 ```sql
 SELECT subscriber_type , count(*) as trip_count
@@ -420,8 +418,8 @@ order by trip_count desc
 LIMIT 10
 ```
 
-* **Job information** tells us more details
 
+<img src="../../assets/images/google-cloud/bigquery-query-4.png" style="width:25%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 <img src="../../assets/images/google-cloud/bigquery-query-5.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 
@@ -476,9 +474,9 @@ ORDER BY cnt DESC
 
 * **Instructions:**
     - Please complete the following labs
-    - **BIGQUERY-1**
-    - **BIGQUERY-2**
-    - **BIGQUERY-3**
+    - Instructor to demo: **BIGQUERY-1**: Query a public dataset (IRS-990)
+    - **BIGQUERY-2**: Query another public dataset (austin-bikeshare)
+    - **BIGQUERY-3**: Importing our own data into BigQuery
 
 
 Notes:
