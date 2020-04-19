@@ -7,8 +7,8 @@
 
 ## Objectives
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/google-big-query-logo-1.png" style="width:40%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/logos/google-big-query-logo-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.88, "top" : 1.03, "height" : 1.99, "width" : 4.68} -->
+
 
 * Understand Google Big Query
 
@@ -18,8 +18,7 @@
 
 ## Data warehouses
 
-<!-- TODO shiva -->
-<img src="../../assets/images/bigdata/data-warehouse-1.png" style="width:40%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/bigdata/data-warehouse-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.78, "top" : 1.1, "height" : 3.03, "width" : 4.26} -->
 
 * Organizations rely on data warehouses to store and query the data they have
 
@@ -33,9 +32,7 @@ Notes:
 
 ## Traditional Data Warehouses
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/bigdata/3rd-party/gartner-data-warehouse-2013.png" style="width:40%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/bigdata/3rd-party/gartner-data-warehouse-2013.png" style="width:40%;float:right;"/><!-- {"left" : 5.91, "top" : 1.1, "height" : 4.27, "width" : 4.17} -->
 
 * In house data warehouses are domintad by companies like IBM, Oracle, SAP ..etc
 
@@ -45,10 +42,9 @@ Notes:
 
 ## Hadoop
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/hadoop-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/logos/hadoop-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 8.56, "top" : 0.98, "height" : 0.37, "width" : 1.58} -->
 
-<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:50%;float:right;clear:both;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:50%;float:right;clear:both;"/><!-- {"left" : 6.94, "top" : 1.42, "height" : 1.48, "width" : 3.25} -->
 
 * Around 2006, Yahoo developed Hadoop
 
@@ -75,8 +71,9 @@ Notes:
 
 * Also Hadoop is open source with commercial support available (Cloudera)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:50%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:50%;"/><!-- {"left" : 2.07, "top" : 5.32, "height" : 2.78, "width" : 6.12} -->
+
+
 
 ---
 
@@ -94,8 +91,8 @@ Notes:
 
 * Trend: Cloud based data warehouses are becoming prominent
 
-<!-- TODO shiva -->
-<img src="../../assets/images/bigdata/3rd-party/gartner-data-warehouse-2018.png" style="width:45%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/bigdata/3rd-party/gartner-data-warehouse-2018.png" style="width:45%;"/><!-- {"left" : 2.47, "top" : 2.41, "height" : 5.54, "width" : 5.31} -->
+
 
 ---
 
@@ -113,11 +110,8 @@ Notes:
 * Snowflake (cloud neutral)
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/aws-redshift-logo-1.png" style="width:20%;"/> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/azure-logo-2.png" style="width:20%;"/> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/google-big-query-logo-1.png" style="width:20%;"/> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/snowflake-logo-1.png" style="width:20%;"/> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/aws-redshift-logo-1.png" style="width:20%;"/><!-- {"left" : 0.24, "top" : 5.69, "height" : 0.87, "width" : 1.64} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/azure-logo-2.png" style="width:20%;"/><!-- {"left" : 2.08, "top" : 5.76, "height" : 0.72, "width" : 2.22} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/google-big-query-logo-1.png" style="width:20%;"/><!-- {"left" : 4.13, "top" : 5.48, "height" : 1.29, "width" : 3.03} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/snowflake-logo-1.png" style="width:20%;"/> <!-- {"left" : 6.97, "top" : 5.77, "height" : 0.72, "width" : 3.04} -->
+
 
 ---
 ## Cloud Data Warehouse Advantages
@@ -134,8 +128,9 @@ Notes:
 
 # Introducing Google BigQuery
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/google-big-query-logo-1.png" style="width:50%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/logos/google-big-query-logo-1.png" style="width:50%;"/><!-- {"left" : 3.9, "top" : 6.61, "height" : 2.23, "width" : 5.23} -->
+
+
 
 ---
 
@@ -161,11 +156,12 @@ Notes:
 
 ## BigQuery Intro
 
-<img src="../../assets/images/books/google-big-query-9781492044451.jpeg" style="width:20%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/books/google-big-query-9781492044451.jpeg" style="width:20%;float:right;"/><!-- {"left" : 7.6, "top" : 1, "height" : 3.32, "width" : 2.53} -->
 
-* Product page : https://cloud.google.com/bigquery
 
-* Documentation : https://cloud.google.com/bigquery/docs
+* Product page: https://cloud.google.com/bigquery
+
+* Documentation: https://cloud.google.com/bigquery/docs
 
 * Book: **Google BigQuery: The Definitive Guide**  ([Oreilly](https://www.oreilly.com/library/view/google-bigquery-the/9781492044451/),  [Amazon](https://www.amazon.com/Google-BigQuery-Definitive-Warehousing-Analytics/dp/1492044466/))
 
@@ -173,8 +169,9 @@ Notes:
 
 * [Intro video](https://www.youtube.com/watch?v=ufJ2W3EHIgA)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/bigquery-video-1.png" style="width:38%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/google-cloud/3rd-party/bigquery-video-1.png" style="width:38%;"/><!-- {"left" : 2.83, "top" : 5.67, "height" : 2.6, "width" : 4.59} -->
+
+
 
 ---
 
@@ -185,9 +182,8 @@ Notes:
     - No need to worry about spinning up machine, maintaining them and shutting them down
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/serverless-computing-1.jpg" style="width:45%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
-<img src="../../assets/images/google-cloud/3rd-party/serverless-computing-2.png" style="width:45%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/google-cloud/3rd-party/serverless-computing-1.jpg" style="width:45%;"/><!-- {"left" : 0.28, "top" : 4, "height" : 2.15, "width" : 4.21} --> &nbsp;  &nbsp; <img src="../../assets/images/google-cloud/3rd-party/serverless-computing-2.png" style="width:45%;"/><!-- {"left" : 4.72, "top" : 4, "height" : 2.15, "width" : 5.25} -->
+
 
 ---
 
@@ -197,8 +193,10 @@ Notes:
     - This architecture allows to scale up compute resources as needed
     - Also same storage can feed the compute - no need to replicate data
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:45%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:45%;"/><!-- {"left" : 1.29, "top" : 3.45, "height" : 4.65, "width" : 7.67} -->
+
+
+
 ---
 
 ## BigQuery Features
@@ -221,9 +219,8 @@ Notes:
     - Inserted data is ready for analysis immediately
     - Can also leverage **Google Pub/Sub** technology to directly stream into BigQuery
 
-<!-- TODO shiva -->
-<img src="../../assets/images/streaming/3rd-party/streaming-data.png" style="width:45%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
-<img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" style="width:30%;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/streaming/3rd-party/streaming-data.png" style="width:45%;"/><!-- {"left" : 0.35, "top" : 4.3, "height" : 2.39, "width" : 5.61} --> &nbsp;  &nbsp; <img src="../../assets/images/streaming/3rd-party/Streaming-Primer-Moving-Towards-Fast-Data-Version-2-3.png" style="width:30%;"/><!-- {"left" : 6.29, "top" : 4.3, "height" : 2.39, "width" : 3.61} -->
+
 
 ---
 
@@ -234,8 +231,9 @@ Notes:
     - All this is handled automatically and transparently
     - No extra charge, and no additional setup!
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/sql-logo-1.png" style="width:30;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/logos/sql-logo-1.png" style="width:30;float:right;"/><!-- {"left" : 7.31, "top" : 2.77, "height" : 2.27, "width" : 3.03} -->
+
+
 * **Standard SQL**
     - **"Every one knows SQL"**
     - ANSI-2011 SQL is supported
@@ -245,21 +243,21 @@ Notes:
 
 ## Datasets Readily Availble
 
-<!-- TODO shiva -->
 
 * BigQuery comes pre-loaded with many datasets: public and premium
 
-<img src="../../assets/images/logos/nasa-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
-<img src="../../assets/images/logos/noaa-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
-<img src="../../assets/images/logos/united-states-census-bureau-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/logos/nasa-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 8.54, "top" : 1.81, "height" : 1.61, "width" : 1.61} --> <img src="../../assets/images/logos/noaa-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 8.6, "top" : 3.31, "height" : 1.48, "width" : 1.48} --><img src="../../assets/images/logos/united-states-census-bureau-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 8.6, "top" : 4.61, "height" : 1.48, "width" : 1.48} -->
+
+
 * Public Datasets
     - NASA data
     - NOAA weather data
     - Census data
     - https://cloud.google.com/public-datasets
 
-<img src="../../assets/images/logos/accuweather-logo-1.png" style="width:11%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
-<img src="../../assets/images/logos/dowjones-logo-1.png" style="width:10%;float:right;"/><!-- {"left" : 3.85, "top" : 6.2, "height" : 2, "width" : 4.69} -->
+<img src="../../assets/images/logos/accuweather-logo-1.png" style="width:11%;float:right;"/><!-- {"left" : 8.83, "top" : 6.68, "height" : 0.91, "width" : 1.02} --> <img src="../../assets/images/logos/dowjones-logo-1.png" style="width:10%;float:right;"/><!-- {"left" : 7.62, "top" : 6.68, "height" : 0.91, "width" : 0.91} -->
+
+
 * Commercial data providers
     - Accuweather
     - Dow Jones
@@ -302,13 +300,14 @@ Notes:
 
 * [Reference](https://www.troposphere.tech/wp-content/uploads/2019/06/BigQuery-Query-Optimization-with-Troposphere.pdf?x10155)
 
-<img src="../../assets/images/google-cloud/3rd-party/bigquery-architecture-1.png" style="width:   85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/3rd-party/bigquery-architecture-1.png" style="width:85%;"/><!-- {"left" : 0.52, "top" : 3.68, "height" : 2.89, "width" : 9.22} -->
+
 
 ---
 ## Dremel Architecture
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/dremel-architecture-1.png" style="width:   85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/3rd-party/dremel-architecture-1.png" style="width:   85%;"/><!-- {"left" : 1.16, "top" : 1.04, "height" : 3.83, "width" : 7.94} -->
+
 
 * [Reference](https://www.troposphere.tech/wp-content/uploads/2019/06/BigQuery-Query-Optimization-with-Troposphere.pdf?x10155)
 
@@ -316,8 +315,7 @@ Notes:
 ## Query Execution Examples
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/3rd-party/dremel-query-execution-1.png" style="width:   85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/3rd-party/dremel-query-execution-1.png" style="width:85%;"/><!-- {"left" : 1.14, "top" : 1.17, "height" : 3.71, "width" : 7.97} -->
 
 * [Reference](https://www.troposphere.tech/wp-content/uploads/2019/06/BigQuery-Query-Optimization-with-Troposphere.pdf?x10155)
 
@@ -329,11 +327,13 @@ Notes:
 * Columnar format is optimized for aggregate queries (see next slid)
 * Here is an example of how we can represent the same data in row format and columnar format
 
-<!-- TODO shiva -->
-<img src="../../assets/images/bigdata/columnar-1.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/bigdata/columnar-2b.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/bigdata/columnar-1.png" style="width:40%;"/><!-- {"left" : 0.54, "top" : 4, "height" : 1.71, "width" : 4.05} --> &nbsp; &nbsp; <img src="../../assets/images/bigdata/columnar-2b.png" style="width:40%;"/><!-- {"left" : 5.13, "top" : 4, "height" : 2.15, "width" : 4.58} -->
 
-<img src="../../assets/images/bigdata/columnar-3b.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+<img src="../../assets/images/bigdata/columnar-3b.png" style="width:40%;"/><!-- {"left" : 2.73, "top" : 6.32, "height" : 1.86, "width" : 4.78} -->
+
+
+
 
 ---
 
@@ -344,9 +344,11 @@ Notes:
 | $5 per TB                                | Starts at $10,000/month for a dedicated reservation of 500 slots. |
 | First terabyte (1 TB) per month is free* | $30 per month per slot for Flex slots.                            |
 
+<!-- {"left" : 0.25, "top" : 1.17, "height" : 1.69, "width" : 9.75} -->
+
 * On demand pricing is billed for **Number of bytes read**
 
-* FREE operations :  Loading data, copying data
+* FREE operations:  Loading data, copying data
 
 * https://cloud.google.com/bigquery/pricing
 
@@ -381,9 +383,9 @@ Notes:
 
 ## Querying a Public Dataset
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/google-cloud/bigquery-query-1.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/bigquery-query-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.14, "top" : 1.3, "height" : 2.2, "width" : 4.77} -->
+
 
 * Let's analyze **austin_bikeshare** data
     - You can find this under **bigquery-public-data** project
@@ -398,10 +400,14 @@ Notes:
 
 * Let's look at **schema** and **preview** some data
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/bigquery-query-2.png" style="width:60%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/bigquery-query-2.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.02, "height" : 3.18, "width" : 8.21} -->
 
-<img src="../../assets/images/google-cloud/bigquery-query-3.png" style="width:60%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+<img src="../../assets/images/google-cloud/bigquery-query-3.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 5.63, "height" : 2.77, "width" : 8.21} -->
+
+
+
 
 ---
 ## Querying
@@ -417,10 +423,10 @@ group by subscriber_type
 order by trip_count desc
 LIMIT 10
 ```
+<!-- {"left" : 0, "top" : 2.62, "height" : 1.65, "width" : 10.25} -->
 
 
-<img src="../../assets/images/google-cloud/bigquery-query-4.png" style="width:25%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/google-cloud/bigquery-query-5.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/google-cloud/bigquery-query-4.png" style="width:25%;"/><!-- {"left" : 0.87, "top" : 4.78, "height" : 3.3, "width" : 2.77} --> &nbsp; &nbsp; <img src="../../assets/images/google-cloud/bigquery-query-5.png" style="width:40%;"/><!-- {"left" : 5.01, "top" : 4.84, "height" : 3.47, "width" : 4.37} -->
 
 
 ---
@@ -443,6 +449,7 @@ bq mk --external_table_definition=/tmp/mytable.json \
    flight_data.2015_data
 
 ```
+<!-- {"left" : 0, "top" : 1.37, "height" : 3.99, "width" : 10.25} -->
 
 * Here are some sample queries
 
@@ -458,6 +465,7 @@ FROM `PROJECT_ID.flight_data.2015_data`
 GROUP BY CARRIER
 ORDER BY cnt DESC
 ```
+<!-- {"left" : 0, "top" : 5.82, "height" : 2.9, "width" : 7.28} -->
 
 ---
 
@@ -487,7 +495,7 @@ Notes:
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both" /><!-- {"left" : 5.48, "top" : 3.2, "height" : 3.24, "width" : 4.86} -->
 
 
 * Let's go over what we have covered so far
