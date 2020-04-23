@@ -1,7 +1,5 @@
-# Kubernetes 
-
-© Elephant Scale
-
+# Kubernetes
+© Elephant Scale  
 January 13, 2020
 
 
@@ -29,17 +27,17 @@ This course introduces the students to containers in general, then continues wit
 
 ## Lab environment:
 
-Zero Install : There is no need to install any software on students’ machines! (although it is possible)
+Zero Install : There is no need to install any software on students' machines! (although it is possible)
 
 ## Detailed Outline:
 
- * Container Fundamentals (prerequisite, will be covered if needed)
-     - Docker Overview
-     - Docker Operations
-     - Docker use cases
-     - CLI tools
-     - Health checks
-     - Labs
+### Container Fundamentals (prerequisite, will be covered if needed)
+ - Docker Overview
+ - Docker Operations
+ - Docker use cases
+ - CLI tools
+ - Health checks
+ - Labs
 
  * Kubernetes Specific Curriculum
      - Container Review
@@ -66,4 +64,3 @@ Zero Install : There is no need to install any software on students’ machines!
      - Setup, administration, deployment
      - etcd, the primary Kubernetes datastore
      - etcd security and backup
-
