@@ -14,69 +14,26 @@
 Notes:
 
 ---
-
-## Sometimes to Predict the Future, We Need to Know the Past
-
-* Can you predict the next position of the ball?
-
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/billiard-ball-1.png"  style="width:70%;" />
----
-## Sometimes to Predict the Future, We Need to Know the Past
-
-* Can you predict the next position of the ball?
-
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/billiard-ball-2.png"  style="width:70%;" />
-
----
-## Time Series Data
-
-* Sensor Data (thermostats, weather stations, buoys)
-
-* Stock ticks
-
-* Other cases where the data changes on temporal basis
-
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/time-series-stocks.png"  style="width:60%;" />   <!-- {"left" : 0.74, "top" : 3.3, "height" : 4.63, "width" : 8.77} -->
+## Problems with Feedforward Neural Networks
 
 
+ *  Feedforward Neural Networks can model any relationship between input and output.
 
-Notes:
+ *  However they can't keep/remember **state**
 
-Source: Wikipedia
+     -  The only state retained is weight values from training.
 
----
-
-## To Predict Time Series Data, We Need to Know the Past Behavior
-
-* For example, what is the stock price in time t2?
-
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/time-series-1.png"  style="width:40%;" />   <!-- {"left" : 0.74, "top" : 3.3, "height" : 4.63, "width" : 8.77} -->
-<img src="../../assets/images/deep-learning/time-series-2.png"  style="width:40%;" />   <!-- {"left" : 0.74, "top" : 3.3, "height" : 4.63, "width" : 8.77} -->
-
----
-## Time Series Data
-
-* In Time Series data, the value reflects a change over Time
-
-* So one value isn't so important by itself
-
-* It is the change in the value over time that matters.
-
-<img src="../../assets/images/deep-learning/time-series-stocks.png"  style="width:60%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
-
+     -  Impossible to maintain state in sequence
 
 Notes:
 
 
+
 ---
-## Natural Language Processing Example
+## NLP example: Co-reference Resolution
 
 
-* In NLP, we often need context (history) to determine reference.
+ * In NLP, we often need to determine reference.
 
 <br/>
 
@@ -94,27 +51,46 @@ aligned with **my** values," **she** said.
 
  * We need  **state** to be able to figure this out!
 
+
 Notes:
 
 
 ---
+## Time Series Data
 
-## Problems with Feedforward Neural Networks
 
+ * Sensor Data (thermostats, weather stations, buoys)
 
- *  Feedforward Neural Networks can model any relationship between input and output.
- *  However they can't keep/remember **state**
-     -  The only state retained is weight values from training.
-     - They don't remember previous input!
-     -  Impossible to maintain state in sequence
-     - For example, in this example, the network doesn't remember the 'previous input' (cat) when predicting the current input
+ * Stock ticks
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/Neural-Networks-Simulation.png"  style="width:75%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+ * Other cases where the data changes on temporal basis
+
+<img src="../../assets/images/deep-learning/time-series-stocks.png" alt="XXX image missing" style="background:white;max-width:80%;" />   <!-- {"left" : 0.74, "top" : 3.3, "height" : 4.63, "width" : 8.77} -->
+
 
 
 Notes:
 
+Source: Wikipedia
+
+
+
+---
+## Time Series Data
+
+
+ *  In Time Series data, the value reflects a change over Time
+
+     -  So one value isn't so important by itself
+
+     -  It is the change in the value over time that matters.
+
+ * Feedforward neural networks cannot handle time series data well.
+
+<img src="../../assets/images/deep-learning/time-series-stocks.png" alt="XXX image missing" style="background:white;max-width:80%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+
+
+Notes:
 
 
 ---
@@ -608,3 +584,4 @@ Notes:
      - Natural Language Processing
 
 Notes:
+

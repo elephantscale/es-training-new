@@ -28,12 +28,12 @@
 
 ## Data Instance / Features
 
- * Sample is a single row of data
- * Sample has inputs (vectors) and output
-    - algorithm makes a prediction from inputs, and compares the prediction with actual (expected) output
+ * **Sample** is a single row of data
  * Sample = instance / observation / input vector / feature vector
+ * Each sample has **inputs (vectors) and output**
+ * Algorithm makes a prediction from inputs, and compares the prediction with actual (expected) output
  * In the following example, we have 5 data points / samples (instances 1 - 5)
- - And 3 dimensional input / features: Inputs A,B,C
+    - And 3 dimensional input / features: Inputs A,B,C
 
  <br/>
 
@@ -331,14 +331,13 @@ Notes:
 ## Backpropagation Summary
 
  * For each training instance the backpropagation algorithm first makes a prediction (forward pass)
-
  * Measures the error (prediction vs. output)
-
  * Then traverses each layer in reverse to measure the error contribution from each  connection (reverse pass)
-
  * And finally slightly tweaks the connection weights to reduce the error (Gradient Descent step).
+ * [Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.gif)
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:40%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:50%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+
 
 
 Notes:  
