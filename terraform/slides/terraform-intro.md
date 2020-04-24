@@ -43,10 +43,11 @@
     - number of features it delivered per month +100%
     - reduce defects by 50%
     - reduce lead times by 60%
-<<<<<<< HEAD
+
 * HP’s LaserJet Firmware
     - time its developers spent on developing new features went from 5% to 40%
     - overall development costs were reduced by 40%
+    
 * Four core values in the DevOps movement   
     - culture, automation, measurement, and sharing (CAMS) 
 ---
@@ -87,8 +88,3 @@
 ![](../artwork/images-containers.png)
 
 ---
-=======
-    
-    
-    
->>>>>>> 9a4cab244e9d4dff622e64a64195e07c7603fe9e
