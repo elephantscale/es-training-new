@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-49 297 959 562" width="959" height="562">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3e8305"/>
+      <stop offset=".8" stop-color="#346e06"/>
+      <stop offset="1" stop-color="#2b5708"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-56.55355 594.8623) rotate(-2) scale(975.7015)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-04-25 13:07:12 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-49" y="297" width="959" height="562"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <rect x="-47.376" y="298" width="956.752" height="559.67304" fill="url(#Obj_Gradient)"/>
+        <rect x="-47.376" y="298" width="956.752" height="559.67304" stroke="#33006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 475.3334 584.4385 C 475.3334 605.2181 458.4883 622.0641 437.7078 622.0641 C 416.92827 622.0641 400.0832 605.2181 400.0832 584.4385 C 400.0832 563.659 416.92827 546.813 437.7078 546.813 C 458.4883 546.813 475.3334 563.659 475.3334 584.4385 Z" fill="#3a3b3b" fill-opacity=".6491252"/>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="431.6719" cy="584.439" r="37.6251385654849" fill="white"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M -9.882876 857.673 L 251.9245 690.5236 L 245.80103 680.61614 L -48.105924 857.673 Z" fill="#9b6931"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 218.99558 712.0946 L 251.92424 690.5234 L 245.80076 680.6159 L 211.78904 700.4335 Z" fill="white"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 245.8005 680.61614 L 251.92398 690.5236 C 256.33955 686.698 250.44047 678.1665 245.8005 680.61614 Z" fill="#262b7f"/>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 488.78137 585.6912 L 488.78137 583.1869 L 559.4063 583.1869 L 559.4063 571.6729 L 574.78155 584.439 L 559.4063 597.20516 L 559.4063 585.6912 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 374.5624 585.6912 L 374.5624 583.1869 L 303.93744 583.1869 L 303.93744 571.6729 L 288.5622 584.439 L 303.93744 597.20516 L 303.93744 585.6912 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 430.41973 532.3686 L 432.924 532.3686 L 432.924 461.74366 L 444.438 461.74366 L 431.6719 446.3684 L 418.90574 461.74366 L 430.41973 461.74366 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 432.924 636.5085 L 430.41973 636.5085 L 430.41973 707.1334 L 418.90574 707.1334 L 431.6719 722.50865 L 444.438 707.1334 L 432.924 707.1334 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 473.75905 628.66826 L 471.70766 630.10466 L 512.21646 687.9572 L 502.78475 694.5614 L 522.06103 699.8337 L 523.69957 679.9167 L 514.26785 686.5208 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 391.7528 622.57726 L 389.7268 621.1053 L 348.21448 678.24206 L 338.89946 671.4743 L 340.19015 691.4169 L 359.5555 686.4818 L 350.2405 679.71404 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 472.80607 538.975 L 474.8822 540.3754 L 514.3752 481.82467 L 523.9207 488.2632 L 521.93483 468.37783 L 502.7535 473.98574 L 512.29903 480.4243 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_19">
+        <path d="M 388.7422 540.0462 L 390.7682 538.5742 L 349.2559 481.4374 L 358.57092 474.66967 L 339.20556 469.7346 L 337.91487 489.67716 L 347.2299 482.9094 Z" fill="#a4f8fd"/>
+      </g>
+    </g>
+  </g>
+</svg>

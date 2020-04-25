@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-49 297 1193 562" width="1193" height="562">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3e8305"/>
+      <stop offset=".8" stop-color="#346e06"/>
+      <stop offset="1" stop-color="#2b5708"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-56.41128 598.93646) rotate(-2) scale(1209.1832)"/>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-04-25 13:12:16 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-49" y="297" width="1193" height="562"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <rect x="-47.376" y="298" width="1190.376" height="559.67304" fill="url(#Obj_Gradient)"/>
+        <rect x="-47.376" y="298" width="1190.376" height="559.67304" stroke="#33006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_21">
+        <g id="Graphic_9">
+          <path d="M 401.2866 548.62557 C 401.2866 569.4051 384.44153 586.2511 363.661 586.2511 C 342.88148 586.2511 326.03642 569.4051 326.03642 548.62557 C 326.03642 527.846 342.88148 511 363.661 511 C 384.44153 511 401.2866 527.846 401.2866 548.62557 Z" fill="#3a3b3b" fill-opacity=".6491252"/>
+        </g>
+        <g id="Graphic_4">
+          <circle cx="357.62508" cy="548.62605" r="37.6251385654849" fill="white"/>
+        </g>
+      </g>
+      <g id="Graphic_8">
+        <path d="M -9.882876 857.673 L 251.9245 690.5236 L 245.80103 680.61614 L -48.105924 857.673 Z" fill="#9b6931"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 218.99558 712.0946 L 251.92424 690.5234 L 245.80076 680.6159 L 211.78904 700.4335 Z" fill="white"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 245.8005 680.61614 L 251.92398 690.5236 C 256.33955 686.698 250.44047 678.1665 245.8005 680.61614 Z" fill="#262b7f"/>
+      </g>
+      <g id="Group_22">
+        <g id="Graphic_24">
+          <path d="M 581.2866 548.62557 C 581.2866 569.4051 564.4415 586.2511 543.661 586.2511 C 522.8815 586.2511 506.0364 569.4051 506.0364 548.62557 C 506.0364 527.846 522.8815 511 543.661 511 C 564.4415 511 581.2866 527.846 581.2866 548.62557 Z" fill="#3a3b3b" fill-opacity=".649125"/>
+        </g>
+        <g id="Graphic_23">
+          <circle cx="537.6251" cy="548.62605" r="37.6251385654849" fill="white"/>
+        </g>
+      </g>
+      <g id="Group_25">
+        <g id="Graphic_27">
+          <path d="M 761.2866 548.62557 C 761.2866 569.4051 744.4415 586.2511 723.661 586.2511 C 702.8815 586.2511 686.0364 569.4051 686.0364 548.62557 C 686.0364 527.846 702.8815 511 723.661 511 C 744.4415 511 761.2866 527.846 761.2866 548.62557 Z" fill="#3a3b3b" fill-opacity=".649125"/>
+        </g>
+        <g id="Graphic_26">
+          <circle cx="717.6251" cy="548.62605" r="37.6251385654849" fill="white"/>
+        </g>
+      </g>
+      <g id="Graphic_28">
+        <path d="M 404.52055 552.0183 L 404.52055 549.514 L 475.1455 549.514 L 475.1455 538 L 490.5207 550.76614 L 475.1455 563.5323 L 475.1455 552.0183 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_29">
+        <path d="M 585.60005 552.0183 L 585.60005 549.514 L 656.225 549.514 L 656.225 538 L 671.6002 550.76614 L 656.225 563.5323 L 656.225 552.0183 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(346.64183 436)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#631806" x="0" y="50">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(533.81054 436)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#631806" x="0" y="50">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(706.6418 436)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#631806" x="0" y="50">3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <text transform="translate(842 436)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#631806" x="0" y="50">4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(842 520.26614)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#631806" x="0" y="50">?</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
