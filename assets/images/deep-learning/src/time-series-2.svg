@@ -19,7 +19,7 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2020-04-25 13:22:04 +0000</dc:date>
+    <dc:date>2020-04-25 18:47:53 +0000</dc:date>
   </metadata>
   <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke="none">
     <title>Canvas 1</title>
@@ -79,12 +79,15 @@
         <circle cx="174.24048" cy="607" r="10.000015979019" stroke="#350078" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_22">
-        <text transform="translate(-280 765)" fill="#360077">
+        <text transform="translate(-203 674)" fill="#360077">
           <tspan font-family="Century Gothic" font-size="49" font-weight="700" fill="#360077" x="0" y="49">Past</tspan>
         </text>
       </g>
       <g id="Line_23">
-        <line x1="-150.57895" y1="774.1053" x2="166.2353" y2="611.1183" stroke="#da4253" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <line x1="-66.292135" y1="731.9555" x2="166.25174" y2="611.1501" stroke="#da4253" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10.0,10.0" stroke-width="5"/>
+      </g>
+      <g id="Line_24">
+        <path d="M -334 887.4082 C -334 887.4082 -315.09808 870.0369 -291.59664 861.3445 C -268.0952 852.6522 -271.04345 861.9639 -251.04545 856.7264 C -231.04745 851.4888 -235.32696 853.2358 -221.0084 842.8571 C -206.68985 832.4785 -215.0822 831.2633 -200.50433 820.0922 C -185.92646 808.921 -191.1371 814.2181 -169.55195 803.4255 C -147.9668 792.6329 -144.82771 797.53735 -124.31385 781.9969 C -103.8 766.4565 -113.5807 762.7484 -97.14286 748.5714 C -80.70501 734.3944 -66.292135 731.9555 -66.292135 731.9555" stroke="#da4253" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
       </g>
     </g>
   </g>
