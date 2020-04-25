@@ -28,6 +28,14 @@ Notes:
 
 ---
 
+## AI vs. Machine Learning :-)
+
+<img src="../../assets/images/AI/3rd-party/ML-vs-AI.jpg" alt="AI-ML-DL.png" style="width:77%;"/><!-- {"left" : 5.42, "top" : 2.38, "height" : 4.3, "width" : 4.3} -->
+
+[Source](https://www.reddit.com/r/ProgrammerHumor/comments/a07d0u/ai_in_nutshell/)
+
+---
+
 ## AI / Machine Learning / Deep Learning
 
 <img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="width:37%;float:right;"/><!-- {"left" : 5.42, "top" : 2.38, "height" : 4.3, "width" : 4.3} -->
