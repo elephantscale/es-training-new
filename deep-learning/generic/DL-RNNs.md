@@ -309,7 +309,7 @@ Notes:
 
 * First we break the sentence into words
 
-* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*G7T4sFO-1ByMepsa5OilsQ.gif)
+* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*G7T4sFO-1ByMepsa5OilsQ.gif)
 
 <img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1.gif"  style="width:40%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
@@ -321,7 +321,7 @@ Notes:
 
 * First word **What** is encoded as a number(vector) **01**
 
-* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*Qx6OiQnskfyCEzb8aZDgaA.gif)
+* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*Qx6OiQnskfyCEzb8aZDgaA.gif)
 
 <img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-2.gif"  style="width:70%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
@@ -336,7 +336,7 @@ Notes:
 
 * These two inputs result in the output number **02**
 
-* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*5byMk-6ni-dst7l9WKIj5g.gif)
+* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*5byMk-6ni-dst7l9WKIj5g.gif)
 
 
 <img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.gif"  style="width:60%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
@@ -350,7 +350,7 @@ Notes:
 
 * The final number is **05**
 
-* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*d_POV7c8fzHbKuTgJzCxtA.gif)
+* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*d_POV7c8fzHbKuTgJzCxtA.gif)
 
 
 <img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.gif"  style="width:60%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
@@ -362,7 +362,7 @@ Notes:
 * So if the RNN produces number/vector **05** we know the user asked for time
 * If the sequence is changed in anyway (different words and different order)  then we wouldn't get **05** as final output
 * For example, if the input text is **"What is the time?"** (notice the order is different), the output will definitely NOT be **05**
-* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*3bKRTcqSbto3CXfwshVwmQ.gif)
+* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*3bKRTcqSbto3CXfwshVwmQ.gif)
 
 <img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
@@ -418,7 +418,7 @@ Notes:
 ## Vector To Sequence
 
 <!-- TODO shiva -->
-<img src="../../assets/images/generic/3rd-party/surfer-beach-sunset-3.png"  style="width:50%;float:right;"/>  <!-- {"left" : 1.02, "top" : 3.38, "height" : 4.67, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/image-caption-1.png"  style="width:50%;float:right;"/>  <!-- {"left" : 1.02, "top" : 3.38, "height" : 4.67, "width" : 8.21} -->
 
 *  The Network will take a vector as an input and a produce a sequence as an output
 
@@ -760,3 +760,15 @@ Notes:
      - Natural Language Processing
 
 Notes:
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+
+* Let's go over what we have covered so far
+
+* Any questions?
