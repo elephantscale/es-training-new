@@ -115,6 +115,38 @@ Notes:
 
 Notes:
 
+---
+
+
+## Recurrent Neural Network (RNN)
+
+* In Feedforward Networks, data flows one way, it has **no state or memory**
+
+* RNNs have a 'loop back' mechanism to pass the current state to the next iteration
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+
+[RNN animation link](TODO#)
+
+---
+
+## RNN Animation
+
+<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+
+[Animation link](TODO#)
+
+---
+
+## RNN Unrolling Through Time
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-3.gif"  style="width:80%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+
+[Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9)  and  [Link to animation](https://miro.medium.com/max/960/1*TqcA9EIUF-DGGTBhIx_qbQ.gif)
 
 
 ---
@@ -123,13 +155,21 @@ Notes:
  * A recurrent connection now has a time dimension
  * Every output from the neuron goes back to the input at the next time.
  * One way to picture this is called unrolling through time
+    - Like taking a picture/snapshot of the network for each time frame
  * This means that each neuron is like a chain of neurons, one for each time slice.
 
-<img src="../../assets/images/deep-learning/RNN-rolling.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.43, "top" : 4.45, "height" : 3.87, "width" : 5.4} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-2.png" style="width:70%;"/><!-- {"left" : 2.43, "top" : 4.45, "height" : 3.87, "width" : 5.4} -->
 
 
 Notes:
 
+---
+
+## Unrolling Through Time
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-1.png" style="width:60%;"/><!-- {"left" : 2.43, "top" : 4.45, "height" : 3.87, "width" : 5.4} -->
 
 ---
 ## Backpropagation Through Time
@@ -172,14 +212,14 @@ Image credit : (creative commons license)  :  https://commons.wikimedia.org/wiki
  * Note the feedback loops!
  * This is a computer hardware memory cell.
 
-<img src="../../assets/images/deep-learning/feedback-loop.png" alt="XXX image missing" style="background:white;width:40%;" />  <!-- {"left" : 2.53, "top" : 4.65, "height" : 3.49, "width" : 4.77} -->
+<img src="../../assets/images/deep-learning/feedback-loop.png" style="width:40%;" />  <!-- {"left" : 2.53, "top" : 4.65, "height" : 3.49, "width" : 4.77} -->
 
 
 Notes:
 
 
 ---
-## Feedback in Recurrent Neural Networks
+## Feedback in RNNs
 
 
  * RNNs have Feedback
@@ -202,32 +242,275 @@ Notes:
 
 Notes:
 
+---
+
+## Understanding RNNs
+
+* [Great explainer video](https://www.youtube.com/watch?v=LHXXI4-IEns) by Mikael Phi
+
+* And [accompanying writeup](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9)
+
+* We will discuss a use case starting at 3:50 in the video
+
+<img src="../../assets/images/deep-learning/3rd-party/rnn-video-1.png" style="width:60%;" />  <!-- {"left" : 2.53, "top" : 4.65, "height" : 3.49, "width" : 4.77} -->
 
 ---
-## Units
+
+## Activation Functions for RNNs
 
 
- *  To use the hardware analogy, it's easiest to keep feedback loops inside of **units** .
+*  ReLU and Linear functions have a problem of being unbounded.
+     -  If we have a self-recurrent loop, they tend to self-reinforce.
+     - Think of 'mic amplification feedback'
 
- *  Units then contain both memory (state) and transformation
+*  Sigmoid is *always*  positive (between 0 and 1) which also tends to self-reinforce.
 
- *  This helps simplify training and increase stability
+*  Tanh is zero centered (between -1 and +1), which is better
+
+*  Tanh is the most commonly used in RNNs.
+
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" style="width:45%;" /> &nbsp;  <!-- {"left" : 2.36, "top" : 4.3, "height" : 2.16, "width" : 5.51} -->  &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" style="width:45%;" /><!-- {"left" : 2.22, "top" : 6.69, "height" : 2.16, "width" : 5.82} -->
+
+
+Notes:
+
+---
+
+## RNN Use Cases
+
+* RNNs are used to analyze sequence data
+
+* RNNs can be used to analyze time series data
+    - Stock prices
+    - Sensor data
+
+* RNNs can used for text analysis
+    - Language translation
+    - Understanding natural text
+
+
+---
+
+## Text Understanding
+
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/alexa-2.png"  style="width:80%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+
+---
+
+## Use Case: Text Processing with RNNs
+
+* This is a usecase illustrated in the [explainer video](https://www.youtube.com/watch?v=LHXXI4-IEns) (time 3:50)
+    - Adopted with thanks!
+
+* We ask a smart speaker (e.g. Alexa) for time  
+    - **"What time is it?"**
+
+* First we break the sentence into words
+
+* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*G7T4sFO-1ByMepsa5OilsQ.gif)
+
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1.gif"  style="width:40%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+
+
+---
+## Use Case: Text Processing with RNNs
+
+* Now we feed the sequence of words into RNN
+
+* First word **What** is encoded as a number(vector) **01**
+
+* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*Qx6OiQnskfyCEzb8aZDgaA.gif)
+
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-2.gif"  style="width:70%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+
+
+---
+
+## Use Case: Text Processing with RNNs
+
+* Then the next word **time** is fed
+
+* Also the **hidden output** from previous input word **what** is also used
+
+* These two inputs result in the output number **02**
+
+* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*5byMk-6ni-dst7l9WKIj5g.gif)
+
+
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.gif"  style="width:60%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+
+---
+## Use Case: Text Processing with RNNs
+
+* The words are fed into sequence
+
+* You can see the color coding of previous outputs influencing the current output
+
+* The final number is **05**
+
+* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*d_POV7c8fzHbKuTgJzCxtA.gif)
+
+
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.gif"  style="width:60%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+
+---
+## Use Case: Text Processing with RNNs
+
+* So the text **"What time is it?"** is encoded as **05**
+* So if the RNN produces number/vector **05** we know the user asked for time
+* If the sequence is changed in anyway (different words and different order)  then we wouldn't get **05** as final output
+* For example, if the input text is **"What is the time?"** (notice the order is different), the output will definitely NOT be **05**
+* [Reference](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*3bKRTcqSbto3CXfwshVwmQ.gif)
+
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+
+---
+
+## RNN Architectures
+
+* These are the common designs of RNNs
+
+* Sequence to Vector
+    - Language processing
+
+* Sequence to Sequence
+    - Language translation
+
+* Vector to Sequence
+
+
+
+---
+
+## Sequence to Vector
+
+* In the previous example, RNN took sequence as an input (e.g. a sentence) and produced a *vector*  as an output
+
+*  Natural Language vectorizers can be implemented this way
+
+<img src="../../assets/images/deep-learning/Sequence-to-Vector.png" alt="XXX image missing" style="background:white;max-width:50%;"/><!-- {"left" : 2.23, "top" : 3.55, "height" : 4.12, "width" : 5.79} -->
+
+
+Notes:
+
+---
+
+## Sequence to Sequence
+
+*  An RNN can input a sequence and predict a sequence.
+
+*  For example: stock market data
+
+    -  The input would be a sequence of stock prices
+
+    -  The output would be a prediction of what the next step *would*  be
+
+* And language translation (more on this later)
+
+<img src="../../assets/images/deep-learning/Sequence-to-Sequence.png"  style="width:50%;" />  <!-- {"left" : 0.77, "top" : 4.05, "height" : 3.9, "width" : 8.71} -->
+
+
+Notes:
+
+---
+## Vector To Sequence
+
+<!-- TODO shiva -->
+<img src="../../assets/images/generic/3rd-party/surfer-beach-sunset-3.png"  style="width:50%;float:right;"/>  <!-- {"left" : 1.02, "top" : 3.38, "height" : 4.67, "width" : 8.21} -->
+
+*  The Network will take a vector as an input and a produce a sequence as an output
+
+*  Examples: Image annotation. Image is a vector, annotation is a character sequence.
+
+<br clear="all" />
+
+<img src="../../assets/images/deep-learning/Vector-to-Sequence.png"  style="width:40%;"/>  <!-- {"left" : 1.02, "top" : 3.38, "height" : 4.67, "width" : 8.21} -->
+
+Notes:
+
+---
+## Deep RNNs
+
+*  RNNs can also be "deep".
+    -  Sequentially connected neurons in one layer are not considered "deep".
+
+*  So far we have only looked at single layer RNNs.
+
+<img src="../../assets/images/deep-learning/Deep-RNNs.png"  style="width:60%;" />  <!-- {"left" : 0.39, "top" : 3.11, "height" : 4.56, "width" : 9.48} -->
+
+Notes:
+
+---
+## Encoder-Decoder
+
+*  An encoder-decoder network takes a sequence as input and produces a sequence as output
+
+*  Similar to an autoencoder, but for recurrent neural networks.
+
+*  Used in language translation
+
+<img src="../../assets/images/deep-learning/Sequence-to-Sequence--01.png" style="width:50%;"/><!-- {"left" : 1.84, "top" : 3.61, "height" : 4.13, "width" : 6.57} -->
+
 
 Notes:
 
 
-
 ---
-## Sequences
+## Machine Translation Model
+
+<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;float:right;" />  <!-- {"left" : 1.57, "top" : 3.13, "height" : 4.71, "width" : 7.1} -->
+
+ *  Machine translation model is essentially a deep recurrent neural network
+
+ * They take an input sequence (English sentence) and produce output sequence (French sentence)
+
+ * **"I drink milk"  --> "je bois du lait"**
+
+ *  The following example shows how this is done.
 
 
- *  RNNs are very much about predicting sequences
-
- *  View the input as a time domain sequence.
 
 Notes:
 
+---
 
+
+## RNN Advantages
+
+* Can process input of any length
+    - e.g. input sentences can be arbitrarily long
+
+* Model size not increasing with size of input
+    - Same size model can process text of any length (typically)
+
+* Computation takes into account historical information
+
+* Weights are shared across time
+
+---
+## RNN Drawbacks
+
+* RNNs can be difficult to train
+
+* Computation being slow
+
+* Stability is a problem
+
+* Difficulty of accessing information from a long time ago (tend to forget earlier information)
+
+* Sequential dependencies limits parallelization opportunities.
+
+* Architectures are complex
+
+* Sometimes CNN can be a better solution.
+
+Notes:
+
+---
+
+# RNNs Advanced
 
 ---
 ## Self-Recurrent Neurons
@@ -266,88 +549,6 @@ Notes:
 
 
 Notes:
-
----
-## Activation Functions
-
-
- *  ReLU and Linear functions have a problem of being unbounded.
-
-     -  If we have a self-recurrent loop, they tend to self-reinforce.
-
- *  Tanh and Sigmoid are balanced
-
-     -  Tanh is zero centered, which is better
-
-     -  Sigmoid is *always*  positive which also tends to self-reinforce.
-
- *  Tanh is the most commonly used in RNNs.
-
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="XXX image missing" style="background:white;max-width:40%;" /> &nbsp;  <!-- {"left" : 2.36, "top" : 4.3, "height" : 2.16, "width" : 5.51} -->  &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="background:white;max-width:40%;" /><!-- {"left" : 2.22, "top" : 6.69, "height" : 2.16, "width" : 5.82} -->
-
-
-Notes:
-
----
-## Sequence to Sequence
-
-
- *  An RNN can input a sequence and predict a sequence.
-
- *  For example: stock market data
-
-     -  The input would be a sequence of stock prices
-
-     -  The output would be a prediction of what the next step *would*  be
-
-<img src="../../assets/images/deep-learning/Sequence-to-Sequence.png" alt="XXX image missing" style="background:white;max-width:70%;" />  <!-- {"left" : 0.77, "top" : 4.05, "height" : 3.9, "width" : 8.71} -->
-
-
-Notes:
-
----
-## Sequence to Vector
-
-
- *  The Network will take a sequence as an input (e.g. time-series) and produce a *vector*  as an output
-
- *  Example: vectorization of natural language
-
- *  Natural Language vectorizers can be implemented this way
-
-<img src="../../assets/images/deep-learning/Sequence-to-Vector.png" alt="XXX image missing" style="background:white;max-width:50%;"/><!-- {"left" : 2.23, "top" : 3.55, "height" : 4.12, "width" : 5.79} -->
-
-
-Notes:
-
----
-## Vector To Sequence
-
-
- *  The Network will take a vector as an input and a produce a sequence as an output
-
- *  Examples: Image annotation. Image is a vector, annotation is a character sequence.
-
-<img src="../../assets/images/deep-learning/Vector-to-Sequence.png" alt="XXX image missing" style="background:white;max-width:50%;"/>  <!-- {"left" : 1.02, "top" : 3.38, "height" : 4.67, "width" : 8.21} -->
-
-
-Notes:
-
----
-## Encoder-Decoder
-
-
- *  An encoder-decoder network takes a sequence as input and produces a sequence as output
-
- *  Similar to an autoencoder, but for recurrent neural networks.
-
- *  Language Translation
-
-<img src="../../assets/images/deep-learning/Sequence-to-Sequence--01.png" alt="XXX image missing" style="background:white;max-width:50%;"/><!-- {"left" : 1.84, "top" : 3.61, "height" : 4.13, "width" : 6.57} -->
-
-
-Notes:
-
 
 ---
 ## Memory Cells
@@ -515,49 +716,17 @@ Notes:
 ---
 ## RNN Cells to FC Using Output Projection
 
+<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" style="width:40%;float:right;"/><!-- {"left" : 2.71, "top" : 4.21, "height" : 4.24, "width" : 4.82} -->
+
  *  To connect cells from an RNN to a Fully Connected Layer, we need to do *output projection.*
  *  This means we take each cell from the RNN and "project" it as an opening to a Fully Connected (FC) neuron.
  *  We need a Fully Connected (FC):
      -  To perform final classification (or regression)
      -  Apply model to our problem.
 
-<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" alt="XXX image missing" style="background:white;width:27%;"/><!-- {"left" : 2.71, "top" : 4.21, "height" : 4.24, "width" : 4.82} -->
 
 
 Notes:
-
-
----
-## Deep RNNs
-
-
- *  RNNs can also be "deep".
-
-     -  Sequentially connected neurons in one layer are not considered "deep".
-
- *  So far we have only looked at single layer RNNs.
-
-<img src="../../assets/images/deep-learning/Deep-RNNs.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 0.39, "top" : 3.11, "height" : 4.56, "width" : 9.48} -->
-
-
-
-Notes:
-
-
----
-## Machine Translation Model
-
-
- *  Machine translation model is essentially a deep recurrent neural network
-
- *  The following example shows how this is done.
-
-<img src="../../assets/images/deep-learning/machine-translation-model.png" alt="XXX image missing" style="background:white;max-width:60%;" />  <!-- {"left" : 1.57, "top" : 3.13, "height" : 4.71, "width" : 7.1} -->
-
-
-
-Notes:
-
 
 
 ---
@@ -574,23 +743,6 @@ Notes:
 
 Notes:
 
-
-
----
-## Disadvantages of RNNs
-
-
- * RNNs can be difficult to train
-
- * Stability is a problem.
-
- * Sequential dependencies limits parallelization opportunities.
-
- * Architectures are complex
-
- * Sometimes CNN can be a better solution.
-
-Notes:
 
 
 ---

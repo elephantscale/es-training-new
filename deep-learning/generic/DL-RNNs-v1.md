@@ -101,7 +101,7 @@ Notes:
  * One way to picture this is called unrolling through time
  * This means that each neuron is like a chain of neurons, one for each time slice.
 
-<img src="../../assets/images/deep-learning/RNN-rolling.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.43, "top" : 4.45, "height" : 3.87, "width" : 5.4} -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-1.png" style="width:40%;"/><!-- {"left" : 2.43, "top" : 4.45, "height" : 3.87, "width" : 5.4} -->
 
 
 Notes:
@@ -584,4 +584,3 @@ Notes:
      - Natural Language Processing
 
 Notes:
-
