@@ -490,6 +490,25 @@ Notes:
 * Weights are shared across time
 
 ---
+
+## RNNs Have Short Term Memory
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-memory-1.png" style="width:50%;float:right;" />  <!-- {"left" : 1.57, "top" : 3.13, "height" : 4.71, "width" : 7.1} -->
+
+* The **hidden state fades over multiple steps**
+
+* In this diagram below, we can see the 'influence' of **word 'what' (color black)** is diminishing with each step
+
+    - And in the last step **word '?'** the color black is almost non-existing
+
+* **RNNs suffer from short term memory**
+
+* What this means is, RNNs can't remember 'long sequences'
+    - They can't process long sequences well (e.g. really long sentences)
+
+* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9)
+---
 ## RNN Drawbacks
 
 * RNNs can be difficult to train
@@ -498,7 +517,8 @@ Notes:
 
 * Stability is a problem
 
-* Difficulty of accessing information from a long time ago (tend to forget earlier information)
+* RNNs suffer from short term memory
+    - Difficulty of accessing information from a long time ago (tend to forget earlier information)
 
 * Sequential dependencies limits parallelization opportunities.
 
@@ -511,6 +531,8 @@ Notes:
 ---
 
 # RNNs Advanced
+
+**Optional**
 
 ---
 ## Self-Recurrent Neurons
@@ -525,7 +547,7 @@ Notes:
  * Input 1 represents the input signal at various times
  * Input 2 is the output of the neuron at the current time step
 
-<img src="../../assets/images/deep-learning/Recurrent-Neurons.png" alt="XXX image missing" style="background:white;max-width:45%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/Recurrent-Neurons.png"  style="width:40%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 
 
@@ -684,14 +706,15 @@ Notes:
 ---
 ## Sequence Classifier
 
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/Sequence-Classifier.png" style="width:50%;float:right;"/> <!-- {"left" : 2.01, "top" : 3.01, "height" : 4.9, "width" : 6.23} -->
 
- *  RNNs are great for classifying sequences:
+*  RNNs are great for classifying sequences:
 
-     -  Sentences
+    -  Sentences
 
-     -  Spoken words
+    -  Spoken words
 
-<img src="../../assets/images/deep-learning/Sequence-Classifier.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 2.01, "top" : 3.01, "height" : 4.9, "width" : 6.23} -->
 
 
 Notes:
@@ -760,15 +783,3 @@ Notes:
      - Natural Language Processing
 
 Notes:
-
----
-
-## Review and Q&A
-
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
-
-* Let's go over what we have covered so far
-
-* Any questions?
