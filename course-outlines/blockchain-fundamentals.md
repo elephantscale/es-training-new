@@ -48,12 +48,15 @@ We will discuss some of most common industry use cases; listed below
 ## Detailed Course Outline
 
 ### Blockchain Intro
+- What is blockchain
 - History of blockchain
 - Exploring blockchain
 
 ### Bitcoin
-- Introducing Bitcoin
-- Exploring Bitcoin; trends, prices
+- Introducing bitcoin
+- Bitcoin economy
+- Creation of bitcoins
+- Exploring bitcoin; trends, prices
 
 ### Blockchain Concepts
 - Peer-to-Peer architecture
@@ -71,6 +74,14 @@ We will discuss some of most common industry use cases; listed below
 - Encryption
 - Merkle tree
 
+### Understanding bitcoin transactions
+- Understanding wallets
+- Wallet addresses
+- Acquiring bitcoin
+- Buying goods and services using bitcoin
+- Understanding transactions
+- Recording transactions
+
 
 ### Blockchain Building Blocks
 - Hashing in blockchain
@@ -83,11 +94,20 @@ We will discuss some of most common industry use cases; listed below
 - Block schema
 - Block header
 - Transactions in a block
+- Inspecting transactions
 
 ### Blockchain in-depth
 - Adding a block to chain
 - Block forks and how to resolve them
 - How to avoid double spending
+
+### Bitcoin network
+- Peer-to-Peer architecture
+- Node types and roles
+- Network discovery
+- Full nodes
+- Simple Payment Verification (SPV)
+- Transaction pools
 
 ### Mining
 - Mining process
@@ -95,3 +115,7 @@ We will discuss some of most common industry use cases; listed below
 - Transaction fees
 - Verifying transactions
 - Transaction pool
+
+### Blockchain Applications
+- Discuss applications to be built on blockchain
+- Group discussion
