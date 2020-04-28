@@ -11,6 +11,12 @@
 
 ---
 
+There are many Python books, here are some that we recommend
+
+* [Introducing Python: Modern Computing in Simple Packages 2nd Edition](https://www.amazon.com/Introducing-Python-Modern-Computing-Packages/dp/1492051365/ref=redir_mobile_desktop?ie=UTF8&aaxitk=UTnB2uOmm2k0KdP7Qh.a0Q&hsa_cr_id=1275498690801&ref_=sb_s_sparkle)
+* [Python Pocket Reference: Python In Your Pocket (Pocket Reference (O'Reilly)) Fifth Edition](https://www.amazon.com/Python-Pocket-Reference-Your-OReilly/dp/1449357016/ref=redir_mobile_desktop?ie=UTF8&aaxitk=6ISCj8jS3Qx-fnlizPfhBA&hsa_cr_id=1275498690801&ref_=sb_s_sparkle)
+* [Learn Python 3 the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code (Zed Shaw's Hard Way Series)](https://www.amazon.com/Learn-Python-Hard-Way-Introduction-ebook/dp/B07378P8W6/ref=sr_1_3?crid=3Q8YB2LHWLXM1&dchild=1&keywords=learning+python+the+hard+way&qid=1588090877&sprefix=learning+python%2Caps%2C193&sr=8-3)
+
 # Introduction
 ---
 
@@ -28,6 +34,8 @@
 
 
 Notes:
+
+* [Python Website](https://www.python.org/)
 
 ---
 
@@ -93,7 +101,9 @@ Notes:
 
 Notes:
 
-Source : https://www.python.org/dev/peps/pep-0020/
+Source: https://www.python.org/dev/peps/pep-0020/
+
+* Long time Pythoneer Tim Peters succinctly channels the BDFL's guiding principles for Python's design into 20 aphorisms, only 19 of which have been written down.
 
 ---
 
@@ -140,12 +150,12 @@ Notes:
 
 The language was called Python because of Guido’s fascination with the Monty Python TV show. Python’s association with snakes gave rise to snake-like names, such as Anaconda.
 
-
+Study source on [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 ---
 
 ## Python Versions
 
-  * Python v1.x : Not used, (1994-2000)
+  * Python v1.x: Not used, (1994-2000)
 
   * Python v.2.x: Still Used! (2000-2007+)
 
@@ -161,6 +171,7 @@ The language was called Python because of Guido’s fascination with the Monty P
 
 Notes:
 
+[Python history](https://en.wikipedia.org/wiki/Python_(programming_language))
 ---
 
 ## Python 2 vs Python 3 Incompatibilities
@@ -181,6 +192,9 @@ Notes:
 
 Notes:
 
+*Latest announcement
+* January 1st 2020
+Python 2 End of Life Announced as January 1st 2020. After spreading the news at conferences, on the Python announcement list, and on countless blog posts and books, the Python Software Foundation has finally taken the step to formally announce Python 2 will reach end of life (EOL) on January 1st, 2020.
 ---
 
 ## Should you use Python 2 or Python 3?
