@@ -19,17 +19,19 @@ Notes:
 
 * Can you predict the next position of the ball?
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/billiard-ball-1.png"  style="width:70%;" />
+<img src="../../assets/images/deep-learning/billiard-ball-1.png"  style="width:70%;" /><!-- {"left" : 1.02, "top" : 2.42, "height" : 4.8, "width" : 8.21} -->
+
+
 ---
 ## Sometimes to Predict the Future, We Need to Know the Past
 
 * Can you predict the next position of the ball?
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/billiard-ball-2.png"  style="width:70%;" />
+<img src="../../assets/images/deep-learning/billiard-ball-2.png"  style="width:70%;" /><!-- {"left" : 1.02, "top" : 2.6, "height" : 3.87, "width" : 8.21} -->
+
 
 ---
+
 ## Time Series Data
 
 * Sensor Data (thermostats, weather stations, buoys)
@@ -38,8 +40,7 @@ Notes:
 
 * Other cases where the data changes on temporal basis
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/time-series-stocks.png"  style="width:60%;" />   <!-- {"left" : 0.74, "top" : 3.3, "height" : 4.63, "width" : 8.77} -->
+<img src="../../assets/images/deep-learning/time-series-stocks.png"  style="width:60%;" />   <!-- {"left" : 0.74, "top" : 3.47, "height" : 4.63, "width" : 8.77} -->
 
 
 
@@ -53,9 +54,8 @@ Source: Wikipedia
 
 * For example, what is the stock price in time t2?
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/time-series-1.png"  style="width:40%;" />   <!-- {"left" : 0.74, "top" : 3.3, "height" : 4.63, "width" : 8.77} -->
-<img src="../../assets/images/deep-learning/time-series-2.png"  style="width:40%;" />   <!-- {"left" : 0.74, "top" : 3.3, "height" : 4.63, "width" : 8.77} -->
+<img src="../../assets/images/deep-learning/time-series-1.png"  style="width:40%;" />   <!-- {"left" : 0.18, "top" : 3.26, "height" : 2.56, "width" : 4.85} -->
+<img src="../../assets/images/deep-learning/time-series-2.png"  style="width:40%;" />   <!-- {"left" : 5.22, "top" : 3.26, "height" : 2.56, "width" : 4.85} -->
 
 ---
 ## Time Series Data
@@ -86,7 +86,7 @@ I was talking with **my** mother about politics.
 aligned with **my** values," **she** said.
 
 ```
-<!-- {"left" : 0, "top" : 1.76, "height" : 1.14, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 2.12, "height" : 1.14, "width" : 10.25} -->
 
  * Who does the first "she" refer to?
 
@@ -109,8 +109,7 @@ Notes:
      -  Impossible to maintain state in sequence
      - For example, in this example, the network doesn't remember the 'previous input' (cat) when predicting the current input
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/Neural-Networks-Simulation.png"  style="width:75%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+<img src="../../assets/images/deep-learning/Neural-Networks-Simulation.png"  style="width:75%;"/><!-- {"left" : 0.97, "top" : 5.51, "height" : 1.96, "width" : 8.31} -->
 
 
 Notes:
@@ -124,10 +123,9 @@ Notes:
 
 * RNNs have a 'loop back' mechanism to pass the current state to the next iteration
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
-<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 0.4, "top" : 4.27, "height" : 3.47, "width" : 2.01} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 3.63, "top" : 4.27, "height" : 3.47, "width" : 1.53} -->
+<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 6.38, "top" : 4.27, "height" : 3.47, "width" : 3.47} -->
 
 [RNN animation link](TODO#)
 
@@ -135,7 +133,8 @@ Notes:
 
 ## RNN Animation
 
-<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/>
+
 
 [Animation link](TODO#)
 
@@ -143,8 +142,10 @@ Notes:
 
 ## RNN Unrolling Through Time
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/rnn-unrolling-3.gif"  style="width:80%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-3.gif"  style="width:70%;"/><!-- {"left" : 1.85, "top" : 1.14, "height" : 3.68, "width" : 6.55} -->
+
+<br/>
+
 
 [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9)  and  [Link to animation](https://miro.medium.com/max/960/1*TqcA9EIUF-DGGTBhIx_qbQ.gif)
 
@@ -158,8 +159,7 @@ Notes:
     - Like taking a picture/snapshot of the network for each time frame
  * This means that each neuron is like a chain of neurons, one for each time slice.
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/rnn-unrolling-2.png" style="width:70%;"/><!-- {"left" : 2.43, "top" : 4.45, "height" : 3.87, "width" : 5.4} -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-2.png" style="width:70%;"/><!-- {"left" : 1.34, "top" : 4.54, "height" : 3.73, "width" : 7.56} -->
 
 
 Notes:
@@ -168,8 +168,8 @@ Notes:
 
 ## Unrolling Through Time
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/rnn-unrolling-1.png" style="width:60%;"/><!-- {"left" : 2.43, "top" : 4.45, "height" : 3.87, "width" : 5.4} -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-1.png" style="width:60%;"/>
+
 
 ---
 ## Backpropagation Through Time
@@ -252,7 +252,8 @@ Notes:
 
 * We will discuss a use case starting at 3:50 in the video
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-video-1.png" style="width:60%;" />  <!-- {"left" : 2.53, "top" : 4.65, "height" : 3.49, "width" : 4.77} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-video-1.png" style="width:60%;" />   <!-- {"left" : 1.97, "top" : 3.95, "height" : 3.64, "width" : 6.32} -->
+
 
 ---
 
@@ -269,7 +270,7 @@ Notes:
 
 *  Tanh is the most commonly used in RNNs.
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" style="width:45%;" /> &nbsp;  <!-- {"left" : 2.36, "top" : 4.3, "height" : 2.16, "width" : 5.51} -->  &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" style="width:45%;" /><!-- {"left" : 2.22, "top" : 6.69, "height" : 2.16, "width" : 5.82} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" style="width:45%;" /> &nbsp;  <!-- {"left" : 2.36, "top" : 4.55, "height" : 2.16, "width" : 5.51} -->  &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" style="width:45%;" /><!-- {"left" : 2.22, "top" : 6.73, "height" : 2.16, "width" : 5.82} -->
 
 
 Notes:
@@ -294,8 +295,9 @@ Notes:
 ## Text Understanding
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/alexa-2.png"  style="width:80%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/alexa-2.png"  style="width:80%;" /> <!-- {"left" : 1.02, "top" : 2.91, "height" : 3.83, "width" : 8.21} -->
+ 
+
 
 ---
 
@@ -315,6 +317,7 @@ Notes:
 
 
 ---
+
 ## Use Case: Text Processing with RNNs
 
 * Now we feed the sequence of words into RNN
@@ -342,6 +345,7 @@ Notes:
 <img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.gif"  style="width:60%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 ---
+
 ## Use Case: Text Processing with RNNs
 
 * The words are fed into sequence
@@ -356,6 +360,7 @@ Notes:
 <img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.gif"  style="width:60%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 ---
+
 ## Use Case: Text Processing with RNNs
 
 * So the text **"What time is it?"** is encoded as **05**
@@ -364,7 +369,7 @@ Notes:
 * For example, if the input text is **"What is the time?"** (notice the order is different), the output will definitely NOT be **05**
 * [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*3bKRTcqSbto3CXfwshVwmQ.gif)
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" />  <!-- {"left" : 2.13, "top" : 4.95, "height" : 3.53, "width" : 5.99} -->
 
 ---
 
@@ -417,8 +422,7 @@ Notes:
 ---
 ## Vector To Sequence
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/image-caption-1.png"  style="width:50%;float:right;"/>  <!-- {"left" : 1.02, "top" : 3.38, "height" : 4.67, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/image-caption-1.png"  style="width:50%;float:right;"/> <!-- {"left" : 5.69, "top" : 1.14, "height" : 2.01, "width" : 4.43} -->
 
 *  The Network will take a vector as an input and a produce a sequence as an output
 
@@ -426,7 +430,7 @@ Notes:
 
 <br clear="all" />
 
-<img src="../../assets/images/deep-learning/Vector-to-Sequence.png"  style="width:40%;"/>  <!-- {"left" : 1.02, "top" : 3.38, "height" : 4.67, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/Vector-to-Sequence.png"  style="width:40%;"/>  <!-- {"left" : 2.51, "top" : 5.19, "height" : 2.97, "width" : 5.23} -->
 
 Notes:
 
@@ -458,9 +462,10 @@ Notes:
 
 
 ---
+
 ## Machine Translation Model
 
-<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;float:right;" />  <!-- {"left" : 1.57, "top" : 3.13, "height" : 4.71, "width" : 7.1} -->
+<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;float:right;" />  <!-- {"left" : 5.13, "top" : 1.17, "height" : 3.33, "width" : 5.02} -->
 
  *  Machine translation model is essentially a deep recurrent neural network
 
@@ -493,8 +498,7 @@ Notes:
 
 ## RNNs Have Short Term Memory
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/rnn-memory-1.png" style="width:50%;float:right;" />  <!-- {"left" : 1.57, "top" : 3.13, "height" : 4.71, "width" : 7.1} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-memory-1.png" style="width:50%;float:right;" />   <!-- {"left" : 5.78, "top" : 1.06, "height" : 2.31, "width" : 4.34} -->
 
 * The **hidden state fades over multiple steps**
 
@@ -508,7 +512,9 @@ Notes:
     - They can't process long sequences well (e.g. really long sentences)
 
 * [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9)
+
 ---
+
 ## RNN Drawbacks
 
 * RNNs can be difficult to train
@@ -706,8 +712,7 @@ Notes:
 ---
 ## Sequence Classifier
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/Sequence-Classifier.png" style="width:50%;float:right;"/> <!-- {"left" : 2.01, "top" : 3.01, "height" : 4.9, "width" : 6.23} -->
+<img src="../../assets/images/deep-learning/Sequence-Classifier.png" style="width:50%;float:right;"/> <!-- {"left" : 5.65, "top" : 1.02, "height" : 3.58, "width" : 4.48} -->
 
 *  RNNs are great for classifying sequences:
 
@@ -739,7 +744,7 @@ Notes:
 ---
 ## RNN Cells to FC Using Output Projection
 
-<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" style="width:40%;float:right;"/><!-- {"left" : 2.71, "top" : 4.21, "height" : 4.24, "width" : 4.82} -->
+<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" style="width:40%;float:right;"/><!-- {"left" : 5.96, "top" : 1.18, "height" : 3.62, "width" : 4.11} -->
 
  *  To connect cells from an RNN to a Fully Connected Layer, we need to do *output projection.*
  *  This means we take each cell from the RNN and "project" it as an opening to a Fully Connected (FC) neuron.
