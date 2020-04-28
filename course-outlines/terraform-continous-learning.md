@@ -2,7 +2,6 @@
 
 April 28, 2020
 
-
 ## Overview
 
 * IaS (Infrastructure as Code) is one of the most important developments in application
@@ -16,12 +15,11 @@ in multiple cloud environments.
  * DevOps and IaC
  * How to use Terraform
 
-
 ## Audience
 DevOps, Developers, Architects
 
 ## Duration
-3 days
+2 months, one session a week, about 2 hours long
 
 ## Format
 Lectures and hands-on labs. (50%, 50%)
@@ -37,7 +35,6 @@ Lectures and hands-on labs. (50%, 50%)
 * Unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly
 * Chrome browser
   - SSH client for your platform
-
 
 ## Detailed Outline
 
