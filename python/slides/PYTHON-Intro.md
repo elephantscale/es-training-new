@@ -213,6 +213,7 @@ Python 2 End of Life Announced as January 1st 2020. After spreading the news at 
 
 Notes:
 
+* For further research, go [here](https://www.guru99.com/python-2-vs-python-3.html)
 ---
 
 ## Python Versus R
@@ -231,6 +232,7 @@ Notes:
 
 Notes:
 
+* More on R vs Python [here](https://www.guru99.com/r-vs-python.html)
 ---
 
 ## Python Versus Java
@@ -248,7 +250,10 @@ Notes:
 
 Notes:
 
+* More on Python vs Java [here](https://hackr.io/blog/python-vs-java)
+
 ---
+
 
 ## Python vs Javascript/Node
 
@@ -268,6 +273,7 @@ Notes:
 
 Notes:
 
+* More on Python vs Javascript [here](https://www.educba.com/python-vs-javascript/)
 ---
 
 ## Python Popularity
@@ -280,6 +286,7 @@ Notes:
 
 Notes:
 
+* Python reaching aspiring to be the second popular language [here](https://www.wired.com/story/python-language-more-popular-than-ever/)
 ---
 
 ## A simple “Hello, world!” comparison
@@ -308,6 +315,7 @@ Notes:
 
 Notes:
 
+* To study Python uses cases in-depth, [here](https://www.techrepublic.com/article/python-5-use-cases-for-programmers/)
 ---
 
 ## Is Python Interpreted?
@@ -326,6 +334,8 @@ Notes:
 
 Notes:
 
+* Python converts source code written by the programmer into intermediate language which is again translated into the native language / machine language that is executed. So Python is an Interpreted language. It is processed at runtime by the interpreter. The program need not be compiled before its execution.
+* For an extended discussion, see [here](https://www.quora.com/Is-Python-compiled-or-interpreted-or-both)
 ---
 
 ## Is Python Fast?
@@ -350,6 +360,8 @@ Notes:
 
 Notes:
 
+* In terms of raw performance, Python is definitely slower than Java, C# and C/C++. However, there are other things that matter for the user/observer such as total memory usage, initial startup time, etc. For most things, Python is fast enough ;)
+* See more discussion [here](https://stackoverflow.com/questions/1686192/how-fast-is-python)
 ---
 
 ## Installation
@@ -380,6 +392,8 @@ Notes:
 
 Notes:
 
+* There are definitely are many ways to install Python
+* If you want a deeper view, go [here](https://wiki.python.org/moin/BeginnersGuide/Download) 
 ---
 
 ## Why Anaconda?
@@ -405,6 +419,13 @@ Notes:
 
 Notes:
 
+* Benefits of Using Python Anaconda
+  - It is free and open-source.
+  - It has more than 1500 Python/R data science packages.
+  - Anaconda simplifies package management and deployment.
+  - It has tools to easily collect data from sources using machine learning and AI.
+  
+* To go deeper, see [here](https://data-flair.training/blogs/python-anaconda-tutorial/)
 ---
 
 ## Do I really need Anaconda?
@@ -423,6 +444,8 @@ Notes:
 
 Notes:
 
+In this course, we are usually using Anaconda installed. Yes, you have your choice, and
+if you want to experiment, then start with Anaconda, and later try your experiments.
 ---
 
 ## Lab: Install Anaconda
@@ -439,7 +462,9 @@ Notes:
 
     - **01-helloworld /**
 
+Notes:
 
+Anaconda is a big download, and the install will take time. Just sit back and relax. It will work. 
 ---
 
 ## Python Console
@@ -469,6 +494,8 @@ $ python
 
 Notes:
 
+* Please experiment with the command line beyond what is shown in the slides.
+It's your creativity that counts. Then share with your fellow students and the instructor.
 ---
 
 ## Lab: Python REPL Shell
@@ -488,7 +515,11 @@ Notes:
 
 ---
 
-## Getting Started With Python  REPL (Lab)
+Notes:
+
+* Please follow the lab. Ask the instructor for assistance.
+ 
+## Getting Started With Python REPL (Lab)
 
 ```python
 # prints to screen
@@ -504,6 +535,9 @@ c = "hello world"
 * Lab: 01-helloworld/1.1-REPL.md
 
 Notes:
+
+* Try other commands in the REPL.
+* Again, what does REPL stand for?
 
 ---
 
@@ -527,7 +561,10 @@ Hello World!
 
 Notes:
 
+* Additional task: change the code in the scripts and run it.
+How long did it take you?
 ---
+
 
 ## Lab: Run a Script
 
@@ -542,6 +579,10 @@ Notes:
   * Instructions:
 
     - **01-helloworld / 1.2-Script.md**
+
+Notes: 
+
+* Experiment with the script in the lab.
 
 ---
 
@@ -580,6 +621,12 @@ Notes:
 
 Notes:
 
+* In this course, we will introduce every development environment (IDE)
+My personal preference is JetBrains PyCharm. I use multiple languages and
+I find it convenient to have the same style of the interface for all of them,
+which I get by using JetBrains products. So yes, I have a professional license. 
+To me, it's worth it. I get everything from one source, and the subscription price
+goes down in the second and third year.
 ---
 
 ## Spyder
@@ -598,6 +645,7 @@ Notes:
 
 Notes:
 
+At the very least, try that. It came with your Anaconda anyway.
 ---
 
 ## Pycharm
@@ -614,6 +662,7 @@ Notes:
 
 Notes:
 
+As mentioned above, this is my personal preference.
 ---
 
 ## PyDev / Eclipse
@@ -629,6 +678,7 @@ Notes:
 
 Notes:
 
+Would make sense if you do Java with Eclipse
 ---
 
 ## PyDev / Eclipse
@@ -653,6 +703,12 @@ Notes:
 
 Notes:
 
+* VS Code is a very popular IDE from Microsoft. 
+
+* Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS.[6] It includes support for debugging, embedded Git control and GitHub, syntax highlighting, intelligent code completion, snippets, and code refactoring. It is highly customizable, allowing users to change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality. The source code is free and open-source, released under the permissive MIT License.[7] The compiled binaries are freeware for any use.[8]
+
+* In the Stack Overflow 2019 Developer Survey, Visual Studio Code was ranked the most popular developer environment tool, with 50.7% of 87,317 respondents claiming to use it.[9]
+* See more about it [here](https://en.wikipedia.org/wiki/Visual_Studio_Code)
 ---
 
 ## Other options
@@ -671,6 +727,8 @@ Notes:
 
 Notes:
 
+It is worth it to learn the 'vi' editor. It is not going anywhere after almost 50
+year, being written by Bill Joy. See more about it [here](https://en.wikipedia.org/wiki/Vi) 
 ---
 
 ## Lab: Introducing Spyder
@@ -731,6 +789,8 @@ Notes:
 
 Notes:
 
+Jupyter notebook is one of the simplest and most popular IDE's. But that is exactly
+its problem: Jupyter notebooks are the first thing student learn, and it is the least suited to production deployment.
 ---
 ## Jupyter Notebooks
 
@@ -790,6 +850,8 @@ http://localhost:8888/?token=YOURTOKEN
 
 Notes:
 
+Jupyter notebooks come with a lot of help. You can become
+quite proficient in their use by reading the help files.
 ---
 
 ## Browser for Jupyter Notebook
@@ -850,4 +912,8 @@ Notes:
 
     - **02__pythonIntro | learningJupyter.ipynb**
 
+Notes:
 
+In the future, you will spend a lot of time in the notebooks,
+so don't worry if you do not get it all right away. 
+---
