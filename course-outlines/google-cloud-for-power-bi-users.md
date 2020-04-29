@@ -4,9 +4,12 @@
 April 20, 2020
 
 ## Overview
-Data Analytics is all the rage today, and Google is one of the major promoters of it. Google Cloud Platform (GCP) is one of the leading platforms for Data Science.
+* Data Analytics is all the rage today, and Google is one of the major promoters of it. Google Cloud Platform (GCP) is one of the leading platforms for Data Science.
 
-In this course, the students will learn to do Data Science with Python,  and the capabilities of Google Cloud specific to Data Science
+* In this course, the students will learn to do Data Analytics and Data Science with Google Cloud.
+
+* Students who are familiar with Azure and Power BI will learn to apply their skills on Google Cloud. 
+
 
 ## What you will learn:
 * Understand Google Cloud's features for Data Science
@@ -76,6 +79,7 @@ Students need to have access to Google Cloud environment.  We encourage using fr
 ### Google Big Query
 * Introduction to Big Query
 * Running queries on Big Query
+* Big Query vs PowerBI
 * Labs
 
 ### Using Big Query for Power BI Tasks
@@ -101,6 +105,8 @@ Students need to have access to Google Cloud environment.  We encourage using fr
 * Python vs PowerBI DAX
 * Labs
 
+## Advanced Topics
+
 ### Python Development in Google Cloud
 * Introduction to Google Colab
 * Introduction to Datalab
@@ -112,7 +118,7 @@ Students need to have access to Google Cloud environment.  We encourage using fr
 * Spark Intro
 * Spark Shell
 * Loading and analyzing data in Spark
-* Spark Dataframes
+* Spark DataFrames
 * Spark SQL
 * Azure Databricks vs GCP Spark
 * Labs
