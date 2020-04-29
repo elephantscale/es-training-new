@@ -114,11 +114,13 @@ Students need to have access to Google Cloud environment.  We encourage using fr
 * Loading and analyzing data in Spark
 * Spark Dataframes
 * Spark SQL
+* Azure Databricks vs GCP Spark
 * Labs
 
 ### Google Dataproc
 * Introduction to Google Dataproc
 * Running Hadoop, Spark clusters using DataProc
+* PowerBI vs Dataproc
 * Labs
 
 ### Machine Learning (4th day)
