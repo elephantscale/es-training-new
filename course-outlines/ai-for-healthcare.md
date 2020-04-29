@@ -63,7 +63,7 @@ April 29, 2020
 * Predicting the Outcome of Interventions: Causal Inference from Observational Data
 * Case Study - Group Discussion & Lab Session
 
-###Implementing AI in Healthcare
+### Implementing AI in Healthcare
 
 * Interpretability of Machine Learning Models
 * Machine Learning Frameworks
