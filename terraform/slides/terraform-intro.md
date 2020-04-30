@@ -65,7 +65,7 @@
 
 ## Ad Hoc Scripts
 
-![](../artwork/ad-hoc-script.png)
+![](../../assets/images/terraform//ad-hoc-script.png)
 
 ---
 
@@ -73,18 +73,18 @@
 
 * Chef, Puppet, Ansible, and SaltStack
 * Example of Ansible script
-![](../artwork/ansible.png)
+![](../../assets/images/terraform//ansible.png)
 
 ---
 
 ## Server Templating Tools
 *  Docker, Packer, and Vagrant.
-![](../artwork/packer-script.png)
+![](../../assets/images/terraform//packer-script.png)
 
 ---
 
 
 ## Images and Containers
-![](../artwork/images-containers.png)
+![](../../assets/images/terraform//images-containers.png)
 
 ---

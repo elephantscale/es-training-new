@@ -13,7 +13,7 @@
     * Multiple images need
     * Version proliferation
     * "Foil Ball"
-![Del Mar, San Diego](../artwork/golden-image.png)
+![Del Mar, San Diego](../../assets/images/terraform//golden-image.png)
 
 ---
 ## Then
@@ -26,7 +26,7 @@
     - to deal with base hardware differences
     - to provide a starting step or bootstrap for a server
 * The focus on post-install configuration
-![](../artwork/puppet-pexels.jpg)
+![](../../assets/images/terraform//puppet-pexels.jpg)
 
 ---
     
