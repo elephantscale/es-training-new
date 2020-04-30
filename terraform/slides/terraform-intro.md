@@ -88,3 +88,35 @@
 ![](../../assets/images/terraform//images-containers.png)
 
 ---
+
+### Virtual Machines vs Containers
+
+* Virtual machines
+    - A virtual machine (VM) emulates an entire computer system, including the hardware. You run a hypervisor, such as VMWare, VirtualBox, or Parallels, to virtualize (i.e., simulate) the underlying CPU, memory, hard drive, and networking.
+    - Benefit: complete isolation
+    - Drawback: waste of resources
+    - You can define VM images as code using tools such as Packer and Vagrant. 
+* Containers
+    - A container emulates the user space of an OS.2 You run a container engine, such as Docker, CoreOS rkt, or cri-o, to create isolated processes, memory, mount points, and networking.    
+    - Benefit: you run on top of the container engine can see only its own user space
+    - Drawback: of the containers running on a single server share, milliseconds boot time
+    
+---
+### The Benefits of Infrastructure as Code
+
+* Q:
+* With all the different flavors of IaC why bother IaC (i.e. Terraform)? 
+    - Why learn a bunch of new languages and tools and encumber yourself with yet more code to manage?
+* A:
+    - code is powerful
+    - you get dramatic improvements in your ability to deliver software
+    - organizations that use DevOps practices, such as IaC
+        - deploy 200 times more frequently
+        - recover from failures 24 times faster
+        - have lead times that are 2,555 times lower.
+        
+Notes:
+
+Source: 2016 State of DevOps Report
+
+---                
