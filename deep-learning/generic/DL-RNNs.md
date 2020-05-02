@@ -296,7 +296,7 @@ Notes:
 
 
 <img src="../../assets/images/deep-learning/alexa-2.png"  style="width:80%;" /> <!-- {"left" : 1.02, "top" : 2.91, "height" : 3.83, "width" : 8.21} -->
- 
+
 
 
 ---
@@ -313,7 +313,7 @@ Notes:
 
 * [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*G7T4sFO-1ByMepsa5OilsQ.gif)
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1.gif"  style="width:40%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1.gif"  alt="click animation link" style="width:40%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 
 ---
