@@ -1,3 +1,4 @@
 About_Terraform_Class.md
 terraform-intro.md
+terraform-walk-through.md
 packer-intro.md

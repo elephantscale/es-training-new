@@ -102,7 +102,7 @@
     - Drawback: of the containers running on a single server share, milliseconds boot time
     
 ---
-### The Benefits of Infrastructure as Code
+## Why Infrastructure as Code?
 
 * Q:
 * With all the different flavors of IaC why bother IaC (i.e. Terraform)? 
@@ -120,3 +120,71 @@ Notes:
 Source: 2016 State of DevOps Report
 
 ---                
+## The Benefits of Infrastructure as Code
+
+* Self-service
+
+  * Infrastructure deployment with the scripts, not your admin  
+
+* Speed and safety
+    * The computer will do a deployment faster and with less errors
+
+* Documentation
+    * You can represent the state of your infrastructure in source files
+    
+* Version control
+    * You can store your IaC source files in version control
+    
+* Validation
+    * For every single change, you can perform a code review
+    
+* Reuse
+    * You can build on top of known, documented pieces
+
+---
+## Happiness with IaC
+
+* Happiness
+    * Deploying code and managing infrastructure manually is repetitive and tedious
+    * No one will take notice—until that one day when you mess it up
+    * That creates a stressful and unpleasant environment
+    * Here is a painting of a happy man (see notes)
+       
+![](../../assets/images/terraform/800px-Hendrik_ter_Brugghen_-_Democritus.jpg)
+
+Notes:
+
+* Painting: Democritus by Hendrick ter Brugghen, 1628.
+
+* Some philosophers consider happiness the goal of people's life
+    * Democritus
+        * Democritus (c. 460 – c. 370 BC) is known as the 'laughing philosopher' because of his emphasis on the value of 'cheerfulness'.
+* Plato
+    * Sees a type of happiness stemming from social justice through fulfilling one's social function
+* Aristotle
+    * described eudaimonia (Greek: εὐδαιμονία) as the goal of human thought and action. Eudaimonia is often translated to mean happiness
+* Cynicism (Antisthenes)
+    * rejected any conventional notions of happiness involving money, power, and fame, to lead entirely virtuous, and thus happy, lives
+    
+---
+## How Terraform Works
+
+* Terraform is an open source tool created by HashiCorp and written in the Go programming language
+* The Go code compiles down into a single binary called `terraform`
+* You can use this binary to deploy infrastructure from your laptop or a build server
+    *  you don’t need to run any extra infrastructure to make that happen
+* The `terraform` binary makes API calls on your behalf to one or more providers
+    * AWS
+    * Azure
+    * Google Cloud
+    * DigitalOcean
+    * OpenStack, and more
+    
+---     
+## Terraform and Other Tools
+![](../../assets/images/terraform/terraform-and-other-tools.png)
+
+Notes:
+
+Source: The book
+---                                       
