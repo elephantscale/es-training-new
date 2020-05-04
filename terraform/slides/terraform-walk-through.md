@@ -266,6 +266,9 @@ nohup busybox httpd -f -p 8080 &
 ## Adding a Script to the Instance
 
 *  You pass a shell script to User Data by setting the user_data argument in your Terraform code as follows:
+
+* The `<<-EOF` and `EOF` are Terraform’s `heredoc` syntax, which allows you to create multiline strings without having to insert newline characters all over the place
+
 ```shell script
   user_data = <<-EOF
               #!/bin/bash
@@ -273,14 +276,13 @@ nohup busybox httpd -f -p 8080 &
               nohup busybox httpd -f -p 8080 &
               EOF
 ```
-* The `<<-EOF` and `EOF` are Terraform’s `heredoc` syntax, which allows you to create multiline strings without having to insert newline characters all over the place
-
 ---
 
 ## Wait! One More Thing
 
 * By default, AWS does not allow any incoming or outgoing traffic from an EC2 Instance. 
 * To allow the EC2 Instance to receive traffic on port 8080, you need to create a security group:
+* Creates a new resource called `aws_security_group`
 
 ```shell script
 resource "aws_security_group" "instance" {
@@ -294,14 +296,14 @@ resource "aws_security_group" "instance" {
   }
 }
 ```
-* Creates a new resource called `aws_security_group`
 
 ## CIDR Blocks
 
-* The `ingress' above specifies that this group allows incoming TCP requests
+* The `ingress` in this group allows incoming TCP requests
     * on port 8080 from the CIDR block 0.0.0.0/0
 * CIDR blocks are a concise way to specify IP address ranges
-* For example, a CIDR block of 10.0.0.0/24 
+* For example
+    * a CIDR block of 10.0.0.0/24 
     * represents all IP addresses between 10.0.0.0 and 10.0.0.255
 * The CIDR block 0.0.0.0/0 is an IP address range that includes all possible IP addresses, so this security group allows incoming requests on port 8080 from any IP
 
@@ -368,7 +370,6 @@ Plan: 2 to add, 0 to change, 1 to destroy.
 $ curl http://<EC2_INSTANCE_PUBLIC_IP>:8080
 Hello, World
 ```
-* In my example
 
 ```shell script
 $ curl http://18.188.2.30:8080
@@ -376,5 +377,46 @@ Hello, World
 ```
 ![](../../assets/images/terraform/terraform-result-00.png)
 
-* Celebrate!
 ---
+
+## Terraform Dependencies
+
+* When you add a reference from one resource to another, you create an implicit dependency
+
+* Terraform
+    * Parses these dependencies
+    * builds a dependency graph from them
+    * uses that to automatically determine in which order it should create resources 
+    
+* To see the dependencies, you use the command
+
+```shell script
+     terraform graph
+```
+---
+    
+## Terraform Graph Output  
+![](../../assets/images/terraform/graph.dot.png)
+
+---
+
+## Terraform Graph Visual
+
+* Use a desktop app such as Graphviz or 
+* webapp like [GraphvizOnline](http://dreampuf.github.io/GraphvizOnline)
+![](../../assets/images/terraform/graph.png)  
+---
+
+## NETWORK SECURITY
+
+* All our example deploy not only into your Default VPC (as mentioned earlier), but also the default subnets of that VPC
+* Running a server in a public subnet is fine for a quick experiment, but in real-world usage, it’s a security risk
+* For production systems, you should deploy all of your servers, and certainly all of your data stores, in private subnets
+    * These have IP addresses that can be accessed only from within the VPC and not from the public internet
+![](../../assets/images/terraform/photo-of-guy-fawkes-mask-with-red-flower-on-top-on-hand-38275.jpg)
+
+Notes: 
+
+Source: https://www.pexels.com/
+---      
+
