@@ -17,7 +17,7 @@ became more popular than all other IaC implementations.
 such as Amazon Web Services, IBM Cloud, Google Cloud Platform, DigitalOcean, Linode, Microsoft Azure, 
 Oracle Cloud Infrastructure, VMware vSphere, OpenStack, and many others. 
 
-* Terraform is declarative idempotent. These are good design principles, 
+* Terraform is declarative and idempotent. These are good design principles, 
 and many competitors have also implemented Terraform ideas, making Terraform a de facto standard.
 
 
