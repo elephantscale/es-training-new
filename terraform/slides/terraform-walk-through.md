@@ -647,11 +647,103 @@ output "public_ip" {
 ![](../../assets/images/terraform/bigmusclet.png)    
 ---
 
-## Auto-Scaling Group
+## Auto-Scaling Group (ASG)
 
 ![](../../assets/images/terraform/asg.png)
 
 ---
+## ASG Described in Terraform
 
+* To create an ASG, first describe the instance that goes into it
+    * Create a launch configuration 
+    * The `aws_launch_configuration` resource 
+        * uses almost exactly the same parameters as the `aws_instance resource` 
+        * ami is now image_id 
+        * vpc_security_group_ids is now security_groups
+        * put this instead of 
+
+```shell script
+resource "aws_launch_configuration" "example" {
+  image_id        = "ami-0c55b159cbfafe1f0"
+  instance_type   = "t2.micro"
+  security_groups = [aws_security_group.instance.id]
+
+  user_data = <<-EOF
+      #!/bin/bash
+          echo "Hello, World" > index.html
+          nohup busybox httpd -f -p ${var.server_port} &
+          EOF
+}
+```    
+---
+
+## Now the ASG Itself with "aws_autoscaling_group"
+
+* ASG will run between 2 and 10 instances
+* each tagged with the name `terraform-asg-example`
+* ASG uses a reference to fill in the launch configuration `name`
+
+```shell script
+resource "aws_autoscaling_group" "example" {
+  launch_configuration = aws_launch_configuration.example.name
+
+  min_size = 2
+  max_size = 10
+
+  tag {
+    key                 = "Name"
+    value               = "terraform-asg-example"
+    propagate_at_launch = true
+  }
+}
+```
+
+Notes:
+
+* The use of `name` leads to a problem: 
+launch configurations are immutable, so if you change any parameter of your launch configuration, 
+Terraform will try to replace it. Normally, when replacing a resource, 
+Terraform deletes the old resource first and then creates its replacement, 
+but because your ASG now has a reference to the old resource, Terraform won’t be able to delete it.
+
+* To solve this problem, you can use a lifecycle setting, see next slide.
+---
+
+## "Lifecycle" Setting
+
+* Use `create_before_destroy` 
+* If you set `create_before_destroy` to true
+    * Terraform will invert the order in which it replaces resources
+    * create the replacement resource first
+    * then deleting the old resource
+    
+```shell script
+resource "aws_launch_configuration" "example" {
+  image_id        = "ami-0c55b159cbfafe1f0"
+  instance_type   = "t2.micro"
+  security_groups = [aws_security_group.instance.id]
+
+  user_data = <<-EOF
+              #!/bin/bash
+              echo "Hello, World" > index.html
+              nohup busybox httpd -f -p ${var.server_port} &
+              EOF
+  # Required when using a launch configuration with an ASG
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+```     
+---
+
+## One More Parameter: "subnet_ids"
+
+* specifies to the ASG into which VPC subnets the EC2 Instances should be deployed
+* Each subnet lives in an isolated AWS AZ
+* By deploying your instances across multiple subnets
+    * you make it fault-tolerant
+    
+---
 
     
+
