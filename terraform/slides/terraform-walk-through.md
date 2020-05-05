@@ -631,3 +631,20 @@ output "public_ip" {
 * In this lab, we practice setting up Terraform variables
 ---
 
+# Adding Scalability
+
+## Motivation for a Cluster
+
+* Running a single server is a good start, but in the real world, a single server is a single point of failure
+* If that server crashes, or if it becomes overloaded from too much traffic, users will be unable to access your site
+* The solution is to run a cluster of servers, routing around servers that go down, and adjusting the size of the cluster up or down based on traffic
+
+* We will need the following
+    * Auto-scaling group
+    * VPC
+    * Load balancer
+    
+![](../../assets/images/terraform/bigmusclet.png)    
+---
+
+    
