@@ -669,15 +669,15 @@ resource "aws_launch_configuration" "example" {
   security_groups = [aws_security_group.instance.id]
 
   user_data = <<-EOF
-      #!/bin/bash
-          echo "Hello, World" > index.html
-          nohup busybox httpd -f -p ${var.server_port} &
-          EOF
+  #!/bin/bash
+      echo "Hello, World" > index.html
+      nohup busybox httpd -f -p ${var.server_port} &
+      EOF
 }
 ```    
 ---
 
-## Now the ASG Itself with "aws_autoscaling_group"
+## The ASG Itself with "aws_autoscaling_group"
 
 * ASG will run between 2 and 10 instances
 * each tagged with the name `terraform-asg-example`
@@ -685,7 +685,8 @@ resource "aws_launch_configuration" "example" {
 
 ```shell script
 resource "aws_autoscaling_group" "example" {
-  launch_configuration = aws_launch_configuration.example.name
+  launch_configuration = 
+    aws_launch_configuration.example.name
 
   min_size = 2
   max_size = 10
@@ -724,11 +725,11 @@ resource "aws_launch_configuration" "example" {
   security_groups = [aws_security_group.instance.id]
 
   user_data = <<-EOF
-              #!/bin/bash
-              echo "Hello, World" > index.html
-              nohup busybox httpd -f -p ${var.server_port} &
-              EOF
-  # Required when using a launch configuration with an ASG
+      #!/bin/bash
+      echo "Hello, World" > index.html
+      nohup busybox httpd -f -p ${var.server_port} &
+      EOF
+  # Required when launching configuration with an ASG
   lifecycle {
     create_before_destroy = true
   }
@@ -742,8 +743,93 @@ resource "aws_launch_configuration" "example" {
 * Each subnet lives in an isolated AWS AZ
 * By deploying your instances across multiple subnets
     * you make it fault-tolerant
-    
+* Instead of hard-coding the list of subnet, we will get them `data sources`    
 ---
 
-    
+## Data Sources
+
+* `data source` a piece of read-only information that is fetched from the provider (in this case, AWS) every time you run Terraform
+* `data source` in your configurations is a way to query the provider’s APIs for data
+* AWS data sources include
+    * VPC data
+    * subnet data
+    * AMI IDs
+    * IP address ranges
+    * more
+---
+
+## Data Source Syntax
+
+```shell script
+data "<PROVIDER>_<TYPE>" "<NAME>" {
+  [CONFIG ...]
+}
+```
+
+* Example: Do I have the default VPC?
+
+```shell script
+data "aws_vpc" "default" {
+  default = true
+}
+```    
+---
+
+## Getting data for "data source"
+
+* Syntax
+
+* `data.<PROVIDER>_<TYPE>.<NAME>.<ATTRIBUTE>`
+
+* Example
+
+* `data.aws_vpc.default.id`
+
+* With this, you can find out the default subnet id
+
+```shell script
+data "aws_subnet_ids" "default" {
+  vpc_id = data.aws_vpc.default.id
+}
+```
+
+## Use the Default Subnet id
+
+* Pull the subnet IDs out of the aws_subnet_ids data source
+* Tell your ASG to use those subnets via the `vpc_zone_identifier` argument
+
+```shell script
+resource "aws_autoscaling_group" "example" {
+  launch_configuration = aws_launch_configuration.example.name
+  vpc_zone_identifier  = data.aws_subnet_ids.default.ids
+
+  min_size = 2
+  max_size = 10
+
+  tag {
+    key                 = "Name"
+    value               = "terraform-asg-example"
+    propagate_at_launch = true
+  }
+}
+```
+---
+## Load Balancer
+![](../../assets/images/terraform/load-balancer.png)
+
+---
+## Using Load Balancer
+
+* Problem
+    * you now have multiple servers, each with its own IP address
+    * you want to give of your end users only a single IP to use
+* Solution
+    *  deploy a load balancer to distribute traffic across your servers    
+* Advantage
+    * highly available and scalable 
+* ELB to the rescue
+    * Amazon’s Elastic Load Balancer (ELB) service    
+![](../../assets/images/terraform/elb.png)
+
+---    
 
