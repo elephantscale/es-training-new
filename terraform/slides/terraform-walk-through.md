@@ -1,22 +1,19 @@
 # Terraform Walk-Through
 
+# Getting started with Terraform
+
 ## The Plan
 
-* Setting up your AWS account
-
-* Installing Terraform
-
-* Deploying a single server
-
-* Deploying a single web server
-
-* Deploying a configurable web server
-
-* Deploying a cluster of web servers
-
-* Deploying a load balancer
-
-* Cleaning up
+* Getting started with Terraform
+    * Setting up your AWS account
+    * Installing Terraform
+    * Deploying a single server
+    * Deploying a single web server
+* More advanced configuration
+    * Deploying a configurable web server
+    * Deploying a cluster of web servers
+    * Deploying a load balancer
+    * Cleaning up
 
 ---
 
@@ -100,6 +97,13 @@ $ export AWS_SECRET_ACCESS_KEY=(your secret access key)
 * Terraform supports the same authentication mechanisms as all AWS CLI and SDK tools
 * Therefore, it’ll also be able to use credentials in $HOME/.aws/credentials
     * These are automatically generated if you run the `configure` command on the AWS CLI, or IAM
+
+---
+## Lab: Terraform Hello World
+
+* Please do this lab 
+* `code/terraform/00-preface/hello-world`
+* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/00-preface/hello-world)
 
 ---
 
@@ -407,6 +411,14 @@ Hello, World
 ![](../../assets/images/terraform/graph.png)  
 ---
 
+## Lab: Server Deployment
+
+* Please do this lab: 
+* `code/terraform/01-why-terraform/web-server/step1/` 
+* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step1)
+* In this lab, we practice server deployment
+---
+
 ## NETWORK SECURITY
 
 * All our example deploy not only into your Default VPC (as mentioned earlier), but also the default subnets of that VPC
@@ -419,4 +431,203 @@ Notes:
 
 Source: https://www.pexels.com/
 ---      
+
+# Using Variables for Configuration
+
+## Deploy a Configurable Web Server
+
+* Don’t Repeat Yourself (DRY) principle
+* However, we violated it
+    * the web server port 8080 is duplicated in both the security group and the `User Data` configuration
+* So, DRY:
+    * every piece of knowledge must have a single, unambiguous, authoritative representation within a system
+
+![](../../assets/images/terraform/close-up-close-up-view-dry-environment-141489.jpg)
+        
+Notes: 
+
+Source: https://www.pexels.com/
+---   
+
+## Terraform Input Variables
+
+```shell script
+variable "NAME" {
+  [CONFIG ...]
+}
+```
+* description
+    * It’s always a good idea to use this parameter to document how a variable is used
+
+* default, or use these ways:
+    * passing it in at the command line (using the -var option)
+    * via a file (using the -var-file option)
+    * via an environment variable 
+
+* type
+    * enforce type constraints on the variables a user passes in
+    * type constraints: string, number, bool, list, map, set, object, tuple, and any
+
+---
+
+## Examples of Terraform Input Variables
+
+* Input variable that checks that the value you pass in is a number:
+  
+```shell script
+
+  variable "number_example" {
+    description = "An example of a number variable
+    type        = number
+    default     = 42
+  }
+```
+
+## Examples of Terraform Input Variables
+
+* List input variable with all numbers
+  
+```shell script
+
+  variable "list_numeric_example" {
+    description = "An example of a numeric list
+    type        = list(number)
+    default     = [1, 2, 3]
+  }  
+```  
+
+## Examples of Terraform Input Variables
+
+* A map of strings
+
+```shell script
+
+variable "map_example" {
+  description = "An example of a map
+  type        = map(string)
+
+  default = {
+    key1 = "value1"
+    key2 = "value2"
+    key3 = "value3"
+  }
+}
+```
+
+---
+## OO Coding with Terraform!
+
+```shell script
+variable "object_example" {
+  description = "An example of a structural type"
+  type        = object({
+    name    = string
+    age     = number
+    tags    = list(string)
+    enabled = bool
+  })
+
+  default = {
+    name    = "value1"
+    age     = 42
+    tags    = ["a", "b", "c"]
+    enabled = true
+  }
+}
+```
+---
+
+## "server_port" Variable
+
+```shell script
+variable "server_port" {
+  description = "Server port for HTTP requests"
+  type        = number
+}
+```
+---
+## Using "server_port" Variable
+
+* If you run `terraform apply`, you will get this message:
+
+```shell script
+var.server_port
+  "Server port for HTTP requests"
+  Enter a value:
+```
+
+* Your choices now are:
+    * Enter a value :)
+    * terraform plan -var "server_port=8080"
+    * export TF_VAR_server_port=8080
+    * Supply a default
+        
+---
+## How to Use Your Variable
+
+* Simply, use `var`, like this: `var.<VARIABLE_NAME>`
+
+* For example
+
+```shell script
+resource "aws_security_group" "instance" {
+  name = "terraform-example-instance"
+
+  ingress {
+    from_port   = var.server_port
+    to_port     = var.server_port
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+```
+---
+
+## New Expression - Interpolation
+
+* `"${...}"`
+
+* Now, let us use the same `server_port` inside of `User Data`
+
+```shell script
+user_data = <<-EOF
+  #!/bin/bash
+  echo "Hello, World" > index.html
+   nohup busybox httpd -f -p ${var.server_port} &
+   EOF
+```
+---
+
+## Setting an "output" variable
+
+```shell script
+output "<NAME>" {
+  value = <VALUE>
+  [CONFIG ...]
+}
+```
+
+* description
+    * Always a good idea to document
+  
+* sensitive
+    * true will instruct Terraform not to log this output at the end of terraform apply
+    * For sensitive material or secrets such as passwords or private keys
+---
+## Output Variable For Our Script 
+
+```shell script
+output "public_ip" {
+  value       = aws_instance.example.public_ip
+  description = "The public IP address of the web server"
+}
+```    
+---
+## Lab: Configure Server Port
+
+* Please do this lab 
+* `code/terraform/01-why-terraform/web-server/step2`
+* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step2)
+* In this lab, we practice setting up Terraform variables
+---
 
