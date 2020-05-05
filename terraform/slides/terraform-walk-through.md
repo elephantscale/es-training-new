@@ -640,11 +640,18 @@ output "public_ip" {
 * The solution is to run a cluster of servers, routing around servers that go down, and adjusting the size of the cluster up or down based on traffic
 
 * We will need the following
-    * Auto-scaling group
+    * Auto-scaling group (ASG)
     * VPC
     * Load balancer
     
 ![](../../assets/images/terraform/bigmusclet.png)    
 ---
+
+## Auto-Scaling Group
+
+![](../../assets/images/terraform/asg.png)
+
+---
+
 
     
