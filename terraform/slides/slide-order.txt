@@ -1,4 +1,5 @@
 # About_Terraform_Class.md
 # terraform-intro.md
-terraform-walk-through.md
+# terraform-walk-through.md
+managing-terraform-state.md
 # packer-intro.md
