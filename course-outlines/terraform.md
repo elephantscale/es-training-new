@@ -13,7 +13,7 @@ infrastructure, you describe all this configuration as code.
 their version called CloudFormation, Terraform is a maverick who appeared on the scene a few years ago and
 became more popular than all other IaC implementations. 
 
-* Terraform is open source and can be used on any other cloud provider, 
+* Terraform is open source and can be used on any cloud provider, 
 such as Amazon Web Services, IBM Cloud, Google Cloud Platform, DigitalOcean, Linode, Microsoft Azure, 
 Oracle Cloud Infrastructure, VMware vSphere, OpenStack, and many others. 
 
