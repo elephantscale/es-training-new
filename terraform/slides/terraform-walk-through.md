@@ -908,4 +908,102 @@ resource "aws_security_group" "alb" {
 ```
 
 ---
+## "aws_lb resource" to Use Our Security Group 
+
+```shell script
+resource "aws_lb" "example" {
+  name               = "terraform-asg-example"
+  load_balancer_type = "application"
+  subnets            = data.aws_subnet_ids.default.ids
+  security_groups    = [aws_security_group.alb.id]
+}
+```
+---
+
+## Limits for Your ASG
+
+```shell script
+resource "aws_lb_target_group" "asg" {
+  name     = "terraform-asg-example"
+  port     = var.server_port
+  protocol = "HTTP"
+  vpc_id   = data.aws_vpc.default.id
+
+  health_check {
+    path                = "/"
+    protocol            = "HTTP"
+    matcher             = "200"
+    interval            = 15
+    timeout             = 3
+    healthy_threshold   = 2
+    unhealthy_threshold = 2
+  }
+}
+```
+---
+
+## What the Target Group Do?
+- health check your Instances by periodically sending an HTTP request to each Instance
+- will consider the Instance “healthy” only if the Instance returns a response that matches the configured matcher 
+- we told the matcher to look for a 200 OK response 
+the target group will automatically stop sending traffic to unhealthy instance
+---
+
+## Target Group Knows Its EC2 Instances
+
+```shell script
+resource "aws_autoscaling_group" "example" {
+  launch_configuration = aws_launch_configuration.example.name
+  vpc_zone_identifier  = data.aws_subnet_ids.default.ids
+
+  target_group_arns = [aws_lb_target_group.asg.arn]  # HERE
+  health_check_type = "ELB"   # HERE
+
+  min_size = 2
+  max_size = 10
+
+  tag {
+    key                 = "Name"
+    value               = "terraform-asg-example"
+    propagate_at_launch = true
+  }
+}
+```
+---
+
+## ALB Listener Rule
+
+```shell script
+resource "aws_lb_listener_rule" "asg" {
+  listener_arn = aws_lb_listener.http.arn
+  priority     = 100
+
+  condition {
+    field  = "path-pattern"
+    values = ["*"]
+  }
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.asg.arn
+  }
+}
+```
+---
+## New Output - The DNS Name of the ALB
+
+```shell script
+output "alb_dns_name" {
+  value       = aws_lb.example.dns_name
+  description = "The domain name of the load balancer"
+}
+```
+---
+## Lab: Deploy a Cluster with Load Balancer
+
+* Please do this lab 
+* `code/terraform/01-why-terraform/web-server/step3`
+* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step3)
+* In this lab, we practice setting up a complete Terraform architecture
+---
 
