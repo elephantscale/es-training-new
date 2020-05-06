@@ -1,5 +1,19 @@
 # Terraform - intro
 
+## Why Terraform?
+
+1. IaC (Infrastructure as Code) is one of the most important developments in application
+deployment in many years. 
+
+1. Terraform is a maverick who appeared on the scene a few years ago and
+became more popular than all other IaC implementations 
+
+1. Terraform is open source and can be used with any cloud provider, 
+such as Amazon Web Services, IBM Cloud, Google Cloud Platform, Microsoft Azure, etc.
+
+1. Terraform is declarative and idempotent. These are good design principles, 
+and many competitors have also implemented Terraform ideas, making Terraform a de facto standard.
+
 ## Terraform - Bird's Eye View
 
 * What is Terraform?

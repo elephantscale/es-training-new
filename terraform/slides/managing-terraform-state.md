@@ -48,7 +48,7 @@ resource "aws_instance" "example" {
     * between the code on your computer and 
     * the infrastructure deployed in the real world, as discovered via IDs in the state file
     
-Notes
+Notes:
 
 * THE STATE FILE IS A PRIVATE API
 * The state file format is a private API that changes with every release and is meant only for internal use within Terraform. You should never edit the Terraform state files by hand or write code that reads them directly.
@@ -71,7 +71,6 @@ Notes
     * When making changes to your infrastructure, it’s a best practice to isolate different environments
     * When making a change in a testing or staging environment
         * be sure that there is no way you can accidentally break production
-* How can you isolate your changes if all of your infrastructure is defined in the same Terraform state file?
 
 --- 
 ## Separate Environments
