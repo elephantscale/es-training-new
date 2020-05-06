@@ -832,4 +832,80 @@ resource "aws_autoscaling_group" "example" {
 ![](../../assets/images/terraform/elb.png)
 
 ---    
+## Load Balancer Types
+
+* Application Load Balancer (ALB)
+    * Best suited for load balancing of HTTP and HTTPS traffic
+
+* Network Load Balancer (NLB)
+    * Best suited for load balancing of TCP, UDP, and TLS traffic. Can scale up and down in response to load faster than the ALB (the NLB is designed to scale to tens of millions of requests per second). Operates at the transport layer (Layer 4) of the OSI model.
+
+*  Classic Load Balancer (CLB)
+    * This is the “legacy” load balancer that predates both the ALB and NLB. It can handle HTTP, HTTPS, TCP, and TLS traffic, but with far fewer features than either the ALB or NLB. Operates at both the application layer (L7) and transport layer (L4) of the OSI model.
+    
+---
+## Application Load Balancer (ALB)
+
+![](../../assets/images/terraform/alb.png)
+
+---
+
+## ALB Configuration
+
+```shell script
+resource "aws_lb" "example" {
+  name               = "terraform-asg-example"
+  load_balancer_type = "application"
+  subnets            = data.aws_subnet_ids.default.ids
+}
+```
+
+---
+### ALB Listener
+
+```shell script
+resource "aws_lb_listener" "http" {
+  load_balancer_arn = aws_lb.example.arn
+  port              = 80
+  protocol          = "HTTP"
+
+  # By default, return a simple 404 page
+  default_action {
+    type = "fixed-response"
+
+    fixed_response {
+      content_type = "text/plain"
+      message_body = "404: page not found"
+      status_code  = 404
+    }
+  }
+}
+```
+
+---
+
+## Security Group for ALB
+```shell script
+resource "aws_security_group" "alb" {
+  name = "terraform-example-alb"
+
+  # Allow inbound HTTP requests
+  ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  # Allow all outbound requests
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+```
+
+---
 
