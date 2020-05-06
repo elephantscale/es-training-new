@@ -432,7 +432,7 @@ Notes:
 Source: https://www.pexels.com/
 ---      
 
-# Using Variables for Configuration
+# Using Variables
 
 ## Deploy a Configurable Web Server
 
@@ -600,19 +600,21 @@ user_data = <<-EOF
 
 ## Setting an "output" variable
 
+* Additional variables
+* description
+    * It is always a good idea to document
+  
+* sensitive
+    * true will instruct Terraform not to log this output at the end of terraform apply
+    * For sensitive material or secrets such as passwords or private keys
+    
 ```shell script
 output "<NAME>" {
   value = <VALUE>
   [CONFIG ...]
 }
 ```
-
-* description
-    * Always a good idea to document
-  
-* sensitive
-    * true will instruct Terraform not to log this output at the end of terraform apply
-    * For sensitive material or secrets such as passwords or private keys
+    
 ---
 ## Output Variable For Our Script 
 
@@ -999,6 +1001,18 @@ output "alb_dns_name" {
 }
 ```
 ---
+## Results of Upcoming Lab - Instances
+![](../../assets/images/terraform/scaling1.png)
+---
+
+## Results of Upcoming Lab - Load Balancer
+![](../../assets/images/terraform/scaling2.png)
+---
+
+## Results of Upcoming Lab - Target Group
+![](../../assets/images/terraform/scaling3.png)
+---
+
 ## Lab: Deploy a Cluster with Load Balancer
 
 * Please do this lab 
