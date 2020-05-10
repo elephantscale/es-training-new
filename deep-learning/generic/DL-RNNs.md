@@ -101,13 +101,12 @@ Notes:
 
 ## Problems with Feedforward Neural Networks
 
-
- *  Feedforward Neural Networks can model any relationship between input and output.
- *  However they can't keep/remember **state**
+*  Feedforward Neural Networks can model any relationship between input and output.
+*  However they can't keep/remember **state**
      -  The only state retained is weight values from training.
      - They don't remember previous input!
-     -  Impossible to maintain state in sequence
      - For example, in this example, the network doesn't remember the 'previous input' (cat) when predicting the current input
+* **Animation** below: [Animation link (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks.mp4)
 
 <img src="../../assets/images/deep-learning/Neural-Networks-Simulation.png"  style="width:75%;"/><!-- {"left" : 0.97, "top" : 5.51, "height" : 1.96, "width" : 8.31} -->
 
@@ -127,7 +126,7 @@ Notes:
 <img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 3.63, "top" : 4.27, "height" : 3.47, "width" : 1.53} -->
 <img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 6.38, "top" : 4.27, "height" : 3.47, "width" : 3.47} -->
 
-[RNN animation link](TODO#)
+[Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-3-animation.mp4)
 
 ---
 
@@ -136,18 +135,19 @@ Notes:
 <img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/>
 
 
-[Animation link](TODO#)
+[Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-4-animation.mp4)
 
 ---
 
 ## RNN Unrolling Through Time
 
-<img src="../../assets/images/deep-learning/rnn-unrolling-3.gif"  style="width:70%;"/><!-- {"left" : 1.85, "top" : 1.14, "height" : 3.68, "width" : 6.55} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-3.gif"  style="width:70%;" pdf-src="../../assets/images/deep-learning/rnn-unrolling-3.png"/><!-- {"left" : 1.85, "top" : 1.14, "height" : 3.68, "width" : 6.55} -->
 
 <br/>
 
 
-[Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9)  and  [Link to animation](https://miro.medium.com/max/960/1*TqcA9EIUF-DGGTBhIx_qbQ.gif)
+*  [Animation link1 (gif)](https://miro.medium.com/max/960/1*TqcA9EIUF-DGGTBhIx_qbQ.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-unrolling-3.mp4),    ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
 
 ---
@@ -301,7 +301,7 @@ Notes:
 
 ---
 
-## Use Case: Text Processing with RNNs
+## Text Processing with RNNs
 
 * This is a usecase illustrated in the [explainer video](https://www.youtube.com/watch?v=LHXXI4-IEns) (time 3:50)
     - Adopted with thanks!
@@ -311,27 +311,27 @@ Notes:
 
 * First we break the sentence into words
 
-* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*G7T4sFO-1ByMepsa5OilsQ.gif)
+* **Animation** below: [Animation link1 (gif)](https://miro.medium.com/max/1000/1*G7T4sFO-1ByMepsa5OilsQ.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-1.mp4) | ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1.gif"  alt="click animation link" style="width:40%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1.gif"   style="width:40%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1b.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 
 ---
 
-## Use Case: Text Processing with RNNs
+## Text Processing with RNNs
 
 * Now we feed the sequence of words into RNN
 
 * First word **What** is encoded as a number(vector) **01**
 
-* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*Qx6OiQnskfyCEzb8aZDgaA.gif)
+* **Animation** below: [Animation link1 (gif)](https://miro.medium.com/max/1000/1*Qx6OiQnskfyCEzb8aZDgaA.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-2.mp4) | ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-2.gif"  style="width:70%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-2.gif"  style="width:70%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-2.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 
 ---
 
-## Use Case: Text Processing with RNNs
+## Text Processing with RNNs
 
 * Then the next word **time** is fed
 
@@ -339,14 +339,14 @@ Notes:
 
 * These two inputs result in the output number **02**
 
-* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*5byMk-6ni-dst7l9WKIj5g.gif)
+* **Animation** below: [Animation link1 (gif)](https://miro.medium.com/max/1000/1*5byMk-6ni-dst7l9WKIj5g.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-3.mp4)  | ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.gif"  style="width:60%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.gif"  style="width:60%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 ---
 
-## Use Case: Text Processing with RNNs
+## Text Processing with RNNs
 
 * The words are fed into sequence
 
@@ -354,22 +354,23 @@ Notes:
 
 * The final number is **05**
 
-* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*d_POV7c8fzHbKuTgJzCxtA.gif)
+* **Animation** below: [Animation link (gif)](https://miro.medium.com/max/1000/1*d_POV7c8fzHbKuTgJzCxtA.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-4.mp4) | ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.gif"  style="width:60%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.gif"  style="width:60%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 ---
 
-## Use Case: Text Processing with RNNs
+## Text Processing with RNNs
 
 * So the text **"What time is it?"** is encoded as **05**
 * So if the RNN produces number/vector **05** we know the user asked for time
 * If the sequence is changed in anyway (different words and different order)  then we wouldn't get **05** as final output
 * For example, if the input text is **"What is the time?"** (notice the order is different), the output will definitely NOT be **05**
-* [Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9) | [Animation link](https://miro.medium.com/max/1000/1*3bKRTcqSbto3CXfwshVwmQ.gif)
+* **Animation below:** [Animation link1 (gif)](https://miro.medium.com/max/1000/1*3bKRTcqSbto3CXfwshVwmQ.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-6.mp4) ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" />  <!-- {"left" : 2.13, "top" : 4.95, "height" : 3.53, "width" : 5.99} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
 
 ---
 
