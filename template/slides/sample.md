@@ -119,7 +119,8 @@ Use [Markdown table generator](https://www.tablesgenerator.com/markdown_tables)
 
 <img src="../../assets/images/template/sunflowers-1.jpg" style="width:50%;" />
 
-md
+ md
+
 ```md
 <img src="../../assets/images/template/sunflowers-1.jpg" style="width:50%;" />
 ```
@@ -134,7 +135,9 @@ md
 - aligned right using `float:right`
 
 <br clear="all"/>
+
 md
+
 ```md
 <img src="../../assets/images/template/sunflowers-1.jpg" style="width:50%;float:right;" />
 
@@ -171,6 +174,23 @@ md
 ```md
 <img src="../../assets/images/template/flower-2.jpeg" style="width:10%;float:right;" />
 <img src="../../assets/images/template/flower-rose-1.jpg" style="width:10%;float:right;clear:both;" />
+```
+
+---
+
+## Animated Images - GIFs
+
+* GIFs can be animated in reveal-md
+* A static image is supplied for pdf
+
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:30%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.png" />
+
+md
+
+```md
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  
+    style="width:30%;"
+    pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.png" /> 
 ```
 
 ---

@@ -9,6 +9,21 @@ Setup [elephantscale/es-reveal-md](https://hub.docker.com/r/elephantscale/es-rev
 - Course template in  [template/slides/Course-Template-1.md](template/slides/Course-Template-1.md).  Start by copying this
 - For Markdown reference see [template/slides/sample.md](template/slides/sample.md)
 
+## Creating PDFs
+
+## Creating HTML
+
+```bash
+# in docker
+$   cd  ~/dev
+
+$   cd dev/deep-learning/generic
+
+$   reveal-md    DL-RNNs.md  --static _site/deep-learning/generic  --static-dirs=../../assets
+
+# the html bundle will be in in _site  directory
+```
+
 ## Images
 
 All images live in [assets/images](assets/images) directory
