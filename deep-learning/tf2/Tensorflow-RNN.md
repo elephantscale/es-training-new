@@ -1,6 +1,9 @@
 # Recurrent Neural Networks (RNNs) in TensorFlow
 
 
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 1.02, "top" : 2.42, "height" : 4.8, "width" : 8.21} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
 ---
 
 ## Objectives
@@ -17,6 +20,9 @@
 
 # RNNs in TensorFlow
 
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 1.02, "top" : 2.42, "height" : 4.8, "width" : 8.21} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
 ---
 
 ## RNNs in TensorFlow

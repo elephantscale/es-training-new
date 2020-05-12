@@ -1,5 +1,9 @@
 # Recurrent Neural Networks (RNN)
 
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 1.02, "top" : 2.42, "height" : 4.8, "width" : 8.21} -->
+
 ---
 
 ## Lesson Objectives
