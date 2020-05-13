@@ -1,8 +1,7 @@
 # Recurrent Neural Networks (RNN)
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 1.02, "top" : 2.42, "height" : 4.8, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:7%;" /><!-- {"left" : 2.93, "top" : 5.51, "height" : 2.94, "width" : 1.26} -->
 
 ---
 
@@ -136,7 +135,8 @@ Notes:
 
 ## RNN Animation
 
-<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/>
+<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/><!-- {"left" : 2.64, "top" : 1.21, "height" : 4.12, "width" : 4.98} -->
+
 
 
 [Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-4-animation.mp4)
@@ -145,8 +145,7 @@ Notes:
 
 ## RNN Unrolling Through Time
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/rnn-unrolling-3.gif"  style="width:70%;" pdf-src="../../assets/images/deep-learning/rnn-unrolling-3.png"/><!-- {"left" : 1.85, "top" : 1.14, "height" : 3.68, "width" : 6.55} -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-3.gif"  style="width:70%;" pdf-src="../../assets/images/deep-learning/rnn-unrolling-3.png"/><!-- {"left" : 2.61, "top" : 1.26, "height" : 2.82, "width" : 5.02} -->
 
 <br/>
 
@@ -163,7 +162,7 @@ Notes:
     - Like taking a picture/snapshot of the network for each time frame
  * This means that each neuron is like a chain of neurons, one for each time slice.
 
-<img src="../../assets/images/deep-learning/rnn-unrolling-2.png" style="width:70%;"/><!-- {"left" : 1.34, "top" : 4.54, "height" : 3.73, "width" : 7.56} -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-2.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 5.12, "height" : 2.95, "width" : 8.21} -->
 
 
 Notes:
@@ -172,10 +171,12 @@ Notes:
 
 ## Unrolling Through Time
 
-<img src="../../assets/images/deep-learning/rnn-unrolling-1.png" style="width:60%;"/>
+<img src="../../assets/images/deep-learning/rnn-unrolling-1.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.39, "height" : 4.29, "width" : 8.21} -->
+
 
 
 ---
+
 ## Backpropagation Through Time
 
  * We can use Gradient Descent / Backpropagation to train a recurrent network.
@@ -373,8 +374,7 @@ Notes:
 * For example, if the input text is **"What is the time?"** (notice the order is different), the output will definitely NOT be **05**
 * **Animation below:** [Animation link1 (gif)](https://miro.medium.com/max/1000/1*3bKRTcqSbto3CXfwshVwmQ.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-6.mp4) ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.png" />  <!-- {"left" : 2.13, "top" : 5.02, "height" : 3.53, "width" : 5.99} -->
 
 ---
 

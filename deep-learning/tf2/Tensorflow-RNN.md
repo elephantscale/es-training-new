@@ -1,12 +1,12 @@
 # Recurrent Neural Networks (RNNs) in TensorFlow
 
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 2.93, "top" : 5.51, "height" : 2.94, "width" : 1.26} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 4.98, "top" : 6.78, "height" : 1.61, "width" : 1.89} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 1.02, "top" : 2.42, "height" : 4.8, "width" : 8.21} -->
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
 ---
 
 ## Objectives
+
 * Learn about RNNs
 * Implement RNNs in TensorFlow and Keras
 
@@ -20,9 +20,9 @@
 
 # RNNs in TensorFlow
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 1.02, "top" : 2.42, "height" : 4.8, "width" : 8.21} -->
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 2.93, "top" : 5.51, "height" : 2.94, "width" : 1.26} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 4.19, "top" : 5.95, "height" : 1.36, "width" : 1.6} -->
+
 ---
 
 ## RNNs in TensorFlow
@@ -43,6 +43,7 @@ model.add(keras.layers.SimpleRNN(
 
 ## add any other layers
 ```
+<!-- {"left" : 0, "top" : 1.84, "height" : 4.03, "width" : 10.25} -->
 
 ---
 
@@ -60,7 +61,8 @@ Notes:
 
 ## RNN Example: Sine Wave Prediction
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-1-data.png"  style="width:25%;float:right;" />
+<img src="../../assets/images/deep-learning/rnn-sinewave-1-data.png"  style="width:25%;float:right;" /><!-- {"left" : 7.96, "top" : 1.19, "height" : 4.16, "width" : 1.96} -->
+
 
 ```python
 # Generate 1000 samples
@@ -78,8 +80,11 @@ df_orig = pd.DataFrame(x)
 plt.plot(df_orig)
 df_orig
 ```
+<!-- {"left" : 0, "top" : 1.09, "height" : 4.36, "width" : 7.78} -->
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-2-dataplot.png"  style="width:40%;" />
+
+<img src="../../assets/images/deep-learning/rnn-sinewave-2-dataplot.png"  style="width:40%;" /><!-- {"left" : 2.96, "top" : 5.62, "height" : 2.83, "width" : 4.34} -->
+
 
 ---
 ## Shaping Data for RNN
@@ -101,6 +106,8 @@ df_orig
 | 4 | 5 |
 | 5 | 6 |
 
+<!-- {"left" : 0.25, "top" : 4.23, "height" : 3, "width" : 9.75} -->
+
 
 ---
 ## Shaping Data for RNN
@@ -120,6 +127,8 @@ df_orig
 | 4,5 | 6 |
 | 5,6 | 7 |
 
+<!-- {"left" : 0.25, "top" : 3.37, "height" : 3, "width" : 9.75} -->
+
 ---
 
 ## Shaping Data for RNN
@@ -138,6 +147,8 @@ df_orig
 | 3,4,5 | 6 |
 | 4,5,6 | 7 |
 | 5,6,7 | 8 |
+
+<!-- {"left" : 0.25, "top" : 3.03, "height" : 3, "width" : 9.75} -->
 
 ---
 
@@ -177,6 +188,7 @@ print ("y_train.shape", y_train.shape)
 print ("x_test.shape", x_test.shape)
 print ("y_test.shape", y_test.shape)
 ```
+<!-- {"left" : 0, "top" : 1.29, "height" : 7.07, "width" : 9.28} -->
 
 ---
 
@@ -193,9 +205,10 @@ y_train.shape (800,)
 x_test.shape (200, 1, 4)
 y_test.shape (200,)
 ```
+<!-- {"left" : 0, "top" : 1.38, "height" : 2.9, "width" : 4.94} -->
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-3-data-shaped-2.png"  style="width:30%;float:left;" />
-<img src="../../assets/images/deep-learning/rnn-sinewave-3-data-shaped.png"  style="width:30%;float:right;" />
+<img src="../../assets/images/deep-learning/rnn-sinewave-3-data-shaped-2.png"  style="width:30%;float:left;" /><!-- {"left" : 1.54, "top" : 4.59, "height" : 3.78, "width" : 3.2} --> <img src="../../assets/images/deep-learning/rnn-sinewave-3-data-shaped.png"  style="width:30%;float:right;" /><!-- {"left" : 5.51, "top" : 4.31, "height" : 4.07, "width" : 3.2} -->
+
 
 ---
 
@@ -218,6 +231,7 @@ model.summary()
 tf.keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
 
 ```
+<!-- {"left" : 0, "top" : 1.84, "height" : 2.42, "width" : 10.25} -->
 
 ---
 
@@ -239,14 +253,17 @@ Trainable params: 1,457
 Non-trainable params: 0
 
 ```
+<!-- {"left" : 0, "top" : 1.17, "height" : 2.98, "width" : 8.5} -->
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-4-model.png"  style="width:37%;" />
+<img src="../../assets/images/deep-learning/rnn-sinewave-4-model.png"  style="width:37%;" /><!-- {"left" : 2.81, "top" : 4.66, "height" : 3.64, "width" : 4.64} -->
+
 
 ---
 
 ## Training
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-5-training-history.png"  style="width:37%;float:right;" />
+<img src="../../assets/images/deep-learning/rnn-sinewave-5-training-history.png"  style="width:37%;float:right;" /><!-- {"left" : 3.41, "top" : 1.21, "height" : 1.95, "width" : 2.93} -->
+
 
 ```python
 %%time
@@ -260,6 +277,8 @@ import matplotlib.pyplot as plt
 plt.plot(history.history['mse'], label='mse')
 plt.legend()
 ```
+<!-- {"left" : 0, "top" : 3.46, "height" : 1.97, "width" : 7.07} -->
+
 
 <br clear="all" />
 
@@ -279,6 +298,7 @@ training done.
 CPU times: user 1min 56s, sys: 2min 54s, total: 4min 51s
 Wall time: 20.5 s
 ```
+<!-- {"left" : 0, "top" : 5.8, "height" : 2.02, "width" : 7.07} -->
 
 ---
 
@@ -304,6 +324,7 @@ test_metrics = model.evaluate(x_test, y_test, verbose=0)
 for idx, metric in enumerate(metric_names):
     print ("Test Metric : {} = {:,.2f}".format (metric_names[idx], test_metrics[idx]))
 ```
+<!-- {"left" : 0, "top" : 1.29, "height" : 3.31, "width" : 9.75} -->
 
 ```text
 model metrics :  ['loss', 'mse']
@@ -312,6 +333,7 @@ Train Metric : mse = 0.34
 Test Metric : loss = 0.46
 Test Metric : mse = 0.46
 ```
+<!-- {"left" : 0, "top" : 4.97, "height" : 1.74, "width" : 6.11} -->
 
 ---
 
@@ -330,9 +352,11 @@ plt.plot(index,predicted)
 plt.axvline(df_orig.index[training_samples], c="r")
 plt.show()
 ```
+<!-- {"left" : 0, "top" : 2.7, "height" : 1.74, "width" : 9.28} -->
 
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-6-prediction.png"  style="width:40%;" />
+<img src="../../assets/images/deep-learning/rnn-sinewave-6-prediction.png"  style="width:40%;" /><!-- {"left" : 2.49, "top" : 5.04, "height" : 3.44, "width" : 5.28} -->
+
 
 ---
 
