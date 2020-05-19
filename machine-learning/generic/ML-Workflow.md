@@ -219,19 +219,37 @@ Notes:
 
 ---
 
+## Overfitting
+
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/overfitting-1-learning-addition.png"  style="width:50%;float:right;"/>
+
+
+* Imagine we are teaching addition to young kids
+
+* Rather than learning the 'carry concept' what if the kids just memorized all the examples
+
+* They can do well in problems, they have seen before, but not any thing new
+    - will do well: (17+25),  (28+37)
+    - will not so well (they haven't seen it before):  (45+48)
+
+* This is basically **overfitting**
+
+* When model is **memorizing** training data instead of learning from it.
+---
+
 ## Over-fitting
 
- * Model is 'too complex'  that is 'memorizing' training data, but not **'generalizing' for new data**
- * Hot to detect over-fitting?
+ * How to detect over-fitting?
     - Excellent performance on training data, but poor performance on testing (new) data
-    - E.g.:
-      - Training accuracy : 95%
-      - Testing accuracy : 62%
+    - E.g. :Training accuracy : 95%
+    - Testing accuracy : 62%
  * Resolution:
     - Try a different algorithm / model, that better fits the data
     - Simplify inputs
 
-<img src="../../assets/images/machine-learning/underfit-overfit-02.png" alt="underfit-overfit" style="max-width:50%;"/> <!-- {"left" : 1.05, "top" : 5.95, "height" : 2.72, "width" : 8.16} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/underfit-overfit-02.png" style="width:75%;"/> <!-- {"left" : 1.05, "top" : 5.95, "height" : 2.72, "width" : 8.16} -->
 
 
 
