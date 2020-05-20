@@ -221,8 +221,7 @@ Notes:
 
 ## Overfitting
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/overfitting-1-learning-addition.png"  style="width:50%;float:right;"/>
+<img src="../../assets/images/machine-learning/overfitting-1-learning-addition.png"  style="width:40%;float:right;"/><!-- {"left" : 6.67, "top" : 1.18, "height" : 3.65, "width" : 3.46} -->
 
 
 * Imagine we are teaching addition to young kids
@@ -248,8 +247,8 @@ Notes:
     - Try a different algorithm / model, that better fits the data
     - Simplify inputs
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/underfit-overfit-02.png" style="width:75%;"/> <!-- {"left" : 1.05, "top" : 5.95, "height" : 2.72, "width" : 8.16} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-02.png" style="width:75%;"/> <!-- {"left" : 0.69, "top" : 5.01, "height" : 2.96, "width" : 8.87} -->
+
 
 
 
