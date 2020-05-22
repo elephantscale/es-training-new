@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-32 -2228 1920 582" width="1920" height="582">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-32 -2228 1917 582" width="1917" height="582">
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 6 4" markerWidth="6" markerHeight="4" color="#9f2847">
       <g>
@@ -27,19 +27,24 @@
         <font-face-name name="CenturyGothic-Bold"/>
       </font-face-src>
     </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_4" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 6 4" markerWidth="6" markerHeight="4" color="#9f2847">
+      <g>
+        <path d="M -2.311111 0 L 0 .8666667 L 0 -.8666667 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2020-05-21 21:50:56 +0000</dc:date>
+    <dc:date>2020-05-22 22:15:02 +0000</dc:date>
   </metadata>
   <g id="Canvas_1" fill-opacity="1" stroke="none" fill="none" stroke-opacity="1" stroke-dasharray="none">
     <title>Canvas 1</title>
     <g id="Canvas_1: Layer 1">
       <title>Layer 1</title>
       <g id="Line_37">
-        <line x1="1207.9" y1="-2010.458" x2="1317.3183" y2="-2010.458" marker-start="url(#FilledArrow_Marker)" stroke="#9f2847" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+        <line x1="1207.9" y1="-2010.458" x2="1314.5251" y2="-2010.458" marker-start="url(#FilledArrow_Marker)" stroke="#9f2847" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
       </g>
       <g id="Line_38">
-        <line x1="1207.9" y1="-1844.9915" x2="1319.1315" y2="-1844.9915" marker-start="url(#FilledArrow_Marker)" stroke="#9f2847" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+        <line x1="1207.9" y1="-1844.9915" x2="1314.5251" y2="-1844.9915" marker-start="url(#FilledArrow_Marker)" stroke="#9f2847" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
       </g>
       <g id="Line_39">
         <path d="M 560.3604 -2106.1622 L 559.50096 -2148.8922 C 559.27885 -2159.9357 568.0513 -2169.0682 579.09474 -2169.2904 C 579.22404 -2169.293 579.35336 -2169.2943 579.4827 -2169.2944 L 747.1557 -2169.4137" marker-start="url(#FilledArrow_Marker_2)" stroke="#9f2847" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
@@ -120,12 +125,12 @@
         </text>
       </g>
       <g id="Graphic_35">
-        <text transform="translate(1322.3183 -2034.958)" fill="#250060">
+        <text transform="translate(1319.5251 -2034.958)" fill="#250060">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Distributed Operating System</tspan>
         </text>
       </g>
       <g id="Graphic_36">
-        <text transform="translate(1324.1315 -1869.4915)" fill="#250060">
+        <text transform="translate(1319.5251 -1869.4915)" fill="#250060">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Distributed File System</tspan>
         </text>
       </g>
@@ -140,6 +145,14 @@
       <g id="Graphic_43">
         <path d="M 927.7605 -2108.4564 L 921.6533 -2091.6294 L 878.0755 -2126.9182 L 928.8641 -2069.8954 L 935.199 -2085.542 L 976.2931 -2043.0241 L 984.8575 -2061.7698 L 1021.2522 -2030.3443 L 976.7139 -2083.152 L 968.4744 -2065.3746 L 927.761 -2108.456 Z" fill="#ff8080"/>
         <path d="M 927.7605 -2108.4564 L 921.6533 -2091.6294 L 878.0755 -2126.9182 L 928.8641 -2069.8954 L 935.199 -2085.542 L 976.2931 -2043.0241 L 984.8575 -2061.7698 L 1021.2522 -2030.3443 L 976.7139 -2083.152 L 968.4744 -2065.3746 L 927.761 -2108.456 Z" stroke="#360051" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_45">
+        <line x1="1207.9" y1="-2169.2584" x2="1314.5251" y2="-2169.2584" marker-start="url(#FilledArrow_Marker_4)" stroke="#9f2847" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(1319.5251 -2193.7584)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Distributed Engines</tspan>
+        </text>
       </g>
     </g>
   </g>
