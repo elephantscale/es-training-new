@@ -78,7 +78,7 @@ Notes:
 
 ## After the Class...
 
-<img src="../../assets/images/elastic/3rd-party/Elastic-01.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
+<img src="../../assets/images/terraform/Terraform-I-Know.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
 
 
 Notes:
