@@ -318,5 +318,3 @@ Andrew Ng explains how Deep Learning algorithms can scale better with data size.
 
 
 Notes:
-
-https://www.youtube.com/watch?v=LcfLo7YP8O4

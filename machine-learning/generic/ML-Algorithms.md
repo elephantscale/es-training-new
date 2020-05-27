@@ -200,6 +200,9 @@ Notes:
 
 ## Clustering Use Cases: Fraud / Anomaly Detection
 
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png" style="width:40%;float:right;"><!-- {"left" : 2.34, "top" : 3.62, "height" : 4.52, "width" : 5.57} -->
+
  * Anomaly detection is used to:
 
      - Find fraud
@@ -208,7 +211,7 @@ Notes:
 
      - Discover problems on servers
 
-<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png" style="width:29%;"><!-- {"left" : 2.34, "top" : 3.62, "height" : 4.52, "width" : 5.57} -->
+ * Here we see an anomaly (top left) that doesn't fall into the usual pattern (bottom right)
 
 
 Notes:
