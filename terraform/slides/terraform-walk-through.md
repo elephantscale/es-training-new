@@ -1,6 +1,6 @@
 # Terraform Walk-Through
 
-# Getting started with Terraform
+---
 
 ## The Plan
 
@@ -73,9 +73,13 @@ Notes:
 
 ![](../../assets/images/terraform/terraform-version.png)
 
+---
+
 ## Now What?
 
 ![](../../assets/images/terraform/terraform-help.png)
+
+---
 
 ## Connect to AWS
 
@@ -142,6 +146,7 @@ $ export AWS_SECRET_ACCESS_KEY=(your secret access key)
     * t2.micro, which has one virtual CPU, 1 GB of memory, and is part of the AWS free tier
 
 ---
+
 ## Do Not Try to Remember by Heart
 
 * Terraform supports dozens of providers
@@ -161,7 +166,7 @@ $ export AWS_SECRET_ACCESS_KEY=(your secret access key)
 ## Result of "terraform plan"
 
 ```
-$ terraform planRefreshing 
+$ terraform plan Refreshing 
 Terraform state in-memory prior to plan...
 The refreshed state will be used to calculate this plan, but will not be
 persisted to local or remote state storage.
@@ -282,7 +287,7 @@ nohup busybox httpd -f -p 8080 &
 ```
 ---
 
-## Wait! One More Thing
+## Wait! One More Thing!
 
 * By default, AWS does not allow any incoming or outgoing traffic from an EC2 Instance. 
 * To allow the EC2 Instance to receive traffic on port 8080, you need to create a security group:

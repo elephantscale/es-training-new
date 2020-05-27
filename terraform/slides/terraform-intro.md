@@ -1,4 +1,5 @@
 # Terraform - intro
+---
 
 ## Why Terraform?
 
@@ -13,6 +14,8 @@ such as Amazon Web Services, IBM Cloud, Google Cloud Platform, Microsoft Azure, 
 
 1. Terraform is declarative and idempotent. These are good design principles, 
 and many competitors have also implemented Terraform ideas, making Terraform a de facto standard.
+
+---
 
 ## Terraform - Bird's Eye View
 
@@ -116,6 +119,7 @@ and many competitors have also implemented Terraform ideas, making Terraform a d
     - Drawback: of the containers running on a single server share, milliseconds boot time
     
 ---
+
 ## Why Infrastructure as Code?
 
 * Q:
@@ -133,7 +137,8 @@ Notes:
 
 Source: 2016 State of DevOps Report
 
----                
+---
+                
 ## The Benefits of Infrastructure as Code
 
 * Self-service
