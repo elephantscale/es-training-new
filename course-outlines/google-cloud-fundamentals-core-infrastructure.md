@@ -1,4 +1,4 @@
-# Google Cloud Platform Fundamentals: Core Infrastucture
+# Google Cloud Platform Fundamentals: Core Infrastructure
 2020 May 28
 
 ## Overview
@@ -6,7 +6,7 @@
 This one-day instructor-led class provides an overview of Google Cloud Platform products and services. Through a combination of presentations, demos, and hands-on labs, participants learn the value of Google Cloud Platform and how to incorporate cloud-based solutions into business strategies.
 
 
-## Topcis Covered
+## Topics Covered
 
  * Infrastructure
  * Application Development
@@ -72,7 +72,7 @@ Every application needs to store data. Different applications and workloads requ
 Containers are simple and interoperable, and they enable seamless, fine-grained scaling. Kubernetes is an orchestration layer for containers. Kubernetes Engine is Kubernetes as a service, a scalable managed offering that runs on Google’s infrastructure. You direct the creation of a cluster, and Kubernetes Engine schedules your containers into the cluster and manages them automatically, based on requirements you define. This module explains how Kubernetes Engine works and how it helps deploy applications in containers.
 
 
-### Applications in teh CLoud
+### Applications in the CLoud
 
 App Engine is a Platform-as-a-Service ("PaaS") offering. The App Engine platform manages the hardware and networking infrastructure required to run your code. App Engine provides built-in services that many web applications need. This module describes how App Engine works.
 

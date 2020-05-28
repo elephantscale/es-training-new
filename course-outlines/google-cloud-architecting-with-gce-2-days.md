@@ -2,7 +2,7 @@
 2020 May 28
 
 ## Overview
-This three-day instructor-led class introduces participants to the comprehensive and flexible infrastructure and platform services provided by Google Cloud, with a focus on Compute Engine. Through a combination of presentations, demos, and hands-on labs, participants explore and deploy solution elements, including infrastructure components such as networks, systems, and application services. This course also covers deploying practical solutions including securely interconnecting networks, customer-supplied encryption keys, security and access management, quotas and billing, and resource monitoring.
+This abbreviated two-day instructor-led class introduces participants to the comprehensive and flexible infrastructure and platform services provided by Google Cloud, with a focus on Compute Engine. Through a combination of presentations, demos, and hands-on labs, participants explore and deploy solution elements, including infrastructure components such as networks, systems, and application services. This course also covers deploying practical solutions including securely interconnecting networks, customer-supplied encryption keys, security and access management, quotas and billing, and resource monitoring.
 
 
 ## What you will learn:
@@ -22,6 +22,7 @@ Lectures and hands-on labs. (50%, 50%)
 ## Prerequisites
 
 * Completion of Google Cloud Fundamentals or equivalent experience. 
+* Familiarity with cloud VM platforms
 * Basic proficiency with command-line tools and Linux operating system environments.
 * Systems operations experience, including deploying and managing applications, either on-premises or in a public cloud environment.
 
@@ -30,16 +31,12 @@ Lectures and hands-on labs. (50%, 50%)
 
 A lab environment will be provided
 
-
 ## Detailed outline
 
 
 ### Introduction to Google Cloud
 
- * List the different ways of interacting with Google Cloud.
- * Use the Cloud Console and Cloud Shell.
- * Create Cloud Storage buckets.
- * Use the Google Cloud Marketplace to deploy solutions.
+ * A very brief overview of Google Cloud
 
 ### Virtual Networks
 
@@ -50,10 +47,7 @@ A lab environment will be provided
 
 ### Virtual Machines
 
- * Recall the CPU and memory options for virtual machines.
- * Describe the disk options for virtual machines.
- * Explain VM pricing and discounts.
- * Use Compute Engine to create and customize VM instances.
+ * Briefly introduce virtual machines, relating GCE to other VM Platforms
 
 ### Cloud IAM
 
@@ -95,13 +89,3 @@ A lab environment will be provided
  * Determine which Google Cloud load balancer to use in specific circumstances.
  * Describe autoscaling behavior.
  * Configure load balancers and autoscaling.
-
-### Infrastructure Modernization
-
- * Automate the deployment of Google Cloud services using Deployment Manager or Terraform.
- * Outline the Google Cloud Marketplace.
-
-### Managed Services
-
- * Describe the managed services for data processing in Google Cloud.
-
