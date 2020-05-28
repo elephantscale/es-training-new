@@ -75,6 +75,42 @@ http://obvious-art.com/
 
 
 ---
+
+# State of the Art in AI
+
+---
+
+## State of the Art in AI
+
+* Last few years have seen tremendous advantages in  the following areas:
+
+* **Computer Vision**:   
+    - Trying to identify things in pictures
+    - Sample models: ResNet, MobileNet
+
+* **Language Processing**:  
+    - Understanding 'free form' text (emails, word documents)
+    - Sample models: BERT, Open-GPT
+
+---
+
+## Transfer Learning
+
+* We don't need to build models from scratch anymore
+
+* There are tremendous amount of high quality models that are released as open source
+
+* Start with those base models and fine tune to fit your needs
+
+- Demo: [Tensorflow Hub](https://www.tensorflow.org/hub)
+
+---
+
+## Demo: Write with Transformer
+
+---
+
+
 # Doing AI Projects
 
 ---
@@ -172,6 +208,59 @@ It may help to think along these lines
     - 3rd party data - Premium
 
 - What kind of data infrastructure do you have now?  Can it scale to handle future growth?
+
+---
+
+# How to do AI
+
+---
+
+## What do you need to get Started?
+
+* 0 - Budget!
+
+* 1 -  A tangible problem to solve
+
+* 2 -  Relevant data
+
+* 3 -  Team with right skills
+
+---
+## Building an AI Team
+
+* Building an effective AI team is **not trivial**
+
+* Competition is fierce for experienced Machine Learning scientists
+
+* We recommend **up-skilling** your current team
+    - They know your business
+    - You know them!
+    - Equip them with the tools and technologies, so they can build the solutions
+
+* Impact hiring:
+    - If you need a 5 person team...
+    - Hire an experienced ML Engineer
+    - And upskill the rest 4 from your current team
+
+---
+
+## Implementing AI
+
+* Choices are: **Buy, Rent, Build**
+
+* **Buy**:  
+    - If there is a commercial solution that solves exactly your problem, may be you might consider buying it
+    - Question for class:  What are the pros/cons
+
+* **Rent**:
+    - Lot of vendors are providing **AI as service**
+    - Might worth considering
+    - Question for class:  What are the pros/cons
+
+* **Build**:
+    - Often times, your problem is unique, you have to build your own solution
+    - Question for class:  What are the pros/cons
+
 
 ---
 
@@ -411,16 +500,12 @@ Notes:
 
 
  * Data Scientists develop their models on laptops with small data
-
  * There is a 'deployment gap' when it comes time to go to production
-
  * Solutions:
-
      - Frameworks like Spark are solving this
-
      - Cloud vendors are providing solution
 
-<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="max-width:50%;"/><!-- {"left" : 1.3, "top" : 4.78, "height" : 3.86, "width" : 7.65} -->
+<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="width:55%;"/><!-- {"left" : 1.3, "top" : 4.78, "height" : 3.86, "width" : 7.65} -->
 
 
 
@@ -641,64 +726,78 @@ Notes:
 
 Notes:
 
-Anaconda:
-Python and R distribution for machine learning and data science. Simplifies package management and deployment supporting Windows, Linux and MacOS.
+---
 
-Python:
+## AI Ecosystem
+
+* **R:**  
+Programming language and environment for statistical computing with powerful graphical and modeling features.  **The OG**
+
+* **Python:**  
 Interpreted programming language supporting multiple programming paradigms. Popular for data science due to code readability, ease of data manipulation and many libraries aimed at data science needs.
 
-R:
-Programming language and environment for statistical computing with powerful graphical and modeling features.
-
-Scala:
-Functional programing language with language interoperability with Java. Scala code runs on a Java Virtual Machine. Many data science frameworks that are built on are written in Scala.
-
-cuDDN:
-Deep Neural Network library for high-performance GPU acceleration.
-
-NCCL:
-The NVIDIA Collective Communications Library (NCCL) implements multi-GPU and multi-node collective communication primitives that are performance optimized for NVIDIA GPUs.
-
-NumPy:
-Scientific computing library for Python and is the foundation for important data science libraries including Pandas, Matplotlib and Scikit-learn.
-
-Pandas:
-Data structure and analysis library for Python. Allows you to do data cleaning and preparation for data science in addition to analysis.
-
-Matplotlib:
-Plotting library for creating plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc. Used heavily in Jupyter notebooks to visualize data.
-
-Scikit-learn:
-ML python library featuring many popular ML algorithms
-
-WEKA:
-Java ML visualization tools and algorithms.
-
-TensorFlow:
-Most popular dataflow programing framework used heavily for ML/DL. Has good visualization, monitoring and debugging features which make it good for production.
-
-Pytorch:
-The second most popular ML/DL framework which does not have as many production features as TensorFlow but is more intuitive and uses dynamic computation graphs which makes it extremely popular for research.
-
-Keras:
-Is a widely used DL python library/high level API which front ends ML frameworks like TensorFlow to make it building and deploying Neural Networks easier. Keras also allows you to import Python DL Models into DL4J.
-
-DL4J:
-DL framework for Java which has tight integration with Java based distributed computing frameworks such as Hadoop and Spark. Uses Keras as a Python API.
-
-
-Jupyter:
-Browser-based notebook interface with support for code, text, mathematical expressions, inline plots and other media. Jupyter has a larger community and is a better stand alone tool when compared to Apache Zeppelin. Jupyter is a more natural fit for use with Python Based ML/DL frameworks.
-
-Apache Zeppelin:
-Browser-based notebook interface with support for code, text, mathematical expressions, inline plots and other media. Zeppelin has tight integration with Hadoop eco system technologies and Spark plus has better out of box multi-user features when compared to Jupyter.
-
-
-
+* **Anaconda:**  
+Python and R distribution for machine learning and data science. Simplifies package management and deployment supporting Windows, Linux and MacOS.
 
 ---
 
-# Deep Learning Software Ecosystem
+## AI Ecosystem (Python)
+
+* **NumPy:**  
+Scientific computing library for Python and is the foundation for important data science libraries including Pandas, Matplotlib and Scikit-learn.
+
+
+* **Pandas:**  
+Data structure and analysis library for Python. Allows you to do data cleaning and preparation for data science in addition to analysis.
+
+* **Matplotlib:**
+Plotting library for creating plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc. Used heavily in Jupyter notebooks to visualize data.
+
+---
+
+## AI Ecosystem
+
+* **Scikit-learn:**  
+ML python library featuring many popular ML algorithms
+
+* **WEKA:**  
+Java ML visualization tools and algorithms.
+
+* **cuDDN:**  
+Deep Neural Network library for high-performance GPU acceleration. From NVIDIA.
+
+* **NCCL:**  
+The NVIDIA Collective Communications Library (NCCL) implements multi-GPU and multi-node collective communication primitives that are performance optimized for NVIDIA GPUs.
+
+---
+
+## AI Ecosystem
+
+* **TensorFlow:**  
+Most popular dataflow programing framework used heavily for ML/DL. Has good visualization, monitoring and debugging features which make it good for production.
+
+*  **Pytorch:**  
+The second most popular ML/DL framework which does not have as many production features as TensorFlow but is more intuitive and uses dynamic computation graphs which makes it extremely popular for research.
+
+* **Keras:**
+Is a widely used DL python library/high level API which front ends ML frameworks like TensorFlow to make it building and deploying Neural Networks easier. Keras also allows you to import Python DL Models into DL4J.
+
+* **DL4J:**
+DL framework for Java which has tight integration with Java based distributed computing frameworks such as Hadoop and Spark. Uses Keras as a Python API.
+
+---
+
+## AI Ecosystem
+
+* **Jupyter:**   
+Browser-based notebook interface with support for code, text, mathematical expressions, inline plots and other media. Jupyter has a larger community and is a better stand alone tool when compared to Apache Zeppelin. Jupyter is a more natural fit for use with Python Based ML/DL frameworks.
+
+* **Apache Zeppelin:**   
+Browser-based notebook interface with support for code, text, mathematical expressions, inline plots and other media. Zeppelin has tight integration with Hadoop eco system technologies and Spark plus has better out of box multi-user features when compared to Jupyter.
+
+---
+
+## Deep Learning Software Ecosystem
 
 [../../deep-learning/generic/DL-ecosystem.md](../../deep-learning/generic/DL-ecosystem.md)
 

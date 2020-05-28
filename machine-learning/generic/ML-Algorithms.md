@@ -370,6 +370,16 @@ Notes:
 
 ---
 
+## Reinforcement Learning Demo: AI Learning to Play 'Hide and Seek'
+<img src="../../assets/images/AI/3rd-party/openai-hide-and-seek-1.jpg" style="width:70%;float:right;"/><!-- {"left" : 3.5, "top" : 1.06, "height" : 3.72, "width" : 6.61} -->
+
+
+* [Open AI blog](https://openai.com/blog/emergent-tool-use/)
+* [Watch video 1](https://openai.com/blog/emergent-tool-use/)
+* [Watch video 2](https://www.youtube.com/watch?v=Lu56xVlZ40M)
+
+---
+
 ## Reinforcement Learning Demo: Open AI Bots Playing Dota
 
 
