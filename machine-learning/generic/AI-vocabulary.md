@@ -111,7 +111,7 @@ Notes:
  * Layers of parallel processing elements, working together to solve very complex tasks
  * Inspired by neurons from human brain
  * Used in Deep Learning
- * **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/mpofZfpe9lA)
+ * **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/F32n1edCsrk)
 
 <img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
 
