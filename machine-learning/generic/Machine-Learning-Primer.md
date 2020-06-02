@@ -59,19 +59,6 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 
 ---
 
-## Hype Cycle
-
- * **Question for the class:**  
-   - Where do you think AI is in this cycle? :-)
-
-<img src="../../assets/images/deep-learning/Gartner-Hype-Cycle.png" alt="Gartner-Hype-Cycle.png" style="background:white;width:55%;"/><!-- {"left" : 1.23, "top" : 2.93, "height" : 5.06, "width" : 7.8} -->
-
-
-Notes:
-- https://en.wikipedia.org/wiki/Hype_cycle
-
----
-
 ## What is Machine Learning
 
 <img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 7.41, "top" : 1.1, "height" : 3.71, "width" : 2.63} -->
@@ -80,13 +67,14 @@ Notes:
  -- Arthur Samuel
 
 * Example: Self-driving cars
-    - Historical approach:  
-    Write a massive program to instruct the car to handle all possible scenarios encountered while driving
-        - This is immensely difficult
 
-    - AI approach:  
-        - Let AI learn by observing the scenery and your  reactions
-        - Once it learnt enough, let the AI predict the next reaction for a scenary
+* Historical approach:  
+Write a massive program to instruct the car to handle all possible scenarios encountered while driving
+    - This is immensely difficult
+
+* AI approach:  
+    - Let AI learn by observing the scenery and your  reactions
+    - Once it learnt enough, let the AI predict the next reaction for a scenary
 
 
 
@@ -180,11 +168,13 @@ Notes:
 
 ---
 
-# Machine Learning vs. Deep Learning
+# Machine Learning Algorithms
 
-[ML-vs-DL.md](ML-vs-DL.md)
+[ML-Algorithms.md](ML-Algorithms.md)
 
+---
 
+# AI Software Eco System
 
 ---
 
@@ -308,46 +298,23 @@ Notes:
 
 
 ---
-
-# Machine Learning Algorithms
-
-[ML-Algorithms.md](ML-Algorithms.md)
-
----
-# ML Use Cases
-
-[ML-Use-Cases.md](ML-Use-Cases.md)
-
----
-
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
 
-- Let's go over what we have covered so far
+* Let's go over what we have covered so far:
 
-- Any questions?
+* What is Machine Learning and how is it different from regular programming?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+* Name a few of Machine Learning use cases
 
----
+* How does Big Data help Machine Learning?
 
-## Review Questions
-
-
- * What is Machine Learning and how is it different from regular programming?
-
- * Name a few of Machine Learning use cases
-
- * How does Big Data help Machine Learning?
-
- * What is supervised learning? Unsupervised learning?
+* What is supervised learning? Unsupervised learning?
 
 Notes:
-
-
-
 
 ---
 

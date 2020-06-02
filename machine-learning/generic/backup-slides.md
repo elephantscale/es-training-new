@@ -1,5 +1,27 @@
 # ML Backup slides
 ---
+## Supervised Learning Methodology
+
+
+ * Split the data set into
+
+     - **Training set:** Train the algorithm (training set should represent data well enough)
+
+     - **Test set:** Validate the model
+
+ * We do this, so we can test the model without the model cheating
+
+ * Start with 80% training, 20% test
+    - Tweak the dials to increase or decrease the proportion
+
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="max-width:59%;"><!-- {"left" : 2.69, "top" : 5.16, "height" : 2.14, "width" : 4.87} -->
+
+
+Notes:
+
+Facebook used 95%/5% `Understanding text from scratch`
+
+---
 ## How to do Machine Learning
 
 
@@ -90,6 +112,64 @@ Use https://www.epochconverter.com/ to easily convert unix time and human readab
 
 
 Notes:
+
+
+---
+## Incredible Growth of AI Power
+
+<img src="../../assets/images/deep-learning/3rd-party/Incredible-Growth-of-AI-Power.png" alt="Incredible-Growth-of-AI-Power.png" style="width:60%;float:right;"/><!-- {"left" : 5.38, "top" : 1.21, "height" : 5.73, "width" : 4.77} -->
+
+ * Since 2012, the amount of compute used in the largest AI training runs has been increasing exponentially with a 3.5 month-doubling time
+
+ * by comparison, Moore's Law had an 18-month doubling period
+
+ * Source: https://blog.openai.com/ai-and-compute/
+
+Notes:
+
+---
+## 2012 - AI Recognizes Cats in YouTube Videos
+
+<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style=" width:25%;float:right;"/><!-- {"left" : 6.51, "top" : 1.3, "height" : 2.98, "width" : 3.45} -->
+
+- 2012 Google created a neural network that can 'identify' cats from YouTube videos
+
+- Up until now, traditional machine learning algorithms are trained on labeled data.  
+    - So to train an algorithm to distinguish between cats and dogs, we need thousands of images labeled as 'cat' and thousands of images labeled as 'dog'
+    - labeling takes a lot of work, and not a lot of labeled data is available
+
+
+---
+## 2012 - AI Recognizes Cats in YouTube Videos
+
+<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style=" width:25%;float:right;"/><!-- {"left" : 6.51, "top" : 1.3, "height" : 2.98, "width" : 3.45} -->
+
+- They built a huge neural network with **1 Billion+** connections and trained it on **16,000 CPU cores (distributed)**
+
+- The network watched a lot of stills from YouTube videos and 'intuitively learned' to recognize cats
+    - no one told the network what a cat looks like, it is 'self-taught'
+
+- References:
+    - [1](https://googleblog.blogspot.com/2012/06/using-large-scale-brain-simulations-for.html), [2](https://www.wired.com/2012/06/google-x-neural-network/)
+
+
+
+Notes:
+
+- References
+    - ['Using large-scale brain simulations for machine learning and A.I.' - Google Blog](https://googleblog.blogspot.com/2012/06/using-large-scale-brain-simulations-for.html)
+    - [Google AI learns to find cat videos -- Wired magazine](https://www.wired.com/2012/06/google-x-neural-network/)
+
+---
+## Data Science vs. Machine Learning
+
+ * **Data Science** works with existing data and derive intelligence
+
+ * **Machine Learning** learns from existing data and predicts on new/unseen data
+
+ * The definitions are not clear-cut,  some people use these interchangeably
+
+<img src="../../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist-2.png" style="width:49%;"/><!-- {"left" : 1.02, "top" : 4.17, "height" : 3.94, "width" : 8.21} -->
 
 
 ---
