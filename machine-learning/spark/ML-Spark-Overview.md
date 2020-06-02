@@ -1,143 +1,397 @@
-# Spark Machine Learning Overview
+# Spark Machine Learning
 ---
 
 
 ## Lesson Objectives
 
 
- * Understand Spark ML library
+* Understand Spark ML library
 
 
 Notes:
 
 ---
 
-# Introduction
+# Quick Spark Primer
 
 ---
 
-## Spark Illustrated
+## Spark Intro
+
+* **To Instructor**:  
+Skip this section, if already covered earlier
+
+---
+
+## Spark
+
+
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.11, "top" : 1.11, "height" : 1.01, "width" : 1.91} -->
+
+
+* [Spark](https://spark.apache.org) is an **open Source distributed computing engine**
+    - Very fast: On-disk ops are **10x** faster than MR
+    - In-memory ops **100x** faster than MR
+
+* General purpose: MR, SQL, streaming, machine learning, analytics
+
+* Hadoop compatible: Runs over Hadoop, Mesos, Yarn, or standalone
+
+* Plays nicely with Big Data ecosystem (S3, Cassandra, HBase)
+
+* Very easy to use API
+
+* _"Spark is the First Big Data platform to integrate batch, streaming and interactive computations in a unified framework." - stratio.com_
+
+---
+
+## Why is Spark Popular?
+
+* Ease of use
+    - Easy to get up and running
+    - Develop on laptop, deploy on cluster
+
+* Multiple language support
+    - Java, Scala, Python and R
+    - Developers (Java/Scala),   Data Scientists (Python, R)
+
+* High performant
+
+* Plays nice with BigData eco system
+
+* Out of the box functionality
+    - Modern functional programming constructs
+    - Machine Learning / Streaming / Graph processing
+
+
+Notes:
+---
+
+## Spark Components
+
+<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+
+Notes:
+
+---
+## Spark Runtimes
+
+* On-Premise
+  - Spark is part of most modern Hadoop distributions
+  - Spark can also be downloaded and installed as a standalone system
+
+* Hosted solutions
+  - Databricks cloud - hosted Spark platform
+  - Cloud vendors: Amazon, Azure, Google
+
+<br clear="all" />
+
+<img src="../../assets/images/logos/databricks-logo-1.png" style="width:20%;" /><!-- {"left" : 0.32, "top" : 5.52, "height" : 0.37, "width" : 2.19} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 3, "top" : 5.35, "height" : 0.71, "width" : 2.17} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 5.56, "top" : 5.38, "height" : 0.63, "width" : 1.68} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 7.63, "top" : 5.35, "height" : 0.71, "width" : 2.46} -->
+
+---
+
+## Databricks Cloud
+
+<img src="../../assets/images/spark/3rd-party/databricks-cloud-1.png" style="width:60%;float:right;" /><!-- {"left" : 5.58, "top" : 1.26, "height" : 2.8, "width" : 4.34} -->
+
+* A hosted platform of Spark
+
+* Zero maintenance
+
+* Auto scale  based on work loads
+
+* Community edition is free
+  - A single node with 6GB memory
+  - Notebook environment
+
+* https://community.cloud.databricks.com/
+
+---
+
+## Spark in the Cloud
+
+* Spark is pretty well supported on all major cloud platforms
+
+* Basic idea:
+    - Upload data into Cloud storage
+    - Spin up on-demand Spark cluster to process your data
+    - Shutdown when done
+    - Pay for use of compute and storage
+
+* Amazon offers **Elastic Map Reduce (EMR)** that includes Spark
+
+* Google has **DataProc** that provisions Spark clusters
+
+* Azure has **HDInsight*** that includes Spark
+
+<br clear="all" />
+
+<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 3, "top" : 5.35, "height" : 0.71, "width" : 2.17} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 5.56, "top" : 5.38, "height" : 0.63, "width" : 1.68} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 7.63, "top" : 5.35, "height" : 0.71, "width" : 2.46} -->
+
+---
+
+## On Prem Deployment: System Requirements
+
+* Operating system
+  - Development: Windows, Mac, Linux
+  - Deployment: Linux
+* Languages:
+    - JDK 8
+    - Scala 2.11, 2.12
+    - Python 3
+* Hardware
+
+| Resource | Development                       | Production                                                        |
+|----------|-----------------------------------|-------------------------------------------------------------------|
+| CPU      | 2+ core                           | 12+ core                                                          |
+| Memory   | 4+ G                              | 256+ G                                                            |
+| Disk     | - Single spindle <br/> - Few gigs | - Multiple spindles <br /> - Several Terabytes per node <br />  |
+
+---
+
+## Spark is a Distributed Engine
+
+* Spark distributes the work across many machines to achieve impressive scaling
+
+* Spark has been demonstrated to scale to thousands of nodes!
+
+* Let's look at how Spark scales
+    - on Hadoop
+    - in the Cloud
+
+---
+
+## Scaling on Hadoop (On Premise)
+
+* Hadoop achieves scale by **co-locating** data and compute
+* So applications running on Hadoop cluster, mostly process local data (aka **data locality**)
+* Pros:
+    - Works well on on-prem architecture (1G-10G networks)
+    - Very fast processing, because of data locality
+* Cons:
+    - The cluster size is fixed; very hard to scale up/down dynamically based on demand
+
+<!-- TODO shiva -->
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:47%;float:left;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Spark Scaling on the Cloud
+
+<!-- TODO shiva -->
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+
+* In Cloud architecture, storage and compute are separate!
+
+* Compute nodes stream data from storage (called buckets)
+
+* For this to work, compute nodes and storage must have **ultra high speed** network
+
+* Google built the next gen network for their data centers  using custom hardware, software, network switches ([source](https://cloudplatform.googleblog.com/2015/06/A-Look-Inside-Googles-Data-Center-Networks.html))
+
+* It can deliver more than **1 Petabit/sec** of total bisection bandwidth.
+
+* To put this in perspective,
+    - enough for 100,000 servers to exchange information at 10Gb/s each
+    - enough to read the entire scanned contents of the Library of Congress in less than 1/10th of a second
+
+---
+
+## Spark Scaling on the Cloud
+
+<!-- TODO shiva -->
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+
+* Pros:
+    - Gives a lot of flexibility on scaling and scheduling computes
+    - Can dynamicaly scale compute capacity up/down
+    - Leverages massive infrastructure the cloud vendors have
+    - Implemented by cloud vendors / hosted platforms
+
+* Cons:
+    - Not easily implemented on-prem/in-house
+    - Need to be on a cloud environment
+    - Costs can add up for storage and compute
+---
+
+## Running a Spark Job
+
+* When a Spark application is launched, the following things happen:
+    - Spark talks to the **cluster manager (CM)**, to request resources
+    - CM allocates resources for the Spark application
+    - Spark then distributes the code to **worker nodes**
+    - **Executors** on worker nodes start computing
+    - Each Executor can employ multiple **tasks** to parallize the work
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/spark_architecture.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+## Parallelizing Computations
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/distributed-execution.png" style="width:45%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+* Here is a simple example of doing a COUNT in a distributed way
+
+* Each worker computes the count for the data it has
+
+* And then an 'aggregator (reducer)' combines the results from multiple workers to produce a final count
+
+* Machine learning computations are more complex; But Spark handles the parallelism
+
+---
+
+# Spark ML Intro
+
+---
+
+## Spark ML
 
 <img src="../../assets/images/machine-learning/01.png" style="width:70%;"/><!-- {"left" : 0.74, "top" : 2.07, "height" : 4.93, "width" : 8.77} -->
 
 
 Notes:
 
-See the next slide for a brief explanation of each component
 
+---
+## Machine Learning @ Scale
+
+* Traditionally  ML has been performed on small set of data, usually on a single machine
+
+* As the data volume started going up, we needed scale
+
+* And distributed systems like Hadoop/Spark offered a great platform to build scalable ML
+
+<img src="../../assets/images/bigdata/cluster-distributed-processing-2.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ---
 
-## History of Machine Learning @ Scale
+## Machine Learning @ Scale
+
+* Going from laptop to cluster requires lot of effort
+    - Usually involves multiple teams
+
+* Spark enables laptop-->cluster
+    - Develop on laptop
+    - Deploy on cluster
+
+* Cloud vendors are trying simplify this too
 
 
- * **Hadoop**
-     - Hadoop is the first popular distributed platform
-     - MapReduce is the execution engine
-     - Did great at batch computes
-     - 'Mahout' is a machine learning library built on top of Hadoop's MapReduce
-     - Not so great for iterative algorithms (machine learning)
- * **Spark**
-     - Execution engine is faster than MapReduce (less overhead)
-        - Iterative algorithms work well
-     - Native Machine Learning library that has many algorithms implemented
-     - Support in-memory computations (very fast and great for iterative computes)
-
-Notes:
-
-
-
+<!-- TODO shiva -->
+<img src="../../assets/images/google-cloud/data-science-laptop-to-cluster-1.png" style="width:40%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ---
 
+## Scalable ML with Hadoop
+
+* Hadoop was the first popular distributed platform
+
+* 'Mahout' is a machine learning library built on top of Hadoop's MapReduce (MR)
+ engine
+
+* How ever, MR wasn't so great for iterative algorithms (machine learning)
+
+---
+
+## Scalable ML on Spark
+
+* One of the design goals of Spark was to be a distributed ML Engine
+
+* Spark engine is much faster than MR; it does great at iterative tasks
+    - Lot of ML algorithms iterate over data to find convergence
+
+* Spark includes a native ML library
+    - Includes lot of popular algorithms out of the box!
+    - And the implementations are parallelized!
+
+* Spark supports caching datasets in memory:
+    - Datasets can be entirely cached in memory
+    - And then do **in-memory compute** --> Super fast!
+
+* Multiple language APIs are supported: Java / Scala / Python / R
+    - **Spark + Python** is a very popluar combination
+---
+
+## Spark ML Library Evolution
+
+* Earlier version of Spark ML implementation is **Spark MLLib**
+    - It is built on RDD data structures
+    - Not the highest performance
+
+* Newer implementation is **Spark ML**
+    - Uses newer/faster data structures ('dataframes/datasets')
+
+* Recommended to use the newer **ML** library
+
+* The older library is in maintenance mode
+
+---
 ## Spark ML Features
 
+* Implements many popular algorithms  (classifications, clustering, regressions, collaborative filtering)
+    - All parallelized out of the box!
 
- * Implements many popular algorithms  (classifications, clustering, regressions, collaborative filtering)
-     - All parallelized out of the box!
+* Utilities: Linear algebra, statistics, data handling
 
- * Utilities: Linear algebra, statistics, data handling
- 
- * Feature Engineering: feature extraction / transformation / dimensionality reduction / selection
+* Feature Engineering: feature extraction / transformation / dimensionality reduction / selection
 
- * Pipelines: create, evaluate and tune Pipeline
+* Pipelines: create, evaluate and tune Pipeline
 
- * Persistence: saving and loading of algorithms/models/pipelines
+* Persistence: saving and loading of algorithms/models/pipelines
 
- * Multi Language support: Python / Java / Scala / R
-     - Equal coverage!
-
-Notes:
-
-
-
----
-
-## MLLib => ML
-
-* **Spark.mllib** contains the original API built on top of RDDs
-
-* MLLib has been migrating to a new API called Spark.ML
-
-* **Spark.ml** provides higher-level API built on top of Dataframes for constructing ML pipelines
-
-    - Dataframes provide faster data access, better caching ..etc
-
-* As of Spark v2.0, RDD based spark.mllib package is in maintenance mode (no new features, bug fixes only)
-    - May be removed in Spark v3
-
+* Multi Language support: Python / Java / Scala / R
+    - Equal coverage!
 
 Notes:
-
-
-
 
 ---
 
 ## Streamlining Prototyping -> deploy
 
 
-  * Data scientists might work on laptop using  R/Python
-  * Now they want to deploy this at scale, how ever the infrastructure is in Java/Scala
-  * How?
+* Data scientists might work on laptop using  R/Python
+* Now they want to deploy this at scale, how ever the infrastructure is in Java/Scala
+* How?
     - Usually need to re-code it in Java/Scala
     - Extra work
     - Different code path
     - Possible bugs!
     - Updating models is slow!
+* [Reference](https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models)
 
-<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="max-width:50%;"/><!-- {"left" : 1.84, "top" : 5.39, "height" : 3.33, "width" : 6.58} -->
+<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="width:40%;"/><!-- {"left" : 1.84, "top" : 5.39, "height" : 3.33, "width" : 6.58} -->
 
 
 Notes:
 
-* https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models
-
-
-
 ---
 
-## Streamlining Prototyping -> deploy
-
+## Streamlining Prototyping -> Deploy
 
 * Spark ML has a simple solution:
-    - Save the model from laptop 
+    - Save the model from laptop
     - Load the saved model on production and deploy
 * Saved format language neutral (json + parquet)
 * Same model - no need to re-implement
 * Fast deploy!
+* [Reference](https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models)
 
 <img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 3.29, "top" : 3.81, "height" : 4.74, "width" : 6.26} -->
 
 Notes:
 
-* https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models
-
-
-
 ---
 
-## ML Algorithm overview
+## ML Algorithm Overview
 
 <img src="../../assets/images/machine-learning/ML-Algorithm-overview-02.png" style="max-width:75%;"/><!-- {"left" : 1.11, "top" : 2.26, "height" : 5.13, "width" : 8.04} -->
 
@@ -145,127 +399,11 @@ Notes:
 Notes:
 
 
-
-
 ---
 
-# ML Data Types And Utilities
-
----
-
-## ML Vectors
 
 
- * One dimensional array of Numerics / Doubles
-
- *  **DenseVector**
-
-    - When most positions in the vector have value
-
- *  **SparseVector**
-
-    - When most elements have no value
-
-<img src="../../assets/images/machine-learning/ml-vectors-1.png" style="max-width:35%;"/><!-- {"left" : 2.71, "top" : 3.95, "height" : 4.2, "width" : 4.82} -->
-
-
-
-Notes:
-
-
-
----
-
-## DenseVector vs. Sparse Vector
-
- * DenseVector = simply an array[1,  2,  3,  4,  5]
- 
- * SparseVector
-     - We specify size
-     - Index array
-     - and value array
-     
-```text
-
-Vectors.sparse (length,   index array,   value array)  
-Vectors.sparse(10,  (0,9),   (100,200) )
-# [ 100. 0. 0. 0. 0. 0. 0. 0. 0. 200.]
-     
-- Parameters
-     - Size is 10
-     - first element @ index 0  = 100
-     - last element @ index 9 = 200
-```
-<!-- {"left" : 0, "top" : 3.83, "height" : 2.61, "width" : 9.94} -->
-
-
-
-Notes:
-
-
-
----
-
-## Creating Vectors (Scala)
-
-* We use  **Vectors**  class to create dense or sparse vectors
-
-```scala
-import org.apache.spark.ml.linalg.{Vector, Vectors}
-
-// Create a dense vector (1.0, 0.0, 3.0).
-val dv: Vector = Vectors.dense(1.0, 0.0, 3.0)
-
-// Create a sparse vector (1.0, 0.0, 3.0) by specifying its indices
-//  and values corresponding to nonzero entries.
-val sv1: Vector = Vectors.sparse(3, Array(0, 2), Array(1.0, 3.0))
-
-// Create a sparse vector (1.0, 0.0, 3.0) by specifying its nonzero entries.
-val sv2: Vector = Vectors.sparse(3, Seq((0, 1.0), (2, 3.0)))
-
-```
-<!-- {"left" : 0, "top" : 1.86, "height" : 1.54, "width" : 10.25} -->
-
-
-
-Notes:
-
-
-
-
----
-
-## Creating Vectors (Python)
-
- * We use  **Vectors**  class to create dense or sparse vectors
-
-```python
-from pyspark.ml.linalg import Vectors
-
-v1 = Vectors.dense(3,2,1)
-print(v1)
-# [3.0,  2.0,   1.0]
-
-## sparse (size of array,  indexe array,  value array)
-v2 = Vectors.sparse(10, (0, 9), (100, 200))
-print(v2) # (10,[0,9],[100.0,200.0])
-
-print(v2.toArray())
-# [ 100.    0.    0.    0.    0.    0.    0.    0.    0.  200.]
-
-```
-<!-- {"left" : 0, "top" : 1.86, "height" : 3.13, "width" : 10.25} -->
-
-
-
-Notes:
-
-
-
-
----
-
-# ML Utilities
+# ML API
 
 ---
 
@@ -301,7 +439,7 @@ Notes:
 
 <img src="../../assets/images/machine-learning/training2.png" style="float:right;max-width:50%;"/><!-- {"left" : 2.91, "top" : 1.25, "height" : 3.35, "width" : 5.19} -->
 
-```python 
+```python
 df = spark.range(1,100)
 df.show()
 
@@ -315,7 +453,7 @@ test.show()
 common = train.intersect(test)
 print("----common data set-----")
 print("count: ", common.count())
-common.show() 
+common.show()
 
 ```
 <!-- {"left" : 0, "top" : 4.83, "height" : 3.54, "width" : 6.31} -->
@@ -326,10 +464,6 @@ common.show()
 Notes:
 
 
-
----
-
-# ML Transformers
 
 ---
 
@@ -347,7 +481,6 @@ Notes:
 Notes:
 
 
-
 ---
 
 ## Vector Assembler
@@ -363,8 +496,8 @@ Notes:
 
 ## VectorAssembler Example Code (Python)
 
-```python 
-from pyspark.ml.feature import VectorAssembler 
+```python
+from pyspark.ml.feature import VectorAssembler
 
 data = spark.read.csv("mtcars_header.csv", header=True, inferSchema=True)
 mpg_cyl = data.select("model", "mpg", "cyl")
@@ -406,7 +539,7 @@ Notes:
 
 ## String Indexer Example Code (Python)
 
-```python 
+```python
 import pandas as pd
 from pyspark.ml.feature import IndexToString, StringIndexer
 
@@ -438,7 +571,7 @@ Notes:
 ```python
 converter = IndexToString(inputCol="colorIndex", outputCol="originalColor")
 converted = converter.transform(indexed)
-converted.show() 
+converted.show()
 
 ```
 <!-- {"left" : 0, "top" : 1.7, "height" : 0.89, "width" : 10.25} -->
@@ -464,7 +597,7 @@ Notes:
  * The one in right creates 'dummy variables' and assigns  true / false to each.
      - Note, only one bit is on
      - This is called  **ONE-HOT-Encoding**   
-     
+
 <img src="../../assets/images/machine-learning/one-hot-encoding-2.png" style="max-width:60%;"/><!-- {"left" : 0.93, "top" : 5.78, "height" : 2.76, "width" : 8.39} -->
 
 
@@ -478,7 +611,7 @@ Notes:
 
 ## Hot Encoder Code (Python)
 
-```python 
+```python
 import pandas as pd
 from pyspark.ml.feature import StringIndexer, OneHotEncoder
 
@@ -495,7 +628,7 @@ indexed = model.transform(df2_spark)
 # Then encoder
 encoder = OneHotEncoder(inputCol="statusIndex", outputCol="statusVector", dropLast=False)
 encoded = encoder.transform(indexed)
-encoded.show() 
+encoded.show()
 
 print(encoded.toPandas()) # print pandas df
 
@@ -580,7 +713,7 @@ Notes:
 
 ## Standard Scaler Code 1/2- Python
 
-```python 
+```python
 import pandas as pd
 from pyspark.ml.feature import VectorAssembler
 
@@ -620,16 +753,16 @@ Notes:
 
 ## Standard Scaler Code 2/2- Python
 
-```python 
+```python
 from pyspark.ml.feature import StandardScaler
 
 scaler = StandardScaler(inputCol="features",
                         outputCol="scaled_features",
                         withStd=True, withMean=False)
-                        
+
 scalerModel = scaler.fit(feature_vector)
 scaledData = scalerModel.transform(feature_vector)
-scaledData.show() 
+scaledData.show()
 
 ```
 <!-- {"left" : 0, "top" : 1.47, "height" : 2.9, "width" : 9.61} -->
@@ -662,7 +795,7 @@ Notes:
 
 MinMax Scaler allows you to scale data at arbitrary range - 0.0 to 1.0 is default or  0 to 100)
 
-```python 
+```python
 from pyspark.ml.feature import MinMaxScaler
 
 mmScaler = MinMaxScaler(min=1, max=100,
@@ -671,7 +804,7 @@ mmScaler = MinMaxScaler(min=1, max=100,
 
 scaledModel2 = mmScaler.fit(feature_vector)
 scaledData2 = scaledModel2.transform(feature_vector)
-scaledData2.show(10, False) 
+scaledData2.show(10, False)
 
 ```
 <!-- {"left" : 0, "top" : 2.46, "height" : 2.9, "width" : 9.61} -->
@@ -725,29 +858,6 @@ Notes:
 
 
 Notes:
-
-
-
----
-
-## Lab 5.1: ML Basics
-
-
- *  **Overview:**
-
-     - Get familiar with ML APIs in Spark
-
- *  **Approximate time:**
- 
-     - 10 - 15 mins
-
- *  **Instructions:**
-
-     -  **5.1: 'basics/spark-ml-basics'** lab for Scala / Python
-
-
-Notes:
-
 
 
 
@@ -855,7 +965,7 @@ Notes:
      - And finally, a LogisticRegression model
  * Also note, we train the model on the  **entire**  pipeline in one go!
 
-```python 
+```python
 from pyspark.ml import Pipeline
 from pyspark.ml.classification import LogisticRegression
 from pyspark.ml.feature import HashingTF, Tokenizer
@@ -872,7 +982,7 @@ pipeline = Pipeline(stages=[tokenizer, hashingTF, lr])
 # Fit the pipeline to training documents.
 model = pipeline.fit(training_data)
 test_data = spark.read(...)
-predicted_data = model.predict(test_data) 
+predicted_data = model.predict(test_data)
 
 ```
 <!-- {"left" : 0, "top" : 3.83, "height" : 3.46, "width" : 10.25} -->
@@ -904,6 +1014,25 @@ Notes:
 
 ---
 
+## Lab:  ML Basics
+
+
+ *  **Overview:**
+
+     - Get familiar with ML APIs in Spark
+
+ *  **Approximate time:**
+
+     - 10 - 15 mins
+
+ *  **Instructions:**
+
+     -  **basics/spark-ml-basics** lab for Scala / Python
+
+
+Notes:
+
+---
 ## Further Reading
 
 

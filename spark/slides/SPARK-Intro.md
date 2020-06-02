@@ -544,6 +544,20 @@ Notes:
 <img src="../../assets/images/spark/spark_architecture.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
+## Parallelizing Computations
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/distributed-execution.png" style="width:45%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+* Here is a simple example of doing a COUNT in a distributed way
+
+* Each worker computes the count for the data it has
+
+* And then an 'aggregator (reducer)' combines the results from multiple workers to produce a final count
+
+* Machine learning computations are more complex; But Spark handles the parallelism
+
+---
 
 ## Lab: Doing XYZ
 
