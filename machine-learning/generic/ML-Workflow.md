@@ -162,24 +162,6 @@ Notes:
 
 ---
 
-## Evaluating A Model
-
- * How do we know our model is 'good'?
-
- * One way to measure the performance, is how well it is predicting on 'new data'
-    - Model is trained with 'training data'
-    - Measure its performance on 'test data' (the model hasn't seen 'test data')
-
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
-
-
-
-
-
-Notes:
-
----
-
 ## Under-fitting / Over-fitting
 
  * Here we have 3 models

@@ -174,6 +174,22 @@ Notes:
 
 ---
 
+## Common Mistakes in Model Validation
+
+* **Mistake: Using overly simplistic validation methods**
+    - Model might appear to be working well
+
+* **Mistake: Using more parameters (20 attributes) than actual observations (10 observations)**
+    - Model will 'memorize' the data rather than learning
+    - Will do well on testing data / but poorly on new data
+
+* Solution:
+    - Use more data
+
+
+Notes:
+
+---
 
 ## Clustering VS PCA
 
