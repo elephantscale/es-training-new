@@ -168,6 +168,12 @@ Notes:
 
 ---
 
+# Machine Learning vs. Deep Learning
+
+[ML-vs-DL.md](ML-vs-DL.md)
+
+---
+
 # Machine Learning Algorithms
 
 [ML-Algorithms.md](ML-Algorithms.md)
