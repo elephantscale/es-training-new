@@ -35,7 +35,7 @@ Notes:
 
 * Deep Learning uses Neural networks techniques
 
-* Neural Networks fell out of favor in the 89s as statistics-based methods yielded better results
+* Neural Networks fell out of favor in the 80s as statistics-based methods yielded better results
 
 * Now making a comeback due to Big Data & Big Compute ((cluster computing , GPU and TPU)
 
@@ -43,7 +43,6 @@ Notes:
    - Facebook Deep Face
    - Google Translate
    - Google DeepMind playing GO game
-   - IBM Deep Blue winning Jeopardy
 
 Notes:
 
@@ -51,6 +50,14 @@ Notes:
 * https://www.wired.com/2015/5/deep-learning-isnt-dangerous-magic-genie-just-math/
 * https://en.wikipedia.org/wiki/AlphaGo
 
+
+---
+
+## Neural Network Animation
+
+* **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/F32n1edCsrk)
+
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
 
 ---
 

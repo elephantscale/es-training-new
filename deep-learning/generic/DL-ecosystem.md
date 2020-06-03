@@ -1,6 +1,3 @@
-# Deep Learning Software Ecosystem
-
----
 ## Deep Learning Libraries
 
 | Python                                                                                                                                                                            | R                       | Java                                                   | Mobile                                                                                                                                         |

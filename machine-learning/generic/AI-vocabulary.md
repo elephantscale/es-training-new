@@ -93,25 +93,13 @@ Notes:
 
 ---
 
-## Data Science vs. Machine Learning
-
- * **Data Science** works with existing data and derive intelligence
-
- * **Machine Learning** learns from existing data and predicts on new/unseen data
-
- * The definitions are not clear-cut,  some people use these interchangeably
-
-<img src="../../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist-2.png" style="width:49%;"/><!-- {"left" : 1.02, "top" : 4.17, "height" : 3.94, "width" : 8.21} -->
-
-
----
 
 ## Neural Networks
 
  * Layers of parallel processing elements, working together to solve very complex tasks
  * Inspired by neurons from human brain
  * Used in Deep Learning
- * **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/mpofZfpe9lA)
+ * **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/F32n1edCsrk)
 
 <img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
 
