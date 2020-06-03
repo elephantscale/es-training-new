@@ -3,17 +3,22 @@
 
 ## Why Terraform?
 
-1. IaC (Infrastructure as Code) is one of the most important developments in application
-deployment in many years. 
+1. __IaC__ (Infrastructure as Code) is one of the most important developments in application
+deployment in many years.
 
-1. Terraform is a maverick who appeared on the scene a few years ago and
-became more popular than all other IaC implementations 
+1. Terraform is a __maverick__ who appeared on the scene a few years ago and
+became more popular than all other IaC implementations
 
-1. Terraform is open source and can be used with any cloud provider, 
+1. Terraform is __open source__ and can be used with any cloud provider,
 such as Amazon Web Services, IBM Cloud, Google Cloud Platform, Microsoft Azure, etc.
 
-1. Terraform is declarative and idempotent. These are good design principles, 
-and many competitors have also implemented Terraform ideas, making Terraform a de facto standard.
+1. Terraform is __declarative__ and __idempotent__. These are good design principles,
+and many competitors have also implemented Terraform ideas, making Terraform
+a de facto standard
+
+<img src = "../../assets/images/terraform/terraform-logo.png"
+style="width:75%"/>
+<!-- {"left" : 0.77, "top" : 6.51, "height" : 1.18, "width" : 4.83} -->
 
 ---
 
@@ -23,7 +28,7 @@ and many competitors have also implemented Terraform ideas, making Terraform a d
 * How does it compare to other similar tools?
 * What is its place in the IaC ecosystem
     - IaC = Infrastructure as Code
-    
+
 ---
 
 ## What We Will Discuss
@@ -36,20 +41,23 @@ and many competitors have also implemented Terraform ideas, making Terraform a d
 
 ---
 
-## The Rise of DevOps
+## The Rise of DevOps - Before
 
-* Before 
-    - To build a software company
-    - set up cabinets and racks
-    - load them up with servers, etc.
-    - Set up "Devs" team, set up "Ops" team
-    - Let them duke it out
-* Now
-    - There are AWS, Azure, GCP, etc.
-    - There are Chef, Puppet, Terraform, and Docker
-    - Sysadmins write code
-    - Devs and Ops write code, so DevOps is born    
+* To build a software company
+* set up cabinets and racks
+* load them up with servers, etc.
+* Set up "Devs" team, set up "Ops" team
+* Let them duke it out
+  <img src = "../../assets/images/terraform/computer-rack-pexels-photo-442150.jpeg"  style="width:75%;"/>
+  <!-- {"left" : 0.77, "top" : 3.91, "height" : 2.87, "width" : 4.31} -->
 
+## The Rise of DevOps - Now    
+
+* There are AWS, Azure, GCP, etc.
+* There are Chef, Puppet, Terraform, and Docker
+* Sysadmins write code
+* Devs write code
+* Ops write code - so DevOps is born    
 * The goal of DevOps is to make software delivery vastly more efficient
 
 ---
@@ -64,9 +72,9 @@ and many competitors have also implemented Terraform ideas, making Terraform a d
 * HP’s LaserJet Firmware
     - time its developers spent on developing new features went from 5% to 40%
     - overall development costs were reduced by 40%
-    
+
 * Four core values in the DevOps movement   
-    - culture, automation, measurement, and sharing (CAMS) 
+    - culture, automation, measurement, and sharing (CAMS)
 ---
 
 ## What Is Infrastructure as Code?
@@ -78,7 +86,7 @@ and many competitors have also implemented Terraform ideas, making Terraform a d
     - Orchestration tools
     - Provisioning tools
 
---- 
+---
 
 ## Ad Hoc Scripts
 
@@ -112,18 +120,18 @@ and many competitors have also implemented Terraform ideas, making Terraform a d
     - A virtual machine (VM) emulates an entire computer system, including the hardware. You run a hypervisor, such as VMWare, VirtualBox, or Parallels, to virtualize (i.e., simulate) the underlying CPU, memory, hard drive, and networking.
     - Benefit: complete isolation
     - Drawback: waste of resources
-    - You can define VM images as code using tools such as Packer and Vagrant. 
+    - You can define VM images as code using tools such as Packer and Vagrant.
 * Containers
     - A container emulates the user space of an OS.2 You run a container engine, such as Docker, CoreOS rkt, or cri-o, to create isolated processes, memory, mount points, and networking.    
     - Benefit: you run on top of the container engine can see only its own user space
     - Drawback: of the containers running on a single server share, milliseconds boot time
-    
+
 ---
 
 ## Why Infrastructure as Code?
 
 * Q:
-* With all the different flavors of IaC why bother IaC (i.e. Terraform)? 
+* With all the different flavors of IaC why bother IaC (i.e. Terraform)?
     - Why learn a bunch of new languages and tools and encumber yourself with yet more code to manage?
 * A:
     - code is powerful
@@ -132,13 +140,13 @@ and many competitors have also implemented Terraform ideas, making Terraform a d
         - deploy 200 times more frequently
         - recover from failures 24 times faster
         - have lead times that are 2,555 times lower.
-        
+
 Notes:
 
 Source: 2016 State of DevOps Report
 
 ---
-                
+
 ## The Benefits of Infrastructure as Code
 
 * Self-service
@@ -150,13 +158,13 @@ Source: 2016 State of DevOps Report
 
 * Documentation
     * You can represent the state of your infrastructure in source files
-    
+
 * Version control
     * You can store your IaC source files in version control
-    
+
 * Validation
     * For every single change, you can perform a code review
-    
+
 * Reuse
     * You can build on top of known, documented pieces
 
@@ -168,7 +176,7 @@ Source: 2016 State of DevOps Report
     * No one will take notice—until that one day when you mess it up
     * That creates a stressful and unpleasant environment
     * Here is a painting of a happy man (see notes)
-       
+
 ![](../../assets/images/terraform/800px-Hendrik_ter_Brugghen_-_Democritus.jpg)
 
 Notes:
@@ -184,7 +192,7 @@ Notes:
     * described eudaimonia (Greek: εὐδαιμονία) as the goal of human thought and action. Eudaimonia is often translated to mean happiness
 * Cynicism (Antisthenes)
     * rejected any conventional notions of happiness involving money, power, and fame, to lead entirely virtuous, and thus happy, lives
-    
+
 ---
 ## How Terraform Works
 
@@ -198,7 +206,7 @@ Notes:
     * Google Cloud
     * DigitalOcean
     * OpenStack, and more
-    
+
 ---     
 ## Terraform and Other Tools
 ![](../../assets/images/terraform/terraform-and-other-tools.png)
