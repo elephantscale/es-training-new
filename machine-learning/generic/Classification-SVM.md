@@ -323,24 +323,6 @@ Notes:
 
 ---
 
-## Lab: SVM
+## Doing SVM
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
-* **Overview:**
-    - Work with SVM algorithm
-
-* **Approximate time:**
-    - 20-30 mins
-
-* **Instructions:**
-
-    - See next few slides for sample code in R / Python / Spark
-
-    - SVM1 - 'college-admission' data
-
-    - SVM2 - Customer churn data
-
-
-Notes:
+* Next section will show an example on how to do SVM classification

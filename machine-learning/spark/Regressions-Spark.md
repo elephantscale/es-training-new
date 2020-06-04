@@ -120,7 +120,13 @@ TODO - update for tips
 
 ---
 
-## Spark Linear Regression Code (Python)  1/4  - Creating Data Frames
+## Spark Linear Regression Code (Python)
+
+* Creating Data Frames
+
+* (1) - importing Numpy and Pandas libraries
+
+* (2) - Constructing a Panda dataframe and converting it into Spark dataframe
 
 ```python
  #  **** 1 ****
@@ -141,12 +147,6 @@ spark_tips.show()
 ```
 <!-- {"left" : 0, "top" : 1.18, "height" : 3.19, "width" : 10.25} -->
 
-<br/>
-<br/>
-
- * **1** importing Numpy and Pandas libraries
-
- * **2** Constructing a Panda dataframe and converting it into Spark dataframe
 
 Notes:
 
@@ -154,7 +154,9 @@ Notes:
 
 ---
 
-## Spark Linear Regression Code (Python)  2/4 - Plotting Data
+## Spark Linear Regression Code (Python)
+
+* Plotting Data
 
 ```python
  import matplotlib.pyplot as plt
@@ -165,7 +167,7 @@ Notes:
 ```
 <!-- {"left" : 0, "top" : 1.42, "height" : 1.74, "width" : 7.61} -->
 
-<img src="../../assets/images/machine-learning/Python-2-4-Plotting-Data-0.png" style="width:50%;"/><!-- {"left" : 1.33, "top" : 3.66, "height" : 4.89, "width" : 6.94} -->
+<img src="../../assets/images/machine-learning/Python-2-4-Plotting-Data-0.png" style="width:40%;"/><!-- {"left" : 1.33, "top" : 3.66, "height" : 4.89, "width" : 6.94} -->
 
 
 Notes:
@@ -174,7 +176,13 @@ Notes:
 
 ---
 
-## Spark Linear Regression Code (Python) 3/4 - Create a Model, Fit Training Data
+## Spark Linear Regression Code (Python)
+
+* (3) Create feature vector
+
+* (4) Initialize algorithm and train
+
+* (5) Identify coefficients
 
 ```python
  from pyspark.ml.regression import LinearRegression
@@ -201,7 +209,9 @@ Notes:
 
 ---
 
-## Spark Linear Regression Code (Python) 3/4 - Print Model Properties
+## Spark Linear Regression Code (Python)
+
+* Print model properties
 
 ```python
 # Print the coefficients and intercept for linear regression  
@@ -214,7 +224,6 @@ print("numIterations: %d" % trainingSummary.totalIterations)
 print("objectiveHistory: %s" % str(trainingSummary.objectiveHistory))
 print("RMSE: %f" % trainingSummary.rootMeanSquaredError)
 print("r2: %f" % trainingSummary.r2)
-trainingSummary.residuals.show()
 ```
 <!-- {"left" : 0, "top" : 1.15, "height" : 2.62, "width" : 10.25} -->
 
@@ -226,15 +235,6 @@ numIterations: 3
 objectiveHistory: [0.5000000000000002, 0.4158224893708402, 0.10101250448579287]
 RMSE: 1.413302
 r2: 0.902517
-+--------------------+
-|           residuals|
-+--------------------+
-|  1.5049809121494295|
-|  1.0316730292835246|
-|  ...               |
-| -3.0999999999999996|
-+--------------------+
-
 ```
 <!-- {"left" : 0, "top" : 4.16, "height" : 2.78, "width" : 9.75} -->
 
@@ -247,16 +247,7 @@ Notes:
 
 ## Evaluating Linear Regression Model
 
-  * Plot
-  * R2
-
-Notes:
-
-
-
----
-
-## Evaluating Linear Regression Model - Plot the regression
+* Plot the regression
 
 ```python
  # Create a list of values in the best fit line
@@ -282,7 +273,9 @@ Notes:
 
 ---
 
-## Evaluating Linear Regression Model - Calculate Coefficient of Determination (R2)
+## Evaluating Linear Regression Model
+
+ * Calculate Coefficient of Determination (R2)
 
  * R2 is between 0 and 1.1 is perfect fit!
 
@@ -304,11 +297,11 @@ Notes:
 Notes:
 
 
-
 ---
 
+## Evaluating Linear Regression Model
 
-## Evaluating Linear Regression Model - Estimate Tip
+* Estimate Tip
 
 <img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Evaluating-Linear-Regression-Model-Estimate-Tip-0.png" style="width:20%;float:right;"/><!-- {"left" : 4.13, "top" : 1.23, "height" : 4.09, "width" : 1.99} -->
 
@@ -333,7 +326,9 @@ Notes:
 
 ---
 
-## Evaluating Linear Regression Model - Estimate Tip
+## Evaluating Linear Regression Model
+
+* Estimate Tip
 
 ```python
  ## Adding Estimated Tip column to Spark dataframe
@@ -375,6 +370,24 @@ Notes:
 
 ---
 
+## Lab: Linear Regressions
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 7.34, "top" : 1.07, "height" : 3.62, "width" : 2.72} -->
+
+ *  **Overview:**
+    - Practice Linear Regressions
+
+ *  **Approximate Time:**
+    - 30 mins
+
+ *  **Instructions:**
+     - Instructor: Please demo this lab
+     - LR-1: Bill and Tips data
+
+
+Notes:
+
+---
 
 # Multiple Linear Regression
 
@@ -565,10 +578,8 @@ objectiveHistory: [0.5000000000000002, 0.4565457266170319, 0.3376986997173243,
 <!-- {"left" : 0, "top" : 3.3, "height" : 2.13, "width" : 9.75} -->
 
 <br/>
-<br/>
 
  *  **Question for the class:**
-
     - Is this model a good fit? Explain!
 
 Notes:
@@ -627,6 +638,24 @@ Notes:
 
 ---
 
+## Lab: Multiple Linear Regression
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 7.22, "top" : 1.13, "height" : 3.68, "width" : 2.76} -->
+
+ *  **Overview:**
+    - Practice Multiple Linear Regressions
+
+ *  **Approximate Time:**
+    - 30 mins
+
+ *  **Instructions:**
+    - LR-2: House prices
+    - BONUS Lab: LR-3: AIC
+
+Notes:
+
+---
+
 
 ## Regularization
 
@@ -643,4 +672,3 @@ Notes:
 - Any questions?
 
 <img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.18, "top" : 3.77, "height" : 3.93, "width" : 5.9} -->
-
