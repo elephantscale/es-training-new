@@ -4,7 +4,6 @@
 
 ## Lesson Objectives
 
-
   * Learn about unsupervised algorithms in Spark ML
 
   * Learn use cases
@@ -571,7 +570,7 @@ leg = plt.legend(['Explained Variance'], loc='best', borderpad=0.3,
     - 30 mins
 
  *  **Instructions**  
-    - Follow  appropriate Python, R, or Scala instructions
+    - **PCA-1**: Analyze wine quality data
 
 
 Notes:
