@@ -482,22 +482,6 @@ Notes:
 
 
 ---
+## Doing Linear Regression
 
-## Lab: Multiple Linear Regression
-
-<img src="../../assets/images/icons/individual-labs.png" alt="individual-labs.png" style="max-width:30%;float:right;" /><!-- {"left" : 7.22, "top" : 1.13, "height" : 3.68, "width" : 2.76} -->
-
- *  **Overview:**
-    - Practice Multiple Linear Regressions
-
- *  **Approximate Time:**
-    - 30 mins
-
- *  **Instructions:**
-    - Follow  appropriate Python / R / Spark instructions
-    - See next few slides for sample code
-    - LIR-2: House prices
-    - BONUS Lab : LIR-3: AIC
-
-
-Notes:
+* Next section will show an example on how to do multiple linear regression

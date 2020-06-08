@@ -1,10 +1,8 @@
-# Session: Unsupervised Learning With Python
+# Unsupervised Learning With Python
 
 ---
 
-
 ## Lesson Objectives
-
 
  * Learn about Unsupervised algorithms in Python ML
 
@@ -13,7 +11,16 @@
 Notes:
 
 
+---
 
+## Unsupervised Intro
+
+[../generic/Unsupervised-Intro.md](../generic/Unsupervised-Intro.md)
+
+---
+
+## Clustering
+[../generic/Unsupervised-Clustering.md](../generic/Unsupervised-Clustering.md)
 
 ---
 
@@ -59,13 +66,13 @@ Notes:
 
 ## Python ML Kmeans API - Python
 
-| Parameter  	| Description                                                                                                                                            	| Default Value 	|
-|------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------	|
-| n_clusters 	| Number of clusters                                                                                                                                     	| 8             	|
-| init       	| How to initialize cluster centers. <br/>Possible values: <br/>-"random" : choose random points <br/>-"k-means++ : Uses a well-known algorithm for quicker convergence 	| "k-means++"   	|
-| tol        	| Threshold indicating the convergence o fclusters                                                                                                       	| 1e-4          	|
-| maxIter    	| How many iterations                                                                                                                                    	| 20            	|
-| n_init     	| Initial seed setting        	|               	| |
+| Parameter  | Description                                                                                                                                               | Default Value |   |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|---|
+| n_clusters | Number of clusters                                                                                                                                        | 8             |   |
+| init       | How to initialize cluster centers.  Possible values:  -"random" : choose random points  -"k-means++ : Uses a well-known algorithm for quicker convergence | "k-means++"   |   |
+| tol        | Threshold indicating the convergence o fclusters                                                                                                          | 1e-4          |   |
+| maxIter    | How many iterations                                                                                                                                       | 20            |   |
+| n_init     | Initial seed setting                                                                                                                                      |               |   |
 
 <!-- {"left" : 0.25, "top" : 1.54, "height" : 4.54, "width" : 9.75} -->
 
@@ -107,7 +114,7 @@ Notes:
 
 
 
-```text
+```python
 // for k=2
 > model.cluster_centers_
 > array([25.478571428571428,4.428571428571428]
@@ -218,19 +225,14 @@ Notes:
 
 
  *  **Overview:**
-
     - K-Means in Python
 
  *  **Approximate time:**
-
     - 30-40 mins
 
  *  **Instructions:**
-
      - KMEANS-1 lab (mtcars)
-
      - KMEANS-2: Uber trips
-
      - Bonus Lab: KMEANS-3: Walmart shopping data
 
  *  **Answers:**
@@ -242,6 +244,11 @@ Notes:
 
 
 
+---
+
+## Dimensionality Reduction
+
+[../generic/Unsupervised-Dimensionality-Reduction.md](../generic/Unsupervised-Dimensionality-Reduction.md)
 
 ---
 
@@ -262,15 +269,14 @@ Notes:
 
 ## Python sklearn PCA Parameters
 
-| Parameter    	| Description                                                                                                                                                                                                      	| Default Value 	|
-|--------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------	|
-| n_components 	| Number of principal components                                                                                                                                                                                   	|               	|
-| svd_solver   	| How to use SVD to get PCA <br/>- Possible values:<br/>- "full" : calculate exact SVD<br/>- "arpack": truncated SVD for speed <br/>- "randomized": uses Halko method for speed <br/>- "auto": "full" for small data, "randomized" for larger data. 	| "auto"        	|
-| whiten       	| scale output to unit variance                                                                                                                                                                                    	| False         	|
-| tol          	| Threshold indicating the convergence o fclusters                                                                                                                                                                 	| 1e-4          	|
-| maxIter      	| How many iterations                                                                                                                                                                                              	| 20            	|
-| random_state 	| Initial seed setting    	|               	|      |
-
+| Parameter    | Description                                                                                                                                                                                                                   | Default Value |   |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|---|
+| n_components | Number of principal components                                                                                                                                                                                                |               |   |
+| svd_solver   | How to use SVD to get PCA  - Possible values: - "full" : calculate exact SVD - "arpack": truncated SVD for speed  - "randomized": uses Halko method for speed  - "auto": "full" for small data, "randomized" for larger data. | "auto"        |   |
+| whiten       | scale output to unit variance                                                                                                                                                                                                 | False         |   |
+| tol          | Threshold indicating the convergence o fclusters                                                                                                                                                                              | 1e-4          |   |
+| maxIter      | How many iterations                                                                                                                                                                                                           | 20            |   |
+| random_state | Initial seed setting                                                                                                                                                                                                          |               |   |
 
 <!-- {"left" : 0.25, "top" : 1.49, "height" : 4.82, "width" : 9.75, "columnwidth" : [2.27, 5.23, 2.25]} -->
 
@@ -295,19 +301,16 @@ Notes:
 Notes:
 
 
-
 ---
-
-## Review Questions
-
-
-Notes:
+## Lab: PCA
 
 
+ *  **Overview:**
 
----
+    - Reduce data dimension with PCA
 
-## Further Reading
+ *  **Approximate Time:**
 
+    - 30 mins
 
-Notes:
+ *  **Instructions:**

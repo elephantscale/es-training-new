@@ -16,6 +16,36 @@
 Notes:
 
 ---
+## Class Quiz: A Perfect Confusion Matrix
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/><!-- {"left" : 5.45, "top" : 1.21, "height" : 2.99, "width" : 4.48} -->
+
+* What will a perfect confusion matrix will look like?
+
+* Here we have two classes: A & B
+
+* And we have 10 As and 20 Bs
+
+* What will the confusion matrix will look like?
+    - Answer next slide!
+
+
+| Predicted -->  | A | B |
+|----------------|---|---|
+| Actual A (10)  | ? | ? |
+| Actual B (20)  | ? | ? |
+
+---
+
+## Perfect Confusion Matrix
+
+| Predicted -->  | A  | B  |
+|----------------|----|----|
+| Actual  A (10) | 10 | 0  |
+| Actual B (20)  | 0  | 20 |
+
+
+---
 
 ## Confusion Matrix: More Than 2 Outcomes
 
@@ -127,14 +157,11 @@ Notes:
   = 90 / 120  
   = 0.75  or 75%
 
-  * **False Positive Rate (FPR)**   
+ * **False Positive Rate (FPR)**   
   How often model predicts 'negative' as 'positive' (incorrectly)  -- actual negative
   = FP / (FP + TN)  
   = 10 / 80  
   = 0.125 or 12.5%
-
-
-
 
 
 Notes:
@@ -147,14 +174,14 @@ http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 
 <img src="../../assets/images/machine-learning/confusion-matrix-06-null-error.png" alt="confusion-matrix-06-null-error.png" style="width:40%;float:right;"/> <!-- {"left" : 5.23, "top" : 1.49, "height" : 3.19, "width" : 4.95} -->
 
-  * **Specificity**   
+* **Specificity**   
   How often model predicts negative' as negative' (correctly)?  -- actual no  
   = TN / (TN + FP)   
   = 70 / (70 + 10)  
   = 0.875 or 87.5 %  
   = 1 - FPR
 
- * **Precision / Positive Predictive Value (PPV)**  
+* **Precision / Positive Predictive Value (PPV)**  
 When model predicts 'positive' how often it is right?  -- true / predicted positive   
 = TP / (TP + FP)   
 = 90 / (90 + 10)  
@@ -217,11 +244,12 @@ Notes:
 ## Threshold
 <img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 6.42, "top" : 2.18, "height" : 5.29, "width" : 3.72} -->
 
- * Our spam classifier provides a 'spam probability' for each email
+* Our spam classifier provides a 'spam probability' for each email
     - Probability is between 0.0. and 1.0 (or 0 to 100%)
     - 1.0  definitely spam
     - 0.0 definitely not spam
- * When an email's 'spam score' is above a certain number we mark it as spam
+
+* When an email's 'spam score' is above a certain number we mark it as spam
     - This is called 'threshold'
 
 ---
@@ -231,13 +259,15 @@ Notes:
 <img src="../../assets/images/machine-learning/ROC-06-threshold.png" alt="ROC-06-threshold.png" style="width:30%;float:right;"/><!-- {"left" : 6.67, "top" : 2.55, "height" : 5.04, "width" : 3.54} -->
 
 
- * If spam threshold is lower (say 50%)
+* If spam threshold is lower (say 50%)
     - more emails will be classified as spam (email1, email3)
     - Users will miss emails (as they are in Spam folder)
- * If spam threshold is higher (70%)
+
+* If spam threshold is higher (70%)
     - Fewer emails will be classified as spam (email3)
     - Users will see more spam emails be in Inbox
- * We need to find the sweet spot for threshold
+    
+* We need to find the sweet spot for threshold
 
 
 

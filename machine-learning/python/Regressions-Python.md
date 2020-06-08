@@ -108,6 +108,24 @@ plt.plot(x, predictions, color='blue')
 <img src="../../assets/images/machine-learning/linear-regression-plot-1.png" style="width:40%;"/><!-- {"left" : 2.5, "top" : 5.05, "height" : 3.44, "width" : 5.11} -->
 
 ---
+## Lab: Linear Regressions
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 7.34, "top" : 1.07, "height" : 3.62, "width" : 2.72} -->
+
+ *  **Overview:**
+    - Practice Linear Regressions
+
+ *  **Approximate Time:**
+    - 30 mins
+
+ *  **Instructions:**
+     - Instructor: Please demo this lab
+     - LR-1: Bill and Tips data
+
+
+Notes:
+
+---
 
 # Multiple Linear Regression
 
@@ -178,6 +196,23 @@ RMSE :  246378.1736452015
 
 ```
 <!-- {"left" : 0, "top" : 4.91, "height" : 3.49, "width" : 5.61} -->
+
+---
+## Lab: Multiple Linear Regression
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 7.22, "top" : 1.13, "height" : 3.68, "width" : 2.76} -->
+
+ *  **Overview:**
+    - Practice Multiple Linear Regressions
+
+ *  **Approximate Time:**
+    - 30 mins
+
+ *  **Instructions:**
+    - LR-2: House prices
+    - BONUS Lab: LR-3: AIC
+
+Notes:
 
 ---
 

@@ -11,6 +11,17 @@
 Notes:
 
 ---
+## Machine Learning @ Scale
+
+* Traditionally  ML has been performed on small set of data, usually on a single machine
+
+* As the data volume started going up, we needed scale
+
+* And distributed systems like Hadoop/Spark offered a great platform to build scalable ML
+
+<img src="../../assets/images/bigdata/cluster-distributed-processing-2.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+---
 
 # Quick Spark Primer
 
@@ -260,17 +271,6 @@ Notes:
 
 Notes:
 
-
----
-## Machine Learning @ Scale
-
-* Traditionally  ML has been performed on small set of data, usually on a single machine
-
-* As the data volume started going up, we needed scale
-
-* And distributed systems like Hadoop/Spark offered a great platform to build scalable ML
-
-<img src="../../assets/images/bigdata/cluster-distributed-processing-2.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ---
 

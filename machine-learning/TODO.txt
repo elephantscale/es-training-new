@@ -25,10 +25,5 @@
     - linear / logistic / multiclass
     https://docs.google.com/presentation/d/1Bc3fJTgXCFwXN-MO_z3xThKzDb8mtKkoTeW9NQJIGkQ/edit#slide=id.p62
 
-    - 
+    -
 - ML-Concepts
-        - Testing / Cross Validation needs better flow 
-        - better diagrams of random selection
-
-	- Confusion Matrix:
-		- show perfect confusion matrix

@@ -662,7 +662,7 @@ Notes:
 
 
 * And we have reduced the total variation in the data
-  
+
  <img src="../../assets/images/machine-learning/3rd-party/PCA-12.png" style="width:33%;"/><!-- {"left" : 0.4, "top" : 4.73, "height" : 1.34, "width" : 3.69} -->
 
 
@@ -779,20 +779,6 @@ Notes:
 
 ---
 
-## Lab: PCA
+## Implementing PCA
 
-
- *  **Overview:**
-
-    - Reduce data dimension with PCA
-
- *  **Approximate Time:**
-
-    - 30 mins
-
- *  **Instructions:**
-
-    - Follow appropriate Python, R, or Scala instructions
-
-
-Notes:
+* The following section will demonstrate how to implement PCA
