@@ -16,9 +16,7 @@ such as Amazon Web Services, IBM Cloud, Google Cloud Platform, Microsoft Azure, 
 and many competitors have also implemented Terraform ideas, making Terraform
 a de facto standard
 
-<img src = "../../assets/images/terraform/terraform-logo.png"
-style="width:75%"/>
-<!-- {"left" : 0.77, "top" : 6.51, "height" : 1.18, "width" : 4.83} -->
+<img src = "../../assets/images/terraform/terraform-logo.png"/> <!--{"left" : 0.77, "top" : 6.51, "height" : 1.18, "width" : 4.83} -->
 
 ---
 
@@ -48,8 +46,7 @@ style="width:75%"/>
 * load them up with servers, etc.
 * Set up "Devs" team, set up "Ops" team
 * Let them duke it out
-  <img src = "../../assets/images/terraform/computer-rack-pexels-photo-442150.jpeg"  style="width:75%;"/>
-  <!-- {"left" : 0.77, "top" : 3.91, "height" : 2.87, "width" : 4.31} -->
+  <img src = "../../assets/images/terraform/computer-rack-pexels-photo-442150.jpeg"  style="width:75%;"/> <!-- {"left" : 0.77, "top" : 4.34, "height" : 2.42, "width" : 3.63} -->
 
 ## The Rise of DevOps - Now    
 

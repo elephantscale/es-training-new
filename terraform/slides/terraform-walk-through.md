@@ -25,28 +25,29 @@
     * If you already used up your free tier credits, the examples in the labs should still cost you no more than a few dollars.
 
 ---
-    
+
 ## Setting Up Your AWS Account
-* If you don’t already have an AWS account, head over to https://aws.amazon.com and sign up
+* If you don’t already have an __AWS account__, head over to https://aws.amazon.com and sign up
 * The _only_ thing you should use the root user for is to create other user accounts with more-limited permissions, and then switch to one of those accounts immediately
-* Here are the permissions you will need (for some labs)
-    * AmazonEC2FullAccess
-
-    * AmazonS3FullAcces
-
-    * AmazonDynamoDBFullAccess
-
-    * AmazonRDSFullAccess
-
-    * CloudWatchFullAccess
-
-    * IAMFullAccess
-
-* If you are using an existing AWS account, it must have a Default VPC in it. 
-* If the instructor provided a student account, you can use that    
+* If you are using an existing AWS account, it must have a __Default VPC__ in it.
+* If the instructor provided a student account, you can use that   
+ 
+![](../../assets/images/terraform/add-user.png) 
 Notes:
 
----         
+---
+
+## Giving AWS Permissions
+* Here are the permissions you will need (for some labs)
+    * AmazonEC2FullAccess
+    * AmazonS3FullAcces
+    * AmazonDynamoDBFullAccess
+    * AmazonRDSFullAccess
+    * CloudWatchFullAccess
+    * IAMFullAccess
+* For simplicity, you can give your user admin permissions
+![](../../assets/images/terraform/user-permissions.png)
+             
 ## Install Terraform
 
 * Download the `terraform` executable from the [Terraform home page](https://www.terraform.io/)
@@ -62,11 +63,11 @@ Notes:
 
 * Ubuntu example
 
- 
+
     Terraform v0.12.20
-    
+
     Your version of Terraform is out of date! The latest version
-    is 0.12.24. You can update by downloading from 
+    is 0.12.24. You can update by downloading from
     https://www.terraform.io/downloads.html
 
 * OK... Update [here](https://www.howtoforge.com/how-to-install-terraform-on-ubuntu-1804/)
@@ -83,44 +84,36 @@ Notes:
 
 ## Connect to AWS
 
-* Set up AWS credentials
+* Way 1: Set up AWS credentials
 
-```
-$ export AWS_ACCESS_KEY_ID=(your access key id)
-$ export AWS_SECRET_ACCESS_KEY=(your secret access key)
-```
+`$export AWS_ACCESS_KEY_ID=(key id)`
 
-*
+`$export AWS_SECRET_ACCESS_KEY=(secret access key)`
+
 * This will only give you the setup for this shell
 * To make it work after reboot, put it into `.bashrc`
 
 ```
-    vi .bashrc 
+    vi ~/.bashrc
 ```
 
+* Way 2
 * Terraform supports the same authentication mechanisms as all AWS CLI and SDK tools
 * Therefore, it’ll also be able to use credentials in $HOME/.aws/credentials
     * These are automatically generated if you run the `configure` command on the AWS CLI, or IAM
 
 ---
-## Lab: Terraform Hello World
-
-* Please do this lab 
-* `code/terraform/00-preface/hello-world`
-* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/00-preface/hello-world)
-
----
 
 ## Prepare to Deploy a Server
 
-* Create an empty folder
+* Create an empty folder, `lab01`
 * Put in a file called `main.tf`
 * Put in there (it means what it says)
 
       provider "aws" {
         region = "us-east-2"
       }
-      
+
 * Now added resources      
 
 ![](../../assets/images/terraform/terraform-resources.png)
@@ -133,16 +126,16 @@ $ export AWS_SECRET_ACCESS_KEY=(your secret access key)
        ami           = "ami-0c55b159cbfafe1f0"
        instance_type = "t2.micro"
      }
-     
+
 * ami
-    * The Amazon Machine Image (AMI) to run on the EC2 Instance. 
-    * You can find free and paid AMIs in the AWS Marketplace 
+    * The Amazon Machine Image (AMI) to run on the EC2 Instance.
+    * You can find free and paid AMIs in the AWS Marketplace
     * or create your own using tools such as Packer
     * This ami parameter to the ID of an Ubuntu 18.04 AMI in us-east-2. This AMI is free to use
 
 * instance_type
     * The type of EC2 Instance to run
-    * Each type of EC2 Instance provides a different amount of CPU, memory, disk space, and networking capacity. The EC2 Instance Types page lists all the available options 
+    * Each type of EC2 Instance provides a different amount of CPU, memory, disk space, and networking capacity. The EC2 Instance Types page lists all the available options
     * t2.micro, which has one virtual CPU, 1 GB of memory, and is part of the AWS free tier
 
 ---
@@ -152,9 +145,9 @@ $ export AWS_SECRET_ACCESS_KEY=(your secret access key)
 * Terraform supports dozens of providers
 * Each of which supports dozens of resources
 * Each resource has dozens of arguments
-* We recommend using the documentation. 
+* We recommend using the documentation.
     * Here is an [example for ami](https://www.terraform.io/docs/providers/aws/r/instance.html)
-    
+
 * Now run `terraform init`
 
 ---
@@ -166,7 +159,7 @@ $ export AWS_SECRET_ACCESS_KEY=(your secret access key)
 ## Result of "terraform plan"
 
 ```
-$ terraform plan Refreshing 
+$ terraform plan Refreshing
 Terraform state in-memory prior to plan...
 The refreshed state will be used to calculate this plan, but will not be
 persisted to local or remote state storage.
@@ -220,20 +213,28 @@ aws_instance.example: Still creating... [20s elapsed]
 aws_instance.example: Creation complete after 24s [id=i-0a4dfc4992739cb6e]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
- 
+
 ```
 ---
 ## Verify the Deployment Result
 
 * Go to AWS dashboard
-* Verify that the server was created
+* Verify that the server was indeed created
 
 
 ![](../../assets/images/terraform/terraform-apply-01.png)
 ---
 
-## Let Us Give Our Server a Name
+## Lab: Terraform Hello World
 
+* Please do this lab
+* `code/terraform/00-preface/hello-world`
+* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/00-preface/hello-world)
+
+---
+## Next Step
+
+* Let's give our server a name tag
 * Add to your `main.tf`
     * (remove the previous server definition)
 
@@ -289,7 +290,7 @@ nohup busybox httpd -f -p 8080 &
 
 ## Wait! One More Thing!
 
-* By default, AWS does not allow any incoming or outgoing traffic from an EC2 Instance. 
+* By default, AWS does not allow any incoming or outgoing traffic from an EC2 Instance.
 * To allow the EC2 Instance to receive traffic on port 8080, you need to create a security group:
 * Creates a new resource called `aws_security_group`
 
@@ -312,7 +313,7 @@ resource "aws_security_group" "instance" {
     * on port 8080 from the CIDR block 0.0.0.0/0
 * CIDR blocks are a concise way to specify IP address ranges
 * For example
-    * a CIDR block of 10.0.0.0/24 
+    * a CIDR block of 10.0.0.0/24
     * represents all IP addresses between 10.0.0.0 and 10.0.0.255
 * The CIDR block 0.0.0.0/0 is an IP address range that includes all possible IP addresses, so this security group allows incoming requests on port 8080 from any IP
 
@@ -341,7 +342,7 @@ In our case
 
 aws_security_group.instance.id
 ```
-    
+
 ## Altogether
 
 ![](../../assets/images/terraform/terraform-example-01.png)
@@ -395,15 +396,15 @@ Hello, World
 * Terraform
     * Parses these dependencies
     * builds a dependency graph from them
-    * uses that to automatically determine in which order it should create resources 
-    
+    * uses that to automatically determine in which order it should create resources
+
 * To see the dependencies, you use the command
 
 ```shell script
      terraform graph
 ```
 ---
-    
+
 ## Terraform Graph Output  
 ![](../../assets/images/terraform/graph.dot.png)
 
@@ -411,15 +412,15 @@ Hello, World
 
 ## Terraform Graph Visual
 
-* Use a desktop app such as Graphviz or 
+* Use a desktop app such as Graphviz or
 * webapp like [GraphvizOnline](http://dreampuf.github.io/GraphvizOnline)
 ![](../../assets/images/terraform/graph.png)  
 ---
 
 ## Lab: Server Deployment
 
-* Please do this lab: 
-* `code/terraform/01-why-terraform/web-server/step1/` 
+* Please do this lab:
+* `code/terraform/01-why-terraform/web-server/step1/`
 * [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step1)
 * In this lab, we practice server deployment
 ---
@@ -432,7 +433,7 @@ Hello, World
     * These have IP addresses that can be accessed only from within the VPC and not from the public internet
 ![](../../assets/images/terraform/photo-of-guy-fawkes-mask-with-red-flower-on-top-on-hand-38275.jpg)
 
-Notes: 
+Notes:
 
 Source: https://www.pexels.com/
 ---      
@@ -448,8 +449,8 @@ Source: https://www.pexels.com/
     * every piece of knowledge must have a single, unambiguous, authoritative representation within a system
 
 ![](../../assets/images/terraform/close-up-close-up-view-dry-environment-141489.jpg)
-        
-Notes: 
+
+Notes:
 
 Source: https://www.pexels.com/
 ---   
@@ -467,7 +468,7 @@ variable "NAME" {
 * default, or use these ways:
     * passing it in at the command line (using the -var option)
     * via a file (using the -var-file option)
-    * via an environment variable 
+    * via an environment variable
 
 * type
     * enforce type constraints on the variables a user passes in
@@ -478,7 +479,7 @@ variable "NAME" {
 ## Examples of Terraform Input Variables
 
 * Input variable that checks that the value you pass in is a number:
-  
+
 ```shell script
 
   variable "number_example" {
@@ -491,7 +492,7 @@ variable "NAME" {
 ## Examples of Terraform Input Variables
 
 * List input variable with all numbers
-  
+
 ```shell script
 
   variable "list_numeric_example" {
@@ -566,7 +567,7 @@ var.server_port
     * terraform plan -var "server_port=8080"
     * export TF_VAR_server_port=8080
     * Supply a default
-        
+
 ---
 ## How to Use Your Variable
 
@@ -608,20 +609,20 @@ user_data = <<-EOF
 * Additional variables
 * description
     * It is always a good idea to document
-  
+
 * sensitive
     * true will instruct Terraform not to log this output at the end of terraform apply
     * For sensitive material or secrets such as passwords or private keys
-    
+
 ```shell script
 output "<NAME>" {
   value = <VALUE>
   [CONFIG ...]
 }
 ```
-    
+
 ---
-## Output Variable For Our Script 
+## Output Variable For Our Script
 
 ```shell script
 output "public_ip" {
@@ -632,7 +633,7 @@ output "public_ip" {
 ---
 ## Lab: Configure Server Port
 
-* Please do this lab 
+* Please do this lab
 * `code/terraform/01-why-terraform/web-server/step2`
 * [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step2)
 * In this lab, we practice setting up Terraform variables
@@ -650,7 +651,7 @@ output "public_ip" {
     * Auto-scaling group (ASG)
     * VPC
     * Load balancer
-    
+
 ![](../../assets/images/terraform/bigmusclet.png)    
 ---
 
@@ -662,12 +663,12 @@ output "public_ip" {
 ## ASG Described in Terraform
 
 * To create an ASG, first describe the instance that goes into it
-    * Create a launch configuration 
-    * The `aws_launch_configuration` resource 
-        * uses almost exactly the same parameters as the `aws_instance resource` 
-        * ami is now image_id 
+    * Create a launch configuration
+    * The `aws_launch_configuration` resource
+        * uses almost exactly the same parameters as the `aws_instance resource`
+        * ami is now image_id
         * vpc_security_group_ids is now security_groups
-        * put this instead of 
+        * put this instead of
 
 ```shell script
 resource "aws_launch_configuration" "example" {
@@ -692,7 +693,7 @@ resource "aws_launch_configuration" "example" {
 
 ```shell script
 resource "aws_autoscaling_group" "example" {
-  launch_configuration = 
+  launch_configuration =
     aws_launch_configuration.example.name
 
   min_size = 2
@@ -708,10 +709,10 @@ resource "aws_autoscaling_group" "example" {
 
 Notes:
 
-* The use of `name` leads to a problem: 
-launch configurations are immutable, so if you change any parameter of your launch configuration, 
-Terraform will try to replace it. Normally, when replacing a resource, 
-Terraform deletes the old resource first and then creates its replacement, 
+* The use of `name` leads to a problem:
+launch configurations are immutable, so if you change any parameter of your launch configuration,
+Terraform will try to replace it. Normally, when replacing a resource,
+Terraform deletes the old resource first and then creates its replacement,
 but because your ASG now has a reference to the old resource, Terraform won’t be able to delete it.
 
 * To solve this problem, you can use a lifecycle setting, see next slide.
@@ -719,12 +720,12 @@ but because your ASG now has a reference to the old resource, Terraform won’t 
 
 ## "Lifecycle" Setting
 
-* Use `create_before_destroy` 
+* Use `create_before_destroy`
 * If you set `create_before_destroy` to true
     * Terraform will invert the order in which it replaces resources
     * create the replacement resource first
     * then deleting the old resource
-    
+
 ```shell script
 resource "aws_launch_configuration" "example" {
   image_id        = "ami-0c55b159cbfafe1f0"
@@ -833,7 +834,7 @@ resource "aws_autoscaling_group" "example" {
 * Solution
     *  deploy a load balancer to distribute traffic across your servers    
 * Advantage
-    * highly available and scalable 
+    * highly available and scalable
 * ELB to the rescue
     * Amazon’s Elastic Load Balancer (ELB) service    
 ![](../../assets/images/terraform/elb.png)
@@ -849,7 +850,7 @@ resource "aws_autoscaling_group" "example" {
 
 *  Classic Load Balancer (CLB)
     * This is the “legacy” load balancer that predates both the ALB and NLB. It can handle HTTP, HTTPS, TCP, and TLS traffic, but with far fewer features than either the ALB or NLB. Operates at both the application layer (L7) and transport layer (L4) of the OSI model.
-    
+
 ---
 ## Application Load Balancer (ALB)
 
@@ -915,7 +916,7 @@ resource "aws_security_group" "alb" {
 ```
 
 ---
-## "aws_lb resource" to Use Our Security Group 
+## "aws_lb resource" to Use Our Security Group
 
 ```shell script
 resource "aws_lb" "example" {
@@ -951,8 +952,8 @@ resource "aws_lb_target_group" "asg" {
 
 ## What the Target Group Do?
 - health check your Instances by periodically sending an HTTP request to each Instance
-- will consider the Instance “healthy” only if the Instance returns a response that matches the configured matcher 
-- we told the matcher to look for a 200 OK response 
+- will consider the Instance “healthy” only if the Instance returns a response that matches the configured matcher
+- we told the matcher to look for a 200 OK response
 the target group will automatically stop sending traffic to unhealthy instance
 ---
 
@@ -1020,9 +1021,8 @@ output "alb_dns_name" {
 
 ## Lab: Deploy a Cluster with Load Balancer
 
-* Please do this lab 
+* Please do this lab
 * `code/terraform/01-why-terraform/web-server/step3`
 * [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step3)
 * In this lab, we practice setting up a complete Terraform architecture
 ---
-
