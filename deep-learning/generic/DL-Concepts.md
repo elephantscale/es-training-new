@@ -9,13 +9,15 @@
 
 ## NN Concepts (Overview)
 
- * Learning rate, Loss function, Cost
-
- * Batch size, epoch, iterations
+ * Training a neural network
 
  * Backpropagation
 
+ * Batch size, epoch, iterations
+
  * Activation Functions
+
+ * Learning rate, Loss function, Cost
 
  * Vanishing / Exploding gradient problem
 
@@ -28,11 +30,11 @@
 
 ## Data Instance / Features
 
- * **Sample** is a single row of data
- * Sample = instance / observation / input vector / feature vector
- * Each sample has **inputs (vectors) and output**
- * Algorithm makes a prediction from inputs, and compares the prediction with actual (expected) output
- * In the following example, we have 5 data points / samples (instances 1 - 5)
+* **Sample** is a single row of data
+* Sample = instance / observation / input vector / feature vector
+* Each sample has **inputs (vectors) and output**
+* Algorithm makes a prediction from inputs, and compares the prediction with actual (expected) output
+* In the following example, we have 5 data points / samples (instances 1 - 5)
     - And 3 dimensional input / features: Inputs A,B,C
 
  <br/>
@@ -87,6 +89,185 @@ Notes:
 - You keep sending the meal back until they get your order right!
 
 - This happens until every one's order is cooked correctly!!
+
+
+---
+
+# Backpropagation
+
+---
+
+## Difficulty in Training Neural Networks
+
+- In early days (1980s) neural networks' parameters were tuned by hand by experts
+
+- Hand engineering required a lot of knowledge and effort; and usually a very very slow process
+
+- Can the networks be trained automatically ?
+
+- Enter __backpropagation__
+
+<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/><!-- {"left" : 0.61, "top" : 4.43, "height" : 2.97, "width" : 9.04} -->
+
+
+
+---
+
+## Backpropagation
+
+* Backpropagation algorithm was proposed in 1970s
+
+* But it's usefulness wasn't appreciated until a seminal paper in 1986.  
+
+* **"Learning representations by back-propagating errors"**   
+    by  [David Rumelhart](http://en.wikipedia.org/wiki/David_Rumelhart), [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/), and [Ronald Williams](http://en.wikipedia.org/wiki/Ronald_J._Williams)   
+ ([PDF](http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf), [Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Learning+representations+by+back-propagating+errors&btnG=))
+
+* This paper showed, how backpropagation can be an effective way to train neural networks.  And it worked much faster than previous approaches.
+
+* This enabled neural networks to solve difficult problems that were unsolvable before
+
+* This kicked started the current research boom in neural nets
+
+
+
+Notes:   
+- http://neuralnetworksanddeeplearning.com/chap2.html
+
+---
+
+## Backpropagation Process: Forward Pass
+
+ * During training phase, training data is fed to network
+
+ * Neurons in each layer calculate output
+
+<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:35%;"/><!-- {"left" : 2.04, "top" : 3.19, "height" : 4.18, "width" : 6.17} -->
+
+
+
+---
+
+## Backpropagation Process: Prediction
+
+ * Network predicts an outcome
+
+ * This prediction is not usually the same as expected outcome
+
+ * Then it measures the error (networks output (prediction) vs. the expected output)
+
+
+<img src="../../assets/images/deep-learning/backpropagation-2.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.01, "height" : 3.06, "width" : 8.21} -->
+
+
+---
+## Backpropagation Process: Backward Pass
+
+ * It then computes how much each neuron in the last hidden layer contributed to each output neuron's error
+
+ * And the network weights are adjusted accordingly to minimize the error
+
+
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:50%;"/><!-- {"left" : 1.44, "top" : 3.78, "height" : 4.13, "width" : 7.36} -->
+
+
+---
+
+## Backpropagation: Backward Pass
+
+ * It traverses the network in reverse, computing errors from previous layer
+    - until it reaches the input layer
+    - this is called 'reverse pass'
+    - The reverse pass measures the error gradient across all the connection weights in the network
+    - hence called **back propagation**
+
+ * During the last step algorithm applies 'Gradient Descent' algorithm on connection weights to tweak them
+
+<img src="../../assets/images/deep-learning/backpropagation-4.png" style="width:45%;"/><!-- {"left" : 2.07, "top" : 5.24, "height" : 3.1, "width" : 6.1} -->
+
+
+
+
+---
+
+## Backpropagation Math
+
+<img src="../../assets/images/icons/math-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="25%"/><!-- {"left" : 6.15, "top" : 1.14, "height" : 2.58, "width" : 3.86} -->
+
+ * Given a cost function `C`
+
+ * weight `w` in the network
+
+ * backpropagation uses partial derivative of  
+`∂C/∂w`
+
+ * This tells us how quickly cost `C` changes relative to weight `w`
+
+ * For detailed math please see these links:
+    - http://neuralnetworksanddeeplearning.com/chap2.html
+
+---
+
+## Backpropagation Summary
+
+ * For each training instance the backpropagation algorithm first makes a prediction (forward pass)
+
+ * Measures the error (prediction vs. output)
+
+ * Then traverses each layer in reverse to measure the error contribution from each  connection (reverse pass)
+
+ * And finally slightly tweaks the connection weights to reduce the error (Gradient Descent step).
+
+
+Notes:  
+- https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c
+- http://neuralnetworksanddeeplearning.com/chap2.html
+
+---
+## Backpropagation Demos
+
+<!-- TODO shiva -->
+
+ * **Animation (Regression)** : [link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
+
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:35%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+
+ * **Animation (Classification)** :
+  [link-youtube](https://youtu.be/sLsCN9ZL9RI), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4)
+
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" style="width:40%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+
+---
+
+## Backpropagation Demos
+
+ * [Demo 1: from Google](https://google-developers.appspot.com/machine-learning/crash-course/backprop-scroll/)
+
+ * [Demo 2](https://www.youtube.com/watch?v=46Jzu-xWIBk) - from Geoffrey Hinton himself !  (~12 mins)
+
+ * [Demo 3](https://www.youtube.com/watch?v=Ilg3gGewQ5U)  - Goes through pretty good details (~14 mins)
+
+<img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-1.png" alt="XXX image missing" style="width:12%;"/><!-- {"left" : 1.6, "top" : 3.3, "height" : 3.7, "width" : 1.69} --> &nbsp; <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-3.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/> &nbsp; <!-- {"left" : 3.6, "top" : 4.1, "height" : 1.6, "width" : 2.76} --> <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-2.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/><!-- {"left" : 6.95, "top" : 3.77, "height" : 2.25, "width" : 2.68} -->
+
+
+---
+
+# Controlling Training
+
+---
+
+## Controlling Training
+
+* During training, data goes back and forth through the network
+    - Forward passes are for prediction
+    - Backward passes are for error correction
+
+* The following parameters control how data flows through the network
+    - Epoch
+    - Batch size
+    - Iteration
+
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:35%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
 
 
 ---
@@ -213,152 +394,6 @@ for e  in number_of_epochs {
 
 ---
 
-# Backpropagation
-
----
-
-## Difficulty in Training Neural Networks
-
-- In early days (1980s) neural networks' parameters were tuned by hand by experts
-
-- Hand engineering required a lot of knowledge and effort; and usually a very very slow process
-
-- Can the networks be trained automatically ?
-
-- Enter __backpropagation__
-
-<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/><!-- {"left" : 0.61, "top" : 4.43, "height" : 2.97, "width" : 9.04} -->
-
-
-
----
-
-## Backpropagation
-
-* Backpropagation algorithm was proposed in 1970s
-
-* But it's usefulness wasn't appreciated until a seminal paper in 1986.  
-
-* **"Learning representations by back-propagating errors"**   
-    by  [David Rumelhart](http://en.wikipedia.org/wiki/David_Rumelhart), [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/), and [Ronald Williams](http://en.wikipedia.org/wiki/Ronald_J._Williams)   
- ([PDF](http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf), [Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Learning+representations+by+back-propagating+errors&btnG=))
-
-* This paper showed, how backpropagation can be an effective way to train neural networks.  And it worked much faster than previous approaches.
-
-* This enabled neural networks to solve difficult problems that were unsolvable before
-
-* This kicked started the current research boom in neural nets
-
-
-
-Notes:   
-- http://neuralnetworksanddeeplearning.com/chap2.html
-
----
-
-## Backpropagation Process: Forward Pass
-
- * During training phase, training data is fed to network
-
- * Neurons in each layer calculate output
-
-<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:50%;"/><!-- {"left" : 2.04, "top" : 3.19, "height" : 4.18, "width" : 6.17} -->
-
-
-
----
-
-## Backpropagation Process: Prediction
-
- * Network predicts an outcome
-
- * This prediction is not usually the same as expected outcome
-
- * Then it measures the error (networks output (prediction) vs. the expected output)
-
-
-<img src="../../assets/images/deep-learning/backpropagation-2.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.01, "height" : 3.06, "width" : 8.21} -->
-
-
----
-## Backpropagation Process: Backward Pass
-
- * It then computes how much each neuron in the last hidden layer contributed to each output neuron's error
-
- * And the network weights are adjusted accordingly to minimize the error
-
-
-<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:50%;"/><!-- {"left" : 1.44, "top" : 3.78, "height" : 4.13, "width" : 7.36} -->
-
-
----
-
-## Backpropagation: Backward Pass
-
- * It traverses the network in reverse, computing errors from previous layer
-    - until it reaches the input layer
-    - this is called 'reverse pass'
-    - The reverse pass measures the error gradient across all the connection weights in the network
-    - hence called **back propagation**
-
- * During the last step algorithm applies 'Gradient Descent' algorithm on connection weights to tweak them
-
-<img src="../../assets/images/deep-learning/backpropagation-4.png" style="width:45%;"/><!-- {"left" : 2.07, "top" : 5.24, "height" : 3.1, "width" : 6.1} -->
-
-
-
-
----
-
-## Backpropagation Math
-
-<img src="../../assets/images/icons/math-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="25%"/><!-- {"left" : 6.15, "top" : 1.14, "height" : 2.58, "width" : 3.86} -->
-
- * Given a cost function `C`
-
- * weight `w` in the network
-
- * backpropagation uses partial derivative of  
-`∂C/∂w`
-
- * This tells us how quickly cost `C` changes relative to weight `w`
-
- * For detailed math please see these links:
-    - http://neuralnetworksanddeeplearning.com/chap2.html
-
----
-
-## Backpropagation Summary
-
- * For each training instance the backpropagation algorithm first makes a prediction (forward pass)
- * Measures the error (prediction vs. output)
- * Then traverses each layer in reverse to measure the error contribution from each  connection (reverse pass)
- * And finally slightly tweaks the connection weights to reduce the error (Gradient Descent step).
- * [Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.gif)
-
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:50%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
-
-
-
-Notes:  
-- https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c
-- http://neuralnetworksanddeeplearning.com/chap2.html
-
----
-
-## Backpropagation Demos
-
- * [Demo 1: from Google](https://google-developers.appspot.com/machine-learning/crash-course/backprop-scroll/)
-
- * [Demo 2](https://www.youtube.com/watch?v=46Jzu-xWIBk) - from Geoffrey Hinton himself !  (~12 mins)
-
- * [Demo2](https://www.youtube.com/watch?v=Ilg3gGewQ5U)  - Goes through pretty good details (~14 mins)
-
-<img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-1.png" alt="XXX image missing" style="background:white;max-width:100%" height="20%" width="15%"/><!-- {"left" : 1.6, "top" : 3.3, "height" : 3.7, "width" : 1.69} --> &nbsp; <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-3.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/> &nbsp; <!-- {"left" : 3.6, "top" : 4.1, "height" : 1.6, "width" : 2.76} --> <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-2.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/><!-- {"left" : 6.95, "top" : 3.77, "height" : 2.25, "width" : 2.68} -->
-
-
----
-
 
 # Activation Functions
 
@@ -369,6 +404,26 @@ Notes:
 # Optimizers
 
 [Optimizers](DL-Optimizers.md)
+
+---
+
+## Lab:
+
+<img src="../../assets/images/icons/individual-labs.png"  style="width:25%;float:right;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+
+
+ *  **Overview:**  
+     - In this lab, we will do a hello world for TensorFlow and Keras.
+
+ *  **Approximate time:**   
+     - 15-20 minutes
+
+ *  **Instructions**
+     - Follow  **tensorflow-1** lab
+     - Follow  **tensorflow-2** lab
+
+
+Notes:
 
 ---
 
