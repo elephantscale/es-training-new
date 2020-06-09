@@ -1,6 +1,6 @@
 # State of AI NLP
 
-<img src="../../assets/images/AI/3rd-party/NLP-1.jpg" style="width:45%;"/>  <!-- {"left" : 4.7, "top" : 6.84, "height" : 2.02, "width" : 3.54} -->
+<img src="../../assets/images/AI/3rd-party/nlp-1.jpg" style="width:45%;"/>  <!-- {"left" : 4.7, "top" : 6.84, "height" : 2.02, "width" : 3.54} -->
 
 
 ---
