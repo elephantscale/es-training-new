@@ -8,44 +8,44 @@
 
 
 ## Course outline
-./deep-learning-with-tensorflow-keras-2days.pdf
+../deep-learning-with-tensorflow-keras-2days.pdf
 
 ## About
-./generic/About-Deep-Learning-Class.md
+../generic/About-Deep-Learning-Class.md
 
 ## Resources
-../machine-learning/generic/ML-Resources.md
+../../machine-learning/generic/ML-Resources.md
 
 ## ML Intro
-../machine-learning/generic/Machine-Learning-Primer.md
+../../machine-learning/generic/Machine-Learning-Primer.md
 
 ## Get the labs setup
-../machine-learning/generic/Labs-Prep.md
+../../machine-learning/generic/Labs-Prep.md
 
 
 ## TensorFlow
-./tf2/Tensorflow-Intro.md
+./Tensorflow-Intro.md
 
 # Keras
-keras/Keras-1__Intro.md
+../keras/Keras-1__Intro.md
 
 
 ## Introduce Neural Networks
-./generic/DL-Neural-Networks.md
+../generic/DL-Neural-Networks.md
 
 ## Get some theory
-generic/DL-Concepts.md
+../generic/DL-Concepts.md
 
-keras/Keras-2__API.md
+../keras/Keras-2__API.md
 
 
 ## TransferLearning
-# ./generic/DL-Transfer-Learning.md
+# ../generic/DL-Transfer-Learning.md
 
 ## ---- Reference only ----
 
 # TensorFlow Playground
-./generic/DL-Playground.md
+../generic/DL-Playground.md
 
 ## ML-Concepts
-../machine-learning/generic/ML-Concepts-All.md
+../../machine-learning/generic/ML-Concepts-All.md
