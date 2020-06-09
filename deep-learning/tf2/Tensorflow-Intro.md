@@ -366,8 +366,8 @@ Notes:
 <img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.35, "width" : 8.21} -->
 
 
-Notes: 
- 
+Notes:
+
 - RMDA : Remote Memory Direct Access  
 - gRPC : RPC protocol
 
@@ -463,6 +463,57 @@ Notes:
 
 <img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;width:50%;"/> <!-- {"left" : 1.02, "top" : 3.86, "height" : 4.56, "width" : 8.21} -->
 
+
+---
+
+## TF2 Example
+
+* Here we use high level **`tf.keras`** API
+
+* Focus on building the network; not low level operations
+
+```python
+# Simple feed forward network for regression
+
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.layers import Dense, Sequential
+
+# create a model
+model = Sequential()
+
+# And add layers
+model.add (Dense(units=10 activation=tf.nn.relu, input_shape=[3]))
+
+model.add(Dense(units=5, activation=tf.nn.relu))
+
+model.add(Dense(units=1))
+
+
+model.compile(loss='mean_squared_error',
+              optimizer= 'adam',
+              metrics=['mean_absolute_error', 'mean_squared_error'])
+
+
+# training will take time
+model.fit(training_data)
+
+# prediction is quick
+model.predict(test_data)
+
+```
+
+---
+
+## Backward Compatibility
+
+* Honestly, for most of us, there is no real reason to use V1 APIs
+
+* In TF2, there is a backward compatible module **`tf.compat.v1`** available;  This has all the older APIs
+
+* TF2 comes with a [automatic conversion script](https://www.tensorflow.org/guide/upgrade) to port v1 --> v2
+
+* Read [migration guide](https://www.tensorflow.org/guide/migrate) for details
 
 ---
 
@@ -647,7 +698,7 @@ Notes:
 
 ## Lab: Hello World in TensorFlow
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="width:25%;float:right;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
 
 
  *  **Overview:**  
