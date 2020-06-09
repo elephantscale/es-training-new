@@ -308,7 +308,7 @@ Image source: https://timdettmers.com/2015/03/26/convolution-deep-learning/
 ## Convolutional Layer
 
 <img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:30%;float:right;" /><!-- {"left" : 7.64, "top" : 1, "height" : 2.42, "width" : 2.34} -->
- 
+
 
 - Here we represent our neurons in a 2D grid format (instead of linear before), this makes visualizing connections easier
 
@@ -558,7 +558,7 @@ Notes:
 * Here we see
     - 3 channels x 5 filters  = 15 feature maps
 
-<img src="../../assets/images/deep-learning/CNN.png"  style="width:70%;" /> 
+<img src="../../assets/images/deep-learning/CNN.png"  style="width:70%;" />
 
 
 ---
@@ -594,7 +594,7 @@ Notes:
 
 ## Stacking Multiple Feature Maps (Contd.)
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png"  style="width:50%;float:right;" /><!-- {"left" : 5.6, "top" : 1.18, "height" : 2.85, "width" : 4.36} --> 
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png"  style="width:50%;float:right;" /><!-- {"left" : 5.6, "top" : 1.18, "height" : 2.85, "width" : 4.36} -->
 
 
  * Images that are greyscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
@@ -611,7 +611,7 @@ Notes:
 
 ## Stacking Multiple Feature Maps (Contd.)
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" style="width:40%;float:right;" /><!-- {"left" : 5.83, "top" : 1.18, "height" : 2.75, "width" : 4.21} --> 
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" style="width:40%;float:right;" /><!-- {"left" : 5.83, "top" : 1.18, "height" : 2.75, "width" : 4.21} -->
 
  * The fact that all neurons in a feature map has just one set of parameters dramatically reduces the number of parameters needed.
 
@@ -735,7 +735,7 @@ Notes:
 
 ## Do We Need Pooling?
 
-<img src="../../assets/images/deep-learning/convolution-process-stride-1.png" style="width:30%;float:right;" /> <!-- {"left" : 7.65, "top" : 1.02, "height" : 2.28, "width" : 2.46} --> 
+<img src="../../assets/images/deep-learning/convolution-process-stride-1.png" style="width:30%;float:right;" /> <!-- {"left" : 7.65, "top" : 1.02, "height" : 2.28, "width" : 2.46} -->
 
 <img src="../../assets/images/deep-learning/pooling-2.png" a style="width:30%;float:right;clear:both;" /><!-- {"left" : 7.65, "top" : 3.4, "height" : 2.28, "width" : 2.46} -->
 
@@ -833,7 +833,9 @@ Notes:
 - It's quite likely that the initial iteration would have close to 0% accuracy. Repeating the process several times, however, can yield a highly accurate model (> 90%).
 
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif"  style="width:50%;" /> <!-- {"left" : 2.37, "top" : 5.56, "height" : 2.76, "width" : 5.52} -->
+ * **Animation** : [link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
+
+<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:35%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
 
 
 ---
