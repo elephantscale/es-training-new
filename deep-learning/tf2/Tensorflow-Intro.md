@@ -674,8 +674,8 @@ for i in tf.range(input_data.shape[0]): # Note the For loop
 
 
 ```bash
-$ (sudo) pip install tensorflow keras
-$ (sudo) pip install tensorflow-gpu keras  # For GPU
+$ (sudo) pip install tensorflow
+$ (sudo) pip install tensorflow-gpu # For GPU
 ```
 <!-- {"left" : 0, "top" : 4.08, "height" : 0.74, "width" : 8.71} -->
 
@@ -684,8 +684,8 @@ $ (sudo) pip install tensorflow-gpu keras  # For GPU
  * Anaconda: Now officially supported
 
 ```bash
-$ conda install tensorflow keras
-$ conda install tensorflow-gpu keras  # For GPU
+$ conda install tensorflow
+$ conda install tensorflow-gpu # For GPU
 ```
 <!-- {"left" : 0, "top" : 5.63, "height" : 0.74, "width" : 8.71} -->
 
@@ -716,4 +716,14 @@ Notes:
 
 ---
 
-## Review and Questions
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+
+* Let's go over what we have covered so far
+
+* **Questions**
+    - What hardware platforms does TF support?
+    - What are some new features in TF2?

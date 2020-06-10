@@ -26,6 +26,7 @@ Notes:
 
 
 * Keras ([Keras.io](https://keras.io/)) - is a high level neural networks API
+* It was developed by a Google engineer, Francois Chollet
 * Written in Python
 * Works with [Tensorflow](https://github.com/tensorflow/tensorflow)(from Google), [CNTK](https://github.com/Microsoft/cntk)(from Microsoft) and [Theano](https://github.com/Theano/Theano)
 
@@ -138,7 +139,7 @@ https://github.com/keras-team/keras/releases
 
   * Parallelizing Keras
     - Run on multiple GPUs (on a single machine)
-    - Run on[multiple GPUs on Google Cloud cluster](https://cloud.google.com/solutions/running-distributed-tensorflow-on-compute-engine) using distributed Tensorflow
+    - Run on [multiple GPUs on Google Cloud cluster](https://cloud.google.com/solutions/running-distributed-tensorflow-on-compute-engine) using distributed Tensorflow
     - Use [dist keras](https://github.com/cerndb/dist-keras) on Spark engine
 
 <img src="../../assets/images/deep-learning/DL-cluster.png" alt="cluster" style="width:45%;"/><!-- {"left" : 1.66, "top" : 5.73, "height" : 2.94, "width" : 6.94} -->
