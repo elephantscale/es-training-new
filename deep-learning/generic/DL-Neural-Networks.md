@@ -633,16 +633,51 @@ Notes:
 Notes:
 
 
+---
 
+## Quiz: Design Neural Networks
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* **Scenario 1: - We want to predict stock market index  (e.g.  DOW)**
+
+* Inputs: 30 features
+
+* Output: price of index (single value - numeric)
+
+* **Is this a classification or regression?**
+
+* **Design Input/Output layers of NN**
+
+
+<img src="../../assets/images/deep-learning/neural-network-design-1.png" style="width:30%;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+---
+
+## Quiz: Design Neural Networks
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* **Scenario 2: - We want to analyze customer tickets and assign priority**
+
+* Inputs: 10 features selected from 25 total features of a ticket (e.g. ticket topic, keywords ..etc)
+
+* Output: Ticket priority: High / Medium / Low
+
+* **Is this a classification or regression?**
+
+* **Design Input/Output layers of NN**
+
+
+<img src="../../assets/images/deep-learning/neural-network-design-1.png" style="width:30%;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 ---
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
 
 * Let's go over what we have covered so far
 
-* Any questions?
-
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+* **Questions**
