@@ -37,7 +37,7 @@
 ./Tensorflow-CNN.md
 
 ## RNN
-../generic/DL-RNNs.md
+./Tensorflow-RNN.md
 ../generic/DL-LSTMs.md
 
 ## TransferLearning
@@ -50,3 +50,4 @@
 
 ## ML-Concepts
 ../../machine-learning/generic/ML-Concepts-All.md
+../../machine-learning/generic/Feature-Engineering.md
