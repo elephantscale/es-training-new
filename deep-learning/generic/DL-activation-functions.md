@@ -400,33 +400,6 @@ Notes:
 
 
 ---
-## Deciding the Loss and Activation Type Based on the Task
-
-| Classification Type       | Class Mode  | Loss                     | Activation on the last layer |
-|---------------------------|-------------|--------------------------|------------------------------|
-| 1 or 2 class              | binary      | binary_crossentropy      | sigmoid                      |
-| Multi-class, single label | categorical | categorical_crossentropy | softmax                      |
-| Multi-class, multi-label  | categorical | binary_crossentropy      | sigmoid                      |
-
-<!-- {"left" : 0.25, "top" : 1.54, "height" : 2.57, "width" : 9.75} -->
-
-Notes:   
-Source :
-
-
-
----
-
-## Activation Functions Cheatsheet
-
-<img src="../../assets/images/deep-learning/3rd-party/activation-functions-cheat-sheet-1.png" style="width:60%;"/><!-- {"left" : 1.96, "top" : 1.02, "height" : 4.75, "width" : 6.34} -->
-
-
-- source: [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
-
-Notes:
-- source [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
----
 
 ## Activation Functions - Review
 
@@ -440,6 +413,34 @@ Notes:
  * The __Softmax__ activation function is used to output the probability of the result belonging to certain classes.
 
 ---
+## Activation Type Based on the Task
+
+| Problem Type   | Prediction                      | Activation on the last layer |
+|----------------|---------------------------------|------------------------------|
+| Regression     | a number                        | linear, relu                 |
+|                |                                 |                              |
+| Classification | binary (0/1)                    | sigmoid                      |
+|                | Multi-class <br/> (A, B, C , D) | softmax                      |
+
+<!-- {"left" : 0.25, "top" : 1.54, "height" : 2.57, "width" : 9.75} -->
+
+Notes:   
+
+---
+
+
 ## Activation Functions Review
 
 <img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.44, "top" : 2.93, "height" : 3.2, "width" : 9.38} -->
+
+---
+
+## Activation Functions Cheatsheet
+
+<img src="../../assets/images/deep-learning/3rd-party/activation-functions-cheat-sheet-1.png" style="width:60%;"/><!-- {"left" : 1.96, "top" : 1.02, "height" : 4.75, "width" : 6.34} -->
+
+
+- source: [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
+
+Notes:
+- source [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)

@@ -17,7 +17,7 @@
 ---
 
 
-## Understanding Optimzers: A Golf Game Analogy  :-)
+## Understanding Optimizers: A Golf Game Analogy  :-)
 
 <img src="../../assets/images/generic/3rd-party/golf-2b.jpg" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
 

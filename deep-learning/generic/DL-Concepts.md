@@ -388,9 +388,14 @@ for e  in number_of_epochs {
 
 ---
 
-# Loss Functions
+# Loss Functions for Regressions
 
-[../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md](../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md)
+[../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md](../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions)
+
+---
+# Loss Functions for Classifications
+
+[../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md](../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Classifications)
 
 ---
 
@@ -400,6 +405,18 @@ for e  in number_of_epochs {
 [Activation Functions](DL-activation-functions.md)
 
 ---
+## Take-away: Deciding Loss / Activation Functions
+
+| Problem Type   | Prediction                      | Loss Function            | Activation on the last layer |
+|----------------|---------------------------------|--------------------------|------------------------------|
+| Regression     | a number                        | mse, sse, mae            | linear, relu                 |
+|                |                                 |                          |                              |
+| Classification | binary (0/1)                    | binary_crossentropy      | sigmoid                      |
+|                | Multi-class <br/> (A, B, C , D) | categorical_crossentropy | softmax                      |
+
+
+---
+
 
 # Optimizers
 
@@ -407,20 +424,20 @@ for e  in number_of_epochs {
 
 ---
 
-## Lab:
+## Lab: Regression 1 (Billing)
 
 <img src="../../assets/images/icons/individual-labs.png"  style="width:25%;float:right;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
 
 
  *  **Overview:**  
-     - In this lab, we will do a hello world for TensorFlow and Keras.
+     - We will do a simple lab, putting every thing we have learned in practice  
+     (Loss functions, activation functions, optimizers)
 
  *  **Approximate time:**   
-     - 15-20 minutes
+     - 15-30 minutes
 
  *  **Instructions**
-     - Follow  **tensorflow-1** lab
-     - Follow  **tensorflow-2** lab
+     - Follow  **Regression-1** lab
 
 
 Notes:
