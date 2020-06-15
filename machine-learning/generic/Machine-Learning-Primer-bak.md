@@ -132,7 +132,7 @@ Notes:
 
  * Then algorithm predicts spam/no-spam on new email
 
-<img src="../../assets/images/deep-learning/AI-Approach.png" alt="AI-Approach.png" style="width:55%;"/><!-- {"left" : 0.96, "top" : 3.83, "height" : 4.16, "width" : 8.33} -->
+<img src="../../assets/images/machine-learning/rules-vs-AI-1.png" alt="AI-Approach.png" style="width:55%;"/><!-- {"left" : 0.96, "top" : 3.83, "height" : 4.16, "width" : 8.33} -->
 
 
 Notes:

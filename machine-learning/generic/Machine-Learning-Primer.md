@@ -46,103 +46,12 @@ Notes:
 
 ---
 
-## Why Machine Learning Matters?
+# What is Machine Learning?
 
-<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/><!-- {"left" : 0.88, "top" : 1.34, "height" : 4.42, "width" : 8.49} -->
-
-
-[Link](https://www.youtube.com/watch?v=HcqpanDadyQ)
-
-Notes:
-
-https://www.youtube.com/watch?v=HcqpanDadyQ
+[ML-What-is-ML.md](ML-What-is-ML.md)
 
 ---
 
-## What is Machine Learning
-
-<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 7.41, "top" : 1.1, "height" : 3.71, "width" : 2.63} -->
-
-* **"The field of study that gives computers the ability to learn without being explicitly programmed."**  
- -- Arthur Samuel
-
-* Example: Self-driving cars
-
-* Historical approach:  
-Write a massive program to instruct the car to handle all possible scenarios encountered while driving
-    - This is immensely difficult
-
-* AI approach:  
-    - Let AI learn by observing the scenery and your  reactions
-    - Once it learnt enough, let the AI predict the next reaction for a scenary
-
-
-
-Notes:
-
-
----
-
-## Spam Detection - Traditional (Rule Based) Approach
-
-* Here is an example of spam detection rule engine
-
-* The rules are coded by developers
-
-* There could be 100s of 1000s of rules!
-
-```java
-
-if (email.from_ip.one_of("ip1", "ip2", "ip3")) {
-  result = "no-spam"
-}
-else if ( email.text.contains ("free loans", "cheap degrees"))
-{
-  result = "spam"
-}
-
-```
-<!-- {"left" : 0, "top" : 2.81, "height" : 1.98, "width" : 10.25} -->
-
-Notes:
-
-
-
-
----
-
-## Spam Detection - AI Approach
-
-
- * Show the algorithm with spam and non-spam emails
-
- * Algorithm 'learns' which attributes are indicative of spam
-
- * Then algorithm predicts spam/no-spam on new email
-
-<img src="../../assets/images/deep-learning/AI-Approach.png" alt="AI-Approach.png" style="width:55%;"/><!-- {"left" : 0.96, "top" : 3.83, "height" : 4.16, "width" : 8.33} -->
-
-
-Notes:
-
-
----
-
-## How is AI Different from Rule Based Systems
-
- * Rule based systems are static
-    - They are programmed in
-    - They don't learn from data
-
- * AI can learn from data
-     - It gets better every day with more data it sees
-
-<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" alt="Rule-Based-Systems.png" style="width:55%;"/><!-- {"left" : 0.78, "top" : 4.13, "height" : 3.28, "width" : 8.7} -->
-
-
-Notes:
-
----
 
 ## Machine Learning Use Cases
 
