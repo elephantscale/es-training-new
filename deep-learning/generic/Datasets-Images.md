@@ -6,6 +6,8 @@
 
 - [MNIST](http://yann.lecun.com/exdb/mnist/)
 
+- [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist)
+
 - [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 - [ImageNet](http://image-net.org)
@@ -17,20 +19,137 @@
 
 ---
 
-## MNIST Example
+## MNIST
 
-* MNIST Dataset is the "hello world" of deep learning
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg"  style="width:45%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+
+* MNIST Dataset is the "hello world" of image recognition
 
 * 28x28 greyscale scanned digits
+
+* Total 70,000 images
+    - 60,000 training images (26 MB)
+    - 10,000 test images (4.3 MB)
+
+* MNIST is often the first dataset researchers try.  
+ _"If it doesn't work on MNIST, it won't work at all",  
+ "Well, if it does work on MNIST, it may still fail on others."_
 
 * [Reference](http://yann.lecun.com/exdb/mnist/)
 
 
-<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg"  style="width:55%;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
-
-
-
 Notes:
+
+---
+
+## Exploring MNIST
+
+```python
+import tensorflow as tf
+from tensorflow import keras
+import matplotlib.pyplot as plt
+
+(train_images, train_labels), (test_images, test_labels) = keras.datasets.mnist.load_data()
+
+print("train_images shape : ", train_images.shape)
+print("train_labels shape : ", train_labels.shape)
+print("test_images shape : ", test_images.shape)
+print("test_labels shape : ", test_labels.shape)
+# train_images shape :  (60000, 28, 28)
+# train_labels shape :  (60000,)
+# test_images shape :  (10000, 28, 28)
+# test_labels shape :  (10000,)
+
+## Display a sample image
+index = 100
+print("train label [{}] = {} ".format(index, train_labels[index])))
+# train label [100] = 5
+plt.imshow(train_images[index])
+```
+
+<img src="../../assets/images/deep-learning/mnist-2.png"  style="width:20%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+
+* Training images are 28x28 pixel images
+* Labels are numbers:  0 - 9
+* Here we are display 100th image, which is a '5'.  
+See the image and label
+
+---
+
+## Fashion MNIST
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/fashion-mnist-3.png"  style="width:37%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+
+* Fashion MNIST was created as a 'better MNIST'
+    - MNIST is too easy;  Classic ML algorithms can achieve 97% accuracy,  CNNs can achieve 99.7% accuracy!
+
+* Images of 10 fashion items (shirt, sweater, shoe ..etc)
+
+* 28x28 greyscale images
+
+* Total 70,000 images
+    - 60,000 training images (26 MB)
+    - 10,000 test images (4.3 MB)
+
+* Designed as a 'drop in' replacement for MNIST
+
+* [Reference](https://github.com/zalandoresearch/fashion-mnist) |  [bigger image](https://raw.githubusercontent.com/zalandoresearch/fashion-mnist/master/doc/img/fashion-mnist-sprite.png)
+
+---
+
+## Exploring Fashion-MNIST
+
+```python
+import tensorflow as tf
+from tensorflow import keras
+import matplotlib.pyplot as plt
+
+(train_images, train_labels), (test_images, test_labels) = keras.datasets.fashion_mnist.load_data()
+
+print("train_images shape : ", train_images.shape)
+print("train_labels shape : ", train_labels.shape)
+print("test_images shape : ", test_images.shape)
+print("test_labels shape : ", test_labels.shape)
+# train_images shape :  (60000, 28, 28)
+# train_labels shape :  (60000,)
+# test_images shape :  (10000, 28, 28)
+# test_labels shape :  (10000,)
+
+## Display a sample image
+index = 100
+print("train label [{}] = {} ".format(index, train_labels[index])))
+# train label [100] = 8
+plt.imshow(train_images[index])
+```
+
+<img src="../../assets/images/deep-learning/fashion-mnist-4.png"  style="width:20%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+
+* Training images are 28x28 pixel images
+* Labels are numbers:  0 - 9
+* Here we are display 100th image, which is a '8' (handbag).  
+
+---
+
+## Exploring Fashion MNIST
+
+* Why do we use numbers are labels as opposed to 'Dress', 'Coat'
+
+* Numbers are universal; not constrained by languages (English / Japanese ..etc)
+
+| Label | Description |
+|-------|-------------|
+| 0     | T-shirt/top |
+| 1     | Trouser     |
+| 2     | Pullover    |
+| 3     | Dress       |
+| 4     | Coat        |
+| 5     | Sandal      |
+| 6     | Shirt       |
+| 7     | Sneaker     |
+| 8     | Bag         |
+| 9     | Ankle boot  |
 
 ---
 
