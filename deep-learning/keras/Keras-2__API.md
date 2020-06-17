@@ -1343,7 +1343,11 @@ print ("Saving TB logs to : " , tensorboard_logs_dir)
 
 ```python
 ## Step 3: provide tb-callback function during training
-tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=tensorboard_logs_dir, histogram_freq=1)
+tb_callback = tf.keras.callbacks.TensorBoard(log_dir=tensorboard_logs_dir, histogram_freq=1)
+
+model.fit(x, y, epochs=5,
+          callbacks=[tb_callback])  ## <-- here is the linkup
+
 ```
 <!-- {"left" : 0, "top" : 5.76, "height" : 0.5, "width" : 10.25} -->
 
@@ -1388,9 +1392,7 @@ tensorboard-logs/
     - 20 mins
 
 * **Instructions:**
-    - Please follow instructions for
-        - **Metrics-1:** Multiple metrics
-        - **Metrics-2:** TensorBoard
+    - **Metrics-2:** TensorBoard
 
 Notes:
 
@@ -1792,6 +1794,284 @@ sns.heatmap(cm, annot=True, cmap="Reds", fmt='d').plot()
      - Follow instructions for
         - __Classification-1__ : IRIS
         - __Classification-2__ : Propser Loan
+
+---
+
+# Callbacks
+
+---
+
+## Callbacks
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/classification-iris-accuracy-2.png" style="width:40%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+
+* In our previous lab runs we have noticed with increased epochs the network accruacy increases
+
+* However after certain epochs, the accuracy hardly increases
+
+* Here in IRIS classification, after epoch=60 we don't see much improvement in accuracy
+
+* So can we stop training if accuracy doesn't improve?
+
+* **Callbacks** can help!
+
+
+---
+
+## Standard Callbacks
+
+* Tensorflow provides following callbacks
+    - **`EarlyStopping`** : Stop training when a monitored metric has stopped improving
+    - **`ModelCheckpoint`** : Callback to save the Keras model or model weights at some frequency
+    - **`TensorBoard`** : Enable visualizations for TensorBoard.
+    - and more...
+
+* [Callback reference](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/)
+
+---
+
+## Early Stopping
+
+* This can stop training when a metric has stopped improving
+
+* [Reference](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping)
+
+<!-- TODO shiva -->
+
+```python
+
+cb_early_stop = tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', min_delta=0.5, patience=3)
+
+## Arguments
+##    - monitor: metric to monitor;  here it is 'loss'
+##    - min_delta: The minimum change in monitored metric that qualifies as improvement
+##    - patience: number of consecutive epochs where the metric didn't improve
+
+## This callback will stop the training when there is no improvement in
+## the validation accuracy for 3 consecutive epochs.
+
+
+## Supply the callback during training
+history = model.fit (x, y, epochs=100,
+                     callbacks = [cb_early_stop]) ## <-- here
+
+```
+
+---
+
+## Using More Than One Callback
+
+* We can provide more than one callbacks
+
+<!-- TODO shiva -->
+
+```python
+
+## Tensorboard callback
+cb_tensorboard = tf.keras.callbacks.TensorBoard(log_dir='tblogs', histogram_freq=1)
+
+## Early stopping callback
+cb_early_stop = tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', min_delta=0.5, patience=3)
+
+## Supply the callbacks during training
+history = model.fit (x_train, y_train, epochs=100,
+                     callbacks = [cb_tensorboard, cb_early_stop]) ## <-- here
+
+```
+
+---
+
+## Custom Callbacks
+
+* We can also provide our own callbacks!
+
+* Extend **`tf.keras.callbacks.Callback`**
+
+* [Reference](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/Callback)
+
+<!-- TODO shiva -->
+
+```python
+on_epoch_end: logs include `acc` and `loss`, and
+    optionally include `val_loss`
+    (if validation is enabled in `fit`), and `val_acc`
+    (if validation and accuracy monitoring are enabled).
+
+on_batch_begin: logs include `size`,
+    the number of samples in the current batch.
+
+on_batch_end: logs include `loss`, and optionally `acc`
+    (if accuracy monitoring is enabled).
+
+```
+
+---
+
+## Implementing a Custom Callback
+
+<!-- TODO shiva -->
+
+```python
+class CustomCallback(keras.callbacks.Callback):
+    def on_train_begin(self, logs=None):
+        keys = list(logs.keys())
+        print("Starting training; got log keys: {}".format(keys))
+
+    def on_train_end(self, logs=None):
+        keys = list(logs.keys())
+        print("Stop training; got log keys: {}".format(keys))
+
+    def on_epoch_begin(self, epoch, logs=None):
+        keys = list(logs.keys())
+        print("Start epoch {} of training; got log keys: {}".format(epoch, keys))
+
+    def on_epoch_end(self, epoch, logs=None):
+        keys = list(logs.keys())
+        print("End epoch {} of training; got log keys: {}".format(epoch, keys))
+
+    def on_test_begin(self, logs=None):
+        keys = list(logs.keys())
+        print("Start testing; got log keys: {}".format(keys))
+
+    def on_test_end(self, logs=None):
+        keys = list(logs.keys())
+        print("Stop testing; got log keys: {}".format(keys))
+
+
+
+model.fit(x_train, y_train, epochs=2,
+            callbacks=[CustomCallback()])
+```
+
+* Output next slide
+
+---
+
+## Implementing a Custom Callback
+
+```console
+Starting training; got log keys: []
+...
+Start epoch 0 of training; got log keys: []
+...
+
+Start testing; got log keys: []
+...
+Stop testing; got log keys: []
+...
+End epoch 0 of training; got log keys:
+    ['loss', 'mean_absolute_error', 'val_loss', 'val_mean_absolute_error']
+...
+
+Start epoch 1 of training; got log keys: []
+...
+Start testing; got log keys: []
+...
+Stop testing; got log keys: []
+...
+End epoch 0 of training; got log keys:
+    ['loss', 'mean_absolute_error', 'val_loss', 'val_mean_absolute_error']
+
+...
+Stop training; got log keys: []
+```
+
+---
+
+## Implementing a Custom Callback
+
+* We will implement a custom callback that will stop training if a desired accuracy is reached
+
+```python
+class MyCallback(tf.keras.callbacks.Callback):
+
+  def on_epoch_end(self, epoch, logs={}):
+    if(logs.get('accuracy')>0.6):
+      print("\nReached 60% accuracy so cancelling training!")
+      self.model.stop_training = True
+# end class: MyCallback
+
+
+## Supply custom callback
+model.fit(x_train, y_train, epochs=2,
+            callbacks=[MyCallback()])
+```
+
+---
+## Implementing a Custom Callback
+
+```python
+import tensorflow as tf
+
+class myCallback(tf.keras.callbacks.Callback):
+  def on_epoch_end(self, epoch, logs={}):
+    if(logs.get('accuracy')>0.6):
+      print("\nReached 60% accuracy so cancelling training!")
+      self.model.stop_training = True
+
+mnist = tf.keras.datasets.fashion_mnist
+
+(x_train, y_train),(x_test, y_test) = mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+
+callbacks = myCallback()
+
+model = tf.keras.models.Sequential([
+  tf.keras.layers.Flatten(input_shape=(28, 28)),
+  tf.keras.layers.Dense(512, activation=tf.nn.relu),
+  tf.keras.layers.Dense(10, activation=tf.nn.softmax)
+])
+model.compile(optimizer=tf.optimizers.Adam(),
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train, epochs=10, callbacks=[callbacks])
+```
+
+* Output next slide
+* [Reference](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Course%201%20-%20Part%204%20-%20Lesson%204%20-%20Notebook.ipynb)
+
+---
+
+## Implementing a Custom Callback
+
+* We ran training with **`epochs=10`**
+
+* How ever our callback stops training, as the desired accuracy (60%) is reached
+
+```console
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-labels-idx1-ubyte.gz
+...
+
+Epoch 1/10
+1872/1875 [============================>.] - ETA: 0s - loss: 0.4773 - accuracy: 0.8299
+
+Reached 60% accuracy so cancelling training!
+
+1875/1875 [==============================] - 6s 3ms/step - loss: 0.4771 - accuracy: 0.8299
+
+<tensorflow.python.keras.callbacks.History at 0x7f63ad143c88>
+
+```
+
+---
+
+## Lab: Callbacks
+
+<img src="../../assets/images/icons/individual-labs.png" alt="individual-labs.png" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+
+  * **Overview:**
+     - Implement a custom callback
+
+  * **Depends on:**
+     - None
+
+  * **Runtime:**
+     - 20 mins
+
+  * **Instructions:**
+    - __Callback-1__  
 
 ---
 
