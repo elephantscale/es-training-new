@@ -432,6 +432,8 @@ Notes:
 
 - Called 'zero padding'
 
+- This ensures 'corner pixels' are processed properly
+
 <img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png"  style="width:55%;" /> <!-- {"left" : 1.91, "top" : 2.88, "height" : 4.79, "width" : 6.43} -->
 
 ---
@@ -660,6 +662,7 @@ Notes:
 https://en.wikipedia.org/wiki/Kernel_(image_processing)
 
 ---
+
 # Pooling
 ---
 
@@ -806,6 +809,16 @@ Notes:
 
 
 ---
+## Convolutions Further Reading
+
+* Watch this brilliant tutorial series on convolutions by Andrew Ng
+
+* [Link](https://www.youtube.com/watch?v=ArPaAX_PhIs&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=2&t=0s)
+
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
+
+
+---
 
 ## Example Convolutional Network
 
@@ -835,7 +848,7 @@ Notes:
 
  * **Animation** : [link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
 
-<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:35%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:30%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
 
 
 ---

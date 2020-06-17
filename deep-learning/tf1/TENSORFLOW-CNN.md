@@ -16,7 +16,7 @@
 
  * Explain how CNNs differ from ANNs
 
-Notes: 
+Notes:
 
 
 ---
@@ -47,7 +47,7 @@ Notes:
 
 # Convolutions
 
-[Convolutions](../generic/DL-Convolutions.md)
+[Convolutions](../generic/DL-Convolutions-v1.md)
 ---
 
 # CNN in Tensorflow
@@ -64,7 +64,7 @@ Notes:
   * The weights of a convolutional layer are represented as a 4D tensor of shape [fh , fw , fn , fn,]. The bias terms of a convolutional layer are simply represented as a 1D tensor of shape [fn].
 
 
-Notes: 
+Notes:
 
 
 
@@ -95,7 +95,7 @@ c = tf.nn.conv2d(X, filters, strides=[1,2,2,1],
 <!-- {"left" : 0.0, "top" : 4.82, "height" : 2.34, "width" : 10.25} -->
 
 
-Notes: 
+Notes:
 
 Note that the stride here is 2 in both height and width, which will reduce dimensions.
 
@@ -106,7 +106,7 @@ Note that the stride here is 2 in both height and width, which will reduce dimen
 
 
   * The following code creates a max pooling layer using a 2 × 2 kernel, stride 2, and no padding, then applies it to all the images in the dataset:
- 
+
 
 
 ```python
@@ -120,7 +120,7 @@ max_pool = tf.nn.max_pool(X, ksize=[1,2,2,1],
 
 
 
-Notes: 
+Notes:
 
 Note that we specify the ksize in 4 dimensions because X is four dimensions: row, height, width, channels.  We almost never
 use a stride across row (which makes no sense) and rarely across channels (RGB).  Mainly stride is used for height and width
@@ -133,7 +133,7 @@ convolutions. So it's index 1 (second from left), and 2 (third from left) that i
 ## CNNs in TensorFlow (Contd.)
 
 
-  * The ksize argument contains the kernel shape along all four dimensions of the input tensor: [mini-batch size, height, width, channels]. 
+  * The ksize argument contains the kernel shape along all four dimensions of the input tensor: [mini-batch size, height, width, channels].
 
   * Either height and weight are 1 or channels is 1, depending on whether the pooling is across height and weight or if the pooling is across channels only.
 
@@ -149,7 +149,7 @@ max_pool = tf.nn.max_pool(X, ksize=[1,2,2,1],
 <!-- {"left" : 0.0, "top" : 4.74, "height" : 1.73, "width" : 10.25} -->
 
 
-Notes: 
+Notes:
 
 Code image is same as previous slide. Adding it here to make it easy to relate the points to the code.
 
@@ -165,7 +165,7 @@ Code image is same as previous slide. Adding it here to make it easy to relate t
 
      - `conv3d()` creates a convolutional layer for 3D inputs, such as 3D PET scan.
 
-Notes: 
+Notes:
 
 
 
@@ -177,18 +177,18 @@ Notes:
 
     - **Objective:** Demonstrate various aspects of CNN with TensorFlow.
 
-  * **Steps:** 
+  * **Steps:**
     - Load `china.jpg` and `flower.jpg` images from Python dataset module.
     - Develop a CNN to apply a vertical and horizontal 7x7 kernel filter to highlight vertical and horizontal lines respectively in the images loaded with SAME padding. Plot the output for the two images.
 
 
-Notes: 
+Notes:
 
 ---
 
 ## Lab: Introducing CNNs
 
-  * **Steps:** 
+  * **Steps:**
 
     - Try using the higher level TensorFlow layers API for convolution and check the output image.
     - Using a dataset of numbers between 1 and 13, try to apply a prime number filter first with SAME and then with VALID padding. Check the output of this convolutional layer in the two cases.
@@ -196,7 +196,7 @@ Notes:
     - **Dataset used:** China and Flower images from Python dataset module.
     - **Skills required:** In-depth understanding of CNNs and all their features like kernel, stride, padding, pooling etc.
 
-Notes: 
+Notes:
 
 
 ---
@@ -212,13 +212,13 @@ Notes:
   * CNNs for MNIST image classification
 
     - **Objective:** Use CNNs for MNIST image classification.
-    - **Steps:** 
+    - **Steps:**
 
-      - Apply CNNs for MNIST image classification. Print training and test accuracy of the trained model. 
+      - Apply CNNs for MNIST image classification. Print training and test accuracy of the trained model.
       - **Dataset used:** MNIST dataset to test a CNN-based classification network.
       - **Skills required:** In-depth understanding of CNNs and all their features like kernel, stride, padding, pooling etc.
 
-Notes: 
+Notes:
 
 ---
 
@@ -323,6 +323,4 @@ Notes:
   * Typical CNN architectures involve multiple CNN layers to detect low and high level features going from input to output. Each CNN layer is typically followed by a ReLU and pooling layer.
 
 
-Notes: 
-
-
+Notes:
