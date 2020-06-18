@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="236 174 626 482" width="626" height="482">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#033399">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-06-18 11:09:29 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_9">
+        <line x1="614.9" y1="219" x2="773" y2="219" marker-start="url(#FilledArrow_Marker)" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_10">
+        <line x1="346.90002" y1="219" x2="505" y2="219" marker-start="url(#FilledArrow_Marker)" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_11">
+        <line x1="604.6095" y1="354.12158" x2="779.8681" y2="242.62308" marker-start="url(#FilledArrow_Marker)" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_12">
+        <line x1="346.90002" y1="389.5" x2="505" y2="389.5" marker-start="url(#FilledArrow_Marker)" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_13">
+        <line x1="336.6095" y1="524.6216" x2="511.8681" y2="413.1231" marker-start="url(#FilledArrow_Marker)" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_3">
+        <circle cx="817" cy="219" r="44.0000703076835" fill="#a4f8fd"/>
+        <circle cx="817" cy="219" r="44.0000703076835" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="549" cy="219" r="44.0000703076834" fill="#a4f8fd"/>
+        <circle cx="549" cy="219" r="44.0000703076834" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <circle cx="281" cy="219" r="44.0000703076834" fill="#a4f8fd"/>
+        <circle cx="281" cy="219" r="44.0000703076834" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <circle cx="549" cy="389.5" r="44.0000703076834" fill="#a4f8fd"/>
+        <circle cx="549" cy="389.5" r="44.0000703076834" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="281" cy="389.5" r="44.0000703076834" fill="#a4f8fd"/>
+        <circle cx="281" cy="389.5" r="44.0000703076834" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <circle cx="281" cy="560" r="44.0000703076834" fill="#a4f8fd"/>
+        <circle cx="281" cy="560" r="44.0000703076834" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(623.8659 388.8718)" fill="#390090">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#390090" x="0" y="45">0.2 </tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#390090" y="45">*</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#390090" y="45"> 0.3</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#390090" x="0" y="95">= </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#902423" y="95">0.06</tspan>
+        </text>
+      </g>
+      <g id="Group_17">
+        <g id="Graphic_15">
+          <text transform="translate(369.10996 537.4727)" fill="#902423">
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#902423" x="0" y="45">0.06</tspan>
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#390090" y="45"> </tspan>
+            <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#390090" y="45">*</tspan>
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#390090" y="45"> 0.5</tspan>
+          </text>
+        </g>
+        <g id="Graphic_16">
+          <rect x="364.10996" y="596.3205" width="145.9961" height="59" fill="#fff234"/>
+          <text transform="translate(369.10996 601.3205)" fill="#1466b3">
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1466b3" x="0" y="40">= 0.003</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
