@@ -109,7 +109,7 @@ Notes:
      -  The only state retained is weight values from training.
      - They don't remember previous input!
      - For example, in this example, the network doesn't remember the 'previous input' (cat) when predicting the current input
-* **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/sLsCN9ZL9RI)
+* **Animation** below: [link-youtube](https://youtu.be/sLsCN9ZL9RI) | [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4) 
 
 <!-- TODO shiva -->
 <img src="../../assets/images/deep-learning/neural-network-animation-1.png"  style="width:45%;"/><!-- {"left" : 0.97, "top" : 5.51, "height" : 1.96, "width" : 8.31} -->
@@ -139,8 +139,7 @@ Notes:
 <img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/><!-- {"left" : 2.64, "top" : 1.21, "height" : 4.12, "width" : 4.98} -->
 
 
-
-[Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-4-animation.mp4)
+* **Animation**: [Link-YouTube](https://www.youtube.com/watch?v=zt18u6BgdK8) | [Link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-4-animation.mp4)
 
 ---
 
