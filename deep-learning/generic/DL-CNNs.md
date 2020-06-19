@@ -201,6 +201,57 @@ Notes:
 
 ---
 
+# Filters
+
+---
+
+## Pre-Processing Images
+
+ <img src="../../assets/images/generic/3rd-party/fox-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;float:right;width:40%;" /> <!-- {"left" : 5.99, "top" : 1.25, "height" : 2.63, "width" : 3.96} -->
+
+  * Image processing is a standard task for machine learning
+
+  * Before we load the images, we can use Photoshop, OpenCV to "clean up" the image
+    - remove noise
+    - find edges
+    - etc
+
+  * Even now, this is a common task to help get better results.
+
+  * This is  *feature engineering*  
+  (Example image, with background blurred)
+
+
+---
+## Image Filter Examples
+
+- Some sample filters
+    - Blur filter
+    - Sharpen filter
+    - Edge detection filter
+
+<img src="../../assets/images/deep-learning/filters-all2.png"  style="width:50%;" /><!-- {"left" : 2.28, "top" : 3.55, "height" : 3.84, "width" : 5.69} -->
+
+
+---
+
+
+## Problems with Image Pre-Processing
+
+  * How do we *know* that one filter will help us
+    - Takes a lot of experience!
+    - In some cases it might **hurt** rather than help.
+
+  * Lots of trial and error!
+
+  * What if...
+    - Maybe there was a way we could find a filter that gives us better results for sure.
+    - Could we automate finding the perfect filter?
+    - Maybe if we used more than one filter?
+
+
+---
+
 # Convolutions
 
 ---
@@ -248,7 +299,58 @@ Notes:
 
 ---
 
-## Convolution Example
+## Convolution Example: Edge Detection
+
+* Here we are applying an edge filter to an image
+
+* The resulting image has edges 'highlighted'
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-edge-filter-1.png"  style="width:20%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-edge-detection-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+---
+## Convolution Example: Vertical Edges Detection
+
+* The resulting image has vertical edges highlighted
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-vertical-filter-1.png"  style="width:20%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-vertical-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+---
+
+## Convolution Example: Horizontal Edges Detection
+
+* The resulting image has horizontal edges highlighted
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-horizontal-filter-1.png"  style="width:20%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-horizontal-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+---
+
+## Convolution Example: Edges
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-edge-filter-1.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-edge-detection-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-vertical-filter-1.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-vertical-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-horizontal-filter-1.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-horizontal-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+---
+
+## Learning Features
 
 * Here we are analyzing a picture of elephant
 
@@ -264,24 +366,7 @@ Notes:
 
 ---
 
-## Convolution Example
-
-
-* The image shows two kernels - vertical and horizontal filters.
-    - Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter
-* The **vertical filter** accentuates vertical lines while subduing horizontal lines (**map-1**)
-* The **horizontal filter** accentuates horizontal lines (**map-2**)
-
-<img src="../../assets/images/deep-learning/3rd-party/CNN-convolutions-example-3.png"  style="width:50%;" /> <!-- {"left" : 2.18, "top" : 4.38, "height" : 3.73, "width" : 5.9} -->
-
-
-
-
-Notes:
-
----
-
-## Convolution Example
+## Learning Features
 
 <img src="../../assets/images/deep-learning/3rd-party/Face-Recognition-2.png"  style="width:40%;float:right;" /> <!-- {"left" : 6.23, "top" : 1.1, "height" : 5.04, "width" : 3.81} -->
 
@@ -295,16 +380,7 @@ Notes:
 - Third layer recognizes faces
 
 ---
-## Convolution Example
 
-- Here we are identifying 'edges' of the picture by doing convolution
-
-<img src="../../assets/images/deep-learning/3rd-party/convolution-example-1.png" style="width:60%;"/><!-- {"left" : 0.98, "top" : 2.93, "height" : 3.2, "width" : 8.29} -->
-
-Notes:
-Image source: https://timdettmers.com/2015/03/26/convolution-deep-learning/
-
----
 ## Convolutional Layer
 
 <img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:30%;float:right;" /><!-- {"left" : 7.64, "top" : 1, "height" : 2.42, "width" : 2.34} -->
@@ -369,6 +445,16 @@ Notes:
 
 ---
 
+## How is Convolution Performed?
+
+* The following slides illustrate the math behind convolutions
+
+* Provided as a reference
+
+* Feel free to skip / go-over depending on the time constraint
+
+---
+
 ## Process of Convolution
 
 * On the left we have the image matrix  (6x6)
@@ -394,7 +480,8 @@ __`(81x0+2x1+209x1)+(24x1+56x0+108X0)+(91x1+0x0+189x1) = 515`__
 <img src="../../assets/images/deep-learning/convolution-process-1.png" style="width:30%;" /><!-- {"left" : 6.05, "top" : 4.82, "height" : 1.59, "width" : 2.96} -->
 
 
-<img src="../../assets/images/deep-learning/convolution-process-4a.png" style="width:30%;" /><!-- {"left" : 3.22, "top" : 6.77, "height" : 2.04, "width" : 3.8} -->
+<img src="../../assets/images/deep-learning/convolution-process-6.png" style="width:25%;" /><!-- {"left" : 3.22, "top" : 6.77, "height" : 2.04, "width" : 3.8} --> &nbsp;  &nbsp;
+<img src="../../assets/images/deep-learning/convolution-process-4a.png" style="width:25%;" /><!-- {"left" : 3.22, "top" : 6.77, "height" : 2.04, "width" : 3.8} -->
 
 ---
 
@@ -456,57 +543,38 @@ Notes:
 Notes:
 
 ---
+## Convolution Parameters
 
-# Filters
+  * Three Hyperparameters control the convolution:
 
----
+    - **Depth:** The number of filters, and the number of neurons per convolution
 
-## Pre-Processing Images
+    - **Stride:** Usually 1 or 2: the number of pixels we "jump" when applying the filter.
 
- <img src="../../assets/images/generic/3rd-party/fox-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;float:right;width:40%;" /> <!-- {"left" : 5.99, "top" : 1.25, "height" : 2.63, "width" : 3.96} -->
+    - **Zero Padding:** Creates a "frame" of zero (black) pixels around the border of image.
 
-  * Image processing is a standard task for machine learning
+  * Stride > 1 will reduce dimensions
 
-  * Before we load the images, we can use Photoshop, OpenCV to "clean up" the image
-    - remove noise
-    - find edges
-    - etc
+    - Allows us to both do convolution and reduce dimensions in one step
 
-  * Even now, this is a common task to help get better results.
-
-  * This is  *feature engineering*  
-  (Example image, with background blurred)
-
-
----
-## Image Filter Examples
-
-- Some sample filters
-    - Blur filter
-    - Sharpen filter
-    - Edge detection filter
-
-<img src="../../assets/images/deep-learning/filters-all2.png"  style="width:50%;" /><!-- {"left" : 2.28, "top" : 3.55, "height" : 3.84, "width" : 5.69} -->
+    - Usually, we use pooling layers for reducing dimensions.
 
 
 ---
 
 
-## Problems with Image Pre-Processing
+## Convolutions: Further Reading
 
-  * How do we *know* that one filter will help us
-    - Takes a lot of experience!
-    - In some cases it might **hurt** rather than help.
+* [Tutorial on convolutions](https://www.youtube.com/watch?v=XuD4C8vJzEQ&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=2) by Andrew Ng
 
-  * Lots of trial and error!
+* [Tutorial on padding](https://www.youtube.com/watch?v=smHa2442Ah4&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=4) by Andrew Ng
 
-  * What if...
-    - Maybe there was a way we could find a filter that gives us better results for sure.
-    - Could we automate finding the perfect filter?
-    - Maybe if we used more than one filter?
+* [Tutorial on strides](https://www.youtube.com/watch?v=tQYZaDn_kSg&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=5) by Andrew Ng
 
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
 
 ---
+
 
 ## Filters  / Kernels
 
@@ -527,30 +595,22 @@ Notes:
 - https://www.saama.com/blog/different-kinds-convolutional-filters/
 
 ---
+## Filters in Computer Vision
 
+* We just saw a single filter can extract a certain **pattern or feature**
 
+* Convolutional neural networks (CNN) do not learn just a single filter. In fact, they learn multiple features in parallel for a given input
 
-## Convolution Parameters
+* Typically in practice CNNs learn from 32 to 512 filters
 
-  * Three Hyperparameters control the convolution:
+* This gives the model 32, or even 512, different ways of extracting features from an input
 
-    - **Depth:** The number of filters, and the number of neurons per convolution
-
-    - **Stride:** Usually 1 or 2: the number of pixels we "jump" when applying the filter.
-
-    - **Zero Padding:** Creates a "frame" of zero (black) pixels around the border of image.
-
-  * Stride > 1 will reduce dimensions
-
-    - Allows us to both do convolution and reduce dimensions in one step
-
-    - Usually, we use pooling layers for reducing dimensions.
-
+* In other words CNNs "learn to see" features from given input
 
 ---
 
-## Stacking Feature Maps
 
+## Stacking Feature Maps
 
 * So far, we have seen Convolutional layer as a thin 2D layer
 * In fact, **Convolutional layer is composed of  series of feature maps**
@@ -639,6 +699,14 @@ Notes:
  *  **Number of filters**
 
 Notes:
+
+---
+
+## Convolutions: Further Reading
+
+* [Tutorial on convolutions on volumes](https://www.youtube.com/watch?v=KTB_OFoAQcc&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=6) by Andrew Ng
+
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
 
 ---
 ## Convolutions Summary
@@ -756,6 +824,37 @@ Notes:
 
 ---
 
+## Pooling: Further Reading
+
+* [Tutorial on pooling](https://www.youtube.com/watch?v=8oOgPUO-TBY&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=9) by Andrew Ng
+
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
+
+---
+
+## Lab: Explore Convolutions and Pooling
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Understand convolutions and pooling
+
+* **Approximate run time:**
+    - 15-20 mins
+
+* **Instructions:**
+    - Instructor: Please demo **convolutions** lab
+
+
+Notes:
+
+---
+
+# Convolutional Neural Networks (CNNs)
+
+---
+
 ## Introduction to Convolutional Neural Networks (ConvNets)
 
 * CNNs are a sequence of layers:
@@ -811,9 +910,7 @@ Notes:
 ---
 ## Convolutions Further Reading
 
-* Watch this brilliant tutorial series on convolutions by Andrew Ng
-
-* [Link](https://www.youtube.com/watch?v=ArPaAX_PhIs&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=2&t=0s)
+* Watch this brilliant [tutorial series](https://www.youtube.com/watch?v=ArPaAX_PhIs&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=2&t=0s) on convolutions by Andrew Ng
 
 <img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
 
