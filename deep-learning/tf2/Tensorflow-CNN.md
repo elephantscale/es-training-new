@@ -1,5 +1,7 @@
 # Convolutional Neural Networks (CNNs) in TensorFlow
 
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
+
 
 ---
 

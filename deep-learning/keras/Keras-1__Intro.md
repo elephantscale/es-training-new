@@ -195,8 +195,6 @@ Next major (and final) release of Keras will be 2.3
     - It is better maintained
     - And supports TF2 better
 
-*
-
 ---
 
 ## Keras Model Zoos

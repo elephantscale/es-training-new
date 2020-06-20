@@ -26,9 +26,6 @@
 ## TensorFlow
 ./Tensorflow-Intro.md
 
-# Keras
-../keras/Keras-1__Intro.md
-
 
 ## Introduce Neural Networks
 ../generic/DL-Neural-Networks.md
@@ -36,7 +33,7 @@
 ## Get some theory
 ../generic/DL-Concepts.md
 
-../keras/Keras-2__API.md
+./Tensorflow-API.md
 
 
 ## TransferLearning

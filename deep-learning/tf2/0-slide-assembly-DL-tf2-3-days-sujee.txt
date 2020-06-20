@@ -1,52 +1,50 @@
 ## To Make slides
-##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-DL-3-days.txt
-## (-d will cleanup  current assembly.out)
-
-## To Make pdfs, supply pdf arg at the end
-##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-assembly-DL-3-days.txt  pdf
-## (-d will cleanup  current assembly.out)
-
+#  ./gen.sh
 
 ## Course outline
-./outline-Intro-to-Deep-Learning-With-TensorFlow-and-Keras.docx
+../deep-learning-with-tensorflow-keras-3days.pdf
 
 ## About
-./generic/About-Deep-Learning-Class.md
+../generic/About-Deep-Learning-Class.md
+
+## Resources
+../../machine-learning/generic/ML-Resources.md
 
 ## ML Intro
-../machine-learning/generic/Machine-Learning-Primer.md
+../../machine-learning/generic/Machine-Learning-Primer.md
 
 ## Get the labs setup
-../machine-learning/generic/Labs-Prep.md
+../../machine-learning/generic/Labs-Prep.md
 
 
 ## TensorFlow
-./tensorflow/TENSORFLOW-Intro.md
+./Tensorflow-Intro.md
 
-# Keras
-keras/Keras-1__Intro.md
-
-
-## Reference only
-../machine-learning/generic/ML-Concepts-All.md
 
 ## Introduce Neural Networks
-./generic/DL-Neural-Networks.md
+../generic/DL-Neural-Networks.md
 
 ## Get some theory
-generic/DL-Concepts.md
+../generic/DL-Concepts.md
 
 
-# Introduce TensorFlow Playground
-./generic/DL-Playground.md
-
+./Tensorflow-API.md
 
 ## CNN
-./generic/DL-CNNs.md
+./Tensorflow-CNN.md
 
 ## RNN
-./generic/DL-RNNs.md
-./generic/DL-LSTMs.md
+./Tensorflow-RNN.md
+../generic/DL-LSTMs.md
 
 ## TransferLearning
-./generic/DL-Transfer-Learning.md
+../generic/DL-Transfer-Learning.md
+
+## ---- Reference only ----
+
+# TensorFlow Playground
+../generic/DL-Playground.md
+
+## ML-Concepts
+../../machine-learning/generic/ML-Concepts-All.md
+../../machine-learning/generic/Feature-Engineering.md
