@@ -1,8 +1,9 @@
 # Terraform Walk-Through
 
 ---
+# Getting Started
 
-## The Plan
+## Our Plan
 
 * Getting started with Terraform
     * Setting up your AWS account
@@ -18,10 +19,11 @@
 ---
 
 ## We Will Use AWS
-* The most popular cloud infrastructure provider, by far. It has a 45% share in the cloud infrastructure market, which is more than the next three biggest competitors (Microsoft, Google, and IBM)
-* Provides a huge range of reliable and scalable cloud-hosting services
-* Generous Free Tier for the first year
-    * Or use <myname+1@gmail.com> kind of address
+* The most popular cloud infrastructure provider, by far. It has a __45% share__ in the cloud infrastructure market, which is more than the next three biggest competitors (Microsoft, Google, and IBM)
+* Provides a huge __range of reliable and scalable cloud-hosting services__
+* Generous __Free Tier__ for the first year
+    * A trick to user after a year:
+    * Use <myname+1@gmail.com> kind of address
     * If you already used up your free tier credits, the examples in the labs should still cost you no more than a few dollars.
 
 ---
@@ -82,39 +84,40 @@ Notes:
 
 ---
 
-## Connect to AWS
+## Connect to AWS - Way 1
 
 * Way 1: Set up AWS credentials
 
-`$export AWS_ACCESS_KEY_ID=(key id)`
+`$export AWS_ACCESS_KEY_ID=(you access key id)`
 
-`$export AWS_SECRET_ACCESS_KEY=(secret access key)`
+`$export AWS_SECRET_ACCESS_KEY=(your secret access key)`
 
 * This will only give you the setup for this shell
-* To make it work after reboot, put it into `.bashrc`
+* To make it work after reboot put it into `.bashrc`
+* `vi ~/.bashrc`
 
-```
-    vi ~/.bashrc
-```
+---
+
+## Connect to AWS - Way 2
 
 * Way 2
 * Terraform supports the same authentication mechanisms as all AWS CLI and SDK tools
-* Therefore, it’ll also be able to use credentials in $HOME/.aws/credentials
+* Therefore, it’ll also be able to use credentials in `$HOME/.aws/credentials`
     * These are automatically generated if you run the `configure` command on the AWS CLI, or IAM
 
 ---
 
-## Prepare to Deploy a Server
+## Let Us Prepare to Deploy a Server
 
 * Create an empty folder, `lab01`
 * Put in a file called `main.tf`
-* Put in there (it means what it says)
+* Put in there the following
 
       provider "aws" {
         region = "us-east-2"
       }
 
-* Now added resources      
+* Now you will be adding resources, like this:      
 
 ![](../../assets/images/terraform/terraform-resources.png)
 
