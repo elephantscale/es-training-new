@@ -34,8 +34,27 @@ This course will explain the capabilities of Hive, HQL dialects, and best practi
     * MapReduce, HDFS, YARN
     * New in Hadoop 3
         * Erasure Coding vs 3x replication
-* Hive 
-    * New in Hive 3 
+* Hive Basics 
+    * Defining Hive Tables
+    * SQL Queries over Structured Data
+    * Filtering / Search
+    * Aggregations / Ordering
+    * Partitions
+    * Joins
+    * Text Analytics (Semi Structured Data)
+
+* Hive Advanced
+    * Transformation, Aggregation
+    * Working with Dates, Timestamps, and Arrays
+    * Converting Strings to Date, Time, and Numbers
+    * Create new Attributes, Mathematical Calculations, Windowing Functions
+    * Use Character and String Functions
+    * Binning and Smoothing
+    * Processing JSON Data
+    * Different Engines:
+        * Tez Engine
+        * MapReduce
+* New in Hive 3 
     * ACID tables
     * Hive Query Language (HQL) 
         * How to run a good query? 
