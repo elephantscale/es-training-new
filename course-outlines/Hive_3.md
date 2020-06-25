@@ -27,3 +27,31 @@ This course will explain the capabilities of Hive, HQL dialects, and best practi
 
 ## Course Outline
 
+* Why Hadoop?
+    * The motivation for Hadoop
+    * Use cases and case studies about Hadoop 
+* The Hadoop platform
+    * MapReduce, HDFS, YARN
+    * New in Hadoop 3
+        * Erasure Coding vs 3x replication
+* Hive 
+    * New in Hive 3 
+    * ACID tables
+    * Hive Query Language (HQL) 
+        * How to run a good query? 
+        * How to trouble shoot queries?  
+* HBase
+    * Basics
+    * HBase tables - design and use
+    * Phoenix driver for HBase tables
+* Sqoop
+    * Tool
+    * Architecture
+    * Use
+* Spark
+    * Overview
+    * Spark SQL
+* The big picture
+    * How Hadoop fits into your architecture
+    * Hive vs HBase with Phoenix vs Excel
+
