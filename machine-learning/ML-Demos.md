@@ -78,6 +78,8 @@
 	- other GAN images : https://twitter.com/memotv/status/1046215376386822145
 	- other GAN images : https://twitter.com/OriolVinyalsML/status/1046059308880941058
 
+- Detecting diseases in Casava plant using Tensorflow : https://www.youtube.com/watch?v=NlpS-DhayQA
+
 
 ## State of the Art
 - Tracks research: https://paperswithcode.com/
