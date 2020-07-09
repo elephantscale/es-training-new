@@ -317,7 +317,7 @@ keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.
 * "Algos without scaling based on gradient information really struggle to break symmetry here - SGD gets no where and Nesterov Accelerated Gradient / Momentum exhibits oscillations until they build up velocity in the optimization direction. Algos that scale step size based on the gradient quickly break symmetry and begin descending quickly"
 
 
-[Link for animation](https://s3.amazonaws.com/elephantscale-public/media/machine-learning/optimizer-animation-2-long-valley.gif)
+[Link for animation](https://s3.amazonaws.com/elephantscale-public/media/machine-learning/optimizer-animation-2-long-valley.mp4)
 
 ---
 ## Animations of Various Optimizers -  Saddle Point
@@ -326,7 +326,7 @@ keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.
 
 * "Behavior around a saddle point. NAG/Momentum again like to explore around, almost taking a different path. Adadelta/Adagrad/RMSProp proceed like accelerated SGD."
 
-[Link for animation](https://s3.amazonaws.com/elephantscale-public/media/machine-learning/optimizers-animation-3-saddle-point.gif)
+[Link for animation](https://s3.amazonaws.com/elephantscale-public/media/machine-learning/optimizers-animation-3-saddle-point.mp4)
 
 
 
@@ -338,6 +338,9 @@ Notes:
 ---
 ## Optimizers - Takeaway
 
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-summary-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+
 - __RMSProp__ and __Adam__ are the 'go to' optimizers now
 
 - __RMSprop__ optimization algorithm is preferable to stochastic gradient descent (SGD), because RMSprop automates learning-rate tuning for us
@@ -345,6 +348,10 @@ Notes:
 - __Adam__ and __Adagrad__ optimizers also automatically adapt the learning rate during training
 
 - No need to fiddle with learning rates!
+
+- Reference: [Machine Learning Mastery - Learning rate](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
+
+
 ---
 
 ## Optimizers: Resources

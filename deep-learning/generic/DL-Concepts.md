@@ -417,6 +417,113 @@ for e  in number_of_epochs {
 
 ---
 
+# Learning Rate
+
+---
+
+## Learning Rate
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/learning-rate-1.png"  style="width:35%;float:right;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+
+* Neural Networks update their weights using backpropagation
+
+* The amount the weights are updated is called **step size** or **learning rate**
+
+* Learning rate is a positive number (usually between 0.0 and 1.0 - can be more than 1.0 in some cases)
+
+---
+
+## Effect of Learning Rate
+
+
+
+* When 'learning rate' is **too small**:
+    - The weight updates are small
+    - The model may take longer to train (too many steps to find the solution)
+* When the 'learning rate' is **too large**:
+    - The weight updates are too large
+    - It may cauase the model to diverge, and bounce around
+* Our goal is to find the **right learning rate**
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/learning-rate-3.png"  style="width:32%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/deep-learning/learning-rate-2.png"  style="width:32%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/deep-learning/learning-rate-4.png"  style="width:32%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+
+---
+
+## Finding the Optimal Learning Rate
+
+* Learning Rate is a very important factor in the algorithm converging (finding the global minimum)
+
+* We don't want it to be too large or too small
+
+* Set it too high, algorithm may diverge
+
+* Set it too low, algorithm will eventually converge, but will take too many iterations and too long
+
+<img src="../../assets/images/deep-learning/learning-rate-summary.png" alt="XXX image missing" style="width:70%;"/><!-- {"left" : 0.77, "top" : 2.73, "height" : 3.61, "width" : 8.72} -->
+
+---
+
+## Finding the Optimal Learning Rate
+
+* Unfortunately, there is **no formula** to calculate the optimal learning rate
+
+* Learning rate is determined by **experimentation** and following **best practices**
+
+* **Learning curve** (from Tensorboard) can give us clues on how effective the learning rate is
+
+* _"The learning rate is perhaps the most important hyperparameter. If you have time
+to tune only one hyperparameter, tune the learning rate."_ - Page 429, Deep Learning, 2016.
+
+<br />
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/learning-rate-andrej-karpathy-tweet-1.png"  style="width:80%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+
+---
+
+## Determining Learning Rate
+
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/learning-rate-andrej-karpathy-tweet-2.png"  style="width:80%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+
+* Read the [tweet thread](https://twitter.com/karpathy/status/801621764144971776?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E801621764144971776%7Ctwgr%5E&ref_url=https%3A%2F%2Fwww.jeremyjordan.me%2Fnn-learning-rate%2F) for some funny reactions
+
+* Also [Andrej's twitter](https://twitter.com/karpathy) and [karpathy.ai](https://karpathy.ai/)
+
+---
+
+## How to Find the Optimal Learning Rate
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/learning-curve-3.png"  style="width:40%;float:right;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+
+* Start with learning rate of **`0.1 or 0.01`**
+
+* Run a few epochs of training
+
+* Watch the convergence using a tool like [Tensorboard](https://www.tensorflow.org/guide/summaries_and_tensorboard)
+
+* Adjust learning rate, rinse and repeat
+
+
+---
+
+## Finding Optimal Learning Rate
+
+* Stochastic Gradient Descent (SGD) algorithm has 'fixed' learning rate
+
+* In practice, **adjusting the learning rate** results in the algorithm converging sooner
+
+* Modern optimizers like Adagrad, RMSProp and Adam have **adaptive learning rate**
+    - They can adjust learning rate as training progresses
+
+* We will see more of this in the next section **Optimizers**
+---
 
 # Optimizers
 
@@ -766,38 +873,6 @@ Notes:
 
 ---
 
-## Figuring Out The Optimal Learning Rate
-
- * Learning Rate (⍺) is a very important factor in the algorithm converging (finding the global minimum)
-
- * Set it too high, algorithm may diverge
-
- * Set it too low, algorithm will eventually converge, but will take too many iterations and too long
-
- * Set it a little high, it will make quick progress at the start, then bounce around the global minimum (not settling)
-
- * Modern optimizers like Adagrad, RMSProp and Adam have adaptive learning rate (they can adjust learning rate as training progresses)
-
----
-
-## Learning Rate
-
-<img src="../../assets/images/deep-learning/learning-rate-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.77, "top" : 2.73, "height" : 3.61, "width" : 8.72} -->
-
-
----
-
-## How to Find the Optimal Learning Rate
-
- * Start with high learning rate
-
- * Run a few epochs of training
-
- * Watch the convergence using a tool like [Tensorboard](https://www.tensorflow.org/guide/summaries_and_tensorboard)
-
- * Adjust learning rate, rinse and repeat
-
----
 ## Final Words
 
 These default values should get you started, and should work well in most scenarios
