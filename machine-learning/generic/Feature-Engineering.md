@@ -386,7 +386,7 @@ Notes:
  * In the data below, we see **age** and **income** are in two different scales
     - age: ranges from 33 - 60
     - income ranges from 32,000  to 120,000
-    
+
  * Some algorithms will yield better results if these different ranges can be scaled to a uniform range
     - Remove high magnitude data
 
@@ -408,8 +408,9 @@ Notes:
 
 
 * Min-Max Scaling
-    - Scale between a range (0 to 1   or 1 to 100)
+    - Scale between a range 0 to 1 typically (or other ranges like 1 to 100)
 
+* Standardized with zero mean and standard deviation of one
 
 
 Notes:
@@ -470,6 +471,61 @@ Notes:
 
 ---
 
+## Scaling Example 3: Using SciKit
+
+* Uses **`MinMaxScaler`**
+
+```python
+from sklearn.preprocessing import MinMaxScaler
+
+# load data
+data = ...
+
+# create scaler
+scaler = MinMaxScaler()
+
+# fit scaler on data
+scaler.fit(data)
+# apply transform
+normalized = scaler.transform(data)
+
+# or fit and transform in one step
+normalized = scaler.fit_transform(data)
+
+# inverse transform
+inverse = scaler.inverse_transform(normalized)
+```
+
+
+---
+
+## Scaling Example 4: Using SciKit
+
+* Uses **`StandardScaler`**
+
+```python
+from sklearn.preprocessing import StandardScaler
+
+# load data
+data = ...
+
+# create scaler
+scaler = StandardScaler()
+
+# fit scaler on data
+scaler.fit(data)
+# apply transform
+normalized = scaler.transform(data)
+
+# or fit and transform in one step
+normalized = scaler.fit_transform(data)
+
+# inverse transform
+inverse = scaler.inverse_transform(normalized)
+```
+
+
+---
 
 ## Lab: Exploratory Data Analysis (EDA)
 
