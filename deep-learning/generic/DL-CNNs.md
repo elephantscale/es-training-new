@@ -128,9 +128,9 @@ source : https://photographingspace.com/ap-color/
 
 * Each layer has 1.6 billion  connections; and that many weights to learn
 * How ever, a 200px x 200px image is very small!
-* Our phones these days can take HD pictures (3000 x 2000 pixels)
 * 4K picture is ~ 4000 x 2000 pixels (see picture below, credit [wikimedia](https://commons.wikimedia.org/wiki/File:8K,_4K,_2K,_UHD,_HD,_SD.png))
 * Can you compute how many weights we will need to compute for a 4K image?
+* **Quiz**: Take a picture with your phone.  What is the size? (probably 3000 x 2000 pixels)
 * __So we need a another approach__
 
 <img src="../../assets/images/deep-learning/3rd-party/8K_4K_2K_UHD_HD_SD.png"  style="width:40%;"/><!-- {"left" : 2.65, "top" : 5.72, "height" : 2.82, "width" : 4.94} -->
