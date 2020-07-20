@@ -1,6 +1,11 @@
 # ES-Training-New
 This is the repo for our new Markdown based content.
 
+## How to author
+Run
+        ./run-reveal-in-docker.sh
+And in browser go to port http://localhost:2000
+
 ## Dev Setup for writing markdown slides
 
 Setup [elephantscale/es-reveal-md](https://hub.docker.com/r/elephantscale/es-reveal-md)
