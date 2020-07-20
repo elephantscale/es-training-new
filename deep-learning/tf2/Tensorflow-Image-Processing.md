@@ -179,6 +179,7 @@ validation_dir = os.path.join(data_dir, 'val')
 
 * **Instructions:**
     - Lab : **IMG-1:** Working with images
+    - **Instructor** : Demo this lab and explain steps
 
 
 Notes:
@@ -655,7 +656,7 @@ plotImages (augmented_images)
     - 20-30 mins
 
 * **Instructions:**
-    - Follow instructions for **image-generator-lab**
+    - **IMG2:** image-generator-lab
 
 
 Notes:
@@ -673,5 +674,106 @@ Notes:
 * https://machinelearningmastery.com/image-augmentation-deep-learning-keras/
 
 * https://machinelearningmastery.com/how-to-load-large-datasets-from-directories-for-deep-learning-with-keras/
+
+---
+
+## Lab/Demo: Image Classification 1: Cats and Dogs
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Build an image classifier with real world images
+
+* **Approximate run time:**
+    - 30-40 mins
+
+* **Instructions:**
+    - **IMG3:** Cats and Dogs classifier
+    - **Instructor** Demo this lab step by step and explain
+
+
+Notes:
+
+---
+## Lab/Demo: Using Trained Models
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Learn how to use already trained models
+
+* **Approximate run time:**
+    - 20-30 mins
+
+* **Instructions:**
+    - **IMG4:** Reusing a model
+    - **Instructor** Demo this lab step by step and explain
+
+
+Notes:
+
+---
+
+## Lab: Image Classification 2: Horse or Human
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Build an image classifier with real world images
+
+* **Approximate run time:**
+    - 30-40 mins
+
+* **Instructions:**
+    - **Exercise-1:** Horse and Human
+    - This is an exercise to be completed by students.  Use the cat-dog example we just discussed, and work through this lab!
+
+
+Notes:
+
+---
+
+## Lab: Image Classification 3: Flowers
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Build an image classifier with real world images
+    - Here we are going to expand from doing binary classification (0/1) to multi-class classifications (0/1/2/3/4)
+
+* **Approximate run time:**
+    - 30-40 mins
+
+* **Instructions:**
+    - **Exercise-2:** Flowers **multi classifier**
+    - This is an exercise to be completed by students.  Use the cat-dog example we just discussed, and work through this lab!
+
+
+Notes:
+
+---
+
+## Lab: Reuse Trained Flowers Model
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Reuse the trained model from previous lab
+
+* **Approximate run time:**
+    - 30-40 mins
+
+* **Instructions:**
+    - Use the model saved in the previous lab, and load it to classify flowers
+    - Adopt the previous reuse lab
+    - This is an exercise to be completed by students.  
+
+
+Notes:
 
 ---
