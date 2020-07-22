@@ -7,12 +7,7 @@ $ES_HOME/python-labs/notebooks/2.2-learning-jupyter.ipynb  jupyter-notebooks/
 
 ## Language Basics
 
-$ES_HOME/python-labs/languagebasics/1-types.ipynb  language-basics/
-$ES_HOME/python-labs/languagebasics/2-conditionals.ipynb  language-basics/
-$ES_HOME/python-labs/languagebasics/3-loops.ipynb  language-basics/
-$ES_HOME/python-labs/languagebasics/4-functions.ipynb  language-basics/
-$ES_HOME/python-labs/languagebasics/3.7-oop.ipynb  language-basics/
-
+$ES_HOME/python-labs/languagebasics
 
 ## Numpy
 

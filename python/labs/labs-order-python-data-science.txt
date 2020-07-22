@@ -4,6 +4,7 @@
 ## Notebooks
 $ES_HOME/python-labs/notebooks/2.1-starting-jupyter.md  jupyter-notebooks/
 $ES_HOME/python-labs/notebooks/2.2-learning-jupyter.ipynb  jupyter-notebooks/
+$ES_HOME/python-labs/notebooks/google-colab.ipynb  jupyter-notebooks/
 
 ## Language Basics
 
