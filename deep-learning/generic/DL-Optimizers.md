@@ -4,20 +4,30 @@
 
 ## Optimizers Overview
 
-- Gradient Descent
+- What are optimizers?
 
-- Momentum Optimizer
+- Why do we need them?
 
-- Nesterov Accelerated Gradient
+- Learn various optimizers
+    - Gradient Descent
+    - Momentum Optimizer
+    - Nesterov Accelerated Gradient
+    - AdaGrad
+    - RMSProp
+    - Adam
 
-- AdaGrad
-
-- RMSProp
+- And how to use them effectively
 
 ---
 
+## About This Section
 
-## Understanding Optimzers: A Golf Game Analogy  :-)
+* The first part covers popular optimizers and how to use them
+
+* The math for optimizers can be found in the 'appendix' section (provided as reference only)
+
+---
+## Understanding Optimizers: A Golf Game Analogy  :-)
 
 <img src="../../assets/images/generic/3rd-party/golf-2b.jpg" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
 
@@ -80,129 +90,75 @@
 - Imagine a ball rolling down a smooth surface;  it will start slowly, but keep accelerating and quickly picking up momentum until it reaches terminal velocity
 
 - This is the idea behind **Momentum Optimization** ([paper by Boris Polyak, 1964](https://www.researchgate.net/publication/243648538_Some_methods_of_speeding_up_the_convergence_of_iteration_methods))
-    - Regular Gradient Descent will get there too, but will take many steps and take longer
 
-
-
----
-
-## Momentum Optimization
-
-- Regular Gradient Descent updates the new weights using learning rate (always constant).  if the local gradient is very small, the updates are small too  
-
-<img src="../../assets/images/deep-learning/Formula-theta-01.png" alt="Formula-theta-01.png" style="background:white;width:30%"/><!-- {"left" : 3.13, "top" : 2.6, "height" : 1.08, "width" : 3.98} -->
-
-
-- Here
-    - θ: is current weights
-    - ⍺: learning rate
-    - J(θ): cost
-    - ∇(θ): is derivative
-
-
-Notes:
-
+- Regular Gradient Descent will get there too, but will take many steps and take longer
 
 ---
-
-## Momentum Optimizer
-
-<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.87, "top" : 1.09, "height" : 0.74, "width" : 3.32} -->
-
-<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:30%;float:right;clear:both;"/><!-- {"left" : 7.6, "top" : 2, "height" : 0.91, "width" : 2.46} -->
-
-- Momentum takes into account of what previous gradients were
-
-- Calculates the momentum and adds it to the next weight updates
-    - so it accelerates the updates
-
-
-- Hyperparameter β, is called the momentum; ranges between 0 (high friction) and 1 (no friction). A typical momentum value is 0.9.
-
-- Features
-    - Could be 10x faster than Gradient Descent
-    - Also doesn't get trapped in local minima
-
-Notes:
-
----
-
 ## Momentum Video Tutorial
 
 <img src="../../assets/images/deep-learning/3rd-party/andrew-ng-momentum.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.34, "top" : 1.12, "height" : 4.61, "width" : 7.57} -->
 
-[Link](https://www.youtube.com/watch?v=k8fTYJPd3_I)
+* [Link](https://www.youtube.com/watch?v=k8fTYJPd3_I)
 
 ---
 
-## Momentum Implementation
+## Using Momentum Optimizer
 
-* **Tensorflow**
+* **Tensorflow v2** ([Documentation](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/SGD))
 
 <br/>
 
+<!-- TODO shiva -->
 ```python
-optimizer = tf.train.MomentumOptimizer(learning_rate=?,
-                                       momentum=0.9)
-```
-<!-- {"left" : 0, "top" : 1.63, "height" : 0.98, "width" : 10.25} -->
+from tf.keras.optimizers import SGD
 
+opt = SGD(learning_rate=0.01,
+          momentum=0.9) # <-- specify momentum here
+# momentum = 0.0 (default value) is plain SGD
 
-* **Keras**
+# model = ... build model ...
 
-```python
-sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile (optimizer=opt, loss='...')
 ```
 <!-- {"left" : 0, "top" : 4.02, "height" : 0.45, "width" : 10.25} -->
 
 ---
 ## Nesterov Accelerated Gradient
 
-<img src="../../assets/images/deep-learning/Formula-m-02.png" alt="Formula-m-02.png" style="background:white;width:30%;"/><!-- {"left" : 3.13, "top" : 1.27, "height" : 0.73, "width" : 3.99} -->
-
-<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%;"/><!-- {"left" : 4.16, "top" : 2.36, "height" : 0.71, "width" : 1.92} -->
 
 
 <img src="../../assets/images/deep-learning/3rd-party/wayne-grekzky.jpg" alt="XXX image missing" style="background:white;width:40%;float:right;" /> <!-- {"left" : 5.62, "top" : 3.47, "height" : 2.13, "width" : 4.38} -->
 
-- This is an update to Momentum Descent ([Paper by Yurii Nesterov in 1983](https://scholar.google.com/citations?view_op=view_citation&citation_for_view=DJ8Ep8YAAAAJ:hkOj_22Ku90C))
+- This is an update to Momentum Descent
 
 - **Nesterov Accelerated Gradient (NAG)** measures the gradient of the cost function not at the local position but slightly ahead in the direction of the momentum
+
+- References:
+    - [Paper by Yurii Nesterov in 1983](https://scholar.google.com/citations?view_op=view_citation&citation_for_view=DJ8Ep8YAAAAJ:hkOj_22Ku90C)
+    - [Sutskever et al., 2013](http://jmlr.org/proceedings/papers/v28/sutskever13.pdf)
 
 
 Notes:  
 
 ---
 
-## Nesterov Accelerated Momentum
+## Using Nesterov
 
-- Here you see Nesterov approach is slightly closer to optimum
+* **Tensorflow v2**
 
-<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="width:37%"/><!-- {"left" : 2.9, "top" : 2.61, "height" : 5.1, "width" : 4.44} -->
-
-
-
----
-
-## Nesterov Implementation
-
-* **Tensorflow**
-
-
+<!-- TODO shiva -->
 ```python
-optimizer = tf.train.MomentumOptimizer(learning_rate=?,
-                                       momentum=0.9,
-                                       use_nesterov=True) # <-- here
+from tf.keras.optimizers import SGD
+
+opt = SGD(learning_rate=0.01,
+          momentum=0.9,
+          nesterov = True) # <-- Apply Nesterov algorithm
+# by default nesterov=False
+
+# model = ... build model ...
+
+model.compile (optimizer=opt, loss='...')
 ```
-<!-- {"left" : 0, "top" : 1.63, "height" : 0.98, "width" : 10.25} -->
-
-
-* **Keras**
-
-```python
-sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
-```
-<!-- {"left" : 0, "top" : 4.02, "height" : 0.47, "width" : 10.25} -->
 
 ---
 
@@ -258,6 +214,27 @@ Notes:
 
 ---
 
+## Using RMSProp
+
+* **Tensorflow v2**
+
+<!-- TODO shiva -->
+```python
+from tf.keras.optimizers import RMSprop
+
+# We can use the default values
+opt = 'rmsprop'  # <-- simply state the name
+# or we can customize
+opt = RMSprop(learning_rate=0.1)  # <-- initialize the class and provide arguments
+
+# model = ... build model ...
+
+model.compile (optimizer=opt, loss='...')
+```
+
+
+---
+
 ## Adam Optimizer  
 
 - Adam (Adaptive Moment Estimation) Optimizer ([paper](https://arxiv.org/pdf/1412.6980v8.pdf)) combines the ideas of Momentum optimization and RMSProp
@@ -267,8 +244,147 @@ Notes:
     - Since Adam is adaptive, there is very little tuning.  
       Start with learning_rate = 0.001
 
+- References:
+    - [Paper: 'ADAM: A Method for Stochastic Optimization'](https://arxiv.org/pdf/1412.6980v8.pdf)
+
 Notes:  
-- https://arxiv.org/pdf/1412.6980v8.pdf
+
+---
+
+## Using Adam Optimizer
+
+* **Tensorflow v2**
+
+<!-- TODO shiva -->
+```python
+from tf.keras.optimizers import Adam
+
+# We can use the default values
+opt = 'adam'  # <-- simply state the name
+# or we can customize
+opt = Adam(learning_rate=0.1)  # <-- initialize the class and provide arguments
+
+# model = ... build model ...
+
+model.compile (optimizer=opt, loss='...')
+```
+
+
+---
+## Comparing Optimizers - Long Valley
+
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-2-long-valley.png" alt="XXX image missing" style="width:45%;float:right"/><!-- {"left" : 6.04, "top" : 1.37, "height" : 3.04, "width" : 3.94} -->
+
+* "Algos without scaling based on gradient information really struggle to break symmetry here - SGD gets no where and Nesterov Accelerated Gradient / Momentum exhibits oscillations until they build up velocity in the optimization direction. Algos that scale step size based on the gradient quickly break symmetry and begin descending quickly"
+
+
+* [Animation](https://s3.amazonaws.com/elephantscale-public/media/machine-learning/optimizer-animation-2-long-valley.mp4)
+
+* [Source](http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html)
+
+---
+## Comparing Optimizers -  Saddle Point
+
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="width:50%;float:right"/><!-- {"left" : 5.89, "top" : 1.37, "height" : 3.16, "width" : 4.07} -->
+
+* "Behavior around a saddle point. NAG/Momentum again like to explore around, almost taking a different path. Adadelta/Adagrad/RMSProp proceed like accelerated SGD."
+
+* [Animation](https://s3.amazonaws.com/elephantscale-public/media/machine-learning/optimizers-animation-3-saddle-point.mp4)
+
+
+* [Source](http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html)
+
+
+Notes:  
+- Animations credit to Alec Radford
+- http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html
+- https://imgur.com/a/Hqolp
+
+---
+## Optimizers - Takeaway
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-summary-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+
+- __RMSProp__ and __Adam__ are the 'go to' optimizers now
+
+- These are **adaptive** algorithms, that adjust learning rate as training progresses.
+
+- No need to fiddle with learning rates!
+
+- Reference: [Machine Learning Mastery - Learning rate](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
+
+
+---
+
+## Optimizers: Resources
+
+- http://ruder.io/optimizing-gradient-descent/
+
+- [Momentum video tutorial by Andrew Ng](https://www.youtube.com/watch?v=k8fTYJPd3_I)
+
+- [RMSProp video tutorial by Andew Ng](https://www.youtube.com/watch?v=_e-LFe_igno)
+
+- [Animations of various optimizers](http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html)
+
+---
+
+## Optimizers: Appendix
+
+---
+## Momentum Optimization Theory
+
+- Regular Gradient Descent updates the new weights using learning rate (always constant).  if the local gradient is very small, the updates are small too  
+
+<img src="../../assets/images/deep-learning/Formula-theta-01.png" alt="Formula-theta-01.png" style="background:white;width:30%"/><!-- {"left" : 3.13, "top" : 2.6, "height" : 1.08, "width" : 3.98} -->
+
+
+- Here
+    - θ: is current weights
+    - ⍺: learning rate
+    - J(θ): cost
+    - ∇(θ): is derivative
+
+
+Notes:
+
+
+---
+## Momentum Optimizer
+
+<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.87, "top" : 1.09, "height" : 0.74, "width" : 3.32} -->
+
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:30%;float:right;clear:both;"/><!-- {"left" : 7.6, "top" : 2, "height" : 0.91, "width" : 2.46} -->
+
+- Momentum takes into account of what previous gradients were
+
+- Calculates the momentum and adds it to the next weight updates
+    - so it accelerates the updates
+
+
+- Hyperparameter β, is called the momentum; ranges between 0 (high friction) and 1 (no friction). A typical momentum value is 0.9.
+
+- Features
+    - Could be 10x faster than Gradient Descent
+    - Also doesn't get trapped in local minima
+
+Notes:
+
+---
+
+## Nesterov Accelerated Gradient
+
+<img src="../../assets/images/deep-learning/Formula-m-02.png" alt="Formula-m-02.png" style="background:white;width:30%;"/><!-- {"left" : 3.13, "top" : 1.27, "height" : 0.73, "width" : 3.99} -->
+
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%;"/><!-- {"left" : 4.16, "top" : 2.36, "height" : 0.71, "width" : 1.92} -->
+
+---
+
+## Nesterov Accelerated Momentum
+
+- Here you see Nesterov approach is slightly closer to optimum
+
+<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="width:37%"/><!-- {"left" : 2.9, "top" : 2.61, "height" : 5.1, "width" : 4.44} -->
 
 ---
 ## Adam Math (Reference Only)
@@ -287,72 +403,3 @@ Notes:
     - β1 is typically initialized to 0.9
     - β2  - scaling decay hyperparameter -  is often initialized to 0.999
     -  ϵ - the smoothing term -  is usually initialized to a tiny number such as 10e-8
-
----
-
-## Adam Optimizer Implementation
-
-* **Tensorflow**
-
-```python
-optimizer = tf.train.AdamOptimizer(learning_rate=?)
-```
-<!-- {"left" : 0, "top" : 1.87, "height" : 0.83, "width" : 9.48} -->
-
-<br/>
-
-* **Keras**
-
-```python
-keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
-```
-<!-- {"left" : 0, "top" : 4, "height" : 0.45, "width" : 10.25} -->
-
-
----
-## Animations of Various Optimizers - Long valley
-
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-2-long-valley.png" alt="XXX image missing" style="width:45%;float:right"/><!-- {"left" : 6.04, "top" : 1.37, "height" : 3.04, "width" : 3.94} -->
-
-* "Algos without scaling based on gradient information really struggle to break symmetry here - SGD gets no where and Nesterov Accelerated Gradient / Momentum exhibits oscillations until they build up velocity in the optimization direction. Algos that scale step size based on the gradient quickly break symmetry and begin descending quickly"
-
-
-[Link for animation](https://s3.amazonaws.com/elephantscale-public/media/optimizer-animation-2-long-valley.gif)
-
----
-## Animations of Various Optimizers -  Saddle Point
-
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="width:50%;float:right"/><!-- {"left" : 5.89, "top" : 1.37, "height" : 3.16, "width" : 4.07} -->
-
-* "Behavior around a saddle point. NAG/Momentum again like to explore around, almost taking a different path. Adadelta/Adagrad/RMSProp proceed like accelerated SGD."
-
-[Link for animation](https://s3.amazonaws.com/elephantscale-public/media/optimizers-animation-3-saddle-point.gif)
-
-
-
-Notes:  
-- Animations credit to Alec Radford
-- http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html
-- https://imgur.com/a/Hqolp
-
----
-## Optimizers - Takeaway
-
-- __RMSProp__ and __Adam__ are the 'go to' optimizers now
-
-- __RMSprop__ optimization algorithm is preferable to stochastic gradient descent (SGD), because RMSprop automates learning-rate tuning for us
-
-- __Adam__ and __Adagrad__ optimizers also automatically adapt the learning rate during training
-
-- No need to fiddle with learning rates!
----
-
-## Optimizers: Resources
-
-- http://ruder.io/optimizing-gradient-descent/
-
-- [Momentum video tutorial by Andrew Ng](https://www.youtube.com/watch?v=k8fTYJPd3_I)
-
-- [RMSProp video tutorial by Andew Ng](https://www.youtube.com/watch?v=_e-LFe_igno)
-
-- [Animations of various optimizers](http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html)

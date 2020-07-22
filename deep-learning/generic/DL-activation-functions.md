@@ -119,49 +119,75 @@ Notes:
 
 ---
 
-## Vanishing/Exploding Gradients Problems
+## Vanishing Gradients Problem
 
 - As we know backpropagation works by going from output  layer to input layer (in reverse)
-    - It propagates the error gradient backwards
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:50%" /><!-- {"left" : 1.51, "top" : 3.6, "height" : 3.62, "width" : 7.24} -->
+- It propagates the error gradient backwards
+
+- And the weights are adjusted by multiplying by derivatives
+
+- **Animation** : [link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
+
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:55%" /><!-- {"left" : 1.51, "top" : 3.6, "height" : 3.62, "width" : 7.24} -->
 
 
 
 
 ---
 
-## Vanishing/Exploding Gradients Problems
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif" style="width:35%;float:right;" /><!-- {"left" : 6.76, "top" : 1.14, "height" : 1.68, "width" : 3.36} -->
+## Vanishing  Gradient Problem
 
-- As it moves through the layers, the gradients gets smaller and smaller as it reaches lower layers
+<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="40%" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
+
+- Sigmoid and Tanh both suffer from the **Vanishing Gradient** problem.
+
+- The derivative of a Sigmoid is **less than 0.25**
+
+- As the gradients gets multiplied, they will get smaller and smaller
+    - e.g. : 0.02  * 0.01 = 0.0002
+
+- As we propagate that through many layers, that gradient becomes much less.
+
+- And their slopes (derivatives) get closer to zero for large input values
+    - this is called **saturating**
+
+Notes:
+
+---
+## Vanishing Gradients Problem
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/vanishing-gradients-1.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
+
+- Here we are showing how multiplying small numbers yields smaller numbers
+    - first step:  `0.2 * 0.3 = 0.06`
+    - second step: `0.06 * 0.5 = 0.003`
+
+- As we move through the layers, the gradients gets smaller and smaller (approaching zero) as we reach lower layers
 
 - So the Gradient Descent algorithm will leave lower layer connection weights virtually unchanged
     - and training never converges to a solution
     - this is **vanishing gradients problem**
 
-- In some instances, the opposite would happen, the gradients will get larger and larger
-    - so layers will get huge weight updates
-    - and the algorithm will be bouncing around, never converging
-    - this is **exploding gradients** problem
 ---
 
-## Vanishing / Exploding Gradient Problems
+## Exploding Gradient Problem
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="40%" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/vanishing-exploding-gradients-2.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
 
-- Sigmoid and Tanh both suffer from the **Vanishing Gradient** problem.
-     - The derivative of a Sigmoid is less than .25
-     - As we propagate that through many layers, that gradient becomes much less.
-- And their slopes (derivatives) get closer to zero for large input values
-    - this is called **saturating**
+- In some instances, the opposite would happen, the gradients will get larger and larger
 
-- Another issue is sometimes the gradients become too big
-    - **Exploding gradients**
-- One way is to fix the vanishing/exploding gradient problem is repeated scaling.
+- so layers will get huge weight updates
 
-Notes:
+- and the algorithm will be bouncing around, never converging
+    - this is **exploding gradients** problem
+
+- Here we see both effects:
+    - Vanishing gradient: The loss is not improving
+    - Exploding gradient: The loss is actually getting worse
 
 ---
 
@@ -274,13 +300,26 @@ Notes:
 
 ---
 
-## Final Word on ReLUs
+## Final Word on Actications
 
-- So which ReLU to use? :-)
 
--  __`ELU > leaky ReLU (and its variants) > ReLU > tanh > logistic`__
+- So which activation function to use? :-)
+
+<br />
+
+|         | Advantages                                                       | Disadvantages                                                               |
+|---------|------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| Sigmoid | - Will not lead to exploding gradients                           | - will lead to vanishing gradients <br/> - computationally expensive to calcluate |
+| ReLU    | - Not lead to vanishing gradients <br/> - Easy to compute than sigmoid | - May lead to exploding gradients                                           |
+
+- In practice (real world scenarios), ReLU tend to show better convergence performance than sigmoid
+
+-  __`ELU > leaky ReLU (and its variants) > ReLU > tanh > sigmoid`__
 
 - If enough compute power is available, use **cross validation** to tweak hyper parameters like α
+
+Notes:
+- [Relu vs. Sigmoid](https://stats.stackexchange.com/questions/126238/what-are-the-advantages-of-relu-over-sigmoid-function-in-deep-neural-networks)
 
 ---
 
@@ -300,7 +339,7 @@ Notes:
 
 ---
 
-## Actication Function for Binary Classification
+## Activation Function for Binary Classification
 
 <img src="../../assets/images/deep-learning/output-layer-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;" /><!-- {"left" : 5.59, "top" : 1.18, "height" : 2.01, "width" : 4.5} -->
 
@@ -361,33 +400,6 @@ Notes:
 
 
 ---
-## Deciding the Loss and Activation Type Based on the Task
-
-| Classification Type       | Class Mode  | Loss                     | Activation on the last layer |
-|---------------------------|-------------|--------------------------|------------------------------|
-| 1 or 2 class              | binary      | binary_crossentropy      | sigmoid                      |
-| Multi-class, single label | categorical | categorical_crossentropy | softmax                      |
-| Multi-class, multi-label  | categorical | binary_crossentropy      | sigmoid                      |
-
-<!-- {"left" : 0.25, "top" : 1.54, "height" : 2.57, "width" : 9.75} -->
-
-Notes:   
-Source :
-
-
-
----
-
-## Activation Functions Cheatsheet
-
-<img src="../../assets/images/deep-learning/3rd-party/activation-functions-cheat-sheet-1.png" style="width:60%;"/><!-- {"left" : 1.96, "top" : 1.02, "height" : 4.75, "width" : 6.34} -->
-
-
-- source: [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
-
-Notes:
-- source [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
----
 
 ## Activation Functions - Review
 
@@ -401,6 +413,34 @@ Notes:
  * The __Softmax__ activation function is used to output the probability of the result belonging to certain classes.
 
 ---
+## Activation Type Based on the Task
+
+| Problem Type   | Prediction                      | Activation on the last layer |
+|----------------|---------------------------------|------------------------------|
+| Regression     | a number                        | linear, relu                 |
+|                |                                 |                              |
+| Classification | binary (0/1)                    | sigmoid                      |
+|                | Multi-class <br/> (A, B, C , D) | softmax                      |
+
+<!-- {"left" : 0.25, "top" : 1.54, "height" : 2.57, "width" : 9.75} -->
+
+Notes:   
+
+---
+
+
 ## Activation Functions Review
 
 <img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.44, "top" : 2.93, "height" : 3.2, "width" : 9.38} -->
+
+---
+
+## Activation Functions Cheatsheet
+
+<img src="../../assets/images/deep-learning/3rd-party/activation-functions-cheat-sheet-1.png" style="width:60%;"/><!-- {"left" : 1.96, "top" : 1.02, "height" : 4.75, "width" : 6.34} -->
+
+
+- source: [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
+
+Notes:
+- source [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)

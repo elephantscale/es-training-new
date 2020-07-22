@@ -200,22 +200,11 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ---
 
-## Summary of Error / Loss Functions
-
-| Regression                  | Classification          | Embedding      |
-|-----------------------------|-------------------------|----------------|
-| Sum of Squared Errors (SSE) | Binary Class Entrophy   | Cosine Error   |
-| Mean Square Error (MSE)     | Negative Log Likelihood | L1 Hinge Error |
-| Mean Absolute Error (MAE)   | Margin Classifier       |                |
-|                             | Soft Margin Classifier  | &nbsp;         |
-
-<!-- {"left" : 0.25, "top" : 1.64, "height" : 2.69, "width" : 9.75} -->
-
----
-
 ## Loss Functions for Classification
 
 - Binary Class Entrophy
+
+- Categorical Crossentropy / Sparse Categorical Crossentropy
 
 - Negative Log Likelihood
 
@@ -225,7 +214,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ---
 
-## Binary Class Entrophy
+##  Binary Classifications: Binary Class Entrophy
 
 
 - Cross Entropy is used in binary classification scenarios (0 / 1)
@@ -233,50 +222,71 @@ https://isaacchanghau.github.io/post/loss_functions/
 - Measures the divergence of probability distributions between actual and predicted values
 
 
+| Income (input 1) | Credit Score (input 2) | Current Debt (input 3) | Loan Approved (output) |
+|------------------|------------------------|------------------------|------------------------|
+| 40,000           | 620                    | 0                      | 0                      |
+| 80,000           | 750                    | 100,000                | 1                      |
+| 100,000          | 800                    | 50,000                 | 1                      |
+
 <img src="../../assets/images/formulas-equations/binary-class-entrophy-1.png"  style="width:80%;"/><!-- {"left" : 1.7, "top" : 3.11, "height" : 1.28, "width" : 6.85} -->
 
+---
+
+## Multi Class Classifications: Sparse Categorical Crossentropy  
+
+* Here we predict one of many labels (1,2,3)
+
+* Our labels are integers
+
+* Choice: **`sparse_categorical_crossentropy`**
+
+<br />
+
+| a   | b   | c   | d   | label |
+|-----|-----|-----|-----|-------|
+| 6.4 | 2.8 | 5.6 | 2.2 | 1     |
+| 5.0 | 2.3 | 3.3 | 1.0 | 2     |
+| 4.9 | 3.1 | 1.5 | 0.1 | 3     |
 
 ---
 
-## Negative Logarithmic Likelihood
+## Multi Class Classifications: Categorical Crossentropy  
 
-- Used when model outputs probability of each class  
-(digit-1  : 10%,   digit-9 : 90%  ..etc)
+* Here we predict one of many labels (1,2,3)
 
-<img src="../../assets/images/formulas-equations/negative-logarithmic-likelihood-1.png"  style="width:30%;"/><!-- {"left" : 3.15, "top" : 2.95, "height" : 1.6, "width" : 3.95} -->
+* Our labels are **`one-hot-encoded`**
 
+* Choice: **`categorical_crossentropy`**
 
+<br />
 
-Notes:  
-- https://quantivity.wordpress.com/2011/05/23/why-minimize-negative-log-likelihood/
+| a   | b   | c   | d   | label       |
+|-----|-----|-----|-----|------------ |
+| 6.4 | 2.8 | 5.6 | 2.2 | [1,0,0]     |
+| 5.0 | 2.3 | 3.3 | 1.0 | [0,1,0]     |
+| 4.9 | 3.1 | 1.5 | 0.1 | [0,0,1]     |
+
+---
+## Summary of Errors / Loss Functions
+
+| Regression                  | Classification           | Embedding      |
+|-----------------------------|--------------------------|----------------|
+| Sum of Squared Errors (SSE) | Binary Class Entrophy    | Cosine Error   |
+| Mean Square Error (MSE)     | Categorical Crossentropy | L1 Hinge Error |
+| Mean Absolute Error (MAE)   | Margin Classifier        |                |
+|                             | Soft Margin Classifier   |                |
+|                             | Negative Log Likelihood  |                |
 
 ---
 
-## Poisson Loss Function
+## Loss Functions Based on Task
 
-- Derived from [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_regression) which is used for counting data
-
-<img src="../../assets/images/formulas-equations/poisson-loss-function-1.png"  style="width:50%;"/><!-- {"left" : 1.97, "top" : 3.03, "height" : 1.45, "width" : 6.31} -->
-
----
-
-
-## Hinge Loss / Max Margin Loss
-
-- From [Support Vector Machines (SVM)](https://en.wikipedia.org/wiki/Support_vector_machine)
-
-- For binary output
-
-<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-1.png"  style="background:white;width:70%" /><!-- {"left" : 2.47, "top" : 2, "height" : 1.42, "width" : 5.31} -->
-
-
-- For multi-class classifier
-
-<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-2.png"  style="background:white;width:65%" /><!-- {"left" : 2.63, "top" : 4.55, "height" : 1.15, "width" : 5} -->
-
-
-Notes:  
-- https://en.wikipedia.org/wiki/Hinge_loss
+| Problem Type   | Prediction                      | Loss Function            |
+|----------------|---------------------------------|--------------------------|
+| Regression     | a number                        | mse, sse, mae            |
+|                |                                 |                          |
+| Classification | binary (0/1)                    | binary_crossentropy      |
+|                | Multi-class <br/> (A, B, C , D) | categorical_crossentropy |
 
 ---
 
@@ -430,6 +440,21 @@ Notes:
 
 ---
 
+## Summary of Errors / Loss Functions
+
+| Regression                  | Classification           | Embedding      |
+|-----------------------------|--------------------------|----------------|
+| Sum of Squared Errors (SSE) | Binary Class Entrophy    | Cosine Error   |
+| Mean Square Error (MSE)     | Categorical Crossentropy | L1 Hinge Error |
+| Mean Absolute Error (MAE)   | Margin Classifier        |                |
+|                             | Soft Margin Classifier   |                |
+|                             | Negative Log Likelihood  |                |
+
+<!-- {"left" : 0.25, "top" : 1.64, "height" : 2.69, "width" : 9.75} -->
+
+---
+
+
 ## Loss Functions: Resources
 
 - https://heartbeat.fritz.ai/5-regression-loss-functions-all-machine-learners-should-know-4fb140e9d4b0
@@ -441,3 +466,51 @@ Notes:
 - https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html
 
 - https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23
+
+---
+
+# Backup Slides
+
+---
+
+## Negative Logarithmic Likelihood
+
+- Used when model outputs probability of each class  
+(digit-1  : 10%,   digit-9 : 90%  ..etc)
+
+<img src="../../assets/images/formulas-equations/negative-logarithmic-likelihood-1.png"  style="width:30%;"/><!-- {"left" : 3.15, "top" : 2.95, "height" : 1.6, "width" : 3.95} -->
+
+
+
+Notes:  
+- https://quantivity.wordpress.com/2011/05/23/why-minimize-negative-log-likelihood/
+
+---
+
+## Poisson Loss Function
+
+- Derived from [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_regression) which is used for counting data
+
+<img src="../../assets/images/formulas-equations/poisson-loss-function-1.png"  style="width:50%;"/><!-- {"left" : 1.97, "top" : 3.03, "height" : 1.45, "width" : 6.31} -->
+
+---
+
+
+## Hinge Loss / Max Margin Loss
+
+- From [Support Vector Machines (SVM)](https://en.wikipedia.org/wiki/Support_vector_machine)
+
+- For binary output
+
+<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-1.png"  style="background:white;width:70%" /><!-- {"left" : 2.47, "top" : 2, "height" : 1.42, "width" : 5.31} -->
+
+
+- For multi-class classifier
+
+<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-2.png"  style="background:white;width:65%" /><!-- {"left" : 2.63, "top" : 4.55, "height" : 1.15, "width" : 5} -->
+
+
+Notes:  
+- https://en.wikipedia.org/wiki/Hinge_loss
+
+---

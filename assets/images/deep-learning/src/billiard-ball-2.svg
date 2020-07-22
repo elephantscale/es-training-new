@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-10 339 1192 562" width="1192" height="562">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3e8305"/>
+      <stop offset=".8" stop-color="#346e06"/>
+      <stop offset="1" stop-color="#2b5708"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-18.224614 641.0695) rotate(-2) scale(1209.1832)"/>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-04-25 20:53:40 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-10" y="339" width="1192" height="562"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <rect x="-9.189334" y="340.13307" width="1190.376" height="559.67304" fill="url(#Obj_Gradient)"/>
+        <rect x="-9.189334" y="340.13307" width="1190.376" height="559.67304" stroke="#33006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="322.5217" cy="658.2277" r="37.6251385654849" fill="white" fill-opacity=".2031525"/>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(308.52023 541.3365)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#631806" x="0" y="50">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(472.207 541.3365)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#631806" x="0" y="50">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(635.8938 544.4626)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#631806" x="0" y="50">3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(780.957 615.72774)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#631806" x="0" y="70">?</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <circle cx="486.2085" cy="658.2277" r="37.6251385654849" fill="white" fill-opacity=".5"/>
+      </g>
+      <g id="Graphic_42">
+        <circle cx="649.8953" cy="658.2277" r="37.6251385654849" fill="white" fill-opacity=".6648878"/>
+      </g>
+      <g id="Graphic_44">
+        <path d="M 363.68597 576.2147 L 363.68597 573.7104 L 423.5609 573.7104 L 423.5609 562.19644 L 438.93613 574.9626 L 423.5609 587.7287 L 423.5609 576.2147 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_45">
+        <path d="M 526.354 576.2147 L 526.354 573.7104 L 586.2289 573.7104 L 586.2289 562.19644 L 601.60415 574.9626 L 586.2289 587.7287 L 586.2289 576.2147 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(780.957 544.4626)" fill="#631806">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#631806" x="0" y="50">4</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

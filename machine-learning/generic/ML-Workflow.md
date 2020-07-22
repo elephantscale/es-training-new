@@ -162,24 +162,6 @@ Notes:
 
 ---
 
-## Evaluating A Model
-
- * How do we know our model is 'good'?
-
- * One way to measure the performance, is how well it is predicting on 'new data'
-    - Model is trained with 'training data'
-    - Measure its performance on 'test data' (the model hasn't seen 'test data')
-
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
-
-
-
-
-
-Notes:
-
----
-
 ## Under-fitting / Over-fitting
 
  * Here we have 3 models
@@ -219,19 +201,36 @@ Notes:
 
 ---
 
+## Overfitting
+
+<img src="../../assets/images/machine-learning/overfitting-1-learning-addition.png"  style="width:40%;float:right;"/><!-- {"left" : 6.67, "top" : 1.18, "height" : 3.65, "width" : 3.46} -->
+
+
+* Imagine we are teaching addition to young kids
+
+* Rather than learning the 'carry concept' what if the kids just memorized all the examples
+
+* They can do well in problems, they have seen before, but not any thing new
+    - will do well: (17+25),  (28+37)
+    - will not so well (they haven't seen it before):  (45+48)
+
+* This is basically **overfitting**
+
+* When model is **memorizing** training data instead of learning from it.
+---
+
 ## Over-fitting
 
- * Model is 'too complex'  that is 'memorizing' training data, but not **'generalizing' for new data**
- * Hot to detect over-fitting?
+ * How to detect over-fitting?
     - Excellent performance on training data, but poor performance on testing (new) data
-    - E.g.:
-      - Training accuracy : 95%
-      - Testing accuracy : 62%
+    - E.g. :Training accuracy : 95%
+    - Testing accuracy : 62%
  * Resolution:
     - Try a different algorithm / model, that better fits the data
     - Simplify inputs
 
-<img src="../../assets/images/machine-learning/underfit-overfit-02.png" alt="underfit-overfit" style="max-width:50%;"/> <!-- {"left" : 1.05, "top" : 5.95, "height" : 2.72, "width" : 8.16} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-02.png" style="width:75%;"/> <!-- {"left" : 0.69, "top" : 5.01, "height" : 2.96, "width" : 8.87} -->
+
 
 
 

@@ -8,4 +8,4 @@ https://docs.google.com/presentation/d/1EKaG1NyKZgXQMgBwwv8t1D5CjPK9LhTy8Mr1LZU3
 - Streaming :  why do we need a quueue / buffer
 	- https://docs.google.com/presentation/d/1izkxwbfNj9_gItKvxhOOOobvC0bqUIHNxhqnVkUxYRk/edit#slide=id.p6
 
-- 
+- add compression diagram in compression slides

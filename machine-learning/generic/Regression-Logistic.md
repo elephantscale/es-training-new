@@ -383,49 +383,8 @@ Notes:
 
 Notes:
 
-
-
 ---
 
-## Lab: Logistic Regression
+## Doing Logistic Regression
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
-
- *  **Overview:**
-
-     - Practice Logistic Regression
-
- *  **Approximate Time:**
-
-     - 30 mins
-
- *  **Instructions:**
-    - See next few slides for sample code in Python / R / Spark
-    -  **LOGIT-1: Credit card approval (single variable)**
-    -  **LOGIT-2: College Admission (multiple variables)**
-
-Notes:
-
----
-
-## Lab: Cross Validation: Hyper Parameter Tuning
-
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
-
- *  **Overview:**
-
-    - Learn to do Cross Validation
-
- *  **Approximate Time:**
-
-    - 30 mins
-
- *  **Instructions:**
-
-     - Follow appropriate Python / R / Spark instructions
-
-     -  **Cross Validation 1: Tuning the model**
-
-
-Notes:
-
+* Next section will show an example on how to do logistic regression 

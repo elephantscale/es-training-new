@@ -102,9 +102,7 @@ source : https://photographingspace.com/ap-color/
 ---
 ## Fully Connected Network's Limitations
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/fully-connected-2b.png" style="width:40%;float:right;"/><!-- {"left" : 3.22, "top" : 3.87, "height" : 3.65, "width" : 3.81} -->
+<img src="../../assets/images/deep-learning/fully-connected-2b.png" style="width:40%;float:right;"/><!-- {"left" : 6.26, "top" : 1.06, "height" : 3.65, "width" : 3.81} -->
 
 - Assume we are analyzing a 200px by 200px image
     - Image has 40,000 (200x200) pixels
@@ -130,21 +128,20 @@ source : https://photographingspace.com/ap-color/
 
 * Each layer has 1.6 billion  connections; and that many weights to learn
 * How ever, a 200px x 200px image is very small!
-* Our phones these days can take HD pictures (3000 x 2000 pixels)
 * 4K picture is ~ 4000 x 2000 pixels (see picture below, credit [wikimedia](https://commons.wikimedia.org/wiki/File:8K,_4K,_2K,_UHD,_HD,_SD.png))
 * Can you compute how many weights we will need to compute for a 4K image?
+* **Quiz**: Take a picture with your phone.  What is the size? (probably 3000 x 2000 pixels)
 * __So we need a another approach__
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/8K_4K_2K_UHD_HD_SD.png"  style="width:50%;"/>
+<img src="../../assets/images/deep-learning/3rd-party/8K_4K_2K_UHD_HD_SD.png"  style="width:40%;"/><!-- {"left" : 2.65, "top" : 5.72, "height" : 2.82, "width" : 4.94} -->
+
 
 ---
 
 
 ## Famous 'Cat Experiment'
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/cat-visaul-cortex-1.jpeg"  style="width:50%;float:right;"/><!-- {"left" : 3.81, "top" : 6.33, "height" : 2.25, "width" : 3.41} -->
+<img src="../../assets/images/deep-learning/3rd-party/cat-visaul-cortex-1.jpeg"  style="width:50%;float:right;"/><!-- {"left" : 7.54, "top" : 1.08, "height" : 1.66, "width" : 2.5} -->
 
 * David H. Hubel and Torsten Wiesel performed experiments on cats (1958/1959) that gave us crucial understanding of brain's visual cortex.  ([paper](https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/jphysiol.1959.sp006308))
 
@@ -169,9 +166,9 @@ Notes:
 
 ## Our Visual Cortex is Hierarchical
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/deep-learning/3rd-party/cat-visaul-cortex-2.jpeg" style="width:50%;float:right;" /><!-- {"left" : 2.69, "top" : 2.57, "height" : 1.61, "width" : 4.87} -->
+<img src="../../assets/images/deep-learning/3rd-party/cat-visaul-cortex-2.jpeg" style="width:50%;float:right;" /><!-- {"left" : 6.2, "top" : 1.28, "height" : 1.26, "width" : 3.81} -->
+
 
 * First level neurons detect simple shapes
 
@@ -179,7 +176,7 @@ Notes:
 
 <br clear="all" />
 
-<img src="../../assets/images/deep-learning/3rd-party/hubel-experiment-video.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/><!-- {"left" : 2.5, "top" : 4.76, "height" : 2.71, "width" : 5.25} -->
+<img src="../../assets/images/deep-learning/3rd-party/hubel-experiment-video.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/><!-- {"left" : 2.5, "top" : 4, "height" : 2.71, "width" : 5.25} -->
 
 
 [Link to video](https://www.youtube.com/watch?v=IOHayh06LJ4)
@@ -198,267 +195,9 @@ Notes:
     - Lower level neurons, visualize simple features like lines and shapes
     - Higher level neurons recognize complex shapes
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/visual-cortex-hiearchical-1.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 0.41, "top" : 4.98, "height" : 2.25, "width" : 9.43} -->
+<img src="../../assets/images/deep-learning/visual-cortex-hiearchical-1.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 1.02, "top" : 6.25, "height" : 1.96, "width" : 8.21} -->
 
 
-
----
-
-# Convolutions
-
----
-## A Little History: Yann LeCun
-
-  * Yann LeCun was working on the problem of recognizing digits: MNIST
-    - Recognize zip codes in letters for US Postal Service
-    - Recognize digits in bank checks
-
-  * Classical MLP networks were unable to get very high accuracy on the problem.
-    - 96,97% was the best such networks could do.
-    - LeCun proposed a new architecture that could be over 99% better.
-    - The difference between 96% and 99+% is a big deal!
-
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/digit-recognition-1.png" style="width:40%;" /><!-- {"left" : 3.27, "top" : 4.11, "height" : 3.71, "width" : 3.71} -->
----
-## A Little History: Yann LeCun
-
-  * LeCun's new architecture is called LeNet ([1998 paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf))
-    - Named after himself!
-    - LeNet became the basis of a transfer learning architecture (we will discuss later)
-
-  * Lecun's architecture had 2 new elements
-    - Convolutional layer
-    - Pooling layer
-
-Notes:  
-
-
----
-
-## Convolution
-
-* Imagine a small patch being slid across the input image. This sliding is called  **convolving** .
-
-* It is similar to a flashlight moving from the top left end progressively scanning the entire image. This patch is called the  **filter/kernel** . The area under the filter is the receptive field.
-
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png"  style="width:30%;" /><!-- {"left" : 3.27, "top" : 4.11, "height" : 3.71, "width" : 3.71} -->
-<img src="../../assets/images/deep-learning/CNN-filter-1.png"  style="width:35%;" /><!-- {"left" : 3.27, "top" : 4.11, "height" : 3.71, "width" : 3.71} -->
-
----
-
-## Convolution Example
-
-<!-- TODO shiva -->
-* Here we are analyzing a picture of elephant
-
-* Assume each neuron is 'trained' recognize a certain feature (like ears / trunks / tail ..etc)
-
-* As we scan through the image, the neurons will **'recognize the features'**
-
-* And putting their findings together, we can conclude that we are seeing an elephant
-
-<img src="../../assets/images/deep-learning/CNN-elephant.png"  style="width:60%;" /> <!-- {"left" : 0.49, "top" : 2.38, "height" : 4.3, "width" : 9.27} -->
-
----
-
-## Convolution Example
-
-<!-- TODO shiva -->
-
-* The image shows two kernels - vertical and horizontal filters.
-    - Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter
-* The **vertical filter** accentuates vertical lines while subduing horizontal lines (**map-1**)
-* The **horizontal filter** accentuates horizontal lines (**map-2**)
-
-<img src="../../assets/images/deep-learning/3rd-party/CNN-convolutions-example-3.png"  style="width:50%;" /> <!-- {"left" : 1.48, "top" : 3.14, "height" : 4.61, "width" : 7.29} -->
-
-
-Notes:
-
----
-
-## Convolution Example
-
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/Face-Recognition-2.png"  style="width:40%;float:right;" /><!-- {"left" : 3.27, "top" : 4.11, "height" : 3.71, "width" : 3.71} -->
-
-- Each layer builds on previous layer's work
-
-- First layer detects simple shapes - horizontal lines, slanted lines ..etc
-
-- Second layer recognizes more complex features: eyes / nose ..etc
-
-- Third layer recognizes faces
-
----
-## Convolution Example
-
-- Here we are identifying 'edges' of the picture by doing convolution
-
-<img src="../../assets/images/deep-learning/3rd-party/convolution-example-1.png" style="width:60%;"/><!-- {"left" : 3.53, "top" : 1.61, "height" : 3.15, "width" : 3.18} -->
-
-
-Notes:
-Image source: https://timdettmers.com/2015/03/26/convolution-deep-learning/
-
----
-## Convolutional Layer
-
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:30%;float:right;" /> &nbsp; &nbsp; <!-- {"left" : 3.27, "top" : 4.11, "height" : 3.71, "width" : 3.71} -->
-
-- Here we represent our neurons in a 2D grid format (instead of linear before), this makes visualizing connections easier
-
-- Neurons in the convolutional layer are NOT connected to every single neuron in the layer before
-
-- Instead each neuron is connected to a few pixels/neurons in their **receptive field**
-    * The idea is to detect local features in a smaller section of the input space, section by section to eventually cover the entire image.
-
-- This allows the first convolutional layer to concentrate on low level features
-
-- Next layers assemble inputs from previous layers into higher level features
-
----
-
-## Convolutional Process
-
-* Here we see that in second layer, the neurons only read from a few neurons from previous layer
-
-* They read from their 'field of view'
-
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:20%;" /> <!-- {"left" : 0.48, "top" : 5.45, "height" : 1.85, "width" : 1.91} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png"  style="width:20%;" /> <!-- {"left" : 2.98, "top" : 5.45, "height" : 1.85, "width" : 1.8} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png"  style="width:20%;" /> <!-- {"left" : 5.49, "top" : 5.45, "height" : 1.85, "width" : 1.79} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png"  style="width:20%;" /><!-- {"left" : 7.98, "top" : 5.45, "height" : 1.85, "width" : 1.79} -->
-
----
-## Fully Connected vs. Convolutional
-
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/fully-connected-1a.png"  style="width:25%;"/><!-- {"left" : 3.53, "top" : 1.61, "height" : 3.15, "width" : 3.18} -->
-
-<img src="../../assets/images/deep-learning/Convolutional-1.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 0.48, "top" : 5.45, "height" : 1.85, "width" : 1.91} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 2.98, "top" : 5.45, "height" : 1.85, "width" : 1.8} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 5.49, "top" : 5.45, "height" : 1.85, "width" : 1.79} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png" alt="XXX image missing" style="background:white;max-width:20%;" /><!-- {"left" : 7.98, "top" : 5.45, "height" : 1.85, "width" : 1.79} -->
-
-
-Notes:
-
----
-
-## Fully Connected vs. Convolutional
-
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/fully-connected-1a.png"  style="width:25%;float:right;"/><!-- {"left" : 3.53, "top" : 1.61, "height" : 3.15, "width" : 3.18} -->
-
-<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:25%;float:right;clear:both;" />
-
-* Fully connected layers connect to every neuron from previous layer
-    - This results in too many connections
-
-* But in convolutional layers, the number of connections is greatly reduced
-    - Makes computationally feasible
-
-
----
-
-## Convolutional Layer : Local Receptive Field
-
-- Here each neuron connects to neurons in its input / perceptive field
-
-<img src="../../assets/images/deep-learning/convolutional-layers-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-
-
----
-## Process of Convolution
-
-<!-- TODO shiva -->
-
-* On the left we have the image matrix  (6x6)
-
-* On the right we have filter/kernel matrix (3x3).  Also known as weight matrix (Wk)
-
-* The weight matrix is a filter to extract some particular features from the original image. It could be for  extracting curves, identifying a specific color, or recognizing a particular voice.
-
-
-<img src="../../assets/images/deep-learning/convolution-process-2.png" style="width:40%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-<img src="../../assets/images/deep-learning/convolution-process-1.png" style="width:30%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-
-
----
-## Process of Convolution (Contd.)
-
-* We use matrix multiplication to multiply input matrix vs. weight matrix  
-__`I .  W`__
-* When the weighted matrix starts from the top left corner of the input layer, the output value is calculated as:  
-__`(81x0+2x1+209x1)+(24x1+56x0+108X0)+(91x1+0x0+189x1) = 515`__
-
-<img src="../../assets/images/deep-learning/convolution-process-3.png" style="width:30%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-<img src="../../assets/images/deep-learning/convolution-process-1.png" style="width:30%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-
-
-<img src="../../assets/images/deep-learning/convolution-process-4a.png" style="width:30%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-
----
-
-## Process of Convolution (Contd.)
-
-<!-- TODO shiva -->
-
- * The filter then moves by 1 pixel to the next receptive field and the process is repeated. The output layer obtained after the filter slides over the entire image would be a 4X4 matrix.
-
- * This output is called an  **activation map/ feature map**
-
-<img src="../../assets/images/deep-learning/convolution-process-5.png" style="width:30%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-<img src="../../assets/images/deep-learning/convolution-process-1.png" style="width:30%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-
-
-<img src="../../assets/images/deep-learning/convolution-process-4b.png" style="width:30%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-
-
----
-
-## Stride
-
-<!-- TODO shiva -->
-* The distance between two consecutive receptive fields is called the  **stride** .
-
-* In this example stride is 1 since the receptive field was moved by 1 pixel at a time.
-
-<img src="../../assets/images/deep-learning/convolution-process-stride-1.png" style="width:50%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
-
-Notes:
-
----
-## Zero Padding
-
-- It is common to add zeros around the image (black pixels)
-
-- Called 'zero padding'
-
-<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png"  style="width:55%;" /> <!-- {"left" : 1.91, "top" : 2.88, "height" : 4.79, "width" : 6.43} -->
-
----
-
-## Zero Padding
-
- * Assumptions
-   - Output image is `32 x 32 x 3`
-   - Filter size is `5 x 5 x 3`
- * To achieve the **same** size:
-   - You need padding of ` (K - 1) / 2`
-   - In this case `(5 - 1) / 2 = 2`
- * We pad a "frame" around the image
-   - black pixels
-   - size 2
-   - Image is then `36 x 36 x 3`
- * Output Size:
-   - `O = ((W - K - 2P) / S) + 1`
-
-Notes:
 
 ---
 
@@ -513,28 +252,297 @@ Notes:
 
 ---
 
-## Filters  / Kernels
-
-- CNNs use filters to detect patterns in images
-
-- Imagine the filter like a flashlight shining on the image
-
-- As 'the flashlight'  'moves' along the image, it 'convolves' the image
-    - Output from a filter is called **feature map**
-
-- CNN learns filters during training phase
-
-<img src="../../assets/images/deep-learning/CNN-filter-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:30%;" /><!-- {"left" : 2.95, "top" : 4.04, "height" : 4.02, "width" : 4.35} -->
-
-
-
-Notes:  
-- https://www.saama.com/blog/different-kinds-convolutional-filters/
+# Convolutions
 
 ---
 
+## A Little History: Yann LeCun
+
+  * Yann LeCun was working on the problem of recognizing digits: MNIST
+    - Recognize zip codes in letters for US Postal Service
+    - Recognize digits in bank checks
+
+  * Classical MLP networks were unable to get very high accuracy on the problem.
+    - 96,97% was the best such networks could do.
+    - LeCun proposed a new architecture that could be over 99% better.
+    - The difference between 96% and 99+% is a big deal!
+
+<img src="../../assets/images/deep-learning/digit-recognition-1.png" style="width:50%;" /><!-- {"left" : 0.38, "top" : 6.26, "height" : 1.13, "width" : 9.49} -->
 
 
+
+
+---
+
+## A Little History: Yann LeCun
+
+  * LeCun's new architecture is called LeNet ([1998 paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf))
+    - Named after himself!
+    - LeNet became the basis of a transfer learning architecture (we will discuss later)
+
+  * Lecun's architecture had 2 new elements
+    - Convolutional layer
+    - Pooling layer
+
+Notes:  
+
+
+---
+
+## Convolution
+
+* Imagine a small patch being slid across the input image. This sliding is called  **convolving** .
+
+* It is similar to a flashlight moving from the top left end progressively scanning the entire image. This patch is called the  **filter/kernel**. The area under the filter is the receptive field.
+
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png"  style="width:30%;" /><!-- {"left" : 0.93, "top" : 4.05, "height" : 3.32, "width" : 3.32} -->   &nbsp; &nbsp;  <img src="../../assets/images/deep-learning/CNN-filter-1.png"  style="width:35%;" /><!-- {"left" : 5.73, "top" : 4.05, "height" : 3.32, "width" : 3.59} -->
+
+---
+
+## Convolution Example: Edge Detection
+
+* Here we are applying an edge filter to an image
+
+* The resulting image has edges 'highlighted'
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-edge-filter-1.png"  style="width:20%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-edge-detection-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+---
+## Convolution Example: Vertical Edges Detection
+
+* The resulting image has vertical edges highlighted
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-vertical-filter-1.png"  style="width:20%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-vertical-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+---
+
+## Convolution Example: Horizontal Edges Detection
+
+* The resulting image has horizontal edges highlighted
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-horizontal-filter-1.png"  style="width:20%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-horizontal-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+---
+
+## Convolution Example: Edges
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-edge-filter-1.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-edge-detection-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-vertical-filter-1.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-vertical-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-horizontal-filter-1.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-horizontal-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+---
+
+## Learning Features
+
+* Here we are analyzing a picture of elephant
+
+* Assume each neuron is 'trained' recognize a certain feature (like ears / trunks / tail ..etc)
+
+* As we scan through the image, the neurons will **'recognize the features'**
+
+* And putting their findings together, we can conclude that we are seeing an elephant
+
+<img src="../../assets/images/deep-learning/CNN-elephant.png"  style="width:60%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+
+
+
+---
+
+## Learning Features
+
+<img src="../../assets/images/deep-learning/3rd-party/Face-Recognition-2.png"  style="width:40%;float:right;" /> <!-- {"left" : 6.23, "top" : 1.1, "height" : 5.04, "width" : 3.81} -->
+
+
+- Each layer builds on previous layer's work
+
+- First layer detects simple shapes - horizontal lines, slanted lines ..etc
+
+- Second layer recognizes more complex features: eyes / nose ..etc
+
+- Third layer recognizes faces
+
+---
+
+## Convolutional Layer
+
+<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:30%;float:right;" /><!-- {"left" : 7.64, "top" : 1, "height" : 2.42, "width" : 2.34} -->
+
+
+- Here we represent our neurons in a 2D grid format (instead of linear before), this makes visualizing connections easier
+
+- Neurons in the convolutional layer are NOT connected to every single neuron in the layer before
+
+- Instead each neuron is connected to a few pixels/neurons in their **receptive field**
+    * The idea is to detect local features in a smaller section of the input space, section by section to eventually cover the entire image.
+
+- This allows the first convolutional layer to concentrate on low level features
+
+- Next layers assemble inputs from previous layers into higher level features
+
+---
+
+## Convolutional Process
+
+* Here we see that in second layer, the neurons only read from a few neurons from previous layer
+
+* They read from their 'field of view'
+
+<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:20%;" /> <!-- {"left" : 0.48, "top" : 3.6, "height" : 1.85, "width" : 1.91} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png"  style="width:20%;" /> <!-- {"left" : 2.98, "top" : 3.6, "height" : 1.85, "width" : 1.8} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png"  style="width:20%;" /> <!-- {"left" : 5.49, "top" : 3.6, "height" : 1.85, "width" : 1.79} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png"  style="width:20%;" /><!-- {"left" : 7.98, "top" : 3.6, "height" : 1.85, "width" : 1.79} -->
+
+---
+## Fully Connected vs. Convolutional
+
+<img src="../../assets/images/deep-learning/fully-connected-1a.png"  style="width:25%;"/><!-- {"left" : 3.53, "top" : 1.61, "height" : 3.15, "width" : 3.18} -->
+
+<img src="../../assets/images/deep-learning/Convolutional-1.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 0.48, "top" : 5.45, "height" : 1.85, "width" : 1.91} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 2.98, "top" : 5.45, "height" : 1.85, "width" : 1.8} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 5.49, "top" : 5.45, "height" : 1.85, "width" : 1.79} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png" alt="XXX image missing" style="background:white;max-width:20%;" /><!-- {"left" : 7.98, "top" : 5.45, "height" : 1.85, "width" : 1.79} -->
+
+
+Notes:
+
+---
+
+## Fully Connected vs. Convolutional
+
+<img src="../../assets/images/deep-learning/fully-connected-1a.png"  style="width:25%;float:right;"/><!-- {"left" : 7.9, "top" : 1.16, "height" : 2.38, "width" : 2.31} -->
+
+
+<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:25%;float:right;clear:both;" /><!-- {"left" : 7.9, "top" : 3.8, "height" : 2.38, "width" : 2.31} -->
+
+
+* Fully connected layers connect to every neuron from previous layer
+    - This results in too many connections
+
+* But in convolutional layers, the number of connections is greatly reduced
+    - Makes computationally feasible
+
+
+---
+
+## Convolutional Layer: Local Receptive Field
+
+- Here each neuron connects to neurons in its input / perceptive field
+
+<img src="../../assets/images/deep-learning/convolutional-layers-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;" /><!-- {"left" : 1.48, "top" : 2.86, "height" : 3.92, "width" : 7.29} -->
+
+
+---
+
+## How is Convolution Performed?
+
+* The following slides illustrate the math behind convolutions
+
+* Provided as a reference
+
+* Feel free to skip / go-over depending on the time constraint
+
+---
+
+## Process of Convolution
+
+* On the left we have the image matrix  (6x6)
+
+* On the right we have filter/kernel matrix (3x3).  Also known as weight matrix (Wk)
+
+* The weight matrix is a filter to extract some particular features from the original image. It could be for  extracting curves, identifying a specific color, or recognizing a particular voice.
+
+
+<img src="../../assets/images/deep-learning/convolution-process-2.png" style="width:40%;" /><!-- {"left" : 0.48, "top" : 5.01, "height" : 2.41, "width" : 4.47} -->
+<img src="../../assets/images/deep-learning/convolution-process-1.png" style="width:30%;" /><!-- {"left" : 5.3, "top" : 5.04, "height" : 2.41, "width" : 4.47} -->
+
+
+---
+## Process of Convolution (Contd.)
+
+* We use matrix multiplication to multiply input matrix vs. weight matrix  
+__`I .  W`__
+* When the weighted matrix starts from the top left corner of the input layer, the output value is calculated as:  
+__`(81x0+2x1+209x1)+(24x1+56x0+108X0)+(91x1+0x0+189x1) = 515`__
+
+<img src="../../assets/images/deep-learning/convolution-process-3.png" style="width:30%;" /><!-- {"left" : 1.25, "top" : 3.95, "height" : 2.45, "width" : 4.55} -->
+<img src="../../assets/images/deep-learning/convolution-process-1.png" style="width:30%;" /><!-- {"left" : 6.05, "top" : 4.82, "height" : 1.59, "width" : 2.96} -->
+
+
+<img src="../../assets/images/deep-learning/convolution-process-6.png" style="width:25%;" /><!-- {"left" : 3.22, "top" : 6.77, "height" : 2.04, "width" : 3.8} --> &nbsp;  &nbsp;
+<img src="../../assets/images/deep-learning/convolution-process-4a.png" style="width:25%;" /><!-- {"left" : 3.22, "top" : 6.77, "height" : 2.04, "width" : 3.8} -->
+
+---
+
+## Process of Convolution (Contd.)
+
+ * The filter then moves by 1 pixel to the next receptive field and the process is repeated. The output layer obtained after the filter slides over the entire image would be a 4X4 matrix.
+
+ * This output is called an  **activation map/ feature map**
+
+<img src="../../assets/images/deep-learning/convolution-process-5.png" style="width:30%;" /><!-- {"left" : 1.41, "top" : 3.87, "height" : 2.39, "width" : 4.44} -->
+<img src="../../assets/images/deep-learning/convolution-process-1.png" style="width:30%;" /><!-- {"left" : 6.03, "top" : 4.75, "height" : 1.51, "width" : 2.81} -->
+
+
+<img src="../../assets/images/deep-learning/convolution-process-4b.png" style="width:30%;" /><!-- {"left" : 3.54, "top" : 6.61, "height" : 2.12, "width" : 3.94} -->
+
+
+---
+
+## Stride
+
+* The distance between two consecutive receptive fields is called the  **stride** .
+
+* In this example stride is 1 since the receptive field was moved by 1 pixel at a time.
+
+<img src="../../assets/images/deep-learning/convolution-process-stride-1.png" style="width:50%;" /><!-- {"left" : 1.88, "top" : 3.54, "height" : 3.95, "width" : 6.49} -->
+
+
+
+Notes:
+
+---
+## Zero Padding
+
+- It is common to add zeros around the image (black pixels)
+
+- Called 'zero padding'
+
+- This ensures 'corner pixels' are processed properly
+
+<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png"  style="width:55%;" /> <!-- {"left" : 1.91, "top" : 2.88, "height" : 4.79, "width" : 6.43} -->
+
+---
+
+## Zero Padding
+
+ * Assumptions
+   - Output image is `32 x 32 x 3`
+   - Filter size is `5 x 5 x 3`
+ * To achieve the **same** size:
+   - You need padding of ` (K - 1) / 2`
+   - In this case `(5 - 1) / 2 = 2`
+ * We pad a "frame" around the image
+   - black pixels
+   - size 2
+   - Image is then `36 x 36 x 3`
+ * Output Size:
+   - `O = ((W - K - 2P) / S) + 1`
+
+Notes:
+
+---
 ## Convolution Parameters
 
   * Three Hyperparameters control the convolution:
@@ -554,9 +562,55 @@ Notes:
 
 ---
 
-## Stacking Feature Maps
 
-<!-- TODO shiva -->
+## Convolutions: Further Reading
+
+* [Tutorial on convolutions](https://www.youtube.com/watch?v=XuD4C8vJzEQ&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=2) by Andrew Ng
+
+* [Tutorial on padding](https://www.youtube.com/watch?v=smHa2442Ah4&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=4) by Andrew Ng
+
+* [Tutorial on strides](https://www.youtube.com/watch?v=tQYZaDn_kSg&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=5) by Andrew Ng
+
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
+
+---
+
+
+## Filters  / Kernels
+
+- CNNs use filters to detect patterns in images
+
+- Imagine the filter like a flashlight shining on the image
+
+- As 'the flashlight'  'moves' along the image, it 'convolves' the image
+    - Output from a filter is called **feature map**
+
+- CNN learns filters during training phase
+
+<img src="../../assets/images/deep-learning/CNN-filter-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:30%;" /><!-- {"left" : 2.95, "top" : 4.04, "height" : 4.02, "width" : 4.35} -->
+
+
+
+Notes:  
+- https://www.saama.com/blog/different-kinds-convolutional-filters/
+
+---
+## Filters in Computer Vision
+
+* We just saw a single filter can extract a certain **pattern or feature**
+
+* Convolutional neural networks (CNN) do not learn just a single filter. In fact, they learn multiple features in parallel for a given input
+
+* Typically in practice CNNs learn from 32 to 512 filters
+
+* This gives the model 32, or even 512, different ways of extracting features from an input
+
+* In other words CNNs "learn to see" features from given input
+
+---
+
+
+## Stacking Feature Maps
 
 * So far, we have seen Convolutional layer as a thin 2D layer
 * In fact, **Convolutional layer is composed of  series of feature maps**
@@ -566,9 +620,7 @@ Notes:
 * Here we see
     - 3 channels x 5 filters  = 15 feature maps
 
-<img src="../../assets/images/deep-learning/CNN.png"  style="width:70%;" /> <!-- {"left" : 0.71, "top" : 4.36, "height" : 2.99, "width" : 8.83} -->
-
-
+<img src="../../assets/images/deep-learning/CNN.png"  style="width:70%;" />
 
 
 ---
@@ -583,7 +635,7 @@ Notes:
 
 ## Stacking Multiple Feature Maps
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:40%;float:right;" />  <!-- {"left" : 6.03, "top" : 1.72, "height" : 2.64, "width" : 4.02} -->
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="XXX image missing" style="background:white;max-width:40%;float:right;" />  <!-- {"left" : 5.76, "top" : 1.18, "height" : 2.78, "width" : 4.24} -->
 
  * Within a single feature map all neurons share the same parameters (weights and bias term)
     - This simplifies training
@@ -604,9 +656,8 @@ Notes:
 
 ## Stacking Multiple Feature Maps (Contd.)
 
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png"  style="width:50%;float:right;" /><!-- {"left" : 5.6, "top" : 1.18, "height" : 2.85, "width" : 4.36} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png"  style="width:50%;float:right;" /> <!-- {"left" : 5.24, "top" : 2.13, "height" : 3.15, "width" : 4.81} -->
 
  * Images that are greyscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
 
@@ -622,10 +673,7 @@ Notes:
 
 ## Stacking Multiple Feature Maps (Contd.)
 
-
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" style="width:40%;float:right;" /> <!-- {"left" : 5.24, "top" : 2.13, "height" : 3.15, "width" : 4.81} -->
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" style="width:40%;float:right;" /><!-- {"left" : 5.83, "top" : 1.18, "height" : 2.75, "width" : 4.21} -->
 
  * The fact that all neurons in a feature map has just one set of parameters dramatically reduces the number of parameters needed.
 
@@ -653,6 +701,14 @@ Notes:
 Notes:
 
 ---
+
+## Convolutions: Further Reading
+
+* [Tutorial on convolutions on volumes](https://www.youtube.com/watch?v=KTB_OFoAQcc&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=6) by Andrew Ng
+
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
+
+---
 ## Convolutions Summary
 
  * Images have too many features for a network to learn.
@@ -674,6 +730,7 @@ Notes:
 https://en.wikipedia.org/wiki/Kernel_(image_processing)
 
 ---
+
 # Pooling
 ---
 
@@ -685,7 +742,7 @@ https://en.wikipedia.org/wiki/Kernel_(image_processing)
 
 - Here we are shrinking the picture, while still keeping the prominent feature (lighthouse)
 
-<img src="../../assets/images/deep-learning/3rd-party/lighthouse-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /><!-- {"left" : 0.68, "top" : 3.67, "height" : 2.3, "width" : 3.45} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:10%;" /><!-- {"left" : 4.95, "top" : 4.09, "height" : 1.67, "width" : 1.67} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/lighthouse-1-small.jpg" alt="XXX image missing" style="background:white;max-width:100%;width:20%;" /><!-- {"left" : 7.25, "top" : 4.15, "height" : 1.54, "width" : 2.32} -->
+<img src="../../assets/images/deep-learning/3rd-party/lighthouse-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;width:40%;" /><!-- {"left" : 0.68, "top" : 4.52, "height" : 2.3, "width" : 3.45} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:10%;" /><!-- {"left" : 4.95, "top" : 4.94, "height" : 1.67, "width" : 1.67} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/lighthouse-1-small.jpg" alt="XXX image missing" style="background:white;max-width:100%;width:20%;" /><!-- {"left" : 7.25, "top" : 5, "height" : 1.54, "width" : 2.32} -->
 
 
 ---
@@ -749,8 +806,10 @@ Notes:
 
 ## Do We Need Pooling?
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/convolution-process-stride-1.png" style="width:30%;float:right;" /> <!-- {"left" : 2.1, "top" : 4.88, "height" : 2.59, "width" : 2.8} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/pooling-2.png" a style="width:30%;float:right;clear:both;" /><!-- {"left" : 5.19, "top" : 4.88, "height" : 2.59, "width" : 2.8} -->
+<img src="../../assets/images/deep-learning/convolution-process-stride-1.png" style="width:30%;float:right;" /> <!-- {"left" : 7.65, "top" : 1.02, "height" : 2.28, "width" : 2.46} -->
+
+<img src="../../assets/images/deep-learning/pooling-2.png" a style="width:30%;float:right;clear:both;" /><!-- {"left" : 7.65, "top" : 3.4, "height" : 2.28, "width" : 2.46} -->
+
  * We need to reduce dimensionality somehow!
 
  * Possible to use CONV Layer with Stride=2 instead of a pool.
@@ -762,6 +821,37 @@ Notes:
 
  * Recent trends have led to all convolutional networks
    - Use a convolution layer with stride greater than 1
+
+---
+
+## Pooling: Further Reading
+
+* [Tutorial on pooling](https://www.youtube.com/watch?v=8oOgPUO-TBY&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=9) by Andrew Ng
+
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
+
+---
+
+## Lab: Explore Convolutions and Pooling
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Understand convolutions and pooling
+
+* **Approximate run time:**
+    - 15-20 mins
+
+* **Instructions:**
+    - Instructor: Please demo **convolutions** lab
+
+
+Notes:
+
+---
+
+# Convolutional Neural Networks (CNNs)
 
 ---
 
@@ -818,6 +908,14 @@ Notes:
 
 
 ---
+## Convolutions Further Reading
+
+* Watch this brilliant [tutorial series](https://www.youtube.com/watch?v=ArPaAX_PhIs&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=2&t=0s) on convolutions by Andrew Ng
+
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
+
+
+---
 
 ## Example Convolutional Network
 
@@ -825,8 +923,7 @@ Notes:
 
 - And a final Softmax layer is giving the probabilities of the image class
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/CNN-design-example-1.png"  style="width:80%;" /> <!-- {"left" : 1.02, "top" : 2.57, "height" : 3.94, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-design-example-1.png"  style="width:80%;" /><!-- {"left" : 1.02, "top" : 3.62, "height" : 3.94, "width" : 8.21} -->
 
 
 Notes:
@@ -845,9 +942,11 @@ Notes:
 
 - It's quite likely that the initial iteration would have close to 0% accuracy. Repeating the process several times, however, can yield a highly accurate model (> 90%).
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/deep-learning/backpropagation-5.gif"  style="width:50%;" /> <!-- {"left" : 1.02, "top" : 2.57, "height" : 3.94, "width" : 8.21} -->
+ * **Animation** : [link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
+
+<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:30%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+
 
 ---
 

@@ -550,32 +550,6 @@ Notes:
 Notes:
 
 
-
----
-
-## Lab: KMeans
-
- *  **Instructor:**
-     - Recommended to do the Uber lab as the last lab for the class
-
- *  **Overview:**
-    - Experiment with KMeans
-
- *  **Approximate time:**
-    - 20 - 40 mins
-
- *  **Instructions:**
-     - See next few slides for sample code in Python / R / Spark instructions
-     - KMEANS-1: mtcars
-     - KMEANS-2: Uber trips
-     - Bonus Lab: KMEANS-3: Walmart shopping data
-
-
-Notes:
-
-
-
-
 ---
 
 ## K-Means: Further Reading
@@ -587,3 +561,9 @@ Notes:
  * Wikipedia: [https://en.wikipedia.org/wiki/K-means_clustering](https://en.wikipedia.org/wiki/K-means_clustering)
 
 Notes:
+
+---
+
+## Doing Clustering
+
+* The following section will show sample code on how to implement Clustering algorithms

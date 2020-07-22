@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="626 -12 1419 742" width="1419" height="742">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#6300c7">
+      <g>
+        <path d="M 2.5142857 0 L 0 -.9428571 L 0 .9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#673ec7">
+      <g>
+        <path d="M 2.5142857 0 L 0 -.9428571 L 0 .9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="626" y="-12">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="3.488"/>
+      <feOffset in="blur" result="offset" dx="6" dy="6"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-04-28 16:55:31 +0000</dc:date>
+  </metadata>
+  <g id="RNN-rolling" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke="none">
+    <title>RNN-rolling</title>
+    <g id="RNN-rolling: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_8">
+        <path d="M 1131.9207 254.99266 L 1302.3646 254.99266 C 1312.858 254.99266 1321.3646 263.49925 1321.3646 273.99266 L 1321.3646 444.43657 C 1321.3646 454.93 1312.858 463.4366 1302.3646 463.4366 L 1131.9207 463.4366 C 1121.4273 463.4366 1112.9207 454.93 1112.9207 444.43657 L 1112.9207 273.99266 C 1112.9207 263.49925 1121.4273 254.99266 1131.9207 254.99266 Z" fill="#033399"/>
+        <path d="M 1131.9207 254.99266 L 1302.3646 254.99266 C 1312.858 254.99266 1321.3646 263.49925 1321.3646 273.99266 L 1321.3646 444.43657 C 1321.3646 454.93 1312.858 463.4366 1302.3646 463.4366 L 1131.9207 463.4366 C 1121.4273 463.4366 1112.9207 454.93 1112.9207 444.43657 L 1112.9207 273.99266 C 1112.9207 263.49925 1121.4273 254.99266 1131.9207 254.99266 Z" stroke="#7621bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 647.28266 254.99266 L 817.7266 254.99266 C 828.22 254.99266 836.7266 263.49925 836.7266 273.99266 L 836.7266 444.43657 C 836.7266 454.93 828.22 463.4366 817.7266 463.4366 L 647.28266 463.4366 C 636.78925 463.4366 628.28266 454.93 628.28266 444.43657 L 628.28266 273.99266 C 628.28266 263.49925 636.78925 254.99266 647.28266 254.99266 Z" fill="#033399"/>
+        <path d="M 647.28266 254.99266 L 817.7266 254.99266 C 828.22 254.99266 836.7266 263.49925 836.7266 273.99266 L 836.7266 444.43657 C 836.7266 454.93 828.22 463.4366 817.7266 463.4366 L 647.28266 463.4366 C 636.78925 463.4366 628.28266 454.93 628.28266 444.43657 L 628.28266 273.99266 C 628.28266 263.49925 636.78925 254.99266 647.28266 254.99266 Z" stroke="#7621bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 637.28266 -9.570766 L 827.7266 -9.570766 C 832.6971 -9.570766 836.7266 -5.541329 836.7266 -.5707662 L 836.7266 69.61704 C 836.7266 74.58761 832.6971 78.61704 827.7266 78.61704 L 637.28266 78.61704 C 632.3121 78.61704 628.28266 74.58761 628.28266 69.61704 L 628.28266 -.5707662 C 628.28266 -5.541329 632.3121 -9.570766 637.28266 -9.570766 Z" fill="#ecdda4"/>
+        <path d="M 637.28266 -9.570766 L 827.7266 -9.570766 C 832.6971 -9.570766 836.7266 -5.541329 836.7266 -.5707662 L 836.7266 69.61704 C 836.7266 74.58761 832.6971 78.61704 827.7266 78.61704 L 637.28266 78.61704 C 632.3121 78.61704 628.28266 74.58761 628.28266 69.61704 L 628.28266 -.5707662 C 628.28266 -5.541329 632.3121 -9.570766 637.28266 -9.570766 Z" stroke="#24009a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 1121.9207 -9.570766 L 1312.3646 -9.570766 C 1317.3352 -9.570766 1321.3646 -5.541329 1321.3646 -.5707662 L 1321.3646 69.61704 C 1321.3646 74.58761 1317.3352 78.61704 1312.3646 78.61704 L 1121.9207 78.61704 C 1116.9502 78.61704 1112.9207 74.58761 1112.9207 69.61704 L 1112.9207 -.5707662 C 1112.9207 -5.541329 1116.9502 -9.570766 1121.9207 -9.570766 Z" fill="#ecdda4"/>
+        <path d="M 1121.9207 -9.570766 L 1312.3646 -9.570766 C 1317.3352 -9.570766 1321.3646 -5.541329 1321.3646 -.5707662 L 1321.3646 69.61704 C 1321.3646 74.58761 1317.3352 78.61704 1312.3646 78.61704 L 1121.9207 78.61704 C 1116.9502 78.61704 1112.9207 74.58761 1112.9207 69.61704 L 1112.9207 -.5707662 C 1112.9207 -5.541329 1116.9502 -9.570766 1121.9207 -9.570766 Z" stroke="#24009a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 637.28266 639.8122 L 827.7266 639.8122 C 832.6971 639.8122 836.7266 643.8416 836.7266 648.8122 L 836.7266 719 C 836.7266 723.9706 832.6971 728 827.7266 728 L 637.28266 728 C 632.3121 728 628.28266 723.9706 628.28266 719 L 628.28266 648.8122 C 628.28266 643.8416 632.3121 639.8122 637.28266 639.8122 Z" fill="#ecdda4"/>
+        <path d="M 637.28266 639.8122 L 827.7266 639.8122 C 832.6971 639.8122 836.7266 643.8416 836.7266 648.8122 L 836.7266 719 C 836.7266 723.9706 832.6971 728 827.7266 728 L 637.28266 728 C 632.3121 728 628.28266 723.9706 628.28266 719 L 628.28266 648.8122 C 628.28266 643.8416 632.3121 639.8122 637.28266 639.8122 Z" stroke="#24009a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 1121.9207 639.8122 L 1312.3646 639.8122 C 1317.3352 639.8122 1321.3646 643.8416 1321.3646 648.8122 L 1321.3646 719 C 1321.3646 723.9706 1317.3352 728 1312.3646 728 L 1121.9207 728 C 1116.9502 728 1112.9207 723.9706 1112.9207 719 L 1112.9207 648.8122 C 1112.9207 643.8416 1116.9502 639.8122 1121.9207 639.8122 Z" fill="#ecdda4"/>
+        <path d="M 1121.9207 639.8122 L 1312.3646 639.8122 C 1317.3352 639.8122 1321.3646 643.8416 1321.3646 648.8122 L 1321.3646 719 C 1321.3646 723.9706 1317.3352 728 1312.3646 728 L 1121.9207 728 C 1116.9502 728 1112.9207 723.9706 1112.9207 719 L 1112.9207 648.8122 C 1112.9207 643.8416 1116.9502 639.8122 1121.9207 639.8122 Z" stroke="#24009a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 879.6017 216.5107 L 1070.0456 216.5107 C 1075.0162 216.5107 1079.0456 220.54015 1079.0456 225.5107 L 1079.0456 295.6985 C 1079.0456 300.66908 1075.0162 304.6985 1070.0456 304.6985 L 879.6017 304.6985 C 874.6311 304.6985 870.6017 300.66908 870.6017 295.6985 L 870.6017 225.5107 C 870.6017 220.54015 874.6311 216.5107 879.6017 216.5107 Z" fill="#ecdda4"/>
+        <path d="M 879.6017 216.5107 L 1070.0456 216.5107 C 1075.0162 216.5107 1079.0456 220.54015 1079.0456 225.5107 L 1079.0456 295.6985 C 1079.0456 300.66908 1075.0162 304.6985 1070.0456 304.6985 L 879.6017 304.6985 C 874.6311 304.6985 870.6017 300.66908 870.6017 295.6985 L 870.6017 225.5107 C 870.6017 220.54015 874.6311 216.5107 879.6017 216.5107 Z" stroke="#24009a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 1369.118 216.5107 L 1559.5618 216.5107 C 1564.5324 216.5107 1568.5618 220.54015 1568.5618 225.5107 L 1568.5618 295.6985 C 1568.5618 300.66908 1564.5324 304.6985 1559.5618 304.6985 L 1369.118 304.6985 C 1364.1474 304.6985 1360.118 300.66908 1360.118 295.6985 L 1360.118 225.5107 C 1360.118 220.54015 1364.1474 216.5107 1369.118 216.5107 Z" fill="#ecdda4"/>
+        <path d="M 1369.118 216.5107 L 1559.5618 216.5107 C 1564.5324 216.5107 1568.5618 220.54015 1568.5618 225.5107 L 1568.5618 295.6985 C 1568.5618 300.66908 1564.5324 304.6985 1559.5618 304.6985 L 1369.118 304.6985 C 1364.1474 304.6985 1360.118 300.66908 1360.118 295.6985 L 1360.118 225.5107 C 1360.118 220.54015 1364.1474 216.5107 1369.118 216.5107 Z" stroke="#24009a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_11">
+        <line x1="732.5046" y1="638.3122" x2="732.5046" y2="492.8366" marker-end="url(#FilledArrow_Marker)" stroke="#6300c7" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7"/>
+      </g>
+      <g id="Line_12">
+        <line x1="1217.1427" y1="638.3122" x2="1217.1427" y2="492.8366" marker-end="url(#FilledArrow_Marker)" stroke="#6300c7" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7"/>
+      </g>
+      <g id="Line_13">
+        <line x1="1217.1427" y1="253.49266" x2="1217.1427" y2="108.01704" marker-end="url(#FilledArrow_Marker)" stroke="#6300c7" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7"/>
+      </g>
+      <g id="Line_14">
+        <line x1="732.5046" y1="253.49266" x2="732.5046" y2="108.01704" marker-end="url(#FilledArrow_Marker)" stroke="#6300c7" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7"/>
+      </g>
+      <g id="Line_15">
+        <line x1="838.2266" y1="359.2146" x2="1083.5207" y2="359.2146" marker-end="url(#FilledArrow_Marker_2)" stroke="#673ec7" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7"/>
+      </g>
+      <g id="Line_17">
+        <path d="M 1321.696 363.33512 L 1321.3646 363.32637 L 1563.8857 361.96706" marker-end="url(#FilledArrow_Marker_2)" stroke="#673ec7" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7"/>
+      </g>
+    </g>
+    <g id="RNN-rolling: texts">
+      <title>texts</title>
+      <g id="Graphic_35" filter="url(#Shadow)">
+        <text transform="translate(1155.3556 322.7146)" fill="white">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="white" x="0" y="60">RNN</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34" filter="url(#Shadow)">
+        <text transform="translate(670.7175 322.7146)" fill="white">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="white" x="0" y="60">RNN</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(940.6342 233.1046)" fill="#260069">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#260069" x="0" y="45">z(t)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(695.6125 7.023138)" fill="#260069">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#260069" x="0" y="45">y(t)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(1154.1471 7.023138)" fill="#260069">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#260069" x="0" y="45">y(t+1)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(1404.0469 233.1046)" fill="#260069">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#260069" x="0" y="45">z(t+1)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(693.3603 656.4061)" fill="#260069">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#260069" x="0" y="45">X(t)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(1151.8949 656.4061)" fill="#260069">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#260069" x="0" y="45">X(t+1)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <path d="M 1844 216.5107 L 2034.444 216.5107 C 2039.4145 216.5107 2043.444 220.54015 2043.444 225.5107 L 2043.444 295.6985 C 2043.444 300.66908 2039.4145 304.6985 2034.444 304.6985 L 1844 304.6985 C 1839.0294 304.6985 1835 300.66908 1835 295.6985 L 1835 225.5107 C 1835 220.54015 1839.0294 216.5107 1844 216.5107 Z" fill="#ecdda4"/>
+        <path d="M 1844 216.5107 L 2034.444 216.5107 C 2039.4145 216.5107 2043.444 220.54015 2043.444 225.5107 L 2043.444 295.6985 C 2043.444 300.66908 2039.4145 304.6985 2034.444 304.6985 L 1844 304.6985 C 1839.0294 304.6985 1835 300.66908 1835 295.6985 L 1835 225.5107 C 1835 220.54015 1839.0294 216.5107 1844 216.5107 Z" stroke="#24009a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(1878.929 233.1046)" fill="#260069">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#260069" x="0" y="45">z(t+2)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <path d="M 1615 254.99266 L 1785.444 254.99266 C 1795.9373 254.99266 1804.444 263.49925 1804.444 273.99266 L 1804.444 444.43657 C 1804.444 454.93 1795.9373 463.4366 1785.444 463.4366 L 1615 463.4366 C 1604.5066 463.4366 1596 454.93 1596 444.43657 L 1596 273.99266 C 1596 263.49925 1604.5066 254.99266 1615 254.99266 Z" fill="#033399"/>
+        <path d="M 1615 254.99266 L 1785.444 254.99266 C 1795.9373 254.99266 1804.444 263.49925 1804.444 273.99266 L 1804.444 444.43657 C 1804.444 454.93 1795.9373 463.4366 1785.444 463.4366 L 1615 463.4366 C 1604.5066 463.4366 1596 454.93 1596 444.43657 L 1596 273.99266 C 1596 263.49925 1604.5066 254.99266 1615 254.99266 Z" stroke="#7621bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_40" filter="url(#Shadow)">
+        <text transform="translate(1638.4348 322.7146)" fill="white">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="white" x="0" y="60">RNN</tspan>
+        </text>
+      </g>
+      <g id="Line_42">
+        <line x1="1699.4007" y1="253.49266" x2="1698.2167" y2="101.06989" marker-end="url(#FilledArrow_Marker)" stroke="#6300c7" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7"/>
+      </g>
+      <g id="Graphic_45">
+        <path d="M 1605 -9.570766 L 1795.444 -9.570766 C 1800.4145 -9.570766 1804.444 -5.541329 1804.444 -.5707662 L 1804.444 69.61704 C 1804.444 74.58761 1800.4145 78.61704 1795.444 78.61704 L 1605 78.61704 C 1600.0294 78.61704 1596 74.58761 1596 69.61704 L 1596 -.5707662 C 1596 -5.541329 1600.0294 -9.570766 1605 -9.570766 Z" fill="#ecdda4"/>
+        <path d="M 1605 -9.570766 L 1795.444 -9.570766 C 1800.4145 -9.570766 1804.444 -5.541329 1804.444 -.5707662 L 1804.444 69.61704 C 1804.444 74.58761 1800.4145 78.61704 1795.444 78.61704 L 1605 78.61704 C 1600.0294 78.61704 1596 74.58761 1596 69.61704 L 1596 -.5707662 C 1596 -5.541329 1600.0294 -9.570766 1605 -9.570766 Z" stroke="#24009a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(1637.2264 7.023138)" fill="#260069">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#260069" x="0" y="45">y(t+2)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <path d="M 1605 639.8122 L 1795.444 639.8122 C 1800.4145 639.8122 1804.444 643.8416 1804.444 648.8122 L 1804.444 719 C 1804.444 723.9706 1800.4145 728 1795.444 728 L 1605 728 C 1600.0294 728 1596 723.9706 1596 719 L 1596 648.8122 C 1596 643.8416 1600.0294 639.8122 1605 639.8122 Z" fill="#ecdda4"/>
+        <path d="M 1605 639.8122 L 1795.444 639.8122 C 1800.4145 639.8122 1804.444 643.8416 1804.444 648.8122 L 1804.444 719 C 1804.444 723.9706 1800.4145 728 1795.444 728 L 1605 728 C 1600.0294 728 1596 723.9706 1596 719 L 1596 648.8122 C 1596 643.8416 1600.0294 639.8122 1605 639.8122 Z" stroke="#24009a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_47">
+        <line x1="1700.222" y1="638.3122" x2="1700.222" y2="492.8366" marker-end="url(#FilledArrow_Marker)" stroke="#6300c7" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7"/>
+      </g>
+      <g id="Graphic_46">
+        <text transform="translate(1634.9742 656.4061)" fill="#260069">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#260069" x="0" y="45">X(t+2)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

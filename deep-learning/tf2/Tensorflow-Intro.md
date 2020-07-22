@@ -366,8 +366,8 @@ Notes:
 <img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.35, "width" : 8.21} -->
 
 
-Notes: 
- 
+Notes:
+
 - RMDA : Remote Memory Direct Access  
 - gRPC : RPC protocol
 
@@ -463,6 +463,57 @@ Notes:
 
 <img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;width:50%;"/> <!-- {"left" : 1.02, "top" : 3.86, "height" : 4.56, "width" : 8.21} -->
 
+
+---
+
+## TF2 Example
+
+* Here we use high level **`tf.keras`** API
+
+* Focus on building the network; not low level operations
+
+```python
+# Simple feed forward network for regression
+
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.layers import Dense, Sequential
+
+# create a model
+model = Sequential()
+
+# And add layers
+model.add (Dense(units=10 activation=tf.nn.relu, input_shape=[3]))
+
+model.add(Dense(units=5, activation=tf.nn.relu))
+
+model.add(Dense(units=1))
+
+
+model.compile(loss='mean_squared_error',
+              optimizer= 'adam',
+              metrics=['mean_absolute_error', 'mean_squared_error'])
+
+
+# training will take time
+model.fit(training_data)
+
+# prediction is quick
+model.predict(test_data)
+
+```
+
+---
+
+## Backward Compatibility
+
+* Honestly, for most of us, there is no real reason to use V1 APIs
+
+* In TF2, there is a backward compatible module **`tf.compat.v1`** available;  This has all the older APIs
+
+* TF2 comes with a [automatic conversion script](https://www.tensorflow.org/guide/upgrade) to port v1 --> v2
+
+* Read [migration guide](https://www.tensorflow.org/guide/migrate) for details
 
 ---
 
@@ -623,8 +674,8 @@ for i in tf.range(input_data.shape[0]): # Note the For loop
 
 
 ```bash
-$ (sudo) pip install tensorflow keras
-$ (sudo) pip install tensorflow-gpu keras  # For GPU
+$ (sudo) pip install tensorflow
+$ (sudo) pip install tensorflow-gpu # For GPU
 ```
 <!-- {"left" : 0, "top" : 4.08, "height" : 0.74, "width" : 8.71} -->
 
@@ -633,8 +684,8 @@ $ (sudo) pip install tensorflow-gpu keras  # For GPU
  * Anaconda: Now officially supported
 
 ```bash
-$ conda install tensorflow keras
-$ conda install tensorflow-gpu keras  # For GPU
+$ conda install tensorflow
+$ conda install tensorflow-gpu # For GPU
 ```
 <!-- {"left" : 0, "top" : 5.63, "height" : 0.74, "width" : 8.71} -->
 
@@ -647,7 +698,7 @@ Notes:
 
 ## Lab: Hello World in TensorFlow
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="width:25%;float:right;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
 
 
  *  **Overview:**  
@@ -665,4 +716,14 @@ Notes:
 
 ---
 
-## Review and Questions
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+
+* Let's go over what we have covered so far
+
+* **Questions**
+    - What hardware platforms does TF support?
+    - What are some new features in TF2?

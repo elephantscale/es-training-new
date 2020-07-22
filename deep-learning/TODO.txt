@@ -1,45 +1,13 @@
 see 'generic/DL-TODO.txt'
 
-===
-
-Ml Intro
-    -  machien learning methodology
-    - dupe walmart slide
-    -
-
-======
-
-Tensorflow Intro
-    - lab example of regression
-
-    - lab holder
+Labs
+    - https://machinelearningmastery.com/how-to-fix-vanishing-gradients-using-the-rectified-linear-activation-function/
+        Look at model.evaluate()
 
 =====
 - DL Concepts
-    - flow isn't smooth
-    
-    - TODO : a diagram on illustrating where activation function is used
-
-    - add a basic training data flow
-
-    - use house prices as an example above
-        - guess 200k... off by -100k go back... guess 250k... off by -50k go back... guess 290k.. .off by -10k... accepted
-
-    - this is before epoch / batch / iteration
-
-    - use the analogy of a restaurant serving food for a table of guests,
-    they have to make every one reasonably happy...
-    not just one person
-    back propagation is like sending the food back... until it is cooked close to perfection
-
-    - Revisit loss / error section
-
-    - revisit activation functions
-
 
     - Add a quiz at the end
-
-    - do part-1 and part-2
 
     - lab place holders at the end of part 1
 
@@ -59,16 +27,6 @@ KERAS Intro
     - keras example of regression and classification
 
 
-
-=====================================
-
-DL-RNN.md
-    - add ball prediction Example
-    https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9
-
-    - Add animations from above post
-
-    - best video : https://www.youtube.com/watch?v=LHXXI4-IEns
 
 =====================================
 

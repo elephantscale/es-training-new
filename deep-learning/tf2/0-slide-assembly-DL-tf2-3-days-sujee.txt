@@ -1,0 +1,50 @@
+## To Make slides
+#  ./gen.sh
+
+## Course outline
+../deep-learning-with-tensorflow-keras-3days.pdf
+
+## About
+../generic/About-Deep-Learning-Class.md
+
+## Resources
+../../machine-learning/generic/ML-Resources.md
+
+## ML Intro
+../../machine-learning/generic/Machine-Learning-Primer.md
+
+## Get the labs setup
+../../machine-learning/generic/Labs-Prep.md
+
+
+## TensorFlow
+./Tensorflow-Intro.md
+
+
+## Introduce Neural Networks
+../generic/DL-Neural-Networks.md
+
+## Get some theory
+../generic/DL-Concepts.md
+
+
+./Tensorflow-API.md
+
+## CNN
+./Tensorflow-CNN.md
+
+## RNN
+./Tensorflow-RNN.md
+../generic/DL-LSTMs.md
+
+## TransferLearning
+../generic/DL-Transfer-Learning.md
+
+## ---- Reference only ----
+
+# TensorFlow Playground
+../generic/DL-Playground.md
+
+## ML-Concepts
+../../machine-learning/generic/ML-Concepts-All.md
+../../machine-learning/generic/Feature-Engineering.md

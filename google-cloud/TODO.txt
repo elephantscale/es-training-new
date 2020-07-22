@@ -1,0 +1,6 @@
+## Google Cloud / Data Lake
+- Transfer speed 
+        nice diagram : https://cloud.google.com/solutions/images/big-data-transfer-how-to-get-started-transfer-size-and-speed.png
+        from : https://cloud.google.com/solutions/migration-to-google-cloud-transferring-your-large-datasets
+
+

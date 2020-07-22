@@ -6,6 +6,8 @@
 
 - [MNIST](http://yann.lecun.com/exdb/mnist/)
 
+- [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist)
+
 - [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 - [ImageNet](http://image-net.org)
@@ -17,26 +19,144 @@
 
 ---
 
-## MNIST Example
+## MNIST
 
 <!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg"  style="width:45%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
 
-* MNIST Dataset is the "hello world" of deep learning
+* MNIST Dataset is the "hello world" of image recognition
 
 * 28x28 greyscale scanned digits
 
+* Total 70,000 images
+    - 60,000 training images (26 MB)
+    - 10,000 test images (4.3 MB)
+
+* MNIST is often the first dataset researchers try.  
+ _"If it doesn't work on MNIST, it won't work at all",  
+ "Well, if it does work on MNIST, it may still fail on others."_
+
 * [Reference](http://yann.lecun.com/exdb/mnist/)
 
-
-<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg"  style="width:55%;" />
 
 Notes:
 
 ---
 
+## Exploring MNIST
+
+```python
+import tensorflow as tf
+from tensorflow import keras
+import matplotlib.pyplot as plt
+
+(train_images, train_labels), (test_images, test_labels) = keras.datasets.mnist.load_data()
+
+print("train_images shape : ", train_images.shape)
+print("train_labels shape : ", train_labels.shape)
+print("test_images shape : ", test_images.shape)
+print("test_labels shape : ", test_labels.shape)
+# train_images shape :  (60000, 28, 28)
+# train_labels shape :  (60000,)
+# test_images shape :  (10000, 28, 28)
+# test_labels shape :  (10000,)
+
+## Display a sample image
+index = 100
+print("train label [{}] = {} ".format(index, train_labels[index])))
+# train label [100] = 5
+plt.imshow(train_images[index])
+```
+
+<img src="../../assets/images/deep-learning/mnist-2.png"  style="width:20%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+
+* Training images are 28x28 pixel images
+* Labels are numbers:  0 - 9
+* Here we are display 100th image, which is a '5'.  
+See the image and label
+
+---
+
+## Fashion MNIST
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/fashion-mnist-3.png"  style="width:37%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+
+* Fashion MNIST was created as a 'better MNIST'
+    - MNIST is too easy;  Classic ML algorithms can achieve 97% accuracy,  CNNs can achieve 99.7% accuracy!
+
+* Images of 10 fashion items (shirt, sweater, shoe ..etc)
+
+* 28x28 greyscale images
+
+* Total 70,000 images
+    - 60,000 training images (26 MB)
+    - 10,000 test images (4.3 MB)
+
+* Designed as a 'drop in' replacement for MNIST
+
+* [Reference](https://github.com/zalandoresearch/fashion-mnist) |  [bigger image](https://raw.githubusercontent.com/zalandoresearch/fashion-mnist/master/doc/img/fashion-mnist-sprite.png)
+
+---
+
+## Exploring Fashion-MNIST
+
+```python
+import tensorflow as tf
+from tensorflow import keras
+import matplotlib.pyplot as plt
+
+(train_images, train_labels), (test_images, test_labels) = keras.datasets.fashion_mnist.load_data()
+
+print("train_images shape : ", train_images.shape)
+print("train_labels shape : ", train_labels.shape)
+print("test_images shape : ", test_images.shape)
+print("test_labels shape : ", test_labels.shape)
+# train_images shape :  (60000, 28, 28)
+# train_labels shape :  (60000,)
+# test_images shape :  (10000, 28, 28)
+# test_labels shape :  (10000,)
+
+## Display a sample image
+index = 100
+print("train label [{}] = {} ".format(index, train_labels[index])))
+# train label [100] = 8
+plt.imshow(train_images[index])
+```
+
+<img src="../../assets/images/deep-learning/fashion-mnist-4.png"  style="width:20%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+
+* Training images are 28x28 pixel images
+* Labels are numbers:  0 - 9
+* Here we are display 100th image, which is a '8' (handbag).  
+
+---
+
+## Exploring Fashion MNIST
+
+* Why do we use numbers are labels as opposed to 'Dress', 'Coat'
+
+* Numbers are universal; not constrained by languages (English / Japanese ..etc)
+
+| Label | Description |
+|-------|-------------|
+| 0     | T-shirt/top |
+| 1     | Trouser     |
+| 2     | Pullover    |
+| 3     | Dress       |
+| 4     | Coat        |
+| 5     | Sandal      |
+| 6     | Shirt       |
+| 7     | Sneaker     |
+| 8     | Bag         |
+| 9     | Ankle boot  |
+
+---
+
 ## CIFAR-10
 
-<img src="../../assets/images/deep-learning/CIFAR-10-dataset.png"  style="width:50%;float:right;" />
+<img src="../../assets/images/deep-learning/CIFAR-10-dataset.png"  style="width:50%;float:right;" /><!-- {"left" : 5.42, "top" : 1.05, "height" : 3.45, "width" : 4.69} -->
+
 
 * CIFFAR-10 dataset consists of
     - 60,000 color images
@@ -84,6 +204,7 @@ import matplotlib.pyplot as plt
 # Normalize pixel values to be between 0 and 1
 train_images, test_images = train_images / 255.0, test_images / 255.0
 ```
+<!-- {"left" : 0, "top" : 1.56, "height" : 1.75, "width" : 10.25} -->
 
 ---
 
@@ -161,7 +282,7 @@ imagenet/
 - [Link to download](https://www.microsoft.com/en-us/download/details.aspx?id=54765)
 
 
-<img src="../../assets/images/deep-learning/3rd-party/dog-1.jpg" alt="XXX image missing" style="background:white;width:16%;" /><!-- {"left" : 0.83, "top" : 6.63, "height" : 1.95, "width" : 1.95} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/dog-3.jpg" alt="XXX image missing" style="background:white;width:20.1%" /><!-- {"left" : 3.07, "top" : 6.63, "height" : 1.95, "width" : 2.46} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-1.jpg" alt="XXX image missing" style="background:white;width:14.5%" /><!-- {"left" : 5.81, "top" : 6.63, "height" : 1.94, "width" : 1.85} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;width:10.3%;" /><!-- {"left" : 8.09, "top" : 6.63, "height" : 1.95, "width" : 1.33} -->
+<img src="../../assets/images/deep-learning/3rd-party/dog-1.jpg" alt="XXX image missing" style="background:white;width:16%;" /><!-- {"left" : 2.09, "top" : 7.31, "height" : 1.38, "width" : 1.38} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/dog-3.jpg" alt="XXX image missing" style="background:white;width:20.1%" /><!-- {"left" : 3.67, "top" : 7.31, "height" : 1.38, "width" : 1.74} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-1.jpg" alt="XXX image missing" style="background:white;width:14.5%" /><!-- {"left" : 5.61, "top" : 7.31, "height" : 1.37, "width" : 1.31} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;width:10.3%;" /><!-- {"left" : 7.22, "top" : 7.31, "height" : 1.38, "width" : 0.94} -->
 
 
 Notes:

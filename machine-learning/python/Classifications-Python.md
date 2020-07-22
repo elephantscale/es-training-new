@@ -14,13 +14,13 @@ Notes:
 
 ---
 
-## Classification Intro
+# Classification Intro
 
 [../generic/Classification-Intro.md](../generic/Classification-Intro.md)
 
 ---
 
-## Logistic Regression
+# Logistic Regression
 
 [../generic/Regression-Logistic.md](../generic/Regression-Logistic.md)
 
@@ -51,8 +51,47 @@ clf.score(X, y)
 
 
 ---
+## Lab: Logistic Regression
 
-## SVM
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
+
+ *  **Overview:**
+
+     - Practice Logistic Regression
+
+ *  **Approximate Time:**
+
+     - 30 mins
+
+ *  **Instructions:**
+    -  **LOGIT-1: Credit card approval (single variable)**
+    -  **LOGIT-2: College Admission (multiple variables)**
+
+Notes:
+
+---
+
+## Lab: Cross Validation: Hyper Parameter Tuning
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
+
+ *  **Overview:**
+
+    - Learn to do Cross Validation
+
+ *  **Approximate Time:**
+
+    - 30 mins
+
+ *  **Instructions:**
+     -  **Cross Validation 1: Tuning the model**
+
+
+Notes:
+
+---
+
+# SVM
 
 [../generic/Classification-SVM.md](../generic/Classification-SVM.md)
 
@@ -82,17 +121,29 @@ clf.score(X,y)
 <!-- {"left" : 0, "top" : 1.3, "height" : 4.07, "width" : 10.25} -->
 
 ---
-
 ## Lab: SVM
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;"/><!-- {"left" : 6.45, "top" : 1.39, "height" : 4.36, "width" : 3.27} -->
 
+* **Overview:**
+    - Work with SVM algorithm
+
+* **Approximate time:**
+    - 20-30 mins
+
+* **Instructions:**
+
+    - SVM1 - 'college-admission' data
+
+    - SVM2 - Customer churn data
+
+
+Notes:
 
 ---
 
-
-## Naïve Bayes
+# Naïve Bayes
 
 [../generic/Classification-Naive-Bayes.md](../generic/Classification-Naive-Bayes.md)
 
@@ -128,3 +179,21 @@ gnb.score(iris.data, iris.target)
 ```
 <!-- {"left" : 0, "top" : 1.34, "height" : 3.19, "width" : 7.78} -->
 
+---
+
+## Lab: Naïve Bayes
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.93, "top" : 0.94, "height" : 3.77, "width" : 2.83} -->
+
+
+* **Overview:** Use Naïve Bayes implementation
+
+* **Approximate Time:** 20-30 min.
+
+* **Instructions:**
+
+    - NB1: Spam classification
+
+    - BONUS: NB2: Income classification
+
+Notes:

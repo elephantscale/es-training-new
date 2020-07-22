@@ -46,115 +46,12 @@ Notes:
 
 ---
 
-## Why Machine Learning Matters?
+# What is Machine Learning?
 
-<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/><!-- {"left" : 0.88, "top" : 1.34, "height" : 4.42, "width" : 8.49} -->
-
-
-[Link](https://www.youtube.com/watch?v=HcqpanDadyQ)
-
-Notes:
-
-https://www.youtube.com/watch?v=HcqpanDadyQ
+[ML-What-is-ML.md](ML-What-is-ML.md)
 
 ---
 
-## Hype Cycle
-
- * **Question for the class:**  
-   - Where do you think AI is in this cycle? :-)
-
-<img src="../../assets/images/deep-learning/Gartner-Hype-Cycle.png" alt="Gartner-Hype-Cycle.png" style="background:white;width:55%;"/><!-- {"left" : 1.23, "top" : 2.93, "height" : 5.06, "width" : 7.8} -->
-
-
-Notes:
-- https://en.wikipedia.org/wiki/Hype_cycle
-
----
-
-## What is Machine Learning
-
-<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 7.41, "top" : 1.1, "height" : 3.71, "width" : 2.63} -->
-
-* **"The field of study that gives computers the ability to learn without being explicitly programmed."**  
- -- Arthur Samuel
-
-* Example: Self-driving cars
-    - Historical approach:  
-    Write a massive program to instruct the car to handle all possible scenarios encountered while driving
-        - This is immensely difficult
-
-    - AI approach:  
-        - Let AI learn by observing the scenery and your  reactions
-        - Once it learnt enough, let the AI predict the next reaction for a scenary
-
-
-
-Notes:
-
-
----
-
-## Spam Detection - Traditional (Rule Based) Approach
-
-* Here is an example of spam detection rule engine
-
-* The rules are coded by developers
-
-* There could be 100s of 1000s of rules!
-
-```java
-
-if (email.from_ip.one_of("ip1", "ip2", "ip3")) {
-  result = "no-spam"
-}
-else if ( email.text.contains ("free loans", "cheap degrees"))
-{
-  result = "spam"
-}
-
-```
-<!-- {"left" : 0, "top" : 2.81, "height" : 1.98, "width" : 10.25} -->
-
-Notes:
-
-
-
-
----
-
-## Spam Detection - AI Approach
-
-
- * Show the algorithm with spam and non-spam emails
-
- * Algorithm 'learns' which attributes are indicative of spam
-
- * Then algorithm predicts spam/no-spam on new email
-
-<img src="../../assets/images/deep-learning/AI-Approach.png" alt="AI-Approach.png" style="width:55%;"/><!-- {"left" : 0.96, "top" : 3.83, "height" : 4.16, "width" : 8.33} -->
-
-
-Notes:
-
-
----
-
-## How is AI Different from Rule Based Systems
-
- * Rule based systems are static
-    - They are programmed in
-    - They don't learn from data
-
- * AI can learn from data
-     - It gets better every day with more data it sees
-
-<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" alt="Rule-Based-Systems.png" style="width:55%;"/><!-- {"left" : 0.78, "top" : 4.13, "height" : 3.28, "width" : 8.7} -->
-
-
-Notes:
-
----
 
 ## Machine Learning Use Cases
 
@@ -184,7 +81,15 @@ Notes:
 
 [ML-vs-DL.md](ML-vs-DL.md)
 
+---
 
+# Machine Learning Algorithms
+
+[ML-Algorithms.md](ML-Algorithms.md)
+
+---
+
+# AI Software Eco System
 
 ---
 
@@ -308,46 +213,23 @@ Notes:
 
 
 ---
-
-# Machine Learning Algorithms
-
-[ML-Algorithms.md](ML-Algorithms.md)
-
----
-# ML Use Cases
-
-[ML-Use-Cases.md](ML-Use-Cases.md)
-
----
-
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
 
-- Let's go over what we have covered so far
+* Let's go over what we have covered so far:
 
-- Any questions?
+* What is Machine Learning and how is it different from regular programming?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+* Name a few of Machine Learning use cases
 
----
+* How does Big Data help Machine Learning?
 
-## Review Questions
-
-
- * What is Machine Learning and how is it different from regular programming?
-
- * Name a few of Machine Learning use cases
-
- * How does Big Data help Machine Learning?
-
- * What is supervised learning? Unsupervised learning?
+* What is supervised learning? Unsupervised learning?
 
 Notes:
-
-
-
 
 ---
 

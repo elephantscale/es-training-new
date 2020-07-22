@@ -1,4 +1,45 @@
+# Backup Slide
 
+---
+
+# Kafka Intro
+
+---
+
+## What Happened Then
+
+* Kafka started as
+  - powering real-time applications
+  - data flow
+  - in social network
+
+* Kafka continued as
+  - next-generation architectures
+  - retailers redo their business process as continuous business stream
+  - car companies are collecting and processing real-time data streams
+  - banks are rethinking their fundamental processes
+
+---
+## What Kafka is Like and Not Like
+* Compare to
+  - enterprise messaging systems
+  - big data systems like Hadoop
+  - data integration or ETL tools
+* But not like them
+  - NOT ActiveMQ, RabbitMQ, IBM's MQSeries
+    - runs on a cluster and can scale to 1000s of nodes
+    - replaces hand-wires message brokers
+  - NOT a regular storage system
+    - replicated
+    - persistent
+    - but can be kept around as long as you like
+  - NOT ETL
+    - instead of scraping data here and putting it there
+    - re-organize data as continuous stream
+* So... **a streaming platform**
+
+
+---
 ## Kafka Streams - Processor Topology
 
 <img src="../../assets/images/kafka/kafka-stream-01.png" alt="kafka-stream-01.png" style="width:45%;"/>&nbsp; &nbsp; <img src="../../assets/images/kafka/kafka-stream-02.png" alt="kafka-stream-02.png" style="width:50%;"/>

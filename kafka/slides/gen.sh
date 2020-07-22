@@ -21,6 +21,6 @@ pandoc ../kafka-intro-4days-outline.md  -o ../kafka-intro-4days-outline.pdf
 $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-assembly-4-days.txt $@
 
 ## 3 days
-# ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-3-days.txt $@
+# $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-3-days.txt $@
 
 

@@ -1,0 +1,20 @@
+## To Make slides
+#  ./gen.sh
+
+## Course outline
+#../deep-learning-with-tensorflow-keras-3days.pdf
+
+## About
+../generic/About-Deep-Learning-Class.md
+
+## Resources
+../../machine-learning/generic/ML-Resources.md
+
+## ML Intro
+../../machine-learning/generic/Machine-Learning-Primer.md
+
+## Get the labs setup
+../../machine-learning/generic/Labs-Prep.md
+
+
+## TODO

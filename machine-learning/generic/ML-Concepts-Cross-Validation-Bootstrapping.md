@@ -1,45 +1,52 @@
-# Cross Validation
+# Model Validation
 ---
 
-## Common Mistakes in Model Validation
+## Evaluating A Model
+
+ * How do we know our model is 'good'?
+
+ * One way to measure the performance, is how well it is predicting on 'new data'
+    - Model is trained with 'training data'
+    - Measure its performance on 'test data' (the model hasn't seen 'test data')
+
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
+
+Notes:
+
+---
+
+## Model Validation
+
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/model-testing-2.png" style="width:45%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
 
  * **Mistake: Re-using 'training data' as 'testing data'**
-    - Model can predict accurately on testing (because it has 'seen' the data before)
-    - Giving the designer 'false confidence'
-    - But will do badly on new data
-
- * Solution:
-    - **Cross Validation**
-
----
-
-## Common Mistakes in Model Validation
-
- * **Mistake: Using overly simplistic validation methods**
-    - Model might appear to be working well
-
- * **Mistake: Using more parameters (20 attributes) than actual observations (10 observations)**
-    - Model will 'memorize' the data rather than learning
-    - Will do well on testing data / but poorly on new data
-
- * Solution:
-    - Use more data
-
-
-Notes:
+ * Here we are using the same data for training and testing
+ * Model can predict well on testing (because it has 'seen' the data before during training)
+ * This gives us 'false confidence'
+ * But the model will do badly on new data
+ * **Solution:**  
+    - We need to use separate datasets for training and testing
 
 ---
 
-## Hold Out Method (Validation Set)
 
- * Do not use the same data for training and testing!
-    - Model will do well in testing (it has seen the questions before!)
- * Separate the data set into
-    - Training set  (60-70%)
-    - Testing set (30-40%)
- * This is done  randomly
+## Hold Out Method
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1" style="max-width:65%;"/> <!-- {"left" : 2.16, "top" : 4.63, "height" : 2.61, "width" : 5.94} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/model-testing-3.png" style="width:45%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
+
+* Here we split the data into
+    - Training set  (80%)
+    - Testing set (20%)
+* The split is done **randomly**
+* The split is done so majority of data goes to training set
+    - 70% training + 30%  testing
+    - 80% training + 20%  testing
+    - No hard rule, adjust as needed
+* The following are not great splits:
+    - 50% training + 50% testing : too little training data
+    - 95% training + 5% testing : may not be enough data for testing
 
 
 
@@ -50,26 +57,38 @@ Notes:
 
 ## Hold Out Method Drawbacks
 
- * Drawbacks
-    - Error rate can significantly fluctuate based on how data is divided (randomly)
-    - When we do a randomly split data into training/test
-    - If we are 'lucky', we get an easy test set -> resulting in higher than usual accuracy
-      - If we are 'unlucky' we get a hard test set -> resulting in lower than usual accuracy
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/model-testing-3.png" style="width:45%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
+
+* Training/Test split is done randomly
+
+* If we are 'lucky', we can get a well rounded training set and the model can learn well
+
+* Also we can get an easy test set,   resulting in higher than usual accuracy
+
+* Or we could get a 'weak' training set, the model doesn't learn much;  
+And get a 'hard' test set, where model does badly
+
+* So model accuracy (performance) can significantly fluctuate based on how data is divided (randomly)
+
+* See next slide for an example
 
 ---
 
-## Hold Out Method Drawbacks
+## Hold Out Method Drawback Example
 
- * Example
-    - Assume we want to test a student's knowledge in a subject
-    - We have a pool of 20 questions
-    - Test 1:
-      - Out of 20, we randomly choose 15 questions And the student scores 60%
-      - Is this the final score?  No.
-      - We need to do more tests and average out the score
+* Assume we want to test a student's knowledge in a subject
 
- * Solution: **k-fold Cross validation**
-    - Rigorously tests model accuracy
+* We have a pool of 20 questions
+
+* Out of 20, we randomly choose 15 questions And the student scores 60%
+
+* Is this the final score?  No.
+    - This is just one score in a random test
+
+* We need to do more tests and average out the score
+
+* Solution: **k-fold Cross validation**
 
 
 

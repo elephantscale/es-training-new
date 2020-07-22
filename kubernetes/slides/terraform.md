@@ -4,27 +4,27 @@
 
 # About Terraform
 
-## Cloud Orchetration
-  * Infrastructure Lifecyle
+## Cloud Orchestration
+  * Infrastructure Lifecycle
   * Provisioning
   * Updating 
   * Destroying
 
 ## What is Terraform
 
- * Automates Orchestration of Infrastructure
+ * Automatic Orchestration of Infrastructure
  * Infrastructure as Code
 
 
 
 ## Cloud Terraform
- * Terraform SUpports major public cloud providers:
+ * Terraform Supports major public cloud providers:
  * Examples
    - AWS
    - GCP
    - Azure
    - IBM
-   - etc.j
+   - etc.
 
 ## On-Prem Terraform 
 

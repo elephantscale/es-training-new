@@ -345,8 +345,8 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 
  * May be an 'apples-to-apples' comparison would be 'price per sq. foot'
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/machine-learning/feature-envgineering-1.png"  style="width:40%;float:right;"/> <!-- {"left" : 4.33, "top" : 4.64, "height" : 2.64, "width" : 5.47} -->
+<img src="../../assets/images/machine-learning/feature-envgineering-1.png"  style="width:40%;float:right;"/> <!-- {"left" : 5.21, "top" : 2.19, "height" : 2.35, "width" : 4.88} -->
+
 
 
 | City           | House Price   |
@@ -356,7 +356,7 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 | San Francisco  | 1,000 k (1 M) |
 | Gilroy         | 700 k         |
 
-<!-- {"left" : 0.49, "top" : 4.95, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
+<!-- {"left" : 0.75, "top" : 6.25, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
 
 
 
@@ -386,7 +386,7 @@ Notes:
  * In the data below, we see **age** and **income** are in two different scales
     - age: ranges from 33 - 60
     - income ranges from 32,000  to 120,000
-    
+
  * Some algorithms will yield better results if these different ranges can be scaled to a uniform range
     - Remove high magnitude data
 
@@ -408,8 +408,9 @@ Notes:
 
 
 * Min-Max Scaling
-    - Scale between a range (0 to 1   or 1 to 100)
+    - Scale between a range 0 to 1 typically (or other ranges like 1 to 100)
 
+* Standardized with zero mean and standard deviation of one
 
 
 Notes:
@@ -470,6 +471,61 @@ Notes:
 
 ---
 
+## Scaling Example 3: Using SciKit
+
+* Uses **`MinMaxScaler`**
+
+```python
+from sklearn.preprocessing import MinMaxScaler
+
+# load data
+data = ...
+
+# create scaler
+scaler = MinMaxScaler()
+
+# fit scaler on data
+scaler.fit(data)
+# apply transform
+normalized = scaler.transform(data)
+
+# or fit and transform in one step
+normalized = scaler.fit_transform(data)
+
+# inverse transform
+inverse = scaler.inverse_transform(normalized)
+```
+
+
+---
+
+## Scaling Example 4: Using SciKit
+
+* Uses **`StandardScaler`**
+
+```python
+from sklearn.preprocessing import StandardScaler
+
+# load data
+data = ...
+
+# create scaler
+scaler = StandardScaler()
+
+# fit scaler on data
+scaler.fit(data)
+# apply transform
+normalized = scaler.transform(data)
+
+# or fit and transform in one step
+normalized = scaler.fit_transform(data)
+
+# inverse transform
+inverse = scaler.inverse_transform(normalized)
+```
+
+
+---
 
 ## Lab: Exploratory Data Analysis (EDA)
 

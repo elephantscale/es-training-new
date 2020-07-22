@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="223 559 1268 592" width="1268" height="592">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="38" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2020-04-25 18:40:37 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_4">
+        <path d="M 383.15334 806.1365 L 385.76095 813.6922 L 716.7994 699.4442 L 722.2419 715.2141 L 744.694 685.5894 L 708.7493 676.11865 L 714.1918 691.8885 Z" fill="#ab97fd"/>
+        <path d="M 383.15334 806.1365 L 385.76095 813.6922 L 716.7994 699.4442 L 722.2419 715.2141 L 744.694 685.5894 L 708.7493 676.11865 L 714.1918 691.8885 Z" stroke="#2e0084" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 1105.3168 921.7107 C 1040.842 905.677 1066.5529 770.7 1169.4047 793.731 C 1178.9471 748.8362 1298.55 756.1231 1297.768 793.731 C 1372.7627 745.63 1468.6013 841.5424 1404.318 889.6434 C 1481.4548 912.964 1403.3446 1038.6122 1340.0385 1017.623 C 1334.9721 1052.6069 1221.8 1064.8493 1211.8667 1017.623 C 1147.7828 1068.0585 1014.1576 990.5112 1105.3168 921.7107 Z" fill="#c9fafd"/>
+        <path d="M 1105.3168 921.7107 C 1040.842 905.677 1066.5529 770.7 1169.4047 793.731 C 1178.9471 748.8362 1298.55 756.1231 1297.768 793.731 C 1372.7627 745.63 1468.6013 841.5424 1404.318 889.6434 C 1481.4548 912.964 1403.3446 1038.6122 1340.0385 1017.623 C 1334.9721 1052.6069 1221.8 1064.8493 1211.8667 1017.623 C 1147.7828 1068.0585 1014.1576 990.5112 1105.3168 921.7107 Z" stroke="#2e0084" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 1031.0007 962.4492 L 1031.0007 969.5837 L 444.91163 969.5837 L 444.91163 982.8183 L 418.12176 966.0164 L 444.91163 949.2146 L 444.91163 962.4492 Z" fill="#e4a82e"/>
+        <path d="M 1031.0007 962.4492 L 1031.0007 969.5837 L 444.91163 969.5837 L 444.91163 982.8183 L 418.12176 966.0164 L 444.91163 949.2146 L 444.91163 962.4492 Z" stroke="#2e0084" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_60">
+        <text transform="translate(264.34457 734.71334) rotate(-18.799988)" fill="#3a006d">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3a006d" x="194.08447" y="30">Question:</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3a006d" x="0" y="67">“Alexa, What is the weather today?”</tspan>
+        </text>
+      </g>
+      <g id="Graphic_61">
+        <text transform="translate(514.1629 986.9756)" fill="#3a006d">
+          <tspan font-family="Century Gothic" font-size="38" font-weight="700" fill="#3a006d" x="0" y="38">“70 degrees and sunny”</tspan>
+        </text>
+      </g>
+      <g id="Graphic_62">
+        <text transform="translate(1127.4958 796.0392)" fill="#3a006d">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#3a006d" x="0" y="35">AI in the Cloud</tspan>
+        </text>
+      </g>
+      <g id="Graphic_64">
+        <rect x="1176.0974" y="834.978" width="153.3509" height="180.59086" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image7.png" width="152" height="179" transform="translate(1176.0974 834.978) scale(1.0088875)"/>
+        </g>
+      </g>
+      <g id="Graphic_65">
+        <rect x="223.06984" y="818" width="195.05193" height="332.6774" id="path_2"/>
+        <clipPath id="clip_path_2">
+          <use xl:href="#path_2"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_2)">
+          <image xl:href="image8.png" width="197" height="336" transform="translate(223.06984 818) scale(.9901113)"/>
+        </g>
+      </g>
+      <g id="Graphic_67">
+        <path d="M 918.9107 687.3247 L 916.5364 693.51 L 1082.8588 757.3552 L 1078.0248 769.9484 L 1115.0435 766.1614 L 1090.0672 738.5767 L 1085.2331 751.1699 Z" fill="#ab97fd"/>
+        <path d="M 918.9107 687.3247 L 916.5364 693.51 L 1082.8588 757.3552 L 1078.0248 769.9484 L 1115.0435 766.1614 L 1090.0672 738.5767 L 1085.2331 751.1699 Z" stroke="#2e0084" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_72">
+        <rect x="758.2557" y="638.1219" width="146.6313" height="109.97347" id="path_3"/>
+        <clipPath id="clip_path_3">
+          <use xl:href="#path_3"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_3)">
+          <image xl:href="image14.jpeg" width="151.1811" height="113.38583" transform="translate(758.2557 638.1219) scale(.969905)"/>
+        </g>
+      </g>
+      <g id="Graphic_73">
+        <path d="M 1470 649.1898 C 1470 608.6273 1402.911 575.8248 1320 575.8248 C 1237.089 575.8248 1170 608.6273 1170 649.1898 C 1170 683.7567 1219.218 712.8553 1285.284 720.4383 C 1279.863 733.4896 1270.929 748.8326 1256.865 756.41565 C 1283.964 756.41565 1310.772 738.427 1329.081 722.3779 C 1407.744 720.0862 1470 688.16495 1470 649.1898 Z" fill="#ffffc0" fill-opacity=".6412027"/>
+        <path d="M 1470 649.1898 C 1470 608.6273 1402.911 575.8248 1320 575.8248 C 1237.089 575.8248 1170 608.6273 1170 649.1898 C 1170 683.7567 1219.218 712.8553 1285.284 720.4383 C 1279.863 733.4896 1270.929 748.8326 1256.865 756.41565 C 1283.964 756.41565 1310.772 738.427 1329.081 722.3779 C 1407.744 720.0862 1470 688.16495 1470 649.1898 Z" stroke="#1a0074" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_74">
+        <text transform="translate(1208.0017 607.692)" fill="#3a006d">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#3a006d" x="0" y="35">Asking about</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#3a006d" x="10.852051" y="78">the weather</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

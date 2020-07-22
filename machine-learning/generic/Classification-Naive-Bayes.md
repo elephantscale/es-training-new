@@ -388,26 +388,6 @@ Notes:
 
 ---
 
-## Lab: Naïve Bayes
-
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.93, "top" : 0.94, "height" : 3.77, "width" : 2.83} -->
-
-
-* **Overview:** Use Naïve Bayes implementation
-
-* **Approximate Time:** 20-30 min.
-
-* **Instructions:**
-
-    - See next few slides for code samples in Spark / Python / R
-
-    - NB1: Spam classification
-
-    - BONUS: NB2: Income classification
-
-Notes:
-
----
 
 ## Further Reading
 
@@ -418,3 +398,9 @@ Notes:
 Notes:
 
 http://www-bcf.usc.edu/~gareth/ISL
+
+---
+
+## Doing Naive Bayes
+
+* Next section will show an example on how to do Naive Bayes classification

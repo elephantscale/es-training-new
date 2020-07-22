@@ -58,11 +58,11 @@ Image credit (Creative Commons): Pexels.com
 
  * Predicting stock market
 
- * Train the model using training data (already known)
+ * Train the model using training data (past data; already known)
 
- * Test performance using test data (already known)
+ * Test performance using test data (past data; already known)
 
- * Predict no new data (unseen)
+ * If performance is statisfactory, predict on new data (unseen)
 
 <img src="../../assets/images/machine-learning/3rd-party/stock-market-1.png" style="width:59%;"><!-- {"left" : 1.02, "top" : 4.12, "height" : 3.44, "width" : 8.21} -->
 
@@ -74,28 +74,6 @@ Notes:
 
 ---
 
-## Supervised Learning Methodology
-
-
- * Split the data set into
-
-     - **Training set:** Train the algorithm (training set should represent data well enough)
-
-     - **Test set:** Validate the model
-
- * We do this, so we can test the model without the model cheating
-
- * Start with 80% training, 20% test
-    - Tweak the dials to increase or decrease the proportion
-
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="max-width:59%;"><!-- {"left" : 2.69, "top" : 5.16, "height" : 2.14, "width" : 4.87} -->
-
-
-Notes:
-
-Facebook used 95%/5% `Understanding text from scratch`
-
----
 
 ## Supervised Learning - Classification
 
@@ -200,6 +178,9 @@ Notes:
 
 ## Clustering Use Cases: Fraud / Anomaly Detection
 
+<!-- TODO shiva -->
+<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png" style="width:40%;float:right;"><!-- {"left" : 2.34, "top" : 3.62, "height" : 4.52, "width" : 5.57} -->
+
  * Anomaly detection is used to:
 
      - Find fraud
@@ -208,7 +189,7 @@ Notes:
 
      - Discover problems on servers
 
-<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png" style="width:29%;"><!-- {"left" : 2.34, "top" : 3.62, "height" : 4.52, "width" : 5.57} -->
+ * Here we see an anomaly (top left) that doesn't fall into the usual pattern (bottom right)
 
 
 Notes:
@@ -364,6 +345,16 @@ Notes:
 * [Video](https://www.youtube.com/watch?v=V1eYniJ0Rnk)
 * https://money.cnn.com/2016/8/28/technology/future/alphago-movie/index.html
 
+
+---
+
+## Reinforcement Learning Demo: AI Learning to Play 'Hide and Seek'
+<img src="../../assets/images/AI/3rd-party/openai-hide-and-seek-1.jpg" style="width:70%;float:right;"/><!-- {"left" : 3.5, "top" : 1.06, "height" : 3.72, "width" : 6.61} -->
+
+
+* [Open AI blog](https://openai.com/blog/emergent-tool-use/)
+* [Watch video 1](https://openai.com/blog/emergent-tool-use/)
+* [Watch video 2](https://www.youtube.com/watch?v=Lu56xVlZ40M)
 
 ---
 

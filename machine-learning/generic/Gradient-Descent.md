@@ -123,9 +123,8 @@ Image credit to KDNuggets : https://www.kdnuggets.com/2017/04/simple-understand-
 <img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-1.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /><!-- {"left" : 0.57, "top" : 3.65, "height" : 3.87, "width" : 3.9} --> &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/gradient-descent-animation-3.gif" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" /><!-- {"left" : 4.8, "top" : 4.63, "height" : 1.91, "width" : 4.88} -->
 
 
- - [Animation 1](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-1.gif)
-
- - [Animation 2](https://s3.amazonaws.com/elephantscale-public/media/gradient-descent-animation-3.gif)
+ - [Animation 1](https://s3.amazonaws.com/elephantscale-public/media/machine-learning/gradient-descent-animation-1.gif)
+ - [Animation 2](https://s3.amazonaws.com/elephantscale-public/media/machine-learning/gradient-descent-animation-3.gif)
 
 Notes:
 

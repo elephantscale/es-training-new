@@ -28,6 +28,14 @@ Notes:
 
 ---
 
+## AI vs. Machine Learning :-)
+
+<img src="../../assets/images/AI/3rd-party/ML-vs-AI.jpg" alt="AI-ML-DL.png" style="width:77%;"/><!-- {"left" : 5.42, "top" : 2.38, "height" : 4.3, "width" : 4.3} -->
+
+[Source](https://www.reddit.com/r/ProgrammerHumor/comments/a07d0u/ai_in_nutshell/)
+
+---
+
 ## AI / Machine Learning / Deep Learning
 
 <img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="width:37%;float:right;"/><!-- {"left" : 5.42, "top" : 2.38, "height" : 4.3, "width" : 4.3} -->
@@ -85,30 +93,15 @@ Notes:
 
 ---
 
-## Data Science vs. Machine Learning
-
- * **Data Science** works with existing data and derive intelligence
-
- * **Machine Learning** learns from existing data and predicts on new/unseen data
-
- * The definitions are not clear-cut,  some people use these interchangeably
-
-<img src="../../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist-2.png" style="width:49%;"/><!-- {"left" : 1.02, "top" : 4.17, "height" : 3.94, "width" : 8.21} -->
-
-
----
 
 ## Neural Networks
 
  * Layers of parallel processing elements, working together to solve very complex tasks
-
  * Inspired by neurons from human brain
-
  * Used in Deep Learning
+ * **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/sLsCN9ZL9RI)
 
- * (More on this later)
-
-<img src="../../assets/images/deep-learning/Neural-Networks-Simulation.png" alt="AI-ML-DL.png" style="width:89%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
 
 Notes:
 

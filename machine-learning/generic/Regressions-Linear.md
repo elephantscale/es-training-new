@@ -368,26 +368,12 @@ Notes:
 
  *  **Gaussian Distributions:**
 
-    - Linear regression will make more reliable predictions if your input and output variables have a Gaussian distribution. Transform data (e.g. logarithmic) make their distribution more Gaussian looking for better results
+    - Linear regression will make more reliable predictions if your input and output variables have a Gaussian distribution. Transform data (e.g. logarithmic) make their distribGution more Gaussian looking for better results
 
 Notes:
 
 ---
 
-## Lab: Linear Regressions
+## Doing Linear Regression
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" /><!-- {"left" : 7.34, "top" : 1.07, "height" : 3.62, "width" : 2.72} -->
-
- *  **Overview:**
-    - Practice Linear Regressions
-
- *  **Approximate Time:**
-    - 30 mins
-
- *  **Instructions:**
-     - Instructor: Please demo this lab
-     - See next few slides for sample code  in Python / R / Spark
-     - LIR-1: Bill and Tips data
-
-
-Notes:
+* Next section will show an example on how to do linear regression

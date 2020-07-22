@@ -282,7 +282,7 @@ Notes:
      -  **messages.max.bytes**  (on broker)
 
      -  **fetch.message.max.bytes**  (on consumer)
-     
+
  * [Reference](https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/)
 
 
@@ -301,13 +301,13 @@ Notes:
      - Or use any of the open source collectors
  * Send metrics to a collector (graphite, open TSDB ..etc.)
  * Use a nice graphic tool to slice & dice metrics (Grafana)
- * References 
+ * References
    - [Datadog](https://www.datadoghq.com/dashboards/kafka-dashboard/)
    - [Monitoring Kafka @ SingalFX](https://www.signalfx.com/blog/how-we-monitor-and-run-kafka-at-scale/)
-   
+
 ---
 
-## Kafka Monitoring Vital Stats 
+## Kafka Monitoring Vital Stats
 
 - Log flush latency (95th percentile)
 - Under Replicated Partitions
@@ -385,10 +385,10 @@ https://www.confluent.io/blog/how-we-monitor-and-run-kafka-at-scale-signalfx/
  * Large offsets means consumers can't  keep up with data
  * **Question for class‫:‬** What can cause consumer lag?
  * Tools to monitor consumer lag:
-    - JMX stats 
+    - JMX stats
     - [Burrow](https://github.com/linkedin/Burrow)
     - Confluent dashboard
-    - Datadog 
+    - Datadog
 
 Notes:
 
@@ -406,7 +406,7 @@ Notes:
  * Number of partitions per cluster around 10,000.This improves availability and latency
 
  * Use dedicated Zookeeper cluster for each Kafka cluster
- 
+
  * [Reference](https://medium.com/netflix-techblog/kafka-inside-keystone-pipeline-dd5aeabaf6bb)
 
 Notes:
@@ -590,7 +590,7 @@ Notes:
 
 ## Possible Solutions
 
-<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replications.png"  style="max-width:50%;float:right;" /><!-- {"left" : 6.28, "top" : 1.07, "height" : 1.91, "width" : 3.85} -->
+<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replicas.png"  style="width:50%;float:right;" /><!-- {"left" : 6.28, "top" : 1.07, "height" : 1.91, "width" : 3.85} -->
 
  *  **Reason**
    - Creating replicas is lagging behind
@@ -828,5 +828,3 @@ Notes:
 - Any questions?
 
 <img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 3.91, "height" : 3.24, "width" : 4.86} -->
-
-

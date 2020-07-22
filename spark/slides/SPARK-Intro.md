@@ -418,14 +418,38 @@ Notes:
 
 ---
 
-## System Requirements
+## Spark in the Cloud
+
+* Spark is pretty well supported on all major cloud platforms
+
+* Basic idea:
+    - Upload data into Cloud storage
+    - Spin up on-demand Spark cluster to process your data
+    - Shutdown when done
+    - Pay for use of compute and storage
+
+* Amazon offers **Elastic Map Reduce (EMR)** that includes Spark
+
+* Google has **DataProc** that provisions Spark clusters
+
+* Azure has **HDInsight*** that includes Spark
+
+<br clear="all" />
+
+<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 3, "top" : 5.35, "height" : 0.71, "width" : 2.17} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 5.56, "top" : 5.38, "height" : 0.63, "width" : 1.68} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 7.63, "top" : 5.35, "height" : 0.71, "width" : 2.46} -->
+
+---
+
+## On Prem Deployment: System Requirements
 
 * Operating system
   - Development: Windows, Mac, Linux
   - Deployment: Linux
 * Languages:
     - JDK 8
-    - Scala 2.11
+    - Scala 2.11, 2.12
     - Python 3
 * Hardware
 
@@ -433,10 +457,108 @@ Notes:
 |----------|-----------------------------------|-------------------------------------------------------------------|
 | CPU      | 2+ core                           | 12+ core                                                          |
 | Memory   | 4+ G                              | 256+ G                                                            |
-| Disk     | - Single spindle <br/> - Few gigs | - Multiple spindles <br /> - Several Terabytes per node <br /> -  |
-
+| Disk     | - Single spindle <br/> - Few gigs | - Multiple spindles <br /> - Several Terabytes per node <br />  |
 
 ---
+
+# Spark Scaling
+
+---
+
+## Spark is a Distributed Engine
+
+* Spark distributes the work across many machines to achieve impressive scaling
+
+* Spark has been demonstrated to scale to thousands of nodes!
+
+* Let's look at how Spark scales
+    - on Hadoop
+    - in the Cloud
+
+---
+
+## Scaling on Hadoop (On Premise)
+
+* Hadoop achieves scale by **co-locating** data and compute
+* So applications running on Hadoop cluster, mostly process local data (aka **data locality**)
+* Pros:
+    - Works well on on-prem architecture (1G-10G networks)
+    - Very fast processing, because of data locality
+* Cons:
+    - The cluster size is fixed; very hard to scale up/down dynamically based on demand
+
+<!-- TODO shiva -->
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:47%;float:left;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Spark Scaling on the Cloud
+
+<!-- TODO shiva -->
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+
+* In Cloud architecture, storage and compute are separate!
+
+* Compute nodes stream data from storage (called buckets)
+
+* For this to work, compute nodes and storage must have **ultra high speed** network
+
+* Google built the next gen network for their data centers  using custom hardware, software, network switches ([source](https://cloudplatform.googleblog.com/2015/06/A-Look-Inside-Googles-Data-Center-Networks.html))
+
+* It can deliver more than **1 Petabit/sec** of total bisection bandwidth.
+
+* To put this in perspective,
+    - enough for 100,000 servers to exchange information at 10Gb/s each
+    - enough to read the entire scanned contents of the Library of Congress in less than 1/10th of a second
+
+---
+
+## Spark Scaling on the Cloud
+
+<!-- TODO shiva -->
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+
+* Pros:
+    - Gives a lot of flexibility on scaling and scheduling computes
+    - Can dynamicaly scale compute capacity up/down
+    - Leverages massive infrastructure the cloud vendors have
+    - Implemented by cloud vendors / hosted platforms
+
+* Cons:
+    - Not easily implemented on-prem/in-house
+    - Need to be on a cloud environment
+    - Costs can add up for storage and compute
+---
+
+## Running a Spark Job
+
+* When a Spark application is launched, the following things happen:
+    - Spark talks to the **cluster manager (CM)**, to request resources
+    - CM allocates resources for the Spark application
+    - Spark then distributes the code to **worker nodes**
+    - **Executors** on worker nodes start computing
+    - Each Executor can employ multiple **tasks** to parallize the work
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/spark_architecture.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+## Parallelizing Computations
+
+<!-- TODO shiva -->
+<img src="../../assets/images/spark/distributed-execution.png" style="width:45%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+* Here is a simple example of doing a COUNT in a distributed way
+
+* Each worker computes the count for the data it has
+
+* And then an 'aggregator (reducer)' combines the results from multiple workers to produce a final count
+
+* Machine learning computations are more complex; But Spark handles the parallelism
+
+---
+
 ## Lab: Doing XYZ
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->

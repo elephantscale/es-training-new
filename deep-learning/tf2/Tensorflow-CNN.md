@@ -1,5 +1,7 @@
 # Convolutional Neural Networks (CNNs) in TensorFlow
 
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
+
 
 ---
 
@@ -102,6 +104,8 @@ model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 ## CNN Example 1 - CIFAR
 
 * So far the model looks like this
+
+* **Can you understand how the input is shaped through the network?**
 
 ```python
 model.summary()
