@@ -105,6 +105,8 @@ model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 
 * So far the model looks like this
 
+* **Can you understand how the input is shaped through the network?**
+
 ```python
 model.summary()
 ```

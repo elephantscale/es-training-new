@@ -25,9 +25,3 @@ Big-Query.md
 
 ../../machine-learning/generic/Data-Exploration.md
 
-
-## Spark Intro
-$ES_HOME/es-training/spark/slides/v2/SPARK__Intro.pptx
-$ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-2.pptx
-
-Dataproc.md

@@ -38,7 +38,7 @@ Notes:
 
 ---
 
-## Agenda - 4 Days
+## Agenda - 2 Days
 
 
 *  **Day 1**
@@ -51,25 +51,6 @@ Notes:
      - Big Query
      - Data Analytics with Python
      - Google Colab and Datalab
-
----
-
-## Agenda - 4 Days
-
-*  **Day 3**
-     - Hadoop and Spark
-     - Large scale data analytics with Spark
-     - Spark SQL
-     - DataProc
-
-* **Day 4**
-     - Machine Learning Intro
-     - Regressions
-     - Classifications
-     - Clustering
-
-Notes:
-
 
 ---
 
