@@ -429,18 +429,30 @@ assert(len(predictions) == len(predictions2) == len(val_data_gen.classes) )
 
 * This happens when we don't have enough training images, or not enough variations in training images
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/learning-curve-overfit-2.png" style="width:50%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+* For example, if our model always trains on cats with **ears pointing up**, will it recognize a cat that is lying down?
 
-* We can detect this by observing the learning curves
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/cat-03.jpg" style="width:25%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/3rd-party/cat-04.jpg" style="width:25%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/3rd-party/cat-06.jpg" style="width:25%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+
+
+---
+## Detecting Overfitting
+
+* We can detect overfitting by observing the learning curves
 
 * Here we see **training accuracy** goes up, but **validation accuracy** is not improving much.  
-This is a classic sign of overfitting
+
+* This is a classic sign of overfitting
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/learning-curve-overfit-2.png" style="width:50%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
 
 
 ---
 
-## Avoiding Overfitting in Images
+## Augmenting Images
 
 * One way to avoid overfitting is to train on variations of images
 
@@ -561,7 +573,35 @@ plotImages (augmented_images)
 ```
 
 <!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/image-augmentation-5-zoom.png" style="width:80%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/image-augmentation-12-zoom.png" style="width:80%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+
+---
+
+## Augmentation Example : Shearing
+
+* Images are 'stretched out'
+
+<!-- TODO shiva -->
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+# zoom_range from 0 - 1 where 1 = 100%.
+train_image_generator2 = ImageDataGenerator(rescale=1./255,
+                                            shear_range=0.2) # <-- shear range
+
+train_data_gen2 = train_image_generator2.flow_from_directory(batch_size=batch_size,
+                                               directory=train_dir,
+                                               shuffle=True,
+                                               target_size=(IMG_HEIGHT, IMG_WIDTH))
+
+augmented_images = [train_data_gen2[0][0][0] for i in range(5)]
+plotImages (augmented_images)
+```
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/image-augmentation-13-shearing.png" style="width:80%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+
+
 
 ---
 ## Augmentation Example: Brightness
@@ -626,9 +666,12 @@ plotImages (augmented_images)
 * We usually **augment training images**; not validation images
     - The goal is to expose the network to various images  to learn from
 
+* The original images are **NOT** modified
+
 * The generator will generate the images **at run time**
 
 * Note, the generator does not increase the training image set; it provides variations for each batch of data
+    - So if we had 1000 training images, the network will see 1000 training images.  Some of the images will be augmented during training phase
 
 ---
 
