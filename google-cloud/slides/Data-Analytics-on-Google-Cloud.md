@@ -37,6 +37,11 @@ Notes:
 - Instructor, cover **Data Studio** module and complete the labs
 
 ---
+## Jump off Point: BigQuery
+
+- Instructor, cover **Big Query** module and complete the labs
+
+---
 
 ## Lab: Colab intro
 
