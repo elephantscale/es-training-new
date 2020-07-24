@@ -10,71 +10,11 @@ ResNet-50 is trained on a image set with multiple categories.
 
 ## Transfer Learning
 
-- Imagine you want to learn how to play the ukulele. If you have no musical background, and you are starting fresh with the ukulele as your very first instrument, it'll take you a few months to get proficient at playing it. On the other hand, if you are accustomed to playing the guitar, it might just take a week, due to how similar the two instruments are. Taking the learnings from one task and fine-tuning them on a similar task is something we often do in real life. The more similar the two tasks are, the easier it is to adapt the learnings from one task to the other.
 
 <img src="../../assets/images/deep-learning/transfer-learning-1.png" alt="XXX image missing" style="background:white;max-width:80%;" width="60%" /><!-- {"left" : 0.91, "top" : 5.34, "height" : 3.3, "width" : 8.43} -->
 
 ---
 
-## Transfer Learning
-
-<img src="../../assets/images/deep-learning/transfer-learning-2.png" alt="XXX image missing" style="background:white;max-width:60%;" width="70%" /><!-- {"left" : 1.1, "top" : 1.59, "height" : 6.68, "width" : 8.05} -->
-
-
-
----
-
-## Transfer Learning
-
-- Freeze lower layers, so their weights are fixed
-    - they do not change during training
-
-- Unfreeze higher layers
-    - So their weights can be trained during training
-
-- May add extra layers specific to our problem
-
----
-
-## Caching the Frozen Layers
-
-  - Since frozen layer weights don't change, when an instance of training data goes through, the output is the same
-
-  - So by caching the output, we can get huge speed boost
-
-  - Need a lot of memory though
-
----
-
-## Organizing Training Data
-
-  - Download from `https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/download/train.zip`
-  - We need to divide the data into training / validation sets
-  - Keras can automatically assign the name of class using the folder name
-  - So a good folder structure is like this
-
-```
-data
-├── train
-│   ├── cat
-│   │   ├── cat1.jpg
-│   │   └── cat2.jpg
-│   └── dog
-│       ├── dog1.jpg
-│       └── dog2.jpg
-└── val
-    ├── cat
-    │   ├── cat3.jpg
-    │   └── cat4.jpg
-    └── dog
-        ├── dog3.jpg
-        └── dog4.jpg
-```
-<!-- {"left" : 0, "top" : 3.79, "height" : 2.23, "width" : 1.97} -->
-
-  - Keras processes the input data in the alphabetical order of the folder names. Since 'cat' comes before 'dog' alphabetically, our 1 class for prediction is 'cat'. For a multi-class task, we can apply the same concept and infer each class id based on the folder sort order.
-
----
 
 ## TRAINING PARAMETERS
 
@@ -99,4 +39,3 @@ data
 - Which images are we least confident about being a cat/dog?
 
 - Which images have incorrect predictions in spite of being highly confident?
-

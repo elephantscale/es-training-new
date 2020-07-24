@@ -11,114 +11,180 @@ Notes:
 
 ---
 
-# About Transfer Learning
+# Image Classification
 
 ---
 
-## Transfer Learning
+## Image Processing is Hard!
 
- * Let us say you need an expert in a certain field:
-   - Say you need someone who knows brain surgery!
-   - And let's say that there are no brain surgeons to be found!
-   - What to do?
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/cats-dog-classifier-learning-curve-100-epochs.png" style="width:35%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
 
- * Well, you could start studying brain surgery!
-   - But that would take some time.
-   - A LOT of time!
-   - YEARS of time!
+* By now we had trained image classifiers on cat-dog / horse-human / flowers datasets
+
+* Our datasets are of modest size (few thousands images, ~50 - 150 MB in size)
+
+* In 'cat-dog-redux' data we had about 2000 training images (size: 45 MB) and 1000 validation images (size 22 MB)
+
+* Our network is pretty small: 3 Convolutional layers (Conv + MaxPool) ;  10 layers total
+
+* We trained this network for 100 epochs
+    - Took about 20 minutes on a Ubuntu machine with 16 cores + 64 GB memory +  Nvidia GeForce RTX 2070  GPU  with 8GB  (Using Tensorflow-GPU acceleration)
+
+* Managed to achieve about 75% accuracy
 
 ---
 
-## Transfer Learning
+## Computer Vision Models
 
- * OR, you could try to find someone else
-   - Maybe an expert in, say some other type of surgery.
-   - Say heart surgery.
+* Our modest model achieved 75% accuracy with a few minutes of training
 
- * Will the heart surgeon be able to perform brain surgery?
-   - Not right away.
-   - But she probably would be better off than you would be!
-   - And if she studied brain surgery, she could learn it quickly.
-   - Because she knows a lot about surgery in general.
+* State of the art models can achieve 99% accuracy!
 
+* These are trained on much larger datasets and for many hours/days/weeks!
 
+* Can we re-use these models?
+
+* Yes, enter **Transfer Learning**!
+
+---
+
+# Transfer Learning
+
+---
+
+## Transfer Learning Analogy
+
+<!-- TODO shiva -->
+<img src="../../assets/images/generic/guitar-ukulele-1.jpg" style="width:20%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+* Imagine you want to learn how to play the **ukulele**
+
+* If you have no musical background, and you are starting fresh with the ukulele as your very first instrument, it'll take you a few months to get proficient at playing it
+
+* On the other hand, if you are accustomed to playing the **guitar**, it might just take a week, due to how similar the two instruments are
+
+* Taking the learnings from one task and fine-tuning them on a similar task is something we often do in real life.
+
+* The more similar the two tasks are, the easier it is to adapt the learnings from one task to the other.
 
 Notes:
 
+- Image credits : https://pixabay.com/photos/guitar-electric-guitar-2925282/, https://pixabay.com/photos/ukulele-instrument-music-pages-1376516/
 
 ---
 
-## What is Transfer Learning?
+## Training Large Models is Difficult
 
- * Deep layers require  **LOTS**  of time and effort to train
+ * Large models have many layers (deep models)
 
- * They also may require huge amounts of **data** to train
+ * Deep layers require  **LOTS**  of time and resources to train
+    - Many dozens or hundreds of CPUs / GPUs
+
+ * They may require huge amounts of **data** to train
    - Maybe **petabytes** of training data.
-   - Do you have that much data?
-   - Then what to do?
 
- * Much of the early layers are for extracting features
-     - Mostly the same for most real world use cases.
-     - Early layers are about identifying areas of interest in the data
-     - Later layers are about applying that to a problem.
+ * For example, Google translate model trains on 2 billion+ words on 99+ GPUs for week+
 
+ * What if we don't have that much compute power or don't have that much data?
 
-
-Notes:
-
-
+ * Try to re-use pre-trained models!
 
 ---
 
-## Pre trained Model
+
+## Using a Pre-trained Model
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/3rd-party/standing-on-shoulders.jpg" style="width:30%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
 
  * Despite what you think, your problem is not totally unique
    - Others have worked on it before.
    - Much of their work is useful to you
    - "Stand on the shoulders of giants"
- * Instead of starting from scratch, why not start from a known point?
-   - We often "pre-initialize" weights to random values.
-   - Random values are *guaranteed* not to work.
-   - But a known working state would at least work for *some* problem.
+
+ * Instead of starting from scratch, why not start from a trained model?
+
+ * But how much of the model is reusable?
+
+---
+
+## Reusability of Pre-trained Models
+
+
+ * In a image classifier neural network, much of the early layers are for extracting features (eyes, ears etc)
+
+ * These features are pretty much the same for most real world use cases
+
+ * So we can re-use the learned knowledge in these layers
+
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/transfer-learning-3.png" style="width:80%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+
+Notes:
+
+
+---
+## Reusability of Pre-trained Models
+
+ * The surprise is that a pre-trained model works pretty well!
+
+ * Even if it was trained with data that is totally differently from your data
+
+ * Why is this?
+   - Because images are images
+   - Words are words
+   - etc
+
+
+---
+
+## Customizing Pre-Trained Models
+
+ * Earlier layers of the pre-trained model are frozen; so their weights do not change during re-training
+
+ * The last few layers can be re-trained
+
+ * We often several `dense` layers to the back end of the network.
+
+ * And then these layers are trained on **our own data**
+
+ * This allows us to customize the model to our data
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/transfer-learning-4.png" style="width:60%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+
+Notes:
+
+
+---
+
+## Transfer Learning Process
+
+* Earlier layers are frozen; so their weights don't change during re-training
+
+* And later layers are re-trained with our own data
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/transfer-learning-2.png" style="width:50%;" /><!-- {"left" : 1.1, "top" : 1.59, "height" : 6.68, "width" : 8.05} -->
+
+
+
+---
+
+
+## Popular Pre-Trained Models
+
  * Examples of Pre-trained models for Image Recognition
    - Inception
    - ResNet
+
  * Example of Pre-Trained model for Natural Language
      - Word2Vec
+     - BERT
 
 Notes:
 
-
-
----
-
-## The Surprise
-
- * The surprise is that a pre-trained model works pretty well!
- * Even if it was trained totally differently from your data
- * Why is this?
-   - Because Images are Images
-   - Words are words
-   - etc
- * Starting from somewhere is generally a good thing.
- * In real life:
-   - We usually like to do some transfer learning if possible.
-
-
-Notes:
-
-
-
----
-
-## Applying the Model to your data.
-
- * Adding Layers
-   - We often several `dense` layers to the back end of the network.
-   - This allows us to apply the data to our problem.
-
-
-Notes:
 
 
 ---
@@ -231,6 +297,3 @@ Notes:
  * Perform Transfer Learning on image classification dataset.
 
 Notes:
-
-
-

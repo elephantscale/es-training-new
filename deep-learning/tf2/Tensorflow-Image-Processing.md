@@ -53,9 +53,10 @@ Notes:
 
 ## Image Folder Structure
 
-* Here we see flowers dataset
 * The data is split into **training** and **validation** sets
 * The directory names are automatically inferred as **labels**  (e.g. : **`daisy, dandelion, roses, sunflowers, tulips`**)
+* Label numbers are assigned in alphabetical order;     
+__`daisy=0,   dandelion=1, roses=2,  sunflowers=3,  tulips=4`__
 
 ```text
 
@@ -64,7 +65,6 @@ flowers/
 │   ├── daisy
 │   │   ├── daisy-1.jpg
 │   │   ├── daisy-2.jpg
-│   │   ├── daisy-3.jpg
 │   ├── dandelion
 │   │   ├── dandelion-1.jpg
 │   │   ├── dandelion-2.jpg
