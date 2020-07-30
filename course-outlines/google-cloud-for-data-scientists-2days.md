@@ -20,7 +20,7 @@ In this course, the students will learn to do Data Science with Python,  and the
 Data Analysts, Data Scientists
 
 ## Duration:
-Three to four days depending on the agenda
+Two days
 
 ## Format:
 Lectures and hands*on labs. (50%, 50%)
