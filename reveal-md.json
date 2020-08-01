@@ -25,6 +25,8 @@
         "visible" : true,
         "position" : "bottom-right",
 	    "#position-comment" : "valid values are : botton-left, bottom-center,  bottom-right"
-	}
+	},
+	
+	"showNotes": "separate-page"
 
 }
