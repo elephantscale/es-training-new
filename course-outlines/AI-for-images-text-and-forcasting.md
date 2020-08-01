@@ -9,8 +9,8 @@ This course introduces Deep Learning concepts and TensorFlow and Keras libraries
 ## What you will learn:
 - Deep Learning concepts
 - TensorFlow and Keras
-- Create neural networks with Tensorflow and Keras
-- Learn to use tools like Tensorboard to help with training neural networks
+- Create neural networks with TensorFlow and Keras
+- Learn to use tools like TensorBoard to help with training neural networks
 - We will build neural networks to solve the following problems
   - Regression
   - Classification
