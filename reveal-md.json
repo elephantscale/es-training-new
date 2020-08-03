@@ -6,25 +6,24 @@
     "height": 1190,
 
 
-    "transition":"slide",
+    "transition": "slide",
     "transitionSpeed": "fast",
 	"mouseWheel": true,
 
     "center": false,
-    "controls":true,
-    "progress":true,
-    "showNotes":true,
+    "controls": true,
+    "progress": true,
+    "showNotes": true,
     "slideNumber": true,
 
     "data-separator": "^\n---\n$",
     "data-separator-vertical": "^\n----\n$",
     "data-separator-notes": "^Notes:",
 
-    "copyright" : {
-        "text" : "Copyright (c) CURRENT_YEAR  Elephant Scale Inc.  All rights reserved.",
-        "visible" : true,
-        "position" : "bottom-right",
-	    "#position-comment" : "valid values are : botton-left, bottom-center,  bottom-right"
+    "copyright": {
+        "text": "Copyright (c) CURRENT_YEAR  Elephant Scale Inc.  All rights reserved.",
+        "visible": true,
+        "position": "bottom-right",
+	    "#position-comment": "valid values are : botton-left, bottom-center,  bottom-right"
 	}
-
 }
