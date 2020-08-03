@@ -18,7 +18,7 @@ done
 shift "$(($OPTIND -1))"
 
 docker_image="elephantscale/es-reveal-md:prod"
-if [ "$1" ] ; then 
+if [ "$1" ] ; then
 	docker_image=$1
 fi
 
@@ -46,8 +46,16 @@ if [ -f "${utils_dir}/.es_utils_home" ] ; then
     found_es_utils="yes"
 fi
 
+if [ -z "$found_es_utils" ] ; then
+	utils_dir=$(cd $ES_HOME/utils && pwd -P)
+	if [ -f "${utils_dir}/.es_utils_home" ] ; then
+	    found_es_utils="yes"
+	fi
+fi
+
 echo "port : $port"
 if [ "$found_es_utils" = "yes" -a "${dev_mode}" = "yes" ] ; then
+    echo "Found utils dir: ${utils_dir}"
     echo "DEV_MODE=on.  Mounting local utils"
     docker run -it   \
         --shm-size=1gb  \
