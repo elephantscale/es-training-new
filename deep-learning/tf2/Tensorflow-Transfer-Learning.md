@@ -327,6 +327,202 @@ Notes:
 
 ---
 
+# Re-training a Pre-Trained Model
+
+
+---
+
+## Re-training a Pre-Trained Model
+
+* Pre-trained models are trained on certain datasets (e.g. Imagenet)
+
+* We will re-train the model using our own data, to customize for our own needs
+
+* We will add a couple of layers of our own to the base model
+
+* Base model layers are frozen; only our layers are trained
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/transfer-learning-4.png" style="width:60%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+
+
+---
+
+## Transfer Learning Example
+
+* Here we will use **`InceptionV3`** model and re-train it on our own examples
+* **`include_top=False`** means we are only loading the base model, without the classification layer
+* And we are initializing it with imagenet weights
+* The model has 21 Million params!
+
+<!-- TODO shiva -->
+```python
+pre_trained_model = tf.keras.applications.InceptionV3(input_shape=(IMG_WIDTH,IMG_HEIGHT,3),
+                                                      include_top = False,
+                                                      weights = 'imagenet')
+
+# custom function just to print model summary
+print_model_summary_compact(pre_trained_model)
+
+# getting the size
+! du -skh ~/.keras/models/* | grep inception
+
+```
+
+```python
+# ~~~~~~~~ output ~~~~~~
+# * Model: "inception_v3"
+# * Total params: 21,802,784
+# * Trainable params: 21,768,352
+# * Non-trainable params: 34,432
+# * layers:  311
+#
+# 92M	/home/sujee/.keras/models/inception_v3_weights_tf_dim_ordering_tf_kernels.h5
+# 84M	/home/sujee/.keras/models/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5
+```
+
+---
+## Transfer Learning Example
+
+* Here we are freezing the base model layers, so their weights are not trainable
+
+* Note the difference between **`Total params = 21 Million`**  vs. **`Trainable params = 0`**  !
+
+```python
+## Freeze all layers
+# for layer in pre_trained_model.layers:
+#   layer.trainable = False
+
+# or this works too
+pre_trained_model.trainable = False
+
+print_model_summary_compact (pre_trained_model)
+```
+
+```python
+# ~~~~~~~~ output ~~~~~~
+# * Model: "inception_v3"
+# * Total params: 21,802,784
+# * Trainable params: 0
+# * Non-trainable params: 21,802,784
+# * layers:  311
+```
+
+---
+## Transfer Learning Example
+
+* Note how we are creating a new model with **`pre_trained_model`**
+
+* And note the new **`Trainable params (9.4 Million)`** - these are from our layers
+
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Input, Dense, Softmax, Flatten, GlobalAveragePooling2D, Dropout
+from transfer_learning_utils import print_model_summary_compact
+
+model = Sequential ([
+                    Input (shape=(160, 160, 3)),
+                    pre_trained_model,
+                    Flatten(),
+                    Dense(512, activation='relu'),
+                    Dropout(0.5),
+                    Dense(NUM_CLASSES, activation='softmax')
+            ])
+
+model.compile (loss='categorical_crossentropy',
+                  optimizer= 'adam',
+                  metrics=['accuracy'])
+
+print_model_summary_compact(model)
+```
+
+```python
+# ~~~~~~~~ output ~~~~~~
+# * Model: "sequential"
+# * Total params: 31,241,506
+# * Trainable params: 9,438,722
+# * Non-trainable params: 21,802,784
+# * layers:  5
+```
+
+---
+## Transfer Learning Example
+
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/transfer-learning-model-1.png" style="width:35%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+
+* Our image size is (160,160,3)  (3 for RGB channels because of color images)
+
+* That is fed into the base Inception model
+
+* Then we flatten the output to feed it to fully connected network
+
+* And then finally we are producing a Softmax output of 2 classes (cat/dog)
+
+```python
+model = Sequential ([
+                    Input (shape=(160, 160, 3)),
+                    pre_trained_model,
+                    Flatten(),
+                    Dense(512, activation='relu'),
+                    Dropout(0.5),
+                    Dense(NUM_CLASSES, activation='softmax')
+            ])
+```
+
+---
+
+## Transfer Learning Example
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/transfer-learning-learning-curve-1.png" style="width:35%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+
+* We now train the model
+* Training 10 epochs took about 1 minute in an Nvidia GTX 2070 GPU system
+* You can see the accuracy starts out at 88%, and then climbs to 95%
+* This is far better result than training cat-dog model from scratch;  
+ We achieved around 75% accuracy after training 100 epochs
+* And the final model is 125 MB in size (base model was 84 MB)
+
+```python
+history = model.fit( ...)
+```
+
+```python
+# Epoch  1/10 -  loss: 29.5414 - accuracy: 0.5402 - val_loss: 2.2663 - val_accuracy: 0.8884
+# Epoch  2/10 -  loss: 5.6050 - accuracy: 0.7982 - val_loss: 0.7580 - val_accuracy: 0.9353
+# Epoch  3/10 -  loss: 2.4032 - accuracy: 0.8670 - val_loss: 0.8108 - val_accuracy: 0.9554
+# ...
+# Epoch  9/10 -  loss: 0.3259 - accuracy: 0.9107 - val_loss: 0.0825 - val_accuracy: 0.9732
+# Epoch 10/10 -  loss: 0.2010 - accuracy: 0.9197 - val_loss: 0.1300 - val_accuracy: 0.9509
+# ...
+
+# CPU times: user 1min 1s, sys: 1.25 s, total: 1min 3s
+# Wall time: 57.9 s
+```
+
+---
+## Lab: Re-training a Pre-trained Model
+
+<!-- TODO shiva -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+* **Overview:**
+    - Customize a pre-trained model
+
+* **Approximate run time:**
+    - 40 mins
+
+* **Instructions:**
+    - **TRANSFER-3**: Retrain a pre-trained model
+
+
+Notes:
+
+---
+
 ## Review and Q&A
 
 <!-- TODO shiva -->
