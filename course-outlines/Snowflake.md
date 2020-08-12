@@ -1,6 +1,6 @@
 # Snowflake
 * (C) Elephant Scale
-* 07-16-2020
+* 08-11-2020
 
 ## Overview
 
@@ -75,3 +75,51 @@ Laptops with overly restrictive VPNs or firewalls may not work properly.
     * Security Validation
     * Snowflake Audit and Logging
     * Penetration Testing    
+    
+#### Topics to cover specifically, as asked by the client
+
+* Snowflake objects
+
+    * Table, View, Stored Procedure, UDF, Stage, File Format, Pipe, Sequence
+
+* Caching in Snowflake and How different caching types works
+
+    * Metadata Cache
+
+    * Query Result Cache
+
+    * Warehouse Data Cache
+
+* Reading a Query Profile & How it helps
+
+* Data Loading
+
+    * Related to File format, Stage, DB/Schema/Table, Pipe
+
+    * Bulk Loading (using COPY command)
+
+    * Data Loading Transformations and Validations
+
+    * Data Unloading
+
+    * Continuous Loading (using Snowpipe)
+
+* Roles and Inheritance
+
+* Semi-Structured Data
+
+    * JSON, CSV, XML samples
+
+    * View, Query, and Flatten Data
+
+    * Loading & Unloading
+
+* Time Travel
+
+* Clustering
+
+* Building Semi-structured from Relational (using object_construct function)
+
+* External Stage Vs. External Tables Vs. External Tables + Materialized Views
+
+* Snowflake - Python Connector, Spark Connector    

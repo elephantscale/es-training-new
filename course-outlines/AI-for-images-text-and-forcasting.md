@@ -29,7 +29,7 @@ Developers, Data analysts, data scientists
 Introductory to Intermediate
 
 ## Industry Use Cases Covered
-We will study and solve some of most common industry use cases; listed below
+We will study and solve some of the most common industry use cases; listed below
 
 * Finance
   - Predicting loan defaults at Prosper
