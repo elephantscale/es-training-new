@@ -88,6 +88,8 @@ Notes:
 
 ## Our Teaching Philosophy
 
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:50%;float:right;"/> <!-- {"left" : 1.7, "top" : 1.77, "height" : 5.53, "width" : 6.85} -->
+
 * Enable you to be a **'ML engineer'** by giving you
     - The essential knowledge of ML
     - Plenty of time and playground environment for learning the API
@@ -103,14 +105,16 @@ Notes:
 
 Notes:
 
-* All the labs are verified at 1.3 even though latest is 1.4
 
 ---
 
-## Some Highlights of this Class
+## Machine Learning Platforms
 
 * Machine Learning is the focus of this course
-* The concepts are generic you can implement them any ML platforms (R, Python, Spark)
+* Following are popular ML Platforms
+  - Python (Scikit)
+  - Spark ML
+  - R
 
 <img src="../../assets/images/machine-learning/some-highlights.png" alt="some-highlights.png" style="width:70%;"/> <!-- {"left" : 0.97, "top" : 3.87, "height" : 2.91, "width" : 8.3} -->
 
@@ -143,35 +147,37 @@ Notes:
 ## Class Overview
 
 * **Day 1**
-    - ML intro
-    - Python ML overview
-    - ML Concepts
-    - Statistics Primer
-    - Data Exploration & Visualizing
-    - Feature Engineering
-    - Python SciKit Learn Overview
+  - ML intro
+  - Python ML overview
+  - Statistics Primer
+  - Data Exploration & Visualizing
+  - Feature Engineering
+  - ML Concepts
 
 * **Day 2**
-    - Linear Regression
-    - Logistic Regression
-    - SVM
-    - Random Forest
-    - KMeans
-
-
+  - Python SciKit Learn Overview
+  - Linear Regression
+  - Logistic Regression
+  - SVM
+  - Naive Bayes
 
 ---
 
-
-## Lots of Labs: Learn By Doing
-
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.7, "top" : 1.77, "height" : 5.53, "width" : 6.85} -->
+## Class Overview
 
 
+* **Day 3**
+  - Decision Trees
+  - Random Forest
+  - Unsupervised learning
+  - KMeans
+  - Recommendations
+
+* **Final workshop (Time permitting)**
+  - We will do a workshop applying what we have learned so far
 
 
 ---
-
 
 ## After The Class...
 

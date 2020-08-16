@@ -36,7 +36,7 @@ Dataproc.md
 ../../machine-learning/generic/Machine-Learning-Primer-Compact.md
 ../../machine-learning/generic/ML-Resources.md
 ../../machine-learning/generic/Feature-Engineering.md
-../../machine-learning/spark/ML-Spark-Overview.md
+../../machine-learning/spark/Spark-ML-Overview.md
 ../../machine-learning/generic/ML-Concepts-All.md
 ../../machine-learning/spark/Regressions-Spark.md
 ../../machine-learning/spark/Classification-Spark.md

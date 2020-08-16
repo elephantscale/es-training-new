@@ -1,8 +1,6 @@
 
-# Introduction to Machine Learning With Python
+# Introduction to AI, AI Programming and Machine Learning 
 
-<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:20%;"/>  <!-- {"left" : 2.97, "top" : 7.3, "height" : 1.41, "width" : 1.65} -->    &nbsp; &nbsp;
- <img src="../../assets/images/logos/python-logo-1.png" style="width:25%;"/>  <!-- {"left" : 4.83, "top" : 8.14, "height" : 0.62, "width" : 2.42} -->   
 
 ---
 
@@ -59,62 +57,32 @@ Notes:
 
 ## Data Science Totem pole
 
-<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 0.55, "top" : 2.08, "height" : 5.48, "width" : 9.16} -->
+<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 0.55, "top" : 1.09, "height" : 5.48, "width" : 9.16} -->
 
 
 Notes:
 
 ---
 
-## Machine Learning Platforms
-
-* Machine Learning is the focus of this course
-* Following are popular ML Platforms
-  - Python (Scikit)
-  - Spark ML
-  - R
-
-<img src="../../assets/images/machine-learning/some-highlights.png" alt="some-highlights.png" style="width:70%;"/> <!-- {"left" : 0.97, "top" : 3.87, "height" : 2.91, "width" : 8.3} -->
-
----
-
-## Agenda - 2 Days
+## Goal For This ML Class : 'ML Engineer'
 
 
-*  **Day 1**
-    - ML  Intro
-    - Data exploration
-    - Feature extraction
-    - Machine Learning concepts
-*  **Day 2**
-    - Regressions
-    - Classifications
-    - Clustering
+|                                     |          API users         |                                               ML Engineer                                               |                    Data Scientists                    |
+|:-----------------------------------:|:--------------------------:|:-------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------:|
+|          __In a nutshell__          |            What            |                                                What & Why                                               |                   What, Why and How                   |
+|            __Background__           |         Developers         |                                     Developers, Analysts, Architects                                    |               Scientists (usually PhDs)               |
+|               __API__               |   Knows the basic of API   |                                           Sound API knowledge                                           |                Excellent API knowledge                |
+|              __Models__             | No understanding of models | Knows the fundamentals of model behind API (not necessarily the math/stats theories powering the model) | Has deep understanding of math/stats behind the model |
+|         __Model Validation__        |    copy-paste and pray!    |                           Knows how to test and improve the model iteratively                           |        Knows how to test and improve the model        |
+| __Can Come up with New Algorithms__ |             no             |                                        Can adopt a new algorithm                                        |            Can come up with new algorithms            |
 
-Notes:
-
----
-
-
-## Real World Datasets
-
-* We will work on real world datasets such as
-    - Uber Trips data
-    - Walmart Shopping data
-    - Netflix recommendation
-    - Credit card default data
-    - Prosper loan data
-    - NYSE Stock data
-
-<img src="../../assets/images/logos/netflix-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%"/><!-- {"left" : 0.22, "top" : 5.63, "height" : 0.9, "width" : 1.95} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/prosper-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%"/><!-- {"left" : 2.64, "top" : 5.85, "height" : 0.5, "width" : 2.07} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%"/><!-- {"left" : 5.18, "top" : 5.48, "height" : 1.21, "width" : 1.67} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/walmart-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%"/><!-- {"left" : 7.54, "top" : 5.73, "height" : 0.71, "width" : 2.49} -->
+<!-- {"left" : 0.25, "top" : 1.35, "height" : 5.9, "width" : 9.75} -->
 
 
 
 Notes:
 
-
 ---
-
 
 ## Our Teaching Philosophy
 
@@ -130,9 +98,81 @@ Notes:
 
 * Highly interactive (questions, discussions ..etc  are welcome)
 
-* Hands-on - lots and lots of labs! (learn by doing
+* Hands-on - lots and lots of labs! (learn by doing)
+
 
 Notes:
+
+
+---
+
+## Machine Learning Platforms
+
+* Machine Learning is the focus of this course
+* Following are popular ML Platforms
+  - Python (Scikit)
+  - Spark ML
+  - R
+
+<img src="../../assets/images/machine-learning/some-highlights.png" alt="some-highlights.png" style="width:70%;"/> <!-- {"left" : 0.97, "top" : 3.87, "height" : 2.91, "width" : 8.3} -->
+
+
+Notes:
+
+
+---
+
+## Real World Datasets
+
+* We will work on real world datasets such as
+    - Uber Trips data
+    - Walmart Shopping data
+    - Netflix recommendation
+    - Credit card default data
+    - Prosper loan data
+    - NYSE Stock data
+
+<img src="../../assets/images/logos/netflix-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%"/><!-- {"left" : 0.22, "top" : 5.63, "height" : 0.9, "width" : 1.95} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/prosper-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%"/><!-- {"left" : 2.64, "top" : 5.85, "height" : 0.5, "width" : 2.07} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%"/><!-- {"left" : 5.18, "top" : 5.48, "height" : 1.21, "width" : 1.67} --> &nbsp;  &nbsp; <img src="../../assets/images/logos/walmart-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%"/><!-- {"left" : 7.54, "top" : 5.73, "height" : 0.71, "width" : 2.49} -->
+
+
+
+
+Notes:
+
+
+---
+
+## Class Overview
+
+* **Day 1**
+  - ML intro
+  - Python ML overview
+  - Statistics Primer
+  - Data Exploration & Visualizing
+  - Feature Engineering
+  - ML Concepts
+
+* **Day 2**
+  - Python SciKit Learn Overview
+  - Linear Regression
+  - Logistic Regression
+  - SVM
+  - Naive Bayes
+
+---
+
+## Class Overview
+
+
+* **Day 3**
+  - Decision Trees
+  - Random Forest
+  - Unsupervised learning
+  - KMeans
+  - Recommendations
+
+* **Final workshop (Time permitting)**
+  - We will do a workshop applying what we have learned so far
 
 
 ---
