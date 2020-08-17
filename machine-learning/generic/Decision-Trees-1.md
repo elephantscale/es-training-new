@@ -1,12 +1,4 @@
 # Decision Trees
----
-
-## Lesson Objectives
-
- * Learn the Tree algorithms
-
-
-Notes:
 
 ---
 

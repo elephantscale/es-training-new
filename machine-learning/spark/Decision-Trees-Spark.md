@@ -38,6 +38,7 @@ Notes:
 
 ## Decision Tree Classifier in Spark ML (Python)
 
+<!-- TODO shiva -->
 ```python
 from pyspark.ml.classification import DecisionTreeClassifier
 
@@ -85,6 +86,7 @@ Notes:
 
 ## Model Evaluation Sample Code (Python)
 
+<!-- TODO shiva -->
 ```python
 from pyspark.ml.evaluation import MultiClassClassificationEvaluator
 
@@ -124,6 +126,7 @@ Notes:
 
 ## Decision Tree Regressor in Spark ML (Python)
 
+<!-- TODO shiva -->
 ```python
 from pyspark.ml.classification import DecisionTreeRegressor
 
@@ -170,6 +173,7 @@ Notes:
 
 ## Model Evaluation Sample Code (Python)
 
+<!-- TODO shiva -->
 ```python
 from pyspark.ml.evaluation import RegressionEvaluator
 
@@ -199,8 +203,6 @@ Notes:
  *  **Approximate Time** 30 mins
 
  *  **Instructions**
-
-     -  Review next few slides for sample code in  Python / Spark / R
 
      -  **DT-1: college-admission**
 
@@ -285,6 +287,7 @@ Notes:
 
 ## Random Forest Sample Code (Python)
 
+<!-- TODO shiva -->
 ```python
 from pyspark.ml.classification import RandomForestClassifer
 
@@ -349,6 +352,7 @@ Notes:
 
 ## Random Forest Sample Code (Python)
 
+<!-- TODO shiva -->
 ```python
 from pyspark.ml.classification import RandomForestRegressor
 
@@ -396,6 +400,8 @@ Notes:
 ---
 
 ## Model Evaluation Sample Code (Python)
+
+<!-- TODO shiva -->
 ```python
 from pyspark.ml.evaluation import RegressionEvaluator
 
@@ -435,8 +441,6 @@ Notes:
  *  **Approximate Time** 30 mins
 
  *  **Instructions** 
-
-     - Review next few slides for sample code in  Python / Spark / R
 
      - RF1: Prosper loan data (classification)
 
