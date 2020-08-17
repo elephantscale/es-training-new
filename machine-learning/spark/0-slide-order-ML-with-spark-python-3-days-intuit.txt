@@ -36,7 +36,6 @@ Classification-Generic.md
 Classification-Spark.md
 
 ## Trees
-Decision-Trees-Generic.md
 Decision-Trees-Spark.md
 
 ## Unsupervised

@@ -5,18 +5,19 @@
 ## Lesson Objectives
 
 
- * Learn classification algorithms in Spark
+ * Learn tree algorithms in Spark
 
 Notes:
-
-
-
 
 ---
 
 ## Decision Trees
 
-[../generic/Decision-Trees-Generic.md#Decision Trees](../generic/Decision-Trees-Generic.md#Decision Trees)
+[../generic/Decision-Trees-1.md](../generic/Decision-Trees-1.md)
+
+---
+
+# Decision Trees in Spark
 
 ---
 
@@ -185,17 +186,87 @@ print("Accuracy = %g " , accuracy)
 Notes:
 
 
+---
+
+## Lab: Decision Trees
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+ *  **Overview**
+ Create a classification decision tree
+
+ *  **Approximate Time** 30 mins
+
+ *  **Instructions**
+
+     -  Review next few slides for sample code in  Python / Spark / R
+
+     -  **DT-1: college-admission**
+
+     -  **DT-2: prosper-loans**  
+     (see following slides for details on Prosper dataset)
+
+<img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%;"><!--{"left" : 2.81, "top" : 5.85, "height" : 1.08, "width" : 4.62} -->
+
+
+Notes:
+
+---
+
+## About the `Prosper` Dataset
+
+ <img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%; float:right"/><!-- {"left" : 7.32, "top" : 1.12, "height" : 0.63, "width" : 2.68} -->
+
+ * https://www.prosper.com/
+
+ * America's first peer-to-peer lending marketplace
+
+     - 2 million +  members
+
+     - $ 2 B + in  funded loans
+
+ * Dataset is public
+
+     - 113,937 loans with 81 variables
+
+
+
+Notes:
+
 
 
 ---
 
-# Random Forests
+## Variables in the Prosper Dataset
+
+| #     | Name                      |Name     | #                      |
+|-------|---------------------------|---------|------------------------|
+| 1     | ListingKey                |2        | ListingNumber          |
+| 3     | ListingCreationDate       |4        | CreditGrade            |
+| 5     | Term                      |6        | LoanStatus             |
+| 7     | ClosedDate                |8        | BorrowerAPR            |
+| 9     | BorrowerRate              |10       | LenderYield            |
+| 11    | EstimatedEffectiveYield   |12       | EstimatedLoss          |
+| 13    | EstimatedReturn           |14       | ProsperRating..numeric |
+| 15    | ProsperRating..Alpha      |16       | ProsperScore           |
+| 17    | ListingCategory..numeric  |18       | BorrowerState          |
+| 19    | Occupation                |20       | EmploymentStatus       |
+| 21    | EmploymentStatusDuration  |22       | IsBorrowerHomeowner    |
+| 23    | CurrentlyInGroup          |...      | And so on, till #81    |
+
+Notes:
 
 ---
 
-## Random Forest
 
-[../generic/Decision-Trees-Generic.md#Random Forest](../generic/Decision-Trees-Generic.md#Random Forest)
+## Random Forests
+
+[../generic/Decision-Trees-2-Random-Forest.md](../generic/Decision-Trees-2-Random-Forest.md)
+
+---
+
+# Random Forests in Spark
 
 ---
 
@@ -340,3 +411,40 @@ print("Accuracy = %g " , accuracy)
 <!-- {"left" : 0, "top" : 1.2, "height" : 3.19, "width" : 10.25} -->
 
 Notes:
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+
+* Let's go over what we have covered so far
+
+* Any questions?
+
+---
+
+## Lab: Random Forest
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!--{"left" : 7.23, "top" : 1, "height" : 3.9, "width" : 2.92} -->
+
+ *  **Overview**
+
+ *  **Approximate Time** 30 mins
+
+ *  **Instructions** 
+
+     - Review next few slides for sample code in  Python / Spark / R
+
+     - RF1: Prosper loan data (classification)
+
+     - RF2: Election contribution data (classification)
+
+     - RF3: Election contribution data (regression)
+
+Notes:
+
+
+

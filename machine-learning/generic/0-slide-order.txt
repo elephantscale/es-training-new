@@ -36,7 +36,8 @@ Regressions-All.md
 Classifications-All.md
 
 ## Trees
-Decision-Trees-Generic.md
+Decision-Trees-1.md
+Decision-Trees-2-Random-Forest.md
 
 ## Unsupervised
 Unsupervised-All.md
