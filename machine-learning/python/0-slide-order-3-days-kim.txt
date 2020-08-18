@@ -33,7 +33,7 @@ About-AI-Machine-Learning-Class-3-days.md
 ## Algorithms
 Regressions-Python.md
 Classifications-Python.md
-Trees-Python.md
+Decision-Trees-Python.md
 Unsupervised-Python.md
 
 ## Recommendations
