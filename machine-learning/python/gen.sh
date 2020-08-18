@@ -9,4 +9,8 @@ pandoc ../machine-learning-with-python-2days.md -o  ../machine-learning-with-pyt
 pandoc ../machine-learning-with-python-2days.md -o  ../machine-learning-with-python-2days.pdf
 
 
+## regular outline
 $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-order-3-days.txt $@
+
+## Custom for Kim Morello
+# $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d    0-slide-order-3-days-kim.txt $@

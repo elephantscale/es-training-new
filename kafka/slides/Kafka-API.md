@@ -6,9 +6,9 @@
 
 ## Lesson Objectives
 
- * Learn to use Kafka Java API
+* Learn to use Kafka Java API
 
-Notes: 
+Notes:
 
 
 
@@ -33,12 +33,12 @@ Notes:
      - Do your home work!
  * REST proxy provides a language neutral way to access Kafka
  * Full list: https://cwiki.apache.org/confluence/display/KAFKA/Clients
- 
+
 <img src="../../assets/images/logos/java-logo-1.png" style="max-width:14%;"/><!-- {"left" : 1.85, "top" : 6.14, "height" : 2.34, "width" : 2.34} --> &nbsp; &nbsp; <img src="../../assets/images/logos/python-logo-1.png" style="max-width:30%;"/><!-- {"left" : 4.71, "top" : 7.13, "height" : 0.88, "width" : 3.69} -->
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -57,10 +57,10 @@ Notes:
 
  * Supports native data types
      - String
-     - Bytes 
+     - Bytes
      - Primitives (int, long ...etc.)
 
-Notes: 
+Notes:
 
 
 
@@ -84,21 +84,21 @@ props.put("client.id", "SimpleProducer");
 props.put("key.serializer",  "org.apache.kafka.common.serialization.IntegerSerializer");
 props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-KafkaProducer<Integer, String> producer = new KafkaProducer<>(props);
+KafkaProducer< Integer, String > producer = new KafkaProducer<>(props);
 
 // ** 3 **
 String topic = "test";
 Integer key = new Integer(1);
 String value = "Hello world";
-ProducerRecord<Integer, String> record = new ProducerRecord<> (topic, key, value);
+ProducerRecord < Integer, String > record = new ProducerRecord<> (topic, key, value);
 producer.send(record);
-producer.close(); 
+producer.close();
 
 ```
 <!-- {"left" : 0, "top" : 1.15, "height" : 4.04, "width" : 10.25} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -116,7 +116,7 @@ props.put("key.serializer",  "org.apache.kafka.common.serialization.IntegerSeria
 props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
 
-KafkaProducer<Integer, String> producer = new KafkaProducer<>(props); 
+KafkaProducer < Integer, String > producer = new KafkaProducer<>(props);
 
 ```
 <!-- {"left" : 0, "top" : 1.29, "height" : 1.76, "width" : 10.25} -->
@@ -134,7 +134,7 @@ KafkaProducer<Integer, String> producer = new KafkaProducer<>(props);
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -148,9 +148,9 @@ Notes:
 String topic = "test";
 Integer key = new Integer(1);
 String value = "Hello world";
-ProducerRecord<Integer, String> record = new ProducerRecord<> (topic, key, value);
+ProducerRecord< Integer, String > record = new ProducerRecord<> (topic, key, value);
 producer.send(record);
-producer.close(); 
+producer.close();
 ```
 <!-- {"left" : 0, "top" : 1.45, "height" : 1.51, "width" : 10.25} -->
 
@@ -159,13 +159,13 @@ producer.close();
  * Each  **record**  represents a message
  * Here we have a <key,value> message
  * send() doesn't wait for confirmation
- * We send in batches 
+ * We send in batches
 
      - for increased throughput
      - Minimize network round trips
 
 
-Notes: 
+Notes:
 
 
 
@@ -188,19 +188,19 @@ props.put("key.serializer",
                    "org.apache.kafka.common.serialization.IntegerSerializer");
 props.put("value.serializer",
                    "org.apache.kafka.common.serialization.StringSerializer");
-KafkaProducer<Integer, String> producer = new KafkaProducer<>(props);
+KafkaProducer < Integer, String > producer = new KafkaProducer<>(props);
 
 for(int i = 0; i < 100; i++) {
-  producer.send(new ProducerRecord<String, String>(
+  producer.send(new ProducerRecord < String, String >(
       "my-topic", Integer.toString(i), Integer.toString(i)));
 }
-producer.close(); 
+producer.close();
 
 ```
 <!-- {"left" : 0, "top" : 1.29, "height" : 3.94, "width" : 10.25} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -222,7 +222,7 @@ Notes:
 <!-- {"left" : 0.25, "top" : 3.38, "height" : 4.61, "width" : 9.75, "columnwidth" : [1.61, 3.58, 1.45, 3.11]} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -235,7 +235,7 @@ Notes:
 <img src="../../assets/images/kafka/Producer-Acknowledgements-02.png" alt="Producer-Acknowledgements-02.png" style="width:70%;"/><!-- {"left" : 0.58, "top" : 1.59, "height" : 6.47, "width" : 9.1} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -259,26 +259,26 @@ props.put("key.deserializer",
 props.put("value.deserializer",
 "org.apache.kafka.common.serialization.StringDeserializer");
 
-KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
+KafkaConsumer < Integer, String > consumer = new KafkaConsumer<>(props);
 
 consumer.subscribe(Arrays.asList("topic1")); // ** 2 **
 
 try {
     while (true) {
-      ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)); // ** 3 **
+      ConsumerRecords < Integer, String > records = consumer.poll(Duration.ofMillis(1000)); // ** 3 **
       System.out.println("Got " + records.count() + " messages");
-      for (ConsumerRecord<Integer, String> record : records) {
+      for (ConsumerRecord < Integer, String > record : records) {
       System.out.println("Received message : " + record);
      }
    }
 }
 finally {
   consumer.close(Duration.OfSeconds(60));
-} 
+}
 ```
 <!-- {"left" : 0, "top" : 1.29, "height" : 4.7, "width" : 10.25} -->
 
-Notes: 
+Notes:
 
 
 
@@ -296,10 +296,10 @@ props.put("key.deserializer",
 props.put("value.deserializer",
                "org.apache.kafka.common.serialization.StringDeserializer");
 
-KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
+KafkaConsumer < Integer, String > consumer = new KafkaConsumer<>(props);
 
 consumer.subscribe(Arrays.asList("topic1")); // ** 2 **  
- 
+
 ```
 <!-- {"left" : 0, "top" : 1.07, "height" : 2.46, "width" : 10.25} -->
 
@@ -314,7 +314,7 @@ consumer.subscribe(Arrays.asList("topic1")); // ** 2 **
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -326,16 +326,16 @@ Notes:
 ```java
 try {
    while (true) {
-    ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000); // ** 3 **
+    ConsumerRecords < Integer, String > records = consumer.poll(Duration.ofMillis(1000); // ** 3 **
     System.out.println("Got " + records.count() + " messages");
-    for (ConsumerRecord<Integer, String> record : records) { 
+    for (ConsumerRecord < Integer, String > record : records) {
      System.out.println("Received message : " + record);
     }
   }
 }
 finally {
 consumer.close();
-} 
+}
 ```
 <!-- {"left" : 0, "top" : 1.29, "height" : 2.1, "width" : 10.25} -->
 
@@ -350,7 +350,7 @@ consumer.close();
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -360,8 +360,8 @@ Notes:
 ## Consumer Poll Loop
 
 
- * Polling is usually done in an infinite loop. 
- ``` 
+ * Polling is usually done in an infinite loop.
+ ```
     while (keepRunning) {  
         do poll
     }
@@ -381,7 +381,7 @@ Notes:
      - Don't do high latency work between polls; otherwise the consumer could be deemed dead.
      - Do heavy lifting in a seperate thread
 
-Notes: 
+Notes:
 
 
 
@@ -391,7 +391,7 @@ Notes:
 ## ConsumerRecord
 
 
- *  **org.apache.kafka.clients.consumer.ConsumerRecord <K,V>** 
+ *  **org.apache.kafka.clients.consumer.ConsumerRecord <K,V>**
 
  *  **K  key():** key for record (type K), can be null
 
@@ -404,18 +404,18 @@ Notes:
  *  **long offset():** long offset in
 
 ```java
-ConsumerRecords<Integer, String> records = consumer.poll(Duration.ofMillis(1000)); 
-  for (ConsumerRecord<String, String> record : records) {
+ConsumerRecords < Integer, String > records = consumer.poll(Duration.ofMillis(1000));
+  for (ConsumerRecord < String, String > record : records) {
      System.out.printf("topic = %s, partition = %d, offset = %d,
             key= %s, value = %s\n",
             record.topic(), record.partition(), record.offset(),
             record.key(), record.value());
-} 
+}
 
 ```
 <!-- {"left" : 0, "top" : 4.78, "height" : 1.49, "width" : 10.25} -->
 
-Notes: 
+Notes:
 
 
 
@@ -431,7 +431,7 @@ Properties props = new Properties(); // ** 1 **
 props.put("session.timeout.ms", 30000); // 30 secs
 props.put("max.partition.fetch.bytes", 5 * 1024 * 1024); // 5 M
 
-KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props); 
+KafkaConsumer < Integer, String > consumer = new KafkaConsumer<>(props);
 ```
 <!-- {"left" : 0, "top" : 1.18, "height" : 1.77, "width" : 10.25} -->
 
@@ -446,7 +446,7 @@ KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
      - If no heartbeats are not received by this window, consumer will be deemed dead and a partition rebalance will be triggered
 
 
-Notes: 
+Notes:
 
 
 
@@ -460,12 +460,12 @@ Notes:
 
  * Call  **'**  **consumer.wakeup**  **()** ' from another thread
 
- * This will cause the poll loop to exit with  **'**  **WakeupException** ' 
+ * This will cause the poll loop to exit with  **'**  **WakeupException** '
 
 ```java
 try {
   while (true) {
-   ConsumerRecords<Integer, String> records = consumer.poll(100);
+   ConsumerRecords < Integer, String > records = consumer.poll(100);
     // handle events
  }
 }
@@ -474,14 +474,14 @@ catch (WakeupException ex) {
 }
 finally {
    // close will commit the offsets
-   consumer.close(); 
-} 
+   consumer.close();
+}
 
 ```
 <!-- {"left" : 0, "top" : 2.9, "height" : 3.27, "width" : 10.25} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -505,12 +505,12 @@ Runtime.getRuntime().addShutdownHook(new Thread() {
            e.printStackTrace();
   }
  }
-} 
+}
 ```
 <!-- {"left" : 0, "top" : 2.48, "height" : 2.98, "width" : 10.25} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -528,14 +528,14 @@ Notes:
 
  *  **Builds on previous labs:**   
     - 1-install Kafka
- *  **Approximate Time:** 
+ *  **Approximate Time:**
     - 30 - 40 mins
  *  **Instructions:**
     - Please follow: 3.1, 3.2, 3.3
- *  **To Instructor:** 
+ *  **To Instructor:**
 
 
-Notes: 
+Notes:
 
 
 
@@ -567,7 +567,7 @@ Notes:
      - Kafka will call this function with confirmation or exception
      - Higher throughput
 
-Notes: 
+Notes:
 
 
 
@@ -580,9 +580,9 @@ Notes:
 String topic = "test";
 Integer key = new Integer(1);
 String value = "Hello world";
-ProducerRecord<Integer, String> record = 
+ProducerRecord < Integer, String > record =
 		new ProducerRecord<> (topic, key, value);
-producer.send(record); // <-
+producer.send(record); // <-- fire away
 ```
 <!-- {"left" : 0, "top" : 1.19, "height" : 1.8, "width" : 8.68} -->
 
@@ -590,7 +590,7 @@ producer.send(record); // <-
 
  * The 'record' is placed in the send buffer
  * It will be sent to Kafka in a separate thread
- * Send() returns a Java Future object (that we are not checking) 
+ * Send() returns a Java Future object (that we are not checking)
  * Some messages can be dropped
  * Use cases:
 
@@ -599,7 +599,7 @@ producer.send(record); // <-
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -609,26 +609,26 @@ Notes:
 ## Producer Send Mode: Sync
 
 ```java
-ProducerRecord<Integer, String> record = 
+ProducerRecord < Integer, String > record =
 	new ProducerRecord<> (topic, key, value);
 
-Future<RecordMetadata> future = producer.send(record); // <- 
+Future < RecordMetadata > future = producer.send(record); // <-
 RecordMetadata recordMetaData = future.get(); // <-
- 
+
 
 ```
 <!-- {"left" : 0, "top" : 1.45, "height" : 1.5, "width" : 10.25} -->
 
 <br/>
 
- * Send() returns a Java Future object 
+ * Send() returns a Java Future object
 
  * FutureObject.get() returns  a RecordMetaData
 
  * Inspect RecordMetaData for success / error
 
 
-Notes: 
+Notes:
 
 
 
@@ -650,7 +650,7 @@ class KafkaCallback implements Callback {
   }
 }
 ...
-producer.send(record, new KafkaCallback());  // <- 
+producer.send(record, new KafkaCallback());  // <-
 ```
 
 <!-- {"left" : 0, "top" : 1.09, "height" : 2.84, "width" : 9.21} -->
@@ -665,7 +665,7 @@ producer.send(record, new KafkaCallback());  // <-
      - You could be creating millions of objects
      - Can induce intense garbage collection
 
-Notes: 
+Notes:
 
 
 
@@ -685,10 +685,10 @@ Notes:
 
      - Please follow: lab 4.1
 
- *  **To Instructor:** 
+ *  **To Instructor:**
 
 
-Notes: 
+Notes:
 
 
 
@@ -700,56 +700,42 @@ Notes:
 ---
 
 
-## Compression Basics
+## Compression
 
+<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
- * Kafka supports compression of  messages
+* Benefits of compression
+  - Reduces the data size goes on network --> faster throughput
+  - Reduces data footprint on disk --> less data to write to disk -> faster
+    
+* Compression is performed on a batch
+  - Larger batch size -> better compression
 
-     - Especially effective on batches
-
-     - Covers the full batch - larger == better compression
-
- * Supported compression codecs
-
-     - Gzip, Snappy, LZ4, Zstd (Zstandard)
-
- * Configured via Producer properties:
-
-     - compression.type
-
- * Kafka API will automatically
-
-     - Compress messages on producer side
-
-     - De-compress messages on consumer side
-
-     - Messages remain in compressed state in partitions
-
-Notes: 
-
-
+* Kafka API will automatically
+  - Compress messages on producer side
+  - De-compress messages on consumer side
+  - Messages remain in compressed state in partitions
 
 ---
 
-## Compression codecs comparison
+## Compression
 
-| Codec               | Compression Ratio | Compressed Size | De-compressed Size |
-|---------------------|-------------------|-----------------|--------------------|
-| Zstd 1.3.4 --fast=1 | 2.431             | 530 MB/s        | 1770 MB/s          |
-| Lz4 1.8.1           | 2.101             | 750 MB/s        | 3700 MB/s          |
-| Snappy 1.1.4        | 2.091             | 530 MB/s        | 1820 MB/s          |
+<img src="../../assets/images/kafka/compression-comparisons-2.png" style="width:50%;float:right;"/><!-- {"left" : 1.08, "top" : 1.61, "height" : 6.42, "width" : 8.09} -->
+
+* Supported compression codecs
+  - Gzip, Snappy, LZ4, Zstd
+
+* **Snappy** (from Google) is a pretty good light weight compressor;  Easy on GPU and produces medium level compresison
+
+* Current favorite is **Zstd** (Facebook) - Good speed and produces compact size
+
+* Configured via Producer properties:
+  - `compression.type`
 
 
-<!-- {"left" : 0.25, "top" : 1.29, "height" : 2.19, "width" : 9.75} -->
+* [Reference](https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression)
 
-<br/>
-
- * https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression
-
-Notes: 
-
-https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression
-
+Notes:
 
 ---
 
@@ -762,14 +748,14 @@ https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStan
 
  *  **Approximate Time:** 20 - 30 mins
 
- *  **Instructions:** 
+ *  **Instructions:**
 
      - Please follow: lab 4.2
 
  *  **To Instructor:**
 
 
-Notes: 
+Notes:
 
 
 
@@ -795,7 +781,7 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 1.24, "height" : 5.24, "width" : 9.75} -->
 
-Notes: 
+Notes:
 
 Broker will wait until fetch.min.bytes data accumulates before sending to consumer
 Auto.offset.reset other valid value is "earliest" - meaning read entire partition from start
@@ -820,7 +806,7 @@ Auto.offset.reset other valid value is "earliest" - meaning read entire partitio
 
      - Default value is RangeAssignor
 
-Notes: 
+Notes:
 
 
 
@@ -836,7 +822,7 @@ Notes:
 <img src="../../assets/images/kafka/partition-range-1.png" style="width:65%;"/><!-- {"left" : 0.5, "top" : 3.43, "height" : 3.82, "width" : 9.26} -->
 
 
-Notes: 
+Notes:
 
 https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignment-strategy-799fdf15d3ab
 
@@ -850,7 +836,7 @@ https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignme
 <img src="../../assets/images/kafka/partition-range-2.png" style="max-width:65%;"/><!-- {"left" : 1.02, "top" : 1.32, "height" : 7.01, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignment-strategy-799fdf15d3ab
 
@@ -869,7 +855,7 @@ https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignme
 
      - Imbalance of load
 
-Notes: 
+Notes:
 
 
 
@@ -883,7 +869,7 @@ Notes:
 <img src="../../assets/images/kafka/partition-range-3.png"  style="max-width:70%;"/><!-- {"left" : 0.79, "top" : 3.31, "height" : 3.57, "width" : 8.66} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -896,7 +882,7 @@ Notes:
 <img src="../../assets/images/kafka/partition-range-4.png" style="max-width:65%;"/><!-- {"left" : 1.02, "top" : 1.39, "height" : 6.86, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -921,12 +907,12 @@ Notes:
 
  *  **Log End:** offset of last message
 
- * Consumers can only read up to  **high watermark** 
+ * Consumers can only read up to  **high watermark**
 
      - Otherwise consumers will read un-replicated data, might result in data loss
 
 
-Notes: 
+Notes:
 
 
 
@@ -937,9 +923,9 @@ Notes:
 
 
  * Kafka does not track 'read acknowledgements' of messages like other JMS systems
- * It tracks the consumer progress using an  **offset** 
- * When a Consumer calls `Poll()` it gets  **new records** from the offset 
- * Offsets are stored in Kafka (in a special topic :  **__**  **consumer_offsets**  **)** 
+ * It tracks the consumer progress using an  **offset**
+ * When a Consumer calls `Poll()` it gets  **new records** from the offset
+ * Offsets are stored in Kafka (in a special topic :  **__**  **consumer_offsets**  **)**
      - Used to be stored in ZK, but now stored in Kafka for performance reasons
  * When a consumer crashes..
      - Partitions of that consumer are assigned to another consumer
@@ -948,7 +934,7 @@ Notes:
 <img src="../../assets/images/kafka/Commits-And-Offsets.png" alt="Commits-And-Offsets.png" style="width:70%;"/><!-- {"left" : 0.54, "top" : 6.95, "height" : 1.51, "width" : 9.16} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -960,7 +946,7 @@ Notes:
 
  * Offsets can be 'moved' automatically by consumer API
 
-     - Convenient 
+     - Convenient
 
      - But doesn not give full control to developer
 
@@ -970,7 +956,7 @@ Notes:
 
      - Complete control
 
-Notes: 
+Notes:
 
 
 
@@ -986,35 +972,35 @@ Notes:
 
  * auto.commit is enabled by default
 
- * When poll() is called it will commit the  **latest offset** returned by the  **last poll()** 
+ * When poll() is called it will commit the  **latest offset** returned by the  **last poll()**
 
  * During each poll, consumer checks if the  **auto.commit.interval.ms**  interval has expired; if yes it commits the offset
 
- * Commit produces a special message to a special Kafka topic called  **_consumer_offsets** 
+ * Commit produces a special message to a special Kafka topic called  **_consumer_offsets**
 
      - Offsets are saved in this topic
 
-Notes: 
+Notes:
 
 
 
 
 ---
 
-## Auto Commit 
+## Auto Commit
 
 
 <img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="max-width:70%;"/><!-- {"left" : 0.65, "top" : 2.97, "height" : 3.7, "width" : 8.96} -->
 
 
-Notes: 
+Notes:
 
 
 
 
 ---
 
-## Auto Commit 
+## Auto Commit
 
 
 <img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:40%; float:left;"/><!-- {"left" : 0.46, "top" : 1.24, "height" : 2.29, "width" : 5.55} -->
@@ -1026,14 +1012,14 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
 
 ---
 
-## Auto Commit 
+## Auto Commit
 
 
 <img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:40%; float:left;"/><!-- {"left" : 0.29, "top" : 1.31, "height" : 2.04, "width" : 5.79} -->
@@ -1043,14 +1029,14 @@ Notes:
 <img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:60%; float:right;"/><!-- {"left" : 0.71, "top" : 4.03, "height" : 4.45, "width" : 8.84} -->
 
 
-Notes: 
+Notes:
 
 
 
 
 ---
 
-## Auto Commit 
+## Auto Commit
 
 
 <img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:30%; float:left;"/><!-- {"left" : 0.13, "top" : 1.15, "height" : 2.97, "width" : 5.89} -->
@@ -1060,7 +1046,7 @@ Notes:
 <img src="../../assets/images/kafka/Auto-Commit-03.png" alt="Auto-Commit-03.png" style="width:60%; float:right;"/><!-- {"left" : 1.02, "top" : 4.35, "height" : 4.36, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -1075,7 +1061,7 @@ Notes:
 <img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing.png" alt="Auto-Commit-Duplicate-Processing.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.78, "height" : 5.4, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -1093,7 +1079,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -1109,7 +1095,7 @@ Notes:
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -1126,7 +1112,7 @@ Notes:
 <img src="../../assets/images/kafka/Auto-Commit-Skipped-Events.png" alt="Auto-Commit-Skipped-Events.png" style="max-width:50%;"/><!-- {"left" : 1.02, "top" : 2.75, "height" : 5.97, "width" : 8.21} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -1141,7 +1127,7 @@ Notes:
 <img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-02.png" alt="Auto-Commit-Skipped-Events-02.png" style="max-width:60%;"/><!-- {"left" : 0.73, "top" : 1.63, "height" : 6.38, "width" : 8.79} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -1160,7 +1146,7 @@ Notes:
 <img src="../../assets/images/kafka/Auto-Commit-Skipped-Events-00.png" alt="Auto-Commit-Skipped-Events-00.png" style="max-width:60%;"/><!-- {"left" : 0.66, "top" : 3.31, "height" : 4.56, "width" : 8.92} -->
 
 
-Notes: 
+Notes:
 
 
 
@@ -1184,7 +1170,7 @@ Notes:
 
      - Before calling poll() make sure all events returned from previous poll are processed
 
-Notes: 
+Notes:
 
 
 
@@ -1193,9 +1179,9 @@ Notes:
 
 ## Duplicate Processing vs. Skipped Events
 
- *  **Processed but Offset not updated -> Duplicate processing** 
+ *  **Processed but Offset not updated -> Duplicate processing**
 
- *  **Offset updated but not processed -> Skipped events** 
+ *  **Offset updated but not processed -> Skipped events**
 
 <img src="../../assets/images/kafka/Duplicate-Skipped-Events.png" alt="Duplicate-Skipped-Events.png" style="width:45%; float:left;"/><!-- {"left" : 0.44, "top" : 2.96, "height" : 1.41, "width" : 6.05} -->
 
@@ -1204,20 +1190,20 @@ Notes:
   <img src="../../assets/images/kafka/Duplicate-Skipped-Events-09.png" alt="Duplicate-Skipped-Events-09.png" style="width:70%; float:right;"/><!-- {"left" : 0.88, "top" : 5.97, "height" : 1.68, "width" : 8.48} -->
 
 
-Notes: 
+Notes:
 
 
 
 
 ---
 
-## Manual Commit 
+## Manual Commit
 
 
 ```java
 Properties props = new Properties();
 ...
-props.put("enable.auto.commit", "false"); // must disable 
+props.put("enable.auto.commit", "false"); // must disable
 KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
 
 while (true) {
@@ -1225,13 +1211,13 @@ while (true) {
   for (ConsumerRecord<Integer, String> record : records)
   {
      System.out.println(String.format(
-	"topic = %s, partition = %s, offset = %d", 
+	"topic = %s, partition = %s, offset = %d",
 	record.topic(), record.partition(), record.offset()));
   }
   try {
-    consumer.commitSync(); // <--- 1 
-    consumer.commitASync(); // <--- or  ** 2 ** 
-  
+    consumer.commitSync(); // <--- 1
+    consumer.commitASync(); // <--- or  ** 2 **
+
   } catch (CommitFailedException e) {
     e.printStackTrace();
   }
@@ -1242,7 +1228,7 @@ while (true) {
 
 
 
-Notes: 
+Notes:
 
 
 
@@ -1268,7 +1254,7 @@ Notes:
 
      - (see documentation)
 
-Notes: 
+Notes:
 
 
 
@@ -1288,7 +1274,7 @@ Notes:
 
      - Poll frequently
 
-Notes: 
+Notes:
 
 
 
@@ -1298,7 +1284,7 @@ Notes:
 ## At-least Once Consumer
 
 
- * Processes each message one or more times 
+ * Processes each message one or more times
 
  * Achieved by setting:
 
@@ -1306,7 +1292,7 @@ Notes:
 
      - Manually commit offset using consumer.commitSync();
 
-Notes: 
+Notes:
 
 
 
@@ -1315,33 +1301,33 @@ Notes:
 ## Exactly Once Processing in Kafka
 
 
- * Producer  send can be  **idempotent** 
+ * Producer  send can be  **idempotent**
 
-     - Set in producer via   **"enable.idempotence= true"** 
+     - Set in producer via   **"enable.idempotence= true"**
 
- * Producer can write a batch  **_atomically_** 
+ * Producer can write a batch  **_atomically_**
 
 ```java
-      producer.initTransactions(); 
+      producer.initTransactions();
 
-      try { 
+      try {
 
          producer.beginTransaction(); producer.send(record1);
-         producer.send(record2); producer.commitTransaction(); 
+         producer.send(record2); producer.commitTransaction();
 
-     } catch(ProducerFencedException e) { 
+     } catch(ProducerFencedException e) {
 
-         producer.close(); 
+         producer.close();
 
-     } catch(KafkaException e) { 
+     } catch(KafkaException e) {
 
-         producer.abortTransaction(); 
+         producer.abortTransaction();
 
      }
 ```
 <!-- {"left" : 0, "top" : 3.03, "height" : 4.09, "width" : 10.25} -->
 
-Notes: 
+Notes:
 
 An idempotent operation is one which can be performed many times without causing a different effect than only being performed once.
 
@@ -1363,7 +1349,7 @@ An idempotent operation is one which can be performed many times without causing
 
  * Details: https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/
 
-Notes: 
+Notes:
 
 With idempotency and transactions support on producer, Streams API can support exactly once
 
@@ -1388,7 +1374,7 @@ With idempotency and transactions support on producer, Streams API can support e
  *  **To Instructor:**
 
 
-Notes: 
+Notes:
 
 
 
@@ -1412,7 +1398,7 @@ org.apache.kafka.clients.consumer.OffsetAndMetadata(long offset, String meta)
 ```
 <!-- {"left" : 0, "top" : 2.07, "height" : 1.79, "width" : 10.25} -->
 
-Notes: 
+Notes:
 
 
 
@@ -1423,7 +1409,7 @@ Notes:
 
 
 ```java
-import org.apache.kafka.common.TopicPartition; 
+import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.clients.consumer.OffsetAndMetadata;
 
 Map<TopicPartition, OffsetAndMetadata> currentOffsets = new HashMap<>();
@@ -1435,24 +1421,24 @@ while (true) {
    {
       count++;
       System.out.println("Received message : " + record);
-      
+
       // process message
       // and update offset map
       currentOffsets.put(
           new TopicPartition(record.topic(), record.partition()),
           new OffsetAndMetadata(record.offset()+1, "no metadata"));
-  
+
       // commit every 1000 records
       if (count % 1000 == 0) {
           consumer.commitAsync(currentOffsets, null);
     }
   }
-} 
+}
 
 ```
 <!-- {"left" : 0, "top" : 1.5, "height" : 5.51, "width" : 10.25} -->
 
-Notes: 
+Notes:
 
 
 
@@ -1478,7 +1464,7 @@ Notes:
 
      - Consumer.seek (partition, offset)
 
-Notes: 
+Notes:
 
 https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up-trick/
 
@@ -1495,14 +1481,14 @@ https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up
 
  *  **Approximate Time:** 20 - 30 mins
 
- *  **Instructions:** 
+ *  **Instructions:**
 
      - Please follow: lab 5
 
  *  **To Instructor:**
 
 
-Notes: 
+Notes:
 
 ---
 
@@ -1526,9 +1512,9 @@ Notes:
 
 
 
- *  *Source:*  *http://lambda-architecture.net/* 
+ *  *Source:*  *http://lambda-architecture.net/*
 
-Notes: 
+Notes:
 
 
 
@@ -1555,7 +1541,7 @@ object DirectKafkaWordCount {
        val messages = KafkaUtils.createDirectStream
                 [String, String, StringDecoder, StringDecoder](
                     ssc, kafkaParams, topicsSet)    
-       
+
 // Get the lines, split them into words, count the words and print
        val lines = messages.map(_._2)    
        val words = lines.flatMap(_.split(" "))    
@@ -1572,7 +1558,7 @@ object DirectKafkaWordCount {
 <!-- {"left" : 0, "top" : 1.5, "height" : 5.49, "width" : 10.25} -->
 
 
-Notes: 
+Notes:
 
 Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/streaming/DirectKafkaWordCount.scala
 
@@ -1600,7 +1586,7 @@ val s1 = spark.
 
 
 
-Notes: 
+Notes:
 
 Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/streaming/DirectKafkaWordCount.scala
 
@@ -1619,13 +1605,13 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
  * We are going to be analyzing Clickstream data
 
 ```java
-{ "timestamp" :1451635200055, 
-"session":"session_57" , 
+{ "timestamp" :1451635200055,
+"session":"session_57" ,
 "domain":"twitter.com" ,
-"cost":24, 
-"user":"user_31", 
-"campaign": "campaign_1", 
-"ip":"ip_64","action": 
+"cost":24,
+"user":"user_31",
+"campaign": "campaign_1",
+"ip":"ip_64","action":
 "blocked" }
 ```
 <!-- {"left" : 0, "top" : 1.9, "height" : 1.98, "width" : 4.79} -->
@@ -1638,7 +1624,7 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
 
      - Facebook.com: 12
 
-Notes: 
+Notes:
 
 
 
@@ -1654,14 +1640,14 @@ Notes:
 
  *  **Approximate Time:** 30 - 40 mins
 
- *  **Instructions:** 
+ *  **Instructions:**
 
      - Please follow lab 6
 
- *  **To Instructor:** 
+ *  **To Instructor:**
 
 
-Notes: 
+Notes:
 
 
 
@@ -1671,19 +1657,19 @@ Notes:
 ## Review Questions
 
 
- * How would you ensure that a message has been written durably in your Producer?
+* How would you ensure that a message has been written durably in your Producer?
 
- * True or False: Each Consumer reads from a single topic
+* True or False: Each Consumer reads from a single topic
 
- * How does a Consumer retrieve messages?
+* How does a Consumer retrieve messages?
 
- * How does the Consumer do a `'clean shutdown'`?
+* How does the Consumer do a `'clean shutdown'`?
 
-     - Why is this important?
+  - Why is this important?
 
- * How is compression enabled for messages?
+* How is compression enabled for messages?
 
-Notes: 
+Notes:
 
 
 
@@ -1693,4 +1679,4 @@ Notes:
 ## Lesson Summary
 
 
-Notes: 
+Notes:

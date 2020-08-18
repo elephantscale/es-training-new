@@ -24,7 +24,7 @@ Data-Exploration.md
 ML-concepts.md
 
 ## spark
-ML-Spark-Overview.md
+Spark-ML-Overview.md
 
 ## Regressions
 Regressions-Generic.md
@@ -36,7 +36,6 @@ Classification-Generic.md
 Classification-Spark.md
 
 ## Trees
-Decision-Trees-Generic.md
 Decision-Trees-Spark.md
 
 ## Unsupervised

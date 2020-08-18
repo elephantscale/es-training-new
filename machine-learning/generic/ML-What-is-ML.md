@@ -78,7 +78,7 @@ Notes:
 ## Traditional Programming vs. Machine Learning
 
 <!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/rules-vs-AI-4.png"  style="width:40%;float:right;"/><!-- {"left" : 0.96, "top" : 3.83, "height" : 4.16, "width" : 8.33} -->
+<img src="../../assets/images/machine-learning/rules-vs-AI-4.png"  style="width:35%;float:right;"/><!-- {"left" : 0.96, "top" : 3.83, "height" : 4.16, "width" : 8.33} -->
 
 * As data size grows so much, ability to humans to write rules to analyze all data can't keep up
 

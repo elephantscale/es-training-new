@@ -202,44 +202,40 @@ Notes:
 
 ---
 
-## Best Practices: Compression
+## Compression
 
 <img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
- * Enabling compression
+* Benefits of compression
+  - Reduces the data size goes on network --> faster throughput
+  - Reduces data footprint on disk --> less data to write to disk -> faster
+    
+* Compression is performed on a batch
+  - Larger batch size -> better compression
 
-     - Reduces the data size goes on network --> faster throughput
-     - Reduces data footprint on disk --> less data to write to disk -> faster
-
- * Compression is performed on a batch
-
-     - Larger batch size -> better compression
-
- * Compression uses CPU
-
-     - More threads can speed up throughput with compression
-
- * Compression types: none, gzip, snappy, or lz4
-
-     - See comparisons in next slides
-
-Notes:
-
-
-
+* Kafka API will automatically
+  - Compress messages on producer side
+  - De-compress messages on consumer side
+  - Messages remain in compressed state in partitions
 
 ---
 
-## Compression Comparisons
+## Compression
+
+<img src="../../assets/images/kafka/compression-comparisons-2.png" style="width:50%;float:right;"/><!-- {"left" : 1.08, "top" : 1.61, "height" : 6.42, "width" : 8.09} -->
+
+* Supported compression codecs
+  - Gzip, Snappy, LZ4, Zstd
+
+* **Snappy** (from Google) is a pretty good light weight compressor;  Easy on GPU and produces medium level compresison
+
+* Current favorite is **Zstd** (Facebook) - Good speed and produces compact size
+
+* Configured via Producer properties:
+  - `compression.type`
 
 
-<img src="../../assets/images/kafka/Compression-Comparisons.png" alt="Compression-Comparisons.png" style="width:60%;"/><!-- {"left" : 1.08, "top" : 1.61, "height" : 6.42, "width" : 8.09} -->
-
-
-Notes:
-
-
-
+* [Reference](https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression)
 
 ---
 

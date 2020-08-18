@@ -4,11 +4,8 @@
 ##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-order-3-days.txt  pdf
 ##          (-d will replace current assembly.out)
 
-## Course outline
-../machine-learning-with-python.pdf
-
 ## About
-About-Machine-Learning-With-Python-Class-3-days.md
+About-AI-Machine-Learning-Class-3-days.md
 
 ## Resources / References
 ../generic/ML-Resources.md
@@ -29,6 +26,9 @@ About-Machine-Learning-With-Python-Class-3-days.md
 
 ## Introducing SciKit Learn
 ../../python/slides/PYTHON-Sklearn2.md
+
+## Spark ML
+../spark/Spark-ML-Overview.md
 
 ## Algorithms
 Regressions-Python.md
