@@ -3,3 +3,4 @@
 #
 AI-Primer-1.md
 AI-Primer-2.md
+AI-Primer-3.md
