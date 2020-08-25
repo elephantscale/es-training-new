@@ -1,0 +1,25 @@
+## To Make slides
+#   ./gen.sh   
+#   ./gen.sh  pdf
+
+
+## Resources
+../../machine-learning/generic/ML-Resources.md
+
+../../ai-for-execs/slides/AI-Primer-1.md
+../../ai-for-execs/slides/AI-Primer-2.md
+../../ai-for-execs/slides/AI-Primer-3.md
+
+## Introduce Neural Networks
+../generic/DL-Neural-Networks.md
+
+## TensorFlow
+../tf2/Tensorflow-Intro.md
+
+../../machine-learning/generic/Text-Analytics-Intro.md
+../../python/slides/PYTHON-Text-Spacy.md
+../../ai-nlp/slides/word2vec.md
+
+## TransferLearning
+../tf2/Tensorflow-Transfer-Learning.md
+

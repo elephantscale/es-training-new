@@ -669,7 +669,7 @@ Notes:
 * **Design Input/Output layers of NN**
 
 
-<img src="../../assets/images/deep-learning/neural-network-design-1.png" style="width:30%;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/deep-learning/neural-network-design-1.png" style="width:28%;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 ---
 
 ## Review and Q&A
