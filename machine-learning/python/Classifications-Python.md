@@ -192,8 +192,8 @@ gnb.score(iris.data, iris.target)
 
 * **Instructions:**
 
-    - NB1: Spam classification
+    - **NB1**: naive-bayes/NB1-Spam classification
 
-    - BONUS: NB2: Income classification
+    - BONUS: **NB2**: naive-bayes/NB2-Income classification
 
 Notes:

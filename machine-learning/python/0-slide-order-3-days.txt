@@ -26,6 +26,7 @@ About-Machine-Learning-With-Python-Class-3-days.md
 ## ML
 ../generic/Data-Exploration.md
 ../generic/ML-Concepts-All.md
+../generic/Feature-Engineering.md
 
 ## Introducing SciKit Learn
 ../../python/slides/PYTHON-Sklearn2.md

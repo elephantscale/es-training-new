@@ -27,3 +27,8 @@
 
     -
 - ML-Concepts
+
+---
+
+Logistic 
+    - Show how we map probability into yes/no 
