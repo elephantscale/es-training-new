@@ -19,6 +19,108 @@ Notes:
 
 ---
 
+# Doing AI Projects
+
+---
+
+## What Problems Can AI Solve?
+
+<img src="../../assets/images/generic/3rd-party/phone-screen-cracked-damage.jpg" alt="Data-Science.png" style="width:25%;float:right;"/><!-- {"left" : 7.33, "top" : 1.29, "height" : 1.16, "width" : 1.75} -->
+
+
+<img src="../../assets/images/generic/3rd-party/car-3.png" alt="Data-Science.png" style="width:25%;float:right;clear:right;"/><!-- {"left" : 6.53, "top" : 3.1, "height" : 2.21, "width" : 3.35} -->
+
+- Andrew Ng's  __"one second"__ rule  
+"If you can do a task with less than ONE second of thought process, AI can do that easily"
+
+- What AI can do now
+    - Classifying email as spam / not spam
+    - Translating english sentence to Japanese
+    - Identifying an image (car vs boat)
+    - Identify damaged products off assembly line
+    - Customer support ticket routing
+    - self driving car : figuring out what is in front of it
+    - Identifying cancer cells from Xray image
+
+
+---
+
+## What AI Can not do
+
+- **Complex tasks that combines multiple skills**
+  - Do market research and write a report
+- If you don't have enough data
+    - if you train AI using 1000s of xray images it can learn to classify.  What if you only have handful of images?  
+    AI may not be able to provide good results
+- Understand human intension  
+For example, if a construction worker is waving you to stop or continue?
+
+<img src="../../assets/images/generic/3rd-party/crossing-guard-2.png" alt="" style="width:24%;"/> &nbsp; &nbsp; <!-- {"left" : 0.86, "top" : 5.29, "height" : 2.7, "width" : 3.48} --> <img src="../../assets/images/generic/3rd-party/hitchhiker-1.jpg"  style="width:28%;"/><!-- {"left" : 5.33, "top" : 5.29, "height" : 2.7, "width" : 4.06} -->
+
+
+---
+
+## Some Thoughts on Evaluating  AI Projects
+
+- AI can do 'certain tasks', it may not be able to automate the whole work flow
+
+- For example, let's say we are deploying AI to handle customer tickets.
+
+- AI can easily 'route' tickets to appropriate queues and priorities
+    - "Item arrived late, even though I paid for expedited shippping.  can I get a refund?" ==> Send it to 'refund' queue
+    - "Item arrived damaged, can I return it?" ==> send it to 'return' queue
+
+- What AI can not do  (the whole workflow):
+    - Read the support ticket
+    - call customer to confirm the issue
+    - then issue a refund
+    - update the sales register
+---
+
+## Some Thoughts on Evaluating  AI Projects
+
+- Do you have enough data to get started?
+
+- For example let's say you want to identify damaged products off the assembly line, do you have enough pictures of good items and damaged items?
+
+
+<img src="../../assets/images/generic/3rd-party/phone-screen-cracked-damage.jpg" alt="Data-Science.png" style="width:25%;"/><!-- {"left" : 3.11, "top" : 4, "height" : 2.68, "width" : 4.04} -->
+
+
+---
+
+## Some Thoughts on Evaluating  AI Projects
+
+- An AI system can evaluate an MRI scan pretty quickly to determine if the patient has a tumor
+
+- How ever it is not going to be able replace an trained oncologist, because they do lot of other things
+    - train interns
+    - consult with patients
+    - evaluate equipments and treatments
+
+- So an oncologist may deploy an AI system to help him with reviewing MRI scans quickly.  
+So he/she can focus on other 'higher order' functions
+
+---
+
+## Quiz For the Class: AI Projects
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/><!-- {"left" : 6, "top" : 1.13, "height" : 2.78, "width" : 4.16} -->
+
+- Pick a couple of potential AI projects that is applicable to you
+
+- What kind of data do you need for machine learning?  
+It may help to think along these lines
+    -  Data we already have
+    - Data we can collect
+    - 3rd party data - FREE or minimal cost
+    - 3rd party data - Premium
+
+- What kind of data infrastructure do you have now?  Can it scale to handle future growth?
+
+
+---
+
+
 # How to do AI
 
 ---
