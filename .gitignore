@@ -10,6 +10,7 @@ out/
 _static
 _site
 _html
+.~*
 
 ## ES Slides stuff
 *-gen.md

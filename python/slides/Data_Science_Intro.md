@@ -308,21 +308,16 @@ Notes:
 ## Model Validation
 
   * Models need to be 'verified'  / 'validated.'
-
   * Split the data set into
-
     - Training set: build / train model
     - Test set: validate the model
-
   * Initially 70% training, 30% validation.
-
   * Tweak the dials to decrease training and increase validation.
-
   * Training set should represent data well enough.
 
 
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:40%;"/><!-- {"left" : 2.38, "top" : 5.39, "height" : 2.41, "width" : 5.49} -->
+<img src="../../assets/images/machine-learning/model-testing-5.png" style="width:40%;"/><!-- {"left" : 2.38, "top" : 5.39, "height" : 2.41, "width" : 5.49} -->
 
 Notes:
 

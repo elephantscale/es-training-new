@@ -448,20 +448,14 @@ https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize
 
 
  * Models need to be `verified`  / `validated`
-
  * Split the data set into
-
      - Training set: build / train model
-
      - Test set: validate the model
-
  * Initially 70% training,  30% test
-
  * Tweak the dials to decrease training and increase validation.
-
  * Training set should represent data well enough.
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" alt="Model-Validation-1.png" style="width:30%;"/><!-- {"left" : 5.55, "top" : 6.63, "height" : 1.97, "width" : 4.48} -->
+<img src="../../assets/images/machine-learning/model-testing-5.png"  style="width:40%;"/><!-- {"left" : 5.55, "top" : 6.63, "height" : 1.97, "width" : 4.48} -->
 
 
 

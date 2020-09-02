@@ -56,49 +56,98 @@ Notes:
 
 ## Sample Model for Predicting MPG
 
-<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:70%;"/> <!-- {"left" : 0.49, "top" : 1.66, "height" : 5.74, "width" : 9.26} -->
+<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:60%;float:right;"/> <!-- {"left" : 0.49, "top" : 1.66, "height" : 5.74, "width" : 9.26} -->
 
-
-
-Notes:
-
----
-
-## Model Building
-
- * Designate inputs as X
-    - X<sub>1</sub>: first input  (e.g.  number of cylinders)
-    - X<sub>2</sub>: second input  (e.g. weight of car)
-    - X<sub>i</sub>: ith input  (e.g. horsepower)
- * Output  / target variable is denoted as Y
-
- * Our Mathematical model is
-    - `Y = f(X) + E`
-      - Y: TargetX:
-      - Inputs (X<sub>1</sub>, X<sub>2</sub> ..etc)
-      - f: function
-      - E: error / noise
+* Designate inputs as X
+  - X<sub>1</sub>: first input  (e.g.  number of cylinders)
+  - X<sub>2</sub>: second input  (e.g. weight of car)
+  - X<sub>i</sub>: ith input  (e.g. horsepower)
+* Output  / target variable is denoted as Y
+* **`Y = f(X) + E`**
+  - Y: Target:
+  - Inputs (X<sub>1</sub>, X<sub>2</sub> ..etc)
+  - E: error / noise
 
 
 Notes:
 
 ---
 
-## Using the Model
+## Let's Play a Guessing Game!
 
- * Our Model:
-    - **MPG  = f  ( cylinders,   horse power,  weight)  + E**
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
- * **Goal: figure out 'f' from given data**
-    - Once we figure out 'f' then we can plug-in values for *cylinders , horse power and weight  and predict MPG*
-    - Prediction is the most common use of ML
+* Look at the data below.  Come up with a formula linking X and Y
 
- * **Inference**
-    - Which of the 3 attributes (cylinders / horse power / weight) influences MPG more?
-    - Figuring this out might give us insight into better products.  
-     *'what is the best way to get best MPG?'*
+<br/>
 
-Notes:
+| X | Y |
+|---|---|
+| 1 | 2 |
+| 2 | 5 |
+
+* So what is the formula?
+
+* `Y = ???`
+
+* Answer next slide
+
+---
+
+## Guessing Game
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+| X | Y |
+|---|---|
+| 1 | 2 |
+| 2 | 5 |
+
+* I have 2 possible formulas (there may be more)
+
+* **`Y = 2X + 1`**
+
+* **`Y = X^2 + 1`**
+
+---
+
+## Guessing Game
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let me provide more data
+
+| X | Y  |
+|---|----|
+| 1 | 2  |
+| 2 | 5  |
+| 3 | 10 |
+| 4 | 17 |
+
+* Now, what would be the formula?
+
+* Answer next slide
+
+---
+## Guessing Game
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+
+| X | Y  |
+|---|----|
+| 1 | 2  |
+| 2 | 5  |
+| 3 | 10 |
+| 4 | 17 |
+
+* With more data, we can finalize on a formula
+
+* **`Y = X^2 + 1`**
+
+* Lesson:  More (quality) data we have, we can come up with a more precise formula
+
+* **This is the essense of machine learning!**
 
 ---
 
@@ -153,129 +202,5 @@ Notes:
 
 ---
 # Evaluating A Model
----
 
-## Machine Learning Process: Step 3: Model Evaluation
-
-<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="max-width:90%;"/><!-- {"left" : 0.91, "top" : 2.42, "height" : 4.23, "width" : 8.43} -->
-
-
----
-
-## Under-fitting / Over-fitting
-
- * Here we have 3 models
- * One on left: is not really capturing the essence of the data
-    - Underfitting
- * One on right: following every small variation of data, not really generalizing
-    - Overfitting
- * One in the middle is just right
-
-<img src="../../assets/images/machine-learning/underfit-overfit-03.png" alt="underfit-overfit" style="max-width:80%;"/> <!-- {"left" : 0.26, "top" : 5.16, "height" : 3.07, "width" : 9.74} -->
-
-
-
-
-
-Notes:
-
----
-
-## Under-fitting
-
- * Model is 'too simple'  to capture the trends in input data
- * Hot to detect under-fitting?
-    - We will get poor performance in both training & testing data
-    - E.g.:
-      - Training accuracy : 45%
-      - Testing accuracy : 42%
- * Resolution:
-    - Try a different algorithm / model, that better fits the data
-
-<img src="../../assets/images/machine-learning/underfit-overfit-01.png" alt="underfit-overfit" style="max-width:80%;"/>  <!-- {"left" : 0.83, "top" : 5.38, "height" : 2.79, "width" : 8.59} -->
-
-
-
-
-Notes:
-
----
-
-## Overfitting
-
-<img src="../../assets/images/machine-learning/overfitting-1-learning-addition.png"  style="width:40%;float:right;"/><!-- {"left" : 6.67, "top" : 1.18, "height" : 3.65, "width" : 3.46} -->
-
-
-* Imagine we are teaching addition to young kids
-
-* Rather than learning the 'carry concept' what if the kids just memorized all the examples
-
-* They can do well in problems, they have seen before, but not any thing new
-    - will do well: (17+25),  (28+37)
-    - will not so well (they haven't seen it before):  (45+48)
-
-* This is basically **overfitting**
-
-* When model is **memorizing** training data instead of learning from it.
----
-
-## Over-fitting
-
- * How to detect over-fitting?
-    - Excellent performance on training data, but poor performance on testing (new) data
-    - E.g. :Training accuracy : 95%
-    - Testing accuracy : 62%
- * Resolution:
-    - Try a different algorithm / model, that better fits the data
-    - Simplify inputs
-
-<img src="../../assets/images/machine-learning/underfit-overfit-02.png" style="width:75%;"/> <!-- {"left" : 0.69, "top" : 5.01, "height" : 2.96, "width" : 8.87} -->
-
-
-
-
-Notes:
-
----
-
-## Achieving a Good Fit
-
- * In ML we strive to find the 'sweet spot' between under-fitting models and over-fitting models
-
-<img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="max-width:64%;"/> <!-- {"left" : 1.4, "top" : 2.85, "height" : 5.08, "width" : 6.96} -->
-
-
-
-
-
-Notes:
-
----
-
-## Achieving a Good Fit
-
- * Both overfitting and underfitting can lead to poor model performance
-
- * underfitting is easier to spot
-    - Bad performance on training data
-    - Bad performance on test data
-
- * Overfitting can be hard to spot
-    - because it performs well on training data
-    - But doesn't do well on 'unseen' test data
-
- * Avoiding overfitting
-    - Resampling technique
-    - Hold back a validation dataset
-    - Most popular method is: k-fold validation (more on this later)
-
- * For **decision trees**, we **prune** the tree to limit overfitting
-
-
-Notes:
-
----
-
-## Cross Validation and Bootstrapping
-
-[ML-Concepts-Cross-Validation-Bootstrapping.md](ML-Concepts-Cross-Validation-Bootstrapping.md)
+[ML-Concepts-Model-Validation.md](ML-Concepts-Model-Validation.md)
