@@ -34,6 +34,91 @@
 
 <!-- {"left" : 0.25, "top" : 2.31, "height" : 3.19, "width" : 9.75, "columnwidth" : [1.61, 1.81, 1.33, 5]} -->
 
+<br/>
+
+* So our formula for predicting `SalePrice` is something like this:
+
+* **`Saleprice = f (Bedrooms, Bathrooms, Size)`**
+
+* We need to figure out what `f` is
+
+---
+
+## Let's Play a Guessing Game!
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Look at the data below.  Come up with a formula linking X and Y
+
+<br/>
+
+| X | Y |
+|---|---|
+| 1 | 2 |
+| 2 | 5 |
+
+* So what is the formula?
+
+* `Y = ???`
+
+* Answer next slide
+
+---
+
+## Guessing Game
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+| X | Y |
+|---|---|
+| 1 | 2 |
+| 2 | 5 |
+
+* I have 2 possible formulas (there may be more)
+
+* **`Y = 2X + 1`**
+
+* **`Y = X^2 + 1`**
+
+---
+
+## Guessing Game
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let me provide more data
+
+| X | Y  |
+|---|----|
+| 1 | 2  |
+| 2 | 5  |
+| 3 | 10 |
+| 4 | 17 |
+
+* Now, what would be the formula?
+
+* Answer next slide
+
+---
+## Guessing Game
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+
+| X | Y  |
+|---|----|
+| 1 | 2  |
+| 2 | 5  |
+| 3 | 10 |
+| 4 | 17 |
+
+* With more data, we can finalize on a formula
+
+* **`Y = X^2 + 1`**
+
+* Lesson:  More (quality) data we have, we can come up with a more precise formula
+
+* **This is the essense of machine learning!**
 
 ---
 
