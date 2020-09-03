@@ -13,7 +13,82 @@ Notes:
 
 
 ---
+
 # Perceptrons
+
+---
+
+## Neuron Operations
+
+<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 3.33, "height" : 2.98, "width" : 8.84} -->
+
+
+Notes:
+
+Source : [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  by  Aurélien Géron (ISBN: 9781492037347)
+
+---
+
+## Classification Example
+
+ * Find a divider to separate these two classes (blue / orange)
+
+<img src="../../assets/images/deep-learning/sample-01.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.69, "top" : 2.33, "height" : 4.99, "width" : 4.88} -->
+
+
+
+---
+
+## Solution
+
+<img src="../../assets/images/deep-learning/sample-01b.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%;"/><!-- {"left" : 5.95, "top" : 1.84, "height" : 4.1, "width" : 4.01} -->
+
+ * We can draw line that separates these two classes;  Essentially  a linear model
+
+ * There are many lines we can draw, which one to pick?
+
+ * One Way:
+
+     - Try to maximize the distance between the points on both sides and our line.
+
+     - Lines of A,B,C  which one is better?
+
+     - This is essentially what the [Support Vector Machine (SVM)](https://en.wikipedia.org/wiki/Support-vector_machine) does.
+
+Notes:
+
+
+
+---
+## Single Layer Perceptron
+
+ * Let's create the simplest neural network with one neuron
+
+ * This is a linear model.  Finding a line that will separate.
+
+ * Two inputs : X1 and X2
+    - Associated weights: W1 and W2
+
+ * Output is binary
+
+<img src="../../assets/images/deep-learning/perceptron-01.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 0.87, "top" : 4.65, "height" : 2.28, "width" : 8.51} -->
+
+Notes:
+
+
+
+---
+## A Trained Perceptron Model
+
+ * After we've trained our model, we've now have a linear model
+
+ * How do we figure out the weights w1, w2?
+    - This is done during training
+
+<img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="width:35%;" /><!-- {"left" : 3.18, "top" : 3.18, "height" : 3.96, "width" : 3.9} -->
+
+Notes:
+
 ---
 
 ## Activation Functions

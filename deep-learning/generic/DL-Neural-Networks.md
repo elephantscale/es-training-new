@@ -42,7 +42,7 @@ Notes:
 
 ---
 
-## ANN History
+## Neural Networks History
 
  * 1943: McCulloch Pitts Neural model
 
@@ -63,9 +63,9 @@ He demonstrated the ANNs can't solve a simple XOR problem
 
  * Now: The race is on!
 
+ * References :  [1](https://en.wikipedia.org/wiki/Artificial_neuron)  ,   [2](https://medium.com/@jayeshbahire/the-xor-problem-in-neural-networks-50006411840b)
+
 Notes:  
-- https://en.wikipedia.org/wiki/Artificial_neuron
-- https://medium.com/@jayeshbahire/the-xor-problem-in-neural-networks-50006411840b
 
 ---
 
@@ -77,7 +77,7 @@ Notes:
 
  * It consisted of N inputs In and N Weights
 
- * Inputs are binary (on/off)
+ * Inputs are **binary (on/off)**
 
  * Inputs and weights are summed up and a threshold function produces output
 
@@ -94,30 +94,15 @@ Notes:
 
 ---
 
-## Neuron Operations
-
-<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 3.33, "height" : 2.98, "width" : 8.84} -->
-
-
-Notes:
-
-Source : [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  by  Aurélien Géron (ISBN: 9781492037347)
-
----
-
-# Perceptrons
-
----
-
 ## 1962: The Perceptron
 
- * Frank Rosenblatt invented the Perceptron
+* Frank Rosenblatt invented the Perceptron
 
- * Inputs are numbers (not binary as before)
+* Inputs are **numbers (not binary as before)**
 
- * Simplest type of Feedforward neural network
+* Simplest type of Feedforward neural network
 
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/> &nbsp;<!-- {"left" : 0.61, "top" : 3.53, "height" : 2.89, "width" : 5.57} --> <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 6.68, "top" : 3.18, "height" : 3.59, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png"  style="width:50%;float:left;"/> &nbsp;<!-- {"left" : 0.61, "top" : 3.53, "height" : 2.89, "width" : 5.57} --> <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg"  style="width:30%;float:right;" /><!-- {"left" : 6.68, "top" : 3.18, "height" : 3.59, "width" : 2.93} -->
 
 
 
@@ -126,17 +111,15 @@ Mark I Perceptron at the Cornell Aeronautical Laboratory', hardware implementati
 
 ---
 
-
-
 ## Simple Perceptron Example
 
- * Design a perceptron that will decide if I should go to a concert, based on a few inputs
- * Inputs: Weather,  Close to public transit, if a friend can join
- * Assign weights to each of the above inputs
- * Output: YES / NO  
-    If the final score is > 50, then the answer is YES, otherwise NO
+* Design a perceptron that will decide if I should go to a concert, based on a few inputs
+* Inputs: **`1) Weather,  2) Close to public transit, 3) friend can join`**
+* Assign weights to each of the above inputs
+* Output: YES / NO
+  - If the final score is > 50, then the answer is YES, otherwise NO
 
-<img src="../../assets/images/deep-learning/perceptron-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 0.91, "top" : 4.69, "height" : 2.77, "width" : 8.43} -->
+<img src="../../assets/images/deep-learning/perceptron-02.png"  style="width:70%;"/><!-- {"left" : 0.91, "top" : 4.69, "height" : 2.77, "width" : 8.43} -->
 
 ---
 ## Simple Perceptron Example
@@ -162,96 +145,36 @@ Mark I Perceptron at the Cornell Aeronautical Laboratory', hardware implementati
  * Each input has their weights (W1, W2, ... Wm)
  * The input '1' and weight 'W0' is bias term
 
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 1.19, "top" : 3.83, "height" : 4.24, "width" : 7.86} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png"  style="width:70%;"/><!-- {"left" : 1.19, "top" : 3.83, "height" : 4.24, "width" : 7.86} -->
 
 ---
 
 ## Perceptron Operations
 
-<img src="../../assets/images/deep-learning/perceptron-03.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 5.58, "top" : 1.5, "height" : 2.24, "width" : 4.16} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png" style="width:50%;float:right;"/><!-- {"left" : 5.58, "top" : 1.5, "height" : 2.24, "width" : 4.16} -->
 
- * Step 1: Calculate sum of inputs and weights  
-`z = w0 + w1.x1 + w2.x2 + ... + wn.xn`  
-In matrix operations this is  
-`wT · x`
+* Step 1: Calculate sum of inputs and weights  
+__`z = w0 + w1.x1 + w2.x2 + ... + wn.xn`__
 
- * Step 2: Apply Step function to the sum  
-`hw(x) = step (z)`  
-`hw(x) = step (wT · x)`
+* In matrix operations this is:  
+__`wT · x`__
 
- * Simple step function
-    - if sum is positive (`z >= 0`) --> output is 1
-    - otherwise, output is 0
+* Step 2: Apply Step function to the sum  
+__`hw(x) = step (z)`__  
+__`hw(x) = step (wT · x)`__
 
-
-
----
-
-## Classification Example
-
- * Find a divider to separate these two classes (blue / orange)
-
-<img src="../../assets/images/deep-learning/sample-01.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.69, "top" : 2.33, "height" : 4.99, "width" : 4.88} -->
+* Simple step function
+  - if sum is positive (`z >= 0`) --> output is 1
+  - otherwise, output is 0
 
 
 
 ---
 
-## Solution
-
-<img src="../../assets/images/deep-learning/sample-01b.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%;"/><!-- {"left" : 5.95, "top" : 1.84, "height" : 4.1, "width" : 4.01} -->
-
- * We can draw line that separates these two classes;  Essentially  a linear model
-
- * There are many lines we can draw, which one to pick?
-
- * One Way:
-
-     - Try to maximize the distance between the points on both sides and our line.
-
-     - Lines of A,B,C  which one is better?
-
-     - This is essentially what the [Support Vector Machine (SVM)](https://en.wikipedia.org/wiki/Support-vector_machine) does.
-
-Notes:
-
-
-
----
-## Single Layer Perceptron
-
- * Let's create the simplest neural network with one neuron
-
- * This is a linear model.  Finding a line that will separate.
-
- * Two inputs : X1 and X2
-    - Associated weights: W1 and W2
-
- * Output is binary
-
-<img src="../../assets/images/deep-learning/perceptron-01.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 0.87, "top" : 4.65, "height" : 2.28, "width" : 8.51} -->
-
-Notes:
-
-
-
----
-## A Trained Perceptron Model
-
- * After we've trained our model, we've now have a linear model
-
- * How do we figure out the weights w1, w2?
-    - This is done during training
-
-<img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="width:35%;" /><!-- {"left" : 3.18, "top" : 3.18, "height" : 3.96, "width" : 3.9} -->
-
-Notes:
-
----
 
 ## Quiz: Guessing the Weights
 
-<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:50%;float:right;" /><!-- {"left" : 5.67, "top" : 1.35, "height" : 1.44, "width" : 4.29} -->
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:55%;float:right;" /><!-- {"left" : 5.67, "top" : 1.35, "height" : 1.44, "width" : 4.29} -->
 
 
 - Let's revisit our 'concert going' perceptron.  
@@ -331,27 +254,35 @@ weather = 33, public transit = 33, friend = 33
 
 ## How do We Train?
 
- * In the last example, we lucked out by guessing the weights in 2 rounds (2 iterations)
+* In the last example, we lucked out by guessing the weights in 2 rounds (2 iterations)
 
- * But for large complex datasets, we need a more systamatic way of calculating and adjusting weights
+* But for large complex datasets, we need a more systamatic way of calculating and adjusting weights
 
- * For a single perceptron with no hidden layers, we can train using Gradient Descent.
-
- * Gradient Descent is a popular optimization algorithm
-
- * See next few slides
-
-
-
-
+* We use a technique called **back propagation**
 
 Notes:
 
 ---
 
-## Gradient Descent
+## Backpropagation Demos
 
-[../../machine-learning/generic/Gradient-Descent.md](../../machine-learning/generic/Gradient-Descent.md)
+<!-- TODO shiva -->
+
+ * **Animation (Regression)** : [link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
+
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:35%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+
+ * **Animation (Classification)** :
+  [link-youtube](https://youtu.be/sLsCN9ZL9RI), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4)
+
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" style="width:40%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+
+---
+
+## Tensorflow Playground
+
+* For Instructor:
+  - Go over the following section as needed and if time permits
 
 ---
 
@@ -464,19 +395,17 @@ Notes:
 
 ---
 
-
-
 ## Feedforward Neural Networks (FFNN)
 
-- As we have seen earlier, single layer NNs can solve simple, linear problems
+* As we have seen earlier, single layer NNs can solve simple, linear problems
 
-- To solve more complex problems (with non-linear solutions) we need a more complex setup
+* To solve more complex problems (with non-linear solutions) we need a more complex setup
 
-- This is where **Feedforward Networks** come in
+* This is where **Feedforward Networks** come in
 
-- Also known as
-    - **Multi Layer Perceptrons (MLP)**
-    - **Deep Feedforward Neural Networks (DFNN)**
+* Also known as
+  - **Multi Layer Perceptrons (MLP)**
+  - **Deep Feedforward Neural Networks (DFNN)**
 
 ---
 
@@ -670,6 +599,127 @@ Notes:
 
 
 <img src="../../assets/images/deep-learning/neural-network-design-1.png" style="width:28%;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+---
+
+# Convolutional Neural Networks (CNN)
+
+---
+
+## Convolutional Neural Networks (CNN)
+
+* CNNs are designed specially to handle images
+
+* Convolution layer neurons scan a particular area of image (their 'field of vision')
+  - And they pick up patterns in images (e.g. eyes, wheels)
+
+<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:20%;" /> <!-- {"left" : 0.48, "top" : 5.45, "height" : 1.85, "width" : 1.91} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png" style="width:20%;" /> <!-- {"left" : 2.98, "top" : 5.45, "height" : 1.85, "width" : 1.8} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png"  style="width:20%;" /> <!-- {"left" : 5.49, "top" : 5.45, "height" : 1.85, "width" : 1.79} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png"  style="width:20%;" /><!-- {"left" : 7.98, "top" : 5.45, "height" : 1.85, "width" : 1.79} -->
+
+---
+
+## CNNs
+
+<img src="../../assets/images/deep-learning/3rd-party/Face-Recognition-2.png"  style="width:40%;float:right;" /> <!-- {"left" : 6.23, "top" : 1.1, "height" : 5.04, "width" : 3.81} -->
+
+- Each layer builds on previous layer's work
+
+- First layer detects simple shapes - horizontal lines, slanted lines ..etc
+
+- Second layer recognizes more complex features: eyes / nose ..etc
+
+- Third layer recognizes faces
+
+---
+
+## CNN Use Cases
+
+* CNNs are heavily used in **computer vision** applications
+
+<img src="../../assets/images/deep-learning/3rd-party/CNN-design-example-1.png"  style="width:80%;" /><!-- {"left" : 1.02, "top" : 3.62, "height" : 3.94, "width" : 8.21} -->
+
+---
+
+# Recurrent Neural Networks (RNN)
+
+---
+
+## Time Series Data
+
+* To predict time series data, we need to know the past behavior
+
+* For example, what is the stock price in time t2?
+
+<img src="../../assets/images/deep-learning/time-series-1.png"  style="width:40%;" />   <!-- {"left" : 0.18, "top" : 3.26, "height" : 2.56, "width" : 4.85} -->
+<img src="../../assets/images/deep-learning/time-series-2.png"  style="width:40%;" />   <!-- {"left" : 5.22, "top" : 3.26, "height" : 2.56, "width" : 4.85} -->
+
+---
+
+## Problems with Feedforward Networks
+
+* Feedforward Neural Networks can model any relationship between input and output.
+* However they can't keep/remember **state**
+  -  The only state retained is weight values from training.
+  - They don't remember previous input!
+  - For example, in this example, the network doesn't remember the 'previous input' (cat) when predicting the current input
+* **Animation** below: [link-youtube](https://youtu.be/sLsCN9ZL9RI) | [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4) 
+
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png"  style="width:45%;"/><!-- {"left" : 0.97, "top" : 5.51, "height" : 1.96, "width" : 8.31} -->
+
+
+Notes:
+
+---
+
+
+## Recurrent Neural Network (RNN)
+
+* In Feedforward Networks, data flows one way, it has **no state or memory**
+
+* RNNs have a 'loop back' mechanism to pass the current state to the next iteration
+
+<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 0.4, "top" : 4.27, "height" : 3.47, "width" : 2.01} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 3.63, "top" : 4.27, "height" : 3.47, "width" : 1.53} -->
+<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 6.38, "top" : 4.27, "height" : 3.47, "width" : 3.47} -->
+
+[Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-3-animation.mp4)
+
+---
+
+## RNN Animation
+
+<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/><!-- {"left" : 2.64, "top" : 1.21, "height" : 4.12, "width" : 4.98} -->
+
+
+* **Animation**: [Link-YouTube](https://www.youtube.com/watch?v=zt18u6BgdK8) | [Link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-4-animation.mp4)
+
+---
+
+## RNN Implementations
+
+* **RNN (Recurrent Neural Network)** is basic design
+  - It implements state
+  - But suffers from 'short term memory' problem
+
+* **LSTM (Long Short Term Memory)** improves on this
+  - They can remember 'longer memory sequences'
+  - But tend to be more complex, and require more time to train
+
+* **GRU (Gated Recurrent Unit)** is an updated implementation
+  - It simplifies LSTM, easier to train
+
+---
+
+## RNN Use Cases
+
+* RNNs are used for any data where sequence matters
+
+* Time series data (like stock quotes)
+
+* NLP (Natural Language Processing)
+  - Order of words matter in language
+  - Language translation tasks
+
 ---
 
 ## Review and Q&A
