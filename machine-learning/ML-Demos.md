@@ -11,6 +11,15 @@
 - Google mirror : https://experiments.withgoogle.com/collection/ai/move-mirror/view/mirror
 
 
+## NLP Demos
+- https://demo.allennlp.org/ : AI NLP demos
+- https://towardsdatascience.com/the-best-nlp-tools-of-early-2020-live-demos-b6f507b17b0a - a nice list of demos
+- [Talk to transformer](https://app.inferkit.com/demo)
+- [Google Auto ML demo](https://cloud.google.com/natural-language/#natural-language-api-demo)
+- [IBM watson demo](https://natural-language-understanding-demo.ng.bluemix.net/)
+- [HuggingFace entity recognition demo](https://huggingface.co/hmtl/)
+- [HuggingFace write with transformer](https://transformer.huggingface.co/)
+
 
 ## Basics
 - History of AI (illustrated with cartoons) : https://www.youtube.com/watch?v=056v4OxKwlI

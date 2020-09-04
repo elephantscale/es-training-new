@@ -1,57 +1,58 @@
 # Text Analytics
 
+<!-- TODO shiva -->
+<img src="../../assets/images/generic/3rd-party/text-scrabble-1.jpg" style="width:40%;"/><!-- {"left" : 5.36, "top" : 2.32, "height" : 3.8, "width" : 4.75} -->
+<img src="../../assets/images/AI/3rd-party/nlp-1.jpg"  style="width:40%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
 ---
 
 ## Lesson Objectives
 
 - Understand text analytics tools, algorithms and use cases
 
-
 Notes:
 
+---
 
-
+# Text Analytics Use Cases
 
 ---
 
-# Text Analytics Overview
-
----
-
-## Text Analytics Has Become Very Prominent
+## Why Text Analytics Is Important?
 
 <img src="../../assets/images/machine-learning/Text-Analytics-0.png" style="width:40%;float:right;"/><!-- {"left" : 5.36, "top" : 2.32, "height" : 3.8, "width" : 4.75} -->
 
- * Rise of social media (Twitter / Facebook) allows lots of text exchanges
+* We live in a world of text!
 
- * Customer 'chat' interaction
+  * Social media posts (tweets, posts, blogs)
 
- * Customer emails
+  * Customer 'chat' interaction
 
- * Unstructured data exists in many forms
+  * Customer emails
 
- * Mostly underutilized
+* Unstructured data exists in many forms
 
- * Can use data to great effect given right tools
+* Mostly underutilized
 
-
-
+* Can use data to great effect given right tools
 
 Notes:
-
-
 
 ---
 
 ## Use Case: Customer Service Via Social Media
 
+<img src="../../assets/images/generic/3rd-party/united-breaks-guitars-tweet-1.png" style="width:50%;float:right;"/><!-- {"left" : 0.27, "top" : 2.15, "height" : 5.35, "width" : 9.72} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-1.png" alt="Text-Analytics-1.png" style="width:55%"/><!-- {"left" : 0.27, "top" : 2.15, "height" : 5.35, "width" : 9.72} -->
+* Customers now take to social media to complain about a company
 
+* Some social media posts can go viral and embarass the company
+
+* "United breaks guitars" saga
+  - ['United breaks guitars' song](https://www.youtube.com/watch?v=5YGc4zOqozo)
+  - [Social media lessons: United Airlines breaks guitars - ZDNet](https://www.zdnet.com/article/social-media-lessons-united-airlines-breaks-guitars/)
 
 Notes:
-
-
 
 ---
 
@@ -75,90 +76,9 @@ Notes:
 
 ---
 
-## Use Case : Support Tickets
+## Use Case - AirBnB Customer Service
 
-- Automatic ticket routing
-    - Parse the ticket / understand the context and send it to the right queue
-
-- Assign priority (High, Medium, Low) based on ticket text
-
-```
-Ticket-123
-
-When I try to save the document as PDF, it crashes
-```
-
-<!-- {"left" : 0, "top" : 3.3, "height" : 1.07, "width" : 9.11} -->
-
-Notes:
-
-
----
-
-# Text Analytics Tools and Algorithms
-
----
-
-## Text Analytics Tools and Algorithms
-
-
- * Text visualizers: Word Cloud
-
- * 'Bag of Words'
-
- * Top-N words
-
- * Ngrams
-
- * Vectorizing
-    - TF-IDF
-    - Word2Vec
-
-Notes:
-
-
-
----
-
-## Visualizing Text - Word Clouds (State of the Union Speech 2014)
-
-<img src="../../assets/images/machine-learning/3rd-party/text-analytics-word-cloud-1.png"  style="width:60%;float:right;"/><!-- {"left" : 5.45, "top" : 2.16, "height" : 2.9, "width" : 4.72} -->
-
-- Word Clouds are really neat way to get a 'sense' of the text
-
-- Most frequent words are the biggest
-    - 'America',  'Cheers'
-
-
-
-
-Notes:
-
----
-
-# Bag of Words
-
----
-
-## 'Bag of Words'
-
-
- * Split the document(s) into words
-
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-1.png"  style="width:79%"/><!-- {"left" : 1.02, "top" : 2.49, "height" : 4.66, "width" : 8.21} -->
-
-
-Notes:
-
-
-
-
-
----
-
-## Bag Words Example 1: 'Moby Dick' by Herman Melville
-
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-moby-dick-1.png" style="width:۶0%"/><!-- {"left" : 1.02, "top" : 2.12, "height" : 5.41, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/3rd-party/airbnb.png" alt="airbnb.png" style="width:45%;"/><!-- {"left" : 0.54, "top" : 2.82, "height" : 3.42, "width" : 4.08} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/AirBnB-01.png" alt="AirBnB-01.png" style="width:45%;"/><!-- {"left" : 5.3, "top" : 2.82, "height" : 3.42, "width" : 4.41} -->
 
 
 
@@ -166,381 +86,366 @@ Notes:
 Notes:
 
 
-
 ---
 
-## Bag Words Example2: 'Alice in Wonderland' by Lewis Carrol
+## Use Case AirBnB
 
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:60%"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.35, "width" : 8.21} -->
+<img src="../../assets/images/logos/airbnb-logo-1.jpg" style="width:20%;float:right;"/><!-- {"left" : 0.54, "top" : 2.82, "height" : 3.42, "width" : 4.08} --> 
 
+* Problem
+  - AirBnB is growing at an exponential rate
+
+  - With growth, the customer support also increased
+
+  - They had 5000 support agents, and still falling behind!
+
+  - Needed a way to scale
+
+* Solution
+
+  - Deploy AI to handle customer queries
+
+  - AI is smart enough to understand customer questions and provide answers"how do I verify my ID?"
+
+* [Case study](http://bigdatausecases.info/entry/airbnb-driving-a-higher-level-of-customer-support-with-machine-learning)
 
 Notes:
 
-
 ---
 
-## Bag of Words Process
+## Bank of America Customer Service Bot
 
+<img src="../../assets/images/logos/bank-of-america.png" alt="bank-of-america.png" style="width:30%;float:right;"/><!-- {"left" : 6.26, "top" : 1.33, "height" : 1.43, "width" : 3.67} -->
+<img src="../../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;float:right;clear:both;"/><!-- {"left" : 6.08, "top" : 4.59, "height" : 3.13, "width" : 4.04} -->
 
- *  **Cleanup**
-     -  **Step 1: Lowercase text:**
-        (The Sun was bright -> the sun was bright)
+* Bank of America virtual assistant can handle a variety of customer queries
 
-     -  **Step 2: Remove punctuations**
-        (!  ,   .  #)
+* Examples:
+  - Easy: "Pay $50 to Bill"
+  - Complex: "show me my total expenses to Disneyland trip"
 
-     -  **Step 3: Remove numbers (optional)**
-        (1, 2, 3)
+* Can understand both text / voice query
 
-     -  **Step 4: Remove STOP words (and any other unnecessary words)**  
-        ( the, is, in, and)*
-
- *  **Tokenize**
-
-     - Break text into words  (bag of words)
-
- *  **Analyze**
-
-Notes:
-
+* References
+  - [Meet Erica, Bank Of America's New Voice AI Banking System - Forbes](https://www.forbes.com/sites/quora/2016/10/28/meet-erica-bank-of-americas-new-voice-ai-banking-system/#655fa71f50db)
+  - [Bank of America launches AI chatbot Erica - CNBC](https://www.cnbc.com/2016/10/24/bank-of-america-launches-ai-chatbot-erica--heres-what-it-does.html)
 
 
 ---
 
+## Customer Service Chatbots @ Lyft 
 
-## Bag of Words Example: "Tale of Two Cities" by Charles Dickens
-
-
- * We are going to walk through processing some text(slightly modified version)
+<img src="../../assets/images/logos/lyft-logo-1.png" alt="lyft.png" style="width:20%;float:right;"/><!-- {"left" : 8.33, "top" : 1.09, "height" : 1.66, "width" : 1.71} -->
 
 ```text
-It was the best of times. It was the worst of times! It was the age of wisdom!!
-$123
+User:
+    Hi, My driver went to a wrong location.  
+    So I had to cancel.  
+    But I was charged a cancellation fee.
+    Can that be refunded"
 
+Customer Service:
+    I see, this is your first cancellation in past 2 months.  
+    We will refund you the money.Have a nice day!"
 ```
-<!-- {"left" : 0, "top" : 2.1, "height" : 0.59, "width" : 10.25} -->
+<!-- {"left" : 0, "top" : 3.62, "height" : 0.99, "width" : 5.6} -->
 
-
-Notes:
-
-
-
----
-
-
-## Text Cleanup: Lowercase, Remove Punctuations
-
-
-```text
-It was the best of times. It was the worst of times! It was the age of wisdom!!
-$123
-
-```
-<!-- {"left" : 0, "top" : 1.49, "height" : 0.59, "width" : 10.25} -->
-
-
-<img src="../../assets/images/machine-learning/Text-Analytics-7.png" style="width:20%"/><!-- {"left" : 3.84, "top" : 2.69, "height" : 0.97, "width" : 1.91} -->
-
-
-```text
-it was the best of times. it was the worst of times! it was the age of wisdom!!
-$123
-
-```
-<!-- {"left" : 0, "top" : 4.18, "height" : 0.59, "width" : 10.25} -->
-
-<img src="../../assets/images/machine-learning/Text-Analytics-8.png" style="width:40%"/><!-- {"left" : 2.06, "top" : 5.44, "height" : 1.17, "width" : 6.13} -->
-
-
-```text
-it was the best of times it was the worst of times it was the age of wisdom
-
-```
-<!-- {"left" : 0, "top" : 6.88, "height" : 0.42, "width" : 10.25} -->
-
-
-Notes:
-
-
+- Hightlighs
+  - Resolution time:  **about 20 seconds!**
+  - No phone calls,
+  - No wait time
 
 ---
 
-## Dealing With Stop Words
+## Translation: Early Approach
 
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:50%;float:right;"/><!-- {"left" : 5.93, "top" : 1.62, "height" : 2.81, "width" : 4.31} -->
+* Creating a translation system (English <--> Japanese) involves the following
+  - English dictionary + grammar rules
 
- * Sample stop words
-     - English (total 153):  *'a', 'about', 'above', 'after', 'again', 'against',..*
-     - Spanish (total 313): *'a', 'al', '*  *algo*  *', '*  *algunas*  *', '*  *algunos*  *',*  *...*
-     - German (total 231):  *'*  *wie*  *', 'also', '*  *alle*  *', '*  *anderer*  *', 'des',*
+  - Japanese dictionary + grammar rules
 
- * However they don't contribute much to analytics
-     - Here we see an example of 'Alice in Wonderland' analysis.  And there are lot of stop words
+  - Translation rules
 
- * Most text mining packages has a built in stop words dictionaries for various languages
+* Now the system is ready to translate
 
-Notes:
+* But this approach really doesn't work well:
 
+  - Rules have too many exceptions
 
+  - Context and subtle meanings are lost
 
----
-
-## Text Cleanup: Remove stop words
-
-
-```text
-it was the best of times it was the worst of times it was the age of wisdom
-
-```
-<!-- {"left" : 0, "top" : 1.57, "height" : 0.42, "width" : 10.25} -->
-
-<img src="../../assets/images/machine-learning/Text-Analytics-9.png" style="width:30%"/><!-- {"left" : 3.13, "top" : 2.65, "height" : 1.19, "width" : 3.99} -->
-
-
-
-```text
-English stopwords
- a, able, about, across, after, all, almost, also, am, among, an, and, any, are,
- as, at, be, because, been, but, by, can, cannot, could, dear, did, do, does,
- either, else, ever, every, for, from, get, got, had, has, have, he, her, hers,
- him, his, how, however, i, if, in, into, is, it, its, just, least, let, like,
- likely, may, me, might, most, must, my, neither, no, nor, not, of, off, often,
- on, only, or, other, our, own, rather, said, say, says, she, should, since,
- so, some, than, that, the, their, them, then, there, these, they, this, tis,
- to, too, twas, us, wants, was, we, were, what, when, where, which, while,
- who, whom, why, will, with, would, yet, you, your
-
-```
-<!-- {"left" : 0, "top" : 4.03, "height" : 2.12, "width" : 10.25} -->
-
-<img src="../../assets/images/machine-learning/Text-Analytics-10.png" style="width:10%"/><!-- {"left" : 4.45, "top" : 6.47, "height" : 1.19, "width" : 1.36} -->
-
-
-```text
-best times worst times age wisdom
-
-```
-<!-- {"left" : 0, "top" : 7.99, "height" : 0.54, "width" : 6.28} -->
-
-
-
-Notes:
-
----
-
-## Tokenizing Text
-
-
- * Tokenizing is breaking the text into tokens (words / sentences)
-
- * Most text algorithms work on 'tokens'
-
- * Can you spot the differences in word-tokenization below?
-
-<img src="../../assets/images/machine-learning/text-analytics-tokenizing-1.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3.64, "height" : 3.79, "width" : 8.21} -->
-
+* Example : **"Minister of agriculture" --> "Priest of farming"**
 
 Notes:
 
 
 ---
 
-## Text Analytic: Word Count
+## Translation With AI (Google Translate)
 
+<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="max-width:60%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
- * Finally we have cleaned up text to do a simple analytics - word count
+* Google Translate has been ported to 'Google Brain' on Sept 2016
 
+* System learned from 'data'
 
-```text
-Original text
--------------
+* AI based system improved the accuracy remarkably
 
-It was the best of times. It was the worst of times! It was the age of wisdom!!
-$123
+* [Case study](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
 
-```
-<!-- {"left" : 0, "top" : 2.15, "height" : 1.17, "width" : 10.25} -->
+---
 
+# Recent Advances in NLP
 
+---
 
-```text
-Cleaned text
--------------
+## Recent Advances in NLP
 
-best times worst times age wisdom
+<img src="../../assets/images/deep-learning/history-of-nlp-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
-```
-<!-- {"left" : 0, "top" : 3.5, "height" : 1.33, "width" : 6.28} -->
+---
 
+## Early Applications (2010)
 
-```text
+<img src="../../assets/images/generic/3rd-party/ios12-iphone-x-imessage-predictive-text.jpg"  style="width:25%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
-Word count
-----------
+* Predictive text on texting applications on smartphones
 
-Total number of words = 6
+* These were powered by statistical based predictions
 
-+-------+-----+
-|   word|count|
-+-------+-----+
-|  best |    1|
-|  times|    2|
-|  worst|    1|
-|    age|    1|
-| wisdom|    1|
-+-------+-----+
-
-```
-<!-- {"left" : 0, "top" : 4.99, "height" : 3.97, "width" : 4.94} -->
-
-
-
-
-Notes:
-
+* **Can you call me ???**
+  - Likely completions are : **back**,   **ASAP**,  **when you can**
+  - The model suggests the word with highest probability
 
 
 ---
 
-## Bag of Words Review
+## NLP Revolution
 
+* 2010+ is considered an **'golden age of NLP'**
 
- *  **Pros**
+* The following factors contribute to the NLP Revolution
 
-    * Easy to implement, well understood
+* **Big Data** : Now we have massive amount of data available to us, to train our models
 
- *  **Cons**
+* **Cloud compute**: Cloud compute democratized compute power
 
-    * Context is lost.Both sentences below map to same 'bag of words'.But the meaning is very different.
+* **Increased compute power**: Advances in programming chips make it possible to train massive models
 
-<img src="../../assets/images/machine-learning/text-bag-of-words-2.png" style="width:70%"/><!-- {"left" : 0.29, "top" : 3.81, "height" : 1.45, "width" : 9.67} -->
-
-
-
-Notes:
+* **Availability of pre-trained models**: Means, researchers can build on and improve upoon each other's work
 
 ---
 
-# N-gram Analysis
+## The Rise of 'AI Chips'
+
+<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" style="width:40%;float:right;"/><!-- {"left" : 2.52, "top" : 4.35, "height" : 3.58, "width" : 5.22} -->
+<img src="../../assets/images/deep-learning/3rd-party/video-audi-self-driving.png" style="width:40%;float:right;clear:both;"/>
+
+
+* GPUs provide a huge amount of compute power, they are the goto hardware platform for intense AI workloads
+  - Google translate model trains on 2 billion+ words on 99+ GPUs for week+
+
+* Companies are also building custom 'AI chips' - specifically designed for AI processing
+  - Google has Tensor Processing Unit (TPU)
+  - Tesla is developing its own chip for self driving
+  - Amazon, Facebook, Apple all are investing in their own AI chips
+
+* [GPU vs. CPU comparison - video](https://www.youtube.com/watch?v=DjAJnQoNdMA) (around 50 second mark)
 
 ---
 
-## N-gram Analysis
+## Availability of Pre-Trained Models
 
-<img src="../../assets/images/machine-learning/text-ngrams-1.png" style="width:50%;float:right;" /><!-- {"left" : 5.53, "top" : 1.9, "height" : 2.61, "width" : 4.54} -->
+* Training state-of-the-art models takes lot of expertise, lot of data and lot of compute power
 
- * N-gram: sequence of  'n' number of words
-     - Words have to be sequential
-     - Order matters
+* In the past few years, companies like Google, OpenAI are releasing their pre-trained models to public!
 
- * N = 1: unigram (single word)
+* They may have spent months/years creating, training and tweaking the models.
+  - Now that the models are publicly available, anyone can use them and improve upon them
 
- * N = 2: bigram
-     - "American people"
-     - "black cats"
+* For example, [OpenGPT-2 model](https://openai.com/blog/better-language-models/) by OpenAI 
+  - Is trained on 8 million web page
+  - 40GB data
+  - has 1.5 billion tunable parameters
 
- * N-gram applications:
-     - Predict the next word
-       "Please call me `back`"
-
-Notes:
-
-
-
----
-
-## N-gram(2) Analysis Results for 'Moby Dick'
-
-
- * Moby-dick novel from project Gutenberg
-     - 22,108 lines
-     - 215,136 words
-     - 1,257,274 characters
-
- * Below the 'bigram' analysis
-    - Lot's of filler words
-
-```text
-('of', 'the'): 1873,
-('in', 'the'): 1129,
-('to', 'the'): 725,
-('from', 'the'): 432,
-('and', 'the'): 358,
-('of', 'his'): 357,
-('of', 'a'): 331,
-('on', 'the'): 327,
-('with', 'the'): 324,
-('at', 'the'): 318
-
-```
-<!-- {"left" : 0, "top" : 4.12, "height" : 2.92, "width" : 4.28} -->
-
-
-
-Notes:
-
+* OpenAI was hesitant to release their 'largest GPT2' model for the fear that  it can be misused to create fake news!  [Eventually they did!!](https://openai.com/blog/gpt-2-1-5b-release/)
 
 
 ---
 
-## N-gram(2) Analysis After Removing Stop Words
+## Word Embeddings (2013)
 
+<!-- TODO shiva -->
+<img src="../../assets/images/deep-learning/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
- * Here we show the results of top bigrams analysis on both
- * Moby-dick.txt
+* Machine learning algorithms work with numbers (or vectors)
 
-     - Before cleanup: 215,136  words
-     - After 'stop word' cleanup: 115,093  words
+* So when working with text data, we need to convert them to vectors first
 
- <img src="../../assets/images/machine-learning/text-ngrams-moby-dick-1.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 3.82, "height" : 3.8, "width" : 8.21} -->
+* Early approaches for this were just OK
 
+* But **word embeddings** was a break through
 
-
-
-
-Notes:
-
-
+* It gave us vectors, that can derive meaning from text!
 
 ---
 
-## Lab: Work With Raw Text
+## Word Embeddings
 
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-2.png" style="width:50%;float:right;"/><!-- {"left" : 2.02, "top" : 3.75, "height" : 4.68, "width" : 6.21} -->
 
- *  **Overview*‫:‬*
-     - Tokenize / Clean / Stem raw text.
+* Here you see an example of word embeddings
 
- *  **Builds on previous labs‫:‬**
-     - None
+* The  cool thing is, it groups similar words together
+  - food, chicken
+  - Linux, screen
+  - music, saxophone, piano
 
- *  **Approximate time‫:‬**
-     - 15 mins
+* So now we have meaningful vectors!
 
- *  **Instructions‫:‬**
-     - R / Python  / Spark
+---
+## Word Embeddings
 
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-3.png" style="width:55%;float:right;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
 
-Notes:
+* Another amazing thing word2vec can do is, it can describe relationships between vectors!
 
-
-
+* **France is to Paris as Germany is to Berlin**
+  - In vector space, the distance between contries and their capitals is same!
 
 ---
 
-## Lab: Text Analytics: ngrams
+## Neural Networks and NLP
+
+<img src="../../assets/images/deep-learning/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
+* Neural Networks are layers of parallel processing elements, working together to solve very complex tasks
+
+* Neural networks allow us to train complex models on large amount of data
+
+* Inspired by neurons from human brain
+
+* **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/sLsCN9ZL9RI)
+
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
+
+---
+
+## Neural Networks and NLP
+
+* A special kind of neural networks called **Recurrent Neural Networks (RNNs)** made good progress understanding language
+
+* They can **remember sequences** - which is very important to understand languages
+
+*  Take the following sentence.  Who does 'she' refers to?  
+__My mother is very close my sister; she is also very close to my wife__
+
+---
+
+## Sequence to Sequence Models
+
+* Sequence-to-Sequence models are used to convert one sequence into another sequence
+
+* For example, translating an English sentence to Spanish
+
+* This model is applied to a variety of sequence data
+  - Language translation
+  - Time series data (stock analyis)
+  - Speech recognition
 
 
- *  **Overview‫:‬**
-     - N-gram analytics
+<img src="../../assets/images/deep-learning/sequence-to-sequence-3-nlp.png"  style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
 
- *  **Builds on previous labs‫:‬**
-     - None
+---
 
- *  **Approximate time‫:‬**
-     -  15 mins
+## Issues with Seq-2-Seq Models
 
- *  **Instructions‫:‬**
-     - R / Python  / Spark
+* Seq-2-Seq models were successful in solving a lot of tasks
 
+* How ever they suffered from a few problems:
+  - They didn't do well on long sequences
+  - The sequential nature of the algorithm, limited parallelization
 
-Notes:
+* Long Sequence problem.  Consider the following sentence:  
+__'I lived in China during my teenage years, so I speak fluent ???__
+
+* The important key to answer the missing piece (the language) is NOT 'teenage years', but 'China'; that was a few words back
+
+* So the completed sentence is   
+__'I lived in China during my teenage years, so I speak fluent Mandarin__
+
+---
+
+## Attention and Transformers  (2017)
+
+<img src="../../assets/images/deep-learning/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
+* In a landmark paper ["Attention is all you need"](https://arxiv.org/abs/1706.03762), researchers from Google, proposed a novel model called **Transformers**
+
+* The Transformer architecture solved the 2 nagging problems with Seq-2-Seq models
+  - Transformers can 'track or remember' long sequences
+  - And their operations are parallelizable
+
+* Transformers are one the state of the art models since 2018+
+
+---
+
+## Pre Trained Models (2018)
+
+* Google released a model called BERT (Bidirectional Encoder Representations from Transformers) that is based on Transformer architecture
+
+* BERT is pre-trained on a large amount of text (Wikipedia,  Internet News Archive)
+
+* The beauty is, BERT can be tweaked to work with variety of tasks (like sentiment detection)
+
+<img src="../../assets/images/deep-learning/3rd-party/BERT-5-sentiment.png"  style="width:80%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
+---
+
+##  Race for Pre-Trained Models
+
+* **BERT by Google** : This started the new wave of enthusiasm for NLP 
+
+* **Transformer XL by Google**: An improved version of BERT
+
+* **GTP-2 by OpenAI**: Can predict next occurring word in text (more in next slide)
+
+* **ULMFit** by Fast.ai
+
+---
+
+## OpenAI  GPT-2 Controversy
+
+* **GPT-2** was trained on large amount of data (40GB of interenet text data)
+* It can generate text based on input provided
+* Below is the text it generated, that is nothing short of astounding
+* Read the full text at [OpenAI blog](https://openai.com/blog/better-language-models/)
+* OpenAI, initially didn't want to release the model, because they feared it might be used to create fake news stories!
+* This generated a big controversy, and got a lot of attention :-)
+
+<img src="../../assets/images/deep-learning/3rd-party/openai-gpg2-unicorn-cropped.png"  style="width:80%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
+---
+
+# NLP Demos
+
+---
+
+## Further Reading
+
+* [A Review of the Neural History of Natural Language Processing](https://ruder.io/a-review-of-the-recent-history-of-nlp/)
+
+* [Natural Language Processing history](https://devopedia.org/natural-language-processing)
+
+* [NLP Progress](http://nlpprogress.com/)
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?

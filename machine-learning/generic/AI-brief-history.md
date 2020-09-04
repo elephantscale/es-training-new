@@ -67,41 +67,38 @@ Notes:
 
 ## Translation: Early Approach
 
- * Creating a translation system (English <--> Japanese) involves the following
+* Creating a translation system (English <--> Japanese) involves the following
+  - English dictionary + grammar rules
 
-     - English dictionary + grammar rules
+  - Japanese dictionary + grammar rules
 
-     - Japanese dictionary + grammar rules
+  - Translation rules
 
-     - Translation rules
+* Now the system is ready to translate
 
- * Now the system is ready to translate
+* But this approach really doesn't work well:
 
- * But this approach really doesn't work well:
+  - Rules have too many exceptions
 
-     - Rules have too many exceptions
+  - Context and subtle meanings are lost
 
-     - Context and subtle meanings are lost
-
- * Example : **"Minister of agriculture" --> "Priest of farming"**
+* Example : **"Minister of agriculture" --> "Priest of farming"**
 
 Notes:
 
-
 ---
 
-##  Translation: With AI (Google Translate)
+## Translation With AI (Google Translate)
 
 <img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="max-width:60%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
- * Google Translate has been ported to 'Google Brain' on Sept 2016
+* Google Translate has been ported to 'Google Brain' on Sept 2016
 
- * System learned from 'data'
+* System learned from 'data'
 
- * AI based system improved the accuracy remarkably
+* AI based system improved the accuracy remarkably
 
- * [Link to case study](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
-
+* [Case study](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html)
 
 
 Notes:

@@ -392,40 +392,36 @@ Notes:
 
 ---
 
+## Use Case - AirBnB Customer Service
 
-## Use Case - AirBnB - Customer Service
-
-<img src="../../assets/images/deep-learning/3rd-party/airbnb.png" alt="airbnb.png" style="width:40%;"/><!-- {"left" : 0.54, "top" : 2.82, "height" : 3.42, "width" : 4.08} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/AirBnB-01.png" alt="AirBnB-01.png" style="width:40%;"/><!-- {"left" : 5.3, "top" : 2.82, "height" : 3.42, "width" : 4.41} -->
-
-
-
+<img src="../../assets/images/deep-learning/3rd-party/airbnb.png" alt="airbnb.png" style="width:45%;"/><!-- {"left" : 0.54, "top" : 2.82, "height" : 3.42, "width" : 4.08} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/AirBnB-01.png" alt="AirBnB-01.png" style="width:45%;"/><!-- {"left" : 5.3, "top" : 2.82, "height" : 3.42, "width" : 4.41} -->
 
 Notes:
-
 
 ---
 
 ## Use Case AirBnB
 
+<img src="../../assets/images/logos/airbnb-logo-1.jpg" style="width:20%;float:right;"/><!-- {"left" : 0.54, "top" : 2.82, "height" : 3.42, "width" : 4.08} --> 
 
- * Problem
+* Problem
+  - AirBnB is growing at an exponential rate
 
-     - 5000 support engineers
+  - With growth, the customer support also increased
 
-     - Needs to scale
+  - They had 5000 support agents, and still falling behind!
 
- * Solution
+  - Needed a way to scale
 
-     - Deploy AI to handle customer queries
+* Solution
 
-     - AI is smart enough to understand customer questions and provide answers"how do I verify my ID?"
+  - Deploy AI to handle customer queries
 
- * [Link](http://bigdatausecases.info/entry/airbnb-driving-a-higher-level-of-customer-support-with-machine-learning)
+  - AI is smart enough to understand customer questions and provide answers"how do I verify my ID?"
+
+* [Case study](http://bigdatausecases.info/entry/airbnb-driving-a-higher-level-of-customer-support-with-machine-learning)
 
 Notes:
-
-http://bigdatausecases.info/entry/airbnb-driving-a-higher-level-of-customer-support-with-machine-learning
-
 
 ---
 
@@ -455,52 +451,48 @@ Notes:
 
 ---
 
-## AI in Customer Service @ Bank of America
+## Bank of America Customer Service Bot
 
 <img src="../../assets/images/logos/bank-of-america.png" alt="bank-of-america.png" style="width:30%;float:right;"/><!-- {"left" : 6.26, "top" : 1.33, "height" : 1.43, "width" : 3.67} -->
+<img src="../../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;float:right;clear:both;"/><!-- {"left" : 6.08, "top" : 4.59, "height" : 3.13, "width" : 4.04} -->
 
- * Bank of America virtual assistant
+* Bank of America virtual assistant can handle a variety of customer queries
 
- * Searching through transactions
-    - "show me my total expenses to Disneyland trip"
+* Examples:
+  - Easy: "Pay $50 to Bill"
+  - Complex: "show me my total expenses to Disneyland trip"
 
- * Bill pay ("Pay $50 to PTA")
+* Can understand both text / voice query
 
-<img src="../../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;"/><!-- {"left" : 6.08, "top" : 4.59, "height" : 3.13, "width" : 4.04} -->
-
-
-Notes:
-
-- [story](https://www.zdnet.com/article/bank-of-america-debuts-its-ai-powered-assistant-erica/)
-- [video](https://www.youtube.com/watch?v=Ajhd8iBUMAQ)
+* References
+  - [Meet Erica, Bank Of America's New Voice AI Banking System - Forbes](https://www.forbes.com/sites/quora/2016/10/28/meet-erica-bank-of-americas-new-voice-ai-banking-system/#655fa71f50db)
+  - [Bank of America launches AI chatbot Erica - CNBC](https://www.cnbc.com/2016/10/24/bank-of-america-launches-ai-chatbot-erica--heres-what-it-does.html)
 
 
 ---
 
-## AI Chatbots @ Lyft (A personal story)
+## Customer Service Chatbots @ Lyft 
 
 <img src="../../assets/images/logos/lyft-logo-1.png" alt="lyft.png" style="width:20%;float:right;"/><!-- {"left" : 8.33, "top" : 1.09, "height" : 1.66, "width" : 1.71} -->
 
- * Scenario: I ordered a Lyft car, but the driver went to a wrong location. So I cancelled the ride, but charged a $5 cancellation fee.
 
- * So I go to Lyft app's help and start a chat with 'customer service'
-
-```
-Me:
+```text
+User:
     Hi, My driver went to a wrong location.  
     So I had to cancel.  
     But I was charged a cancellation fee.
-    Can that be refunded"`
+    Can that be refunded"
+
 Customer Service:
     I see, this is your first cancellation in past 2 months.  
-    We will refund you the money.Have a nice day!"`
+    We will refund you the money.Have a nice day!"
 ```
 <!-- {"left" : 0, "top" : 3.62, "height" : 0.99, "width" : 5.6} -->
 
 - Hightlighs
-     - Resolution time:  **about 20 seconds!**
-     - No phone calls,
-     - No wait time
+  - Resolution time:  **about 20 seconds!**
+  - No phone calls,
+  - No wait time
 
 
 Notes:
