@@ -1,8 +1,8 @@
-# Text Analytics
+# Introduction to Natural Language Processing (NLP)
 
 <!-- TODO shiva -->
-<img src="../../assets/images/generic/3rd-party/text-scrabble-1.jpg" style="width:40%;"/><!-- {"left" : 5.36, "top" : 2.32, "height" : 3.8, "width" : 4.75} -->
-<img src="../../assets/images/AI/3rd-party/nlp-1.jpg"  style="width:40%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/generic/3rd-party/text-scrabble-1.jpg" style="width:30%;"/><!-- {"left" : 5.36, "top" : 2.32, "height" : 3.8, "width" : 4.75} -->
+<img src="../../assets/images/AI/3rd-party/nlp-1.jpg"  style="width:30%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 ---
 

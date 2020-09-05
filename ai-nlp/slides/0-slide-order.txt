@@ -10,7 +10,7 @@ AI-for-NLP-Intro.pdf
 About-AI-NLP.md
 
 ## Intro
-Text-Analytics-Intro.md
+NLP-Intro.md
 
 # Basic Text Python
 ../../data-analysis-python/slides/PYTHON-Text-NLTK.md
