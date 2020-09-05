@@ -1,6 +1,7 @@
 # Artificial Intelligence (AI) for Natural Language Processing (NLP) - Introduction
 
 ## Overview
+
 We live in an era of so much data - a lot of it is text (emails, tweets, customer tickets, Yelp reviews, product reviews, etc.)
 
 In the field of AI, there is a revolution going on in the past few years.  The researchers from companies like Google, Facebook, Microsoft and Baidu has come up with break through algorithms that can understand text data more than ever before.
@@ -12,6 +13,7 @@ and introduce you to modern AI NLP technologies.
 
 
 ## What you will learn:
+
 - How to prepare text for machine learning
 - Stemming,  tokenizing and filtering stop words in text
 - Analyzing documents using word-frequency, bag-of-words techniques
@@ -20,44 +22,53 @@ and introduce you to modern AI NLP technologies.
 - Naive Bayes for text classifications
 - Modern techniques for text: Spacy, Word2Vec
 - Topic modeling with Gensim
-- Neural Network frameworks: Tensorflow & Keras
-- NN models for text processing: LSTM, RNN
+- Neural Networks and Deep Learning
+- Deep learning models for text processing: LSTM, RNN
+- Transformer architecture
 - Modern NN models for text processing: ELMO, ULMFIT, BERT
 
 
 ## Duration:
-Four Days
+
+Three Days
 
 ## Audience:
+
 Developers, Data analysts, data scientists
 
 ## Skill level
+
 Introductory to Intermediate
 
 ## Industry Use Cases Covered
+
 We will study and solve some of most common industry use cases; listed below
 
 * Determining if a text message is a spam (Telco)
-* Sentiment analysis of Tweets (Social)
+* Sentiment analysis of text data (Social/News)
 * IMDB Movie ratings and reviews analysis
+* Classifying news articles
 
 ## Prerequisites
-- Programming background
-- Basic knowledge of Python language and Jupyter notebooks is recommended.  
+
+* Programming background
+* Basic knowledge of Python language and Jupyter notebooks is recommended.  
 Even if you haven't done any Python programming, Python is such an easy language to learn quickly.  We will provide Python resources.
 
-
 ## Lab environment
-- Cloud based lab environment will be provided to students, no need to install anything on the laptop
+
+* Cloud based lab environment will be provided to students, no need to install anything on the laptop
+* We encourage the use of [Google Colab environment](https://colab.research.google.com/) for ease of use and free GPU access
 
 ### Students will need the following
+
 * A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
 * Chrome browser
-
 
 ## Detailed Course Outline
 
 ### Machine Learning Overview
+
 * Machine Learning landscape
 * Understanding AI use cases
 * Data and AI
@@ -65,8 +76,8 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Hardware and software ecosystem
 * Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
 
-
 ### Text Preparation
+
 * Filtering
 * Stopwords
 * Stemming
@@ -74,34 +85,42 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Word-clouds
 * Working with Unicode
 
-### Text Algorithms
+### Text Algorithms Overview
+
 * N-grams
 * Bag-of-words
 * NLTK
 * TextBlob
+* Vectorizing text
 * TF-IDF
 
 ### Text Classification
+
 * Naive Bayes
 * SVM
 
 ### Text datasets and Benchmarks
+
 * Public text datasets
 * Benchmarks (GLUE, SQUAD)
 
 ### Topic Modeling
+
 * LDA (Latent Dirichlet Allocation)
 * Gensim
 
 ### Introduction to Neural Networks
+
 * Perceptrons
-* Feedforward networks
-* Activation functions
-* Optimizers
+* Neural networks design
+* Deep Neural Networks, hidden layers
+* Training neurual networks
 * Backpropagation
-* Deep Neural Networks
+* Neural network architectures : Feed forward, Convolutional, Recurrent
+* Labs: Neural network playground
 
 ### Tensorflow
+
 * TensorFlow intro
 * TensorFlow features
 * TensorFlow on GPU and TPU
@@ -109,6 +128,7 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Lab: Setting up and Running TensorFlow
 
 ### NLP and Deep Learning
+
 * Word embeddings
 * Skipgram
 * Training the model
@@ -117,6 +137,7 @@ Even if you haven't done any Python programming, Python is such an easy language
 * SpaCy for named entity recognition
 
 ### Recurrent Neural Networks (RNN)
+
 * Introduction to RNNs
 * Text prediction
 * Named entity extraction
@@ -124,17 +145,20 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Text generation
 
 ### Transformers
+
 * Attention concept
 * Transformer architecture
 * Bidirectional LSTM
 * Pre-trained Models for Text Processing (ElMO, ULMFIT,  BERT)
 
 ### Conversational AI
+
 * Understanding natural language
 * Generating natural language
 * Introduction to RASA framework
 
 ### Final Workshop (Time Permitting)
+
 * This a group exercise
 * Students will use the learned techniques to solve a real world problem
 * And present their solutions to the class

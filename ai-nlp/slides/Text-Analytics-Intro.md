@@ -427,7 +427,228 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 ---
 
-# NLP Demos
+## Looking Ahead
+
+* NLP models are getting larger and larger - trained on bigger and bigger dataset
+* [Megatron](https://github.com/NVIDIA/Megatron-LM), the latest model from Nvidia has 8.3 billion parameters: 24 times larger than BERT-large, 5 times larger than GPT-2, 
+* [RoBERTa](https://arxiv.org/abs/1907.11692), the latest work from Facebook AI, was trained on 160GB of text
+
+<img src="../../assets/images/deep-learning/3rd-party/NLP-models-growth-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
+
+---
+
+## Deploying NLP Models
+
+* Larger models are deployed in cloud, across cluster of CPU/GPU cores for scalability
+
+* Edge devices (speakers / phones) will send the question to the cloud and will get the answer back
+
+
+<img src="../../assets/images/deep-learning/alexa-2.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
+---
+
+## Edge Deployment
+
+
+* To build more privacy minded systems,the models need to operate on the **edge devices**, rather than sending (may be private/sensitive) data to the cloud
+* For this we need **light weight models** (not the monster models we have just seen)
+* But these light-weight models should also provide reasonable accuracy
+* [HuggingFace]()  publishes **distilled** models - a slim down version of large, state of the art models
+  - Large model is called *the teacher* and smaller model is called *the student*
+  - **DistilBERT** is 60% faster and smaller than BERT, while still producing comparable results
+  - [Reference](https://medium.com/huggingface/distilbert-8cf3380435b5)
+
+<img src="../../assets/images/deep-learning/edge-nlp-1.png"  style="width:40%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
+---
+
+# NLP Ecosystem
+
+---
+
+## NLP Libraries
+
+* [NLTK](https://www.nltk.org/) - mature, easy to use library
+  - Capabilities: Sentiment analysis, Wordnet
+* [Spacy](https://spacy.io/) - modern and state of the art
+  - Capabilities : Entity recognition, 
+* Transformer Libraries
+  - [Hugging Face](https://huggingface.co/) NLP library is aiming make using NLP easy to use.  It has gained massive traction in a very short time
+    - Capabilities: Makes working with pre-trained models (32+) like BERT, GPT very easy, Q&A, text summarization, text generation
+* Other mentions
+  -  [AllenNLP](https://allennlp.org/) has open source libaries
+  -  [OpenAI](https://openai.com/) releases high quality models as opensource
+
+---
+
+## NLP Services
+
+* Lot of companies are offering 'NLP as a Service'
+
+* [IBM Watson](https://www.ibm.com/cloud/watson-natural-language-understanding) : IBM has been bringing the power of Watson engine to many commercial applications.
+
+* [Amazon Comprehend](https://aws.amazon.com/comprehend/)
+
+* [Google NLP](https://cloud.google.com/natural-language)
+
+* [Microsoft Cortana](https://www.microsoft.com/en-us/cortana)
+
+---
+
+
+# NLP in Action
+
+---
+
+## What Problems Can NLPs Solve?
+
+* **Sentiment Analysis**: Figure out sentiment (positive, negative, neutral) in product review, social media posts.  Useful for customer support and marketing
+
+* **Machine Translation**: Convert from one language to another.  So if you are a tourist, you can use a translation app to communicate in a foreign country
+
+* **Question Answering**: NLP Engine can be trained on huge body knowledge and answer simple to complicated questions.
+  - IBM Watson answering Jeopardy questions ([1](https://www.techrepublic.com/article/ibm-watson-the-inside-story-of-how-the-jeopardy-winning-supercomputer-was-born-and-what-it-wants-to-do-next/), [2](https://en.wikipedia.org/wiki/Watson_(computer)))
+  - [IBM Watson serving as conceiege at Pebble Beach](https://www.pebblebeach.com/press-releases/ibm-and-pebble-beach-company-tap-watson-to-enhance-traveler-experience-at-top-u-s-resort/)
+
+* **Text Summarization**: Read a news article, research paper and produce a concise summary
+
+* **Text classification**: Read email and classify as spam or not.  Classify support tickets as high/medium/low priority
+
+* **Text to Speech / Speech to Text**: Voice assistants like Siri/Google Voice/Alexa
+
+---
+
+## Demo: Amazon Comprehend / Google NLP / IBM Watson
+
+* [Amazon Comprehend](https://aws.amazon.com/comprehend/),   [Google NLP](https://cloud.google.com/natural-language),   [IBM Watson](https://www.ibm.com/demos/live/natural-language-understanding/self-service/home)
+
+* Login into their demo consoles, and try the following
+
+* Entity detection:  
+  - Start with this:   
+  _President Obama visited Seattle and spoke at the conference_
+  - Look at the entities it extracted
+  - Now find a news story (e.g. using [Google News](https://news.google.com/)) and copy paste some text from the story.  Watch the entities
+
+---
+
+## Demo: Amazon Comprehend / Google NLP / IBM Watson
+
+* Sentiment detection:
+  - Try this:  
+  _The movie was beyond awful!_
+  - Look at the sentiment
+  - Try your own text or tweets
+
+* **Class discussion**
+  - Let's discuss what we have seen
+  - Can you use any of these services in your projects?
+
+
+---
+
+## Demo: Entity Extraction
+
+* Entities : Peoples, Places and Things
+
+* Read some text and 'understand' entities mentioned
+
+* Try these sample sentences
+  - _President Obama visited Seattle and spoke at the conference_
+  - _The iPhone is very popular with millennials_
+  - Pick an article from [Google news](https://news.google.com/)
+  - Pick a random tweet from [Twitter](https://twitter.com/explore/)
+
+* Try these demos:
+  - [AllenNLP](https://demo.allennlp.org/named-entity-recognition)
+  - [DisplaCy](https://explosion.ai/demos/displacy-ent)
+  - [Hugging Face](https://huggingface.co/hmtl/)
+  - [Berkeley Neural Parser](https://parser.kitaev.io/)
+  - Cloud NLP services : [Amazon Comprehend](https://aws.amazon.com/comprehend/),   [Google NLP](https://cloud.google.com/natural-language),   [IBM Watson](https://www.ibm.com/demos/live/natural-language-understanding/self-service/home)
+
+---
+
+## Demo: Sentiment Analysis
+
+* Sentiment detection is important to analyze product reviews, feedback ..etc
+
+* Sample sentences:
+  - _traffic was really bad today_
+  - _iPhoneX is a great update!_
+  - _The movie was prety awful_
+  - _It rained here after a long drought_
+
+* Try these demos:
+  - [AllenNLP](https://demo.allennlp.org/sentiment-analysis)
+  - Cloud NLP services : [Amazon Comprehend](https://aws.amazon.com/comprehend/),   [Google NLP](https://cloud.google.com/natural-language),   [IBM Watson](https://www.ibm.com/demos/live/natural-language-understanding/self-service/home)
+
+---
+
+## Demo :  BERT
+
+* [AllenNLP](https://demo.allennlp.org/) has very impressive demos
+
+* Let's try the [Masked Language Modelling](https://demo.allennlp.org/masked-lm) - it uses BERT model for prediction
+
+* Try these examples:
+  - simple: _My [MASK] likes to bark_
+  - Context: _I lived in China, so I am fluent in [MASK] language_
+  - Distant Context: _I lived in Thailand, during my teenage years, so I am fluent in [MASK] language_
+  - Two masks: _A doctor [MASK] [MASK] patients_
+
+---
+
+## Demo :  Reading Comprehension / Question-Answer
+
+* Here is our sample text:
+
+_COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention._
+
+---
+
+## Demo :  Reading Comprehension / Question-Answer
+
+* Sample Questions:
+  - What is COVID-19?
+  - What are symptoms of COVID-19?
+  - Where did CORONA star?
+  - Who requires medical attention?
+  - Any of your questions here
+
+* Let's try following services:
+  - [AllenNLP demo](https://demo.allennlp.org/reading-comprehension/)
+  - <https://www.pragnakalp.com/demos/BERT-NLP-QnA-Demo/>
+
+---
+
+## Demo: Text Summarization
+
+* **Summarization** is a very handy way to deduce summaries from long text like news articles, blogs, white papers
+
+* Sample input (you can get the URL below)
+  - Dwayne 'The Rock' Johnson: Actor and family had Covid-19 : <https://www.bbc.com/news/world-us-canada-54008181>
+  - England v Australia: Hosts produce remarkable fightback to win first T20 : <https://www.bbc.com/sport/cricket/54034684>
+
+* Try these services:
+  - <http://textsummarization.net/text-summarizer>
+  - <https://www.summarizebot.com/text_api_demo.html>
+
+---
+
+## Demo: Text Generation
+
+* This is really a fun demo.  NLP models are getting very good at generating text, based on given input
+
+* Let your aspiring inner novelist loose!
+
+* [Talk to a transformer](https://app.inferkit.com/demo)
+
+* [Write with transformer](https://transformer.huggingface.co/)
+
+* Write with OpenAI GPT-2 (The king of text generation!)
+  - [Hugging face](https://transformer.huggingface.co/doc/gpt2-large)
 
 ---
 
@@ -435,9 +656,13 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 * [A Review of the Neural History of Natural Language Processing](https://ruder.io/a-review-of-the-recent-history-of-nlp/)
 
-* [Natural Language Processing history](https://devopedia.org/natural-language-processing)
+* [Natural Language Processing history and applications](https://devopedia.org/natural-language-processing)
 
 * [NLP Progress](http://nlpprogress.com/)
+
+* [How do Transformers Work in NLP? A Guide to the Latest State-of-the-Art Models](https://www.analyticsvidhya.com/blog/2019/06/understanding-transformers-nlp-state-of-the-art-models/)
+
+- [The Best NLP Tools of Early 2020: Live Demos](https://towardsdatascience.com/the-best-nlp-tools-of-early-2020-live-demos-b6f507b17b0a)
 
 ---
 

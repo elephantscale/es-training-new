@@ -1,16 +1,18 @@
 ## Execute these commands from within 'es-reveal-md' docker image
-## To assemble md slides,
-##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    0-slide-order-sujee.txt
-## to make pdfs
-##       $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    0-slide-order-sujee.txt   pdf
+## To generate slides
+##      ./gen.sh
 
 
+## Course outline
+AI-for-NLP-Intro.pdf
 
 ## About
 About-AI-NLP.md
 
+## Intro
+Text-Analytics-Intro.md
+
 # Basic Text Python
-../../machine-learning/generic/Text-Analytics-Intro.md
 ../../data-analysis-python/slides/PYTHON-Text-NLTK.md
 ../../data-analysis-python/slides/PYTHON-Text-Spacy.md
 ../../machine-learning/generic/Text-Analytics-Vectorization.md
