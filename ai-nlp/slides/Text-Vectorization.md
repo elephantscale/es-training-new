@@ -4,15 +4,30 @@
 
 ## Vectorizing Text
 
-- Machine learning algorithms deal in numbers
-    - They won't work with plain text (strings)
+* Machine learning algorithms deal in numbers
 
-- So we need to convert text into vectors before applying machine learning algorithms
+* They won't work with plain text (strings)
 
-- Few vectorization methods
-    - Document Term Matrix
-    - TF-IDF
-    - Word2Vec
+* So we need to convert text into vectors before applying machine learning algorithms
+
+ <img src="../../assets/images/machine-learning/word-to-vectors-2.png" style="width:70%"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
+
+---
+
+## Text Vectorizing Algorithms
+
+* Machine learning based:
+  - CountVectorizer / Document Term Matrix
+  - TFIDF
+  - Latent Semantic Indexing (LSI)
+
+* Deep learning based:
+  - Word2Vec
+  - Word Embedings
+  - Transformer based algorithms: BERT, Elmo
+
+* References
+  - [Getting Started with Text Vectorization](https://towardsdatascience.com/getting-started-with-text-vectorization-2f2efbec6685)
 
 ---
 
@@ -360,24 +375,6 @@ Notes:
 Notes:
 
 
-
----
-
-
-## TF-IDF With SciKit Learn Library
-
-  * Scikit-Learn has a good TFIDF Implementation
-
-    - sklearn.feature_extraction.text.TfidfVectorizer
-
-  * TFidfVectorizer
-
-    - Can read a corpus (files / collection of strings)
-    - And compute TFIDF
-    - It gives 'document term matrix'
-
-Notes:
-
 ---
 
 ## TF-IDF with SciKit Learn Code
@@ -394,20 +391,20 @@ tf = TfidfVectorizer(analyzer='word', ngram_range=(1,1),
 tfidf_matrix = tf.fit_transform(documents)
 print(tfidf_matrix)  # document term matrix
 
-document-term matrix
-  (0, 8)	0.521500948636
-  (0, 0)	0.335763711163
-  ...
-  (1, 8)	0.373118805931
-  (1, 0)	0.480458397292
+# document-term matrix
+#  (0, 8)	0.521500948636
+#  (0, 0)	0.335763711163
+#  ...
+#  (1, 8)	0.373118805931
+#  (1, 0)	0.480458397292
 
 feature_names = tf.get_feature_names()
 for i, feature in enumerate(feature_names):
     print(i,feature)
 feature vectors
-0 brown
-1 cow
-2 dog
+# 0 brown
+# 1 cow
+# 2 dog
 ...
 ```
 <!-- {"left" : 0.0, "top" : 1.2, "height" : 6.38, "width" : 9.48} -->
@@ -416,225 +413,150 @@ Notes:
 
 ---
 
-## Lab: Text Analytics: TFIDF
+## Lab: Text Analytics: TFIDF Intro
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" /><!-- {"left" : 6.97, "top" : 1.04, "height" : 4.09, "width" : 3.07} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 6.97, "top" : 1.04, "height" : 4.09, "width" : 3.07} -->
 
- * **Overview:**
-    - TFIDF
-    - Calculate and understand TF-IDF scores
+* **Overview:**
+  - TFIDF
+  - Calculate and understand TF-IDF scores
 
- * **Builds on previous labs:**
-    - None
+* **Approximate time:**
+  - 15 mins
 
- * **Approximate time:**
-    - 15 mins
-
- * **Instructions**"
-    - R / Python  / Spark
-
-
+* **Instructions**
+  - **TFIDF-1** : Use TF-IDF to vectorize text
 
 Notes:
 
 ---
 
-## Lab: Text-6: TF-IDF With SciKit-Learn
+## Lab: TFIDF With SciKit-Learn
 
-  * Overview:
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 6.97, "top" : 1.04, "height" : 4.09, "width" : 3.07} -->
 
-    - Calculate TF-IDF with SciKit-Learn
+* **Overview:**
+  - Calculate TF-IDF with SciKit-Learn
 
-  * Builds on previous labs:
+* **Approximate time:**
+  - 15 mins
 
-    - TEXT5: TFIDF intro
-
-  * Approximate time:
-
-   - 15 mins
-
-  * Instructions:
-
-    - 6-tfidf-with-scikit-learn
-
+* **Instructions**
+  - **TFIDF-2** : Use TF-IDF with SciKit Learn
 
 Notes:
+
+---
+
+# Latent Semantic Indexing (LSI)
 
 ---
 
 ## Dimensionality Reduction of Document-Term Matrix
 
- * The Document-Term matrix is usually *very* dimensinoal
-   - Typically 10k to millions of dimensions!!
-   - With all n-gram combinations it could be 10s-100s of Millions of dimensions!
-   - every instance of a word or n-gram is a dimension
-   - We usually use a sparse vector / sparse matrix representation
- * Can be filtered somewhat to exclude very uncommmon words or n-grams
-   - but some uncommon word can be very important
-   - sometimes in fact the most important term is an uncommon one.
- * Can we reduce dimensionality of this huge matrix?
-   - Yes!
-   - We can apply dimensionality Reduction
+* The Document-Term matrix is usually *very* dimensinoal
+  - Typically 10k to millions of dimensions!!
+  - With all n-gram combinations it could be 10s-100s of Millions of dimensions!
+  - every instance of a word or n-gram is a dimension
+  - We usually use a sparse vector / sparse matrix representation
+
+* Can be filtered somewhat to exclude very uncommmon words or n-grams
+  - but some uncommon word can be very important
+  - sometimes in fact the most important term is an uncommon one.
+
+* Can we reduce dimensionality of this huge matrix?
+  - Yes! We can apply **Dimensionality Reduction**
 
 ---
 
 ## PCA
 
-  * PCA is effective at reducing dimensions
-  * It is formed by taking the SVD of the Covariance matrix of the dimenisions
-  * But PCA works better for dense dimensions of numeric data.
-  * Natural Language has sparse dimensions of TF-IDF scores
-  * PCA is not an ideal fit
+* PCA is effective at reducing dimensions
+
+* It is formed by taking the SVD of the Covariance matrix of the dimenisions
+
+* But PCA works better for dense dimensions of numeric data.
+
+* Natural Language has sparse dimensions of TF-IDF scores
+
+* PCA is not an ideal fit
+
+* References:
+  - [A One-Stop Shop for Principal Component Analysis](https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c)
+
+<img src="../../assets/images/machine-learning/PCA-14.png" style="width:70%;"/><!-- {"left" : 0.91, "top" : 2.16, "height" : 4.74, "width" : 8.43} -->
 
 ---
 
-## Latent Semantic Indexing
+## Latent Semantic Indexing (LSI)
 
-  * Latent Semantic Indexing, aka Latent Semantic Analysis
-    - Latent means hidden: it means we are trying to find "hidden" features that help us predict the data
-    - the numbe of latent features is defined by the "rank"
-    - Semantic means grammatical context.   But LSI is using a Bag-of-Words representation which is not semantic!!?
-    - But the idea is that using a lot of data, we can infer relationships about the meaning
-  * LSI is a low-rank **approximation** of the original matrix.
-    - Wait... isn't approximation bad?
-    - wouldn't we rather get exact representation?
-  * Not necessarily!
-    - The original matrix is very noisy
-    - LSI can help "de-noisify" the matrix
+* Latent means hidden; it means we are trying to find "hidden" features that help us predict the data
 
-  * [Video Link](https://upload.wikimedia.org/wikipedia/commons/transcoded/7/70/Topic_model_scheme.webm/Topic_model_scheme.webm.480p.vp9.webm#t=00:00:01,00:00:17.600)
+* The number of latent features is defined by the "rank"
+
+* Semantic means grammatical context;   But LSI is using a Bag-of-Words representation which is not semantic!
+  - But the idea is that using a lot of data, we can infer relationships about the meaning
+
+* LSI is a low-rank **approximation** of the original matrix.
+  - Wait... isn't approximation bad? Wouldn't we rather get exact representation?
+  - Not necessarily!  The original matrix is very noisy
+  - LSI can help "de-noisify" the matrix
+
+* References:
+  - [LSI animation](https://upload.wikimedia.org/wikipedia/commons/transcoded/7/70/Topic_model_scheme.webm/Topic_model_scheme.webm.480p.vp9.webm#t=00:00:01,00:00:17.600)
 
 ---
 
 ## How LSI works
 
-  * LSI uses the Singular Value Decomposition to find two matrices U and V
-    * U is the tall-skinny matrix
-    * V is the short-fat matrix
-  * U and V are dense matrices of a pre-defined **rank**
-    - the **rank** is the numbe of columns in **U** -- the tall skinny
-    - the **rank** is the number of rows in **V** -- the short fat
-  * Usually, we use an **approximation** of the SVD such as ALS
-   - Alternating Least Squares
-  * The result is that we get 2 **dense** matrices
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:60%;float:right;"/><!-- {"left" : 0.91, "top" : 2.16, "height" : 4.74, "width" : 8.43} -->
 
----
-
-
-## Alternating Least Squares
-
-
- * ALS is an algorithm to figure out how users / items relate to each other
-
- * Similar to 'dimensionality reduction'
-
-     - Trying to reduce huge amount of vectors (users x items) into smaller size, while still keeping the relevant information
-
-     - PCA!
-
- * Done by **'matrix factorization'**
-
- * We take a large users x items matrix and figure out 'hidden' (latent) features that results in much smaller matrix and explains the relationship
-
-Notes:
-
-
-
----
-
-## Matrix Refactorization Explained
-
-
- * R is matrix is  M (users) x N (items)
-
-     - Can be really large - 100 million users x 1 million items
-
- * Factorize R into two smaller matrices,
-
-     - U: latent vectors for each user , MxK dimension,
-
-     - V: latent vectors for each item, KxN dimension
-
- * Multiplying U and V will **approximately** give R
-
- * But matrices U & V are **dense**! So can be stored effectively
-
----
-
-## Matrix Refactorization Explained
-
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:90%;"/><!-- {"left" : 0.91, "top" : 2.16, "height" : 4.74, "width" : 8.43} -->
-
-
-Notes:
-
-
-
----
-
-## Singular Value Decomposition
-
- * We can also perform the Singular Value Decomposition of the Matrix
-
- * Singular Value Decomposition finds 2 Matrices: U and V
-
-     - U dot V = rating.
-
- * Problem: In most real-world cases the SVD is very hard!
-
- * Typical Use case:
-
-     - Millions rows times Millions of Columns!
-
- * Can we approximate the SVD?
-
-Notes:
-
-
-
----
-
-## ALS
-
- * To solve matrices U and V, we can utilize
-     - SVD : Requires inverting a very large matrix -> computationally expensive
-     - Apply ALS to approximate it
- * ALS we only need to solve one vector at time -> parallelizable!!
- * This is why Spark ML implements ALS
- * Basic algorithm:
-     - Randomly initialize U and solve for V
-     - Then go back and solve U using our solution for V
-     - Keep iterating back and forth until we converge and approximate R as best as we can
- * After the matrix work is done, we can simply take the dot product of U and V to see what a predicted rating would be for a (user, item) combination
-
-Notes:
-
+* LSI uses the Singular Value Decomposition to find two matrices U and V
+  - U is the tall-skinny matrix
+  - V is the short-fat matrix
+* U and V are dense matrices of a pre-defined **rank**
+  - the **rank** is the numbe of columns in **U** -- the tall skinny
+  - the **rank** is the number of rows in **V** -- the short fat
+* Usually, we use an **approximation** of the SVD such as ALS
+  - Alternating Least Squares
+* The result is that we get 2 **dense** matrices
+  - These can be effectively stored and solved!
 
 ---
 
 ## Result of LSI
 
- * LSI gives us an approximation the the TF-IDF matrix that is both:
-   - much smaller
-   - usually more accurate for new data
- * LSI is very effective at problems like:
-   - Document Similarity
-   - Document Categorization
-   - Clustering
-   - Keyword extraction 
- 
- * Problems with LSI
-   - bag-of-words limitations
-   - TF-IDF limitations (thouguh we don't necessarily need to use tf-idf)
+* LSI gives us an approximation the the TF-IDF matrix that is both:
+  - much smaller
+  - usually more accurate for new data
+* LSI is very effective at problems like:
+  - Document Similarity
+  - Document Categorization
+  - Clustering
+  - Keyword extraction
+
+* Problems with LSI
+  - bag-of-words limitations
+  - TF-IDF limitations (thouguh we don't necessarily need to use tf-idf)
 
 ---
 
-## Going Beyond TF-IDF
- * TF-IDF is surprisingly effective
- * But by today's standards other approaches are better:
-    - Word2Vec / Doc2Vec
-    - Deep Learning methods: ULM-Fit, ELMO, BERT, etc.
+## Beyond TF-IDF
+
+* In the next sections, we will look at more advanced algorithms
+
+* These are based on neural network (or deep learning)
+  - Word2Vec
+  - Word Embeddings
+  - Transformer models : BERT, ELMO ..etc
 
 ---
 
-# Next: Word2Vec
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
