@@ -435,6 +435,76 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 <img src="../../assets/images/deep-learning/3rd-party/NLP-models-growth-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
+---
+
+## Bigger and Bigger Models
+
+<img src="../../assets/images/deep-learning/3rd-party/NLP-model-growth-2.jpg"  style="width:80%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
+* [Source](https://developer.nvidia.com/blog/training-bert-with-gpus/)
+
+---
+
+## Bigger and Bigger Models
+
+* We are seeing models that are getting exceedingly big with billion+ parameters!
+
+<br />
+
+| Model         | Created By | Implementation | Number of Patameters | Training Data Size |
+|---------------|------------|----------------|----------------------|--------------------|
+| BERT base     | Google     | Tensorflow     | 110 Million          | 16 GB              |
+| RoBERTa base  | Facebook   | PyTorch        | 125 Million          | 76 GB              |
+| BERT large    | Google     | Tensorflow     | 340 Million          |                    |
+| RoBERTa large | Facebook   | PyTorch        | 335 Million          |                    |
+| XLM           | Facebook   | PyTorch        | 665 Million          |                    |
+| GPT-2         | OpenAI     | PyTorch        | 774 Million          |                    |
+| Megatron      | Nvidia     | PyTorch        | 8.3 Billion          | 174 GB             |
+| Turing NLG    | Microsoft  | DeepSpeed      | 17 Billion           |                    |
+| GPT-3         | OpenAI     | PyTorch        | 175 Billion          |                    |
+
+---
+
+## Issues with Bigger Models
+
+* As state of the art models get bigger and bigger, there is a concern about the practical / usability of these models
+
+* They take up lot of memory; so they have to be deployed on a pretty large hardware
+
+* And if we are doing multiple processes, each process has to load the data into its own memory space; increasing memory requirements even more
+
+* Since they have billions of parameters to be computed, their prediction speed is slow
+
+
+---
+
+## Do We Really Need the Monster Models?
+
+* Do we really need all the 'knowledge' of huge models, if our NLP task is simple (for example sentiment detection on small amount of data)
+
+* And what if we want to run our model on a smaller device (edge device / phone)?  They need to be 'light weight'
+
+<img src="../../assets/images/deep-learning/NLP-model-comparison-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+
+---
+
+## Distilled Models
+
+* There is a growing  need for 'light weight' models
+  - Deploy on edge devices with smaller memory and compute capabilities (e.g. smart speakers)
+  - Faster prediction times
+
+* **Distilled Models** are basically 'slimmed down' version of the large models
+
+* They reduce the number of parameters of larger models yielding smaller models, still giving comparable performance
+
+* Large model is called *the teacher* and smaller model is called *the student*
+
+* **DistilBERT** is 60% faster and smaller than BERT, while still producing comparable results
+
+* [HuggingFace](https://huggingface.co/)  publishes **distilled** models - a slim down version of large, state of the art models
+
+* References: [1](https://medium.com/huggingface/distilbert-8cf3380435b5), [2](https://towardsdatascience.com/distilling-bert-models-with-spacy-277c7edc426c)
 
 ---
 
@@ -444,7 +514,6 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 * Edge devices (speakers / phones) will send the question to the cloud and will get the answer back
 
-
 <img src="../../assets/images/deep-learning/alexa-2.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 ---
@@ -452,13 +521,9 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 ## Edge Deployment
 
 
-* To build more privacy minded systems,the models need to operate on the **edge devices**, rather than sending (may be private/sensitive) data to the cloud
+* To build more privacy minded systems,the models need to operate on the **edge devices**, rather than sending (possibly private/sensitive) data to the cloud
+
 * For this we need **light weight models** (not the monster models we have just seen)
-* But these light-weight models should also provide reasonable accuracy
-* [HuggingFace]()  publishes **distilled** models - a slim down version of large, state of the art models
-  - Large model is called *the teacher* and smaller model is called *the student*
-  - **DistilBERT** is 60% faster and smaller than BERT, while still producing comparable results
-  - [Reference](https://medium.com/huggingface/distilbert-8cf3380435b5)
 
 <img src="../../assets/images/deep-learning/edge-nlp-1.png"  style="width:40%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
@@ -663,6 +728,8 @@ _COVID-19 is the infectious disease caused by the most recently discovered coron
 * [How do Transformers Work in NLP? A Guide to the Latest State-of-the-Art Models](https://www.analyticsvidhya.com/blog/2019/06/understanding-transformers-nlp-state-of-the-art-models/)
 
 - [The Best NLP Tools of Early 2020: Live Demos](https://towardsdatascience.com/the-best-nlp-tools-of-early-2020-live-demos-b6f507b17b0a)
+
+- [How Do You Know a Human Wrote This?](https://www.nytimes.com/2020/07/29/opinion/gpt-3-ai-automation.html?)
 
 ---
 
