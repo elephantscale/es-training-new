@@ -253,16 +253,16 @@ print()
 
 #Additional Info when using cuda
 if device.type == 'cuda':
-    print(torch.cuda.get_device_name(0))
-    print('  Memory Usage:')
+    print('GPU[0] name :', torch.cuda.get_device_name(0))
+    print('Memory Usage:')
     print('  Allocated:', round(torch.cuda.memory_allocated(0)/1024**3,1), 'GB')
-    print('Cached:   ', round(torch.cuda.memory_reserved(0)/1024**3,1), 'GB')
+    print('  Cached:   ', round(torch.cuda.memory_reserved(0)/1024**3,1), 'GB')
 ```
 
 ```text
 Using device: cuda
 
-GeForce RTX 2070
+GPU[0] name : GeForce RTX 2070
 Memory Usage:
   Allocated: 0.0 GB
   Cached:    0.0 GB
@@ -326,6 +326,50 @@ print ('GPU memory allocated after : ', torch.cuda.memory_allocated(0)))
   - **PYTORCH-2** : Tensor operations
 
 Notes:
+
+---
+
+# Reading Datasets Into PyTorch
+
+---
+
+## CSV Data Into PyTorch Tensors
+
+* Here we will focus on reading numeric CSV data
+
+```python
+import pandas as pd
+import torch
+
+data = pd.read_csv('https://elephantscale-public.s3.amazonaws.com/data/house-prices/house-sales-sample.csv')
+
+# select numbers columns
+data2 = data[['SalePrice', 'Bedrooms', 'Bathrooms', 'SqFtTotLiving', 'SqFtLot']]
+print(data2)
+# > see below
+
+# We convert the value arrays into tensors
+tensor = torch.from_numpy(data2.values)
+
+print (tensor.shape)
+# > torch.Size([100, 5])
+```
+
+```text
+# data2 output
+    SalePrice  Bedrooms  Bathrooms  SqFtTotLiving  SqFtLot
+0      716831         5       3.50           3470     5326
+1      439900         4       2.50           2250     9988
+..        ...       ...        ...            ...      ...
+98     344950         2       1.75           1330     1097
+99     384950         3       3.50           1522     1255
+
+[100 rows x 5 columns]
+```
+
+---
+
+## Categorical Variables to Tensors
 
 ---
 

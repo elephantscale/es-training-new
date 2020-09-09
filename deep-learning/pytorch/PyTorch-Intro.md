@@ -20,21 +20,23 @@
 
 * Primarily developed by [Facebook AI Research Lab (FAIR)](https://ai.facebook.com/)
 
+* First open source release @ Jan 2017
+
+* Latest release v 1.6 @ July 2020
+
 Notes:
 
 ---
 
 ## Why PyTorch
 
-* Simple to use API
-
-* Very easy to prototype solutions quickly, so embraced by the research community
+* **Simple to use API**: Very easy to prototype solutions quickly, so embraced by the research community
 
 * **Pythonic**: Programming in PyTorch feels very natural in Python
 
 * **GPU support**: Using GPUs can result in 10x to 50x speedups
 
-* For performance, core of PyTorch is written in C++ and [CUDA](https://www.geforce.com/hardware/technology/cuda) - A C++ language from Nvidia for GPU programming
+* **Performance**: Core of PyTorch is written in C++ and [CUDA](https://www.geforce.com/hardware/technology/cuda) - A C++ language from Nvidia for GPU programming
 
 * Integrates with other Python ecosystem tools like Numpy
 
