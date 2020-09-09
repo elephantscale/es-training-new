@@ -21,8 +21,6 @@ This course will explain the capabilities of Hive, HQL dialects, and best practi
 
 ## Lab environment:
 * Working environment provided in the browser
-* (Hortonworks environment implemented on [Google Dataproc](https://cloud.google.com/dataproc))  
-
 * **Zero Install:** There is no need to install software on students' machines.
 
 ## Course Outline
@@ -43,17 +41,6 @@ This course will explain the capabilities of Hive, HQL dialects, and best practi
     * Joins
     * Text Analytics (Semi Structured Data)
 
-* Hive Advanced
-    * Transformation, Aggregation
-    * Working with Dates, Timestamps, and Arrays
-    * Converting Strings to Date, Time, and Numbers
-    * Create new Attributes, Mathematical Calculations, Windowing Functions
-    * Use Character and String Functions
-    * Binning and Smoothing
-    * Processing JSON Data
-    * Different Engines:
-        * Tez Engine
-        * MapReduce
 * New in Hive 3 
     * ACID tables
     * Hive Query Language (HQL) 
