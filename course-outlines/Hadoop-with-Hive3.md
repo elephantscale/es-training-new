@@ -1,8 +1,8 @@
-# Hive 3
+# Hadoop with Hive 3
 
 © Elephant Scale
 
-June 25, 2020
+September, 2020
 
 Hive is de-facto standard the SQL interface into Big Data. Today, it offers ACID tables,
 storage requirements reduction by the factor of 2 with erasure coding, HBase integration with Phoenix,

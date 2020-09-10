@@ -6,13 +6,13 @@ September 7, 2020
 
 Hadoop is more than just a product. It is an ecosystem that facilitates big
 data.  While basic familiarity with Hadoop is helpful, a deeper look at the
-components of the Hadoop ecosystem, including Hive, Hbase, and Spark, will
-leadto much greater insights from taht data. 
+components of the Hadoop ecosystem, including Hive, HBase, and Spark, will
+lead to much greater insights from that data. 
 
 ## Duration: 2 days
 ## Audience: Business analysts, Software developers, Managers
 ## Prerequisites:
- * Familiarity with Hadoop / Hive / Hbase / Spark
+ * Familiarity with Hadoop / Hive / HBase / Spark
  * Be able to navigate Linux command line
 
 ## Lab environment:
@@ -34,7 +34,7 @@ leadto much greater insights from taht data.
         * Tez Engine
         * MapReduce
 * HBase
-    * Hbase Design Patterns
+    * HBase Design Patterns
     * Using Phoenix data modeling for NoSQL
 * Spark
     * Overview
