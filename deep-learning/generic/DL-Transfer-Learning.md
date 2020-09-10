@@ -175,119 +175,18 @@ Notes:
 
 ## Popular Pre-Trained Models
 
- * Examples of Pre-trained models for Image Recognition
-   - Inception
-   - ResNet
+* Examples of Pre-trained models for Image Recognition
+  - Inception
+  - ResNet
 
- * Example of Pre-Trained model for Natural Language
-     - Word2Vec
-     - BERT
-
-Notes:
-
-
-
----
-
-# Example Transfer Learning Architectures
-
----
-
-## LeNet
-
-* LeNet-5 (1998) by LeCun
-  - Handwritten digits / MNIST type data (10 classes)
-  - 28x28x1 monochrome images
-* Revolutionary in its time
-  - Mostly constrained by resources of the day
-
-
-<img src="../../assets/images/deep-learning/lenet-architecture.png" style="width:90%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+* Example of Pre-Trained model for Natural Language
+  - Word2Vec
+  - BERT
 
 Notes:
 
 ---
 
-## Imagenet / AlexNet
-
-* Applied LeNet to full size RGB images (224x224x3) with 1000 classes.
-* Still very popular
-
-<img src="../../assets/images/deep-learning/CNN-Imagenet.png" style="width:90%;" /> <!-- {"left" : 1.02, "top" : 3.18, "height" : 3.97, "width" : 8.21} -->
-
-
-Notes:
-
----
-
-## VGGNet
-
-* Most popular transfer learning architecture
-
-* Simplified Architecture
-
-
-<img src="../../assets/images/deep-learning/CNN-VGG.png" style="width:70%;" /> <!-- {"left" : 1.02, "top" : 2.87, "height" : 4.85, "width" : 8.21} -->
-
-Notes:
-
----
-
-## VGGNet
-
-
-&nbsp;
-&nbsp;
-
-<img src="../../assets/images/deep-learning/CNN-VGG-2.png" style="width:90%;"/> <!-- {"left" : 0.35, "top" : 3.94, "height" : 1.19, "width" : 9.55} -->
-
-
-Notes:
-
-
----
-
-## ResNet
-
-* Uses Residual Neural Networks (RNNs) - Not Feedforward
-* Both Residual and Convolutional
-
-<img src="../../assets/images/deep-learning/CNN_resnet.png" style="width:90%;" /> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
-
-Notes:
-
-
----
-
-## Inception
-
-* Created by Google; state of the art ConvNet
-
-<img src="../../assets/images/deep-learning/CNN-Inception.png" style="width:90%;"/> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
-
-Notes:
-
-
----
-
-## Comparison of Transfer Learning Architectures
-
-<img src="../../assets/images/deep-learning/CNN-tl-comparison.png" style="width:90%;"/> <!-- {"left" : 0.52, "top" : 2.95, "height" : 3.75, "width" : 9.2} -->
-
-
-
-
-Notes:
-
----
-
-
-## Conclusion
- * Inception wins on performance, accuracy, and size of network (number of params)
- * ResNet is a close second with some valid use cases.
- * Inception and ResNet are often ensembled (combined together).
-
----
 
 ## Transfer Learning Lab
 

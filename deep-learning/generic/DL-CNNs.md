@@ -1026,6 +1026,162 @@ Notes:
 
 ---
 
+# Popular CNN Architectures
+
+
+---
+
+##  Popular CNN Architectures
+
+<img src="../../assets/images/deep-learning/3rd-party/CNN-history-1.png" style=" width:100%;" /> <!-- {"left" : 0.95, "top" : 3.12, "height" : 3.41, "width" : 8.36} -->
+
+* References:
+  - [Illustrated: 10 CNN Architectures](https://towardsdatascience.com/illustrated-10-cnn-architectures-95d78ace614d)
+  - ["Programming PyTorch for Deep Learning" book  Chapter 03](https://learning.oreilly.com/library/view/programming-pytorch-for/9781492045342/ch03.html#convolutional-neural-networks)
+
+
+---
+
+## Popular CNN Models
+
+| Year | Name                     | Created By   | Layers | Parameters  | Description                                                                                             |
+|------|--------------------------|--------------|--------|-------------|---------------------------------------------------------------------------------------------------------|
+| 1998 | LeNet                    | Yann Lecun   | 5      | 60,000      | Simple, but basic template for CNN architecture                                                         |
+| 2012 | AlexNet                  | Hinton et al | 8      | 60 million  | Dominated ImageNet Challenge in 2012.  Ignited the NeuralNet boom.  Introduced ReLU activation function |
+| 2014 | VGG-16                   | Oxford Uni   | 19     | 138 million | 2014 ImageNet 2nd place. Introduced deeper network (twice as deep as AlexNet)                                                    |
+| 2014 | Inception V1 (GoogLeNet) | Google       | 22     | 7 million   | Won 2014 ImageNet competition.  Introduced Inception model of using dense modules/blocks                |
+| 2015 | Inception V3             | Google       | 42     | 24 million  | 2015 ImageNet runner up.  Introduced batch normalization technique                                      |
+| 2015 | ResNet-50                | Microsoft    | 150    | 26 million  | 2015 ImageNet winner.  Went way deeper than previous models                                             |
+| 2016 | Xception                 | Keras Team   |        | 23 million  | Extension of Inception model                                                                            |
+| 2016 | Inception V4             | Google       |        | 43 million  | Updated from previous Inception v3                                                                      |
+| 2016 | Inception-ResNet-V2      | Google       |        | 56 million  | A merge of Inception and ResNet                                                                         |
+
+---
+
+## LeNet (1998)
+
+* The 'OG' of CNNs
+
+* Created by Yann LeCun
+
+* Handwritten digits / MNIST type data (10 classes)
+  - To identify Zipcodes for USPS
+
+* 28x28x1 monochrome images
+
+* Revolutionary in its time
+  - Mostly constrained by resources of the day
+
+
+<img src="../../assets/images/deep-learning/lenet-architecture.png" style="width:75%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+
+Notes:
+
+---
+
+## AlexNet (2012)
+
+* AlexNet was an important milestone in CNNs.  It kick-started the latest boom in CNNs
+
+* In 2012 ImageNet competition, it dominated with top-5 error rate is 15.3%,  beating the second place entry with a top-5 error of 26.2%;  Almost a 10% gap
+
+* AlexNet was the blueprint for lot of later architectures
+
+* It introduced `MaxPool` and `DropOut` concepts,  Also introduced `ReLU` activation function
+
+* Applied LeNet to full size RGB images (224x224x3) with 1000 classes.
+
+* References:
+  - [ImageNet Classification with Deep Convolutional
+Neural Networks - original paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
+  - [Review: AlexNet, CaffeNet — Winner of ILSVRC 2012 (Image Classification)](https://medium.com/coinmonks/paper-review-of-alexnet-caffenet-winner-in-ilsvrc-2012-image-classification-b93598314160)
+
+---
+
+## AlexNet (2012)
+
+<img src="../../assets/images/deep-learning/CNN-Imagenet.png" style="width:90%;" /> <!-- {"left" : 1.02, "top" : 3.18, "height" : 3.97, "width" : 8.21} -->
+
+---
+
+## Inception V1 / GoogLeNet  (2014)
+
+
+* 2014 ImageNet winner from Google, introduced a `Inception` concept
+
+* AlexNet had a fixed size kernel;  Inception had various sized kernels
+  - So a large kernel can identify a car
+  - A smaller kernel can further identify logos ..etc
+
+<img src="../../assets/images/deep-learning/3rd-party/CNN-inception-v1-1.png" style="width:50%;float:right;" /> <!-- {"left" : 1.02, "top" : 3.18, "height" : 3.97, "width" : 8.21} -->
+
+* The Inception network runs a series of convolutions of different sizes all on the same input, and concatenates all of the filters together to pass on to the next layer
+
+* Number of layers:22,  
+Number of parameters: 5 million
+
+---
+
+## Inception V1
+
+<img src="../../assets/images/deep-learning/CNN-Inception.png" style="width:90%;"/> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
+
+Notes:
+
+---
+
+## VGG (2014)
+
+* From University of Oxford—the Visual Geometry Group (VGG)
+
+* Won 2nd place on 2014 ImageNet competition
+
+* It introduced deeper layers (19 layers)
+
+* One downside of VGG is final fully connected layers make the network balloon to a large size, weighing in at 138 million parameters in comparison with GoogLeNet’s 7 million
+
+* Despite it's large size, still popular transfer learning architecture
+
+* Number of layers: 19  
+Number of parameters : 138 million
+
+---
+
+## VGGNet
+
+
+<img src="../../assets/images/deep-learning/CNN-VGG.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 2.87, "height" : 4.85, "width" : 8.21} -->
+
+<img src="../../assets/images/deep-learning/CNN-VGG-2.png" style="width:90%;"/> <!-- {"left" : 0.35, "top" : 3.94, "height" : 1.19, "width" : 9.55} -->
+
+Notes:
+
+---
+
+## ResNet (2015)
+
+<img src="../../assets/images/deep-learning/3rd-party/CNN-resnet-1.png" style="width:20%;float:right;"/> <!-- {"left" : 0.35, "top" : 3.94, "height" : 1.19, "width" : 9.55} -->
+
+* ResNet-152 model from Microsoft is the 2015 ImageNet winner  with top-5 score of 4.49%
+* ResNet uses Residual Neural Networks (RNNs); Not feed forward; Both Residual and Convolutional
+* ResNet improved on the Inception-style (stacking bundle of layers approach), wherein each bundle performed the usual CNN operations but also added the incoming input to the output of the block
+* Number of layers: 150  
+Number of parameters: 26 million
+
+<img src="../../assets/images/deep-learning/CNN_resnet.png" style="width:70%;" /> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
+
+---
+
+## CNN Architectures Comparison
+
+* Inception wins on performance, accuracy, and size of network (number of params)
+* ResNet is a close second with some valid use cases.
+* Inception and ResNet are often ensembled (combined together).
+
+<img src="../../assets/images/deep-learning/CNN-tl-comparison.png" style="width:95%;"/> <!-- {"left" : 0.52, "top" : 2.95, "height" : 3.75, "width" : 9.2} -->
+
+---
+
 # Image Datasets
 
 [./Datasets-Images.md](./Datasets-Images.md)
