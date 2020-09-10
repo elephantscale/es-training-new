@@ -1120,6 +1120,10 @@ Neural Networks - original paper](https://papers.nips.cc/paper/4824-imagenet-cla
 * Number of layers:22,  
 Number of parameters: 5 million
 
+Notes:
+
+Image credit : "Programming PyTorch for Deep Learning"
+
 ---
 
 ## Inception V1
@@ -1169,6 +1173,10 @@ Notes:
 Number of parameters: 26 million
 
 <img src="../../assets/images/deep-learning/CNN_resnet.png" style="width:70%;" /> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
+
+Notes:
+
+Image credit : "Programming PyTorch for Deep Learning"
 
 ---
 
