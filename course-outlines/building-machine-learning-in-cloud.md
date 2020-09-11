@@ -1,4 +1,4 @@
-# Building Machine Learning in Cloud
+# Building Machine Learning in the Clouds
 
 © Elephant Scale
 
