@@ -70,7 +70,7 @@ as they apply to Amazon, Azure, and Google clouds. The course covers these topic
 * Architecting in the cloud
     * Best practices for cloud-based architecture
 * Secure environment
-    * IAM
+    * Using IAM for security implementation
     * Cloud security principles    
 * AI, Deep Learning, Machine Learning
     * Cloud AI offering
