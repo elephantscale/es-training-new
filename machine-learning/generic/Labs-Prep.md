@@ -13,21 +13,25 @@ Notes:
 
 ---
 
-## Step 1: Distribute VMs
+## Step 1: Lab Environment
 
-<img src="../../assets/images/generic/training-sandbox-1.png" style="max-width:40%;float:right;"/><!-- {"left" : 5.8, "top" : 1.1, "height" : 4.02, "width" : 4.3} -->
+<img src="../../assets/images/generic/lab-setup.png" style="width:40%;float:right;"/><!-- {"left" : 1.84, "top" : 6.25, "height" : 2.18, "width" : 6.57} -->
+<img src="../../assets/images/generic/training-sandbox-1.png" style="max-width:40%;float:right;clear:both;"/><!-- {"left" : 5.8, "top" : 1.1, "height" : 4.02, "width" : 4.3} -->
 
- *  **Instructor**
+* We can use Google Colab or training VMs
 
- * Allocate VMs to students in class
+* If using **Google Colab**
+  - Make sure students can access Colab
 
- * Point them to IP address of the machine
+* If using **training VMs**
+  - Allocate VMs to students in class
 
- * Access the IP address in a browser
+  - Point them to IP address of the machine
 
- * Make sure they can see the sandbox splash page
+  - Access the IP address in a browser
 
-<img src="../../assets/images/generic/lab-setup.png" style="max-width:50%;"/><!-- {"left" : 1.84, "top" : 6.25, "height" : 2.18, "width" : 6.57} -->
+  - Make sure they can see the sandbox splash page
+
 
 
 

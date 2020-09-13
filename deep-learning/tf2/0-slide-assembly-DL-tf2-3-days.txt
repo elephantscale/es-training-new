@@ -35,7 +35,7 @@
 
 ## RNN
 ./Tensorflow-RNN.md
-../generic/DL-LSTMs.md
+./Tensorflow-LSTM.md
 
 ## TransferLearning
 ../generic/DL-Transfer-Learning.md

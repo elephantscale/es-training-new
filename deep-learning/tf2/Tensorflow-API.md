@@ -447,7 +447,6 @@ model.compile(optimizer=tf.keras.optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.
 
 ---
 
-
 # Loss Functions
 
 ---
@@ -2047,6 +2046,8 @@ Reached 60% accuracy so cancelling training!
 ---
 
 # Loss Function API
+
+---
 
 ## Optimizer: SGD
 

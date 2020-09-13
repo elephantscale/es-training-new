@@ -492,24 +492,6 @@ Notes:
 
 ---
 
-## Lab: LSTM S&P 500 stock prediction
-
-* **Overview:**
-
-  - Implement LSTM based sequence detection.We will build sequences of 50, and then predict outcomes of 50.
-
-* **Runtime:**
-
-  - 30-45 minutes
-
-* **Instructions:**
-
-  - Follow the lab steps in the lab guide
-
-Notes:
-
----
-
 ## LSTM Takeaways
 
 * LSTMs are very sequential
