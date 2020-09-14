@@ -37,6 +37,6 @@ lead to much greater insights from that data.
     * HBase Design Patterns
     * Using Phoenix data modeling for NoSQL
 * Spark
-    * Overview
-    * Spark SQL
+    * Spark API: RDD, Dataframe, Datasets
+    * Data Transformation with Spark
 
