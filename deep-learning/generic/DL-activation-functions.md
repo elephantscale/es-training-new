@@ -6,18 +6,19 @@
 
 
 - Let's consider our 'simple perceptron' example
-
 - The perceptron sums up all inputs and weights
-
 - The output of the perceptron  would be   
 __`output = weather * 40 + public * 20 + friend * 20`__
-
 - Then we defined an __activation function__
-     - If the output was greater than threshold (50) then __`answer = 1`__
+  - If the output was greater than threshold (50) then __`answer = 1`__
+  - Else, __`answer = 0`__
+- This is a simple **`step function`** activation
+  - It maps the number to a boolean function (0/1)
 
-     - Else, __`answer = 0`__
+<!-- todo shiva -->
+<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:40%;"/><!-- {"left" : 1.02, "top" : 5.21, "height" : 2.7, "width" : 8.21} --> &nbsp;  &nbsp;
+<img src="../../assets/images/deep-learning/activation-function-step-1.png" style="width:30%;"/><!-- {"left" : 1.02, "top" : 5.21, "height" : 2.7, "width" : 8.21} -->
 
-<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/><!-- {"left" : 1.02, "top" : 5.21, "height" : 2.7, "width" : 8.21} -->
 
 
 ---
@@ -82,12 +83,15 @@ Notes:
 
 - Sigmoid function ranges from **`0 to +1`**
 
-- Implementing Logistic Regression:
-    - Single Layer (Linear)
-    - Sigmoid Activation Function
 
 - Note : Historically Sigmoid function has been very popular.  
 Recently, ReLU functions work better and are more popular now.
+
+```text
+sigmoid (0) = 0.5
+sigmoid (10) = 0.99995
+sigmoid (-10) = 0.00005
+```
 
 
 Notes:  
@@ -97,18 +101,25 @@ Notes:
 
 ## Tanh Activation
 
+<!-- todo shiva -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png"  style="width:55%;float:right;" /><!-- {"left" : 0.77, "top" : 4.85, "height" : 3.24, "width" : 8.71} -->
+
 - __`tanh (z) = 2σ(2z) - 1`__
-
-- Recently Tanh is more popular, rather than Sigmoid
-
-- The two are closely related, as tanh is a "stretched" Sigmoid
 
 - Just like Sigmoid, Tanh is S-shaped, continuous, and differentiable
 
 - Tanh is symmetric around zero and ranges from **`-1 to +1`**   
 (sigmoid ranges from **`0 to +1`**)
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="XXX image missing" style="width:65%" /><!-- {"left" : 0.77, "top" : 4.85, "height" : 3.24, "width" : 8.71} -->
+```text
+Tanh(0) = 0
+Tanh(+1) = 0.761594155956
+Tanh(+10) = 0.999999995878
+Tanh(-10) = -0.999999995878
+```
+
+
+
 
 
 Notes:
@@ -176,7 +187,7 @@ Notes:
 ## Exploding Gradient Problem
 
 <!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/vanishing-exploding-gradients-2.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
+<img src="../../assets/images/deep-learning/vanishing-exploding-gradients-2.png" alt="XXX image missing" style="width:30%;float:right;" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
 
 - In some instances, the opposite would happen, the gradients will get larger and larger
 
@@ -197,7 +208,8 @@ Notes:
     - One of the reasons, the progress was stalled
 
 - In 2010 Xavier Glorot and Yoshua Bengio published a game changing paper called ['Understanding the difficulty of training deep feedforward neural networks'](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)
-    - This paper outlined very good techniques that solved some of the nagging problems of neural nets
+
+- This paper outlined very good techniques that solved some of the nagging problems of neural nets
 
 ---
 
@@ -236,7 +248,7 @@ Notes:
 
 ---
 
-## Activation Function: Leaky ReLU
+## ReLU Variants: Leaky ReLU
 
 <img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"/><!-- {"left" : 6.78, "top" : 2.95, "height" : 2.73, "width" : 3.36} -->
 
@@ -256,7 +268,27 @@ Notes:
 
 ---
 
-## ReLU Variants
+## ReLU Variants: Exponential ReLU
+
+<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 0.66, "top" : 5.47, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp;
+<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%;float:right;clear:both;"/><!-- {"left" : 5.69, "top" : 4.82, "height" : 2.83, "width" : 3.9} -->
+
+- A 2015 [paper](https://arxiv.org/pdf/1511.07289v5.pdf) by Djork-Arne Clevert, Thomas Unterthiner & Sepp Hochreiter introduced ELUs
+
+- ELU outperformed all other ReLU variants, it trained quicker, and test accuracy was higher too.
+
+- Works for negative values (z < 0) (doesn't go to zero).
+    - So avoids vanishing gradients problem
+
+- Very smooth function, even at z = 0
+    - This makes smoother gradient descent convergence; it doesn't bounce around
+
+- Downside: More expensive to compute due to exponential function
+
+
+---
+
+## Comparing ReLU Variants
 
 <img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"  /><!-- {"left" : 6.72, "top" : 1.02, "height" : 2.81, "width" : 3.46} -->
 
@@ -270,42 +302,11 @@ Notes:
 
 ---
 
-## Exponential Linear Unit (ELU)
 
-- A 2015 [paper](https://arxiv.org/pdf/1511.07289v5.pdf) by Djork-Arne Clevert, Thomas Unterthiner & Sepp Hochreiter introduced ELUs
-
-- ELU outperformed all other ReLU variants, it trained quicker, and test accuracy was higher too.
-
-<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%"/><!-- {"left" : 0.66, "top" : 5.47, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp;
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%"/><!-- {"left" : 5.69, "top" : 4.82, "height" : 2.83, "width" : 3.9} -->
-
-
----
-
-## ELU Highlights
-
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 5.27, "top" : 2.15, "height" : 3.34, "width" : 4.61} -->
-
-- Not zero for negative values (z < 0)
-    - prevents signals dying out
-
-- Works for negative values (z < 0) (doesn't go to zero).
-    - So avoids vanishing gradients problem
-
-- Very smooth function, even at z = 0
-    - This makes smoother gradient descent convergence; it doesn't bounce around
-
-- Downside:
-    - More expensive to compute due to exponential function
-
----
-
-## Final Word on Actications
+## Final Word on Activations
 
 
 - So which activation function to use? :-)
-
-<br />
 
 |         | Advantages                                                       | Disadvantages                                                               |
 |---------|------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -318,8 +319,10 @@ Notes:
 
 - If enough compute power is available, use **cross validation** to tweak hyper parameters like α
 
+- References:
+  - [Relu vs. Sigmoid](https://stats.stackexchange.com/questions/126238/what-are-the-advantages-of-relu-over-sigmoid-function-in-deep-neural-networks)
+
 Notes:
-- [Relu vs. Sigmoid](https://stats.stackexchange.com/questions/126238/what-are-the-advantages-of-relu-over-sigmoid-function-in-deep-neural-networks)
 
 ---
 
