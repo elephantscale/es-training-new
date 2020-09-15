@@ -397,29 +397,44 @@ for e  in number_of_epochs {
 
 ---
 
-# Designing Neural Networks
+# Training Neural Networks
 
 ---
 
-## Neural Network Components
+## Training Parameters
 
 <!-- todo shiva -->
 
-<img src="../../assets/images/deep-learning/neural-network-components-1.png" style="width:75%;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:75%;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
 
 ---
 
-## Neural Network Components
+## Training Parameters
 
-<img src="../../assets/images/deep-learning/neural-network-components-1.png" style="width:50%;float:right;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
+<!-- todo shiva -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
 
 * For each layer, we define **number of neurons** and **activation function**
+  - more neurons help the network to adopt to complex shape; but more also means increased training time
 
 * **Activation functions**: Determine the output each neuron
 
 * **Loss functions**: We try to minimize the error/loss
+  - For example, when driving, we optimize to minimize time spent
 
-* **Optimizers**: Helps with training the network
+---
+
+## Training Parameters
+
+<!-- todo shiva -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
+
+* **Optimizers**: Helps with adjusting the weights of the network, so our loss can be minimized
+  - We want to tweak weights efficiently not take random guesses
+
+* **Learning Rate**: This determines how much we update the weights.  It is a critical parameter.  
+  - Too small, the training will take too long
+  - Too large, the training will bounce around and not converge
 
 ---
 
@@ -567,29 +582,31 @@ to tune only one hyperparameter, tune the learning rate."_ - Page 429, Deep Lear
 
 ---
 
-# Let's Practice !
+## Review Questions (Part 1)
+
+ <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="30%" /><!-- {"left" : 6.58, "top" : 1.2, "height" : 2.34, "width" : 3.52} -->
+
+
+* **Q:** Can you name 3 activation functions and when they are used?
+
+* **Q:** What are the advantages of the ReLU activation over Sigmoid?
+
+* **Q:** How many neurons do you need in the output layer to classify emails into spam/ham?
+  - how about for classifying digits 0 to 9?
+
+* **Q:** In which cases you would use the following activation functions: ReLU, tanh, sigmoid, and softmax?
 
 ---
 
-## Lab: Regression 1 (Billing)
 
-<img src="../../assets/images/icons/individual-labs.png"  style="width:25%;float:right;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+## End of Part 1!
 
+* **Instructor**: Pause here.  And move onto the next module
 
- *  **Overview:**  
-     - We will do a simple lab, putting every thing we have learned in practice  
-     (Loss functions, activation functions, optimizers)
-
- *  **Approximate time:**   
-     - 15-30 minutes
-
- *  **Instructions**
-     - Follow  **Regression-1** lab
-
-
-Notes:
+* Cover **Part-2** as need basis
 
 ---
+
 
 # Part 2: Advanced Concepts
 
@@ -934,21 +951,14 @@ These default values should get you started, and should work well in most scenar
 
 ---
 
-## Review Questions
+## Review Questions - Part 2
 
  <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="30%" /><!-- {"left" : 6.58, "top" : 1.2, "height" : 2.34, "width" : 3.52} -->
 
 
- * **Q:** Can you name 3 activation functions and when they are used?
+* **Q:** What are the techniques to prevent overfitting?
 
- * **Q:** How many neurons do you need in the output layer to classify emails into spam/ham?
-     - how about for classifying digits 0 to 9?
-
- * **Q:** Name advantages of the ELU activation function over ReLU
-
- * **Q:** In which cases you would use the following activation functions: ELU, leaky ReLU (and its variants), ReLU, tanh, logistic, and softmax?
-
- * **Q:** Explain how Dropoff works
+* **Q:** Explain how Dropoff works
 
 ---
 
