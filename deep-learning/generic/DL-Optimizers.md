@@ -458,4 +458,3 @@ Notes:
 
 - [Animations of various optimizers](http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html)
 
----
