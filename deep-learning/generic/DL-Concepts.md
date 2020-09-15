@@ -82,11 +82,11 @@ Notes:
 
 - You tell them what you want (_"I want a cheese pizza"_)
 
-- The kitchen will try to make your meal and bring it out
+- The kitchen will try to make your pizza and bring it out
 
 - If it is not to your liking, you send it back with feedback (_"it is not cooked well"_,  _"it needs more sauce"_ ..etc)
 
-- You keep sending the meal back until they get your order right!
+- You keep sending the pizza back until they get your order right!
 
 - This happens until every one's order is cooked correctly!!
 
@@ -278,18 +278,30 @@ Notes:
 
  * One **Epoch** means when an entire dataset passed forward and backward exactly ONCE
     - Restaurant Example: Entire table's meal is sent back once and re-delivered
+
  * Why do we need more than one epoch?
     - Optimizer algorithms try to adjust the weights of neural networks  based on training data
     - Just one-pass isn't enough to tweak the weights
     - leads to under-fitting
+    - So we need to go back and forth multiple times
+
+---
+
+## Epoch 
+
+<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 8.45, "top" : 1.28, "height" : 2.39, "width" : 1.74} -->
+
  * As we pass the data back and forth multiple times (multiple epochs) the network gets more chance to learn from data and tweak the parameters  further
     - model gets more accurate
     - Too many epochs, will lead to overfitting (not good either)
- * Epoch values are typically in hundreds or thousands
 
+ * In practice, the epoch values are typically in hundreds or thousands
 
-Notes:   
-- https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9
+ * References:
+  - [Epoch vs. iterations vs. batch](https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9)
+
+Notes:
+
 ---
 
 ## Batch size
@@ -310,8 +322,9 @@ Notes:
 
  * Alien Restaurant Example: We send back meals in batches of 3, not the entire table.
 
+- Reference: [Batch vs epoch](https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/)
+
 Notes:  
-- https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/
 
 ---
 
@@ -325,14 +338,8 @@ Notes:
 
 - batch-1 = 4, batch-2 = 4, batch-3 = 2
 
-
-| Batch Size                            | Algorithm                    | Description                                        |
-|---------------------------------------|------------------------------|----------------------------------------------------|
-| Size of Training Set                  | Batch Gradient Descent       | All data goes in a single batch                    |  
-| 1                                     | Stochastic Gradient Descent  | Each batch has one data sample                     |  
-| 1 < batch size < size of training set | Mini-Batch Gradient Descent. | Batch size is usually power of 2 (32, 64, 128...)  |  
-
-<!-- {"left" : 0.16, "top" : 4.29, "height" : 2.46, "width" : 9.93, "columnwidth" : [2.88, 3.74, 3.31]} -->
+<!-- todo shiva -->
+<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" style="width:100%;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
 
 
 
@@ -346,7 +353,7 @@ Notes:
 
  * For each epoch, we will need to run `iteration` amount of times to pass the whole data through the network
 
-```
+```text
 # think like a nested loop
 
 for e  in number_of_epochs {
@@ -362,15 +369,18 @@ for e  in number_of_epochs {
 
 ## Epoch / Batch size / Iterations
 
- * We have 10 data points
 
- * Batch size is 4
+| Batch Size                            | Algorithm                    | Description                                        |
+|---------------------------------------|------------------------------|----------------------------------------------------|
+| Size of Training Set                  | Batch Gradient Descent       | All data goes in a single batch                    |  
+| 1                                     | Stochastic Gradient Descent  | Each batch has one data sample                     |  
+| 1 < batch size < size of training set | Mini-Batch Gradient Descent. | Batch size is usually power of 2 (32, 64, 128...)  |  
 
- * Iterations = 10 / 4 = 3 (round up!)
+<!-- {"left" : 0.16, "top" : 4.29, "height" : 2.46, "width" : 9.93, "columnwidth" : [2.88, 3.74, 3.31]} -->
 
+
+<!-- todo shiva -->
 <img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" style="width:100%;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
-
-
 ---
 ## Determining Optimal Values or Batch Size / Epochs
 
@@ -385,6 +395,31 @@ for e  in number_of_epochs {
  * There is no magic formula to calculate the optimal values of batch size and epoch
     - In practice, we try a few runs to figure out optimal  values
 
+---
+
+# Designing Neural Networks
+
+---
+
+## Neural Network Components
+
+<!-- todo shiva -->
+
+<img src="../../assets/images/deep-learning/neural-network-components-1.png" style="width:75%;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
+
+---
+
+## Neural Network Components
+
+<img src="../../assets/images/deep-learning/neural-network-components-1.png" style="width:50%;float:right;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
+
+* For each layer, we define **number of neurons** and **activation function**
+
+* **Activation functions**: Determine the output each neuron
+
+* **Loss functions**: We try to minimize the error/loss
+
+* **Optimizers**: Helps with training the network
 
 ---
 
@@ -393,6 +428,7 @@ for e  in number_of_epochs {
 [../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md](../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions)
 
 ---
+
 # Loss Functions for Classifications
 
 [../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md](../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Classifications)
@@ -527,7 +563,11 @@ to tune only one hyperparameter, tune the learning rate."_ - Page 429, Deep Lear
 
 # Optimizers
 
-[Optimizers](DL-Optimizers.md)
+[Optimizers](DL-Optimizers.md#Optimizers)
+
+---
+
+# Let's Practice !
 
 ---
 
@@ -552,6 +592,8 @@ Notes:
 ---
 
 # Part 2: Advanced Concepts
+
+Cover as necessary
 
 ---
 
@@ -916,3 +958,9 @@ These default values should get you started, and should work well in most scenar
 by  Aurélien Géron (ISBN: 9781492037347)
 
 <img src="../../assets/images/books/neural-networks-and-deep-learning-9781492037347.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 3.92, "top" : 3.01, "height" : 3.63, "width" : 2.4} -->
+
+---
+
+# Appendix: Optimizers
+
+[Optimizers](DL-Optimizers.md#Appendix-Optimizers)
