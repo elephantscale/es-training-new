@@ -368,7 +368,7 @@ keras.layers.Dense(
 ```python
 ## Usage
 
-from keras.layers import Dense
+from tensorflow.keras.layers import Dense
 
 # has 32 neurons
 # Takes input array of shape [*,16]
@@ -399,7 +399,7 @@ keras.layers.Dropout(rate, noise_shape=None, seed=None)
 ```python
 ## Usage
 
-from keras.layers import Dropout
+from tensorflow.keras.layers import Dropout
 
 d = Dropout(rate = 0.1,seed=100)
 ```
@@ -1426,8 +1426,8 @@ print ("y_test.shape : ", y_test.shape)
 <img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 7.7, "top" : 4.26, "height" : 3.89, "width" : 1.6} -->
 
 ```python
-from keras.models import Sequential
-from keras.layers import Dense
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
 
 model = Sequential()
 model.add(Dense(8, input_dim=4, activation='relu'))
@@ -2059,7 +2059,7 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 # ~~~~~~~~~
 
 # or Customize
-from keras.optimizers import SGD
+from tensorflow.keras.optimizers import SGD
 sgd = SGD(lr=0.01,
           decay=1e-6,
           momentum=0.9,
@@ -2088,7 +2088,7 @@ model.compile(optimizer='adagrad', ...)
 # ~~~~~~~~~
 
 # or Customize
-from keras.optimizers import Adagrad
+from tensorflow.keras.optimizers import Adagrad
 adagrad = keras.optimizers.Adagrad(lr=0.01,
                                    epsilon=None,
                                    decay=0.0)
@@ -2116,7 +2116,7 @@ model.compile(optimizer='rmsprop', ...)
 # ~~~~~~~~~
 
 # or customize
-from keras.optimizers import RMSprop
+from tensorflow.keras.optimizers import RMSprop
 rmsprop = keras.optimizers.RMSprop(lr=0.001,
                                    rho=0.9,
                                    epsilon=None,
@@ -2143,7 +2143,7 @@ model.compile(optimizer=rmsprop, ...)
 model.compile(optimizer='adam', ...)
 
 # or customize
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 adam = keras.optimizers.Adam(lr=0.001,
                              beta_1=0.9,
                              beta_2=0.999,

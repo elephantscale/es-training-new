@@ -5,7 +5,7 @@
 ## Optimizers Overview
 
 <!-- todo shiva -->
-<img src="../../assets/images/deep-learning/neural-network-components-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
 
 - **Optimizers** help determine weights during training phase
 
@@ -28,7 +28,7 @@
 
 * The first part covers popular optimizers and how to use them
 
-* The math for optimizers can be found in the 'appendix' section (provided as reference only)
+* The math for optimizers can be found in the 'appendix' section (provided as reference; not covered in class)
 
 ---
 ## Understanding Optimizers: A Golf Game Analogy  :-)
@@ -83,7 +83,7 @@
 
 ## Popular Optimziers
 
-<img src="../../assets/images/deep-learning/neural-network-components-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
 
 * There are various optimizer implementations;  We will focus on 3 most popular ones
 
@@ -143,7 +143,7 @@ Notes:
 * [Lecture by Andrew Ng](https://www.youtube.com/watch?v=_e-LFe_igno)
 
 - References:
-  - [Class notes](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
+  - [Class notes for 'lecture 6'](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
   - [A Look at Gradient Descent and RMSprop Optimizers](https://towardsdatascience.com/a-look-at-gradient-descent-and-rmsprop-optimizers-f77d483ef08b)
 
 
@@ -245,10 +245,15 @@ Notes:
 - https://imgur.com/a/Hqolp
 
 ---
+
 ## Optimizers - Takeaway
 
 <!-- TODO shiva -->
 <img src="../../assets/images/deep-learning/3rd-party/optimizers-summary-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+
+- Here we see the progress of our algorithm accuracy (climbing towards 1.0 or 100%)
+
+- SGD's progress is 'bumpy'; While rmsprop and adam are progressing smoothly
 
 - __RMSProp__ and __Adam__ are the 'go to' optimizers now
 
@@ -453,4 +458,3 @@ Notes:
 
 - [Animations of various optimizers](http://www.denizyuret.com/2015/03/alec-radfords-animations-for.html)
 
----
