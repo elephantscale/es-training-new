@@ -1,4 +1,6 @@
-# Deep Learning Teaching Outline - 3 days -- Sujee
+# Instructor Guide: Deep Learning Teaching Outline 
+
+## Timing Guide
 
 ## day 1
 
@@ -10,22 +12,21 @@
     (point out learning rate of brain vs. CPU vs. GPU around 50 second mark)
     - Google Deep Mind - ATARI - https://www.youtube.com/watch?v=V1eYniJ0Rnk
     - save other videos for later
--  ---lunch---
 - Lab setup
+-  ---lunch---
 - TF Intro
-- Keras Intro
-
-------
-
-## day 2
 - DL Neural networks
 - DL Playground
 - video: Nvidia self driving car : https://www.youtube.com/watch?v=0rc4RqYLtEU
-- --- lunch ---
-- DL Concepts
+- DL Concepts (only part 1)
+
+------
+
+## day 2 - lab heavy
+- DL Concepts continued (only part 1)
 - video: open AI Dota game (AI beating human pro teams) : https://www.youtube.com/watch?v=eHipy_j29Xw
-- KEras-2 , Feedforward network
-- Labs : Regressions / Classifications / Metrics
+- Tensorflow API
+- Labs : Regressions / Classifications / Metrics / Callbacks
 
 ## day 3
 - CNN
