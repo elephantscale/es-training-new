@@ -1,4 +1,4 @@
-# Building Cloud Solutions for Machine Learning (CSML)
+# Building Cloud Solutions for Machine Learning (CML)
 
 © Elephant Scale
 
