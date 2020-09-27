@@ -1,4 +1,4 @@
-# Hadoop with Hive 3
+# Hadoop 3 with Hive 3
 
 © Elephant Scale
 
