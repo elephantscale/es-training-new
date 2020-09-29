@@ -16,21 +16,22 @@
 ../generic/Feature-Engineering.md
 
 
-exit
 
 ## high level overview
 ../generic/Machine-Learning-Primer.md
 
-## Hands on starts
-../generic/Labs-Prep.md
-## ML
-../generic/ML-Concepts-All.md
-
 ## Introducing SciKit Learn
 ../../python/slides/PYTHON-Sklearn2.md
 
+../generic/ML-Concepts-All.md
+
+
 ## Algorithms
 Regressions-Python.md
+
+exit
+
+
 Classifications-Python.md
 Decision-Trees-Python.md
 Unsupervised-Python.md
