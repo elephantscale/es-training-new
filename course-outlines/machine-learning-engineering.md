@@ -5,7 +5,8 @@
 
 ## Overview
 
-Machine Learning is all the rage today.  Most ML courses focus on building models.  How ever, taking the ML models to production, involves quite a bit of extra work, as illustrated diagram below.
+Machine Learning is all the rage today.  Most ML courses focus on building models.  However, taking the ML models to production 
+involves quite a bit of extra work, as illustrated in the diagram below.
 
 This course will teach **Machine Learning Engineering** - the process of productionizing, monitoring and managing ML models.
 
@@ -48,8 +49,8 @@ Lectures and hands*on labs. (50%, 50%)
 
 * Some knowledge in Machine Learning or Deep Learning is highly recommended
   - You may take one of these courses: **'Machine Learning  in Python'**, **'Deep Learning'**
-* Some basic knowledge of Python is highly recommended.  
-  Our labs utilize Python language.  But Python is a very easy language to learn. So even you don't have previous exposure to Python, you will be able to complete the labs.
+* Some basic knowledge of Python is helpful  
+  Our labs utilize Python language. Python is a very easy language to learn. So even you don't have previous exposure to Python, you will be able to complete the labs.
 
 ## Lab environment
 
@@ -139,5 +140,5 @@ Students need to have access to the preferred cloud environment, with appropriat
 
 ### Final Workshop (Time Permitting)
 
-* Attendees will work in groups to implemnet a solution end to end.
+* Attendees will work in groups to implement a solution end to end.
 * They will 'ship' an ML model to the cloud
