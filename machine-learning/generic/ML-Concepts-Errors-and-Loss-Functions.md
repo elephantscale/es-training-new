@@ -310,8 +310,7 @@ https://isaacchanghau.github.io/post/loss_functions/
     - u1: [8,3]
     - u2: [1,9]
 - __Question for class:__
-
-Looking at the matrix, which users __have similar tastes__ ?
+  - Looking at the matrix, which users __have similar tastes__ ?
 
 ---
 
@@ -432,11 +431,11 @@ Looking at the matrix, which users __have similar tastes__ ?
 
 <img src="../../assets/images/formulas-equations/cosine-similarity-1.png" alt="formula-01.png" style="background:white;width:70%" /><!-- {"left" : 1.79, "top" : 6.36, "height" : 2.67, "width" : 6.67} -->
 
-
-
-
-
 Notes:
+
+---
+
+# Summary of Errors / Loss Functions
 
 ---
 
