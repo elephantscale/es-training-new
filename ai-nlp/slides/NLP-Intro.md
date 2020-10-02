@@ -201,7 +201,7 @@ Notes:
 
 ## Recent Advances in NLP
 
-<img src="../../assets/images/deep-learning/history-of-nlp-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 ---
 
@@ -276,7 +276,7 @@ Notes:
 ## Word Embeddings (2013)
 
 <!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 * Machine learning algorithms work with numbers (or vectors)
 
@@ -317,7 +317,7 @@ Notes:
 
 ## Neural Networks and NLP
 
-<img src="../../assets/images/deep-learning/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 * Neural Networks are layers of parallel processing elements, working together to solve very complex tasks
 
@@ -354,7 +354,7 @@ __My mother is very close my sister; she is also very close to my wife__
   - Speech recognition
 
 
-<img src="../../assets/images/deep-learning/sequence-to-sequence-3-nlp.png"  style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
+<img src="../../assets/images/ai-nlp/sequence-to-sequence-3-nlp.png"  style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
 
 ---
 
@@ -378,7 +378,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 ## Attention and Transformers  (2017)
 
-<img src="../../assets/images/deep-learning/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 * In a landmark paper ["Attention is all you need"](https://arxiv.org/abs/1706.03762), researchers from Google, proposed a novel model called **Transformers**
 
@@ -439,7 +439,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 ## Bigger and Bigger Models
 
-<img src="../../assets/images/deep-learning/3rd-party/NLP-model-growth-2.jpg"  style="width:80%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/3rd-party/NLP-model-growth-2.jpg"  style="width:80%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 * [Source](https://developer.nvidia.com/blog/training-bert-with-gpus/)
 
@@ -484,7 +484,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 * And what if we want to run our model on a smaller device (edge device / phone)?  They need to be 'light weight'
 
-<img src="../../assets/images/deep-learning/NLP-model-comparison-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/NLP-model-comparison-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 ---
 
@@ -525,7 +525,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 * For this we need **light weight models** (not the monster models we have just seen)
 
-<img src="../../assets/images/deep-learning/edge-nlp-1.png"  style="width:40%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/edge-nlp-1.png"  style="width:40%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 ---
 
