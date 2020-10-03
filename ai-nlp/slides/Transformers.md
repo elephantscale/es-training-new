@@ -325,6 +325,21 @@ Notes:
 
 ---
 
+## Multi Head Attention
+
+* In the Attention paper (["Attention is all you need"](https://arxiv.org/pdf/1706.03762.pdf)), authors describe **mutli head attention** mechanism
+
+* Basically it is several attention layers run in parallel and their output is joined together
+
+* Essentially it is matrix multiplication and easily parallelizable
+  - GPUs are heavily optimized for matrix multiplications
+
+* References:
+  - [How does the multi-head attention mechanism work in deep learning?](https://www.quora.com/How-does-the-multi-head-attention-mechanism-work-in-deep-learning)
+  - [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
+
+---
+
 ## Attention: Further Reading
 
 * If you are curious about the internals of Attention model, the following are recommended readings
@@ -332,6 +347,126 @@ Notes:
 - [Illustrated Guide to Transformers- Step by Step Explanation](https://towardsdatascience.com/illustrated-guide-to-transformers-step-by-step-explanation-f74876522bc0)
 
 - [Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
+
+---
+
+# Transformers
+
+---
+
+## Onto Transformers
+
+<!-- TODO shiva -->
+
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:35%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+
+* We just looked at the basics of **encoder-decoder** networks and **attention** mechanism
+
+* **Tranformer** architecture builds on these concepts
+
+* Before transformers, we used RNNs to analyze sequence of input
+  - they have to process each word before they can make prediction
+  - Takes multiple steps
+
+* How ever, using the novel **attention** method, a transformer can make a decision in fewer steps
+  - It understands relationships between words in a sentence
+
+---
+
+## Transformer Model
+
+* Let's say we are using a transformer model for machine translation.
+  - Say from english --> spanish
+
+* The english sentence is fed into the model; it produces the output
+
+<img src="../../assets/images/ai-nlp/transformers-1.png" style="width:75%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+
+---
+
+## Transformer Model
+
+* If we unpack the transformer model, we will find it is made up of multiple encoders and decoders
+
+* Reference:
+  - [The Illustrated Transformer by Jay Alammar](http://jalammar.github.io/illustrated-transformer/)
+
+<img src="../../assets/images/ai-nlp/transformers-2.png" style="width:75%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+
+---
+
+## Transformer Model
+
+<img src="../../assets/images/ai-nlp/transformers-3.png" style="width:40%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+
+* As we unpack further, the encoders are a set of encoders;  same with decoders
+
+* The original paper specified 6 encoders and decoders  (there is nothing special about 6, it is something we can change and experiment with)
+
+---
+
+## Transformer Model
+
+* In encoder, the input goes through **attention** layer.  This layer helps encoder look at other words in the sentence
+
+* Decoder has a pretty similar stack.  It has another attention layer in between.  This layer helps decoder focus on relevant words of the input sentence
+
+<img src="../../assets/images/ai-nlp/transformers-4.png" style="width:80%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+
+---
+
+## Transformer in Action
+
+* Let's look at how a transformer functions
+
+* Here is an example:
+  - **`The animal didn't cross the street because it was too tired`**
+
+* What is the second **`it`** referring to?  **`the street`** or **`the animal`**
+  - This is very simple for humans, not so easy for an algorithm
+
+* The **self-attention** mechanism allows the transformer to associate **`it`** with **`animal`**
+  - Even through the word **`animal`** is 'further away' from the word **`street`**
+
+---
+
+## Transformer Full Architecture
+
+<img src="../../assets/images/ai-nlp/3rd-party/transformer-10.png" style="width:30%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+
+* Reference: [Transformer paper](#)
+
+---
+
+## Training Transformers
+
+* So how do we train these monster models?
+
+* To train translation models, we need lot of data of input language and output language
+
+| English                   | Spanish                |
+|---------------------------|------------------------|
+| I am a student            | Soy una estudiante     |
+| I study engineering       | Estudio ingeniería     |
+| I like ice cream          | me gusta el helado     |
+| I like to go to the beach | me gusta ir a la playa |
+
+---
+
+## Training Transformers
+
+* Here we see, after sufficient training, the model can predict the translation
+* You will notice the prediction is a softmax output (total adding up to 1.0)
+
+<img src="../../assets/images/ai-nlp/transformers-5-training.png" style="width:50%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+
+---
+
+## Transformer: Further Reading
+
+* For more detailed explanation see the amazing post [The Illustrated Transformer by Jay Alammar](http://jalammar.github.io/illustrated-transformer/)
+
+* A [video by  Łukasz Kaiser](https://www.youtube.com/watch?v=rBCqOTEfxvg) - One of the authors of Attention paper
 
 ---
 
@@ -360,3 +495,13 @@ Notes:
 * Let's go over what we have covered so far
 
 * Any questions?
+
+---
+
+## Further Reading
+
+* [Deep Learning in Natural Language Processing: History and Achievements](https://blog.exxactcorp.com/deep-learning-in-natural-language-processing-history-and-achievements/)
+
+* [Illustrated Guide to Transformers- Step by Step Explanation](https://towardsdatascience.com/illustrated-guide-to-transformers-step-by-step-explanation-f74876522bc0)
+
+* [Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
