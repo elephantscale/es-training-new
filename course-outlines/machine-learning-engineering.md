@@ -1,17 +1,18 @@
 # Machine Learning Engineering
 
 (c) Elephant Scale  
-2020 Sept 27
+2020 October 05
 
 ## Overview
 
-Machine Learning is all the rage today.  Most ML courses focus on building models.  However, taking the ML models to production 
+Machine Learning and AI are all the rage today.  Most ML courses focus on building models.  However, 
+taking the ML models to production 
 involves quite a bit of extra work, as illustrated in the diagram below.
 
-This course will teach **Machine Learning Engineering** - the process of productionizing, monitoring and managing ML models.
+This course will teach **Machine Learning Engineering** - the process of productizing, monitoring and managing ML model pipelines.
 
-We will use a cloud environment (Google Cloud or Amazon Cloud or Microsoft Cloud) for our deployment.
-
+We will use a cloud environment (Google Cloud or Amazon Cloud or Microsoft Cloud, the choice is up to the client)
+for our deployment.
 
 ![ml-eng-1](images/ml-eng-1.png)\ 
 
@@ -22,7 +23,7 @@ We will use a cloud environment (Google Cloud or Amazon Cloud or Microsoft Cloud
 ## What you will learn:
 
 * ML Engineering overview
-* Overview of the AI capabilities of the Cloud Platform of choice
+* Overview of the AI capabilities for the cloud platform of your choice
 * Storing large data in the cloud
 * Processing large data in the cloud using distributed tools
 * Training models at scale, using GPUs on the cloud
@@ -48,19 +49,19 @@ Lectures and hands*on labs. (50%, 50%)
 ## Prerequisites
 
 * Some knowledge in Machine Learning or Deep Learning is highly recommended
-  - You may take one of these courses: **'Machine Learning  in Python'**, **'Deep Learning'**
+    * (however, an introduction will be provided if needed)  
 * Some basic knowledge of Python is helpful  
-  Our labs utilize Python language. Python is a very easy language to learn. So even you don't have previous exposure to Python, you will be able to complete the labs.
+    * Most ML labs today utilize Python language. Python is an easy language to read. So even you don't have previous exposure to Python, you will be able to complete the labs.
 
 ## Lab environment
 
-Students need to have access to the preferred cloud environment, with appropriate permissions and quotas
+* Students need to have access to the preferred cloud environment, with appropriate permissions and quotas
 
 ### Students will need the following
 
-* A cloud account is required
+* A cloud account is recommended, but alternative arrangements can be provided
 * A reasonably modern laptop
-* Unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
+* Unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly
 
 ## Detailed outline
 
@@ -89,7 +90,7 @@ Students need to have access to the preferred cloud environment, with appropriat
 
 * GPU options in the cloud
 * Training with a GPU
-* Monitoring training using Tensorboard
+* Monitoring training using TensorBoard
 * Early stopping training when desired accuracy is reached
 * Lab: various labs on training
 
@@ -100,39 +101,45 @@ Students need to have access to the preferred cloud environment, with appropriat
 * Serving incoming requests
 * Error handling
 * Running and testing on local environment
+* Lab: training and deploying a model
 
 ### Containerizing the app
 
 * Create a docker file with app artifacts and dependencies
 * Building a docker container
 * Test the container locally
+* Lab: Docker basics
 
 ### Deploying the Container in the Cloud
 
 * Publishing the container to registry
-* Deploy the container using Kubernetees
+* Deploy the container using Kubernetes
 * Testing the deployed application
+* Lab: Kubernetes deployment
 
 ### Monitoring
 
 * Inspecting application logs
 * Monitoring application metrics
 * Setting up alerts
+* Lab: monitoring in the cloud
 
-### Load Testing the application
+### Load-testing the application
 
 * Setting up load testing clients
 * Observing application behavior under load
 * Verifying load balancer
 * Scaling with the load
+Lab: stress-testing an application
 
 ### A/B Testing of Models
 
 * Splitting traffic between different models
 * Observe metrics
 * Picking the best model
+* Lab: Google Anthos deployment
 
-### Updating model
+### Updating your model
 
 * Packaging newer model into a container
 * Performing a rolling update on running containers
