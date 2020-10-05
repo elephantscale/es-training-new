@@ -480,7 +480,7 @@ banaa : [0,  1,  0,  0,  0,  0,  0]
 
 ---
 
-## Issues with Ont Hot Encoding Words
+## Issues with One Hot Encoding Words
 
 * **'Curse of dimensionality'**: As our vocabulary grows, the dimension of vector is going to grow
 
@@ -496,7 +496,7 @@ banaa : [0,  1,  0,  0,  0,  0,  0]
 
 ---
 
-## Issues with Ont Hot Encoding Words
+## Issues with One Hot Encoding Words
 
 <!-- TODO shiva -->
  <img src="../../assets/images/ai-nlp/words-embeddings-1-meaning.png" style="width:50%;float:right;"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->

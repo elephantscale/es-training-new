@@ -146,6 +146,20 @@ I have a cat and a dog as pets.
 
 * **France is to Paris as Germany is to Berlin**
 
+---
+
+## Demo: Explore Word Embeddings
+
+<img src="../../assets/images/ai-nlp/embedding-projector-1.png" style="width:30%;float:right;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
+
+* This is a fun demo to interactively explore word embeddings at work
+* Go to : [projector.tensorflow.org](https://projector.tensorflow.org/)
+* Load **word2vec** model (on the left side)
+* Search for word **fun** on the right hand side
+* Explore 'similar words'
+* Try your own words and explore similar words
+
+<img src="../../assets/images/ai-nlp/embedding-projector-2.png" style="width:45%;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
 
 ---
 
@@ -170,14 +184,11 @@ list of 50 numbers
 ```
 <!-- {"left" : 0, "top" : 3.24, "height" : 1.48, "width" : 10.25} -->
 
-
 - Let's color code the cells based on their values (red if they're close to 2, white if they're close to 0, blue if they're close to -2)
-
 
 <img src="../../assets/images/machine-learning/3rd-party/word2vec-embedding-king-1.png" style="width:85%;"/><!-- {"left" : 0.17, "top" : 6.1, "height" : 1.48, "width" : 9.91} -->
 
 - Reference : http://jalammar.github.io/illustrated-word2vec/
-
 
 Notes:
 
@@ -369,8 +380,11 @@ Notes:
 
 ---
 
+# Backup Slides
 
-## Doc2Vec 
+---
+
+## Doc2Vec
 
 * Word2Vec gives us a vector representation of a word.
 
@@ -421,15 +435,6 @@ Notes:
  * [Demo](https://explosion.ai/demos/sense2vec)
 
  
----
-
-  
-
-
-
-
-# Backup Slides
-
 ---
 
 ## Word2vec Parametrization

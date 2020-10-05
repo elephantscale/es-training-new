@@ -269,13 +269,13 @@ Notes:
 
 ---
 
- ## Parsing And Tagging
+## Parsing And Tagging
 
- * Needs statistical model
- * Predicts which label most likely applies in the context.
- * spaCy encodes all strings to hash values
-    - to reduce memory usage
-    - to improve efficiency
+* Needs statistical model
+* Predicts which label most likely applies in the context.
+* spaCy encodes all strings to hash values
+  - to reduce memory usage
+  - to improve efficiency
 
 ```python
 import spacy
@@ -299,10 +299,8 @@ for token in doc:
 <!-- {"left" : 0, "top" : 3.47, "height" : 4.26, "width" : 9.3} -->
 
 <br/>
-<br/>
-<br/>
 
-- output next slide
+* output next slide
 
 ---
 
@@ -386,6 +384,7 @@ Notes:
 
 
 ---
+
 ## Entity Recognition Sample Code
 
 ```python
@@ -446,17 +445,7 @@ displacy.serve(doc, style="ent", port=9000)
 <img src="../../assets/images/data-analysis-python/spacy-entities-1.png" style="width:90%;" /><!-- {"left" : 0.58, "top" : 6.17, "height" : 0.83, "width" : 9.09} -->
 
 
-
 ---
-
-## Recognized Entities
-
-<!--TODO Sujee-->
-
-https://spacy.io/api/annotation
-
----
-
 
 ##  Similarity
 
@@ -486,8 +475,6 @@ for t1 in doc:
 ```
 <!-- {"left" : 0, "top" : 5.01, "height" : 2.31, "width" : 7.61} -->
 
-<br/>
-<br/>
 <br/>
 
 - Output next slide

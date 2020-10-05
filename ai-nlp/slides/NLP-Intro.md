@@ -304,6 +304,7 @@ Notes:
 * So now we have meaningful vectors!
 
 ---
+
 ## Word Embeddings
 
 <img src="../../assets/images/machine-learning/3rd-party/word2vec-3.png" style="width:55%;float:right;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
@@ -312,6 +313,21 @@ Notes:
 
 * **France is to Paris as Germany is to Berlin**
   - In vector space, the distance between contries and their capitals is same!
+
+---
+
+## Demo: Explore Word Embeddings
+
+<img src="../../assets/images/ai-nlp/embedding-projector-1.png" style="width:30%;float:right;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
+
+* This is a fun demo to interactively explore word embeddings at work
+* Go to : [projector.tensorflow.org](https://projector.tensorflow.org/)
+* Load **word2vec** model (on the left side)
+* Search for word **fun** on the right hand side
+* Explore 'similar words'
+* Try your own words and explore similar words
+
+<img src="../../assets/images/ai-nlp/embedding-projector-2.png" style="width:45%;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
 
 ---
 
@@ -433,7 +449,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 * [Megatron](https://github.com/NVIDIA/Megatron-LM), the latest model from Nvidia has 8.3 billion parameters: 24 times larger than BERT-large, 5 times larger than GPT-2, 
 * [RoBERTa](https://arxiv.org/abs/1907.11692), the latest work from Facebook AI, was trained on 160GB of text
 
-<img src="../../assets/images/deep-learning/3rd-party/NLP-models-growth-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/3rd-party/NLP-models-growth-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 ---
 
