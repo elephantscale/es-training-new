@@ -694,7 +694,7 @@ _COVID-19 is the infectious disease caused by the most recently discovered coron
 * Sample Questions:
   - What is COVID-19?
   - What are symptoms of COVID-19?
-  - Where did CORONA star?
+  - Where did CORONA start?
   - Who requires medical attention?
   - Any of your questions here
 

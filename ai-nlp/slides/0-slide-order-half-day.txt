@@ -3,8 +3,5 @@
 text-analytics-using-machine-learning.pdf
 
 NLP-Intro.md
-Text-Cleanup-and-Prep.md
 ../../python/slides/PYTHON-Text-Spacy.md
-Text-Vectorization.md
-word2vec.md
 Transformers.md
