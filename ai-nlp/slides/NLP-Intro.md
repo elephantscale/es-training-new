@@ -418,7 +418,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 ---
 
-##  Race for Pre-Trained Models
+## Race for Pre-Trained Models
 
 * **BERT by Google** : This started the new wave of enthusiasm for NLP 
 
