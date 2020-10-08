@@ -373,8 +373,7 @@ Notes:
 
 ---
 
-
-## Reinforcement Learning Success Stories
+## Reinforcement Learning: Further Reading
 
 
  * [OpenAI trounces Dota-3 players](https://www.theinquirer.net/inquirer/news/3037135/openais-dota-3-playing-bots-trounce-semi-pro-players)
