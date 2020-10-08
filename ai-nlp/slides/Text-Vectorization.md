@@ -10,14 +10,14 @@
 
 * So we need to convert text into vectors before applying machine learning algorithms
 
- <img src="../../assets/images/machine-learning/word-to-vectors-2.png" style="width:70%"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
+ <img src="../../assets/images/ai-nlp/word-to-vectors-2.png" style="width:70%"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
 
 ---
 
 ## Text Vectorizing Algorithms
 
 * Machine learning based:
-  - CountVectorizer / Document Term Matrix
+  - Bag-of-Words (CountVectorizer / Document Term Matrix)
   - TFIDF
   - Latent Semantic Indexing (LSI)
 
@@ -31,91 +31,30 @@
 
 ---
 
-# Document Term Matrix
+# Bag of Words (BOW)
 
 ---
 
-## Document Term Matrix (DTM)
+
+## Bag of Words (BoW)
 
 
- * DTM is a matrix - describes how terms appear in documents
+* Given we have 3 documents like these
 
- * Rows correspond to documents
-
- * Columns correspond to terms
-
- * It will be a  **sparse**  matrix (not all terms occur on all documents)
-
-     - Libraries need to represent sparse matrix in memory-efficient manner
-
-| Terms -><br/><- documents | brown | dog | black | cat |
-|---------------------------|-------|-----|-------|-----|
-| doc1 | x | x |  |  |
-| doc2 |  |  | x | x |
-
-<!-- {"left" : 0.25, "top" : 4.63, "height" : 1.69, "width" : 9.75} -->
-
-Notes:
-
-
-
----
-
-## Term Document Matrix (TDM)
-
-
- * TDM is transposed DTM
-
- * Rows correspond to terms
-
- * Columns correspond to documents
-
-| Documents -><br/><- Terms | doc1 | doc2 | doc3 |
-|---------------------------|------|------|------|
-| brown | x |  |  |
-| dog | x |  |  |
-| black |  | x |  |
-| cat |  | x |  |
-
-<!-- {"left" : 0.25, "top" : 3.52, "height" : 2.69, "width" : 9.75} -->
-
-Notes:
-
-
-
----
-
-## Document Term Matrix (DTM)
-
-<br/>
-
+<!-- TODO shiva -->
 ```text
-doc-1:
-      The brown cow is sleeping
-```
-<!-- {"left" : 0, "top" : 1.25, "height" : 0.86, "width" : 5.94} -->
+doc-1: The brown cow is sleeping
 
-
-<br/>
-
-```text
-doc-2:
-      The brown dog is near the brown cow
-```
-<!-- {"left" : 0, "top" : 2.64, "height" : 0.86, "width" : 7.61} -->
-
-<br/>
-
-```text
-doc-3:
-      The black cat is sleeping
+doc-2: The brown dog is near the brown cow
+      
+doc-3: The black cat is sleeping
 ```
 <!-- {"left" : 0, "top" : 4.01, "height" : 0.86, "width" : 5.94} -->
 
-- In Document-Term-Matrix (DTM)
-    - We count the word occurrences (frequency) per document
+* We count the word occurrences (frequency) per document
 
-<br />
+* The matrix is ordered by word alphabetic order
+
 
 | Document | black | brown | cat | cow | dog | is | near | sleeping | the |
 |----------|-------|-------|-----|-----|-----|----|------|----------|-----|
@@ -125,9 +64,17 @@ doc-3:
 
 <!-- {"left" : 0.23, "top" : 6.56, "height" : 2, "width" : 9.79, "columnwidth" : [1.59, 1, 0.98, 0.96, 0.79, 0.85, 0.69, 0.8, 1.37, 0.76]} -->
 
+* So the documents are represented in the following vector form
+
+```text
+doc-1 : [0,  1,  0,  1,  0,  1,  0,  1,  1]
+doc-2 : [0,  2,  0,  2,  1,  1,  1,  0,  2]
+doc-3 : [1,  0,  1,  0,  0,  1,  0,  1,  1]
+```
+
 ---
 
-## Document Term Matrix (DTM)
+## Bag of Words
 
 | Document | black | brown | cat | cow | dog | is | near | sleeping | the |
 |----------|-------|-------|-----|-----|-----|----|------|----------|-----|
@@ -137,7 +84,7 @@ doc-3:
 
 <!-- {"left" : 0.23, "top" : 1.18, "height" : 2, "width" : 9.79, "columnwidth" : [1.59, 1, 0.98, 0.96, 0.79, 0.85, 0.69, 0.8, 1.37, 0.76]} -->
 
-- Querying using DTM:   
+- Querying using BoW:   
   Find all documents that have the word **brown**
 
 - Results: doc-1  and doc-2
@@ -147,7 +94,22 @@ Which result do we show first?  doc1 or doc2 ?
 
 ---
 
-## Issues With Document Term Matrix (DTM)
+## Bag of Words Takeaways
+
+* Strengths:
+  * Very simple!
+  * Has been used successfully for a long time for a wide variety of NLP tasks
+
+* Weaknesses :
+  * (see next slides for more details)
+  * High frequency words (like 'the') will pollute the matrix
+    - We can remove these words during pre-processing to alleviate this somewhat
+  * For large corpus the matrix will be very sparse (thousands of columns, one for each word, and only few columns are populated)
+  * Meaning of words is lost
+
+---
+
+## Weakness of BoW: High Frequency Words
 
 | Document | black | brown | cat | cow | dog | is | near | sleeping | the |
 |----------|-------|-------|-----|-----|-----|----|------|----------|-----|
@@ -162,10 +124,35 @@ Which result do we show first?  doc1 or doc2 ?
 - We get all documents: doc-1, doc-2, doc-3
 
 - Most common words will be present in many documents
-    - like stop words (is, the, and ...)
-    - and these will pollute the search results
+  - like stop words (is, the, and ...)
+  - and these will pollute the search results
 
 - TF-IDF can help with this issue
+
+---
+
+## Weakness of BoW: Loss of Meaning
+
+* Let's consider the following text
+
+```text
+Jane runs faster than Dan
+
+Dan runs faster than Jane
+```
+
+* We get the same BoW representation for both sentences;  But the meanings of these are very different
+
+<br/>
+
+| Document | dan | faster | jane | runs | than |
+|----------|-----|--------|------|------|------|
+| doc 1    | 1   | 1      | 1    | 1    | 1    |
+| doc 2    | 1   | 1      | 1    | 1    | 1    |
+
+<br/>
+
+* BoW technique looses the meaning of the words
 
 ---
 
@@ -173,7 +160,7 @@ Which result do we show first?  doc1 or doc2 ?
 
 ---
 
-## Problem: Searching for Relevant Documents
+## Searching for Relevant Documents
 
 
 * We have a collection of text documents (emails / docs)
@@ -229,7 +216,7 @@ Notes:
  * How many times a word occurs in a document
 
 
- ```
+ ```text
   Document 1: the brown dog likes the white cow
 
   Document 2: the grass is brown
@@ -261,7 +248,7 @@ Notes:
 
  * To normalize, divide the term count by total number of words in document
 
-```
+```text
          Number of times term 't' appears in a document
 TF(t) = ------------------------------------------------
          Total number of terms in the document
@@ -328,7 +315,7 @@ Source : http://www.tfidf.com/
 
 ## TF-IDF Example
 
-```
+```text
   Document 1: the brown dog likes the white cow
   Document 2: the grass is brown
   Document 3: the spotted cow likes green grass
@@ -338,9 +325,6 @@ Source : http://www.tfidf.com/
 <img src="../../assets/images/machine-learning//3rd-party/Text-Analytics-TF-IDF-Example-0.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3, "height" : 3.53, "width" : 8.21} -->
 
 
-
-**You can play with the excel spreadsheet**
-
 Notes:
 
 
@@ -349,7 +333,7 @@ Notes:
 
 ## TF-IDF Example
 
-```
+```text
   Document 1: the brown dog likes the white cow
   Document 2: the grass is brown
   Document 3: the spotted cow likes green grass
@@ -448,6 +432,116 @@ Notes:
 
 ---
 
+## Beyond TF-IDF
+
+* In the next sections, we will look at more advanced algorithms
+
+* These are based on neural network (or deep learning)
+  - Word2Vec
+  - Word Embeddings
+  - Transformer models : BERT, ELMO ..etc
+
+---
+
+# Word Embeddings
+
+---
+
+## One Hot Encoding
+
+* Let's convert the following text into vectors using one-hot encoding
+
+<!-- TODO shiva -->
+```text
+I eat an apple and a banana for lunch.
+I have a cat and a dog as pets.
+```
+
+|        | apple | banana | cat | dog | i | lunch | pet |
+|--------|-------|--------|-----|-----|---|-------|-----|
+| apple  | 1     | 0      | 0   | 0   | 0 | 0     | 0   |
+| banana | 0     | 1      | 0   | 0   | 0 | 0     | 0   |
+| cat    | 0     | 0      | 1   | 0   | 0 | 0     | 0   |
+| dog    | 0     | 0      | 0   | 1   | 0 | 0     | 0   |
+| i      | 0     | 0      | 0   | 0   | 1 | 0     | 0   |
+| lunch  | 0     | 0      | 0   | 0   | 0 | 1     | 0   |
+| pet    | 0     | 0      | 0   | 0   | 0 | 0     | 1   |
+
+<br />
+
+* So the vectors look like following:
+
+```text
+
+apple : [1,  0,  0,  0,  0,  0,  0]
+banaa : [0,  1,  0,  0,  0,  0,  0]
+
+```
+
+---
+
+## Issues with One Hot Encoding Words
+
+* **'Curse of dimensionality'**: As our vocabulary grows, the dimension of vector is going to grow
+
+* English language has approximately 1 million words
+
+* For example the novel ['War and Peace' by Tolstoy](https://en.wikipedia.org/wiki/War_and_Peace), has:
+  - 3,110,642 words total
+  - 20,465 unique words
+
+* So if our vocabuluary is 50,000 words, we will have 50,000 x 50,000 matrix (2.5 Billion cells)
+  - Each word will be represented by 1 one, and 49,999 zeros
+  - Very inefficient to store and process in computer memory
+
+---
+
+## Issues with One Hot Encoding Words
+
+<!-- TODO shiva -->
+ <img src="../../assets/images/ai-nlp/words-embeddings-1-meaning.png" style="width:50%;float:right;"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
+
+* **Hard to extract meanings**
+
+* In one hot encoding, each word is encoded in 'isolation'
+
+* It is hard to infer meanings of the words
+
+* Wouldn't be nice if we the encoding took into account, that 
+  - **apple and banana** are similar because they are fruits
+  - and **cat and dog** are similar because they are pets
+
+---
+
+## Creating Better Embeddings
+
+* We saw the short comings of one-hot-encoding
+
+* Modern **word embedding** algorithms overcome these limitations
+
+* Examples:
+  - Word2Vec
+  - GloVe
+
+* We will see these methods in detail in next section
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
+
+---
+
+# Backup Slides
+
+---
+
 # Latent Semantic Indexing (LSI)
 
 ---
@@ -540,23 +634,3 @@ Notes:
   - TF-IDF limitations (thouguh we don't necessarily need to use tf-idf)
 
 ---
-
-## Beyond TF-IDF
-
-* In the next sections, we will look at more advanced algorithms
-
-* These are based on neural network (or deep learning)
-  - Word2Vec
-  - Word Embeddings
-  - Transformer models : BERT, ELMO ..etc
-
----
-
-## Review and Q&A
-
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
-* Let's go over what we have covered so far
-
-* Any questions?

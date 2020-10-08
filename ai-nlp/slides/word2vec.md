@@ -1,9 +1,8 @@
 # word2vec
 
-
 ---
 
-## Before word2vec : Bag of Words
+## Before word2vec: Bag of Words
 
 * NLP systems and techniques treat words as atomic units
 
@@ -11,13 +10,25 @@
 
 * Words are represented as indices in a vocabulary
 
+```text
+I eat an apple and a banana for lunch.
+I have a cat and a dog as pets.
+```
 
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-1.png"  style="width:60%;"/><!-- {"left" : 1.02, "top" : 3.39, "height" : 4.66, "width" : 8.21} -->
-
+|        | apple | banana | cat | dog | i | lunch | pet |
+|--------|-------|--------|-----|-----|---|-------|-----|
+| apple  | 1     | 0      | 0   | 0   | 0 | 0     | 0   |
+| banana | 0     | 1      | 0   | 0   | 0 | 0     | 0   |
+| cat    | 0     | 0      | 1   | 0   | 0 | 0     | 0   |
+| dog    | 0     | 0      | 0   | 1   | 0 | 0     | 0   |
+| i      | 0     | 0      | 0   | 0   | 1 | 0     | 0   |
+| lunch  | 0     | 0      | 0   | 0   | 0 | 1     | 0   |
+| pet    | 0     | 0      | 0   | 0   | 0 | 0     | 1   |
 
 ---
 
-## Advantages of Bag-of-words
+## Strenghts of Bag-of-words
+
 * Simplicity
 
 * Robustness
@@ -30,66 +41,65 @@
     - used for statistical language modeling
     - N-grams trained on virtually all available data (trillions of words)
 
-
 ---
 
-## Limits of Bag-of-words
+## Weakness of BoW: Loss of Meaning
 
-* Biggest problem with bag-of-words
-  - order of words lost
-  - word distance lost
-    - n-grams preserve some order
-    - but become sparse
-* Limited amount of relevant in-domain data
-* Usually dominated by the size of high quality transcribed speech data
-   - often just millions of words
-* Conclusion
-  - Not enough data for simple bag-of-words
-  - (Even though there are enough use cases for them)
+* Let's consider the following text
 
-<img src="../../assets/images/machine-learning/text-bag-of-words-2.png" style="width:70%"/><!-- {"left" : 1.04, "top" : 6.97, "height" : 1.22, "width" : 8.16} -->
+```text
+Jane runs faster than Dan
+
+Dan runs faster than Jane
+```
+
+* We get the same BoW representation for both sentences;  But the meanings of these are very different
+
+<br/>
+
+| Document | dan | faster | jane | runs | than |
+|----------|-----|--------|------|------|------|
+| doc 1    | 1   | 1      | 1    | 1    | 1    |
+| doc 2    | 1   | 1      | 1    | 1    | 1    |
+
+<br/>
+
+* BoW technique looses the meaning of the words
 
 ---
 
 ## Word2vec Goals
+
+<!-- TODO shiva -->
+ <img src="../../assets/images/ai-nlp/words-embeddings-1-meaning.png" style="width:40%;float:right;"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
+
 * Preserve word order (indirectly)
-* Preserve word distance
+
+* Preserve word distance / relationship
   - If two words are close in meaning, then should be represented by vectors that are close
-  - 'Sweden' should be close to 'Norway' but far for 'Thailand'
+  - For example **banana** should be close **apple** but distant from **dog**
 
-
----
-
-## Word2vec History
-
-
-* "Linguistic Regularities in Continuous Space Word Representations", MS, 2013
-  - Tomas Mikolov
-  - Wen-tau Yih
-  - Geoffrey Zweig
-* Using RNN
-
-* This model famously figured out the equation  
-**King - Man + Woman = Queen**
+```text
+I eat an apple and a banana for lunch.
+I have a cat and a dog as pets.
+```
 
 ---
 
-## Word2vec Latest - Google
+## Word2Vec
 
-* High-quality word vectors
-  - From huge data sets
-  - With billions of words
-  - With millions of words in the vocabulary
+* Word2Vec is a statistical method for efficiently learning a standalone word embedding from a text corpus.
 
-* White paper : ["Efficient Estimation of Word Representations in Vector Space", Google, 2013](https://arxiv.org/abs/1301.3781)
-  - Tomas Mikolov,  Kai Chen,   Greg Corrado,  Jeff Dean
-  - What is the best joke about Jeff Dean?  
-   (His resume lists things he has not done, it is shorter this way)
+* It was developed at Google in 2013
+  - by Tomas Mikolov,  Kai Chen,   Greg Corrado,  Jeff Dean
+  - White paper : ["Efficient Estimation of Word Representations in Vector Space", Google, 2013](https://arxiv.org/abs/1301.3781)
+
+* Idea is to use the neural-network-based training to calculate word embeddings
+
+* Word2Vec is a high-quality word vectors
+  - Trained from huge data sets, with billions of words,  with millions of words in the vocabulary
 
 * Google has a patent for Word2Vec.  But they made a version available under commercial friendly Apache-2 license
-
-Notes:
-- Reference : https://arxiv.org/abs/1301.3781
 
 ---
 
@@ -97,22 +107,21 @@ Notes:
 
 - Before we understand word2vec, let's understand vectors and how to measure their similarities
 
-
 ---
 
-##  Cosine Similarity
+## Cosine Similarity
 
 [../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md#Cosine Similarity](../../machine-learning/generic/ML-Concepts-Errors-and-Loss-Functions.md#Cosine Similarity)
 
-
 ---
+
 ## Now Back to Word2vec
 
 * Inputs a large corpus of text (bunch of words)
 * Produces a vector space
   - Typically of several hundred dimensions
   - (Practically between 100 and 1000)
-* word => vector
+* words => vectors
 
 <img src="../../assets/images/machine-learning/word2vec-1.png" style="width:50%;"/><!-- {"left" : 1.39, "top" : 3.79, "height" : 4.45, "width" : 7.47} -->
 
@@ -137,6 +146,20 @@ Notes:
 
 * **France is to Paris as Germany is to Berlin**
 
+---
+
+## Demo: Explore Word Embeddings
+
+<img src="../../assets/images/ai-nlp/embedding-projector-1.png" style="width:30%;float:right;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
+
+* This is a fun demo to interactively explore word embeddings at work
+* Go to : [projector.tensorflow.org](https://projector.tensorflow.org/)
+* Load **word2vec** model (on the left side)
+* Search for word **fun** on the right hand side
+* Explore 'similar words'
+* Try your own words and explore similar words
+
+<img src="../../assets/images/ai-nlp/embedding-projector-2.png" style="width:45%;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
 
 ---
 
@@ -161,15 +184,13 @@ list of 50 numbers
 ```
 <!-- {"left" : 0, "top" : 3.24, "height" : 1.48, "width" : 10.25} -->
 
-<br/>
-
 - Let's color code the cells based on their values (red if they're close to 2, white if they're close to 0, blue if they're close to -2)
 
 <img src="../../assets/images/machine-learning/3rd-party/word2vec-embedding-king-1.png" style="width:85%;"/><!-- {"left" : 0.17, "top" : 6.1, "height" : 1.48, "width" : 9.91} -->
 
+- Reference : http://jalammar.github.io/illustrated-word2vec/
 
 Notes:
-- Reference : http://jalammar.github.io/illustrated-word2vec/
 
 ---
 
@@ -177,11 +198,11 @@ Notes:
 
 <img src="../../assets/images/machine-learning/3rd-party/word2vec-embedding-king-man-woman-1.png" style="width:85%;"/><!-- {"left" : 0.56, "top" : 1.58, "height" : 3.17, "width" : 9.14} -->
 
-
 - See how 'man' and 'woman' are much close to each other than 'king' ?
 
-Notes:
 - Reference : http://jalammar.github.io/illustrated-word2vec/
+
+Notes:
 
 ---
 
@@ -216,9 +237,9 @@ __`king - man + woman --> queen`__
 
 <img src="../../assets/images/machine-learning/3rd-party/word2vec-king-man-woman-2.png" style="width:55%;"/><!-- {"left" : 1.41, "top" : 3.94, "height" : 2.78, "width" : 7.43} -->
 
+- Reference : http://jalammar.github.io/illustrated-word2vec/
 
 Notes:
-- Reference : http://jalammar.github.io/illustrated-word2vec/
 
 ---
 
@@ -226,11 +247,11 @@ Notes:
 
 - Here you can see, when we add / substract vectors, the resulting vector of __(King - Man + Woman)__ is remarkably similar to __Queen__ !
 
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-king-man-woman-3.png" style="width:85%;"/><!-- {"left" : 1.25, "top" : 2.93, "height" : 3.88, "width" : 7.75} -->
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-king-man-woman-3.png" style="width:80%;"/><!-- {"left" : 1.25, "top" : 2.93, "height" : 3.88, "width" : 7.75} -->
 
+- Reference : http://jalammar.github.io/illustrated-word2vec/
 
 Notes:
-- Reference : http://jalammar.github.io/illustrated-word2vec/
 
 ---
 
@@ -240,7 +261,6 @@ Notes:
 - Words are input, vectors are output
 
 <img src="../../assets/images/machine-learning/3rd-party/word2vec-5.png" style="width:80%;"/><!-- {"left" : 0.8, "top" : 3, "height" : 3.64, "width" : 8.21} -->
-
 
 ---
 
@@ -256,6 +276,7 @@ Notes:
 - Number of neurons in output layer will match number of words (if 10,000 input words --> 10,000 output neurons)
 
 ---
+
 ## How word2vec Model is Created
 
 * Two general approaches are used
@@ -266,6 +287,7 @@ Notes:
 ---
 
 ## Continuous bag-of-words (CBOW)
+
 * The model predicts the current word
   - From a window of surrounding context words
 
@@ -281,10 +303,10 @@ Notes:
 
 * [original word2vec white paper](https://arxiv.org/pdf/1301.3781.pdf)
 
-
 ---
 
 ## Continuous Skip-gram
+
 * Sort of opposite of 'Continuous Bag of Words'
 
 * The model uses the current word
@@ -317,7 +339,6 @@ Notes:
     - [1](http://jalammar.github.io/illustrated-word2vec/)
     - [2](https://www.quora.com/What-are-the-continuous-bag-of-words-and-skip-gram-architectures)
     - [3](https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/)
-
 
 ---
 
@@ -359,27 +380,38 @@ Notes:
 
 ---
 
-
-## Doc2Vec 
- * Word2Vec gives us a vector representation of a word.
- * But what about a **document**?
- * Word2vec is not really suitable for anything but the smallest documents (e.g. tweets)
- * Because it will store 100-1000 dimensional vector for each word!
-   - too much information!
- * On eSolution is Paragraph Vectors (PV) better known as Doc2Vec
- * Published by Quoc Le and Tomas Mikolov from Google (as Paragraph Vectors)
- * [Link](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
-
+# Backup Slides
 
 ---
 
+## Doc2Vec
+
+* Word2Vec gives us a vector representation of a word.
+
+* But what about a **document**?
+
+* Word2vec is not really suitable for anything but the smallest documents (e.g. tweets)
+
+* Because it will store 100-1000 dimensional vector for each word!
+  - too much information!
+
+* One solution is Paragraph Vectors (PV) better known as Doc2Vec
+
+* Published by Quoc Le and Tomas Mikolov from Google (as Paragraph Vectors)
+
+* [Link](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
+
+---
 
 ## Deep Learning Approaches
-  * Sometimes we use a deep learning approach instead of PV/Doc2Vec
-  * Treat the paragraph / document as a sequence of the word vectors
-  * Then use a neural network to create a document vector from the word vector
-  * THe advantage of htis is that you can make a neural network very well-tuned to your particular problem and dataset.
- 
+
+* Sometimes we use a deep learning approach instead of PV/Doc2Vec
+
+* Treat the paragraph / document as a sequence of the word vectors
+
+* Then use a neural network to create a document vector from the word vector
+
+* The advantage of this is that you can make a neural network very well-tuned to your particular problem and dataset.
 
 ---
 
@@ -403,15 +435,6 @@ Notes:
  * [Demo](https://explosion.ai/demos/sense2vec)
 
  
----
-
-  
-
-
-
-
-# Backup Slides
-
 ---
 
 ## Word2vec Parametrization

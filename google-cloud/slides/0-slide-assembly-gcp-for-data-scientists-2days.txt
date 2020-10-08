@@ -7,9 +7,8 @@
 ## About
 About-Google-Cloud-for-Data-Scientist-Class-2days.md
 
-../../python/slides/Data_Science_Intro.md
-
-../../python/Data-Scientist-Skill-Matrix.xlsx
+# ../../python/slides/Data_Science_Intro.md
+# ../../python/Data-Scientist-Skill-Matrix.xlsx
 
 Google-Cloud-Intro.md
 

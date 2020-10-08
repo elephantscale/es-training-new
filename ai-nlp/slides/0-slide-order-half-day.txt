@@ -1,0 +1,7 @@
+## For generating look at   ./gen.sh
+
+text-analytics-using-machine-learning.pdf
+
+NLP-Intro.md
+../../python/slides/PYTHON-Text-Spacy.md
+Transformers.md

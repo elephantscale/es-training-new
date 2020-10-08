@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 
-## Generate outline
+### ======  regular ============================================
 pandoc ../../course-outlines/AI-for-NLP-Intro.md -o AI-for-NLP-Intro.docx
 pandoc ../../course-outlines/AI-for-NLP-Intro.md -o AI-for-NLP-Intro.pdf
-
-## sujee
 $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    -d 0-slide-order.txt   $@
+### ======  end regular ============================================
 
-## mark
-#$ES_HOME/utils/presentations/slides-assembler.sh slide-order.txt  #@
+
+### ======= half day =======
+# pandoc   ../../course-outlines/donis-marshal/text-analytics-using-machine-learning.md    -o text-analytics-using-machine-learning.pdf
+# pandoc   ../../course-outlines/donis-marshal/text-analytics-using-machine-learning.md    -o text-analytics-using-machine-learning.docx
+# $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    -d 0-slide-order-donis-half-day.txt   $@
+### ======= end half day =======

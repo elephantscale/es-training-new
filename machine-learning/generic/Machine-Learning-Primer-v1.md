@@ -67,7 +67,7 @@ Notes:
 
 # A Brief History of AI
 
-[AI-brief-history-compact.md](AI-brief-history-compact.md)
+[AI-brief-history.md](AI-brief-history.md)
 
 ---
 

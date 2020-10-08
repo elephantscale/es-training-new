@@ -30,19 +30,19 @@ Notes:
     - Answer next slide!
 
 
-| Predicted -->  | A | B |
-|----------------|---|---|
-| Actual A (10)  | ? | ? |
-| Actual B (20)  | ? | ? |
+|               | Predicted A | Predicted B |
+|---------------|-------------|-------------|
+| Actual A (10) | ?           | ?           |
+| Actual B (20) | ?           | ?           |
 
 ---
 
 ## Perfect Confusion Matrix
 
-| Predicted -->  | A  | B  |
-|----------------|----|----|
-| Actual  A (10) | 10 | 0  |
-| Actual B (20)  | 0  | 20 |
+|                | Predicted A | Predicted B |
+|----------------|-------------|-------------|
+| Actual  A (10) | 10          | 0           |
+| Actual B (20)  | 0           | 20          |
 
 
 ---

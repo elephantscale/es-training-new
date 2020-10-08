@@ -14,12 +14,12 @@
 &nbsp;
 &nbsp;
 
-<img src="../../assets/images/generic/3rd-party/terminator-1.jpg" alt="bank-of-america.png" style="width:26%;float:right;"/><!-- {"left" : 6.29, "top" : 5.37, "height" : 2.7, "width" : 3.65} -->
+<img src="../../assets/images/generic/3rd-party/robot-chef-1.jpg" style="width:26%;float:right;"/><!-- {"left" : 6.29, "top" : 5.37, "height" : 2.7, "width" : 3.65} -->
 
  * **Artificial General Intelligence (AGI)**
     - AI can do anything a human can do
     - We are decades or hundreds of years away from this
-    - So no need to worry about killer robots yet :-)
+    - So we need to wait a while for the robot butler :-) 
 
 
 
@@ -64,35 +64,6 @@ Notes:
 
 
 ---
-
-## Data Science
-
-
-<img src="../../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:20%;float:right;"/><!-- {"left" : 7.37, "top" : 1.14, "height" : 2.44, "width" : 2.6} -->
-
- * **Data Science:** Deriving intelligence from data
-
- * For example, a real estate company can use data science to figure out which types of homes to build to maximize profits
-
- * A machine learning algorithm can learn from the past data and predict house prices for new houses coming on market
-
-&nbsp;
-
-| Bedrooms (input 0) | Bathrooms (input 1) | Size (input 2) | Sale Price (in thousands) (we are trying to predict) |
-|--------------------|---------------------|----------------|------------------------------------------------------|
-| 2                  | 0                   | 1499           | 229                                                  |
-| 2                  | 1                   | 1799           | 319                                                  |
-| 4                  | 2                   | 2399           | 599                                                  |
-| 3                  | 1                   | 1999           | 499                                                  |
-| 3                  | 2.4                 | 2199           | 549                                                  |
-
-<!-- {"left" : 0.25, "top" : 5.6, "height" : 3.19, "width" : 9.75, "columnwidth" : [1.61, 1.81, 1.33, 5]} -->
-
-
-Notes:
-
----
-
 
 ## Neural Networks
 
