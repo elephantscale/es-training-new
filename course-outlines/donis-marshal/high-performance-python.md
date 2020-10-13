@@ -18,7 +18,7 @@ In this course, we will teach how to avoid bottlenecks and to write  high perfor
 
 
 ## Duration:
-half day
+Half day
 
 ## Audience:
 Developers, Data analysts, data scientists
@@ -56,7 +56,7 @@ Introductory
 - Dictionaries and Sets
 
 ### Using numpy for fast numeric operations
-- Introduciton to Numpy library
+- Introduction to Numpy library
 - Converting numeric code to Numpy
 
 ### Compiling to native code
