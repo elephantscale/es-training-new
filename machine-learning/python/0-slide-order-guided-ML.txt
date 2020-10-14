@@ -29,10 +29,11 @@
 ## Algorithms
 Regressions-Python.md
 
+Classifications-Python.md
+
 exit
 
 
-Classifications-Python.md
 Decision-Trees-Python.md
 Unsupervised-Python.md
 
