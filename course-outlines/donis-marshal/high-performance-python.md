@@ -51,7 +51,7 @@ Introductory
 - Inspecting memory
 
 ### Efficient search and retrieval on collections
-- Lists / Arrays / Dictionaries
+- Lists, Arrays, and Dictionaries
 - Lists vs Arrays
 - Dictionaries and Sets
 
