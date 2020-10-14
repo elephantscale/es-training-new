@@ -1,8 +1,4 @@
-# Introduction to Machine Learning
-
-<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:20%;" /> &nbsp;  &nbsp;<!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
-<img src="../../assets/images/logos/python-logo-1.png" style="width:40%;" /><!-- {"left" : 6.26, "top" : 6.96, "height" : 0.81, "width" : 3.39} -->
-
+# High Performance Python
 
 ---
 
@@ -240,5 +236,16 @@ Notes:
 
 ---
 
+## Acknowledgement
+
+* We are grateful for the guidance offered by this book
+
+“High Performance Python, 2nd ed., by Micha Gorelick and Ian Ozsvald (O’Reilly). Copyright 2020 MichaGorelick and Ian Ozsvald, 978-1-492-05502-0.”
+
+and we recommend it to our students
+
+---
+
+* Instructor's contact
 
 ## Let's Get Started!
