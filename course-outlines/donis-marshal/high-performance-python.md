@@ -21,7 +21,7 @@ In this course, we will teach how to avoid bottlenecks and to write  high perfor
 Half day
 
 ## Audience:
-Developers, Data analysts, data scientists
+Developers, data analysts, data scientists
 
 ## Skill level
 Introductory
