@@ -1,5 +1,5 @@
 
-# Introduction to AI, AI Programming and Machine Learning 
+# Introduction to AI and  Machine Learning 
 
 
 ---

@@ -146,7 +146,7 @@ Notes:
 
 * I have 2 possible formulas (there may be more)
 
-* **`Y = 2X + 1`**
+* **`Y = 3X - 1`**
 
 * **`Y = X^2 + 1`**
 
