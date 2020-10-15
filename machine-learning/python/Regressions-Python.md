@@ -57,11 +57,16 @@ tip_data = pd.DataFrame({'bill' : [50.00, 30.00, 60.00, 40.00, 65.00, 20.00, 10.
                         'tip' : [12.00, 7.00, 13.00, 8.00, 15.00, 5.00, 2.00, 2.00, 3.00, 4.00]})
 x = tip_data[['bill']]
 y = tip_data[['tip']]
-# train
-model = LinearRegression(x,y).fit()
+
+# model and train
+lr  = LinearRegression()
+model = lr.fit(x,y)  # < -- this is the training step 
 
 # predict
-test_data_pd['predicted_tip'] = model.predict(y)
+predictions = model.predict(x)
+
+# pretty print
+test_data_pd['predicted_tip'] =  predictions
 test_data
 ```
 <!-- {"left" : 0, "top" : 1.48, "height" : 2.12, "width" : 10.25} -->

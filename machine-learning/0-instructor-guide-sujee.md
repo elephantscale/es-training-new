@@ -5,7 +5,6 @@
 ### day 1
 - administer PRE test
 
-
 - ML Primer - 1hr
   - start with a Overview video
         - Google's view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
@@ -30,18 +29,26 @@
 
 - Data Exploration + lab - 1hr
 
-- Spark ML + lab - 45 min
+- Feature Engineering
+
+- ML Concepts
+
+## day 2 :
+
+- Spark ML or ScikIt
     demo
         - Deep Mind Alpha Go : https://www.youtube.com/watch?v=9xlSy9F5WtE
 
-## day 2 :
 - linear regression
         - GAN generating images  - https://www.fastcompany.com/90244767/see-the-shockingly-realistic-images-made-by-googles-new-ai
         - other GAN images : https://twitter.com/OriolVinyalsML/status/1046059308880941058
+
+- -- LUNCH ---
+
 - logistic regression
     demo :
         - Boston dynamics robots : https://www.youtube.com/watch?v=8vIT2da6N_o
-- -- LUNCH ---
+
 - SVM
     demo :
         - Google Assistant making calls : https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html
