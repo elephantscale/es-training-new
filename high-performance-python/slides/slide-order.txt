@@ -1,4 +1,5 @@
 ## to generate slides
 ##  $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
 
-./About-High-Performance-Class.md
+./About-High-Performance-Python-Class.md
+./High-Performance-Python.md
