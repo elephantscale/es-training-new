@@ -31,6 +31,200 @@ is a very small fraction of the program.
     
     
 ---
-    
+## Designing your application
+* First, write your code without bothering with small optimizations:
 
+*"Premature optimization is the root of all evil."*
+- Donald Knuth
+
+---
+
+## Code-optimizing mantras
+* Make it run
+    * Produces the correct results
+* Make it right
+    * Solid design
+* Make it fast
+    * Now focus on performance optimization
     
+---
+## Design a simulator
+![](artwork/particle-motion.png)
+
+---
+
+## One particle
+![](artwork/one-particle.png)
+
+---
+
+## Particle class
+```python
+    class Particle: 
+        def __init__(self, x, y, ang_vel): 
+            self.x = x 
+            self.y = y 
+            self.ang_vel = ang_vel
+```
+---
+
+## Make particles rotate
+
+```text
+    v_x = -y / (x**2 + y**2)**0.5
+
+    v_y = x / (x**2 + y**2)**0.5
+```
+---
+
+## Simulator explained
+
+1. Calculate the direction of motion ( v_x and v_y).
+1. Calculate the displacement (d_x and d_y), which is the product of time step, angular velocity, and direction of motion.
+1. Repeat steps 1 and 2 for enough times to cover the total time t.
+
+---
+
+## Particle simulator (pseudo code)
+```python
+    class ParticleSimulator: 
+        def __init__(self, particles): 
+            self.particles = particles 
+        def evolve(self, dt): 
+            timestep = 0.00001 
+            nsteps = int(dt/timestep) 
+     
+            for i in range(nsteps):
+                for p in self.particles:
+                    # 1. calculate the direction 
+                    # 2. calculate the displacement 
+                    # 3. repeat for all the time steps
+```
+---
+## Visualize the motion plan
+1. Set up the axes
+    * use the plot function to display the particles
+1. Write an initialization function
+1. Create a FuncAnimation instance 
+1. Run the animation with `plt.show()`
+
+---
+
+## Visualize the motion - pseudo code
+```python
+def visualize(simulator): 
+        X = [p.x for p in simulator.particles] 
+        Y = [p.y for p in simulator.particles] 
+
+        fig = plt.figure() 
+        ax = plt.subplot(111, aspect='equal') 
+        line, = ax.plot(X, Y, 'ro') 
+
+        def init(): 
+
+        def animate(i): 
+            simulator.evolve(0.01) 
+            X = [p.x for p in simulator.particles] 
+            Y = [p.y for p in simulator.particles] 
+
+            line.set_data(X, Y) 
+            return line, 
+
+        anim = animation.FuncAnimation(... 
+        plt.show()
+```
+---
+## Test visualize
+```python
+    def test_visualize(): 
+        particles = [Particle(0.3, 0.5, 1), 
+                     Particle(0.0, -0.5, -1), 
+                     Particle(-0.1, -0.4, 3)] 
+
+        simulator = ParticleSimulator(particles) 
+        visualize(simulator) 
+
+    if __name__ == '__main__': 
+        test_visualize()
+```
+---
+
+## Lab
+* Run the code design lab
+
+`python-high-performance-labs/modeling`
+
+* Observe the motion of the particles
+
+---
+    
+## Writing tests and benchmarks
+* Optimizing a program is hard 
+    * commonly requires employing multiple strategies
+    * bugs may easily be introduced
+     
+* We need a solid test suite
+    * ensure that the implementation is correct at every iteration
+    
+---
+
+## Our test
+
+* Take three particles
+* Simulate them for 0.1 time units
+* compare the results with those from a reference implementation
+* To test `evolve` we will write `test_evolve`
+
+---
+
+## Test evolve code 
+```python
+    def test_evolve(): 
+        particles = [Particle( 0.3,  0.5, +1), 
+                     Particle( 0.0, -0.5, -1), 
+                     Particle(-0.1, -0.4, +3)] 
+
+        simulator = ParticleSimulator(particles) 
+
+        simulator.evolve(0.1) 
+
+        p0, p1, p2 = particles 
+
+        def fequal(a, b, eps=1e-5): 
+            return abs(a - b) < eps 
+
+        assert fequal(p0.x, 0.210269) 
+        # more tests here
+
+    if __name__ == '__main__': 
+        test_evolve()
+```    
+    
+---
+
+## Benchmarking plan
+* representative benchmark
+    * instantiate a thousand Particle objects
+    * with random coordinates and angular velocity
+    * feed them to a ParticleSimulator class
+     
+* let the system evolve for 0.1 time units
+
+## Benchmark code
+```python
+from random import uniform 
+
+    def benchmark(): 
+        particles = [Particle(uniform(-1.0, 1.0), 
+                              uniform(-1.0, 1.0), 
+                              uniform(-1.0, 1.0)) 
+                      for i in range(1000)] 
+
+        simulator = ParticleSimulator(particles) 
+        simulator.evolve(0.1) 
+
+    if __name__ == '__main__': 
+        benchmark()
+```
+
+---
