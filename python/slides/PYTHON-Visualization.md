@@ -748,7 +748,7 @@ sns.heatmap(flights, annot=True, fmt="d", linewidths=.5, ax=ax)
 ---
 
 
-# Other Visualiztion
+# Other Visualization
 
 ---
 
