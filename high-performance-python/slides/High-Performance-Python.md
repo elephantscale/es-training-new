@@ -72,8 +72,8 @@ is a very small fraction of the program.
 
 ```text
     v_x = -y / (x**2 + y**2)**0.5
-
     v_y = x / (x**2 + y**2)**0.5
+
 ```
 ---
 
@@ -226,5 +226,77 @@ from random import uniform
     if __name__ == '__main__': 
         benchmark()
 ```
+
+---
+## Lab
+* Run the testing lab
+
+`python-high-performance-labs/testing`
+
+---
+
+## Timing your benchmark
+```shell script
+$ time python <your-program>
+```
+* You will get something like
+```text
+real    0m1.051s
+user    0m1.022s
+sys     0m0.028s
+```
+
+---
+## 'time' command output
+* real: 
+    * The actual time spent running the process from start to finish
+* user: 
+    * The cumulative time spent by all the CPUs during the computation
+* sys: 
+    * The cumulative time spent by all the CPUs during system-related tasks
+    
+* Note
+    * `user` + `sys` might be greater than `real`
+    
+---
+
+## timeit
+* `timeit` module runs a snippet of code in a loop
+* for n times
+* measures the total execution times
+* repeats the same operation r times 
+    * (by default, the value of r is 3) 
+* records the time of the best run
+
+---
+## IPython
+* IPython is a Python shell
+* Improves the interactivity of the Python interpreter
+* Can run as Jupyter Notebook
+
+---
+## Lab
+* Run the timing lab
+
+`python-high-performance-labs/timing`
+
+---
+## Finding bottlenecks with cProfile
+*
+*
+*
+
+---
+
+## Optimizing our code
+*
+*
+*
+---
+
+## Lab
+* Run the profiling lab
+
+`python-high-performance-labs/profiling`
 
 ---
