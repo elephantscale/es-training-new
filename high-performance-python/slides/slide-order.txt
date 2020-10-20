@@ -3,3 +3,4 @@
 
 ./About-High-Performance-Python-Class.md
 ./High-Performance-Python.md
+../../python/slides/PYTHON-Visualization.md

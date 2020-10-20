@@ -1,4 +1,4 @@
-# Machine Learning
+# Python High Performance
 
 ## To generate slides
 Execute these from within 'es-reveal-md' docker

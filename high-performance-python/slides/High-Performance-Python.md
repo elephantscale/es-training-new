@@ -24,7 +24,7 @@ is a very small fraction of the program.
     * detects the functions in which your application spends most of its time.
 
 * Python profiling tools
-    * cProfile module
+    * **cProfile** module
     * line_profiler third-party package
     * memory_profiler 
     * KCachegrind to graphically display the data produced by various profilers
