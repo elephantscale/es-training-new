@@ -1,13 +1,31 @@
-# High Performance Python
+# High-Performance Python
 
 ---
+## Introduction
 
+* The Python programming language has seen a huge surge in popularity in recent years
+
+* However, the reference Python interpreter, CPython, is generally regarded as inefficient when compared to lower-level languages
+
+* Over the years, many strategies have been developed to overcome CPython's performance shortcomings. 
+    * This course aims to fill this gap 
+    * Achieve strong performance out of your Python programs
+
+![](artwork/hanging.png)
+
+Notes:
+
+Python is easy to learn. 
+You’re probably here because now that your code runs correctly, you need it to run faster. You like the fact that your code is easy to modify and you can iterate with ideas quickly. The trade-off between easy to develop and runs as quickly as I need is a well-understood and often-bemoaned phenomenon. There are solutions.    
+
+---
+    
 ## Benchmarking and Profiling
 
 * Recognizing the slow parts of your program 
     * the single most important task for speeding up your code
  
- * In most cases, the code that causes the application to slow down
+* In most cases, the code that causes the application to slow down
 is a very small fraction of the program. 
 
 * Locating those critical sections and focus on the parts that need improvement 
@@ -37,6 +55,7 @@ is a very small fraction of the program.
 *"Premature optimization is the root of all evil."*
 - Donald Knuth
 
+![](artwork/Donald_Knuth_1965.png)
 ---
 
 ## Code-optimizing mantras
@@ -81,7 +100,7 @@ is a very small fraction of the program.
 
 1. Calculate the direction of motion ( v_x and v_y).
 1. Calculate the displacement (d_x and d_y), which is the product of time step, angular velocity, and direction of motion.
-1. Repeat steps 1 and 2 for enough times to cover the total time t.
+1. Repeat steps 1 and 2 enough times to cover the time t.
 
 ---
 
@@ -154,7 +173,6 @@ def visualize(simulator):
 
 `python-high-performance-labs/modeling`
 
-* Observe the motion of the particles
 
 ---
     
@@ -272,6 +290,7 @@ sys     0m0.028s
 ## IPython
 * IPython is a Python shell
 * Improves the interactivity of the Python interpreter
+* (We will try it in the "timing" lab)
 * Can run as Jupyter Notebook
 
 ---
@@ -282,21 +301,89 @@ sys     0m0.028s
 
 ---
 ## Finding bottlenecks with cProfile
-*
-*
-*
+
+* The `profile` module
+    * written in pure Python 
+    * adds a significant overhead to the program execution
+* The `cProfile` module
+    * the main profiling module
+    * interface equivalent to profile
+    * written in C, has a small overhead
+    * suitable as a general purpose profiler.
+
+---
+## cProfile
+   
+* cProfile module can be used in three different ways:   
+    *   From the command line
+    *   As a Python module
+    *   With IPython
+
+* Basic use
+
+```text
+$ python -m cProfile simul.py
+```
+
+---
+
+## cPython options
+
+* To sort the output
+
+```text
+$ python -m cProfile -s tottime simul.py
+```
+* -o option
+
+```text
+$ python -m cProfile -o prof.out simul.py
+```
+
+*  The format that cProfile uses is readable by the stats module and other tools
+
+--- 
+
+
+## Reading profile info with KCachegrind
+* Generate output info
+
+```text
+$ python -m cProfile -o prof.out taylor.py
+```
+* convert the output file with pyprof2calltree and launch KCachegrind
+```text
+$ pyprof2calltree -i prof.out -o prof.calltree
+$ kcachegrind prof.calltree 
+```
+
+---
+## Output of KCachegrind
+![](artwork/profile-output.png)
 
 ---
 
 ## Optimizing our code
-*
-*
-*
+* For most remarkable results, improve the algorithms used
+    * (We will change the way we calculate particle positions)
+* Minimizing the number of instructions by changing the order
+* Efficient use of Python structures
+
 ---
+
+## What is next in optimization?
+
+* Additional ways to address code optimization with include
+    * Computational complexity
+    * Working with Lists and deques
+    * Using Dictionaries
+    * Sets
+    * Heaps and priority queues
+    * Use caching
+    * Memory optimization
+* What is your favorite Python optimization?    
 
 ## Lab
 * Run the profiling lab
 
 `python-high-performance-labs/profiling`
-
----
