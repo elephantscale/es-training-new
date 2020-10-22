@@ -1,34 +1,33 @@
 # Writing High Performance Python Code
+© Elephant Scale
+October 21, 2020
 
 ## Overview
-Python is a very popular, easy to use  language that is widely used by developers, admins and data scientists.
+Python is a very popular, easy-to-use language that is widely adopted by developers, admins and data scientists.
+However, here be dragons! Many people who pick up Python lack proper coding discipline, which results in code that 
+is hard to maintain and that runs painfully slow.
 
-In this course, we will teach how to avoid bottlenecks and to write  high performance code in Python
-
-## Reference Materials
-["High Performance Python"](https://www.oreilly.com/library/view/high-performance-python/9781449361747/) book by O'Reilly
-
+This course teaches good Python coding discipline, how to avoid bottlenecks and to write  high performance code in Python
 
 ## What you will learn:
+- Well-architected Python project
 - Understand python execution architecture
 - Learn to use profilers to spot bottlenecks
 - Efficient search and retrieval on Collections
 - Using numpy for fast numeric operations
 - Compiling to native code
 
-
 ## Duration:
-Half day
+Half day to a day
 
 ## Audience:
 Developers, data analysts, data scientists
 
 ## Skill level
-Introductory
+Intermediate
 
 ## Prerequisites
-- Basic knowledge of Python language and Jupyter notebooks is recommended.  
-
+- Basic knowledge of Python language is recommended  
 
 ## Lab environment
 - Students will need to have a Python development environment like Anaconda
@@ -41,19 +40,29 @@ Introductory
 
 ## Detailed Course Outline
 
+### Well-structured project
+- Modeling
+- Running
+- Testing
+
+### Profiling and optimization
+- Timing
+- Profiling with CProfiler
+- Optimization
+
 ### Understand Execution Architecture
 - Python's virtual machine
 - Understand CPU/Memory/Cache/Disk
 
-### Use Profilers to find bottlenecks
-- Using timers
-- CProfile
-- Inspecting memory
-
 ### Efficient search and retrieval on collections
-- Lists, Arrays, and Dictionaries
+- Computational complexity
+- Working with Lists and Deques
 - Lists vs Arrays
-- Dictionaries and Sets
+- Using Dictionaries
+- Sets
+- Heaps and priority queues
+- Use caching
+- Memory optimization
 
 ### Using numpy for fast numeric operations
 - Introduction to Numpy library
