@@ -1,0 +1,5 @@
+Spark & GPU support : https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/apache-spark-3/
+
+
+Spark 3 announcement : https://databricks.com/blog/2020/06/18/introducing-apache-spark-3-0-now-available-in-databricks-runtime-7-0.html 
+    has good info on component usage and language usage
