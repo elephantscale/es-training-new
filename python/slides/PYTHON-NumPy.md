@@ -654,7 +654,7 @@ np.array([1,3,5,4,2])[::-1]
 
 # Adding Elements
 v1 = np.array([1,2,3,4])
-v3 = v1.append([5,6,7])
+v3 = np.append(v1, [5,6,7])
 v3
 [1, 2, 3, 4, 5, 6, 7]
 
