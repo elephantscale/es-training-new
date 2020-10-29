@@ -420,11 +420,9 @@ Notes:
 
 <img src="../../assets/images/data-analysis-python/3rd-party/scikit-learn-algorithm-cheatsheet-1.png" style="max-width:80%;" /><!-- {"left" : 1.02, "top" : 2.26, "height" : 5.12, "width" : 8.21} -->
 
-
 ---
 
-
-# SkLearn Mixins
+# SkLearn Mixins (Optional, Reference Only)
 
 ---
 

@@ -101,16 +101,16 @@ Notes:
  * `app.py`: 
 
 ```python
-from flask import Flask  
+from flask import Flask 
 
-app = Flask(__name__)  
+app = Flask(__name__) 
 
 @app.route('/')
 def index():
     return "Hello, World!"
 
 if __name__ == '__main__':
-    app.run(debug=True)  
+    app.run(debug=True) 
 ```
 
 <!-- {"left" : 0, "top" : 1.64, "height" : 3.78, "width" : 5.11} -->
@@ -171,7 +171,7 @@ Notes:
 ## Lab: Building A WebService
 
   * Overview:
-     - Build a web service server and client 
+    - Build a web service server and client
   * Approximate time:
 
     - 1 hr

@@ -19,8 +19,8 @@
 * It's performance is measured on 'test data' (the model hasn't seen 'test data')
 
 <!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/model-testing-4.png" style="width:40%;float:left;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
-<img src="../../assets/images/machine-learning/model-testing-5.png" style="width:40%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
+<img src="../../assets/images/machine-learning/model-testing-4.png" style="width:40%;float:left;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} --> 
+<img src="../../assets/images/machine-learning/model-testing-5.png" style="width:45%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
 
 Notes:
 

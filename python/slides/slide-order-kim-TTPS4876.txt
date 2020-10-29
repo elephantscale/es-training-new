@@ -1,0 +1,32 @@
+## to generate slides
+##   ./gen-custom.sh
+
+## Python Basics
+PYTHON-LanguageBasics.md
+PYTHON-NumPy.md
+PYTHON-Scipy.md
+PYTHON-Pandas.md
+PYTHON-Visualization.md
+
+
+## ML With SciKit
+../../machine-learning/generic/ML-Resources.md
+../../machine-learning/generic/Machine-Learning-Primer.md
+../../machine-learning/generic/Data-Exploration.md
+../../machine-learning/generic/ML-Concepts-All.md
+PYTHON-Sklearn2.md
+../../machine-learning/python/Regressions-Python.md
+../../machine-learning/python/Classifications-Python.md
+../../machine-learning/python/Unsupervised-Python.md
+../../machine-learning/generic/Algorithm-Summary-details.md
+
+## Tensorflow
+../../deep-learning/tf2/Tensorflow-Intro.md
+
+## Spark
+$ES_HOME/es-training/spark/slides/v2/SPARK__Intro.pptx
+$ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-1.pptx
+$ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-2.pptx
+$ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-2.pptx
+../../machine-learning/spark/Spark-ML-Overview.md
+$ES_HOME/es-training/spark/slides/v2/SPARK__Streaming.pptx
