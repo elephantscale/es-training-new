@@ -86,35 +86,31 @@ Notes:
 
 ---
 
-## Python K-Means Code (Python)
+## Python K-Means Code
 
 ```python
- from sklearn.cluster
- import KMeans import pandas as pd
+from sklearn.cluster import KMeans 
+import pandas as pd
 
- dataset = pd.read_csv('mtcars_header.csv')
+dataset = pd.read_csv('mtcars_header.csv')
 
- mpg_cyl = dataset[['model', 'mpg', 'cyl']]
- featureVector = mpg_cyl.iloc[:,1:3].values
+mpg_cyl = dataset[['model', 'mpg', 'cyl']]
+featureVector = mpg_cyl.iloc[:,1:3].values
 
- # Start KMeans with 2 clusters
- kmeans = Kmeans(n_clusters=2, n_init=1)
- model = kmeans.fit(featureVector)
- wssse = model.inertia_
- print(wssse)
- dataset['prediction'] = model.predict(featureVector)
+# Start KMeans with 2 clusters
+kmeans = Kmeans(n_clusters=2)
+model = kmeans.fit(featureVector)
+wssse = model.inertia_
+print(wssse)
+dataset['prediction'] = model.predict(featureVector)
 ```
 <!-- {"left" : 0, "top" : 1.25, "height" : 3.97, "width" : 9.61} -->
 
 Notes:
 
-
-
-
 ---
 
 ## K-Means Run Output
-
 
 
 ```python
