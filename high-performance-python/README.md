@@ -1,21 +1,13 @@
 # Python High Performance
 
-## To generate slides
-Execute these from within 'es-reveal-md' docker
+* This course is usually taught in conjunction with Python Visualization
+* `slide-order.txt` instruction will take care of the slides, but you need to get the labs yourself
 
-```bash
-   $   cd slides;   
+### To generate slides
 
-   # generate md assembly
-   $  ./gen.sh  
+$ES_HOME/utils/presentations/slides-assembler.sh slide-order.txt
 
-   # to generate pdf & pptx
-   $  ./gen.sh  pdf  pptx
-```
+### The labs for the course are here:
 
-## To generate course outline
-
-```bash
-   $    $ES_HOME/utils/presentations/md2docx.sh   machine-learning-with-spark.md
-
-   $    $ES_HOME/utils/presentations/md2docx.sh   machine-learning-with-python.md
+[Labs](https://github.com/elephantscale/python-high-performance-labs)
+[Lab solutions](https://github.com/elephantscale/python-high-performance-labs-solutions)

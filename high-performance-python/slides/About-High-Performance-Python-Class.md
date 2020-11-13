@@ -130,7 +130,7 @@ Notes:
 * We are grateful for the guidance offered by this book
 
 * "Python High Performance - Second Edition" by Gabriele Lanaro. Published by Packt Publishing, 2017
-* by Gabriele Lanaro himself
+* Assistance by Gabriele Lanaro himself
 * We recommend it to our students
 
 ---

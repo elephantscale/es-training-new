@@ -4,20 +4,21 @@ November 8, 2020
 
 
 ## Overview
-Containerization has taken the IT world by storm, in the last few years. Large software houses, starting from Google and Amazon, are running significant portions of their production load in containers.
+* Containerization has taken the IT world by storm, in the last few years. 
+Large software houses, starting from Google and Amazon, are running significant portions of their production load in containers.
+* Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community.
+* The Portworx Enterprise Storage Platform is your end-to-end storage and data management solution for all your Kubernetes projects, including container-based CaaS, DBaaS, SaaS, and Disaster Recovery initiatives. Your apps will benefit from container-granular storage, disaster recovery, data security, multi-cloud migrations and more.
 
-Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community.
-
-This course introduces the students to containers in general, then continues with Kubernetes, its architecture, its use in production, and its best practices.
+This course introduces the students to Portworx and containers in general, then continues with Kubernetes, its architecture, its use in production, and its best practices.
 
 ## What You Will Learn
- * Learn one of the hottest software deployment environment
+ * Learn about Portworx installation, administration, and best practices
  * Docker and Kubernetes concepts and architecture
  * Be able to orchestrate Docker containers with Kubernetes
  * Master practical Kubernetes applications
 
 ## Duration:
-3 days
+3-4 days
 
 ## Audience:
 Developers, architects.
@@ -31,17 +32,23 @@ Developers, architects.
 
 ## Lab environment:
 
-Zero Install : There is no need to install any software on students’ machines! (although it is possible)
+Zero Install: There is no need to install any software on students’ machines! (although it is possible)
 
 ## Detailed Outline:
-
- ### Container Fundamentals (prerequisite, will be covered if needed)
+ 
+### Container Fundamentals (prerequisite, will be covered if needed)
  - Docker Overview
  - Docker Operations
  - Docker use cases
  - CLI tools
  - Health checks
  - Labs
+
+### Introduction to Portworx
+ - Portworx Control Plane
+ - Install Portworx Standalone Mode
+ - Architecture Overview
+ - Lab: Install Portworx on Docker Standalone, PXCTL Introduction 
 
 ### Kubernetes Specific Curriculum
  - Container Review
@@ -52,7 +59,7 @@ Zero Install : There is no need to install any software on students’ machines!
  - Autoscaling
  - Services and Networking
  - Managing State
- - Labs
+ - Labs: Kubernetes, Portworx on Kubernetes
 
 ### Overview of the following concepts for Kubernetes
  - Kubernetes Design Patterns and Stateful Sets
