@@ -1,7 +1,7 @@
 # Machine Learning Engineering
 
 (c) Elephant Scale  
-2020 October 05
+November 22, 2020
 
 ## Overview
 
