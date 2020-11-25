@@ -46,9 +46,8 @@ Tensorflow-Text-Processing.md
 Tensorflow-Text-Generation.md
 
 Transformers.md
-
-## Bert
-BERT.md
+# bert is covered in transformers
+# BERT.md
 ../../docs/deep-learning/BERT-paper.pdf
 ../../docs/deep-learning/Attention_is_all_you_need.pdf
 
