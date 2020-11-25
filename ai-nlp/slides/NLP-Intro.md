@@ -449,7 +449,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 * [Megatron](https://github.com/NVIDIA/Megatron-LM), the latest model from Nvidia has 8.3 billion parameters: 24 times larger than BERT-large, 5 times larger than GPT-2, 
 * [RoBERTa](https://arxiv.org/abs/1907.11692), the latest work from Facebook AI, was trained on 160GB of text
 
-<img src="../../assets/images/ai-nlp/3rd-party/NLP-models-growth-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/3rd-party/NLP-models-growth-1.png"  style="width:67%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 ---
 

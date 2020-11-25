@@ -30,10 +30,6 @@
 Regressions-Python.md
 
 Classifications-Python.md
-
-exit
-
-
 Decision-Trees-Python.md
 Unsupervised-Python.md
 

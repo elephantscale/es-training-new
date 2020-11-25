@@ -9,6 +9,9 @@ AI-for-NLP-Intro.pdf
 ## About
 About-AI-NLP.md
 
+## ML Intro
+../../machine-learning/generic/Machine-Learning-Primer.md
+
 ## Intro
 NLP-Intro.md
 
@@ -23,19 +26,8 @@ NLP-Intro.md
 
 ## word2vec
 word2vec.md
-../doc/word2vec-paper.pdf
+../../docs/deep-learning/word2vec-paper.pdf
 
-exit
-
-## ML Intro
-../../machine-learning/generic/Machine-Learning-Primer.md
-
-
-# TensorFlow
-../../deep-learning/tensorflow/TENSORFLOW-Intro.md
-
-# Theory part-1
-../../machine-learning/generic/ML-Concepts-All.md
 
 ## Neural Networks
 ../../deep-learning/generic/DL-Neural-Networks.md
@@ -43,23 +35,29 @@ exit
 ## Theory part-2
 ../../deep-learning/generic/DL-Concepts.md
 
-# Keras
-../../deep-learning/keras/Keras-1__Intro.md
+# TensorFlow
+../../deep-learning/tf2/Tensorflow-Intro.md
 
 ## RNN
-../../deep-learning/generic/DL-RNNs.md
-../../deep-learning/generic/DL-LSTMs.md
+../../deep-learning/tf2/Tensorflow-RNN.md
+../../deep-learning/tf2/Tensorflow-LSTM.md
+
+Tensorflow-Text-Processing.md
+Tensorflow-Text-Generation.md
+
+Transformers.md
 
 ## Bert
 BERT.md
-../doc/BERT-paper.pdf
-../doc/Attention_is_all_you_need.pdf
+../../docs/deep-learning/BERT-paper.pdf
+../../docs/deep-learning/Attention_is_all_you_need.pdf
 
-## TransferLearning
-../../deep-learning/generic/DL-Transfer-Learning.md
 
 # Rasa
 ./rasa-intro.md
 ./rasa-usecases.md
 ./rasa-using.md
 ./rasa-pipeline.md
+
+
+## Reference papers
