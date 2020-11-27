@@ -11,13 +11,14 @@ The applications are wide ranging, including understanding documents, processing
 In this course, we will teach how to handle text data
 and introduce you to modern AI NLP technologies.
 
-## What you will learn
+
+## What you will learn:
 
 - How to prepare text for machine learning
 - Stemming,  tokenizing and filtering stop words in text
 - Analyzing documents using word-frequency, bag-of-words techniques
 - Visualizing text data
-- Classic toolsets for text processing: NLTK, Textblob, TF-IDF
+- Classic toolsets for text processign: NLTK, Textblob, TF-IDF
 - Naive Bayes for text classifications
 - Modern techniques for text: Spacy, Word2Vec
 - Topic modeling with Gensim
@@ -25,13 +26,13 @@ and introduce you to modern AI NLP technologies.
 - Deep learning models for text processing: LSTM, RNN
 - Transformer architecture
 - Modern NN models for text processing: ELMO, ULMFIT, BERT
-- Text generation with Tensorflow
 
-## Duration
+
+## Duration:
 
 Three Days
 
-## Audience
+## Audience:
 
 Developers, Data analysts, data scientists
 
@@ -39,7 +40,7 @@ Developers, Data analysts, data scientists
 
 Introductory to Intermediate
 
-## Use Cases Covered
+## Industry Use Cases Covered
 
 We will study and solve some of most common industry use cases; listed below
 
@@ -47,7 +48,6 @@ We will study and solve some of most common industry use cases; listed below
 * Sentiment analysis of text data (Social/News)
 * IMDB Movie ratings and reviews analysis
 * Classifying news articles
-* Extracting topics mentioned in text
 
 ## Prerequisites
 
@@ -84,7 +84,6 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Parsing and tokenization
 * Word-clouds
 * Working with Unicode
-* Lab
 
 ### Text Algorithms Overview
 
@@ -94,13 +93,11 @@ Even if you haven't done any Python programming, Python is such an easy language
 * TextBlob
 * Vectorizing text
 * TF-IDF
-* Lab
 
 ### Text Classification
 
 * Naive Bayes
 * SVM
-* Lab
 
 ### Text datasets and Benchmarks
 
@@ -111,7 +108,6 @@ Even if you haven't done any Python programming, Python is such an easy language
 
 * LDA (Latent Dirichlet Allocation)
 * Gensim
-* Lab
 
 ### Introduction to Neural Networks
 
@@ -139,23 +135,21 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Visualizing the embeddings
 * Word2Vec
 * SpaCy for named entity recognition
-* Lab
 
-### Text Processing in TensorFlow
+### Recurrent Neural Networks (RNN)
 
 * Introduction to RNNs
-* Introduction to LSTMs
-* Sequence to Sequence models
 * Text prediction
+* Named entity extraction
+* Automatic translation (seq2seq)
 * Text generation
-* Lab
 
 ### Transformers
 
 * Attention concept
 * Transformer architecture
+* Bidirectional LSTM
 * Pre-trained Models for Text Processing (ElMO, ULMFIT,  BERT)
-* Lab
 
 ### Conversational AI
 

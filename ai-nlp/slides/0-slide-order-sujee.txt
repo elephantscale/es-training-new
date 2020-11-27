@@ -9,6 +9,8 @@ AI-for-NLP-Intro.pdf
 ## About
 About-AI-NLP.md
 
+## ML Intro
+../../machine-learning/generic/Machine-Learning-Primer.md
 
 ## Intro
 NLP-Intro.md
@@ -28,8 +30,6 @@ word2vec.md
 
 Topic-Modeling.md
 
-## ML Intro
-../../machine-learning/generic/Machine-Learning-Primer.md
 
 ## Neural Networks
 ../../deep-learning/generic/DL-Neural-Networks.md
