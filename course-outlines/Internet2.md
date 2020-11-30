@@ -14,6 +14,10 @@ This course will teach **Machine Learning Engineering** - the process of product
 We will use a cloud environment (Google Cloud or Amazon Cloud or Microsoft Cloud, the choice is up to the client)
 for our deployment.
 
+[Outline - working document](https://docs.google.com/document/d/1KnAvZqVz0KgaOyleseg8X__cyaYPdvsrpEp6apbiUFE/edit)
+
+[Shared folder](https://drive.google.com/drive/folders/1RFXuxdSfpQr85x5oR35QyQatwYx1AqQc)
+
 ![ml-eng-1](images/ml-eng-1.png)\ 
 
 ## Learning Path
