@@ -1,4 +1,7 @@
 # to generate slides
 # $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
 
-./About-Internet2-Class.md
+About-Internet2-Class.md
+IAM.md
+AWS-IAM.pptx
+GCP-IAM.pdf
