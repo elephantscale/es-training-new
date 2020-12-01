@@ -238,3 +238,41 @@ https://archive.nytimes.com/www.nytimes.com/interactive/2012/02/13/us/politics/2
 Notes:
 
 
+
+---
+
+## 4.5 - Experiment to Production ('Mind the Gap')
+
+
+ * Data Scientists develop their models on laptops with small data
+ * There is a 'deployment gap' when it comes time to go to production
+ * Solutions:
+     - Frameworks like Spark are solving this
+     - Cloud vendors are providing solution
+
+<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="width:55%;"/><!-- {"left" : 1.3, "top" : 4.78, "height" : 3.86, "width" : 7.65} -->
+
+
+
+Notes:
+
+
+---
+## Streamlining Prototyping --> deploy
+
+
+ * Language neutral
+
+ * Same model - no need to re-implement
+
+ * Fast deploy!
+
+<img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 1.63, "top" : 3.18, "height" : 5.12, "width" : 6.99} -->
+
+
+
+Notes:
+
+https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models
+
+---

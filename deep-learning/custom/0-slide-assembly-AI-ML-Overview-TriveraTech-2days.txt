@@ -16,9 +16,8 @@
 ## TensorFlow
 ../tf2/Tensorflow-Intro.md
 
-../../machine-learning/generic/Text-Analytics-Intro.md
+../../ai-nlp/slides/NLP-Intro.md
 ../../python/slides/PYTHON-Text-Spacy.md
-../../ai-nlp/slides/word2vec.md
 
 ## TransferLearning
 ../tf2/Tensorflow-Transfer-Learning.md
