@@ -12,17 +12,13 @@ About-AI-NLP.md
 ## ML Intro
 ../../machine-learning/generic/Machine-Learning-Primer.md
 
-## Intro
+## NLP Intro
 NLP-Intro.md
 
 ./Text-Cleanup-and-Prep.md
-./Text-Vectorization.md
-
-
-# Basic Text Python
 ../../python/slides/PYTHON-Text-NLTK.md
+./Text-Vectorization.md
 ../../python/slides/PYTHON-Text-Spacy.md
-
 
 ## word2vec
 word2vec.md

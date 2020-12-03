@@ -398,72 +398,28 @@ Notes:
      - Experience counts!
 
 
-
 Notes:
-
-
-
-
----
-
-## 4.5 - Experiment to Production ('Mind the Gap')
-
-
- * Data Scientists develop their models on laptops with small data
- * There is a 'deployment gap' when it comes time to go to production
- * Solutions:
-     - Frameworks like Spark are solving this
-     - Cloud vendors are providing solution
-
-<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="width:55%;"/><!-- {"left" : 1.3, "top" : 4.78, "height" : 3.86, "width" : 7.65} -->
-
-
-
-Notes:
-
-
----
-## Streamlining Prototyping --> deploy
-
-
- * Language neutral
-
- * Same model - no need to re-implement
-
- * Fast deploy!
-
-<img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 1.63, "top" : 3.18, "height" : 5.12, "width" : 6.99} -->
-
-
-
-Notes:
-
-https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models
 
 ---
 
 ## 5 - Model Validation
 
- <img src="../../assets/images/AI/AI-Workflow-04.png" alt="AI-Workflow-04.png" style="width:40%;float:right;"/><!-- {"left" : 5.9, "top" : 1.22, "height" : 3.38, "width" : 4.27} -->
+ <img src="../../assets/images/AI/AI-Workflow-04.png" alt="AI-Workflow-04.png" style="width:35%;float:right;"/><!-- {"left" : 5.9, "top" : 1.22, "height" : 3.38, "width" : 4.27} -->
+<img src="../../assets/images/machine-learning/model-testing-5.png"  style="width:30%;float:right;clear:both;"/><!-- {"left" : 5.55, "top" : 6.63, "height" : 1.97, "width" : 4.48} -->
 
+* Models need to be `verified`  / `validated`
 
- * Models need to be `verified`  / `validated`
- * Split the data set into
-     - Training set: build / train model
-     - Test set: validate the model
- * Initially 70% training,  30% test
- * Tweak the dials to decrease training and increase validation.
- * Training set should represent data well enough.
+* Split the data set into
+  - Training set: build / train model
+  - Test set: validate the model
+  
+* Initially 70% training,  30% test
 
-<img src="../../assets/images/machine-learning/model-testing-5.png"  style="width:40%;"/><!-- {"left" : 5.55, "top" : 6.63, "height" : 1.97, "width" : 4.48} -->
+* Tweak the dials to decrease training and increase validation.
 
-
-
+* Training set should represent data well enough.
 
 Notes:
-
-
-
 
 ---
 
