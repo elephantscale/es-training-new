@@ -15,4 +15,4 @@ Running notes on the development are [here](https://docs.google.com/document/d/1
 
 **[Current Outline (WIP)]** is [here](https://docs.google.com/document/d/1KnAvZqVz0KgaOyleseg8X__cyaYPdvsrpEp6apbiUFE/edit?pli=1)
 
-
+[Azure labs](http://mva.microsoft.com/) 
