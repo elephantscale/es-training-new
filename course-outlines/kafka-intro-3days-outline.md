@@ -3,7 +3,7 @@
 Feb 01, 2020
 
 ## Overview
-This course will teach Apache Kafka - a popular distributed messaging system.  We will cover streaming 
+This course will teach Apache Kafka - a popular distributed messaging system.   
 
 ## What You Will Learn
 * Streaming technologies and architecture
@@ -17,25 +17,25 @@ This course will teach Apache Kafka - a popular distributed messaging system.  W
 * Best practices 
 * Use cases 
 
-## Audience :
+## Audience:
 Developers, Architects
 
 ## Skill Level:
 Introductory - Intermediate
 
-## Duration :
+## Duration:
 Three days
 
-## Format :
+## Format:
 Lectures and hands on labs. (50%   50%)
 
 ## Prerequisites
-* Recommended : Comfortable with Java programming language and Java development tools (Eclipse, Maven)  -  programming exercises are in Java
-* Nice to have : Comfortable in Linux environment (be able to navigate Linux command line, run commands)
+* Recommended: Comfortable with Java programming language and Java development tools (Eclipse, Maven)  -  programming exercises are in Java
+* Nice to have: Comfortable in Linux environment (be able to navigate Linux command line, run commands)
 
 
 ## Lab environment
-* Zero Install : There is no need to install Kafka software on students' machines! 
+* Zero Install: There is no need to install Kafka software on students' machines! 
 * A lab environment in the cloud will be provided for students.
 
 ### Students will need the following
@@ -56,14 +56,14 @@ Lectures and hands on labs. (50%   50%)
 ###  Introducing Kafka
 *  Comparing Kafka with other queue systems (JMS / MQ)
 *  Kafka Architecture
-*  Kaka concepts : Messages, Topics, Partitions, Brokers, Producers, commit logs
+*  Kaka concepts: Messages, Topics, Partitions, Brokers, Producers, commit logs
 *  Kafka & Zookeeper
 *  Producing messages
 *  Consuming messages 
 * Consumers, Consumer Groups
 *  Message retention
 *  Scaling Kafka
-*  Labs :
+*  Labs:
    - Getting Kafka up and running
    - Using Kafka utilities
  
@@ -75,7 +75,7 @@ Lectures and hands on labs. (50%   50%)
 *  Message compression
 *  Commits , Offsets, Seeking
 *  Managing offsets - auto commit / manual commit
-*  Labs :
+*  Labs:
     - Writing Producer / Consumer
     - Benchmarking Producer send modes 
     - Comparing compression schemes
@@ -85,9 +85,9 @@ Lectures and hands on labs. (50%   50%)
 ### Kafka Streams API
 *  Introduction to Kafka Streams library
 *  Features and design 
-*  Streams concepts : KStream / KTable / KStore
+*  Streams concepts: KStream / KTable / KStore
 *  Streaming operations (transformations, filters, joins, aggregations)
-*  Using Streams API : foreach / filter / map / groupby
+*  Using Streams API: foreach / filter / map / groupby
 *  Labs:
     - Kafka Streaming APIs
 

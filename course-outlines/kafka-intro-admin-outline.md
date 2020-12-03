@@ -6,7 +6,8 @@ Feb 01, 2020
 
 
 ## Overview
-This course will teach Apache Kafka - a popular distributed messaging system.  We will cover streaming 
+This course will teach Apache Kafka - a popular distributed messaging system. 
+The course covers the needs of developers and administrators.  
 
 ## What You Will Learn
 * Streaming technologies and architecture
@@ -123,7 +124,7 @@ Lectures and hands on labs. (50%   50%)
 *  Hardware / Software requirements
 *  Deploying Kafka
 *  Configuration of brokers / topics / partitions / producers / consumers
-*  Security: How secure Kafka cluster, and secure client communications (SASL, Kerberos)
+*  Security: How to secure Kafka cluster, and secure client communications (SASL, Kerberos)
 *  Capacity Planning: estimating usage and demand
 *  Trouble shooting: failure scenarios and recovery
 
