@@ -18,11 +18,12 @@ NLP-Intro.md
 ./Text-Cleanup-and-Prep.md
 ../../python/slides/PYTHON-Text-NLTK.md
 ./Text-Vectorization.md
-../../python/slides/PYTHON-Text-Spacy.md
 
 ## word2vec
 word2vec.md
 ../../docs/deep-learning/word2vec-paper.pdf
+
+../../python/slides/PYTHON-Text-Spacy.md
 
 Topic-Modeling.md
 

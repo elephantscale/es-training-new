@@ -354,7 +354,7 @@ Notes:
 * They can **remember sequences** - which is very important to understand languages
 
 *  Take the following sentence.  Who does 'she' refers to?  
-__My mother is very close my sister; she is also very close to my wife__
+__'My mother is very close my sister; she is also very close to my wife'__
 
 ---
 
@@ -383,12 +383,12 @@ __My mother is very close my sister; she is also very close to my wife__
   - The sequential nature of the algorithm, limited parallelization
 
 * Long Sequence problem.  Consider the following sentence:  
-__'I lived in China during my teenage years, so I speak fluent ???__
+__'I lived in China during my teenage years, so I speak fluent ????'__
 
 * The important key to answer the missing piece (the language) is NOT 'teenage years', but 'China'; that was a few words back
 
 * So the completed sentence is   
-__'I lived in China during my teenage years, so I speak fluent Mandarin__
+__'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 ---
 
@@ -491,6 +491,12 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin__
 
 * Since they have billions of parameters to be computed, their prediction speed is slow
 
+
+---
+
+## NLP Models Comparison
+
+<img src="../../assets/images/ai-nlp/NLP-model-comparison-2.png"  style="width:50%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 ---
 

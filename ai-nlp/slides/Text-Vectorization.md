@@ -370,65 +370,50 @@ d0 = "the brown dog likes the white cow"
 d1 = "the grass is brown"
 d2 = "the spotted cow likes green grass"
 documents = [d0,d1,d2]
-tf = TfidfVectorizer(analyzer='word', ngram_range=(1,1),
-                    min_df = 0, stop_words=None)
+
+tf = TfidfVectorizer(analyzer='word', ngram_range=(1,1), min_df = 0, stop_words=None)
+
 tfidf_matrix = tf.fit_transform(documents)
-print(tfidf_matrix)  # document term matrix
 
-# document-term matrix
-#  (0, 8)	0.521500948636
-#  (0, 0)	0.335763711163
-#  ...
-#  (1, 8)	0.373118805931
-#  (1, 0)	0.480458397292
-
-feature_names = tf.get_feature_names()
-for i, feature in enumerate(feature_names):
-    print(i,feature)
-feature vectors
-# 0 brown
-# 1 cow
-# 2 dog
-...
+print (tfidf_matrix)
+print (tfidf_matrix.transpose())
 ```
 <!-- {"left" : 0.0, "top" : 1.2, "height" : 6.38, "width" : 9.48} -->
 
+```text
+   brown   cow   dog  grass  green    is  likes  spotted   the  white
+0   0.34  0.34  0.44   0.00   0.00  0.00   0.34     0.00  0.52   0.44
+1   0.48  0.00  0.00   0.48   0.00  0.63   0.00     0.00  0.37   0.00
+2   0.00  0.38  0.00   0.38   0.49  0.00   0.38     0.49  0.29   0.00
+```
+
+```text
+            0     1     2
+brown    0.34  0.48  0.00
+cow      0.34  0.00  0.38
+dog      0.44  0.00  0.00
+grass    0.00  0.48  0.38
+green    0.00  0.00  0.49
+is       0.00  0.63  0.00
+likes    0.34  0.00  0.38
+spotted  0.00  0.00  0.49
+the      0.52  0.37  0.29
+white    0.44  0.00  0.00
+```
+
 Notes:
 
 ---
 
-## Lab: Text Analytics: TFIDF Intro
+## Text Classification Workflow
 
-<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 6.97, "top" : 1.04, "height" : 4.09, "width" : 3.07} -->
+* Here is a typical workflow of working with text
 
-* **Overview:**
-  - TFIDF
-  - Calculate and understand TF-IDF scores
+* We first convert the text into vectors
 
-* **Approximate time:**
-  - 15 mins
+* Then these vectors can be used as input to other algorithms (e.g. classification algorithms)
 
-* **Instructions**
-  - **TFIDF-1** : Use TF-IDF to vectorize text
-
-Notes:
-
----
-
-## Lab: TFIDF With SciKit-Learn
-
-<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 6.97, "top" : 1.04, "height" : 4.09, "width" : 3.07} -->
-
-* **Overview:**
-  - Calculate TF-IDF with SciKit-Learn
-
-* **Approximate time:**
-  - 15 mins
-
-* **Instructions**
-  - **TFIDF-2** : Use TF-IDF with SciKit Learn
-
-Notes:
+ <img src="../../assets/images/ai-nlp/word-to-vectors-3.png" style="width:70%"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
 
 ---
 
@@ -443,87 +428,37 @@ Notes:
 
 ---
 
-# Word Embeddings
+## Lab: TF-IDF Intro
+
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 6.97, "top" : 1.04, "height" : 4.09, "width" : 3.07} -->
+
+* **Overview:**
+  - Calculate and understand TF-IDF scores
+
+* **Approximate time:**
+  - 15 mins
+
+* **Instructions**
+  - **TFIDF-1** : Use TF-IDF to vectorize text
+
+Notes:
 
 ---
 
-## One Hot Encoding
+## Lab: TF-IDF + Naive Bayes
 
-* Let's convert the following text into vectors using one-hot encoding
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 6.97, "top" : 1.04, "height" : 4.09, "width" : 3.07} -->
 
-<!-- TODO shiva -->
-```text
-I eat an apple and a banana for lunch.
-I have a cat and a dog as pets.
-```
+* **Overview:**
+  - Spam classification using TFIDF and Naive Bayes
 
-|        | apple | banana | cat | dog | i | lunch | pet |
-|--------|-------|--------|-----|-----|---|-------|-----|
-| apple  | 1     | 0      | 0   | 0   | 0 | 0     | 0   |
-| banana | 0     | 1      | 0   | 0   | 0 | 0     | 0   |
-| cat    | 0     | 0      | 1   | 0   | 0 | 0     | 0   |
-| dog    | 0     | 0      | 0   | 1   | 0 | 0     | 0   |
-| i      | 0     | 0      | 0   | 0   | 1 | 0     | 0   |
-| lunch  | 0     | 0      | 0   | 0   | 0 | 1     | 0   |
-| pet    | 0     | 0      | 0   | 0   | 0 | 0     | 1   |
+* **Approximate time:**
+  - 30 mins
 
-<br />
+* **Instructions**
+  - **SCIKIT-1** : Spam classification
 
-* So the vectors look like following:
-
-```text
-
-apple : [1,  0,  0,  0,  0,  0,  0]
-banaa : [0,  1,  0,  0,  0,  0,  0]
-
-```
-
----
-
-## Issues with One Hot Encoding Words
-
-* **'Curse of dimensionality'**: As our vocabulary grows, the dimension of vector is going to grow
-
-* English language has approximately 1 million words
-
-* For example the novel ['War and Peace' by Tolstoy](https://en.wikipedia.org/wiki/War_and_Peace), has:
-  - 3,110,642 words total
-  - 20,465 unique words
-
-* So if our vocabuluary is 50,000 words, we will have 50,000 x 50,000 matrix (2.5 Billion cells)
-  - Each word will be represented by 1 one, and 49,999 zeros
-  - Very inefficient to store and process in computer memory
-
----
-
-## Issues with One Hot Encoding Words
-
-<!-- TODO shiva -->
- <img src="../../assets/images/ai-nlp/words-embeddings-1-meaning.png" style="width:50%;float:right;"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
-
-* **Hard to extract meanings**
-
-* In one hot encoding, each word is encoded in 'isolation'
-
-* It is hard to infer meanings of the words
-
-* Wouldn't be nice if we the encoding took into account, that 
-  - **apple and banana** are similar because they are fruits
-  - and **cat and dog** are similar because they are pets
-
----
-
-## Creating Better Embeddings
-
-* We saw the short comings of one-hot-encoding
-
-* Modern **word embedding** algorithms overcome these limitations
-
-* Examples:
-  - Word2Vec
-  - GloVe
-
-* We will see these methods in detail in next section
+Notes:
 
 ---
 

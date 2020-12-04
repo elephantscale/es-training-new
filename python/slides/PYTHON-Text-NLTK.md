@@ -1,4 +1,4 @@
-# Text Analytics With Python
+# NLTK
 ---
 
 ## Lesson Objectives
@@ -122,8 +122,8 @@ from nltk.corpus import state_union
 print(state_union.readme())
 print(state_union.fileids())
 # ['1945-Truman.txt', '1963-Kennedy.txt',... '1964-Johnson.txt',
- '1974-Nixon.txt',... '1981-Reagan.txt',... '2000-Clinton.txt',
-  '2001-GWBush-1.txt', '2001-GWBush-2.txt', ... '2006-GWBush.txt']
+# '1974-Nixon.txt',... '1981-Reagan.txt',... '2000-Clinton.txt',
+#  '2001-GWBush-1.txt', '2001-GWBush-2.txt', ... '2006-GWBush.txt']
 
 # see all words in entier state of the union corpus
 print (len(state_union.words()))
@@ -147,6 +147,7 @@ print(gw2006_sentences[:10])
 Notes:
 
 ---
+
 ## NLTK Corpus: Novels
 
   * These are public domain novels from Gutenberg project
@@ -178,14 +179,11 @@ Notes:
 ## NLTK Tokenizing Text
 
   * First step in analyzing text is splitting raw text into words
-
     - Called tokenizing
-
   * Nltk.tokenize package offers few handy ones
-
-    - Word_tokenize: gives out words
-    - Workpunct_tokenize: numbers and punctuations in their own words
-    - Sent_tokenize: splits into sentences
+    - `word_tokenize`: gives out words
+    - `wordpunct_tokenize`: numbers and punctuations in their own words
+    - `sent_tokenize`: splits into sentences
 
 ```python
 import nltk
@@ -201,11 +199,11 @@ print(sent_tokenize(text))
 
 print(word_tokenize(text))
 # ['I', 'went', 'to', 'Starbucks', '.', 'And', 'bought', 'a',
-'latte', 'for', '$', '4.50', '!', 'Yum', ':', '-', ')']
+# 'latte', 'for', '$', '4.50', '!', 'Yum', ':', '-', ')']
 
 print(wordpunct_tokenize(text))
 # ['I', 'went', 'to', 'Starbucks', '.', 'And', 'bought', 'a',
-'latte', 'for', '$', '4', '.', '50', '!', 'Yum', ':-)']
+# 'latte', 'for', '$', '4', '.', '50', '!', 'Yum', ':-)']
 ```
 <!-- {"left" : 0.0, "top" : 4.34, "height" : 3.26, "width" : 8.71} -->
 
@@ -214,7 +212,7 @@ Notes:
 
 ---
 
-## Lab: TEXT-1: NLTK Intro
+## Lab: NLTK-1: NLTK Intro
 
   * Overview:
 
@@ -232,14 +230,14 @@ Notes:
 
   * Instructions:
 
-    - 1-NLTK-Intro
+    - NLTK-1-Intro
 
 
 Notes:
 
 ---
 
-## Lab: Text-2: Text Analytics With NLTK
+## Lab: NLTK-2: Bag of Words
 
   * Overview:
 
