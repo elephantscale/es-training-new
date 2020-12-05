@@ -825,7 +825,7 @@ Image credit : https://pixy.org/783745/
 
 <br />
 
-| Model         | Created By | Implementation | Number of Patameters | Training Data Size |
+| Model         | Created By | Implementation | Number of Parameters | Training Data Size |
 |---------------|------------|----------------|----------------------|--------------------|
 | BERT base     | Google     | Tensorflow     | 110 Million          | 16 GB              |
 | RoBERTa base  | Facebook   | PyTorch        | 125 Million          | 76 GB              |
