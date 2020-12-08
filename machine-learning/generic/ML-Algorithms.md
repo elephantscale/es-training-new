@@ -216,7 +216,7 @@ Notes:
 
  * Marketing
 
-     - Consumer grouping ("soccer mom"...etc.) and behavior analysis
+     - Consumer grouping ("new parents", "gardeners"...etc.) and behavior analysis
 
  * Web
 

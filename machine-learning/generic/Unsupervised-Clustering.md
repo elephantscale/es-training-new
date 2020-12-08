@@ -86,7 +86,7 @@ Notes:
 
  * Marketing / Sales
      - Segment the customer base; for promotion / advertisement
-     - Soccer mom  / new parents
+     - new parents / gardeners
 
  * Politics
      - Group potential voters for ad targeting

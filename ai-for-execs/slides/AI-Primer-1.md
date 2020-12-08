@@ -75,17 +75,13 @@ Notes:
 
  * Also Google Voice has gotten a lot better in recent years
 
+* [Source](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html)
+
 
 <img src="../../assets/images/deep-learning/3rd-party/Google-Assistant.png" alt="Google-Assistant.png" style="width:40%;"/><!-- {"left" : 2.06, "top" : 2.94, "height" : 4.63, "width" : 6.14} -->
 
 
-
-[Link](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html)
-
 Notes:
-
-https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html
-
 
 ---
 
@@ -110,10 +106,10 @@ Notes:
 
 <img src="../../assets/images/deep-learning/3rd-party/Phenomenal-Rate.png" alt="Phenomenal-Rate.png" style="width:76%;"/><!-- {"left" : 0.54, "top" : 2.09, "height" : 4.9, "width" : 9.17} -->
 
+* [Source](https://mapr.com/blog/ai-ml-2018-and-beyond/)
 
 Notes:
 
-https://mapr.com/blog/ai-ml-2018-and-beyond/
 
 
 ---
@@ -143,28 +139,29 @@ Image credit: coursera
 
 * **"AI will create US$13 Trillion value by year 2030"  -- McKinsey Global Institute**
 
+* [Source](https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning)
+
 <img src="../../assets/images/AI/3rd-party/mckinsey-AI-impact-1.png" alt="XXX image missing" style="background:white;width:40%;" /><!-- {"left" : 2.33, "top" : 2.96, "height" : 5.32, "width" : 5.59} -->
 
 
 Notes:  
-- [Link](https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning)
 
 ---
 
 ## How Important is AI
 
-<img src="../../assets/images/AI/3rd-party/mckinsey-AI-impact-2.png" alt="XXX image missing" style="width:50%;"/><!-- {"left" : 1.89, "top" : 1.7, "height" : 6.25, "width" : 6.48} -->
+<img src="../../assets/images/AI/3rd-party/mckinsey-AI-impact-2.png" alt="XXX image missing" style="width:47%;"/><!-- {"left" : 1.89, "top" : 1.7, "height" : 6.25, "width" : 6.48} -->
 
+* [Source](https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning)
 
 Notes:  
-- [Link](https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning)
 
 
 ---
 
 ## How Important is AI?
 
- * **"8 out of 10 companies are already implementing, or planning to adopt AI by 2020"  -- Oracle**
+ * **"8 out of 10 companies are already implementing, or planning to adopt AI by 2020"**  -- Source [Oracle](https://www.oracle.com/webfoder/s/delivery_production/docs/FY16h1/doc35/CXResearchVirtualExperiences.pdf)
 
  * AI is no longer 'novel'
 
@@ -175,8 +172,6 @@ Notes:
      - Or having an 'app'
 
 Notes:
-
-Source: [8 out of 10 - Oracle](https://www.oracle.com/webfolder/s/delivery_production/docs/FY16h1/doc35/CXResearchVirtualExperiences.pdf)
 
 
 ---
@@ -517,18 +512,18 @@ Notes:
     - Once it has learned enough then when it sees a new image, it can predict the outcome
     - 90%+ accuracy
 
+* [Source](https://www.theverge.com/2018/8/13/17670156/deepmind-ai-eye-disease-doctor-moorfields)
 
 
 Notes:
 
-- [Source](https://www.theverge.com/2018/8/13/17670156/deepmind-ai-eye-disease-doctor-moorfields)
 
 
 ---
 
 ## Clarifai Demo
 
-- Go to : https://clarifai.com/demo
+- Go to [Clarify model gallery](https://www.clarifai.com/model-gallery)
 
 - Upload an image (or give a image URL)
 
