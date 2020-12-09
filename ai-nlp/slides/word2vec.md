@@ -1,8 +1,12 @@
-# word2vec
+# Word2Vec
 
 ---
 
-## Before word2vec: Bag of Words
+# Word Embeddings
+
+---
+
+## Before Word2Vec
 
 * NLP systems and techniques treat words as atomic units
 
@@ -10,6 +14,18 @@
 
 * Words are represented as indices in a vocabulary
 
+* Schemes:
+  - One Hot encoding
+  - Bag of Words / Document Term Matrix
+  - TF-IDF
+
+---
+
+## One Hot Encoding
+
+* Let's convert the following text into vectors using one-hot encoding
+
+<!-- TODO shiva -->
 ```text
 I eat an apple and a banana for lunch.
 I have a cat and a dog as pets.
@@ -25,25 +41,76 @@ I have a cat and a dog as pets.
 | lunch  | 0     | 0      | 0   | 0   | 0 | 1     | 0   |
 | pet    | 0     | 0      | 0   | 0   | 0 | 0     | 1   |
 
----
+<br />
 
-## Strenghts of Bag-of-words
+* So the vectors look like following:
 
-* Simplicity
+```text
 
-* Robustness
+apple : [1,  0,  0,  0,  0,  0,  0]
+banaa : [0,  1,  0,  0,  0,  0,  0]
 
-* Simple models trained on huge amounts of data
-  - outperform complex systems trained on less data
-
-* Example
-   - N-gram model
-    - used for statistical language modeling
-    - N-grams trained on virtually all available data (trillions of words)
+```
 
 ---
 
-## Weakness of BoW: Loss of Meaning
+## Issues with One Hot Encoding
+
+* **'Curse of dimensionality'**: As our vocabulary grows, the dimension of vector is going to grow
+
+* English language has approximately 1 million words
+
+* For example the novel ['War and Peace' by Tolstoy](https://en.wikipedia.org/wiki/War_and_Peace), has:
+  - 3,110,642 words total
+  - 20,465 unique words
+
+* So if our vocabuluary is 50,000 words, we will have 50,000 x 50,000 matrix (2.5 Billion cells)
+  - Each word will be represented by 1 one, and 49,999 zeros
+  - Very inefficient to store and process in computer memory
+
+---
+
+## Issues with One Hot Encoding
+
+<!-- TODO shiva -->
+ <img src="../../assets/images/ai-nlp/words-embeddings-1-meaning.png" style="width:50%;float:right;"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
+
+* **Hard to extract meanings**
+
+* In one hot encoding, each word is encoded in 'isolation'
+
+* It is hard to infer meanings of the words
+
+* Wouldn't be nice if we the encoding took into account, that 
+  - **apple and banana** are similar because they are fruits
+  - and **cat and dog** are similar because they are pets
+
+---
+
+
+## Bag-of-words Review
+
+```text
+doc-1: The brown cow is sleeping
+doc-2: The brown dog is near the brown cow
+doc-3: The black cat is sleeping
+```
+
+| Document | black | brown | cat | cow | dog | is | near | sleeping | the |
+|----------|-------|-------|-----|-----|-----|----|------|----------|-----|
+| doc-1 | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 1 |
+| doc-2 | 0 | 2 | 0 | 2 | 1 | 1 | 1 | 0 | 2 |
+| doc-3 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 |
+
+* Strengths:
+  - Simplicity
+  - Robustness
+  - Simple models trained on huge amounts of data
+  - Can outperform complex systems trained on less data
+
+---
+
+## BoW Review: Loss of Meaning
 
 * Let's consider the following text
 
@@ -68,16 +135,20 @@ Dan runs faster than Jane
 
 ---
 
-## Word2vec Goals
+## Creating Better Embeddings
 
 <!-- TODO shiva -->
  <img src="../../assets/images/ai-nlp/words-embeddings-1-meaning.png" style="width:40%;float:right;"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
 
+* We saw the short comings of one-hot-encoding and Bag-of-Words (BoW)
+* Modern **word embedding** algorithms overcome these limitations
 * Preserve word order (indirectly)
-
 * Preserve word distance / relationship
   - If two words are close in meaning, then should be represented by vectors that are close
   - For example **banana** should be close **apple** but distant from **dog**
+* Examples of modern word embedding algorithms:
+  - Word2Vec
+  - GloVe
 
 ```text
 I eat an apple and a banana for lunch.
@@ -277,6 +348,66 @@ Notes:
 
 ---
 
+## Word2Vec Pre-trained Models
+
+- The more data we train on, the better the model gets
+    - this can be pretty intensive in real world datasets
+
+- So we can start with a pre-trained model and then tweak it to work on our models
+    - This is essentially 'transfer learning' (more on this later)
+
+- Some really good models are available as open source
+
+- Here is a repo: https://github.com/RaRe-Technologies/gensim-data
+
+| model | size | number of vectors | description |
+|--------------------------|----------|-------------------|------------------------------------------------------|
+| glove-twitter-25 | 104 MB | 1,193,514 | Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased) |
+| word2vec-google-news-300 | 1,662 MB | 3,000,000 | Google News (about 100 billion words) |
+| glove-wiki-gigaword-300 | 376 MB | 400,000 | Wikipedia 2014 + Gigaword 5 (6B tokens, uncased) |
+
+---
+
+## Lab: Word2Vec 1
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" /><!-- {"left" : 6.77, "top" : 1, "height" : 4.43, "width" : 3.32} -->
+
+* **Overview:**
+  - Creating a Word2Vec from text
+
+* **Builds on previous labs:**
+  - None
+
+* **Approximate time:**
+  - 20 mins
+
+* **Instructions**
+  - **Word2Vec-1** : Create word2vec vectors
+
+---
+
+## Lab: Word2Vec 2
+
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" /><!-- {"left" : 6.77, "top" : 1, "height" : 4.43, "width" : 3.32} -->
+
+* **Overview:**
+  - Use prebuilt word2vec models
+
+* **Builds on previous labs:**
+  - None
+
+* **Approximate time:**
+  - 20 mins
+
+* **Instructions**
+  - **Word2Vec-2** : Use pre-trained word2vec models
+
+---
+
+# Backup Slides
+
+---
+
 ## How word2vec Model is Created
 
 * Two general approaches are used
@@ -342,47 +473,6 @@ Notes:
 
 ---
 
-## Word2Vec Pre-trained Models
-
-- The more data we train on, the better the model gets
-    - this can be pretty intensive in real world datasets
-
-- So we can start with a pre-trained model and then tweak it to work on our models
-    - This is essentially 'transfer learning' (more on this later)
-
-- Some really good models are available as open source
-
-- Here is a repo: https://github.com/RaRe-Technologies/gensim-data
-
-| model | size | number of vectors | description |
-|--------------------------|----------|-------------------|------------------------------------------------------|
-| glove-twitter-25 | 104 MB | 1,193,514 | Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased) |
-| word2vec-google-news-300 | 1,662 MB | 3,000,000 | Google News (about 100 billion words) |
-| glove-wiki-gigaword-300 | 376 MB | 400,000 | Wikipedia 2014 + Gigaword 5 (6B tokens, uncased) |
-
----
-
-## Lab: Word2Vec
-
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="max-width:30%;float:right;" /><!-- {"left" : 6.77, "top" : 1, "height" : 4.43, "width" : 3.32} -->
-
- * **Overview:**
-    - Use word2vec
-
- * **Builds on previous labs:**
-    - None
-
- * **Approximate time:**
-    - 30 mins
-
- * **Instructions**"
-    - R / Python  / Spark
-
----
-
-# Backup Slides
-
----
 
 ## Doc2Vec
 

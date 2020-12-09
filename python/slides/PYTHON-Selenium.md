@@ -16,7 +16,7 @@ Notes:
 
   * Selenium is an automation software for browsers commonly used for testing.
    
-  * 
+  * Allows you to automated and test web applications, websites, and other browser
 
 
 Notes:
@@ -26,6 +26,7 @@ Notes:
 ## Why Selenium
 
   * **Key advantage**  - Provides a very user friendly API to automate browser tasks
+  * Python provides a no-fuss easy API for controlling selenium.
 
 Notes:
 
@@ -103,4 +104,11 @@ if __name__ == "__main__":
 ``` 
 
 
+---
+
+## Running Headless
+
+ * You may not want to run the browser GUI
+ * Headless mode allows you to avoid that
+ * Good for testing on servers or in cloud where there is no GUI
 

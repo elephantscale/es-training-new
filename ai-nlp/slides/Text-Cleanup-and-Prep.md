@@ -25,27 +25,6 @@ It was the <b>best of times</b>. It was the <b>worst of times</b>! It was the ag
 <br>
 $123
 ```
----
-
-## Word Count: 'Moby Dick'
-
-* Here is simple experiment.  We are counting the words in text
-
-* Notice the difference between raw text and cleaned text
-
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-moby-dick-1.png" style="width:۶0%"/><!-- {"left" : 1.02, "top" : 2.12, "height" : 5.41, "width" : 8.21} -->
-
-Notes:
-
----
-
-## Word Count: 'Alice in Wonderland'
-
-* Again, notice the difference between raw text and cleaned text
-
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:60%"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.35, "width" : 8.21} -->
-
-Notes:
 
 ---
 
@@ -230,18 +209,38 @@ after:
 ```
 <!-- {"left" : 0, "top" : 6.88, "height" : 0.42, "width" : 10.25} -->
 
-
 Notes:
-
-
 
 ---
 
 ## Stop Words
 
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:50%;float:right;"/><!-- {"left" : 5.93, "top" : 1.62, "height" : 2.81, "width" : 4.31} -->
+* Here is simple experiment.  We are counting the words in text of 'Moby Dick' (the novel)
 
-* Remember our word count example of 'Alice in Wonderland'?
+* Notice the difference between raw text and without stop words
+
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-moby-dick-1.png" style="width:۶0%"/><!-- {"left" : 1.02, "top" : 2.12, "height" : 5.41, "width" : 8.21} -->
+
+Notes:
+
+---
+
+## Step Words
+
+* Word count of 'Alice in Wonderland'
+
+* Notice the difference between raw text and stop-words removed
+
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:60%"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.35, "width" : 8.21} -->
+
+Notes:
+
+---
+
+## Stop Words
+
+
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:50%;float:right;"/><!-- {"left" : 5.93, "top" : 1.62, "height" : 2.81, "width" : 4.31} -->
 
 * In raw text (left) the largest number of words are `the, and, to ..`
 
