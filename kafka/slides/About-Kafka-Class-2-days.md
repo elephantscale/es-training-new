@@ -13,16 +13,12 @@
  * Day 1
      -  Streaming Overview
      -  Kafka Overview
-     - Using Kafka AP
+     - Using Kafka API
 
  * Day 2
      -  Kafka streaming
+     -  Kafka Monitoring
      -  Best Practices
-     -  Kafka Admin
-     -  Workshop (time permitting)
-
-
-
 
 Notes:
 
