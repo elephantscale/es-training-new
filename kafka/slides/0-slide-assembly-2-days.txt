@@ -1,0 +1,21 @@
+## To assemble md slides
+#   ./gen.sh
+
+## Course outline
+../kafka-intro-2days-outline.pdf
+
+# About
+About-Kafka-Class-2-days.md
+
+# Streaming
+../../streaming/slides/Streaming-Primer.md
+
+# Kafka
+Kafka-Intro.md
+Kafka-API.md
+Kafka-Streams.md
+Kafka-Connect.md
+Kafka-Monitoring.md
+Kafka-Best-Practices.md
+Kafka-Case-Studies.md
+
