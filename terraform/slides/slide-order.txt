@@ -1,6 +1,6 @@
 # About_Terraform_Class.md
 terraform-intro.md
-# terraform-walk-through.md
+terraform-walk-through.md
 # managing-terraform-state.md
 # reusable-infrastructure-with-modules.md
 # terraform-language-elements.md
