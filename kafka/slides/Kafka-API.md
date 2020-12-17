@@ -292,7 +292,7 @@ Properties props = new Properties(); // ** 1 **
 props.put("bootstrap.servers", "localhost:9092");
 props.put("group.id", "group1");
 props.put("key.deserializer",
-               "org.apache.kafka.common.serialization.StringDeserializer");
+               "org.apache.kafka.common.serialization.IntegerDeserializer");
 props.put("value.deserializer",
                "org.apache.kafka.common.serialization.StringDeserializer");
 
@@ -1204,11 +1204,11 @@ Notes:
 Properties props = new Properties();
 ...
 props.put("enable.auto.commit", "false"); // must disable
-KafkaConsumer<Integer, String> consumer = new KafkaConsumer<>(props);
+KafkaConsumer < Integer, String > consumer = new KafkaConsumer<>(props);
 
 while (true) {
-  ConsumerRecords<Integer, String> records = consumer.poll(100);
-  for (ConsumerRecord<Integer, String> record : records)
+  ConsumerRecords < Integer, String > records = consumer.poll(100);
+  for (ConsumerRecord < Integer, String > record : records)
   {
      System.out.println(String.format(
 	"topic = %s, partition = %s, offset = %d",
@@ -1388,8 +1388,8 @@ Notes:
 
 ```java
 org.apache.kafka.clients.consumer.KafkaConsumer
-   commitAsync(Map<TopicPartition,OffsetAndMetadata> offsets)
-   commitSync(Map<TopicPartition,OffsetAndMetadata> offsets)
+   commitAsync(Map < TopicPartition, OffsetAndMetadata > offsets)
+   commitSync(Map < TopicPartition, OffsetAndMetadata > offsets)
 
 org.apache.kafka.common.TopicPartition (String topic, int partition)
 
@@ -1412,12 +1412,12 @@ Notes:
 import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.clients.consumer.OffsetAndMetadata;
 
-Map<TopicPartition, OffsetAndMetadata> currentOffsets = new HashMap<>();
+Map < TopicPartition, OffsetAndMetadata > currentOffsets = new HashMap<>();
 int count = 0;
 
 while (true) {
-   ConsumerRecords<Integer, String> records = consumer.poll(100);
-   for (ConsumerRecord<Integer, String> record : records)
+   ConsumerRecords < Integer, String > records = consumer.poll(100);
+   for (ConsumerRecord < Integer, String > record : records)
    {
       count++;
       System.out.println("Received message : " + record);
@@ -1517,53 +1517,6 @@ Notes:
 Notes:
 
 
-
-
----
-
-## Kafka Direct Example
-
-
-```java
-object DirectKafkaWordCount {  
-   def main(args: Array[String]) {    
-      val Array(brokers, topics) = args    
-
-      // Create context with 2 second batch interval    
-       val sparkConf = new SparkConf().setAppName("DirectKafkaWordCount")    
-       val ssc = new StreamingContext(sparkConf, Seconds(2))    
-
-       // Create direct kafka stream with brokers and topics    
-       val topicsSet = topics.split(",").toSet    
-       val kafkaParams = Map[String, String](
-				"metadata.broker.list" -> brokers)    
-
-       val messages = KafkaUtils.createDirectStream
-                [String, String, StringDecoder, StringDecoder](
-                    ssc, kafkaParams, topicsSet)    
-
-// Get the lines, split them into words, count the words and print
-       val lines = messages.map(_._2)    
-       val words = lines.flatMap(_.split(" "))    
-       val wordCounts = words.map(x => (x, 1L)).reduceByKey(_ + _)
-       wordCounts.print()    
-
-// Start the computation    
-       ssc.start()    
-       ssc.awaitTermination()
-  }
-}
-
-```
-<!-- {"left" : 0, "top" : 1.5, "height" : 5.49, "width" : 10.25} -->
-
-
-Notes:
-
-Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/streaming/DirectKafkaWordCount.scala
-
-
-
 ---
 
 ## Kafka Structured Streaming Example
@@ -1574,7 +1527,7 @@ val s1 = spark.
           readStream.
           format("kafka").
           option("kafka.bootstrap.servers",
-                "localhost:8082,host2:port2").
+                 "localhost:8082,host2:port2").
           option("subscribe", "topic1,topic2").
           load()
 

@@ -50,8 +50,17 @@
 	- https://www.tesla.com/videos/autopilot-self-driving-hardware-neighborhood-short
 
 
+## Reinforcement Learning
+
+- Google Deep Mind - ATARI breakout - https://www.youtube.com/watch?v=V1eYniJ0Rnk
+- Open AI Hide and Seek
+  - blog : https://openai.com/blog/emergent-tool-use/
+  - 2 minute papers : https://www.youtube.com/watch?v=Lu56xVlZ40M  
+
+
 ## FUN Videos :
-- Google Deep Mind - ATARI - https://www.youtube.com/watch?v=V1eYniJ0Rnk
+
+- Google Deep Mind - ATARI breakout - https://www.youtube.com/watch?v=V1eYniJ0Rnk
 - MarIO : https://www.youtube.com/watch?v=qv6UVOQ0F44
 - Deep Mind Alpha Go : https://www.youtube.com/watch?v=9xlSy9F5WtE
 	- explanation by Siraj : https://www.youtube.com/watch?v=UzYeqAJ2bA8

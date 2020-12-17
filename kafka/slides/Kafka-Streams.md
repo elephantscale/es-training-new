@@ -249,7 +249,7 @@ Notes:
 public static class CustomRocksDBConfig implements RocksDBConfigSetter {
    @Override
    public void setConfig (final String storeName, final Options options,
-   final Map<String, Object> configs) {
+   final Map < String, Object > configs) {
 
        BlockBasedTableConfig tableConfig = new
 org.rocksdb.BlockBasedTableConfig();
@@ -362,7 +362,7 @@ config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG,
 
 // ** 2 : define processing **
 final StreamsBuilder builder = new StreamsBuilder();
-final KStream<String, String> clickstream = builder.stream("topic1");// topic
+final KStream < String, String > clickstream = builder.stream("topic1");// topic
 
 clickstream.print(Printed.toSysOut());
 
@@ -409,10 +409,10 @@ Notes:
 
 ```java
 final StreamBuilder builder = new StreamBuilder();
-final KStream<String, String> clickstream = builder.stream("topic1");
+final KStream < String, String > clickstream = builder.stream("topic1");
 
 // Foreach : process events one by one
-clickstream.foreach(new ForeachAction<String, String>() {
+clickstream.foreach(new ForeachAction < String, String >() {
 
      public void apply(String key, String value) {
 
@@ -455,10 +455,10 @@ Notes:
 
 ```java
 final StreamBuilder builder = new StreamBuilder();
-final KStream<String, String> clickstream = builder.stream("topic1");
+final KStream < String, String > clickstream = builder.stream("topic1");
 
 // filter clicks only
-final KStream<String, String> actionClickedStream =
+final KStream < String, String > actionClickedStream =
 
     clickstream.
     filter((k, v) -> v.contains("action:clicked"));
@@ -505,19 +505,17 @@ Notes:
 
 ```java
 final StreamsBuilder builder = new StreamsBuilder();
-final KStream<String, String> clickstream = builder.stream("topic1");
+final KStream < String, String > clickstream = builder.stream("topic1");
 
 // map transform (String, String) to  (String, Integer)
-final KStream<String, Integer> actionStream = clickstream.map( {
+final KStream < String, Integer > actionStream = clickstream.map( {
 
-     // new KeyValueMapper<String, String, KeyValue<String, Integer>>()
-
-   public KeyValue<String, Integer> apply(String key, String value) {
+   public KeyValue < String, Integer > apply(String key, String value) {
 
       logger.debug("map() : got : " + value);
       String new_key = key.toUpperCase();
       int new_value = 1;
-      KeyValue<String, Integer> newKV =new KeyValue<>(new_key, new_value);
+      KeyValue < String, Integer > newKV =new KeyValue<>(new_key, new_value);
       logger.debug("map() : returning : " + newKV);
       return newKV;
   }
@@ -582,11 +580,11 @@ Notes:
 //-------- KStream example ------
 
 // reading from Kafka
-KStream<byte[], String> textLines = builder.stream("textlines-topic",
+KStream < byte[], String > textLines = builder.stream("textlines-topic",
             Consumed.with(Serdes.ByteArray(), Serdes.String()));
 
 // Transforming data 
-KStream<byte[], String> upperCaseLines = textLines.mapValues(String::toUpperCase));
+KStream < byte[], String > upperCaseLines = textLines.mapValues(String::toUpperCase));
 ```
 <!-- {"left" : 0, "top" : 1.74, "height" : 1.83, "width" : 10.25} -->
 
@@ -594,7 +592,7 @@ KStream<byte[], String> upperCaseLines = textLines.mapValues(String::toUpperCase
 
 // ------ KTable Example ----
 
-KTable<String, Long> wordCounts = textLines.flatMapValues(
+KTable < String, Long > wordCounts = textLines.flatMapValues(
         textLine -> Arrays.asList(textLine.toLowerCase().split("\\W+"))).
         groupBy((key,word) -> word).
         count()
@@ -623,17 +621,17 @@ Notes:
 
 ```java
 final StreamsBuilder builder = new StreamsBuilder();
-final KStream<String, String> clickstream = builder.stream( "topic1");
+final KStream < String, String > clickstream = builder.stream( "topic1");
 
 // map transform (String, String) --> (String, Integer)
 
-final KStream<String, Integer> actionStream = clickstream.map( ... )
+final KStream < String, Integer > actionStream = clickstream.map( ... )
 
 // Now aggregate and count actions
 // we have to explicitly state the K,V serdes in groupby,
 // as the types are changing
 
-final KTable<String, Long> actionCount = actionStream
+final KTable < String, Long > actionCount = actionStream
    .groupByKey(Serialized.with(Serdes.String(), Serdes.Integer()))
    .count ();
 actionCount.toStream().print(Printed.toSysOut());
@@ -652,16 +650,16 @@ Notes:
 
 ```java
 // Serializers/deserializers (serde) for String and Long types
-final Serde<String> stringSerde = Serdes.String();
-final Serde<Long> longSerde = Serdes.Long();
+final Serde < String > stringSerde = Serdes.String();
+final Serde < Long > longSerde = Serdes.Long();
 
 // Construct a `KStream` from the input topic "topic1", where message values
 // represent lines of text (for the sake of this example, we ignore whatever may be stored
 // in the message keys).
-KStream<String, String> textLines = builder.stream("topic1",
+KStream < String, String > textLines = builder.stream("topic1",
 .with(stringSerde, stringSerde);
 
-KTable<String, Long> wordCounts = textLines
+KTable < String, Long > wordCounts = textLines
     // Split each text line, by whitespace, into words.
     .flatMapValues(value -> Arrays.asList(value.toLowerCase().split("\\W+")))
 
@@ -779,16 +777,16 @@ Notes:
 
 ```java
 KStreamBuilder builder = new KStreamBuilder();
-KStream<String, Long> visitsStream = builder.stream(Serdes.String(), Serdes.Long(),
+KStream < String, Long > visitsStream = builder.stream(Serdes.String(), Serdes.Long(),
                                      "visitsTopic");
 
 // Group and count visits per URL/page
-KGroupedStream<String, Long> groupedStream =
+KGroupedStream < String, Long > groupedStream =
 visitsStream.groupByKey();
-KTable<String, Long> totalCount = groupedStream.count("totalVisitCount");
+KTable < String, Long > totalCount = groupedStream.count("totalVisitCount");
 
 // Create window for visits per hour
-KTable<Windowed<String>, Long> windowedCount =
+KTable < Windowed < String >, Long > windowedCount =
 groupedStream.count(TimeWindows.of(60 * 60 * 1000), "hourlyVisitCount");
 ```
 <!-- {"left" : 0, "top" : 1.3, "height" : 2.42, "width" : 10.25} -->
