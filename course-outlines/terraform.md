@@ -26,6 +26,7 @@ These are included as options in the course delivery.
 ## What you will learn
  * DevOps and IaC
  * How to use Terraform
+ * HashiCorp ecosystem
 
 ## Audience
 * DevOps, Developers, Architects
