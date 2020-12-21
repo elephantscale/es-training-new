@@ -50,9 +50,6 @@ Lectures and hands-on labs. (50%, 50%)
 * Chrome browser
   - SSH client for your platform
 
-
-## Detailed Outline
-
 ## Detailed Outline
 
 * Why Terraform
