@@ -3,153 +3,113 @@
 (c) Elephant Scale  
 December 20, 2020
 
-## Overview
+* This course covers the best practices of building Computationally- and Data-intensive workflows for cloud-based platforms. It is concerned with the modern cloud architectures as they apply to Amazon, Azure, and Google clouds. The course covers these topics:
 
-Machine Learning and AI are all the rage today.  Most ML courses focus on building models.  However, 
-taking the ML models to production 
-involves quite a bit of extra work, as illustrated in the diagram below.
+    - Introduction to the cloud (1 hour)
+    - IAM user management (4 hour)
+    - Cloud storage and databases (3 hours)
+    - Networking and Data Movement (2 hours)
+    - Containerization (4 hours)
+    - Computing, elasticity, and scaling (6 hours)
+    - Performance optimization (2 hours)
+    - Cost management (4 hours)
+    - Architecting in the cloud (2 hours)
+    - AI, Deep Learning, Machine Learning (4 hours)
+    - Data Analytics with Hadoop and Spark (4 hours)
+    - Multi-cloud Infrastructure-as-code (IAS) (2 hours)
+    - Workflow and workflow management (2 hours)
+    
+* The course is multi-cloud. It refers to general cloud architecting principles, and their implementation in the three major clouds.
 
-This course will teach **Machine Learning Engineering** - the process of productizing, monitoring and managing ML model pipelines.
+### Labs
+* For the labs, students will be provided with accounts on Qwiklabs covering AWS and GCP
+* Students' own cloud accounts are optional but highly recommended
+* Azure labs - TBD 
 
-We will use a cloud environment (Google Cloud or Amazon Cloud or Microsoft Cloud, the choice is up to the client)
-for our deployment.
+### Duration
+* 5 days
+* Each of the Internet2 forty-hours deliveries will take eight sessions of five hours with lunch, spanning two weeks.      
 
-[Outline - working document](https://docs.google.com/document/d/1KnAvZqVz0KgaOyleseg8X__cyaYPdvsrpEp6apbiUFE/edit)
+### Audience
+* Research Computing and Data Professionals
+    
+### Prerequisites
+* Basic cloud computing knowledge
 
-[Shared folder](https://drive.google.com/drive/folders/1RFXuxdSfpQr85x5oR35QyQatwYx1AqQc)
+### Course Outline
+* (01) Introduction to the cloud (1 hour)
+    * Cloud fundamentals
+    * Overview and comparison of providers
+    * Introduction to cloud architecture frameworks
+    
+* (02) IAM user management (4 hour)
+    * Overview
+    * Lab - IAM basics on Qwiklabs for AWS, GCP, and Azure
+    * Using IAM for security implementation
+    * Cloud security principles
+    * Lab - Qwiklabs Auditing Your Security with AWS Trusted Advisor
+    
+* (03) Cloud storage and databases (3 hours)
+    * Blob storage
+    * File-based offerings (NFS-like)
+    * SQL datastore
+    * NoSQL datastore
+    * Performance and price considerations
+    * NoSQL intro
+    * Lab - Qwiklabs, Introduction to Amazon DynamoDB or Introduction to Amazon Relational Database Service (RDS) or similar on GCP
+    
+* (04) Networking and Data Movement (2 hours)
+    * Overview
+    * Lab - VPC overview
+* (05) Containerization (4 hours)
+    * Running Docker in the clouds
+    * Running Kubernetes in the clouds
+    * Lab - Kubernetes deployment
+* (06) Computing, elasticity, and scaling (6 hours)
+    * Running virtual instances
+    * Auto-scaling groups
+    * Microservices (with introduction)
+    * API introduction Apigee on Google, API Gateway on AWS, something on Azure
+    * Prereq: Docker
+    * Katacoda
+    * Docker
+    * Google Anthos, Amazon Outposts, and Azure Stack
+    * Lab - auto-scaling groups
+* (07) Performance optimization (2 hours)
+    * Using horizontal and vertical scaling
+    * MPI and placement groups and RDMA
+    * Scaling storage, scaling computations, auto-scaling
+    * Lab - AWS Beanstalk or GCP AppEngine
+* (08) Cost management (4 hours)
+    * On-demand, reserved, and spot instances, strategies for optimized use
+    * Cloud hidden and often forgotten costs
+    * Watching and eliminating under-utilized resources
+    * Cloud-specific tools for cost optimization
+    * Lab - auditing a cloud deployment, Qwiklabs Performing a Basic Audit of your AWS Environment
+* (09) Architecting in the cloud (2 hours)
+    * Best practices for cloud-based architecture
+    * Workshop team exercises
+* (10) AI, Deep Learning, Machine Learning (4 hours)
+    * Cloud AI offering
+    * Running your own AI in the cloud
+    * Deploying Machine Learning pipelines
+    * Lab
+* (11) Data Analytics with Hadoop and Spark (4 hours)
+    * Hadoop in the cloud
+    * Spark in the cloud
+    * Google Dataproc
+    * Google BigQuery + AWS Redshift
+    * Lab - Qwiklabs Introduction to SQL for BigQuery and Cloud SQL on QCP
+* (12) Multi-cloud Infrastructure-as-code (IAS) with Terraform (2 hours)
+    * DevOps movement
+    * Infrastructure-as-code (IAS)
+    * Terraform operation
+    * Architecting with Terraform
+    * Lab - Terraform deployments
+* (13) Workflow and workflow management (2 hours)
+    * Lab - Qwiklabs - Automating DevOps Workflows with GitLab and Terraform
+    
+    
+    
 
-![ml-eng-1](images/ml-eng-1.png)\ 
-
-## Learning Path
-
-![ml-eng-1](images/ml-eng-learning-path.png)\ 
-
-## What you will learn:
-
-* ML Engineering overview
-* Overview of the AI capabilities for the cloud platform of your choice
-* Storing large data in the cloud
-* Processing large data in the cloud using distributed tools
-* Training models at scale, using GPUs on the cloud
-* Deploying models as webservices
-* Logging and tracing of model runtime
-* Model metrics
-* Setting up alerts
-* A/B testing different models
-* Updating newer model versions
-
-## Audience:
-
-Data Scientists, DevOps, Data Engineers
-
-## Duration:
-
-Three to four days depending on the coverage
-
-## Format:
-
-Lectures and hands*on labs. (50%, 50%)
-
-## Prerequisites
-
-* Some knowledge in Machine Learning or Deep Learning is highly recommended
-    * (however, an introduction will be provided if needed)  
-* Some basic knowledge of Python is helpful  
-    * Most ML labs today utilize Python language. Python is an easy language to read. So even you don't have previous exposure to Python, you will be able to complete the labs.
-
-## Lab environment
-
-* Students need to have access to the preferred cloud environment, with appropriate permissions and quotas
-
-### Students will need the following
-
-* A cloud account is recommended, but alternative arrangements can be provided
-* A reasonably modern laptop
-* Unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly
-
-## Detailed outline
-
-### ML Eng Overview
-
-* Machine Learning workflow
-* Going from notebooks to production
-* Understanding what is involved in ML Eng
-* Lab: Getting up and running in the cloud environment
-
-### Cloud Storage
-
-* Bringing data into the cloud
-* Data storage options in the cloud
-* Ingesting Data
-* Lab: Ingesting Data into the cloud
-
-### Cloud Compute
-
-* Understanding different types of compute resources
-* Using GPU instances
-* Customizing a cloud VM
-* Lab: Using cloud VMs
-
-### Training in the cloud with GPUs
-
-* GPU options in the cloud
-* Training with a GPU
-* Monitoring training using TensorBoard
-* Early stopping training when desired accuracy is reached
-* Lab: various labs on training
-
-### Creating a Model Service
-
-* Creating a simple web service for serving predictions
-* Loading the saved model
-* Serving incoming requests
-* Error handling
-* Running and testing on local environment
-* Lab: training and deploying a model
-
-### Containerizing the app
-
-* Create a docker file with app artifacts and dependencies
-* Building a docker container
-* Test the container locally
-* Lab: Docker basics
-
-### Deploying the Container in the Cloud
-
-* Publishing the container to registry
-* Deploy the container using Kubernetes
-* Testing the deployed application
-* Lab: Kubernetes deployment
-
-### Monitoring
-
-* Inspecting application logs
-* Monitoring application metrics
-* Setting up alerts
-* Lab: monitoring in the cloud
-
-### Load-testing the application
-
-* Setting up load testing clients
-* Observing application behavior under load
-* Verifying load balancer
-* Scaling with the load
-Lab: stress-testing an application
-
-### A/B Testing of Models
-
-* Splitting traffic between different models
-* Observe metrics
-* Picking the best model
-* Lab: Google Anthos deployment
-
-### Updating your model
-
-* Packaging newer model into a container
-* Performing a rolling update on running containers
-* Exercise rolling back in case of failures
-
-### Final Workshop (Time Permitting)
-
-* Attendees will work in groups to implement a solution end to end.
-* They will 'ship' an ML model to the cloud
+    
