@@ -1,7 +1,7 @@
 # Terraform 
 © Elephant Scale
 
-May 04, 2020
+December 21, 2020
 
 ## Overview
 
@@ -20,14 +20,16 @@ Oracle Cloud Infrastructure, VMware vSphere, OpenStack, and many others.
 * Terraform is declarative and idempotent. These are good design principles, 
 and many competitors have also implemented Terraform ideas, making Terraform a de facto standard.
 
-
+* HarshiCorp ecosystem includes related products such as Vault, Console, and Packer. 
+These are included as options in the course delivery.
 
 ## What you will learn
  * DevOps and IaC
  * How to use Terraform
 
 ## Audience
-DevOps, Developers, Architects
+* DevOps, Developers, Architects
+* Anyone working toward their [Terraform Certification](https://www.hashicorp.com/certification/terraform-associate)
 
 ## Duration
 3 days
@@ -169,3 +171,21 @@ Lectures and hands-on labs. (50%, 50%)
     - Deploy
     - Putting It All Together
     - Conclusion 
+    
+## Optional Modules
+
+#### Vault
+
+* Manage Secrets and Protect Sensitive Data
+* Secure, store and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets and other sensitive data using a UI, CLI, or HTTP API.
+
+#### Console
+
+* Service Networking Across Any Cloud
+* Automate network configurations, discover services, and enable secure connectivity across any cloud or runtime.
+
+#### Packer
+
+* Build Automated Machine Images
+* HashiCorp Packer automates the creation of any type of machine image. It embraces modern configuration management by encouraging you to use automated scripts to install and configure the software within your Packer-made images. 
+        
