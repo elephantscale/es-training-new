@@ -392,6 +392,36 @@ Hello, World
 
 ---
 
+## Quiz
+
+* Usernames and passwords referenced in the Terraform code, even as variables, will end up in plain text in the state file.
+
+    * A. True
+    * B. False
+    
+Notes:
+
+* A.
+
+---
+
+## Quiz
+
+* What happens when you apply Terraform configuration? Choose *TWO* correct answers.    
+
+    * A. `terraform plan`
+    * B. `terraform state`
+    * C. `terraform apply`
+    * D. `terraform validate`
+    * E. `terraform output`
+
+Notes:
+
+* A. C.
+
+---
+
+
 ## Terraform Dependencies
 
 * When you add a reference from one resource to another, you create an implicit dependency
@@ -524,6 +554,55 @@ variable "map_example" {
 ```
 
 ---
+
+## Quiz
+
+* Consider the following Terraform 0.12 configuration snippet. 
+How would you define the `cidr_block` for us-east-1 in the `aws_vpc` resource using a variable?
+
+```text
+variable "vpc_cidrs" {
+  type = map
+  default = {
+    us-east-1 = "10.0.0.0/16"
+    us-east-2 = "10.1.0.0/16"
+    us-west-1 = "10.2.0.0/16"
+    us-west-2 = "10.3.0.0/16"
+  }
+}
+
+resource "aws_vpc" "shared" {
+  cidr_block = _____________
+}
+````
+
+* A. var.vpc_cidrs[“us-east-1”]
+* B. var.vpc_cidrs.0
+* C. vpc_cidrs[“us-east-1”]
+* D.var.vpc_cidrs[0]
+
+Notes: 
+
+* A.
+
+---
+
+## Quiz
+
+* You have defined the values for your variables in the file terraform.tfvars, and saved it in the same directory as your Terraform configuration. Which of the following commands will use those values when creating an execution plan?
+
+    * A. `terraform plan`
+    * B. `terraform plan -var-file=terraform.tfvars`
+    * C. All of the above
+    * D. None of the above
+    
+Notes:
+
+* C. 
+
+---    
+
+
 ## OO Coding with Terraform!
 
 ```shell script
