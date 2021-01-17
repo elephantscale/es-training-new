@@ -735,8 +735,22 @@ output "public_ip" {
     * Load balancer
 
 ![](../../assets/images/terraform/bigmusclet.png)    
+
 ---
 
+## Discussion
+
+* When clusters makes sense and when it is not worth it?
+* Imagine a parallel research app for a cluster that would be rearchitected for Cloud
+    * would have instances
+    * a task dispatcher, etc. 
+    * would have to manage those instances, etc.
+* Alternatives
+    * Very large instance with 100+ CPUs
+    * Memory pool from [Kove](https://kove.net/)
+    
+---
+        
 ## Auto-Scaling Group (ASG)
 
 ![](../../assets/images/terraform/asg.png)
