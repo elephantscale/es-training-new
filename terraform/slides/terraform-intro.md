@@ -52,10 +52,14 @@ a de facto standard
 
 * There are AWS, Azure, GCP, etc.
 * There are Chef, Puppet, Terraform, and Docker
-* Sysadmins write code
-* Devs write code
-* Ops write code - so DevOps is born    
-* The goal of DevOps is to make software delivery vastly more efficient
+    * Sysadmins write code
+    * Devs write code
+    * Ops write code - so DevOps is born    
+    * The goal of DevOps is to make software delivery vastly more efficient
+* What if I do not have teams of admins, devs, ops? 
+* Say, my team is a multi-skilled group at a university?
+    * DevOps as a movement is popular here as well, if not more
+    * Borrowing on the ideas from the enterprise folks
 
 ---
 
