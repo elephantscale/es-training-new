@@ -76,6 +76,9 @@ a de facto standard
 
 * Four core values in the DevOps movement   
     - culture, automation, measurement, and sharing (CAMS)
+    
+* DevOps is now a **lifestyle**
+    
 ---
 
 ## What Is Infrastructure as Code?
@@ -125,7 +128,33 @@ a de facto standard
 * Containers
     - A container emulates the user space of an OS.2 You run a container engine, such as Docker, CoreOS rkt, or cri-o, to create isolated processes, memory, mount points, and networking.    
     - Benefit: you run on top of the container engine can see only its own user space
-    - Drawback: of the containers running on a single server share, milliseconds boot time
+    - Benefit: of the containers running on a single server share, milliseconds boot time
+
+---
+
+## Happiness with IaC
+
+* Happiness
+    * Deploying code and managing infrastructure manually is repetitive and tedious
+    * No one will take notice—until that one day when you mess it up
+    * That creates a stressful and unpleasant environment
+    * Here is a painting of a happy man (see notes)
+
+![](../../assets/images/terraform/800px-Hendrik_ter_Brugghen_-_Democritus.jpg)
+
+Notes:
+
+* Painting: Democritus by Hendrick ter Brugghen, 1628.
+
+* Some philosophers consider happiness the goal of people's life
+    * Democritus
+        * Democritus (c. 460 – c. 370 BC) is known as the 'laughing philosopher' because of his emphasis on the value of 'cheerfulness'.
+* Plato
+    * Sees a type of happiness stemming from social justice through fulfilling one's social function
+* Aristotle
+    * described eudaimonia (Greek: εὐδαιμονία) as the goal of human thought and action. Eudaimonia is often translated to mean happiness
+* Cynicism (Antisthenes)
+    * rejected any conventional notions of happiness involving money, power, and fame, to lead entirely virtuous, and thus happy, lives
 
 ---
 
@@ -142,6 +171,10 @@ a de facto standard
         - recover from failures 24 times faster
         - have lead times that are 2,555 times lower.
 
+* D: Discuss
+    - How much does this apply to your use cases?
+    - Say you are a researcher who seldom uses dev and prod environment. Do you still see the benefits of IaC? Where?
+    
 Notes:
 
 Source: 2016 State of DevOps Report
@@ -170,31 +203,7 @@ Source: 2016 State of DevOps Report
     * You can build on top of known, documented pieces
 
 ---
-## Happiness with IaC
 
-* Happiness
-    * Deploying code and managing infrastructure manually is repetitive and tedious
-    * No one will take notice—until that one day when you mess it up
-    * That creates a stressful and unpleasant environment
-    * Here is a painting of a happy man (see notes)
-
-![](../../assets/images/terraform/800px-Hendrik_ter_Brugghen_-_Democritus.jpg)
-
-Notes:
-
-* Painting: Democritus by Hendrick ter Brugghen, 1628.
-
-* Some philosophers consider happiness the goal of people's life
-    * Democritus
-        * Democritus (c. 460 – c. 370 BC) is known as the 'laughing philosopher' because of his emphasis on the value of 'cheerfulness'.
-* Plato
-    * Sees a type of happiness stemming from social justice through fulfilling one's social function
-* Aristotle
-    * described eudaimonia (Greek: εὐδαιμονία) as the goal of human thought and action. Eudaimonia is often translated to mean happiness
-* Cynicism (Antisthenes)
-    * rejected any conventional notions of happiness involving money, power, and fame, to lead entirely virtuous, and thus happy, lives
-
----
 ## How Terraform Works
 
 * Terraform is an open source tool created by HashiCorp and written in the Go programming language

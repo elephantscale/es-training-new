@@ -19,9 +19,10 @@
 ---
 
 ## We Will Use AWS
-* The most popular cloud infrastructure provider, by far. It has a __45% share__ in the cloud infrastructure market, which is more than the next three biggest competitors (Microsoft, Google, and IBM)
-* Provides a huge __range of reliable and scalable cloud-hosting services__
-* Generous __Free Tier__ for the first year
+* The largest market share
+    * Although for you it may be different
+* Will try to provide examples for other clouds    
+* All clouds give you a free tier
     * A trick to user after a year:
     * Use <myname+1@gmail.com> kind of address
     * If you already used up your free tier credits, the examples in the labs should still cost you no more than a few dollars.
