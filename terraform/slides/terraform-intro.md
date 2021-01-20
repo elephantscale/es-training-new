@@ -186,7 +186,7 @@ Notes:
 * D: Discuss
     - How much does this apply to your use cases?
     - Say you are a researcher who seldom uses dev and prod environment. Do you still see the benefits of IaC? Where?
-    
+    - Again, [ResearchOps paper](https://www.researchgate.net/publication/283757158_ResearchOps_The_case_for_DevOps_in_scientific_applications)
 Notes:
 
 Source: 2016 State of DevOps Report
