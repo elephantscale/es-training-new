@@ -1,3 +1,37 @@
+# Graph Data Science
+© Elephant Scale
+
+January 20, 2021
+
+## Overview
+
+* Graphs have come intro their own, with major clouds providing graph databases as a services,
+(AWS Neptune, Azure Cosmos) and with a slew of graph database products.
+
+* This course introduce students to Graph Data Science and practical implementations. 
+
+## Benefits
+
+## Duration: 
+
+* 3 days
+
+## Audience: 
+* Machine learning engineers
+* Data scientists
+* Software developers
+
+## Prerequisites
+
+* Machine Learning basics
+* Familiarity with a programming language (SQL works)
+
+# Lab environment
+
+* A working environment will be provided for students.  
+
+## Course Outline:
+
 * Understanding Graphs and Graph Data Science 
     * Explaining What a Graph Is
     * Defining Graph Analytics and Graph Data Science
