@@ -78,9 +78,21 @@ a de facto standard
     - culture, automation, measurement, and sharing (CAMS)
     
 * DevOps is now a **lifestyle**
+
+* In research - ResearchOps in next 
     
 ---
 
+## ResearchOps
+
+* IBM paper
+    * "ResearchOps: The case for DevOps in scientific applications"
+    * Real-life projects at the IBM Research Brazil Lab
+    * May just as well apply to other research institutions
+    * [Paper link](https://www.researchgate.net/publication/283757158_ResearchOps_The_case_for_DevOps_in_scientific_applications)
+    
+---
+    
 ## What Is Infrastructure as Code?
 * There are five broad categories of IAC tools:
 
