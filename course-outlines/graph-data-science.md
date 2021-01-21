@@ -8,9 +8,7 @@ January 20, 2021
 * Graphs have come intro their own, with major clouds providing graph databases as a services,
 (AWS Neptune, Azure Cosmos) and with a slew of graph database products.
 
-* This course introduce students to Graph Data Science and practical implementations. 
-
-## Benefits
+* This course introduces students to Graph Data Science and practical implementations. 
 
 ## Duration: 
 
