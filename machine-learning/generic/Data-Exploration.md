@@ -119,7 +119,7 @@ Notes:
 ## Outliers / Trimmed Mean Example
 
  * Consider this annual income data (note the outliers in low end and high end)  
- [**5k**, 40k, 42k, 45k, 50k, 55k, 60k, 65k, 70k, **400k**]
+ [ <mark>5k</mark>, 40k, 42k, 45k, 50k, 55k, 60k, 65k, 70k, <mark>400k</mark> ]
 
  * Mean income, considering all data  
  = (5 + 40 + 42 + 45 + 50 + 55 + 60 + 65 + 70 + 400) / 10  
