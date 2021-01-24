@@ -2,7 +2,6 @@
 
 <img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
 
-
 ---
 
 ## Objectives
@@ -22,18 +21,14 @@
 
 <img src="../../assets/images/logos/hadoop-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.31, "top" : 0.97, "height" : 0.66, "width" : 2.83} -->
 
-
 * Hadoop was the first Big Data platform to be widely adopted
 
 * Hadoop has three main components
-
-    - Storage: **HDFS** - Store huge amount of data in a distributed fashion
-    - Operating System: **YARN** - manage the cluster
-    - Processing: **MapReduce Engine** - distributed computing
+   - Storage: **HDFS** - Store huge amount of data in a distributed fashion
+   - Operating System: **YARN** - manage the cluster
+   - Processing: **MapReduce Engine** - distributed computing
 
 <img src="../../assets/images/hadoop/hadoop-1.png" style="width:50%;" /><!-- {"left" : 2.02, "top" : 5.6, "height" : 2.98, "width" : 6.21} -->
-
-
 
 Notes:
 
@@ -42,7 +37,6 @@ Notes:
 ## MapReduce Engine
 
 <img src="../../assets/images/logos/hadoop-mapreduce-logo-1.png" style="width:40%;float:right;" /><!-- {"left" : 6.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
-
 
 * MapReduce was state of the art around 2008
 
@@ -57,18 +51,15 @@ Notes:
 
 Notes:
 
-
 ---
 
 ## Spark
 
-
 <img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.11, "top" : 1.11, "height" : 1.01, "width" : 1.91} -->
 
-
 * [Spark](https://spark.apache.org) is an **open Source distributed computing engine**
-    - Very fast: On-disk ops are **10x** faster than MR
-    - In-memory ops **100x** faster than MR
+  - Very fast: On-disk ops are **10x** faster than MR
+  - In-memory ops **100x** faster than MR
 
 * General purpose: MR, SQL, streaming, machine learning, analytics
 
@@ -80,41 +71,49 @@ Notes:
 
 * _"Spark is the First Big Data platform to integrate batch, streaming and interactive computations in a unified framework." - stratio.com_
 
-
 ---
 
 ## Spark's History
 
-* Spark was created at [Berkeley AMP Lab](https://amplab.cs.berkeley.edu/)
+<img src="../../assets/images/spark/3rd-party/spark-first-release-2010.png" style="width:45%;float:right;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
+<img src="../../assets/images/spark/3rd-party/spark-10-year-anniv.png" style="width:15%;float:right;clear:both;" /><!-- {"left" : 6.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
+* Spark was created at [Berkeley AMP Lab](https://amplab.cs.berkeley.edu/) around 2009.  First open source release 2010
 
 * Now top-level Apache project
 
 * **[Databricks](https://databricks.com/)** -  Supporting and developing Spark
-    - Founded by Spark's creators
-    - Employs the most active committers
+  - Founded by Spark's creators
+  - Employs the most active committers
 
 * Spark is now included with most modern Hadoop distributions
+
+* [Nice video of Spark's history](https://youtu.be/OLJKIogf2nU) - from Spark + AI Summit 2020 
 
 ---
 
 ## Why is Spark Popular?
 
+<img src="../../assets/images/spark/3rd-party/spark-languages.png" style="width:30%;float:right;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
 * Ease of use
-    - Easy to get up and running
-    - Develop on laptop, deploy on cluster
+   - Easy to get up and running
+   - Develop on laptop, deploy on cluster
 
 * Multiple language support
-    - Java, Scala, Python and R
-    - Developers (Java/Scala),   Data Scientists (Python, R)
+   - Java, Scala, Python and R
+   - Developers (Java/Scala),   Data Scientists (Python, R)
 
 * High performant
 
 * Plays nice with BigData eco system
 
 * Out of the box functionality
-    - Modern functional programming constructs
-    - Machine Learning / Streaming / Graph processing
+   - Modern functional programming constructs
+   - Machine Learning / Streaming / Graph processing
 
+* [Image source and reference](https://youtu.be/OLJKIogf2nU)
 
 Notes:
 
@@ -132,7 +131,6 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 1.5, "height" : 3, "width" : 9.75} -->
 
-
 Notes:
 
 ---
@@ -141,21 +139,21 @@ Notes:
 
 <img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
-
 Notes:
 
 ---
 
 ## Spark Components
 
+<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
 * __Data Storage:__ Pluggable data storage systems
-    - Integrates with HDFS, S3, Cassandra DB, and more
+   - Integrates with HDFS, S3, Cassandra DB, and more
 
-* __Cluster Manager:__ Manages distributed node clusters
-    - Provides the distributed execution environment
-    - Works with Mesos, Yarn, and its own standalone manager
-
-* __Spark Core:__ Distributed computing engine
+* __Cluster Manager:__
+   - Runs Spark on multiple nodes
+   - Provides the distributed execution environment
+   - Works with Mesos, Yarn, Kubernetes, and its own standalone manager
 
 
 Notes:
@@ -163,6 +161,8 @@ Notes:
 ---
 
 ## Spark Components: Core
+
+<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * **Core** has basic building blocks for distributed computing engine
 
@@ -172,50 +172,47 @@ Notes:
 
 * Storage system interfaces
 
-* Defines Spark API
-
-* Data Model: RDD/Dataframe/Dataset
-    - Distributed collection of items
-    - Can be worked on in parallel
-    - Easily created from many data sources
-
-
 ---
 
 ## Spark Components
 
-* __Spark SQL:__ Analyze structured data
-    - Supports SQL and HQL (Hive Query Language)
-    - Data sources include Hive tables, JSON, CSV, Parquet
+<img src="../../assets/images/spark/spark-components-1.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
-* __Spark Streaming:__ Live streams of data in real-time
-    - Low latency, high throughput (1000s events per second)
-    - Log files, stock ticks, sensor data, IOT (Internet of Things)
+* __Spark SQL:__
+   - Analyze structured data using SQL
 
-* __Spark ML:__ Machine Learning at scale
-    - Classification/regression, collaborative filtering
-    - Model evaluation and data import
+* __Spark Streaming:__
+   - Process live streams of data in real-time
+   - Low latency, high throughput (1000s events per second)
 
-* __GraphX / GraphFrames:__ Graph manipulation, graph-parallel computation
-    - Social network friendships, link data
-    - Graph manipulation, operations, and common algorithms
+* __Spark ML:__
+   - Machine Learning at scale
+   - Classification/regression, collaborative filtering
+
+* __GraphX / GraphFrames:__ 
+   - Graph manipulation, graph-parallel computation
+   - Social network friendships, link data
 
 ---
 
-## Spark: Unified Stack
+## Spark is a Unified Stack
+
+<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * Spark support multiple programming models
-    - MapReduce style batch processing
-    - Streaming/real-time processing
-    - Querying via SQL
-    - Machine learning
-    - Graph Processing
+   - MapReduce style batch processing
+   - Streaming/real-time processing
+   - Querying via SQL
+   - Machine learning
+   - Graph Processing
 
 * All modules are tightly integrated; Facilitates rich applications
 
 * Spark can be the only stack you need!
-    - No need to run multiple clusters (Hadoop cluster, Storm cluster, etc.)
 
+---
+
+# Spark Use Cases
 
 ---
 
@@ -223,21 +220,20 @@ Notes:
 
 <img src="../../assets/images/logos/teralytics-logo-1.jpg" style="width:30%;float:right;" /><!-- {"left" : 8.22, "top" : 0.96, "height" : 0.83, "width" : 1.99} -->
 
-* Teralytics (Telco data)
-    - Processing cell phone events
-    - 180 billion events per day
-    - Spark + HDFS
-    - Estimating usage patterns to enhance coverage (sporting events, commuting, etc.)
-    - Source: [1](http://bigdatausecases.info/entry/origin-destination-matrix-using-mobile-network-data-with-spark), [2](https://databricks.com/session/origin-destination-matrix-using-mobile-network-data-with-spark)
+* __Teralytics__
+   - Processing cell phone events
+   - 180 billion events per day
+   - Spark + HDFS
+   - Estimating usage patterns to enhance coverage (sporting events, commuting, etc.)
+   - Source: [1](http://bigdatausecases.info/entry/origin-destination-matrix-using-mobile-network-data-with-spark), [2](https://databricks.com/session/origin-destination-matrix-using-mobile-network-data-with-spark)
 
 <img src="../../assets/images/logos/yahoo-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.35, "top" : 4.29, "height" : 0.49, "width" : 1.85} -->
 
-* Spark at Yahoo
-    - News personalization
-    - 120 line Scala program with ML lib replaced 15,000 lines of C++
-    - Spark took 30 minutes to run on 100 million samples
-    - [Source](https://www.dezyre.com/article/top-5-apache-spark-use-cases/271)
-
+* __Yahoo__
+   - News personalization
+   - 120 line Scala program with ML lib replaced 15,000 lines of C++
+   - Spark took 30 minutes to run on 100 million samples
+   - [Source](https://www.dezyre.com/article/top-5-apache-spark-use-cases/271)
 
 ---
 
@@ -245,11 +241,20 @@ Notes:
 
 <img src="../../assets/images/logos/netflix-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.43, "top" : 1.09, "height" : 1.21, "width" : 2.63} -->
 
-* Netflix
-    - Recommendations using Spark + Cassandra
-    - Analyzes streaming events (450 billion events per day)
-    - Personalization through recommendations
-    - Sources: [1](http://bigdatausecases.info/entry/netflix-recommendations-using-spark-and-cassandra-cassandra-summit-2016),  [2](https://www.slideshare.net/DataStax/netflix-recommendations-using-spark-cassandra)
+* __Netflix__
+   - Recommendations using Spark + Cassandra
+   - Analyzes streaming events (450 billion events per day)
+   - Personalization through recommendations
+   - Sources: [1](http://bigdatausecases.info/entry/netflix-recommendations-using-spark-and-cassandra-cassandra-summit-2016),  [2](https://www.slideshare.net/DataStax/netflix-recommendations-using-spark-cassandra)
+
+<img src="../../assets/images/logos/starbucks-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.43, "top" : 1.09, "height" : 1.21, "width" : 2.63} -->
+
+* __Starbucks__
+   - 30,000+ stores generate Petabyte scale data
+   - 1000+ data pipelines in Spark
+   - Large scale machine learning using Spark
+   - Stack:  Azure cloud + Spark + Delta Lake
+   - [Source](https://databricks.com/customers/starbucks)
 
 * More case studies @ [BigDataUseCases.Info](http://bigdatausecases.info/)
 
@@ -258,7 +263,6 @@ Notes:
 ## Spark at Large Scale
 
 <img src="../../assets/images/logos/tencent-logo-1.png" style="width:15%;float:right;" /><!-- {"left" : 8.59, "top" : 1.02, "height" : 0.91, "width" : 1.58} -->
-
 
 * Tencent (Social network in China)
   - 8000 nodes
@@ -280,7 +284,7 @@ Notes:
 
 ---
 
-# Spark vs. Hadoop
+# Spark and Hadoop
 
 ---
 
@@ -302,20 +306,9 @@ Notes:
 
 ---
 
-## Hadoop vs. Spark
-
-
-<img src="../../assets/images/spark/hadoop-vs-spark-1.png" style="width:50%;" /><!-- {"left" : 1.65, "top" : 1.45, "height" : 5.17, "width" : 6.94} -->
-
-
-[Video](https://www.youtube.com/watch?v=qfv6Ah_MVJU)
-
----
-
 ## Spark vs. MapReduce
 
 <img src="../../assets/images/spark/3rd-party/mapreduce-vs-spark-1.png" style="width:70%;" /><!-- {"left" : 0.66, "top" : 1.53, "height" : 6.02, "width" : 8.93} -->
-
 
 ---
 
@@ -337,29 +330,45 @@ Notes:
 
 * Daytona Grey Benchmark: Sort 100TB of data
 * References:
-    - [Databricks blog](https://databricks.com/blog/2014/11/05/spark-officially-sets-a-new-record-in-large-scale-sorting.html)
-    - http://sortbenchmark.org/
-
+   - [Databricks blog](https://databricks.com/blog/2014/11/05/spark-officially-sets-a-new-record-in-large-scale-sorting.html)
+   - http://sortbenchmark.org/
 
 <img src="../../assets/images/spark/3rd-party/spark-vs-mapreduce-benchmark-1.png" style="width:70%;" /><!-- {"left" : 1.02, "top" : 3.48, "height" : 4.52, "width" : 8.21} -->
-
-
 
 ---
 
 ## Spark and Hadoop
 
-* Spark is a better distributed engine the MapReduce
+* Hadoop is a **Data Platform**  comprised of:
+   - HDFS: File system
+   - YARN: Cluster manager
+   - Hive: Data warehouse
+   - Engines: MapReduce, Spark
 
-* Works well with Hadoop components: HDFS, YARN and Hive
+* Spark and Hadoop work well together
+   - Spark can utilze HDFS distributed data
 
 <img src="../../assets/images/spark/spark-and-hadoop-2.png" style="width:90%;" /><!-- {"left" : 0.48, "top" : 3.29, "height" : 3.07, "width" : 9.29} -->
-
-
 
 ---
 
 # Running Spark
+
+---
+
+## Spark is a Distributed Engine
+
+* Spark is distributed / cluster system
+   - Runs on many nodes to achieve scaling
+   - Spark has been demonstrated to scale to thousands of nodes!
+
+* Spark is a Master-Worker architecture
+
+* __Master__ plays coordinator role
+
+* __Workers__ perform computation
+
+<img src="../../assets/images/deep-learning/Distributed-Data-Processing.png" style="width:60%;float:left;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 
@@ -386,7 +395,6 @@ Notes:
 
 <img src="../../assets/images/spark/3rd-party/databricks-gartner-1.png" style="width:50%;float:right;clear:both;" /><!-- {"left" : 5.84, "top" : 1.09, "height" : 4.5, "width" : 4.4} -->
 
-
 * Founded by Spark's founders
 
 * Develops majority of Spark platform and offers commercial support
@@ -396,7 +404,6 @@ Notes:
 * Databricks is recognized as a leading provider for Data Analytics and Machine Learning platform  (Source: [Gartner report](https://databricks.com/p/whitepaper/gartner-magic-quadrant-2020-data-science-machine-learning))
 
 <img src="../../assets/images/logos/databricks-logo-1.png" style="width:30%;float:left;" /><!-- {"left" : 0.6, "top" : 7.87, "height" : 0.56, "width" : 3.28} -->
-
 
 ---
 
@@ -423,10 +430,10 @@ Notes:
 * Spark is pretty well supported on all major cloud platforms
 
 * Basic idea:
-    - Upload data into Cloud storage
-    - Spin up on-demand Spark cluster to process your data
-    - Shutdown when done
-    - Pay for use of compute and storage
+   - Upload data into Cloud storage
+   - Spin up on-demand Spark cluster to process your data
+   - Shutdown when done
+   - Pay for use of compute and storage
 
 * Amazon offers **Elastic Map Reduce (EMR)** that includes Spark
 
@@ -448,9 +455,9 @@ Notes:
   - Development: Windows, Mac, Linux
   - Deployment: Linux
 * Languages:
-    - JDK 8
-    - Scala 2.11, 2.12
-    - Python 3
+   - JDK 11
+   - Scala 2.12+
+   - Python 3
 * Hardware
 
 | Resource | Development                       | Production                                                        |
@@ -461,31 +468,15 @@ Notes:
 
 ---
 
-# Spark Scaling
-
----
-
-## Spark is a Distributed Engine
-
-* Spark distributes the work across many machines to achieve impressive scaling
-
-* Spark has been demonstrated to scale to thousands of nodes!
-
-* Let's look at how Spark scales
-    - on Hadoop
-    - in the Cloud
-
----
-
 ## Scaling on Hadoop (On Premise)
 
 * Hadoop achieves scale by **co-locating** data and compute
 * So applications running on Hadoop cluster, mostly process local data (aka **data locality**)
 * Pros:
-    - Works well on on-prem architecture (1G-10G networks)
-    - Very fast processing, because of data locality
+   - Works well on on-prem architecture (1G-10G networks)
+   - Very fast processing, because of data locality
 * Cons:
-    - The cluster size is fixed; very hard to scale up/down dynamically based on demand
+   - The cluster size is fixed; very hard to scale up/down dynamically based on demand
 
 <!-- TODO shiva -->
 <img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:47%;float:left;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
@@ -509,8 +500,8 @@ Notes:
 * It can deliver more than **1 Petabit/sec** of total bisection bandwidth.
 
 * To put this in perspective,
-    - enough for 100,000 servers to exchange information at 10Gb/s each
-    - enough to read the entire scanned contents of the Library of Congress in less than 1/10th of a second
+   - enough for 100,000 servers to exchange information at 10Gb/s each
+   - enough to read the entire scanned contents of the Library of Congress in less than 1/10th of a second
 
 ---
 
@@ -520,30 +511,32 @@ Notes:
 <img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
 
 * Pros:
-    - Gives a lot of flexibility on scaling and scheduling computes
-    - Can dynamicaly scale compute capacity up/down
-    - Leverages massive infrastructure the cloud vendors have
-    - Implemented by cloud vendors / hosted platforms
+   - Gives a lot of flexibility on scaling and scheduling computes
+   - Can dynamicaly scale compute capacity up/down
+   - Leverages massive infrastructure the cloud vendors have
+   - Implemented by cloud vendors / hosted platforms
 
 * Cons:
-    - Not easily implemented on-prem/in-house
-    - Need to be on a cloud environment
-    - Costs can add up for storage and compute
+   - Not easily implemented on-prem/in-house
+   - Need to be on a cloud environment
+   - Costs can add up for storage and compute
+
 ---
 
 ## Running a Spark Job
 
 * When a Spark application is launched, the following things happen:
-    - Spark talks to the **cluster manager (CM)**, to request resources
-    - CM allocates resources for the Spark application
-    - Spark then distributes the code to **worker nodes**
-    - **Executors** on worker nodes start computing
-    - Each Executor can employ multiple **tasks** to parallize the work
+   - Spark talks to the **cluster manager (CM)**, to request resources
+   - CM allocates resources for the Spark application
+   - Spark then distributes the code to **worker nodes**
+   - **Executors** on worker nodes start computing
+   - Each Executor can employ multiple **tasks** to parallize the work
 
 <!-- TODO shiva -->
 <img src="../../assets/images/spark/spark_architecture.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
+
 ## Parallelizing Computations
 
 <!-- TODO shiva -->
@@ -559,22 +552,338 @@ Notes:
 
 ---
 
-## Lab: Doing XYZ
+# Spark 3
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+---
 
+## Spark 3
 
-* **Overview:**
-    - Work with xyz
+<img src="../../assets/images/spark/3rd-party/spark-2-vs-3.png" style="width:50%;float:right;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark3-patches.png" style="width:35%;float:right;clear:both;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
 
-* **Approximate run time:**
-    - 20-30 mins
+* Spark 3 is a big release;  2020 Q3
 
-* **Instructions:**
-    - Please complete A, B, C
+* __Performance focused__
 
+* Over 3400+ patches
 
-Notes:
+* Easy to switch from 2.x
+
+* Spark 3 features:
+   - Delta Lake
+   - Spark SQL improvements (adaptive query execution)
+   - Better python performance
+   - Better Structured Streaming + metrics
+   - More on these in the next slides
+
+* Sources : [1](https://youtu.be/OLJKIogf2nU),  [2](https://databricks.com/blog/2020/06/18/introducing-apache-spark-3-0-now-available-in-databricks-runtime-7-0.html)
+
+---
+
+## Spark 3 SQL Improvements
+
+<img src="../../assets/images/spark/3rd-party/spark-sql-benchmark-1.png" style="width:20%;float:right;clear:both;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
+<img src="../../assets/images/spark/3rd-party/spark3-sql-aqe-1.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
+* Spark SQL is very widely used
+
+* Spark has one of the best SQL engines around
+
+* ANSI SQL support improved
+
+* __Adaptive Query Execution (AQE)__:
+   - Can adjust execution plan at runtime (change number of reduces ..etc)
+   - Can even observe **data skew** and make changes (This is a big deal, as it happens a lot in real lifw workloads)
+   - Can do effective joins automatically
+
+* [Source](https://youtu.be/OLJKIogf2nU)
+
+---
+
+## Spark 3 Python Improvements
+
+* New APIs for Pandas function
+
+* Faster [Apache Arrow](https://arrow.apache.org/) based calls to Python user code
+   - Apache Arrow is a language-independent columnar memory format, for efficient operations on modern hardware like CPUs and GPUs. 
+   - Also supports zero-copy reads for lightning-fast data access without serialization overhead.
+
+* UDFs (User Defined Functions) are easier to write and perform better
+
+* [Source](https://youtu.be/OLJKIogf2nU)
+
+<img src="../../assets/images/spark/3rd-party/spark3-python-1.png" style="width:40%;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
+---
+
+## Spark Ecosystem Projects
+
+* [Koalas](https://github.com/databricks/koalas) :  Pandas API over Spark
+
+* [Delta Lake](https://delta.io/) - Reliable, transactional table storage for Big Data
+
+* [Scikit Learn on Spark](https://pypi.org/project/spark-sklearn/)  Run ML algorithms from Scikit Learn library on Spark
+
+* [Spark Rapids](https://nvidia.github.io/spark-rapids/) - GPU acceleration
+
+* [Data-fu Spark](https://datafu.apache.org/docs/spark/getting-started.html) - A good collection of UDFs for Spark
+
+* [MLFLow](https://mlflow.org/) - Manage machine learning lifecycle
+
+* [More](https://spark.apache.org/third-party-projects.html) 
+
+<img src="../../assets/images/logos/spark-koalas-logo-1.png" style="width:20%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/logos/spark-delta-lake-logo-1.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+# Delta Lake
+
+---
+
+## Data Lakes Evolution
+
+* Data Lakes have emerged as critical part of enterprises
+   - 'Where all data comes to rest'
+* Cheap
+   - Compared to legacy databases, data lakes cost a fraction
+* Durable
+   - Most data lakes offer 7 - 10 nines (99.99999999) of durability
+   - 7 nines means 3 second downtime per year! ([Reference](https://en.wikipedia.org/wiki/High_availability))
+* Can store all kinds of data
+   - Structured (csv, json) and unstructured (video, pictures, binary) data
+
+<img src="../../assets/images/bigdata/3rd-party/data-lake-1.jpg" style="width:55%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Challenges with Data Lakes
+
+* Hard to update data
+   - Appends lead to incorrect reads
+   - Leads to GDPR compliance issues (can not selective delete data)
+
+* Failed jobs can leave data in inconsistent state (A crashed job can leave temporary data behind)
+
+* Combining real time operations (streaming) and batch analytics is not easy
+
+* Keeping historical data for compliance purposes can get expensive.  
+   - Keeping multiple copies at Petabyte scale can get expensive
+
+* Difficult to handle large metadata
+   - When data grows to Petabyte scale, metadata can become very large too (Terabytes of metadata)
+
+---
+
+## Challenges With Data Lakes
+
+* Too many files
+   - As data keeps accumulating, number of files increase over time, and performance decreases
+   - The problem is exarcebated when there are too many small files
+
+* Not high performant
+   - Querying growing dataset takes longer and longer
+   - Partitioning can help, but it is a rigid scheme and not very flexible
+
+* Data quality issues
+   - Schema changing overtime can introduce incompatiblities
+
+---
+
+## Delta Lake
+
+* An **opinionated approch** to building Data Lakes
+
+* Brings best of data warehousing and data lakes
+
+* Open source and open format (parquet)
+
+---
+
+## Delta Lake Implementation
+
+* **Every operation is transactional**
+
+* **Fully atomic** - Either fully succeeds or fully aborted
+
+* This fixes the following problems we observed on Data Lakes:
+   - Hard to append data
+   - Modification of data is difficult
+   - Jobs failing midway, leaving debris
+
+---
+
+## Delta Lake Implementation
+
+* All transactions are logged in a journal called **delta log**
+
+* Here is an example, all transactions are sequenced in the order
+
+```text
+/path/to/table/_delta_log
+   - 0000.json
+   - 0001.json
+   - ...
+   - 0010.json
+
+```
+
+* Since all operations are trasactional, now we can go back and retrieve past data easily --> **Time travel**
+
+```sql
+SELECT * FROM events
+TIMESTAMP AS OF ...
+
+SELECT * FROM events
+VERSION AS OF ...
+```
+
+* This solves the problem of
+   - Keeping historical data efficiently
+
+---
+
+## Delta Lake Implementation
+
+* Problem: _Handling large amount of metadata (100s GB or even into TB!)_
+
+* But Spark is already good at handling large data !
+
+* All Delta Lake metadata is stored alongside with actual data
+   - No need to keep a seperate catalog!
+   - And data and metadata are always in sync
+
+* Stored in open Parquet format
+
+* Parts of the metadata is cached and optimized for fast access
+
+---
+
+## Delta Lake Implementation
+
+* Delta Lake automatically **orders and indexes** data
+
+* Partitioning is done automatically based on data schema  (e.g timestamp)
+
+* As the data is indexed, basic statistics like MIN, MAX are computed automatically
+   - So a query like  
+   `SELECT MAX(col1) from TABLE1`  
+   can return results very very fast, without doing a whole table scan
+
+* __Z-Ordering__ indexing can optimize layout across multiple columns (e.g year, month and date)
+
+* This solves these problems:
+   - Too many files
+   - Poor performance
+
+---
+
+## Delta Lake Implementation
+
+* All data in Delta Lake **must conform to a strict schema (star etc)**
+
+* Schema is verified when adding/updating data
+
+* Can **set expectations** for a table
+   - Table will satisfy all expectations of the table at all times
+
+* For example, here we can make sure `timestamp` and `source` columns are not null
+
+```sql
+CREATE TABLE events (
+   timestamp  TIMESTAMP NOT NULL,
+   source STRING NOT NULL,
+   ...
+)
+```
+
+* This solves the following problem:
+   - Data quality issues
+
+---
+
+## Delta Lake Implementation Recap
+
+* Delta Lake solves the common problems in Data Lakes by using the following...
+
+* __ACID transactions__ - all or nothing updates/inserts
+
+* __Spark under the hood__ - to handle large metadata
+
+* __Indexing__ - Optimal data layout for efficient querying
+
+* __Schema validation and expectations__ - to keep data quality
+
+---
+
+## Delta Lake Connectors
+
+* Delta Lakes can be created on the following systems
+
+<img src="../../assets/images/spark/3rd-party/delta-lake-1-connectors.png" style="width:80%;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
+* [Image source](https://youtu.be/OLJKIogf2nU)
+
+---
+
+## Creating Delta Lakes
+
+* Creating tables is easy - just replace `USING parquet`  to <mark>`USING delta`</mark>
+
+```sql
+
+-- regular parquet table
+CREATE TABLE 
+...
+USING parquet
+
+-- Delta table
+CREATE TABLE 
+...
+USING delta
+```
+
+* Migration is easy too
+
+```sql
+CONVERT TO DELTA table_name
+```
+
+---
+
+## Delta Engine (Photon)
+
+* Highly optimized query engine for Data Lake
+
+* See [this video](https://youtu.be/OLJKIogf2nU) (from 53 minute mark) for an overview of Delta Engine
+
+* Available on Databricks platforms (not open source)
+
+<img src="../../assets/images/spark/3rd-party/delta-engine-benchmark-1.png" style="width:60%;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
+---
+
+## Future of Spark
+
+* [Project Zen](https://databricks.com/blog/2020/09/04/an-update-on-project-zen-improving-apache-spark-for-python-users.html) - Improve Python usability and Spark
+
+* Continue improving Spark SQL Adaptive Query Execution (AQE) engine
+
+* Continue improving ANSI SQL compliance
+
+---
+
+## Further Reading
+
+* [Learning Spark - 2nd edition](https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/) by Jules S. Damji, Brooke Wenig, Tathagata Das, Denny Lee
+
+* [High Performance Spark](https://www.oreilly.com/library/view/high-performance-spark/9781491943199/) by Holden Karau, Rachel Warren
+
+* [Databricks blog](https://databricks.com/blog) - keep up with latest Spark news
+
+<img src="../../assets/images/books/learning-spark-2nd-ed-9781492050049.jpeg" style="width:25%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->  &nbsp; 
+<img src="../../assets/images/books/high-performance-spark-9781491943205.jpeg" style="width:25%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 
@@ -582,9 +891,128 @@ Notes:
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
 
-
 * Let's go over what we have covered so far
 
 * Any questions?
 
 <img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+
+---
+
+# Hands on With Spark
+
+---
+
+## Lab: Access Lab Environment
+
+<img src="../../assets/images/generic/lab-setup.png" style="width:40%;float:right;"/><!-- {"left" : 1.84, "top" : 6.25, "height" : 2.18, "width" : 6.57} -->
+<img src="../../assets/images/generic/training-sandbox-1.png" style="max-width:40%;float:right;clear:both;"/><!-- {"left" : 5.8, "top" : 1.1, "height" : 4.02, "width" : 4.3} -->
+
+* We can use either
+   - training VMs in the Cloud
+   - or [Databricks community cloud](https://community.cloud.databricks.com/)
+
+* If using **training VMs**
+  - Allocate VMs to students in class
+
+  - Point them to IP address of the machine
+
+  - Access the IP address in a browser
+
+  - Make sure they can see the sandbox splash page
+
+---
+
+## Lab: Test Jupyter + Spark UI
+
+<img src="../../assets/images/generic/jupyter-labs-1.png" style="width:40%;float:right;"/> <!-- {"left" : 5.52, "top" : 1.8, "height" : 4.4, "width" : 4.46} -->
+
+ * Access **Jupyter Labs**
+
+ * Access **Spark Master UI**
+
+ * If accessing services don't work, it is highly likely a network issue. Try the following
+     - Try proxy access button
+     - Disable any VPN software on student's laptop
+     - Connect to 'guest' network
+     - Try connecting via 'mobile hotspot'
+
+Notes:
+
+---
+
+## Lab: Distribute Lab Bundle
+
+* **To instructor:**
+   - create a lab bundle
+
+```bash
+        $   cd spark-labs
+        $  ./assemble-labs.sh
+```
+
+<!-- {"left" : 0, "top" : 2.37, "height" : 1.05, "width" : 5.62} -->
+
+* This will create a zip file (`labs.out/spark-labs.zip`)
+* Distribute this bundle to students
+    - Upload it to Google drive or Amazon S3
+    - **Explain the difference between .md, .ipynb, .html files**
+
+* **To students**
+     - You can open html files in browser to see lab instructions
+     - If you have Jupyter environment setup, you can run   
+     __`./run-jupyter.sh`__   
+     and view the notebooks
+
+Notes:
+
+---
+
+## Lab: Lab Setup
+
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.02, "top" : 1.16, "height" : 3.88, "width" : 2.91} -->
+
+* **Overview:**
+   - Setting up the labs
+
+* **Approximate time:**
+   - 5 mins
+
+* **Instructions:**
+   - **SETUP-1** : instructions in the lab bundle
+
+Notes:
+
+---
+
+## Lab:  Testing123
+
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.02, "top" : 1.16, "height" : 3.88, "width" : 2.91} -->
+
+* **Overview:**
+   - Testing the environment
+
+* **Approximate time:**
+   - 5 mins
+
+* **Instructions:**
+   - Testing123
+
+Notes:
+
+---
+
+## Lab: First Look at Spark
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+   - We will get started with Spark
+
+* **Approximate run time:**
+   - 20-30 mins
+
+* **Instructions:**
+   - **Start-1**: First look at Spark (lab 2.1)
+
+Notes:

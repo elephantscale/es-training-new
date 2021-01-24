@@ -41,11 +41,11 @@ Notes:
 ## Machine Learning @ Scale
 
 * Going from laptop to cluster requires lot of effort
-    - Usually involves multiple teams
+  -Usually involves multiple teams
 
 * Spark enables laptop-->cluster
-    - Develop on laptop
-    - Deploy on cluster
+  -Develop on laptop
+  -Deploy on cluster
 
 * Cloud vendors are trying simplify this too
 
@@ -59,7 +59,8 @@ Notes:
 
 * Hadoop was the first popular distributed platform
 
-* 'Mahout' is a machine learning library built on top of Hadoop's MapReduce (MR) engine
+* 'Mahout' is a machine learning library built on top of Hadoop's MapReduce (MR)
+ engine
 
 * How ever, MR wasn't so great for iterative algorithms (machine learning)
 
@@ -69,18 +70,18 @@ Notes:
 
 * One of the design goals of Spark was to be a distributed ML Engine
 
-* Spark engine is much faster than MR; it does great at iterative tasks
+  -k engine is much faster than MR; it does great at iterative tasks
     - Lot of ML algorithms iterate over data to find convergence
 
-* Spark includes a native ML library
-    - Includes lot of popular algorithms out of the box!
+  -k includes a native ML library
+  -Includes lot of popular algorithms out of the box!
     - And the implementations are parallelized!
 
-* Spark supports caching datasets in memory:
-    - Datasets can be entirely cached in memory
+  -k supports caching datasets in memory:
+  -Datasets can be entirely cached in memory
     - And then do **in-memory compute** --> Super fast!
 
-* Multiple language APIs are supported: Java / Scala / Python / R
+  -iple language APIs are supported: Java / Scala / Python / R
     - **Spark + Python** is a very popluar combination
 ---
 
@@ -102,11 +103,11 @@ Notes:
 
 ## Spark ML Library Evolution
 
-* Earlier version of Spark ML implementation is **Spark MLLib**
-    - It is built on RDD data structures
+  -ier version of Spark ML implementation is **Spark MLLib**
+  -It is built on RDD data structures
     - Not the highest performance
 
-* Newer implementation is **Spark ML**
+  -r implementation is **Spark ML**
     - Uses newer/faster data structures ('dataframes/datasets')
 
 * Recommended to use the newer **ML** library
@@ -126,13 +127,13 @@ Notes:
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 
-* **Overview:**
+  -erview:**
     - Work with xyz
 
-* **Approximate run time:**
+  -proximate run time:**
     - 20-30 mins
 
-* **Instructions:**
+  -structions:**
     - Please complete A, B, C
 
 
