@@ -348,7 +348,7 @@ Notes:
 * Spark and Hadoop work well together
    - Spark can utilze HDFS distributed data
 
-<img src="../../assets/images/spark/spark-and-hadoop-2.png" style="width:90%;" /><!-- {"left" : 0.48, "top" : 3.29, "height" : 3.07, "width" : 9.29} -->
+<img src="../../assets/images/spark/spark-and-hadoop-2.png" style="width:80%;" /><!-- {"left" : 0.48, "top" : 3.29, "height" : 3.07, "width" : 9.29} -->
 
 ---
 
@@ -654,7 +654,7 @@ Notes:
 * Can store all kinds of data
    - Structured (csv, json) and unstructured (video, pictures, binary) data
 
-<img src="../../assets/images/bigdata/3rd-party/data-lake-1.jpg" style="width:55%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/bigdata/3rd-party/data-lake-1.jpg" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 

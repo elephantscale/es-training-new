@@ -1,0 +1,10 @@
+## Execute these commands from within 'es-reveal-md' docker image
+## To generate slides
+##      ./gen.sh
+
+
+## Course outline
+../spark-2days.pdf
+
+SPARK-Intro.md
+SPARK-Core.md
