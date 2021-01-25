@@ -586,3 +586,427 @@ data.show()
     - Shuffling data can be expensive, at large scale
 
 ---
+
+## Fault Tolerance
+
+* Failures do happen (when, not if) in distributed computing
+    - Machines can crash, processes can crash (running out of memory ..etc)
+    - **Question for the class**: What other failure scenarios can you think of in cluster computing?
+
+* Spark can **automatically recover** from run time errors!
+    - No intervention required from devs or admins
+
+* Spark tracks transformation **lineage**
+
+<img src="../../assets/images/spark/fault-tolerance-1.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+* So if a partition is missing,  it can be re-calculated from its parents
+
+* Here if partition 4' is missing (due to a crash) it can be recomputed from 4
+    - Spark can re-read partition 4 from storage (HDFS or Cloud storage) and recompute 4'
+
+---
+
+## Fault Tolerance
+
+* Narrow dependency examples : filter, distinct
+
+* Wide dependency examples : join, merge, sort
+
+* __Narrow dependency__ lineages are quicker to recover than __wide dependencies__
+
+* **Question for the class**:
+    - Why are narrow dependencies easier to recover in failure?
+    - Can you name some example operations for narrow and wide dependencies?
+
+<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:38%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/wide-dependency-1.png" style="width:28%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+Notes:
+
+Narrow dependencies are easier to recover, because the amount of data to re-read is smaller
+
+---
+
+## Fault Tolerance
+
+* Spark can recover from run-time failures
+    - Nodes crashing
+    - Tasks crashing
+
+* How ever it can not recover from 'user code' errors
+
+* __Question for class__: how can the following code fail?
+
+```python
+
+average = total / count
+
+```
+
+---
+
+## Anatomy of a Spark Job
+
+<img src="../../assets/images/spark/DAG-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+```scala
+val logs = sc.textFile("server.log")
+val errors = logs.filter(_.contains("Error"))
+val mysqlError = errors.filter(_.contains("mysql"))
+val sparkError = errors.filter(_.contains("spark"))
+```
+
+* Spark executes the workflow as a DAG (Direct Acyclic Graph)
+    - Directed (data flows in a certain direction
+    - Acyclic (no cycles/loops)
+
+* You can see DAGs from Spark UI
+
+---
+
+## Anatomy of a Spark Job
+
+* Application can have many **actions** (`count` , `save` ..etc)
+
+* Each action is a **job**
+
+* A Job may be executed in one or many **stages** (depending on the complexity)
+
+* A Stage may have one or more **tasks**
+
+<img src="../../assets/images/spark/spark-job-anatomy.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+---
+
+## Anatomy of a Spark Job - Stage
+
+* Stage is collection of tasks that can be executed in **ONE Executor without talking to another Executor**
+
+* If network communication is required then another stage begins
+    - E.g. shuffle operation
+
+* Operations that cause a shuffle operation : Sort,  groupByKey,  Join
+
+* Stages for a Job are usually executed in sequence
+    - One Stage's output is fed as input another Stage
+
+---
+
+## Shuffles
+
+* In the diagram below, key-value pairs are scattered across the nodes
+
+* If we want to group the data by keys (A, B),  we need to exchange/stream data across nodes over the network
+    - This is called **shuffle**
+
+* Shuffles tend to be slower operations than reading local data
+
+* Some operations needing shuffle : join, sort, group by
+
+<img src="../../assets/images/spark/shuffle-1.png" style="width:70%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+---
+
+## Spark Sample Program (Python)
+
+```python
+# read data
+f = spark.read.text("twinkle.txt")
+print(f.count())
+# 5
+
+f.show(truncate=False)
+# +---------------------------+
+# |value                      |
+# +---------------------------+
+# |twinkle twinkle little star|
+# |how I wonder what you are  |
+# |up above the world so high |
+# |like a diamond in the sky  |
+# |twinkle twinkle little star|
+# +---------------------------+
+
+## Run a filter
+filtered = f.filter(f.value.contains("twinkle"))
+filtered = f.filter(f["value"].contains("twinkle"))
+
+print(filtered.count())
+# 2
+
+filtered.show(truncate=False)
+
+# +---------------------------+
+# |value                      |
+# +---------------------------+
+# |twinkle twinkle little star|
+# |twinkle twinkle little star|
+# +---------------------------+
+
+```
+
+---
+
+## Spark Sample Program (Scala)
+
+```scala
+// read data
+val f = spark.read.text("twinkle.txt")
+f.count()
+// 5
+
+f.show(truncate=false)
+
+// +---------------------------+
+// |value                      |
+// +---------------------------+
+// |twinkle twinkle little star|
+// |how I wonder what you are  |
+// |up above the world so high |
+// |like a diamond in the sky  |
+// |twinkle twinkle little star|
+// +---------------------------+
+
+//// Run a filter
+val filtered = f.filter ($"value".contains("twinkle"))
+
+filtered.count()
+// 2
+
+filtered.show(truncate=false)
+
+// +---------------------------+
+// |value                      |
+// +---------------------------+
+// |twinkle twinkle little star|
+// |twinkle twinkle little star|
+// +---------------------------+
+
+```
+
+---
+
+## Lab: Spark Data Loading / Spark UI
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+   - Loading  datasets in Spark and getting familiar with Spark UI
+
+* **Approximate run time:**
+   - 15-20 mins
+
+* **Instructions:**
+   - Lab 3.2
+
+Notes:
+
+---
+
+# Caching
+
+---
+
+## Caching
+
+* In real world scenarios, we load the data from disks
+
+* If we try to load the same data again, caching from OS will speed things up a bit
+    - Imagine loading the same word document  again; It will be faster second time around
+
+* How ever a generic caching from OS, may not understand usage patterns of our data
+
+* Spark can cache data natively - for more efficient operations
+
+---
+
+## Spark Caching
+
+* Spark can cache data in
+    - Memory
+    - Disk
+    - Across nodes
+    - or various combinations
+
+<img src="../../assets/images/spark/data-flow-1.png" style="width:20%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+* Why cache data on disk?
+    - Some times we don't want to repeat expensive operations like join, multiple times
+    - Do it once and cache the results (e.g. `data3`)
+
+* Why cache on more than one node?
+    - Prevent data loss, in case a node goes down
+
+---
+
+## Spark Caching in Memory
+
+<img src="../../assets/images/spark/caching-1.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+* Earlier Spark versions (pre v2), Spark cached data in Java Heap memory
+
+* While this was fast (because code and data are within the same memory space), it wasn't scalable
+
+* When caching in JVMs we have to contend with **garbage collector**
+    - JVM garbage collectors are not good at dealing with large memory amounts (100 of Gigs)
+    - These days memory is cheap, Spark servers can have lot of memory (256 G,  512 G and more)
+    - New generation garbage collectors like G1 are more effective, but still don't scale to 100s of Gigs of memory pools
+
+* JVM memory issue has been a limiting factor for Big Data applications written in Java (Hadoop, Cassandra, Spark)
+
+---
+
+## Off Heap Caching
+
+* To overcome large memory issues in JVM, a new technique is developed to allocate memory outside JVM
+    - This is **off heap caching**
+
+* This method by passes JVM and allocates memory directly on Linux
+    - This eliminates garbage collector contention issues
+
+* Starting with Spark v2, the Tungsten engine, uses this memory allocation scheme by default
+
+<img src="../../assets/images/spark/caching-2.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+---
+
+## Caching in Memory
+
+* Data can be cached in memory raw (un-compressed) or compressed
+
+* Text data (CSV, JSON) compresses pretty well
+    - 5 - 10x compression possible
+    - So 10G data, can be cached in 1G memory space (10x compression)
+
+* Binary data (parquet data, photos ..etc) don't compress well - they are already in compressed format
+    - So caching these data types will take just as much space in memory
+    - Don't recommend compressing them again for caching (CPU cycles wasted, but don't result in any meaningful compression)
+
+```scala
+
+// cache raw data in memory, without compression
+data.cache()
+data.persist(StorageLevel.MEMORY_ONLY)
+
+// cache compressed data
+data.persist(StorageLevel.MEMORY_ONLY_SER)
+```
+
+---
+
+## Caching in Disk
+
+* If data is large, we may not have enough memory to cache it
+
+* So disk cache may be an option, to cache results of expensive operations (join, sort)
+
+* We can also cache **both in memory and disk**
+    - If not enough memory is available, Spark will evict previously cached data to make room for new data
+    - This will result in **data thrashing or swapping**, resulting in very bad performance
+    - So save both in memory and disk.  Even data is evicted from memory cache, it can be found in disk cache
+
+```scala
+// disk only
+data.persisit(StorageLevel.DISK_ONLY)
+
+// memory and disk - no compression
+data.persisit(StorageLevel.MEMORY_AND_DISK)
+
+// memory and disk - compressed
+data.persisit(StorageLevel.MEMORY_AND_DISK_SER)
+```
+
+---
+
+## Caching on Two Nodes
+
+* Data can be cached in two nodes
+
+* Protects against data loss if a node goes down
+
+```scala
+
+// cache in memory
+data.persist (StorageLevel.MEMORY_ONLY_2)
+
+// disk only
+data.persist (StorageLevel.DISK_ONLY_2)
+
+// memory and disk
+data.persist (StorageLevel.MEMORY_AND_DISK_2)
+
+```
+
+---
+
+## Spark Caching Performance RDD vs Dataset
+
+<img src="../../assets/images/spark/caching-3.png" style="width:30%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+* Here we see caching stats from Spark v1 and Spark v2 (using Tungsten engine)
+
+* Original datafile is 100M of CSV data
+    - RDD takes 334 M memory (3.3 x overhead)
+    - Dataset only taks 6.1 M (highly compressed, text data compresses well)
+
+* Tungsten provides highly effective caching:
+    - Compresses data smartly (e.g text data is compressed, not binary data)
+    - Uses **off heap caching** to allocate memory outside JVM
+
+---
+
+## In Memory File Systems
+
+* **Memory is the new disk**
+
+* Memory prices have been falling
+    - Year 2000 = $1000/GB
+    - Year 2016 = $3/GB
+
+* Typical Hadoop/Spark node has 100–300 G memory
+    - 10 node cluster @ 256 GB each = 2 TB of distributed memory!
+
+* In-memory processing is very attractive for iterative workloads like machine learning
+    - Baidu uses 100 node spark cluster with 2 PB of memory
+
+<img src="../../assets/images/spark/caching-5.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+---
+
+## In Memory File Systems
+
+* We are seeing in memory file systems coming mainstream
+    - Tachyon (Alluxio)
+    - Ignite from Gridgain
+
+* These in-memory file systems act as a giant, distributed cache between Spark and file systems (HDFS or Cloud file systems)
+
+<img src="../../assets/images/spark/tachyon-1.png" style="width:45%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+
+---
+
+## Lab: Spark Caching
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+   - Understand Spark caching
+
+* **Approximate run time:**
+   - 20-30 mins
+
+* **Instructions:**
+   - 3.3
+
+Notes:

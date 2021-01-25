@@ -562,21 +562,19 @@ Notes:
 <img src="../../assets/images/spark/3rd-party/spark3-patches.png" style="width:35%;float:right;clear:both;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
 
 * Spark 3 is a big release;  2020 Q3
-
 * __Performance focused__
-
-* Over 3400+ patches
-
+* Over 3400+ patches (alost half of them for Spark SQL)
 * Easy to switch from 2.x
-
 * Spark 3 features:
    - Delta Lake
    - Spark SQL improvements (adaptive query execution)
    - Better python performance
    - Better Structured Streaming + metrics
    - More on these in the next slides
-
-* Sources : [1](https://youtu.be/OLJKIogf2nU),  [2](https://databricks.com/blog/2020/06/18/introducing-apache-spark-3-0-now-available-in-databricks-runtime-7-0.html)
+* References
+   - [Spark Summit 2020 Keynote - Spark 3](https://youtu.be/OLJKIogf2nU)
+   - [Introducing Apache Spark 3.0 - blog](https://databricks.com/blog/2020/06/18/introducing-apache-spark-3-0-now-available-in-databricks-runtime-7-0.html)
+   - [Spark 3.0 Features with Examples](https://sparkbyexamples.com/spark/spark-3-0-features-with-examples-part-i/)
 
 ---
 
