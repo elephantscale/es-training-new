@@ -4,8 +4,6 @@
 <img src="../../assets/images/logos/python-logo-1.png" style="width:20%;" /><!-- {"left" : 5.23, "top" : 7.52, "height" : 0.56, "width" : 2.36} --> &nbsp;  &nbsp;
 <img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /><!-- {"left" : 8.15, "top" : 7.33, "height" : 0.94, "width" : 1.77} -->
 
-
-
 ---
 
 ## About This Class
@@ -27,10 +25,9 @@ Notes:
 
 ## Prerequisites & Expectations
 
-* Development background
-    - Need to be comfortable programming - there are many labs
-    - Our labs are in Python & Spark  
-        - If you don't know these, don't worry, we will walk you through it
+* Python development experience
+
+* Familiarity with Spark
 
 * We don't expect Math / Statistics background
 
@@ -51,7 +48,7 @@ Notes:
     - We acknowledge Math / Stats are essential inner workings of Machine Learning
     - A practitioner can go far in ML with a little fundamentals and without too deep knowledge in Math / Stats
 
-*  **Learn by practicing**
+* **Learn by practicing**
     - We do recommend you review the theories behind ML at your leisure
 
 Notes:
@@ -62,32 +59,13 @@ Notes:
 
 <img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 0.55, "top" : 1.79, "height" : 5.48, "width" : 9.16} -->
 
-
-Notes:
-
----
-
-## Goal For This ML Class: 'ML Engineer'
-
-
-|                                     |          API users         |                                               ML Engineer                                               |                    Data Scientists                    |
-|:-----------------------------------:|:--------------------------:|:-------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------:|
-|          __In a nutshell__          |            What            |                                                What & Why                                               |                   What, Why and How                   |
-|            __Background__           |         Developers         |                                     Developers, Analysts, Architects                                    |               Scientists (usually PhDs)               |
-|               __API__               |   Knows the basic of API   |                                           Sound API knowledge                                           |                Excellent API knowledge                |
-|              __Models__             | No understanding of models | Knows the fundamentals of model behind API (not necessarily the math/stats theories powering the model) | Has deep understanding of math/stats behind the model |
-|         __Model Validation__        |    copy-paste and pray!    |                           Knows how to test and improve the model iteratively                           |        Knows how to test and improve the model        |
-| __Can Come up with New Algorithms__ |             no             |                                        Can adopt a new algorithm                                        |            Can come up with new algorithms            |
-
-
-<!-- {"left" : 0.26, "top" : 1.22, "height" : 5.9, "width" : 9.75} -->
-
-
 Notes:
 
 ---
 
 ## Our Teaching Philosophy
+
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:40%;float:right;"/> <!-- {"left" : 1.7, "top" : 2.06, "height" : 5.53, "width" : 6.85} -->
 
 * Enable you to be a **'ML Engineer'** by giving you
     - The essential knowledge of ML
@@ -101,23 +79,9 @@ Notes:
 
 * Hands-on - lots and lots of labs! (learn by doing)
 
-
 Notes:
 
 * All the labs are verified at 1.3 even though latest is 1.4
-
----
-
-## Some Highlights of this Class
-
-* Machine Learning is the focus of this course
-* The concepts are generic you can implement them any ML platforms (R, Python, Spark)
-
-<img src="../../assets/images/machine-learning/some-highlights.png" alt="some-highlights.png" style="width:70%;"/> <!-- {"left" : 0.97, "top" : 3.87, "height" : 2.91, "width" : 8.3} -->
-
-
-Notes:
-
 
 ---
 
@@ -136,18 +100,14 @@ Notes:
 <img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /><!-- {"left" : 5.22, "top" : 5.64, "height" : 1.24, "width" : 1.7} --> &nbsp;  &nbsp;
 <img src="../../assets/images/logos/walmart-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> <!-- {"left" : 7.31, "top" : 5.95, "height" : 0.75, "width" : 2.6} -->
 
-
-
-
-
 Notes:
-
 
 ---
 
 ## Workshop Overview
 
 * **Day 1**
+    - Quick introduction to Spark
     - ML intro
     - ML Concepts
     - Statistics Primer
@@ -160,8 +120,6 @@ Notes:
     - Logistic Regression
     - SVM
     - Naïve Bayes
-
-
 
 ---
 
@@ -180,26 +138,6 @@ Notes:
     - Daily workshops (time permitting)
 
 Notes:
----
-
-## Lots of Labs: Learn By Doing
-
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.7, "top" : 2.06, "height" : 5.53, "width" : 6.85} -->
-
-
-
-
----
-
-
-## After The Class...
-
-<img src="../../assets/images/machine-learning/3rd-party/AFTER_THE_CLASS.jpg" alt="AFTER_THE_CLASS.jpg" style="width:50%;"/> <!-- {"left" : 1.69, "top" : 2, "height" : 5.65, "width" : 6.88} -->
-
-
-Notes:
-
-* By the end of the class...
 
 ---
 
@@ -217,12 +155,9 @@ Notes:
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
-
 Notes:
 
-
 ---
-
 
 ## Class Logistics
 
@@ -238,6 +173,5 @@ Notes:
     - Provided in the cloud
 
 ---
-
 
 ## Let's Get Started!

@@ -1,18 +1,22 @@
 ## To assemble md slides
-##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-order-ML-with-spark-python-3-days.txt
+##          ./gen.sh  0-slide-order-ML-with-spark-python-4-days.txt
 ## to make pdfs
-##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-order-ML-with-spark-python-3-days.txt pdf
-##  (-d will replace current assembly.out)
+##          ./gen.sh  0-slide-order-ML-with-spark-python-4-days.txt  pdf
 
 
 ## Course outline
-../machine-learning-with-spark.pdf
+# ../machine-learning-with-spark.pdf
 
 ## About
-About-Machine-Learning-With-Spark-3-days.md
+About-Machine-Learning-With-Spark-4-days.md
 
 ## Resources / References
 ../generic/ML-Resources.md
+
+## Spark
+../../spark/slides/SPARK-Intro.md
+../../spark/slides/SPARK-Core.md
+../../spark/slides/SPARK-SQL.md
 
 
 ## High level Intro
