@@ -878,22 +878,12 @@ CONVERT TO DELTA table_name
 
 * [High Performance Spark](https://www.oreilly.com/library/view/high-performance-spark/9781491943199/) by Holden Karau, Rachel Warren
 
+* [Spark - 10 years](https://youtu.be/OLJKIogf2nU) - from Spark + AI Summit 2020 
+
 * [Databricks blog](https://databricks.com/blog) - keep up with latest Spark news
 
-<img src="../../assets/images/books/learning-spark-2nd-ed-9781492050049.jpeg" style="width:25%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->  &nbsp; 
-<img src="../../assets/images/books/high-performance-spark-9781491943205.jpeg" style="width:25%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
----
-
-## Review and Q&A
-
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
-
-* Let's go over what we have covered so far
-
-* Any questions?
-
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/books/learning-spark-2nd-ed-9781492050049.jpeg" style="width:23%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->  &nbsp; 
+<img src="../../assets/images/books/high-performance-spark-9781491943205.jpeg" style="width:23%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 
@@ -1014,3 +1004,15 @@ Notes:
    - **Start-1**: First look at Spark (lab 2.1)
 
 Notes:
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
