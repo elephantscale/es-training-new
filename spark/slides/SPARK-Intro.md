@@ -189,7 +189,7 @@ Notes:
    - Machine Learning at scale
    - Classification/regression, collaborative filtering
 
-* __GraphX / GraphFrames:__ 
+* __GraphX / GraphFrames:__
    - Graph manipulation, graph-parallel computation
    - Social network friendships, link data
 
@@ -346,7 +346,7 @@ Notes:
    - Engines: MapReduce, Spark
 
 * Spark and Hadoop work well together
-   - Spark can utilze HDFS distributed data
+   - Spark can utilize HDFS distributed data
 
 <img src="../../assets/images/spark/spark-and-hadoop-2.png" style="width:80%;" /><!-- {"left" : 0.48, "top" : 3.29, "height" : 3.07, "width" : 9.29} -->
 
@@ -512,7 +512,7 @@ Notes:
 
 * Pros:
    - Gives a lot of flexibility on scaling and scheduling computes
-   - Can dynamicaly scale compute capacity up/down
+   - Can dynamically scale compute capacity up/down
    - Leverages massive infrastructure the cloud vendors have
    - Implemented by cloud vendors / hosted platforms
 
@@ -530,7 +530,7 @@ Notes:
    - CM allocates resources for the Spark application
    - Spark then distributes the code to **worker nodes**
    - **Executors** on worker nodes start computing
-   - Each Executor can employ multiple **tasks** to parallize the work
+   - Each Executor can employ multiple **tasks** to parallelize the work
 
 <!-- TODO shiva -->
 <img src="../../assets/images/spark/spark_architecture.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
@@ -592,7 +592,7 @@ Notes:
 
 * __Adaptive Query Execution (AQE)__:
    - Can adjust execution plan at runtime (change number of reduces ..etc)
-   - Can even observe **data skew** and make changes (This is a big deal, as it happens a lot in real lifw workloads)
+   - Can even observe **data skew** and make changes (This is a big deal, as it happens a lot in real life workloads)
    - Can do effective joins automatically
 
 * [Source](https://youtu.be/OLJKIogf2nU)
@@ -678,20 +678,20 @@ Notes:
 
 * Too many files
    - As data keeps accumulating, number of files increase over time, and performance decreases
-   - The problem is exarcebated when there are too many small files
+   - The problem is exacerbated when there are too many small files
 
 * Not high performant
    - Querying growing dataset takes longer and longer
    - Partitioning can help, but it is a rigid scheme and not very flexible
 
 * Data quality issues
-   - Schema changing overtime can introduce incompatiblities
+   - Schema changing overtime can introduce incompatibilities
 
 ---
 
 ## Delta Lake
 
-* An **opinionated approch** to building Data Lakes
+* An **opinionated approach** to building Data Lakes
 
 * Brings best of data warehousing and data lakes
 
@@ -727,7 +727,7 @@ Notes:
 
 ```
 
-* Since all operations are trasactional, now we can go back and retrieve past data easily --> **Time travel**
+* Since all operations are transactional, now we can go back and retrieve past data easily --> **Time travel**
 
 ```sql
 SELECT * FROM events
@@ -749,7 +749,7 @@ VERSION AS OF ...
 * But Spark is already good at handling large data !
 
 * All Delta Lake metadata is stored alongside with actual data
-   - No need to keep a seperate catalog!
+   - No need to keep a separate catalog!
    - And data and metadata are always in sync
 
 * Stored in open Parquet format
@@ -958,8 +958,8 @@ Notes:
 
 * **To students**
      - You can open html files in browser to see lab instructions
-     - If you have Jupyter environment setup, you can run   
-     __`./run-jupyter.sh`__   
+     - If you have Jupyter environment setup, you can run
+     __`./run-jupyter.sh`__
      and view the notebooks
 
 Notes:

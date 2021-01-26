@@ -17,7 +17,7 @@
 
 ## Spark Core
 
-<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-components-core.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * Spark Core handles 
     - Task allocation
@@ -401,7 +401,7 @@ lines.collect()
 
 ## Dataframes
 
-<img src="../../assets/images/spark/dataframes-1.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-dataframe-architecture.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * Dataframes are created for providing easy to use APIs for structured data
 
@@ -704,7 +704,7 @@ val sparkError = errors.filter(_.contains("spark"))
 
 * Some operations needing shuffle : join, sort, group by
 
-<img src="../../assets/images/spark/shuffle-1.png" style="width:70%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/shuffle-1.png" style="width:65%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ---
 
@@ -980,7 +980,7 @@ data.persist (StorageLevel.MEMORY_AND_DISK_2)
 
 * These in-memory file systems act as a giant, distributed cache between Spark and file systems (HDFS or Cloud file systems)
 
-<img src="../../assets/images/spark/tachyon-1.png" style="width:45%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/tachyon-1.png" style="width:43%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ---
 
