@@ -56,7 +56,7 @@
 
 ---
 
-## How SageMaker Works?
+## How does SageMaker Work?
 
 <img src="../../../assets/images/machine-learning/Machine-Learning-SageMaker-Works.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.74, "height" : 6.16, "width" : 8.21} -->
 
