@@ -73,13 +73,13 @@ $   spark-shell
 * Start with 4 worker threads
 
 ```bash
-$   spark-shell  --master [4]
+$   spark-shell  --master local[4]
 ```
 
 * Start worker threads for each CPU core
 
 ```bash
-$   spark-shell  --master [*]
+$   spark-shell  --master local[*]
 ```
 
 * Connect to a Spark cluster
@@ -113,13 +113,13 @@ $   pyspark
 * Start with 4 worker threads
 
 ```bash
-$   pyspark  --master [4]
+$   pyspark  --master local[4]
 ```
 
 * Start worker threads for each CPU core
 
 ```bash
-$   pyspark  --master [*]
+$   pyspark  --master local[*]
 ```
 
 * Connect to a Spark cluster
@@ -424,6 +424,8 @@ data.show()
 
 ## Dataset
 
+<img src="../../assets/images/spark/dataset-1.png" style="width:38%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
 * Datasets were introduced in Spark 2
 
 * They provide a unified APIs
@@ -436,7 +438,6 @@ data.show()
 
 * Here we see how Datasets are very memory efficient compared to RDDs
 
-<img src="../../assets/images/spark/dataset-1.png" style="width:38%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ---
 
@@ -589,16 +590,16 @@ data.show()
 
 ## Fault Tolerance
 
+<img src="../../assets/images/spark/fault-tolerance-1.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
 * Failures do happen (when, not if) in distributed computing
     - Machines can crash, processes can crash (running out of memory ..etc)
-    - **Question for the class**: What other failure scenarios can you think of in cluster computing?
+    - **Question for the class**: What other failure scenarios can you think of?
 
 * Spark can **automatically recover** from run time errors!
     - No intervention required from devs or admins
 
 * Spark tracks transformation **lineage**
-
-<img src="../../assets/images/spark/fault-tolerance-1.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * So if a partition is missing,  it can be re-calculated from its parents
 
@@ -617,7 +618,6 @@ data.show()
 
 * **Question for the class**:
     - Why are narrow dependencies easier to recover in failure?
-    - Can you name some example operations for narrow and wide dependencies?
 
 <img src="../../assets/images/spark/narrow-dependency-1.png" style="width:38%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 <img src="../../assets/images/spark/wide-dependency-1.png" style="width:28%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
@@ -634,14 +634,16 @@ Narrow dependencies are easier to recover, because the amount of data to re-read
     - Nodes crashing
     - Tasks crashing
 
-* How ever it can not recover from 'user code' errors
+* How ever it can not recover from 'user code' errors :-)
 
 * __Question for class__: how can the following code fail?
 
 ```python
-
 average = total / count
+```
 
+```scala
+val name_lower = name.toLower()
 ```
 
 ---
@@ -984,18 +986,6 @@ data.persist (StorageLevel.MEMORY_AND_DISK_2)
 
 ---
 
-## Review and Q&A
-
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
-
-* Let's go over what we have covered so far
-
-* Any questions?
-
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
-
----
-
 ## Lab: Spark Caching
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
@@ -1010,3 +1000,17 @@ data.persist (StorageLevel.MEMORY_AND_DISK_2)
    - 3.3
 
 Notes:
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+
+---
