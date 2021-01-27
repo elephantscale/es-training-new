@@ -332,7 +332,7 @@ Notes:
 |------------------------------------	|-------------------	|-------------------------------------------------------------------------	|
 | pca_mnist3                         	| pca               	| PCA                                                                     	|
 | seq2seq_translation                	| seq2seg           	| Machine translation Based on MXNet                                      	|
-| xgboost_abalone (continuous valus) 	| xgboost           	| Gradient Boosting Improved Random Forests Learns from previous mistakes 	|
+| xgboost_abalone (continuous values) 	| xgboost           	| Gradient Boosting Improved Random Forests Learns from previous mistakes 	|
 | xgboost_mnist (classifier)         	| Same              	| Same                                                                    	|
 <!-- {"left" : 0.25, "top" : 1.31, "height" : 3.17, "width" : 9.75} -->
 
