@@ -75,9 +75,10 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
      - Transform (get it ready for ML)
 
   * Obtaining Data
-     - In house (e.g. user click behavior)
-     - Purchase (e.g. from data brokers - user's search history ..etc.)
-     - Public data (e.g. Census data)
+     - Lab-generated: instruments
+     - In-house (e.g. user click behavior)
+     - Purchase (e.g. from data brokers - user's search history, etc.)
+     - Public data (e.g. Census data, NIH Data)
 
 ---
 
@@ -101,7 +102,7 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
 
   * In SageMaker, we do this part using Jupyter notebook environment provided
 
-  * Data is stored in S3:S3 can support small (few Kilo bytes to Mega bytes) to huge datasets (TB, PB).
+  * Data is stored in S3:S3 can support small (a few KB to MB) to huge datasets (TB, PB).
 
 <img src="../../../assets/images/logos/aws-s3-logo-1.png" style="width:20%; "/><!-- {"left" : 3.58, "top" : 7.01, "height" : 1.29, "width" : 3.09} -->
 
@@ -117,9 +118,9 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.
      - Can use algorithms provided by SageMaker
      - Or bring your own
 
-  * Training can consume lot of resources (CPU, GPU, Memory, multiple machines)
+  * Training can consume lot of resources (CPU, GPU, TPU - Trainium when available, Memory, multiple machines)
 
-     - SageMaker provides elastic scalability on AWS
+     - SageMaker provides elastic scalability
 
   * Evaluating the Model:
      - Can use Jupyter notebook
