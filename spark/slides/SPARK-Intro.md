@@ -216,7 +216,7 @@ Notes:
 
 ---
 
-## Spark Use Cases
+## Spark Initial Use Cases
 
 <img src="../../assets/images/logos/teralytics-logo-1.jpg" style="width:30%;float:right;" /><!-- {"left" : 8.22, "top" : 0.96, "height" : 0.83, "width" : 1.99} -->
 
@@ -234,6 +234,14 @@ Notes:
    - 120 line Scala program with ML lib replaced 15,000 lines of C++
    - Spark took 30 minutes to run on 100 million samples
    - [Source](https://www.dezyre.com/article/top-5-apache-spark-use-cases/271)
+
+---
+
+## Spark for research
+
+* [CERN](https://databricks.com/session/cerns-next-generation-data-analysis-platform-with-apache-spark)
+* [Genomics](https://databricks.com/session/scaling-genomics-on-apache-spark-by-100x)
+* [Time series](https://databricks.com/session/distributed-indexing-framework-for-big-time-series-data-for-apache-spark)
 
 ---
 
