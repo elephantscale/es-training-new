@@ -623,6 +623,24 @@ Notes:
 
 ---
 
+## Spark 3 and GPU
+
+<img src="../../assets/images/spark/3rd-party/spark-gpu-nvidia-1.png" style="width:40%;float:right;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+
+* Spark 3 recognizes GPUs as a first-class resource along with CPU and system memory
+
+* So Spark can place GPU-accelerated workloads directly onto servers containing the necessary GPU resources
+
+* Operations on Dataframes, Spark SQL and Spark ML can utilize GPU
+
+* [NVIDIA Rapids](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/apache-spark-3/) library enables GPU acceleration for Spark
+
+- References:
+   - [NVIDIA page on Spark + GPU](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/apache-spark-3/)
+   - [Get free ebook on Spark + GPU](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/apache-spark-3/ebook-sign-up/)
+
+---
+
 ## Spark Ecosystem Projects
 
 * [Koalas](https://github.com/databricks/koalas) :  Pandas API over Spark

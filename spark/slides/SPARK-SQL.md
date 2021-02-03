@@ -809,6 +809,76 @@ peopleDF.printSchema()
 
 
 ```
+---
+
+## Store and Load Schemas
+
+* This is a cool technique, you can use when:
+    - The schema is stable
+    - And we have lots of columns, and we don't want to manually write the schema for 100s of columns
+
+```python
+import json
+
+## first, infer the schema on a small sample file
+data = spark.read.json('sample.json')
+schema = data.schema()
+
+## let's see the schema
+# print(json.dumps(schema.jsonValue(), indent=2))
+# {
+#   "type": "struct",
+#   "fields": [
+#     {
+#       "name": "Name",
+#       "type": "string",
+#       "nullable": true,
+#       "metadata": {}
+#     },
+#     {
+#       "name": "Age",
+#       "type": "integer",
+#       "nullable": true,
+#       "metadata": {}
+#     }
+#     ...
+#   ]
+# }
+```
+
+---
+
+## Store and Load Schema
+
+* Here, we are going to calculate the schema once and store it, so it can be retrieved later
+
+* Infer schema from sample data and save the schema - one time action
+
+```python
+## first, infer the schema on a small sample file
+data = spark.read.json('sample-data.json')
+schema = data.schema()
+schema_json = schema.json()
+## Save 'schema_json' to a file named 'schema_json.txt'
+
+```
+
+* Now any time we read the data file, read the schema back and use it - again and again!
+
+```python
+import json 
+
+## read back the schema file (small file, reading is very fast!)
+schema_json = spark.read.text("schema_json.txt").first()[0]
+
+## recreate schema from it
+schema = StructType.fromJson(json.loads(schema_json))
+
+## And supply the schema when reading data
+data = spark.read.json('/data/json/', schema=schema)
+```
+
+* References: [1](https://szczeles.github.io/Reading-JSON-CSV-and-XML-files-efficiently-in-Apache-Spark/)
 
 ---
 

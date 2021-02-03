@@ -2,7 +2,6 @@
 
 <img src="../../assets/images/logos/spark-mllib-logo.png" style="width:35%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
 
-
 ---
 
 ## Objectives
@@ -41,14 +40,13 @@ Notes:
 ## Machine Learning @ Scale
 
 * Going from laptop to cluster requires lot of effort
-  -Usually involves multiple teams
+  - Usually involves multiple teams
 
 * Spark enables laptop-->cluster
-  -Develop on laptop
-  -Deploy on cluster
+  - Develop on laptop
+  - Deploy on cluster
 
 * Cloud vendors are trying simplify this too
-
 
 <!-- TODO shiva -->
 <img src="../../assets/images/google-cloud/data-science-laptop-to-cluster-1.png" style="width:40%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
@@ -59,8 +57,7 @@ Notes:
 
 * Hadoop was the first popular distributed platform
 
-* 'Mahout' is a machine learning library built on top of Hadoop's MapReduce (MR)
- engine
+* 'Mahout' is a machine learning library built on top of Hadoop's MapReduce (MR) engine
 
 * How ever, MR wasn't so great for iterative algorithms (machine learning)
 
@@ -70,19 +67,20 @@ Notes:
 
 * One of the design goals of Spark was to be a distributed ML Engine
 
-  -k engine is much faster than MR; it does great at iterative tasks
-    - Lot of ML algorithms iterate over data to find convergence
+* Spark engine is much faster than MR; it does great at iterative tasks
+  - Lot of ML algorithms iterate over data to find convergence
 
-  -k includes a native ML library
-  -Includes lot of popular algorithms out of the box!
+* Spark includes a native ML library
+  - Includes lot of popular algorithms out of the box!
     - And the implementations are parallelized!
 
-  -k supports caching datasets in memory:
-  -Datasets can be entirely cached in memory
-    - And then do **in-memory compute** --> Super fast!
+* Spark supports caching datasets in memory:
+  - Datasets can be entirely cached in memory
+  - And then do **in-memory compute** --> Super fast!
 
-  -iple language APIs are supported: Java / Scala / Python / R
+* Multiple language APIs are supported: Java / Scala / Python / R
     - **Spark + Python** is a very popluar combination
+
 ---
 
 ## Parallelizing Computations
@@ -98,16 +96,15 @@ Notes:
 
 * Machine learning computations are more complex; But Spark handles the parallelism
 
-
 ---
 
 ## Spark ML Library Evolution
 
-  -ier version of Spark ML implementation is **Spark MLLib**
-  -It is built on RDD data structures
+* Earlier version of Spark ML implementation is **Spark MLLib**
+    - It is built on RDD data structures
     - Not the highest performance
 
-  -r implementation is **Spark ML**
+* Newer implementation is **Spark ML**
     - Uses newer/faster data structures ('dataframes/datasets')
 
 * Recommended to use the newer **ML** library
@@ -127,13 +124,13 @@ Notes:
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 
-  -erview:**
+* **Overview:**
     - Work with xyz
 
-  -proximate run time:**
+* **Approximate run time:**
     - 20-30 mins
 
-  -structions:**
+* **Instructions:**
     - Please complete A, B, C
 
 
