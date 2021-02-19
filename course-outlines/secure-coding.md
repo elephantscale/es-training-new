@@ -4,9 +4,12 @@
 © Elephant Scale
 February 18, 2021
 
-
-
 * Today, hackers have achieved tremendous successes while the software developers are just beginning to learn about secure coding. This course is for developers who want to defend against hackers.
+* SolarWinds was the largest hack of the century: a thousand Russian hackers would work daily work on it for almost a year, spying on
+tens of thousands of the US enterprises and government agencies, through the software distributed by SolarWinds.
+* This course is build to help your company avoid a similar disaster. Presented as a series of red team - blue team exercises,
+it leads developers to interchangeably play the attack and defense roles, exposing to both sides of the cybersecurity domain 
+and raising the overall level of defense for your company.
 * The course is intended for software architects and engineers. It gives them a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student’s participation. 
 
 ##  Course objectives
