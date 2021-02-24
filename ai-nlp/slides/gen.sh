@@ -10,5 +10,5 @@ $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    -d 0-slide-order.txt   $@
 ### ======= half day =======
 # pandoc   ../../course-outlines/donis-marshal/text-analytics-using-machine-learning.md    -o text-analytics-using-machine-learning.pdf
 # pandoc   ../../course-outlines/donis-marshal/text-analytics-using-machine-learning.md    -o text-analytics-using-machine-learning.docx
-# $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    -d 0-slide-order-donis-half-day.txt   $@
+# $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh    -d 0-slide-order-half-day.txt   $@
 ### ======= end half day =======

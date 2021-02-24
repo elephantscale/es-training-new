@@ -10,11 +10,13 @@ Lab env : Google Colab
 
 - NLP-Intro : 1 hr - 1.5 hrs
   - spend some on demos, let the students play around .. they are fun and very engaging
+  - Then jump into lab
 
 - Lab
   - distribute lab bundle ( look at ai-nlp-labs)
   - introduce google colab (5 mins)
   - text cleanup lab - 10 - 15 mins
+  - text blob lab - 10 mins
 
 - Spacy: (total time - 1hr)
   - quick intro may be 20 mins
@@ -23,6 +25,6 @@ Lab env : Google Colab
 
 - Transformers: total time 1 hr
   - quick theory
-  - GPT2 lab
+  - QA lab
 
 - Q&A (10 mins)
