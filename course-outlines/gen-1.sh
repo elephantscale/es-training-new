@@ -12,3 +12,7 @@ do
     pandoc $md  -o  "${md%\.*}.pdf"
 
 done
+
+# For a pptx
+# From inside a Cybersecurity directory
+# python /home/mark/projects/ES/utils/presentations/md2pptx.py SolarWinds-webinar.md
