@@ -7,7 +7,7 @@
 <img src="../assets/images/people/sujee-maniyam-1.jpg" style="width:20%;float:right;" />
 <img src="../assets/images/books/hbase-design-patterns.png" style="width:20%;float:right;clear:both;" />
 
-* Consult & teach **AI, Data Science, Big Data and Cloud** technologies
+* Consult & teach **AI, Data Science, Big Data, Cloud and Devops** technologies
 
 * Author
     - [__'Hadoop illuminated'__](http://hadoopilluminated.com/):  open source book

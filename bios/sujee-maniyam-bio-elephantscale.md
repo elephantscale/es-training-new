@@ -13,7 +13,7 @@
 
 * Founder / Principal @ [ElephantScale](http://elephantscale.com)
 
-* Consult & teach **AI, Data Science, Big Data and Cloud** technologies
+* Consult & teach **AI, Data Science, Big Data, Cloud and Devops** technologies
 
 * Author
     - [__'Hadoop illuminated'__](http://hadoopilluminated.com/):  open source book
