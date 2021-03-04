@@ -4,7 +4,7 @@
 
 ## "Historic mess" - Wired
 
-~[](../images/solarwinds.jpg)
+![](../images/solarwinds.jpg)
 
 Notes:
 
@@ -18,7 +18,7 @@ https://www.wired.com/story/russia-solarwinds-hack-roundup/?redirectURL=https%3A
 * Russia's hack of IT management company SolarWinds began as far back as March 2020
 * Came to light when the perpetrators used that access to break into the cybersecurity firm FireEye, which first disclosed a breach on December 9, 2020
 
-![](../images/pexels-oliver-schmid-4394299.jpg)
+![](../images/pexels-pixabay-73869.jpg)
 
 ---
 
@@ -111,7 +111,7 @@ https://www.technologyreview.com/2021/03/01/1020089/apple-walled-garden-hackers-
 
 ---
 
-# The problem
+## The problem
 
 * Hackers need to find only one whole
 * Developers need to protect all of them
@@ -123,7 +123,35 @@ https://www.technologyreview.com/2021/03/01/1020089/apple-walled-garden-hackers-
 
 ---
     
+## Not quite our approach
+
+![](../images/cyber.png)
+
+---
+
 ## Our approach
+
+* DO 
+    * Start game
+    * Red vs Blue
+    * Reward developers
+        * Log attacks, reward defenses
+        * Keep stats, leaderboard
+* FOR EACH (Known-hack)
+
+![](../images/pexels-jeshootscom-442576.jpg)
+
+---
+
+## Of course, best practices
+
+* Known vuln scan
+* Containerize...
+* Hash signatures of build artifacts
+* CI/CD for Sec
+
+
+![](../images/pexels-zen-chung-5745229.jpg)
 
 ---
 
