@@ -87,7 +87,8 @@ https://www.wired.com/story/russia-solarwinds-hack-roundup/?redirectURL=https%3A
 * US has invested billions of dollars in Einstein, a system designed to detect digital intrusions
 * SolarWinds hack was what's known as a "supply chain" attack
 * supply chain threat should be treated more seriously
-* See recent Azure buziness partner hack
+* See recent Azure business partner hack
+
 ![](../images/pexels-photomix-company-226746.jpg)
 
 ---
@@ -95,7 +96,40 @@ https://www.wired.com/story/russia-solarwinds-hack-roundup/?redirectURL=https%3A
 
 ## Apple's approach
 
+* **walled garden**
+* All apps go through a strict Apple approval process
+* But when the most advanced hackers do succeed in breaking in
+    * Apple’s extraordinary defenses end up protecting the attackers themselves
+* "It’s a double-edged sword" - _Bill Marczak_
+    
+![](../images/pexels-mali-maeder-102104.jpg)
 
+    
 Notes:
 
 https://www.technologyreview.com/2021/03/01/1020089/apple-walled-garden-hackers-protected/
+
+---
+
+# The problem
+
+* Hackers need to find only one whole
+* Developers need to protect all of them
+* Hackers get huge payout
+* Developers get nothing if they are secure
+    * But are blamed when they are hacked
+    
+![](../images/pexels-rfstudio-3867211.jpg)
+
+---
+    
+## Our approach
+
+---
+
+## My source of excitement
+
+![](../images/riskybiz.png)
+
+---
+
