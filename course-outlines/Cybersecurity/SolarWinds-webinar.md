@@ -76,9 +76,25 @@ https://www.wired.com/story/russia-solarwinds-hack-roundup/?redirectURL=https%3A
 
 ## Let's go deeper into the hack
 
+* Why SolarWinds was a good target
+    * hundreds of thousands of customers
+    * 18,000 who were vulnerable to Russia's attack
+    * They rely on it for network monitoring and other services
+![](../images/pexels-clem-onojeghuo-375889.jpg)
+    
+## Bypass anti-intrusion systems
+
+* US has invested billions of dollars in Einstein, a system designed to detect digital intrusions
+* SolarWinds hack was what's known as a "supply chain" attack
+* supply chain threat should be treated more seriously
+* See recent Azure buziness partner hack
+![](../images/pexels-photomix-company-226746.jpg)
+
+---
 
 
 ## Apple's approach
+
 
 Notes:
 
