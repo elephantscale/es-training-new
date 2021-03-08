@@ -8,3 +8,6 @@
 
 SPARK-Intro.md
 SPARK-Core.md
+SPARK-SQL.md
+SPARK-Performance.md
+Delta-Lake.md
