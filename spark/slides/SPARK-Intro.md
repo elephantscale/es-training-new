@@ -670,7 +670,7 @@ Notes:
     - Transactions are supported
     - Scalable to massive amount of data
 
-* For more details see [Delta-Lake](Delta-Lake.md) section
+* For more details see **Delta-Lake** section
 
 ---
 

@@ -10,14 +10,14 @@
 ## About
 About-Machine-Learning-With-Spark-4-days.md
 
-## Resources / References
-../generic/ML-Resources.md
-
 ## Spark
 ../../spark/slides/SPARK-Intro.md
 ../../spark/slides/SPARK-Core.md
 ../../spark/slides/SPARK-SQL.md
+../../spark/slides/SPARK-Performance.md
 
+## Resources / References
+../generic/ML-Resources.md
 
 ## High level Intro
 ../generic/Machine-Learning-Primer.md
