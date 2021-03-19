@@ -1,8 +1,6 @@
 # Terraform Walk-Through
 
 ---
-# Getting Started
-
 ## Our Plan
 
 * Getting started with Terraform
@@ -35,8 +33,9 @@
 * If you are using an existing AWS account, it must have a __Default VPC__ in it.
 * If the instructor provided a student account, you can use that   
  
-![](../../assets/images/terraform/add-user.png) 
+![](../artwork/add-user.png) 
 Notes:
+
 
 ---
 
@@ -49,7 +48,7 @@ Notes:
     * CloudWatchFullAccess
     * IAMFullAccess
 * For simplicity, you can give your user admin permissions
-![](../../assets/images/terraform/user-permissions.png)
+![](../artwork/user-permissions.png) 
              
 ## Install Terraform
 
@@ -59,11 +58,11 @@ Notes:
     * `brew install terraform`
 * You may use a cloud server if provided by the instructor    
 * You may use Terraform cloud account
-![](../../assets/images/terraform/terraform-cloud-account.png)
+![](../artwork/terraform-cloud-account.png)
 
 ---
 ## Verify `terraform` Version
-
+ 
 * Ubuntu example
 
 
@@ -81,7 +80,7 @@ Notes:
 
 ## Now What?
 
-![](../../assets/images/terraform/terraform-help.png)
+![](../artwork/terraform-help.png)
 
 ---
 
@@ -120,7 +119,7 @@ Notes:
 
 * Now you will be adding resources, like this:      
 
-![](../../assets/images/terraform/terraform-resources.png)
+![](../artwork/terraform-resources.png) 
 
 ---
 
@@ -157,7 +156,7 @@ Notes:
 ---
 ## Result of `terraform init`
 
-![](../../assets/images/terraform/terraform-init.png)
+![](../artwork/terraform-init.png)
 
 ---
 ## Result of "terraform plan"
@@ -226,7 +225,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 * Verify that the server was indeed created
 
 
-![](../../assets/images/terraform/terraform-apply-01.png)
+![](../artwork/terraform-apply-01.png) 
 ---
 
 ## Lab: Terraform Hello World
@@ -256,12 +255,12 @@ resource "aws_instance" "example" {
 * Run `terraform apply`
 * Verify that we gave our server a name
 
-![](../../assets/images/terraform/terraform-apply-02.png)
+![](../artwork/terraform-apply-02.png)
 ---
 
 ## Deploy a Single Web Server
 
-![](../../assets/images/terraform/deploy-web-server.png)
+![](../artwork/deploy-web-server.png)
 
 ---
 ## Make a Web Server
@@ -276,6 +275,7 @@ nohup busybox httpd -f -p 8080 &
 
 * However, how should we put it into our instance?
 * We will add it to the aws_instance, as _User Data_ configuration
+---
 
 ## Adding a Script to the Instance
 
@@ -310,7 +310,7 @@ resource "aws_security_group" "instance" {
   }
 }
 ```
-
+---
 ## CIDR Blocks
 
 * The `ingress` in this group allows incoming TCP requests
@@ -349,7 +349,7 @@ aws_security_group.instance.id
 
 ## Altogether
 
-![](../../assets/images/terraform/terraform-example-01.png)
+![](../artwork/terraform-example-01.png)
 
 ## New Result of "terraform plan"
 
@@ -370,12 +370,12 @@ Plan: 2 to add, 0 to change, 1 to destroy.
 
 ## New Result of "terraform apply"
 
-![](../../assets/images/terraform/terraform-apply-02.png)
+![](../artwork/terraform-apply-02.png)
 
 ---
 ## Et Voila!
 
-![](../../assets/images/terraform/terraform-apply-03.png)
+![](../artwork/terraform-apply-03.png) 
 
 ---
 ## Test the Deployment
@@ -389,7 +389,7 @@ Hello, World
 $ curl http://18.188.2.30:8080
 Hello, World
 ```
-![](../../assets/images/terraform/terraform-result-00.png)
+![](../artwork/terraform-result-00.png) 
 
 ---
 
@@ -440,7 +440,7 @@ Notes:
 ---
 
 ## Terraform Graph Output  
-![](../../assets/images/terraform/graph.dot.png)
+![](../artwork/graph.dot.png) 
 
 ---
 
@@ -448,7 +448,7 @@ Notes:
 
 * Use a desktop app such as Graphviz or
 * webapp like [GraphvizOnline](http://dreampuf.github.io/GraphvizOnline)
-![](../../assets/images/terraform/graph.png)  
+![](../artwork/graph.png)   
 ---
 
 ## Lab: Server Deployment
@@ -465,7 +465,7 @@ Notes:
 * Running a server in a public subnet is fine for a quick experiment, but in real-world usage, it’s a security risk
 * For production systems, you should deploy all of your servers, and certainly all of your data stores, in private subnets
     * These have IP addresses that can be accessed only from within the VPC and not from the public internet
-![](../../assets/images/terraform/photo-of-guy-fawkes-mask-with-red-flower-on-top-on-hand-38275.jpg)
+![](../artwork/photo-of-guy-fawkes-mask-with-red-flower-on-top-on-hand-38275.jpg)
 
 Notes:
 
@@ -482,7 +482,7 @@ Source: https://www.pexels.com/
 * So, DRY:
     * every piece of knowledge must have a single, unambiguous, authoritative representation within a system
 
-![](../../assets/images/terraform/close-up-close-up-view-dry-environment-141489.jpg)
+![](../artwork/close-up-close-up-view-dry-environment-141489.jpg) 
 
 Notes:
 
@@ -735,7 +735,7 @@ output "public_ip" {
     * VPC
     * Load balancer
 
-![](../../assets/images/terraform/bigmusclet.png)    
+![](../artwork/bigmusclet.png)     
 
 ---
 
@@ -754,7 +754,7 @@ output "public_ip" {
         
 ## Auto-Scaling Group (ASG)
 
-![](../../assets/images/terraform/asg.png)
+![](../artwork/asg.png) 
 
 ---
 ## ASG Described in Terraform
@@ -920,7 +920,7 @@ resource "aws_autoscaling_group" "example" {
 ```
 ---
 ## Load Balancer
-![](../../assets/images/terraform/load-balancer.png)
+![](../artwork/load-balancer.png) 
 
 ---
 ## Using Load Balancer
@@ -934,7 +934,7 @@ resource "aws_autoscaling_group" "example" {
     * highly available and scalable
 * ELB to the rescue
     * Amazon’s Elastic Load Balancer (ELB) service    
-![](../../assets/images/terraform/elb.png)
+![](../artwork/elb.png) 
 
 ---    
 ## Load Balancer Types
@@ -951,7 +951,7 @@ resource "aws_autoscaling_group" "example" {
 ---
 ## Application Load Balancer (ALB)
 
-![](../../assets/images/terraform/alb.png)
+![](../artwork/alb.png) 
 
 ---
 
@@ -1105,15 +1105,15 @@ output "alb_dns_name" {
 ```
 ---
 ## Results of Upcoming Lab - Instances
-![](../../assets/images/terraform/scaling1.png)
+![](../artwork/scaling1.png) 
 ---
 
 ## Results of Upcoming Lab - Load Balancer
-![](../../assets/images/terraform/scaling2.png)
+![](../artwork/scaling2.png) 
 ---
 
 ## Results of Upcoming Lab - Target Group
-![](../../assets/images/terraform/scaling3.png)
+![](../artwork/scaling3.png) 
 ---
 
 ## Lab: Deploy a Cluster with Load Balancer

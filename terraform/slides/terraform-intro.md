@@ -1,4 +1,4 @@
-# Terraform - intro
+# Terraform - Introduction
 ---
 
 ## Why Terraform?
@@ -16,7 +16,7 @@ such as Amazon Web Services, IBM Cloud, Google Cloud Platform, Microsoft Azure, 
 and many competitors have also implemented Terraform ideas, making Terraform
 a de facto standard
 
-<img src = "../../assets/images/terraform/terraform-logo.png"/> <!--{"left" : 0.77, "top" : 6.51, "height" : 1.18, "width" : 4.83} -->
+<img src = "../artwork/terraform-logo.png"/> <!--{"left" : 0.77, "top" : 6.51, "height" : 1.18, "width" : 4.83} -->
 
 ---
 
@@ -42,11 +42,11 @@ a de facto standard
 ## The Rise of DevOps - Before
 
 * To build a software company
-* set up cabinets and racks
-* load them up with servers, etc.
+* Set up cabinets and racks
+* Load them up with servers, etc.
 * Set up "Devs" team, set up "Ops" team
 * Let them duke it out
-  <img src = "../../assets/images/terraform/computer-rack-pexels-photo-442150.jpeg"  style="width:75%;"/> <!-- {"left" : 0.77, "top" : 4.34, "height" : 2.42, "width" : 3.63} -->
+  <img src = "../artwork/computer-rack-pexels-photo-442150.jpeg"  style="width:75%;"/> <!-- {"left" : 0.77, "top" : 4.34, "height" : 2.42, "width" : 3.63} -->
 
 ## The Rise of DevOps - Now    
 
@@ -106,7 +106,7 @@ a de facto standard
 
 ## Ad Hoc Scripts
 
-![](../../assets/images/terraform//ad-hoc-script.png)
+![](../artwork/ad-hoc-script.png)
 
 ---
 
@@ -114,23 +114,24 @@ a de facto standard
 
 * Chef, Puppet, Ansible, and SaltStack
 * Example of Ansible script
-![](../../assets/images/terraform//ansible.png)
+  
+![](../artwork/ansible.png)
 
 ---
 
 ## Server Templating Tools
 *  Docker, Packer, and Vagrant.
-![](../../assets/images/terraform//packer-script.png)
+![](../artwork/packer-script.png)
 
 ---
 
 
 ## Images and Containers
-![](../../assets/images/terraform//images-containers.png)
+![](../artwork/images-containers.png)
 
 ---
 
-### Virtual Machines vs Containers
+### Virtual Machines vs Containers 
 
 * Virtual machines
     - A virtual machine (VM) emulates an entire computer system, including the hardware. You run a hypervisor, such as VMWare, VirtualBox, or Parallels, to virtualize (i.e., simulate) the underlying CPU, memory, hard drive, and networking.
@@ -138,7 +139,7 @@ a de facto standard
     - Drawback: waste of resources
     - You can define VM images as code using tools such as Packer and Vagrant.
 * Containers
-    - A container emulates the user space of an OS.2 You run a container engine, such as Docker, CoreOS rkt, or cri-o, to create isolated processes, memory, mount points, and networking.    
+    - A container emulates the user space of an OS. You run a container engine, such as Docker, CoreOS rkt, or cri-o, to create isolated processes, memory, mount points, and networking.    
     - Benefit: you run on top of the container engine can see only its own user space
     - Benefit: of the containers running on a single server share, milliseconds boot time
 
@@ -152,7 +153,7 @@ a de facto standard
     * That creates a stressful and unpleasant environment
     * Here is a painting of a happy man (see notes)
 
-![](../../assets/images/terraform/800px-Hendrik_ter_Brugghen_-_Democritus.jpg)
+![](../artwork/800px-Hendrik_ter_Brugghen_-_Democritus.jpg) 
 
 Notes:
 
@@ -172,17 +173,14 @@ Notes:
 
 ## Why Infrastructure as Code?
 
-* Q:
-* With all the different flavors of IaC why bother IaC (i.e. Terraform)?
+* Q: With all the different flavors of IaC why bother IaC (i.e. Terraform)?
     - Why learn a bunch of new languages and tools and encumber yourself with yet more code to manage?
-* A:
-    - code is powerful
+* A: Code is powerful
     - you get dramatic improvements in your ability to deliver software
     - organizations that use DevOps practices, such as IaC
         - deploy 200 times more frequently
         - recover from failures 24 times faster
         - have lead times that are 2,555 times lower.
-
 * D: Discuss
     - How much does this apply to your use cases?
     - Say you are a researcher who seldom uses dev and prod environment. Do you still see the benefits of IaC? Where?
@@ -196,7 +194,6 @@ Source: 2016 State of DevOps Report
 ## The Benefits of Infrastructure as Code
 
 * Self-service
-
   * Infrastructure deployment with the scripts, not your admin  
 
 * Speed and safety
@@ -221,7 +218,7 @@ Source: 2016 State of DevOps Report
 * Terraform is an open source tool created by HashiCorp and written in the Go programming language
 * The Go code compiles down into a single binary called `terraform`
 * You can use this binary to deploy infrastructure from your laptop or a build server
-    *  you don’t need to run any extra infrastructure to make that happen
+    *  You don’t need to run any extra infrastructure to make that happen
 * The `terraform` binary makes API calls on your behalf to one or more providers
     * AWS
     * Azure
@@ -229,9 +226,9 @@ Source: 2016 State of DevOps Report
     * DigitalOcean
     * OpenStack, and more
 
----     
+---
 ## Terraform and Other Tools
-![](../../assets/images/terraform/terraform-and-other-tools.png)
+![](../artwork/terraform-and-other-tools.png)
 
 Notes:
 

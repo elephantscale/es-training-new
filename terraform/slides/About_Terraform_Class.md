@@ -47,7 +47,7 @@ Notes:
 
 ## Analogy: Learning to Fly...
 
-<img src="../../assets/images/generic/3rd-party/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
+<img src="../artwork/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
 
@@ -57,7 +57,7 @@ Notes:
 
 ## Instruction
 
-<img src="../../assets/images/generic/3rd-party/classroom-instruction.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
+<img src="../artwork/classroom-instruction.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
 
@@ -69,7 +69,7 @@ Notes:
 
 ## + Flight Time
 
-<img src="../../assets/images/generic/3rd-party/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
+<img src="../artwork/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
 Notes:
@@ -78,7 +78,7 @@ Notes:
 
 ## After the Class...
 
-<img src="../../assets/images/terraform/Terraform-I-Know.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
+<img src="../artwork/Terraform-I-Know.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
 
 
 Notes:
@@ -97,7 +97,7 @@ Notes:
      - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
      - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
 
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
+<img src="../artwork/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 
 Notes:
