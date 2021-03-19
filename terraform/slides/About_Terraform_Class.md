@@ -5,10 +5,9 @@
 
 | Day | Agenda                                                                          |
 |-----|---------------------------------------------------------------------------------|
-| 1   | Terraform Introduction, first deployments                                      |
-| 2   | Architecture Deployments, modularizing your code                 |
-| 3   | Managing state, working as a team, advanced language elements  |
-| 4   | Production grade deployments, Terraform testing |
+| 1   | Terraform Introduction, first deployments, Architecture Deployments             |
+| 2   | Modularizing your code, managing state, working as a team, advanced elements    |
+| 3   | Production grade deployments, Terraform testing, Vault, Consul, Packer          |
 
 <!-- {"left" : 0.25, "top" : 1.4, "height" : 3.36, "width" : 9.75} -->
 
