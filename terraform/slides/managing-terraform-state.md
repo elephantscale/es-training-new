@@ -74,7 +74,7 @@ Notes:
 * Each state file manages a only its set of resources
   
 ---
-## The `state` Command
+## The "state" Command
 
 * The state command has multiple options (not all are listed)
     * `terraform state list`: lists the resources being managed
@@ -106,7 +106,7 @@ Notes:
   ![](../artwork/local-workspace-directories.png)
   
 ---
-## The `workspace` Command
+## The "workspace" Command
 
 * `terraform workspace` has several options:
   
@@ -164,9 +164,7 @@ Notes:
 
 ## Setting up the S3 Bucket
 
-  
-
-    ```
+```
     resource "aws_s3_bucket" "terraform_state" {
         bucket = "terraform-up-and-running-state"
 
@@ -190,7 +188,7 @@ Notes:
             }
         }
     }
-    ```
+```
     
 ---
 
@@ -386,7 +384,7 @@ Notes:
  ![](../artwork/rearranged-sample-code.png)
 
 ---
-## The `terraform_remote_state` Data Source
+## The "terraform_remote_state" Data Source
 
 * Assume that the web server cluster needs to communicate with a MySQL database
 
@@ -423,9 +421,8 @@ Notes:
 ---
 ## Using AWS Secrets Manager
 
-* Some text
-* 
-    ```
+
+```
     resource "aws_db_instance" "example" {
          identifier_prefix   = "terraform-up-and-running"
         engine              = "mysql"
@@ -441,7 +438,7 @@ Notes:
     data "aws_secretsmanager_secret_version" "db_password" {
          secret_id = "mysql-master-password-stage"
     }
-    ```
+```
     
 ---
 ## Keeping Secrets II
@@ -450,7 +447,7 @@ Notes:
     * Then pass the secret into Terraform via an environment variable. 
     * In the code below, there is no default since it's a secret
   
-    ```
+```
     variable "db_password" {
         description = "The password for the database"
          type        = string
@@ -458,7 +455,8 @@ Notes:
 
     export TF_VAR_db_password="(YOUR_DB_PASSWORD)"
     $ terraform apply
-    ```
+```
+
 * A known weakness of Terraform:
     * The secret will be stored in the Terraform state file in plain text
     * The only solution is to lock down and ecrypt the state files
@@ -468,7 +466,7 @@ Notes:
 
 * Using the backend to create the state repository:
   
-    ```
+```
     terraform {
         backend "s3" {
          # Replace this with your bucket name!
@@ -481,12 +479,12 @@ Notes:
          encrypt        = true
         }
     }
-    ```
+```
 
 * Run the Terraform `init` and `apply` commands to create the database
     * Provide the database ports to the webserver cluster
   
-    ```
+```
     output "address" {
         value       = aws_db_instance.example.address
         description = "Connect to the database at this endpoint"
@@ -496,12 +494,12 @@ Notes:
         value       = aws_db_instance.example.port
         description = "The port the database is listening on"
     }
-    ```
+```
 ---
 ## Integrating the Database
 
 * Running `init` again produces:
-    ```
+```
   $ terraform apply
 
     (...)
@@ -512,7 +510,8 @@ Notes:
 
     address = tf-2016111123.cowu6mts6srx.us-east-2.rds.amazonaws.com
     port = 3306
-    ```
+```
+
 * These outputs are now stored in the Terraform state for the database
     * The web server cluster code can read the data from this state file by adding the terraform_remote_state data source in stage/services/webserver-cluster/main.tf:
     ```
