@@ -65,12 +65,14 @@ Notes:
  
 * Ubuntu example
 
+```shell script
+terraform version
+```
 
-    Terraform v0.12.20
+    Your version of Terraform is out of date! 
+    The latest version is 0.14.8. You can update 
+    by downloading from https://www.terraform.io/downloads.html
 
-    Your version of Terraform is out of date! The latest version
-    is 0.12.24. You can update by downloading from
-    https://www.terraform.io/downloads.html
 
 * OK... Update [here](https://www.howtoforge.com/how-to-install-terraform-on-ubuntu-1804/)
 
@@ -748,7 +750,7 @@ output "public_ip" {
     * would have to manage those instances, etc.
 * Alternatives
     * Very large instance with 100+ CPUs
-    * Memory pool from [Kove](https://kove.net/)
+    * Memory pool from [Kove](https://www.kove.partners/scaia-ai-kove)
     
 ---
         
@@ -782,7 +784,7 @@ resource "aws_launch_configuration" "example" {
 ```    
 ---
 
-## The ASG Itself with "aws_autoscaling_group"
+## ASG with "aws_autoscaling_group"
 
 * ASG will run between 2 and 10 instances
 * each tagged with the name `terraform-asg-example`
