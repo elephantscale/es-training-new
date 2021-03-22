@@ -233,8 +233,8 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ## Lab: Terraform Hello World
 
 * Please do this lab
-* `code/terraform/00-preface/hello-world`
-* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/00-preface/hello-world)
+* `terraform-up-and-running-code/labs/lab01-1.md`
+* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md)
 
 ---
 ## Next Step
@@ -258,6 +258,14 @@ resource "aws_instance" "example" {
 * Verify that we gave our server a name
 
 ![](../artwork/terraform-apply-02.png)
+---
+
+## Lab: Terraform Hello World - 2
+
+* Please do this lab
+* `terraform-up-and-running-code/labs/lab01-2.md`
+* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-2.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-2.md)
+
 ---
 
 ## Deploy a Single Web Server
@@ -292,6 +300,14 @@ nohup busybox httpd -f -p 8080 &
               nohup busybox httpd -f -p 8080 &
               EOF
 ```
+---
+
+## Lab: Web server
+
+* Please do this lab
+* `terraform-up-and-running-code/labs/lab02-1.md`
+* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-1.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-1.md)
+
 ---
 
 ## Wait! One More Thing!
@@ -395,6 +411,14 @@ Hello, World
 
 ---
 
+## Lab: Server Deployment
+
+* Please do this lab:
+* `terraform-up-and-running-code/labs/lab02-2.md`
+* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md)
+
+---
+
 ## Quiz
 
 * Usernames and passwords referenced in the Terraform code, even as variables, will end up in plain text in the state file.
@@ -461,7 +485,7 @@ Notes:
 * In this lab, we practice server deployment
 ---
 
-## NETWORK SECURITY
+## NOTE on Network Security
 
 * All our example deploy not only into your Default VPC (as mentioned earlier), but also the default subnets of that VPC
 * Running a server in a public subnet is fine for a quick experiment, but in real-world usage, it’s a security risk
@@ -558,6 +582,7 @@ variable "map_example" {
 
 ---
 
+
 ## Quiz
 
 * Consider the following Terraform 0.12 configuration snippet. 
@@ -605,6 +630,16 @@ Notes:
 
 ---    
 
+## Lab with variables
+* Go back to this lab:
+* `terraform-up-and-running-code/labs/lab02-2.md`
+* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md)
+* Experiment with providing the variables 
+    * default
+    * var=
+    * every other way
+
+---
 
 ## OO Coding with Terraform!
 
@@ -939,6 +974,13 @@ resource "aws_autoscaling_group" "example" {
 ![](../artwork/elb.png) 
 
 ---    
+
+## Lab: Creating a load balancer
+* Please do the following lab
+* `terraform-up-and-running-code/labs/lab02-3-prep.md`
+* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-3-prep.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-3-prep.md)
+
+---
 ## Load Balancer Types
 
 * Application Load Balancer (ALB)
