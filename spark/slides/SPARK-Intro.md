@@ -216,35 +216,6 @@ Notes:
 
 ---
 
-## Spark Initial Use Cases
-
-<img src="../../assets/images/logos/teralytics-logo-1.jpg" style="width:30%;float:right;" /><!-- {"left" : 8.22, "top" : 0.96, "height" : 0.83, "width" : 1.99} -->
-
-* __Teralytics__
-   - Processing cell phone events
-   - 180 billion events per day
-   - Spark + HDFS
-   - Estimating usage patterns to enhance coverage (sporting events, commuting, etc.)
-   - Source: [1](http://bigdatausecases.info/entry/origin-destination-matrix-using-mobile-network-data-with-spark), [2](https://databricks.com/session/origin-destination-matrix-using-mobile-network-data-with-spark)
-
-<img src="../../assets/images/logos/yahoo-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.35, "top" : 4.29, "height" : 0.49, "width" : 1.85} -->
-
-* __Yahoo__
-   - News personalization
-   - 120 line Scala program with ML lib replaced 15,000 lines of C++
-   - Spark took 30 minutes to run on 100 million samples
-   - [Source](https://www.dezyre.com/article/top-5-apache-spark-use-cases/271)
-
----
-
-## Spark for research
-
-* [CERN](https://databricks.com/session/cerns-next-generation-data-analysis-platform-with-apache-spark)
-* [Genomics](https://databricks.com/session/scaling-genomics-on-apache-spark-by-100x)
-* [Time series](https://databricks.com/session/distributed-indexing-framework-for-big-time-series-data-for-apache-spark)
-
----
-
 ## Spark Use Cases
 
 <img src="../../assets/images/logos/netflix-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.43, "top" : 1.09, "height" : 1.21, "width" : 2.63} -->
@@ -265,6 +236,39 @@ Notes:
    - [Source](https://databricks.com/customers/starbucks)
 
 * More case studies @ [BigDataUseCases.Info](http://bigdatausecases.info/)
+
+---
+
+## Spark Use Cases
+
+<img src="../../assets/images/logos/teralytics-logo-1.jpg" style="width:30%;float:right;" /><!-- {"left" : 8.22, "top" : 0.96, "height" : 0.83, "width" : 1.99} -->
+
+* __Teralytics__
+   - Processing cell phone events
+   - 180 billion events per day
+   - Spark + HDFS
+   - Estimating usage patterns to enhance coverage (sporting events, commuting, etc.)
+   - Source: [1](http://bigdatausecases.info/entry/origin-destination-matrix-using-mobile-network-data-with-spark), [2](https://databricks.com/session/origin-destination-matrix-using-mobile-network-data-with-spark)
+
+<img src="../../assets/images/logos/yahoo-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.35, "top" : 4.29, "height" : 0.49, "width" : 1.85} -->
+
+* __Yahoo__
+   - News personalization
+   - 120 line Scala program with ML lib replaced 15,000 lines of C++
+   - Spark took 30 minutes to run on 100 million samples
+   - [Source](https://www.dezyre.com/article/top-5-apache-spark-use-cases/271)
+
+---
+
+## More Spark Use Cases
+
+* [CERN](https://databricks.com/session/cerns-next-generation-data-analysis-platform-with-apache-spark)
+
+* [Genomics](https://databricks.com/session/scaling-genomics-on-apache-spark-by-100x)
+
+* [Time series](https://databricks.com/session/distributed-indexing-framework-for-big-time-series-data-for-apache-spark)
+
+* Checkout [customer success strories](https://databricks.com/customers/) at Databricks
 
 ---
 
@@ -540,7 +544,7 @@ Notes:
    - Each Executor can employ multiple **tasks** to parallelize the work
 
 <!-- TODO shiva -->
-<img src="../../assets/images/spark/spark_architecture.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-architecture-1.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 

@@ -242,7 +242,7 @@ Notes:
     - Each Executor can employ multiple **tasks** to parallize the work
 
 <!-- TODO shiva -->
-<img src="../../assets/images/spark/spark_architecture.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-architecture-1.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 ## Parallelizing Computations
