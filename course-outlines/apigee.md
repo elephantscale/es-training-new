@@ -6,38 +6,28 @@ March 25, 2020
 
 ## Overview
 
-Kafka is definitely one of the leading distributed messaging queues, 
-found in use everywhere. More correctly called “a distributed messaging platform,” 
-it provides three key capabilities: publish-and-subscribe, store streams, and process streams. 
-
-This course introduces the students to using Kafka and continues with Kafka's advanced capabilities.
-It is recommended for those who have already started using Kafka and are now looking
-to make sure that they follow the best practices, want to build industrial-strength
-Kafka applications, and utilize the full power of stream processing.
-
-## What you will learn
-* Overview of Streaming technologies
-* Kafka concepts and architecture
-* Programming using Kafka API
-* Kafka Streams
-* Advanced KStreams
-* Kafka Connectors
-* KSQL and KTables
-* Monitoring Kafka
-* Tuning / Troubleshooting Kafka
+* Apigee is for design, secure, analyze, and scale APIs anywhere with visibility and control.
+Using Apigee, you can
+  * Build and scale API programs with full API life cycle capabilities
+  * Drive consumption of APIs with flexible developer portal options
+  * Gain actionable insights across the entire API value chain
+  * Monetize API products and maximize the business value of your digital assets
+  
+* This course will help participants understand the principles of designing APIs, 
+publishing them, and implementing the APIs in production.
 
 ## Audience
 Developers, Architects
 
 ## Duration
-4 days 
+3 days 
 
 ## Format
 Lectures and hands-on labs. (50%, 50%)
 
 ## Prerequisites
 
-* Comfortable with Java programming language (programming exercises are in Java)
+* Comfortable with any programming language
 * Comfortable in Linux environment (be able to navigate Linux command line, run commands)
 
 
