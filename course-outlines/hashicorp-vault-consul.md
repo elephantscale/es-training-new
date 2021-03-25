@@ -78,7 +78,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly
 
 * An introduction to monolithic vs service-oriented architectures
 * Service discovery in a monolith
-* Serice discovery challenges in a distributed system and Consul's solution
+* Service discovery challenges in a distributed system and Consul's solution
 * Configuration management in a monolith
 * Configuration challenges in a distributed system and Consul's solution
 * Network segmentation in a monolith
