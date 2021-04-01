@@ -20,7 +20,7 @@ service mesh.
 Developers, Architects
 
 ## Duration
-* 3-4 days 
+* 3 days 
 
 ## Format
 Lectures and hands-on labs. (50%, 50%)
