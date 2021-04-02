@@ -85,7 +85,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly
 * Network segmentation challenges in a distributed system and Consul's solutions
 * The definition of "service mesh"
 
-### Consul hand-on
+### Consul hands-on
 
 * Learn about the problems that Consul solves.
 * Explore Consul's architecture and interfaces (HTTP API, DNS interface, and web
