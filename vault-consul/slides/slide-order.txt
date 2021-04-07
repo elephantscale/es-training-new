@@ -1,10 +1,8 @@
-About_Terraform_Class.md
-terraform-intro.md
-terraform-walk-through.md
-managing-terraform-state.md
-reusable-infrastructure-with-modules.md
-terraform-language-elements.md
-production-grade-terraform-code.md
-testing-terraform-code.md
-terraform-in-team.md
-# packer-intro.md
+About_Vault_and_Consul_Class.md
+Vault_architecture.md
+Vault_configuration.md
+Vault_scalability.md
+$ES_HOME/es-training-new/microservices/slides/microservices.md
+Microservices_and_Consul.md
+Consul_hands_on.md
+

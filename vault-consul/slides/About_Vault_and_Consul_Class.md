@@ -1,13 +1,13 @@
-# Terraform
+# Vault and Consul
 ---
-## Terraform Class Outline
+## Vault and Consul Class Outline
 
 
 | Day | Agenda                                                                          |
 |-----|---------------------------------------------------------------------------------|
-| 1   | Terraform Introduction, first deployments, Architecture Deployments             |
-| 2   | Modularizing your code, managing state, working as a team, advanced elements    |
-| 3   | Production grade deployments, Terraform testing, Vault, Consul, Packer          |
+| 1   | Vault: architecture, configuration, scalability                                 |
+| 2   | Vault Identities: Entities and Groups, Namespaces, production, monitoring       |
+| 3   | Microservices, microservices with Consul, Consul hands-on                       |
 
 <!-- {"left" : 0.25, "top" : 1.4, "height" : 3.36, "width" : 9.75} -->
 
@@ -94,9 +94,8 @@ Notes:
      - Technologies you are familiar with
      - Familiarity with Terraform or IaC (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
-     - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
 
-<img src="../artwork/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
+<img src="../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 
 Notes:
