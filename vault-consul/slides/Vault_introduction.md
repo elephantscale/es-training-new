@@ -91,5 +91,63 @@
     
 ---
     
+## Authentication workflow
+
+* As a result of above, Vault was design to provide
+    * Consistent workflow for authentication of clients
+    * Consistent way to define authorization
+    * Consistent API for getting credentials and performing operations
+* As a result
+    * Vault is easy to integrate
+    * Plugins support a large ecosystem
+    
+---
+
+## What is great about Kerberos?
+
+* **Ephemeral access**
+    * Never granting long-term credentials
+    * Instead, giving only short-term access
+    * That can be renewed as needed or even revoked
+    * Think of all announcement of breaches due to stolen credentials that are valid for months or years
+    * Amazon keys is one such example (and it did happen to us!)       
+    
+![](../artwork/iam.png)    
+
+---
+
+## But how?
+
+* Question:
+    * How to bring this idea to Vault
+    * Keep in mind, most systems to integrate with have not similar concept
+    
+* Answer:
+    * **"Dynamic secret"**
+    * Secret engine 
+        * Creates an entirely dynamic username and password
+        * Or, API token depending on the system
+
+---
+        
+## Dynamic Secret
+
+* Credential that is only leased to the client
+* Day 1
+    * Application or user needs certain privileged credentials
+* Day 2
+    * Rotation of credentials
+    * Revocation of access
+    * Offboarding
+* With dynamic secret
+    * The credential is automatically destroyed at the end of its time to live
+    * If the client stores a copy of the credentials -
+    * The target system will still **reject** it
+    
+---
+
+
+
+                    
       
                        
