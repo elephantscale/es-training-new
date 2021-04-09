@@ -1,4 +1,5 @@
 About_Vault_and_Consul_Class.md
+Vault_introduction.md
 Vault_architecture.md
 Vault_configuration.md
 Vault_scalability.md
