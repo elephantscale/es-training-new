@@ -146,7 +146,50 @@
     
 ---
 
+## Leases are short-lived
 
+* Since leases are short-lived
+* Clients are forced to periodically come back to Vault
+    * Renew a lease, or
+    * Fetch a new dynamic secret
+* Advantages
+    * Automate credential rotation
+    * Elegant workflow for *Day 2* challenge    
+    
+---
+
+## Building on Vault
+* Common challenges
+  * Encrypting customer data
+  * Key management
+* Answers
+  * Secret engine (a.k.a. "transit" engine)
+  * Holds encryption keys within Vault
+  * Exposes API
+    * Encryption
+    * Decryption
+    * Signing
+    * Verifying transactions
+    * More...
+    * Leave key management and cryptography to Vault
+  
+---
+
+## Vault today
+
+* Keeps initial capabilities and design
+* Supports a big number of authentication methods and secrets engines
+* Richer automation capabilities
+* Easier with CLI and web-based interface
+* Ecosystem integrations
+  * Configuration management systems
+  * Application platforms
+  * Low-level data management
+  * Encryption solutions
+* Key advantage: **simplicity** 
+  * (compared to the problem it attempts to solve)  
+
+---    
 
                     
       
