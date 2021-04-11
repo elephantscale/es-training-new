@@ -2,6 +2,10 @@
 
 ## Imagine going on vacation
 
+* The receptionist asks for your identity
+* After it is verified, you get the room key
+* With Vault, it is just as easy
+![](../artwork/pexels-christina-morillo-1181524.jpg)
 
 Notes:
 
