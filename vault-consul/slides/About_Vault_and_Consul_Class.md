@@ -149,6 +149,17 @@ object TestApp {  // Basic Spark App (Scala)
 Notes:
 
 ---
+
+## Recommended books and credits
+
+* Bryan Krausen book on Amazon: [Running HashiCorp Vault in Production](https://www.amazon.com/gp/product/B08LNQML27/ref=as_li_ss_tl?pf_rd_r=Q59WRZR3R8QHKF5YZ2R2&pf_rd_p=edaba0ee-c2fe-4124-9f5d-b31d6b1bfbee&linkCode=sl1&tag=vaultbook-20&linkId=cff39cd5ffff2c7bffebfcc88b4a8432&language=en_US)
+
+* Bryan Krausen book on Gumroad in PDF format: [Running HashiCorp Vault in Production](https://gumroad.com/l/vaultbook/j67unh3)
+
+* [Udemy Profile for Bryan Krausen](https://www.udemy.com/user/bryan-krausen/)
+
+![](../artwork/book-cover.png)
+
 ## Questions?
 
 * Any questions? 
