@@ -26,6 +26,7 @@
     * Was not there
 
 ---
+
                             
 ## The need for Vault
 
@@ -41,6 +42,19 @@
         
 ---
 
+## HashiCorp enterprise
+
+![](../artwork/hashi-offerings.png)
+
+---
+
+## Identity management
+
+![](../artwork/iams.png)
+
+---
+
+
 ## So, why Vault?         
 
 * Allow access to systems and services
@@ -51,6 +65,13 @@
     * Either humans suffer to computer designs are unnatural
     
 ---
+
+## Vault place
+
+![](../artwork/vault-fit.png)
+
+---
+
 
 ## Vault idea
 
@@ -91,9 +112,21 @@
     
 ---
     
+## Benefits of Vault
+
+![](../artwork/vault-benefits.png)
+
+---
+
+## Problems Vault solves
+
+![](../artwork/vault-solves.png)
+
+---
+
 ## Authentication workflow
 
-* As a result of above, Vault was design to provide
+* As a result of above, Vault was designed to provide
     * Consistent workflow for authentication of clients
     * Consistent way to define authorization
     * Consistent API for getting credentials and performing operations
@@ -191,6 +224,69 @@
 
 ---    
 
-                    
-      
+## What Vault provides
+
+![](../artwork/vault-provides.png)
+
+---
+
+## Vault open-source vs Enterprise
+
+![](../artwork/vault-os-enterprise.png)
+
+---
+
+## Vault components
+
+![](../artwork/vault-components.png)
+
+---
+
+## Vault storage backends
+
+![](../artwork/vault-storage-backends.png)
+
+---
+
+## Vault secrets engines
+
+![](../artwork/vault-secret-engines.png)
+
+---
+
+## Vault auth methods
+
+![](../artwork/vault-auth-methods.png)
+
+---
+
+## Vault paths
+
+![](../artwork/vault-paths.png)
+
+---
+
+## Vault paths cont'd
+
+![](../artwork/vault-paths2.png)
+
+---
+
+## Vault path examples
+
+![](../artwork/vault-paths-rules.png)
                        
+
+---
+
+## HashiCorp high-level
+
+![](../artwork/hashicorp-overview.png)
+
+---
+
+## Vault overview
+
+![](../artwork/vault-overview.png)
+
+---

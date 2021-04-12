@@ -119,6 +119,69 @@ Notes:
 
 ---
 
+## Auth methods
+
+* Auth methods are responsible for 
+  * assessing identity 
+  * assigning a set of policies to a user or machine. Like the front desk at a hotel, auth methods validate authentication requests through the configured identity provider to ensure the credentials are valid before granting access to services. Examples of auth methods include Active Directory, LDAP, GitHub, Kubernetes, Okta, and identity management services on the major cloud providers.
+  * validate authentication requests
+  * method examples 
+    * Active Directory
+    * LDAP 
+    * GitHub 
+    * Kubernetes 
+    * Okta
+
+Notes:
+
+* Auth Methods Auth methods are responsible for assessing identity and assigning a set of policies to a user or machine. 
+* Like the front desk at a hotel, auth methods validate authentication requests 
+* through the configured identity provider 
+* to ensure the credentials are valid before granting access to services. 
+* Examples of auth methods include Active Directory, LDAP, GitHub, Kubernetes, Okta, 
+*  and identity management services on the major cloud providers.
+
+---
+
+## Tokens
+
+* Tokens are the core method of authentication within Vault. 
+  * configured to use tokens directly as an authentication mechanism, or
+  * an auth method can be used to generate dynamic tokens based on external identities
+  
+Notes: 
+
+* Tokens are the core method of authentication within Vault. 
+* Vault can be configured to use tokens directly as an authentication mechanism, 
+* or an auth method can be used to generate dynamic tokens based on external identities. 
+* Regardless of how Vault clients authenticate to Vault, a token will be used for all subsequent requests.
+
+--- 
+
+## Policies 
+
+* Policies determine the level of access an entity has to a particular path
+* or the data contained therein once the entity has authenticated. 
+* Permissions: "CRUD" 
+  * applied to a particular path and associated with specific Vault clients 
+  * or applied service-wide
+
+Notes:
+
+* Policies determine the level of access an entity has to a particular path or the data contained therein once the entity has authenticated. 
+* Permissions defined inside of these policies follow the typical "CRUD" model of access: Create, Read, Update, Delete. 
+* These permissions or "capabilities" are applied to a particular path and associated with specific Vault clients or applied service-wide. 
+* Certain "parameters" can be associated with the policies to tighten security controls around specific actions further. 
+* In summary, while auth methods handle authentication to Vault, policies control authorization to Vault components once a client has successfully authenticated.
+
+---
+
+
+
+
+
+
+
 
 
 
