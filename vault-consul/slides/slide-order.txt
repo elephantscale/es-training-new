@@ -5,5 +5,5 @@ Vault_configuration.md
 Vault_scalability.md
 $ES_HOME/es-training-new/microservices/slides/microservices.md
 Microservices_and_Consul.md
-Consul_hands_on.md
+Consul.md
 
