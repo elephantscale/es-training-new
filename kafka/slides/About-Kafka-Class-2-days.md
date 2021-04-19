@@ -38,7 +38,7 @@ Notes:
      - Command line navigation
      - Running commands
 
- * This is a **Kafka Introductory** class.
+ * This is a **Kafka Introductory - Intermediate** class.
 
      - No previous Kafka knowledge is assumed
      - Class will be paced based on the pace of majority of the students.
