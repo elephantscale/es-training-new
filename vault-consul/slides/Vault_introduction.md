@@ -290,3 +290,28 @@
 ![](../artwork/vault-overview.png)
 
 ---
+
+## Latest news: HCP Vault on AWS
+
+* APR 07 2021
+* HCP Vault is now generally available on AWS. 
+  * HCP Vault gives you the power and security of HashiCorp Vault
+  * We still need to know how to use it :)
+
+---
+
+## What's involved
+
+* Create an account: 
+  * First create a HashiCorp Cloud Platform account.
+* Deploy a cluster
+  * Next, select HCP Vault from the dashboard. We have a quickstart deployment guide that will walk you through the process of creating your HashiCorp Virtual Network (HVN) and a Vault cluster.
+* Peer with AWS
+  * Once you have deployed their HVN and cluster, the next step is to peer that network with your existing AWS environments.
+  
+---
+
+## Vault on AWS pricing
+![](../artwork/vault-aws-pricing.png)
+
+---
