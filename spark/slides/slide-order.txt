@@ -1,0 +1,10 @@
+SPARK-Intro.md
+SPARK-Core.md
+$ES_HOME/es-training/spark/slides/v2/SPARK__Data-Model-2.pptx
+SPARK-SQL.md
+SPARK-API.md
+$ES_HOME/es-training/spark/slides/v2/SPARK__Streaming.pptx
+SPARK-ML.md
+$ES_HOME/es-training/spark/slides/v2/SPARK__GraphX.pptx
+SPARK-Performance.md
+Delta-Lake.md
