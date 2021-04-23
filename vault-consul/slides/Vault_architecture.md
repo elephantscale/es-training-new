@@ -245,6 +245,17 @@ Notes:
 
 ## Now Vault is unsealed
 
+* After the Vault is unsealed
+  * requests can be processed from the HTTP API to the Core. 
+  * The core is used to 
+    * manage the flow of requests through the system, 
+    * enforce ACLs, and 
+    * ensure audit logging is done.
+
+* The client needs to authenticate. 
+  * Vault provides configurable auth methods
+  * Provides flexibility in the authentication mechanism used
+
 Notes:
 
 * After the Vault is unsealed, requests can be processed from the HTTP API to the Core. The core is used to manage the flow of requests through the system, enforce ACLs, and ensure audit logging is done.
@@ -312,10 +323,365 @@ created and attached to the entity.
 
 ## Phase 2 - User Interaction
 
+* This phase is interaction from the user
+* When a client sends a request to Vault 
+  * the request is initiated using TLS
+  * verify the identity of the Vault service and 
+  * establish secure communication with it
+  
+---
+
+## The basic workflow of client interaction with Vault
+
+1. The client sends an authentication request to Vault, specifying the auth method and
+   credentials to be used.
+2. Vault forwards those credentials to the appropriate authentication backend for
+   verification.
+3. Vault receives approval returns an access token
+4. The Vault client uses the access token to issue a read
+5. Vault validates the token 
+6. If permitted, Vault will use pre-configured database credentials to generate temporary database credentials
+   
+
+Notes: 
+
+1. The client sends an authentication request to Vault, specifying the auth method and
+   credentials to be used.
+2. Vault forwards those credentials to the appropriate authentication backend for
+   verification.
+3. Vault receives approval from the appropriate authentication backend and returns an
+   access token to the requestor based on the policies associated with the requestor.
+4. The Vault client uses the access token to issue a read request to the associated
+   path to generate database credentials.
+5. Vault validates the token and the associated policy to determine whether access to a
+   database credential should be granted.
+6. If the token is permitted to access the requested path, Vault will use pre-configured
+   database credentials to generate temporary database credentials based on the
+   policy associated with the requestor. The database credentials are returned to the
+   requestor.
+---
+
+## Phase 3 - Cleanup
+
+* Once user interaction is complete,
+  * Vault needs to clean up the token. 
+* When a token or other credential is provisioned by Vault, 
+  * it is associated with a TTL or "lease." 
+  * This lease may be 
+    * time-based, such as 24 hours, 
+    * defined by a set number of uses. 
+* After the lease expires,
+  * the tokens are revoked, and
+  * the associated credentials are removed automatically by Vault.
+  
+---
+
+## Database example
+
+![](../artwork/fig1-1.png)
 
 
-
-
-
+Notes:
+* Figure 1-1 illustrates the database example, where a Vault client needs access to database
+credentials to read data inside the database. 
+* Phase 1 of this example includes the
+configuration of the LDAP and Cloud auth method, the policy creation, and the database
+secrets engine configuration. 
+* When a Vault client sends an authentication request using
+LDAP, for example, the workflow in Phase 2 is executed. 
+* The client obtains a token and requests database credentials. 
+* Once the client interaction is completed, the token will
+expire, and the database credentials will be revoked.
 
 ---
+
+## Philosophy of Vault
+
+* The intent and philosophy of Vault is to build security
+  * into automated processes
+  * that utilize temporary credentials
+  * whether for a specific duration or one-time use. 
+* The ultimate goal
+  * migrate from static credentials and identities that **require periodic manual rotation***.
+  * Of course, this workflow can still be leveraged for static secrets as well.
+  
+---
+
+## Interacting with Vault
+
+* It is critical for developers and Vault operators to understand 
+  * the details of the user interaction process
+  * as they add integrations. 
+* The previous section introduced this process at a high-level
+* Additional context on the day-to-day use of Vault
+  * will significantly benefit the consumers of the Vault service.
+  
+## The Vault API
+
+* Secrets Engines
+  * provide the core functionality of Vault 
+  * maintain static values
+  * generate dynamic credentials
+  * perform cryptographic functions.
+* Auth Methods
+  * validating authentication requests from Vault clients 
+  * authorizing the user to perform actions in Vault
+* System Backend
+  * Intended primarily for service administrators 
+    * configure the components and features within Vault
+
+Notes:
+
+* Every interaction with Vault happens through the API, regardless of the entry point. Even
+when clients interact with the CLI or web interface, the actions requested are performed
+using the API. While the CLI and web interface are friendlier to end users, they do not
+support all the actions that can be made by using the API directly.
+The API is divided into three main sections:
+* Secrets Engines
+* These provide the core functionality of Vault. Secrets engines can maintain static values,
+generate dynamic credentials, or perform cryptographic functions.
+* Auth Methods
+* These are responsible for validating authentication requests from Vault clients and
+authorizing the user to perform actions in Vault. HashiCorp Vault can use an external
+identity provider for authentication or provide internal identity management for granting
+access to secrets.
+* System Backend
+* This endpoint is intended primarily for service administrators to configure the components
+and features within Vault. The system backend can also be used by external services to
+monitor Vault, such as a third-party monitoring solution or a load balancer health check.
+
+---
+
+## Vault Interfaces
+
+* Using the API
+  * Programmatic interaction with Vault occurs when an application or service calls the Vault
+API
+* Using the CLI
+* Before configuring traditional application integration with the API, the CLI is often used to
+configure Vault
+* Using the Web UI
+  * The Vault UI is accessible using modern web browsers
+   *The UI can be accessed using the DNS name or hostname of the cluster and the configured port of the listener.
+
+Notes:
+
+* Using the API
+* Programmatic interaction with Vault occurs when an application or service calls the Vault
+API. This method should be the most common form of interaction with Vault. Interaction
+using the API is what Vault was designed for – a completely hands-off, automated secrets
+management experience. Automating complex tasks removes the human element, reduces
+organizational risk, and improves security.
+* Using the CLI
+* Before configuring traditional application integration with the API, the CLI is often used to
+configure Vault. The CLI simplifies the administration of the Vault service when performing
+initial Vault tasks, such as migrating secrets to Vault. Once the initial configuration has
+concluded, most of the day-to-day interactions can move to a programmatic function.
+Almost all the accessible API paths are available in the CLI, with few exceptions.
+* The CLI is the ideal method for Vault operators or users who might be more comfortable
+using a command line to perform manual interactions with Vault instead of clicking around in
+the web interface. Interaction through the CLI occurs through the same binary that is used
+to operate the Vault service. A user may issue CLI commands directly on a Vault node, or
+the binary may be downloaded on a local workstation to streamline access to Vault.
+* Using the Web UI
+* The Vault UI is accessible using modern web browsers. The UI can be accessed using the
+DNS name or hostname of the cluster and the configured port of the listener.
+For some users, the web interface is the most appropriate choice for accessing Vault.
+Although Vault was not initially designed with a user interface in mind, the web UI has
+quickly become a focus of development. Recent Vault releases have included significant
+improvements to the UI, adding new features and capabilities. The most common tasks a
+user or administrator might need to perform can be executed using the Vault web UI.
+  
+---
+
+## General Consumer Interaction
+
+* Basic human actions executed against the Vault service. 
+  * authenticate with Vault
+  * receive an access token
+  * use the token to manage Vault or read a secret.
+
+Notes:
+
+* General consumer interactions consist of the basic human actions executed against the
+Vault service. This type of interaction is often how users first approach Vault when the
+20service is initially deployed. Under this category of interaction, a human user would
+authenticate with Vault, receive an access token, and use the token to manage Vault or
+read a secret.
+* Many of the standard authentication providers used today, such as directory services, OIDC
+solutions, or public cloud identity services, can be leveraged to validate human users.
+  
+---
+
+## General Consumer Interaction
+
+![](../artwork/fig1-2.png)
+
+Notes:
+
+* Example: 
+* Jane Smith needs to retrieve the latest value of the root password for one of the
+Linux hosts she manages. 
+* Jane uses the Vault CLI to log in to Vault using her LDAP
+username and password. 
+*  Once authenticated, Vault returns an access token to Jane. Jane
+then uses that access token to retrieve the value of the desired secret from a specific path
+in Vault.
+   
+---
+
+## Administrative Interaction
+
+* Human entity usually performs administrative interactions during both the deployment and initial management phases of the Vault service. 
+* Tend to shift to programmatic interactions as the service matures 
+* However, administrative interactions shift toward management of the Vault service rather than the management of secrets.
+
+Notes:
+
+* Like consumer interactions, a human entity usually performs administrative interactions
+during both the deployment and initial management phases of the Vault service. The
+administrative interactions also tend to shift to programmatic interactions as the service
+matures and grows. 
+* However, administrative interactions shift toward management of the
+Vault service rather than the management of secrets.
+
+---
+
+## More Administrative Interaction
+
+* It is common to use Endpoint Governing Policies (EGPs) to ensure the second factor of authentication is used for privileged users. 
+* For example
+  * all Vault users need to provide an LDAP username and password. 
+  * Vault administrators must also use a second factor of authentication, such as an Okta Verify push notification. 
+  * Increases the security of privileged user access.
+  * configuring the Okta push to trigger at auth/ldap would initiate an Okta push for all users authenticating through LDAP
+
+Notes:
+
+* Vault administrators commonly use the same auth methods that are leveraged by other
+human users. 
+*  However, it is common to use Endpoint Governing Policies (EGPs) to ensure
+the second factor of authentication is used for privileged users. For instance, all Vault users
+need to provide an LDAP username and password. However, Vault administrators must
+also use a second factor of authentication, such as an Okta Verify push notification. 
+*   This
+strategy increases the security of privileged user access.
+When using an EGP to configure the second factor of authentication, the policy can be
+written to trigger the second factor based on the path requested. 
+* For instance, configuring
+the Okta push to trigger at auth/ldap would initiate an Okta push for all users authenticating
+through LDAP. However, configuring the Okta to push to trigger at auth/ldap/users/jdoe
+would initiate an Okta push only for Jon Doe.
+* In this scenario, both the LDAP auth method and Okta MFA provider must be configured in
+Vault before the EGP can be used for triggering the second factor of authentication.
+
+---
+
+## Admin interaction example
+
+![](../artwork/fig1-3.png)
+
+Notes:
+
+* Jon Doe needs to create a namespace in Vault for a new team onboarding to
+  Vault. Jon uses the Vault CLI to log in to Vault using his LDAP username and password.
+  Jon receives an Okta Verify to verify his identity. Once authenticated, Jon receives an
+  access token from Vault with administrative privileges. Jon uses his token to create and
+  configure a new namespace in Vault.
+  
+---
+
+## Security and Compliance Interaction
+
+* Security and compliance personnel must ensure the Vault service is secure
+* security and compliance personnel have secrets that need to be stored and managed. 
+* Also, need to ensure that the Vault service is being consumed in a secure and compliant manner
+  * penetration testing 
+  * static code analysis.
+  * Frequently use the Vault audit data to monitor operations using log aggregation
+and analytics tools
+      * Splunk or an ELK stack
+
+Notes:
+
+* While Vault can increase the overall security of integrated applications, security and
+compliance personnel must ensure the Vault service is secure. The security and compliance
+team may interact with Vault in a variety of ways. 
+*  The first type of interaction is based on a
+need for secrets management and aligns with general consumer interactions. Typically,
+security and compliance personnel have secrets that need to be stored and managed. 
+*   The
+security and compliance teams also need to ensure that the Vault service is being
+consumed in a secure and compliant manner along validating the security of the Vault
+service. 
+* This would include processes such as penetration testing or static code analysis.
+To ensure Vault is running and being consumed securely, the security and compliance
+teams will frequently use the Vault audit data to monitor operations using log aggregation
+and analytics tools, such as Splunk or an ELK stack.
+
+---
+
+## Security flow example
+
+![](../artwork/fig1-4.png)
+
+Notes:
+
+* Example: 
+*  A Vault user authenticates with Vault and receives an access token. The access
+token is used in an attempt to retrieve a secret that the user does not have access to read.
+* The user's request is denied, and a log entry for the event is generated through an audit
+device and ingested into Splunk. 
+*  A notable security event is sent to the security operations
+center (SOC) for investigation
+
+---
+
+## Vault Programmatic Interaction
+
+* Vault has robust API
+  * For DevOps and public cloud migration
+* The 
+  * Have the majority of interactions take place through automation using the API directly
+      * authenticate with Vault,
+      * receive a token
+      * use it to retrieve a secret.
+  
+* AppRole auth method
+  * RoleID (username) and a SecretID (password) 
+  * the client receives a token in response that can be used to retrieve a secret.
+
+Notes:
+
+One of Vault’s most compelling features is its robust API, especially in organizations
+adopting a DevOps culture or migrating applications to the public cloud. The goal is to have
+the majority of interactions take place through automation using the API directly. This form
+of interaction requires the entity (usually an application or host) to authenticate with Vault,
+receive a token, and use it to retrieve a secret.
+One of the most common auth methods used for this machine-to-machine interaction is the
+AppRole auth method. This auth method uses a RoleID (username) and a SecretID
+(password) to authenticate a non-human entity with Vault. As a result of authentication, the
+client receives a token in response that can be used to retrieve a secret.
+
+---
+
+## Programmatic Interaction
+
+![](../artwork/fig1-5.png)
+
+Notes:
+
+* A root password on a group of Linux hosts needs to be rotated. 
+*  These hosts are
+using SaltStack for configuration management. 
+*   On the Salt master, a process is triggered to
+rotate the root password on all Salt minions. 
+*    The Salt master uses a RoleID and a SecretID,
+configured in environment variables, to authenticate with Vault and retrieve a short-lived
+access token. 
+*     The Salt master then uses this token to read a secret value at a specified
+path in Vault and sends this value to all attached minions. Once received, each minion
+updates the local root password with the specified secret value.
+
+---
+
