@@ -1,0 +1,44 @@
+Course Duration: 3
+Course Topics:
+Vault architecture
+• Vault Overview
+• Secret Engines: Static Secrets
+• Secret Engines: Cubbyhole Secret Engine
+• Secret Engines: Dynamic Secrets
+• Encryption as a Service - Transit Secrets Engine
+• Authentication
+• Application Integration
+Vault configuration
+• Vault Installation
+• Auto-Unseal
+• Vault Cluster Deployment
+• Vault Operations
+• Vault Policies
+• Secure Introduction
+Vault scalability
+• Vault Identities: Entities and Groups
+• Namespaces
+• Granular Access Control
+• Scaling for Performance
+• Codify Management of Vault Clusters
+• Production Topologies
+• Monitoring Vault
+Microservices and Consul
+• An introduction to monolithic vs service-oriented architectures
+• Service discovery in a monolith
+• Service discovery challenges in a distributed system and Consul’s solution
+• Configuration management in a monolith
+• Configuration challenges in a distributed system and Consul’s solution
+
+• Network segmentation in a monolith
+• Network segmentation challenges in a distributed system and Consul’s solutions
+• The definition of “service mesh”
+Consul hand-on
+• Learn about the problems that Consul solves.
+• Explore Consul’s architecture and interfaces (HTTP API, DNS interface, and web UI).
+• Implement service discovery and health checking.
+• Connect services into a service mesh to encrypt and control network traffic.
+• Manipulate values in Consul’s key-value store and watch them for updates.
+• Render a configuration file from key-value data using Consul Template.
+• Install a local Consul agent that you can use to continue experimenting with after the course.
+• Explore additional online learning resources.
