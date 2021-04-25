@@ -285,7 +285,7 @@
 
 ---
 
-## Vault overview
+## Vault summary
 
 ![](../artwork/vault-overview.png)
 
