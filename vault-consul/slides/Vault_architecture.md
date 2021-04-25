@@ -62,6 +62,14 @@ a returning guest may also receive access to the guest lounge for their loyalty.
 
 ---
 
+## Lab - Install Vault
+
+* Please do lab `lab01`
+* It is found here: https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab01
+
+---
+
+
 ## Vault's token
 * Token is issued to the client
   * Based on the policy for that user
