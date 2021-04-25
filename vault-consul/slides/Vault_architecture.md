@@ -62,7 +62,7 @@ a returning guest may also receive access to the guest lounge for their loyalty.
 
 ---
 
-## Lab - Install Vault
+## Lab: - Install Vault
 
 * Please do lab `lab01`
 * It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab01](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab01)
@@ -186,7 +186,7 @@ Notes:
 
 ---
 
-## Lab - Start Vault
+## Lab: - Start Vault
 
 * Please do lab `lab02`
 * It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab02](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab02)
@@ -235,7 +235,7 @@ Notes:
 
 ---
 
-## Lab - Write a Secret
+## Lab: - Write a Secret
 
 * Please do lab `lab03`
 * It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab03](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab03)
@@ -267,7 +267,14 @@ Notes:
 
 ---
 
-## Now Vault is unsealed
+## Lab: Secret Engines
+
+* Please do lab `lab04`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab04](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab04)
+
+---
+
+## After Vault is unsealed
 
 * After the Vault is unsealed
   * requests can be processed from the HTTP API to the Core. 
@@ -285,6 +292,20 @@ Notes:
 * After the Vault is unsealed, requests can be processed from the HTTP API to the Core. The core is used to manage the flow of requests through the system, enforce ACLs, and ensure audit logging is done.
 
 * When a client first connects to Vault, it needs to authenticate. Vault provides configurable auth methods providing flexibility in the authentication mechanism used. Human friendly mechanisms such as username/password or GitHub might be used for operators, while applications may use public/private keys or tokens to authenticate. An authentication request flows through core and into an auth method, which determines if the request is valid and returns a list of associated policies.
+
+---
+
+## Lab: Dynamic Secrets
+
+* Please do lab `lab05`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab05](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab05)
+
+---
+
+## Lab: Built-in Help
+
+* Please do lab `lab06`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab06](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab06)
 
 ---
 
@@ -306,6 +327,7 @@ Notes:
 * The core handles logging of requests and responses to the audit broker, which fans the request out to all the configured audit devices. Outside of the request flow, the core performs certain background activity. Lease management is critical, as it allows expired client tokens or secrets to be revoked automatically. Additionally, Vault handles certain partial failure cases by using write ahead logging with a rollback manager. This is managed transparently within the core and is not user visible.
 
 ---
+
 
 ## The Vault Service Process
 
@@ -355,7 +377,7 @@ created and attached to the entity.
   
 ---
 
-## The basic workflow of client interaction with Vault
+## Basic workflow of client interaction
 
 1. The client sends an authentication request to Vault, specifying the auth method and
    credentials to be used.
@@ -399,6 +421,14 @@ Notes:
   * the associated credentials are removed automatically by Vault.
   
 ---
+
+## Lab: Authentication
+
+* Please do lab `lab07`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab07](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab07)
+
+---
+
 
 ## Database example
 
@@ -552,6 +582,13 @@ username and password.
 then uses that access token to retrieve the value of the desired secret from a specific path
 in Vault.
    
+---
+
+## Lab: Authentication
+
+* Please do lab `lab08`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab08](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab08)
+
 ---
 
 ## Administrative Interaction
@@ -708,87 +745,18 @@ path in Vault and sends this value to all attached minions. Once received, each 
 updates the local root password with the specified secret value.
 
 ---
+# Vault Real-World
 
-# Vault Secret Engines
-
-## Static Secrets: Key/Value Secrets Engine
-
-* Vault can be used to store any secret in a secure manner. 
-* The secrets may be 
-  * SSL certificates and keys for your organization's domain
-  * credentials to connect to a corporate database server, etc. 
-* Storing such sensitive information in plaintext is not desirable.
-
-## Static secret scenario
-
-* Personas
-  * **devops** with privileged permissions to write secrets
-  * **apps** reads the secrets from Vault
-  
-* Challenge
-
-  * Developers use a single admin account to access a third-party app (e.g. Splunk) 
-  * and anyone who knows the user ID and password can log in as an admin
-  * SSH keys to connect to remote machines are shared and stored as a plaintext 
-  * An app integrates with LDAP, and its configuration information is in a plaintext
-
-Notes:
-
-Personas
-The end-to-end scenario described in this tutorial involves two personas:
-
-devops with privileged permissions to write secrets
-apps reads the secrets from Vault
-»Challenge
-Consider the following situations:
-
-Developers use a single admin account to access a third-party app (e.g. Splunk) and anyone who knows the user ID and password can log in as an admin
-SSH keys to connect to remote machines are shared and stored as a plaintext
-API keys to invoke external system APIs are stored as a plaintext
-An app integrates with LDAP, and its configuration information is in a plaintext
-Organizations often seek an uniform workflow to securely store this sensitive information.
+## Deploy
 
 ---
 
-## Cubbyhole Secret Engine
-
-* The term
-  * cubbyhole comes from an Americanism where you get a "locker" or "safe place" to store your belongings or valuables. 
-  * It is not possible to reach into another token's cubbyhole even as the root user
-  * By contrast, the secrets in the key/value secrets engine are accessible to any token
-
-Notes:
-
-* The term cubbyhole comes from an Americanism where you get a "locker" or "safe place" to store your belongings or valuables. In Vault, the cubbyhole is your "locker". All secrets are namespaced under your token. If that token expires or is revoked, all the secrets in its cubbyhole are revoked as well.
-
-It is not possible to reach into another token's cubbyhole even as the root user. This is an important difference between the cubbyhole and the key/value secrets engine. The secrets in the key/value secrets engine are accessible to any token for as long as its policy allows it.
+## HTTP API
 
 ---
 
-## Scenario
 
-* Personas
-  * The end-to-end scenario described in this tutorial involves two personas:
-    * admin with privileged permissions to create tokens
-    * apps trusted entity retrieving secrets from Vault
-* Challenge
-  * In order to tightly manage the secrets, you set the scope of who can do what using the Vault policy and attach that to tokens, roles, entities, etc.
-  * How can you securely distribute the initial token to the trusted entity?
-  
-Notes:
-
-* Personas
-* The end-to-end scenario described in this tutorial involves two personas:
-
-* admin with privileged permissions to create tokens
-* apps trusted entity retrieving secrets from Vault
-
-
-* Challenge
-* In order to tightly manage the secrets, you set the scope of who can do what using the Vault policy and attach that to tokens, roles, entities, etc.
-
-* Think of a case where you have a trusted entity (Chef, Jenkins, etc.) which reads secrets from Vault. This trusted entity must obtain a token. If the trusted entity or its host machine was rebooted, it must re-authenticate with Vault using a valid token.
-
-* How can you securely distribute the initial token to the trusted entity?
+## Web UI
 
 ---
+
