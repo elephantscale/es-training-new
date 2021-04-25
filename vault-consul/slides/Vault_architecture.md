@@ -65,7 +65,7 @@ a returning guest may also receive access to the guest lounge for their loyalty.
 ## Lab - Install Vault
 
 * Please do lab `lab01`
-* It is found here: https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab01
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab01](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab01)
 
 ---
 
@@ -186,6 +186,13 @@ Notes:
 
 ---
 
+## Lab - Start Vault
+
+* Please do lab `lab02`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab02](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab02)
+
+---
+
 ## Terminology
 
 * Storage Backend
@@ -228,7 +235,14 @@ Notes:
 
 ---
 
-## Vault starts sealed
+## Lab - Write a Secret
+
+* Please do lab `lab03`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab03](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab03)
+
+--- 
+
+## In the real world, Vault starts sealed
 
 ![](../artwork/vault-shamir-secret-sharing.png)
 
