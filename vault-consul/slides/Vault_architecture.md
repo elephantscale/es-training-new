@@ -285,7 +285,7 @@ In asymmetric cryptography, as the name suggests, one key is used to encrypt a m
 
 ---
 
-## Why asymmetric cryptography?
+## Problem with symmetric encryption?
 
 * Symmetric cryptography has a serious problem. 
 * That problem is key exchange and the potential for compromise.
@@ -301,6 +301,24 @@ Notes:
 
 * Symmetric cryptography (which you studied in Chapters 6 and 7) has a serious problem. That problem is key exchange and the potential for compromise. Let’s look at an example to demonstrate. For some reason, all security and cryptography books like to use the fictitious characters Alice, Bob, and Eve to explain how asymmetric cryptography works, and I will continue that tradition here.
 * Let’s assume, then, that Alice would like to send Bob a message. But Alice is concerned that Eve might eavesdrop (thus her name!) on the communication. Now let’s further assume that they don’t have asymmetric cryptography—all they have are the symmetric ciphers. Further, Bob and Alice do not live in the same location, so how can they exchange a key so that they might encrypt messages? Any method (other than asymmetric cryptography) has the very real chance of being compromised, short of a secure/trusted courier manually taking the keys to the two parties. (If a courier was needed to exchange keys every time secure communication was required, then we would not have online banking, e-commerce, or a host of other useful technologies.)
+
+---
+
+## Enigma machine
+
+* The Enigma machine is a cipher device
+* an electromechanical rotor mechanism that scrambles the 26 letters of the alphabet.
+* If plain text is entered, the lit-up letters are the encoded ciphertext. 
+* Entering ciphertext transforms it back into readable plaintext.
+* `‘SCIENCE IS AWESOME` => `MKSQER PO QAPEKRQ`
+
+![](../artwork/Enigma_(crittografia)_-_Museo_scienza_e_tecnologia_Milano.jpg)
+
+---
+
+## Breaking the Enigma machine
+
+![](../artwork/bombe-machine-old.jpg)
 
 ---
 
