@@ -255,7 +255,12 @@ Notes:
 
 ---
 
-## RSA inventors
+## RSA 
+
+* Vault is based on asymmetric cryptography and RSA
+* Vault packages these so that it 'just works'
+* Let's spend a few minutes with the basic overview
+
 ![](../artwork/rsa.png)
 
 
@@ -264,6 +269,49 @@ Notes:
 * The number of shares and the minimum threshold required can both be specified. Shamir's technique can be disabled, and the master key used directly for unsealing. Once Vault retrieves the encryption key, it is able to decrypt the data in the storage backend, and enters the unsealed state. Once unsealed, Vault loads all of the configured audit devices, auth methods, and secrets engines.
 
 * The configuration of those audit devices, auth methods, and secrets engines must be stored in Vault since they are security sensitive. Only users with the correct permissions should be able to modify them, meaning they cannot be specified outside of the barrier. By storing them in Vault, any changes to them are protected by the ACL system and tracked by audit logs.
+
+---
+
+## What is asymmetric cryptography?
+
+* One key is used to encrypt a message and a different (but related) key is used to decrypt it. 
+* This seems baffling at first
+* This will be clearer once we look at some algorithms and a bit of math. 
+* For now, we will accept that one key encrypts but cannot decrypt the message; another key is used to decrypt it.
+
+Notes:
+
+In asymmetric cryptography, as the name suggests, one key is used to encrypt a message and a different (but related) key is used to decrypt it. This concept often baffles those new to cryptography and students in network security courses. How can it be that a key used to encrypt will not also decrypt? This will be clearer to you once we examine a few algorithms and you see the actual mathematics involved. For now, set that issue to one side and simply accept that one key encrypts but cannot decrypt the message; another key is used to decrypt it.
+
+---
+
+## Why asymmetric cryptography?
+
+* Symmetric cryptography has a serious problem. 
+* That problem is key exchange and the potential for compromise.
+* Enter Alice, Bob, and Eve
+  * Alice would like to send Bob a message. 
+  * But Eve might eavesdrop!
+  * Bob and Alice do not live in the same location, how do they exchange the key? 
+  * (Short of a secure/trusted courier manually taking the keys to the two parties.)
+  
+![](../artwork/pexels-sunyu-kim-2047397.jpg)
+
+Notes:
+
+* Symmetric cryptography (which you studied in Chapters 6 and 7) has a serious problem. That problem is key exchange and the potential for compromise. Let’s look at an example to demonstrate. For some reason, all security and cryptography books like to use the fictitious characters Alice, Bob, and Eve to explain how asymmetric cryptography works, and I will continue that tradition here.
+* Let’s assume, then, that Alice would like to send Bob a message. But Alice is concerned that Eve might eavesdrop (thus her name!) on the communication. Now let’s further assume that they don’t have asymmetric cryptography—all they have are the symmetric ciphers. Further, Bob and Alice do not live in the same location, so how can they exchange a key so that they might encrypt messages? Any method (other than asymmetric cryptography) has the very real chance of being compromised, short of a secure/trusted courier manually taking the keys to the two parties. (If a courier was needed to exchange keys every time secure communication was required, then we would not have online banking, e-commerce, or a host of other useful technologies.)
+
+---
+
+## Asymmetric cryptography - problem solved!
+
+![](../artwork/arch-01.png)
+
+Notes:
+
+* With public key/asymmetric cryptography, Alice will get Bob’s public key and use that to encrypt the message she sends to Bob. If Eve intercepts the message and gains access to Bob’s public key, that’s OK, because that key won’t decrypt the message. Only Bob’s private key will do so, and this he safeguards.
+* If Bob wants to respond to Alice, he reverses the process. He gets Alice’s public key and encrypts a message to her—a message that only her private key will decrypt.
 
 ---
 
