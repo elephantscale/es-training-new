@@ -252,23 +252,16 @@ Notes:
 * Before any operation can be performed on the Vault it must be unsealed. This is done by providing the unseal keys. 
 * When the Vault is initialized it generates an encryption key which is used to protect all the data. That key is protected by a master key. 
 * By default, Vault uses a technique known as Shamir's secret sharing algorithm to split the master key into 5 shares, any 3 of which are required to reconstruct the master key.
+* The number of shares and the minimum threshold required can both be specified. Shamir's technique can be disabled, and the master key used directly for unsealing. Once Vault retrieves the encryption key, it is able to decrypt the data in the storage backend, and enters the unsealed state. Once unsealed, Vault loads all of the configured audit devices, auth methods, and secrets engines.
+* The configuration of those audit devices, auth methods, and secrets engines must be stored in Vault since they are security sensitive. Only users with the correct permissions should be able to modify them, meaning they cannot be specified outside of the barrier. By storing them in Vault, any changes to them are protected by the ACL system and tracked by audit logs.
 
 ---
 
-## RSA 
+## What protects Vault
 
 * Vault is based on asymmetric cryptography and RSA
 * Vault packages these so that it 'just works'
 * Let's spend a few minutes with the basic overview
-
-![](../artwork/rsa.png)
-
-
-Notes:
-
-* The number of shares and the minimum threshold required can both be specified. Shamir's technique can be disabled, and the master key used directly for unsealing. Once Vault retrieves the encryption key, it is able to decrypt the data in the storage backend, and enters the unsealed state. Once unsealed, Vault loads all of the configured audit devices, auth methods, and secrets engines.
-
-* The configuration of those audit devices, auth methods, and secrets engines must be stored in Vault since they are security sensitive. Only users with the correct permissions should be able to modify them, meaning they cannot be specified outside of the barrier. By storing them in Vault, any changes to them are protected by the ACL system and tracked by audit logs.
 
 ---
 
@@ -330,7 +323,38 @@ Notes:
 
 * With public key/asymmetric cryptography, Alice will get Bob’s public key and use that to encrypt the message she sends to Bob. If Eve intercepts the message and gains access to Bob’s public key, that’s OK, because that key won’t decrypt the message. Only Bob’s private key will do so, and this he safeguards.
 * If Bob wants to respond to Alice, he reverses the process. He gets Alice’s public key and encrypts a message to her—a message that only her private key will decrypt.
+* Asymmetric cryptography solves the problem of key exchange. It does not impede security, even if literally every person on the planet has both Bob’s and Alice’s public keys. Those keys can be used only to encrypt messages to Bob and Alice (respectively) and cannot decrypt the messages. So as long as Bob and Alice keep their private keys secret, secure communication is achieved with no problems in key exchange.
+* This basic concept of two keys—one key being public and another being private—is why this is often called public key cryptography. The term asymmetric cryptography is also used because the two keys are not the same—they are not symmetrical. Unfortunately, this is as far as many security courses go in explaining asymmetric cryptography—but, of course, we will be delving into the actual algorithms.
 
+---
+
+## RSA
+
+* RSA may be the most widely used asymmetric algorithm. 
+* This public key method was developed in 1977 by three mathematicians
+  — Ron **R**ivest, Adi **S**hamir, and Leonard **A**dleman, thus **RSA**. 
+  - The algorithm is based on prime numbers and the difficulty of factoring a large number into its prime factors.
+
+![](../artwork/rsa.png)
+
+Notes:
+
+* The three inventors of RSA are very well-known and respected cryptographers. 
+* Ron Rivest has been a professor at MIT and invented several algorithms including RC2, RC4, RC5, MD2, MD4, MD5, and MD6. 
+* Adi Shamir is an Israeli cryptographer and one of the inventors of differential cryptanalysis. 
+* Leonard Adleman has made significant contributions to using DNA as a computational system.
+
+---
+
+## Will quantum computing break Vault?
+
+* https://www.hashicorp.com/blog/quantum-security-and-cryptography-in-hashicorp-vault
+* Q: With modern computing power, attacking RSA 2048 using a number sieve should take a few orders of magnitude longer than the expected lifetime of our galaxy. With a sufficiently powerful quantum computer, we can expect to break the same encryption in roughly thirty minutes.
+* A: Quantum Security in Vault
+  * Quantum computing is not always destructive to security. 
+  * There are a number of new (and in some cases renovated) ciphers and cryptographic techniques being introduced to deal with threats powered by quantum computers. 
+  * When peer reviewed implementations of this cryptography are available, HashiCorp looks to support them in Vault.
+  
 ---
 
 ## Lab: Secret Engines
@@ -826,3 +850,31 @@ updates the local root password with the specified secret value.
 
 ---
 
+## The RSA Algorithm (background info, optional)
+
+* To create the public and private key pair, you start by generating two large random primes, p and q, of approximately equal size. You need to select two numbers so that when multiplied together, the product will be the size you want (such as 2048 bits, 4096 bits, and so on).
+
+* Next, multiply p and q to get n:
+
+* Let n = pq
+
+---
+
+## The RSA Algorithm 2
+
+* Let m = (p – 1)(q – 1) (Euler's totient of n)
+* Now we are going to select another number—we will call this number e. The number e should have no common dividers with m
+* Find d, such that de % m = 1
+* Publish e and n as the **public key**. Keep d as the **secret key**
+
+---
+
+## The RSA Algorithm 3
+
+* To encrypt, you simply take your message raised to the e power and modulo n.
+  * C = Me % n
+* To decrypt, you take the cipher text and raise it to the d power modulo n.
+  * P = Cd % n
+![](../artwork/thats-all-folks-sticker-india.jpg)
+    
+---
