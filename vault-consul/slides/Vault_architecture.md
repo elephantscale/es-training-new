@@ -346,6 +346,20 @@ Notes:
 
 ---
 
+## Cryptography vulnerabilities 
+
+* Cryptography is sometimes the source of security vulnerabilities. Common vulnerabilities
+include:
+* Weak random number generation
+* Improper key storage
+* Deprecated algorithms
+* Misconfiguration
+* Poor policies
+* Self-signed certificates
+* Invalid certificates
+
+![](../artwork/arch-2.png)
+
 ## Will quantum computing break Vault?
 
 * https://www.hashicorp.com/blog/quantum-security-and-cryptography-in-hashicorp-vault
@@ -816,37 +830,141 @@ client receives a token in response that can be used to retrieve a secret.
 
 ---
 
+# Real-world scenarios
+
+## Vault deploy
+
+* Vault configuration language is HCL
+* HCL is a toolkit for creating structured configuration languages
+* Human- and machine-friendly
+* For use with command-line tools
+* Generic, but primarily targeted towards devops tools, servers, etc.
+
+---
+
+## HCL example
+
+```shell
+storage "raft" {
+  path    = "./vault/data"
+  node_id = "node1"
+}
+
+listener "tcp" {
+  address     = "127.0.0.1:8200"
+  tls_disable = "true"
+}
+
+api_addr = "http://127.0.0.1:8200"
+cluster_addr = "https://127.0.0.1:8201"
+ui = true
+```
+
+Notes:
+
+* storage - This is the physical backend that Vault uses for storage. Up to this point the dev server has used "inmem" (in memory), but the example above uses integrated storage (raft), a much more production-ready backend.
+
+* listener - One or more listeners determine how Vault listens for API requests. The example above listens on localhost port 8200 without TLS. In your environment set VAULT_ADDR=http://127.0.0.1:8200 so the Vault client will connect without TLS.
+
+* api_addr - Specifies the address to advertise to route client requests.
+
+* cluster_addr - Indicates the address and port to be used for communication between the Vault nodes in a cluster.
+
+---
+
+## Starting the server
+
+* To start the server, you will need to prepare a directory
+
+```text
+./vault/data
+```
+
+* And run this command
+
+```shell
+vault server -config=config.hcl
+```
+
+---
+
+## What happens in configuring Vault
+
+* Initialization is in fact configuring Vault. 
+* Happens once when the server is started against a new backend that has never been used 
+* When running in HA mode, this happens once per cluster
+  * During initialization
+    * the encryption keys are generated
+    * unseal keys are created
+    * initial root token is setup
+
+![](../artwork/seal.jpg)
+
+---
+
+##  Vault initialization
+
+* In another windows (you use the first one to run Vault)
+
+```shell
+export VAULT_ADDR='http://127.0.0.1:8200'
+vault operator init
+```
+
+![](../artwork/unseal.png)
+
+* Distribute these **very** secret keys to three people whom your trust
+* Together (but indendently), then will unseal Vault
+
+---
+
+## Lab: Deploy Vault
+
+* Please do lab `lab09`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab09](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab09)
+
+---
+
+
+## HTTP API
+
+---
+
+## Lab: HTTP API
+
+* Please do lab `lab10`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab10](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab10)
+
+---
+
 ## Programmatic Interaction
 
 ![](../artwork/fig1-5.png)
 
 Notes:
 
-* A root password on a group of Linux hosts needs to be rotated. 
+* A root password on a group of Linux hosts needs to be rotated.
 *  These hosts are
-using SaltStack for configuration management. 
+   using SaltStack for configuration management.
 *   On the Salt master, a process is triggered to
-rotate the root password on all Salt minions. 
+    rotate the root password on all Salt minions.
 *    The Salt master uses a RoleID and a SecretID,
-configured in environment variables, to authenticate with Vault and retrieve a short-lived
-access token. 
+     configured in environment variables, to authenticate with Vault and retrieve a short-lived
+     access token.
 *     The Salt master then uses this token to read a secret value at a specified
 path in Vault and sends this value to all attached minions. Once received, each minion
 updates the local root password with the specified secret value.
 
 ---
-# Vault Real-World
-
-## Deploy
-
----
-
-## HTTP API
-
----
-
 
 ## Web UI
+
+---
+
+## Lab: Web UI
+
+* Please do lab `lab11`
+* It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab11](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab11)
 
 ---
 
