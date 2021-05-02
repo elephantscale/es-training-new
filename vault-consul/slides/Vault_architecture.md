@@ -348,27 +348,34 @@ Notes:
 
 ## Cryptography vulnerabilities 
 
-* Cryptography is sometimes the source of security vulnerabilities. Common vulnerabilities
-include:
-* Weak random number generation
-* Improper key storage
-* Deprecated algorithms
-* Misconfiguration
-* Poor policies
-* Self-signed certificates
-* Invalid certificates
+* Cryptography is sometimes the source of security vulnerabilities. 
+*  Common vulnerabilities include:
+  * Weak random number generation
+  * Improper key storage
+  * Deprecated algorithms
+  * Misconfiguration
+  * Poor policies
+  * Self-signed certificates
+  * Invalid certificates
 
 ![](../artwork/arch-2.png)
 
-## Will quantum computing break Vault?
+## Will quantum computing break Vault? - Q
 
 * https://www.hashicorp.com/blog/quantum-security-and-cryptography-in-hashicorp-vault
 * Q: With modern computing power, attacking RSA 2048 using a number sieve should take a few orders of magnitude longer than the expected lifetime of our galaxy. With a sufficiently powerful quantum computer, we can expect to break the same encryption in roughly thirty minutes.
+  
+---
+
+## Will quantum computing break Vault? - A
+
 * A: Quantum Security in Vault
   * Quantum computing is not always destructive to security. 
   * There are a number of new (and in some cases renovated) ciphers and cryptographic techniques being introduced to deal with threats powered by quantum computers. 
   * When peer reviewed implementations of this cryptography are available, HashiCorp looks to support them in Vault.
   
+![](../artwork/quantum.jpg)
+
 ---
 
 ## Lab: Secret Engines
@@ -929,6 +936,7 @@ vault operator init
 ## HTTP API
 
 * All of Vault's capabilities are accessible via the HTTP API in addition to the CLI.
+* We will call it the "curl" way  
 * In fact, most calls from the CLI actually invoke the HTTP API. 
 * In some cases, Vault features are not available via the CLI and can only be accessed via the HTTP API.
 
@@ -967,8 +975,61 @@ listener "tcp" {
 
 Notes:
 
-* You might have already had the config.hcl, and this command will overwrite it. 
-* Alternatively, create the file using an editor.
+* You might have already had the config.hcl, if so, change it.
+
+---
+
+## Start new Vault instance
+
+* Start a new Vault instance using the newly created configuration.
+
+```shell
+vault server -config=config.hcl
+```
+
+* At this point, you can use Vault's HTTP API for all your interactions.
+* Launch a new terminal session, and use curl to initialize Vault with the API.
+
+```shell
+curl \
+--request POST \
+--data '{"secret_shares": 1, "secret_threshold": 1}' \
+http://127.0.0.1:8200/v1/sys/init | jq
+```
+
+Notes:
+
+* See `jq` command in the next slide 
+---
+
+## jq command
+
+* jq is a lightweight and flexible command-line JSON processor
+* shells such as Bash can’t interpret and work with JSON directly
+* Installation for `jq`
+  * [https://github.com/stedolan/jq/wiki/Installation](https://github.com/stedolan/jq/wiki/Installation)
+* To try,
+
+```shell
+echo '{"fruit":{"name":"apple","color":"green","price":1.20}}' | jq '.'
+```
+
+* Output
+```json
+{
+  "fruit": {
+    "name": "apple",
+    "color": "green",
+    "price": 1.2
+  }
+}
+
+```
+
+## Continue with the screenshots in the lab
+
+* Continue with the screenshots in the lab
+* [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab10](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab10)
 
 ---
 
@@ -1001,6 +1062,7 @@ updates the local root password with the specified secret value.
 
 ## Web UI configuration
 
+* "Vault UI" is point-and-click
 * The Vault UI is not activated by default. 
 * To activate the UI, set the ui configuration option in the Vault server configuration. 
 * Here is this section:
