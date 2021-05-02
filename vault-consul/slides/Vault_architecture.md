@@ -928,6 +928,48 @@ vault operator init
 
 ## HTTP API
 
+* All of Vault's capabilities are accessible via the HTTP API in addition to the CLI.
+* In fact, most calls from the CLI actually invoke the HTTP API. 
+* In some cases, Vault features are not available via the CLI and can only be accessed via the HTTP API.
+
+Notes:
+
+* We see that HTTP API is important.
+* Let us look at it in more detail
+
+---
+
+## Prepare to run HTTP API
+
+* Press Ctrl+C to terminate the dev server
+  * Alternatively, find an kill the process
+
+* Machines that need access to information stored in Vault will most likely access Vault via its REST API. 
+  * For example, if a machine were using AppRole for authentication, the application would first authenticate to Vault which would return a Vault API token. The application would use that token for future communication with Vault.
+  
+---
+
+## config.hcl
+
+* For the purpose of our lab, you will use the following configuration which disables TLS and uses a file-based backend. 
+* TLS is disabled here only for example purposes; 
+* it should **never** be disabled in production.
+
+```text
+storage "file" {
+  path = "vault-data"
+}
+
+listener "tcp" {
+  tls_disable = "true"
+}
+```
+
+Notes:
+
+* You might have already had the config.hcl, and this command will overwrite it. 
+* Alternatively, create the file using an editor.
+
 ---
 
 ## Lab: HTTP API
@@ -957,9 +999,99 @@ updates the local root password with the specified secret value.
 
 ---
 
-## Web UI
+## Web UI configuration
+
+* The Vault UI is not activated by default. 
+* To activate the UI, set the ui configuration option in the Vault server configuration. 
+* Here is this section:
+
+```text
+ui = true
+
+listener "tcp" {
+  # ...
+}
+
+storage "storage" {
+  # ...
+}
+```
+
+Notes:
+
+
+* Press Ctrl+C to terminate the dev server if you are running it at http://127.0.0.1:8200 before proceeding.
 
 ---
+
+## Web UI listener
+
+* The UI runs on the same port as the Vault listener. 
+* Therefore, you must configure at least one listener stanza in order to access the UI.
+
+```text
+ui = true
+
+listener "tcp" {
+  address = "10.0.1.35:8200"
+
+  # If bound to localhost, the Vault UI is only
+  # accessible from the local machine!
+  # address = "127.0.0.1:8200"
+}
+```
+
+Notes:
+
+* In this case, the UI is accessible at the following URL from any machine on the subnet (provided no network firewalls are in place): https://10.0.1.35:8200/ui
+
+* It is also accessible at any DNS entry that resolves to that IP address, such as the Consul service address (if using Consul): https://vault.service.consul:8200/ui
+
+* NOTE: When you start the Vault server in dev mode, Vault UI is automatically enabled and ready to use.
+
+* As an experiment, you can try in in dev mode
+
+---
+
+
+## config.hcl
+
+```text
+ui = true
+disable_mlock = true
+
+storage "raft" {
+  path    = "./vault/data"
+  node_id = "node1"
+}
+
+listener "tcp" {
+  address     = "0.0.0.0:8200"
+  tls_disable = "true"
+}
+
+api_addr = "http://127.0.0.1:8200"
+cluster_addr = "https://127.0.0.1:8201"
+```
+
+Notes:
+
+* The raft storage backend requires the filesystem path ./vault/data.
+
+* Although the listener stanza disables TLS (tls_disable = "true") for this tutorial, Vault should always be used with TLS in production to provide secure communication between clients and the Vault server. It requires a certificate file and key file on each Vault host.
+
+---
+
+
+## Starting the Vault server
+
+* Start a Vault server with server configuration file named config.hcl
+
+```shell
+vault server -config=config.hcl
+```
+
+* Let us now continue our review with the pictures in [the lab](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab11)
 
 ## Lab: Web UI
 
