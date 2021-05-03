@@ -25,3 +25,10 @@
   
 * Labs
 * 11
+
+### TODO next
+* Consul for Service Discovery
+* Secrets management (labs and slides)
+* Configure - overview of https://learn.hashicorp.com/tutorials/vault/configure-vault
+* Data encryption - https://learn.hashicorp.com/tutorials/vault/eaas-transit
+* Consul
