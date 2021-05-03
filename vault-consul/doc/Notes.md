@@ -32,3 +32,5 @@
 * Configure - overview of https://learn.hashicorp.com/tutorials/vault/configure-vault
 * Data encryption - https://learn.hashicorp.com/tutorials/vault/eaas-transit
 * Consul
+* Polish with Oreilly https://learning.oreilly.com/videos/getting-started-with/1018947658/1018947658-HCV_3?autoplay=false
+
