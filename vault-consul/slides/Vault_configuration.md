@@ -142,9 +142,9 @@ For example, the US standard of FIPS 140-2 has different levels that refer to ho
 
 ---
 
-# Vault Secret Engines
+# Static secrets
 
-## Static Secrets: Key/Value Secrets Engine
+## Key/Value Secrets Engine
 
 * Vault can be used to store any secret in a secure manner.
 * The secrets may be

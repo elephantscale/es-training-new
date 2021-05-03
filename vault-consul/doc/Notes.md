@@ -13,12 +13,15 @@
 
 * [Hashicorp-Certified-Vault-Associate-Getting-Started](https://github.com/ned1313/Hashicorp-Certified-Vault-Associate-Getting-Started)
 
-* Totals slides - 155
+* Totals slides - 175
 * 01 - 13
 * 02 - 34
-* 03 - 77
-* 04 - 11  
-* 05 - 20
-
+* 03 - 78
+* 04 - 17
+* 05 - 10  
+* 06 - 20
+* 07 - 1
+* 08 - 2
+  
 * Labs
 * 11

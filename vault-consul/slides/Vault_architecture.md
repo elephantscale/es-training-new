@@ -837,6 +837,22 @@ client receives a token in response that can be used to retrieve a secret.
 
 ---
 
+## Password rotation
+
+![](../artwork/arch-03.png)
+
+Notes:
+
+Example: A root password on a group of Linux hosts needs to be rotated. These hosts are
+using SaltStack for configuration management. On the Salt master, a process is triggered to
+rotate the root password on all Salt minions. The Salt master uses a RoleID and a SecretID,
+configured in environment variables, to authenticate with Vault and retrieve a short-lived
+access token. The Salt master then uses this token to read a secret value at a specified
+path in Vault and sends this value to all attached minions. Once received, each minion
+updates the local root password with the specified secret value.
+
+---
+
 # Real-world scenarios
 
 ## Vault deploy
