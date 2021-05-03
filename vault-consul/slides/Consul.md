@@ -175,3 +175,94 @@ infrastructure, configure Vault components, and retrieve Vault secrets.
 
 ---
 
+## Vault Infrastructure with Terraform
+
+* Terraform and Vault often go together
+* Your deployment may have custom Terraform modules
+* If so, it may make sense to store the modules in the Terraform pubic registry
+
+Notes:
+
+Organizations deploying Vault to automate the security of applications and infrastructure are
+often Terraform adopters as well. If so, it is highly likely that these organizations maintain
+custom Terraform modules for their data center or their selected public cloud platform.
+Using these modules or modules from the Terraform public registry, customers can simplify
+a Vault cluster's deployment and ongoing management.
+
+---
+
+## Vault Architecture
+
+* Components to go in the Terraform configuration files:
+  * Consul nodes
+  * Vault nodes
+  * load balancers
+  * security groups
+  * DNS records
+  * network connectivity
+  
+Notes: 
+
+As discussed in the Designing the Vault Architecture section, many components must be
+considered when architecting a Vault solution. Since Terraform supports many private and
+public cloud resources, organizations can easily define these components in Terraform for
+deployment. Components such as the Consul and Vault nodes, load balancers, security
+groups, DNS records, and network connectivity can easily be declared in a Terraform
+configuration file. Any changes to the environment can be applied using Terraform for
+simplified management as well.
+
+---
+
+## Repeatability
+
+* Repeatability if one the benefits of deploying Vault with Terraform
+* Other benefits
+  * performance or 
+  * disaster recovery 
+  * replicated clusters
+  *high availability 
+    
+Notes:
+
+One of the most significant benefits of deploying Vault with Terraform is repeatability. As
+Vault adoption increases, so does the need for performance or disaster recovery replicated
+clusters to ensure high availability and recovery of the service. By developing Terraform
+configurations for Vault, an organization can readily deploy additional clusters when
+needed. This strategy also ensures that each cluster is provisioned consistently regardless
+of where the new cluster is needed.
+
+---
+
+## Terraform configurations for Vault
+
+* Amazon Web Services (https://github.com/hashicorp/terraform-aws-vault)
+* Microsoft Azure (https://github.com/hashicorp/terraform-azurerm-vault)
+* Google Cloud (https://github.com/terraform-google-modules/terraform-google-vault)
+
+![](../artwork/consul-03.png)
+
+---
+## Configure Vault Provider and Credentials
+
+* Similar to other Terraform providers:
+  * declared within the Terraform configuration file
+  * Sensitive information should be provided using environment variables
+* Example  
+  * Terraform authenticates with Vault using a token
+  * Vault address and token should be provided as an environment variable
+  * VAULT_ADDR - the IP address or hostname of the targeted Vault cluster
+  * VAULT_TOKEN, which is used to authenticate to Vault
+  
+Notes:
+
+Getting started with the Terraform Vault provider is like using any other Terraform provider:
+the provider and related arguments should be declared within the Terraform configuration
+file. Any sensitive information should be provided using environment variables. This
+technique ensures that information is not stored in a cleartext Terraform file. For example, if
+Terraform authenticates with Vault using a token, the Vault address and token should be
+provided as an environment variable. In this scenario, two environment variables need to be
+set: VAULT_ADDR, which sets the IP address or hostname of the targeted Vault cluster,
+and VAULT_TOKEN, which is used to authenticate to Vault.
+
+---
+
