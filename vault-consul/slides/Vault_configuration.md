@@ -172,7 +172,7 @@ Notes:
 ---
 
 
-# Solution
+## Solution
 
 * Use Vault 
   * centralized secret storage 
@@ -203,6 +203,39 @@ Notes:
 
 ---
 
+# Dynamic secrets 
+
+## Database Secrets Engine
+
+---
+
+# Secret management
+
+## Secrets engines
+
+* Static Secrets: Key/Value Secrets Engine
+* Versioned Key/Value Secrets Engine
+* Cubbyhole Response Wrapping
+* Dynamic Secrets: Database Secrets Engine
+* Couchbase Secrets Engine
+* Database Secrets Engine with MongoDB
+
+---
+
+## Secrets engines cont'd
+
+* Database Root Credential Rotation
+* Database Static Roles and Credential Rotation
+* Active Directory Service Account Check-out
+* OpenLDAP Secrets Engine
+* Azure Secrets Engine
+* A dozen more secret engines
+
+---
+
+## Versioned Key/Value Secrets Engine
+
+---
 
 ## Cubbyhole Secret Engine
 
@@ -246,3 +279,47 @@ Notes:
 * How can you securely distribute the initial token to the trusted entity?
 
 ---
+
+## Dynamic Secrets: Database Secrets Engine
+
+
+
+---
+
+## Couchbase Secrets Engine
+
+
+---
+
+## Database Secrets Engine with MongoDB
+
+
+
+---
+
+## Database Root Credential Rotation
+
+
+
+---
+
+## Database Static Roles and Credential Rotation
+
+
+
+---
+
+## Active Directory Service Account Check-out
+
+
+
+---
+
+## OpenLDAP Secrets Engine
+
+
+---
+
+## Azure Secrets Engine
+
+
