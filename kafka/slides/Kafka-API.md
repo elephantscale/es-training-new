@@ -1508,7 +1508,7 @@ Notes:
 
      - Real-time data store for interactive queries
 
-<img src="../../assets/images/kafka/Lambda-Streaming-Architecture-03.png" alt="Lambda-Streaming-Architecture-03.png" style="width:80%;"/><!-- {"left" : 0.82, "top" : 2.82, "height" : 1.97, "width" : 8.61} -->
+<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png" alt="Lambda-Streaming-Architecture-03.png" style="width:80%;"/><!-- {"left" : 0.82, "top" : 2.82, "height" : 1.97, "width" : 8.61} -->
 
 
 

@@ -266,3 +266,44 @@ and VAULT_TOKEN, which is used to authenticate to Vault.
 
 ---
 
+## Consuming Secrets with Terraform
+
+* Rather than provide Terraform with static credentials
+* Terraform can integrate with Vault to retrieve or generate credentials before applying the configuration
+* For example, 
+  * Terraform can retrieve temporary AWS credentials from Vault to deploy EC2 instances
+  * After the lease has expired, Vault automatically revokes the AWS credentials.
+  
+---
+
+## Coding for Reliability
+
+* Additional automated processes
+  * automated processes can ensure applications can access the vault service
+  
+* Example
+  * a team is responsible for managing a shared, multi-tenant Vault service for hundreds of internal teams
+  * Vault environment was a large, multi-cluster Vault deployment
+  * Each onboarded application was configured to attach to a single, local cluster.
+* Solution
+  * native disaster recovery options built into Vault, or
+  * a load balancer in front of the Vault clusters, or even better
+  * use the AppRole auth method since both RoleIDs and SecretIDs are replicated across all clusters
+  
+## Reliability solution
+
+![](../artwork/consul-04.png)
+
+Notes:
+
+Revisiting the above scenario, the application team needs to interact with Vault in the most
+efficient way while considering high availability across multiple clusters. Knowing that tokens
+are not replicated across clusters, the application team needs a solution to authenticate to
+any Vault cluster to retrieve secrets.
+
+The operations team can start by using the AppRole auth method since both RoleIDs and
+SecretIDs are replicated across all clusters. Combining this authentication mechanism
+capability with automation or pre-defined script can ensure applications can always access
+the Vault service, regardless of the status of the Vault environment.
+
+---

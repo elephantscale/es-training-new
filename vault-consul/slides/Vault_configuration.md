@@ -100,7 +100,7 @@ Notes:
 We talk about entropy with Vault. The entropy of Vault's encryption varies depending upon what system Vault is being run on. So with Golang's crypto and x/crypto libraries, they use a randomized function that calls different entropy pools depending on which operating system you're deploying that on. For example, Windows uses a different type of entropy pool than the entropy pool used by Linux.
 
 ---
-## Is your entropy sufficient
+## Is your entropy sufficient?
 
 * What is sufficient entropy for Vault?
   * In many ways, those random number generators are sufficiently random
@@ -199,13 +199,15 @@ Notes:
   * root tokens are only used for just enough initial setup or in emergencies. 
   * As a best practice, use tokens with appropriate set of policies based on your role in the organization.
 
-* https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab21
+* [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab21](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab21)
 
 ---
 
 # Dynamic secrets 
 
-## Database Secrets Engine
+## Dynamic Secrets: Database Secrets Engine
+
+
 
 ---
 
@@ -235,6 +237,39 @@ Notes:
 
 ## Versioned Key/Value Secrets Engine
 
+* The Static Secrets lab introduced the basics of working with key-value secrets engine. 
+* Vault 0.10 introduced K/V Secrets Engine v2 with Secret Versioning.
+* Let us look at the key-value secrets engine v2 features.
+
+---
+
+## Versioned Key/Value scenario
+
+* The KV secrets engine v1 does not provide a way to version or roll back secrets
+* This made it difficult to recover from 
+  * unintentional data loss or 
+  * overwrite when more than one user is writing at the same path.
+  
+---
+
+## Versioned Key/Value solution
+
+![](../artwork/conf-01.png)
+
+Notes:
+
+
+Run the version 2 of KV secrets engine which can retain a configurable number of secret versions. This enables older versions' data to be retrievable in case of unwanted deletion or updates of the data. In addition, its Check-and-Set operations can be used to protect the data from being overwritten unintentionally.
+
+---
+
+## Versioned Key/Value solution
+
+* Run the version 2 of KV secrets engine 
+  * it can retain a configurable number of secret versions.
+  * This enables older versions' data to be retrievable in case of unwanted deletion or updates of the data. In addition, 
+  * its Check-and-Set operations can be used to protect the data from being overwritten unintentionally.
+  
 ---
 
 ## Cubbyhole Secret Engine
@@ -252,7 +287,7 @@ It is not possible to reach into another token's cubbyhole even as the root user
 
 ---
 
-## Scenario
+## Cubbyhole Scenario
 
 * Personas
   * The end-to-end scenario described in this tutorial involves two personas:
@@ -280,46 +315,180 @@ Notes:
 
 ---
 
-## Dynamic Secrets: Database Secrets Engine
+## Cubbyhole solution
 
-
+![](../artwork/conf-02.png)
 
 ---
 
+## Cubbyhole solution
+
+* the initial token is stored in the cubbyhole secrets engine. 
+* The wrapped secret can be unwrapped using the single-use wrapping token. 
+* Even the user or the system created the initial token won't see the original value. 
+* The wrapping token is short-lived and can be revoked just like any other tokens so that the risk of unauthorized access can be minimized.
+
+Notes:
+
+Use Vault's cubbyhole response wrapping where the initial token is stored in the cubbyhole secrets engine. The wrapped secret can be unwrapped using the single-use wrapping token. Even the user or the system created the initial token won't see the original value. The wrapping token is short-lived and can be revoked just like any other tokens so that the risk of unauthorized access can be minimized.
+
+What is cubbyhole response wrapping?
+
+When response wrapping is requested, Vault creates a temporary single-use token (wrapping token) and insert the response into the token's cubbyhole with a short TTL
+Only the expecting client who has the wrapping token can unwrap this secret
+Any Vault response can be distributed using the response wrapping
+Benefits of using the response wrapping:
+
+It provides cover by ensuring that the value being transmitted across the wire is not the actual secret. It's a reference to the secret.
+It provides malfeasance detection by ensuring that only a single party can ever unwrap the token and see what's inside
+It limits the lifetime of the secret exposure
+The TTL of the response-wrapping token is separate from the wrapped secret's lease TTL
+
+---
+
+
 ## Couchbase Secrets Engine
 
+* Vault provides powerful dynamic credential lifecycle management for a wide range of database solutions.
+
+* Let's look at the use of the database secrets engine to dynamically generate credentials for Couchbase Server database users.
+
+---
+
+## Couchbase challenge
+
+* Credential management is critical for secrets hygiene, but managing the lifecycle of credentials across numerous heterogeneous platforms such as database solutions can be cumbersome and time-consuming.
+
+* An application requires credentials to access a specific database platform, but those credentials should never be hard coded into the application or allowed to persist past their useful lifetime.
+
+---
+
+## Couchbase solution
+
+* Vault provides a databases secrets engine with support for credential lifecycle management across a range of database solutions.
+
+* Administrators can define credential attributes, such as attached policies and time to live values, such that the credential provides least privileged access for only the allowed time-frame and is revoked when no longer needed.
+
+Notes:
+
+Personas
+
+The end-to-end scenario described in this tutorial involves 3 personas:
+
+couchbase admin manages Couchbase Server and by Vault for managing Couchbase Server user credentials.
+
+vault admin has privileged capabilities to configure Vault secrets engines.
+
+user needs credentials from Vault that allow access to Couchbase Server documents.
 
 ---
 
 ## Database Secrets Engine with MongoDB
 
+* Data protection is a top priority
+  * and database credential rotation is a critical part of any data protection initiative. 
 
+* Vault's database secrets engine generates database credentials dynamically
+
+* Each app instance can get unique credentials 
+
+Notes:
+
+Data protection is a top priority, and database credential rotation is a critical part of any data protection initiative. When a system is attacked by hackers, continuous credential rotation becomes necessary and needs to be automated.
+
+Vault's database secrets engine generates database credentials dynamically based on user-defined roles. The database administrator can pre-define the time-to-live (TTL) of the database credentials to enforce its validity so that they are automatically revoked when they are expired.
+
+Each app instance can get unique credentials that they don't have to share. By making those credentials short-lived, you reduce the chance that they might be compromised. If an app was compromised, the credentials used by the app can be revoked rather than changing more global sets of credentials.
 
 ---
 
 ## Database Root Credential Rotation
 
+* Vault's database secrets engine gives every service instance gets a unique set of database credentials
 
+* This reduces the manual tasks performed by the database administrator and makes the database access more efficient and secure.
+
+Notes:
+
+Vault's database secrets engine provides a centralized workflow for managing credentials for various database systems. By leveraging this, every service instance gets a unique set of database credentials instead of sharing one. Having those credentials tied directly to each service instance and live only for the life of the service, any abnormal access pattern can be mapped to a specific service instance and its credential can be revoked immediately.
+
+This reduces the manual tasks performed by the database administrator and makes the database access more efficient and secure.
+
+---
+
+## Database Root Credential Rotation - challenge
+
+* Vault is managing the database credentials on behalf of the database administrator
+  * it must also be given a set of highly privileged credentials 
+
+* Credentials are often long-lived and never change once configured on Vault
+
+Notes:
+
+* Because Vault is managing the database credentials on behalf of the database administrator, it must also be given a set of highly privileged credentials which can grant and revoke access to the database system. Therefore, it is very common to give Vault your root credentials.
+
+* However, these credentials are often long-lived and never change once configured on Vault. This may violate the Governance, Risk and Compliance (GRC) policies surrounding that data stored in the database.
+
+---
+
+## Database Root Credential Rotation - solution
+
+![](../artwork/conf-03.png)
+
+---
+
+## Database Root Credential Rotation - solution
+
+* Use the Vault's `/database/rotate-root/:name` API endpoint to rotate the root credentials stored for the database connection.
+
+* **Best Practice**: Use this feature to rotate the root credentials immediately after the initial configuration of each database.
 
 ---
 
 ## Database Static Roles and Credential Rotation
 
-
-
----
-
-## Active Directory Service Account Check-out
-
-
+* Vault creates a unique set of username and password with specified time-to-live (TTL) every time a client requests. 
+* This allows each application to have its own database credentials.
+* Adopting the database secrets engine requires some code change in those applications.
 
 ---
 
-## OpenLDAP Secrets Engine
+## Database Static Roles and Credential Rotation - solution
 
+![](../artwork/conf-04.png)
+
+Notes:
+
+Database secrets engine enables organizations to automatically rotate the password for existing database users. This makes it easy to integrate the existing applications with Vault and leverage the database secrets engine for better secret management.
 
 ---
 
-## Azure Secrets Engine
 
+## Active Directory Service Account 
 
+* Vault 0.10.2 introduced the Active Directory (AD) secrets engine which was designed to rotate the shared AD passwords dynamically. 
+* This allowed companies to reduce the risk of damage from a password leak.
+
+* Challenge
+  * Service accounts are limited based on Client Access License (CAL)
+  * This makes credential rotation cumbersome
+
+Notes:
+
+A service account is a user account that is created explicitly to provide a security context for services running on Windows Server operating systems. Often, an organization has a limited number of service accounts based on their Client Access License (CAL) which they share among the team. As a result, credential rotation is a cumbersome process and it's difficult to audit who took what actions with those shared credentials.
+
+---
+
+## Active Directory Service Account - solution
+
+* The requester first checks out the account
+* When done, they check the service account back
+* Whenever a service account is checked back in, Vault rotates its password
+
+![](../artwork/conf-05.png)
+
+Notes:
+
+Use the AD service account check-in/check-out feature of the AD secrets engine to allow a team to share a select set of service accounts. To use the shared service accounts, the requester first checks out the account. When done using the account, they simply check the service account back in for others to use. Whenever a service account is checked back in, Vault rotates its password.
+
+---
