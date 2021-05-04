@@ -160,20 +160,24 @@ Notes:
 
 
 ---
+
 ## Streaming Processing Model
+
+<img src="../../assets/images/streaming/Streaming-proccessing-model.png"  style="width:35%;float:right;"/><!-- {"left" : 2.44, "top" : 6.32, "height" : 2.46, "width" : 5.38} -->
 
   * Two major modes:
     - Event based , Micro Batch
+
   * Event Based:
     - Events are processed, individually,  as they come in
     - Usually low latency
     - Frameworks: Storm, Flink, Nifi, Samza
+
   * Micro-Batch
     - Events arrived during a particular time frame (5 secs) are processed as a batch
     - Slightly higher latency (due to batching)
     - Frameworks: Spark Streaming
 
-<img src="../../assets/images/streaming/Streaming-proccessing-model.png" alt="Streaming-proccessing-model.png" style="width:35%;"/><!-- {"left" : 2.44, "top" : 6.32, "height" : 2.46, "width" : 5.38} -->
 
 
 
@@ -212,7 +216,7 @@ Notes:
 
 ---
 
-## Processing Guarantees  - At Most Once
+## At Most Once
 
 - Simplest implementation
 
@@ -224,7 +228,7 @@ Notes:
 
 ---
 
-## Processing Guarantees  - At Least Once
+## At Least Once
 
 - All events are guaranteed to be processed (no dropped events)
 
@@ -252,18 +256,18 @@ Notes:
 
 
 ---
-## Processing Guarantees - Exactly Once
+
+## Exactly Once
 
 - Events are guaranteed to be processed exactly-once
 - No dropped events
 - No duplicate processing
 - Needs 're-playable buffer' **plus** an external storage system to track state
 - Frameworks: Storm (with Trident), Flink, Spark, Samza
-* See Example below:
-- When applying a new 'batch' of counts, how can we make sure we are not duplicate counting?
+- Applications
+    - Credit card processing
 
 
-<img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-9.png" alt="Streaming-Primer-Processing-Guarantees-9.png" style="width:30%;"/><!-- {"left" : 0.94, "top" : 6.22, "height" : 2.17, "width" : 3.84} -->  &nbsp;  &nbsp; <img src="../../assets/images/streaming/Streaming-Primer-Processing-Guarantees-10.png" alt="Streaming-Primer-Processing-Guarantees-10.png" style="width:30%;"/><!-- {"left" : 5.18, "top" : 6.78, "height" : 1.67, "width" : 4.12} -->
 
 
 
@@ -301,47 +305,23 @@ Notes:
 ## State Management
 
   * Can the framework remember state associated with events?
+
   * Per event processing (filter , transformation) don't need state
     - Filter #hashtags from tweets
+
   * However, complex operations like joining, grouping, aggregating (counts) require state
     - What is the max temperature reported in last one hour
+
   * SQL analogy
     - Select,  and where clauses don't need state.
     - JOIN / Group BY usually require state
+
   * Support varies according framework
 
-
-
 Notes:
-
-
-
 
 ---
 
-## State Management
-
-  * See next slide for diagrams
-  * Store state in memory:
-    - Lost if node crashes
-    - All types of events have to go to a particular node to compare state
-  * Store state in an external store (DB)
-    - State can be maintained across nodes
-    - Queries can increase latencies and become bottle neck and limit speed of processing
-  * Store state along with the event (piggy packing)
-    - Event has 'complete payload' with state
-    - Efficient, no need for external storage
-    - Increases event size (need high throughput IO)
-
-
-
-
-Notes:
-
-
-
-
----
 ## State Management Strategies
 
 <img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-011.png" alt="Streaming-Primer-State-Management-Strategies-011.png.png" style="width:40%;"/><!-- {"left" : 0.43, "top" : 1.59, "height" : 1.85, "width" : 4.9} -->
@@ -351,35 +331,46 @@ Notes:
 <img src="../../assets/images/streaming/Streaming-Primer-State-Management-Strategies-12.png" alt="Streaming-Primer-State-Management-Strategies-12.png" style="width:30%;"/><!-- {"left" : 1.89, "top" : 5.35, "height" : 2.57, "width" : 6.47} -->
 
 
-
-
-
 Notes:
 
+---
 
+## State Management
 
+* Store state in memory:
+    - Lost if node crashes
+    - All types of events have to go to a particular node to compare state
+
+* Store state in an external store (DB)
+    - State can be maintained across nodes
+    - Queries can increase latencies and become bottle neck and limit speed of processing
+
+* Store state along with the event (piggy packing)
+    - Event has 'complete payload' with state
+    - Efficient, no need for external storage
+    - Increases event size (need high throughput IO)
+
+Notes:
 
 ---
 
 ## Window Operations
 
-  * Some operations can be done at message level
+* Some operations can be done at message level
     - e.g. Sentiment analysis (happy / sad / neutral)
-  * Some operations require a bunch of messages and 'time window'
+
+* Some operations require a bunch of messages and 'time window'
     - E.g.  How much AAPL  stock has gone up in last 10 minutes?
     - We need to previous values to calculate rate of change.
-  * Window based operations:
+
+* Window based operations:
     - Group a bunch of messages by time (usually)
-  * Some frameworks support window operations natively
+
+* Some frameworks support window operations natively
     - E.g.  Spark, Flink
     - Storm does this with Trident
 
-
-
 Notes:
-
-
-
 
 ---
 
@@ -392,28 +383,17 @@ Notes:
   * Event Time < Arrival Time
   * Some times events may arrive 'out of order'
 
-<img src="../../assets/images/streaming/Streaming-Primer-Event-Time-and-Arrival-Time-13.png" alt="Streaming-Primer-Event-Time-and-Arrival-Time-13.png" style="width:50%;"/><!-- {"left" : 2.12, "top" : 5.02, "height" : 3.42, "width" : 6.01} -->
-
-
+<img src="../../assets/images/streaming/Streaming-Primer-Event-Time-and-Arrival-Time-13.png" style="width:50%;"/><!-- {"left" : 2.12, "top" : 5.02, "height" : 3.42, "width" : 6.01} -->
 
 Notes:
-
-
-
 
 ---
 
-## Event Time vs. Arrival Time Illustrated
+## Event Time vs. Arrival Time 
 
-<img src="../../assets/images/streaming/event-time-002.png" alt="event-time-002.png" style="width:70%;"/><!-- {"left" : 0.61, "top" : 1.92, "height" : 4.13, "width" : 9.03} -->
-
-
-
+<img src="../../assets/images/streaming/event-time-002.png" alt="event-time-002.png" style="width:90%;"/><!-- {"left" : 0.61, "top" : 1.92, "height" : 4.13, "width" : 9.03} -->
 
 Notes:
-
-
-
 
 ---
 
@@ -422,21 +402,19 @@ Notes:
 <img src="../../assets/images/streaming/3rd-party/Back-Pressure.png" alt="Back-Pressure.png" style="width:45%;float:right;"/><!-- {"left" : 6.91, "top" : 1.55, "height" : 1.76, "width" : 2.98} -->
 
 
-  * Some times processing lags behind
+* Some times processing lags behind
     - Processing system is too busy
     - Temporary spike in input data (Twitter stream exploding after an election results is announced)
-  * Events pile up
+
+* Events pile up
     - May lead to events being dropped.
       -> un-acceptable in most of the situations
-  * Solutions
+
+* Solutions
     - signal 'upstream' processors to slow down?
     - Leave events in the persistent buffer longer
 
-
 Notes:
-
-
-
 
 ---
 
@@ -448,12 +426,7 @@ Notes:
 
 <img src="../../assets/images/streaming/Picture2.png" alt="Picture2.png" style="width:50%;"/><!-- {"left" : 2, "top" : 4.95, "height" : 2.74, "width" : 6.25} -->
 
-
-
 Notes:
-
-
-
 
 ---
 
@@ -461,50 +434,38 @@ Notes:
 
 ---
 
-## Streaming Architecture - Over Simplified
-
+## 3 Tier Streaming Architecture
 
 <img src="../../assets/images/streaming/Streaming-Over-Simplified.png" alt="Streaming-Over-Simplified.png" style="width:65%;"/><!-- {"left" : 0.56, "top" : 3.04, "height" : 3.56, "width" : 9.13} -->
 
-
-
-
 Notes:
 
-
-
-
 ---
-## Streaming Architecture - Data Bucket
+
+## Data Bucket
 
 <img src="../../assets/images/streaming/Streaming-Over-Simplified-01.png" alt="Streaming-Over-Simplified-01.png" style="max-width:55%;float:right;"/><!-- {"left" : 5.88, "top" : 3.48, "height" : 1.89, "width" : 4.21} -->
 
-
-  * 'data bucket'
+* 'data bucket'
     - Captures incoming data
     - Acts as a 'buffer' - smoothes out bursts
     - So even if our processing offline, we won't loose data
 
-  * Choices
+* Choices
     - Kafka
     - MQ (RabittMQ ..etc)
     - Amazon Kinesis
 
-
-
 Notes:
-
-
-
 
 ---
 
-## Streaming Architecture - Processing Engine
+## Processing Engine
 
 <img src="../../assets/images/streaming/Streaming-Over-Simplified-02.png" alt="Streaming-Over-Simplified-02.png" style="max-width:55%;float:right;"/><!-- {"left" : 4.84, "top" : 1.78, "height" : 2.41, "width" : 5.15} -->
 
-
 * Need to process events with low latency
+
 * So many to choose from!
     - Storm
     - Spark
@@ -512,24 +473,17 @@ Notes:
     - Samza
     - Flink
 
-
-
-
-
 Notes:
 
-
-
-
 ---
-## Streaming Frameworks Feature Comparison
 
+## Streaming Frameworks
 
 
 | Feature              | Storm                                             | Spark Streaming | Flink                            | NiFi        |
 |----------------------|---------------------------------------------------|-----------------|----------------------------------|-------------|
 | Processing Model     | Event-based by default,(Micro Batch using Trident | Micro Batch     | Event-based,+,Micro Batch- based | Event-based |
-| Windowing operations | Supported by Trident                              | Yes             | ?                                | ?           |
+| Windowing operations | Supported by Trident                              | Yes             | Yes                                | ?           |
 | Latency              | Milliseconds                                      | Seconds         | Milliseconds                     |             |
 |                      |                                                   |                 |                                  |             |
 | At-least-once        | YES                                               | YES             | YES                              | YES         |
@@ -538,37 +492,30 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 1.71, "height" : 5.15, "width" : 9.75} -->
 
-
-
-
 Notes:
 
-
-
-
 ---
-## Streaming Architecture - Data Store
+
+## Data Store
 
 <img src="../../assets/images/streaming/Streaming-Over-Simplified-03.png" alt="Streaming-Over-Simplified-03.png" style="width:55%;float:right;"/><!-- {"left" : 5.95, "top" : 1.41, "height" : 2.02, "width" : 4.15} -->
 
-  * Where processed data ends up
-  * Two requirements:
+* Where processed data ends up
+
+* Two requirements:
     - Real time store
     - 'archival' store
-  * Real Time Store
+
+* Real Time Store
     - Need to absorb data in real time
     - Usually a NoSQL storage HBase, Cassandra, many more
-  * 'Archival store'
+
+* 'Archival store'
     - Needs to store massive amounts of data
     - Support analytics (usually batch)
     - Hadoop / HDFS
 
-
-
 Notes:
-
-
-
 
 ---
 
@@ -576,15 +523,11 @@ Notes:
 
 <img src="../../assets/images/streaming/Lambda-Architecture.png" alt="Lambda-Architecture.png" style="width:65%;"/><!-- {"left" : 1.02, "top" : 2.44, "height" : 4.76, "width" : 8.21} -->
 
-
-
 Notes:
 
-
-
-
 ---
-## Lambda Architecture explained
+
+## Lambda Architecture
 
   * All new data is sent to both batch layer and  speed layer
   * Batch layer
@@ -607,7 +550,7 @@ Notes:
 ---
 ## Incorporating Lambda Architecture
 
-<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png" alt="Lambda-Streaming-Architecture-03.png" style="width:75%;"/><!-- {"left" : 0.72, "top" : 3.53, "height" : 2.01, "width" : 8.8} -->
+<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png"  style="width:75%;"/><!-- {"left" : 0.72, "top" : 3.53, "height" : 2.01, "width" : 8.8} -->
 
 
 

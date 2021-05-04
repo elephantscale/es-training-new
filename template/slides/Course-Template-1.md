@@ -1,4 +1,6 @@
-# Title
+# Module Title
+
+Module description
 
 <img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
 
@@ -23,11 +25,152 @@ Notes:
 
 ---
 
-## Slide
+## Formatting: Headings
 
-* goodbye world
+### H3
+
+#### H4
 
 Notes:
+
+---
+
+## Formatting : Bullets
+
+* bullets 1
+* bullets 1
+    - bullets 2
+    - bullets 2
+        - bullets 3
+
+Notes:
+
+---
+
+## Formating: Bold, Italic
+
+* **bold 1**
+
+* __bold 2__
+
+* _italic 1_
+
+* *italic 2*
+
+* **_bold and italic_**
+
+* `code`
+
+* **`bold code`**
+
+* <mark>highlight</mark>
+
+---
+
+## Formatting: Code
+
+```python
+# python code
+
+import random
+
+print('hi')
+```
+
+```java
+// java code
+import org.apache.kafka.clients.producer.KafkaProducer;
+
+KafkaProducer <Integer,String > producer = new KafkaProducer<>(props);
+
+System.out.println("hi")
+```
+
+```scala
+// scala code
+object ScalaExample{  
+    def main(args:Array[String]){  
+        println "Hello Scala"  
+    }
+}
+```
+
+```text
+Just plain text
+         here
+         and here
+```
+
+---
+
+## Formatting: Table
+
+* Use [Markdown table generator](https://www.tablesgenerator.com/markdown_tables#)
+
+| col 1 | col 2 | col 3 |
+|-------|-------|-------|
+| 1     | 2     | 3     |
+| a     | b     | c     |
+
+---
+
+## Images - Single
+
+- Here is a sunflower
+
+<img src="../../assets/images/template/sunflowers-1.jpg" style="width:50%;" />
+
+```md
+<img src="../../assets/images/template/sunflowers-1.jpg" style="width:50%;" />
+```
+
+---
+
+## Images - Align to right
+
+<img src="../../assets/images/template/sunflowers-1.jpg" style="width:40%;float:right;" />
+
+- Here is a sunflower
+- aligned right using `float:right`
+
+<br clear="all"/>
+
+```md
+<img src="../../assets/images/template/sunflowers-1.jpg" style="width:50%;float:right;" />
+```
+
+---
+
+## Images - side by side
+
+<img src="../../assets/images/template/flower-2.jpeg" style="width:20%;" />
+<img src="../../assets/images/template/flower-rose-1.jpg" style="width:20%;" />
+
+<br clear="all"/>
+
+```md
+<img src="../../assets/images/template/flower-2.jpeg" style="width:20%;" />
+<img src="../../assets/images/template/flower-rose-1.jpg" style="width:20%;" />
+```
+
+---
+
+## Images - Right aligned and stacked
+
+<img src="../../assets/images/template/flower-2.jpeg" style="width:10%;float:right;" />
+<img src="../../assets/images/template/flower-rose-1.jpg" style="width:10%;float:right;clear:both;" />
+
+- here we have two flower images
+- they are right alighned
+- also stacked
+- we used `float:right` and `clear:both` tags
+
+<br clear="all"/>
+
+```md
+<img src="../../assets/images/template/flower-2.jpeg" style="width:10%;float:right;" />
+<img src="../../assets/images/template/flower-rose-1.jpg" style="width:10%;float:right;clear:both;" />
+```
 
 ---
 
