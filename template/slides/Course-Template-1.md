@@ -103,6 +103,17 @@ Just plain text
 
 ---
 
+## Formatting: Table
+
+* Use [Markdown table generator](https://www.tablesgenerator.com/markdown_tables#)
+
+| col 1 | col 2 | col 3 |
+|-------|-------|-------|
+| 1     | 2     | 3     |
+| a     | b     | c     |
+
+---
+
 ## Images - Single
 
 - Here is a sunflower
