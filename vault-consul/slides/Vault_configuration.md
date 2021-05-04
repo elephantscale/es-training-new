@@ -167,21 +167,42 @@ For example, the US standard of FIPS 140-2 has different levels that refer to ho
 
 Notes:
 
-Personas
-The end-to-end scenario described in this tutorial involves two personas:
-
-devops with privileged permissions to write secrets
-apps reads the secrets from Vault
-»Challenge
-Consider the following situations:
-
-Developers use a single admin account to access a third-party app (e.g. Splunk) and anyone who knows the user ID and password can log in as an admin
-SSH keys to connect to remote machines are shared and stored as a plaintext
-API keys to invoke external system APIs are stored as a plaintext
-An app integrates with LDAP, and its configuration information is in a plaintext
-Organizations often seek an uniform workflow to securely store this sensitive information.
+* Organizations often seek an uniform workflow to securely store this sensitive information.
 
 ---
+
+
+# Solution
+
+* Use Vault 
+  * centralized secret storage 
+  * Secure any sensitive information
+* Vault encrypts these secrets using 256-bit AES in GCM mode 
+  * with a randomly generated nonce prior to writing them to its persistent storage.
+  * The storage backend never sees the unencrypted value
+  * even if an attacker gained access to the raw storage, they wouldn't be able to read your secrets.
+  
+Notes:
+
+* The Advanced Encryption Standard (AES), also known by its original name Rijndael (Dutch pronunciation: [ˈrɛindaːl]),[3] is a specification for the encryption of electronic data established by the U.S. National Institute of Standards and Technology (NIST) in 2001.[4]
+* AES is a subset of the Rijndael block cipher[3] developed by two Belgian cryptographers, Vincent Rijmen and Joan Daemen
+* In cryptography, Galois/Counter Mode (GCM) is a mode of operation for symmetric-key cryptographic block ciphers which is widely adopted for its performance. GCM throughput rates for state-of-the-art, high-speed communication channels can be achieved with inexpensive hardware resources
+* Considered secure but costly in hardware
+
+---
+
+## Lab: Static Secret
+
+* Continue with lab21
+* **NOTE:** For the purpose of this lab, we will use the root token to work with Vault. 
+* Best practice
+  * root tokens are only used for just enough initial setup or in emergencies. 
+  * As a best practice, use tokens with appropriate set of policies based on your role in the organization.
+
+* https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab21
+
+---
+
 
 ## Cubbyhole Secret Engine
 

@@ -13,22 +13,22 @@
 
 * [Hashicorp-Certified-Vault-Associate-Getting-Started](https://github.com/ned1313/Hashicorp-Certified-Vault-Associate-Getting-Started)
 
-* Totals slides - 191
+* Totals slides - 193
 * 01 - 13
 * 02 - 34
 * 03 - 78
-* 04 - 17
+* 04 - 19
 * 05 - 10  
 * 06 - 20
 * 07 - 1
 * 08 - 18
   
 * Labs
-* 11
+* 12
 
 ### TODO next
 * Consul for Service Discovery (finish up integration at the end of Consul slides)
-* Secrets management [slides](slides/Vault_configuration.md) and [labs](https://www.vaultproject.io/docs/secrets)
+* Secrets management [slides](../slides/Vault_configuration.md) and [labs](https://learn.hashicorp.com/tutorials/vault/static-secrets)
 * Configure - overview of https://learn.hashicorp.com/tutorials/vault/configure-vault
 * Data encryption - https://learn.hashicorp.com/tutorials/vault/eaas-transit
 * Consul
