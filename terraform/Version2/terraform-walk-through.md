@@ -115,7 +115,7 @@ terraform version
 
 * Create an empty folder, `HelloWold`
 * Create a file called `providers.tf` which contains
-  ```
+  ```shell script
   terraform {
     required_providers {
       aws = {
@@ -138,7 +138,7 @@ terraform version
 ## Terraform "HelloWorld" Part Two
 
 * Create another file called `main.tf`  which contains
-```
+```shell
 resource "aws_instance" "hw" {
   instance_type = "t2.micro"
   ami           = "ami-077e31c4939f6a2f3"
@@ -181,8 +181,8 @@ resource "aws_instance" "hw" {
 
 ## Understanding the Server Resource
 
-``` 
-resource "aws_instance" "hw" {
+```shell
+ resource "aws_instance" "hw" {
   instance_type = "t2.micro"
   ami           = "ami-077e31c4939f6a2f3"
   tags = {
@@ -241,13 +241,6 @@ resource "aws_instance" "hw" {
 
 ![](../artwork/terraform-hw-statefile.png)
 
---- 
-## Lab: Terraform Hello World
-
-* Please do this lab
-* `terraform-up-and-running-code/labs/lab01-1.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md)
-
 ---
 
 ## HCL Basic Syntax
@@ -272,7 +265,7 @@ resource "aws_instance" "hw" {
   * Others are optional
   * The required parameters are the same that are required if you tried to create the resource manually
   
-``` 
+```shell
 resource "aws_instance" "hw" { 
 instance_type = "t2.micro"
 ami           = "ami-077e31c4939f6a2f3"
@@ -282,45 +275,109 @@ ami           = "ami-077e31c4939f6a2f3"
 ## Terraform Output
 
 * Terraform output variables export the specified values from the terraform environment so they can be displayed or reused
-  * For example, the IP address of our Hello World instance is assigned after it is created
+  * For example, the private IP address of our Hello World instance is assigned after it is created
   * To find out what it is we can use an output variable
   * The name of the output variable is `HelloWorld_ip`
 * The syntax for accessing a resource property is:
   `resource_type.resource_name.property`
-  
-``` 
-output "HelloWorld_ip" {
-     description = "IP Address of Hello World Instance
+* Outputs are printed at the end of the apply at the command line or can be written into a file
+  * This provides a record of the actual resource values, like IP addresses, that are allocated by AWS
+``` shell
+output "HW_private_ip" {
+  description = "Hello World EC2 Instance IP Address"
+  value = aws_instance.hw.private_ip
+}
 ```
-  
+## Terraform Output
+
+* The result of running `terraform apply` with the output variable is:
+
+![](../artwork/terraform-hw-output.png)
+
+---
+
 ## Terraform Data
 * Terraform data allows us to access values in the AWS environment
   * For example, the id of the default VPC
-* Some properties of our resources are allocated by AWS and are not under our control
-  * We can use a data block to get that allocated data
-  * The following gets the ip address of our HelloWorld instance
+  * The Data construct gets specific AWS environment information
+* In the following example, we fetch and print the name of the current region we are working in
+
+```shell
+data "aws_region" "my_region" { }
+
+output "my_aws_region" {
+  description = "AWS region"
+  value       = data.aws_region.my_region.name
+}
+```
+![](../artwork/terraform-hw-dataoutput.png)
+
 ---
+
+## Terraform Variables
+
+* Variables allow us to not have to hardcode values, like the instance type, into our terraform code
+* Variables are of a particular data type, but default to string
+* Variable value are supplied in a file called: `terraform.tfvars`
+* Referencing a variable is done with the syntax `var.var_name`
+
+```shell 
+variable "my_ami" {}
+
+resource "aws_instance" "hw" {
+  instance_type = "t2.nano"
+  ami           = var.my_ami
+}
+```  
+* The contents of the `terraform.tfvars` file is
+```shell
+my_ami = "ami-077e31c4939f6a2f3"
+```
+
+---
+
+## Terraform Variables
+
+* The output of the running `terraform plan` on the example in the previous slide is below
+* The value for the ami instance has been properly copied into the EC2 resource specification
+
+![](../artwork/terraform-hw-vars-output.png)
+
+--- 
+
+## Lab: Terraform Hello World
+
+* Please do this lab
+* `terraform-up-and-running-code/labs/lab01-1.md`
+* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md)
+
+---
+
+## Using Terraform to Deploy a WebServer
+* During the class, we will be building a load balanced web server in stages using terraform
+* In the first web server lab, we will just create a webserver using a single EC2 instance
+
 ![](../artwork/deploy-web-server.png)
 
 ---
-## Make a Web Server
-* In the real world, you would build a real web server such as Flask
-* We will, instead, do a one-command
 
-```
+## Make a Web Server
+* In the real world, we would want a robust server using one of the various available technologies
+* However for this lab, we will use a toy webserver with the following command
+
+```shell
 #!/bin/bash
 echo "Hello, World" > index.html
 nohup busybox httpd -f -p 8080 &
 ```
 
-* However, how should we put it into our instance?
-* We will add it to the aws_instance, as _User Data_ configuration
+* However, we need to run this code in the instance once it is created
+* This is done by adding a start-up script to the instance by using the *user_data* argument
 ---
 
 ## Adding a Script to the Instance
 
 *  You pass a shell script to User Data by setting the user_data argument in your Terraform code as follows:
-
 * The `<<-EOF` and `EOF` are Terraform’s `heredoc` syntax, which allows you to create multiline strings without having to insert newline characters all over the place
 
 ```shell script

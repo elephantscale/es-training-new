@@ -7,3 +7,8 @@ resource "aws_instance" "hw" {
   }
 }
 
+output "HW_private_ip" {
+  description = "Hello World EC2 Instance IP Address"
+  value = aws_instance.hw.private_ip
+}
+
