@@ -24,7 +24,7 @@
 * 08 - 18
   
 * Labs
-* 12
+* 13
 
 ### TODO next
 * Consul for Service Discovery (finish up integration at the end of Consul slides)
