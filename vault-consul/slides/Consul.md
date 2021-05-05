@@ -126,8 +126,21 @@ Notes:
 Notes:
 
 * How do we assert identity?
+* How do we know A is A and B is B
+* Issue TLS certs to authenticate A and B
+* This is better than IP that gives now guarantees
+* But how do we enforce this?
 
 ---
+
+## Proxies
+
+Notes:
+
+* This translates into a set of proxies
+
+---
+
 # Consul for Service Discovery
 
 ## Why service discovery?
