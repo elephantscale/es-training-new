@@ -135,12 +135,43 @@ Notes:
 
 ## Proxies
 
+![](../artwork/consul/Canvas12.png)
+
 Notes:
 
 * This translates into a set of proxies
+* A talks to proxy transparently, unaware than anything has changes
+* The proxies are using certificate authority: A will verify that it is talking
+to B and B will verify that it is talking to A
+* Second advantage of using Mutual TLS is that now you have established an ecrypted channel between them
+* This is getting more important in light of such regulations ad GDPR
+* We cannot trust traffic withing our own network. The data is now encrypted both at rest and in transit
+* A can talk to be and vice versa, but should A be talking tobe at all? This goes back
+to the service graph and asks if A is allowed to talk to B
+  
 
 ---
 
+## Proxies and Service Graph
+
+![](../artwork/consul/Canvas13.png)
+
+Notes:
+
+* A can talk to be and vice versa, but should A be talking tobe at all? This goes back
+  to the service graph and asks if A is allowed to talk to B
+
+
+## Service mesh
+
+![](../artwork/consul/Canvas14.png)
+
+Notes:
+* We improved the programmer's efficiency
+* But we got three operational problems
+* Together they are called Service Mesh - and that is was Consul is set up to address
+
+---
 # Consul for Service Discovery
 
 ## Why service discovery?
