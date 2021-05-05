@@ -1,5 +1,40 @@
 # Consul
 
+# Consul overview
+
+## Monolith
+![](../artwork/consul/Canvas1.png)
+
+Notes: 
+
+A - login
+B - Show balance
+C - Wire transfers
+D - Foreign exchange
+
+---
+
+## Microservices
+![](../artwork/consul/Canvas2.png)
+---
+
+## Discovery
+![](../artwork/consul/Canvas3.png)
+---
+
+## Load balancers?
+![](../artwork/consul/Canvas4.png)
+
+Notes:
+
+* Too many load balancers
+* Too many SPOFs
+
+---
+
+
+
+
 # Consul for Service Discovery
 
 ## Why service discovery?
