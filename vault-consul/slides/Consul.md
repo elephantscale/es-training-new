@@ -12,6 +12,8 @@ B - Show balance
 C - Wire transfers
 D - Foreign exchange
 
+A bug causes a rebuild and redeploy
+
 ---
 
 ## Microservices
@@ -20,6 +22,12 @@ D - Foreign exchange
 
 ## Discovery
 ![](../artwork/consul/Canvas3.png)
+
+Notes:
+
+A talks to B in nanoseconds
+Now where is B and milliseconds or seconds for latency
+
 ---
 
 ## Load balancers?
@@ -27,14 +35,99 @@ D - Foreign exchange
 
 Notes:
 
+* Load balancers
+* Even scalability  
 * Too many load balancers
 * Too many SPOFs
+* Double latency
+* Load balancing management
+---
+
+## Registry
+
+![](../artwork/consul/Canvas5.png)
+
+Notes:
+
+* No load balancers
+* The instance registers
 
 ---
 
 
+## Configuration
+
+![](../artwork/consul/Canvas6.png)
+
+Notes:
+
+* Before, one configuration file XML, now - many
+* Such as, are we in maintenance mode
 
 
+---
+
+
+## Configuration in Consul
+
+![](../artwork/consul/Canvas7.png)
+
+Notes:
+
+* Stored as K/V
+* Pushed to components in real time
+
+
+---
+
+
+## Zones
+
+![](../artwork/consul/Canvas8.png)
+
+Notes:
+
+* Zones were easy
+* Three tiers
+* Now we have multiple front doors and communications
+* How do we communicate
+
+
+---
+
+## Segmentation
+
+![](../artwork/consul/Canvas9.png)
+
+Notes:
+
+* Segmentation is done with "Connect" in Consul
+
+
+---
+
+## Service graph
+![](../artwork/consul/Canvas10.png)
+
+
+Notes:
+
+* We were not talking IP to IP
+* Now we are!
+* In firewall rules translation, the rules scale dependent on the number of servers
+
+---
+
+
+## Identity
+![](../artwork/consul/Canvas11.png)
+
+
+Notes:
+
+* How do we assert identity?
+
+---
 # Consul for Service Discovery
 
 ## Why service discovery?
