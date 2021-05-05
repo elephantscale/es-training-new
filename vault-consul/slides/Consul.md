@@ -479,3 +479,15 @@ capability with automation or pre-defined script can ensure applications can alw
 the Vault service, regardless of the status of the Vault environment.
 
 ---
+
+## More with Consul
+
+* Now that we know the basics, what is next? Perfect your skills in the following areas:
+
+  * Consul Service Mesh
+  * Create a datacenter with Consul Docker containers as the agents
+  * Learn how to deploy Consul on Kubernetes
+  * Deploy HashiCorp Consul Service on Azure
+  * Secure Nomad jobs with Consul service mesh
+  
+---
