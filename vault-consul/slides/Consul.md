@@ -172,6 +172,13 @@ Notes:
 * Together they are called Service Mesh - and that is was Consul is set up to address
 
 ---
+
+# Microservices
+
+## Microservices - insert the microservices slides here
+
+---
+
 # Consul for Service Discovery
 
 ## Why service discovery?
@@ -200,6 +207,13 @@ to critical services throughout the organization.
 ![](../artwork/consul-zookeeper.png)
 
 ---
+
+## Consul vs Google Anthos
+
+![](../artwork/consul-05.png)
+
+---
+
 
 ## Consul is from HashiCorp 
 
