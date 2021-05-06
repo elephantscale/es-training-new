@@ -145,7 +145,7 @@ Notes:
 to B and B will verify that it is talking to A
 * Second advantage of using Mutual TLS is that now you have established an ecrypted channel between them
 * This is getting more important in light of such regulations ad GDPR
-* We cannot trust traffic withing our own network. The data is now encrypted both at rest and in transit
+* We cannot trust traffic within our own network. The data is now encrypted both at rest and in transit
 * A can talk to be and vice versa, but should A be talking tobe at all? This goes back
 to the service graph and asks if A is allowed to talk to B
   
