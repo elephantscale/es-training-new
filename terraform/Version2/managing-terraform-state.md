@@ -130,7 +130,7 @@ Notes:
   
 ---
 
-## State Command Example
+## State Command Example 
 
 * The following is the environment defined for the example:
 
@@ -166,16 +166,94 @@ resource "aws_instance" "y" {
 
 ---
 
+## The `state rm` Command
 
+* The rm command removes a specific resource from the state file
+* In our example, we can remove the instance "X" from the state file
+  * This means that the AWS resource is now no longer managed by terraform
+  
+![](../artwork/statermcommand.png)
+
+* If `terraform apply` is run again, a new version of aws_instance.x will be created because terraform can no longer 'see' the AWS instance it previously created
+
+---
+
+## The `terraform import` Command
+
+* This is the converse of the `state rm` command by moving an existing AWS resource into a state file
+* There must be a terraform resource specification with parameters that match the properties of the existing AWS resource
+* In this example, we add back aws_instance.x that we just removed
+
+![](../artwork/terraform-import.png)
+
+---
+
+## The `state mv` Command
+
+* This command allows us to link an existing AWS resource to a different terraform specification
+  * For example, if we want to rename our EC2 instance from aws_instance.x to aws_instance.z
+```shell
+resource "aws_instance" "x" {
+  instance_type = "t2.micro"
+  ami           = "ami-077e31c4939f6a2f3"
+  tags = {
+    Name = "Resource X"
+  }
+}
+
+resource "aws_instance" "z" {
+  instance_type = "t2.micro"
+  ami           = "ami-077e31c4939f6a2f3"
+  tags = {
+    Name = "Resource Z"
+  }
+}
+```  
+---
+
+## The `state mv` Command
+
+* Executing the `state mv` breaks the association between aws_instance.x and the AWS resource i-0bda23f3a336118fe and then reassociates it with aws_instance.z
+
+![](../artwork/statemv1.png)
+
+---
+
+## The `state mv` Command    
+
+* Running the `terraform plan` shows that two actions now have to be taken to update the AWS environment
+  * The new instance "z" has to be updated to change the tag from "Resource X" to "Resource Z"
+  * Since there is no longer an AWS instance associated with aws_instance.x, a new AWS instance will have to be created
+  
+![](../artwork/statemv2.png)
+
+![](../artwork/statemv3.png)
+
+---
+
+## Tainting and Untainting
+
+* Occasionally, an AWS resource is created but is degraded or damaged, often because of a transient AWS problem
+  * Although the resource is created, it is in a suspicious state and is marked by terraform as being tainted
+  * A tainted resource will be recreated the next time `terraform apply` is run
+* You can also manually taint a resource by running the `terraform taint` command if you feel the resource should be recreated
+* Any tainted resource can be untainted by running the `terraform untaint` command
+
+![](../artwork/taint.png)
+
+![](../artwork/taint2.png)
+
+---
 
 ## Separate Environments
 
 * We often need multiple copies of a deployment for different purposes
 * Common environments are: development, test, stage and production
 
- ![](../artwork/shared-state.png)
-    
+![](../artwork/shared-state.png)
+
 ---
+
 ## Terraform Workspaces
 
 * Terraform supports a separate configuration for each deployment
@@ -189,6 +267,7 @@ resource "aws_instance" "y" {
   ![](../artwork/local-workspace-directories.png)
   
 ---
+
 ## The "workspace" Command
 
 * `terraform workspace` has several options:
@@ -205,9 +284,19 @@ resource "aws_instance" "y" {
         * The "default" workspace can never be deleted
         * Deleting a workspace does **not** destroy the resources, it just leaves them unmanaged
 ---
+
+## Local Backends and Workspaces
+
+* The location of the terraform state files is called the "backend"
+* When the state file is kept in the same directory as the *.tf files, then we are using what is called a local backend
+  * This is the default for terraform "out of the box"
+* Each workspace manages its own copy of the AWS resources but they all use the same *tf files
+  * The amount of "isolation" between functional groups is quite low
+  * It is easy for test to make changes that break the dev configuration
+  
 ## Remote Backends
 
-* Each Terraform configuration specifies where the state files are kept
+* Each Terraform configuration has a location where the state files are kept
     * This is called the "backend"
     * The default is to use files in the local directory
     * This is what we have been using so far
