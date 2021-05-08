@@ -211,4 +211,707 @@ C.
 
 ---
 
+## Quiz
+
+* Does Transit Secret Engine store the cipher-text data for future decryption requests?
+
+  * A. True
+  * B. False
+
+Notes:
+
+B.
+
+---
+
+## Quiz
+
+* The main idea of Shamir's Sharing Algorithm is to protect?
+
+  * A. SSL/TLS key
+  * B. Root tokens
+  * C. Master key
+  * D. Encryption keys
+
+Notes:
+
+D.
+
+---
+
+## Quiz
+
+* Matthew works as a security engineer in Medium Corp and is recently provided a project to set up the vault. Medium Corp extensively uses AWS and to protect the master key, they intend to make use of AWS KMS instead of shamir. How can this be achieved?
+
+  * A. Shamir'a algotirhm is the only choice available.
+  * B. Add a new seal block in the configuration file, like KMS, and restart Vault with that
+  * C. Use encryption at the server level
+  * D. None of the above
+  
+Notes:
+
+B.
+
+
+---
+
+## Quiz
+
+* By default, how many keys are needed for the unsealing process based on Shamir in Vault?
+
+  * A. 1
+  * B. 2
+  * C. 3
+  * D. 4
+  * E. 5
+  
+Notes:
+
+C.
+
+---
+
+## Quiz
+
+* Which of the following engine supports Dynamic secrets?
+
+  * A. Key/Value version 1
+  * B. Key/Value version 2
+  * C. Cubbyhole
+  * D. TOTP
+  * E. Google cloud
+  
+Notes:
+
+E. 
+
+https://www.udemy.com/course/hashicorp-certified-vault-associate/learn/quiz/4903088#overview
+Q5
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
+## Quiz
+
+*
+
+  * A. True
+  * B. False
+
+Notes:
+
+
+
+---
+
 
