@@ -1,4 +1,5 @@
 # Terraform - Introduction
+
 ---
 
 ## Why Terraform?
@@ -21,7 +22,6 @@ and many competitors have also implemented their versions of the Terraform desig
 a de facto standard
   ![](../artwork/terraform-logo.png)
 
-<!--- img src = "../artwork/terraform-logo.png"/> <!--{"left" : 0.77, "top" : 6.51, "height" : 1.18, "width" : 4.83} -->
 
 ---
 
@@ -42,10 +42,10 @@ a de facto standard
 * Servers are provisioned with the necessary software
 * Together the physical hardware and installed software is "_infrastructure_"  
 * The _Dev_ team worked with software, the _Ops_ team with infrastructure
-* Typically two solitudes: different tools, cultures and processes
+* Typically, two solitudes: different tools, cultures and processes
   
   ![](../artwork/computer-rack-pexels-photo-442150.jpeg)
-  <!---img src = "../artwork/computer-rack-pexels-photo-442150.jpeg"  style="width:75%;"/> <!-- {"left" : 0.77, "top" : 4.34, "height" : 2.42, "width" : 3.63} -->
+
 ---
 
 ## The Rise of DevOps   
@@ -171,32 +171,6 @@ Image source: https://software.danielwatrous.com/wp-content/uploads/2017/02/kube
 
 ---
 
-## Happiness with IaC
-
-* Happiness
-    * Deploying code and managing infrastructure manually is repetitive and tedious
-    * No one will take notice—until that one day when you mess it up
-    * That creates a stressful and unpleasant environment
-    * Here is a painting of a happy man (see notes)
-
-![](../artwork/800px-Hendrik_ter_Brugghen_-_Democritus.jpg) 
-
-Notes:
-
-* Painting: Democritus by Hendrick ter Brugghen, 1628.
-
-* Some philosophers consider happiness the goal of people's life
-    * Democritus
-        * Democritus (c. 460 – c. 370 BC) is known as the 'laughing philosopher' because of his emphasis on the value of 'cheerfulness'.
-* Plato
-    * Sees a type of happiness stemming from social justice through fulfilling one's social function
-* Aristotle
-    * described eudaimonia (Greek: εὐδαιμονία) as the goal of human thought and action. Eudaimonia is often translated to mean happiness
-* Cynicism (Antisthenes)
-    * rejected any conventional notions of happiness involving money, power, and fame, to lead entirely virtuous, and thus happy, lives
-
----
-
 ## Provisioning Tools
 * Generally refers to creating virtual resources from some form of template, often in JSon
 * AWS provides this via their CloudFormation API
@@ -234,7 +208,7 @@ Source: 2016 State of DevOps Report
   * Infrastructure deployment with the scripts, not your admin  
 
 * Speed and safety
-    * The computer will do a deployment faster and with less errors
+    * The computer will do a deployment faster and with fewer errors
 
 * Documentation
     * You can represent the state of your infrastructure in source files
@@ -247,6 +221,32 @@ Source: 2016 State of DevOps Report
 
 * Reuse
     * You can build on top of known, documented pieces
+
+---
+
+## Happiness with IaC
+
+* Happiness
+  * Deploying code and managing infrastructure manually is repetitive and tedious
+  * No one will take notice—until that one day when you mess it up
+  * That creates a stressful and unpleasant environment
+  * Here is a painting of a happy man (see notes)
+
+![](../artwork/800px-Hendrik_ter_Brugghen_-_Democritus.jpg)
+
+Notes:
+
+* Painting: Democritus by Hendrick ter Brugghen, 1628.
+
+* Some philosophers consider happiness the goal of people's life
+  * Democritus
+    * Democritus (c. 460 – c. 370 BC) is known as the 'laughing philosopher' because of his emphasis on the value of 'cheerfulness'.
+* Plato
+  * Sees a type of happiness stemming from social justice through fulfilling one's social function
+* Aristotle
+  * described eudaimonia (Greek: εὐδαιμονία) as the goal of human thought and action. Eudaimonia is often translated to mean happiness
+* Cynicism (Antisthenes)
+  * rejected any conventional notions of happiness involving money, power, and fame, to lead entirely virtuous, and thus happy, lives
 
 ---
 ## How Terraform Works
