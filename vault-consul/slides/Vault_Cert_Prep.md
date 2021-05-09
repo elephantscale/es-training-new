@@ -340,14 +340,16 @@ C.
 
 ## Quiz
 
-*
+* Enterprise Corp is using Vault in its production. They want to make sure that a sufficient amount of replication is set up so that no data is lost. What is the best way to achieve this?
 
-  * A. True
-  * B. False
+  * A. Performance replication
+  * B. Disaster replication
+  * C. Disaster recovery replication
+  * D. High availability
 
 Notes:
 
-
+C.
 
 ---
 
