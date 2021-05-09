@@ -49,7 +49,6 @@ Notes:
 
 ## Analogy: Learning to Fly...
 ![](../artwork/learn-to-fly.png)
-<img src="../artwork/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
 
@@ -59,13 +58,7 @@ Notes:
 
 ## Instruction
 ![](../artwork/classroom-instruction.png)
-<img src="../artwork/classroom-instruction.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
-
-
-
-
-Notes:
 
 ---
 
@@ -99,7 +92,7 @@ Notes:
    - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
    - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
 
-<img src="../artwork/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
+<img src="../artwork/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 
 Notes:
