@@ -355,410 +355,463 @@ C.
 
 ## Quiz
 
-*
+* Can we make use of both Performance and DR replication together as part of the same cluster?
 
   * A. True
   * B. False
 
 Notes:
 
-
+A.
 
 ---
 
 ## Quiz
 
-*
+* What can be added as part of the Identity Groups?
+
+  * A. Users
+  * B. Tokens
+  * C. Entities
+  * D. Aliases
+
+Notes:
+
+C.
+
+---
+
+## Quiz
+
+* Does the default policy allow writing data to the `secret/` path?
 
   * A. True
   * B. False
 
 Notes:
 
+B.
+
+---
+
+## Quiz
+
+* Where is the cached data in the Vault agent stored?
+
+  * A. In Sink location
+  * B. In memory
+  * C. In a special hidden location on disk
+  * D. Vault agent does not support cache
+  
+Notes:
+
+B.
+
+---
+
+## Quiz
+
+* Medium Corp is designing an application, and they want it to be able to perform reads based on secret/ path in the vault. They do not want to configure any logic to store tokens and make requests with tokens. What is the way to achieve this?
+
+  * A. Make use of Agent Auto-Auth method
+  * B. Tokens are mandatory and any request that an application sends must include tokens. This cannot be done.
+  * C. Make use of Vault agent caching
+  * D. Use AppRole auth method
+
+Notes:
+
+C. 
 
 
 ---
 
 ## Quiz
 
-*
+* Does the default policy allow writing data to cubbyhole/ path?
 
   * A. True
   * B. False
 
 Notes:
 
-
+A.
 
 ---
 
 ## Quiz
 
-*
+* Can response wrapped token be used multiple times?
 
   * A. True
   * B. False
 
 Notes:
 
-
+B.
 
 ---
 
 ## Quiz
 
-*
+* In which of the following scenarios, using ROOT is mandatory?
+
+  * A. Unsealing Vault
+  * B. Initializing Vault
+  * C. Configuring Audit devices
+  * D. Starting Vault
+
+Notes:
+
+C.
+
+---
+
+## Quiz
+
+* Can we make use of Token Accessor to perform authentication?
 
   * A. True
   * B. False
 
 Notes:
 
-
+B.
 
 ---
 
 ## Quiz
 
-*
+* Medium Corp is using the Key/Value engine of version 2. They plan to enable four K/V secret engines in Vault for different use-cases. Is this possible?
+
 
   * A. True
   * B. False
 
 Notes:
 
-
+A.
 
 ---
 
 ## Quiz
 
-*
+* Large Corp intends to enable the AWS Secret Engine. For 4 different AWS accounts, they want to make use of four secret engines of AWS type. How to uniquely identify between them if all of them are running?
+
+  * A. Make use of the right version when enabling them
+  * B. Mount them on different paths
+  * C. Name them accordingly
+  * D. You cannot use four different AWS secrets engines running at the same time
+
+Notes:
+
+B.
+
+---
+
+## Quiz
+
+* AWS Secret Engine is mounted on the following path aws/
+
+By mistake, James has run the following command:
+
+`vault lease revoke -prefix aws/`
+
+What is the impact of it?
+
+
+  * A. Leases generated in the last 30 minutes will be revoked
+  * B. All leases and configuration of AWS secrets engine will be removed
+  * C. All leases in the AWS secrets engine will be revoked
+  * D. None of the above
+
+Notes:
+
+C.
+
+---
+
+## Quiz
+
+* What type of token is shown in the following screenshot?
+
+![](../artwork/cert-03.png)
+
+  * A. Child token
+  * B. Parent token
+  * C. Sub token
+  * D. User token
+
+Notes:
+
+B.
+
+---
+
+## Quiz
+
+* Matthew wants to see which policies are associated with a specific token. Which of the following command is the ideal way of achieving the lookup?
+
+  * A. `vault token lookup [ROOT TOKEN]`
+  * B. `vault token lookup -accessor [CLIENT TOKEN]`
+
+Notes:
+
+B.
+
+---
+
+## Quiz
+
+* The attacker was able to fetch the Accessor information associated with a token. Will he be able to reverse engineer a ROOT token from the accessor?
 
   * A. True
   * B. False
 
 Notes:
 
-
+B. 
 
 ---
 
 ## Quiz
 
-*
+* The secure application was receiving ciphertext data from the Transit Secret Engine. An attacker was able to intercept the data successfully. What should be the next steps that a Vault Administrator can perform according to best practice?
+
+  * A. Nothing. Since it is ciphertext, the attacker will not be able to decrypt it
+  * B. Rotate the encryption key and set the "minimum to decrypt" version to the latest version of the key
+  * C. Delete and re-create a new transit secrets engine
+  * D. None of the above
+
+Notes:
+
+B.
+
+---
+
+## Quiz
+
+* When Dynamic Secrets are created in Vault, what attribute is used to further renew or revoke these secret?
+
+  * A. Secret name
+  * B. Vault accessor
+  * C. Nothing is needed
+  * D. revocation_id
+  * E. lease_id
+
+Notes:
+
+E.
+
+---
+
+## Quiz
+
+* When Dynamic Secrets are created in Vault, what attribute is used to further renew or revoke these secret?
+
+
+  * A. `vault user login`
+  * B. `vault register`
+  * C. `vault auth`
+  * D. `vault login`
+
+Notes:
+
+D.
+
+---
+
+## Quiz
+
+* Can the userpass auth method in Vault read the usernames from external database like Active Directory?
 
   * A. True
   * B. False
 
 Notes:
 
-
+B.
 
 ---
 
 ## Quiz
 
-*
+* When Vault is first initialized, which one is among the default authentication methods available?
+
+  * A. userpass
+  * B. AppRole
+  * C. GitHub
+  * D. Tokens
+
+Notes:
+
+D.
+
+---
+
+## Quiz
+
+* Vault Policies are designed to be `deny` by default?
 
   * A. True
   * B. False
 
 Notes:
 
-
+A.
 
 ---
 
 ## Quiz
 
-*
+* Alice needs to revoke all the secrets on a specific path. Which of the following commands can be used?
+
+  * A. `vault revoke -all <path>`
+  * B. `vault secret revoke -all <path>`
+  * C. `vault lease revoke -all <path>`
+  * D. `vault lease revoke -prefix <path>`
+
+Notes:
+
+D.
+
+---
+
+## Quiz
+
+* Does Vault trust the storage backend by default?
 
   * A. True
   * B. False
 
 Notes:
 
-
+B.
 
 ---
 
 ## Quiz
 
-*
+* What is the maximum TTL of a token if no explict TTL is specified?
+
+  * A. 10 days
+  * B. 24 hours
+  * C. 30 days
+  * D. 32 days
+  * E. Unlimited
+
+Notes:
+
+D.
+
+---
+
+## Quiz
+
+* Which command is used to renew a vault token?
+
+  * A. `vault renew token`
+  * B. `vault token update`
+  * C. `vault token renew`
+  * D. `vault modify token`
+
+Notes:
+
+C. 
+
+---
+
+## Quiz
+
+* Unsealing Vault creates the encryption keys, which is used to unencrypt the data on the storage backend
 
   * A. True
   * B. False
 
 Notes:
 
-
+B.
 
 ---
 
 ## Quiz
 
-*
+* Which of the following best describes a token accessor?
 
-  * A. True
-  * B. False
+  * A. Describes the value associated with the token TTL
+  * B. A value that acts as a reference to a token and can only be used to perform limited actions
+  * C. A value that describes which clients have access to the attached token
+  * D. A token used for Consul to access Vault auth methods
+  
+Notes:
+
+B.
+
+---
+
+## Quiz
+
+* In order to extend Vault beyond a data center or cloud regional boundary, what feature should be used?
+
+  * A. Vault plugins
+  * B. Vault authentication
+  * C. Vault replication
+  * D. Vault extender
 
 Notes:
 
-
+C.
 
 ---
 
 ## Quiz
 
-*
+* Which is the right command to enable the AWS Secret engine via CLI?
 
-  * A. True
-  * B. False
+  * A. `vault secrets aws enable`
+  * B. `vault enable secrets aws`
+  * C. `vault secrets enable aws`
+  * D. `vault enable aws secrets engine`
 
 Notes:
 
-
+C.
 
 ---
 
 ## Quiz
 
-*
+* When the parent tokens are revoked, what happens to the child tokens?
 
-  * A. True
-  * B. False
+  * A. Child tokens continue to exist till the lease expires
+  * B. Child tokens will be converted to parent tokens
+  * C. Child tokens will also be revoked
+  * D. None of the above
 
 Notes:
 
-
+C.
 
 ---
 
 ## Quiz
 
-*
+* Which among the authentication methods below is recommended when application running on a server needs to perform operations on Vault?
 
-  * A. True
-  * B. False
+  * A. GitHub
+  * B. SSH
+  * C. Tokens
+  * D. AppROle
+  * E. SSO provider like Okta
 
 Notes:
 
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
+D.
 
 ---
 
 ## Quiz
 
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
+* 
 
   * A. True
   * B. False
