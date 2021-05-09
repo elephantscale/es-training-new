@@ -13,14 +13,14 @@
 
 * [Hashicorp-Certified-Vault-Associate-Getting-Started](https://github.com/ned1313/Hashicorp-Certified-Vault-Associate-Getting-Started)
 
-* Totals slides - 292
+* Totals slides - 335
 * 01 About - 13
 * 02 Intro - 34
 * 03 Architecture - 78
 * 04 Configuration - 73
 * 05 Scalability - 10  
 * 06 Consul - 59
-* 07 Cert - 15
+* 07 Cert - 68
   
 * Labs
 * 20

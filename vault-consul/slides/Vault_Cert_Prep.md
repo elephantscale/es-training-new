@@ -243,7 +243,7 @@ D.
 
 * Matthew works as a security engineer in Medium Corp and is recently provided a project to set up the vault. Medium Corp extensively uses AWS and to protect the master key, they intend to make use of AWS KMS instead of shamir. How can this be achieved?
 
-  * A. Shamir'a algotirhm is the only choice available.
+  * A. Shamir'a algorithm is the only choice available.
   * B. Add a new seal block in the configuration file, like KMS, and restart Vault with that
   * C. Use encryption at the server level
   * D. None of the above
@@ -292,40 +292,49 @@ Q5
 
 ## Quiz
 
-*
+* Why does Transit Secret engine require Base64 encoded data instead of just plain-text?
 
-  * A. True
-  * B. False
+  * A. Base64 consumes less network traffic
+  * B. Base64 encoding provides additional security from hackers
+  * C. Base64 can be used to encode various objects such as binary files, PDFs, and images for encryption
+  * D. Base 64 acts as an additional authentication step
 
 Notes:
 
-
+C.
 
 ---
 
 ## Quiz
 
-*
+* Enterprise Corp has started to make use of Vault in production environments. They intend to go with the replication feature to reduce the latency. They also want to be able to perform local reads on the replica that would be running in their secondary region. Which of the following approach can be used?
 
-  * A. True
-  * B. False
+  * A. Disaster recovery replication
+  * B. Replica replication
+  * C. Performance replication
+  * D. Performance replication with Disaster Recovery replication
+  
 
 Notes:
 
-
+C.
 
 ---
 
 ## Quiz
 
-*
+* Medium Corp is making use of the Transit Secret Engine for encryption and decryption requests. They have a TLS connection from application to Vault and authentication based on AppRole auth method. They are making use of one encryption key to perform all the cryptographic operations.
 
-  * A. True
-  * B. False
+* As a Vault Architect, what are the suggestions that you can provide to improve on this architecture?
+
+  * A. Make use of SSL/TLS connection instead of just TLS
+  * B. AppRole is not secure, make use of Token authentication
+  * C. Key Rotation should be integrated, and all the data should not be encrypted with the single key
+  * D. All of the above
 
 Notes:
 
-
+C. 
 
 ---
 
