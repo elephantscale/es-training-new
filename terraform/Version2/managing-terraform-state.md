@@ -29,13 +29,27 @@
   * Updates the state information to record modifications from the *.tf files
   * Queries AWS to get a description of what is actually running
   * Creates a plan to modify the AWS resources to conform to the state descriptions
-* Terraform cannot see or modify AWS resources that are not in its statefile
+* Terraform cannot see or modify AWS resources that are not in its state file
 
+---
+
+## Terraform Planning
+
+* When `terraform plan` is run
+  * All files in the current directory with the .tf extension are read and their contents mierged
+  * Terraform develops a plan for implementing the specified configuration
+* A directed acyclic graph of operations is created to ensure that all dependencies are resolved
+  * The resources may need to be created in a specific order
+* Thus means we can sort organize our code anyway we want
+* However, there is usually a standard way to do this:
+  * All output variables in the file `output.tf`
+  * All input variables in the file `variables.tf`
+  * Provider and terraform options in  `providers.tf`
+  
 ---
 ## Terraform is Declarative
 
 * Declarative means that you only describe the final state that you want your AWS resources to be in
-* Terraform reads all of the directives from all the 
 * After you run `terraform apply` you will see the output in `terraform.tfstate`
 
  ![](../artwork/terraform.fstate.png) 
@@ -290,36 +304,60 @@ resource "aws_instance" "z" {
 * The location of the terraform state files is called the "backend"
 * When the state file is kept in the same directory as the *.tf files, then we are using what is called a local backend
   * This is the default for terraform "out of the box"
-* Each workspace manages its own copy of the AWS resources but they all use the same *tf files
-  * The amount of "isolation" between functional groups is quite low
-  * It is easy for test to make changes that break the dev configuration
+* Each workspace manages its own copy of the AWS resources, but they all use the same *tf files
+  * The amount of "isolation" between our different workspaces or teams is quite low
+  * For example, the `dev` group might make changes that break the `prod` configuration
+* We often use workspaces when we want to spin up a copy of an environment without interfering with an existing deploymen
+
+---
+
+## Versioning Configurations
+
+* A basic principle of IaC is that we treat our configuration files as code
+* We can version our configuration by putting the *tf files in git or other vcs
+    * We do **not** put the state files in version control
+    * Unless we want to store snapshots of the state files
+* If we make changes and break a configuration, we can roll back to a working version
+* If we want make changes in workspaces:
+  * Commit the *tf files to a git repository
+  * For each workspace used, create a corresponding git branch
+  * As you switch workspaces, switch branches
+* This still does not fix the problems with the state files 
+  * _"Oops, I forgot to check out the dev branch and destroyed the production configuration"_
+---
+
+## Problem with Local Backends
+
+* Shared storage for state files
+  * Files need to be in common shared area so everyone on the team can access them
+  * Without file locking, race conditions when concurrent updates to the state files take place
+  * This can lead to conflicts, data loss, and state file corruption
+  * Even if we use versioning, branches and workspaces
+
+* Isolation
+  * It's difficult to isolate the code used in different environments
+  * Lack of isolation makes it easy to accidentally overwrite environments
+  * The problem that we cannot address locally is that the state file is a shared resource
+  * Even if the *tf source files are isolated from each other
+
+* Secrets
+  * Confidential information is stored in the clear (i.e. AWS Keys)
   
+---  
+
 ## Remote Backends
 
 * Each Terraform configuration has a location where the state files are kept
     * This is called the "backend"
     * The default is to use files in the local directory
-    * This is what we have been using so far
+    * Even using git or another system does not address the problems mentioned
 
 * Terraform can also support "remote" backends
     * For example, we can keep state files in an S3 bucket on AWS
     * Not all providers can host remote back ends
   
 ---
-## Problem with Local Backends
 
-* Shared storage for state files
-    * Files need to be in common shared area so everyone on the team can access them
-     * Without file locking, race conditions when concurrent updates to the state files take place
-     * This can lead to conflicts, data loss, and state file corruption
-  
-* Isolation
-    * It's difficult to isolate the code used in different environments
-    * Lack of isolation makes it easy to accidentally overwrite environments
-
-* Secrets
-    * Confidential information is stored in the clear (i.e. AWS Keys)
----
 ## Remote AWS Backend
 
 * Using S3 as a backend resolves many of these issues
@@ -384,6 +422,17 @@ resource "aws_instance" "z" {
     ```
 ---
 
+# The Backend for the Remote Backend
+
+* When we set up the remote backend, we create a state file that describes the configuration of the remote backend
+* **The remote backend state file is not kept in the remote backend**
+  * We keep the remote backend state file separate and secure
+  * Locked down and accessible only to the configuration manager
+* We can have multiple S3 back ends for different projects
+  * The state files for each S3 backend are kept in a master S3 backend
+  * But, the state of the master S3 backend is stored securely somewhere else
+
+---
 ## Setting Up the Backend
 
 * We have to tell Terraform the backend in now remote
@@ -402,7 +451,7 @@ resource "aws_instance" "z" {
         backend "s3" {
             # Replace this with your bucket name!
             bucket         = "terraform-up-and-running-state"
-            key            = "global/s3/terraform.tfstate"
+            key            = "global/s3/terraform.tfstate" #
             region         = "us-east-2"
 
             # Replace this with your DynamoDB table name!
@@ -411,7 +460,7 @@ resource "aws_instance" "z" {
             }
     }
     ```
-  
+ * The key creates a unique folder in the S3 bucket for this state file 
 
 ---
 
@@ -465,7 +514,11 @@ resource "aws_instance" "z" {
     ```
 ---
 ## File Isolation
+
 * Most secure approach is to have a folder for each configuration
+    * Each folder can maintain its own version control for the *tf files
+    * Or a common repository can be used
+    * Remember that the *tf files are _source code_
   
 * Each deployment has its own backend, local or remote.
     * This allows for isolation of all files
@@ -499,7 +552,7 @@ resource "aws_instance" "z" {
 ---
 ## Workspace Drawbacks
 
-* All workspace state fiels are stored in the same backend 
+* All workspace state files are stored in the same backend 
     * They share same authentication and access controls which means they are not good for isolating
   
 * Workspaces are not visible in the code or on the terminal unless you run terraform workspace commands

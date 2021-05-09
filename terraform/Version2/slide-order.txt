@@ -2,8 +2,8 @@ About_Terraform_Class.md
 terraform-intro.md
 terraform-walk-through.md
 managing-terraform-state.md
+terraform-language-elements.md
 # reusable-infrastructure-with-modules.md
-# terraform-language-elements.md
 # production-grade-terraform-code.md
 # testing-terraform-code.md
 # terraform-in-team.md

@@ -45,7 +45,7 @@ Notes:
 ## Required AWS Permissions
 * Here are the permissions you will need (for some labs)
     * AmazonEC2FullAccess
-    * AmazonS3FullAcces
+    * AmazonS3FullAccess
     * AmazonDynamoDBFullAccess
     * AmazonRDSFullAccess
     * CloudWatchFullAccess
@@ -79,7 +79,7 @@ terraform version
 
 * OK... Update [here](https://www.howtoforge.com/how-to-install-terraform-on-ubuntu-1804/)
 
-![](../../assets/images/terraform/terraform-version.png)
+![](../artwork/terraform-version.png)
 
 ---
 
@@ -115,13 +115,14 @@ terraform version
 
 * Create an empty folder, `HelloWold`
 * Create a file called `providers.tf` which contains
-  ```shell script
+  ```shell
   terraform {
     required_providers {
       aws = {
         source  = "hashicorp/aws"
-        version = "~> 3.0"
+        version = ">= 3.0"
       }
+      required_version = ">= 0.14, <= 0.15" 
     }
   }
   provider "aws" {
@@ -130,7 +131,7 @@ terraform version
       }
 
 * This file tells Terraform:
-  * To use the AWS provider plugin version 3.0.x
+  * To use the AWS provider plugin version at least 3.0 and the version of terrafrom to be used is at least release 0.14 but not later than 0.15
   * The code is being executed by the AWS IAM user specified in the profile `dev1`   
 
 ---
@@ -215,7 +216,7 @@ resource "aws_instance" "hw" {
 
 ## Goodbye Cruel World
 
-* The `terraform destroy` command causes terraform to remove all of resources it has created
+* The `terraform destroy` command causes terraform to remove all resources it has created
 * How terraform keeps track of what to destroy is covered later
 
 ![](../artwork/terraform-hw-destroy1.png)
@@ -237,7 +238,7 @@ resource "aws_instance" "hw" {
 * The current state of the configuration being managed by terraform is in "state file"
   * There are two of these: `terraform.tfstate` and `terraform.tfstate.backup`
   * __Do not delete these files__
-* All of the *.tf files in a directory are used to compute the desired state
+* All *.tf files in a directory are used to compute the desired state
 
 ![](../artwork/terraform-hw-statefile.png)
 
@@ -280,7 +281,7 @@ ami           = "ami-077e31c4939f6a2f3"
   * The name of the output variable is `HelloWorld_ip`
 * The syntax for accessing a resource property is:
   `resource_type.resource_name.property`
-* Outputs are printed at the end of the apply at the command line or can be written into a file
+* Outputs are printed at the end of the `terrafrom apply` command at the command line or can be written into a file
   * This provides a record of the actual resource values, like IP addresses, that are allocated by AWS
 ``` shell
 output "HW_private_ip" {
@@ -349,7 +350,7 @@ my_ami = "ami-077e31c4939f6a2f3"
 
 * Please do this lab
 * `terraform-up-and-running-code/labs/lab01-1.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md)
+
 
 ---
 
@@ -363,7 +364,7 @@ my_ami = "ami-077e31c4939f6a2f3"
 
 ## Make a Web Server
 * In the real world, we would want a robust server using one of the various available technologies
-* However for this lab, we will use a toy webserver with the following command
+* However, for this lab, we will use a toy webserver with the following command
 
 ```shell
 #!/bin/bash
@@ -377,7 +378,7 @@ nohup busybox httpd -f -p 8080 &
 
 ## Adding a Script to the Instance
 
-*  You pass a shell script to User Data by setting the user_data argument in your Terraform code as follows:
+*  You pass a shell script to User Data by setting the user_data argument in your terraform code as follows:
 * The `<<-EOF` and `EOF` are Terraform’s `heredoc` syntax, which allows you to create multiline strings without having to insert newline characters all over the place
 
 ```shell script
@@ -393,7 +394,6 @@ nohup busybox httpd -f -p 8080 &
 
 * Please do this lab
 * `terraform-up-and-running-code/labs/lab02-1.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-1.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-1.md)
 
 ---
 
@@ -502,7 +502,6 @@ Hello, World
 
 * Please do this lab:
 * `terraform-up-and-running-code/labs/lab02-2.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md)
 
 ---
 
@@ -568,7 +567,6 @@ Notes:
 
 * Please do this lab:
 * `code/terraform/01-why-terraform/web-server/step1/`
-* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step1)
 * In this lab, we practice server deployment
 ---
 
@@ -720,7 +718,6 @@ Notes:
 ## Lab with variables
 * Go back to this lab:
 * `terraform-up-and-running-code/labs/lab02-2.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md)
 * Experiment with providing the variables 
     * default
     * var=
@@ -842,7 +839,6 @@ output "public_ip" {
 
 * Please do this lab
 * `code/terraform/01-why-terraform/web-server/step2`
-* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step2)
 * In this lab, we practice setting up Terraform variables
 ---
 
@@ -866,7 +862,7 @@ output "public_ip" {
 ## Discussion
 
 * When clusters makes sense and when it is not worth it?
-* Imagine a parallel research app for a cluster that would be rearchitected for Cloud
+* Imagine a parallel research app for a cluster that would be re-architected for Cloud
     * would have instances
     * a task dispatcher, etc. 
     * would have to manage those instances, etc.
@@ -1065,7 +1061,6 @@ resource "aws_autoscaling_group" "example" {
 ## Lab: Creating a load balancer
 * Please do the following lab
 * `terraform-up-and-running-code/labs/lab02-3-prep.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-3-prep.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-3-prep.md)
 
 ---
 ## Load Balancer Types
@@ -1251,6 +1246,5 @@ output "alb_dns_name" {
 
 * Please do this lab
 * `code/terraform/01-why-terraform/web-server/step3`
-* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step3)
 * In this lab, we practice setting up a complete Terraform architecture
 ---
