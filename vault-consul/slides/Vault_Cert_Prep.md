@@ -811,171 +811,83 @@ D.
 
 ## Quiz
 
-* 
+* Which feature in vault allows users to generate code for MFA similar to Google Authenticator?
 
-  * A. True
-  * B. False
+  * A. Cubbyhole secrets engine
+  * B. Random byte generator
+  * C. TOTP secrets engine
+  * D. Identity secrets engine
+  * E. OTP feature
 
 Notes:
 
+C.
 
 
 ---
 
 ## Quiz
 
-*
+* Which port does Vault use for API communication?
 
-  * A. True
-  * B. False
+  * A. 7900
+  * B. 8201
+  * C. 8200
+  * D. 8022
 
 Notes:
 
-
+C.
 
 ---
 
 ## Quiz
 
-*
+* Which among the following token types do not have a TTL associated with them?
 
-  * A. True
-  * B. False
+  * A. Service tokens
+  * B. Batch tokens
+  * C. Parent tokens
+  * D. Child tokens
+  * E. Root tokens
 
 Notes:
 
+E. 
 
+---
+
+
+## Quiz
+
+* You have opened up the Vault UI however instead of asking the token, the vault is showing the following information that needs to be entered:
+    * Key Shares
+    * Key Threshold
+      * What might be the cause?
+
+  * A. The URL of Vault is incorrect
+  * B. The storage backend of the Vault is not configured correctly
+  * C. The Vault needs to be initialized and unsealed before it can be used
+  * D. None of the above
+
+Notes:
+
+C.
 
 ---
 
 ## Quiz
 
-*
+* A Vault client who has read access to the path secrets/apps/app1 is having trouble viewing the secret in the user interface (UI) but can access via the API. What can be done to resolve this issue?
 
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
+  * A. Modify the policy to allow the `create` permission
+  * B. Remove the `deny` policy blocking access to the `secrets/apps/app1` path
+  * C. Add `list` to the policy, so the user can browse the paths leading up to the key/value's path
+  * D. Add `read` permission to the path `secrets/apps`
 
 Notes:
 
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
+C.
 
 ---
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
-## Quiz
-
-*
-
-  * A. True
-  * B. False
-
-Notes:
-
-
-
----
-
 
