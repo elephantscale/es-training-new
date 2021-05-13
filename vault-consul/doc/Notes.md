@@ -22,8 +22,7 @@
 * 06 Consul - 59
 * 07 Cert - 60
   
-* Labs
-* 20
+* Labs - 20
 
 ### TODO next
 

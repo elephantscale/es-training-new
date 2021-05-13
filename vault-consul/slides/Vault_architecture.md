@@ -38,7 +38,7 @@ a returning guest may also receive access to the guest lounge for their loyalty.
 ## Hotel protection
 
 * Hotel
-  * Walls and dooar
+  * Walls and doors
   
 * Vault
   * cryptographic barrier
