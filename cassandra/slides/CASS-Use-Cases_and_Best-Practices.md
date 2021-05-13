@@ -43,9 +43,9 @@ Notes:
 
  *  **Commandment 1 )**  Great data models start with the queries
 
-     - RDBMS:    Data -> Model -> Queries
+     - RDBMS:    Data => Model => Queries
 
-     - Cassandra: Queries -> Model -> Data
+     - Cassandra: Queries => Model => Data
 
  *  **Commandment**  **2)**  It is OK to duplicate data (de-normalize)
 
@@ -156,7 +156,7 @@ Notes:
 
  *  **Commandment 14** – Use ¼ of system memory (systems now have 64-256 GB memory)
 
-     - More than 8G heap with CMS is a problem -> GC pauses
+     - More than 8G heap with CMS is a problem => GC pauses
 
      - Can do 32-64GB heap now
 
@@ -254,37 +254,22 @@ Notes:
 
 ## Developer Best Practices
 
-
  * Start with queries;  **then**  design the schema
-
  * Keep in mind the constraints around 
-
      - partition keys, clustering columns, secondary indexes, etc.
-
  * Generate ‘fake’ data to test at scale
-
      - Use our ‘generator’ scripts
-
  * Query tracing
+     - *cqlsh>   tracing oncqlsh >   select * from increments;
+</br> **< query output >***
 
-     - cqlsh>   tracing oncqlsh>   select * from increments;
-
-     -  **<query output>** 
-
-
- |*  **activity**             | **timestamp**                   |  **source**      |  **source_elapsed** 
-
- * ----------------------------------------------------------------------------           
-
- *  **Execute CQL3 query**  |  **2019-01-10 19:00:05.676000**  |  **10.31.4.58**  |               **0** 
-
- *  **Parsing select * from increments**  |  **2019-01-10 19:00:05.676000**  |  **10.31.4.58**  |  **146** 
-
- *  **Preparing statement ..**            |  **2019-01-10 19:00:05.676000**  |  **10.31.4.58**  |  **252** 
-
- *  **Computing ranges to query**        |  **2019-01-10 19:00:05.677000**  |  **10.31.4.58**  |  **428** 
-
- *  **Submitting range requests on 1025 ranges with a concurrency of 445 (0.225 rows per range expected)** |
+| **activity**                                                                                       | **timestamp**              | **source** | **source_elapsed** |
+|----------------------------------------------------------------------------------------------------|----------------------------|------------|--------------------|
+| Execute CQL3 query                                                                                 | 2019-01-10 19:00:05.676000 | 10.31.4.58 | 0                  |
+| Parsing select * from increments                                                                   | 2019-01-10 19:00:05.676000 | 10.31.4.58 | 146                |
+| Preparing statement ..                                                                             | 2019-01-10 19:00:05.676000 | 10.31.4.58 | 252                |
+| Computing ranges to query                                                                          | 2019-01-10 19:00:05.677000 | 10.31.4.58 | 428                |
+| Submitting range requests on 1025 ranges with a concurrency of 445 (0.225 rows per range expected) |                            |            |                    |
 
 Notes: 
 
@@ -297,13 +282,12 @@ Notes:
 
  * How is it internally stored?
 
-     - Use ‘sstabledump  <SSTable>’ 
+     - Use ‘sstabledump  < SSTable >’ 
 
  * Where is my row?
 
-     - nodetool getendpoints <keyspace> <table> <primary key>
-
- * $ nodetool getendpoints myflix users user-91363
+     - *nodetool getendpoints < keyspace > < table > < primary key >
+</br>$ nodetool getendpoints myflix users user-91363*
 
 Notes: 
 
@@ -369,7 +353,7 @@ Notes:
 
      - 8-32GB Dev, 64-256 GB for Production
 
-     - More memory -> More Memtables -> More caching
+     - More memory => More Memtables => More caching
 
  * CPU
 
@@ -618,7 +602,7 @@ Notes:
 
  * Latency:  3ms (avg)  to 50ms (p99)
 
- * Model: some_id -> counter
+ * Model: some_id => counter
 
 <img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Counting-5.png" style="width:70%;"/>
 
@@ -638,13 +622,13 @@ Notes:
 
  * Production nodes > 2000
 
- * Data size : 300 TB
+ * Data size: 300 TB
 
      - 1M+ writes / sec,   300k reads / sec
 
  * ‘profile’ feature quadrupled data volume!
 
- * Largest cluster : 150 nodes (across 3 DCs)
+ * Largest cluster: 150 nodes (across 3 DCs)
 
  * Increasingly using SSDs in cloud
 
@@ -713,7 +697,7 @@ Notes:
 
 ---
 
-## C* Use Cases : Online Service: Spotify
+## C* Use Cases: Online Service: Spotify
 
 
  * 40 M active users / month

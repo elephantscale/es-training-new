@@ -109,7 +109,7 @@ Notes:
 
      - Username & password
 
-     - User has multiple emails; ONE email is primary
+     - User **has multiple emails; ONE email is primary**
 
  * Think about:
 
@@ -134,7 +134,7 @@ Notes:
 
  * Q: Query users by  **username** 
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -144,13 +144,6 @@ Notes:
 ---
 
 ## MyFlix: Users: Our Solution 
-
-
- * PK = user_name (unique)
-
- * Emails are stored as a list.
-
-     - The first email in the list is the “primary email”
 
 ```text
 // Basic entity table for a user
@@ -165,6 +158,14 @@ CREATE TABLE users (
 );
 
 ```
+
+ * PK = user_name (unique)
+
+ * Emails are stored as a list.
+
+     - The first email in the list is the “primary email”
+
+
 
 Notes: 
 
@@ -202,21 +203,15 @@ Notes:
  * Primary Key
 
      - We used ‘user_name’
-
-     - -> natural key (part of the model)
-
+     - => natural key (part of the model)
      - No auto-sequence keys in C*
-
      - Use natural keys whenever possible
 
  * Emails
 
      - Can store as List or Set
-
      - List has order; Set has no order; Set doesn’t allow dupes
-
      - If using List, I can assume “first email” is primary
-
      - If using SET, I need a separate field (no ordering)
 
 Notes: 
@@ -283,7 +278,7 @@ Notes:
 
  *  Q: Find users by  **user_name**  **or**  **primary email** 
 
- *  Answer: Next Slide!
+ *  **Answer: Next Slide!**
 
 Notes: 
 
@@ -318,6 +313,8 @@ Notes:
 
 ## MyFlix: Users by Email: Solution
 
+ * Create another table!
+
 
 ```text
 CREATE TABLE users_by_email (	user_name text,	primary_email  text, 	PRIMARY KEY (primary_email));
@@ -325,14 +322,13 @@ CREATE TABLE users_by_email (	user_name text,	primary_email  text, 	PRIMARY KEY 
 ```
  * Create another table!
 
- * If I want to get the first name from the email
+ * If I want to get the **first name** from the **email**
 
      - How many queries does it take?
 
      - Can I do it using ONE query?
 
 
- * Create another table!
 
 Notes: 
 
@@ -448,12 +444,12 @@ BEGIN BATCH
     UPDATE users_by_email set lname = ‘Cooper’ where primary_email = ‘u1@gmail.com’;
 APPLY BATCH;
 
-Batch is written to co-ordinator node and replicas
-C* will ensure that batch succeeds – no rollbacks
-No isolation – other clients may read updated rows before entire batch completes
-
-
 ```
+
+ * Batch is written to co-ordinator node and replicas
+ * C* will ensure that batch succeeds – no rollbacks
+ * No isolation – other clients may read updated rows before entire batch completes
+
 
 Notes: 
 
@@ -483,7 +479,7 @@ Notes:
 
      - Q2: Find all features by studio 
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -516,7 +512,7 @@ create table studio_features (	code  text,	name  text,	studio text,	release_date
 
 ```
 
- * Q: Find movies by studio	</br>select * from features where studio = ‘HBO’;
+ * Q: Find movies by studio	</br>*select * from features where studio = ‘HBO’;*
 
 
 
@@ -536,7 +532,7 @@ create table features (	code  text,	name  text,	studio text,	release_date  times
 
  * Create an Index
 
- * Q: Find movies by studio	</br>Select * from features where studio = ‘HBO’;
+ * Q: Find movies by studio	</br>*Select * from features where studio = ‘HBO’;*
 
  * What are the implications of indexing?
 
@@ -561,7 +557,7 @@ Notes:
 
      - (IMAX release, date3)
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -611,7 +607,7 @@ Notes:
 
      - Find all ratings by a user
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -680,7 +676,7 @@ Notes:
 create table ratings_by_user (	user_name text,	feature_code text,	rating int,	PRIMARY KEY (user_name, feature_code));
 
 ```
- * We can get ratings per user quickly.select * from ratings_by_user where user_name = ‘user1’;
+ * We can get ratings per user quickly. </br>*select * from ratings_by_user where user_name = ‘user1’;*
 
  * User can rate multiple movies
 
@@ -704,7 +700,7 @@ Notes:
 
      - What is the best (worst) rating for a movie?
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -808,7 +804,7 @@ Notes:
      - Find all devices owned by a user
      - Find which user owns a device (given device_id)
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -868,7 +864,7 @@ Notes:
 
  * Query: Find the latest resume position for user
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -986,7 +982,7 @@ Notes:
 ## Lab: MyFlix
 
 
- *  **Overview** : 
+ *  **Overview:**
 
      - Model MyFlix on C*
 
@@ -994,11 +990,11 @@ Notes:
 
      - Query data
 
- *  **Builds on previous labs** : None
+ *  **Builds on previous labs:** None
 
- *  **Approximate time** : 1 hour
+ *  **Approximate time:** 1 hour
 
- *  **Instructions** :  **08-myflix / README.md** 
+ *  **Instructions:**  **08-myflix / README.md** 
 
  *  **Lab** 
 
@@ -1074,7 +1070,7 @@ Notes:
  * Query:
      - Query video by a unique ‘video_id’
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -1150,7 +1146,7 @@ Notes:
 
  * Q: Find latest videos by user
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -1227,15 +1223,15 @@ Notes:
 ## Lab: YouTube Videos
 
 
- *  **Overview** : 
+ *  **Overview:** 
 
      - Generate data for YouTube videos
 
- *  **Builds on previous labs** : None
+ *  **Builds on previous labs:** None
 
- *  **Approximate time** : 30 mins
+ *  **Approximate time:** 30 mins
 
- *  **Instructions** :  **generators/generate-videos.py** 
+ *  **Instructions:**  **generators/generate-videos.py** 
 
      - Complete the TO DO items
 
@@ -1275,7 +1271,7 @@ Notes:
      - Update item quantities from cart
      - Only ONE shopping cart per user
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -1363,7 +1359,7 @@ Notes:
 
      - Activities per day (weekday/weekend)
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -1627,7 +1623,7 @@ Notes:
 
      - Make sure partition size doesn’t get too big
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -1696,13 +1692,13 @@ Notes:
 ## Review Questions
 
 
-     - In Cassandra, which comes first, data model or queries?
+ * In Cassandra, which comes first, data model or queries?
 
-     - Is de-normalization good or bad in Cassandra?
+ * Is de-normalization good or bad in Cassandra?
 
-     - How do you generate unique primary keys in Cassandra?
+ * How do you generate unique primary keys in Cassandra?
 
-     - Where do you store blobs in Cassandra solutions?
+ *  Where do you store blobs in Cassandra solutions?
 
 Notes: 
 

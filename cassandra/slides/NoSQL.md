@@ -271,7 +271,7 @@ Notes:
 
 | Feature      | NoSQL                                  | RDBMS                                   |
 |--------------|----------------------------------------|-----------------------------------------|
-| For          | Unstructured/semi-structured data      | Structured data                         |
+| For          | Unstructured/semi- <br/> structured data      | Structured data                         |
 | Schema       | Optional/flexible                      | Required/Enforced                       |
 | Data models  | - Flat tables <br/>  - de-normalized   | Heavily normalized                      |
 | Scale        | Scales horizontally (huge scalability) | Scales vertically (limited scalability) |
@@ -519,9 +519,9 @@ Notes:
 
  * **A**vailability: Can always read and write to system
 
- * **P**artition Tolerance: System keeps working even if replicas can’t talk to each other ‘split brain’ scenario
+ * **P**artition Tolerance: System keeps working even if replicas can’t talk to each other **‘split brain**’ scenario
 
- * CAP Theorem says we can have 2 of 3
+ * CAP Theorem says we can have **2 of 3**
 
 <img src="../../assets/images/cassandra/cap-partition.png"  style="width:70%;" />
 
@@ -666,7 +666,6 @@ Notes:
 
  * These are for online graph operations, not for batch analytics
 
- *  *sakkmesterke*  */iStock/Getty Images Plus/Getty Images* 
 
 
 Notes: 
@@ -679,7 +678,7 @@ Notes:
 ## Wide Column Stores
 
 
- * Can support  **billions of rows and millions of columns** !
+ * Can support  **billions of rows and millions of columns**!
 
  * Data is sharded across nodes
 
@@ -814,7 +813,7 @@ Notes:
 
 ## Numbers Every One Should Know by Jeff Dean, Fellow @ Google
 
-<img src="../../assets/images/cassandra/Numbers-Every.png" style="width:70%;" />
+<img src="../../assets/images/cassandra/3rd-party/Numbers-Every.png" style="width:65%;" />
 
 
 Notes: 
@@ -827,13 +826,22 @@ Notes:
 ## Review Questions
 
 
-     - True or False? Most NoSQL data stores are designed to run on single node.
+  * True or False? Most NoSQL data stores are designed to run on single node.
 
-     - Which one of the features do most NoSQL data stores support?- Transactions- Durability- High speed read/writes- Sharding- Secondary indexes/joins
+  * Which one of the features do most NoSQL data stores support?
 
-     - What are the implications of CAP Theorem?
+     - Transactions
+     - Durability
+     - High speed read/writes
+     - Sharding
+     - Secondary indexes/joins
 
-     - What kind of NoSQL systems are HBase and Cassandra?- Document store- Key-value store- Graph store
+   * What are the implications of CAP Theorem?
+
+   * What kind of NoSQL systems are HBase and Cassandra?
+     - Document store
+     - Key-value store
+     - Graph store
 
 Notes: 
 
