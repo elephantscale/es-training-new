@@ -695,7 +695,7 @@ in Vault.
    
 ---
 
-## Lab: Authentication
+## Lab: Authorization
 
 * Please do lab `lab08`
 * It is found here: [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab08](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab08)
