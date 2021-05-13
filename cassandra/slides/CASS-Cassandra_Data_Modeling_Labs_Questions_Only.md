@@ -110,7 +110,7 @@ Notes:
 
      - Username & password
 
-     - User has multiple emails; ONE email is primary
+     - User **has multiple emails; ONE email is primary**
 
  * Think about:
 
@@ -390,7 +390,7 @@ Notes:
 ## Lab: MyFlix
 
 
- *  **Overview**: 
+ *  **Overview:**
 
      - Model MyFlix on C*
 
@@ -398,11 +398,11 @@ Notes:
 
      - Query data
 
- *  **Builds on previous labs** : None
+ *  **Builds on previous labs:** None
 
- *  **Approximate time** : 1 hour
+ *  **Approximate time:** 1 hour
 
- *  **Instructions** :  **08-myflix / README.md** 
+ *  **Instructions:** **08-myflix / README.md** 
 
  *  **Lab** 
 
@@ -456,7 +456,7 @@ Notes:
  * Query:
      - Query video by a unique ‘video_id’
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -477,7 +477,7 @@ Notes:
 
  * Q: Find latest videos by user
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -489,15 +489,15 @@ Notes:
 ## Lab: YouTube Videos
 
 
- *  **Overview** : 
+ *  **Overview:**
 
      - Generate data for YouTube videos
 
- *  **Builds on previous labs** : None
+ *  **Builds on previous labs:** None
 
- *  **Approximate time** : 30 mins
+ *  **Approximate time:** 30 mins
 
- *  **Instructions** :  **generators/generate-videos.py** 
+ *  **Instructions:**  **generators/generate-videos.py** 
 
      - Complete the TO DO items
 
@@ -543,7 +543,7 @@ Notes:
 
      - Only ONE shopping cart per user
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -628,7 +628,7 @@ Notes:
 
  * Part of Hadoop ecosystem
 
- * Works on ‘agent -> hub’ model
+ * Works on ‘agent => and his hub’ model
 
  * Agents run on ‘log source’ and keep sending data upstream
 
@@ -692,7 +692,7 @@ Notes:
 
      - Make sure partition size doesn’t get too big
 
- * Answer: Next Slide!
+ * **Answer: Next Slide!**
 
 Notes: 
 
@@ -722,13 +722,13 @@ Notes:
 ## Review Questions
 
 
-     - In Cassandra, which comes first, data model or queries?
+   * In Cassandra, which comes first, data model or queries?
 
-     - Is denormalization good or bad in Cassandra?
+   * Is denormalization good or bad in Cassandra?
 
-     - How do you generate unique primary keys in Cassandra?
+   * How do you generate unique primary keys in Cassandra?
 
-     - Where do you store blobs in Cassandra solutions?
+   * Where do you store blobs in Cassandra solutions?
 
 Notes: 
 

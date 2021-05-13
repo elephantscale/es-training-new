@@ -325,15 +325,15 @@ Notes:
 ## Lab 10: Single Node Install
 
 
- *  **Overview**: 
+ *  **Overview:**
 
      - Install C* as single node
 
- *  **Builds on previous labs**: None
+ *  **Builds on previous labs:** None
 
- *  **Approximate Time**: 45 mins
+ *  **Approximate Time:** 45 mins
 
- *  **Instructions**:  **10-single-node-install  /**  **README.md** 
+ *  **Instructions:**  **10-single-node-install  /**  **README.md** 
 
  *  **Lab** 
 
@@ -353,17 +353,15 @@ Notes:
 
  * C* is a NOSQL datastore that can store ‘Big Data’ (100s of TB)
 
- * How ever its use case is ‘needle in a haystack’
+ * How ever its use case is **‘needle in a haystack’**
      - Query for a few rows at a time in billions of rows
 
  * It doesn’t support ‘bulk analytics’
 
  * Example:
-
      - Imagine we are storing sensor readings in C*
      - We have billions of data points
      - OK queries:
-
         * What is the latest temp for ‘sensor-1’
      - Not OK queries:
         * Find the average temp for ALL sensors for the month of June in 2015
@@ -385,17 +383,13 @@ Notes:
  * Hadoop design
 
      - Runs on commodity hardware
-
      - Runs as a cluster
-
      - Scales horizontally 
 
  * Hadoop components
 
      - HDFS: Distributed storage (scales to peta bytes of storage)
-
      - MapReduce: Distribute compute
-
      - YARN: An operating system for distributed applications
 
 Notes: 
@@ -432,17 +426,13 @@ Notes:
  * Analyze data in C* using Hadoop analytics 
 
      - MapReduce
-
      - Pig (write high level MapReduce)
-
      - Hive (SQL queries via MapReduce)
 
  * Best Practices
 
-     - Do NOT mix real time and batch work loads
-
+     - Do **NOT** mix real time and batch work loads
      - Best to have a separate topologies
-
      - Use NetworkPlacementStrategy 
 
 
@@ -486,7 +476,6 @@ Notes:
  * Spark relies on other distributed storage systems
 
      - HDFS
-
      - Cassandra
 
 
@@ -508,7 +497,7 @@ Notes:
 
  * Spark-Cassandra connector: https://github.com/datastax/spark-cassandra-connector
 
-<img src="../../assets/images/cassandra/kafka-spark-cassandra.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/kafka-spark-cassandra.png" style="width:70%;"/>
 
 
 Notes: 
@@ -538,7 +527,6 @@ Notes:
  * Batch layer
 
      - Holds master data set (immutable , append-only)
-
      - Answers batch queries
 
  * Serving layer
@@ -548,7 +536,6 @@ Notes:
  * Speed Layer
 
      - Handles new data
-
      - Facilitates fast / real-time queries
 
  * Query layer

@@ -54,22 +54,20 @@ Notes:
 
  * Observe the following limitations of collections.
 
- * Don’t insert more than 2 Billion entries into a collectionAny thing more won’t be queryable  -> data loss 
+ * Don’t insert more than 2 Billion entries into a collectionAny thing more won’t be queryable  => data loss 
 
  * Maximum number of keys for map is 64k
 
  * Each item in collections has size limits
 
      - Map / List: 2GB per item
-
      - Set: 64KB
 
- * Collections cannot be ‘sliced’.  C* reads the entire collection into memory.-> stay well within the maximum limits listed
+ * Collections cannot be ‘sliced’.  C* reads the entire collection into memory. => stay well within the maximum limits listed
 
  * Support for indexing collections is moving target
 
      - check release notes for exact capabilities
-
      - e.g.  Map type only supports indexing values (not keys)
 
 Notes: 
@@ -116,7 +114,7 @@ Notes:
 ## Lab 3: Collections
 
 
- *  **Overview**: 
+ *  **Overview:**
 
      - Define collections
 
@@ -124,13 +122,13 @@ Notes:
 
      - Query data in collections
 
- *  **Builds on previous labs** : None
+ *  **Builds on previous labs:** None
 
- *  **Approximate Time** : 30 – 40 mins
+ *  **Approximate Time:** 30 – 40 mins
 
- *  **Instructions** :  **03-collections /**  **README.md** 
+ *  **Instructions:**  **03-collections /**  **README.md** 
 
- *  **Documentation** : http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html (search for ‘collections’)
+ *  **Documentation:** http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html (search for ‘collections’)
 
  *  **Lab** 
 
@@ -183,73 +181,63 @@ Notes:
 
      - Columbia
 
- * Let’s include Country Name in primary key
+ * Let’s include **Country Name** in primary key
 
- *  **Primary Key = Country Name + City Name** 
+ * **Primary Key = Country Name + City Name**
+
+
+
 
 Notes: 
-
-
-
 
 ---
 
 ## Cities table Revised
 
+  * *CREATE TABLE cities (	country text,	city text,	population int,	PRIMARY KEY (country, city)	);*
 
- * Quiz: can this uniquely identify all cities in the US?
 
- * Quiz: What are the most popular city names in the US?
+  * Quiz: can this uniquely identify all cities in the US?
 
-     - Greenville (38),  Franklin (30) … Springfield (29)http://en.wikipedia.org/wiki/List_of_the_most_common_U.S._place_names 
+  * Quiz: What are the most popular city names in the US?
 
-```text
-CREATE TABLE cities (	country text,	city text,	population int,	PRIMARY KEY (country, city)	);
-
-```
+    - Greenville (38),  Franklin (30) … Springfield (29)http://en.wikipedia.org/wiki/List_of_the_most_common_U.S._place_names 
 
 ```text
+
 // cities table that can support all US cities
-CREATE TABLE cities (	country text,
-  state, text	city text,	population int,	PRIMARY KEY (country, state, city)	);
-
+CREATE TABLE cities (	country text,
+  state, text	city text,	population int,	PRIMARY KEY (country, state, city)	);
 ```
-
-Notes: 
-
-
-
-
 ---
+
+
+
 
 ## Composite Primary Key
 
 <img src="../../assets/images/cassandra/composite-keys2.png"  style="width:50%;float:right;"/>
 
  * Primary Key can be a combination of more than one column
-     - -> composite key
+    - => composite key
 
- * Primary Key = Partition Key + one / more Cluster Columns
- *  PK = country + city
+ * Primary Key = **Partition Key** + one / more **Cluster Columns**
+
+ * PK = country + city
+
      - Country: partition key
-    - City: clustering key
+     - City: clustering key
 
-
-Notes: 
-
----
-
-## Composite Primary Key
-
-<img src="../../assets/images/cassandra/composite-keys2.png"  style="width:50%;float:right;"/>
 
  * Partition Key decides which node the data resides
  * Data is ordered in cluster column order within a partition
- * PK(A,B)
-     - Partition key: A
-     - Clustering key: B
 
- * PK (A,B,C)
+ * PK(A,B)
+
+     - Partition key: A
+     - Clustering keys: B
+
+ * PK(A,B,C)
 
      - Partition key: A
      - Clustering keys: B,C
@@ -314,9 +302,9 @@ Notes:
 
  * In our example
 
-     - Primary Key =  country (Partition Key) +  City (Cluster Column)
+     - Primary Key =  **country** (Partition Key) +  **City** (Cluster Column)
 
- * Table is NOT sorted by partition key
+ * Table is NOT sorted **by partition key**
 
  * But within a partition key, data is sorted by cluster column
 
@@ -332,19 +320,19 @@ Notes:
 
  * During Query
 
-     - 1) C* uses Partition Key  first
+     - 1) C* uses Partition Key first
 
      - 2) Then it may search within cluster columns
 
- * Query by Partition Key
+ * Query by **Partition Key**
 
-     - SELECT * from cities WHERE  country = ‘USA’
+     - SELECT * from cities WHERE  **country** = ‘USA’
 
      - Specifying Partition key is important for fast queries
 
- * Query by Cluster Columns
+ * Query by **Cluster Columns**
 
-     - SELECT  * from cities   WHERE  city = ‘Melbourne’
+     - SELECT  * from cities   WHERE  **city** = ‘Melbourne’
 
      - Can be slow!
 
@@ -364,13 +352,13 @@ Notes:
 
      - Need to specify Partition Key in WHERE clause
 
-     - Select * ... where  **country = ‘**  **USA** ’
+     - Select*  ... where  **country = ‘**  **USA** ’
 
 | Country | City          | Population |
 |---------|---------------|------------|
-| USA     | Melbourne     |            |
-| USA     | San Francisco |            |
-| USA     | San Jose      |            |
+| **USA** | Melbourne     |            |
+| **USA** | San Francisco |            |
+| **USA** | San Jose      |            |
 
 
 Notes: 
@@ -391,14 +379,14 @@ Notes:
 
 | Country | City      | Population |
 |---------|-----------|------------|
-| USA     | Melbourne |            |
+| USA     | **Melbourne** |            |
 
 </br>
 </br>
 
 | Country       | City      | Population |
 |---------      |-----------|------------|
-| Australia     | Melbourne |            |
+| Australia     | **Melbourne** |            |
 
 Notes: 
 
@@ -420,7 +408,7 @@ Notes:
 
  * PK (A,B,C)
 
-     - Query speedAll specified (A,B,C) >>  ( __ , B, C)  >>  ( __, __ , C)
+     - Query speed </br> All specified (A,B,C) >>  ( __ , B, C)  >>  ( __, __ , C)
 
 Notes: 
 
@@ -458,7 +446,7 @@ Notes:
 ## Partition Skew: Solution 1
 
 
- * PRIMARY KEY (city, country)    // flipped
+ * PRIMARY KEY **(city, country)**    // flipped
 
  * Which queries will be fast?  Which need ‘allow filtering’?
 
@@ -478,9 +466,9 @@ Notes:
 ## Partition Skew: Solution 2
 
 
- * Let’s make State part of the PK
+ * Let’s make **State** part of the PK
 
- * PRIMARY KEY (  (country, state),   city)
+ * PRIMARY KEY (  **(country, state)**,   city)
      - Note the brackets
 
  * What is the implication of  PK (country, state, city) ?
@@ -507,7 +495,7 @@ Notes:
 ## Key Take Aways
 
 
- * Design the schema  with query in mind
+ * Design the schema  with **query** in mind
 
  * In composite keys, key order matters a great deal
 
@@ -581,11 +569,11 @@ Notes:
 
 | Time | Sensor_id | Temp | Humidity | Co_level |
 |------|-----------|------|----------|----------|
-| 100  | S1        | 70   | 34       | 12       |
+| 100  | **S1**        | 70   | 34       | 12       |
 | 110  | S2        | 89   | 99       | 11       |
-| 130  | S1        | 68   | 33       | 12       |
+| 130  | **S1**        | 68   | 33       | 12       |
 | 140  | S2        | 88   | 98       | 11       |
-| 180  | S1        | 67   | 33       | 12       |
+| 180  | **S1**        | 67   | 33       | 12       |
 
 
 Notes: 
@@ -628,9 +616,9 @@ Notes:
 ## C* Vs. RDBMS
 
 
- * In RDBMS each new reading will create a ROW
+ * In RDBMS each new reading will create a **ROW**
 
- * In C* each new reading becomes a COLUMN
+ * In C* each new reading becomes a **COLUMN**
 
 <img src="../../assets/images/cassandra/time-series-colum-storage.png"   style="width:80%;" />
 
@@ -645,15 +633,15 @@ Notes:
 ## Lab 5.1: Time Series Data
 
 
- *  **Overview**: 
+ *  **Overview:**
 
      - Model time series data
 
- *  **Builds on previous labs**: None
+ *  **Builds on previous labs:** None
 
- *  **Approximate Time**: 20 mins
+ *  **Approximate Time:** 20 mins
 
- *  **Instructions**: 
+ *  **Instructions:**
 
      -  **05-time-series / 5.1-time-series-1.md** 
 
@@ -671,15 +659,15 @@ Notes:
 ## Lab 5.2: Time Series Data
 
 
- *  **Overview**: 
+ *  **Overview:**
 
      - Generate bulk time series data using data-gen scripts
 
- *  **Builds on previous labs**: 5.1
+ *  **Builds on previous labs:** 5.1
 
- *  **Approximate Time**: 30 mins
+ *  **Approximate Time:** 30 mins
 
- *  **Instructions**:  **05-time-series / 5.2-generate-data.md** 
+ *  **Instructions:**  **05-time-series / 5.2-generate-data.md** 
 
  *  **Lab** 
 
@@ -695,17 +683,14 @@ Notes:
 
  * Inspect sensor data using cqlsh
 
- * $  cqlsh
+ * $  cqlsh</br>
+Cqlsh>   select * from sensors;*
 
- * Cqlsh>   select * from sensors;
+* Inspect the data using ‘cassandra-cli’ tool
 
- * Inspect the data using ‘cassandra-cli’ tool
-
- * $ cassandra-cli
-
- * Cli>  use myflix;
-
- * Cli>  list sensors;
+* *$ cassandra-cli</br>
+Cli>  use myflix;</br>
+Cli>  list sensors;*
 
 Notes: 
 
@@ -840,19 +825,18 @@ Notes:
 ## Lab 5.3: Partitioning Time Series Data
 
 
- *  **Overview**: 
+ *  **Overview:** 
 
      - Partition time series data
 
- *  **Builds on previous labs**: 5.1 & 5.2
+ *  **Builds on previous labs:** 5.1 & 5.2
 
- *  **Approximate Time**: 45 mins
+ *  **Approximate Time:** 45 mins
 
- *  **Instructions**:  **05-time-series / 5.3-partitioning.md** 
+ *  **Instructions:**  **05-time-series / 5.3-partitioning.md** 
 
  *  **Lab** 
 
- *  *Session*  *nn*  *:*  *GraphX* 
 
 Notes: 
 
@@ -878,14 +862,18 @@ Notes:
 
  * More than 1 counter column allowed
 
-     - CREATE TABLE count_pageviews (
-     -     visits counter,
-     -     url varchar,
-     -   PRIMARY KEY (url)
-     - );
-     - UPDATE count_pageviews
-     -         SET visits = visits + 1
-     -         WHERE url ='http://www.mysite.com'
+```text
+
+     CREATE TABLE count_pageviews (
+         visits counter,
+         url varchar,
+       PRIMARY KEY (url)
+     );
+
+     UPDATE count_pageviews
+            SET visits = visits + 1
+           WHERE url ='http://www.mysite.com'
+```
 
 Notes: 
 
@@ -897,15 +885,15 @@ Notes:
 ## Lab 6: Counters
 
 
- *  **Overview**: 
+ *  **Overview:**
 
      - Using counters
 
- *  **Builds on previous labs**: None
+ *  **Builds on previous labs:** None
 
- *  **Approximate Time**: 15 mins
+ *  **Approximate Time:** 15 mins
 
- *  **Instructions**:  **06-counter /**  **README.md**  
+ *  **Instructions:**  **06-counter /**  **README.md**  
 
  *  **Lab** 
 
@@ -924,21 +912,20 @@ Notes:
 ## ACID
 
 
- * Atomic
+ * **A**tomic
 
      - updates succeed or rolled back
-
      - Data in consistent state
 
- * Consistent
+ * **C**onsistent
 
      - A transaction cannot leave the database in inconsistent state
 
- * Isolated
+ * **I**solated
 
      - Transactions cannot interfere with each other
 
- * Durable
+ * **D**urable
 
      - Completed transactions persist in the event of server crash
 
@@ -1040,9 +1027,9 @@ Notes:
 
  * On each node, writes is
 
-     - First persisted to “COMMIT LOG”
+     - First persisted to **“COMMIT LOG”**
 
-     - And is persisted in memory
+     - And is persisted in **memory**
 
      - Acknowledge successful write
 
@@ -1068,7 +1055,7 @@ Notes:
      - update table 2
  * commit
 
- * If something goes wrong -> roll back
+ * If something goes wrong => roll back
 
 Notes: 
 
@@ -1104,11 +1091,15 @@ Notes:
 
  * BEGIN BATCH
 
- * INSERT INTO users (userid, password) values (‘user1’, ‘seckret’);
+```text
 
- * UPDATE users set email=‘me@me.com’  where userid = ‘user1’;
+ INSERT INTO users (userid, password) values (‘user1’, ‘seckret’);
 
- * UPDATE users set account_verified=true where userid = ‘user1’;
+ UPDATE users set email=‘me@me.com’  where userid = ‘user1’;
+
+ UPDATE users set account_verified=true where userid = ‘user1’;
+
+```
 
  * APPLY BATCH 
 
@@ -1132,7 +1123,7 @@ Notes:
 
  * No ordering of statements within batch
 
- * Sets **SAME** timestamp for ALL operations within the batch
+ * Sets **SAME** timestamp for **ALL** operations within the batch
 
 Notes: 
 
@@ -1360,15 +1351,15 @@ Notes:
 ## Review Questions
 
 
-     - What is the use of collections in Cassandra?
+  * What is the use of collections in Cassandra?
 
-     - Does Cassandra allow secondary indices? What are the performance tradeoffs?
+  * Does Cassandra allow secondary indices? What are the performance tradeoffs?
 
-     - True or False? Can Cassandra store time series data?
+  * True or False? Can Cassandra store time series data?
 
-     - How do you store time series data in Cassandra?
+  * How do you store time series data in Cassandra?
 
-     - Are there transactions in Cassandra? What are lightweight transactions?
+  * Are there transactions in Cassandra? What are lightweight transactions?
 
 Notes: 
 

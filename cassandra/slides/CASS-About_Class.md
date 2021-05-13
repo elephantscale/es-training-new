@@ -30,27 +30,20 @@ Notes:
  * Day 1
 
      -  **NOSQL** 
-
      -  **Cassandra Intro** 
-
      -  **CQL Intro** 
-
      -  **CQL Modeling 1** 
 
  * Day 2
 
      -  **CQL Modeling 2 (advanced)** 
-
      -  **Group exercise: Modeling workshop** 
 
  * Day 3
 
      -  **Implement use case scenarios in C*** 
-
      -  **Java drivers** 
-
      -  **C* internals** 
-
      -  **Administration fundamentals** 
 
 Notes: 

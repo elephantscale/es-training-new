@@ -56,7 +56,7 @@ Notes:
 
      - Or can be set by user
 
- *  serves as a cache for queries
+ *  serves as a **cache** for queries
 
 
 Notes: 
@@ -133,9 +133,9 @@ Notes:
 
  * Bloom Filters will return
 
-     - DEFINITELY NO  : the key doesn’t exist in SSTable
+     - **DEFINITELY NO:** the key doesn’t exist in SSTable
 
-     - MAY BE : the key may exist
+     - **MAY BE:** the key may exist
 
  * ‘NO’ avoids a costly disk access, just to find no data
 
@@ -242,11 +242,11 @@ Recall, that when you write a row, the partition key is hashed to a token which 
 ## Write Path
 
 
- * Client can connect to ANY node
+ * Client can connect to **ANY** node
 
- * This node becomes CO-ORDINATOR node
+ * This node becomes **CO-ORDINATOR** node
 
- * Using Partition Key co-ordinator node picks replicas
+ * Using **Partition Key** co-ordinator node picks replicas
 
  * Co-ordinator sends write data to all replicas (dictated by replication factor)
 
@@ -316,11 +316,11 @@ Notes:
 ## Read Path
 
 
- * Client can connect to ANY node
+ * Client can connect to **ANY** node
 
- * This node becomes CO-ORDINATOR node
+ * This node becomes **CO-ORDINATOR** node
 
- * Using Partition Key co-ordinator node picks replicas
+ * Using **Partition Key** co-ordinator node picks replicas
 
  * Co-ordinator sends read request to necessary replicas (based on consistency ALL, QUORUM ..etc)
 
@@ -343,7 +343,7 @@ Notes:
 
      - Data is merged from Memtable and SSTables
 
- * Quiz : Why commit log is not consulted?
+ * Quiz: Why commit log is not consulted?
 
  * Answer: Commit log is append only – used in case of failure. The data is stored in memtable
 
@@ -381,17 +381,17 @@ Notes:
 ## Caching: Row Cache
 
 
- * When a row is read, entire row is pulled into memory
+ * When a row is read, **entire row** is pulled into memory
 
  * It can be cached so future queries can be answered quickly
 
- * C* caches all rows when reading a partition
+ * C* caches **all rows** when reading a partition
 
-        * Only enable for small partitions  
+      - Only enable for **small** partitions  
 
-        * Only when number of reads is >> number of writes  (95%)
+      - Only when number of reads **is >>** number of writes  (95%)
 
-        * Large partitions will exhaust JVM -> Out of Memory error
+      - Large partitions will exhaust JVM => Out of Memory error
 
  * Relying on OS Page Cache may be a better option
 
@@ -505,7 +505,7 @@ Notes:
 
  * Partition key determines which node owns the row
 
- * Partition Key ---  (hashing) -> token 
+ * Partition Key ---  (hashing) => token 
 
  * Token value range is very large:  -2^63 to 2^64-1 
 

@@ -129,7 +129,7 @@ Notes:
 
  * No single master
 
-     - No single point of failure-> highly available
+     - No single point of failure => highly available
 
      - Compare with Hadoop
 
@@ -215,7 +215,7 @@ Notes:
 
  * Add more nodes for capacity 
 
-     - -> scale out
+     - => scale out
 
      - No need to replace existing nodes
 
@@ -225,9 +225,9 @@ Notes:
 
  * C* distributes data across the cluster
 
-     - More nodes -> more workers to ingest data & serve data
+     - More nodes => more workers to ingest data & serve data
 
-     - -> linear scale
+     - => linear scale
 
 Notes: 
 
@@ -377,9 +377,9 @@ Notes:
 
      - Usually one/two
 
- * , in turn, contains ‘tables’
+ * Keyspace, in turn, contains ‘tables’
 
- *  attributes
+ * Keyspace attributes
 
      - Replication factor
 
@@ -460,6 +460,8 @@ Notes:
 
  * Unlike RDBMS, Cassandra is built for “sparse” rows
 
+</br>
+
 |       | Col 1   | Col 2   | Col 3   | Col 5   | Col 5   |
 |-------|---------|---------|---------|---------|---------|
 | Row 1 | Value 1 | Value 2 | Value 3 |         |         |
@@ -511,13 +513,13 @@ http://www.epochconverter.com/ for converting times.
 ## Lab: Preparation
 
 
- *  **Instructor**:
+ *  **Instructor:**
 
      - Distribute  **cassandra-labs.zip** 
 
      - Help students set up  **Markdown preview plus plugin**  **in Chrome** 
 
- *  **Students**:
+ *  **Students:**
 
      - You each get individual C* node in Amazon Cloud
 
@@ -538,13 +540,13 @@ Notes:
 ## Lab: Install
 
 
- *  **Overview**: Install C*
+ *  **Overview:** Install C*
 
- *  **Builds on previous labs**: None
+ *  **Builds on previous labs:** None
 
- *  **Approximate time**: 15 mins
+ *  **Approximate time:** 15 mins
 
- *  **Instructions**: 01-intro / 1.1-install
+ *  **Instructions:** 01-intro / 1.1-install
 
  *  **Lab** 
 
@@ -588,13 +590,13 @@ Notes:
 
  * Use ‘help’ or ‘?’ to get help
 
- * 	cqlsh> help describe;
+ * 	*cqlsh> help describe;*
 
      - Prints options for "describe" command
 
  * Describe
 
- * cqlsh> Describe cluster;prints cluster status
+ * *cqlsh> Describe cluster;* </br> prints cluster status
 
  * Learn to use TAB completion
 
@@ -612,13 +614,13 @@ Notes:
 ## Lab: CQLSH
 
 
- *  **Overview**: Interact With Cassandra
+ *  **Overview:** Interact With Cassandra
 
- *  **Builds on previous labs**: None
+ *  **Builds on previous labs:** None
 
- *  **Approximate time**: 15 mins
+ *  **Approximate time:** 15 mins
 
- *  **Instructions**: 
+ *  **Instructions:** 
 
      - 01-intro  / 1.2-cqlsh.md
 
@@ -634,15 +636,17 @@ Notes:
 ## Lab: Answers
 
 
-     - To see cluster detailscqlsh>  describe cluster;
+ * To see cluster details
+
+     - *cqlsh>  describe cluster;*
 
  * To view keyspaces
 
-     - cqlsh>  describe keyspaces;
+     - *cqlsh>  describe keyspaces;*
 
  * To view system keyspace
 
-     - cqlsh>  describe keyspace system;
+     - *cqlsh>  describe keyspace system;*
 
  *  **Lab** 
 
@@ -691,7 +695,7 @@ Notes:
 <img src="../../assets/images/cassandra/Cassandra-Intro-How-is-Data-Distributed-13.png"  style="width:40%;float:right;"/>
 
 
- * C* uses hashing to distribute data
+ * C* uses **hashing** to distribute data
 
      - Fast
 
@@ -701,9 +705,9 @@ Notes:
 
  * Hash algorithm: Murmur3
 
- * Partition Key is hashed using a partitioner to generate a token
+ * **Partition Key** is hashed using a partitioner to generate a **token**
 
- * Token determines which node owns that partition
+ * Token determines which **node owns** that partition
 
 Notes: 
 
@@ -726,7 +730,7 @@ Murmur3 is the new default hashing algorithm.  It provides faster hashing & impr
 
      - Hashing can place them on different nodes
 
-     - See diagram:‘row2’ and ‘row3’ are on different nodes 
+     - See diagram: ‘row2’ and ‘row3’ are on different nodes 
 
 
 Notes: 
@@ -935,7 +939,7 @@ Notes:
 ## Consistency in C*
 
 
- * C* offers tunable consistency
+ * C* offers **tunable consistency**
 
  * Extension of Eventual Consistency
 
@@ -957,7 +961,7 @@ Notes:
 
  * If the node is not responsible for the data (row), it will forward the request to other nodes
 
-     - -> coordinator node
+     - => coordinator node
 
  * Client can choose to wait for 
 
@@ -1172,10 +1176,15 @@ Values are read from all replicas.
 
  * Specifies how many replicas need to respond to a read
 
+</br>
+
+
 | Level  | Description                                  | Usage                                                      |
 |--------|----------------------------------------------|------------------------------------------------------------|
 | ALL    | All replicas must respond, if not read fails | Highest consistency </br>Lowest availability               |
 | QUORUM | Returns after a quorum of replicas respond   | Strong consistency </br>Some level of failure is tolerated |
+
+</br>
 
  * Full list: See documentation
 
@@ -1288,7 +1297,7 @@ Notes:
 
      - X = 10,  timestamp = 110
 
- * Value with latest timestamp is chosen (X = 10)
+ * Value with **latest timestamp** is chosen (X = 10)
 
  * (Remember to time-synchronize Cassandra nodes!)
 
@@ -1330,7 +1339,7 @@ Notes:
 ## Uses of Tunable Consistency...
 
 
- * C* allows the application to specify consistency for each request
+ * C* allows the application to specify consistency **for each request**
 
      - This allows great flexibility in building applications
 
@@ -1340,15 +1349,15 @@ Notes:
 
      - We want the change to take effect in all data centers
 
-     - -> Consistency level = EACH_QUORUM / LOCAL_QUORUM
+     - => Consistency level = EACH_QUORUM / LOCAL_QUORUM
 
  * Case 2) Incoming data speed increased (spike in usage...)
 
-     - See next slide  ->
+     - See next slide  =>
 
      - Need to speed up ingest process
 
-     - Lower consistency level temporarily from  QUOROM -> ANY
+     - Lower consistency level temporarily from  QUOROM => ANY
 
      - When traffic subsides, go back to QUORUM
 
@@ -1400,7 +1409,7 @@ Notes:
 
  * And replay it when node3 comes back up
 
- * This is called hinted handoff
+ * This is called **hinted handoff**
 
 Notes: 
 

@@ -116,9 +116,9 @@ Notes:
 
      - Usually one
 
- * , in turn, contains tables
+ * Keyspace, in turn, contains tables
 
- *  attributes
+ * Keyspace attributes
 
      - Replication factor: How many times the data has to be copied
 
@@ -134,10 +134,6 @@ Notes:
 ## Creating Keyspaces
 
 
- * Specify replication properties
-
- * See documentation: http://cassandra.apache.org/doc/latest/cql/ddl.html#create-keyspace
-
 ```text
 CREATE KEYSPACE <name>
 WITH replication = {
@@ -146,6 +142,11 @@ WITH replication = {
 }
 
 ```
+ * Specify replication properties
+
+ * See documentation: http://cassandra.apache.org/doc/latest/cql/ddl.html#create-keyspace
+
+
 
 Notes: 
 
@@ -166,9 +167,7 @@ WITH replication = {
 ```
 <img src="../../assets/images/cassandra/replication.png"  style="width:40%;float:right;"/>
 
- * ‘SimpleStrategy’ is fine for evaluation purposes.
-
- * (A single data center)
+ * ‘SimpleStrategy’ is fine for evaluation purposes. (A single data center)
 
 Notes: 
 
@@ -202,9 +201,7 @@ Notes:
 ## Keyspace Modification
 
 
- * ALTER KEYSPACE <name> WITH <properties>;
-
- * <properties> is same as the CREATE KEYSPACE <properties>
+ * *ALTER KEYSPACE <name> WITH < properties >;* </br> < properties > is same as the CREATE KEYSPACE < properties >
 
 ```text
 -- changing replication
@@ -222,9 +219,6 @@ Notes:
 
 ## Drop Keyspace
 
-
- * Irreversible removal of the keyspace with all data in it deleted permanently!
-
 ```text
 DROP KEYSPACE <name>;
 
@@ -233,6 +227,10 @@ DROP KEYSPACE <name>;
 DROP KEYSPACE IF EXISTS <name>;
 
 ```
+
+ * Irreversible removal of the keyspace with all data in it deleted permanently!
+
+
 <img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-Drop-Keyspace-3.png"  style="width:20%;float:right;"/>
 
 
@@ -246,17 +244,19 @@ Notes:
 ## Using Keyspace
 
 
- * USE KEYSPACE <name>;
-
- * Sets the namespace for subsequence commands
-
- * Note : This is set per-session and can be changed with another USE KEYSPACE command
-
 ```text
 use myflix;
 create table .. (…); // this table is created in myflix keyspace
 
 ```
+
+ * USE KEYSPACE < name >;
+
+ * Sets the namespace for subsequence commands
+
+ * Note : This is set per-session and can be changed with another USE KEYSPACE command
+
+
 
 Notes: 
 
@@ -291,9 +291,9 @@ Notes:
 
  * Table is distributed as **partitions** across nodes
 
- * **Partition Key** is hashed using a partitioner to generate a token
+ * **Partition Key** is hashed using a partitioner to generate a **token**
 
- * Token determines which node owns that partition
+ * Token determines which **node owns** that partition
 
 
 
@@ -319,13 +319,11 @@ Notes:
 ## Create Table – Simple Primary Key
 
 
-```text
-CREATE TABLE <table name> (
-  <column name> <data type> <options>,  …  <column_name> <data_type> <options>
+* *CREATE TABLE <table name> (
+  </br> < column name> <data type > < options >, </br>  …  < column_name > < data_typ e> < options >
+  </br>PRIMARY KEY (???)
+</br>);*
 
-  PRIMARY KEY (???));
-
-```
 
 ```text
 -- example
@@ -337,7 +335,6 @@ CREATE TABLE users(    user_id text,    email text,
 
  * Each table must have a primary key
 
-Notes: 
 
 Note: Column Families was the original name for "tables" but please use Table for CQL3 and onwards.
 Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
@@ -352,7 +349,7 @@ Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
 
 
 
-Note : Column Families was the original name for "tables" but please use Table for CQL3 and onwards.
+Note: Column Families was the original name for "tables" but please use Table for CQL3 and onwards.
 Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
 
 
@@ -412,7 +409,10 @@ Source: https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cql_data_types_c.
 | Referential Integrity                        | YES                                           | NO                                                   |
 | Mandatory columns (Non-NULL)                 | YES                                           | NO                                                   |
 
- * Class discussion: Why C* does  **NOT**  do AUTO SEQUENCE key?
+</br>
+
+ * Class discussion: 
+</br> Why C* does  **NOT**  do AUTO SEQUENCE key?
 
 Notes: 
 
@@ -461,12 +461,16 @@ Notes:
 
  * Lets create a “features” table with the following attributes:
 
+</br>
+
+
 | Attribute    | Type   | Example                                  |
 |--------------|--------|------------------------------------------|
 | Name         | String | “Star Wars”  </br>“Mad Men”              |
 | Type         | String | “Movie”  </br> “TV Show”  </br>“Standup” |
 | Release_date | Data   | 2016-01-01                               |
 
+</br>
 
  *  **What is our primary key? How do we generate one?**
 
@@ -483,16 +487,20 @@ Notes:
 
  * Let’s add a unique key called ‘code.’We will assign this for each movie.IMDB examples:
 
+     - “Star Wars: Force Awakens”http://www.imdb.com/title/tt2488496/
+
+     - “Mad Men”http://www.imdb.com/title/tt0804503/
+
+</br>
+
 | Attribute    | Type   | Example                                  |
 |--------------|--------|------------------------------------------|
-| Code         | String | “star1”   </br> “madmen”                 |
+| **Code**         | **String** | **“star1”   </br> “madmen”**                |
 | Name         | String | “Star Wars”  </br>“Mad Men”              |
 | Type         | String | “Movie”  </br> “TV Show”  </br>“Standup” |
 | Release_date | Data   | 2016-01-01                               |
 
-     - “Star Wars: Force Awakens”http://www.imdb.com/title/ **tt2488496** /
 
-     - “Mad Men”http://www.imdb.com/title/ **tt0804503** /
 
 Notes: 
 
@@ -503,6 +511,11 @@ Notes:
 
 ## Myflix ‘Features’ Table
 
+```text
+create table features (    code text,    name text,    release_date timestamp,     type text,
+    PRIMARY KEY (code) );
+
+```
 
  * We are using ‘text’ type to represent strings
 
@@ -512,11 +525,7 @@ Notes:
 
      - Timestamp is Unix timestamp since ‘epoch’
 
-```text
-create table features (    code text,    name text,    release_date timestamp,     type text,
-    PRIMARY KEY (code) );
 
-```
 
 Notes: 
 
@@ -537,9 +546,9 @@ VALUES (‘star1’, ‘Star Wars Episode 1’, ‘Movie’ , ‘1999-01-01’);
 
 ```
 
- * Syntax: INSERT INTO <table name> (column names)VALUES (column values)
+ * Syntax: **INSERT INTO** < table name > (column names)VALUES (column values)
 
- * Wrap string values in single quotes (example : ‘mad men’)
+ * Wrap string values in **single quotes** (example : ‘mad men’)
 
  * Timestamp can be entered in format: ‘yyyy-mm-dd HH:mm:ssZ’
 
@@ -553,7 +562,7 @@ Notes:
 ## Lab: CQL
 
 
- *  **Overview**:
+ *  **Overview:**
 
      - Create ‘features’ table using CQL
 
@@ -561,11 +570,11 @@ Notes:
 
      - Query data
 
- *  **Builds on previous labs**: None
+ *  **Builds on previous labs:** None
 
- *  **Approximate time**: 1 hour
+ *  **Approximate time:** 1 hour
 
- *  **Instructions**:  **02-cql /**  **README.md** 
+ *  **Instructions:**  **02-cql /**  **README.md** 
 
  *  **Lab** 
 
@@ -579,15 +588,15 @@ Notes:
 ## Lab 4.1: Composite Keys
 
 
- *  **Overview**: 
+ *  **Overview:** 
 
      - Create and use primary keys with partition keys and clustering columns
 
- *  **Builds on previous labs**: None
+ *  **Builds on previous labs:** None
 
- *  **Approximate Time**: 15 mins
+ *  **Approximate Time:** 15 mins
 
- *  **Instructions**:  **04-composite-keys /**  **README.md** 
+ *  **Instructions:**  **04-composite-keys /**  **README.md** 
 
  *  **Lab** 
 
@@ -607,12 +616,11 @@ Notes:
 
  * After that, the value “disappears”
 
- * INSERT INTO <table name> (column names)VALUES (column values) USING TTL <# seconds>;
+ * INSERT INTO < table name > (column names)VALUES (column values) USING TTL <# seconds>;
 
  * TTL applications
 
      - Purging archival data (only keep six months of data, etc.)
-
      - Purge sensitive data (temporary passwords that expire)
 
 Notes: 
@@ -656,17 +664,27 @@ Notes:
 ## Quiz: What Happens Below?
 
 
+```text
+
+INSERT INTO features (code, name, type, release_date)
+
+VALUES (’star1', ‘Star Wars : Episode 4', ’Movie', ’1977-01-01');
+
+```
+```text
+
+INSERT INTO features (code, name, type, release_date)
+
+VALUES (’star1', ‘Star Wars : Episode 1', ’Movie', ’1999-01-01');
+
+```
+
+
  * What will be the value of row ‘star1’?
 
  * How can we prevent the race condition?
 
- * INSERT INTO features (code, name, type, release_date)
 
- * VALUES (’ **star1** ', ‘Star Wars : Episode 4', ’Movie', ’1977-01-01');
-
- * INSERT INTO features (code, name, type, release_date)
-
- * VALUES (’ **star1** ', ‘Star Wars : Episode 1', ’Movie', ’1999-01-01');
 
 Notes: 
 
@@ -677,10 +695,11 @@ Notes:
 
 ## INSERT IF NOT Exists
 
+   
 
- * INSERT INTO <table name> (column names)
+ * *INSERT INTO <table name> (column names)
+   </br>VALUES (column values) IF NOT EXISTS;*
 
- * VALUES (column values) IF NOT EXISTS;
 
  * Only inserts if the row with the primary key given does not exist. 
 
@@ -689,6 +708,7 @@ Notes:
  * More on this later
 
 ```text
+
 -- first insert succeeds
 INSERT INTO features (code, name, type, release_date)
 VALUES (’star1', ‘Star Wars : Episode 4', ’Movie', ’1977-01-01’)
@@ -699,8 +719,8 @@ INSERT INTO features (code, name, type, release_date)
 VALUES (’star1', ‘Star Wars : Episode 1', ’Movie', ’1999-01-01’)
 IF NOT EXISTS;
 
-
 ```
+
 
 Notes: 
 
@@ -826,17 +846,15 @@ Notes:
 ## UPDATE
 
 
- * UPDATE <table name> 
-
- * SET column_name=value, ...
-
- * WHERE <primary key condition>;
+ * *UPDATE < table name > 
+ </br>SET column_name=value, ...
+ </br>WHERE < primary key condition >;*
 
  * Where clause is used to select rows to update.
 
  * If a row with the given primary key does not exist, it will be inserted!
 
- * UPSERT !
+ * UPSERT!
 
 ```text
 UPDATE features
@@ -887,6 +905,15 @@ Notes:
 | Star1     | Star Wars 1 | Movie | Lucas  |
 | Madmen    | Mad Men     | TV    | AMC    |
 
+</br>
+
+
+| Query                                                                  | RDBMS | C* |
+|------------------------------------------------------------------------|-------|----|
+| Update features set studio = ‘HBO’  </br> where code = ‘sopr’;         | ?     | ?  |
+| Insert into features (code, name)     </br>VALUES(‘star1’,‘star trek’) | ?     | ?  |
+
+
 Notes: 
 
 
@@ -901,9 +928,9 @@ Notes:
 
  * DELETE can be used to delete columns from rows or to delete entire rows.
 
- * DELETE <column names> FROM <table name>WHERE <where clause>;
+ * *DELETE < column names  > FROM < table name > </br> WHERE < where clause >;*
 
- * If <column names> are missing then DELETE will delete entire rows.
+ * If < column names > are missing then DELETE will delete entire rows.
 
  * DELETE needs a WHERE clause.
 
@@ -1024,7 +1051,7 @@ Notes:
 
      - Coming soon
 
- * Indexes can greatly affect performance
+ * Indexes can **greatly affect performance**
 
      - Beware!
 
@@ -1059,6 +1086,11 @@ Notes:
 
 ## Indexing Best Practices
 
+```text
+create table people (
+  ssn  text  PRIMARY KEY ,	name text,	phone text,	state text,	gender text,	);
+
+```
 
  * Do not index high-cardinality columns
 
@@ -1074,11 +1106,7 @@ Notes:
 
      - No: VERY LOW cardinality (just two values, male/female)…(not efficient)
 
-```text
-create table people (
-  ssn  text  PRIMARY KEY ,	name text,	phone text,	state text,	gender text,	);
 
-```
 
 Notes: 
 
@@ -1112,11 +1140,11 @@ Notes:
 
      - Create and use secondary index in C*
 
- *  **Builds on previous labs**: 02-cql
+ *  **Builds on previous labs:** 02-cql
 
- *  **Approximate time**: 10 mins
+ *  **Approximate time:** 10 mins
 
- *  **Instructions**:  **02-cql /**  **index.md** 
+ *  **Instructions:**  **02-cql /**  **index.md** 
 
  *  **Lab** 
 

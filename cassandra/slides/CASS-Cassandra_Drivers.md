@@ -96,7 +96,7 @@ Notes:
 
  * Asynchronous queries
 
- * Current version : 3.x
+ * Current version: 3.x
 
 Notes: 
 
@@ -130,7 +130,13 @@ Sessions
 
 ## Executing a Query
 
+```text
+cluster = Cluster.builder().addContactPoint("localhost”).build();
+Session session = cluster.connect("myflix");
+String cql = “insert into users(id, name) values (‘user1’,  ‘Joe’)”;
+session.execute(cql);
 
+```
  * Just like SQL!
 
  * String values must be included in single quotes (‘hello’)
@@ -139,13 +145,7 @@ Sessions
 
  * Set values are enclosed in curly braces {}
 
-```text
-cluster = Cluster.builder().addContactPoint("localhost”).build();
-Session session = cluster.connect("myflix");
-String cql = “insert into users(id, name) values (‘user1’,  ‘Joe’)”;
-session.execute(cql);
 
-```
 
 Notes: 
 
@@ -255,9 +255,9 @@ Notes:
 ## Java Driver Documentation
 
 
- * Java driver docs :https://docs.datastax.com/en/developer/java-driver/3.3/
+ * Java driver docs: </br> https://docs.datastax.com/en/developer/java-driver/3.3/
 
- * Java API docs :https://docs.datastax.com/en/drivers/java/3.3/
+ * Java API docs: </br> https://docs.datastax.com/en/drivers/java/3.3/
 
 Notes: 
 
@@ -268,21 +268,21 @@ Notes:
 ## Lab 09 : Java Driver
 
 
- *  **Overview** : 
+ *  **Overview:** 
 
      - Use native Java driver to connect / insert / query data
 
- *  **Builds on previous labs** : 
+ *  **Builds on previous labs:**
 
      - None
 
- *  **Approximate Time** : 1 hr
+ *  **Approximate Time:** 1 hr
 
- *  **Instructions** :09-java-driver / README.md 
+ *  **Instructions:** 09-java-driver / README.md 
 
  *  **Bonus Lab:** 
 
-     - Benchmarking : how much time it takes to insert 100k users?
+     - Benchmarking: how much time it takes to insert 100k users?
 
      - Can the insert be faster?  (hint : Batch)
 
@@ -305,7 +305,7 @@ Notes:
 
  * Spring is a popular Java based framework (http://spring.io/ )
 
- * MVC concept : Model / View / Controller
+ * MVC concept: Model / View / Controller
 
  * Provides ORM – Object Relational Mapping 
 
@@ -380,17 +380,17 @@ Provided by datastax
 ## Lab 14 : Spring Cassandra
 
 
- *  **Overview** : 
+ *  **Overview:**
 
      - Use Spring drivers to connect to C*
 
- *  **Builds on previous labs** : 
+ *  **Builds on previous labs:**
 
      - None
 
  *  **Approximate Time** : 20 mins
 
- *  **Instructions** :15-spring / README.md 
+ *  **Instructions: **15-spring / README.md 
 
  *  **Lab** 
 
