@@ -173,6 +173,13 @@ Notes:
 
 ---
 
+## Lab: Consul install
+
+* Please do lab 'lab31'
+* [https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab31](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab31)
+
+---
+
 # Microservices
 
 ## Microservices - insert the microservices slides here
