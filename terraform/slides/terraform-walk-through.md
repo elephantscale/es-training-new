@@ -233,8 +233,8 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ## Lab: Terraform Hello World
 
 * Please do this lab
-* `terraform-up-and-running-code/labs/lab01-1.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md)
+* lab01-1.md
+* github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-1.md
 
 ---
 ## Next Step
@@ -263,8 +263,8 @@ resource "aws_instance" "example" {
 ## Lab: Terraform Hello World - 2
 
 * Please do this lab
-* `terraform-up-and-running-code/labs/lab01-2.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-2.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab01-2.md)
+* lab01-2.md
+* 
 
 ---
 
@@ -305,8 +305,8 @@ nohup busybox httpd -f -p 8080 &
 ## Lab: Web server
 
 * Please do this lab
-* `terraform-up-and-running-code/labs/lab02-1.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-1.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-1.md)
+* lab02-1.md
+* https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-1.md
 
 ---
 
@@ -414,8 +414,8 @@ Hello, World
 ## Lab: Server Deployment
 
 * Please do this lab:
-* `terraform-up-and-running-code/labs/lab02-2.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md)
+* lab02-2.md
+* https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md
 
 ---
 
@@ -480,8 +480,8 @@ Notes:
 ## Lab: Server Deployment
 
 * Please do this lab:
-* `code/terraform/01-why-terraform/web-server/step1/`
-* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step1)
+* step1
+* https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step1
 * In this lab, we practice server deployment
 ---
 
@@ -632,8 +632,8 @@ Notes:
 
 ## Lab with variables
 * Go back to this lab:
-* `terraform-up-and-running-code/labs/lab02-2.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md)
+* lab02-2.md
+* https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-2.md
 * Experiment with providing the variables 
     * default
     * var=
@@ -754,8 +754,8 @@ output "public_ip" {
 ## Lab: Configure Server Port
 
 * Please do this lab
-* `code/terraform/01-why-terraform/web-server/step2`
-* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step2)
+* web-server/step2
+* https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step2
 * In this lab, we practice setting up Terraform variables
 ---
 
@@ -977,8 +977,8 @@ resource "aws_autoscaling_group" "example" {
 
 ## Lab: Creating a load balancer
 * Please do the following lab
-* `terraform-up-and-running-code/labs/lab02-3-prep.md`
-* [https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-3-prep.md](https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-3-prep.md)
+* lab02-3-prep.md
+* https://github.com/elephantscale/terraform-up-and-running-code/blob/master/labs/lab02-3-prep.md
 
 ---
 ## Load Balancer Types
@@ -1163,7 +1163,7 @@ output "alb_dns_name" {
 ## Lab: Deploy a Cluster with Load Balancer
 
 * Please do this lab
-* `code/terraform/01-why-terraform/web-server/step3`
-* [Here](https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step3)
+* web-server/step3
+* https://github.com/elephantscale/terraform-up-and-running-code/tree/master/code/terraform/01-why-terraform/web-server/step3
 * In this lab, we practice setting up a complete Terraform architecture
 ---
