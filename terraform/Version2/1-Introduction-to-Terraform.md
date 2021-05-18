@@ -261,4 +261,21 @@ Image Source: https://aws.amazon.com/blogs/developer/working-with-aws-cloudforma
 Notes:
 
 Source: The book
----                                       
+---     
+
+## Lab Work
+
+* In Lab01-01 you will configure and test your terraform set-up
+* The steps in the lab are:
+  - Confirm or set up your AWS account ID for the course
+  - Install the AWS command line interface
+  - Install your AWS developer credentials on your local machine
+  - Install the terraform executable
+  - Write and run the "Hello World" example code
+  
+Notes:
+
+I have moved the material about setting up the environment to a lab so that we can configure the setup as needed for different course sessions
+
+---
+
