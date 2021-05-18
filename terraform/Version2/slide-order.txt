@@ -1,5 +1,5 @@
 About_Terraform_Class.md
-terraform-intro.md
+1-Introduction-to-Terraform.md
 terraform-walk-through.md
 managing-terraform-state.md
 terraform-language-elements.md
