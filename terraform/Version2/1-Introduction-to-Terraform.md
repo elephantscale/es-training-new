@@ -275,7 +275,7 @@ Source: The book
   
 Notes:
 
-I have moved the material about setting up the environment to a lab so that we can configure the setup as needed for different course sessions
+I have moved the material about setting up the environment into another slide deck that we can configure the setup as needed for different course sessions
 
 ---
 
