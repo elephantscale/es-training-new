@@ -319,5 +319,22 @@ Modifying the output to use string interpolation is demo 3
 
 ---
 
+## Reading Files
+
+* Local variables _must_ be initialized when defined
+  - We cannot set their value with a `terraform.tfvars` entry
+* The alternative to hardcoding a local variable is to read its value from a file
+  - This is generally done when the variable is used to provide some metadata like the ID of the person running the code
+  - Or when the variable contains text like a start-up script
+* We use the `file` command to read in the contents of a text file
+
+![](../artwork/FileInput.png)
+
+![](../artwork/FileInput2.png)
+
+--
+
+
+
 
   
