@@ -93,6 +93,14 @@ Notes:
 
 ---
 
+## Training Can Take a While
+
+<img src="../../assets/images/deep-learning/3rd-party/xkcd-training.png" alt="AI-Vocabulary.png" style="width:50%;"/><!-- {"left" : 1.52, "top" : 5.81, "height" : 2.39, "width" : 7.19} -->
+
+* [Original xkcd comic](https://xkcd.com/303/)
+
+---
+
 ## Data Size Vs. Model Size
 
 - An algorithm can train on small / large / huge amount of data (depending on problem complexity)
