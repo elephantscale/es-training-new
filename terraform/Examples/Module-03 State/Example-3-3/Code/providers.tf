@@ -1,6 +1,4 @@
 
-# Example 02-01 - Configuration
-
 terraform {
     required_providers {
         aws = {
@@ -10,6 +8,8 @@ terraform {
     }
     # Required version of terraform
     required_version = ">0.14"
+
+ 
 }
 
 provider aws {

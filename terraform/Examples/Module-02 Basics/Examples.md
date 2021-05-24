@@ -1,6 +1,6 @@
 # Examples Notes
 
-These notes document how I work with the examples in the terrafor class.
+These notes document how I work with the examples in the terraform class.
 
 ## Module 2
 
