@@ -1,103 +1,128 @@
-# Secure coding
-* (Or how NOT to be the next SolarWinds)
+# Secure Coding
 
-© Elephant Scale
-February 18, 2021
+(C) Copyright Elephant Scale
 
-* Today, hackers have achieved tremendous successes while the software developers are just beginning to learn about secure coding. This course is for developers who want to defend against hackers.
-* SolarWinds was the largest hack of the century: a thousand Russian hackers would work daily work on it for almost a year, spying on
-tens of thousands of the US enterprises and government agencies, through the software distributed by SolarWinds.
-* This course is build to help your company avoid a similar disaster. Presented as a series of red team - blue team exercises,
-it leads developers to interchangeably play the attack and defense roles, exposing to both sides of the cybersecurity domain 
-and raising the overall level of defense for your company.
-* The course is intended for software architects and engineers. It gives them a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student’s participation. 
+May 26, 2021
 
-##  Course objectives
-* Understand what security is
-* Add basic, programmatic security to your code
-* Understand how to defend against an attack
-* Understand how to secure resources
+## Overview
+This course will teach secure coding practices
+
+## Audience
+Developers, team leads, project managers
+
+## Skill Level
+Introductory - Intermediate
 
 ## Duration
-* 3 days
-## Audience
-* Software Architects, Developers, Managers
+Three days
+
+## Format
+Lectures and hands on labs. (50% - 50%)
+
 ## Prerequisites
-* Familiarity with any programming language 
-* However, Java is preferred, since many labs are in Java
-* Be able to navigate the Linux command line
-* Basic knowledge of command-line Linux editors (VI / nano)
+* Recommended: Cybersecurity awareness
+* Comfortable developing code in the target environment
 
-## Lab environment:
-* A working environment will be provided for students.  Students would only need an SSH client and a browser.
-* Zero Install: There is no need to install software on students' machines.
-* A complete checklist is provided
 
-## Course Outline
+## Lab environment
+* Zero Install: There is no need to install software on students' machines!
+* A lab environment in the cloud will be provided for students.
 
-* Fundamentals
-    * Why and what?
-    * Characteristics of application security
-    * Basic security mechanisms
-* Basic Security within Java SE 8+
-    * Mutability of objects
-    * Variable, method, class, and package scopes
-    * Thread safety
-    * Exception handling
-    * Input validation
-* Basic Security at the EE level
-    * Role-based authentication
-    * Specifying Security Constraints
-    * Programmatic security
-    * Declarative security
-* Programming Against an Attack
-    * Denial of Service (DoS)
-    * SQL Injection
-    * Large files
-    * XML and HTML issues
-    * LDAP injection
-    * XPath injection
-    * Password storage
-* Defensive Programming
-    * Error handling in the Java EE space
-    * Type annotation syntax and the Checker Framework
-    * Application-layer security
-    * Transport-layer security
-    * Message-layer security
-    * Secure connection using SSL
+### Students will need the following
+* A reasonably modern laptop with unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly.
+    * A checklist to verify connectivity will be provided
+* Chrome browser
 
-* Java Security
-    * REST endpoint security
-        * oauth2 token-based authentication and authorization
-        * oauth2 server setup
-        * embedded token server, token lifecycle, and management
-        * REST security best practices:
-        * Authorization
-        * Input validation
-        * Output encoding
-        * Cryptography
-        *HTTP status codes
-    * Developing securing Java applications
-        * Safe coding and design patterns
-        * How to find vulnerable code while doing a code review
-        * The most common pitfalls
-* JavaScript security
-    * How to manage secure PII data on the end client apps (mobile app, browser, tablet)
-    * Versions: OAuth2, Angular4
-    * Cross-site scripting (XSS)
-    * Cross-site request forgery (CSRF)
-    * Common JavaScript vulnerabilities
-    * JavaScript security analyzers
+## Detailed outline
 
-* Securing Resources
-    * Authentication mechanisms
-    * Using Form-Based Login
-    * Digital certificates
-    * Using JDBC Realm
-    * Securing HTTP resources
-    * Securing Application clients
+### Threat modeling
+* STRIDE attack classification
+* Security terminology
+* Threat modeling
+* CVSS attack assessment
+* Labs on threat modeling
 
-* Security in the Cloud
-    * Principles of security in a public cloud
-    * AWS security best practices
-    * Labs
+### Common attacks
+* Cross site scripting
+* Malicious file execution
+* Session hijacking
+* Encryption
+* Unsecured direct object reference
+* Failure to authorize/hidden URLs
+
+### Secure design
+
+* Layered design concepts
+* Object layer
+* Persistence layer
+* Presentation layer
+
+### Countermeasures
+
+* Validation
+* Validation controls
+* Strong typing
+* Regular expressions
+* White list
+* Scrubbing
+* Black list
+* Encoding
+* CAPTCHA
+* Honey pots
+* Avoiding SQL injection
+* Parametrizing queries/Prepared statements
+* Stored procedures
+* Entity Frameworks/Hibernate
+* Avoiding cross site request forgeries
+
+### Modern security frameworks
+* Introduction to modern frameworks
+  * Vault
+  * Consul
+  * Anthos
+* Modern security design patterns
+  * Dynamic secrets
+  * Automatic credential rotation
+  * Cubbyhole response wrapping
+  * Encryption as a service
+* Where to go from here
+
+### Authorization and Authentication
+* .NET authentication
+* Basic & Digest
+* Forms
+* Windows authentication
+* JAAS and other Java authentication services
+* Authorization
+* Password security
+* Brute force attacks
+* Password resets
+* Secret questions/answers
+* SSL/TLS
+
+### Session security
+* Session IDs
+* Policies
+* Hijacking/Fixation Attacks
+
+### Framework architecture
+* Threading
+* Privileges
+* Audits/Logs
+* Secure coding
+* Encryption services
+* Static code analysis
+
+### Securing the runtime environment
+* .NET
+* Code Access
+* GAC
+* Strong named assemblies
+* CLR
+* Security Zones
+* Permissions
+* Security policy
+  
+### Security future
+* Zero-trust networks
+* Artificial intelligence
