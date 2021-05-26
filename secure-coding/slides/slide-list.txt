@@ -1,0 +1,9 @@
+#  $ES_HOME/utils/presentations/slides-assembler.sh secure-coding.txt
+
+About_Secure_Coding_Class.md
+Security_Intro.md
+Java-Security.md
+JavaScript-Security.md
+Defensive-Programming.md
+REST-Endpoint-Security.md
+Angular_oauth.md
