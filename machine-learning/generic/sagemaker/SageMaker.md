@@ -52,7 +52,7 @@
 
   * Optional bring-your-own algorithm
 
-  * Billing: by minutes
+  * Billing: by the seconds
 
 ---
 
