@@ -197,7 +197,7 @@ Notes:
 
   * Basic questions
     - Is there a pattern?
-    - Are there lot of outliers?  (May skew analysis. Should we keep these or throw them away?)
+    - Are there a lot of outliers?  (May skew analysis. Should we keep these or throw them away?)
 
   * **Visualizations** can help greatly!
     - Just do some quick & dirty graphs.

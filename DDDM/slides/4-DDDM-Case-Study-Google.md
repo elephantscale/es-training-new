@@ -92,7 +92,7 @@ According to the findings, a high-scoring manager displayed the following eight 
 
 ---
 
-## Another Key Strategic Priortiy: The Earth
+## Another Key Strategic Priority: The Earth
  * Google: fully carbon neutral since 2007
  * Datacenters: 2% of global energy usage
  * "How can we reduce energy used to cool datacenters?"

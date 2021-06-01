@@ -11,7 +11,7 @@
  * Many individuals decide to make decisions based on intuition, or gut.
  * There's a misconception that for the truly gifted, intuition gives them an edge over ordinary decision makers.
  * It's undoubtedly true that some people make better intuitive decisions than others.
- * But, human nature is such that even the most gifted intuitive thinkers will be subject to biases that afflict human nature.
+ * Human nature is such that even the most gifted intuitive thinkers will be subject to bias that afflict human nature.
 
 ---
 
@@ -98,9 +98,9 @@
  * There are many financial and economic tools to assess "the time value of money":
    - to determine whether the annuity or the payout are more valuable.
    - Financial products such as lines of credit could be issued against future winnings to help participants manage cash flow.
- * However people often make emotional decisions:
+ * However, people often make emotional decisions:
    - Give me the money now!
-   - I dont' want it all at once; I want it a little at a time.
+   - I don't want it all at once; I want it a little at a time.
 
 ---
 
