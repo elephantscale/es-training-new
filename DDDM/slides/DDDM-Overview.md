@@ -268,13 +268,123 @@ Notes:
 
 ---
 
+## What Is a Risk-Adjusted Return?
+
+* Calculation of the profit or potential profit from an investment that takes into account the degree of risk that must be accepted in order to achieve it.  
+
+* a number or a rating
+
+Notes:
+
+* A risk-adjusted return is a calculation of the profit or potential profit from an investment that takes into account the degree of risk that must be accepted in order to achieve it. The risk is measured in comparison to that of a virtually risk-free investment—usually U.S. Treasuries.
+
+* Depending on the method used, the risk calculation is expressed as a number or a rating. Risk-adjusted returns are applied to individual stocks, investment funds, and entire portfolios.
+
+---
+
+## Gist
+
+* Takes into account the degree of risk 
+* Methods: Sharpe ratio and Treynor ratio
+* Help investors (or project manager) determine whether the risk taken it worth it
+
+Notes:
+
+* A risk-adjusted return measures an investment's return after taking into account the degree of risk that was taken to achieve it.
+* There are several methods of risk-adjusting performance, such as the Sharpe ratio and Treynor ratio, with each yielding a slightly different result.
+* In any case, the purpose of risk-adjusted return is to help investors determine whether the risk taken was worth the expected reward.
+
+---
+
+## To Risk-Adjust or Not to Risk-Adjust? Yes
+
+* In the United States, the National Quality Forum (NQF) is considering when and how to use risk adjustment for sociodemographic factors to assess quality of care
+* Risk adjustment is a statistical method that allows for comparison of outcomes when patient populations differ.
+
+* http://www.ihi.org/communities/blogs/_layouts/15/ihi/community/blog/itemview.aspx?List=7d1126ec-8f63-4a3b-9926-c44ea3036813&ID=81
+
+* Conclusion:
+  * By tying payment to these poorer health outcomes, these organizations may not get the resources needed to continue to care for their high-risk populations.
+  * It seems fair, just, and reasonable to account for sociodemographic factors
+  
+## Activity 3
+
+* Calculate Sharpe ration
+* https://miniwebtool.com/sharpe-ratio-calculator/
+* Use your project
+* Justify your numbers
+
+---
+
 # Presentation of Benchmarking Data
+
+---
+
+## What is benchmarking?
+
+* A powerful tool many organizations use 
+  * to measure and gauge their performance against competition,
+  * to push themselves to be best-in-class.
+  
+Notes:
+
+* Benchmarking is the process of comparing one’s business processes and performance metrics to industry bests and best practices from other companies. Dimensions typically measured are quality, time and cost. In the process of best practice benchmarking, management identifies the best firms in their industry, or in another industry where similar processes exist, and compares the results and processes of those studied (the “targets”) to one’s own results and processes. In this way, they learn how well the targets perform and, more importantly, the business processes that explain why these firms are successful.
+
+* Also referred to as “best practice benchmarking” or “process benchmarking”, this process is used in management and particularly strategic management, in which organizations evaluate various aspects of their processes in relation to best practice companies’ processes, usually within a peer group defined for the purposes of comparison. This then allows organizations to develop plans on how to make improvements or adapt specific best practices, usually with the aim of increasing some aspect of performance. Benchmarking may be a one-off event, but is often treated as a continuous process in which organizations continually seek to improve their practices.
+
+---
+
+## Benchmarking Categories
+1. Internal Benchmarking
+
+2. Competitive Benchmarking
+
+3. Functional Benchmarking
+
+4. Generic Benchmarking
+
+5. Collaborative Benchmarking
+
+
+Notes:
+
+* Internal Benchmarking
+
+* This compares one particular operation within our organization with another. Internal benchmarking is by far the easiest—both to research and to implement. Productivity improvement achieved in this type is usually about 10%.
+
+* Competitive Benchmarking
+
+* This compares our operation with that of our direct competitors. This is the most difficult type of benchmarking to carry out successfully, and legal considerations must always be kept in mind. Productivity improvement achieved is usually about 20%.
+
+* Functional Benchmarking
+
+* The process of comparing an operation with that of similar ones within the broad range of our industry (e.g. copper mining techniques compared with coal mining techniques). Productivity improvement achieved type may be 35% or better.
+
+* Generic Benchmarking
+
+* This compares operations from unrelated industries. The advantage of to this is that the problems of competition do not apply, thereby increasing the access to information and reducing the possibility of legal problems. Productivity improvement achieved may be 35%+.
+
+* Collaborative Benchmarking
+
+* This is carried out collaboratively by groups of companies (e.g. subsidiaries of a multinational in different countries or an industry organization).  Groups of companies agree to share internal benchmarking data with each other.
+
+---
+
+## Approaches to Benchmarking
+
+![](../artwork/dddm-04.png)
+
+---
+
+## Activity 4
+
+* Benchmarking activity
 
 ---
 
 # Intro into anomaly detection
 
-## Simple outliers question
+## Simple outliers questions
 
 * https://www.howtogeek.com/400211/how-and-why-to-use-the-outliers-function-in-excel/
 
@@ -285,6 +395,10 @@ Notes:
 
 * Azure Data Explorer
 * https://docs.microsoft.com/en-us/azure/data-explorer/anomaly-detection
+
+---
+
+# Background materials
 
 ---
 
