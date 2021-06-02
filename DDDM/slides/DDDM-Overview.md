@@ -274,6 +274,13 @@ Notes:
 
 # Intro into anomaly detection
 
+## Simple outliers question
+
+* https://www.howtogeek.com/400211/how-and-why-to-use-the-outliers-function-in-excel/
+
+---
+
+
 ## Anomaly detection demo
 
 * Azure Data Explorer
