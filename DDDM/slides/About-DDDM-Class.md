@@ -1,4 +1,4 @@
-# DDDM
+# DDDM Class
 
 ---
 
