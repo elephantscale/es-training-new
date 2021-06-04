@@ -379,6 +379,10 @@ Notes:
 ## Activity 4
 
 * Benchmarking activity
+* Example: [https://www.lucidchart.com/techblog/2012/11/14/ie10-how-does-it-really-stack-up/](https://www.lucidchart.com/techblog/2012/11/14/ie10-how-does-it-really-stack-up/)
+* Use your favorite project
+* Define your goals
+* Create benchmarks for competing approaches
 
 ---
 
