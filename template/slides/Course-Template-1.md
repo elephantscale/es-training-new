@@ -81,7 +81,7 @@ print('hi')
 // java code
 import org.apache.kafka.clients.producer.KafkaProducer;
 
-KafkaProducer <Integer,String > producer = new KafkaProducer<>(props);
+KafkaProducer <Integer,String> producer = new KafkaProducer<>(props);
 
 System.out.println("hi")
 ```
