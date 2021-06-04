@@ -20,3 +20,9 @@ pandoc ../../course-outlines/spark-3days.md  -o ../spark-3days.pdf
 $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-2-days.txt $@
 
 
+# if generating pdf, combine
+
+if [[ "$*" == *'pdf'* ]] ;  then
+    echo "Generating a combined PDF : assembly.out/pdf/z-combined.pdf  ..."
+    cd assembly.out/pdf && $ES_HOME/utils/reveal-md/pdf-combine.sh  *.pdf
+fi

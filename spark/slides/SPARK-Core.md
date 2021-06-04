@@ -1012,5 +1012,3 @@ Notes:
 * Any questions?
 
 <img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
-
----
