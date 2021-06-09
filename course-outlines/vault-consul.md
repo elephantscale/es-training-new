@@ -1,4 +1,4 @@
-# Hashicorp Vault and Consul
+# Vault and Consul
 
 © Elephant Scale
 
