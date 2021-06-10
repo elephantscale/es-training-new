@@ -1,0 +1,29 @@
+Collections used:
+
+EAVisits (67.4mn docs) - 15.9 GB
+EADevices (1.9mn docs) - 287.7MB
+EALinks (609.0k docs) - 161.8 MB
+EASearchEngines (424.7k docs) - 57.3 MB
+EAReferrers (167.6k docs) - 35.4 MB
+
+Shards and Replicas:
+3 Replicas each collection and 1 shard per collection across 3 linux ec2 containers
+
+Collections overview:
+EA Visits - Per day per news release docs stored with references to other collections and corresponding counts.
+EA Devices - Stores combination of Device info (Devicemodel, IsMobile, Browser, Country, Continent, Operating System)
+EA Links - Links which are clicked from news body
+EA SearchEngines - Search engine referrers used to visit the news article (including crwalers also)
+EAReferrers - Customer and other sites to which the news articles are posted
+
+Advanced Features used:
+Payloads
+Advanced query parsers
+Cross collection joins
+Atomic updates
+Backup and Restore
+Reindexcollection
+Splitshard 
+
+Other configurations:
+3x3 Zookeeper-Solr configuration.
