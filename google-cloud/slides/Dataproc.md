@@ -18,7 +18,7 @@
 
 * Google Cloud Dataproc is a easy to use, fast, low cost, and fully managed service that lets you run Spark and Hadoop on the Google Cloud Platform.  
 
-* Cloud Dataproc clusters have an agent to manage the Cloud Datproc cluster.  
+* Cloud Dataproc clusters have an agent to manage the Cloud Dataproc cluster.  
 
 * Dataproc uses Compute Engine, Cloud Storage, and Cloud Ops tools.  
 
