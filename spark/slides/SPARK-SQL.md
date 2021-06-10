@@ -130,9 +130,9 @@
 
 ```json
 {"name": "John", "age": 35, "gender" : "M", "weight": 200.5 }
-{"name": "Jane", "age": 40, "gender" : "F" , "weight": 150.2}
-{"name": "Mike", "age": 18, "gender" : "M" , "weight": 120}
-{"name": "Sue",  "age": 19, "gender" : "F" , "weight": 100}
+{"name": "Jane", "age": 40, "gender" : "F", "weight": 150.2}
+{"name": "Mike", "age": 18, "gender" : "M", "weight": 120}
+{"name": "Sue",  "age": 19, "gender" : "F", "weight": 100}
 ```
 
 ```scala
@@ -170,9 +170,9 @@ peopleDF.show
 
 ```json
 {"name": "John", "age": 35, "gender" : "M", "weight": 200.5 }
-{"name": "Jane", "age": 40, "gender" : "F" , "weight": 150.2}
-{"name": "Mike", "age": 18, "gender" : "M" , "weight": 120}
-{"name": "Sue",  "age": 19, "gender" : "F" , "weight": 100}
+{"name": "Jane", "age": 40, "gender" : "F", "weight": 150.2}
+{"name": "Mike", "age": 18, "gender" : "M", "weight": 120}
+{"name": "Sue",  "age": 19, "gender" : "F", "weight": 100}
 ```
 
 ```python
@@ -208,9 +208,9 @@ peopleDF.show()
 
 ```json
 {"name": "John", "age": 35, "gender" : "M", "weight": 200.5 }
-{"name": "Jane", "age": 40, "gender" : "F" , "weight": 150.2}
-{"name": "Mike", "age": 18, "gender" : "M" , "weight": 120}
-{"name": "Sue",  "age": 19, "gender" : "F" , "weight": 100}
+{"name": "Jane", "age": 40, "gender" : "F", "weight": 150.2}
+{"name": "Mike", "age": 18, "gender" : "M", "weight": 120}
+{"name": "Sue",  "age": 19, "gender" : "F", "weight": 100}
 ```
 
 ```scala
@@ -246,9 +246,9 @@ df.filter($"age" > 20).show
 
 ```json
 {"name": "John", "age": 35, "gender" : "M", "weight": 200.5 }
-{"name": "Jane", "age": 40, "gender" : "F" , "weight": 150.2}
-{"name": "Mike", "age": 18, "gender" : "M" , "weight": 120}
-{"name": "Sue",  "age": 19, "gender" : "F" , "weight": 100}
+{"name": "Jane", "age": 40, "gender" : "F", "weight": 150.2}
+{"name": "Mike", "age": 18, "gender" : "M", "weight": 120}
+{"name": "Sue",  "age": 19, "gender" : "F", "weight": 100}
 ```
 
 ```python
@@ -256,7 +256,7 @@ df.filter($"age" > 20).show
 
 peopleDF = spark.read.json("people.json")
 
-df.filter(df("name") == "John").show()
+df.filter(df["name"] == "John").show()
 df.filter("name == 'John'").show()
 
 #   +---+------+----+
@@ -265,7 +265,7 @@ df.filter("name == 'John'").show()
 #   | 35|     M|John|
 #   +---+------+----+
 
-df.filter(df("age") >35).show() 
+df.filter(df["age"] >35).show() 
 df.filter("age > 20").show()
 
 #   +---+------+----+
@@ -788,12 +788,14 @@ peopleDF.printSchema
 ## Specifying Schema (Python)
 
 ```python
+from pyspark.sql.types import StringType, IntegerType, StructField, StructType
 
-nameField = StructField("name", StringType(), True)
-genderField = StructField("gender", StringType(), True)
-ageField = StructField("age", IntegerType(), True)
 
-peopleSchema = StructType([nameField, genderField, ageField])
+peopleSchema = StructType([
+		   StructField("name",   StringType(), True),
+		   StructField("gender", StringType(), True),
+		   StructField("age",    IntegerType(), True),
+		])
 
 peopleDF = (spark.read.
                option("header", "true").
@@ -1111,7 +1113,7 @@ select MAX(price) from items;
 * CSV data
 
 ```text
-#name, gender, age
+name, gender, age
 John,M,40
 Jane,F,35
 ```
