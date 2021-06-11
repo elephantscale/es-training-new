@@ -1140,7 +1140,7 @@ Jane,F,35
 
 * AVRO is a popular serializing format
 
-* Binary baed
+* Binary based
 
 * Row-based
 
