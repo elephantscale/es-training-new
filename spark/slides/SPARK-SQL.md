@@ -708,7 +708,7 @@ import spark.implicits._
 
 * Schema is inferred by through trough the data
 
-```csv
+```text
 name,gender,age
 John,M,35
 Jane,F,40
