@@ -430,8 +430,8 @@ data.show()
 
 * They provide a unified APIs
 
-* Dataframes are strongly typed  (Int, String ..etc)
-    - So the API is fully available on Java and Scala
+* Datasets can support strongly typed  data (Customer type, Order type ..etc)
+    - Strong typing is only available on Java and Scala
     - Only partial support in Python, as Python is not a strongly typed language
 
 * Datasets are highly efficient
@@ -590,19 +590,15 @@ data.show()
 
 ## Fault Tolerance
 
-<img src="../../assets/images/spark/fault-tolerance-1.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/fault-tolerance-1.png" style="width:60%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * Failures do happen (when, not if) in distributed computing
     - Machines can crash, processes can crash (running out of memory ..etc)
     - **Question for the class**: What other failure scenarios can you think of?
-
 * Spark can **automatically recover** from run time errors!
     - No intervention required from devs or admins
-
 * Spark tracks transformation **lineage**
-
 * So if a partition is missing,  it can be re-calculated from its parents
-
 * Here if partition 4' is missing (due to a crash) it can be recomputed from 4
     - Spark can re-read partition 4 from storage (HDFS or Cloud storage) and recompute 4'
 
@@ -830,7 +826,7 @@ Notes:
     - Across nodes
     - or various combinations
 
-<img src="../../assets/images/spark/data-flow-1.png" style="width:20%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/data-flow-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * Why cache data on disk?
     - Some times we don't want to repeat expensive operations like join, multiple times
