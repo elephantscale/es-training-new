@@ -60,3 +60,5 @@ Fortify Taxonomy - Software Security Errors - This is more technical but helpful
 https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf
 
 As mentioned, Troy Hunt's secure coding guide for .NET Developers. To give an idea of what might be applicable for Java (Javascript is different as I feel it is more of a front language (besides for Node.js), and client-side logic in JS can open up a whole can of worms) - https://files.troyhunt.com/OWASP%20Top%2010%20for%20.NET%20developers.pdf
+
+["Smashing the stack for fun and profit"](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf)
