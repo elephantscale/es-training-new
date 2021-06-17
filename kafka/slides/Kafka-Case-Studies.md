@@ -129,7 +129,64 @@ Notes:
 
 ---
 
+
+
+# Kafka @ Grid Dynamics
+
+<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;" /><!-- {"left" : 2.65, "top" : 4.74, "height" : 1.87, "width" : 3.55} -->
+
+
+
+
+---
+
+## Kafka @ Grid Dynamics
+
+<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;float:right;" /><!-- {"left" : 6.64, "top" : 0.87, "height" : 1.83, "width" : 3.48} -->
+
+ * [Reference](https://blog.griddynamics.com/in-stream-processing-service-blueprint)
+
+ * Components
+
+     - Kafka
+
+     - Spark
+
+     - Cassandra
+
+     - ZooKeeper
+
+     - Redis
+
+     - HDFS
+
+ * Highlight (next slides have screenshots)
+
+     - Architecture 
+
+Notes:
+
+
+---
+
+## Kafka @ Grid Dynamics: Architecture
+
+<img src="../../assets/images/kafka/3rd-party/grid-dynamics-kafka-1.png"  style="width:80%;" /><!-- {"left" : 0.55, "top" : 2.52, "height" : 4.04, "width" : 9.15} -->
+
+
+
+---
+
+## Kafka @ Grid Dynamics: Architecture
+
+<img src="../../assets/images/kafka/3rd-party/grid-dynamics-kafka-2.png"  style="width:80%;" /><!-- {"left" : 0.56, "top" : 2.26, "height" : 5.11, "width" : 9.13} -->
+
+
+---
+
 # Kafka @ Netflix
+
+The ultimate use case!
 
 <img src="../../assets/images/logos/netflix-logo-1.png"  style="width:35%;" /><!-- {"left" : 2.9, "top" : 5.36, "height" : 1.05, "width" : 2.28} -->
 
@@ -184,60 +241,6 @@ Notes:
 ## Kafka @ Netflix: Best Practices
 
 <img src="../../assets/images/kafka/3rd-party/netflix-kafka-4.png"  style="width:80%;" /><!-- {"left" : 0.5, "top" : 2.07, "height" : 4.93, "width" : 9.25} -->
-
-
-
----
-
-# Kafka @ Grid Dynamics
-
-<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;" /><!-- {"left" : 2.65, "top" : 4.74, "height" : 1.87, "width" : 3.55} -->
-
-
-
-
----
-
-## Kafka @ Grid Dynamics
-
-<img src="../../assets/images/logos/grid-dynamics-logo-1.png"  style="width:30%;float:right;" /><!-- {"left" : 6.64, "top" : 0.87, "height" : 1.83, "width" : 3.48} -->
-
- * [Reference](https://blog.griddynamics.com/in-stream-processing-service-blueprint)
-
- * Components
-
-     - Kafka
-
-     - Spark
-
-     - Cassandra
-
-     - ZooKeeper
-
-     - Redis
-
-     - HDFS
-
- * Highlight (next slides have screenshots)
-
-     - Architecture 
-
-Notes:
-
-
----
-
-## Kafka @ Grid Dynamics: Architecture
-
-<img src="../../assets/images/kafka/3rd-party/grid-dynamics-kafka-1.png"  style="width:80%;" /><!-- {"left" : 0.55, "top" : 2.52, "height" : 4.04, "width" : 9.15} -->
-
-
-
----
-
-## Kafka @ Grid Dynamics: Architecture
-
-<img src="../../assets/images/kafka/3rd-party/grid-dynamics-kafka-2.png"  style="width:80%;" /><!-- {"left" : 0.56, "top" : 2.26, "height" : 5.11, "width" : 9.13} -->
 
 
 
