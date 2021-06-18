@@ -62,6 +62,9 @@ June 15, 2021
 * NiFi Architecture
 * Site-to-Site Dataflows
 * Cloudera Edge Management and MiNiFi
+* How to create pipeline with airflow
+* DB and executors
+* How to schedule and monitor workflows
 * Monitoring and Reporting
 * Controller Services
 * Integrating NiFi with the Cloudera Ecosystem
