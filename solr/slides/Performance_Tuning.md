@@ -269,7 +269,7 @@
 
 ## Java Heap management
 
-![](../images/Cloudera_diagram_Solr_server_heap.png)
+![](../../assets/images/solr/Cloudera_diagram_Solr_server_heap.png)
 
 
 Notes:

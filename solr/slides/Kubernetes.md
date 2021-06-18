@@ -1,7 +1,42 @@
 # Kubernetes and Solr
 
+## Docker
+ * Docker is the standard format for containers
+ * Orchestration engines like Kubernetes generally use docker containers.
+ * Containerization includes many benefits for solr:
+   - Simplifies dependency managmenet
+   - Makes it easier to deploy/manage/ugprade
+   - Devloper Friendly
+
+---
+
+## Lab: Run Solr in Docker
+ * Lab: Single Node Docker
+ * Lab Instructions:
+   - Follow the instructions in `solr-labs/kubernetes/single-node.docker.md`
+
+
+---
+
+## Kubernetes and Docker
+ * Kubernetes is a cluster compute engine for containerized workfoads.
+ * 
+
+
+---
+
+## Lab: Run Solr in Docker
+ * Lab: Single Node Docker
+ * Lab Instructions:
+   - Follow the instructions in `solr-labs/kubernetes/single-node.docker.md`
+
+
+---
+
 ## Solr Operator
  * Solr Operator a control-plane manager for Solr in Kuberenetes
+ * Solr operator helps simplifiy the deployment process by managing Kubernetes.
+
  
 
 ---
@@ -10,6 +45,7 @@
 
 ![](../../assets/images/solr/k8s-primary-components.png)
 ---
+
 
 
 

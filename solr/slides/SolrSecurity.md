@@ -30,7 +30,7 @@ Notes:
 
 ## Secutiry framework architecture
 
-![](../images/sec-arc.png) <!-- {"left" : 0.5, "top" : 1.93, "height" : 4.12, "width" : 9.26} -->
+![](../../assets/images/solr/sec-arc.png) <!-- {"left" : 0.5, "top" : 1.93, "height" : 4.12, "width" : 9.26} -->
 
 
 Notes:
@@ -47,7 +47,7 @@ Notes:
 * Only on SolrCloud
 * Two implementations: Kerberos and basic authentication
 
-![](../images/auth-frame.png) <!-- {"left" : 0.39, "top" : 2.91, "height" : 2.48, "width" : 9.48} -->
+![](../assets/images/solr/auth-frame.png) <!-- {"left" : 0.39, "top" : 2.91, "height" : 2.48, "width" : 9.48} -->
 
 
 Notes:
@@ -81,7 +81,7 @@ Notes:
     - Kerberized ZooKeeper 
   - Start Solr with the correct host-speciﬁc parameters 
 
-![](../images/kerberos.png) <!-- {"left" : 3.69, "top" : 4.99, "height" : 2.09, "width" : 2.87} -->
+![](../../assets/images/solr/kerberos.png) <!-- {"left" : 3.69, "top" : 4.99, "height" : 2.09, "width" : 2.87} -->
 
 
 Notes:

@@ -33,7 +33,7 @@ Notes:
 
 ## Lab, contd
 
-![](../images/slor-01.png) <!-- {"left" : 1.18, "top" : 0.92, "height" : 6.3, "width" : 7.61} -->
+![../../assets/images/solr/gslor-01.png) <!-- {"left" : 1.18, "top" : 0.92, "height" : 6.3, "width" : 7.61} -->
 
 
 
@@ -45,7 +45,7 @@ Notes:
 ## Solr Example Structure
 
 
-![](../images/solr-structure.png) <!-- {"left" : 0.71, "top" : 1.34, "height" : 5.36, "width" : 8.83} -->
+![../../assets/images/solr/gsolr-structure.png) <!-- {"left" : 0.71, "top" : 1.34, "height" : 5.36, "width" : 8.83} -->
 
 
 Notes:
@@ -56,7 +56,7 @@ Notes:
 
 ## Directory Layout
 
-![](../images/solr-directory-layout.png) <!-- {"left" : 1.02, "top" : 2.14, "height" : 3.69, "width" : 8.21} -->
+![../../assets/images/solr/gsolr-directory-layout.png) <!-- {"left" : 1.02, "top" : 2.14, "height" : 3.69, "width" : 8.21} -->
 
 
 
@@ -115,7 +115,7 @@ Notes:
 
 ## Lab, contd
 
-![](../images/solr-02.png) <!-- {"left" : 0.71, "top" : 1.34, "height" : 5.36, "width" : 8.83} -->
+![../../assets/images/solr/gsolr-02.png) <!-- {"left" : 0.71, "top" : 1.34, "height" : 5.36, "width" : 8.83} -->
 
 
 Notes:
@@ -127,7 +127,7 @@ Notes:
 
 ## Example
 
-![](../images/solr-03.png) <!-- {"left" : 1.02, "top" : 0.9, "height" : 6.45, "width" : 8.22} -->
+![../../assets/images/solr/gsolr-03.png) <!-- {"left" : 1.02, "top" : 0.9, "height" : 6.45, "width" : 8.22} -->
 
 
 Notes:
@@ -139,7 +139,7 @@ Notes:
 
 ## Example
 
-![](../images/solr-04.png) <!-- {"left" : 1.83, "top" : 0.96, "height" : 6.23, "width" : 6.59} -->
+![../../assets/images/solr/gsolr-04.png) <!-- {"left" : 1.83, "top" : 0.96, "height" : 6.23, "width" : 6.59} -->
 
 Notes:
 
@@ -149,7 +149,7 @@ Notes:
 ## Let’s Break Up The Query
 
 
-![](../images/query.png) <!-- {"left" : 0.6, "top" : 2.46, "height" : 2.58, "width" : 9.06} -->
+![../../assets/images/solr/gquery.png) <!-- {"left" : 0.6, "top" : 2.46, "height" : 2.58, "width" : 9.06} -->
 
 
 Notes:

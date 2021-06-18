@@ -9,6 +9,7 @@ $ES_HOME/es-training/zookeeper/slides/ZK-1__Intro.pptx
 ./Searching.md
 ./Indexing.md
 $ES_HOME/es-training/kubernetes/slides/Kubernetes-Intro.md
+./Kubernetes.md
 ./Configuration.md
 ./Schema_Updating.md
 ./DevEnvironment.md
