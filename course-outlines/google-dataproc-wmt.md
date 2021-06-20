@@ -12,3 +12,6 @@
 * Interacting with google storage buckets
 * Developer environments
 * AI Notebooks API (previously known as DataProc Notebooks)
+
+* Cross-project integration – wmt-edw-prod – will this involve communication between systems?
+* Different Data Proc offerings and images at Walmart – where to find images and when to pick each – same as above. 

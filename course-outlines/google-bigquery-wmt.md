@@ -2,7 +2,7 @@ Google BigQuery
 
 * Deep dive partition strategy, performance tuning, query visualizer
 * Resource Monitoring, Telemetry – Information Schema jobs table, stackdriver, etc, Looker dashboards
-* Advanced features ( Nested tables) Star schemas
+* Advanced features (Nested tables) Star schemas
 * DDL and DML including External and Internal tables
 * Priority workloads – Reservations API
 * Storage API and Spark Integration
