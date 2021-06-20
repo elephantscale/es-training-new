@@ -1,4 +1,41 @@
 # Google Dataproc
+© Elephant Scale
+
+June 20, 2021
+
+## Overview
+
+* Dataproc is a fully managed and highly scalable service for running Apache Spark, Apache Flink, Presto, and 30+ open source tools and frameworks. 
+* You can use Dataproc for data lake modernization, ETL, and secure data science, at planet scale, fully integrated with Google Cloud, at a fraction of the cost.
+
+## Benefits
+
+* After taking the course, participants will be able to
+
+  - Point out Dataproc use cases
+  - Implement Dataproc project on Google Cloud
+  - Be fluent in best practices for Dataproc and integration
+
+## Duration:
+
+* 2 days
+
+## Audience:
+* Data scientists
+* Software developers
+* Project managers
+
+## Prerequisites
+
+* Knowledge of SQL
+* Familiarity with Hadoop suite of tools  
+* Familiarity with GCP
+
+# Lab environment
+
+* Ideally, students come with their own GCP account
+
+## Course Outline:
 
 * Provisioning Ephemeral Data Proc and Long-lived clusters
 * Hive Metastore integration

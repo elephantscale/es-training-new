@@ -1,4 +1,38 @@
-Google BigQuery
+# Google BigQuery
+© Elephant Scale
+
+June 20, 2021
+
+## Overview
+
+* BigQuery (BQ) is a fully-managed, serverless data warehouse that enables scalable analysis over petabytes of data. It is a Platform as a Service that supports querying using ANSI SQL. It also has built-in machine learning capabilities.
+## Benefits
+
+* After taking the course, participants will be able to
+
+  - Point out BQ use cases
+  - Implement BQ project on Google Cloud
+  - Be fluent in best practices for BQ and integration
+
+## Duration:
+
+* 2 days
+
+## Audience:
+* Data scientists
+* Software developers
+* Project managers
+
+## Prerequisites
+
+* Knowledge of SQL
+* Familiarity with GCP
+
+# Lab environment
+
+* Ideally, students come with their own GCP account
+
+## Course Outline:
 
 * Deep dive partition strategy, performance tuning, query visualizer
 * Resource Monitoring, Telemetry – Information Schema jobs table, stackdriver, etc, Looker dashboards
