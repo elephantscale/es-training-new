@@ -11,4 +11,4 @@
 * Acid formats – Hudi, Delta, Iceberg (focus on Hudi)
 * Interacting with google storage buckets
 * Developer environments
-* AI Notebooks API (previously known as DataProc Notebooks
+* AI Notebooks API (previously known as DataProc Notebooks)
