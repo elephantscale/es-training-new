@@ -47,7 +47,7 @@ Notes:
 * Only on SolrCloud
 * Two implementations: Kerberos and basic authentication
 
-![](../assets/images/solr/auth-frame.png) <!-- {"left" : 0.39, "top" : 2.91, "height" : 2.48, "width" : 9.48} -->
+![](../../assets/images/solr/auth-frame.png) <!-- {"left" : 0.39, "top" : 2.91, "height" : 2.48, "width" : 9.48} -->
 
 
 Notes:

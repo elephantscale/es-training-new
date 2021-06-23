@@ -2,7 +2,6 @@
 ##     $    $ES_HOME/utils/presentations/slides-assembler.sh   0-slide-order-solr-advanced.txt
 
 ./About-Advanced-Solr-Class.md
-../outlines/Advanced-Solr.md
 ./Solr-Intro.md
 ./SolrCloud.md
 $ES_HOME/es-training/zookeeper/slides/ZK-1__Intro.pptx
@@ -13,10 +12,13 @@ $ES_HOME/es-training/kubernetes/slides/Kubernetes-Intro.md
 ./Configuration.md
 ./Schema_Updating.md
 ./DevEnvironment.md
+./V2-API.md
 ./Performance_Tuning.md
 ./Relevance.md
+./Autocomplete.md
 ./Extended_Features.md
-./Lucene_API.md
 ./OptimizingSolr.md
 ./SolrSecurity.md
+./Performance_Tuning_Expert.md
+./SolrCloud_Expert.md
 

@@ -56,11 +56,11 @@
             "description":"A single document ID to retrieve."},
           "ids":{
             "type":"string",
-            "description":"One or more document IDs to retrieve. Separate by commas if more than one ID is specified."},
+            "description":"docment ID."},
           "fq":{
             "type":"string",
-            "description":"An optional filter query to add to the query. One use case for this is security filtering, in case users or groups should not be able to retrieve the document ID requested."}}}}],
-  "WARNING":"This response format is experimental.  It is likely to change in the future.",
+            "description":"filters."}}}}],
+  "WARNING":"This response format is experimental..",
   "availableSubPaths":{}
 }
 ```
@@ -71,6 +71,8 @@
 
  * `curl http://localhost:8983/api/c/gettingstarted -H 'Content-type:application/json' -d ' { modify: { replicationFactor: "3", autoAddReplicas: false } }'`
    - response: `{"responseHeader":{"status":0,"QTime":842}}`
+
+* Examples
 
  * See the state of the cluster:
 

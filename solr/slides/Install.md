@@ -12,7 +12,7 @@
 
  * Solr can be downloaded from its website
    - http://lucene.apache.org/solr
-   - Current Version is 7.6
+   - Current Version is 8.9
  * Lucene library can also be installed
    - http://lucene.apache.org/
 

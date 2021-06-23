@@ -1,4 +1,4 @@
-Solr for Developers
+Advanced Solr
 ===================
 
 ## Agenda
@@ -16,8 +16,8 @@ Solr for Developers
 |       | 4. Caching                                                                                             |
 |       | 4. Performance                                                                                         |
 | Three | 1. Logging and Monitorin                                                                               |
-|       | 2. Developing With Lucene API                                                                          |
-|       | 3. Project
+|       | 2. Expert Performance Tuning                                                                          |
+|       | 3. Expert SolrClou d
 
 <!-- {"left" : 2.14, "top" : 1.74, "height" : 4.56, "width" : 5.97, "columnwidth" : [1.79, 4.18]} -->
 
@@ -106,7 +106,7 @@ Notes:
 
  * Where is the ANY key?
 
-![](../../about/images/any-key.png) <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
+![](../../assets/images/about/any-key.png) <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
 
 
 Notes: 
@@ -118,7 +118,7 @@ Notes:
 ## Analogy: Learning To Fly…
 
 
-![](../../about/images/learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about/learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 
 Notes: 
@@ -130,7 +130,7 @@ Notes:
 ## Instruction
 
 
-![](../../about/images/classroom-instruction.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about/classroom-instruction.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 Notes: 
 
@@ -142,7 +142,7 @@ http://aviation-schools.regionaldirectory.us/learn-to-fly-720.jpg
 
 ## + Flight Time
 
-![](../../about/images/cockpit.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about/cockpit.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 Notes: 
 
@@ -154,7 +154,7 @@ http://www.wikihow.com/Become-a-Certified-Flight-Instructor
 
 ## This Will Take A Lot Of Practice 
 
-![](../../about/images/practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about/practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 
 Notes: 
@@ -182,9 +182,9 @@ Notes:
 
      - Something non-technical about you!(favorite ice cream flavor / hobby…)
 
-![](../../about/images/ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
+![](../../assets/images/about/ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
 
-![](../../about/images/hiking.png)   <!-- {"left" : 3.60, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
+![](../../assets/images/about/hiking.png)   <!-- {"left" : 3.60, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
  
 
 Notes: 
@@ -200,11 +200,11 @@ Notes:
 * Cision – scaling up marketing information search, using Solr, Hadoop, HBase
 * IHS Petrodata – Lucene search in O&G information
 
-![](../images/popcorn.png) <!-- {"left" : 7.88, "top" : 1.33, "height" : 0.93, "width" : 1} -->
+![](../../assets/images/solr/3rd-party/popcorn.png) <!-- {"left" : 7.88, "top" : 1.33, "height" : 0.93, "width" : 1} -->
 
-![](../images/apache-solr.png) <!-- {"left" : 6.93, "top" : 5.62, "height" : 1.38, "width" : 2.51} -->
+![](../../assets/images/solr/apache-solr.png) <!-- {"left" : 6.93, "top" : 5.62, "height" : 1.38, "width" : 2.51} -->
 
-![](../images/lusene.png) <!-- {"left" : 0.54, "top" : 5.80, "height" : 1, "width" : 5.47} -->
+![](../../assets/images/logos/lusene.png) <!-- {"left" : 0.54, "top" : 5.80, "height" : 1, "width" : 5.47} -->
 
 
 Notes:

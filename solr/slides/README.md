@@ -15,7 +15,6 @@ $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
  * [Schema Updating](./Schema_Updating.md)
  * [Relevance](./Relevance.md)
  * [Development](./DevEnvironment.md)
- * [Lucene API](./Lucene_API.md)
  * [Extended Features](./Extended_Features.md)
  * [SolrCloud](./SolrCloud.md)
  * [Optimizing Solr](./OptimizingSolr.md)

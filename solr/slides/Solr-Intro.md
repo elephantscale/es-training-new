@@ -192,7 +192,7 @@ Notes:
 ---
 
 
-## New in Solr 7
+## New in Solr 8
  * Replication Modes:
    - New replica strategies added: `TLOG` and `PULL`
  * Autoscaling:

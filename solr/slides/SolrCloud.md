@@ -1,4 +1,4 @@
-# Solr: SolrCloud
+# Solr:  SolrCloud
 ---
 
 ## Section Objectives
