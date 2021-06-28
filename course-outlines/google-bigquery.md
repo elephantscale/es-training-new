@@ -31,6 +31,7 @@ June 20, 2021
 # Lab environment
 
 * Ideally, students come with their own GCP account
+* Qwiklabs access for 30 days will be provided for every student
 
 ## Course Outline:
 
@@ -41,9 +42,7 @@ June 20, 2021
 * DDL and DML including External and Internal tables
 * Priority workloads – Reservations API
 * Storage API and Spark Integration
-* Cross-project integration – wmt-edw-prod
   * Cross GCP projects (or VPC peering)
-  * Take out wmt-edw-prod
 * Google project provisioning
 * IAM, Roles, Permissions, ServiceAccounts, etc
 * Data Transfer API, Scheduling Queries and Airflow integration

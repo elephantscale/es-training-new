@@ -34,6 +34,7 @@ June 20, 2021
 # Lab environment
 
 * Ideally, students come with their own GCP account
+* Qwiklabs access for 30 days will be provided for every student
 
 ## Course Outline:
 
@@ -43,6 +44,7 @@ June 20, 2021
   * Just using it
 * Ranger and Kerberos integration
   * In the cloud, but not Ranger
+  * Cloud security
 * Google IAM and service accounts
 * GPU and CPU configuration – when to use each
 * Profiling using SparkLens and Dr Elephant
@@ -57,7 +59,5 @@ June 20, 2021
 * Developer environments
 * AI Notebooks API (previously known as DataProc Notebooks)
 
-* Cross-project integration – wmt-edw-prod – will this involve communication between systems?
+* Cross-project integration
   * Cross GCP projects (or VPC peering)
-* Different Data Proc offerings and images at Walmart – where to find images and when to pick each – same as above.
-  * (Not at Walmart)
