@@ -38,17 +38,26 @@ June 20, 2021
 ## Course Outline:
 
 * Provisioning Ephemeral Data Proc and Long-lived clusters
+  * Student accounts or training accounts
 * Hive Metastore integration
+  * Just using it
 * Ranger and Kerberos integration
+  * In the cloud, but not Ranger
 * Google IAM and service accounts
 * GPU and CPU configuration – when to use each
 * Profiling using SparkLens and Dr Elephant
+  * Profiling in GCP
 * Different Data Proc offerings and images at Walmart – where to find images and when to pick each
+  * No Walmart integration
 * VPC and Data Exfiltration prevention
+  * TBD
 * Acid formats – Hudi, Delta, Iceberg (focus on Hudi)
+  * As much as you can have in GCP
 * Interacting with google storage buckets
 * Developer environments
 * AI Notebooks API (previously known as DataProc Notebooks)
 
 * Cross-project integration – wmt-edw-prod – will this involve communication between systems?
-* Different Data Proc offerings and images at Walmart – where to find images and when to pick each – same as above. 
+  * Cross GCP projects (or VPC peering)
+* Different Data Proc offerings and images at Walmart – where to find images and when to pick each – same as above.
+  * (Not at Walmart)
