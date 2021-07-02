@@ -52,13 +52,15 @@ Notes:
              
 ## Install Terraform
 
+1. Local install
 * Download the `terraform` executable from the [Terraform home page](https://www.terraform.io/)
 * Depending on your OS, you may also install a native package
 * For Mac
-    * `brew install terraform`
-* You may use a cloud server if provided by the instructor    
+    * `brew install terraform`   
 * You may use Terraform cloud account
 ![](../artwork/terraform-cloud-account.png)
+2. CloudShell on AWS
+3. Cloud9 on AWS
 
 ---
 ## Verify `terraform` Version
