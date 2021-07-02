@@ -35,3 +35,7 @@ Lectures and hands-on labs (50% - 50%)
 
 ## Detailed outline
 
+### Internal refs:
+
+* https://learning.oreilly.com/library/view/introducing-mlops/9781492083283/
+* https://learning.oreilly.com/library/view/practical-mlops/9781098103002/
