@@ -1,18 +1,12 @@
-# BigQuery
+# Dataproc
 ---
-## Vault and Consul Class Outline
+## Dataproc Class Outline
 
 
 | Day | Agenda                                                                          |
 |-----|---------------------------------------------------------------------------------|
-| 1   | Vault: architecture, configuration, scalability                                 |
-| 2   | Vault Identities: Entities and Groups, Namespaces, production, monitoring       |
-| 3   | Microservices, microservices with Consul, Consul hands-on                       |
-
-<!-- {"left" : 0.25, "top" : 1.4, "height" : 3.36, "width" : 9.75} -->
-
-![](../artwork/vault.png)
-![](../artwork/consul.jpeg)
+| 1   |                                                                                 |
+| 2   |                                                                                 |
 
 Notes:
 
@@ -49,7 +43,7 @@ Notes:
 
 ## Analogy: Learning to Fly...
 
-<img src="../artwork/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
+<img src="../../assets/images/generic/3rd-party/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
 
@@ -59,7 +53,7 @@ Notes:
 
 ## Instruction
 
-<img src="../artwork/classroom-instruction.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
+<img src="../../assets/images/generic/3rd-party/classroom-instruction.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
 
@@ -71,7 +65,7 @@ Notes:
 
 ## + Flight Time
 
-<img src="../artwork/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
+<img src="../../assets/images/generic/3rd-party/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
 Notes:
@@ -80,7 +74,7 @@ Notes:
 
 ## After the Class...
 
-<img src="../artwork/Terraform-I-Know.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
+<img src="../artwork/I-Know-GCP.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
 
 
 Notes:
@@ -98,7 +92,7 @@ Notes:
      - Familiarity with Terraform or IaC (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
 
-<img src="../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
+<img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 
 Notes:
@@ -151,14 +145,6 @@ Notes:
 ---
 
 ## Recommended books and credits
-
-* Bryan Krausen book on Amazon: [Running HashiCorp Vault in Production](https://www.amazon.com/gp/product/B08LNQML27/ref=as_li_ss_tl?pf_rd_r=Q59WRZR3R8QHKF5YZ2R2&pf_rd_p=edaba0ee-c2fe-4124-9f5d-b31d6b1bfbee&linkCode=sl1&tag=vaultbook-20&linkId=cff39cd5ffff2c7bffebfcc88b4a8432&language=en_US)
-
-* Bryan Krausen book on Gumroad in PDF format: [Running HashiCorp Vault in Production](https://gumroad.com/l/vaultbook/j67unh3)
-
-* [Udemy Profile for Bryan Krausen](https://www.udemy.com/user/bryan-krausen/)
-
-![](../artwork/book-cover.png)
 
 ## Questions?
 
