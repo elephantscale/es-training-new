@@ -6,6 +6,7 @@ June 20, 2021
 ## Overview
 
 * BigQuery (BQ) is a fully-managed, serverless data warehouse that enables scalable analysis over petabytes of data. It is a Platform as a Service that supports querying using ANSI SQL. It also has built-in machine learning capabilities.
+
 ## Benefits
 
 * After taking the course, participants will be able to
