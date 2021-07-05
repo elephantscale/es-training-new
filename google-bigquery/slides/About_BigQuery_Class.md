@@ -74,7 +74,7 @@ Notes:
 
 ## After the Class...
 
-<img src="../artwork/I-Know-GCP.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
+<img src="../artwork/I-Know-GCP.jpg" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
 
 
 Notes:
