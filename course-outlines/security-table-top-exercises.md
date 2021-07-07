@@ -1,11 +1,11 @@
-# Table Top Exercises 
+# Table-top Exercises 
 
 (C) Copyright Elephant Scale
 
 July 06, 2021
 
 ## Overview
-This course will teach table top exercises for securing enterprise
+Cyber attacks are an organizational concern. In order to build an effective security program, it’s impossible to rely on “best practice” policies without testing and vetting them to see if they work. Penetration tests will only go so far and only deal with the technical aspects of preventing a breach. The most challenging element of security today is understanding the real-world effectiveness of your protection and response program. Table-top exercises practice putting the strategic and operational plans into simulated action.
 
 ## Audience
 Developers, team leads, project managers
@@ -14,7 +14,7 @@ Developers, team leads, project managers
 Introductory - Intermediate
 
 ## Duration
-Two days
+4 hours
 
 ## Format
 Lectures and hands on labs. (50% - 50%)
@@ -35,9 +35,15 @@ Lectures and hands on labs. (50% - 50%)
 
 ## Detailed outline
 
-NIST 800-84: Guide to Test, Training, and Exercise Programs for IT Plans and Capabilities
+* Introduction with practical urgent examples
+* The NIST 800-84, Guide to Test, Training, and Exercise Programs for IT Plans and Capabilities
+* Team exercises
 
-https://www.youtube.com/watch?v=GDUwVp1-8DM - good overview, 45 minutes
+### References (not part of the outline)
 
-https://www.youtube.com/watch?v=20fdE4aJyDI - example of running a tabletop exercise
+* NIST 800-84: Guide to Test, Training, and Exercise Programs for IT Plans and Capabilities
+
+* https://www.youtube.com/watch?v=GDUwVp1-8DM - good overview, 45 minutes
+
+* https://www.youtube.com/watch?v=20fdE4aJyDI - example of running a tabletop exercise
 
