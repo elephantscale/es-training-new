@@ -5,7 +5,7 @@
 July 06, 2021
 
 ## Overview
-Cyber attacks are an organizational concern. In order to build an effective security program, it’s impossible to rely on “best practice” policies without testing and vetting them to see if they work. Penetration tests will only go so far and only deal with the technical aspects of preventing a breach. The most challenging element of security today is understanding the real-world effectiveness of your protection and response program. Table-top exercises practice putting the strategic and operational plans into simulated action.
+Cyberattacks are an organizational concern. In order to build an effective security program, it’s impossible to rely on “best practice” policies without testing and vetting them to see if they work. Penetration tests will only go so far and only deal with the technical aspects of preventing a breach. The most challenging element of security today is understanding the real-world effectiveness of your protection and response program. Table-top exercises practice putting the strategic and operational plans into simulated action.
 
 ## Audience
 Developers, team leads, project managers
@@ -35,7 +35,8 @@ Lectures and hands on labs. (50% - 50%)
 
 ## Detailed outline
 
-* Introduction with practical urgent examples
+* Introduction with practical examples
+* Urgency of security  
 * The NIST 800-84, Guide to Test, Training, and Exercise Programs for IT Plans and Capabilities
 * Team exercises
 
