@@ -21,7 +21,7 @@ Lectures and hands on labs. (50% - 50%)
 
 ## Prerequisites
 * Recommended: Cybersecurity awareness
-*  Familiar with code developement
+* Familiar with code development
 
 
 ## Lab environment
