@@ -52,6 +52,7 @@ Lectures and hands on labs. (50% - 50%)
 
 ### Secure design
 
+* TBD - need more detail
 * Layered design concepts
 * Object layer
 * Persistence layer
@@ -88,6 +89,7 @@ Lectures and hands on labs. (50% - 50%)
 * Where to go from here
 
 ### Authorization and Authentication
+* TBD - which technologies do you use that we need to cover
 * .NET authentication
 * Basic & Digest
 * Forms
@@ -101,11 +103,13 @@ Lectures and hands on labs. (50% - 50%)
 * SSL/TLS
 
 ### Session security
+* TBD - a bit more detail
 * Session IDs
 * Policies
 * Hijacking/Fixation Attacks
 
 ### Framework architecture
+* TBD - how much do you have?
 * Threading
 * Privileges
 * Audits/Logs
@@ -114,6 +118,7 @@ Lectures and hands on labs. (50% - 50%)
 * Static code analysis
 
 ### Securing the runtime environment
+* TBD - which environments do you use?
 * .NET
 * Code Access
 * GAC
