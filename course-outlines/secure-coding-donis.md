@@ -5,7 +5,13 @@
 July 06, 2021
 
 ## Overview
-This course will teach secure coding practices
+
+* Cybersecurity has risen to the top priority discussion items, and it is the subject of the US-Russia presidential communications. 
+The number of ransomware attacks doubled in the past year, and other attacks are on the rise.
+* This course teaches a comprehensive approach to cybersecurity. It starts with threat modeling, creating the lay of the land. 
+It then continues with common attacks, with the principles of designing secure multi-layer systems, and goes into the details
+of secure coding for the target languages.
+* Also included are securing runtime environments and modern security frameworks.  
 
 ## Audience
 Developers, team leads, project managers
