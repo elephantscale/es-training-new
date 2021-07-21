@@ -1,7 +1,7 @@
 # Ghidra
 © Elephant Scale
 
-June 20, 2021
+July 21, 2021
 
 ## Overview
 
