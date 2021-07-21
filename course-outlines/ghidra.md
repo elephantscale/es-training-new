@@ -28,7 +28,7 @@ By the end of this Ghidra course, you'll have developed the skills you need to h
 * Knowledge of Java or Python
 * Experience developing software
 
-# Lab environment
+## Lab environment
 
 * Local development environment
 * Cloud-based environment can be provided
@@ -62,3 +62,7 @@ By the end of this Ghidra course, you'll have developed the skills you need to h
 * Contributing to the Ghidra Community, explains how to interact with the community using social networks, chats, and how to contribute with your own development, feedback, bug reports, comments, and so on.
 
 * Extending Ghidra for Advanced Reverse Engineering, introduces advanced reverse engineering topics and tools such as SMT solvers, Microsoft Z3, static and dynamic symbex, LLVM, and Angr, and explains how to incorporate them with Ghidra.
+
+## Additional resources
+
+* [https://www.udemy.com/course/reverse-engineering-ghidra/](https://www.udemy.com/course/reverse-engineering-ghidra/)
