@@ -2,9 +2,8 @@
 
 (C) Copyright Elephant Scale
 
-July 15, 2021
+July 27, 2021
 
-## Overview
 ## Overview
 
 * Cybersecurity has risen to the top priority discussion items, and it is the subject of the US-Russia presidential communications.
@@ -15,16 +14,16 @@ July 15, 2021
 * Also included are securing runtime environments and modern security frameworks.
 
 ## Audience
-Developers, team leads, project managers
+* Developers, team leads, project managers
 
 ## Skill Level
-Introductory - Intermediate
+* Introductory - Intermediate
 
 ## Duration
-Three days
+* Three days
 
 ## Format
-Lectures and hands on labs. (50% - 50%)
+* Lectures and hands on labs. (50% - 50%)
 
 ## Prerequisites
 * Recommended: Cybersecurity awareness
@@ -56,10 +55,12 @@ Lectures and hands on labs. (50% - 50%)
 * Encryption
 * Unsecured direct object reference
 * Failure to authorize/hidden URLs
+* Cross site request forgery (CSRF)
 
 ### Secure design
 
-* TBD - need more detail
+* Security at high level, all the way from testing, deployment, and maintenance
+  * Start from non-functional requirements
 * Layered design concepts
 * Object layer
 * Persistence layer
@@ -96,11 +97,12 @@ Lectures and hands on labs. (50% - 50%)
 * Where to go from here
 
 ### Authorization and Authentication
-* TBD - which technologies do you use that we need to cover
-* .NET authentication
+* SSO (at least high-level)
+* Spring security
+* .NET authentication (just mention)
 * Basic & Digest
 * Forms
-* Windows authentication
+* Windows authentication (just mention)
 * JAAS and other Java authentication services
 * Authorization
 * Password security
@@ -110,23 +112,26 @@ Lectures and hands on labs. (50% - 50%)
 * SSL/TLS
 
 ### Session security
-* TBD - a bit more detail
+* Perfect Secrecy
+* Asymmetric and symmetric encryption
 * Session IDs
 * Policies
 * Hijacking/Fixation Attacks
 
 ### Framework architecture
-* TBD - how much do you have?
-* Threading
-* Privileges
-* Audits/Logs
-* Secure coding
-* Encryption services
-* Static code analysis
+•Threading
+•Privileges
+•Audits/Logs
+•Secure coding
+•Encryption services
+•Static code analysis
+•Securing the API (both publishing and consuming API)
+•JWT
+•Dynamic code analysis (e.g. with Spotbugs)
 
 ### Securing the runtime environment
-* TBD - which environments do you use?
-* .NET
+* Spring boot
+* .NET (mention)
 * Code Access
 * GAC
 * Strong named assemblies
@@ -138,3 +143,4 @@ Lectures and hands on labs. (50% - 50%)
 ### Security future
 * Zero-trust networks
 * Artificial intelligence
+* Quantum computing / cryptography
