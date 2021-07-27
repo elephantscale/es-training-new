@@ -119,15 +119,15 @@ July 27, 2021
 * Hijacking/Fixation Attacks
 
 ### Framework architecture
-•Threading
-•Privileges
-•Audits/Logs
-•Secure coding
-•Encryption services
-•Static code analysis
-•Securing the API (both publishing and consuming API)
-•JWT
-•Dynamic code analysis (e.g. with Spotbugs)
+* Threading
+* Privileges
+* Audits/Logs
+* Secure coding
+* Encryption services
+* Static code analysis
+* Securing the API (both publishing and consuming API)
+* JWT
+* Dynamic code analysis (e.g. with Spotbugs)
 
 ### Securing the runtime environment
 * Spring boot
