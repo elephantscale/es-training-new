@@ -254,7 +254,7 @@ df.filter($"age" > 20).show
 ```python
 # python api
 
-peopleDF = spark.read.json("people.json")
+df = spark.read.json("people.json")
 
 df.filter(df["name"] == "John").show()
 df.filter("name == 'John'").show()
@@ -265,7 +265,7 @@ df.filter("name == 'John'").show()
 #   | 35|     M|John|
 #   +---+------+----+
 
-df.filter(df["age"] >35).show() 
+df.filter(df["age"] > 20).show() 
 df.filter("age > 20").show()
 
 #   +---+------+----+
@@ -1046,16 +1046,14 @@ hive> show tables;
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * **Overview:**
-   - Query Hive tables from Spark
-   - Note: This lab only works on a Hadoop environment
+  - Query Hive tables from Spark
+  - This lab only works on a Hadoop environment
 
 * **Approximate run time:**
    - 20-30 mins
 
 * **Instructions:**
    - 4.5
-
-Notes:
 
 ---
 

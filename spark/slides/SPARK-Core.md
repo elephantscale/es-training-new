@@ -494,7 +494,7 @@ data.show()
 
 ---
 
-## Distrubted Data and Partitions
+## Distributed Data and Partitions
 
 <img src="../../assets/images/spark/distributed_file_blocks.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
