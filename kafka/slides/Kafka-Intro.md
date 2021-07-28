@@ -931,36 +931,29 @@ Notes:
 
 Notes:
 
-
-
-
 ---
 
 ## Creating Topics
 
-
 ```bash
-$   bin/kafka-topics.sh  --zookeeper localhost:2181  --list
+$   bin/kafka-topics.sh  --bootstrap-server localhost:9092 --list
 # ... empty ...
 
 ## create a topic with one replica and two partitions
-$  bin/kafka-topics.sh  --zookeeper localhost:2181  --create
+$  bin/kafka-topics.sh  --bootstrap-server localhost:9092  --create
 --topic test --replication-factor 1  --partitions 2
 
 
-$  bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic test
+$  bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic test
 
 # Topic:test	PartitionCount:2	ReplicationFactor:1	Configs:
-# Topic: # test	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
-# Topic: test	Partition: # 1	Leader: 0	Replicas: 0	Isr: 0
+# Topic: test	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+# Topic: test	Partition: 1	Leader: 0	Replicas: 0	Isr: 0
 
 ```
 <!-- {"left" : 0, "top" : 1.29, "height" : 2.74, "width" : 10.25} -->
 
 Notes:
-
-
-
 
 ---
 
@@ -1469,7 +1462,7 @@ Notes:
 
 ---
 
-## Delete in compaction
+## Delete in Compaction
 
 <img src="../../assets/images/kafka/Delete-in-compaction.png" alt="Delete-in-compaction.png" style="width:50%;float:right;"/><!-- {"left" : 5.16, "top" : 1.18, "height" : 3.25, "width" : 5.02} -->
 
