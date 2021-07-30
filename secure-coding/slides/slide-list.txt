@@ -1,6 +1,7 @@
 #  $ES_HOME/utils/presentations/slides-assembler.sh secure-coding.txt
 
 About-Secure-Coding-Class.md
+../../course-outlines/secure-coding.md
 Security-Intro.md
 Threat-Modeling.md
 Java-Security.md
