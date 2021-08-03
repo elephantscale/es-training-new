@@ -32,7 +32,7 @@ August 2, 2021
 ## Prerequisites
 
 * Comfortable with a programming language such as Java
-* Coding experience in any other language
+* Or, coding experience in any other language
   
 
 ## Lab environment
