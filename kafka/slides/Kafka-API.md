@@ -265,15 +265,15 @@ consumer.subscribe(Arrays.asList("topic1")); // ** 2 **
 
 try {
     while (true) {
-      ConsumerRecords < Integer, String > records = consumer.poll(Duration.ofMillis(1000)); // ** 3 **
-      System.out.println("Got " + records.count() + " messages");
-      for (ConsumerRecord < Integer, String > record : records) {
-      System.out.println("Received message : " + record);
+       ConsumerRecords < Integer, String > records = consumer.poll(Duration.ofMillis(1000)); // ** 3 **
+       System.out.println("Got " + records.count() + " messages");
+       for (ConsumerRecord < Integer, String > record : records) {
+          System.out.println("Received message : " + record);
      }
    }
 }
 finally {
-  consumer.close(Duration.OfSeconds(60));
+    consumer.close(Duration.OfSeconds(60));
 }
 ```
 <!-- {"left" : 0, "top" : 1.29, "height" : 4.7, "width" : 10.25} -->
@@ -326,10 +326,10 @@ Notes:
 ```java
 try {
    while (true) {
-    ConsumerRecords < Integer, String > records = consumer.poll(Duration.ofMillis(1000); // ** 3 **
-    System.out.println("Got " + records.count() + " messages");
-    for (ConsumerRecord < Integer, String > record : records) {
-     System.out.println("Received message : " + record);
+      ConsumerRecords < Integer, String > records = consumer.poll(Duration.ofMillis(1000)); // ** 3 **
+      System.out.println("Got " + records.count() + " messages");
+      for (ConsumerRecord < Integer, String > record : records) {
+        System.out.println("Received message : " + record);
     }
   }
 }
@@ -729,14 +729,35 @@ Notes:
 
 * Current favorite is **Zstd** (Facebook) - Good speed and produces compact size
 
-* Configured via Producer properties:
-  - `compression.type`
-
+* Configured via Producer property **`compression.type`** (see next slide for code sample)
 
 * [Reference](https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression)
 
 Notes:
 
+---
+
+## Enabling Compression
+
+```java
+import java.util.Properties
+import org.apache.kafka.clients.producer.KafkaProducer;
+
+props = new Properties();
+props.put("bootstrap.servers", "localhost:9092");
+props.put("client.id", "CompressedProducer");
+props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+
+// viable codecs : "none"  or "uncompressed" (default), "snappy", "gzip", "lz4", "zstd"
+// https://kafka.apache.org/documentation/#configuration
+// https://kafka.apache.org/documentation/#brokerconfigs_compression.type
+
+props.put("compression.type", "snappy"); // <-- **enable compression**
+
+KafkaProducer<String, String> producer = new KafkaProducer<>(props);
+
+```
 ---
 
 ## Lab 4: Compression Benchmark
