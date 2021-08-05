@@ -416,7 +416,7 @@ clickstream.foreach(new ForeachAction < String, String >() {
 
      public void apply(String key, String value) {
 
-     logger.debug("key:" + key + ", value:" + value);
+        logger.debug("key:" + key + ", value:" + value);
     }
 });
 ```

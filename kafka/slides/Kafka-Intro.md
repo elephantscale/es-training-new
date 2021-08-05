@@ -1408,8 +1408,8 @@ Key 1 @ 00:19 and key 6 @ 01:17 are retended.
 
 ## Log Compaction Illustrated
 
-
- * Offsets don't change after compaction (Offsets uniquely identify messages)
+* Offsets don't change after compaction (Offsets uniquely identify messages)
+* [A good read on compaction](https://towardsdatascience.com/log-compacted-topics-in-apache-kafka-b1aa1e4665a7)
 
 <img src="../../assets/images/kafka/Log-Compaction-Illustrated.png" alt="Log-Compaction-Illustrated.png" style="width:70%;"/><!-- {"left" : 1.22, "top" : 3.02, "height" : 4.93, "width" : 7.81} -->
 
@@ -1474,32 +1474,27 @@ Notes:
 
  * Will be deleted after delete retention point.
 
-
-
 Notes:
 
+---
 
+# Disaster Recovery in Kafka
 
 ---
 
 ## Multi Data Center Deployment
 
+* Kafka is very network intensive
 
- * Kafka is very network intensive
+    - Lots of traffic between nodes / brokers
 
-     - Lots of traffic between nodes / brokers
+* So we don't want to 'split' a Kafka cluster across multiple data centers:
 
- * So we don't want to 'split' a Kafka cluster across multiple data centers:
-
-     - Not enough bandwidth for a single cluster.
+    - Not enough bandwidth for a single cluster.
 
 <img src="../../assets/images/kafka/Multi-Data-Center-Deployment.png" alt="Multi-Data-Center-Deployment.png" style="width:70%;"/><!-- {"left" : 1.11, "top" : 4.87, "height" : 2.73, "width" : 8.03} -->
 
-
 Notes:
-
-
-
 
 ---
 
