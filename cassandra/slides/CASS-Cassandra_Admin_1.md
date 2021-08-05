@@ -80,9 +80,9 @@ Notes:
 
      - For CENTOS based systems
 
-     - Repo : http://rpm.datastax.com
+     - Repo: http://rpm.datastax.com
 
-     - $   sudo yum install cassandra
+     - $ sudo yum install cassandra
 
  * Debian packages
 
@@ -104,19 +104,14 @@ Notes:
  * Development / Schema management
 
      - Dev Center (datastax)
-
      - Helenos 	(https://github.com/tomekkup/helenos) 
-
      - RazorSQL (https://razorsql.com) 
 
  * Profilers
 
      - TRACE ON in CQL
-
      - Jprofiler
-
      - Jprobe
-
      - Custom scripts (Gist) https://gist.github.com/amorton/1074715
 
 Notes: 
@@ -407,7 +402,7 @@ Notes:
 
      - Process data
 
-<img src="../../assets/images/cassandra/hadoop-highlevel.png" style="width:50%;float:right;"/>  <img src="../../assets/images/cassandra/hdfs-overview.png" style="width:50%;float:left;"/>
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:50%;float:right;"/>  <img src="../../assets/images/cassandra/hdfs-overview.png" style="width:50%;float:left;"/>
 
 Notes: 
 
@@ -577,7 +572,7 @@ Spark can run queries against batch layer and / or speed layer
 
  * HDFS: Long term store and batch queries
 
-<img src="../../assets/images/cassandra/iot2a.png" style="width:60%;"/>
+<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png" style="width:80%;"/>
 
 
 Notes: 
