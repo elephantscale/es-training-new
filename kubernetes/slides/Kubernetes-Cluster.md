@@ -35,7 +35,7 @@ In addition to the objectives you identified in taking this module, these are th
   * Service
   * Namespace
 
-![](../images/Kubernetes-logo.png) <!-- {"left" : 6.46, "top" : 2.65, "height" : 3.15, "width" : 3.49} -->
+![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 6.46, "top" : 2.65, "height" : 3.15, "width" : 3.49} -->
 
 
 Notes:
@@ -56,7 +56,7 @@ We will examine all these concepts in the next few sections.
 
   * A cluster is a set of computing instance that Kubernetes manages
 
-![](../images/cluster.png) <!-- {"left" : 1.01, "top" : 2.86, "height" : 3.23, "width" : 8.28} -->
+![](../../assets/images/kubernetes/cluster.png) <!-- {"left" : 1.01, "top" : 2.86, "height" : 3.23, "width" : 8.28} -->
 
 Notes:
 
@@ -67,7 +67,7 @@ Notes:
   * Yes!
   * A cluster can have multiple masters and lots of nodes
 
-![](../images/nodes.png) <!-- {"left" : 3.16, "top" : 2.02, "height" : 5.2, "width" : 4.12} -->
+![](../../assets/images/kubernetes/nodes.png) <!-- {"left" : 3.16, "top" : 2.02, "height" : 5.2, "width" : 4.12} -->
 
 Notes:
 
@@ -98,7 +98,7 @@ A pod models an application-specific “logical host” - it contains one or mor
 ---
 ## Deploying a Pod
 
-![](../images/Deploying-a-Pod.png) <!-- {"left" : 0.4, "top" : 1.58, "height" : 4.33, "width" : 9.45} -->
+![](../../assets/images/kubernetes/Deploying-a-Pod.png) <!-- {"left" : 0.4, "top" : 1.58, "height" : 4.33, "width" : 9.45} -->
 
 Notes:
 
@@ -118,7 +118,7 @@ We can deploy many pods like those listed above.
 ---
 ## Pod Definition
 
-![](../images/Pod-Definition.png) <!-- {"left" : 0.65, "top" : 1.44, "height" : 4.62, "width" : 8.95} -->
+![](../../assets/images/kubernetes/Pod-Definition.png) <!-- {"left" : 0.65, "top" : 1.44, "height" : 4.62, "width" : 8.95} -->
 
 Notes:
 
@@ -170,7 +170,7 @@ Git:  Git and Docker both have a significant learning curve and can be a cost
 ---
 ## Kubernetes Labels by Example
 
-![](../images/Kubernetes-Labels-Example.png) <!-- {"left" : 0.63, "top" : 1.23, "height" : 5.04, "width" : 8.99} -->
+![](../../assets/images/kubernetes/Kubernetes-Labels-Example.png) <!-- {"left" : 0.63, "top" : 1.23, "height" : 5.04, "width" : 8.99} -->
 
 Notes:
 
@@ -192,7 +192,7 @@ Value can be any of 'qa',  'production' or 'dev'
   * Labels are the only grouping mechanism for pods
   * Search by selectors
 
-![](../images/metadata.png) <!-- {"left" : 0.89, "top" : 3.1, "height" : 3.74, "width" : 8.46} -->
+![](../../assets/images/kubernetes/metadata.png) <!-- {"left" : 0.89, "top" : 3.1, "height" : 3.74, "width" : 8.46} -->
 
 
 
@@ -203,7 +203,7 @@ Notes:
 
   * The example below has four pods and three labels
 
-![](../images/metadata-01.png) <!-- {"left" : 0.89, "top" : 2.38, "height" : 3.74, "width" : 8.46} -->
+![](../../assets/images/kubernetes/metadata-01.png) <!-- {"left" : 0.89, "top" : 2.38, "height" : 3.74, "width" : 8.46} -->
 
 
 
@@ -216,7 +216,7 @@ Notes:
   * You can query for labels that map to value of the entire app
 
 
-![](../images/metadata-02.png) <!-- {"left" : 0.98, "top" : 1.87, "height" : 4.89, "width" : 8.28} -->
+![](../../assets/images/kubernetes/metadata-02.png) <!-- {"left" : 0.98, "top" : 1.87, "height" : 4.89, "width" : 8.28} -->
 
 
 Notes:
@@ -228,7 +228,7 @@ Notes:
   * You can either narrow your search with multiple labels - your app’s fronted
 
 
-![](../images/metadata-03.png) <!-- {"left" : 1.18, "top" : 1.81, "height" : 4.91, "width" : 7.89} -->
+![](../../assets/images/kubernetes/metadata-03.png) <!-- {"left" : 1.18, "top" : 1.81, "height" : 4.91, "width" : 7.89} -->
 
 Notes:
 
@@ -239,7 +239,7 @@ Notes:
   * You can either narrow your search with multiple labels - your app’s backend
 
 
-![](../images/metadata-04.png) <!-- {"left" : 0.96, "top" : 1.65, "height" : 5.23, "width" : 8.39} -->
+![](../../assets/images/kubernetes/metadata-04.png) <!-- {"left" : 0.96, "top" : 1.65, "height" : 5.23, "width" : 8.39} -->
 
 Notes:
 
@@ -248,7 +248,7 @@ Notes:
 
 * You can either narrow your search with multiple labels - your app’s test phase
 
-![](../images/metadata-05.png) <!-- {"left" : 0.81, "top" : 2.35, "height" : 4.12, "width" : 8.62} -->
+![](../../assets/images/kubernetes/metadata-05.png) <!-- {"left" : 0.81, "top" : 2.35, "height" : 4.12, "width" : 8.62} -->
 
 Notes:
 
@@ -260,7 +260,7 @@ Notes:
 app’s production release
 
 
-![](../images/metadata-06.png) <!-- {"left" : 0.84, "top" : 2.1, "height" : 4.12, "width" : 8.57} -->
+![](../../assets/images/kubernetes/metadata-06.png) <!-- {"left" : 0.84, "top" : 2.1, "height" : 4.12, "width" : 8.57} -->
 
 Notes:
 
@@ -295,7 +295,7 @@ This way we can ensure 'a service' is continue to run, even if some Pods that ar
 ## Scaling Pods with Replication Controller
 
 
-![](../images/Scaling-Pods.png) <!-- {"left" : 0.4, "top" : 1.58, "height" : 4.33, "width" : 9.45} -->
+![](../../assets/images/kubernetes/Scaling-Pods.png) <!-- {"left" : 0.4, "top" : 1.58, "height" : 4.33, "width" : 9.45} -->
 
 Notes:
 
@@ -312,7 +312,7 @@ A sample RC Specification is in the next slide.
 
 ## Example Replication Controller
 
-![](../images/Replication-Controller1.png) <!-- {"left" : 0.49, "top" : 1.48, "height" : 4.53, "width" : 9.28} -->
+![](../../assets/images/kubernetes/Replication-Controller1.png) <!-- {"left" : 0.49, "top" : 1.48, "height" : 4.53, "width" : 9.28} -->
 
 Notes:
 
@@ -346,7 +346,7 @@ Replicas: 3
   * Services are exposed through virtual-IP-based bridge, which redirects to the backend Pods.
 
 
-![](../images/Services.png) <!-- {"left" : 2.99, "top" : 6.11, "height" : 1.25, "width" : 4.27} -->
+![](../../assets/images/kubernetes/Services.png) <!-- {"left" : 2.99, "top" : 6.11, "height" : 1.25, "width" : 4.27} -->
 
 Notes:
 
@@ -362,7 +362,7 @@ Client accessing the service doesn't care if the 3 Pods are up and running or no
 
 ## Exposing Services
 
-![](../images/Exposing-Services.png) <!-- {"left" : 0.4, "top" : 1.76, "height" : 3.97, "width" : 9.45} -->
+![](../../assets/images/kubernetes/Exposing-Services.png) <!-- {"left" : 0.4, "top" : 1.76, "height" : 3.97, "width" : 9.45} -->
 
 Notes:
 
@@ -395,7 +395,7 @@ spec:
 
 ## Service Creation
 
-![](../images/Service-Creation.png) <!-- {"left" : 0.58, "top" : 1.44, "height" : 4.62, "width" : 9.08} -->
+![](../../assets/images/kubernetes/Service-Creation.png) <!-- {"left" : 0.58, "top" : 1.44, "height" : 4.62, "width" : 9.08} -->
 
 Notes:
 
@@ -442,7 +442,7 @@ Resources within a single Namespace, must have unique names.
 
 ## Namespace Creation
 
-![](../images/Namespace.png) <!-- {"left" : 0.7, "top" : 1.31, "height" : 4.89, "width" : 8.85} -->
+![](../../assets/images/kubernetes/Namespace.png) <!-- {"left" : 0.7, "top" : 1.31, "height" : 4.89, "width" : 8.85} -->
 
 Notes:
 
@@ -481,7 +481,7 @@ Horizontal Pod Autoscaling does not apply to “un-scalable” objects.
 
 ## Horizontal Pod Autoscaler
 
-![](../images/Horizontal-Pod-Autoscaler.png) <!-- {"left" : 0.6, "top" : 1.12, "height" : 5.51, "width" : 9.06} -->
+![](../../assets/images/kubernetes/Horizontal-Pod-Autoscaler.png) <!-- {"left" : 0.6, "top" : 1.12, "height" : 5.51, "width" : 9.06} -->
 
 Notes:
 
@@ -531,7 +531,7 @@ Horizontal Pod Autoscaler is bound to the deployment object - it sets the size f
 ```python
 $> kubectl create <volume>
 ```
-![](../images/Kubernetes-volumes-01.png) <!-- {"left" : 0.95, "top" : 3.15, "height" : 3.01, "width" : 8.34} -->
+![](../../assets/images/kubernetes/Kubernetes-volumes-01.png) <!-- {"left" : 0.95, "top" : 3.15, "height" : 3.01, "width" : 8.34} -->
 
 Notes:
 
@@ -543,7 +543,7 @@ Notes:
   * Volume does not allow data sharing between containers or lifecycle management
 
 
-![](../images/Docker-host.png) <!-- {"left" : 1.83, "top" : 2.09, "height" : 5.06, "width" : 6.58} -->
+![](../../assets/images/kubernetes/Docker-host.png) <!-- {"left" : 1.83, "top" : 2.09, "height" : 5.06, "width" : 6.58} -->
 
 Notes:
 
@@ -554,7 +554,7 @@ Notes:
   * Kubernetes volumes permits containers in pods to share data and be stateful
 
 
-![](../images/Kubernetes-volumes.png) <!-- {"left" : 3.11, "top" : 2.3, "height" : 4.29, "width" : 4.03} -->
+![](../../assets/images/kubernetes/Kubernetes-volumes.png) <!-- {"left" : 3.11, "top" : 2.3, "height" : 4.29, "width" : 4.03} -->
 
 Notes:
 
@@ -566,7 +566,7 @@ Notes:
 ```python
 $> kubectl create –f pod.yaml
 ```
-![](../images/Kubernetes-volumes-02.png) <!-- {"left" : 0.95, "top" : 2.75, "height" : 3.01, "width" : 8.35} -->
+![](../../assets/images/kubernetes/Kubernetes-volumes-02.png) <!-- {"left" : 0.95, "top" : 2.75, "height" : 3.01, "width" : 8.35} -->
 
 Notes:
 
@@ -578,7 +578,7 @@ Notes:
 
   * Connect to containers before they are brought online
 
-![](../images/Kubernetes-volumes-03.png) <!-- {"left" : 0.87, "top" : 2.18, "height" : 3.15, "width" : 8.51} -->
+![](../../assets/images/kubernetes/Kubernetes-volumes-03.png) <!-- {"left" : 0.87, "top" : 2.18, "height" : 3.15, "width" : 8.51} -->
 
 Notes:
 
@@ -588,7 +588,7 @@ Notes:
   * After the volume is attached, data is mounted into a container’s file system
 
 
-![](../images/Kubernetes-volumes-04.png) <!-- {"left" : 0.87, "top" : 2.18, "height" : 3.15, "width" : 8.51} -->
+![](../../assets/images/kubernetes/Kubernetes-volumes-04.png) <!-- {"left" : 0.87, "top" : 2.18, "height" : 3.15, "width" : 8.51} -->
 
 Notes:
 
@@ -598,7 +598,7 @@ Notes:
 
   * The container is run and can access the mounted data
 
-![](../images/Kubernetes-volumes-05.png) <!-- {"left" : 1.13, "top" : 2.18, "height" : 3.15, "width" : 7.99} -->
+![](../../assets/images/kubernetes/Kubernetes-volumes-05.png) <!-- {"left" : 1.13, "top" : 2.18, "height" : 3.15, "width" : 7.99} -->
 
 Notes:
 
@@ -607,7 +607,7 @@ Notes:
 
   * Few volumes share the lifecycle of their pod with others
 
-![](../images/Kubernetes-volumes-06.png) <!-- {"left" : 2.56, "top" : 1.77, "height" : 3.95, "width" : 5.14} -->
+![](../../assets/images/kubernetes/Kubernetes-volumes-06.png) <!-- {"left" : 2.56, "top" : 1.77, "height" : 3.95, "width" : 5.14} -->
 
 
 Notes:
@@ -618,7 +618,7 @@ Notes:
 
 * Cluster Overview
 
-![](../images/kubectl.png) <!-- {"left" : 0.86, "top" : 2.12, "height" : 3.26, "width" : 8.54} -->
+![](../../assets/images/kubernetes/kubectl.png) <!-- {"left" : 0.86, "top" : 2.12, "height" : 3.26, "width" : 8.54} -->
 
 
 Notes:
@@ -631,7 +631,7 @@ Notes:
 
   * A kubelet checks whether the pod is alive and healthy, when it receives a negative response or no reply
 
-![](../images/Kubelet.png) <!-- {"left" : 1.21, "top" : 2.63, "height" : 2.74, "width" : 7.84} -->
+![](../../assets/images/kubernetes/Kubelet.png) <!-- {"left" : 1.21, "top" : 2.63, "height" : 2.74, "width" : 7.84} -->
 
 
 Notes:
@@ -641,7 +641,7 @@ Notes:
 
   * Kubelet then restarts the pod
 
-![](../images/Kubelet-01.png) <!-- {"left" : 2.15, "top" : 2.14, "height" : 3.72, "width" : 5.95} -->
+![](../../assets/images/kubernetes/Kubelet-01.png) <!-- {"left" : 2.15, "top" : 2.14, "height" : 3.72, "width" : 5.95} -->
 
 
 Notes:
@@ -651,7 +651,7 @@ Notes:
 
   * Kubelet continuous to restart a pod until it gets a healthy reply
 
-![](../images/Kubelet-02.png) <!-- {"left" : 1.71, "top" : 2.38, "height" : 2.74, "width" : 6.84} -->
+![](../../assets/images/kubernetes/Kubelet-02.png) <!-- {"left" : 1.71, "top" : 2.38, "height" : 2.74, "width" : 6.84} -->
 
 Notes:
 
@@ -758,7 +758,7 @@ kubeadm join --token 4d138d.f5b4b78e952fb7fd 172.31.45.206:6443
 kubectl get nodes
 ```
 
-![](../images/Notes03.png) <!-- {"left" : 0.52, "top" : 5.39, "height" : 1.04, "width" : 9.28} -->
+![](../../assets/images/kubernetes/Notes03.png) <!-- {"left" : 0.52, "top" : 5.39, "height" : 1.04, "width" : 9.28} -->
 
 
 
@@ -884,7 +884,7 @@ Stateless applications without disk access such as a converter services for geo 
 
   * Deployment controller deploys stateless applications as uniform, non-unique Pods.
 
-![](../images/Stateless.png) <!-- {"left" : 7.32, "top" : 5.2, "height" : 1.64, "width" : 2.46} -->
+![](../../assets/images/kubernetes/Stateless.png) <!-- {"left" : 7.32, "top" : 5.2, "height" : 1.64, "width" : 2.46} -->
 
 Notes:
 
@@ -914,7 +914,7 @@ For example, a frontend application is stateless.
     - Stateful – Use persistent storage to save data.
 
 
-![](../images/Deployments-Specification.png) <!-- {"left" : 8.23, "top" : 2, "height" : 1.53, "width" : 1.53} -->
+![](../../assets/images/kubernetes/Deployments-Specification.png) <!-- {"left" : 8.23, "top" : 2, "height" : 1.53, "width" : 1.53} -->
 
 
 Notes:
@@ -974,7 +974,7 @@ Describe the information about the Deployment in a pod. It will list all details
 ## Stateful Sets Application
 
 
-![](../images/Stateful-Sets-Application.png) <!-- {"left" : 2.29, "top" : 1.09, "height" : 5.91, "width" : 5.67} -->
+![](../../assets/images/kubernetes/Stateful-Sets-Application.png) <!-- {"left" : 2.29, "top" : 1.09, "height" : 5.91, "width" : 5.67} -->
 
 
 Notes:
@@ -1050,7 +1050,7 @@ apiVersion: webservice1
 ## Running a Stateful Application - Example
 
 
-![](../images/running.png) <!-- {"left" : 8.34, "top" : 0.9, "height" : 1.73, "width" : 1.67} -->
+![](../../assets/images/kubernetes/running.png) <!-- {"left" : 8.34, "top" : 0.9, "height" : 1.73, "width" : 1.67} -->
 
 
   * To Run a stateful application:
@@ -1216,7 +1216,7 @@ Notes:
   * Here is the workflow that you will go through with Jenkins
 
 
-![](../images/dev-tools.png) <!-- {"left" : 2.12, "top" : 1.52, "height" : 5.91, "width" : 6.01} -->
+![](../../assets/images/kubernetes/dev-tools.png) <!-- {"left" : 2.12, "top" : 1.52, "height" : 5.91, "width" : 6.01} -->
 
 Notes:
 
@@ -1226,7 +1226,7 @@ Notes:
 
   * How Jenkins gets deployed to Kubernetes
 
-![](../images/kubernetes-1-.png) <!-- {"left" : 1.65, "top" : 1.9, "height" : 5.26, "width" : 6.95} -->
+![](../../assets/images/kubernetes/kubernetes-1-.png) <!-- {"left" : 1.65, "top" : 1.9, "height" : 5.26, "width" : 6.95} -->
 
 Notes:
 
@@ -1241,9 +1241,9 @@ Notes:
     - Ports
     - Mount volume and path
 
-![](../images/kubernetes-1-2.png) <!-- {"left" : 3.42, "top" : 3.89, "height" : 3.04, "width" : 2.77} -->
+![](../../assets/images/kubernetes/kubernetes-1-2.png) <!-- {"left" : 3.42, "top" : 3.89, "height" : 3.04, "width" : 2.77} -->
 
-![](../images/Jenkins-deployment.png) <!-- {"left" : 6.41, "top" : 1.62, "height" : 5.43, "width" : 3.53} -->
+![](../../assets/images/kubernetes/Jenkins-deployment.png) <!-- {"left" : 6.41, "top" : 1.62, "height" : 5.43, "width" : 3.53} -->
 
 
 
@@ -1258,9 +1258,9 @@ Notes:
     - Service port
 
 
-![](../images/kubernetes-1-3.png) <!-- {"left" : 2.78, "top" : 2.03, "height" : 4.24, "width" : 2.73} -->
+![](../../assets/images/kubernetes/kubernetes-1-3.png) <!-- {"left" : 2.78, "top" : 2.03, "height" : 4.24, "width" : 2.73} -->
 
-![](../images/Jenkins-ngress.png) <!-- {"left" : 5.79, "top" : 1.71, "height" : 4.58, "width" : 4.46} -->
+![](../../assets/images/kubernetes/Jenkins-ngress.png) <!-- {"left" : 5.79, "top" : 1.71, "height" : 4.58, "width" : 4.46} -->
 
 
 Notes:
@@ -1273,9 +1273,9 @@ Notes:
     - Docker image to run
     - Docker binary/socket
 
-![](../images/kubernetes-1-4.png) <!-- {"left" : 0.3, "top" : 3.82, "height" : 1.86, "width" : 4.26} -->
+![](../../assets/images/kubernetes/kubernetes-1-4.png) <!-- {"left" : 0.3, "top" : 3.82, "height" : 1.86, "width" : 4.26} -->
 
-![](../images/Jenkins-Agents.png) <!-- {"left" : 4.83, "top" : 2.68, "height" : 4.15, "width" : 5.07} -->
+![](../../assets/images/kubernetes/Jenkins-Agents.png) <!-- {"left" : 4.83, "top" : 2.68, "height" : 4.15, "width" : 5.07} -->
 
 
 Notes:
@@ -1287,7 +1287,7 @@ Notes:
   * The application is similar to the one discussed earlier with the fronted exposed to the internet
 
 
-![](../images/service-assigns-1-1.png) <!-- {"left" : 3.86, "top" : 1.77, "height" : 5.04, "width" : 6.06} -->
+![](../../assets/images/kubernetes/service-assigns-1-1.png) <!-- {"left" : 3.86, "top" : 1.77, "height" : 5.04, "width" : 6.06} -->
 
 Notes:
 
@@ -1298,7 +1298,7 @@ Notes:
   * Jenkins pipeline defines how the build, test, and deploy cycle will be managed
 
 
-![](../images/develop.png) <!-- {"left" : 0.38, "top" : 3.21, "height" : 1.07, "width" : 9.49} -->
+![](../../assets/images/kubernetes/develop.png) <!-- {"left" : 0.38, "top" : 3.21, "height" : 1.07, "width" : 9.49} -->
 
 Notes:
 
@@ -1309,7 +1309,7 @@ Notes:
   * Example - Jenkins pipeline file with checkout, build, test, push, and deployment
 
 
-![](../images/Jenkins-Pipeline.png) <!-- {"left" : 1.91, "top" : 2.09, "height" : 5.2, "width" : 6.44} -->
+![](../../assets/images/kubernetes/Jenkins-Pipeline.png) <!-- {"left" : 1.91, "top" : 2.09, "height" : 5.2, "width" : 6.44} -->
 
 Notes:
 
@@ -1322,7 +1322,7 @@ Notes:
   * https://jenkins.io/
 
 
-![](../images/Jenkins-Configured.png) <!-- {"left" : 0.67, "top" : 2.49, "height" : 4.29, "width" : 6.29} -->
+![](../../assets/images/kubernetes/Jenkins-Configured.png) <!-- {"left" : 0.67, "top" : 2.49, "height" : 4.29, "width" : 6.29} -->
 
 Notes:
 
@@ -1332,7 +1332,7 @@ Notes:
 
   * Using Canary, we will have the same labels across all deployments
 
-![](../images/Canary-Release.png) <!-- {"left" : 0, "top" : 2.38, "height" : 3.61, "width" : 10.25} -->
+![](../../assets/images/kubernetes/Canary-Release.png) <!-- {"left" : 0, "top" : 2.38, "height" : 3.61, "width" : 10.25} -->
 
 Notes:
 
@@ -1341,7 +1341,7 @@ Notes:
 
   * The label will distinguish production from staging
 
-![](../images/Canary-Release1.png) <!-- {"left" : 0, "top" : 2.38, "height" : 3.61, "width" : 10.25} -->
+![](../../assets/images/kubernetes/Canary-Release1.png) <!-- {"left" : 0, "top" : 2.38, "height" : 3.61, "width" : 10.25} -->
 
 Notes:
 

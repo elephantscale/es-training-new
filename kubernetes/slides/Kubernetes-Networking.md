@@ -318,7 +318,7 @@ Calico provides simple, scalable and secure virtual networking.
 ## Cross Node Pod-to-Pod Network Connectivity
 
 
-![](../images/Cross-Node-Pod-to-Pod-Network-Connectivity.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+![](../../assets/images/kubernetes/Cross-Node-Pod-to-Pod-Network-Connectivity.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 
 Notes:
@@ -341,7 +341,7 @@ So from above Kubernetes requirements following communication paths must be esta
 ## Service Anatomy
 
 
-![](../images/Service-Anatomy.png) <!-- {"left" : 1.47, "top" : 1.12, "height" : 5.27, "width" : 7.31} -->
+![](../../assets/images/kubernetes/Service-Anatomy.png) <!-- {"left" : 1.47, "top" : 1.12, "height" : 5.27, "width" : 7.31} -->
 
 Notes:
 
@@ -361,11 +361,11 @@ Explained in slide 39: Service Discovery Components
 
 **Client Discovery**
 
-![](../images/Service-Anatomy.png) <!-- {"left" : 3.65, "top" : 0.93, "height" : 3.09, "width" : 4.29} -->
+![](../../assets/images/kubernetes/Service-Anatomy.png) <!-- {"left" : 3.65, "top" : 0.93, "height" : 3.09, "width" : 4.29} -->
 
 **Server Discovery**
 
-![](../images/Service-Discovery.png) <!-- {"left" : 1.97, "top" : 4.48, "height" : 2.82, "width" : 4.82} -->
+![](../../assets/images/kubernetes/Service-Discovery.png) <!-- {"left" : 1.97, "top" : 4.48, "height" : 2.82, "width" : 4.82} -->
 
 
 Notes:
@@ -512,7 +512,7 @@ If we get a 404 code, we know the Web Service is down.
 
 ## Flannel Details
 
-![](../images/flannel1.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+![](../../assets/images/kubernetes/flannel1.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 
 ## Flannel Networks
@@ -529,7 +529,7 @@ If we get a 404 code, we know the Web Service is down.
 
 ## Flannel Pod to Pod Communication
 
-![](../images/flannel2.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+![](../../assets/images/kubernetes/flannel2.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 ---
 
@@ -560,14 +560,14 @@ If we get a 404 code, we know the Web Service is down.
 
 ## Weave Net
 
-![](../images/weave-net-overview.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+![](../../assets/images/kubernetes/weave-net-overview.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 ---
 
 
 ## Weave Net Overview
 
-![](../images/weave-net-network.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+![](../../assets/images/kubernetes/weave-net-network.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 
 ## Weave Net Advantages and Disadvantages

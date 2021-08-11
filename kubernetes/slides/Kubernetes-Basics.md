@@ -57,7 +57,7 @@ In addition to the objectives you identified in taking this module, these are th
   * Faster Defect Isolation
   * Responsibility
 
-![](../images/microservices.png) <!-- {"left" : 6.87, "top" : 2.37, "height" : 3.14, "width" : 3.13} -->
+![](../../assets/images/kubernetes/microservices.png) <!-- {"left" : 6.87, "top" : 2.37, "height" : 3.14, "width" : 3.13} -->
 
 
 Notes:
@@ -133,7 +133,7 @@ It is extremely difficult to find good architects for creating Microservice arch
 ## Shipping Software is Hard
 
 
-![](../images/Shipping.png) <!-- {"left" : 0.41, "top" : 1.46, "height" : 4.58, "width" : 9.43} -->
+![](../../assets/images/kubernetes/Shipping.png) <!-- {"left" : 0.41, "top" : 1.46, "height" : 4.58, "width" : 9.43} -->
 
 
 Notes:
@@ -260,7 +260,7 @@ This could be from a developer's laptop to a test environment, from a staging en
 
 ## Docker is the Shipping Container for Code
 
-![](../images/docker-Shipping.png) <!-- {"left" : 0.48, "top" : 1.47, "height" : 4.5, "width" : 9.28} -->
+![](../../assets/images/kubernetes/docker-Shipping.png) <!-- {"left" : 0.48, "top" : 1.47, "height" : 4.5, "width" : 9.28} -->
 
 Notes:
 
@@ -316,7 +316,7 @@ Another great development feature: Docker lets developers troubleshoot productio
     - Portable
     - Efficient
 
-![](../images/Virtual_Machine_Docker.png) <!-- {"left" : 6.00, "top" : 1.00, "height" : 5.55, "width" : 2.98} -->
+![](../../assets/images/kubernetes/Virtual_Machine_Docker.png) <!-- {"left" : 6.00, "top" : 1.00, "height" : 5.55, "width" : 2.98} -->
 
 Notes:
 
@@ -363,7 +363,7 @@ Git:  Git and Docker both have a significant learning curve and can be a cost
 
 ## How Does Docker Work?
 
-![](../images/Docker-Registry.png) <!-- {"left" : 0.59, "top" : 1.57, "height" : 4.88, "width" : 9.16} -->
+![](../../assets/images/kubernetes/Docker-Registry.png) <!-- {"left" : 0.59, "top" : 1.57, "height" : 4.88, "width" : 9.16} -->
 
 Notes:
 
@@ -413,7 +413,7 @@ The first step with Docker is to modernize the existing application portfolio. P
 
 * Reproducibility
 
-![](../images/docker-1.png) <!-- {"left" : 6.32, "top" : 1.89, "height" : 4.74, "width" : 3.76} -->
+![](../../assets/images/kubernetes/docker-1.png) <!-- {"left" : 6.32, "top" : 1.89, "height" : 4.74, "width" : 3.76} -->
 
 
 Notes:
@@ -500,7 +500,7 @@ As we mentioned above, it is easy to explain what the container orchestration do
  * Nginx/Appache + PHP + DB
  * Probably don't need orchestration
 
-![](../images/Shipping-Container.png) <!-- {"left" : 0.65, "top" : 2.00, "height" : 5.12, "width" : 8.94} -->
+![](../../assets/images/kubernetes/Shipping-Container.png) <!-- {"left" : 0.65, "top" : 2.00, "height" : 5.12, "width" : 8.94} -->
 
 Notes:
 
@@ -516,7 +516,7 @@ If your current software infrastructure looks something like this — maybe 
   * Scalability Requires Decoupling
   * Caches and Queues Help Decouple
 
-![](../images/Shipping-Container-2.png) <!-- {"left" : 0.44, "top" : 2.0, "height" : 5.29, "width" : 9.36} -->
+![](../../assets/images/kubernetes/Shipping-Container-2.png) <!-- {"left" : 0.44, "top" : 2.0, "height" : 5.29, "width" : 9.36} -->
 
 Notes:
 
@@ -544,7 +544,7 @@ These are solved with the following architectural principle: decoupling. Decoupl
      - Abbreviation derived by replacing 8 letters of “ubernete” with ‘8’ and subsequent ‘s’.
 
 
-![](../images/Kubernetes-logo.png) <!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
 
 Notes:
 
@@ -569,7 +569,7 @@ Kubernetes originates from Greek, meaning helmsman or pilot, and is the root
   * Provides the simplicity of PaaS with the flexibility of IaaS.
   * Enables portability across infrastructure providers.
 
-![](../images/Kubernetes-logo.png) <!-- {"left" : 3.74, "top" : 5, "height" : 2.26, "width" : 2.77} -->
+![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 3.74, "top" : 5, "height" : 2.26, "width" : 2.77} -->
 
 Notes:
 
@@ -594,7 +594,7 @@ Deleting the original replication controller.
 * Easy Co-ordination of Deployments
 
 
-![](../images/Kubernetes-logo.png) <!-- {"left" : 3.66, "top" : 3.81, "height" : 2.66, "width" : 2.92} -->
+![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 3.66, "top" : 3.81, "height" : 2.66, "width" : 2.92} -->
 
 
 Notes:
@@ -654,7 +654,7 @@ Kubernetes tries to evenly balance the load on the cluster machines.  So there a
 
 ## A Big Picture Overview of Kubernetes
 
-![](../images/The-foot.png) <!-- {"left" : 0.47, "top" : 1.56, "height" : 4.38, "width" : 9.31} -->
+![](../../assets/images/kubernetes/The-foot.png) <!-- {"left" : 0.47, "top" : 1.56, "height" : 4.38, "width" : 9.31} -->
 
 Notes:
 
@@ -664,7 +664,7 @@ Notes:
 
   * User view
 
-![](../images/api-container.png) <!-- {"left" : 0.28, "top" : 3.13, "height" : 1.75, "width" : 9.73} -->
+![](../../assets/images/kubernetes/api-container.png) <!-- {"left" : 0.28, "top" : 3.13, "height" : 1.75, "width" : 9.73} -->
 
 Notes:
 
@@ -672,7 +672,7 @@ Notes:
 
 ## Kubernetes Architecture
 
-![](../images/Kubernetes-Master.png) <!-- {"left" : 0.33, "top" : 1.05, "height" : 5.91, "width" : 9.58} -->
+![](../../assets/images/kubernetes/Kubernetes-Master.png) <!-- {"left" : 0.33, "top" : 1.05, "height" : 5.91, "width" : 9.58} -->
 
 
 Notes:
@@ -693,7 +693,7 @@ A typical cluster has one or more nodes, that are called worker machines, which
 
 ## Kubernetes Master Architecture
 
-![](../images/Kubernetes-Master-Architecture.png) <!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
+![](../../assets/images/kubernetes/Kubernetes-Master-Architecture.png) <!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
 
 
 Notes:
@@ -724,7 +724,7 @@ Controller continuously monitors the state of the cluster through the API Server
 
 ## Kubernetes Architecture: Node
 
-![](../images/Kubernetes-Node-Architecture.png) <!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+![](../../assets/images/kubernetes/Kubernetes-Node-Architecture.png) <!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 
 Notes:
@@ -784,7 +784,7 @@ A pod models an application-specific “logical host” containing one or more a
 
   * A Pod is a group of containers which shares networking and storage which are separate from the node
 
-![](../images/VM.png) <!-- {"left" : 2.37, "top" : 2.11, "height" : 4.88, "width" : 5.52} -->
+![](../../assets/images/kubernetes/VM.png) <!-- {"left" : 2.37, "top" : 2.11, "height" : 4.88, "width" : 5.52} -->
 
 Notes:
 
@@ -792,7 +792,7 @@ Notes:
 
 ## Pod vs. Container
 
-![](../images/Pod-Container.png) <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
+![](../../assets/images/kubernetes/Pod-Container.png) <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
 
 Notes:
 
@@ -814,7 +814,7 @@ Few if those are listed below:
 
 ## Pod vs. Container
 
-![](../images/Pod-Container1.png) <!-- {"left" : 0.45, "top" : 1.23, "height" : 4.83, "width" : 9.32} -->
+![](../../assets/images/kubernetes/Pod-Container1.png) <!-- {"left" : 0.45, "top" : 1.23, "height" : 4.83, "width" : 9.32} -->
 
 
 Notes:
@@ -911,7 +911,7 @@ Put object descriptions in annotations, to allow better introspection.
 
   * Define a pod with a YAML file
 
-![](../images/Configuring-a-Pod.png) <!-- {"left" : 0.49, "top" : 1.78, "height" : 4.94, "width" : 5.17} -->
+![](../../assets/images/kubernetes/Configuring-a-Pod.png) <!-- {"left" : 0.49, "top" : 1.78, "height" : 4.94, "width" : 5.17} -->
 
 Notes:
 
@@ -921,7 +921,7 @@ Notes:
 
   * Upload the YAML file to the master
 
-![](../images/pod.yaml.png) <!-- {"left" : 0.99, "top" : 2.43, "height" : 3.15, "width" : 8.27} -->
+![](../../assets/images/kubernetes/pod.yaml.png) <!-- {"left" : 0.99, "top" : 2.43, "height" : 3.15, "width" : 8.27} -->
 
 Notes:
 
@@ -930,7 +930,7 @@ Notes:
 
   * The master creates a pod on your set of nodes
 
-![](../images/pod.yaml-01.png) <!-- {"left" : 0.99, "top" : 2.18, "height" : 3.15, "width" : 8.27} -->
+![](../../assets/images/kubernetes/pod.yaml-01.png) <!-- {"left" : 0.99, "top" : 2.18, "height" : 3.15, "width" : 8.27} -->
 
 Notes:
 
@@ -940,7 +940,7 @@ Notes:
 
   * A pod file is consists of several parts, for example
 
-![](../images/Composition.png) <!-- {"left" : 0.26, "top" : 2.02, "height" : 3.99, "width" : 6.25} -->
+![](../../assets/images/kubernetes/Composition.png) <!-- {"left" : 0.26, "top" : 2.02, "height" : 3.99, "width" : 6.25} -->
 
 Notes:
 
@@ -1009,7 +1009,7 @@ Scaling: If the load increase become unmanageable for the existing instances, th
 
 ## ReplicaSet
 
-![](../images/ReplicaSet.png) <!-- {"left" : 0.58, "top" : 1.5, "height" : 5, "width" : 9.08} -->
+![](../../assets/images/kubernetes/ReplicaSet.png) <!-- {"left" : 0.58, "top" : 1.5, "height" : 5, "width" : 9.08} -->
 
 Notes:
 
@@ -1024,7 +1024,7 @@ We are running 4 copies of the application using ReplicaSet. Please note that na
 
 ## ReplicaSet
 
-![](../images/Replication-Controller.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
+![](../../assets/images/kubernetes/Replication-Controller.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
 
 
 Notes:
@@ -1043,7 +1043,7 @@ Node    = 4
 
 ## ReplicaSet
 
-![](../images/Replication-Controller-01.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
+![](../../assets/images/kubernetes/Replication-Controller-01.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
 
 
 Notes:
@@ -1063,7 +1063,7 @@ Then, one node is going to down. Let’s see how the replica set will replicate 
 
 ## ReplicaSet
 
-![](../images/Replication-Controller-02.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
+![](../../assets/images/kubernetes/Replication-Controller-02.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
 
 
 Notes:
@@ -1084,7 +1084,7 @@ Then, one node is going to down. We now have 3 nodes.
 
 ## ReplicaSet
 
-![](../images/Replication-Controller-03.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
+![](../../assets/images/kubernetes/Replication-Controller-03.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
 
 
 Notes:
@@ -1129,7 +1129,7 @@ A Replication Controller allows us to easily create multiple pods ensures that t
 
   * For example, create a new file called rc.yaml and add the following text:
 
-![](../images/Replication-Example.png) <!-- {"left" : 1.62, "top" : 1.95, "height" : 4.66, "width" : 7.02} -->
+![](../../assets/images/kubernetes/Replication-Example.png) <!-- {"left" : 1.62, "top" : 1.95, "height" : 4.66, "width" : 7.02} -->
 
 
 Notes:
@@ -1176,7 +1176,7 @@ Replica Set makes sure that required number of pod replicas are running at all t
   * For example, we could create a Replica Set like this:
 
 
-![](../images/Replica-Set-Example.png) <!-- {"left" : 1.91, "top" : 1.63, "height" : 4.73, "width" : 6.44} -->
+![](../../assets/images/kubernetes/Replica-Set-Example.png) <!-- {"left" : 1.91, "top" : 1.63, "height" : 4.73, "width" : 6.44} -->
 
 Notes:
 
@@ -1230,7 +1230,7 @@ Pause the Deployment to apply multiple fixes to its PodTemplateSpec and then res
 
   * Deployments depend on ReplicaSets to manage and run pods
 
-![](../images/Deployments.png) <!-- {"left" : 0.57, "top" : 1.82, "height" : 4.34, "width" : 9.14} -->
+![](../../assets/images/kubernetes/Deployments.png) <!-- {"left" : 0.57, "top" : 1.82, "height" : 4.34, "width" : 9.14} -->
 
 Notes:
 
@@ -1240,7 +1240,7 @@ Notes:
 
   * Deployments monitor cluster and update changes when required
 
-![](../images/Deployments-01.png) <!-- {"left" : 0.55, "top" : 2.33, "height" : 3.65, "width" : 9.18} -->
+![](../../assets/images/kubernetes/Deployments-01.png) <!-- {"left" : 0.55, "top" : 2.33, "height" : 3.65, "width" : 9.18} -->
 
 Notes:
 
@@ -1250,7 +1250,7 @@ Notes:
 
   * Deployments monitor pods and make correction when then stop working
 
-![](../images/Deployments-02.png) <!-- {"left" : 0.9, "top" : 2.42, "height" : 4.02, "width" : 8.46} -->
+![](../../assets/images/kubernetes/Deployments-02.png) <!-- {"left" : 0.9, "top" : 2.42, "height" : 4.02, "width" : 8.46} -->
 
 Notes:
 
@@ -1260,7 +1260,7 @@ Notes:
 
   * Deployments constantly monitor cluster to observe changes
 
-![](../images/Deployments-03.png) <!-- {"left" : 0.79, "top" : 2.27, "height" : 3.45, "width" : 8.68} -->
+![](../../assets/images/kubernetes/Deployments-03.png) <!-- {"left" : 0.79, "top" : 2.27, "height" : 3.45, "width" : 8.68} -->
 
 Notes:
 
@@ -1270,7 +1270,7 @@ Notes:
 
   * Rolling updates permit you to update from one image version to another
 
-![](../images/Deployments-04.png) <!-- {"left" : 0.99, "top" : 1.89, "height" : 4.93, "width" : 8.28} -->
+![](../../assets/images/kubernetes/Deployments-04.png) <!-- {"left" : 0.99, "top" : 1.89, "height" : 4.93, "width" : 8.28} -->
 
 Notes:
 
@@ -1280,7 +1280,7 @@ Notes:
 
   * This deployment allows you to create a second ReplicaSet
 
-![](../images/Deployments-05.png) <!-- {"left" : 0.47, "top" : 2.91, "height" : 2.17, "width" : 9.31} -->
+![](../../assets/images/kubernetes/Deployments-05.png) <!-- {"left" : 0.47, "top" : 2.91, "height" : 2.17, "width" : 9.31} -->
 
 Notes:
 
@@ -1290,7 +1290,7 @@ Notes:
 
   * It gradually increases the number of replicas in the second ReplicaSet
 
-![](../images/Deployments-06.png) <!-- {"left" : 0.51, "top" : 2.92, "height" : 2.15, "width" : 9.23} -->
+![](../../assets/images/kubernetes/Deployments-06.png) <!-- {"left" : 0.51, "top" : 2.92, "height" : 2.15, "width" : 9.23} -->
 
 Notes:
 
@@ -1300,7 +1300,7 @@ Notes:
 
   * This decreases replicas in the first ReplicaSet
 
-![](../images/Deployments-07.png) <!-- {"left" : 0.69, "top" : 2.72, "height" : 2.07, "width" : 8.88} -->
+![](../../assets/images/kubernetes/Deployments-07.png) <!-- {"left" : 0.69, "top" : 2.72, "height" : 2.07, "width" : 8.88} -->
 
 Notes:
 
@@ -1310,7 +1310,7 @@ Notes:
 
   * Hence at any given point of time there are at most 4 pods
 
-![](../images/Deployments-08.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
+![](../../assets/images/kubernetes/Deployments-08.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
 
 Notes:
 
@@ -1321,7 +1321,7 @@ Notes:
   * Minimum of 3 pods
 
 
-![](../images/Deployments-09.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
+![](../../assets/images/kubernetes/Deployments-09.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
 
 Notes:
 
@@ -1333,7 +1333,7 @@ Notes:
 
 
 
-![](../images/Deployments-10.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
+![](../../assets/images/kubernetes/Deployments-10.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
 
 Notes:
 
@@ -1344,7 +1344,7 @@ Notes:
   * The previous state continues until new image version is rolled out
 
 
-![](../images/Deployments-11.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
+![](../../assets/images/kubernetes/Deployments-11.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
 
 Notes:
 
@@ -1354,7 +1354,7 @@ Notes:
 
   * A Canary deployment depends on a service to balance the load during traffic to primary pods based on label selectors
 
-![](../images/Canary-deployment.png) <!-- {"left" : 1.03, "top" : 2.35, "height" : 3.71, "width" : 8.2} -->
+![](../../assets/images/kubernetes/Canary-deployment.png) <!-- {"left" : 1.03, "top" : 2.35, "height" : 3.71, "width" : 8.2} -->
 
 Notes:
 
@@ -1364,7 +1364,7 @@ Notes:
 
   * Canary deployment tests a second deployment by load balancing a subset of traffic to new pods with the same label
 
-![](../images/Canary-deployment-01.png) <!-- {"left" : 0.4, "top" : 2.21, "height" : 3.09, "width" : 9.45} -->
+![](../../assets/images/kubernetes/Canary-deployment-01.png) <!-- {"left" : 0.4, "top" : 2.21, "height" : 3.09, "width" : 9.45} -->
 
 Notes:
 
@@ -1375,7 +1375,7 @@ Notes:
   * A blue-Green deployment make use the service label selector to change all traffic from one deployment to another
 
 
-![](../images/Canary-deployment-02.png) <!-- {"left" : 0.97, "top" : 2.35, "height" : 3.87, "width" : 8.3} -->
+![](../../assets/images/kubernetes/Canary-deployment-02.png) <!-- {"left" : 0.97, "top" : 2.35, "height" : 3.87, "width" : 8.3} -->
 
 
 Notes:
@@ -1387,7 +1387,7 @@ Notes:
   * Initially bring up and test new deployment without live traffic
 
 
-![](../images/Canary-deployment-03.png) <!-- {"left" : 0.62, "top" : 2.25, "height" : 3, "width" : 9.01} -->
+![](../../assets/images/kubernetes/Canary-deployment-03.png) <!-- {"left" : 0.62, "top" : 2.25, "height" : 3, "width" : 9.01} -->
 
 
 Notes:
@@ -1398,7 +1398,7 @@ Notes:
 
   * To make the version go live, change the service label selector which switches all traffic
 
-![](../images/Canary-deployment-04.png) <!-- {"left" : 0.49, "top" : 2.73, "height" : 3, "width" : 9.27} -->
+![](../../assets/images/kubernetes/Canary-deployment-04.png) <!-- {"left" : 0.49, "top" : 2.73, "height" : 3, "width" : 9.27} -->
 
 
 Notes:
@@ -1411,7 +1411,7 @@ Notes:
 
  * A deployment object ensures that _N_ pods are running in a cluster at any given point of time
 
-![](../images/pod.yaml-02.png) <!-- {"left" : 0.99, "top" : 2.18, "height" : 3.15, "width" : 8.27} -->
+![](../../assets/images/kubernetes/pod.yaml-02.png) <!-- {"left" : 0.99, "top" : 2.18, "height" : 3.15, "width" : 8.27} -->
 
 
 Notes:
@@ -1422,7 +1422,7 @@ Notes:
 
   * A deployment is defined with a YAML file
 
-![](../images/Deployment.png) <!-- {"left" : 0.77, "top" : 1.47, "height" : 5.49, "width" : 5.21} -->
+![](../../assets/images/kubernetes/Deployment.png) <!-- {"left" : 0.77, "top" : 1.47, "height" : 5.49, "width" : 5.21} -->
 
 
 Notes:
@@ -1435,7 +1435,7 @@ Notes:
 
   * A service allows other pods or services to communicate with the pod replicas
 
-![](../images/service-assigns.png) <!-- {"left" : 1.19, "top" : 2.41, "height" : 4.33, "width" : 7.87} -->
+![](../../assets/images/kubernetes/service-assigns.png) <!-- {"left" : 1.19, "top" : 2.41, "height" : 4.33, "width" : 7.87} -->
 
 
 Notes:
@@ -1447,7 +1447,7 @@ Notes:
   * You can have multiple services with varying configurations and features at any given time
 
 
-![](../images/service-assigns-1.png) <!-- {"left" : 0.87, "top" : 1.92, "height" : 4.77, "width" : 8.5} -->
+![](../../assets/images/kubernetes/service-assigns-1.png) <!-- {"left" : 0.87, "top" : 1.92, "height" : 4.77, "width" : 8.5} -->
 
 Notes:
 
@@ -1457,7 +1457,7 @@ Notes:
 
   * Define a service with a YAML file
 
-![](../images/YAML.png) <!-- {"left" : 0.77, "top" : 1.78, "height" : 4.62, "width" : 5.66} -->
+![](../../assets/images/kubernetes/YAML.png) <!-- {"left" : 0.77, "top" : 1.78, "height" : 4.62, "width" : 5.66} -->
 
 Notes:
 
@@ -1467,7 +1467,7 @@ Notes:
 
   * Let’s create a simple Deployment.
 
-![](../images/Deployment-Example.png) <!-- {"left" : 0.77, "top" : 1.78, "height" : 4.62, "width" : 5.66} -->
+![](../../assets/images/kubernetes/Deployment-Example.png) <!-- {"left" : 0.77, "top" : 1.78, "height" : 4.62, "width" : 5.66} -->
 
 
 Notes:
@@ -1497,7 +1497,7 @@ The template field contains the following instructions:
 
 simple Deployment.
 
-![](../images/pod.yaml-03.png) <!-- {"left" : 0.99, "top" : 2.67, "height" : 3.15, "width" : 8.27} -->
+![](../../assets/images/kubernetes/pod.yaml-03.png) <!-- {"left" : 0.99, "top" : 2.67, "height" : 3.15, "width" : 8.27} -->
 
 Notes:
 

@@ -3,9 +3,9 @@ Microservices
 
 # Microservices
 
-[Microservices Intro](../../microservices/microservices.md)
+[Microservices Intro](../../microservices/slides/microservices.md)
 
 # REST
 
-[REST Intro](../../microservices/rest-intro.md)
+[REST Intro](../../microservices/slides/REST-intro.md)
 

@@ -190,7 +190,7 @@ Calico provides simple, scalable and secure virtual networking.
 ## Cross Node Pod-to-Pod Network Connectivity
 
 
-![](../images/Cross-Node-Pod-to-Pod-Network-Connectivity.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+![](../../assets/images/kubernetes/Cross-Node-Pod-to-Pod-Network-Connectivity.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 
 Notes:
@@ -216,7 +216,7 @@ So from above Kubernetes requirements following communication paths must be esta
 ## Service Anatomy
 
 
-![](../images/Service-Anatomy.png) <!-- {"left" : 1.47, "top" : 1.12, "height" : 5.27, "width" : 7.31} -->
+![](../../assets/images/kubernetes/Service-Anatomy.png) <!-- {"left" : 1.47, "top" : 1.12, "height" : 5.27, "width" : 7.31} -->
 
 Notes:
 
@@ -236,11 +236,11 @@ Explained in slide 39: Service Discovery Components
 
 **Client Discovery**
 
-![](../images/Service-Anatomy.png) <!-- {"left" : 3.65, "top" : 0.93, "height" : 3.09, "width" : 4.29} -->
+![](../../assets/images/kubernetes/Service-Anatomy.png) <!-- {"left" : 3.65, "top" : 0.93, "height" : 3.09, "width" : 4.29} -->
 
 **Server Discovery**
 
-![](../images/Service-Discovery.png) <!-- {"left" : 1.97, "top" : 4.48, "height" : 2.82, "width" : 4.82} -->
+![](../../assets/images/kubernetes/Service-Discovery.png) <!-- {"left" : 1.97, "top" : 4.48, "height" : 2.82, "width" : 4.82} -->
 
 
 Notes:
@@ -438,7 +438,7 @@ It will take into consideration the load on Pods before sending traffic over.
 
 ## Internal Load Balancing
 
-![](../images/Internal-Load-Balancing.png) <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+![](../../assets/images/kubernetes/Internal-Load-Balancing.png) <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
 
 Notes:
 
@@ -456,7 +456,7 @@ Kubernetes does not use DNS based load balancing to avoid some of the known issu
 ## Internal Load Balancing (Cont.)
 
 
-![](../images/Internal-Load-Balancing-(Cont.).png) <!-- {"left" : 1.27, "top" : 1.66, "height" : 4.69, "width" : 7.79} -->
+![](../../assets/images/kubernetes/Internal-Load-Balancing-(Cont.).png) <!-- {"left" : 1.27, "top" : 1.66, "height" : 4.69, "width" : 7.79} -->
 
 Notes:
 
@@ -637,7 +637,7 @@ Kubernetes provides several ways to expose services to the outside.
 
   * Choosing **LoadBalancer** is probably the easiest of all methods to get your service exposed to the internet. The limitation is reliance on an external load balancer.
 
-![](../images/Docker-done.png) <!-- {"left" : 7.65, "top" : 6.34, "height" : 0.97, "width" : 2.39} -->
+![](../../assets/images/kubernetes/Docker-done.png) <!-- {"left" : 7.65, "top" : 6.34, "height" : 0.97, "width" : 2.39} -->
 
 
 Notes:
@@ -687,7 +687,7 @@ For example, we can specify all HTTPS (secure HTTP) traffic to be sent to certai
 
 
 
-![](../images/Ingress-based-HTTP-Load-Balancer.png) <!-- {"left" : 2.01, "top" : 1.01, "height" : 5.48, "width" : 6.24} -->
+![](../../assets/images/kubernetes/Ingress-based-HTTP-Load-Balancer.png) <!-- {"left" : 2.01, "top" : 1.01, "height" : 5.48, "width" : 6.24} -->
 
 
 Notes:

@@ -59,7 +59,7 @@ As we mentioned above, it is easy to explain what the container orchestration do
  * Nginx/Apache + PHP + DB (LAMP)
  * Probably don't need orchestration **UNLESS** you plant to scale.
 
-![](../images/Shipping-Container.png) <!-- {"left" : 0.65, "top" : 2.00, "height" : 5.12, "width" : 8.94} -->
+![](../../assets/images/kubernetes/Shipping-Container.png) <!-- {"left" : 0.65, "top" : 2.00, "height" : 5.12, "width" : 8.94} -->
 
 Notes:
 
@@ -75,7 +75,7 @@ If your current software infrastructure looks something like this — maybe 
   * Scalability Requires Decoupling
   * Caches and Queues Help Decouple
 
-![](../images/Shipping-Container-2.png) <!-- {"left" : 0.44, "top" : 2.0, "height" : 5.29, "width" : 9.36} -->
+![](../../assets/images/kubernetes/Shipping-Container-2.png) <!-- {"left" : 0.44, "top" : 2.0, "height" : 5.29, "width" : 9.36} -->
 
 Notes:
 
@@ -101,7 +101,7 @@ These are solved with the following architectural principle: decoupling. Decoupl
      - Abbreviation derived by replacing 8 letters of “ubernete” with ‘8’ and subsequent ‘s’.
 
 
-![](../images/Kubernetes-logo.png) <!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
 
 Notes:
 
@@ -126,7 +126,7 @@ Kubernetes originates from Greek, meaning helmsman or pilot, and is the root
   * Provides the simplicity of PaaS with the flexibility of IaaS.
   * Enables portability across infrastructure providers.
 
-![](../images/Kubernetes-logo.png) <!-- {"left" : 3.74, "top" : 5, "height" : 2.26, "width" : 2.77} -->
+![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 3.74, "top" : 5, "height" : 2.26, "width" : 2.77} -->
 
 Notes:
 
@@ -151,7 +151,7 @@ Deleting the original replication controller.
 * Easy Co-ordination of Deployments
 
 
-![](../images/Kubernetes-logo.png) <!-- {"left" : 3.66, "top" : 3.81, "height" : 2.66, "width" : 2.92} -->
+![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 3.66, "top" : 3.81, "height" : 2.66, "width" : 2.92} -->
 
 
 Notes:
@@ -210,7 +210,7 @@ Kubernetes tries to evenly balance the load on the cluster machines.  So there a
 
   * User view
 
-![](../images/api-container.png) <!-- {"left" : 0.28, "top" : 3.13, "height" : 1.75, "width" : 9.73} -->
+![](../../assets/images/kubernetes/api-container.png) <!-- {"left" : 0.28, "top" : 3.13, "height" : 1.75, "width" : 9.73} -->
 
 Notes:
 
