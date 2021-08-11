@@ -1,7 +1,9 @@
-Docker Introduction
-============
+# Docker Introduction
+---
 
 # Introducing Docker
+
+---
 
 ## What is Docker?
 
@@ -9,9 +11,10 @@ Docker Introduction
 
 * Docker is the current industry standard container format.
 * Docker (the company) also makes developer tools:
-* Docker for Windows
-* Docker for Mac
-* Docker for Linux
+   - Docker Desktop for Windows
+   - Docker Desktop for Mac
+   - Docker for Linux
+   - Docker EE (Enterprise Edition): Non-Free
 * Docker also has server-side container frameworks for Linux and Windows
 * Windows versions run on top of Hyper-V
 
@@ -29,15 +32,16 @@ application images.
 ---
 
 ##  Docker uses the Host Kernel
-* Docker will use the host kernel on Linux.
-* What about Windows and Mac (Developer) Versions of Docker?
+* Docker will use the host kernel on Linux, and thus run natively.
+* What about Docker Desktop Windows and Mac (Developer) Versions of Docker?
   - Windows and Mac versions run a virtualized Linux kernel in a VM
   - Only the kernel runs in the VM.  The container runs separately.
   - In Windows, the VM is in Hyper-V (and thus requires Hyper-V to be installed)
-  - On Mac, the VM runs in Apple’s Hypervisor Framework
+  - On Mac, the VM runs in Apple’s Hypervisor Framework which is usually already enabled.
 * Windows Server Native Windows Kernels
   - Windows Server Applications can run in Windows Native Containers on Windows Server
-  - No VMs involved. (although you may want a VM for security reasons)
+  - No VMs required. (although you may want a VM for security reasons)
+  - Not yet very common, but growing.
 
 
 Notes:
@@ -55,17 +59,17 @@ incompatible Windows kernels for various flavors of Windows.  Because of that, m
 
 ---
 
-## Docker for Windows (Developer)
+## Docker Desktop for Windows (Developer)
 
 ![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-horizontal.png)
 
- * Docker for Windows has the following requirements:
+ * Docker Desktop for Windows has the following requirements:
    * Windows 10 Professional 64 Bit (or Higher)  (not Home, Not Home Pro)
    * Virtualization Extensions Available in CPU and turned on in BIOS.
    * Hyper-V (optional component) installed
    * Reasonable CPU / Memory requirements
  * Docker Toolbox
-   * Windows Users unable to run Docker for Windows can run in Docker Toolbox
+   * Windows Users unable to run Docker Desktop for Windows can run in Docker Toolbox
    * Toolbox requires Oracle VirtualBox for Virtualization.
 
 ![http://www.virtualizationsoftware.com/wp-content/uploads/2013/04/hyperv-logo2.jpg](../images/windows-310290_1280.png) <!-- {"left" : 7.49, "top" : 0.75, "height" : 1.67, "width" : 2.81} -->
@@ -77,11 +81,11 @@ Notes:
 Instructor Notes:
 
 Participant Notes:
-Docker for Windows has fairly steep requirements.
+Docker Desktop for Windows has fairly steep requirements.
 
 Why does Docker require Hyper-V?  Because all containers on Windows require virtualization. Even windows containers require virtualization because those containers require Windows Server kernels which are different from Windows 10 (client) kernels.
 
-Hyper-V does not run on Windows Home versions (most consumer-grade windows machines).  So, Docker for Windows will not run on those versions either.  One needs a Windows Professional.
+Hyper-V does not run on Windows Home versions (most consumer-grade windows machines).  So, Docker Desktop for Windows will not run on those versions either.  One needs a Windows Professional.
 
 Hyper-V will require that Virtualization extensions be turned on in the BIOS.  Typically, from the factory these are turned off on client machines for security reasons, as some exploits have targeted these instruction sets.
 
@@ -93,7 +97,7 @@ Docker Toolbox can be used together with Oracle VirtualBox to run Docker contain
 ## Docker and Windows Server
 
 * Docker for Windows Server is designed for App deployment rather than Development
-  - Developers should use Docker for Windows instead.
+  - Developers should use Docker Desktop for Windows instead.
   - Supports running Linux containers containers (via Hyper-V)
   - And Native Windows Containers (using Hyper-V or native Windows Containers)
 * Native Windows Containers
@@ -121,6 +125,22 @@ platform.
 
 ---
 
+## Docker and WSL 2
+ * Microsoft is including a full Linux kernel in the new Windows Subsystem For Linux 2
+   - A bit of a "hell freezes over" moment considering history!
+   - But exciting news nontheless.
+   - THis is an **optional** install intended for developers only.
+ * This allows Windows users to install a full Ubuntu (or other distro) on top of Windows.
+ * This also allows Docker Users to run a native Linux conatiner on Windows (without using Hyper-V)!
+   - with the performance advantages of running native.
+ * This is very much "beta" and "bleeding edge" 
+ * Docker has a special Docker Desktop for WSL2 available for this.
+   - It is a different product than Docker Desktop for Windows, and **beta** software
+   - The two can be installed in parallel. 
+ * This isn't recommended right now for most users until it's ready for prime-time 
+
+---
+
 ## Docker on Windows Use Cases
 
 |                     | Windows 10 (Linux Kernel) | Windows 10 (Windows Server Kernel) | Windows Server (Virtualized Kernel) | Windows Server (Native Kernel) |
@@ -145,16 +165,19 @@ similar to what one would expect on Linux platforms.
 ---
 
 
-## Docker on Mac (Developer)
+## Docker Desktop on Mac (Developer)
 
 ![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-horizontal.png)
 
-* Docker on Mac is only supported as a development platform.
+* Docker Desktop on Mac is only supported as a development platform.
   - There are no ”native” mac containers as there are on Linux and Windows
 * Docker for Mac uses only Linux containers
-  - Windows containers can be run entirely inside a VM 
-  - Linux Containers use a VM for the Linux kernel only
+  - Windows containers can be run entirely inside a VM (but this is not common)
+  - Linux Containers use a VM for the Linux kernel only (much like Windows)
 * Docker for Mac uses Apple’s VM Hypervisor
+  - Note the Mac's BSD-based darwin kernel is not Linux and therefore must run a virtualized Linux Kernel.
+  - Usually turned on factory default (unlike most PCs)
+  - No special actions required.
 
 ![http://www.thriftysigns.com/apple-logo-decal-sticker-apple-logo](../images/apple-logo-decal-sticker-apple-logo-500x500.png) <!-- {"left" : 0.59, "top" : 5.02, "height" : 1.8, "width" : 1.8} -->
 
@@ -232,7 +255,7 @@ private container registries.  In fact, this is encouraged in Docker and rarely 
 very good reason to do so.
 
 The doesn't mean that one can't use Docker Hub.  If you want to start with, say, a basic linux image, using something from Docker Hub as a start makes
-a lot of sense.
+a lot of sense. Many corporate container registries will also mirror some or all Docker Hub artifacts.
 
 ---
 
@@ -261,13 +284,13 @@ store the binary container image (usually a hash) in a local place on the user's
 
 # Docker Commands
 
-## Docker LS (list)
- * typing `docker ls` will **list** your containers
+## Docker container ls (list)
+ * typing `docker continer ls` will **list** your containers
  * It will only show **running** containers
  * Stopped containers say `docker ls -a'
 
 ```console
- $ docker ls
+ $ docker container ls
 
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 hello-world         latest              e38bc07ac18e        5 weeks ago         1.85kB
@@ -377,9 +400,9 @@ Remember, Docker overlays changes from one filesystem to the next, so only the c
 
 ## Removing a Container
  * `docker rm` does **NOT** delete the container **image**.
-   - The container image is from Docker Hub.
+   - The container image is from Docker Hub or another repo.
    - It is stored locally in our local repo.
- * It deletes tehe container instance
+ * It deletes the container instance
    - The instance will container an overlay
    - Any changes to the original image are the overlay.
    - This is why we need OverlayFS in Docker.

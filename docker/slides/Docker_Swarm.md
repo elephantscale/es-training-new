@@ -1,9 +1,8 @@
-[ Back to Top Level](README.md)
-
-Docker Swarm
-============
+# Docker Swarm
+---
 
 # Intro To Docker Swarm
+---
 
 ## What is Docker Swarm?
 

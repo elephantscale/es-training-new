@@ -1,7 +1,5 @@
-[ Back to Top Level](README.md)
-
-Container Fundamentals
-===============
+# Container Fundamentals
+---
 
 ## Objectives
 
@@ -11,6 +9,8 @@ Container Fundamentals
  * Perform Orchestration With Docker Swarm
  * Gain Familiarity With CLI Tools
  * Health Checks
+
+---
 
 # Container Introduction 
 

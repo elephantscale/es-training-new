@@ -1,7 +1,5 @@
-[ Back to Top Level](README.md)
-
-Docker Health Checks
-============
+# Docker Health Checks
+---
 
 ## Container Health
 
@@ -11,10 +9,13 @@ Docker Health Checks
  * Docker doesn't interfere with conatiner
  * "Agnostic Design"
 
+---
+
 ## Health Checks
 
  * Health Checks should be specified in the Dockerfile.
 
+---
 
 ## Health Check Example
 
@@ -28,9 +29,12 @@ HEALTHCHECK CMD curl --fail http://localhost:3000/ || exit 1
 
  * Note that the health check returns 1 (bad) if failed.
 
+---
+
 ## Health Checks and Docker Swarm
 
  * Docker Swarm **requires** positive health checks 
  * That means your app should have at least one!
  * Good practice ot have sevreal
 
+---
