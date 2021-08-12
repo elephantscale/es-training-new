@@ -1,6 +1,6 @@
 # Spark Introduction
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 6.84, "top" : 7.74, "height" : 2.03, "width" : 3.83} -->
 
 ---
 
@@ -19,7 +19,7 @@
 
 ## Big Data V1: Hadoop
 
-<img src="../../assets/images/logos/hadoop-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.31, "top" : 0.97, "height" : 0.66, "width" : 2.83} -->
+<img src="../../assets/images/logos/hadoop-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 12.86, "top" : 2.46, "height" : 0.97, "width" : 4.17} -->
 
 * Hadoop was the first Big Data platform to be widely adopted
 
@@ -28,7 +28,7 @@
    - Operating System: **YARN** - manage the cluster
    - Processing: **MapReduce Engine** - distributed computing
 
-<img src="../../assets/images/hadoop/hadoop-1.png" style="width:50%;" /><!-- {"left" : 2.02, "top" : 5.6, "height" : 2.98, "width" : 6.21} -->
+<img src="../../assets/images/hadoop/hadoop-1.png" style="width:50%;" /><!-- {"left" : 4.76, "top" : 7.34, "height" : 3.83, "width" : 7.97} -->
 
 Notes:
 
@@ -36,7 +36,7 @@ Notes:
 
 ## MapReduce Engine
 
-<img src="../../assets/images/logos/hadoop-mapreduce-logo-1.png" style="width:40%;float:right;" /><!-- {"left" : 6.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/logos/hadoop-mapreduce-logo-1.png" style="width:40%;float:right;" /><!-- {"left" : 11.98, "top" : 2.14, "height" : 1.47, "width" : 4.61} -->
 
 * MapReduce was state of the art around 2008
 
@@ -55,7 +55,7 @@ Notes:
 
 ## Spark
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.11, "top" : 1.11, "height" : 1.01, "width" : 1.91} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 13.15, "top" : 1.8, "height" : 1.94, "width" : 3.67} -->
 
 * [Spark](https://spark.apache.org) is an **open Source distributed computing engine**
   - Very fast: On-disk ops are **10x** faster than MR
@@ -75,9 +75,9 @@ Notes:
 
 ## Spark's History
 
-<img src="../../assets/images/spark/3rd-party/spark-first-release-2010.png" style="width:45%;float:right;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark-first-release-2010.png" style="width:45%;float:right;" /><!-- {"left" : 12.4, "top" : 2.14, "height" : 3.69, "width" : 4.83} -->
 
-<img src="../../assets/images/spark/3rd-party/spark-10-year-anniv.png" style="width:15%;float:right;clear:both;" /><!-- {"left" : 6.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark-10-year-anniv.png" style="width:15%;float:right;clear:both;" /><!-- {"left" : 14.64, "top" : 6.3, "height" : 3.03, "width" : 2.61} -->
 
 * Spark was created at [Berkeley AMP Lab](https://amplab.cs.berkeley.edu/) around 2009.  First open source release 2010
 
@@ -95,7 +95,7 @@ Notes:
 
 ## Why is Spark Popular?
 
-<img src="../../assets/images/spark/3rd-party/spark-languages.png" style="width:30%;float:right;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark-languages.png" style="width:30%;float:right;" /><!-- {"left" : 11.3, "top" : 2.37, "height" : 5.02, "width" : 5.84} -->
 
 * Ease of use
    - Easy to get up and running
@@ -129,7 +129,7 @@ Notes:
 | 2.4     | 2020-01      | Stable v2 release      |
 | 3.0     | 2020 Q2      | V3 release             |
 
-<!-- {"left" : 0.25, "top" : 1.5, "height" : 3, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 3.25, "height" : 3.38, "width" : 9.75} -->
 
 Notes:
 
@@ -137,7 +137,7 @@ Notes:
 
 ## Spark Components
 
-<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
 
 Notes:
 
@@ -145,7 +145,7 @@ Notes:
 
 ## Spark Components
 
-<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /><!-- {"left" : 9.69, "top" : 2.49, "height" : 4.48, "width" : 7.52} -->
 
 * __Data Storage:__ Pluggable data storage systems
    - Integrates with HDFS, S3, Cassandra DB, and more
@@ -162,7 +162,7 @@ Notes:
 
 ## Spark Components: Core
 
-<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /><!-- {"left" : 9.92, "top" : 2.14, "height" : 4.38, "width" : 7.35} -->
 
 * **Core** has basic building blocks for distributed computing engine
 
@@ -176,7 +176,7 @@ Notes:
 
 ## Spark Components
 
-<img src="../../assets/images/spark/spark-components-1.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-components-1.png" style="width:40%;float:right;" /><!-- {"left" : 10.58, "top" : 2.14, "height" : 4.1, "width" : 6.89} -->
 
 * __Spark SQL:__
    - Analyze structured data using SQL
@@ -197,7 +197,7 @@ Notes:
 
 ## Spark is a Unified Stack
 
-<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-components-1.png" style="width:50%;float:right;" /> <!-- {"left" : 8.39, "top" : 2.14, "height" : 5.41, "width" : 9.08} -->
 
 * Spark support multiple programming models
    - MapReduce style batch processing
@@ -218,7 +218,7 @@ Notes:
 
 ## Spark Use Cases
 
-<img src="../../assets/images/logos/netflix-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.43, "top" : 1.09, "height" : 1.21, "width" : 2.63} -->
+<img src="../../assets/images/logos/netflix-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 13.13, "top" : 2.79, "height" : 1.78, "width" : 3.88} -->
 
 * __Netflix__
    - Recommendations using Spark + Cassandra
@@ -226,7 +226,7 @@ Notes:
    - Personalization through recommendations
    - Sources: [1](http://bigdatausecases.info/entry/netflix-recommendations-using-spark-and-cassandra-cassandra-summit-2016),  [2](https://www.slideshare.net/DataStax/netflix-recommendations-using-spark-cassandra)
 
-<img src="../../assets/images/logos/starbucks-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.43, "top" : 1.09, "height" : 1.21, "width" : 2.63} -->
+<img src="../../assets/images/logos/starbucks-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 12.82, "top" : 5.24, "height" : 3.89, "width" : 4.49} -->
 
 * __Starbucks__
    - 30,000+ stores generate Petabyte scale data
@@ -241,7 +241,7 @@ Notes:
 
 ## Spark Use Cases
 
-<img src="../../assets/images/logos/teralytics-logo-1.jpg" style="width:30%;float:right;" /><!-- {"left" : 8.22, "top" : 0.96, "height" : 0.83, "width" : 1.99} -->
+<img src="../../assets/images/logos/teralytics-logo-1.jpg" style="width:30%;float:right;" /><!-- {"left" : 12.29, "top" : 2.14, "height" : 1.9, "width" : 4.56} -->
 
 * __Teralytics__
    - Processing cell phone events
@@ -250,7 +250,7 @@ Notes:
    - Estimating usage patterns to enhance coverage (sporting events, commuting, etc.)
    - Source: [1](http://bigdatausecases.info/entry/origin-destination-matrix-using-mobile-network-data-with-spark), [2](https://databricks.com/session/origin-destination-matrix-using-mobile-network-data-with-spark)
 
-<img src="../../assets/images/logos/yahoo-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.35, "top" : 4.29, "height" : 0.49, "width" : 1.85} -->
+<img src="../../assets/images/logos/yahoo-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 12.32, "top" : 6.94, "height" : 1.19, "width" : 4.49} -->
 
 * __Yahoo__
    - News personalization
@@ -274,21 +274,21 @@ Notes:
 
 ## Spark at Large Scale
 
-<img src="../../assets/images/logos/tencent-logo-1.png" style="width:15%;float:right;" /><!-- {"left" : 8.59, "top" : 1.02, "height" : 0.91, "width" : 1.58} -->
+<img src="../../assets/images/logos/tencent-logo-1.png" style="width:15%;float:right;" /><!-- {"left" : 13.62, "top" : 2.16, "height" : 1.84, "width" : 3.19} -->
 
 * Tencent (Social network in China)
   - 8000 nodes
   - 400 TB+ data
 
 <br clear="all"/>  
-<img src="../../assets/images/logos/alibaba-logo-1.png" style="width:20%;float:right;" /><!-- {"left" : 7.72, "top" : 2.86, "height" : 0.5, "width" : 2.52} -->
+<img src="../../assets/images/logos/alibaba-logo-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.03, "top" : 5, "height" : 0.91, "width" : 4.59} -->
 
 * Alibaba (largest e-commerce site in China)
   - 1 PB scale processing
   - Large scale image processing
 
 <br clear="all"/>  
-<img src="../../assets/images/logos/janelia-logo-1.png" style="width:20%;float:right;" /><!-- {"left" : 7.96, "top" : 4.01, "height" : 0.91, "width" : 2.16} -->
+<img src="../../assets/images/logos/janelia-logo-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.57, "top" : 6.99, "height" : 1.65, "width" : 3.91} -->
 
 * Streaming @ Jenelia Farm
   - 1 TB per hour
@@ -314,13 +314,13 @@ Notes:
 | Version 3 | 2019 |                                            |
 |           | 2020 | Version 3                                  |
 
-<!-- {"left" : 0.25, "top" : 1.32, "height" : 5.19, "width" : 9.75} -->
+<!-- {"left" : 3.87, "top" : 3.22, "height" : 5.94, "width" : 9.75} -->
 
 ---
 
 ## Spark vs. MapReduce
 
-<img src="../../assets/images/spark/3rd-party/mapreduce-vs-spark-1.png" style="width:70%;" /><!-- {"left" : 0.66, "top" : 1.53, "height" : 6.02, "width" : 8.93} -->
+<img src="../../assets/images/spark/3rd-party/mapreduce-vs-spark-1.png" style="width:70%;" /><!-- {"left" : 2.31, "top" : 2.41, "height" : 8.69, "width" : 12.89} -->
 
 ---
 
@@ -345,7 +345,7 @@ Notes:
    - [Databricks blog](https://databricks.com/blog/2014/11/05/spark-officially-sets-a-new-record-in-large-scale-sorting.html)
    - http://sortbenchmark.org/
 
-<img src="../../assets/images/spark/3rd-party/spark-vs-mapreduce-benchmark-1.png" style="width:70%;" /><!-- {"left" : 1.02, "top" : 3.48, "height" : 4.52, "width" : 8.21} -->
+<img src="../../assets/images/spark/3rd-party/spark-vs-mapreduce-benchmark-1.png" style="width:70%;" /><!-- {"left" : 3.12, "top" : 4.86, "height" : 6.2, "width" : 11.25} -->
 
 ---
 
@@ -360,7 +360,7 @@ Notes:
 * Spark and Hadoop work well together
    - Spark can utilize HDFS distributed data
 
-<img src="../../assets/images/spark/spark-and-hadoop-2.png" style="width:80%;" /><!-- {"left" : 0.48, "top" : 3.29, "height" : 3.07, "width" : 9.29} -->
+<img src="../../assets/images/spark/spark-and-hadoop-2.png" style="width:80%;" /><!-- {"left" : 2.68, "top" : 7.15, "height" : 4.01, "width" : 12.14} -->
 
 ---
 
@@ -380,7 +380,7 @@ Notes:
 
 * __Workers__ perform computation
 
-<img src="../../assets/images/deep-learning/Distributed-Data-Processing.png" style="width:60%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/deep-learning/Distributed-Data-Processing.png" style="width:60%;"/><!-- {"left" : 3.36, "top" : 6.55, "height" : 4.36, "width" : 10.78} -->
 
 ---
 
@@ -396,16 +396,16 @@ Notes:
 
 <br clear="all" />
 
-<img src="../../assets/images/logos/databricks-logo-1.png" style="width:20%;" /><!-- {"left" : 0.32, "top" : 5.52, "height" : 0.37, "width" : 2.19} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 3, "top" : 5.35, "height" : 0.71, "width" : 2.17} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 5.56, "top" : 5.38, "height" : 0.63, "width" : 1.68} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 7.63, "top" : 5.35, "height" : 0.71, "width" : 2.46} -->
+<img src="../../assets/images/logos/databricks-logo-1.png" style="width:20%;" /><!-- {"left" : 0.96, "top" : 8.48, "height" : 0.57, "width" : 3.4} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 4.96, "top" : 7.88, "height" : 1.17, "width" : 3.59} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 9.28, "top" : 7.88, "height" : 1.17, "width" : 3.13} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 12.96, "top" : 7.91, "height" : 1.14, "width" : 3.96} -->
 
 ---
 
 ## Databricks
 
-<img src="../../assets/images/spark/3rd-party/databricks-gartner-1.png" style="width:50%;float:right;clear:both;" /><!-- {"left" : 5.84, "top" : 1.09, "height" : 4.5, "width" : 4.4} -->
+<img src="../../assets/images/spark/3rd-party/databricks-gartner-1.png" style="width:50%;float:right;clear:both;" /><!-- {"left" : 10.58, "top" : 2.14, "height" : 6.93, "width" : 6.77} -->
 
 * Founded by Spark's founders
 
@@ -415,13 +415,13 @@ Notes:
 
 * Databricks is recognized as a leading provider for Data Analytics and Machine Learning platform  (Source: [Gartner report](https://databricks.com/p/whitepaper/gartner-magic-quadrant-2020-data-science-machine-learning))
 
-<img src="../../assets/images/logos/databricks-logo-1.png" style="width:30%;float:left;" /><!-- {"left" : 0.6, "top" : 7.87, "height" : 0.56, "width" : 3.28} -->
+<img src="../../assets/images/logos/databricks-logo-1.png" style="width:30%;float:left;" /><!-- {"left" : 1.1, "top" : 8.29, "height" : 0.71, "width" : 4.13} -->
 
 ---
 
 ## Databricks Cloud
 
-<img src="../../assets/images/spark/3rd-party/databricks-cloud-1.png" style="width:60%;float:right;" /><!-- {"left" : 5.58, "top" : 1.26, "height" : 2.8, "width" : 4.34} -->
+<img src="../../assets/images/spark/3rd-party/databricks-cloud-1.png" style="width:60%;float:right;" /><!-- {"left" : 9.12, "top" : 2.51, "height" : 5.14, "width" : 7.97} -->
 
 * A hosted platform of Spark
 
@@ -455,9 +455,9 @@ Notes:
 
 <br clear="all" />
 
-<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 3, "top" : 5.35, "height" : 0.71, "width" : 2.17} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 5.56, "top" : 5.38, "height" : 0.63, "width" : 1.68} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 7.63, "top" : 5.35, "height" : 0.71, "width" : 2.46} -->
+<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 0.98, "top" : 8.54, "height" : 1.43, "width" : 4.38} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 7.08, "top" : 8.68, "height" : 1.29, "width" : 3.45} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 12.2, "top" : 8.68, "height" : 1.29, "width" : 4.48} -->
 
 ---
 
@@ -477,6 +477,8 @@ Notes:
 | Memory   | 4+ G                              | 256+ G                                                            |
 | Disk     | - Single spindle <br/> - Few gigs | - Multiple spindles <br /> - Several Terabytes per node <br />  |
 
+<!-- {"left" : 1.46, "top" : 7.23, "height" : 2.77, "width" : 14.59, "columnwidth" : [3.8, 5.68, 5.11]} -->
+
 ---
 
 ## Scaling on Hadoop (On Premise)
@@ -489,16 +491,14 @@ Notes:
 * Cons:
    - The cluster size is fixed; very hard to scale up/down dynamically based on demand
 
-<!-- TODO shiva -->
-<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:47%;float:left;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:47%;float:left;"/><!-- {"left" : 1.06, "top" : 7.84, "height" : 3.4, "width" : 7.46} -->
+<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:40%;float:right;"/><!-- {"left" : 9.74, "top" : 8.45, "height" : 2.77, "width" : 6.7} -->
 
 ---
 
 ## Spark Scaling on the Cloud
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 11.53, "top" : 2.14, "height" : 3.37, "width" : 5.56} -->  
 
 * In Cloud architecture, storage and compute are separate!
 
@@ -518,8 +518,7 @@ Notes:
 
 ## Spark Scaling on the Cloud
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 11, "top" : 2.75, "height" : 3.73, "width" : 6.15} -->  
 
 * Pros:
    - Gives a lot of flexibility on scaling and scheduling computes
@@ -543,15 +542,13 @@ Notes:
    - **Executors** on worker nodes start computing
    - Each Executor can employ multiple **tasks** to parallelize the work
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/spark-architecture-1.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-architecture-1.png" style="width:50%;"/><!-- {"left" : 4.43, "top" : 6.09, "height" : 5.67, "width" : 8.65} -->
 
 ---
 
 ## Parallelizing Computations
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/distributed-execution.png" style="width:45%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/distributed-execution.png" style="width:45%;float:right;" /><!-- {"left" : 9.62, "top" : 2.14, "height" : 4.63, "width" : 7.78} -->
 
 * Here is a simple example of doing a COUNT in a distributed way
 
@@ -569,8 +566,8 @@ Notes:
 
 ## Spark 3
 
-<img src="../../assets/images/spark/3rd-party/spark-2-vs-3.png" style="width:50%;float:right;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
-<img src="../../assets/images/spark/3rd-party/spark3-patches.png" style="width:35%;float:right;clear:both;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark-2-vs-3.png" style="width:50%;float:right;" /><!-- {"left" : 10.44, "top" : 1.88, "height" : 1.85, "width" : 6.77} -->
+<img src="../../assets/images/spark/3rd-party/spark3-patches.png" style="width:35%;float:right;clear:both;" /><!-- {"left" : 12.16, "top" : 7.24, "height" : 4.96, "width" : 5.32} -->
 
 * Spark 3 is a big release;  2020 Q3
 * __Performance focused__
@@ -591,9 +588,9 @@ Notes:
 
 ## Spark 3 SQL Improvements
 
-<img src="../../assets/images/spark/3rd-party/spark-sql-benchmark-1.png" style="width:20%;float:right;clear:both;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark-sql-benchmark-1.png" style="width:20%;float:right;clear:both;" /><!-- {"left" : 13.62, "top" : 2.34, "height" : 4.67, "width" : 3.52} -->
 
-<img src="../../assets/images/spark/3rd-party/spark3-sql-aqe-1.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark3-sql-aqe-1.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 10.85, "top" : 7.66, "height" : 4.27, "width" : 6.29} -->
 
 * Spark SQL is very widely used
 
@@ -622,13 +619,13 @@ Notes:
 
 * [Source](https://youtu.be/OLJKIogf2nU)
 
-<img src="../../assets/images/spark/3rd-party/spark3-python-1.png" style="width:40%;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark3-python-1.png" style="width:40%;" /><!-- {"left" : 4.66, "top" : 6.87, "height" : 4.51, "width" : 8.18} -->
 
 ---
 
 ## Spark 3 and GPU
 
-<img src="../../assets/images/spark/3rd-party/spark-gpu-nvidia-1.png" style="width:40%;float:right;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark-gpu-nvidia-1.png" style="width:40%;float:right;" /><!-- {"left" : 9.84, "top" : 2.14, "height" : 4.38, "width" : 7.56} -->
 
 * Spark 3 recognizes GPUs as a first-class resource along with CPU and system memory
 
@@ -660,8 +657,8 @@ Notes:
 
 * [More](https://spark.apache.org/third-party-projects.html) 
 
-<img src="../../assets/images/logos/spark-koalas-logo-1.png" style="width:20%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/logos/spark-delta-lake-logo-1.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/logos/spark-koalas-logo-1.png" style="width:20%;"/><!-- {"left" : 2.81, "top" : 7.65, "height" : 3.27, "width" : 3.64} -->
+<img src="../../assets/images/logos/spark-delta-lake-logo-1.png" style="width:40%;"/><!-- {"left" : 8.06, "top" : 8.5, "height" : 1.58, "width" : 6.63} -->
 
 ---
 
@@ -698,8 +695,8 @@ Notes:
 
 * [Databricks blog](https://databricks.com/blog) - keep up with latest Spark news
 
-<img src="../../assets/images/books/learning-spark-2nd-ed-9781492050049.jpeg" style="width:23%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->  &nbsp; 
-<img src="../../assets/images/books/high-performance-spark-9781491943205.jpeg" style="width:23%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/books/learning-spark-2nd-ed-9781492050049.jpeg" style="width:23%;"/><!-- {"left" : 4.57, "top" : 6.01, "height" : 5.05, "width" : 3.79} -->  &nbsp; 
+<img src="../../assets/images/books/high-performance-spark-9781491943205.jpeg" style="width:23%;"/><!-- {"left" : 9.14, "top" : 6.01, "height" : 5.05, "width" : 3.79} -->
 
 ---
 
@@ -709,8 +706,8 @@ Notes:
 
 ## Lab: Access Lab Environment
 
-<img src="../../assets/images/generic/lab-setup.png" style="width:40%;float:right;"/><!-- {"left" : 1.84, "top" : 6.25, "height" : 2.18, "width" : 6.57} -->
-<img src="../../assets/images/generic/training-sandbox-1.png" style="max-width:40%;float:right;clear:both;"/><!-- {"left" : 5.8, "top" : 1.1, "height" : 4.02, "width" : 4.3} -->
+<img src="../../assets/images/generic/lab-setup.png" style="width:40%;float:right;"/><!-- {"left" : 10.43, "top" : 2.2, "height" : 2.23, "width" : 6.72} -->
+<img src="../../assets/images/generic/training-sandbox-1.png" style="max-width:40%;float:right;clear:both;"/><!-- {"left" : 11.44, "top" : 5.37, "height" : 5.51, "width" : 5.6} -->
 
 * We can use either
    - training VMs in the Cloud
@@ -729,7 +726,7 @@ Notes:
 
 ## Lab: Test Jupyter + Spark UI
 
-<img src="../../assets/images/generic/jupyter-labs-1.png" style="width:40%;float:right;"/> <!-- {"left" : 5.52, "top" : 1.8, "height" : 4.4, "width" : 4.46} -->
+<img src="../../assets/images/generic/jupyter-labs-1.png" style="width:40%;float:right;"/> <!-- {"left" : 9.95, "top" : 2.61, "height" : 6.91, "width" : 7.01} -->
 
  * Access **Jupyter Labs**
 
@@ -755,7 +752,7 @@ Notes:
         $  ./assemble-labs.sh
 ```
 
-<!-- {"left" : 0, "top" : 2.37, "height" : 1.05, "width" : 5.62} -->
+<!-- {"left" : 0, "top" : 3.19, "height" : 1.22, "width" : 6.54} -->
 
 * This will create a zip file (`labs.out/spark-labs.zip`)
 * Distribute this bundle to students
@@ -774,7 +771,7 @@ Notes:
 
 ## Lab: Lab Setup
 
-<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.02, "top" : 1.16, "height" : 3.88, "width" : 2.91} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="width:30%;float:right;" /><!-- {"left" : 12.58, "top" : 1.34, "height" : 6, "width" : 4.5} -->
 
 * **Overview:**
    - Setting up the labs
@@ -791,7 +788,7 @@ Notes:
 
 ## Lab:  Testing123
 
-<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.02, "top" : 1.16, "height" : 3.88, "width" : 2.91} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="width:30%;float:right;" /> <!-- {"left" : 12.58, "top" : 1.34, "height" : 6, "width" : 4.5} -->
 
 * **Overview:**
    - Testing the environment
@@ -808,7 +805,7 @@ Notes:
 
 ## Lab: First Look at Spark
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.58, "top" : 1.34, "height" : 6, "width" : 4.5} -->
 
 * **Overview:**
    - We will get started with Spark
@@ -825,10 +822,10 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.71, "top" : 1.61, "height" : 2.14, "width" : 2.89} -->
 
 * Let's go over what we have covered so far
 
 * Any questions?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.46, "top" : 4.35, "height" : 5.72, "width" : 8.58} -->
