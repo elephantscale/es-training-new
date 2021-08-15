@@ -35,6 +35,14 @@ August 21, 2021
 ## Course Outline:
 
 * What is an IOT platform
+* Protocol 
+  * What is protocol?
+* Automation Pyramid
+  * How many levels?
+  * Description of each level with examples
+* OSI model
+* Networks
+  * Type of network, type of device, type of communication
 * IOT components
   * Enterprise asset management (EAM)
   *  Computerized maintenance management systems (CMMSs)
