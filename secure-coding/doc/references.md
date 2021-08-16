@@ -1,5 +1,7 @@
 # Useful security references
 
+[Thread modeling](https://learning.oreilly.com/library/view/threat-modeling-designing/9781118810057/9781118810057c03.xhtml#c3)
+
 [Code bashing](https://free.codebashing.com/)
 
 [Secure Warrior](https://securecodewarrior.com/)

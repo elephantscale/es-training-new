@@ -19,7 +19,7 @@ August 21, 2021
 
 ## Duration: 
 
-* 1-2 days
+* 2 days
 
 ## Audience: 
 * Maintenance engineers from automation background
@@ -35,8 +35,9 @@ August 21, 2021
 ## Course Outline:
 
 * What is an IOT platform
-* Protocol 
-  * What is protocol?
+* OSI Protocol
+  * OSI model and 7 layers
+  * The standard protocol used for communication in each OSI layer
 * Automation Pyramid
   * How many levels?
   * Description of each level with examples
