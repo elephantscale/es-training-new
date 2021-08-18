@@ -1,7 +1,7 @@
 # IOT implementation
 © Elephant Scale
 
-August 21, 2021
+August 16, 2021
 
 ## Overview
 
