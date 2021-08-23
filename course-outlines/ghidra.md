@@ -1,7 +1,7 @@
 # Ghidra
 © Elephant Scale
 
-July 21, 2021
+August 23, 2021
 
 ## Overview
 
@@ -35,33 +35,63 @@ By the end of this Ghidra course, you'll have developed the skills you need to h
 
 ## Course outline
 
-* Getting Started with Ghidra, is a journey through the history of Ghidra and an overview of the program from the user perspective.
+* Getting Started with Ghidra
+  * The history of Ghidra
+  * Program from the user perspective
 
-* Automating RE Tasks with Ghidra Scripts, explains how to use Ghidra scripts to automate reverse engineering tasks and introduces script development.
+* Automating Tasks with Ghidra Scripts
+  * How to use Ghidra scripts to automate reverse engineering tasks
+  * Ghidra script development
 
-* Ghidra Debug Mode, covers how to set up a Ghidra development environment, how to debug Ghidra, and all about the Ghidra debug mode vulnerability.
+* Ghidra Debug Mode
+  * Setting up Ghidra development environment
+  * Debugging Ghidra
+  * Ghidra debug mode vulnerability
 
-* Using Ghidra Extensions, provides you with background for developing Ghidra extensions, as well as showing you how to install and use it.
+* Using Ghidra Extensions
+  * Background for developing Ghidra extensions
+  * Installing and using extensions
 
-* Reversing Malware Using Ghidra, demonstrates how to use Ghidra for malware analysis by reversing a real-world malware sample.
+* Reversing Malware Using Ghidra
+  * How to use Ghidra for malware analysis
+  * Reversing a real-world malware sample
+  * Scripting for Java and Python
+  * The analysis of a shellcode found in the malware sample
 
-* Scripting Malware Analysis, continues the previous chapter by scripting for both languages, Java and Python, the analysis of a shellcode found in the malware sample.
+* Using Ghidra Headless Analyzer
+  * What is Ghidra Headless Analyzer?
+  * Analyze a set of malware samples
+  * Acquired samples with a earlier developerd script
 
-* Using Ghidra Headless Analyzer, explains Ghidra Headless Analyzer and applies this knowledge to a set of malware samples acquired with a script developed during the chapter.
+* Auditing Program Binaries
+  * Finding memory corruption vulnerabilities using Ghidra 
+  * Exploiting memory corruption 
+  * How to automate the bug hunting process via scripting
+  * How to take advantage of the powerful PCode intermediate representation
 
-* Auditing Program Binaries, introduces the topic of finding memory corruption vulnerabilities using Ghidra and how to exploit it.
+* Developing Ghidra Plugins
+  * Ghidra extension development 
+  * Why are the way to get the most out of the Ghidra features implemented
 
-* Scripting Binary Audits, continues the previous chapter, teaching how to automate the bug hunting process via scripting, taking advantage of the powerful PCode intermediate representation.
+* Incorporating New Binary Formats
+  * How to write Ghidra extensions to support new binary formats
+  * Real-world file format example
 
-* Developing Ghidra Plugins, delves into Ghidra extension development by explaining that Ghidra plugin extensions are the way to get the most out of the Ghidra features implemented.
+* Analyzing Processor Modules
+  * How to write Ghidra processor modules 
+  * SLEIGH processor specification language
 
-* Incorporating New Binary Formats, shows how to write Ghidra extensions to support new binary formats, taking a real-world file format as an example.
+* Contributing to the Ghidra Community
+  * Community interaction using social networks and chats
+  * How to contribute with your own development, feedback, bug reports, comments, and so on.
 
-* Analyzing Processor Modules, discusses how to write Ghidra processor modules using the SLEIGH processor specification language.
-
-* Contributing to the Ghidra Community, explains how to interact with the community using social networks, chats, and how to contribute with your own development, feedback, bug reports, comments, and so on.
-
-* Extending Ghidra for Advanced Reverse Engineering, introduces advanced reverse engineering topics and tools such as SMT solvers, Microsoft Z3, static and dynamic symbex, LLVM, and Angr, and explains how to incorporate them with Ghidra.
+* Extending Ghidra for Advanced Reverse Engineering
+  * Advanced reverse engineering topics and tools
+  * SMT solvers
+  * Microsoft Z3
+  * Static and dynamic symbex, 
+  * LLVM, and Angr
+  * How to incorporate tools with Ghidra.
 
 ## Additional resources
 
