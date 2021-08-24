@@ -1,5 +1,12 @@
 # Useful security references
 
+
+[Blue team](https://github.com/fabacab/awesome-cybersecurity-blueteam)
+
+[Infosec](https://github.com/rmusser01/Infosec_Reference)
+
+[The book of secret knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
+
 [Thread modeling](https://learning.oreilly.com/library/view/threat-modeling-designing/9781118810057/9781118810057c03.xhtml#c3)
 
 [Code bashing](https://free.codebashing.com/)
