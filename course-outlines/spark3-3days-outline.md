@@ -1,70 +1,81 @@
-# Introduction to Apache Spark
+# Introduction to Apache Spark 3
 
 ## Overview
 
-We are living in an era of 'big data'.  And being able to analyze and process big data is very vital for enterprises.
+![](../assets/images/logos/spark-logo-1-small.png)
 
-Spark is a popular platform for analyzing big data.
+We are living in an era of 'big data'.  Spark is a popular platform for analyzing big data.
 
-This course introduces Apache Spark to students.
+This course introduces Apache Spark to students.  This class is taught with Python language and using Jupyter environment
 
-This class is taught with Python language and using Jupyter environment
+This course covers latest features in Spark version 3.
 
-## What you will learn:
-*	Spark ecosystem
-*	Spark Shell
-*	Spark Data structures (RDD / Dataframe / Dataset)
-*	Spark SQL
-*	Modern data formats and Spark
-*	Spark API
-*	Spark & Hadoop & Hive
-*	Spark ML overview
-*	GraphX
-*	Spark Streaming
+## What You Will Learn
 
+* Spark ecosystem
+* New features in Spark3
+* Spark Shell
+* Spark Data structures (RDD / Dataframe / Dataset)
+* Spark SQL
+* Modern data formats and Spark
+* Spark API
+* Spark & Hadoop & Hive
+* Spark ML overview
+* Graph processing in Spark
+* Spark Streaming
 
-## Duration:
+## Duration
+
 Three Days
 
-## Audience:
+## Audience
+
 Developers, Data analysts and business analysts
 
 ## Skill level
+
 Introductory to Intermediate
 
 ## Prerequisites
-*  Basic knowledge of Python language and Jupyter notebooks is preferred but not mandatory.  
+
+* Basic knowledge of Python language and Jupyter notebooks is preferred but not mandatory
 Even if you haven't done any Python programming, Python is such an easy language to learn quickly.  We will provide Python resources.
 
-## Lab environment
-*  Cloud based lab environment will be provided to students, no need to install anything on the laptop
+## Lab Environment
 
-### Students will need the following
+* Cloud based lab environment will be provided to students, no need to install anything on the laptop
+
+## Students will need the following
+
 * A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
 * Chrome browser
-
 
 ## Detailed Course Outline
 
 ### Spark Introduction
-* Big Data , Hadoop, Spark
+
+* Big Data stacks, Hadoop, Spark
+* Spark-3 new features
 * Spark concepts and architecture
 * Spark components overview
 * Labs : Installing and running Spark
 
 ### First Look at Spark
+
 * Spark shell
 * Spark web UIs
 * Analyzing dataset – part 1
 * Labs: Spark shell exploration
 
 ### Spark Data structures
+
 * Partitions
 * Distributed execution
 * Operations : transformations and actions
-* Labs : Unstructured data analytics using RDDs
+* Labs : Unstructured data analytics
 
 ### Caching
+
 * Caching overview
 * Various caching mechanisms available in Spark
 * In memory file systems
@@ -72,28 +83,32 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Labs: Benchmark of caching performance
 
 ### Dataframes / Datasets
+
 * Dataframes Intro
 * Loading structured data (json, CSV) using Dataframes
-* Using schema
 * Specifying schema for Dataframes
 * Labs : Dataframes, Datasets, Schema
 
 ### Spark SQL
+
 * Spark SQL concepts and overview
 * Defining tables and importing datasets
 * Querying data using SQL
 * Handling various storage formats : JSON / Parquet / ORC
+* Adaptive Query Engine (AQE) (Spark 3 feature)
 * Labs : querying structured data using SQL; evaluating data formats
 
 ### Spark and Hadoop
-* Hadoop Primer : HDFS / YARN
+
+* Hadoop Primer
 * Hadoop + Spark architecture
-* Running Spark on Hadoop YARN
+* Running Spark on Hadoop
 * Processing HDFS files using Spark
 * Spark & Hive
-
+* Labs: Spark and Hive
 
 ### Spark API
+
 * Overview of Spark APIs in Scala / Python
 * Life cycle of an Spark application
 * Spark APIs
@@ -101,33 +116,32 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Labs : Developing and deploying an Spark application
 
 ### Spark ML Overview
-* Machine Learning primer
-* Machine Learning in Spark: MLib / ML
-* Spark ML overview (newer Spark2 version)
+
+* Spark ML overview
 * Algorithms overview: Clustering, Classifications, Recommendations
 * Labs: Writing ML applications in Spark
 
-### GraphX
-* GraphX library overview
-* GraphX APIs
-* Create a Graph and navigating it
-* Shortest distance
-* Pregel API
+### Graph Processing
+
+* Graph processing libraries : GraphX and GraphFrames
+* Creating and analyzing graphs
 * Labs: Processing graph data using Spark
 
 ### Spark Streaming
-* Streaming concepts
-* Evaluating Streaming platforms
+
 * Spark streaming library overview
 * Streaming operations
-* Sliding window operations
 * Structured Streaming
 * Continuous streaming
 * Spark & Kafka streaming
 * Labs: Writing spark streaming applications
 
+### Delta Lake (Spark3) (Bonus Section)
+
+* Introduction to Delta Lake
+* Delta lake architecture
+* Lab: Exploring Delta Lake
+
 ### Workshops (Time permitting)
-* These are group workshops
+
 * Attendees will work on solving real world data analysis problems using Spark
-
-

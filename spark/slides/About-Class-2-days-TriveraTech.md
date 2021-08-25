@@ -1,6 +1,8 @@
-# Introduction to  Apache Spark 3
+# Working With Apache Spark3
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:40%;" /> &nbsp;  &nbsp;<!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /> &nbsp;  &nbsp;<!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
+
+<img src="../../assets/images/logos/triveratech-logo-1-small.jpg" style="width:20%;" /> <!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
 
 ---
 
