@@ -1,4 +1,4 @@
-# Introduction to Apache Spark 3
+# Big Data Analytics with Apache Spark 3
 
 ## Overview
 
@@ -23,6 +23,8 @@ This course covers latest features in Spark version 3.
 * Spark ML overview
 * Graph processing in Spark
 * Spark Streaming
+* Bonus: Spark performance tuning
+* Bonus: Delta Lake
 
 ## Duration
 
@@ -136,7 +138,14 @@ Even if you haven't done any Python programming, Python is such an easy language
 * Spark & Kafka streaming
 * Labs: Writing spark streaming applications
 
-### Delta Lake (Spark3) (Bonus Section)
+### Bonus: Spark Performance Tuning
+
+* Best practices for Spark programming
+* Common pitfalls to watch out for
+* Latest optimizers in Spark3
+* Lab: Tuning Spark queries
+
+### Bonus: Delta Lake (Spark3)
 
 * Introduction to Delta Lake
 * Delta lake architecture

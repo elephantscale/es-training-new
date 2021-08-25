@@ -1,4 +1,4 @@
-# Introduction to Apache Spark 3
+# Apache Spark 3 Essentials
 
 ## Overview
 
