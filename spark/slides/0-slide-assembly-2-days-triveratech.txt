@@ -6,8 +6,8 @@
 ## Course outline
 #../spark3-2days-outline.pdf
 
-About-Class-2-days.md
+About-Class-2-days-TriveraTech.md  About-Class-2-days.md
 SPARK-Intro.md
 SPARK-Core.md
 SPARK-SQL.md
-SPARK-API.md
+SPARK-API.md  

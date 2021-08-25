@@ -2,7 +2,7 @@
 
 ## Overview
 
-![](../assets/images/logos/spark-logo-1-small.png){ width=40% }
+![](../assets/images/logos/spark-logo-1-small.png)
 
 We are living in an era of 'big data'.  Spark is a popular platform for analyzing big data.
 
