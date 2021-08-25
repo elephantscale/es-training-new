@@ -8,9 +8,9 @@ July 06, 2021
 
 * Cybersecurity has risen to the top priority discussion items, and it is the subject of the US-Russia presidential communications. 
 The number of ransomware attacks doubled in the past year, and other attacks are on the rise.
-* This course teaches a comprehensive approach to cybersecurity. It starts with threat modeling, creating the lay of the land. 
-It then continues with common attacks, with the principles of designing secure multi-layer systems, and goes into the details
-of secure coding for the target languages.
+* This course teaches a comprehensive approach to cybersecurity. It starts with common attacks, 
+continues with the principles of designing secure multi-layer systems, and goes into the details
+of secure coding for Java.
 * Also included are securing runtime environments and modern security frameworks.  
 
 ## Audience
@@ -27,7 +27,7 @@ Lectures and hands on labs. (50% - 50%)
 
 ## Prerequisites
 * Recommended: Cybersecurity awareness
-* Comfortable developing code in the target environment
+* Comfortable developing code in Java
 
 
 ## Lab environment
@@ -49,6 +49,48 @@ Lectures and hands on labs. (50% - 50%)
 * Unsecured direct object reference
 * Failure to authorize/hidden URLs
 
+### Java security
+* Basic Security within Java SE 8+
+  * Mutability of objects
+  * Variable, method, class, and package scopes
+  * Thread safety
+  * Exception handling
+  * Input validation
+* Basic Security at the EE level
+  * Role-based authentication
+  * Specifying Security Constraints
+  * Programmatic security
+  * Declarative security
+* Defensive Programming
+  * Error handling in the Java EE space
+  * Type annotation syntax and the Checker Framework
+  * Application-layer security
+  * Transport-layer security
+  * Message-layer security
+  * Secure connection using SSL
+
+* REST endpoint security
+  * oauth2 token-based authentication and authorization
+  * oauth2 server setup
+  * embedded token server, token lifecycle, and management
+  * REST security best practices:
+  * Authorization
+  * Input validation
+  * Output encoding
+  * Cryptography
+
+* Developing secure Java applications
+  * Safe coding and design patterns
+  * How to find vulnerable code while doing a code review
+  * The most common pitfalls
+* JavaScript security
+  * How to manage secure PII data on the end client apps (mobile app, browser, tablet)
+  * Versions: OAuth2, Angular4
+  * Cross-site scripting (XSS)
+  * Cross-site request forgery (CSRF)
+  * Common JavaScript vulnerabilities
+  * JavaScript security analyzers
+  
 ### Secure design
 
 * Layered design concepts
@@ -93,7 +135,6 @@ Lectures and hands on labs. (50% - 50%)
   * Linux
 
 ### Authorization and Authentication
-* .NET authentication
 * Basic & Digest
 * Forms
 * Windows authentication
@@ -119,7 +160,6 @@ Lectures and hands on labs. (50% - 50%)
 * Static code analysis
 
 ### Securing the runtime environment
-* .NET
 * Code Access
 * GAC
 * Strong named assemblies
