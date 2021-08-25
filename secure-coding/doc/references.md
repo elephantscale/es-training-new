@@ -7,6 +7,8 @@
 
 [The book of secret knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
 
+[Defensive security book](https://www.amazon.com/s?k=defensive+security+handbook&crid=1AS163F7A4SUP&sprefix=defensive+securi%2Caps%2C182&ref=nb_sb_ss_ts-doa-p_1_16)
+
 [Thread modeling](https://learning.oreilly.com/library/view/threat-modeling-designing/9781118810057/9781118810057c03.xhtml#c3)
 
 [Code bashing](https://free.codebashing.com/)

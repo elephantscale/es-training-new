@@ -1,0 +1,131 @@
+# Secure Coding
+
+(C) Copyright Elephant Scale
+
+August 25, 2021
+
+## Overview
+
+* Cybersecurity has risen to the top priority discussion items, and it is the subject of the US-Russia presidential communications. 
+The number of ransomware attacks doubled in the past year, and other attacks are on the rise.
+* This course teaches a comprehensive approach to cybersecurity. It starts with common attacks, 
+continues with the principles of designing secure multi-layer systems, and goes into the details
+of secure coding for Java.
+* Also included are securing runtime environments and modern security frameworks.  
+
+## Audience
+Developers, team leads, project managers
+
+## Skill Level
+Introductory - Intermediate
+
+## Duration
+Two days
+
+## Format
+Lectures and hands on labs. (50% - 50%)
+
+## Prerequisites
+* Recommended: Cybersecurity awareness
+* Comfortable developing code in Java
+
+
+## Lab environment
+* Zero Install: There is no need to install software on students' machines!
+* A lab environment in the cloud will be provided for students.
+
+### Students will need the following
+* A reasonably modern laptop with unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly.
+    * A checklist to verify connectivity will be provided
+* Chrome browser
+
+## Detailed outline
+
+### Common attacks
+* Cross site scripting
+* Malicious file execution
+* Session hijacking
+* Encryption
+* Unsecured direct object reference
+* Failure to authorize/hidden URLs
+
+### Java security
+* Basic Security within Java SE 8+
+  * Mutability of objects
+  * Variable, method, class, and package scopes
+  * Thread safety
+  * Exception handling
+  * Input validation
+* Basic Security at the EE level
+  * Role-based authentication
+  * Specifying Security Constraints
+  * Programmatic security
+  * Declarative security
+
+### REST endpoint security
+  * oauth2 token-based authentication and authorization
+  * oauth2 server setup
+  * embedded token server, token lifecycle, and management
+  * REST security best practices:
+  * Authorization
+  * Input validation
+  * Output encoding
+  * Cryptography
+
+### JavaScript security
+  * How to manage secure PII data on the end client apps (mobile app, browser, tablet)
+  * Versions: OAuth2, Angular4
+  * Cross-site scripting (XSS)
+  * Cross-site request forgery (CSRF)
+  * Common JavaScript vulnerabilities
+  * JavaScript security analyzers
+  
+### Secure design
+
+* Layered design concepts
+* Object layer
+* Persistence layer
+* Presentation layer
+
+### Countermeasures
+
+* Validation
+* Strong typing
+* Regular expressions
+* White list
+* Scrubbing
+* Encoding
+* CAPTCHA
+* Honey pots
+* Avoiding SQL injection
+
+
+### Code signing
+* Overview of code signing
+  * Windows
+  * Mac
+  * Linux
+
+### Authorization and Authentication
+* Basic & Digest
+* Forms
+* Windows authentication
+* JAAS and other Java authentication services
+* Authorization
+* Password security
+* Brute force attacks
+* Password resets
+* Secret questions/answers
+* SSL/TLS
+
+### Framework architecture
+* Threading
+* Privileges
+* Audits/Logs
+* Secure coding
+* Encryption services
+* Static code analysis
+ 
+### Security future
+* Zero-trust networks
+* Artificial intelligence
