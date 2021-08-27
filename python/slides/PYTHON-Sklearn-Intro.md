@@ -331,7 +331,7 @@ pyplot.scatter(X,y)
 pyplot.show()
 ```
 
-<img src="../../assets/images/machine-learning/sklearn-make-regression-1.png" style="width:38%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+<img src="../../assets/images/machine-learning/sklearn-make-regression-1.png" style="width:35%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
 
 ---
 
@@ -373,7 +373,7 @@ plt.scatter(x[:, 0], x[:, 1], marker='o', c=y,
 ```
 <!-- {"left" : 0, "top" : 4.96, "height" : 3.24, "width" : 10.25} -->
 
-<img src="../../assets/images/data-analysis-python/scikit-make-classification-1.png" style="width:40%;"/><!-- {"left" : 2.56, "top" : 1.21, "height" : 3.44, "width" : 5.14} -->
+<img src="../../assets/images/data-analysis-python/scikit-make-classification-1.png" style="width:37%;"/><!-- {"left" : 2.56, "top" : 1.21, "height" : 3.44, "width" : 5.14} -->
 
 ---
 
@@ -399,7 +399,7 @@ plt.scatter(x[:, 0], x[:, 1], c=y)
 ```
 <!-- {"left" : 0, "top" : 3.62, "height" : 5.16, "width" : 6.46} -->
 
-<img src="../../assets/images/machine-learning/sklearn-make-blobs-1.png" style="width:40%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+<img src="../../assets/images/machine-learning/sklearn-make-blobs-1.png" style="width:37%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
 
 ---
 
@@ -425,7 +425,7 @@ plt.scatter(x[:, 0], x[:, 1], c=y)
 ```
 <!-- {"left" : 0, "top" : 3.62, "height" : 5.16, "width" : 6.46} -->
 
-<img src="../../assets/images/machine-learning/sklearn-make-blobs-2.png" style="width:40%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+<img src="../../assets/images/machine-learning/sklearn-make-blobs-2.png" style="width:37%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
 
 ---
 
