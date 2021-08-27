@@ -1206,129 +1206,107 @@ plt.scatter(bills, tips)
 
 Notes:
 
+---
 
+## Lab: Visualizing Basics
+
+* **Overview:**
+    - Learn basic plot functions
+
+* **Approximate times:**
+    - 10 mins
+
+* **Instructions:**
+    - **basic/visualizing**
+    - Follow appropriate instructions for  R / Python / Spark
 
 ---
 
-## Lab: Visualizing
+## Lab: Visualizing House Sales
 
+* **Overview:**
+    - Visualize house-sales dataset
 
- *  **Overview:** Learn basic plot functions
+* **Approximate Time:** 
+    - 10 - 15 mins
 
- *  **Builds on previous labs:**
+* **Instructions:**
+    - **exploration/visualize-house-sales**
 
- *  **Approximate times:** 10 mins
-
- *  **Instructions:**
-
-     -  **basic/visualizing**
-
-     - Follow appropriate instructions for  R / Python / Spark
+* **To Instructor:** 
+    - Demo this lab on screen first, and explain the results
 
 Notes:
-
-
-
 
 ---
 
 ## Lab Data Cleanup
 
+* **Overview:**
+    - Cleaning up data, getting it ready for analytics
 
- *  **Overview:**
-  Cleaning up data, getting it ready for analytics
+* **Approximate Time:**
+    - 10 - 15 mins
 
- *  **Approximate Time:** 10 - 15 mins
-
- *  **Instructions:**
-
-     - '**exploration/data-cleanup** ' lab for Python / R / Spark
-
+* **Instructions:**
+    - **exploration/data-cleanup**
 
 Notes:
-
-
-
 
 ---
 
 ## To Instructor
 
+* Option 1: STOP here, if continuing onto **`ML-Concepts`**
 
- * Option 1: STOP here, if continuing onto **`ML-Concepts`**
-
- * Option 2: continue to next 2 labs, if this is standalone module
+* Option 2: continue to next 2 labs, if this is standalone module
 
 Notes:
-
-
 
 ---
 
 ## [Optional] Lab: Exploring Dataset
 
+* **Instructor**
+    - If covering ML-Concepts, do this at the end of Part-1 ML-Concepts
+    - Demo this lab on screen first, and explain the results
 
- *  **Instructor, If covering ML-Concepts, do this at the end of Part-1 ML-Concepts**
+* **Overview:**  
+    - Explore a dataset
 
- *  **Overview:**  Explore a dataset
+* **Approximate Time:**
+    - 10 - 15 mins
 
- *  **Approximate Time:** 10 - 15 mins
-
- *  **Instructions:**
-
-     -  **'exploration/explore-house-sales'**  lab for Python / R / Spark
-
- *  **To Instructor:** Demo this lab on screen first, and explain the results
-
-Notes:
-
-
-
-
----
-
-## BONUS Labs: Graphing And Visualizing
-
-
- *  **Overview:** Visualize house-sales dataset
-
- *  **Approximate Time:** 10 - 15 mins
-
- *  **Instructions:**
-
-     -  **exploration/visualize-house-sales**  lab for Python / R / Spark
-
- *  **To Instructor:** Demo this lab on screen first, and explain the results
+* **Instructions:**
+    - **'exploration/explore-house-sales'**
 
 Notes:
-
-
-
 
 ---
 
 ## Further Reading
 
+* "Practical Statistics for Data Scientists"O'Reilly books
 
- * "Practical Statistics for Data Scientists"O'Reilly books
+* http://www.cabrillo.edu/~evenable/ch03.pdf
 
- * http://www.cabrillo.edu/~evenable/ch03.pdf
+* Fantastic YouTube video series on Statistics by Brandon Foltz
 
- * Fantastic YouTube video series on Statistics by Brandon Foltz
+    - Covariance:  https://www.youtube.com/watch?v=xGbpuFNR1ME
 
-     - Covariance:  https://www.youtube.com/watch?v=xGbpuFNR1ME
+    - Correlation: https://www.youtube.com/watch?v=4EXNedimDMs  
 
-     - Correlation: https://www.youtube.com/watch?v=4EXNedimDMs  
-
-     - Covariance Matrix: https://www.youtube.com/watch?v=locZabK4Als
+    - Covariance Matrix: https://www.youtube.com/watch?v=locZabK4Als
 
 Notes:
-
-
 
 ---
 
-## Review Questions
+## Review and Q&A
 
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
-Notes:
+* Let's go over what we have covered so far
+
+* Any questions?

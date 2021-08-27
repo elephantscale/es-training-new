@@ -1,4 +1,4 @@
-# Decision Trees in Python
+# Decision Trees in Scikit-Learn
 
 ---
 
