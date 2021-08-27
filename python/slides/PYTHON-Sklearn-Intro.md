@@ -2,21 +2,20 @@
 
 <img src="../../assets/images/logos/scikit-learn-logo-1.png" style="width:40%;"/><!-- {"left" : 2.92, "top" : 6.17, "height" : 1.61, "width" : 2.99} -->
 
-
-
 ---
 
 ## Lesson Objectives
 
-  * Understand Scikit-Learn in Python
-  * Advantages and Disadvantages
-  * Supervised Machine Learning
-  * Unsupervised Machine Learning
-  * Recommendations
+* Understand Scikit-Learn in Python
+* Advantages and Disadvantages
+* Supervised Machine Learning
+* Unsupervised Machine Learning
+* Recommendations
 
 Notes:
 
 ---
+
 # SKLearn Intro
 
 ---
@@ -36,21 +35,9 @@ Notes:
   * Comprehensive - has lots of popular algorithms implemented
   * Fast (most code written in Cython - gives like C like performance)
 
+* [scikit-learn](https://scikit-learn.org/stable/)
 
-Notes:
-- https://scikit-learn.org/stable/
-- https://en.wikipedia.org/wiki/Scikit-learn
-
----
-
-## Version History
- * Current: July 2019: scikit-learn 0.21.3
- * July 2017. scikit-learn 0.19.0
- * September 2016. scikit-learn 0.18.0
- * November 2015. scikit-learn 0.17.0[9]
- * March 2015. scikit-learn 0.16.0[9]
- * July 2014. scikit-learn 0.15.0[9]
- * August 2013. scikit-learn 0.14[9]
+* [Current version is 0.24](https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_0_24_0.html)
 
 Notes:
 
@@ -130,20 +117,6 @@ Notes:
 ```
 <!-- {"left" : 0, "top" : 4.43, "height" : 1.49, "width" : 5.78} -->
 
-
----
-
-
-# SKLearn Classes and Utils
-
----
-
-## SKLearn Classes
-
-- **Estimators:** An estimator is any object that learns from data; it may be a classification, regression or clustering algorithm or a transformer that extracts/filters useful features from raw data.
-
-- **Datasets:** built-in datasets for ease of use
-
 ---
 
 # SKLearn Datasets
@@ -163,7 +136,29 @@ Notes:
 - For more information see [reference doc](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets)
 
 Notes:
-- https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets
+
+---
+
+## SkLearn Datasets : IRIS
+
+```python
+import sklearn
+from sklearn import datasets
+import pandas as pd
+
+# load data
+iris = sklearn.datasets.load_iris()
+
+iris.keys()
+# > dict_keys(['data', 'target', 'target_names', 'DESCR', 'feature_names', 'filename']
+
+# convert to pandas dataframe for nicer display
+iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
+iris_df['class'] = iris.target
+iris_df
+```
+
+<img src="../../assets/images/machine-learning/iris-1.png" style="width:40%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
 
 ---
 
@@ -181,86 +176,184 @@ iris.keys()
 
 ## learn about data
 print (iris.DESCR)
-# > ...
+```
+
+```text
+Iris plants dataset
+--------------------
+
+**Data Set Characteristics:**
+
+    :Number of Instances: 150 (50 in each of three classes)
+    :Number of Attributes: 4 numeric, predictive attributes and the class
+    :Attribute Information:
+        - sepal length in cm
+        - sepal width in cm
+        - petal length in cm
+        - petal width in cm
+        - class:
+                - Iris-Setosa
+                - Iris-Versicolour
+                - Iris-Virginica
+```
+
+---
+
+## SkLearn Datasets : IRIS
+
+```python
+import sklearn
+from sklearn import datasets
+
+iris = sklearn.datasets.load_iris()
 
 ## X / features
 x = iris.data
 x.shape
 # > (150, 4)
+print (x)
 
 ## y / labels
 y = iris.target
 y.shape
 # > (150, )
-
+print (y)
 ```
 <!-- {"left" : 0, "top" : 1.54, "height" : 4.49, "width" : 10.25} -->
+
+```text
+# X
+[[5.1 3.5 1.4 0.2]
+ [4.9 3.  1.4 0.2]
+ [4.7 3.2 1.3 0.2]
+ [4.6 3.1 1.5 0.2]
+ [5.  3.6 1.4 0.2]
+...               ]
+
+# Y
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2]
+```
 
 ---
 
 ## SKLearn Datasets : Boston
 
-
 ```python
 import sklearn
 from sklearn import datasets
+import pandas as pd
 
 boston = sklearn.datasets.load_boston()
 
+boston_df = pd.DataFrame(boston.data, columns=boston.feature_names)
+boston_df['median_price_k'] = boston.target
+boston_df
+```
+
+<img src="../../assets/images/machine-learning/sklearn-boston-1.png" style="width:70%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+
+---
+
+## SKLearn Datasets : Boston
+
+```python
+import sklearn
+from sklearn import datasets
+boston = sklearn.datasets.load_boston()
+print (boston.DESCR)
 x = boston.data
-x.shape
-# (506, 13)
+x.shape # (506, 13)
 
 y = boston.target
-y.shape
-# (506, )
-
+y.shape # (506, )
 ```
 <!-- {"left" : 0, "top" : 1.54, "height" : 3.78, "width" : 7.28} -->
 
----
+```text
+Boston house prices dataset
+---------------------------
+**Data Set Characteristics:**  
 
-## SKLearn Datasets : make_blobs
+    :Number of Instances: 506 
 
-<img src="../../assets/images/data-analysis-python/scikit-make-blobs-1.png" style="width:40%;float:right;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+    :Number of Attributes: 13 numeric/categorical predictive. 
+    Median Value (attribute 14) is usually the target.
 
-
-```python
-import sklearn
-from sklearn import datasets
-%matplotlib inline
-import matplotlib.pyplot as plt
-
-x,y  = sklearn.datasets.make_blobs(n_samples=1000,
-                n_features=2, centers=2)
-
-x.shape
-# (1000,2)
-y.shape
-#(1000,)
-
-print (x)
-# [[-8.81854065  2.17578795]
-#  [10.47105009 -1.49493095]
-#  [10.88797932 -0.42258301]
-#  ....
-
-print(y)
-# [0 1 1 0 1 0 1  ...
-
-## plot
-plt.scatter(x[:, 0], x[:, 1], c=y)
-
+    :Attribute Information (in order):
+        - CRIM     per capita crime rate by town
+        - ZN       proportion of residential land zoned for lots over 25,000 sq.ft.
+        - INDUS    proportion of non-retail business acres per town
+        - CHAS     Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+        - NOX      nitric oxides concentration (parts per 10 million)
+        - RM       average number of rooms per dwelling
+        - AGE      proportion of owner-occupied units built prior to 1940
+        - DIS      weighted distances to five Boston employment centres
+        - RAD      index of accessibility to radial highways
+        - TAX      full-value property-tax rate per $10,000
+        - PTRATIO  pupil-teacher ratio by town
+        - B        1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
+        - LSTAT    % lower status of the population
+        - MEDV     Median value of owner-occupied homes in $1000's
 ```
-<!-- {"left" : 0, "top" : 3.62, "height" : 5.16, "width" : 6.46} -->
 
 ---
 
-## SkLearn Datasets: make_classification
+## Sklearn Synthetic Datasets
+
+* Synthetic datasets are great way to experiment with algorithms
+
+* **`make_regression`** can generate regression data
+
+* **`make_classification`** are used for classification
+
+* **`make_blobs`** for clustering data
+
+---
+
+## SkLearn.make_regression
+
+* Params
+    - `noise` : setting it close to zero will result in linear line.  Higher values will scatter more
+    - `random_state`: Optional value, setting this to a specific value will generate, reproduceable data
+
+```python
+from sklearn.datasets import make_regression
+from matplotlib import pyplot
+
+X, y = make_regression(n_samples=150, n_features=1, noise=0.2)
+# X, y = make_regression(n_samples=150, n_features=1, noise=0.2, random_state=42)
+
+pyplot.scatter(X,y)
+pyplot.show()
+```
+
+<img src="../../assets/images/machine-learning/sklearn-make-regression-1.png" style="width:38%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+
+---
+
+## SkLearn.make_regression
 
 
-<img src="../../assets/images/data-analysis-python/scikit-make-classification-1.png" style="width:40%;float:right;"/><!-- {"left" : 2.56, "top" : 1.21, "height" : 3.44, "width" : 5.14} -->
+```python
+from sklearn.datasets import make_regression
+from matplotlib import pyplot
 
+X, y = make_regression(n_samples=150, n_features=1, noise=200)
+# X, y = make_regression(n_samples=150, n_features=1, noise=200, random_state=42)
+
+pyplot.scatter(X,y)
+pyplot.show()
+```
+
+<img src="../../assets/images/machine-learning/sklearn-make-regression-2.png" style="width:50%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+
+---
+
+## SkLearn.make_classification
 
 ```python
 import sklearn
@@ -268,18 +361,151 @@ from sklearn import datasets
 %matplotlib inline
 import matplotlib.pyplot as plt
 
-x, y = sklearn.datasets.make_classification(n_samples = 1000 ,
-        n_features=2, n_redundant=0,
-        n_informative=1, n_clusters_per_class=1)
+x, y = sklearn.datasets.make_classification(
+                n_samples = 1000 ,
+                n_features=2, 
+                n_redundant=0,
+                n_informative=1, 
+                n_clusters_per_class=1)
 
 plt.scatter(x[:, 0], x[:, 1], marker='o', c=y,
             s=25, edgecolor='k')
 ```
 <!-- {"left" : 0, "top" : 4.96, "height" : 3.24, "width" : 10.25} -->
 
+<img src="../../assets/images/data-analysis-python/scikit-make-classification-1.png" style="width:40%;"/><!-- {"left" : 2.56, "top" : 1.21, "height" : 3.44, "width" : 5.14} -->
+
 ---
 
-# Scikit Estimator
+## SKLearn.make_blobs
+
+* Generate clusters of data
+
+```python
+import sklearn
+from sklearn import datasets
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+x,y  = sklearn.datasets.make_blobs(
+                n_samples=1000,
+                n_features=2, 
+                centers=2)
+
+x.shape # (1000,2)
+y.shape #(1000,)
+
+plt.scatter(x[:, 0], x[:, 1], c=y)
+```
+<!-- {"left" : 0, "top" : 3.62, "height" : 5.16, "width" : 6.46} -->
+
+<img src="../../assets/images/machine-learning/sklearn-make-blobs-1.png" style="width:40%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+
+---
+
+## SKLearn.make_blobs
+
+* Generate clusters of data
+
+```python
+import sklearn
+from sklearn import datasets
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+x,y  = sklearn.datasets.make_blobs(
+                n_samples=1000,
+                n_features=2, 
+                centers=3)
+
+x.shape # (1000,2)
+y.shape #(1000,)
+
+plt.scatter(x[:, 0], x[:, 1], c=y)
+```
+<!-- {"left" : 0, "top" : 3.62, "height" : 5.16, "width" : 6.46} -->
+
+<img src="../../assets/images/machine-learning/sklearn-make-blobs-2.png" style="width:40%;"/><!-- {"left" : 3.34, "top" : 1.09, "height" : 2.44, "width" : 3.56} -->
+
+---
+
+# SkLearn Algorithms
+
+---
+
+## SkLearn Algorithms
+
+* Sklearn implements many popular algorithms
+
+* **Preprocessing**: Getting the data into shape for Machine Learning
+
+* **Dimensionality Reduction**: Reducing redundancy in variables
+
+* **Classification**: Predicting one of a finite set of classes for data.
+
+* **Regression**: Predicting a response variable
+
+* **Clustering**: Finding natural patterns in the data.
+
+* **Model Selection**: Finding the best model for our data.
+
+Notes:
+
+---
+
+## Scikit-Learn Algorithm Map
+
+<img src="../../assets/images/data-analysis-python/3rd-party/scikit-learn-algorithm-cheatsheet-1.png" style="max-width:80%;" /><!-- {"left" : 1.02, "top" : 2.26, "height" : 5.12, "width" : 8.21} -->
+
+---
+
+## Algorithm Summary
+
+| PreProcessing                    | Dimensionality Reduction           | Classification                | Regression              | Clustering              | Model Selection                                    |
+|----------------------------------|------------------------------------|-------------------------------|-------------------------|-------------------------|----------------------------------------------------|
+| Feature Scaling (Scaler Classes) | PCA (Principal Component Analysis) | Linear Models                 | Linear Models           | Kmeans                  | Cross-Validation                                   |
+| Normalization                    | SVD (Singular Value Decomposition) | SVM (Support Vector Machines) | Decision Trees          | Spectral Clustering     | Hyperparmeter Tuning                               |
+| Binarization                     | Linear Discriminant Analysis       | Nearest Neighbors             | Ensemble Decision Trees | Hierarchical Clustering | Model Persistence                                  |
+| Categorical Encoding             | LDA (Latent Dirichlet Allocation)  | Naive Bayes                   |                         |                         | Metrics (Regressions, Classifications, Clustering) |
+| Imputation                       |                                    | Decision Trees                |                         |                         |                                                    |
+| FunctionTransformer              |                                    | Ensemble Decision Trees       |                         |                         |                                                    |
+|                                  |                                    | Neural Networks               |                         |                         |
+
+<!-- {"left" : 0.07, "top" : 1.05, "height" : 4.26, "width" : 10.12, "columnwidth" : [1.96, 1.92, 1.78, 1.49, 1.5, 1.47]} -->
+
+---
+
+## Lab: Sklearn Datasets
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Get familiar with SKlearn datasets
+
+* **Approximate run time:**
+  - 20-30 mins
+
+* **Instructions:**
+  - SKLearn1 - Datasets
+
+---
+
+## Lab: Sklearn Utils
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Get familiar with SKlearn APIs
+
+* **Approximate run time:**
+  - 20-30 mins
+
+* **Instructions:**
+  - SKLearn2 - APIs
+
+---
+
+# Extra Slides
 
 ---
 
@@ -377,50 +603,6 @@ Notes:
 ---
 
 
-# SkLearn Algorithms
-
----
-
-
-## Algorithms
-  * Sklearn has many algorithms
-    1. Preprocessing: Getting the data into shape for Machine Learning
-    
-    2. Dimensionality Reduction: Reducing redundancy in variables
-    
-    3. Classification: Predicting one of a finite set of classes for data.
-    
-    4. Regression: Predicting a response variable
-    
-    5. Clustering: Finding natural patterns in the data.
-    
-    6. Model Selection: Finding the best model for our data.
-
-
-Notes:
-
----
-## Algorithm Summary
-
-| PreProcessing                    | Dimensionality Reduction           | Classification                | Regression              | Clustering              | Model Selection                                    |
-|----------------------------------|------------------------------------|-------------------------------|-------------------------|-------------------------|----------------------------------------------------|
-| Feature Scaling (Scaler Classes) | PCA (Principal Component Analysis) | Linear Models                 | Linear Models           | Kmeans                  | Cross-Validation                                   |
-| Normalization                    | SVD (Singular Value Decomposition) | SVM (Support Vector Machines) | Decision Trees          | Spectral Clustering     | Hyperparmeter Tuning                               |
-| Binarization                     | Linear Discriminant Analysis       | Nearest Neighbors             | Ensemble Decision Trees | Hierarchical Clustering | Model Persistence                                  |
-| Categorical Encoding             | LDA (Latent Dirichlet Allocation)  | Naive Bayes                   |                         |                         | Metrics (Regressions, Classifications, Clustering) |
-| Imputation                       |                                    | Decision Trees                |                         |                         |                                                    |
-| FunctionTransformer              |                                    | Ensemble Decision Trees       |                         |                         |                                                    |
-|                                  |                                    | Neural Networks               |                         |                         |                                                    
-
-<!-- {"left" : 0.07, "top" : 1.05, "height" : 4.26, "width" : 10.12, "columnwidth" : [1.96, 1.92, 1.78, 1.49, 1.5, 1.47]} -->
-
----
-
-## Scikit-Learn Algorithm Map
-
-<img src="../../assets/images/data-analysis-python/3rd-party/scikit-learn-algorithm-cheatsheet-1.png" style="max-width:80%;" /><!-- {"left" : 1.02, "top" : 2.26, "height" : 5.12, "width" : 8.21} -->
-
----
 
 # SkLearn Mixins (Optional, Reference Only)
 
@@ -489,7 +671,6 @@ Notes:
   * score: Too many!
     - a number of scoring options for clusters.
     - depends on type
-
 
 Notes:
 
