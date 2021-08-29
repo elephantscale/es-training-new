@@ -1,6 +1,10 @@
 
-# Introduction to AI and  Machine Learning 
+<img src="../../assets/images/logos/TriveraTech-logo-2-large.jpg" style="width:25%;float:right;" /> <!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
 
+# AI / ML Jumpstart
+
+<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:20%;"/>  <!-- {"left" : 2.97, "top" : 7.3, "height" : 1.41, "width" : 1.65} -->    &nbsp; &nbsp;
+ <img src="../../assets/images/logos/python-logo-1.png" style="width:25%;"/>  <!-- {"left" : 4.83, "top" : 8.14, "height" : 0.62, "width" : 2.42} -->   
 
 ---
 

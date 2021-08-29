@@ -154,23 +154,13 @@ Notes:
 
 ## Clustering
 
-<img src="../../assets/images/machine-learning/clustering-02.png" style="width:49%;float:right;"><!-- {"left" : 5.41, "top" : 1.5, "height" : 1.79, "width" : 4.72} -->
+* Clustering finds natural groupings in data
 
- * Clustering finds natural groupings in data
+* Here we are grouping alcohol beverages according to 2 dimensions (alcohol %, fizziness); And we see similar drinks fall into natural groups
 
- * Humans naturally cluster data we encounter
-     - Categorizing, organizing, etc.
-     - Our brains seek patterns
+* In real world applications, we could be clustering by many dimensions (10s or 100s)
 
- * Why do we cluster?
-     - To understand our data
-     - To find "more like this"
-
-
-Notes:
-
-* Clustering allows us to group similar objects or events or data sets.
-* This is a method of unsupervised learning.
+<img src="../../assets/images/machine-learning/clustering-04.png" style="width:60%;"><!-- {"left" : 5.41, "top" : 1.5, "height" : 1.79, "width" : 4.72} -->
 
 
 ---

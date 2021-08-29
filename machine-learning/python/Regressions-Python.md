@@ -1,4 +1,4 @@
-# Regressions in Python
+# Regressions in Scikit-Learn
 
 ---
 

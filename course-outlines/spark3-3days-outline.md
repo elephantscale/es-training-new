@@ -4,11 +4,12 @@
 
 ![](../assets/images/logos/spark-logo-1-small.png)
 
-We are living in an era of 'big data'.  Spark is a popular platform for analyzing big data.
+Apache Spark is a powerful, open-source processing engine for big data processing.  It is optimized for
+speed, ease of use, and sophisticated analytics.
 
-This course introduces Apache Spark to students.  This class is taught with Python language and using Jupyter environment
+This hand-on course in Apache Spark is geared for technical business professional who wish to solve real-world data problems using Apache Spark.
 
-This course covers latest features in Spark version 3.
+This class is taught with Python language and using Jupyter environment.  This course covers latest features in Spark version 3.
 
 ## What You Will Learn
 

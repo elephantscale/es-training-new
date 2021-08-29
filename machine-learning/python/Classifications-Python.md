@@ -1,4 +1,4 @@
-# Classifications in Python Scikit-Learn
+# Classifications in Scikit-Learn
 
 ---
 

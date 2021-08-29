@@ -1,4 +1,4 @@
-# Unsupervised Learning in Python SciKit
+# Unsupervised Learning in SciKit-Learn
 
 ---
 

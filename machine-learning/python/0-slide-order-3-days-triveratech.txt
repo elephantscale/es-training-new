@@ -1,11 +1,10 @@
 ## To assemble md slides
-##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-order-3-days.txt
-## to make pdfs
-##          $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-order-3-days.txt  pdf
-##          (-d will replace current assembly.out)
+##   ./gen-custom.sh
+
+## Course outline : Outline_TTML5503_Intro_AI-ML_JumpStart_3days_20210709.pdf
 
 ## About
-About-AI-Machine-Learning-Class-3-days.md
+About-AI-Machine-Learning-Class-3-days-TriveraTech.md About-AI-Machine-Learning-Class-3-days.md
 
 ## Resources / References
 ../generic/ML-Resources.md
@@ -16,20 +15,15 @@ About-AI-Machine-Learning-Class-3-days.md
 ## Hands on starts
 ../generic/Labs-Prep.md
 
-## Python basics - reference only
-../../python/slides/PYTHON-NumPy.md
-../../python/slides/PYTHON-Pandas.md
 
 ## ML
 ../generic/Data-Exploration.md
 ../generic/ML-Concepts-All.md
-../generic/Feature-Engineering.md
 
 ## Introducing SciKit Learn
 ../../python/slides/PYTHON-Sklearn2.md
 
-## Spark ML
-../spark/Spark-ML-Overview.md
+../generic/Feature-Engineering.md
 
 ## Algorithms
 Regressions-Python.md
@@ -42,3 +36,10 @@ Unsupervised-Python.md
 
 ## Final summary
 ../generic/Algorithm-Summary-details.md
+
+## Appendix
+../../template/slides/appendix-divider.md 
+
+## Python basics - reference only
+../../python/slides/PYTHON-NumPy.md
+../../python/slides/PYTHON-Pandas.md
