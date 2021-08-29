@@ -54,9 +54,10 @@ Notes:
 * Protect against all (?) attacks
 * Encrypt your data, in motion and in rest
 * And you will not be blamed
-* But this is dull
+* But this is boring
   - and brings no new functionality
 
+![](../images/intro-05-pexels-cottonbro-4114918.jpg)
 ---
 
  
@@ -66,18 +67,25 @@ Notes:
 * Blue Team defends
 * Tell your boss, you are doing security :)
 
+![](../images/intro-6-pexels-rodnae-productions-7551391.jpg)
+
 ---
 
-
-
 ## Criminal Economy
+
 * Criminal marketplaces
 * Escrow services
 * Bitcoin
-* Vouchers
-* Gift cards
+* Malware as a service
 
 ---
+
+## Insider job recruitement
+
+![](../images/intro-07.png)
+
+---
+
 
 
 ## Is FBI involved?
