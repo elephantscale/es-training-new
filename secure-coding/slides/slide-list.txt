@@ -1,6 +1,7 @@
 # About-Secure-Coding-Class.md
 ../../course-outlines/secure-coding.md
-# Security-Intro.md
+About-Secure-Coding-Class.md
+Security-Intro.md
 Threat-Modeling.md
 # Java-Security.md
 # JavaScript-Security.md

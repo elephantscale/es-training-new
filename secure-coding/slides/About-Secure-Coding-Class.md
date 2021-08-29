@@ -1,35 +1,19 @@
 Secure Coding
 ======
 
+  
+## Agenda - 3 days
 
-## Agenda
+| Day | Theme                | Detail                                                                                                |
+|-----|----------------------|-------------------------------------------------------------------------------------------------------|
+| 1   | Introducing Security | Threat modeling  Common attacks Secure design                                                         |
+| 2   | Secure Coding        | Countermeasures  Authorization and authentication  Session security                                   |
+| 3   | Secure Frameworks    | Modern security frameworks  Framework architecture  Securing the runtime environment  Security future |
 
 
- * 2 days
-
- *  **Day 1 (Introducing Security)** 
-
-     - Security Intro
-
-     - Attacks and Defenses
-
-     - REST security     
-
- *  **Day 2 (Secure Coding)** 
-
-     - Java Security
-
-     - JavaScript Security
-
-     - Securing Resources
-     
 Notes: 
 
-
-
 ---
-
-
 
 ## Pre-requisites and Expectations
 
@@ -148,13 +132,13 @@ Notes:
 
      - Your Name
 
-     - Your background (developer, admin, manager, …)
+     - Your background (developer, admin, manager, ...)
 
      - Technologies you are familiar with
 
      - Familiarity with security? (scale of 1 – 4:  1 – new,   4 – expert)
 
-     - Something non-technical about you!(favorite ice cream flavor / hobby…)
+     - Something non-technical about you!(favorite ice cream flavor or hobby…)
 
 ![](../images/ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
 
