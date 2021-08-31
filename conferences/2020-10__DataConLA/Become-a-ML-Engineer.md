@@ -8,7 +8,7 @@ Sujee Maniyam @ Elephant Scale
 
 ## Hi, I am Sujee Maniyam
 
-<img src="../../assets/images/people/sujee-maniyam-1.jpg" style="width:20%;float:right;" />
+<img src="../../assets/images/people/sujee-maniyam-2.jpg" style="width:20%;float:right;" />
 <img src="../../assets/images/logos/elephantscale-logo-2.png" style="width:30%;float:right;clear:both;" />
 <img src="../../assets/images/generic/cat-tea-leaf-5.jpg" style="width:20%;float:right;clear:both;" />
 
