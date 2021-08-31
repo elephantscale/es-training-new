@@ -14,3 +14,11 @@ We would put both in but if there was a specific intent on this to only do one o
 
 #### Labs
 I don't know if you have any labs for this section. If not, it would be an easy add to use the OWASP webgoat labs.  They would only require running a docker image.
+
+### encryption
+
+What specific sort of attack should be covered here?
+- RSA encryption attacks - some of which seem like they might be a bit too advanced.
+- At this point I'm assuming maybe just a quick overview to show the sort of attacks that can take place
+
+Or were there some other attacks, like ransomeware, that is intended here?
