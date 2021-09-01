@@ -8,26 +8,15 @@
 
 ---
 
-## What is Clustering?
+## Clustering
 
-<img src="../../assets/images/machine-learning/clustering-02.png" style="width:40%;float:right;" /><!-- {"left" : 5.13, "top" : 1.95, "height" : 1.89, "width" : 4.98} -->
+* Clustering finds natural groupings in data
 
- * Clustering finds natural **groupings / clusters**  in data
-     - Each group shares similar traits with elements in its own group
-     - and is different from elements in other groups
+* Here we are grouping alcohol beverages according to 2 dimensions (alcohol %, fizziness); And we see similar drinks fall into natural groups
 
- * Humans naturally cluster data we encounter
-     - Categorizing, organizing, etc.
-     - Our brains seek patterns
+* In real world applications, we could be clustering by many dimensions (10s or 100s)
 
- * Why do we cluster?
-     - To understand our data
-     - To find "more like this"
-
-Notes:
-
-
-
+<img src="../../assets/images/machine-learning/clustering-04.png" style="width:60%;"><!-- {"left" : 5.41, "top" : 1.5, "height" : 1.79, "width" : 4.72} -->
 
 ---
 
@@ -54,13 +43,12 @@ Notes:
 
 ---
 
-## Clustering Use Cases: Google News
-
-<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="width:50%;float:right;"/><!--  {"left" : 5.08, "top" : 1.25, "height" : 4.94, "width" : 4.92} -->
-
-- Google News groups similar articles together.  This has to be done dynamically, as news stories change all the time
+## Clustering Example: Google News
 
 
+ * Google News algorithm automatically groups **related news stories**  into sections
+
+<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:89%;"><!-- {"left" : 2.13, "top" : 2.41, "height" : 6.02, "width" : 5.99} -->
 
 
 Notes:
@@ -112,18 +100,18 @@ TODO : add pictures
     - Michaels Run
     - Party Trip
     - Toys
-    - Electronics
     - Baby
     - Gallon of Milk
     - *Booze and Calories*
 
 * **Question for class:What is the use case for this?**
 
+* [Reference](https://www.kaggle.com/c/walmart-recruiting-trip-type-classification)
+
 
 
 Notes:
 
-https://www.kaggle.com/c/walmart-recruiting-trip-type-classification
 
 
 ---
