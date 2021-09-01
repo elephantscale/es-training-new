@@ -1,0 +1,5 @@
+## To generate slides
+## ./gen.sh
+
+About-Jenkins-Class.pptx
+Continuous_Integration_with_Jenkins.md
