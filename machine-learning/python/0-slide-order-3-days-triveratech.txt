@@ -20,10 +20,10 @@ About-AI-Machine-Learning-Class-3-days-TriveraTech.md About-AI-Machine-Learning-
 ../generic/Data-Exploration.md
 ../generic/ML-Concepts-All.md
 
-## Introducing SciKit Learn
+../generic/Feature-Engineering.md
+
 ../../python/slides/PYTHON-Sklearn2.md
 
-../generic/Feature-Engineering.md
 
 ## Algorithms
 Regressions-Python.md
