@@ -112,7 +112,7 @@ Notes:
 
 * Class: Go-out=1, Stay-home=0
 
-<img src="../../assets/images/machine-learning/Classification-02.png" style="width:60%;" /><!-- {"left" : 1.02, "top" : 3.47, "height" : 4.16, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/naive-bayes-2.png" style="width:60%;" /><!-- {"left" : 1.02, "top" : 3.47, "height" : 4.16, "width" : 8.21} -->
 
 
 Notes:
@@ -153,24 +153,26 @@ Notes:
 
 ## Calculating Probabilities
 
-```python
-                        count(class = 1)
-* P(class = 1) = ------------------------------
-                count (class = 1) + count (class = 0)
+```text
+                             count(class = 1)
+* P(class = 1 / go out )   = ------------------------------
+                             count (class = 1) + count (class = 0)
 
-                        count(class = 0)
-* P(class = 0) = ------------------------------
-                count (class = 1) + count (class = 0)
+                             count(class = 0)
+* P(class = 0 / stay home) = ------------------------------
+                             count (class = 1) + count (class = 0)
 
-                            5
-* P(class = 1 / go-out) = --------  = 50%
-                          5 + 5
+                                5
+* P(class = 1 / go-out)    = --------  = 50%
+                              5 + 5
 
-                              5
+                                5
 * P(class = 0 / stay-home) = --------  = 50%
-                             5 + 5
+                              5 + 5
 ```
 <!-- {"left" : 0, "top" : 1.23, "height" : 4.24, "width" : 9.61} -->
+
+<img src="../../assets/images/machine-learning/naive-bayes-2.png" style="width:57%;" /><!-- {"left" : 1.02, "top" : 3.47, "height" : 4.16, "width" : 8.21} -->
 
 Notes:
 
@@ -188,6 +190,8 @@ P(class=go-out | weather=sunny ) = ------------------------------------
                                     5
 ```
 <!-- {"left" : 0, "top" : 1.04, "height" : 1.03, "width" : 6.97} -->
+
+<img src="../../assets/images/machine-learning/naive-bayes-1.png" style="width:35%;float:right;" /><!-- {"left" : 1.02, "top" : 3.47, "height" : 4.16, "width" : 8.21} -->
 
 * **How weather influences decision**
 
