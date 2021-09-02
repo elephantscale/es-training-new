@@ -207,7 +207,168 @@ Notes:
 |                       | Modifies a file on their file server           | Ever notice how much XML includes remote schemas?       |
 |                       | Modifies links or redirects                    |                                                         |
 
+
+Notes:
+
+* Tampering with a File
+* Attackers can modify files wherever they have write permission. When your code has to rely on files others can write, there's a possibility that the file was written maliciously. While the most obvious form of tampering is on a local disk, there are also plenty of ways to do this when the file is remotely included, like most of the JavaScript on the Internet. The attacker can breach your security by breaching someone else's site. They can also (because of poor privileges, spoofing, or elevation of privilege) modify files you own. Lastly, they can modify links or redirects of various sorts. Links are often left out of integrity checks. There's a somewhat subtle variant of this when there are caches between things you control (such as a server) and things you don't (such as a web browser on the other side of the Internet). For example, cache poisoning attacks insert data into web caches through poor security controls at caches (OWASP, 2009).
+
 ---
+
+## Tampering with memory and network
+
+| Threat Examples          | What the Attacker Does                      | Notes                                                                       |
+|--------------------------|---------------------------------------------|-----------------------------------------------------------------------------|
+| Tampering with memory    | Modifies your code                          | Hard to defend against once the attacker is running code as the same user   |
+|                          | Modifies data they've supplied to your API  | Pass by value, not by reference when crossing a trust boundary              |
+| Tampering with a network | Redirects the flow of data to their machine | Often stage 1 of tampering                                                  |
+|                          | Modifies data flowing over the network      | Even easier and more fun when the network is wireless (WiFi, 3G, et cetera) |
+|                          | Enhances spoofing attacks                   |                                                                             |
+
+
+Notes:
+
+* Tampering with Memory
+* Attackers can modify your code if they're running at the same privilege level. At that point, defense is tricky. If your API handles data by reference (a pattern often chosen for speed), then an attacker can modify it after you perform security checks.
+
+* Tampering with a Network
+* Network tampering often involves a variety of tricks to bring the data to the attacker's machine, where he forwards some data intact and some data modified. However, tricks to bring you the data are not always needed; with radio interfaces like WiFi and Bluetooth, more and more data flow through the air. Many network protocols were designed with the assumption you needed special hardware to create or read arbitrary packets. The requirement for special hardware was the defense against tampering (and often spoofing). The rise of software-defined radio (SDR) has silently invalidated the need for special hardware. It is now easy to buy an inexpensive SDR unit that can be programmed to tamper with wireless protocols.
+
+
+---
+
+## Repudiation Threats
+
+* Repudiation is claiming you didn't do something, 
+  * or were not responsible for what happened. 
+* People can repudiate honestly or deceptively.
+
+Notes:
+
+* Repudiation is claiming you didn't do something, or were not responsible for what happened. People can repudiate honestly or deceptively. Given the increasing knowledge often needed to understand the complex world, those honestly repudiating may really be exposing issues in your user experiences or service architectures. Repudiation threats are a bit different from other security threats, as they often appear at the business layer. (That is, above the network layer such as TCP/IP, above the application layer such as HTTP/HTML, and where the business logic of buying products would be implemented.)
+
+* Repudiation threats are also associated with your logging system and process. If you don't have logs, don't retain logs, or can't analyze logs, repudiation threats are hard to dispute. There is also a class of attacks in which attackers will drop data in the logs to make log analysis tricky. For example, if you display your logs in HTML and the attacker sends </tr> or </html>, your log display needs to treat those as data, not code. More repudiation threats are shown in the table
+
+---
+
+## Repudiating an action
+
+| Threat Examples       | What the Attacker Does                                       | Notes                                                                                                                                                                 |
+|-----------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Repudiating an action | Claims to have not clicked                                   | Maybe they really did                                                                                                                                                 |
+|                       | Claims to have not received                                  | Receipt can be strange; does mail being downloaded by your phone mean you've read it? Did a network proxy pre-fetch images? Did someone leave a package on the porch? |
+|                       | Claims to have been a fraud victim                           |                                                                                                                                                                       |
+|                       | Uses someone else's account                                  |                                                                                                                                                                       |
+|                       | Uses someone else's payment instrument without authorization |                                                                                                                                                                       |
+
+Notes:
+
+* Repudiating an Action
+* When you're discussing repudiation, it's helpful to discuss “someone” rather than “an attacker.” You want to do this because those who repudiate are often not actually attackers, but people who have been failed by technology or process. Maybe they really didn't click (or didn't perceive that they clicked). Maybe the spam filter really did eat that message. Maybe UPS didn't deliver, or maybe UPS delivered by leaving the package on a porch. Maybe someone claims to have been a victim of fraud when they really were not (or maybe someone else in a household used their credit card, with or without their knowledge). Good technological systems that both authenticate and log well can make it easier to handle repudiation issues.
+
+---
+
+## Attacking the logs
+
+| Threat Examples    | What the Attacker Does                                                                   | Notes |
+|--------------------|------------------------------------------------------------------------------------------|-------|
+| Attacking the logs | Notices you have no logs                                                                 |       |
+|                    | Puts attacks in the logs to confuse logs, log-reading code, or a person reading the logs |       |
+
+Notes:
+
+* Attacking the Logs
+* Again, if you don't have logs, don't retain logs, or can't analyze logs, repudiation actions are hard to dispute. So if you aren't logging, you probably need to start. If you have no log centralization or analysis capability, you probably need that as well. If you don't properly define what you will be logging, an attacker may be able to break your log analysis system. It can be challenging to work through the layers of log production and analysis to ensure reliability, but if you don't, it's easy to have attacks slip through the cracks or inconsistencies.
+
+---
+
+## Information Disclosure Threats
+
+* Information disclosure is about allowing people to see information they are not authorized to see.
+* Some information disclosure threats are shown on the next slide
+
+---
+
+## Information disclosure against a process
+
+| Threat Examples                          | What the Attacker Does                                                     | Notes                                                                   |
+|------------------------------------------|----------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Information disclosure against a process | Extracts secrets from error messages                                       |                                                                         |
+|                                          | Reads the error messages from username/passwords to entire database tables |                                                                         |
+|                                          | Extracts machine secrets from error cases                                  | Can make defense against memory corruption such as ASLR far less useful |
+|                                          | Extracts business/personal secrets from error cases                        |                                                                         |
+
+Notes:
+
+* Information Disclosure from a Process
+* Many instances in which a process will disclose information are those that inform further attacks. A process can do this by leaking memory addresses, extracting secrets from error messages, or extracting design details from error messages. Leaking memory addresses can help bypass ASLR and similar defenses. Leaking secrets might include database connection strings or passwords. Leaking design details might mean exposing anti-fraud rules like “your account is too new to order a diamond ring.”
+
+---
+
+## Information Disclosure from a Data Store
+
+| Threat Examples                            | What the Attacker Does                           | Notes |
+|--------------------------------------------|--------------------------------------------------|-------|
+| Information disclosure against data stores | Takes advantage of inappropriate or missing ACLs |       |
+|                                            | Takes advantage of bad database permissions      |       |
+|                                            | Finds files protected by obscurity               |       |
+|                                            | Finds crypto keys on disk (or in memory)         |       |
+|                                            | Sees interesting information in filenames        |       |
+|                                            | Reads files as they traverse the network         |       |
+|                                            | Gets data from logs or temp files                |       |
+|                                            | Gets data from swap or other temp storage        |       |
+|                                            | Extracts data by obtaining device, changing OS   |       |
+
+Notes:
+
+* As data stores, well, store data, there's a profusion of ways they can leak it. The first set of causes are failures to properly use security mechanisms. Not setting permissions appropriately or hoping that no one will find an obscure file are common ways in which people fail to use security mechanisms. Cryptographic keys are a special case whereby information disclosure allows additional attacks. Files read from a data store over the network are often readable as they traverse the network.
+
+* An additional attack, often overlooked, is data in filenames. If you have a directory named “May 2013 layoffs,” the filename itself, “Termination Letter for Alice.docx,” reveals important information.
+
+* There's also a group of attacks whereby a program emits information into the operating environment. Logs, temp files, swap, or other places can contain data. Usually, the OS will protect data in swap, but for things like crypto keys, you should use OS facilities for preventing those from being swapped out.
+
+* Lastly, there is the class of attacks whereby data is extracted from the device using an operating system under the attacker's control. Most commonly (in 2013), these attacks affect USB keys, but they also apply to CDs, backup tapes, hard drives, or stolen laptops or servers. Hard drives are often decommissioned without full data deletion. (You can address the need to delete data from hard drives by buying a hard drive chipper or smashing machine, and since such machines are awesome, why on earth wouldn't you?)
+
+---
+
+## Information Disclosure from a Data Flow
+
+| Threat Examples                            | What the Attacker Does                                         | Notes |
+|--------------------------------------------|----------------------------------------------------------------|-------|
+| Information disclosure against a data flow | Reads data on the network                                      |       |
+|                                            | Redirects traffic to enable reading data on the network        |       |
+|                                            | Learns secrets by analyzing traffic                            |       |
+|                                            | Learns who's talking to whom by watching the DNS               |       |
+|                                            | Learns who's talking to whom by social network info disclosure |       |
+
+Notes:
+
+* Information Disclosure from a Data Flow
+* Data flows are particularly susceptible to information disclosure attacks when information is flowing over a network. However, data flows on a single machine can still be attacked, particularly when the machine is shared by cloud co-tenants or many mutually distrustful users of a compute server. Beyond the simple reading of data on the network, attackers might redirect traffic to themselves (often by spoofing some network control protocol) so they can see it when they're not on the normal path. It's also possible to obtain information even when the network traffic itself is encrypted. There are a variety of ways to learn secrets about who's talking to whom, including watching DNS, friend activity on a site such as LinkedIn, or other forms of social network analysis.
+
+---
+
+## Denial-of-Service Threats
+
+| Threat Examples                        | What the Attacker Does                        | Notes |
+|----------------------------------------|-----------------------------------------------|-------|
+| Denial of service against a process    | Absorbs memory (RAM or disk)                  |       |
+|                                        | Absorbs CPU                                   |       |
+|                                        | Uses process as an amplifier                  |       |
+| Denial of service against a data store | Fills data store up                           |       |
+|                                        | Makes enough requests to slow down the system |       |
+| Denial of service against a data flow  | Consumes network resources                    |       |
+
+Notes:
+
+* Denial-of-service attacks can be split into those that work while the attacker is attacking (say, filling up bandwidth) and those that persist. Persistent attacks can remain in effect until a reboot (for example, while(1){fork();}), or even past a reboot (for example, filling up a disk). Denial-of-service attacks can also be divided into amplified and unamplified. Amplified attacks are those whereby small attacker effort results in a large impact. An example would take advantage of the old unix chargen service, whose purpose was to generate a semi-random character scheme for testing. An attacker could spoof a single packet from the chargen port on machine A to the chargen port on machine B. The hilarity continues until someone pulls a network cable.
+
+---
+
+## Elevation of Privilege Threats
+
+* Allowing someone to do something they're not authorized to do—for example, allowing a normal user to execute code as admin, or allowing a remote person without any privileges to run code.
+
 
 
 # Security terminology
