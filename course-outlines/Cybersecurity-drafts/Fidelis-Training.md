@@ -42,7 +42,7 @@ Lectures and hands on labs. (50%   50%)
 * Introduction to Cryptography
 * Secure Programming Techniques
 
-### Exploiting and Protecting Web Applicatio
+### Exploiting and Protecting Web Applications
 * Overview of Web Technologies (HTTP, cookies, JavaScript, caching, session management)
 * Browser Security Model (document object model, same-origin-policy and violations of it), and SSL
 * Coverage of HTML5 vulnerabilities due to frame communication, localstorage, cross-origin resource sharing, and other HTML5 features

@@ -17,7 +17,7 @@ Introductory - Intermediate
 Five days
 
 ## Format
-Lectures and hands on labs. (50%   50%)
+Lectures and hands on labs. (50% - 50%)
 
 ## Prerequisites
 * Recommended: Cybersecurity awareness
