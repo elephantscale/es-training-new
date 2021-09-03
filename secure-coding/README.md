@@ -12,7 +12,7 @@
 * Mark
   * Threat modeling - done
   * Java security - ready for review
-  * Java script security
+  * JavaScript security - ready for review
 
 
 

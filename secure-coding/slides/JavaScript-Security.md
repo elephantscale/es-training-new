@@ -722,8 +722,9 @@ encrypted data= 83640168A86A9F2BC0BEEEDEB39756E195EF3D0758A3262F012697C3D718B039
 ---
 
 
-## Disable Aautocomplete
-for whole the form:
+## Disable Autocomplete
+
+* For the whole form:
 ```html
           <form method="post" action="/form" autocomplete="off">
           ```
