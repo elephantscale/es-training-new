@@ -367,13 +367,13 @@ Image Credit: www.guru99.com/learn-everything-about-trojans-viruses-and-worms.ht
 ## Common Types of Trojans - RATs
 
 - _Remote Access Trojan (RAT):_ Allows attacker to take full control a computer
-  - Often disguised as a utility.
-  - Social Engineering often used to gain access to a machine
-- The _Windows Support Scam_ is a social engineering attack
-  - Users are fed a phony webpage, shown on the next slide.
-  - After calling the number, they give scammers remote access to their computer
-  - The scammers then install a RAT disguised and an anti-virus or other utility
-  - The scammers now have free access to the infected machine
+  - Often disguised as a utility or incorporates itself into an existing program
+  - Social Engineering often used to gain access to a machine for installation of the RAT
+- Ef. The _Windows Support Scam_ is a social engineering attack for RAT installation
+  - Users are served a phony webpage, shown on the next slide, often from some phishing attack
+  - After calling the number, victims give scammers remote access to their computer
+  - The scammers install a RAT disguised as an anti-virus or other utility
+  - The scammers have free access to the infected machine to perform other attacks
 
 ---
 
@@ -390,20 +390,20 @@ Image Credit: wolfstreet.com/2018/08/19/scam-critical-alert-from-microsoft-iexpl
 - _Data Sending Trojan_: Uses keylogger technology to capture sensitive data
   - Example passwords, credit card and banking information
   - The data is then sent to the attacker
-- Loggers are often part of a larger malware suite of functionality
-  - For example, collecting and sending all phone and computer data
-  - Modifies the display of web pages to request information to harvest
-
+- Loggers are often part of malware with multiple functions or attacks
+  - For example, collecting and sending all phone and computer data found on a computer
+- Often modifies the display of trusted web pages to request additional information to harvest
+- Login Trojans spoof legitimate login pages of well known sites to harvest user credentials
 ---
 ## Zeus Trojan
 
 ![](../images/Zeus%20Malware3.jpg)
 
-- Zeus malware was one of the most widespread and damaging trojans deployed 
-- The main attack vector was via an email phishing attack
-  - Users who clicked on the link would have Zeus installed
-  - It didn't masquerade as an application, it tended to hide in infected systems
-- Currently, in "retirement," it is the inspiration for many similar trojans
+- The Zeus malware was a very widespread and highly damaging Trojans
+- The main attack vector was a phishing email that with a URL for an XSS attack 
+- Victims who clicked on the URL would have Zeus installed on their computer  
+- Zeus didn't masquerade as an application but rather modified existing applications
+- Currently, in "retirement," it is still the inspiration for many similar trojans
 
 Notes:
 Image Credit: https://techieandwhatever.blogspot.com/2017/06/what-is-zeus-malware-and-how-does-it.html
@@ -412,10 +412,10 @@ Image Credit: https://techieandwhatever.blogspot.com/2017/06/what-is-zeus-malwar
 ## Other Trojan Types
 
 - _Destructive Trojan:_ Designed to destroy data stored a computer
-  - Ransom-ware is variation on this since the encrypted data is essentially destroyed
+  - Ransomware is variation on this since the encrypted data is essentially destroyed
 - _Proxy Trojan:_ Uses the victim’s computer as a proxy server
   - Enables attackers to execute illicit acts from the infected computer
-  - Basic tool for creating BotNets 
+  - This is often used to creat BotNets or networks of controlled computers 
 - _FTP Trojan_: Uses port 21 to enable FTP file uploads to tje victim’s computer
 - _Security software disabler Trojan:_ Disables security software like firewall and antivirus software
 - _Denial-of-Service attack Trojan:_ Designed to give the attacker ability to perform DOS attacks from victim’s computer.
@@ -426,10 +426,9 @@ Image Credit: https://techieandwhatever.blogspot.com/2017/06/what-is-zeus-malwar
 ![](../images/Wana_Decrypt0r_screenshot.png)
 
 - Ransomware is the leading malware problems exemplified by 2021 cases like Colonial Pipeline, JBS Foods and the NBA
-  - Typical attack vector is a phishing email with a link to a site that installs the malware
-  - Also exploits vulnerabilities that allow running malicious code on the target computer, open port 21 for example
-  - XSS attacks are also used to direct users to sites that installs the ransomware 
-- Note that ramsomware must be able to install and execute code on the target computer
+- Typical attack vector is a phishing email using XSS attack to install the ransomware
+- Exploits vulnerabilities that allow running malicious code on the target computer (eg. unpatched security holes)
+- Ransomware can also be installed by a victim directly as part of what they believe is a legitimate application
 
 Notes:
 
@@ -439,6 +438,88 @@ Image Credit: en.wikipedia.org/wiki/WannaCry_ransomware_attack#/media/File:Wana_
 
 ## Client Attack Defences
 
+- Since client attacks often start with an XSS attack, mitigating XSS attacks also helps prevent client side attacks
+- Trojans also spread via viruses and worms
+  - Upto date anti-virus and malware scanning tools can block these vectors
+  - Firewalls and other filtering tools can prevent access through open ports 
+- Malware exploits unpatched security holes which can be mitigated by regular system updates
+- Users and programs should have only the level of access required
+  - Eg. Administrative privileges for installing software are only granted for specific applications
+
+---
+
+## Client Attack Defences
+
+![](../images/google-warning-malware.webp)
+- Modern browsers have access to databases of know sources of malware 
+- Following browser recommendations about unsafe sites mitigates XSS and other malware risks
+
+
+---
+## Server Side Attacks
+
+- Server side attacks have two primary modes
+- The first mode is to execute code on the server to control, damage or subvert the server
+  - Installed malware can be used to harvest data, perform fraudulent actions or control the server
+  - This often includes _backdoors_ to allow attackers access to the system
+  - Most of the scenarios and mitigations for client side attacks also apply
+  - Some specific attacks are covered in _session hijacking_
+- The second mode is feed data to the server that is intended to cause existing programs on the server to be compromised
+  - One goal of this mode is to render the server inoperable
+  - Another is to put the server into an unstable state for further attacks
+---
+## OPM Hack and Data Breech
+
+![](../images/OPM.jpg.jpeg)
+
+- In 2015, the OPM disclosed that data on 21.5 million people had been stolen
+  - Data stolen included millions of SF-86 forms 
+  - SF-86 forms contain the personal information used to process security clearances
+- Considered one of the most devastating cyberattack ever on the US Government
+
+Notes:
+
+https://www.csoonline.com/article/3318238/the-opm-hack-explained-bad-security-practices-meet-chinas-captain-america.html
+https://www.opm.gov/cybersecurity/cybersecurity-incidents/
+
+---
+## Office of Personal Management
+
+- How the hackers gained access has not been revealed
+- Likely through installation of malware by a compromised individual
+- Once access was gained, hackers exfiltrated technical and administrative manuals for the system
+- Keyloggers on database adminstrators' terminals were installed
+- A backdoor into the system was also installed
+- Before being shut down, hackers also stole top secret manuals and documents about OPM procedures for conducting security clearances
+
+---
+
+## Decompression Bomb Attack
+
+- A decompression bomb is an archive file that is uploaded to a server
+- The file is designed so that unpacking the file overwhelms the system's resources
+- The _42.zip_ zip bomb file is 42 kilobytes in size but unpacks into 4.5 petabytes
+
+![](../images/42.zip.png)
+
+Notes:
+
+Image Credit: www.bamsoftware.com/talks/woot19-zipbomb/
+
+---
+
+## Decompression Bomb Attack
+
+![](../images/what-actually-is-zip-bomb-zip-of-death.jpg)
+- Decompression bomb attacks are designed to either crash the server or put it into a vulnerable state
+- Also used to disable anti-virus software
+- Older AV software will try to extract the contents of a zip bomb which results in the software crashing
+- Since the structure of zip bombs are well known, most up-to-date AV and threat scanning software can identify them
+- The threat is mitigated by banning archive files or performing scans for potential bombs
+
+Notes:
+
+Image Credit: techbytesonline.com/what-actually-is-zip-bomb-zip-of-death/
 
 ---
 
@@ -476,9 +557,9 @@ Image Credit: www.netsparker.com/blog/web-security/session-hijacking/
   - Trojans and malware on the client machine
   - Session sniffing
 - Session sniffing involves scanning HTTP traffic between a host and client to mine session tokens
-- Two common forms of session hijacking are:
+- Two common forms of attacks that are related to session hijacking are:
   - Man in the Middle Attack
-  - Man in the Machine
+  - Man in the Browser Attack
 
 Notes:
 
@@ -490,6 +571,8 @@ Notes:
 
 - Vulnerability is due to poor security design
   - Eg. using the user ID or other piece of data as the session token
+- Short tokens are easier to guess or use brute force to spoof
+- Tokens that follow a predicable sequence can be predicted
 - To avoid this specific vulnerability
   - Use long and randomly generated session tokens
   - Change the token after each request or at random times
@@ -522,21 +605,194 @@ Image Credit: www.netsparker.com/blog/web-security/session-hijacking/
   - Constantly changing session keys to invalidate any captured tokens
   - Use a VPN - All traffic move through and "encrypted channel" that cannot be sniffed
   - Avoid unsecured WiFi networks since you don't know who is listening
-  - Don't rely on just session keys to establish ID - use URLs, usage patters or other identifying data
+  - Don't rely on just session keys to establish ID - use URLs, usage patterns or other identifying data
 
 Notes:
 
 ---
+## Man in the Middle Attack
 
-## Client Side Attacks
+- Occurs when an attacker places themselves in a conversation between a victim and application
+- often used to eavesdrop on communications
+  - Allows the attacker to collect credentials and other information
+  - Typical target are interactions between users and financial institutions
+  - Or any application that requires authentication
+- Also used to "spoof" or impersonate one of the parties
+  - Often used to create a vulnerability to be exploited by a later attack
+  - For example, spoofing wikipedia to install malware on the target's computer
 
-- Client side attacks target both session tokens and other credentials
-- XSS is a common client side attack
-- Trojans are a common attack vector and include:
-  - Re
 Notes:
 
+Image Credit: www.imperva.com/learn/application-security/man-in-the-middle-attack-mitm/
+
 ---
+
+## Spoofing Attacks
+
+- Man in the middle attacks can be initiated by a spoofing attack
+- _IP Spoofing:_ Addresses in packet headers are altered so that traffic is routed to the attackers IP address
+- _ARP Spoofing:_ Links attackers MAC address to a user's IP address on a network by using fake ARP messages
+- _DNS Spoofing:_ Involves altering a DNS record so that users are sent to the attackers IP address
+
+![](../images/arp0.png)
+
+Notes:
+
+Image Credit: thesslstore.com/blog/everything-you-need-to-know-about-arp-spoofing/
+
+---
+## Mitigating MitM Attacks
+
+- Users should not use unsecured WiFi connections
+- Browser warning about unsecured websites may be an attempted MitM attack
+- Avoid using public networks - using VPNs is more secure
+- Servers should use robust communications protocols and encryption (TSL and HTTP) for every page
+- Timeouts to terminate idle applications
+---
+
+## Man in the Browser Attacks
+
+1[](../images/Man-in-the-Browser-Secret-Double-Octopus-1200x684.png)
+
+- MitB attacks uses trojans to manipulate traffic before it reaches the browser
+  - Often done by infected libraries, browser extensions or helper applications
+- Enables manipulation of traffic before it goes through security layers
+- This is mitigated in the same way as other Trojan attacks
+
+Notes:
+
+Image Credit: doubleoctopus.com/security-wiki/threats-and-tools/man-in-the-browser-attack/
+
+---
+## Encryption Attacks
+
+- Encryption attacks take a number of different forms
+- The most obvious is to find weaknesses where:
+  - Encryption is not used - data or messages are clear text
+  - Sensitive data is stored in accessible logs or caches
+  - Weak or old cryptographic algorithms are in use
+  - Weak or easily cracked cryptographic keys and passwords ("qwerty123") are in use
+- Other weakness occur when:
+  - Encryption is done poorly or inconsistently
+  - Failure to authenticate SSL certificates
+
+---
+
+## Ecryption Attack Examples
+
+- Data is automatically decrypted when retrieved via an SQL query
+  - Attacker could use an SQL injection attack to obtain information in clear text
+- Simple hashes are used to store data
+  - Attacker can crack hashes by brute force computation
+  - Rainbow tables are precomputed tables of output of hashing functions
+- Poor key management
+  - Attacker can gain access to the directories where keys are stored
+  - Attacker can sniff keys included in messages or headers
+  - Keys can be altered or destroyed to cause the system to fail
+  - Mobile applications are especially susceptible
+ 
+---
+
+## Encryption Attack Mitigation
+
+- Keys are never hardcoded into applications
+- Logging and caching of keys or other cryptographic data is blocked
+- All sensitive data is encrypted at rest
+- Ensure all cryptographic algorithms and tools are up-to-date and support strong encryption
+- Avoid key leakage by using a secrets' manager like Hashicorp Vault
+- Keep all unnecessary sensitive data  (eg. old credit card info) in an inaccessible location
+- Encrypt all data in transit and enforce with protocols like HSTS - HTTP Strict Transport Security
+- Enforce strong and regularly changed passwords
+
+---
+
+## Advanced Cryptographic Attacks
+
+- _HTTPS spoofing_ sends a fake certificate when the initial connection request to a secure site is made
+  - Fake has a copy of the thumbprint associated with the compromised application 
+  - Can be used as part of a Man in the Middle attack
+- _SSL BEAST_ exploits TLS version 1.0 vulnerability in SSL
+  - The victim is infected with malicious JavaScript that captures encrypted cookies and enables the attacker
+cookies and authentication tokens.
+- _SSL hijacking_ is when an attacker passes forged authentication keys to both the user and application 
+  - Sets up what appears to be a secure connection when but it's actually a MitM attack
+- _SSL stripping_ downgrades a HTTPS connection to HTTP by intercepting the TLS authentication
+
+---
+## Insecured Direct Access Attacks
+
+- This is a general category of several attacks
+- _Direct Object Access:_ Attackers can access configuration files and other system resource
+- _Insecure Direct Object Reference:_ Attackers can access files or resources they shouldn't by looking for access patterns
+- _Directory Traversal:_ Attacker can drop into underlying file system and manipulate system files and directories
+- _Web Shell:_ Attacker is able to gain access to the command shell on the host system
+
+---
+
+## Direct Object Access Attack
+
+- Exploits a badly configured server environment
+- Configuration and other files that manage the server are accessible to users
+- A common cause is keeping these files in the document root directory or a subdirectory
+- The contents of the file can be accessed via a web shell attack
+- Particularly dangerous when the attacker can run exectuable files
+- Mitigated by following best practices for servers and application configuration
+
+---
+
+## Insecure Direct Object Reference
+
+![](../images/insecure-direct-object-reference-example%20(1).png)
+
+Notes:
+
+Image Credit:panning.com/blog/insecure-direct-object-reference-web-based-application-security-part-6/
+
+---
+
+## Insecure Direct Object Reference
+
+![](../images)
+
+- Attacker is able to access implementation objects directly by guessing at their reference
+  - For example, guessing that the administrator account has account id "1" in the previous slide
+- Cause of a 2002 data breech at H&R Block where users' account number appeared in the URL
+  - Changing the number in the URL allowed access to other customers' accounts
+
+![](../images/HRBlock1.png)
+
+
+Notes:
+
+Image Credit: www.cnet.com/tech/services-and-software/breach-exposes-h-r-block-customers-tax-records/
+
+---
+## Insecure Direct Object Reference Mitigations
+
+
+---
+
+
+## WebShell Attack
+
+- A webshell attack occurs when an attacker is able to run shell commands on a server
+- Intent is to gain escalation of privileges and persistent access to the machine
+- Exploits the ability of web programming languages to run shell commands
+- For example, accessing shell commands via php:
+
+```html
+<?php
+// Return the listing of the directory where the file runs (Linux)
+system("ls -la");
+?>
+
+--> total 12
+drwxrwxr-x 2 secuser secuser 4096 Feb 27 20:43 .
+drwxr-xr-x 6 secuser secuser 4096 Feb 27 20:40 ..
+-rw-rw-r-- 1 secuser secuser 26 Feb 27 20:41 shell.php
+```
+---
+
 ## Encryption
 
 Notes:
