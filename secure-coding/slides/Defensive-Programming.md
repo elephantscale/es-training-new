@@ -2,16 +2,24 @@
 
 ## What is it
 * An approach to improve software and source code, in terms of:
-- general quality, reducing bugs
-- Making it comprehensible, or understandable
-- Predictable behavior against unexpected inputs or user actions
+  - general quality, reducing bugs
+  - Making it comprehensible, or understandable
+  - Predictable behavior against unexpected inputs or user actions
+
+---
 
 ## Rules
-* Rule 1:Never assume anything
-* Rule 2:Use standards
-* Rule 3:Code simple
+* Rule 1: Never assume anything
+* Rule 2: Use standards
+* Rule 3: Code simple
+
+---
+
 
 # Rule 1: Never Assume Anything
+
+---
+
 
 ## Input Validation
 * User's input and actions are not trustable
@@ -21,12 +29,18 @@
 - Retry
 - Warning
 
+---
+
+
 ## Example
 * Imagine a bank transaction and answer these questions:
 - What kind of variable you need? int, float, string, etc
 - Is it going to be a large or small number?
 - Can it be a negative number?
 - and other questions
+
+---
+
 
 ## Testing Strategy
 * Don't limit you testing process to "it works"
@@ -36,18 +50,33 @@
 - Rolling head
 * Ask others to test the application if possible
 
+---
+
+
 ## Order of Precedence
 * Is the set order that statements are resolved
 * Sometimes it's difficult to see errors in the order of precedence
 - `if(InVar=getc(input)!=EOF)`
 * When in doubt, use proper parenthesis
 
+---
+
+
 ## Size of Variables
 * Some primitive data types on different OSs or hardware platforms have different values
 * You should consider the siza of variables when coding
 
+---
+
+
 # Rule 2:Use Standards
+
+
+---
+
+
 ## Coding Standard
+
 * Makes code coherent and easy to understand
 * Debugging gets easier
 * Wide range of topics
@@ -58,13 +87,23 @@
 - Function declaration
 - And many more
 
+
+---
+
+
 ## Variable Naming: Hungarian Notation
+
 * Is a Naming standard
 * Starts with one or more lower-case letters that are mnemonics for the type or purpose of the variable:
 - iAge: integer type age
 - szName: zero-terminated name string
 
+
+---
+
+
 ## Numbers
+
 * Do not use constant values in the code
 - Difficult to understand
 - Difficult to maintain
@@ -73,13 +112,24 @@
 - `cons int PI = 3.1415`
 - `int Surface = PI * r * r;`
 
-# Rule 3:Code Simple
+
+---
+
+
+# Rule 3: Code Simple
+
+
+---
+
 
 ## Contract
 * See functions as a contract
 * Given input, the execute a specific task
 * They should not able to do anything else rather than the specified task
 * Exception handling
+
+---
+
 
 ## Refactoring
 * Is a technique for restructuring the code, changing its internal structure whithout any change in external behavior
@@ -89,11 +139,20 @@
 - Usually cause problems
 * Keeps your application simple
 
+---
+
+
 ## Third-Party Libraries
 * Code reuse a safe choice
 * More stable and secure than what you make in a limited time
 
+---
+
+
 # Error handling in Java EE
+
+---
+
 
 ## A servlet structure
 
@@ -110,6 +169,9 @@
     }
 ```
 
+---
+
+
 ## Default Error Handling
 
 * Let us deploy our servlet here
@@ -120,6 +182,9 @@
   
 * What happens? We see the generic error
 ![](../images/servlet-error.jpg)
+
+---
+
 
 ## Custom Error Handling
 
@@ -135,7 +200,10 @@
   - map exception types to 
     - static HTML error pages or 
     - an error handling servlet
-    
+
+---
+
+
 ## With an HTML Page
 
 ```Java
@@ -151,6 +219,9 @@
             </error-page>
         </web-app>
 ```
+
+---
+
 
 ## With a Servlet       
 
@@ -169,7 +240,13 @@
         </web-app>
 ```
 
+---
+
+
 # Type annotation 
+
+---
+
 
 ## Type Annotations
 
@@ -183,7 +260,10 @@
 * Benefits
   - Improved analysis of Java
   - Stronger type checking
-  
+
+---
+
+
 ## Simple Type Annotations Examples
 
 ```Java
@@ -205,9 +285,16 @@
         void authenticate() throws @Fatal @Logged AccessDeniedException { ... }
 ```
  
+---
+
+
 # Checker Framework
 
+---
+
+
 ## Benefits of the Checker Framework
+
 * Helps get rid of
   - null pointer exceptions
   - unintended side effects
@@ -215,7 +302,11 @@
   - concurrency errors
   - mistaken equality tests
   - other run-time errors 
-  
+
+
+---
+
+
 ## Installation
 
 1. Download the Checker Framework distribution
@@ -224,7 +315,10 @@
   - IDE
   - build system
   - command shell to include the Checker Framework on the classpath
-  
+
+---
+
+
 ## Using The Checker Framework
 
 ```Java
@@ -236,6 +330,9 @@
         }
 }
 ```
+
+---
+
 
 ## Introduce an Error
 
@@ -253,7 +350,13 @@
     1 error
 ```
 
+---
+
+
 # Application-layer security
+
+---
+
 
 ## The application layer
  
@@ -264,13 +367,22 @@
 * Provides a firm communication interface and end-user services
 * Security is provided through app-to-app negotiations
 
+---
+
+
 # Transport-layer security
+
+---
+
 
 ## Transport-layer Security
 
 * Cryptographic protocols 
 * Designed to provide communications security 
 * Over a computer network
+
+---
+
 
 ## Where Transport-layer Security is Used
 
@@ -282,6 +394,11 @@
   - To secure all communications 
     - servers 
     - web browsers
+
+---
+
+
+## Where Transport-layer Security is Used
 
 * Aims
   - Privacy 
@@ -299,8 +416,14 @@
      - Each message transmitted includes a message integrity check
      - Uses a message authentication code 
      - Prevents undetected loss or alteration of the data
-     
+
+---
+
+
 # Message-layer security
+
+---
+
 
 ## Securing the message
 
@@ -315,6 +438,9 @@
 | Your application  interacts directly  with the Web service | Transport layer HTTPS provides full message protection | Message layer message protection usually requires more  work and overhead than transport layer |
 |                                                            |                                                        |                                                                                                |
 
+---
+
+
 
 ## Encryption
 * The encryption mechanism is a digital coding system to preserve confidentiality and integrity of data
@@ -324,6 +450,9 @@
  - `Encryption Key` is used during the transformation
   - Usually secret and shared among authorized parties
 * Decryption is the revers function
+
+---
+
 
 ## Encryption, cont'd
 * Protection against:
@@ -335,6 +464,9 @@
  - Symmetric (same key to encrypt and decrypt) 
  - Asymmetric (two keys,,one the inverse of the other)
 
+---
+
+
 ## Symmetric Key Cryptography
 * Make use of a number of classical encryption techniques
 * Substitution
@@ -343,15 +475,26 @@
  - The order, but not the value, of the characters in the text is changed
 * Iteration of the same steps multiple times
 
+---
+
+
 ## Example: An Old Technique
 ![image of ceasar](../images/caesar.png)
 
+---
+
+
 ## Advantages Of Symmetric Cryptography
+
 * It is understandable and easy to use
 * It is efficient
  - Efficiency is a key consideration when messages are transmitted frequently and/or are lengthy
 * Can be used for many other applications (hash functions, pseudo-random number generators, digital signatures)
 * Can be easily combined
+
+---
+
+
 ## Limitations 
 * The users must share the same secret key
  - During transmission of the key, someone may intercept the key
@@ -361,6 +504,9 @@
 * Sercret key cryptopraphy cannot provide an assurance of authentication
  - Problem of non-repudiation
 
+---
+
+
 ## Asymmetric Cryptography
 * A pair of private and public keys
 * Private key remains with the owner; public key is distributed
@@ -368,18 +514,30 @@
  - One may own more than one keys pairs
 * Knowledge of public key does not help in finding/deriving the related private key
 
+---
+
+
 ## Asymmetric Cryptography, cont'd
 * Keys are related and complementary
  - Plaintext encrypted with a private key can be decrypted using the related public key, and vice versa
 * Public key encryption provides confidentiality, but does not offer integrity nor authenticity
  - This is the base for the digital signatures
 
+---
+
+
 ## Asymmetric Encryption Cipher: RSA
 * Created by Rivest, Shamir, and Adelman, named RSA
 * Based on the notion that a product of two large prime numbers cannot be easily factored to determine the two prime numbers
  - That is, going from results (the product of prime numbers) to inputs (prime numbers) is a nearly impossible task
 * Although a public key is related to private key, it is nearly impossible to calculate the private key using the knowledge of its related public key
+
+
+---
+
+
 ## RSA Principles
+
 * Consider blocks as large numbers
  - Example: 2048 bit long number ~617 decimal long nmber
 * Uses the modular arithmati (residuals)
@@ -387,19 +545,31 @@
 * Encryption and decryption are based on the concept of modular inverses:
  - X is the inverse of Y modulo Z if X*Y=1 modulo Z
  - Then (m^x)^y = (m^y)^x = m^1 = m
+
+---
+
+
 ## Advantages of Public Key Cryptography
+
 * There is no need to communicate private key
  - Related public key is widely distributed (not secret)
 * A sender who private-key encrypts the message or any part thereof can be authenticated because no one else is supposed to have the sender's private key
 * External parties can confidentially communicate with an owner of the key pair by sending a message encrypted using the owner's public key
 * A brute-force attack on a message is time consuming and is nearly impossible
+
+---
+
+
 ## Limitations of Public Key Cryptography
 * The use of PKC takes a significant amount of processing power, it is computationally intensive
- - Therefor, it negatively affects efficiency of communication
+ - Therefore, it negatively affects efficiency of communication
  - It is used selectively
  - An entire message may not be encrypted using PKC
 * Published keys may be altered by someone
  - Additional measures to ensure that a valid public key of the owner is obtained before its use (PKI certificates)
+
+
+---
 
 
 # Secure connection with SSL
