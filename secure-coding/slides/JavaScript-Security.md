@@ -1,5 +1,5 @@
-Introduction to JavaScript Security
-=============================
+# Introduction to JavaScript Security
+
 ## What We Will Cover
 
  * Cross-Site Scripting (XSS)
@@ -8,7 +8,9 @@ Introduction to JavaScript Security
  * Session Hijacking
  * DDoS
  * Data Protection
- 
+
+---
+
 # Cross-Site Scripting (XSS)
 
 ## What Is It?
@@ -24,10 +26,18 @@ Introduction to JavaScript Security
     - Cookie theft
     - Keylogging
     - Phishing
+
+
+---
+
     
 ## Mechanism
 
 ![Image of XSS attack](../images/xss.png)<!-- {"left" : 0.39, "top" : 1.3, "height" : 5.38, "width" : 9.48} -->
+
+
+---
+
 
 ## Example
 
@@ -43,7 +53,7 @@ Introduction to JavaScript Security
 
   * Now attacker sends his script as comment "<script>...</script>"
 
-  * Finally user visits the page would get the response like this:
+  * Finally, user visits the page would get the response like this:
 
 ```html
     <html>
@@ -53,6 +63,9 @@ Introduction to JavaScript Security
  ```
 <!-- {"left" : 0, "top" : 5.56, "height" : 1.77, "width" : 6.33} -->
 
+---
+
+
 ## How To Prevent
 
   * Web developers use two methods performing secure input handling
@@ -60,6 +73,10 @@ Introduction to JavaScript Security
     - Encoding: browser considers the malicious script as data, not code.
 
     - Validation: filters the user input so that the browser just run the code without malicious commands.
+
+
+
+---
 
   
 ## Encoding
@@ -81,6 +98,10 @@ Introduction to JavaScript Security
 ```
 <!-- {"left" : 0, "top" : 5.12, "height" : 1.29, "width" : 8.18} -->
 
+
+---
+
+
 ## Validation
 
   * Allowing certain tags and elements
@@ -93,7 +114,11 @@ Introduction to JavaScript Security
     - Validation outcome
       - Rejection: Simple implementation, 
       - Sanitisation: More useful
-  
+
+
+
+---
+
 
 ## Which Method To Use?
 
@@ -106,6 +131,9 @@ Introduction to JavaScript Security
     - XSS protection
 
 
+---
+
+
 ## CSP
 
   * Makes browser download content from trusted sources
@@ -114,6 +142,9 @@ Introduction to JavaScript Security
     - Inbound validation
   * If you think of full protection of entire website 
     - Content security policy (CSP)
+
+---
+
 
 ## CSP Example
 
@@ -136,15 +167,21 @@ Notes:
 add header to every page you want to be secured
 
 ---
+
 ## Lab
 * Cross Site Scripting:
     - Overview: We will run a script attack
     - Pre-requisites: Browser-Google Chrome   
     - Approximate time: 20 minutes
     - Instructions: labs/javascript_security_labs/labs/Cross_site_Scripting.md
+    - https://github.com/elephantscale/secure-coding-labs/blob/main/javascript_security_labs/labs/Cross_site_Scripting.md
 
 
 # Cross-Site Request Forgery
+
+
+---
+
 
 ## Synonyms
 
@@ -156,16 +193,22 @@ add header to every page you want to be secured
   * Hostile Linking
 
 
+---
+
+
 ## How?
 
   * Attacker sends a link to the user via for example email or social network
   * When clicks on the link, user performs the action on the web application they usually use
   * A state changes on the server
 
+---
+
+
 ## Examples:
-      - Transferring funds
-      - Changing email address
-      - Changing password
+  - Transferring funds
+  - Changing email address
+  - Changing password
   * The attacker is not able to perform theft since there is no way to get the response
 
 ## Mechanism
@@ -173,12 +216,18 @@ add header to every page you want to be secured
 ![image of csrf](../images/csrf.png) <!-- {"left" : 1.76, "top" : 1.09, "height" : 6.14, "width" : 6.74} -->
 
 
+---
+
+
 ## Scenarios
 
   * GET
   * POST
   * And others like PUT and DELETE
-  
+
+
+---
+
 
 ## GET
 
@@ -193,15 +242,25 @@ add header to every page you want to be secured
        - `GEThttp://bank.com/transfer.do?acct=EVE&amount=1000 HTTP/1.1`
   ```
   <!-- {"left" : 0.0, "top" : 3.25, "height" : 0.5, "width" : 10.25} -->
+
+
+---
+
+
 ## Get: cont'd
     - Now via social engineering:
 ```javascript
        - `<a href="http://bank.com/transfer.do?acct=EVE&amount=1000">Click to earn money!</a>`
 ```
 or
+
 ```javascript
        - `<img src="http://bank.com/transfer.do?acct=EVE&amount=1000" width="0" height="0" border="0">`
 ```
+
+
+---
+
 
 ## POST
 
@@ -219,7 +278,11 @@ or
     </form>
 ```
 <!-- {"left" : 0, "top" : 2.39, "height" : 1.94, "width" : 10.25} -->
-    
+
+
+---
+
+
 ## POST, cont'd
   * if you don't want to wait for the victim and send it automatically:
 
@@ -239,6 +302,10 @@ The only difference between GET and POST attacks is how the victim executes the 
 
 ---
 
+
+---
+
+
 ## Primary Defense Techniques
 
   * Token Based Mitigation
@@ -250,6 +317,10 @@ The only difference between GET and POST attacks is how the victim executes the 
     - Encryption based Token Pattern
         - Instead of comparing tokens to validate an action uses cryptography
         - For applications that don't maintain states at the server side
+
+
+
+---
 
 
 ## Defense In Depth Techniques
@@ -275,7 +346,10 @@ These are beyond the scope of the lesson
   * Multi-Step Transactions
   * URL Rewriting
   * HTTPS
-  
+
+
+---
+
 
 # Database Vulnerabilities
 
@@ -285,7 +359,10 @@ These are beyond the scope of the lesson
 
     - SQL
     - NoSQL (MongoDB)
-     
+
+
+
+---
 
 
 ## SQL Injection
@@ -300,7 +377,10 @@ Executing malicious SQL instructions by exploiting query parameters
 <!-- {"left" : 0, "top" : 2.37, "height" : 0.48, "width" : 10.18} -->
    
    query gets the id from user and gives the address.
-    
+
+
+---
+
 
 ## Retrieving All Database Tables 
 
@@ -331,6 +411,9 @@ Executing malicious SQL instructions by exploiting query parameters
 Gets a list of all database tables
 
 
+---
+
+
 ## Writing File To Disk
 
   * Attacker input:
@@ -343,7 +426,10 @@ Gets a list of all database tables
    `SELECT address FROM users WHERE id = 1 UNION SELECT "<h1>hello world</h1>" INTO OUTFILE "/home/website/public_html"`
 ```
 
-It works with right permission 
+It works with the right permission 
+
+
+---
 
 
 ## Solution
@@ -353,6 +439,9 @@ It works with right permission
   * If not
     Prepared Statements or Parameterized Queries instead of concatenation
 
+---
+
+
 ## NoSQL Injection
 
   * According to DB-Engines.com MongoDB is the most popular NoSQL database
@@ -361,9 +450,12 @@ It works with right permission
     - $Where
     - mapReduce
     - group
-    
 
-## $Where
+
+---
+
+
+## Where
 
   * Is used where you need pass a string as query. example:
       `$where: 'this.UserID = ' + req.query.id`
@@ -376,6 +468,9 @@ It works with right permission
   ```sql
      `SELECT * FROM Users WHERE UserID = 0 OR 1 = 1`
   ```
+
+
+---
 
 
 ## Solution
@@ -393,6 +488,7 @@ Notes:
 Validation mitigates the problem more than half
 
 ---
+
 # Session Hijacking
 
 ## Session Establishment 
@@ -403,18 +499,27 @@ Validation mitigates the problem more than half
    * The client reads and persists the identifier sent unchanged (is sent through cookies)
    * The client sends the identifier read and persisted on step 3 as a request
 
+---
+
+
 ## Session Establishment, cont'd
    * The server reads and validates the identifier
    * Go to step 2
    
    * Identifier is a key part of the process
    * It must be created on a trusted system (server)
-   
+
+
+---
+
 
 ## How? 
 
 
 ![image of session hijacking](../images/hijack.png) <!-- {"left" : 2.6, "top" : 1, "height" : 6.28, "width" : 5.04} -->
+
+
+---
 
 
 ## Protect Identifier
@@ -429,13 +534,22 @@ Validation mitigates the problem more than half
     - Logout must terminate all sessions
 
 
+---
+
+
 # Distributed Denial of Service (DDoS)
+
+---
+
 
 ## What Is It?
 
   * Common attack 
   * Making many systems involved
   * If not protected JavaScript would be a DDoS weapon 
+
+---
+
 
 ## Sample Malicious Code
 
@@ -451,21 +565,37 @@ Validation mitigates the problem more than half
 ```
 <!-- {"left" : 0, "top" : 1.25, "height" : 2.59, "width" : 10.25} -->
 
+---
+
+
 ## Sample Malicious code, cont'd
 
   * Creates an image 100 times per second
   * Each visitor of the website containing this code would be a participant to attack to the target_website
 
 
+---
+
+
 ## Mechanism
 
 ![image of ddos1](../images/ddos1.png) <!-- {"left" : 0.53, "top" : 1.44, "height" : 4.62, "width" : 9.19} -->
+
+
+---
+
 
 ## Solution
 
 Depends on how the attacker inserts the code into the page
 
+---
+
+
 # Data Protection
+
+---
+
 
 ## Right Privileges
 * Let every user do what they really need not more
@@ -474,11 +604,17 @@ Depends on how the attacker inserts the code into the page
   - Market users should have permission to check statistics
   - Developers should have permission to modify pages and web application options
 
+---
+
+
 ## Deleting Sensitive Info When Not Needed
 
 
 * Temp and cache files
 * If you need it encrypt or move it to a protected area
+
+---
+
 
 ## Comments
 
@@ -489,15 +625,23 @@ Depends on how the attacker inserts the code into the page
 // secret API endpoint - /api/mytoken?callback=myToken
 console.log("a random code")
 ```
+
+
+---
+
+
 ## URL
-* Do not pass important information through HHTP GET because:
+* Do not pass important information through HTTP GET because:
   - If not using HTTPS data can be intercepted by `Man In The Middle Attack`
   - User's information can be stored in browser's history including session IDs, pins and tokens
 
-  
+
+
+---
+
 
 ## Cache
-* Disable cache control in pages containing sensitive intormation through setting header flags
+* Disable cache control in pages containing sensitive information through setting header flags
 * Example: in an `express` app
 ```javascript
 const exp = require('express');
@@ -516,12 +660,19 @@ appl.use((req,resp,next) => {
 // ...
 ```
 
+---
+
+
 
 ## encryption and password hash
 
 * Encrypt every sensitive information
 
 * Example of `aes-256-cbc` in Node.js using `crypto` module:
+
+
+---
+
 
 ## Example
 ```javascript
@@ -545,6 +696,11 @@ const cipher = crypt.createCipheriv('aes-256-cbc', pswd_hash, iv);
 const encryptedData = cipher.update(data, 'utf8', 'hex') + cipher.final('hex');
 console.log('encrypted data=', encryptedData.toUpperCase());
 ```
+
+
+---
+
+
 ## Output
 
 ```javascript
@@ -554,9 +710,17 @@ iv= <Buffer d7 98 9a 54 a0 e6 bc 45 f3 7f bc 33 c2 0f 7d 00>
 encrypted data= 83640168A86A9F2BC0BEEEDEB39756E195EF3D0758A3262F012697C3D718B039
 ```
 
+
+---
+
+
 ## Disable Unnecessary Apps and Services
 
 * So simple: Check if there is any unnecessary app or service and disable it
+
+
+---
+
 
 ## Disable Aautocomplete
 for whole the form:
@@ -571,10 +735,16 @@ for whole the form:
 <!-- {"left" : 0.0, "top" : 3.09, "height" : 1.6, "width" : 10.25} -->
 
 
+---
+
+
 
 ## Lab
 * JavaScript security:
     - Overview: We will run a URL attack
     - Pre-requisites: Browser-Google Chrome   
     - Approximate time: 60 minutes
-    - Instructions: labs/javascript_security_labs/labs/Data_protection.md
+    - Instructions: labs/javascript_security_labs/README.md
+    - https://github.com/elephantscale/secure-coding-labs/tree/main/javascript_security_labs
+
+---
