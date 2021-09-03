@@ -394,7 +394,9 @@ Image Credit: wolfstreet.com/2018/08/19/scam-critical-alert-from-microsoft-iexpl
   - For example, collecting and sending all phone and computer data found on a computer
 - Often modifies the display of trusted web pages to request additional information to harvest
 - Login Trojans spoof legitimate login pages of well known sites to harvest user credentials
+
 ---
+
 ## Zeus Trojan
 
 ![](../images/Zeus%20Malware3.jpg)
