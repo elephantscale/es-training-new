@@ -8,7 +8,8 @@
 
 ---
 
-## Rules
+## Rules of defensive programming
+
 * Rule 1: Never assume anything
 * Rule 2: Use standards
 * Rule 3: Code simple
@@ -69,7 +70,7 @@
 ---
 
 
-# Rule 2:Use Standards
+# Rule 2: Use Standards
 
 
 ---
@@ -81,7 +82,7 @@
 * Debugging gets easier
 * Wide range of topics
 - Variable naming
-- Identation
+- Indentation
 - Position of brackets
 - Content of header files
 - Function declaration
@@ -498,10 +499,10 @@
 ## Limitations 
 * The users must share the same secret key
  - During transmission of the key, someone may intercept the key
-* The number of keys requires increased at a rapid rate as the number of users in the network increases
+* The number of keys requires increases at a rapid rate as the number of users in the network increases
 * Because of these reasons, secret key management  challenges are significant
 * A key distribution center (KDC) -a trusted third party- may be used for managing and distributing keys
-* Sercret key cryptopraphy cannot provide an assurance of authentication
+* Secret key cryptography cannot provide an assurance of authentication
  - Problem of non-repudiation
 
 ---
@@ -573,18 +574,32 @@
 
 
 # Secure connection with SSL
+
+
+---
+
+
 ## What Is It?
 * A protocol by Netscape
 * On Layer 4 (TCP) of OSI model
 ## ![image of SSL](../images/ssl.png)
 
 
+---
+
+
 ## Cryptography Today 
 
 ![image of a use case](../images/today.png)
 
+---
+
+
 ## What Is SSL
 * Is a standard security technology for establishing an encrypted link between a server and a client typically a web server (website) and a browser, or a mail server and a mail client (e.g., Outlook).
+
+---
+
 
 ## What Does It?
 * Allows sensitive information like credit card information to be transmitted securely
@@ -592,16 +607,30 @@
 * All browsers are able to interact with secured web servers using the SSL protocol
 * Needs SSL certificates
 
+---
+
+
 ## How?
-* 1- Browser connects to a web server (website) secured with SSL (https). Browser requests that the server identify itself.
-* 2- Server sends a copy of its SSL Certificate, including the server’s public key.
-* 3- Browser checks the certificate root against a list of trusted CAs 
+* 1 - Browser connects to a web server (website) secured with SSL (https). Browser requests that the server identify itself.
+* 2 - Server sends a copy of its SSL Certificate, including the server’s public key.
+* 3 - Browser checks the certificate root against a list of trusted CAs 
+
+---
+
 
 ## How? cont'd
 * Then it creates, encrypts, and sends back a symmetric session key using the server’s public key.
-* 4- Server decrypts the symmetric session key using its private key and sends back an acknowledgement encrypted with the session key to start the encrypted session.
-* 5- Server and Browser now encrypt all transmitted data with the session key.
+* 4 - Server decrypts the symmetric session key using its private key and sends back an acknowledgement encrypted with the session key to start the encrypted session.
+* 5 - Server and Browser now encrypt all transmitted data with the session key.
+
+
+---
+
+
 ## Flow Picture
 ![image of certificate](../images/cert.png)
+
+
+---
 
 

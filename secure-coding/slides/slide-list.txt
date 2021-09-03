@@ -5,6 +5,6 @@ Security-Intro.md
 Threat-Modeling.md
 Java-Security.md
 JavaScript-Security.md
-# Defensive-Programming.md
+Defensive-Programming.md
 # REST-Endpoint-Security.md
 # Angular-oauth.md
