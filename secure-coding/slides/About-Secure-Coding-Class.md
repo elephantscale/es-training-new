@@ -6,8 +6,8 @@ Secure Coding
 
 | Day | Theme                | Detail                                                                                                |
 |-----|----------------------|-------------------------------------------------------------------------------------------------------|
-| 1   | Introducing Security | Threat modeling  Common attacks Secure design                                                         |
-| 2   | Secure Coding        | Countermeasures  Authorization and authentication  Session security                                   |
+| 1   | Introducing Security | Intro Threat modeling Common attacks Countermeasures  Secure design                                                          |
+| 2   | Secure Coding        | Java Security JavaScript Security Authorization and authentication  Session security                                   |
 | 3   | Secure Frameworks    | Modern security frameworks  Framework architecture  Securing the runtime environment  Security future |
 
 
