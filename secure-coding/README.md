@@ -11,7 +11,7 @@
 
 * Mark
   * Threat modeling - done
-  * Java security
+  * Java security - in progress
   * Java script security
 
 
