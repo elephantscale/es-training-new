@@ -52,13 +52,6 @@ This chapter explains what STRIDE is and why it's useful, including sections cov
 
 ---
 
-## Lab: Intro to threat modeling 
-
-* secure-coding-labs/threat-modeling/README_01.md
-* https://github.com/elephantscale/secure-coding-labs/blob/main/threat-modeling/README_03.md
-
----
-
 ## Spoofing
 
 | Threat   | Property Violated | Threat Definition                                         | Typical Victims                      | Examples                                                                                                        |
@@ -111,6 +104,14 @@ Notes:
 | Threat                 | Property Violated | Threat Definition                                             | Typical Victims | Examples                                                                                                     |
 |------------------------|-------------------|---------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------|
 | Elevation of Privilege | Authorization     | Allowing someone to do something they're not authorized to do | Process         | Allowing a normal user to execute code as admin; allowing a remote person without any privileges to run code |
+
+---
+
+## Lab: Intro to threat modeling
+
+* Lab: Intro to threat modeling
+  * secure-coding-labs/threat-modeling/README_01.md
+  * https://github.com/elephantscale/secure-coding-labs/blob/main/threat-modeling/README_01.md
 
 ---
 
