@@ -10,7 +10,7 @@
   * Secure design
 
 * Mark
-  * Threat modeling
+  * Threat modeling - done
   * Java security
   * Java script security
 
