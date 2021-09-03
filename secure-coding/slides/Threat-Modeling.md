@@ -1,5 +1,6 @@
 # Threat Modeling
 
+
 # STRIDE
 
 ## STRIDE attack classification
@@ -51,6 +52,12 @@ This chapter explains what STRIDE is and why it's useful, including sections cov
 
 ---
 
+## Lab: Intro to threat modeling 
+
+* secure-coding-labs/threat-modeling/README_01.md
+* https://github.com/elephantscale/secure-coding-labs/blob/main/threat-modeling/README_03.md
+
+---
 
 ## Spoofing
 
@@ -367,14 +374,148 @@ Notes:
 
 ## Elevation of Privilege Threats
 
-* Allowing someone to do something they're not authorized to do—for example, allowing a normal user to execute code as admin, or allowing a remote person without any privileges to run code.
+* Allowing someone to do something they're not authorized to do—for example, 
+* Allowing a normal user to execute code as admin, or 
+* Allowing a remote person without any privileges to run code.
+
+Notes:
+
+* Elevation of privilege is allowing someone to do something they're not authorized to do—for example, allowing a normal user to execute code as admin, or allowing a remote person without any privileges to run code. Two important ways to elevate privileges involve corrupting a process and getting past authorization checks. Examples are shown in next slide.
+
+---
+
+## Elevation of privilege examples
+
+| Threat Examples                                                    | What the Attacker Does                                                                      | Notes                                                      |
+|--------------------------------------------------------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| Elevation of privilege against a process by corrupting the process | Send inputs that the code doesn't handle properly                                           | These errors are very common, and are usually high impact. |
+| Gains access to read or write memory inappropriately               | Writing memory is (hopefully obviously) bad, but reading memory can enable further attacks. |                                                            |
+| Elevation through missed authorization checks                      |                                                                                             |                                                            |
+
+Notes:
+
+* Elevate Privileges by Corrupting a Process
+* Corrupting a process involves things like smashing the stack, exploiting data on the heap, and a whole variety of exploitation techniques. The impact of these techniques is that the attacker gains influence or control over a program's control flow. It's important to understand that these exploits are not limited to the attack surface. The first code that attacker data can reach is, of course, an important target. Generally, that code can only validate data against a limited subset of purposes. It's important to trace the data flows further to see where else elevation of privilege can take place. There's a somewhat unusual case whereby a program relies on and executes things from shared memory, which is a trivial path for elevation if everything with permissions to that shared memory is not running at the same privilege level.
+
+---
+
+## Elevate Privileges through Authorization Failures
+
+| Threat Examples                              | What the Attacker Does                                                         | Notes                                                |
+|----------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------|
+| Elevation through buggy authorization checks |                                                                                | Centralizing such checks makes bugs easier to manage |
+| Elevation through data tampering             | Modifies bits on disk to do things other than what the authorized user intends |                                                      |
 
 
+Notes:
 
-# Security terminology
+Elevate Privileges through Authorization Failures
+There is also a set of ways to elevate privileges through authorization failures. The simplest failure is to not check authorization on every path. More complex for an attacker is taking advantage of buggy authorization checks. Lastly, if a program relies on other programs, configuration files, or datasets being trustworthy, it's important to ensure that permissions are set so that each of those dependencies is properly secured.
 
-# Threat modeling
+---
 
 # CVSS attack assessment
 
-## Labs on threat modeling
+## Common Vulnerability Scoring System
+
+* Common Vulnerability Scoring System (CVSS)
+    * A scoring system for prioritizing vulnerabilities, not threats. 
+    * CVSS provides consistent scoring of vulnerabilities across the technology community.
+* CVSS is a composite number consisting of several metrics:
+  * Base Group
+  * Temporal Group
+  * Environmental Group
+
+
+
+## CVSS Base
+
+* Exploitability metric
+  * Attack vector
+  * Attack complexity
+  * Privileges required
+  * User interaction
+  * Scope
+* Impact metric
+  * Confidentiality
+  * Integrity
+  * Availability
+
+![](../images/threat-01-pexels-tima-miroshnichenko-6253977.jpg)
+
+---
+
+## CVSS Temporal
+
+* This group consists of metrics that can change over time
+  * Exploit code maturity
+  * Remediation level
+  * Report confidence
+
+![](../images/threat-01-pexels-tima-miroshnichenko-6253977.jpg)
+
+---
+
+## CVSS Environmental
+
+* The Environmental is a miscellaneous group.
+  * Modified base metrics
+  * Impact subscore modifiers
+
+![](../images/threat-01-pexels-tima-miroshnichenko-6253977.jpg)
+
+---
+
+## CVSS Tools
+
+* National Institute of Standards and Technology
+  * (NIST) National Vulnerability Database (DVD):
+  * https://nvd.nist.gov/
+
+![](../images/threat-02.png)
+
+---
+
+## CVSS Calculator
+
+* NIST provides a CVSS calculator
+  * https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
+
+![](../images/threat-03.png)
+
+---
+
+## CVSS Score
+
+![](../images/threat-04.png)
+
+---
+
+## CVSS Score to send
+
+
+```text
+CVSS v3.1 Vector
+AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L
+```
+
+---
+
+
+
+## CVSS Lab
+
+* secure-coding-labs/threat-modeling/README_02.md
+* https://github.com/elephantscale/secure-coding-labs/blob/main/threat-modeling/README_02.md
+
+---
+
+
+## Threat enumeration lab
+
+* secure-coding-labs/threat-modeling/README_03.md
+* https://github.com/elephantscale/secure-coding-labs/blob/main/threat-modeling/README_03.md
+
+---
+
+
