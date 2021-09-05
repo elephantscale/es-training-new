@@ -3,9 +3,15 @@
 About-Secure-Coding-Class.md
 Security-Intro.md
 Threat-Modeling.md
+Common-Attacks.md
+Defensive-Programming.md
 Java-Security.md
 JavaScript-Security.md
-Defensive-Programming.md
-Common-Attacks.md
-# REST-Endpoint-Security.md
-# Angular-oauth.md
+REST-Endpoint-Security.md
+Angular-oauth.md
+../../vault-consul/slides/Vault_introduction.md
+../../vault-consul/slides/Vault_architecture.md
+../../vault-consul/slides/Vault_configuration.md
+../../vault-consul/slides/Consul.md
+$ES_HOME/internet2/slides/3a-Scaling-and-elasticity.md
+

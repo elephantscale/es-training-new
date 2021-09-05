@@ -399,7 +399,7 @@ Image Credit: wolfstreet.com/2018/08/19/scam-critical-alert-from-microsoft-iexpl
 
 ## Zeus Trojan
 
-![](../images/Zeus%20Malware3.jpg)
+![](../images/ZeusMalware3.jpg)
 
 - The Zeus malware was a very widespread and highly damaging Trojans
 - The main attack vector was a phishing email that with a URL for an XSS attack 
@@ -452,7 +452,7 @@ Image Credit: en.wikipedia.org/wiki/WannaCry_ransomware_attack#/media/File:Wana_
 
 ## Client Attack Defences
 
-![](../images/google-warning-malware.webp)
+![](../images/google-warning-malware.png)
 - Modern browsers have access to databases of know sources of malware 
 - Following browser recommendations about unsafe sites mitigates XSS and other malware risks
 
@@ -744,7 +744,7 @@ cookies and authentication tokens.
 
 ## Insecure Direct Object Reference
 
-![](../images/insecure-direct-object-reference-example%20(1).png)
+![](../images/insecure-direct-object-reference-example.png)
 
 Notes:
 

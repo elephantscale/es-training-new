@@ -848,7 +848,7 @@ public static void viewTable(Connection conn) throws SQLException {
  ## Login URLs
  * Can be specified in The User Interface Login URL.
  * Calls the role authentication module
- * Redirection :
+ * Redirection:
   - Upon successful or failed login, `Access Manager` redirects the user to the right page
 
 ---
