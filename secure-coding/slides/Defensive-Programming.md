@@ -633,4 +633,12 @@
 
 ---
 
+## Static code scanners
+
+* Sonar Qube
+* https://www.sonarqube.org/features/security/
+![](../images/defensive-sonar.png)
+
+---
+
 
