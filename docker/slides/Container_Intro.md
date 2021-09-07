@@ -641,6 +641,24 @@ which is intentionally similar to Makefiles.
 
 ---
 
+## Microservices
+
+<img src="../../assets/images/docker/docker-microservices-1.png" style="width:50%;float:right;" />
+
+* **Microservices** : Developing multiple smaller applications rather than ONE giant monolithic application
+
+* This pattern allows developers to develop and deploy individual services much quicker
+
+* For example, imagine a online shipping application
+    - It can query one service to do a address to GPS translation
+    - It can query another  webservice to calculate sales tax
+    - ...etc
+
+* Dockerization allows us to develop and deploy microservices easily
+
+
+---
+
 ## Review and Q&A
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
