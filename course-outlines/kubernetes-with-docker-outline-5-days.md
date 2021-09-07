@@ -3,8 +3,8 @@
 © Elephant Scale  
 September 09, 2021
 
-![](../assets/images/logos/docker-logo-3-small.png)
-![](../assets/images/logos/kubernetes-logo-2-small.png)
+![](../assets/images/logos/docker-logo-3-small.png) &nbsp; &nbsp;
+![](../assets/images/logos/kubernetes-logo-4-small2.png)
 
 ## Overview
 
@@ -195,7 +195,7 @@ A cloud based lab environment will be provided.
 * A/B testing
 * Canary deployment
 
-### Kubernetes on the cloud
+### Kubernetes in the cloud
 
 * Kubernetes as service
 * Cloud offerings
