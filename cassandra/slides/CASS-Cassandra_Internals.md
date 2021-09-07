@@ -23,11 +23,11 @@ Notes:
 ---
 
 
-## C* Data Stores
+## `C*` Data Stores
 
 <img src="../../assets/images/cassandra/architecture.png" style="width:40%; float:right;"/>
 
- * C* data store has 3 components
+ * `C*` data store has 3 components
 
      - 1. Memtable
 
@@ -52,7 +52,7 @@ Notes:
 
  * When a memtable exceeds size threshold,  it is flushed to disk (to SSTable)
 
- * C* can manage memtable size
+ * `C*` can manage memtable size
 
      - Or can be set by user
 
@@ -226,10 +226,10 @@ Row values are merged
 ---
 
 
-## C* Write Path
+## `C*` Write Path
 
 
-<img src="../../assets/images/cassandra/C*-Write-Path-01.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/C-Write-Path-01.png" style="width:70%;"/>
 
 Notes: 
 
@@ -361,7 +361,7 @@ Notes:
 ## Caching
 
 
- * C* uses extensive caching to provide fast query times
+ * `C*` uses extensive caching to provide fast query times
 
  * Row Cache 
 
@@ -385,7 +385,7 @@ Notes:
 
  * It can be cached so future queries can be answered quickly
 
- * C* caches **all rows** when reading a partition
+ * `C*` caches **all rows** when reading a partition
 
       - Only enable for **small** partitions  
 
@@ -554,7 +554,7 @@ Notes:
 
      - Token range is split into as many as 256 partitions and distributed across nodes
 
-     - Token assignment to node automatically handled by C*
+     - Token assignment to node automatically handled by `C*`
 
 Notes: 
 
@@ -594,7 +594,7 @@ Notes:
 ## Lesson Summary
 
 
- * Learned about inner workings of C*
+ * Learned about inner workings of `C*`
 
 Notes: 
 

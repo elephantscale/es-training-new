@@ -7,7 +7,7 @@
 ## Lesson Objectives
 
 
- * Learn advanced data modeling concepts in C*
+ * Learn advanced data modeling concepts in `C*`
 
  * Learn to use collections
 
@@ -17,7 +17,7 @@
 
  * Learn to use Counters
 
- * Understand Lightweight Transaction support in C*
+ * Understand Lightweight Transaction support in `C*`
 
 Notes: 
 
@@ -31,7 +31,7 @@ Notes:
 ---
 
 
-## C* Collections
+## `C*` Collections
 
 | Type | Description                                       | Sample                            |
 |------|---------------------------------------------------|-----------------------------------|
@@ -63,7 +63,7 @@ Notes:
      - Map / List: 2GB per item
      - Set: 64KB
 
- * Collections cannot be ‘sliced’.  C* reads the entire collection into memory. => stay well within the maximum limits listed
+ * Collections cannot be ‘sliced’.  `C*` reads the entire collection into memory. => stay well within the maximum limits listed
 
  * Support for indexing collections is moving target
 
@@ -320,7 +320,7 @@ Notes:
 
  * During Query
 
-     - 1) C* uses Partition Key first
+     - 1) `C*` uses Partition Key first
 
      - 2) Then it may search within cluster columns
 
@@ -404,7 +404,7 @@ Notes:
 <img src="../../assets/images/cassandra/Visualize-Composite-Keys.png"  style="width:60%;"/>
 
 
- * In C* queries specifying partition key are faster
+ * In `C*` queries specifying partition key are faster
 
  * PK (A,B,C)
 
@@ -555,7 +555,7 @@ Source: Wikipedia
 
  * How do we store it?
 
- * Good news: C* can handle this VERY WELL!
+ * Good news: `C*` can handle this VERY WELL!
 
 Notes: 
 
@@ -583,7 +583,7 @@ Notes:
 
 ---
 
-## Sensor Table in C*
+## Sensor Table in `C*`
 
 <img src="../../assets/images/cassandra/Sensor-Table.png"   style="width:80%;" />
 
@@ -596,7 +596,7 @@ Notes:
 
 ---
 
-## Time Series in C* Visualization
+## Time Series in `C*` Visualization
 
 
  * Visualize (look at sort order for timestamp).
@@ -613,12 +613,12 @@ Notes:
 
 ---
 
-## C* Vs. RDBMS
+## `C*` Vs. RDBMS
 
 
  * In RDBMS each new reading will create a **ROW**
 
- * In C* each new reading becomes a **COLUMN**
+ * In `C*` each new reading becomes a **COLUMN**
 
 <img src="../../assets/images/cassandra/time-series-colum-storage.png"   style="width:80%;" />
 
@@ -694,7 +694,7 @@ Cli>  list sensors;*
 
 Notes: 
 
-‘cassandra-cli’   has been deprecated in C* version 3.  It may be replaced by another tool liks ‘sstables2json’   or ‘sstabledump’
+‘cassandra-cli’   has been deprecated in `C*` version 3.  It may be replaced by another tool liks ‘sstables2json’   or ‘sstabledump’
 
 
 ---
@@ -751,7 +751,7 @@ Notes:
 ## Group Discussion: Recovering from a full partition
 
 
- * One of my C* partitions is FULL
+ * One of my `C*` partitions is FULL
 
      - Primary key (sensor_id, time)
 
@@ -801,7 +801,7 @@ Notes:
 ## Takeaways
 
 
- * C* handles time series data well
+ * `C*` handles time series data well
 
  * Watch out for partitions ballooning in size
 
@@ -917,7 +917,7 @@ Notes:
      - updates succeed or rolled back
      - Data in consistent state
 
- * **C**onsistent
+ * **`C*`*onsistent
 
      - A transaction cannot leave the database in inconsistent state
 
@@ -936,7 +936,7 @@ Notes:
 
 ---
 
-## ACID in C*: Atomic
+## ACID in `C*`: Atomic
 
 
  * Row level updates are atomic
@@ -949,7 +949,7 @@ Notes:
 
      - No roll-backs, handled via repair
 
- * C* uses timestamps to resolve conflicts
+ * `C*` uses timestamps to resolve conflicts
 
      - When multiple clients are updating the same ‘cell’, the latest timestamp will win
 
@@ -960,7 +960,7 @@ Notes:
 
 ---
 
-## ACID in C*: Consistency
+## ACID in `C*`: Consistency
 
 
  * Two consistency levels are offered
@@ -976,7 +976,7 @@ Notes:
 
 ---
 
-## ACID in C*: Tunable Consistency
+## ACID in `C*`: Tunable Consistency
 
 
  * Extension of eventual consistency
@@ -998,7 +998,7 @@ Notes:
 
 ---
 
-## ACID in C*: Isolation
+## ACID in `C*`: Isolation
 
 
  * Imagine the case:
@@ -1018,10 +1018,10 @@ Notes:
 
 ---
 
-## ACID in C*: Durability
+## ACID in `C*`: Durability
 
 
- * C* provides excellent durability
+ * `C*` provides excellent durability
 
  * Writes are replicated across nodes
 
@@ -1077,7 +1077,7 @@ Notes:
 
      - Atomic batches
 
-     - Light weight transactions in C* version 2
+     - Light weight transactions in `C*` version 2
 
 Notes: 
 
@@ -1119,7 +1119,7 @@ Notes:
 
  * All statements in the batch are executed **atomically** (all or nothing)
 
- * Isolation is only guaranteed within **ONE partition** (imposed by C* design)
+ * Isolation is only guaranteed within **ONE partition** (imposed by `C*` design)
 
  * No ordering of statements within batch
 
@@ -1160,7 +1160,7 @@ Notes:
 
 ---
 
-## ACID in C*: SERIAL Consistency
+## ACID in `C*`: SERIAL Consistency
 
 
  * Only applies to Lightweight Transactions
@@ -1213,7 +1213,7 @@ Notes:
 ## Paginating Through All Rows
 
 
- * Not really a good C* use case
+ * Not really a good `C*` use case
 
      - ‘needle in a haystack’
 
@@ -1308,7 +1308,7 @@ Notes:
 ## Data Aggregation
 
 
- * C* support for aggregation is limited:
+ * `C*` support for aggregation is limited:
 
      - COUNT, SUM, AVG, MIN, MAX
 
@@ -1333,13 +1333,13 @@ Notes:
 ## Takeaways
 
 
- * C* support for ACID is different from RDBMS
+ * `C*` support for ACID is different from RDBMS
 
  * **Lightweight Transactions** help CAS style transactions
 
  * Secondary Indexes can be used for low cardinality data and low volume queries
 
- * Don’t use C* for data aggregation / analysis. Spark may be a better option
+ * Don’t use `C*` for data aggregation / analysis. Spark may be a better option
 
 Notes: 
 

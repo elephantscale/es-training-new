@@ -1,4 +1,4 @@
-# Cassandra Intro
+# `Cassandra Intro
 
 
 ---
@@ -68,7 +68,7 @@ Notes:
 
 ---
 
-## C* History
+## `C*` History
 
 
  * Developed @ Facebook to power ‘inbox’ search (2008)
@@ -111,7 +111,7 @@ Notes:
 
 <img src="../../assets/images/cassandra/cluster.png"  style="width:30%;float:right;"/>
 
- * The way C* is intended to run (Production setup)
+ * The way `C*` is intended to run (Production setup)
 
  * Runs on commodity hardware (cost effective)
 
@@ -152,24 +152,24 @@ Notes:
 
 ---
 
-## C* Across Data Centers
+## `C*` Across Data Centers
 
 <img src="../../assets/images/cassandra/cluster2.png" style="width:70%;"/>
 
 
 Notes: 
 
-C* cluster can span multiple DCs.
+`C*` cluster can span multiple DCs.
 
 
 ---
 
-## C* Across Data Centers
+## `C*` Across Data Centers
 
 
  * Nodes can be arranged in multiple DCs
 
- * C* will replicate data efficiently between remote data centers
+ * `C*` will replicate data efficiently between remote data centers
 
  * Used for:
 
@@ -191,7 +191,7 @@ Notes:
 ## Sidebar: Cassandra on a Single Node
 
 
- * C* can run on a single node
+ * `C*` can run on a single node
 
  * Useful for developing 
 
@@ -199,7 +199,7 @@ Notes:
 
  * Needs Java 
 
-<img src="../../assets/images/cassandra/C*.png"  style="width:30%;"/>
+<img src="../../assets/images/cassandra/`C*`.png"  style="width:30%;"/>
 
 Notes: 
 
@@ -223,7 +223,7 @@ Notes:
 
      - Seamless scaling
 
- * C* distributes data across the cluster
+ * `C*` distributes data across the cluster
 
      - More nodes => more workers to ingest data & serve data
 
@@ -254,13 +254,13 @@ Notes:
 ## Cassandra in Cloud
 
 
- * C* works very well on cloud environments 
+ * `C*` works very well on cloud environments 
 
  * Amazon AWS, Google Cloud, Cloudstack ...etc.
 
  * Cloud gives you “unlimited” scale
 
- * Netflix is a big user of C* on Amazon Cloud
+ * Netflix is a big user of ``C*`` on Amazon Cloud
 
      - Thousands of nodes
 
@@ -273,12 +273,34 @@ Notes:
 
 ---
 
+## AWS Keyspaces
+
+
+ * Keyspaces is Amazon's managed Cassandra Service 
+
+ * DynamoDB is *architecturally* similar to Cassandra
+   - but uses a different datamodel
+   - and different API
+
+ * Keyspaces *is* Cassandra
+
+ * Managed (No-Ops / Serverless)
+   - Backups
+   - Cluster Provisioning
+   - Scale
+
+
+
+Notes:
+
+---
+
 # Cassandra Use Cases
 
 ---
 
 
-## C* Use Case: T-Mobile
+## `C*` Use Case: T-Mobile
 
 <img src="../../assets/images/logos/tmobile-logo-o1.png" style="width:30%;float:right;"/>
 
@@ -304,7 +326,7 @@ Source: http://bigdatausecases.info/entry/from-sql-to-nosql
 
 ---
 
-## C* Use Case: Netflix
+## `C*` Use Case: Netflix
 
 <img src="../../assets/images/logos/netflix.02.png" style="width:20%;float:right;"/>
 
@@ -324,7 +346,7 @@ Source: http://bigdatausecases.info/entry/from-sql-to-nosql
 
      - Data safety
 
- * Netflix recommendations are powered by C*
+ * Netflix recommendations are powered by `C*`
 
 
 Notes: 
@@ -471,7 +493,7 @@ Notes:
 
      - Doesn’t have to be same column (unlike RDBMS)
 
- * C* does NOT store NULL values
+ * `C*` does NOT store NULL values
 
      - NULLs don’t take up any space (free)
 
@@ -485,7 +507,7 @@ Notes:
 ## Timestamp of Cell
 
 
- * C* tracks “last modification” time for each column automatically.  
+ * `C*` tracks “last modification” time for each column automatically.  
 
  * This timestamp is stored along side with data.
 
@@ -521,7 +543,7 @@ http://www.epochconverter.com/ for converting times.
 
  *  **Students:**
 
-     - You each get individual C* node in Amazon Cloud
+     - You each get individual `C*` node in Amazon Cloud
 
      - Use an SSH client (ssh, putty, bitvise) to connect
 
@@ -540,7 +562,7 @@ Notes:
 ## Lab: Install
 
 
- *  **Overview:** Install C*
+ *  **Overview:** Install `C*`
 
  *  **Builds on previous labs:** None
 
@@ -557,7 +579,7 @@ Notes:
 
 ---
 
-## Interacting with C*
+## Interacting with `C*`
 
 
  * Interaction via CQLsh console/shell
@@ -667,7 +689,7 @@ Notes:
 <img src="../../assets/images/cassandra/partitioning1.png"  style="width:40%;float:right;"/>
 
 
- * C* distributes data across clusterThis gives us:
+ * `C*` distributes data across clusterThis gives us:
 
      - Linear scalability to massive data sizes
 
@@ -695,7 +717,7 @@ Notes:
 <img src="../../assets/images/cassandra/Cassandra-Intro-How-is-Data-Distributed-13.png"  style="width:40%;float:right;"/>
 
 
- * C* uses **hashing** to distribute data
+ * `C*` uses **hashing** to distribute data
 
      - Fast
 
@@ -745,7 +767,7 @@ Notes:
 <img src="../../assets/images/cassandra/replica.png"  style="width:50%;float:right;"/>
 
 
- * C* creates multiple replicas on different nodes
+ * `C*` creates multiple replicas on different nodes
 
  *  **“Replication Factor”**  decides the number of copies (default 3 copies)
 
@@ -936,10 +958,10 @@ Notes:
 
 ---
 
-## Consistency in C*
+## Consistency in `C*`
 
 
- * C* offers **tunable consistency**
+ * `C*` offers **tunable consistency**
 
  * Extension of Eventual Consistency
 
@@ -954,7 +976,7 @@ Notes:
 
 ---
 
-## C* Writes and Updates
+## `C*` Writes and Updates
 
 
  * Client can connect to any node
@@ -1065,9 +1087,9 @@ Notes:
 
  * Client writes with RF = 3,   Level=ANYWhich of the following is true…
 
-     - C* will only create only COPY of data
+     - `C*` will only create only COPY of data
 
-     - C* will create 3 copies
+     - `C*` will create 3 copies
 
      - Client will wait for all replicas
 
@@ -1075,7 +1097,7 @@ Notes:
 
  * Answer:
 
-     - C* will create 3 copies
+     - `C*` will create 3 copies
 
      - Client will only wait for first replica to be completed
 
@@ -1317,13 +1339,13 @@ Notes:
 ## Read Repair
 
 
- * C* will repair all replicas that were involved in the read path
+ * `C*` will repair all replicas that were involved in the read path
 
      - E.g., Quorum reads will only repair replicas read, NOT all
 
      - Controlled by consistency level
 
- * C* can initiate 'read repair' on additional replicas based on 'read_repair_chance' property on table
+ * `C*` can initiate 'read repair' on additional replicas based on 'read_repair_chance' property on table
 
      - Usually set to  **0.1** 
 
@@ -1339,7 +1361,7 @@ Notes:
 ## Uses of Tunable Consistency...
 
 
- * C* allows the application to specify consistency **for each request**
+ * `C*` allows the application to specify consistency **for each request**
 
      - This allows great flexibility in building applications
 
@@ -1434,7 +1456,7 @@ Node 4 will store the hints and forward them to node 3 when it comes back up.
 ## Ensuring Consistency
 
 
- * C* can do repair-on-read…cool!
+ * `C*` can do repair-on-read…cool!
 
  * How about data that is never read?
 
@@ -1466,7 +1488,7 @@ Notes:
 ## Deletes
 
 
- * C* supports deleting rows/columns
+ * `C*` supports deleting rows/columns
 
  * However, it does **not** immediately delete data on disk
 
@@ -1494,7 +1516,7 @@ Notes:
 
  * Is Consistency Level (any, all ..etc) setting static or dynamic?
 
- * How does C* protect data when 'bad things  happen to good data'?
+ * How does `C*` protect data when 'bad things  happen to good data'?
 
 Notes: 
 

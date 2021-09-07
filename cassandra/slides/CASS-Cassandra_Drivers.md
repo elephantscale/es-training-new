@@ -7,7 +7,7 @@
 ## Lesson Objectives
 
 
- * Learn to use native Java drivers to connect to C*
+ * Learn to use native Java drivers to connect to `C*`
 
 Notes: 
 
@@ -21,10 +21,10 @@ Notes:
 ---
 
 
-## C* Drivers
+## `C*` Drivers
 
 
- * Interact with C* programmatically
+ * Interact with `C*` programmatically
 
  * Supported languages:
 
@@ -34,13 +34,13 @@ Notes:
 
  * A bit of history
 
-     - Lots of clients for C* 1.x
+     - Lots of clients for `C*` 1.x
 
      - Hector, Kundera …etc
 
      - They all use thrift interface
 
- * With C*  2.x   recommended clients are ‘native’ drivers
+ * With `C*`  2.x   recommended clients are ‘native’ drivers
 
 Notes: 
 
@@ -160,7 +160,7 @@ Notes:
 
      - Prepare only once in your application
 
-     - C* will parse and cache query 
+     - `C*` will parse and cache query 
 
      - Bind statement with values to pass to query
 
@@ -382,7 +382,7 @@ Provided by datastax
 
  *  **Overview:**
 
-     - Use Spring drivers to connect to C*
+     - Use Spring drivers to connect to `C*`
 
  *  **Builds on previous labs:**
 
@@ -414,7 +414,7 @@ Notes:
 ## Lesson Summary
 
 
- * Learned to interact with C* using drivers (Native & Spring)
+ * Learned to interact with `C*` using drivers (Native & Spring)
 
 Notes: 
 

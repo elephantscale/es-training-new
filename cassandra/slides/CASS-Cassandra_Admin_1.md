@@ -7,9 +7,9 @@
 ## Lesson Objectives
 
 
- * Learn some admin knowledge of C*
+ * Learn some admin knowledge of `C*`
 
- * Install C*
+ * Install `C*`
 
 Notes: 
 
@@ -52,7 +52,7 @@ Notes:
 
 ## Cassandra Choices
 
-| Apache C*           | Datastax Community                  | Datastax Enterprise                   |
+| Apache `C*`           | Datastax Community                  | Datastax Enterprise                   |
 |---------------------|-------------------------------------|---------------------------------------|
 |                     | Apache + tests + native drivers     |                                       |
 | Source distribution | Source + package manager            | installers                            |
@@ -259,7 +259,7 @@ Notes:
 ## SSD / Flash Disks
 
 
- * Great fit for C*
+ * Great fit for `C*`
 
  * Extremely low latency for read / writes
 
@@ -288,7 +288,7 @@ Notes:
 
  * Ext4 file size limit: 16TB
 
- * C* can use upto HALF of disk space for a single file (SSTable) !
+ * `C*` can use upto HALF of disk space for a single file (SSTable) !
 
  * Imagine you have  12 disks x 3TB each in RAID-0
 
@@ -322,7 +322,7 @@ Notes:
 
  *  **Overview:**
 
-     - Install C* as single node
+     - Install `C*` as single node
 
  *  **Builds on previous labs:** None
 
@@ -344,9 +344,9 @@ Notes:
 ---
 
 
-## Big Data Analytics With C*
+## Big Data Analytics With `C*`
 
- * C* is a NOSQL datastore that can store ‘Big Data’ (100s of TB)
+ * `C*` is a NOSQL datastore that can store ‘Big Data’ (100s of TB)
 
  * How ever its use case is **‘needle in a haystack’**
      - Query for a few rows at a time in billions of rows
@@ -354,7 +354,7 @@ Notes:
  * It doesn’t support ‘bulk analytics’
 
  * Example:
-     - Imagine we are storing sensor readings in C*
+     - Imagine we are storing sensor readings in `C*`
      - We have billions of data points
      - OK queries:
         * What is the latest temp for ‘sensor-1’
@@ -362,7 +362,7 @@ Notes:
         * Find the average temp for ALL sensors for the month of June in 2015
         * Involves large data scan, not supported.
 
- * For large scale analytics we need to pair C* with other tools: Hadoop & Spark
+ * For large scale analytics we need to pair `C*` with other tools: Hadoop & Spark
 
 Notes: 
 
@@ -414,11 +414,11 @@ Notes:
 
 <img src="../../assets/images/cassandra/hadoop-spark-cassandra-1.png" style="width:60%;float:right;"/>
 
- * C* enterprise has Hadoop intergration
+ * `C*` enterprise has Hadoop intergration
 
- * C* acts as a ‘Hadoop / HDFS compatible file system’
+ * `C*` acts as a ‘Hadoop / HDFS compatible file system’
 
- * Analyze data in C* using Hadoop analytics 
+ * Analyze data in `C*` using Hadoop analytics 
 
      - MapReduce
      - Pig (write high level MapReduce)
@@ -483,12 +483,12 @@ Notes:
 ## Spark & Cassandra
 
 
- * Spark works very well with C*
+ * Spark works very well with `C*`
 
  * Spark & Cassandra are used heavily in ‘streaming workloads’.
 
      - Spark reads data from a queue like Kafka
-     - Inserts into C*
+     - Inserts into `C*`
 
  * Spark-Cassandra connector: https://github.com/datastax/spark-cassandra-connector
 

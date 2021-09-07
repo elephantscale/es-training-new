@@ -7,9 +7,9 @@
 ## Lesson Objectives
 
 
- * Learn C* best practices
+ * Learn `C*` best practices
 
- * Learn about some C* use cases
+ * Learn about some `C*` use cases
 
 Notes: 
 
@@ -23,7 +23,7 @@ Notes:
 ---
 
 
-## 15 Commandments for C* Developers and Admins
+## 15 Commandments for `C*` Developers and Admins
 
 
  * By Patrick McFadin, 
@@ -74,7 +74,7 @@ Notes:
 
  *  **Commandment 4)**  Secondary Indexes are for convenience not speed
 
-     - C* does distributed indexes (not like a RDBMS)
+     - `C*` does distributed indexes (not like a RDBMS)
 
         * Every node’s local index will have to be accessed – so slow
 
@@ -82,7 +82,7 @@ Notes:
 
  *  **Commandment  5)**  Embrace large partitions and de-normalization
 
-     - C* can handle large partitions
+     - `C*` can handle large partitions
 
      - Make sure partitions stay < 1GB
 
@@ -192,7 +192,7 @@ Notes:
 ## Know Linux
 
 
- * Being proficient in Linux would help you diagnose C* problems
+ * Being proficient in Linux would help you diagnose `C*` problems
 
  * Linux tools
 
@@ -209,7 +209,7 @@ Notes:
 ## No VMs
 
 
- * C* needs good IO throughput
+ * `C*` needs good IO throughput
 
  * VM’s don’t offer good IO paths
 
@@ -232,7 +232,7 @@ Notes:
 ## Debugging
 
 
- * C* Admin tools
+ * `C*` Admin tools
 
      - Nodetool – main admin tool for everything
 
@@ -295,16 +295,16 @@ Notes:
 
 ---
 
-## Loading Data into C*
+## Loading Data into `C*`
 
 
- * Lots of ETL tools support C*
+ * Lots of ETL tools support `C*`
 
      - Talend,  Pentaho, Jaspersoft
 
      - They offer nice GUI, scheduling engines ..
 
- * C* can be a sink for 
+ * `C*` can be a sink for 
 
      - Flume
 
@@ -359,11 +359,11 @@ Notes:
 
      - 2 cores Dev, 16 cores Production
 
-     - C* can utilize CPU cores very well
+     - `C*` can utilize CPU cores very well
 
  * Network
 
-     - C* is network intensive
+     - `C*` is network intensive
 
      - Have 2 interfaces ‘bonded’ together (minimize network failure)
 
@@ -400,7 +400,7 @@ SSDs can cost 10x HDDs
 
 ---
 
-## C* on Cloud
+## `C*` on Cloud
 
 
  * Choose compute optimized instances
@@ -429,7 +429,7 @@ Notes:
 
 ---
 
-# C* Case Studies
+# `C*` Case Studies
 
 ---
 
@@ -493,7 +493,7 @@ Notes:
 
  * Built on Amazon Cloud (AWS)
 
- * Loading data into C* directly using Spark streaming
+ * Loading data into `C*` directly using Spark streaming
 
 
 <img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Architecture-1.png" style="width:80%;"/>
@@ -517,9 +517,9 @@ Notes:
 
      - Done by Spark 
 
-     - Two C* clusters : one (A) online, other one (B) batch analytics
+     - Two `C*` clusters : one (A) online, other one (B) batch analytics
 
-     - Spark co-located with batch C* cluster (B)
+     - Spark co-located with batch `C*` cluster (B)
 
 Notes: 
 
@@ -532,9 +532,9 @@ Notes:
 
  * Slide #84
 
- * Using secondary indexes in C* to filter out data in C* layer (not in Spark layer)
+ * Using secondary indexes in `C*` to filter out data in `C*` layer (not in Spark layer)
 
- * As Spark is co-located with C* nodes, secondary indexes are very effective!
+ * As Spark is co-located with `C*` nodes, secondary indexes are very effective!
 
 
 <img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Spark-Cassandra-2.png" style="width:40%;"/> &nbsp; &nbsp; &nbsp;<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Spark-Cassandra-3.png" style="width:30%;"/>
@@ -547,14 +547,14 @@ Notes:
 
 ---
 
-## C* @ Instagram (2016)
+## `C*` @ Instagram (2016)
 
 
  * From Cassandra Summit 2016
 
  * Cluster Details 
 
-     - 1000+  C* nodes (across multiple clusters)
+     - 1000+  `C*` nodes (across multiple clusters)
 
      - Data : 100+ TB
 
@@ -613,7 +613,7 @@ Notes:
 
 ---
 
-## C* @ Netflix (Very Unique Case)
+## `C*` @ Netflix (Very Unique Case)
 
 
  * Runs on AWS
@@ -676,14 +676,14 @@ Notes:
 
 ---
 
-## C* Use Cases: Online Service: Hulu
+## `C*` Use Cases: Online Service: Hulu
 
 
  * 5 million subscribers
 
  * 30 million unique views
 
- * C* setup:
+ * `C*` setup:
 
      - 16 node cluster split across 2 data centers
 
@@ -697,7 +697,7 @@ Notes:
 
 ---
 
-## C* Use Cases: Online Service: Spotify
+## `C*` Use Cases: Online Service: Spotify
 
 
  * 40 M active users / month
@@ -708,9 +708,9 @@ Notes:
 
  * 40k requests / sec
 
- * C* setup
+ * `C*` setup
 
-     - 500 C* nodes across 4 data centers(production + testing)
+     - 500 `C*` nodes across 4 data centers(production + testing)
 
      - Recommendations generated ‘off-line’ using Cassandra + Hadoop (not in critical path)
 

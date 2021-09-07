@@ -204,7 +204,7 @@ Notes:
 
      - We used ‘user_name’
      - => natural key (part of the model)
-     - No auto-sequence keys in C*
+     - No auto-sequence keys in `C*`
      - Use natural keys whenever possible
 
  * Emails
@@ -249,7 +249,7 @@ Notes:
 ## Using Collections—Tips
 
 
- * C* will retrieve the collection entirely
+ * `C*` will retrieve the collection entirely
 
      - Keep the size manageable
 
@@ -261,7 +261,7 @@ Notes:
 
      - List: in insert-order
 
- * Indexes on collections are available with the latest C*
+ * Indexes on collections are available with the latest `C*`
 
      - Still, there are limitations
 
@@ -347,7 +347,7 @@ CREATE TABLE users_by_email (	user_name text,	fname  text,  // de-normalized	pri
 
  * Now I can get email-> firstname in one query
 
- * De-normalizing is very normal in C*
+ * De-normalizing is very normal in `C*`
 
 
 
@@ -447,7 +447,7 @@ APPLY BATCH;
 ```
 
  * Batch is written to co-ordinator node and replicas
- * C* will ensure that batch succeeds – no rollbacks
+ * `C*` will ensure that batch succeeds – no rollbacks
  * No isolation – other clients may read updated rows before entire batch completes
 
 
@@ -747,7 +747,7 @@ Notes:
 
  *   create table  **ratings_by_feature**  **(** 	    user_name text,	    feature_code text,	    rating int,
 
- *        **type text STATIC** ,	PRIMARY KEY ((feature_code), rating, user_name) **)** WITH CLUSTERING ORDER BY (rating DESC);
+ *        **type text STATI`C*`* ,	PRIMARY KEY ((feature_code), rating, user_name) **)** WITH CLUSTERING ORDER BY (rating DESC);
 
 ```text
 create table ratings_by_feature (
@@ -776,7 +776,7 @@ Notes:
 
      - Design schemas for queries!
 
- * In C* writes are fast!
+ * In `C*` writes are fast!
 
 Notes: 
 
@@ -844,7 +844,7 @@ Notes:
 
      - Timestamp encoded in UUID
 
- * Both are ‘first-class citizens’ in C*
+ * Both are ‘first-class citizens’ in `C*`
 
  * Maps to Java UUID
 
@@ -970,7 +970,7 @@ Notes:
 
      - Probably **write-heavy** (all the devices sending ‘position’ data as movie is being watched)
 
-     - Netflix is not serving actual movie content from C*C* is not built for large files
+     - Netflix is not serving actual movie content from `C*``C*` is not built for large files
 
 Notes: 
 
@@ -984,7 +984,7 @@ Notes:
 
  *  **Overview:**
 
-     - Model MyFlix on C*
+     - Model MyFlix on `C*`
 
      - Generate and insert data
 

@@ -27,16 +27,16 @@ Notes:
 ---
 
 
-## Data Modeling in C*
+## Data Modeling in `C*`
 
 
- * C* is a distributed data store
+ * `C*` is a distributed data store
 
- * C* is optimized for **non-relational** data models
+ * `C*` is optimized for **non-relational** data models
 
  * E.g, joins don’t work very well in distributed systems
 
- * We need to learn to model data properly in C*
+ * We need to learn to model data properly in `C*`
 
 Notes: 
 
@@ -52,7 +52,7 @@ Notes:
 
  * Created for ease of use
 
- * Standard from Cassandra 2.x(Earlier C* versions used Thrift API)
+ * Standard from Cassandra 2.x(Earlier `C*` versions used Thrift API)
 
  * Makes you think about “data model” rather than APIs 
 
@@ -265,16 +265,16 @@ Notes:
 
 ---
 
-## C* Tables
+## `C*` Tables
 
 
- * C* Tables contain rows and columns
+ * `C*` Tables contain rows and columns
 
  * Rows are indexed by primary key
 
  * Columns are variable i.e., no fixed schema for each row
 
- * Tables are partitioned across a C* cluster
+ * Tables are partitioned across a `C*` cluster
 
  * Table data is replicated according to replication strategy for the keyspace the table belongs to
 
@@ -304,9 +304,9 @@ Notes:
 
 ---
 
-## C* Tables
+## `C*` Tables
 
- <img src="../../assets/images/cassandra/C*-Tables.png"  style="width:80%;"/>
+ <img src="../../assets/images/cassandra/C-Tables.png"  style="width:80%;"/>
 
 
 Notes: 
@@ -399,7 +399,7 @@ Source: https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cql_data_types_c.
 
 ---
 
-## C* vs.  RDMBS
+## `C*` vs.  RDMBS
 
 | Feature                                      | RDBMS                                         | Cassandra                                            |
 |----------------------------------------------|-----------------------------------------------|------------------------------------------------------|
@@ -412,7 +412,7 @@ Source: https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cql_data_types_c.
 </br>
 
  * Class discussion: 
-</br> Why C* does  **NOT**  do AUTO SEQUENCE key?
+</br> Why `C*` does  **NOT**  do AUTO SEQUENCE key?
 
 Notes: 
 
@@ -734,7 +734,7 @@ Notes:
 
  * Each cell has a ‘last modified’ timestamp.
 
- * C* automatically populates this using current time (microseconds accuracy).
+ * `C*` automatically populates this using current time (microseconds accuracy).
 
      - This is the preferred way.
 
@@ -808,7 +808,7 @@ Notes:
 ## Alter Table
 
 
- * Altering tables (adding columns, etc.) is “very fast” in C*
+ * Altering tables (adding columns, etc.) is “very fast” in `C*`
 
      - As opposed to RDBMS (most need to re-write tables)
 
@@ -875,7 +875,7 @@ Notes:
 ## INSERT vs. UPDATE
 
 
- * Inserts and Updates in C* are not the same as in a RDBMS
+ * Inserts and Updates in `C*` are not the same as in a RDBMS
 
  * Insert will create a new row or **update** (i.e., replace) an existing one
 
@@ -892,10 +892,10 @@ Notes:
 
 ---
 
-## Update & Insert in C* and RDBMS
+## Update & Insert in `C*` and RDBMS
 
 
- * Assume the following data exists in C* and RDBMS
+ * Assume the following data exists in `C*` and RDBMS
 
  * What is the result of these operations?
 
@@ -908,7 +908,7 @@ Notes:
 </br>
 
 
-| Query                                                                  | RDBMS | C* |
+| Query                                                                  | RDBMS | `C*` |
 |------------------------------------------------------------------------|-------|----|
 | Update features set studio = ‘HBO’  </br> where code = ‘sopr’;         | ?     | ?  |
 | Insert into features (code, name)     </br>VALUES(‘star1’,‘star trek’) | ?     | ?  |
@@ -957,9 +957,9 @@ delete studio from features where code = ‘madmen’
 
 ```
 
- * In C* deletes are “soft deletes”
+ * In `C*` deletes are “soft deletes”
 
- * C* marks the data as deleted
+ * `C*` marks the data as deleted
 
      - Tombstone marker
 
@@ -990,7 +990,7 @@ Notes:
 
  * We can add indexes
 
- * C* has limited support for secondary indexes
+ * `C*` has limited support for secondary indexes
 
 ```text
 CREATE TABLE features (	code text,	name text,	type text,	release_date timestamp,	PRIMARY KEY(code)	);
@@ -1037,7 +1037,7 @@ Notes:
 ## Indexing Mechanics
 
 
- * If data is already in table, C* will index them immediately
+ * If data is already in table, `C*` will index them immediately
 
  * New data is indexed as they are inserted or updated
 
@@ -1066,7 +1066,7 @@ Notes:
 
 <img src="../../assets/images/cassandra/indexing.png"  style="width:40%;float:right;"/>
 
- * C* index is distributed
+ * `C*` index is distributed
 
  * Each node maintains index for its local data -> efficient
 
@@ -1138,7 +1138,7 @@ Notes:
 
  *  **Overview:**
 
-     - Create and use secondary index in C*
+     - Create and use secondary index in `C*`
 
  *  **Builds on previous labs:** 02-cql
 

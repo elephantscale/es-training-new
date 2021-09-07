@@ -378,7 +378,7 @@ Notes:
 
      - Probably **write-heavy** (all the devices sending ‘position’ data as movie is being watched)
 
-     - Netflix is not serving actual movie content from C*C* is not built for large files
+     - Netflix is not serving actual movie content from `C*``C*` is not built for large files
 
 Notes: 
 
@@ -392,7 +392,7 @@ Notes:
 
  *  **Overview:**
 
-     - Model MyFlix on C*
+     - Model MyFlix on `C*`
 
      - Generate and insert data
 
