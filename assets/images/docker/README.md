@@ -12,6 +12,7 @@ Images
 ### Images 
 
  * Frustrated Man [https://pixabay.com/en/alone-being-alone-archetype-513525/](./alone-513525_640.jpg)
+ * Stop and Pray [../../assets/images/generic/3rd-party/stop-and-pray.jpg](https://www.pexels.com/photo/photography-of-a-persons-hand-with-stop-signage-823301/)
  * Firefighters [https://www.pexels.com/photo/accident-action-danger-emergency-260367/](./accident-action-danger-260367.jpg)
  * Prisoner [https://pixabay.com/en/prisoner-gangster-convict-296515/](./prisoner-296515_640.png)
  * Server [https://www.pexels.com/photo/interior-of-office-building-325229/](architecture-business-cabinet-325229.jpg)

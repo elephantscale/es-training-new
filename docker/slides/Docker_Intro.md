@@ -7,7 +7,7 @@
 
 ## What is Docker?
 
-![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-horizontal.png)
+![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png)
 
 * Docker is the current industry standard container format.
 * Docker (the company) also makes developer tools:
@@ -61,7 +61,7 @@ incompatible Windows kernels for various flavors of Windows.  Because of that, m
 
 ## Docker Desktop for Windows (Developer)
 
-![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-horizontal.png)
+![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png)
 
  * Docker Desktop for Windows has the following requirements:
    * Windows 10 Professional 64 Bit (or Higher)  (not Home, Not Home Pro)
@@ -107,7 +107,7 @@ Docker Toolbox can be used together with Oracle VirtualBox to run Docker contain
   - Able to run native containers without virtualization
   - Minimal Performance Penalty
 
-![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-horizontal.png) <!-- {"left" : 6.97, "top" : 6.62, "height" : 0.67, "width" : 2.58} -->
+![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png) <!-- {"left" : 6.97, "top" : 6.62, "height" : 0.67, "width" : 2.58} -->
 
 
 ![http://www.virtualizationsoftware.com/wp-content/uploads/2013/04/hyperv-logo2.jpg](../images//hyperv-logo2.jpg) <!-- {"left" : 6.93, "top" : 3.78, "height" : 0.67, "width" : 2.35} -->
@@ -167,7 +167,7 @@ similar to what one would expect on Linux platforms.
 
 ## Docker Desktop on Mac (Developer)
 
-![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-horizontal.png)
+![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png)
 
 * Docker Desktop on Mac is only supported as a development platform.
   - There are no ”native” mac containers as there are on Linux and Windows

@@ -4,7 +4,7 @@
 
 ## About Dockerhub
 
-<img src="../images/docker-horizontal.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/logos/docker-logo-4-horizontal.png" style="width:30%;float:right;"/>
 
 - Docker hub is for docker images like is what Github for code
 - The Hub hosts docker images - public and private

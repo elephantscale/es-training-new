@@ -1,22 +1,28 @@
 # Container Intro
+
+<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:40%;"/>
+
 ---
 
-# Deployment Intro
+# Deployment Problem
 
---- 
-## The Problem
- * You develop an app on your workstation
- * You test it. Seems to run fine. Time to deploy
+---
 
-![Intellij Screenshot](../images/intellij.png) <!-- {"left" : 1.02, "top" : 2.28, "height" : 4.42, "width" : 8.21} -->
+## Step 1 - Develop on Laptop
 
+* You develop an app on your workstation
 
+* You test it. Seems to run fine. Time to deploy
+
+<img src="../../assets/images/docker/intellij.png" style="width:80%;" /> <!-- {"left" : 1.02, "top" : 2.28, "height" : 4.42, "width" : 8.21} -->
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Share some war stories
+
+Participant Notes :
 
 We are introducing the problem of deployment.  The problem here
 is that as an application is far more than just code.  Code is
@@ -27,30 +33,29 @@ are one way to solve that problem, and Containers are another.
 
 ---
 
+## Step 2: Deploy to the Server
 
-## Deploying to the Server
- * We’re ready to deploy to the server
- * Provision a new server 
-	- Install OS
-	- Install JDK
-	- Install dependency libraries
-	- Etc
- * Oops… doesn’t work. Why not?
-	 - Missing file?
-	 - Wrong version? Path not right
- * “But it worked on MY computer!!”
+<img src="../../assets/images/docker/3rd-party/alone-513525_640.jpg" style="width:30%;float:right;" /> <!-- {"left" : 5.56, "top" : 1.56, "height" : 2.87, "width" : 4.49} -->
 
-![](../images/alone-513525_640.jpg) <!-- {"left" : 5.56, "top" : 1.56, "height" : 2.87, "width" : 4.49} -->
+* We’re ready to deploy to the server
 
+* Provision a new server 
+    - Install OS
+    - Install JDK
+    - Install dependency libraries
+    - Etc
 
+* Oops… doesn’t work. Why not?
+    - Missing file?
+    - Wrong version? Path not right
+
+* **"But it worked on MY computer!!"**
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-
-Participant Notes:
-
+Participant Notes :
 
 Setting up the environment right usually results in problems.  Developers
 have implicit dependencies on libraries, versions, etc that are hidden.
@@ -65,30 +70,32 @@ Developers are famous for insisting that "It worked on my computer!"
 
 ---
 
-## Much Later... Finally Working!
+## Step 3 - Much Later... Finally Working!
 
-Fix all the problems, now it’s finally working!
- * Oops… Don’t Touch Anything!
+<img src="../../assets/images/generic/3rd-party/stop-and-pray.jpg" style="width:30%;float:right;" />
+
+* Fix all the problems, now it’s finally working!
+
+* Oops… Don’t Touch Anything!
    - Might Break!
    - Change Environment?
    - Install Another App?
- * Fix Breakage
+
+* Fix Breakage
    - Make things work together
    - Set profiles
- * ”Write once, run anywhere?”
+
+* "Write once, run anywhere?"
    - Not exactly!
-
- ![](../images/architecture-business-cabinet-325229.jpg) <!-- {"left" : 2.4, "top" : 5.44, "height" : 1.91, "width" : 5.46} -->
-
 
 Notes:
 
- https://www.pexels.com/photo/interior-of-office-building-325229/
+https://www.pexels.com/photo/interior-of-office-building-325229/
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 Once we fix our problems, we’re by no means done.  Changes that happen can affect our application. If we install something else on the same server, it can break our application.  The problem is that there is no isolation.  One app on the server will affect others on the server.
@@ -97,28 +104,28 @@ We often have to walk on tiptoes on our server to make sure that we don’t brea
 
 The old Java maxim “Write Once, Run Anywhere” doesn’t really work.  Because, the Java app itself may run anywhere, but there’s so much else that comes into play that will either allow or prevent the app from working.
 
-
-
 ---
 
-## Redeploying to a Different Server
+## Step 4 - Scale our App
 
- * Great News! Our App is very popular.  Need to scale up to a bigger, better server!
- * No problem, right?  Wrong!
- * Create New Server
-   - Complete Steps: Install OS, install dependencies
-   - Fight fires,
-   - Fix Problems
+<img src="../../assets/images/docker/3rd-party/accident-action-danger-260367.jpg" style="width:40%;float:right;" /> <!-- {"left" : 4.04, "top" : 3.27, "height" : 3.98, "width" : 5.98} -->
 
- ![https://www.pexels.com/photo/accident-action-danger-emergency-260367/](../images/accident-action-danger-260367.jpg) <!-- {"left" : 4.04, "top" : 3.27, "height" : 3.98, "width" : 5.98} -->
+* Great News! Our App is very popular.  Need to scale up !
 
+* Need to deploy on many servers
+
+* Create New Server
+    - Install OS
+    - install dependencies
+    - Fight fires
+    - Fix Problems
+    - **Rinse and repeat**
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
-
+Participant Notes :
 
 Here we come to the point where our deployment environment can take on a life
 of its own, so we can get to a "but it worked on my server!" kind of mentality.
@@ -130,143 +137,30 @@ to solve, and, indeed, VMs are a reasonable solution to this.
 
 ---
 
-## Redeploy to Cloud
+## Can Cloud Help?
 
- * Redeploy to Cloud
-   - Cloud Configuration is different
-   - Redeploy
-   - Re-Test
-   - Fix Fires
+* Even deploying the cloud, we would encounter the same problems!
+
+<img src="../../assets/images/kubernetes/3rd-party/kubernetes-dilbert-1.jpeg" style="width:90%;" />
 
 Notes:
 
-Instructor Notes:
+Image credit: https://medium.com/skale-5/19-memes-about-kubernetes-86d4ee87ba1b 
 
-Participant Notes:
+Instructor Notes :
+
+Participant Notes :
 
 Cloud is yet another configuration compared to on-prem. How will that affect
 things?  Likely, it will involve even more firefighting.
 
 ---
 
+## Dependency Matrix
 
-## But it Worked on MY Computer!
+* Lot of the time, we need to keep track of dependencies for each component
 
- * How many times have you heard this line:
-   - It worked on my computer!
- * When we develop, we’re not really developing an application
-   - We are developing an environment
-   - The code itself may be portable
-   - But the environment is not!
-
-Notes:
-
-Instructor Notes:
-
-
-Participant Notes:
-
-This is the main point – we are developing an environment.  The app is just one small piece of the stack.   We have the OS, other applications, the filesystem, the IO devices – all of these are part of what makes the app do what it does.  
-
-Real portability means that we have to somehow manage to transport all of these things together with the app. Some will point, again, to the VM as a solution to this problem, but we will see how containers differ from this.
-
----
-
-
-## Remember Windows DLL Hell?
-
- * You Install One Application, which has some DLLs such as MSEXAMPLE.DLL
-   - Some of those DLLs are shared between applications
-   - So, we register the in COM that MSEXAMPLE -> c:\Windows\MSEXAMPLE.DLL
- * Now Install a new application, which also needs MSEXAMPLE.DLL
-   - It now re-registers the same DLL: 
-   - MSEXAMPLE -> C:\Program Files\MyAPP\MSEXAMPLE.DLL
-
-Notes:
-
-Instructor Notes:
-
-Participant Notes:
-
-DLL Hell is a one of the reasons why Windows deservedly gained such a reputation for instability.  By putting code in shared libraries, but giving now way to control or version those libraries, early windows systems could find their way into insidious dependency scenarios where neither app would work.  The solution, more often than not, was to simply reinstall everything, including the OS, from scratch.
-
-While modern windows is more mature, the problem still exists on Windows systems, just like it does on other OS systems.  Different Apps, once install, can have side-effects that affect the running of other apps.
-
-To be fair, other OS platforms suffer from the same issue.  In fact, it’s a pretty universal problem.
-
----
-
-
-## Windows DLL Hell
-
- * So what’s the problem?
-   - What if there are several different versions of the same DLL?
-   - Last one Wins!  (DLL Stomping)
-   - First App no longer works!
- * Uninstall the second app?
-   - Nope still doesn’t work.
- * Start Over from Scratch!
-
-Notes:
-
-Instructor Notes:
-
-Participant Notes:
-  
-
----
-
-
-## Dependency Hell
-
- * DLL Hell is an example of Dependency Hell
- * Dependency Hell:
-   - Multiple Dependencies
-   - Multiple Configurations
-   - Applications not Isolated
-
-Notes:
-
-Instructor Notes:
-
-
-Participant Notes:
-
-”Dependency Hell” is the extension of the DLL hell problem to other platforms and situations. Indeed, the fact that we have decades of “DLL Hell” or “Dependency Hell” war stories means that we’ve not yet come up with the perfect solution to this problem.
-
-
----
-
-## Solutions to Dependency Hell
-
- * Static Linking
-   - Include all dependencies in .EXE (Windows)
-   - Make a Fat JAR (Java)
- * Some kind of application registry
-   - .NET GAC (Global Application Cache)
- * Package Management Systems
-   - Apt (Ubuntu/Debian), RPM (RedHat)
- * Problem:
-   - Only good for one application
-   - Filesystem itself not included
-   - No Isolation
-
-Notes:
-
-Instructor Notes:
-
-Participant Notes:
-
-Fortunately, Dependency Hell isn’t usually a fatal problem.   Static Linking is one solution that we see in both Windows and Java – just include all dependencies together in the same .EXE (Windows) or .JAR (java).  Since most application code isn’t’ really all that big on a modern system, sometimes trying to share code between multiple applications is just a big waste of time.
-
-There are some ingenious solutions to the problem. Microsoft, for example, invented the GAC (Global Application Cache) for .NET assemblies, to avoid dependency hell problems.  Unfortunately, it only applies to managed .NET code and the .DLL hell problems tend to occur more with the unmanaged Windows DLLs.
-
-Even when these solutions work, they only fix the problem for the one application.   And, any dependencies on the filesystem aren’t helped at all.  Nor are there any isolation between processes.  These mean that these solutions aren’t the silver bullet that we would like to see.
-
-
----
-
-## The Matrix From Hell
+<br />
 
 |                  | Dev VM    | QA Server | Prod Instance | Prod Cluster | AWS       | Laptop    |
 |------------------|-----------|-----------|---------------|--------------|-----------|-----------|
@@ -279,22 +173,22 @@ Even when these solutions work, they only fix the problem for the one applicatio
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 This “Matrix From Hell” is adapted from the website http://www.docker.com /  The idea here is that we have a number of different components to our app: front-end, back-end, various DBs, services, queues, etc.  These things all come together to make our app, like pieces of the puzzle.  Those pieces will have to be assembled in just the right way on each of our deployment platforms, from local to test, to QA.  How  do we ensure that our app works the same way on each of them?  There are many combinations of factors, which is why we call this the ”Matrix from Hell”.
 
 It becomes a big headache to make sure that all the various components of our app, on the rows of the matrix, all work properly on the columns of our matrix, which are the various deployment platforms.
 
-
 ---
-
 
 ## Wouldn't It Be Nice?
 
- * What if we could move all of the following:
+<img src="../../assets/images/docker/3rd-party/blackboard-business-chalkboard-355988.jpg" style="width:30%;float:right;" /><!-- {"left" : 5.05, "top" : 1.65, "height" : 3.29, "width" : 4.94} --> 
+
+* What if we could move all of the following:
    - Application Code
    - Application Dependencies
    - Configuration Files
@@ -302,48 +196,55 @@ It becomes a big headache to make sure that all the various components of our ap
    - Environment Variables
    - File System
    - Service Processes
- * All as a “sealed unit”
+
+* All as a “sealed unit”
    - Without having to re-deploy
    - Reconfigure
-
-![https://www.pexels.com/photo/blackboard-business-chalkboard-concept-355988/](../images/blackboard-business-chalkboard-355988.jpg) <!-- {"left" : 5.05, "top" : 1.65, "height" : 3.29, "width" : 4.94} -->
-
 
 
 Notes:
 
-Instructor Notes:
+Image credit : https://www.pexels.com/photo/blackboard-business-chalkboard-concept-355988/
+
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 Here we’re talking about the use case of taking all of our application components and delivering them all as a sealed unit, so that none of the components can be deployed without the others.
 
 We are trying to communicate the value of having our application delivered as a whole.
 
-
-
 ---
-
-
 
 # Virtual Machines (VMs)
 
-## There is a Better Way: Virtualization
+---
 
- * Virtualization has taken the Datacenter by storm
- * With Virtualization, we can easily move a whole virtual environment from server to server.
- * We can pause, stop, restart, and terminate instances on the fly.
- * Frees datacenter ops to focus on server infrastructure and not application.
- * Agility: much easier to get new VM instance than a new hardware server provisioned.
+## Virtualization
+
+<img src="../../assets/images/docker/virtual-machines-1.png" style="width:40%;float:right;" />
+
+* Virtualization has taken the Datacenter by storm
+
+* Virtualization allows a physical server to be segmented into multiple virtual servers
+
+* With Virtualization, we can easily move a whole virtual environment from server to server.
+
+* We can pause, stop, restart, and terminate instances on the fly.
+
+* Frees datacenter ops to focus on server infrastructure and not application.
+
+* Agility: much easier to get new VM instance than a new hardware server provisioned.
+
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 Virtualization has historically been the answer to these problems.  We’ll see in a minute the advantages and disadvantages of containerization versus virtualization
@@ -352,128 +253,83 @@ Virtualization allows us to easily start, stop, and move VMs between machines, s
 
 ---
 
-
 ## History of Virtualization
 
- * Mainframes have done VMs for a long time. (1960s/1970-Present)
+* **1960s-present** Mainframes have done VMs for a long time
    - Thousands of VMs on a single mainframe
    - Achieves scalability and isolation on mainframe systems
- * PC Era (1990s)
+
+* **1990s** PC Era
    - VMs a “Mainframe” technology and out of vogue.
    - Just run the app on the ”bare metal”
 
-
-Notes:
-
-Instructor Notes:
-
-
-Participant Notes:
-VMs have been around since the mainframe era, and allow multi-tenancy much more effective.  As we can see, VMs became much more popular in the mid-2000s as VMWare and other providers came out and CPU vendors started to make hardware virtualization.
-
-That said, there are disadvantages to virtualization.   “Bare Metal” undeniably runs faster.
-
----
-
-
-## History of Virtualization (Continued)
-
- * Application Servers (Late 1990s – 2000s)
+* **Late 19902 - 2000s** Application Servers
    - Deploy App to Application Server
    - SysAdmins managed deployment of application
    - Still ”Bare Metal”
- * Intel/AMD Support Hardware Virtualization (2006-)
+
+* **2006 - Present** Intel/AMD Support Hardware Virtualization
    - Enables Isolation of VM processes
    - VM Security
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
+Participant Notes :
 
-Participant Notes:
+VMs have been around since the mainframe era, and allow multi-tenancy much more effective.  As we can see, VMs became much more popular in the mid-2000s as VMWare and other providers came out and CPU vendors started to make hardware virtualization.
+
+That said, there are disadvantages to virtualization.   “Bare Metal” undeniably runs faster.
 
 In the modern era, virtualization is ubiquitous and assumed -- if I have a server instance I'm sure it's really a VM and not a "bare metal" instance. The ability to copy my instance and redeploy it is something that we normally take for granted in this day and age.
 
-
 ---
-
 
 ## Virtualization Providers
 
+<img src="../../assets/images/logos/vmware-logo-1.png" style="width:30%;" /> <!-- {"left" : 3.55, "top" : 0.98, "height" : 0.95, "width" : 3} -->
+&nbsp; &nbsp; <img src="../../assets/images/logos/virtualbox-logo-1.png" style="width:30%;" /><!-- {"left" : 2.73, "top" : 1.52, "height" : 2.3, "width" : 4.19} -->
 
-![https://warlord0blog.files.wordpress.com/2016/10/vmware-logo-eps-vector-image-800x533-e1476948729563.png](../images/vmware-logo-eps-vector-image-800x533-e1476948729563.png) <!-- {"left" : 3.55, "top" : 0.98, "height" : 0.95, "width" : 3} -->
-
-
-![](../images/virtualbox-logo.png) <!-- {"left" : 2.73, "top" : 1.52, "height" : 2.3, "width" : 4.19} -->
-
-
-![http://www.virtualizationsoftware.com/wp-content/uploads/2013/04/hyperv-logo2.jpg](../images/hyperv-logo2.jpg) <!-- {"left" : 3.55, "top" : 3.7, "height" : 0.9, "width" : 3.16} -->
-
-![](../images/xen-logo.png) <!-- {"left" : 3.83, "top" : 4.75, "height" : 1.07, "width" : 2.59} -->
-
-![](../images/kvm-logo.png) <!-- {"left" : 3.66, "top" : 6.08, "height" : 0.86, "width" : 2.78} -->
-
+<img src="../../assets/images/logos/hyperv-logo-1.jpg" style="width:30%;" /> <!-- {"left" : 3.55, "top" : 3.7, "height" : 0.9, "width" : 3.16} -->
+&nbsp; &nbsp; <img src="../../assets/images/logos/xen-logo-1.png" style="width:20%;" /> <!-- {"left" : 3.83, "top" : 4.75, "height" : 1.07, "width" : 2.59} -->
+&nbsp; &nbsp; <img src="../../assets/images/logos/kvm-logo-1.png" style="width:30%;" />  <!-- {"left" : 3.66, "top" : 6.08, "height" : 0.86, "width" : 2.78} -->
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 
 This is just a list of the common Virtualization providers.   VMWare is the industry leader in the space, especially for deployment.  Windows Hyper-V is used in Microsoft-centric deployment environments.  Xen/KVM  and others are open-source technologies used in some environments.
 
 All basically work the same way – they the application team to create a VM Image, and then that image can be deployed at will to send the app (as long as licensing requirements are met).  Changes to the app can then go to the VM image, which can then be deployed properly.
 
-
 ---
 
+## VM Architecture
 
-## There is a Cost!
+<img src="../../assets/images/docker/virtualization-1-guest-os.png" style="width:40%;float:right;" />
 
- * Performance
-   - Virtual Hardware doesn’t run as well as bare-metal.
-   - It can be MUCH slower in some cases.
- * We end up with multiple redundant operating systems for each VM.
-   - Overall, though, it’s worth the cost:
-   - Our application VMs are sealed from each other
-   - Sealed from host OS
-   - We can copy VMs between machines without much problem.
- * Virtual Instances make better use of hardware
- * Large bare-metal servers can balance resources among several running VMs.
+* Virtualization works in layers:
+    - Hypervisor : that allows virtualization
+    - Virtual hardware: simulates hardware (CPU / memory  / disk)
+    - Guest OS: This is the actual operating system (linux / windows, MacOS ..etc)
+
+* There is a performance penalty for each VM having its own OS
+
+* However, this provides complete isolation for each VM
+    - We can run a windows VM and a linux VM on the same physical machine
+
+* Large bare-metal servers can balance resources among several running VMs --> better hardware utilization
 
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
-
-There is a cost to  virtualization. It's a cost that's worth it, but there is no denying that
-there's a cost. Today, we normally think of total cost of ownership. If we need more power,
-we can just make ourselves a bit of a bigger instance than what we would ordinarily expect
-on bare-metal.
-
-
----
-
-
-## The Problem with Virtualization
-
- * Notice how many Guest OS we have here.
- * Do we we really need a separate guest OS for each VM?
-
- ![](../images/replacethis-virtualization-guest-os.png) <!-- {"left" : 3.04, "top" : 2.36, "height" : 4.83, "width" : 4.16} -->
-
-
-
-
-Notes:
-
-Instructor Notes:
-
-Participant Notes:
+Participant Notes :
 
 This image indicates the problem with virtualization.  We are virtualizing an entire machine, including the Operating System.
 
@@ -485,42 +341,44 @@ The solution is often to run the most stripped down, lightweight OS possible in 
 
 The performance is one thing, but what about the time it takes to start?
 
+---
+
+# Containers
+
+<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:40%;"/>
 
 ---
 
+## VMs vs. Containers
 
-# Introducing Containers
+<img src="../../assets/images/docker/vm-vs-docker-1.png" style="width:60%;"/>
+
+---
 
 ## What are Containers
 
- * Containers are:
-   - OS Level Virtualization
-   - Application Code + Filesystem Image code = Packaged Together
- * So how is it different from Virtualization?
-   - Only the ”Userland” is virtualized
-   - Kernel is shared with the host
- * Both Host and Guest have to be the same OS (with some exceptions)
-   - Usually Linux
-   - Microsoft has worked with Docker to have Windows containers as well.
+<img src="../../assets/images/docker/vm-vs-docker-1.png" style="width:50%;float:right;"/>
 
- ![https://pixabay.com/en/container-cargo-freight-harbor-489933/](../images/container-489933_640.jpg) <!-- {"left" : 7.43, "top" : 5.39, "height" : 1.95, "width" : 2.6} -->
+* Only the "Userland" is virtualized
 
+* 'Application Code + Filesystem Image code' are packaged together
 
+* Kernel is shared with the host
 
+* Both Host and Guest have to be the same OS
+   - Usually Linux or Windows
 
 Notes:
-Instructor Notes:
 
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here we introduce containers.  Containers are a bit like a VM with no OS.  Strictly speaking, the containers DO have some of the OS, but NOT the OS kernel.
 
 In order for this to work, the kernel has to be the same.  In the past, this has meant using Linux, but in modern versions of Docker Windows containers are supported as well.
 
-
 ---
-
 
 ## Containers Versus Virtual Machines
 
@@ -534,17 +392,16 @@ In order for this to work, the kernel has to be the same.  In the past, this has
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 Here we compare the similarities and differences between the VM and the Container.  The main advantage of the container here is performance.  There’s minimal startup time for a container, and there’s no performance penalty to running on a container.
 
 Note here that the filesystem, libraries, and other dependencies are handled very similarly for containers versus VMs – in both cases they are on the guest image rather than on the host.
 
 ---
-
 
 ## Containers Versus Package Managers
 
@@ -557,18 +414,16 @@ Note here that the filesystem, libraries, and other dependencies are handled ver
 Notes:
 
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 Containers in some ways resemble package management systems like apt on Ubuntu/Debian and rpm/yum on RedHat.  In both cases, they are designed to help improve deployment, and are in a sense different solutions to the same problem.
 
 Package Managers, however, can and do have dependency issues, and are generally not suitable for deploying user developed applications across various platforms.
 
-
 ---
-
 
 ## Solving the Matrix from Hell
 
@@ -583,15 +438,14 @@ Package Managers, however, can and do have dependency issues, and are generally 
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 This slide follows up with the Matrix From Hell, showing that the same container is able to run on all of our production, test, QA, staging, and development platforms.
 
 ---
-
 
 ## When NOT to use Containers
 
@@ -606,10 +460,10 @@ This slide follows up with the Matrix From Hell, showing that the same container
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 There are a number of use cases NOT to use containers.  Here is some explanation:
 
@@ -624,30 +478,29 @@ If we have an application that is tightly coupled to its data, then containers w
 Security: Running untrusted code is not a good use case for containers.  While containers do make it more secure to do so than without the container, code run in the container which involves a kernel exploit will then affect the host kernel, and with it the running kernel for all other containers.    On the other hand, an exploit running in a VM can at worst give the attacker control of the kernel within the VM itself, and in most cases will leave the host untouched.
 
 
-
 ---
 
-
-# Container History
-
----
 ## History of Containers
- * 1982: Unix ”chroot” command: Allows filesystem-level isolation
+
+<img src="../../assets/images/docker/3rd-party/business-cargo-cargo-container-262353.jpg" style="width:30%;float:right;" />
+
+* 1982: Unix ”chroot” command: Allows filesystem-level isolation
     - Allows process and children access to an isolated filesystem.
     - Users, Processes, network, and other resources shared.
- * 2000: BSD “jail” command: 
+* 2000: BSD “jail” command: 
     - Allows filesystem, user, processes, and network isolation
     - Inspired Solaris Zones, which combines jail with dedicated ZFS filesystem  
-
- ![](../images/business-cargo-cargo-container-262353.jpg) <!-- {"left" : 2.76, "top" : 4.07, "height" : 3.16, "width" : 4.73} -->
-
-
+* 2005: Linux namespaces: Process isolation
+    - Segregate processes into groups
+    - Processes can’t talk between groups
+* 2007: Linux Cgroups: Resource Isolation
+    - Control mem, CPU, resource allocation for running processes and groups
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 There is a long history of container building blocks in Unix systems.  It's important for
 learners to remember that containers didn't come specifically out of nowhere
@@ -671,22 +524,6 @@ requires some sort of exploit, it's a bit like gaining root access to a computer
 Jails are good for running code which is not completely trusted, but it's not
 as secure as running inside a VM.
 
----
-
-## History of Containers (Continued)
-
- * 2005: Linux namespaces: Process isolation
-    - Segregate processes into groups
-    - Processes can’t talk between groups
- * 2007: Linux Cgroups: Resource Isolation
-    - Control mem, CPU, resource allocation for running processes and groups
-
-Notes:
-
-Instructor Notes:
-
-Participant Notes:
-
 Linux namespaces are design for process isolation.  This means that we can
 develop groups of processes, each with their own PIDs, names, etc, and the
 processes in one group cannot see or communicate with those in another group.  It
@@ -698,31 +535,29 @@ allowing us to be able to much more strictly partition resources such as memory,
 CPU, I/O devices, much in the same way that we would partition for a VM. However,
 Cgroups are NOT VMs, just merely a way to control existing process's resources.
 
-
 ---
-
 
 ## Linux Containers
 
-![https://s24255.pcdn.co/wp-content/uploads/2014/07/LXC.png](../images/LXC.png)
+<img src="../../assets/images/docker/3rd-party/LXC.png" style="width:20%;float:right;" />
 
- * 2008: Linux Containers (LXC): Combines together:
+* 2008: Linux Containers (LXC): Combines together:
     - chroot: (filesystem isolation) +
     - Namespaces (process isolation) +
     - Cgroups (resource isolation)
 
- * 2013: LXC + Virtualization extensions
+* 2013: LXC + Virtualization extensions
     - Allows hardware support for virtualized namespaces
 
- * 2014: LXC + OverlayFS or UnionFS
+* 2014: LXC + OverlayFS or UnionFS
     - Allows for multiple filesystems to be combined to one virtualized filesystem
     - Allows more practical overlay of containers than chroot
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Linux Containers, or LXC is really the combination of chroot, namespaces, 
 and Cgroups.  These three things together make up Linux Containers, which are
@@ -746,26 +581,30 @@ put many  filesystems on top for each other to make a virtual filesystem for
 the container.
 
 ---
+
 ## Docker
 
-![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-horizontal.png)
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:30%;float:right;" />
 
- * 2013: Docker released
-   - Docker combines together the following:
+* 2013: Docker released
+
+* Docker combines together the following:
      - Namespaces
      - Cgroups
      - LXC
      - OverlayFS
- * Docker created a new container format
+
+* Docker created a new container format
    - Docker Container format now the standard container format
- * Developer Tools
+
+* Developer Tools
    - Docker has developed developer toolchain to use its container format.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Docker has become the de-facto standard component for containers.  Interestingly,
 prior to Docker's release, container management systems like Mesos and Kubernetes 
@@ -786,3 +625,27 @@ which is intentionally similar to Makefiles.
 
 ---
 
+## Dockerizing Applications
+
+* Here we are packaging applications into containers.
+
+* Multiple containers can run on a same machine
+
+* They each have their own application code and file system
+
+* The containers are isolated from each other
+
+* But they share host-os (linux)
+
+<img src="../../assets/images/docker/dockerizing-applications.png" style="width:50%;" />
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?

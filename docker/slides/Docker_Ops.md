@@ -97,7 +97,7 @@ Participant Notes
 
 ## Container Logging
 
-![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-horizontal.png)
+![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png)
 
 * Docker logs commmand:
 

@@ -3,7 +3,7 @@
 
 ## Container Health
 
-![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-horizontal.png)
+![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png)
 
  * How do we know if a container is healthy?
  * Docker doesn't interfere with conatiner
