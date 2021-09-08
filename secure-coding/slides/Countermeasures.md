@@ -601,9 +601,20 @@ String custname = request.getParameter("customerName");
 - Similar to Synchronizer Tokens but the token is not kept on the server
 - A token is saved as a cookie and also in a hidden field on each form
 - For each request, the cookie is checked to ensure it is the same as submitted token in the form
+- A related countermeasure is to keep a copy of the token in the HTTP header
 
 ---
 
-## Header to Cookie
+## Verifying Origin
 
-- Another variation where 
+- For each request, the Origin and/or Referrer headers are examined
+- These can only be set by the browser
+- If they are both missing, the request should be blocked
+- These headers can be used to identify the source of the request
+- If the origin of the request does not match the target, then the request is rejected
+- Eg. A web banking site www.bank.com is the target
+  - A request is received originating from www.evil.org
+  - This is blocked
+- The use of VPNs, proxies and firewalls can complicate this approach
+
+---
