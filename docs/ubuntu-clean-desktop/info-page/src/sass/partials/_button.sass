@@ -1,0 +1,49 @@
+.button
+  display: inline-block
+  line-height: 1
+  text-decoration: none
+  border-width: 1px
+  border-style: solid
+  border-color: $color_primary
+  background-color: $color_primary
+  color: $color_white
+  padding: 0.625rem 1rem;
+  color: $color_white
+  font-size: 1rem
+  border-radius: 3px
+  user-select: none
+  appearance: none
+  text-transform: uppercase
+  transition: background-color .3s linear, padding .3s linear, border-color .3s linear
+  &:link
+    color: $color_white
+  &:hover
+    background-color: $btn_hover_bg
+    border-color: $btn_hover_bg
+    padding-left: 1.5rem
+    padding-right: 1.5rem
+    color: $color_white
+  &.button-cta
+    background-color: $color_complement
+    border-color: $color_complement
+    padding: 1rem 2rem;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.215)
+    &:hover
+      background-color: $btn_hover_bg
+      border-color: $btn_hover_bg
+      padding-left: 3rem
+      padding-right: 3rem
+  &.button-alt
+    background-color: $color_complement
+    border-color: $color_complement
+    &:hover
+      background-color: $btn_hover_bg
+      border-color: $btn_hover_bg
+  &:active
+    transform: translateY(2px)
+    box-shadow: none
+
+  + .button
+    @media only screen and (min-width: $tablet_max)
+      margin-left: 1rem
+

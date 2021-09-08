@@ -1,0 +1,95 @@
+=ring($color: #fff, $dimension: 30px, $border: 5px)
+  width: $dimension
+  height: $dimension
+  border: $border solid $color
+  border-radius: 50%
+
+=fly_ring($left: auto, $right: auto, $top: auto, $bottom: auto, $transX: -50%, $transY: -50%, $index: 1)
+  position: absolute
+  @if $left != auto
+    left: $left
+  @if $right != auto
+    right: $right
+  @if $top != auto
+    top: $top
+  @if $bottom != auto
+    bottom: $bottom
+  transform: translate($transX, $transY)
+  z-index: $index
+
+=pseudo_el($content:'')
+  content: $content
+  speak: none
+
+=left_radius($val: 5px)
+  border-top-left-radius: $val
+  border-bottom-left-radius: $val
+
+=right_radius($val: 5px)
+  border-top-right-radius: $val
+  border-bottom-right-radius: $val
+
+=top_radius($val: 5px)
+  border-top-left-radius: $val
+  border-top-right-radius: $val
+
+=bottom_radius($val: 5px)
+  border-bottom-left-radius: $val
+  border-bottom-right-radius: $val
+=clearfix
+  &:after
+    clear: both
+    content: " "
+    display: table
+
+
+// Responsiveness
+
+=from($device)
+  @media screen and (min-width: $device)
+    @content
+
+=until($device)
+  @media screen and (max-width: $device - 1px)
+    @content
+
+=mobile
+  @media screen and (max-width: $tablet - 1px)
+    @content
+=mobile-small
+  @media screen and (max-width: $mobile)
+    @content
+=mobile-max-only
+  @media screen and (min-width: $mobile + 1px) and (max-width: $tablet - 1px)
+    @content
+=tablet
+  @media screen and (min-width: $tablet), print
+    @content
+
+=tablet-only
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
+    @content
+
+=touch
+  @media screen and (max-width: $desktop - 1px)
+    @content
+
+=desktop
+  @media screen and (min-width: $desktop)
+    @content
+
+=desktop-only
+  @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px)
+    @content
+
+=widescreen
+  @media screen and (min-width: $widescreen)
+    @content
+
+=widescreen-only
+  @media screen and (min-width: $widescreen) and (max-width: $fullhd - 1px)
+    @content
+
+=fullhd
+  @media screen and (min-width: $fullhd)
+    @content

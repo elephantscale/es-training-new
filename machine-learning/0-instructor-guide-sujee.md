@@ -1,6 +1,15 @@
-# Insructor Guide: Machine Learning -- Sujee
+# Instructor Guide: Machine Learning -- Sujee
 
-## Timings
+## Before Class
+
+- Prepare a background survey.  On Google or Survey Monkey
+- Prepare a pre/post tests if required
+
+### Lab Env:
+
+We have been using Google Colab successfully.  No need to spin up VMs
+
+## Teaching / Timings
 
 ### day 1
 - administer PRE test

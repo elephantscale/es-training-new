@@ -1,0 +1,94 @@
+.hero
+  // @media only screen and (min-width: $desktop_medium)
+  //   min-height: 430px
+  //   min-height: 50vh
+  background-color: $color_primary_shade1
+  background-image: linear-gradient(-45deg, rgba(39, 163, 11, 0.25) 15%, transparent)
+  background-repeat: no-repeat
+  text-align: center
+  padding: 20px 1.5rem
+  position: relative
+  overflow: hidden
+  @media only screen and (min-width: $tablet_max)
+    &:before
+      +pseudo_el
+      +ring($color_triad_yellow, 10vw, 1vw)
+      +fly_ring($left: 0, $top: 0, $transX: -30%, $transY: -30%)
+    &:after
+      +pseudo_el
+      +ring(rgba(255, 255, 255, 0.38), 7vw, 0.5vw)
+      +fly_ring($bottom: 0, $left: 20%, $transX: -50%, $transY: 30%)
+    .ring1
+      +ring(rgb(61, 200, 255), 12vw, 5px)
+      +fly_ring($bottom: 0, $right: 3%, $transX: 50%, $transY: -40px)
+  .branding
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    padding: 0 10%
+    img
+      max-width: 150px
+    h1
+      font-size: 1.5rem
+    @media only screen and (min-width: $tablet_medium)
+      flex-direction: row
+      img
+        width: 180px
+      .logo
+        margin-right: auto
+
+  .hero-content
+    padding: 20px 0
+    text-align: center
+    max-width: $content_width
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+    .social-links
+      margin: 0 0 0 25px
+      a
+        display: inline-block
+        &.github:hover
+          #white-bg
+            fill: #3dc8ff
+      svg
+        width: 32px
+        height: 32px
+
+  .ring
+    pointer-events: none
+
+
+  h1, h2, h3
+    line-height: 0.9
+    color: lighten($color_white, 3%)
+    font-weight: 100
+    line-height: 1.1
+  h1
+    font-size: 4rem
+    font-weight: 300
+    @media only screen and (min-width: $desktop_medium)
+      margin-bottom: 0
+    @media only screen and (max-width: $tablet)
+      font-size: 2.5rem
+      line-height: 1.3333
+
+  h2
+    font-size: 2.5rem
+    @media only screen and (max-width: $tablet)
+      font-size: 1.5rem
+      line-height: 1.5
+  .button.button-cta
+    &:hover
+      padding-left: 4rem
+      padding-right: 4rem
+    @media only screen and (max-width: $tablet)
+      padding-top: 0.75rem
+      padding-bottom: 0.75rem
+
+
+

@@ -1,0 +1,36 @@
+#!/bin/bash
+
+docker_deploy_tag="prod"
+git_deploy_tag="prod"
+
+## make logs dir and clear it
+rm -rf /home/ubuntu/logs/ && mkdir -p /home/ubuntu/logs && chown -R ubuntu:ubuntu /home/ubuntu/logs
+
+## update ~/scripts/docker-es-training
+sudo -S -u ubuntu -i /bin/bash -l -c "\
+        cd /home/ubuntu/scripts/docker-es-training ;  \
+        git fetch origin --tags; git checkout --force ${git_deploy_tag} ; \
+        git pull ; echo ; git status ; \
+        echo"  > /home/ubuntu/logs/docker-estraining-repo-update.out 2>&1
+
+# set password to instance id
+password=$(/bin/bash /home/ubuntu/scripts/docker-es-training/scripts/get-password.sh 2> /dev/null )
+/home/ubuntu/scripts/docker-es-training/scripts/set-passwords.sh   "$password" > /home/ubuntu/logs/set-passwords.out 2>&1
+
+## update VNC password
+mkdir -p /home/ubuntu/.vnc
+echo $password | vncpasswd -f > /home/ubuntu/.vnc/passwd
+sudo chown -R ubuntu:ubuntu /home/ubuntu/.vnc
+chmod 0600 /home/ubuntu/.vnc/passwd
+
+# Start VncServer
+sudo -S -u ubuntu -i /bin/bash -l -c '/usr/bin/vncserver :1  -geometry 1400x900 -depth 24 -localhost yes' | sudo tee  /home/ubuntu/logs/vnc.log  2>&1 &
+
+# start noVNC
+/home/ubuntu/apps/noVNC/utils/novnc_proxy --listen 80 --vnc localhost:5901  --cert /etc/ssl/novnc.pem --idle-timeout 0 --timeout 0  > /home/ubuntu/logs/novnc.log 2>&1 &
+
+
+## cleanup ssh
+#rm -f /home/ubuntu/.ssh/known_hosts
+
+exit 0

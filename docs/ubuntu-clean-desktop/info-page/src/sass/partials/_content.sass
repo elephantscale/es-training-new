@@ -1,0 +1,67 @@
+.section-content
+  text-align: center
+  padding-bottom: 30px
+
+  @media only screen and (min-width: $mobile_max)
+    .box:first-of-type
+      +left_radius
+    .box:last-of-type
+      +right_radius
+  @media only screen and (min-width: $tablet_max)
+    .half
+      + .half > .row > .box:nth-child(1)
+        border-left: 0
+        border-radius: 0
+  @media only screen and (max-width: $mobile)
+    .box:first-of-type
+      +top_radius
+    .box:last-of-type
+      +bottom_radius
+
+
+
+  .box
+    background-color: $color_white
+    border: 1px solid #ddd
+    @media only screen and (min-width: 500px)
+      + .box
+        border-left: 0
+    @media only screen and (max-width: $mobile)
+      + .box
+       border-top: 0
+
+  .content-box
+    background-color: $color_white
+    border: 1px solid #ddd
+    border-radius: 5px
+    text-align: center
+
+
+  .card
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    padding: 20px 0;
+    .card-content
+      padding: 0.375rem 0 0
+    h3
+      margin: 0.6725rem 0
+      font-weight: 400
+      color: lighten($color_black, 50%)
+    img
+      width: auto
+      max-height: 50px
+      max-width: 95%
+    .button
+      font-size: 0.85rem
+      margin-top: 5px
+      margin-bottom: 5px
+
+  @media only screen and (max-width: 930px)
+    .half
+      flex-basis: 100%
+  @media only screen and (min-width: 931px)
+    .half:first-of-type
+      .box:last-of-type
+        +right_radius(0)

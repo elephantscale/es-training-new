@@ -1,0 +1,67 @@
+main
+  background-color: darken($color_white, 3.75%)
+  max-width: $content_width + 44px
+  margin-left: auto
+  margin-right: auto
+  padding: 40px
+  +mobile
+    padding: 0 20px 40px
+  +tablet
+    padding: 0 22px 40px
+.section
+  display: flex
+  flex-direction: column
+  &.fat
+    padding: 90px 0 90px
+
+.row
+  max-width: $content_width
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  > *
+    flex: 1 0 200px
+    @media only screen and (max-width: $mobile)
+     flex-basis: 100%
+
+
+.section-title
+  margin: 30px auto 10px
+
+.container
+  & > *
+    padding-left: $gapper / 2
+    padding-right: $gapper / 2
+  &.gapless
+    margin-left: 0
+    margin-right: 0
+    & > *
+      margin: 0
+      padding-left: 0
+      padding-right: 0
+  &.centered
+    justify-content: center
+  &.vcentered
+    align-items: center
+  +tablet
+    margin-left: -$gapper / 2
+    margin-right: -$gapper / 2
+    display: flex
+    & > *
+      flex: 1
+    & > .is-30
+      width: 30%
+      flex: none
+    & > .is-40
+      width: 40%
+      flex: none
+    & > .is-60
+      width: 60%
+      flex: none
+    & > .is-70
+      width: 70%
+      flex: none
+  +desktop
+    display: flex
+
+
