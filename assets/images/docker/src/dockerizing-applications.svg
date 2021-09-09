@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="2174 -3839 1535 1013" width="1535" height="1013">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="80" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-09 08:03:28 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_48">
+        <path d="M 2212 -3831 L 3671 -3831 C 3687.5685 -3831 3701 -3817.5685 3701 -3801 L 3701 -2864 C 3701 -2847.4315 3687.5685 -2834 3671 -2834 L 2212 -2834 C 2195.4315 -2834 2182 -2847.4315 2182 -2864 L 2182 -3801 C 2182 -3817.5685 2195.4315 -3831 2212 -3831 Z" fill="white"/>
+        <path d="M 2212 -3831 L 3671 -3831 C 3687.5685 -3831 3701 -3817.5685 3701 -3801 L 3701 -2864 C 3701 -2847.4315 3687.5685 -2834 3671 -2834 L 2212 -2834 C 2195.4315 -2834 2182 -2847.4315 2182 -2864 L 2182 -3801 C 2182 -3817.5685 2195.4315 -3831 2212 -3831 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="32.0,32.0" stroke-width="16"/>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(2719.918 -2985)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="80" font-weight="700" fill="#250060" x="0" y="80">Host (Linux)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <path d="M 2800.731 -3690.279 C 2906.173 -3619.9848 2906.173 -3506.0152 2800.731 -3435.721 C 2695.2896 -3365.4262 2524.3354 -3365.4262 2418.894 -3435.721 C 2313.4519 -3506.0152 2313.4519 -3619.9848 2418.894 -3690.279 C 2524.3354 -3760.5738 2695.2896 -3760.5738 2800.731 -3690.279" fill="#ebdea6"/>
+      </g>
+      <g id="Graphic_50">
+        <path d="M 3456.9186 -3690.279 C 3562.3606 -3619.9848 3562.3606 -3506.0152 3456.9186 -3435.721 C 3351.477 -3365.4262 3180.523 -3365.4262 3075.0814 -3435.721 C 2969.6394 -3506.0152 2969.6394 -3619.9848 3075.0814 -3690.279 C 3180.523 -3760.5738 3351.477 -3760.5738 3456.9186 -3690.279" fill="#e5a92e"/>
+      </g>
+      <g id="Graphic_51">
+        <path d="M 2326.3289 -3244 L 3556.671 -3244 C 3562.194 -3244 3566.671 -3239.523 3566.671 -3234 L 3566.671 -3050 C 3566.671 -3044.477 3562.194 -3040 3556.671 -3040 L 2326.3289 -3040 C 2320.806 -3040 2316.3289 -3044.477 2316.3289 -3050 L 2316.3289 -3234 C 2316.3289 -3239.523 2320.806 -3244 2326.3289 -3244 Z" fill="#aa97fe"/>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(2710.494 -3178.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Docker Runtime</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <text transform="translate(2390.3423 -3624)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="78.97949" y="50">Container 1</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">(App 1 + Libraries)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <text transform="translate(3046.5298 -3624)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="78.97949" y="50">Container 1</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">(App 1 + Libraries)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
