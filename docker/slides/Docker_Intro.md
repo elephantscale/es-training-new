@@ -1,67 +1,67 @@
 # Docker Introduction
+
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:40%;"/>
 ---
 
-# Introducing Docker
+## Docker
+
+* Docker was introduced to the world with a very little fanfare by Solomon Hykes, founder and CEO of a company then called dotCloud, in a five-minute [lightning talk](https://www.youtube.com/watch?v=wW9CAH9nSLs) at the Python Developers Conference in Santa Clara, California on March 15, 2013  ([Source](https://learning.oreilly.com/library/view/docker-up/9781492036722/ch01.html#promise-of-docker))
+
+* Since then, it has become one of the most influencing technologies for software development and deployment
+
+* Docker at the core uses [Linux Containers](https://linuxcontainers.org/), which has been available publicly since 2008
+
+* How ever, the way Docker combined multiple technologies and made them easy to use, is one of the reasons it became so popular, and made **Docker more powerful than sum of its all parts**
+
+* [Docker.com](https://www.docker.com/)  ([formerly dotCloud](https://www.docker.com/docker-news-and-press/dotcloud-inc-now-docker-inc)) is the company that is commercially supporting Docker
 
 ---
 
 ## What is Docker?
 
-![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png)
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:30%;float:right;"/>
 
-* Docker is the current industry standard container format.
-* Docker (the company) also makes developer tools:
-   - Docker Desktop for Windows
-   - Docker Desktop for Mac
-   - Docker for Linux
-   - Docker EE (Enterprise Edition): Non-Free
-* Docker also has server-side container frameworks for Linux and Windows
-* Windows versions run on top of Hyper-V
+* Docker is the current **industry standard container format**
+    - Allows package and ship software in **self-contained containers**
+    - Provides **isolation without performance hit**
+
+* **What docker is NOT**
+    - It is _not a virtualization platform_ like VMWare or KVM
+    - It is _not a cloud platform_ like OpenStack
+    - It is _not a configuration management tool_ like Chef, Puppet
+    - It is _not a orchestration tool_ like Mesos, Kubernetes
+    - It is _not a virtualization tool_ like VirtualBox, Vagrant
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Docker's name is almost synonymous with containers.   While arguably Docker's contribution
 is not the largest or the most significant to the container ecosystem, it is the one that
 is closest to the developer -- as the developer relies on Docker tools to create container
-application images. 
+application images.
 
 ---
 
-##  Docker uses the Host Kernel
-* Docker will use the host kernel on Linux, and thus run natively.
-* What about Docker Desktop Windows and Mac (Developer) Versions of Docker?
-  - Windows and Mac versions run a virtualized Linux kernel in a VM
-  - Only the kernel runs in the VM.  The container runs separately.
-  - In Windows, the VM is in Hyper-V (and thus requires Hyper-V to be installed)
-  - On Mac, the VM runs in Apple’s Hypervisor Framework which is usually already enabled.
-* Windows Server Native Windows Kernels
-  - Windows Server Applications can run in Windows Native Containers on Windows Server
-  - No VMs required. (although you may want a VM for security reasons)
-  - Not yet very common, but growing.
+## Docker Architecture
 
+* Docker uses the host kernel on Linux, and thus run natively
 
-Notes:
+* Unlike virtual machines, docker containers do not have their own guest OS, **they share the host OS**
 
-Instructor Notes:
+* Containers run **isolated, in user space**
 
-Participant Notes:
+* References: [1](https://www.docker.com/resources/what-container)
 
-It's important to understand how containers work.  They generally use the host kernel. We say
-generally because in fact on non-Linux platforms the kernel is usually virtualized.  
-
-The situation is a little complicated when it comes to Windows, because there are multiple 
-incompatible Windows kernels for various flavors of Windows.  Because of that, most Windows
-"Native" containers run in virtualized mode except in production.
+<img src="../../assets/images/docker/docker-architecture-1.png" style="width:70%;"/>
 
 ---
 
 ## Docker Desktop for Windows (Developer)
 
-![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png)
+<img src="../../assets/images/logos/windows-logo-1.png" style="width:30%;float:right;"/>
 
  * Docker Desktop for Windows has the following requirements:
    * Windows 10 Professional 64 Bit (or Higher)  (not Home, Not Home Pro)
@@ -72,15 +72,11 @@ incompatible Windows kernels for various flavors of Windows.  Because of that, m
    * Windows Users unable to run Docker Desktop for Windows can run in Docker Toolbox
    * Toolbox requires Oracle VirtualBox for Virtualization.
 
-![http://www.virtualizationsoftware.com/wp-content/uploads/2013/04/hyperv-logo2.jpg](../images/windows-310290_1280.png) <!-- {"left" : 7.49, "top" : 0.75, "height" : 1.67, "width" : 2.81} -->
-
-
-
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 Docker Desktop for Windows has fairly steep requirements.
 
 Why does Docker require Hyper-V?  Because all containers on Windows require virtualization. Even windows containers require virtualization because those containers require Windows Server kernels which are different from Windows 10 (client) kernels.
@@ -91,10 +87,11 @@ Hyper-V will require that Virtualization extensions be turned on in the BIOS.  T
 
 Docker Toolbox can be used together with Oracle VirtualBox to run Docker containers on older versions of windows such as 8.1 or 7 or on Home versions of Windows 10.  However, it’s a pretty painful developer experience, so it’s not recommended.
 
-
 ---
 
 ## Docker and Windows Server
+
+<img src="../../assets/images/logos/windows-server-logo-1.png" style="width:30%;float:right;"/>
 
 * Docker for Windows Server is designed for App deployment rather than Development
   - Developers should use Docker Desktop for Windows instead.
@@ -107,17 +104,11 @@ Docker Toolbox can be used together with Oracle VirtualBox to run Docker contain
   - Able to run native containers without virtualization
   - Minimal Performance Penalty
 
-![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png) <!-- {"left" : 6.97, "top" : 6.62, "height" : 0.67, "width" : 2.58} -->
-
-
-![http://www.virtualizationsoftware.com/wp-content/uploads/2013/04/hyperv-logo2.jpg](../images//hyperv-logo2.jpg) <!-- {"left" : 6.93, "top" : 3.78, "height" : 0.67, "width" : 2.35} -->
-
-
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Native Windows Containers are not all that common at this time, but Microsoft is pushing them because they
 realize that the Windows platform needs to be have this capability to continue to be relevant as a server-side
@@ -126,18 +117,22 @@ platform.
 ---
 
 ## Docker and WSL 2
- * Microsoft is including a full Linux kernel in the new Windows Subsystem For Linux 2
-   - A bit of a "hell freezes over" moment considering history!
-   - But exciting news nontheless.
-   - THis is an **optional** install intended for developers only.
- * This allows Windows users to install a full Ubuntu (or other distro) on top of Windows.
- * This also allows Docker Users to run a native Linux conatiner on Windows (without using Hyper-V)!
-   - with the performance advantages of running native.
- * This is very much "beta" and "bleeding edge" 
- * Docker has a special Docker Desktop for WSL2 available for this.
-   - It is a different product than Docker Desktop for Windows, and **beta** software
-   - The two can be installed in parallel. 
- * This isn't recommended right now for most users until it's ready for prime-time 
+
+<img src="../../assets/images/docker/3rd-party/windows-wsl2.jpg" style="width:20%;float:right;"/>
+
+* Microsoft is including a full Linux kernel in the new Windows Subsystem For Linux 2
+    - A bit of a "hell freezes over" moment considering history!
+    - This is an **optional** install intended for developers only.
+
+* This allows Windows users to install a full Ubuntu (or other distro) on top of Windows.
+
+* This also allows Docker Users to run a native Linux conatiner on Windows (without using Hyper-V)!   - with the performance advantages of running native.
+
+* Docker has a special Docker Desktop for WSL2 available for this.
+    - It is a different product than Docker Desktop for Windows, and **beta** software
+    - The two can be installed in parallel
+
+* [Docker Desktop WSL 2 backend](https://docs.docker.com/desktop/windows/wsl/)
 
 ---
 
@@ -152,41 +147,37 @@ platform.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 This slides shows the relative use cases of various use cases on Windows. Docker realizes that Windows is its most common platform for development, even for applications 
 that will not be deployed on Windows.  Because of this, the Windows platform has the richest number of options.  Windows users need to choose between developing 
 "native" Windows server containers or Linu containers.  The advantage of the native containers is that there is minimal delay in starting a native container,
 similar to what one would expect on Linux platforms.
 
-
 ---
-
 
 ## Docker Desktop on Mac (Developer)
 
-![https://www.docker.com/sites/default/files/horizontal.png](../../assets/images/logos/docker-logo-4-horizontal.png)
+<img src="../../assets/images/logos/apple-logo-1.png" style="width:20%;float:right;"/>
 
 * Docker Desktop on Mac is only supported as a development platform.
-  - There are no ”native” mac containers as there are on Linux and Windows
+  - There are no "native" mac containers as there are on Linux and Windows
+
 * Docker for Mac uses only Linux containers
   - Windows containers can be run entirely inside a VM (but this is not common)
   - Linux Containers use a VM for the Linux kernel only (much like Windows)
+
 * Docker for Mac uses Apple’s VM Hypervisor
   - Note the Mac's BSD-based darwin kernel is not Linux and therefore must run a virtualized Linux Kernel.
-  - Usually turned on factory default (unlike most PCs)
-  - No special actions required.
-
-![http://www.thriftysigns.com/apple-logo-decal-sticker-apple-logo](../images/apple-logo-decal-sticker-apple-logo-500x500.png) <!-- {"left" : 0.59, "top" : 5.02, "height" : 1.8, "width" : 1.8} -->
-
+  - Usually turned on factory default (unlike most PCs), No special actions required.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Apple is an extremely popular platform for development, so it comes as no surprise that Docker has versions for this platform.  As Apple has no real presence in the 
 data center, it is strictly for development.
@@ -198,36 +189,76 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 
 ---
 
-## Lab 1: Installing Docker
-
- * docker-labs/01-install/README.md
-
-Notes:
-
-Instructor Notes:
-
-Participant Notes:
+# Docker Architecture
 
 ---
 
-# Docker Hub and Container Registries
+## Docker Architecture
 
-## What is Docker Hub?
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:90%;"/>
 
-![https://www.docker.com/sites/default/files/horizontal.png](../images/docker-hub-logo.png)
+---
 
- * Docker Hub is a registry of containers
- * Think "GitHub" for containers
- * Thousands of Containers Available
- * We rarely start from scratch
-   - Use an image from Docker Hub!
+## Docker Images
 
+* **Docker Images** can be considered 'templates'
+
+* Images can be hosted on registries
+
+* Here we see images for Ubuntu, Nginx ..etc
+
+* We only need  **one copy of image on host**
+
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:70%;"/>
+
+---
+
+## Docker Containers
+
+* **Docker Containers** are instances of images
+
+* We can run multiple containers for a same image
+    - Here we see 2 ubuntu instances and 2 nginx instances running
+
+* Containers run in isolation
+
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:70%;"/>
+
+---
+
+## Docker Clients
+
+* Docker service/daemon runs on host computers
+
+* We interact with docker daemon using client
+
+* Here we see the client issuing commands (build/pull/run)
+
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:70%;"/>
+
+---
+
+## Container Registry
+
+<img src="../../assets/images/logos/docker-hub-logo-1.png" style="width:30%;float:right;"/>
+
+* **Registries** are like _App Store_ for docker images
+
+* **Docker Hub** is a popular registry of containers
+
+* Developers can publish and share images with the world
+
+* Thousands of Containers Available
+
+* We rarely start from scratch
+
+- Use an image from Docker Hub!
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 If Docker's container image format is its first great contribution, Docker Hub and similar container registries are the second. The fact that users can
 share and get container images from Docker Hub is a huge catalyst to containers, as it allows code to be shared across multiple teams.  More importantly,
@@ -237,18 +268,28 @@ We will see later how Docker's build process allows us to leverage other people'
 
 ---
 
-## Container Registries
+## Other Container Registries
 
- * Docker Hub is public.
- * Your company data is **NOT**.
- * You may want to have your own container registry.
- * But we may still use Docker Hub as well.
+* **Docker Hub** is the most popular registry
+    - Like Github, has free and premium accounts
+    - Has individual and organizational accounts
+
+* Cloud vendors have their own registries as well:
+    - Google Cloud : [Google Container Registry (GCR)](https://cloud.google.com/container-registry)
+    - Amazon Cloud [Elastic Container Registry](https://aws.amazon.com/ecr/)
+    - Microsoft [Azure Container Registry (ACR)](https://aws.amazon.com/ecr/)
+
+* If you are running in the cloud, use the cloud providers' registries
+    - Much higher bandwidth for publishing / downloading images --> faster upload/download times
+    - You won't incur bandwidth charges
+
+* Enterprises can host their own private registries as well
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Corporate environments invariably have Docker Hub blocked, much like Maven repository coordinate and Github itself. Because of this, companies are able to use
 private container registries.  In fact, this is encouraged in Docker and rarely will someone attempt to put something out on public Docker Hub unless there is a
@@ -259,74 +300,141 @@ a lot of sense. Many corporate container registries will also mirror some or all
 
 ---
 
+## Group Lab: Exploring Docker Hub
 
-## Docker Pull
- * Typing `docker pull` will download a container.
- * In the lab, we will use a container called `alpine`:
-   - Ultra-lightweight Linux 
-   - 4MB in Size (tiny).
+<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-```bash
-docker pull alpine
-```
+* **Overview:**
+  - Explore DockerHub
+  - Find some popular images
+
+* **Approximate run time:**
+  - 10 mins
+
+* **Instructions:**
+  - Look for these images
+  - Operating systems: Ubuntu, alpine, busybox
+  - Applications: nginx, httpd
+  - Datastores : mysql, Oracle, redis
+  - Development systems: python, jupyter, tensorflow
+  - Discuss any other interesting images you find
+  - Note the 'download count' for these images
 
 Notes:
 
-Instructor Notes:
+---
 
-Participant Notes:
+# Working with Docker
+
+---
+
+## Lab Prep
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Get access to lab environment
+
+* **Approximate run time:**
+  - 10 mins
+
+* **Instructions:**
+  - Instructor please distribute the lab environment details
+  - Demo accessing lab machine
+
+Notes:
+
+---
+
+## Lab-1: Installing Docker
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Install docker
+
+* **Approximate run time:**
+  - 15 mins
+
+* **Instructions:**
+  - 01-Install
+  - Follow the instructions for your platform
+
+Notes:
+
+---
+
+## Downloading Docker Images
+
+* Before we run a docker container, we need a local copy of the image
+
+* Docker images are hosted at registries like Dockerhub
+
+* **`docker pull`** will download an image from registry to local machine
+
+* Let's pull `alpine` - an ultra-lightweight Linux image, just 5MB in size (tiny).
+
+```bash
+$   docker pull alpine
+```
+
+<img src="../../assets/images/docker/docker-pull-1.png" style="width:60%;"/>
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
 
 Anyone who has used Github and Git will find the Docker syntax easy to remember.  Instead of using a copy of the source code repository, Docker will
 store the binary container image (usually a hash) in a local place on the user's hard drive.
 
 ---
 
+## Check Images
 
-# Docker Commands
+* **`docker images`** will show images we have _locally_
 
-## Docker container ls (list)
- * typing `docker continer ls` will **list** your containers
- * It will only show **running** containers
- * Stopped containers say `docker ls -a'
-
-```console
- $ docker container ls
-
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-hello-world         latest              e38bc07ac18e        5 weeks ago         1.85kB
-alpine              latest              3fd9065eaf02        4 months ago        4.15MB
+```bash
+$   docker images
 ```
 
-Notes:
+```text
+REPOSITORY                  TAG                  IMAGE ID       CREATED         SIZE
 
-Instructor Notes:
-
-Participant Notes:
-
-Running "docker ls" will show all the containers that you currently have.  Note that you may see containers show up that aren't in fact direclty being used.
-That's because the docker pull will recursively bring down containers and store them.
-
-Note that every time you start a container, you will continue to see that container in docker ls.   Do not be alarmed, because only the differences between
-the original image and the stopped container will be stored.  
+alpine                      latest               14119a10abf4   12 days ago     5.6MB
+ubuntu                      focal                f643c72bc252   9 months ago    72.9MB
+nginx                       latest               f6d0b4767a6c   7 months ago    133MB
+```
 
 ---
 
+## Running a Container
 
-## Docker Run
- * We can run a docker container with `docker run`.
- * Example: running alpine
+* **`docker run`** is used to run containers
 
 ```bash
-docker container run alpine /bin/ash
+$   docker run alpine ls
 ```
- * This will run alpine and start a shell
- * Alpine doesn't have "bash" -- too big!
+
+* This will run `alpine` image and run `ls` command inside the container
+
+* Here is the output
+
+```console
+bin    etc    lib    mnt    proc   run    srv    tmp    var
+dev    home   media  opt    root   sbin   sys    usr
+```
+
+* The container will exit immediately
+
+* Containers are designed to run a job and terminate
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Docker containers can be started with "run" -- this is because it's better to look at running a container as more like an app than a VM.  
 
@@ -336,27 +444,40 @@ application.
 
 ---
 
-
-
 ## Running a Shell
- * We don't *typically* ssh to our container.
- * We simply run a shell in the container
 
-```console
-docker container run -it --rm alpine /bin/ash
+* Here we are going to run a shell in interactive mode
+
+```bash
+$   docker container run -it --rm alpine /bin/ash
 ```
 
- * What does this mean?
+* Parameters explained:
    - -i : interactive mode
    - -t : terminal mode
    - --rm : remove container after we are done
    - /bin/ash : bash is big and needs to be installed.  ash (almquist shell) is small. We also have old-school sh.
 
+* Output, we will see a shell prompt, displayed.
+
+```console
+/ #
+```
+
+* Execute a few commands
+
+```console
+/ # date
+    Thu Sep  9 06:55:58 UTC 2021
+/ # hostname
+    fea51759ac90
+```
+
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Many users ask how to "ssh" to the container.  This isn't typically how we accomplish this, instead, what we do is to attach our terminal to the container.
 
@@ -365,32 +486,88 @@ more of background service, then we probably do not want to do this.  However, i
 
 ---
 
-## Lab 2.1: Alpine
+## See Running Containers
 
-  * Navigate to 02-containers/2.1-alpine.md
+* **`docker ps`** will list all running containers
 
-Notes:
+```bash
+# Run two instances of alpine on two terminals
+$   docker run -it alpine /bin/ash
+$   docker run -it alpine /bin/ash
 
-Instructor Notes:
+# list running containers
+$   docker ps
+```
 
-Participant Notes:
+* output
+
+```console
+CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES 
+
+80c43841fdb7   alpine  "/bin/ash" 10 seconds ago  Up 10 seconds        boring_franklin
+fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_cannon
+```
+
+* Here we see 2 containers, running alpine image
+    - Even though they are running the same image `alpine`, each container is a unique process
+    - Each container has a unique **container id**
+
+* `ps` will list running containers.  To see all containers, including stopped containers use **`docker ps -a`**
 
 ---
 
-## Docker RM
- * What happens if we need to delete a container?
- * The `docker rm` command will do this trick for us.
+## Stopping the Containers
 
+* Use **`docker stop`** to stop running containers
 
 ```bash
-docker container --rm ls -l
+$   docker ps
+```
+
+```console
+CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES 
+
+80c43841fdb7   alpine  "/bin/ash" 10 seconds ago  Up 10 seconds        boring_franklin
+fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_cannon
+```
+
+* Stop 
+
+```bash
+$   docker stop 80c43841fdb7
+$   docker ps
+```
+
+```console
+CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES 
+
+fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_cannon
+```
+
+---
+
+## Removing Containers
+
+* **`stop`** just halts the containers
+    - They are still in the system
+    - Will use up storage 
+    - it will also show up in **`docker ps -a`**
+
+* To cleanup, use **`docker rm`**
+    - This will delete all container related files from the system
+
+* It is a good practice to call **`stop`** followed by **`rm`**
+
+```bash
+$   docker stop 80c43841fdb7
+$   docker rm   80c43841fdb7
 ```
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Running "docker rm" is a good way to clean up and de-clutter our container registry.  That said, one should not expect to save lots of space by running docker rm,
 because even larger container images are stored in the base repository, and deleing our derived images from these will not save an extraordinary amount of space.  
@@ -398,35 +575,55 @@ Remember, Docker overlays changes from one filesystem to the next, so only the c
 
 ---
 
-## Removing a Container
- * `docker rm` does **NOT** delete the container **image**.
-   - The container image is from Docker Hub or another repo.
-   - It is stored locally in our local repo.
- * It deletes the container instance
-   - The instance will container an overlay
-   - Any changes to the original image are the overlay.
-   - This is why we need OverlayFS in Docker.
+## Removing a Images
+
+* **`docker rm`** only deletes the container instance (e.g. 80c43841fdb7)
+    - It does **NOT** delete the container **image**.  (e.g. alpine)
+    - The container image is from Docker Hub or another repo.
+    - It is stored locally in our local repo.
+
+* Use **`docker rmi`** to delete image
+
+```bash
+$   docker rmi alpine
+```
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 We differentiate between the container image and the container instance.  The image is not going to be directly deleted this way, but the instance
 will be. 
 
 Knowing the difference between instance and image is extremely important.
 
---- 
+---
 
-## Lab 2.2: Deleting
+## Lab 2: Running Containers
 
-  * Navigate to 02-containers/2.2-deleting.md
- 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Run images
+
+* **Approximate run time:**
+  - 20-30 mins
+
+* **Instructions:**
+  - 2.1 - run
+  - 2.2 - delete
+
 Notes:
 
-Instructor Notes:
+---
 
-Participant Notes:
+## Review and Q&A
 
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
