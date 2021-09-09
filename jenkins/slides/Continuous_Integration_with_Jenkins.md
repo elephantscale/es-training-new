@@ -193,7 +193,7 @@ Notes:
 ## Continuous Integration
 
 
- * Continuous Integration is a software development practice where members of a team **integrate their work frequently**, usually each person integrates at least daily - leading to **multiple integrations per day**. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible (Martin Flower)
+ * Continuous Integration is a software development practice where members of a team **integrate their work frequently**, usually each person integrates at least daily - leading to **multiple integrations per day**. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible (Martin Fowler)
 
  * Goal is to merge and test the code **continuously** to catch issues early by **automating integration process**
 
