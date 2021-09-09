@@ -433,7 +433,7 @@ Notes:
 
  * 04/2007-04/2017
 
-<img src="../../assets/images/jenkins/total-jenkins.png" style="width:40%;"/> <!-- {"left" : 5.47, "top" : 2.85, "height" : 8.01, "width" : 7.88} -->
+<img src="../../assets/images/jenkins/total-jenkins.png" style="width:40%;"/> <!-- {"left" : 9.08, "top" : 2.68, "height" : 8.01, "width" : 7.88} -->
 
 
 Notes: 
@@ -943,7 +943,7 @@ Notes:
  * By clicking on People item on dashboard, you can see list of all users
 
 <br/>
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-View-and-Manage-Users-8.png" style="width:70%;"/> <!-- {"left" : 3.57, "top" : 3.44, "height" : 6.83, "width" : 11.68} -->
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-View-and-Manage-Users-8.png" style="width:70%;"/> <!-- {"left" : 2.91, "top" : 3.44, "height" : 6.83, "width" : 11.68} -->
 
 
 
@@ -1563,7 +1563,7 @@ Notes:
  * Build File option can be used to override the default build file (build.xml in root directory)
 
 
-<img src="../../assets/images/jenkins/3rd-party/Ant-Build-Steps-Advanced-Properties.png" style="width:30%;float:right;"/> <!-- {"left" : 5.81, "top" : 3.17, "height" : 5.12, "width" : 5.89} -->
+<img src="../../assets/images/jenkins/3rd-party/Ant-Build-Steps-Advanced-Properties.png" style="width:30%;float:right;"/><!-- {"left" : 12.08, "top" : 3.3, "height" : 4.06, "width" : 4.67} -->
 
 
  * Properties option is used to pass the properties to an Ant script
@@ -1734,7 +1734,7 @@ Notes:
  * Don’t configure anything in the build trigger section for Manual jobs
 
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Run-Job-Manually-27.png" style="width:70%;"/> <!-- {"left" : 3.49, "top" : 4.54, "height" : 6.17, "width" : 10.52} -->
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Run-Job-Manually-27.png" style="width:70%;"/> <!-- {"left" : 1.36, "top" : 6.55, "height" : 3.28, "width" : 14.78} -->
 
 
 
@@ -2153,7 +2153,7 @@ Notes:
 
  apply plugin: 'findbugs' 
 ```
-
+<!-- {"left" : 0, "top" : 3.55, "height" : 1.66, "width" : 6.89} -->
 Notes: 
 
 
@@ -2186,6 +2186,7 @@ Notes:
  }
 
 ```
+<!-- {"left" : 0, "top" : 4.05, "height" : 5.32, "width" : 5.66} -->
 
 
 Notes: 
@@ -2212,6 +2213,7 @@ Notes:
 
   }
 ```
+<!-- {"left" : 0, "top" : 3.96, "height" : 3.06, "width" : 6.74} -->
 
 Notes: 
 
@@ -2241,6 +2243,8 @@ Notes:
  } 
 
 ```
+<!-- {"left" : 0, "top" : 2.17, "height" : 6.01, "width" : 11.79} -->
+
 
 Notes: 
 
@@ -2260,7 +2264,8 @@ Notes:
      - Then you can also install Analysis Collector Plugin and Static Analysis Utilities plugins for a combined trend graph
 
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Install-Static-Code-Analysis-Plugins-in-Jenkins-33.png" style="width:70%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Install-Static-Code-Analysis-Plugins-in-Jenkins-33.png" style="width:70%;"/><!-- {"left" : 1.51, "top" : 6.15, "height" : 2.85, "width" : 14.48} -->
+
 
 Notes: 
 
@@ -2289,7 +2294,7 @@ Notes:
 
 ## Static Code Analysis Reports in Build Page
 
-<img src="../../assets/images/jenkins/3rd-party/static-code-01.png" style="width:80%;"/>
+<img src="../../assets/images/jenkins/3rd-party/static-code-01.png" style="width:80%;"/> <!-- {"left" : 1.67, "top" : 2.5, "height" : 7.99, "width" : 14.15} -->
 
 
 Notes: 
@@ -2356,6 +2361,9 @@ apply plugin: 'jmeter'
 
     }
 ```
+<!-- {"left" : 0, "top" : 3.46, "height" : 3.04, "width" : 13.61} -->
+
+<br/>
 
  * Copy your JMeter tests (.jmx) files to your `<JavaProject>/src/test/jmeter` folder
 
@@ -2374,7 +2382,8 @@ Notes:
 
  * Select JMeter from performance report drop down and specify the path to performance report files
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Running-reports-with-Performance-Plugin-34.png" style="width:60%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Running-reports-with-Performance-Plugin-34.png" style="width:60%;"/><!-- {"left" : 3.43, "top" : 5.26, "height" : 4.58, "width" : 10.65} -->
+
 
 
 Notes: 
@@ -2517,7 +2526,8 @@ Notes:
  * Follow our labs instructions
 
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Download-and-Install-SonarQube-35.png" style="width:50%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Download-and-Install-SonarQube-35.png" style="width:50%;"/> <!-- {"left" : 3.71, "top" : 3.67, "height" : 7.44, "width" : 10.08} -->
+
 
 
 Notes: 
@@ -2608,7 +2618,7 @@ Notes:
 
  * After the installation, you will able to see SonarQube  plugin under `Installed` tab
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Install-SonarQube-Jenkins-Plugin-36.png" style="width:80%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Install-SonarQube-Jenkins-Plugin-36.png" style="width:80%;"/> <!-- {"left" : 1.95, "top" : 7.3, "height" : 2.78, "width" : 13.6} -->
 
 
 Notes: 
@@ -2629,7 +2639,7 @@ Notes:
 
      - Just need SonarQube server URL  
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Configure-SonarQube-installation-in-Jenkins-37.png" style="width:70%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Configure-SonarQube-installation-in-Jenkins-37.png" style="width:70%;"/> <!-- {"left" : 1.85, "top" : 5.38, "height" : 5.03, "width" : 13.8} -->
 
 
 Notes: 
@@ -2668,7 +2678,7 @@ Notes:
 
  * Just name the runner and install it automatically
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Configure-SonarQube-Runner-in-Jenkins-38.png" style="width:70%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Configure-SonarQube-Runner-in-Jenkins-38.png" style="width:70%;"/> <!-- {"left" : 1.25, "top" : 5.59, "height" : 3.58, "width" : 15} -->
 
 
 Notes: 
@@ -2704,7 +2714,7 @@ Notes:
 
  * Create any Jenkins job or update existing job to select Invoke Standalone SonarQube Analysis from Build step
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Build-step-to-trigger-the-SonarQube-analysis-39.png" style="width:35%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Build-step-to-trigger-the-SonarQube-analysis-39.png" style="width:35%;"/> <!-- {"left" : 10.83, "top" : 3.55, "height" : 5.04, "width" : 5.88} -->
 
 
  * Nothing is required in SonarQube Analysis section if you are using default configuration for jdk, sonar-project.properties etc.
@@ -2717,7 +2727,7 @@ Notes:
 
 ## Post-build action to trigger the SonarQube
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Post-build-action-to-trigger-the-SonarQube-40.png" style="width:30%;float:right;" />
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Post-build-action-to-trigger-the-SonarQube-40.png" style="width:30%;float:right;" /> <!-- {"left" : 12.15, "top" : 2.52, "height" : 7.09, "width" : 5.03} -->
 
  * On a new or existing Maven job, go to the Post-build Actions section and click on Add post-build action
 
@@ -2758,6 +2768,7 @@ apply plugin: 'org.sonarqube‘
  	}
 
 ```
+ <!-- {"left" : 0, "top" : 5.77, "height" : 4.79, "width" : 10.73} -->
 
 Notes: 
 
@@ -2792,7 +2803,8 @@ Notes:
 
  * You can verify the SonarQube execution steps in the console and the console has sonar URL to browse the SonarQube report
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Locate-and-Open-Generated-Report--41.png" style="width:90%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Locate-and-Open-Generated-Report--41.png" style="width:90%;"/> <!-- {"left" : 0.69, "top" : 5.87, "height" : 2.73, "width" : 16.12} -->
+
 
 
 Notes: 
@@ -2808,7 +2820,7 @@ Notes:
 
  * Now click on the project to get more details on code quality metrics
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Locate-and-Open-Generated-Report-Continued-42.png" style="width:70%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Locate-and-Open-Generated-Report-Continued-42.png" style="width:70%;"/> <!-- {"left" : 2.17, "top" : 5.17, "height" : 3.88, "width" : 13.16} -->
 
 
 Notes: 
@@ -2861,7 +2873,7 @@ Notes:
 
 ## Sonar Report - Project Home Page
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Project-Home-Page-43.png" style="width:60%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Project-Home-Page-43.png" style="width:60%;"/> <!-- {"left" : 3.43, "top" : 2.89, "height" : 7.93, "width" : 10.64} -->
 
 
 Notes: 
@@ -2872,7 +2884,7 @@ Notes:
 
 ## Sonar Report - Technical Debt and Issues
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Technical-Debt-and-Issues-44.png" style="width:60%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Technical-Debt-and-Issues-44.png" style="width:60%;"/> <!-- {"left" : 2.45, "top" : 3.16, "height" : 7.38, "width" : 12.6} -->
 
 
 Notes: 
@@ -2883,7 +2895,8 @@ Notes:
 
 ## Sonar Report – Code Coverage
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Code-Coverage-45.png" style="width:60%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Code-Coverage-45.png" style="width:60%;"/> <!-- {"left" : 2.05, "top" : 2.7, "height" : 8.02, "width" : 13.4} -->
+
 
 
 Notes: 
@@ -2894,7 +2907,7 @@ Notes:
 
 ## Sonar Report - Duplications
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Duplications-46.png" style="width:40%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Duplications-46.png" style="width:40%;"/> <!-- {"left" : 3.37, "top" : 2.26, "height" : 9.2, "width" : 10.76} -->
 
 
 Notes: 
@@ -2905,7 +2918,7 @@ Notes:
 
 ## Sonar Report – Structure and Complexity
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Structure-and-Complexity-47.png" style="width:50%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Sonar-Report-Structure-and-Complexity-47.png" style="width:50%;"/> <!-- {"left" : 3.85, "top" : 2.65, "height" : 8.41, "width" : 9.8} -->
 
 
 Notes: 
@@ -2998,7 +3011,8 @@ Notes:
 
  * Create a new job and choose external job as job type
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Monitor-External-Jobs-48.png" style="width:40%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Monitor-External-Jobs-48.png" style="width:40%;"/> <!-- {"left" : 4.98, "top" : 5.32, "height" : 5.84, "width" : 7.54} -->
+
 
 
 Notes: 
@@ -3016,7 +3030,9 @@ Notes:
 
      - Meaningful description
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Monitor-External-Jobs-Configuration-49.png" style="width:60%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Monitor-External-Jobs-Configuration-49.png" style="width:60%;"/> <!-- {"left" : 3.04, "top" : 4.36, "height" : 5.49, "width" : 11.42} -->
+
+
 
 
 Notes: 
@@ -3032,14 +3048,18 @@ Notes:
 
 
 ```
-jenkins-core-*.jar </br>
-    remoting-*.jar </br>
-    ant-*.jar </br>
-    commons-io-*.jar </br>
-    commons-lang-*.jar </br>
-    jna-posix-*.jar </br>
+jenkins-core-*.jar 
+    remoting-*.jar 
+    ant-*.jar 
+    commons-io-*.jar 
+    commons-lang-*.jar 
+    jna-posix-*.jar
     xstream-*.jar
 ```
+ <!-- {"left" : 0, "top" : 3.53, "height" : 2.94, "width" : 6.91} -->
+
+
+<br/>
 
  * JENKINS_HOME needs to be set to locate the Jenkins server
 
@@ -3069,6 +3089,7 @@ set JENKINS_HOME=http://admin:admin@localhost:8080/
  java -jar jenkins-core-1.631.jar Jenkins-Lab-Monitor-Job cmd.exe /c jenkinsLab.bat
 
 ```
+ <!-- {"left" : 0, "top" : 4.84, "height" : 1.31, "width" : 16.64} -->
 
 
 Notes: 
@@ -3082,7 +3103,8 @@ Notes:
 
  * Once your external process runs, the outcome of the process will be sent to the Jenkins job
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Output-in-Jenkins-Dashboard-50.png" style="width:70%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Output-in-Jenkins-Dashboard-50.png" style="width:70%;"/> <!-- {"left" : 3.1, "top" : 3.88, "height" : 6.74, "width" : 11.31} -->
+
 
 
 Notes: 
@@ -3154,7 +3176,7 @@ Notes:
  * You can define a different axis for JDK, Slaves and Label expression as well as provide your own custom parameters for User-defined Axis
 
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Multi-Configuration-Job-Configuration--51.png" style="width:30%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Multi-Configuration-Job-Configuration--51.png" style="width:30%;"/> <!-- {"left" : 10, "top" : 2.62, "height" : 4.92, "width" : 7.24} -->
 
 
 Notes: 
@@ -3176,7 +3198,8 @@ Notes:
  * The build can be configured to run in parallel or sequential mode
  * The combination filter is another option if you need to exclude some configuration combinations from the build
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Multi-Configuration-Matrix-52.png" style="width:50%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Multi-Configuration-Matrix-52.png" style="width:50%;"/> <!-- {"left" : 2.6, "top" : 6.93, "height" : 4.12, "width" : 12.3} -->
+
 
 
 Notes: 
@@ -3194,7 +3217,7 @@ Notes:
 
  * Build status and details can be viewed by clicking on each ball
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Run-Multi-Configuration-Job-53.png" style="width:60%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Run-Multi-Configuration-Job-53.png" style="width:60%;"/> <!-- {"left" : 3.78, "top" : 4.73, "height" : 5.61, "width" : 9.95} -->
 
 
 
@@ -3258,7 +3281,8 @@ Notes:
 
 ## Master/Slaves Architecture - Review
 
-<img src="../../assets/images/jenkins/Master-Slaves-Architecture.png" style="width:60%;"/>
+<img src="../../assets/images/jenkins/Master-Slaves-Architecture.png" style="width:60%;"/> <!-- {"left" : 1.78, "top" : 2.4, "height" : 7.59, "width" : 13.93} -->
+
 
 Notes: 
 
@@ -3296,7 +3320,7 @@ Notes:
 
  * After you click OK button, Jenkins will provide more options for setting up Slave Nodes
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Setup-Slave-Nodes-54.png" style="width:50%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Setup-Slave-Nodes-54.png" style="width:50%;"/> <!-- {"left" : 2.04, "top" : 5.72, "height" : 4.46, "width" : 13.42} -->
 
 
 
@@ -3343,7 +3367,7 @@ Notes:
 
  * You After clicking on Launch button, the Slave agent will be connected to the Master node and you will able to see the new Slave agent in Master Jenkins Manage Nodes screen
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Launch-Slave-via-Java-Web-Start-Slave-Node-55.png" style="width:50%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Launch-Slave-via-Java-Web-Start-Slave-Node-55.png" style="width:50%;"/> <!-- {"left" : 2.93, "top" : 6.13, "height" : 4.81, "width" : 11.63} -->
 
 
 Notes: 
@@ -3360,7 +3384,7 @@ Notes:
  * Open Job configuration and select Restrict where this project can be run checkbox 
 
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Associate-build-jobs-with-Master-and-Slave-nodes-56.png" style="width:50%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Associate-build-jobs-with-Master-and-Slave-nodes-56.png" style="width:50%;"/> <!-- {"left" : 3.8, "top" : 4.65, "height" : 6.46, "width" : 9.91} -->
 
 Notes: 
 
@@ -3383,7 +3407,8 @@ Notes:
 
  * Jenkins automatically takes slaves offline based on the health metrics
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Monitor-Slave-Nodes-57.png" style="width:50%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Monitor-Slave-Nodes-57.png" style="width:50%;"/> <!-- {"left" : 4, "top" : 7.05, "height" : 4.01, "width" : 9.51} -->
+
 
 
 Notes: 
@@ -3446,8 +3471,7 @@ Notes:
 
 ## Build Pipelines
 
-<img src="../../assets/images/jenkins/3rd-party/Build-Pipelines.png" style="width:70%;"/>
-
+<img src="../../assets/images/jenkins/3rd-party/Build-Pipelines.png" style="width:70%;"/> <!-- {"left" : 1.33, "top" : 2.32, "height" : 8.79, "width" : 14.88} -->
 
 
 Notes: 
@@ -3479,7 +3503,7 @@ Notes:
 
 ## Creating Pipeline with Jenkins
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Setup-Slave-Nodes-54.png" style="width:50%; float:right;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Setup-Slave-Nodes-54.png" style="width:50%; float:right;"/> <!-- {"left" : 10.13, "top" : 2.5, "height" : 2.23, "width" : 6.71} -->
 
  * Pipeline in Jenkins is the process of automatically starting other jobs after the execution of a job
 
@@ -3513,7 +3537,7 @@ Notes:
      - Useful in approval process for deploying in UAT environment
 
 </br>
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Jenkins-Build-Pipeline-Plugin-59.png" style="width:90%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Jenkins-Build-Pipeline-Plugin-59.png" style="width:90%;"/> <!-- {"left" : 0.3, "top" : 6.21, "height" : 2.33, "width" : 16.9} -->
 
 
 
@@ -3532,7 +3556,7 @@ Notes:
 
  * Parameterized Trigger plugin provides the basic triggering new build functionality and adds other useful features such as how to specify parameters for the new build
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Jenkins-Parameterized-Trigger-Plugin-60.png" style="width:50%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Jenkins-Parameterized-Trigger-Plugin-60.png" style="width:50%;"/> <!-- {"left" : 0.58, "top" : 6.12, "height" : 4.96, "width" : 16.35} -->
 
 
 Notes: 
@@ -3546,7 +3570,7 @@ Notes:
 
  * Go to the local Jenkins home page and click on + sign to create new view
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Create-New-Build-Pipeline-View-61.png" style="width:80%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Create-New-Build-Pipeline-View-61.png" style="width:80%;"/> <!-- {"left" : 1.25, "top" : 3.79, "height" : 5.3, "width" : 15} -->
 
 
 Notes: 
@@ -3562,7 +3586,7 @@ Notes:
 
      - Then it will traverse through the downstream jobs to build up entire pipeline
 
-<img src="../../assets/images/jenkins/3rd-party/Configure-New-Build-Pipeline-View.png" style="width:70%;"/>
+<img src="../../assets/images/jenkins/3rd-party/Configure-New-Build-Pipeline-View.png" style="width:70%;"/> <!-- {"left" : 2.93, "top" : 4.26, "height" : 5.85, "width" : 11.64} -->
 
 
 Notes: 
@@ -3573,7 +3597,8 @@ Notes:
 
 ## New Pipeline for Lab Project
 
-<img src="../../assets/images/jenkins/New-Pipeline.png" style="width:90%;"/>
+<img src="../../assets/images/jenkins/New-Pipeline.png" style="width:90%;"/> <!-- {"left" : 1.61, "top" : 2.86, "height" : 7.71, "width" : 14.28} -->
+
 
 
 Notes: 
@@ -3720,7 +3745,8 @@ Notes:
 
  * Select Record fingerprints of files to track usage from Post-Build actions in your job configuration and include the files/artifacts that you want to fingerprint
 
-<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-File-Fingerprint-Tracking-62.png" style="width:80%;" />
+<img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-File-Fingerprint-Tracking-62.png" style="width:80%;" /> <!-- {"left" : 0.38, "top" : 6.5, "height" : 2.32, "width" : 16.79} -->
+
 
 Notes: 
 

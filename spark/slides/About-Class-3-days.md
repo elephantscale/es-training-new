@@ -1,6 +1,6 @@
-# Introduction to  Apache Spark 3
+# Introduction to Apache Spark 3
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:40%;" /> &nbsp;  &nbsp;<!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;" /><!-- {"left": 6.14, "top": 7.44, "height": 2.78, "width": 5.22} --> 
 
 ---
 
@@ -14,7 +14,7 @@
 
 ## About This Class
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:25%;float:right;" /> &nbsp;  &nbsp;<!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:25%;float:right;" /><!-- {"left": 13.58, "top": 2.14, "height": 1.79, "width": 3.36} --> 
 
 * Objectives:
     - Learn about Big Data and Spark ecosystem
@@ -72,8 +72,9 @@ Notes:
 
 ## Learn By Doing
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png"  style="width:59%;float:left"/> <!-- {"left" : 1.15, "top" : 1.32, "height" : 6.42, "width" : 7.96} -->
-<img src="../../assets/images/spark/3rd-party/after-the-class-spark.png" style="width:39%;float:right;"/> <!-- {"left" : 1.69, "top" : 2, "height" : 5.65, "width" : 6.88} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png"  style="width:54%;"/> <!-- {"left": 1.05, "top": 2.98, "height": 6.95, "width": 8.62} -->  &nbsp;
+<img src="../../assets/images/spark/3rd-party/after-the-class-spark.png" style="width:40%;"/> <!-- {"left": 9.18, "top": 4.52, "height": 5.18, "width": 6.34} -->
+
 
 
 Notes:
@@ -95,7 +96,7 @@ Notes:
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby...etc)
 
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left": 2.65, "top": 8.0, "height": 3.0, "width": 3.4} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left": 6.08, "top": 8.1, "height": 2.9, "width": 5.34} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left": 11.46, "top": 8.0, "height": 3.0, "width": 3.4} -->
 
 Notes:
 
@@ -113,8 +114,8 @@ Notes:
     - [Spark by examples](https://sparkbyexamples.com/) - great resources for code snippets
     - [Official Spark Examples Repository](https://github.com/apache/spark/tree/master/examples) - latetest and official
 
-<img src="../../assets/images/books/learning-spark-2nd-ed-9781492050049.jpeg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
-<img src="../../assets/images/books/high-performance-spark-9781491943205.jpeg" style="width:18%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} -->
+<img src="../../assets/images/books/learning-spark-2nd-ed-9781492050049.jpeg" style="width:18%;"/><!-- {"left": 5.7, "top": 7, "height": 3.71, "width": 2.83} --> &nbsp;
+<img src="../../assets/images/books/high-performance-spark-9781491943205.jpeg" style="width:18%;"/> <!-- {"left": 8.98, "top": 7, "height": 3.71, "width": 2.83} --> 
 
 Notes:
 
