@@ -191,6 +191,23 @@ Notes:
 
 ---
 
+## Group Lab: Doing XYZ
+
+<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Work with xyz
+
+* **Approximate run time:**
+  - 20-30 mins
+
+* **Instructions:**
+  - Please complete A, B, C
+
+Notes:
+
+---
+
 ## Review and Q&A
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
