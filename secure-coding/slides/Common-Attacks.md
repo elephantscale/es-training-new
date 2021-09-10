@@ -47,7 +47,7 @@ Notes:
 - Social Engineering refers to the manipulative methods used to induce users to take some action to trigger the XSS attack
   - Email phishing is one of the most common
   - Potential victims are sent an email with the infected URL and a deceptive description 
-  - Eg. _Limited time promotion: claim your $100 discount on your next Amazon purchase!!_
+  - E.g. _Limited time promotion: claim your $100 discount on your next Amazon purchase!!_
   - The source of the email is usually spoofed or made to look like a legitimate sender the victim would trust
 ---
 
@@ -192,7 +192,7 @@ Select your language:
 - Note that the URI parameter "default=English" becomes part of the script
 
 ---
-## Example #1 - Parameter Insertion
+## Example #2 - Parameter Insertion
 
 - The attacker social engineers a victim to click on an altered link:
 
@@ -223,7 +223,7 @@ Select your language:
 
 ---
 
-## Example #2 - URI Fragment
+## Example #3 - URI Fragment
 
 - Determining the current page is done in the browser without accessing the server
 - A DOM XSS attack would be to cause the underlying code to throw an error and supply error handler that executes the attack payload
@@ -274,6 +274,8 @@ Content-Security-Policy: default-src: 'self'; script-src: 'self' static.domain.t
 - Hold all user generated or untrusted content for review before publishing
 
 ---
+
+
 ## Malicious File Execution
 
 - There are two basic types of malicious file execution
@@ -285,6 +287,15 @@ Content-Security-Policy: default-src: 'self'; script-src: 'self' static.domain.t
   - Often the result of poor security protocols on the server side
   
 ---
+
+## Labs
+
+* Goat labs for XSS
+
+![](../images/xss.png)
+
+---
+
 
 ## Client Side Attacks
 
@@ -721,6 +732,15 @@ Image Credit: www.cnet.com/tech/services-and-software/breach-exposes-h-r-block-c
   - Requires an addition step on the server to retrieve the object reference
 ---
 
+## Labs
+
+* Goat labs
+* Insecure deserialization
+
+![](../images/insecure-deserialization.png)
+
+---
+
 
 ## WebShell Attack
 
@@ -808,7 +828,7 @@ http://bankx.com/app?action=transferFund&amount=3500&destinationAccount=991829
 - Example on the previous slide was contrived but captures the essence of the attack
 - While authenticated to a site, the attacker has the victim execute a malicious request to that site
 - The site assumes that it was the authenticated user that issued the request
-- For example, having user authenticated as an adimin click on a link that adds the attacker as an admin user
+- For example, having user authenticated as an admin click on a link that adds the attacker as an admin user
 
 Notes:
 
@@ -818,5 +838,8 @@ Image Credit: spanning.com/blog/cross-site-forgery-web-based-application-securit
 
 ## Labs
 
-* Goat labs
+* Goat labs (CSRF)
 
+![](../images/csrf.png)
+
+---
