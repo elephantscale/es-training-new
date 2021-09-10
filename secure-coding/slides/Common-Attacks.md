@@ -24,13 +24,13 @@ Notes:
 
 ## Cross Site Scripting (XSS)
 
-- A form of injection attack
-- Malicious scripts are injected into an HTTP response from a trusted website
-- Because the script is from a trusted source, the user's browser executes it as trusted code
-- The browser cannot determine that the script originated from an untrusted source
-- The XSS script has the same level of trust as the website the HTTP response originated from
-- XSS is a common attack for stealing information stored in the user's browser 
-- And for "drive-by" installation of malware on a computer
+* A form of injection attack
+* Malicious scripts are injected into an HTTP response from a trusted website
+* Because the script is from a trusted source, the user's browser executes it as trusted code
+* The browser cannot determine that the script originated from an untrusted source
+* The XSS script has the same level of trust as the website the HTTP response originated from
+* XSS is a common attack for stealing information stored in the user's browser 
+* And for "drive-by" installation of malware on a computer
 
 
 Notes:
@@ -706,10 +706,10 @@ Image Credit:panning.com/blog/insecure-direct-object-reference-web-based-applica
 
 ## Insecure Direct Object Reference
 
-![](../images)
+
 
 - Attacker is able to access implementation objects directly by guessing at their reference
-- Eg. guessing that the administrator account has account id "1" in the previous slide
+- E.g. guessing that the administrator account has account id "1" in the previous slide
 - Cause of a 2002 data breech at H&R Block where customer account numbers appeared in the URL
 - Changing the number in the URL allowed access to other customers' accounts
 
