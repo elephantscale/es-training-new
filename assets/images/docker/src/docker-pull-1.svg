@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="26 708 2157 1059" width="2157" height="1059">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#e59f5c">
+      <g>
+        <path d="M -2.0571429 0 L 0 .7714286 L 0 -.7714286 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-09 18:30:20 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_8">
+        <path d="M 55.44257 710 L 688 710 C 702.9117 710 715 722.0883 715 737 L 715 1738 C 715 1752.9117 702.9117 1765 688 1765 L 55.44257 1765 C 40.53088 1765 28.442568 1752.9117 28.442568 1738 L 28.442568 737 C 28.442568 722.0883 40.53088 710 55.44257 710 Z" fill="#ecfaff"/>
+        <path d="M 55.44257 710 L 688 710 C 702.9117 710 715 722.0883 715 737 L 715 1738 C 715 1752.9117 702.9117 1765 688 1765 L 55.44257 1765 C 40.53088 1765 28.442568 1752.9117 28.442568 1738 L 28.442568 737 C 28.442568 722.0883 40.53088 710 55.44257 710 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(240.1295 774)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">Registry</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 525.51684 1007.4696 C 610.45624 1064.0956 610.45624 1155.9044 525.51684 1212.5304 C 440.57787 1269.1566 302.8647 1269.1566 217.92573 1212.5304 C 132.98632 1155.9044 132.98632 1064.0956 217.92573 1007.4696 C 302.8647 950.8434 440.57787 950.8434 525.51684 1007.4696" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 525.51684 1427.4696 C 610.45624 1484.0956 610.45624 1575.9044 525.51684 1632.5304 C 440.57787 1689.1566 302.8647 1689.1566 217.92573 1632.5304 C 132.98632 1575.9044 132.98632 1484.0956 217.92573 1427.4696 C 302.8647 1370.8434 440.57787 1370.8434 525.51684 1427.4696" fill="#aa97fe"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(293.73056 1079.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Alpine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(301.72617 1499.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Nginx</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <path d="M 1521 710 L 2153.5574 710 C 2168.469 710 2180.5574 722.0883 2180.5574 737 L 2180.5574 1738 C 2180.5574 1752.9117 2168.469 1765 2153.5574 1765 L 1521 1765 C 1506.0883 1765 1494 1752.9117 1494 1738 L 1494 737 C 1494 722.0883 1506.0883 710 1521 710 Z" fill="#f6f6ec"/>
+        <path d="M 1521 710 L 2153.5574 710 C 2168.469 710 2180.5574 722.0883 2180.5574 737 L 2180.5574 1738 C 2180.5574 1752.9117 2168.469 1765 2153.5574 1765 L 1521 1765 C 1506.0883 1765 1494 1752.9117 1494 1738 L 1494 737 C 1494 722.0883 1506.0883 710 1521 710 Z" stroke="#d7b09a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(1687.4691 774)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">Machine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 1991.0743 1007.4696 C 2076.0137 1064.0956 2076.0137 1155.9044 1991.0743 1212.5304 C 1906.1353 1269.1566 1768.4221 1269.1566 1683.4832 1212.5304 C 1598.5438 1155.9044 1598.5438 1064.0956 1683.4832 1007.4696 C 1768.4221 950.8434 1906.1353 950.8434 1991.0743 1007.4696" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 1991.0743 1427.4696 C 2076.0137 1484.0956 2076.0137 1575.9044 1991.0743 1632.5304 C 1906.1353 1689.1566 1768.4221 1689.1566 1683.4832 1632.5304 C 1598.5438 1575.9044 1598.5438 1484.0956 1683.4832 1427.4696 C 1768.4221 1370.8434 1906.1353 1370.8434 1991.0743 1427.4696" fill="#aa97fe"/>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(1759.288 1079.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Alpine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(1767.2836 1499.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Nginx</tspan>
+        </text>
+      </g>
+      <g id="Line_20">
+        <line x1="1570.8786" y1="1110" x2="589.2214" y2="1110" marker-start="url(#FilledArrow_Marker)" stroke="#e59f5c" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+      </g>
+      <g id="Line_21">
+        <line x1="1570.8786" y1="1530" x2="589.2214" y2="1530" marker-start="url(#FilledArrow_Marker)" stroke="#e59f5c" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(887 1011)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Docker Pull Alpine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(894.9956 1439)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Docker Pull Nginx</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-78 407 1255 738" width="1255" height="738">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-09 17:07:00 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_9">
+        <path d="M -44.44257 413 L 1143.4426 413 C 1158.3543 413 1170.4426 425.0883 1170.4426 440 L 1170.4426 1112 C 1170.4426 1126.9117 1158.3543 1139 1143.4426 1139 L -44.44257 1139 C -59.354256 1139 -71.44257 1126.9117 -71.44257 1112 L -71.44257 440 C -71.44257 425.0883 -59.354256 413 -44.44257 413 Z" fill="white"/>
+        <path d="M -44.44257 413 L 1143.4426 413 C 1158.3543 413 1170.4426 425.0883 1170.4426 440 L 1170.4426 1112 C 1170.4426 1126.9117 1158.3543 1139 1143.4426 1139 L -44.44257 1139 C -59.354256 1139 -71.44257 1126.9117 -71.44257 1112 L -71.44257 440 C -71.44257 425.0883 -59.354256 413 -44.44257 413 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="24.0,24.0" stroke-width="12"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(293.8994 997)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Physical Machine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 435.29556 542.4696 C 520.23496 599.0956 520.23496 690.9044 435.29556 747.5304 C 350.3566 804.1566 212.64342 804.1566 127.70444 747.5304 C 42.76504 690.9044 42.76504 599.0956 127.70444 542.4696 C 212.64342 485.84336 350.3566 485.84336 435.29556 542.4696" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 963.891 542.4696 C 1048.8304 599.0956 1048.8304 690.9044 963.891 747.5304 C 878.9521 804.1566 741.2389 804.1566 656.2999 747.5304 C 571.3605 690.9044 571.3605 599.0956 656.2999 542.4696 C 741.2389 485.84336 878.9521 485.84336 963.891 542.4696" fill="#aa97fe"/>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(127.5083 614.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Windows VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(702.0999 614.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Linux VM</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
