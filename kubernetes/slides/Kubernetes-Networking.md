@@ -132,9 +132,9 @@ BGP: Stands for “border gateway protocol” and is used to manage how packets 
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 In a Kubernetes cluster, it is recommended practice to have all nodes on a 'flat' network – meaning no hierarchical network layout.
 Node to Node communication is essential, and nodes are free to communicate with each other.
@@ -164,9 +164,9 @@ How ever, SDNs can get complicated to administer.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 By default, Docker uses host-private networking..
 So Docker containers can only talk to other Docker containers running on the same machine.
@@ -200,9 +200,9 @@ So we need to allocate ports on hosts carefully so there is no conflict among Do
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Highly-Coupled Container-to-Container Communication
 This happens within a pod and can be treated similarly to the localhost traffic. However, as it does not feature any networking, it is out of the scope of this article.
@@ -286,9 +286,9 @@ Once traffic arrives at a node, it is routed to the correct service backends via
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Kubenet
 It is typically useful for single-node environments. It can be utilized for communication between nodes by using it together with a cloud provider that establishes the rules.
@@ -323,9 +323,9 @@ Calico provides simple, scalable and secure virtual networking.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 For the illustration of these requirements let us use a cluster with two cluster nodes.
 Nodes are in subnet 192.168.1.0/24 and pods use 10.1.0.0/16 subnet, with 10.1.1.0/24 and 10.1.2.0/24 used by node1 and node2 respectively for the pod IP’s.
@@ -345,9 +345,9 @@ So from above Kubernetes requirements following communication paths must be esta
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here Load Balancer is used to send traffic evenly to running instances.
 As instances are added or removed from the service pool, the Load Balancer will adjust.
@@ -370,9 +370,9 @@ Explained in slide 39: Service Discovery Components
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Client Discovery: 
 Client talks to the Service registry and does load balancing.
@@ -408,9 +408,9 @@ Examples: Consul, AWS ELB, K8s, Docker
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The registry serves as a place to publish available services – think like a 'yellow pages'.
 For example a service that offers zipcode lookup can be advertised in the registry, that can be discovered by other services.
@@ -447,9 +447,9 @@ Load balancing is explained in slide no. 42.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 There various ways of doing health checks.
 

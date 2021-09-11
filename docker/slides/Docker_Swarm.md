@@ -13,9 +13,9 @@
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 
@@ -28,9 +28,9 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 
@@ -43,9 +43,9 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 
@@ -67,9 +67,9 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 
@@ -97,9 +97,9 @@ manager' and follow the instructions.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 
@@ -119,9 +119,9 @@ The node joined the swarm as a worker
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 
@@ -137,9 +137,9 @@ $ docker service create --publish 80:80 \
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 
@@ -163,9 +163,9 @@ services:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 
@@ -177,9 +177,9 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 
@@ -205,9 +205,9 @@ volumes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 ---
 

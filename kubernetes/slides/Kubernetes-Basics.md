@@ -17,11 +17,11 @@ After this module, participants will be able to:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Please let students know that in addition to the objectives they identified for themselves in taking this module, these are the ones we expect to achieve based on the material provided.
 
-Participant Notes:
+Participant Notes :
 
 In addition to the objectives you identified in taking this module, these are the ones we expect to achieve based on the material provided.
 
@@ -39,11 +39,11 @@ In addition to the objectives you identified in taking this module, these are th
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Please let students know that in addition to the objectives they identified for themselves in taking this module, these are the ones we expect to achieve based on the material provided.
 
-Participant Notes:
+Participant Notes :
 
 In addition to the objectives you identified in taking this module, these are the ones we expect to achieve based on the material provided.
 
@@ -62,9 +62,9 @@ In addition to the objectives you identified in taking this module, these are th
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Below are the explanations of the bullet points.
 
@@ -88,9 +88,9 @@ Responsibility – Separation of responsibility is a great software development 
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Microservice architecture gives developers the freedom to independently develop and deploy services
 Independent, easy and frequent deployment. One service can be tested, built and deployed without doing this for all services (or the whole application).
@@ -116,9 +116,9 @@ It is easier to debug any issues with a specific Microservice.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Due to distributed deployment, testing can become complicated and tedious A microservice can be developed by a fairly small team.
 Increased effort for operations, deployment and monitoring. Each service is a separate deployment units, which has to be released, tested and monitored. This means a) that the delivery workflow has be automated
@@ -138,9 +138,9 @@ It is extremely difficult to find good architects for creating Microservice arch
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 There multiple problems that one typically faces when shipping software. These are illustrated in this diagram. They can be enumerated as
 
@@ -165,9 +165,9 @@ There are multiple hardware layers underlying the deployment.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 There multiple problems that one typically faces when shipping software. These are illustrated in this diagram. They can be enumerated as
 
@@ -191,9 +191,9 @@ There are multiple hardware layers underlying the deployment.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Due to distributed deployment, testing can become complicated and tedious A microservice can be developed by a fairly small team.  
 
@@ -221,9 +221,9 @@ It is extremely difficult to find good architects for creating Microservice arch
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The basic properties of containers is that they deliver of promises made above. 
 
@@ -245,9 +245,9 @@ Finally, built into the container architecture is their ability to work well tog
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Applications are typically made up of individually containerized components (often called microservices) that must be organized at the networking level in order for the application to run as intended. 
 
@@ -264,9 +264,9 @@ This could be from a developer's laptop to a test environment, from a staging en
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 By contrast to the situation we described before, Docker allows to ship software into the pre-defined, controlled environment. That is because each container is built by Docker and is therefore know and tested.
 
@@ -282,9 +282,9 @@ By contrast to the situation we described before, Docker allows to ship software
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Increased Portability:  
 The ability to add to the container and then deploy across multiple platforms allows Docker to be run almost anywhere. This is important because it lets developers write code on a local development environment, test it locally and then push to production without having to worry about things not working. All environments are exactly the same; you won’t hear the phrase “It worked on my local environment!” ever again.
@@ -320,13 +320,13 @@ Another great development feature: Docker lets developers troubleshoot productio
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Each virtualized application includes not only the application-which may be only 10s of MB – and the necessary binaries and libraries, but also an entire guest operating system- which may weigh 10s of GB.
 
 The Docker Engine container comprises just the application and its dependencies. It runs as an isolated process in userspace on the host operating system, sharing the kernel with other containers. Thus, it enjoys the resource isolation and allocation benefits of VMs but is much more portable and efficient
 
-Participant Notes:
+Participant Notes :
 
 How do Docker container compare to virtual machines? Docker is lightweight. It allows isolation from the surrounding environment but not the total isolation. Since it re-uses some of the underlying Linux implementations, it does not have to re-implement them. This makes it fast.
 
@@ -347,9 +347,9 @@ How do Docker container compare to virtual machines? Docker is lightweight. It a
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Docker server: Docker server is a tool that lets you install Docker Engine on virtual hosts, and manage the hosts with docker-server commands.
 Docker Images: An image is an inert, immutable, file that's essentially a snapshot of a container.
@@ -367,9 +367,9 @@ Git:  Git and Docker both have a significant learning curve and can be a cost
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 This diagram explains the basic Docker architecture. Images are stored in repositories and are used for building container. Every time you change something in a container, you are adding on top of the container.
 
@@ -388,9 +388,9 @@ This is implemented with Docker Daemon. It is a server responsible for all actio
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Docker containers are lightweight by design and ideal for enabling microservices application development. 
 Accelerate development, deployment and rollback of tens or hundreds of containers composed as a single application. 
@@ -418,9 +418,9 @@ The first step with Docker is to modernize the existing application portfolio. P
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Before Docker, Virtual Machines were used to provide reliable environment for applications.
 VMWare is a vendor for virtualized containers.
@@ -461,9 +461,9 @@ Docker provides a light weight container that provides a reliable environment to
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Docker containers are supported across many operating systems (Windows, Mac and Linux) – these are called 'host environment'.
 So an application running within a Docker container will have the exact same environment regardless of the host environment.
@@ -488,9 +488,9 @@ This is why we consider Docker a reproducible environment.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 As we mentioned above, it is easy to explain what the container orchestration does, and there are tools for that. But it is the same as project management. Although the tools for project management are not lacking, a good project manager is the person who brings the project together. The same goes for a container-based application.
 
@@ -504,9 +504,9 @@ As we mentioned above, it is easy to explain what the container orchestration do
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 If your current software infrastructure looks something like this — maybe Nginx/Apache + PHP/Python/Ruby/Node.js app running on a few containers that talk to a replicated DB — then you might not require container orchestration, you can probably manage everything yourself.
 
@@ -520,9 +520,9 @@ If your current software infrastructure looks something like this — maybe 
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The standard challenges of container orchestration and application growth are Service Discovery, Load Balancing, Secrets/configuration/storage management, Health checks, and auto deployment.
 
@@ -548,9 +548,9 @@ These are solved with the following architectural principle: decoupling. Decoupl
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 Kubernetes is a powerful open-source system, initially developed by , for managing containerized applications in a clustered environment. It aims to provide better ways of managing related, distributed components and services across varied infrastructure.
 
 Its basic level, is a system for running and coordinating containerized applications across a cluster of machines. It is a platform designed to completely manage the life cycle of containerized applications and services using methods that provide predictability, scalability, and high availability.
@@ -573,9 +573,9 @@ Kubernetes originates from Greek, meaning helmsman or pilot, and is the root
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 With Horizontal Pod Autoscaling, Kubernetes automatically scales the number of pods in a replication controller, deployment or replica set based on observed CPU utilization.
 
 Creating a new replication controller with the updated configuration.
@@ -599,9 +599,9 @@ Deleting the original replication controller.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Kubernetes is an open source container-orchestration system.
 It was originally developed by Google and open sourced under Apache 2 License.
@@ -637,9 +637,9 @@ https://kubernetes.io/
 Notes:
 
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Kubernetes manages containers across a cluster.
 It has been proven at large scale infrastructure – remember Google uses Kubernetes at a massive scale.
@@ -677,9 +677,9 @@ Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Kubernetes engine is a cluster. It has at least one master and potentially multiple worker machines. Worker machines are called nodes. The master and the node machines together perform cluster orchestration.
 
@@ -698,9 +698,9 @@ A typical cluster has one or more nodes, that are called worker machines, which
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 **Etcd**
 Configuration information is stored in Etcd and this information can be used by each of the nodes in the cluster.  
@@ -729,9 +729,9 @@ Controller continuously monitors the state of the cluster through the API Server
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Key components of the Node server that are necessary to communicate with Kubernetes master: 
 **Docker**
@@ -768,9 +768,9 @@ Subsequent section covers pod component in detail.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The pod serves as Kubernetes’ core unit of management. 
 A pod is a group of one or more co-located and co-scheduled containers with shared storage/network and run in a shared context.
@@ -796,10 +796,10 @@ Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 Typically, Containers are often used for solving narrowly defined problems. However, most of the time we end designing for multiple containers to solve a single problem. 
 
@@ -819,9 +819,9 @@ Few if those are listed below:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Pod: In this Yaml file a group of one or more container is declared, so we call it a Pod. In containers in a Pod are deployed together, and are started, stopped, and replicated as a group.
 
@@ -841,9 +841,9 @@ Container: Docker and Kubernetes pods both are configuration files(Yaml) that de
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Pods are designed to support cohesive multiple cooperating processes or containers. These containers, by default, are co-located and co-scheduled in the same machine in the cluster. The machine can be physical or virtual.
 Each of these containers share resources and dependencies, and can communicate and coordinate with one another.
@@ -870,9 +870,9 @@ Volumes allow persistent data in a Pod in case of container restart within the p
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Latest stable API versions are specified when defining configurations.
 
@@ -893,9 +893,9 @@ YAML is preferred for writing Config files.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Group related objects into a single file whenever it makes sense. One file is often easier to manage than several. 
 
@@ -990,9 +990,9 @@ Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 Before we go into how you would do replication, let’s talk about why.  
 
 Typically one may prefer container replication for a variety of reasons.
@@ -1013,9 +1013,9 @@ Scaling: If the load increase become unmanageable for the existing instances, th
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 We are running 4 copies of the application using ReplicaSet. Please note that name, selector, podTemplate and replica syntaxes used.
 
@@ -1029,9 +1029,9 @@ We are running 4 copies of the application using ReplicaSet. Please note that na
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The replication Controller is 4 
 Desired = 4 ( The Defined replication is up and running )
@@ -1048,9 +1048,9 @@ Node    = 4
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The replication Controller is 4 
 Desired Pod = 4 ( The Defined replication is up and running )
@@ -1068,9 +1068,9 @@ Then, one node is going to down. Let’s see how the replica set will replicate 
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The replication Controller is 4 
 Desired Pod = 4 ( The Defined replication is up and running )
@@ -1089,9 +1089,9 @@ Then, one node is going to down. We now have 3 nodes.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The replication Controller is 4 
 Desired Pod = 4 ( The Defined replication is up and running )
@@ -1115,9 +1115,9 @@ The one pod is replicated into node 3.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Despite being replaced by ReplicaSets, Replication Controller, the original form of replication is still widely in use.
 
@@ -1134,9 +1134,9 @@ A Replication Controller allows us to easily create multiple pods ensures that t
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Creating replication using Replication controller. 
 
@@ -1160,9 +1160,9 @@ Pod Template:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Replica Sets are fast replacing RCs. 
 
@@ -1180,9 +1180,9 @@ Replica Set makes sure that required number of pod replicas are running at all t
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Creating replication using Replica set controller. 
 
@@ -1214,9 +1214,9 @@ Pod Template:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 Deployments, intended to replace Replication Controllers, provide the same replication functions (through Replica Sets) but additionally provide the ability to roll out and roll back the changes if required.
 
 When the desired state is specified in the Deployment object, and the Deployment controller ensures the movement to the desired state from the actual state at a controlled rate. 
@@ -1472,9 +1472,9 @@ Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Deployment, nginx-deployment is created and is indicated by the .metadata.name field.
 Three replicated pods are created by the deployment as mentioned in the replicas field

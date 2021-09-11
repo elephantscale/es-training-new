@@ -16,7 +16,7 @@ docker container run -p HOSTPORT:CONTAINERPORT
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -32,7 +32,7 @@ Participant Notes
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -56,7 +56,7 @@ latest: Pulling from library/nginx
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -72,7 +72,7 @@ docker container run -p 8002:80 -d nginx
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -86,7 +86,7 @@ Participant Notes
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -117,7 +117,7 @@ docker logs -f <container name>
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -141,7 +141,7 @@ docker run -d -P -v ~/web-logs:/var/log/nginx nginx
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -166,7 +166,7 @@ Participant Notes
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -182,7 +182,7 @@ Participant Notes
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -198,7 +198,7 @@ Participant Notes
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -212,7 +212,7 @@ Participant Notes
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 

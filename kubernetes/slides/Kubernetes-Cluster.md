@@ -17,10 +17,10 @@ After this module, participants will be able to:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 Please let students know that in addition to the objectives they identified for themselves in taking this module, these are the ones we expect to achieve based on the material provided.
 
-Participant Notes:
+Participant Notes :
 In addition to the objectives you identified in taking this module, these are the ones we expect to achieve based on the material provided.
 
 ---
@@ -40,9 +40,9 @@ In addition to the objectives you identified in taking this module, these are th
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Pod:  represents a running process.  Usually this is an application container
 Service: This is a logical set of Pods that provide a particular service (like web service)
@@ -85,9 +85,9 @@ Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The pod serves as Kubernetes’ core unit of management. 
 A pod is a group of one or more containers with shared storage/network, and a specification for how to run the containers.  
@@ -102,9 +102,9 @@ A pod models an application-specific “logical host” - it contains one or mor
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here we see 2 Pod definitions. 
 A Python one for web application
@@ -122,9 +122,9 @@ We can deploy many pods like those listed above.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here we see a definition of a sample Pod.
 This is defining nginx – a popular web server.
@@ -155,9 +155,9 @@ And the port being used – web services usually listen on port 80.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Docker server: Docker server is a tool that lets you install Docker Engine on virtual hosts, and manage the hosts with docker-server commands.
 Docker Images: An image is an inert, immutable, file that's essentially a snapshot of a container.
@@ -174,9 +174,9 @@ Git:  Git and Docker both have a significant learning curve and can be a cost
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Labels can be used to assign meaningful names.
 For example we can tag a container slated for deployment as follows
@@ -282,9 +282,9 @@ Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Replication Controller (RC) keeps a close eye on number of Pods running.
 If a Pod fails for any reason, RC can spin up a replacement Pod.
@@ -299,9 +299,9 @@ This way we can ensure 'a service' is continue to run, even if some Pods that ar
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here we see the Replication Controller (RC) specification is used to deploy a web application.
 We have 3 Web Pods deployed.
@@ -316,9 +316,9 @@ A sample RC Specification is in the next slide.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here we are deploying 3 containers of Nginx – a popular web server.
 The configuration also specifies the port number (80) the Nginx service listens to.
@@ -350,9 +350,9 @@ Replicas: 3
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 An example of Service might be a web service.
 This Web Service can be powered by say 3 Pods.
@@ -366,9 +366,9 @@ Client accessing the service doesn't care if the 3 Pods are up and running or no
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 How can we expose our 'Web Pod' to outside clients?
 Here is a configuration to map incoming ports to 'Web Pod' ports.
@@ -399,9 +399,9 @@ spec:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 This specification will create a Service which targets TCP port 80 on any Pod with the run: my-nginx,
 
@@ -428,9 +428,9 @@ This specification will create a Service which targets TCP port 80 on any Pod wi
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 Namespaces are 'logical or virtual entities'.
 Multiple Namespaces can be hosted on a single physical cluster.
 
@@ -446,9 +446,9 @@ Resources within a single Namespace, must have unique names.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 A Kubernetes namespace provides the scope for Pods, Services, and Deployments in the cluster.
 Users interacting with one namespace do not see the content in another namespace.
@@ -467,9 +467,9 @@ Users interacting with one namespace do not see the content in another namespace
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Autoscaling is one of the key features in Kubernetes cluster. It allows the scale up / scale down of nodes in response to service responses. 
 
@@ -485,9 +485,9 @@ Horizontal Pod Autoscaling does not apply to “un-scalable” objects.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Implemented as a control loop, Horizontal Pod Autoscaler with a period controlled by the controller manager’s --horizontal-pod-autoscaler-sync-period flag (with a default value of 30 seconds).
 
@@ -512,9 +512,9 @@ Objective metrics produce a proportion target value.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Even though Kubernetes allows for managing the rolling-update  by directly managing replication controllers or by using the deployment object, Horizontal Pod Autoscaler only supports the latter approach
 
@@ -691,13 +691,13 @@ Kubeadm init --apiserver-advertise-address=ipaddress --pod-network-cidr=10.244.0
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 In addition, Detailed installation and configuration will be covered in Lab 1.
 Instructor Notes are the same as Participant Notes.
 Please present the Participant Notes.
 
-Participant Notes:
+Participant Notes :
 
 I will show you step-by-step how to install and configure Kubernetes on CentOS 7. 
 We will be using 1 server ‘ k8s-master' as the Kubernetes Host Master, and 2 servers as Kubernetes node, 'node01' and 'node02’.
@@ -764,9 +764,9 @@ kubectl get nodes
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 In this step, we will add node01 and node02 to join the 'k8s' cluster.
 Connect to the node01 server and run the kubeadm join command.
@@ -798,9 +798,9 @@ node01 and node02 have been added to the kubernetes cluster.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 State is a temporal property of a process. Stateless application process does not keep track of past interactions. It’s a purely functional behavior.
 
@@ -824,9 +824,9 @@ Storage is a persistent way to keep data around.A process executed purely on dat
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Stateful Sets represent a set of Pods with unique, persistent identities and stable hostnames 
 
@@ -853,9 +853,9 @@ Stateful applications without disk access (quadrant D), like a shopping basket s
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 A stateless application is one which depends on no persistent storage. 
 
@@ -888,9 +888,9 @@ Stateless applications without disk access such as a converter services for geo 
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Stateless applications are applications which do not store data or application state to the cluster or to persistent storage. 
 Instead, data and application state stay with the client.
@@ -919,9 +919,9 @@ For example, a frontend application is stateless.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 An example of stateful application is a Web application.  
 Usually data is saved in a database.
@@ -956,9 +956,9 @@ https://k8s.io/docs/artifacts/application/deployment.yaml
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Create an nginx deployment.
 Use kubectl to list information about the deployment.
@@ -979,7 +979,7 @@ Describe the information about the Deployment in a pod. It will list all details
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Participant Notes
 
@@ -1002,9 +1002,9 @@ Explained in following slides.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Examples of StatefulSets are Kafka, MySQL, Redis, ZooKeeper, etc.
 These applications need unique, persistent identities and stable hostnames, so other applications can find them.
@@ -1028,9 +1028,9 @@ These applications need unique, persistent identities and stable hostnames, so o
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here is a sample deployment specification yaml file:
 
@@ -1069,9 +1069,9 @@ apiVersion: webservice1
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 You can run a stateful application by creating a Kubernetes Deployment and connecting it to an existing Persistent Volume using a Persistent Volume Claim.
 For example, this YAML file describes a Deployment that runs MySQL and references the PersistentVolumeClaim.
@@ -1118,9 +1118,9 @@ kubectl describe pvc mysql-pv-claim
 ```
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Created the PVC volume for the pod. 
 Deployed the pod on top of PVC volume. 
@@ -1160,9 +1160,9 @@ The cluster inspects the claim to find the bound volume and mounts that volume f
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Stateful containers need stable hostname and IP.
 Example: Mysql, Postgresql, zookeeper, Kafka. 
@@ -1396,7 +1396,7 @@ Any other questions?
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 Purpose:
 Instruction Time Estimate:   minutes.
 Instructions: 
@@ -1404,7 +1404,7 @@ Question:
 Answer: 
 Follow-up/Debrief:
 
-Participant Notes:
+Participant Notes :
 
 Review the material from this Module and test your understanding. 
 
@@ -1427,7 +1427,7 @@ Refer to Student Exercise Manual.doc to complete this exercise.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 Purpose:
 Instruction Time Estimate:   minutes.
 Instructions: 
@@ -1435,7 +1435,7 @@ Question:
 Answer: 
 Follow-up/Debrief:
 
-Participant Notes:
+Participant Notes :
 
 Review the material from this Module and test your understanding. 
 

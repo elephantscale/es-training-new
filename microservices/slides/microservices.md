@@ -12,10 +12,10 @@ Microservices
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 Monolithic services are what we're trying to move away from.  Monolithic 
 services are built from the "do everything" model.  
@@ -41,10 +41,10 @@ trying to do anything and everything.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 Testability is one of the biggest liabilities of the monolithic service. 
 Although we can write unit tests for each module within the service, there's no 
@@ -149,10 +149,10 @@ We often encounter such issues during daily development tasks. Are the requireme
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
@@ -174,13 +174,13 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Mike Gancarz cam up with the UNIX philosophy
 https://en.wikipedia.org/wiki/Unix_philosophy#Mike_Gancarz:_The_UNIX_Philosophy
 
 
-Participant Notes:
+Participant Notes :
 
 Why does the UNIX Philosophy matter?  It is because this philosophy.
 
@@ -209,7 +209,7 @@ to take that
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 It's important to make clear to participants that the UNIX philosophy is not one that has to be used only on Linux,
 although it certainly is a natural fit for the environment.  
@@ -218,7 +218,7 @@ In this case, we are extending the idea to distributed systems.  Unix was invent
 a thing as distributed systems, so we are more looking at the design pattern as it relates to a new area:
 distributed systems
 
-Participant Notes:
+Participant Notes :
 
 Operating Systems are a mature technology, but design patterns in distributed systems are wide open .
 
@@ -238,10 +238,10 @@ Operating Systems are a mature technology, but design patterns in distributed sy
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 ---
@@ -257,10 +257,10 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 This guide defines what we mean by Microservices. This comes from the original article 
 describing the idea behind microservices.
@@ -278,10 +278,10 @@ describing the idea behind microservices.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 Elasticity means that the application can be freely distributed
 
@@ -301,10 +301,10 @@ Elasticity means that the application can be freely distributed
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 ---
@@ -323,10 +323,10 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 ---
@@ -343,10 +343,10 @@ Participant Notes:
   
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
@@ -365,10 +365,10 @@ Participant Notes:
    
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 A rookie mistake is to split up a service into two just for the purpose of being small. 
 If we have two services that only call each other, then there's no point in doing such
@@ -388,10 +388,10 @@ a split.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 ---

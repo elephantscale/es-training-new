@@ -19,11 +19,11 @@ After this module, participants will be able to:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Please let students know that in addition to the objectives they identified for themselves in taking this module, these are the ones we expect to achieve based on the material provided.
 
-Participant Notes:
+Participant Notes :
 
 In addition to the objectives you identified in taking this module, these are the ones we expect to achieve based on the material provided.
 
@@ -48,9 +48,9 @@ In addition to the objectives you identified in taking this module, these are th
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 In a Kubernetes cluster, it is recommended practice to have all nodes on a 'flat' network – meaning no hierarchical network layout.
 Node to Node communication is essential, and nodes are free to communicate with each other.
@@ -80,9 +80,9 @@ How ever, SDNs can get complicated to administer.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 By default, Docker uses host-private networking..
 So Docker containers can only talk to other Docker containers running on the same machine.
@@ -105,9 +105,9 @@ So we need to allocate ports on hosts carefully so there is no conflict among Do
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Highly-Coupled Container-to-Container Communication
 This happens within a pod and can be treated similarly to the localhost traffic. However, as it does not feature any networking, it is out of the scope of this article.
@@ -159,9 +159,9 @@ Once traffic arrives at a node, it is routed to the correct service backends via
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Kubenet
 It is typically useful for single-node environments. It can be utilized for communication between nodes by using it together with a cloud provider that establishes the rules. 
@@ -195,9 +195,9 @@ Calico provides simple, scalable and secure virtual networking.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 For the illustration of these requirements let us use a cluster with two cluster nodes.
 Nodes are in subnet 192.168.1.0/24 and pods use 10.1.0.0/16 subnet, with 10.1.1.0/24 and 10.1.2.0/24 used by node1 and node2 respectively for the pod IP’s.
@@ -220,9 +220,9 @@ So from above Kubernetes requirements following communication paths must be esta
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here Load Balancer is used to send traffic evenly to running instances.
 As instances are added or removed from the service pool, the Load Balancer will adjust.
@@ -245,9 +245,9 @@ Explained in slide 39: Service Discovery Components
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Client Discovery: 
 Client talks to the Service registry and does load balancing.
@@ -283,9 +283,9 @@ Examples: Consul, AWS ELB, K8s, Docker
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The registry serves as a place to publish available services – think like a 'yellow pages'.
 For example a service that offers zipcode lookup can be advertised in the registry, that can be discovered by other services.
@@ -322,9 +322,9 @@ Load balancing is explained in slide no. 42.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 There various ways of doing health checks.
 
@@ -387,9 +387,9 @@ Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here is an example of an environment variable:
      export  ZIP_CODE_LOOKUP=http://192.168.1.10
@@ -423,9 +423,9 @@ Either way, we can reach the Zipcode lookup service.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 A NodePort service is the most basic way to get external to the service. 
 Specific ports on all the Nodes are open and serve requests.
@@ -442,9 +442,9 @@ It will take into consideration the load on Pods before sending traffic over.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Service name gets mapped to Virtual IP and port using Skydns
 Kube-proxy watches Service changes and updates IPtables. Virtual IP to Service IP, port remapping is achieved using IP tables 
@@ -460,9 +460,9 @@ Kubernetes does not use DNS based load balancing to avoid some of the known issu
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Service name gets mapped to Virtual IP and port using Skydns
 Kube-proxy watches Service changes and updates IP tables. Virtual IP to Service IP, port remapping is achieved using IP tables 
@@ -642,9 +642,9 @@ Kubernetes provides several ways to expose services to the outside.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Standard ports to be used are 30,000 – 32,767.
 If we want to use other ports, we need to use DNAT Proxy service.
@@ -672,9 +672,9 @@ While NodePort approach is simpler, in production systems a Load Balance is reco
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Think of Ingress as a 'router'.
 It uses 'host names' and 'paths' to route the traffic to the correct Pod.
@@ -692,9 +692,9 @@ For example, we can specify all HTTPS (secure HTTP) traffic to be sent to certai
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Here we see we are routing traffic based on rules.
 We are serving both HTTP and HTTPS requests.

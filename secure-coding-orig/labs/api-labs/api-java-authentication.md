@@ -15,9 +15,9 @@ API Java Authentication
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 We are introducing the idea here of how to sercure web services.  In general,
 web services need authentication and authorization to protect their contents
@@ -39,9 +39,9 @@ Authorization: Basic  QWxhZGRpbjpvcGVuIHNlc2FtZQ==
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 HTTP Basic Authentication is, as its name implies, 
 basic.  Unfortunately, it's not particularly secure.  There are 
@@ -63,9 +63,9 @@ later.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Spring Boot gives us a reasonably good "basic" authentication
 with minimal effort.  As a matter of fact, we don't need to do
@@ -80,9 +80,9 @@ We will need to
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 
 ---
@@ -98,9 +98,9 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Cross-Site Network Forgery means that if an attacker can grab a hold of
 a HTTP header of a request, then then he or she can impersonate the user

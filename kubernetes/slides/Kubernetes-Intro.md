@@ -9,11 +9,11 @@ After this module, participants will be able to:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 Please let students know that in addition to the objectives they identified for themselves in taking this module, these are the ones we expect to achieve based on the material provided.
 
-Participant Notes:
+Participant Notes :
 
 In addition to the objectives you identified in taking this module, these are the ones we expect to achieve based on the material provided.
 
@@ -34,9 +34,9 @@ In addition to the objectives you identified in taking this module, these are th
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 As we mentioned above, it is easy to explain what the container orchestration does, and there are tools for that. But it is the same as project management. Although the tools for project management are not lacking, a good project manager is the person who brings the project together. The same goes for a container-based application.
 
@@ -63,9 +63,9 @@ As we mentioned above, it is easy to explain what the container orchestration do
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 If your current software infrastructure looks something like this — maybe Nginx/Apache + PHP/Python/Ruby/Node.js app running on a few containers that talk to a replicated DB — then you might not require container orchestration, you can probably manage everything yourself.
 
@@ -79,9 +79,9 @@ If your current software infrastructure looks something like this — maybe 
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 The standard challenges of container orchestration and application growth are Service Discovery, Load Balancing, Secrets/configuration/storage management, Health checks, and auto deployment.
 
@@ -105,9 +105,9 @@ These are solved with the following architectural principle: decoupling. Decoupl
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 Kubernetes is a powerful open-source system, initially developed by Google, for managing containerized applications in a clustered environment. It aims to provide better ways of managing related, distributed components and services across varied infrastructure.
 
 Its basic level, is a system for running and coordinating containerized applications across a cluster of machines. It is a platform designed to completely manage the life cycle of containerized applications and services using methods that provide predictability, scalability, and high availability.
@@ -130,9 +130,9 @@ Kubernetes originates from Greek, meaning helmsman or pilot, and is the root
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 With Horizontal Pod Autoscaling, Kubernetes automatically scales the number of pods in a replication controller, deployment or replica set based on observed CPU utilization.
 
 Creating a new replication controller with the updated configuration.
@@ -156,9 +156,9 @@ Deleting the original replication controller.
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Kubernetes is an open source container-orchestration system.
 It was originally developed by Google and open sourced under Apache 2 License.
@@ -194,9 +194,9 @@ https://kubernetes.io/
 Notes:
 
 
-Instructor Notes:
+Instructor Notes :
 
-Participant Notes:
+Participant Notes :
 
 Kubernetes manages containers across a cluster.
 It has been proven at large scale infrastructure – remember Google uses Kubernetes at a massive scale.

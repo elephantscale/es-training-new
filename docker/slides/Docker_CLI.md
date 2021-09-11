@@ -8,10 +8,10 @@
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
@@ -28,10 +28,10 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
@@ -47,10 +47,10 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
@@ -71,10 +71,10 @@ FROM ubuntu:latest
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
@@ -93,10 +93,10 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
@@ -114,10 +114,10 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
@@ -138,10 +138,10 @@ docker build -t myfirstapp
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
@@ -154,10 +154,10 @@ Participant Notes:
 
 Notes:
 
-Instructor Notes:
+Instructor Notes :
 
 
-Participant Notes:
+Participant Notes :
 
 
 
