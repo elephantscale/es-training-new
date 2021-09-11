@@ -47,7 +47,7 @@ application images.
 
 ## Docker Architecture
 
-* Docker uses the host kernel on Linux, and thus run natively
+* Docker uses the host kernel on Linux, and thus runs natively
 
 * Unlike virtual machines, docker containers do not have their own guest OS, **they share the host OS**
 
@@ -55,7 +55,28 @@ application images.
 
 * References: [1](https://www.docker.com/resources/what-container)
 
-<img src="../../assets/images/docker/docker-architecture-1.png" style="width:70%;"/>
+<img src="../../assets/images/docker/docker-architecture-1.png" style="width:60%;"/>
+
+---
+
+## Docker Internals
+
+<img src="../../assets/images/docker/docker-under-the-hood-1.jpg" style="width:40%;float:right;"/>
+
+* Docker takes advantage of Linux kernel features like **namespaces**,  **cgroups**, **networking stack**  and **layered file systems**
+
+* **Namespaces** allow an isolated workspace for each container
+
+* Containers get isolated process ids, networking, storage ..etc
+
+<img src="../../assets/images/logos/golang-logo-2.png" style="width:20%;float:right;clear:both;"/>
+
+* Docker is written in [Go programming language](https://golang.org/)
+    - Go was created at Google by the original C-language designers  (Rob Pike, and Ken Thompson), to be a modern and high performance language
+
+* References
+    - [Understanding the Docker Internals](https://medium.com/@BeNitinAgarwal/understanding-the-docker-internals-7ccb052ce9fe)
+    - [Docker internals](http://docker-saigon.github.io/post/Docker-Internals/)
 
 ---
 
@@ -195,7 +216,7 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 
 ## Docker Architecture
 
-<img src="../../assets/images/docker/docker-architecture-2.png" style="width:90%;"/>
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:80%;"/>
 
 ---
 
@@ -209,7 +230,7 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 
 * We only need  **one copy of image on host**
 
-<img src="../../assets/images/docker/docker-architecture-2.png" style="width:70%;"/>
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:60%;"/>
 
 ---
 
@@ -222,7 +243,7 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 
 * Containers run in isolation
 
-<img src="../../assets/images/docker/docker-architecture-2.png" style="width:70%;"/>
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:60%;"/>
 
 ---
 
@@ -234,7 +255,7 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 
 * Here we see the client issuing commands (build/pull/run)
 
-<img src="../../assets/images/docker/docker-architecture-2.png" style="width:70%;"/>
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:60%;"/>
 
 ---
 
@@ -319,301 +340,6 @@ a lot of sense. Many corporate container registries will also mirror some or all
   - Development systems: python, jupyter, tensorflow
   - Discuss any other interesting images you find
   - Note the 'download count' for these images
-
-Notes:
-
----
-
-# Working with Docker
-
----
-
-## Lab Prep
-
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-* **Overview:**
-  - Get access to lab environment
-
-* **Approximate run time:**
-  - 10 mins
-
-* **Instructions:**
-  - Instructor please distribute the lab environment details
-  - Demo accessing lab machine
-
-Notes:
-
----
-
-## Lab-1: Installing Docker
-
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-* **Overview:**
-  - Install docker
-
-* **Approximate run time:**
-  - 15 mins
-
-* **Instructions:**
-  - 01-Install
-  - Follow the instructions for your platform
-
-Notes:
-
----
-
-## Downloading Docker Images
-
-* Before we run a docker container, we need a local copy of the image
-
-* Docker images are hosted at registries like Dockerhub
-
-* **`docker pull`** will download an image from registry to local machine
-
-* Let's pull `alpine` - an ultra-lightweight Linux image, just 5MB in size (tiny).
-
-```bash
-$   docker pull alpine
-```
-
-<img src="../../assets/images/docker/docker-pull-1.png" style="width:60%;"/>
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Anyone who has used Github and Git will find the Docker syntax easy to remember.  Instead of using a copy of the source code repository, Docker will
-store the binary container image (usually a hash) in a local place on the user's hard drive.
-
----
-
-## Check Images
-
-* **`docker images`** will show images we have _locally_
-
-```bash
-$   docker images
-```
-
-```text
-REPOSITORY                  TAG                  IMAGE ID       CREATED         SIZE
-
-alpine                      latest               14119a10abf4   12 days ago     5.6MB
-ubuntu                      focal                f643c72bc252   9 months ago    72.9MB
-nginx                       latest               f6d0b4767a6c   7 months ago    133MB
-```
-
----
-
-## Running a Container
-
-* **`docker run`** is used to run containers
-
-```bash
-$   docker run alpine ls
-```
-
-* This will run `alpine` image and run `ls` command inside the container
-
-* Here is the output
-
-```console
-bin    etc    lib    mnt    proc   run    srv    tmp    var
-dev    home   media  opt    root   sbin   sys    usr
-```
-
-* The container will exit immediately
-
-* Containers are designed to run a job and terminate
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Docker containers can be started with "run" -- this is because it's better to look at running a container as more like an app than a VM.  
-
-Alpine is extremely popular as mini-sized Linux to start containers.  While running with a starter like ubuntu certainly gives a lot more
-power plus the familiarity with ordinary tools like "bash", alpine is great when all we really need is just enough of an OS to run our 
-application.
-
----
-
-## Running a Shell
-
-* Here we are going to run a shell in interactive mode
-
-```bash
-$   docker container run -it --rm alpine /bin/ash
-```
-
-* Parameters explained:
-   - -i : interactive mode
-   - -t : terminal mode
-   - --rm : remove container after we are done
-   - /bin/ash : bash is big and needs to be installed.  ash (almquist shell) is small. We also have old-school sh.
-
-* Output, we will see a shell prompt, displayed.
-
-```console
-/ #
-```
-
-* Execute a few commands
-
-```console
-/ # date
-    Thu Sep  9 06:55:58 UTC 2021
-/ # hostname
-    fea51759ac90
-```
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Many users ask how to "ssh" to the container.  This isn't typically how we accomplish this, instead, what we do is to attach our terminal to the container.
-
-Some containers we probably want to automatically stop when we are not longer using the container. This depends a lot of the use case.  If the container is
-more of background service, then we probably do not want to do this.  However, if it is an interactive application then this is not a bad idea.
-
----
-
-## See Running Containers
-
-* **`docker ps`** will list all running containers
-
-```bash
-# Run two instances of alpine on two terminals
-$   docker run -it alpine /bin/ash
-$   docker run -it alpine /bin/ash
-
-# list running containers
-$   docker ps
-```
-
-* output
-
-```console
-CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES 
-
-80c43841fdb7   alpine  "/bin/ash" 10 seconds ago  Up 10 seconds        boring_franklin
-fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_cannon
-```
-
-* Here we see 2 containers, running alpine image
-    - Even though they are running the same image `alpine`, each container is a unique process
-    - Each container has a unique **container id**
-
-* `ps` will list running containers.  To see all containers, including stopped containers use **`docker ps -a`**
-
----
-
-## Stopping the Containers
-
-* Use **`docker stop`** to stop running containers
-
-```bash
-$   docker ps
-```
-
-```console
-CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES 
-
-80c43841fdb7   alpine  "/bin/ash" 10 seconds ago  Up 10 seconds        boring_franklin
-fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_cannon
-```
-
-* Stop 
-
-```bash
-$   docker stop 80c43841fdb7
-$   docker ps
-```
-
-```console
-CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES 
-
-fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_cannon
-```
-
----
-
-## Removing Containers
-
-* **`stop`** just halts the containers
-    - They are still in the system
-    - Will use up storage 
-    - it will also show up in **`docker ps -a`**
-
-* To cleanup, use **`docker rm`**
-    - This will delete all container related files from the system
-
-* It is a good practice to call **`stop`** followed by **`rm`**
-
-```bash
-$   docker stop 80c43841fdb7
-$   docker rm   80c43841fdb7
-```
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Running "docker rm" is a good way to clean up and de-clutter our container registry.  That said, one should not expect to save lots of space by running docker rm,
-because even larger container images are stored in the base repository, and deleing our derived images from these will not save an extraordinary amount of space.  
-Remember, Docker overlays changes from one filesystem to the next, so only the changes will be removed..
-
----
-
-## Removing a Images
-
-* **`docker rm`** only deletes the container instance (e.g. 80c43841fdb7)
-    - It does **NOT** delete the container **image**.  (e.g. alpine)
-    - The container image is from Docker Hub or another repo.
-    - It is stored locally in our local repo.
-
-* Use **`docker rmi`** to delete image
-
-```bash
-$   docker rmi alpine
-```
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-We differentiate between the container image and the container instance.  The image is not going to be directly deleted this way, but the instance
-will be. 
-
-Knowing the difference between instance and image is extremely important.
-
----
-
-## Lab 2: Running Containers
-
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-* **Overview:**
-  - Run images
-
-* **Approximate run time:**
-  - 20-30 mins
-
-* **Instructions:**
-  - 2.1 - run
-  - 2.2 - delete
 
 Notes:
 
