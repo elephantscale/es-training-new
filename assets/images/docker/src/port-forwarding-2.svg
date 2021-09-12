@@ -13,9 +13,10 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-11 17:50:09 +0000</metadata>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-12 04:59:40 +0000</metadata>
   <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
     <title>Canvas 1</title>
+    <rect fill="white" x="-100" y="440" width="1035" height="772"/>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_5">
@@ -64,7 +65,7 @@
       </g>
       <g id="Graphic_20">
         <text transform="translate(481.0586 905.5)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">nginx1</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">nginx2</tspan>
         </text>
       </g>
       <g id="Graphic_21">
