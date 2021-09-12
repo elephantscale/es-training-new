@@ -541,7 +541,7 @@
 
 * Consider blocks as large numbers
  - Example: 2048 bit long number ~617 decimal long nmber
-* Uses the modular arithmati (residuals)
+* Uses the modular arithmetic (residuals)
  - Example: 73 = 70 + 3 = 14 * 5 + 3 >> 73 mod 5 = 3
 * Encryption and decryption are based on the concept of modular inverses:
  - X is the inverse of Y modulo Z if X*Y=1 modulo Z
