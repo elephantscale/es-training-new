@@ -641,4 +641,11 @@
 
 ---
 
+## Labs
 
+* Labs for this section come from this link
+* [https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java](https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java)
+
+![](../images/defensive-01.png)
+
+---
