@@ -656,7 +656,6 @@ which is intentionally similar to Makefiles.
 
 * Dockerization allows us to develop and deploy microservices easily
 
-
 ---
 
 ## Review and Q&A
