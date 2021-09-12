@@ -1,16 +1,24 @@
-Introduction to OAuth2 in JavaScript
-======================================
+# Introduction to OAuth2 in JavaScript
 
 # Basics
+
+---
+
 
 ## What Is It
 
 ![image of oauth](../images/def_oauth.png) <!-- {"left" : 0.8, "top" : 2.44, "height" : 2.62, "width" : 8.65} -->
 
 
+---
+
+
 ## Application
 
 ![image of application](../images/modern_app.png) <!-- {"left" : 0.95, "top" : 1.11, "height" : 5.27, "width" : 8.35} -->
+
+
+---
 
 
 ## Typical Payload of OAuth2 Access Token
@@ -32,11 +40,18 @@ Introduction to OAuth2 in JavaScript
 ```
 <!-- {"left" : 0, "top" : 1.15, "height" : 3.94, "width" : 10.05} -->
 
+---
+
+
 ## Defining OAuth 2.0
 * Is not an authentication method
 * Is an authorization method
 * Standard is silent about the user
 * RFC6749
+
+---
+
+
 ## Actors
 
 ![image on main actors](../images/oauth_actors.png) <!-- {"left" : 0.66, "top" : 1.44, "height" : 4.62, "width" : 8.93} -->
@@ -44,6 +59,9 @@ Introduction to OAuth2 in JavaScript
 * Different types of applications require different means to achieve authorization
 * Where can the token be delivered to?
 * Can the client application safely store secrets?
+
+---
+
 
 ## Making Decision
 * How can you safely achieve authorization?
@@ -55,12 +73,18 @@ Introduction to OAuth2 in JavaScript
     - Device Code
 
 
+---
+
+
 ## Clients
 * Confidential clients: 
    -  Clients that can maintain the confidentiality of their credentials
    - Example: web applications
 * Public clients:
    -  Clients that cannot maintain the confidentiality of their credentials
+
+---
+
 
 ## Client Examples
 * JavaScript clients
@@ -72,22 +96,41 @@ Introduction to OAuth2 in JavaScript
     - JavaScript apps
 
 
+---
+
+
 ## Endpoints: On Authorization Server
   - Authorization endpoint
     - Used by the client to get authorization the owner of resource through user-agent redirection
   - Token endpoint
     - Client uses this token to exchange an authorization grant for an access tokent usualy with client authentication
+
+---
+
+
 ## Endpoints: On Client
+
+* On client
+
   - Redirection endpoint
     - Authorization server uses it to return responses containing authorization credentials to the client through resource owner user=agent
 
 
+---
+
+
 ## What About Authorization server?
-We don't have to implement Authorization server
+* We don't have to implement Authorization server
   - Identity server 
     - For example: @leastprivilege and @brockallen Implement OAuth 2.0 and OpenID Connect
 
+---
+
+
 # Authorizing Access To API
+
+---
+
 
 ## Client Credentials Flow
 * Machine to machine communication
@@ -97,16 +140,26 @@ We don't have to implement Authorization server
   - A public client doesn't safely store the client secret
 
 
+---
+
+
 ## Flow In A Picture
 
 ![image of credential flow](../images/cred_flow.png) <!-- {"left" : 0.33, "top" : 1.66, "height" : 4.18, "width" : 9.6} -->
 
 
+---
+
+
 ## How About Angular?
+
 * Question: Can we use client credential for our Angular applications?
 
-* Answer: Yes but * It is not safe *
+* Answer: Yes but __It is not safe__
 * It's like to lock the door but leave the key on it 
+
+
+---
 
 
 
@@ -118,8 +171,14 @@ We don't have to implement Authorization server
 * No client authentication because a public user cannot store the secret safely
 
 
+---
+
+
 ## Implicit Flow In A Picture
 ![image of implicit flow](../images/implicit_flow.png) <!-- {"left" : 0.84, "top" : 1.4, "height" : 4.71, "width" : 8.56} -->
+
+
+---
 
 
 ## Authorization Code Flow
@@ -128,8 +187,14 @@ We don't have to implement Authorization server
 * Includes a client authentication step
 
 
+---
+
+
 ## Authorization Code Flow In A Picture
 ![image of authorization code flow](../images/code_flow.png) <!-- {"left" : 0.92, "top" : 1.35, "height" : 4.79, "width" : 8.41} -->
+
+
+---
 
 
 ## Resource Owner Password Credentials Flow 
@@ -140,20 +205,35 @@ We don't have to implement Authorization server
 * High risk in compared to other flows so it is the last choice
 
 
+---
+
+
 ## Flow In A Picture
 ![image of resource owner flow](../images/res_flow.png) <!-- {"left" : 0.71, "top" : 1.75, "height" : 3.99, "width" : 8.83} -->
+
+---
+
 
 ## Device Code Flow
 * Between devices that have Internet connection but not browser
 * Flow between smart TVs, media consols, etc.
 
+---
+
+
 ## Device Code Flow In A Picture
 ![image of device flow](../images/device.png)
+
+---
+
 
 ## Angular And Cross-Origin Resource Sharing
 * Browsers prevent the web page from making AJAX requests to another domain
 * `Cross-Origin Resource Sharing (CORS)` is `W3C` standard
 * Allows server to relax the same origin policy
+
+---
+
 
 ## Example:
  - Origin: http://elephantscale.com
@@ -162,7 +242,13 @@ We don't have to implement Authorization server
  - Different scheme: https://elephantscale.com
  - Different subdomain: http://www.elephantscale.com
 
+---
+
+
 # OpenID Connect
+
+---
+
 
 ## Problem?
 
@@ -173,6 +259,9 @@ We don't have to implement Authorization server
 Solution: OpenID Connect
 
 
+---
+
+
 ## OpenID Connect
 
 * A simple identity layer on the OAuth 2 protocol
@@ -180,6 +269,9 @@ Solution: OpenID Connect
 * Core functionality:
     - Authentication
     - Claims about the user
+
+
+---
 
 
 
@@ -202,6 +294,11 @@ Solution: OpenID Connect
 
 }
 ```
+
+
+---
+
+
 ## OpenID Connect token
 * `id_token` contains claims about the authentication of an end user (and other requested claims)
 * `id_token` can be used for signing in to an application
@@ -211,11 +308,18 @@ Solution: OpenID Connect
  - Can be used by the client to get more user information of the authenticated user
  - These claims are requested with the `access_token`
 
+
+---
+
+
  ## OpenID Connect Flow
 
 Extends authorization code of OAuth 2 and implicit flow
 
 ![image of openid flow](../images/openid_flow.png) <!-- {"left" : 1.11, "top" : 2, "height" : 4.5, "width" : 8.03} -->
+
+---
+
 
 ## Scopes And Claims 
 * OpenID Connect adds `identity` scopes to `OAuth 2.0` resource scopes
@@ -228,6 +332,8 @@ Extends authorization code of OAuth 2 and implicit flow
         - ...
 
 ## Scopes And Claims, cont'd
+
+* Email and phone
     - email scope:
         - email
         - verified-email
@@ -235,18 +341,27 @@ Extends authorization code of OAuth 2 and implicit flow
         - phone-num
         - verified-num
 
+---
 
 # OpenID Connect On Clients
+
+---
+
+
 ## Choosing The Right Flow
+
 * Depends on the `response_type` is requested
 * Authorization code: Confidential clients
 * Implicit: Public clients
 * Hybrid: Confidential or public clients if you send auth code to the server not user agent
 
 
+---
+
+
 ## Helper Components
 
-Helper components for `JavaScript`:
+* Helper components for `JavaScript`:
     - `oidc` client
     - `oidc` token manager
     ```bash
@@ -255,10 +370,20 @@ Helper components for `JavaScript`:
     ```
 
 
+---
+
+
 # Impersonating The User
+
+
+---
+
 
 ## A Bit API Level
 ![image of impersonating user](../images/imp_user.png)  <!-- {"left" : 0.94, "top" : 1.55, "height" : 4.4, "width" : 8.37} -->
+
+
+---
 
 
 ## Role-Based Authentication
@@ -267,9 +392,19 @@ Helper components for `JavaScript`:
  - A role claim is an example, and allows role-based authorization
 
 
+---
+
+
 # Credentials
+
+---
+
+
 ## Diagram
  ![image of credintials](../images/cred.png)  <!-- {"left" : 0.47, "top" : 1.64, "height" : 4.23, "width" : 9.32} -->
+
+
+---
 
 
 ## Two-Factor Authentication
@@ -281,6 +416,9 @@ Helper components for `JavaScript`:
 
  ![image of two factor auth](../images/key.png)
 
+---
+
+
 ## Additional Resources
 * Entity Framework Persistence Layer
 ```bash
@@ -291,4 +429,8 @@ https://github.com/IdentityServer/IdentityServer3.EntityFramework
 ```bash
 https://github.com/IdentityManager/IdentityManager
 ```
+
+
+---
+
 
