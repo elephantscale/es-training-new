@@ -1,10 +1,12 @@
 ## to generate slides
-##  $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
+##      ./gen.sh
 
-./About-Kubernetes.md
-./Kubernetes-Intro.md
-../../docker/slides/z_Container_Fundamentals.md
-$ES_HOME/es-training-collaboration/microservices/slides/microservices.md
+About-Kubernetes.md
+
+../../docker/slides/Container_Intro.md
+
+Kubernetes-Intro.md
+
 ./Kubernetes-Basics.md
 ./Kubernetes-Cluster.md
 ./Kubernetes-Advanced.md

@@ -1,0 +1,25 @@
+# to generate slides
+#       ./gen.sh 
+
+# outline
+../kubernetes-with-docker-outline-5-days.pdf
+
+About-Kubernetes-Docker-5-days.md
+
+## Docker 
+../../docker/slides/Container_Intro.md
+../../docker/slides/Docker_Intro.md
+../../docker/slides/Docker_Containers_and_Images.md
+../../docker/slides/Docker_Development.md
+../../docker/slides/Docker_Networking_and_Storage.md
+../../docker/slides/Docker_Ops.md
+../../docker/slides/Docker_Orchestration.md
+
+## Kubernetes
+About-Kubernetes-Docker-5-days.md
+
+Kubernetes-Intro.md
+
+#Kubernetes-Basics.md
+#Kubernetes-Cluster.md
+#Kubernetes-Advanced.m

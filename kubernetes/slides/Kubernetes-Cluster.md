@@ -35,7 +35,7 @@ In addition to the objectives you identified in taking this module, these are th
   * Service
   * Namespace
 
-![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 6.46, "top" : 2.65, "height" : 3.15, "width" : 3.49} -->
+![](../../assets/images/logos/kubernetes-logo-4-medium.png) <!-- {"left" : 6.46, "top" : 2.65, "height" : 3.15, "width" : 3.49} -->
 
 
 Notes:
