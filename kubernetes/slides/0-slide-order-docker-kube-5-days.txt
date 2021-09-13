@@ -2,8 +2,9 @@
 #       ./gen.sh 
 
 # outline
-../kubernetes-with-docker-outline-5-days.pdf
+#../kubernetes-with-docker-outline-5-days.pdf
 
+# About
 About-Kubernetes-Docker-5-days.md
 
 ## Docker 
@@ -16,10 +17,8 @@ About-Kubernetes-Docker-5-days.md
 ../../docker/slides/Docker_Orchestration.md
 
 ## Kubernetes
-About-Kubernetes-Docker-5-days.md
-
 Kubernetes-Intro.md
+Kubernetes-Essentials.md
 
-#Kubernetes-Basics.md
 #Kubernetes-Cluster.md
 #Kubernetes-Advanced.m

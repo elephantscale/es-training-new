@@ -543,7 +543,7 @@ Notes:
   * Volume does not allow data sharing between containers or lifecycle management
 
 
-![](../../assets/images/kubernetes/Docker-host.png) <!-- {"left" : 1.83, "top" : 2.09, "height" : 5.06, "width" : 6.58} -->
+![](../../assets/images/docker/docker-volumes-1.png) <!-- {"left" : 1.83, "top" : 2.09, "height" : 5.06, "width" : 6.58} -->
 
 Notes:
 

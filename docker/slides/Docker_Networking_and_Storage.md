@@ -313,6 +313,14 @@ $ docker volume rm my-vol
 
 ---
 
+## Docker Volumes
+
+* Managed volumes are stored under `/var/lib/docker` directory
+
+<img src="../../assets/images/docker/docker-volumes-1.png" style="width:60%;" />
+
+---
+
 ## Volume Summary
 
 * Volumes are easier to back up or migrate than bind mounts.

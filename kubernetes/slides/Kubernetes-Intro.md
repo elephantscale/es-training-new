@@ -1,6 +1,6 @@
 # Kubernetes: Intro
 
-<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /> 
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" />
 
 ---
 

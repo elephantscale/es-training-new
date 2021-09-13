@@ -4,6 +4,157 @@
 
 ---
 
+# Microservices
+
+---
+
+## Monolithic Apps
+
+* In the 'old days' we developed monolithic apps
+
+* Large and complex applications, that did 'the whole thing'
+
+* Imagine an online order processing app built as a monolithic app
+
+* All the modules are compiled-into one giant program
+
+<img src="../../assets/images/docker/monolithic-vs-microservices-1.png" style="width:50%;" />
+
+---
+
+## Issues with Monolithic Apps
+
+* Monolithic apps are very hard to maintain / update!
+
+* When update 'feature A', would I inadvertently break 'feature B'?
+
+* And developers need to understand the whole software before they can be productive
+
+* Building / testing / shipping all took lot of time
+
+<img src="../../assets/images/deep-learning/3rd-party/xkcd-compiling.png" style="width:35%;" />
+
+---
+
+## Issues with Monolithic Apps
+
+* **Amazon's Jeff Bezos API Mandate (year 2002?)**
+    1. All teams will henceforth expose their data and functionality through service interfaces.
+    2. Teams must communicate with each other through these interfaces.
+    3. There will be no other form of interprocess communication allowed: no direct linking, no direct reads of another team’s data store, no shared-memory model, no back-doors whatsoever. The only communication allowed is via service interface calls over the network.
+    4. It doesn’t matter what technology they use. HTTP, Corba, Pubsub, custom protocols — doesn’t matter.
+    5. All service interfaces, without exception, must be designed from the ground up to be externalizable. That is to say, the team must plan and design to be able to expose the interface to developers in the outside world. No exceptions.
+    6. <mark>Anyone who doesn’t do this will be fired.</mark>
+    7. Thank you; have a nice day!
+* [Reference](https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/)
+
+---
+
+## Redesigning our Monolithic App
+
+* Here we have broken down our online ordering app into smaller pieces
+
+* The main app, now relies on a bunch of 'services' to perform certain tasks
+
+* Each service can evolve independently, as long as they maintain API compatibility
+
+* Much better separation, much easier to maintain each component, and our online-order app is much smaller!
+
+<img src="../../assets/images/docker/monolithic-vs-microservices-2.png" style="width:55%;" />
+
+---
+
+## What is Microservice?
+
+* Microservices is a software design principle. It lets individual components focus on their well-defined functionality and implementation technology.
+
+* Microservices allow to break the monolithic application into a collection of smaller-scale services.
+
+* Microservice is an independently deployable service modeled around a business domain.
+
+* Microservice is self-contained and implements a single business capability.
+
+* Smart components using simple communication channels like a simple RESTish protocol or lightweight messaging queue.
+
+* Microservices can help create scalable, testable software that can be delivered weekly, not yearly.
+
+Notes:
+
+Instructor Notes :
+
+Please let students know that in addition to the objectives they identified for themselves in taking this module, these are the ones we expect to achieve based on the material provided.
+
+Participant Notes :
+
+In addition to the objectives you identified in taking this module, these are the ones we expect to achieve based on the material provided.
+
+---
+
+## Microservice Pros
+
+* Develop independently
+
+* Deploy frequently
+
+* Test often and individually
+
+* Each group is free to use the preferred latest technology
+
+* Easy to install
+
+* Easy to detect and debug issues in an individual microservice
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+Microservice architecture gives developers the freedom to independently develop and deploy services
+Independent, easy and frequent deployment. One service can be tested, built and deployed without doing this for all services (or the whole application).
+Independent services are easier to test.
+Easy to understand and modify for developers, thus can help a new team member become productive quickly.
+The developers can make use of the latest technologies and code is organized around business capabilities.
+Easy installation, configuration and deployment. This can be a pain when using application servers.
+It is easier to debug any issues with a specific Microservice.
+
+---
+
+## Microservice Cons
+
+* Not all qualities of microservices are perfect.
+
+* The division is too granular and testing becomes more complicated and tedious.
+
+* There is additional organizational overhead.
+
+* Teams may duplicate their efforts.
+
+* More configuration management is required.
+
+* Transactions may require multi-phase commit.
+
+* Partitioning of the application into microservices depends on the skills of the architect.
+
+* Good architects are rare.
+
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+Due to distributed deployment, testing can become complicated and tedious A microservice can be developed by a fairly small team.
+Increased effort for operations, deployment and monitoring. Each service is a separate deployment units, which has to be released, tested and monitored. This means a) that the delivery workflow has be automated
+Being a distributed system, it can result in duplication of effort
+Increased configuration management. For each microservice we need to create a dedicated build and delivery pipeline. 
+When the number of services increases, integration and managing whole products can become complicated.
+Partitioning the application into microservices is very much an art.
+It is extremely difficult to find good architects for creating Microservice architecture in the right way.
+
+---
+
 # Deployment Problem
 
 ---
@@ -349,24 +500,24 @@ The performance is one thing, but what about the time it takes to start?
 
 ---
 
-## VMs vs. Containers
 
-<img src="../../assets/images/docker/vm-vs-docker-1.png" style="width:60%;"/>
+## Containers
 
----
+<img src="../../assets/images/docker/container-architecture-1.png" style="width:50%;float:right;"/>
 
-## What are Containers
+* Containers virtualize the OS just like hypervisors virtualizes the hardware.
 
-<img src="../../assets/images/docker/vm-vs-docker-1.png" style="width:50%;float:right;"/>
+* Containers enable any payload to be encapsulated as a lightweight, portable, self-sufficient container.
+
+* Wraps up a piece of software in a complete filesystem that contains everything it needs to run, such as:
+    - Code
+    - Runtime
+    - System tools
+    - Libraries, etc.  
 
 * Only the "Userland" is virtualized
 
-* 'Application Code + Filesystem Image code' are packaged together
-
 * Kernel is shared with the host
-
-* Both Host and Guest have to be the same OS
-   - Usually Linux or Windows
 
 Notes:
 
@@ -389,6 +540,8 @@ In order for this to work, the kernel has to be the same.  In the past, this has
 | Isolation        | Uses Virtualization API of host kernel for some isolation | Uses guest isolation for more robust isolation |
 | Guest OS Support | Same as Host (usually Linux)                              | Can run any OS that supports host CPU.         |
 | Start/Stop Time  | milliseconds                                              | seconds to minutes                             |
+
+<img src="../../assets/images/docker/vm-vs-docker-1.png" style="width:50%;"/>
 
 Notes:
 
@@ -444,6 +597,31 @@ Instructor Notes :
 Participant Notes :
 
 This slide follows up with the Matrix From Hell, showing that the same container is able to run on all of our production, test, QA, staging, and development platforms.
+
+---
+
+## Containers are Portable
+
+* A developer needs to focus the energy on developing the container
+
+* The container can then be deployed in any portable environmetn
+
+* Truly **write once, deploy anywhere**
+
+<img src="../../assets/images/docker/container-portability-1.png" style="width:60%;" />
+
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+The basic properties of containers is that they deliver of promises made above. 
+
+They can run on top of any Linux – because they re-use the Linux kernel functionality.
+And, because they build their own environment, they can be moved to another OS.
+Finally, built into the container architecture is their ability to work well together.
 
 ---
 
@@ -627,6 +805,8 @@ which is intentionally similar to Makefiles.
 
 ## Dockerizing Applications
 
+<img src="../../assets/images/docker/dockerizing-applications.png" style="width:50%;float:right;" />
+
 * Here we are packaging applications into containers.
 
 * Multiple containers can run on a same machine
@@ -637,24 +817,20 @@ which is intentionally similar to Makefiles.
 
 * But they share host-os (linux)
 
-<img src="../../assets/images/docker/dockerizing-applications.png" style="width:50%;" />
-
 ---
 
-## Microservices
+## Docker is the Shipping Container for Code
 
-<img src="../../assets/images/docker/docker-microservices-1.png" style="width:50%;float:right;" />
+<img src="../../assets/images/docker/docker-Shipping.png" style="width:90%;" />
 
-* **Microservices** : Developing multiple smaller applications rather than ONE giant monolithic application
 
-* This pattern allows developers to develop and deploy individual services much quicker
+Notes:
 
-* For example, imagine a online shipping application
-    - It can query one service to do a address to GPS translation
-    - It can query another  webservice to calculate sales tax
-    - ...etc
+Instructor Notes :
 
-* Dockerization allows us to develop and deploy microservices easily
+Participant Notes :
+
+By contrast to the situation we described before, Docker allows to ship software into the pre-defined, controlled environment. That is because each container is built by Docker and is therefore know and tested.
 
 ---
 

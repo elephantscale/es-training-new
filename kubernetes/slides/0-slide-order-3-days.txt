@@ -7,7 +7,7 @@ About-Kubernetes.md
 
 Kubernetes-Intro.md
 
-./Kubernetes-Basics.md
+./Kubernetes-Essentials.md
 ./Kubernetes-Cluster.md
 ./Kubernetes-Advanced.md
 

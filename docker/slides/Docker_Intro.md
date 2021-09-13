@@ -80,6 +80,43 @@ application images.
 
 ---
 
+## What Has Docker Done For Us?
+
+* **Continuous delivery**
+
+    - Gaining traction for its consistency in delivery and deployment across  environment.
+    - Configured to maintain all configurations and dependencies internally.
+
+* **Improved Security**
+
+    - Ensures applications and resources are isolated and segregated from each other.
+
+* **Run anything, anywhere**
+
+    - Portability across multi-cloud platforms such as AWS, Azure, Rackspace, etc.
+    - Allows for a high-level of abstraction from your infrastructure layer.
+
+* **Reproducibility**
+
+    - Ensure consistency across multiple development and release cycles.
+    - Standardizes environment and allows version control.
+
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+Docker containers are supported across many operating systems (Windows, Mac and Linux) – these are called 'host environment'.
+So an application running within a Docker container will have the exact same environment regardless of the host environment.
+
+Also Docker images are built using a 'Dockerfile' – it specifies how exactly the Docker image is to be constructed.
+This is why we consider Docker a reproducible environment.
+
+
+---
+
 ## Docker Desktop for Windows (Developer)
 
 <img src="../../assets/images/logos/windows-logo-1.png" style="width:30%;float:right;"/>
@@ -211,6 +248,18 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 ---
 
 # Docker Architecture
+
+---
+
+## Docker Concepts
+
+* We will learn all these concepts:
+    - Container
+    - Image
+    - Registry
+    - Volumes
+    - Docker client / server architecture
+    - Command line tools
 
 ---
 
