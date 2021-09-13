@@ -68,7 +68,7 @@ nginx                       latest               f6d0b4767a6c   7 months ago    
 
 ## Containers
 
-<img src="../../assets/images/docker/container-anatomy-1.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/docker/container-anatomy-1.png" style="width:30%;float:right;"/>
 
 * Containers have an extra 'writable layer' on top'
 
