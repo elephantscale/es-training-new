@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-682 -503 2429 1404" width="2429" height="1404">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="80" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="80" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-13 10:04:49 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_37">
+        <path d="M -615.5 -392.5 L 736 -392.5 C 743.732 -392.5 750 -386.232 750 -378.5 L 750 882 C 750 889.732 743.732 896 736 896 L -615.5 896 C -623.232 896 -629.5 889.732 -629.5 882 L -629.5 -378.5 C -629.5 -386.232 -623.232 -392.5 -615.5 -392.5 Z" fill="white"/>
+        <path d="M -615.5 -392.5 L 736 -392.5 C 743.732 -392.5 750 -386.232 750 -378.5 L 750 882 C 750 889.732 743.732 896 736 896 L -615.5 896 C -623.232 896 -629.5 889.732 -629.5 882 L -629.5 -378.5 C -629.5 -386.232 -623.232 -392.5 -615.5 -392.5 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18.0,18.0" stroke-width="9"/>
+      </g>
+      <g id="Graphic_36">
+        <path d="M -560.5 -304 L -16 -304 C -13.790861 -304 -12 -302.20914 -12 -300 L -12 -23 C -12 -20.79086 -13.790861 -19 -16 -19 L -560.5 -19 C -562.70914 -19 -564.5 -20.79086 -564.5 -23 L -564.5 -300 C -564.5 -302.20914 -562.70914 -304 -560.5 -304 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(-677 -498)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="80" font-weight="700" fill="#250060" x="58.08594" y="80">Docker Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <text transform="translate(-497.25 -259.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="80" font-weight="700" fill="#250060" x="120.99219" y="80">Web</tspan>
+          <tspan font-family="Century Gothic" font-size="80" font-weight="400" fill="#250060" x="14.585938" y="178">Container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <path d="M 136.5 -304 L 681 -304 C 683.2091 -304 685 -302.20914 685 -300 L 685 -23 C 685 -20.79086 683.2091 -19 681 -19 L 136.5 -19 C 134.29086 -19 132.5 -20.79086 132.5 -23 L 132.5 -300 C 132.5 -302.20914 134.29086 -304 136.5 -304 Z" fill="#a4f8fd"/>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(199.75 -259.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="80" font-weight="700" fill="#250060" x="96.20703" y="80">Mysql</tspan>
+          <tspan font-family="Century Gothic" font-size="80" font-weight="400" fill="#250060" x="14.585938" y="178">Container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <path d="M -92.92475 443.2814 C -157.46544 426.54 -131.72824 285.60485 -28.771423 309.6525 C -19.219305 262.77594 100.50563 270.38453 99.72293 309.6525 C 174.7941 259.42828 270.7306 359.57437 206.38158 409.7986 C 283.5972 434.1486 205.4072 565.3431 142.03657 543.4275 C 136.965 579.9556 23.67737 592.73844 13.733903 543.4275 C -50.415435 596.0892 -184.17703 515.1189 -92.92475 443.2814 Z" fill="#ffc0c0"/>
+      </g>
+      <g id="Line_30">
+        <path d="M 407.50884 -19 L 406.1104 141.55896 L 329.64007 141.55896 L 174.80427 302.03884" stroke="#cd0069" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_29">
+        <path d="M -285.94532 -19 L -283.36507 140.53893 L -201.20048 140.53893 L -52.355805 306.90345" stroke="#cd0069" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(-72.31818 396.54)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="24.98584" y="50">Docker0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(330 153)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="8.005859" y="50">172.17.0.3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(-457 153)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="8.005859" y="50">172.17.0.2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(-72.31818 600.5483)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="8.005859" y="50">172.17.0.1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <circle cx="501.5" cy="631.0483" r="145.500232494726" fill="#e3a92e"/>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(374.5 804)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="8.005859" y="50">127.0.0.11</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(379.5 546.04833)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="53.40137" y="70">DNS</tspan>
+          <tspan font-family="Century Gothic" font-size="70" font-weight="400" fill="#250060" x="18.623535" y="155">Server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <path d="M 857 -272.14286 L 1287.1973 -272.14286 C 1289.4064 -272.14286 1291.1973 -270.352 1291.1973 -268.14286 L 1291.1973 -111.64286 C 1291.1973 -109.43372 1289.4064 -107.64286 1287.1973 -107.64286 L 857 -107.64286 C 854.7909 -107.64286 853 -109.43372 853 -111.64286 L 853 -268.14286 C 853 -270.352 854.7909 -272.14286 857 -272.14286 Z" fill="#aa97fe"/>
+      </g>
+      <g id="Graphic_20">
+        <path d="M 1312.4444 -272.14286 L 1742.6417 -272.14286 C 1744.8509 -272.14286 1746.6417 -270.352 1746.6417 -268.14286 L 1746.6417 -111.64286 C 1746.6417 -109.43372 1744.8509 -107.64286 1742.6417 -107.64286 L 1312.4444 -107.64286 C 1310.2353 -107.64286 1308.4444 -109.43372 1308.4444 -111.64286 L 1308.4444 -268.14286 C 1308.4444 -270.352 1310.2353 -272.14286 1312.4444 -272.14286 Z" fill="#aa97fe"/>
+      </g>
+      <g id="Graphic_19">
+        <path d="M 857 -95.69841 L 1287.1973 -95.69841 C 1289.4064 -95.69841 1291.1973 -93.90755 1291.1973 -91.69841 L 1291.1973 64.80159 C 1291.1973 67.01073 1289.4064 68.80159 1287.1973 68.80159 L 857 68.80159 C 854.7909 68.80159 853 67.01073 853 64.80159 L 853 -91.69841 C 853 -93.90755 854.7909 -95.69841 857 -95.69841 Z" fill="#ebdea6"/>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 1312.4444 -95.69841 L 1742.6417 -95.69841 C 1744.8509 -95.69841 1746.6417 -93.90755 1746.6417 -91.69841 L 1746.6417 64.80159 C 1746.6417 67.01073 1744.8509 68.80159 1742.6417 68.80159 L 1312.4444 68.80159 C 1310.2353 68.80159 1308.4444 67.01073 1308.4444 64.80159 L 1308.4444 -91.69841 C 1308.4444 -93.90755 1310.2353 -95.69841 1312.4444 -95.69841 Z" fill="#ebdea6"/>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 857 80.74603 L 1287.1973 80.74603 C 1289.4064 80.74603 1291.1973 82.53689 1291.1973 84.74603 L 1291.1973 241.24603 C 1291.1973 243.45517 1289.4064 245.24603 1287.1973 245.24603 L 857 245.24603 C 854.7909 245.24603 853 243.45517 853 241.24603 L 853 84.74603 C 853 82.53689 854.7909 80.74603 857 80.74603 Z" fill="#ebdea6" fill-opacity=".2021212"/>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 1312.4444 80.74603 L 1742.6417 80.74603 C 1744.8509 80.74603 1746.6417 82.53689 1746.6417 84.74603 L 1746.6417 241.24603 C 1746.6417 243.45517 1744.8509 245.24603 1742.6417 245.24603 L 1312.4444 245.24603 C 1310.2353 245.24603 1308.4444 243.45517 1308.4444 241.24603 L 1308.4444 84.74603 C 1308.4444 82.53689 1310.2353 80.74603 1312.4444 80.74603 Z" fill="#ebdea6" fill-opacity=".2021212"/>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 857 257.19048 L 1287.1973 257.19048 C 1289.4064 257.19048 1291.1973 258.98134 1291.1973 261.19048 L 1291.1973 417.6905 C 1291.1973 419.8996 1289.4064 421.6905 1287.1973 421.6905 L 857 421.6905 C 854.7909 421.6905 853 419.8996 853 417.6905 L 853 261.19048 C 853 258.98134 854.7909 257.19048 857 257.19048 Z" fill="#ebdea6"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 1312.4444 257.19048 L 1742.6417 257.19048 C 1744.8509 257.19048 1746.6417 258.98134 1746.6417 261.19048 L 1746.6417 417.6905 C 1746.6417 419.8996 1744.8509 421.6905 1742.6417 421.6905 L 1312.4444 421.6905 C 1310.2353 421.6905 1308.4444 419.8996 1308.4444 417.6905 L 1308.4444 261.19048 C 1308.4444 258.98134 1310.2353 257.19048 1312.4444 257.19048 Z" fill="#ebdea6"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 857 433.6349 L 1287.1973 433.6349 C 1289.4064 433.6349 1291.1973 435.4258 1291.1973 437.6349 L 1291.1973 594.1349 C 1291.1973 596.34406 1289.4064 598.1349 1287.1973 598.1349 L 857 598.1349 C 854.7909 598.1349 853 596.34406 853 594.1349 L 853 437.6349 C 853 435.4258 854.7909 433.6349 857 433.6349 Z" fill="#fcf9ed"/>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 1312.4444 433.6349 L 1742.6417 433.6349 C 1744.8509 433.6349 1746.6417 435.4258 1746.6417 437.6349 L 1746.6417 594.1349 C 1746.6417 596.34406 1744.8509 598.1349 1742.6417 598.1349 L 1312.4444 598.1349 C 1310.2353 598.1349 1308.4444 596.34406 1308.4444 594.1349 L 1308.4444 437.6349 C 1308.4444 435.4258 1310.2353 433.6349 1312.4444 433.6349 Z" fill="#fcf9ed"/>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 857 610.0794 L 1287.1973 610.0794 C 1289.4064 610.0794 1291.1973 611.8702 1291.1973 614.0794 L 1291.1973 770.5794 C 1291.1973 772.7885 1289.4064 774.5794 1287.1973 774.5794 L 857 774.5794 C 854.7909 774.5794 853 772.7885 853 770.5794 L 853 614.0794 C 853 611.8702 854.7909 610.0794 857 610.0794 Z" fill="#eadea5"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 1312.4444 610.0794 L 1742.6417 610.0794 C 1744.8509 610.0794 1746.6417 611.8702 1746.6417 614.0794 L 1746.6417 770.5794 C 1746.6417 772.7885 1744.8509 774.5794 1742.6417 774.5794 L 1312.4444 774.5794 C 1310.2353 774.5794 1308.4444 772.7885 1308.4444 770.5794 L 1308.4444 614.0794 C 1308.4444 611.8702 1310.2353 610.0794 1312.4444 610.0794 Z" fill="#eadea5"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(863.0986 -238.89286)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="80" font-weight="700" fill="#250060" x="126.59766" y="80">Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(1318.5431 -238.89286)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="80" font-weight="700" fill="#250060" x="175.40625" y="80">IP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <clipPath id="clip_path">
+          <rect x="0" y="0" width="306" height="146"/>
+        </clipPath>
+        <text clip-path="url(#clip_path)" transform="translate(1374.5431 -49.94841)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="10.207031" y="60">172.17.0.2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <clipPath id="clip_path_2">
+          <rect x="0" y="0" width="336" height="146"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_2)" transform="translate(1359.5431 126.49603)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="25.20703" y="60">172.17.0.3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(995.0918 -55.94841)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">Web</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(973.4048 120.49603)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">Mysql</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <line x1="402.5821" y1="524.70564" x2="853" y2="-266.2131" stroke="#ec5597" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_2">
+        <line x1="542.83855" y1="775.71095" x2="852.9071" y2="774.59155" stroke="#ec5597" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>
