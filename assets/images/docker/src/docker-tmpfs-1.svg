@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-366 40 1267 652" width="1267" height="652">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#b50000">
+      <g>
+        <path d="M -3.2 0 L 0 1.2 L 0 -1.2 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-13 10:07:33 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-366" y="40" width="1267" height="652"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_19">
+        <path d="M -347.5 43 L 882.5 43 C 890.7843 43 897.5 49.71573 897.5 58 L 897.5 674 C 897.5 682.2843 890.7843 689 882.5 689 L -347.5 689 C -355.78427 689 -362.5 682.2843 -362.5 674 L -362.5 58 C -362.5 49.71573 -355.78427 43 -347.5 43 Z" fill="white"/>
+        <path d="M -347.5 43 L 882.5 43 C 890.7843 43 897.5 49.71573 897.5 58 L 897.5 674 C 897.5 682.2843 890.7843 689 882.5 689 L -347.5 689 C -355.78427 689 -362.5 682.2843 -362.5 674 L -362.5 58 C -362.5 49.71573 -355.78427 43 -347.5 43 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12.0,12.0" stroke-width="6"/>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 510.5 447 L 736.4633 447 C 739.2247 447 741.4633 449.2386 741.4633 452 L 741.4633 576.375 C 741.4633 579.1364 739.2247 581.375 736.4633 581.375 L 510.5 581.375 C 507.7386 581.375 505.5 579.1364 505.5 576.375 L 505.5 452 C 505.5 449.2386 507.7386 447 510.5 447 Z" fill="#e3a92e"/>
+        <path d="M 510.5 447 L 736.4633 447 C 739.2247 447 741.4633 449.2386 741.4633 452 L 741.4633 576.375 C 741.4633 579.1364 739.2247 581.375 736.4633 581.375 L 510.5 581.375 C 507.7386 581.375 505.5 579.1364 505.5 576.375 L 505.5 452 C 505.5 449.2386 507.7386 447 510.5 447 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(522.98115 483.6875)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Memory</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 44.75 116 L 490.25 116 C 493.0114 116 495.25 118.23858 495.25 121 L 495.25 245.375 C 495.25 248.13642 493.0114 250.375 490.25 250.375 L 44.75 250.375 C 41.988576 250.375 39.75 248.13642 39.75 245.375 L 39.75 121 C 39.75 118.23858 41.988576 116 44.75 116 Z" fill="#a4f8fd"/>
+        <path d="M 44.75 116 L 490.25 116 C 493.0114 116 495.25 118.23858 495.25 121 L 495.25 245.375 C 495.25 248.13642 493.0114 250.375 490.25 250.375 L 44.75 250.375 C 41.988576 250.375 39.75 248.13642 39.75 245.375 L 39.75 121 C 39.75 118.23858 41.988576 116 44.75 116 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(148.00537 152.6875)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <path d="M -211.5 401 L 119.5 401 C 122.26142 401 124.5 403.2386 124.5 406 L 124.5 644 C 124.5 646.7614 122.26142 649 119.5 649 L -211.5 649 C -214.26142 649 -216.5 646.7614 -216.5 644 L -216.5 406 C -216.5 403.2386 -214.26142 401 -211.5 401 Z" fill="#ebdea6"/>
+        <path d="M -211.5 401 L 119.5 401 C 122.26142 401 124.5 403.2386 124.5 406 L 124.5 644 C 124.5 646.7614 122.26142 649 119.5 649 L -211.5 649 C -214.26142 649 -216.5 646.7614 -216.5 644 L -216.5 406 C -216.5 403.2386 -214.26142 401 -211.5 401 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(-169.48633 415)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Filesystem</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(-348.5 65)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">HOST</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 87.5 156.905 L 133.31 156.905 C 136.07142 156.905 138.31 159.14358 138.31 161.905 L 138.31 204.47 C 138.31 207.23142 136.07142 209.47 133.31 209.47 L 87.5 209.47 C 84.73858 209.47 82.5 207.23142 82.5 204.47 L 82.5 161.905 C 82.5 159.14358 84.73858 156.905 87.5 156.905 Z" fill="white"/>
+        <path d="M 87.5 156.905 L 133.31 156.905 C 136.07142 156.905 138.31 159.14358 138.31 161.905 L 138.31 204.47 C 138.31 207.23142 136.07142 209.47 133.31 209.47 L 87.5 209.47 C 84.73858 209.47 82.5 207.23142 82.5 204.47 L 82.5 161.905 C 82.5 159.14358 84.73858 156.905 87.5 156.905 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <ellipse cx="110.405" cy="183.1875" rx="15.4050246156789" ry="15.3300244958361" fill="#4040ff"/>
+        <ellipse cx="110.405" cy="183.1875" rx="15.4050246156789" ry="15.3300244958361" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M -158.98164 527 L 66.98164 527 C 69.743065 527 71.98164 529.2386 71.98164 532 L 71.98164 613.375 C 71.98164 616.1364 69.743065 618.375 66.98164 618.375 L -158.98164 618.375 C -161.74307 618.375 -163.98164 616.1364 -163.98164 613.375 L -163.98164 532 C -163.98164 529.2386 -161.74307 527 -158.98164 527 Z" fill="#aa97fe"/>
+        <path d="M -158.98164 527 L 66.98164 527 C 69.743065 527 71.98164 529.2386 71.98164 532 L 71.98164 613.375 C 71.98164 616.1364 69.743065 618.375 66.98164 618.375 L -158.98164 618.375 C -161.74307 618.375 -163.98164 616.1364 -163.98164 613.375 L -163.98164 532 C -163.98164 529.2386 -161.74307 527 -158.98164 527 Z" stroke="#8900a9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="4"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(-152.40991 548.1875)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">Docker area</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <line x1="80.50402" y1="387.07128" x2="205.87767" y2="250.375" marker-start="url(#FilledArrow_Marker)" stroke="#b50000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_6">
+        <line x1="537.3821" y1="434.13017" x2="339.75836" y2="250.375" marker-start="url(#FilledArrow_Marker)" stroke="#b50000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_5">
+        <path d="M 91.72289 550.10736 C 126.96713 535.80256 163.20388 512.8543 192.7034 476.2034 C 247.1785 408.5222 262.9674 313.63413 267.03298 250.375" marker-start="url(#FilledArrow_Marker)" stroke="#b50000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(-57.08795 283.735)" fill="#0232d1">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#0232d1" x="0" y="35">Bind mount</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(245.5 388)" fill="#0232d1">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#0232d1" x="0" y="35">volume</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(471.5 283.735)" fill="#0232d1">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#0232d1" x="5.9558105" y="35">Tmpfs</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#0232d1" x="0" y="78">mount</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

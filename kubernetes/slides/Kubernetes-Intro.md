@@ -1,11 +1,13 @@
 # Kubernetes: Intro
 
-## Module Objectives
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" />
 
-After this module, participants will be able to:
+---
 
- * Understand Kuberentes
- * Describe the purpose of cloud orchestration.
+## Objectives
+
+* Understand container orchestration
+* Get to know Kubernetes
 
 Notes:
 
@@ -23,43 +25,16 @@ In addition to the objectives you identified in taking this module, these are th
 
 ---
 
-## What is Container Orchestration?
+## Evolution of an Web Application
 
-  * Container orchestration is how we manage multi-container applications in the datat center 
-  * By definition, container orchestration is that portion of the management software that brings all of the containers together.
-  * A single container cannot work without the others.
-  * In the data center, containers service to automate the complete operation
-  * Container orchestration is not easy.
+* Let's start with a simple web application
+    - Nginx/Apache + PHP + DB (LAMP)
 
+* We have one web-server and one database.  We could even run them on the same machine
 
-Notes:
+* Most applications start out this way.
 
-Instructor Notes :
-
-Participant Notes :
-
-As we mentioned above, it is easy to explain what the container orchestration does, and there are tools for that. But it is the same as project management. Although the tools for project management are not lacking, a good project manager is the person who brings the project together. The same goes for a container-based application.
-
----
-
-## Container Orchestration Options
-
- * Kubernetes (naturally)
- * Amazon Elastic Container Service (ECS)
- * Microsoft Azure Service Fabric
- * Docker Swarm
- * Apache Mesos
- * Hadoop / YARN
- * Nomad
-
----
-
-## Simple Webapp 
- * Here is a simple webapp that you probably currently have
- * Nginx/Apache + PHP + DB (LAMP)
- * Probably don't need orchestration **UNLESS** you plant to scale.
-
-![](../../assets/images/kubernetes/Shipping-Container.png) <!-- {"left" : 0.65, "top" : 2.00, "height" : 5.12, "width" : 8.94} -->
+<img src="../../assets/images/kubernetes/web-app-1-simple.png" style="width:50%;" />
 
 Notes:
 
@@ -71,11 +46,17 @@ If your current software infrastructure looks something like this — maybe 
 
 ---
 
-## Decoupling
-  * Scalability Requires Decoupling
-  * Caches and Queues Help Decouple
+## Evolution of a Web Application
 
-![](../../assets/images/kubernetes/Shipping-Container-2.png) <!-- {"left" : 0.44, "top" : 2.0, "height" : 5.29, "width" : 9.36} -->
+* Our simple app is getting popular and we need to scale it up
+
+* We need to make sure our database and caching server are up and running before web servers start
+
+* And we need to be sure a web server is ready before load balancer can send traffic to it
+
+* And what happens one one of the components crashes?  We need to restart it
+
+<img src="../../assets/images/kubernetes/web-app-2-scaling.png" style="width:40%;" />
 
 Notes:
 
@@ -89,19 +70,63 @@ These are solved with the following architectural principle: decoupling. Decoupl
 
 ---
 
-## What is Kubernetes?
+## Container Orchestration?
 
-  * Open source project originally conceived by Google.
-  * Google’s 15+ years of experience with containerized apps.
-  * Currently maintained by Cloud Native Computing Foundation.
-  * Red Hat has been a member since day one.
-  * Red Hat is the second largest contributing member.
-  * Greek: Kubernetes  = Helmsman
-  * Also called K8s
-     - Abbreviation derived by replacing 8 letters of “ubernete” with ‘8’ and subsequent ‘s’.
+<img src="../../assets/images/generic/3rd-party/orchestra-music-conductor-1.jpg" style="width:40%;float:right;" />
 
+* Container orchestration is how we manage multi-container applications in the data center
 
-![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+* By definition, container orchestration is that portion of the management software that brings all of the containers together.
+
+* A single container cannot work without the others.
+
+* Container orchestration is not easy.
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+As we mentioned above, it is easy to explain what the container orchestration does, and there are tools for that. But it is the same as project management. Although the tools for project management are not lacking, a good project manager is the person who brings the project together. The same goes for a container-based application.
+
+---
+
+## Container Orchestration Options
+
+* Docker
+    - **Docker Swarm**: Easy to use sytem for small to medium scale
+    - **Docker compose**: Very easy to use for small scale
+
+* **Kubernetes**
+
+* Cloud vendors
+    - **Amazon Elastic Container Service (ECS)**
+    - **Microsoft Azure Service Fabric**
+
+* Big Data stacks
+    - **Apache Mesos**: From Berkeley AMP lab, 
+    - **Hadoop YARN**: Popular for Big Data workloads
+
+* **Nomad** from Hashicorp
+
+---
+
+## Kubernetes
+
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:30%;float:right;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+
+<img src="../../assets/images/kubernetes/3rd-party/helmsman-1.png" style="width:30%;float:right;clear:both;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+
+* Open source project originally conceived by Google.
+    - Culminated from Google’s 15+ years of experience with containerized apps.
+
+* Currently maintained by [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/)
+
+* Trivia
+    - Kubernetes in Greek means **pilot Helmsman** of a ship
+    - Also called **K8s**; Abbreviation derived by replacing 8 letters of "ubernete" with ‘8’ and subsequent ‘s’.
+
 
 Notes:
 
@@ -114,19 +139,23 @@ Its basic level, is a system for running and coordinating containerized applicat
 
 Kubernetes originates from Greek, meaning helmsman or pilot, and is the root of governor and cybernetic. K8s is an abbreviation derived by replacing the 8 letters “ubernete” with “8”.
 
-
 ---
 
-## What is Kubernetes? (Cont.)
+## Kubernetes (Cont.)
 
-  * Particularly suited for horizontally scalable, stateless, or 'microservices' application architectures.
-  * Start, stop, update, and manage a cluster of machines running containers in a consistent and maintainable way.
-  * Additional functionality to make containers easier to use in a cluster.
-  * Provides container-centric management environment.
-  * Provides the simplicity of PaaS with the flexibility of IaaS.
-  * Enables portability across infrastructure providers.
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:30%;float:right;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
 
-![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 3.74, "top" : 5, "height" : 2.26, "width" : 2.77} -->
+* Particularly suited for horizontally scalable, stateless, or 'microservices' application architectures.
+
+* Start, stop, update, and manage a cluster of machines running containers in a consistent and maintainable way.
+
+* Additional functionality to make containers easier to use in a cluster.
+
+* Provides container-centric management environment.
+
+* Provides the simplicity of PaaS with the flexibility of IaaS.
+
+* Enables portability across infrastructure providers.
 
 Notes:
 
@@ -139,43 +168,12 @@ Creating a new replication controller with the updated configuration.
 Increasing/decreasing the replica count on the new and old controllers until the correct number of replicas is reached.
 Deleting the original replication controller.
 
-
 ---
 
-## What Does Kubernetes Do?
+## Kuberetes Features
 
-* Improves Reliability
-
-* Better Use of Infrastructure Resources
-
-* Easy Co-ordination of Deployments
-
-
-![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 3.66, "top" : 3.81, "height" : 2.66, "width" : 2.92} -->
-
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Kubernetes is an open source container-orchestration system.
-It was originally developed by Google and open sourced under Apache 2 License.
-Kubernetes supports multiple containers, including the very popular Docker containers.
-
-Reference :
-https://kubernetes.io/
-
----
-
-## What Does Kubernetes Do? (Cont.)
-
-
-  * **Improves Reliability**
-
+* **Improves Reliability**
     - Handles the work of deploying, scaling and managing the containerized applications.
-
     - Brings software development and operations together by design.
 
 * **Better use of Infrastructure Resources**
@@ -190,9 +188,7 @@ https://kubernetes.io/
 
     - Which containers need to be deployed and where?
 
-
 Notes:
-
 
 Instructor Notes :
 
@@ -206,97 +202,95 @@ Kubernetes tries to evenly balance the load on the cluster machines.  So there a
 
 ---
 
-## User Perspective
+## Why Kubernetes Over Other Orchestrators?
 
-  * User view
+* Open-Source / Free
 
-![](../../assets/images/kubernetes/api-container.png) <!-- {"left" : 0.28, "top" : 3.13, "height" : 1.75, "width" : 9.73} -->
+* By far most popular orchestrator!
 
-Notes:
+* Very platform agnostic: i.e. Kubernetes can be used with bare-metal, virtual machines, cloud, Open stack, etc.
 
----
+* Not only for container-based orchestration. You can also use it with normal clustering, compute workloads
 
-## Why Kubernetes over other orchestrators
- * Open-Source / Free
- * By far most popular orchestrator!
- * Very platform agnostic: i.e. Kubernetes can be used with bare-metal, virtual machines, cloud, Open stack, etc.
- * Not only for container-based orchestration. You can also use it with normal clustering, compute workloads
- * Not tied with any other specific company or platform like Docker. 
- * Many companies support Kubernetes based clustering, including Google, Amazon Web Services, etc.
+* Not tied with any other specific company or platform like Docker.
+
+* Many companies support Kubernetes based clustering, including Google, Amazon Web Services, etc.
 
 ---
 
+## Managed Kubernetes
 
-## Other Orchestrators
+<img src="../../assets/images/kubernetes/3rd-party/starship-enterprise-1.jpg" style="width:50%;float:right;" />
 
- * **Mesos**
-    - Another Orchestrator designed at UC Berkley AMPLab
-    - Open Source
-    - Popular for Apache Spark at Databricks
-    - Niche
- * **Hadoop / YARN**
-    - Popular for Big Data workloads
-    - Integrated with Hadoop ecosystem
- * **Docker Swarm**
-    - Integrated with Docker
-    - Easy to Use
-    - Minimal Configuration Required
- * **Nomad**
-    - 
-
-
----
-
-## Managed Kuberentes
-
- * Kuberentes is fairly complex:
+* Kubernetes is fairly complex:
    - Lots of complex configuration required even for the simplest applications
-   - Very simple applications using standard configs "feel" quite complex.
- * Kubernetes-as-a-Service (KAAS) is a **thing**! 
- * **KAAS** is mainly going to be about cluster management:
-    - start/stop cluster VMs
-    - Install/configure update daemons like `fluentd` and `etcd`
-    - Install/configure plugins like flannel and weave.
- * Vendors also allow things like:
-    - dashboards
-    - GUI tools
-    - monitoring
+
+* **Kubernetes-as-a-Service (KAAS)** is a very popular offering in the cloud
+
+* **KAAS** provides a fully managed K8s cluster
+
+* Some KAAS offerings: 
+    - EKS (Amazon Elastic Kubernetes Service), GCE (Google Container Engine), AKS (Azure Kubernetes Services), PKS (Pivotal Container Service)
+
+* **Quiz** : What is the minimum crew compliment for Startrek Enterprise? :-)
 
 ---
 
-## Managed Kubernetes Services
- * PKS: Pivotal Container Service
- * EKS: Amazon AWS Elastic Kubernetes Service
- * GCE: Google Container Engine
- * AKS: Microsoft Azure Kubernetes Service
+# Kubernetes Use Cases
 
 ---
 
-## Installing Kubernetes
+## Use Cases
 
- * There are two types of "install" for kubernetes:
-   - Developer Install (test / learning / dev)
-   - Cluster Install (prod / dev / test) 
- * Developer: There are two basic Developer Concigurations:
-    - Minikube
-    - microk8s
+* [kubernetes.io/case-studies/](https://kubernetes.io/case-studies/) has very interesting use cases
 
-## Minikube (for Developers)
+* We will look at a couple
+    - Nokia
+    - Pinterest
 
-  * Minikube works very similarly to Docker Toolbox.
-  * Minikube can run on any platform that supports VirtualBox (Linux, Mac, Windows)
-  * Users install Oracle VirtualBox on their systems.
-    - User CPU must support virtualization (VT-x, AMD-V)
-    - Virtualization *must* be enabled in the BIOS. (Usually *not* by default)
-  * Minikube will install a VM in virtualbox and run it
-  * A CLI called `minikube` will allow users to interact with the VM
+* Case studies / use cases are very good way to see how people are using K8s
 
-## Installing Microk8s (for Developers)
-  * MicroK8s works on Linux machines **only**.
-    - **NOT** BSD or other Unix-like OSs including Mac
-  * No need of a VM or virtualization
-  * It is installed as a snap for any machine that supports snaps
-    - installs in seconds!
-  * Ubuntu Web Store / etc
-  * It runs the kubernetes daemons locally on the users' system
+---
 
+## Kubernetes @ Nokia
+
+<img src="../../assets/images/logos/nokia-logo-1.png" style="width:30%;float:right;" />
+
+* **The Challenge**
+    - Nokia and Telecom operators were running services on  diverse environments (bare metal and virtualized machines, public cloud, private cloud).  There was no uniform way to deploy applications
+    - Telco applications demand high availability, ("five nines"  99.999% - only 10 minutes downtime a year)
+
+* **Solution**
+    - Kubernetes enabled Nokia to deploy applications consistently across many environments
+    - Increased hardware utilizations (no wasted resources)
+    - Reliable application uptimes (resilient to hardware failures)
+
+* [Read more](https://kubernetes.io/case-studies/nokia/)
+
+---
+
+## Kubernetes @ Pinterest
+
+<img src="../../assets/images/logos/pinterest-logo-1.png" style="width:30%;float:right;" />
+
+* **The Challenge**
+    - Pinterest has experienced huge popularity, and has grown to 1000+ microservices and home-grown infrastructure.
+    - Even though Pinterest has been running in the cloud from inception, they were not utilizing cloud resources efficiently
+
+* **Solution**
+    - K8s allowed Pinterest to move infrastructure related tasks to a industry standard, proven technology
+    - Containerizing services allowed teams to develop and deploy rapidly
+    - Was able to reclaim 80% of resource usage during off-peak hours, due to dynamic scaling provided K8s
+
+* [Read more](https://kubernetes.io/case-studies/pinterest/)
+
+---
+
+## Wrap up and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* What are some of your challenges that you can see Kubernetes can possibly address
+
+* Any questions?

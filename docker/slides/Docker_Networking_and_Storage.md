@@ -42,7 +42,7 @@ d28a41f8631c   none                null      local
 
 * On a bridge network, containers can reach other
 
-<img src="../../assets/images/docker/docker-networking-2.png" style="width:50%;" />
+<img src="../../assets/images/docker/docker-networking-2.png" style="width:40%;" />
 
 Notes:
 
@@ -86,10 +86,9 @@ $   docker run -d  --name nginx  -p 8000:80   nginx
 $   curl  localhost:8000
 ```
 
-<br clear="all"/>
 
-<img src="../../assets/images/docker/port-forwarding-4.png" style="width:35%;float:left;" />
-<img src="../../assets/images/docker/port-forwarding-1.png" style="width:35%;float:right;" />
+<img src="../../assets/images/docker/port-forwarding-4.png" style="width:28%;" /> &nbsp; &nbsp;
+<img src="../../assets/images/docker/port-forwarding-1.png" style="width:31%;" />
 
 ---
 
@@ -185,7 +184,7 @@ Notes:
 
 ## Container Data
 
-<img src="../../assets/images/docker/container-anatomy-1.png" style="width:40%;float:right;" />
+<img src="../../assets/images/docker/container-anatomy-1.png" style="width:30%;float:right;" />
 
 * By default all files created inside a container are stored on a writable container layer
 
@@ -310,6 +309,14 @@ $ docker volume inspect my-vol
 ```bash
 $ docker volume rm my-vol
 ```
+
+---
+
+## Docker Volumes
+
+* Managed volumes are stored under `/var/lib/docker` directory
+
+<img src="../../assets/images/docker/docker-volumes-1.png" style="width:60%;" />
 
 ---
 

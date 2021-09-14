@@ -35,7 +35,7 @@ In addition to the objectives you identified in taking this module, these are th
   * Service
   * Namespace
 
-![](../../assets/images/kubernetes/Kubernetes-logo.png) <!-- {"left" : 6.46, "top" : 2.65, "height" : 3.15, "width" : 3.49} -->
+![](../../assets/images/logos/kubernetes-logo-4-medium.png) <!-- {"left" : 6.46, "top" : 2.65, "height" : 3.15, "width" : 3.49} -->
 
 
 Notes:
@@ -543,7 +543,7 @@ Notes:
   * Volume does not allow data sharing between containers or lifecycle management
 
 
-![](../../assets/images/kubernetes/Docker-host.png) <!-- {"left" : 1.83, "top" : 2.09, "height" : 5.06, "width" : 6.58} -->
+![](../../assets/images/docker/docker-volumes-1.png) <!-- {"left" : 1.83, "top" : 2.09, "height" : 5.06, "width" : 6.58} -->
 
 Notes:
 
