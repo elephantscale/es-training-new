@@ -842,4 +842,9 @@ Image Credit: spanning.com/blog/cross-site-forgery-web-based-application-securit
 
 ![](../images/csrf.png)
 
+Notes:
+
+* Goat labs solutions
+* https://github.com/WebGoat/WebGoat/wiki/(Almost)-Fully-Documented-Solution-(en)
+
 ---

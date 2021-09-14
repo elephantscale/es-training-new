@@ -1,6 +1,4 @@
-Introduction to REST Endpoint Security
-======================================
-
+# Introduction to REST Endpoint Security
 
 ## Lesson Objectives
 
@@ -24,7 +22,7 @@ Introduction to REST Endpoint Security
 * Easily revokable
 
 
-## A Little Bit History
+## A Little of History
 
 * OAuth 1.0
  - Core specification - 2007
@@ -356,7 +354,7 @@ String expires_in = oauth_resp.getExpiresIn();
 * Spring + REST
 1. Set up the framework
 2. Secure it
-* The link will be provided
+* https://github.com/timfox456/java-fsd-phase3/tree/main/SpringSecurity
 
 
 
