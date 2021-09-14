@@ -115,7 +115,7 @@ Instructor Notes :
 Participant Notes :
 
 Increased Portability:  
-The ability to add to the container and then deploy across multiple platforms allows Docker to be run almost anywhere. This is important because it lets developers write code on a local development environment, test it locally and then push to production without having to worry about things not working. All environments are exactly the same; you won’t hear the phrase “It worked on my local environment!” ever again.
+The ability to add to the container and then deploy across multiple platforms allows Docker to be run almost anywhere. This is important because it lets developers write code on a local development environment, test it locally and then push to production without having to worry about things not working. All environments are exactly the same; you won’t hear the phrase "It worked on my local environment!" ever again.
 
 Faster Startup Speeds:  
 We try to have all our clients running on the same environment, but with so many hosting solutions and CMS systems being used, this just isn’t a feasible or scalable solution. For our developers, switching between client production environments used to mean wasting time waiting for virtual machines to get up and running. Not anymore. Docker allows us to easily start and stop the correct containers for each client in seconds. Getting our local environments up and running quickly means we can get to work fixing issues right away.
@@ -197,7 +197,7 @@ Accelerate development, deployment and rollback of tens or hundreds of container
 
 Integrate modern methodologies and automate development pipelines with the integration of Docker and DevOps.
 
-Cloud migration, multi-cloud or hybrid cloud infrastructure require frictionless portability of applications. Docker packages applications and their dependencies together into an isolated container making them portable to any infrastructure. Eliminate the “works on my machine” problem once and for all. Docker certified infrastructure ensures the containerized applications work consistently.
+Cloud migration, multi-cloud or hybrid cloud infrastructure require frictionless portability of applications. Docker packages applications and their dependencies together into an isolated container making them portable to any infrastructure. Eliminate the "works on my machine" problem once and for all. Docker certified infrastructure ensures the containerized applications work consistently.
 
 The first step with Docker is to modernize the existing application portfolio. Packaging existing apps into containers immediately improves security, reduce costs, and gain cloud portability.
 
@@ -261,6 +261,80 @@ As we mentioned above, it is easy to explain what the container orchestration do
 * Users interact with K8s cluster via APIs
 
 <img src="../../assets/images/kubernetes/kubernetes-architecture-2-user-view.png" style="width:90%;" /><!-- {"left" : 0.28, "top" : 3.13, "height" : 1.75, "width" : 9.73} -->
+
+Notes:
+
+---
+
+
+## Pod vs. Container
+
+![](../../assets/images/kubernetes/Pod-Container1.png) <!-- {"left" : 0.45, "top" : 1.23, "height" : 4.83, "width" : 9.32} -->
+
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+Pod: In this Yaml file a group of one or more container is declared, so we call it a Pod. In containers in a Pod are deployed together, and are started, stopped, and replicated as a group.
+
+Container: Docker and Kubernetes pods both are configuration files(Yaml) that define container instances from images. Docker by itself is just a file that has the capacity to contain services(containers) for communication, it is inherently non distributed.
+
+---
+
+## General Configuration Cont.
+
+  * Group related objects into a single file wherever possible, which makes it easy to manage
+  * Note  that many kubectl commands can be called on a directory.
+  * Avoid specifying default values - simple, minimal configuration make it less error prone.
+  * Put object descriptions in annotations, to allow better introspection.
+  * Avoid naked Pods - Naked Pods will not be rescheduled when node fails.
+
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+Group related objects into a single file whenever it makes sense. One file is often easier to manage than several. 
+
+Many kubectl commands can be called on a directory.
+
+Default values should not be specified unnecessarily to minimize the errors during configuration.
+
+Put object descriptions in annotations, to allow better introspection.
+
+---
+
+## Lab: Hello Node Kubernetes
+
+
+  * **Overview:** In this lab we will create the first Node in Kubernetes. The goal of this hands-on lab is for you to turn code that you have developed into a replicated application running on Kubernetes
+
+  * **What you'll do**
+    - Create a Node.js server
+    - Create a Docker container image
+    - Create a container cluster
+    - Create a Kubernetes pod
+    - Scale up your services
+
+
+Notes:
+
+---
+
+## Lab: Hello Node Kubernetes
+
+  * **Approximate time:**
+
+    - 20-30 minutes
+
+* **Link to the lab**
+
+    - https://www.qwiklabs.com/focuses/564?parent=catalog
 
 Notes:
 
