@@ -11,10 +11,14 @@ enclave for static and dynamic secrets.
 * HashiCorp Consul solves the challenges of service discovery, 
 configuration management, and network segmentation in distributed applications.
   
-* In this course you will learn the basics of using Vault, 
-including managing secrets, configuring policies, and reviewing audit logs. 
-You will also learn how to connect dynamic applications using Consul service discovery and
-service mesh.
+## Learning objectives 
+
+* Learn the basics of using Vault 
+* Familiarize oneself with managing secrets
+* Be able to find applicable secrets engines use cases
+* Become proficient in Vault configuring policies
+* Acquire skills for reviewing Vault audit logs 
+* Learn how to connect dynamic applications using Consul service discovery and service mesh
 
 ## Audience
 Developers, Architects
