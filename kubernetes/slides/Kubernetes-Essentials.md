@@ -143,15 +143,15 @@ Notes:
 
 ## Kubernetes Architecture
 
-<img src="../../assets/images/kubernetes/kubernetes-architecture-2.png" style="width:90%;" /><!-- {"left" : 0.33, "top" : 1.05, "height" : 5.91, "width" : 9.58} -->
+* Kubernetes engine is a cluster. It has at least one master and potentially multiple worker machines. Worker machines are called nodes. The master and the node machines together perform cluster orchestration.
+
+<img src="../../assets/images/kubernetes/kubernetes-architecture-2.png" style="width:70%;" /><!-- {"left" : 0.33, "top" : 1.05, "height" : 5.91, "width" : 9.58} -->
 
 Notes:
 
 Instructor Notes :
 
 Participant Notes :
-
-Kubernetes engine is a cluster. It has at least one master and potentially multiple worker machines. Worker machines are called nodes. The master and the node machines together perform cluster orchestration.
 
 Kubernetes master
 The master's lifecycle is managed by Kubernetes Engine when you create or delete  a cluster. 
@@ -163,7 +163,7 @@ A typical cluster has one or more nodes, that are called worker machines, which
 
 ## Kubernetes Master Architecture
 
-* API server is crucial, as pretty much all interaction happens through it
+* We will look at all these components in detail in the next few slides
 
 <img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:80%;" /><!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
 
@@ -173,30 +173,65 @@ Instructor Notes :
 
 Participant Notes :
 
-**Etcd**
-Configuration information is stored in Etcd and this information can be used by each of the nodes in the cluster.  
-Etcd is an HA key value store and can be distributed among various nodes in the cluster. Being a distributed key value store, it is accessible to all.
-Etcd contains sensitive information and hence is accessible only by the Kubernetes API server.  
+---
 
-**API Server**
-Kubernetes, an API server provides for all the operation using the API, in the cluster. 
-API server acts as an interface, whereby different tools and libraries can readily communicate with it. In this case, it is used to communicate with API, UI, and CLI clients.
+## Kubernetes Master
 
-**Scheduler** 
-Scheduler, being one of the key components of Kubernetes master, is responsible for workload distribution.
-It is also responsible for monitoring, tracking of utilization and redistribution of the workload on the nodes based on their resource availability.
-Scheduler is also responsible for allocation of the pod to a new node.
+<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:50%;float:right;" /><!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
 
-**Controller** 
-Kubernetes Controller is a daemon that embeds the core control loops shipped with Kubernetes. 
-Controller continuously monitors the state of the cluster through the API Server watch feature. Upon notification, it initiates necessary changes to move to the desired state.
+* **Etcd**
+
+* Configuration information is stored in Etcd and this information can be used by each of the nodes in the cluster.  
+
+* Etcd is an highly-available key value store and can be distributed among various nodes in the cluster. Being a distributed key value store, it is accessible to all.
+
+* Etcd contains sensitive information and hence is accessible only by the Kubernetes API server.  
+
+* References:
+    - [Etcd vs Zookeeper](https://dzone.com/articles/apache-zookeeper-vs-etcd3)
+    - [Etcd vs other datastores](https://etcd.io/docs/v3.3/learning/why/)
 
 ---
 
-## Kubernetes Architecture: Node
+## Kubernetes Master
 
-![](../../assets/images/kubernetes/Kubernetes-Node-Architecture.png) <!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:50%;float:right;" /><!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
 
+* **API Server**
+
+    - API Server handles majority of user/admin interactions in the cluster
+
+    - API server is very crucial
+
+* **Scheduler**
+
+    - Scheduler  is responsible for workload distribution.
+
+    - It is also responsible for monitoring, tracking of utilization and redistribution of the workload on the nodes based on their resource availability.
+
+    - Scheduler is also responsible for allocation of the pod to a new node.
+
+---
+
+## Kubernetes Master
+
+<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:50%;float:right;" /><!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
+
+* **kube-controller-manager** is a binary that runs controllers.  Logically, each controller is a separate process, but to reduce the number of moving pieces in the system, they are all compiled into a single binary and run in a single process.
+
+* These controllers include:
+    - Node Controller: Responsible for noticing & responding when nodes go down.
+    - Replication Controller: Responsible for maintaining the correct number of pods running
+    - Endpoints Controller: Manages endpoints
+    - Service Account & Token Controllers: Create default accounts and API access tokens for new namespaces.
+
+---
+
+## Kubernetes Node Architecture
+
+* K8 Node (worker machine) has quite a bit of components running as well
+
+<img src="../../assets/images/kubernetes/Kubernetes-Node-Architecture.png" style="width:90%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 Notes:
 
@@ -204,38 +239,59 @@ Instructor Notes :
 
 Participant Notes :
 
-Key components of the Node server that are necessary to communicate with Kubernetes master: 
-**Docker**
-Docker is a basic requirement for each node. Dockers help in running the encapsulated app containers in an isolated, self-contained, lightweight environment.
-Kubelet 
-Kubelet, the primary “node agent”, runs on each node and works in line with PodSpec.
-Kubelet communicates with the master component for receiving the commands and for working. It is responsible for maintaining the status quo of the work process and node server. 
+---
 
-**Kube-Proxy** 
-This proxy service runs on each of the nodes and helps in ensuring that services are available to the external host. It also helps in forwarding the service requests to the right containers and performs basic level of load balancing.
-Kube-Proxy ensures the predictability of the networking environment in terms of accessibility without compromising on the isolation.
-It also manages pods on node, volumes, secrets, creating new containers’ health checkup, etc.
+## Kubernetes Node Architecture
 
-Subsequent section covers pod component in detail. 
+<img src="../../assets/images/kubernetes/Kubernetes-Node-Architecture.png" style="width:50%;float:right;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+
+* **Docker**
+    - Docker is a basic requirement for each node. Dockers help in running the encapsulated app containers in an isolated, self-contained, lightweight environment.
+
+* **Kubelet**
+   - Kubelet, the primary "node agent", runs on each node 
+
+   - Kubelet communicates with the master component for receiving the commands and for working. It is responsible for maintaining the status quo of the work process and node server.
 
 ---
 
-# Kubernetes Pod
+## Kubernetes Node Architecture
+
+<img src="../../assets/images/kubernetes/Kubernetes-Node-Architecture.png" style="width:50%;float:right;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+
+* **Kube-Proxy**
+    - KubeProxy is a network proxy that runs on each node in your cluster
+
+    - kube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster
+
+    - kube-proxy uses the operating system packet filtering layer if there is one and it's available. Otherwise, kube-proxy forwards the traffic itself
+
+* **supervisord** is a lightweight process babysitting system for keeping kubelet and docker running.  This is a Linux utility
+
+---
+
+# Pods
+
+---
 
 ## Pod
 
-  * The Pod is the core component of Kubernetes
-  * The Pod is co-located, co-scheduled, and run in a shared context
-  * Containers in the same pod share the same hostname
-  * Each pod is isolated by:
+<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:40%;float:right;" />
 
+* The Pod is the core **unit of management** in K8s
+    - Pods can be scaled up and down
+    - Pods can be moved from Node to Node
+
+* A Pod can run **one more containers**
+
+* The Pod emulates a **logical host**
+    - Containers in the same pod share the same hostname
+
+* Each pod is isolated by:
     - Process ID (PID) namespace
     - Network namespace
     - Inter Process Communication (IPC) namespace
     - Unix Time Sharing (UTS) namespace
-
-  * Pods are scaled up and down
-
 
 Notes:
 
@@ -247,68 +303,23 @@ The pod serves as Kubernetes’ core unit of management.
 A pod is a group of one or more co-located and co-scheduled containers with shared storage/network and run in a shared context.
 It hosts all the specifications that are required run the containers.
 
-A pod models an application-specific “logical host” containing one or more application containers which are relatively tightly coupled.
+A pod models an application-specific "logical host" containing one or more application containers which are relatively tightly coupled.
 
 ---
 
-## What is a Pod?
+## Pods and Containers
 
-  * A Pod is a group of containers which shares networking and storage which are separate from the node
+<img src="../../assets/images/kubernetes/pod-1.png" style="width:50%;float:right;" /> <!-- {"left" : 2.37, "top" : 2.11, "height" : 4.88, "width" : 5.52} -->
 
-![](../../assets/images/kubernetes/VM.png) <!-- {"left" : 2.37, "top" : 2.11, "height" : 4.88, "width" : 5.52} -->
+* Here we see a Pod encapsulating 3 containers
 
-Notes:
-
----
-
-## Pod vs. Container
-
-![](../../assets/images/kubernetes/Pod-Container.png) <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
-
-Notes:
-
-Instructor Notes :
-
-
-Participant Notes :
-
-Typically, Containers are often used for solving narrowly defined problems. However, most of the time we end designing for multiple containers to solve a single problem. 
-
-Thus the main purpose of a multi-container Pod is to support those helper process that are co-located, co-managed for a primary application. 
-
-Few if those are listed below: 
-
-**Sidecar ** “help” the main container – examples are log or data change watchers, monitoring adopters, data loaders that generates data for the primary container etc. Basically, these sidecar containers can be repurposed or reused either within the same group or by different groups.
-**Proxies, bridges, and adapters** creates a connect  between the main container and external world. These can also re-route the traffic to the external work. Thus proxies and bridges make it possible for the main container to access the localhost without any service discovery.
-
----
-
-## Pod vs. Container
-
-![](../../assets/images/kubernetes/Pod-Container1.png) <!-- {"left" : 0.45, "top" : 1.23, "height" : 4.83, "width" : 9.32} -->
-
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Pod: In this Yaml file a group of one or more container is declared, so we call it a Pod. In containers in a Pod are deployed together, and are started, stopped, and replicated as a group.
-
-Container: Docker and Kubernetes pods both are configuration files(Yaml) that define container instances from images. Docker by itself is just a file that has the capacity to contain services(containers) for communication, it is inherently non distributed.
-
----
-
-## How Pods Manage Multiple Containers
-
-  * A Pod might encapsulate an application composed of multiple co-located containers that are tightly coupled and need to share resources.
-  * **Pod diagram:** Pods provide 2 types pf shared resources for containers constituent in them:
+* Pods provide 2 types of shared resources for containers constituent in them:
     - Networking
     - Storage
-  * Each Pod is assigned a unique IP address and containers within them communicate with each another using localhost.
-  * Pod can specify a set of shared storage volumes which can be shared by all the containers within.
 
+* Each Pod is assigned a unique IP address and containers within them communicate with each another using localhost.
+
+* So a Pod acts as a 'virtual host'
 
 Notes:
 
@@ -326,63 +337,103 @@ Storage
 Set of shared storage volumes can be specified in a Pod, which can be accessed by all containers to share the same set of data. 
 Volumes allow persistent data in a Pod in case of container restart within the pod.
 
-
 ---
 
-# Kubernetes Pod Config
+## Pod vs. Container
 
-## General Configuration
+<img src="../../assets/images/kubernetes/Pod-Container.png" style="width:50%;float:right;" /> <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
 
-  * Configurations are defined with the latest stable API version.
-  * Configuration files should be stored in version control before being pushed to the cluster.
-  * Configuration files allow you to quickly roll back a configuration change if necessary.
-  * It also aids cluster re-creation and restoration.
-  * YAML is preferred over JSON as it is more user friendly and can be used inter-changeably.
+* Typically, Containers are often used for solving narrowly defined problems. However, most of the time we end up designing for multiple containers to solve a single problem.
+
+* Thus the main purpose of a multi-container Pod is to **support those helper process** that are co-located, co-managed for a primary application. 
+
+<img src="../../assets/images/kubernetes/3rd-party/Indiana-Jones-And-The-Last-Crusade-2-sidecar.jpg" style="width:35%;float:right;clear:both;" /> <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
+
+* Here we have redis container acting as a local cache for python application.  So they are co-located in a Pod
+
+* This design pattern is called **sidecar** pattern
 
 Notes:
 
 Instructor Notes :
 
+
 Participant Notes :
 
-Latest stable API versions are specified when defining configurations.
 
-Version control stores all the Configuration files prior to pushing them to the cluster. This allows for quick roll-backs if necessary.
+Few if those are listed below: 
 
-YAML is preferred for writing Config files.
+**Proxies, bridges, and adapters** creates a connect  between the main container and external world. These can also re-route the traffic to the external work. Thus proxies and bridges make it possible for the main container to access the localhost without any service discovery.
 
 ---
 
-## General Configuration Cont.
+## Sidecar Pattern
 
-  * Group related objects into a single file wherever possible, which makes it easy to manage
-  * Note  that many kubectl commands can be called on a directory.
-  * Avoid specifying default values - simple, minimal configuration make it less error prone.
-  * Put object descriptions in annotations, to allow better introspection.
-  * Avoid naked Pods - Naked Pods will not be rescheduled when node fails.
+<img src="../../assets/images/kubernetes/3rd-party/Indiana-Jones-And-The-Last-Crusade-2-sidecar.jpg" style="width:35%;float:right;" /> <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
 
+* **Sidecar** containers are **"helpers"** the main container 
 
-Notes:
+* Examples of helper applications are:
+    - log collectors
+    - monitoring adopters
+    - code loaders
 
-Instructor Notes :
+* Here we see **log collecting** feature implemented as a sidecar pattern.  Basically log gathering is a helper function attached to the primary application
 
-Participant Notes :
+<img src="../../assets/images/kubernetes/sidecar-helper-1.png" style="width:45%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
-Group related objects into a single file whenever it makes sense. One file is often easier to manage than several. 
+---
 
-Many kubectl commands can be called on a directory.
+## Sidecar Pattern
 
-Default values should not be specified unnecessarily to minimize the errors during configuration.
+* Another typical application of sidecar pattern is code watchers
 
-Put object descriptions in annotations, to allow better introspection.
+* Here we have a helper that monitors github repository and fetches new code to refresh application
+
+* 'Github monitor' is a separate functionality from the main application, so it makes sense to separate it as another container.  But since they are tied together, they are colocated in the same Pod
+
+* Example app: updating a 'blacklisted IP list'
+
+<img src="../../assets/images/kubernetes/sidecar-helper-2.png" style="width:60%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+
+---
+
+## Pod Spec / Configuration
+
+* **Quick intro to spec/config/manifest files**
+
+* Kubernetes objects are defined in **YAML or JSON** files
+    - YAML is preferred over JSON as it is more user friendly and can be used inter-changeably.
+
+* Configuration files should be stored in version control before being pushed to the cluster.
+    - So we can track changes easily
+    - and quickly roll back a configuration change if necessary.
 
 ---
 
 ## Configuring a Pod  
 
-  * Define a pod with a YAML file
+* Define a pod with a YAML file
 
-![](../../assets/images/kubernetes/Configuring-a-Pod.png) <!-- {"left" : 0.49, "top" : 1.78, "height" : 4.94, "width" : 5.17} -->
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+    - name: web
+      image: nginx
+```
+
+* **`kind: Pod`** specifies that we are defining a Pod object
+
+* Under **`spec`** we include more details
+
+* The docker **`image: nginx`** is used
+
+* We **do not** specify where to place the pod.  K8s will figure it out based on cluster availability
+    - We can give guidance on where the Pod should go -- more on this later
 
 Notes:
 
@@ -390,65 +441,107 @@ Notes:
 
 ## Uploading the Configuration
 
-  * Upload the YAML file to the master
+* Upload the YAML file to the master
 
-![](../../assets/images/kubernetes/pod.yaml.png) <!-- {"left" : 0.99, "top" : 2.43, "height" : 3.15, "width" : 8.27} -->
+```bash
+$   kubectl apply -f pod.yaml
+```
+
+<img src="../../assets/images/kubernetes/pod-2.png" style="width:80%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 Notes:
 
 ---
+
 ## Master Creates the Pod  
 
-  * The master creates a pod on your set of nodes
+* The master creates a pod on your set of nodes
 
-![](../../assets/images/kubernetes/pod.yaml-01.png) <!-- {"left" : 0.99, "top" : 2.18, "height" : 3.15, "width" : 8.27} -->
-
-Notes:
-
----
-
-## Composition of Pod YAML file -
-
-  * A pod file is consists of several parts, for example
-
-![](../../assets/images/kubernetes/Composition.png) <!-- {"left" : 0.26, "top" : 2.02, "height" : 3.99, "width" : 6.25} -->
+<img src="../../assets/images/kubernetes/pod-3.png" style="width:80%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 Notes:
 
 ---
 
-## Lab: Hello Node Kubernetes
+# Hands on With Kubernetes
 
+---
 
-  * **Overview:** In this lab we will create the first Node in Kubernetes. The goal of this hands-on lab is for you to turn code that you have developed into a replicated application running on Kubernetes
+## Lab: Setting up Kubernetes - Single Node
 
-  * **What you'll do**
-    - Create a Node.js server
-    - Create a Docker container image
-    - Create a container cluster
-    - Create a Kubernetes pod
-    - Scale up your services
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
+* **Overview:**
+    - We will use minikube to setup a single node Kubernetes cluster
+
+* **Approximate run time:**
+    - 20-30 mins
+
+* **Instructions:**
+    - **Instructor please demo this lab**
+    - Please complete **install-1**
 
 Notes:
 
 ---
 
-## Lab: Hello Node Kubernetes
+## Lab: Setting up Kubernetes - Multi Node
 
-  * **Approximate time:**
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-    - 20-30 minutes
+* **Overview:**
+    - Setup a 3 node kubernetes cluster
 
-* **Link to the lab**
+* **Approximate run time:**
+    - 40-60 mins
 
-    - https://www.qwiklabs.com/focuses/564?parent=catalog
+* **Instructions:**
+    - **Instructor please demo this lab**
+    - Please complete **install-2**
+
+Notes:
+
+---
+
+## Lab: Running a Pod
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Run a single pod
+
+* **Approximate run time:**
+    - 15 mins
+
+* **Instructions:**
+    - **Instructor please demo this lab**
+    - Please complete **pod-1**
+
+Notes:
+
+---
+
+## Lab: Running Multiple Pods
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Deploy mulitple pods
+
+* **Approximate run time:**
+    - 15 mins
+
+* **Instructions:**
+    - **Instructor please demo this lab**
+    - Please complete **pod-2**
 
 Notes:
 
 ---
 
 # Replica Sets
+
+---
 
 ## What is Kubernetes Replication ?
 

@@ -1,7 +1,7 @@
-# Kubernetes and Docker
+# Docker and Kubernetes
 
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:25%;" />
 <img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /> 
-<img src="../../assets/images/logos/docker-logo-1.png" style="width:35%;" />
 
 ---
 

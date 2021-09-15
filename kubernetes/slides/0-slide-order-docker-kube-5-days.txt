@@ -17,8 +17,8 @@ About-Kubernetes-Docker-5-days.md
 ../../docker/slides/Docker_Orchestration.md
 
 ## Kubernetes
-Kubernetes-Intro.md
-Kubernetes-Essentials.md
+#Kubernetes-Intro.md
+#Kubernetes-Essentials.md
 
 #Kubernetes-Cluster.md
 #Kubernetes-Advanced.m

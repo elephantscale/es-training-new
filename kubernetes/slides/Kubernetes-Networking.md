@@ -48,7 +48,7 @@ After this module, participants will be able to:
 
 ## VXLAN
 
- * VXLAN: “virtual extensible LAN”. 
+ * VXLAN: "virtual extensible LAN". 
  * Encapsulates Level 2 Ethernet with UDP Datagram
  * Similar to VLAN
    - more flexibliity and power (more than 4096 IDs)
@@ -94,7 +94,7 @@ After this module, participants will be able to:
 
 Notes:
 
-BGP: Stands for “border gateway protocol” and is used to manage how packets are routed between edge routers. BGP helps figure out how to send a packet from one network to another by taking into account available paths, routing rules, and specific network policies. BGP is sometimes used as the routing mechanism in CNI plugins instead of encapsulated overlay networks.
+BGP: Stands for "border gateway protocol" and is used to manage how packets are routed between edge routers. BGP helps figure out how to send a packet from one network to another by taking into account available paths, routing rules, and specific network policies. BGP is sometimes used as the routing mechanism in CNI plugins instead of encapsulated overlay networks.
 
 
 ---

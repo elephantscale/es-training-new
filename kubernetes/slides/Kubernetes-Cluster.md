@@ -92,7 +92,7 @@ Participant Notes :
 The pod serves as Kubernetes’ core unit of management. 
 A pod is a group of one or more containers with shared storage/network, and a specification for how to run the containers.  
 A pod’s contents are always co-located and co-scheduled, and run in a shared context. 
-A pod models an application-specific “logical host” - it contains one or more application containers which are relatively tightly coupled-in a pre-container world, they would have executed on the same physical or virtual machine.
+A pod models an application-specific "logical host" - it contains one or more application containers which are relatively tightly coupled-in a pre-container world, they would have executed on the same physical or virtual machine.
 
 
 ---
@@ -475,7 +475,7 @@ Autoscaling is one of the key features in Kubernetes cluster. It allows the sca
 
 Based on CPU utilization, Horizontal Pod Autoscaler scales the number of pods in a replication controller, deployment or replica set automatically 
 
-Horizontal Pod Autoscaling does not apply to “un-scalable” objects.
+Horizontal Pod Autoscaling does not apply to "un-scalable" objects.
 
 ---
 
@@ -1125,7 +1125,7 @@ Participant Notes :
 Created the PVC volume for the pod. 
 Deployed the pod on top of PVC volume. 
 Display the information about the deployment.  Here you will get the Name and IP address and External IP and Ports Age.
-Pod shows up as “Running” when listed in client commands.
+Pod shows up as "Running" when listed in client commands.
 The cluster inspects the claim to find the bound volume and mounts that volume for a pod. For volumes which support multiple access modes, the user specifies which mode is desired when using their claim as a volume in a pod.
 
 ---
