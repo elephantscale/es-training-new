@@ -93,7 +93,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## It is Getting a Bit Crowded :-) 
 
-<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:70%;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:50%;" />
 
 ---
 
@@ -109,9 +109,9 @@ In addition to the objectives you identified in taking this module, these are th
 
 ---
 
-## Step-6: Finalize with Few More Controllers
+## Step-6: Few More Controllers
 
-<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:50%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:45%;float:right;" />
 
 * On the master node, we are adding 2 more controllers
 
@@ -125,7 +125,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 * Whew, we came up with a pretty complicated system!
 
-<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:55%;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:40%;" />
 
 ---
 
@@ -164,6 +164,7 @@ Notes:
 Notes:
 
 ---
+
 ## Kubernetes Architecture
 
 * Kubernetes engine is a cluster. It has at least one master and potentially multiple worker machines. Worker machines are called nodes. The master and the node machines together perform cluster orchestration.
@@ -464,6 +465,7 @@ Few if those are listed below:
 ## Sidecar Pattern
 
 <img src="../../assets/images/kubernetes/3rd-party/Indiana-Jones-And-The-Last-Crusade-2-sidecar.jpg" style="width:35%;float:right;" /> <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
+<img src="../../assets/images/kubernetes/sidecar-helper-1.png" style="width:50%;float:right;clear:both;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 * **Sidecar** containers are **"helpers"** the main container 
 
@@ -473,8 +475,6 @@ Few if those are listed below:
     - code loaders
 
 * Here we see **log collecting** feature implemented as a sidecar pattern.  Basically log gathering is a helper function attached to the primary application
-
-<img src="../../assets/images/kubernetes/sidecar-helper-1.png" style="width:45%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 ---
 
@@ -488,7 +488,7 @@ Few if those are listed below:
 
 * Example app: updating a 'blacklisted IP list'
 
-<img src="../../assets/images/kubernetes/sidecar-helper-2.png" style="width:60%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/kubernetes/sidecar-helper-2.png" style="width:50%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 ---
 
