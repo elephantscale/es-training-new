@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-219 -132 1341 830" width="1341" height="830">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-15 10:32:30 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <path d="M -197 -131 L 1100 -131 C 1110.4934 -131 1119 -122.49341 1119 -112 L 1119 253.39037 C 1119 263.8838 1110.4934 272.39037 1100 272.39037 L -197 272.39037 C -207.4934 272.39037 -216 263.8838 -216 253.39037 L -216 -112 C -216 -122.49341 -207.4934 -131 -197 -131 Z" fill="#f5f6ed"/>
+        <path d="M -197 -131 L 1100 -131 C 1110.4934 -131 1119 -122.49341 1119 -112 L 1119 253.39037 C 1119 263.8838 1110.4934 272.39037 1100 272.39037 L -197 272.39037 C -207.4934 272.39037 -216 263.8838 -216 253.39037 L -216 -112 C -216 -122.49341 -207.4934 -131 -197 -131 Z" stroke="#e1c5c6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M -197 380.4524 L 169 380.4524 C 179.4934 380.4524 188 388.95897 188 399.4524 L 188 541.922 C 188 552.4154 179.4934 560.922 169 560.922 L -197 560.922 C -207.4934 560.922 -216 552.4154 -216 541.922 L -216 399.4524 C -216 388.95897 -207.4934 380.4524 -197 380.4524 Z" fill="white"/>
+        <path d="M -197 380.4524 L 169 380.4524 C 179.4934 380.4524 188 388.95897 188 399.4524 L 188 541.922 C 188 552.4154 179.4934 560.922 169 560.922 L -197 560.922 C -207.4934 560.922 -216 552.4154 -216 541.922 L -216 399.4524 C -216 388.95897 -207.4934 380.4524 -197 380.4524 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 275 380.4524 L 641 380.4524 C 651.4934 380.4524 660 388.95897 660 399.4524 L 660 541.922 C 660 552.4154 651.4934 560.922 641 560.922 L 275 560.922 C 264.5066 560.922 256 552.4154 256 541.922 L 256 399.4524 C 256 388.95897 264.5066 380.4524 275 380.4524 Z" fill="white"/>
+        <path d="M 275 380.4524 L 641 380.4524 C 651.4934 380.4524 660 388.95897 660 399.4524 L 660 541.922 C 660 552.4154 651.4934 560.922 641 560.922 L 275 560.922 C 264.5066 560.922 256 552.4154 256 541.922 L 256 399.4524 C 256 388.95897 264.5066 380.4524 275 380.4524 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 734 380.4524 L 1100 380.4524 C 1110.4934 380.4524 1119 388.95897 1119 399.4524 L 1119 541.922 C 1119 552.4154 1110.4934 560.922 1100 560.922 L 734 560.922 C 723.5066 560.922 715 552.4154 715 541.922 L 715 399.4524 C 715 388.95897 723.5066 380.4524 734 380.4524 Z" fill="white"/>
+        <path d="M 734 380.4524 L 1100 380.4524 C 1110.4934 380.4524 1119 388.95897 1119 399.4524 L 1119 541.922 C 1119 552.4154 1110.4934 560.922 1100 560.922 L 734 560.922 C 723.5066 560.922 715 552.4154 715 541.922 L 715 399.4524 C 715 388.95897 723.5066 380.4524 734 380.4524 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(337.51074 40.195187)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">1- master</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(-123.99023 446.1872)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">1- Worker 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(348.00977 446.1872)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">1- Worker 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(807.0098 446.1872)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">1- Worker 3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(-43.97119 631.6216)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Step-1: We need master and few workers</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

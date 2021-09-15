@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="3027 -574 2029 1562" width="2029" height="1562">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="100" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="150" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="2824.1" y="-730.2">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.18"/>
+      <feOffset in="blur" result="offset" dx="6" dy="8"/>
+      <feFlood flood-color="black" flood-opacity=".685987" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Century Gothic" font-size="120" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2018-10-30 08:58:22 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_30">
+        <path d="M 3132 -569.2514 L 4951.158 -569.2514 C 5006.3865 -569.2514 5051.158 -524.4799 5051.158 -469.25143 L 5051.158 636.1086 C 5051.158 691.33705 5006.3865 736.1086 4951.158 736.1086 L 3132 736.1086 C 3076.7715 736.1086 3032 691.33705 3032 636.1086 L 3032 -469.25143 C 3032 -524.4799 3076.7715 -569.2514 3132 -569.2514 Z" fill="#fafff0"/>
+        <path d="M 3132 -569.2514 L 4951.158 -569.2514 C 5006.3865 -569.2514 5051.158 -524.4799 5051.158 -469.25143 L 5051.158 636.1086 C 5051.158 691.33705 5006.3865 736.1086 4951.158 736.1086 L 3132 736.1086 C 3076.7715 736.1086 3032 691.33705 3032 636.1086 L 3032 -469.25143 C 3032 -524.4799 3076.7715 -569.2514 3132 -569.2514 Z" stroke="#2d00aa" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18.0,18.0" stroke-width="9"/>
+      </g>
+      <g id="Graphic_44">
+        <path d="M 3273.579 -406 L 4809.579 -406 C 4826.1475 -406 4839.579 -392.56854 4839.579 -376 L 4839.579 -96 C 4839.579 -79.43146 4826.1475 -66 4809.579 -66 L 3273.579 -66 C 3257.0105 -66 3243.579 -79.43146 3243.579 -96 L 3243.579 -376 C 3243.579 -392.56854 3257.0105 -406 3273.579 -406 Z" fill="#033399"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 4301.75 945 L 4301.75 625 C 4301.75 602.92 4448.246 585 4628.75 585 C 4809.254 585 4955.75 602.92 4955.75 625 L 4955.75 945 C 4955.75 967.08 4809.254 985 4628.75 985 C 4448.246 985 4301.75 967.08 4301.75 945" fill="#e8bb2b"/>
+        <path d="M 4301.75 945 L 4301.75 625 C 4301.75 602.92 4448.246 585 4628.75 585 C 4809.254 585 4955.75 602.92 4955.75 625 L 4955.75 945 C 4955.75 967.08 4809.254 985 4628.75 985 C 4448.246 985 4301.75 967.08 4301.75 945 M 4301.75 625 C 4301.75 647.08 4448.246 665 4628.75 665 C 4809.254 665 4955.75 647.08 4955.75 625" stroke="#320092" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_47">
+        <path d="M 3586 945 L 3586 625 C 3586 602.92 3732.496 585 3913 585 C 4093.504 585 4240 602.92 4240 625 L 4240 945 C 4240 967.08 4093.504 985 3913 985 C 3732.496 985 3586 967.08 3586 945" fill="#f9ab55"/>
+        <path d="M 3586 945 L 3586 625 C 3586 602.92 3732.496 585 3913 585 C 4093.504 585 4240 602.92 4240 625 L 4240 945 C 4240 967.08 4093.504 985 3913 985 C 3732.496 985 3586 967.08 3586 945 M 3586 625 C 3586 647.08 3732.496 665 3913 665 C 4093.504 665 4240 647.08 4240 625" stroke="#320092" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_6">
+        <text transform="translate(3626.4863 734.5543)" fill="#2b0088">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="700" fill="#2b0088" x="0" y="101">configMap</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(3097.9663 484)" fill="#2c0088">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="#2c0088" x="0" y="151">pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36" filter="url(#Shadow)">
+        <text transform="translate(3915.251 -310)" fill="white">
+          <tspan font-family="Century Gothic" font-size="120" font-weight="700" fill="white" x="0" y="121">app</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <text transform="translate(4432.744 734.5543)" fill="#2b0088">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="700" fill="#2b0088" x="0" y="101">volume</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-254 816 1689 1056" width="1689" height="1056">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="100" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-422.9" y="710.4">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.18"/>
+      <feOffset in="blur" result="offset" dx="7" dy="7"/>
+      <feFlood flood-color="black" flood-opacity=".697541" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2018-10-29 13:47:08 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_8">
+        <path d="M -196 824 L 1377 824 C 1404.6142 824 1427 846.3858 1427 874 L 1427 1814 C 1427 1841.6142 1404.6142 1864 1377 1864 L -196 1864 C -223.61424 1864 -246 1841.6142 -246 1814 L -246 874 C -246 846.3858 -223.61424 824 -196 824 Z" fill="white"/>
+        <path d="M -196 824 L 1377 824 C 1404.6142 824 1427 846.3858 1427 874 L 1427 1814 C 1427 1841.6142 1404.6142 1864 1377 1864 L -196 1864 C -223.61424 1864 -246 1841.6142 -246 1814 L -246 874 C -246 846.3858 -223.61424 824 -196 824 Z" stroke="#24008f" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="30.0,30.0" stroke-width="15"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M -30 1153 L 438 1153 C 465.61424 1153 488 1175.3858 488 1203 L 488 1485 C 488 1512.6142 465.61424 1535 438 1535 L -30 1535 C -57.61424 1535 -80 1512.6142 -80 1485 L -80 1203 C -80 1175.3858 -57.61424 1153 -30 1153 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 711 1153 L 1179 1153 C 1206.6142 1153 1229 1175.3858 1229 1203 L 1229 1485 C 1229 1512.6142 1206.6142 1535 1179 1535 L 711 1535 C 683.3858 1535 661 1512.6142 661 1485 L 661 1203 C 661 1175.3858 683.3858 1153 711 1153 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 787 1337 L 1103 1337 C 1130.6142 1337 1153 1359.3858 1153 1387 L 1153 1440 C 1153 1467.6142 1130.6142 1490 1103 1490 L 787 1490 C 759.3858 1490 737 1467.6142 737 1440 L 737 1387 C 737 1359.3858 759.3858 1337 787 1337 Z" fill="#033399"/>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_25">
+        <text transform="translate(1.4902344 1282)" fill="#210080">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="700" fill="#210080" x="0" y="101">Kubelet</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(839.4775 1179)" fill="#210080">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="700" fill="#210080" x="0" y="101">pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23" filter="url(#Shadow)">
+        <text transform="translate(838.4766 1345.6176)" fill="white">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="700" fill="white" x="0" y="101">app</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(453.47363 1716)" fill="#210080">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="700" fill="#210080" x="0" y="101">node</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

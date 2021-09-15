@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1158 -878 3525 3670" width="3525" height="3670">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-3 -2 4 4" markerWidth="4" markerHeight="4" color="#27058c">
+      <g>
+        <path d="M -1.8133333 0 L 0 .68 L 0 -.68 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="200" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2018-10-28 09:48:13 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_2">
+        <title>cube1</title>
+        <g id="Graphic_5">
+          <title>XMLID_514_</title>
+          <path d="M 1108.5382 -274.41995 L 1465.968 -491.72106 L 1836.4308 -275.00685 L 1466.248 -58.033766 Z" fill="#ecdda4"/>
+        </g>
+        <g id="Graphic_4">
+          <title>XMLID_513_</title>
+          <path d="M 1465.7299 365.53648 L 1466.7453 -58.632404 L 1835.583 -274.41995 L 1833.5522 149.0126 Z" fill="#f8ce8c"/>
+        </g>
+        <g id="Graphic_3">
+          <title>XMLID_512_</title>
+          <path d="M 1109.5536 -273.40452 L 1110.0152 149.0126 L 1466.832 364.74673 L 1467.2684 -58.13426 Z" fill="#ffb972"/>
+        </g>
+      </g>
+      <g id="Group_20">
+        <g id="Group_13">
+          <g id="Graphic_12">
+            <path d="M 1291.4837 2384.8995 C 1358.3844 2383.724 1601.2543 2384.067 1658.4089 2384.4587 C 1715.5634 2384.8505 1737.6024 2477.904 1647.1445 2481.0875 C 1556.6866 2484.271 1350.6952 2482.6058 1287.027 2481.4793 C 1223.3587 2480.353 1224.5831 2386.075 1291.4837 2384.8995 Z" fill="white"/>
+            <path d="M 1291.4837 2384.8995 C 1358.3844 2383.724 1601.2543 2384.067 1658.4089 2384.4587 C 1715.5634 2384.8505 1737.6024 2477.904 1647.1445 2481.0875 C 1556.6866 2484.271 1350.6952 2482.6058 1287.027 2481.4793 C 1223.3587 2480.353 1224.5831 2386.075 1291.4837 2384.8995 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="Graphic_10">
+            <rect x="1117.1536" y="1936.7728" width="717.0026" height="717.0026" id="path"/>
+            <clipPath id="clip_path">
+              <use xl:href="#path"/>
+            </clipPath>
+            <g clip-path="url(#clip_path)">
+              <image xl:href="image3.png" width="420" height="420" transform="translate(1117.1536 1936.7728) scale(1.7071491)"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_14">
+          <g id="Graphic_16">
+            <path d="M 1288.2774 2254.0367 C 1355.178 2252.8613 1598.048 2253.204 1655.2025 2253.596 C 1712.357 2253.9877 1734.396 2347.0413 1643.9381 2350.2248 C 1553.4802 2353.4082 1347.4889 2351.743 1283.8206 2350.6166 C 1220.1524 2349.49 1221.3767 2255.212 1288.2774 2254.0367 Z" fill="white"/>
+            <path d="M 1288.2774 2254.0367 C 1355.178 2252.8613 1598.048 2253.204 1655.2025 2253.596 C 1712.357 2253.9877 1734.396 2347.0413 1643.9381 2350.2248 C 1553.4802 2353.4082 1347.4889 2351.743 1283.8206 2350.6166 C 1220.1524 2349.49 1221.3767 2255.212 1288.2774 2254.0367 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="Graphic_15">
+            <rect x="1113.9472" y="1805.91" width="717.0026" height="717.0026" id="path_2"/>
+            <clipPath id="clip_path_2">
+              <use xl:href="#path_2"/>
+            </clipPath>
+            <g clip-path="url(#clip_path_2)">
+              <image xl:href="image3.png" width="420" height="420" transform="translate(1113.9472 1805.91) scale(1.7071491)"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_17">
+          <g id="Graphic_19">
+            <path d="M 1285.143 2129.8346 C 1352.0436 2128.6592 1594.9136 2129.002 1652.068 2129.3938 C 1709.2226 2129.7856 1731.2616 2222.8392 1640.8037 2226.0227 C 1550.3458 2229.206 1344.3544 2227.541 1280.6862 2226.4145 C 1217.0179 2225.288 1218.2423 2131.01 1285.143 2129.8346 Z" fill="white"/>
+            <path d="M 1285.143 2129.8346 C 1352.0436 2128.6592 1594.9136 2129.002 1652.068 2129.3938 C 1709.2226 2129.7856 1731.2616 2222.8392 1640.8037 2226.0227 C 1550.3458 2229.206 1344.3544 2227.541 1280.6862 2226.4145 C 1217.0179 2225.288 1218.2423 2131.01 1285.143 2129.8346 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="Graphic_18">
+            <rect x="1110.8128" y="1681.708" width="717.0026" height="717.0026" id="path_3"/>
+            <clipPath id="clip_path_3">
+              <use xl:href="#path_3"/>
+            </clipPath>
+            <g clip-path="url(#clip_path_3)">
+              <image xl:href="image3.png" width="420" height="420" transform="translate(1110.8128 1681.708) scale(1.7071491)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Graphic_21">
+        <path d="M 1463.4908 601.3945 L 1396.6688 738.8594 C 1394.2543 743.8265 1396.3235 749.8105 1401.2906 752.225 C 1402.6529 752.8872 1404.1478 753.2313 1405.6625 753.2313 L 1459.8788 753.2313 C 1465.4016 753.2313 1469.8788 757.70845 1469.8788 763.2313 L 1469.8788 1462.5544 C 1469.8788 1468.0772 1465.4016 1472.5544 1459.8788 1472.5544 L 1405.6625 1472.5544 C 1400.1396 1472.5544 1395.6625 1477.0315 1395.6625 1482.5544 C 1395.6625 1484.069 1396.0066 1485.564 1396.6688 1486.9262 L 1463.4908 1624.3911 C 1465.9053 1629.3582 1471.8893 1631.4275 1476.8564 1629.013 C 1478.8712 1628.0336 1480.4988 1626.406 1481.4782 1624.3911 L 1548.3002 1486.9262 C 1550.7147 1481.9591 1548.6455 1475.9752 1543.6784 1473.5606 C 1542.3161 1472.8984 1540.8212 1472.5544 1539.3065 1472.5544 L 1485.0902 1472.5544 C 1479.5674 1472.5544 1475.0902 1468.0772 1475.0902 1462.5544 L 1475.0902 763.2313 C 1475.0902 757.70845 1479.5674 753.2313 1485.0902 753.2313 L 1539.3065 753.2313 C 1544.8294 753.2313 1549.3065 748.7541 1549.3065 743.2313 C 1549.3065 741.7166 1548.9624 740.2217 1548.3002 738.8594 L 1481.4782 601.3945 C 1479.0637 596.4274 1473.0797 594.35815 1468.1126 596.77266 C 1466.0978 597.7521 1464.4702 599.3797 1463.4908 601.3945 Z" fill="#bfbfff"/>
+        <path d="M 1463.4908 601.3945 L 1396.6688 738.8594 C 1394.2543 743.8265 1396.3235 749.8105 1401.2906 752.225 C 1402.6529 752.8872 1404.1478 753.2313 1405.6625 753.2313 L 1459.8788 753.2313 C 1465.4016 753.2313 1469.8788 757.70845 1469.8788 763.2313 L 1469.8788 1462.5544 C 1469.8788 1468.0772 1465.4016 1472.5544 1459.8788 1472.5544 L 1405.6625 1472.5544 C 1400.1396 1472.5544 1395.6625 1477.0315 1395.6625 1482.5544 C 1395.6625 1484.069 1396.0066 1485.564 1396.6688 1486.9262 L 1463.4908 1624.3911 C 1465.9053 1629.3582 1471.8893 1631.4275 1476.8564 1629.013 C 1478.8712 1628.0336 1480.4988 1626.406 1481.4782 1624.3911 L 1548.3002 1486.9262 C 1550.7147 1481.9591 1548.6455 1475.9752 1543.6784 1473.5606 C 1542.3161 1472.8984 1540.8212 1472.5544 1539.3065 1472.5544 L 1485.0902 1472.5544 C 1479.5674 1472.5544 1475.0902 1468.0772 1475.0902 1462.5544 L 1475.0902 763.2313 C 1475.0902 757.70845 1479.5674 753.2313 1485.0902 753.2313 L 1539.3065 753.2313 C 1544.8294 753.2313 1549.3065 748.7541 1549.3065 743.2313 C 1549.3065 741.7166 1548.9624 740.2217 1548.3002 738.8594 L 1481.4782 601.3945 C 1479.0637 596.4274 1473.0797 594.35815 1468.1126 596.77266 C 1466.0978 597.7521 1464.4702 599.3797 1463.4908 601.3945 Z" stroke="#27058c" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_23">
+        <rect x="-1157.2579" y="628.9802" width="995.862" height="967.8253" id="path_4"/>
+        <clipPath id="clip_path_4">
+          <use xl:href="#path_4"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_4)">
+          <image xl:href="image5.png" width="107.93325" height="104.89459" transform="translate(-1157.2579 628.9802) scale(9.226646)"/>
+        </g>
+      </g>
+      <g id="Line_26">
+        <line x1="885.2895" y1="230.9969" x2="-161.39594" y2="828.6" marker-start="url(#FilledArrow_Marker)" stroke="#27058c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+      </g>
+      <g id="Line_27">
+        <line x1="889.8046" y1="1936.0387" x2="-161.39594" y2="1377.4732" marker-start="url(#FilledArrow_Marker)" stroke="#27058c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(972.006 -877.2143)" fill="#14006c">
+          <tspan font-family="Century Gothic" font-size="200" font-weight="700" fill="#14006c" x="0" y="201">Container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(578.0314 2546.2143)" fill="#14006c">
+          <tspan font-family="Century Gothic" font-size="200" font-weight="700" fill="#14006c" x="0" y="201">Persistent Volume</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
