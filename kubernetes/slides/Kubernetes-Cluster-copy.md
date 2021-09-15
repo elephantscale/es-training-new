@@ -52,7 +52,26 @@ Labels : Labels can be used to identify resources
 We will examine all these concepts in the next few sections.
 
 ---
+## What is a cluster?
 
+  * A cluster is a set of computing instance that Kubernetes manages
+
+![](../../assets/images/kubernetes/cluster.png) <!-- {"left" : 1.01, "top" : 2.86, "height" : 3.23, "width" : 8.28} -->
+
+Notes:
+
+---
+
+## Can One Serve Two Masters?
+
+  * Yes!
+  * A cluster can have multiple masters and lots of nodes
+
+![](../../assets/images/kubernetes/nodes.png) <!-- {"left" : 3.16, "top" : 2.02, "height" : 5.2, "width" : 4.12} -->
+
+Notes:
+
+---
 
 ## Pod - Recap
 
@@ -74,6 +93,43 @@ The pod serves as Kubernetes’ core unit of management.
 A pod is a group of one or more containers with shared storage/network, and a specification for how to run the containers.  
 A pod’s contents are always co-located and co-scheduled, and run in a shared context. 
 A pod models an application-specific "logical host" - it contains one or more application containers which are relatively tightly coupled-in a pre-container world, they would have executed on the same physical or virtual machine.
+
+
+---
+## Deploying a Pod
+
+![](../../assets/images/kubernetes/Deploying-a-Pod.png) <!-- {"left" : 0.4, "top" : 1.58, "height" : 4.33, "width" : 9.45} -->
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+Here we see 2 Pod definitions. 
+A Python one for web application
+A Redis one for datastore
+
+Master – All communication paths from the cluster to the master terminate at the API server.
+Web Pod – Deployed the web application into the kubernetes nodes.
+DB pod   - Deployed the Database application. 
+We can deploy many pods like those listed above. 
+
+---
+## Pod Definition
+
+![](../../assets/images/kubernetes/Pod-Definition.png) <!-- {"left" : 0.65, "top" : 1.44, "height" : 4.62, "width" : 8.95} -->
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+Here we see a definition of a sample Pod.
+This is defining nginx – a popular web server.
+We are specifying the version of the software (1.7.9).
+And the port being used – web services usually listen on port 80.
 
 
 ---
@@ -276,6 +332,128 @@ Replicas: 3
 
 ---
 
+# Services
+
+---
+
+## Services
+
+  * An abstraction to define a logical set of Pods that are bound by policy to access them.
+  * Internal and external endpoints are used to expose the services.
+  * Services manipulate iptables by interfacing with the kube-proxy.
+  * Services Support TCP and UDP.
+  * Services can be exposed internally through ClusterIP (default) or outside through NodePort by specifying a type in ServiceSpec.
+  * Services are exposed through virtual-IP-based bridge, which redirects to the backend Pods.
+
+
+![](../../assets/images/kubernetes/Services.png) <!-- {"left" : 2.99, "top" : 6.11, "height" : 1.25, "width" : 4.27} -->
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+An example of Service might be a web service.
+This Web Service can be powered by say 3 Pods.
+Client accessing the service doesn't care if the 3 Pods are up and running or not, as long as the service is accessible.
+
+---
+
+## Exposing Services
+
+![](../../assets/images/kubernetes/Exposing-Services.png) <!-- {"left" : 0.4, "top" : 1.76, "height" : 3.97, "width" : 9.45} -->
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+How can we expose our 'Web Pod' to outside clients?
+Here is a configuration to map incoming ports to 'Web Pod' ports.
+
+kubectl get svc my-nginx -o yaml | grep nodePort -C 5
+  uid: 07191fb3-f61a-11e5-8ae5-42010af00002
+spec:
+  clusterIP: 10.0.162.149
+  ports:
+  - name: http
+    nodePort: 31704
+    port: 8080
+    protocol: TCP
+    targetPort: 80
+  - name: https
+    nodePort: 32453
+    port: 443
+    protocol: TCP
+    targetPort: 443
+  selector:
+    run: my-nginx
+
+---
+
+## Service Creation
+
+![](../../assets/images/kubernetes/Service-Creation.png) <!-- {"left" : 0.58, "top" : 1.44, "height" : 4.62, "width" : 9.08} -->
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+This specification will create a Service which targets TCP port 80 on any Pod with the run: my-nginx,
+
+---
+## Namespace
+
+* **Namespaces:**
+
+    - Intended for use in multi-user/multi-team environments.
+    - Provides additional qualification to a resource name.
+    - Allows division of cluster resources amongst multiple users, thus provides logical separation between teams and their environments.
+    - Allows for role-based access control.
+    - For future versions, objects in the same namespace to have same access control policies by default.
+    - Manage different environments within the same cluster.
+
+## Namespace
+
+* **Functionality of Namespace:**
+
+    - Namespaces help pod-to-pod. communication using the same namespace.
+    - Namespaces are virtual clusters that sit on top of the same physical cluster.
+    - Though most Kubernetes resources are in some namespaces, namespace resources themselves need not be in a namespace – e.g., Low-level resources such as nodes and persistent volumes are in any namespace.
+
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+Namespaces are 'logical or virtual entities'.
+Multiple Namespaces can be hosted on a single physical cluster.
+
+Namespaces help isolate resources into their own space.
+Resources within a single Namespace, must have unique names.
+
+
+---
+
+## Namespace Creation
+
+![](../../assets/images/kubernetes/Namespace.png) <!-- {"left" : 0.7, "top" : 1.31, "height" : 4.89, "width" : 8.85} -->
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+A Kubernetes namespace provides the scope for Pods, Services, and Deployments in the cluster.
+Users interacting with one namespace do not see the content in another namespace.
+
+---
 
 # Kubernetes Autoscaling
 
