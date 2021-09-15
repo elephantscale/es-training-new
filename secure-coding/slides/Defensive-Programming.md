@@ -643,6 +643,13 @@
 
 ## Labs
 
+* SonarQube lab for statis code analysis
+
+[https://github.com/elephantscale/secure-coding-labs/tree/main/sonarqube](https://github.com/elephantscale/secure-coding-labs/tree/main/sonarqube)
+
+
+## Labs
+
 * Labs for this section come from this link
 * [https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java](https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java)
 

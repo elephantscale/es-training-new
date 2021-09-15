@@ -139,7 +139,7 @@ Look at the address bar:
 
 * Jersey
 * Apache oltu
-* Spring security (Pretty Popular)
+* Spring security (Popular option)
 
 
 ## Jersey 
@@ -351,14 +351,7 @@ String expires_in = oauth_resp.getExpiresIn();
   
 ## Lab
 
-* Spring + REST
-1. Set up the framework
-2. Secure it
-* https://github.com/timfox456/java-fsd-phase3/tree/main/SpringSecurity
-
-
-
-
-
-
+* You will start with an insecure Spring install
+* Then you will secure it
+* Follow this guide [https://spring.io/guides/gs/securing-web/](https://spring.io/guides/gs/securing-web/)
 
