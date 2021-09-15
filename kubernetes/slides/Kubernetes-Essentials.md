@@ -719,16 +719,19 @@ Notes:
 
 ---
 
-# Deploying to Kubernetes
+# Deployments
 
 ---
 
-##  Deployments
+## Deployments
 
-  * Deployments are intended to replace Replication Controllers.
-  * In addition to the functions of Replication Controllers, Deployments provide roll-out and roll-back options
-  * Deployment ensures desired state of the deployment object is achieved and maintained through deployment controller
-  * Pause the Deployment to apply multiple fixes to its PodTemplateSpec and then resume it to start a new rollout.
+* **Deployments** offer more functionality than Replication Controllers
+
+* Deployments provide roll-out and roll-back options
+
+* Deployments depend on ReplicaSets to manage and run pods
+
+<img src="../../assets/images/kubernetes/Deployments.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
@@ -741,24 +744,18 @@ When the desired state is specified in the Deployment object, and the Deployme
 
 Pause the Deployment to apply multiple fixes to its PodTemplateSpec and then resume it to start a new rollout.
 
-
 ---
 
 ## Deployment
 
-  * Deployments depend on ReplicaSets to manage and run pods
+* Deployments monitor cluster and update changes when required
 
-![](../../assets/images/kubernetes/Deployments.png) <!-- {"left" : 0.57, "top" : 1.82, "height" : 4.34, "width" : 9.14} -->
+* Here we increased replicas from 3 (left) to 4 (right)
 
-Notes:
+* So a new Pod is created
 
----
-
-## Deployment
-
-  * Deployments monitor cluster and update changes when required
-
-![](../../assets/images/kubernetes/Deployments-01.png) <!-- {"left" : 0.55, "top" : 2.33, "height" : 3.65, "width" : 9.18} -->
+<img src="../../assets/images/kubernetes/Deployments.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-01.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
@@ -766,9 +763,12 @@ Notes:
 
 ## Deployment
 
-  * Deployments monitor pods and make correction when then stop working
+* Deployments monitor pods and make correction when they stop working
 
-![](../../assets/images/kubernetes/Deployments-02.png) <!-- {"left" : 0.9, "top" : 2.42, "height" : 4.02, "width" : 8.46} -->
+* Here a Pod crashed, and a replacement Pod is spun up
+
+<img src="../../assets/images/kubernetes/Deployments-02.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
@@ -776,93 +776,91 @@ Notes:
 
 ## Deployment
 
-  * Deployments constantly monitor cluster to observe changes
+* Deployments constantly monitor cluster to observe changes
 
-![](../../assets/images/kubernetes/Deployments-03.png) <!-- {"left" : 0.79, "top" : 2.27, "height" : 3.45, "width" : 8.68} -->
+* Here we have gone from 4 replicas (left) to 3 (right).  So the excess Pod is deleted
 
-Notes:
+<img src="../../assets/images/kubernetes/Deployments-01.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-03.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
----
-
-## Rolling updates
-
-  * Rolling updates permit you to update from one image version to another
-
-![](../../assets/images/kubernetes/Deployments-04.png) <!-- {"left" : 0.99, "top" : 1.89, "height" : 4.93, "width" : 8.28} -->
 
 Notes:
 
 ---
 
-## Rolling updates
+## Lab: Deployments
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Run a deployment
+
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - Please complete **DEPLOY-1**
+
+Notes:
+
+
+
+---
+
+## Rolling Updates
+
+* Rolling updates permit you to update from one image version to another
+
+* Say we want to update from `hello1` to `hello2`
+
+<img src="../../assets/images/kubernetes/Deployments-04.png" style="width:70%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+Notes:
+
+---
+
+## Rolling Updates - 1
 
   * This deployment allows you to create a second ReplicaSet
 
-![](../../assets/images/kubernetes/Deployments-05.png) <!-- {"left" : 0.47, "top" : 2.91, "height" : 2.17, "width" : 9.31} -->
+<img src="../../assets/images/kubernetes/Deployments-05.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
 ---
 
-## Rolling updates
+## Rolling Updates - 2
 
-  * It gradually increases the number of replicas in the second ReplicaSet
+* It gradually increases the number of replicas in the second ReplicaSet
 
-![](../../assets/images/kubernetes/Deployments-06.png) <!-- {"left" : 0.51, "top" : 2.92, "height" : 2.15, "width" : 9.23} -->
+<img src="../../assets/images/kubernetes/Deployments-06.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-Notes:
-
----
-
-## Rolling updates
-
-  * This decreases replicas in the first ReplicaSet
-
-![](../../assets/images/kubernetes/Deployments-07.png) <!-- {"left" : 0.69, "top" : 2.72, "height" : 2.07, "width" : 8.88} -->
+<img src="../../assets/images/kubernetes/Deployments-07.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
 ---
 
-## Rolling updates
+## Rolling Updates - 3
 
-  * Hence at any given point of time there are at most 4 pods
+* This decreases replicas in the first ReplicaSet
+* Hence at any given point of time there are at most 4 pods
 
-![](../../assets/images/kubernetes/Deployments-08.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
-
-Notes:
-
----
-
-## Rolling updates
-
-  * Minimum of 3 pods
-
-
-![](../../assets/images/kubernetes/Deployments-09.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
+<img src="../../assets/images/kubernetes/Deployments-08.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-09.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
 ---
 
-## Rolling updates
+## Rolling Updates - 4
 
-  * The same state continues
+* Rolllout is complete when the new RS has the same Pods to replace the old RS
 
+<img src="../../assets/images/kubernetes/Deployments-10.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-11.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-
-![](../../assets/images/kubernetes/Deployments-10.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
-
-Notes:
-
----
-
-## Rolling updates
-
-  * The previous state continues until new image version is rolled out
-
-
-![](../../assets/images/kubernetes/Deployments-11.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
 
 Notes:
 
