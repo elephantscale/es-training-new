@@ -541,16 +541,21 @@ Notes:
 
 # Replica Sets
 
+<img src="../../assets/images/generic/3rd-party/clones-2.jpg" style="width:40%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+
 ---
 
-## What is Kubernetes Replication ?
+## Replication
 
-  * Typically you would want to replicate your containers.
-    Keep the replication simple.
-  * Offer powerful, flexible deployment topologies for the development community.
-    - **Reliability:** The impact of failure can be minimized with multiple versions of an application being stored.
-    - **Load balancing:** Moreover, maintaining multiple versions of a container allows you to re-route the traffic to other instances with similar versions. This will prevent overloading of any particular node.
-    - **Scaling:** If the load increase become unmanageable for the existing instances, then Kubernetes allows us to scale-up the instances with similar versions.
+* **Replication** allows us to run multiple instances of an application
+
+* **Reliability:** Even if an instance crashed, other instances can handle the load
+
+* **Load balancing:** Moreover, maintaining multiple versions of a container allows you to re-route the traffic to other instances with similar versions. This will prevent overloading of any particular node.
+
+* **Scaling:** If the load increases, K8s can spin up additional instances to handle the load
+
+<img src="../../assets/images/kubernetes/web-app-2-scaling.png" style="width:40%;" />
 
 Notes:
 
@@ -563,17 +568,13 @@ Typically one may prefer container replication for a variety of reasons.
 
 Replication logic has to be simple by design but should offer powerful and flexible deployment topologies
 
-Reliability: By having multiple versions of an application, you prevent problems if one or more fails.  This is particularly true if the system replaces any containers that fail.
-
-Load balancing: Multiple versions allow for re-directing the traffic incase of a overload on single instance or node in Kubernetes.
-
-Scaling: If the load increase become unmanageable for the existing instances, then Kubernetes allows us to scale-up the instances with similar versions.
-
 ---
 
 ## ReplicaSet
 
-![](../../assets/images/kubernetes/ReplicaSet.png) <!-- {"left" : 0.58, "top" : 1.5, "height" : 5, "width" : 9.08} -->
+* ReplicaSet keeps a certain number of pods running at anytime
+
+<img src="../../assets/images/kubernetes/ReplicaSet-01.png" style="width:70%;" /><!-- {"left" : 0.58, "top" : 1.5, "height" : 5, "width" : 9.08} -->
 
 Notes:
 
@@ -583,12 +584,16 @@ Participant Notes :
 
 We are running 4 copies of the application using ReplicaSet. Please note that name, selector, podTemplate and replica syntaxes used.
 
-
 ---
 
 ## ReplicaSet
 
-![](../../assets/images/kubernetes/Replication-Controller.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
+* Left: Here we wanted 4 pods (**desired state**) and we have 4 pods running (**current**)
+
+* Right: Say one node crashes
+
+<img src="../../assets/images/kubernetes/ReplicaSet-02.png" style="width:45%;" /><!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->  &nbsp;  &nbsp;
+<img src="../../assets/images/kubernetes/ReplicaSet-03.png" style="width:45%;" /><!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
 
 
 Notes:
@@ -602,80 +607,46 @@ Desired = 4 ( The Defined replication is up and running )
 Current = 4 ( 4 pods are running )
 Node    = 4
 
-
 ---
 
 ## ReplicaSet
 
-![](../../assets/images/kubernetes/Replication-Controller-01.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
+* ReplicationController will notice this, and launch another Pod on one of the remaining nodes!
 
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-The replication Controller is 4 
-Desired Pod = 4 ( The Defined replication is up and running )
-Current Pod = 4 ( 4 pods are running )
-Node    = 3
-
-Then, one node is going to down. Let’s see how the replica set will replicate the pod. 
+<img src="../../assets/images/kubernetes/ReplicaSet-04.png" style="width:45%;" /><!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
+&nbsp; &nbsp;<img src="../../assets/images/kubernetes/ReplicaSet-05.png" style="width:45%;" /><!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
 
 ---
-
-## ReplicaSet
-
-![](../../assets/images/kubernetes/Replication-Controller-02.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
-
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-The replication Controller is 4 
-Desired Pod = 4 ( The Defined replication is up and running )
-Current Pod = 3 ( 3 pods are running )
-Node    = 3
-
-Then, one node is going to down. We now have 3 nodes.
-
-
----
-
-## ReplicaSet
-
-![](../../assets/images/kubernetes/Replication-Controller-03.png) <!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
-
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-The replication Controller is 4 
-Desired Pod = 4 ( The Defined replication is up and running )
-Current Pod = 4 ( 4 pod are running )
-Node    = 3
-
-The one pod is replicated into node 3. 
-
-
----
-
-# Replication Controller
 
 ## Replication Controller
 
-  * Replication Controller – the original form of replication in Kubernetes
-  * Fast being replaced by Replica Sets.
-  * Replication Controller structure enables easy creation of multiple pods and ensures   they are live
-  * Replication Controllers allows pod scalability.
-  * Replication Controller can be created with an imperative command, or declaratively
+* **Replication Controller** was the original form of replication in Kubernetes
+
+* Replication Controller is superseded by Replica Sets.
+
+
+```yaml
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: nginx
+spec:
+  replicas: 3
+  selector:
+    app: nginx
+  template:
+    metadata:
+      name: nginx
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
+```
+
 
 Notes:
 
@@ -689,38 +660,34 @@ A Replication Controller allows us to easily create multiple pods ensures that t
 
 ---
 
-## Replication Controller Example
-
-  * For example, create a new file called rc.yaml and add the following text:
-
-![](../../assets/images/kubernetes/Replication-Example.png) <!-- {"left" : 1.62, "top" : 1.95, "height" : 4.66, "width" : 7.02} -->
-
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Creating replication using Replication controller. 
-
-Name:        nginx
-Namespace:   default
-Selector:    app=nginx
-Labels:      app=nginx
-Annotations:    <none>
-Replicas:    3 current 
-Pod Template:
-  Labels:       app=nginx
-
-
----
-
 ## Replica Sets
 
-  * Replica Sets are in some ways comparable to Replication Controllers. They have a mix of advantage and disadvantages compared to Replication Controllers.
-  * Replica Sets and Replication Controllers are declared almost in the same way except they have more options for the selector.
-  * Replica Set makes sure that the specified number of pod replicas are always up and running.
+* **Replica Sets** and Replication Controllers are declared almost in the same way except **they have more options for the selector**
+
+* RS **uses labels to select the Pods it will manage**  (`app=nginx`)
+
+
+```yaml
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-replicaset
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 4 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
+```
 
 Notes:
 
@@ -735,39 +702,26 @@ Replica Set makes sure that required number of pod replicas are running at all t
 
 ---
 
-## Replica Set Example
+## Lab: Running a ReplicaSet
 
-  * For example, we could create a Replica Set like this:
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
+* **Overview:**
+    - Deploy ReplicaSet
 
-![](../../assets/images/kubernetes/Replica-Set-Example.png) <!-- {"left" : 1.91, "top" : 1.63, "height" : 4.73, "width" : 6.44} -->
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - Please complete **REPLICA-1**
 
 Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Creating replication using Replica set controller. 
-
-Name:	frontend
-Namespace:	default
-Selector:	tier=frontend,tier in (frontend)
-Labels:	app=guestbook
-tier=frontend
-Replicas:	3 current / 3 desired
-Pod Template:
-  Labels:       app=guestbook
-  tier=frontend
-  Containers:
-   php-redis:
-    Image:      gcr.io/_samples/gb-frontend:v3
-    Port:       80/TCP
-
 
 ---
 
 # Deploying to Kubernetes
+
+---
 
 ##  Deployments
 
