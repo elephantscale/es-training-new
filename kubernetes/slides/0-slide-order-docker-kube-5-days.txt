@@ -19,6 +19,7 @@
 ## Kubernetes
 Kubernetes-Intro.md
 Kubernetes-Essentials.md
+Kubernetes-Networking.md
+Kubernetes-Operations.md
 
-#Kubernetes-Cluster.md
 #Kubernetes-Advanced.m
