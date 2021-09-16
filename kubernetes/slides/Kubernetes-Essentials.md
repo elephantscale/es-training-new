@@ -595,7 +595,7 @@ We can deploy many pods like those listed above.
 
 * **Instructions:**
     - **Instructor please demo this lab**
-    - Please complete **install-1**
+    - Please complete **INSTALL-1**
 
 Notes:
 
@@ -613,13 +613,49 @@ Notes:
 
 * **Instructions:**
     - **Instructor please demo this lab**
-    - Please complete **install-2**
+    - Please complete **INSTALl-2**
 
 Notes:
 
 ---
 
-## Lab: Running a Pod
+## Lab: Explore the cluster
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Explore the K8s cluster we just setup
+
+* **Approximate run time:**
+    - 10 mins
+
+* **Instructions:**
+    - **Instructor please demo this lab**
+    - Please complete **EXPLORE-1**
+
+Notes:
+
+---
+
+## Lab: Setup a Dashboard
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    -  Setup and access a Kubernetes dashboard
+
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - **Instructor please demo this lab**
+    - Please complete **EXPLORE-2**
+
+Notes:
+
+---
+
+## Lab: Running a Pod Manually
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
@@ -627,29 +663,29 @@ Notes:
     - Run a single pod
 
 * **Approximate run time:**
-    - 15 mins
+    - 10 mins
 
 * **Instructions:**
     - **Instructor please demo this lab**
-    - Please complete **pod-1**
+    - Please complete **POD-1**
 
 Notes:
 
 ---
 
-## Lab: Running Multiple Pods
+## Lab: Running a Pod from Manifest
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * **Overview:**
-    - Deploy mulitple pods
+    - Deploy a pod manifest
 
 * **Approximate run time:**
-    - 15 mins
+    - 10 mins
 
 * **Instructions:**
     - **Instructor please demo this lab**
-    - Please complete **pod-2**
+    - Please complete **POD-2**
 
 Notes:
 
@@ -830,6 +866,23 @@ Replica Set makes sure that required number of pod replicas are running at all t
 
 * **Instructions:**
     - Please complete **REPLICA-1**
+
+Notes:
+
+---
+
+## Lab: Running a DaemonSet
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Deploy a Daemonset
+
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - Please complete **DAEMONSET-1**
 
 Notes:
 
@@ -1095,151 +1148,6 @@ This specification will create a Service which targets TCP port 80 on any Pod wi
 
 * **Instructions:**
     - Please complete **SERVICE-1**
-
-Notes:
-
----
-
-# Rolling Out Upgrades
-
----
-
-## Rolling Updates
-
-* Rolling updates permit you to update from one image version to another
-
-* Say we want to update from `hello1` to `hello2`
-
-<img src="../../assets/images/kubernetes/Deployments-04.png" style="width:70%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
-Notes:
-
----
-
-## Rolling Updates - 1
-
-  * This deployment allows you to create a second ReplicaSet
-
-<img src="../../assets/images/kubernetes/Deployments-05.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-Notes:
-
----
-
-## Rolling Updates - 2
-
-* It gradually increases the number of replicas in the second ReplicaSet
-
-<img src="../../assets/images/kubernetes/Deployments-06.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-<img src="../../assets/images/kubernetes/Deployments-07.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-Notes:
-
----
-
-## Rolling Updates - 3
-
-* This decreases replicas in the first ReplicaSet
-* Hence at any given point of time there are at most 4 pods
-
-<img src="../../assets/images/kubernetes/Deployments-08.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/kubernetes/Deployments-09.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-Notes:
-
----
-
-## Rolling Updates - 4
-
-* Rolllout is complete when the new RS has the same Pods to replace the old RS
-
-<img src="../../assets/images/kubernetes/Deployments-10.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/kubernetes/Deployments-11.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-Notes:
-
----
-
-## Lab: Rollouts
-
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-* **Overview:**
-    - Rollout an upgrade
-
-* **Approximate run time:**
-    - 20 mins
-
-* **Instructions:**
-    - Please complete **ROLLOUT-1**
-
-Notes:
-
----
-
-# Canary Deployments
-
----
-
-## Service
-
-* Here we see a service  balancing traffic to primary pods based on label selectors
-
-<img src="../../assets/images/kubernetes/Canary-deployment.png" style="width:85%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
-Notes:
-
----
-
-## Canary Deployment
-
-* Canary deployment tests a second deployment by load balancing a subset of traffic to new pods with the same label
-
-* Great for testing new features, by exposing it to only a few users
-
-<img src="../../assets/images/kubernetes/Canary-deployment-01.png" style="width:85%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
-Notes:
-
----
-
-## Blue Green Deployment
-
-* A blue-Green deployment make use the service label selector to change all traffic from one deployment to another
-
-
-<img src="../../assets/images/kubernetes/Canary-deployment-02.png" style="width:90%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
-
-Notes:
-
----
-
-## Blue Green Deployment
-
-  * Initially bring up and test new deployment without live traffic
-
-
-<img src="../../assets/images/kubernetes/Canary-deployment-03.png" style="width:90%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
-
-Notes:
-
----
-
-## Blue Green Deployment
-
-  * To make the version go live, change the service label selector which switches all traffic
-
-<img src="../../assets/images/kubernetes/Canary-deployment-04.png" style="width:90%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
 
 Notes:
 
