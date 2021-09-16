@@ -434,3 +434,17 @@ Notes:
 Notes:
 
 ---
+
+## Labels and Identifiers  
+
+  * Labels are metadata assigned to any API object which represents identity
+  * Labels are the only grouping mechanism for pods
+  * Search by selectors
+
+![](../../assets/images/kubernetes/metadata.png) <!-- {"left" : 0.89, "top" : 3.1, "height" : 3.74, "width" : 8.46} -->
+
+
+
+Notes:
+
+---
