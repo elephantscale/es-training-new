@@ -573,7 +573,64 @@ Notes:
     - [Blue Green deployments explained](https://martinfowler.com/bliki/BlueGreenDeployment.html)
 
 ---
-# Rolling Out Upgrades
+
+## Basic Deployment
+
+* Nodes are updated with newer version of software
+
+* Can be done with config management systems like Ansible / Chef ..etc
+
+* Not foolproof, as it may be not be easy to rollback if things go wrong  (for example some libraries may have been updated and not compatible)
+
+<img src="../../assets/images/kubernetes/deployment-basic-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Rolling Deployment
+
+* New Pods are deployed in increments
+
+* Easy to roll back if things go wrong
+
+* Ths rollover will take some time, in the mean time, both versions are alive
+
+<img src="../../assets/images/kubernetes/deployment-rolling-1.png" style="width:65%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Blue/Green Deployment
+
+* Both Blue and Green versions are deployed in exactly the same environment
+
+* Green is currently live, Green is ready to go live
+
+* Then Blue is made live very quickly
+
+* Rollback is instant (flicking a switch)
+
+<img src="../../assets/images/kubernetes/deployment-blue-green-1.png" style="width:65%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Canary Deployment
+
+* Release new version incrementally
+
+* To test out the features with a smaller group of users first and then increasing deployment base
+
+<img src="../../assets/images/kubernetes/deployment-canary-1.png" style="width:65%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## A/B Testing
+
+* Used to experiment with features
+
+<img src="../../assets/images/kubernetes/deployment-AB-testing-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+# Rolling Upgrades
 
 ---
 
@@ -646,31 +703,13 @@ Notes:
     - 20 mins
 
 * **Instructions:**
-    - Please complete **ROLLOUT-1**
+    - Please complete **DEPLOY-2**
 
 Notes:
 
 ---
 
-# Deployment Patterns
-
----
-
-
-## Canary Deployment
-
-* Canary deployment tests a second deployment by load balancing a subset of traffic to new pods with the same label
-
-* Great for testing new features, by exposing it to only a few users
-
-<img src="../../assets/images/kubernetes/Canary-deployment-01.png" style="width:85%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
-Notes:
-
----
-
-## Blue Green Deployment
+## Blue Green Deployment-1
 
 * A blue-Green deployment make use the service label selector to change all traffic from one deployment to another
 
@@ -707,3 +746,46 @@ Notes:
 Notes:
 
 ---
+
+## Lab: Blue/Green Deployment
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Deploy a blue/green scenario
+
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - Please complete **DEPLOY-3**
+
+Notes:
+
+---
+
+## Lab: Canary Deployment
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Do a canaray deployment
+
+* **Approximate run time:**
+    - 30 mins
+
+* **Instructions:**
+    - Please complete **DEPLOY-4**
+
+Notes:
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
