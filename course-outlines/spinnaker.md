@@ -106,6 +106,6 @@ September 20, 2021
 * Building templates / pipeline-as-code
 * Template management
 ### SpinCLI
-### Integrations
-* Integrations/expectations from source code systems (branching model impacts for example)
-* Integrations/expectations from with build systems
+### Integration
+* Integration and expectations from source code systems (branching model impacts for example)
+* Integration and expectations from with build systems
