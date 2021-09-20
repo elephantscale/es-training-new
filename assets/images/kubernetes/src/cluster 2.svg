@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1189 -257 3272 1276" width="3272" height="1276">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="150" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-1516.2" y="-384.6">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.744"/>
+      <feOffset in="blur" result="offset" dx="9" dy="11"/>
+      <feFlood flood-color="black" flood-opacity=".710057" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2018-10-28 16:43:48 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Graphic_3">
+        <path d="M -1113 -251 L 2007 -251 C 2045.66 -251 2077 -219.65993 2077 -181 L 2077 943 C 2077 981.6599 2045.66 1013 2007 1013 L -1113 1013 C -1151.66 1013 -1183 981.6599 -1183 943 L -1183 -181 C -1183 -219.65993 -1151.66 -251 -1113 -251 Z" fill="white"/>
+        <path d="M -1113 -251 L 2007 -251 C 2045.66 -251 2077 -219.65993 2077 -181 L 2077 943 C 2077 981.6599 2045.66 1013 2007 1013 L -1113 1013 C -1151.66 1013 -1183 981.6599 -1183 943 L -1183 -181 C -1183 -219.65993 -1151.66 -251 -1113 -251 Z" stroke="#280091" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="24.0,24.0" stroke-width="12"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 1142.0811 195.5 L 1610.919 195.5 C 1633.0103 195.5 1650.919 213.4086 1650.919 235.5 L 1650.919 526.5 C 1650.919 548.5914 1633.0103 566.5 1610.919 566.5 L 1142.0811 566.5 C 1119.9897 566.5 1102.0811 548.5914 1102.0811 526.5 L 1102.0811 235.5 C 1102.0811 213.4086 1119.9897 195.5 1142.0811 195.5 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M -97.25224 195.5 L 371.58557 195.5 C 393.67696 195.5 411.58557 213.4086 411.58557 235.5 L 411.58557 526.5 C 411.58557 548.5914 393.67696 566.5 371.58557 566.5 L -97.25224 566.5 C -119.34363 566.5 -137.25224 548.5914 -137.25224 526.5 L -137.25224 235.5 C -137.25224 213.4086 -119.34363 195.5 -97.25224 195.5 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 522.4144 195.5 L 991.2522 195.5 C 1013.3436 195.5 1031.2522 213.4086 1031.2522 235.5 L 1031.2522 526.5 C 1031.2522 548.5914 1013.3436 566.5 991.2522 566.5 L 522.4144 566.5 C 500.32304 566.5 482.4144 548.5914 482.4144 526.5 L 482.4144 235.5 C 482.4144 213.4086 500.32304 195.5 522.4144 195.5 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M -716.9189 195.5 L -248.0811 195.5 C -225.9897 195.5 -208.0811 213.4086 -208.0811 235.5 L -208.0811 526.5 C -208.0811 548.5914 -225.9897 566.5 -248.0811 566.5 L -716.9189 566.5 C -739.0103 566.5 -756.9189 548.5914 -756.9189 526.5 L -756.9189 235.5 C -756.9189 213.4086 -739.0103 195.5 -716.9189 195.5 Z" fill="#033399"/>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_26">
+        <text transform="translate(558.2938 288.5)" fill="#210593">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="#210593" x="0" y="151">node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(1177.9604 288.5)" fill="#210593">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="#210593" x="0" y="151">node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(-58.78955 289.75)" fill="#210593">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="#210593" x="0" y="151">node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23" filter="url(#Shadow)">
+        <text transform="translate(-738.9824 288.5)" fill="white">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="white" x="0" y="151">Master</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(-1083.9766 -198)" fill="#210593">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="#210593" x="0" y="151">cluster</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -25,7 +25,7 @@ In addition to the objectives you identified in taking this module, these are th
 # Let's Design Kubernetes from Scratch
 
 <img src="../../assets/images/generic/3rd-party/whiteboard-design-1.jpg
-" style="width:38%;" />
+" style="width:30%;" />
 
 ---
 
@@ -93,7 +93,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## It is Getting a Bit Crowded :-) 
 
-<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:70%;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:50%;" />
 
 ---
 
@@ -109,9 +109,9 @@ In addition to the objectives you identified in taking this module, these are th
 
 ---
 
-## Step-6: Finalize with Few More Controllers
+## Step-6: Few More Controllers
 
-<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:50%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:45%;float:right;" />
 
 * On the master node, we are adding 2 more controllers
 
@@ -125,7 +125,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 * Whew, we came up with a pretty complicated system!
 
-<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:55%;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:40%;" />
 
 ---
 
@@ -133,6 +133,30 @@ In addition to the objectives you identified in taking this module, these are th
 
 ---
 
+## Kubernetes Cluster
+
+  * A cluster is a set of computing instance that Kubernetes manages
+
+<img src="../../assets/images/kubernetes/cluster-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+Notes:
+
+---
+
+## Can One Serve Two Masters?
+
+<img src="../../assets/images/kubernetes/cluster-2.png" style="width:42%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Yes!
+
+* A cluster can have multiple masters and lots of nodes
+
+
+
+Notes:
+
+---
 ## A Big Picture Overview of Kubernetes
 
 <img src="../../assets/images/kubernetes/kubernetes-architecture-1.png" style="width:90%;" /> <!-- {"left" : 0.47, "top" : 1.56, "height" : 4.38, "width" : 9.31} -->
@@ -270,6 +294,77 @@ Participant Notes :
 
 ---
 
+# Namespaces
+
+---
+
+## Namespaces
+
+<img src="../../assets/images/kubernetes/namespaces-2.png" style="width:35%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Intended for use in **multi-user/multi-team** environments.  Allows a physical cluster to be segmented into multiple **virtual clusters**
+
+<img src="../../assets/images/kubernetes/namespaces-1.png" style="width:35%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Allows division of cluster resources amongst multiple users, thus provides logical separation between teams and their environments.
+    - e.g.  Department-1,  Department-2
+
+* Allows for role-based access control.
+
+* Manage different environments within the same cluster.
+    - e.g.  Dev,  Prod
+
+* Namespaces help isolate resources into their own space.
+
+* Reference: [1](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
+
+---
+
+## Namespace
+
+<img src="../../assets/images/kubernetes/namespaces-3.png" style="width:35%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Kubernetes objects/resources are located within the namespace
+
+* Kubernetes by default initializes 3 namespaces
+    - kube-system: all system level functionality
+    - kube-public: accessible to all
+    - default: default user namespace
+
+* Creating a namespace
+
+```bash
+$   kubectl create namespace myns
+```
+
+* Listing namespaces
+
+```bash
+$   kubectl get ns
+```
+
+```console
+NAME                   STATUS   AGE
+default                Active   5d8h
+kube-public            Active   5d8h
+kube-system            Active   5d8h
+myns                   Active   77m
+```
+
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+Namespaces are 'logical or virtual entities'.
+Multiple Namespaces can be hosted on a single physical cluster.
+
+Namespaces help isolate resources into their own space.
+Resources within a single Namespace, must have unique names.
+
+---
+
 # Pods
 
 ---
@@ -370,6 +465,7 @@ Few if those are listed below:
 ## Sidecar Pattern
 
 <img src="../../assets/images/kubernetes/3rd-party/Indiana-Jones-And-The-Last-Crusade-2-sidecar.jpg" style="width:35%;float:right;" /> <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
+<img src="../../assets/images/kubernetes/sidecar-helper-1.png" style="width:50%;float:right;clear:both;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 * **Sidecar** containers are **"helpers"** the main container 
 
@@ -379,8 +475,6 @@ Few if those are listed below:
     - code loaders
 
 * Here we see **log collecting** feature implemented as a sidecar pattern.  Basically log gathering is a helper function attached to the primary application
-
-<img src="../../assets/images/kubernetes/sidecar-helper-1.png" style="width:45%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 ---
 
@@ -394,7 +488,7 @@ Few if those are listed below:
 
 * Example app: updating a 'blacklisted IP list'
 
-<img src="../../assets/images/kubernetes/sidecar-helper-2.png" style="width:60%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/kubernetes/sidecar-helper-2.png" style="width:50%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
 ---
 
@@ -411,7 +505,7 @@ Few if those are listed below:
 
 ---
 
-## Configuring a Pod  
+## Pod Definition (Spec / Manifest)
 
 * Define a pod with a YAML file
 
@@ -463,6 +557,28 @@ Notes:
 
 ---
 
+## Deploying a Pod
+
+<img src="../../assets/images/kubernetes/Deploying-a-Pod.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+Here we see 2 Pod definitions. 
+A Python one for web application
+A Redis one for datastore
+
+Master – All communication paths from the cluster to the master terminate at the API server.
+Web Pod – Deployed the web application into the kubernetes nodes.
+DB pod   - Deployed the Database application. 
+We can deploy many pods like those listed above. 
+
+---
+
 # Hands on With Kubernetes
 
 ---
@@ -479,7 +595,7 @@ Notes:
 
 * **Instructions:**
     - **Instructor please demo this lab**
-    - Please complete **install-1**
+    - Please complete **INSTALL-1**
 
 Notes:
 
@@ -497,13 +613,49 @@ Notes:
 
 * **Instructions:**
     - **Instructor please demo this lab**
-    - Please complete **install-2**
+    - Please complete **INSTALl-2**
 
 Notes:
 
 ---
 
-## Lab: Running a Pod
+## Lab: Explore the cluster
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Explore the K8s cluster we just setup
+
+* **Approximate run time:**
+    - 10 mins
+
+* **Instructions:**
+    - **Instructor please demo this lab**
+    - Please complete **EXPLORE-1**
+
+Notes:
+
+---
+
+## Lab: Setup a Dashboard
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    -  Setup and access a Kubernetes dashboard
+
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - **Instructor please demo this lab**
+    - Please complete **EXPLORE-2**
+
+Notes:
+
+---
+
+## Lab: Running a Pod Manually
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
@@ -511,29 +663,29 @@ Notes:
     - Run a single pod
 
 * **Approximate run time:**
-    - 15 mins
+    - 10 mins
 
 * **Instructions:**
     - **Instructor please demo this lab**
-    - Please complete **pod-1**
+    - Please complete **POD-1**
 
 Notes:
 
 ---
 
-## Lab: Running Multiple Pods
+## Lab: Running a Pod from Manifest
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * **Overview:**
-    - Deploy mulitple pods
+    - Deploy a pod manifest
 
 * **Approximate run time:**
-    - 15 mins
+    - 10 mins
 
 * **Instructions:**
     - **Instructor please demo this lab**
-    - Please complete **pod-2**
+    - Please complete **POD-2**
 
 Notes:
 
@@ -719,16 +871,36 @@ Notes:
 
 ---
 
-# Deploying to Kubernetes
+## Lab: Running a DaemonSet
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Deploy a Daemonset
+
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - Please complete **DAEMONSET-1**
+
+Notes:
 
 ---
 
-##  Deployments
+# Deployments
 
-  * Deployments are intended to replace Replication Controllers.
-  * In addition to the functions of Replication Controllers, Deployments provide roll-out and roll-back options
-  * Deployment ensures desired state of the deployment object is achieved and maintained through deployment controller
-  * Pause the Deployment to apply multiple fixes to its PodTemplateSpec and then resume it to start a new rollout.
+---
+
+## Deployments
+
+* **Deployments** offer more functionality than Replication Controllers
+
+* Deployments provide roll-out and roll-back options
+
+* Deployments depend on ReplicaSets to manage and run pods
+
+<img src="../../assets/images/kubernetes/Deployments.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
@@ -741,24 +913,18 @@ When the desired state is specified in the Deployment object, and the Deployme
 
 Pause the Deployment to apply multiple fixes to its PodTemplateSpec and then resume it to start a new rollout.
 
-
 ---
 
 ## Deployment
 
-  * Deployments depend on ReplicaSets to manage and run pods
+* Deployments monitor cluster and update changes when required
 
-![](../../assets/images/kubernetes/Deployments.png) <!-- {"left" : 0.57, "top" : 1.82, "height" : 4.34, "width" : 9.14} -->
+* Here we increased replicas from 3 (left) to 4 (right)
 
-Notes:
+* So a new Pod is created
 
----
-
-## Deployment
-
-  * Deployments monitor cluster and update changes when required
-
-![](../../assets/images/kubernetes/Deployments-01.png) <!-- {"left" : 0.55, "top" : 2.33, "height" : 3.65, "width" : 9.18} -->
+<img src="../../assets/images/kubernetes/Deployments.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-01.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
@@ -766,9 +932,12 @@ Notes:
 
 ## Deployment
 
-  * Deployments monitor pods and make correction when then stop working
+* Deployments monitor pods and make correction when they stop working
 
-![](../../assets/images/kubernetes/Deployments-02.png) <!-- {"left" : 0.9, "top" : 2.42, "height" : 4.02, "width" : 8.46} -->
+* Here a Pod crashed, and a replacement Pod is spun up
+
+<img src="../../assets/images/kubernetes/Deployments-02.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
@@ -776,216 +945,99 @@ Notes:
 
 ## Deployment
 
-  * Deployments constantly monitor cluster to observe changes
+* Deployments constantly monitor cluster to observe changes
 
-![](../../assets/images/kubernetes/Deployments-03.png) <!-- {"left" : 0.79, "top" : 2.27, "height" : 3.45, "width" : 8.68} -->
+* Here we have gone from 4 replicas (left) to 3 (right).  So the excess Pod is deleted
 
-Notes:
-
----
-
-## Rolling updates
-
-  * Rolling updates permit you to update from one image version to another
-
-![](../../assets/images/kubernetes/Deployments-04.png) <!-- {"left" : 0.99, "top" : 1.89, "height" : 4.93, "width" : 8.28} -->
-
-Notes:
-
----
-
-## Rolling updates
-
-  * This deployment allows you to create a second ReplicaSet
-
-![](../../assets/images/kubernetes/Deployments-05.png) <!-- {"left" : 0.47, "top" : 2.91, "height" : 2.17, "width" : 9.31} -->
-
-Notes:
-
----
-
-## Rolling updates
-
-  * It gradually increases the number of replicas in the second ReplicaSet
-
-![](../../assets/images/kubernetes/Deployments-06.png) <!-- {"left" : 0.51, "top" : 2.92, "height" : 2.15, "width" : 9.23} -->
-
-Notes:
-
----
-
-## Rolling updates
-
-  * This decreases replicas in the first ReplicaSet
-
-![](../../assets/images/kubernetes/Deployments-07.png) <!-- {"left" : 0.69, "top" : 2.72, "height" : 2.07, "width" : 8.88} -->
-
-Notes:
-
----
-
-## Rolling updates
-
-  * Hence at any given point of time there are at most 4 pods
-
-![](../../assets/images/kubernetes/Deployments-08.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
-
-Notes:
-
----
-
-## Rolling updates
-
-  * Minimum of 3 pods
-
-
-![](../../assets/images/kubernetes/Deployments-09.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
-
-Notes:
-
----
-
-## Rolling updates
-
-  * The same state continues
-
-
-
-![](../../assets/images/kubernetes/Deployments-10.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
-
-Notes:
-
----
-
-## Rolling updates
-
-  * The previous state continues until new image version is rolled out
-
-
-![](../../assets/images/kubernetes/Deployments-11.png) <!-- {"left" : 0.74, "top" : 2.73, "height" : 2.04, "width" : 8.76} -->
-
-Notes:
-
----
-
-## Canary deployment
-
-  * A Canary deployment depends on a service to balance the load during traffic to primary pods based on label selectors
-
-![](../../assets/images/kubernetes/Canary-deployment.png) <!-- {"left" : 1.03, "top" : 2.35, "height" : 3.71, "width" : 8.2} -->
-
-Notes:
-
----
-
-## Canary deployment
-
-  * Canary deployment tests a second deployment by load balancing a subset of traffic to new pods with the same label
-
-![](../../assets/images/kubernetes/Canary-deployment-01.png) <!-- {"left" : 0.4, "top" : 2.21, "height" : 3.09, "width" : 9.45} -->
-
-Notes:
-
----
-
-## Blue green deployment
-
-  * A blue-Green deployment make use the service label selector to change all traffic from one deployment to another
-
-
-![](../../assets/images/kubernetes/Canary-deployment-02.png) <!-- {"left" : 0.97, "top" : 2.35, "height" : 3.87, "width" : 8.3} -->
+<img src="../../assets/images/kubernetes/Deployments-01.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-03.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 
 Notes:
 
 ---
 
-## Blue green deployment
+## Deployment Definition
 
-  * Initially bring up and test new deployment without live traffic
+* Our deployment consists of
+    - Pods with `nginx` containers
+    - 4 replicas
 
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 4 
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
+```
 
-![](../../assets/images/kubernetes/Canary-deployment-03.png) <!-- {"left" : 0.62, "top" : 2.25, "height" : 3, "width" : 9.01} -->
+---
 
+## Lab: Deployments
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Run a deployment
+
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - Please complete **DEPLOY-1**
 
 Notes:
 
 ---
 
-## Blue green deployment
-
-  * To make the version go live, change the service label selector which switches all traffic
-
-![](../../assets/images/kubernetes/Canary-deployment-04.png) <!-- {"left" : 0.49, "top" : 2.73, "height" : 3, "width" : 9.27} -->
-
-
-Notes:
+# Services
 
 ---
 
-# Deployment definition
+## Service
 
-## What is a Deployment object?  
+* **Service** is an abstraction in Kubernetes, that allows us to define a 'high level' service
 
- * A deployment object ensures that _N_ pods are running in a cluster at any given point of time
+* For example, when we access Google search, we are accessing a service
 
-![](../../assets/images/kubernetes/pod.yaml-02.png) <!-- {"left" : 0.99, "top" : 2.18, "height" : 3.15, "width" : 8.27} -->
+* There may be 1000s of machines running the service behind the scene
 
+* And at any moment a few of them may be down
 
-Notes:
-
----
-
-## Defining a Deployment Object  
-
-  * A deployment is defined with a YAML file
-
-![](../../assets/images/kubernetes/Deployment.png) <!-- {"left" : 0.77, "top" : 1.47, "height" : 5.49, "width" : 5.21} -->
+* But the service overall is working and available
 
 
-Notes:
+<img src="../../assets/images/kubernetes/service-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 
-## Communication with the Pod  
+## Services
 
-  * A service assigns a fixed IP to your pod replicas
+* **Service vs. Deployment**
+    - A deployment is responsible for keeping a set of pods running.
+    - A service is responsible for enabling network access to a set of pods
 
-  * A service allows other pods or services to communicate with the pod replicas
+* A Service can be backed by many Pods
 
-![](../../assets/images/kubernetes/service-assigns.png) <!-- {"left" : 1.19, "top" : 2.41, "height" : 4.33, "width" : 7.87} -->
+* Service will route traffic to any of the Pods
 
+* Service works with **kubeproxy** to direct traffic to Pods
 
-Notes:
-
----
-
-## Multiple Services
-
-  * You can have multiple services with varying configurations and features at any given time
-
-
-![](../../assets/images/kubernetes/service-assigns-1.png) <!-- {"left" : 0.87, "top" : 1.92, "height" : 4.77, "width" : 8.5} -->
-
-Notes:
-
----
-
-## Service YAML Definition
-
-  * Define a service with a YAML file
-
-![](../../assets/images/kubernetes/YAML.png) <!-- {"left" : 0.77, "top" : 1.78, "height" : 4.62, "width" : 5.66} -->
-
-Notes:
-
----
-
-## Deployment Example
-
-  * Let’s create a simple Deployment.
-
-![](../../assets/images/kubernetes/Deployment-Example.png) <!-- {"left" : 0.77, "top" : 1.78, "height" : 4.62, "width" : 5.66} -->
+<img src="../../assets/images/kubernetes/Exposing-Services.png" style="width:65%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 
 Notes:
@@ -994,53 +1046,118 @@ Instructor Notes :
 
 Participant Notes :
 
-Deployment, nginx-deployment is created and is indicated by the .metadata.name field.
-Three replicated pods are created by the deployment as mentioned in the replicas field
-Deployment manages the pods based on the selector field definition.
-Sophisticated selection rules can be created subject to pod template satisfying the rule.
-.template.spec field or Pod template’s specification indicates that the Pods run one container, nginx, which runs the nginx Docker Hub image at version 1.7.9.
-The Deployment opens port 80 for use by the Pods.
-
-The template field contains the following instructions:
-- Pods are labeled app: nginx
-- Create one container with name nginx.
-- Run the nginx image at version 1.7.9.
-- Open port 80 for the container to send and accept traffic.
+An example of Service might be a web service.
+This Web Service can be powered by say 3 Pods.
+Client accessing the service doesn't care if the 3 Pods are up and running or not, as long as the service is accessible.
 
 ---
 
-## Uploading YAML File  
+## Service Communication with Pods
 
-  * Upload the YAML file to master, and the scheduler decides where to run the pods
+* A service will get its own **fixed virtual IP address**
 
-simple Deployment.
+* So all traffic can be **predictably** routed to this IP address
 
-![](../../assets/images/kubernetes/pod.yaml-03.png) <!-- {"left" : 0.99, "top" : 2.67, "height" : 3.15, "width" : 8.27} -->
+* From there, the service can bounce traffic to active Pods
 
-Notes:
-
----
-
-## Lab 2: Managing deployments with Kubernetes
-
-  * **Overview:**
-    - This lab will provide practice in scaling and managing containers so you can accomplish these common scenarios where multiple heterogeneous deployments are being used.
-
-  * **What you'll do**
-    - Practice with kubectl tool
-    - Create deployment yaml files
-    - Launch, update, and scale deployments
-    - Practice with updating deployments and deployment styles
+<img src="../../assets/images/kubernetes/service-assigns.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 
 Notes:
 
 ---
 
-## Lab 2: Managing deployments with Kubernetes
+## Multiple Services
 
-  * **Approximate time:**
-    - 20-30 minutes
+* You can have multiple services with varying configurations and features at any given time
 
-  * **Link to the lab**
-    - https://www.qwiklabs.com/focuses/639?parent=catalog
+
+<img src="../../assets/images/kubernetes/service-assigns-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+Notes:
+
+---
+
+## Exposing Service to Outside World
+
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* One of the simplest ways of making our service to outside world is called **NodePort**
+
+* Here a client can access the service by connecting to **any node on port 30000**
+
+* Traffic flow:
+    1. Client hits a **node:30000**
+    2. Node forwards the traffic to a **service IP address** (this is virtual btw)
+    3. The service then bounces traffic to **any of the pods servicing**
+
+---
+
+## Service Definition
+
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  type: NodePort
+  ports:
+    # Three types of ports for a service
+    # nodePort - a static port assigned on each the node
+    # port - port exposed internally in the cluster
+    # targetPort - the container port to send requests to
+    - nodePort: 30000
+      port: 8080
+      targetPort: 80
+      protocol: TCP
+  selector:
+    app: nginx
+```
+
+* Deploying a service
+
+```bash
+$   kubectl apply -f svc.yaml
+
+$   kubectl get svc
+```
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+This specification will create a Service which targets TCP port 80 on any Pod with the run: my-nginx,
+
+---
+
+## Lab: Services
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Deploy a service
+
+* **Approximate run time:**
+    - 20 mins
+
+* **Instructions:**
+    - Please complete **SERVICE-1**
+
+Notes:
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?

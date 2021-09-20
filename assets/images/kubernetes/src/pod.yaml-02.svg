@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1361 -2246 3272 1276" width="3272" height="1276">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="150" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-1688.2" y="-2373.6">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.744"/>
+      <feOffset in="blur" result="offset" dx="9" dy="11"/>
+      <feFlood flood-color="black" flood-opacity=".710057" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2018-10-28 17:39:32 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_12">
+        <path d="M -1285 -2240 L 1835 -2240 C 1873.66 -2240 1905 -2208.66 1905 -2170 L 1905 -1046 C 1905 -1007.3401 1873.66 -976 1835 -976 L -1285 -976 C -1323.66 -976 -1355 -1007.3401 -1355 -1046 L -1355 -2170 C -1355 -2208.66 -1323.66 -2240 -1285 -2240 Z" fill="white"/>
+        <path d="M -1285 -2240 L 1835 -2240 C 1873.66 -2240 1905 -2208.66 1905 -2170 L 1905 -1046 C 1905 -1007.3401 1873.66 -976 1835 -976 L -1285 -976 C -1323.66 -976 -1355 -1007.3401 -1355 -1046 L -1355 -2170 C -1355 -2208.66 -1323.66 -2240 -1285 -2240 Z" stroke="#280091" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="24.0,24.0" stroke-width="12"/>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 970.0811 -1793.5 L 1438.9189 -1793.5 C 1461.0103 -1793.5 1478.9189 -1775.5914 1478.9189 -1753.5 L 1478.9189 -1462.5 C 1478.9189 -1440.4086 1461.0103 -1422.5 1438.9189 -1422.5 L 970.0811 -1422.5 C 947.9897 -1422.5 930.0811 -1440.4086 930.0811 -1462.5 L 930.0811 -1753.5 C 930.0811 -1775.5914 947.9897 -1793.5 970.0811 -1793.5 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M -269.25224 -1793.5 L 199.58557 -1793.5 C 221.67696 -1793.5 239.58557 -1775.5914 239.58557 -1753.5 L 239.58557 -1462.5 C 239.58557 -1440.4086 221.67696 -1422.5 199.58557 -1422.5 L -269.25224 -1422.5 C -291.34363 -1422.5 -309.25224 -1440.4086 -309.25224 -1462.5 L -309.25224 -1753.5 C -309.25224 -1775.5914 -291.34363 -1793.5 -269.25224 -1793.5 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 350.41443 -1793.5 L 819.2522 -1793.5 C 841.3436 -1793.5 859.2522 -1775.5914 859.2522 -1753.5 L 859.2522 -1462.5 C 859.2522 -1440.4086 841.3436 -1422.5 819.2522 -1422.5 L 350.41443 -1422.5 C 328.32304 -1422.5 310.41443 -1440.4086 310.41443 -1462.5 L 310.41443 -1753.5 C 310.41443 -1775.5914 328.32304 -1793.5 350.41443 -1793.5 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M -888.9189 -1793.5 L -420.0811 -1793.5 C -397.9897 -1793.5 -380.0811 -1775.5914 -380.0811 -1753.5 L -380.0811 -1462.5 C -380.0811 -1440.4086 -397.9897 -1422.5 -420.0811 -1422.5 L -888.9189 -1422.5 C -911.0103 -1422.5 -928.9189 -1440.4086 -928.9189 -1462.5 L -928.9189 -1753.5 C -928.9189 -1775.5914 -911.0103 -1793.5 -888.9189 -1793.5 Z" fill="#033399"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 20 -1530 L 196.51559 -1530 C 197.06787 -1530 197.51559 -1529.5523 197.51559 -1529 L 197.51559 -1448 C 197.51559 -1447.4477 197.06787 -1447 196.51559 -1447 L 20 -1447 C 19.447715 -1447 19 -1447.4477 19 -1448 L 19 -1529 C 19 -1529.5523 19.447715 -1530 20 -1530 Z" fill="#e8bf2b"/>
+      </g>
+      <g id="Graphic_24">
+        <path d="M 618 -1529 L 794.5156 -1529 C 795.0679 -1529 795.5156 -1528.5523 795.5156 -1528 L 795.5156 -1447 C 795.5156 -1446.4477 795.0679 -1446 794.5156 -1446 L 618 -1446 C 617.4477 -1446 617 -1446.4477 617 -1447 L 617 -1528 C 617 -1528.5523 617.4477 -1529 618 -1529 Z" fill="#e8bf2b"/>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_22">
+        <text transform="translate(386.2938 -1700.5)" fill="#210593">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="#210593" x="0" y="151">node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(1005.9604 -1700.5)" fill="#210593">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="#210593" x="0" y="151">node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(-230.78955 -1699.25)" fill="#210593">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="#210593" x="0" y="151">node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19" filter="url(#Shadow)">
+        <text transform="translate(-910.9824 -1700.5)" fill="white">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="white" x="0" y="151">Master</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(-1285.9766 -2201)" fill="#210593">
+          <tspan font-family="Century Gothic" font-size="150" font-weight="700" fill="#210593" x="0" y="151">cluster</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <title>Rectangle</title>
+        <path d="M -192.9563 -1820.4407 L -230.46622 -1780.2162 C -230.84287 -1779.8123 -230.82078 -1779.1795 -230.41686 -1778.8029 L 165.98244 -1409.1546 C 166.38635 -1408.7779 167.01913 -1408.8 167.3958 -1409.204 C 167.3958 -1409.204 167.3958 -1409.204 167.3958 -1409.204 L 204.9057 -1449.4284 C 205.28236 -1449.8323 205.26026 -1450.465 204.85635 -1450.8417 L -191.54295 -1820.49 C -191.94687 -1820.8667 -192.57965 -1820.8446 -192.9563 -1820.4407 C -192.9563 -1820.4407 -192.9563 -1820.4407 -192.9563 -1820.4407 Z" fill="#ff4040"/>
+      </g>
+      <g id="Graphic_28">
+        <title>Rectangle</title>
+        <path d="M 191.96813 -1795.8684 L 151.74368 -1833.3783 C 151.33976 -1833.755 150.70698 -1833.7328 150.33033 -1833.329 C 150.33033 -1833.329 150.33033 -1833.329 150.33033 -1833.329 L -219.318 -1436.9296 C -219.69466 -1436.5257 -219.67256 -1435.893 -219.26865 -1435.5163 L -179.0442 -1398.0063 C -178.64028 -1397.6297 -178.0075 -1397.6518 -177.63084 -1398.0557 C -177.63084 -1398.0557 -177.63084 -1398.0557 -177.63084 -1398.0557 L 192.01749 -1794.455 C 192.39414 -1794.859 192.37205 -1795.4917 191.96813 -1795.8684 Z" fill="#ff4040"/>
+      </g>
+    </g>
+  </g>
+</svg>

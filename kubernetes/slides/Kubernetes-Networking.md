@@ -1,5 +1,6 @@
-Kubernetes: Networking
-===================
+# Kubernetes: Networking
+
+---
 
 ## Module Objectives
 
@@ -16,23 +17,15 @@ After this module, participants will be able to:
  * Network Extensions
  * CNI Plugins
 
-
 ---
 
 # Networking Overview
 
-## OSI Model
-
- * Layer 7: Application Layer 
- * Layer 6: Presentation Layer
- * Layer 5: Session Layer
- * Layer 4: Transport Layer
- * Layer 3: Network Layer 
- * Layer 2: Data Link Layer
- * Layer 1: Physical Layer
-
+---
 
 ## OSI Model
+
+* The OSI Model (Open Systems Interconnection Model) has seven different abstraction layers
 
 | Layer | Name         | Example        |
 |-------|--------------|----------------|
@@ -46,88 +39,59 @@ After this module, participants will be able to:
 
 ---
 
-## VXLAN
+## Docker Networking
 
- * VXLAN: "virtual extensible LAN". 
- * Encapsulates Level 2 Ethernet with UDP Datagram
- * Similar to VLAN
-   - more flexibliity and power (more than 4096 IDs)
- * Encapsulation / Overlay Protocol 
- * Runs on top of Existing Networks
+<img src="../../assets/images/docker/docker-networking-2.png" style="width:50%;float:right;" />
+
+- **none**: Adds the container to a container-specific network stack with no connectivity.
+
+* **host**: Adds the container to the host machine’s network stack, with no isolation.
+
+- **bridge (default)**: The default networking mode. Each container can connect with one another by IP address.
+
+- **custom bridge**: User-defined bridge networks with additional flexibility, isolation, and convenience features.
 
 ---
 
-## Overlay Network
- * Logical Network rather than Physical
- * Runs on top of existing networks
- * Provides an Abstraction on top
- * Encapsulation:
-   - Wrap Network Packets with Additional Layer to Provide Additional Information
-   - Translates from Virtual Network to Underlying Address Space
- * Purposes
-   - Separation of Concerns
-   - Security
+## Docker Networking (Bridge)
 
-## Encapsulation
- * Wrapping Network Packets in a Layer
- * Translates from virtual network to underlying address space
-    - for routing
- * Usually packet de-encapsulated and then routed to destination
- 
+<img src="../../assets/images/docker/networking-5-bridge.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-## Mesh Network
+- Creates a virtual bridge called **docker0**
 
- * Mesh Nework
- * Each Additional Node connects to many other nodes
- * Cooperate on Routing
- * Advantages: 
-   - Reliable Networking
-   - Multiple Paths
- * Disadvantages
-   - Additional Nodes Means Additional Overead
+- For each container that Docker creates, it allocates a virtual Ethernet device (called **veth**) that is attached to the virtual bridge.
 
-## Border Gateway Protocol (BGP)
+- The **veth** is mapped to appear as **eth0** in the container.
 
- * Manage Packets routed between edge Routers
- * Figure out how to send packet from one network to another
- * For CNI  
+- Containers can talk with each other if they are present in the same machine.
+
+- For Docker containers to communicate across machines port allocation needs to be done on the parent machine’s own IP address.
+
 
 Notes:
 
-BGP: Stands for "border gateway protocol" and is used to manage how packets are routed between edge routers. BGP helps figure out how to send a packet from one network to another by taking into account available paths, routing rules, and specific network policies. BGP is sometimes used as the routing mechanism in CNI plugins instead of encapsulated overlay networks.
+Instructor Notes :
 
+Participant Notes :
+
+By default, Docker uses host-private networking..
+So Docker containers can only talk to other Docker containers running on the same machine.
+But in a Kubernetes cluster, all containers need to communicate with each other freely.
+So we need to allocate ports on hosts carefully so there is no conflict among Docker containers.
 
 ---
 
-## Docker Networking
+## Kubernetes Networking Requirements
 
- * Default Options:
-   - none: Adds the container to a container-specific network stack with no connectivity.
-   - host: Adds the container to the host machine’s network stack, with no isolation.
-   - default bridge: The default networking mode. Each container can connect with one another by IP address.
-   - custom bridge: User-defined bridge networks with additional flexibility, isolation, and convenience features.
+<img src="../../assets/images/kubernetes/networking-1.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- * Advanced Networking
-   - Multi-Host Overlay Networking
-   - Additional Drivers and Plugins
-
-
-
-# Kubernetes Networking
-
-## Cluster Networking
-
-  * Kubernetes requirements:
-
-    - Pods are routable on a flat network.
-
-    - Pods should see their own routable IP address.
-
-    - Nodes can communicate with all containers.
-
-    - In many cases, to meet above requirements SDN need to be used.
-
-    - All SDNs accomplish the same three goals – however, they may have different implementations with often unique features.
+* All containers can communicate with all other containers without NAT
+* All nodes can communicate with all containers (and vice-versa) without NAT
+* Pods are routable on a flat network.
+* Pods should see their own routable IP address.
+* Nodes can communicate with all containers.
+* In many cases, to meet above requirements SDN (Software Defined Networking) need to be used.
+* All SDNs accomplish the same three goals – however, they may have different implementations with often unique features.
 
 
 Notes:
@@ -142,50 +106,7 @@ Node to Node communication is essential, and nodes are free to communicate with 
 An SDN – Software Defined Networking – can help to define various network layouts.
 How ever, SDNs can get complicated to administer.
 
-
 ---
-
-## Docker Model
-
-  * Docker:
-
-    - Uses host-private networking Pods.
-
-    - Creates a virtual bridge called docker0.
-
-    - For each container that Docker creates, it allocates a virtual Ethernet device (called veth) that is attached to the virtual bridge.
-
-    - The veth is mapped to appear as eth0 in the container.
-
-    - Containers can talk with each other if they are present in the same machine.
-
-    - For Docker containers to communicate across machines port allocation needs to be done on the parent machine’s own IP address.
-
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-By default, Docker uses host-private networking..
-So Docker containers can only talk to other Docker containers running on the same machine.
-But in a Kubernetes cluster, all containers need to communicate with each other freely.
-So we need to allocate ports on hosts carefully so there is no conflict among Docker containers.
-
-
----
-
-## Kubernetes 3 Commandments
-
- * Kubernetes defines the networking model, but there are other implementations of it
- * Here are 3 Commandments (from Kubernetes Documentation) 
-   - All containers can communicate with all other containers without NAT
-   - All nodes can communicate with all containers (and vice-versa) without NAT
-   - IP that a container sees itself as is the same IP that others see it as
-
----
-
 
 ## Kubernetes Networking Model
 
@@ -225,63 +146,78 @@ Once traffic arrives at a node, it is routed to the correct service backends via
 ---
 
 ## Container-To-Container
+
+<img src="../../assets/images/kubernetes/networking-1.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
  * Containers can communicate with each other within a POD
+
  * Able to Write traffic to localhost
    - e.g. localhost:PORT
+
  * This is an example of *highly-coupled* communication
+
  * Does not really require networking
 
 ---
 
 ## Pod to Pod
 
- * Each Pod in cluster has an IP address in flat networking namespace
- * Pod can communicate with the network (much like a VM)
- * Different Implementations of this:
-   - Flannel: Uses an *overlay* network
-   - Weave
+<img src="../../assets/images/kubernetes/networking-1.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Each Pod in cluster has an IP address in flat networking namespace
+
+* Pod can communicate with the network (much like a VM)
+
+* Different implementations available:
+   - [Flannel](https://github.com/flannel-io/flannel): Uses an *overlay* network
+   - [Weave](https://www.weave.works/docs/net/latest/overview/)
 
 ---
 
 ## Pod to Service
- * In the Pod-to-Service Communication model, services are assigned to client-accessible IPs.
- * They are then transparently proxied to the pods grouped by that service.
- * Requests to the service IPs are intercepted by a kube-proxy process running on all hosts, which then routes to the correct pod.
- * As pods may go up and down, best to communicate via services
+
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* In the Pod-to-Service Communication model, services are assigned to client-accessible IPs.
+
+* They are then transparently proxied to the pods grouped by that service.
+
+* Requests to the service IPs are intercepted by a kube-proxy process running on all hosts, which then routes to the correct pod.
+
+* As pods may go up and down, best to communicate via services
+
 ---
 
 ## External-to-Internal Communication
- * Permitting external traffic into the cluster is finished mostly by mapping outside load balancers to explicitly uncovered services in the cluster.
- * This allows
+
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/load-balancer-1.png" style="width:25%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Permitting external traffic into the cluster can be accomplished by
+    - Load balancers
+    - NodePort
+    - Ingress
+
+* Good reference: [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
+
+<img src="../../assets/images/kubernetes/ingress-1.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
 
 ---
 
-## Kubernetes Networking Model (Cont.)
+## Kubernetes Networking Model
 
-  * Some of the plugins listed below were developed exclusively for Kubernetes, while others are more general purpose solutions.
+* Some of the plugins listed below were developed exclusively for Kubernetes, while others are more general purpose solutions.
 
+* **Kubenet** : Kubenet is typically useful for single-node environments.
 
-  * **Kubenet**
+* **Flannel** : Flannel is a networking overlay fabric specifically designed for Kubernetes and created by CoreOS.
 
-    - Kubenet is typically useful for single-node environments.
+* **Weave** :  Weave is used to connect, monitor, visualize, and control Kubernetes.
 
-  * **Flannel**
+* **OpenVSwitch** : OpenVSwitch is used to set up networking between pods across nodes.
 
-    - Flannel is a networking overlay fabric specifically designed for Kubernetes and created by CoreOS.
-
-  * **Weave**
-
-   - Weave is used to connect, monitor, visualize, and control Kubernetes.
-
-## Kubernetes Networking Model (Cont.)
-
-  * **OpenVSwitch**
-
-   - OpenVSwitch is used to set up networking between pods across nodes.
-
-  * **Calico**
-
-   - Calico provides simple, scalable and secure virtual networking.
+* **Calico** : Calico provides simple, scalable and secure virtual networking.
 
 
 Notes:
@@ -314,11 +250,17 @@ Calico provides simple, scalable and secure virtual networking.
 
 ---
 
+## Cross Node Pod-to-Pod Connectivity
 
-## Cross Node Pod-to-Pod Network Connectivity
+<img src="../../assets/images/kubernetes/Cross-Node-Pod-to-Pod-Network-Connectivity.png" style="width:55%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
+* Here nodes are in subnet **192.168.1.0/24** and pods use **10.1.0.0/16** subnet, with **10.1.1.0/24** and **10.1.2.0/24** used by node1 and node2 respectively for the pod IP’s.
 
-![](../../assets/images/kubernetes/Cross-Node-Pod-to-Pod-Network-Connectivity.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+* Nodes should be able to talk to all pods. For example, 192.168.1.100 should be able to reach 10.1.1.2, 10.1.1.3, 10.1.2.2 and 10.1.2.3 directly (without NAT)
+
+* A pod should be able to communicate with all nodes. For example, pod 10.1.1.2 should be able to reach 192.168.1.100 and 192.168.1.101 without NAT
+
+* A pod should be able to communicate with all pods. For example, 10.1.1.2 should be able to communicate with 10.1.1.3, 10.1.2.2 and 10.1.2.3 directly (without NAT)
 
 
 Notes:
@@ -328,62 +270,27 @@ Instructor Notes :
 Participant Notes :
 
 For the illustration of these requirements let us use a cluster with two cluster nodes.
-Nodes are in subnet 192.168.1.0/24 and pods use 10.1.0.0/16 subnet, with 10.1.1.0/24 and 10.1.2.0/24 used by node1 and node2 respectively for the pod IP’s.
 
 So from above Kubernetes requirements following communication paths must be established by the network.
 
-1) Nodes should be able to talk to all pods. For e.g., 192.168.1.100 should be able to reach 10.1.1.2, 10.1.1.3, 10.1.2.2 and 10.1.2.3 directly (without NAT)
-2) A pod should be able to communicate with all nodes. For e.g., pod 10.1.1.2 should be able to reach 192.168.1.100 and 192.168.1.101 without NAT
-3) A pod should be able to communicate with all pods. For e.g., 10.1.1.2 should be able to communicate with 10.1.1.3, 10.1.2.2 and 10.1.2.3 directly (without NAT)
- 
+---
+
 # DNS for Services and Pods
-
-## Service Anatomy
-
-
-![](../../assets/images/kubernetes/Service-Anatomy.png) <!-- {"left" : 1.47, "top" : 1.12, "height" : 5.27, "width" : 7.31} -->
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Here Load Balancer is used to send traffic evenly to running instances.
-As instances are added or removed from the service pool, the Load Balancer will adjust.
-
-Explained in slide 39: Service Discovery Components 
-
 
 ---
 
-## Client vs. Server Side Service Discovery
+## Kubernetes DNS
 
-**Client Discovery**
+* Kubernetes run a **DNS service** on its own
 
-![](../../assets/images/kubernetes/Service-Anatomy.png) <!-- {"left" : 3.65, "top" : 0.93, "height" : 3.09, "width" : 4.29} -->
+* It creates DNS records for **Pods and services**
 
-**Server Discovery**
+* Each Pod may use their `/etc/resolv.conf` (set by Kubelet) for resolving
 
-![](../../assets/images/kubernetes/Service-Discovery.png) <!-- {"left" : 1.97, "top" : 4.48, "height" : 2.82, "width" : 4.82} -->
+* References:
+    - [DNS for Services and Pods](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
 
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-Client Discovery: 
-Client talks to the Service registry and does load balancing.
-Client service needs to be Service registry aware.
-Example: Netflix OSS
-
-Server Discovery:
-Client talks to the load balancer and the load balancer talks to the Service registry. 
-Client service need not be Service registry aware.
-Examples: Consul, AWS ELB, K8s, Docker
-
+<img src="../../assets/images/kubernetes/kubeDNS-1.png" style="width:60%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 
@@ -393,7 +300,7 @@ Examples: Consul, AWS ELB, K8s, Docker
   * **Discovery**
 
     - Services need to discover each other dynamically, to get IP addresses and port details to communicate with other services in the cluster
-    - Service Registry maintains a database of services and provides an external API (HTTP/DNS) as a distributed key/value store
+    - **Service Registry** maintains a database of services and provides an external API (HTTP/DNS) as a distributed key/value store
     - Registrator registers services dynamically to the Service registry by listening to the Service creation and deletion events
 
 
@@ -458,11 +365,46 @@ We can query the Web Service and examine the return code.
 If we get return code 200, then we know the Web Service is alive.
 If we get a 404 code, we know the Web Service is down.
 
+---
+
+
+## Lab: Networking - DNS Settings
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Set custom DNS
+
+* **Approximate run time:**
+  - 20 mins
+
+* **Instructions:**
+  - Complete **NETWORK-1** lab
+
+Notes:
 
 ---
 
 
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
+
+
+---
+
+# Appendix
+
+---
+
 # CNI Plugins
+
+---
 
 ## CNI Plugins List
  * Flannel
@@ -501,7 +443,7 @@ If we get a 404 code, we know the Web Service is down.
  * The tunnel type could be VxLAN or GRE (Generic Routing Encapsulation). GRE is used for tunneling of frames over an IP network.
  * VXLAN is preferable for big data centers when large-scale isolation needs to be performed within the network.
 
--- 
+---
 
 ## Calico
  * Introduced with Kubernetes 1.0, Calico provides L3 routed networking for Kubernetes Pods.
@@ -514,6 +456,7 @@ If we get a 404 code, we know the Web Service is down.
 
 ![](../../assets/images/kubernetes/flannel1.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
+---
 
 ## Flannel Networks
 
@@ -525,7 +468,7 @@ If we get a 404 code, we know the Web Service is down.
 
    - In-Host docker network: inside each host, flannel assigned a 100.96.x.0/24 network to all pods in this host, it can hold 2⁸(256) addresses. The docker bridge interface docker0 will use this network to create new containers.
 
-
+---
 
 ## Flannel Pod to Pod Communication
 
@@ -539,7 +482,6 @@ If we get a 404 code, we know the Web Service is down.
    - No Ingress Policies
    - No Egress Policies
  * No Encryption
-   - 
  * Conclusion: Flannel Doesn not provide security features
 
 ---
@@ -569,6 +511,7 @@ If we get a 404 code, we know the Web Service is down.
 
 ![](../../assets/images/kubernetes/weave-net-network.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
+---
 
 ## Weave Net Advantages and Disadvantages
  * Weave Net Advantages

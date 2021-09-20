@@ -339,3 +339,112 @@ Notes:
 Notes:
 
 ---
+## Services
+
+
+
+<img src="../../assets/images/kubernetes/Exposing-Services.png" style="width:55%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+  * An abstraction to define a logical set of Pods that are bound by policy to access them.
+  * Internal and external endpoints are used to expose the services.
+  * Services manipulate iptables by interfacing with the kube-proxy.
+  * Services Support TCP and UDP.
+  * Services can be exposed internally through ClusterIP (default) or outside through NodePort by specifying a type in ServiceSpec.
+  * Services are exposed through virtual-IP-based bridge, which redirects to the backend Pods.
+
+---
+
+
+
+## Deployment Example
+
+  * Let’s create a simple Deployment.
+
+![](../../assets/images/kubernetes/Deployment-Example.png) <!-- {"left" : 0.77, "top" : 1.78, "height" : 4.62, "width" : 5.66} -->
+
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+Deployment, nginx-deployment is created and is indicated by the .metadata.name field.
+Three replicated pods are created by the deployment as mentioned in the replicas field
+Deployment manages the pods based on the selector field definition.
+Sophisticated selection rules can be created subject to pod template satisfying the rule.
+.template.spec field or Pod template’s specification indicates that the Pods run one container, nginx, which runs the nginx Docker Hub image at version 1.7.9.
+The Deployment opens port 80 for use by the Pods.
+
+The template field contains the following instructions:
+- Pods are labeled app: nginx
+- Create one container with name nginx.
+- Run the nginx image at version 1.7.9.
+- Open port 80 for the container to send and accept traffic.
+
+---
+
+## Uploading YAML File  
+
+  * Upload the YAML file to master, and the scheduler decides where to run the pods
+
+simple Deployment.
+
+![](../../assets/images/kubernetes/pod.yaml-03.png) <!-- {"left" : 0.99, "top" : 2.67, "height" : 3.15, "width" : 8.27} -->
+
+Notes:
+
+---
+
+## Lab 2: Managing deployments with Kubernetes
+
+  * **Overview:**
+    - This lab will provide practice in scaling and managing containers so you can accomplish these common scenarios where multiple heterogeneous deployments are being used.
+
+  * **What you'll do**
+    - Practice with kubectl tool
+    - Create deployment yaml files
+    - Launch, update, and scale deployments
+    - Practice with updating deployments and deployment styles
+
+
+Notes:
+
+---
+
+## Lab 2: Managing deployments with Kubernetes
+
+  * **Approximate time:**
+    - 20-30 minutes
+
+  * **Link to the lab**
+    - https://www.qwiklabs.com/focuses/639?parent=catalog
+
+---
+
+
+## Service
+
+* Here we see a service  balancing traffic to primary pods based on label selectors
+
+<img src="../../assets/images/kubernetes/Canary-deployment.png" style="width:85%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+Notes:
+
+---
+
+## Labels and Identifiers  
+
+  * Labels are metadata assigned to any API object which represents identity
+  * Labels are the only grouping mechanism for pods
+  * Search by selectors
+
+![](../../assets/images/kubernetes/metadata.png) <!-- {"left" : 0.89, "top" : 3.1, "height" : 3.74, "width" : 8.46} -->
+
+
+
+Notes:
+
+---
