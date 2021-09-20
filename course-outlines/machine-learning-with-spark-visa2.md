@@ -14,7 +14,6 @@ This course teaches Machine Learning from a practical perspective. In-depth cove
 
 ## What you will learn
 
-* Spark ecosystem
 * Spark ML Library
 * ML Concepts
 * Regressions
@@ -84,17 +83,6 @@ Cloud based lab environment will be provided to students, no need to install any
 * Chrome browser
 
 ## Detailed Course Outline
-
-* **Day 1**
-  - Spark and Spark ML
-* **Day 2,3,4**
-  - Machine Learning
-
-### Spark
-
-* Spark ecosystem
-* Spark data models
-* Spark ML
 
 ### Machine Learning (ML) Overview
 
