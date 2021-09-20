@@ -1,153 +1,167 @@
-Secure Coding
-======
-
-  
-## Agenda - 3 days
-
-| Day | Theme                | Detail                                                                                                |
-|-----|----------------------|-------------------------------------------------------------------------------------------------------|
-| 1   | Introducing Security | Intro * Threat modeling * Common attacks * Countermeasures * Secure design                                                          |
-| 2   | Secure Coding        | Java Security * JavaScript Security * REST endpoint security * Authentication and Authorization (OAuth) * Session security                                   |
-| 3   | Secure Frameworks    | Modern security frameworks (Vault and Consul) *  Framework architecture  * Securing the runtime environment * Security future |
+# Spinnaker
+---
+## Spinnaker Class Outline
 
 
-Notes: 
+| Day | Agenda                                                                          |
+|-----|---------------------------------------------------------------------------------|
+| 1   |                                                                                 |
+| 2   |                                                                                 |
+
+Notes:
 
 ---
 
-## Pre-requisites and Expectations
+## Prerequisites & Expectations
+
+* Familiarity with a programming or scripting language
+* Basic understanding of Linux development environment
+  - Command line navigation 
+  - Editing files (e.g. using VI or nano)
+* This is an **Infrastructure as Code (IaC) with Spinnaker** class 
+  - You may be missing some pre-requisites, that’s OK
+  - You should be willing to work hard, that is a must
 
 
- * Basic coding knowledge is assumed
-
- * Have a coding development environment
-
-     - We will set this up in class
-     
-     - Or on the cloud
-
- * Curiosity!
-
-   - Ask a lot of questions 
-
- * This is a Secure Coding class
-   - No previous knowledge is assumed (but may be helpful) 
-   - Class will be based on the pace of majority of the students
-
-
-Notes: 
-
-
+Notes:
 
 ---
 
 ## Our Teaching Philosophy
 
-
- * Emphasis on concepts & fundamentals
-
- * API - no need to learn anything by heart
-
- * Highly interactive (questions and discussions are welcome)
-
- * Hands-on (learn by doing)
+* Emphasis on concepts & fundamentals
+* No need to learn APIs by heart
+* Highly interactive (questions, discussions, etc. are welcome)
+* Hands-on (learn by doing)
+* Build solid fundamentals of understanding and design
 
 
-Notes: 
 
-
+Notes:
 
 ---
 
-## Lots of Labs: Learn By Doing
+## Analogy: Learning to Fly...
 
-
- * Where is the ANY key?
-
-![](../images/any-key.png) <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
-
-
-Notes: 
+<img src="../../assets/images/generic/3rd-party/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
 
----
-
-## Analogy: Learning To Fly…
-
-
-![](../images/learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
-
-
-Notes: 
-
-
+Notes:
 
 ---
 
 ## Instruction
 
-
-![](../images/classroom-instruction.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
-
-Notes: 
-
-http://aviation-schools.regionaldirectory.us/learn-to-fly-720.jpg
+<img src="../../assets/images/generic/3rd-party/classroom-instruction.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
+
+
+
+Notes:
 
 ---
 
 ## + Flight Time
 
-![](../images/cockpit.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
-
-Notes: 
-
-http://www.wikihow.com/Become-a-Certified-Flight-Instructor
+<img src="../../assets/images/generic/3rd-party/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
+Notes:
 
 ---
 
-## This Will Take A Lot Of Practice 
+## After the Class...
 
-![](../images/practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
-
-
-Notes: 
+<img src="../../assets/images/I-Know-IaC.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
 
 
+Notes:
 
 ---
 
 
+## About You and Me
 
-## About You And Me
-
-
- * About Instructor
-
+* About Instructor
  * About you
-
      - Your Name
-
      - Your background (developer, admin, manager, ...)
-
      - Technologies you are familiar with
+     - Familiarity with Terraform or IaC (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
 
-     - Familiarity with security? (scale of 1 – 4:  1 – new,   4 – expert)
-
-     - Something non-technical about you!(favorite ice cream flavor or hobby…)
-
-![](../images/ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
-
-![](../images/hiking.png)   <!-- {"left" : 3.60, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
- 
-
-Notes: 
+<img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 
+Notes:
 
 ---
+
+## Class Logistics
+
+* Instructor’s contact information
+* Slides
+  - For each session, slides will be emailed out or delivered via virtual classroom 
+* Server nodes
+  - Provided in the cloud
+* Labs
+  - Provided in the cloud
+  - Will be delivered in a ZIP file for your future reference
+
+
+Notes:
+
+---
+
+## Typographic Conventions
+
+* Software code in the text uses a fixed-width code font: 
+  - catalog: Catalog = new CatalogImpl
+  - Code fragments are the same, e.g., catalog.speakTruth
+  - We use **bold/color** text for emphasis
+  - Filenames are in italics, e.g., `Catalog.scala`
+  - Longer code examples appear in a separate code box:
+
+```text
+object TestApp {  // Basic Spark App (Scala)
+  def main(args: Array[String]) {
+		val sc = new SparkContext(
+      new SparkConf().setMaster("local").setAppName(”TestApp")
+		val totalWords = sc.textFile(“file”)
+               .flatMap(l => l.split(" ")).count()
+		println (“# lines : “ + totalWords)
+	}
+}
+
+
+```
+<!-- {"left" : 0, "top" : 3.99, "height" : 2.68, "width" : 10.25} -->
+
+
+Notes:
+
+---
+
+## Recommended books and credits
+
+## Questions?
+
+* Any questions? 
+
+
+Notes:
+
+
+
+
+
+
+
+
+
+
+
+
 
