@@ -77,7 +77,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## Step-4: Grouping Containers Together
 
-<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:50%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:43%;float:right;" />
 
 * For some applications, we want the related **containers grouped together**
     - For example, a web application and a logging agent
@@ -99,7 +99,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## Step-5: Networking
 
-<img src="../../assets/images/kubernetes/kubernetes-design-5.png" style="width:50%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-5.png" style="width:45%;float:right;" />
 
 * We need a solid, flexible networking setup in the system
 
@@ -691,7 +691,7 @@ Notes:
 
 ---
 
-# Replica Sets
+# Replication
 
 <img src="../../assets/images/generic/3rd-party/clones-2.jpg" style="width:40%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
 
@@ -722,9 +722,9 @@ Replication logic has to be simple by design but should offer powerful and flexi
 
 ---
 
-## ReplicaSet
+## Replication
 
-* ReplicaSet keeps a certain number of pods running at anytime
+* Replication keeps a certain number of pods running at anytime
 
 <img src="../../assets/images/kubernetes/ReplicaSet-01.png" style="width:70%;" /><!-- {"left" : 0.58, "top" : 1.5, "height" : 5, "width" : 9.08} -->
 
@@ -738,7 +738,7 @@ We are running 4 copies of the application using ReplicaSet. Please note that na
 
 ---
 
-## ReplicaSet
+## Replication
 
 * Left: Here we wanted 4 pods (**desired state**) and we have 4 pods running (**current**)
 
@@ -761,7 +761,7 @@ Node    = 4
 
 ---
 
-## ReplicaSet
+## Replication
 
 * ReplicationController will notice this, and launch another Pod on one of the remaining nodes!
 
@@ -770,11 +770,13 @@ Node    = 4
 
 ---
 
-## Replication Controller
+## Replication Controller (RC)
 
-* **Replication Controller** was the original form of replication in Kubernetes
+* **Replication Controller** manages Pod life cycle
 
-* Replication Controller is superseded by Replica Sets.
+* RC ensures that a homogeneous set of Pods (even a single pod) is always running.
+
+* RC spins-up extra pods to meet requirements or terminates extra pods
 
 
 ```yaml
@@ -799,7 +801,6 @@ spec:
         - containerPort: 80
 ```
 
-
 Notes:
 
 Instructor Notes :
@@ -812,12 +813,22 @@ A Replication Controller allows us to easily create multiple pods ensures that t
 
 ---
 
+## Replication
+
+* Here we are specifying `replicas: 3`, and 3 instances of the same Pod template are deployed
+
+
+<img src="../../assets/images/kubernetes/Scaling-Pods.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
 ## Replica Sets
 
-* **Replica Sets** and Replication Controllers are declared almost in the same way except **they have more options for the selector**
+* **ReplicaSet** is the next-generation ReplicationController.  They are declared pretty much the same way
 
-* RS **uses labels to select the Pods it will manage**  (`app=nginx`)
+* It supports [set based label selector](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#set-based-requirement)
 
+* It's mainly used by **Deployment** as a mechanism to orchestrate pod creation, deletion and updates
 
 ```yaml
 apiVersion: apps/v1
@@ -828,7 +839,7 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  replicas: 4 # tells deployment to run 2 pods matching the template
+  replicas: 4
   template:
     metadata:
       labels:
