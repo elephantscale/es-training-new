@@ -781,6 +781,121 @@ Notes:
 
 ---
 
+# Autoscaling
+
+---
+
+## Autoscaling
+
+<img src="../../assets/images/kubernetes/autoscaling-1.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* So far we looked at various deployment strategies;  We specified the number of `replicas` explicitly
+
+* When running advanced applications, we want the application to scale up and down along with the load
+    - For example, a stock trading application may be scaled up during trading hours, and scaled down during off hours
+    - We can program this automatically, set repicas based on time
+    - But it won't be flexible to handle unexpected spikes in traffic (e.g. sudden surges in volume)
+
+* Wouldn't it be nice, if we can scale up/down automatically along with the load?
+
+* **Horizontal Pod Autoscaler** is how we do it
+
+---
+
+## Horizontal Pod Autoscaler
+
+<img src="../../assets/images/kubernetes/Horizontal-Pod-Autoscaler.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Autoscaling, one of the key features, allows the kubernetes cluster to automatically increase or decrease the number of nodes  based on the demand for service response.
+
+* **Horizontal Pod Autoscaler** scales the number of pods automatically  in a replication controller, deployment or replica set.
+
+* The controller manager queries the resource utilization against the metrics specified in each HorizontalPodAutoscaler definition (e.g. CPU, Memory, Disk)
+
+* The controller periodically adjusts the number of replicas in a replication controller or deployment.
+
+Notes:
+
+Implemented as a control loop, Horizontal Pod Autoscaler with a period controlled by the controller manager’s `horizontal-pod-autoscaler-sync-period` flag (with a default value of 30 seconds)
+
+---
+
+## Using Horizontal Pod Autoscaler
+
+* Here we are deploying [php-apache](https://console.cloud.google.com/gcr/images/google-containers/GLOBAL/hpa-example) image
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-apache-deployment
+spec:
+  selector:
+    matchLabels:
+      app: php-apache
+  template:
+    metadata:
+      labels:
+        app: php-apache
+    spec:
+      containers:
+        - image: gcr.io/google_containers/hpa-example
+          name: php-apache
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          resources:
+            requests:
+              cpu: 500m # 0.5 of a core
+              memory: 100M
+```
+
+---
+
+## Using Horizontal Pod Autoscaler
+
+* Then we define auto scaler
+    - **`name: php-apache-deployment`** - points to the deployment
+    - **`minReplicas: 1`** - minimum Pods to keep running
+    - **`maxReplicas: 10`** - scale up to this many Pods max
+    - **`targetCPUUtilizationPercentage: 50`** - If average CPU utilization across Pods exceed this number, trigger scaling up
+
+```yaml
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: php-apache-scaler
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: php-apache-deployment
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 50
+```
+
+---
+
+## Lab: Autoscaling
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Autoscale a deployment
+
+* **Approximate run time:**
+    - 30 mins
+
+* **Instructions:**
+    - Please complete **AUTOSCALE-1**
+
+Notes:
+
+---
+
+---
+
 ## Review and Q&A
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
