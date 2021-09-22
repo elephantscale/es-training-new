@@ -234,6 +234,60 @@ Notes:
 
 ---
 
+
+## Benefits of Continuous Delivery
+  * Removing the "ceremony" around software release
+  * Benefits to this approach:
+    - Innovation
+    - Faster Feedback Loops
+    - Increase Reliability and Availability
+    - Developer Productivity and Efficiency
+
+
+---
+
+## Innovation
+  * Quicker time to Market
+    - New Features
+    - Configuration Changes
+    - Bug Fixes
+  * Aggressive release cadence
+    - Broken things fixed quickly
+    - new featuress arrive sson
+
+---
+
+## Faster Feedback Loops
+  * Small changes deployed frequently easier to troubleshoot
+  * Automated Testing
+    - Chaos Engineering
+    - Automated Canary Analysis
+  * Problems detected quickly
+  * Fixed more effecively
+
+
+---
+
+## Increase reliability and availability
+  * Incorporate tooling
+  * Replace Manual Processes
+  * Use Automated Worfklows
+  * Continuous Delivery Pipelines
+  * Safe Deployment Practices
+
+---
+
+## Developer Productivty and Efficiency
+  * Reduces issues such as incompatible dependencies.
+  * Issues are fresh in developers' minds
+  * Less blame game
+  * Greater Ownership
+
+---
+
+
+
+
 ## Topics in this Session
 
 
@@ -281,6 +335,8 @@ Notes:
 
 
 ---
+
+
 
 ## How Spinnaker Fits in CI and CD 
 
@@ -408,7 +464,7 @@ Notes:
 
 ## Spinnaker Very Active GitHub Repository 
 
-<img src="../../assets/images/jenkins/3rd-party/Spinnaker_GitHub_Repository.png" style="width:60%;"/> <!-- {"left" : 2.5, "top" : 2.68, "height" : 8.34, "width" : 12.5} -->
+<img src="../../assets/images/spinnaker/3rd-party/Spinnaker_GitHub_Repository.png" style="width:60%;"/> <!-- {"left" : 2.5, "top" : 2.68, "height" : 8.34, "width" : 12.5} -->
 
 
 Notes: 
