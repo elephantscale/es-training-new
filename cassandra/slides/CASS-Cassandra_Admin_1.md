@@ -505,7 +505,7 @@ Spark & Cassandra : Amazing Love Story : http://www.slideshare.net/SparkSummit/s
 
 ## Lambda architecture
 
-<img src="../../assets/images/cassandra/Lambda-architecture.png" style="width:70%;"/>
+<img src="../../assets/images/streaming/Lambda-Architecture-1.png" style="width:70%;"/>
 
 
 Notes: 
@@ -572,7 +572,7 @@ Spark can run queries against batch layer and / or speed layer
 
  * HDFS: Long term store and batch queries
 
-<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png" style="width:80%;"/>
+<img src="../../assets/images/streaming/Lambda-Architecture-2.png" style="width:80%;"/>
 
 
 Notes: 

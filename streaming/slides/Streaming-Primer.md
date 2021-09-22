@@ -2,21 +2,17 @@
 
 <img src="../../assets/images/streaming/3rd-party/streaming-data.png" alt="big-data-Evolution.png" style="max-width:50%;"/>
 
-
 ---
-
 
 ## Lesson Objectives
 
- * Understand streaming use cases
- * Learn about streaming concepts
- * Gain insight on streaming architectures
+* Understand streaming use cases
 
+* Learn about streaming concepts
+
+* Gain insight on streaming architectures
 
 Notes:
-
-
-
 
 ---
 
@@ -26,28 +22,22 @@ Notes:
 
 ## Big Data Evolution: Version 1
 
-  * Decision times: batch ( hours / days)
-  * Use cases:
+* Decision times: batch ( hours / days)
+
+* Use cases:
     - Modeling
     - ETL
     - Reporting
 
-
 <img src="../../assets/images/streaming/big-data-Evolution.png" alt="big-data-Evolution.png" style="width:65%;"/><!-- {"left" : 1.46, "top" : 3.21, "height" : 3.71, "width" : 7.33} -->
 
-
-
 Notes:
-
-
-
 
 ---
 
 ## Moving Towards Fast Data: Version2
 
 <img src="../../assets/images/streaming/toward-fast-data.png" alt="toward-fast-data.png" style="width:30%;float:right;"/><!-- {"left" : 6.62, "top" : 1.23, "height" : 3.24, "width" : 3.27} -->
-
 
   * Decision time: (near) real time
     - Seconds (or milliseconds)
@@ -85,7 +75,7 @@ Notes:
 
 ---
 
-## Spark Streaming Use Cases
+## Streaming Use Cases
 
   * Netflix
     - Recommendations
@@ -117,9 +107,10 @@ Notes:
 
 ## Real Time / Near Real Time
 
-  * The 'real' real time is in milliseconds order
+* The 'real' real time is in milliseconds order
     - DB query returns in 2 ms
-  * 'near real time' is seconds
+
+* 'near real time' is seconds
     - We can process an event within 3 seconds of its generation time
 
 
@@ -191,7 +182,7 @@ Notes:
 ## Event Based Vs. Batch
 
 
-<img src="../../assets/images/streaming/event-based-batch.png" alt="event-based-batch.png" style="width:70%;"/><!-- {"left" : 1.17, "top" : 1.94, "height" : 5.19, "width" : 7.91} -->
+<img src="../../assets/images/streaming/event-vs-batch-1.png"  style="width:70%;"/><!-- {"left" : 1.17, "top" : 1.94, "height" : 5.19, "width" : 7.91} -->
 
 
 
@@ -204,6 +195,9 @@ Notes:
 ---
 
 ## Processing Guarantees
+
+
+<img src="../../assets/images/streaming/processing-guarantees-1.png" style="width:55%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * At Least Once
 
@@ -218,37 +212,50 @@ Notes:
 
 ## At Most Once
 
-- Simplest implementation
+<img src="../../assets/images/streaming/processing-guarantees-1.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-- No duplicate processing
+* **Event is sent only once**
 
-- Events can be dropped due to crashes or heavy load
+* **No duplicate processing**
 
-- E.g.  Web requests (if the web server is busy, requests are dropped)
+* Events **can be dropped** due to crashes or heavy load
+
+* E.g.  Web requests (if the web server is busy, requests are dropped)
+
+<img src="../../assets/images/streaming/at-most-once-1.png" style="width:40%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 
 ## At Least Once
 
-- All events are guaranteed to be processed (no dropped events)
+<img src="../../assets/images/streaming/processing-guarantees-1.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-- An event can be processed more than once.
+- All events are **guaranteed to be processed (no dropped events)**
 
-- In case of failure recovery, events can be re-played and processed again.
+- How ever, **events can be processed more than once**
 
-- Needs a 'durable buffer' that enables 're-play'
-
-- OK for idempotent operations like saving events.
-
-- Duplicate processing will just over-write previous values.
-
-- Not OK for counting (how many events came in in last 10 mins)
+- In case of failure recovery, events can be re-sent  and processed again.
 
 - **Most common** implementation
 
 - Frameworks: All (Storm, Spark, NiFi, Samza, Flink)
 
+---
 
+## Handling Duplicate Events
+
+<img src="../../assets/images/streaming/duplicate-event-processing-1.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* A resilient streaming system, has to be ready to handle duplicate events
+
+* Here we have 2 scenarios:
+
+* First one, we are inserting a new record for each event received.  This will result in **duplicate records in the database**
+
+* Second one, we are checking to see if the event is processed already, only if not, then a new record is inserted
+
+* Second approach is more resilient, can deal with duplicate events
+    - This is called **idempotent processing** (no side effects for duplicate events)
 
 Notes:
 
@@ -259,12 +266,17 @@ Notes:
 
 ## Exactly Once
 
-- Events are guaranteed to be processed exactly-once
-- No dropped events
-- No duplicate processing
-- Needs 're-playable buffer' **plus** an external storage system to track state
-- Frameworks: Storm (with Trident), Flink, Spark, Samza
-- Applications
+<img src="../../assets/images/streaming/processing-guarantees-1.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Events are guaranteed to be processed **once and only once**
+
+* **No dropped events**
+
+* **No duplicate processing**
+
+* Frameworks: Storm (with Trident), Flink, Spark, Samza
+
+* Sample applications
     - Credit card processing
 
 
@@ -275,6 +287,11 @@ Notes:
 
 
 
+---
+
+## Exactly Once
+
+<img src="../../assets/images/streaming/3rd-party/distributed-systems-exactly-once.png"  style="width:80%;"/>
 
 ---
 
@@ -292,15 +309,8 @@ Notes:
 
 Notes:
 
-
-
 ---
 
-## Exactly Once
-
-<img src="../../assets/images/streaming/3rd-party/distributed-systems-exactly-once.png"  style="width:80%;"/>
-
----
 
 ## State Management
 
@@ -356,19 +366,14 @@ Notes:
 
 ## Window Operations
 
-* Some operations can be done at message level
-    - e.g. Sentiment analysis (happy / sad / neutral)
+<img src="../../assets/images/streaming/time-window-operations-1.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-* Some operations require a bunch of messages and 'time window'
+* To answer some queries, we need to process events in a certain time frame.
     - E.g.  How much AAPL  stock has gone up in last 10 minutes?
-    - We need to previous values to calculate rate of change.
 
-* Window based operations:
-    - Group a bunch of messages by time (usually)
+* **Window based operations** allow us group a bunch of messages by time and process them
 
-* Some frameworks support window operations natively
-    - E.g.  Spark, Flink
-    - Storm does this with Trident
+* Some frameworks support window operations natively:  Spark, Flink
 
 Notes:
 
@@ -376,14 +381,15 @@ Notes:
 
 ## Event Time and Arrival Time
 
-  * Event Time:
-    - When the event occurred / generated
-  * Arrival Time:
-    - When event arrives for processing
-  * Event Time < Arrival Time
-  * Some times events may arrive 'out of order'
+* **Event Time**: When the event occurred / generated
 
-<img src="../../assets/images/streaming/Streaming-Primer-Event-Time-and-Arrival-Time-13.png" style="width:50%;"/><!-- {"left" : 2.12, "top" : 5.02, "height" : 3.42, "width" : 6.01} -->
+* **Arrival Time**: When event arrives for processing
+
+* Event Time < Arrival Time
+
+* Some times events may arrive 'out of order' (due to network lag, outtage ..etc)
+
+<img src="../../assets/images/streaming/event-time-vs-arrival-time-2.png" style="width:50%;"/><!-- {"left" : 2.12, "top" : 5.02, "height" : 3.42, "width" : 6.01} -->
 
 Notes:
 
@@ -391,7 +397,7 @@ Notes:
 
 ## Event Time vs. Arrival Time 
 
-<img src="../../assets/images/streaming/event-time-002.png" alt="event-time-002.png" style="width:90%;"/><!-- {"left" : 0.61, "top" : 1.92, "height" : 4.13, "width" : 9.03} -->
+<img src="../../assets/images/streaming/event-time-vs-arrival-time-1-starwars.png" style="width:90%;"/><!-- {"left" : 0.61, "top" : 1.92, "height" : 4.13, "width" : 9.03} -->
 
 Notes:
 
@@ -421,10 +427,10 @@ Notes:
 ## Back Pressure
 
 
-<img src="../../assets/images/streaming/Picture1.png" alt="Picture1.png" style="width:50%;"/><!-- {"left" : 1.86, "top" : 1.95, "height" : 2.74, "width" : 6.54} -->
+<img src="../../assets/images/streaming/back-pressure-1.png" alt="Picture1.png" style="width:50%;"/><!-- {"left" : 1.86, "top" : 1.95, "height" : 2.74, "width" : 6.54} -->
 
 
-<img src="../../assets/images/streaming/Picture2.png" alt="Picture2.png" style="width:50%;"/><!-- {"left" : 2, "top" : 4.95, "height" : 2.74, "width" : 6.25} -->
+<img src="../../assets/images/streaming/back-pressure-2.png" alt="Picture2.png" style="width:50%;"/><!-- {"left" : 2, "top" : 4.95, "height" : 2.74, "width" : 6.25} -->
 
 Notes:
 
@@ -436,33 +442,34 @@ Notes:
 
 ## 3 Tier Streaming Architecture
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified.png" alt="Streaming-Over-Simplified.png" style="width:65%;"/><!-- {"left" : 0.56, "top" : 3.04, "height" : 3.56, "width" : 9.13} -->
+<img src="../../assets/images/streaming/streaming-architecture-1.png" style="width:65%;"/><!-- {"left" : 0.56, "top" : 3.04, "height" : 3.56, "width" : 9.13} -->
 
 Notes:
 
 ---
 
-## Data Bucket
+## Ingest / Capture
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified-01.png" alt="Streaming-Over-Simplified-01.png" style="max-width:55%;float:right;"/><!-- {"left" : 5.88, "top" : 3.48, "height" : 1.89, "width" : 4.21} -->
 
-* 'data bucket'
+* This layer:
     - Captures incoming data
     - Acts as a 'buffer' - smoothes out bursts
     - So even if our processing offline, we won't loose data
 
 * Choices
-    - Kafka
-    - MQ (RabittMQ ..etc)
-    - Amazon Kinesis
+    - **Kafka**
+    - Queues (MQ, JMS ..etc)
+    - Cloud based queues like Amazon Kinesis
+
+<img src="../../assets/images/streaming/streaming-architecture-2.png"  style="width:50%;"/><!-- {"left" : 5.88, "top" : 3.48, "height" : 1.89, "width" : 4.21} -->
 
 Notes:
 
 ---
 
-## Processing Engine
+## Processing
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified-02.png" alt="Streaming-Over-Simplified-02.png" style="max-width:55%;float:right;"/><!-- {"left" : 4.84, "top" : 1.78, "height" : 2.41, "width" : 5.15} -->
+<img src="../../assets/images/streaming/streaming-architecture-3.png"  style="max-width:55%;float:right;"/><!-- {"left" : 4.84, "top" : 1.78, "height" : 2.41, "width" : 5.15} -->
 
 * Need to process events with low latency
 
@@ -496,21 +503,22 @@ Notes:
 
 ---
 
-## Data Store
+## Storage
 
-<img src="../../assets/images/streaming/Streaming-Over-Simplified-03.png" alt="Streaming-Over-Simplified-03.png" style="width:55%;float:right;"/><!-- {"left" : 5.95, "top" : 1.41, "height" : 2.02, "width" : 4.15} -->
+<img src="../../assets/images/streaming/streaming-architecture-4.png"  style="width:55%;float:right;"/><!-- {"left" : 5.95, "top" : 1.41, "height" : 2.02, "width" : 4.15} -->
 
-* Where processed data ends up
+* This is **permanent store** for processed data
 
-* Two requirements:
+* Two choices:
     - Real time store
-    - 'archival' store
+    - 'Forever' store
 
 * Real Time Store
     - Need to absorb data in real time
-    - Usually a NoSQL storage HBase, Cassandra, many more
+    - Usually a NoSQL storage (HBase, Cassandra ...etc)
+    - May contain subset of data (last 1 year ..etc)
 
-* 'Archival store'
+* 'Forever store'
     - Needs to store massive amounts of data
     - Support analytics (usually batch)
     - Hadoop / HDFS
@@ -521,7 +529,7 @@ Notes:
 
 ## Lambda Architecture
 
-<img src="../../assets/images/streaming/Lambda-Architecture.png" alt="Lambda-Architecture.png" style="width:65%;"/><!-- {"left" : 1.02, "top" : 2.44, "height" : 4.76, "width" : 8.21} -->
+<img src="../../assets/images/streaming/Lambda-Architecture-1.png" style="width:85%;"/><!-- {"left" : 1.02, "top" : 2.44, "height" : 4.76, "width" : 8.21} -->
 
 Notes:
 
@@ -529,16 +537,18 @@ Notes:
 
 ## Lambda Architecture
 
-  * All new data is sent to both batch layer and  speed layer
-  * Batch layer
+<img src="../../assets/images/streaming/Lambda-Architecture-1.png" style="width:55%;float:right;"/><!-- {"left" : 1.02, "top" : 2.44, "height" : 4.76, "width" : 8.21} -->
+
+  * All new data is sent to **both batch layer and  speed layer**
+  * **Batch layer**
     - Holds master data set (immutable , append-only)
     - Answers batch queries
-  * Serving layer
+  * **Serving layer**
     - updates batch views so they can be queried adhoc
-  * Speed Layer
+  * **Speed Layer**
     - Handles new data
     - Facilitates fast / real-time queries
-  * Query layer
+  * **Query layer**
     - Answers queries using batch & real-time views
 
 
@@ -548,9 +558,16 @@ Notes:
 
 
 ---
-## Incorporating Lambda Architecture
 
-<img src="../../assets/images/streaming/Lambda-Streaming-Architecture-03.png"  style="width:75%;"/><!-- {"left" : 0.72, "top" : 3.53, "height" : 2.01, "width" : 8.8} -->
+## Lambda Architecture Example
+
+* Kafka is our ingest layer
+
+* Spark is processing engine
+
+* And we are persisting data both in HDFS and in NOSQL
+
+<img src="../../assets/images/streaming/Lambda-Architecture-2.png"  style="width:90%;"/><!-- {"left" : 0.72, "top" : 3.53, "height" : 2.01, "width" : 8.8} -->
 
 
 
@@ -562,7 +579,12 @@ Notes:
 
 
 ---
+
 ## Streaming Stack
+
+* Here are some popular choices for streaming stack
+
+* Each tier, you can plugin a technology -- think of it like legos!
 
 <img src="../../assets/images/streaming/Streaming-Platforms.png" alt="Streaming-Platforms.png" style="width:75%;"/><!-- {"left" : 0.41, "top" : 2.4, "height" : 4.26, "width" : 9.43} -->
 
@@ -573,9 +595,24 @@ Notes:
 
 
 
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* **What are your streaming uses cases ?**
+
+* Any questions?
 
 ---
-# Streaming Frameworks
+
+
+# Appendix: Streaming Frameworks
+
 ---
 
 ## Streaming Frameworks
@@ -744,12 +781,3 @@ Notes:
 
 
 
-
----
-## Class Discussion
-
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;"/><!-- {"left" : 5.59, "top" : 0.87, "height" : 3.12, "width" : 4.67} -->
-
-
-
-  * What are your streaming uses cases ?

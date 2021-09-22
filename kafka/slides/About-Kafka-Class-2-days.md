@@ -2,13 +2,19 @@
 
 <img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
 
+---
 
+## Instructor Introduction
+
+* Instructor, please introduce yourself
+
+* Talk about your background and your experience in the subject
 
 ---
-## Workshop Overview - 2 Days
+
+## Class Overview - 2 Days
 
 <img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/><!-- {"left" : 7.39, "top" : 1.2, "height" : 2.76, "width" : 2.53} -->
-
 
  * Day 1
      -  Streaming Overview
@@ -21,7 +27,6 @@
      -  Best Practices
 
 Notes:
-
 
 ---
 
@@ -43,12 +48,7 @@ Notes:
      - No previous Kafka knowledge is assumed
      - Class will be paced based on the pace of majority of the students.
 
-
-
 Notes:
-
-
-
 
 ---
 
@@ -87,7 +87,7 @@ By the end of the class... .
 
 ---
 
-## About You And Me
+## Class Introductions
 
 
 * About you
@@ -116,13 +116,12 @@ Notes:
 
 <img src="../../assets/images/books/kafka-9781491936160.jpg" /><!-- {"left" : 3.78, "top" : 2.78, "height" : 3.52, "width" : 2.68} -->
 
-
 Notes:
 
 Image credit : http://shop.oreilly.com/
 
-
 ---
+
 ## Class Logistics
 
 * Instructor's contact
@@ -138,7 +137,6 @@ Image credit : http://shop.oreilly.com/
 
 ---
 
-
-
-
 ## Let's Get Started!
+
+<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/>  &nbsp;  &nbsp;
