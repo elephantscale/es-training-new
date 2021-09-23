@@ -6,3 +6,4 @@ spinnaker-intro.md
 minnaker.md
 applications.md
 pipeline.md
+clusters.md
