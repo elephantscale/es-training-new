@@ -42,15 +42,10 @@ Minnaker performs the following actions when run on a single Linux instance:
 
 --- 
 
-# Changing Configuration
-
-
+## Changing Configuration
  *  Once Minnaker is up and running, you can make changes to its configuration using `hal`.  For example, to change the version of Spinnaker that is installed, you can use this:
-
     - `hal config version edit --version 2.17.4`
-
     - `hal deploy apply`
-```
 
   * By default, Minnaker will install the latest GA version of Spinnaker available.
 
@@ -86,7 +81,7 @@ Minnaker performs the following actions when run on a single Linux instance:
 
     Username: `admin`
 
-    Password: <Password from step 2>
+    Password: 
 
 ## Changing Your Spinnaker Configuration
 

@@ -47,8 +47,6 @@ Notes:
 ---
 
 
----
-
 ## State of the Spinnaker Community
 
 
