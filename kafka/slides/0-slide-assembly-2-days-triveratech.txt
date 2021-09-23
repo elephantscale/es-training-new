@@ -1,11 +1,8 @@
 ## To assemble md slides
 #   ./gen.sh
 
-## Course outline
-# ../kafka-intro-2days-outline.pdf
-
 # About
-About-Kafka-Class-2-days.md
+About-Kafka-Class-2-days-TriveraTech.md  About-Kafka-Class.md
 
 # Streaming
 ../../streaming/slides/Streaming-Primer.md
