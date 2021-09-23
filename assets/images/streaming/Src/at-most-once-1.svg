@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-2186 381 1292 816" width="1292" height="816">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebb34d"/>
+      <stop offset=".03310801" stop-color="#ecb64d"/>
+      <stop offset="1" stop-color="#f3d652"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-2201.9587 535.7588) rotate(-30.000016) scale(238.23498)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(-2201.9587 1083.2588) rotate(-30.000016) scale(238.235)"/>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-23 18:01:32 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_12">
+        <g id="Graphic_17">
+          <circle cx="-2098.8" cy="476.20005" r="87.2001450140597" fill="url(#Obj_Gradient)"/>
+        </g>
+        <g id="Group_13">
+          <g id="Graphic_16">
+            <path d="M -2120.8713 451.95774 C -2120.8713 451.95774 -2123.0423 443.45483 -2133.716 443.45483 C -2143.8472 443.45483 -2146.561 451.95774 -2146.561 451.95774" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+          </g>
+          <g id="Graphic_15">
+            <path d="M -2056.4664 451.95774 C -2056.4664 451.95774 -2058.6373 443.45483 -2069.3112 443.45483 C -2079.4423 443.45483 -2082.156 451.95774 -2082.156 451.95774" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+          </g>
+          <g id="Graphic_14">
+            <path d="M -2124.4896 491.93946 C -2124.4896 491.93946 -2101.1518 506.4125 -2076.7286 491.93946" stroke="#5b0600" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_22">
+        <g id="Graphic_27">
+          <circle cx="-2098.8" cy="1023.7" r="87.2001460910568" fill="url(#Obj_Gradient_2)"/>
+        </g>
+        <g id="Group_23">
+          <g id="Graphic_26">
+            <ellipse cx="-2132.6306" cy="993.6685" rx="8.32200564354451" ry="13.5684874623013" fill="black"/>
+          </g>
+          <g id="Graphic_25">
+            <ellipse cx="-2067.1402" cy="993.6685" rx="8.32200564354488" ry="13.5684874623013" fill="black"/>
+          </g>
+          <g id="Graphic_24">
+            <path d="M -2120.3286 1048.8469 C -2120.3286 1048.8469 -2117.0721 1032.7457 -2098.9809 1032.7457 C -2080.8896 1032.7457 -2077.2713 1048.8469 -2077.2713 1048.8469" stroke="#5b0600" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_40">
+        <g id="Graphic_32">
+          <circle cx="-1955.5" cy="1132.5" r="64.5001030646724" fill="#ff3739"/>
+        </g>
+        <g id="Graphic_31">
+          <line x1="-1986.056" y1="1101.944" x2="-1924.944" y2="1163.056" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+        </g>
+        <g id="Graphic_30">
+          <line x1="-1924.944" y1="1101.944" x2="-1986.056" y2="1163.056" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+        </g>
+      </g>
+      <g id="Graphic_37">
+        <path d="M -1392 394 L -901 394 C -897.6863 394 -895 396.6863 -895 400 L -895 595 C -895 598.3137 -897.6863 601 -901 601 L -1392 601 C -1395.3137 601 -1398 598.3137 -1398 595 L -1398 400 C -1398 396.6863 -1395.3137 394 -1392 394 Z" fill="#aa97fe"/>
+        <path d="M -1392 394 L -901 394 C -897.6863 394 -895 396.6863 -895 400 L -895 595 C -895 598.3137 -897.6863 601 -901 601 L -1392 601 C -1395.3137 601 -1398 598.3137 -1398 595 L -1398 400 C -1398 396.6863 -1395.3137 394 -1392 394 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_38">
+        <path d="M -1392 919.7 L -901 919.7 C -897.6863 919.7 -895 922.3863 -895 925.7 L -895 1120.7 C -895 1124.0138 -897.6863 1126.7 -901 1126.7 L -1392 1126.7 C -1395.3137 1126.7 -1398 1124.0138 -1398 1120.7 L -1398 925.7 C -1398 922.3863 -1395.3137 919.7 -1392 919.7 Z" fill="#aa97fe"/>
+        <path d="M -1392 919.7 L -901 919.7 C -897.6863 919.7 -895 922.3863 -895 925.7 L -895 1120.7 C -895 1124.0138 -897.6863 1126.7 -901 1126.7 L -1392 1126.7 C -1395.3137 1126.7 -1398 1124.0138 -1398 1120.7 L -1398 925.7 C -1398 922.3863 -1395.3137 919.7 -1392 919.7 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_41">
+        <g id="Graphic_44">
+          <circle cx="-1362.5" cy="1132.5" r="64.5001030646724" fill="#ff3739"/>
+        </g>
+        <g id="Graphic_43">
+          <line x1="-1393.056" y1="1101.944" x2="-1331.944" y2="1163.056" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+        </g>
+        <g id="Graphic_42">
+          <line x1="-1331.944" y1="1101.944" x2="-1393.056" y2="1163.056" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+        </g>
+      </g>
+      <g id="Graphic_46">
+        <path d="M -1972.36 456.32 L -1972.36 456.32 L -1476.9951 456.32 L -1476.9951 476.32 L -1430.36 456.32 L -1476.9951 436.32 L -1476.9951 456.32 Z" fill="blue"/>
+        <path d="M -1972.36 456.32 L -1972.36 456.32 L -1476.9951 456.32 L -1476.9951 476.32 L -1430.36 456.32 L -1476.9951 436.32 L -1476.9951 456.32 Z" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_47">
+        <path d="M -1972.36 456.32 L -1972.36 456.32 L -1476.9951 456.32 L -1476.9951 476.32 L -1430.36 456.32 L -1476.9951 436.32 L -1476.9951 456.32 Z" fill="blue"/>
+        <path d="M -1972.36 456.32 L -1972.36 456.32 L -1476.9951 456.32 L -1476.9951 476.32 L -1430.36 456.32 L -1476.9951 436.32 L -1476.9951 456.32 Z" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_49">
+        <path d="M -1430.36 538.68 L -1430.36 538.68 L -1925.725 538.68 L -1925.725 558.68 L -1972.36 538.68 L -1925.725 518.68 L -1925.725 538.68 Z" fill="blue"/>
+        <path d="M -1430.36 538.68 L -1430.36 538.68 L -1925.725 538.68 L -1925.725 558.68 L -1972.36 538.68 L -1925.725 518.68 L -1925.725 538.68 Z" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_48">
+        <path d="M -1430.36 538.68 L -1430.36 538.68 L -1925.725 538.68 L -1925.725 558.68 L -1972.36 538.68 L -1925.725 518.68 L -1925.725 538.68 Z" fill="blue"/>
+        <path d="M -1430.36 538.68 L -1430.36 538.68 L -1925.725 538.68 L -1925.725 558.68 L -1972.36 538.68 L -1925.725 518.68 L -1925.725 538.68 Z" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_33">
+        <g id="Graphic_29">
+          <circle cx="-1955.5" cy="632.5" r="64.5001030646724" fill="#40af46"/>
+        </g>
+        <g id="Graphic_28">
+          <path d="M -1913.5855 602.0864 C -1914.1243 601.5434 -1914.7647 601.1123 -1915.471 600.81815 C -1916.1767 600.52405 -1916.9346 600.3726 -1917.6994 600.3726 C -1918.4642 600.3726 -1919.2213 600.52405 -1919.927 600.81815 C -1920.6334 601.1123 -1921.2744 601.5434 -1921.8125 602.0864 L -1964.977 645.3083 L -1983.1116 627.1161 C -1983.6706 626.5759 -1984.331 626.1511 -1985.0542 625.866 C -1985.778 625.581 -1986.5504 625.4405 -1987.3277 625.45444 C -1988.105 625.46765 -1988.8725 625.6345 -1989.5852 625.9439 C -1990.2985 626.254 -1990.9437 626.70174 -1991.484 627.2607 C -1992.0242 627.8197 -1992.449 628.4802 -1992.734 629.2033 C -1993.019 629.92705 -1993.1588 630.6995 -1993.145 631.4768 C -1993.1317 632.2541 -1992.9655 633.021 -1992.6555 633.7343 C -1992.3454 634.44764 -1991.8983 635.09284 -1991.3386 635.63306 L -1969.0903 657.8814 C -1968.5521 658.4244 -1967.911 658.8555 -1967.2047 659.1496 C -1966.499 659.4437 -1965.742 659.5952 -1964.977 659.5952 C -1964.2123 659.5952 -1963.4545 659.4437 -1962.7488 659.1496 C -1962.0424 658.8555 -1961.402 658.4244 -1960.8633 657.8814 L -1913.5855 610.6037 C -1912.9973 610.0607 -1912.528 609.40226 -1912.2068 608.6694 C -1911.8863 607.9365 -1911.7201 607.145 -1911.7201 606.34485 C -1911.7201 605.54474 -1911.8863 604.75325 -1912.2068 604.0204 C -1912.528 603.2874 -1912.9973 602.62895 -1913.5855 602.0864 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Graphic_50">
+        <text transform="translate(-1322.0005 467)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Web Server up</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <text transform="translate(-1357.999 992.7)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Web Server down</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <text transform="translate(-1797.8688 386)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Request</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <text transform="translate(-1817.3756 554.2222)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Response</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <text transform="translate(-1805.8688 935)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Request</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(-1866.8673 1103.2222)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">No Response</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80">
+        <path d="M -1970.96 1014.4 L -1970.96 1014.4 L -1475.5951 1014.4 L -1475.5951 1034.4 L -1428.96 1014.4 L -1475.5951 994.4 L -1475.5951 1014.4 Z" fill="blue"/>
+        <path d="M -1970.96 1014.4 L -1970.96 1014.4 L -1475.5951 1014.4 L -1475.5951 1034.4 L -1428.96 1014.4 L -1475.5951 994.4 L -1475.5951 1014.4 Z" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

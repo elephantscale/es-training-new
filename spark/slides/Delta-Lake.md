@@ -1,7 +1,7 @@
 
 # Delta Lake
 
-<img src="../../assets/images/logos/spark-delta-lake-logo-1.png" style="width:65%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/logos/spark-delta-lake-logo-1.png" style="width:40%;"/> 
 
 ---
 
@@ -17,7 +17,7 @@
 * Can store all kinds of data
    - Structured (csv, json) and unstructured (video, pictures, binary) data
 
-<img src="../../assets/images/bigdata/3rd-party/data-lake-1.jpg" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/bigdata/3rd-party/data-lake-1.jpg" style="width:50%;"/>
 
 ---
 
@@ -184,7 +184,7 @@ CREATE TABLE events (
 
 * Delta Lakes can be created on the following systems
 
-<img src="../../assets/images/spark/3rd-party/delta-lake-1-connectors.png" style="width:80%;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/delta-lake-1-connectors.png" style="width:80%;" />
 
 * [Image source](https://youtu.be/OLJKIogf2nU)
 
@@ -223,6 +223,4 @@ CONVERT TO DELTA table_name
 
 * Available on Databricks platforms (not open source)
 
-<img src="../../assets/images/spark/3rd-party/delta-engine-benchmark-1.png" style="width:60%;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
-
----
+<img src="../../assets/images/spark/3rd-party/delta-engine-benchmark-1.png" style="width:60%;" />

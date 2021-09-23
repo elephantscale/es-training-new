@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-1900 1800 1266 771" width="1266" height="771">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-23 18:00:44 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_45">
+        <path d="M -1634 2461 L -1578.27 2481 L -1578.27 2462.6092 L -941.73 2462.6092 L -941.73 2481 L -886 2461 L -941.73 2441 L -941.73 2459.3908 L -1578.27 2459.3908 L -1578.27 2441 Z" fill="blue"/>
+        <path d="M -1634 2461 L -1578.27 2481 L -1578.27 2462.6092 L -941.73 2462.6092 L -941.73 2481 L -886 2461 L -941.73 2441 L -941.73 2459.3908 L -1578.27 2459.3908 L -1578.27 2441 Z" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_61">
+        <path d="M -1896 1804 L -1896 2409.24 L -637.65405 2409.24" stroke="#384799" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_63">
+        <line x1="-1637" y1="1970" x2="-1636.4682" y2="2409.24" stroke="#930004" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="5.0,15.0" stroke-width="5"/>
+      </g>
+      <g id="Line_64">
+        <line x1="-887" y1="1820" x2="-886.4682" y2="2409.24" stroke="#930004" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="5.0,20.0" stroke-width="5"/>
+      </g>
+      <g id="Line_66">
+        <path d="M -1615.9107 2129.5714 C -1615.9107 2129.5714 -1511.4464 2066.1786 -1459.2915 2061.872 C -1407.1365 2057.5654 -1418.8083 2089.0883 -1370.8214 2080.4643 C -1322.8346 2071.8403 -1313.6786 2007.25 -1245.8214 1977.7857 C -1177.9643 1948.3214 -1192.25 1915.2857 -1144.9286 1908.1429 C -1097.6071 1901 -1078.278 1957.8148 -1034.3711 1950.3896 C -990.4643 1942.9643 -1002.0714 1859.0357 -865.5605 1846.4396" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_67">
+        <text transform="translate(-1870 1832)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Price</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <text transform="translate(-1425.8114 2505)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Time Window</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
