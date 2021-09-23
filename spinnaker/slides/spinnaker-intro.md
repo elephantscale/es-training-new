@@ -70,9 +70,9 @@ Notes:
 ---
 
 
-# Success Stories
- * Success stories from around the web tell of enterprises moving from brittle deployments to continuous delivery with Spinnaker:
+## Success Stories 
 
+ * Success stories from around the web tell of enterprises moving from brittle deployments to continuous delivery with Spinnaker:
  * Airbnb uses Spinnaker to migrate from monolith to service-oriented architecture.
  * SAP leverages Spinnaker on its mission to run the world better.
  * Pinterest boosts productivity with Spinnaker as it pioneers visual discovery.

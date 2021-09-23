@@ -1,7 +1,7 @@
 # Clusters
 ---
 
-# Single Pane of Glass
+## Single Pane of Glass
  * Spinnaker acts as a single pane of glass from which to manage your global deployments across multiple clouds
  * Here, we surface information related to health and status of running environments, and metadata around deployments and individual instances.
  * Also available are ad-hoc actions you can perform on the resources you see such as resize, clone, disable, and roll back
@@ -10,10 +10,11 @@
 
 ---
 
-# Clusters
+# #Clusters
 ![](../../assets/images/spinnaker/3rd-party/clusters.png)
 
 ---
+
 ## Explanation
 
  * On the left are filters for viewing your deployed services

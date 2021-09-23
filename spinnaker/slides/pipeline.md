@@ -226,7 +226,7 @@ Create the **dev** Service and Ingress
  * Click on "Create Load Balancer"
  * Paste in this:
 
-    ```yml
+```yaml
     ---
     apiVersion: v1
     kind: Service
@@ -260,7 +260,7 @@ Create the **dev** Service and Ingress
                   serviceName: hello-today
                   servicePort: http
                 path: /dev/hello-today
-    ```
+```
 
  * Click "Create"
 
@@ -274,7 +274,7 @@ Create the **test** Service and Ingress
  * Click on "Create Load Balancer"
  * Paste in this:
 
-    ```yml
+    ```yaml
     ---
     apiVersion: v1
     kind: Service
@@ -318,7 +318,7 @@ Create the **prod** Service and Ingress
  * Click on "Create Load Balancer"
  * Paste in this:
 
-    ```yml
+    ```yaml
     ---
     apiVersion: v1
     kind: Service
@@ -403,7 +403,7 @@ Then, actually create the pipeline:
      * Select the 'Override Namespace' checkbox, and select 'dev' in the dropdown
      * In the "Manifest" field, put this (note the `${parameters["tag"]}` field, which will pull in the tag parameter)
 
-        ```yml
+        ```yaml
         apiVersion: apps/v1
         kind: Deployment
         metadata:
@@ -478,7 +478,7 @@ Edit your pipeline:
      * Select the 'Override Namespace' checkbox, and select 'test' in the dropdown
      * In the "Manifest" field, put this (note the `${parameters["tag"]}` field, which will pull in the tag parameter)
 
-        ```yml
+        ```yaml
         apiVersion: apps/v1
         kind: Deployment
         metadata:
@@ -554,7 +554,7 @@ Edit your pipeline:
      * Check the "Override Namespace" checkbox and select "prod" from the "Namespace" dropdown
      * In the manifest field, enter this (_notice that this manifest is different from the other two manifests - this is explained below_).
 
-        ```yml
+        ```yaml
         apiVersion: apps/v1
         kind: ReplicaSet
         metadata:
@@ -744,7 +744,7 @@ Update the prod manifest to use your parameter:
  * In the large Kubernetes manifest field, find the `replicas` field
  * Replace the `replicas` field with this:
 
-    ```yml
+    ```yaml
     replicas: '${ #toInt( parameters.prod_count ) }'
     ```
 
@@ -844,7 +844,7 @@ Now, trigger the pipeline:
     curl -k -X POST -H 'content-type:application/json' -d '{}' https://<your-minnaker-url>/api/v1/webhooks/my-first-pipeline
     ```
 
- * This is the same command, spread out across multiple lines (`\` allows you to split a shell command into multiple lines, **as long as there are no spaces after the `\`) - you can run this instead.
+ * This is the same command, spread out across multiple lines (`\` allows you to split a shell command into multiple lines, as long as there are no spaces after the `\`) - you can run this instead.
 
     ```bash
     curl -k \
