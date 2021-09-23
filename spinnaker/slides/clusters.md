@@ -10,7 +10,8 @@
 
 ---
 
-# #Clusters
+## Clusters
+
 ![](../../assets/images/spinnaker/3rd-party/clusters.png)
 
 ---
