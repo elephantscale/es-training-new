@@ -1,5 +1,6 @@
-../../course-outlines/spinnaker.md
+# $ES_HOME/utils/presentations/slides-assembler.sh slide-order.txt
 About-Spinnaker-Class.md
+../../course-outlines/spinnaker.md
 continuous-delivery.md
 spinnaker-intro.md
 minnaker.md

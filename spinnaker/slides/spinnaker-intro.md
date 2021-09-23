@@ -83,11 +83,8 @@ Notes:
 ## Total Spinnaker Installations
 
 
- * More stats can be found at - http://stats.jenkins-ci.org/jenkins-stats/svg/svgs.html
 
- * 04/2007-04/2017
-
-<img src="../../assets/images/spinnaker/spinnaker-stats.png" style="width:40%;"/> <!-- {"left" : 9.08, "top" : 2.68, "height" : 8.01, "width" : 7.88} -->
+<img src="../../assets/images/spinnaker/3rd-party/spinnaker-stats.png" style="width:40%;"/> <!-- {"left" : 9.08, "top" : 2.68, "height" : 8.01, "width" : 7.88} -->
 
 
 Notes: 
@@ -123,7 +120,7 @@ Notes:
 
 ## Spinnaker Very Active GitHub Repository 
 
-<img src="../../assets/images/jenkins/3rd-party/Spinnaker_GitHub_Repository.png" style="width:60%;"/> <!-- {"left" : 2.5, "top" : 2.68, "height" : 8.34, "width" : 12.5} -->
+<img src="../../assets/images/spinnaker/3rd-party/Spinnaker_GitHub_Repository.png" style="width:60%;"/> <!-- {"left" : 2.5, "top" : 2.68, "height" : 8.34, "width" : 12.5} -->
 
 
 Notes: 
@@ -230,6 +227,6 @@ Notes:
 
 # Deployment strategies
 
-![](../../assets/images/
+![](../../assets/images/spinnaker/3rd-party/deployment-stragegies.png)
 
 
