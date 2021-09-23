@@ -1,2 +1,6 @@
 ../../course-outlines/spinnaker.md
 About-Spinnaker-Class.md
+continuous-delivery.md
+spinnaker-intro.md
+minnaker.md
+applications.md
