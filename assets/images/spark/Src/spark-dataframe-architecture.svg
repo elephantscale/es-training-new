@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="411 500 3009 1831" width="3009" height="1831">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#0c0074">
+      <g>
+        <path d="M -2.0571429 0 L 0 .7714286 L 0 -.7714286 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="110.1" y="316.9">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.18"/>
+      <feOffset in="blur" result="offset" dx="8" dy="7"/>
+      <feFlood flood-color="black" flood-opacity=".75" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Century Gothic" font-size="100" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Lucida Grande" font-size="100" panose-1="2 11 6 0 4 5 2 2 2 4" units-per-em="1000" underline-position="-97.65625" underline-thickness="48.828125" slope="0" x-height="530.27344" cap-height="722.65625" ascent="966.7969" descent="-210.9375" font-weight="400">
+      <font-face-src>
+        <font-face-name name="LucidaGrande"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2018-10-22 17:52:35 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_19">
+        <line x1="836.7436" y1="1067.427" x2="836.289" y2="861.3291" marker-start="url(#FilledArrow_Marker)" stroke="#0c0074" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="14"/>
+      </g>
+      <g id="Line_20">
+        <line x1="1615.1437" y1="1067.9147" x2="1612.7376" y2="859.8121" marker-start="url(#FilledArrow_Marker)" stroke="#0c0074" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="14"/>
+      </g>
+      <g id="Line_21">
+        <line x1="2502.039" y1="1067.427" x2="2501.5844" y2="861.3291" marker-start="url(#FilledArrow_Marker)" stroke="#0c0074" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+      </g>
+      <g id="Line_22">
+        <line x1="3007.353" y1="1809.5722" x2="3006.1144" y2="859.8121" marker-start="url(#FilledArrow_Marker)" stroke="#0c0074" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+      </g>
+      <g id="Line_23">
+        <line x1="1500.1489" y1="1798.9042" x2="1501.8506" y2="1594.906" marker-start="url(#FilledArrow_Marker)" stroke="#0c0074" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="14"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 449.457 500.4354 L 1155.278 500.4354 C 1171.8465 500.4354 1185.278 513.86685 1185.278 530.4354 L 1185.278 829.8121 C 1185.278 846.3806 1171.8465 859.8121 1155.278 859.8121 L 449.457 859.8121 C 432.88846 859.8121 419.457 846.3806 419.457 829.8121 L 419.457 530.4354 C 419.457 513.86685 432.88846 500.4354 449.457 500.4354 Z" fill="#8671ec"/>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 1257.7495 500.4354 L 1963.5704 500.4354 C 1980.139 500.4354 1993.5704 513.86685 1993.5704 530.4354 L 1993.5704 829.8121 C 1993.5704 846.3806 1980.139 859.8121 1963.5704 859.8121 L 1257.7495 859.8121 C 1241.1809 859.8121 1227.7495 846.3806 1227.7495 829.8121 L 1227.7495 530.4354 C 1227.7495 513.86685 1241.1809 500.4354 1257.7495 500.4354 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 2066.042 500.4354 L 3389.4032 500.4354 C 3405.9718 500.4354 3419.4032 513.86686 3419.4032 530.4354 L 3419.4032 829.8121 C 3419.4032 846.3806 3405.9718 859.8121 3389.4032 859.8121 L 2066.042 859.8121 C 2049.4734 859.8121 2036.042 846.3806 2036.042 829.8121 L 2036.042 530.4354 C 2036.042 513.86686 2049.4734 500.4354 2066.042 500.4354 Z" fill="#ecba15"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 441.6414 1116.3269 L 2566.052 1116.3269 C 2582.6206 1116.3269 2596.052 1129.7583 2596.052 1146.3269 L 2596.052 1564.906 C 2596.052 1581.4746 2582.6206 1594.906 2566.052 1594.906 L 441.6414 1594.906 C 425.07286 1594.906 411.6414 1581.4746 411.6414 1564.906 L 411.6414 1146.3269 C 411.6414 1129.7583 425.07286 1116.3269 441.6414 1116.3269 Z" fill="#033399"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 441.6414 1851.4208 L 3389.4032 1851.4208 C 3405.9718 1851.4208 3419.4032 1864.8523 3419.4032 1881.4208 L 3419.4032 2300 C 3419.4032 2316.5685 3405.9718 2330 3389.4032 2330 L 441.6414 2330 C 425.07286 2330 411.6414 2316.5685 411.6414 2300 L 411.6414 1881.4208 C 411.6414 1864.8523 425.07286 1851.4208 441.6414 1851.4208 Z" fill="#6f5dc3"/>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 1179.0245 1167.4401 L 2492.887 1167.4401 C 2498.41 1167.4401 2502.887 1171.9173 2502.887 1177.4401 L 2502.887 1324.1729 C 2502.887 1329.6958 2498.41 1334.1729 2492.887 1334.1729 L 1179.0245 1334.1729 C 1173.5017 1334.1729 1169.0245 1329.6958 1169.0245 1324.1729 L 1169.0245 1177.4401 C 1169.0245 1171.9173 1173.5017 1167.4401 1179.0245 1167.4401 Z" fill="#ece0a1"/>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 598.06486 1375.8561 L 2492.887 1375.8561 C 2498.41 1375.8561 2502.887 1380.3333 2502.887 1385.8561 L 2502.887 1532.589 C 2502.887 1538.1118 2498.41 1542.589 2492.887 1542.589 L 598.06486 1542.589 C 592.542 1542.589 588.06486 1538.1118 588.06486 1532.589 L 588.06486 1385.8561 C 588.06486 1380.3333 592.542 1375.8561 598.06486 1375.8561 Z" fill="#e0c18c"/>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 701.0782 2081.8654 L 3129.9664 2081.8654 C 3135.4893 2081.8654 3139.9664 2086.3425 3139.9664 2091.8654 L 3139.9664 2238.5982 C 3139.9664 2244.121 3135.4893 2248.5982 3129.9664 2248.5982 L 701.0782 2248.5982 C 695.55536 2248.5982 691.0782 2244.121 691.0782 2238.5982 L 691.0782 2091.8654 C 691.0782 2086.3425 695.55536 2081.8654 701.0782 2081.8654 Z" fill="#ece0a1"/>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_7" filter="url(#Shadow)">
+        <text transform="translate(583.3926 1184.7474)" fill="white">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="400" fill="white" x="0" y="101">Spark SQL</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(1398.1248 630.3471)" fill="#100074">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="400" fill="#100074" x="0" y="101">Console</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(2193.8524 557.12374)" fill="#100074">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="400" fill="#100074" x="168.02637" y="101">User Programs</tspan>
+          <tspan font-family="Century Gothic" font-size="100" font-weight="400" fill="#100074" x="0" y="224">(java</tspan>
+          <tspan font-family="Lucida Grande" font-size="100" font-weight="400" fill="#100074" y="224">, Scale, Python)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3" filter="url(#Shadow)">
+        <text transform="translate(1756.3788 1887.3073)" fill="white">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="400" fill="white" x="15.842773" y="101">Spark </tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(1166.822 2103.7318)" fill="#100074">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="400" fill="#100074" x="0" y="101">Resilient Distributed Datasets</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(1441.6657 1189.3065)" fill="#100074">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="400" fill="#100074" x="0" y="101">DataFrame API</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(1066.3607 1402.5935)" fill="#100074">
+          <tspan font-family="Century Gothic" font-size="100" font-weight="400" fill="#100074" x="0" y="101">Catalyst Optimizer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(678.01005 621.1237)" fill="#100074">
+          <tspan font-family="Lucida Grande" font-size="100" font-weight="400" fill="#100074" x="0" y="97">JDBC</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

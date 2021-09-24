@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="124 165 722 313" width="722" height="313">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="20" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 14:20:43 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 131.48908 226 L 838.5109 226 C 841.8246 226 844.5109 228.6863 844.5109 232 L 844.5109 336.1834 C 844.5109 339.4971 841.8246 342.1834 838.5109 342.1834 L 131.48908 342.1834 C 128.17537 342.1834 125.48908 339.4971 125.48908 336.1834 L 125.48908 232 C 125.48908 228.6863 128.17537 226 131.48908 226 Z" fill="#ecdea4"/>
+        <path d="M 131.48908 226 L 838.5109 226 C 841.8246 226 844.5109 228.6863 844.5109 232 L 844.5109 336.1834 C 844.5109 339.4971 841.8246 342.1834 838.5109 342.1834 L 131.48908 342.1834 C 128.17537 342.1834 125.48908 339.4971 125.48908 336.1834 L 125.48908 232 C 125.48908 228.6863 128.17537 226 131.48908 226 Z" stroke="#310076" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 294.35153 391.50655 L 418.07205 391.50655 C 420.8335 391.50655 423.07205 393.74513 423.07205 396.50655 L 423.07205 472 C 423.07205 474.7614 420.8335 477 418.07205 477 L 294.35153 477 C 291.5901 477 289.35153 474.7614 289.35153 472 L 289.35153 396.50655 C 289.35153 393.74513 291.5901 391.50655 294.35153 391.50655 Z" fill="#ac97ff"/>
+        <path d="M 294.35153 391.50655 L 418.07205 391.50655 C 420.8335 391.50655 423.07205 393.74513 423.07205 396.50655 L 423.07205 472 C 423.07205 474.7614 420.8335 477 418.07205 477 L 294.35153 477 C 291.5901 477 289.35153 474.7614 289.35153 472 L 289.35153 396.50655 C 289.35153 393.74513 291.5901 391.50655 294.35153 391.50655 Z" stroke="#310076" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 551.92795 391.50655 L 675.6485 391.50655 C 678.4099 391.50655 680.6485 393.74513 680.6485 396.50655 L 680.6485 472 C 680.6485 474.7614 678.4099 477 675.6485 477 L 551.92795 477 C 549.1665 477 546.92795 474.7614 546.92795 472 L 546.92795 396.50655 C 546.92795 393.74513 549.1665 391.50655 551.92795 391.50655 Z" fill="#ac97ff"/>
+        <path d="M 551.92795 391.50655 L 675.6485 391.50655 C 678.4099 391.50655 680.6485 393.74513 680.6485 396.50655 L 680.6485 472 C 680.6485 474.7614 678.4099 477 675.6485 477 L 551.92795 477 C 549.1665 477 546.92795 474.7614 546.92795 472 L 546.92795 396.50655 C 546.92795 393.74513 549.1665 391.50655 551.92795 391.50655 Z" stroke="#310076" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_4">
+        <ellipse cx="207.69432" cy="274.86093" rx="42.1987573856986" ry="25.7576830795823" fill="#e8ab2f"/>
+        <ellipse cx="207.69432" cy="274.86093" rx="42.1987573856986" ry="25.7576830795823" stroke="#310076" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_7">
+        <ellipse cx="346.34716" cy="274.86093" rx="42.1987573856986" ry="25.7576830795823" fill="#e8ab2f"/>
+        <ellipse cx="346.34716" cy="274.86093" rx="42.1987573856986" ry="25.7576830795823" stroke="#310076" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_8">
+        <ellipse cx="485" cy="274.86093" rx="42.1987573856985" ry="25.7576830795823" fill="#e8ab2f"/>
+        <ellipse cx="485" cy="274.86093" rx="42.1987573856985" ry="25.7576830795823" stroke="#310076" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_9">
+        <ellipse cx="762.3057" cy="274.86093" rx="42.1987573856985" ry="25.7576830795823" fill="#e8ab2f"/>
+        <ellipse cx="762.3057" cy="274.86093" rx="42.1987573856985" ry="25.7576830795823" stroke="#310076" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_10">
+        <ellipse cx="623.65284" cy="274.86093" rx="42.1987573856985" ry="25.7576830795823" fill="#e8ab2f"/>
+        <ellipse cx="623.65284" cy="274.86093" rx="42.1987573856985" ry="25.7576830795823" stroke="#310076" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(303.7191 415.25328)" fill="#2c006d">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2c006d" x="0" y="30">client 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(561.29553 415.25328)" fill="#2c006d">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2c006d" x="0" y="30">client 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(170.09667 310)" fill="#2c006d">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="700" fill="#2c006d" x="0" y="20">server 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(308.7495 310)" fill="#2c006d">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="700" fill="#2c006d" x="0" y="20">server 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(447.40234 310)" fill="#2c006d">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="700" fill="#2c006d" x="0" y="20">server 3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(586.0552 310)" fill="#2c006d">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="700" fill="#2c006d" x="0" y="20">server 4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(724.708 310)" fill="#2c006d">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="700" fill="#2c006d" x="0" y="20">server 5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(348.4912 170)" fill="#2c006d">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2c006d" x="0" y="30">Zookeeper Service</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

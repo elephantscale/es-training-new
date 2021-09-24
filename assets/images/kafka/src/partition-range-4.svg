@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="15 142 927 775" width="927" height="775">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-6 -3 7 6" markerWidth="7" markerHeight="6" color="#12008e">
+      <g>
+        <path d="M -4.16 0 L 0 1.56 L 0 -1.56 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-6 -3 7 6" markerWidth="7" markerHeight="6" color="#4600ab">
+      <g>
+        <path d="M -4.16 0 L 0 1.56 L 0 -1.56 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 14:11:05 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_31">
+        <rect x="122.59811" y="143" width="102" height="67" fill="#ac97ff"/>
+        <rect x="122.59811" y="143" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_32">
+        <rect x="225.1924" y="143" width="102" height="67" fill="#ac97ff"/>
+        <rect x="225.1924" y="143" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_33">
+        <rect x="327.08246" y="143" width="102" height="67" fill="#ac97ff"/>
+        <rect x="327.08246" y="143" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_34">
+        <rect x="429.1913" y="143" width="102" height="67" fill="#ac97ff"/>
+        <rect x="429.1913" y="143" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_35">
+        <rect x="634.1078" y="143" width="102" height="67" fill="#ac97ff"/>
+        <rect x="634.1078" y="143" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_36">
+        <rect x="531.5135" y="143" width="102" height="67" fill="#ac97ff"/>
+        <rect x="531.5135" y="143" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_37">
+        <rect x="736.7021" y="143" width="102" height="67" fill="#ac97ff"/>
+        <rect x="736.7021" y="143" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_38">
+        <rect x="839.2964" y="143" width="102" height="67" fill="#ac97ff"/>
+        <rect x="839.2964" y="143" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_39">
+        <path d="M 213.20696 369 L 338.20696 369 C 342.62524 369 346.20696 372.5817 346.20696 377 L 346.20696 412 C 346.20696 416.4183 342.62524 420 338.20696 420 L 213.20696 420 C 208.78868 420 205.20696 416.4183 205.20696 412 L 205.20696 377 C 205.20696 372.5817 208.78868 369 213.20696 369 Z" fill="#ecdea4"/>
+        <path d="M 213.20696 369 L 338.20696 369 C 342.62524 369 346.20696 372.5817 346.20696 377 L 346.20696 412 C 346.20696 416.4183 342.62524 420 338.20696 420 L 213.20696 420 C 208.78868 420 205.20696 416.4183 205.20696 412 L 205.20696 377 C 205.20696 372.5817 208.78868 369 213.20696 369 Z" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_40">
+        <path d="M 520.0135 369 L 645.0135 369 C 649.4318 369 653.0135 372.5817 653.0135 377 L 653.0135 412 C 653.0135 416.4183 649.4318 420 645.0135 420 L 520.0135 420 C 515.5952 420 512.0135 416.4183 512.0135 412 L 512.0135 377 C 512.0135 372.5817 515.5952 369 520.0135 369 Z" fill="#ecdea4"/>
+        <path d="M 520.0135 369 L 645.0135 369 C 649.4318 369 653.0135 372.5817 653.0135 377 L 653.0135 412 C 653.0135 416.4183 649.4318 420 645.0135 420 L 520.0135 420 C 515.5952 420 512.0135 416.4183 512.0135 412 L 512.0135 377 C 512.0135 372.5817 515.5952 369 520.0135 369 Z" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_41">
+        <path d="M 777 369 L 902 369 C 906.4183 369 910 372.5817 910 377 L 910 412 C 910 416.4183 906.4183 420 902 420 L 777 420 C 772.5817 420 769 416.4183 769 412 L 769 377 C 769 372.5817 772.5817 369 777 369 Z" fill="#ecdea4"/>
+        <path d="M 777 369 L 902 369 C 906.4183 369 910 372.5817 910 377 L 910 412 C 910 416.4183 906.4183 420 902 420 L 777 420 C 772.5817 420 769 416.4183 769 412 L 769 377 C 769 372.5817 772.5817 369 777 369 Z" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_42">
+        <line x1="195.39714" y1="223.04042" x2="263.29465" y2="368" marker-start="url(#FilledArrow_Marker)" stroke="#12008e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_43">
+        <line x1="777.5604" y1="214.30034" x2="343.88724" y2="370.01863" marker-start="url(#FilledArrow_Marker)" stroke="#12008e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_44">
+        <line x1="471.0165" y1="217.2253" x2="304.9029" y2="368" marker-start="url(#FilledArrow_Marker)" stroke="#12008e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_45">
+        <line x1="287.32014" y1="216.946" x2="538.4558" y2="368" marker-start="url(#FilledArrow_Marker)" stroke="#12008e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_46">
+        <line x1="582.5135" y1="224.4" x2="582.5135" y2="368" marker-start="url(#FilledArrow_Marker)" stroke="#12008e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_47">
+        <line x1="877.2602" y1="216.95401" x2="626.50655" y2="368" marker-start="url(#FilledArrow_Marker)" stroke="#12008e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_48">
+        <line x1="401.5671" y1="215.4496" x2="775.1501" y2="368.1903" marker-start="url(#FilledArrow_Marker)" stroke="#12008e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_49">
+        <line x1="717.1558" y1="221.75137" x2="820.7321" y2="368" marker-start="url(#FilledArrow_Marker)" stroke="#12008e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Group_132">
+        <g id="Graphic_136">
+          <rect x="122.59811" y="577.3333" width="102" height="67" fill="#ac97ff"/>
+          <rect x="122.59811" y="577.3333" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_135">
+          <rect x="225.1924" y="577.3333" width="102" height="67" fill="#ac97ff"/>
+          <rect x="225.1924" y="577.3333" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_134">
+          <text transform="translate(155.29489 591.8333)" fill="#22008a">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_133">
+          <text transform="translate(257.88918 591.8333)" fill="#22008a">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p1</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_127">
+        <g id="Graphic_131">
+          <rect x="736.7021" y="577.3333" width="102" height="67" fill="#ac97ff"/>
+          <rect x="736.7021" y="577.3333" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_130">
+          <rect x="839.2964" y="577.3333" width="102" height="67" fill="#ac97ff"/>
+          <rect x="839.2964" y="577.3333" width="102" height="67" stroke="#2e009d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_129">
+          <text transform="translate(769.3989 591.8333)" fill="#22008a">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_128">
+          <text transform="translate(871.9931 591.8333)" fill="#22008a">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p1</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_126">
+        <line x1="276.10623" y1="572.4334" x2="275.7608" y2="418.5" marker-start="url(#FilledArrow_Marker_2)" stroke="#4600ab" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_125">
+        <line x1="746.0182" y1="566.8854" x2="607.6483" y2="421" marker-start="url(#FilledArrow_Marker_2)" stroke="#4600ab" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_124">
+        <line x1="879.1387" y1="563.3146" x2="845.7224" y2="421" marker-start="url(#FilledArrow_Marker_2)" stroke="#4600ab" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Line_123">
+        <line x1="188.97218" y1="575.31045" x2="768.2943" y2="414.29123" marker-start="url(#FilledArrow_Marker_2)" stroke="#4600ab" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Graphic_122">
+        <text transform="translate(20.302734 585.8333)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#22008a" x="0" y="40">t1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_121">
+        <text transform="translate(653.3105 585.8333)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#22008a" x="0" y="40">t2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_137">
+        <text transform="translate(20.302734 151.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#22008a" x="0" y="40">t0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_140">
+        <text transform="translate(127.71335 790)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#22008a" x="0" y="35">c1 —&gt; [t0p1,t0p4, t0p7, t2p0]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_139">
+        <text transform="translate(127.71335 712)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#22008a" x="0" y="35">c0 —&gt; [t0p0,t0p3, t0p6, t1p1]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_141">
+        <text transform="translate(127.86838 868)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#22008a" x="0" y="35">c2 —&gt; [t0p2, t0p5, t1p0, t2p1]</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_50">
+        <text transform="translate(155.29489 157.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <text transform="translate(257.88918 157.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <text transform="translate(359.77924 157.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <text transform="translate(461.8881 157.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(564.2103 157.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <text transform="translate(666.8046 157.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <text transform="translate(769.3989 157.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <text transform="translate(871.9931 157.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">p7</tspan>
+        </text>
+      </g>
+      <g id="Graphic_58">
+        <text transform="translate(257.70403 375.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">c0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_59">
+        <text transform="translate(564.5106 375.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">c1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <text transform="translate(821.4971 375.5)" fill="#22008a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22008a" x="0" y="30">c2</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="100 107 695 494" width="695" height="494">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#2f00af">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-01-27 16:28:43 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <title>Rectangle</title>
+        <path d="M 225.673 131 L 740 131 C 740.5523 131 741 131.44772 741 132 L 741 536.82834 C 741 537.3806 740.5523 537.82834 740 537.82834 L 225.673 537.82834 C 225.12073 537.82834 224.673 537.3806 224.673 536.82834 L 224.673 132 C 224.673 131.44772 225.12073 131 225.673 131 Z" fill="white"/>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Line_5">
+        <line x1="221.4715" y1="139.9" x2="221.6903" y2="537.82834" marker-start="url(#FilledArrow_Marker)" stroke="#2f00af" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_4">
+        <line x1="719.1" y1="537.8402" x2="224.673" y2="538.10834" marker-start="url(#FilledArrow_Marker)" stroke="#2f00af" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(644.10205 558)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1e008c" x="0" y="30">Data safty</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(105.19092 112)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1e008c" x="0" y="30">Speed</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(286.0962 228)" fill="#810001">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#810001" x="0" y="30">acks= 0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(445.0962 334)" fill="#810001">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#810001" x="0" y="30">acks= 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(607.90234 457)" fill="#810001">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#810001" x="0" y="30">acks= all</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

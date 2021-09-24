@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-448 300 761 486" width="761" height="486">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#2f00af">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-02-16 14:33:56 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_11">
+        <title>Rectangle</title>
+        <path d="M -259.327 316 L 255 316 C 255.55228 316 256 316.4477 256 317 L 256 721.8283 C 256 722.3806 255.55228 722.8283 255 722.8283 L -259.327 722.8283 C -259.87927 722.8283 -260.327 722.3806 -260.327 721.8283 L -260.327 317 C -260.327 316.4477 -259.87927 316 -259.327 316 Z" fill="white"/>
+      </g>
+      <g id="Line_10">
+        <line x1="-263.5285" y1="324.9" x2="-263.3097" y2="722.8283" marker-start="url(#FilledArrow_Marker)" stroke="#2f00af" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_9">
+        <line x1="234.1" y1="722.8402" x2="-260.327" y2="723.1083" marker-start="url(#FilledArrow_Marker)" stroke="#2f00af" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(156.70703 743)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1e008c" x="0" y="30">Capability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(-442.69385 331)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1e008c" x="0" y="30">Complexity</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(102.10059 339)" fill="#810001">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#810001" x="0" y="30">* Spark</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(23.804688 570.5)" fill="#810001">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#810001" x="0" y="30">* Kafka Streaming</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(-205.60498 629)" fill="#810001">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#810001" x="0" y="30">* Java app</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(102.10938 398)" fill="#810001">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#810001" x="0" y="30">* Flink</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(102.4082 457)" fill="#810001">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#810001" x="0" y="30">* Storm</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

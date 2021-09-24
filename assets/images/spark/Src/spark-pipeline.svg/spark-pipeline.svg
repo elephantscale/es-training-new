@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="185 2089 2305 373" width="2305" height="373">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="185 2089 2305 373" width="2305" height="373">
   <defs>
-    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
       <font-face-src>
         <font-face-name name="CenturyGothic-Bold"/>
       </font-face-src>
     </font-face>
-    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
       <font-face-src>
         <font-face-name name="CenturyGothic-Bold"/>
       </font-face-src>
     </font-face>
-    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
       <font-face-src>
         <font-face-name name="CenturyGothic-Bold"/>
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2020-02-22 11:26:09 +0000</dc:date>
-  </metadata>
-  <g id="spark-pipeline" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1">
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-24 11:35:25 +0000</metadata>
+  <g id="spark-pipeline" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
     <title>spark-pipeline</title>
-    <g id="spark-pipeline: Layer 1">
+    <g id="spark-pipeline_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_105">
         <path d="M 194.67653 2096.7298 L 393.3167 2096.7298 C 397.735 2096.7298 401.3167 2100.3115 401.3167 2104.7298 L 401.3167 2281.906 C 401.3167 2286.3242 397.735 2289.906 393.3167 2289.906 L 194.67653 2289.906 C 190.25825 2289.906 186.67653 2286.3242 186.67653 2281.906 L 186.67653 2104.7298 C 186.67653 2100.3115 190.25825 2096.7298 194.67653 2096.7298 Z" fill="#f0e1a5"/>
@@ -85,7 +83,7 @@
         <path d="M 2042.6092 2202.8352 L 2042.6092 2183.8006 L 2134.479 2183.8006 L 2134.479 2166.7152 L 2178.4873 2193.318 L 2134.479 2219.9205 L 2134.479 2202.8352 Z" fill="#033399"/>
       </g>
     </g>
-    <g id="spark-pipeline: text">
+    <g id="spark-pipeline_text">
       <title>text</title>
       <g id="Graphic_130">
         <text transform="translate(1828.4776 2156.318)" fill="#21006f">

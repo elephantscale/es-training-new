@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="292 151 406 514" width="406" height="514">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#792b1d">
+      <g>
+        <path d="M 2.6666667 0 L 0 -1 L 0 1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#792b1d">
+      <g>
+        <path d="M -2.6666667 0 L 0 1 L 0 -1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 14:10:39 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 334 153 L 560 153 C 564.97056 153 569 157.02944 569 162 L 569 287 C 569 291.97056 564.97056 296 560 296 L 334 296 C 329.02944 296 325 291.97056 325 287 L 325 162 C 325 157.02944 329.02944 153 334 153 Z" fill="#ecdea4"/>
+        <path d="M 334 153 L 560 153 C 564.97056 153 569 157.02944 569 162 L 569 287 C 569 291.97056 564.97056 296 560 296 L 334 296 C 329.02944 296 325 291.97056 325 287 L 325 162 C 325 157.02944 329.02944 153 334 153 Z" stroke="#240079" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="447" cy="583.0255" r="80.0001278321517" fill="#ac97ff"/>
+        <circle cx="447" cy="583.0255" r="80.0001278321517" stroke="#240079" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_5">
+        <path d="M 475.56076 329 C 475.56076 329 531.3846 346.84824 530.8616 402.271 C 530.57105 433.0566 513.5284 450.75094 498.43387 460.281" marker-end="url(#FilledArrow_Marker)" stroke="#792b1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Line_6">
+        <path d="M 415.219 340.49553 C 399.6849 351.3289 381.70577 370.706 382.00365 402.271 C 382.5267 457.69377 437.3435 470.6875 437.3435 470" marker-start="url(#FilledArrow_Marker_2)" stroke="#792b1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(350.40088 205.5)" fill="#1e0081">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1e0081" x="0" y="30">Kafka servers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(559.9385 381)" fill="#1e0081">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1e0081" x="0" y="30">message</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(297.89094 381)" fill="#1e0081">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1e0081" x="0" y="30">poll</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(405.01025 564.0255)" fill="#1e0081">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1e0081" x="0" y="30">Client</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

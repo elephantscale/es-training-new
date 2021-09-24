@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="1274 1077 1153 677" width="1153" height="677">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="1274 1077 1153 677" width="1153" height="677">
   <defs>
-    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
       <font-face-src>
         <font-face-name name="CenturyGothic-Bold"/>
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2020-02-22 11:14:06 +0000</dc:date>
-  </metadata>
-  <g id="spark-rdd" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1">
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-24 11:35:12 +0000</metadata>
+  <g id="spark-rdd" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
     <title>spark-rdd</title>
-    <g id="spark-rdd: Layer 1">
+    <g id="spark-rdd_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_11">
         <path d="M 1293.9385 1077.4354 L 1533.5243 1077.4354 C 1537.9426 1077.4354 1541.5243 1081.0171 1541.5243 1085.4354 L 1541.5243 1222.9759 C 1541.5243 1227.3942 1537.9426 1230.9759 1533.5243 1230.9759 L 1293.9385 1230.9759 C 1289.5202 1230.9759 1285.9385 1227.3942 1285.9385 1222.9759 L 1285.9385 1085.4354 C 1285.9385 1081.0171 1289.5202 1077.4354 1293.9385 1077.4354 Z" fill="#ab97fd"/>
@@ -34,7 +32,7 @@
         <path d="M 1289.4401 1548.5313 L 2418.2604 1548.5313 C 2422.6787 1548.5313 2426.2604 1552.113 2426.2604 1556.5313 L 2426.2604 1745 C 2426.2604 1749.4183 2422.6787 1753 2418.2604 1753 L 1289.4401 1753 C 1285.0219 1753 1281.4401 1749.4183 1281.4401 1745 L 1281.4401 1556.5313 C 1281.4401 1552.113 1285.0219 1548.5313 1289.4401 1548.5313 Z" fill="#a4f8fd"/>
       </g>
     </g>
-    <g id="spark-rdd: texts">
+    <g id="spark-rdd_texts">
       <title>texts</title>
       <g id="Graphic_29">
         <text transform="translate(1757.8542 1359.2536)" fill="#240069">
