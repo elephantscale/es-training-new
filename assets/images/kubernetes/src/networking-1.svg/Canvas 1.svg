@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="1529 -21 1521 1274" width="1521" height="1274">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 6 4" markerWidth="6" markerHeight="4" color="#1a00ff">
+      <g>
+        <path d="M -2.24 0 L 0 .84 L 0 -.84 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#1a00ff">
+      <g>
+        <path d="M -2.5142857 0 L 0 .9428571 L 0 -.9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-26 12:35:37 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3400">
+        <path d="M 1554.9986 418 L 3025 418 C 3036.0457 418 3045 426.9543 3045 438 L 3045 1228 C 3045 1239.0457 3036.0457 1248 3025 1248 L 1554.9986 1248 C 1543.9529 1248 1534.9986 1239.0457 1534.9986 1228 L 1534.9986 438 C 1534.9986 426.9543 1543.9529 418 1554.9986 418 Z" fill="white"/>
+        <path d="M 1554.9986 418 L 3025 418 C 3036.0457 418 3045 426.9543 3045 438 L 3045 1228 C 3045 1239.0457 3036.0457 1248 3025 1248 L 1554.9986 1248 C 1543.9529 1248 1534.9986 1239.0457 1534.9986 1228 L 1534.9986 438 C 1534.9986 426.9543 1543.9529 418 1554.9986 418 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="20.0,20.0" stroke-width="10"/>
+      </g>
+      <g id="Graphic_3401">
+        <path d="M 1909.3435 474.4681 L 2176.6307 668.664 C 2183.991 674.01154 2187.0708 683.49024 2184.2594 692.1427 L 2082.165 1006.3573 C 2079.3537 1015.0097 2071.2907 1020.8679 2062.193 1020.8679 L 1731.807 1020.8679 C 1722.7093 1020.8679 1714.6463 1015.0097 1711.835 1006.3573 L 1609.7406 692.1427 C 1606.9292 683.49024 1610.009 674.01154 1617.3693 668.664 L 1884.6565 474.4681 C 1892.0167 469.12056 1901.9833 469.12056 1909.3435 474.4681 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_3402">
+        <path d="M 2704.3435 474.4681 L 2971.6307 668.664 C 2978.991 674.01154 2982.0708 683.49024 2979.2594 692.1427 L 2877.165 1006.3573 C 2874.3537 1015.0097 2866.2907 1020.8679 2857.193 1020.8679 L 2526.807 1020.8679 C 2517.7093 1020.8679 2509.6463 1015.0097 2506.835 1006.3573 L 2404.7406 692.1427 C 2401.9292 683.49024 2405.009 674.01154 2412.3693 668.664 L 2679.6565 474.4681 C 2687.0167 469.12056 2696.9833 469.12056 2704.3435 474.4681 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_3403">
+        <path d="M 2155.8888 119.97724 C 2095.2812 106.60345 2119.45 -5.981902 2216.1325 13.228448 C 2225.1025 -24.218662 2337.5312 -18.140572 2336.7962 13.228448 C 2407.2925 -26.892922 2497.3825 53.10829 2436.955 93.22966 C 2509.465 112.68154 2436.04 217.48564 2376.5312 199.97845 C 2371.7688 229.15876 2265.385 239.37025 2256.0475 199.97845 C 2195.8075 242.047 2070.1975 177.36427 2155.8888 119.97724 Z" fill="white"/>
+        <path d="M 2155.8888 119.97724 C 2095.2812 106.60345 2119.45 -5.981902 2216.1325 13.228448 C 2225.1025 -24.218662 2337.5312 -18.140572 2336.7962 13.228448 C 2407.2925 -26.892922 2497.3825 53.10829 2436.955 93.22966 C 2509.465 112.68154 2436.04 217.48564 2376.5312 199.97845 C 2371.7688 229.15876 2265.385 239.37025 2256.0475 199.97845 C 2195.8075 242.047 2070.1975 177.36427 2155.8888 119.97724 Z" stroke="#aa97fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_3404">
+        <rect x="2186.48" y="929" width="207.03863" height="201" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image15.tiff" width="1200" height="1165" transform="translate(2186.48 929) scale(.17253219)"/>
+        </g>
+      </g>
+      <g id="Graphic_3405">
+        <rect x="1663" y="560.5" width="436.7382" height="424" id="path_2"/>
+        <clipPath id="clip_path_2">
+          <use xl:href="#path_2"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_2)">
+          <image xl:href="image15.tiff" width="1200" height="1165" opacity=".2872749" transform="translate(1663 560.5) scale(.3639485)"/>
+        </g>
+      </g>
+      <g id="Graphic_3406">
+        <rect x="2473.631" y="560.5" width="436.7382" height="424" id="path_3"/>
+        <clipPath id="clip_path_3">
+          <use xl:href="#path_3"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_3)">
+          <image xl:href="image15.tiff" width="1200" height="1165" opacity=".2872749" transform="translate(2473.631 560.5) scale(.3639485)"/>
+        </g>
+      </g>
+      <g id="Graphic_3410">
+        <rect x="2429.25" y="670" width="250.64267" height="195" id="path_4"/>
+        <clipPath id="clip_path_4">
+          <use xl:href="#path_4"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_4)">
+          <image xl:href="image19.png" width="500" height="389" transform="translate(2429.25 670) scale(.50128535)"/>
+        </g>
+      </g>
+      <g id="Graphic_3411">
+        <rect x="2702" y="670" width="250.64267" height="195" id="path_5"/>
+        <clipPath id="clip_path_5">
+          <use xl:href="#path_5"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_5)">
+          <image xl:href="image19.png" width="500" height="389" transform="translate(2702 670) scale(.50128535)"/>
+        </g>
+      </g>
+      <g id="Graphic_3413">
+        <rect x="1634.9287" y="670" width="250.64267" height="195" id="path_6"/>
+        <clipPath id="clip_path_6">
+          <use xl:href="#path_6"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_6)">
+          <image xl:href="image19.png" width="500" height="389" transform="translate(1634.9287 670) scale(.50128535)"/>
+        </g>
+      </g>
+      <g id="Graphic_3412">
+        <rect x="1907.1787" y="670" width="250.64267" height="195" id="path_7"/>
+        <clipPath id="clip_path_7">
+          <use xl:href="#path_7"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_7)">
+          <image xl:href="image19.png" width="500" height="389" transform="translate(1907.1787 670) scale(.50128535)"/>
+        </g>
+      </g>
+      <g id="Graphic_3415">
+        <rect x="2647.5" y="766.3733" width="89" height="11" fill="blue"/>
+      </g>
+      <g id="Line_3416">
+        <line x1="2691.5" y1="706.9" x2="2691.5" y2="766.3733" marker-start="url(#FilledArrow_Marker)" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_3418">
+        <rect x="1852.5" y="766.3733" width="89" height="11" fill="blue"/>
+      </g>
+      <g id="Line_3417">
+        <line x1="1896.5" y1="706.9" x2="1896.5" y2="766.3733" marker-start="url(#FilledArrow_Marker)" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_3419">
+        <text transform="translate(2063.51 1154.2222)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Kubernetes Cluster</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3420">
+        <text transform="translate(2189.019 76.10345)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">INTERNET</tspan>
+        </text>
+      </g>
+      <g id="Line_3421">
+        <path d="M 1897 468.45745 L 1897 149.7528 C 1897 127.79882 1914.6947 109.94765 1936.6478 109.75435 L 2130.3685 108.04863" stroke="#99052a" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Line_3422">
+        <path d="M 2691.898 468.45767 L 2691.791 149.93935 C 2691.7837 127.99941 2674.1048 110.16009 2652.1658 109.95453 L 2464.7874 108.19893" stroke="#99052a" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_3423">
+        <rect x="2076.707" y="285.60345" width="435.58594" height="59" fill="white"/>
+        <text transform="translate(2081.707 290.60345)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Internet to Kubernetes</tspan>
+        </text>
+      </g>
+      <g id="Line_3424">
+        <line x1="2659.8932" y1="314.07828" x2="2512.293" y2="314.4924" marker-start="url(#FilledArrow_Marker_2)" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_3425">
+        <line x1="1935.0776" y1="318.30334" x2="2076.707" y2="317.04243" marker-start="url(#FilledArrow_Marker_2)" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_3426">
+        <line x1="2401.6915" y1="678.65245" x2="2188.4537" y2="679.31034" stroke="#99052a" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Line_3427">
+        <line x1="2289.3304" y1="749.4733" x2="2289.3304" y2="685.39326" marker-start="url(#FilledArrow_Marker_2)" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_3428">
+        <text transform="translate(2185.595 788.1141)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Pod to Pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3429">
+        <text transform="translate(1698.8704 617.14286)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">Container to Container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3430">
+        <text transform="translate(2498.466 617.14286)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">Container to Container</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
