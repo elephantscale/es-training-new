@@ -75,14 +75,17 @@ Notes:
 import java.util.Properties;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.StringSerializer;
+import org.apache.kafka.common.serialization.IntegerSerializer;
 ...
 
 // ** 2 **
 Properties props = new Properties();
-props.put("bootstrap.servers", "localhost:9092");
-props.put("client.id", "SimpleProducer");
-props.put("key.serializer",  "org.apache.kafka.common.serialization.IntegerSerializer");
-props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+props.put(ProducerConfig.CLIENT_ID_CONFIG, "SimpleProducer");
+props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class.getName());
+props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
 KafkaProducer< Integer, String > producer = new KafkaProducer<>(props);
 
@@ -108,29 +111,40 @@ Notes:
 ## Producer Code Walkthrough
 
 ```java
-// ** 2 **
+// ** 2 **  Recommended approach: use constants
+
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.StringSerializer;
+import org.apache.kafka.common.serialization.IntegerSerializer
+
+Properties props = new Properties();
+props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+props.put(ProducerConfig.CLIENT_ID_CONFIG, "SimpleProducer");
+props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class.getName());
+props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+
+KafkaProducer < Integer, String > producer = new KafkaProducer<>(props);
+```
+
+```java
+// ** 2 ** another approach
 Properties props = new Properties();
 props.put("bootstrap.servers", "localhost:9092");
 props.put("client.id", "SimpleProducer");
 props.put("key.serializer",  "org.apache.kafka.common.serialization.IntegerSerializer");
 props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-
 KafkaProducer < Integer, String > producer = new KafkaProducer<>(props);
-
 ```
 <!-- {"left" : 0, "top" : 1.29, "height" : 1.76, "width" : 10.25} -->
 
-<br/>
-<br/>
+*  **bootstrap.servers:** Specify the kafka brokers to connect to.
+    -Best practice, specify more than one broker to connect to, so there is no single point of failure
 
- * We are using 'KafkaProducer' (org.apache.kafka.clients.producer.KafkaProducer)
+```
+props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "broker1:9092, broker2:9092");
+```
 
- *  **bootstrap.servers:** "broker1:9092, broker2:9092"
-
-     - Specify multiple servers, so no single point of failure
-
- * Using built in serializers for Integer / String
 
 
 
@@ -177,17 +191,16 @@ Notes:
 
 ```java
 Properties props = new Properties();
-props.put("bootstrap.servers", "localhost:9092");
+props.put("boostrap.servers", "localhost:9092");
 props.put("client.id", "SimpleProducer");
 props.put("acks", "all");
 props.put("retries", 0);
 props.put("batch.size", 16384);  // 16k
 props.put("linger.ms", 1);
 props.put("buffer.memory", 33554432); // 32 M
-props.put("key.serializer",
-                   "org.apache.kafka.common.serialization.IntegerSerializer");
-props.put("value.serializer",
-                   "org.apache.kafka.common.serialization.StringSerializer");
+props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class.getName());
+props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+
 KafkaProducer < Integer, String > producer = new KafkaProducer<>(props);
 
 for(int i = 0; i < 100; i++) {
@@ -247,17 +260,20 @@ Notes:
 
 ```java
 import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.common.serialization.StringDeserializer;
+import org.apache.kafka.common.serialization.IntegerDeSerializer
+
 ...
 
 Properties props = new Properties(); // ** 1 **
-props.put("bootstrap.servers", "localhost:9092");
-props.put("group.id", "group1");
-props.put("key.deserializer",
-"org.apache.kafka.common.serialization.IntegerDeserializer");
-props.put("value.deserializer",
-"org.apache.kafka.common.serialization.StringDeserializer");
+props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+props.put(ConsumerConfig.GROUP_ID_CONFIG, "group1");
+props.put(ConsumerConfig.CLIENT_ID_CONFIG, "Simple Consumer");
+props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, IntegerDeSerializer.class.getName());
+props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+
 
 KafkaConsumer < Integer, String > consumer = new KafkaConsumer<>(props);
 
@@ -289,12 +305,12 @@ Notes:
 
 ```java
 Properties props = new Properties(); // ** 1 **
-props.put("bootstrap.servers", "localhost:9092");
-props.put("group.id", "group1");
-props.put("key.deserializer",
-               "org.apache.kafka.common.serialization.IntegerDeserializer");
-props.put("value.deserializer",
-               "org.apache.kafka.common.serialization.StringDeserializer");
+props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+props.put(ConsumerConfig.GROUP_ID_CONFIG, "group1");
+props.put(ConsumerConfig.CLIENT_ID_CONFIG, "Simple Consumer");
+props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, IntegerDeSerializer.class.getName());
+props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeSerializer.class.getName());
+
 
 KafkaConsumer < Integer, String > consumer = new KafkaConsumer<>(props);
 
@@ -674,6 +690,7 @@ Notes:
 
 ## Lab 4.1: Kafka Producer Benchmark
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
  *  **Overview:** Try different send methods in Producer
 
@@ -756,12 +773,13 @@ props.put("value.serializer", "org.apache.kafka.common.serialization.StringSeria
 props.put("compression.type", "snappy"); // <-- **enable compression**
 
 KafkaProducer<String, String> producer = new KafkaProducer<>(props);
-
 ```
+
 ---
 
-## Lab 4: Compression Benchmark
+## Lab: Compression Benchmark
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
  *  **Overview:** Try different compression codecs in Producer
 
@@ -965,13 +983,13 @@ Notes:
 ## Offset Management
 
 
- * Offsets can be 'moved' automatically by consumer API
+ * **auto commit**: Offsets can be 'moved' automatically by consumer API
 
      - Convenient
 
-     - But doesn not give full control to developer
+     - But does not give full control to developer
 
- * Manual offset management
+ * **Manual  commit**
 
      - Clients handle offset
 
@@ -984,88 +1002,93 @@ Notes:
 
 ---
 
-## Updating Offset: Auto Commit
+## Auto Commit
 
-
- * If `'enable.auto.commit=true'` the client will save the offset when poll()
-
- * Frequency controlled by `'auto.commit.interval.ms'` (default 5 secs)
-
+ * We need to set two properties
+    - **`enable.auto.commit=true`** so the client will save the offset when poll()
+    - Frequency controlled by **`auto.commit.interval.ms`** (default 5 secs)
  * auto.commit is enabled by default
+ * During each poll, consumer checks if the  **auto.commit.interval.ms**  interval has expired; if yes,  commit the  **latest offset** returned by the  **last poll()**
+ * Commits are saved to a special Kafka topic called  **_consumer_offsets**
 
- * When poll() is called it will commit the  **latest offset** returned by the  **last poll()**
+```java
+props.setProperty ("enable.auto.commit", "true");
+props.setProperty ("auto.commit.interval.ms", "5000");
+props.setProperty ("session.timeout.ms", "30000"); // set higher for high latency applications
 
- * During each poll, consumer checks if the  **auto.commit.interval.ms**  interval has expired; if yes it commits the offset
-
- * Commit produces a special message to a special Kafka topic called  **_consumer_offsets**
-
-     - Offsets are saved in this topic
+while (true) {
+    ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+    for (ConsumerRecord<String, String> record : records)
+        // process records
+    }
+    // make sure all records are processed before next poll
+}
+```
 
 Notes:
-
-
-
 
 ---
 
 ## Auto Commit
 
+* Remember this as we walk through these scenarios:
+    - **current position** : Pointer for **current consumer**
+    - **committed position**: Pointer for **replacement consumer**
+
+* Both pointers are at 0 at the beginning
 
 <img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="max-width:70%;"/><!-- {"left" : 0.65, "top" : 2.97, "height" : 3.7, "width" : 8.96} -->
 
-
 Notes:
-
-
-
 
 ---
 
 ## Auto Commit
 
+<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:60%; float:right;"/><!-- {"left" : 0.46, "top" : 1.24, "height" : 2.29, "width" : 5.55} -->
+<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:60%; float:right;clear:both;"/><!-- {"left" : 0.56, "top" : 4.87, "height" : 3.22, "width" : 9.13} -->
 
-<img src="../../assets/images/kafka/Auto-Commit.png" alt="Auto-Commit.png" style="width:40%; float:left;"/><!-- {"left" : 0.46, "top" : 1.24, "height" : 2.29, "width" : 5.55} -->
+* First poll gets 4 records.  **Current position = 0 + 4 = 4**
 
-<br clear="all"/>
+* **Committed offset still at 0**
 
-
-<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:60%; float:right;"/><!-- {"left" : 0.56, "top" : 4.87, "height" : 3.22, "width" : 9.13} -->
-
+* Top diagram (previous state), bottom diagram (current state)
 
 
 Notes:
-
-
-
 
 ---
 
 ## Auto Commit
 
+<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:60%; float:right;"/><!-- {"left" : 0.29, "top" : 1.31, "height" : 2.04, "width" : 5.79} -->
 
-<img src="../../assets/images/kafka/Auto-Commit-01.png" alt="Auto-Commit-01.png" style="width:40%; float:left;"/><!-- {"left" : 0.29, "top" : 1.31, "height" : 2.04, "width" : 5.79} -->
+<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:60%; float:right;clear:both;"/><!-- {"left" : 0.71, "top" : 4.03, "height" : 4.45, "width" : 8.84} -->
 
-<br clear="all"/>
+* Second poll gets 3 records
 
-<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:60%; float:right;"/><!-- {"left" : 0.71, "top" : 4.03, "height" : 4.45, "width" : 8.84} -->
+* **Current position = 4 + 3 = 7**
 
+* **Committed offset still at 0**.  Because elapsed time still under 'auto.commit.internval.ms' window
+
+* Top diagram (previous state), bottom diagram (current state)
 
 Notes:
-
-
-
 
 ---
 
 ## Auto Commit
 
+<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:50%; float:right;"/><!-- {"left" : 0.13, "top" : 1.15, "height" : 2.97, "width" : 5.89} -->
+<img src="../../assets/images/kafka/Auto-Commit-03.png" alt="Auto-Commit-03.png" style="width:50%; float:right;clear:both;"/><!-- {"left" : 1.02, "top" : 4.35, "height" : 4.36, "width" : 8.21} -->
 
-<img src="../../assets/images/kafka/Auto-Commit-02.png" alt="Auto-Commit-02.png" style="width:30%; float:left;"/><!-- {"left" : 0.13, "top" : 1.15, "height" : 2.97, "width" : 5.89} -->
+* Third poll gets 3 records
 
-<br clear="all"/>
+* **Current position = 7 + 3 = 10**
 
-<img src="../../assets/images/kafka/Auto-Commit-03.png" alt="Auto-Commit-03.png" style="width:60%; float:right;"/><!-- {"left" : 1.02, "top" : 4.35, "height" : 4.36, "width" : 8.21} -->
+* **Committed offset is updated to 7 (offset from last poll)**.  Because elapsed time has surpassed 'auto.commit.internval.ms' window
 
+* Top diagram (previous state), bottom diagram (current state)
 
 Notes:
 
@@ -1074,7 +1097,7 @@ Notes:
 
 ---
 
-## Auto Commit & Duplicate Processing
+## Auto Commit & Duplicate Events
 
 
  * Consumer 1 reads records, but crashes in the middle of processing (after processing messages 5, 6  and 7)
@@ -1089,14 +1112,17 @@ Notes:
 
 ---
 
-## Auto Commit & Duplicate Processing
+## Auto Commit & Duplicate Events
 
+<img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing.png" alt="Auto-Commit-Duplicate-Processing.png" style="width:40%;float:right;"/><!-- {"left" : 1.02, "top" : 2.78, "height" : 5.4, "width" : 8.21} -->
+<img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing-02.png" alt="Auto-Commit-Duplicate-Processing-02.png" style="width:40%;float:right;clear:both;"/><!-- {"left" : 1.02, "top" : 3.12, "height" : 5.4, "width" : 8.21} -->
 
- * Replacement consumer2 starts reading from `'saved offset'` (committed offset).
+* Replacement consumer2 starts reading from **`committed offset`**
 
- * And processes messages 5, 6 and 7 again. This is duplicate processing
+* And processes messages 5, 6 and 7 again. This is **duplicate processing**
 
-<img src="../../assets/images/kafka/Auto-Commit-Duplicate-Processing-02.png" alt="Auto-Commit-Duplicate-Processing-02.png" style="width:55%;"/><!-- {"left" : 1.02, "top" : 3.12, "height" : 5.4, "width" : 8.21} -->
+* **At-least-once** semantics
+
 
 
 
@@ -1169,57 +1195,49 @@ Notes:
 
 Notes:
 
+---
+
+## Duplicate Events vs. Skipped Events
+
+ *  **Processed but Offset not updated -> Duplicate processing**
+
+ *  **Offset updated but not processed -> Skipped events**
+
+<img src="../../assets/images/kafka/Duplicate-Skipped-Events.png" alt="Duplicate-Skipped-Events.png" style="width:70%;"/><!-- {"left" : 0.44, "top" : 2.96, "height" : 1.41, "width" : 6.05} -->
+
+<img src="../../assets/images/kafka/Duplicate-Skipped-Events-09.png" alt="Duplicate-Skipped-Events-09.png" style="width:70%;"/><!-- {"left" : 0.88, "top" : 5.97, "height" : 1.68, "width" : 8.48} -->
 
 
+Notes:
 
 ---
 
 ## Auto Commit Best Practices
 
+* Auto commit can lead to duplicate processing or skipped events
 
- * Auto commit can lead to duplicate processing or skipped events
+* Dealing with **duplicate events**
 
- * Duplicate Events
+     - Make sure processing is  **'idempotent'** (duplicate processing does not have any side effects)
 
-     - This is ok if processing is  **'idempotent'** (duplicate processing does not have any side effects)
+     - Example, **insert** vs **upsert**
 
-        * e.g. saving an event to a database that over-writes the previous record (does not create duplicate records)
-
-     - Not ok if we are 'counting events' (duplicate counts will result)
-
- * Skipped Events
+* Dealing with **skipped events**
 
      - Before calling poll() make sure all events returned from previous poll are processed
 
 Notes:
 
 
-
-
 ---
 
-## Duplicate Processing vs. Skipped Events
+## Manual Commit - Example 1
 
- *  **Processed but Offset not updated -> Duplicate processing**
+* To do manual-commit, do the following
+    - Set **`enable.auto.commit = false`**
+    - call **`consumer.commitSync()`** or **`consumer.commitASync()`**
 
- *  **Offset updated but not processed -> Skipped events**
-
-<img src="../../assets/images/kafka/Duplicate-Skipped-Events.png" alt="Duplicate-Skipped-Events.png" style="width:45%; float:left;"/><!-- {"left" : 0.44, "top" : 2.96, "height" : 1.41, "width" : 6.05} -->
-
-
-
-  <img src="../../assets/images/kafka/Duplicate-Skipped-Events-09.png" alt="Duplicate-Skipped-Events-09.png" style="width:70%; float:right;"/><!-- {"left" : 0.88, "top" : 5.97, "height" : 1.68, "width" : 8.48} -->
-
-
-Notes:
-
-
-
-
----
-
-## Manual Commit
-
+* Here we are marking **all received records as committed**
 
 ```java
 Properties props = new Properties();
@@ -1236,8 +1254,8 @@ while (true) {
 	record.topic(), record.partition(), record.offset()));
   }
   try {
-    consumer.commitSync(); // <--- 1
-    consumer.commitASync(); // <--- or  ** 2 **
+    consumer.commitSync(); // <--- 1 - wait for commit to be done
+    consumer.commitASync(); // <--- or  ** 2 ** - send a commit message and move on
 
   } catch (CommitFailedException e) {
     e.printStackTrace();
@@ -1247,222 +1265,324 @@ while (true) {
 ```
 <!-- {"left" : 0, "top" : 1.38, "height" : 4.86, "width" : 10.25} -->
 
-
-
 Notes:
-
-
-
 
 ---
 
-## Commit
+## Manual Commit
 
-
- * commitSync() will wait for confirmation
-
+ * **`commitSync()`** will wait for confirmation
      - Might slow down processing
 
- * commitAsync() is 'fire and forget'
-
+ * **`commitAsync()`** is 'fire and forget'
      - Commits can be lost
-
      - But the next calls can catchup
 
  * Both will commit the  **latest offset** returned by  **last poll** ()
 
  * To explicitly set an offset, supply offset to commitSync() or commitAsync() calls
-
      - (see documentation)
 
 Notes:
 
-
-
-
 ---
 
-## At-most Once Consumer
-
-
- * Processes each message 0 or 1 time
-
- * Achieved by setting:
-
-     - enable.auto.commit = true
-
-     - auto.commit.interval.ms = <small_value>
-
-     - Poll frequently
-
-Notes:
-
-
-
-
----
-
-## At-least Once Consumer
-
-
- * Processes each message one or more times
-
- * Achieved by setting:
-
-     - enable.auto.commit = false
-
-     - Manually commit offset using consumer.commitSync();
-
-Notes:
-
-
-
----
-
-## Exactly Once Processing in Kafka
-
-
- * Producer  send can be  **idempotent**
-
-     - Set in producer via   **"enable.idempotence= true"**
-
- * Producer can write a batch  **_atomically_**
-
-```java
-      producer.initTransactions();
-
-      try {
-
-         producer.beginTransaction(); producer.send(record1);
-         producer.send(record2); producer.commitTransaction();
-
-     } catch(ProducerFencedException e) {
-
-         producer.close();
-
-     } catch(KafkaException e) {
-
-         producer.abortTransaction();
-
-     }
-```
-<!-- {"left" : 0, "top" : 3.03, "height" : 4.09, "width" : 10.25} -->
-
-Notes:
-
-An idempotent operation is one which can be performed many times without causing a different effect than only being performed once.
-
-
----
-
-## Exactly Once Processing in Kafka
-
-
- * Kafka Streams API implements Exactly Once Processing
-
-     -  **"processing.guarantee= exactly_once"**
-
- * Processing happens once
-
- * No messages are missed
-
- * No duplicate processing
-
- * Details: https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/
-
-Notes:
-
-With idempotency and transactions support on producer, Streams API can support exactly once
-
-
----
-
-## Lab 3: Consumer Commits
-
-
- *  **Overview:** Try different commit methods in Consumers
-
-     - At-most once, At-least once
-
- *  **Builds on previous labs:** lab 3
-
- *  **Approximate Time:** 20 - 30 mins
-
- *  **Instructions:**
-
-     - Please follow: lab 3.4, 3.5
-
- *  **To Instructor:**
-
-
-Notes:
-
-
-
-
----
-
-## Committing Specific Offsets
-
-
- * Both commitSync and commitAsync can take a Map of partitions & offsets
-
-```java
-org.apache.kafka.clients.consumer.KafkaConsumer
-   commitAsync(Map < TopicPartition, OffsetAndMetadata > offsets)
-   commitSync(Map < TopicPartition, OffsetAndMetadata > offsets)
-
-org.apache.kafka.common.TopicPartition (String topic, int partition)
-
-org.apache.kafka.clients.consumer.OffsetAndMetadata(long offset)
-org.apache.kafka.clients.consumer.OffsetAndMetadata(long offset, String meta)
-```
-<!-- {"left" : 0, "top" : 2.07, "height" : 1.79, "width" : 10.25} -->
-
-Notes:
-
-
-
-
----
-
-## Committing Specific Offsets
-
+## Manual Commit -  Example 2
+
+* Here we are going to commit **specific records** that were processed
+* Both commitSync and commitAsync can take a Map of partitions & offsets
+* We are committing every 100 records to minimize the overhead
 
 ```java
 import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.clients.consumer.OffsetAndMetadata;
-
 Map < TopicPartition, OffsetAndMetadata > currentOffsets = new HashMap<>();
 int count = 0;
-
 while (true) {
    ConsumerRecords < Integer, String > records = consumer.poll(100);
    for (ConsumerRecord < Integer, String > record : records)
    {
       count++;
-      System.out.println("Received message : " + record);
-
-      // process message
-      // and update offset map
+      // process message and update offset map
       currentOffsets.put(
           new TopicPartition(record.topic(), record.partition()),
           new OffsetAndMetadata(record.offset()+1, "no metadata"));
 
-      // commit every 1000 records
-      if (count % 1000 == 0) {
-          consumer.commitAsync(currentOffsets, null);
+      if (count % 100 == 0) { // commit every 100 records
+          consumer.commitSync(currentOffsets, null);
+          currentOffsets.clear();
     }
   }
 }
-
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 5.51, "width" : 10.25} -->
+
+* References
+    - [org.apache.kafka.clients.consumer.KafkaConsumer](https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
+    - [org.apache.kafka.common.TopicPartition](https://kafka.apache.org/30/javadoc/org/apache/kafka/common/TopicPartition.html)
 
 Notes:
 
+---
 
+## Manual Commit - Example 3
 
+* Here we have finer control on which records to mark as committed
+
+* We commit offset after we finish handling the records in each partition.
+
+```java
+try {
+    while(running) {
+        ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(500));
+
+        // loop over partitions returned
+        for (TopicPartition partition : records.partitions()) {
+            // grab records for this partition
+            List<ConsumerRecord<String, String>> partitionRecords = records.records(partition);
+
+            // go over these records
+            for (ConsumerRecord<String, String> record : partitionRecords) {
+                System.out.println(record.offset() + ": " + record.value());
+            }
+            long lastOffset = partitionRecords.get(partitionRecords.size() - 1).offset();
+
+            // Mark records from this partition as done
+            // The committed offset should always be the offset of the next message 
+            // that your application will read. Thus, when calling commitSync(offsets) 
+            // you should add one to the offset of the last message processed.
+            consumer.commitSync(Collections.singletonMap(partition,
+                    new OffsetAndMetadata(lastOffset + 1)));
+        }
+    }
+} finally {
+consumer.close();
+}
+```
+
+---
+
+## Consumer Configurations
+
+* We are going to see a few code samples of different consumers
+
+* **At-most-once** consumer
+    - OK to loose messages, but no duplicate processing
+
+* **At-least-once** consumer
+    - Do not loose messages, duplicate processing is OK
+
+* **Exactly-once** consumer
+    - Process only once
+    - No duplicate events
+    - No dropped events
+
+* References:
+    - [Meaning of at-least once, at-most once and exactly-once delivery](https://medium.com/@madhur25/meaning-of-at-least-once-at-most-once-and-exactly-once-delivery-10e477fafe16)
+    - [Kafka Clients (At-Most-Once, At-Least-Once, Exactly-Once, and Avro Client)](https://dzone.com/articles/kafka-clients-at-most-once-at-least-once-exactly-o)
+
+---
+
+## At-least-once Consumer With Auto Commit
+
+* Simplest implementation, we let Kafka keep track of offsets
+* We finish processing all records before next poll
+* Analyze what would happen if the consumer crashes
+    - Replacement consumer starts up
+    - It resumes from 'committed offset' (this is lagging from consumer offset)
+    - It will receive duplicate messages
+
+```java
+props.setProperty ("enable.auto.commit", "true");
+props.setProperty ("auto.commit.interval.ms", "5000");
+props.setProperty ("session.timeout.ms", "30000"); // set higher for high latency applications
+
+while (true) {
+    ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+    for (ConsumerRecord<String, String> record : records)
+        // process records
+    }
+    // all records are processed before next poll
+}
+```
+
+---
+
+## At-least-once Consumer with Manual Commit
+
+* Here auto commit is disabled, we are committing manually at the end of processing all records
+
+* What would happen if consumer crashed at **point A** (just before committing)
+    - Replacement consumer starts up
+    - It resumes from 'committed offset' (this is lagging from consumer offset)
+    - It will receive duplicate messages
+
+```java
+props.setProperty ("enable.auto.commit", "false");
+
+while (true) {
+    ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+    for (ConsumerRecord<String, String> record : records)
+        // process records
+    }
+    // ** A **
+    // commit all records are processed
+    consumer.commitSync()
+}
+```
+
+---
+
+## At-most-once Consumer
+
+* Here we keep polling Kafka and  building a 'batch' in consumer
+* And saving the batch once it exceeds 1000 records
+* Every time we poll, Kafka will commit the offsets
+    - The small value of `auto.commit.interval.ms` will ensure the commit happens
+* Now think about what happens when the consumer crashes before saving database (next slide)
+
+```java
+props.put("enable.auto.commit", "true");  // auto commit on
+props.put("auto.commit.interval.ms", "100"); //  keep it small 
+
+// internal buffer
+final int minBatchSize = 1000;
+List<ConsumerRecord<String, String>> buffer = new ArrayList<>();
+while (true) {
+    ConsumerRecords<String, String> records = consumer.poll(100);
+    // add records to buffer
+    for (ConsumerRecord<String, String> record : records) {
+        buffer.add(record);
+    }
+    if (buffer.size() >= minBatchSize) {
+        insertIntoDb(buffer);
+        buffer.clear();
+    }
+}
+```
+
+---
+
+## At-most-once Consumer
+
+* Here is the **at-most-once scenario**
+
+* As we keep polling, Kafka will auto commit the offsets
+
+* Let's say consumer crashed before saving to database
+
+* Replacement consumer comes up, it resumes from 'last-commited-offset' - which is moved to current-pointer
+
+* So a few messages are skipped
+
+---
+
+## Exactly Once Processing in Kafka
+
+* Exactly-once is the coveted scenario
+
+* In Kafka, it is **possible to do exactly-once given a few restrictions**
+
+* We need to implement changes **in Broker, Producer and Consumer**
+
+* Kafka Streams API implements Exactly Once Processing
+
+* References
+    - [Exactly-Once Semantics Are Possible: Here’s How Kafka Does It](https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/)
+    - [Exactly Once Processing in Kafka with Java](https://www.baeldung.com/kafka-exactly-once)
+    - [KafkaProducer API](https://kafka.apache.org/23/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
+
+---
+
+## Exactly Once - Broker Setup
+
+* **`replication.factor = 3`**
+    - 3 Replicas has been proven at scale to provide very durable data safety
+    - This is why Hadoop/HDFS uses 3 replicas for durable data
+
+* **`min.insync.replicas = 2`**
+    - This specifies the minimum number of replicas that must acknowledge a write for the write to be considered successful, When a producer sets acks to "all" (or "-1")
+
+---
+
+## Exactly Once - Producer Setup
+
+* Enable  **idempotent**
+* Enable **atomic transactions**
+* Enable **acks=all** for durable writes
+
+```java
+Properties producerProps = new Properties();
+producerProps.put("bootstrap.servers", "localhost:9092");
+producerProps.put("enable.idempotence", "true"); // <-- **1*
+producerProps.put("acks", all); // <--  *2*
+producerProps.put("transactional.id", "my-transactional-id"); // <-- *3**
+Producer<String, String> producer = new KafkaProducer<> ...
+
+producer.initTransactions(); // <-- *4*
+try
+{
+    producer.beginTransaction(); // <-- *5* begin atomic batch
+
+    // send a bunch of messages
+    producer.send(record1);   // <-- *6*
+    producer.send(record2);
+    producer.send(record3);
+
+    producer.commitTransaction(); // <-- *7* commit batch
+}
+catch (ProducerFencedException | OutOfOrderSequenceException | AuthorizationException e) {
+     // We can't recover from these exceptions, so our only option is to close the producer and exit.
+     producer.close();
+} catch (KafkaException e) {
+     // For all other exceptions, just abort the transaction and try again.
+     producer.abortTransaction(); // <-- *8*
+}
+producer.close();
+```
+
+---
+
+## Exactly Once - Consumer
+
+* Finally, in order for transactional guarantees to be realized from end-to-end, the consumers must be configured to read only committed messages as well
+
+* **`isolation.level="read_committed"`**
+
+* This Controls how to read messages written transactionally. If set to **read_committed**, consumer.poll() will only return transactional messages which have been committed. 
+
+* If set to **read_uncommitted** (the default), consumer.poll() will return all messages, even transactional messages which have been aborted. Non-transactional messages will be returned unconditionally in either mode.
+
+```java
+Properties consumerProps = new Properties();
+consumerProps.put("bootstrap.servers", "localhost:9092");
+consumerProps.put("group.id", "my-group-id");
+consumerProps.put("enable.auto.commit", "false");
+consumerProps.put("isolation.level", "read_committed"); // <-- *1*
+
+KafkaConsumer<String, String> consumer = new KafkaConsumer<>(consumerProps);
+consumer.subscribe(singleton("topic1"));
+
+```
+
+---
+
+## Lab : Consumer Commits
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:** Try different commit methods in Consumers
+    - At-most once, At-least once
+
+* **Builds on previous labs:** lab 3
+
+* **Approximate Time:** 20 - 30 mins
+
+* **Instructions:**
+    - Please follow lab 5.1
+
+* **To Instructor:**
+
+Notes:
 
 ---
 
@@ -1493,100 +1613,97 @@ https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up
 
 ---
 
-## Lab 5: Jumping Offsets
+## Lab: Seeking to Offsets
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- *  **Overview:** Seek and read various offsets in  a partition
+*  **Overview:** Seek and read various offsets in  a partition
 
- *  **Builds on previous labs:**
+*  **Builds on previous labs:**
 
- *  **Approximate Time:** 20 - 30 mins
+*  **Approximate Time:** 20 - 30 mins
 
- *  **Instructions:**
+*  **Instructions:**
+     - Please follow: lab 5.2
 
-     - Please follow: lab 5
-
- *  **To Instructor:**
+*  **To Instructor:**
 
 
 Notes:
 
 ---
-
-
 
 # Kafka & Spark
 
 ---
 
-
 ## Lambda Streaming Architecture
 
-
- * Spark Streaming process the data and saves it two places
-
-     - Master data store for batch queries
-
-     - Real-time data store for interactive queries
+* Spark and Kafka are a popular pair in Lambda architecture
 
 <img src="../../assets/images/streaming/Lambda-Architecture-2.png" alt="Lambda-Architecture-2.png" style="width:80%;"/><!-- {"left" : 0.82, "top" : 2.82, "height" : 1.97, "width" : 8.61} -->
 
 
-
- *  *Source:*  *http://lambda-architecture.net/*
+*  *Source:*  *http://lambda-architecture.net/*
 
 Notes:
 
+
+---
+
+## Spark and Kafka
+
+<img src="../../assets/images/kafka/kafka-spark-distributed-processing-1.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Spark is a distributed platform
+    - It will run applications as multiple parallel tasks
+    - Spark will also handle any failures (task failure, or node failure)
+
+* Here we see two clusters - Spark cluster and Kafka cluster
+
+* As far as Kafka is concerned, Spark application will behave like a regular client (either Producer or Consumer)
 
 ---
 
 ## Kafka Structured Streaming Example
 
-
 ```java
-val s1 = spark.
-          readStream.
-          format("kafka").
-          option("kafka.bootstrap.servers",
-                 "localhost:8082,host2:port2").
-          option("subscribe", "topic1,topic2").
-          load()
+// Subscribe to 1 topic
+Dataset<Row> df = spark
+  .readStream()
+  .format("kafka")
+  .option("kafka.bootstrap.servers", "host1:port1,host2:port2")
+  .option("subscribe", "topic1")
+  .load();
+df.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)");
 
-...
+// once a dataframe is established, we can query it
+df.count();
 
-
+filtered = df.filter (df['value'].contains("some-string-pattern"));
 ```
 <!-- {"left" : 0, "top" : 1.78, "height" : 3.13, "width" : 10.25} -->
 
-
+* References
+    - [Spark examples](https://github.com/apache/spark/tree/master/examples)
 
 Notes:
 
-Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/streaming/DirectKafkaWordCount.scala
-
-
-
 ---
 
-# Streaming Workshop
+## Lab: Analyzing Clickstream Data
 
----
+* We are going to be analyzing Clickstream data
 
-
-## Analyzing Clickstream Data
-
-
- * We are going to be analyzing Clickstream data
-
-```java
+```json
 { "timestamp" :1451635200055,
 "session":"session_57" ,
 "domain":"twitter.com" ,
 "cost":24,
 "user":"user_31",
 "campaign": "campaign_1",
-"ip":"ip_64","action":
-"blocked" }
+"ip":"ip_64",
+"action": "blocked" }
 ```
 <!-- {"left" : 0, "top" : 1.9, "height" : 1.98, "width" : 4.79} -->
 
@@ -1601,12 +1718,11 @@ Taken with thanks from: https://github.com/apache/spark/blob/master/examples/src
 Notes:
 
 
-
-
 ---
 
-## Lab 6: Clickstream Lab
+## Lab: Clickstream Lab
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
  *  **Overview:** Process clickstream data
 
@@ -1630,6 +1746,8 @@ Notes:
 
 ## Review Questions
 
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
 * How would you ensure that a message has been written durably in your Producer?
 
@@ -1647,10 +1765,3 @@ Notes:
 
 
 
-
----
-
-## Lesson Summary
-
-
-Notes:

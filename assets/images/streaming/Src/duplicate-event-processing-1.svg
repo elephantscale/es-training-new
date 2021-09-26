@@ -1,14 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="355 689 1579 1463" width="1579" height="1463">
-  <defs>
-    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
-      <font-face-src>
-        <font-face-name name="CenturyGothic-Bold"/>
-      </font-face-src>
-    </font-face>
-  </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-23 18:02:56 +0000</metadata>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="355 689 1579 1463" width="1579" height="1463" xmlns="http://www.w3.org/2000/svg">
   <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
@@ -66,67 +57,62 @@
         <path d="M 894.57 2039.4396 L 894.57 2039.4396 L 1389.9349 2039.4396 L 1389.9349 2059.4396 L 1436.57 2039.4396 L 1389.9349 2019.4396 L 1389.9349 2039.4396 Z" stroke="#1a00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_84">
-        <text transform="translate(782 694)" fill="#250060">
+        <text transform="translate(782 694)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Scenario-1: Duplicate records created</tspan>
         </text>
       </g>
       <g id="Graphic_85">
-        <text transform="translate(1027.069 912.5)" fill="#250060">
+        <text transform="translate(1027.069 912.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="74.01123" y="50">Insert</tspan>
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">new record</tspan>
         </text>
       </g>
       <g id="Graphic_86">
-        <text transform="translate(1027.069 1175.5)" fill="#250060">
+        <text transform="translate(1027.069 1175.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="74.01123" y="50">Insert</tspan>
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">new record</tspan>
         </text>
       </g>
-      <g id="Graphic_87">
-        <text transform="translate(1027.069 1690)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="74.01123" y="50">Insert</tspan>
-          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">new record</tspan>
-        </text>
+      <g id="Graphic_87" transform="matrix(1, 0, 0, 1, -25, 0)">
+        <text transform="translate(1027.069 1690)" fill="#250060" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="74.01123" y="50">Upsert</tspan><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">new record</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
-      <g id="Graphic_89">
-        <text transform="translate(1090.57 1971.25)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Upsert</tspan>
-        </text>
+      <g id="Graphic_89" transform="matrix(1, 0, 0, 1, -37, 0)">
+        <text transform="translate(1090.57 1971.25)" fill="#250060" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">  Upsert <tspan x="0" dy="1em">​</tspan>no change</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_90">
-        <text transform="translate(1689.4922 1803.75)" fill="#250060">
+        <text transform="translate(1689.4922 1803.75)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">db</tspan>
         </text>
       </g>
       <g id="Graphic_91">
-        <text transform="translate(1677 991.125)" fill="#250060">
+        <text transform="translate(1677 991.125)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">db</tspan>
         </text>
       </g>
       <g id="Graphic_92">
-        <text transform="translate(473.49756 943)" fill="#250060">
+        <text transform="translate(473.49756 943)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Event-1</tspan>
         </text>
       </g>
       <g id="Graphic_93">
-        <text transform="translate(473.49756 1175.5)" fill="#250060">
+        <text transform="translate(473.49756 1175.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Event-1</tspan>
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="6.994629" y="111">(dupe)</tspan>
         </text>
       </g>
       <g id="Graphic_95">
-        <text transform="translate(473.49756 1720.5)" fill="#250060">
+        <text transform="translate(473.49756 1720.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Event-1</tspan>
         </text>
       </g>
       <g id="Graphic_94">
-        <text transform="translate(473.49756 1978.4396)" fill="#250060">
+        <text transform="translate(473.49756 1978.4396)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Event-1</tspan>
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="6.994629" y="111">(dupe)</tspan>
         </text>
       </g>
       <g id="Graphic_96">
-        <text transform="translate(660.0768 1504)" fill="#250060">
+        <text transform="translate(660.0768 1504)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Scenario-2: No Duplicate records created</tspan>
         </text>
       </g>
