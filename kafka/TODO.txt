@@ -9,3 +9,11 @@ https://docs.google.com/presentation/d/1EKaG1NyKZgXQMgBwwv8t1D5CjPK9LhTy8Mr1LZU3
 	- https://docs.google.com/presentation/d/1izkxwbfNj9_gItKvxhOOOobvC0bqUIHNxhqnVkUxYRk/edit#slide=id.p6
 
 - add compression diagram in compression slides
+
+
+- kafka streams filter example with full function
+https://betterprogramming.pub/learn-stream-processing-with-kafka-streams-stateless-operations-2111080e6c53
+
+- add this
+https://docs.confluent.io/platform/current/kafka/deployment.html
+linkedin cluster
