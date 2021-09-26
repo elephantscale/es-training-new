@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="3733 1640 1208 700" width="1208" height="700">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-26 12:39:19 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="3733" y="1640" width="1208" height="700"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3332">
+        <path d="M 3758 1645 L 4916 1645 C 4927.0457 1645 4936 1653.9543 4936 1665 L 4936 2315 C 4936 2326.0457 4927.0457 2335 4916 2335 L 3758 2335 C 3746.9543 2335 3738 2326.0457 3738 2315 L 3738 1665 C 3738 1653.9543 3746.9543 1645 3758 1645 Z" fill="white"/>
+        <path d="M 3758 1645 L 4916 1645 C 4927.0457 1645 4936 1653.9543 4936 1665 L 4936 2315 C 4936 2326.0457 4927.0457 2335 4916 2335 L 3758 2335 C 3746.9543 2335 3738 2326.0457 3738 2315 L 3738 1665 C 3738 1653.9543 3746.9543 1645 3758 1645 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18.0,18.0" stroke-width="9"/>
+      </g>
+      <g id="Graphic_3334">
+        <path d="M 3806.5 1873 L 4108.5 1873 C 4111.8137 1873 4114.5 1875.6863 4114.5 1879 L 4114.5 2274.3 C 4114.5 2277.6137 4111.8137 2280.3 4108.5 2280.3 L 3806.5 2280.3 C 3803.1863 2280.3 3800.5 2277.6137 3800.5 2274.3 L 3800.5 1879 C 3800.5 1875.6863 3803.1863 1873 3806.5 1873 Z" fill="#aa97fe"/>
+        <path d="M 3806.5 1873 L 4108.5 1873 C 4111.8137 1873 4114.5 1875.6863 4114.5 1879 L 4114.5 2274.3 C 4114.5 2277.6137 4111.8137 2280.3 4108.5 2280.3 L 3806.5 2280.3 C 3803.1863 2280.3 3800.5 2277.6137 3800.5 2274.3 L 3800.5 1879 C 3800.5 1875.6863 3803.1863 1873 3806.5 1873 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3336">
+        <path d="M 4186 1873 L 4488 1873 C 4491.3137 1873 4494 1875.6863 4494 1879 L 4494 2274.3 C 4494 2277.6137 4491.3137 2280.3 4488 2280.3 L 4186 2280.3 C 4182.6863 2280.3 4180 2277.6137 4180 2274.3 L 4180 1879 C 4180 1875.6863 4182.6863 1873 4186 1873 Z" fill="#e3a92e"/>
+        <path d="M 4186 1873 L 4488 1873 C 4491.3137 1873 4494 1875.6863 4494 1879 L 4494 2274.3 C 4494 2277.6137 4491.3137 2280.3 4488 2280.3 L 4186 2280.3 C 4182.6863 2280.3 4180 2277.6137 4180 2274.3 L 4180 1879 C 4180 1875.6863 4182.6863 1873 4186 1873 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3337">
+        <path d="M 4565.5 1873 L 4867.5 1873 C 4870.8137 1873 4873.5 1875.6863 4873.5 1879 L 4873.5 2274.3 C 4873.5 2277.6137 4870.8137 2280.3 4867.5 2280.3 L 4565.5 2280.3 C 4562.1863 2280.3 4559.5 2277.6137 4559.5 2274.3 L 4559.5 1879 C 4559.5 1875.6863 4562.1863 1873 4565.5 1873 Z" fill="#a4f8fd"/>
+        <path d="M 4565.5 1873 L 4867.5 1873 C 4870.8137 1873 4873.5 1875.6863 4873.5 1879 L 4873.5 2274.3 C 4873.5 2277.6137 4870.8137 2280.3 4867.5 2280.3 L 4565.5 2280.3 C 4562.1863 2280.3 4559.5 2277.6137 4559.5 2274.3 L 4559.5 1879 C 4559.5 1875.6863 4562.1863 1873 4565.5 1873 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3338">
+        <text transform="translate(4110.5107 1676)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Kubernetes Cluster</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3339">
+        <text transform="translate(3889.1016 2046.15)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Default</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3340">
+        <text transform="translate(4209.793 2046.15)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Kube-System</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3341">
+        <text transform="translate(4598.8926 2052.15)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Kube-Public</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
