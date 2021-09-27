@@ -1,0 +1,21 @@
+## to generate slides
+##     $    $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
+
+#day 1
+About-Python-Ansible.md
+PYTHON-Intro.md
+PYTHON-LanguageBasics.md
+PYTHON-Pandas.md
+PYTHON-OOP.md
+PYTHON-Packages.md
+PYTHON-File.md
+
+# Day 2
+
+PYTHON-Database.md
+PYTHON-Web.md
+PYTHON-Testing.md
+
+# Ansible
+$ES_HOME/es-training/ansible/slides/Ansible.pdf
+
