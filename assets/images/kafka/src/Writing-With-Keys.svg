@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-262 401 1385 523" width="1385" height="523">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="-262 401 1385 523" width="1385" height="523">
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#2d00af">
       <g>
@@ -13,8 +13,8 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 14:21:22 +0000</metadata>
-  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-29 09:29:53 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1" stroke-opacity="1">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
@@ -51,7 +51,7 @@
         <rect x="914.1469" y="503.4557" width="87.26232" height="57.319364" stroke="#2d00af" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
       </g>
       <g id="Graphic_30">
-        <path d="M -133.92893 562.0711 L -29.071068 666.9289 C -25.165825 670.8342 -25.165825 677.1658 -29.071068 681.0711 L -133.92893 785.9289 C -137.83418 789.8342 -144.16582 789.8342 -148.07107 785.9289 L -252.92893 681.0711 C -256.83418 677.1658 -256.83418 670.8342 -252.92893 666.9289 L -148.07107 562.0711 C -144.16582 558.1658 -137.83418 558.1658 -133.92893 562.0711 C -133.92893 562.0711 -133.92893 562.0711 -133.92893 562.0711 Z" fill="#ac97ff"/>
+        <path d="M -133.92893 562.0711 L -29.071068 666.9289 C -25.165825 670.8342 -25.165825 677.1658 -29.071068 681.0711 L -133.92893 785.9289 C -137.83418 789.8342 -144.16582 789.8342 -148.07107 785.9289 L -252.92893 681.0711 C -256.83418 677.1658 -256.83418 670.8342 -252.92893 666.9289 L -148.07107 562.0711 C -144.16582 558.1658 -137.83418 558.1658 -133.92893 562.0711 C -133.92893 562.0711 -133.92893 562.0711 -133.92893 562.0711 Z" fill="#8671ed"/>
         <path d="M -133.92893 562.0711 L -29.071068 666.9289 C -25.165825 670.8342 -25.165825 677.1658 -29.071068 681.0711 L -133.92893 785.9289 C -137.83418 789.8342 -144.16582 789.8342 -148.07107 785.9289 L -252.92893 681.0711 C -256.83418 677.1658 -256.83418 670.8342 -252.92893 666.9289 L -148.07107 562.0711 C -144.16582 558.1658 -137.83418 558.1658 -133.92893 562.0711 C -133.92893 562.0711 -133.92893 562.0711 -133.92893 562.0711 Z" stroke="#2d00af" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
       </g>
       <g id="Graphic_29">
@@ -211,8 +211,8 @@
         <path d="M 43 685.021 L 43 679.3661 C 43 678.8138 43.447715 678.3661 44 678.3661 L 73.89558 678.3661 C 74.44786 678.3661 74.89558 677.9184 74.89558 677.3661 L 74.89558 670.74645 C 74.89558 670.1942 75.343295 669.74645 75.89558 669.74645 C 76.03831 669.74645 76.17939 669.777 76.30933 669.8361 L 101.49683 681.28316 C 101.99963 681.5117 102.22198 682.1045 101.99347 682.6073 C 101.89342 682.82745 101.71698 683.0039 101.49683 683.1039 L 76.30933 694.551 C 75.80653 694.77954 75.2137 694.5572 74.98519 694.0544 C 74.92613 693.92445 74.89558 693.7834 74.89558 693.64064 L 74.89558 687.021 C 74.89558 686.4687 74.44786 686.021 73.89558 686.021 L 44 686.021 C 43.447715 686.021 43 685.5733 43 685.021 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
       </g>
       <g id="Graphic_49">
-        <text transform="translate(20.023926 703.60215)" fill="#8a4a33">
-          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#8a4a33" x="0" y="35">Y       z2</tspan>
+        <text transform="translate(17.921875 703.60215)" fill="#8a4a33">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#8a4a33" x="0" y="35">Y       y2</tspan>
         </text>
       </g>
       <g id="Graphic_48">
