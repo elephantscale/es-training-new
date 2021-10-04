@@ -108,6 +108,8 @@ Notes:
 
 ## Kafka Hardware - Disks
 
+<img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:50%;float:right;clear:both;"/><!-- {"left" : 5.41, "top" : 7.16, "height" : 1.61, "width" : 3.19} -->
+
  * More disks increase IO throughput
  * Don't share Kafka disks with OS disk (minimize contention)
  * Disks can be combined by RAID or used as individual volumes
@@ -122,7 +124,6 @@ Notes:
    They are usually slower, exhibit high latencies, and single point of failure
 
 
-<img src="../../assets/images/kafka/Disks-Setup-01.png" style="width:20%;"/><!-- {"left" : 1.53, "top" : 7.17, "height" : 1.52, "width" : 3.01} --> &nbsp;  &nbsp; <img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:20%;"/><!-- {"left" : 5.41, "top" : 7.16, "height" : 1.61, "width" : 3.19} -->
 
 
 

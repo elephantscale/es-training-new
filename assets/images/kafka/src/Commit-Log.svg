@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="40 -102 814 903" width="814" height="903">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 14:10:08 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 71.98593 -100 L 822.0141 -100 C 838.5826 -100 852.0141 -86.56854 852.0141 -70 L 852.0141 685 C 852.0141 701.56854 838.5826 715 822.0141 715 L 71.98593 715 C 55.417386 715 41.98593 701.56854 41.98593 685 L 41.98593 -70 C 41.98593 -86.56854 55.417386 -100 71.98593 -100 Z" fill="#ecdea4"/>
+        <path d="M 71.98593 -100 L 822.0141 -100 C 838.5826 -100 852.0141 -86.56854 852.0141 -70 L 852.0141 685 C 852.0141 701.56854 838.5826 715 822.0141 715 L 71.98593 715 C 55.417386 715 41.98593 701.56854 41.98593 685 L 41.98593 -70 C 41.98593 -86.56854 55.417386 -100 71.98593 -100 Z" stroke="#10008a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Group_15">
+        <g id="Graphic_10">
+          <rect x="165.5" y="174.55793" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="174.55793" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_9">
+          <rect x="165.5" y="53" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="53" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_8">
+          <rect x="165.5" y="113.51585" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="113.51585" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_7">
+          <rect x="165.5" y="235.6" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="235.6" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_6">
+          <rect x="165.5" y="296.64207" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="296.64207" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_5">
+          <rect x="165.5" y="357.68415" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="357.68415" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_14">
+          <rect x="165.5" y="418.2" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="418.2" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_13">
+          <rect x="165.5" y="479.2421" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="479.2421" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_12">
+          <rect x="165.5" y="540.28415" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="540.28415" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_11">
+          <rect x="165.5" y="601.3262" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="165.5" y="601.3262" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_16">
+        <g id="Graphic_26">
+          <rect x="569.5" y="174.55793" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="174.55793" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_25">
+          <rect x="569.5" y="53" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="53" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_24">
+          <rect x="569.5" y="113.51585" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="113.51585" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_23">
+          <rect x="569.5" y="235.6" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="235.6" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_22">
+          <rect x="569.5" y="296.64207" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="296.64207" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_21">
+          <rect x="569.5" y="357.68415" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="357.68415" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_20">
+          <rect x="569.5" y="418.2" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="418.2" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_19">
+          <rect x="569.5" y="479.2421" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="479.2421" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_18">
+          <rect x="569.5" y="540.28415" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="540.28415" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_17">
+          <rect x="569.5" y="601.3262" width="159" height="60.51585" fill="#ac97ff"/>
+          <rect x="569.5" y="601.3262" width="159" height="60.51585" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_48">
+        <g id="Graphic_27">
+          <ellipse cx="649.75" cy="84.25793" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="649.75" cy="84.25793" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_29">
+          <ellipse cx="650.75" cy="147.25793" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="650.75" cy="147.25793" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_30">
+          <ellipse cx="651.75" cy="209.25793" rx="31.7500507333853" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="651.75" cy="209.25793" rx="31.7500507333853" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_31">
+          <ellipse cx="650.75" cy="270.30554" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="650.75" cy="270.30554" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_32">
+          <ellipse cx="649.75" cy="331.35316" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="649.75" cy="331.35316" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_33">
+          <ellipse cx="649" cy="391.4484" rx="31.7500507333853" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="649" cy="391.4484" rx="31.7500507333853" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_34">
+          <ellipse cx="649" cy="452.496" rx="31.7500507333853" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="649" cy="452.496" rx="31.7500507333853" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_35">
+          <ellipse cx="649" cy="512.23126" rx="31.7500507333853" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="649" cy="512.23126" rx="31.7500507333853" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_36">
+          <ellipse cx="649" cy="574.74444" rx="31.7500507333853" ry="25.2579654317326" fill="#d89e2b"/>
+          <ellipse cx="649" cy="574.74444" rx="31.7500507333853" ry="25.2579654317326" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_37">
+          <ellipse cx="649" cy="636.2878" rx="31.7500507333853" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="649" cy="636.2878" rx="31.7500507333853" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_38">
+          <text transform="translate(636.2515 65.257925)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_39">
+          <text transform="translate(637.2515 128.25793)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_40">
+          <text transform="translate(638.2515 190.25793)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_41">
+          <text transform="translate(637.2515 251.30554)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_42">
+          <text transform="translate(636.2515 312.35316)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_43">
+          <text transform="translate(635.5015 372.4484)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_44">
+          <text transform="translate(635.5015 433.496)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_45">
+          <text transform="translate(635.5015 493.23126)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_46">
+          <text transform="translate(635.5015 555.74444)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_47">
+          <text transform="translate(635.5015 617.2878)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_49">
+        <g id="Graphic_69">
+          <ellipse cx="244.375" cy="84.25793" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="244.375" cy="84.25793" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_68">
+          <ellipse cx="245.375" cy="147.25793" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="245.375" cy="147.25793" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_67">
+          <ellipse cx="246.375" cy="209.25793" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="246.375" cy="209.25793" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_66">
+          <ellipse cx="245.375" cy="270.30554" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="245.375" cy="270.30554" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_65">
+          <ellipse cx="244.375" cy="331.35316" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="244.375" cy="331.35316" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_64">
+          <ellipse cx="243.625" cy="391.4484" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="243.625" cy="391.4484" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_63">
+          <ellipse cx="243.625" cy="452.496" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="243.625" cy="452.496" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_62">
+          <ellipse cx="243.625" cy="512.23126" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="243.625" cy="512.23126" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_61">
+          <ellipse cx="243.625" cy="574.74444" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="243.625" cy="574.74444" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_60">
+          <ellipse cx="243.625" cy="636.2878" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+          <ellipse cx="243.625" cy="636.2878" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_59">
+          <text transform="translate(230.87646 65.257925)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_58">
+          <text transform="translate(231.87646 128.25793)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_57">
+          <text transform="translate(232.87646 190.25793)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_56">
+          <text transform="translate(231.87646 251.30554)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_55">
+          <text transform="translate(230.87646 312.35316)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_54">
+          <text transform="translate(230.12646 372.4484)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_53">
+          <text transform="translate(230.12646 433.496)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_52">
+          <text transform="translate(230.12646 493.23126)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_51">
+          <text transform="translate(230.12646 555.74444)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+        <g id="Graphic_50">
+          <text transform="translate(230.12646 617.2878)" fill="#050088">
+            <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_71">
+        <ellipse cx="350.75" cy="774" rx="31.7500507333852" ry="25.2579654317325" fill="#d89e2b"/>
+        <ellipse cx="350.75" cy="774" rx="31.7500507333852" ry="25.2579654317325" stroke="#22007b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_70">
+        <text transform="translate(337.25146 755)" fill="#050088">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="30">M</tspan>
+        </text>
+      </g>
+      <g id="Graphic_72">
+        <text transform="translate(174.51172 -34)" fill="#050088">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="9.294434" y="30">Topic A/</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="67">Partition 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <text transform="translate(578.5117 -34)" fill="#050088">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="9.294434" y="30">Topic A/</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#050088" x="0" y="67">Partition 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <text transform="translate(347.09766 -91)" fill="#0038b0">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#0038b0" x="0" y="30">Broker (node)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <text transform="translate(415.1428 752)" fill="#0038b0">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#0038b0" x="0" y="35">message</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

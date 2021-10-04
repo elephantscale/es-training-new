@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-65 402 1105 121" width="1105" height="121">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 14:05:04 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M -56 403 L 342.69136 403 C 347.10964 403 350.69136 406.5817 350.69136 411 L 350.69136 514 C 350.69136 518.4183 347.10964 522 342.69136 522 L -56 522 C -60.41828 522 -64 518.4183 -64 514 L -64 411 C -64 406.5817 -60.41828 403 -56 403 Z" fill="#ac97ff"/>
+        <path d="M -56 403 L 342.69136 403 C 347.10964 403 350.69136 406.5817 350.69136 411 L 350.69136 514 C 350.69136 518.4183 347.10964 522 342.69136 522 L -56 522 C -60.41828 522 -64 518.4183 -64 514 L -64 411 C -64 406.5817 -60.41828 403 -56 403 Z" stroke="#230088" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 420.16975 483.88566 L 420.16975 441.11434 C 420.16975 440.00977 421.0652 439.11434 422.16975 439.11434 L 518.07243 439.11434 C 519.177 439.11434 520.07243 438.2189 520.07243 437.11434 L 520.07243 425.44883 C 520.07243 424.34426 520.96786 423.44883 522.07243 423.44883 C 522.6684 423.44883 523.2333 423.7146 523.61325 424.1737 L 554.275 461.2249 C 554.8873 461.9647 554.8873 463.0353 554.275 463.7751 L 523.61325 500.8263 C 522.909 501.67725 521.6483 501.7962 520.7973 501.092 C 520.3382 500.71204 520.07243 500.1471 520.07243 499.5512 L 520.07243 487.88566 C 520.07243 486.7811 519.177 485.88566 518.07243 485.88566 L 422.16975 485.88566 C 421.0652 485.88566 420.16975 484.9902 420.16975 483.88566 Z" fill="#ecdea4"/>
+        <path d="M 420.16975 483.88566 L 420.16975 441.11434 C 420.16975 440.00977 421.0652 439.11434 422.16975 439.11434 L 518.07243 439.11434 C 519.177 439.11434 520.07243 438.2189 520.07243 437.11434 L 520.07243 425.44883 C 520.07243 424.34426 520.96786 423.44883 522.07243 423.44883 C 522.6684 423.44883 523.2333 423.7146 523.61325 424.1737 L 554.275 461.2249 C 554.8873 461.9647 554.8873 463.0353 554.275 463.7751 L 523.61325 500.8263 C 522.909 501.67725 521.6483 501.7962 520.7973 501.092 C 520.3382 500.71204 520.07243 500.1471 520.07243 499.5512 L 520.07243 487.88566 C 520.07243 486.7811 519.177 485.88566 518.07243 485.88566 L 422.16975 485.88566 C 421.0652 485.88566 420.16975 484.9902 420.16975 483.88566 Z" stroke="#230088" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(-38.44143 425.5)" fill="#160080">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#160080" x="0" y="30">KStream &lt;String, Integer&gt;</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#160080" x="86.08887" y="67">actionstream</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(434.199 440.5)" fill="#160080">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#160080" x="0" y="35">Group</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <path d="M 632.80864 403 L 1031.5 403 C 1035.9183 403 1039.5 406.5817 1039.5 411 L 1039.5 514 C 1039.5 518.4183 1035.9183 522 1031.5 522 L 632.80864 522 C 628.3904 522 624.80864 518.4183 624.80864 514 L 624.80864 411 C 624.80864 406.5817 628.3904 403 632.80864 403 Z" fill="#ac97ff"/>
+        <path d="M 632.80864 403 L 1031.5 403 C 1035.9183 403 1039.5 406.5817 1039.5 411 L 1039.5 514 C 1039.5 518.4183 1035.9183 522 1031.5 522 L 632.80864 522 C 628.3904 522 624.80864 518.4183 624.80864 514 L 624.80864 411 C 624.80864 406.5817 628.3904 403 632.80864 403 Z" stroke="#230088" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(650.3672 425.5)" fill="#160080">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#160080" x="0" y="30">KStream &lt;String, Integer&gt;</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#160080" x="20.983887" y="67">groupedActionStream</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -179,13 +179,13 @@ Notes:
 
 |                                      | Python 2                                                             | Python 3                                                                                 |
 |----------------------------------    |----------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| print semantics      (important)     | Statement print x # no parenthesis                                   | Built-in function: print(x) #note parenthesis                                            |
+| print semantics      (important)     | Statement print x # no parenthesis                                   | Built-in function: print(x) note parenthesis                                             |
 | input vs raw_input() (important)     | input() evaluates input as code. `raw_input` returns data as `str`   | input() returns data as `str`; There is no `raw_input`.                                  |
 | reduce                               | Statement                                                            | Built-in function in functools namespace                                                 |
 | Annotations                          | Specified annotation only                                            | User-defined annotations                                                                 |
 | Unicode                              | separate `str` (ascii) vs  `unicode` types                           | All strings are internally stored as Unicode                                             |
-| Integer Division,    (important)     | `5 / 2` is `2`                                                       | `5 / 2` is `2.5` # int to float auto-conversion                                          |
-|                                      |                                                                      | `5 // 2` is `2`  # note the // for integer division                                      |
+| Integer Division,    (important)     | `5 / 2` is `2`                                                       | `5 / 2` is `2.5`  int to float auto-conversion                                           |
+|                                      |                                                                      | `5 // 2` is `2`   note the // for integer division                                       |
 
 
 <!-- {"left" : 0.25, "top" : 1.24, "height" : 5.03, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->

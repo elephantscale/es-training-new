@@ -24,34 +24,19 @@ Notes:
 
 ---
 
-
-## A Reference Architecture For Hadoop
-
-<img src="../../assets/images/kafka/A-Reference-Architecture-For-Hadoop.png" alt="A-Reference-Architecture-For-Hadoop.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.34, "width" : 8.21} -->
-
-
-
-Notes:
-
-Image credit: Hortonworks.com
-
-
----
-
 ## Hadoop
 
+<img src="../../assets/images/kafka/A-Reference-Architecture-For-Hadoop.png"  style="width:60%;float:right;"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.34, "width" : 8.21} -->
 
- * Hadoop is designed as a **single destination silo**
+* Hadoop is designed as a **single destination silo**
 
- * Data comes into Hadoop from various sources
+* Data comes into Hadoop from various sources
 
- * Analytics is performed within Hadoop cluster
+* Analytics is performed within Hadoop cluster
 
- * Results may be exported to other systems
+* Results may be exported to other systems
 
 Notes:
-
-
 
 
 ---
@@ -60,13 +45,11 @@ Notes:
 
 <img src="../../assets/images/kafka/Outgrowing-Hadoop-2.png" alt="Outgrowing-Hadoop-2.png" style="max-width:50%;float:right;"/><!-- {"left" : 5.61, "top" : 3.25, "height" : 2.57, "width" : 4.17} -->
 
- * Hadoop cannot do real time processing.  
- Reacting to events in 'real time' (milliseconds to seconds)
-     - We need another system for that
+* Hadoop cannot do real time processing.  
 
- * Hadoop is not meant as a 'data router'
-     - Hadoop gets data in 'batches'
-     - Not designed for 'fast data movement' (millions events / sec).
+* Hadoop gets data in 'batches'
+
+* Not designed for 'fast data movement' (millions events / sec).
 
 
 
@@ -103,14 +86,15 @@ Notes:
 
 ## Messaging / Queuing Systems
 
-
  * **MQ (RabbitMQ / ActiveMQ)**
      - JMS (Java Messaging System) based
      - Used as enterprise message bus
      - Guarantee message delivery with acknowledgements
      - Usually not 'high' throughput
+
  * **Amazon Kinesis**
      - Fully managed queue system within Amazon Cloud (AWS)
+
  * **Kafka**
      - Designed for massive throughput
      - (more in the next section)
@@ -191,15 +175,16 @@ Notes:
 
 ## Kafka Timeline
 
-| year       | version | description                                                                                                          |
-|------------|---------|----------------------------------------------------------------------------------------------------------------------|
-| 2011 |         | Open sourced                                                                                                         |
-| 2012 Oct    |         | Apache incubator                                                                                                     |
-| 2015  | 0.9     | - Security (Kerberos, encryption),<br/>- Kafka connect: connect other systems to Kafka,<br/>- Quotas (multi tenancy) |
-| 2016       | 0.10    | - Producers for Unit testing                                                                                         |
-| 2017       | 0.11    | - Exactly once delivery                                                                                              |
-| 2017 Oct   | 1.0     |                                                                                                                      |
-| 2018 Jul   | 2.0     |&nbsp;|                                                                                                                      |
+| year      | version | description                                                                                                  |
+|-----------|---------|--------------------------------------------------------------------------------------------------------------|
+| 2011      |         | Open sourced                                                                                                 |
+| 2012 Oct  |         | Apache incubator                                                                                             |
+| 2015      | 0.9     | - Security (Kerberos, encryption), - Kafka connect: connect other systems to Kafka, - Quotas (multi tenancy) |
+| 2016      | 0.10    | - Producers for Unit testing                                                                                 |
+| 2017      | 0.11    | - Exactly once delivery                                                                                      |
+| 2017 Oct  | 1.0     |                                                                                                              |
+| 2018 Jul  | 2.0     |                                                                                                              |
+| 2021 Sept | 3.0     |                                                                                                              |
 
 <!-- {"left" : 0.25, "top" : 1.13, "height" : 5.06, "width" : 9.75} -->
 
@@ -1003,7 +988,7 @@ Notes:
 
 ---
 
-# Producing / Consuming Messages
+# Producing Messages
 
 ---
 
@@ -1098,6 +1083,7 @@ Notes:
 
 ## Batching of Messages
 
+<img src="../../assets/images/kafka/batch-send-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.9, "top" : 1.17, "height" : 2.23, "width" : 4.28} -->
 
  * If each individual message is written to Kafka, this will increase network round trips.
      - Increased latency
@@ -1112,6 +1098,10 @@ Notes:
      - But it will take longer for individual messages to propagate
 
 Notes:
+
+---
+
+# Consuming Messages
 
 ---
 
@@ -1382,26 +1372,46 @@ Notes:
 
 ---
 
+## Log Compaction
+
+<img src="../../assets/images/kafka/3rd-party/doordash-1.jpg" style="width:30%;float:right;"/>
+
+* For some applications, we only need the **latest value for a key**
+    - For example, ride-sharing and delivery apps, show latest location of driver
+
+* **Log compaction** will merge the logs and calculate the latest value for key
+
+
+---
 
 ## Log Compaction
 
-<img src="../../assets/images/kafka/Log-Compaction-02.png" alt="Log-Compaction-02.png" style="width:50%;float:right;"/><!-- {"left" : 5.53, "top" : 1.07, "height" : 3.53, "width" : 4.64} -->
+* Here is some sample data in `location` topic; As the drivers are moving, their location is updated every few seconds
 
- * Retains latest value of every key in the log.
+<br />
 
- * Used in scenarios where only latest value is needed
+| offset | time | key      | value       |
+|--------|------|----------|-------------|
+| 0      | 10   | driver-1 | location-1a |
+| 1      | 20   | driver-1 | location-1b |
+| 2      | 30   | driver-2 | location-2a |
+| 3      | 40   | driver-1 | location-1c |
+| 4      | 50   | driver-2 | location-2b |
 
- * For example, the changes to a database table
-
- *  See the diagram on right   
- original data (before compaction) on top, after compaction at the bottom
+<br />
 
 
+* Here is the compacted log, that only retains the latest value for a key
+
+<br />
+
+| offset | time | key      | value       |
+|--------|------|----------|-------------|
+| 3      | 40   | driver-1 | location-1c |
+| 4      | 50   | driver-2 | location-2b |
 
 
 Notes:
-
-Key 1 @ 00:19 and key 6 @ 01:17 are retended.
 
 
 ---

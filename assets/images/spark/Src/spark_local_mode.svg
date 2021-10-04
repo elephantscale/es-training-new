@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="118.56317 568.5 906.957 575" width="906.957" height="575">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="118.56317 568.5 906.957 575" width="906.957" height="575">
   <defs>
-    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-91.79688" underline-thickness="89.84375" slope="0" x-height="538.08594" cap-height="727.0508" ascent="1005.8594" descent="-220.21484" font-weight="700">
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
       <font-face-src>
         <font-face-name name="CenturyGothic-Bold"/>
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2020-02-22 11:30:00 +0000</dc:date>
-  </metadata>
-  <g id="spark_local_mode" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1">
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-24 11:36:15 +0000</metadata>
+  <g id="spark_local_mode" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
     <title>spark local mode </title>
-    <g id="spark_local_mode: Layer 1">
+    <g id="spark_local_mode_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_6">
         <path d="M 596.02016 570 L 1020.0202 570 C 1022.2293 570 1024.0202 571.79086 1024.0202 574 L 1024.0202 1138 C 1024.0202 1140.2091 1022.2293 1142 1020.0202 1142 L 596.02016 1142 C 593.811 1142 592.02016 1140.2091 592.02016 1138 L 592.02016 574 C 592.02016 571.79086 593.811 570 596.02016 570 Z" fill="#ecdda4"/>
@@ -24,7 +22,7 @@
         <path d="M 515.061 799.4141 C 515.061 773.1506 510.04455 769.9013 473.4006 743.9095 L 473.0135 743.6406 C 436.176 717.3771 435.79286 717.3771 397.9876 717.3771 C 347.6491 717.3771 120.06317 717.3771 120.06317 717.3771 L 120.06317 990.6229 C 120.06317 992.8321 121.85403 994.6229 124.06317 994.6229 L 511.061 994.6229 C 513.27017 994.6229 515.061 992.8321 515.061 990.6229 L 515.061 799.4141 Z M 515.061 798.0612 C 515.061 773.1506 514.6739 773.1506 435.79286 773.1506 L 435.79286 773.1506 C 435.79286 717.6488 435.79286 717.3771 400.3023 717.3771" stroke="#190080" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
       </g>
     </g>
-    <g id="spark_local_mode: texts">
+    <g id="spark_local_mode_texts">
       <title>texts</title>
       <g id="Graphic_4">
         <text transform="translate(250.36972 819.5)" fill="#1b0070">

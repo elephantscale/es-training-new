@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="50 137 1188 163" width="1188" height="163">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-68.8" y="120.7">
+      <feOffset in="SourceAlpha" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".15" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff9f4"/>
+      <stop offset="1" stop-color="#00b544"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(736.5 137) rotate(90) scale(115)"/>
+    <font-face font-family="Helvetica Neue" font-size="29" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c0c0ff"/>
+      <stop offset="1" stop-color="white"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient_2" gradientTransform="translate(335 146.5) rotate(90) scale(85)"/>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_2" gradientTransform="translate(525 146.5) rotate(90) scale(85)"/>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_2" gradientTransform="translate(715 146.5) rotate(90) scale(85)"/>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient_2" gradientTransform="translate(909.6397 146.5) rotate(90) scale(85)"/>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient_2" gradientTransform="translate(1119 144.75) rotate(90) scale(98)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9662d0"/>
+      <stop offset="1" stop-color="#cdb5e8"/>
+      <stop offset="1" stop-color="white"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_3" gradientTransform="translate(194.25 173.25546) rotate(89.05305) scale(40)"/>
+    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient_3" gradientTransform="translate(431.79027 174) rotate(90) scale(40)"/>
+    <linearGradient id="Obj_Gradient_9" xl:href="#Gradient_3" gradientTransform="translate(626.2696 174.99727) rotate(90) scale(40)"/>
+    <linearGradient id="Obj_Gradient_10" xl:href="#Gradient_3" gradientTransform="translate(812.75 173.75) rotate(90) scale(40)"/>
+    <linearGradient id="Obj_Gradient_11" xl:href="#Gradient_3" gradientTransform="translate(1006.5294 173.75) rotate(90) scale(40)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-24 11:35:25 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2" filter="url(#Shadow)">
+        <rect x="237" y="137" width="999" height="115" fill="url(#Obj_Gradient)"/>
+      </g>
+      <g id="Graphic_4">
+        <title>Heading</title>
+        <text transform="translate(580 264)" fill="#333">
+          <tspan font-family="Helvetica Neue" font-size="29" font-weight="400" fill="#333" x="0" y="28">Spark ML pipeline</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <ellipse cx="335" cy="189" rx="64.5001030646723" ry="42.5000679108306" fill="url(#Obj_Gradient_2)"/>
+        <ellipse cx="335" cy="189" rx="64.5001030646723" ry="42.5000679108306" stroke="#7f0f2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(288.4 170.552)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="8.967998" y="15">Convert to </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="3.9439985" y="33.448">Lower Case</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <ellipse cx="525" cy="189" rx="64.5001030646723" ry="42.5000679108306" fill="url(#Obj_Gradient_3)"/>
+        <ellipse cx="525" cy="189" rx="64.5001030646723" ry="42.5000679108306" stroke="#7f0f2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(478.4 170.552)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="17.111998" y="15">Remove </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="4.0639985" y="33.448">punctuation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <ellipse cx="715" cy="189" rx="64.5001030646724" ry="42.5000679108306" fill="url(#Obj_Gradient_4)"/>
+        <ellipse cx="715" cy="189" rx="64.5001030646724" ry="42.5000679108306" stroke="#7f0f2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(668.4 170.552)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="10.295998" y="15">Break into </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="24.679998" y="33.448">words</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 61 152 L 132 152 C 137.52285 152 142 156.47715 142 162 L 142 227 C 142 232.52285 137.52285 237 132 237 L 61 237 C 55.47715 237 51 232.52285 51 227 L 51 162 C 51 156.47715 55.47715 152 61 152 Z" fill="#ffc0c0"/>
+        <path d="M 61 152 L 132 152 C 137.52285 152 142 156.47715 142 162 L 142 227 C 142 232.52285 137.52285 237 132 237 L 61 237 C 55.47715 237 51 232.52285 51 227 L 51 162 C 51 156.47715 55.47715 152 61 152 Z" stroke="#51260e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(56 176.052)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7.772" y="15">Raw Text </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="23.756" y="33.448">Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <ellipse cx="909.6397" cy="189" rx="64.5001030646724" ry="42.5000679108306" fill="url(#Obj_Gradient_5)"/>
+        <ellipse cx="909.6397" cy="189" rx="64.5001030646724" ry="42.5000679108306" stroke="#7f0f2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(863.0397 170.552)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="16.375998" y="15">Create a </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="3.1999985" y="33.448">word-vector</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 1036 193.75 L 1077.5 144.75 L 1160.5 144.75 L 1202 193.75 L 1160.5 242.75 L 1077.5 242.75 Z" fill="url(#Obj_Gradient_6)"/>
+        <path d="M 1036 193.75 L 1077.5 144.75 L 1160.5 144.75 L 1202 193.75 L 1160.5 242.75 L 1077.5 242.75 Z" stroke="#7f0f2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1082.5 184.526)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="2.124" y="15">Algorithm</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 164.4958 203.75137 L 164.16527 183.7541 L 204.668 183.08463 L 204.50273 173.086 L 224.83053 192.75273 L 205.1638 213.08053 L 204.99853 203.0819 Z" fill="url(#Obj_Gradient_7)"/>
+        <path d="M 164.4958 203.75137 L 164.16527 183.7541 L 204.668 183.08463 L 204.50273 173.086 L 224.83053 192.75273 L 205.1638 213.08053 L 204.99853 203.0819 Z" stroke="#008ad5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 407.5599 204 L 407.5599 184 L 436.02064 184 L 436.02064 174 L 456.02064 194 L 436.02064 214 L 436.02064 204 Z" fill="url(#Obj_Gradient_8)"/>
+        <path d="M 407.5599 204 L 407.5599 184 L 436.02064 184 L 436.02064 174 L 456.02064 194 L 436.02064 214 L 436.02064 204 Z" stroke="#008ad5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 602.03925 204.99727 L 602.03925 184.99726 L 630.5 184.99726 L 630.5 174.99727 L 650.5 194.99727 L 630.5 214.99727 L 630.5 204.99727 Z" fill="url(#Obj_Gradient_9)"/>
+        <path d="M 602.03925 204.99727 L 602.03925 184.99726 L 630.5 184.99726 L 630.5 174.99727 L 650.5 194.99727 L 630.5 214.99727 L 630.5 204.99727 Z" stroke="#008ad5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 788.5196 203.75 L 788.5196 183.75 L 816.9804 183.75 L 816.9804 173.75 L 836.9804 193.75 L 816.9804 213.75 L 816.9804 203.75 Z" fill="url(#Obj_Gradient_10)"/>
+        <path d="M 788.5196 203.75 L 788.5196 183.75 L 816.9804 183.75 L 816.9804 173.75 L 836.9804 193.75 L 816.9804 213.75 L 816.9804 203.75 Z" stroke="#008ad5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 982.299 203.75 L 982.299 183.75 L 1010.7598 183.75 L 1010.7598 173.75 L 1030.7598 193.75 L 1010.7598 213.75 L 1010.7598 203.75 Z" fill="url(#Obj_Gradient_11)"/>
+        <path d="M 982.299 203.75 L 982.299 183.75 L 1010.7598 183.75 L 1010.7598 173.75 L 1030.7598 193.75 L 1010.7598 213.75 L 1010.7598 203.75 Z" stroke="#008ad5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
