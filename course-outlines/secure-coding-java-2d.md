@@ -1,8 +1,8 @@
-# Secure Coding
+# Secure Coding Java
 
 (C) Copyright Elephant Scale
 
-August 25, 2021
+October 1, 2021
 
 ## Overview
 
@@ -31,8 +31,8 @@ Lectures and hands on labs. (50% - 50%)
 
 
 ## Lab environment
-* Zero Install: There is no need to install software on students' machines!
-* A lab environment in the cloud will be provided for students.
+* The recommended approach to doing the labs is using your local IntelliJ install.
+* As a backup solution, lab environment in the cloud can be provided for students.
 
 ### Students will need the following
 * A reasonably modern laptop with unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly.
@@ -41,15 +41,29 @@ Lectures and hands on labs. (50% - 50%)
 
 ## Detailed outline
 
-### Common attacks
+### Short overview of threat modeling
+* STRIDE attack classification
+* CVSS attack assessment
+* Lab on threat modeling
+
+### Common attacks and defenses
 * Cross site scripting
 * Malicious file execution
 * Session hijacking
 * Encryption
 * Unsecured direct object reference
-* Failure to authorize/hidden URLs
+* Defenses
+  * Validation
+  * Strong typing
+  * Regular expressions
+  * White list
+  * Scrubbing
+  * Encoding
+  * CAPTCHA
+* Labs based on OWASP Goat labs
 
 ### Java security
+
 * Basic Security within Java SE 8+
   * Mutability of objects
   * Variable, method, class, and package scopes
@@ -61,6 +75,7 @@ Lectures and hands on labs. (50% - 50%)
   * Specifying Security Constraints
   * Programmatic security
   * Declarative security
+* Labs based on SEI CERT standard
 
 ### REST endpoint security
   * oauth2 token-based authentication and authorization
@@ -71,35 +86,7 @@ Lectures and hands on labs. (50% - 50%)
   * Input validation
   * Output encoding
   * Cryptography
-
-### JavaScript security
-  * How to manage secure PII data on the end client apps (mobile app, browser, tablet)
-  * Versions: OAuth2, Angular4
-  * Cross-site scripting (XSS)
-  * Cross-site request forgery (CSRF)
-  * Common JavaScript vulnerabilities
-  * JavaScript security analyzers
   
-### Secure design
-
-* Layered design concepts
-* Object layer
-* Persistence layer
-* Presentation layer
-
-### Countermeasures
-
-* Validation
-* Strong typing
-* Regular expressions
-* White list
-* Scrubbing
-* Encoding
-* CAPTCHA
-* Honey pots
-* Avoiding SQL injection
-
-
 ### Code signing
 * Overview of code signing
   * Windows
@@ -118,14 +105,21 @@ Lectures and hands on labs. (50% - 50%)
 * Secret questions/answers
 * SSL/TLS
 
-### Framework architecture
-* Threading
-* Privileges
+### Security tools
 * Audits/Logs
-* Secure coding
-* Encryption services
 * Static code analysis
+  * SonarQube
+  * Labs
  
 ### Security future
+* Introduction to modern frameworks
+  * Vault
+  * Consul
+  * Anthos
+* Modern security design patterns
+  * Dynamic secrets
+  * Automatic credential rotation
+  * Cubbyhole response wrapping
+  * Encryption as a service
 * Zero-trust networks
 * Artificial intelligence

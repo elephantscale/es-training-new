@@ -643,7 +643,7 @@
 
 ## Labs
 
-* SonarQube lab for statis code analysis
+* SonarQube lab for static code analysis
 
 [https://github.com/elephantscale/secure-coding-labs/tree/main/sonarqube](https://github.com/elephantscale/secure-coding-labs/tree/main/sonarqube)
 
