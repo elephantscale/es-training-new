@@ -312,7 +312,7 @@ Notes:
 * Another amazing thing word2vec can do is, it can describe relationships between vectors!
 
 * **France is to Paris as Germany is to Berlin**
-  - In vector space, the distance between contries and their capitals is same!
+  - In vector space, the distance between countries and their capitals is same!
 
 ---
 
