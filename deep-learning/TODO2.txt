@@ -1,0 +1,86 @@
+
+
+from David Gaumont (Cisco) to All Participants:
+AMD Radeon Pro 5300M 4 Go on my MAC
+from Andreas Lestréus (Cisco) to All Participants:
+I should probably run it on my stationary PC which as a Titan RTX card :)
+from David Gaumont (Cisco) to All Participants:
+nice
+from David Gaumont (Cisco) to All Participants:
+done
+from Andreas Lestréus (Cisco) to All Participants:
+not me
+from Andrew Sterner (Cisco) to All Participants:
+Yep
+from David Gaumont (Cisco) to All Participants:
+yes
+from Sujee Maniyam (Guest) to All Participants:
+https://developer.nvidia.com/cuda-gpus
+from Andreas Lestréus (Cisco) to All Participants:
+not a very good/important friend :)
+from Sujee Maniyam (Guest) to All Participants:
+please share your weights here
+from Andreas Lestréus (Cisco) to All Participants:
+50, 1, 49
+from Andrew Sterner (Cisco) to All Participants:
+50, 0, 50
+from Sujee Maniyam (Guest) to All Participants:
+guys, I wll be back in a couple of mins..
+from Andrew Sterner (Cisco) to All Participants:
+We don't believe in public transportation here
+from Andreas Lestréus (Cisco) to All Participants:
+no, it turns out the concert is at your neighbor's house!
+from Jean Francois Dalbosco (Cisco) to All Participants:
+50, 0, 50
+from David Gaumont (Cisco) to All Participants:
+yes, same result
+from David Gaumont (Cisco) to All Participants:
+40,0,20 should work too
+from MICHAEL GRAD (Cisco) to All Participants:
+40,10,20
+from Andreas Lestréus (Cisco) to All Participants:
+yeah
+from Andreas Lestréus (Cisco) to All Participants:
+it does say > than 60.. just to nit pick :)
+from Sujee Maniyam (Guest) to All Participants:
+http://playground.tensorflow.org/
+from Andrew Sterner (Cisco) to All Participants:
+X1X2 works pretty well...
+from Jean Francois Dalbosco (Cisco) to All Participants:
+truuuue
+from Andreas Lestréus (Cisco) to All Participants:
+4 and 3 works pretty well too
+from Andreas Lestréus (Cisco) to All Participants:
+2 layers with 4 and 3 neurons
+from Andreas Lestréus (Cisco) to All Participants:
+for this one 2 hidden layers with 4 and 4 was fun but eventually stabilizes after some crazy mode :)
+from Jean Francois Dalbosco (Cisco) to All Participants:
+x1^2 x2^2 1 layer 1 neuron
+from Andrew Sterner (Cisco) to All Participants:
+^ also works with no hidden layers lol
+from David Gaumont (Cisco) to All Participants:
+5/5 works well
+from Jean Francois Dalbosco (Cisco) to All Participants:
+^^' true
+from David Gaumont (Cisco) to All Participants:
+lr=0.3
+from Jean Francois Dalbosco (Cisco) to All Participants:
+yes vizualisation is awesome
+from Andrew Sterner (Cisco) to All Participants:
+2 layers 4,2 works pretty well
+from David Gaumont (Cisco) to All Participants:
+nothing good
+from Andrew Sterner (Cisco) to All Participants:
+Nice. The circles help
+from Jean Francois Dalbosco (Cisco) to All Participants:
+4 5 3 2 + tanh + lr=0.01
+from Jean Francois Dalbosco (Cisco) to All Participants:
+weird on mine it worked well :/
+from Jean Francois Dalbosco (Cisco) to All Participants:
+ah forgot x1 x2 x1^2 x2^2 x1x2
+from Andreas Lestréus (Cisco) to All Participants:
+x1,x2,x1sq,x2sq and 6 hidden all with 5 each
+from Jean Francois Dalbosco (Cisco) to All Participants:
+that's what was missing i guess
+from Andreas Lestréus (Cisco) to All Participants:
+relu 0,003
