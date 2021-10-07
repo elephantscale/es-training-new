@@ -81,7 +81,7 @@ Notes:
 
 ## Workers / Executors / Tasks
 
-<img src="../../assets/images/spark/spark-cluster-2.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-cluster-2.png" style="width:30%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 <img src="../../assets/images/spark/spark-workers-executors-threads-2.png" style="width:30%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * **Executors**

@@ -1,7 +1,7 @@
 
 # Delta Lake
 
-<img src="../../assets/images/logos/spark-delta-lake-logo-1.png" style="width:40%;"/> 
+<img src="../../assets/images/logos/spark-delta-lake-logo-1.png" style="width:40%;"/> <!-- {"left" : 5.07, "top" : 7.77, "height" : 1.76, "width" : 7.35} -->
 
 ---
 
@@ -17,7 +17,7 @@
 * Can store all kinds of data
    - Structured (csv, json) and unstructured (video, pictures, binary) data
 
-<img src="../../assets/images/bigdata/3rd-party/data-lake-1.jpg" style="width:50%;"/>
+<img src="../../assets/images/bigdata/3rd-party/data-lake-1.jpg" style="width:50%;"/> <!-- {"left" : 4.34, "top" : 7.32, "height" : 4.24, "width" : 8.87} -->
 
 ---
 
@@ -83,6 +83,8 @@
 
 * Here is an example, all transactions are sequenced in the order
 
+<br/>
+
 ```text
 /path/to/table/_delta_log
    - 0000.json
@@ -91,8 +93,12 @@
    - 0010.json
 
 ```
+<!-- {"left" : 0, "top" : 3.25, "height" : 2.32, "width" : 6.59} -->
+
 
 * Since all operations are transactional, now we can go back and retrieve past data easily --> **Time travel**
+
+<br/>
 
 ```sql
 SELECT * FROM events
@@ -101,6 +107,7 @@ TIMESTAMP AS OF ...
 SELECT * FROM events
 VERSION AS OF ...
 ```
+<!-- {"left" : 0, "top" : 7.37, "height" : 2.32, "width" : 5.48} -->
 
 * This solves the problem of
    - Keeping historical data efficiently
@@ -153,6 +160,8 @@ VERSION AS OF ...
 
 * For example, here we can make sure `timestamp` and `source` columns are not null
 
+<br/>
+
 ```sql
 CREATE TABLE events (
    timestamp  TIMESTAMP NOT NULL,
@@ -160,6 +169,8 @@ CREATE TABLE events (
    ...
 )
 ```
+<!-- {"left" : 0, "top" : 5.45, "height" : 2.29, "width" : 8.25} -->
+
 
 * This solves the following problem:
    - Data quality issues
@@ -184,7 +195,8 @@ CREATE TABLE events (
 
 * Delta Lakes can be created on the following systems
 
-<img src="../../assets/images/spark/3rd-party/delta-lake-1-connectors.png" style="width:80%;" />
+<img src="../../assets/images/spark/3rd-party/delta-lake-1-connectors.png" style="width:80%;" /><!-- {"left" : 1.53, "top" : 3.08, "height" : 5.14, "width" : 14.45} -->
+
 
 * [Image source](https://youtu.be/OLJKIogf2nU)
 
@@ -193,6 +205,8 @@ CREATE TABLE events (
 ## Creating Delta Lakes
 
 * Creating tables is easy - just replace `USING parquet`  to <mark>`USING delta`</mark>
+
+<br/>
 
 ```sql
 
@@ -206,12 +220,14 @@ CREATE TABLE
 ...
 USING delta
 ```
+<!-- {"left" : 0, "top" : 3.13, "height" : 3.23, "width" : 5.32} -->
 
 * Migration is easy too
 
 ```sql
 CONVERT TO DELTA table_name
 ```
+<!-- {"left" : 0, "top" : 7.51, "height" : 0.65, "width" : 6.02} -->
 
 ---
 
@@ -223,4 +239,5 @@ CONVERT TO DELTA table_name
 
 * Available on Databricks platforms (not open source)
 
-<img src="../../assets/images/spark/3rd-party/delta-engine-benchmark-1.png" style="width:60%;" />
+<img src="../../assets/images/spark/3rd-party/delta-engine-benchmark-1.png" style="width:60%;" /><!-- {"left" : 3.5, "top" : 4.61, "height" : 6.47, "width" : 10.5} -->
+
