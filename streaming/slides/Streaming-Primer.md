@@ -442,6 +442,16 @@ Notes:
 
 ## 3 Tier Streaming Architecture
 
+* Here is a simplified streaming architecture
+
+* We see 3 distinct stages
+
+* **Ingest** stage captures data
+
+* **Processing** handles the data
+
+* And the processed data is stored in **Storage** layer
+
 <img src="../../assets/images/streaming/streaming-architecture-1.png" style="width:65%;"/><!-- {"left" : 0.56, "top" : 3.04, "height" : 3.56, "width" : 9.13} -->
 
 Notes:
