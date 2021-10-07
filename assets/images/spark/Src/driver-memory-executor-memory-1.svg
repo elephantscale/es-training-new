@@ -147,7 +147,7 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2021-10-07 16:18:56 +0000</metadata>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-10-07 16:46:49 +0000</metadata>
   <g id="Canvas_1" stroke-dasharray="none" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
@@ -1013,8 +1013,9 @@
         </text>
       </g>
       <g id="Graphic_19">
-        <text transform="translate(815.1347 389.55127)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Worker Node 100</tspan>
+        <text transform="translate(865.5399 353.05127)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="8.393555" y="60">Worker Node </tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="148.78418" y="133">100</tspan>
         </text>
       </g>
       <g id="Group_12">
