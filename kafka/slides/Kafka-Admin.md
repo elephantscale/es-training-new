@@ -65,7 +65,7 @@ Notes:
 
 ## Kafka Hardware - Memory
 
-<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:30%;float:right;"/><!-- {"left" : 7.12, "top" : 1.08, "height" : 2.41, "width" : 2.97} -->
+<img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:40%;float:right;"/><!-- {"left" : 7.12, "top" : 1.08, "height" : 2.41, "width" : 2.97} -->
 
 - Kafka uses very modest memory by careful heap management (~ 4-8 G per broker)
 
@@ -324,7 +324,7 @@ Notes:
 
 ## Securing Kafka
 
-<img src="../../assets/images/kafka/Securing-Kafka.png" alt="Securing-Kafka.png" style="width:50%;float:right;"/><!-- {"left" : 5.22, "top" : 1.07, "height" : 2.79, "width" : 4.92} -->
+<img src="../../assets/images/kafka/Securing-Kafka.png" style="width:60%;float:right;"/><!-- {"left" : 5.22, "top" : 1.07, "height" : 2.79, "width" : 4.92} -->
 
 
  * Clients connect to Kafka brokers via  **Kerberos / TLS** 
@@ -530,17 +530,11 @@ https://www.confluent.io/blog/how-to-choose-the-number-of-topicspartitions-in-a-
 
 ---
 
-## Review Questions
+## Review and Q&A
 
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
-Notes: 
+* Let's go over what we have covered so far
 
-
-
-
----
-
-## Lesson Summary
-
-
-Notes: 
+* Any questions?

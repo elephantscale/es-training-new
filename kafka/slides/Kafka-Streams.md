@@ -30,7 +30,7 @@ Notes:
 * The 'processing' portion was done outside Kafka
 
 
-<img src="../../assets/images/kafka/Streaming-Platforms.png" alt="Streaming-Platforms.png" style="width:70%;"/><!-- {"left" : 0.93, "top" : 2.92, "height" : 3.79, "width" : 8.39} -->
+<img src="../../assets/images/streaming/streaming-platforms-1.png" style="width:90%;"/><!-- {"left" : 0.93, "top" : 2.92, "height" : 3.79, "width" : 8.39} -->
 
 
 Notes:
@@ -821,23 +821,21 @@ Notes:
 
 ---
 
-## Review Questions
 
+## Review and Q&A
 
- * What is Kafka Streams?
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
- * What is a task?
+* Let's go over what we have covered so far
 
- * How does Streams keep track of state?
-
-Notes:
-
+* Any questions?
 
 
 
 ---
 
-# Advanced Kafka Streams
+# Backup Slides
 
 
 ---
