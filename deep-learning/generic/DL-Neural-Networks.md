@@ -249,6 +249,14 @@ weather = 33, public transit = 33, friend = 33
 
 <!-- {"left" : 3.85, "top" : 4.65, "height" : 3.91, "width" : 6.41, "columnwidth" : [1.26, 1.14, 1.06, 0.9, 0.98, 1.06]} -->
 
+Notes: 
+
+Here are some possible solutions:
+
+- 50, 1, 49
+- 50, 0, 5
+- 40, 0, 20
+- 40, 10, 20
 
 ---
 
@@ -370,7 +378,7 @@ Notes:
 
 ## Playground : Hidden Layers
 
-[DL-Playground.md](DL-Playground.md#Playground Hidden Layers)
+[DL-Playground.md#Classification Examples 2](DL-Playground.md#Classification Examples 2)
 
 
 ---

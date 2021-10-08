@@ -224,158 +224,100 @@ Notes:
 # Classification Examples 2
 
 ---
-## Circle Dataset Overview
+
+## Circle Dataset
 
 <img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-1.png" alt="playground-dataset-circle-1.png" style="width:30%;float:right;"/><!-- {"left" : 6.94, "top" : 1.19, "height" : 3.1, "width" : 3.08} -->
 
-  * Select the circle dataset:
+* Select the circle dataset
 
-  * Can we linearly separate this dataset?
-
-  * Try it!
-    - What loss do you get to?
-    - Does changing the learning rate help?
-
-Notes:
-
-
----
-## Adding Features
-
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 6.37, "top" : 1.1, "height" : 3.72, "width" : 3.69} -->
-
-  * No amount of fiddling with learning rate will help!
+* Can we linearly separate this dataset?
+    - No amount of fiddling with learning rate will help!
     - It's not linearly separable.
-    - Is it impossible?
 
-  * So far, we have input just x1,x2 as features.
-    - What if we include other terms?
-    - x1² or x2² ?
+* Solution-1: Include other features 
+    - **`x1 + x2 + x1² +  x2²`**
 
-
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-3.png"  style="width:55%;"/><!-- {"left" : 6.94, "top" : 1.19, "height" : 3.1, "width" : 3.08} -->
 
 Notes:
-
----
-## Including Features
-
-* Include these terms:
-
-<img src="../../assets/images/deep-learning/3rd-party/playground-feature-selection.png" alt="XXX image missing" style="width:65%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 5.03, "width" : 8.21} -->
-
-Notes:
-
----
-## Experimenting with Features
-
-<img src="../../assets/images/deep-learning/3rd-party/playground-features-1.png" alt="XXX image missing" style="width:15%;float:right;"/><!-- {"left" : 7.93, "top" : 1.03, "height" : 7, "width" : 2.16} -->
-
-  * Experiment with adding features
-  *  What terms converge to a solution?
-  * Which do not converge?
-  * Why?
-
-
-
-
-Notes:
-
----
-## Four Square Dataset Overview
-
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-fourposter-1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 6.44, "top" : 1.16, "height" : 3.58, "width" : 3.59} -->
-
-* Set the Four-Square dataset:
-
-* Check to see if it will converge with just X0 and X1
-
-* No??
-
-* Are there any other features that can help?
-
-Notes:
-
----
-## Spiral Dataset
-
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-spiral-2.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 6.05, "top" : 1.1, "height" : 4.06, "width" : 4.02} -->
-
-* Set the Spiral dataset:
-
-* Check to see if you can converge?
-
-* Can you do it with no hidden layers?
-
-Notes:
-
----
-
-# Playground Hidden Layers
 
 ---
 
 ## Circle Dataset With Hidden Layers
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-1.png" alt="playground-dataset-circle-1.png" style="max-width:25%;float:right;"/><!-- {"left" : 7.65, "top" : 1, "height" : 2.47, "width" : 2.46} -->
-<img src="../../assets/images/deep-learning/3rd-party/playground-hidden-layer.png" alt="playground-hidden-layer.png" style="max-width:25%;float:right;clear:both;"/><!-- {"left" : 7.04, "top" : 4.53, "height" : 2.3, "width" : 3.07} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-1.png" alt="playground-dataset-circle-1.png" style="width:25%;float:right;"/><!-- {"left" : 7.65, "top" : 1, "height" : 2.47, "width" : 2.46} -->
 
- * Select the circle dataset:
-
-* Select only X1 and X2 as features
-
+* Select the circle dataset
+* Select only **`X1 and X2`** as features
 * Add a Hidden Layer
-
 * Can you get a solution with 1 hidden Layer
-
 - You can add more neurons to the hidden layer
-
 - Can you solve it with only one hidden layer?
-
 - If not, add another hidden layer
 
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-4.png" alt="playground-dataset-circle-1.png" style="width:60%;"/><!-- {"left" : 7.65, "top" : 1, "height" : 2.47, "width" : 2.46} -->
 
 Notes:
 
 ---
 
-## Four Square Dataset Hidden Layers
+## Four Square Dataset
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-fourposter-1.png" alt="playground-dataset-fourposter-1.png" style="width:25%;"/><!-- {"left" : 7.44, "top" : 1.07, "height" : 2.68, "width" : 2.67} -->  &nbsp;  &nbsp; <img src="../../assets/images/deep-learning/3rd-party/playground-hidden-layer.png" alt="playground-hidden-layer.png" style="width:25%;"/><!-- {"left" : 7.07, "top" : 3.96, "height" : 2.3, "width" : 3.07} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-fourposter-1.png" alt="XXX image missing" style="width:25%;float:right;"/><!-- {"left" : 6.44, "top" : 1.16, "height" : 3.58, "width" : 3.59} -->
 
-   * Set the Four-Square dataset:
+* Set the Four-Square dataset
 
-   * Can you solve it with hidden layers?
+* Try setting the input to **`X1 . X2`** with no hidden layers
 
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-foursquare-2.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 6.44, "top" : 1.16, "height" : 3.58, "width" : 3.59} -->
 
+---
 
+## Four Square Dataset With Hidden Layers
+
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-fourposter-1.png" alt="XXX image missing" style="width:25%;float:right;"/><!-- {"left" : 6.44, "top" : 1.16, "height" : 3.58, "width" : 3.59} -->
+
+* Solve the **Four Square** using hidden layers
+
+* Set the inputs to **`X1 and X2`**
+
+* Try adding 1 or 2 hidden layers
+
+* **Instructor** : Offer hints from the notes section
 
 Notes:
 
+Possible solutions:
+
+- input  = X1, X2 + hidden 1 (4 neurons) + hidden 2 (2 neurons)  + lr = 0.1
+- input = X1 , X2, X1^2, X2^2 + one hidden layer (4 neurons)
+
 ---
-## Spiral
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-spiral-2.png" alt="playground-dataset-spiral-2.png" style="width:30%;float:right;"/><!-- {"left" : 6.61, "top" : 1.16, "height" : 3.43, "width" : 3.4} -->
+## Spiral Dataset
 
-* Set the Spiral dataset:
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-spiral-2.png" alt="XXX image missing" style="width:23%;float:right;"/><!-- {"left" : 6.05, "top" : 1.1, "height" : 4.06, "width" : 4.02} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-spiral-solution-1.png" alt="playground-dataset-spiral-solution-1.png" style="width:23%;float:right;clear:both;"/><!-- {"left" : 5.65, "top" : 1.16, "height" : 5.55, "width" : 4.37} -->
 
-* This one is really tricky!
+* Set the Spiral dataset
 
-* Can you do it?
+* This is a **challenging dataset**
 
-* Don't be afraid to add new features!
+* Try 
+    - multiple features
+    - multiple hidden layers
 
-* Multiple Hidden Layers?
+* Can you get this result?
 
+* **Instructor** : Offer hints from the notes section
 
 Notes:
 
----
-## Spiral Solution
+Try these
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-spiral-solution-1.png" alt="playground-dataset-spiral-solution-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.65, "top" : 1.16, "height" : 5.55, "width" : 4.37} -->
-
-   * Can you get this result?
-
+- input = X1, X2 +  lr=0.01 + activation=tanh + 5, 5, 5, 5 neurons
+- input = X1, X2 +  lr=0.01 + activation=relu + 5, 5, 5, 5 neurons
 
 ---
 
@@ -386,8 +328,8 @@ Notes:
 
 * What's the minimum number of hidden layers required to correctly classify all the test data?
 
- * Does adding any additional features help at all?
+* Does adding any additional features help at all?
 
- * Do we necessarily get better results with more neurons and/or hidden layers?
+* Do we necessarily get better results with more neurons and/or hidden layers?
 
 Notes:
