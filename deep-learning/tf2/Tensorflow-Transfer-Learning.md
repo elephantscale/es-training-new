@@ -5,8 +5,17 @@
 ---
 
 ## Objectives
+
 * Learn about 'transfer learning'
+
 * How to 'transfer learning' in Tensorflow
+
+* Understand Pre-Trained Models
+
+* Customize pre-trained models
+
+Notes:
+
 
 ---
 
@@ -91,7 +100,7 @@ Source : [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly
 ## Using MobileNet
 
 * Here we are downloading the model; It will be automatically downloaded
-    - They will be cached under `~/keras/models/` directory
+    - They will be cached under **`~/.keras/models/`** directory
 
 * **`include_top=True`** : includes the full model and classifying layers (last few layers)
 

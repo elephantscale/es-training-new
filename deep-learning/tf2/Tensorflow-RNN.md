@@ -14,7 +14,7 @@
 
 ## Introduction to RNNs
 
-[../generic/DL-RNNs.md](../generic/DL-RNNs.md)
+[../generic/DL-RNNs.md#RNN Intro](../generic/DL-RNNs.md#RNN Intro)
 
 ---
 

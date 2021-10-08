@@ -1,13 +1,4 @@
 # Transfer Learning
----
-## Learning Objectives
-   * You will be able to:
-     - Understand Transfer Learning
-     - Understand Pre-Trained Models
-     - Customize pre-trained models
-
-Notes:
-
 
 ---
 
@@ -172,27 +163,19 @@ Notes:
 
 ---
 
-
 ## Popular Pre-Trained Models
 
-* Examples of Pre-trained models for Image Recognition
+* Explore available models at [modelzoo.co](https://modelzoo.co/)
+    - Explore models available for Tensorflow
+
+* **Image Recognition**
   - Inception
   - ResNet
 
-* Example of Pre-Trained model for Natural Language
+* **Natural Language**
   - Word2Vec
   - BERT
 
-Notes:
-
----
-
-
-## Transfer Learning Lab
-
-
- * Download inception Dataset
-
- * Perform Transfer Learning on image classification dataset.
 
 Notes:
+

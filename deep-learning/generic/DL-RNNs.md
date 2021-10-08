@@ -18,6 +18,10 @@ Notes:
 
 ---
 
+# RNN Intro
+
+---
+
 ## Sometimes to Predict the Future, We Need to Know the Past
 
 * Can you predict the next position of the ball?
