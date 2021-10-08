@@ -631,7 +631,7 @@ Notes:
 
   * A kubelet checks whether the pod is alive and healthy, when it receives a negative response or no reply
 
-![](../../assets/images/kubernetes/Kubelet.png) <!-- {"left" : 1.21, "top" : 2.63, "height" : 2.74, "width" : 7.84} -->
+![](../../assets/images/kubernetes/health-check-1.png) <!-- {"left" : 1.21, "top" : 2.63, "height" : 2.74, "width" : 7.84} -->
 
 
 Notes:
@@ -651,7 +651,7 @@ Notes:
 
   * Kubelet continuous to restart a pod until it gets a healthy reply
 
-![](../../assets/images/kubernetes/Kubelet-02.png) <!-- {"left" : 1.71, "top" : 2.38, "height" : 2.74, "width" : 6.84} -->
+![](../../assets/images/kubernetes/health-check-2.png) <!-- {"left" : 1.71, "top" : 2.38, "height" : 2.74, "width" : 6.84} -->
 
 Notes:
 
