@@ -125,18 +125,21 @@ Notes:
 
 ## Recommended Resources
 
-<img src="../../assets/images/books/docker-up-and-running-9781492036722.jpeg" style="width:20%;float:right;"/>
-<img src="../../assets/images/books/Kubernetes-Up-and-Running-2nd-Edition-9781492046523.jpeg" style="width:20%;float:right;clear:both;"/>
 
 * Books
     - [Docker: Up & Running, 2nd edition](https://learning.oreilly.com/library/view/docker-up/9781492036722/)
     - [Kubernetes: Up & Running, 2nd Edition](https://learning.oreilly.com/library/view/kubernetes-up-and/9781492046523/)
+    - [Kubernetes Best Practices](https://learning.oreilly.com/library/view/kubernetes-best-practices/9781492056461/)
 
 * Online
     - [docs.docker.com](https://docs.docker.com/)
     - [Docker cheat sheet](https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf)
     - [kubernetes.io/docs](https://kubernetes.io/docs/home/) 
     - [Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
+<img src="../../assets/images/books/docker-up-and-running-9781492036722.jpeg" style="width:15%;"/> &nbsp; &nbsp; 
+<img src="../../assets/images/books/Kubernetes-Up-and-Running-2nd-Edition-9781492046523.jpeg" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/books/kubernetes-best-practices__9781492056461.jpeg" style="width:15%;"/> &nbsp; &nbsp;
 
 ---
 

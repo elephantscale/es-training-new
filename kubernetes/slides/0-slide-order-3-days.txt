@@ -1,15 +1,20 @@
 ## to generate slides
 ##      ./gen.sh
 
+# outline
+#../kubernetes-outline-3-days.pdf
+
+# About
 About-Kubernetes.md
 
+## Docker 
 ../../docker/slides/Container_Intro.md
+../../docker/slides/Docker_Intro.md
 
+## Kubernetes
 Kubernetes-Intro.md
-
-./Kubernetes-Essentials.md
-./Kubernetes-Cluster.md
-./Kubernetes-Advanced.md
-
-# Argo (optional)
-../../argo/slides/argo.md
+Kubernetes-Essentials.md
+Kubernetes-Resources.md
+Kubernetes-Networking.md
+Kubernetes-Operations.md
+Kubernetes-Advanced.md
