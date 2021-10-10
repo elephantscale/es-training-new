@@ -290,6 +290,141 @@ Notes:
 
 ---
 
+# Resource Limits
+
+---
+
+## Resource Requests and Limits
+
+* **Requests** specify the minimum resource needed to run a Container
+    - Here our Container is requesting 128Mi of memory
+    - So K8s will schedule this Container only on nodes that can supply the requested amount of memory
+
+* **Limits** put a ceiling on how much resource a Container can use
+    - Here, our nginx Container is not allowed to use more than 256Mi of memory
+
+* A Container may use more than it's request, but no more than the limit
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend
+spec:
+  containers:
+  - name: webapp
+    image: nginx
+    resources:
+      requests:
+        memory: "128Mi"
+      limits:
+        memory: "256Mi"
+```
+
+---
+
+## Resource Limits
+
+* Resources can be CPU, memory or storage
+
+* **CPU** spec
+    - One cpu, in Kubernetes, is equivalent to 1 vCPU/Core for cloud providers and 1 hyperthread on bare-metal Intel processors.
+    - CPUs are specified in **milli-cores**  (1 CPU = 1000 m)
+
+* **Memory** spec
+    - Specified in bytes
+    - 100Mi - 100 Mebi bytes,  100MB - 100 Mega bytes
+    - [See memory units](https://en.wikipedia.org/wiki/Units_of_information#Byte) 
+
+---
+
+## Specifying Resource Limits
+
+* Here we are requesting a quarter of CPU (250 milli cores) and the limit it to half CPU (500 milli cores)
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend
+spec:
+  containers:
+  - name: webapp
+    image: nginx
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+```
+
+---
+
+## Monitoring Resource Usage
+
+* We can monitor Pods usage using metrics API
+
+* We would need to install a [metrics-server](https://github.com/kubernetes-sigs/metrics-server)
+
+* Use **`kubectl top`** command
+
+```bash
+# to monitor node utilzation
+$   kubectl  top   node
+```
+
+```console
+NAME       CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+minikube   782m         4%     1009Mi          3%        
+```
+
+```bash
+# monitor pod utilization
+$   kubectl   top pod
+```
+
+```console
+NAME                                CPU(cores)   MEMORY(bytes)   
+nginx-deployment-7848d4b86f-2z84z   10m           12Mi            
+nginx-deployment-7848d4b86f-4h85n   13m           12Mi            
+nginx-deployment-7848d4b86f-798rn   14m           12Mi            
+nginx-deployment-7848d4b86f-94zbm   11m           12Mi            
+
+```
+
+---
+
+## Scheduling and Resource Allocation
+
+* When we create a Pod, Kubernetes scheduler will select a Node to run the Pod on
+
+* The Scheduler will ensure that sum of all resource requests from Containers is less than what the Node can provide
+
+* If a Container exceeds its memory limit, it might be terminated. If it is restartable, the kubelet will restart it
+
+* A Container might or might not be allowed to exceed its CPU limit for extended periods of time. However, it will not be killed for excessive CPU usage
+
+---
+
+## Lab: Resource Limits
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Specify resource limits
+
+* **Approximate run time:**
+  - 20
+
+* **Instructions:**
+  - Please complete **RESOURCE-LIMIT-1** lab
+
+Notes:
+
+---
+
 # Storage
 
 ---
