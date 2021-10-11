@@ -15,6 +15,6 @@ About-Kubernetes.md
 Kubernetes-Intro.md
 Kubernetes-Essentials.md
 Kubernetes-Resources.md
-Kubernetes-Networking.md
+Kubernetes-Deployments.md
 Kubernetes-Operations.md
 Kubernetes-Advanced.md
