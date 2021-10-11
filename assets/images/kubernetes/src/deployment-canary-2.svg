@@ -1,17 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="1350 1080 1884 876" width="1884" height="876">
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="1350 1080 1884 876" width="1884" height="876" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#870d11">
       <g>
         <path d="M -2.6666667 0 L 0 1 L 0 -1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
-    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
-      <font-face-src>
-        <font-face-name name="CenturyGothic-Bold"/>
-      </font-face-src>
-    </font-face>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="1161.6" y="992.4">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.744"/>
       <feOffset in="blur" result="offset" dx="5" dy="7"/>
@@ -23,7 +17,6 @@
       </feMerge>
     </filter>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2021-10-11 18:02:55 +0000</metadata>
   <g id="Canvas_1" stroke-dasharray="none" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
@@ -60,44 +53,41 @@
     <g id="Canvas_1_TEXTS">
       <title>TEXTS</title>
       <g id="Graphic_11">
-        <text transform="translate(2523.2702 1859.2599)" fill="#2500a1">
+        <text transform="translate(2523.2702 1859.2599)" fill="#2500a1" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="50">service</tspan>
         </text>
       </g>
       <g id="Graphic_13">
-        <text transform="translate(2038.0526 1283.865)" fill="#2500a1">
+        <text transform="translate(2038.0526 1283.865)" fill="#2500a1" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="50">ReplicaSet</tspan>
         </text>
       </g>
       <g id="Graphic_14" filter="url(#Shadow)">
-        <text transform="translate(1872.54 1519.5097)" fill="white">
+        <text transform="translate(1872.54 1519.5097)" fill="white" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="white" x="0" y="50">pod</tspan>
         </text>
       </g>
       <g id="Graphic_18">
-        <text transform="translate(1355.3259 1355.9297)" fill="#2500a1">
+        <text transform="translate(1355.3259 1355.9297)" fill="#2500a1" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="50">- labels:</tspan>
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="111">  - app: hello</tspan>
         </text>
       </g>
       <g id="Graphic_19">
-        <text transform="translate(1586.1944 1828.7599)" fill="#b26b2e">
-          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#b26b2e" x="0" y="50">- selector:</tspan>
-          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#b26b2e" x="0" y="111">  - app: hello1</tspan>
-        </text>
+        <text transform="translate(1586.1944 1828.7599)" fill="#b26b2e" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#b26b2e" x="0" y="50">- selector:</tspan><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#b26b2e" x="0" y="111">  - app: hello</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_20" filter="url(#Shadow)">
-        <text transform="translate(2117.5344 1518.6013)" fill="white">
+        <text transform="translate(2117.5344 1518.6013)" fill="white" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="white" x="0" y="50">pod</tspan>
         </text>
       </g>
       <g id="Graphic_21" filter="url(#Shadow)">
-        <text transform="translate(2362.5288 1517.6929)" fill="white">
+        <text transform="translate(2362.5288 1517.6929)" fill="white" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="white" x="0" y="50">pod</tspan>
         </text>
       </g>
       <g id="Graphic_24">
-        <text transform="translate(1867.1102 1111.7847)" fill="#2500a1">
+        <text transform="translate(1867.1102 1111.7847)" fill="#2500a1" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="50">deployment</tspan>
         </text>
       </g>

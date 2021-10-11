@@ -428,7 +428,7 @@ Notes:
 
 * Here we see a service  balancing traffic to primary pods based on label selectors
 
-<img src="../../assets/images/kubernetes/Canary-deployment.png" style="width:85%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-canary-2.png" style="width:85%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 
 Notes:

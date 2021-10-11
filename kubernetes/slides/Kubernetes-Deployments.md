@@ -206,6 +206,8 @@ Notes:
     2. Node forwards the traffic to a **service IP address** (this is virtual btw)
     3. The service then bounces traffic to **any of the pods servicing**
 
+* (We will see other options later)
+
 ---
 
 ## Service Definition
@@ -422,35 +424,41 @@ Notes:
 
 ## Blue Green Deployment-1
 
-* A blue-Green deployment make use the service label selector to change all traffic from one deployment to another
+* A blue-Green deployment make use the service label selector to change all traffic from one deployment to another, **at-once - like flipping a switching**
+
+* Here we have **`version v1 of app hello`** deployed
+
+* The service selector is pointing to **`app:hello ,  version: v1`** - so all traffic is going to v1 deployment
 
 
-<img src="../../assets/images/kubernetes/Canary-deployment-02.png" style="width:90%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
-
-Notes:
-
----
-
-## Blue Green Deployment
-
-  * Initially bring up and test new deployment without live traffic
-
-
-<img src="../../assets/images/kubernetes/Canary-deployment-03.png" style="width:90%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
-
+<img src="../../assets/images/kubernetes/deployment-blue-green-2.png" style="width:70%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 Notes:
 
 ---
 
-## Blue Green Deployment
+## Blue Green Deployment-2
 
-  * To make the version go live, change the service label selector which switches all traffic
+* We bring up and test new deployment without live traffic
+    - **`app:hello,   version:v2`**
 
-<img src="../../assets/images/kubernetes/Canary-deployment-04.png" style="width:90%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+* But the service is still sending traffic to **v1**
+
+
+<img src="../../assets/images/kubernetes/deployment-blue-green-3.png" style="width:100%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+Notes:
+
+---
+
+## Blue Green Deployment-3
+
+* To make the new version go live, change the service label selector which switches all traffic to  v2
+    - **`selector =  app:hello,   version: v2`**
+
+* Now 100% of traffic is flowing to v2 - like we flipped a switch!
+
+<img src="../../assets/images/kubernetes/deployment-blue-green-4.png" style="width:100%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 
 
@@ -475,6 +483,29 @@ Notes:
 
 ---
 
+## Canary Deployment-1
+
+* Here we have **hello app** deployment (with label **`app: hello`**)
+
+* Service is routing all traffic this app using selector  **`app: hello`**
+
+<img src="../../assets/images/kubernetes/deployment-canary-2.png" style="width:90%"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Canary Deployment-2
+
+* Now we bring up  another deployment, labelled with **`app:hello, track:canary`**
+
+* The service is sending traffic to both deployments 
+
+* This is achieved by selector  **`app=hello`** - it will select all the pods including canary (**`track=canary`**)
+
+<img src="../../assets/images/kubernetes/deployment-canary-3.png" style="width:90%"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
+---
+
 ## Lab: Canary Deployment
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
@@ -487,6 +518,271 @@ Notes:
 
 * **Instructions:**
     - Please complete **DEPLOY-4**
+
+Notes:
+
+---
+
+
+# Service Discovery and Load Balancing
+
+---
+
+## Service Discovery
+
+* Kubernetes is a dynamic system, it is designed to run a wide variety of applications
+
+* How ever **finding these services** can be challenging - as most of the traditional network infrastructure wasn't built for the level of dynamism that Kubernetes presents
+
+* DNS (Domain Naming Service) is traditionally used for service discovery.  For example when we type 'search.google.com', DNS servers translate this into IP address
+
+* How ever DNS is designed for stable, large scale systems (like the Internet).  It doesn't work well on a dynamic system like Kubernetes
+    - For example, most applications resolve DNS only once and cache the result
+    - So if we update 'lookup.company.com' from 1.1.1.1 to 1.1.1.2  due to a failover, some programs may still be trying to access the old IP (1.1.1.1)
+
+---
+
+## Service DNS
+
+<img src="../../assets/images/kubernetes/Internal-Load-Balancing-1.png" style="width:50%;float:right;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+
+* Kubernetes runs its own DNS service called **kube DNS**.  This is installed as part of kube-system namespace
+
+* Service object is assigned its **own virtual IP** called **cluster IP**
+    - KubeDNS will assign a DNS name for this cluster IP
+    - Since the ClusterIP is is stable it overcomes the caching and update issues with traditional DNS
+
+* Also traffic to service-IP will be load-balanced across many Pods that backup the service
+
+
+---
+
+## Service Discovery
+
+* Kubernetes provides two options for internal service discovery:
+
+* **Environment Variable**
+    - When a new Pod is created, environment variables of the older services can be imported, allowing the services to talk to each other thereby enforcing a order in service creation.
+    - **`export  ZIP_CODE_LOOKUP=http://192.168.1.10`**
+
+* **DNS**
+    - Kubernetes provides the kube-dns service for registering services to the DNS service. Using this, new services can find each other and talk to other services.
+    - A DNS based lookup could be : **`zip_lookup.company.com`** points to IP address  **`192.168.1.10`**
+
+Notes:
+
+---
+
+## Exposing Services to Outside World
+
+* Kubernetes provides several ways to expose services to the outside.
+
+* **NodePorts**
+    - Kubernetes exposes the service through special ports (30000-32767) of the node IP address.
+
+* **Load balancer**
+    - Kubernetes interacts with the cloud provider to create a load balancer that redirects the traffic to the Pods. 
+
+* **Ingress Controller**
+    - Kubernetes ingress includes support for TLS and L7 http-based traffic routing. This feature is available from Kubernetes v1.2.0.
+
+* References
+    - [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+A NodePort service is the most basic way to get external to the service. 
+Specific ports on all the Nodes are open and serve requests.
+You can only have one service per port, and you can only use ports 30000–32767.
+
+A Load Balacer is a recommended approach to route traffic to multiple Pods.
+It will take into consideration the load on Pods before sending traffic over.
+
+---
+
+## Exposing a Service-1: Node Ports
+
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* One of the simplest ways of making our service to outside world is called **NodePort**
+
+* Here a client can access the service by connecting to **any node on port 30000**
+
+* Traffic flow:
+    1. Client hits a **node:30000**
+    2. Node forwards the traffic to a **service IP address** (this is virtual btw)
+    3. The service then bounces traffic to **any of the pods servicing**
+
+---
+
+## NodePort Service Definition
+
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  type: NodePort
+  ports:
+    # Three types of ports for a service
+    # nodePort - a static port assigned on each the node
+    # port - port exposed internally in the cluster
+    # targetPort - the container port to send requests to
+    - nodePort: 30000
+      port: 8080
+      targetPort: 80
+      protocol: TCP
+  selector:
+    app: nginx
+```
+
+* Can access the service using any **`node_ip:30000`**
+
+```bash
+$   curl  node1_ip:30000/
+```
+
+* NodePorts are only available on ports **30000-32767**
+
+---
+
+## Exposing a Service-2: Load Balancer
+
+<img src="../../assets/images/kubernetes/load-balancer-1.png" style="width:40%;float:right;" />  <!-- {"left" : 1.27, "top" : 1.66, "height" : 4.69, "width" : 7.79} -->
+
+* This the recommend approach for exposing a service
+
+* Kubernetes can work with external load balancers provided by cloud vendors
+
+* You may incur additional charges for external load balancer services
+
+---
+
+## Load Balancer
+
+* Here we see a Load Balancer (LB)  in action.
+* Client **always**  contacts the LB at **10.0.0.1:9376**
+* And the traffic can be sent to any one of 3 Pods
+
+<img src="../../assets/images/kubernetes/Internal-Load-Balancing-2.png" style="width:70%;" />  <!-- {"left" : 1.27, "top" : 1.66, "height" : 4.69, "width" : 7.79} -->
+
+Notes:
+
+---
+
+## Load Balancer Definition
+
+```yaml
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: webapp-service
+spec:
+  selector:
+    app: webapp
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+```
+
+---
+
+## Exposing a Service: Ingress
+
+* Ingress is actually **NOT** a service, it uses multiple kubernetes services and acts as a **smart router**
+
+* Ingress offers very flexible routing.  Here we see routing based on 'hostname' and 'path'
+
+* There are many ingress controllers available for Kubernetes
+    - [AWS](https://github.com/kubernetes-sigs/aws-load-balancer-controller#readme),  [GCE](https://git.k8s.io/ingress-gce/README.md#readme) and [nginx](https://git.k8s.io/ingress-nginx/README.md#readme), [Contour](https://github.com/heptio/contour) are a few of the popular ones
+
+<img src="../../assets/images/kubernetes/ingress-1.png" style="width:45%;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+
+---
+
+## Kubernetes Ingress
+
+* Ingress consists of two components, an Ingress Resource and an Ingress Controller
+
+- **Ingress Resource** is a collection of rules for the inbound traffic to reach Services. These are Layer 7 (L7) rules that allow hostnames (and optionally paths) to be directed to specific Services in Kubernetes.
+
+- **Ingress Controller** acts upon the rules set by the Ingress Resource, typically via an HTTP or L7 load balancer. It is vital that both pieces are properly configured so that traffic can be routed from an outside client to a Kubernetes Service
+
+- **NGINX** is a high performance web server and is a popular choice for an Ingress Controller because of its robustness and the many features it has
+
+---
+
+## Ingress Defintion
+
+<img src="../../assets/images/kubernetes/ingress-1.png" style="width:45%;float:right;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+
+```yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: my-ingress
+spec:
+  backend:
+    serviceName: other
+    servicePort: 8080
+  rules:
+  - host: foo.mydomain.com
+    http:
+      paths:
+      - backend:
+          serviceName: foo
+          servicePort: 8080
+  - host: mydomain.com
+    http:
+      paths:
+      - path: /bar/*
+        backend:
+          serviceName: bar
+          servicePort: 8080
+```
+
+---
+
+## Ingress-based HTTP Load Balancer
+
+<img src="../../assets/images/kubernetes/Ingress-based-HTTP-Load-Balancer.png" style="width:60%;float:right;" /> <!-- {"left" : 2.01, "top" : 1.01, "height" : 5.48, "width" : 6.24} -->
+
+* Here we see we are routing traffic based on rules.
+* We are serving both **HTTP and HTTPS** requests.
+* **`Acme.com/app1`**  is going to 2 worker nodes on left.
+* **`Acme.com/app2`**  is going to 2 worker nodes on right.
+
+Notes:
+
+Instructor Notes :
+
+Participant Notes :
+
+---
+
+## Lab: Ingress
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Setup an Ingress
+
+* **Approximate run time:**
+    - 30 mins
+
+* **Instructions:**
+    - Please complete **DEPLOY-1**
+    - Try this bonus lab : https://www.qwiklabs.com/focuses/872?parent=catalog
 
 Notes:
 
