@@ -15,9 +15,10 @@ Apache Kafka has emerged as a popular messaging component for streaming platform
 * Programming using Kafka API
 * Kafka Streams API
 * Kafka Connect
+* Confluent Platform
+* Kafka Administration
 * Monitoring Kafka
 * Tuning / Troubleshooting Kafka
-* Kafka Administration
 * Best practices
 * Use cases
 
@@ -117,6 +118,17 @@ Lectures and hands on labs. (50%   50%)
 * Connect ecosystem
 * Popular connectors
 * Sample configurations
+
+### Kafka Administration
+
+* Hardware selection
+* Software prerequisites
+* Kafka specific settings for OS, Disks, memory, CPU and Network
+* Installing and setting up Kafka
+* Verifying installation
+* Securing Kafka
+* Capacity planning
+* Best practices
 
 ### Monitoring and Instrumenting Kafka
 
