@@ -119,7 +119,7 @@ In addition to the objectives you identified in taking this module, these are th
 * **Helm** runs on your laptop, CI/CD, or wherever you want it to run.
 
 * **Charts** are Helm packages that contain at least two things:
-    -  A description of the package (Chart.yaml)
+    - A description of the package (Chart.yaml)
     - One or more templates, which contain Kubernetes manifest files
 
 * Charts can be stored on disk, or fetched from remote chart repositories (like Debian or RedHat packages)
@@ -229,6 +229,7 @@ Notes:
 ```bash
 $   helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
+
 * List charts to install
 
 ```bash
@@ -250,6 +251,24 @@ $   helm install bitnami/mysql --generate-name
 ```bash
 $   helm list
 ```
+
+Notes:
+
+---
+
+## Lab: Using Helm
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Use Helm to install a package
+
+* **Approximate run time:**
+    - 20-30 mins
+
+* **Instructions:**
+    - **Instructor please demo this lab first**
+    - Please complete **HELM-1**
 
 Notes:
 
