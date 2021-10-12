@@ -1,5 +1,7 @@
 # Kubernetes Operations
 
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" />
+
 ---
 
 # Health Checks
