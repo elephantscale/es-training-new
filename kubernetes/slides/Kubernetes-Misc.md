@@ -160,7 +160,7 @@ Notes:
     - Managing repositories
     - Interacting with the Tiller server
 
-<img src="../../assets/images/kubernetes/helm-architecture-1.png" style="width:60%;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+<img src="../../assets/images/kubernetes/helm-architecture-1.png" style="width:55%;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
 
 Notes:
 
@@ -176,7 +176,7 @@ Notes:
     - Installing charts into Kubernetes, and then tracking the subsequent releases
     - Upgrading and uninstalling charts by interacting with Kubernetes
 
-<img src="../../assets/images/kubernetes/helm-architecture-1.png" style="width:50%;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+<img src="../../assets/images/kubernetes/helm-architecture-1.png" style="width:45%;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
 
 Notes:
 
