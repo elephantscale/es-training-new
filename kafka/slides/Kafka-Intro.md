@@ -716,7 +716,7 @@ Notes:
 
 ## Kafka Message
 
-<img src="../../assets/images/kafka/kafka-message-format.jpg" alt="Commit-Log-02.png" style="width:45%;float:right; "/><!-- {"left" : 6.64, "top" : 0.97, "height" : 0.91, "width" : 3.54} -->
+<img src="../../assets/images/kafka/kafka-message-format.png" style="width:55%;float:right; "/><!-- {"left" : 6.64, "top" : 0.97, "height" : 0.91, "width" : 3.54} -->
 
  * In Kafka basic 'data unit' is a message
 

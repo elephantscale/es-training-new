@@ -1,24 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="1070 -53 868 904" width="868" height="904">
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="1070 -53 868 904" width="868" height="904" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#a12032">
       <g>
         <path d="M -3.2 0 L 0 1.2 L 0 -1.2 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
-    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
-      <font-face-src>
-        <font-face-name name="CenturyGothic-Bold"/>
-      </font-face-src>
-    </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#bb1964">
       <g>
         <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2021-09-15 15:41:18 +0000</metadata>
   <g id="Canvas_1" fill-opacity="1" stroke="none" fill="none" stroke-dasharray="none" stroke-opacity="1">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
@@ -90,62 +83,56 @@
         <line x1="1657.8012" y1="183.17691" x2="1568.8224" y2="101" marker-start="url(#FilledArrow_Marker)" stroke="#a12032" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
       </g>
       <g id="Graphic_22">
-        <text transform="translate(1438.2988 21.5)" fill="#250060">
+        <text transform="translate(1438.2988 21.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Service</tspan>
         </text>
       </g>
       <g id="Graphic_23">
-        <text transform="translate(1233.063 242.23)" fill="#250060">
+        <text transform="translate(1233.063 242.23)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Pod</tspan>
         </text>
       </g>
       <g id="Graphic_24">
-        <text transform="translate(1472.063 242.23)" fill="#250060">
+        <text transform="translate(1472.063 242.23)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Pod</tspan>
         </text>
       </g>
       <g id="Graphic_25">
-        <text transform="translate(1711.063 242.23)" fill="#250060">
+        <text transform="translate(1711.063 242.23)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Pod</tspan>
         </text>
       </g>
       <g id="Graphic_26">
-        <text transform="translate(1328.3086 369)" fill="#250060">
+        <text transform="translate(1328.3086 369)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Kubernetes Cluster</tspan>
         </text>
       </g>
       <g id="Graphic_27">
-        <text transform="translate(1238.268 514.73)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">VM</tspan>
-        </text>
+        <text transform="translate(1238.268 514.73)" fill="#250060" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Node</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_28">
-        <text transform="translate(1477.268 514.73)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">VM</tspan>
-        </text>
+        <text transform="translate(1477.268 514.73)" fill="#250060" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Node</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_29">
-        <text transform="translate(1716.268 514.73)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">VM</tspan>
-        </text>
+        <text transform="translate(1716.268 514.73)" fill="#250060" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Node</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_30">
-        <text transform="translate(1183.4731 657.7317)" fill="#250060">
+        <text transform="translate(1183.4731 657.7317)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Port 3000</tspan>
         </text>
       </g>
       <g id="Graphic_31">
-        <text transform="translate(1661.4731 657.7317)" fill="#250060">
+        <text transform="translate(1661.4731 657.7317)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Port 3000</tspan>
         </text>
       </g>
       <g id="Graphic_32">
-        <text transform="translate(1422.4731 657.7317)" fill="#250060">
+        <text transform="translate(1422.4731 657.7317)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Port 3000</tspan>
         </text>
       </g>
       <g id="Graphic_33">
-        <text transform="translate(1452.4829 771.5)" fill="#250060">
+        <text transform="translate(1452.4829 771.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Traffic</tspan>
         </text>
       </g>

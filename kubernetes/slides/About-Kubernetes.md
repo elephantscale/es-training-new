@@ -1,187 +1,141 @@
-About Kubernetes 
-=================
+# Kubernetes
 
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /> 
+
+---
+
+## Instructor Introduction
+
+* Instructor, please introduce yourself
+
+* Talk about your background and your experience in the subject
+
+---
+
+## About This Class
+
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:25%;float:right;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:25%;float:right;clear:both;" /> 
+
+* Objectives:
+    - Learn about Docker and Kubernetess
+    - Get hands-on experience
+
+* A **practical approach to Docker and Kubernetes**
+
+* Skill level: **Intro to intermediate**
+
+* Format: **50% lectures + 50% labs**
+
+* This is a **very hands-on** class
+
+Notes:
+
+---
 
 ## Agenda
 
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:25%;float:right;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:25%;float:right;clear:both;" /> 
 
- * 3 days
-
- *  **Day 1 (Introducing Orchestration)** 
-
-     - Kubernetes Introduction
-
-     - Introducing Containers
-
-     - Docker
-
-     - Microservices
-
-     - Kubernetes Cluster Roles
-
-
- *  **Day 2 (Kubernetes)** 
-
-     - Resource Labels
-     
-     - Clusters
-
-     - Resources
-
-     - Load Balancing
-
-Notes: 
-
+* **Day 1**
+    - Containers intro
+    - Docker intro
+    - Microservices
+    - Kubernetes introduction
+* **Day 2**
+    - Kubernetes architecture
+    - Pods, Containers, Replicas
+    - Labels and selectors
+    - Storage
+    - Networking
+* **Day 3**
+    - Resource management
+    - Autoscaling and load balancing
+    - Kubernetes in the cloud
+    - Security
+    - Practical examples
 
 ---
 
+## Pre-requisites & Expectations
 
-## Agenda Continued
+* Intended audience:
+    - Admins, developers, architects
 
- *  **Day 3  (Kubernetes: Intermediate**  **)** 
+* **Basic Linux knowledge** is assumed
 
-     - Autoscaling
+* Some software development experience (languages, databases, ...)
 
-     - Resource Management
+* Curiosity!
 
-     - Administration
+    - Ask a lot of questions
 
-     - Argo Workflows
-
-     - Kubeflow
-
-
-Notes: 
-
-
----
-
-## Pre-requisites for Kubernetes Class
-
-
- * Basic Linux knowledge is assumed
-
- * Some software development experience (languages, databases, …)
-
- * Curiosity!
-
-     - Ask a lot of questions 
-
- * This is an intro-intermediary class.
-
-Notes: 
-
-
+* This is an **intro-intermediary** class.
 
 ---
 
 ## Our Teaching Philosophy
 
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:45%;float:right;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
 
- * Emphasis on concepts & fundamentals
+* Emphasis on concepts & fundamentals
 
- * API
+* Highly interactive (questions, discussions, etc. are welcome)
 
- * Highly interactive (questions and discussions are welcome)
-
- * Hands-on (learn by doing)
-
-
-Notes: 
-
-
+* Hands-on (learn by doing)
 
 ---
 
-## Lots of Labs: Learn By Doing
+## Class Introductions
 
+* Run a quick background survey if applicable, and go over the responses
 
- * Where is the ANY key?
+* Students please introduce yourselfs (time permitting)
+    - Your Name
+    - Your background (developer, admin, manager, etc.)
+    - Technologies you are familiar with
+    - Familiarity with Docker and Kubernetes   
+    (scale of 1 - 4 ;  1 - new, 2 - know some concepts,  3 - too a course, 4 -  using it at work)
+    - Something non-technical about you!  
+    (favorite ice cream flavor / hobby...etc)
 
-![](../../assets/images/about/any-key.png) <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
-
-
-Notes: 
-
-
-
----
-
-## Analogy: Learning To Fly…
-
-
-![](../../assets/images/about/learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
-
-
-Notes: 
-
-
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 ---
 
-## Instruction
+## Recommended Resources
 
 
-![](../../assets/images/about/classroom-instruction.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+* Books
+    - [Docker: Up & Running, 2nd edition](https://learning.oreilly.com/library/view/docker-up/9781492036722/)
+    - [Kubernetes: Up & Running, 2nd Edition](https://learning.oreilly.com/library/view/kubernetes-up-and/9781492046523/)
+    - [Kubernetes Best Practices](https://learning.oreilly.com/library/view/kubernetes-best-practices/9781492056461/)
 
-Notes: 
+* Online
+    - [docs.docker.com](https://docs.docker.com/)
+    - [Docker cheat sheet](https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf)
+    - [kubernetes.io/docs](https://kubernetes.io/docs/home/) 
+    - [Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
-http://aviation-schools.regionaldirectory.us/learn-to-fly-720.jpg
-
-
-
----
-
-## + Flight Time
-
-![](../../assets/images/about/cockpit.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
-
-Notes: 
-
-http://www.wikihow.com/Become-a-Certified-Flight-Instructor
-
-
+<img src="../../assets/images/books/docker-up-and-running-9781492036722.jpeg" style="width:15%;"/> &nbsp; &nbsp; 
+<img src="../../assets/images/books/Kubernetes-Up-and-Running-2nd-Edition-9781492046523.jpeg" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/books/kubernetes-best-practices__9781492056461.jpeg" style="width:15%;"/> &nbsp; &nbsp;
 
 ---
 
-## This Will Take A Lot Of Practice 
+## Class Logistics
 
-![](../../assets/images/about/practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+* Instructor's contact
 
+* Slides
 
-Notes: 
+* Labs
 
-
-
----
-
-
-
-## About You And Me
-
-
- * About Instructor
-
- * About you
-
-     - Your Name
-
-     - Your background (developer, admin, manager, …)
-
-     - Technologies you are familiar with
-
-     - Familiarity with Kubernetes (scale of 1 – 4 ;  1 – new,   4 – expert)
-
-     - Something non-technical about you!(favorite ice cream flavor / hobby…)
-
-![](../../assets/images/about/ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
-
-![](../../assets/images/about/hiking.png)   <!-- {"left" : 3.60, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
- 
-
-Notes: 
-
-
+* Lab environment
 
 ---
 
+## Let's Get Started!
+
+<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/>  &nbsp;  &nbsp;

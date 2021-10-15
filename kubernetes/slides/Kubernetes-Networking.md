@@ -1,25 +1,22 @@
-# Kubernetes: Networking
+
+# Kubernetes Networking
+
+<img src="../../assets/images/kubernetes/networking-1.png" style="width:35%;" />
 
 ---
 
 ## Module Objectives
 
-After this module, participants will be able to:
-
- * Explain Kubernetes Networking
- * Compare Kubernetes vs. Docker Networking Model
- * Kubernetes Networking Model Implementations
- * How Pods Communicate with Each Other
- * How Pods Communicate with Services
- * Incoming Traffic from the Outside World
- * DNS for Services and Pods
- * Network Policies
- * Network Extensions
- * CNI Plugins
-
----
-
-# Networking Overview
+* Explain Kubernetes Networking
+* Compare Kubernetes vs. Docker Networking Model
+* Kubernetes Networking Model Implementations
+* How Pods Communicate with Each Other
+* How Pods Communicate with Services
+* Incoming Traffic from the Outside World
+* DNS for Services and Pods
+* Network Policies
+* Network Extensions
+* CNI Plugins
 
 ---
 
@@ -67,7 +64,6 @@ After this module, participants will be able to:
 
 - For Docker containers to communicate across machines port allocation needs to be done on the parent machine’s own IP address.
 
-
 Notes:
 
 Instructor Notes :
@@ -83,7 +79,7 @@ So we need to allocate ports on hosts carefully so there is no conflict among Do
 
 ## Kubernetes Networking Requirements
 
-<img src="../../assets/images/kubernetes/networking-1.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/networking-1.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * All containers can communicate with all other containers without NAT
 * All nodes can communicate with all containers (and vice-versa) without NAT
@@ -92,7 +88,6 @@ So we need to allocate ports on hosts carefully so there is no conflict among Do
 * Nodes can communicate with all containers.
 * In many cases, to meet above requirements SDN (Software Defined Networking) need to be used.
 * All SDNs accomplish the same three goals – however, they may have different implementations with often unique features.
-
 
 Notes:
 
@@ -117,7 +112,6 @@ How ever, SDNs can get complicated to administer.
    * Pod-to-Service Communication
 
    * External-to-Internal Communication
-
 
 Notes:
 
@@ -190,8 +184,8 @@ Once traffic arrives at a node, it is routed to the correct service backends via
 
 ## External-to-Internal Communication
 
-<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/kubernetes/load-balancer-1.png" style="width:25%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:20%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/load-balancer-1.png" style="width:20%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * Permitting external traffic into the cluster can be accomplished by
     - Load balancers
@@ -201,7 +195,6 @@ Once traffic arrives at a node, it is routed to the correct service backends via
 * Good reference: [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
 
 <img src="../../assets/images/kubernetes/ingress-1.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
 
 ---
 
@@ -218,7 +211,6 @@ Once traffic arrives at a node, it is routed to the correct service backends via
 * **OpenVSwitch** : OpenVSwitch is used to set up networking between pods across nodes.
 
 * **Calico** : Calico provides simple, scalable and secure virtual networking.
-
 
 Notes:
 
@@ -262,7 +254,6 @@ Calico provides simple, scalable and secure virtual networking.
 
 * A pod should be able to communicate with all pods. For example, 10.1.1.2 should be able to communicate with 10.1.1.3, 10.1.2.2 and 10.1.2.3 directly (without NAT)
 
-
 Notes:
 
 Instructor Notes :
@@ -272,10 +263,6 @@ Participant Notes :
 For the illustration of these requirements let us use a cluster with two cluster nodes.
 
 So from above Kubernetes requirements following communication paths must be established by the network.
-
----
-
-# DNS for Services and Pods
 
 ---
 
@@ -294,80 +281,6 @@ So from above Kubernetes requirements following communication paths must be esta
 
 ---
 
-## Autoscaling During Rolling Update
-
-
-  * **Discovery**
-
-    - Services need to discover each other dynamically, to get IP addresses and port details to communicate with other services in the cluster
-    - **Service Registry** maintains a database of services and provides an external API (HTTP/DNS) as a distributed key/value store
-    - Registrator registers services dynamically to the Service registry by listening to the Service creation and deletion events
-
-
-  * **Health Check**
-
-     - Monitors Service instance health dynamically and updates the Service registry accordingly
-
-
-  * **Load Balancing**
-
-    - Dynamic load balancing of traffic to healthy instances that provide the target service
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-The registry serves as a place to publish available services – think like a 'yellow pages'.
-For example a service that offers zipcode lookup can be advertised in the registry, that can be discovered by other services.
-
-A health check is performed every few seconds on the containers.
-This ensures the containers are alive and running.
-
-Load balancing is explained in slide no. 42. 
-
-
----
-
-## Health Check Options
-
-
-  * **Script based check**
-
-    - Running user provided script on a periodic basis
-
-  * **HTTP based check**
-
-    - Periodic HTTP based check to the service IP and endpoint address
-
-  * **TCP based check**
-
-    - TCP based check is done to service IP and specified port periodically
-
-  * **Container based check**
-
-    - Health check application is also available as a Container
-    - Container is periodically invoked by Health Check Manager
-
-
-
-Notes:
-
-Instructor Notes :
-
-Participant Notes :
-
-There various ways of doing health checks.
-
-For example to test a Web Service, we can perform a HTTP check.
-We can query the Web Service and examine the return code.
-If we get return code 200, then we know the Web Service is alive.
-If we get a 404 code, we know the Web Service is down.
-
----
-
-
 ## Lab: Networking - DNS Settings
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
@@ -385,7 +298,6 @@ Notes:
 
 ---
 
-
 ## Review and Q&A
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
@@ -394,7 +306,6 @@ Notes:
 * Let's go over what we have covered so far
 
 * Any questions?
-
 
 ---
 
@@ -407,6 +318,7 @@ Notes:
 ---
 
 ## CNI Plugins List
+
  * Flannel
  * WeaveNet
  * Calico
@@ -417,6 +329,7 @@ Notes:
 ---
 
 ## Kubenet
+
  * It is typically useful for single-node environments. 
  * It can be utilized for communication between nodes by using it together with a cloud provider that establishes the rules.
  * Kubenet is a very basic network plugin, so if you are looking for features such as cross-node networking or network policy, Kubenet will be of little help.
@@ -424,21 +337,24 @@ Notes:
 ---
 
 ## Flannel
+
  * Flannel is a networking overlay fabric specifically designed for Kubernetes and created by CoreOS.
  * Flannel’s main advantage is it is well-tested and incurs a low cost.
- * Flannel distributes the full workload across the entire cluster. 
+ * Flannel distributes the full workload across the entire cluster.
  * Kubernetes, for proper communication and for locating services, performs port-mapping and assigns a unique IP address to each pod.
 
 ---
 
 ## Weave Net
+
  * Developed by Weaveworks
- * Weave is used to connect, monitor, visualize, and control Kubernetes. 
+ * Weave is used to connect, monitor, visualize, and control Kubernetes.
  * With Weave, you can create networks, firewalls with faster deployments, and gain powerful insights with easy automation troubleshooting and networking.
 
 ---
 
 ## OpenVSwitch using GRE/VXLAN
+
  * OpenVSwitch is used to set up networking between pods across nodes.
  * The tunnel type could be VxLAN or GRE (Generic Routing Encapsulation). GRE is used for tunneling of frames over an IP network.
  * VXLAN is preferable for big data centers when large-scale isolation needs to be performed within the network.
@@ -446,6 +362,7 @@ Notes:
 ---
 
 ## Calico
+
  * Introduced with Kubernetes 1.0, Calico provides L3 routed networking for Kubernetes Pods.
  * Calico provides simple, scalable and secure virtual networking.
  * It uses Border Gateway Protocol (BGP) for root distribution for each pod allowing integration of Kubernetes clusters with existing IT infrastructure.
@@ -454,13 +371,13 @@ Notes:
 
 ## Flannel Details
 
-![](../../assets/images/kubernetes/flannel1.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+<img src="../../assets/images/kubernetes/flannel1.png" style="width:80%;"/><!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 ---
 
 ## Flannel Networks
 
- * We show 3 Networks
+* We show 3 Networks
 
    - VPC network: all instances are in one VPC subnet 172.20.32.0/19. They have been assigned ip addresses in this range, all hosts can connect to each other because they are in same LAN.
 
@@ -472,7 +389,7 @@ Notes:
 
 ## Flannel Pod to Pod Communication
 
-![](../../assets/images/kubernetes/flannel2.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+<img src="../../assets/images/kubernetes/flannel2.png" style="width:80%;"/><!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 ---
 
@@ -486,8 +403,8 @@ Notes:
 
 ---
 
-
 ## Flannel Advantages and Disadvantages
+
  * Flannel Advantages:
    - Very Well Tested
    - Simple
@@ -499,21 +416,20 @@ Notes:
 
 ---
 
-
 ## Weave Net
 
-![](../../assets/images/kubernetes/weave-net-overview.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+<img src="../../assets/images/kubernetes/weave-net-overview.png" style="width:80%;"/><!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 ---
 
-
 ## Weave Net Overview
 
-![](../../assets/images/kubernetes/weave-net-network.png) <!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
+<img src="../../assets/images/kubernetes/weave-net-network.png" style="width:80%;"/><!-- {"left" : 0.55, "top" : 1.77, "height" : 3.27, "width" : 9.17} -->
 
 ---
 
 ## Weave Net Advantages and Disadvantages
+
  * Weave Net Advantages
    - Easy to Set Up
    - Encryption
@@ -521,5 +437,3 @@ Notes:
    - Plugins for Docker, Kubernetes, CLoud and others 
  * Disadvantages
    - Encryption very slow
-
-

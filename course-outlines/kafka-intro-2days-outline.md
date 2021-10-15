@@ -4,7 +4,7 @@ Dec 01, 2020
 
 ## Overview
 
-This course will teach Apache Kafka - a popular distributed messaging system.  
+Apache Kafka has emerged as a popular messaging component for streaming platforms. This course will introduce Kafka to students; we will learn about Kafka features and learn how to use it for streaming data.
 
 ## What You Will Learn
 
@@ -12,7 +12,7 @@ This course will teach Apache Kafka - a popular distributed messaging system.
 * Kafka concepts and architecture
 * Programming using Kafka API
 * Kafka Streams API
-* Kafka Connect
+* Monitoring Kafka
 * Tuning / Troubleshooting Kafka
 * Best practices
 * Use cases
@@ -71,6 +71,7 @@ Lectures and hands on labs. (50%  50%)
 * Consumers, Consumer Groups
 * Message retention
 * Scaling Kafka
+* Kafka across multiple data centers and disaster recovery
 * Labs:
   - Getting Kafka up and running
   - Using Kafka utilities
@@ -101,11 +102,15 @@ Lectures and hands on labs. (50%  50%)
 * Labs:
   - Kafka Streaming APIs
 
-### Kafka Connect
+### Monitoring and Instrumenting Kafka
 
-* Connect ecosystem
-* Popular connectors
-* Sample configurations
+* Monitoring Kafka metrics
+* Introduction to Metrics library
+* Instrumenting Kafka applications with the Metrics library
+* Using Grafana to visualize metrics
+* Labs
+    - Monitor Kafka cluster
+    - Instrument Kafka applications with the metrics library
 
 ### Kafka Best Practices
 
@@ -122,7 +127,3 @@ Lectures and hands on labs. (50%  50%)
 ### Kafka Case Studies
 
 * This section will feature case studies from various companies using Kafka solve real world problems
-
----
-[![Metrics With Kafka From Elephant Scale](https://res.cloudinary.com/marcomontalbano/image/upload/v1579880452/video_to_markdown/images/vimeo--218108535-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://vimeo.com/218108535 "Metrics With Kafka From Elephant Scale")
- 

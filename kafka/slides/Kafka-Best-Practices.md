@@ -148,10 +148,12 @@ Notes:
 
 ## Best Practices: Topics / Partitions
 
-<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:40%;float:right;" /><!-- {"left" : 5.95, "top" : 1.16, "height" : 3.06, "width" : 4.16} -->
+<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:50%;float:right;" /><!-- {"left" : 5.95, "top" : 1.16, "height" : 3.06, "width" : 4.16} -->
 
  * Number of partitions correspond parallelism
+
  * Higher the partitions -> more consumers can be added
+
  * How to calculate optimal number of partitions?
      - Let's say Producer throughput to a single partition as P
      - Say Consumer throughput from a single partition as C
@@ -168,12 +170,13 @@ Notes:
 
 ## Best Practices: Topics / Partitions
 
-<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:40%;float:right;" /><!-- {"left" : 5.95, "top" : 1.16, "height" : 3.06, "width" : 4.16} -->
+<img src="../../assets/images/kafka/Partitions.png"  style="width:50%;float:right;" /><!-- {"left" : 5.95, "top" : 1.16, "height" : 3.06, "width" : 4.16} -->
 
 * Ensure number of partitions >= number of brokers
-     -  **Quiz**: Why?
- * Partitions can always be increased later but not decreased
- * Altering number of partitions in a KEY-VALUE topic is a little tricky?
+
+* Partitions can always be increased later but not decreased
+
+* Altering number of partitions in a KEY-VALUE topic is a little tricky?
      - Keys have to be re-hashed to partitions
 
 Notes:
@@ -241,7 +244,7 @@ Notes:
 
 ## Best Practices: Use Batching
 
-<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
+<img src="../../assets/images/kafka/batch-send-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
  * Batching will dramatically increase throughput, specially in producers
 

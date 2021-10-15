@@ -85,16 +85,17 @@ plt.show()
 ## CNN Example 1 - CIFAR
 
 * Here we are creating a convolutional layer
-    - __`CONV2D (32, (3,3), input_shape=(32,32,3))`__
-    - filters=32
+    - __`CONV2D (filters=64, kernel=(3,3), input_shape=(32,32,3))`__
+    - filters=64 (filters are initialized randomly from a 'uniform distribution' and learned during training - just like any other weights)
     - kernel / convolution size = 3x3
 * Input shape is equivalent to image dimensions (32, 32, 3)
     - 32 x 32 pixels
     - 3 channels (RGB) - color images
+    - [Reference](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D)
 
 ```python
 model = models.Sequential()
-model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)))
+model.add(layers.Conv2D(64, (3, 3), activation='relu', input_shape=(32, 32, 3)))
 model.add(layers.MaxPooling2D((2, 2)))
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 model.add(layers.MaxPooling2D((2, 2)))

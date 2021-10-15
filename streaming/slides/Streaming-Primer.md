@@ -442,7 +442,17 @@ Notes:
 
 ## 3 Tier Streaming Architecture
 
-<img src="../../assets/images/streaming/streaming-architecture-1.png" style="width:65%;"/><!-- {"left" : 0.56, "top" : 3.04, "height" : 3.56, "width" : 9.13} -->
+* Here is a simplified streaming architecture
+
+* We see 3 distinct stages
+
+* **Ingest** stage captures data
+
+* **Processing** handles the data
+
+* And the processed data is stored in **Storage** layer
+
+<img src="../../assets/images/streaming/streaming-architecture-1.png" style="width:95%;"/><!-- {"left" : 0.56, "top" : 3.04, "height" : 3.56, "width" : 9.13} -->
 
 Notes:
 
@@ -461,7 +471,7 @@ Notes:
     - Queues (MQ, JMS ..etc)
     - Cloud based queues like Amazon Kinesis
 
-<img src="../../assets/images/streaming/streaming-architecture-2.png"  style="width:50%;"/><!-- {"left" : 5.88, "top" : 3.48, "height" : 1.89, "width" : 4.21} -->
+<img src="../../assets/images/streaming/streaming-architecture-2.png"  style="width:90%;"/><!-- {"left" : 5.88, "top" : 3.48, "height" : 1.89, "width" : 4.21} -->
 
 Notes:
 
@@ -469,17 +479,19 @@ Notes:
 
 ## Processing
 
-<img src="../../assets/images/streaming/streaming-architecture-3.png"  style="max-width:55%;float:right;"/><!-- {"left" : 4.84, "top" : 1.78, "height" : 2.41, "width" : 5.15} -->
+* We need to process events with low latency  (milliseconds to  seconds)
+* There are many **stream/event processing frameworks** available
+    - [Storm](https://storm.apache.org/)
+    - [Spark](https://spark.apache.org/)
+    - [NiFi](https://nifi.apache.org/)
+    - [Samza](http://samza.apache.org/)
+    - [Flink](https://flink.apache.org/)
+    - [Beam](https://beam.apache.org/)
+* References:
+    - [Evaluating Streaming Frameworks for Large-Scale Event Streaming](https://medium.com/adobetech/evaluating-streaming-frameworks-for-large-scale-event-streaming-7209938373c8)
+    - [7 Popular Stream Processing Frameworks Compared](https://www.upsolver.com/blog/popular-stream-processing-frameworks-compared)
 
-* Need to process events with low latency
-
-* So many to choose from!
-    - Storm
-    - Spark
-    - NiFi
-    - Samza
-    - Flink
-
+<img src="../../assets/images/streaming/streaming-architecture-3.png"  style="width:90%;"/><!-- {"left" : 4.84, "top" : 1.78, "height" : 2.41, "width" : 5.15} -->
 Notes:
 
 ---
@@ -505,23 +517,20 @@ Notes:
 
 ## Storage
 
-<img src="../../assets/images/streaming/streaming-architecture-4.png"  style="width:55%;float:right;"/><!-- {"left" : 5.95, "top" : 1.41, "height" : 2.02, "width" : 4.15} -->
-
-* This is **permanent store** for processed data
-
+* After events are processed, they are stored for later retrieval
 * Two choices:
     - Real time store
     - 'Forever' store
-
 * Real Time Store
     - Need to absorb data in real time
     - Usually a NoSQL storage (HBase, Cassandra ...etc)
     - May contain subset of data (last 1 year ..etc)
-
 * 'Forever store'
     - Needs to store massive amounts of data
     - Support analytics (usually batch)
     - Hadoop / HDFS
+
+<img src="../../assets/images/streaming/streaming-architecture-4.png"  style="width:90%;"/><!-- {"left" : 5.95, "top" : 1.41, "height" : 2.02, "width" : 4.15} -->
 
 Notes:
 
@@ -580,13 +589,13 @@ Notes:
 
 ---
 
-## Streaming Stack
+## Streaming Stack - Summary
 
 * Here are some popular choices for streaming stack
 
 * Each tier, you can plugin a technology -- think of it like legos!
 
-<img src="../../assets/images/streaming/Streaming-Platforms.png" alt="Streaming-Platforms.png" style="width:75%;"/><!-- {"left" : 0.41, "top" : 2.4, "height" : 4.26, "width" : 9.43} -->
+<img src="../../assets/images/streaming/streaming-platforms-1.png" style="width:75%;"/><!-- {"left" : 0.41, "top" : 2.4, "height" : 4.26, "width" : 9.43} -->
 
 
 

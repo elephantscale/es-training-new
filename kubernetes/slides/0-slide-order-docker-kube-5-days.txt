@@ -19,8 +19,10 @@
 ## Kubernetes
 Kubernetes-Intro.md
 Kubernetes-Essentials.md
+Kubernetes-Resources.md
 Kubernetes-Networking.md
+Kubernetes-Storage.md
+Kubernetes-Deployments.md
 Kubernetes-Operations.md
-Kubernetes-EcoSystem.md
-
-#Kubernetes-Advanced.m
+Kubernetes-Misc.md
+Kubernetes-Best-Practices.md

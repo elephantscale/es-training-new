@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="1350 1080 1884 876" width="1884" height="876" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#870d11">
+      <g>
+        <path d="M -2.6666667 0 L 0 1 L 0 -1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="1161.6" y="992.4">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.744"/>
+      <feOffset in="blur" result="offset" dx="5" dy="7"/>
+      <feFlood flood-color="black" flood-opacity=".7626265" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="Canvas_1" stroke-dasharray="none" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 1759.9647 1143.2403 L 2570.1057 1140.2364 C 2592.197 1140.1545 2610.1718 1157.9966 2610.2537 1180.0878 L 2611.998 1650.471 C 2612.0798 1672.5622 2594.2377 1690.5371 2572.1465 1690.619 C 2572.1465 1690.619 2572.1465 1690.619 2572.1465 1690.619 L 1762.0054 1693.623 C 1739.9142 1693.7049 1721.9393 1675.8628 1721.8574 1653.7716 L 1720.1133 1183.3884 C 1720.0314 1161.2971 1737.8734 1143.3223 1759.9647 1143.2403 Z" fill="white"/>
+        <path d="M 1759.9647 1143.2403 L 2570.1057 1140.2364 C 2592.197 1140.1545 2610.1718 1157.9966 2610.2537 1180.0878 L 2611.998 1650.471 C 2612.0798 1672.5622 2594.2377 1690.5371 2572.1465 1690.619 C 2572.1465 1690.619 2572.1465 1690.619 2572.1465 1690.619 L 1762.0054 1693.623 C 1739.9142 1693.7049 1721.9393 1675.8628 1721.8574 1653.7716 L 1720.1133 1183.3884 C 1720.0314 1161.2971 1737.8734 1143.3223 1759.9647 1143.2403 Z" stroke="#380093" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="20.0,20.0" stroke-width="10"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 1818.7105 1081.4882 L 2210.0733 1080.0371 C 2215.596 1080.0166 2220.0898 1084.4771 2220.1103 1089.9999 L 2220.4923 1193.0442 C 2220.5128 1198.567 2216.0523 1203.0607 2210.5295 1203.0812 C 2210.5295 1203.0812 2210.5295 1203.0812 2210.5295 1203.0812 L 1819.1668 1204.5323 C 1813.644 1204.5528 1809.1502 1200.0923 1809.1298 1194.5695 C 1809.1298 1194.5695 1809.1298 1194.5695 1809.1298 1194.5695 L 1808.7477 1091.5252 C 1808.7272 1086.0024 1813.1877 1081.5087 1818.7105 1081.4882 Z" fill="#ecdda4"/>
+      </g>
+      <g id="Line_25">
+        <line x1="2454.8183" y1="1622.5776" x2="2574.5517" y2="1828.3694" marker-start="url(#FilledArrow_Marker)" stroke="#870d11" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Line_26">
+        <line x1="2254.969" y1="1616.9863" x2="2530.5184" y2="1828.5327" marker-start="url(#FilledArrow_Marker)" stroke="#870d11" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Line_28">
+        <line x1="2045.123" y1="1610.9686" x2="2486.485" y2="1828.696" marker-start="url(#FilledArrow_Marker)" stroke="#870d11" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 2317.0785 1495.5667 L 2505.6087 1494.8676 C 2511.1315 1494.8471 2515.6252 1499.3076 2515.6457 1504.8305 L 2515.9644 1590.7821 C 2515.9848 1596.305 2511.5243 1600.7986 2506.0015 1600.8191 C 2506.0015 1600.8191 2506.0015 1600.8191 2506.0015 1600.8191 L 2317.4713 1601.5182 C 2311.9485 1601.5386 2307.4548 1597.0781 2307.4343 1591.5553 L 2307.1156 1505.6037 C 2307.095 1500.0809 2311.5556 1495.5871 2317.0785 1495.5667 C 2317.0785 1495.5667 2317.0785 1495.5667 2317.0785 1495.5667 Z" fill="#033399"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 2072.084 1496.475 L 2260.6143 1495.776 C 2266.137 1495.7555 2270.6309 1500.216 2270.6513 1505.7389 L 2270.97 1591.6905 C 2270.9905 1597.2133 2266.53 1601.707 2261.0072 1601.7275 C 2261.0072 1601.7275 2261.0072 1601.7275 2261.0072 1601.7275 L 2072.477 1602.4266 C 2066.9542 1602.447 2062.4604 1597.9865 2062.44 1592.4637 L 2062.1213 1506.512 C 2062.1008 1500.9893 2066.5613 1496.4955 2072.084 1496.475 C 2072.084 1496.475 2072.084 1496.475 2072.084 1496.475 Z" fill="#033399"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 1827.0898 1497.3835 L 2015.62 1496.6844 C 2021.1428 1496.664 2025.6365 1501.1245 2025.657 1506.6473 C 2025.657 1506.6473 2025.657 1506.6473 2025.657 1506.6473 L 2025.9757 1592.599 C 2025.9962 1598.1217 2021.5356 1602.6155 2016.0128 1602.636 L 1827.4826 1603.335 C 1821.9598 1603.3555 1817.466 1598.895 1817.4456 1593.3721 C 1817.4456 1593.3721 1817.4456 1593.3721 1817.4456 1593.3721 L 1817.127 1507.4205 C 1817.1064 1501.8977 1821.567 1497.404 1827.0898 1497.3835 Z" fill="#033399"/>
+      </g>
+      <g id="Graphic_23">
+        <path d="M 1996.542 1830.5126 L 3223.541 1825.963 C 3229.064 1825.9425 3233.5577 1830.403 3233.578 1835.9259 C 3233.578 1835.9259 3233.578 1835.9259 3233.578 1835.9259 L 3233.9602 1938.9701 C 3233.9807 1944.493 3229.52 1948.9867 3223.9974 1949.0071 L 1996.9983 1953.5567 C 1991.4755 1953.5772 1986.9818 1949.1167 1986.9613 1943.5939 L 1986.5793 1840.5496 C 1986.5588 1835.0268 1991.0193 1830.533 1996.542 1830.5126 Z" fill="#e8c02b"/>
+      </g>
+    </g>
+    <g id="Canvas_1_TEXTS">
+      <title>TEXTS</title>
+      <g id="Graphic_11">
+        <text transform="translate(2523.2702 1859.2599)" fill="#2500a1" style="white-space: pre;">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="50">service</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(2038.0526 1283.865)" fill="#2500a1" style="white-space: pre;">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="50">ReplicaSet</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14" filter="url(#Shadow)">
+        <text transform="translate(1872.54 1519.5097)" fill="white" style="white-space: pre;">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="white" x="0" y="50">pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(1355.3259 1355.9297)" fill="#2500a1" style="white-space: pre;">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="50">- labels:</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="111">  - app: hello</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(1586.1944 1828.7599)" fill="#b26b2e" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#b26b2e" x="0" y="50">- selector:</tspan><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#b26b2e" x="0" y="111">  - app: hello</tspan><tspan x="0" dy="1em">​</tspan>        </text>
+      </g>
+      <g id="Graphic_20" filter="url(#Shadow)">
+        <text transform="translate(2117.5344 1518.6013)" fill="white" style="white-space: pre;">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="white" x="0" y="50">pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21" filter="url(#Shadow)">
+        <text transform="translate(2362.5288 1517.6929)" fill="white" style="white-space: pre;">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="white" x="0" y="50">pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(1867.1102 1111.7847)" fill="#2500a1" style="white-space: pre;">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2500a1" x="0" y="50">deployment</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

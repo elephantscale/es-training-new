@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-735 -148 2101 854" width="2101" height="854">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#333"/>
+      <stop offset=".05032659" stop-color="#3d3d3d"/>
+      <stop offset="1" stop-color="black"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-206.43317 261.96767) rotate(90) scale(343.3054)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#676767"/>
+      <stop offset=".169" stop-color="#5d5d5d"/>
+      <stop offset="1" stop-color="black"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient_2" gradientTransform="translate(-304.00676 494.24826) rotate(-90) scale(227.7335)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#676767"/>
+      <stop offset=".169" stop-color="#5d5d5d"/>
+      <stop offset="1" stop-color="black"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_3" gradientTransform="translate(-103.32995 387.86597) rotate(84.13041) scale(225.31356)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9d9d9"/>
+      <stop offset=".09605765" stop-color="#cfcfcf"/>
+      <stop offset="1" stop-color="black"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_4" gradientTransform="translate(-206.2443 628.0085) rotate(90) scale(42.060596)"/>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient_4" gradientTransform="translate(-206.43375 615.504) rotate(90) scale(45.84984)"/>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient_4" gradientTransform="translate(-206.43375 615.504) rotate(90) scale(45.84984)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9d9d9"/>
+      <stop offset=".09605765" stop-color="#cfcfcf"/>
+      <stop offset="1" stop-color="black"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_5" gradientTransform="translate(-206.2443 651.1229) rotate(-90) scale(46.60769)"/>
+    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient_5" gradientTransform="translate(-207.00214 643.92335) rotate(-90) scale(10.60988)"/>
+    <linearGradient id="Obj_Gradient_9" xl:href="#Gradient_5" gradientTransform="translate(-207.00214 643.92335) rotate(-90) scale(10.60988)"/>
+    <linearGradient id="Obj_Gradient_10" xl:href="#Gradient_5" gradientTransform="translate(-194.30817 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_11" xl:href="#Gradient_5" gradientTransform="translate(-305.52245 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_12" xl:href="#Gradient_5" gradientTransform="translate(-216.85417 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_13" xl:href="#Gradient_5" gradientTransform="translate(-149.97403 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_14" xl:href="#Gradient_5" gradientTransform="translate(-46.717163 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_15" xl:href="#Gradient_5" gradientTransform="translate(-283.35538 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_16" xl:href="#Gradient_5" gradientTransform="translate(-127.80696 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_17" xl:href="#Gradient_5" gradientTransform="translate(-260.99885 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_18" xl:href="#Gradient_5" gradientTransform="translate(-238.83178 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_19" xl:href="#Gradient_5" gradientTransform="translate(-16.782144 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_20" xl:href="#Gradient_5" gradientTransform="translate(-105.45043 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_21" xl:href="#Gradient_5" gradientTransform="translate(-.29893724 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_22" xl:href="#Gradient_5" gradientTransform="translate(-21.518698 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_23" xl:href="#Gradient_5" gradientTransform="translate(-25.497403 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_24" xl:href="#Gradient_5" gradientTransform="translate(-5.035491 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_25" xl:href="#Gradient_5" gradientTransform="translate(-327.68952 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_26" xl:href="#Gradient_5" gradientTransform="translate(-61.30575 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_27" xl:href="#Gradient_5" gradientTransform="translate(-83.47282 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_28" xl:href="#Gradient_5" gradientTransform="translate(-39.138677 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_29" xl:href="#Gradient_5" gradientTransform="translate(-172.1411 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_30" xl:href="#Gradient_5" gradientTransform="translate(-194.6871 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_31" xl:href="#Gradient_5" gradientTransform="translate(-172.89895 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_32" xl:href="#Gradient_5" gradientTransform="translate(-216.47524 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_33" xl:href="#Gradient_5" gradientTransform="translate(-238.07393 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_34" xl:href="#Gradient_5" gradientTransform="translate(-151.30027 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_35" xl:href="#Gradient_5" gradientTransform="translate(-43.11738 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_36" xl:href="#Gradient_5" gradientTransform="translate(-64.71607 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_37" xl:href="#Gradient_5" gradientTransform="translate(-86.50421 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_38" xl:href="#Gradient_5" gradientTransform="translate(-108.1029 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_39" xl:href="#Gradient_5" gradientTransform="translate(-346.2568 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_40" xl:href="#Gradient_5" gradientTransform="translate(-367.8555 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_41" xl:href="#Gradient_5" gradientTransform="translate(-394.19074 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_42" xl:href="#Gradient_5" gradientTransform="translate(-389.64365 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_43" xl:href="#Gradient_5" gradientTransform="translate(-372.02367 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_44" xl:href="#Gradient_5" gradientTransform="translate(-259.6726 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_45" xl:href="#Gradient_5" gradientTransform="translate(-303.05945 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_46" xl:href="#Gradient_5" gradientTransform="translate(-281.46076 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_47" xl:href="#Gradient_5" gradientTransform="translate(-349.66713 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_48" xl:href="#Gradient_5" gradientTransform="translate(-324.46867 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_49" xl:href="#Gradient_5" gradientTransform="translate(-129.51212 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_50" xl:href="#Gradient_5" gradientTransform="translate(-398.73783 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_51" xl:href="#Gradient_5" gradientTransform="translate(-375.8129 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_52" xl:href="#Gradient_5" gradientTransform="translate(-307.98546 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_53" xl:href="#Gradient_5" gradientTransform="translate(-353.2669 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_54" xl:href="#Gradient_5" gradientTransform="translate(-330.53146 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_55" xl:href="#Gradient_5" gradientTransform="translate(-35.15997 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_56" xl:href="#Gradient_5" gradientTransform="translate(-12.424515 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_57" xl:href="#Gradient_5" gradientTransform="translate(9.932019 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_58" xl:href="#Gradient_5" gradientTransform="translate(4.8165407 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_59" xl:href="#Gradient_5" gradientTransform="translate(-57.70597 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_60" xl:href="#Gradient_5" gradientTransform="translate(-103.36634 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_61" xl:href="#Gradient_5" gradientTransform="translate(-205.48644 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_62" xl:href="#Gradient_5" gradientTransform="translate(-80.44142 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_63" xl:href="#Gradient_5" gradientTransform="translate(-88.96722 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_64" xl:href="#Gradient_5" gradientTransform="translate(-173.6568 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_65" xl:href="#Gradient_5" gradientTransform="translate(-194.87656 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_66" xl:href="#Gradient_5" gradientTransform="translate(-216.28578 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_67" xl:href="#Gradient_5" gradientTransform="translate(-237.31608 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_68" xl:href="#Gradient_5" gradientTransform="translate(-110.18698 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_69" xl:href="#Gradient_5" gradientTransform="translate(-152.43704 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_70" xl:href="#Gradient_5" gradientTransform="translate(-258.53584 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_71" xl:href="#Gradient_5" gradientTransform="translate(-67.93692 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_72" xl:href="#Gradient_5" gradientTransform="translate(-131.40674 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_73" xl:href="#Gradient_5" gradientTransform="translate(-279.7556 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_74" xl:href="#Gradient_5" gradientTransform="translate(-411.4318 619.6722) rotate(-90) scale(5.6838644)"/>
+    <linearGradient id="Obj_Gradient_75" xl:href="#Gradient_5" gradientTransform="translate(-407.07416 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_76" xl:href="#Gradient_5" gradientTransform="translate(-416.73673 625.735) rotate(-90) scale(6.062789)"/>
+    <linearGradient id="Obj_Gradient_77" xl:href="#Gradient_5" gradientTransform="translate(-385.4755 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_78" xl:href="#Gradient_5" gradientTransform="translate(-322.00566 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_79" xl:href="#Gradient_5" gradientTransform="translate(-364.4452 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_80" xl:href="#Gradient_5" gradientTransform="translate(-300.7859 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient id="Obj_Gradient_81" xl:href="#Gradient_5" gradientTransform="translate(-421.66275 631.0399) rotate(-90) scale(5.30494)"/>
+    <linearGradient id="Obj_Gradient_82" xl:href="#Gradient_5" gradientTransform="translate(-343.2254 613.9883) rotate(-90) scale(4.168167)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bdbdbd"/>
+      <stop offset=".1082" stop-color="#b3b3b3"/>
+      <stop offset="1" stop-color="black"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_83" xl:href="#Gradient_6" gradientTransform="translate(-229.1692 612.0937) rotate(90) scale(16.293744)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9d9d9"/>
+      <stop offset=".02350223" stop-color="#d2d2d2"/>
+      <stop offset="1" stop-color="black"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_84" xl:href="#Gradient_7" gradientTransform="translate(-206.43375 651.1229) rotate(90) scale(6.062789)"/>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#900a65">
+      <g>
+        <path d="M 2.24 0 L 0 -.84 L 0 .84 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 6 4" markerWidth="6" markerHeight="4" color="#900a65">
+      <g>
+        <path d="M -2.24 0 L 0 .84 L 0 -.84 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_3" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 6 4" markerWidth="6" markerHeight="4" color="#55a1a7">
+      <g>
+        <path d="M -2.24 0 L 0 .84 L 0 -.84 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-10-07 16:46:49 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_300">
+        <title>male</title>
+        <g id="Graphic_334">
+          <title>Bézier</title>
+          <path d="M -401.71965 250.67155 C -324.02374 326.3063 -322.3532 450.6049 -397.98836 528.3004 C -473.62315 605.9963 -597.9218 607.66684 -675.61735 532.0317 C -753.3133 456.39695 -754.9838 332.09833 -679.34864 254.40284 C -603.71386 176.70696 -479.4152 175.0364 -401.71965 250.67155 Z" fill="#aee9ff"/>
+        </g>
+        <g id="Graphic_333">
+          <path d="M -424.11695 363.24685 C -427.91195 351.70715 -438.69407 343.91383 -450.84177 343.93016 L -493.18457 338.9914 C -500.93477 335.91272 -507.96874 328.36564 -509.5081 322.74274 L -509.97844 301.30945 C -514.7034 304.66608 -519.1718 306.94303 -524.52743 310.3745 C -527.03957 310.98383 -536.8422 311.27245 -540.01714 310.2783 C -547.94906 305.63886 -556.811 300.4222 -565.2988 292.59716 L -566.2395 323.3307 C -568.2492 328.7291 -575.5718 335.64547 -583.2151 338.77762 L -625.0876 343.93016 C -638.7642 343.93734 -650.4468 353.79618 -652.7531 367.27695 C -652.8493 367.77938 -652.92414 368.2818 -652.9883 368.8056 C -652.9883 369.09424 -652.9883 369.39356 -653.0738 369.70356 C -653.1593 370.01357 -653.0738 370.0777 -653.0738 370.27013 L -612.05655 404.0075 L -597.0372 452.87115 L -478.87076 452.87115 L -462.54724 400.16984 L -458.19644 400.16984 Z" fill="#fcc397"/>
+        </g>
+        <g id="Graphic_332">
+          <rect x="-575.2939" y="351.49863" width="71.14146" height="131.12258" fill="#e5e5e5"/>
+        </g>
+        <g id="Graphic_331">
+          <path d="M -424.52317 362.17786 C -428.62554 351.1968 -439.1194 343.92098 -450.84177 343.93016 L -493.18457 338.9914 C -494.8308 338.33933 -500.6675 337.47345 -502.1748 336.4793 L -537.2805 473.182 L -573.12384 332.39574 C -576.1009 335.0677 -579.4953 337.23434 -583.1724 338.8097 L -625.0876 343.93016 C -633.3239 343.92167 -641.14545 347.54305 -646.4674 353.82903 L -646.5743 353.7435 C -647.1311 354.4187 -647.63844 355.1332 -648.0923 355.8815 C -649.1908 357.45894 -650.1222 359.14633 -650.8717 360.91645 C -661.29435 381.2273 -681.0173 438.1725 -681.6159 462.94106 C -682.31075 491.9428 -645.5267 545.25345 -630.8815 558.60516 L -594.3113 555.84717 L -615.13525 568.4399 L -615.33836 572.0638 C -565.8336 593.0312 -509.907 592.83805 -460.5482 571.5293 L -461.2965 558.41275 C -456.5502 561.70524 -450.12554 562.01525 -443.3588 554.1368 C -428.7136 540.7423 -392.4427 489.4093 -393.11617 460.39686 C -393.7255 435.92763 -413.9615 383.18355 -424.52317 362.17786 Z M -612.7514 526.04366 C -623.9865 507.27216 -637.22064 477.2121 -639.8076 470.88367 C -644.73566 458.82544 -631.25566 430.17645 -617.5512 409.26696 L -612.7407 525.7871 Z M -462.9855 528.6413 L -463.3169 522.96497 L -458.7951 412.13186 C -446.972 432.5389 -434.4862 458.0023 -434.29376 470.424 C -434.1548 479.4677 -452.178 507.6784 -462.9855 528.6413 Z" fill="#333"/>
+        </g>
+        <g id="Graphic_330">
+          <path d="M -474.74445 388.58196 L -477.6735 340.78733 L -491.859 339.14108 C -493.9622 338.2794 -495.97166 337.20483 -497.85607 335.9341 L -505.2535 345.97194 L -537.4302 472.5299 L -569.7779 345.54434 L -577.1753 335.4958 C -579.0573 336.7912 -581.0668 337.89083 -583.1724 338.77762 L -596.3851 340.3918 L -598.88656 388.1223 L -580.7137 391.32927 L -584.46585 409.9725 L -539.9637 495.49187 L -540.75474 506.6842 L -489.15447 410.4749 L -492.87456 391.88515 Z" fill="#515151"/>
+        </g>
+        <g id="Graphic_329">
+          <path d="M -550.9743 419.401 L -537.46224 472.5299 L -526.1523 428.1133 L -533.00454 373.85125 L -524.71985 361.86785 L -529.5624 348.71925 L -546.4418 348.2489 L -550.81396 362.5734 L -543.16 373.61607 Z" fill="#5fa6b2"/>
+        </g>
+        <g id="Graphic_328">
+          <path d="M -567.27645 322.561 L -537.5157 348.1313 L -559.3659 369.9922 L -580.75645 336.97102 Z" fill="white"/>
+        </g>
+        <g id="Graphic_327">
+          <path d="M -587.98284 561.90835 C -587.98284 561.8549 -587.98284 561.80145 -587.98284 561.748 L -595.1023 551.0581 C -598.7185 545.6 -606.0746 544.10677 -611.53274 547.7228 C -624.79894 556.5206 -622.5006 554.9492 -623.6444 555.8365 C -625.31355 559.37236 -626.1718 563.2364 -626.1566 567.1464 C -619.5191 570.4571 -612.6986 573.3873 -605.7281 575.92284 C -598.3913 573.4055 -592.1319 568.4621 -587.98284 561.90835 Z" fill="#fcc397"/>
+        </g>
+        <g id="Graphic_326">
+          <path d="M -507.75494 322.561 L -537.5157 348.1313 L -515.6655 369.9922 L -494.27494 336.97102 Z" fill="white"/>
+        </g>
+        <g id="Graphic_325">
+          <path d="M -630.6391 557.3772 L -605.90724 539.4217 L -601.4042 545.6241 L -626.1361 563.57965 Z" fill="white"/>
+        </g>
+        <g id="Graphic_324">
+          <path d="M -576.3843 536.56255 L -583.4717 536.65876 C -583.0004 538.87364 -582.7462 541.1292 -582.7127 543.3934 C -582.5493 558.0575 -591.8111 571.1723 -605.68535 575.92284 C -603.7398 576.6284 -599.8059 577.986 -596.0644 579.1298 C -581.22866 570.4669 -573.3813 553.46146 -576.41634 536.55186 Z" fill="#515151"/>
+        </g>
+        <g id="Graphic_323">
+          <path d="M -452.57354 554.07264 L -463.9904 546.7073 C -469.49613 543.1582 -476.8363 544.742 -480.3887 550.24565 L -487.35856 561.06385 C -487.36386 561.1136 -487.36386 561.16376 -487.35856 561.2135 C -483.09633 567.7642 -476.7096 572.6486 -469.2712 575.04626 C -462.4071 572.4733 -455.6938 569.5146 -449.16345 566.1843 C -449.17414 562.4001 -450.3928 555.4944 -452.57354 554.07264 Z" fill="#fcc397"/>
+        </g>
+        <g id="Graphic_322">
+          <path d="M -487.35856 561.2135 C -490.95526 555.7205 -492.86875 549.2964 -492.8639 542.7306 C -492.8633 540.46543 -492.6377 538.2059 -492.1904 535.9853 L -499.2778 535.9853 C -502.14786 552.9983 -494.0186 569.97986 -478.96697 578.4136 C -474.95824 577.1308 -472.1361 576.11526 -469.34603 575.04626 C -476.75683 572.63356 -483.11516 567.7507 -487.35856 561.2135 Z" fill="#515151"/>
+        </g>
+        <g id="Graphic_321">
+          <path d="M -471.98835 543.7123 L -467.47905 537.50124 L -442.7472 555.4568 L -447.2565 561.66786 Z" fill="white"/>
+        </g>
+        <g id="Graphic_320">
+          <path d="M -539.6537 304.79436 C -548.6799 301.88527 -557.41273 298.13444 -565.7371 293.59132 L -565.7371 307.35994 C -561.4611 310.0645 -555.16476 314.2015 -550.7712 316.98087 C -548.5584 318.35987 -544.4214 318.7554 -544.4214 318.7554 L -528.23684 318.7554 C -528.23684 318.7554 -523.96087 318.41332 -521.8229 317.02363 C -518.2738 314.67185 -514.20096 311.37935 -509.77533 308.4717 L -509.77533 293.292 C -519.4038 297.93603 -529.3967 301.78303 -539.6537 304.79436 Z" fill="#ea9f6c"/>
+        </g>
+        <g id="Graphic_319">
+          <path d="M -484.1088 233.87742 C -485.59446 233.41802 -487.19756 233.52464 -488.6093 234.17674 C -488.01064 216.77355 -488.171 201.16626 -490.3731 197.70273 C -502.63446 178.46087 -517.0231 170.12273 -538.2212 169.32099 C -559.40866 170.12273 -572.2152 178.48225 -584.46585 197.70273 C -586.7321 201.25178 -587.10626 217.5539 -586.7749 235.4809 C -588.9877 233.82397 -591.37154 233.1505 -593.48815 233.86673 C -598.15965 235.43815 -599.7952 243.09213 -597.1441 250.9706 C -594.85646 257.7587 -590.1315 262.47296 -585.8662 262.6333 C -585.1714 277.9199 -584.3803 289.81778 -584.3803 289.81778 C -570.0772 299.63113 -560.58456 306.25888 -552.31055 311.14417 C -550.71984 311.9496 -548.9883 312.43965 -547.21146 312.5873 L -530.04344 312.5873 C -528.0319 312.33717 -526.0665 311.8008 -524.20674 310.9945 C -515.91135 306.1306 -506.3973 299.39595 -492.05144 289.81778 C -492.05144 289.81778 -490.98244 277.74886 -490.03104 262.3126 C -486.30026 261.1474 -482.5481 256.83937 -480.5063 251.00268 C -477.82314 243.1349 -479.4373 235.47022 -484.1088 233.87742 Z" fill="#fcc397"/>
+        </g>
+        <g id="Graphic_318">
+          <path d="M -526.21644 227.89107 C -524.7626 227.07863 -506.9746 220.06604 -501.5441 229.37696 C -497.01156 237.1913 -505.3818 229.37696 -510.9512 229.4411 C -515.73067 229.36907 -520.5069 229.72684 -525.2223 230.5101 C -527.4565 230.86286 -528.1941 228.98144 -526.21644 227.89107 Z" fill="#663412"/>
+        </g>
+        <g id="Graphic_317">
+          <path d="M -552.2464 228.11555 C -553.6361 227.3138 -571.0179 221.13504 -576.1598 229.49455 C -580.842 237.11647 -572.4183 229.49455 -567.0199 229.60145 C -562.4079 229.71894 -557.8068 230.108 -553.2406 230.76665 C -551.0705 230.99114 -550.3543 229.2273 -552.2464 228.11555 Z" fill="#663412"/>
+        </g>
+        <g id="Graphic_316">
+          <path d="M -551.46605 241.8521 C -557.3669 243.81905 -559.9004 243.9901 -562.8722 243.9901 C -567.4689 243.9901 -571.6593 242.44005 -571.6593 239.5324 C -571.6593 236.62473 -567.5223 234.5295 -562.8615 234.5295 C -558.2007 234.5295 -552.11813 239.66067 -551.46605 241.8521 Z" fill="white"/>
+        </g>
+        <g id="Graphic_315">
+          <path d="M -558.2007 239.2972 C -558.329 241.71984 -560.3753 243.5926 -562.7998 243.50622 C -565.2243 243.41985 -567.13216 241.40624 -567.08775 238.98063 C -567.04334 236.55501 -565.06304 234.6126 -562.637 234.61503 C -560.1199 234.68493 -558.13486 236.78 -558.2007 239.2972 Z" fill="#7b9368"/>
+        </g>
+        <g id="Graphic_314">
+          <path d="M -559.6652 239.32928 C -559.7526 240.87582 -561.0617 242.06792 -562.60964 242.0105 C -564.1576 241.95306 -565.3748 240.66723 -565.3473 239.11847 C -565.3198 237.5697 -564.05774 236.32788 -562.50874 236.3254 C -561.7318 236.34212 -560.9939 236.66915 -560.45965 237.2335 C -559.9254 237.79787 -559.6393 238.5526 -559.6652 239.32928 Z" fill="black"/>
+        </g>
+        <g id="Graphic_313">
+          <path d="M -558.1045 239.38273 C -558.2744 240.03168 -558.8608 240.4843 -559.5316 240.4843 C -560.2024 240.4843 -560.7888 240.03168 -560.9587 239.38273 C -560.7888 238.73378 -560.2024 238.28117 -559.5316 238.28117 C -558.8608 238.28117 -558.2744 238.73378 -558.1045 239.38273 Z" fill="white"/>
+        </g>
+        <g id="Graphic_312">
+          <path d="M -551.45536 241.88417 C -551.45536 241.88417 -553.0909 239.24376 -559.51556 237.3089 C -564.1122 235.9085 -571.0286 237.9289 -571.1569 241.20002 C -573.0811 239.81033 -573.1452 237.21268 -568.22785 235.3847 C -562.29655 233.07765 -555.5604 235.2516 -552.09675 240.5907 C -551.8076 240.98022 -551.5904 241.41826 -551.45536 241.88417 Z" fill="#ea9f6c"/>
+        </g>
+        <g id="Graphic_311">
+          <path d="M -526.43024 241.8521 C -520.5294 243.81905 -518.56245 244.04354 -515.18444 243.9901 C -510.5771 243.8725 -506.3866 242.7073 -506.3866 239.78895 C -506.3866 236.8706 -510.374 234.56158 -515.0348 234.56158 C -519.6956 234.56158 -525.76746 239.66067 -526.43024 241.8521 Z" fill="white"/>
+        </g>
+        <g id="Graphic_310">
+          <path d="M -519.74904 239.17962 C -519.62074 241.60225 -517.5744 243.475 -515.14993 243.38863 C -512.72545 243.30226 -510.8176 241.28865 -510.862 238.86304 C -510.9064 236.43743 -512.8867 234.495 -515.3127 234.49744 C -517.8298 234.56734 -519.8149 236.6624 -519.74904 239.17962 Z" fill="#7b9368"/>
+        </g>
+        <g id="Graphic_309">
+          <path d="M -518.1883 239.201 C -518.10095 240.74754 -516.7918 241.93964 -515.2439 241.8822 C -513.69595 241.82478 -512.47875 240.53895 -512.50624 238.9902 C -512.5337 237.44143 -513.7958 236.1996 -515.3448 236.19713 C -516.95846 236.24372 -518.2302 237.5872 -518.1883 239.201 Z" fill="black"/>
+        </g>
+        <g id="Graphic_308">
+          <path d="M -513.7413 238.891 C -513.9156 239.49953 -513.6822 240.15143 -513.1613 240.5111 C -512.6404 240.87076 -511.9481 240.858 -511.4408 240.47942 C -510.9335 240.10084 -510.72426 239.4408 -510.9208 238.83908 C -511.11736 238.23737 -511.6759 237.82812 -512.30885 237.822 C -512.9938 237.7437 -513.62143 238.21205 -513.7413 238.891 Z" fill="white"/>
+        </g>
+        <g id="Graphic_307">
+          <path d="M -526.43024 241.88417 C -526.43024 241.88417 -524.8054 239.24376 -518.3807 237.3089 C -513.77337 235.9085 -506.8677 237.9289 -506.7394 241.20002 C -504.8152 239.81033 -504.99694 237.0844 -509.9464 235.25642 C -515.5479 233.11844 -521.84426 234.76469 -525.8316 240.60138 C -526.1092 240.98803 -526.3122 241.42307 -526.43024 241.88417 Z" fill="#ea9f6c"/>
+        </g>
+        <g id="Graphic_306">
+          <path d="M -535.55944 267.47584 L -542.95687 267.47584 C -545.4306 267.3846 -547.57545 265.73736 -548.3018 263.3709 C -548.5612 264.10953 -548.6949 264.8864 -548.69736 265.66925 C -548.69736 269.2076 -544.4214 270.35143 -541.2144 270.35143 L -537.2912 270.35143 C -534.0842 270.35143 -529.80826 269.2076 -529.80826 265.66925 C -529.8107 264.8864 -529.9444 264.10953 -530.2038 263.3709 C -530.93425 265.73903 -533.08286 267.38587 -535.55944 267.47584 Z" fill="#ea9f6c"/>
+        </g>
+        <g id="Graphic_305">
+          <path d="M -596.68444 239.6179 C -596.68444 238.9872 -595.4872 236.14369 -593.9478 236.62473 C -591.58534 237.37303 -590.08875 241.9697 -589.0839 246.59843 C -588.07905 251.22716 -588.5601 254.55173 -589.0839 253.3224 C -589.8322 251.57993 -590.50566 245.9998 -593.3599 240.74035 C -595.1558 237.24475 -596.3103 244.5994 -596.68444 239.6179 Z" fill="#ea9f6c"/>
+        </g>
+        <g id="Graphic_304">
+          <path d="M -480.8698 239.6179 C -480.8163 238.9872 -482.06705 236.14369 -483.6064 236.62473 C -485.97956 237.37303 -487.46546 241.9697 -488.4703 246.59843 C -489.47516 251.22716 -488.9941 254.55173 -488.4703 253.3224 C -487.722 251.57993 -487.04855 245.9998 -484.19434 240.74035 C -482.36636 237.24475 -481.2439 244.5994 -480.8698 239.6179 Z" fill="#ea9f6c"/>
+        </g>
+        <g id="Graphic_303">
+          <path d="M -500.32544 171.90795 C -508.28943 158.01105 -553.6468 163.93327 -568.0996 167.9206 C -582.55235 171.90795 -592.0236 179.88263 -591.5212 192.33639 C -591.0829 203.11183 -591.0295 227.27105 -591.0188 233.62086 C -589.7029 233.82494 -588.4518 234.32976 -587.3628 235.09607 L -584.5407 248.14847 L -581.5475 227.72003 C -581.5475 227.72003 -587.53386 187.8573 -548.6653 194.82714 C -554.1492 197.82032 -564.155 208.28575 -564.155 208.28575 C -564.155 208.28575 -541.2251 202.80182 -532.25625 199.3169 C -523.2874 195.832 -532.25625 206.79985 -532.25625 206.79985 C -532.25625 206.79985 -514.821 200.32176 -509.33705 198.33343 C -503.8531 196.3451 -498.3799 197.831 -497.375 207.30228 C -496.37017 216.77355 -493.8901 252.64892 -493.8901 252.64892 L -487.6258 233.85604 C -487.1499 233.73097 -486.66303 233.6522 -486.172 233.62086 C -485.97956 229.82594 -485.723 225.06893 -485.4237 219.2536 C -482.38774 162.43668 -494.3391 182.41614 -500.32544 171.90795 Z" fill="#663412"/>
+        </g>
+        <g id="Graphic_302">
+          <path d="M -552.29986 283.60694 C -551.9685 285.3601 -549.157 289.56122 -547.53215 289.56122 L -531.1552 289.56122 C -529.50894 289.56122 -526.7082 285.3601 -526.3875 283.60694 Z" fill="#ea8c63"/>
+        </g>
+        <g id="Graphic_301">
+          <path d="M -531.679 284.398 C -535.1532 283.9704 -546.59144 284.15212 -548.37666 284.23764 C -552.94126 284.44075 -555.60305 281.89655 -555.4427 281.4048 C -555.17545 280.62445 -554.5768 280.80618 -554.0744 281.57585 C -553.57196 282.34553 -550.61085 282.02483 -549.12495 281.71482 C -541.57787 280.08995 -543.51274 281.90724 -539.8354 281.9607 C -536.3719 281.9607 -537.54776 280.27168 -531.0055 281.75758 C -528.7927 282.2493 -525.7568 283.019 -524.5916 282.45242 C -523.8326 282.07828 -523.24464 281.65068 -523.04153 282.45242 C -522.8384 283.25417 -526.1309 285.0394 -531.679 284.398 Z" fill="#d87350"/>
+        </g>
+      </g>
+      <g id="Group_25">
+        <g id="Group_38">
+          <g id="Group_39">
+            <g id="Group_40">
+              <g id="Group_41">
+                <g id="Group_290">
+                  <g id="Group_292">
+                    <g id="Graphic_299">
+                      <path d="M 36.835643 592.38965 L 36.835643 440.441 L 36.835643 426.0419 L 36.835643 274.47217 C 36.835643 274.47217 36.835643 261.96767 24.331142 261.96767 L -37.054593 261.96767 L -73.431325 261.96767 L -437.19864 261.96767 C -449.70315 261.96767 -449.70315 274.47217 -449.70315 274.47217 L -449.70315 426.4208 L -449.70315 440.81993 L -449.70315 592.7686 C -449.70315 592.7686 -449.70315 605.2731 -437.19864 605.2731 L -73.431325 605.2731 L -62.0636 605.2731 L 24.331142 605.2731 C 37.214568 604.89415 36.835643 592.38965 36.835643 592.38965 Z" fill="url(#Obj_Gradient)"/>
+                    </g>
+                    <g id="Graphic_298">
+                      <path d="M 33.0464 588.2215 L 33.0464 440.441 L 33.0464 426.4208 L 33.0464 278.2614 C 33.0464 278.2614 33.0464 266.13583 20.920823 266.13583 L -39.32814 266.13583 L -75.32595 266.13583 L -433.4094 266.13583 C -445.9139 266.13583 -445.535 278.2614 -445.535 278.2614 L -445.535 426.4208 L -445.535 440.441 L -445.535 588.6004 C -445.535 588.6004 -445.535 600.726 -433.4094 600.726 L -75.70487 600.726 L -64.33714 600.726 L 20.920823 600.726 C 33.0464 600.34706 33.0464 588.2215 33.0464 588.2215 Z" fill="#1f1f1f"/>
+                    </g>
+                    <g id="Graphic_297">
+                      <path d="M 33.0464 588.2215 L 33.0464 440.441 L 33.0464 426.4208 L 33.0464 278.2614 C 33.0464 278.2614 33.0464 266.13583 20.920823 266.13583 L -39.32814 266.13583 L -75.32595 266.13583 L -433.4094 266.13583 C -445.9139 266.13583 -445.535 278.2614 -445.535 278.2614 L -445.535 426.4208 L -445.535 440.441 L -445.535 588.6004 C -445.535 588.6004 -445.535 600.726 -433.4094 600.726 L -75.70487 600.726 L -64.33714 600.726 L 20.920823 600.726 C 33.0464 600.34706 33.0464 588.2215 33.0464 588.2215 Z" fill="#1f1f1f"/>
+                    </g>
+                    <g id="Group_294">
+                      <g id="Graphic_296">
+                        <path d="M -199.99204 266.51476 L -445.535 463.9343 L -445.535 494.24826 L -162.47853 266.51476 Z" fill="url(#Obj_Gradient_2)"/>
+                      </g>
+                      <g id="Graphic_295">
+                        <path d="M 33.0464 440.441 L 33.0464 426.4208 L 33.0464 399.5172 L -216.6647 600.34706 L -87.83045 600.34706 L 33.0464 502.9635 Z" fill="url(#Obj_Gradient_3)"/>
+                      </g>
+                    </g>
+                    <g id="Graphic_293">
+                      <rect x="-435.68295" y="280.15603" width="458.8773" height="306.54975" fill="#f8cadb"/>
+                    </g>
+                  </g>
+                  <g id="Graphic_291">
+                    <path d="M -72.29455 266.13583 L -162.0996 266.89368 L -251.52574 266.89368 L -341.3308 267.2726 L -431.13586 267.2726 C -434.16725 266.89368 -437.57757 267.65153 -440.23004 269.16723 C -442.8825 270.68293 -444.3982 273.71432 -444.3982 277.12464 C -444.3982 283.56635 -444.3982 290.00806 -444.3982 296.8287 L -444.3982 335.8579 L -444.3982 414.29523 L -444.77713 570.79096 L -445.15605 414.29523 L -445.15605 335.8579 L -445.15605 296.8287 C -445.15605 290.387 -445.15605 283.94528 -445.15605 277.12464 C -445.15605 275.60894 -444.77713 273.71432 -443.64036 272.19862 C -442.8825 270.68293 -441.74574 269.16723 -440.23004 268.40938 C -437.19864 266.51476 -433.7883 265.7569 -430.378 266.13583 L -340.57295 265.7569 L -251.52574 265.7569 L -161.72068 265.7569 Z" fill="white"/>
+                  </g>
+                </g>
+                <g id="Group_42">
+                  <g id="Graphic_289">
+                    <path d="M 30.015006 631.7978 C 26.225763 629.1453 17.889429 628.0085 17.889429 628.0085 L -15.455909 628.0085 L -189.76108 628.0085 L -223.10642 628.0085 L -397.4116 628.0085 L -430.75693 628.0085 C -430.75693 628.0085 -439.09327 629.1453 -442.8825 631.7978 L -485.70095 660.2171 L -480.396 667.41666 C -479.25924 668.5534 -477.74354 670.0691 -475.47 670.0691 L -442.12466 670.0691 L -307.60654 670.0691 L -239.40016 670.0691 L -173.08841 670.0691 L -104.88204 670.0691 L 29.63608 670.0691 L 62.98142 670.0691 C 65.254965 670.0691 66.39174 668.5534 67.907435 667.41666 L 73.212375 660.2171 Z" fill="url(#Obj_Gradient_4)"/>
+                  </g>
+                  <g id="Graphic_288">
+                    <path d="M 73.5913 658.7014 C 73.5913 658.3225 73.5913 657.94355 73.5913 657.5646 L 73.5913 647.7126 L 34.94102 619.6722 C 30.772855 616.6408 21.678672 615.504 21.678672 615.504 L -206.43375 615.504 L -434.16725 615.504 C -434.16725 615.504 -443.26143 616.6408 -447.4296 619.6722 L -486.4588 647.7126 L -486.4588 657.1857 C -486.4588 657.5646 -486.4588 657.94355 -486.4588 658.3225 C -486.4588 659.45925 -485.70095 660.596 -483.80633 661.3539 L -151.86865 661.3539 L -77.22057 661.3539 L 70.559905 661.3539 C 72.83345 660.97495 73.5913 659.8382 73.5913 658.7014 Z" fill="url(#Obj_Gradient_5)"/>
+                  </g>
+                  <g id="Graphic_287">
+                    <path d="M 73.5913 658.7014 C 73.5913 658.3225 73.5913 657.94355 73.5913 657.5646 L 73.5913 647.7126 L 34.94102 619.6722 C 30.772855 616.6408 21.678672 615.504 21.678672 615.504 L -206.43375 615.504 L -434.16725 615.504 C -434.16725 615.504 -443.26143 616.6408 -447.4296 619.6722 L -486.4588 647.7126 L -486.4588 657.1857 C -486.4588 657.5646 -486.4588 657.94355 -486.4588 658.3225 C -486.4588 659.45925 -485.70095 660.596 -483.80633 661.3539 L -151.86865 661.3539 L -77.22057 661.3539 L 70.559905 661.3539 C 72.83345 660.97495 73.5913 659.8382 73.5913 658.7014 Z" fill="url(#Obj_Gradient_6)"/>
+                  </g>
+                  <g id="Graphic_286">
+                    <path d="M 70.93883 642.0287 L 34.94102 608.6834 C 30.772855 605.652 21.678672 604.5152 21.678672 604.5152 L -206.43375 604.5152 L -434.16725 604.5152 C -434.16725 604.5152 -443.26143 605.652 -447.4296 608.6834 L -483.4274 642.0287 C -483.4274 642.0287 -489.8691 648.47044 -483.4274 651.1229 L -151.48973 651.1229 L -76.84164 651.1229 L 70.93883 651.1229 C 77.38054 648.47044 70.93883 642.0287 70.93883 642.0287 Z" fill="url(#Obj_Gradient_7)"/>
+                  </g>
+                  <g id="Graphic_285">
+                    <path d="M -105.63989 633.3135 L -307.98546 633.3135 L -315.18502 643.92335 L -98.81925 643.92335 Z" fill="url(#Obj_Gradient_8)"/>
+                  </g>
+                  <g id="Graphic_284">
+                    <path d="M -105.63989 633.3135 L -307.98546 633.3135 L -315.18502 643.92335 L -307.2276 633.6924 L -106.01881 634.0713 L -98.81925 643.92335 Z" fill="url(#Obj_Gradient_9)"/>
+                  </g>
+                  <g id="Group_64">
+                    <g id="Group_281">
+                      <g id="Graphic_283">
+                        <path d="M -205.6759 619.6722 L -205.6759 625.735 L -182.94045 625.735 L -183.6983 619.6722 Z" fill="url(#Obj_Gradient_10)"/>
+                      </g>
+                      <g id="Graphic_282">
+                        <path d="M -182.94045 626.4928 L -205.29698 626.4928 C -205.6759 626.4928 -206.05483 626.1139 -206.05483 625.735 L -206.05483 620.0511 C -206.05483 619.6722 -205.6759 619.2933 -205.29698 619.2933 L -183.31937 619.2933 C -182.94045 619.2933 -182.56152 619.6722 -182.56152 620.0511 L -182.1826 625.735 C -182.1826 626.1139 -182.1826 626.1139 -182.56152 626.4928 Z M -204.53913 624.97714 L -183.6983 624.97714 L -184.07722 620.809 L -204.53913 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_278">
+                      <g id="Graphic_280">
+                        <path d="M -315.18502 619.6722 L -317.8375 625.735 L -295.48096 625.735 L -293.2074 619.6722 Z" fill="url(#Obj_Gradient_11)"/>
+                      </g>
+                      <g id="Graphic_279">
+                        <path d="M -295.48096 626.4928 L -317.8375 626.4928 C -318.2164 626.4928 -318.2164 626.4928 -318.59534 626.1139 C -318.59534 625.735 -318.59534 625.735 -318.59534 625.35606 L -315.94287 619.6722 C -315.94287 619.2933 -315.56395 619.2933 -315.18502 619.2933 L -293.2074 619.2933 C -292.8285 619.2933 -292.8285 619.2933 -292.44957 619.6722 C -292.44957 620.0511 -292.44957 620.0511 -292.44957 620.43005 L -294.7231 626.1139 C -294.7231 626.1139 -295.10204 626.4928 -295.48096 626.4928 Z M -316.70072 624.97714 L -296.2388 624.97714 L -294.7231 620.809 L -314.8061 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_275">
+                      <g id="Graphic_277">
+                        <path d="M -227.2746 619.6722 L -228.03244 625.735 L -205.6759 625.735 L -205.6759 619.6722 Z" fill="url(#Obj_Gradient_12)"/>
+                      </g>
+                      <g id="Graphic_276">
+                        <path d="M -205.6759 626.4928 L -228.03244 626.4928 C -228.41136 626.4928 -228.41136 626.4928 -228.79028 626.1139 C -228.79028 626.1139 -229.1692 625.735 -229.1692 625.35606 L -228.79028 619.6722 C -228.79028 619.2933 -228.41136 618.91435 -228.03244 618.91435 L -206.05483 618.91435 C -205.6759 618.91435 -205.29698 619.2933 -205.29698 619.6722 L -205.29698 625.735 C -204.53913 626.1139 -204.91805 626.4928 -205.6759 626.4928 Z M -226.89566 624.97714 L -206.05483 624.97714 L -206.05483 620.809 L -226.51674 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_272">
+                      <g id="Graphic_274">
+                        <path d="M -161.72068 619.6722 L -160.58391 625.735 L -138.22738 625.735 L -139.74308 619.6722 Z" fill="url(#Obj_Gradient_13)"/>
+                      </g>
+                      <g id="Graphic_273">
+                        <path d="M -138.22738 626.4928 L -160.58391 626.4928 C -160.96284 626.4928 -161.34176 626.1139 -161.34176 625.735 L -162.47853 620.0511 C -162.47853 619.6722 -162.47853 619.6722 -162.47853 619.2933 C -162.47853 619.2933 -162.0996 618.91435 -161.72068 618.91435 L -139.74308 618.91435 C -139.36415 618.91435 -138.98523 619.2933 -138.98523 619.6722 L -137.46953 625.35606 C -137.46953 625.735 -137.46953 625.735 -137.46953 626.1139 C -137.84845 626.4928 -137.84845 626.4928 -138.22738 626.4928 Z M -159.82606 624.97714 L -138.98523 624.97714 L -140.122 620.809 L -160.58391 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_269">
+                      <g id="Graphic_271">
+                        <path d="M -34.781048 613.9883 L -37.81244 609.8202 L -58.65328 609.8202 L -56.00081 613.9883 Z" fill="url(#Obj_Gradient_14)"/>
+                      </g>
+                      <g id="Graphic_270">
+                        <path d="M -34.781048 614.7462 L -56.00081 614.7462 C -56.37973 614.7462 -56.37973 614.7462 -56.758657 614.36726 L -59.41113 610.1991 C -59.41113 609.8202 -59.41113 609.44124 -59.41113 609.44124 C -59.41113 609.0623 -59.0322 609.0623 -58.65328 609.0623 L -37.81244 609.0623 C -37.433518 609.0623 -37.433518 609.0623 -37.054593 609.44124 L -34.0232 613.6094 C -34.0232 613.9883 -33.644275 614.36726 -34.0232 614.36726 C -34.0232 614.7462 -34.402123 614.7462 -34.781048 614.7462 Z M -55.621884 613.2305 L -36.296745 613.2305 L -38.191366 610.578 L -57.13758 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_266">
+                      <g id="Graphic_268">
+                        <path d="M -293.2074 619.6722 L -295.48096 625.735 L -272.7455 625.735 L -271.2298 619.6722 Z" fill="url(#Obj_Gradient_15)"/>
+                      </g>
+                      <g id="Graphic_267">
+                        <path d="M -272.7455 626.4928 L -295.10204 626.4928 C -295.48096 626.4928 -295.48096 626.4928 -295.8599 626.1139 C -295.8599 625.735 -295.8599 625.735 -295.8599 625.35606 L -293.58634 619.6722 C -293.58634 619.2933 -293.2074 619.2933 -292.8285 619.2933 L -270.85088 619.2933 C -270.47196 619.2933 -270.47196 619.2933 -270.09303 619.6722 C -270.09303 620.0511 -269.7141 620.0511 -270.09303 620.43005 L -271.98765 625.735 C -272.36658 626.1139 -272.36658 626.4928 -272.7455 626.4928 Z M -294.3442 624.97714 L -273.50335 624.97714 L -272.36658 620.809 L -292.8285 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_263">
+                      <g id="Graphic_265">
+                        <path d="M -139.74308 619.6722 L -138.22738 625.735 L -115.87085 625.735 L -117.76547 619.6722 Z" fill="url(#Obj_Gradient_16)"/>
+                      </g>
+                      <g id="Graphic_264">
+                        <path d="M -115.87085 626.4928 L -138.22738 626.4928 C -138.6063 626.4928 -138.98523 626.1139 -138.98523 625.735 L -140.50092 620.0511 C -140.50092 619.6722 -140.50092 619.6722 -140.50092 619.2933 C -140.50092 618.91435 -140.122 618.91435 -139.74308 618.91435 L -117.76547 618.91435 C -117.38654 618.91435 -117.00762 619.2933 -117.00762 619.2933 L -114.73407 624.97714 C -114.73407 625.35606 -114.73407 625.35606 -114.73407 625.735 C -115.113 626.4928 -115.49192 626.4928 -115.87085 626.4928 Z M -137.46953 624.97714 L -116.6287 624.97714 L -118.14439 620.809 L -138.22738 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_260">
+                      <g id="Graphic_262">
+                        <path d="M -271.2298 619.6722 L -272.7455 625.735 L -250.38897 625.735 L -249.2522 619.6722 Z" fill="url(#Obj_Gradient_17)"/>
+                      </g>
+                      <g id="Graphic_261">
+                        <path d="M -250.38897 626.4928 L -272.7455 626.4928 C -273.12443 626.4928 -273.12443 626.4928 -273.50335 626.1139 C -273.50335 625.735 -273.88227 625.735 -273.50335 625.35606 L -271.98765 619.6722 C -271.98765 619.2933 -271.60873 618.91435 -271.2298 618.91435 L -249.2522 618.91435 C -248.87327 618.91435 -248.87327 618.91435 -248.49435 619.2933 C -248.49435 619.2933 -248.11542 619.6722 -248.49435 620.0511 L -249.63112 625.735 C -249.63112 626.1139 -250.01004 626.4928 -250.38897 626.4928 Z M -271.98765 624.97714 L -251.14682 624.97714 L -250.38897 620.809 L -270.47196 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_257">
+                      <g id="Graphic_259">
+                        <path d="M -249.2522 619.6722 L -250.38897 625.735 L -228.03244 625.735 L -227.2746 619.6722 Z" fill="url(#Obj_Gradient_18)"/>
+                      </g>
+                      <g id="Graphic_258">
+                        <path d="M -228.03244 626.4928 L -250.38897 626.4928 C -250.7679 626.4928 -250.7679 626.4928 -251.14682 626.1139 C -251.14682 626.1139 -251.52574 625.735 -251.14682 625.35606 L -250.01004 619.6722 C -250.01004 619.2933 -249.63112 618.91435 -249.2522 618.91435 L -227.2746 618.91435 C -226.89566 618.91435 -226.89566 618.91435 -226.51674 619.2933 C -226.51674 619.2933 -226.13781 619.6722 -226.13781 620.0511 L -227.2746 625.735 C -227.2746 626.1139 -227.6535 626.4928 -228.03244 626.4928 Z M -249.63112 624.97714 L -228.79028 624.97714 L -228.41136 620.809 L -248.87327 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_254">
+                      <g id="Graphic_256">
+                        <path d="M -26.06579 625.735 L -3.3303316 625.735 L -8.256347 619.6722 L -30.233956 619.6722 Z" fill="url(#Obj_Gradient_19)"/>
+                      </g>
+                      <g id="Graphic_255">
+                        <path d="M -3.3303316 626.4928 L -25.686865 626.4928 C -26.06579 626.4928 -26.06579 626.4928 -26.444713 626.1139 L -30.991805 620.43005 C -30.991805 620.0511 -31.37073 620.0511 -30.991805 619.6722 C -30.991805 619.2933 -30.61288 619.2933 -30.233956 619.2933 L -8.256347 619.2933 C -7.877423 619.2933 -7.877423 619.2933 -7.498499 619.6722 L -2.572483 625.35606 C -2.1935587 625.735 -2.1935587 626.1139 -2.572483 626.1139 C -2.9514073 626.1139 -2.9514073 626.4928 -3.3303316 626.4928 Z M -25.30794 624.97714 L -4.846029 624.97714 L -8.256347 620.809 L -28.339335 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_251">
+                      <g id="Graphic_253">
+                        <path d="M -117.76547 619.6722 L -115.87085 625.735 L -93.13539 625.735 L -96.16678 619.6722 Z" fill="url(#Obj_Gradient_20)"/>
+                      </g>
+                      <g id="Graphic_252">
+                        <path d="M -93.13539 626.4928 L -115.49192 626.4928 C -115.87085 626.4928 -116.24977 626.1139 -116.24977 626.1139 L -118.52332 620.43005 C -118.52332 620.0511 -118.52332 620.0511 -118.52332 619.6722 C -118.52332 619.2933 -118.14439 619.2933 -117.76547 619.2933 L -95.78786 619.2933 C -95.40893 619.2933 -95.03001 619.2933 -95.03001 619.6722 L -92.37754 625.35606 C -92.37754 625.735 -92.37754 625.735 -92.37754 626.1139 C -92.75646 626.4928 -93.13539 626.4928 -93.13539 626.4928 Z M -115.113 624.97714 L -94.65109 624.97714 L -96.54571 620.809 L -116.6287 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_248">
+                      <g id="Graphic_250">
+                        <path d="M -8.256347 619.6722 L 12.584489 619.6722 L 6.900624 613.9883 L -13.182363 613.9883 Z" fill="url(#Obj_Gradient_21)"/>
+                      </g>
+                      <g id="Graphic_249">
+                        <path d="M 12.584489 620.809 L -8.256347 620.809 C -8.635272 620.809 -8.635272 620.809 -9.014196 620.43005 L -13.940212 614.7462 C -14.319136 614.36726 -14.319136 613.9883 -13.940212 613.9883 C -13.940212 613.6094 -13.561287 613.6094 -13.182363 613.6094 L 7.279549 613.6094 C 7.658473 613.6094 7.658473 613.6094 8.037397 613.9883 L 13.342337 619.6722 C 13.721262 620.0511 13.721262 620.43005 13.342337 620.43005 C 13.342337 620.43005 12.963413 620.809 12.584489 620.809 Z M -7.877423 618.91435 L 10.689867 618.91435 L 6.900624 614.7462 L -11.287742 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_245">
+                      <g id="Graphic_247">
+                        <path d="M -34.781048 613.9883 L -30.233956 619.6722 L -8.256347 619.6722 L -13.182363 613.9883 Z" fill="url(#Obj_Gradient_22)"/>
+                      </g>
+                      <g id="Graphic_246">
+                        <path d="M -8.256347 620.809 L -30.233956 620.809 C -30.61288 620.809 -30.61288 620.809 -30.991805 620.43005 L -35.538896 614.7462 C -35.538896 614.36726 -35.91782 613.9883 -35.538896 613.9883 C -35.538896 613.6094 -35.15997 613.6094 -34.781048 613.6094 L -13.561287 613.6094 C -13.182363 613.6094 -13.182363 613.6094 -12.803439 613.9883 L -7.877423 619.6722 C -7.498499 620.0511 -7.498499 620.43005 -7.877423 620.43005 C -7.877423 620.43005 -7.877423 620.809 -8.256347 620.809 Z M -29.855032 618.91435 L -10.150969 618.91435 L -13.561287 614.7462 L -32.886426 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_242">
+                      <g id="Graphic_244">
+                        <path d="M -13.182363 613.9883 L -16.971606 609.8202 L -37.81244 609.8202 L -34.781048 613.9883 Z" fill="url(#Obj_Gradient_23)"/>
+                      </g>
+                      <g id="Graphic_243">
+                        <path d="M -13.182363 614.7462 L -34.402123 614.7462 C -34.781048 614.7462 -34.781048 614.7462 -35.15997 614.36726 L -38.191366 610.1991 C -38.191366 609.8202 -38.57029 609.44124 -38.191366 609.44124 C -38.191366 609.0623 -37.81244 609.0623 -37.433518 609.0623 L -16.592682 609.0623 C -16.213757 609.0623 -16.213757 609.0623 -15.834833 609.44124 L -12.424515 613.6094 C -12.04559 613.9883 -12.04559 614.36726 -12.424515 614.36726 C -12.803439 614.7462 -12.803439 614.7462 -13.182363 614.7462 Z M -34.402123 613.2305 L -15.076985 613.2305 L -17.35053 610.578 L -36.296745 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_239">
+                      <g id="Graphic_241">
+                        <path d="M 6.900624 613.9883 L 3.1113814 609.8202 L -16.971606 609.8202 L -13.182363 613.9883 Z" fill="url(#Obj_Gradient_24)"/>
+                      </g>
+                      <g id="Graphic_240">
+                        <path d="M 6.900624 614.7462 L -13.561287 614.7462 C -13.940212 614.7462 -13.940212 614.7462 -14.319136 614.36726 L -17.729455 610.1991 C -18.108379 609.8202 -18.108379 609.44124 -17.729455 609.44124 C -17.729455 609.0623 -17.35053 609.0623 -16.971606 609.0623 L 3.1113814 609.0623 C 3.4903057 609.0623 3.4903057 609.0623 3.86923 609.44124 L 7.658473 613.6094 C 8.037397 613.9883 8.037397 614.36726 7.658473 614.36726 C 7.658473 614.7462 7.279549 614.7462 6.900624 614.7462 Z M -12.803439 613.2305 L 5.384927 613.2305 L 3.1113814 610.578 L -14.69806 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_236">
+                      <g id="Graphic_238">
+                        <path d="M -336.7837 619.6722 L -340.19403 625.735 L -317.8375 625.735 L -315.18502 619.6722 Z" fill="url(#Obj_Gradient_25)"/>
+                      </g>
+                      <g id="Graphic_237">
+                        <path d="M -317.8375 626.4928 L -340.19403 626.4928 C -340.57295 626.4928 -340.57295 626.4928 -340.95187 626.1139 C -340.95187 625.735 -340.95187 625.735 -340.95187 625.35606 L -337.54156 619.6722 C -337.54156 619.2933 -337.16263 619.2933 -336.7837 619.2933 L -314.8061 619.2933 C -314.42717 619.2933 -314.42717 619.2933 -314.04825 619.6722 C -314.04825 620.0511 -314.04825 620.0511 -314.04825 620.43005 L -316.70072 626.1139 C -317.07964 626.1139 -317.45857 626.4928 -317.8375 626.4928 Z M -338.67833 624.97714 L -318.2164 624.97714 L -316.3218 620.809 L -336.4048 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_233">
+                      <g id="Graphic_235">
+                        <path d="M -74.18917 619.6722 L -70.778855 625.735 L -48.42232 625.735 L -52.211565 619.6722 Z" fill="url(#Obj_Gradient_26)"/>
+                      </g>
+                      <g id="Graphic_234">
+                        <path d="M -48.42232 626.4928 L -70.778855 626.4928 C -71.15778 626.4928 -71.15778 626.4928 -71.5367 626.1139 L -74.94702 620.43005 C -74.94702 620.0511 -74.94702 620.0511 -74.94702 619.6722 C -74.94702 619.2933 -74.5681 619.2933 -74.18917 619.2933 L -52.211565 619.2933 C -51.83264 619.2933 -51.83264 619.2933 -51.453716 619.6722 L -47.664474 625.35606 C -47.664474 625.735 -47.664474 626.1139 -47.664474 626.1139 C -47.664474 626.4928 -48.0434 626.4928 -48.42232 626.4928 Z M -70.39993 624.97714 L -49.93802 624.97714 L -52.59049 620.809 L -72.67348 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_230">
+                      <g id="Graphic_232">
+                        <path d="M -96.16678 619.6722 L -93.13539 625.735 L -70.778855 625.735 L -74.18917 619.6722 Z" fill="url(#Obj_Gradient_27)"/>
+                      </g>
+                      <g id="Graphic_231">
+                        <path d="M -70.778855 626.4928 L -93.13539 626.4928 C -93.51431 626.4928 -93.89324 626.4928 -93.89324 626.1139 L -96.54571 620.43005 C -96.54571 620.0511 -96.54571 620.0511 -96.54571 619.6722 C -96.54571 619.2933 -96.16678 619.2933 -95.78786 619.2933 L -73.81025 619.2933 C -73.431325 619.2933 -73.431325 619.2933 -73.0524 619.6722 L -69.64208 625.35606 C -69.64208 625.735 -69.64208 625.735 -69.64208 626.1139 C -70.39993 626.4928 -70.39993 626.4928 -70.778855 626.4928 Z M -92.75646 624.97714 L -72.29455 624.97714 L -74.5681 620.809 L -94.65109 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_227">
+                      <g id="Graphic_229">
+                        <path d="M -52.211565 619.6722 L -48.42232 625.735 L -26.06579 625.735 L -30.233956 619.6722 Z" fill="url(#Obj_Gradient_28)"/>
+                      </g>
+                      <g id="Graphic_228">
+                        <path d="M -26.06579 626.4928 L -48.42232 626.4928 C -48.801246 626.4928 -48.801246 626.4928 -49.18017 626.1139 L -52.969414 620.43005 C -52.969414 620.0511 -52.969414 619.6722 -52.969414 619.6722 C -52.969414 619.2933 -52.59049 619.2933 -52.211565 619.2933 L -30.233956 619.2933 C -29.855032 619.2933 -29.855032 619.2933 -29.476108 619.6722 L -24.929016 625.35606 C -24.929016 625.735 -24.550092 626.1139 -24.929016 626.1139 C -25.30794 626.1139 -25.686865 626.4928 -26.06579 626.4928 Z M -48.0434 624.97714 L -27.581486 624.97714 L -30.61288 620.809 L -50.69587 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_224">
+                      <g id="Graphic_226">
+                        <path d="M -183.6983 619.6722 L -182.94045 625.735 L -160.58391 625.735 L -161.72068 619.6722 Z" fill="url(#Obj_Gradient_29)"/>
+                      </g>
+                      <g id="Graphic_225">
+                        <path d="M -160.58391 626.4928 L -182.94045 626.4928 C -183.31937 626.4928 -183.6983 626.1139 -183.6983 625.735 L -184.07722 620.0511 C -184.07722 619.6722 -184.07722 619.6722 -183.6983 619.2933 C -183.6983 619.2933 -183.31937 618.91435 -182.94045 618.91435 L -160.96284 618.91435 C -160.58391 618.91435 -160.20499 619.2933 -160.20499 619.6722 L -159.06821 625.35606 C -159.06821 625.735 -159.06821 625.735 -159.06821 626.1139 C -160.20499 626.4928 -160.20499 626.4928 -160.58391 626.4928 Z M -182.1826 624.97714 L -161.34176 624.97714 L -162.0996 620.809 L -182.56152 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_221">
+                      <g id="Graphic_223">
+                        <path d="M -183.6983 619.6722 L -184.07722 613.9883 L -205.6759 613.9883 L -205.6759 619.6722 Z" fill="url(#Obj_Gradient_30)"/>
+                      </g>
+                      <g id="Graphic_222">
+                        <path d="M -183.6983 620.809 L -205.6759 620.809 C -206.05483 620.809 -206.43375 620.43005 -206.43375 620.0511 L -206.43375 614.36726 C -206.43375 613.9883 -206.05483 613.6094 -205.6759 613.6094 L -184.45614 613.6094 C -184.07722 613.6094 -183.6983 613.9883 -183.6983 614.36726 L -183.31937 620.0511 C -183.31937 620.43005 -183.31937 620.43005 -183.6983 620.809 C -183.31937 620.43005 -183.31937 620.809 -183.6983 620.809 Z M -204.53913 618.91435 L -184.45614 618.91435 L -184.83507 614.7462 L -204.53913 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_218">
+                      <g id="Graphic_220">
+                        <path d="M -161.72068 619.6722 L -162.85746 613.9883 L -184.07722 613.9883 L -183.6983 619.6722 Z" fill="url(#Obj_Gradient_31)"/>
+                      </g>
+                      <g id="Graphic_219">
+                        <path d="M -161.72068 620.809 L -183.6983 620.809 C -184.07722 620.809 -184.45614 620.43005 -184.45614 620.0511 L -184.83507 614.36726 C -184.83507 613.9883 -184.83507 613.9883 -184.45614 613.6094 C -184.45614 613.6094 -184.07722 613.2305 -183.6983 613.2305 L -162.47853 613.2305 C -162.0996 613.2305 -161.72068 613.6094 -161.72068 613.9883 L -160.58391 619.6722 C -160.58391 620.0511 -160.58391 620.0511 -160.58391 620.43005 C -161.34176 620.43005 -161.34176 620.809 -161.72068 620.809 Z M -182.94045 618.91435 L -162.85746 618.91435 L -163.6153 614.7462 L -183.31937 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_215">
+                      <g id="Graphic_217">
+                        <path d="M -205.6759 619.6722 L -205.6759 613.9883 L -226.89566 613.9883 L -227.2746 619.6722 Z" fill="url(#Obj_Gradient_32)"/>
+                      </g>
+                      <g id="Graphic_216">
+                        <path d="M -205.6759 620.809 L -227.6535 620.809 C -228.03244 620.809 -228.03244 620.809 -228.41136 620.43005 C -228.41136 620.43005 -228.79028 620.0511 -228.79028 619.6722 L -228.41136 613.9883 C -228.41136 613.6094 -228.03244 613.2305 -227.6535 613.2305 L -206.43375 613.2305 C -206.05483 613.2305 -205.6759 613.6094 -205.6759 613.9883 L -205.6759 619.6722 C -204.53913 620.43005 -204.91805 620.809 -205.6759 620.809 Z M -226.51674 618.91435 L -206.43375 618.91435 L -206.43375 614.7462 L -226.13781 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_212">
+                      <g id="Graphic_214">
+                        <path d="M -227.2746 619.6722 L -226.89566 613.9883 L -248.11542 613.9883 L -249.2522 619.6722 Z" fill="url(#Obj_Gradient_33)"/>
+                      </g>
+                      <g id="Graphic_213">
+                        <path d="M -227.2746 620.809 L -249.2522 620.809 C -249.63112 620.809 -249.63112 620.809 -250.01004 620.43005 C -250.01004 620.43005 -250.38897 620.0511 -250.01004 619.6722 L -248.87327 613.9883 C -248.87327 613.6094 -248.49435 613.2305 -248.11542 613.2305 L -226.89566 613.2305 C -226.51674 613.2305 -226.51674 613.2305 -226.13781 613.6094 C -226.13781 613.6094 -225.7589 613.9883 -225.7589 614.36726 L -226.13781 620.0511 C -226.51674 620.43005 -226.89566 620.809 -227.2746 620.809 Z M -248.49435 618.91435 L -228.41136 618.91435 L -228.03244 614.7462 L -247.7365 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_209">
+                      <g id="Graphic_211">
+                        <path d="M -139.74308 619.6722 L -141.25877 613.9883 L -162.85746 613.9883 L -161.72068 619.6722 Z" fill="url(#Obj_Gradient_34)"/>
+                      </g>
+                      <g id="Graphic_210">
+                        <path d="M -139.74308 620.809 L -161.72068 620.809 C -162.0996 620.809 -162.47853 620.43005 -162.47853 620.0511 L -163.6153 614.36726 C -163.6153 613.9883 -163.6153 613.9883 -163.6153 613.6094 C -163.6153 613.6094 -163.23638 613.2305 -162.85746 613.2305 L -141.6377 613.2305 C -141.25877 613.2305 -140.87985 613.6094 -140.87985 613.9883 L -139.36415 619.6722 C -139.36415 620.0511 -139.36415 620.0511 -139.36415 620.43005 C -139.36415 620.43005 -139.36415 620.809 -139.74308 620.809 Z M -160.96284 618.91435 L -140.87985 618.91435 L -142.01662 614.7462 L -161.72068 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_206">
+                      <g id="Graphic_208">
+                        <path d="M -30.233956 619.6722 L -34.781048 613.9883 L -56.00081 613.9883 L -52.211565 619.6722 Z" fill="url(#Obj_Gradient_35)"/>
+                      </g>
+                      <g id="Graphic_207">
+                        <path d="M -30.233956 620.809 L -52.211565 620.809 C -52.59049 620.809 -52.59049 620.809 -52.969414 620.43005 L -56.758657 614.7462 C -56.758657 614.36726 -56.758657 613.9883 -56.758657 613.9883 C -56.758657 613.6094 -56.37973 613.6094 -56.00081 613.6094 L -34.781048 613.6094 C -34.402123 613.6094 -34.402123 613.6094 -34.0232 613.9883 L -29.476108 619.6722 C -29.476108 620.0511 -29.097183 620.43005 -29.476108 620.43005 C -29.855032 620.43005 -29.855032 620.809 -30.233956 620.809 Z M -51.83264 618.91435 L -32.128578 618.91435 L -35.15997 614.7462 L -54.48511 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_203">
+                      <g id="Graphic_205">
+                        <path d="M -52.211565 619.6722 L -56.00081 613.9883 L -77.22057 613.9883 L -74.18917 619.6722 Z" fill="url(#Obj_Gradient_36)"/>
+                      </g>
+                      <g id="Graphic_204">
+                        <path d="M -52.211565 620.809 L -74.18917 620.809 C -74.5681 620.809 -74.94702 620.809 -74.94702 620.43005 L -78.35734 614.7462 C -78.35734 614.36726 -78.35734 614.36726 -78.35734 613.9883 C -78.35734 613.6094 -77.97842 613.6094 -77.59949 613.6094 L -56.37973 613.6094 C -56.00081 613.6094 -56.00081 613.6094 -55.621884 613.9883 L -51.83264 619.6722 C -51.83264 620.0511 -51.83264 620.0511 -51.83264 620.43005 C -51.453716 620.43005 -51.83264 620.809 -52.211565 620.809 Z M -73.431325 618.91435 L -53.34834 618.91435 L -56.00081 614.7462 L -75.70487 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_200">
+                      <g id="Graphic_202">
+                        <path d="M -74.18917 619.6722 L -77.22057 613.9883 L -98.81925 613.9883 L -96.16678 619.6722 Z" fill="url(#Obj_Gradient_37)"/>
+                      </g>
+                      <g id="Graphic_201">
+                        <path d="M -74.18917 620.809 L -96.16678 620.809 C -96.54571 620.809 -96.92463 620.809 -96.92463 620.43005 L -99.5771 614.7462 C -99.5771 614.36726 -99.5771 614.36726 -99.5771 613.9883 C -99.5771 613.6094 -99.19818 613.6094 -98.81925 613.6094 L -77.59949 613.6094 C -77.22057 613.6094 -77.22057 613.6094 -76.84164 613.9883 L -73.431325 619.6722 C -73.431325 620.0511 -73.431325 620.0511 -73.431325 620.43005 C -73.431325 620.43005 -73.81025 620.809 -74.18917 620.809 Z M -95.40893 618.91435 L -75.32595 618.91435 L -77.59949 614.7462 L -97.30356 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_197">
+                      <g id="Graphic_199">
+                        <path d="M -96.16678 619.6722 L -98.81925 613.9883 L -120.03901 613.9883 L -117.76547 619.6722 Z" fill="url(#Obj_Gradient_38)"/>
+                      </g>
+                      <g id="Graphic_198">
+                        <path d="M -96.16678 620.809 L -118.14439 620.809 C -118.52332 620.809 -118.90224 620.43005 -118.90224 620.43005 L -120.79686 614.36726 C -120.79686 613.9883 -120.79686 613.9883 -120.79686 613.6094 C -120.79686 613.2305 -120.41794 613.2305 -120.03901 613.2305 L -98.81925 613.2305 C -98.44033 613.2305 -98.0614 613.2305 -98.0614 613.6094 L -95.40893 619.2933 C -95.40893 619.6722 -95.40893 619.6722 -95.40893 620.0511 C -95.40893 620.43005 -95.78786 620.809 -96.16678 620.809 Z M -117.38654 618.91435 L -97.30356 618.91435 L -99.19818 614.7462 L -118.90224 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_194">
+                      <g id="Graphic_196">
+                        <path d="M -336.7837 619.6722 L -333.7523 613.9883 L -354.97207 613.9883 L -358.7613 619.6722 Z" fill="url(#Obj_Gradient_39)"/>
+                      </g>
+                      <g id="Graphic_195">
+                        <path d="M -336.7837 620.809 L -358.7613 620.809 C -359.14024 620.809 -359.51916 620.809 -359.51916 620.43005 C -359.51916 620.0511 -359.51916 619.6722 -359.51916 619.6722 L -355.72992 613.9883 C -355.72992 613.6094 -355.351 613.6094 -354.97207 613.6094 L -333.7523 613.6094 C -333.3734 613.6094 -333.3734 613.6094 -332.99446 613.9883 C -332.99446 614.36726 -332.99446 614.36726 -332.99446 614.7462 L -336.4048 620.43005 Z M -357.2456 618.91435 L -337.16263 618.91435 L -334.8891 614.7462 L -354.59315 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_191">
+                      <g id="Graphic_193">
+                        <path d="M -358.7613 619.6722 L -354.97207 613.9883 L -376.57076 613.9883 L -380.73892 619.6722 Z" fill="url(#Obj_Gradient_40)"/>
+                      </g>
+                      <g id="Graphic_192">
+                        <path d="M -358.7613 620.809 L -380.73892 620.809 C -381.11785 620.809 -381.49677 620.809 -381.49677 620.43005 C -381.49677 620.0511 -381.49677 619.6722 -381.49677 619.6722 L -376.9497 613.9883 C -376.9497 613.6094 -376.57076 613.6094 -376.19183 613.6094 L -354.97207 613.6094 C -354.59315 613.6094 -354.21422 613.6094 -354.21422 613.9883 C -354.21422 614.36726 -354.21422 614.7462 -354.21422 614.7462 L -358.00347 620.43005 C -358.3824 620.43005 -358.7613 620.809 -358.7613 620.809 Z M -379.22323 618.91435 L -359.51916 618.91435 L -356.8667 614.7462 L -376.19183 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_188">
+                      <g id="Graphic_190">
+                        <path d="M -402.71653 619.6722 L -407.64255 625.735 L -385.286 625.735 L -380.73892 619.6722 Z" fill="url(#Obj_Gradient_41)"/>
+                      </g>
+                      <g id="Graphic_189">
+                        <path d="M -385.286 626.4928 L -407.64255 626.4928 C -408.02147 626.4928 -408.4004 626.4928 -408.4004 626.1139 C -408.4004 625.735 -408.4004 625.35606 -408.4004 625.35606 L -403.4744 619.6722 C -403.4744 619.6722 -403.09546 619.2933 -402.71653 619.2933 L -380.73892 619.2933 C -380.36 619.2933 -379.98108 619.2933 -379.98108 619.6722 C -379.98108 620.0511 -379.98108 620.43005 -379.98108 620.43005 L -384.52817 626.1139 C -384.52817 626.4928 -384.9071 626.4928 -385.286 626.4928 Z M -405.74793 624.97714 L -385.286 624.97714 L -382.2546 620.809 L -402.3376 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_185">
+                      <g id="Graphic_187">
+                        <path d="M -376.57076 613.9883 L -397.7905 613.9883 L -402.71653 619.6722 L -380.73892 619.6722 Z" fill="url(#Obj_Gradient_42)"/>
+                      </g>
+                      <g id="Graphic_186">
+                        <path d="M -380.73892 620.809 L -402.71653 620.809 C -403.09546 620.809 -403.4744 620.809 -403.4744 620.43005 C -403.4744 620.0511 -403.4744 619.6722 -403.4744 619.6722 L -398.54837 613.9883 C -398.54837 613.9883 -398.16944 613.6094 -397.7905 613.6094 L -376.57076 613.6094 C -376.19183 613.6094 -375.8129 613.6094 -375.8129 613.9883 C -375.8129 614.36726 -375.8129 614.7462 -375.8129 614.7462 L -380.36 620.43005 C -380.36 620.43005 -380.36 620.809 -380.73892 620.809 Z M -400.8219 618.91435 L -381.11785 618.91435 L -378.08645 614.7462 L -397.4116 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_182">
+                      <g id="Graphic_184">
+                        <path d="M -380.73892 619.6722 L -385.286 625.735 L -362.55056 625.735 L -358.7613 619.6722 Z" fill="url(#Obj_Gradient_43)"/>
+                      </g>
+                      <g id="Graphic_183">
+                        <path d="M -362.55056 626.4928 L -384.9071 626.4928 C -385.286 626.4928 -385.66494 626.4928 -385.66494 626.1139 C -385.66494 625.735 -385.66494 625.35606 -385.66494 625.35606 L -381.11785 619.6722 C -381.11785 619.2933 -380.73892 619.2933 -380.36 619.2933 L -358.3824 619.2933 C -358.00347 619.2933 -357.62454 619.2933 -357.62454 619.6722 C -357.62454 620.0511 -357.62454 620.43005 -357.62454 620.43005 L -361.4138 626.1139 C -362.17163 626.4928 -362.55056 626.4928 -362.55056 626.4928 Z M -383.3914 624.97714 L -362.9295 624.97714 L -360.277 620.809 L -380.36 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_179">
+                      <g id="Graphic_181">
+                        <path d="M -249.2522 619.6722 L -248.11542 613.9883 L -269.7141 613.9883 L -271.2298 619.6722 Z" fill="url(#Obj_Gradient_44)"/>
+                      </g>
+                      <g id="Graphic_180">
+                        <path d="M -249.2522 620.809 L -271.2298 620.809 C -271.60873 620.809 -271.60873 620.809 -271.98765 620.43005 C -271.98765 620.0511 -272.36658 620.0511 -271.98765 619.6722 L -270.47196 613.9883 C -270.47196 613.6094 -270.09303 613.2305 -269.7141 613.2305 L -248.49435 613.2305 C -248.11542 613.2305 -248.11542 613.2305 -247.7365 613.6094 C -247.7365 613.6094 -247.35757 613.9883 -247.7365 614.36726 L -248.87327 620.0511 C -248.49435 620.43005 -248.87327 620.809 -249.2522 620.809 Z M -270.09303 618.91435 L -250.01004 618.91435 L -249.2522 614.7462 L -268.95626 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_176">
+                      <g id="Graphic_178">
+                        <path d="M -293.2074 619.6722 L -290.93387 613.9883 L -312.15363 613.9883 L -315.18502 619.6722 Z" fill="url(#Obj_Gradient_45)"/>
+                      </g>
+                      <g id="Graphic_177">
+                        <path d="M -293.2074 620.809 L -315.18502 620.809 C -315.56395 620.809 -315.56395 620.809 -315.94287 620.43005 C -315.94287 620.0511 -315.94287 620.0511 -315.94287 619.6722 L -313.2904 613.9883 C -313.2904 613.6094 -312.91148 613.6094 -312.53255 613.6094 L -291.3128 613.6094 C -290.93387 613.6094 -290.93387 613.6094 -290.55494 613.9883 C -290.55494 614.36726 -290.55494 614.36726 -290.55494 614.7462 L -292.8285 620.43005 C -292.44957 620.43005 -292.8285 620.809 -293.2074 620.809 Z M -313.66933 618.91435 L -293.58634 618.91435 L -292.07064 614.7462 L -311.7747 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_173">
+                      <g id="Graphic_175">
+                        <path d="M -271.2298 619.6722 L -269.7141 613.9883 L -290.93387 613.9883 L -293.2074 619.6722 Z" fill="url(#Obj_Gradient_46)"/>
+                      </g>
+                      <g id="Graphic_174">
+                        <path d="M -271.2298 620.809 L -293.2074 620.809 C -293.58634 620.809 -293.58634 620.809 -293.96526 620.43005 C -293.96526 620.0511 -293.96526 620.0511 -293.96526 619.6722 L -291.6917 613.9883 C -291.6917 613.6094 -291.3128 613.6094 -290.93387 613.6094 L -269.7141 613.6094 C -269.33518 613.6094 -269.33518 613.6094 -268.95626 613.9883 C -268.95626 614.36726 -268.57733 614.36726 -268.95626 614.7462 L -270.47196 620.0511 C -270.47196 620.43005 -270.85088 620.809 -271.2298 620.809 Z M -292.07064 618.91435 L -271.98765 618.91435 L -270.85088 614.7462 L -290.55494 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_170">
+                      <g id="Graphic_172">
+                        <path d="M -358.7613 619.6722 L -362.55056 625.735 L -340.19403 625.735 L -336.7837 619.6722 Z" fill="url(#Obj_Gradient_47)"/>
+                      </g>
+                      <g id="Graphic_171">
+                        <path d="M -340.19403 626.4928 L -362.55056 626.4928 C -362.9295 626.4928 -363.3084 626.4928 -363.3084 626.1139 C -363.3084 625.735 -363.3084 625.35606 -363.3084 625.35606 L -359.51916 619.6722 C -359.51916 619.2933 -359.14024 619.2933 -358.7613 619.2933 L -336.7837 619.2933 C -336.4048 619.2933 -336.4048 619.2933 -336.02586 619.6722 C -336.02586 620.0511 -336.02586 620.0511 -336.02586 620.43005 L -339.43618 626.1139 C -339.8151 626.4928 -339.8151 626.4928 -340.19403 626.4928 Z M -361.03486 624.97714 L -340.57295 624.97714 L -338.2994 620.809 L -358.3824 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_167">
+                      <g id="Graphic_169">
+                        <path d="M -315.18502 619.6722 L -312.15363 613.9883 L -333.7523 613.9883 L -336.7837 619.6722 Z" fill="url(#Obj_Gradient_48)"/>
+                      </g>
+                      <g id="Graphic_168">
+                        <path d="M -315.18502 620.809 L -337.16263 620.809 C -337.54156 620.809 -337.54156 620.809 -337.9205 620.43005 C -337.9205 620.0511 -337.9205 620.0511 -337.9205 619.6722 L -334.51016 613.9883 C -334.51016 613.6094 -334.13124 613.6094 -333.7523 613.6094 L -312.15363 613.6094 C -311.7747 613.6094 -311.7747 613.6094 -311.39578 613.9883 C -311.39578 614.36726 -311.39578 614.36726 -311.39578 614.7462 L -314.04825 620.43005 C -314.42717 620.43005 -314.8061 620.809 -315.18502 620.809 Z M -335.64693 618.91435 L -315.56395 618.91435 L -313.66933 614.7462 L -333.3734 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_164">
+                      <g id="Graphic_166">
+                        <path d="M -117.76547 619.6722 L -120.03901 613.9883 L -141.25877 613.9883 L -139.74308 619.6722 Z" fill="url(#Obj_Gradient_49)"/>
+                      </g>
+                      <g id="Graphic_165">
+                        <path d="M -117.76547 620.809 L -139.74308 620.809 C -140.122 620.809 -140.50092 620.43005 -140.50092 620.0511 L -142.39555 614.36726 C -142.39555 613.9883 -142.39555 613.9883 -142.39555 613.6094 C -142.39555 613.2305 -142.01662 613.2305 -141.6377 613.2305 L -120.41794 613.2305 C -120.03901 613.2305 -119.66009 613.6094 -119.66009 613.6094 L -117.38654 619.2933 C -117.38654 619.6722 -117.38654 619.6722 -117.38654 620.0511 C -117.38654 620.43005 -117.76547 620.809 -117.76547 620.809 Z M -139.36415 618.91435 L -118.90224 618.91435 L -120.41794 614.7462 L -140.122 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_161">
+                      <g id="Graphic_163">
+                        <path d="M -407.64255 625.735 L -412.18964 631.0399 L -389.07526 631.0399 L -385.286 625.735 Z" fill="url(#Obj_Gradient_50)"/>
+                      </g>
+                      <g id="Graphic_162">
+                        <path d="M -389.07526 631.7978 L -412.18964 631.7978 C -412.56857 631.7978 -412.9475 631.7978 -412.9475 631.41885 C -412.9475 631.0399 -412.9475 630.661 -412.9475 630.661 L -408.4004 625.35606 C -408.4004 625.35606 -408.02147 624.97714 -407.64255 624.97714 L -385.286 624.97714 C -384.9071 624.97714 -384.52817 624.97714 -384.52817 625.35606 C -384.52817 625.735 -384.52817 626.1139 -384.52817 626.1139 L -388.69633 631.41885 C -388.69633 631.7978 -389.07526 631.7978 -389.07526 631.7978 Z M -410.295 630.2821 L -389.4542 630.2821 L -386.4228 626.4928 L -406.8847 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_158">
+                      <g id="Graphic_160">
+                        <path d="M -385.286 625.735 L -389.07526 631.0399 L -366.3398 631.0399 L -362.55056 625.735 Z" fill="url(#Obj_Gradient_51)"/>
+                      </g>
+                      <g id="Graphic_159">
+                        <path d="M -366.3398 631.7978 L -389.4542 631.7978 C -389.8331 631.7978 -390.21203 631.7978 -390.21203 631.41885 C -390.21203 631.0399 -390.21203 630.661 -390.21203 630.661 L -386.04386 625.35606 C -386.04386 624.97714 -385.66494 624.97714 -385.286 624.97714 L -362.9295 624.97714 C -362.55056 624.97714 -362.17163 624.97714 -362.17163 625.35606 C -362.17163 625.735 -362.17163 626.1139 -362.17163 626.1139 L -365.58195 631.41885 C -365.58195 631.7978 -365.96088 631.7978 -366.3398 631.7978 Z M -387.55956 630.2821 L -366.71873 630.2821 L -364.06626 626.4928 L -384.52817 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_155">
+                      <g id="Graphic_157">
+                        <path d="M -317.8375 625.735 L -320.48996 631.0399 L -297.37558 631.0399 L -295.48096 625.735 Z" fill="url(#Obj_Gradient_52)"/>
+                      </g>
+                      <g id="Graphic_156">
+                        <path d="M -297.37558 631.7978 L -320.48996 631.7978 C -320.8689 631.7978 -320.8689 631.7978 -321.2478 631.41885 C -321.2478 631.0399 -321.2478 631.0399 -321.2478 630.661 L -318.59534 625.35606 C -318.59534 624.97714 -318.2164 624.97714 -317.8375 624.97714 L -295.48096 624.97714 C -295.10204 624.97714 -295.10204 624.97714 -294.7231 625.35606 C -294.7231 625.735 -294.3442 625.735 -294.7231 626.1139 L -296.61773 631.41885 C -296.61773 631.7978 -296.99666 631.7978 -297.37558 631.7978 Z M -318.97427 630.2821 L -297.7545 630.2821 L -296.2388 626.4928 L -317.07964 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_152">
+                      <g id="Graphic_154">
+                        <path d="M -362.55056 625.735 L -366.3398 631.0399 L -343.2254 631.0399 L -340.19403 625.735 Z" fill="url(#Obj_Gradient_53)"/>
+                      </g>
+                      <g id="Graphic_153">
+                        <path d="M -343.2254 631.7978 L -366.3398 631.7978 C -366.71873 631.7978 -367.09765 631.7978 -367.09765 631.41885 C -367.09765 631.0399 -367.09765 630.661 -367.09765 630.661 L -363.68733 625.35606 C -363.68733 624.97714 -363.3084 624.97714 -362.9295 624.97714 L -340.57295 624.97714 C -340.19403 624.97714 -340.19403 624.97714 -339.8151 625.35606 C -339.8151 625.735 -339.8151 625.735 -339.8151 626.1139 L -342.46757 631.41885 C -342.8465 631.7978 -342.8465 631.7978 -343.2254 631.7978 Z M -364.8241 630.2821 L -343.98327 630.2821 L -341.70972 626.4928 L -362.17163 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_149">
+                      <g id="Graphic_151">
+                        <path d="M -340.19403 625.735 L -343.2254 631.0399 L -320.48996 631.0399 L -317.8375 625.735 Z" fill="url(#Obj_Gradient_54)"/>
+                      </g>
+                      <g id="Graphic_150">
+                        <path d="M -320.48996 631.7978 L -343.60434 631.7978 C -343.98327 631.7978 -343.98327 631.7978 -344.3622 631.41885 C -344.3622 631.0399 -344.3622 631.0399 -344.3622 630.661 L -341.3308 625.35606 C -341.3308 624.97714 -340.95187 624.97714 -340.57295 624.97714 L -318.2164 624.97714 C -317.8375 624.97714 -317.8375 624.97714 -317.45857 625.35606 C -317.45857 625.735 -317.45857 625.735 -317.45857 626.1139 L -319.7321 631.41885 C -319.7321 631.7978 -320.11104 631.7978 -320.48996 631.7978 Z M -342.08865 630.2821 L -320.8689 630.2821 L -318.97427 626.4928 L -339.8151 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_146">
+                      <g id="Graphic_148">
+                        <path d="M -48.42232 625.735 L -44.63308 631.0399 L -21.897622 631.0399 L -26.06579 625.735 Z" fill="url(#Obj_Gradient_55)"/>
+                      </g>
+                      <g id="Graphic_147">
+                        <path d="M -21.897622 631.7978 L -45.012004 631.7978 C -45.39093 631.7978 -45.39093 631.7978 -45.76985 631.41885 L -49.18017 626.1139 C -49.18017 625.735 -49.18017 625.735 -49.18017 625.35606 C -49.18017 624.97714 -48.801246 624.97714 -48.42232 624.97714 L -26.06579 624.97714 C -25.686865 624.97714 -25.686865 624.97714 -25.30794 625.35606 L -21.139773 630.661 C -21.139773 631.0399 -20.76085 631.41885 -21.139773 631.41885 C -21.139773 631.7978 -21.518698 631.7978 -21.897622 631.7978 Z M -44.254155 630.2821 L -23.41332 630.2821 L -26.444713 626.4928 L -46.906625 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_143">
+                      <g id="Graphic_145">
+                        <path d="M -26.06579 625.735 L -21.897622 631.0399 L 1.2167599 631.0399 L -3.3303316 625.735 Z" fill="url(#Obj_Gradient_56)"/>
+                      </g>
+                      <g id="Graphic_144">
+                        <path d="M 1.2167599 631.7978 L -21.897622 631.7978 C -22.276546 631.7978 -22.276546 631.7978 -22.65547 631.41885 L -26.823638 626.1139 C -26.823638 625.735 -27.202562 625.35606 -26.823638 625.35606 C -26.823638 624.97714 -26.444713 624.97714 -26.06579 624.97714 L -3.709256 624.97714 C -3.3303316 624.97714 -3.3303316 624.97714 -2.9514073 625.35606 L 1.5956842 630.661 C 1.9746085 631.0399 1.9746085 631.41885 1.5956842 631.41885 C 1.5956842 631.7978 1.5956842 631.7978 1.2167599 631.7978 Z M -21.518698 630.2821 L -.6778615 630.2821 L -3.709256 626.4928 L -24.171168 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_140">
+                      <g id="Graphic_142">
+                        <path d="M 1.2167599 631.0399 L 23.19437 631.0399 L 17.889429 625.735 L -3.3303316 625.735 Z" fill="url(#Obj_Gradient_57)"/>
+                      </g>
+                      <g id="Graphic_141">
+                        <path d="M 23.19437 631.7978 L 1.2167599 631.7978 C .8378356 631.7978 .8378356 631.7978 .45891134 631.41885 L -4.08818 626.1139 C -4.4671044 625.735 -4.4671044 625.35606 -4.08818 625.35606 C -4.08818 624.97714 -3.709256 624.97714 -3.3303316 624.97714 L 18.268353 624.97714 C 18.647277 624.97714 18.647277 624.97714 19.026202 625.35606 L 23.952217 630.661 C 24.331142 631.0399 24.331142 631.41885 23.952217 631.41885 C 23.573293 631.7978 23.573293 631.7978 23.19437 631.7978 Z M 1.5956842 630.2821 L 21.299747 630.2821 L 17.889429 626.4928 L -1.4357101 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_137">
+                      <g id="Graphic_139">
+                        <path d="M -8.256347 619.6722 L -3.3303316 625.735 L 17.889429 625.735 L 12.584489 619.6722 Z" fill="url(#Obj_Gradient_58)"/>
+                      </g>
+                      <g id="Graphic_138">
+                        <path d="M 17.889429 626.4928 L -3.709256 626.4928 C -4.08818 626.4928 -4.08818 626.4928 -4.4671044 626.1139 L -9.39312 620.43005 C -9.772045 620.0511 -9.772045 619.6722 -9.39312 619.6722 C -9.39312 619.2933 -9.014196 619.2933 -8.635272 619.2933 L 12.205564 619.2933 C 12.584489 619.2933 12.584489 619.2933 12.963413 619.6722 L 18.268353 625.35606 C 18.647277 625.735 18.647277 626.1139 18.268353 626.1139 C 18.647277 626.1139 18.268353 626.4928 17.889429 626.4928 Z M -2.9514073 624.97714 L 16.373732 624.97714 L 12.584489 620.809 L -6.361726 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_134">
+                      <g id="Graphic_136">
+                        <path d="M -70.778855 625.735 L -67.74746 631.0399 L -44.63308 631.0399 L -48.42232 625.735 Z" fill="url(#Obj_Gradient_59)"/>
+                      </g>
+                      <g id="Graphic_135">
+                        <path d="M -44.63308 631.7978 L -67.74746 631.7978 C -68.126385 631.7978 -68.126385 631.7978 -68.50531 631.41885 L -71.5367 626.1139 C -71.5367 625.735 -71.5367 625.735 -71.5367 625.35606 C -71.5367 624.97714 -71.15778 624.97714 -70.778855 624.97714 L -48.42232 624.97714 C -48.0434 624.97714 -48.0434 624.97714 -47.664474 625.35606 L -44.254155 630.661 C -44.254155 631.0399 -44.254155 631.41885 -44.254155 631.41885 C -44.254155 631.7978 -44.63308 631.7978 -44.63308 631.7978 Z M -67.36854 630.2821 L -46.5277 630.2821 L -49.18017 626.4928 L -69.64208 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_131">
+                      <g id="Graphic_133">
+                        <path d="M -115.87085 625.735 L -113.5973 631.0399 L -90.86184 631.0399 L -93.13539 625.735 Z" fill="url(#Obj_Gradient_60)"/>
+                      </g>
+                      <g id="Graphic_132">
+                        <path d="M -90.86184 631.7978 L -113.97622 631.7978 C -114.35515 631.7978 -114.73407 631.41885 -114.73407 631.41885 L -116.6287 626.1139 C -116.6287 625.735 -116.6287 625.735 -116.6287 625.35606 C -116.6287 624.97714 -116.24977 624.97714 -115.87085 624.97714 L -93.51431 624.97714 C -93.13539 624.97714 -92.75646 624.97714 -92.75646 625.35606 L -90.10399 630.661 C -90.10399 631.0399 -90.10399 631.0399 -90.10399 631.41885 C -90.10399 631.7978 -90.48292 631.7978 -90.86184 631.7978 Z M -113.21838 630.2821 L -91.99862 630.2821 L -93.89324 626.4928 L -114.73407 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_128">
+                      <g id="Graphic_130">
+                        <path d="M -115.87085 625.735 L -138.22738 625.735 L -160.58391 625.735 L -182.94045 625.735 L -205.6759 625.735 L -228.03244 625.735 L -250.38897 625.735 L -272.7455 625.735 L -295.48096 625.735 L -297.37558 631.0399 L -274.2612 631.0399 L -251.52574 631.0399 L -228.41136 631.0399 L -205.6759 631.0399 L -182.56152 631.0399 L -159.44714 631.0399 L -136.71168 631.0399 L -113.5973 631.0399 Z" fill="url(#Obj_Gradient_61)"/>
+                      </g>
+                      <g id="Graphic_129">
+                        <path d="M -113.5973 631.7978 L -297.37558 631.7978 C -297.7545 631.7978 -297.7545 631.7978 -298.13343 631.41885 C -298.13343 631.0399 -298.51235 631.0399 -298.13343 630.661 L -296.2388 625.35606 C -296.2388 624.97714 -295.8599 624.97714 -295.48096 624.97714 L -115.87085 624.97714 C -115.49192 624.97714 -115.113 625.35606 -115.113 625.35606 L -113.21838 630.661 C -113.21838 631.0399 -113.21838 631.0399 -113.21838 631.41885 C -113.21838 631.7978 -113.5973 631.7978 -113.5973 631.7978 Z M -296.2388 630.2821 L -114.73407 630.2821 L -116.24977 626.4928 L -294.7231 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_125">
+                      <g id="Graphic_127">
+                        <path d="M -93.13539 625.735 L -90.86184 631.0399 L -67.74746 631.0399 L -70.778855 625.735 Z" fill="url(#Obj_Gradient_62)"/>
+                      </g>
+                      <g id="Graphic_126">
+                        <path d="M -67.74746 631.7978 L -90.86184 631.7978 C -91.24077 631.7978 -91.61969 631.7978 -91.61969 631.41885 L -94.27216 626.1139 C -94.27216 625.735 -94.27216 625.735 -94.27216 625.35606 C -94.27216 624.97714 -93.89324 624.97714 -93.51431 624.97714 L -71.15778 624.97714 C -70.778855 624.97714 -70.778855 624.97714 -70.39993 625.35606 L -67.36854 630.661 C -67.36854 631.0399 -67.36854 631.0399 -67.36854 631.41885 C -67.36854 631.7978 -67.36854 631.7978 -67.74746 631.7978 Z M -90.10399 630.2821 L -68.88423 630.2821 L -71.15778 626.4928 L -91.99862 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_122">
+                      <g id="Graphic_124">
+                        <path d="M -77.22057 613.9883 L -79.87304 609.8202 L -100.71387 609.8202 L -98.81925 613.9883 Z" fill="url(#Obj_Gradient_63)"/>
+                      </g>
+                      <g id="Graphic_123">
+                        <path d="M -77.22057 614.7462 L -98.44033 614.7462 C -98.81925 614.7462 -99.19818 614.7462 -99.19818 614.36726 L -101.0928 610.1991 C -101.0928 609.8202 -101.0928 609.8202 -101.0928 609.44124 C -101.0928 609.0623 -100.71387 609.0623 -100.33495 609.0623 L -79.49411 609.0623 C -79.11519 609.0623 -79.11519 609.0623 -78.73627 609.44124 L -76.46272 613.6094 C -76.46272 613.9883 -76.46272 613.9883 -76.46272 614.36726 C -76.84164 614.7462 -77.22057 614.7462 -77.22057 614.7462 Z M -98.0614 613.2305 L -78.73627 613.2305 L -80.25196 610.578 L -99.5771 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_119">
+                      <g id="Graphic_121">
+                        <path d="M -162.85746 613.9883 L -163.6153 609.8202 L -184.45614 609.8202 L -184.07722 613.9883 Z" fill="url(#Obj_Gradient_64)"/>
+                      </g>
+                      <g id="Graphic_120">
+                        <path d="M -162.85746 614.7462 L -184.07722 614.7462 C -184.45614 614.7462 -184.83507 614.36726 -184.83507 613.9883 L -185.214 609.8202 C -185.214 609.44124 -185.214 609.44124 -184.83507 609.0623 C -184.83507 609.0623 -184.45614 608.6834 -184.07722 608.6834 L -163.23638 608.6834 C -162.85746 608.6834 -162.47853 609.0623 -162.47853 609.44124 L -161.72068 613.6094 C -161.72068 613.9883 -161.72068 613.9883 -161.72068 614.36726 C -162.47853 614.7462 -162.47853 614.7462 -162.85746 614.7462 Z M -183.31937 613.2305 L -163.6153 613.2305 L -164.37316 610.578 L -183.6983 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_116">
+                      <g id="Graphic_118">
+                        <path d="M -184.07722 613.9883 L -184.45614 609.8202 L -205.6759 609.8202 L -205.6759 613.9883 Z" fill="url(#Obj_Gradient_65)"/>
+                      </g>
+                      <g id="Graphic_117">
+                        <path d="M -184.07722 614.7462 L -205.29698 614.7462 C -205.6759 614.7462 -206.05483 614.36726 -206.05483 613.9883 L -206.05483 609.8202 C -206.05483 609.44124 -205.6759 609.0623 -205.29698 609.0623 L -184.45614 609.0623 C -184.07722 609.0623 -183.6983 609.44124 -183.6983 609.8202 L -183.31937 613.9883 C -183.31937 614.36726 -183.31937 614.36726 -183.6983 614.7462 Z M -204.53913 613.2305 L -184.83507 613.2305 L -185.214 610.578 L -204.53913 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_113">
+                      <g id="Graphic_115">
+                        <path d="M -205.6759 613.9883 L -205.6759 609.8202 L -226.51674 609.8202 L -226.89566 613.9883 Z" fill="url(#Obj_Gradient_66)"/>
+                      </g>
+                      <g id="Graphic_114">
+                        <path d="M -205.6759 614.7462 L -226.89566 614.7462 C -227.2746 614.7462 -227.2746 614.7462 -227.6535 614.36726 C -227.6535 614.36726 -228.03244 613.9883 -228.03244 613.6094 L -227.6535 609.44124 C -227.6535 609.0623 -227.2746 608.6834 -226.89566 608.6834 L -206.05483 608.6834 C -205.6759 608.6834 -205.29698 609.0623 -205.29698 609.44124 L -205.29698 613.6094 C -204.53913 614.36726 -204.91805 614.7462 -205.6759 614.7462 Z M -226.13781 613.2305 L -206.43375 613.2305 L -206.43375 610.578 L -225.7589 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_110">
+                      <g id="Graphic_112">
+                        <path d="M -226.89566 613.9883 L -226.51674 609.8202 L -247.35757 609.8202 L -248.11542 613.9883 Z" fill="url(#Obj_Gradient_67)"/>
+                      </g>
+                      <g id="Graphic_111">
+                        <path d="M -226.89566 614.7462 L -248.11542 614.7462 C -248.49435 614.7462 -248.49435 614.7462 -248.87327 614.36726 C -248.87327 614.36726 -249.2522 613.9883 -248.87327 613.6094 L -248.11542 609.44124 C -248.11542 609.0623 -247.7365 608.6834 -247.35757 608.6834 L -226.51674 608.6834 C -226.13781 608.6834 -226.13781 608.6834 -225.7589 609.0623 C -225.7589 609.0623 -225.37997 609.44124 -225.37997 609.8202 L -225.7589 613.9883 C -226.13781 614.36726 -226.51674 614.7462 -226.89566 614.7462 Z M -247.35757 613.2305 L -227.6535 613.2305 L -227.2746 610.578 L -246.59973 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_107">
+                      <g id="Graphic_109">
+                        <path d="M -98.81925 613.9883 L -100.71387 609.8202 L -121.55471 609.8202 L -120.03901 613.9883 Z" fill="url(#Obj_Gradient_68)"/>
+                      </g>
+                      <g id="Graphic_108">
+                        <path d="M -98.81925 614.7462 L -120.03901 614.7462 C -120.41794 614.7462 -120.79686 614.36726 -120.79686 614.36726 L -122.31256 610.1991 C -122.31256 609.8202 -122.31256 609.8202 -122.31256 609.44124 C -122.31256 609.0623 -121.93363 609.0623 -121.55471 609.0623 L -100.71387 609.0623 C -100.33495 609.0623 -99.95603 609.0623 -99.95603 609.44124 L -98.0614 613.6094 C -98.0614 613.9883 -98.0614 613.9883 -98.0614 614.36726 C -98.0614 614.7462 -98.44033 614.7462 -98.81925 614.7462 Z M -119.66009 613.2305 L -99.95603 613.2305 L -101.0928 610.578 L -120.41794 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_104">
+                      <g id="Graphic_106">
+                        <path d="M -141.25877 613.9883 L -142.77447 609.8202 L -163.6153 609.8202 L -162.85746 613.9883 Z" fill="url(#Obj_Gradient_69)"/>
+                      </g>
+                      <g id="Graphic_105">
+                        <path d="M -141.25877 614.7462 L -162.47853 614.7462 C -162.85746 614.7462 -163.23638 614.36726 -163.23638 613.9883 L -164.37316 609.8202 C -164.37316 609.44124 -164.37316 609.44124 -164.37316 609.0623 C -164.37316 609.0623 -163.99423 608.6834 -163.6153 608.6834 L -142.77447 608.6834 C -142.39555 608.6834 -142.01662 609.0623 -142.01662 609.44124 L -140.87985 613.6094 C -140.87985 613.9883 -140.87985 613.9883 -140.87985 614.36726 C -140.87985 614.7462 -141.25877 614.7462 -141.25877 614.7462 Z M -162.0996 613.2305 L -142.39555 613.2305 L -143.1534 610.578 L -162.47853 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_101">
+                      <g id="Graphic_103">
+                        <path d="M -248.11542 613.9883 L -247.35757 609.8202 L -268.57733 609.8202 L -269.7141 613.9883 Z" fill="url(#Obj_Gradient_70)"/>
+                      </g>
+                      <g id="Graphic_102">
+                        <path d="M -248.11542 614.7462 L -269.33518 614.7462 C -269.7141 614.7462 -269.7141 614.7462 -270.09303 614.36726 C -270.09303 613.9883 -270.47196 613.9883 -270.09303 613.6094 L -268.95626 609.44124 C -268.95626 609.0623 -268.57733 608.6834 -268.1984 608.6834 L -247.35757 608.6834 C -246.97865 608.6834 -246.97865 608.6834 -246.59973 609.0623 C -246.59973 609.0623 -246.2208 609.44124 -246.59973 609.8202 L -247.35757 614.36726 C -247.35757 614.7462 -247.7365 614.7462 -248.11542 614.7462 Z M -268.57733 613.2305 L -248.87327 613.2305 L -248.49435 610.578 L -267.8195 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_98">
+                      <g id="Graphic_100">
+                        <path d="M -56.00081 613.9883 L -58.65328 609.8202 L -79.87304 609.8202 L -77.22057 613.9883 Z" fill="url(#Obj_Gradient_71)"/>
+                      </g>
+                      <g id="Graphic_99">
+                        <path d="M -56.00081 614.7462 L -77.22057 614.7462 C -77.59949 614.7462 -77.59949 614.7462 -77.97842 614.36726 L -80.25196 610.1991 C -80.25196 609.8202 -80.25196 609.8202 -80.25196 609.44124 C -80.25196 609.0623 -79.87304 609.0623 -79.49411 609.0623 L -58.65328 609.0623 C -58.274354 609.0623 -58.274354 609.0623 -57.89543 609.44124 L -55.24296 613.6094 C -55.24296 613.9883 -55.24296 613.9883 -55.24296 614.36726 C -55.24296 614.7462 -55.621884 614.7462 -56.00081 614.7462 Z M -76.84164 613.2305 L -57.516505 613.2305 L -59.0322 610.578 L -77.97842 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_95">
+                      <g id="Graphic_97">
+                        <path d="M -120.03901 613.9883 L -121.55471 609.8202 L -142.77447 609.8202 L -141.25877 613.9883 Z" fill="url(#Obj_Gradient_72)"/>
+                      </g>
+                      <g id="Graphic_96">
+                        <path d="M -120.03901 614.7462 L -141.25877 614.7462 C -141.6377 614.7462 -142.01662 614.36726 -142.01662 613.9883 L -143.1534 609.8202 C -143.1534 609.44124 -143.1534 609.44124 -143.1534 609.0623 C -143.1534 608.6834 -142.77447 608.6834 -142.39555 608.6834 L -121.55471 608.6834 C -121.17579 608.6834 -120.79686 609.0623 -120.79686 609.0623 L -119.28116 613.2305 C -119.28116 613.6094 -119.28116 613.6094 -119.28116 613.9883 C -119.66009 614.7462 -119.66009 614.7462 -120.03901 614.7462 Z M -140.87985 613.2305 L -121.17579 613.2305 L -122.31256 610.578 L -141.6377 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_92">
+                      <g id="Graphic_94">
+                        <path d="M -269.7141 613.9883 L -268.57733 609.8202 L -289.41817 609.8202 L -290.93387 613.9883 Z" fill="url(#Obj_Gradient_73)"/>
+                      </g>
+                      <g id="Graphic_93">
+                        <path d="M -269.7141 614.7462 L -290.93387 614.7462 C -291.3128 614.7462 -291.3128 614.7462 -291.6917 614.36726 C -291.6917 613.9883 -291.6917 613.9883 -291.6917 613.6094 L -290.17602 609.44124 C -290.17602 609.0623 -289.7971 609.0623 -289.41817 609.0623 L -268.57733 609.0623 C -268.1984 609.0623 -268.1984 609.0623 -267.8195 609.44124 C -267.8195 609.8202 -267.44056 609.8202 -267.8195 610.1991 L -268.95626 614.36726 C -268.95626 614.7462 -269.33518 614.7462 -269.7141 614.7462 Z M -289.7971 613.2305 L -270.09303 613.2305 L -269.33518 610.578 L -288.66032 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_89">
+                      <g id="Graphic_91">
+                        <path d="M -397.7905 613.9883 L -419.76813 613.9883 L -425.07307 619.6722 L -402.71653 619.6722 Z" fill="url(#Obj_Gradient_74)"/>
+                      </g>
+                      <g id="Graphic_90">
+                        <path d="M -402.71653 620.809 L -425.452 620.809 C -425.8309 620.809 -426.20984 620.43005 -426.20984 620.43005 C -426.20984 620.0511 -426.20984 619.6722 -426.20984 619.6722 L -420.9049 613.9883 C -420.9049 613.9883 -420.526 613.6094 -420.14705 613.6094 L -398.16944 613.6094 C -397.7905 613.6094 -397.4116 613.6094 -397.4116 613.9883 C -397.4116 614.36726 -397.4116 614.7462 -397.4116 614.7462 L -402.3376 620.43005 C -402.3376 620.43005 -402.3376 620.809 -402.71653 620.809 Z M -423.17845 618.91435 L -403.09546 618.91435 L -399.68514 614.7462 L -419.76813 614.7462 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_86">
+                      <g id="Graphic_88">
+                        <path d="M -394.3802 609.8202 L -415.9789 609.8202 L -419.76813 613.9883 L -397.7905 613.9883 Z" fill="url(#Obj_Gradient_75)"/>
+                      </g>
+                      <g id="Graphic_87">
+                        <path d="M -397.7905 614.7462 L -419.76813 614.7462 C -420.14705 614.7462 -420.526 614.36726 -420.526 614.36726 C -420.526 613.9883 -420.526 613.6094 -420.526 613.6094 L -416.73673 609.44124 C -416.73673 609.44124 -416.3578 609.0623 -415.9789 609.0623 L -394.3802 609.0623 C -394.00128 609.0623 -393.62235 609.0623 -393.62235 609.44124 C -393.62235 609.8202 -393.62235 610.1991 -393.62235 610.1991 L -397.03267 614.36726 C -397.4116 614.7462 -397.4116 614.7462 -397.7905 614.7462 Z M -417.8735 613.2305 L -398.16944 613.2305 L -395.8959 610.578 L -415.22104 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_83">
+                      <g id="Graphic_85">
+                        <path d="M -402.71653 619.6722 L -425.07307 619.6722 L -430.75693 625.735 L -407.64255 625.735 Z" fill="url(#Obj_Gradient_76)"/>
+                      </g>
+                      <g id="Graphic_84">
+                        <path d="M -407.64255 626.4928 L -430.75693 626.4928 C -431.13586 626.4928 -431.5148 626.1139 -431.5148 626.1139 C -431.5148 625.735 -431.5148 625.35606 -431.5148 625.35606 L -426.20984 619.6722 C -426.20984 619.6722 -425.8309 619.2933 -425.452 619.2933 L -402.71653 619.2933 C -402.3376 619.2933 -401.9587 619.2933 -401.9587 619.6722 C -401.9587 620.0511 -401.9587 620.43005 -401.9587 620.43005 L -406.8847 626.1139 C -407.26363 626.4928 -407.26363 626.4928 -407.64255 626.4928 Z M -428.8623 624.97714 L -408.02147 624.97714 L -404.61116 620.809 L -425.07307 620.809 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_80">
+                      <g id="Graphic_82">
+                        <path d="M -376.57076 613.9883 L -373.16044 609.8202 L -394.3802 609.8202 L -397.7905 613.9883 Z" fill="url(#Obj_Gradient_77)"/>
+                      </g>
+                      <g id="Graphic_81">
+                        <path d="M -376.57076 614.7462 L -397.7905 614.7462 C -398.16944 614.7462 -398.54837 614.7462 -398.54837 614.36726 C -398.54837 613.9883 -398.54837 613.6094 -398.54837 613.6094 L -395.13805 609.44124 C -395.13805 609.44124 -394.75912 609.0623 -394.3802 609.0623 L -373.53936 609.0623 C -373.16044 609.0623 -372.7815 609.0623 -372.7815 609.44124 C -372.7815 609.8202 -372.7815 610.1991 -372.7815 610.1991 L -375.8129 614.36726 C -375.8129 614.7462 -376.19183 614.7462 -376.57076 614.7462 Z M -395.8959 613.2305 L -376.57076 613.2305 L -374.67614 610.578 L -393.62235 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_77">
+                      <g id="Graphic_79">
+                        <path d="M -312.15363 613.9883 L -310.259 609.8202 L -331.47877 609.8202 L -333.7523 613.9883 Z" fill="url(#Obj_Gradient_78)"/>
+                      </g>
+                      <g id="Graphic_78">
+                        <path d="M -312.15363 614.7462 L -333.3734 614.7462 C -333.7523 614.7462 -333.7523 614.7462 -334.13124 614.36726 C -334.13124 613.9883 -334.13124 613.9883 -334.13124 613.6094 L -331.8577 609.44124 C -331.8577 609.0623 -331.47877 609.0623 -331.09984 609.0623 L -310.259 609.0623 C -309.8801 609.0623 -309.8801 609.0623 -309.50116 609.44124 C -309.50116 609.8202 -309.50116 609.8202 -309.50116 610.1991 L -311.7747 614.36726 C -311.7747 614.7462 -312.15363 614.7462 -312.15363 614.7462 Z M -332.2366 613.2305 L -312.91148 613.2305 L -311.7747 610.578 L -331.09984 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_74">
+                      <g id="Graphic_76">
+                        <path d="M -354.97207 613.9883 L -352.3196 609.8202 L -373.16044 609.8202 L -376.57076 613.9883 Z" fill="url(#Obj_Gradient_79)"/>
+                      </g>
+                      <g id="Graphic_75">
+                        <path d="M -354.97207 614.7462 L -376.57076 614.7462 C -376.9497 614.7462 -377.3286 614.7462 -377.3286 614.36726 C -377.3286 613.9883 -377.3286 613.6094 -377.3286 613.6094 L -374.2972 609.44124 C -374.2972 609.0623 -373.9183 609.0623 -373.53936 609.0623 L -352.69853 609.0623 C -352.3196 609.0623 -351.94068 609.0623 -351.94068 609.44124 C -351.94068 609.8202 -351.94068 610.1991 -351.94068 610.1991 L -354.21422 614.36726 C -354.59315 614.7462 -354.59315 614.7462 -354.97207 614.7462 Z M -374.67614 613.2305 L -355.351 613.2305 L -353.8353 610.578 L -372.7815 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_71">
+                      <g id="Graphic_73">
+                        <path d="M -290.93387 613.9883 L -289.41817 609.8202 L -310.259 609.8202 L -312.15363 613.9883 Z" fill="url(#Obj_Gradient_80)"/>
+                      </g>
+                      <g id="Graphic_72">
+                        <path d="M -290.93387 614.7462 L -312.15363 614.7462 C -312.53255 614.7462 -312.53255 614.7462 -312.91148 614.36726 C -312.91148 613.9883 -312.91148 613.9883 -312.91148 613.6094 L -311.01686 609.44124 C -311.01686 609.0623 -310.63793 609.0623 -310.259 609.0623 L -289.41817 609.0623 C -289.03925 609.0623 -289.03925 609.0623 -288.66032 609.44124 C -288.66032 609.8202 -288.66032 609.8202 -288.66032 610.1991 L -290.17602 614.36726 C -290.17602 614.7462 -290.55494 614.7462 -290.93387 614.7462 Z M -311.01686 613.2305 L -291.3128 613.2305 L -290.17602 610.578 L -309.50116 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_68">
+                      <g id="Graphic_70">
+                        <path d="M -430.75693 625.735 L -435.68295 631.0399 L -412.18964 631.0399 L -407.64255 625.735 Z" fill="url(#Obj_Gradient_81)"/>
+                      </g>
+                      <g id="Graphic_69">
+                        <path d="M -412.18964 631.7978 L -435.68295 631.7978 C -436.06187 631.7978 -436.4408 631.41885 -436.4408 631.41885 C -436.4408 631.0399 -436.4408 630.661 -436.4408 630.661 L -431.5148 625.35606 C -431.5148 625.35606 -431.13586 624.97714 -430.75693 624.97714 L -407.64255 624.97714 C -407.26363 624.97714 -406.8847 624.97714 -406.8847 625.35606 C -406.8847 625.735 -406.8847 626.1139 -406.8847 626.1139 L -411.4318 631.41885 C -411.8107 631.7978 -411.8107 631.7978 -412.18964 631.7978 Z M -433.7883 630.2821 L -412.56857 630.2821 L -409.53717 626.4928 L -430.378 626.4928 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                    <g id="Group_65">
+                      <g id="Graphic_67">
+                        <path d="M -333.7523 613.9883 L -331.47877 609.8202 L -352.3196 609.8202 L -354.97207 613.9883 Z" fill="url(#Obj_Gradient_82)"/>
+                      </g>
+                      <g id="Graphic_66">
+                        <path d="M -333.7523 614.7462 L -354.97207 614.7462 C -355.351 614.7462 -355.72992 614.7462 -355.72992 614.36726 C -355.72992 613.9883 -355.72992 613.6094 -355.72992 613.6094 L -353.07745 609.44124 C -353.07745 609.0623 -352.69853 609.0623 -352.3196 609.0623 L -331.47877 609.0623 C -331.09984 609.0623 -331.09984 609.0623 -330.7209 609.44124 C -330.7209 609.8202 -330.7209 609.8202 -330.7209 610.1991 L -332.99446 614.36726 C -332.99446 614.7462 -333.3734 614.7462 -333.7523 614.7462 Z M -353.45638 613.2305 L -334.13124 613.2305 L -332.61554 610.578 L -351.94068 610.578 Z" fill="#404040"/>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="Graphic_63">
+                    <path d="M -428.10446 628.38746 L -412.18964 612.0937 L -30.233956 612.0937 Z" fill="url(#Obj_Gradient_83)"/>
+                  </g>
+                  <g id="Graphic_62">
+                    <path d="M -408.4004 661.7328 C -408.4004 661.7328 -383.01247 661.7328 -345.12004 661.3539 C -307.2276 661.3539 -256.83068 661.3539 -206.43375 660.97495 C -156.03682 660.97495 -105.63989 660.97495 -67.74746 661.3539 C -29.855032 661.3539 -4.4671044 661.7328 -4.4671044 661.7328 C -4.4671044 661.7328 -29.855032 661.7328 -67.74746 662.1117 C -105.63989 662.1117 -156.03682 662.1117 -206.43375 662.49064 C -256.83068 662.49064 -307.2276 662.49064 -345.12004 662.1117 C -383.01247 661.7328 -408.4004 661.7328 -408.4004 661.7328 Z" fill="white"/>
+                  </g>
+                  <g id="Graphic_61">
+                    <path d="M -274.2612 651.1229 L -273.12443 656.42785 C -272.7455 656.8068 -272.36658 657.1857 -271.98765 657.1857 L -140.87985 657.1857 C -140.50092 657.1857 -140.122 656.8068 -139.74308 656.42785 L -138.6063 651.1229 Z" fill="url(#Obj_Gradient_84)"/>
+                  </g>
+                  <g id="Graphic_60">
+                    <path d="M -480.0171 651.1229 C -480.0171 651.1229 -445.9139 651.1229 -394.3802 650.744 C -343.2254 650.744 -274.64012 650.744 -206.05483 650.3651 C -137.46953 650.3651 -69.26316 650.3651 -17.729455 650.744 C 33.425325 650.744 67.907435 651.1229 67.907435 651.1229 C 67.907435 651.1229 33.80425 651.1229 -17.729455 651.5018 C -68.88423 651.5018 -137.46953 651.5018 -206.05483 651.8808 C -274.64012 651.8808 -342.8465 651.8808 -394.3802 651.5018 C -445.9139 651.1229 -480.0171 651.1229 -480.0171 651.1229 Z" fill="white"/>
+                  </g>
+                  <g id="Group_43">
+                    <g id="Graphic_59">
+                      <rect x="-475.47" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_58">
+                      <rect x="-472.8175" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_57">
+                      <rect x="-470.544" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_56">
+                      <rect x="-467.8915" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_55">
+                      <rect x="-465.23904" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_54">
+                      <rect x="-462.58657" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_53">
+                      <rect x="-459.9341" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_52">
+                      <rect x="-457.28163" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_51">
+                      <rect x="-455.0081" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_50">
+                      <rect x="-452.3556" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_49">
+                      <rect x="-449.70315" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_48">
+                      <rect x="-447.0507" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_47">
+                      <rect x="-444.3982" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_46">
+                      <rect x="-441.74574" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_45">
+                      <rect x="-439.4722" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                    <g id="Graphic_44">
+                      <rect x="-436.8197" y="653.39646" width=".7578486" height="6.062789" fill="#404040"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Group_36">
+          <g id="Graphic_37">
+            <path d="M -94.65109 325.24802 L -111.32375 382.4656 L -132.54351 343.4364 L -129.51212 387.0127 L -221.59072 410.506 C -221.59072 410.506 -186.35076 421.8737 -188.6243 424.14726 C -190.89786 426.0419 -231.44275 468.4814 -231.44275 468.4814 L -201.88666 463.9343 C -201.88666 463.9343 -262.51455 531.76176 -260.61992 531.76176 C -258.7253 531.76176 -187.10861 524.9411 -187.10861 524.9411 L -165.50993 484.3962 L -174.98304 545.40304 L -141.6377 484.77515 L -65.473915 563.9703 C -65.473915 563.9703 -74.94702 495.38503 -73.81025 497.6586 C -72.67348 499.9321 -33.644275 523.4254 -33.644275 523.4254 C -33.644275 523.4254 -65.85284 461.66077 -64.33714 463.17647 C -62.44252 464.69216 2.732457 466.20786 2.732457 466.20786 L -29.476108 444.6092 C -29.476108 444.6092 -8.256347 426.0419 -10.150969 426.79973 C -12.04559 427.5576 -84.42013 429.83113 -84.42013 429.83113 C -84.42013 429.83113 -12.04559 367.3086 -13.940212 367.3086 C -15.834833 367.3086 -87.45152 366.55077 -87.45152 366.55077 Z" fill="#181c21"/>
+          </g>
+        </g>
+        <g id="Group_34">
+          <g id="Graphic_35">
+            <path d="M -160.58391 308.57536 C -157.55252 309.3332 -154.1422 310.46998 -151.1108 311.22783 C -151.1108 317.66954 -151.48973 323.73233 -151.86865 329.7951 C -149.97403 329.4162 -148.07941 329.03727 -146.18479 328.65834 C -145.42694 328.65834 -145.04802 328.2794 -144.29017 328.65834 C -143.91124 329.03727 -143.53232 329.7951 -143.53232 330.55296 C -142.39555 334.72113 -141.25877 338.8893 -140.87985 343.05747 C -136.71168 344.9521 -132.54351 348.3624 -129.89104 352.9095 C -131.02782 349.8781 -131.78567 346.4678 -132.92244 343.4364 C -135.19598 343.05747 -137.0906 342.67854 -139.36415 342.2996 C -139.74308 337.3736 -140.87985 332.4476 -142.01662 327.9005 C -142.01662 327.52157 -142.39555 326.76372 -142.77447 326.76372 C -143.1534 326.3848 -143.53232 326.76372 -143.91124 326.76372 C -145.80586 327.14265 -148.07941 327.52157 -149.97403 327.9005 C -149.21618 322.21663 -149.21618 316.15384 -149.5951 310.46998 C -151.86865 309.71213 -154.1422 308.95428 -156.41574 308.19643 C -156.79467 307.4386 -157.55252 307.4386 -158.31037 306.68073 C -159.82606 305.54396 -160.58391 302.8915 -160.96284 300.61795 C -161.34176 299.48117 -161.34176 298.3444 -161.72068 297.20763 C -161.72068 298.3444 -160.58391 308.57536 -160.58391 308.57536 Z" fill="#181c21"/>
+          </g>
+        </g>
+        <g id="Group_32">
+          <g id="Graphic_33">
+            <path d="M -173.08841 552.6026 C -177.6355 553.36045 -182.1826 554.1183 -186.35076 555.2551 C -185.97184 560.56 -185.97184 565.486 -187.10861 570.79096 C -189.38216 571.1699 -191.27678 571.1699 -193.55033 571.5488 C -190.51893 571.92774 -187.86646 572.30666 -184.83507 573.0645 C -184.83507 568.5174 -184.83507 563.9703 -184.07722 559.42324 C -179.90905 559.80216 -175.74088 559.80216 -171.57272 559.0443 C -171.57272 552.6026 -174.22519 546.1609 -173.08841 540.0981 C -173.84626 541.9927 -175.36196 543.88734 -175.74088 545.78196 C -175.36196 546.91873 -174.22519 552.6026 -173.08841 552.6026 Z" fill="#181c21"/>
+          </g>
+        </g>
+        <g id="Group_30">
+          <g id="Graphic_31">
+            <path d="M -15.076985 367.3086 C -14.69806 367.3086 -14.319136 366.9297 -13.940212 366.9297 C -13.561287 366.55077 -13.182363 365.79292 -13.182363 365.414 C -12.424515 362.76153 -11.287742 360.10906 -10.529893 357.4566 C -8.256347 358.21444 -5.603877 359.3512 -3.3303316 360.10906 C -1.4357101 357.07766 .07998705 354.04627 1.5956842 351.01488 C 1.9746085 352.15165 2.3535328 353.28842 2.732457 354.4252 C 4.248154 351.3938 5.7638514 348.3624 7.658473 345.70994 C 6.5217 349.8781 5.006003 354.04627 3.4903057 357.8355 C 3.1113814 357.07766 2.732457 356.3198 1.9746085 355.56197 C .45891134 358.9723 -1.0567858 362.0037 -2.572483 365.03507 C -4.4671044 363.51938 -6.74065 362.0037 -9.014196 361.62476 C -9.772045 364.65615 -12.04559 366.9297 -14.319136 368.4454 C -16.592682 369.9611 -19.245152 370.71894 -21.897622 371.09786 C -23.792243 371.4768 -25.686865 372.23464 -27.96041 372.61356 C -24.929016 368.06647 -18.866227 368.06647 -15.076985 367.3086 Z" fill="#181c21"/>
+          </g>
+        </g>
+        <g id="Group_28">
+          <g id="Graphic_29">
+            <path d="M -94.65109 325.24802 L -111.32375 382.4656 L -132.54351 343.4364 L -129.51212 387.0127 L -221.59072 410.506 C -221.59072 410.506 -186.35076 421.8737 -188.6243 424.14726 C -190.89786 426.0419 -231.44275 468.4814 -231.44275 468.4814 L -201.88666 463.9343 C -201.88666 463.9343 -262.51455 531.76176 -260.61992 531.76176 C -259.48315 531.76176 -236.7477 529.4882 -216.6647 527.5936 C -199.61311 495.0061 -158.31037 417.70555 -158.6893 420.358 C -160.20499 423.76834 -153.00543 464.31324 -153.00543 460.9029 C -153.00543 457.4926 -135.95383 432.10467 -135.95383 432.10467 L -93.51431 497.27965 L -109.05021 426.4208 C -109.05021 426.4208 -66.61069 457.4926 -70.02101 453.70336 C -71.5367 451.80874 -76.84164 441.5778 -82.52551 430.21005 C -83.66228 430.21005 -84.42013 430.21005 -84.42013 430.21005 C -84.42013 430.21005 -84.04121 429.83113 -82.90443 429.0733 C -90.10399 414.29523 -97.68248 398.75934 -97.68248 398.75934 L -57.89543 388.5284 L -16.592682 368.06647 C -30.233956 368.06647 -87.0726 367.3086 -87.0726 367.3086 Z" fill="black"/>
+          </g>
+        </g>
+        <g id="Group_26">
+          <g id="Graphic_27">
+            <path d="M -73.81025 497.6586 L -67.36854 562.0757 L -65.473915 563.9703 Z" fill="#a2c2e0"/>
+          </g>
+        </g>
+      </g>
+      <g id="Line_24">
+        <line x1="32.097337" y1="565.4747" x2="-91.34203" y2="688.9141" stroke="#d50000" stroke-linecap="round" stroke-linejoin="round" stroke-width="34"/>
+      </g>
+      <g id="Line_23">
+        <line x1="-91.34203" y1="565.4747" x2="32.097337" y2="688.9141" stroke="#d50000" stroke-linecap="round" stroke-linejoin="round" stroke-width="34"/>
+      </g>
+      <g id="Graphic_22">
+        <path d="M 826.5695 332.69086 L 1302.8893 332.69086 C 1306.203 332.69086 1308.8893 335.37715 1308.8893 338.69086 L 1308.8893 513.4117 C 1308.8893 516.7254 1306.203 519.4117 1302.8893 519.4117 L 826.5695 519.4117 C 823.2558 519.4117 820.5695 516.7254 820.5695 513.4117 L 820.5695 338.69086 C 820.5695 335.37715 823.2558 332.69086 826.5695 332.69086 Z" fill="#a4f8fd"/>
+        <path d="M 826.5695 332.69086 L 1302.8893 332.69086 C 1306.203 332.69086 1308.8893 335.37715 1308.8893 338.69086 L 1308.8893 513.4117 C 1308.8893 516.7254 1306.203 519.4117 1302.8893 519.4117 L 826.5695 519.4117 C 823.2558 519.4117 820.5695 516.7254 820.5695 513.4117 L 820.5695 338.69086 C 820.5695 335.37715 823.2558 332.69086 826.5695 332.69086 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_21">
+        <path d="M 833.739 -146.8662 L 1295.7198 -146.8662 C 1299.0335 -146.8662 1301.7198 -144.1799 1301.7198 -140.8662 L 1301.7198 33.85463 C 1301.7198 37.16834 1299.0335 39.85463 1295.7198 39.85463 L 833.739 39.85463 C 830.4253 39.85463 827.739 37.16834 827.739 33.85463 L 827.739 -140.8662 C 827.739 -144.1799 830.4253 -146.8662 833.739 -146.8662 Z" fill="#aa97fe"/>
+        <path d="M 833.739 -146.8662 L 1295.7198 -146.8662 C 1299.0335 -146.8662 1301.7198 -144.1799 1301.7198 -140.8662 L 1301.7198 33.85463 C 1301.7198 37.16834 1299.0335 39.85463 1295.7198 39.85463 L 833.739 39.85463 C 830.4253 39.85463 827.739 37.16834 827.739 33.85463 L 827.739 -140.8662 C 827.739 -144.1799 830.4253 -146.8662 833.739 -146.8662 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(848.7382 -90.00578)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Worker Node 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(865.5399 353.05127)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="8.393555" y="60">Worker Node </tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="148.78418" y="133">100</tspan>
+        </text>
+      </g>
+      <g id="Group_12">
+        <g id="Graphic_18">
+          <circle cx="1064.7294" cy="141.22465" r="7.9660767702938" fill="blue"/>
+        </g>
+        <g id="Graphic_17">
+          <circle cx="1064.7294" cy="170.0618" r="7.9660767702938" fill="blue"/>
+        </g>
+        <g id="Graphic_16">
+          <circle cx="1064.7294" cy="112.3875" r="7.96607677029382" fill="blue"/>
+        </g>
+        <g id="Graphic_15">
+          <circle cx="1064.7294" cy="227.7361" r="7.96607677029381" fill="blue"/>
+        </g>
+        <g id="Graphic_14">
+          <circle cx="1064.7294" cy="256.57326" r="7.96607677029382" fill="blue"/>
+        </g>
+        <g id="Graphic_13">
+          <circle cx="1064.7294" cy="198.89896" r="7.96607677029381" fill="blue"/>
+        </g>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 260.38515 -146.8662 L 722.366 -146.8662 C 725.6797 -146.8662 728.366 -144.1799 728.366 -140.8662 L 728.366 33.85463 C 728.366 37.16834 725.6797 39.85463 722.366 39.85463 L 260.38515 39.85463 C 257.07145 39.85463 254.38515 37.16834 254.38515 33.85463 L 254.38515 -140.8662 C 254.38515 -144.1799 257.07145 -146.8662 260.38515 -146.8662 Z" fill="#ebdea6"/>
+        <path d="M 260.38515 -146.8662 L 722.366 -146.8662 C 725.6797 -146.8662 728.366 -144.1799 728.366 -140.8662 L 728.366 33.85463 C 728.366 37.16834 725.6797 39.85463 722.366 39.85463 L 260.38515 39.85463 C 257.07145 39.85463 254.38515 37.16834 254.38515 33.85463 L 254.38515 -140.8662 C 254.38515 -144.1799 257.07145 -146.8662 260.38515 -146.8662 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(285.60896 -128.00205)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Cluster Master</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M -391.91608 -147 L 70.064735 -147 C 73.37844 -147 76.064735 -144.3137 76.064735 -141 L 76.064735 33.720827 C 76.064735 37.034535 73.37844 39.720827 70.064735 39.720827 L -391.91608 39.720827 C -395.2298 39.720827 -397.91608 37.034535 -397.91608 33.720827 L -397.91608 -141 C -397.91608 -144.3137 -395.2298 -147 -391.91608 -147 Z" fill="#e3a92e"/>
+        <path d="M -391.91608 -147 L 70.064735 -147 C 73.37844 -147 76.064735 -144.3137 76.064735 -141 L 76.064735 33.720827 C 76.064735 37.034535 73.37844 39.720827 70.064735 39.720827 L -391.91608 39.720827 C -395.2298 39.720827 -397.91608 37.034535 -397.91608 33.720827 L -397.91608 -141 C -397.91608 -144.3137 -395.2298 -147 -391.91608 -147 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(-375.7157 -90.13959)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Driver Program</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <line x1="108.31867" y1="51.73594" x2="791.8496" y2="319.2529" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#900a65" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_6">
+        <line x1="112.96473" y1="-53.609686" x2="790.839" y2="-53.535684" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#900a65" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_5">
+        <line x1="-160.92567" y1="212.31833" x2="-160.92567" y2="39.720827" marker-start="url(#FilledArrow_Marker_3)" stroke="#55a1a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(-147.66571 111.53142)" fill="#135d49">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#135d49" x="0" y="40">Result</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(79.88889 -14.14537)" fill="#650534">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#650534" x="0" y="40">Collect()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(1098.7809 113.27274)" fill="#9c0026">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#9c0026" x="8.393555" y="60">1TB</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" y="60"> Data </tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="40.195312" y="133">in RDD</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

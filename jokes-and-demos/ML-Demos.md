@@ -53,9 +53,12 @@
 ## Reinforcement Learning
 
 - Google Deep Mind - ATARI breakout - https://www.youtube.com/watch?v=V1eYniJ0Rnk
+- open AI Dota game (AI beating human pro teams) : https://www.youtube.com/watch?v=eHipy_j29Xw
+  - https://openai.com/five/  : timeline of bot development
 - Open AI Hide and Seek
   - blog : https://openai.com/blog/emergent-tool-use/
   - 2 minute papers : https://www.youtube.com/watch?v=Lu56xVlZ40M  
+
 
 
 ## FUN Videos :
