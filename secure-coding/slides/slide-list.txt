@@ -1,7 +1,7 @@
 # About-Secure-Coding-Class.md
 ../../course-outlines/secure-coding.md
 About-Secure-Coding-Class.md
-Security-Intro.md
+../../cybersecurity-common/Security-Intro.md
 Threat-Modeling.md
 Common-Attacks.md
 Defensive-Programming.md

@@ -5,14 +5,7 @@
 
 ## Who does what
 
-* Rod
-  * Common attacks
-  * Secure design
 
-* Mark
-  * Threat modeling - done
-  * Java security - ready for review
-  * JavaScript security - ready for review
 
 
 

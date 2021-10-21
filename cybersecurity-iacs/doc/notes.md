@@ -1,5 +1,7 @@
 # Notes for the course
 
+* Course outline
+  * ../course-outlines/Cybersecurity-IACS.md
 * OTCS
   * https://otcsalliance.org/
 
