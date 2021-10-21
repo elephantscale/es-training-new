@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-October 1, 2021
+October 20, 2021
 
 ## Overview
 
@@ -44,9 +44,6 @@ October 1, 2021
 ### Threat modeling
 * STRIDE attack classification
 * Security terminology
-* Threat modeling
-* CVSS attack assessment
-* Labs on threat modeling
 
 ### Common attacks and defenses
 * Cross site scripting
@@ -67,41 +64,22 @@ October 1, 2021
 ### Authorization and Authentication
 
 * SSO (high-level)
-* Spring security
-* .NET authentication (high-level)
 * Basic & Digest
-* Forms
-* Windows authentication (high-level)
-* JAAS and other Java authentication services
 * Authorization
 * Password security
 * Brute force attacks
 * Password resets
-* Secret questions/answers
 * SSL/TLS
 
 ### Framework architecture
 
-* Threading
 * Privileges
 * Audits/Logs
 * Secure coding
 * Encryption services
 * Static code analysis
 * Securing the API (both publishing and consuming API)
-* JWT
 * Dynamic code analysis (e.g. with Spotbugs)
-
-### Securing the runtime environment
-* Spring boot
-* .NET (mention)
-* Code Access
-* GAC
-* Strong named assemblies
-* CLR
-* Security Zones
-* Permissions
-* Security policy
 
 ### Security tools
 * Audits/Logs
