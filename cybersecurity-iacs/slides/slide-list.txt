@@ -1,6 +1,6 @@
 ../../course-outlines/Cybersecurity-IACS.md
 About-Cyber-IACS.md
-Security-Intro.md
+../../cybersecurity-common/slides/Security-Intro.md
 ../../vault-consul/slides/Vault_introduction.md
 ../../vault-consul/slides/Vault_architecture.md
 ../../vault-consul/slides/Vault_configuration.md
