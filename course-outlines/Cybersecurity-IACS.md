@@ -1,5 +1,8 @@
 # Industrial Internet of Things
 * (Class code CBS202)
+* Rockwell codes
+  * Course Code – CBS-ISA
+  * OTCS Cybersecurity Awareness and ISA IEC62443
 
 ## Duration:
  * 2 days
@@ -26,7 +29,7 @@
  * How to align overall organizational operational goals with 
  security functions and implementations
      - The role of managers, hackers, and developers
-* Protecting IASC assets against different security threats
+* Protecting IACS assets against different security threats
 * Implement system security
    - Application of security design principals
    - Application of appropriate security control mitigation for vulnerabilities present

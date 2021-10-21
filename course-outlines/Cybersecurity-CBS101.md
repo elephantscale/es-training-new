@@ -1,8 +1,9 @@
 # Cybersecurity-CBS101
+* (Class code CBS101)
 
 © Elephant Scale
 
-October 18, 2018
+October 21, 2018
 
 ## Goals:
 
