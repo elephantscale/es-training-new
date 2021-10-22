@@ -530,7 +530,7 @@ Notes:
     - Support analytics (usually batch)
     - Hadoop / HDFS
 
-<img src="../../assets/images/streaming/streaming-architecture-4.png"  style="width:90%;"/><!-- {"left" : 5.95, "top" : 1.41, "height" : 2.02, "width" : 4.15} -->
+<img src="../../assets/images/streaming/streaming-architecture-4.png"  style="width:80%;"/><!-- {"left" : 5.95, "top" : 1.41, "height" : 2.02, "width" : 4.15} -->
 
 Notes:
 
