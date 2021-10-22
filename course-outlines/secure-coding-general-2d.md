@@ -70,6 +70,7 @@ October 20, 2021
 * Brute force attacks
 * Password resets
 * SSL/TLS
+* Code signing
 
 ### Framework architecture
 

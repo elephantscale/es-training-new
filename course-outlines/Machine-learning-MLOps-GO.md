@@ -4,20 +4,16 @@
 
 October 22, 2021
 
-## Sources
-* https://golangdocs.com/golang-machine-learning-libraries
-* https://upstack.co/knowledge/golang-machine-learning
-* https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops
-* https://towardsdatascience.com/golang-for-machine-learning-bd4bb84594ee
-* https://analyticsindiamag.com/top-8-machine-learning-libraries-in-go-language/
 
 ## Overview
 
-Machine Learning and AI represent a great opportunity. All too often, taking a Machine Learning
-prototype to production makes a difference between success and failure in the AI strategy of a company.
-This need is fulfilled by Machine Learning Engineers who apply the rules of DevOps to AI.
-
-This course teaches how to take Machine Learning and AI and reduce it to practice. Thus, the name: ML Ops.
+* In Machine Learning, there are two trends: multiple tools and Machine Learning Operations (MLOps.) 
+* Go is a language created by Google for performance. It is often explained as "C for the 21-st century."
+* MLOps can be explained as follows.
+  * Machine Learning and AI represent a great opportunity. All too often, taking a Machine Learning
+  prototype to production makes a difference between success and failure in the AI strategy of a company.
+  This need is fulfilled by Machine Learning Engineers who apply the rules of DevOps to AI.
+* This course teaches Machine Learning with Go. It also teaches how to take Machine Learning and AI and reduce it to practice. 
 
 ## Audience
 Developers, team leads, project managers
@@ -26,7 +22,7 @@ Developers, team leads, project managers
 Introductory - Intermediate
 
 ## Duration
-Three days
+Two days
 
 ## Format
 Lectures and hands-on labs (50% - 50%)
@@ -47,6 +43,13 @@ Lectures and hands-on labs (50% - 50%)
 
 ## Detailed outline
 
+### Quick overview of Go and features of Go important for Machine Learning
+
+### Machine learning libraries for Go
+* Gorgonia and Goro
+* MLGo, GoML and GoLearn
+* Future of Machine Learning in Go
+
 ### Rise of the Machine Learning Engineer and MLOps
 * What is MLOps
 * DevOps and MLOps
@@ -56,66 +59,12 @@ Lectures and hands-on labs (50% - 50%)
 * Platform Automation
 * MLOps
 * Where Can You Deploy?
-* Conclusion
+* Go tools for Machine Learning
 
-### MLOps Foundations
-
-* Bash and the Linux Command Line
-* Cloud Shell Development Environments
-* Bash Shell and Commands
-* List Files
-* Run Commands
-* Files and Navigation
-* Input/Output
-* Configuration
-* Writing a Script
-* Cloud Computing Foundations & Building Blocks
-* Machine Learning Key Concepts
-* Build an MLOps Pipeline from Zero
-
-### MLOps For Containers And Edge Devices
-* Containers
-* Serving a trained model over HTTP
-* Edge Devices
-* Coral
-* Azure Percept
-* TFHub
-
-### Continuous Delivery For Machine Learning Models
-
-* Packaging for ML Models
-* Infrastructure as Code for Continuous Delivery of ML Models
-* Using Cloud Pipelines
-* Controlled Rollout of models
-* Testing techniques for Model Deployment
-
-### Monitoring And Logging
-
-* Introduction to Logging
-* Logging in Python
-* Modifying log levels
-* Logging different applications
-* Monitoring Drift with AWS SageMaker
-* Monitoring Drift with Azure ML
-
-### MLOps For Azure
-
-* Azure CLI and Python SDK
-* Authentication
-* Service Principal
-* Authenticating API Services
-* Compute Instances
-* Deploying
-* Registering Models
-* Versioning datasets
-* Deploying Models to a Compute Cluster
-* Configuring a Cluster
-* Deploying a Model
-* Azure ML Pipelines
-
-### Machine Learning Interoperability
-* Why interoperability is critical
-* ONNX: Open Neural Network Exchange
-* Convert PyTorch into ONNX
-* Convert TensorFlow into ONNX
-* Apple Core ML
+## References
+* https://golangdocs.com/golang-machine-learning-libraries
+* https://upstack.co/knowledge/golang-machine-learning
+* https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops
+* https://towardsdatascience.com/golang-for-machine-learning-bd4bb84594ee
+* https://analyticsindiamag.com/top-8-machine-learning-libraries-in-go-language/
+* https://www.reddit.com/r/golang/comments/anbjin/is_there_a_future_in_machine_learning_in_go/
