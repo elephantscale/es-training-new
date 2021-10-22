@@ -1,6 +1,6 @@
 # Docker Introduction
 © Elephant Scale
-Jan. 13, 2020
+Oct. 21, 2021
 
 
 ## Overview
@@ -58,8 +58,8 @@ Lectures and hands-on labs. (50%, 50%)
  - Creating a Dockerfile
  - Building an image from a Dockerfile
  - Inspecting a Dockerfile from DockerHub
-
- ### Working with the Registry
+ 
+### Working with the Registry
  - Creating a Public repo on Docker Hub,
  - Using our Public repo on Docker Hub,
  - Build a Private Registry,
@@ -82,8 +82,9 @@ Lectures and hands-on labs. (50%, 50%)
  - Virtual Ethernet interfaces
  - network configuration files
  - exposing ports
- - Viewing exposed rports
+ - Viewing exposed reports
  - Linking Containers
+ - Docker Compose interconnectivity
  - Recap
 
 ### Troubleshooting and Debugging
