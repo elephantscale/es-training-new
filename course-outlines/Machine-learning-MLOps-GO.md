@@ -2,18 +2,13 @@
 
 (C) Copyright Elephant Scale
 
-October 22, 2021
+October 24, 2021
 
 
 ## Overview
 
-* In Machine Learning, there are two trends: multiple tools and Machine Learning Operations (MLOps.) 
-* Go is a language created by Google for performance. It is often explained as "C for the 21-st century."
-* MLOps can be explained as follows.
-  * Machine Learning and AI represent a great opportunity. All too often, taking a Machine Learning
-  prototype to production makes a difference between success and failure in the AI strategy of a company.
-  This need is fulfilled by Machine Learning Engineers who apply the rules of DevOps to AI.
-* This course teaches Machine Learning with Go. It also teaches how to take Machine Learning and AI and reduce it to practice. 
+* This course teaches how to create Machine Learning (ML) models with Go, and how to deploy these models using ML pipelines. 
+* ML is usually done by data scientists while ML pipelines by data engineers, also called MLOps. For successful projects, the two must come together.
 
 ## Audience
 Developers, team leads, project managers
@@ -25,12 +20,11 @@ Introductory - Intermediate
 Two days
 
 ## Format
-Lectures and hands-on labs (50% - 50%)
+* Lectures and hands-on labs (50% - 50%)
 
 ## Prerequisites
 
-* Comfortable developing code in the target environment
-
+* Familiarity with Go language
 
 ## Lab environment
 * Zero Install: There is no need to install software on students' machines!
@@ -43,7 +37,7 @@ Lectures and hands-on labs (50% - 50%)
 
 ## Detailed outline
 
-### Quick overview of Go and features of Go important for Machine Learning
+### Quick overview of Go
 
 ### Machine learning libraries for Go
 * Gorgonia and Goro
