@@ -39,12 +39,34 @@ Two days
 
 ### Quick overview of Go
 
+* Overview of GO
+* Variadic Functions
+* Closure
+* Recursion
+* Defer, Panic & Recover
+* Pointers
+* The * and & operators
+
+### Go features for ML
+
+* Structs
+* Methods
+* Interfaces
+* Concurrency
+* Goroutines
+* The Core Packages
+* Hashes & Cryptography
+
 ### Machine learning libraries for Go
-* Gorgonia and Goro
-* MLGo, GoML and GoLearn
+* Gorgonia 
+* Goro
+* MLGo
+* GoML
+* GoLearn
 * Future of Machine Learning in Go
 
 ### Rise of the Machine Learning Engineer and MLOps
+
 * What is MLOps
 * DevOps and MLOps
 * A MLOps Hierarchy of Needs
@@ -54,6 +76,34 @@ Two days
 * MLOps
 * Where Can You Deploy?
 * Go tools for Machine Learning
+
+### MLOps Foundations
+
+* List Files
+* Run Commands
+* Files and Navigation
+* Input/Output
+* Configuration
+* Writing a Script
+* Cloud Computing Foundations & Building Blocks
+* Machine Learning Key Concepts
+* Build an MLOps Pipeline from Zero
+
+### MLOps For Containers And Edge Devices
+* Containers
+* Serving a trained model over HTTP
+* Edge Devices
+* Coral
+* Azure Percept
+* TFHub
+
+### Continuous Delivery For Machine Learning Models
+
+* Packaging for ML Models
+* Infrastructure as Code for Continuous Delivery of ML Models
+* Using Cloud Pipelines
+* Controlled Rollout of models
+* Testing techniques for Model Deployment
 
 ## References
 * https://golangdocs.com/golang-machine-learning-libraries
