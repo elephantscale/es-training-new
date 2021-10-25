@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-September 22, 2021
+October 25, 2021
 
 ## Overview
 
@@ -53,37 +53,37 @@ September 22, 2021
 
 ## Detailed outline
 
-### Basics
+### OO Basics
 
 * Scala – a scalable language
-* First steps and basic tasks
-* Classes and objects
-* Basic types and operations
-* Functional objects
-* Control structures
-* Functional objects
-* Control abstractions
-* Composition and inheritance
+* Classes
+* Class parameters, fields, methods
+* Operators
+* Default arguments
+* Packages
+* Check preconditions
   
-### Intermediate
+### Scala design
 
 * Scala hierarchy
-* Traits
+* Inheritance and Traits
 * Testing in Scala
-* Case classes
+* Case classes, pattern matching
 * Lists and other collections
 * Mutable objects
 * Type parameterization
 * Abstract members
 * Implicits
+
+### Collections
+
 * From loops to collections
 * Collections in depth
 * Extractors
 * Annotations
-* Futures and concurrency
 * Scala GUI
 
-### Solidifying skills
+### Functional programming
 
 * Functional programming 
   * Why functional programming
@@ -92,7 +92,12 @@ September 22, 2021
 * Build process
   * Troubleshooting .SBT
   * Libraries and conflicts
-  
+
+### Concurrency (Akka)
+
 * Immutability
-  * Why immutability
   * Best practices and exercises
+* Futures and concurrency
+* Akka Overview
+* Akka use cases
+* Akka sample project
