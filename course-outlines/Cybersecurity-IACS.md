@@ -24,11 +24,11 @@
 
 ## Course Outline
 
- * Understand and apply fundamental concepts and methods related to the fields of 
+* Understand and apply fundamental concepts and methods related to the fields of 
  information technology and Industrial Automation and Control Systems (IACS) cybersecurity.
- * How to align overall organizational operational goals with 
+* How to align overall organizational operational goals with 
  security functions and implementations
-     - The role of managers, hackers, and developers
+   - The role of managers, hackers, and developers
 * Protecting IACS assets against different security threats
 * Implement system security
    - Application of security design principals
@@ -41,9 +41,9 @@ implementation systems and protocols at the Open Systems Interconnection
    - Software Development Lifecycle (SDLC)
 * Implementing electronically secure IACS
   - Concepts, models and terminology.
-   - Creating and maintaining an effective IACS security program.
-   - System design guidance and requirements for the secure integration of control systems
-   - Product development and technical requirements of control system product
+  - Creating and maintaining an effective IACS security program.
+  - System design guidance and requirements for the secure integration of control systems
+  - Product development and technical requirements of control system product
 * ISA IEC62443 standards and implementation in:
   - Security levels
   - Security feedback loops
