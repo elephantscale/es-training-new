@@ -285,7 +285,7 @@ try {
        System.out.println("Got " + records.count() + " messages");
        for (ConsumerRecord < Integer, String > record : records) {
           System.out.println("Received message : " + record);
-     }
+       }
    }
 }
 finally {
@@ -346,11 +346,11 @@ try {
       System.out.println("Got " + records.count() + " messages");
       for (ConsumerRecord < Integer, String > record : records) {
         System.out.println("Received message : " + record);
-    }
-  }
+      }
+   }
 }
 finally {
-consumer.close();
+   consumer.close();
 }
 ```
 <!-- {"left" : 0, "top" : 1.29, "height" : 2.1, "width" : 10.25} -->
@@ -421,12 +421,12 @@ Notes:
 
 ```java
 ConsumerRecords < Integer, String > records = consumer.poll(Duration.ofMillis(1000));
-  for (ConsumerRecord < String, String > record : records) {
+  for (ConsumerRecord < Integer, String > record : records) {
      System.out.printf("topic = %s, partition = %d, offset = %d,
             key= %s, value = %s\n",
             record.topic(), record.partition(), record.offset(),
             record.key(), record.value());
-}
+  }
 
 ```
 <!-- {"left" : 0, "top" : 4.78, "height" : 1.49, "width" : 10.25} -->
