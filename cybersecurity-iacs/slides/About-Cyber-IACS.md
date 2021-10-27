@@ -1,12 +1,11 @@
 # About Cyber-IACS
 
-## Agenda - 3 days
+## Agenda - 2 days
 
 | Day | Theme                | Detail                                                                                                |
 |-----|----------------------|-------------------------------------------------------------------------------------------------------|
-| 1   | Introducing Security | Intro * Threat modeling * Common attacks * Countermeasures * Secure design                                                          |
-| 2   | Secure Coding        | Java Security * JavaScript Security * REST endpoint security * Authentication and Authorization (OAuth) * Session security                                   |
-| 3   | Secure Frameworks    | Modern security frameworks (Vault and Consul) *  Framework architecture  * Securing the runtime environment * Security future |
+| 1   | IACS Cybersecurity   | Industrial Automation and Control Systems (IACS) and security, * The role of managers, hackers, and developers                                         |
+| 2   | Implementing IACS    | Security design principals, * Cryptography * Software Development Lifecycle (SDLC), IEC62443 standards |
 
 
 Notes:
@@ -16,11 +15,9 @@ Notes:
 ## Pre-requisites and Expectations
 
 
-* Basic coding knowledge is assumed
+* Basic IT knowledge is assumed
 
-* Have a coding development environment
-
-  - We will set this up in class
+* Have a computer and a browser
 
   - Or on the cloud
 
@@ -28,7 +25,7 @@ Notes:
 
   - Ask a lot of questions
 
-* This is a Secure Coding class
+* This is an IACS Cybersecurity class
   - No previous knowledge is assumed (but may be helpful)
   - Class will be based on the pace of majority of the students
 
@@ -62,7 +59,7 @@ Notes:
 
 * Where is the ANY key?
 
-![](../images/any-key.png) <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
+![](../../assets/images/about/any-key.png) <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
 
 
 Notes:
@@ -74,7 +71,7 @@ Notes:
 ## Analogy: Learning To Fly…
 
 
-![](../images/learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about//learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 
 Notes:
@@ -86,7 +83,7 @@ Notes:
 ## Instruction
 
 
-![](../images/classroom-instruction.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about//classroom-instruction.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 Notes:
 
@@ -98,7 +95,7 @@ http://aviation-schools.regionaldirectory.us/learn-to-fly-720.jpg
 
 ## + Flight Time
 
-![](../images/cockpit.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about//cockpit.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 Notes:
 
@@ -110,7 +107,7 @@ http://www.wikihow.com/Become-a-Certified-Flight-Instructor
 
 ## This Will Take A Lot Of Practice 
 
-![](../images/practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about//practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 
 Notes:
@@ -138,9 +135,9 @@ Notes:
 
   - Something non-technical about you!(favorite ice cream flavor or hobby…)
 
-![](../images/ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
+![](../../assets/images/about//ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
 
-![](../images/hiking.png)   <!-- {"left" : 3.60, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
+![](../../assets/images/about//hiking.png)   <!-- {"left" : 3.60, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
 
 
 Notes:
