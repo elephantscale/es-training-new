@@ -754,6 +754,27 @@ Notes:
 
 ---
 
+## Compression
+
+* **Compression will slightly increase CPU usage**
+    - How ever, this is well worth the trade-off, as CPUs are very fast and we usually have plenty of CPU power to spare.
+    - Plus modern CPUs have compression algorithms built-in silicone
+
+* Here are some benchmark stats from [Message compression in Apache Kafka](https://developer.ibm.com/articles/benefits-compression-kafka-messaging/)
+
+* We can see Snappy (from Google) and zstd (from Facebook) giving a good balance of CPU usage, compression ratio, speed and network utilization
+
+<br />
+
+| Metrics                     | Uncompressed | Gzip  | Snappy | lz4  | Zstd |
+|-----------------------------|--------------|-------|--------|------|------|
+| Avg latency (ms)            | 65           | 10.4  | 10.1   | 9.2  | 10.7 |
+| Disk space (mb)             | 10           | 0.92  | 2.2    | 2.8  | 1.5  |
+| Effective compression ratio | 1            | 0.09  | 0.21   | 0.28 | 0.15 |
+| Process CPU usage %         | 2.35         | 11.46 | 7.25   | 5.89 | 8.93 |
+
+---
+
 ## Enabling Compression
 
 ```java

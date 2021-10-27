@@ -2,25 +2,25 @@
 
 ---
 
-
 ## Lesson Objectives
 
-
- * Learn to use Kafka effectively
-
+* Learn to use Kafka effectively
 
 Notes:
 
 ---
 
+## Use Latest Java & Modern GC
 
-## Best Practices: Use latest Java & Modern GC
- * Use recommended Java / JDK version
+* Use recommended Java / JDK version
     - Do not deviate from this, as you might encounter mysterious crashes ..etc
     - Kafka is a high performance system, it pushes JVM to its limits;  It might expose JVM bugs that a 'normal' program might not
- * Use G1 garbage collector
- * Jvm heap: 8G - 32 G
- * [Reference](https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html)
+
+* Use G1 garbage collector
+
+* Jvm heap: 8G - 32 G
+
+* [Reference](https://community.hortonworks.com/articles/80813/kafka-best-practices-1.html)
 
 ```bash
 Conf/kafka-env.sh
@@ -36,172 +36,156 @@ export KAFKA_JVM_PERFORMANCE_OPTS=
 ```
 <!-- {"left" : 0, "top" : 5.04, "height" : 2.04, "width" : 10.25} -->
 
-
 Notes:
 
 ---
 
-## Best Practices: OS Setting
+## OS Setting
 
 <img src="../../assets/images/kafka/Kafka-is-Very-Fast.png" style="width:40%;float:right;"/><!-- {"left" : 5.61, "top" : 1.42, "height" : 3.72, "width" : 4.59} -->
 
+* Give rest of the memory (minus JVM heap) to Page Cache (Linux will do this automatically)
 
- * Give rest of the memory (minus JVM heap) to Page Cache (Linux will do this automatically)
+    - So throughput is fastest
 
-     - So throughput is fastest
+* Kafka keeps many files open
 
- * Kafka keeps many files open
+    - Set open file descriptors to 128k
 
-     - Set open file descriptors to 128k
-
-     - Use `'ulimits -a'` to verify
-
+    - Use `'ulimits -a'` to verify
 
 Notes:
 
 ---
 
-## Best Practices: Disks
+## Disk Setup
 
 <img src="../../assets/images/kafka/Disks-Setup-02.png" style="width:50%;float:right;"/><!-- {"left" : 6.47, "top" : 1.21, "height" : 1.82, "width" : 3.61} -->
 
- * Disks tend to be first bottleneck to be hit
+* Disks tend to be first bottleneck to be hit
 
- * Never, never, never use shared drives (NFS / SAN)
+* Never, never, never use shared drives (NFS / SAN)
 
- * More disks -> better throughput
+* More disks -> better throughput
 
- * RAIDs are usually more trouble than they are worth
+* RAIDs are usually more trouble than they are worth
+    - Just use individual disks (JBOD - Just a Bunch of Disks)
 
-     - Just use individual disks (JBOD - Just a Bunch of Disks)
+* Kafka will stripe data across disks using a round-robin fashion
 
- * Kafka will stripe data across disks using a round-robin fashion
-
- * Highly recommended to monitor disk usage
-
-     - And create alerts if disks are getting full
-
+* Highly recommended to monitor disk usage
+    - And create alerts if disks are getting full
 
 Notes:
 
 ---
 
-## Best Practices: SSD Drives?
+## Should We Use SSD Drives?
 
 <img src="../../assets/images/generic/3rd-party/hdd-vs-sdd-1.png"  style="width:50%;float:right;" /><!-- {"left" : 7.07, "top" : 1.13, "height" : 1.73, "width" : 3.06} -->
 
- * SSDs don't offer remarkable boost in performance
- * Kafka writes/reads data sequentially to/from commit logs
-     - No random seeks
-     - Modern spinning disks can provide very good scan performance
-     - Also Linux and Linux file systems are optimized for good sequential IO
- * In Kafka write to disks are asynchronous
-     - No waiting for disk ops to complete
- * Zookeeper can benefit from SSD drives
- * Case study from Uber [link1](https://www.youtube.com/watch?v=q3e5QjTH59o),  [link2](http://bigdatausecases.info/entry/ssd-benchmarks-for-apache-kafka)
+* SSDs don't offer remarkable boost in performance
+* Kafka writes/reads data sequentially to/from commit logs
+    - No random seeks
+    - Modern spinning disks can provide very good scan performance
+    - Also Linux and Linux file systems are optimized for good sequential IO
+* In Kafka write to disks are asynchronous
+    - No waiting for disk ops to complete
+* Zookeeper can benefit from SSD drives
+* Case study from Uber [link1](https://www.youtube.com/watch?v=q3e5QjTH59o),  [link2](http://bigdatausecases.info/entry/ssd-benchmarks-for-apache-kafka)
 
 Notes:
 
 https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/
 
-
 ---
 
-## Best Practices: File System
+## File System Settings
 
 <img src="../../assets/images/kafka/kafka-drives-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.01, "top" : 1.16, "height" : 2.04, "width" : 4.07} -->
 
- * Never, never, never use shared file systems (SAN / NFS)
+* Never, never, never use shared file systems (SAN / NFS)
 
- * Always use MULTIPLE, LOCAL spindles
+* Always use MULTIPLE, LOCAL spindles
 
- * Recommended file systems: EXT4  or XFS
+* Recommended file systems: EXT4  or XFS
 
- * XFS probably better
+* XFS probably better
 
- * Formatting TB disk drives with XFS is significantly faster  
+* Formatting TB disk drives with XFS is significantly faster  
 
 Notes:
 
-
-
-
 ---
 
-## Best Practices: Zookeeper
+## Zookeeper Best Practices
 
 <img src="../../assets/images/kafka/kafka-zookeeper-1.png"  style="width:60%;float:right;" /><!-- {"left" : 6.56, "top" : 1.06, "height" : 1.72, "width" : 3.57} -->
 
- *  **Do not co-locate**  Zookeeper and Kafka brokers on same nodes
- * ZK and Kafka has very different IO patterns
-     - Kafka is very disk IO heavy
-     - ZK doesn't need a lot of horsepower, it needs to stay alive
- * Dedicate one ZK ensemble to Kafka,  do not share this ZK with other applications (e.g. Hadoop)
-     - Kafka uses ZK pretty heavily
-     - Can benefit from a dedicated ZK cluster
- * Make sure ZK has sufficient memory (4G+)
- * Monitor memory usage of ZK using JMX or other monitoring programs
+* **Do not co-locate**  Zookeeper and Kafka brokers on same nodes
+* ZK and Kafka has very different IO patterns
+    - Kafka is very disk IO heavy
+    - ZK doesn't need a lot of horsepower, it needs to stay alive
+* Dedicate one ZK ensemble to Kafka,  do not share this ZK with other applications (e.g. Hadoop)
+    - Kafka uses ZK pretty heavily
+    - Can benefit from a dedicated ZK cluster
+* Make sure ZK has sufficient memory (4G+)
+* Monitor memory usage of ZK using JMX or other monitoring programs
 
 Notes:
 
 ---
 
-## Best Practices: Topics / Partitions
+## Topics & Partitions Settings
 
 <img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:50%;float:right;" /><!-- {"left" : 5.95, "top" : 1.16, "height" : 3.06, "width" : 4.16} -->
 
- * Number of partitions correspond parallelism
+* Number of partitions correspond parallelism
 
- * Higher the partitions -> more consumers can be added
+* Higher the partitions -> more consumers can be added
 
- * How to calculate optimal number of partitions?
-     - Let's say Producer throughput to a single partition as P
-     - Say Consumer throughput from a single partition as C
-     - Target throughput T
-     - Required partitions = Max (T/P,  T/C)
-
+* How to calculate optimal number of partitions?
+    - Let's say Producer throughput to a single partition as P
+    - Say Consumer throughput from a single partition as C
+    - Target throughput T
+    - Required partitions = Max (T/P,  T/C)
 
 Notes:
 
-
-
-
 ---
 
-## Best Practices: Topics / Partitions
+## Topics / Partitions
 
 <img src="../../assets/images/kafka/Partitions.png"  style="width:50%;float:right;" /><!-- {"left" : 5.95, "top" : 1.16, "height" : 3.06, "width" : 4.16} -->
 
-* Ensure number of partitions >= number of brokers
+* Ensure **`number of partitions >= number of brokers`**
 
-* Partitions can always be increased later but not decreased
+* Partitions **can always be increased later but not decreased**
 
 * Altering number of partitions in a KEY-VALUE topic is a little tricky?
-     - Keys have to be re-hashed to partitions
+    - Keys have to be re-hashed to partitions
+    - **Class Discussion: Please discuss key mappings and partitions**
 
 Notes:
 
 ---
 
-## Best Practices: Partitions & Memory
+## Partitions & Memory
 
- * More partitions also need more memory on brokers & clients
+* More partitions also need more memory on brokers & clients
 
- * Producer side
+* Producer side
 
     - New Kafka client buffers messages on producer side before sending to brokers (to reduce network round-trips)
     - The message buffer is maintained for partition
     - More partitions -> more buffer memory needed
 
- * Consumer side
+* Consumer side
 
     - Consumers fetch messages in batches per partitions
     - More partitions -> more batches -> more memory needed
 
 Notes:
-
-
-
 
 ---
 
@@ -210,9 +194,9 @@ Notes:
 <img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
 * Benefits of compression
-  - Reduces the data size goes on network --> faster throughput
-  - Reduces data footprint on disk --> less data to write to disk -> faster
-    
+  - Reduces network bandwidth usage
+  - Reduces disk usage on Brokers
+
 * Compression is performed on a batch
   - Larger batch size -> better compression
 
@@ -237,72 +221,121 @@ Notes:
 * Configured via Producer properties:
   - `compression.type`
 
-
 * [Reference](https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression)
 
 ---
 
-## Best Practices: Use Batching
+## Compression Data Formats
+
+* **XML and JSON data formats are very good candidates for compression**.  Since they have lot of repeating elements, they compress well.
+* JSON data
+
+```json
+{"id" : 1, "first_name" : "John", "last_name" : "Smith", "age" : 34, "email" : "john@me.com"}
+```
+
+* XML data
+
+```xml
+<CATALOG>
+    <CD>
+        <TITLE>Empire Burlesque</TITLE>
+        <ARTIST>Bob Dylan</ARTIST>
+        <YEAR>1985</YEAR>
+    </CD>
+</CATALOG>
+```
+
+* Also **server logs** are good candidates, as they have well defined structure
+
+```text
+1.1.1.1 - [2020-09-01::19:12:06 +0000] "GET /index.html HTTP/1.1" 200  532"
+2.2.2.2 - [2020-09-01::19:12:46 +0000] "GET /contact.html HTTP/1.1" 200  702"
+```
+
+* **Binary data formats won't compress well**. E.g. images, base64 encoded strings.  Don't enable compression.
+* Reference: [Message compression in Apache Kafka](https://developer.ibm.com/articles/benefits-compression-kafka-messaging/)
+
+---
+
+## Compression
+
+* **Compression will slightly increase CPU usage**
+    - How ever, this is well worth the trade-off, as CPUs are very fast and we usually have plenty of CPU power to spare.
+    - Plus modern CPUs have compression algorithms built-in silicone
+
+* Here are some benchmark stats from [Message compression in Apache Kafka](https://developer.ibm.com/articles/benefits-compression-kafka-messaging/)
+
+* We can see Snappy (from Google) and zstd (from Facebook) giving a good balance of CPU usage, compression ratio, speed and network utilization
+
+<br />
+
+| Metrics                     | Uncompressed | Gzip  | Snappy | lz4  | Zstd |
+|-----------------------------|--------------|-------|--------|------|------|
+| Avg latency (ms)            | 65           | 10.4  | 10.1   | 9.2  | 10.7 |
+| Disk space (mb)             | 10           | 0.92  | 2.2    | 2.8  | 1.5  |
+| Effective compression ratio | 1            | 0.09  | 0.21   | 0.28 | 0.15 |
+| Process CPU usage %         | 2.35         | 11.46 | 7.25   | 5.89 | 8.93 |
+
+---
+
+## Use Batching
 
 <img src="../../assets/images/kafka/batch-send-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
- * Batching will dramatically increase throughput, specially in producers
+* Batching will dramatically increase throughput, specially in producers
 
- * Batching will increase latency
+* Batching will increase latency
 
-     - Producer will accumulate messages until desired batch size is attained, before sending it to broker
+    - Producer will accumulate messages until desired batch size is attained, before sending it to broker
 
- * Too small a batch size may not be effective
+* Too small a batch size may not be effective
 
- * Choose the batch size that gives best **latency vs. throughput** for your application
+* Choose the batch size that gives best **latency vs. throughput** for your application
 
- * Larger batch sizes will use more memory for buffering
+* Larger batch sizes will use more memory for buffering
 
 Notes:
 
-
-
-
 ---
 
-## Best Practices: Message Sizing
+## Message Sizing Guidelines
 
 <img src="../../assets/images/kafka/message-size-1.png"  style="width:50%;float:right;" /><!-- {"left" : 5.4, "top" : 1.19, "height" : 1.78, "width" : 4.78} -->
 
+* Kafka is engineered for moving small messages
 
- * Kafka is engineered for moving small messages
+    - Few KB / message
 
-     - Few KB / message
+* Max message size by default is 1 MB
 
- * Max message size by default is 1 MB
+* If sending large messages set the following properties:
 
- * If sending large messages set the following properties:
+    - **messages.max.bytes**  (on broker)
 
-     -  **messages.max.bytes**  (on broker)
+    - **fetch.message.max.bytes**  (on consumer)
 
-     -  **fetch.message.max.bytes**  (on consumer)
-
- * [Reference](https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/)
-
+* [Reference](https://blog.cloudera.com/blog/2015/07/deploying-apache-kafka-a-practical-faq/)
 
 Notes:
 
-
-
 ---
 
-## Best Practices: Monitor, Monitor, Monitor
+## Monitor, Monitor, Monitor
 
 <img src="../../assets/images/kafka/3rd-party/dashboard-body-kafka.jpg"  style="width:50%;float:right;" /><!-- {"left" : 5.73, "top" : 1.03, "height" : 2.71, "width" : 4.3} -->
 
- * Kafka exposes lot of metrics
-     - Collect them via JMX plugin
-     - Or use any of the open source collectors
- * Send metrics to a collector (graphite, open TSDB ..etc.)
- * Use a nice graphic tool to slice & dice metrics (Grafana)
- * References
-   - [Datadog](https://www.datadoghq.com/dashboards/kafka-dashboard/)
-   - [Monitoring Kafka @ SingalFX](https://www.signalfx.com/blog/how-we-monitor-and-run-kafka-at-scale/)
+* Kafka exposes lot of metrics
+    - Collect them via JMX plugin
+    - Or use any of the open source collectors
+
+* Send metrics to a collector (graphite, open TSDB ..etc.)
+
+* Use a nice graphic tool to slice & dice metrics (Grafana)
+
+* References:
+    - [Datadog](https://www.datadoghq.com/dashboards/kafka-dashboard/)
+    - [Monitoring Kafka @ SingalFX](https://www.signalfx.com/blog/how-we-monitor-and-run-kafka-at-scale/)
 
 ---
 
@@ -312,20 +345,19 @@ Notes:
 
 ---
 
-## Best Practices: Recommendations from Netflix
+## Recommendations from Netflix
 
 <img src="../../assets/images/logos/netflix-logo-1.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.53, "top" : 1.29, "height" : 1.12, "width" : 2.42} -->
 
- * Prefer multiple modest sized Kafka clusters rather than one giant Kafka cluster.   This will simplify operations
+* Prefer multiple modest sized Kafka clusters rather than one giant Kafka cluster.   This will simplify operations
 
- * Number of partitions per cluster around 10,000.This improves availability and latency
+* Number of partitions per cluster around 10,000.This improves availability and latency
 
- * Use dedicated Zookeeper cluster for each Kafka cluster
+* Use dedicated Zookeeper cluster for each Kafka cluster
 
- * [Reference](https://medium.com/netflix-techblog/kafka-inside-keystone-pipeline-dd5aeabaf6bb)
+* [Reference](https://medium.com/netflix-techblog/kafka-inside-keystone-pipeline-dd5aeabaf6bb)
 
 Notes:
-
 
 ---
 
@@ -333,98 +365,73 @@ Notes:
 
 ---
 
-
 ## Kafka Troubleshooting
 
+* We are going to do these as a class / group exercise!
 
- * We are going to do these as a class / group exercise!
+* Show a problem
 
- * Show a problem
-
- * Class to suggest solution
+* Class to suggest solution
 
 Notes:
-
-
-
 
 ---
 
 ## Issue
 
+* Consumer errors with Out of Memory error
 
- * Consumer errors with Out of Memory error
-
- * (answer next slide)
+* (answer next slide)
 
 Notes:
-
-
-
 
 ---
 
 ## Possible Solutions
 
+* Too many partitions
 
- * Too many partitions
+    - More partitions consume more memory
 
-     - More partitions consume more memory
+* Messages are large
 
- * Messages are large
-
-     - Increase Java Heap size
+    - Increase Java Heap size
 
 Notes:
-
-
-
 
 ---
 
 ## Issue
 
+* Consumer seems to stuck on one offset, can not go beyond that message.
 
- * Consumer seems to stuck on one offset, can not go beyond that message.
+* Gets InvalidMessageSizeException
 
- * Gets InvalidMessageSizeException
-
- * (answer next slide)
+* (answer next slide)
 
 Notes:
-
-
-
 
 ---
 
 ## Possible Solutions
 
+* Message size is too large
 
- * Message size is too large
+* Double check **messages.max.bytes** (on broker)
 
- * Double check **messages.max.bytes** (on broker)
-
- * And match **fetch.message.max.bytes** (on consumer)
+* And match **fetch.message.max.bytes** (on consumer)
 
 Notes:
-
-
-
 
 ---
 
 ## Issue
 
+* Some consumers are not receiving any messages
 
- * Some consumers are not receiving any messages
-
- * (answer next slide)
+* (answer next slide)
 
 Notes:
-
-
-
 
 ---
 
@@ -432,51 +439,43 @@ Notes:
 
 <img src="../../assets/images/kafka/Consumer-Behavior-04.png"  style="max-width:50%;float:right;" /><!-- {"left" : 6.04, "top" : 1.12, "height" : 3.6, "width" : 4.08} -->
 
- * Probably have more consumers than number of partitions
+* Probably have more consumers than number of partitions
 
- * Solutions:
+* Solutions:
 
-     - Match  # consumers = # partitions  in a consumer group
+    - Match  # consumers = # partitions  in a consumer group
 
-     - Increase number of partitions
+    - Increase number of partitions
 
-     - Decrease number of consumers
+    - Decrease number of consumers
 
 Notes:
-
-
-
 
 ---
 
 ## Issue
 
+* Producer is getting QueueFullException
 
- * Producer is getting QueueFullException
-
- * (answer next slide)
+* (answer next slide)
 
 Notes:
-
-
-
 
 ---
 
 ## Possible Solutions
 
-
- *  **Reason**
+* **Reason**
 
    - Producer is sending events faster than Kafka brokers can handle
 
- * Fixes:
+* Fixes:
 
     - Slow down producer sending
 
        - Switch `ack` setting to 1 or `all` to Producer will wait for acknowledgement from Broker
 
- * Expand Kafka capacity
+* Expand Kafka capacity
 
      - Add more partitions if possible
 
@@ -484,22 +483,15 @@ Notes:
 
 Notes:
 
-
-
-
 ---
 
 ## Issue
 
+* Number of Under Replicated partitions are going up
 
- * Number of Under Replicated partitions are going up
-
- * (answer next slide)
+* (answer next slide)
 
 Notes:
-
-
-
 
 ---
 
@@ -507,22 +499,21 @@ Notes:
 
 <img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replicas.png"  style="width:50%;float:right;" /><!-- {"left" : 6.28, "top" : 1.07, "height" : 1.91, "width" : 3.85} -->
 
- *  **Reason**
-   - Creating replicas is lagging behind
-   - IO throughput between brokers is not keeping up with incoming data
- * This is  **serious issue** , as it will
-     - backup write pipeline
-     - Increase probability of loosing data
-     - And slow down consumers! (why ?)
- * **Fixes:**
+* **Reason**
+    - Creating replicas is lagging behind
+    - IO throughput between brokers is not keeping up with incoming data
+
+* This is  **serious issue** , as it will
+    - backup write pipeline
+    - Increase probability of loosing data
+    - And slow down consumers! (why ?)
+
+* **Fixes:**
     - Inspect disk bottleneck on replica machines
     - Are the disks slow / full?
     - Is the NIC saturated?
 
 Notes:
-
-
-
 
 ---
 
@@ -530,91 +521,77 @@ Notes:
 
 ---
 
+## Quiz: Transporting Existing Log Files Via Kafka
 
-## Problem: Transporting Existing Log Files Via Kafka
+* We have an application that generates log files on disk
 
+* Each file size is about 1G
 
- * We have an application that generates log files on disk
+* Each file contains approximately a few hundred thousands to million log entries
 
- * Each file size is about 1G
+* Q1: We have hundreds of these log files accumulated, first we need to send them via Kafka
 
- * Each file contains approximately a few hundred thousands to million log entries
+* Q2: Then, we want to continuously monitor the output log file as it is produced and send to Kafka
 
- * Q1: We have hundreds of these log files accumulated, first we need to send them via Kafka
-
- * Q2: Then, we want to continuously monitor the output log file as it is produced and send to Kafka
-
- *  **Answer next slide**
+* **Answer next slide**
 
 Notes:
-
-
-
 
 ---
 
 ## Solution: Transporting Existing Log Files Via Kafka
 
+* Option1: Kafka Connect
 
- * Option1: Kafka Connect
+* Option2: Write a (Java) program to read files
 
- * Option2: Write a (Java) program to read files
+* Extract events
 
- * Extract events
+* Push individual events into Kafka
 
- * Push individual events into Kafka
+* Write in batch mode for increased throughput
 
- * Write in batch mode for increased throughput
+* **Question for class:**
 
- *  **Question for class:**
-
-     - What would we use for key?
+    - What would we use for key?
 
 Notes:
-
-
-
 
 ---
 
-## Problem: Monitor log files and send logs into Kafka
+## Quiz: Monitor log files and send logs into Kafka
 
+* Programs writes log files to disk
 
- * Programs writes log files to disk
+* We want to transport these logs via Kafka
 
- * We want to transport these logs via Kafka
+* Need to continuously monitor the log files and send logs to Kafka
 
- * Need to continuously monitor the log files and send logs to Kafka
-
- *  **Answer next slide**
+* **Answer next slide**
 
 Notes:
-
-
-
 
 ---
 
 ## Solution: Monitor log files and send logs into Kafka
 
+* Kafka Connect
 
- * Kafka Connect
+* [LogStash](https://www.elastic.co/products/logstash)
 
- * [LogStash](https://www.elastic.co/products/logstash)
+    - Can parse pretty much any log files
 
-     - Can parse pretty much any log files
+    - And send them to any 'stash'
 
-     - And send them to any 'stash'
+    - Has input / output plugins for Kafka(can read from / write to  Kafka)
 
-     - Has input / output plugins for Kafka(can read from / write to  Kafka)
+* [Log4J](https://logging.apache.org/log4j/)
 
- * [Log4J](https://logging.apache.org/log4j/)
+    - Log4j has appenders to Kafka
 
-     - Log4j has appenders to Kafka
+* Roll your Own
 
- * Roll your Own
-
-     - Apache Commons has a [Tailor](https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons/io/input/Tailer.html) class
+    - Apache Commons has a [Tailor](https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons/io/input/Tailer.html) class
 
 Notes:
 
@@ -622,121 +599,153 @@ https://www.elastic.co/products/logsta
 https://logging.apache.org/log4j/2.0/manual/appenders.htmlsh
 https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons/io/input/Tailer.html
 
+---
+
+## Quiz: Processing Clickstream Data
+
+* Here is a sample clickstream data
+
+```json
+{ 
+    "timestamp" :1451635200055,
+    "session":"session_57" ,
+    "domain":"twitter.com" ,
+    "cost":24,
+    "user":"user_31",
+    "campaign": "campaign_1",
+    "ip":"ip_64",
+    "action": "blocked" 
+}
+```
+
+<img src="../../assets/images/kafka/clickstream-metrics-1.png" style="width:50%;float:right;"/><!-- {"left" : 0.75, "top" : 3.7, "height" : 2.25, "width" : 8.76} -->
+
+* Query: We want to keep a running total of impressions per domain
+
+* Design the producer and consumer
+
+* Hints:
+    - Think about how to aggregate stats for each domain
 
 ---
 
-## Problem: Sending Large Video Files Through Kafka
+## Solution: Processing Clickstream Data
+
+* Discuss various solutions
+
+---
+
+## Quiz: Design a Messaging System Like Slack
+
+* Here is a sample payload
+
+```json
+{
+    "timestamp" : "...",
+    "from" : "user1",
+    "to" : "user2",
+    "message": "Hi, wanna grab lunch today?"
+}
+```
+
+* Design Producer and Consumer
+
+---
+
+## Solution: Design a Messaging System Like Slack
+
+* Discuss various solutions
+
+---
 
 
- * We have video files that are of size from 100s of MB in size to few Gigs.
+## Quiz: Sending Large Video Files Through Kafka
 
- * We want to send these files using Kafka
+* We have video files that are of size from 100s of MB in size to few Gigs.
 
- * And assemble the files on the other end
+* We want to send these files using Kafka
+
+* And assemble the files on the other end
 
 <img src="../../assets/images/kafka/Through-Kafka.png" alt="Through-Kafka.png" style="width:70%;"/><!-- {"left" : 0.75, "top" : 3.7, "height" : 2.25, "width" : 8.76} -->
 
-
-
 Notes:
-
-
-
 
 ---
 
 ## Solution: Sending Large Video Files Through Kafka
 
+* Chop the file into smaller chunks and send them with SAME key (so all chunks of one file will be written to ONE partition,  and a consumer can re-construct the file on the other end)
 
-   * Chop the file into smaller chunks and send them with SAME key (so all chunks of one file will be written to ONE partition,  and a consumer can re-construct the file on the other end)
+* **Questions for class**
 
-   * **Questions for class**
+    - What can we use for key?
 
-        -  What can we use for key?
+    - How do we make sure the files aren't corrupted?
 
-        - How do we make sure the files aren't corrupted?
+* **Instructor:**
 
-   * **Instructor:**
-
-        - Draw out the payload send order
+    - Draw out the payload send order
 
 Notes:
-
-
-
 
 ---
 
-## Problem: Too Many Partitions Making Kafka Cluster Unstable
+## Quiz: Too Many Partitions Making Kafka Cluster Unstable
 
+* We have a  **created**  topic with 1000 partitions
 
- * We have a  **created**  topic with 1000 partitions
+* And we have been sending data to the topic.  All partitions have data
 
- * And we have been sending data to the topic.  All partitions have data
+* But this is proving to be too many partitions for our little kafka cluster.
 
- * But this is proving to be too many partitions for our little kafka cluster.
+* We want to cut down the number of partitions to 100
 
- * We want to cut down the number of partitions to 100
+* How can we accomplish this?Remember, number of partitions can not be reduced!
 
- * How can we accomplish this?Remember, number of partitions can not be reduced!
-
- *  **Answer next slide**
+* **Answer next slide**
 
 Notes:
-
-
-
 
 ---
 
 ## Solution: Reducing Number of Partitions
 
-
 Notes:
-
-
-
 
 ---
 
-## Problem: How to Capture Events From an IOT device and push it to Kafka?
+## Quiz: How to Capture Events From an IOT device and push it to Kafka?
 
+* Imagine we have IOT devices sending data 'home'
 
- * Imagine we have IOT devices sending data 'home'
+* These devices are outside our firewall!
 
- * These devices are outside our firewall!
+* Capture the data in Kafka
 
- * Capture the data in Kafka
+* Design a system do this
 
- * Design a system do this
+* We want to award badges to users who accomplish certain milestonese.g.  Fitbit send "well done" when a user completes 10,000 steps a day
 
- * We want to award badges to users who accomplish certain milestonese.g.  Fitbit send "well done" when a user completes 10,000 steps a day
+    - These awards are sent via email & mobile app push notifications
 
-     - These awards are sent via email & mobile app push notifications
-
- *  **Answer next slide**
+* **Answer next slide**
 
 Notes:
-
-
-
 
 ---
 
 ## Solution: IOT Data Capture
 
-
- * Kafka REST
+* Kafka REST
 
 Notes:
 
 ---
 
-
 ## Review and Q&A
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
-
 
 - Let's go over what we have covered so far
 
