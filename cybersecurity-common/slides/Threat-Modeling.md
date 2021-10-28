@@ -442,7 +442,7 @@ There is also a set of ways to elevate privileges through authorization failures
   * Integrity
   * Availability
 
-![](../images/threat-01-pexels-tima-miroshnichenko-6253977.jpg)
+![](../../assets/images/cybersecurity/threat-01-pexels-tima-miroshnichenko-6253977.jpg)
 
 ---
 
@@ -453,7 +453,7 @@ There is also a set of ways to elevate privileges through authorization failures
   * Remediation level
   * Report confidence
 
-![](../images/threat-01-pexels-tima-miroshnichenko-6253977.jpg)
+![](../../assets/images/cybersecurity/threat-01-pexels-tima-miroshnichenko-6253977.jpg)
 
 ---
 
