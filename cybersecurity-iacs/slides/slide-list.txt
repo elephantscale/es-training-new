@@ -5,6 +5,7 @@ CBS-ISA.pdf
 About-Cyber-IACS.md
 ../../cybersecurity-common/slides/Security-Intro.md
 ../../cybersecurity-common/slides/Threat-Modeling.md
+../../cybersecurity-common/slides/Ransomware-etc.pptx
 ../../vault-consul/slides/Vault_introduction.md
 ../../vault-consul/slides/Vault_architecture.md
 ../../vault-consul/slides/Vault_configuration.md
