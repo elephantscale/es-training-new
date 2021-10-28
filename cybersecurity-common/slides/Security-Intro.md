@@ -4,7 +4,8 @@ Security Intro
 ## Personal Story
 * Hacker comes to town!
 * Jeremiah Grossman
-![](../images/intro-00.png)
+![](../../assets/images/cybersecurity/intro-00.png)
+
 
 ---
 
@@ -17,25 +18,25 @@ Security Intro
 
 ## Hacking is a lifestyle
 
-![](../images/intro-01.png)
+![](../../assets/images/cybersecurity/intro-01.png)
 
 ---
 
 ## Told by GrugQ
 
-![](../images/intro-02.png)
+![](../../assets/images/cybersecurity/intro-02.png)
 
 ---
 
 ## Summary of hacker advice
 
-![](../images/intro-04.png)
+![](../../assets/images/cybersecurity/intro-04.png)
 
 ---
 
 ## GrugQ Twitter
 
-![](../images/intro-03.png)
+![](../../assets/images/cybersecurity/intro-03.png)
 
 Notes:
 
@@ -57,7 +58,7 @@ Notes:
 * But this is boring
   - and brings no new functionality
 
-![](../images/intro-05-pexels-cottonbro-4114918.jpg)
+![](../../assets/images/cybersecurity/intro-05-pexels-cottonbro-4114918.jpg)
 ---
 
  
@@ -67,7 +68,7 @@ Notes:
 * Blue Team defends
 * Tell your boss, you are doing security :)
 
-![](../images/intro-6-pexels-rodnae-productions-7551391.jpg)
+![](../../assets/images/cybersecurity/intro-6-pexels-rodnae-productions-7551391.jpg)
 
 ---
 
@@ -82,7 +83,7 @@ Notes:
 
 ## Insider job recruitement
 
-![](../images/intro-07.png)
+![](../../assets/images/cybersecurity/intro-07.png)
 
 ---
 
