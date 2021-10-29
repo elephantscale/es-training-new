@@ -1,7 +1,7 @@
 # Organizing work with Mark and Rod
 
 * OTCS is in the course title, likely it is this https://otcsalliance.org/
-* (__Rod__) Understand and apply fundamental concepts and methods related to the fields of
+* (__Rod__)(__1__) Understand and apply fundamental concepts and methods related to the fields of
   information technology and Industrial Automation and Control Systems (IACS) cybersecurity.
 * How to align overall organizational operational goals with
   security functions and implementations
@@ -26,4 +26,4 @@
   - Security levels
   - Security feedback loops
   - Control systems
-* The Cybersecurity Lifecycle applied to IACS - I think we cover it above
+* (__Rod__)(__1__) The Cybersecurity Lifecycle applied to IACS - I think we cover it above
