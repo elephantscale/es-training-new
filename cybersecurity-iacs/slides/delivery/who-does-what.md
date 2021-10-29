@@ -1,5 +1,6 @@
 # Organizing work with Mark and Rod
 
+* OTCS is in the course title, likely it is this https://otcsalliance.org/
 * (__Rod__) Understand and apply fundamental concepts and methods related to the fields of
   information technology and Industrial Automation and Control Systems (IACS) cybersecurity.
 * How to align overall organizational operational goals with
@@ -21,6 +22,7 @@
   - System design guidance and requirements for the secure integration of control systems
   - Product development and technical requirements of control system product
 * (__Mark__) ISA IEC62443 standards and implementation in:
+* (Mentioned here, https://www.missionsecure.com/industrial-control-systems-ics-cyber-security)
   - Security levels
   - Security feedback loops
   - Control systems
