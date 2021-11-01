@@ -1,5 +1,35 @@
-Security Intro
-==============
+# Security Intro
+
+## Bad joke
+* Why was the sys admin not found?
+
+![](../images/pexels-matthias-zomer-618158.jpg)
+
+---
+
+## Bad joke - answer
+* Because he ran somewhere!
+
+![](../images/pexels-enric-cruz-lópez-6039243.jpg)
+
+---
+
+## Ransomware attacks - map
+
+![](../images/sec-intro-01.png)
+
+---
+
+## Ransomware attacks - live stats
+
+[https://www.comparitech.com/ransomware-attack-map/?mod=djemCybersecruityPro&tpl=cy
+](https://www.comparitech.com/ransomware-attack-map/?mod=djemCybersecruityPro&tpl=cy
+)
+
+![](../images/sec-intro-02.png)
+
+---
+
 
 ## Personal Story
 * Hacker comes to town!
@@ -13,10 +43,11 @@ Security Intro
 
 * Make life (work) harder for hackers
 * And they will go elsewhere
+![](../images/sec-intro-pexel-03.png)
 
 ---
 
-## Hacking is a lifestyle
+## Hacking as a lifestyle
 
 ![](../../assets/images/cybersecurity/intro-01.png)
 
@@ -37,8 +68,6 @@ Security Intro
 ## GrugQ Twitter
 
 ![](../../assets/images/cybersecurity/intro-03.png)
-
-Notes:
 
 * Followed by 118K
 * @thegrugq
@@ -78,32 +107,102 @@ Notes:
 * Escrow services
 * Bitcoin
 * Malware as a service
-
+  * Software provided
+  * Negotiation services
+  * Payment facilitation, etc.
+  
 ---
 
-## Insider job recruitement
+## Insider job recruitment
 
-![](../../assets/images/cybersecurity/intro-07.png)
+![](../images/sec-intro-04.png)
+
+* https://krebsonsecurity.com/page/3/
 
 ---
-
 
 
 ## Is FBI involved?
 
-* Yes
-* Working with other agencies
-* Across borders
-* But they can only do so much
+* Old answer
+  * Yes
+  * Working with other agencies
+  * Across borders
+  * But they can only do so much
+
+* New answer
+  * "Hounds" policy
+  * Australia, GB, France plan to treat it as military threat
+  * Dutch policy actively attacks
+
+![](../images/sec-intro-06.png)
 
 ---
 
+## "Interbe" - Everything is connected
+* President Biden asks Putin not to attack critical infrastructure
+  * Ransomware hacker tell wheat producers “you are not critical infrastructure”
+  * If one team listens, another will come in: “Market economy!
+
+![](../images/sec-intro-05.png)
+
+---
 
 ## Criminal Operations
 * Highly specialized
 * Productized
-* How can we imitate it?
-* By acquiring either a Red Team of Blue Team specialization
+* How can we counteract it?
+* One should do what he can do with his hands
+
+![](../images/pexels-sharon-mccutcheon-1428171.jpg)
+---
+
+## Pieces of advice
+
+1. Become a security champion
+2. Threat modeling
+3. Tabletop exercises
+4. Contingency plans
+5. Education
 
 ---
+
+## Security champion
+
+![](../images/sec-intro-07.png)
+
+---
+
+## Threat modeling
+
+![](../images/pexels-canva-studio-3153207.jpg)
+
+---
+
+## Tabletop exercises
+
+![](../images/sec-intro-08.png)
+
+---
+
+## Contingency plans
+
+* Hacker advice:
+  * Don’t hire help! Or else it will go even worse for you
+  * __Do you believe it?__
+
+1. Have a plan. (Such as off-line backup.)Test it!
+2. Line-up your help (lawyers, negotiators, etc.)
+3. Cyber-Insurance
+4. Your addition?
+
+---
+
+## Education
+
+![](../images/sec-intro-09.png)
+
+---
+
+
 
