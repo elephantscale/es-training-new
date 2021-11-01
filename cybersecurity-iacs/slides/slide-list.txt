@@ -5,8 +5,9 @@ CBS-ISA.pdf
 About-Cyber-IACS.md
 ../../cybersecurity-common/slides/Security-Intro.md
 ../../cybersecurity-common/slides/Threat-Modeling.md
-Rod/OSI_Security_Model.pptx
-Rod/SLC and SDLC.pptx
+../Rod/OSI_Security_Model.pptx
+../Rod/SLC_and_SDLC.pptx
+../../secure-coding/slides/Common-Attacks.md
 ../../vault-consul/slides/Vault_introduction.md
 ../../vault-consul/slides/Vault_architecture.md
 ../../vault-consul/slides/Vault_configuration.md
