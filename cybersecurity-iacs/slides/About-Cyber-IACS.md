@@ -116,7 +116,15 @@ Notes:
 
 ---
 
+## Your class!
 
+* Yes, this is your class. What does this mean? You define the value.
+* What is the most important ingredient of class – your participation!
+* Your feedback and questions are always welcomed.
+* There is no protocol in class. Speak up anytime!
+* We value your comments during and after class. Just email `mark@elephantscale.com`.
+
+---
 
 ## About You And Me
 
