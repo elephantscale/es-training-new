@@ -5,7 +5,7 @@
 | Day | Theme                | Detail                                                                                                |
 |-----|----------------------|-------------------------------------------------------------------------------------------------------|
 | 1   | IACS Cybersecurity   | Industrial Automation and Control Systems (IACS) and security, * The role of managers, hackers, and developers                                         |
-| 2   | Implementing IACS    | Security design principals, * Cryptography * Software Development Lifecycle (SDLC), IEC62443 standards |
+| 2   | Implementing IACS    | Security design principles, * Cryptography * Software Development Lifecycle (SDLC), IEC62443 standards |
 
 
 Notes:
