@@ -650,6 +650,8 @@ https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons
 
 * Design Producer and Consumer
 
+* Discuss data formats (keys, values)
+
 ---
 
 ## Solution: Design a Messaging System Like Slack
@@ -658,6 +660,38 @@ https://commons.apache.org/proper/commons-io/javadocs/api-2.4/org/apache/commons
 
 ---
 
+## Quiz: Design a Netflix Feature
+
+* You can watch Netflix on one-device (say TV),  pause, and pick it up on another device (say iPad), exactly where you left off
+
+* Implement this feature using Kafka
+
+* Discuss what data you will send to Netflix to achieve this
+    - How about keys?
+    - How often to send data?
+
+---
+
+## Solution: Discuss Netflix Resume Solution
+
+---
+
+## Quiz: Design a FitBit Badge Feature
+
+* Fitbit device tracks a person's movement (i.e. steps)
+
+* People set target goals (10,000 steps / day)
+
+* When the target goal is achieved (say 10,000 steps per day) we want to send a 'Well done !' email
+
+* Also we want to announce 'daily competition winners' - a group of people competing together
+    - We will send push notification to every one's phone at the end of day (say 11pm) to announce the winner for the day
+
+---
+
+## Solution: Discuss Fitbit Design
+
+---
 
 ## Quiz: Sending Large Video Files Through Kafka
 
