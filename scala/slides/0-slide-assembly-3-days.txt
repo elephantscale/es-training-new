@@ -1,0 +1,9 @@
+## Execute these commands from within 'es-reveal-md' docker image
+## To generate slides
+##      ./gen.sh
+
+
+## Course outline
+../scala.pdf
+
+Scala-Intro.md
