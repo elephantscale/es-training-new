@@ -328,6 +328,30 @@ else if x == 0 then
 
 ---
 
+# Scala EcoSystem
+
+---
+
+## Scala and Friends
+
+* **Build**: sbt, maven, gradle
+
+* **IDEs**: IntelliJ,  Eclipse with Scala plugin, Netbeans
+
+* **Target JVM**: Java 8 is most popular, followed by Java 11
+
+* **Unit Testing**: ScalaTest, JUnit, specs2
+
+* **Web development**: Akka-http, Play
+
+* **Misc tools**: Scalafmt, Scalastyle, Scoverage
+
+* References:
+    - [Scala ecosystem in 2021 by JetBrains](https://www.jetbrains.com/lp/devecosystem-2021/scala/)
+    - [What is missing in scala ecosystem?](https://www.reddit.com/r/scala/comments/ir8ygb/what_is_missing_in_scala_ecosystem/)
+
+---
+
 ## Good References
 
 <img src="../../assets/images/books/programming-scala-3rd-edition-9781492077886.jpeg" style="width:20%;float:right;"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
