@@ -1,6 +1,6 @@
 # Scala Intro
 
-<img src="../../assets/images/logos/scala-logo-1.png" style="width:45%;"/><!-- {"left" : 6, "top" : 7, "height" : 4, "width" : 6.5} -->
+<img src="../../assets/images/logos/scala-logo-1.png" style="width:35%;"/><!-- {"left" : 6.49, "top" : 7.66, "height" : 2.07, "width" : 4.52} -->
 
 ---
 
@@ -17,31 +17,34 @@
 
 ## Scala Features
 
-<img src="../../assets/images/logos/scala-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 12.86, "top" : 2.46, "height" : 0.97, "width" : 4.17} -->
-<img src="../../assets/images/logos/java-logo-1.png" style="width:30%;float:right;clear:both;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
+<img src="../../assets/images/logos/scala-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 13.18, "top" : 1.89, "height" : 1.66, "width" : 3.63} -->
 
-* Scala is **JVM based** language.  It builds on Java / JVM.
+
+<img src="../../assets/images/logos/java-logo-1.png" style="width:30%;float:right;clear:both;"/> <!-- {"left" : 13.28, "top" : 3.4, "height" : 3.43, "width" : 3.43} -->
+
+* Scala is **JVM based** language. It builds on Java / JVM.
 
 * **Fully object oriented**
     - Every thing in Scala is an object!
     - Even primitive types like numbers and functions
 
-* **Fully functional**: Scala supports and encourages functional programming style
+* **Fully functional:** Scala supports and encourages functional programming style
 
-* **Statically typed**:  Checks types during compile time
+* **Statically typed:**  Checks types during compile time
 
-* **Very concise**: You will see examples of this soon enough
+* **Very concise:** You will see examples of this soon enough
 
 Notes:
 
-This is a quick overview of Scala features.  We will deep-dive into these features in the next few sections.
+This is a quick overview of Scala features. We will deep-dive into these features in the next few sections.
 
 ---
 
 ## A Better Java!
 
-<img src="../../assets/images/logos/sun-logo-2.png" style="width:30%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
-<img src="../../assets/images/people/martin-odersky-1.jpg" style="width:20%;float:right;clear:both;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
+<img src="../../assets/images/logos/sun-logo-2.png" style="width:23%;float:right;"/> <!-- {"left" : 13.71, "top" : 1.89, "height" : 1.14, "width" : 2.63} -->
+
+<img src="../../assets/images/people/martin-odersky-1.jpg" style="width:20%;float:right;clear:both;"/><!-- {"left" : 13.38, "top" : 3.32, "height" : 5.06, "width" : 3.28} -->
 
 * Sun released Java in 1996
 
@@ -78,13 +81,15 @@ Source : https://en.wikipedia.org/wiki/Martin_Odersky
 | 2006 March | v 2.0         |                        |
 | 2021       | V 3           | Big update!            |
 
+<!-- {"left" : 1.89, "top" : 2.71, "height" : 2.5, "width" : 13.78} -->
 Notes:
 
 ---
 
 ## Scala is a JVM Language
 
-<img src="../../assets/images/scala/scala-and-jvm-1.png" style="width:30%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
+<img src="../../assets/images/scala/scala-and-jvm-1.png" style="width:40%;float:right;"/> <!-- {"left" : 11.28, "top" : 2.25, "height" : 5.36, "width" : 5.93} -->
+
 
 * Scala source code compiles into a byte code
 
@@ -113,6 +118,7 @@ int i = 10;
 // in Scala, i is an object
 val i : Int = 10
 ```
+<!-- {"left" : 0, "top" : 3.21, "height" : 1.26, "width" : 5.77} -->
 
 * Classes
 
@@ -121,6 +127,7 @@ class Point(var x: Int, var y: Int) {
     // class methods
 }
 ```
+<!-- {"left" : 0, "top" : 4.97, "height" : 1.15, "width" : 6.93} -->
 
 * Traits
 
@@ -137,6 +144,7 @@ class A4 extends Printable{
     }  
 }  
 ```
+<!-- {"left" : 0, "top" : 6.98, "height" : 3.18, "width" : 5.12} -->
 
 ---
 
@@ -149,6 +157,9 @@ class A4 extends Printable{
 ```scala
 val square = (x: Int) => x * x
 ```
+<!-- {"left" : 0, "top" : 3.96, "height" : 0.82, "width" : 8.32} -->
+
+<br/>
 
 * Higher order functions allow concise programming
 
@@ -159,6 +170,7 @@ val newSalaries = salaries.map(x => x * 2) // List(40000, 140000, 80000)
 val doubleSalary = (x: Int) => x * 2
 val newSalaries2 = salaries.map(doubleSalary) // List(40000, 140000, 80000)
 ```
+<!-- {"left" : 0, "top" : 3.96, "height" : 2.13, "width" : 16.29} -->
 
 ---
 
@@ -175,6 +187,7 @@ val name = "John" // name is String
 // types can be explicitly defined, but not necessary
 val point: Point = Point (10, 20)
 ```
+<!-- {"left" : 0, "top" : 4.5, "height" : 1.74, "width" : 9.63} -->
 
 ---
 
@@ -189,6 +202,8 @@ object Singleton{
     }  
 } 
 ```
+<!-- {"left" : 0, "top" : 3.03, "height" : 1.64, "width" : 6.25} -->
+
 
 ```scala
 package logging
@@ -203,6 +218,9 @@ object Run{
     }  
 } 
 ```
+<!-- {"left" : 0, "top" : 4.79, "height" : 2.49, "width" : 7.94} -->
+
+<br/>
 
 * Compare with Java singleton
 
@@ -216,6 +234,7 @@ public class Elvis {  // one and only
 // access it like this:
 Elvis elvis = Elvis.INSTANCE;
 ```
+<!-- {"left" : 0, "top" : 8.13, "height" : 2.32, "width" : 14.13} -->
 
 ---
 
@@ -235,6 +254,7 @@ val banana = Fruit ("Yellow Banana", "Yellow", 4)
 // TODO: Write a match expression to select Apples
 
 ```
+<!-- {"left" : 0, "top" : 3.28, "height" : 2.61, "width" : 9.94} -->
 
 ---
 
@@ -258,11 +278,13 @@ Notes:
 
 ## Scala 3.0
 
-<img src="../../assets/images/logos/scala-logo-3.png" style="width:20%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
+<img src="../../assets/images/logos/scala-logo-3.png" style="width:20%;float:right;"/> <!-- {"left" : 14.33, "top" : 1.6, "height" : 2.16, "width" : 2.87} -->
+
 
 * This is a big release for Scala, eight years in the making with 28,000 commits, 7,400 pull requests, and 4,100 closed issues
 
 * New 'quiet' syntax, no brackets around conditions, and loops
+
 
 ```scala
 if x < 0 then
@@ -270,8 +292,10 @@ if x < 0 then
 else if x == 0 then
   "zero"
 ```
+<!-- {"left" : 0, "top" : 5.2
+, "height" : 1.24, "width" : 3.39} -->
 
-* Type system improvements.  [Union types](https://dotty.epfl.ch/docs/reference/new-types/union-types.html)
+* Type system improvements. [Union types](https://dotty.epfl.ch/docs/reference/new-types/union-types.html)
 
 * Language simplified;  dropped some features like [Delayed Init](https://dotty.epfl.ch/docs/reference/dropped-features/delayed-init.html).  See [more dropped features](https://dotty.epfl.ch/docs/Dropped%20Features/index.html)
 
@@ -286,7 +310,8 @@ else if x == 0 then
 
 ## Scala Criticisms
 
-<img src="../../assets/images/generic/pushing-boulder-on-hill-2.png" style="width:30%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
+<img src="../../assets/images/generic/pushing-boulder-on-hill-2.png" style="width:30%;float:right;"/> <!-- {"left" : 11.02, "top" : 1.89, "height" : 4.29, "width" : 6.1} -->
+
 
 * Scala can be a steep learning curve
 
@@ -303,9 +328,33 @@ else if x == 0 then
 
 ---
 
+# Scala EcoSystem
+
+---
+
+## Scala and Friends
+
+* **Build**: sbt, maven, gradle
+
+* **IDEs**: IntelliJ,  Eclipse with Scala plugin, Netbeans
+
+* **Target JVM**: Java 8 is most popular, followed by Java 11
+
+* **Unit Testing**: ScalaTest, JUnit, specs2
+
+* **Web development**: Akka-http, Play
+
+* **Misc tools**: Scalafmt, Scalastyle, Scoverage
+
+* References:
+    - [Scala ecosystem in 2021 by JetBrains](https://www.jetbrains.com/lp/devecosystem-2021/scala/)
+    - [What is missing in scala ecosystem?](https://www.reddit.com/r/scala/comments/ir8ygb/what_is_missing_in_scala_ecosystem/)
+
+---
+
 ## Good References
 
-<img src="../../assets/images/books/programming-scala-3rd-edition-9781492077886.jpeg" style="width:20%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
+<img src="../../assets/images/books/programming-scala-3rd-edition-9781492077886.jpeg" style="width:20%;float:right;"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
 
 * Books
     - [Programming Scala, 3rd edition](https://learning.oreilly.com/library/view/programming-scala-3rd/9781492077886/)
@@ -318,7 +367,7 @@ else if x == 0 then
 
 ## Lab: Doing XYZ
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.42, "top" : 1.26, "height" : 6.09, "width" : 4.57} -->
 
 * **Overview:**
   - Work with xyz
@@ -335,7 +384,8 @@ Notes:
 
 ## Group Lab: Doing XYZ
 
-<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 11.99, "top" : 2.62, "height" : 3.81, "width" : 5.25} -->
+
 
 * **Overview:**
   - Work with xyz
@@ -352,9 +402,12 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /> <!-- {"left" : 13.05, "top" : 2.09, "height" : 2.68, "width" : 3.63} -->
+
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 4.9, "top" : 6.11, "height" : 5.14, "width" : 7.7} -->
+
