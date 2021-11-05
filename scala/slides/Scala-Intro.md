@@ -19,7 +19,6 @@
 
 <img src="../../assets/images/logos/scala-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 13.18, "top" : 1.89, "height" : 1.66, "width" : 3.63} -->
 
-
 <img src="../../assets/images/logos/java-logo-1.png" style="width:30%;float:right;clear:both;"/> <!-- {"left" : 13.28, "top" : 3.4, "height" : 3.43, "width" : 3.43} -->
 
 * Scala is **JVM based** language. It builds on Java / JVM.
@@ -88,7 +87,7 @@ Notes:
 
 ## Scala is a JVM Language
 
-<img src="../../assets/images/scala/scala-and-jvm-2.png" style="width:40%;float:right;"/> <!-- {"left" : 11.28, "top" : 2.25, "height" : 5.36, "width" : 5.93} -->
+<img src="../../assets/images/scala/scala-and-jvm-2.png" style="width:40%;float:right;"/> <!-- {"left" : 11.3, "top" : 2.16, "height" : 5.42, "width" : 5.9} -->
 
 * Scala source code compiles into a byte code
 
@@ -275,6 +274,7 @@ val formatter = DateTimeFormat.forPattern("yyyy-MM-dd")
 val dateTime:DateTime = formatter.parseDateTime(dateStr)
 println(dateTime.dayOfWeek().getAsText(Locale.getDefault()))  // Prints "Sunday"
 ```
+<!-- {"left" : 0, "top" : 4.27, "height" : 2.76, "width" : 16.8} -->
 
 ---
 
@@ -365,17 +365,17 @@ else if x == 0 then
 
 ## Scala EcoSystem
 
-* **Build**: sbt, maven, gradle
+* **Build:** sbt, maven, gradle
 
-* **IDEs**: IntelliJ,  Eclipse with Scala plugin, Netbeans, [Metals](https://scalameta.org/metals/)
+* **IDEs:** IntelliJ,  Eclipse with Scala plugin, Netbeans, [Metals](https://scalameta.org/metals/)
 
-* **Target JVM**: Java 8 is most popular, followed by Java 11
+* **Target JVM:** Java 8 is most popular, followed by Java 11
 
-* **Unit Testing**: ScalaTest, JUnit, specs2
+* **Unit Testing:** ScalaTest, JUnit, specs2
 
-* **Web development**: Akka-http, Play
+* **Web development:** Akka-http, Play
 
-* **Misc tools**: Scalafmt, Scalastyle, Scoverage
+* **Misc tools:** Scalafmt, Scalastyle, Scoverage
 
 * References:
     - [Scala ecosystem in 2021 by JetBrains](https://www.jetbrains.com/lp/devecosystem-2021/scala/)
@@ -427,8 +427,9 @@ Openjdk version "11.0.11" 2021-04-20
 OpenJDK Runtime Environment (build 11.0.11+9-Ubuntu-0ubuntu2)
 OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2, mixed mode, sharing)
 ```
-<!-- {"left" : 0, "top" : 4.97, "height" : 1.15, "width" : 6.93} -->
+<!-- {"left" : 0, "top" : 3.21, "height" : 2.24, "width" : 15.38} -->
 
+<br/>
 * If you don't have JDK-11, follow instructions to your platform to setup JDK for your system
 
 ---
@@ -459,6 +460,7 @@ $   scala
 
 #   scala> 
 ```
+<!-- {"left" : 0, "top" : 5.78, "height" : 4.36, "width" : 12.44} -->
 
 ---
 
@@ -468,8 +470,7 @@ $   scala
 
 * Also a a decent editor like [VSCode](https://code.visualstudio.com/) is highly recommended
 
-<img src="../../assets/images/logos/intellij-idea-logo-1.png" style="width:30%;"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
-<img src="../../assets/images/logos/vscode-logo-1.png" style="width:30%;"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
+<img src="../../assets/images/logos/intellij-idea-logo-1.png" style="width:30%;"/><!-- {"left" : 2.24, "top" : 5.36, "height" : 2.15, "width" : 6.71} --> <img src="../../assets/images/logos/vscode-logo-1.png" style="width:30%;"/><!-- {"left" : 8.81, "top" : 4.8, "height" : 2.62, "width" : 6.24} -->
 
 ---
 
