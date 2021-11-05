@@ -88,8 +88,7 @@ Notes:
 
 ## Scala is a JVM Language
 
-<img src="../../assets/images/scala/scala-and-jvm-1.png" style="width:40%;float:right;"/> <!-- {"left" : 11.28, "top" : 2.25, "height" : 5.36, "width" : 5.93} -->
-
+<img src="../../assets/images/scala/scala-and-jvm-2.png" style="width:40%;float:right;"/> <!-- {"left" : 11.28, "top" : 2.25, "height" : 5.36, "width" : 5.93} -->
 
 * Scala source code compiles into a byte code
 
@@ -102,6 +101,7 @@ Notes:
     - Byte code is portable across platforms (write-once-run-anywhere)
     - JVM can manage memory automatically
     - JVM is one of the best run-times, evolved over the years of research and experiment
+    - Sports really good optimizers like Just in Time (JIT) compilers
 
 ---
 
@@ -258,7 +258,42 @@ val banana = Fruit ("Yellow Banana", "Yellow", 4)
 
 ---
 
-## Scala Popularity
+## Scala Features: JVM Language
+
+* Since Scala runtime is JVM, it benefits from extensive Java eco system
+
+* Scala can interoperate relatively seamlessly with Java libraries
+
+* Here is an example of using the popular [Joda time](https://www.joda.org/joda-time/) Java library in Scala
+
+```scala
+import  org.joda.time.format.DateTimeFormat
+import org.joda.time.DateTime
+
+val dateStr = "2021-06-13"
+val formatter = DateTimeFormat.forPattern("yyyy-MM-dd")
+val dateTime:DateTime = formatter.parseDateTime(dateStr)
+println(dateTime.dayOfWeek().getAsText(Locale.getDefault()))  // Prints "Sunday"
+```
+
+---
+
+## Scala Use Cases
+
+* Scala is a general purpose language (like Java) so can be used in wide variety of projects.  How ever there are some areas it really excels in.   Here are few:
+
+* High performance, highly concurrent Web services
+
+* Large scale distributed applications, like Spark applications
+
+* Distributed, Cloud-native apps
+
+* References:
+    - [What is Scala good for](https://news.ycombinator.com/item?id=25043915)
+
+---
+
+## Scala Adoption
 
 * Scala enjoyed a good uptake among Java and Functional programmers
 
@@ -328,15 +363,11 @@ else if x == 0 then
 
 ---
 
-# Scala EcoSystem
-
----
-
-## Scala and Friends
+## Scala EcoSystem
 
 * **Build**: sbt, maven, gradle
 
-* **IDEs**: IntelliJ,  Eclipse with Scala plugin, Netbeans
+* **IDEs**: IntelliJ,  Eclipse with Scala plugin, Netbeans, [Metals](https://scalameta.org/metals/)
 
 * **Target JVM**: Java 8 is most popular, followed by Java 11
 
@@ -352,51 +383,107 @@ else if x == 0 then
 
 ---
 
+## Group Discussion: Scala Use Cases
+
+<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 11.99, "top" : 2.62, "height" : 3.81, "width" : 5.25} -->
+
+* Let's discuss some of your project needs and where Scala would be applicable
+
+Notes:
+
+---
+
+# Getting Scala
+
+---
+
+## Getting Scala Setup
+
+* Recommended stack:
+    - Scala 2.13
+    - Java SDK 11
+
+* IDEs / Editors
+    - [IntelliJ](https://www.jetbrains.com/idea/) - highly recommended
+    - [VSCode](https://code.visualstudio.com/) - modern editor
+
+* Optional tools, that would improve your Scala experience
+    - [Ammonite](https://ammonite.io/) - a modern Scala REPL environment, with syntax highlighting and lets you run scripts
+    - [Mill](https://com-lihaoyi.github.io/mill/mill/Intro_to_Mill.html) - a modern build tool for Scala
+
+---
+
+## Scala Setup 1 - JDK
+
+* First thing, is to get JDK 11 setup
+
+* Check your Java version
+
+```bash
+$   java -version
+
+# Output:
+Openjdk version "11.0.11" 2021-04-20
+OpenJDK Runtime Environment (build 11.0.11+9-Ubuntu-0ubuntu2)
+OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2, mixed mode, sharing)
+```
+<!-- {"left" : 0, "top" : 4.97, "height" : 1.15, "width" : 6.93} -->
+
+* If you don't have JDK-11, follow instructions to your platform to setup JDK for your system
+
+---
+
+## Scala Setup 2 - Scala
+
+* The most straight-forward way to get Scala is download the Scala binary bundle (zip or tgz) for your platform.  This way you can control what version of Scala you would be using
+
+* [Scala 2 download page](https://www.scala-lang.org/download/scala2.html)
+
+* At this time of writing, the latest version of Scala is 2.13.7
+
+* Here is how to set it up on command line system
+
+```bash
+$   wget https://downloads.lightbend.com/scala/2.13.7/scala-2.13.7.tgz
+$   tar xvf scala-2.13.7.tgz
+
+# Setup PATH variable
+$    export PATH=$(pwd)/scala-2.13.7/bin:$PATH
+
+# invoke scala
+$   scala
+
+# Sample output:
+#   Welcome to Scala 2.13.7 (OpenJDK 64-Bit Server VM, Java 11.0.11).
+#   Type in expressions for evaluation. Or try :help.
+
+#   scala> 
+```
+
+---
+
+## Scala Setup 3 - Install IDEs
+
+* A good IDE will tremendously help with Scala coding.  We heartily recommend [IntelliJ](https://www.jetbrains.com/idea/)
+
+* Also a a decent editor like [VSCode](https://code.visualstudio.com/) is highly recommended
+
+<img src="../../assets/images/logos/intellij-idea-logo-1.png" style="width:30%;"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
+<img src="../../assets/images/logos/vscode-logo-1.png" style="width:30%;"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
+
+---
+
 ## Good References
 
 <img src="../../assets/images/books/programming-scala-3rd-edition-9781492077886.jpeg" style="width:20%;float:right;"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
 
 * Books
-    - [Programming Scala, 3rd edition](https://learning.oreilly.com/library/view/programming-scala-3rd/9781492077886/)
+    - [Programming Scala, 3rd edition](https://learning.oreilly.com/library/view/programming-scala-3rd/9781492077886/) - Learn the language
+    - [Hands on Scala](https://www.handsonscala.com/) - Practical approach to Scala and [code on github](https://github.com/handsonscala/handsonscala)
 
 * Online
     - [#ThisWeekInScala!](https://medium.com/disney-streaming/tagged/thisweekinscala) - great blog to keep up with Scala news
     - [Should I learn Scala](https://www.toptal.com/scala/why-should-i-learn-scala)
-
----
-
-## Lab: Doing XYZ
-
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.42, "top" : 1.26, "height" : 6.09, "width" : 4.57} -->
-
-* **Overview:**
-  - Work with xyz
-
-* **Approximate run time:**
-  - 20-30 mins
-
-* **Instructions:**
-  - Please complete A, B, C
-
-Notes:
-
----
-
-## Group Lab: Doing XYZ
-
-<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 11.99, "top" : 2.62, "height" : 3.81, "width" : 5.25} -->
-
-
-* **Overview:**
-  - Work with xyz
-
-* **Approximate run time:**
-  - 20-30 mins
-
-* **Instructions:**
-  - Please complete A, B, C
-
-Notes:
 
 ---
 
@@ -410,4 +497,3 @@ Notes:
 * Any questions?
 
 <img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 4.9, "top" : 6.11, "height" : 5.14, "width" : 7.7} -->
-
