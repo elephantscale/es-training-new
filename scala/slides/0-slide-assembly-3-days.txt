@@ -7,3 +7,4 @@
 ../scala.pdf
 
 Scala-Intro.md
+Scala-Getting-Started.md
