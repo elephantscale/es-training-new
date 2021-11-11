@@ -1,5 +1,7 @@
 # About Cyber-IACS
 
+---
+
 ## Agenda - 2 days
 
 | Day | Theme                | Detail                                                                                                |
@@ -105,7 +107,7 @@ http://www.wikihow.com/Become-a-Certified-Flight-Instructor
 
 ---
 
-## This Will Take A Lot Of Practice 
+## This Will Take A Lot Of Practice?
 
 ![](../../assets/images/about//practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
@@ -143,14 +145,12 @@ Notes:
 
   - Something non-technical about you!(favorite ice cream flavor or hobby…)
 
-![](../../assets/images/about//ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
-![](../../assets/images/about//hiking.png)   <!-- {"left" : 3.60, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
 
 
 Notes:
 
 
 
----
 
