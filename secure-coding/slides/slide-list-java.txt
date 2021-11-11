@@ -1,6 +1,6 @@
-# Secure coding (2 days)
+# Secure coding Java (2-3 days)
 ../../course-outlines/secure-coding.md
-About-Secure-Coding-Class.md
+About-Secure-Coding-Java-Class.md
 ../../cybersecurity-common/slides/Security-Intro.md
 ../../cybersecurity-common/slides/Threat-Modeling.md
 Common-Attacks.md
@@ -13,5 +13,4 @@ Angular-oauth.md
 ../../vault-consul/slides/Vault_architecture.md
 ../../vault-consul/slides/Vault_configuration.md
 ../../vault-consul/slides/Consul.md
-
 
