@@ -6,9 +6,9 @@ About-Cyber-IACS.md
 ../../cybersecurity-common/slides/Security-Intro.md
 OT-Cyber-Overview.md
 ../../cybersecurity-common/slides/Threat-Modeling.md
-OSI_Security_Model.pptx
-Security_Design.pptx
-SLC_and_SDLC.pptx
+OSI_Security_Model.md
+Security_Design.md
+SLC_and_SDLC.md
 ../../secure-coding/slides/Common-Attacks.md
 ../../vault-consul/slides/Vault_introduction.md
 ../../vault-consul/slides/Vault_architecture.md

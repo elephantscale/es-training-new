@@ -11,7 +11,7 @@
   * it has become necessary to reassess cybersecurity best practices 
   * for protecting OT
 
-![](../artwork/sec-plan-01.png)
+![](../../assets/images/cybersecurity-iacs/sec-plan-01.png)
 
 Notes:
 
@@ -44,7 +44,7 @@ Notes:
 * Programmable logic controller (PLC)
 * Control Systems
 
-![](../artwork/ot-01.png)
+![](../../assets/images/cybersecurity-iacs/ot-01.png)
 
 Notes:
 
@@ -89,7 +89,7 @@ Notes:
 * Human-Machine Interface (HMI)
 * Distributed Control Systems (DCS)
 
-![](../artwork/ot-02.png)
+![](../../assets/images/cybersecurity-iacs/ot-02.png)
 
 Notes:
 
@@ -114,7 +114,7 @@ as an electric grid.
 
 ## ICS and OT
 
-![](../artwork/ot-03.png)
+![](../../assets/images/cybersecurity-iacs/ot-03.png)
 
 Notes:
 
@@ -134,7 +134,7 @@ popular in recent years. The analyst firm Gartner defines OT as...
 * When applied to industrial applications
   * __Industrial Internet of Things (IIoT)__
   
-![](../artwork/ot-04.png)
+![](../../assets/images/cybersecurity-iacs/ot-04.png)
 
 ---
 
