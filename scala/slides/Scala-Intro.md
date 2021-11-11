@@ -117,7 +117,7 @@ int i = 10;
 // in Scala, i is an object
 val i : Int = 10
 ```
-<!-- {"left" : 0.9, "top" : 3.12, "height" : 1.26, "width" : 5.77} -->
+<!-- {"left" : 0.85, "top" : 3.12, "height" : 1.26, "width" : 5.77} -->
 
 * Classes
 
@@ -126,7 +126,7 @@ class Point(var x: Int, var y: Int) {
     // class methods
 }
 ```
-<!-- {"left" : 0.9, "top" : 4.97, "height" : 1.15, "width" : 6.93} -->
+<!-- {"left" : 0.85, "top" : 4.97, "height" : 1.15, "width" : 6.93} -->
 
 * Traits
 
@@ -143,7 +143,7 @@ class A4 extends Printable{
     }  
 }  
 ```
-<!-- {"left" : 0.9, "top" : 6.98, "height" : 3.18, "width" : 5.12} -->
+<!-- {"left" : 0.85, "top" : 6.98, "height" : 3.18, "width" : 5.12} -->
 
 ---
 
@@ -156,7 +156,7 @@ class A4 extends Printable{
 ```scala
 val square = (x: Int) => x * x
 ```
-<!-- {"left" : 0.9, "top" : 3.96, "height" : 0.82, "width" : 8.32} -->
+<!-- {"left" : 0.85, "top" : 3.96, "height" : 0.82, "width" : 8.32} -->
 
 <br/>
 
@@ -169,7 +169,7 @@ val newSalaries = salaries.map(x => x * 2) // List(40000, 140000, 80000)
 val doubleSalary = (x: Int) => x * 2
 val newSalaries2 = salaries.map(doubleSalary) // List(40000, 140000, 80000)
 ```
-<!-- {"left" : 0.9, "top" : 6.3, "height" : 2.13, "width" : 16.29} -->
+<!-- {"left" : 0.85, "top" : 6.3, "height" : 2.13, "width" : 16.29} -->
 
 ---
 
@@ -186,7 +186,7 @@ val name = "John" // name is String
 // types can be explicitly defined, but not necessary
 val point: Point = Point (10, 20)
 ```
-<!-- {"left" : 0.9, "top" : 4.5, "height" : 1.74, "width" : 9.63} -->
+<!-- {"left" : 0.85, "top" : 4.5, "height" : 1.74, "width" : 9.63} -->
 
 ---
 
@@ -201,7 +201,7 @@ object Singleton{
     }  
 } 
 ```
-<!-- {"left" : 0.9, "top" : 3.03, "height" : 1.64, "width" : 6.25} -->
+<!-- {"left" : 0.85, "top" : 3.03, "height" : 1.64, "width" : 6.25} -->
 
 
 ```scala
@@ -217,7 +217,7 @@ object Run{
     }  
 } 
 ```
-<!-- {"left" : 0.9, "top" : 4.79, "height" : 2.49, "width" : 7.94} -->
+<!-- {"left" : 0.85, "top" : 4.79, "height" : 2.49, "width" : 7.94} -->
 
 <br/>
 
@@ -233,7 +233,7 @@ public class Elvis {  // one and only
 // access it like this:
 Elvis elvis = Elvis.INSTANCE;
 ```
-<!-- {"left" : 0.9, "top" : 8.13, "height" : 2.32, "width" : 14.13} -->
+<!-- {"left" : 0.85, "top" : 8.13, "height" : 2.32, "width" : 14.13} -->
 
 ---
 
@@ -253,7 +253,7 @@ val banana = Fruit ("Yellow Banana", "Yellow", 4)
 // TODO: Write a match expression to select Apples
 
 ```
-<!-- {"left" : 0.9, "top" : 3.28, "height" : 2.61, "width" : 9.94} -->
+<!-- {"left" : 0.85, "top" : 3.28, "height" : 2.61, "width" : 9.94} -->
 
 ---
 
@@ -274,7 +274,7 @@ val formatter = DateTimeFormat.forPattern("yyyy-MM-dd")
 val dateTime:DateTime = formatter.parseDateTime(dateStr)
 println(dateTime.dayOfWeek().getAsText(Locale.getDefault()))  // Prints "Sunday"
 ```
-<!-- {"left" : 0.9, "top" : 4.27, "height" : 2.62, "width" : 15.95} -->
+<!-- {"left" : 0.85, "top" : 4.27, "height" : 2.62, "width" : 15.95} -->
 
 ---
 
@@ -327,7 +327,7 @@ if x < 0 then
 else if x == 0 then
   "zero"
 ```
-<!-- {"left" : 0.9, "top" : 5.2, "height" : 1.24, "width" : 3.39} -->
+<!-- {"left" : 0.85, "top" : 5.2, "height" : 1.24, "width" : 3.39} -->
 
 * Type system improvements. [Union types](https://dotty.epfl.ch/docs/reference/new-types/union-types.html)
 
@@ -426,7 +426,7 @@ Openjdk version "11.0.11" 2021-04-20
 OpenJDK Runtime Environment (build 11.0.11+9-Ubuntu-0ubuntu2)
 OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2, mixed mode, sharing)
 ```
-<!-- {"left" : 0.9, "top" : 3.21, "height" : 2.24, "width" : 15.38} -->
+<!-- {"left" : 0.85, "top" : 3.21, "height" : 2.24, "width" : 15.38} -->
 
 <br/>
 * If you don't have JDK-11, follow instructions to your platform to setup JDK for your system
@@ -459,7 +459,7 @@ $   scala
 
 #   scala> 
 ```
-<!-- {"left" : 0.9, "top" : 5.78, "height" : 4.36, "width" : 12.44} -->
+<!-- {"left" : 0.85, "top" : 5.78, "height" : 4.36, "width" : 12.44} -->
 
 ---
 
