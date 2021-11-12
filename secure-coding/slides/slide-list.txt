@@ -1,13 +1,14 @@
 # Secure coding (2 days)
-../../course-outlines/secure-coding.md
+../../course-outlines/secure-coding-general-2d.md
 About-Secure-Coding-Class.md
 ../../cybersecurity-common/slides/Security-Intro.md
 ../../cybersecurity-common/slides/Threat-Modeling.md
 Common-Attacks.md
 Defensive-Programming.md
-Java-Security.md
-JavaScript-Security.md
-REST-Endpoint-Security.md
+#Java-Security.md
+#JavaScript-Security.md
+REST-Endpoint-Security-OAuth2.md
+Secure-Design.md
 Angular-oauth.md
 ../../vault-consul/slides/Vault_introduction.md
 ../../vault-consul/slides/Vault_architecture.md

@@ -1,4 +1,4 @@
-# Introduction to REST Endpoint Security
+# REST Endpoint Security (OAuth2)
 
 ## Lesson Objectives
 

@@ -2,13 +2,12 @@ Secure Coding
 ======
 
   
-## Agenda - 3 days
+## Agenda - 2 days
 
 | Day | Theme                | Detail                                                                                                |
 |-----|----------------------|-------------------------------------------------------------------------------------------------------|
 | 1   | Introducing Security | Intro * Threat modeling * Common attacks * Countermeasures * Secure design                                                          |
-| 2   | Secure Coding        | Java Security * JavaScript Security * REST endpoint security * Authentication and Authorization (OAuth) * Session security                                   |
-| 3   | Secure Frameworks    | Modern security frameworks (Vault and Consul) *  Framework architecture  * Securing the runtime environment * Security future |
+| 2   | Secure Frameworks    | Modern security frameworks (Vault and Consul) *  Framework architecture  * Securing the runtime environment * Security future |
 
 
 Notes: 
@@ -64,7 +63,7 @@ Notes:
 
  * Where is the ANY key?
 
-![](../images/any-key.png) <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
+![](../../assets/images/about/any-key.png) <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
 
 
 Notes: 
@@ -76,7 +75,7 @@ Notes:
 ## Analogy: Learning To Fly…
 
 
-![](../images/learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about/learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 
 Notes: 
@@ -88,7 +87,7 @@ Notes:
 ## Instruction
 
 
-![](../images/classroom-instruction.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about/classroom-instruction.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 Notes: 
 
@@ -100,7 +99,7 @@ http://aviation-schools.regionaldirectory.us/learn-to-fly-720.jpg
 
 ## + Flight Time
 
-![](../images/cockpit.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about/cockpit.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 Notes: 
 
@@ -112,7 +111,7 @@ http://www.wikihow.com/Become-a-Certified-Flight-Instructor
 
 ## This Will Take A Lot Of Practice 
 
-![](../images/practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+![](../../assets/images/about/practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
 
 
 Notes: 
@@ -121,6 +120,15 @@ Notes:
 
 ---
 
+## Your class!
+
+* Yes, this is your class. What does this mean? You define the value.
+* What is the most important ingredient of class – your participation!
+* Your feedback and questions are always welcomed.
+* There is no protocol in class. Speak up anytime!
+* We value your comments during and after class. Just email `mark@elephantscale.com`.
+
+---
 
 
 ## About You And Me
