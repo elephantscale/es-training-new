@@ -52,7 +52,7 @@ Image Credit: James Chappell
 
 ## Iot Secure by Design
 
-![](../images/SecureByDesign.jpg)
+# ![](../images/SecureByDesign.jpg)
 
 - Secure lifecycle concepts applied to Internet of Things
 - Very similar to software secure by design lifecycle
@@ -143,7 +143,7 @@ Image Credit: Unknown
 
 ## The Generic Software Development Process
 
-![](../images/Generic%20SDP.png)
+![](../images/Generic_SDP.png)
 
 - Waterfall executes this once, Agile/DevOps execute this in multiple iterations
 
@@ -328,7 +328,7 @@ Image Credit: www.securitymagazine.com/articles/83537-us-security-shifting-to-pr
 
 ## Layered Security Model
 
-![](../images/Layered%20Model%202.jpg)
+![](../images/Layered_Model.jpg)
 
 - Another variation of the model is the "fan" model
 - The same basic layer approach but just different levels of detail
