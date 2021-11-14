@@ -14,7 +14,7 @@
 
  * Reference model for how information from software in one device moves to an application on another computer
 
-<img src="../../assets/images/cybersecurity-iacs/OSILayers.png" style="width:50%;"/><!-- {"left" : 3.93, "top" : 4.04, "height" : 7.39, "width" : 9.64} -->
+<img src="../../assets/images/cybersecurity-iacs/OSILayers.png" style="width:50%;"/><!-- {"left" : 1.63, "top" : 2.94, "height" : 5.36, "width" : 6.99} -->
 
 
 Notes: 
@@ -33,7 +33,7 @@ Licensed for free use and sharing with attribution and without modification
  * TCP/IP architecture for example
 
 
-<img src="../../assets/images/cybersecurity-iacs/The-OSI-model-and-TCP-IP-model-compared.jpg" style="width:50%;"/> <!-- {"left" : 4.26, "top" : 4.02, "height" : 7.18, "width" : 8.99} -->
+<img src="../../assets/images/cybersecurity-iacs/The-OSI-model-and-TCP-IP-model-compared.jpg" style="width:50%;"/> <!-- {"left" : 1.81, "top" : 2.67, "height" : 5.3, "width" : 6.64} -->
 
 Notes: 
 
@@ -48,7 +48,7 @@ Image Credit: https://nicolaswindpassinger.com/osi-reference-model
 
  * OSI maps to different protocols and standards for web and IoT worlds
 
-<img src="../../assets/images/cybersecurity-iacs/IoT-stack-and-web-stack-in-the-TCP-ip-view-640x398.jpg" style="width:60%;"/> <!-- {"left" : 2.92, "top" : 3.21, "height" : 7.28, "width" : 11.71} -->
+<img src="../../assets/images/cybersecurity-iacs/IoT-stack-and-web-stack-in-the-TCP-ip-view-640x398.jpg" style="width:60%;"/> <!-- {"left" : 0.93, "top" : 2.26, "height" : 5.21, "width" : 8.38} -->
 
 
 
@@ -61,7 +61,7 @@ Image Credit: https://nicolaswindpassinger.com/osi-reference-model
 
 ## Application Layer
 
-<img src="../../assets/images/cybersecurity-iacs/Application-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 13.03, "top" : 2.15, "height" : 6.07, "width" : 4.07} -->
+<img src="../../assets/images/cybersecurity-iacs/Application-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 6.68, "top" : 1.35, "height" : 4.8, "width" : 3.22} -->
 
  * Represents processes on the level of applications and users, IoT and otherwise
 
@@ -78,7 +78,7 @@ Ref:
 
 ## Presentation Layer
 
-<img src="../../assets/images/cybersecurity-iacs/Presentation-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 13.03, "top" : 2.15, "height" : 6.07, "width" : 4.07} -->
+<img src="../../assets/images/cybersecurity-iacs/Presentation-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 6.68, "top" : 1.35, "height" : 4.8, "width" : 3.22} -->
 
  * Formats and encrypts data for communication.
 
@@ -95,7 +95,7 @@ Ref:
 
 ## Session Layer
 
-<img src="../../assets/images/cybersecurity-iacs/Session-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 13.03, "top" : 2.15, "height" : 6.07, "width" : 4.07} -->
+<img src="../../assets/images/cybersecurity-iacs/Session-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 6.68, "top" : 1.35, "height" : 4.8, "width" : 3.22} -->
 
  * Connections between local and remote applications are initiated, managed and terminated here
 
@@ -110,7 +110,7 @@ Ref:
 
 ## Transport Layer
 
-<img src="../../assets/images/cybersecurity-iacs/Transport-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 13.03, "top" : 2.15, "height" : 6.07, "width" : 4.07} -->
+<img src="../../assets/images/cybersecurity-iacs/Transport-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 6.68, "top" : 1.35, "height" : 4.8, "width" : 3.22} -->
 
  * Manages the host-to-host data transmission
 
@@ -129,7 +129,7 @@ Ref:
 
 ## Network Layer
 
-<img src="../../assets/images/cybersecurity-iacs/Network-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 13.03, "top" : 2.15, "height" : 6.07, "width" : 4.07} -->
+<img src="../../assets/images/cybersecurity-iacs/Network-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 6.68, "top" : 1.35, "height" : 4.8, "width" : 3.22} -->
 
  * Responsible for routing and transferring data packets between different nodes across various networks
 
@@ -146,7 +146,7 @@ Ref:
 
 ## Data Link Layer
 
-<img src="../../assets/images/cybersecurity-iacs/Data-Link-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 13.03, "top" : 2.15, "height" : 6.07, "width" : 4.07} -->
+<img src="../../assets/images/cybersecurity-iacs/Data-Link-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 6.68, "top" : 1.35, "height" : 4.8, "width" : 3.22} -->
 
  * Later where data transfer between two directly connected nodes in a network takes place
 
@@ -169,7 +169,7 @@ Ref:
 
 ## Physical Layer
 
-<img src="../../assets/images/cybersecurity-iacs/Physical-Layer.png" style="width:30%;float:right;"/><!-- {"left" : 13.03, "top" : 2.15, "height" : 6.07, "width" : 4.07} -->
+<img src="../../assets/images/cybersecurity-iacs/Physical-Layer.png" style="width:30%;float:right;"/> <!-- {"left" : 6.68, "top" : 1.35, "height" : 4.8, "width" : 3.22} -->
  * Layer where networks are organized
 
  * Foundation of IoT and its connected 
@@ -230,7 +230,6 @@ Notes:
 | 1     | Physical     | Sniffing, physical device compromise                                                                                                 |
 
 
- <!-- {"left" : 1.2, "top" : 2.45, "height" : 5.15, "width" : 15.1} -->
 
 Notes: 
 
@@ -368,7 +367,7 @@ Notes:
 
 ## Man in the Browser
 
-<img src="../../assets/images/cybersecurity-iacs/Man-in-the-Browser-Secret-Double-Octopus-1200x684.png" style="width:70%;"/> <!-- {"left" : 1.4, "top" : 2.67, "height" : 8.38, "width" : 14.69} -->
+<img src="../../assets/images/cybersecurity-iacs/Man-in-the-Browser-Secret-Double-Octopus-1200x684.png" style="width:70%;"/> <!-- {"left" : 0.35, "top" : 2.1, "height" : 5.45, "width" : 9.56} -->
 
 
 
@@ -438,7 +437,7 @@ Notes:
     * Designed to distract attackers
     * They wind up attacking the honeypot instead of the industrial system
 
-<img src="../../assets/images/cybersecurity-iacs/security-honeypot_place_in_network-f_mobile.png" style="width:50%"/> <!-- {"left" : 4.27, "top" : 6.47, "height" : 4.53, "width" : 8.96} -->
+<img src="../../assets/images/cybersecurity-iacs/security-honeypot_place_in_network-f_mobile.png" style="width:50%"/> <!-- {"left" : 1.62, "top" : 4.82, "height" : 3.54, "width" : 7.01} -->
 
 
 Notes: 
@@ -478,7 +477,7 @@ Notes:
 ## ARP Spoofing Attack
 
 
-<img src="../../assets/images/cybersecurity-iacs/arp0.png" style="width:70%"/><!-- {"left" : 2.39, "top" : 2.72, "height" : 6.95, "width" : 12.71} -->
+<img src="../../assets/images/cybersecurity-iacs/arp0.png" style="width:70%"/><!-- {"left" : 0.4, "top" : 2.29, "height" : 5.16, "width" : 9.44} -->
 
 
 Notes: 
@@ -598,7 +597,7 @@ Notes:
 
  * Any deployed system is as insecure as the security at its weakest level
 
-<img src="../../assets/images/cybersecurity-iacs/OSIPyramid.png" style="width:50%"/> <!-- {"left" : 4.06, "top" : 4.1, "height" : 7.3, "width" : 9.38} -->
+<img src="../../assets/images/cybersecurity-iacs/OSIPyramid.png" style="width:50%"/> <!-- {"left" : 2.04, "top" : 3.28, "height" : 4.8, "width" : 6.17} -->
 
 
 Notes: 
@@ -610,7 +609,7 @@ Notes:
 ## OSI mitigations
 
 
-<img src="../../assets/images/cybersecurity-iacs/osisecurity7.png" style="width:50%"/> <!-- {"left" : 4.33, "top" : 2.52, "height" : 8.56, "width" : 8.83} -->
+<img src="../../assets/images/cybersecurity-iacs/osisecurity7.png" style="width:50%"/> <!-- {"left" : 1.91, "top" : 1.75, "height" : 6.23, "width" : 6.43} -->
 
 
 Notes: 

@@ -36,7 +36,7 @@ Notes:
 
 ## IoT Security Blueprint
 
-<img src="../../assets/images/cybersecurity-iacs/Security-Design-IoT-Security-Blueprint-1.png" style="width:60%;"/><!-- {"left" : 1.14, "top" : 2.54, "height" : 8.63, "width" : 15.22} -->
+<img src="../../assets/images/cybersecurity-iacs/Security-Design-IoT-Security-Blueprint-1.png" style="width:60%;"/><!-- {"left" : 0.73, "top" : 2.33, "height" : 4.98, "width" : 8.78} -->
 
 
 

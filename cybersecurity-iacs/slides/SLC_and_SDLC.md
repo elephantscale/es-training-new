@@ -6,7 +6,7 @@
 
 ## The Engineering Process
 
-<img src="../../assets/images/cybersecurity-iacs/TextDescription-automatically-generated.png" style="width:40%;float:right;"/> <!-- {"left" : 10.83, "top" : 2, "height" : 7.02, "width" : 6.4} -->
+<img src="../../assets/images/cybersecurity-iacs/TextDescription-automatically-generated.png" style="width:40%;float:right;"/> <!-- {"left" : 5.68, "top" : 1.63, "height" : 4.81, "width" : 4.38} -->
 
  * Used whenever a product or service is engineered
 
@@ -34,7 +34,7 @@ Licensed for free use and sharing with attribution and without modification
 
 ## Requirements
 
-<img src="../../assets/images/cybersecurity-iacs/Requirements.png" style="width:40%;float:right;"/> <!-- {"left" : 11.02, "top" : 2, "height" : 6.44, "width" : 6.05} -->
+<img src="../../assets/images/cybersecurity-iacs/Requirements.png" style="width:40%;float:right;"/> <!-- {"left" : 5.78, "top" : 1.54, "height" : 4.54, "width" : 4.27} -->
 
  * Identify the problem to be solved
 
@@ -65,7 +65,7 @@ Licensed for free use and sharing with attribution and without modification
 
 ## Analysis
 
-<img src="../../assets/images/cybersecurity-iacs/Analysis.png" style="width:40%;float:right;"/><!-- {"left" : 10.79, "top" : 1.89, "height" : 7.05, "width" : 6.43} -->
+<img src="../../assets/images/cybersecurity-iacs/Analysis.png" style="width:40%;float:right;"/> <!-- {"left" : 5.78, "top" : 1.54, "height" : 4.54, "width" : 4.27} -->
 
  * Evaluate possible solutions
 
@@ -96,7 +96,7 @@ Licensed for free use and sharing with attribution and without modification
 
 ## Design
 
-<img src="../../assets/images/cybersecurity-iacs/Design.png" style="width:40%;float:right;"/> <!-- {"left" : 10.98, "top" : 1.89, "height" : 6.82, "width" : 6.22} -->
+<img src="../../assets/images/cybersecurity-iacs/Design.png" style="width:40%;float:right;"/>  <!-- {"left" : 5.78, "top" : 1.54, "height" : 4.54, "width" : 4.27} -->
 
  * Only one solution can be built
 
@@ -125,8 +125,7 @@ Licensed for free use and sharing with attribution and without modification
 
 ## Construction
 
-<img src="../../assets/images/cybersecurity-iacs/Construction.png" style="width:40%;float:right;"/> <!-- {"left" : 10.48, "top" : 1.89, "height" : 7.48, "width" : 6.83} -->
-
+<img src="../../assets/images/cybersecurity-iacs/Construction.png" style="width:40%;float:right;"/>  <!-- {"left" : 5.78, "top" : 1.54, "height" : 4.54, "width" : 4.27} -->
  * Apply a development process
 
      - Roles and responsibilities
@@ -152,7 +151,7 @@ Licensed for free use and sharing with attribution and without modification
 
 ## Deployment
 
-<img src="../../assets/images/cybersecurity-iacs/Deployment.png" style="width:40%;float:right;"/> <!-- {"left" : 11.02, "top" : 1.89, "height" : 6.48, "width" : 5.91} -->
+<img src="../../assets/images/cybersecurity-iacs/Deployment.png" style="width:40%;float:right;"/> <!-- {"left" : 5.78, "top" : 1.54, "height" : 4.54, "width" : 4.27} -->
 
 
  * Get the application into production
@@ -184,7 +183,7 @@ Licensed for free use and sharing with attribution and without modification
 
 ## Production
 
-<img src="../../assets/images/cybersecurity-iacs/Production.png" style="width:40%;float:right;"/> <!-- {"left" : 11.06, "top" : 1.89, "height" : 6.7, "width" : 6.11} -->
+<img src="../../assets/images/cybersecurity-iacs/Production.png" style="width:40%;float:right;"/>  <!-- {"left" : 5.78, "top" : 1.54, "height" : 4.54, "width" : 4.27} -->
 
  * Monitor performance
 
@@ -213,7 +212,7 @@ Licensed for free use and sharing with attribution and without modification
 
 ## Retirement
 
-<img src="../../assets/images/cybersecurity-iacs/Retirement.png" style="width:40%;float:right;"/><!-- {"left" : 10.51, "top" : 1.89, "height" : 7.14, "width" : 6.71} -->
+<img src="../../assets/images/cybersecurity-iacs/Retirement.png" style="width:40%;float:right;"/> <!-- {"left" : 5.78, "top" : 1.54, "height" : 4.54, "width" : 4.27} -->
 
  * How do we take the application out of production?
 
@@ -277,7 +276,7 @@ Notes:
 ## System Lifecycle Management
 
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-System-Lifecycle-Management-10.png" style="width:50%;"/> <!-- {"left" : 3.25, "top" : 1.89, "height" : 4.39, "width" : 11} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-System-Lifecycle-Management-10.png" style="width:50%;"/> <!-- {"left" : 1.84, "top" : 1.38, "height" : 2.62, "width" : 6.57} -->
 
 
  * Three main milestones
@@ -298,7 +297,7 @@ Notes:
 ## System Lifecycle Management
 
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-System-Lifecycle-Management-10.png" style="width:50%;"/> <!-- {"left" : 3.25, "top" : 1.89, "height" : 4.39, "width" : 11} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-System-Lifecycle-Management-10.png" style="width:50%;"/> <!-- {"left" : 1.84, "top" : 1.38, "height" : 2.62, "width" : 6.57} -->
 
  * Deployment: 
      - Occurs when the finished product is moved into production and made available to users
@@ -316,7 +315,7 @@ Notes:
 ## Governance
 
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Governance-11.png" style="width:50%;"/> <!-- {"left" : 3.84, "top" : 1.67, "height" : 4.32, "width" : 9.82} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Governance-11.png" style="width:50%;"/> <!-- {"left" : 1.63, "top" : 1.11, "height" : 3.08, "width" : 6.99} -->
 
  * Begins with business case and feasibility studies
 
@@ -334,7 +333,7 @@ Notes:
 
 ## Development
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Governance-11.png" style="width:50%;"/><!-- {"left" : 4.16, "top" : 1.89, "height" : 4.03, "width" : 9.17} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Governance-11.png" style="width:50%;"/> <!-- {"left" : 1.63, "top" : 1.11, "height" : 3.08, "width" : 6.99} -->
 
  * Only concerned about the choice of methodology
 
@@ -352,7 +351,7 @@ Notes:
 
 ## Development - Waterfall
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Development-Waterfall-13.jpg" style="width:70%;"/><!-- {"left" : 0.96, "top" : 2.92, "height" : 6.55, "width" : 15.59} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Development-Waterfall-13.jpg" style="width:70%;"/><!-- {"left" : 0.23, "top" : 2.77, "height" : 4.11, "width" : 9.78} -->
 
 
 Notes: 
@@ -364,7 +363,7 @@ Notes:
 ## Development - Agile
 
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Development-Agile-14.jpg" style="width:70%;"/> <!-- {"left" : 0.48, "top" : 2.66, "height" : 7.06, "width" : 16.59} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Development-Agile-14.jpg" style="width:70%;"/> <!-- {"left" : 0.33, "top" : 2.49, "height" : 4.08, "width" : 9.6} -->
 
 
 
@@ -379,7 +378,7 @@ Notes:
 ## Development – Continuous Deliver
 
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Development-Continuous-Deliver-15.png" style="width:70%;"/> <!-- {"left" : 0.81, "top" : 2.99, "height" : 6.41, "width" : 15.88} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-Development-Continuous-Deliver-15.png" style="width:70%;"/> <!-- {"left" : 0.48, "top" : 2.66, "height" : 3.75, "width" : 9.29} -->
 
 
 Notes: 
@@ -390,7 +389,7 @@ Notes:
 
 ## Operations
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-System-Lifecycle-Management-10.png" style="width:40%;"/> <!-- {"left" : 2.99, "top" : 1.89, "height" : 4.6, "width" : 11.52} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-System-Lifecycle-Management-10.png" style="width:40%;"/> <!-- {"left" : 1.1, "top" : 1.33, "height" : 3.22, "width" : 8.06} -->
 
  * During deployment, governance makes decisions and development makes changes
 
@@ -419,7 +418,7 @@ Notes:
      - Defines the organization of work during the construction phase
      - Follows the Engineering process from requirements to deployment
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-SDLC-17.png" style="width:50%;"/> <!-- {"left" : 4.2, "top" : 4.65, "height" : 6.51, "width" : 9.1} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-SDLC-17.png" style="width:50%;"/> <!-- {"left" : 1.91, "top" : 3.58, "height" : 4.59, "width" : 6.42} -->
 
 Notes: 
 
@@ -429,7 +428,7 @@ Notes:
 
 ## SDLC Types
 
-<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-SDLC-Types-18.png" style="width:40%;"/> <!-- {"left" : 3.32, "top" : 1.89, "height" : 2.17, "width" : 10.87} -->
+<img src="../../assets/images/cybersecurity-iacs/System-Lifecycles-and-SDLCs-SDLC-Types-18.png" style="width:40%;"/> <!-- {"left" : 1.93, "top" : 1.29, "height" : 1.28, "width" : 6.39} -->
 
  * Depends on how many of the requirements are knows at the start of the project
 
@@ -518,7 +517,7 @@ Notes:
 
 ## Non-Agile Adaptive SDLCs
 
-<img src="../../assets/images/cybersecurity-iacs/Non-Agile-Adaptive-SDLCs.png" style="width:70%;"/> <!-- {"left" : 0.85, "top" : 1.69, "height" : 10.18, "width" : 15.8} -->
+<img src="../../assets/images/cybersecurity-iacs/Non-Agile-Adaptive-SDLCs.png" style="width:70%;"/> <!-- {"left" : 0.8, "top" : 2.04, "height" : 5.57, "width" : 8.64} -->
 
 
 Notes: 
@@ -565,7 +564,7 @@ Notes:
 
 ## Test, Test and Test Again
 
-<img src="../../assets/images/people/Boris-Beizer.png" style="width:20%;float:right;"/> <!-- {"left" : 13.3, "top" : 1.89, "height" : 4.33, "width" : 3.39} -->
+<img src="../../assets/images/people/Boris-Beizer.png" style="width:20%;float:right;"/> <!-- {"left" : 7.54, "top" : 1.18, "height" : 3.13, "width" : 2.45} -->
 
  *  *Boris*  *Beizer* 
 
@@ -584,7 +583,7 @@ Notes:
 
 ## IEEE Best Practices for Specs
 
-<img src="../../assets/images/cybersecurity-iacs/ShapeDescription-automatically-generated-with-low-confidence.png" style="width:50%;"/> <!-- {"left" : 3.09, "top" : 2.65, "height" : 8.42, "width" : 11.37} -->
+<img src="../../assets/images/cybersecurity-iacs/ShapeDescription-automatically-generated-with-low-confidence.png" style="width:50%;"/> <!-- {"left" : 1.22, "top" : 1.93, "height" : 5.79, "width" : 7.81} -->
 
 
 
@@ -601,8 +600,6 @@ Taken from the IEEE standard “Best Practices for Software Requirements Specifi
 
 ## The Rise of DevOps
 
-<img src="../../assets/images/cybersecurity-iacs/DevOpsProcess.png" style="width:30%;"/> <!-- {"left" : 12.52, "top" : 2.96, "height" : 2.71, "width" : 4.77} -->
-
  * DevOps is not a development methodology
  * It is a response to the virtualization like cloud providers
      - Infrastructure is now developed virtually
@@ -614,6 +611,8 @@ Taken from the IEEE standard “Best Practices for Software Requirements Specifi
      - DevOps integrates the two roles through common tools
      - Enables *continuous integration* and  *continuous deployment* (CICD)
 
+
+<img src="../../assets/images/cybersecurity-iacs/DevOpsProcess.png" style="width:30%;"/> <!-- {"left" : 3.28, "top" : 6.17, "height" : 2.1, "width" : 3.69} -->
 
 
 Notes: 
@@ -690,7 +689,7 @@ Notes:
 
  * Automatically bakes in security at every phase of the software development lifecycle
 
-<img src="../../assets/images/cybersecurity-iacs/DevSecOps.png" style="width:70%;"/> <!-- {"left" : 2.71, "top" : 3.44, "height" : 7.93, "width" : 12.13} -->
+<img src="../../assets/images/cybersecurity-iacs/DevSecOps.png" style="width:70%;"/> <!-- {"left" : 1.14, "top" : 2.49, "height" : 5.22, "width" : 7.98} -->
 
 
 Notes: 
