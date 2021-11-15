@@ -1,3 +1,6 @@
 Security-Intro.md
 Threat-Modeling.md
+OSI_Security_Model.md
+Security_Design.md
+SLC_and_SDLC.md
 

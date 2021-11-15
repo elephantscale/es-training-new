@@ -1,8 +1,6 @@
 # System Lifecycles and SDLCs
 
-
 ---
-
 
 ## The Engineering Process
 
@@ -231,10 +229,6 @@ Licensed for free use and sharing with attribution and without modification
 
 ---
 
-# System Lifecycles and SDLCs
-
----
-
 
 ## System Lifecycle Management
 
@@ -403,10 +397,6 @@ Notes:
 Notes: 
 
 
-
----
-
-# System Lifecycles and SDLCs
 
 ---
 
@@ -591,10 +581,6 @@ Notes:
 
 Taken from the IEEE standard “Best Practices for Software Requirements Specifications”
 
-
----
-
-# System Lifecycles and SDLCs
 
 ---
 
