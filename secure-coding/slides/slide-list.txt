@@ -5,8 +5,6 @@ About-Secure-Coding-Class.md
 ../../cybersecurity-common/slides/Threat-Modeling.md
 Common-Attacks.md
 Defensive-Programming.md
-#Java-Security.md
-#JavaScript-Security.md
 REST-Endpoint-Security-OAuth2.md
 Secure-Design.md
 Angular-oauth.md
