@@ -200,7 +200,13 @@
 
 ## Education
 
-![](../images/sec-intro-09.png)
+* Secure Coding
+* OT (Operational Technology) Security
+* Secure Coding Java
+* Secure Coding C++
+* Vault and Consul
+* Ghidra
+* Etc.
 
 ---
 
