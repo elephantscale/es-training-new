@@ -13,32 +13,6 @@ Notes:
 
 ---
 
-## Exercise: College Admission
-
-
-<img src="../../assets/images/machine-learning/college-admission-1.png"  style="max-width:50%;float:right;"/><!-- {"left" : 6, "top" : 2.09, "height" : 3.71, "width" : 4.04} -->
-
-* Consider college application and admittance data
-
-* **Inputs:**
-    - GRE: max 800
-    - GPA: 1.0  to4.0
-    - Rank: 1 (better) to 4
-
-* **Output**
-    - Admitted: Yes or No
-
-* We did this Multiple Logistics Regression before.Now we will try SVM
-
-
-
-
-
-
-Notes:
-
----
-
 ## SVM - Support Vector Machines
 
 * SVM is a supervised classifier

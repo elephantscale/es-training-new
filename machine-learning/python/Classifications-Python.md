@@ -197,3 +197,25 @@ gnb.score(iris.data, iris.target)
     - BONUS: **NB2**: naive-bayes/NB2-Income classification
 
 Notes:
+
+---
+
+## Lab: Evaluating Multiple Algorithms
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
+
+ *  **Overview:**
+
+    - We will use cross validation to evaluate multiple algorithms
+
+ *  **Approximate Time:**
+
+    - 30 mins
+
+ *  **Instructions:**
+     -  **Cross Validation 3: Evaluate multiple algorithms**
+
+
+Notes:
+
+---
