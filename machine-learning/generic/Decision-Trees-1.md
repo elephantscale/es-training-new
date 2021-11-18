@@ -13,39 +13,6 @@ Notes:
 
 ---
 
-## Exercise: College Admission
-
-* Consider college application and admittance data
-
-*  **Inputs:** GRE:  max 800; GPA: 1.0  to4.0; Rank: 1 (better) to 4
-
-*  **Output**
-
-     - Admitted: Yes or No
-
-
-| gre     | gpa     | rank.    | admitted     |
-|---------|---------|----------|--------------|
-| 380     | 3.6     | 3        | No           |
-| 660     | 3.67    | 3        | Yes          |
-| 800     | 4       | 1        | Yes          |
-| 640     | 3.19    | 4        | Yes          |
-| 520     | 2.93    | 4        | No           |
-| 760     | 3.0     | 2        | Yes          |
-| 400     | 3.08    | 2        | No           |
-| 700     | 4.0     | 1        | Yes          |
-| 500     | 3.17    | 3        | No           |
-
-<!-- {"left" : 0.25, "top" : 3.25, "height" : 5, "width" : 9.75} -->
-
-
-Notes:
-
-
-
-
----
-
 ## Should I Accept the New Job Offer?
 
 <img src="../../assets/images/machine-learning/Decision-Trees-Job-Offer.png" style="width:80%"><!-- {"left" : 0.86, "top" : 2.14, "height" : 5.36, "width" : 8.53} -->

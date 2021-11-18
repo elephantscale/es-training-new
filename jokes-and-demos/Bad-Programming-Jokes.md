@@ -69,19 +69,25 @@
 
 ---
 
-## Knock, knock.
-
-### 'Who's there?' 
+## 3 Database Admins walked into a NoSQL bar. A little while later they walked out because they couldn't find a table.
 
 ---
 
-## Knock, knock.
+---
 
-### 'Who's there?' 
+## Glass
 
-### ... very long pause ... 
+### Optimist: The glass is half full. 
 
-### 'Who's there?' 
+### Pessimist: The glass is half empty. 
+
+### Programmer: The glass is twice as large as necessary.
+
+---
+
+---
+
+# Java
 
 ---
 
@@ -111,19 +117,13 @@
 
 ---
 
-## 3 Database Admins walked into a NoSQL bar. A little while later they walked out because they couldn't find a table.
+## Why do Java programmers make terrible spouses?
 
 ---
 
----
+## Why do Java programmers make terrible spouses?
 
-## Glass
-
-### Optimist: The glass is half full. 
-
-### Pessimist: The glass is half empty. 
-
-### Programmer: The glass is twice as large as necessary.
+### They don't take out the garbage
 
 ---
 
