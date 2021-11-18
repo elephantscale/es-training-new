@@ -13,6 +13,7 @@
 
 
 ## Basics
+
 - History of AI (illustrated with cartoons) : https://www.youtube.com/watch?v=056v4OxKwlI
 - History of Neural networks (from skymind) : https://www.youtube.com/watch?v=n6XSDA3kfEw
 - Forget Andrew Ng, Watch Siraj Raval channel (hilarious!) :  https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A
@@ -54,7 +55,7 @@
 
 - Google Deep Mind - ATARI breakout - https://www.youtube.com/watch?v=V1eYniJ0Rnk
 - open AI Dota game (AI beating human pro teams) : https://www.youtube.com/watch?v=eHipy_j29Xw
-  - https://openai.com/five/  : timeline of bot development
+  - follow bot progress here : https://openai.com/five/  : timeline of bot development
 - Open AI Hide and Seek
   - blog : https://openai.com/blog/emergent-tool-use/
   - 2 minute papers : https://www.youtube.com/watch?v=Lu56xVlZ40M  
