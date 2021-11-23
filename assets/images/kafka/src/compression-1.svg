@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="16 76 661 167" width="1000px" height="600px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g>
+    <title>Producer</title>
+    <rect x="24.523" y="87.875" width="107.629" height="54.496" style="fill: rgb(255, 193, 69);"/>
+    <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 19.1px;" x="41.553" y="119.891">Producer</text>
+  </g>
+  <g>
+    <title>uncompressed data</title>
+    <rect x="24.523" y="155.995" width="110.354" height="28.611" style="fill: rgb(131, 216, 144);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 12px; white-space: pre;"><tspan x="25.886" y="168.256">uncompressed data<tspan x="25.88599967956543" dy="1em">​</tspan></tspan><tspan>(10 MB)</tspan></text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 267.030365, 0.680819)">
+    <title>Broker</title>
+    <rect x="24.523" y="87.875" width="107.629" height="54.496" style="fill: rgb(255, 193, 69);"/>
+    <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 19.1px;" x="41.553" y="119.891">Broker</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 514.305603, -0.00038)">
+    <title>Consumer</title>
+    <rect x="24.523" y="87.875" width="107.629" height="54.496" style="fill: rgb(255, 193, 69);"/>
+    <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 19.1px;" x="38.553" y="119.891">Consumer</text>
+  </g>
+  <ellipse style="fill: rgb(255, 223, 81);" cx="344.346" cy="188.616" rx="67.098" ry="42.234"/>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 19.1px;" x="324.931" y="164.775" bx:origin="1.13 0.532">disk</text>
+  <line style="stroke: rgb(0, 0, 0); stroke-width: 2px; paint-order: stroke;" x1="135.55858909465576" y1="111.64094030472754" x2="288.8283506338394" y2="110.27854242437925"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-width: 2px; paint-order: stroke;" x1="400.886" y1="113.004" x2="538.488" y2="112.322"/>
+  <g transform="matrix(1, 0, 0, 1, 6.13079, -11.580382)">
+    <rect x="290.191" y="194.407" width="99.455" height="29.292" style="fill: rgb(216, 137, 199);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 11px; white-space: pre;" transform="matrix(1, 0, 0, 1, 263.032166, 38.024158)"><tspan x="36.784" y="170.982">compressed data</tspan><tspan x="36.784" dy="1em">​</tspan><tspan>(2 MB)</tspan></text>
+  </g>
+  <g>
+    <rect x="417.575" y="116.75" width="99.455" height="29.292" style="fill: rgb(216, 137, 199);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 11px; white-space: pre;" transform="matrix(1, 0, 0, 1, 391.778778, -39.632515)"><tspan x="36.784" y="170.982">compressed data</tspan><tspan x="36.784" dy="1em">​</tspan><tspan>(2 MB)</tspan></text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 126.022079, -37.542385)">
+    <title>compressed data</title>
+    <rect x="24.523" y="155.995" width="99.455" height="29.292" style="fill: rgb(216, 137, 199);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 11px; white-space: pre;" transform="matrix(1, 0, 0, 1, -6, 0)"><tspan x="36.784" y="170.982">compressed data</tspan><tspan x="36.784" dy="1em">​</tspan><tspan>(2 MB)</tspan></text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 513.624268, -10.975625)">
+    <title>uncompressed data</title>
+    <rect x="24.523" y="155.995" width="110.354" height="28.611" style="fill: rgb(131, 216, 144);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 12px; white-space: pre;"><tspan x="25.886" y="168.256">uncompressed data<tspan x="25.88599967956543" dy="1em">​</tspan></tspan><tspan>(10 MB)</tspan></text>
+  </g>
+</svg>
