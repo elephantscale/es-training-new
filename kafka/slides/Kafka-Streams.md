@@ -1,20 +1,14 @@
 # Kafka Streams Intro
 
-
 ---
-
 
 ## Lesson Objectives
 
+* Learn Kafka Streams architecture
 
- * Learn Kafka Streams architecture
-
- * Learn Kafka Streams API
+* Learn Kafka Streams API
 
 Notes:
-
-
-
 
 ---
 
@@ -22,24 +16,17 @@ Notes:
 
 ---
 
-
 ## Streaming Platforms
 
 * Kafka is a messaging bus
 
 * The 'processing' portion was done outside Kafka
 
-
 <img src="../../assets/images/streaming/streaming-platforms-1.png" style="width:90%;"/><!-- {"left" : 0.93, "top" : 2.92, "height" : 3.79, "width" : 8.39} -->
-
 
 Notes:
 
-
-
-
 ---
-
 
 ## Kafka Application Using Java
 
@@ -48,8 +35,6 @@ Notes:
 - Cons: not scalable, not fault tolerant
 
 <img src="../../assets/images/kafka/kafka-java-app.png" style="max-width:80%;"/><!-- {"left" : 1.2, "top" : 2.55, "height" : 4.55, "width" : 7.84} -->
-
-
 
 ---
 
@@ -63,21 +48,17 @@ Notes:
 
 <img src="../../assets/images/kafka/kafka-spark-distributed-processing-1.png" style="max-width:45%;"/><!-- {"left" : 1.62, "top" : 3.15, "height" : 5.49, "width" : 7.01} -->
 
-
 ---
 
 ## Kafka Application Using Kafka Streams
 
 <img src="../../assets/images/kafka/kafka-streams-1.png" style="max-width:70%;"/><!-- {"left" : 0.4, "top" : 2.08, "height" : 5.49, "width" : 9.46} -->
 
-
-
 ---
 
 ## Case for Kafka Streams
 
 <img src="../../assets/images/kafka/Kafka-Processing-Systems.png" alt="Kafka-Processing-Systems.png" style="width:50%;float:right;"/><!-- {"left" : 6.03, "top" : 1.69, "height" : 2.55, "width" : 3.99} -->
-
 
 - Java / Python application using Kafka Producer/Consumer APIs
     * Simple
@@ -91,14 +72,11 @@ Notes:
 
 Notes:
 
-
-
 ---
 
 ## Kafka Streams Features
 
-
- * Kafka Streams is a **client-side** library for building distributed applications for Kafka
+* Kafka Streams is a **client-side** library for building distributed applications for Kafka
 
 * Event-based processing (one event at a time). Not micro batch
 
@@ -109,7 +87,6 @@ Notes:
 * **Not** designed for analytics like Spark or Hive
 
 Notes:
-
 
 ---
 
@@ -137,13 +114,11 @@ Notes:
 
 <img src="../../assets/images/kafka/stream-01.png"  style="width:90%;"/><!-- {"left" : 0.28, "top" : 2.32, "height" : 4.43, "width" : 9.69} -->
 
-
-
 ---
+
 ## Stream Processing - Concepts
 
 <img src="../../assets/images/kafka/stream-02.png"  style="width:90%;"/><!-- {"left" : 0.48, "top" : 2.26, "height" : 2.42, "width" : 9.29} -->
-
 
 ---
 
@@ -151,35 +126,27 @@ Notes:
 
 <img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; float:right;"/><!-- {"left" : 6.67, "top" : 1.7, "height" : 4.5, "width" : 3.49} -->
 
- * A  **Stream Partition** is an ordered set of records and maps to a Topic partition 
+* A  **Stream Partition** is an ordered set of records and maps to a Topic partition 
 
- * A  **Data Record** in the stream => maps to a Kafka message
+* A  **Data Record** in the stream => maps to a Kafka message
 
- * A  **Task** processes a fixed set of partitions
+* A  **Task** processes a fixed set of partitions
 
      - Stream tasks can be processed parallely
 
- * A  **Thread**  executes one or more tasks
-
+* A  **Thread**  executes one or more tasks
 
 Notes:
-
-
-
 
 ---
 
 ## Scaling Kafka Streams
 
- * No state is shared across threads. So you can start as many threads as there are input Kafka topic partitions so that every thread's tasks has at least one partition to process
+* No state is shared across threads. So you can start as many threads as there are input Kafka topic partitions so that every thread's tasks has at least one partition to process
 
 <img src="../../assets/images/kafka/Scaling-Kafka-Streams.png" alt="Scaling-Kafka-Streams.png" style="max-width:80%;"/><!-- {"left" : 1.88, "top" : 3.11, "height" : 4.97, "width" : 6.57} -->
 
-
 Notes:
-
-
-
 
 ---
 
@@ -187,27 +154,23 @@ Notes:
 
 <img src="../../assets/images/kafka/streams-architecture-topology.png" alt="streams-architecture-topology.png" style="width:30%; float:right;"/><!-- {"left" : 6.82, "top" : 1.65, "height" : 4.23, "width" : 2.98} -->
 
+* Defines the logic for the application
 
- * Defines the logic for the application
+* Topology is a graph
 
- * Topology is a graph
+    - Nodes: Stream processors
 
-     - Nodes: Stream processors
+    - Edges: Streams
 
-     - Edges: Streams
+* **Source processor**
 
- *  **Source processor**
+    - Has no upstream processors. *Reads* topic
 
-     - Has no upstream processors. *Reads* topic
+* **Sink processor**
 
- *  **Sink processor**
-
-     - Has no downstream processor. *Writes* topic
-
+    - Has no downstream processor. *Writes* topic
 
 Notes:
-
-
 
 ---
 
@@ -215,107 +178,54 @@ Notes:
 
 <img src="../../assets/images/kafka/State-Store.png" alt="State-Store.png" style="width:30%;float:right;"/><!-- {"left" : 6.81, "top" : 3.03, "height" : 3.58, "width" : 3.17} -->
 
+* Stateful operations like (Aggregations / Joins) require intermediate state storage
 
- * Stateful operations like (Aggregations / Joins) require intermediate state storage
+* Kafka Streams provides this storage at per node level
 
- * Kafka Streams provides this storage at per node level
-
- * Storage mediums
-     - In memory cache
-     - RocksDB (a very fast embedded DB, developed by Facebook)  
+* Storage mediums
+    - In memory cache
+    - RocksDB (a very fast embedded DB, developed by Facebook)  
      Stored on disk on each node
 
- * Tasks uses it to store and query data
+* Tasks uses it to store and query data
 
- * Every task can have one or more state stores
+* Every task can have one or more state stores
 
- * Fault tolerant
+* Fault tolerant
 
- * Automatic recovery
-
-
-Notes:
-
-
-
-
----
-
-## Modifying RocksDB Configuration
-
-* Setting cache size to 16 Meg
-
-```java
-public static class CustomRocksDBConfig implements RocksDBConfigSetter {
-   @Override
-   public void setConfig (final String storeName, final Options options,
-   final Map < String, Object > configs) {
-
-       BlockBasedTableConfig tableConfig = new
-org.rocksdb.BlockBasedTableConfig();
-
-     tableConfig.setBlockCacheSize(16 * 1024 * 1024L);
-     /*
-      * set more configuration here
-      */
-  }
-}
-Properties streamsSettings = new Properties();
-streamsSettings.put(
-  StreamsConfig.ROCKSDB_CONFIG_SETTER_CLASS_CONFIG,
-  CustomRocksDBConfig.class);
-```
-<!-- {"left" : 0, "top" : 2.13, "height" : 4.03, "width" : 10.25} -->
-
+* Automatic recovery
 
 Notes:
-
-Code Description
-
-Default rocks db configuration can be changed be creating a class implementing the RocksDBConfigSetter interface
-
-And set the configurations as setConfig method(overridden) .
-
-Add the class as a configuration to ROCKSDB_CONFIG_SETTER_CLASS_CONFIG
-
-
-
 
 ---
 
 ## Replication and Fault Tolerance
 
+* Kafka Partitions are replicated and highly available
 
- * Kafka Partitions are replicated and highly available
+* If Streams task fails
 
- * If Streams task fails
+    - Kafka will restart it on another running instance of the application
 
-     - Kafka will restart it on another running instance of the application
+* Stream data persisted to Kafka is still available in case application fails and wants to re-process it
 
- * Stream data persisted to Kafka is still available in case application fails and wants to re-process it
+* Local state stores are replicated as a topic called  **changelog**
 
- * Local state stores are replicated as a topic called  **changelog**
-
-     -  **Changelog** has log compaction enabled
+    - **Changelog** has log compaction enabled
 
 Notes:
-
-
 
 ---
 
 ## Overall Architecture
 
-
 <img src="../../assets/images/kafka/Overall-Architecture.png" alt="Overall-Architecture.png" style="width:50%;"/><!-- {"left" : 1.85, "top" : 1.64, "height" : 6.36, "width" : 6.55} -->
-
 
 Notes:
 
-Here we see a Streams application,
-It is consuming messages from input Q
-And producing messages to another output Q
-
+- Here we see a Streams application,
+- It is consuming messages from input Q
+- And producing messages to another output Q
 
 ---
 
@@ -323,30 +233,26 @@ And producing messages to another output Q
 
 ---
 
-
 ## Writing a Streams Application
 
 
- * Use Kafka Streams DSL
+* Use Kafka Streams DSL
 
-     - High level API
+    - High level API
 
-     - Provides most common required functions for transformation, grouping, aggregation
+    - Provides most common required functions for transformation, grouping, aggregation
 
- * Use Processor API
+* Use Processor API
 
-     - Low-level API
+    - Low-level API
 
-     - Create, connect processors in topology and interact with State Stores directly
+    - Create, connect processors in topology and interact with State Stores directly
 
 Notes:
-
-
 
 ---
 
 ## Kafka Streaming (Abbreviated)
-
 
 ```java
 // ** 1 : configure **
@@ -376,11 +282,27 @@ Runtime.getRuntime().addShutdownHook(new Thread(streams::close));
 ```
 <!-- {"left" : 0, "top" : 1.28, "height" : 4.98, "width" : 10.25} -->
 
-
 Notes:
 
+---
 
+## Lab: Kafka Streams Intro
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Getting started with Kafka Streams
+
+* **Approximate Time:**
+    - 10 - 15 mins
+
+* **Instructions:**
+     - Please follow: lab 7.1
+
+* **To Instructor:**
+    - Please demo this lab on screen and do it together with students
+
+Notes:
 
 ---
 
@@ -394,18 +316,13 @@ Notes:
 | groupBy      | Group the stream by key                                       |
 | count        | Count the stream                                              |
 
-
 <!-- {"left" : 0.25, "top" : 1.2, "height" : 3.19, "width" : 9.75} -->
 
 Notes:
 
-
-
-
 ---
 
 ## Kafka Streaming: ForEach
-
 
 ```java
 final StreamBuilder builder = new StreamBuilder();
@@ -422,12 +339,29 @@ clickstream.foreach(new ForeachAction < String, String >() {
 ```
 <!-- {"left" : 0, "top" : 1.36, "height" : 2.66, "width" : 10.25} -->
 
- * Using Java 8 Lambda functions
+* Using Java 8 Lambda functions
 
 Notes:
 
+---
 
+## Lab: Kafka Streams Foreach
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Kafka Streams: Foreach
+
+* **Approximate Time:**
+    - 10 - 15 mins
+
+* **Instructions:**
+     - Please follow: lab 7.2
+
+* **To Instructor:**
+    - Please demo this lab on screen and do it together with students
+
+Notes:
 
 ---
 
@@ -435,23 +369,15 @@ Notes:
 
 <img src="../../assets/images/kafka/Filter-01.png" style="width:70%;"/><!-- {"left" : 1.83, "top" : 1.28, "height" : 1.18, "width" : 6.59} -->
 
-
- * Applying a filter to a stream produces another stream
+* Applying a filter to a stream produces another stream
 
 <img src="../../assets/images/kafka/Kafka-Streaming-Filter.png" alt="Kafka-Streaming-Filter.png" style="width:70%;"/><!-- {"left" : 0.27, "top" : 3.7, "height" : 3.17, "width" : 9.71} -->
 
-
-
-
 Notes:
-
-
-
 
 ---
 
 ## Kafka Streaming  : Filter
-
 
 ```java
 final StreamBuilder builder = new StreamBuilder();
@@ -467,41 +393,49 @@ actionClickstream.print(Printed.toSysOut());
 ```
 <!-- {"left" : 0, "top" : 1.14, "height" : 2.43, "width" : 10.25} -->
 
-
 <img src="../../assets/images/kafka/Filter-02.png" alt="Filter-02.png" style="width:70%;"/><!-- {"left" : 0.46, "top" : 5.41, "height" : 1.02, "width" : 9.32} -->
-
 
 Notes:
 
+---
 
+## Lab: Kafka Streams Filter
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Kafka Streams Filter
+
+* **Approximate Time:**
+    - 10 - 15 mins
+
+* **Instructions:**
+     - Please follow: lab 7.3
+
+* **To Instructor:**
+    - Please demo this lab on screen and do it together with students
+
+Notes:
 
 ---
 
 ## Kafka Streaming: Map
 
+* Map  **transforms**  a stream into another stream
 
- * Map  **transforms**  a stream into another stream
+* KStream<key1, value1>  ->   KStream <key2, value2>
 
- * KStream<key1, value1>  ->   KStream <key2, value2>
-
- * Map action
+* Map action
 
 <img src="../../assets/images/kafka/Filter-02.png" alt="Filter-02.png" style="width:70%;"/><!-- {"left" : 0.69, "top" : 3.42, "height" : 0.97, "width" : 8.87} -->
-
-
 
 <img src="../../assets/images/kafka/Kafka-Streaming-Map.png" alt="Kafka-Streaming-Map.png" style="width:70%;"/><!-- {"left" : 1.06, "top" : 5.33, "height" : 2.83, "width" : 8.14} -->
 
 Notes:
 
-
-
-
 ---
 
 ## Kafka Streaming: Map
-
 
 ```java
 final StreamsBuilder builder = new StreamsBuilder();
@@ -525,47 +459,71 @@ actionStream.print(Printed.toSysOut());
 ```
 <!-- {"left" : 0, "top" : 1.2, "height" : 4.34, "width" : 10.25} -->
 
-
-
 Notes:
 
+---
 
+## Lab: Kafka Streams Map
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Kafka Streams: Map
+
+* **Approximate Time:**
+    - 10 - 15 mins
+
+* **Instructions:**
+     - Please follow: lab 7.4
+
+* **To Instructor:**
+    - Please demo this lab on screen and do it together with students
+
+Notes:
 
 ---
 
 ## Kafka Streaming: GroupBy
 
+* GroupBy will aggregate KStream by key
 
- * GroupBy will aggregate KStream by key
-
- * Think of it like 'group by' operator in SQL
-
+* Think of it like 'group by' operator in SQL
 
 <img src="../../assets/images/kafka/Group.png" alt="Group.png" style="width:70%;"/><!-- {"left" : 0.49, "top" : 3.28, "height" : 1.02, "width" : 9.27} -->
 
-
-
 <img src="../../assets/images/kafka/KafkaStreaming-GroupBy.png" alt="KafkaStreaming-GroupBy.png" style="width:70%;"/><!-- {"left" : 0.31, "top" : 5.32, "height" : 3.13, "width" : 9.63} -->
-
-
-
 
 Notes:
 
+---
 
+## Lab: Kafka Streams Foreach
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Kafka Streams: Foreach
+
+* **Approximate Time:**
+    - 10 - 15 mins
+
+* **Instructions:**
+     - Please follow: lab 7.2
+
+* **To Instructor:**
+    - Please demo this lab on screen and do it together with students
+
+Notes:
 
 ---
 
 ## KStreams vs. KTables
 
-
- *  **Kstream**
+* **Kstream**
 
    - Each record/message represents an independent entity/event irrespective of its key.
 
- *  **Ktable**
+* **Ktable**
 
    - Messages with same key are treated as updates of previous message.
 
@@ -588,7 +546,7 @@ KStream < byte[], String > upperCaseLines = textLines.mapValues(String::toUpperC
 ```
 <!-- {"left" : 0, "top" : 1.74, "height" : 1.83, "width" : 10.25} -->
 
-```java 
+```java
 
 // ------ KTable Example ----
 
@@ -612,12 +570,9 @@ KTable < String, Long > wordCounts = textLines.flatMapValues(
 
 Notes:
 
-
-
 ---
 
 ## Kafka Streams: GroupBy
-
 
 ```java
 final StreamsBuilder builder = new StreamsBuilder();
@@ -640,13 +595,9 @@ actionCount.toStream().print(Printed.toSysOut());
 
 Notes:
 
-
-
-
 ---
 
 ## Wordcount in Kafka Streams
-
 
 ```java
 // Serializers/deserializers (serde) for String and Long types
@@ -675,105 +626,67 @@ wordCounts.toStream().to("topic1-out", Produced.with(Serdes.String(), Serdes.Lon
 
 <!-- {"left" : 0, "top" : 1.28, "height" : 3.95, "width" : 10.25} -->
 
-
 Notes:
-
-
-
-
----
-
-## Lab 7: Streams Labs
-
-
- *  **Overview:** Create and use Kafka streams
-
- *  **Builds on previous labs:**
-
- *  **Approximate Time:** 30 - 40 mins
-
- *  **Instructions:**
-
-     - Please follow: lab 7.1 - 7.5
-
- *  **To Instructor:**
-
-
-Notes:
-
-
-
 
 ---
 
 ## Windowing Operations
 
+* Windowing is a common function in event processing
 
- * Windowing is a common function in event processing
-
-     - What is the average CPU utilization?
+    - What is the average CPU utilization?
 
         * Over the last 5 minutes?
 
- * Create groups of records with the  *same key* for aggregations or joins into " **windows** "
+* Create groups of records with the  *same key* for aggregations or joins into " **windows** "
 
 <img src="../../assets/images/kafka/Windowing-Operations.png" alt="Windowing-Operations.png" style="width:70%;"/><!-- {"left" : 1.19, "top" : 4.64, "height" : 3.17, "width" : 7.88} -->
 
-
 Notes:
-
-
 
 ---
 
 ## Windowing Parameters
 
+* Retention Period
 
- * Retention Period
+    - How long to wait for late-arriving records for a given window
 
-     - How long to wait for late-arriving records for a given window
+* Advance Period/Interval
 
- * Advance Period/Interval
+    - How much to move the window forward relative to the last one
 
-     - How much to move the window forward relative to the last one
+* Window Size
 
- * Window Size
+    - Size of the window i.e. how long is the window in time units
 
-     - Size of the window i.e. how long is the window in time units
+* Maintain Period
 
- * Maintain Period
-
-     - How long to keep the window alive
+    - How long to keep the window alive
 
 Notes:
-
-
 
 ---
 
 ## Windowing Example
 
+* TimeWindows.of("cpu-window", 60*1000)
 
- * TimeWindows.of("cpu-window", 60*1000)
+    - Returns a time window of 1 min.
 
-     - Returns a time window of 1 min.
+    - Advance period of 1 min.
 
-     - Advance period of 1 min.
+    - Window maintained for 1 day
 
-     - Window maintained for 1 day
+* Modify various parameters using functions in TimeWindows class
 
- * Modify various parameters using functions in TimeWindows class
-
- * https://kafka.apache.org/20/javadoc/org/apache/kafka/streams/kstream/TimeWindows.html
+* https://kafka.apache.org/20/javadoc/org/apache/kafka/streams/kstream/TimeWindows.html
 
 Notes:
-
-
 
 ---
 
 ## Counts visits per hour
-
 
 ```java
 KStreamBuilder builder = new KStreamBuilder();
@@ -791,36 +704,29 @@ groupedStream.count(TimeWindows.of(60 * 60 * 1000), "hourlyVisitCount");
 ```
 <!-- {"left" : 0, "top" : 1.3, "height" : 2.42, "width" : 10.25} -->
 
-
 Notes:
-
-
 
 ---
 
-## Lab 7: Windowing Lab
+## Lab: Kafka Streams Windows
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- *  **Overview:** Create time windows and aggregate data
+* **Overview:**
+    - Kafka Streams: Windows
 
- *  **Builds on previous labs:**
+* **Approximate Time:**
+    - 10 - 15 mins
 
- *  **Approximate Time:** 30 - 40 mins
-
- *  **Instructions:**
-
+* **Instructions:**
      - Please follow: lab 7.6
 
- *  **To Instructor:**
-
+* **To Instructor:**
+    - Please demo this lab on screen and do it together with students
 
 Notes:
 
-
-
-
 ---
-
 
 ## Review and Q&A
 
@@ -831,15 +737,49 @@ Notes:
 
 * Any questions?
 
-
-
 ---
 
 # Backup Slides
 
-
 ---
 
+## Modifying RocksDB Configuration
+
+* Setting cache size to 16 Meg
+
+```java
+public static class CustomRocksDBConfig implements RocksDBConfigSetter {
+   @Override
+   public void setConfig (final String storeName, final Options options,
+   final Map < String, Object > configs) {
+
+       BlockBasedTableConfig tableConfig = new
+org.rocksdb.BlockBasedTableConfig();
+
+     tableConfig.setBlockCacheSize(16 * 1024 * 1024L);
+     /*
+      * set more configuration here
+      */
+  }
+}
+Properties streamsSettings = new Properties();
+streamsSettings.put(
+  StreamsConfig.ROCKSDB_CONFIG_SETTER_CLASS_CONFIG,
+  CustomRocksDBConfig.class);
+```
+<!-- {"left" : 0, "top" : 2.13, "height" : 4.03, "width" : 10.25} -->
+
+Notes:
+
+Code Description
+
+Default rocks db configuration can be changed be creating a class implementing the RocksDBConfigSetter interface
+
+And set the configurations as setConfig method(overridden) .
+
+Add the class as a configuration to ROCKSDB_CONFIG_SETTER_CLASS_CONFIG
+
+---
 
 ## Why Streaming from Database (CDC)?
 
@@ -854,9 +794,4 @@ Notes:
 * Event Sourcing (CQRS)
 * ‫Totally ordered collection of events to asynchronously update the read-only views while writes can be recorded as normal
 
-
 Notes:
-
-
-
-
