@@ -1,1 +1,0 @@
-../course-outlines/kafka-intro-2days-outline.md

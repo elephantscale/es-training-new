@@ -17,7 +17,7 @@ About-Kafka-Class-3-days.md
 Kafka-Intro.md
 Kafka-API.md
 Kafka-Streams.md
-KSQL.md
+#KSQL.md
 Kafka-Connect.md
 Kafka-Admin.md
 Kafka-Monitoring.md
