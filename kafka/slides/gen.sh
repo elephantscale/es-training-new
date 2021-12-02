@@ -8,17 +8,17 @@
 ##	./gen.sh  pptx pdf
 
 ## 2 days 
-pandoc ../../course-outlines/kafka-intro-2days-outline.md  -o ../kafka-intro-2days-outline.docx
-pandoc ../../course-outlines/kafka-intro-2days-outline.md  -o ../kafka-intro-2days-outline.pdf
+(cd ../../course-outlines; pandoc kafka-intro-2days-outline.md  -o ../kafka/kafka-intro-2days-outline.docx)
+(cd ../../course-outlines;  pandoc kafka-intro-2days-outline.md  -o ../kafka/kafka-intro-2days-outline.pdf)
 
 ## 3 days 
-pandoc ../kafka-intro-3days-outline.md  -o ../kafka-intro-3days-outline.docx
-pandoc ../kafka-intro-3days-outline.md  -o ../kafka-intro-3days-outline.pdf
+(cd ../../course-outlines; pandoc kafka-intro-3days-outline.md  -o ../kafka/kafka-intro-3days-outline.docx)
+(cd ../../course-outlines; pandoc kafka-intro-3days-outline.md  -o ../kafka/kafka-intro-3days-outline.pdf)
 
 
 ## 4 days
-pandoc ../kafka-intro-4days-outline.md  -o ../kafka-intro-4days-outline.docx
-pandoc ../kafka-intro-4days-outline.md  -o ../kafka-intro-4days-outline.pdf
+#pandoc ../kafka-intro-4days-outline.md  -o ../kafka-intro-4days-outline.docx
+#pandoc ../kafka-intro-4days-outline.md  -o ../kafka-intro-4days-outline.pdf
 
 ## -d will delete existing files in assembly  folder
 ## 4 days

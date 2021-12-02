@@ -152,45 +152,30 @@ Notes:
 
 ---
 
-## Streaming Processing Model
+## Event Based Vs. Batch
+
+<img src="../../assets/images/streaming/event-vs-batch-1.png"  style="width:70%;"/><!-- {"left" : 1.17, "top" : 1.94, "height" : 5.19, "width" : 7.91} -->
+
+---
+
+## Event Based Vs. Batch
 
 <img src="../../assets/images/streaming/Streaming-proccessing-model.png"  style="width:35%;float:right;"/><!-- {"left" : 2.44, "top" : 6.32, "height" : 2.46, "width" : 5.38} -->
 
-  * Two major modes:
-    - Event based , Micro Batch
-
-  * Event Based:
+* Event Based:
     - Events are processed, individually,  as they come in
     - Usually low latency
     - Frameworks: Storm, Flink, Nifi, Samza
 
-  * Micro-Batch
+* Micro-Batch
     - Events arrived during a particular time frame (5 secs) are processed as a batch
     - Slightly higher latency (due to batching)
+    - Better throughput
     - Frameworks: Spark Streaming
 
-
-
-
+* **Instructor: please explain the difference between 'latency' the 'throughput'**
 
 Notes:
-
-
-
-
----
-## Event Based Vs. Batch
-
-
-<img src="../../assets/images/streaming/event-vs-batch-1.png"  style="width:70%;"/><!-- {"left" : 1.17, "top" : 1.94, "height" : 5.19, "width" : 7.91} -->
-
-
-
-
-
-Notes:
-
-
 
 ---
 
@@ -259,8 +244,18 @@ Notes:
 
 Notes:
 
+---
 
+## Class Discussion: Handling Duplicate Events
 
+* **Question:  First, we need a way to uniquely identify and track events through the pipeline. How can we do this?**
+    - Discuss a few options
+    - Can a unique id created at event source?  How?
+    - If events are coming into our system without a unique identifier, how can we deal with this?
+
+* **Question: Given events have unique event id, how can we avoid duplicate processing?**
+
+Notes:
 
 ---
 
@@ -403,6 +398,28 @@ Notes:
 
 ---
 
+## Class Discussion: Processing Order
+
+<img src="../../assets/images/streaming/event-time-vs-arrival-time-2.png" style="width:40%;float:right;"/><!-- {"left" : 2.12, "top" : 5.02, "height" : 3.42, "width" : 6.01} -->
+
+* What are some applications where **out-of-order** processing is OK?
+
+* What are some applications, we must process events **in-order**
+
+Notes:
+
+* Out-of-order examples
+    - customer support tickets
+    - sending out emails
+    - sending out promotional offers
+
+* In-order processing
+    - credit card transactions
+    - bank deposits / widthdrawals
+    - Online order processing
+
+---
+
 ## Back Pressure
 
 <img src="../../assets/images/streaming/3rd-party/Back-Pressure.png" alt="Back-Pressure.png" style="width:45%;float:right;"/><!-- {"left" : 6.91, "top" : 1.55, "height" : 1.76, "width" : 2.98} -->
@@ -498,6 +515,8 @@ Notes:
 
 ## Streaming Frameworks
 
+* This is just a quick comparison of a few frameworks.  For more details see 'Appendix'
+
 
 | Feature              | Storm                                             | Spark Streaming | Flink                            | NiFi        |
 |----------------------|---------------------------------------------------|-----------------|----------------------------------|-------------|
@@ -538,16 +557,9 @@ Notes:
 
 ## Lambda Architecture
 
-<img src="../../assets/images/streaming/Lambda-Architecture-1.png" style="width:85%;"/><!-- {"left" : 1.02, "top" : 2.44, "height" : 4.76, "width" : 8.21} -->
+<img src="../../assets/images/streaming/Lambda-Architecture-1.png" style="width:50%;float:right;"/><!-- {"left" : 1.02, "top" : 2.44, "height" : 4.76, "width" : 8.21} -->
 
-Notes:
-
----
-
-## Lambda Architecture
-
-<img src="../../assets/images/streaming/Lambda-Architecture-1.png" style="width:55%;float:right;"/><!-- {"left" : 1.02, "top" : 2.44, "height" : 4.76, "width" : 8.21} -->
-
+  * [Lambda architecture](https://en.wikipedia.org/wiki/Lambda_architecture) was developed at Twitter to deal with massive amount of data they get
   * All new data is sent to **both batch layer and  speed layer**
   * **Batch layer**
     - Holds master data set (immutable , append-only)

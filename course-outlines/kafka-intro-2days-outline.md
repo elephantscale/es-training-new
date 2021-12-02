@@ -2,6 +2,8 @@
 
 Dec 01, 2020
 
+![](../assets/images/logos/kafka-logo-2.png)
+
 ## Overview
 
 Apache Kafka has emerged as a popular messaging component for streaming platforms. This course will introduce Kafka to students; we will learn about Kafka features and learn how to use it for streaming data.

@@ -141,8 +141,8 @@ KafkaProducer < Integer, String > producer = new KafkaProducer<>(props);
 *  **bootstrap.servers:** Specify the kafka brokers to connect to.
     -Best practice, specify more than one broker to connect to, so there is no single point of failure
 
-```
-props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "broker1:9092, broker2:9092");
+```java
+props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "broker1:9092,broker2:9092");
 ```
 
 
@@ -195,8 +195,8 @@ props.put("boostrap.servers", "localhost:9092");
 props.put("client.id", "SimpleProducer");
 props.put("acks", "all");
 props.put("retries", 0);
-props.put("batch.size", 16384);  // 16k
-props.put("linger.ms", 1);
+props.put("batch.size", 1000);
+props.put("linger.ms", 100);  // batch timeout 100ms
 props.put("buffer.memory", 33554432); // 32 M
 props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class.getName());
 props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -598,7 +598,7 @@ Integer key = new Integer(1);
 String value = "Hello world";
 ProducerRecord < Integer, String > record =
 		new ProducerRecord<> (topic, key, value);
-producer.send(record); // <-- fire away
+producer.send(record); // <-- fire away, not waiting for results
 ```
 <!-- {"left" : 0, "top" : 1.19, "height" : 1.8, "width" : 8.68} -->
 
@@ -609,7 +609,6 @@ producer.send(record); // <-- fire away
  * Send() returns a Java Future object (that we are not checking)
  * Some messages can be dropped
  * Use cases:
-
      - Metrics data
      - Low important data
 
@@ -628,34 +627,31 @@ Notes:
 ProducerRecord < Integer, String > record =
 	new ProducerRecord<> (topic, key, value);
 
-Future < RecordMetadata > future = producer.send(record); // <-
-RecordMetadata recordMetaData = future.get(); // <-
-
+RecordMetadata recordMetaData = producer.send(record).get(); // <-- wait for result
 
 ```
 <!-- {"left" : 0, "top" : 1.45, "height" : 1.5, "width" : 10.25} -->
 
 <br/>
 
- * Send() returns a Java Future object
+* `get` method is a waiting call
 
- * FutureObject.get() returns  a RecordMetaData
-
- * Inspect RecordMetaData for success / error
-
+* Inspect `RecordMetaData` for success / error
 
 Notes:
-
-
-
 
 ---
 
 ## Producer Send Mode: Async
 
-
 ```java
-class KafkaCallback implements Callback {
+import org.apache.kafka.clients.producer.Callback;
+
+public class Producer implements Callback { // <-- implement callback
+
+  // .. normal producer code
+
+  // here is the call back function
   @Override
   public void onCompletion(RecordMetadata meta, Exception ex) {
     if (ex != null) // error
@@ -666,7 +662,7 @@ class KafkaCallback implements Callback {
   }
 }
 ...
-producer.send(record, new KafkaCallback());  // <-
+producer.send(record, this);  // <-- supply callback
 ```
 
 <!-- {"left" : 0, "top" : 1.09, "height" : 2.84, "width" : 9.21} -->
@@ -674,15 +670,25 @@ producer.send(record, new KafkaCallback());  // <-
 <br/>
 <br/>
 
-* Kafka will callback with meta or exception  (only one of them will be non-Null)
-
- * Note : This code is for demonstration purposes only.  Do not create new callback objects in production.
-
-     - You could be creating millions of objects
-     - Can induce intense garbage collection
+* Kafka will callback with meta or exception
 
 Notes:
 
+---
+
+## Producer Send Modes
+
+```java
+
+// fire and forget
+producer.send(record);
+
+// sync
+producer.send(record).get();
+
+// async
+producer.send(record, this); // producer has callback implemented
+```
 
 
 
@@ -716,23 +722,21 @@ Notes:
 
 ---
 
-
 ## Compression
-
-<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
 * Benefits of compression
   - Reduces the data size goes on network --> faster throughput
   - Reduces data footprint on disk --> less data to write to disk -> faster
-    
+
 * Compression is performed on a batch
   - Larger batch size -> better compression
 
 * Kafka API will automatically
-  - Compress messages on producer side
-  - De-compress messages on consumer side
-  - Messages remain in compressed state in partitions
+  - On Producer: Compress messages before sending on wire
+  - On Broker: Messages remain in compressed state in partitions
+  - On Consumer: De-compress messages on the fly
 
+<img src="../../assets/images/kafka/compression-1.png"  style="width:70%;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 ---
 
 ## Compression
@@ -814,18 +818,9 @@ KafkaProducer<String, String> producer = new KafkaProducer<>(props);
 
  *  **To Instructor:**
 
-
 Notes:
 
-
-
-
 ---
-
-# Advanced Consumers
-
----
-
 
 ## Advanced Consumer Properties
 
@@ -849,103 +844,17 @@ Auto.offset.reset other valid value is "earliest" - meaning read entire partitio
 
 ---
 
-## Consumer Partition Assignment
+## Partition Assignment Schemes
 
+* Range assignment (default)
+    - `partition.assignment.strategy = RangeAssignor`
 
- * Kafka can have multiple topics
+<img src="../../assets/images/kafka/partition-range-1.png" style="width:45%;"/><!-- {"left" : 0.5, "top" : 3.43, "height" : 3.82, "width" : 9.26} -->
 
- * Each topic can have multiple partitions
+* Random assignment
+    - `partition.assignment.strategy = RoundRobinAssignor`
 
- * Consumers belong to "Consumer Groups"
-
- * A consumer can read from multiple topics
-
- * How are partitions assigned to consumers?
-
-     - Based on "partition.assignment.strategy"
-
-     - Default value is RangeAssignor
-
-Notes:
-
-
-
----
-
-## Range Partition Assignment - 1 Topic
-
-
- * Default assignment
-
- * Each consumer is assigned a range - on a per-topic basis
-
-<img src="../../assets/images/kafka/partition-range-1.png" style="width:65%;"/><!-- {"left" : 0.5, "top" : 3.43, "height" : 3.82, "width" : 9.26} -->
-
-
-Notes:
-
-https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignment-strategy-799fdf15d3ab
-
-
-
----
-
-## Range Partitions - 2 Topics
-
-
-<img src="../../assets/images/kafka/partition-range-2.png" style="max-width:65%;"/><!-- {"left" : 1.02, "top" : 1.32, "height" : 7.01, "width" : 8.21} -->
-
-
-Notes:
-
-https://medium.com/@anyili0928/what-i-have-learned-from-kafka-partition-assignment-strategy-799fdf15d3ab
-
-
-
----
-
-## Range Partitions Problems
-
-
- * Drawbacks
-
-     - Partitions assigned to consumers on a per-topic basis
-
-     - Consumers can read from multiple topics
-
-     - Imbalance of load
-
-Notes:
-
-
-
----
-
-## Round-robin Assignment
-
-
- *  Set partition.assignment.strategy to RoundRobinAssignor
-
-<img src="../../assets/images/kafka/partition-range-3.png"  style="max-width:70%;"/><!-- {"left" : 0.79, "top" : 3.31, "height" : 3.57, "width" : 8.66} -->
-
-
-Notes:
-
-
-
-
----
-
-## Round-robin Assignment - 2 Topics
-
-
-<img src="../../assets/images/kafka/partition-range-4.png" style="max-width:65%;"/><!-- {"left" : 1.02, "top" : 1.39, "height" : 6.86, "width" : 8.21} -->
-
-
-Notes:
-
-
-
+<img src="../../assets/images/kafka/partition-range-3.png"  style="width:40%;"/><!-- {"left" : 0.79, "top" : 3.31, "height" : 3.57, "width" : 8.66} -->
 
 ---
 

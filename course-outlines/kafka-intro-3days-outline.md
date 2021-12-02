@@ -106,13 +106,6 @@ Lectures and hands on labs. (50%   50%)
 * Labs:
   - Kafka Streaming APIs
 
-### Confluent Kafka Platform
-
-* Introduction to Confluent  platform
-* KSQL
-* KSQLdb
-* Avro Schema Registry
-
 ### Kafka Connect
 
 * Connect ecosystem
