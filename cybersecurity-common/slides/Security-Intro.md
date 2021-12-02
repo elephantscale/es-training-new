@@ -159,6 +159,7 @@
 
 ## Pieces of advice
 
+* For the manager, for the developer
 1. Become a security champion
 2. Threat modeling
 3. Tabletop exercises
@@ -187,7 +188,7 @@
 
 ## Contingency plans
 
-* Hacker advice:
+* Hacker advice to victims:
   * Don’t hire help! Or else it will go even worse for you
   * __Do you believe it?__
 
