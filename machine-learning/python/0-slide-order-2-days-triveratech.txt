@@ -1,0 +1,41 @@
+## To assemble md slides
+##   ./gen-custom.sh
+
+## Course outline : Introduction to Artificial Intelligence (AI) and Machine Learning (ML) _Course Outline_TR Edit.docx
+
+## About
+About-AI-Machine-Learning-Class-2-days-TriveraTech.md About-AI-Machine-Learning-Class-2-days.md
+
+## Resources / References
+../generic/ML-Resources.md
+
+## high level overview
+../generic/Machine-Learning-Primer.md
+
+## Hands on starts
+../generic/Labs-Prep.md
+
+
+## ML
+../generic/Data-Exploration.md
+../generic/ML-Concepts-All.md
+
+../generic/Feature-Engineering.md
+
+../../python/slides/PYTHON-Sklearn2.md
+
+
+## Algorithms
+Regressions-Python.md
+Classifications-Python.md
+Unsupervised-Python.md
+
+## Recommendations
+../generic/Recommendations-Generic.md
+
+## Spark-ML
+../spark/Spark-ML-Overview.md
+
+
+## Final summary
+../generic/Algorithm-Summary-details.md
