@@ -438,11 +438,86 @@ Notes:
 
  * Other possibility, mean based: (x - mean) / range
 
-     - Mean = 43.14
-
+     - Mean = 43.14G
+G
      - [ (30 - 43.14) / 48, (45 - 43.14) / 48, .... (22 - 43.14) / 48 ] = [ -0.274,   0.039, 0.143, 0.560, 0.351, 0.378, 0.440 ]
 
 
 
 
 Notes:
+
+---
+
+
+## Quantization
+
+ * Sometimes we do want the ML model to interpret categorical variables
+    - Grades:  A > B > C > D
+    - Domain specific meaning
+ * For example, colors in physics has a numeric meaning:
+    - Red: 480 THz frequency of light
+    - Green: 600 THz
+ * This might allow our models to make inferences
+    - e.g., Orange is close to red on the spectrum, but more distant from violet.
+
+<img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:50%;"/><!-- {"left" : 1.83, "top" : 5.77, "height" : 2.79, "width" : 6.59} -->
+
+
+
+
+Notes:
+
+Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spectrum-color-frequency.html
+
+
+---
+
+
+## Scaling Example
+
+<br/>
+
+```python
+import pandas as pd
+data = pd.DataFrame ( { 'age' : [33,45,42,35,60],
+                        'income' : [40000,80000,120000,32000,110000]
+                    })
+## z-score scaling
+data_scaled_z =  (data - data.mean()) / data.std()
+## min-max scaling
+data_scaled_mm = (data - data.min()) / (data.max() - data.min())
+```
+<!-- {"left" : 0, "top" : 1.12, "height" : 2.03, "width" : 10.25} -->
+
+- Here our original data (left) , z-scaling (middle) is on a uniform distribution;   and min-max scale (right) is between 0 to 1.0
+
+<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.14, "top" : 5.25, "height" : 3.46, "width" : 3.42} --> <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 6.49, "top" : 5.38, "height" : 3.46, "width" : 3.62} -->
+
+---
+
+## Scaling Example 2
+
+```python
+import pandas as pd
+
+data = pd.DataFrame ( { 'age' : [33,45,42,35,60],
+                        'income' : [40000,80000,120000,32000,110000],
+                        'home_owner' : ['no', 'yes', 'no', 'yes', 'yes' ],
+                        'marital_status' : ['single', 'married', 'divorced', 'single', 'married'],
+                        'approved' : ['no', 'yes', 'yes', 'no', 'yes']
+                    })
+data
+
+data['age_z'] = (data['age'] - data['age'].mean()) / data['age'].std()
+data['income_z'] = (data['income'] - data['income'].mean()) / data['income'].std()
+data
+```
+<!-- {"left" : 0, "top" : 1.28, "height" : 2.22, "width" : 10.25} -->
+
+
+<img src="../../assets/images/machine-learning/scaling-1.png" style="width:35%;float:left;"/><!-- {"left" : 0.17, "top" : 4.82, "height" : 1.97, "width" : 4.64} --><img src="../../assets/images/machine-learning/scaling-2.png" style="width:50%;float:right;"/><!-- {"left" : 4.81, "top" : 4.92, "height" : 2.1, "width" : 5.3} -->
+
+Notes:
+
+---

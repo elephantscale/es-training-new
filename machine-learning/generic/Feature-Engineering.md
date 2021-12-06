@@ -312,29 +312,6 @@ Notes:
 
 ---
 
-## Quantization
-
- * Sometimes we do want the ML model to interpret categorical variables
-    - Grades:  A > B > C > D
-    - Domain specific meaning
- * For example, colors in physics has a numeric meaning:
-    - Red: 480 THz frequency of light
-    - Green: 600 THz
- * This might allow our models to make inferences
-    - e.g., Orange is close to red on the spectrum, but more distant from violet.
-
-<img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:50%;"/><!-- {"left" : 1.83, "top" : 5.77, "height" : 2.79, "width" : 6.59} -->
-
-
-
-
-Notes:
-
-Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spectrum-color-frequency.html
-
-
----
-
 ## Generating New Dimensions
 
  * Problem: Comparing house prices
@@ -392,8 +369,8 @@ Notes:
 
 <img src="../../assets/images/machine-learning/scaling-1.png" style="width:50%;"/><!-- {"left" : 1.5, "top" : 5.43, "height" : 3.09, "width" : 7.26} -->
 
-
 ---
+
 ## Scaling Approaches
 
 <img src="../../assets/images/formulas-equations/scaling-z-score-1.png" style="width:25%;float:right;"/><!-- {"left" : 7.06, "top" : 1.26, "height" : 2.16, "width" : 2.89} -->
@@ -406,124 +383,69 @@ Notes:
 
 <img src="../../assets/images/formulas-equations/scaling-min-max-1.png" style="width:25%;float:right;"/><!-- {"left" : 5.54, "top" : 4.08, "height" : 1.48, "width" : 4.63} -->
 
-
 * Min-Max Scaling
     - Scale between a range 0 to 1 typically (or other ranges like 1 to 100)
 
 * Standardized with zero mean and standard deviation of one
 
-
 Notes:
 
 ---
 
-## Scaling Example
-
-<br/>
+## Scaling Using MinMaxScaler
 
 ```python
 import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+
 data = pd.DataFrame ( { 'age' : [33,45,42,35,60],
                         'income' : [40000,80000,120000,32000,110000]
                     })
-## z-score scaling
-data_scaled_z =  (data - data.mean()) / data.std()
-## min-max scaling
-data_scaled_mm = (data - data.min()) / (data.max() - data.min())
+
+# create scaler, between 0 and 1
+scaler = MinMaxScaler(feature_range=(0, 1))
+
+# scale data
+normalized = scaler.fit_transform(data)
+
+# inverse transform
+inverse = scaler.inverse_transform(normalized)
 ```
-<!-- {"left" : 0, "top" : 1.12, "height" : 2.03, "width" : 10.25} -->
 
-
-
-- Here our original data (left) , z-scaling (middle) is on a uniform distribution;   and min-max scale (right) is between 0 to 1.0
-
-<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.14, "top" : 5.25, "height" : 3.46, "width" : 3.42} --> <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 6.49, "top" : 5.38, "height" : 3.46, "width" : 3.62} -->
-
-
-
+<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} -->  <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 6.49, "top" : 5.38, "height" : 3.46, "width" : 3.62} -->
 
 ---
-## Scaling Example 2
+
+## Scaling Using StandardScaler
 
 ```python
 import pandas as pd
-
-data = pd.DataFrame ( { 'age' : [33,45,42,35,60],
-                        'income' : [40000,80000,120000,32000,110000],
-                        'home_owner' : ['no', 'yes', 'no', 'yes', 'yes' ],
-                        'marital_status' : ['single', 'married', 'divorced', 'single', 'married'],
-                        'approved' : ['no', 'yes', 'yes', 'no', 'yes']
-                    })
-data
-
-data['age_z'] = (data['age'] - data['age'].mean()) / data['age'].std()
-data['income_z'] = (data['income'] - data['income'].mean()) / data['income'].std()
-data
-```
-<!-- {"left" : 0, "top" : 1.28, "height" : 2.22, "width" : 10.25} -->
-
-
-<img src="../../assets/images/machine-learning/scaling-1.png" style="width:35%;float:left;"/><!-- {"left" : 0.17, "top" : 4.82, "height" : 1.97, "width" : 4.64} --><img src="../../assets/images/machine-learning/scaling-2.png" style="width:50%;float:right;"/><!-- {"left" : 4.81, "top" : 4.92, "height" : 2.1, "width" : 5.3} -->
-
-
-
-Notes:
-
----
-
-## Scaling Example 3: Using SciKit
-
-* Uses **`MinMaxScaler`**
-
-```python
 from sklearn.preprocessing import MinMaxScaler
 
-# load data
-data = ...
+data = pd.DataFrame ( { 'age' : [33,45,42,35,60],
+                        'income' : [40000,80000,120000,32000,110000]
+                    })
 
-# create scaler
-scaler = MinMaxScaler()
+scaler = StandardScaler()
 
-# fit scaler on data
-scaler.fit(data)
-# apply transform
-normalized = scaler.transform(data)
-
-# or fit and transform in one step
+# scale data
 normalized = scaler.fit_transform(data)
 
 # inverse transform
 inverse = scaler.inverse_transform(normalized)
 ```
 
+<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.14, "top" : 5.25, "height" : 3.46, "width" : 3.42} --> 
 
 ---
 
-## Scaling Example 4: Using SciKit
+## Comparing Scalers
 
-* Uses **`StandardScaler`**
+* Here our original data (left) , z-scaling / standard scaling (middle) is on a uniform distribution;   and min-max scale (right) is between 0 to 1.0
 
-```python
-from sklearn.preprocessing import StandardScaler
+* After standard scaling, some values would be negative!  That is OK!
 
-# load data
-data = ...
-
-# create scaler
-scaler = StandardScaler()
-
-# fit scaler on data
-scaler.fit(data)
-# apply transform
-normalized = scaler.transform(data)
-
-# or fit and transform in one step
-normalized = scaler.fit_transform(data)
-
-# inverse transform
-inverse = scaler.inverse_transform(normalized)
-```
-
+<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.14, "top" : 5.25, "height" : 3.46, "width" : 3.42} --> <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 6.49, "top" : 5.38, "height" : 3.46, "width" : 3.62} -->
 
 ---
 
@@ -541,6 +463,7 @@ inverse = scaler.inverse_transform(normalized)
 
 
 Notes:
+
 
 ---
 
