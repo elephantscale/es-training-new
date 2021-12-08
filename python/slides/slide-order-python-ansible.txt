@@ -1,5 +1,5 @@
 ## to generate slides
-##     $    $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
+##     $    $ES_HOME/utils/presentations/slides-assembler.sh   slide-order-python-ansible.txt
 
 #day 1
 About-Python-Ansible.md
