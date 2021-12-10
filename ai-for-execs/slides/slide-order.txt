@@ -3,4 +3,7 @@
 #
 AI-Primer-1.md
 AI-Primer-2.md
+AI-for-Image-Processing.md
+AI-for-Text-Processing.md
+#../../ai-nlp/slides/NLP-Intro.md
 AI-Primer-3.md

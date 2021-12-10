@@ -1,4 +1,5 @@
 # AI Primer - Part 1
+
 ---
 
 ## Lesson Objectives
@@ -532,14 +533,13 @@ Have fun :-)
 
 <img src="../../assets/images/deep-learning/3rd-party/clarifai-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%" /><!-- {"left" : 1.77, "top" : 3.45, "height" : 4.29, "width" : 6.71} -->
 
-
 Notes:  
+
 https://clarifai.com/demo
 
 ---
 
 # What is AI
-
 
 ---
 
@@ -549,17 +549,51 @@ https://clarifai.com/demo
 
 ---
 
+## Expert Systems
+
+* **An expert system is a computer system emulating the decision-making ability of a human expert**
+
+* They reason through scenarios using the built-in knowledge
+
+* Expert systems are **rule based**
+
+* Rules are **static** and created by domain experts
+
+<img src="../../assets/images/AI/expert-systems-1.jpg"  style="width:65%;"/><!-- {"left" : 0.78, "top" : 4.13, "height" : 3.28, "width" : 8.7} -->
+
+---
+
+## Expert Systems vs. Machine Learning
+
+| Expert System                                  | Machine Learning                                                |
+|------------------------------------------------|-----------------------------------------------------------------|
+| Rules are statically created by domain experts | Rules are 'learned' from data                                   |
+| Uses rules / if-then to provide answers        | Uses models created from learning                               |
+| Updating rules is an involved process          | Newer/better models can be created by training on more/new data |
+| Not very scalable                              | Scales well with data                                           |
+| Popular in 1980s                               | Currently popular approach                                      |
+
+<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" alt="Rule-Based-Systems.png" style="width:55%;"/><!-- {"left" : 0.78, "top" : 4.13, "height" : 3.28, "width" : 8.7} -->
+
+
+Notes:
+
+
+---
+
 # A Brief History of AI
 
 
 [../../machine-learning/generic/AI-brief-history.md](../../machine-learning/generic/AI-brief-history.md)
 
 ---
+
 # AI Vocabulary
 
 [../../machine-learning/generic/AI-vocabulary.md](../../machine-learning/generic/AI-vocabulary.md)
 
 ---
+
 ## Review and Q&A
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->

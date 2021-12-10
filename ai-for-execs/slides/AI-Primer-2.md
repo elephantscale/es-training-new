@@ -73,39 +73,14 @@ https://www.vox.com/the-goods/2018/10/29/18038946/art-algorithm
 
 http://obvious-art.com/
 
-
 ---
 
-# State of the Art in AI
+## Review and Q&A
 
----
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
-## State of the Art in AI
 
-* Last few years have seen tremendous advantages in  the following areas:
+* Let's go over what we have covered so far
 
-* **Computer Vision**:   
-    - Trying to identify things in pictures
-    - Sample models: ResNet, MobileNet
-
-* **Language Processing**:  
-    - Understanding 'free form' text (emails, word documents)
-    - Sample models: BERT, Open-GPT
-
----
-
-## Transfer Learning
-
-* We don't need to build models from scratch anymore
-
-* There are tremendous amount of high quality models that are released as open source
-
-* Start with those base models and fine tune to fit your needs
-
-- Demo: [Tensorflow Hub](https://www.tensorflow.org/hub)
-
----
-
-## Demo: Write with Transformer
-
----
+* Any questions?

@@ -358,7 +358,9 @@ __'My mother is very close my sister; she is also very close to my wife'__
 
 ---
 
-## Sequence to Sequence Models
+## Sequence to Sequence Models (2014)
+
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
 * Sequence-to-Sequence models are used to convert one sequence into another sequence
 
@@ -392,11 +394,27 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 ---
 
-## Attention and Transformers  (2017)
+## Transformers (2017)
 
-<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<!-- TODO shiva -->
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:30%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:30%;float:right;clear:both;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
 
-* In a landmark paper ["Attention is all you need"](https://arxiv.org/abs/1706.03762), researchers from Google, proposed a novel model called **Transformers**
+* In 2017, in a landmark paper ["Attention is all you need"](https://arxiv.org/abs/1706.03762), researchers from Google, proposed a novel model called **Transformers**
+
+* In 2018, Google [open sourced](https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html) a state of the art  language model called [BERT (Bidirectional Encoder Representations from Transformers)](https://arxiv.org/abs/1810.04805?source=post_page) based on transformer architecture
+
+* Since then, transformers have taken over NLP world by storm, breaking NLP records and pushing state of the art
+
+* References:
+  - Understanding searches better than ever before](https://arxiv.org/abs/1810.04805?source=post_page)
+  - [BERT (language model)](https://en.wikipedia.org/wiki/BERT_(language_model))
+
+---
+
+## Transformers
+
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:45%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
 
 * The Transformer architecture solved the 2 nagging problems with Seq-2-Seq models
   - Transformers can 'track or remember' long sequences
@@ -404,9 +422,11 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 * Transformers are one the state of the art models since 2018+
 
+* Let's see a little more details on transformers
+
 ---
 
-## Pre Trained Models (2018)
+## Pre Trained Transformer Models (2018)
 
 * Google released a model called BERT (Bidirectional Encoder Representations from Transformers) that is based on Transformer architecture
 
