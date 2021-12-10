@@ -420,7 +420,7 @@ inverse = scaler.inverse_transform(normalized)
 
 ```python
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 
 data = pd.DataFrame ( { 'age' : [33,45,42,35,60],
                         'income' : [40000,80000,120000,32000,110000]

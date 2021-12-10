@@ -207,18 +207,3 @@ Notes:
 
 <!-- {"left" : 0.25, "top" : 3.16, "height" : 1.69, "width" : 9.75, "columnwidth" : [1.61, 1.86, 1.92, 4.36]} -->
 
----
-
-## Rule Based Systems vs. Machine Learning
-
- * Rule based systems are static
-    - They are programmed in
-    - They don't learn from data
-
- * AI can learn from data
-     - It gets better every day with more data it sees
-
-<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" alt="Rule-Based-Systems.png" style="width:55%;"/><!-- {"left" : 0.78, "top" : 4.13, "height" : 3.28, "width" : 8.7} -->
-
-
-Notes:
