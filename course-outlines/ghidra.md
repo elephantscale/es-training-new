@@ -96,7 +96,4 @@ You'll begin by installing Ghidra and exploring its features, and gradually lear
   * Static and dynamic symbex, 
   * LLVM, and Angr
   * How to incorporate tools with Ghidra.
-
-## Additional resources
-
-* [https://www.udemy.com/course/reverse-engineering-ghidra/](https://www.udemy.com/course/reverse-engineering-ghidra/)
+  
