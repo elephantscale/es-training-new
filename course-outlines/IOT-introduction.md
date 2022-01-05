@@ -76,5 +76,5 @@ combining human skills, theory, and lbas.
 * Labs and exercises
 
 ### References
-* **Not included in the outline**
-* [Udemy](https://www.udemy.com/course/exploring-aws-iot/)
+* **Delete it before sending the outline**
+* [Exploring IoT with AWS on Udemy](https://www.udemy.com/course/exploring-aws-iot/)
