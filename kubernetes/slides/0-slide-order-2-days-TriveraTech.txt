@@ -1,0 +1,21 @@
+## to generate slides
+##      ./gen.sh
+
+## Outline
+# ../../course-outlines/trivera-tech/Outline-P_TTDV7590_Getting_Started_Kubernetes_2days_2021.docx
+
+# About
+About-Kubernetes-2days-TriveraTech.md  About-Kubernetes.md
+
+## Docker 
+../../docker/slides/Container_Intro.md
+../../docker/slides/Docker_Intro.md
+
+## Kubernetes
+Kubernetes-Intro.md
+Kubernetes-Essentials.md
+Kubernetes-Resources.md
+Kubernetes-Networking.md
+Kubernetes-Deployments.md
+Kubernetes-Misc.md
+Kubernetes-Best-Practices.md

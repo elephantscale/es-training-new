@@ -18,7 +18,7 @@
 <img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:25%;float:right;clear:both;" /> 
 
 * Objectives:
-    - Learn about Docker and Kubernetess
+    - Learn about Docker and Kubernetes
     - Get hands-on experience
 
 * A **practical approach to Docker and Kubernetes**

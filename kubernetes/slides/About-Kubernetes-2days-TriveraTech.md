@@ -1,6 +1,7 @@
-# Docker and Kubernetes
+<img src="../../assets/images/logos/TriveraTech-logo-2-large.jpg" style="width:25%;float:right;" /> <!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
 
-<img src="../../assets/images/logos/docker-logo-1.png" style="width:25%;" />
+# Getting Started With Kubernetes
+
 <img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /> 
 
 ---
@@ -36,44 +37,21 @@ Notes:
 
 ## Agenda
 
-* 5 days; 2 days o Docker + 3 days of Kubernetes
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:25%;float:right;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:25%;float:right;clear:both;" /> 
 
-<img src="../../assets/images/logos/docker-logo-1.png" style="width:35%;float:right;" />
-
-* **Day 1 - Docker**
+* **Day 1**
     - Containers intro
     - Docker intro
-    - Images and containers
-    - Docker networking
-
-* **Day 2 - Docker**
-    - Docker volumes
-    - Dockerfiles
-    - Container registries
-    - Dockercompose
-
----
-
-## Agenda Continued
-
-<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;float:right;" /> 
-
-* **Day 3 - Kubernetes**
     - Kubernetes introduction
     - Kubernetes architecture
-    - Deploying scalable services
 
-* **Day 4 - Kubernetes**
-    - labels and selectors
-    - Storage
+* **Day 2**
+    - Pods, Containers, Replicas
+    - Labels and selectors
     - Networking
-
-* **Day 5 - Kubernetes**
-    - Security
-    - Kubernetes addons
-    - Practical examples
-    - Kubernetes in the cloud
-    - Workshops
+    - Deployments and Services
+    - Best Practices
 
 ---
 
