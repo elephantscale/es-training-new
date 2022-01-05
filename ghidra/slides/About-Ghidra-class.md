@@ -138,6 +138,7 @@ Notes:
   - Your Name
 
   - Your background (developer, admin, manager, ...)
+    - reverse code engineers, malware analysts, bug hunters, penetration testers, exploit developers, forensic practitioners, security researchers, and cybersecurity students.
 
   - Technologies you are familiar with
 
@@ -152,5 +153,5 @@ Notes:
 Notes:
 
 
-
+---
 
