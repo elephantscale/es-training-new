@@ -1,10 +1,11 @@
 ## Outline is here:
 # ../../course-outlines/Cybersecurity-IACS.md
 ## But we give them this PDF
-About-Ghidra.md
-../../cybersecurity-common/slides/Security-Intro.md
-../../cybersecurity-common/slides/Threat-Modeling.md
-../../cybersecurity-common/slides/OSI_Security_Model.md
-../../cybersecurity-common/slides/Security_Design.md
-../../cybersecurity-common/slides/SLC_and_SDLC.md
-../../secure-coding/slides/Common-Attacks.md
+About-Ghidra-class.md
+Ghidra-intro.md
+# ../../cybersecurity-common/slides/Security-Intro.md
+# ../../cybersecurity-common/slides/Threat-Modeling.md
+# ../../cybersecurity-common/slides/OSI_Security_Model.md
+# ../../cybersecurity-common/slides/Security_Design.md
+# ../../cybersecurity-common/slides/SLC_and_SDLC.md
+# ../../secure-coding/slides/Common-Attacks.md
