@@ -3,6 +3,7 @@
 ## But we give them this PDF
 About-Ghidra-class.md
 Ghidra-intro.md
+Ghidra-using.md
 # ../../cybersecurity-common/slides/Security-Intro.md
 # ../../cybersecurity-common/slides/Threat-Modeling.md
 # ../../cybersecurity-common/slides/OSI_Security_Model.md

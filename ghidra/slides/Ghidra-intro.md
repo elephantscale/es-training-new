@@ -1,10 +1,13 @@
 # Introduction to Ghidra
 
+# WikiLeaks Vault 7
+
 ## What we will cover in this section
 * WikiLeaks Vault 7
-* Ghidra versus IDA and many other competitors
+* Ghidra versus IDA and other competitors
 * Ghidra overview
 * Install
+* Basic functionalities
 
 ---
 
@@ -105,6 +108,8 @@ Notes:
 
 * You can feel comfortable when using Ghidra; probably, the NSA only wanted to do something honorable to improve its own image and, since Ghidra's existence was leaked by WikiLeaks, what better way to do that than to publish it at RSA Conference and release it as open source?
 
+# Ghidra versus IDA and other competitors
+
 ## Ghidra versus IDA
 * many other competitors
   * IDA
@@ -165,6 +170,8 @@ Notes:
 ```
 
 ---
+
+# Ghidra basic functionalities
 
 ## Overview of Ghidra's features
 * Creating a new Ghidra project
@@ -252,17 +259,58 @@ Then, compile it `gcc hello_world.c`
 
 Notes:
 
-* (1) As usual, by default in reverse engineering frameworks, in the center of the screen, Ghidra shows a disassembly view of the file.
-* (2) As the disassembly level is sometimes a too low-level perspective, Ghidra incorporates its own decompiler, which is located to the right of the disassembly window. The main function of the program was recognized by a Ghidra signature, and then parameters were automatically generated. Ghidra also allows you to manipulate decompiled code in a lot of aspects. Of course, a hexadecimal view of the file is also available in the corresponding tab. These three windows (disassembly, decompiler, and the hexadecimal window) are synchronized, offering different perspectives of the same thing.
-3. Ghidra also allows you to easily navigate in the program. For instance, to go to another program section, you can refer to the Program Trees window located in the upper-left margin of CodeBrowser.
-4. If you prefer to navigate to a symbol (for example, a program function), then go just below that, to where the Symbols Tree pane is located.
-5. If you want to work with data types, then go just below that again, to Data Type Manager.
-6. As Ghidra allows scripting reverse engineering tasks, script results are shown in the corresponding window at the bottom. Of course, the Bookmarks tab is available in the same position, allowing you to create pretty well-documented and organized bookmarks of any memory location for quick access.
-7. Ghidra has also a quick access bar at the top.
-8. At the bottom right, the first field indicates the current address.
-9. Following the current address, the current function is shown.
-10. In addition to the current address and the current function, the current disassembly line is shown to complete the contextual information.
-11. Finally, at the topmost part of CodeBrowser, the main bar is located.
+* 1 As usual, by default in reverse engineering frameworks, in the center of the screen, Ghidra shows a disassembly view of the file.
+* 2 As the disassembly level is sometimes a too low-level perspective, Ghidra incorporates its own decompiler, which is located to the right of the disassembly window. The main function of the program was recognized by a Ghidra signature, and then parameters were automatically generated. Ghidra also allows you to manipulate decompiled code in a lot of aspects. Of course, a hexadecimal view of the file is also available in the corresponding tab. These three windows (disassembly, decompiler, and the hexadecimal window) are synchronized, offering different perspectives of the same thing.
+* 3 Ghidra also allows you to easily navigate in the program. For instance, to go to another program section, you can refer to the Program Trees window located in the upper-left margin of CodeBrowser.
+* 4 If you prefer to navigate to a symbol (for example, a program function), then go just below that, to where the Symbols Tree pane is located.
+* 5 If you want to work with data types, then go just below that again, to Data Type Manager.
+* 6 As Ghidra allows scripting reverse engineering tasks, script results are shown in the corresponding window at the bottom. Of course, the Bookmarks tab is available in the same position, allowing you to create pretty well-documented and organized bookmarks of any memory location for quick access.
+* 7 Ghidra has also a quick access bar at the top.
+* 8 At the bottom right, the first field indicates the current address.
+* 9 Following the current address, the current function is shown.
+* 10 In addition to the current address and the current function, the current disassembly line is shown to complete the contextual information.
+* 11 Finally, at the topmost part of CodeBrowser, the main bar is located.
+
+---
+## Customizing Ghidra
+
+![](../images/14.png)
+
+* customize the disassembly view by moving fields
+* add new fields
+* extend the size of a field in the disassembly listing
+* etc.
+
+---
+
+## PCode
+
+![](../images/15.png)
+
+* develop assembly language-agnostic tools
+* develop automated analysis tools in a more comfortable language
+
+
+---
+
+## PCode enabled
+
+* If it is enabled
+  * PCode will be shown in the listing
+  * PCode is less human-readable 
+  * but sometimes better for scripting reverse engineering tasks
+
+---
+
+## With PCode
+
+![](../images/16.png)
+
+---
+
+## More Ghidra functionalities (graph)
+
+![](../images/17.png)
 
 ---
 
@@ -293,56 +341,19 @@ Notes:
 
 Notes:
 
-* TODO
+* Many are confused by the terms decompiler and disassembler. As with most confusion of this type, most just use the words interchangeably. Don’t do that; they are not the same.
+
+* A decompiler takes one from a binary to source code–or something similarly high-level that can easily be read by humans.
+* A disassembler takes one from binary to assembler–which is much lower level and is more difficult to read for humans.
 
 ---
 
+## Summary
 
-## Decompile to C code
-
-* For that, let us use the c1 image in the labs
-
-![](../images/01.png)
-
----
-
-## Understanding C code
-
-![](../images/02.png)
-
----
-
-## Editing C code
-
-![](../images/03.png)
-
----
-
-## Snapshots in VM
-
-* Best practice
-* Analyzing in a VM
-* Creating snapshots
-* Restoring to a previous snapshot
-  * If the virus made a change to it
-
----
-
-## Snapshots jump
-
-![](../images/04.png)
-
----
-
-## Steps
-
-* Shut down the Kali VM
-* Restore the previous snapshot
-* Boot the Kali VM
-* Exercise
-  * Create a folder
-  * Restore the previous snapshot
-  * The folder is gone!
+* Origins
+* Install
+* Structure
+* Main functionalities
 
 ---
 
