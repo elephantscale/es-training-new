@@ -252,8 +252,8 @@ Then, compile it `gcc hello_world.c`
 
 Notes:
 
-1. As usual, by default in reverse engineering frameworks, in the center of the screen, Ghidra shows a disassembly view of the file.
-2. As the disassembly level is sometimes a too low-level perspective, Ghidra incorporates its own decompiler, which is located to the right of the disassembly window. The main function of the program was recognized by a Ghidra signature, and then parameters were automatically generated. Ghidra also allows you to manipulate decompiled code in a lot of aspects. Of course, a hexadecimal view of the file is also available in the corresponding tab. These three windows (disassembly, decompiler, and the hexadecimal window) are synchronized, offering different perspectives of the same thing.
+* (1) As usual, by default in reverse engineering frameworks, in the center of the screen, Ghidra shows a disassembly view of the file.
+* (2) As the disassembly level is sometimes a too low-level perspective, Ghidra incorporates its own decompiler, which is located to the right of the disassembly window. The main function of the program was recognized by a Ghidra signature, and then parameters were automatically generated. Ghidra also allows you to manipulate decompiled code in a lot of aspects. Of course, a hexadecimal view of the file is also available in the corresponding tab. These three windows (disassembly, decompiler, and the hexadecimal window) are synchronized, offering different perspectives of the same thing.
 3. Ghidra also allows you to easily navigate in the program. For instance, to go to another program section, you can refer to the Program Trees window located in the upper-left margin of CodeBrowser.
 4. If you prefer to navigate to a symbol (for example, a program function), then go just below that, to where the Symbols Tree pane is located.
 5. If you want to work with data types, then go just below that again, to Data Type Manager.
