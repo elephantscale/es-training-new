@@ -11,11 +11,12 @@
 
 ---
 
-## Let us start a Kali download
+## Let us start with Kali VM
 * For the labs, we will optionally use Kali in VirtualBox
   * (Let's discuss why you may need it)
 * So, if you agree and if you don't have it, let us start the download now (it will take like 30 min)
 * [https://www.kali.org/get-kali/#kali-virtual-machines](https://www.kali.org/get-kali/#kali-virtual-machines)
+* Or follow this instruction [https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/](https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/)
 * And now, let's go back to the course
 
 ## WikiLeaks Vault 7
