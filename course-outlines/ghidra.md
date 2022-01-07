@@ -39,6 +39,8 @@ You'll begin by installing Ghidra and exploring its features, and gradually lear
 
 ## Course outline
 
+* Brief introduction to security and malware
+
 * Getting Started with Ghidra
   * The history of Ghidra
   * Program from the user perspective

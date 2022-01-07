@@ -11,6 +11,13 @@
 
 ---
 
+## Let us start a Kali download
+* For the labs, we will optionally use Kali in VirtualBox
+  * (Let's discuss why you may need it)
+* So, if you agree and if you don't have it, let us start the download now (it will take like 30 min)
+* [https://www.kali.org/get-kali/#kali-virtual-machines](https://www.kali.org/get-kali/#kali-virtual-machines)
+* And now, let's go back to the course
+
 ## WikiLeaks Vault 7
 * March 7, 2017, WikiLeaks started to leak Vault 7
 * The biggest leak of confidential documents on the US Central Intelligence Agency (CIA).
@@ -347,6 +354,57 @@ Notes:
 * A disassembler takes one from binary to assembler–which is much lower level and is more difficult to read for humans.
 
 ---
+
+# Using Ghidra in VM
+
+## Decompile to C code
+
+* For that, let us use the c1 image in the labs
+
+![](../images/01.png)
+
+---
+
+## Understanding C code
+
+![](../images/02.png)
+
+---
+
+## Editing C code
+
+![](../images/03.png)
+
+---
+
+## Snapshots in VM
+
+* Best practice
+* Analyzing in a VM
+* Creating snapshots
+* Restoring to a previous snapshot
+  * If the virus made a change to it
+
+---
+
+## Snapshots jump
+
+![](../images/04.png)
+
+---
+
+## Steps
+
+* Shut down the Kali VM
+* Restore the previous snapshot
+* Boot the Kali VM
+* Exercise
+  * Create a folder
+  * Restore the previous snapshot
+  * The folder is gone!
+
+---
+
 
 ## Summary
 

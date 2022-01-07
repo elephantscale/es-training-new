@@ -1,10 +1,8 @@
-## Outline is here:
-# ../../course-outlines/Cybersecurity-IACS.md
-## But we give them this PDF
 About-Ghidra-class.md
+## Optional intro to security
+../../cybersecurity-common/slides/Security-Intro.md
+Malware-analysis.md
 Ghidra-intro.md
-Ghidra-using.md
-# ../../cybersecurity-common/slides/Security-Intro.md
 # ../../cybersecurity-common/slides/Threat-Modeling.md
 # ../../cybersecurity-common/slides/OSI_Security_Model.md
 # ../../cybersecurity-common/slides/Security_Design.md
