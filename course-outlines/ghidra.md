@@ -1,9 +1,15 @@
-# Ghidra
+# Malware Analysis with Ghidra
 © Elephant Scale
 
-August 23, 2021
+January 10, 2022
 
 ## Overview
+
+Malware is a code that performs malicious actions. It can take the form of an executable, script, code, or any other software.
+Attackers use malware to
+  * steal sensitive information
+  * spy on the infected system
+  * take control of the system
 
 Ghidra, an open source software reverse engineering (SRE) framework created by the NSA research directorate, enables users to analyze compiled code on any platform, whether Linux, Windows, or macOS. This course is a starting point for developers interested in leveraging Ghidra to create patches and extend tool capabilities to meet their cybersecurity needs.
 
@@ -39,7 +45,7 @@ You'll begin by installing Ghidra and exploring its features, and gradually lear
 
 ## Course outline
 
-* Brief introduction to security and malware
+* Introduction to security and malware
 
 * Getting Started with Ghidra
   * The history of Ghidra
