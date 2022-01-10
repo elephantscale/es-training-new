@@ -1,8 +1,8 @@
 About-Ghidra-class.md
 ## Optional intro to security
 ../../cybersecurity-common/slides/Security-Intro.md
-Malware-analysis.md
 Ghidra-intro.md
+Malware-analysis.md
 # ../../cybersecurity-common/slides/Threat-Modeling.md
 # ../../cybersecurity-common/slides/OSI_Security_Model.md
 # ../../cybersecurity-common/slides/Security_Design.md
