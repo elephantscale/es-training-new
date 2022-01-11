@@ -85,3 +85,52 @@
 ---
 
 
+## Analyzing a hello world program
+
+* Choose a string-related Ghidra script
+* Both Python and Java scripts are mixed in Script Manager
+![](../images/24.png)
+
+---
+
+## Using RecursiveStringFinder.py
+
+* RecursiveStringFinder.py file can speed up your analysis
+* Showing all the functions and their associated strings
+* Reveal the purpose of a function without the need for reading even a single line of code.
+
+---
+
+## Running the script
+
+![](../images/25.png)
+
+---
+
+
+## Quiz
+
+* Why are Ghidra scripts useful? 
+* What is something that you can do with them?
+
+---
+
+## Quiz
+
+* How are scripts organized in Ghidra? 
+* Is this organization related to its own source code or with the location of the script on the filesystem?
+
+---
+
+## Quiz
+
+* Why is there no difference between the Java and Python Ghidra scripting APIs?
+
+---
+
+## Congrats on completion
+
+
+![](../images/congrats.png)
+
+---
