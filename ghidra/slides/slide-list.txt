@@ -3,6 +3,7 @@ About-Ghidra-class.md
 ../../cybersecurity-common/slides/Security-Intro.md
 Ghidra-intro.md
 Malware-analysis.md
+Ghidra-work.md
 Ghidra-scripting.md
 Ghidra-advanced.md
 # ../../cybersecurity-common/slides/Threat-Modeling.md

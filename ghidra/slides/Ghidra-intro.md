@@ -12,7 +12,7 @@
 ---
 
 ## Let us start with Kali VM
-* For the labs, we will optionally use Kali in VirtualBox
+* For the labs, we **may** optionally use Kali in VirtualBox
   * (Let's discuss why you may need it)
 * So, if you agree and if you don't have it, let us start the download now (it will take like 30 min)
 * [https://www.kali.org/get-kali/#kali-virtual-machines](https://www.kali.org/get-kali/#kali-virtual-machines)
@@ -280,47 +280,6 @@ Notes:
 * 11 Finally, at the topmost part of CodeBrowser, the main bar is located.
 
 ---
-## Customizing Ghidra
-
-![](../images/14.png)
-
-* customize the disassembly view by moving fields
-* add new fields
-* extend the size of a field in the disassembly listing
-* etc.
-
----
-
-## PCode
-
-![](../images/15.png)
-
-* develop assembly language-agnostic tools
-* develop automated analysis tools in a more comfortable language
-
-
----
-
-## PCode enabled
-
-* If it is enabled
-  * PCode will be shown in the listing
-  * PCode is less human-readable 
-  * but sometimes better for scripting reverse engineering tasks
-
----
-
-## With PCode
-
-![](../images/16.png)
-
----
-
-## More Ghidra functionalities (graph)
-
-![](../images/17.png)
-
----
 
 ## Quiz
 
@@ -353,56 +312,6 @@ Notes:
 
 * A decompiler takes one from a binary to source code–or something similarly high-level that can easily be read by humans.
 * A disassembler takes one from binary to assembler–which is much lower level and is more difficult to read for humans.
-
----
-
-# Using Ghidra in VM
-
-## Decompile to C code
-
-* For that, let us use the c1 image in the labs
-
-![](../images/01.png)
-
----
-
-## Understanding C code
-
-![](../images/02.png)
-
----
-
-## Editing C code
-
-![](../images/03.png)
-
----
-
-## Snapshots in VM
-
-* Best practice
-* Analyzing in a VM
-* Creating snapshots
-* Restoring to a previous snapshot
-  * If the virus made a change to it
-
----
-
-## Snapshots jump
-
-![](../images/04.png)
-
----
-
-## Steps
-
-* Shut down the Kali VM
-* Restore the previous snapshot
-* Boot the Kali VM
-* Exercise
-  * Create a folder
-  * Restore the previous snapshot
-  * The folder is gone!
 
 ---
 
