@@ -613,7 +613,7 @@ Notes:
 
 * **Instructions:**
     - **Instructor please demo this lab**
-    - Please complete **INSTALl-2**
+    - Please complete **INSTALL-2**
 
 Notes:
 
@@ -642,7 +642,7 @@ Notes:
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * **Overview:**
-    -  Setup and access a Kubernetes dashboard
+    - Setup and access a Kubernetes dashboard
 
 * **Approximate run time:**
     - 20 mins

@@ -60,7 +60,7 @@
 
 * Much better separation, much easier to maintain each component, and our online-order app is much smaller!
 
-<img src="../../assets/images/docker/monolithic-vs-microservices-2.png" style="width:55%;" />
+<img src="../../assets/images/docker/monolithic-vs-microservices-2.png" style="width:42%;" />
 
 ---
 
