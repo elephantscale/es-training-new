@@ -1,9 +1,8 @@
-# Kubernetes with Docker
+# Introduction to Kubernetes
 
 © Elephant Scale  
 January 13, 2022
 
-![](../assets/images/logos/docker-logo-3-small.png) &nbsp; &nbsp;
 ![](../assets/images/logos/kubernetes-logo-4-small2.png)
 
 ## Overview
@@ -12,29 +11,21 @@ Containerization has taken the IT world by storm, in the last few years. Large s
 
 Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community.
 
-This course introduces the students to containers in general, then continues with Kubernetes, its architecture, its use in production, and its best practices.
+This course introduces the students to Docker and then  Kubernetes, its architecture, its use in production, and its best practices.
 
 ## What You Will Learn
 
-* Docker
-    * Benefits of containerization
-    * Docker concepts and architecture
-    * Using docker commands
-    * Dockerfiles and building dockers
-    * Deploying docker containers
-    * Working with container registries
-* Kubernetes
-    * Kubernetes concepts and architecture
-    * Orchestrating Docker containers with Kubernetes
-    * Labels and selectors
-    * Deploying resilient, scalable services
-    * Kubernetes volumes
-    * Kubernetes networking
-    * security
+* Kubernetes concepts and architecture
+* Orchestrating Docker containers with Kubernetes
+* Labels and selectors
+* Deploying resilient, scalable services
+* Kubernetes volumes
+* Kubernetes networking
+* security
 
 ## Duration
 
-5 days  (Docker - 2 days, Kubernetes - 3 days)
+3 days
 
 ## Audience
 
@@ -61,8 +52,6 @@ A cloud based lab environment will be provided.
 
 ## Detailed Outline
 
-## Part 1 - Docker
-
 ### Containerization Introduction
 
 * Monolithic apps vs. microservices
@@ -83,44 +72,7 @@ A cloud based lab environment will be provided.
 
 * Downloading Docker images
 * Running docker containers
-* Managing container life cycle
 * Labs
-
-### Building Custom Docker Images
-
-* Bundling our applications in a container
-* Introducing the Dockerfile
-* Building an image from a Dockerfile
-* Understanding layers and commands
-* Labs
-
-### Working with the Registry
-
-* Introduction to container registries
-* Introduction to DockerHub
-* Creating a repository on DockerHub,
-* Publishing custom images to registry
-* Dev setup with a private container registry
-* Wrap-up
-* Labs
-
-### Networking
-
-* Understanding Docker networking
-* Various networking options for Docker
-* Bridge vs Host networking
-* Exposing ports
-* Labs
-
-### Storage
-
-* Persistent storage in Docker
-* Using binds and volumes
-* Defining and using storage volumes
-* Storage backup and restore
-* Labs
-
-## Part 2 - Kubernetes
 
 ### Kubernetes Intro
 
