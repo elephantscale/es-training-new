@@ -46,7 +46,70 @@ Participant Notes :
 
 ---
 
-## Defining Labels
+## Assigning Pods to Nodes
+
+* We can use labels to assign Pods to certain nodes
+
+* Say we want to run our database Pods on nodes with SSD drives (for performance)
+
+* First attach labels to nodes
+
+```bash
+# 'worker1' node has SSDs
+$   kubectl  label nodes worker1  disk=ssd
+
+
+# 'worker2' has regular disks
+$   kubectl  label nodes worker2  disk=regular
+
+$   kubectl get nodes --show-labels
+```
+
+```console
+NAME      STATUS   ROLES    AGE   VERSION   LABELS
+worker1   Ready    <none>   9h    v1.22.1   disk=ssd ...
+worker2   Ready    <none>   9h    v1.22.1   disk=regular ...
+```
+
+---
+
+## Assigning Pods to Nodes
+
+* Now specify a **NodeSelector** to pod.yaml
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis1
+spec:
+  containers:
+  - name: redis
+    image: redis
+    imagePullPolicy: IfNotPresent
+  nodeSelector:
+    disk: ssd
+```
+
+* And create pods.  The pods will only be placed on **`worker1`** that is labeled as **`disk=ssd`**
+
+```bash
+# launch 2 redis instances
+$   kubectl apply -f pod.yaml
+$   kubectl apply -f pod.yaml
+
+$   kubectol get pods -o wide
+```
+
+```console
+NAME                        READY   STATUS    RESTARTS   AGE    IP                NODE      
+redis1                      1/1     Running   0          77s    192.168.235.149   worker1   
+redis2                      1/1     Running   0          52s    192.168.235.150   worker1  
+```
+
+---
+
+## Defining Labels for Apps
 
 ```yaml
 apiVersion: apps/v1
@@ -123,68 +186,6 @@ nginx-v1-67dfdcf8b8-hbjm9   1/1     Running   0          162m   app=nginx,versio
 
 ---
 
-## Assigning Pods to Nodes
-
-* We can use labels to assign Pods to certain nodes
-
-* Say we want to run our database Pods on nodes with SSD drives (for performance)
-
-* First attach labels to nodes
-
-```bash
-# 'worker1' node has SSDs
-$   kubectl  label nodes worker1  disk=ssd
-
-
-# 'worker2' has regular disks
-$   kubectl  label nodes worker2  disk=regular
-
-$   kubectl get nodes --show-labels
-```
-
-```console
-NAME      STATUS   ROLES    AGE   VERSION   LABELS
-worker1   Ready    <none>   9h    v1.22.1   disk=ssd ...
-worker2   Ready    <none>   9h    v1.22.1   disk=regular ...
-```
-
----
-
-## Assigning Pods to Nodes
-
-* Now specify a **NodeSelector** to pod.yaml
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: redis1
-spec:
-  containers:
-  - name: redis
-    image: redis
-    imagePullPolicy: IfNotPresent
-  nodeSelector:
-    disk: ssd
-```
-
-* And create pods.  The pods will only be placed on **`worker1`** that is labeled as **`disk=ssd`**
-
-```bash
-# launch 2 redis instances
-$   kubectl apply -f pod.yaml
-$   kubectl apply -f pod.yaml
-
-$   kubectol get pods -o wide
-```
-
-```console
-NAME                        READY   STATUS    RESTARTS   AGE    IP                NODE      
-redis1                      1/1     Running   0          77s    192.168.235.149   worker1   
-redis2                      1/1     Running   0          52s    192.168.235.150   worker1  
-```
-
----
 
 ## Labels Example
 

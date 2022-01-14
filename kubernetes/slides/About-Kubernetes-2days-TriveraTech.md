@@ -92,8 +92,8 @@ Notes:
     - Your Name
     - Your background (developer, admin, manager, etc.)
     - Technologies you are familiar with
-    - Familiarity with Docker and Kubernetes   
-    (scale of 1 - 4 ;  1 - new, 2 - know some concepts,  3 - too a course, 4 -  using it at work)
+    - Familiarity with Docker and Kubernetes
+    (scale of 1 - 4 ;  1 - new, 2 - know some concepts,  3 - took a course, 4 -  using it at work)
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby...etc)
 
