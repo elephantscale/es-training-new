@@ -13,7 +13,7 @@
 
 ## Let us start with Kali VM
 * For the labs, we **may** optionally use Kali in VirtualBox
-  * (Let's discuss why you may need it)
+  * (Let's discuss why you may or may not need it)
 * So, if you agree and if you don't have it, let us start the download now (it will take like 30 min)
 * [https://www.kali.org/get-kali/#kali-virtual-machines](https://www.kali.org/get-kali/#kali-virtual-machines)
 * Or follow this instruction [https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/](https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/)
@@ -82,12 +82,22 @@ Notes:
 ## Finally, release
 
 * https://ghidra-sre.org.
-* The first version of Ghidrawas Ghidra 9.0. 
+* The first version of Ghidra was Ghidra 9.0. 
 * Ghidra's website is probably not available to visitors outside the US
   * you can access it by using a VPN
   * or an online proxy such as HideMyAss (https://www.hidemyass.com/)
 
 ---
+
+## In praise of NSA
+
+* NSA is the largest employer of mathematicians in the USA
+  * Maybe in the world
+* They routinely have 2-3 PhD's
+* "No Such Agency" or “Never Say Anything”
+
+![](../images/Seal_of_the_U.S._National_Security_Agency.svg.png)
+
 
 ## Unfortunate incident
 
