@@ -5,6 +5,7 @@ Ghidra-intro.md
 Malware-analysis.md
 Ghidra-work.md
 Ghidra-scripting.md
+Ghidra-more.md
 Ghidra-advanced.md
 # ../../cybersecurity-common/slides/Threat-Modeling.md
 # ../../cybersecurity-common/slides/OSI_Security_Model.md

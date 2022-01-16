@@ -1,5 +1,13 @@
 # Working with Ghidra
 
+## Lab: Code analysis
+
+* Lab03
+* [https://github.com/elephantscale/ghidra-labs/tree/main/lab03](https://github.com/elephantscale/ghidra-labs/tree/main/lab03)
+
+---
+
+
 ## Customizing Ghidra
 
 ![](../images/14.png)
@@ -39,6 +47,13 @@
 ## More Ghidra functionalities (graph)
 
 ![](../images/17.png)
+
+---
+
+## Lab: Analyze variables
+
+* Lab04
+* [https://github.com/elephantscale/ghidra-labs/tree/main/lab04](https://github.com/elephantscale/ghidra-labs/tree/main/lab04)
 
 ---
 

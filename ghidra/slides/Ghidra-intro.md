@@ -189,6 +189,13 @@ Notes:
 
 ---
 
+## Lab: Install
+
+* Lab01
+* [https://github.com/elephantscale/ghidra-labs/tree/main/lab01](https://github.com/elephantscale/ghidra-labs/tree/main/lab01)
+
+---
+
 # Ghidra basic functionalities
 
 ## Overview of Ghidra's features
@@ -270,6 +277,11 @@ Then, compile it `gcc hello_world.c`
 ![](../images/12.png)
 
 ---
+## Lab: Code Browser
+
+* Lab02
+* [https://github.com/elephantscale/ghidra-labs/tree/main/lab02](https://github.com/elephantscale/ghidra-labs/tree/main/lab02)
+
 
 ## Ghidra CodeBrowser
 
@@ -290,6 +302,7 @@ Notes:
 * 11 Finally, at the topmost part of CodeBrowser, the main bar is located.
 
 ---
+
 
 ## Quiz
 
@@ -334,6 +347,7 @@ Notes:
 * Main functionalities
 
 ---
+
 
 ## Congrats on completion
 
