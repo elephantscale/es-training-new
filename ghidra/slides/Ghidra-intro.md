@@ -168,7 +168,9 @@ Notes:
 
 # NSA viewpoint
 
+## NSA point of view
 
+---
 # Ghidra competitors
 
 ## Ghidra versus IDA
