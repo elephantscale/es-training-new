@@ -126,39 +126,9 @@ Notes:
 
 * You can feel comfortable when using Ghidra; probably, the NSA only wanted to do something honorable to improve its own image and, since Ghidra's existence was leaked by WikiLeaks, what better way to do that than to publish it at RSA Conference and release it as open source?
 
-# Ghidra versus IDA and other competitors
-
-## Ghidra versus IDA
-* many other competitors
-  * IDA
-  * Binary Ninja
-  * Radare2
-* there are good reasons to start learning Ghidra.
-
----
-
-## Ghidra advantages
-
-* It is open source and free (including its decompiler).
-* It supports a lot of architectures (which maybe the framework you are using does not support yet).
-* It can load multiple binaries at the same time in a project. This feature allows you to easily apply operations over many related binaries (for example, an executable binary and its libraries).
-* It allows collaborative reverse engineering by design.
-
----
-
-## Ghidra advantages, cont'd
-
-* It supports big firmware images (1 GB+) without problems.
-* It has awesome documentation that includes examples and courses.
-* It allows version tracking of binaries, allowing you to match functions and data and their markup between different versions of the binary.
-* But learn them all!
-
----
-
-
 # Install
 
-* Download the latest version of Ghidra 
+* Download the latest version of Ghidra
 * [https://ghidra-sre.org/](https://ghidra-sre.org/)
 
 ![](../images/pexels-ksenia-chernaya-5768217.jpg)
@@ -195,6 +165,39 @@ Notes:
 * [https://github.com/elephantscale/ghidra-labs/tree/main/lab01](https://github.com/elephantscale/ghidra-labs/tree/main/lab01)
 
 ---
+
+# NSA viewpoint
+
+
+# Ghidra competitors
+
+## Ghidra versus IDA
+* Competitors
+  * IDA
+  * Binary Ninja
+  * Radare2
+* there are good reasons to start learning Ghidra.
+
+---
+
+## Ghidra advantages
+
+* It is open source and free (including its decompiler).
+* It supports a lot of architectures 
+* It can load multiple binaries at the same time in a project. This feature allows you to easily apply operations over many related binaries (for example, an executable binary and its libraries).
+* It allows collaborative reverse engineering by design.
+
+---
+
+## Ghidra advantages, cont'd
+
+* It supports big firmware images (1 GB+) without problems.
+* It has awesome documentation that includes examples and courses.
+* It allows version tracking of binaries, allowing you to match functions and data and their markup between different versions of the binary.
+* But learn them all!
+
+---
+
 
 # Ghidra basic functionalities
 

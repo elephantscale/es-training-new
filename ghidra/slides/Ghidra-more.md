@@ -63,3 +63,9 @@ Come on now ...  you should expect betTer from us!
 * Lab05
 * [https://github.com/elephantscale/ghidra-labs/tree/main/lab05](https://github.com/elephantscale/ghidra-labs/tree/main/lab05)
 
+## Lab: More code analysis
+
+* Lab06
+* [https://github.com/elephantscale/ghidra-labs/tree/main/lab06](https://github.com/elephantscale/ghidra-labs/tree/main/lab06)
+
+

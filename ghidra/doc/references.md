@@ -8,3 +8,10 @@
 * [hackaday-u](https://github.com/wrongbaud/hackaday-u)
 * [Wrongbaud course](https://hackaday.io/course/172292-introduction-to-reverse-engineering-with-ghidra)
 * [Ghidra on Udemy](https://www.udemy.com/course/reverse-engineering-ghidra/learn/lecture/25547210?start=75#overview)
+
+#### Lectures
+
+[1](https://www.youtube.com/watch?v=d4Pgi5XML8E)  
+[2](https://www.youtube.com/watch?v=uyWVztMHWtk&t=820s)   
+[3](https://www.youtube.com/watch?v=RFG5FuqY0CE&list=WL&index=16&t=2735s)   
+[4](https://www.youtube.com/watch?v=5QBXNF7FKxM)   
