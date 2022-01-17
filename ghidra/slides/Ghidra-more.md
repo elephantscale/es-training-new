@@ -32,3 +32,34 @@ Come on now ...  you should expect betTer from us!
 
 ---
 
+## Hex calculations
+
+![](../images/33.png)
+
+---
+
+## Solving the password equation
+
+![](../images/34.png)
+
+---
+
+## ASCII
+
+* [https://www.asciitable.com/](https://www.asciitable.com/)
+
+![](../images/35.png)
+
+---
+
+## Therefore...
+
+![](../images/36.png)
+
+---
+
+## Lab: Hex
+
+* Lab05
+* [https://github.com/elephantscale/ghidra-labs/tree/main/lab05](https://github.com/elephantscale/ghidra-labs/tree/main/lab05)
+

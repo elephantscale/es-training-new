@@ -4,10 +4,10 @@
 
 ## Agenda - 2 days
 
-| Day | Theme                | Detail                                                                                                |
-|-----|----------------------|-------------------------------------------------------------------------------------------------------|
-| 1   | IACS Cybersecurity   | Industrial Automation and Control Systems (IACS) and security, * The role of managers, hackers, and developers                                         |
-| 2   | Implementing IACS    | Security design principles, * Cryptography * Software Development Lifecycle (SDLC), IEC62443 standards |
+| Day | Theme        | Detail                                       |
+|-----|--------------|----------------------------------------------|
+| 1   | Ghidra intro | Security, Ghidra, Malware, Ghidra work basic |
+| 2   | Ghidra inter | Scripting, Ghidra advanced, Implement        |
 
 
 Notes:
@@ -125,6 +125,18 @@ Notes:
 * Your feedback and questions are always welcomed.
 * There is no protocol in class. Speak up anytime!
 * We value your comments during and after class. Just email `mark@elephantscale.com`.
+
+---
+
+## Plan of the workshop
+
+* Goal - figure out the deployment and use cases for Ghidra for **your** organization
+  * How much analysis?
+  * How deep?
+  * How much automation?
+  * What's in the future?
+  
+![](../images/37.png)
 
 ---
 
