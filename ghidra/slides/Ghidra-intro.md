@@ -199,12 +199,99 @@ Notes:
 ---
 
 
+
 ## Scope and reason
 
 ![](../images/41.png)
 
 ---
 
+## Ghidra resume
+
+* GHIDRA is NSA’s SRE Framework
+* In development for ~20 years
+* Public Release: March 2019 at RSA Conference
+* Open Source: April 2019
+* Created as a platform to solve hard cybersecurity problems
+
+---
+
+## What Ghidra does
+
+* What’s in your binary?
+* Needed SRE tool with:
+1. Scaling
+2. Teaming
+3. Extendability
+4. Integration
+5. Workflow
+6. Undo/Redo
+7. Headless, automated
+![](../images/42.png)
+
+---
+
+## The need
+
+* Software everywhere 
+  * Growing in size
+* IoT Event Horizon
+* Early IoT devices
+  * PDA
+  * Smart(ish) phones
+
+![](../images/43.png)
+
+---
+
+## The fight of Pegasus and Hydra
+
+
+![](../images/Pegasus-and-Hydra.jpg)
+
+---
+
+## What's in a name?
+
+* G ENERIC
+* H EXIDECIMAL
+* I NTEGRATED
+* D ECOMPILING
+* R EVERSE-ENGINEERING
+* A RCHITECTURE
+
+---
+
+## 3 heads - 3 goals
+
+
+![](../images/44.png)
+
+---
+
+## Development history
+
+![](../images/45.png)
+
+---
+
+## Open sourcing
+
+![](../images/46.png)
+
+---
+
+## Today on GitHub
+
+* Stars : 31k
+* Forks : 4k
+* Watchers : 1k
+* Issues: 3k 
+  * 1k open
+* Pull Requests: 1k
+  * 174 open
+
+---
 
 # Ghidra competitors
 
