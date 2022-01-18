@@ -64,7 +64,7 @@
 
 ## WannaCry analysis 1
 
-* Reversing WannaCry Part 1
+* Reversing WannaCry Part 1 by stacksmashing
 * Finding the killswitch and unpacking the malware in #Ghidra
 * [https://www.youtube.com/watch?v=Sv8yu12y5zM&list=WL&index=12](https://www.youtube.com/watch?v=Sv8yu12y5zM&list=WL&index=12)
 
@@ -74,7 +74,7 @@
 
 ## WannaCry analysis 2
 
-* Reversing WannaCry Part 2
+* Reversing WannaCry Part 2 by stacksmashing
 * Diving into the malware with #Ghidra
 * [https://www.youtube.com/watch?v=Q90uZS3taG0&list=WL&index=13](https://www.youtube.com/watch?v=Q90uZS3taG0&list=WL&index=13)
 
@@ -84,7 +84,7 @@
 
 ## WannaCry analysis 3
 
-* Reversing WannaCry Part 3
+* Reversing WannaCry Part 3 by stacksmashing
 * The encryption component
 * [https://www.youtube.com/watch?v=ru5VzUigKqw&list=WL&index=14](https://www.youtube.com/watch?v=ru5VzUigKqw&list=WL&index=14)
 

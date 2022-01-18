@@ -168,9 +168,44 @@ Notes:
 
 # NSA viewpoint
 
-## NSA point of view
+## August 3-8, 2019
+
+![](../images/38.png)
 
 ---
+
+## Speakers
+
+![](../images/39.png)
+
+---
+
+## Terminology
+
+* (S)RE - (Software) Reverse Engineering
+* VR - Vulnerability Research
+* Cyber - Cybersecurity
+* CNO - Computer Network Operations
+* IC - Intelligence Community
+* U, Unclass - Unclassified
+* NSA/Mission
+
+---
+
+## Lay of the land
+
+![](../images/40.png)
+
+---
+
+
+## Scope and reason
+
+![](../images/41.png)
+
+---
+
+
 # Ghidra competitors
 
 ## Ghidra versus IDA
