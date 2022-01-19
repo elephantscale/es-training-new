@@ -975,10 +975,11 @@ Notes:
    - 30 - 40 mins
 
  *  **Instructions:**  
-    - lab-2.1: kafka-utils.md
-    - (optional) lab-2.2: kafka-utils.md
+    - lab-2.1: kafka-utils
+    - lab-2.2: kafkacat
 
  *  **To Instructor:**
+    - demo these first
 
 
 Notes:
@@ -1347,19 +1348,26 @@ Notes:
 
 ## Message Retention
 
- *  **Period based**
+* **Period based**
     - Retention period is configured per topic
     - Default is  **7 days**
-    - Examples:
-       - Topic "emails": store for 7 days
-       - Topic "metrics": store for 2 hours
-       - Topic "alerts": store 1 day
+    - For example, "emails" topic expires after 7 days, "alerts" topic expires after 1 day
 
- *  **Size based**
+```bash
+# expires after 24 hrs  (86400000  ms)
+$  kafka-topics.sh --bootstrap-server localhost:9092 --create --topic topic1  \
+        --config "retention.ms=86400000" 
+```
+
+* **Size based**
     - Retention can be size-limited per topic
     - Once the limit is reached, Kafka will expire and purge messages automatically
-    - Example:
-       - Topic "temp_sensor": size limit 10 GB
+
+```bash
+# set size to  10 GB (10000000000 bytes)
+$  kafka-topics.sh --bootstrap-server localhost:9092 --create --topic topic1  \
+        --config "retention.bytes=10000000000" 
+```
 
 Notes:
 
@@ -1400,19 +1408,18 @@ Notes:
 
 <br />
 
-
-* Here is the compacted log, that only retains the latest value for a key
+* Here is the compacted log, that retains the **at least the latest value** for a key
 
 <br />
 
 | offset | time | key      | value       |
 |--------|------|----------|-------------|
+| 1      | 20   | driver-1 | location-1b |
 | 3      | 40   | driver-1 | location-1c |
 | 4      | 50   | driver-2 | location-2b |
 
 
 Notes:
-
 
 ---
 
@@ -1426,49 +1433,44 @@ Notes:
 
 Notes:
 
-
-
 Image source: https://kafka.apache.org/documentation/
 
-
 ---
 
-## Log Compaction
+## Log Compaction Internals
 
+<img src="../../assets/images/kafka/log-compaction-3.png" style="width:50%;float:right;"/><!-- {"left" : 1.02, "top" : 5.03, "height" : 2, "width" : 8.21} -->
 
- * Head of log is same as traditional log model
- * Consumers can read all messages from log head
- * Tail is compacted
- * Kafka keeps track of head and tail
- * Compacted offsets are valid and next highest offset value is read
-     - Eg: 3 , 4 and 5 are equivalent (3 and 4 are missing because of compaction)
+* Kafka broker, divides the partition log into segments
+    - Here we see 3 segments
+    - The last segment (03.log) is **active segment**.  Only active segment receives new producer writes.
 
-<img src="../../assets/images/kafka/Log-Compaction.png" alt="Log-Compaction.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 5.03, "height" : 2, "width" : 8.21} -->
+* The compaction is done in the background by Log Cleaner, this runs in multiple threads
 
+* The Log Cleaner will start processing segments and start merging them; it will update the keys with latest values
+
+* The active segment is not cleaned.  This is why sometimes we will see **more than latest value** for some keys.
+    - Here we see key `k2` twice.
 
 Notes:
 
-
-
-
 ---
 
-## Log Compaction Basics
+## Enabling Log Compaction
 
+```bash
+$  ~/apps/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 \
+ --create --topic compact1 --replication-factor 1 --partitions 2 \
+ --config "cleanup.policy=compact" --config "delete.retention.ms=1000" \
+ --config "segment.ms=1000"  --config "max.compaction.lag.ms=1000"
+```
 
- * The compaction is done in the background by Log Cleaner.
-
- * Log Cleaner uses a pool of background threads
-
-     - that recopy log segment files,
-
-     - removing records whose key appears in the head of the log
-
- *  **log .cleaner.min.compaction.lag.ms:** The minimum time a message will remain uncompacted in the log. Only applicable for logs that are being compacted.
-
-Notes:
-
-
+* **cleanup.policy** :  Valid policies are: "delete" and "compact".  [details](https://kafka.apache.org/documentation/#topicconfigs_cleanup.policy)
+* **delete.retention.ms**: The amount of time to retain delete tombstone markers for log compacted topics.  Default 86400000 (1 day).  [details](https://kafka.apache.org/documentation/#topicconfigs_delete.retention.ms)
+* **segment.ms**: This configuration controls the period of time after which Kafka will force the log to roll.  Default 604800000 (7 days). [details](https://kafka.apache.org/documentation/#topicconfigs_segment.ms)
+* **min.cleanable.dirty.ratio**:  This configuration controls how frequently the log compactor will attempt to clean the log. Default is 0.5 (50%).  [details](https://kafka.apache.org/documentation/#topicconfigs_min.cleanable.dirty.ratio)
+* **min.compaction.lag.ms**: the minimal time that has to pass before the message can be compacted. That is one of the reasons why we cannot expect to see only the most recent version of the message in the topic. Default 0. [details](https://kafka.apache.org/documentation/#topicconfigs_min.compaction.lag.ms)
+* **max.compaction.lag.ms**: the maximum delay between the time a message is written and the time the message becomes eligible for compaction. [details](https://kafka.apache.org/documentation/#topicconfigs_max.compaction.lag.ms)
 
 ---
 
@@ -1476,13 +1478,33 @@ Notes:
 
 <img src="../../assets/images/kafka/Delete-in-compaction.png" alt="Delete-in-compaction.png" style="width:50%;float:right;"/><!-- {"left" : 5.16, "top" : 1.18, "height" : 3.25, "width" : 5.02} -->
 
- * A delete marker deletes prior messages with the same key.
+* A delete marker deletes prior messages with the same key.
 
- * It is a message with a key and null value payload.
+* It is a message with a key and null value payload.
 
- * It is no longer retained after delete retention point.
+* It is no longer retained after delete retention point.
 
- * Will be deleted after delete retention point.
+* Will be deleted after delete retention point.
+
+Notes:
+
+---
+
+## Lab: Log Compaction Lab
+
+<img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/><!-- {"left" : 7.24, "top" : 1.28, "height" : 3.63, "width" : 2.72} -->
+
+* **Overview:**
+    - Experiment with log compaction
+
+* **Approximate Time:**  
+    - 20 - 30 mins
+
+* **Instructions:**
+    - lab-2.3: compaction
+
+* **To Instructor:**  
+    - Let students complete the lab first and then discuss the findings
 
 Notes:
 
