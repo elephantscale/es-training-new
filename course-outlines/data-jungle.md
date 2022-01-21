@@ -15,7 +15,7 @@ January 20, 2022
 
 ## Duration:
 
-* 3 days
+* 1 day
 
 ## Audience:
 
