@@ -72,6 +72,93 @@
 
 ---
 
+## WannaCry facts
+* 2017
+* 300,000 computers infected
+* Boeing, Hitachi, TSMC, Renault, etc.
+
+## How it works
+![](../images/47.png)
+
+* Run as Administrator
+
+---
+
+## In action
+
+![](../images/48.png)
+
+---
+
+## After 1 min
+
+![](../images/49.png)
+
+---
+
+## Files ruined
+
+![](../images/50.png)
+
+---
+
+## Decrypt screen
+
+![](../images/51.png)
+
+---
+
+## Ghidra we go
+
+![](../images/52.png)
+
+---
+
+## Get the file type right
+
+![](../images/53.png)
+
+---
+
+## Looking for main entry point
+
+![](../images/54.png)
+
+---
+
+## Windows function call
+
+![](../images/55.png)
+
+---
+
+## WinMain call
+
+![](../images/56.png)
+
+---
+
+## Fix the function signature
+
+![](../images/57.png)
+
+---
+
+## Strange string address
+
+![](../images/58.png)
+
+---
+
+
+
+
+
+
+
+
+
+
 ## WannaCry analysis 2
 
 * Reversing WannaCry Part 2 by stacksmashing
