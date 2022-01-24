@@ -38,9 +38,7 @@ January 20, 2022
 
 ## Course outline
 
-Course Agenda / Topics
-
-1. Getting Started with Ansible
+### Getting Started with Ansible
 
 * Getting Started with Ansible
 * Technical requirements
@@ -49,7 +47,7 @@ Course Agenda / Topics
 * Running from source versus pre-built RPMs
 * Summary
 
-2. Understanding the Fundamentals of Ansible
+### Understanding the Fundamentals of Ansible
 
 * Understanding the Fundamentals of Ansible
 * Technical requirements
@@ -60,7 +58,7 @@ Course Agenda / Topics
 * Understanding Jinja2 filters
 * Summary
 
-3. Defining Your Inventory
+### Defining Your Inventory
 
 * Defining Your Inventory
 * Technical requirements
@@ -69,7 +67,7 @@ Course Agenda / Topics
 * Special host management using patterns
 * Summary
 
-4. Playbooks and Roles
+### Playbooks and Roles
 
 * Playbooks and Roles
 * Technical requirements
@@ -82,7 +80,7 @@ Course Agenda / Topics
 * Using ansible-pull
 * Summary
 
-5. Consuming and Creating Modules
+### Consuming and Creating Modules
 
 * Consuming and Creating Modules
 * Technical requirements
@@ -93,7 +91,7 @@ Course Agenda / Topics
 * Developing custom modules
 * Summary
 
-6. Consuming and Creating Plugins
+### Consuming and Creating Plugins
 
 * Consuming and Creating Plugins
 * Technical requirements
@@ -102,7 +100,7 @@ Course Agenda / Topics
 * Creating custom plugins
 * Summary
 
-7. Coding Best Practices
+### Coding Best Practices
 
 * Coding Best Practices
 * Technical requirements
@@ -116,7 +114,7 @@ Course Agenda / Topics
 * Porting between Ansible versions
 * Summary
 
-8. Advanced Ansible Topics
+### Advanced Ansible Topics
 
 * Advanced Ansible Topics
 * Technical requirements
@@ -132,7 +130,7 @@ Course Agenda / Topics
 * Securing data with Ansible Vault
 * Summary
 
-9. Troubleshooting and Testing Strategies
+### Troubleshooting and Testing Strategies
 
 * Technical requirements
 * Using host facts to diagnose failures

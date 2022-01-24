@@ -27,7 +27,7 @@ Notes:
 
   - Ask a lot of questions
 
-* This is an IACS Cybersecurity class
+* This is an Malware with Ghidra class
   - No previous knowledge is assumed (but may be helpful)
   - Class will be based on the pace of majority of the students
 
