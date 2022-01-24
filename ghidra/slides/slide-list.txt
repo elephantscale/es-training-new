@@ -7,8 +7,8 @@ Ghidra-work.md
 Ghidra-scripting.md
 Ghidra-more.md
 Ghidra-advanced.md
-# ../../cybersecurity-common/slides/Threat-Modeling.md
-# ../../cybersecurity-common/slides/OSI_Security_Model.md
-# ../../cybersecurity-common/slides/Security_Design.md
-# ../../cybersecurity-common/slides/SLC_and_SDLC.md
-# ../../secure-coding/slides/Common-Attacks.md
+../../cybersecurity-common/slides/Threat-Modeling.md
+../../cybersecurity-common/slides/OSI_Security_Model.md
+../../cybersecurity-common/slides/Security_Design.md
+../../cybersecurity-common/slides/SLC_and_SDLC.md
+../../secure-coding/slides/Common-Attacks.md
