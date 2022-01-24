@@ -17,9 +17,18 @@ January 20, 2022
 * Contribute to the Ansible project by submitting your own code
 * Follow best practices for working with cloud environment inventories
 
+
+## You will learn to
+
+* Install an Ansible Cluster
+* Prototype virtual machines
+* Run Ansible Playbooks
+* Deploy configuration management
+* Automating with Ansible Tower and Jenkins CI
+
 ## Duration:
 
-* 5 day
+* 3 days
 
 ## Audience:
 
