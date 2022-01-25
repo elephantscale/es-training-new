@@ -62,6 +62,30 @@
 
 ---
 
+## Headless mode
+
+* For headless analyzer
+  * `analyzeHeadless` 
+  * `analyzeHeadless.bat`
+  * Help file called analyzeHeadlessREADME.html
+  * support directory of your Ghidra installation
+
+---
+
+## Headless files
+
+![](../images/66.png)
+
+---
+
+## Headless help
+
+![](../images/67.png)
+
+---
+
+
+
 ## WannaCry analysis 1
 
 * Reversing WannaCry Part 1 by stacksmashing
