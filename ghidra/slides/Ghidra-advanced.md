@@ -150,14 +150,56 @@
 
 ---
 
+## Call is strange_url
 
+![](../images/59.png)
 
+---
 
+## What do we do with strange_url?
 
+![](../images/60.png)
 
+---
 
+## Copy by 4 bytes into strange_url_buffer
 
+![](../images/61.png)
 
+---
+
+## Leave a comment
+
+![](../images/62.png)
+
+---
+
+## Define HINTERNET
+
+![](../images/63.png)
+
+---
+
+## Call to the 'strange' URL
+
+![](../images/64.png)
+
+---
+
+## Killswitch domain
+
+![](../images/65.png)
+
+---
+
+## What the report says
+
+* We observed the emergence of a new WannaCry variant with the internet-check URL
+* www.ifferfsodp9ifjaposdfjhgosurijfaewrwergwea[.]testing. 
+* A bug in the code logic causes the malware to actually query www.ifferfsodp9ifjaposdfjhgosurijfaewrwergwea[.]test.
+* The malware will encrypt your files only if it cannot contact this domain
+
+---
 
 ## WannaCry analysis 2
 
