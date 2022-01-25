@@ -18,4 +18,5 @@ Kafka-Connect.md
 Kafka-Monitoring.md
 Kafka-Best-Practices.md
 Kafka-Case-Studies.md
+Kafka-Design-Exercises.md
 

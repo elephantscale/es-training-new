@@ -26,5 +26,4 @@ Kafka-Admin.md
 Kafka-Monitoring.md
 Kafka-Best-Practices.md
 Kafka-Case-Studies.md
-
-Kafka-Workshop.md
+Kafka-Design-Exercises.md
