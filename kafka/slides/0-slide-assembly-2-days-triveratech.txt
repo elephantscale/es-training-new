@@ -15,5 +15,6 @@ Kafka-Streams.md
 Kafka-Monitoring.md
 Kafka-Admin.md
 Kafka-Best-Practices.md
+Kafka-Design-Exercises.md
 Kafka-Case-Studies.md
 
