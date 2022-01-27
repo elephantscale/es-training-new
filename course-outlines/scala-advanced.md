@@ -5,10 +5,10 @@
 January 26, 2022
 
 ## Overview
-
+ 
 * Scala may be the next wave in developer productivity. It is concise, object-oriented, functional, offers support for concurrency, but is compatible with Java and is JVM – based. For this reason, Scala has been attracting the interest of many programming shops. However, these advantages are only possible through an effort of study. The Scala Programming course is designed to help this process through hands-on training.
-
-* This course teaches how to understand the essence of Scala and write functional programming software that is functional and “scalaesque” enough.
+* This course is teaching Scala on the intermediate and advanced levels. It is targeted for developers who either have the basic knowledge of Scala or have a solid foundation of Java.
+* This course teaches how to understand the essence of Scala and write functional programming software that is efficient and “scalaesque” enough.
 
 ## Goals
 * Learn one of the hottest languages
@@ -21,7 +21,7 @@ January 26, 2022
 
 ## Skill Level
 
-* Introductory - Intermediate
+* Intermediate - advanced
 
 ## Duration
 * Three days
@@ -31,9 +31,9 @@ January 26, 2022
 
 ## Prerequisites
 
-* Comfortable with a programming language such as Java
-* Or, coding experience in any other language
-  
+* Basic knowledge of Scala, or
+* Scala introductory course, or
+* Good knowledge of Java
 
 ## Lab environment
 
@@ -53,51 +53,81 @@ January 26, 2022
 
 ## Detailed outline
 
-### OO Basics
+### About Scala 3
+* An Introduction to Scala 3
+* Scala vs. Java
 
-* Scala – a scalable language
-* Classes
-* Class parameters, fields, methods
-* Operators
-* Default arguments
-* Packages
-* Check preconditions
-  
-### Scala design
+### Understanding Types in Scala
+* Type declarations
+* Type aliases
+* Parameterized types
 
-* Scala hierarchy
-* Inheritance and Traits
-* Testing in Scala
-* Case classes, pattern matching
-* Lists and other collections
-* Mutable objects
-* Type parameterization
-* Abstract members
-* Implicits
+### Functions and collections
+* Ways to define a function
+* Polymorphism 
+* Recursion
+* Collections and higher order functions
 
-### Collections
+### Implicits and Type Classes
+* Getting to Know Implicits and Type Classes
+* Types of implicits
+* View and context bounds
+* Type classes
+* Implicit scope resolution
 
-* From loops to collections
-* Collections in depth
-* Extractors
-* Annotations
-* Scala GUI
+### Property-Based Testing in Scala
+* Introduction to property-based testing
+* Properties and Generators
+* Test-driven development
 
-### Functional programming
+### Exploring Scala Effects
+* Introduction to effects
+* Option
+* Either
+* Try
+* Future
+* Cats library
+* Cats effects
 
-* Functional programming 
-  * Why functional programming
-  * Functional programming best practices
-  
-* Build process
-  * Troubleshooting .SBT
-  * Libraries and conflicts
+### Understanding Algebraic Structures
+* Understanding Algebraic Structures
+* Introduction to abstract algebraic structures
+* Semigroup
+* Monoid
+* Foldable
+* Group
 
-### Concurrency (Akka)
+### Basic Monads
+* Familiarizing Yourself with Basic Monads
+* Introduction to monads
+* Id Monad
+* State monad
+* Reader monad
+* Writer monad
 
-* Immutability
-  * Best practices and exercises
-* Futures and concurrency
-* Akka Overview
-* Akka use cases
-* Akka sample project
+### Monad Transformers and Free Monad
+* Look at Monad Transformers and Free Monad
+* Combining monads
+* Monad transformers
+* Free monads
+
+### Introduction to the Akka and Actor Models
+* An Introduction to the Akka and Actor Models
+* Introduction to the actor model
+* Akka basics
+* Advanced topics
+* Testing actors
+* Running the application
+
+### Building Reactive Applications with Akka Typed
+* Introduction
+* Akka Typed basics
+* Akka Typed – beyond the basics
+* Testing
+* Running the application
+
+### Basics of Akka Streams
+* Introduction to Akka Streams
+* Basics of Akka Streams
+* Testing
+* Running the application
