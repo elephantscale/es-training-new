@@ -15,13 +15,13 @@ Ghidra, an open source software reverse engineering (SRE) framework created by t
 
 You'll begin by installing Ghidra and exploring its features, and gradually learn how to automate reverse engineering tasks using Ghidra plug-ins. You'll then see how to set up an environment to perform malware analysis using Ghidra and how to use it in the headless mode. As you progress, you'll use Ghidra scripting to automate the task of identifying vulnerabilities in executable binaries. The course also covers advanced topics such as developing Ghidra plug-ins, developing your own GUI, incorporating new process architectures if needed, and contributing to the Ghidra project.
 
-## Learning objectives
+## You will learn to
 
-* Develop the skills you need to harness the power of Ghidra
+* Use Ghidra to reverse engineer malware
+* Use Ghidra to analyze malicious code
 * Analyze potential vulnerabilities in the code.
 * Point to potential vulnerabilities in the networks.
-* Avoiding potential vulnerabilities in code and networks.
-* Prevent potential vulnerabilities in networks.
+* Find Ghidra additional scripting power and headless mode
 
 ## Duration:
 

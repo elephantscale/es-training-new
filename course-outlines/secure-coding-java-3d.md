@@ -16,11 +16,18 @@ of secure coding for Java.
 ## Audience
 Developers, team leads, project managers
 
+## You will learn to
+* Do threat modeling and create a lay of the land for what you need to defend
+* Learn about common attacks, with real-world labs, and find ways to defend against them
+* Learn good Java practices and Java coding standards to make your software more secure and less vulnerable to attacks
+* How to write secure Java, Servlets, JavaScript, and RESTful applications
+* Use new and upcoming frameworks for designing your software to be secure be default
+
 ## Skill Level
 Introductory - Intermediate
 
 ## Duration
-Two days
+Three days
 
 ## Format
 Lectures and hands on labs. (50% - 50%)
