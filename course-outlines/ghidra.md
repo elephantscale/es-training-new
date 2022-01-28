@@ -21,7 +21,7 @@ You'll begin by installing Ghidra and exploring its features, and gradually lear
 * Use Ghidra to analyze malicious code
 * Analyze potential vulnerabilities in the code.
 * Point to potential vulnerabilities in the networks.
-* Find Ghidra additional scripting power and headless mode
+* Find Ghidra additional scripting power and headless mode:
 
 ## Duration:
 
