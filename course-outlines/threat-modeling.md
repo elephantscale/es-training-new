@@ -10,6 +10,13 @@ This course will teach threat modeling for secure coding practices
 ## Audience
 Developers, team leads, project managers
 
+## The students will learn
+* Know what threat modeling for and what it does
+* Apply threat modeling concepts to protect your enterprise
+* Connect threat modeling to common exploits
+* Use Kill Chain and MITRE
+
+
 ## Skill Level
 Introductory - Intermediate
 
@@ -21,7 +28,7 @@ Lectures and hands on labs. (50% - 50%)
 
 ## Prerequisites
 * Recommended: Cybersecurity awareness
-*  Familiar with code developement
+*  Familiar with code development
 
 
 ## Lab environment
