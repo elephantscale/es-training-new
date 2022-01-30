@@ -19,6 +19,9 @@ July 27, 2021
 ## Skill Level
 * Introductory - Intermediate
 
+## Learning objectives
+
+
 ## You will learn to
 * Do threat modeling and create a lay of the land for what you need to defend
 * Learn about common attacks, with real-world labs, and find ways to defend against them
