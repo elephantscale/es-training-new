@@ -21,6 +21,9 @@ July 27, 2021
 
 ## Learning objectives
 
+* Establish the overall security landscape
+* Become cognizant in the best security practices for software application development
+* Familiarize yourself with common attacks and how the best practices help protect against these
 
 ## You will learn to
 * Do threat modeling and create a lay of the land for what you need to defend
