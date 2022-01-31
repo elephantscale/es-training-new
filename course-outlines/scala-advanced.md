@@ -66,6 +66,7 @@ January 26, 2022
 * Ways to define a function
 * Polymorphism 
 * Recursion
+* Tail recursion
 * Collections and higher order functions
 
 ### Implicits and Type Classes
@@ -131,3 +132,4 @@ January 26, 2022
 * Basics of Akka Streams
 * Testing
 * Running the application
+* ZIO
