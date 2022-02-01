@@ -57,21 +57,28 @@ Cloud based lab environment will be provided to students, no need to install any
 * Introducing the Anaconda distribution of Python.
 * IDEs
 * Using Jupyter notebooks. 
+
 ### Pandas
 * Series and Dataframes
 * Loading data using Pandas
 * Labs
+
 ### NumPy and SciPy
+* 
 * Arrays
 * Matrices
 * Linear Algebra
 * Labs
 * Visualizing data with matlibplot
+
 ### Doing Data Science with Scikit-learn
+
 * Introducing Scikit-Learn
 * Clustering Data
 * Building a Classifier
+
 ### Big Data With Spark
+
 * Introduction to Spark, PySpark, and Databricks
 * Using the Spark framework for Big Data
 * Using MLLib or Data Science in PySpark
