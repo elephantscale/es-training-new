@@ -42,12 +42,11 @@ Lectures and hands on labs. (50%  50%)
 
 ## Lab environment
 
-* Zero Install: There is no need to install Kafka software on students' machines!
-* A lab environment in the cloud will be provided for students.
+A cloud based lab environment will be provided.
 
-### Students will need the following
+## Students will need the following
 
-* A reasonably modern laptop with unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly
+* A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
 * Chrome browser
 * SSH client for your platform
 
@@ -104,15 +103,13 @@ Lectures and hands on labs. (50%  50%)
 * Labs:
   - Kafka Streaming APIs
 
-### Monitoring and Instrumenting Kafka
+### Monitoring Kafka
 
-* Monitoring Kafka metrics
-* Introduction to Metrics library
-* Instrumenting Kafka applications with the Metrics library
-* Using Grafana to visualize metrics
-* Labs
-    - Monitor Kafka cluster
-    - Instrument Kafka applications with the metrics library
+* Monitoring tools overview
+* Monitoring Kafka
+* Cluster level and host level monintoring
+* Identifying performance bottlenecks
+* Troubleshooting common Kafka issues
 
 ### Kafka Best Practices
 
