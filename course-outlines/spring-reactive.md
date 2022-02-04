@@ -29,7 +29,7 @@ February 04, 2022
 ## Prerequisites
 
 * Java
-* Familiarity microservices
+* Familiarity with microservices
 
 # Lab environment
 
