@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="-1 32 500 216" width="0px" height="0px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g>
+    <title>terminal</title>
+    <rect x="25.307" y="65.951" width="156.442" height="171.779" style="stroke: rgb(0, 0, 0); fill: rgb(170, 214, 216);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Go Mono&quot;; font-size: 21.5px; white-space: pre;" transform="matrix(1, 0, 0, 1.193481, 13.80368, -65.375511)" x="49.847" y="107.362">Netcat</text>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Go Mono&quot;; font-size: 21.5px; white-space: pre;"><tspan x="33.742" y="99.693">cat</tspan><tspan x="33.742000579833984" dy="1em">​</tspan><tspan>dog</tspan><tspan x="33.742000579833984" dy="1em">​</tspan><tspan>cat</tspan><tspan x="33.742000579833984" dy="1em">​</tspan><tspan>fish<tspan x="33.742000579833984" dy="1em">​</tspan>cat<tspan x="33.742000579833984" dy="1em">​</tspan>dog</tspan></text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 39, 0)">
+    <title>spark streaming</title>
+    <rect x="269.939" y="68.252" width="141.104" height="171.012" style="stroke: rgb(0, 0, 0); fill: rgb(216, 195, 189);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Go Mono&quot;; font-size: 21.5px; white-space: pre;" x="266.472" y="60.546">Spark streaming</text>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Go Mono&quot;; font-size: 21.5px; white-space: pre;" transform="matrix(1, 0, 0, 1, -16.104294, 1.533742)"><tspan x="291.411" y="121.166">cat  --&gt; 3</tspan><tspan x="291.4110107421875" dy="1em">​</tspan><tspan>dog  --&gt; 2</tspan><tspan x="291.4110107421875" dy="1em">​</tspan><tspan>fish --&gt; 1</tspan></text>
+  </g>
+  <g>
+    <title>network</title>
+    <path d="M 185.583 125.368 H 279.681 L 279.681 120.368 L 303.681 130.368 L 279.681 140.368 L 279.681 135.368 H 185.583 V 125.368 Z" style="stroke: rgb(0, 0, 0); fill: rgb(216, 144, 148);" bx:shape="arrow 185.583 120.368 118.098 20 10 24 0 1@071d5085"/>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Go Mono&quot;; font-size: 21.5px; white-space: pre;" transform="matrix(1, 0, 0, 1, 1.533742, 6.90184)"><tspan x="199.387" y="150.307">Network</tspan><tspan x="199.387" dy="1em">​</tspan><tspan>Socket</tspan></text>
+  </g>
+</svg>

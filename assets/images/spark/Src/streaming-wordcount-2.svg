@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="6 25 500 278" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g>
+    <rect x="29.661" y="75.565" width="123.587" height="82.627" style="stroke: rgb(0, 0, 0); fill: rgb(168, 194, 216);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="41.667" y="60.734">netcat</text>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;"><tspan x="48.729" y="98.164">cat</tspan><tspan x="48.729" dy="1em">​</tspan><tspan>cat dog</tspan></text>
+  </g>
+  <g>
+    <rect x="233.757" y="75.565" width="213.276" height="206.215" style="stroke: rgb(0, 0, 0); fill: rgb(152, 197, 216);"/>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="251.412" y="57.91">spark streaming</text>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;"><tspan x="247.881" y="96.045">------------------</tspan><tspan x="247.88099670410156" dy="1em">​</tspan><tspan>Batch: 2</tspan><tspan x="247.88099670410156" dy="1em">​</tspan><tspan>------------------</tspan><tspan x="247.88099670410156" dy="1em">​</tspan><tspan>+-----+-----+</tspan><tspan x="247.88099670410156" dy="1em">​</tspan><tspan>|value|count|</tspan><tspan x="247.88099670410156" dy="1em">​</tspan><tspan>+-----+-----+</tspan><tspan x="247.88099670410156" dy="1em">​</tspan><tspan>|  dog|    1|</tspan><tspan x="247.88099670410156" dy="1em">​</tspan><tspan>|  cat|    2|</tspan><tspan x="247.88099670410156" dy="1em">​</tspan><tspan>+-----+-----+</tspan></text>
+    <path d="M 167.373 100.932 H 211.173 L 211.173 95.932 L 235.173 105.932 L 211.173 115.932 L 211.173 110.932 H 167.373 V 100.932 Z" style="stroke: rgb(0, 0, 0); fill: rgb(7, 7, 7);" transform="matrix(0.999946, -0.010416, 0.010416, 0.999946, -1.094321, 1.74912)" bx:shape="arrow 167.373 95.932 67.8 20 10 24 0 1@32b84852"/>
+  </g>
+</svg>

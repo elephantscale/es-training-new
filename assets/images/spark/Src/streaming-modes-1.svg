@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="27 25 406 249" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path d="M 51.554 55.734 H 338.995 L 338.995 50.734 L 362.995 60.734 L 338.995 70.734 L 338.995 65.734 H 51.554 V 55.734 Z" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" transform="matrix(0.999997, -0.002268, 0.002268, 0.999997, -0.137587, 0.117058)" bx:shape="arrow 51.554 50.734 311.441 20 10 24 0 1@c60abd44"/>
+  <rect x="46.61" y="96.751" width="116.526" height="88.983" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="50.141" y="85.452">batch 1</text>
+  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" transform="matrix(1, 0, 0, 1.016934, -27.542374, -7.563033)"><tspan x="80.508" y="130.65">views  = 1</tspan><tspan x="80.50800323486328" dy="1em">​</tspan><tspan>clicks = 2</tspan></text>
+  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="188.559" y="44.492">time</text>
+  <rect x="251.412" y="96.045" width="122.882" height="88.276" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="254.237" y="84.746">batch 2</text>
+  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="259.887" y="127.119">views   = 2<tspan x="259.8869934082031" dy="1em">​</tspan></text>
+  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="55.791" y="223.87">total:<tspan x="55.79100036621094" dy="1em">​</tspan>  views  = 1<tspan x="55.79100036621094" dy="1em">​</tspan>  clicks = 2</text>
+  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" transform="matrix(1, 0, 0, 1, 1.412429, 8.474576)"><tspan x="253.531" y="215.395">total:</tspan><tspan x="253.531005859375" dy="1em">​</tspan><tspan>   views  = 3<tspan x="253.531005859375" dy="1em">​</tspan>   clicks = 2  </tspan></text>
+</svg>
