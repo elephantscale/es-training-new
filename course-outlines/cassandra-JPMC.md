@@ -40,7 +40,7 @@ Introductory - Intermediate
 
 ## Duration
 
-3 days
+5 half-days  (20 hrs)
 
 ## Prerequisites
 
@@ -58,6 +58,8 @@ A cloud based lab environment will be provided.
 * SSH client for your platform
 
 ## Detailed Outline
+
+## Session 1
 
 ### Introduction to Big Data / NoSQL
 
@@ -77,6 +79,8 @@ A cloud based lab environment will be provided.
 * Quorum and consistency levels
 * Labs: installing Cassandra, interacting with Cassandra using CQLSH
 
+## Session 2
+
 ### Data Modeling – part 1
 
 * introduction to CQL
@@ -84,29 +88,33 @@ A cloud based lab environment will be provided.
 * Creating keyspaces and tables
 * Choosing columns and types
 * Choosing primary keys
-* Data layout for rows and columns
 * Time to live (TTL)
 * Querying with CQL
 * CQL updates
 * Collections (list, map, and set)
 * Labs: various data modeling exercises using CQL; experimenting with queries and supported data types
 
+## Session 3
+
 ### Data Modeling – part 2
 
 * Creating and using secondary indexes
 * Composite keys (partition keys and clustering keys)
+* Understanding partition keys and data distribution
 * Time series data
 * Best practices for time series data
 * Counters
 * Lightweight transactions (LWT)
 * Labs: creating and using indexes; modeling time series data
 
-### C\* Java API
+## C\* Java API
   
 * Introduction to Java driver
 * CRUD (Create / Read / Update, Delete) operations using Java client
 * Asynchronous queries
 * Labs: using Java API for Cassandra
+
+## Session 4
 
 ### C\* Internals
 
@@ -123,6 +131,8 @@ A cloud based lab environment will be provided.
 * Hardware selection
 * Software dependencies
 * Cassandra distributions
+* Install checklist and process
+* Benchmarking tools
 * Lab: students install Cassandra, run benchmarks
 
 ### C\* Best Practices
@@ -131,6 +141,8 @@ A cloud based lab environment will be provided.
 * Performance tuning
 * Troubleshooting tools and tips
 * "Anti-patterns" - how NOT to use C\*
+
+## Session 5
 
 ### C\* Case Studies
 
@@ -142,7 +154,7 @@ A cloud based lab environment will be provided.
 * Multiple use cases from various domains are presented
 * Students work in groups to come up designs and models,  discuss various designs, analyze decisions
 
-### C\* Workshop (Time permitting)
+### C\* Workshop
 
 * In this section, attendees will implement a real-world use case using C\*
 * **Attendees will work as teams**
