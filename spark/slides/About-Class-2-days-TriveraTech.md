@@ -1,9 +1,9 @@
 
-<img src="../../assets/images/logos/TriveraTech-logo-2-large.jpg" style="width:25%;float:right;" /> <!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
-
 # Working With Apache Spark3
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /> <!-- {"left": 3.88, "top": 7.9, "height": 1.81, "width": 3.41} --> &nbsp;  &nbsp; 
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /> <!-- {"left": 3.88, "top": 7.9, "height": 1.81, "width": 3.41} --> &nbsp;  &nbsp;
+<img src="../../assets/images/logos/TriveraTech-logo-2-large.jpg" style="width:25%;" /> <!-- {"left": 8.66, "top": 7.9, "height": 1.81, "width": 4.93} -->
+
 
 
 
@@ -70,8 +70,9 @@ Notes:
 ---
 
 ## Learn By Doing
+
 <img src="../../assets/images/generic/3rd-party/simpsons-1.png"  style="width:54%;"/> <!-- {"left": 1.05, "top": 2.98, "height": 6.95, "width": 8.62} -->  &nbsp;
-<img src="../../assets/images/spark/3rd-party/after-the-class-spark.png" style="width:40%;"/> <!-- {"left": 9.18, "top": 4.52, "height": 5.18, "width": 6.34} -->
+<img src="../../assets/images/spark/3rd-party/after-the-class-spark.png" style="width:41%;"/> <!-- {"left": 9.18, "top": 4.52, "height": 5.18, "width": 6.34} -->
 
 
 Notes:

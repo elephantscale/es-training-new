@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-249 -39 1520 510" width="1520" height="510">
+  <defs>
+    <font-face font-family="Geeza Pro" font-size="40" panose-1="2 0 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-384.26763" underline-thickness="45.207957" slope="0" x-height="496.38336" cap-height="669.07776" ascent="895.1111" descent="-330.91736" font-weight="700">
+      <font-face-src>
+        <font-face-name name="GeezaPro-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="40" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-02-11 10:08:18 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_58">
+        <g id="Graphic_3">
+          <path d="M -240.56504 56.357215 L 466.56504 56.357215 C 470.43103 56.357215 473.56504 59.49122 473.56504 63.357215 L 473.56504 463 C 473.56504 466.866 470.43103 470 466.56504 470 L -240.56504 470 C -244.43103 470 -247.56504 466.866 -247.56504 463 L -247.56504 63.357215 C -247.56504 59.49122 -244.43103 56.357215 -240.56504 56.357215 Z" fill="white"/>
+          <path d="M -240.56504 56.357215 L 466.56504 56.357215 C 470.43103 56.357215 473.56504 59.49122 473.56504 63.357215 L 473.56504 463 C 473.56504 466.866 470.43103 470 466.56504 470 L -240.56504 470 C -244.43103 470 -247.56504 466.866 -247.56504 463 L -247.56504 63.357215 C -247.56504 59.49122 -244.43103 56.357215 -240.56504 56.357215 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_5">
+          <line x1="-167.3704" y1="129.09189" x2="-167.3704" y2="393.2483" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_6">
+          <line x1="449.3318" y1="384.59574" x2="-177.14907" y2="384.59574" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_7">
+          <line x1="449.3318" y1="320.78627" x2="-165.82748" y2="320.78627" stroke="#8e9492" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+        <g id="Line_8">
+          <line x1="449.3318" y1="256.9768" x2="-165.82748" y2="256.9768" stroke="#8e9492" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+        <g id="Line_9">
+          <line x1="449.3318" y1="193.16733" x2="-165.82748" y2="193.16733" stroke="#8e9492" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+        <g id="Line_10">
+          <path d="M 449.3318 129.26256 L 228.1647 129.35786 L -165.82748 129.26256" stroke="#8e9492" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+        <g id="Line_14">
+          <line x1="-167.67" y1="320.9886" x2="-177.77706" y2="320.9886" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_13">
+          <line x1="-167.67" y1="257.17913" x2="-177.77706" y2="257.17913" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_12">
+          <line x1="-167.67" y1="193.36966" x2="-177.77706" y2="193.36966" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_11">
+          <path d="M -167.67 129.46489 L -171.30377 129.56019 L -177.77706 129.46489" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_16">
+          <rect x="-105.82568" y="153.95844" width="83.92462" height="230.6373" fill="#aa97fe"/>
+          <rect x="-105.82568" y="153.95844" width="83.92462" height="230.6373" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_17">
+          <rect x="99.78985" y="378.3791" width="83.92462" height="6.3720546" fill="#aa97fe"/>
+          <rect x="99.78985" y="378.3791" width="83.92462" height="6.3720546" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_18">
+          <rect x="-173.84218" y="-38.13569" width="573.6844" height="155.22898" fill="white"/>
+          <text transform="translate(-112.7052 -17.946006)" fill="#250060">
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" x="0" y="39"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">Data</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="39"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">Load</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="39"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">time</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="39"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">in</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="39"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">secs</tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" x="88.74539" y="96.4248">lower</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="96.4248"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="96.4248">is</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="96.4248"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="96.4248">better</tspan>
+          </text>
+        </g>
+        <g id="Graphic_19">
+          <text transform="translate(-96.34262 390.83906)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">json</tspan>
+          </text>
+        </g>
+        <g id="Graphic_20">
+          <text transform="translate(72.85446 395.81237)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">parquet</tspan>
+          </text>
+        </g>
+        <g id="Graphic_21">
+          <text transform="translate(314.86162 403.10363)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">ORC</tspan>
+          </text>
+        </g>
+        <g id="Line_22">
+          <line x1="38.400336" y1="396.5547" x2="38.400336" y2="384.59574" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_23">
+          <line x1="243.5494" y1="397.17637" x2="243.5494" y2="385.2174" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_24">
+          <line x1="448.512" y1="396.735" x2="448.512" y2="384.776" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_25">
+          <text transform="translate(-210.8372 364.56653)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_26">
+          <text transform="translate(-210.8372 300.4249)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">2</tspan>
+          </text>
+        </g>
+        <g id="Graphic_27">
+          <text transform="translate(-210.8372 172.14163)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">6</tspan>
+          </text>
+        </g>
+        <g id="Graphic_28">
+          <text transform="translate(-210.8372 236.28326)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">4</tspan>
+          </text>
+        </g>
+        <g id="Graphic_29">
+          <text transform="translate(-210.8372 108)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">8</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_57">
+        <g id="Graphic_55">
+          <path d="M 556 56.357215 L 1263.1301 56.357215 C 1266.9961 56.357215 1270.1301 59.49122 1270.1301 63.357215 L 1270.1301 463 C 1270.1301 466.866 1266.9961 470 1263.1301 470 L 556 470 C 552.134 470 549 466.866 549 463 L 549 63.357215 C 549 59.49122 552.134 56.357215 556 56.357215 Z" fill="white"/>
+          <path d="M 556 56.357215 L 1263.1301 56.357215 C 1266.9961 56.357215 1270.1301 59.49122 1270.1301 63.357215 L 1270.1301 463 C 1270.1301 466.866 1266.9961 470 1263.1301 470 L 556 470 C 552.134 470 549 466.866 549 463 L 549 63.357215 C 549 59.49122 552.134 56.357215 556 56.357215 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_54">
+          <line x1="629.19464" y1="129.09189" x2="629.19464" y2="393.2483" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_53">
+          <line x1="1245.8969" y1="384.59574" x2="629.19464" y2="384.91473" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_52">
+          <line x1="1245.8969" y1="299.51644" x2="630.73756" y2="299.51644" stroke="#8e9492" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+        <g id="Line_51">
+          <line x1="1245.8969" y1="214.43715" x2="630.73756" y2="214.43715" stroke="#8e9492" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+        <g id="Line_49">
+          <path d="M 1245.8969 129.26256 L 1024.7297 129.35786 L 630.73756 129.26256" stroke="#8e9492" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+        <g id="Line_48">
+          <line x1="628.89505" y1="384.82454" x2="618.788" y2="384.82454" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_47">
+          <line x1="628.89505" y1="299.51644" x2="618.788" y2="299.51644" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_46">
+          <line x1="628.89505" y1="214.43715" x2="618.788" y2="214.43715" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_44">
+          <path d="M 628.89505 129.09393 L 625.2613 129.18923 L 618.788 129.09393" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_43">
+          <rect x="690.7394" y="153.95844" width="83.92462" height="230.6373" fill="#aa97fe"/>
+          <rect x="690.7394" y="153.95844" width="83.92462" height="230.6373" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_42">
+          <rect x="896.3549" y="378.3791" width="83.92462" height="6.3720546" fill="#aa97fe"/>
+          <rect x="896.3549" y="378.3791" width="83.92462" height="6.3720546" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_41">
+          <rect x="622.72286" y="-38.13569" width="573.6844" height="155.22898" fill="white"/>
+          <text transform="translate(723.41885 -17.946006)" fill="#250060">
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" x="8526513e-20" y="39"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">Query</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="39"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">time</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="39"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">in</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="39"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">secs</tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" x="49.18638" y="96.4248">lower</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="96.4248"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="96.4248">is</tspan>
+            <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="96.4248"> </tspan>
+            <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="96.4248">better</tspan>
+          </text>
+        </g>
+        <g id="Graphic_40">
+          <text transform="translate(700.2224 390.83906)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">json</tspan>
+          </text>
+        </g>
+        <g id="Graphic_39">
+          <text transform="translate(869.4195 395.81237)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">parquet</tspan>
+          </text>
+        </g>
+        <g id="Graphic_38">
+          <text transform="translate(1111.4267 403.10363)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">ORC</tspan>
+          </text>
+        </g>
+        <g id="Line_37">
+          <line x1="834.9654" y1="396.5547" x2="834.9654" y2="384.59574" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_36">
+          <line x1="1040.1145" y1="397.17637" x2="1040.1145" y2="385.2174" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_35">
+          <line x1="1245.077" y1="396.735" x2="1245.077" y2="384.776" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_34">
+          <text transform="translate(585.7278 364.56653)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_33">
+          <text transform="translate(585.7278 279.01644)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">2</tspan>
+          </text>
+        </g>
+        <g id="Graphic_32">
+          <text transform="translate(585.7278 108.99293)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">6</tspan>
+          </text>
+        </g>
+        <g id="Graphic_31">
+          <text transform="translate(585.7278 194.0285)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#250060" x="0" y="35">4</tspan>
+          </text>
+        </g>
+        <g id="Graphic_56">
+          <rect x="1109.523" y="359.56653" width="83.92462" height="26.231537" fill="#aa97fe"/>
+          <rect x="1109.523" y="359.56653" width="83.92462" height="26.231537" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

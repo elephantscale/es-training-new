@@ -1,6 +1,6 @@
 # Spark Streaming
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 6.75, "top" : 7.69, "height" : 2.13, "width" : 4} -->    
 
 ---
 
@@ -23,15 +23,15 @@
 
 * More use cases at [BigDataUseCases.info](www.BigDataUseCases.info)
 
-<img src="../../assets/images/logos/netflix-logo-1.png" alt="netflix.png" style="width:25%;"/><!-- {"left" : 2.12, "top" : 5.52, "height" : 1.47, "width" : 3.18} -->
-  &nbsp;  &nbsp;
-<img src="../../assets/images/streaming/3rd-party/the-weather-company.png" alt="the-weather-company.png" style="width:20%;"/><!-- {"left" : 6.24, "top" : 5.52, "height" : 1.47, "width" : 1.89} -->
+<img src="../../assets/images/logos/netflix-logo-1.png" alt="netflix.png" style="width:25%;"/><!-- {"left" : 4.31, "top" : 7.77, "height" : 2, "width" : 4.33} -->    
+  &nbsp;  &nbsp;<img src="../../assets/images/streaming/3rd-party/the-weather-company.png" alt="the-weather-company.png" style="width:20%;"/><!-- {"left" : 10.17, "top" : 7.59, "height" : 2.35, "width" : 3.02} -->    
 
 ---
 
 ## Spark Components
 
-<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 2.16, "top" : 2.9, "height" : 7.92, "width" : 13.17} -->  
+
 
 Notes:
 
@@ -48,8 +48,7 @@ Notes:
     - Needs to be processed in real time too
     - Spark can process events in **mini-batches** - every few seconds
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/kafka/stream-01.png" style="width:50%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/kafka/stream-01.png" style="width:50%;" /><!-- {"left" : 4.03, "top" : 6.11, "height" : 5.63, "width" : 9.44} -->    
 
 ---
 
@@ -82,23 +81,22 @@ Notes:
 
 * Spark will execute the query **periodically**
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/spark/3rd-party/structured-streaming-stream-as-a-table.png" style="width:70%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/3rd-party/structured-streaming-stream-as-a-table.png" style="width:70%;" /><!-- {"left" : 2.01, "top" : 4.09, "height" : 7.52, "width" : 12.62} -->    
 
 ---
 
 ## Streaming Architecture
 
-* Data is read from **sources**.  Sources can be
+* Data is read from **sources.** Sources can be
     - Kafka
     - Network streams
 
-* Data is send to **sinks**.  Sinks can be
+* Data is send to **sinks.** Sinks can be
     - HDFS
     - Databases
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/spark/3rd-party/spark-streaming-01.png" style="width:80%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/3rd-party/spark-streaming-01.png" style="width:80%;" /><!-- {"left" : 3.8, "top" : 5.32, "height" : 5.9, "width" : 9.9} -->    
+
 
 ---
 
@@ -107,15 +105,13 @@ Notes:
 
 * Here we see the word count query running periodically and updating the results
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/spark/3rd-party/structured-streaming-example-model.png" style="width:80%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/3rd-party/structured-streaming-example-model.png" style="width:80%;" /><!-- {"left" : 2.07, "top" : 2.88, "height" : 7.96, "width" : 13.35} -->    
 
 ---
 
 ## Programming Model
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/spark/3rd-party/structured-streaming-model.png" style="width:60%;float:right;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/3rd-party/structured-streaming-model.png" style="width:60%;float:right;" /><!-- {"left" : 8.62, "top" : 1.89, "height" : 6.35, "width" : 10.65} -->    
 
 * **Input table / Source** - continuously appended with new data
 
@@ -165,6 +161,8 @@ stream.writeStream
       .option("topic", "topic1")
       .start() 
 ```
+<!-- {"left" : 1.13, "top" : 2.23, "height" : 9.25, "width" : 10.84} -->    
+
 
 ---
 
@@ -200,9 +198,9 @@ stream.writeStream
 .... , linkedin.com,  viewed
 
 ```
+<!-- {"left" : 0.8, "top" : 2.43, "height" : 3.09, "width" : 5.97} -->    
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/spark/streaming-modes-1.png" style="width:40%;float:right;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/streaming-modes-1.png" style="width:40%;float:right;" /><!-- {"left" : 11.96, "top" : 1.93, "height" : 4.1, "width" : 5.32} -->  
 
 * If we are saving the datastream to a file system or HDFS, we will use **append** mode
     - it will write individual records
@@ -218,7 +216,6 @@ stream.writeStream
 
 * Not all sinks support all output formats
 
-<br />
 
 | Sink        | Append | Update | Complete |
 |-------------|--------|--------|----------|
@@ -227,7 +224,7 @@ stream.writeStream
 | Console     | yes    | yes    | yes      |
 | Memory      | yes    | no     | yes      |
 
-<br />
+<!-- {"left" : 0.99, "top" : 3.27, "height" : 2.5, "width" : 15.51} -->    
 
 * [See here for sinks and supported output formats](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-sinks)
 
@@ -249,8 +246,8 @@ stream.writeStream
 
 * Typical batch interval is in seconds (1, 5, 10, 30 seconds).  Can achieve **latencies as low as 100 milliseconds**
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/spark/3rd-party/streaming-flow.png" style="width:60%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/3rd-party/streaming-flow.png" style="width:60%;" /><!-- {"left" : 4.77, "top" : 7.15, "height" : 4.74, "width" : 7.95} -->    
+
 
 ---
 
@@ -268,8 +265,8 @@ stream.writeStream
 
 * We will see both **Scala and Python** APIs
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/spark/streaming-wordcount-1.png" style="width:50%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/streaming-wordcount-1.png" style="width:50%;" /><!-- {"left" : 3.71, "top" : 5.56, "height" : 4.21, "width" : 10.07} --> 
+
 
 ---
 
@@ -307,6 +304,8 @@ val query = wordCounts.writeStream
 query.awaitTermination()
 spark.stop()
 ```
+<!-- {"left" : 0.8, "top" : 2.27, "height" : 9.03, "width" : 16.11} --> 
+   
 
 ---
 
@@ -317,19 +316,21 @@ spark.stop()
 ```bash
  $  ncat -l -k -p 10000
 ```
+<!-- {"left" : 0.8, "top" : 2.66, "height" : 0.57, "width" : 4.44} -->    
 
 * On Terminal-2 launch Spark streaming wordcount program
 
 ```bash
 $    $SPARK_HOME/bin/spark-shell -i word_count.scala 
 ```
+<!-- {"left" : 0.8, "top" : 3.81, "height" : 0.57, "width" : 9.44} -->    
 
 * Type some data into netcat terminal-1
 
 * Watch the output on Spark streaming terminal-2
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/spark/streaming-wordcount-2.png" style="width:50%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/streaming-wordcount-2.png" style="width:50%;" /><!-- {"left" : 4.55, "top" : 6.59, "height" : 4.25, "width" : 8.4} -->    
+
 
 ---
 
@@ -372,6 +373,8 @@ query = wordCounts \
 
 query.awaitTermination()
 ```
+<!-- {"left" : 0.8, "top" : 2.33, "height" : 8.77, "width" : 13.34} -->    
+
 
 ---
 
@@ -382,19 +385,20 @@ query.awaitTermination()
 ```bash
  $  ncat -l -k -p 10000
 ```
+<!-- {"left" : 0.8, "top" : 2.69, "height" : 0.57, "width" : 4.44} -->    
 
 * On Terminal-2 launch Spark streaming wordcount program
 
 ```bash
 $    $SPARK_HOME/bin/spark-submit  word_count.python
 ```
+<!-- {"left" : 0.8, "top" : 3.86, "height" : 0.57, "width" : 9.44} -->    
 
 * Type some data into netcat terminal-1
 
 * Watch the output on Spark streaming terminal-2
 
-<!-- TODO Shiva -->
-<img src="../../assets/images/spark/streaming-wordcount-2.png" style="width:50%;" /><!-- {"left" : 2.53, "top" : 3.15, "height" : 7.42, "width" : 12.45} -->
+<img src="../../assets/images/spark/streaming-wordcount-2.png" style="width:50%;" /><!-- {"left" : 4.17, "top" : 6.39, "height" : 4.63, "width" : 9.16} -->    
 
 ---
 
@@ -425,6 +429,10 @@ stream.writeStream
       .option("topic", "topic1")
       .start() 
 ```
+<!-- {"left" : 0.8, "top" : 1.7, "height" : 5.57, "width" : 9.52} -->    
+
+<br/>
+<br/>
 
 * [See here for sinks and supported output modes](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-sinks)
 
@@ -432,7 +440,7 @@ stream.writeStream
 
 ## Lab: Structured Streaming Intro
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.92, "top" : 1.89, "height" : 5.42, "width" : 4.06} -->    
 
 * **Overview:**
   - Get started with Spark streaming
@@ -449,7 +457,7 @@ Notes:
 
 ## Lab: Structured Streaming Word Count
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.92, "top" : 1.89, "height" : 5.42, "width" : 4.06} -->    
 
 * **Overview:**
   - Streaming word count
@@ -466,7 +474,7 @@ Notes:
 
 ## Lab: Structured Streaming + SQL
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.92, "top" : 1.89, "height" : 5.42, "width" : 4.06} -->    
 
 * **Overview:**
   - Streaming  + SQL
@@ -483,7 +491,8 @@ Notes:
 
 ## Optional Lab: Structured Streaming - Window Operations
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.92, "top" : 1.89, "height" : 5.42, "width" : 4.06} -->    
+
 
 * **Overview:**
   - Apply window operations to streaming data
@@ -548,6 +557,8 @@ output.writeStream \
 // A checkpoint interval of 1 second means that the continuous processing 
 // engine will records the progress of the query every second.
 ```
+<!-- {"left" : 0.8, "top" : 2.53, "height" : 7.32, "width" : 15.95} -->    
+
 
 ---
 
@@ -557,7 +568,7 @@ output.writeStream \
 
 ## Apache Kafka
 
-<img src="../../assets/images/logos/kafka-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 7.84, "top" : 0.94, "height" : 2.59, "width" : 2.38} -->
+<img src="../../assets/images/logos/kafka-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 14.05, "top" : 1.46, "height" : 3.63, "width" : 3.34} -->    
 
 * Apache Kafka is a distributed messaging system
 
@@ -575,11 +586,11 @@ output.writeStream \
 
 * Kafka is designed as a  **Pub-Sub messaging system**
 
-* **Producers**  publish messages
+* **Producers** publish messages
 
-* **Consumers**  consume messages
+* **Consumers** consume messages
 
-<img src="../../assets/images/kafka/Kafka-Architecture-01.png"  style="width:50%;"/><!-- {"left" : 2.51, "top" : 3.36, "height" : 3.93, "width" : 5.22} -->
+<img src="../../assets/images/kafka/Kafka-Architecture-01.png"  style="width:50%;"/><!-- {"left" : 4.58, "top" : 4.59, "height" : 6.27, "width" : 8.33} -->    
 
 ---
 
@@ -589,7 +600,7 @@ output.writeStream \
 
 * And consumers are reading data
 
-<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png" alt="Producers-Consumers-Topics-Partitions.png" style="max-width:60%;"/><!-- {"left" : 1.27, "top" : 1.97, "height" : 5.7, "width" : 7.71} -->
+<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png" alt="Producers-Consumers-Topics-Partitions.png" style="max-width:60%;"/><!-- {"left" : 4.24, "top" : 4.15, "height" : 6.67, "width" : 9.03} -->    
 
 ---
 
@@ -603,7 +614,8 @@ output.writeStream \
 
 * And we are persisting data both in HDFS and in NOSQL
 
-<img src="../../assets/images/streaming/Lambda-Architecture-2.png"  style="width:90%;"/><!-- {"left" : 0.72, "top" : 3.53, "height" : 2.01, "width" : 8.8} -->
+<img src="../../assets/images/streaming/Lambda-Architecture-2.png"  style="width:90%;"/><!-- {"left" : 1.96, "top" : 5.94, "height" : 3.1, "width" : 13.58} -->    
+
 
 ---
 
@@ -664,12 +676,14 @@ query = df.writeStream \
 # simple, wait for ever
 query.awaitTermination()
 ```
+<!-- {"left" : 0.8, "top" : 2.05, "height" : 9.32, "width" : 15.61} -->  
 
+  
 ---
 
 ## Lab: Structured Streaming with Kafka
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.36, "top" : 1.89, "height" : 6.18, "width" : 4.63} -->    
 
 * **Overview:**
   - Read data from Kafka
@@ -686,9 +700,10 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.88, "top" : 2.06, "height" : 2.68, "width" : 3.63} -->    
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.58, "top" : 5.2, "height" : 5.56, "width" : 8.33} -->  

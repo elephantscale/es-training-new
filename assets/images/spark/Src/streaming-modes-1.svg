@@ -1,13 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="27 25 406 249" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <path d="M 51.554 55.734 H 338.995 L 338.995 50.734 L 362.995 60.734 L 338.995 70.734 L 338.995 65.734 H 51.554 V 55.734 Z" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" transform="matrix(0.999997, -0.002268, 0.002268, 0.999997, -0.137587, 0.117058)" bx:shape="arrow 51.554 50.734 311.441 20 10 24 0 1@c60abd44"/>
-  <rect x="46.61" y="96.751" width="116.526" height="88.983" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
-  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="50.141" y="85.452">batch 1</text>
-  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" transform="matrix(1, 0, 0, 1.016934, -27.542374, -7.563033)"><tspan x="80.508" y="130.65">views  = 1</tspan><tspan x="80.50800323486328" dy="1em">​</tspan><tspan>clicks = 2</tspan></text>
-  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="188.559" y="44.492">time</text>
-  <rect x="251.412" y="96.045" width="122.882" height="88.276" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
-  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="254.237" y="84.746">batch 2</text>
-  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="259.887" y="127.119">views   = 2<tspan x="259.8869934082031" dy="1em">​</tspan></text>
-  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" x="55.791" y="223.87">total:<tspan x="55.79100036621094" dy="1em">​</tspan>  views  = 1<tspan x="55.79100036621094" dy="1em">​</tspan>  clicks = 2</text>
-  <text style="fill: rgb(51, 51, 51); font-family: &quot;Ubuntu Mono&quot;; font-size: 19.8px; white-space: pre;" transform="matrix(1, 0, 0, 1, 1.412429, 8.474576)"><tspan x="253.531" y="215.395">total:</tspan><tspan x="253.531005859375" dy="1em">​</tspan><tspan>   views  = 3<tspan x="253.531005859375" dy="1em">​</tspan>   clicks = 2  </tspan></text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-47 465 880 678" width="880" height="678">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-02-11 17:22:06 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_11">
+        <path d="M -42 692 L 278 692 C 280.20914 692 282 693.7909 282 696 L 282 956 C 282 958.2091 280.20914 960 278 960 L -42 960 C -44.20914 960 -46 958.2091 -46 956 L -46 696 C -46 693.7909 -44.20914 692 -42 692 Z" fill="#a4f8fd"/>
+        <path d="M -42 692 L 278 692 C 280.20914 692 282 693.7909 282 696 L 282 956 C 282 958.2091 280.20914 960 278 960 L -42 960 C -44.20914 960 -46 958.2091 -46 956 L -46 696 C -46 693.7909 -44.20914 692 -42 692 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 508 692 L 828 692 C 830.2091 692 832 693.7909 832 696 L 832 956 C 832 958.2091 830.2091 960 828 960 L 508 960 C 505.79086 960 504 958.2091 504 956 L 504 696 C 504 693.7909 505.79086 692 508 692 Z" fill="#ebdea6"/>
+        <path d="M 508 692 L 828 692 C 830.2091 692 832 693.7909 832 696 L 832 956 C 832 958.2091 830.2091 960 828 960 L 508 960 C 505.79086 960 504 958.2091 504 956 L 504 696 C 504 693.7909 505.79086 692 508 692 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M -46 570.25 L -46 534.75 C -46 533.6454 -45.10457 532.75 -44 532.75 L 761 532.75 C 762.1046 532.75 763 531.8546 763 530.75 L 763 516.44946 C 763 515.3449 763.8954 514.44946 765 514.44946 C 765.3486 514.44946 765.6911 514.54056 765.9936 514.71375 L 828.968 550.7643 C 829.9266 551.31306 830.2588 552.535 829.7101 553.4936 C 829.5332 553.80264 829.277 554.0588 828.968 554.2357 L 765.9936 590.28625 C 765.035 590.835 763.8131 590.5028 763.2643 589.5442 C 763.0911 589.24165 763 588.8991 763 588.55054 L 763 574.25 C 763 573.1454 762.1046 572.25 761 572.25 L -44 572.25 C -45.10457 572.25 -46 571.3546 -46 570.25 Z" fill="#aa97fe"/>
+        <path d="M -46 570.25 L -46 534.75 C -46 533.6454 -45.10457 532.75 -44 532.75 L 761 532.75 C 762.1046 532.75 763 531.8546 763 530.75 L 763 516.44946 C 763 515.3449 763.8954 514.44946 765 514.44946 C 765.3486 514.44946 765.6911 514.54056 765.9936 514.71375 L 828.968 550.7643 C 829.9266 551.31306 830.2588 552.535 829.7101 553.4936 C 829.5332 553.80264 829.277 554.0588 828.968 554.2357 L 765.9936 590.28625 C 765.035 590.835 763.8131 590.5028 763.2643 589.5442 C 763.0911 589.24165 763 588.8991 763 588.55054 L 763 574.25 C 763 573.1454 762.1046 572.25 761 572.25 L -44 572.25 C -45.10457 572.25 -46 571.3546 -46 570.25 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(-41 627)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">batch 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(509 627)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">batch 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(342.6057 470.875)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#250060" x="0" y="45">Time</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(-41 991)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Total:</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="89">Views= 1</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="138">Clicks= 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(509 991)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Total:</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="89">Views= 3</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="138">Clicks= 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(30.8125 777)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">views= 1</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="89">Clicks= 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(585.6074 801.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">views= 2</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
 </svg>

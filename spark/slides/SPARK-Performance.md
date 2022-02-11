@@ -1,6 +1,6 @@
 # Spark Performance
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/> <!-- {"left" : 6.69, "top" : 7.61, "height" : 2.2, "width" : 4.13} --> 
 
 ---
 
@@ -16,7 +16,7 @@
 
 ## What to Monitor
 
-<img src="../../assets/images/spark/spark-cluster-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/spark/spark-cluster-1.png" style="width:45%;float:right;"/><!-- {"left" : 8.78, "top" : 1.89, "height" : 6.14, "width" : 8.68} -->   
 
 * Monitoring is the first step to improve performance
 
@@ -36,7 +36,7 @@ Notes:
 
 ## Cluster Monitoring
 
-<img src="../../assets/images/monitoring/3rd-party/nagios-1.png"  style="width:48%;float:right; "/><!-- {"left" : 2.17, "top" : 1, "height" : 4.14, "width" : 5.92} -->
+<img src="../../assets/images/monitoring/3rd-party/nagios-1.png"  style="width:48%;float:right; "/><!-- {"left" : 8.73, "top" : 1.57, "height" : 6.11, "width" : 8.73} -->   
 
 * Monitoring entire Spark cluster will gives an overall idea of load and performance on the cluster
     - Number of jobs running
@@ -57,7 +57,8 @@ Notes:
 
 ## OS / Machine Monitoring
 
-<img src="../../assets/images/spark/spark-cluster-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/spark/spark-cluster-1.png" style="width:45%;float:right;"/> <!-- {"left" : 8.78, "top" : 1.89, "height" : 6.14, "width" : 8.68} -->   
+ 
 
 * Monitoring tools can zoom into machine level
 
@@ -75,7 +76,8 @@ Notes:
 
 ## JVM Monitoring
 
-<img src="../../assets/images/spark/spark-cluster-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/spark/spark-cluster-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 8.78, "top" : 1.89, "height" : 6.14, "width" : 8.68} -->   
+
 
 * Spark runs the executors in individual Java Virtual Machines (JVMs)
 
@@ -96,7 +98,7 @@ Notes:
 
 ## Use Spark Application UI
 
-<img src="../../assets/images/spark/spark-shell-ui-2.png" style="width:55%;float:right;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/spark/spark-shell-ui-2.png" style="width:55%;float:right;"/>   <!-- {"left" : 8.94, "top" : 2.18, "height" : 6.22, "width" : 8.26} -->   
 
 * There is a wealth of information available in Spark UI  (port number 4040+)
 
@@ -117,13 +119,13 @@ Notes:
 * Spark UI displays GC stats (Task level view)
     - Keep an eye on this - GC time should be in milliseconds (here you see GC is taking seconds!)
 
-<img src="../../assets/images/spark/garbage-collection-1.png" style="width:65%;"/>  <!-- {"left" : 1.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/spark/garbage-collection-1.png" style="width:65%;"/>  <!-- {"left" : 2.31, "top" : 5.94, "height" : 5.31, "width" : 12.88} -->   
 
 ---
 
 ## Use Latest API
 
-<img src="../../assets/images/spark/dataframe-performance-1.png" style="width:45%;float:right;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/spark/dataframe-performance-1.png" style="width:45%;float:right;"/> <!-- {"left" : 8.92, "top" : 2.5, "height" : 3.91, "width" : 8.33} -->    
 
 * Prefer to use Dataframe/Dataset based APIs
     - They give better performance than RDD based APIs
@@ -154,7 +156,7 @@ Notes:
 
 ## Use Effective Data Stores
 
-<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:40%;float:right;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:40%;float:right;"/> <!-- {"left" : 11.46, "top" : 2.43, "height" : 2.42, "width" : 5.86} -->    
 
 * Spark can read/write data to multiple data stores
 * For batch workloads use:
@@ -186,7 +188,7 @@ Notes:
     - Support schema
     - And very fast to query
 
-<img src="../../assets/images/spark/dataformat-benchmark-1.png" style="width:65%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/spark/dataformat-benchmark-1.png" style="width:65%;"/> <!-- {"left" : 2.54, "top" : 6.54, "height" : 4.17, "width" : 12.43} -->    
 
 ---
 
@@ -236,6 +238,7 @@ schema = StructType ([
 data = spark.read.json('data/json/', schema=schema, )
 data = spark.read.csv('data/json/',  schema=schema, header=True)
 ```
+<!-- {"left" : 0.8, "top" : 2.28, "height" : 8.61, "width" : 13.78} -->    
 
 ---
 
@@ -273,6 +276,7 @@ schema = data.schema()
 #   ]
 # }
 ```
+<!-- {"left" : 0.8, "top" : 4.14, "height" : 7.07, "width" : 8.04} -->    
 
 ---
 
@@ -290,6 +294,9 @@ schema_json = schema.json()
 ## Save 'schema_json' to a file named 'schema_json.txt'
 
 ```
+<!-- {"left" : 0.8, "top" : 4.2, "height" : 2.34, "width" : 13.38} -->    
+
+<br/>
 
 * Now any time we read the data file, read the schema back and use it - again and again!
 
@@ -305,6 +312,9 @@ schema = StructType.fromJson(json.loads(schema_json))
 ## And supply the schema when reading data
 data = spark.read.json('/data/json/', schema=schema)
 ```
+<!-- {"left" : 0.8, "top" : 7.79, "height" : 3.57, "width" : 12.8} -->    
+
+<br/>
 
 * References: [1](https://szczeles.github.io/Reading-JSON-CSV-and-XML-files-efficiently-in-Apache-Spark/)
 
@@ -320,7 +330,7 @@ data = spark.read.json('/data/json/', schema=schema)
 * Caching can really speed up iterative workloads like Machine Learning
     - ML workloads can iterate over the same data 100s of times!
 
-<img src="../../assets/images/spark/caching-benchmark-1.png" style="width:65%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/spark/caching-benchmark-1.png" style="width:65%;"/> <!-- {"left" : 2.39, "top" : 5.27, "height" : 5.96, "width" : 12.72} -->    
 
 ---
 
@@ -343,6 +353,9 @@ data.count()  #  force caching of data
 data.unpersist()
 
 ```
+<!-- {"left" : 0.8, "top" : 2.64, "height" : 3.49, "width" : 11.44} -->    
+
+<br/>
 
 * Caching SQL tables
 
@@ -352,6 +365,7 @@ spark.catalog.cacheTable("table1")
 spark.sql("select ... from table1")
 
 ```
+<!-- {"left" : 0.8, "top" : 7.17, "height" : 1.21, "width" : 9.32} -->    
 
 ---
 
@@ -370,6 +384,9 @@ c = b.some_operation()
 d = c.filter( ) # <-- filter just before saving
 d.save()
 ```
+<!-- {"left" : 0.8, "top" : 4.05, "height" : 2.53, "width" : 10.74} -->    
+
+<br/>
 
 * Do this, if possible
 
@@ -381,19 +398,19 @@ c = ...
 d = ...
 d.save()
 ```
+<!-- {"left" : 0.8, "top" : 7.57, "height" : 2.03, "width" : 6.94} -->    
 
 ---
 
 ## Understand Dependencies
 
-* Narrow dependency examples : filter, distinct
+* Narrow dependency examples: filter, distinct
 
-* Wide dependency examples : join, merge, sort
+* Wide dependency examples: join, merge, sort
 
 * Wide dependency involves shuffles (next slide)
 
-<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:38%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
-<img src="../../assets/images/spark/wide-dependency-1.png" style="width:28%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:35%;" /><!-- {"left" : 3.06, "top" : 5.2, "height" : 5.06, "width" : 6.03} -->     &nbsp; &nbsp; <img src="../../assets/images/spark/wide-dependency-1.png" style="width:24%;" /><!-- {"left" : 10.42, "top" : 5.2, "height" : 5.06, "width" : 4.02} -->    
 
 ---
 
@@ -408,13 +425,13 @@ d.save()
 
 * Some operations needing shuffle : join, sort, group by
 
-<img src="../../assets/images/spark/shuffle-1.png" style="width:65%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/shuffle-1.png" style="width:65%;" /><!-- {"left" : 2.44, "top" : 6.19, "height" : 5.04, "width" : 12.62} -->    
 
 ---
 
 ## Smart Joins
 
-<img src="../../assets/images/spark/wide-dependency-1.png" style="width:30%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/wide-dependency-1.png" style="width:30%;float:right;" /><!-- {"left" : 12.48, "top" : 1.64, "height" : 5.85, "width" : 4.64} -->    
 
 * Joins are 'expensive' operations.  We can use a few techniques to speed up joins
 
@@ -440,12 +457,15 @@ joined.write....('joined.saved')
 joined2 = spark.read...('joined.saved')
 result = joined2.some_query(...)
 ```
+<!-- {"left" : 0.8, "top" : 5.28, "height" : 5.47, "width" : 8.97} -->    
+
 
 ---
 
 ## Broadcast Joins
 
-<img src="../../assets/images/spark/broadcast-join-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/broadcast-join-1.png" style="width:50%;float:right;" /><!-- {"left" : 10.14, "top" : 2.25, "height" : 5.21, "width" : 7.37} -->    
+
 
 * When joining large tables against small tables
     - Large table is well distributed across many machines, so they get parallelism
@@ -462,12 +482,13 @@ result = joined2.some_query(...)
 
 ## Doing Broadcast Joins
 
+<img src="../../assets/images/spark/broadcast-join-1.png" style="width:28%;float:right;" /><!-- {"left" : 13.68, "top" : 1.89, "height" : 2.68, "width" : 3.79} -->    
+
 * Here is a 'vanilla' join
 
 <pre>
 large_df = spark.read...
 tiny_df = spark.read...
-
 joined = large_df.join(tiny_df,  large_df.key1 = tiny_df.key2)
 </pre>
 
@@ -476,10 +497,8 @@ joined = large_df.join(tiny_df,  large_df.key1 = tiny_df.key2)
 <pre>
 large_df = spark.read...
 tiny_df = spark.read...
-
 joined = large_df.join( <mark>broadcast(tiny_df)</mark>),  large_df.key1 = tiny_df.key2)
 </pre>
-
 <pre>
 spark.table("large_df").join(spark.table("tiny_df").<mark>hint("broadcast")</mark>, "key").show()
 </pre>
@@ -488,8 +507,6 @@ spark.table("large_df").join(spark.table("tiny_df").<mark>hint("broadcast")</mar
 -- provide hint as BROADCAST, BROADCASTJOIN and MAPJOIN for broadcast hint
 SELECT <mark> /*+ BROADCAST(tiny_df)*/</mark> * FROM large_df  JOIN tiny_df ON large_df.key1 = tiny_df.key2
 </pre>
-
-<img src="../../assets/images/spark/broadcast-join-1.png" style="width:28%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * References:
     - [Spark performance tunining guide](https://spark.apache.org/docs/latest/sql-performance-tuning.html)
@@ -525,6 +542,7 @@ data.count()  #  force caching of data
 data.unpersist()
 
 ```
+<!-- {"left" : 0.8, "top" : 3.43, "height" : 4.94, "width" : 11.44} -->    
 
 ---
 
@@ -546,6 +564,7 @@ data2 = data.select[columns]
 # continue working on data2
 
 ```
+<!-- {"left" : 0.8, "top" : 4.5, "height" : 2.39, "width" : 6.81} -->    
 
 ---
 
@@ -559,13 +578,14 @@ data2 = data.select[columns]
 
 * If Spark finds these libraries, it will automatically use the optimized library
 
-<img src="../../assets/images/spark/3rd-party/intel-mkl-2.png" style="width:60;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/3rd-party/intel-mkl-2.png" style="width:60;" /><!-- {"left" : 4.08, "top" : 6.03, "height" : 5.25, "width" : 9.35} -->    
+
 
 ---
 
 ## Optimizing for GPU
 
-<img src="../../assets/images/spark/3rd-party/spark-gpu-nvidia-1.png" style="width:40%;float:right;" /><!-- {"left" : 5.96, "top" : 1.11, "height" : 0.99, "width" : 3.11} -->
+<img src="../../assets/images/spark/3rd-party/spark-gpu-nvidia-1.png" style="width:40%;float:right;" /><!-- {"left" : 10.06, "top" : 1.89, "height" : 4.27, "width" : 7.39} -->    
 
 * Spark 3 recognizes GPUs as a first-class resource along with CPU and system memory
 
@@ -610,6 +630,7 @@ b = a.some_transformation()
 c = b.some_transformation()
 result = c.count()  # <-- execution happens here
 ```
+<!-- {"left" : 0.8, "top" : 3.14, "height" : 1.33, "width" : 8.07} -->    
 
 * Force execution in intermediate steps by doing a `count`
 
@@ -625,6 +646,7 @@ c.count() # <-- force execution
 
 result = c.count() 
 ```
+<!-- {"left" : 0.8, "top" : 5.12, "height" : 3.47, "width" : 6.46} -->    
 
 ---
 
@@ -640,6 +662,7 @@ a = spark.read....
 # 'col1' can be null and this will fail
 b = a.filter (a['col1'].contains('spark'))
 ```
+<!-- {"left" : 0.8, "top" : 3.11, "height" : 1.34, "width" : 7.2} -->    
 
 * A better code 
 
@@ -655,12 +678,14 @@ b = a.na.drop(subset=['col1'])
 c = b.filter (b['col1'].contains('spark'))
 
 ```
+<!-- {"left" : 0.8, "top" : 5.26, "height" : 2.9, "width" : 10.61} -->    
 
 ---
 
 ## Lab: Spark Performance Tuning
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.85, "top" : 1.66, "height" : 5.16, "width" : 3.87} -->    
+
 
 * **Overview:**
   - Use all the techniques we learned to get the maximum performance out of Spark
@@ -677,9 +702,12 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.88, "top" : 2.06, "height" : 2.68, "width" : 3.63} -->    
+
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.58, "top" : 5.2, "height" : 5.56, "width" : 8.33} -->    
+
