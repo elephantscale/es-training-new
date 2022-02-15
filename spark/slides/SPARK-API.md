@@ -1,6 +1,6 @@
 # Spark API
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;"/><!-- {"left" : 6.14, "top" : 7.59, "height" : 2.77, "width" : 5.22} -->
 
 ---
 
@@ -37,7 +37,8 @@ Notes:
 
 ## Spark Runtime Components
 
-<img src="../../assets/images/spark/spark-architecture-2.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-architecture-2.png" style="width:50%;float:right;"/><!-- {"left" : 8.96, "top" : 1.89, "height" : 5.9, "width" : 8.35} -->
+
 
 * **Master**
     - Monitors the cluster, if a worker dies, it reassigns the task to another worker
@@ -55,13 +56,13 @@ Notes:
 ## Spark Application Architecture
 
 
-<img src="../../assets/images/spark/spark-architecture-1.png" style="width:80%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-architecture-1.png" style="width:80%;"/><!-- {"left" : 1.99, "top" : 2.42, "height" : 8.87, "width" : 13.52} -->
 
 ---
 
-## Spark Applications : Driver
+## Spark Applications: Driver
 
-<img src="../../assets/images/spark/spark-architecture-1.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-architecture-1.png" style="width:40%;float:right;"/> <!-- {"left" : 12.46, "top" : 1.65, "height" : 3.23, "width" : 4.92} -->
 
 * The main method of an application
 * It's where the SparkSession is created
@@ -81,8 +82,9 @@ Notes:
 
 ## Workers / Executors / Tasks
 
-<img src="../../assets/images/spark/spark-cluster-2.png" style="width:30%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/spark/spark-workers-executors-threads-2.png" style="width:30%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-cluster-2.png" style="width:30%;float:right;"/><!-- {"left" : 11.66, "top" : 1.68, "height" : 3.93, "width" : 5.56} -->
+
+<img src="../../assets/images/spark/spark-workers-executors-threads-2.png" style="width:30%;float:right;clear:both;"/><!-- {"left" : 12.46, "top" : 5.7, "height" : 4.09, "width" : 4.76} -->
 
 * **Executors**
     - Executors are **JVMs**
@@ -103,8 +105,8 @@ Notes:
 ## Spark Vs. Map Reduce
 
 * Spark is much faster than Map Reduce
-    - On disk data : 2x - 10x faster 
-    - In memory data : 100x faster !
+    - On disk data: 2x - 10x faster 
+    - In memory data: 100x faster!
 * Spark has a different execution model than MR
 * In MapReduce
     - Each job is run within its own ‘container’  (JVM)
@@ -121,13 +123,14 @@ Notes:
 
 ## Process Management in MapReduce
 
-<img src="../../assets/images/spark/spark-vs-mapreduce-1.png" style="width:90;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-vs-mapreduce-1.png" style="width:80%;"/> <!-- {"left" : 2.13, "top" : 2.61, "height" : 8.48, "width" : 13.24} -->  
 
 ---
 
 ## Process Management in Spark
 
-<img src="../../assets/images/spark/spark-vs-mapreduce-2.png" style="width:90;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-vs-mapreduce-2.png" style="width:80%;"/><!-- {"left" : 1.79, "top" : 2.18, "height" : 9.34, "width" : 13.92} -->  
+
 
 ---
 
@@ -139,7 +142,8 @@ Notes:
 * Large collections will cause out-of-memory error in driver
 * Find a different way!
 
-<img src="../../assets/images/spark/driver-memory-executor-memory-1.png" style="width:80;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/driver-memory-executor-memory-1.png" style="width:70%;"/><!-- {"left" : 2.26, "top" : 5.79, "height" : 5.27, "width" : 12.98} -->  
+
 
 ---
 
@@ -156,7 +160,7 @@ Notes:
 * Failure tolerant - if container crashes, YARN will restart it
 
 * 2 Modes of deployment
-    - **YARN-client** :
+    - **YARN-client:**
         - Suited for interactive applications (spark-shell)
         - Development / debugging
     - **YARN-cluster**
@@ -167,13 +171,15 @@ Notes:
 
 ## Spark in YARN Client Mode
 
-<img src="../../assets/images/spark/spark-yarn-1.png" style="width:80;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-yarn-1.png" style="width:60%;"/> <!-- {"left" : 3.68, "top" : 2.24, "height" : 9.24, "width" : 10.19} -->   
+
 
 ---
 
 ## Spark in YARN Cluster Mode
 
-<img src="../../assets/images/spark/spark-yarn-2.png" style="width:80;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-yarn-2.png" style="width:60%;"/>  <!-- {"left" : 3.5, "top" : 2.1, "height" : 9.52, "width" : 10.5} -->    
+
 
 ---
 
@@ -186,6 +192,9 @@ $   spark-submit --class org.apache.spark.examples.SparkPi   \
         --master yarn --deploy-mode client   \
         SPARK_HOME/lib/spark-examples.jar 10
 ```
+<!-- {"left" : 0.8, "top" : 3.08, "height" : 1.31, "width" : 12.65} -->  
+
+<br/>
 
 * Cluster mode   (`--deploy-mode cluster`)
 
@@ -194,6 +203,8 @@ $   spark-submit --class org.apache.spark.examples.SparkPi   \
         --master yarn --deploy-mode cluster   \
         SPARK_HOME/lib/spark-examples.jar 10
 ```
+<!-- {"left" : 0.8, "top" : 6.22, "height" : 1.31, "width" : 12.65} -->  
+
 
 ---
 
@@ -204,8 +215,10 @@ $   spark-submit --class org.apache.spark.examples.SparkPi   \
 | Drivers runs in                                    | Client                              | Client                                            | App Master                                        |
 | Who requests resources                             | Client                              | App Master                                        | App Master                                        |
 | Who starts executor process                        | Spark Slave                         | YARN Node Manager                                 | YARN Node Manager                                 |
-| Persistent services                                | - Spark master <br> - Spark workers | - YARN Resource Manager <br> - YARN Node Managers | - YARN Resource Manager <br> - YARN Node Managers |
+| Persistent services                                | - Spark master <br/> - Spark workers | - YARN Resource Manager <br/> - YARN Node Managers | - YARN Resource Manager <br/> - YARN Node Managers |
 | Supports interactive applications like Spark-shell | Yes                                 | Yes                                               | No                                                |
+
+<!-- {"left" : 0, "top" : 3.34, "height" : 3.76, "width" : 17.5} -->  
 
 ---
 
@@ -225,8 +238,11 @@ val logs = spark.read.text("/data/*.log")
 logs.count
 
 ```
+<!-- {"left" : 0.8, "top" : 5.58, "height" : 1.24, "width" : 11.74} -->  
 
-<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:50%;" /><!-- {"left" : 3.72, "top" : 7.12, "height" : 4.16, "width" : 10.07} -->  
+
 
 ---
 
@@ -255,6 +271,9 @@ object TestApp{
 }
 
 ```
+<!-- {"left" : 0.8, "top" : 2.62, "height" : 4.13, "width" : 8.31} -->  
+
+<br/>
 
 * Builder pattern
 
@@ -265,6 +284,7 @@ val spark  = SparkSession.builder.getOrCreate()
 val spark  = SparkSession.builder.x().y().z().getOrCreate()
 
 ```
+<!-- {"left" : 0.8, "top" : 7.53, "height" : 1.15, "width" : 10.59} -->  
 
 ---
 
@@ -293,6 +313,9 @@ SparkSession.builder.master("spark://master_node:7077")
 SparkSession.builder.master("yarn")
 
 ```
+<!-- {"left" : 0.8, "top" : 2.56, "height" : 4.93, "width" : 8.87} -->  
+
+<br/>
 
 * Other properties
 
@@ -300,6 +323,8 @@ SparkSession.builder.master("yarn")
 SparkSession.builder.config("db.host", "host1")
 
 ```
+<!-- {"left" : 0.8, "top" : 8.44, "height" : 0.59, "width" : 8.87} -->  
+
 
 ---
 
@@ -313,6 +338,9 @@ $   spark-submit ... \
          --conf  key2=value2 \
          ...
 ```
+<!-- {"left" : 0.8, "top" : 3.12, "height" : 1.7, "width" : 6.8} -->  
+
+<br/>
 
 * spark-submit will also read configuration options in the file `spark/conf/spark-defaults.conf`
     - In standard key=value properties file format
@@ -343,6 +371,7 @@ spark.sql("select * from t1")
 # stop() the active one before creating a new one
 spark.stop()
 ```
+<!-- {"left" : 0.8, "top" : 2.89, "height" : 4.26, "width" : 10.09} -->    
 
 ---
 
@@ -367,13 +396,15 @@ spark.stop()
   <version>3.1.0</version>
 </dependency>
 ```
+<!-- {"left" : 0.8, "top" : 6.88, "height" : 2.46, "width" : 10.77} -->    
 
 ---
 
 ## Spark Scala Project Layout
 
 
-<img src="../../assets/images/spark/spark-scala-project-1.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-scala-project-1.png" style="width:50%;" /><!-- {"left" : 4.63, "top" : 2.92, "height" : 7.87, "width" : 8.23} -->  
+
 
 ---
 
@@ -398,6 +429,7 @@ libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.0.0" exclude("
 
 
 ```
+<!-- {"left" : 0.8, "top" : 2.71, "height" : 4.05, "width" : 16.18} -->    
 
 ---
 
@@ -425,10 +457,11 @@ $   sbt clean
 $   sbt clean package
 
 ```
+<!-- {"left" : 0.8, "top" : 3.28, "height" : 5.82, "width" : 7.49} -->    
 
 ---
 
-## Submit  Application
+## Submit Application
 
 * Submiting a sample app
 
@@ -438,6 +471,9 @@ $   spark-submit --master spark://localhost:7077 \
          --class  x.ProcessFiles target/scala-2.11/testapp.jar  \
          1G.data
 ```
+<!-- {"left" : 0.8, "top" : 3.21, "height" : 1.71, "width" : 13.73} -->    
+
+<br/>
 
 * Submission syntax
 
@@ -451,6 +487,7 @@ $ spark-submit \
   [application-arguments]
 
 ```
+<!-- {"left" : 0.8, "top" : 5.95, "height" : 2.76, "width" : 5.89} -->    
 
 ---
 
@@ -458,7 +495,8 @@ $ spark-submit \
 
 * Each Spark application will get their own UI, starting at port 4040
 
-<img src="../../assets/images/spark/spark-shell-ui-2.png" style="width:60%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-shell-ui-2.png" style="width:60%;" /><!-- {"left" : 3.29, "top" : 3.01, "height" : 8.21, "width" : 10.92} -->    
+
 
 ---
 
@@ -510,6 +548,7 @@ mergeStrategy in assembly:= {
 }
 
 ```
+<!-- {"left" : 0.8, "top" : 2.93, "height" : 7.04, "width" : 16.67} -->    
 
 ---
 
@@ -534,6 +573,9 @@ print("###  number of lines", count)
 
 spark.stop()  # close the session
 ```
+<!-- {"left" : 0.8, "top" : 2.71, "height" : 3.49, "width" : 7.95} -->    
+
+<br/>
 
 * Submit
 
@@ -543,6 +585,7 @@ $  spark-submit --master spark://localhost:7077 \
    --executor-memory 4G  \
    process-files.py 1G.data
 ```
+<!-- {"left" : 0.8, "top" : 7.26, "height" : 1.11, "width" : 8.75} -->    
 
 ---
 
@@ -563,6 +606,7 @@ $   spark-submit ... --py-files  another.py
 $   spark-submit ... --py-files  py-files.zip
 
 ```
+<!-- {"left" : 0.8, "top" : 2.49, "height" : 4.13, "width" : 12.97} -->    
 
 ---
 
@@ -580,13 +624,14 @@ $   spark-submit ... --py-files  py-files.zip
 
 * Each Spark application will get their own UI, starting at port 4040
 
-<img src="../../assets/images/spark/spark-shell-ui-2.png" style="width:60%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-shell-ui-2.png" style="width:60%;" /><!-- {"left" : 3.48, "top" : 2.89, "height" : 7.93, "width" : 10.54} -->    
+
 
 ---
 
 ## Lab: Develop and Submit a Spark Application
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.15, "top" : 1.89, "height" : 5.89, "width" : 4.42} -->    
 
 * **Overview:**
    - Develop and submit a Spark application
@@ -603,10 +648,10 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.2, "top" : 1.89, "height" : 2.68, "width" : 3.63} -->    
 
 * Let's go over what we have covered so far
 
 * Any questions?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /> <!-- {"left" : 4.85, "top" : 5.79, "height" : 5.2, "width" : 7.8} -->    

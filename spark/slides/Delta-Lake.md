@@ -17,7 +17,8 @@
 * Can store all kinds of data
    - Structured (csv, json) and unstructured (video, pictures, binary) data
 
-<img src="../../assets/images/bigdata/3rd-party/data-lake-1.jpg" style="width:50%;"/> <!-- {"left" : 4.34, "top" : 7.32, "height" : 4.24, "width" : 8.87} -->
+
+<img src="../../assets/images/bigdata/data-lake-1.png" style="width:50%;"/><!-- {"left" : 3.29, "top" : 7.24, "height" : 4.44, "width" : 10.93} -->
 
 ---
 
@@ -93,7 +94,7 @@
    - 0010.json
 
 ```
-<!-- {"left" : 0, "top" : 3.25, "height" : 2.32, "width" : 6.59} -->
+<!-- {"left" : 0.8, "top" : 3.33, "height" : 2.32, "width" : 6.59} -->
 
 
 * Since all operations are transactional, now we can go back and retrieve past data easily --> **Time travel**
@@ -107,7 +108,7 @@ TIMESTAMP AS OF ...
 SELECT * FROM events
 VERSION AS OF ...
 ```
-<!-- {"left" : 0, "top" : 7.37, "height" : 2.32, "width" : 5.48} -->
+<!-- {"left" : 0.8, "top" : 7.37, "height" : 2.32, "width" : 5.48} -->
 
 * This solves the problem of
    - Keeping historical data efficiently
@@ -169,7 +170,7 @@ CREATE TABLE events (
    ...
 )
 ```
-<!-- {"left" : 0, "top" : 5.45, "height" : 2.29, "width" : 8.25} -->
+<!-- {"left" : 0.8, "top" : 5.57, "height" : 2.29, "width" : 8.25} -->
 
 
 * This solves the following problem:
@@ -220,14 +221,14 @@ CREATE TABLE
 ...
 USING delta
 ```
-<!-- {"left" : 0, "top" : 3.13, "height" : 3.23, "width" : 5.32} -->
+<!-- {"left" : 0.8, "top" : 3.13, "height" : 3.23, "width" : 5.32} -->
 
 * Migration is easy too
 
 ```sql
 CONVERT TO DELTA table_name
 ```
-<!-- {"left" : 0, "top" : 7.51, "height" : 0.65, "width" : 6.02} -->
+<!-- {"left" : 0.8, "top" : 7.51, "height" : 0.65, "width" : 6.02} -->
 
 ---
 

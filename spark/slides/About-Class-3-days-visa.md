@@ -136,5 +136,5 @@ Notes:
 
 ## Let's Get Started!
 
-<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/> 
+<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/> <!-- {"left": 4.54, "top": 2.9, "height": 7.91, "width": 8.42} --> 
 
