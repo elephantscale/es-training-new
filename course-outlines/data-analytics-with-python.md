@@ -38,7 +38,7 @@ Beginner to Intermediate
 
 ## Prerequisites
 * Good programming background
-* familiarity with Python would be a plus, but not required
+* Familiarity with Python would be a plus, but not required
 * No machine learning knowledge is assumed
 
 

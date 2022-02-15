@@ -47,7 +47,7 @@ Notes:
 
   * State-of-the-art graphics capabilities
 
-    - Because picture IS worth a thousands words
+    - Because picture IS worth a thousand words
 
   * Designed for interactive analysis
 
