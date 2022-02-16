@@ -652,8 +652,8 @@ data.show()
 * **Question for the class:**
     - Why are narrow dependencies easier to recover in failure?
 
-<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:38%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
-<img src="../../assets/images/spark/wide-dependency-1.png" style="width:28%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:33%;float:left;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/wide-dependency-1.png" style="width:22%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 Notes:
 
@@ -716,7 +716,7 @@ val sparkError = errors.filter(_.contains("spark"))
 
 * A Stage may have one or more **tasks**
 
-<img src="../../assets/images/spark/spark-job-anatomy.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-job-anatomy.png" style="width:45%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ---
 
