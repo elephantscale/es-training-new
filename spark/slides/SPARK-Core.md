@@ -482,8 +482,7 @@ data.show()
 * Spark data is **distributed** - they can be spread across the cluster
     - They don't have to fit on a single machine memory
 
-<img src="../../assets/images/deep-learning/cluster-distributed-processing-1.png" style="width:40%;float:right;clear:both;" /> <!-- {"left" : 10.39, "top" : 6.45, "height" : 3.88, "width" : 6.89} -->
-
+<img src="../../assets/images/deep-learning/cluster-distributed-processing-1.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * Once data is read, it is **immutable**, it can not be changed
     - This may seem like a limitation, but it really helps with parallel operations by avoiding race conditions
@@ -653,7 +652,8 @@ data.show()
 * **Question for the class:**
     - Why are narrow dependencies easier to recover in failure?
 
-<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:35%;" /><!-- {"left" : 3.14, "top" : 5.79, "height" : 5.35, "width" : 6.38} --> &nbsp; &nbsp;<img src="../../assets/images/spark/wide-dependency-1.png" style="width:22.9%;" /><!-- {"left" : 10.11, "top" : 5.79, "height" : 5.35, "width" : 4.25} -->
+<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:38%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/wide-dependency-1.png" style="width:28%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 Notes:
 
@@ -716,7 +716,7 @@ val sparkError = errors.filter(_.contains("spark"))
 
 * A Stage may have one or more **tasks**
 
-<img src="../../assets/images/spark/spark-job-anatomy.png" style="width:50%;" /><!-- {"left" : 3.99, "top" : 4.9, "height" : 6.85, "width" : 9.52} -->
+<img src="../../assets/images/spark/spark-job-anatomy.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ---
 
