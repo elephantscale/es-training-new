@@ -658,7 +658,7 @@ Notes:
 // define Person class
 case class Person (
         name: String, 
-        age: Long, 
+        age: Integer, 
         gender: String, 
         weight: Double)
 

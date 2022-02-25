@@ -12,9 +12,14 @@
 
 ## Streaming Use Cases
 
+<img src="../../assets/images/logos/netflix-logo-1.png" alt="netflix.png" style="width:25%;float:right;"/><!-- {"left" : 4.31, "top" : 7.77, "height" : 2, "width" : 4.33} -->    
+
 * Netflix Streaming
     - Streaming generates astounding amount of data!
     - 450 billion events/day  (5 million events / sec)
+
+<br clear="all"/>
+<img src="../../assets/images/streaming/3rd-party/the-weather-company.png" style="width:20%;float:right;"/><!-- {"left" : 10.17, "top" : 7.59, "height" : 2.35, "width" : 3.02} -->
 
 * Weather Company
     - Analyze weather sensor data
@@ -23,8 +28,6 @@
 
 * More use cases at [BigDataUseCases.info](www.BigDataUseCases.info)
 
-<img src="../../assets/images/logos/netflix-logo-1.png" alt="netflix.png" style="width:25%;"/><!-- {"left" : 4.31, "top" : 7.77, "height" : 2, "width" : 4.33} -->    
-  &nbsp;  &nbsp;<img src="../../assets/images/streaming/3rd-party/the-weather-company.png" alt="the-weather-company.png" style="width:20%;"/><!-- {"left" : 10.17, "top" : 7.59, "height" : 2.35, "width" : 3.02} -->    
 
 ---
 
