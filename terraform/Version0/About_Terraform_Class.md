@@ -5,9 +5,9 @@
 
 | Day | Agenda                                                                          |
 |-----|---------------------------------------------------------------------------------|
-| 1   | Terraform Basics, Architecture, Infrastructure as Code, HCL Basic Programming            |
-| 2   | Managing Deployments and States, Multiple Terraform Configurations, More HCL Programming    |
-| 3   | Terraform Testing, Vault, Consul, Packer, Professional Terraform Best Practices          |
+| 1   | Terraform Introduction, first deployments, Architecture Deployments             |
+| 2   | Modularizing your code, managing state, working as a team, advanced elements    |
+| 3   | Production grade deployments, Terraform testing, Vault, Consul, Packer          |
 
 <!-- {"left" : 0.25, "top" : 1.4, "height" : 3.36, "width" : 9.75} -->
 
@@ -18,18 +18,15 @@ Notes:
 ## Prerequisites & Expectations
 
 * Familiarity with a programming or scripting language
-* Basic understanding of Linux, Mac or Windows including:
+* Basic understanding of Linux development environment
   - Command line navigation 
-  - Editing files (e.g. using VI, Visual Studio Code or other editor)
-* Basic understanding of AWS concepts like EC2 instances, IaaS, PaaS, etc.
-* This is an **AWS Infrastructure as Code (IaC) with Terraform** class 
+  - Editing files (e.g. using VI or nano)
+* This is an **Infrastructure as Code (IaC) with Terraform** class 
   - You may be missing some pre-requisites, that’s OK
   - You should be willing to work hard, that is a must
 
 
 Notes:
-
-Updated the requirements to be more in keeping with the actual skills needed for class.
 
 ---
 
@@ -48,7 +45,8 @@ Notes:
 ---
 
 ## Analogy: Learning to Fly...
-![](../artwork/learn-to-fly.png)
+
+<img src="../artwork/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
 
 
 
@@ -57,8 +55,14 @@ Notes:
 ---
 
 ## Instruction
-![](../artwork/classroom-instruction.png)
 
+<img src="../artwork/classroom-instruction.png" style="width:80%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
+
+
+
+
+
+Notes:
 
 ---
 
@@ -83,16 +87,16 @@ Notes:
 
 ## About You and Me
 
-* About your instructor
-* About you
-   - Your Name
-   - Your background (developer, admin, manager, ...)
-   - Technologies you are familiar with
-   - Familiarity with Terraform or IaC (scale of 1 - 4 ;  1 - new,   4 - expert)
-   - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
-   - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
+* About Instructor
+ * About you
+     - Your Name
+     - Your background (developer, admin, manager, ...)
+     - Technologies you are familiar with
+     - Familiarity with Terraform or IaC (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
+     - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
 
-<img src="../artwork/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
+<img src="../artwork/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 
 Notes:
@@ -104,14 +108,11 @@ Notes:
 * Instructor’s contact information
 * Slides
   - For each session, slides will be emailed out or delivered via virtual classroom 
-* AWS and Terraform
-  - Students need to have an AWS account
-  - If you don't have one, we will walk through the process of getting a free AWS account
-  - Students will be using a local copy of Terraform on their own computers
-  - We will walk through the process of installing Terraform locally
+* Server nodes
+  - Provided in the cloud
 * Labs
-  - Provided in the cloud via GitHub
-  - Will also be delivered in a ZIP file for your future reference
+  - Provided in the cloud
+  - Will be delivered in a ZIP file for your future reference
 
 
 Notes:
@@ -121,7 +122,7 @@ Notes:
 ## Typographic Conventions
 
 * Software code in the text uses a fixed-width code font: 
-  - catalog: `Catalog = new CatalogImpl`
+  - catalog: Catalog = new CatalogImpl
   - Code fragments are the same, e.g., catalog.speakTruth
   - We use **bold/color** text for emphasis
   - Filenames are in italics, e.g., `Catalog.scala`
