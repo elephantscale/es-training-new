@@ -56,7 +56,7 @@
 - Google Deep Mind - ATARI breakout - https://www.youtube.com/watch?v=V1eYniJ0Rnk
 - open AI Dota game (AI beating human pro teams) : https://www.youtube.com/watch?v=eHipy_j29Xw
   - follow bot progress here : https://openai.com/five/  : timeline of bot development
-- Open AI Hide and Seek
+- Open AI hide and seek
   - blog : https://openai.com/blog/emergent-tool-use/
   - 2 minute papers : https://www.youtube.com/watch?v=Lu56xVlZ40M  
 
@@ -68,7 +68,9 @@
 - MarIO : https://www.youtube.com/watch?v=qv6UVOQ0F44
 - Deep Mind Alpha Go : https://www.youtube.com/watch?v=9xlSy9F5WtE
 	- explanation by Siraj : https://www.youtube.com/watch?v=UzYeqAJ2bA8
+    - Very good documentary with the whole story: https://youtu.be/WXuK6gekU1Y  (1 hr 30 mins!)
 - open AI Dota game (AI beating human pro teams) : https://www.youtube.com/watch?v=eHipy_j29Xw
+    - follow bot progress here : https://openai.com/five/  : timeline of bot development
 - Boston dynamics robots : https://www.youtube.com/watch?v=8vIT2da6N_o
 - Boston dynamic robot vs dog : https://www.youtube.com/watch?v=rEg6oeazTNY
 - every body dance now : https://www.youtube.com/watch?v=PCBTZh41Ris

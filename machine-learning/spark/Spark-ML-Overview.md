@@ -401,9 +401,7 @@ Notes:
 
 ---
 
-
-
-# ML API
+# Spark ML API
 
 ---
 

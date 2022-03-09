@@ -1222,38 +1222,6 @@ Notes:
 
 ---
 
-## Lab: Visualizing House Sales
-
-* **Overview:**
-    - Visualize house-sales dataset
-
-* **Approximate Time:** 
-    - 10 - 15 mins
-
-* **Instructions:**
-    - **exploration/visualize-house-sales**
-
-* **To Instructor:** 
-    - Demo this lab on screen first, and explain the results
-
-Notes:
-
----
-
-## Lab Data Cleanup
-
-* **Overview:**
-    - Cleaning up data, getting it ready for analytics
-
-* **Approximate Time:**
-    - 10 - 15 mins
-
-* **Instructions:**
-    - **exploration/data-cleanup**
-
-Notes:
-
----
 
 ## To Instructor
 
@@ -1265,7 +1233,7 @@ Notes:
 
 ---
 
-## [Optional] Lab: Exploring Dataset
+## (Optional) Lab: Exploring Dataset
 
 * **Instructor**
     - If covering ML-Concepts, do this at the end of Part-1 ML-Concepts
@@ -1283,6 +1251,25 @@ Notes:
 Notes:
 
 ---
+
+## (Optional) Lab: Visualizing House Sales
+
+* **Overview:**
+    - Visualize house-sales dataset
+
+* **Approximate Time:** 
+    - 10 - 15 mins
+
+* **Instructions:**
+    - **exploration/visualize-house-sales**
+
+* **To Instructor:** 
+    - Demo this lab on screen first, and explain the results
+
+Notes:
+
+---
+
 
 ## Further Reading
 
