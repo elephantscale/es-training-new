@@ -751,8 +751,8 @@ Notes:
         $   cd spark-labs
         $  ./assemble-labs.sh
 ```
-
-<!-- {"left" : 0, "top" : 3.19, "height" : 1.22, "width" : 6.54} -->
+<!-- {"left" : 0.8, "top" : 3.12, "height" : 1.11, "width" : 7.26} -->
+<br/>
 
 * This will create a zip file (`labs.out/spark-labs.zip`)
 * Distribute this bundle to students
@@ -771,7 +771,7 @@ Notes:
 
 ## Lab: Lab Setup
 
-<img src="../../assets/images/icons/individual-labs.png"  style="width:30%;float:right;" /><!-- {"left" : 12.58, "top" : 1.34, "height" : 6, "width" : 4.5} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="width:25%;float:right;" /><!-- {"left" : 12.58, "top" : 1.34, "height" : 6, "width" : 4.5} -->
 
 * **Overview:**
    - Setting up the labs
@@ -780,7 +780,7 @@ Notes:
    - 5 mins
 
 * **Instructions:**
-   - **SETUP-1** : instructions in the lab bundle
+   - **SETUP-1:** instructions in the lab bundle
 
 Notes:
 
@@ -788,7 +788,7 @@ Notes:
 
 ## Lab:  Testing123
 
-<img src="../../assets/images/icons/individual-labs.png"  style="width:30%;float:right;" /> <!-- {"left" : 12.58, "top" : 1.34, "height" : 6, "width" : 4.5} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="width:25%;float:right;" /> <!-- {"left" : 12.58, "top" : 1.34, "height" : 6, "width" : 4.5} -->
 
 * **Overview:**
    - Testing the environment

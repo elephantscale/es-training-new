@@ -1,10 +1,13 @@
 About_Terraform_Class.md
-terraform-intro.md
-terraform-walk-through.md
-managing-terraform-state.md
-reusable-infrastructure-with-modules.md
-terraform-language-elements.md
-production-grade-terraform-code.md
-testing-terraform-code.md
-terraform-in-team.md
-# packer-intro.md
+Terraform-Setup.md
+Introduction-to-Terraform.md
+Terraform-Basics.md
+Terraform-State.md
+HCL-Language-Features.md
+Terraform-Modules.md
+Terraform-Code-Management.md
+Terraform-Testing.md
+Implementing-Terraform.md
+packer-intro.md
+Packer.pptx
+

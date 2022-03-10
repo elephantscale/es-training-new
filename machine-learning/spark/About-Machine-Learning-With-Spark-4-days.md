@@ -178,3 +178,5 @@ Notes:
 ---
 
 ## Let's Get Started!
+
+<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/> 

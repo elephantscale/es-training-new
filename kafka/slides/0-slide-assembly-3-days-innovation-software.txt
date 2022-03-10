@@ -1,0 +1,24 @@
+
+## Course outline
+#   https://drive.google.com/file/d/1iVw4E69-uwVFUwf0XTh_F5c-SX-2XP-0/view?usp=sharing
+
+# About
+About-Kafka-Class-3-days-Innovation-Software.md   About-Kafka-Class.md
+
+# Streaming
+../../streaming/slides/Streaming-Primer.md
+
+# Kafka
+Kafka-Intro.md
+Kafka-API.md
+Kafka-Streams.md
+# ---
+
+../../spark/slides/SPARK-Intro.md
+
+Kafka-Connect.md
+Kafka-Admin.md
+Kafka-Monitoring.md
+Kafka-Best-Practices.md
+Kafka-Case-Studies.md
+Kafka-Design-Exercises.md

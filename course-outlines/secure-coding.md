@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-July 27, 2021
+January 30, 2022
 
 ## Overview
 
@@ -18,6 +18,19 @@ July 27, 2021
 
 ## Skill Level
 * Introductory - Intermediate
+
+## Learning objectives
+
+* Establish the overall security landscape
+* Become cognizant in the best security practices for software application development
+* Familiarize yourself with common attacks and how the best practices help protect against these
+
+## You will learn to
+* Do threat modeling and create a lay of the land for what you need to defend
+* Learn about common attacks, with real-world labs, and find ways to defend against them
+* Learn good practices and coding standards to make your software more secure and less vulnerable to attacks
+* Use new and upcoming frameworks for designing your software to be secure be default
+
 
 ## Duration
 * Three days

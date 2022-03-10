@@ -1,23 +1,23 @@
 
 # Spark Workshop
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /> <!-- {"left": 3.88, "top": 7.9, "height": 1.81, "width": 3.41} --> &nbsp;  &nbsp; 
-<img src="../../assets/images/logos/elephantscale-logo-1.png" style="width:25%;" /> <!-- {"left": 8.58, "top": 7.82, "height": 1.99, "width": 5.41} --> 
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /> <!-- {"left": 4.08, "top": 7.9, "height": 1.81, "width": 3.41} --> &nbsp;  &nbsp; 
+<img src="../../assets/images/logos/elephantscale-logo-1.png" style="width:25%;" /> <!-- {"left": 8.64, "top": 8.11, "height": 1.6, "width": 4.78} -->
 
 
 ---
 
 ## Hi, I am  Sujee Maniyam
 
-<img src="../../assets/images/people/sujee-maniyam-2.jpg" style="width:20%;float:right;" />
-<img src="../../assets/images/books/hbase-design-patterns.png" style="width:20%;float:right;clear:both;" />
+<img src="../../assets/images/people/sujee-maniyam-2.jpg" style="width:20%;float:right;" /><!-- {"left": 14.37, "top": 1.89, "height": 2.48, "width": 2.99} -->
+<img src="../../assets/images/books/hbase-design-patterns.png" style="width:20%;float:right;clear:both;" /><!-- {"left": 15.04, "top": 4.64, "height": 2.84, "width": 2.41} -->
 
 * Founder / Principal @ [ElephantScale](http://elephantscale.com)
 * Consult & teach **AI, Data Science, Big Data, Cloud and Devops** technologies
 * History:
-    - 1993 : A/L @ Jaffna Hindu College, Jaffna
+    - 1993: A/L @ Jaffna Hindu College, Jaffna
     - 1995 - 1999 : Computer Engineering @ University of Melbourne, Australia
-    - 2000+ : Silicon Valley, California USA
+    - 2000+: Silicon Valley, California USA
 * Author
     - [__'Hadoop illuminated'__](http://hadoopilluminated.com/):  open source book
     - [__'HBase Design Patterns'__](https://www.packtpub.com/big-data-and-business-intelligence/hbase-design-patterns): Packt Publishing, 2015
@@ -98,4 +98,4 @@ Notes:
 
 ## Let's Get Started!
 
-<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/> 
+<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/> <!-- {"left": 4.51, "top": 2.87, "height": 7.97, "width": 8.47} --> 

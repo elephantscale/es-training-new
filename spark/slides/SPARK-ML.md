@@ -1,6 +1,7 @@
 # Machine Learning with Spark
 
-<img src="../../assets/images/logos/spark-mllib-logo.png" style="width:35%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+
+<img src="../../assets/images/logos/spark-mllib-logo.png" style="width:35%;"/>  <!-- {"left" : 5.61, "top" : 7.64, "height" : 2.24, "width" : 6.28} -->
 
 ---
 
@@ -18,7 +19,7 @@
 
 ## Machine Learning is Taking Over the World
 
-<img src="../../assets/images/generic/3rd-party/terminator-2.png" style="width:40%;float:right;"/> <!-- {"left" : 5.3, "top" : 1.23, "height" : 3.54, "width" : 4.72} -->
+<img src="../../assets/images/generic/3rd-party/terminator-2.png" style="width:40%;float:right;"/><!-- {"left" : 9.64, "top" : 2.12, "height" : 5.69, "width" : 7.58} --> 
 
 * Think of something you did today / this week that is AI powered
 
@@ -36,7 +37,7 @@
 | Algorithmic trading | Patient care              | Customer retentions | Fully automated assemblies | Facial recognition       |
 | Credit Approvals    | Treatment recommendations |                     |                            |                          &nbsp;|
 
-<!-- {"left" : 0.1, "top" : 1.17, "height" : 3.08, "width" : 10.05, "columnwidth" : [1.88, 2.14, 2.23, 1.94, 1.86]} -->
+<!-- {"left" : 0.54, "top" : 2.49, "height" : 3.52, "width" : 16.47} -->
 
 ---
 
@@ -73,7 +74,7 @@
 | 4                  | 2                   | 2000           | ???                                                  |
 | 4                  | 3.5                 | 2200           | ???
 
-<!-- {"left" : 0.25, "top" : 3.16, "height" : 1.69, "width" : 9.75, "columnwidth" : [1.61, 1.86, 1.92, 4.36]} -->
+<!-- {"left" : 0.98, "top" : 5.51, "height" : 3.38, "width" : 15.54} -->
 
 ---
 
@@ -88,7 +89,8 @@
 
 * In the example below, we input mixed data to the model, and the model classifies them into A or B
 
-<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 1.21, "top" : 5.37, "height" : 2.88, "width" : 7.83} -->
+<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 3.61, "top" : 6.84, "height" : 3.77, "width" : 10.29} -->
+
 
 ---
 
@@ -100,14 +102,13 @@
 
 * In real world applications, we could be clustering by many dimensions (10s or 100s)
 
-<img src="../../assets/images/machine-learning/clustering-04.png" style="width:60%;"><!-- {"left" : 5.41, "top" : 1.5, "height" : 1.79, "width" : 4.72} -->
+<img src="../../assets/images/machine-learning/clustering-04.png" style="width:60%;"><!-- {"left" : 2.31, "top" : 5.99, "height" : 4.8, "width" : 12.88} -->
 
 ---
 
 ## Clustering Application: Fraud/Anomaly Detection
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png" style="width:40%;float:right;"><!-- {"left" : 2.34, "top" : 3.62, "height" : 4.52, "width" : 5.57} -->
+<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png" style="width:40%;float:right;"><!-- {"left" : 10.6, "top" : 2.54, "height" : 5.37, "width" : 6.62} -->
 
 * Anomaly detection is used to:
 
@@ -129,8 +130,7 @@ Notes:
 
 ## Spark Components
 
-<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
-
+<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 2, "top" : 2.8, "height" : 8.12, "width" : 13.51} -->
 
 Notes:
 
@@ -144,7 +144,7 @@ Notes:
 
 * And distributed systems like Hadoop/Spark offered a great platform to build scalable ML
 
-<img src="../../assets/images/bigdata/cluster-distributed-processing-2.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/bigdata/cluster-distributed-processing-2.png" style="width:50%;" /><!-- {"left" : 3.65, "top" : 5.46, "height" : 5.93, "width" : 10.2} -->
 
 ---
 
@@ -159,8 +159,7 @@ Notes:
 
 * Cloud vendors are trying simplify this too
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/data-science-laptop-to-cluster-1.png" style="width:40%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/google-cloud/data-science-laptop-to-cluster-1.png" style="width:40%;" /><!-- {"left" : 3.75, "top" : 5.94, "height" : 5.67, "width" : 10} -->
 
 ---
 
@@ -196,8 +195,7 @@ Notes:
 
 ## Parallelizing Computations
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/distributed-execution.png" style="width:45%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/distributed-execution.png" style="width:45%;float:right;" /><!-- {"left" : 9.48, "top" : 2.27, "height" : 5.11, "width" : 7.92} -->
 
 * Here is a simple example of doing a COUNT in a distributed way
 
@@ -226,7 +224,7 @@ Notes:
 
 ## SparkML Algorithm Overview
 
-<img src="../../assets/images/spark/3rd-party/spark-ml-algorithms-overview-1.png" style="width:65%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/3rd-party/spark-ml-algorithms-overview-1.png" style="width:65%;"/><!-- {"left" : 3.37, "top" : 2.6, "height" : 8.5, "width" : 10.76} -->
 
 ---
 
@@ -242,7 +240,8 @@ Notes:
 
 * Visualizations: [viz1](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/), [viz2](http://www.bytemuse.com/post/k-means-clustering-visualization/)
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-1.png" style="width:60%;"/><!-- {"left" : 1.27, "top" : 1.08, "height" : 3.86, "width" : 7.71} -->
+<img src="../../assets/images/machine-learning/3rd-party/kmeans-1.png" style="width:60%;"/><!-- {"left" : 3.15, "top" : 4.8, "height" : 5.61, "width" : 11.19} -->
+
 
 ---
 
@@ -254,14 +253,13 @@ Example: 3 centroids (red, green, blue)
 * **Step 3:** The centroid (geometric center) of the clustered points becomes the new centroid of that cluster. Each centroid  updated.
 * **Step 4:** Repeat steps 2 and 3 until convergence is reached (the points move less than the threshold amount).
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-3a.png"  style="width:20%;"/>  &nbsp; &nbsp; <!--  {"left" : 0.19, "top" : 6.01, "height" : 2.39, "width" : 2.48} --><img src="../../assets/images/machine-learning/3rd-party/kmeans-3b.png"  style="width:20%;"/><!--  {"left" : 2.88, "top" : 6.32, "height" : 1.76, "width" : 2.04} --> &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/kmeans-3c.png"  style="width:20%;"/><!--  {"left" : 4.68, "top" : 6.01, "height" : 2.39, "width" : 2.77} --> &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/kmeans-3d.png"  style="width:20%;"/><!--  {"left" : 7.6, "top" : 6.32, "height" : 1.76, "width" : 2.04} -->
+<img src="../../assets/images/machine-learning/3rd-party/kmeans-3a.png"  style="width:20%;"/><!-- {"left" : 1.18, "top" : 7.96, "height" : 2.94, "width" : 3.05} -->  &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/kmeans-3b.png"  style="width:20%;"/><!-- {"left" : 4.88, "top" : 7.78, "height" : 2.94, "width" : 3.41} --> &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/kmeans-3c.png"  style="width:20%;"/><!-- {"left" : 8.74, "top" : 7.78, "height" : 2.94, "width" : 3.41} -->  &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/kmeans-3d.png"  style="width:20%;"/><!-- {"left" : 13.16, "top" : 7.78, "height" : 2.94, "width" : 3.41} -->
 
 ---
 
 ## MTCars Clustering
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-8-mtcars.png" style="width:60%;float:right;"/><!--  {"left" : 5.18, "top" : 2.72, "height" : 2.47, "width" : 4.97} -->
-
+<img src="../../assets/images/machine-learning/3rd-party/kmeans-8-mtcars.png" style="width:60%;float:right;"/><!-- {"left" : 8.87, "top" : 2.39, "height" : 4.17, "width" : 8.39} -->
 * We are going to cluster cars using two attributes: MPG & CYL
 
 * This is `mtcars` dataset, has 32 data points
@@ -278,19 +276,19 @@ Example: 3 centroids (red, green, blue)
 
 ## Starting With K = 2  (Find 2 clusters)
 
-<img src="../../assets/images/machine-learning/kmeans-9.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 2.29, "height" : 4.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-9.png" style="width:80%;"/><!-- {"left" : 1.4, "top" : 2.85, "height" : 8.02, "width" : 14.7} -->
 
 ---
 
 ## Starting With K = 4  (Find 4 clusters)
 
-<img src="../../assets/images/machine-learning/kmeans-10.png"  style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.89, "height" : 5.28, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-10.png"  style="width:80%;"/><!-- {"left" : 1.86, "top" : 2.42, "height" : 8.87, "width" : 13.78} -->
 
 ---
 
 ## Evaluating K-Means With WSSSE
 
-* Goal is to  **minimize WSSSE** with  **reasonable effort**
+* Goal is to  **minimize WSSSE** with **reasonable effort**
 
 * We look for elbows - that indicates a reasonable clustering
 
@@ -298,13 +296,13 @@ Example: 3 centroids (red, green, blue)
 
 * **Question for class:** At  **k=32**  we have achieved  **WSSSE=0** , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 4.1, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:60%;"/><!-- {"left" : 3.3, "top" : 5.66, "height" : 4.64, "width" : 10.9} -->
 
 ---
 
 ## Lab: KMeans with Spark
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 11.99, "top" : 1.62, "height" : 6.36, "width" : 4.77} -->
 
 * **Overview:**
     - Run KMeans algorithm with Spark
@@ -319,10 +317,10 @@ Example: 3 centroids (red, green, blue)
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.33, "top" : 1.89, "height" : 2.68, "width" : 3.63} -->
 
 * Let's go over what we have covered so far
 
 * Any questions?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.01, "top" : 5.21, "height" : 5.65, "width" : 8.47} -->

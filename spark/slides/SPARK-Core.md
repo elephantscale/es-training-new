@@ -1,6 +1,7 @@
 # Spark Core
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/>  <!-- {"left" : 2.75, "top" : 6.35, "height" : 1.26, "width" : 2.38} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:35%;"/> <!-- {"left" : 6.69, "top" : 7.44, "height" : 2.2, "width" : 4.13} -->
+
 
 ---
 
@@ -17,7 +18,8 @@
 
 ## Spark Core
 
-<img src="../../assets/images/spark/spark-components-core.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-components-core.png" style="width:50%;float:right;" /> <!-- {"left" : 8.36, "top" : 2.2, "height" : 3.32, "width" : 8.82} -->
+
 
 * Spark Core handles 
     - Task allocation
@@ -48,7 +50,7 @@ Notes:
 
 ## Spark Shell Execution Modes
 
-<img src="../../assets/images/spark/spark-shell-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-shell-1.png" style="width:50%;float:right;" /> <!-- {"left" : 7.8, "top" : 2.16, "height" : 6.94, "width" : 9.81} -->
 
 * Spark Shell can be run in either local or cluster mode
 
@@ -69,36 +71,42 @@ Notes:
 ```bash
 $   spark-shell
 ```
+<!-- {"left" : 0.8, "top" : 2.62, "height" : 0.57, "width" : 3.28} -->
 
 * Start with 4 worker threads
 
 ```bash
 $   spark-shell  --master local[4]
 ```
+<!-- {"left" : 0.8, "top" : 3.84, "height" : 0.57, "width" : 6.44} -->
 
 * Start worker threads for each CPU core
 
 ```bash
 $   spark-shell  --master local[*]
 ```
+<!-- {"left" : 0.8, "top" : 5.02, "height" : 0.57, "width" : 6.44} -->
 
 * Connect to a Spark cluster
 
 ```bash
 $   spark-shell --master spark://master_host:7077
 ```
+<!-- {"left" : 0.8, "top" : 6.28, "height" : 0.57, "width" : 8.94} -->
 
 * Connect to a YARN cluster
 
 ```bash
 $   spark-shell --master yarn
 ```
+<!-- {"left" : 0.8, "top" : 7.54, "height" : 0.57, "width" : 5.61} -->
 
 * See all options
 
 ```bash
 $   spark-shell --help
 ```
+<!-- {"left" : 0.8, "top" : 8.81, "height" : 0.57, "width" : 4.44} -->
 
 ---
 
@@ -109,36 +117,44 @@ $   spark-shell --help
 ```bash
 $   pyspark
 ```
+<!-- {"left" : 0.8, "top" : 2.58, "height" : 0.57, "width" : 2.61} -->
 
 * Start with 4 worker threads
 
 ```bash
 $   pyspark  --master local[4]
 ```
+<!-- {"left" : 0.8, "top" : 3.82, "height" : 0.57, "width" : 5.78} -->
 
 * Start worker threads for each CPU core
 
 ```bash
 $   pyspark  --master local[*]
 ```
+<!-- {"left" : 0.8, "top" : 5.06, "height" : 0.57, "width" : 5.78} -->
+
 
 * Connect to a Spark cluster
 
 ```bash
 $   pyspark  --master spark://master_host:7077
 ```
+<!-- {"left" : 0.8, "top" : 6.3, "height" : 0.57, "width" : 8.44} -->
 
 * Connect to a YARN cluster
 
 ```bash
 $   pyspark --master yarn
 ```
+<!-- {"left" : 0.8, "top" : 7.54, "height" : 0.57, "width" : 4.94} -->
+
 
 * See all options
 
 ```bash
 $   pyspark --help
 ```
+<!-- {"left" : 0.8, "top" : 8.64, "height" : 0.57, "width" : 3.78} -->
 
 ---
 
@@ -164,6 +180,9 @@ Using Scala version 2.12.10 (OpenJDK 64-Bit Server VM, Java 11.0.9.1)
 scala> 
 
 ```
+<!-- {"left" : 0.8, "top" : 2.61, "height" : 4.26, "width" : 13.22} -->
+
+<br/>
 
 * Pyspark
 
@@ -182,6 +201,7 @@ Using Python version 3.8.5 (default, Sep  4 2020 07:30:14)
 >>> 
 
 ```
+<!-- {"left" : 0.8, "top" : 7.58, "height" : 3.1, "width" : 8.56} -->
 
 ---
 
@@ -194,7 +214,8 @@ Using Python version 3.8.5 (default, Sep  4 2020 07:30:14)
     - CPU / memory usage
     - Caching details
 
-<img src="../../assets/images/spark/spark-shell-ui-1.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-shell-ui-1.png" style="width:80%;" /><!-- {"left" : 4.25, "top" : 5.9, "height" : 5.37, "width" : 9.01} -->
+
 
 ---
 
@@ -215,6 +236,7 @@ Using Python version 3.8.2 (default, Mar 26 2020 15:53:00)
 >>> spark
 < pyspark.sql.session.SparkSession object at 0x7fb751d8a850 >
 ```
+<!-- {"left" : 0.8, "top" : 3.79, "height" : 2.9, "width" : 10.94} -->
 
 ```console
 
@@ -229,6 +251,7 @@ scala> spark
 res1: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@337f76ff
 
 ```
+<!-- {"left" : 0.8, "top" : 7.01, "height" : 2.9, "width" : 14.78} -->
 
 ---
 
@@ -270,6 +293,7 @@ scala> spark_lines.show
 +--------------------+
 
 ```
+<!-- {"left" : 0.8, "top" : 2.3, "height" : 9.12, "width" : 13.77} -->
 
 ---
 
@@ -308,6 +332,7 @@ scala> spark_lines.show
 +--------------------+
 
 ```
+<!-- {"left" : 0.8, "top" : 2.3, "height" : 9.38, "width" : 11.72} -->
 
 ---
 
@@ -315,7 +340,8 @@ scala> spark_lines.show
 
 * Here is how the Spark Shell UI, note the jobs running
 
-<img src="../../assets/images/spark/spark-shell-ui-2.png" style="width:60%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-shell-ui-2.png" style="width:60%;" /><!-- {"left" : 3.56, "top" : 2.95, "height" : 7.81, "width" : 10.38} -->
+
 
 ---
 
@@ -323,7 +349,6 @@ scala> spark_lines.show
 
 * Spark supports wide variety of data formats
 
-<br />
 
 | Function           | Description      |
 |--------------------|------------------|
@@ -332,11 +357,14 @@ scala> spark_lines.show
 | spark.read.json    | JSON files       |
 | spark.read.parquet | Parquet files    |
 
+<!-- {"left" : 1.86, "top" : 3.57, "height" : 2.5, "width" : 13.77} -->
+
 ---
 
 ## Lab: Spark Shell
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.38, "top" : 1.5, "height" : 6.09, "width" : 4.57} -->
+
 
 * **Overview:**
    - Get used to Spark Shell
@@ -345,7 +373,7 @@ scala> spark_lines.show
    - 20-30 mins
 
 * **Instructions:**
-   - **SHELL-1**: Use Spark Shell
+   - **SHELL-1:** Use Spark Shell
 
 Notes:
 
@@ -359,8 +387,7 @@ Notes:
 
 * Spark data models have evolved over the years
 
-<img src="../../assets/images/spark/spark-data-model-1.png" style="width:70%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
-
+<img src="../../assets/images/spark/spark-data-model-1.png" style="width:70%;" /> <!-- {"left" : 3.1, "top" : 3.41, "height" : 6.9, "width" : 11.3} -->
 ---
 
 ## Spark Data Models Comparison
@@ -374,7 +401,10 @@ Notes:
 | Optimizations       | Minimal.  User is responsible for optimizations | Offers exceptional optimization                             | Offers exceptional optimization       |
 | Languages           | Java, Scala, Python                             | Java, Scala, Python                                         | Java, Scala, Python (partial support) |
 
-<br />
+<!-- {"left" : 0, "top" : 1.6, "height" : 6.03, "width" : 17.5} -->
+
+<br/>
+<br/>
 
 * References: 
     - [A Tale of Three Apache Spark APIs: RDDs vs DataFrames and Datasets](https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html)
@@ -396,12 +426,13 @@ Notes:
 lines = sc.textFile("data.txt")
 lines.collect()
 ```
+<!-- {"left" : 0.8, "top" : 4.78, "height" : 1.22, "width" : 8.45} -->
 
 ---
 
 ## Dataframes
 
-<img src="../../assets/images/spark/spark-dataframe-architecture.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-dataframe-architecture.png" style="width:40%;float:right;" /><!-- {"left" : 9.32, "top" : 1.89, "height" : 4.74, "width" : 7.79} -->
 
 * Dataframes are created for providing easy to use APIs for structured data
 
@@ -419,12 +450,15 @@ lines.collect()
 data = spark.read.csv("orders.csv")
 data.show()
 ```
+<!-- {"left" : 0.8, "top" : 10.9, "height" : 0.86, "width" : 6.6} -->
+
 
 ---
 
 ## Dataset
 
-<img src="../../assets/images/spark/dataset-1.png" style="width:38%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/dataset-1.png" style="width:38%;float:right;" /><!-- {"left" : 9.65, "top" : 1.89, "height" : 4.36, "width" : 7.62} -->
+
 
 * Datasets were introduced in Spark 2
 
@@ -443,27 +477,27 @@ data.show()
 
 ## Spark Datamodel Features
 
-<img src="../../assets/images/spark/dataframe-2-distributed.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/dataframe-2-distributed.png" style="width:40%;float:right;" /><!-- {"left" : 10.31, "top" : 1.4, "height" : 4.99, "width" : 7.06} -->
 
 * Spark data is **distributed** - they can be spread across the cluster
     - They don't have to fit on a single machine memory
 
+<img src="../../assets/images/deep-learning/cluster-distributed-processing-1.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
 * Once data is read, it is **immutable**, it can not be changed
     - This may seem like a limitation, but it really helps with parallel operations by avoiding race conditions
-
-<img src="../../assets/images/deep-learning/cluster-distributed-processing-1.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 * Data can be processed in parallel operations
 
 * There are two kinds of operations:
-    - __Transformation__ : Changing one dataset into another
-    - __Action__ : gathering results
+    - __Transformation:__  Changing one dataset into another
+    - __Action:__  gathering results
 
 ---
 
 ## Spark Data Lifecycle
 
-<img src="../../assets/images/spark/data-lifecycle-1.png" style="width:27%;float:right;clear:both;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/data-lifecycle-1.png" style="width:27%;float:right;clear:both;" /> <!-- {"left" : 10.3, "top" : 1.94, "height" : 9.82, "width" : 6.94} -->
 
 * We are loading a file: `data1`
 
@@ -479,7 +513,7 @@ data.show()
 
 ## Lazy Transformations
 
-<img src="../../assets/images/spark/data-lifecycle-2.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/data-lifecycle-2.png" style="width:40%;float:right;clear:both;" /> <!-- {"left" : 9.84, "top" : 1.49, "height" : 10.72, "width" : 7.58} -->
 
 * Spark **lazily** evaluates transformations
 
@@ -496,7 +530,7 @@ data.show()
 
 ## Distributed Data and Partitions
 
-<img src="../../assets/images/spark/distributed_file_blocks.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/distributed_file_blocks.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 7.86, "top" : 2.04, "height" : 8.48, "width" : 9.22} -->
 
 * Distributed file systems will be store data on multiple nodes
 
@@ -516,7 +550,7 @@ data.show()
 
 * So partitions can be processed in parallel!
 
-<img src="../../assets/images/spark/distributed_processing.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/distributed_processing.png" style="width:50%;" /><!-- {"left" : 3.98, "top" : 4.25, "height" : 7.23, "width" : 9.54} -->
 
 ---
 
@@ -532,8 +566,7 @@ data.show()
 * Processing local data can yield very high IO throughput
     - This is a key factor in Hadoop + Spark working well together
 
-<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
-
+<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:50%;" /><!-- {"left" : 3.12, "top" : 6.53, "height" : 4.65, "width" : 11.25} -->
 ---
 
 ## Transformation and Partitions
@@ -543,7 +576,8 @@ data.show()
 * Here the filter operations are applied per partition level
     - And they are execute in parallel
 
-<img src="../../assets/images/spark/data-partitions-1.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/data-partitions-1.png" style="width:80%;" /><!-- {"left" : 1.18, "top" : 4.7, "height" : 6.5, "width" : 15.15} -->
+
 
 ---
 
@@ -553,25 +587,27 @@ data.show()
 
 * We have a log file that is split into 3 partitions
 
-<img src="../../assets/images/spark/partition-1.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/partition-1.png" style="width:80%;" /><!-- {"left" : 1.32, "top" : 4.05, "height" : 4.03, "width" : 14.86} -->
 
 ---
 
 ## An Example
 
-<img src="../../assets/images/spark/partition-2.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/partition-2.png" style="width:80%;" /><!-- {"left" : 2.48, "top" : 2.73, "height" : 8.24, "width" : 12.53} -->
+
 
 ---
 
 ## An Example
 
-<img src="../../assets/images/spark/partition-3.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/partition-3.png" style="width:80%;" /><!-- {"left" : 2.47, "top" : 2.71, "height" : 8.29, "width" : 12.57} -->
 
 ---
 
 ## An Example
 
-<img src="../../assets/images/spark/partition-4.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/partition-4.png" style="width:80%;" /><!-- {"left" : 1.89, "top" : 2.59, "height" : 8.52, "width" : 13.73} -->
+
 
 ---
 
@@ -580,21 +616,22 @@ data.show()
 * During a multi-step workflow, partitions might get uneven
 
 * We can use the following methods to rebalance partitions:
-    - **`repartition`** : can increase/decrease partition count
-    - **`coalesce`** : only decreases partitions, and more efficient
+    - **`repartition:`** can increase/decrease partition count
+    - **`coalesce:`** only decreases partitions, and more efficient
 
-* Rebalancing partitions, will involve streaming data between nodes.  This is called **shuffling**
+* Rebalancing partitions, will involve streaming data between nodes. This is called **shuffling**
     - Shuffling data can be expensive, at large scale
 
 ---
 
 ## Fault Tolerance
 
-<img src="../../assets/images/spark/fault-tolerance-1.png" style="width:60%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/fault-tolerance-1.png" style="width:60%;float:right;" /><!-- {"left" : 11.48, "top" : 1.94, "height" : 2.36, "width" : 5.84} -->
+
 
 * Failures do happen (when, not if) in distributed computing
     - Machines can crash, processes can crash (running out of memory ..etc)
-    - **Question for the class**: What other failure scenarios can you think of?
+    - **Question for the class:** What other failure scenarios can you think of?
 * Spark can **automatically recover** from run time errors!
     - No intervention required from devs or admins
 * Spark tracks transformation **lineage**
@@ -606,17 +643,17 @@ data.show()
 
 ## Fault Tolerance
 
-* Narrow dependency examples : filter, distinct
+* Narrow dependency examples: filter, distinct
 
-* Wide dependency examples : join, merge, sort
+* Wide dependency examples: join, merge, sort
 
 * __Narrow dependency__ lineages are quicker to recover than __wide dependencies__
 
-* **Question for the class**:
+* **Question for the class:**
     - Why are narrow dependencies easier to recover in failure?
 
-<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:38%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
-<img src="../../assets/images/spark/wide-dependency-1.png" style="width:28%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:33%;float:left;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/wide-dependency-1.png" style="width:22%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 Notes:
 
@@ -637,16 +674,17 @@ Narrow dependencies are easier to recover, because the amount of data to re-read
 ```python
 average = total / count
 ```
+<!-- {"left" : 0.8, "top" : 5.21, "height" : 0.57, "width" : 4.61} -->
 
 ```scala
 val name_lower = name.toLower()
 ```
+<!-- {"left" : 0.8, "top" : 6.14, "height" : 0.57, "width" : 5.94} -->
 
 ---
 
 ## Anatomy of a Spark Job
 
-<img src="../../assets/images/spark/DAG-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ```scala
 val logs = sc.textFile("server.log")
@@ -654,6 +692,11 @@ val errors = logs.filter(_.contains("Error"))
 val mysqlError = errors.filter(_.contains("mysql"))
 val sparkError = errors.filter(_.contains("spark"))
 ```
+<!-- {"left" : 0.8, "top" : 3.03, "height" : 1.81, "width" : 11.61} -->
+
+<img src="../../assets/images/spark/DAG-1.png" style="width:50%;float:right;" /><!-- {"left" : 9.04, "top" : 2.6, "height" : 6.93, "width" : 9.8} -->
+
+<br/>
 
 * Spark executes the workflow as a DAG (Direct Acyclic Graph)
     - Directed (data flows in a certain direction
@@ -673,7 +716,7 @@ val sparkError = errors.filter(_.contains("spark"))
 
 * A Stage may have one or more **tasks**
 
-<img src="../../assets/images/spark/spark-job-anatomy.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-job-anatomy.png" style="width:45%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
 
 ---
 
@@ -684,7 +727,7 @@ val sparkError = errors.filter(_.contains("spark"))
 * If network communication is required then another stage begins
     - E.g. shuffle operation
 
-* Operations that cause a shuffle operation : Sort,  groupByKey,  Join
+* Operations that cause a shuffle operation: Sort,  groupByKey,  Join
 
 * Stages for a Job are usually executed in sequence
     - One Stage's output is fed as input another Stage
@@ -702,7 +745,8 @@ val sparkError = errors.filter(_.contains("spark"))
 
 * Some operations needing shuffle : join, sort, group by
 
-<img src="../../assets/images/spark/shuffle-1.png" style="width:65%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/shuffle-1.png" style="width:65%;" /><!-- {"left" : 2.68, "top" : 6.32, "height" : 4.85, "width" : 12.15} -->
+
 
 ---
 
@@ -742,6 +786,8 @@ filtered.show(truncate=False)
 # +---------------------------+
 
 ```
+<!-- {"left" : 0.8, "top" : 2.19, "height" : 9.32, "width" : 9.28} -->
+
 
 ---
 
@@ -781,12 +827,14 @@ filtered.show(truncate=false)
 // +---------------------------+
 
 ```
+<!-- {"left" : 0.8, "top" : 2.19, "height" : 9.32, "width" : 9.78} -->
 
 ---
 
 ## Lab: Spark Data Loading / Spark UI
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.64, "top" : 1.89, "height" : 5.64, "width" : 4.23} -->
+
 
 * **Overview:**
    - Loading  datasets in Spark and getting familiar with Spark UI
@@ -826,7 +874,7 @@ Notes:
     - Across nodes
     - or various combinations
 
-<img src="../../assets/images/spark/data-flow-1.png" style="width:50%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/data-flow-1.png" style="width:50%;float:right;" /><!-- {"left" : 9.89, "top" : 2.21, "height" : 6.12, "width" : 8.65} -->
 
 * Why cache data on disk?
     - Some times we don't want to repeat expensive operations like join, multiple times
@@ -839,7 +887,7 @@ Notes:
 
 ## Spark Caching in Memory
 
-<img src="../../assets/images/spark/caching-1.png" style="width:40%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/caching-1.png" style="width:40%;float:right;" /><!-- {"left" : 11.66, "top" : 1.54, "height" : 4.12, "width" : 5.84} -->
 
 * Earlier Spark versions (pre v2), Spark cached data in Java Heap memory
 
@@ -864,7 +912,8 @@ Notes:
 
 * Starting with Spark v2, the Tungsten engine, uses this memory allocation scheme by default
 
-<img src="../../assets/images/spark/caching-2.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/caching-2.png" style="width:50%;" /><!-- {"left" : 4.55, "top" : 6.55, "height" : 4.52, "width" : 8.41} -->
+
 
 ---
 
@@ -888,7 +937,11 @@ data.persist(StorageLevel.MEMORY_ONLY)
 
 // cache compressed data
 data.persist(StorageLevel.MEMORY_ONLY_SER)
+
 ```
+<!-- {"left" : 0.8, "top" : 7.32, "height" : 2.42, "width" : 10.48} -->
+
+
 
 ---
 
@@ -913,6 +966,7 @@ data.persisit(StorageLevel.MEMORY_AND_DISK)
 // memory and disk - compressed
 data.persisit(StorageLevel.MEMORY_AND_DISK_SER)
 ```
+<!-- {"left" : 0.8, "top" : 7.13, "height" : 3.21, "width" : 10.62} -->
 
 ---
 
@@ -934,12 +988,14 @@ data.persist (StorageLevel.DISK_ONLY_2)
 data.persist (StorageLevel.MEMORY_AND_DISK_2)
 
 ```
+<!-- {"left" : 0.8, "top" : 3.6, "height" : 2.92, "width" : 9.26} -->
 
 ---
 
 ## Spark Caching Performance RDD vs Dataset
 
-<img src="../../assets/images/spark/caching-3.png" style="width:30%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/caching-3.png" style="width:30%;float:right;" /><!-- {"left" : 11.64, "top" : 1.89, "height" : 7.16, "width" : 5.6} -->
+
 
 * Here we see caching stats from Spark v1 and Spark v2 (using Tungsten engine)
 
@@ -967,7 +1023,7 @@ data.persist (StorageLevel.MEMORY_AND_DISK_2)
 * In-memory processing is very attractive for iterative workloads like machine learning
     - Baidu uses 100 node spark cluster with 2 PB of memory
 
-<img src="../../assets/images/spark/caching-5.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/caching-5.png" style="width:50%;" /> <!-- {"left" : 2.52, "top" : 7.65, "height" : 3.26, "width" : 12.47} -->
 ---
 
 ## In Memory File Systems
@@ -978,13 +1034,15 @@ data.persist (StorageLevel.MEMORY_AND_DISK_2)
 
 * These in-memory file systems act as a giant, distributed cache between Spark and file systems (HDFS or Cloud file systems)
 
-<img src="../../assets/images/spark/tachyon-1.png" style="width:43%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/tachyon-1.png" style="width:43%;"/><!-- {"left" : 11.25, "top" : 2.03, "height" : 4.82, "width" : 6.02} -->
+
 
 ---
 
 ## Lab: Spark Caching
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.21, "top" : 1.62, "height" : 6.61, "width" : 4.96} -->
+
 
 * **Overview:**
    - Understand Spark caching
@@ -1001,10 +1059,21 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.31, "top" : 1.89, "height" : 2.68, "width" : 3.63} -->
 
 * Let's go over what we have covered so far
 
 * Any questions?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.77, "top" : 5.84, "height" : 5.3, "width" : 7.95} -->
+
+
+
+
+
+
+
+
+
+
+

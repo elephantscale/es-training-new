@@ -2,13 +2,26 @@
 
 (C) Copyright Elephant Scale
 
-June 11, 2021
+January 30, 2022
 
 ## Overview
 This course will teach threat modeling for secure coding practices
 
 ## Audience
 Developers, team leads, project managers
+
+## Learning objectives
+
+* Understand the origins and history of threat modeling
+* Grasp the needs that threat modeling answers
+* Acquire a good grip of threat modeling as a tool in modern security practices
+
+## The students will learn
+* Know what threat modeling for and what it does
+* Apply threat modeling concepts to protect your enterprise
+* Connect threat modeling to common exploits
+* Use Kill Chain and MITRE
+
 
 ## Skill Level
 Introductory - Intermediate
@@ -21,7 +34,7 @@ Lectures and hands on labs. (50% - 50%)
 
 ## Prerequisites
 * Recommended: Cybersecurity awareness
-*  Familiar with code developement
+*  Familiar with code development
 
 
 ## Lab environment

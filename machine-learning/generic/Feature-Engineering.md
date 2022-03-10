@@ -195,6 +195,51 @@ Notes:
 
 ---
 
+# Data Wrangling
+
+---
+
+## Data Wrangling
+
+<img src="../../assets/images/machine-learning/3rd-party/data-science-time-spent-1.png" style="width:50%;float:right;"/> <!-- {"left" : 0.26, "top" : 5.52, "height" : 1.64, "width" : 9.74} -->
+
+* Data scientists spend significant amount of time doing **data wrangling**
+
+* In [Anaconda 2020 survey](https://www.anaconda.com/state-of-data-science-2020) data wrangling takes up up to 45% of time
+
+* This can include cleaning up data, transforming data into a format that can be used by ML algorithms
+
+---
+
+## Data Cleaning
+
+<img src="../../assets/images/machine-learning/3rd-party/cartoon-data-cleaning.jpg" style="width:50%;float:right;"/> <!-- {"left" : 0.26, "top" : 5.52, "height" : 1.64, "width" : 9.74} -->
+
+* Real world data is hardly in a format to be used for ML
+
+* We need to do fair amount of cleaning of data before we can do ML
+
+* This is **not very interesting** part of ML, still very important 😄
+
+* Let's look at some of the techniques for data cleansing in the next lab
+
+---
+
+## Lab: Data Cleanup
+
+* **Overview:**
+    - Cleaning up data, getting it ready for analytics
+
+* **Approximate Time:**
+    - 10 - 15 mins
+
+* **Instructions:**
+    - **exploration/data-cleanup**
+
+Notes:
+
+---
+
 # Non-numeric Features
 
 ---

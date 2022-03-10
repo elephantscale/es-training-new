@@ -2,7 +2,7 @@
 
 © Elephant Scale
 
-June 09, 2021
+February 18, 2022
 
 Hadoop is a mature Big Data environment, with Hive is de-facto standard for the SQL interface.
 Today, the computations in Hadoop are usually done with Spark. 
@@ -65,7 +65,7 @@ This course covers Hadoop 3, Hive 3, and Spark 3.
 * Big Data , Hadoop, Spark
 * Spark concepts and architecture
 * Spark components overview
-* Labs : Installing and running Spark
+* Labs: Installing and running Spark
 
 ### First Look at Spark
 * Spark shell
@@ -76,8 +76,8 @@ This course covers Hadoop 3, Hive 3, and Spark 3.
 ### Spark Data structures
 * Partitions
 * Distributed execution
-* Operations : transformations and actions
-* Labs : Unstructured data analytics using RDDs
+* Operations: transformations and actions
+* Labs: Unstructured data analytics using RDDs
 
 ### Caching
 * Caching overview
@@ -91,14 +91,14 @@ This course covers Hadoop 3, Hive 3, and Spark 3.
 * Loading structured data (JSON, CSV) using DataFrames
 * Using schema
 * Specifying schema for DataFrames
-* Labs : DataFrames, Datasets, Schema
+* Labs: DataFrames, Datasets, Schema
 
 ### Spark SQL
 * Spark SQL concepts and overview
 * Defining tables and importing datasets
 * Querying data using SQL
-* Handling various storage formats : JSON / Parquet / ORC
-* Labs : querying structured data using SQL; evaluating data formats
+* Handling various storage formats: JSON / Parquet / ORC
+* Labs: querying structured data using SQL; evaluating data formats
 
 ### Spark and Hadoop
 * Hadoop + Spark architecture
@@ -111,7 +111,7 @@ This course covers Hadoop 3, Hive 3, and Spark 3.
 * Life cycle of an Spark application
 * Spark APIs
 * Deploying Spark applications on YARN
-* Labs : Developing and deploying an Spark application
+* Labs: Developing and deploying a Spark application
 
 ### Spark ML Overview
 * Machine Learning primer

@@ -2,7 +2,7 @@
 
 © Elephant Scale
 
-April 6, 2021
+January 30, 2022
 
 ## Overview
 
@@ -11,7 +11,13 @@ enclave for static and dynamic secrets.
 * HashiCorp Consul solves the challenges of service discovery, 
 configuration management, and network segmentation in distributed applications.
   
-## Learning objectives 
+## Learning objectives
+
+* Understand and the need use of modern security frameworks such as Vault and Consul
+* Review the architectural ideas that contributed to Vault and Consul
+* Be able to mesh the Vault and Consul benefits with the architectural needs of your applications
+
+## You will learn to 
 
 * Learn the basics of using Vault 
 * Familiarize oneself with managing secrets

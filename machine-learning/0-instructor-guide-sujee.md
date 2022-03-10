@@ -7,7 +7,13 @@
 
 ## Lab Env
 
+### ML with Python
+
 We have been using [Google Colab](https://colab.research.google.com/) successfully.  No need to spin up VMs
+
+### ML With Spark
+
+Need cloud VMs
 
 ## Timing Guide
 

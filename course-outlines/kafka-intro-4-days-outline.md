@@ -1,6 +1,6 @@
 # Introduction to Apache Kafka
 
-Dec 01, 2020
+march 09, 2022
 
 ![](../assets/images/logos/kafka-logo-2.png)
 
@@ -14,10 +14,14 @@ Apache Kafka has emerged as a popular messaging component for streaming platform
 * Kafka concepts and architecture
 * Programming using Kafka API
 * Kafka Streams API
+* Kafka Connect
+* Confluent Platform
+* Kafka Administration
 * Monitoring Kafka
 * Tuning / Troubleshooting Kafka
 * Best practices
 * Use cases
+* Designing real world solutions using Kafka
 
 ## Audience
 
@@ -29,33 +33,32 @@ Introductory - Intermediate
 
 ## Duration
 
-Two days
+Four days
 
 ## Format
 
-Lectures and hands on labs. (50%  50%)
+Lectures and hands on labs. (50%   50%)
 
 ## Prerequisites
 
-* Recommended: Comfortable with Java programming language and Java development tools (Eclipse, Maven) - programming exercises are in Java
+* Recommended: Comfortable with Java programming language and Java development tools (Eclipse, Maven)  -  programming exercises are in Java
 * Nice to have: Comfortable in Linux environment (be able to navigate Linux command line, run commands)
 
 ## Lab environment
 
-* Zero Install: There is no need to install Kafka software on students' machines!
 * A lab environment in the cloud will be provided for students.
+* Zero Install: There is no need to install Kafka software on students' machines!
 
 ### Students will need the following
 
-* A reasonably modern laptop with unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly
+* A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
 * Chrome browser
-* SSH client for your platform
 
 ## Detailed outline
 
 ### Introduction to Streaming Systems
 
-* Understanding Fast data
+* Understanding fast data
 * Streaming terminologies
 * Understanding at-least-once / at-most-once / exactly-once processing patterns
 * Popular streaming architectures
@@ -104,6 +107,23 @@ Lectures and hands on labs. (50%  50%)
 * Labs:
   - Kafka Streaming APIs
 
+### Kafka Connect
+
+* Connect ecosystem
+* Popular connectors
+* Sample configurations
+
+### Kafka Administration
+
+* Hardware selection
+* Software prerequisites
+* Kafka specific settings for OS, Disks, memory, CPU and Network
+* Installing and setting up Kafka
+* Verifying installation
+* Securing Kafka
+* Capacity planning
+* Best practices
+
 ### Monitoring and Instrumenting Kafka
 
 * Monitoring Kafka metrics
@@ -129,3 +149,11 @@ Lectures and hands on labs. (50%  50%)
 ### Kafka Case Studies
 
 * This section will feature case studies from various companies using Kafka solve real world problems
+
+### Kafka Design Exercises
+
+* In section, students will work as a group and design end-to-end scenarios with Kafka
+
+### Final workshop (time permitting)
+
+* Students will build an end-to-end application using Kafka

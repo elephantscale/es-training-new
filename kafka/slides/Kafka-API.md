@@ -225,12 +225,11 @@ Notes:
 
 <img src="../../assets/images/kafka/Producer-Acknowledgements-01.png" style="width:65%;"/><!-- {"left" : 1.67, "top" : 1.16, "height" : 1.6, "width" : 6.91} -->
 
-
-| ACK                       | Description                                                                                                                      | Speed  | Data safety                                                  |
-|---------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------|
-| acks=0                    | - Producer doesn't wait for any acks from broker,<br/>- Producer won't know of any errors                                        | High   | Low <br/><br/>No guarantee that broker received the message  |
-| acks=1,<br/>**(default)** | - Broker will write the message to local log,<br/>- Does not wait for replicas to complete                                       | Medium | Medium<br/><br/>Message is at least persisted on lead broker |
-| acks=all                  | - Message is persisted on lead broker and in replicas,<br/>- Lead broker will wait for in-sync replicas to acknowledge the write | Low    | High<br/><br/>Message is persisted in multiple brokers       |
+| ACK                               | Description                                                                                                                  | Speed  | Data safety                                          |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------|--------|------------------------------------------------------|
+| acks = 0                            | - Producer doesn't wait for any acks from broker <br/> - Producer won't know of any errors                                        | High   | Low   No guarantee that broker received the message  |
+| acks = 1  <br/> (default in Kafka 2)  | - Broker will write the message to local log <br/> - Does not wait for replicas to complete                                       | Medium | Medium  Message is at least persisted on lead broker |
+| ack = all <br/> (default in kafka 3) | - Message is persisted on lead broker and in replicas <br/> - Lead broker will wait for in-sync replicas to acknowledge the write | Low    | High  Message is persisted in multiple brokers       |
 
 <!-- {"left" : 0.25, "top" : 3.38, "height" : 4.61, "width" : 9.75, "columnwidth" : [1.61, 3.58, 1.45, 3.11]} -->
 
@@ -453,13 +452,13 @@ KafkaConsumer < Integer, String > consumer = new KafkaConsumer<>(props);
 
 <br/>
 
- *  **max.partition.fetch.bytes**   (default : 1048576  (1M))
+* **max.partition.fetch.bytes**
+    - default: 1048576  (1M)
+    - Max message size to fetch.  Also see  **message.max.bytes**  broker config
 
-     - Max message size to fetch.  Also see  **message.max.bytes**  broker config
-
- *  **session.timeout.ms**  (default : 30000  (30 secs))
-
-     - If no heartbeats are not received by this window, consumer will be deemed dead and a partition rebalance will be triggered
+* **session.timeout.ms**  
+    - default: 30000  (30 secs) in Kafka 2,  45000 (45 secs) in Kafka 3
+    - If no heartbeats are not received by this window, consumer will be deemed dead and a partition rebalance will be triggered
 
 
 Notes:
