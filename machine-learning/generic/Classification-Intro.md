@@ -4,7 +4,7 @@
 
 ## Algorithm Map
 
-<img src="../../assets/images/machine-learning/algorithm-summary-classifications-1.png"  style="width:80%;" /><!-- {"left" : 1.02, "top" : 1.24, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-classifications-1.png"  style="width:80%;" /><!-- {"left" : 3.17, "top" : 3.13, "height" : 7.45, "width" : 11.17} -->
 
 ---
 
@@ -19,4 +19,4 @@
      - A cell is  **cancerous**  or  **healthy**
      - Hand-written numbers -> any digits -1, 0, 1,..., 8
 
-<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 1.17, "top" : 5.26, "height" : 2.91, "width" : 7.92} -->
+<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 3.01, "top" : 7.1, "height" : 4.22, "width" : 11.47} -->

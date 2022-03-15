@@ -11,7 +11,7 @@ Notes:
 
 ---
 
-## Decision Trees
+# Decision Trees
 
 [../generic/Decision-Trees-1.md](../generic/Decision-Trees-1.md)
 
@@ -38,7 +38,6 @@ Notes:
 
 ## Decision Tree Classifier in Spark ML (Python)
 
-<!-- TODO shiva -->
 ```python
 from pyspark.ml.classification import DecisionTreeClassifier
 
@@ -52,7 +51,8 @@ model = dt.fit(training)
 
 predictions = model.transform(testing)
 ```
-<!-- {"left" : 0, "top" : 1.18, "height" : 2.1, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 3.88, "width" : 14.41} -->
+
 
 Notes:
 
@@ -75,7 +75,8 @@ Notes:
 | predictionCol       | Output prediction column                                             | "prediction"      |
 | labelCol            | Label  Column                                                        | "label"           |
 
-<!-- {"left" : 0.25, "top" : 1.27, "height" : 6.53, "width" : 9.75} -->
+<!-- {"left" : 0.31, "top" : 3, "height" : 6.99, "width" : 16.89} -->
+
 
 Notes:
 
@@ -86,7 +87,6 @@ Notes:
 
 ## Model Evaluation Sample Code (Python)
 
-<!-- TODO shiva -->
 ```python
 from pyspark.ml.evaluation import MultiClassClassificationEvaluator
 
@@ -98,7 +98,9 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Accuracy = %g " , accuracy)
 ```
-<!-- {"left" : 0, "top" : 1.18, "height" : 2.13, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 3.26, "width" : 13.99} -->
+
+
 
 Notes:
 
@@ -126,7 +128,6 @@ Notes:
 
 ## Decision Tree Regressor in Spark ML (Python)
 
-<!-- TODO shiva -->
 ```python
 from pyspark.ml.classification import DecisionTreeRegressor
 
@@ -140,7 +141,9 @@ model = dt.fit(training)
 
 predictions = model.transform(test)
 ```
-<!-- {"left" : 0, "top" : 1.18, "height" : 2.31, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 3.98, "width" : 14.79} -->
+
+
 
 Notes:
 
@@ -163,7 +166,7 @@ Notes:
 | predictionCol       | Output prediction column                                             | "prediction"      |
 | labelCol            | Label Column                                                         | "label"           |
 
-<!-- {"left" : 0.25, "top" : 1.27, "height" : 6.05, "width" : 9.75} -->
+<!-- {"left" : 0.88, "top" : 3.03, "height" : 6.33, "width" : 15.74} -->
 
 Notes:
 
@@ -173,7 +176,6 @@ Notes:
 
 ## Model Evaluation Sample Code (Python)
 
-<!-- TODO shiva -->
 ```python
 from pyspark.ml.evaluation import RegressionEvaluator
 
@@ -185,7 +187,8 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Accuracy = %g " , accuracy)
 ```
-<!-- {"left" : 0, "top" : 1.34, "height" : 2.9, "width" : 10.11} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 3.86, "width" : 13.43} -->
+
 
 Notes:
 
@@ -194,8 +197,7 @@ Notes:
 
 ## Lab: Decision Trees
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.52, "top" : 1.44, "height" : 5.76, "width" : 4.32} -->
 
  *  **Overview**
  Create a classification decision tree
@@ -209,16 +211,16 @@ Notes:
      -  **DT-2: prosper-loans**  
      (see following slides for details on Prosper dataset)
 
-<img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%;"><!--{"left" : 2.81, "top" : 5.85, "height" : 1.08, "width" : 4.62} -->
+<img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%;"><!--{"left" : 1.16, "top" : 6.91, "height" : 1.4, "width" : 5.97} -->
 
 
 Notes:
 
 ---
 
-## About the `Prosper` Dataset
+## About the Prosper Dataset
 
- <img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%; float:right"/><!-- {"left" : 7.32, "top" : 1.12, "height" : 0.63, "width" : 2.68} -->
+ <img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%; float:right"/><!-- {"left" : 10.5, "top" : 1.89, "height" : 1.57, "width" : 6.67} -->
 
  * https://www.prosper.com/
 
@@ -257,12 +259,17 @@ Notes:
 | 21    | EmploymentStatusDuration  |22       | IsBorrowerHomeowner    |
 | 23    | CurrentlyInGroup          |...      | And so on, till #81    |
 
+
+<!-- {"left" : 1.14, "top" : 2.79, "height" : 6.81, "width" : 15.21, "columnwidth" : [1.9, 5.7, 2, 5.61]} -->
+
+
+
 Notes:
 
 ---
 
 
-## Random Forests
+# Random Forests
 
 [../generic/Decision-Trees-2-Random-Forest.md](../generic/Decision-Trees-2-Random-Forest.md)
 
@@ -287,7 +294,6 @@ Notes:
 
 ## Random Forest Sample Code (Python)
 
-<!-- TODO shiva -->
 ```python
 from pyspark.ml.classification import RandomForestClassifer
 
@@ -301,7 +307,7 @@ model= rf.fit(training)
 
 predictions = model.transform(test)
 ```
-<!-- {"left" : 0, "top" : 1.34, "height" : 2.71, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 3.95, "width" : 14.85} -->
 
 Notes:
 
@@ -326,7 +332,7 @@ Notes:
 | numtrees        | Max Numbers of trees                       | 20                |
 | subSamplingRate | Adjusts Sampling rate of data for boosting | 5                 |
 
-<!-- {"left" : 0.25, "top" : 2.83, "height" : 1.69, "width" : 9.75} -->
+<!-- {"left" : 1.27, "top" : 4.63, "height" : 2.01, "width" : 15.02} -->
 
 Notes:
 
@@ -335,12 +341,13 @@ Notes:
 ---
 
 
-
 ## Random Forest Classifier in Spark
 
 
 * Implemented by  
+
   - **pyspark.ml.regression.RandomForestRegressor** (python)
+
   - **org.apache.spark.ml.regression.RandomForestRegressor**  (Scala)
 
 
@@ -352,7 +359,6 @@ Notes:
 
 ## Random Forest Sample Code (Python)
 
-<!-- TODO shiva -->
 ```python
 from pyspark.ml.classification import RandomForestRegressor
 
@@ -366,7 +372,7 @@ model = rf.fit(training)
 
 predictions = model.transform(test)
 ```
-<!-- {"left" : 0, "top" : 1.3, "height" : 2.71, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 4.1, "width" : 15.42} -->
 
 
 Notes:
@@ -391,7 +397,7 @@ Notes:
 | numtrees        | Max Numbers of trees                       | 20                |
 | subSamplingRate | Adjusts Sampling rate of data for boosting | 5                 |
 
-<!-- {"left" : 0.25, "top" : 2.83, "height" : 1.69, "width" : 9.75} -->
+<!-- {"left" : 0.85, "top" : 4.56, "height" : 2.01, "width" : 14.97} -->
 
 Notes:
 
@@ -401,7 +407,6 @@ Notes:
 
 ## Model Evaluation Sample Code (Python)
 
-<!-- TODO shiva -->
 ```python
 from pyspark.ml.evaluation import RegressionEvaluator
 
@@ -414,7 +419,8 @@ accuracy = evaluator.evaluate(predictions)
 
 print("Accuracy = %g " , accuracy)
 ```
-<!-- {"left" : 0, "top" : 1.2, "height" : 3.19, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 4.27, "width" : 13.53} -->
+
 
 Notes:
 
@@ -422,8 +428,8 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.31, "top" : 2.09, "height" : 2.48, "width" : 3.34} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 4.47, "top" : 4.83, "height" : 5.69, "width" : 8.55} -->
 
 
 * Let's go over what we have covered so far
@@ -434,7 +440,7 @@ Notes:
 
 ## Lab: Random Forest
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!--{"left" : 7.23, "top" : 1, "height" : 3.9, "width" : 2.92} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!--{"left" : 12.02, "top" : 1.41, "height" : 6.68, "width" : 5} -->
 
  *  **Overview**
 

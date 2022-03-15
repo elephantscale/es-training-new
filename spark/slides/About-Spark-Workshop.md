@@ -7,7 +7,7 @@
 
 ---
 
-## Hi, I am  Sujee Maniyam
+## Hi, I am Sujee Maniyam
 
 <img src="../../assets/images/people/sujee-maniyam-2.jpg" style="width:20%;float:right;" /><!-- {"left": 14.37, "top": 1.89, "height": 2.48, "width": 2.99} -->
 <img src="../../assets/images/books/hbase-design-patterns.png" style="width:20%;float:right;clear:both;" /><!-- {"left": 15.04, "top": 4.64, "height": 2.84, "width": 2.41} -->

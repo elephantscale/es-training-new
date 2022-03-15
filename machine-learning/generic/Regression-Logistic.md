@@ -4,13 +4,11 @@
 
 ## Algorithm Map
 
-<img src="../../assets/images/machine-learning/algorithm-summary-classifications-logistic-1.png"  style="width:75%;" /><!-- {"left" : 1.02, "top" : 1.50, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-classifications-logistic-1.png"  style="width:75%;" /><!-- {"left" : 2.51, "top" : 2.69, "height" : 8.33, "width" : 12.47} -->
 
 ---
 
-
 ## Task: Approving Credit Card Applications
-
 
  * In US most adults have a 'credit score' (a.k.a. FICO score)
 
@@ -18,7 +16,7 @@
 
  * Credit score is a big determining factor when applying for loans / mortgages / credit cards
 
-<img src="../../assets/images/machine-learning/3rd-party/credit-scores-1.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 3.82, "height" : 3.66, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/credit-scores-1.png" style="width:60%"/><!-- {"left" : 2.75, "top" : 5.78, "height" : 5.35, "width" : 11.99} -->
 
 
 
@@ -50,7 +48,7 @@ Image credit : (CC) : https://www.flickr.com/photos/cafecredit/27321078025
 | 830          | Yes       |
 | 610          | Yes       |
 
-<!-- {"left" : 3.6, "top" : 3.43, "height" : 4.77, "width" : 3.06} -->
+<!-- {"left" : 6.11, "top" : 5.15, "height" : 5.9, "width" : 5.29} -->
 
 
 Notes:
@@ -62,7 +60,7 @@ Notes:
 
 ## Plotting Credit Approval Data
 
-<img src="../../assets/images/machine-learning/credit-approval-1.png" style="max-width:60%"/><!-- {"left" : 1.02, "top" : 1.82, "height" : 5.42, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/credit-approval-1.png" style="max-width:60%"/><!-- {"left" : 3.19, "top" : 3.19, "height" : 7.34, "width" : 11.11} -->
 
 
 
@@ -73,7 +71,6 @@ Notes:
 ---
 
 ## Plotting Credit Approval Data
-
 
  * X axis = credit score
 
@@ -81,7 +78,7 @@ Notes:
 
  * There is no linear fit line!
 
-<img src="../../assets/images/machine-learning/credit-approval-2.png" style="width:50%"/><!-- {"left" : 2.11, "top" : 3.21, "height" : 4.61, "width" : 6.03} -->
+<img src="../../assets/images/machine-learning/credit-approval-2.png" style="width:50%"/><!-- {"left" : 4.47, "top" : 4.61, "height" : 6.54, "width" : 8.56} -->
 
 
 
@@ -102,7 +99,7 @@ Notes:
 
  * Logistic Regression produces numbers that are probabilities
 
-<img src="../../assets/images/machine-learning/Linear-vs-Logistic-1.png" style="max-width:50%"/><!-- {"left" : 1.6, "top" : 3.08, "height" : 4.76, "width" : 7.05} -->
+<img src="../../assets/images/machine-learning/Linear-vs-Logistic-1.png" style="max-width:50%"/><!-- {"left" : 4.22, "top" : 4.67, "height" : 6.11, "width" : 9.05} -->
 
 
 Notes:
@@ -113,7 +110,7 @@ Notes:
 
 ## Logistic Regression
 
-<img src="../../assets/images/people/david-cox-1.png" style="width:20%;float:right;"/><!-- {"left" : 6.96, "top" : 1.14, "height" : 3.84, "width" : 3} -->
+<img src="../../assets/images/people/david-cox-1.png" style="width:20%;float:right;"/><!-- {"left" : 13.35, "top" : 2.23, "height" : 4.62, "width" : 3.61} -->
 
  * Logistic Regression gives out probability between 0 to 1
 
@@ -144,9 +141,9 @@ Notes:
 
 - So we can treat the output of Sigmoid function as  __probability__
 
-<img src="../../assets/images/formulas-equations/sigmoid-1.png" style="width:30%;float:left"/><!-- {"left" : 3.36, "top" : 2.22, "height" : 1.32, "width" : 3.52} -->
+<img src="../../assets/images/formulas-equations/sigmoid-1.png" style="width:30%;float:left"/><!-- {"left" : 1.48, "top" : 6.74, "height" : 1.9, "width" : 5.08} -->
 
-<img src="../../assets/images/deep-learning/activation-sigmoid.png" style="width:40%;float:right;" /><!-- {"left" : 2.43, "top" : 3.99, "height" : 4.6, "width" : 5.4} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid.png" style="width:40%;float:right;" /><!-- {"left" : 8.41, "top" : 4.45, "height" : 6.48, "width" : 7.61} -->
 
 
 <!-- <img src="../../assets/images/machine-learning/sigmoid-function-1.png" style="width:40%;" /> -->
@@ -160,11 +157,12 @@ Notes:
 
 ## Math Behind Logistic Regression
 
-<img src="../../assets/images/formulas-equations/sigmoid-1.png" style="width:30%;"/> <!-- {"left" : 2.88, "top" : 1.11, "height" : 0.96, "width" : 2.58} --> &nbsp;  &nbsp;
-<img src="../../assets/images/formulas-equations/sigmoid-2.png" style="width:30%;"/><!-- {"left" : 5.94, "top" : 1.13, "height" : 0.91, "width" : 3.39} --> &nbsp;  &nbsp;
-<img src="../../assets/images/formulas-equations/sigmoid-3.png" style="width:90%;"/><!-- {"left" : 0.4, "top" : 5.01, "height" : 0.87, "width" : 9.45} -->
+<img src="../../assets/images/formulas-equations/sigmoid-1.png" style="width:30%;"/> <!-- {"left" : 5.17, "top" : 1.8, "height" : 1.08, "width" : 2.9} -->
+<img src="../../assets/images/formulas-equations/sigmoid-2.png" style="width:30%;"/> <!-- {"left" : 8.51, "top" : 1.85, "height" : 1.03, "width" : 3.82} -->
+<img src="../../assets/images/formulas-equations/sigmoid-3.png" style="width:90%;"/> <!-- {"left" : 4.6, "top" : 3.14, "height" : 0.76, "width" : 8.29} -->
 
 
+<br/>
 
  * Here
      - β represents parameters
@@ -185,7 +183,7 @@ Notes:
 
 ## Applying Logistic Regression To Credit Card Application
 
-<img src="../../assets/images/machine-learning/credit-approval-3.png" style="max-width:40%;float:right;"/><!-- {"left" : 5.85, "top" : 1.02, "height" : 2.72, "width" : 4.13} -->
+<img src="../../assets/images/machine-learning/credit-approval-3.png" style="max-width:40%;float:right;"/><!-- {"left" : 10.16, "top" : 2.5, "height" : 4.31, "width" : 6.55} -->
 
 ```text
 X : input
@@ -215,8 +213,7 @@ For score of 700
 Predicts 84% chance of getting the loan approved.
 So this mapped to YES
 ```
-<!-- {"left" : 0, "top" : 3.01, "height" : 4.91, "width" : 5.59} -->
-
+ <!-- {"left" : 0.85, "top" : 2.5, "height" : 7.86, "width" : 8.94} -->
 
 
 Notes:
@@ -234,7 +231,7 @@ Notes:
 
      - This is called 'multiple logistic regression'
 
-<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="max-width:60%;"/><!-- {"left" : 0.77, "top" : 4.11, "height" : 3.63, "width" : 8.71} -->
+<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="max-width:60%;"/> <!-- {"left" : 3.18, "top" : 5.82, "height" : 4.63, "width" : 11.13} -->
 
 
 
@@ -242,15 +239,11 @@ Notes:
 
 ---
 
-
-
-
 ## Logistic Regression Example
-
 
  * We are going to look college admission data
 
-<img src="../../assets/images/machine-learning/college-admission-3.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 5.02, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/college-admission-3.png" style="max-width:70%;"/><!-- {"left" : 3.18, "top" : 3.69, "height" : 6.81, "width" : 11.14} -->
 
 
 
@@ -272,7 +265,7 @@ Notes:
 
 ---
 
-## Confusion Matrix
+# Confusion Matrix
 
 [ML-Concepts-Confusion-Matrix.md](ML-Concepts-Confusion-Matrix.md)
 
@@ -285,7 +278,7 @@ Notes:
      - Confusion Matrix
      - ROC and AUC (Area Under Curve)
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Measuring-Accuracy-of-Logistic-Model-0.png" style="width:60%;float:right;"/><!-- {"left" : 5.55, "top" : 4.57, "height" : 1.88, "width" : 4.67} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Measuring-Accuracy-of-Logistic-Model-0.png" style="width:60%;float:right;"/><!-- {"left" : 7.54, "top" : 3.74, "height" : 3.89, "width" : 9.67} -->
 
  * Confusion Matrix:
     - correct: 14 + 5 = 19
@@ -305,7 +298,6 @@ Notes:
 ---
 
 ## Preparing Data for Logistic Regression
-
 
  *  **Binary Output Variable**
 
