@@ -4,7 +4,7 @@
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-DT-1.png" style="width:80%"><!-- {"left" : 0.57, "top" : 1.3, "height" : 6.02, "width" : 9.11} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-DT-1.png" style="width:80%"><!-- {"left" : 2.75, "top" : 2.75, "height" : 7.93, "width" : 12} -->
 
 
 Notes:
@@ -15,7 +15,7 @@ Notes:
 
 ## Should I Accept the New Job Offer?
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Job-Offer.png" style="width:80%"><!-- {"left" : 0.86, "top" : 2.14, "height" : 5.36, "width" : 8.53} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Job-Offer.png" style="width:80%"><!-- {"left" : 3, "top" : 3.24, "height" : 7.23, "width" : 11.51} -->
 
 
 Notes:
@@ -26,7 +26,7 @@ Notes:
 
 ## Example of Decision Tree
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Example-Decision-Trees.png" style="width:70%"><!-- {"left" : 0.5, "top" : 1.59, "height" : 5.89, "width" : 9.25} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Example-Decision-Trees.png" style="width:70%"><!-- {"left" : 2.35, "top" : 2.78, "height" : 8.15, "width" : 12.81} -->
 
 
 
@@ -38,7 +38,7 @@ Notes:
 
 ## Class Quiz
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.95, "top" : 1.12, "height" : 2.86, "width" : 4.29} -->
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 9.84, "top" : 1.89, "height" : 5, "width" : 7.5} -->
 
  * **Create a Tree to Classify These Animals**
 
@@ -91,7 +91,7 @@ Medical decision tree use case: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC425
 ## Baseball Player Salary Prediction with Regression Tree
 
 
-<img src="../../assets/images/machine-learning/decision-trees-baseball-player-1.png" style="width:65%"><!-- {"left" : 0.57, "top" : 2.08, "height" : 5.49, "width" : 9.1} -->
+<img src="../../assets/images/machine-learning/decision-trees-baseball-player-1.png" style="width:65%"><!-- {"left" : 1.97, "top" : 2.76, "height" : 8.18, "width" : 13.56} -->
 
 
 Notes:
@@ -103,7 +103,7 @@ Image from "An introduction to Statistical Learning"  with thanks to authors
 
 ## Decision Tree Terminology
 
-<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 6.34, "top" : 1.23, "height" : 4.32, "width" : 3.83} -->
+<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 10.58, "top" : 1.89, "height" : 7.34, "width" : 6.51} -->
 
 - Decision Trees are implemented as binary trees
 
@@ -122,7 +122,7 @@ Image from "An introduction to Statistical Learning"  with thanks to authors
 
 ## Storing The Tree Model
 
-<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 6.65, "top" : 1.05, "height" : 3.93, "width" : 3.48} -->
+<img src="../../assets/images/machine-learning/decision-tree-terminology.png" style="width:35%;float:right;"><!-- {"left" : 10.58, "top" : 1.89, "height" : 7.34, "width" : 6.51} -->
 
 
 - Decision Tree can be saved to a file as a graph or set of rules
@@ -132,7 +132,7 @@ If years < 4.5 Then Salary=5.11
 If years >= 4.5 and Hits < 117.5 Then Salary = 6.0
 If years >= 4.5 and Hits >= 117.5 Then Salary = 6.74
 ```
-<!-- {"left" : 0, "top" : 5.65, "height" : 1.15, "width" : 9.44} -->
+<!-- {"left" : 0.85, "top" : 3.87, "height" : 1.19, "width" : 9.77} -->
 
 
 
@@ -145,7 +145,7 @@ Notes:
 
 ## Tree Algorithm
 
-<img src="../../assets/images/machine-learning/decision-trees-region-split-1.png" style="width:40%;float:right;"><!-- {"left" : 6.02, "top" : 2.2, "height" : 3.09, "width" : 3.96} -->
+<img src="../../assets/images/machine-learning/decision-trees-region-split-1.png" style="width:40%;float:right;"><!-- {"left" : 10.5, "top" : 2.16, "height" : 5.21, "width" : 6.68} -->
 
  * Tree partitions the input space
  * Each input variable as a dimension on an p-dimensional space
@@ -181,7 +181,7 @@ Redo pictures and numbers
  * Find the error (prediction vs actual) per each region
      - This is RSS (Residual Sum of Squares)
 
-<img src="../../assets/images/formulas-equations/decision-tree-RSS-1.png" style="width:30%;float:right;"/><!-- {"left" : 0.27, "top" : 4.83, "height" : 1.78, "width" : 3.93} -->
+<img src="../../assets/images/formulas-equations/decision-tree-RSS-1.png" style="width:30%;float:right;"/><!-- {"left" : 0.85, "top" : 6.7, "height" : 2.08, "width" : 4.6} -->
 
 
 <br/>
@@ -219,7 +219,7 @@ Notes:
 
 ## Example: Guessing Game
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="margin-left:5px; width:45%; float:right;"/><!-- {"left" : 5.6, "top" : 1.03, "height" : 3.55, "width" : 4.55} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Example-Guessing-Game-0.png" style="margin-left:5px; width:45%; float:right;"/><!-- {"left" : 11.18, "top" : 2.32, "height" : 4.56, "width" : 5.85} -->
 
  * Let us say the first person choose a number in the range of 1 through 100
 
@@ -245,7 +245,7 @@ Source: https://uploads7.wikiart.org/images/honore-daumier/chess-players.jpg!Hal
 
 ## Greedy Algorithm
 
-<img src="../../assets/images/machine-learning/decision-trees-greedy-1.png" style="width:30%;float:right;"/><!-- {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
+<img src="../../assets/images/machine-learning/decision-trees-greedy-1.png" style="width:30%;float:right;"/><!-- {"left" : 11.18, "top" : 2.14, "height" : 5.58, "width" : 6.06} -->
 
  * Greedy approach used to divide up the input space is called 'binary recursive split'
 
@@ -269,7 +269,7 @@ Notes:
 
 ## What it means to be greedy?
 
-<img src="../../assets/images/machine-learning/decision-trees-greedy-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.86, "top" : 2.14, "height" : 3.7, "width" : 4.02} -->
+<img src="../../assets/images/machine-learning/decision-trees-greedy-1.png" style="width:50%;float:right;"/><!-- {"left" : 11.18, "top" : 2.14, "height" : 5.58, "width" : 6.06} -->
 
  * Select the `best split` from a set of possible splits
 
@@ -296,7 +296,7 @@ Notes:
 
  * We will create a decision tree to identify the classes
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Creation-Example-0.png" style="width:60%"><!-- {"left" : 1.74, "top" : 2.56, "height" : 4.52, "width" : 6.76} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Creation-Example-0.png" style="width:60%"><!-- {"left" : 4.31, "top" : 3.89, "height" : 5.93, "width" : 8.87} -->
 
 
 Notes:
@@ -311,7 +311,7 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
  * At depth=1
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-1.png" style="width:80%"><!-- {"left" : 0.75, "top" : 2.59, "height" : 3.15, "width" : 8.74} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-1.png" style="width:80%"><!-- {"left" : 1.33, "top" : 4.11, "height" : 5.35, "width" : 14.84} -->
 
 
 Notes:
@@ -326,7 +326,7 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
  * At depth=2
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-2.png" style="width:80%"><!-- {"left" : 0.24, "top" : 2.48, "height" : 2.84, "width" : 9.77} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-2.png" style="width:80%"><!-- {"left" : 0.48, "top" : 3.79, "height" : 4.81, "width" : 16.54} -->
 
 
 Notes:
@@ -343,7 +343,7 @@ Reference : Chapter 2 , "Machine Learning With Python" by Sarah Guido, Andreas C
 
  * We can see the tree is over fitting
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-3.png" style="width:80%"><!-- {"left" : 0.25, "top" : 2.91, "height" : 3.25, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Tree-Creation-Example-3.png" style="width:80%"><!-- {"left" : 1.38, "top" : 4.25, "height" : 4.92, "width" : 14.74} -->
 
 
 Notes:
@@ -382,7 +382,7 @@ Notes:
 
 *  **Min number of elements per node**
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:50%;float:right;"/><!--{"left" : 5.98, "top" : 2.55, "height" : 2.42, "width" : 4.11} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Stopping-Criteria-1-Min-number-of-elements-per-node-0.png" style="width:50%;float:right;"/><!--{"left" : 9.16, "top" : 2.39, "height" : 4.93, "width" : 8.37} -->
 
  * Most common stopping criteria is Minimum instances per node
 
@@ -422,7 +422,6 @@ Notes:
 ---
 
 ## Tree Pruning
-
 
  * Trees can grow arbitrarily large / deep
 
@@ -466,7 +465,7 @@ Notes:
 
      - Combine nodes
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Pruning-0.png" style="width:60%; "/><!-- {"left" : 0.49, "top" : 3.42, "height" : 3.07, "width" : 6.03} --><img src="../../assets/images/machine-learning/Decision-Trees-Tree-Pruning-1.png" style="width:30%; "><!-- {"left" : 6.84, "top" : 3.42, "height" : 3.07, "width" : 2.92} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Tree-Pruning-0.png" style="width:60%; "/><!-- {"left" : 1.72, "top" : 5.41, "height" : 4.66, "width" : 9.14} --><img src="../../assets/images/machine-learning/Decision-Trees-Tree-Pruning-1.png" style="width:30%; "><!-- {"left" : 11.35, "top" : 5.41, "height" : 4.66, "width" : 4.43} -->
 
 Notes:
 
@@ -503,7 +502,7 @@ Notes:
 
 ## Gini Index (G)
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Gini-Index-1.png" style="margin-left:20px; width:40%;float:right;"><!--{"left" : 5.71, "top" : 1.27, "height" : 3.3, "width" : 4.46} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Gini-Index-1.png" style="margin-left:20px; width:40%;float:right;"><!--{"left" : 10.39, "top" : 1.89, "height" : 4.92, "width" : 6.65} -->
 
  * Gini index measures the 'purity' of each node (how mixed data is in one Region)
 
@@ -513,7 +512,7 @@ Notes:
 
  * If all of  *P*<sub>*mk*</sub>  are close to 0 or to 1, G is small
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30%;float:right;clear:both;"><!--{"left" : 6.05, "top" : 6.36, "height" : 1.44, "width" : 3.96} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-G--1.png" style="width:30%;float:right;clear:both;"><!--{"left" : 10.74, "top" : 8.4, "height" : 2.17, "width" : 5.96} -->
 
  * If region has 50%-50%  mix then G = 0.5  (worst purity)
 
@@ -540,7 +539,7 @@ Notes:
 
  * Calculating Gini index as follows
 
-<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-Example-0.png" style="width:30%"><!-- {"left" : 3.22, "top" : 3.28, "height" : 0.94, "width" : 3.81} --><img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-Example-1.png" style="width:80%"><!-- {"left" : 1.44, "top" : 4.55, "height" : 2.15, "width" : 8.14} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-Example-0.png" style="width:30%"><!-- {"left" : 0.79, "top" : 5.18, "height" : 1.23, "width" : 4.97} --><img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-Example-1.png" style="width:80%"><!-- {"left" : 1.45, "top" : 6.85, "height" : 3.86, "width" : 14.61} -->
 
 Notes:
 

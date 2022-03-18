@@ -18,7 +18,7 @@
 
     - When most elements have no value
 
-<img src="../../assets/images/machine-learning/ml-vectors-1.png" style="max-width:35%;"/><!-- {"left" : 2.71, "top" : 3.95, "height" : 4.2, "width" : 4.82} -->
+<img src="../../assets/images/machine-learning/ml-vectors-1.png" style="max-width:35%;"/><!-- {"left" : 11.46, "top" : 1.89, "height" : 4.87, "width" : 5.59} -->
 
 
 
@@ -49,7 +49,7 @@ Vectors.sparse(10,  (0,9),   (100,200) )
      - first element @ index 0  = 100
      - last element @ index 9 = 200
 ```
-<!-- {"left" : 0, "top" : 3.83, "height" : 2.61, "width" : 9.94} -->
+<!-- {"left" : 0.85, "top" : 5.14, "height" : 2.61, "width" : 9.94} -->
 
 
 
@@ -77,7 +77,7 @@ val sv1: Vector = Vectors.sparse(3, Array(0, 2), Array(1.0, 3.0))
 val sv2: Vector = Vectors.sparse(3, Seq((0, 1.0), (2, 3.0)))
 
 ```
-<!-- {"left" : 0, "top" : 1.86, "height" : 1.54, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.87, "height" : 3.49, "width" : 13.44} -->
 
 
 
@@ -107,7 +107,7 @@ print(v2.toArray())
 # [ 100.    0.    0.    0.    0.    0.    0.    0.    0.  200.]
 
 ```
-<!-- {"left" : 0, "top" : 1.86, "height" : 3.13, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.05, "height" : 3.51, "width" : 11.51} -->
 
 
 
@@ -116,4 +116,3 @@ Notes:
 
 
 
----

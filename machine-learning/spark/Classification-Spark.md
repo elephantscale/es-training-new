@@ -60,7 +60,7 @@ Notes:
 | featuresCol      | setFeaturesCol ()           | Which column as input features                                                                                                                                                                              | features      |
 | predictionCol    | setPredictionCol ()         | Output prediction column                                                                                                                                                                                    | prediction    |
 
-<!-- {"left" : 0.14, "top" : 1.03, "height" : 4.6, "width" : 9.97, "columnwidth" : [1.63, 1.55, 5.53, 1.26]} -->
+<!-- {"left" : 0.24, "top" : 1.65, "height" : 10.01, "width" : 17.07, "columnwidth" : [1.88, 2.27, 10.7, 2.22]} -->
 
 Notes:
 
@@ -87,7 +87,7 @@ Notes:
 | 610          | Yes       |
 | 690          | No        |
 
-<!-- {"left" : 3.35, "top" : 3.42, "height" : 4.77, "width" : 3.55, "columnwidth" : [1.74, 1.81]} -->
+<!-- {"left" : 5.74, "top" : 5.03, "height" : 5.9, "width" : 6.03, "columnwidth" : [2.65, 3.38]} -->
 
 Notes:
 
@@ -111,7 +111,7 @@ mydata = pd.DataFrame({
             })
 credit_data = spark.createDataFrame(mydata)
 ```
-<!-- {"left" : 0, "top" : 1.92, "height" : 2.13, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3, "height" : 3.22, "width" : 15.48} -->
 
 Notes:
 
@@ -128,7 +128,7 @@ Notes:
  featureVector = featureVector.withColumn("label",featureVector['approved'])
  featureVector.show()
 ```
-<!-- {"left" : 0, "top" : 1.47, "height" : 1.12, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.54, "height" : 1.41, "width" : 12.87} -->
 
 
 ```text
@@ -151,7 +151,7 @@ Notes:
 +--------+-----+--------+-----+
 
 ```
-<!-- {"left" : 0, "top" : 3.09, "height" : 5.24, "width" : 5.94} -->
+<!-- {"left" : 0.85, "top" : 4.29, "height" : 6.66, "width" : 7.55} -->
 
 
 Notes:
@@ -173,14 +173,14 @@ lrModel = lr.fit(featureVector)
 print("Coefficients: " + str(lrModel.coefficients))
 print("Intercept: " + str(lrModel.intercept))
 ```
-<!-- {"left" : 0, "top" : 1.36, "height" : 2.15, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.54, "height" : 3.01, "width" : 14.34} -->
 
 ```text
 Coefficients: [0.00231936473739]
 Intercept: -1.697546464447156
 
 ```
-<!-- {"left" : 0, "top" : 4.1, "height" : 0.96, "width" : 6.85} -->
+<!-- {"left" : 0.85, "top" : 6.06, "height" : 1.31, "width" : 9.38} -->
 
 Notes:
 
@@ -193,7 +193,7 @@ Notes:
 ```
  lrModel.summary.predictions.show()
 ```
-<!-- {"left" : 0, "top" : 1.23, "height" : 0.69, "width" : 7.82} -->
+<!-- {"left" : 0.85, "top" : 1.74, "height" : 0.69, "width" : 7.82} -->
 
 ```text
 +--------+-----+--------+-----+--------------------+--------------------+----------+
@@ -216,7 +216,7 @@ Notes:
 
 ```
 
-<!-- {"left" : 0, "top" : 2.12, "height" : 3.15, "width" : 8.82} -->
+<!-- {"left" : 0.85, "top" : 2.56, "height" : 3.6, "width" : 10.06} -->
 
 <br/>
 
@@ -243,9 +243,9 @@ Notes:
  plt.title("ROC Curve")
  plt.plot([0.0, 1.0], [0.0, 1.0], 'r')
 ```
-<!-- {"left" : 0, "top" : 1.29, "height" : 2.95, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 1.6, "height" : 2.84, "width" : 9.86} -->
 
- <img src="../../assets/images/machine-learning/college-admission-spark-ROC-1.png" style="width:40%;float:right;"/><!-- {"left" : 4.56, "top" : 4.89, "height" : 3.86, "width" : 5.4} -->
+ <img src="../../assets/images/machine-learning/college-admission-spark-ROC-1.png" style="width:40%;float:right;"/><!-- {"left" : 9.83, "top" : 6.25, "height" : 4.94, "width" : 6.91} -->
 
 
  * Here AUC = 0.857
@@ -274,7 +274,7 @@ predicted = lrModel.transform(newfeatures)
 predicted.show(10, False)
 
 ```
-<!-- {"left" : 0, "top" : 1.02, "height" : 1.56, "width" : 6.36} -->
+<!-- {"left" : 0.85, "top" : 1.7, "height" : 2.02, "width" : 8.23} -->
 
 
 ```text
@@ -293,7 +293,7 @@ predicted.show(10, False)
 +-----+--------+--------------------+--------------------+----------+
 
 ```
-<!-- {"left" : 0, "top" : 2.7, "height" : 2.13, "width" : 6.4} -->
+<!-- {"left" : 0.85, "top" : 3.9, "height" : 2.74, "width" : 8.23} -->
 
 <br/>
 
@@ -330,7 +330,7 @@ lrModel = lr.fit(featureVector)
 print("Coefficients: " + str(lrModel.coefficients))
 print("Intercept: " + str(lrModel.intercept))
 ```
-<!-- {"left" : 0, "top" : 1.39, "height" : 4.39, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 6.56, "width" : 15.31} -->
 
 Notes:
 
@@ -340,7 +340,7 @@ Notes:
 
 ## Lab: Logistic Regression
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.43, "top" : 1.51, "height" : 5.73, "width" : 4.29} -->
 
  *  **Overview:**
 
@@ -360,7 +360,7 @@ Notes:
 
 ## Lab: Cross Validation: Hyper Parameter Tuning
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.43, "top" : 1.51, "height" : 5.73, "width" : 4.29} -->
 
  *  **Overview:**
 
@@ -419,7 +419,7 @@ Notes:
 | predictionCol    | Output  prediction column                                        | "prediction"  |
 | labelCol         | Label  Column                                                    | "label"       |
 
-<!-- {"left" : 0.25, "top" : 1.42, "height" : 6.24, "width" : 9.75} -->
+<!-- {"left" : 0.6, "top" : 2.5, "height" : 7.27, "width" : 16.29} -->
 
 Notes:
 
@@ -428,6 +428,7 @@ Notes:
 ---
 
 ## SVM Sample Code (Python)
+
 ```python
  from pyspark.ml.classification import LinearSVC  
  # Load training data
@@ -442,7 +443,7 @@ Notes:
  print("Coefficients: " + str(lsvcModel.coefficients))
  print("Intercept: " + str(lsvcModel.intercept))
  ```
-<!-- {"left" : 0, "top" : 1.39, "height" : 3.96, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 5.07, "width" : 13.12} -->
 
 
 Notes:
@@ -467,7 +468,8 @@ accuracy = evaluator.evaluate(predictions)
 print("Accuracy = %g " , accuracy)
 # 0.76
 ```
-<!-- {"left" : 0, "top" : 1.44, "height" : 2.13, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 3.87, "width" : 13.63} -->
+
 
 Notes:
 
@@ -476,7 +478,7 @@ Notes:
 ---
 ## Lab: SVM
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.05, "top" : 1.38, "height" : 6.23, "width" : 4.68} -->
 
 
 * **Overview:**
@@ -533,7 +535,7 @@ Notes:
 | predictionCol | Output prediction column             | "prediction"      |
 | labelCol      | Label Column                         | "label"           |
 
-<!-- {"left" : 0.25, "top" : 1.52, "height" : 3.19, "width" : 9.75} -->
+<!-- {"left" : 1.87, "top" : 2.88, "height" : 6.63, "width" : 13.77} -->
 Notes:
 
 
@@ -553,7 +555,7 @@ dataset = spark.read.format("csv").\
 dataset.printSchema()
 dataset.show()
 ```
-<!-- {"left" : 0, "top" : 1.29, "height" : 2.9, "width" : 9.11} -->
+<!-- {"left" : 0.85, "top" : 2.42, "height" : 3.5, "width" : 10.99} -->
 
 ```text
 root
@@ -569,9 +571,10 @@ root
  |   ham|U dun say so earl...|
 
 ```
-<!-- {"left" : 0, "top" : 4.57, "height" : 3.49, "width" : 6.94} -->
+<!-- {"left" : 0.85, "top" : 6.21, "height" : 4.68, "width" : 9.31} -->
 
 ---
+
 ## Naive Bayes in Spark ML (Python) - SPAM classification
 
 ```python
@@ -593,7 +596,7 @@ featureVector2 = idfModel.transform(featurizedData)
 featureVector2.show()
 
 ```
-<!-- {"left" : 0, "top" : 1.67, "height" : 3.02, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 4.59, "width" : 15.58} -->
 
 ```text
 +------+--------------------+--------------------+--------------------+--------------------+
@@ -603,7 +606,7 @@ featureVector2.show()
 |   ham|Ok lar... Joking ...|[ok, lar..., joki...|(2000,[20,484,131...|(2000,[20,484,131...|
 |  spam|Free entry in 2 a...|[free, entry, in,...|(2000,[30,128,140...|(2000,[30,128,140...|
 ```
-<!-- {"left" : 0, "top" : 5.44, "height" : 1.29, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 7.65, "height" : 1.96, "width" : 15.58} -->
 
 ---
 
@@ -621,7 +624,7 @@ indexed.select(['text', 'isspam', 'label', 'features']).show()
 
 (train, test) = indexed.randomSplit([.8, .2])
 ```
-<!-- {"left" : 0, "top" : 1.53, "height" : 2.7, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 3.83, "width" : 14.54} -->
 
 ```text
 +--------------------+------+-----+--------------------+
@@ -632,7 +635,7 @@ indexed.select(['text', 'isspam', 'label', 'features']).show()
 |Free entry in 2 a...|  spam|  1.0|(2000,[30,128,140...|
 |U dun say so earl...|   ham|  0.0|(2000,[57,372,381...|
 ```
-<!-- {"left" : 0, "top" : 4.85, "height" : 2.32, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 6.95, "height" : 3.35, "width" : 14.54} -->
 
 ---
 ## Naive Bayes in Spark ML (Python) - SPAM classification
@@ -654,7 +657,7 @@ evaluator = MulticlassClassificationEvaluator(labelCol="label",
 print("Test set accuracy = " , evaluator.evaluate(predictions))
 ## 0.86
 ```
-<!-- {"left" : 0, "top" : 1.6, "height" : 3.99, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.56, "height" : 5.94, "width" : 15.27} -->
 
 
 Notes:
@@ -663,7 +666,7 @@ Notes:
 
 ## Lab: Naïve Bayes
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.93, "top" : 0.94, "height" : 3.77, "width" : 2.83} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.86, "top" : 1.6, "height" : 5.45, "width" : 4.09} -->
 
 
 * **Overview:** Use Naïve Bayes implementation

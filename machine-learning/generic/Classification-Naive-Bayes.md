@@ -4,8 +4,7 @@
 
 ## Algorithm Summary
 
-
-<img src="../../assets/images/machine-learning/algorithm-summary-classifications-naive-bayes-1.png" style="width:70%;"/><!-- {"left" : 0.71, "top" : 1.68, "height" : 6.29, "width" : 8.84} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-classifications-naive-bayes-1.png" style="width:70%;"/><!-- {"left" : 2.63, "top" : 2.5, "height" : 8.7, "width" : 12.23} -->
 
 
 
@@ -44,7 +43,7 @@ Notes:
 | **Bernoulli**   | Binary data                                                       |
 | **Multinomial** | integer count data  (e.g. how often a word appears in a document) |
 
-<!-- {"left" : 0.25, "top" : 1.56, "height" : 2.19, "width" : 9.75} -->
+<!-- {"left" : 2.32, "top" : 2.82, "height" : 4.18, "width" : 12.87} -->
 
 
 Notes:
@@ -66,13 +65,12 @@ Notes:
 |  Sunny  |  Broken |     Stay home    |
 |  Rainy  |  Broken |     Stay home    |
 
-<!-- {"left" : 0.25, "top" : 1.2, "height" : 5.5, "width" : 9.75} -->
+<!-- {"left" : 3.1, "top" : 2.5, "height" : 5.5, "width" : 11.29} -->
 
-<br/>
 
 * **Question for class‫:‬**
 
-Are the input variables (weather / car) independent?
+* Are the input variables (weather / car) independent?
 
 
 Notes:
@@ -92,7 +90,7 @@ Notes:
 | 5      | 5.50        | 150          | 8                  | Female                  |
 | 6      | 5.75        | 160          | 9                  | Female                  |
 
-<!-- {"left" : 0.25, "top" : 2.22, "height" : 3.69, "width" : 9.75} -->
+<!-- {"left" : 1.43, "top" : 3.65, "height" : 4.04, "width" : 14.65} -->
 
 
 
@@ -106,13 +104,13 @@ Notes:
 
 * Let's convert this to numbers
 
-* Weather: Sunny=1,  rainy=0
+* Weather: Sunny=1, rainy=0
 
-* Car: working=1,  broken=0
+* Car: working=1, broken=0
 
 * Class: Go-out=1, Stay-home=0
 
-<img src="../../assets/images/machine-learning/naive-bayes-2.png" style="width:60%;" /><!-- {"left" : 1.02, "top" : 3.47, "height" : 4.16, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/naive-bayes-2.png" style="width:60%;" /><!-- {"left" : 3.13, "top" : 5.2, "height" : 5.69, "width" : 11.24} -->
 
 
 Notes:
@@ -128,7 +126,7 @@ Notes:
    P (A | B) = ------------ = ----------------
                    P (B)          P(B)
 ```
-<!-- {"left" : 0, "top" : 1.9, "height" : 0.61, "width" : 4.88} -->
+<!-- {"left" : 0.85, "top" : 3.03, "height" : 0.73, "width" : 5.85} -->
 
 
 * If A and B are independent
@@ -136,7 +134,7 @@ Notes:
 ```text
    P (A ∩ B) = P (B|A) * P(A) = P(A) * P(B)
 ```
-<!-- {"left" : 0, "top" : 3, "height" : 0.35, "width" : 4.71} -->
+<!-- {"left" : 0.85, "top" : 4.4, "height" : 0.5, "width" : 6.75} -->
 
 * Example
 
@@ -170,9 +168,9 @@ Notes:
 * P(class = 0 / stay-home) = --------  = 50%
                               5 + 5
 ```
-<!-- {"left" : 0, "top" : 1.23, "height" : 4.24, "width" : 9.61} -->
+<!-- {"left" : 0.85, "top" : 2.34, "height" : 4.04, "width" : 9.15} -->
 
-<img src="../../assets/images/machine-learning/naive-bayes-2.png" style="width:57%;" /><!-- {"left" : 1.02, "top" : 3.47, "height" : 4.16, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/naive-bayes-2.png" style="width:57%;" /><!-- {"left" : 4.15, "top" : 6.77, "height" : 4.66, "width" : 9.2} -->
 
 Notes:
 
@@ -189,9 +187,9 @@ P(class=go-out | weather=sunny ) = ------------------------------------
                                 =  ----  = 0.8 = 80%
                                     5
 ```
-<!-- {"left" : 0, "top" : 1.04, "height" : 1.03, "width" : 6.97} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 1.76, "width" : 10.97} -->
 
-<img src="../../assets/images/machine-learning/naive-bayes-1.png" style="width:35%;float:right;" /><!-- {"left" : 1.02, "top" : 3.47, "height" : 4.16, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/naive-bayes-1.png" style="width:35%;float:right;" /> <!-- {"left" : 12.11, "top" : 3.13, "height" : 5.26, "width" : 5.1} -->
 
 * **How weather influences decision**
 
@@ -201,9 +199,8 @@ P (class = go-out | weather = rainy)    = 1 / 5 = 0.2
 P (class = stay-home | weather = sunny) = 2 / 5 = 0.2
 P (class = stay-home | weather = rainy) = 3 / 5 = 0.6
 ```
-<!-- {"left" : 0, "top" : 2.94, "height" : 0.93, "width" : 6.73} -->
+<!-- {"left" : 0.85, "top" : 4.33, "height" : 1.31, "width" : 8.74} -->
 
-<br/>
 
 * **How car influences decision**
 
@@ -213,7 +210,7 @@ P (class = stay-home | weather = rainy) = 3 / 5 = 0.6
  P (class = stay-home | car = working) = 1 / 5 = 0.2
  P (class = stay-home | car = broken)  = 4 / 5 = 0.8
 ```
-<!-- {"left" : 0, "top" : 4.77, "height" : 1.08, "width" : 7.65} -->
+<!-- {"left" : 0.85, "top" : 6.31, "height" : 1.33, "width" : 8.74} -->
 
 
 Notes:
@@ -239,7 +236,9 @@ Notes:
 P(h | d) = ---------------
                  P(d)
 ```
-<!-- {"left" : 0, "top" : 5.72, "height" : 1.07, "width" : 5.11} -->
+<!-- {"left" : 0.85, "top" : 6.68, "height" : 1.5, "width" : 7.17} -->
+
+
 Notes:
 
 
@@ -290,7 +289,7 @@ P(stay-home | weather=sunny) = -----------
                                 go-out + stay-home
 
 ```
-<!-- {"left" : 0, "top" : 2.6, "height" : 2.62, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.96, "height" : 3.51, "width" : 13.74} -->
 
 Notes:
 
@@ -320,7 +319,7 @@ So we predict 'go-out'
 
 **So weather=sunny, car=working-->prediction=go-out**
 ```
-<!-- {"left" : 0, "top" : 1.21, "height" : 4.74, "width" : 8.21} -->
+<!-- {"left" : 0.85, "top" : 2.44, "height" : 7.39, "width" : 12.8} -->
 
 Notes:
 
@@ -331,9 +330,7 @@ Notes:
 
 * Our model predicts with accuracy of 80%.Miss-predictions are `highlighted`
 
-<img src="../../assets/images/machine-learning/Bayes-Prediction.png" alt="Bayes-Prediction.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.11, "height" : 4.74, "width" : 8.21} -->
-
-
+<img src="../../assets/images/machine-learning/Bayes-Prediction.png" alt="Bayes-Prediction.png" style="width:70%;"/><!-- {"left" : 2.15, "top" : 3.37, "height" : 7.62, "width" : 13.19} -->
 
 
 Notes:

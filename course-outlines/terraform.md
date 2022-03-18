@@ -1,7 +1,7 @@
 # Terraform 
 © Elephant Scale
 
-January 11, 2021
+March 11, 2022
 
 ## Overview
 
@@ -11,7 +11,7 @@ infrastructure, you describe all this configuration as code.
 
 * While every cloud gives you their implementation of it, and while Amazon heavily promotes
 their version called CloudFormation, Terraform is a maverick who appeared on the scene a few years ago and
-became more popular than all other IaC implementations. 
+became more popular than all other IaC implementations. Recently, Google recognized the superiority of Terraform and started using that instead of their tool. This speaks to the importance of learning Terraform.
 
 * Terraform is open source and can be used on any cloud provider, 
 such as Amazon Web Services, IBM Cloud, Google Cloud Platform, DigitalOcean, Linode, Microsoft Azure, 
@@ -170,19 +170,7 @@ Lectures and hands-on labs. (50%, 50%)
     - Putting It All Together
     - Conclusion 
     
-## Optional Modules
-
-#### Vault
-
-* Manage Secrets and Protect Sensitive Data
-* Secure, store and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets and other sensitive data using a UI, CLI, or HTTP API.
-
-#### Console
-
-* Service Networking Across Any Cloud
-* Automate network configurations, discover services, and enable secure connectivity across any cloud or runtime.
-
-#### Packer
+#### Packer - optional
 
 * Build Automated Machine Images
 * HashiCorp Packer automates the creation of any type of machine image. It embraces modern configuration management by encouraging you to use automated scripts to install and configure the software within your Packer-made images. 

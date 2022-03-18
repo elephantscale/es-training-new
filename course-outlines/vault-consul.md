@@ -19,12 +19,14 @@ configuration management, and network segmentation in distributed applications.
 
 ## You will learn to 
 
-* Learn the basics of using Vault 
-* Familiarize oneself with managing secrets
-* Be able to find applicable secrets engines use cases
+* Explain the need for Vault
+* Recognize Vault use cases
+* Manage basic secrets with Vault
+* Use advanced secret management with Vault
+* Map use cases to Vault secrets engines
 * Become proficient in Vault configuring policies
 * Acquire skills for reviewing Vault audit logs 
-* Learn how to connect dynamic applications using Consul service discovery and service mesh
+* Use Consul service discovery and service mesh
 
 ## Audience
 Developers, Architects
@@ -37,6 +39,7 @@ Lectures and hands-on labs. (50%, 50%)
 
 ## Prerequisites
 
+* Six months experience with any cloud or introductory course
 * Comfortable with any programming language
 * Comfortable in Linux environment (be able to navigate Linux command line, run commands)
 

@@ -5,7 +5,7 @@
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-RF-1.png" style="width:80%"><!-- {"left" : 0.57, "top" : 1.53, "height" : 6.02, "width" : 9.11} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-decision-trees-RF-1.png" style="width:80%"><!-- {"left" : 2.67, "top" : 2.84, "height" : 8.04, "width" : 12.16} -->
 
 
 Notes:
@@ -44,7 +44,7 @@ Notes:
 
 ---
 
-## Bias Variance Tradeoff
+# Bias Variance Tradeoff
 
 [ML-Concepts-Bias-Variance.md](ML-Concepts-Bias-Variance.md)
 
@@ -53,14 +53,13 @@ Notes:
 ## Each DT Exhibits High Variance and Overfits
 
 
-
  * A tree may fit some of the data well
 
  * But another tree may fit the other part of the data
 
  * Neither of them will work well in the real world
 
-<img src="../../assets/images/machine-learning/decision-trees-overfit-1.png" style="width:40%;"><!-- {"left" : 1.86, "top" : 2.66, "height" : 4.46, "width" : 6.53} -->
+<img src="../../assets/images/machine-learning/decision-trees-overfit-1.png" style="width:40%;"><!-- {"left" : 4.16, "top" : 4.69, "height" : 6.27, "width" : 9.18} -->
 
 
 Notes:
@@ -75,7 +74,7 @@ Notes:
  * By contrast, Linear Regression has high bias
      - It has less capacity to reflect complex data
 
-<img src="../../assets/images/machine-learning/decision-trees-overfit-2.png" style="width:60%;"><!--{"left" : 1.74, "top" : 2.55, "height" : 4.67, "width" : 6.76} -->
+<img src="../../assets/images/machine-learning/decision-trees-overfit-2.png" style="width:60%;"> <!-- {"left" : 2.4, "top" : 3.9, "height" : 6.59, "width" : 12.71} -->
 
 
 Notes:
@@ -87,7 +86,7 @@ Notes:
 ## Ensembles of Decision Trees
 
 
- *  **Ensembles**  are methods that combine multiple machine learning models to create more powerful model
+ *  **Ensembles** are methods that combine multiple machine learning models to create more powerful model
 
      - `wisdom of many is more than of one`
 
@@ -118,7 +117,7 @@ Notes:
      - Each tree will be random and deep, and not pruned
      - And aggregate their predictions
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Random-Forests-Idea-0.png" style="width:80%"><!-- {"left" : 1.02, "top" : 5.22, "height" : 1.67, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Random-Forests-Idea-0.png" style="width:80%"><!-- {"left" : 2.2, "top" : 7.76, "height" : 2.66, "width" : 13.1} -->
 
 
 Notes:
@@ -129,16 +128,16 @@ Notes:
 
 ## Bagging (Boosting Aggregation) In Action
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%;float:right; "><!-- {"left" : 6.04, "top" : 1.18, "height" : 3.51, "width" : 4.11} -->
+<img src="../../assets/images/machine-learning/Decision-Trees-Bagging-Boosting-Aggregation-In-Action-0.png" style="width:45%;float:right; "><!-- {"left" : 9.17, "top" : 2.44, "height" : 6.85, "width" : 8.02} -->
 
 
- * We create 3 trees with  **Boosting**
+ * We create 3 trees with **Boosting**
 
      - Note : total sample points (150) > actual data points (100)
 
  * Each tree is predicting blue or red
 
- * Final result is  **aggregated**  ( **bagging** )
+ * Final result is **aggregated** ( **bagging** )
 
 Notes:
 
@@ -193,8 +192,7 @@ Notes:
 ## Data & Feature Bagging in Action
 
 
-<img src="../../assets/images/machine-learning/Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%;float:right; "><!-- {"left" : 5.67, "top" : 1.15, "height" : 3.41, "width" : 4.47} -->
-
+<img src="../../assets/images/machine-learning/Decision-Trees-Data-Feature-Bagging-in-Action-0.png" style="width:50%;float:right; "><!-- {"left" : 9.68, "top" : 2.34, "height" : 5.84, "width" : 7.65} -->
 
  * We have 3 trees, each operating on
 
@@ -248,7 +246,7 @@ Notes:
 
  * Final Random Forest overfits less than each individual tree
 
-<img src="../../assets/images/machine-learning//3rd-party/Decision-Trees-Random-Forest-Example-0.png" style="width:70%"><!-- {"left" : 1.02, "top" : 3.12, "height" : 4.21, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Random-Forest-Example-0.png" style="width:70%"><!-- {"left" : 3.17, "top" : 4.49, "height" : 5.73, "width" : 11.17} -->
 
 
 Notes:
