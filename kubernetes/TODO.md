@@ -6,6 +6,8 @@
 
 ## Slides
 
-- Explain replicaset vs deamonset
+- Add deamon set slides
+
+    - Explain replicaset vs deamonset
 
 - explain deployment vs replicaset
