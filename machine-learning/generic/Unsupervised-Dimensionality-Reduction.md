@@ -5,7 +5,7 @@
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-dimensionality-reduction-1.png"  style="max-width:70%;"/><!-- {"left" : 0.56, "top" : 1.71, "height" : 5.65, "width" : 9.14} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-dimensionality-reduction-1.png"  style="max-width:70%;"/><!-- {"left" : 1.59, "top" : 2.43, "height" : 8.85, "width" : 14.32} -->
 
 
 
@@ -38,7 +38,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 |           |     |     |     |     |      |        |
 |           |     |     |     |     |      |  &nbsp;|
 
-<!-- {"left" : 0.25, "top" : 5.16, "height" : 1.5, "width" : 9.75} -->
+<!-- {"left" : 1.02, "top" : 7.38, "height" : 2.33, "width" : 15.47} -->
 
 Notes:
 
@@ -69,7 +69,7 @@ Notes:
 
 ## Why Dimensionality Reduction?
 
-<img src="../../assets/images/machine-learning/dimensionality-reduction-3.png"  style="width:40%;float:right;"/><!-- {"left" : 5.84, "top" : 3.9, "height" : 2.57, "width" : 4.3} -->
+<img src="../../assets/images/machine-learning/dimensionality-reduction-3.png"  style="width:40%;float:right;"/><!-- {"left" : 9.84, "top" : 4.61, "height" : 4.2, "width" : 7.02} -->
 
 
  *  **Reason 1: Efficient computation**
@@ -96,7 +96,6 @@ Notes:
 
 ## Why Dimensionality Reduction?
 
-
  *  **Reason 2: To mask data**
  * Imagine a dataset with sensitive data
      - Patients in medical trial data, valuable customer data like SSN
@@ -104,7 +103,7 @@ Notes:
  But we also need to protect the data
     - we can mask sensitive data; here we are masking SSN
 
-<img src="../../assets/images/machine-learning/dimensionality-reduction-4.png" style="width:50%;"/><!-- {"left" : 1.02, "top" : 4.47, "height" : 4.06, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/dimensionality-reduction-4.png" style="width:50%;"/><!-- {"left" : 3.8, "top" : 6.3, "height" : 4.89, "width" : 9.9} -->
 
 
 
@@ -116,7 +115,6 @@ Notes:
 
 ## Why Dimensionality Reduction?
 
-
  *  **Reason 3: Eliminate duplicate data**
 
  * When multiple datasets are merged there may be duplicates
@@ -126,7 +124,7 @@ Notes:
  * Here is an example of 'height' recorded in feet and cm.
      - They may not even agree, due to rounding errors
 
-<img src="../../assets/images/machine-learning/3rd-party/dimensionality-reduction-1.png" style="width:80%;"/><!-- {"left" : 0.48, "top" : 4.74, "height" : 3.04, "width" : 9.28} -->
+<img src="../../assets/images/machine-learning/3rd-party/dimensionality-reduction-1.png" style="width:80%;"/><!-- {"left" : 2.73, "top" : 6.8, "height" : 3.95, "width" : 12.04} -->
 
 
 
@@ -145,7 +143,7 @@ Notes:
      - Hard to reverse engineer
  * Here we are creating **totally new attributes** (a,b,c) from original attributes
 
-<img src="../../assets/images/machine-learning/dimensionality-reduction-2.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.56, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/dimensionality-reduction-2.png" style="width:70%;"/><!-- {"left" : 3.57, "top" : 6.23, "height" : 4.81, "width" : 10.36} -->
 
 
 
@@ -164,7 +162,7 @@ Notes:
  * SMS program will resize / reduce resolution for sending
      - Smaller size, but still maintains the image
 
-<img src="../../assets/images/machine-learning/dimensionality-reduction-3-beach.png" style="width:50%;"/><!-- {"left" : 1.49, "top" : 3.97, "height" : 4.26, "width" : 7.26} -->
+<img src="../../assets/images/machine-learning/dimensionality-reduction-3-beach.png" style="width:50%;"/><!-- {"left" : 3.55, "top" : 5.08, "height" : 5.84, "width" : 9.96} -->
 
 
 Notes:
@@ -206,7 +204,7 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-dimensionality-reduction-PCA-1.png" style="max-width:70%;"/><!-- {"left" : 0.77, "top" : 1.84, "height" : 5.39, "width" : 8.71} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-dimensionality-reduction-PCA-1.png" style="max-width:70%;"/><!-- {"left" : 2.24, "top" : 2.83, "height" : 8.05, "width" : 13.01} -->
 
 
 
@@ -231,7 +229,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
  *  **Interesting**  is measured by the amount that the observations vary along each dimension
 
-<img src="../../assets/images/machine-learning/PCA-14.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 5.91, "height" : 1.79, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/PCA-14.png" style="max-width:70%;"/><!-- {"left" : 1.91, "top" : 7.35, "height" : 2.98, "width" : 13.67} -->
 
 
 
@@ -245,7 +243,7 @@ Notes:
 
 ## PCA Example: Cultures of Internet in UK
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-1-oxford-study.png"  style="max-width:30%;float:right;"/><!-- {"left" : 6.57, "top" : 1.4, "height" : 5.32, "width" : 3.36} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-1-oxford-study.png"  style="max-width:30%;float:right;"/><!-- {"left" : 12.05, "top" : 2.16, "height" : 7.82, "width" : 4.94} -->
 
 
  * This is an study by Oxford Internet Institute (OxIS)
@@ -293,7 +291,7 @@ Notes:
 ---
 ## Eigen Vector Example
 
-<img src="../../assets/images/machine-learning/PCA-15-eigen-vector-example.png"  style="max-width:50%;float:right;"/><!-- {"left" : 5.57, "top" : 2.46, "height" : 3.71, "width" : 4.52} -->
+<img src="../../assets/images/machine-learning/PCA-15-eigen-vector-example.png"  style="max-width:50%;float:right;"/><!-- {"left" : 10.45, "top" : 2.35, "height" : 5.54, "width" : 6.75} -->
 
 - Imagine we are in a town with bunch of bars and restaurants
 
@@ -310,7 +308,7 @@ Notes:
 
  * In the plot below, EigenVector (ev1) is shown that crosses the data with 'highest variance'
 
-<img src="../../assets/images/machine-learning/PCA-2-eigen-vector.png"  style="max-width:60%;"/><!-- {"left" : 1.46, "top" : 2.61, "height" : 5.08, "width" : 7.32} -->
+<img src="../../assets/images/machine-learning/PCA-2-eigen-vector.png"  style="max-width:60%;"/><!-- {"left" : 3.85, "top" : 3.83, "height" : 6.8, "width" : 9.8} -->
 
 
 
@@ -328,7 +326,7 @@ Image adopted with thanks to: https://georgemdallas.wordpress.com/2013/10/30/pri
  * To maximize coverage the second EigenVector will be orthogonal (90 degrees) to the first one (ev1)
 
 
- <img src="../../assets/images/machine-learning/PCA-3-eigen-vector.png"  style="max-width:60%;"/><!-- {"left" : 1.4, "top" : 3.09, "height" : 5.16, "width" : 7.45} -->
+ <img src="../../assets/images/machine-learning/PCA-3-eigen-vector.png"  style="max-width:60%;"/><!-- {"left" : 4.82, "top" : 5.88, "height" : 5.48, "width" : 7.91} -->
 
 
 Notes:
@@ -345,7 +343,7 @@ Image adopted with thanks to: https://georgemdallas.wordpress.com/2013/10/30/pri
 
  * Remember, the data hasn't changed at all, we are just looking at it from a different perspective
 
-<img src="../../assets/images/machine-learning/PCA-4-eigen-vector.png"  style= "width:40%;"/><!-- {"left" : 1.92, "top" : 3.54, "height" : 4.56, "width" : 6.42} -->
+<img src="../../assets/images/machine-learning/PCA-4-eigen-vector.png"  style= "width:40%;"/><!-- {"left" : 10.31, "top" : 2.41, "height" : 4.88, "width" : 6.86} -->
 
 
 
@@ -359,7 +357,7 @@ Image adopted with thanks to: https://georgemdallas.wordpress.com/2013/10/30/pri
 ## PCA on Oxford Internet Study
 
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-5-oxford-study.png" style="max-width:30%;float:right;"/><!-- {"left" : 7.16, "top" : 1.18, "height" : 4.53, "width" : 2.89} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-5-oxford-study.png" style="max-width:30%;float:right;"/><!-- {"left" : 12.55, "top" : 2.35, "height" : 6.81, "width" : 4.35} -->
 
 
  * Say there were
@@ -398,7 +396,7 @@ Notes:
 
 ## PCA Example: USArrests Data
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-6-USArrests.png" style="width:40%;float:right;"/><!-- {"left" : 5.75, "top" : 1.68, "height" : 4.34, "width" : 4.34} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-6-USArrests.png" style="width:40%;float:right;"/><!-- {"left" : 10.81, "top" : 2.4, "height" : 6.18, "width" : 6.18} -->
 
  * N=50,  p=4
 
@@ -415,10 +413,10 @@ Example from "An Introduction to Statistical Learning"  Chapter 10
 
 ## PC Vectors and BiPlot
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-7-USArrests.png"  style="width:30%;float:right;"/><!-- {"left" : 4.84, "top" : 1.22, "height" : 1.8, "width" : 5.08} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-7-USArrests.png"  style="width:30%;float:right;"/><!-- {"left" : 5.09, "top" : 2.05, "height" : 2.59, "width" : 7.32} -->
 
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-8-USArrests-biplot.png"  style="width:50%;"/><!-- {"left" : 0.25, "top" : 3.07, "height" : 5.66, "width" : 5.66} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-8-USArrests-biplot.png"  style="width:50%;"/><!-- {"left" : 5.16, "top" : 4.42, "height" : 7.17, "width" : 7.17} -->
 
 
 
@@ -432,7 +430,7 @@ Diagram with thanks to : "An introduction to Statistical Learning" book.
 
 ## Understanding BiPlot
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-8-USArrests-biplot.png"  style="width:40%;float:right;"/><!-- {"left" : 5.54, "top" : 1.23, "height" : 4.57, "width" : 4.57} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-8-USArrests-biplot.png"  style="width:40%;float:right;"/><!-- {"left" : 10.32, "top" : 1.89, "height" : 6.64, "width" : 6.64} -->
 
 
 
@@ -458,7 +456,7 @@ Notes:
 
 ## Understanding BiPlot
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-8-USArrests-biplot.png"  style="width:40%;float:right;"/><!-- {"left" : 6.85, "top" : 1.05, "height" : 3.22, "width" : 3.22} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-8-USArrests-biplot.png"  style="width:40%;float:right;"/><!-- {"left" : 11.74, "top" : 1.89, "height" : 5.31, "width" : 5.31} -->
 
 
  * Crime related variables (Murder, Assault and Rape) are close to each other
@@ -480,7 +478,7 @@ Notes:
 ## Effects of Scaling Variables Before PCA
 
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-9-USArrests-biplot.png"  style="max-width:60%;float:right;"/><!-- {"left" : 5.21, "top" : 1.02, "height" : 3.33, "width" : 4.99} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-9-USArrests-biplot.png"  style="max-width:60%;float:right;"/><!-- {"left" : 9.99, "top" : 2.34, "height" : 4.76, "width" : 7.13} -->
 
 
  * Left: Scaled data, centered at zero, with standard deviation one
@@ -510,7 +508,7 @@ Diagram with thanks to : "An introduction to Statistical Learning" book.
      - PC4 hast the least
  * Right graph shows 'accumulated' variance when combining PCs.  We are moving towards ONE
 
-<img src="../../assets/images/machine-learning/3rd-party/PCA-9-scree-plot.png" style="max-width:50%;"/><!-- {"left" : 1.02, "top" : 4.4, "height" : 4.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/PCA-9-scree-plot.png" style="max-width:50%;"/><!-- {"left" : 3.92, "top" : 6.22, "height" : 5.27, "width" : 9.66} -->
 
 
 Notes:
@@ -541,7 +539,7 @@ Notes:
 
 ## Choosing PCs - Practical Advice
 
-<img src="../../assets/images/machine-learning/PCA-workflow-1.png" style="max-width:40%;float:right;"/><!-- {"left" : 5.25, "top" : 2.19, "height" : 2.4, "width" : 4.92} -->
+<img src="../../assets/images/machine-learning/PCA-workflow-1.png" style="max-width:40%;float:right;"/><!-- {"left" : 9.71, "top" : 2.52, "height" : 3.67, "width" : 7.52} -->
 
  * Adhoc
 
@@ -591,7 +589,7 @@ Notes:
 | 3  | 40  | 100,000 |
 | 4  | 37  | 75,000  |
 
-<!-- {"left" : 0.25, "top" : 1.16, "height" : 2.5, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 2.44, "height" : 2.5, "width" : 9.75} -->
 
 
 
@@ -604,7 +602,7 @@ Notes:
 ## Normalized Data
 
 
-<img src="../../assets/images/machine-learning/normalization-1.png"  style="width:35%;float:right;"/><!-- {"left" : 6.66, "top" : 1.09, "height" : 2.62, "width" : 3.37} -->
+<img src="../../assets/images/machine-learning/normalization-1.png"  style="width:35%;float:right;"/><!-- {"left" : 12.3, "top" : 2.09, "height" : 3.72, "width" : 4.78} -->
 
 
 * Age values are[ 32, 26, 40, 37]
@@ -620,13 +618,13 @@ Notes:
 | 3  | 40  | 100,000 | = (40 - 26) / (40 - 26)  <br />= 1.0        |
 | 4  | 37  | 75,000  | = (37-26) / (40 - 26)  <br />= 0.7857       |
 
-<!-- {"left" : 0.25, "top" : 4.82, "height" : 3.45, "width" : 9.75, "columnwidth" : [1.18, 1.46, 1.93, 5.19]} -->
+<!-- {"left" : 2.29, "top" : 6.99, "height" : 4.43, "width" : 12.92, "columnwidth" : [1.56, 1.93, 2.55, 6.87]} -->
 
 ---
 
 ## Restoring Original Data
 
-<img src="../../assets/images/machine-learning/PCA-10-restoring-reduced-data.png" style="width:30%;float:right;"/><!-- {"left" : 6.8, "top" : 0.97, "height" : 2.62, "width" : 3.37} -->
+<img src="../../assets/images/machine-learning/PCA-10-restoring-reduced-data.png" style="width:30%;float:right;"/><!-- {"left" : 11.93, "top" : 2.26, "height" : 4.06, "width" : 5.22} -->
 
  * Yes, you can restore original data
 
@@ -638,7 +636,7 @@ Notes:
 
 <br clear="all"/>
 
- <img src="../../assets/images/machine-learning/dimensionality-reduction-3-beach.png" style="width:35%;float:right;"/><!-- {"left" : 6.2, "top" : 5.3, "height" : 2.25, "width" : 3.84} -->
+ <img src="../../assets/images/machine-learning/dimensionality-reduction-3-beach.png" style="width:35%;float:right;"/><!-- {"left" : 12.03, "top" : 6.97, "height" : 2.94, "width" : 5.02} -->
 
 
  * See the beach picture (we can not 100% restore original image from a down-sampled image)
@@ -656,21 +654,19 @@ Notes:
 
 * We have optimized the projection error  
 
- <img src="../../assets/images/machine-learning/3rd-party/PCA-11.png" style="width:40%;"/><!-- {"left" : 0.4, "top" : 1.94, "height" : 1.3, "width" : 6.45} -->
-
+ <img src="../../assets/images/machine-learning/3rd-party/PCA-11.png" style="width:40%;"/><!-- {"left" : 1, "top" : 3.43, "height" : 1.49, "width" : 7.4} -->
 
 
 
 * And we have reduced the total variation in the data
 
- <img src="../../assets/images/machine-learning/3rd-party/PCA-12.png" style="width:33%;"/><!-- {"left" : 0.4, "top" : 4.73, "height" : 1.34, "width" : 3.69} -->
-
+ <img src="../../assets/images/machine-learning/3rd-party/PCA-12.png" style="width:33%;"/><!-- {"left" : 1, "top" : 6.84, "height" : 1.61, "width" : 4.44} -->
 
 
 
 * Retain 99% of the variance means that  
 
- <img src="../../assets/images/machine-learning/3rd-party/PCA-13.png" style="width:35%;"/><!-- {"left" : 0.25, "top" : 7.57, "height" : 1.07, "width" : 4.09} -->
+ <img src="../../assets/images/machine-learning/3rd-party/PCA-13.png" style="width:35%;"/><!-- {"left" : 1, "top" : 10.24, "height" : 1.16, "width" : 4.44} -->
 
 
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="415 -156 356 498" width="356" height="498">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-03-23 18:01:32 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_166">
+        <text transform="translate(420 -151)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Service Graph</tspan>
+        </text>
+      </g>
+      <g id="Graphic_165">
+        <text transform="translate(420 -38.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_164">
+        <text transform="translate(605.5098 -38.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_163">
+        <text transform="translate(420 75)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">C</tspan>
+        </text>
+      </g>
+      <g id="Graphic_162">
+        <text transform="translate(605.5098 75)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">D</tspan>
+        </text>
+      </g>
+      <g id="Graphic_161">
+        <text transform="translate(420 179.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Web</tspan>
+        </text>
+      </g>
+      <g id="Graphic_160">
+        <text transform="translate(605.5098 179.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">DB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_159">
+        <text transform="translate(420 276)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">50*5???</tspan>
+        </text>
+      </g>
+      <g id="Graphic_158">
+        <path d="M 485.25415 4 L 485.25415 -16 L 548.2429 -16 L 548.2429 -26 L 577.2429 -6 L 548.2429 14 L 548.2429 4 Z" fill="#aa97fe"/>
+        <path d="M 485.25415 4 L 485.25415 -16 L 548.2429 -16 L 548.2429 -26 L 577.2429 -6 L 548.2429 14 L 548.2429 4 Z" stroke="#aa97fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_157">
+        <path d="M 485.25415 115.5 L 485.25415 95.5 L 548.2429 95.5 L 548.2429 85.5 L 577.2429 105.5 L 548.2429 125.5 L 548.2429 115.5 Z" fill="#aa97fe"/>
+        <path d="M 485.25415 115.5 L 485.25415 95.5 L 548.2429 95.5 L 548.2429 85.5 L 577.2429 105.5 L 548.2429 125.5 L 548.2429 115.5 Z" stroke="#aa97fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_156">
+        <path d="M 539.0994 227 L 539.0994 207 L 567.5882 207 L 567.5882 197 L 596.5882 217 L 567.5882 237 L 567.5882 227 Z" fill="#aa97fe"/>
+        <path d="M 539.0994 227 L 539.0994 207 L 567.5882 207 L 567.5882 197 L 596.5882 217 L 567.5882 237 L 567.5882 227 Z" stroke="#aa97fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,4 +1,5 @@
 # Vault introduction
+---
 
 ## Please meet Vault
 
@@ -6,7 +7,9 @@
 * "Pudding, please meet Alice"
     * From *Alice in Wonderland*
     
-![](../artwork/alice-pudding.png)
+
+<img src="../artwork/alice-pudding.png"  style="width:70%;"/> <!-- {"left" : 3.43, "top" : 2.94, "height" : 3.76, "width" : 3.38} -->
+
 
 ---
 
@@ -44,13 +47,16 @@
 
 ## HashiCorp enterprise
 
-![](../artwork/hashi-offerings.png)
+
+<img src="../artwork/hashi-offerings.png"  style="width:70%;"/> <!-- {"left" : 0.59, "top" : 2.89, "height" : 3.29, "width" : 9.07} -->
 
 ---
 
 ## Identity management
 
-![](../artwork/iams.png)
+
+<img src="../artwork/iams.png"  style="width:70%;"/> <!-- {"left" : 0.81, "top" : 2.35, "height" : 4.37, "width" : 8.63} -->
+
 
 ---
 
@@ -68,7 +74,8 @@
 
 ## Vault place
 
-![](../artwork/vault-fit.png)
+
+<img src="../artwork/vault-fit.png"  style="width:70%;"/> <!-- {"left" : 0.72, "top" : 2.01, "height" : 5.05, "width" : 8.81} -->
 
 ---
 
@@ -84,7 +91,9 @@
     * Instead of requiring every system to speak a common language
     * Create a plugin for each system
         * Allow Vault to speak to the system via plugin
-        
+       
+---
+ 
 ## Vault plugins
 
 * Most RDMBS
@@ -114,13 +123,15 @@
     
 ## Benefits of Vault
 
-![](../artwork/vault-benefits.png)
+<img src="../artwork/vault-benefits.png"  style="width:70%;"/> <!-- {"left" : 0.45, "top" : 2.36, "height" : 4.35, "width" : 9.34} -->
+
+
 
 ---
 
 ## Problems Vault solves
 
-![](../artwork/vault-solves.png)
+<img src="../artwork/vault-solves.png"  style="width:70%;"/> <!-- {"left" : 1.02, "top" : 2.45, "height" : 4.75, "width" : 8.21} -->
 
 ---
 
@@ -145,7 +156,9 @@
     * Think of all announcement of breaches due to stolen credentials that are valid for months or years
     * Amazon keys is one such example (and it did happen to us!)       
     
-![](../artwork/iam.png)    
+<img src="../artwork/iam.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.33, "height" : 4.08, "width" : 8.21} -->
+
+
 
 ---
 
@@ -226,68 +239,79 @@
 
 ## What Vault provides
 
-![](../artwork/vault-provides.png)
+<img src="../artwork/vault-provides.png"  style="width:70%;"/><!-- {"left" : 0.49, "top" : 1.65, "height" : 3.23, "width" : 9.27} -->
+
 
 ---
 
 ## Vault open-source vs Enterprise
 
-![](../artwork/vault-os-enterprise.png)
+<img src="../artwork/vault-os-enterprise.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.2, "height" : 5.23, "width" : 8.21} -->
 
 ---
 
 ## Vault components
 
-![](../artwork/vault-components.png)
+<img src="../artwork/vault-components.png"  style="width:70%;"/><!-- {"left" : 0.56, "top" : 2.07, "height" : 4.11, "width" : 9.13} -->
+
 
 ---
 
 ## Vault storage backends
 
-![](../artwork/vault-storage-backends.png)
+
+<img src="../artwork/vault-storage-backends.png"  style="width:70%;"/> <!-- {"left" : 0.39, "top" : 1.26, "height" : 4.01, "width" : 9.46} -->
+
 
 ---
 
 ## Vault secrets engines
 
-![](../artwork/vault-secret-engines.png)
+
+<img src="../artwork/vault-secret-engines.png"  style="width:70%;"/> <!-- {"left" : 0.3, "top" : 1.26, "height" : 4.08, "width" : 9.64} -->
 
 ---
 
 ## Vault auth methods
 
-![](../artwork/vault-auth-methods.png)
+<img src="../artwork/vault-auth-methods.png"  style="width:70%;"/> <!-- {"left" : 0.17, "top" : 1.26, "height" : 4.44, "width" : 9.9} -->
+
 
 ---
 
 ## Vault paths
 
-![](../artwork/vault-paths.png)
+
+<img src="../artwork/vault-paths.png"  style="width:70%;"/> <!-- {"left" : 0.18, "top" : 1.26, "height" : 3.94, "width" : 9.89} -->
 
 ---
 
 ## Vault paths cont'd
 
-![](../artwork/vault-paths2.png)
+
+<img src="../artwork/vault-paths2.png"  style="width:70%;"/> <!-- {"left" : 0.08, "top" : 1.26, "height" : 3.01, "width" : 10.09} -->
 
 ---
 
 ## Vault path examples
 
-![](../artwork/vault-paths-rules.png)
                        
+<img src="../artwork/vault-paths-rules.png"  style="width:70%;"/> <!-- {"left" : 0.29, "top" : 1.85, "height" : 4.7, "width" : 9.68} -->
+
 
 ---
 
 ## HashiCorp high-level
 
-![](../artwork/hashicorp-overview.png)
+
+<img src="../artwork/hashicorp-overview.png"  style="width:70%;"/> <!-- {"left" : 0.36, "top" : 2.14, "height" : 4.15, "width" : 9.53} -->
 
 ---
 
 ## Vault summary
 
-![](../artwork/vault-overview.png)
+
+<img src="../artwork/vault-overview.png"  style="width:70%;"/> <!-- {"left" : 1.02, "top" : 2.42, "height" : 4.23, "width" : 8.21} -->
 
 ---
 
@@ -312,6 +336,8 @@
 ---
 
 ## Vault on AWS pricing
-![](../artwork/vault-aws-pricing.png)
+
+<img src="../artwork/vault-aws-pricing.png"  style="width:70%;"/> <!-- {"left" : 0.51, "top" : 2.34, "height" : 4.38, "width" : 9.23} -->
+
 
 ---

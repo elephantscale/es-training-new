@@ -1,16 +1,21 @@
 # Vault Architecture
+---
 
 # Vault introduction
+---
 
 ## Imagine going on vacation
 
 * The receptionist asks for your identity
 * After it is verified, you get the room key
 * With Vault, it is just as easy
-![](../artwork/pexels-christina-morillo-1181524.jpg)
+
+<img src="../artwork/pexels-christina-morillo-1181524.jpg"  style="width:70%;"/><!-- {"left" : 1.6, "top" : 3.08, "height" : 4.71, "width" : 7.06} -->
+
+
+
 
 Notes:
-
 * Imagine that someone is taking a vacation to a beautiful and exotic location. 
 * Their trip would begin with their arrival at the hotel to check in to their room. 
 * At the front desk, the receptionist asks for the person to prove their identity by providing credentials. 
@@ -117,7 +122,9 @@ Notes:
   * short-lived, dynamic credentials
   * encrypt plaintext data in transit
   
-![](../artwork/secrets.jpeg)
+
+<img src="../artwork/secrets.jpeg"  style="width:70%;"/><!-- {"left" : 3.08, "top" : 4.27, "height" : 3.62, "width" : 4.09} -->
+
 
 Notes:
 
@@ -204,6 +211,7 @@ Notes:
 * Secret
 * Server
 
+
 Notes:
 
 Storage Backend - A storage backend is responsible for durable storage of encrypted data. Backends are not trusted by Vault and are only expected to provide durability. The storage backend is configured when starting the Vault server.
@@ -225,7 +233,10 @@ Server - Vault depends on a long-running instance which operates as a server. Th
 ---
 
 ## Vault architecture
-![](../artwork/vault-layers.png)
+
+<img src="../artwork/vault-layers.png"  style="width:70%;"/> <!-- {"left" : 1.02, "top" : 2.1, "height" : 4.88, "width" : 8.21} -->
+
+
 
 Notes:
 
@@ -244,7 +255,8 @@ Notes:
 
 ## In the real world, Vault starts sealed
 
-![](../artwork/vault-shamir-secret-sharing.png)
+
+<img src="../artwork/vault-shamir-secret-sharing.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.03, "height" : 5.59, "width" : 8.21} -->
 
 Notes:
 
@@ -288,7 +300,9 @@ In asymmetric cryptography, as the name suggests, one key is used to encrypt a m
   * Bob and Alice do not live in the same location, how do they exchange the key? 
   * (Short of a secure/trusted courier manually taking the keys to the two parties.)
   
-![](../artwork/pexels-sunyu-kim-2047397.jpg)
+<img src="../artwork/pexels-sunyu-kim-2047397.jpg"  style="width:70%;"/><!-- {"left" : 6.04, "top" : 1.66, "height" : 5.33, "width" : 4} -->
+
+
 
 Notes:
 
@@ -305,19 +319,24 @@ Notes:
 * Entering ciphertext transforms it back into readable plaintext.
 * `‘SCIENCE IS AWESOME` => `MKSQER PO QAPEKRQ`
 
-![](../artwork/Enigma_(crittografia)_-_Museo_scienza_e_tecnologia_Milano.jpg)
+
+<img src="../artwork/Enigma_(crittografia)_-_Museo_scienza_e_tecnologia_Milano.jpg"  style="width:70%;"/><!-- {"left" : 3.57, "top" : 4.6, "height" : 3.39, "width" : 3.11} -->
+
 
 ---
 
 ## Breaking the Enigma machine
 
-![](../artwork/bombe-machine-old.jpg)
+
+<img src="../artwork/bombe-machine-old.jpg"  style="width:70%;"/><!-- {"left" : 1.16, "top" : 1.7, "height" : 6.25, "width" : 7.94} -->
+
 
 ---
 
 ## Asymmetric cryptography - problem solved!
 
-![](../artwork/arch-01.png)
+<img src="../artwork/arch-01.png"  style="width:70%;"/><!-- {"left" : 0.69, "top" : 1.77, "height" : 6.1, "width" : 8.87} -->
+
 
 Notes:
 
@@ -335,7 +354,9 @@ Notes:
   — Ron **R**ivest, Adi **S**hamir, and Leonard **A**dleman, thus **RSA**. 
   - The algorithm is based on prime numbers and the difficulty of factoring a large number into its prime factors.
 
-![](../artwork/rsa.png)
+
+<img src="../artwork/rsa.png"  style="width:70%;"/><!-- {"left" : 2.45, "top" : 4.1, "height" : 3.73, "width" : 5.35} -->
+
 
 Notes:
 
@@ -358,7 +379,10 @@ Notes:
   * Self-signed certificates
   * Invalid certificates
 
-![](../artwork/arch-2.png)
+
+<img src="../artwork/arch-2.png"  style="width:70%;"/><!-- {"left" : 5.71, "top" : 2.99, "height" : 3.08, "width" : 4.23} -->
+
+---
 
 ## Will quantum computing break Vault? - Q
 
@@ -374,7 +398,9 @@ Notes:
   * There are a number of new (and in some cases renovated) ciphers and cryptographic techniques being introduced to deal with threats powered by quantum computers. 
   * When peer reviewed implementations of this cryptography are available, HashiCorp looks to support them in Vault.
   
-![](../artwork/quantum.jpg)
+
+<img src="../artwork/quantum.jpg"  style="width:70%;"/><!-- {"left" : 3.29, "top" : 4.3, "height" : 3.67, "width" : 3.67} -->
+
 
 ---
 
@@ -446,7 +472,9 @@ Notes:
 * Phase 2 - User Interaction
 * Phase 3 - Cleanup
 
-![](../artwork/pexels-alex-andrews-1983032.jpg)
+
+<img src="../artwork/pexels-alex-andrews-1983032.jpg"  style="width:70%;"/> <!-- {"left" : 1.02, "top" : 3.3, "height" : 4.05, "width" : 8.21} -->
+
 
 Notes:
 
@@ -543,7 +571,8 @@ Notes:
 
 ## Database example
 
-![](../artwork/fig1-1.png)
+<img src="../artwork/fig1-1.png"  style="width:70%;"/> <!-- {"left" : 0.3, "top" : 2.61, "height" : 3.84, "width" : 9.65} -->
+
 
 
 Notes:
@@ -680,7 +709,9 @@ solutions, or public cloud identity services, can be leveraged to validate human
 
 ## General Consumer Interaction
 
-![](../artwork/fig1-2.png)
+<img src="../artwork/fig1-2.png"  style="width:70%;"/> <!-- {"left" : 0.5, "top" : 2.45, "height" : 4.18, "width" : 9.25} -->
+
+
 
 Notes:
 
@@ -751,7 +782,8 @@ Vault before the EGP can be used for triggering the second factor of authenticat
 
 ## Admin interaction example
 
-![](../artwork/fig1-3.png)
+<img src="../artwork/fig1-3.png"  style="width:70%;"/> <!-- {"left" : 0.66, "top" : 1.83, "height" : 5.98, "width" : 8.92} -->
+
 
 Notes:
 
@@ -795,7 +827,8 @@ and analytics tools, such as Splunk or an ELK stack.
 
 ## Security flow example
 
-![](../artwork/fig1-4.png)
+<img src="../artwork/fig1-4.png"  style="width:70%;"/> <!-- {"left" : 0.54, "top" : 2.9, "height" : 3.27, "width" : 9.16} -->
+
 
 Notes:
 
@@ -839,7 +872,9 @@ client receives a token in response that can be used to retrieve a secret.
 
 ## Password rotation
 
-![](../artwork/arch-03.png)
+<img src="../artwork/arch-03.png"  style="width:70%;"/> <!-- {"left" : 0.62, "top" : 2.89, "height" : 3.28, "width" : 9.01} -->
+
+
 
 Notes:
 
@@ -882,6 +917,8 @@ api_addr = "http://127.0.0.1:8200"
 cluster_addr = "https://127.0.0.1:8201"
 ui = true
 ```
+<!-- {"left" : 0, "top" : 1.3, "height" : 4.07, "width" : 7.28} -->
+
 
 Notes:
 
@@ -902,12 +939,17 @@ Notes:
 ```text
 ./vault/data
 ```
+<!-- {"left" : 0, "top" : 1.51, "height" : 0.54, "width" : 2.64} -->
+
 
 * And run this command
 
 ```shell
 vault server -config=config.hcl
 ```
+<!-- {"left" : 0, "top" : 2.6, "height" : 0.57, "width" : 5.94} -->
+
+
 
 ---
 
@@ -921,7 +963,8 @@ vault server -config=config.hcl
     * unseal keys are created
     * initial root token is setup
 
-![](../artwork/seal.jpg)
+<img src="../artwork/seal.jpg"  style="width:70%;"/> <!-- {"left" : 2.63, "top" : 4.83, "height" : 3.43, "width" : 4.99} -->
+
 
 ---
 
@@ -933,8 +976,10 @@ vault server -config=config.hcl
 export VAULT_ADDR='http://127.0.0.1:8200'
 vault operator init
 ```
+<!-- {"left" : 0, "top" : 1.48, "height" : 0.73, "width" : 6.51} -->
 
-![](../artwork/unseal.png)
+<img src="../artwork/unseal.png"  style="width:70%;"/> <!-- {"left" : 2.19, "top" : 2.26, "height" : 1.58, "width" : 5.88} -->
+
 
 * Distribute these **very** secret keys to three people whom your trust
 * Together (but indendently), then will unseal Vault
@@ -988,6 +1033,8 @@ listener "tcp" {
   tls_disable = "true"
 }
 ```
+<!-- {"left" : 0, "top" : 3.37, "height" : 2.32, "width" : 4.44} -->
+
 
 Notes:
 
@@ -1002,6 +1049,7 @@ Notes:
 ```shell
 vault server -config=config.hcl
 ```
+<!-- {"left" : 0, "top" : 1.93, "height" : 0.52, "width" : 5.41} -->
 
 * At this point, you can use Vault's HTTP API for all your interactions.
 * Launch a new terminal session, and use curl to initialize Vault with the API.
@@ -1012,6 +1060,8 @@ curl \
 --data '{"secret_shares": 1, "secret_threshold": 1}' \
 http://127.0.0.1:8200/v1/sys/init | jq
 ```
+<!-- {"left" : 0, "top" : 4.26, "height" : 1.44, "width" : 9.78} -->
+
 
 Notes:
 
@@ -1029,6 +1079,8 @@ Notes:
 ```shell
 echo '{"fruit":{"name":"apple","color":"green","price":1.20}}' | jq '.'
 ```
+<!-- {"left" : 0, "top" : 3.84, "height" : 0.44, "width" : 9.81} -->
+
 
 * Output
 ```json
@@ -1041,6 +1093,9 @@ echo '{"fruit":{"name":"apple","color":"green","price":1.20}}' | jq '.'
 }
 
 ```
+<!-- {"left" : 0, "top" : 4.82, "height" : 2.32, "width" : 4.28} -->
+
+---
 
 ## Continue with the screenshots in the lab
 
@@ -1058,7 +1113,8 @@ echo '{"fruit":{"name":"apple","color":"green","price":1.20}}' | jq '.'
 
 ## Programmatic Interaction
 
-![](../artwork/fig1-5.png)
+
+<img src="../artwork/fig1-5.png"  style="width:70%;"/> <!-- {"left" : 0.56, "top" : 2.46, "height" : 3.3, "width" : 9.13} -->
 
 Notes:
 
@@ -1094,6 +1150,8 @@ storage "storage" {
   # ...
 }
 ```
+<!-- {"left" : 0, "top" : 3.42, "height" : 2.9, "width" : 3.94} -->
+
 
 Notes:
 
@@ -1118,6 +1176,8 @@ listener "tcp" {
   # address = "127.0.0.1:8200"
 }
 ```
+<!-- {"left" : 0, "top" : 2.63, "height" : 2.9, "width" : 8.61} -->
+
 
 Notes:
 
@@ -1151,6 +1211,8 @@ listener "tcp" {
 api_addr = "http://127.0.0.1:8200"
 cluster_addr = "https://127.0.0.1:8201"
 ```
+<!-- {"left" : 0, "top" : 1.35, "height" : 4.65, "width" : 7.28} -->
+
 
 Notes:
 
@@ -1168,6 +1230,7 @@ Notes:
 ```shell
 vault server -config=config.hcl
 ```
+<!-- {"left" : 0, "top" : 1.94, "height" : 0.52, "width" : 5.38} -->
 
 * Let us now continue our review with the pictures in [the lab](https://github.com/elephantscale/vault-consul-labs-answers/tree/main/lab11)
 
@@ -1203,6 +1266,5 @@ vault server -config=config.hcl
   * C = Me % n
 * To decrypt, you take the cipher text and raise it to the d power modulo n.
   * P = Cd % n
-![](../artwork/thats-all-folks-sticker-india.jpg)
     
----
+<img src="../artwork/thats-all-folks-sticker-india.jpg"  style="width:70%;"/> <!-- {"left" : 3.23, "top" : 3.71, "height" : 3.79, "width" : 3.79} -->

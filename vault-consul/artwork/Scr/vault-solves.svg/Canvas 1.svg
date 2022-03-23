@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-313 -22 1577 912" width="1577" height="912">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-03-23 10:18:29 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_12">
+        <path d="M 311.35886 295.82323 L 322.64174 283.72382 L 639.3609 579.0692 L 628.078 591.1686 Z" fill="#02329a"/>
+        <path d="M 311.35886 295.82323 L 322.64174 283.72382 L 639.3609 579.0692 L 628.078 591.1686 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 317.36994 585.7452 L 306.5162 573.2594 L 633.3498 289.14725 L 644.2036 301.63306 Z" fill="#02329a"/>
+        <path d="M 317.36994 585.7452 L 306.5162 573.2594 L 633.3498 289.14725 L 644.2036 301.63306 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <path d="M -291.8519 -21 L 313.35845 -21 C 324.40415 -21 333.35845 -12.045695 333.35845 -1 L 333.35845 288.49845 C 333.35845 299.54415 324.40415 308.49845 313.35845 308.49845 L -291.8519 308.49845 C -302.8976 308.49845 -311.8519 299.54415 -311.8519 288.49845 L -311.8519 -1 C -311.8519 -12.045695 -302.8976 -21 -291.8519 -21 Z" fill="#aa97fe"/>
+        <path d="M -291.8519 -21 L 313.35845 -21 C 324.40415 -21 333.35845 -12.045695 333.35845 -1 L 333.35845 288.49845 C 333.35845 299.54415 324.40415 308.49845 313.35845 308.49845 L -291.8519 308.49845 C -302.8976 308.49845 -311.8519 299.54415 -311.8519 288.49845 L -311.8519 -1 C -311.8519 -12.045695 -302.8976 -21 -291.8519 -21 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M -291.8519 559.5165 L 313.35845 559.5165 C 324.40415 559.5165 333.35845 568.4708 333.35845 579.5165 L 333.35845 869.0149 C 333.35845 880.0606 324.40415 889.0149 313.35845 889.0149 L -291.8519 889.0149 C -302.8976 889.0149 -311.8519 880.0606 -311.8519 869.0149 L -311.8519 579.5165 C -311.8519 568.4708 -302.8976 559.5165 -291.8519 559.5165 Z" fill="#ebdea6"/>
+        <path d="M -291.8519 559.5165 L 313.35845 559.5165 C 324.40415 559.5165 333.35845 568.4708 333.35845 579.5165 L 333.35845 869.0149 C 333.35845 880.0606 324.40415 889.0149 313.35845 889.0149 L -291.8519 889.0149 C -302.8976 889.0149 -311.8519 880.0606 -311.8519 869.0149 L -311.8519 579.5165 C -311.8519 568.4708 -302.8976 559.5165 -291.8519 559.5165 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 637.3613 -21 L 1242.5717 -21 C 1253.6174 -21 1262.5717 -12.045695 1262.5717 -1 L 1262.5717 288.49845 C 1262.5717 299.54415 1253.6174 308.49845 1242.5717 308.49845 L 637.3613 308.49845 C 626.3156 308.49845 617.3613 299.54415 617.3613 288.49845 L 617.3613 -1 C 617.3613 -12.045695 626.3156 -21 637.3613 -21 Z" fill="#e3a92e"/>
+        <path d="M 637.3613 -21 L 1242.5717 -21 C 1253.6174 -21 1262.5717 -12.045695 1262.5717 -1 L 1262.5717 288.49845 C 1262.5717 299.54415 1253.6174 308.49845 1242.5717 308.49845 L 637.3613 308.49845 C 626.3156 308.49845 617.3613 299.54415 617.3613 288.49845 L 617.3613 -1 C 617.3613 -12.045695 626.3156 -21 637.3613 -21 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 637.3613 559.5165 L 1242.5717 559.5165 C 1253.6174 559.5165 1262.5717 568.4708 1262.5717 579.5165 L 1262.5717 869.0149 C 1262.5717 880.0606 1253.6174 889.0149 1242.5717 889.0149 L 637.3613 889.0149 C 626.3156 889.0149 617.3613 880.0606 617.3613 869.0149 L 617.3613 579.5165 C 617.3613 568.4708 626.3156 559.5165 637.3613 559.5165 Z" fill="#a4f8fd"/>
+        <path d="M 637.3613 559.5165 L 1242.5717 559.5165 C 1253.6174 559.5165 1262.5717 568.4708 1262.5717 579.5165 L 1262.5717 869.0149 C 1262.5717 880.0606 1253.6174 889.0149 1242.5717 889.0149 L 637.3613 889.0149 C 626.3156 889.0149 617.3613 880.0606 617.3613 869.0149 L 617.3613 579.5165 C 617.3613 568.4708 626.3156 559.5165 637.3613 559.5165 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="475.3599" cy="437.4462" r="124.079112906973" fill="white"/>
+        <circle cx="475.3599" cy="437.4462" r="124.079112906973" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <rect x="383.09427" y="345.1806" width="184.53122" height="184.53122" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image2.png" width="450" height="450" transform="translate(383.09427 345.1806) scale(.4100694)"/>
+        </g>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(-204.12588 100.74923)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="4.89624" y="35">Centralize secrets across </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="77.681885" y="78">the organization</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(-259.43716 681.2657)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="4.89624" y="35">Provide Encryption as a Service </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="111.64795" y="78">to the organization</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(652.9853 100.74923)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="47.93701" y="35">Increase security posture by </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="78">eliminating Long-lived credentials</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(689.7455 681.2657)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="15.38086" y="35">Automate the generation of</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="78">Certificates for authentication</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

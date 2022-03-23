@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-330 -11 1228 633" width="1228" height="633">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-03-22 12:19:46 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_3">
+        <g id="Graphic_15">
+          <path d="M -330 77.27 L 258.96232 77.27 L 306.30086 33.13725 L 258.96232 -11 L -330 -11 Z" fill="#a5b2fd"/>
+        </g>
+        <g id="Graphic_14">
+          <path d="M -330 186.17 L 258.96232 186.17 L 306.30086 142.03725 L 258.96232 97.9 L -330 97.9 Z" fill="#aa97fe"/>
+        </g>
+        <g id="Graphic_13">
+          <path d="M -330 295.07 L 258.96232 295.07 L 306.30086 250.93725 L 258.96232 206.8 L -330 206.8 Z" fill="#8674df"/>
+        </g>
+        <g id="Graphic_12">
+          <path d="M -330 403.97 L 258.96232 403.97 L 306.30086 359.83725 L 258.96232 315.7 L -330 315.7 Z" fill="#7465c1"/>
+        </g>
+        <g id="Graphic_11">
+          <path d="M -330 512.87 L 258.96232 512.87 L 306.30086 468.73725 L 258.96232 424.6 L -330 424.6 Z" fill="#7950c1"/>
+        </g>
+        <g id="Graphic_10">
+          <path d="M -330 621.77 L 258.96232 621.77 L 306.30086 577.63725 L 258.96232 533.5 L -330 533.5 Z" fill="#6542a0"/>
+        </g>
+        <g id="Graphic_9">
+          <text transform="translate(-153.84176 553.135)" fill="white">
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="white" x="0" y="40">Extensible</tspan>
+          </text>
+        </g>
+        <g id="Graphic_8">
+          <text transform="translate(-153.84176 444.235)" fill="white">
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="white" x="0" y="40">Scalable</tspan>
+          </text>
+        </g>
+        <g id="Graphic_7">
+          <text transform="translate(-153.84176 335.335)" fill="white">
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="white" x="0" y="40">Distributed</tspan>
+          </text>
+        </g>
+        <g id="Graphic_6">
+          <text transform="translate(-153.84176 226.435)" fill="white">
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="white" x="0" y="40">Auditing</tspan>
+          </text>
+        </g>
+        <g id="Graphic_5">
+          <text transform="translate(-153.84176 117.535)" fill="white">
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="white" x="0" y="40">Authorizing</tspan>
+          </text>
+        </g>
+        <g id="Graphic_4">
+          <text transform="translate(-153.84176 8.635)" fill="white">
+            <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="white" x="0" y="40">Authentication</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_2">
+        <rect x="492.37525" y="15" width="405.18837" height="580.77" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image1.tiff" width="180" height="258" transform="translate(492.37525 15) scale(2.2510465)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

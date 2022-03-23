@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="102 22 402 402" width="402" height="402">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-03-23 15:44:31 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_6">
+        <path d="M 108 23 L 498 23 C 500.7614 23 503 25.238576 503 28 L 503 418 C 503 420.7614 500.7614 423 498 423 L 108 423 C 105.23858 423 103 420.7614 103 418 L 103 28 C 103 25.238576 105.23858 23 108 23 Z" fill="#ebdea6"/>
+        <path d="M 108 23 L 498 23 C 500.7614 23 503 25.238576 503 28 L 503 418 C 503 420.7614 500.7614 423 498 423 L 108 423 C 105.23858 423 103 420.7614 103 418 L 103 28 C 103 25.238576 105.23858 23 108 23 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(181.59497 101.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(380.99683 101.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(180.1936 259.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">C</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(376.79272 259.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">D</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

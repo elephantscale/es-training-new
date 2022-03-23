@@ -1,7 +1,8 @@
 # Vault scalability
 
-
+---
 # Vault Deployment
+---
 
 ## Vault design
 
@@ -44,7 +45,6 @@ adoption of Vault.
     *  even the network/security operations centers
 
 Notes:
-
 As with the introduction of any platform, organizations need to understand both the business
 requirements and technical challenges that Vault is intended to solve. Vault includes many
 features and integrations and can quickly become the focal point for services that
@@ -152,6 +152,7 @@ stored?
 * Are TTLs minimized beyond a reasonable timeframe?
 * Are Vault policies written to follow the principle of least privilege?
 
+
 Notes:
 
 Beyond the business and technical requirements, other requirements should be considered
@@ -163,6 +164,8 @@ hardening, and following best practices for Vault configuration and operations. 
 combined helps provide a defense-in-depth approach when designing and implementing
 Vault in an environment.
 Security requirements that might be gathered may include:
+
+---
 
 ## End-User Requirements
 
@@ -197,9 +200,10 @@ interact with Vault, it is impossible to run a thriving Vault service.
 * collaborative effort between management, development, security, operations, automation, and network teams
 * Input in business, technical, security, and end-user requirements
 
+
 Notes:
 
-In many organizations, requirements gathering can be an unnecessarily complicated
+* In many organizations, requirements gathering can be an unnecessarily complicated
 process due to either the organizational structure or the number of participants wishing to
 voice an opinion. To minimize conflicts and increase efficiency, a workshop-type approach
 is generally recommended to streamline the requirements gathering process and design the
@@ -207,15 +211,13 @@ Vault architecture. This Vault design workshop should be a collaborative effort 
 management, development, security, operations, automation, and network teams. If it is not
 feasible to include all parties in the workshop, representatives from each team can be
 included in the workshop.
-
-Note: Often, the workshop's participating members are defined as a
+* Often, the workshop's participating members are defined as a
 virtual team that will see the project from the beginning to end. These
 virtual teams are created in place of a full-time team, as most
 participants still have day-to-day responsibilities. Members of this team
 frequently become part of the support team after the project is
 completed.
-
-During the workshop, participants should provide input in determining the business,
+* During the workshop, participants should provide input in determining the business,
 technical, security, and end-user requirements in which the Vault solution and architecture
 should meet. These critical decisions should be well documented and shared with all
 involved parties within the organization. After requirements are agreed upon and
@@ -230,8 +232,7 @@ the workshop to ensure all parties understand how Vault works, what
 the Vault platform can do, and how Vault is deployed and
 operationalized. Providing some level of education allows all
 participating parties to help make educated decisions.
-
-After the design has been agreed upon, it should be well documented and shared with all
+* After the design has been agreed upon, it should be well documented and shared with all
 parties. Not only does this encourage open communication and collaboration among teams,
 it also assists in solving disputes over agreed-upon service levels, requirements, and design
 aspects. The documentation can also serve as a reference both during and after the Vault
@@ -292,7 +293,8 @@ election process.
 
 ## Scalability
 
-![](../artwork/scale-01.png)
+
+<img src="../artwork/scale-01.png"  style="width:70%;"/><!-- {"left" : 0.64, "top" : 2.54, "height" : 4.56, "width" : 8.97} -->
 
 Notes:
 
@@ -310,7 +312,8 @@ version, there is always one active node in a cluster
 
 ## Accessing the Vault Service
 
-![](../artwork/scale-02.png)
+<img src="../artwork/scale-02.png"  style="width:70%;"/><!-- {"left" : 0.66, "top" : 2.18, "height" : 3.51, "width" : 8.93} -->
+
 
 Notes:
 
@@ -331,7 +334,7 @@ The dedicated health endpoint has multiple default status codes
 
 ## Vault cluster behind a load balancer
 
-![](../artwork/scale-03.png)
+<img src="../artwork/scale-03.png"  style="width:70%;"/> <!-- {"left" : 1.32, "top" : 1.84, "height" : 5.96, "width" : 7.62} -->
 
 Notes:
 
@@ -368,7 +371,7 @@ provisioned to manage these services.
 
 ## Consul Storage Backend
 
-![](../artwork/scale-04.png)
+<img src="../artwork/scale-04.png"  style="width:70%;"/><!-- {"left" : 0.69, "top" : 2.42, "height" : 3.99, "width" : 8.88} -->
 
 Notes:
 
@@ -420,4 +423,3 @@ cluster.
 * Terraform Integration
 * Coding for Reliability
 
----

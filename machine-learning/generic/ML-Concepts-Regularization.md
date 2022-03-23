@@ -16,7 +16,7 @@
 
  * In the equation below, assume b<sub>1</sub>=20 and b<sub>2</sub>=2000Which variable X<sub>1</sub> or X<sub>2</sub> will have a large impact on outcome?
 
-<img src="../../assets/images/machine-learning/3rd-party/regularization-1.png" style="width:60%"/><!-- {"left" : 1.21, "top" : 6.41, "height" : 0.97, "width" : 7.83} -->
+<img src="../../assets/images/machine-learning/3rd-party/regularization-1.png" style="width:60%"/><!-- {"left" : 3.01, "top" : 7.91, "height" : 1.42, "width" : 11.48} -->
 
 
 
@@ -31,11 +31,11 @@ Answer X2.. Because it gets multiplied by 2000
 
 * We can control regularization by adjusting lambda (ƛ) variable
 
-     - Lambda=0 : no regularization
+     - Lambda=0: no regularization
 
-     - Lambda = small (0.001): very little regularization
+     - Lambda= small (0.001): very little regularization
 
-     - Lambda = large (10): very strong regularization
+     - Lambda= large (10): very strong regularization
 
 * Optimal Lambda (ƛ) value depends on particular dataset, and can be calculated using cross validation
 
@@ -64,7 +64,7 @@ Notes:
 
      - Called  **variable/feature selection**
 
-<img src="../../assets/images/machine-learning/3rd-party/regularization-ridge-vs-lasso-1.png" style="width:80%"/><!-- {"left" : 1.3, "top" : 6.72, "height" : 1.13, "width" : 7.65} -->
+<img src="../../assets/images/machine-learning/3rd-party/regularization-ridge-vs-lasso-1.png" style="width:80%"/><!-- {"left" : 3.36, "top" : 8.44, "height" : 1.59, "width" : 10.77} -->
 
 
 

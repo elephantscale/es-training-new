@@ -14,7 +14,7 @@
 | 327,000      | 3        | 1.5       | 1,750       | 34,465   |
 | 347,000      | 4        | 1.75      | 1,860       | 14,650   |
 
-<!-- {"left" : 0.25, "top" : 1.1, "height" : 4, "width" : 9.75} -->
+<!-- {"left" : 1.36, "top" : 2.56, "height" : 4.01, "width" : 14.79} -->
 
  * Multiple factors decide house prices
 
@@ -30,7 +30,7 @@ Notes:
 
 ## Multiple Linear Regression
 
-<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:90%"/><!-- {"left" : 2.01, "top" : 1.37, "height" : 0.43, "width" : 6.24} -->
+<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:90%"/><!-- {"left" : 4.08, "top" : 2, "height" : 0.64, "width" : 9.34} -->
 
  * Outcome depends on multiple variables
  * __β<sub>1</sub>__ , __β<sub>2</sub>__ are coefficients
@@ -60,10 +60,10 @@ model = LinearRegression ().fit(x,y)
 # predict
 predictions = model.predict(x)
 ```
-<!-- {"left" : 0, "top" : 1.27, "height" : 3.88, "width" : 10.25} -->
+<!-- {"left" : 1.08, "top" : 2.38, "height" : 4.52, "width" : 11.94} -->
 
-<img src="../../assets/images/machine-learning/linear-regression-house-price-1a.png" style="width:40%;float:left;"/><!-- {"left" : 0.19, "top" : 5.92, "height" : 2.01, "width" : 4.6} -->
-<img src="../../assets/images/machine-learning/linear-regression-house-price-1b.png" style="width:40%;float:right;"/><!-- {"left" : 4.89, "top" : 5.93, "height" : 2.12, "width" : 5.17} -->
+<img src="../../assets/images/machine-learning/linear-regression-house-price-1a.png" style="width:40%;float:left;"/><!-- {"left" : 1.88, "top" : 7.68, "height" : 2.8, "width" : 6.4} -->
+<img src="../../assets/images/machine-learning/linear-regression-house-price-1b.png" style="width:40%;float:right;"/><!-- {"left" : 8.42, "top" : 7.7, "height" : 2.95, "width" : 7.19} -->
 
 ---
 
@@ -76,7 +76,7 @@ coef = pd.DataFrame({"input_column" : input_columns,
 print(coef)
 
 ```
-<!-- {"left" : 0, "top" : 1.27, "height" : 1.44, "width" : 9.78} -->
+<!-- {"left" : 0.85, "top" : 2.54, "height" : 1.96, "width" : 13.31} -->
 
 
 ```text
@@ -93,7 +93,7 @@ MSE :  60702204448.745056
 RMSE :  246378.1736452015
 
 ```
-<!-- {"left" : 0, "top" : 3.64, "height" : 3.49, "width" : 5.61} -->
+<!-- {"left" : 0.85, "top" : 4.98, "height" : 4.57, "width" : 7.35} -->
 
 ---
 
@@ -108,7 +108,7 @@ input_column  coefficient
 2  SqFtTotLiving       277.85
 3        SqFtLot        -0.07
 ```
-<!-- {"left" : 0, "top" : 1.11, "height" : 2.32, "width" : 5.61} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 2.93, "width" : 7.1} -->
 
 <br/>
 
@@ -134,7 +134,7 @@ input_column  coefficient
     * 1.0 is a perfet fit
 
 
-<img src="../../assets/images/formulas-equations/RMSE-1.png" style="width:40%;float:left;"/><!-- {"left" : 0.74, "top" : 5.11, "height" : 0.79, "width" : 3.62} --><img src="../../assets/images/formulas-equations/R2-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.49, "top" : 4.87, "height" : 1.26, "width" : 4.01} -->
+<img src="../../assets/images/formulas-equations/RMSE-1.png" style="width:40%;float:left;"/><!-- {"left" : 2.65, "top" : 6.93, "height" : 1.1, "width" : 5.04} --><img src="../../assets/images/formulas-equations/R2-1.png" style="width:40%;float:right;"/><!-- {"left" : 9.27, "top" : 6.59, "height" : 1.75, "width" : 5.58} -->
 
 Notes:
 
@@ -151,10 +151,7 @@ from sklearn.metrics import r2_score
 print ("R2 : " , r2_score(y, predictions))
 # R2 :  0.483482252362197
 ```
-<!-- {"left" : 0, "top" : 1.19, "height" : 1.72, "width" : 9.28} -->
-
-<br/>
-<br/>
+<!-- {"left" : 0.85, "top" : 1.6, "height" : 1.44, "width" : 7.75} -->
 
  * R<sup>2</sup> is 0.4835  - not a great fit
 
@@ -242,7 +239,7 @@ predictions = model.predict(x)
 print ("R2 : " , r2_score(y, predictions))
 # R2 = 0.48
 ```
-<!-- {"left" : 0, "top" : 2.71, "height" : 4.86, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.09, "height" : 6.37, "width" : 13.44} -->
 
 ---
 
@@ -273,15 +270,14 @@ predictions = model.predict(x)
 print ("R2 : " , r2_score(y, predictions))
 # R2 = 0.76
 ```
-<!-- {"left" : 0, "top" : 2.36, "height" : 4.26, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.68, "height" : 6.35, "width" : 15.29} -->
 
 ---
 
 
 ## Deciding Important Variables
 
-<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:50%"/><!-- {"left" : 1.92, "top" : 1.3, "height" : 0.44, "width" : 6.42} -->
-
+<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:50%"/><!-- {"left" : 4.06, "top" : 2.22, "height" : 0.64, "width" : 9.38} -->
 
 
  * In Multiple Linear Regressions many predictors determine the value of response
@@ -353,7 +349,7 @@ p - number of variables
 n - number of records
 
 ```
-<!-- {"left" : 0, "top" : 5.25, "height" : 1.44, "width" : 5.28} -->
+<!-- {"left" : 0.85, "top" : 6.5, "height" : 2.08, "width" : 7.63} -->
 
 
 Notes:
@@ -419,7 +415,8 @@ predictions = model.predict(x)
 print ("R2 : " , r2_score(y, predictions))
 # R2 = 0.84
 ```
-<!-- {"left" : 0, "top" : 1.9, "height" : 4.83, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.78, "height" : 7.47, "width" : 15.74} -->
+
 
 ---
 
@@ -436,7 +433,7 @@ coef = pd.DataFrame({"input_column" : input_columns,
 coef
 
 ```
-<!-- {"left" : 0, "top" : 2.1, "height" : 1.29, "width" : 8.72} -->
+<!-- {"left" : 0.85, "top" : 3.39, "height" : 1.68, "width" : 11.36} -->
 
 
 ```text
@@ -458,7 +455,8 @@ input_column  coefficient
 14  NewConstruction    27,870.93
 
 ```
-<!-- {"left" : 0, "top" : 3.59, "height" : 4.94, "width" : 6.11} -->
+<!-- {"left" : 0.85, "top" : 5.46, "height" : 5.31, "width" : 6.56} -->
+
 
 ---
 

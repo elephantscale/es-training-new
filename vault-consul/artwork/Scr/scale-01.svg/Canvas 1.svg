@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-1632 -1212 2758 1403" width="2758" height="1403">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-03-22 11:43:10 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_82">
+        <line x1="-1174.9566" y1="-308.5" x2="-934.0434" y2="-712.5" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="22.0,22.0" stroke-width="11"/>
+      </g>
+      <g id="Graphic_81">
+        <path d="M -1602.4768 -305 L -1045 -305 C -1030.6406 -305 -1019 -293.3594 -1019 -279 L -1019 161 C -1019 175.3594 -1030.6406 187 -1045 187 L -1602.4768 187 C -1616.8362 187 -1628.4768 175.3594 -1628.4768 161 L -1628.4768 -279 C -1628.4768 -293.3594 -1616.8362 -305 -1602.4768 -305 Z" fill="white"/>
+        <path d="M -1602.4768 -305 L -1045 -305 C -1030.6406 -305 -1019 -293.3594 -1019 -279 L -1019 161 C -1019 175.3594 -1030.6406 187 -1045 187 L -1602.4768 187 C -1616.8362 187 -1628.4768 175.3594 -1628.4768 161 L -1628.4768 -279 C -1628.4768 -293.3594 -1616.8362 -305 -1602.4768 -305 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_68">
+        <text transform="translate(-1508.7238 93)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">STANDBY NODE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_66">
+        <path d="M -532.1953 -305 L 25.281505 -305 C 39.64091 -305 51.281505 -293.3594 51.281505 -279 L 51.281505 161 C 51.281505 175.3594 39.64091 187 25.281505 187 L -532.1953 187 C -546.5547 187 -558.1953 175.3594 -558.1953 161 L -558.1953 -279 C -558.1953 -293.3594 -546.5547 -305 -532.1953 -305 Z" fill="white"/>
+        <path d="M -532.1953 -305 L 25.281505 -305 C 39.64091 -305 51.281505 -293.3594 51.281505 -279 L 51.281505 161 C 51.281505 175.3594 39.64091 187 25.281505 187 L -532.1953 187 C -546.5547 187 -558.1953 175.3594 -558.1953 161 L -558.1953 -279 C -558.1953 -293.3594 -546.5547 -305 -532.1953 -305 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Group_54">
+        <g id="Graphic_64">
+          <rect x="-284.94028" y="-177.03703" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+        <g id="Graphic_63">
+          <rect x="-262.01216" y="-177.03703" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+        <g id="Graphic_62">
+          <rect x="-239.08405" y="-177.03703" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+        <g id="Graphic_61">
+          <rect x="-284.94028" y="-154.22299" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+        <g id="Graphic_60">
+          <rect x="-262.01216" y="-154.22299" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+        <g id="Graphic_59">
+          <rect x="-239.08405" y="-154.22299" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+        <g id="Graphic_58">
+          <rect x="-284.94028" y="-131.40894" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+        <g id="Graphic_57">
+          <rect x="-262.01216" y="-131.40894" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+        <g id="Graphic_56">
+          <rect x="-239.08405" y="-131.40894" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+        <g id="Graphic_55">
+          <rect x="-262.01216" y="-108.5949" width="17.110533" height="17.110533" fill="white"/>
+        </g>
+      </g>
+      <g id="Graphic_53">
+        <text transform="translate(-438.44225 93)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">STANDBY NODE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <path d="M 538.0862 -305 L 1095.563 -305 C 1109.9224 -305 1121.563 -293.3594 1121.563 -279 L 1121.563 161 C 1121.563 175.3594 1109.9224 187 1095.563 187 L 538.0862 187 C 523.7268 187 512.0862 175.3594 512.0862 161 L 512.0862 -279 C 512.0862 -293.3594 523.7268 -305 538.0862 -305 Z" fill="white"/>
+        <path d="M 538.0862 -305 L 1095.563 -305 C 1109.9224 -305 1121.563 -293.3594 1121.563 -279 L 1121.563 161 C 1121.563 175.3594 1109.9224 187 1095.563 187 L 538.0862 187 C 523.7268 187 512.0862 175.3594 512.0862 161 L 512.0862 -279 C 512.0862 -293.3594 523.7268 -305 538.0862 -305 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_38">
+        <text transform="translate(631.83926 93)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">STANDBY NODE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <path d="M -1064 -1208 L -506.5232 -1208 C -492.1638 -1208 -480.5232 -1196.3594 -480.5232 -1182 L -480.5232 -742 C -480.5232 -727.6406 -492.1638 -716 -506.5232 -716 L -1064 -716 C -1078.3594 -716 -1090 -727.6406 -1090 -742 L -1090 -1182 C -1090 -1196.3594 -1078.3594 -1208 -1064 -1208 Z" fill="white"/>
+        <path d="M -1064 -1208 L -506.5232 -1208 C -492.1638 -1208 -480.5232 -1196.3594 -480.5232 -1182 L -480.5232 -742 C -480.5232 -727.6406 -492.1638 -716 -506.5232 -716 L -1064 -716 C -1078.3594 -716 -1090 -727.6406 -1090 -742 L -1090 -1182 C -1090 -1196.3594 -1078.3594 -1208 -1064 -1208 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(-970.247 -810)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">STANDBY NODE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <path d="M -14.745458 -1208 L 542.73134 -1208 C 557.09075 -1208 568.73134 -1196.3594 568.73134 -1182 L 568.73134 -742 C 568.73134 -727.6406 557.09075 -716 542.73134 -716 L -14.745458 -716 C -29.10486 -716 -40.74546 -727.6406 -40.74546 -742 L -40.74546 -1182 C -40.74546 -1196.3594 -29.10486 -1208 -14.745458 -1208 Z" fill="white"/>
+        <path d="M -14.745458 -1208 L 542.73134 -1208 C 557.09075 -1208 568.73134 -1196.3594 568.73134 -1182 L 568.73134 -742 C 568.73134 -727.6406 557.09075 -716 542.73134 -716 L -14.745458 -716 C -29.10486 -716 -40.74546 -727.6406 -40.74546 -742 L -40.74546 -1182 C -40.74546 -1196.3594 -29.10486 -1208 -14.745458 -1208 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(79.00759 -810)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">STANDBY NODE</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line x1="-400.3952" y1="-308.5" x2="-638.3233" y2="-712.5" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="22.0,22.0" stroke-width="11"/>
+      </g>
+      <g id="Line_5">
+        <line x1="697.3684" y1="-310.5263" x2="429.96616" y2="-712.5" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="22.0,22.0" stroke-width="11"/>
+      </g>
+      <g id="Line_4">
+        <line x1="-110.48487" y1="-308.5" x2="121.02092" y2="-712.5" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="22.0,22.0" stroke-width="11"/>
+      </g>
+      <g id="Line_3">
+        <line x1="508.5862" y1="-59" x2="54.781505" y2="-59" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="22.0,22.0" stroke-width="11"/>
+      </g>
+      <g id="Line_2">
+        <line x1="-1015.5" y1="-59" x2="-561.6953" y2="-59" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="22.0,22.0" stroke-width="11"/>
+      </g>
+      <g id="Graphic_83">
+        <rect x="633.0813" y="-291.34783" width="367.4866" height="367.4866" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image1.png" width="450" height="450" transform="translate(633.0813 -291.34783) scale(.8166369)"/>
+        </g>
+      </g>
+      <g id="Graphic_84">
+        <rect x="-436.2002" y="-290.34783" width="365.4866" height="365.4866" id="path_2"/>
+        <clipPath id="clip_path_2">
+          <use xl:href="#path_2"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_2)">
+          <image xl:href="image1.png" width="450" height="450" transform="translate(-436.2002 -290.34783) scale(.8121924)"/>
+        </g>
+      </g>
+      <g id="Graphic_86">
+        <rect x="80.24965" y="-1190.0435" width="367.4866" height="367.4866" id="path_3"/>
+        <clipPath id="clip_path_3">
+          <use xl:href="#path_3"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_3)">
+          <image xl:href="image1.png" width="450" height="450" transform="translate(80.24965 -1190.0435) scale(.8166369)"/>
+        </g>
+      </g>
+      <g id="Graphic_85">
+        <rect x="-968.0049" y="-1189.0435" width="365.4866" height="365.4866" id="path_4"/>
+        <clipPath id="clip_path_4">
+          <use xl:href="#path_4"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_4)">
+          <image xl:href="image1.png" width="450" height="450" transform="translate(-968.0049 -1189.0435) scale(.8121924)"/>
+        </g>
+      </g>
+      <g id="Graphic_87">
+        <rect x="-1506.4817" y="-290.34783" width="365.4866" height="365.4866" id="path_5"/>
+        <clipPath id="clip_path_5">
+          <use xl:href="#path_5"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_5)">
+          <image xl:href="image1.png" width="450" height="450" transform="translate(-1506.4817 -290.34783) scale(.8121924)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-571 50 1485 1021" width="1485" height="1021">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-03-19 10:41:12 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_34">
+        <rect x="682" y="61" width="232" height="232" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image14.png" width="374" height="374" transform="translate(682 61) scale(.62032086)"/>
+        </g>
+      </g>
+      <g id="Graphic_35">
+        <rect x="-571" y="61" width="232" height="232" id="path_2"/>
+        <clipPath id="clip_path_2">
+          <use xl:href="#path_2"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_2)">
+          <image xl:href="image15.png" width="374" height="374" transform="translate(-571 61) scale(.62032086)"/>
+        </g>
+      </g>
+      <g id="Graphic_36">
+        <rect x="309.06" y="759.7222" width="232" height="232" id="path_3"/>
+        <clipPath id="clip_path_3">
+          <use xl:href="#path_3"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_3)">
+          <image xl:href="image16.png" width="374" height="374" transform="translate(309.06 759.7222) scale(.62032086)"/>
+        </g>
+      </g>
+      <g id="Graphic_37">
+        <rect x="691" y="574.4815" width="206.1453" height="89" id="path_4"/>
+        <clipPath id="clip_path_4">
+          <use xl:href="#path_4"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_4)">
+          <image xl:href="image17.png" width="271" height="117" transform="translate(691 574.4815) scale(.7606838)"/>
+        </g>
+      </g>
+      <g id="Graphic_38">
+        <rect x="-340" y="574.4815" width="206.1453" height="89" id="path_5"/>
+        <clipPath id="clip_path_5">
+          <use xl:href="#path_5"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_5)">
+          <image xl:href="image17.png" width="271" height="117" transform="translate(-340 574.4815) scale(.7606838)"/>
+        </g>
+      </g>
+      <g id="Graphic_41">
+        <path d="M 639 218.8625 L 639 221.3275 L -274.31235 221.3275 L -274.31235 238.845 L -296 220.095 L -274.31235 201.345 L -274.31235 218.8625 Z" fill="#02329a"/>
+        <path d="M 639 218.8625 L 639 221.3275 L -274.31235 221.3275 L -274.31235 238.845 L -296 220.095 L -274.31235 201.345 L -274.31235 218.8625 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_42">
+        <path d="M -296 132.67251 L -296 135.13749 L 617.31235 135.13749 L 617.31235 152.655 L 639 133.905 L 617.31235 115.155 L 617.31235 132.67251 Z" fill="#02329a"/>
+        <path d="M -296 132.67251 L -296 135.13749 L 617.31235 135.13749 L 617.31235 152.655 L 639 133.905 L 617.31235 115.155 L 617.31235 132.67251 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(-180.27295 55.155)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#250060" x="0" y="45">Step 1</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" y="45">: Alice gets Bob’s public key</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(-180.27295 243.845)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#250060" x="0" y="45">Step 3</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" y="45">: Alice sends the message to Bob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_45">
+        <text transform="translate(748.0098 311.5926)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Alice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <text transform="translate(390.6557 1016.9188)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Eve</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(-191.94 753.2222)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Even if Eve intercepts the </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="89">message, she does not </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="138">have Bob’s private key </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="187">and cannot decrypt </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="236">the message</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <text transform="translate(450.6211 459.4031)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#250060" x="0" y="45">Step 2</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" y="45">: Alice encrypts </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="95">The message with Bob’s</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="144">Public key</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <text transform="translate(-566 459.4031)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#250060" x="0" y="45">Step 4</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" y="45">: Bob decrypts </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="95">The message with his</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="144">Public key</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <text transform="translate(-492.6074 311.5926)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Bob</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

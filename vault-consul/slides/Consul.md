@@ -1,9 +1,12 @@
 # Consul
+---
 
 # Consul overview
+---
 
 ## Monolith
-![](../artwork/consul/Canvas1.png)
+
+<img src="../artwork/consul/Canvas1.png"  style="width:70%;"/><!-- {"left" : 2.85, "top" : 2.26, "height" : 4.56, "width" : 4.56} -->
 
 Notes: 
 
@@ -17,11 +20,15 @@ A bug causes a rebuild and redeploy
 ---
 
 ## Microservices
-![](../artwork/consul/Canvas2.png)
+
+<img src="../artwork/consul/Canvas2.png"  style="width:70%;"/><!-- {"left" : 0.9, "top" : 2.93, "height" : 3.21, "width" : 8.44} -->
+
 ---
 
 ## Discovery
-![](../artwork/consul/Canvas3.png)
+
+<img src="../artwork/consul/Canvas3.png"  style="width:70%;"/><!-- {"left" : 1.27, "top" : 3.04, "height" : 3.57, "width" : 7.71} -->
+
 
 Notes:
 
@@ -31,7 +38,9 @@ Now where is B and milliseconds or seconds for latency
 ---
 
 ## Load balancers?
-![](../artwork/consul/Canvas4.png)
+
+<img src="../artwork/consul/Canvas4.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.18, "height" : 4.71, "width" : 8.21} -->
+
 
 Notes:
 
@@ -45,7 +54,9 @@ Notes:
 
 ## Registry
 
-![](../artwork/consul/Canvas5.png)
+
+<img src="../artwork/consul/Canvas5.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.2, "height" : 4.67, "width" : 8.21} -->
+
 
 Notes:
 
@@ -57,7 +68,8 @@ Notes:
 
 ## Configuration
 
-![](../artwork/consul/Canvas6.png)
+
+<img src="../artwork/consul/Canvas6.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.12, "height" : 4.83, "width" : 8.21} -->
 
 Notes:
 
@@ -70,7 +82,9 @@ Notes:
 
 ## Configuration in Consul
 
-![](../artwork/consul/Canvas7.png)
+
+<img src="../artwork/consul/Canvas7.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.09, "height" : 4.9, "width" : 8.21} -->
+
 
 Notes:
 
@@ -83,7 +97,7 @@ Notes:
 
 ## Zones
 
-![](../artwork/consul/Canvas8.png)
+<img src="../artwork/consul/Canvas8.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.82, "height" : 4, "width" : 8.21} -->
 
 Notes:
 
@@ -97,7 +111,7 @@ Notes:
 
 ## Segmentation
 
-![](../artwork/consul/Canvas9.png)
+<img src="../artwork/consul/Canvas9.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.52, "height" : 4.61, "width" : 8.21} -->
 
 Notes:
 
@@ -107,7 +121,8 @@ Notes:
 ---
 
 ## Service graph
-![](../artwork/consul/Canvas10.png)
+
+<img src="../artwork/consul/Canvas10.png"  style="width:70%;"/><!-- {"left" : 3.51, "top" : 2.56, "height" : 4.52, "width" : 3.23} -->
 
 
 Notes:
@@ -120,8 +135,8 @@ Notes:
 
 
 ## Identity
-![](../artwork/consul/Canvas11.png)
 
+<img src="../artwork/consul/Canvas11.png"  style="width:70%;"/><!-- {"left" : 1.52, "top" : 2.47, "height" : 4.71, "width" : 7.2} -->
 
 Notes:
 
@@ -135,7 +150,8 @@ Notes:
 
 ## Proxies
 
-![](../artwork/consul/Canvas12.png)
+<img src="../artwork/consul/Canvas12.png"  style="width:70%;"/><!-- {"left" : 1.44, "top" : 3.61, "height" : 1.84, "width" : 7.37} -->
+
 
 Notes:
 
@@ -154,17 +170,20 @@ to the service graph and asks if A is allowed to talk to B
 
 ## Proxies and Service Graph
 
-![](../artwork/consul/Canvas13.png)
+
+<img src="../artwork/consul/Canvas13.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 4.44, "width" : 8.21} -->
 
 Notes:
 
 * A can talk to be and vice versa, but should A be talking tobe at all? This goes back
   to the service graph and asks if A is allowed to talk to B
 
+---
 
 ## Service mesh
 
-![](../artwork/consul/Canvas14.png)
+<img src="../artwork/consul/Canvas14.png"  style="width:70%;"/><!-- {"left" : 0.69, "top" : 3.09, "height" : 2.89, "width" : 8.87} -->
+
 
 Notes:
 * We improved the programmer's efficiency
@@ -181,12 +200,14 @@ Notes:
 ---
 
 # Microservices
+---
 
 ## Microservices - insert the microservices slides here
 
 ---
 
 # Consul for Service Discovery
+---
 
 ## Why service discovery?
 
@@ -211,13 +232,15 @@ to critical services throughout the organization.
 
 ## Consul vs Zookeeper
 
-![](../artwork/consul-zookeeper.png)
+<img src="../artwork/consul-zookeeper.png"  style="width:70%;"/><!-- {"left" : 1.29, "top" : 2.22, "height" : 5.19, "width" : 7.67} -->
+
 
 ---
 
 ## Consul vs Google Anthos
 
-![](../artwork/consul-05.png)
+
+<img src="../artwork/consul-05.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.32, "height" : 4.43, "width" : 8.21} -->
 
 ---
 
@@ -245,6 +268,7 @@ a health check configured with timeouts and thresholds.
 ---
 
 ## Consul and Vault cluster
+
 * Consul can also simplify the connectivity to standby nodes within the cluster
 * Especially when running Vault Enterprise with performance standby nodes
 * Performance standby nodes can service Vault read operations and help
@@ -298,7 +322,8 @@ the Vault service with a Consul cluster.
 
 ## service_registration stanza example
 
-![](../artwork/consul-01.png)
+
+<img src="../artwork/consul-01.png"  style="width:70%;"/><!-- {"left" : 0.29, "top" : 1.97, "height" : 2.1, "width" : 9.67} -->
 
 Notes:
 
@@ -321,6 +346,7 @@ added to the Vault configuration file.
 ```text
 active.vault.service.consul
 ```
+<!-- {"left" : 0, "top" : 2.92, "height" : 0.57, "width" : 5.28} -->
 
 Notes:
 
@@ -340,6 +366,8 @@ the query with all the standby nodes.
 ```text
 performance-standby.vault.service.consul
 ```
+<!-- {"left" : 0, "top" : 2.51, "height" : 0.57, "width" : 7.44} -->
+
 
 Notes:
 
@@ -351,11 +379,12 @@ standby nodes, Consul responds to the query with all the standby nodes.
 ---
 
 # Terraform integration
+---
 
 ## Terraform and Vault
 
-![](../artwork/consul-02.png)
 
+<img src="../artwork/consul-02.png"  style="width:70%;"/><!-- {"left" : 0.63, "top" : 2.12, "height" : 4.83, "width" : 9} -->
 
 Notes:
 
@@ -432,7 +461,8 @@ of where the new cluster is needed.
 * Microsoft Azure (https://github.com/hashicorp/terraform-azurerm-vault)
 * Google Cloud (https://github.com/terraform-google-modules/terraform-google-vault)
 
-![](../artwork/consul-03.png)
+
+<img src="../artwork/consul-03.png"  style="width:70%;"/><!-- {"left" : 1.37, "top" : 3.95, "height" : 4.37, "width" : 7.51} -->
 
 ---
 ## Configure Vault Provider and Credentials
@@ -483,9 +513,13 @@ and VAULT_TOKEN, which is used to authenticate to Vault.
   * a load balancer in front of the Vault clusters, or even better
   * use the AppRole auth method since both RoleIDs and SecretIDs are replicated across all clusters
   
+---
+
 ## Reliability solution
 
-![](../artwork/consul-04.png)
+
+<img src="../artwork/consul-04.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 2.37, "height" : 4.89, "width" : 8.21} -->
+
 
 Notes:
 
@@ -511,4 +545,3 @@ the Vault service, regardless of the status of the Vault environment.
   * Deploy HashiCorp Consul Service on Azure
   * Secure Nomad jobs with Consul service mesh
   
----

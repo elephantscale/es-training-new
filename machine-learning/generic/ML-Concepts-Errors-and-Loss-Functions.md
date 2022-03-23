@@ -30,7 +30,7 @@
 | 5      | 15       |
 | 7      | 5        |
 
-<!-- {"left" : 0.25, "top" : 2.3, "height" : 3.5, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 4.11, "height" : 3.5, "width" : 9.75} -->
 
 
 
@@ -50,7 +50,7 @@ Notes:
     * __`Residual = actual tip - predicted tip`__
  * Sum of all residuals = **ZERO**  (positive and negative errors are canceling each other)
 
-<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:40%;float:right;"/><!-- {"left" : 0.23, "top" : 5.62, "height" : 1.89, "width" : 3.83} -->
+<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:40%;float:right;"/><!-- {"left" : 0.93, "top" : 6.64, "height" : 3.14, "width" : 6.37} -->
 
 
 | Actual Tip | Predicted Tip | Error or Residual = (Actual - Predicted) |
@@ -64,7 +64,7 @@ Notes:
 |            |               | SUM = 0  (+2 -3 +3 -2 +5 -5)             |
 
 
-<!-- {"left" : 4.18, "top" : 4.57, "height" : 3.98, "width" : 5.98, "columnwidth" : [1.08, 1.39, 3.51]} -->
+<!-- {"left" : 7.76, "top" : 6.03, "height" : 4.35, "width" : 8.81} -->
 
 
 Notes:
@@ -90,7 +90,7 @@ Notes:
 |            | Total ==>     | 0                            | 76            |
 
 
-<!-- {"left" : 1.06, "top" : 4.1, "height" : 3.18, "width" : 8.13, "columnwidth" : [1.32, 1.69, 3.41, 1.81]} -->
+<!-- {"left" : 1.75, "top" : 5.91, "height" : 3.93, "width" : 14} -->
 
 
 Notes:
@@ -99,7 +99,7 @@ Notes:
 
 ## Sum of Squared Errors (SSE)
 
-<img src="../../assets/images/formulas-equations/sum-of-squared-error-SSE-1.png" alt="equation-error-SSE-1" style="width:40%;float:right;"/><!-- {"left" : 6.65, "top" : 1.94, "height" : 1.33, "width" : 3.45} -->
+<img src="../../assets/images/formulas-equations/sum-of-squared-error-SSE-1.png" alt="equation-error-SSE-1" style="width:40%;float:right;"/><!-- {"left" : 11.17, "top" : 2.16, "height" : 2.12, "width" : 5.51} -->
 
  * Also known as
     - **Residual Sum of Squares (RSS)**
@@ -125,7 +125,7 @@ Notes:
 
 ## Mean Squared Error (MSE) (L2)
 
-<img src="../../assets/images/formulas-equations/mean-square-error-MSE-1.png" alt="XXX image missing" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.82, "top" : 2.47, "height" : 1.2, "width" : 3.17} -->
+<img src="../../assets/images/formulas-equations/mean-square-error-MSE-1.png" alt="XXX image missing" style="background:white;width:30%;float:right;"/><!-- {"left" : 12.21, "top" : 3.81, "height" : 1.77, "width" : 4.69} -->
 
 
 | Actual Tip | Predicted Tip | Error = (Actual - Predicted) | Error Squared |
@@ -138,7 +138,7 @@ Notes:
 | 5          | 10            | -5 = (5 - 10)                | 25            |
 |            | Total ==>     | 0                            | 76            |
 
-<!-- {"left" : 0.31, "top" : 1.33, "height" : 3.47, "width" : 6.22, "columnwidth" : [1.32, 1.69, 2.08, 1.13]} -->
+<!-- {"left" : 1.04, "top" : 2.53, "height" : 4.32, "width" : 10.59} -->
 
 
 - `MSE = (4  + 9 + 9 + 4 + 25 + 25)/6 = 76 / 6 = 12.6`
@@ -155,7 +155,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Mean Absolute Error (MAE)
 
-<img src="../../assets/images/formulas-equations/mean-absolute-error-MAE-1.png"  style="width:30%;float:right;"/><!-- {"left" : 6.71, "top" : 2.3, "height" : 1.2, "width" : 3.17} -->
+<img src="../../assets/images/formulas-equations/mean-absolute-error-MAE-1.png"  style="width:30%;float:right;"/><!-- {"left" : 11.74, "top" : 3.7, "height" : 1.83, "width" : 4.84} -->
 
 
 
@@ -169,7 +169,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 | 5          | 10            | -5 = (5 - 10)                | 5                  | 25            |
 |            | Total ==>     | 0                            | 20                 | 76            |
 
-<!-- {"left" : 0.18, "top" : 1.1, "height" : 3.73, "width" : 6.68, "columnwidth" : [1.39, 1.4, 2.06, 0.62, 1.22]} -->
+<!-- {"left" : 0.92, "top" : 1.89, "height" : 5.91, "width" : 10.62} -->
 
 - `MAE = (2 + 3 + 3 + 2 + 5 + 5) = 20 / 6 = 3.33`
 - Properties:
@@ -192,6 +192,8 @@ https://isaacchanghau.github.io/post/loss_functions/
 | Sum of Squared Errors (SSE) |
 | Mean Square Error (MSE)     |
 | Mean Absolute Error (MAE)   |
+
+<!-- {"left" : 3.64, "top" : 6.43, "height" : 2, "width" : 10.22} -->
 
 
 ---
