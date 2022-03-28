@@ -42,8 +42,7 @@ Notes:
      - Language translation
      - Self-driving cars
 
-<!-- todo shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/more-data-beats-algorithms-1.jpg"  style="width:45%;"/><!-- {"left" : 1.21, "top" : 5.86, "height" : 2.6, "width" : 7.84} -->
+<img src="../../assets/images/deep-learning/3rd-party/more-data-beats-algorithms-1.jpg"  style="width:45%;"/><!-- {"left" : 4.5, "top" : 8.33, "height" : 2.82, "width" : 8.5} -->
 
 Notes:
 
@@ -58,9 +57,8 @@ Notes:
 
 * 2 - Text analysis: Natural Language Processing (NLP)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/AI/3rd-party/computer-vision-1.png"  style="width:40%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
-<img src="../../assets/images/AI/3rd-party/nlp-1.jpg"  style="width:40%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/AI/3rd-party/computer-vision-1.png"  style="width:40%;/"><!-- {"left" : 1.31, "top" : 5.88, "height" : 4.37, "width" : 7.17} -->
+<img src="../../assets/images/AI/3rd-party/nlp-1.jpg"  style="width:40%;/"><!-- {"left" : 9.37, "top" : 5.99, "height" : 4.15, "width" : 6.81} -->
 
 
 ---
@@ -82,7 +80,7 @@ Notes:
 
   - Context and subtle meanings are lost
 
-* Example : **"Minister of agriculture" --> "Priest of farming"**
+* Example: **"Minister of agriculture" --> "Priest of farming"**
 
 Notes:
 
@@ -90,7 +88,7 @@ Notes:
 
 ## Translation With AI (Google Translate)
 
-<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="max-width:60%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="max-width:60%;float:right;/"><!-- {"left" : 9.3, "top" : 2.43, "height" : 4.64, "width" : 7.62} -->
 
 * Google Translate has been ported to 'Google Brain' on Sept 2016
 
@@ -108,8 +106,7 @@ Notes:
 ## Image Recognition: AI Approach
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="width:35%;float:right;"><!-- {"left" : 2.92, "top" : 1.92, "height" : 5.81, "width" : 4.4} -->
+<img src="../../assets/images/machine-learning/3rd-party/cats-and-dogs.png" style="width:35%;float:right;/"><!-- {"left" : 12.41, "top" : 2.24, "height" : 6.44, "width" : 4.88} -->
 
 * Image recognition has been a hard for computers for a long time
     - Images are complex (pixels, colors, shapes)
@@ -136,7 +133,7 @@ Notes:
 
 * [Link](https://www.youtube.com/watch?v=0rc4RqYLtEU)
 
-<img src="../../assets/images/deep-learning/3rd-party/video-nvidia-self-driving.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 1.56, "top" : 1.35, "height" : 4.32, "width" : 7.12} -->
+<img src="../../assets/images/deep-learning/3rd-party/video-nvidia-self-driving.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 4.16, "top" : 5.15, "height" : 5.58, "width" : 9.19} -->
 
 
 
@@ -146,14 +143,12 @@ Notes:
 ---
 ## AI History: 1980s-1990s
 
+<img src="../../assets/images/AI/3rd-party/ai-winter-1.png"  style="width:50%;float:right;"/> <!-- {"left" : 9.66, "top" : 2.18, "height" : 3.94, "width" : 7.53} -->
 
  * **Machine Learning** thrived
     - Statistical Machine Learning became the method of choice
     - Well Understood (Applied Statistics)
     - Achieved impressive results compared to previous rule-based approaches
-
-<!-- TODO shiva -->
-<img src="../../assets/images/AI/3rd-party/ai-winter-1.png"  style="width:50%;float:right;"/><!-- {"left" : 5.84, "top" : 1.87, "height" : 5.33, "width" : 4.13} -->
 
 * **Neural Networks** floundered
     - Neural Networks research stalled
@@ -161,7 +156,7 @@ Notes:
     - Reasons
         - Not enough data
         - Not enough compute power
-* **AI Winter** : https://en.wikipedia.org/wiki/AI_winter
+* **AI Winter:** https://en.wikipedia.org/wiki/AI_winter
 
 
 
@@ -174,8 +169,7 @@ Notes:
 
 ## 2012 - Neural Networks' Comeback
 
-<img src="../../assets/images/machine-learning/3rd-party/imagenet-results-1.png"  style="width:40%;float:right;"/><!-- {"left" : 5.84, "top" : 1.87, "height" : 5.33, "width" : 4.13} -->
-
+<img src="../../assets/images/machine-learning/3rd-party/imagenet-results-1.png"  style="width:40%;float:right;"/><!-- {"left" : 11.88, "top" : 2.15, "height" : 6.81, "width" : 5.28} -->
 
 - In [ImageNet competition](http://image-net.org/challenges/LSVRC/) of 2012...
 
@@ -188,7 +182,7 @@ Notes:
 
 ---
 
-## 2010+ : The Great AI Revival
+## 2010+: The Great AI Revival
 
  * AI is going through a resurgence now because of the following
 
@@ -222,7 +216,7 @@ https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
  * Each GPU core is capable of executing small set instructions, but there are 1000s of core per GPU
 Running in parallel
 
-<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.52, "top" : 4.35, "height" : 3.58, "width" : 5.22} -->
+<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 4.84, "top" : 6.07, "height" : 5.36, "width" : 7.82} -->
 
 
 
@@ -241,7 +235,7 @@ Notes:
 
 * [Link](https://www.youtube.com/watch?v=DjAJnQoNdMA)
 
-<img src="../../assets/images/deep-learning/3rd-party/video-audi-self-driving.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 0.86, "top" : 1.54, "height" : 3.12, "width" : 8.53} -->
+<img src="../../assets/images/deep-learning/3rd-party/video-audi-self-driving.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 2.64, "top" : 6.08, "height" : 4.47, "width" : 12.23} -->
 
 
 Notes:
@@ -256,7 +250,7 @@ Notes:
 
 * [Link](https://www.youtube.com/watch?v=-P28LKWTzrI)
 
-<img src="../../assets/images/deep-learning/3rd-party/video-cpu-gpu.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 1.65, "top" : 1.29, "height" : 4.23, "width" : 6.95} -->
+<img src="../../assets/images/deep-learning/3rd-party/video-cpu-gpu.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 3.77, "top" : 4.6, "height" : 6.07, "width" : 9.97} -->
 
 ---
 
@@ -269,7 +263,7 @@ Notes:
  * [Intel Math Kernel Library](https://software.intel.com/en-us/mkl) : highly optimized, threaded, and vectorized math functions that maximize performance on each processor family
 
 
-<img src="../../assets/images/machine-learning/3rd-party/intel-cpu.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 1.48, "top" : 5.14, "height" : 2.96, "width" : 7.29} -->
+<img src="../../assets/images/machine-learning/3rd-party/intel-cpu.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 3.24, "top" : 6.04, "height" : 4.47, "width" : 11.02} -->
 
 Notes:
 - https://software.intel.com/en-us/mkl
@@ -279,18 +273,20 @@ Notes:
 
 ## Hardware Advances - TPU
 
-<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:30%;float:right;"/><!-- {"left" : 9.27, "top" : 0.92, "height" : 0.67, "width" : 0.98} -->
-<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:40%;float:right;clear:both;"><!-- {"left" : 5.34, "top" : 1.24, "height" : 2.19, "width" : 4.6} -->
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:30%;float:right;"/><!-- {"left" : 12.73, "top" : 1.66, "height" : 2.99, "width" : 4.38} -->
+<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:40%;float:right;clear:both;"><!-- {"left" : 10.15, "top" : 6.2, "height" : 3.31, "width" : 6.96} -->
 
  * TPU is Google's custom chip built for AI workloads
     - 3rd generation as of March 2018
 
  * More capable the CPUs / GPUs in certain tasks
 
+
  * TPU Use cases:
     - Processing Google Streetview photos (extract street numbers / text)
     - Image processing Google Photos (A single TPU can process 100 millions photos / day)
     - AlphaGo game
+
 
  * Designed for [Tensorflow](https://github.com/tensorflow/tensorflow)
 
@@ -313,7 +309,7 @@ Notes:
 
  * [Link](https://www.youtube.com/watch?v=UsDhVx6cOrw)
 
-<img src="../../assets/images/deep-learning/3rd-party/video-google-cloud-tpu.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.74, "top" : 1.29, "height" : 3.55, "width" : 4.77} -->
+<img src="../../assets/images/deep-learning/3rd-party/video-google-cloud-tpu.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 4.72, "top" : 5.13, "height" : 6, "width" : 8.06} -->
 
 ---
 
@@ -326,7 +322,7 @@ Notes:
  * References
     - [Venture Capital Funding For Artificial Intelligence Startups Hit Record High In 2018  Forbes](https://www.forbes.com/sites/jeanbaptiste/2019/02/12/venture-capital-funding-for-artificial-intelligence-startups-hit-record-high-in-2018/)
 
-<img src="../../assets/images/deep-learning/3rd-party/AI-investment-2018-forbes.jpg" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 1.7, "top" : 5.97, "height" : 2.59, "width" : 6.85} -->
+<img src="../../assets/images/deep-learning/3rd-party/AI-investment-2018-forbes.jpg" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 3.04, "top" : 7.22, "height" : 4.31, "width" : 11.41} -->
 
 ---
 ## Tools and Libraries Have Improved Tremendously
@@ -341,9 +337,9 @@ Notes:
 ---
 ## Availability of Pre-Trained Models
 
-* **"If I have seen further it is by standing on the shoulders of giants" -- Isaac Newton**
+<img src="../../assets/images/deep-learning/3rd-party/standing-on-shoulders.jpg" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 12.65, "top" : 2.3, "height" : 6.64, "width" : 4.17} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/standing-on-shoulders.jpg" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 7.45, "top" : 1.51, "height" : 3.71, "width" : 2.33} -->
+* **"If I have seen further it is by standing on the shoulders of giants" -- Isaac Newton**
 
  * Creating complex models takes lot of data and lot of training
     - this can take huge amount of compute power (days or weeks of training)
@@ -367,14 +363,13 @@ Notes:
 
 - And then train it more to classify them into male/female
 
-<img src="../../assets/images/deep-learning/transfer-learning-1.png" alt="XXX image missing" style="width:80%;"/><!-- {"left" : 0.85, "top" : 4.46, "height" : 3.34, "width" : 8.54} -->
+<img src="../../assets/images/deep-learning/transfer-learning-1.png" alt="XXX image missing" style="width:80%;"/><!-- {"left" : 1.9, "top" : 6.18, "height" : 5.36, "width" : 13.71} -->
 
 ---
 
 ## Model Zoos
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="float:right;width:40%;"/><!-- {"left" : 5.49, "top" : 1.14, "height" : 4.61, "width" : 4.61} -->
+<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="float:right;width:40%;"/><!-- {"left" : 10.94, "top" : 1.56, "height" : 6.41, "width" : 6.41} -->
 
  * Building and training complex models from scratch takes a lot of effort and compute
 
@@ -401,9 +396,9 @@ Kept NN research going during 'AI Winter'
 
  * **These 3 won ACM Turing Award (Nobel prize of computing) in 2019**
 
-<img src="../../assets/images/people/geoffrey-hinton-1.jpg" alt="XXX image missing" style="width:15.6%;" />&nbsp;<!-- {"left" : 1.1, "top" : 5.52, "height" : 2.77, "width" : 2.07} -->
-<img src="../../assets/images/people/yann-lecun-1.jpg" alt="XXX image missing" style="width:20.5%;" />&nbsp;<!-- {"left" : 3.58, "top" : 5.52, "height" : 2.77, "width" : 2.71} -->
-<img src="../../assets/images/people/yoshua-bengio-1.jpeg" alt="XXX image missing" style="width:17.9%;" /><!-- {"left" : 6.77, "top" : 5.52, "height" : 2.77, "width" : 2.37} -->
+<img src="../../assets/images/people/geoffrey-hinton-1.jpg" alt="XXX image missing" style="width:15.6%;" />&nbsp;<!-- {"left" : 2.35, "top" : 6.37, "height" : 4.42, "width" : 3.31} -->
+<img src="../../assets/images/people/yann-lecun-1.jpg" alt="XXX image missing" style="width:20.5%;" />&nbsp;<!-- {"left" : 6.31, "top" : 6.37, "height" : 4.42, "width" : 4.33} -->
+<img src="../../assets/images/people/yoshua-bengio-1.jpeg" alt="XXX image missing" style="width:17.9%;" /><!-- {"left" : 11.41, "top" : 6.37, "height" : 4.42, "width" : 3.79} -->
 
 Notes:
 - https://www.deeplearningitalia.com/godfather-2/
@@ -422,7 +417,7 @@ Notes:
 
 * [Video](https://www.youtube.com/watch?v=056v4OxKwlI)
 
-<img src="../../assets/images/deep-learning/3rd-party/AI-History.png" alt="AI-History.png" style="width:76%;"/><!-- {"left" : 0.87, "top" : 1.64, "height" : 4.26, "width" : 8.5} -->
+<img src="../../assets/images/deep-learning/3rd-party/AI-History.png" alt="AI-History.png" style="width:76%;"/><!-- {"left" : 1.53, "top" : 3.49, "height" : 7.24, "width" : 14.44} -->
 
 
 Notes:

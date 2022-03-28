@@ -9,6 +9,9 @@
 |                     | Dimensionality reduction | - Reducing number of dimensions in data                                                  | - PCA                                                                                    |
 | **Recommendations** |                          | - Recommend movies                                                                       | - Collaborative Filtering                                                                |
 
+<!-- {"left" : 0.49, "top" : 1.79, "height" : 7.75, "width" : 16.53, "columnwidth" : [3.3, 3.7, 5.33, 4.2]} -->
+
+
 Notes:
 
 http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/

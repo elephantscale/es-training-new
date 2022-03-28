@@ -47,7 +47,7 @@ Notes:
 | Actual  A (10) | 10          | 0           |
 | Actual B (20)  | 0           | 20          |
 
-<!-- {"left" : 2.26, "top" : 2, "height" : 1.5, "width" : 12.99} -->
+<!-- {"left" : 2.26, "top" : 2.78, "height" : 1.5, "width" : 12.99} -->
 
 ---
 

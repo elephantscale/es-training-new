@@ -23,7 +23,7 @@ Notes:
 | **Stanford CoreNLP** <br/>- Core java library python wrappers 	| - Fast <br/>- Lot of use in production      	|                                                              	|
 | **SpaCy** <br/>- New                                          	|                                        	|                                                              	|
 | **Gensim** <br/>- Topic modeling                              	|                                        	|                                      |                        	|
-<!-- {"left" : 0.25, "top" : 1.98, "height" : 5.11, "width" : 9.75} -->
+<!-- {"left" : 0.78, "top" : 2.91, "height" : 1, "width" : 15.95} -->
 
 
 Notes: 
@@ -89,7 +89,7 @@ $  python3
 > nltk.data.path.append("/Users/sujee/data/nltk_data")
 
 ```
-<!-- {"left" : 0, "top" : 2.79, "height" : 3.49, "width" : 9.78} -->
+<!-- {"left" : 0.85, "top" : 3.53, "height" : 4.35, "width" : 12.18} -->
 
 
 Notes: 
@@ -125,7 +125,7 @@ print(words_en[:10])
 # ['A', 'a', 'aa', 'aal', 'aalii', 'aam', 'Aani', 'aardvark', 'aardwolf', 'Aaron']
 
 ```
-<!-- {"left" : 0, "top" : 2.46, "height" : 3.37, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.43, "height" : 5.08, "width" : 15.45} -->
 
 Notes: 
 
@@ -133,7 +133,7 @@ Notes:
 
 ---
 
-## NLTK Corpus : State of the Union
+## NLTK Corpus: State of the Union
 
 
  * Each corpus has a 'readme()' function
@@ -165,7 +165,8 @@ gw2006_sentences = state_union.sents('2006-GWBush.txt')
 print(gw2006_sentences[:10])
 
 ```
-<!-- {"left" : 0, "top" : 2.42, "height" : 2.09, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.57, "height" : 3.31, "width" : 16.21} -->
+
 
 Notes: 
 
@@ -173,7 +174,7 @@ Notes:
 
 ---
 
-## NLTK Corpus : Novels
+## NLTK Corpus: Novels
 
 
  * These are public domain novels from Gutenberg project
@@ -197,7 +198,7 @@ print (len(moby_dick_words))
 # 260819
 
 ```
-<!-- {"left" : 0, "top" : 1.7, "height" : 0.71, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.86, "height" : 1.15, "width" : 16.54} -->
 
 
 Notes: 
@@ -238,7 +239,8 @@ print(wordpunct_tokenize(text))
 # ['I', 'went', 'to', 'Starbucks', '.', 'And', 'bought', 'a', 'latte', 'for', '$', '4', '.', '50', '!', 'Yum', ':-)']
 
 ```
-<!-- {"left" : 0, "top" : 4.49, "height" : 2.5, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 5.45, "height" : 3.92, "width" : 16.08} -->
+
 
 Notes: 
 
@@ -379,7 +381,7 @@ $ python -m textblob.download_corpora
 
 ```
 
-<!-- {"left" : 0, "top" : 1.54, "height" : 3.65, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.56, "height" : 4.77, "width" : 13.38} -->
 
 Notes: 
 
@@ -404,7 +406,8 @@ tb = TextBlob(text)
 print(tb)
 
 ```
-<!-- {"left" : 0, "top" : 1.24, "height" : 1, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.59, "height" : 1.45, "width" : 15.95} -->
+
 
 Notes: 
 
@@ -432,7 +435,7 @@ print(tb.sentences)
 
 
 ```
-<!-- {"left" : 0, "top" : 1.24, "height" : 1, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.46, "height" : 1.27, "width" : 16.23} -->
 
 
 Notes: 
@@ -470,7 +473,7 @@ this song is lame ==> Sentiment(polarity=-0.5, subjectivity=0.75)
 Let's go to beach ==> Sentiment(polarity=0.0, subjectivity=0.0)
 
 ```
-<!-- {"left" : 0, "top" : 3.7, "height" : 4.26, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.08, "height" : 5.54, "width" : 13.34} -->
 
 
 Notes: 
@@ -495,7 +498,7 @@ print(tb.word_counts['sunny'])
 2
 
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 1, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.46, "height" : 0.74, "width" : 15.95} -->
 
 
 Notes: 
@@ -519,7 +522,8 @@ print(tb.ngrams(n=2))
 ...]
 
 ```
-<!-- {"left" : 0, "top" : 1.5, "height" : 1, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.46, "height" : 0.71, "width" : 16.35} -->
+
 
 Notes: 
 
@@ -550,7 +554,7 @@ text_jp = u"私はちょうど夕食"
 TextBlob(text_jp).detect_language()
 ja
 ```
-<!-- {"left" : 0, "top" : 2.44, "height" : 3.49, "width" : 6.78} -->
+<!-- {"left" : 0.85, "top" : 3.53, "height" : 4.64, "width" : 9.02} -->
 
 Notes: 
 
@@ -560,7 +564,7 @@ https://developers.google.com/translate/
 
 ---
 
-## Lab:  Text-4:  TextBlob
+## Lab: Text-4: TextBlob
 
 
  *  **Overview:**
@@ -678,7 +682,7 @@ feature vectors
 ...
 
 ```
-<!-- {"left" : 0, "top" : 1.07, "height" : 7.59, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.38, "height" : 8.96, "width" : 12.1} -->
 
 
 Notes: 

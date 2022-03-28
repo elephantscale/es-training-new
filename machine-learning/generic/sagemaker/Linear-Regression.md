@@ -16,7 +16,7 @@
 
   * Data
 
-<img src="../../../assets/images/machine-learning/linear-regression-1b.png" alt="linear-regression-1b.png" width="60%"/><!-- {"left" : 1.79, "top" : 1.73, "height" : 3.46, "width" : 6.67} -->
+<img src="../../../assets/images/machine-learning/linear-regression-1b.png" alt="linear-regression-1b.png" width="60%"/><!-- {"left" : 6.82, "top" : 2.43, "height" : 4.81, "width" : 9.28} -->
 
 * Input variables => continuous output
 
@@ -26,7 +26,7 @@
 
   * Blood pressure as function of age
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Linear-Regression-Example.png" style="width:60%"/><!-- {"left" : 2.08, "top" : 2.47, "height" : 5.56, "width" : 6.1} -->
+<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Linear-Regression-Example.png" style="width:60%"/><!-- {"left" : 4.74, "top" : 3.61, "height" : 7.31, "width" : 8.02} -->
 
 
 Notes:
@@ -36,7 +36,7 @@ Notes:
 
 ## House Price vs Size
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-House-Price.png" style="width:60%"/><!-- {"left" : 2.25, "top" : 1.33, "height" : 4.23, "width" : 5.76} -->
+<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-House-Price.png" style="width:60%"/><!-- {"left" : 4.85, "top" : 2.33, "height" : 5.73, "width" : 7.8} -->
 
 * Not a perfect fit
 * More predictors may be needed
@@ -68,7 +68,7 @@ Notes:
 * Imagine we do not know 15% rule
 * Looks like a linear dependency
 
-<img src="../../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" style="width:60%"/><!-- {"left" : 1.02, "top" : 3.25, "height" : 4.11, "width" : 8.21} -->
+<img src="../../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" style="width:60%"/><!-- {"left" : 2.41, "top" : 4.36, "height" : 6.35, "width" : 12.68} -->
 
 
 
@@ -94,13 +94,13 @@ Notes:
 | 9      | 25      | 3       | 3.75       |
 | 10     | 35      | 4       | 5.25       |
 
-<!-- {"left" : 0.25, "top" : 3.1, "height" : 5.5, "width" : 9.75} -->
+<!-- {"left" : 1.41, "top" : 4.99, "height" : 1, "width" : 14.67} -->
 
 ---
 
 ## We Need a Data Scientist!
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Data-Scientist.png" style="width:70%"/><!-- {"left" : 0.86, "top" : 2.09, "height" : 5.46, "width" : 8.53} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Data-Scientist.png" style="width:70%"/><!-- {"left" : 2.72, "top" : 2.99, "height" : 7.72, "width" : 12.06} -->
 
 
 ---
@@ -110,7 +110,7 @@ Notes:
 * Cost of replacing data with our model
 * Measures the accuracy of our hypothesis (model)
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function.png" style="width:40%"/><!-- {"left" : 2.4, "top" : 2.21, "height" : 1.7, "width" : 5.46} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function.png" style="width:40%"/><!-- {"left" : 1.02, "top" : 3.54, "height" : 1.87, "width" : 5.99} -->
 
 
   * Where
@@ -125,7 +125,7 @@ Notes:
   * **ℎ𝑇(𝑥𝑖)−𝑦𝑖**
   * Square error   
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-Explained.png" style="width:30%"/><!-- {"left" : 3.38, "top" : 2.65, "height" : 1.8, "width" : 3.49} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-Explained.png" style="width:30%"/><!-- {"left" : 0.56, "top" : 4.19, "height" : 2.25, "width" : 4.36} -->
 
   * Special multiplier        
   * **1/2𝑚**
@@ -137,12 +137,12 @@ Notes:
 
 ## Cost Function Breakdown
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-Breakdown-0.png" style="width:40%"/><!-- {"left" : 1.21, "top" : 1.16, "height" : 1.12, "width" : 4.45} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-Breakdown-0.png" style="width:40%"/><!-- {"left" : 6.03, "top" : 2.11, "height" : 1.37, "width" : 5.43} -->
 
 
   * Better, use function hT instead of 𝑦′𝑖
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-Breakdown-0.png" style="width:40%"/><!-- {"left" : 1.21, "top" : 3.24, "height" : 1.12, "width" : 4.45} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-Breakdown-0.png" style="width:40%"/><!-- {"left" : 6.03, "top" : 5.49, "height" : 1.37, "width" : 5.43} -->
 
 
 ---
@@ -154,7 +154,7 @@ Notes:
 
 𝐶(𝑇0, 𝑇1)= 0
 
-<img src="../../../assets/images/machine-learning/linear-regression-1b.png" style="width:70%"/><!-- {"left" : 1.19, "top" : 3.5, "height" : 4.09, "width" : 7.87} -->
+<img src="../../../assets/images/machine-learning/linear-regression-1b.png" style="width:70%"/><!-- {"left" : 3.42, "top" : 4.47, "height" : 5.54, "width" : 10.65} -->
 
 
 ---
@@ -165,7 +165,7 @@ Notes:
   * Each line will have a cost
   * We want to find a line that will minimize the cost
 
-<img src="../../../assets/images/machine-learning/linear-regression-1c.png" style="width:70%"/><!-- {"left" : 1.22, "top" : 3.61, "height" : 4.16, "width" : 7.81} -->
+<img src="../../../assets/images/machine-learning/linear-regression-1c.png" style="width:70%"/> <!-- {"left" : 3.5, "top" : 4.88, "height" : 5.59, "width" : 10.5} -->
 
 
 ---
@@ -180,49 +180,48 @@ Notes:
   * We can calculate the cost for every T0 and T1
   * We want to find the best values of T0 and T1
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Optimization-Problem.png" style="width:60%"/><!-- {"left" : 1.76, "top" : 2.92, "height" : 5.06, "width" : 6.73} -->
+<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Optimization-Problem.png" style="width:60%"/><!-- {"left" : 4.88, "top" : 4.7, "height" : 5.83, "width" : 7.75} -->
 
 
 ---
 
 ## MSE for T0=0.0
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-0.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 2.43, "height" : 4.78, "width" : 8.21} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-0.png" style="width:80%"/><!-- {"left" : 3.22, "top" : 2.97, "height" : 6.44, "width" : 11.06} -->
 
 
 ---
 
 ## MSE for T0=0.1
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-1.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 2.24, "height" : 5.17, "width" : 8.21} -->
-
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-1.png" style="width:80%"/> <!-- {"left" : 3.22, "top" : 2.97, "height" : 6.44, "width" : 11.06} -->
 
 ---
 
 ## MSE for T0=0.5
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-2.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 2.43, "height" : 4.79, "width" : 8.21} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-2.png" style="width:80%"/><!-- {"left" : 2.93, "top" : 2.8, "height" : 6.8, "width" : 11.65} -->
 
 
 ---
 
 ## MSE for T0=1.0
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-3.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 2.41, "height" : 4.82, "width" : 8.21} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-3.png" style="width:80%"/><!-- {"left" : 3.01, "top" : 2.82, "height" : 6.74, "width" : 11.48} -->
 
 
 ---
 
 ## MSE for T0=2.0
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-4.png" style="width:80%"/><!-- {"left" : 1.02, "top" : 2.38, "height" : 4.88, "width" : 8.21} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-MSE-4.png" style="width:80%"/><!-- {"left" : 2.77, "top" : 2.64, "height" : 7.11, "width" : 11.97} -->
 
 
 ---
 
 ## Cost vs T0 and T1
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Cost-Vs-T0-T1.png" style="width:70%"/><!-- {"left" : 1.31, "top" : 1.73, "height" : 6.18, "width" : 7.63} -->
+<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Cost-Vs-T0-T1.png" style="width:70%"/><!-- {"left" : 4.1, "top" : 2.43, "height" : 7.54, "width" : 9.31} -->
 
 
 Notes:
@@ -233,7 +232,7 @@ Notes:
 
 ## Gradient Descent Idea
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Gradiant-Descent.png" style="width:65%"/><!-- {"left" : 1.02, "top" : 1.55, "height" : 6.55, "width" : 8.21} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Gradiant-Descent.png" style="width:65%"/><!-- {"left" : 3.7, "top" : 2.82, "height" : 8.06, "width" : 10.1} -->
 
 
 Notes:
@@ -245,21 +244,21 @@ Notes:
 
 ## Gradient Descent Demo
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Gradiant-Descent-Demo.png" style="width:70%"/><!-- {"left" : 0.98, "top" : 1.71, "height" : 6.22, "width" : 8.29} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Gradiant-Descent-Demo.png" style="width:70%"/><!-- {"left" : 3.54, "top" : 2.82, "height" : 7.82, "width" : 10.42} -->
 
 
 ---
 
 ## Gradient Descent Result
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Gradiant-Descent-Result.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 1.85, "height" : 5.95, "width" : 8.21} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Gradiant-Descent-Result.png" style="width:70%"/><!-- {"left" : 3.56, "top" : 2.82, "height" : 7.53, "width" : 10.39} -->
 
 
 ---
 
 ## Algorithm for Gradient Descent
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Gradiant-Descent-Algorithm.png" style="width:80%"/><!-- {"left" : 0.1, "top" : 1.08, "height" : 5.93, "width" : 9.51} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Gradiant-Descent-Algorithm.png" style="width:80%"/><!-- {"left" : 0.7, "top" : 1.95, "height" : 8.89, "width" : 14.26} -->
 
 
 ---
@@ -280,7 +279,7 @@ Notes:
 
   * 𝐷𝑖𝑟𝑒𝑐𝑡𝑖𝑜𝑛=𝑑𝐶𝑜𝑠𝑡/𝑑𝑇
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Stochastic.png" style="width:45%; float:right;"/><!-- {"left" : 5.49, "top" : 2.73, "height" : 3.61, "width" : 4.59} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Stochastic.png" style="width:45%; float:right;"/><!-- {"left" : 9.28, "top" : 3, "height" : 6.13, "width" : 7.8} -->
 
   * How many calculations is that?
      - Proportionate to m (cost)
@@ -323,9 +322,7 @@ Notes:
 | 327,000          | 3            | 1.5           | 1,750            | 34,465        |
 | 347,000          | 4            | 1.75          | 1,860            | 14,650        |
 
-<!-- {"left" : 0.25, "top" : 1.71, "height" : 4, "width" : 9.75} -->
-
-<br/>
+<!-- {"left" : 0.8, "top" : 2.32, "height" : 1, "width" : 15.95} -->
 
 * Multiple factors are needed to predict house prices
 * This is called multiple linear regression
@@ -337,7 +334,7 @@ Notes:
 ## Our Data is a Matrix
   * What are the m and n for the previous slides?
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Matrix.png" style="width:60%"/><!-- {"left" : 1.45, "top" : 1.97, "height" : 5.69, "width" : 7.35} -->
+<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Matrix.png" style="width:60%"/><!-- {"left" : 4.21, "top" : 3.68, "height" : 7.03, "width" : 9.08} -->
 
 
 ---
@@ -358,19 +355,19 @@ Notes:
   * Cost of replacing data with our model
   * Measures the accuracy of our hypothesis (model)
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-1.png" style="width:50%"/><!-- {"left" : 1.86, "top" : 2.6, "height" : 1.93, "width" : 6.53} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-1.png" style="width:50%"/><!-- {"left" : 4.49, "top" : 4.38, "height" : 2.52, "width" : 8.52} -->
 
 
 ---
 
 ## Cost Function Breakdown
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-1.png" style="width:40%"/><!-- {"left" : 0.63, "top" : 1.12, "height" : 1.74, "width" : 5.89} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-1.png" style="width:40%"/><!-- {"left" : 0.85, "top" : 2.13, "height" : 1.85, "width" : 6.27} -->
 
 
   * Better, use function hT instead of 𝑦′𝑖
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-Breakdown-2.png" style="width:40%"/><!-- {"left" : 0.53, "top" : 3.62, "height" : 1.82, "width" : 6.45} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Cost-Function-Breakdown-2.png" style="width:40%"/><!-- {"left" : 0.85, "top" : 5.48, "height" : 1.92, "width" : 6.81} -->
 
 
   * Where
@@ -393,7 +390,7 @@ Notes:
   * Number of data points: m
   * Data index i = 1 to m
 
-<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Matrix.png" style="width:50%"/><!-- {"left" : 2.02, "top" : 3.37, "height" : 4.82, "width" : 6.21} -->
+<img src="../../../assets/images/machine-learning/Machine-Learning-Linear-Regression-Matrix.png" style="width:50%"/><!-- {"left" : 4.9, "top" : 4.51, "height" : 5.98, "width" : 7.7} -->
 
 
 ---
@@ -412,7 +409,7 @@ Notes:
 * Sufficiently small learning rate gives always improving cost
 * Avoid jumps up and down
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Learning-Rate-0.png" style="width:20%;"/><!-- {"left" : 1.39, "top" : 3.43, "height" : 3.75, "width" : 2.67} --> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Learning-Rate-1.png" style="width:20%"/><!-- {"left" : 6.04, "top" : 3.33, "height" : 3.96, "width" : 2.82} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Learning-Rate-0.png" style="width:20%;"/><!-- {"left" : 3.35, "top" : 5.14, "height" : 5.43, "width" : 3.86} --> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Learning-Rate-1.png" style="width:20%"/><!-- {"left" : 10.07, "top" : 5, "height" : 5.73, "width" : 4.08} -->
 
 
 ---
@@ -445,9 +442,7 @@ Notes:
       - **Ridge Regression (L2 regularization):**
         - Minimizes the squared absolute sum of the coefficients.
 
-<br/>
-
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Regularization.png" style="width:70%"/><!-- {"left" : 0.84, "top" : 7.67, "height" : 0.6, "width" : 8.56} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Regularization.png" style="width:70%"/><!-- {"left" : 3.13, "top" : 10, "height" : 0.79, "width" : 11.25} -->
 
 
 
@@ -462,9 +457,8 @@ Notes:
       - Called **variable/feature selection**.
   * Lambda (ƛ) can be calculated using cross validation.
 
-<br/>
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Lasso.png" style="width:70%"/><!-- {"left" : 0.84, "top" : 5.58, "height" : 0.6, "width" : 8.56} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Lasso.png" style="width:70%"/><!-- {"left" : 3.25, "top" : 7, "height" : 0.77, "width" : 11.01} -->
 
 
 Notes:
@@ -500,7 +494,7 @@ Linear regression will make more reliable predictions if your input and output v
 
 ## Preparing Data for Linear Regression
 
-<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Preparing.png" style="width:65%"/><!-- {"left" : 1.02, "top" : 1.83, "height" : 5.42, "width" : 8.21} -->
+<img src="../../../assets/images/machine-learning/3rd-party/Machine-Learning-Linear-Regression-Preparing.png" style="width:65%"/><!-- {"left" : 2.96, "top" : 2.37, "height" : 7.64, "width" : 11.58} -->
 
 
 ---

@@ -35,7 +35,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 | 3                  | 1                   | 1999           | 499                                                  |
 | 3                  | 2.4                 | 2199           | 549                                                  |
 
-<!-- {"left" : 0.59, "top" : 6.28, "height" : 4.06, "width" : 16.33} -->
+<!-- {"left" : 0.59, "top" : 6.28, "height" : 1, "width" : 16.33} -->
 
 Notes:
 
@@ -50,7 +50,7 @@ Notes:
 | Polynomial Regression | If power of independent variable is more than 1. <br/>  Y = a * X + b * X<sup>2</sup>   <br/>- Can be prone to overfitting  <br/>- Results can be hard to explain      |                                        |
 | Stepwise Regression   | -When we have multiple independent variables, automatically selects significant variables  <br/>- No human intervention  <br/>- AIC                                    | - House price predictor                |
 
-<!-- {"left" : 0.41, "top" : 1.9, "height" : 7.18, "width" : 16.67} -->
+<!-- {"left" : 0.41, "top" : 1.9, "height" : 1, "width" : 16.67} -->
 
 
 Notes:
@@ -70,6 +70,6 @@ https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/
 | Lasso Regression      | - Uses L1 regularization                                                             |          |
 | ElasticNet Regression | - Hybrid of Lasso and Ridge regressions                                              |          |
 
-<!-- {"left" : 0.78, "top" : 2.6, "height" : 3.63, "width" : 15.95} -->
+<!-- {"left" : 0.78, "top" : 2.2, "height" : 1, "width" : 15.95} -->
 
 Notes:

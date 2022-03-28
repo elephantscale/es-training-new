@@ -3,7 +3,7 @@
 ## Data Science
 
 
-<img src="../../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:20%;float:right;"/><!-- {"left" : 7.37, "top" : 1.14, "height" : 2.44, "width" : 2.6} -->
+<img src="../../assets/images/deep-learning/Data-Science.png" alt="Data-Science.png" style="width:20%;float:right;"/><!-- {"left" : 11.61, "top" : 1.4, "height" : 5.26, "width" : 5.61} -->
 
  * **Data Science:** Deriving intelligence from data
 
@@ -11,7 +11,6 @@
 
  * A machine learning algorithm can learn from the past data and predict house prices for new houses coming on market
 
-&nbsp;
 
 | Bedrooms (input 0) | Bathrooms (input 1) | Size (input 2) | Sale Price (in thousands) (we are trying to predict) |
 |--------------------|---------------------|----------------|------------------------------------------------------|
@@ -21,7 +20,7 @@
 | 3                  | 1                   | 1999           | 499                                                  |
 | 3                  | 2.4                 | 2199           | 549                                                  |
 
-<!-- {"left" : 0.25, "top" : 5.6, "height" : 3.19, "width" : 9.75, "columnwidth" : [1.61, 1.81, 1.33, 5]} -->
+<!-- {"left" : 0.78, "top" : 7.76, "height" : 3.54, "width" : 15.95, "columnwidth" : [2.63, 2.96, 2.18, 8.18]} -->
 
 
 Notes:
@@ -41,7 +40,7 @@ Notes:
  * Start with 80% training, 20% test
     - Tweak the dials to increase or decrease the proportion
 
-<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="max-width:59%;"><!-- {"left" : 2.69, "top" : 5.16, "height" : 2.14, "width" : 4.87} -->
+<img src="../../assets/images/machine-learning/Model-Validation-1.png" style="max-width:59%;"><!-- {"left" : 3.94, "top" : 6.93, "height" : 4.23, "width" : 9.62} -->
 
 
 Notes:
@@ -77,7 +76,7 @@ Notes:
 | Classification - produces 'discrete' or 'qualitative' 	| Spam or not                                 	|**Features**<br/>(email text, origin IP address)        	|**Label**<br/>(Spam / Not-Spam)                  |
 | Regression - produces 'continuous' or 'quantitative'  	| Weather forecasting, predicting temperature 	|**Variables**<br/>(current temperature, pressure ..etc) 	|**Target**<br/>(predicted temperature -50.5 ' F) 	|
 
-<!-- {"left" : 0.25, "top" : 1.55, "height" : 2.75, "width" : 9.75} -->
+<!-- {"left" : 0.68, "top" : 2.75, "height" : 1, "width" : 16.14} -->
 
 
 Notes:
@@ -134,8 +133,8 @@ Use https://www.epochconverter.com/ to easily convert unix time and human readab
 
  * Self driving cars
 
-<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%;"><!-- {"left" : 0.64, "top" : 4.31, "height" : 2.88, "width" : 4.33} -->
- &nbsp;&nbsp;&nbsp;&nbsp; <img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%;"><!-- {"left" : 5.3, "top" : 4.31, "height" : 2.88, "width" : 4.31} -->
+<img src="../../assets/images/machine-learning/3rd-party/Driver_free_car.png" style="width:40%;"><!-- {"left" : 1.14, "top" : 5.14, "height" : 4.89, "width" : 7.35} -->
+ &nbsp;&nbsp;&nbsp;&nbsp; <img src="../../assets/images/machine-learning/3rd-party/Face_detection.png" style="width:40%;"><!-- {"left" : 9.05, "top" : 5.14, "height" : 4.89, "width" : 7.32} -->
 
 
 Notes:
@@ -144,7 +143,7 @@ Notes:
 ---
 ## Incredible Growth of AI Power
 
-<img src="../../assets/images/deep-learning/3rd-party/Incredible-Growth-of-AI-Power.png" alt="Incredible-Growth-of-AI-Power.png" style="width:60%;float:right;"/><!-- {"left" : 5.38, "top" : 1.21, "height" : 5.73, "width" : 4.77} -->
+<img src="../../assets/images/deep-learning/3rd-party/Incredible-Growth-of-AI-Power.png" alt="Incredible-Growth-of-AI-Power.png" style="width:60%;float:right;"/><!-- {"left" : 10.56, "top" : 2.15, "height" : 8.1, "width" : 6.74} -->
 
  * Since 2012, the amount of compute used in the largest AI training runs has been increasing exponentially with a 3.5 month-doubling time
 
@@ -157,7 +156,7 @@ Notes:
 ---
 ## 2012 - AI Recognizes Cats in YouTube Videos
 
-<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style=" width:25%;float:right;"/><!-- {"left" : 6.51, "top" : 1.3, "height" : 2.98, "width" : 3.45} -->
+<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style=" width:25%;float:right;"/><!-- {"left" : 13.11, "top" : 2.21, "height" : 3.5, "width" : 4.05} -->
 
 - 2012 Google created a neural network that can 'identify' cats from YouTube videos
 
@@ -169,7 +168,7 @@ Notes:
 ---
 ## 2012 - AI Recognizes Cats in YouTube Videos
 
-<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style=" width:25%;float:right;"/><!-- {"left" : 6.51, "top" : 1.3, "height" : 2.98, "width" : 3.45} -->
+<img src="../../assets/images/deep-learning/3rd-party/google-cat-detection.jpeg"  style=" width:25%;float:right;"/><!-- {"left" : 13.11, "top" : 2.21, "height" : 3.5, "width" : 4.05} -->
 
 - They built a huge neural network with **1 Billion+** connections and trained it on **16,000 CPU cores (distributed)**
 
@@ -196,7 +195,7 @@ Notes:
 
  * The definitions are not clear-cut,  some people use these interchangeably
 
-<img src="../../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist-2.png" style="width:49%;"/><!-- {"left" : 1.02, "top" : 4.17, "height" : 3.94, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/3rd-party/Data-Scientist-01.png" alt="Data-Scientist-2.png" style="width:49%;"/><!-- {"left" : 3.26, "top" : 5.55, "height" : 5.27, "width" : 10.97} -->
 
 
 ---
@@ -272,7 +271,8 @@ Multiple R-squared:  0.4835,	Adjusted R-squared:  0.4834
 F-statistic:  6332 on 4 and 27058 DF,  p-value: < 0.00000000000000022
 
 ```
-<!-- {"left" : 0, "top" : 1.19, "height" : 3.69, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.26, "height" : 9.19, "width" : 14.54} -->
+
 
 
 Notes:
@@ -304,8 +304,9 @@ SqFtLot           -0.07457      0.05472  -1.363                0.173
 
 ---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
-<!-- {"left" : 0, "top" : 4.1, "height" : 2.55, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 1.66, "height" : 4.38, "width" : 11.33} -->
 
+<br/>
 
  * Adding one extra 'sqftTotLiving' space increases the house price by $277.85
 
@@ -341,7 +342,9 @@ SqFtLot           -0.07457      0.05472  -1.363                0.173
 ---Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 ```
-<!-- {"left" : 0, "top" : 4.1, "height" : 2.55, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 1.84, "height" : 4.94, "width" : 12.76} -->
+
+<br/>
 
   * Question for class:
      - Interpret parameters for 'Bedrooms'
@@ -371,7 +374,8 @@ step <- stepAIC(house.lm.full, direction="both")
 
 step
 ```
-<!-- {"left" : 0, "top" : 1.27, "height" : 2.5, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.26, "height" : 4.3, "width" : 16.04} -->
+
 
 Notes:
 
@@ -389,7 +393,10 @@ house.lm.full <- lm(SalePrice ~ SqFtTotLiving + SqFtLot + Bathrooms + Bedrooms +
                                 YrBuilt + YrRenovated + NewConstruction,
                     data=house.prices, na.action=na.omit)
 ```
-<!-- {"left" : 0, "top" : 4.03, "height" : 1.01, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 1.74, "width" : 16.28} -->
+
+<br/>
+
 
 ```R
 
@@ -407,7 +414,10 @@ Coefficients:
                   77562.844                      8.153                  -3286.098
        NewConstructionTRUE                   7886.546  
 ```
-<!-- {"left" : 0, "top" : 5.53s, "height" : 2.66, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.87, "height" : 4.57, "width" : 16.03} -->
+
+
+<br/>
 
  *  **stepAIC**  has come up with a new formula
 
@@ -417,7 +427,6 @@ Notes:
 
 
 
----
 
 ---
 
@@ -427,7 +436,6 @@ Notes:
 
 
 ## Step-1. Normalization
-
 
 
  * Normalized vector[ (30 - 22) / 48, (45 - 22) / 48, .... (22 - 22) / 48 ] [0.17, 0.48,  0.58, 1.00, 0.79, 0.06, 0.00]
@@ -461,7 +469,7 @@ Notes:
  * This might allow our models to make inferences
     - e.g., Orange is close to red on the spectrum, but more distant from violet.
 
-<img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:50%;"/><!-- {"left" : 1.83, "top" : 5.77, "height" : 2.79, "width" : 6.59} -->
+<img src="../../assets/images/machine-learning/3rd-party/Quantization.png" alt="Quantization" style="width:50%;"/><!-- {"left" : 4.13, "top" : 7.28, "height" : 3.91, "width" : 9.24} -->
 
 
 
@@ -476,7 +484,6 @@ Image credit : https://study.com/academy/lesson/the-nature-of-light-origin-spect
 
 ## Scaling Example
 
-<br/>
 
 ```python
 import pandas as pd
@@ -488,11 +495,14 @@ data_scaled_z =  (data - data.mean()) / data.std()
 ## min-max scaling
 data_scaled_mm = (data - data.min()) / (data.max() - data.min())
 ```
-<!-- {"left" : 0, "top" : 1.12, "height" : 2.03, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.07, "height" : 3.41, "width" : 15.81} -->
+
+
+<br/>
 
 - Here our original data (left) , z-scaling (middle) is on a uniform distribution;   and min-max scale (right) is between 0 to 1.0
 
-<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.14, "top" : 5.25, "height" : 3.46, "width" : 3.42} --> <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 6.49, "top" : 5.38, "height" : 3.46, "width" : 3.62} -->
+<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 2.4, "top" : 6.99, "height" : 4.52, "width" : 3.69} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 6, "top" : 6.91, "height" : 4.52, "width" : 4.47} --> <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 10.37, "top" : 7.08, "height" : 4.52, "width" : 4.73} -->
 
 ---
 
@@ -513,11 +523,13 @@ data['age_z'] = (data['age'] - data['age'].mean()) / data['age'].std()
 data['income_z'] = (data['income'] - data['income'].mean()) / data['income'].std()
 data
 ```
-<!-- {"left" : 0, "top" : 1.28, "height" : 2.22, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.26, "height" : 3.85, "width" : 16.19} -->
 
 
-<img src="../../assets/images/machine-learning/scaling-1.png" style="width:35%;float:left;"/><!-- {"left" : 0.17, "top" : 4.82, "height" : 1.97, "width" : 4.64} --><img src="../../assets/images/machine-learning/scaling-2.png" style="width:50%;float:right;"/><!-- {"left" : 4.81, "top" : 4.92, "height" : 2.1, "width" : 5.3} -->
+<img src="../../assets/images/machine-learning/scaling-1.png" style="width:35%;float:left;"/><!-- {"left" : 1.51, "top" : 7.37, "height" : 2.87, "width" : 6.76} --><img src="../../assets/images/machine-learning/scaling-2.png" style="width:50%;float:right;"/><!-- {"left" : 8.27, "top" : 7.51, "height" : 3.06, "width" : 7.72} -->
+
 
 Notes:
 
----
+
+

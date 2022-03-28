@@ -31,7 +31,7 @@ Notes:
 
 ## Supervised Machine Learning
 
-<img src="../../assets/images/machine-learning/3rd-party/Supervised.png" style="width:39%;float:right;" /><!-- {"left" : 5.51, "top" : 1.18, "height" : 2.96, "width" : 4.45} -->
+<img src="../../assets/images/machine-learning/3rd-party/Supervised.png" style="width:39%;float:right;" /><!-- {"left" : 9.54, "top" : 1.89, "height" : 4.98, "width" : 7.49} -->
 
  * Algorithm learns from (training) data
 
@@ -44,7 +44,7 @@ Notes:
 | Classification | Categorize things into groups                                          | -Spam classification <br/>-Fraud / no fraud      |
 | Regression     | Dealing with numbers and calculate the probability something happening | -Predict house prices <br/>-Predict stock market |
 
-<!-- {"left" : 0.25, "top" : 5.1, "height" : 2.17, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
+<!-- {"left" : 1.48, "top" : 7.56, "height" :1, "width" : 14.54} -->
 
 Notes:
 
@@ -64,7 +64,7 @@ Image credit (Creative Commons): Pexels.com
 
  * If performance is statisfactory, predict on new data (unseen)
 
-<img src="../../assets/images/machine-learning/3rd-party/stock-market-1.png" style="width:59%;"><!-- {"left" : 1.02, "top" : 4.12, "height" : 3.44, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/stock-market-1.png" style="width:59%;"><!-- {"left" : 2.56, "top" : 5.61, "height" : 5.19, "width" : 12.37} -->
 
 
 Notes:
@@ -87,7 +87,7 @@ Notes:
 
  * In the example below, we input mixed data to the model, and the model classifies them into A or B
 
-<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 1.21, "top" : 5.37, "height" : 2.88, "width" : 7.83} -->
+<img src="../../assets/images/machine-learning/Classification-01.png" style="max-width:59%;"><!-- {"left" : 2.81, "top" : 7.19, "height" : 4.37, "width" : 11.87} -->
 
 
 
@@ -128,7 +128,7 @@ Notes:
 
 ## Un Supervised Machine Learning
 
-<img src="../../assets/images/machine-learning/3rd-party/Un-Supervised.png" style="width:29%;float:right;" /><!-- {"left" : 5.1, "top" : 1.23, "height" : 2.75, "width" : 4.87} -->
+<img src="../../assets/images/machine-learning/3rd-party/Un-Supervised.png" style="width:29%;float:right;" /><!-- {"left" : 9.82, "top" : 1.89, "height" : 4.06, "width" : 7.2} -->
 
 
  * No training needed
@@ -144,7 +144,7 @@ Notes:
 | Association              | Find similar patterns                   | -people who buy A also buy B                                      |
 | Dimensionality Reduction | Reduces number of features              | -Reducing 999s of variables into manageable size                 |
 
-<!-- {"left" : 0.25, "top" : 5.12, "height" : 3.13, "width" : 9.75, "columnwidth" : [3.11, 2.97, 3.67]} -->
+<!-- {"left" : 0.42, "top" : 7.23, "height" : 1, "width" : 16.72, "columnwidth" : [5.33, 5.09, 6.29]} -->
 
 Notes:
 
@@ -160,7 +160,7 @@ Notes:
 
 * In real world applications, we could be clustering by many dimensions (10s or 100s)
 
-<img src="../../assets/images/machine-learning/clustering-04.png" style="width:60%;"><!-- {"left" : 5.41, "top" : 1.5, "height" : 1.79, "width" : 4.72} -->
+<img src="../../assets/images/machine-learning/clustering-04.png" style="width:60%;"><!-- {"left" : 3.46, "top" : 6.49, "height" : 4.02, "width" : 10.59} -->
 
 
 ---
@@ -168,8 +168,7 @@ Notes:
 
 ## Clustering Use Cases: Fraud / Anomaly Detection
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png" style="width:40%;float:right;"><!-- {"left" : 2.34, "top" : 3.62, "height" : 4.52, "width" : 5.57} -->
+<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png" style="width:40%;float:right;"><!-- {"left" : 11.4, "top" : 1.89, "height" : 4.52, "width" : 5.57} -->
 
  * Anomaly detection is used to:
 
@@ -222,10 +221,10 @@ Notes:
 
 ## Unsupervised Example: Google News
 
+<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="width:80%;float:right;">><!-- {"left" : 10.43, "top" : 2.77, "height" : 6.59, "width" : 6.56} -->
 
  * Google News algorithm automatically groups **related news stories**  into sections
 
-<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:89%;"><!-- {"left" : 2.13, "top" : 2.41, "height" : 6.02, "width" : 5.99} -->
 
 
 
@@ -236,7 +235,7 @@ Notes:
 
 ## Clustering Use Case: Customer Purchases @ Walmart
 
-<img src="../../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:40%;float:right;"/><!-- {"left" : 5.38, "top" : 1.11, "height" : 2.78, "width" : 4.62} -->
+<img src="../../assets/images/deep-learning/3rd-party/Walmart-01.png" alt="Walmart-01.png" style="width:40%;float:right;"/><!-- {"left" : 10.66, "top" : 2.31, "height" : 3.79, "width" : 6.3} -->
 
  * Here is how Walmart is segmenting customer purchases ([link](https://www.kaggle.com/c/walmart-recruiting-trip-type-classification))
      * Pharmacy Runs
@@ -263,7 +262,7 @@ Notes:
 
  * But by grouping data points together, the algorithm can 'infer' information, even when labels are missing
 
-<img src="../../assets/images/machine-learning/Semi-Supervised.png" style="max-width:49%;"><!-- {"left" : 1.56, "top" : 2.97, "height" : 5.25, "width" : 7.12} -->
+<img src="../../assets/images/machine-learning/Semi-Supervised.png" style="max-width:49%;"><!-- {"left" : 4.29, "top" : 4.63, "height" : 6.57, "width" : 8.91} -->
 
 
 Notes:
@@ -272,7 +271,7 @@ Notes:
 
 ## Semi-Supervised Learning Video
 
-<img src="../../assets/images/deep-learning/3rd-party/Semi-Supervised-Learning-Video.png" alt="Semi-Supervised-Learning-Video.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 1.52, "height" : 4.59, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/3rd-party/Semi-Supervised-Learning-Video.png" alt="Semi-Supervised-Learning-Video.png" style="width:60%;"/><!-- {"left" : 3.28, "top" : 1.89, "height" : 6.12, "width" : 10.95} -->
 
 
 [Link](https://www.youtube.com/watch?v=b-yhKUINb7o)
@@ -308,7 +307,7 @@ Notes:
 
  * Here the robot gets rewarded for 'food' and penalized for walking into fire
 
-<img src="../../assets/images/machine-learning/Reinforcement-Learning.png" style="max-width:79%;"><!-- {"left" : 1.05, "top" : 2.66, "height" : 4.71, "width" : 8.15} -->
+<img src="../../assets/images/machine-learning/Reinforcement-Learning.png" style="max-width:79%;"><!-- {"left" : 3.13, "top" : 4.19, "height" : 6.49, "width" : 11.23} -->
 
 
 Notes:
@@ -320,7 +319,7 @@ Notes:
 ## Reinforcement Learning Demo: Atari Breakout
 
 
-<img src="../../assets/images/deep-learning/3rd-party/Atari-Breakout.png" style="width:29%;"><!-- {"left" : 2.64, "top" : 1.24, "height" : 5.66, "width" : 4.96} -->
+<img src="../../assets/images/deep-learning/3rd-party/Atari-Breakout.png" style="width:29%;"><!-- {"left" : 5.55, "top" : 1.89, "height" : 7.3, "width" : 6.4} -->
 
 
 
@@ -336,7 +335,7 @@ Notes:
 ---
 
 ## Reinforcement Learning Demo: AI Learning to Play 'Hide and Seek'
-<img src="../../assets/images/AI/3rd-party/openai-hide-and-seek-1.jpg" style="width:70%;float:right;"/><!-- {"left" : 3.5, "top" : 1.06, "height" : 3.72, "width" : 6.61} -->
+<img src="../../assets/images/AI/3rd-party/openai-hide-and-seek-1.jpg" style="width:70%;float:right;"/><!-- {"left" : 4.25, "top" : 1.89, "height" : 5.07, "width" : 9.01} -->
 
 
 * [Open AI blog](https://openai.com/blog/emergent-tool-use/)
@@ -348,7 +347,7 @@ Notes:
 ## Reinforcement Learning Demo: Open AI Bots Playing Dota
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" style="width:69%;"><!-- {"left" : 1.05, "top" : 1.27, "height" : 4.59, "width" : 8.15} -->
+<img src="../../assets/images/machine-learning/3rd-party/Open-AI-Bots-Playing-Dota.png" style="width:69%;"><!-- {"left" : 3.54, "top" : 1.89, "height" : 5.87, "width" : 10.42} -->
 
 [Link](https://www.youtube.com/watch?v=eHipy_j29Xw)
 
@@ -394,7 +393,7 @@ Notes:
 ## ML Algorithm Cheat Sheet
 
 
-<img src="../../assets/images/machine-learning/cheat-sheet.png" style="width:79%;"><!-- {"left" : 0.29, "top" : 1.62, "height" : 5.82, "width" : 9.67} -->
+<img src="../../assets/images/machine-learning/cheat-sheet.png" style="width:79%;"><!-- {"left" : 1.24, "top" : 2.34, "height" : 9.03, "width" : 15.01} -->
 
 
 Notes:

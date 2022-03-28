@@ -5,7 +5,7 @@
 
 ## Lesson Objectives
 
-<img src="../../assets/images/generic/3rd-party/terminator-2.png" style="width:40%;float:right;"><!-- {"left" : 5.3, "top" : 1.23, "height" : 3.54, "width" : 4.72} -->
+<img src="../../assets/images/generic/3rd-party/terminator-2.png" style="width:40%;float:right;"><!-- {"left" : 9.35, "top" : 2.29, "height" : 5.79, "width" : 7.71} -->
 
 
  * Learn Machine Learning use cases
@@ -34,9 +34,9 @@ Notes:
 ---
 ## Demo - Gmail AI Helper
 
-<img src="../../assets/images/deep-learning/3rd-party/Demo-1.png" alt="Demo-1.png" style="width:50%;"/><!-- {"left" : 0.1, "top" : 1.92, "height" : 2.82, "width" : 10.06} -->
+<img src="../../assets/images/deep-learning/3rd-party/Demo-1.png" alt="Demo-1.png" style="width:50%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/Demo-2.png" alt="Demo-2.png" style="width:50%;"/><!-- {"left" : 1.35, "top" : 4.48, "height" : 3.24, "width" : 7.56} -->
+<img src="../../assets/images/deep-learning/3rd-party/Demo-2.png" alt="Demo-2.png" style="width:50%;"/><!-- {"left" : 3.18, "top" : 6.35, "height" : 4.77, "width" : 11.14} -->
 
 
 
@@ -48,7 +48,7 @@ Notes:
 
 ## Why Machine Learning Matters?
 
-<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/><!-- {"left" : 0.88, "top" : 1.34, "height" : 4.42, "width" : 8.49} -->
+<img src="../../assets/images/deep-learning/3rd-party/video-ml-basics-google.png" alt="video-ml-basics-google.png" style="width:60%;"/><!-- {"left" : 2.94, "top" : 2.24, "height" : 6.05, "width" : 11.62} -->
 
 
 [Link](https://www.youtube.com/watch?v=HcqpanDadyQ)
@@ -64,7 +64,7 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
  * **Question for the class:**  
    - Where do you think AI is in this cycle? :-)
 
-<img src="../../assets/images/deep-learning/Gartner-Hype-Cycle.png" alt="Gartner-Hype-Cycle.png" style="background:white;width:55%;"/><!-- {"left" : 1.23, "top" : 2.93, "height" : 5.06, "width" : 7.8} -->
+<img src="../../assets/images/deep-learning/Gartner-Hype-Cycle.png" alt="Gartner-Hype-Cycle.png" style="background:white;width:55%;"/><!-- {"left" : 3.5, "top" : 4.2, "height" : 6.82, "width" : 10.51} -->
 
 
 Notes:
@@ -74,7 +74,7 @@ Notes:
 
 ## What is Machine Learning
 
-<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 7.41, "top" : 1.1, "height" : 3.71, "width" : 2.63} -->
+<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 13.28, "top" : 2.27, "height" : 5.32, "width" : 3.77} -->
 
 * **"The field of study that gives computers the ability to learn without being explicitly programmed."**  
  -- Arthur Samuel
@@ -114,7 +114,7 @@ else if ( email.text.contains ("free loans", "cheap degrees"))
 }
 
 ```
-<!-- {"left" : 0, "top" : 2.81, "height" : 1.98, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.22, "height" : 2.84, "width" : 14.72} -->
 
 Notes:
 
@@ -132,7 +132,7 @@ Notes:
 
  * Then algorithm predicts spam/no-spam on new email
 
-<img src="../../assets/images/machine-learning/rules-vs-AI-1.png" alt="AI-Approach.png" style="width:55%;"/><!-- {"left" : 0.96, "top" : 3.83, "height" : 4.16, "width" : 8.33} -->
+<img src="../../assets/images/machine-learning/rules-vs-AI-1.png" alt="AI-Approach.png" style="width:55%;"/><!-- {"left" : 2.93, "top" : 5.19, "height" : 5.82, "width" : 11.65} -->
 
 
 Notes:
@@ -149,7 +149,7 @@ Notes:
  * AI can learn from data
      - It gets better every day with more data it sees
 
-<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" alt="Rule-Based-Systems.png" style="width:55%;"/><!-- {"left" : 0.78, "top" : 4.13, "height" : 3.28, "width" : 8.7} -->
+<img src="../../assets/images/machine-learning/ML-vs-Rule-Based-Systems-2.png" alt="Rule-Based-Systems.png" style="width:55%;"/><!-- {"left" : 2.19, "top" : 5.89, "height" : 4.94, "width" : 13.11} -->
 
 
 Notes:
@@ -164,7 +164,7 @@ Notes:
 | Algorithmic trading | Patient care              | Customer retentions | Fully automated assemblies | Facial recognition       |
 | Credit Approvals    | Treatment recommendations |                     |                            |                          &nbsp;|
 
-<!-- {"left" : 0.1, "top" : 1.17, "height" : 3.08, "width" : 10.05, "columnwidth" : [1.88, 2.14, 2.23, 1.94, 1.86]} -->
+<!-- {"left" : 0.31, "top" : 3.01, "height" : 1, "width" : 16.93, "columnwidth" : [3.17, 3.61, 3.19, 3.33, 3.64]} -->
 
 ---
 
@@ -198,7 +198,7 @@ Notes:
 | Distributed | - H20 <br/>- Spark                      | - H20 <br/>- Spark                       |
 | Cloud       | - AWS <br/>- Azure  <br/>- Google Cloud | - AWS  <br/>- Azure  <br/>- Google Cloud |
 
-<!-- {"left" : 0.25, "top" : 1.25, "height" : 4.53, "width" : 9.75, "columnwidth" : [3.25, 3.25, 3.25]} -->
+<!-- {"left" : 0.39, "top" : 2.54, "height" : 1, "width" : 16.72, "columnwidth" : [5.57, 5.57, 5.57]} -->
 
 
 Notes:
@@ -218,7 +218,7 @@ Notes:
  * Now Big Data tools make it possible to run machine learning algorithms at massive scale-distributed across a cluster
 
 
-<img src="../../assets/images/deep-learning/DL-cluster.png" style="width:70%;">
+<img src="../../assets/images/deep-learning/DL-cluster.png" style="width:70%;"><!-- {"left" : 2.67, "top" : 5.81, "height" : 5.16, "width" : 12.15} -->
 
 Notes:
 
@@ -236,7 +236,7 @@ Notes:
 | CPU bound                                      | IO bound (disk / network).                   |
 | GPU (Graphical Processing Unit) seldom engaged | GPUs are utilized increasingly               |            |
 
-<!-- {"left" : 0.25, "top" : 1.48, "height" : 3.88, "width" : 9.75} -->
+<!-- {"left" : 1.69, "top" : 2.85, "height" : 1, "width" : 14.11} -->
 
 
 
@@ -249,7 +249,7 @@ Notes:
 
 ## Tools for Scalable Machine Learning
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;"><!-- {"left" : 7.64, "top" : 1.04, "height" : 1.3, "width" : 2.44} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;"><!-- {"left" : 12.75, "top" : 1.89, "height" : 2.3, "width" : 4.31} -->
 
  *  **Spark ML**
      - Runs on top of popular Spark framework
@@ -265,7 +265,7 @@ Notes:
      - [Amazon Machine Learning](https://aws.amazon.com/machine-learning/), Azure Machine Learning,  Google ML
 
 
- <img src="../../assets/images/logos/aws-logo-2.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 0.18, "top" : 7.52, "height" : 0.86, "width" : 3.74} --> <img src="../../assets/images/logos/azure-logo-1.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 4.03, "top" : 7.55, "height" : 0.8, "width" : 2.77} --> <img src="../../assets/images/logos/google-cloud-logo-2.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 7.6, "height" : 0.71, "width" : 3.15} -->
+ <img src="../../assets/images/logos/aws-logo-2.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 1.68, "top" : 9.6, "height" : 1.23, "width" : 5.35} --> <img src="../../assets/images/logos/azure-logo-1.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 7.18, "top" : 9.64, "height" : 1.14, "width" : 3.96} --> <img src="../../assets/images/logos/google-cloud-logo-2.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 11.32, "top" : 9.71, "height" : 1.01, "width" : 4.5} -->
 
 
 
@@ -282,7 +282,7 @@ Notes:
 
 ## Tools for Scalable Deep Learning
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 7.58, "top" : 1.07, "height" : 2.02, "width" : 2.37} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 13.87, "top" : 1.89, "height" : 2.9, "width" : 3.4} -->
 
  *  **`TensorFlow`**
      - Based on "data flow graphs"
@@ -292,7 +292,7 @@ Notes:
 
 <br  clear="all"/>
 
-<img src="../../assets/images/logos/bigdl-logo-1.png" style="width:25%;float:right;"/><!-- {"left" : 7.52, "top" : 4.71, "height" : 1.14, "width" : 2.48} -->
+<img src="../../assets/images/logos/bigdl-logo-1.png" style="width:25%;float:right;"/><!-- {"left" : 13.79, "top" : 6.37, "height" : 1.63, "width" : 3.55} -->
 
  *  **`Intel BigDL`**  
 
@@ -322,14 +322,14 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.68, "top" : 1.89, "height" : 2.88, "width" : 3.89} -->
 
 
 - Let's go over what we have covered so far
 
 - Any questions?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.45, "top" : 4.71, "height" : 5.46, "width" : 8.18} -->
 
 ---
 
