@@ -32,7 +32,7 @@ Regressions-Generic.md
 Regression-in-Spark.md
 
 ## classifications
-../generic/Classifications-Intro.md
+../generic/Classification-Intro.md
 Classification-Logistic-Spark.md
 Classification-SVM-Spark.md
 Classification-Naive-Bayes-Spark.md
