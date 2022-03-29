@@ -32,8 +32,16 @@ About-Machine-Learning-With-Python-Class-3-days.md
 ../../python/slides/PYTHON-Sklearn2.md
 
 ## Algorithms
+### Regressions
 Regressions-Python.md
-Classifications-Python.md
+
+### Classifications
+../generic/Classification-Intro.md
+./Classification-Logistic-Python.md
+./Classification-SVM-Python.md
+./Classification-Naive-Bayes-Python.md
+
+
 Decision-Trees-Python.md
 Unsupervised-Python.md
 
