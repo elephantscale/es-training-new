@@ -39,7 +39,12 @@ Dataproc.md
 ../../machine-learning/spark/Spark-ML-Overview.md
 ../../machine-learning/generic/ML-Concepts-All.md
 ../../machine-learning/spark/Regressions-Spark.md
-../../machine-learning/spark/Classification-Spark.md
+
+../generic/Classifications-Intro.md
+../../machine-learning/spark/Classification-Logistic-Spark.md
+../../machine-learning/spark/Classification-SVM-Spark.md
+../../machine-learning/spark/Classification-Naive-Bayes-Spark.md
+
 ../../machine-learning/spark/Unsupervised-Spark.md
 
 ## Tensorflow

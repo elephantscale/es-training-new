@@ -370,14 +370,15 @@ Notes:
     - handles noisy and missing data well
     - can learn with few samples
     - can also scale to large datasets
----
-
-## Naïve Bayes:Strengths, Weaknesses, and Parameters
 
 * **Weaknesses**
     - Assumes all features are independent
     - and equally important
     - Not ideal for datasets with many numerical features
+
+---
+
+## Naïve Bayes:Strengths, Weaknesses, and Parameters
 
 * **Parameters**
     - **Type of algorithm**
@@ -388,7 +389,6 @@ Notes:
 Notes:
 
 ---
-
 
 ## Further Reading
 
