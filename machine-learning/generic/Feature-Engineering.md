@@ -36,7 +36,7 @@ Notes:
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
 
-<!-- {"left" : 0.25, "top" : 4.01, "height" : 3.19, "width" : 9.75, "columnwidth" : [1.83, 1.94, 1.74, 4.25]} -->
+<!-- {"left" : 0.25, "top" : 6.18, "height" : 1, "width" : 17, "columnwidth" : [3.19, 3.38, 3.03, 7.4]} -->
 
 
 ---
@@ -65,7 +65,7 @@ Notes:
 
 ## Class Quiz: Feature Selection
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 6.24, "top" : 1.14, "height" : 2.59, "width" : 3.89} -->
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 10.19, "top" : 1.78, "height" : 4.8, "width" : 7.2} -->
 
 * Assume we are evaluating a credit card application
 * **Q: What features we might consider?**
@@ -76,7 +76,7 @@ Notes:
 |-------------|------|---------|---------------------|-----|--------|----------------|-------------|
 | 1           | Joe  | 11111   | Yes                 | 24  | 45,000 | Single         | No          |
 | 2           | Jane | 22222   | No                  | 34  | 84,000 | Married        | Yes         |
-<!-- {"left" : 0.13, "top" : 4.72, "height" : 2.58, "width" : 10, "columnwidth" : [1.25, 1.01, 1.32, 1.61, 1.15, 1.23, 1.21, 1.21]} -->
+<!-- {"left" : 0.29, "top" : 8.06, "height" : 1, "width" : 16.92, "columnwidth" : [2.39, 1.44, 2.24, 2.73, 1.33, 2.31, 2.44, 2.05]} -->
 
 
 Notes:
@@ -94,10 +94,10 @@ Notes:
   |-------------|------|---------|---------------------|-----|--------|----------------|-------------|
   | 1           | Joe  | 11111   | Yes                 | 24  | 45,000 | Single         | No          |
   | 2           | Jane | 22222   | No                  | 34  | 84,000 | Married        | Yes         |
-<!-- {"left" : 0.26, "top" : 3.21, "height" : 2.39, "width" : 9.74, "columnwidth" : [1.32, 0.94, 1.29, 1.5, 0.75, 1.08, 1.29, 1.57]} -->
+<!-- {"left" : 0.05, "top" : 7.92, "height" : 1, "width" : 17.39, "columnwidth" : [2.35, 1.3, 1.62, 3.55, 1.21, 1.9, 2.65, 2.8]} -->
 
 
-<img src="../../assets/images/machine-learning/Feature-Extraction.png" alt="Feature-Extraction" style="width:30%;"/> <!-- {"left" : 3.23, "top" : 5.89, "height" : 0.87, "width" : 3.79} -->
+<img src="../../assets/images/machine-learning/Feature-Extraction.png" alt="Feature-Extraction" style="width:30%;"/> <!-- {"left" : 6.84, "top" : 9.45, "height" : 0.89, "width" : 3.83} -->
 
 
 |             |      |         | Age | Income | Marital Status | Owns a Home |
@@ -105,7 +105,7 @@ Notes:
 |             |      |         | 24  | 45,000 | Single         | No          |
 |             |      |         | 34  | 84,000 | Married        | Yes         |
 
-<!-- {"left" : 1.02, "top" : 7.15, "height" : 1.51, "width" : 8.2, "columnwidth" : [0.5, 0.5, 0.5, 1.09, 1.82, 1.82, 1.82]} -->
+<!-- {"left" : 2.31, "top" : 10.37, "height" : 1, "width" : 12.88, "columnwidth" : [0.8, 0.8, 0.8, 1.74, 2.91, 2.91, 2.91]} -->
 
 Notes:
 
@@ -113,7 +113,7 @@ Notes:
 
 ## Class Quiz: Predicting Credit Card Fraud
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 6.24, "top" : 1.14, "height" : 2.59, "width" : 3.89} -->
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 10.19, "top" : 1.78, "height" : 4.8, "width" : 7.2} -->
 
 * Assume we are evaluating if a credit card transaction is fraud or not
 
@@ -201,7 +201,7 @@ Notes:
 
 ## Data Wrangling
 
-<img src="../../assets/images/machine-learning/3rd-party/data-science-time-spent-1.png" style="width:50%;float:right;"/> <!-- {"left" : 0.26, "top" : 5.52, "height" : 1.64, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/3rd-party/data-science-time-spent-1.png" style="width:50%;float:right;"/> <!-- {"left" : 9.43, "top" : 1.89, "height" : 5.66, "width" : 7.87} -->
 
 * Data scientists spend significant amount of time doing **data wrangling**
 
@@ -213,7 +213,7 @@ Notes:
 
 ## Data Cleaning
 
-<img src="../../assets/images/machine-learning/3rd-party/cartoon-data-cleaning.jpg" style="width:50%;float:right;"/> <!-- {"left" : 0.26, "top" : 5.52, "height" : 1.64, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/3rd-party/cartoon-data-cleaning.jpg" style="width:50%;float:right;"/><!-- {"left" : 11.11, "top" : 1.89, "height" : 4.71, "width" : 6.09} -->
 
 * Real world data is hardly in a format to be used for ML
 
@@ -261,6 +261,9 @@ Notes:
 | Owns a home        | Yes / No                                                | ?        |
 | Item Category      | - Jewelry <br/> - Groceries <br /> - Electronics <br /> | ?        |
 
+<!-- {"left" : 1.42, "top" : 4.74, "height" : 1, "width" : 14.66} -->
+
+
 Notes:
 Bedrooms : yes,   House Type : No,  Discount : Yes, Owns a Home : No, Item : No
 ---
@@ -280,7 +283,7 @@ Bedrooms : yes,   House Type : No,  Discount : Yes, Owns a Home : No, Item : No
 
  * (Unstructured data would include things like: documents, emails, tweets)
 
-<img src="../../assets/images/machine-learning/Categorical-Variables.png" alt="Categorical-Variables" style="width:60%;"/> <!-- {"left" : 0.26, "top" : 5.52, "height" : 1.64, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/Categorical-Variables.png" alt="Categorical-Variables" style="width:60%;"/> <!-- {"left" : 1.36, "top" : 7.93, "height" : 2.49, "width" : 14.79} -->
 
 
 
@@ -314,7 +317,7 @@ Notes:
     - Numbers are more efficient to store
     - And compute!
 
-<img src="../../assets/images/machine-learning/factorization-3.png" alt="factorization" style="max-width:70%"/><!-- {"left" : 1.02, "top" : 4.38, "height" : 3.11, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/factorization-3.png" alt="factorization" style="max-width:70%"/><!-- {"left" : 2.59, "top" : 5.84, "height" : 4.67, "width" : 12.32} -->
 
 
 
@@ -333,7 +336,7 @@ Notes:
 
  * We can fix this by 'one-hot-encoding' method
 
-<img src="../../assets/images/machine-learning/factorization-3.png" alt="Factorization" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 4.09, "height" : 3.11, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/factorization-3.png" alt="Factorization" style="max-width:60%;"/><!-- {"left" : 2.48, "top" : 5.64, "height" : 4.75, "width" : 12.54} -->
 
 
 
@@ -350,7 +353,7 @@ Notes:
     - Note, only one bit is on
     - This is called **ONE-HOT-Encoding**
 
-<img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="max-width:90%;"/><!-- {"left" : 0.52, "top" : 4.55, "height" : 2.9, "width" : 9.21} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-1.png" alt="Dummy-Variables" style="max-width:90%;"/><!-- {"left" : 1.99, "top" : 6.21, "height" : 4.26, "width" : 13.53} -->
 
 
 Notes:
@@ -367,7 +370,7 @@ Notes:
 
  * May be an 'apples-to-apples' comparison would be 'price per sq. foot'
 
-<img src="../../assets/images/machine-learning/feature-envgineering-1.png"  style="width:40%;float:right;"/> <!-- {"left" : 5.21, "top" : 2.19, "height" : 2.35, "width" : 4.88} -->
+<img src="../../assets/images/machine-learning/feature-envgineering-1.png"  style="width:40%;float:right;"/> <!-- {"left" : 8.85, "top" : 2.18, "height" : 4.04, "width" : 8.39} -->
 
 
 
@@ -378,7 +381,7 @@ Notes:
 | San Francisco  | 1,000 k (1 M) |
 | Gilroy         | 700 k         |
 
-<!-- {"left" : 0.75, "top" : 6.25, "height" : 2.01, "width" : 3.6, "columnwidth" : [1.82, 1.78]} -->
+<!-- {"left" : 1.17, "top" : 8.09, "height" : 1, "width" : 7.7, "columnwidth" : [3.89, 3.81]} -->
 
 
 
@@ -389,7 +392,7 @@ Notes:
 
 ## Converting Word to Vectors
 
-<img src="../../assets/images/machine-learning/word-to-vectors-1.png" alt="word-to-vectors" style="max-width:100%;"/> <!-- {"left" : 0.29, "top" : 1.85, "height" : 5.36, "width" : 9.66} -->
+<img src="../../assets/images/machine-learning/word-to-vectors-1.png" alt="word-to-vectors" style="max-width:100%;"/> <!-- {"left" : 1.9, "top" : 2.39, "height" : 7.6, "width" : 13.7} -->
 
 
 
@@ -412,21 +415,19 @@ Notes:
  * Some algorithms will yield better results if these different ranges can be scaled to a uniform range
     - Remove high magnitude data
 
-<img src="../../assets/images/machine-learning/scaling-1.png" style="width:50%;"/><!-- {"left" : 1.5, "top" : 5.43, "height" : 3.09, "width" : 7.26} -->
+<img src="../../assets/images/machine-learning/scaling-1.png" style="width:50%;"/><!-- {"left" : 3.66, "top" : 6.89, "height" : 4.34, "width" : 10.19} -->
 
 ---
 
 ## Scaling Approaches
 
-<img src="../../assets/images/formulas-equations/scaling-z-score-1.png" style="width:25%;float:right;"/><!-- {"left" : 7.06, "top" : 1.26, "height" : 2.16, "width" : 2.89} -->
+<img src="../../assets/images/formulas-equations/scaling-z-score-1.png" style="width:25%;float:right;"/><!-- {"left" : 12.55, "top" : 1.89, "height" : 3.3, "width" : 4.42} -->
 
 
 * Z-Scoring:
     - Subtract mean and divide standard deviation
 
-<br clear="all" />
-
-<img src="../../assets/images/formulas-equations/scaling-min-max-1.png" style="width:25%;float:right;"/><!-- {"left" : 5.54, "top" : 4.08, "height" : 1.48, "width" : 4.63} -->
+<img src="../../assets/images/formulas-equations/scaling-min-max-1.png" style="width:25%;float:right;"/><!-- {"left" : 10.5, "top" : 5.82, "height" : 2.07, "width" : 6.47} -->
 
 * Min-Max Scaling
     - Scale between a range 0 to 1 typically (or other ranges like 1 to 100)
@@ -456,8 +457,14 @@ normalized = scaler.fit_transform(data)
 # inverse transform
 inverse = scaler.inverse_transform(normalized)
 ```
+<!-- {"left" : 0.85, "top" : 2.39, "height" : 5.34, "width" : 13.89} -->
 
-<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} -->  <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 6.49, "top" : 5.38, "height" : 3.46, "width" : 3.62} -->
+<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 5.44, "top" : 7.91, "height" : 3.74, "width" : 3.06} -->  <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 8.15, "top" : 7.91, "height" : 3.74, "width" : 3.91} -->
+
+
+Notes:
+
+
 
 ---
 
@@ -479,8 +486,13 @@ normalized = scaler.fit_transform(data)
 # inverse transform
 inverse = scaler.inverse_transform(normalized)
 ```
+<!-- {"left" : 0.85, "top" : 2.39, "height" : 5.24, "width" : 14.54} -->
 
-<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.14, "top" : 5.25, "height" : 3.46, "width" : 3.42} --> 
+<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 5.21, "top" : 7.72, "height" : 3.97, "width" : 3.25} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 8.37, "top" : 7.65, "height" : 3.97, "width" : 3.92} --> 
+
+Notes:
+
+
 
 ---
 
@@ -490,7 +502,7 @@ inverse = scaler.inverse_transform(normalized)
 
 * After standard scaling, some values would be negative!  That is OK!
 
-<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 0.38, "top" : 5.31, "height" : 3.46, "width" : 2.83} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.14, "top" : 5.25, "height" : 3.46, "width" : 3.42} --> <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 6.49, "top" : 5.38, "height" : 3.46, "width" : 3.62} -->
+<img src="../../assets/images/machine-learning/scaling-3.png" style="width:20%;"/> &nbsp; <!-- {"left" : 2.12, "top" : 5.66, "height" : 4.72, "width" : 3.86} --> <img src="../../assets/images/machine-learning/scaling-3-z.png" style="width:25%;"/> &nbsp; <!-- {"left" : 5.88, "top" : 5.58, "height" : 4.72, "width" : 4.66} --> <img src="../../assets/images/machine-learning/scaling-3-min-max.png" style="width:25%;"/><!-- {"left" : 10.45, "top" : 5.75, "height" : 4.72, "width" : 4.93} -->
 
 ---
 

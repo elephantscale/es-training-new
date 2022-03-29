@@ -71,7 +71,7 @@ References
 | Lots of tools and algorithms. <br/>(such as logistic regression, linear discriminant analysis, classification trees, support vector machines, and more) |                              |
 | Assessing model performance is well defined (validation, cross-validation, independent test set)                                                   | Tends to be more subjective. |
 
-<!-- {"left" : 0.62, "top" : 3.4, "height" : 4.61, "width" : 16.26} -->
+<!-- {"left" : 0.62, "top" : 3.4, "height" : 1, "width" : 16.26} -->
 
 
 Notes:
@@ -103,12 +103,11 @@ Notes:
 
 ## Unsupervised Algorithms and Use Cases
 
-
 | Unsupervised        | Use Cases                                                                                                                                | Algorithms                               |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
 | Clustering          | - Analyze web clicks and segment customers. And improve their web <br/>- Analyze network traffic and isolate anomalies (potential attacks) | - K-means <br/>- Hierarchical clustering |
 | Dimension Reduction | - Par down the data to manageable set of variables (e.g Sensor data)                                                                     | - Principal Component Analysis(PCA)      |
 
-<!-- {"left" : 0.55, "top" : 2.84, "height" : 3.11, "width" : 16.4} -->
+<!-- {"left" : 0.55, "top" : 2.84, "height" : 1, "width" : 16.4} -->
 
 Notes:

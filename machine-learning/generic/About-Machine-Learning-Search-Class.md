@@ -1,7 +1,7 @@
 # Introduction to Machine Learning
 
-<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:20%;" /> &nbsp;  &nbsp;<!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
-<img src="../../assets/images/logos/python-logo-1.png" style="width:40%;" /><!-- {"left" : 6.26, "top" : 6.96, "height" : 0.81, "width" : 3.39} -->
+<img src="../../assets/images/machine-learning/3rd-party/machine-learning-1.png" style="width:20%;" /><!-- {"left" : 4.35, "top" : 7.65, "height" : 2.88, "width" : 2.88} -->
+<img src="../../assets/images/logos/python-logo-1.png" style="width:40%;" /><!-- {"left" : 8.1, "top" : 8.49, "height" : 1.21, "width" : 5.06} -->
 
 
 ---
@@ -56,14 +56,14 @@ Notes:
 
 ## Data Science Totem pole
 
-<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 0.54, "top" : 2.08, "height" : 5.48, "width" : 9.16} -->
+<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 1.96, "top" : 2.79, "height" : 8.13, "width" : 13.59} -->
 
 
 Notes:
 
 ---
 
-## Goal For This ML Class : 'ML Engineer'
+## Goal For This ML Class: 'ML Engineer'
 
 
 |                                     |          API users         |                                               ML Engineer                                               |                    Data Scientists                    |
@@ -75,6 +75,7 @@ Notes:
 |         __Model Validation__        |    copy-paste and pray!    |                           Knows how to test and improve the model iteratively                           |        Knows how to test and improve the model        |
 | __Can Come up with New Algorithms__ |             no             |                                        Can adopt a new algorithm                                        |            Can come up with new algorithms            |
 
+ <!-- {"left" : 1.18, "top" : 2.57, "height" : 6.59, "width" : 15.14} -->
 
 
 Notes:
@@ -107,7 +108,7 @@ Notes:
 * Machine Learning is the focus of this course
 * The concepts are generic you can implement them any ML platforms (R, Python, Spark)
 
-<img src="../../assets/images/machine-learning/some-highlights.png" alt="some-highlights.png" style="width:70%;"/> <!-- {"left" : 0.97, "top" : 3.87, "height" : 2.91, "width" : 8.3} -->
+<img src="../../assets/images/machine-learning/some-highlights.png" alt="some-highlights.png" style="width:70%;"/> <!-- {"left" : 2.23, "top" : 5.19, "height" : 4.57, "width" : 13.03} -->
 
 
 Notes:
@@ -122,7 +123,7 @@ Notes:
   - Best Buy purchases
   - Ebay
 
-<img src="../../assets/images/logos/netflix-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> &nbsp;  &nbsp;<!-- {"left" : 0.53, "top" : 5.5, "height" : 0.83, "width" : 1.8} --><img src="../../assets/images/logos/prosper-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> &nbsp;  &nbsp;<!-- {"left" : 2.52, "top" : 5.65, "height" : 0.54, "width" : 2.21} --><img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> &nbsp;  &nbsp;<!-- {"left" : 4.88, "top" : 5.26, "height" : 1.31, "width" : 1.8} --><img src="../../assets/images/logos/walmart-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> &nbsp;  &nbsp;<!-- {"left" : 6.83, "top" : 5.5, "height" : 0.83, "width" : 2.9} -->
+<img src="../../assets/images/logos/netflix-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /><!-- {"left" : 0.75, "top" : 7.2, "height" : 1.44, "width" : 3.13} --><img src="../../assets/images/logos/prosper-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> <!-- {"left" : 4.21, "top" : 7.46, "height" : 0.94, "width" : 3.84} --><img src="../../assets/images/logos/uber-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> <!-- {"left" : 8.32, "top" : 6.79, "height" : 2.28, "width" : 3.13} --><img src="../../assets/images/logos/walmart-logo-1.png" alt="XXX image missing" style="max-width:100%;" width="20%" /> &nbsp;  &nbsp;<!-- {"left" : 11.71, "top" : 7.2, "height" : 1.44, "width" : 5.04} -->
 
 
 
@@ -157,7 +158,7 @@ Notes:
 
 ## Lots of Labs: Learn By Doing
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.15, "top" : 1.32, "height" : 6.42, "width" : 7.96} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 3.23, "top" : 2.4, "height" : 8.91, "width" : 11.04} -->
 
 
 
@@ -167,7 +168,7 @@ Notes:
 
 ## After The Class...
 
-<img src="../../assets/images/machine-learning/3rd-party/AFTER_THE_CLASS.jpg" alt="AFTER_THE_CLASS.jpg" style="width:50%;"/> <!-- {"left" : 1.69, "top" : 2, "height" : 5.65, "width" : 6.88} -->
+<img src="../../assets/images/machine-learning/3rd-party/AFTER_THE_CLASS.jpg" alt="AFTER_THE_CLASS.jpg" style="width:50%;"/> <!-- {"left" : 4.13, "top" : 3.06, "height" : 7.59, "width" : 9.24} -->
 
 
 Notes:
@@ -187,8 +188,7 @@ Notes:
     - Something non-technical about you!  
     (favorite ice cream flavor / hobby...etc)
 
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
-
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/>  <!-- {"left" : 2.19, "top" : 6.87, "height" : 3.23, "width" : 3.65} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> <!-- {"left" : 5.88, "top" : 6.91, "height" : 3.12, "width" : 5.74} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> <!-- {"left" : 11.66, "top" : 6.87, "height" : 3.23, "width" : 3.65} -->
 
 
 Notes:

@@ -90,7 +90,7 @@ Notes:
 | **Intercept**              | The intercept of the regression line - that is, the predicted value when X= 0 | - b , b<sub>0</sub> , β<sub>0</sub>                                     |
 | **Regression coefficient** | The slope of the regression line.                                             | - Slope <br/>- parameter estimates <br/>- Weights <br/>- a , b1     |
 
-<!-- {"left" : 0.45, "top" : 2.6, "height" : 8.51, "width" : 16.61} -->
+<!-- {"left" : 0.45, "top" : 2.6, "height" : 1, "width" : 16.61} -->
 
 Notes:
 
@@ -190,7 +190,7 @@ Notes:
 
 ---
 
-## Errors and Residuals
+# Errors and Residuals
 
 [ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions](ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions)
 

@@ -4,7 +4,7 @@
 
 ## Model Evaluation
 
-<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="width:90%;"/><!-- {"left" : 0.91, "top" : 2.42, "height" : 4.23, "width" : 8.43} -->
+<img src="../../assets/images/machine-learning/ML-Process-04.png"  style="width:90%;"/><!-- {"left" : 2.32, "top" : 3.48, "height" : 6.46, "width" : 12.87} -->
 
 ---
 
@@ -18,9 +18,8 @@
 
 * It's performance is measured on 'test data' (the model hasn't seen 'test data')
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/model-testing-4.png" style="width:40%;float:left;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} --> 
-<img src="../../assets/images/machine-learning/model-testing-5.png" style="width:45%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
+<img src="../../assets/images/machine-learning/model-testing-4.png" style="width:40%;float:left;"/> <!-- {"left" : 0.88, "top" : 7.39, "height" : 1.82, "width" : 7.4} -->
+<img src="../../assets/images/machine-learning/model-testing-5.png" style="width:45%;float:right;"/> <!-- {"left" : 8.65, "top" : 5.41, "height" : 5.77, "width" : 7.97} -->
 
 Notes:
 
@@ -33,8 +32,8 @@ Notes:
 
 ## Model Validation
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/model-testing-2.png" style="width:42%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
+<img src="../../assets/images/machine-learning/model-testing-2.png" style="width:42%;float:right;"/><!-- {"left" : 12.45, "top" : 1.89, "height" : 5.93, "width" : 4.7} -->
+
 
 * **Mistake: Re-using 'training data' as 'testing data'**
 
@@ -51,8 +50,7 @@ Notes:
 ---
 ## Hold Out Method
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/model-testing-3.png" style="width:42%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
+<img src="../../assets/images/machine-learning/model-testing-3.png" style="width:42%;float:right;"/> <!-- {"left" : 12.45, "top" : 1.89, "height" : 5.93, "width" : 4.7} -->
 
 * Here we split the data into
     - Training set  (80%)
@@ -70,14 +68,13 @@ Notes:
 
 ## Hold Out Method Drawbacks
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/model-testing-3.png" style="width:42%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
+<img src="../../assets/images/machine-learning/model-testing-3.png" style="width:42%;float:right;"/> <!-- {"left" : 12.45, "top" : 1.89, "height" : 5.93, "width" : 4.7} -->
 
 * Training/Test split is done randomly
 
 * If we are 'lucky', we can get a well rounded training set and the model can learn well
 
-* Also we can get an easy test set,   resulting in higher than usual accuracy
+* Also we can get an easy test set, resulting in higher than usual accuracy
 
 * Or we could get a 'weak' training set, the model doesn't learn much;  
 And get a 'hard' test set, where model does badly
@@ -90,8 +87,7 @@ And get a 'hard' test set, where model does badly
 
 ## Hold Out Method Drawback Example
 
-<!-- TODO shiva -->
-<img src="../../assets/images/machine-learning/model-testing-3.png" style="width:35%;float:right;"/> <!-- {"left" : 1.84, "top" : 4.62, "height" : 2.88, "width" : 6.57} -->
+<img src="../../assets/images/machine-learning/model-testing-3.png" style="width:35%;float:right;"/> <!-- {"left" : 12.45, "top" : 1.89, "height" : 5.93, "width" : 4.7} -->
 
 
 * Assume we want to test a student's knowledge in a subject
@@ -125,7 +121,7 @@ Notes:
  * Then test with fold-I
  * After we have cycled through all k folds, prediction accuracies are aggregated and compared
 
-<img src="../../assets/images/machine-learning/k-fold-1.png" alt="k-fold-1" style="max-width:60%;"/> <!-- {"left" : 1.42, "top" : 4.43, "height" : 4.07, "width" : 7.41} -->
+<img src="../../assets/images/machine-learning/k-fold-1.png" alt="k-fold-1" style="max-width:60%;"/> <!-- {"left" : 4.77, "top" : 6.65, "height" : 4.37, "width" : 7.96} -->
 
 
 
@@ -136,7 +132,7 @@ Notes:
 
 ## Cross-Validation Example
 
-<img src="../../assets/images/machine-learning/Cross-Validation-1.png" alt="Cross-Validation-1.png" style="max-width:70%;"/> <!-- {"left" : 0.36, "top" : 1.1, "height" : 2.47, "width" : 9.54} -->
+<img src="../../assets/images/machine-learning/Cross-Validation-1.png" alt="Cross-Validation-1.png" style="max-width:70%;"/> <!-- {"left" : 3.16, "top" : 1.95, "height" : 2.9, "width" : 11.19} -->
 
 
  * Here we are doing a 5-fold cross validation
@@ -162,7 +158,7 @@ Notes:
 
  * Algorithm C is not desirable as its accuracy varies so much (high variance)
 
-<img src="../../assets/images/machine-learning/cross-validation-2.png" alt="Cross-Validation-1.png" style="max-width:70%;"/><!-- {"left" : 0.76, "top" : 5.64, "height" : 2.65, "width" : 8.73} -->
+<img src="../../assets/images/machine-learning/cross-validation-2.png" alt="Cross-Validation-1.png" style="max-width:70%;"/><!-- {"left" : 2.85, "top" : 7.34, "height" : 3.58, "width" : 11.79} -->
 
 
 ---
@@ -200,7 +196,7 @@ Notes:
     - Overfitting
  * One in the middle is just right
 
-<img src="../../assets/images/machine-learning/underfit-overfit-03.png" alt="underfit-overfit" style="max-width:80%;"/> <!-- {"left" : 0.26, "top" : 5.16, "height" : 3.07, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-03.png" alt="underfit-overfit" style="max-width:80%;"/> <!-- {"left" : 1.79, "top" : 6.44, "height" : 4.39, "width" : 13.93} -->
 
 
 
@@ -216,12 +212,12 @@ Notes:
  * Hot to detect under-fitting?
     - We will get poor performance in both training & testing data
     - E.g.:
-      - Training accuracy : 45%
-      - Testing accuracy : 42%
+      - Training accuracy: 45%
+      - Testing accuracy: 42%
  * Resolution:
     - Try a different algorithm / model, that better fits the data
 
-<img src="../../assets/images/machine-learning/underfit-overfit-01.png" alt="underfit-overfit" style="max-width:80%;"/>  <!-- {"left" : 0.83, "top" : 5.38, "height" : 2.79, "width" : 8.59} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-01.png" alt="underfit-overfit" style="max-width:80%;"/>  <!-- {"left" : 3.38, "top" : 7.37, "height" : 3.49, "width" : 10.74} -->
 
 
 
@@ -232,7 +228,7 @@ Notes:
 
 ## Overfitting
 
-<img src="../../assets/images/machine-learning/overfitting-1-learning-addition.png"  style="width:40%;float:right;"/><!-- {"left" : 6.67, "top" : 1.18, "height" : 3.65, "width" : 3.46} -->
+<img src="../../assets/images/machine-learning/overfitting-1-learning-addition.png"  style="width:40%;float:right;"/><!-- {"left" : 11.65, "top" : 1.89, "height" : 5.75, "width" : 5.45} -->
 
 
 * Imagine we are teaching addition to young kids
@@ -246,19 +242,20 @@ Notes:
 * This is basically **overfitting**
 
 * When model is **memorizing** training data instead of learning from it.
+
 ---
 
 ## Over-fitting
 
  * How to detect over-fitting?
     - Excellent performance on training data, but poor performance on testing (new) data
-    - E.g. :Training accuracy : 95%
-    - Testing accuracy : 62%
+    - E.g.: Training accuracy: 95%
+    - Testing accuracy: 62%
  * Resolution:
     - Try a different algorithm / model, that better fits the data
     - Simplify inputs
 
-<img src="../../assets/images/machine-learning/underfit-overfit-02.png" style="width:75%;"/> <!-- {"left" : 0.69, "top" : 5.01, "height" : 2.96, "width" : 8.87} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-02.png" style="width:75%;"/> <!-- {"left" : 2.57, "top" : 6.77, "height" : 4.12, "width" : 12.35} -->
 
 
 
@@ -271,7 +268,7 @@ Notes:
 
  * In ML we strive to find the 'sweet spot' between under-fitting models and over-fitting models
 
-<img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="max-width:64%;"/> <!-- {"left" : 1.4, "top" : 2.85, "height" : 5.08, "width" : 6.96} -->
+<img src="../../assets/images/machine-learning/underfit-overfit-04.png" alt="underfit-overfit" style="max-width:64%;"/> <!-- {"left" : 4.46, "top" : 4.69, "height" : 6.26, "width" : 8.58} -->
 
 
 
@@ -331,7 +328,7 @@ Notes:
 
 ## Sampling Without Replacement
 
-<img src="../../assets/images/machine-learning/bootstrapping-2a.png" alt="bootstrapping-2a.png" style="width:55%;"/> <!-- {"left" : 1.02, "top" : 1.51, "height" : 6.62, "width" : 8.2} -->
+<img src="../../assets/images/machine-learning/bootstrapping-2a.png" alt="bootstrapping-2a.png" style="width:55%;"/> <!-- {"left" : 3.92, "top" : 2.3, "height" : 7.8, "width" : 9.66} -->
 
 
 
@@ -341,7 +338,7 @@ Notes:
 
 ## Sampling With Replacement (aka Bootstrapping)
 
-<img src="../../assets/images/machine-learning/bootstrapping-2b.png" alt="bootstrapping-2a.png" style="width:40%;"/> <!-- {"left" : 1.66, "top" : 1.38, "height" : 6.89, "width" : 6.92} -->
+<img src="../../assets/images/machine-learning/bootstrapping-2b.png" alt="bootstrapping-2a.png" style="width:40%;"/> <!-- {"left" : 4.04, "top" : 2.17, "height" : 9.37, "width" : 9.41} -->
 
 
 
@@ -352,7 +349,7 @@ Notes:
 
 ## Bootstrapping Example 2
 
-<img src="../../assets/images/machine-learning/bootstrapping-1.png" alt="bootstrapping-1.png" style="max-width:90%;"/> <!-- {"left" : 0.39, "top" : 2.82, "height" : 4.01, "width" : 9.48} -->
+<img src="../../assets/images/machine-learning/bootstrapping-1.png" alt="bootstrapping-1.png" style="max-width:90%;"/> <!-- {"left" : 1.98, "top" : 3.99, "height" : 5.73, "width" : 13.54} -->
 
 
 

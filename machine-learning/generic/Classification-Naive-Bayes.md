@@ -43,7 +43,7 @@ Notes:
 | **Bernoulli**   | Binary data                                                       |
 | **Multinomial** | integer count data  (e.g. how often a word appears in a document) |
 
-<!-- {"left" : 2.32, "top" : 2.82, "height" : 4.18, "width" : 12.87} -->
+<!-- {"left" : 2.32, "top" : 2.82, "height" : 1, "width" : 12.87} -->
 
 
 Notes:

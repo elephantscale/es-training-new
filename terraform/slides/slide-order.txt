@@ -8,6 +8,7 @@ Terraform-Modules.md
 Terraform-Code-Management.md
 Terraform-Testing.md
 Implementing-Terraform.md
+Terraform-Advanced-Latest.md
 packer-intro.md
 Packer.pptx
 

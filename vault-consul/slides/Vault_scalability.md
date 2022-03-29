@@ -423,3 +423,49 @@ cluster.
 * Terraform Integration
 * Coding for Reliability
 
+---
+
+## Vault - Raft
+
+* Integrated Storage (Raft) Backend
+* The Integrated Storage backend is used to persist Vault's data. Unlike other storage backends, Integrated Storage does not operate from a single source of data. Instead all the nodes in a Vault cluster will have a replicated copy of Vault's data. Data gets replicated across all the nodes via the Raft Consensus Algorithm.
+* High Availability – the Integrated Storage backend supports high availability.
+* HashiCorp Supported – the Integrated Storage backend is officially supported by HashiCorp.
+
+```text
+storage "raft" {
+  path = "/path/to/raft/data"
+  node_id = "raft_node_1"
+}
+cluster_addr = "http://127.0.0.1:8201"
+
+```
+
+---
+
+## Backend storage comparison
+
+|                                |                                                    Integrated Storage                                                    | External Storage                                                                                                                                                                                                                      |
+|:------------------------------:|:------------------------------------------------------------------------------------------------------------------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| HashiCorp Supported            | Yes                                                                                                                      | Limited support                                                                                                                                                                                                                       |
+| Operation                      | Operationally simpler with no additional software installation required.                                                 | Must install and configure the external storage environment outside of Vault. For high availability, the external storage should be clustered.                                                                                        |
+| Networking                     | One less network hop.                                                                                                    | Extra network hop between Vault and the external storage system (e.g., Consul cluster).                                                                                                                                               |
+
+---
+## Backend storage comparison
+
+|                                |                                                    Integrated Storage                                                    | External Storage                                                                                                                                                                                                                      |
+|:------------------------------:|:------------------------------------------------------------------------------------------------------------------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| HashiCorp Supported            | Yes                                                                                                                      | Limited support                                                                                                                                                                                                                       |
+| Troubleshooting and monitoring | Integrated Storage is a part of Vault; therefore, Vault is the only system you need to monitor and troubleshoot.         | The source of failure could be the external storage; therefore, you need to check the health of both Vault and the external storage. This requires expertise in the chosen storage backend and additional monitoring of that storage. |
+| Data location                  | The encrypted Vault data is stored on the same host where the Vault server process runs.                                 | The encrypted Vault data is stored where the external storage is located. Therefore, the Vault server and the data storage are hosted on physically separate hosts.                                                                   |
+| System requirements            | Avoid "burstable" CPU and storage options. SSDs should be used for the hard drive. See the Reference Architecture guide. | Follow the system requirements given by your chosen storage backend.                                                                                                                                                                  |
+
+---
+
+## Backend storage comparison
+
+* Source documentation
+* https://www.vaultproject.io/docs/configuration/storage
+
+---

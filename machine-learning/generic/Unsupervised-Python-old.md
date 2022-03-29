@@ -13,13 +13,13 @@ Notes:
 
 ---
 
-## Unsupervised Intro
+# Unsupervised Intro
 
 [../generic/Unsupervised-Intro.md](../generic/Unsupervised-Intro.md)
 
 ---
 
-## Clustering
+# Clustering
 [../generic/Unsupervised-Clustering.md](../generic/Unsupervised-Clustering.md)
 
 ---
@@ -74,7 +74,7 @@ Notes:
 | maxIter    | How many iterations                                                                                                                                       | 20            |   |
 | n_init     | Initial seed setting                                                                                                                                      |               |   |
 
-<!-- {"left" : 0.25, "top" : 1.54, "height" : 4.54, "width" : 9.75} -->
+<!-- {"left" : 0.78, "top" : 2.55, "height" : 1, "width" : 15.95} -->
 
 
 Notes:
@@ -101,7 +101,8 @@ Notes:
  print(wssse)
  dataset['prediction'] = model.predict(featureVector)
 ```
-<!-- {"left" : 0, "top" : 1.25, "height" : 3.97, "width" : 9.61} -->
+<!-- {"left" : 0.81, "top" : 2.46, "height" : 4.77, "width" : 11.55} -->
+
 
 Notes:
 
@@ -112,8 +113,6 @@ Notes:
 
 ## K-Means Run Output
 
-
-
 ```python
 // for k=2
 > model.cluster_centers_
@@ -121,7 +120,7 @@ Notes:
 [15.899999999999999,7.555555555555555])
 
 ```
-<!-- {"left" : 0, "top" : 1.34, "height" : 1.33, "width" : 8.44} -->
+<!-- {"left" : 0.85, "top" : 2.46, "height" : 1.71, "width" : 10.84} -->
 
 ```text
 > predicted.sort_values(["prediction", "mpg"])
@@ -140,7 +139,7 @@ Notes:
 +-------------------+----+---+----------+----------+
 
 ```
-<!-- {"left" : 0, "top" : 3.1, "height" : 3.97, "width" : 9.44} -->
+<!-- {"left" : 0.85, "top" : 4.41, "height" : 5.1, "width" : 12.12} -->
 
 
 Notes:
@@ -161,7 +160,7 @@ Notes:
 
  *  **Question for class:** At **k=32** we have achieved **WSSSE=0**, as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 4.17, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 2.81, "top" : 5.86, "height" : 5.06, "width" : 11.88} -->
 
 
 
@@ -190,7 +189,7 @@ for k in range(2,17):
 
 k_wssse
 ```
-<!-- {"left" : 0, "top" : 1.28, "height" : 3.15, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.63, "height" : 4.02, "width" : 13.09} -->
 
 
 ```text
@@ -202,7 +201,7 @@ k= 4
    k=4, wssse=140.88452380952572
 
 ```
-<!-- {"left" : 0, "top" : 4.8, "height" : 1.86, "width" : 6.11} -->
+<!-- {"left" : 0.85, "top" : 7.13, "height" : 2.38, "width" : 7.8} -->
 
 Notes:
 
@@ -213,7 +212,7 @@ Notes:
 ## K - WSSSE
 
 
-<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" alt="kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 4.17, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" alt="kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 2.29, "top" : 3.96, "height" : 5.51, "width" : 12.92} -->
 
 Notes:
 
@@ -278,7 +277,7 @@ Notes:
 | maxIter      | How many iterations                                                                                                                                                                                                           | 20            |   |
 | random_state | Initial seed setting                                                                                                                                                                                                          |               |   |
 
-<!-- {"left" : 0.25, "top" : 1.49, "height" : 4.82, "width" : 9.75, "columnwidth" : [2.27, 5.23, 2.25]} -->
+<!-- {"left" : 1, "top" : 2.97, "height" : 1, "width" : 15.5, "columnwidth" : [2.32, 8.61, 2.6, 1.97]} -->
 
 Notes:
 

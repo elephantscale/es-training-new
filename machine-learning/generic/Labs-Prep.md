@@ -15,8 +15,10 @@ Notes:
 
 ## Step 1: Lab Environment
 
-<img src="../../assets/images/generic/lab-setup.png" style="width:40%;float:right;"/><!-- {"left" : 1.84, "top" : 6.25, "height" : 2.18, "width" : 6.57} -->
-<img src="../../assets/images/generic/training-sandbox-1.png" style="max-width:40%;float:right;clear:both;"/><!-- {"left" : 5.8, "top" : 1.1, "height" : 4.02, "width" : 4.3} -->
+<img src="../../assets/images/generic/training-sandbox-1.png" style="max-width:40%;float:right;clear:both;"/> <!-- {"left" : 11.27, "top" : 2.15, "height" : 5.5, "width" : 5.88} -->
+
+
+<img src="../../assets/images/generic/lab-setup.png" style="width:40%;float:right;clear:both;"/> <!-- {"left" : 10.11, "top" : 8.38, "height" : 2.39, "width" : 7.22} -->
 
 * We can use Google Colab or training VMs
 
@@ -43,7 +45,7 @@ Notes:
 
 ## Step 2: Test Jupyter
 
-<img src="../../assets/images/generic/jupyter-labs-1.png" style="max-width:40%;float:right;"/> <!-- {"left" : 5.52, "top" : 1.8, "height" : 4.4, "width" : 4.46} -->
+<img src="../../assets/images/generic/jupyter-labs-1.png" style="max-width:40%;float:right;"/> <!-- {"left" : 10.17, "top" : 2, "height" : 6.89, "width" : 6.98} -->
 
 
  *  **Instructor**
@@ -72,10 +74,7 @@ Notes:
         $   cd labs-dir
         $  ./package-labs.sh
 ```
-
-<!-- {"left" : 0, "top" : 2.37, "height" : 1.05, "width" : 5.62} -->
-
-<br/>
+<!-- {"left" : 0.85, "top" : 3.07, "height" : 0.6, "width" : 3.82} -->
 
  * This will create a zip file
  *  Distribute this bundle to students
@@ -96,7 +95,7 @@ Notes:
 
 ## Step 4: Setup
 
-<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.02, "top" : 1.16, "height" : 3.88, "width" : 2.91} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 13.03, "top" : 1.68, "height" : 5.38, "width" : 4.03} -->
 
  *  **Overview:**
 
@@ -116,9 +115,9 @@ Notes:
 
 ---
 
-## Step 5:  Testing123
+## Step 5: Testing123
 
-<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.02, "top" : 1.16, "height" : 3.88, "width" : 2.91} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 13.03, "top" : 1.68, "height" : 5.38, "width" : 4.03} -->
 
  *  **Overview:**
 
@@ -144,7 +143,7 @@ Notes:
 
  * [https://www.youtube.com/watch?v=xaBEFqFVSE8](https://www.youtube.com/watch?v=xaBEFqFVSE8)
 
-<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Jupyter-Interactive-Notebook-0.png" style="width:50%;"><!-- {"left" : 1.02, "top" : 3.06, "height" : 5.19, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-Lab-Prep-Jupyter-Interactive-Notebook-0.png" style="width:50%;"><!-- {"left" : 3.88, "top" : 4.4, "height" : 6.15, "width" : 9.73} -->
 
 
 
@@ -160,14 +159,14 @@ https://www.youtube.com/watch?v=xaBEFqFVSE8
 
 ## Step 6: Jupyter
 
-<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 7.64, "top" : 0.82, "height" : 3.3, "width" : 2.47} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 13.03, "top" : 1.68, "height" : 5.38, "width" : 4.03} -->
 
  *  **Instructor**
     - Survey students if they have used Jupyter notebooks before.
     - If not, demo ' **Hello Jupyter** ' lab.
     - Explain how Jupyter works
 
-<img src="../../assets/images/machine-learning/jupyter.png" style="width:55%;"><!-- {"left" : 2.07, "top" : 5.09, "height" : 3.3, "width" : 6.1} -->
+<img src="../../assets/images/machine-learning/jupyter.png" style="width:55%;"><!-- {"left" : 4.51, "top" : 6.6, "height" : 4.59, "width" : 8.48} -->
 
 Notes:
 
@@ -175,9 +174,11 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.93, "top" : 2.27, "height" : 2.81, "width" : 3.79} -->
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 5, "top" : 5.52, "height" : 4.98, "width" : 7.5} -->
+
