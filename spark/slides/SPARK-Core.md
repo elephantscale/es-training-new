@@ -913,7 +913,7 @@ Notes:
 
 * Starting with Spark v2, the Tungsten engine, uses this memory allocation scheme by default
 
-<img src="../../assets/images/spark/caching-2.png" style="width:50%;" /><!-- {"left" : 4.55, "top" : 6.55, "height" : 4.52, "width" : 8.41} -->
+<img src="../../assets/images/spark/caching-2.png" style="width:45%;" /><!-- {"left" : 4.55, "top" : 6.55, "height" : 4.52, "width" : 8.41} -->
 
 
 ---

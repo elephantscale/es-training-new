@@ -1,14 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-621 -220 1535 825" width="1535" height="825">
-  <defs>
-    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
-      <font-face-src>
-        <font-face-name name="CenturyGothic-Bold"/>
-      </font-face-src>
-    </font-face>
-  </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2021-10-07 16:34:42 +0000</metadata>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="-621 -220 1535 825" width="1535" height="825" xmlns="http://www.w3.org/2000/svg">
   <g id="Canvas_1" stroke-dasharray="none" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
@@ -38,42 +29,38 @@
         <path d="M -298.5 -102 L 13.5 -102 C 16.813708 -102 19.5 -99.31371 19.5 -96 L 19.5 52 C 19.5 55.31371 16.813708 58 13.5 58 L -298.5 58 C -301.8137 58 -304.5 55.31371 -304.5 52 L -304.5 -96 C -304.5 -99.31371 -301.8137 -102 -298.5 -102 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_10">
-        <text transform="translate(585.8994 39.5)" fill="#250060">
+        <text transform="translate(585.8994 39.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Memory</tspan>
         </text>
       </g>
       <g id="Graphic_9">
-        <text transform="translate(-263.1006 -58.5)" fill="#250060">
+        <text transform="translate(-263.1006 -58.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Memory</tspan>
         </text>
       </g>
       <g id="Graphic_8">
-        <text transform="translate(-314.40234 168)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">JVW</tspan>
-        </text>
+        <text transform="translate(-314.40234 168)" fill="#250060" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">JVM</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_7">
-        <text transform="translate(294 172)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">JVW</tspan>
-        </text>
+        <text transform="translate(294 172)" fill="#250060" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">JVM</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_6">
-        <text transform="translate(471.80176 381)" fill="#250060">
+        <text transform="translate(471.80176 381)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Linux</tspan>
         </text>
       </g>
       <g id="Graphic_5">
-        <text transform="translate(-325.19824 381)" fill="#250060">
+        <text transform="translate(-325.19824 381)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Linux</tspan>
         </text>
       </g>
       <g id="Graphic_4">
-        <text transform="translate(-516.0088 527)" fill="#250060">
+        <text transform="translate(-516.0088 527)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">On-Heap Memory</tspan>
         </text>
       </g>
       <g id="Graphic_3">
-        <text transform="translate(282.20703 514)" fill="#250060">
+        <text transform="translate(282.20703 514)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Off-Heap Memory</tspan>
         </text>
       </g>
