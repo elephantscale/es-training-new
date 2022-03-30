@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-734 -262 1825 1114" width="1825" height="1114">
-  <defs>
-    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
-      <font-face-src>
-        <font-face-name name="CenturyGothic-Bold"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
-      <font-face-src>
-        <font-face-name name="CenturyGothic-Bold"/>
-      </font-face-src>
-    </font-face>
-  </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2021-10-07 16:28:32 +0000</metadata>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="-734 -262 1825 1114" width="1825" height="1114" xmlns="http://www.w3.org/2000/svg">
   <g id="Canvas_1" stroke-dasharray="none" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
@@ -35,22 +21,19 @@
         <path d="M 427 -105.33 L 427 -141.67 C 427 -142.22228 427.4477 -142.67 428 -142.67 L 550 -142.67 C 550.5523 -142.67 551 -143.11772 551 -143.67 L 551 -160.0608 C 551 -160.61309 551.4477 -161.0608 552 -161.0608 C 552.1834 -161.0608 552.3632 -161.01038 552.5199 -160.91505 L 612.5963 -124.35425 C 613.0681 -124.06713 613.2178 -123.45192 612.9307 -122.98013 C 612.84756 -122.84354 612.7329 -122.72888 612.5963 -122.64575 L 552.5199 -86.08495 C 552.0481 -85.79783 551.4329 -85.94754 551.14575 -86.41933 C 551.0504 -86.57597 551 -86.75582 551 -86.9392 L 551 -103.33 C 551 -103.88228 550.5523 -104.33 550 -104.33 L 428 -104.33 C 427.4477 -104.33 427 -104.77772 427 -105.33 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_23">
-        <text transform="translate(749.0918 -196.5)" fill="#250060">
+        <text transform="translate(749.0918 -196.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">DataSet</tspan>
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="23.408203" y="133">(2016)</tspan>
         </text>
       </g>
       <g id="Graphic_22">
-        <text transform="translate(-595.5 -196.5)" fill="#250060">
+        <text transform="translate(-595.5 -196.5)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="30.585938" y="60">RDD</tspan>
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="133">(2011)</tspan>
         </text>
       </g>
       <g id="Graphic_21">
-        <text transform="translate(4.491211 -196.5)" fill="#250060">
-          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">DataFrames</tspan>
-          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="95.40527" y="133">(2013</tspan>
-        </text>
+        <text transform="translate(4.491211 -196.5)" fill="#250060" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">DataFrames</tspan><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="95.40527" y="133">(2013)</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_20">
         <path d="M -257 -105.33 L -257 -141.67 C -257 -142.22228 -256.5523 -142.67 -256 -142.67 L -134 -142.67 C -133.44772 -142.67 -133 -143.11772 -133 -143.67 L -133 -160.0608 C -133 -160.61309 -132.55228 -161.0608 -132 -161.0608 C -131.81662 -161.0608 -131.63678 -161.01038 -131.48013 -160.91505 L -71.40369 -124.35425 C -70.9319 -124.06713 -70.7822 -123.45192 -71.06931 -122.98013 C -71.15244 -122.84354 -71.2671 -122.72888 -71.40369 -122.64575 L -131.48013 -86.08495 C -131.95192 -85.79783 -132.56713 -85.94754 -132.85425 -86.41933 C -132.94958 -86.57597 -133 -86.75582 -133 -86.9392 L -133 -103.33 C -133 -103.88228 -133.44772 -104.33 -134 -104.33 L -256 -104.33 C -256.5523 -104.33 -257 -104.77772 -257 -105.33 Z" fill="#a4f8fd"/>
@@ -69,17 +52,17 @@
         <path d="M 43.283385 301.30244 C 136.74245 394.76103 136.74245 546.2872 43.283385 639.7458 C -50.175206 733.2049 -201.7014 733.2049 -295.16 639.7458 C -388.61906 546.2872 -388.61906 394.76103 -295.16 301.30244 C -201.7014 207.84338 -50.175206 207.84338 43.283385 301.30244" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_16">
-        <text transform="translate(51.893555 114.00118)" fill="#250060">
+        <text transform="translate(51.893555 114.00118)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">DataSets</tspan>
         </text>
       </g>
       <g id="Graphic_15">
-        <text transform="translate(-185.35236 310.7636)" fill="#250060">
+        <text transform="translate(-185.35236 310.7636)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">RDD</tspan>
         </text>
       </g>
       <g id="Graphic_14">
-        <text transform="translate(314.93537 310.7636)" fill="#250060">
+        <text transform="translate(314.93537 310.7636)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#250060" x="0" y="60">Dataframes</tspan>
         </text>
       </g>
@@ -103,28 +86,28 @@
         </g>
       </g>
       <g id="Graphic_6">
-        <text transform="translate(-238.6926 397.0195)" fill="#250060">
+        <text transform="translate(-238.6926 397.0195)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Functional</tspan>
         </text>
       </g>
       <g id="Graphic_5">
-        <text transform="translate(-238.6926 469.71413)" fill="#250060">
+        <text transform="translate(-238.6926 469.71413)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Type Safe</tspan>
         </text>
       </g>
       <g id="Graphic_4">
-        <text transform="translate(-242.4426 542.4088)" fill="#250060">
+        <text transform="translate(-242.4426 542.4088)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="5.595703" y="40">Direct API </tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="89">access</tspan>
         </text>
       </g>
       <g id="Graphic_3">
-        <text transform="translate(377.0039 402.84)" fill="#250060">
+        <text transform="translate(377.0039 402.84)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Relational</tspan>
         </text>
       </g>
       <g id="Graphic_2">
-        <text transform="translate(377.0039 470.53464)" fill="#250060">
+        <text transform="translate(377.0039 470.53464)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Catalyst query</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="89">optimizer</tspan>
         </text>

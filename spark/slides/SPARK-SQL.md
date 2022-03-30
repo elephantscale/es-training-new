@@ -940,7 +940,6 @@ data = spark.read.json('/data/json/', schema=schema)
 ```
 <!-- {"left" : 0.8, "top" : 7.78, "height" : 3.51, "width" : 12.57} -->   
 
-<br/>
 
 * References: [1](https://szczeles.github.io/Reading-JSON-CSV-and-XML-files-efficiently-in-Apache-Spark/)
 
