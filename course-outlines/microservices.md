@@ -37,11 +37,11 @@ March 30, 2022
 
 ### References
 
-./es-training/microservices/rod-jason/Microservices-VMWare-2022.pptx
-./es-training/microservices/rod-jason/Microservices-VMWare.pptx
-./es-training/kubernetes/slides/Microservices.md
-./es-training-new/kubernetes/slides/Microservices.md
-./es-training-collaboration/microservices/outlines/Microservices-with-PCF-for-Simplilearn.md
+* ./es-training/microservices/rod-jason/Microservices-VMWare-2022.pptx
+* ./es-training/microservices/rod-jason/Microservices-VMWare.pptx
+* ./es-training/kubernetes/slides/Microservices.md
+* ./es-training-new/kubernetes/slides/Microservices.md
+
 
 ### Labs
 * https://www.katacoda.com/innosoft/
