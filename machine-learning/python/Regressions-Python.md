@@ -2,13 +2,13 @@
 
 ---
 
-## Regressions Intro
+# Regressions Intro
 
 [../generic/Regressions-Intro.md](../generic/Regressions-Intro.md)
 
 ---
 
-## Linear Regression
+# Linear Regression
 
 [../generic/Regressions-Linear.md](../generic/Regressions-Linear.md)
 
@@ -26,6 +26,9 @@
 | Linear Regression | scipy.stats.linregress                | SciPy package |
 | Linear Regression | statsmodels.api.formula.OLS           | Statsmodels   |
 
+<!-- {"left" : 1.02, "top" : 2.19, "height" : 1, "width" : 15.47} -->
+
+
 - [sklearn.linear_model  docs](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model)
 - [scipy.stats.linregres](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.linregress.html)
 
@@ -42,7 +45,7 @@ Notes:
 
 - Let's do a simple bill/tip regression
 
-<img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.31, "height" : 4.23, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 3.29, "top" : 4.25, "height" : 5.62, "width" : 10.91} -->
 
 
 ---
@@ -69,7 +72,7 @@ predictions = model.predict(x)
 test_data_pd['predicted_tip'] =  predictions
 test_data
 ```
-<!-- {"left" : 0, "top" : 1.48, "height" : 2.12, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.38, "height" : 4.15, "width" : 15.28} -->
 
 ```text
 
@@ -85,7 +88,7 @@ test_data
 8  25.0   3.0       4.671429
 9  35.0   4.0       7.100000
 ```
-<!-- {"left" : 0, "top" : 4.17, "height" : 3.49, "width" : 5.44} -->
+<!-- {"left" : 0.85, "top" : 6.84, "height" : 3.49, "width" : 5.44} -->
 
 ---
 
@@ -100,7 +103,7 @@ print ("R2 : " , r2_score(y, predictions))
 print ("MSE : ", mean_squared_error(y, predictions))
 # MSE :  1.9114285714285715
 ```
-<!-- {"left" : 0, "top" : 1.06, "height" : 2.25, "width" : 9.83} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 2.57, "width" : 11.22} -->
 
 ```python
 import matplotlib.pyplot as plt
@@ -108,14 +111,14 @@ import matplotlib.pyplot as plt
 plt.scatter(x,y , color="black")
 plt.plot(x, predictions, color='blue')
 ```
-<!-- {"left" : 0, "top" : 3.56, "height" : 1.38, "width" : 6.79} -->
+<!-- {"left" : 0.85, "top" : 5.36, "height" : 1.57, "width" : 7.75} -->
 
-<img src="../../assets/images/machine-learning/linear-regression-plot-1.png" style="width:40%;"/><!-- {"left" : 2.5, "top" : 5.05, "height" : 3.44, "width" : 5.11} -->
+<img src="../../assets/images/machine-learning/linear-regression-plot-1.png" style="width:40%;"/><!-- {"left" : 5.6, "top" : 7.27, "height" : 4.24, "width" : 6.3} -->
 
 ---
 ## Lab: Linear Regressions
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 7.34, "top" : 1.07, "height" : 3.62, "width" : 2.72} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 12.7, "top" : 1.65, "height" : 5.61, "width" : 4.22} -->
 
  *  **Overview:**
     - Practice Linear Regressions
@@ -165,7 +168,7 @@ predictions = model.predict(x)
 print ("R2 : " , r2_score(y, predictions))
 # R2 = 0.48
 ```
-<!-- {"left" : 0, "top" : 1.48, "height" : 4.86, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.48, "height" : 6.44, "width" : 13.58} -->
 
 ---
 
@@ -184,7 +187,7 @@ print ("R2 : " , r2_score(y, predictions))
 print ("MSE : ", mean_squared_error(y, predictions))
 print ("RMSE : ", sqrt(mean_squared_error(y, predictions)) )
 ```
-<!-- {"left" : 0, "top" : 1.25, "height" : 3.32, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.53, "height" : 3.88, "width" : 11.98} -->
 
 ```text
 # output
@@ -200,12 +203,12 @@ MSE :  60702204448.745056
 RMSE :  246378.1736452015
 
 ```
-<!-- {"left" : 0, "top" : 4.91, "height" : 3.49, "width" : 5.61} -->
+<!-- {"left" : 0.85, "top" : 6.81, "height" : 4.08, "width" : 6.56} -->
 
 ---
 ## Lab: Multiple Linear Regression
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 7.22, "top" : 1.13, "height" : 3.68, "width" : 2.76} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 12.47, "top" : 1.89, "height" : 5.7, "width" : 4.28} -->
 
  *  **Overview:**
     - Practice Multiple Linear Regressions
@@ -221,18 +224,17 @@ Notes:
 
 ---
 
-## Regularization
+# Regularization
 
 [../generic/ML-Concepts-Regularization.md](../generic/ML-Concepts-Regularization.md)
 
 ---
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 7.63, "top" : 1.26, "height" : 1.68, "width" : 2.28} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.07, "top" : 1.89, "height" : 2.69, "width" : 3.63} -->
 
+* Let's go over what we have covered so far
 
-- Let's go over what we have covered so far
+* Any questions?
 
-- Any questions?
-
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.77, "top" : 3.94, "height" : 3.14, "width" : 4.71} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 4.8, "height" : 5.53, "width" : 8.31} -->

@@ -5,7 +5,7 @@
 ## Lesson Objectives
 
 * Learn the following classification algorithms
-    * Logistics Regression
+    * Logistic Regression
     * SVM
     * Naïve Bayes
 

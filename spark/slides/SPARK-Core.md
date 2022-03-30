@@ -595,7 +595,6 @@ data.show()
 
 <img src="../../assets/images/spark/partition-2.png" style="width:80%;" /><!-- {"left" : 2.48, "top" : 2.73, "height" : 8.24, "width" : 12.53} -->
 
-
 ---
 
 ## An Example
@@ -608,10 +607,9 @@ data.show()
 
 <img src="../../assets/images/spark/partition-4.png" style="width:80%;" /><!-- {"left" : 1.89, "top" : 2.59, "height" : 8.52, "width" : 13.73} -->
 
-
 ---
 
-## Rebalancing Partitions
+## Re-balancing Partitions
 
 * During a multi-step workflow, partitions might get uneven
 
@@ -624,62 +622,7 @@ data.show()
 
 ---
 
-## Fault Tolerance
-
-<img src="../../assets/images/spark/fault-tolerance-1.png" style="width:60%;float:right;" /><!-- {"left" : 11.48, "top" : 1.94, "height" : 2.36, "width" : 5.84} -->
-
-
-* Failures do happen (when, not if) in distributed computing
-    - Machines can crash, processes can crash (running out of memory ..etc)
-    - **Question for the class:** What other failure scenarios can you think of?
-* Spark can **automatically recover** from run time errors!
-    - No intervention required from devs or admins
-* Spark tracks transformation **lineage**
-* So if a partition is missing,  it can be re-calculated from its parents
-* Here if partition 4' is missing (due to a crash) it can be recomputed from 4
-    - Spark can re-read partition 4 from storage (HDFS or Cloud storage) and recompute 4'
-
----
-
-## Fault Tolerance
-
-* Narrow dependency examples: filter, distinct
-
-* Wide dependency examples: join, merge, sort
-
-* __Narrow dependency__ lineages are quicker to recover than __wide dependencies__
-
-* **Question for the class:**
-    - Why are narrow dependencies easier to recover in failure?
-
-<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:33%;float:left;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
-<img src="../../assets/images/spark/wide-dependency-1.png" style="width:22%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
-
-Notes:
-
-Narrow dependencies are easier to recover, because the amount of data to re-read is smaller
-
----
-
-## Fault Tolerance
-
-* Spark can recover from run-time failures
-    - Nodes crashing
-    - Tasks crashing
-
-* How ever it can not recover from 'user code' errors :-)
-
-* __Question for class__: how can the following code fail?
-
-```python
-average = total / count
-```
-<!-- {"left" : 0.8, "top" : 5.21, "height" : 0.57, "width" : 4.61} -->
-
-```scala
-val name_lower = name.toLower()
-```
-<!-- {"left" : 0.8, "top" : 6.14, "height" : 0.57, "width" : 5.94} -->
+# Anatomy of Spark Job
 
 ---
 
@@ -747,6 +690,64 @@ val sparkError = errors.filter(_.contains("spark"))
 
 <img src="../../assets/images/spark/shuffle-1.png" style="width:65%;" /><!-- {"left" : 2.68, "top" : 6.32, "height" : 4.85, "width" : 12.15} -->
 
+---
+
+## Fault Tolerance
+
+<img src="../../assets/images/spark/fault-tolerance-1.png" style="width:60%;float:right;" /><!-- {"left" : 11.48, "top" : 1.94, "height" : 2.36, "width" : 5.84} -->
+
+
+* Failures do happen (when, not if) in distributed computing
+    - Machines can crash, processes can crash (running out of memory ..etc)
+    - **Question for the class:** What other failure scenarios can you think of?
+* Spark can **automatically recover** from run time errors!
+    - No intervention required from devs or admins
+* Spark tracks transformation **lineage**
+* So if a partition is missing,  it can be re-calculated from its parents
+* Here if partition 4' is missing (due to a crash) it can be recomputed from 4
+    - Spark can re-read partition 4 from storage (HDFS or Cloud storage) and recompute 4'
+
+---
+
+## Narrow / Wide Dependencies
+
+* Narrow dependency examples: filter, distinct
+
+* Wide dependency examples: join, merge, sort
+
+* __Narrow dependency__ lineages are quicker to recover than __wide dependencies__
+
+* **Question for the class:**
+    - Why are narrow dependencies easier to recover in failure?
+
+<img src="../../assets/images/spark/narrow-dependency-1.png" style="width:33%;float:left;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/wide-dependency-1.png" style="width:22%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+
+Notes:
+
+Narrow dependencies are easier to recover, because the amount of data to re-read is smaller
+
+---
+
+## Failure Recovery
+
+* Spark can recover from run-time failures
+    - Nodes crashing
+    - Tasks crashing
+
+* How ever it can not recover from 'user code' errors :-)
+
+* __Question for class__: how can the following code fail?
+
+```python
+average = total / count
+```
+<!-- {"left" : 0.8, "top" : 5.21, "height" : 0.57, "width" : 4.61} -->
+
+```scala
+val name_lower = name.toLower()
+```
+<!-- {"left" : 0.8, "top" : 6.14, "height" : 0.57, "width" : 5.94} -->
 
 ---
 

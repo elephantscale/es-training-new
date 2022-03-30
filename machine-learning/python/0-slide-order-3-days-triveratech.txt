@@ -26,9 +26,15 @@ About-AI-Machine-Learning-Class-3-days-TriveraTech.md About-AI-Machine-Learning-
 
 
 ## Algorithms
+### Regressions
 Regressions-Python.md
-Classifications-Python.md
-Decision-Trees-Python.md
+
+### Classifications
+../generic/Classification-Intro.md
+./Classification-Logistic-Python.md
+./Classification-SVM-Python.md
+./Classification-Naive-Bayes-Python.md
+
 Unsupervised-Python.md
 
 ## Recommendations
