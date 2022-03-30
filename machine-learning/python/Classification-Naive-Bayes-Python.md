@@ -46,13 +46,13 @@ predictions = gnb.predict(iris.data)
 gnb.score(iris.data, iris.target)
 
 ```
-<!-- {"left" : 0, "top" : 1.34, "height" : 3.19, "width" : 7.78} -->
+<!-- {"left" : 0.85, "top" : 2.58, "height" : 4.35, "width" : 10.61} -->
 
 ---
 
 ## Lab: Naïve Bayes
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.93, "top" : 0.94, "height" : 3.77, "width" : 2.83} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.29, "top" : 1.39, "height" : 5.95, "width" : 4.47} -->
 
 * **Overview:** Use Naïve Bayes implementation
 
@@ -70,7 +70,7 @@ Notes:
 
 ## Lab: Evaluating Multiple Algorithms
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 7.11, "top" : 0.85, "height" : 3.78, "width" : 2.83} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.29, "top" : 1.39, "height" : 5.95, "width" : 4.47} -->
 
 * **Overview:**
     - We will use cross validation to evaluate multiple algorithms
@@ -87,9 +87,10 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.07, "top" : 1.89, "height" : 2.69, "width" : 3.63} -->
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 4.8, "height" : 5.53, "width" : 8.31} -->
