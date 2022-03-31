@@ -68,14 +68,14 @@ March 30, 2022
 * Lab: A Microservice Implementation in Spring Boot
 
 ### Cloud and Microservices
-* Introducing CLoud Microservices
+* Introducing Cloud Microservices
 * How to deploy Microservices to the cloud
 * Managed Services vs Unmanaged Services
 
 
-## Introduction To Docker and Microservices
+## Deeper look into Docker and Microservices
 
-### Docker Intro
+### Docker Overview
 
 * Docker architecture
 * Docker internals
@@ -125,12 +125,12 @@ March 30, 2022
 * Storage backup and restore
 * Labs
 
-## Kubernetes and Microservices
+## Deeper Look Kubernetes and Microservices
 
-### Kubernetes Intro
+### Kubernetes Overview
 
 * Evolution of orchestration systems
-* Kubernetes introduction and features
+* Kubernetes features
 * Benefits
 * Design principles
 * Case studies
@@ -144,7 +144,7 @@ March 30, 2022
 * Managing state in etcd
 * Pods and containers
 * Replicasets
-* Demonsets
+* Daemonsets
 * Labs
 
 ### Kubernetes Resources
@@ -165,7 +165,7 @@ March 30, 2022
 * Exposing services
 * Labs
 
-### Storage
+### Kubernetes Storage
 
 * Kubernetes volumes
 * Provisioning and using persistent volumes
@@ -191,7 +191,7 @@ March 30, 2022
 * Helm
 * Labs
 
-## Microservices Architecture 
+## Industrial-Strength Microservices Architecture 
 
 ### Data Management for Microservices
 
@@ -221,7 +221,7 @@ March 30, 2022
 
 
 ### Security and Microservices
- * STRIDE Attack
+ * STRIDE Attack Classification
  * Security Principles
  * Authentication and Authorization
  * Secrets Management
