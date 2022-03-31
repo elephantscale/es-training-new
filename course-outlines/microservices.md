@@ -73,7 +73,7 @@ March 30, 2022
 * Managed Services vs Unmanaged Services
 
 
-## Introduction To Docker and Microservies
+## Introduction To Docker and Microservices
 
 ### Docker Intro
 
@@ -195,7 +195,7 @@ March 30, 2022
 
 ### Data Management for Microservices
 
-* Database Per Serviccee
+* Database Per Services
 * CQRS Pattern
 * CAP Theorem
 * Transactions
@@ -209,7 +209,7 @@ March 30, 2022
 
 ### Contexts and Interfaces
  * Context
- * Schema Resgistry
+ * Schema Registry
  * Boundaries
  * REST and Microservices
  * Labs
@@ -228,10 +228,10 @@ March 30, 2022
  * Labs
 
 ### Testing
- * Teseting and Microservices
+ * Testing and Microservices
  * The "V" Model
  * TDD (Test Driven Development)
- * Testing and QUality: ATTD/BDD
+ * Testing and Quality: ATTD/BDD
  * Labs
 
 ### Messaging
@@ -249,13 +249,13 @@ March 30, 2022
  * Labs
 
 
-### Microservies Design Patterns
+### MicroServices Design Patterns
  * Aggregator
  * Branch
  * Proxy
  * Chain
  * Shared Resources
- * Asynchronous Mesaging
+ * Asynchronous Messaging
  * Bulkhead Isolation
  * Labs
 
