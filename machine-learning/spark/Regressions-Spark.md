@@ -25,7 +25,7 @@
 | Linear Regression                |                                                        | org.apache.spark.ml.regression. **LinearRegression**            |
 | Generalized  Linear Models (GLM) | -  Logistic  Regression   <br /> -  Poisson Regression | org.apache.spark.ml.regression. **GeneralizedLinearRegression** |
 
-<!-- {"left" : 1.1, "top" : 3.45, "height" : 5.48, "width" : 15.3} -->
+<!-- {"left" : 1.1, "top" : 3.45, "height" : 1, "width" : 15.3} -->
 
 Notes:
 
@@ -43,7 +43,7 @@ Notes:
 | featuresCol      | setFeaturesCol ()           | Which column as input features                                                                                                                                                                                    | "features"    |
 | predictionCol    | setPredictionCol ()         | Output prediction column                                                                                                                                                                                          | "prediction"  |
 
-<!-- {"left" : 0.41, "top" : 2.39, "height" : 8.78, "width" : 16.73, "columnwidth" : [2.46, 3.86, 8.19, 2.22]} -->
+<!-- {"left" : 0.41, "top" : 2.39, "height" : 1, "width" : 16.73, "columnwidth" : [2.46, 3.86, 8.19, 2.22]} -->
 
 
 Notes:

@@ -29,7 +29,7 @@
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
 
-<!-- {"left" : 0.15, "top" : 2.86, "height" : 3.19, "width" : 17.21, "columnwidth" : [3.23, 3.39, 2.24, 8.35]} -->
+<!-- {"left" : 0.15, "top" : 2.86, "height" : 1, "width" : 17.21, "columnwidth" : [3.23, 3.39, 2.24, 8.35]} -->
 
 
 * So our formula for predicting `SalePrice` is something like this:
@@ -140,7 +140,7 @@
 | 3                  | 2                   | 1900           | ???                                 |
 | 4                  | 3                   | 2300           | ???                                 |
 
-<!-- {"left" : 1.17, "top" : 3.79, "height" : 1.69, "width" : 15.17, "columnwidth" : [3.56, 3.28, 2.32, 6.01]} -->
+<!-- {"left" : 1.17, "top" : 3.79, "height" : 1, "width" : 15.17, "columnwidth" : [3.56, 3.28, 2.32, 6.01]} -->
 
 ---
 
@@ -172,7 +172,7 @@ Notes:
 | Data has well defined structure.                         | Structure is not well defined or non existing |
 | Data in a database tables are well defined.  10 columns, first column is integer, second column is timestamp ..etc | videos, images                                             |
 
-<!-- {"left" : 1.55, "top" : 2.39, "height" : 2.65, "width" : 14.41, "columnwidth" : [9.29, 5.12]} -->
+<!-- {"left" : 1.55, "top" : 2.39, "height" : 1, "width" : 14.41, "columnwidth" : [9.29, 5.12]} -->
 
 <img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="XXX image not found" style="max-width:60%;"/><!-- {"left" : 3.63, "top" : 5.52, "height" : 5.47, "width" : 10.25} -->
 
@@ -191,7 +191,7 @@ Notes:
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
 
-<!-- {"left" : 2.3, "top" : 3.73, "height" : 2.95, "width" : 12.9, "columnwidth" : [2.91, 3.08, 2.61, 4.32]} -->
+<!-- {"left" : 2.3, "top" : 3.73, "height" : 1, "width" : 12.9, "columnwidth" : [2.91, 3.08, 2.61, 4.32]} -->
 
 
 
@@ -447,7 +447,7 @@ AI starts with data, in this section we are going to look at some best practices
 | Exa Byte  | EB      | 1000 PB    |                                                                                                                                                                                                                                    |
 | Zeta Byte | ZB      | 1000 EB    | &nbsp;                                                                                                                                                                                                                                   |
 
-<!-- {"left" : 0.3, "top" : 1.89, "height" : 9.26, "width" : 16.89, "columnwidth" : [2.44, 2.42, 2.73, 9.31]} -->
+<!-- {"left" : 0.3, "top" : 1.89, "height" : 1, "width" : 16.89, "columnwidth" : [2.44, 2.42, 2.73, 9.31]} -->
 
 ---
 
@@ -514,7 +514,7 @@ AI starts with data, in this section we are going to look at some best practices
 | Cost per TB / month | $23                                             |   $26                                                   | $20                                                               |
 |                     | [More info](https://aws.amazon.com/s3/pricing/) | [More Info](https://cloud.google.com/storage/pricing) | [More info](https://azure.microsoft.com/en-us/pricing/calculator) |
 
-<!-- {"left" : 1.35, "top" : 5.22, "height" : 1.69, "width" : 14.81, "columnwidth" : [3.7, 3.7, 3.7, 3.7]} -->
+<!-- {"left" : 1.35, "top" : 5.22, "height" : 1, "width" : 14.81, "columnwidth" : [3.7, 3.7, 3.7, 3.7]} -->
 
 ---
 

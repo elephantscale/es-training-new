@@ -90,7 +90,7 @@ Notes:
 | Seed      | **setSeed** (seed: Long)                               | Initial seed setting                                                                                                                                                 |               |
 
 
-<!-- {"left" : 0.44, "top" : 2.38, "height" : 7.37, "width" : 16.61, "columnwidth" : [2.29, 4.07, 7.82, 2.43]} -->
+<!-- {"left" : 0.44, "top" : 2.38, "height" : 1, "width" : 16.61, "columnwidth" : [2.29, 4.07, 7.82, 2.43]} -->
 
 Notes:
 
@@ -178,7 +178,7 @@ Notes:
 | maxIter       | How many iterations                                                                                                                                       | 20            |
 | seed          | Initial seed setting                                                                                                                                      |               |
 
-<!-- {"left" : 0.82, "top" : 2.66, "height" : 6.81, "width" : 15.85} -->
+<!-- {"left" : 0.82, "top" : 2.66, "height" : 1, "width" : 15.85} -->
 
 
 Notes:
