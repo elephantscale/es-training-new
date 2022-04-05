@@ -2,7 +2,7 @@
 
 ## Overview
 
-![](../assets/images/logos/spark-logo-1-small.png)
+![](../../assets/images/logos/spark-logo-1-small.png)
 
 Apache Spark is a powerful, open-source processing engine for big data processing.  It is optimized for
 speed, ease of use, and sophisticated analytics.
