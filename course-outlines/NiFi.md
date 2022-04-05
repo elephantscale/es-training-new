@@ -1,4 +1,4 @@
-# Cloudera Dataflow (Nee Nifi)
+# Cloudera Dataflow (Nee NiFi)
 
 © Elephant Scale
 
