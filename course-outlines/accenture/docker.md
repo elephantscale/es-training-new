@@ -31,7 +31,7 @@ Developers, Architects, DevOps
 
 ## Duration
 
-4 halfdays
+4 half days
 
 ## Format
 
