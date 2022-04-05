@@ -19,7 +19,7 @@ This course is an admin level course for learning how to run and administer Post
 
 ## Duration
 
-Three Days
+3 Half days (some sections will be an overview)
 
 ## Audience
 
