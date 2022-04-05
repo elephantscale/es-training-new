@@ -22,7 +22,7 @@ Zero Install: There is no need to install software on students' machines.
 
 ## Course Outline:
 
-* Elasticsearch 
+ * Elasticsearch 
    - Elasticsearch functionality 
    - Indexing, updating, and deleting data
    - Searching your data
@@ -34,7 +34,15 @@ Zero Install: There is no need to install software on students' machines.
    - Improving performance
    - Cluster administration
 
-* X-Pack
+ * Kibana
+   - Data Visualization
+   - The Kibana Dashboard
+   - Designing for Scale
+   - The ELK Stack in Production
+   - Use cases
+
+
+ * X-Pack
   - What’s in X-Pack
   - Security
   - Monitoring
