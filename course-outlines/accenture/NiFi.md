@@ -28,7 +28,7 @@ April 2022
 
 
 ## Duration:
-* Four halfdays
+* Four half days
 
 ## Audience
 * Developers  & Administrators
