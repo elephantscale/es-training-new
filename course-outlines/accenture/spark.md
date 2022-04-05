@@ -29,7 +29,7 @@ This class is taught with Python language and using Jupyter environment.  This c
 
 ## Duration
 
-Three Days
+3 half days
 
 ## Audience
 
