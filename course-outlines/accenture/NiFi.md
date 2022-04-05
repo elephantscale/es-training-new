@@ -2,7 +2,7 @@
 
 © Elephant Scale
 
-2022-04-05
+April 2022
 
 ## Overview
 

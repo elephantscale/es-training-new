@@ -2,23 +2,20 @@
 
 ## Overview
 
+PostgresSQL is an very popular open-source RBMS server that has found grown in popularity.
+As an open source tool, Postgres is accessible to all but there is still a need for 
+developers and admins to be trained on the specifics of the Postgres plaform
+
 This course is an admin level course for learning how to run and administer PostgresSQl.  
 
 ## What You Will Learn
 
-* Spark ecosystem
-* New features in Spark3
-* Spark Shell
-* Spark Data structures (RDD / Dataframe / Dataset)
-* Spark SQL
-* Modern data formats and Spark
-* Spark API
-* Spark & Hadoop & Hive
-* Spark ML overview
-* Graph processing in Spark
-* Spark Streaming
-* Bonus: Spark performance tuning
-* Bonus: Delta Lake
+ * Installation
+ * Configuration
+ * Security
+ * Administration
+ * Backups
+ * Replication
 
 ## Duration
 
@@ -35,7 +32,7 @@ Introductory to Intermediate
 ## Prerequisites
 
 * Knowledge of SQL
-* Experience with another relational Daetabase
+* Experience with another relational Database
 
 ## Lab Environment
 
@@ -47,10 +44,6 @@ Introductory to Intermediate
 * Chrome browser
 
 ## Detailed Course Outline
-
-
-
-
 
 ## First Steps
 
