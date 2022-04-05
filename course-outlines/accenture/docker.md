@@ -1,7 +1,7 @@
 # Intermediate Containerization With Docker and Kubernetes
 
 © Elephant Scale  
-2022 April 
+April 5, 2022
 
 ![](../../assets/images/logos/docker-logo-3-small.png)
 
@@ -37,7 +37,7 @@ Developers, Architects, DevOps
 
 ## Duration
 
-3 half days
+5 half days
 
 ## Format
 
