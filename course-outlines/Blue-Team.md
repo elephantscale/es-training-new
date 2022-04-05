@@ -3,7 +3,7 @@ Blue Team Exercises
 
 (C) Copyright Elephant Scale
 
-April 5, 2020
+April 5, 2022
 
 Overview
 --------
