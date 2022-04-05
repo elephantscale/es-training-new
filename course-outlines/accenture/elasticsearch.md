@@ -9,8 +9,10 @@ ElasticSearch is one of the leading search platforms. With LogStash, added for l
 This course is intended for architects, developers, and administrators who are want to build versatile search solutions. It gives them practical level of experience, achieved through a combination of 50% lecture and 50% lab work. 
 
 ## Course Information
-Duration: 3 or 4 days
-Audience: Architects, Developers, Administrators
+Duration: 3days
+
+## Audience
+Architects, Developers, Administrators
 
 ## Course Prerequesites
  *  Be able to navigate Linux command lines
@@ -18,6 +20,7 @@ Audience: Architects, Developers, Administrators
 
 ## Lab Environment:
 Working environment will be provided for students.  Students would only need an SSH client and a browse.
+
 Zero Install: There is no need to install software on students' machines.
 
 ## Course Outline:
