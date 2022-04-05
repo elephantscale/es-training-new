@@ -9,7 +9,7 @@ ElasticSearch is one of the leading search platforms. With LogStash, added for l
 This course is intended for architects, developers, and administrators who are want to build versatile search solutions. It gives them practical level of experience, achieved through a combination of 50% lecture and 50% lab work. 
 
 ## Course Information
-Duration: 3days
+Duration: 3 half days
 
 ## Audience
 Architects, Developers, Administrators
