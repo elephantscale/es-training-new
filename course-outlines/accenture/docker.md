@@ -1,29 +1,35 @@
-# Intermediate Containerization With Docker 
+# Intermediate Containerization With Docker and Kubernetes
 
 © Elephant Scale  
-April 5, 2022
+2022 April 
 
 ![](../../assets/images/logos/docker-logo-3-small.png)
 
 ## Overview
 
-Containerization is one of the most important developments in application deployment in many years, and paves the way for many other exciting possibilities in dev/ops.
+Containerization has taken the IT world by storm, in the last few years. Large software houses, starting from Google and Amazon, are running significant portions of their production load in containers.
 
-Docker is the industry-standard container format and Docker tools are the cross-platform standard for creating containers.
+Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community.
 
-This course teaches containerization, docker and docker development to participants.
+This course introduces the students to containers in general, then continues with Kubernetes, its architecture, its use in production, and its best practices.
 
 ## What you will learn
 
-* Containerization technologies
-* Docker and its ecosystem
-* Using Docker images
-* Building custom docker images
-* Packaging applications into containers
-* Publishing images to registry
-* Docker networking
-* Orchestration with docker compose
-* Troubleshooting tips
+* Docker
+    * Benefits of containerization
+    * Docker concepts and architecture
+    * Using docker commands
+    * Dockerfiles and building dockers
+    * Deploying docker containers
+    * Working with container registries
+* Kubernetes
+    * Kubernetes concepts and architecture
+    * Orchestrating Docker containers with Kubernetes
+    * Labels and selectors
+    * Deploying resilient, scalable services
+    * Kubernetes volumes
+    * Kubernetes networking
+
 
 ## Audience
 
@@ -31,7 +37,7 @@ Developers, Architects, DevOps
 
 ## Duration
 
-4 half days
+3 half days
 
 ## Format
 
@@ -54,6 +60,9 @@ A cloud based lab environment will be provided.
 * SSH client for your platform
 
 ## Detailed Outline
+
+## Part 1 - Docker
+
 
 ### Containerization Introduction
 
@@ -127,6 +136,69 @@ A cloud based lab environment will be provided.
 * Troubleshooting and optimizing builds
 * Cleanup and maintenance
 
-### Next Steps
 
-* Discuss projects, use cases and next steps
+## Part 2 - Kubernetes
+
+### Kubernetes Intro
+
+* Evolution of orchestration systems
+* Kubernetes introduction and features
+* Benefits
+* Design principles
+* Case studies
+
+### Kubernetes Architecture
+
+* Kubernetes architecture
+* Controllers and workers
+* Namespaces
+* Controller, Scheduler, etcd, kubelet
+* Managing state in etcd
+* Pods and containers
+* Replicasets
+* Demonsets
+* Labs
+
+### Kubernetes Resources
+
+* Labels and annotations
+* Node selectors
+* Pod assignments
+* Resource requirements and limits
+* Scheduling and resource allocations
+* Labs
+
+### Networking
+
+* Docker networking
+* Kubernetes networking
+* Networking of pods and containers
+* DNS service
+* Exposing services
+* Labs
+
+### Storage
+
+* Kubernetes volumes
+* Provisioning and using persistent volumes
+* Dynamic volume allocation
+* Labs
+
+### Deploying Scalable Services
+
+* Deployments and Replica Sets
+* Services
+* Deployment strategies
+* Rolling out deployments
+* Blue/green deployments
+* Deploying services
+* Ingress
+* Labs
+
+### Kubernetes Ecosystem
+
+* Developer tools
+* Monitoring tools
+* Testing tools
+* Helm
+* Labs
