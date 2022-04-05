@@ -6,7 +6,7 @@ April 2022
 
 ## Overview
 
-* This three-day hands-on training course provides the fundamental concepts and experience necessary to automate the ingest, flow, transformation, and egress of data using Apache NiFi. 
+* This hands-on training course provides the fundamental concepts and experience necessary to automate the ingest, flow, transformation, and egress of data using Apache NiFi. 
 * Along with gaining a grasp of the key features, concepts, and benefits of NiFi, participants will create and run NiFi dataflows for a variety of scenarios. 
 * Students will gain expertise using processors, connections, and process groups, and will use NiFi Expression Language to control the flow of data from various sources to multiple destinations. 
 * Participants will monitor dataflows, examine progress of data through a dataflow, and connect dataflows to external systems such as Kafka and HDFS. 
@@ -28,7 +28,7 @@ April 2022
 
 
 ## Duration:
-* Three Days
+* Four halfdays
 
 ## Audience
 * Developers  & Administrators
