@@ -31,3 +31,5 @@
 * https://github.com/clong/DetectionLab - blue team lab
 
 * https://github.com/fabacab/awesome-cybersecurity-blueteam - read this list to get an overview of the categories that come up in blue team and some terminology
+
+* [atomic-red-team](https://github.com/redcanaryco/atomic-red-team)!!
