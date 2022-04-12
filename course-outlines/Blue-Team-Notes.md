@@ -33,3 +33,6 @@
 * https://github.com/fabacab/awesome-cybersecurity-blueteam - read this list to get an overview of the categories that come up in blue team and some terminology
 
 * [atomic-red-team](https://github.com/redcanaryco/atomic-red-team)!!
+
+* https://medium.com/@ERBATMAN/blue-team-labs-att-ck-da210e212b57#:~:text=MITRE%20ATT%26CK%20is%20a%20knowledge,lifecycle%2C%20from%20end%20to%20end.&text=Given%20Scenario%2C,Team%20member%20for%20a%20company.
+

@@ -174,7 +174,7 @@ Introductory to Intermediate
  * Finding unused indexes
  * Planning maintenance
 
-## Performance and Concurrency
+## Performance and Concurrency (some sections will be an overview)
 
  * Finding slow SQL statements
  * Finding out what makes SQL slow
@@ -185,7 +185,7 @@ Introductory to Intermediate
  * Using parallel query
  * Using optimistic locking
 
-## Backup and Recovery
+## Backup and Recovery (some sections will be an overview)
 
  * Understanding and controlling crash recovery
  * Planning backups

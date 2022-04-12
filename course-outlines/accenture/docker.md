@@ -1,7 +1,7 @@
 # Intermediate Containerization With Docker and Kubernetes
 
 © Elephant Scale  
-April 5, 2022
+April 12, 2022
 
 ![](../../assets/images/logos/docker-logo-3-small.png)
 
@@ -37,17 +37,20 @@ Developers, Architects, DevOps
 
 ## Duration
 
-5 half days
+* 3 half days (some sections will be an overview)
+  * Containerization
+  * Docker
+  * Kubernetes
 
 ## Format
 
-Lectures and hands-on labs. (50%, 50%)
+* Lectures and hands-on labs. (50%, 50%)
 
 ## Prerequisites
 
 * Must-have: comfortable with Linux environment.
 * Previous development experience in popular languages (Java, Python, Javascript) is recommended.
-* Some exposure to docker is assumed.
+* Some exposure to Docker is assumed.
 
 ## Lab environment
 
@@ -142,7 +145,7 @@ A cloud based lab environment will be provided.
 ### Kubernetes Intro
 
 * Evolution of orchestration systems
-* Kubernetes introduction and features
+* Kubernetes - introduction and features
 * Benefits
 * Design principles
 * Case studies
