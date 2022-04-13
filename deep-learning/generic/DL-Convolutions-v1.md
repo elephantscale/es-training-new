@@ -3,7 +3,7 @@
 
 ## Process of Convolution
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png" alt="CNN-Process-of-Convolution-1.png" style="background:white;width:20%;float:right;"/><!-- {"left" : 7.81, "top" : 0.99, "height" : 2.29, "width" : 2.29} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png" alt="CNN-Process-of-Convolution-1.png" style="background:white;width:20%;float:right;"/><!-- {"left" : 13.37, "top" : 1.89, "height" : 3.53, "width" : 3.53} -->
 
  * Imagine a small patch being slid across the input image. This sliding is called  **convolving**.
 
@@ -30,7 +30,7 @@ Notes:
 | 0 | 1 | 1 |
 | 1 | 0 | 0 |
 | 1 | 0 | 1 |
-<!-- {"left" : 3.36, "top" : 2.17, "height" : 1.6, "width" : 3.53} -->
+<!-- {"left" : 6.98, "top" : 3.35, "height" : 1, "width" : 3.53} -->
 
  * The weight matrix is a filter to extract some particular features from the original image. It could be for  extracting curves, identifying a specific color, or recognizing a particular voice.
  * Assume the input to be 6X6
@@ -44,7 +44,7 @@ Notes:
 | 2  | 32 | 23  | 58 | 8  | 208 |
 | 4  | 23 | 2   | 1  | 3  | 9   |
 
-<!-- {"left" : 5.69, "top" : 5.98, "height" : 2.8, "width" : 4.3} -->
+<!-- {"left" : 5.33, "top" : 8.37, "height" : 3.47, "width" : 6.84} -->
 
 
 Notes: 
@@ -69,8 +69,7 @@ Notes:
 |   2    |   32   |   23    | 58    | 8  | 208 |
 |   4    |   23   |   2     | 1     | 3  | 9   |
 
-<!-- {"left" : 1.02, "top" : 3.88, "height" : 2.8, "width" : 5.46} -->
-&nbsp;
+<!-- {"left" : 1.15, "top" : 6.76, "height" : 1, "width" : 9.86} -->
 
 |   | Filter |   |
 |---|--------|---|
@@ -78,7 +77,7 @@ Notes:
 | 1 | 0      | 0 |
 | 1 | 0      | 1 |
 
-<!-- {"left" : 6.96, "top" : 3.88, "height" : 1.6, "width" : 2.28} -->
+<!-- {"left" : 11.84, "top" : 7.65, "height" : 1, "width" : 4.51} -->
 
 
 ---
@@ -94,7 +93,7 @@ Notes:
 | 0   | 0 | 0 | 0 |
 | 0   | 0 | 0 | 0 |
 
-<!-- {"left" : 0.25, "top" : 1.66, "height" : 2, "width" : 9.75} -->
+<!-- {"left" : 3.87, "top" : 3.08, "height" : 1, "width" : 9.75} -->
 
  * For example, when the weighted matrix starts from the top left corner of the input layer, the output value is calculated as:
 
@@ -122,7 +121,7 @@ Notes:
 | 2  |   32   |   23    |   58   | 8  | 208 |
 | 4  |   23   |   2     |   1    | 3  | 9   |
 
-<!-- {"left" : 1.02, "top" : 4.39, "height" : 2.8, "width" : 5.46} -->
+<!-- {"left" : 1.15, "top" : 6.76, "height" : 1, "width" : 9.86} -->
 
 |   | Filter |   |
 |---|--------|---|
@@ -130,7 +129,7 @@ Notes:
 | 1 | 0      | 0 |
 | 1 | 0      | 1 |
 
-<!-- {"left" : 6.96, "top" : 4.39, "height" : 1.6, "width" : 2.28} -->
+<!-- {"left" : 11.84, "top" : 7.65, "height" : 1, "width" : 4.51} -->
 
 
 ---
@@ -146,7 +145,7 @@ Notes:
 | 0   | 0   | 0 | 0 |
 | 0   | 0   | 0 | 0 |
 
-<!-- {"left" : 0.25, "top" : 1.6, "height" : 2, "width" : 9.75} -->
+<!-- {"left" : 3.87, "top" : 3.08, "height" : 1, "width" : 9.75} -->
 
  *  **(Activation/Feature Map)** 
 
@@ -189,7 +188,7 @@ Notes:
 
  * The image shows two kernels - vertical and horizontal filters. Each is a 5x5 matrix with all 0s, except 1 in vertical line for vertical filter and 1 in horizontal line in horizontal filter.
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-convolutions-example-3.png" alt="CNN-convolutions-example-3.png" style="background:white;width:40%;"/><!-- {"left" : 2.59, "top" : 2.93, "height" : 3.2, "width" : 5.06} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-convolutions-example-3.png" alt="CNN-convolutions-example-3.png" style="background:white;width:40%;"/><!-- {"left" : 9.87, "top" : 3.42, "height" : 4.72, "width" : 7.46} -->
 
 
  *  **VERTICAL AND HORIZONTAL FILTERS** 
@@ -208,7 +207,7 @@ Notes:
 
  * The output image has a feature map, which highlights the areas in the image that are most similar to the filter.
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-convolutions-example-3.png" alt="CNN-convolutions-example-3.png" style="background:white;width:50%;"/><!-- {"left" : 2.11, "top" : 3.89, "height" : 3.81, "width" : 6.02} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-convolutions-example-3.png" alt="CNN-convolutions-example-3.png" style="background:white;width:50%;"/><!-- {"left" : 4.55, "top" : 6.01, "height" : 5.32, "width" : 8.4} -->
 
 
 
@@ -226,7 +225,7 @@ Notes:
  * A neuron located in row i, column j of a given layer is connected to neurons in the previous layer located in rows i to i+fh-1, columns j to j+fw-1, where fh and fw are the height and width of the receptive field.
  * To maintain height and width dimensions of convolutional layer same as previous layer, one zero-pads the input layer.
 
-<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png" alt="CNN-Zero-Padding-1.png" style="background:white;width:40%;"/><!-- {"left" : 3, "top" : 4.13, "height" : 3.17, "width" : 4.26} -->
+<img src="../../assets/images/deep-learning/CNN-Zero-Padding-1.png" alt="CNN-Zero-Padding-1.png" style="background:white;width:40%;"/><!-- {"left" : 10.77, "top" : 3.68, "height" : 4.78, "width" : 6.43} -->
 
  *  *CNN layer with zero padding* 
 
@@ -289,7 +288,7 @@ Notes:
 
  *  *CNN layers with multiple feature maps* 
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;"/><!-- {"left" : 3.02, "top" : 5.73, "height" : 2.75, "width" : 4.2} -->
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;"/><!-- {"left" : 10.31, "top" : 3.5, "height" : 4.42, "width" : 6.76} -->
 
 
 Notes: 
@@ -301,7 +300,7 @@ Notes:
 
 ## Stacking Multiple Feature Maps (Contd.)
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;"/><!-- {"left" : 5.23, "top" : 1.69, "height" : 3.21, "width" : 4.92} -->
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;"/><!-- {"left" : 10.57, "top" : 2.31, "height" : 4.29, "width" : 6.58} -->
 
  * Images that are greyscale have just one channel. So it needs just 1 sublayer. Colored images have three channels - Red, Green and Blue. So it needs 3 sublayers.
 
@@ -318,7 +317,7 @@ Notes:
 
 ## Stacking Multiple Feature Maps (Contd.)
 
-<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;"/><!-- {"left" : 5.23, "top" : 1.69, "height" : 3.21, "width" : 4.92} -->
+<img src="../../assets/images/deep-learning/CNN-feature-maps-1.png" alt="CNN-feature-maps-1.png" style="background:white;width:40%;float:right;"/><!-- {"left" : 10.57, "top" : 2.24, "height" : 4.25, "width" : 6.52} -->
 
  * The fact that all neurons in a feature map has just one set of parameters dramatically reduces the no of parameters needed.
  * This also means that once a CNN has learned to recognize a pattern in one location, it can recognize it in any other location. This is known as location invariance. 
@@ -333,7 +332,7 @@ Notes:
 
 ## ReLU Layer
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="activation-sigmoid-vs-relu.png" style="background:white;width:60%;"/><!-- {"left" : 1.44, "top" : 0.96, "height" : 2.93, "width" : 7.36} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="activation-sigmoid-vs-relu.png" style="background:white;width:60%;"/> <!-- {"left" : 4.1, "top" : 1.65, "height" : 3.7, "width" : 9.3} -->
 
  * After every conventional layer, a non linearity is applied to the neural network. 
  * Research has found that ReLU layers can train the neural networks much faster than other activation functions.
@@ -350,7 +349,7 @@ Notes:
 
 ## Pooling Layer
 
-<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:40%;"/><!-- {"left" : 8.13, "top" : 1, "height" : 0.99, "width" : 2.01} -->
+<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:30%;"/><!-- {"left" : 12.29, "top" : 1.89, "height" : 2.45, "width" : 4.99} -->
 
  * A pooling layer is used to sub-sample (i.e., shrink) the input image.
  * Like a convolutional layer, a pooling layer is connected to a small set of neurons in input image which fall within a receptive field.
@@ -383,7 +382,7 @@ Notes:
 
 ## Pooling Layer
 
-<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:50%;"/><!-- {"left" : 2.26, "top" : 1.1, "height" : 2.83, "width" : 5.73} -->
+<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png" alt="CNN-Max-Pooling.png" style="background:white;width:50%;"/><!-- {"left" : 4.89, "top" : 1.68, "height" : 3.82, "width" : 7.72} -->
 
  * The figure shows a max pooling layer with 2x2 kernel, stride 2 and no padding. 
  * Max-pooling involves taking the maximum value out of a group of input values.

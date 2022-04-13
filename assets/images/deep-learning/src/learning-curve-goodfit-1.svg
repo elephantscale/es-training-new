@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="10 139 938 731" width="938" height="731">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#2e006e">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-04-10 07:06:29 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-dasharray="none" fill-opacity="1" stroke="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="10" y="139" width="938" height="731"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_9">
+        <line x1="76" y1="163.9" x2="76" y2="802.3262" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_8">
+        <line x1="922.6" y1="803.4437" x2="77.1175" y2="803.4437" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(773.78825 815.117)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40"> Epochs</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(15 261.39844) rotate(-90)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Loss</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(774.5988 523)" fill="#be8d25">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#be8d25" x="0" y="40">Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(507.7168 646)" fill="#8d7dd4">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#8d7dd4" x="0" y="40">Validation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 134.52764 220.36364 C 134.52764 220.36364 163.9883 263.078 180.14724 292.53865 C 196.30618 321.9993 228.76813 358.83113 250.85762 385.3385 C 272.9471 411.8459 292.10735 433.9594 327.45053 459.0022 C 362.7937 484.04494 387.8365 500.2279 395.20765 506.1344 C 402.5788 512.04096 482.72525 546.95197 495.3787 551.2498 C 524.83935 561.11805 575.9573 581.6709 614.68595 588.60986 C 671.5424 598.79024 711.9037 603.3522 784.0787 598.9343 C 827.7516 596.27426 871.557 596.6674 915.1751 600.1108" stroke="#e3a92e" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_2">
+        <path d="M 119.04098 256.89065 C 119.04098 256.89065 167.22969 362.29594 196.5943 392.4049 C 225.95892 422.5138 250.7856 439.84927 276.3806 456.3924 C 301.9756 472.9355 301.13523 492.5279 339.55173 503.06843 C 377.96824 513.60896 392.9987 518.8912 423.87597 536.20267 C 454.75323 553.5141 470.552 573.0825 501.4053 580.62175 C 532.25854 588.161 536.7965 601.7028 576.7016 607.0331 C 616.6068 612.3634 709.1906 608.54575 743.8134 613.0597 C 778.4363 617.5736 811.57055 619.8306 849.2187 628.11416 C 870.8378 633.05166 892.9797 635.3255 915.1511 634.8851" stroke="#aa97fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+    </g>
+  </g>
+</svg>

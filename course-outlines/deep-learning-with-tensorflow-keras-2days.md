@@ -92,5 +92,5 @@ Even if you haven't done any Python programming, Python is such an easy language
 - Lab: Feedforward Neural Networks
   
 ### Applying NNs
-- Lab : Solving classification / regression problems with DN
-- Lab : CPU vs GPU benchmark
+- Lab: Solving classification / regression problems with DN
+- Lab: CPU vs GPU benchmark

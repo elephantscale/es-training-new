@@ -1,13 +1,13 @@
 # Introduction to Neural Networks
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/artificial-neural-network-2-brain.png"  style="width:15%;" />
+<img src="../../assets/images/deep-learning/3rd-party/artificial-neural-network-2-brain.png"  style="width:20%;" /> <!-- {"left" : 7.54, "top" : 8.02, "height" : 2.66, "width" : 2.41} -->
+
+
 ---
 
 ## Lesson Objectives
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/artificial-neural-network-2-brain.png"  style="width:45%;float:right;" />
+<img src="../../assets/images/deep-learning/3rd-party/artificial-neural-network-2-brain.png"  style="width:40%;float:right;" /> <!-- {"left" : 12.85, "top" : 1.89, "height" : 4.49, "width" : 4.07} -->
 
 - Understand neural network architectures
 
@@ -33,7 +33,7 @@ Notes:
 For example planes are inspired by birds first, but now modern planes have evolved a lot from their original designs
 
 
-<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="XXX image missing" style="background:white;max-width:100%" width="45%"/><!-- {"left" : 1.84, "top" : 5.09, "height" : 3.45, "width" : 6.58} -->
+<img src="../../assets/images/deep-learning/neuron_anatomy.png" alt="XXX image missing" style="background:white;max-width:100%" width="45%"/><!-- {"left" : 4.91, "top" : 7.35, "height" : 4.03, "width" : 7.68} -->
 
 
 
@@ -71,7 +71,7 @@ Notes:
 
 ## 1943: McCulloch Pitts Neural Model
 
-<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="width:50%;float:right;" /> <!-- {"left" : 5.98, "top" : 1.27, "height" : 1.81, "width" : 4.11} -->
+<img src="../../assets/images/deep-learning/McCulloch.png" alt="XXX image missing" style="width:50%;float:right;" /> <!-- {"left" : 10.69, "top" : 2.29, "height" : 2.83, "width" : 6.42} -->
 
  * McCulloch and Pitts defined a simple model of a Neuron ([paper](https://scholar.google.com/scholar?q=A+Logical+Calculus+of+Ideas+Immanent+in+Nervous+Activity))
 
@@ -102,7 +102,7 @@ Notes:
 
 * Simplest type of Feedforward neural network
 
-<img src="../../assets/images/deep-learning/perceptron-03.png"  style="width:50%;float:left;"/> &nbsp;<!-- {"left" : 0.61, "top" : 3.53, "height" : 2.89, "width" : 5.57} --> <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg"  style="width:30%;float:right;" /><!-- {"left" : 6.68, "top" : 3.18, "height" : 3.59, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png"  style="width:50%;float:left;"/> &nbsp;<!-- {"left" : 2.93, "top" : 5.87, "height" : 3.74, "width" : 7.2} --> <img src="../../assets/images/deep-learning/3rd-party/Mark_I_perceptron.jpeg"  style="width:30%;float:right;" /><!-- {"left" : 10.78, "top" : 5.42, "height" : 4.64, "width" : 3.79} -->
 
 
 
@@ -119,7 +119,7 @@ Mark I Perceptron at the Cornell Aeronautical Laboratory', hardware implementati
 * Output: YES / NO
   - If the final score is > 50, then the answer is YES, otherwise NO
 
-<img src="../../assets/images/deep-learning/perceptron-02.png"  style="width:70%;"/><!-- {"left" : 0.91, "top" : 4.69, "height" : 2.77, "width" : 8.43} -->
+<img src="../../assets/images/deep-learning/perceptron-02.png"  style="width:70%;"/><!-- {"left" : 3.44, "top" : 7.57, "height" : 3.49, "width" : 10.61} -->
 
 ---
 ## Simple Perceptron Example
@@ -134,7 +134,7 @@ Mark I Perceptron at the Cornell Aeronautical Laboratory', hardware implementati
 
  * Please note, here the weights are assigned manually
 
-<img src="../../assets/images/deep-learning/perceptron-02.png" alt="XXX image missing" style="background:white;width:60%;"/><!-- {"left" : 1.07, "top" : 5.07, "height" : 2.66, "width" : 8.11} -->
+<img src="../../assets/images/deep-learning/perceptron-02.png" alt="XXX image missing" style="background:white;width:60%;"/><!-- {"left" : 3.43, "top" : 7.47, "height" : 3.49, "width" : 10.63} -->
 
 
 ---
@@ -145,13 +145,13 @@ Mark I Perceptron at the Cornell Aeronautical Laboratory', hardware implementati
  * Each input has their weights (W1, W2, ... Wm)
  * The input '1' and weight 'W0' is bias term
 
-<img src="../../assets/images/deep-learning/perceptron-03.png"  style="width:70%;"/><!-- {"left" : 1.19, "top" : 3.83, "height" : 4.24, "width" : 7.86} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png"  style="width:70%;"/><!-- {"left" : 3.92, "top" : 5.53, "height" : 5.21, "width" : 9.65} -->
 
 ---
 
 ## Perceptron Operations
 
-<img src="../../assets/images/deep-learning/perceptron-03.png" style="width:50%;float:right;"/><!-- {"left" : 5.58, "top" : 1.5, "height" : 2.24, "width" : 4.16} -->
+<img src="../../assets/images/deep-learning/perceptron-03.png" style="width:50%;float:right;"/><!-- {"left" : 11.21, "top" : 2.21, "height" : 3.11, "width" : 5.77} -->
 
 * Step 1: Calculate sum of inputs and weights  
 __`z = w0 + w1.x1 + w2.x2 + ... + wn.xn`__
@@ -174,7 +174,7 @@ __`hw(x) = step (wT · x)`__
 
 ## Quiz: Guessing the Weights
 
-<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:55%;float:right;" /><!-- {"left" : 5.67, "top" : 1.35, "height" : 1.44, "width" : 4.29} -->
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:55%;float:right;" /><!-- {"left" : 10.16, "top" : 2.2, "height" : 2.29, "width" : 6.81} -->
 
 
 - Let's revisit our 'concert going' perceptron.  
@@ -195,13 +195,13 @@ __`hw(x) = step (wT · x)`__
 | 0       | 1              | 0               | 0               |
 | 0       | 0              | 1               | 0               |
 
-<!-- {"left" : 3.45, "top" : 5.09, "height" : 3.73, "width" : 6.8, "columnwidth" : [1.25, 1.61, 1.81, 2.13]} -->
+<!-- {"left" : 3.06, "top" : 7.27, "height" : 1, "width" : 11.39} -->
 
 ---
 
 ## Quiz: Guessing the Weights
 
-<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:50%;float:right;" /><!-- {"left" : 5.37, "top" : 1.03, "height" : 1.59, "width" : 4.74} -->
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:50%;float:right;" /><!-- {"left" : 11.31, "top" : 2.09, "height" : 1.94, "width" : 5.78} -->
 
 - Let's start with equal weights for all inputs:  
 weather = 33, public transit = 33, friend = 33
@@ -221,13 +221,13 @@ weather = 33, public transit = 33, friend = 33
 | 0 * 33  | 1 * 33         | 0 * 33          | 33    | 0 - ok           | 0      |
 | 0 * 33  | 0  * 33        | 1 * 33          | 33    | 0 - ok           | 0      |
 
-<!-- {"left" : 2.48, "top" : 4.62, "height" : 3.95, "width" : 7.57, "columnwidth" : [1.25, 1.17, 1.58, 1, 1.47, 1.1]} -->
+<!-- {"left" : 0.85, "top" : 7.24, "height" : 3.95, "width" : 15.8} -->
 
 ---
 
 ## Quiz: Guessing the Weights
 
-<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:45%;float:right;" /><!-- {"left" : 5.76, "top" : 1.28, "height" : 1.45, "width" : 4.33} -->
+<img src="../../assets/images/deep-learning/perceptron-04.png"  style="width:45%;float:right;" /><!-- {"left" : 10.96, "top" : 1.89, "height" : 2.06, "width" : 6.15} -->
 
 - Looks like 'public transit' isn't as important as 'friend'
 - And 'weather' seems important
@@ -247,7 +247,7 @@ weather = 33, public transit = 33, friend = 33
 | 0 * 35  | 1 * 20         | 0 * 30          | 20    | 0 - ok           | 0      |
 | 0 * 35  | 0  * 20        | 1 * 30          | 30    | 0 - ok           | 0      |
 
-<!-- {"left" : 3.85, "top" : 4.65, "height" : 3.91, "width" : 6.41, "columnwidth" : [1.26, 1.14, 1.06, 0.9, 0.98, 1.06]} -->
+<!-- {"left" : 10.96, "top" : 1.89, "height" : 2.06, "width" : 6.15} -->
 
 Notes: 
 
@@ -274,16 +274,14 @@ Notes:
 
 ## Backpropagation Demos
 
-<!-- TODO shiva -->
+ * **Animation (Regression):**[link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
 
- * **Animation (Regression)** : [link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:35%;"/><!-- {"left" : 10.67, "top" : 2.41, "height" : 3.26, "width" : 6.51} -->
 
-<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:35%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
-
- * **Animation (Classification)** :
+ * **Animation (Classification):**
   [link-youtube](https://youtu.be/sLsCN9ZL9RI), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4)
 
-<img src="../../assets/images/deep-learning/neural-network-animation-1.png" style="width:40%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" style="width:40%;"/><!-- {"left" : 4.09, "top" : 6.48, "height" : 4.66, "width" : 9.31} -->
 
 ---
 
@@ -319,7 +317,7 @@ Notes:
 ---
 ## The XOR problem
 
-<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="width:40%;float:right;"/> <!-- {"left" : 5.88, "top" : 1.74, "height" : 2.94, "width" : 4.18} -->
+<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="width:40%;float:right;"/> <!-- {"left" : 11.12, "top" : 2.13, "height" : 4.08, "width" : 5.81} -->
 
  * What happens if we don't have linear separability?
 
@@ -345,7 +343,7 @@ Notes:
      - How would we do that?
  * What if we add a new layer to our network?
 
-<img src="../../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="width:32%;"/><!-- {"left" : 3.29, "top" : 3.78, "height" : 3.52, "width" : 3.66} -->
+<img src="../../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="width:32%;"/><!-- {"left" : 11.77, "top" : 2, "height" : 5.2, "width" : 5.41} -->
 
 
 
@@ -423,9 +421,9 @@ Notes:
 - Each layer has many neurons
 - Each neuron is connected to neurons on previous layer
 - Information flows through ONE-WAY (no feedback loop)
-- Composed of : Input, Output and Middle (Hidden) layers
+- Composed of: Input, Output and Middle (Hidden) layers
 
-<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="XXX image missing" style="max-width:100%;width:35%;"/><!-- {"left" : 3.09, "top" : 4.13, "height" : 3.73, "width" : 4.06} -->
+<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="XXX image missing" style="max-width:100%;width:35%;"/><!-- {"left" : 11.77, "top" : 2.67, "height" : 4.62, "width" : 5.03} -->
 
 
 ---
@@ -435,7 +433,7 @@ Notes:
 - Layers between Input and Output are called **Hidden Layers**
 - If there is more than one hidden layers, it is called **Deep Neural Network**
 
-<img src="../../assets/images/deep-learning/hidden-layer.png" alt="XXX image missing" style="max-width:100%;width:35%;"/> &nbsp; &nbsp; &nbsp; <!-- {"left" : 0.9, "top" : 3.4, "height" : 3.53, "width" : 3.66} --><img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="XXX image missing" style="max-width:100%;width:35%;"/><!-- {"left" : 5.28, "top" : 3.35, "height" : 3.62, "width" : 3.94} -->
+<img src="../../assets/images/deep-learning/hidden-layer.png" alt="XXX image missing" style="max-width:100%;width:35%;"/> &nbsp; &nbsp; &nbsp; <!-- {"left" : 9.04, "top" : 5.58, "height" : 4.69, "width" : 5.11} --><img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" alt="XXX image missing" style="max-width:100%;width:35%;"/><!-- {"left" : 3.36, "top" : 5.64, "height" : 4.58, "width" : 4.75} -->
 
 
 ---
@@ -450,7 +448,7 @@ Notes:
 
 - But using hidden layers, we can solve it very easily
 
-<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="width:27%;"/> &nbsp;  &nbsp; <!-- {"left" : 0.83, "top" : 4.35, "height" : 3.32, "width" : 4.74} --><img src="../../assets/images/deep-learning/3rd-party/XOR_perceptron_net.png" alt="XXX image missing" style="width:27%;"/><!-- {"left" : 6.07, "top" : 4.55, "height" : 3.32, "width" : 3.35} -->
+<img src="../../assets/images/deep-learning/xor.png" alt="XXX image missing" style="width:27%;"/> &nbsp;  &nbsp; <!-- {"left" : 1.93, "top" : 6.78, "height" : 4.22, "width" : 6.02} --> <img src="../../assets/images/deep-learning/3rd-party/XOR_perceptron_net.png" alt="XXX image missing" style="width:27%;"/> <!-- {"left" : 10.92, "top" : 6.58, "height" : 4.61, "width" : 4.65} -->
 
 
 ---
@@ -466,11 +464,11 @@ Notes:
 | 3                 | 1                   | 1500                 | 3500               | 319                       |
 | 4                 | 2                   | 2300                 | 5000               | 599                       |
 
-<!-- {"left" : 0.25, "top" : 1.01, "height" : 2.19, "width" : 9.75} -->
+<!-- {"left" : 0.4, "top" : 1.89, "height" : 3.13, "width" : 16.7} -->
 
 <br clear="all" />
 
-<img src="../../assets/images/deep-learning/network-sizing-1-regression.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 5.78, "top" : 3.48, "height" : 1.46, "width" : 4.34} -->
+<img src="../../assets/images/deep-learning/network-sizing-1-regression.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 10.89, "top" : 6.04, "height" : 2.05, "width" : 6.09} -->
 
 - Input layer sizing:
   - Match the number of input dimensions = 4 (bedrooms, bathrooms, house size, lot size)
@@ -491,9 +489,9 @@ Notes:
 | 80,000           | 750                    | 100,000                | 1                      |
 | 100,000          | 800                    | 50,000                 | 1                      |
 
-<!-- {"left" : 0.26, "top" : 1, "height" : 2.19, "width" : 9.75} -->
+<!-- {"left" : 0.36, "top" : 1.89, "height" : 1, "width" : 16.79} -->
 
-<img src="../../assets/images/deep-learning/network-sizing-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 5.49, "top" : 3.83, "height" : 1.4, "width" : 4.48} -->
+<img src="../../assets/images/deep-learning/network-sizing-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;"/><!-- {"left" : 10.24, "top" : 5.65, "height" : 2.13, "width" : 6.82} -->
 
 
 - Input layer sizing
@@ -509,9 +507,9 @@ Notes:
 
 ## Sizing Multi Classification Network
 
-<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 7.38, "top" : 1.05, "height" : 1.81, "width" : 2.73} -->
+<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 11.6, "top" : 2.01, "height" : 3.53, "width" : 5.32} -->
 
-<img src="../../assets/images/deep-learning/network-sizing-3-multi-classification.png" alt="XXX image missing" style="width:50%;float:right;clear:both;"/><!-- {"left" : 5.87, "top" : 3.63, "height" : 1.63, "width" : 4.22} -->
+<img src="../../assets/images/deep-learning/network-sizing-3-multi-classification.png" alt="XXX image missing" style="width:50%;float:right;clear:both;"/><!-- {"left" : 9.92, "top" : 6.08, "height" : 2.67, "width" : 6.9} -->
 
 - Input layer sizing
   - Match input dimensions
@@ -535,8 +533,9 @@ Notes:
 |-------------------------------|-----|-----|------|------|-----|-----|-----|-----|------|-----|
 | Probability <br/> (Total 1.0) | 0.0 | 0.0 | 0.02 | 0.95 | 0.0 | 0.0 | 0.0 | 0.0 | 0.03 | 0.0 |
 
-<!-- {"left" : 0.55, "top" : 1.1, "height" : 1.19, "width" : 9.75, "columnwidth" : [1.76, 0.74, 0.74, 0.74, 0.74, 0.74,0.74,0.74,0.74,0.74,0.74]} -->
+<!-- {"left" : 0.5, "top" : 1.89, "height" : 1, "width" : 16.5} -->
 
+<br/>
 
 - The Softmax function produces probabilities for output values.
 
@@ -574,7 +573,7 @@ Notes:
 
 ## Quiz: Design Neural Networks
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 12.55, "top" : 1.68, "height" : 3.25, "width" : 4.88} -->
 
 * **Scenario 1: - We want to predict stock market index  (e.g.  DOW)**
 
@@ -587,13 +586,13 @@ Notes:
 * **Design Input/Output layers of NN**
 
 
-<img src="../../assets/images/deep-learning/neural-network-design-1.png" style="width:30%;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/deep-learning/neural-network-design-1.png" style="width:30%;" /> <!-- {"left" : 11.23, "top" : 5.78, "height" : 5.2, "width" : 5.92} -->
 
 ---
 
 ## Quiz: Design Neural Networks
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 12.55, "top" : 1.68, "height" : 3.25, "width" : 4.88} -->
 
 * **Scenario 2: - We want to analyze customer tickets and assign priority**
 
@@ -606,7 +605,7 @@ Notes:
 * **Design Input/Output layers of NN**
 
 
-<img src="../../assets/images/deep-learning/neural-network-design-1.png" style="width:28%;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/deep-learning/neural-network-design-1.png" style="width:28%;" /> <!-- {"left" : 11.23, "top" : 5.78, "height" : 5.2, "width" : 5.92} -->
 
 ---
 
@@ -621,13 +620,13 @@ Notes:
 * Convolution layer neurons scan a particular area of image (their 'field of vision')
   - And they pick up patterns in images (e.g. eyes, wheels)
 
-<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:20%;" /> <!-- {"left" : 0.48, "top" : 5.45, "height" : 1.85, "width" : 1.91} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png" style="width:20%;" /> <!-- {"left" : 2.98, "top" : 5.45, "height" : 1.85, "width" : 1.8} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png"  style="width:20%;" /> <!-- {"left" : 5.49, "top" : 5.45, "height" : 1.85, "width" : 1.79} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png"  style="width:20%;" /><!-- {"left" : 7.98, "top" : 5.45, "height" : 1.85, "width" : 1.79} -->
+<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:20%;" /> <!-- {"left" : 1.63, "top" : 6.69, "height" : 2.84, "width" : 2.93} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png" style="width:20%;" /> <!-- {"left" : 5.46, "top" : 6.69, "height" : 2.84, "width" : 2.76} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png"  style="width:20%;" /> <!-- {"left" : 9.31, "top" : 6.69, "height" : 2.84, "width" : 2.74} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png"  style="width:20%;" /><!-- {"left" : 13.13, "top" : 6.69, "height" : 2.84, "width" : 2.74} -->
 
 ---
 
 ## CNNs
 
-<img src="../../assets/images/deep-learning/3rd-party/Face-Recognition-2.png"  style="width:40%;float:right;" /> <!-- {"left" : 6.23, "top" : 1.1, "height" : 5.04, "width" : 3.81} -->
+<img src="../../assets/images/deep-learning/3rd-party/Face-Recognition-2.png"  style="width:40%;float:right;" /> <!-- {"left" : 11.75, "top" : 2.12, "height" : 7.25, "width" : 5.48} -->
 
 - Each layer builds on previous layer's work
 
@@ -643,7 +642,7 @@ Notes:
 
 * CNNs are heavily used in **computer vision** applications
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-design-example-1.png"  style="width:80%;" /><!-- {"left" : 1.02, "top" : 3.62, "height" : 3.94, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-design-example-1.png"  style="width:80%;" /><!-- {"left" : 3.25, "top" : 4.6, "height" : 5.28, "width" : 11.01} -->
 
 ---
 
@@ -657,8 +656,8 @@ Notes:
 
 * For example, what is the stock price in time t2?
 
-<img src="../../assets/images/deep-learning/time-series-1.png"  style="width:40%;" />   <!-- {"left" : 0.18, "top" : 3.26, "height" : 2.56, "width" : 4.85} -->
-<img src="../../assets/images/deep-learning/time-series-2.png"  style="width:40%;" />   <!-- {"left" : 5.22, "top" : 3.26, "height" : 2.56, "width" : 4.85} -->
+<img src="../../assets/images/deep-learning/time-series-1.png"  style="width:40%;" />   <!-- {"left" : 0.96, "top" : 6.1, "height" : 4.03, "width" : 7.64} -->
+<img src="../../assets/images/deep-learning/time-series-2.png"  style="width:40%;" />   <!-- {"left" : 8.9, "top" : 6.1, "height" : 4.03, "width" : 7.64} -->
 
 ---
 
@@ -671,8 +670,7 @@ Notes:
   - For example, in this example, the network doesn't remember the 'previous input' (cat) when predicting the current input
 * **Animation** below: [link-youtube](https://youtu.be/sLsCN9ZL9RI) | [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4) 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/neural-network-animation-1.png"  style="width:45%;"/><!-- {"left" : 0.97, "top" : 5.51, "height" : 1.96, "width" : 8.31} -->
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png"  style="width:45%;"/> <!-- {"left" : 3.63, "top" : 6.95, "height" : 4.32, "width" : 10.24} -->
 
 
 Notes:
@@ -686,17 +684,19 @@ Notes:
 
 * RNNs have a 'loop back' mechanism to pass the current state to the next iteration
 
-<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 0.4, "top" : 4.27, "height" : 3.47, "width" : 2.01} -->
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 3.63, "top" : 4.27, "height" : 3.47, "width" : 1.53} -->
-<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 6.38, "top" : 4.27, "height" : 3.47, "width" : 3.47} -->
+* [Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-3-animation.mp4)
 
-[Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-3-animation.mp4)
+
+<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 2.5, "top" : 6.06, "height" : 5.28, "width" : 3.06} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 7.17, "top" : 6.32, "height" : 4.58, "width" : 2.02} -->
+<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 10.8, "top" : 5.62, "height" : 5.28, "width" : 5.28} -->
+
 
 ---
 
 ## RNN Animation
 
-<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/><!-- {"left" : 2.64, "top" : 1.21, "height" : 4.12, "width" : 4.98} -->
+<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/><!-- {"left" : 9.82, "top" : 1.65, "height" : 6.27, "width" : 7.58} -->
 
 
 * **Animation**: [Link-YouTube](https://www.youtube.com/watch?v=zt18u6BgdK8) | [Link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-4-animation.mp4)
@@ -732,10 +732,11 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.45, "top" : 2.28, "height" : 2.43, "width" : 3.27} -->
 
 * Let's go over what we have covered so far
 
 * **Questions**
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 4.72, "top" : 5.6, "height" : 5.36, "width" : 8.06} -->
+

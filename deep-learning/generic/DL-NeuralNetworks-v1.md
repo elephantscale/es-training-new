@@ -20,7 +20,7 @@ Notes:
 
 ## Neuron Operations
 
-<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.71, "top" : 3.33, "height" : 2.98, "width" : 8.84} -->
+<img src="../../assets/images/deep-learning/3rd-party/ann-operations.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 2.35, "top" : 4.55, "height" : 4.32, "width" : 12.8} -->
 
 
 Notes:
@@ -33,7 +33,7 @@ Source : [Neural networks and deep learning](https://learning.oreilly.com/librar
 
  * Find a divider to separate these two classes (blue / orange)
 
-<img src="../../assets/images/deep-learning/sample-01.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.69, "top" : 2.33, "height" : 4.99, "width" : 4.88} -->
+<img src="../../assets/images/deep-learning/sample-01.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 10.42, "top" : 2, "height" : 6.92, "width" : 6.77} -->
 
 
 
@@ -41,7 +41,7 @@ Source : [Neural networks and deep learning](https://learning.oreilly.com/librar
 
 ## Solution
 
-<img src="../../assets/images/deep-learning/sample-01b.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%;"/><!-- {"left" : 5.95, "top" : 1.84, "height" : 4.1, "width" : 4.01} -->
+<img src="../../assets/images/deep-learning/sample-01b.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="40%;"/><!-- {"left" : 11.72, "top" : 1.89, "height" : 5.41, "width" : 5.3} -->
 
  * We can draw line that separates these two classes;  Essentially  a linear model
 
@@ -71,7 +71,7 @@ Notes:
 
  * Output is binary
 
-<img src="../../assets/images/deep-learning/perceptron-01.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 0.87, "top" : 4.65, "height" : 2.28, "width" : 8.51} -->
+<img src="../../assets/images/deep-learning/perceptron-01.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%;"/><!-- {"left" : 3.2, "top" : 7.01, "height" : 2.98, "width" : 11.11} -->
 
 Notes:
 
@@ -85,7 +85,7 @@ Notes:
  * How do we figure out the weights w1, w2?
     - This is done during training
 
-<img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="width:35%;" /><!-- {"left" : 3.18, "top" : 3.18, "height" : 3.96, "width" : 3.9} -->
+<img src="../../assets/images/deep-learning/linear-1.png" alt="XXX image missing" style="width:35%;" /><!-- {"left" : 10.8, "top" : 2.29, "height" : 6.54, "width" : 6.44} -->
 
 Notes:
 
@@ -144,7 +144,7 @@ Notes:
      - Sigmoid Activation Function
 
 
-<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="activation-sigmoid.png" style="background:white;width:50%;float: right; margin-top:-250px;"/><!-- {"left" : 2.81, "top" : 3.28, "height" : 3.95, "width" : 4.63} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="activation-sigmoid.png" style="background:white;width:50%;float: right; margin-top:-250px;"/><!-- {"left" : 10.76, "top" : 2.15, "height" : 5.35, "width" : 6.27} -->
 
 
 
@@ -163,7 +163,7 @@ Notes:
  * Tanh is symmetric around zero.
 
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="activation-sigmoid-vs-tanh.png" style="background:white;width:60%;"/><!-- {"left" : 0.77, "top" : 3.3, "height" : 3.24, "width" : 8.71} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" alt="activation-sigmoid-vs-tanh.png" style="background:white;width:60%;"/><!-- {"left" : 3.53, "top" : 6.18, "height" : 3.89, "width" : 10.45} -->
 
 
 
@@ -200,7 +200,7 @@ Notes:
  * ReLU is Linear when greater than zero, and constant (zero) less than zero
 
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="activation-sigmoid-vs-relu.png" style="background:white;width:70%;"/><!-- {"left" : 0.58, "top" : 3.26, "height" : 3.57, "width" : 9.09} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" alt="activation-sigmoid-vs-relu.png" style="background:white;width:70%;"/><!-- {"left" : 2.47, "top" : 5.19, "height" : 4.93, "width" : 12.56} -->
 
 Notes:
 
@@ -296,7 +296,7 @@ Notes:
 ## Softmax Function
 
 
-<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="Softmax-Function.png" style="background:white;width:80%;"/><!-- {"left" : 0.38, "top" : 2.28, "height" : 4.5, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="Softmax-Function.png" style="background:white;width:80%;"/><!-- {"left" : 2.27, "top" : 3.12, "height" : 6.15, "width" : 12.97} -->
 
 
 Notes:
@@ -346,7 +346,7 @@ Notes:
 
      - This is known as the XOR problem (though many other datasets are not linearly separable).
 
-<img src="../../assets/images/deep-learning/xor.png" alt="xor.png" style="background:white;width:40%;"/><!-- {"left" : 2.63, "top" : 4.71, "height" : 3.49, "width" : 4.99} -->
+<img src="../../assets/images/deep-learning/xor.png" alt="xor.png" style="background:white;width:40%;"/><!-- {"left" : 10.39, "top" : 2.5, "height" : 4.63, "width" : 6.63} -->
 
 
 
@@ -366,7 +366,7 @@ Notes:
 
  * What if we add a new layer to our network?
 
-<img src="../../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="background:white;width:35%;"/><!-- {"left" : 3.29, "top" : 4.44, "height" : 3.52, "width" : 3.66} -->
+<img src="../../assets/images/deep-learning/hidden-layer.png" alt="hidden-layer.png" style="background:white;width:35%;"/><!-- {"left" : 11.57, "top" : 2.5, "height" : 5.1, "width" : 5.3} -->
 
 
 
@@ -417,7 +417,7 @@ Notes:
  * Press play to converge on a solution.
 
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-sprial-1.png" alt="playground-sprial-1.png" style="background:white;width:30%;"/><!-- {"left" : 2.86, "top" : 3.93, "height" : 4.33, "width" : 4.54} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-sprial-1.png" alt="playground-sprial-1.png" style="background:white;width:30%;"/><!-- {"left" : 11.21, "top" : 2.41, "height" : 5.67, "width" : 5.94} -->
 
 Notes:
 
@@ -468,17 +468,17 @@ Notes:
 
  * How do we calculate how wrong we are?
 
- * We consider this the  **Error** or **Loss** .  But what is the error?
+ * We consider this the  **Error** or **Loss**. But what is the error?
 
- * The error is the  **distance**  between the training output vector and the current output.
+ * The error is the **distance**  between the training output vector and the current output.
 
- * But what is the meaning of  **distance** ?
+ * But what is the meaning of **distance** ?
 
      - Simplest: Euclidean distance, the distance in Euclidean space.
 
      - But this is not what we usually use.
 
-     - For classification, we normally use  **cross entropy** to calculate loss.
+     - For classification, we normally use **cross entropy** to calculate loss.
 
 Notes:
 
@@ -492,7 +492,7 @@ Notes:
 
  * Gradient Descent is a common optimization algorithm.
 
-<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 1.7, "top" : 3.14, "height" : 4.67, "width" : 6.85} -->
+<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 4.69, "top" : 4.55, "height" : 5.53, "width" : 8.12} -->
 
 
 
@@ -507,7 +507,7 @@ Notes:
      - At the bottom of the hill, the slope is zero, so the snowboarder stops. This is the minimum.
      -  There may, however, be parts of the run with a zero slope that are NOT the bottom (local minima).  
 
-<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 2.58, "top" : 4.84, "height" : 3.46, "width" : 5.08} -->
+<img src="../../assets/images/deep-learning/local_minima.png" alt="local_minima.png" style="background:white;width:40%;"/><!-- {"left" : 9.93, "top" : 2.34, "height" : 4.82, "width" : 7.07} -->
 
 
 Notes:

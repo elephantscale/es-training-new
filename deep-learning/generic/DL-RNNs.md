@@ -1,7 +1,7 @@
 # Recurrent Neural Networks (RNN)
 
 
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:7%;" /><!-- {"left" : 2.93, "top" : 5.51, "height" : 2.94, "width" : 1.26} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:7%;" /><!-- {"left" : 8.12, "top" : 7.84, "height" : 2.94, "width" : 1.26} -->
 
 ---
 
@@ -26,7 +26,7 @@ Notes:
 
 * Can you predict the next position of the ball?
 
-<img src="../../assets/images/deep-learning/billiard-ball-1.png"  style="width:70%;" /><!-- {"left" : 1.02, "top" : 2.42, "height" : 4.8, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/billiard-ball-1.png"  style="width:70%;" /><!-- {"left" : 3.74, "top" : 4.32, "height" : 5.86, "width" : 10.03} -->
 
 
 ---
@@ -34,7 +34,7 @@ Notes:
 
 * Can you predict the next position of the ball?
 
-<img src="../../assets/images/deep-learning/billiard-ball-2.png"  style="width:70%;" /><!-- {"left" : 1.02, "top" : 2.6, "height" : 3.87, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/billiard-ball-2.png"  style="width:70%;" /><!-- {"left" : 2.4, "top" : 4.11, "height" : 5.99, "width" : 12.7} -->
 
 
 ---
@@ -47,7 +47,7 @@ Notes:
 
 * Other cases where the data changes on temporal basis
 
-<img src="../../assets/images/deep-learning/time-series-stocks.png"  style="width:60%;" />   <!-- {"left" : 0.74, "top" : 3.47, "height" : 4.63, "width" : 8.77} -->
+<img src="../../assets/images/deep-learning/time-series-stocks.png"  style="width:60%;" />   <!-- {"left" : 3.64, "top" : 5.12, "height" : 5.4, "width" : 10.23} -->
 
 
 
@@ -61,8 +61,8 @@ Source: Wikipedia
 
 * For example, what is the stock price in time t2?
 
-<img src="../../assets/images/deep-learning/time-series-1.png"  style="width:40%;" />   <!-- {"left" : 0.18, "top" : 3.26, "height" : 2.56, "width" : 4.85} -->
-<img src="../../assets/images/deep-learning/time-series-2.png"  style="width:40%;" />   <!-- {"left" : 5.22, "top" : 3.26, "height" : 2.56, "width" : 4.85} -->
+<img src="../../assets/images/deep-learning/time-series-1.png"  style="width:40%;" />   <!-- {"left" : 1.77, "top" : 5.72, "height" : 3.62, "width" : 6.85} -->
+<img src="../../assets/images/deep-learning/time-series-2.png"  style="width:40%;" />   <!-- {"left" : 8.88, "top" : 5.72, "height" : 3.61, "width" : 6.85} -->
 
 ---
 ## Time Series Data
@@ -73,7 +73,7 @@ Source: Wikipedia
 
 * It is the change in the value over time that matters.
 
-<img src="../../assets/images/deep-learning/time-series-stocks.png"  style="width:60%;"/><!-- {"left" : 1.43, "top" : 3.94, "height" : 3.9, "width" : 7.39} -->
+<img src="../../assets/images/deep-learning/time-series-stocks.png"  style="width:60%;"/><!-- {"left" : 3.85, "top" : 5.24, "height" : 5.17, "width" : 9.79} -->
 
 
 Notes:
@@ -93,7 +93,7 @@ I was talking with **my** mother about politics.
 aligned with **my** values," **she** said.
 
 ```
-<!-- {"left" : 0, "top" : 2.12, "height" : 1.14, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.7, "height" : 1.5, "width" : 13.51} -->
 
  * Who does the first "she" refer to?
 
@@ -115,8 +115,7 @@ Notes:
      - For example, in this example, the network doesn't remember the 'previous input' (cat) when predicting the current input
 * **Animation** below: [link-youtube](https://youtu.be/sLsCN9ZL9RI) | [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4) 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/neural-network-animation-1.png"  style="width:45%;"/><!-- {"left" : 0.97, "top" : 5.51, "height" : 1.96, "width" : 8.31} -->
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png"  style="width:45%;"/><!-- {"left" : 4.59, "top" : 6.97, "height" : 4.06, "width" : 9.63} -->
 
 
 Notes:
@@ -130,17 +129,17 @@ Notes:
 
 * RNNs have a 'loop back' mechanism to pass the current state to the next iteration
 
-<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 0.4, "top" : 4.27, "height" : 3.47, "width" : 2.01} -->
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 3.63, "top" : 4.27, "height" : 3.47, "width" : 1.53} -->
-<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 6.38, "top" : 4.27, "height" : 3.47, "width" : 3.47} -->
+* [Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-3-animation.mp4)
 
-[Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-3-animation.mp4)
+<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 3.52, "top" : 6.05, "height" : 5.25, "width" : 3.04} --><img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/> <!-- {"left" : 7.9, "top" : 6.31, "height" : 4.33, "width" : 1.91} -->
+<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/> <!-- {"left" : 11.51, "top" : 5.64, "height" : 4.82, "width" : 4.82} -->
+
 
 ---
 
 ## RNN Animation
 
-<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/><!-- {"left" : 2.64, "top" : 1.21, "height" : 4.12, "width" : 4.98} -->
+<img src="../../assets/images/deep-learning/rnn-4-animation.png"  style="width:40%;"/> <!-- {"left" : 4.95, "top" : 1.89, "height" : 6.33, "width" : 7.64} -->
 
 
 * **Animation**: [Link-YouTube](https://www.youtube.com/watch?v=zt18u6BgdK8) | [Link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-4-animation.mp4)
@@ -149,10 +148,11 @@ Notes:
 
 ## RNN Unrolling Through Time
 
-<img src="../../assets/images/deep-learning/rnn-unrolling-3.gif"  style="width:70%;" pdf-src="../../assets/images/deep-learning/rnn-unrolling-3.png"/><!-- {"left" : 2.61, "top" : 1.26, "height" : 2.82, "width" : 5.02} -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-3.gif" pdf-src="../../assets/images/deep-learning/billiard-ball-1.png"  style="width:70%;"/><!-- {"left" : 4.9, "top" : 2.11, "height" : 4.33, "width" : 7.7} -->
 
 <br/>
 
+<br/>
 
 *  [Animation link1 (gif)](https://miro.medium.com/max/960/1*TqcA9EIUF-DGGTBhIx_qbQ.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-unrolling-3.mp4),    ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
@@ -166,7 +166,7 @@ Notes:
     - Like taking a picture/snapshot of the network for each time frame
  * This means that each neuron is like a chain of neurons, one for each time slice.
 
-<img src="../../assets/images/deep-learning/rnn-unrolling-2.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 5.12, "height" : 2.95, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-2.png" style="width:70%;"/> <!-- {"left" : 3.08, "top" : 6.76, "height" : 4.07, "width" : 11.35} -->
 
 
 Notes:
@@ -175,7 +175,7 @@ Notes:
 
 ## Unrolling Through Time
 
-<img src="../../assets/images/deep-learning/rnn-unrolling-1.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 2.39, "height" : 4.29, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/rnn-unrolling-1.png" style="width:60%;"/> <!-- {"left" : 2.53, "top" : 3.6, "height" : 6.5, "width" : 12.43} -->
 
 
 
@@ -188,7 +188,7 @@ Notes:
  * For unrolling, we can treat each time step as a new layer.
      -  It's really not any different than conventional backpropagation once unrolled.
 
-<img src="../../assets/images/deep-learning/BPTT.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 2.02, "top" : 3.95, "height" : 4.43, "width" : 6.22} -->
+<img src="../../assets/images/deep-learning/BPTT.png" alt="XXX image missing" style="background:white;max-width:50%;"/>  <!-- {"left" : 9.76, "top" : 2.67, "height" : 5.18, "width" : 7.27} -->
 
 
 
@@ -199,13 +199,13 @@ Notes:
 ## Analogy: Hardware Combinatorial Logic
 
 
- *  In Computer Hardware, we can model logic functions with **gates**  :
+ *  In Computer Hardware, we can model logic functions with **gates:**
      -  AND, OR, NOR, NAND, etc
      -  These can in theory produce any binary output desired from inputs.
      -  This is similar to feedforward neural network.
  *  However, Combinational Logic cannot maintain state.
 
-<img src="../../assets/images/deep-learning/logic-gate.png" alt="XXX image missing" style="background:white;max-width:30%;"/> &nbsp; &nbsp; &nbsp; &nbsp; <!-- {"left" : 3.34, "top" : 4.89, "height" : 1.5, "width" : 3.57} -->  <img src="../../assets/images/deep-learning/NOR_from_NAND.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 2.33, "top" : 6.7, "height" : 1.82, "width" : 5.58} -->
+<img src="../../assets/images/deep-learning/logic-gate.png" alt="XXX image missing" style="background:white;max-width:30%;"/> &nbsp; &nbsp; &nbsp; &nbsp; <!-- {"left" : 6.41, "top" : 6.03, "height" : 1.97, "width" : 4.7} -->  <img src="../../assets/images/deep-learning/NOR_from_NAND.png" alt="XXX image missing" style="background:white;max-width:50%;"/> <!-- {"left" : 5.08, "top" : 8.42, "height" : 2.4, "width" : 7.34} -->
 
 
 Notes:
@@ -221,8 +221,7 @@ Image credit : (creative commons license)  :  https://commons.wikimedia.org/wiki
  * Note the feedback loops!
  * This is a computer hardware memory cell.
 
-<img src="../../assets/images/deep-learning/feedback-loop.png" style="width:40%;" />  <!-- {"left" : 2.53, "top" : 4.65, "height" : 3.49, "width" : 4.77} -->
-
+<img src="../../assets/images/deep-learning/feedback-loop.png" style="width:40%;" />   <!-- {"left" : 10.99, "top" : 3.07, "height" : 4.41, "width" : 6.03} -->
 
 Notes:
 
@@ -261,13 +260,16 @@ Notes:
 
 * We will discuss a use case starting at 3:50 in the video
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-video-1.png" style="width:60%;" />   <!-- {"left" : 1.97, "top" : 3.95, "height" : 3.64, "width" : 6.32} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-video-1.png" style="width:60%;" />   <!-- {"left" : 4.5, "top" : 5.63, "height" : 4.9, "width" : 8.5} -->
 
 
 ---
 
 ## Activation Functions for RNNs
 
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" style="width:45%;float:right;clear:both;"/><!-- {"left" : 9.61, "top" : 2.08, "height" : 2.92, "width" : 7.45} -->
+
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" style="width:45%;float:right;clear:both;"/> <!-- {"left" : 9.47, "top" : 5.72, "height" : 2.92, "width" : 7.87} -->
 
 *  ReLU and Linear functions have a problem of being unbounded.
      -  If we have a self-recurrent loop, they tend to self-reinforce.
@@ -279,7 +281,6 @@ Notes:
 
 *  Tanh is the most commonly used in RNNs.
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-relu.png" style="width:45%;" /> &nbsp;  <!-- {"left" : 2.36, "top" : 4.55, "height" : 2.16, "width" : 5.51} -->  &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" style="width:45%;" /><!-- {"left" : 2.22, "top" : 6.73, "height" : 2.16, "width" : 5.82} -->
 
 
 Notes:
@@ -304,8 +305,7 @@ Notes:
 ## Text Understanding
 
 
-<img src="../../assets/images/deep-learning/alexa-2.png"  style="width:80%;" /> <!-- {"left" : 1.02, "top" : 2.91, "height" : 3.83, "width" : 8.21} -->
-
+<img src="../../assets/images/deep-learning/alexa-2.png"  style="width:80%;" /> <!-- {"left" : 1.78, "top" : 3.53, "height" : 6.51, "width" : 13.95} -->
 
 
 ---
@@ -322,7 +322,7 @@ Notes:
 
 * **Animation** below: [Animation link1 (gif)](https://miro.medium.com/max/1000/1*G7T4sFO-1ByMepsa5OilsQ.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-1.mp4) | ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1.gif"   style="width:40%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1b.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1.gif"   style="width:40%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-1b.png" />  <!-- {"left" : 4.71, "top" : 6.47, "height" : 4.77, "width" : 8.09} -->
 
 
 ---
@@ -335,7 +335,7 @@ Notes:
 
 * **Animation** below: [Animation link1 (gif)](https://miro.medium.com/max/1000/1*Qx6OiQnskfyCEzb8aZDgaA.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-2.mp4) | ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-2.gif"  style="width:70%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-2.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-2.gif"  style="width:70%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-2.png" />  <!-- {"left" : 4.71, "top" : 5.92, "height" : 4.77, "width" : 8.09} -->
 
 
 ---
@@ -351,7 +351,7 @@ Notes:
 * **Animation** below: [Animation link1 (gif)](https://miro.medium.com/max/1000/1*5byMk-6ni-dst7l9WKIj5g.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-3.mp4)  | ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.gif"  style="width:60%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.gif"  style="width:60%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-3.png" />  <!-- {"left" : 4.95, "top" : 6.09, "height" : 4.47, "width" : 7.59} -->
 
 ---
 
@@ -366,7 +366,7 @@ Notes:
 * **Animation** below: [Animation link (gif)](https://miro.medium.com/max/1000/1*d_POV7c8fzHbKuTgJzCxtA.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-4.mp4) | ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.gif"  style="width:60%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.png" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.gif"  style="width:60%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-4.png" />  <!-- {"left" : 4.93, "top" : 6.51, "height" : 4.51, "width" : 7.65} -->
 
 ---
 
@@ -378,7 +378,7 @@ Notes:
 * For example, if the input text is **"What is the time?"** (notice the order is different), the output will definitely NOT be **05**
 * **Animation below:** [Animation link1 (gif)](https://miro.medium.com/max/1000/1*3bKRTcqSbto3CXfwshVwmQ.gif), [link2 (mp4)](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-text-processing-6.mp4) ([Source](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9))
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.png" />  <!-- {"left" : 2.13, "top" : 5.02, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.gif"  style="width:50%;" pdf-src="../../assets/images/deep-learning/3rd-party/rnn-text-processing-5.png" />  <!-- {"left" : 9.81, "top" : 3.14, "height" : 4.14, "width" : 7.03} -->
 
 ---
 
@@ -404,7 +404,7 @@ Notes:
 
 *  Natural Language vectorizers can be implemented this way
 
-<img src="../../assets/images/deep-learning/Sequence-to-Vector.png" alt="XXX image missing" style="background:white;max-width:50%;"/><!-- {"left" : 2.23, "top" : 3.55, "height" : 4.12, "width" : 5.79} -->
+<img src="../../assets/images/deep-learning/Sequence-to-Vector.png" alt="XXX image missing" style="background:white;max-width:50%;"/><!-- {"left" : 9.94, "top" : 2.5, "height" : 5.1, "width" : 7.16} -->
 
 
 Notes:
@@ -419,11 +419,11 @@ Notes:
 
     -  The input would be a sequence of stock prices
 
-    -  The output would be a prediction of what the next step *would*  be
+    -  The output would be a prediction of what the next step *would* be
 
 * And language translation (more on this later)
 
-<img src="../../assets/images/deep-learning/Sequence-to-Sequence.png"  style="width:50%;" />  <!-- {"left" : 0.77, "top" : 4.05, "height" : 3.9, "width" : 8.71} -->
+<img src="../../assets/images/deep-learning/Sequence-to-Sequence.png"  style="width:50%;" />  <!-- {"left" : 3.9, "top" : 6.37, "height" : 4.34, "width" : 9.7} -->
 
 
 Notes:
@@ -431,7 +431,7 @@ Notes:
 ---
 ## Vector To Sequence
 
-<img src="../../assets/images/deep-learning/image-caption-1.png"  style="width:50%;float:right;"/> <!-- {"left" : 5.69, "top" : 1.14, "height" : 2.01, "width" : 4.43} -->
+<img src="../../assets/images/deep-learning/image-caption-1.png"  style="width:50%;float:right;"/> <!-- {"left" : 9.34, "top" : 2.31, "height" : 3.48, "width" : 7.68} -->
 
 *  The Network will take a vector as an input and a produce a sequence as an output
 
@@ -439,7 +439,7 @@ Notes:
 
 <br clear="all" />
 
-<img src="../../assets/images/deep-learning/Vector-to-Sequence.png"  style="width:40%;"/>  <!-- {"left" : 2.51, "top" : 5.19, "height" : 2.97, "width" : 5.23} -->
+<img src="../../assets/images/deep-learning/Vector-to-Sequence.png"  style="width:40%;"/>  <!-- {"left" : 9.49, "top" : 6.71, "height" : 4.19, "width" : 7.38} -->
 
 Notes:
 
@@ -451,7 +451,7 @@ Notes:
 
 *  So far we have only looked at single layer RNNs.
 
-<img src="../../assets/images/deep-learning/Deep-RNNs.png"  style="width:60%;" />  <!-- {"left" : 0.39, "top" : 3.11, "height" : 4.56, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/Deep-RNNs.png"  style="width:60%;" />  <!-- {"left" : 2.6, "top" : 5.1, "height" : 5.91, "width" : 12.29} -->
 
 Notes:
 
@@ -464,8 +464,7 @@ Notes:
 
 *  Used in language translation
 
-<img src="../../assets/images/deep-learning/Sequence-to-Sequence--01.png" style="width:50%;"/><!-- {"left" : 1.84, "top" : 3.61, "height" : 4.13, "width" : 6.57} -->
-
+<img src="../../assets/images/deep-learning/Sequence-to-Sequence--01.png" style="width:50%;"/> <!-- {"left" : 4.47, "top" : 5.28, "height" : 5.39, "width" : 8.57} -->
 
 Notes:
 
@@ -474,7 +473,7 @@ Notes:
 
 ## Machine Translation Model
 
-<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;float:right;" />  <!-- {"left" : 5.13, "top" : 1.17, "height" : 3.33, "width" : 5.02} -->
+<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;float:right;" />  <!-- {"left" : 9.66, "top" : 2.13, "height" : 5.02, "width" : 7.57} -->
 
  *  Machine translation model is essentially a deep recurrent neural network
 
@@ -507,7 +506,7 @@ Notes:
 
 ## RNNs Have Short Term Memory
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-memory-1.png" style="width:50%;float:right;" />   <!-- {"left" : 5.78, "top" : 1.06, "height" : 2.31, "width" : 4.34} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-memory-1.png" style="width:50%;float:right;" />   <!-- {"left" : 9.97, "top" : 2.31, "height" : 3.77, "width" : 7.08} -->
 
 * The **hidden state fades over multiple steps**
 
@@ -562,7 +561,7 @@ Notes:
  * Input 1 represents the input signal at various times
  * Input 2 is the output of the neuron at the current time step
 
-<img src="../../assets/images/deep-learning/Recurrent-Neurons.png"  style="width:40%;" />  <!-- {"left" : 2.13, "top" : 4.33, "height" : 3.53, "width" : 5.99} -->
+<img src="../../assets/images/deep-learning/Recurrent-Neurons.png"  style="width:40%;" />  <!-- {"left" : 4.96, "top" : 6.29, "height" : 4.47, "width" : 7.58} -->
 
 
 
@@ -582,7 +581,7 @@ Notes:
 
      -  Then we have a vector that is itself unrolled through time.
 
- <img src="../../assets/images/deep-learning/layer-of-Recurrent-Neurons.png" alt="XXX image missing" style="background:white;max-width:100%;" />  <!-- {"left" : 0.76, "top" : 4.53, "height" : 2.57, "width" : 8.73} -->
+ <img src="../../assets/images/deep-learning/layer-of-Recurrent-Neurons.png" alt="XXX image missing" style="background:white;max-width:100%;" />  <!-- {"left" : 2.33, "top" : 6.56, "height" : 3.78, "width" : 12.85} -->
 
 
 Notes:
@@ -595,8 +594,7 @@ Notes:
 
  *  They provide a way to maintain state in the network.
 
-<img src="../../assets/images/deep-learning/Memory-Cells.png" alt="XXX image missing" style="background:white;width:80%;"/><!-- {"left" : 0.5, "top" : 2.96, "height" : 3.14, "width" : 9.24} -->
-
+<img src="../../assets/images/deep-learning/Memory-Cells.png" alt="XXX image missing" style="background:white;width:80%;"/> <!-- {"left" : 2.61, "top" : 5.27, "height" : 4.18, "width" : 12.29} -->
 
 
 Notes:
@@ -610,7 +608,7 @@ Notes:
 
      -  Sequence to Sequence
 
-<img src="../../assets/images/deep-learning/RNNs--01.png" alt="XXX image missing" style="background:white;max-width:100%;" /> <!-- {"left" : 0.3, "top" : 3.23, "height" : 3.19, "width" : 9.64} -->
+<img src="../../assets/images/deep-learning/RNNs--01.png" alt="XXX image missing" style="background:white;max-width:100%;" /> <!-- {"left" : 1.8, "top" : 4.91, "height" : 4.6, "width" : 13.89} -->
 
 
 Notes:
@@ -620,7 +618,7 @@ Notes:
 ---
 ## One to One
 
-<img src="../../assets/images/deep-learning/RNNs--01-one-to-one.png" alt="XXX image missing" style="background:white;max-width:15%;float:right;"/> <!-- {"left" : 7.78, "top" : 1.2, "height" : 5.73, "width" : 2.06} -->
+<img src="../../assets/images/deep-learning/RNNs--01-one-to-one.png" alt="XXX image missing" style="background:white;max-width:15%;float:right;"/> <!-- {"left" : 14.19, "top" : 1.89, "height" : 5.73, "width" : 2.06} -->
 
  *  One to One is basically a feedforward network
 
@@ -639,7 +637,7 @@ Notes:
 ---
 ## One to Many
 
-<img src="../../assets/images/deep-learning/RNNs--01-one-to-many-01.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;" /> <!-- {"left" : 6.97, "top" : 1.2, "height" : 5.99, "width" : 2.9} -->
+<img src="../../assets/images/deep-learning/RNNs--01-one-to-many-01.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;" /> <!-- {"left" : 12.97, "top" : 1.89, "height" : 7.65, "width" : 3.7} -->
 
  *  Input is fixed
 
@@ -661,7 +659,7 @@ Notes:
 ---
 ## Many to One
 
-<img src="../../assets/images/deep-learning/RNNs--01-many-to-one.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;"/> <!-- {"left" : 7.3, "top" : 1.2, "height" : 5.4, "width" : 2.62} -->
+<img src="../../assets/images/deep-learning/RNNs--01-many-to-one.png" alt="XXX image missing" style="background:white;max-width:25%;float:right;"/> <!-- {"left" : 13.32, "top" : 1.89, "height" : 7.29, "width" : 3.54} -->
 
  *  Input is a sequence
 
@@ -683,7 +681,7 @@ Notes:
 ---
 ## Many to Many
 
-<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-01.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;"/><!-- {"left" : 6.06, "top" : 1.2, "height" : 4.8, "width" : 3.88} -->
+<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-01.png" alt="XXX image missing" style="background:white;max-width:30%;float:right;"><!-- {"left" : 11.29, "top" : 1.89, "height" : 6.83, "width" : 5.52} -->
 
  *  Input is a Sequence
 
@@ -703,7 +701,7 @@ Notes:
 ---
 ## Many to Many (Synchronized)
 
-<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-02.png" alt="XXX image missing" style="background:white;width:25%;float:right;" /> <!-- {"left" : 6.37, "top" : 1.2, "height" : 5.74, "width" : 3.43} -->
+<img src="../../assets/images/deep-learning/RNNs--01-many-to-many-02.png" alt="XXX image missing" style="background:white;width:25%;float:right;" /> <!-- {"left" : 13.76, "top" : 2.11, "height" : 6.48, "width" : 3.15} -->
 
  *  Input is a Sequence
 
@@ -721,7 +719,7 @@ Notes:
 ---
 ## Sequence Classifier
 
-<img src="../../assets/images/deep-learning/Sequence-Classifier.png" style="width:50%;float:right;"/> <!-- {"left" : 5.65, "top" : 1.02, "height" : 3.58, "width" : 4.48} -->
+<img src="../../assets/images/deep-learning/Sequence-Classifier.png" style="width:50%;float:right;"/> <!-- {"left" : 10.35, "top" : 1.89, "height" : 5.21, "width" : 6.52} -->
 
 *  RNNs are great for classifying sequences:
 
@@ -742,7 +740,7 @@ Notes:
 
  *  Input Time series is essentially the sequence problem again.
 
-<img src="../../assets/images/deep-learning/Time-Series-Predictions.png" alt="XXX image missing" style="background:white;width:80%;"/> <!-- {"left" : 0.51, "top" : 3.23, "height" : 3.12, "width" : 9.24} -->
+<img src="../../assets/images/deep-learning/Time-Series-Predictions.png" alt="XXX image missing" style="background:white;width:80%;"/> <!-- {"left" : 2.18, "top" : 5.51, "height" : 4.43, "width" : 13.13} -->
 
 
 
@@ -753,7 +751,7 @@ Notes:
 ---
 ## RNN Cells to FC Using Output Projection
 
-<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" style="width:40%;float:right;"/><!-- {"left" : 5.96, "top" : 1.18, "height" : 3.62, "width" : 4.11} -->
+<img src="../../assets/images/deep-learning/RNN-Cells-using-output-projection.png" style="width:40%;float:right;"/><!-- {"left" : 10.8, "top" : 1.89, "height" : 5.42, "width" : 6.15} -->
 
  *  To connect cells from an RNN to a Fully Connected Layer, we need to do *output projection.*
  *  This means we take each cell from the RNN and "project" it as an opening to a Fully Connected (FC) neuron.
@@ -774,8 +772,7 @@ Notes:
 
  *  The next word in sequence is fed from the bottom, for example "go".
 
-<img src="../../assets/images/deep-learning/go.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 0.48, "top" : 3.19, "height" : 4.3, "width" : 9.3} -->
-
+<img src="../../assets/images/deep-learning/go.png" alt="XXX image missing" style="background:white;max-width:80%;" />  <!-- {"left" : 2.79, "top" : 4.76, "height" : 5.51, "width" : 11.93} -->
 
 
 Notes:
