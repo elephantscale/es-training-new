@@ -1,47 +1,47 @@
 # Data Analytics with Python on Databricks
 © Elephant Scale
 
-March 24, 2022
+April 13, 2022
 
 ## Overview
 
 The use of Data Analytics is changing the world. To use it effectively, one needs to understand the algorithms and how to utilize them. 
 
-This course teaches doing Machine Learning using Databricks, PySpark, and MLLib library in PySpark.
+This course teaches doing Data Analytics using Databricks and PySpark.
 
 ## Training objectives:
-* Quick Python primer
-* A quick primer on data science algorithms
-* Pandas
-* MLLib
+* Python primer
+* Databricks and PySpark
+* Data analytics algorithms
 
 ## You will learn to
 * Use Python and Jupyter to read and summarize your data
 * Apply DataFrames to represent structured data for analysis
 * Visualize the data and form initial hypotheses
-* Apply linear algebra and statistics to data analysis
-* Deal with large volumes of data on the Spark cluster
+* Apply statistics to data analysis
+* Deal with large volumes of data on the Databricks Spark using PySpark
 * Formulate data predictions
 
 ## Audience:
-Data analysts, Software Engineers, Data scientists
+* Data analysts, software engineers, data scientists
 
 ## Duration:
-Three Days
+* Three Days divided into half day sessions
 
 ## Skill Level:
 Beginner to Intermediate
 
 ## Prerequisites
-* Good programming background
+* Programming or data analytics background
 * Familiarity with Python would be a plus, but not required
-* No machine learning knowledge is assumed
-
 
 ## Lab environment
-Cloud based lab environment will be provided to students, no need to install anything on the laptop
+* All labs will be done in the cloud, in the Databricks environment
+* Students will use PySpark Freemium Accounts (https://azure.microsoft.com/en-us/free/databricks/)
+* No local install will be required
 
-### Students will need the following
+
+## Students will need the following
 * A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
 * Chrome browser
 
@@ -50,34 +50,39 @@ Cloud based lab environment will be provided to students, no need to install any
 ### Python language Overview
 * Basics of Python language
 * How to edit, run, and test python code
-* Introducing the Anaconda distribution of Python.
 * IDEs
 * Using Jupyter notebooks. 
+* Basic Python Functions (including loops and for-loops)
+* Python statements (“if” and “then”)
+* https://github.com/andela/fizz-buzz-lab
 
-### Pandas
-* Pandas and DataFrames in PySpark
-* Loading data using Pandas
-* Labs
 
 ### Big Data With Spark
 
 * Introduction to Spark, PySpark, and Databricks
 * Using the Spark framework for Big Data
-* Using MLLib or Data Science in PySpark
+* DataFrames in PySpark
+* Loading data using DataFrames
+* Labs
 
 ### Data Analytics
 
 * Arrays
 * Matrices
-* Linear Algebra
+* Statistics
+  * Probability
+  * Standard deviation
+  * Averages, etc.
 * Labs
-* Visualizing data with Matplotlib
-
-### Doing Data Science with MLLib
-
-* Introducing PySpark MLLib
-* Clustering Data
-* Building a Classifier
+* Data Analysis fundamentals
+- reading data
+- displaying first few rows of data, and subset of the columns
+- filter data
+- aggregate data
+- computing new column based on another column
+- joining data
+- plotting data
+- exporting data
 
 ### Practical use cases
 
@@ -88,4 +93,4 @@ Cloud based lab environment will be provided to students, no need to install any
 
 ### Additional tasks
 
-* Refresher homework
+* Refresher homework between sessions
