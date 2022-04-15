@@ -3,6 +3,12 @@
 
 ---
 
+## You may not need to set up anything
+* If you are in the right environment
+![](../artwork/03.png)
+
+---
+
 ## The Setup Process
 
 * This slide deck demonstrates the process in lab01-01

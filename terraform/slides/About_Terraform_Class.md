@@ -90,7 +90,6 @@ Notes:
    - Technologies you are familiar with
    - Familiarity with Terraform or IaC (scale of 1 - 4 ;  1 - new,   4 - expert)
    - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
-   - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
 
 <img src="../artwork/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
@@ -103,11 +102,11 @@ Notes:
 
 * Instructor’s contact information
 * Slides
-  - For each session, slides will be emailed out or delivered via virtual classroom 
+  - For each session, slides will be emailed out or delivered
 * AWS and Terraform
   - Students need to have an AWS account
   - If you don't have one, we will walk through the process of getting a free AWS account
-  - Students will be using a local copy of Terraform on their own computers
+  - Students will be using a local copy of Terraform on their own computers or install Terraform on AWS
   - We will walk through the process of installing Terraform locally
 * Labs
   - Provided in the cloud via GitHub
