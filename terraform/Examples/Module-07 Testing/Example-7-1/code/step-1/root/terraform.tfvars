@@ -1,1 +1,0 @@
-bucket_name ="terraform-module7-example-8978"
