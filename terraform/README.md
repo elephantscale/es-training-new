@@ -2,9 +2,8 @@
 
 * Reference book
 
-    - Terraform: Up & Running, 2nd Edition         
+    - Terraform: Up & Running, 2nd Edition (or 3d edition on Oreilly, September 2022)         
     - by Yevgeniy Brikman
     - Publisher: O'Reilly Media, Inc.
     - Release Date: September 2019
-    
-[On O'Reilly ](https://learning.oreilly.com/library/view/terraform-up/9781492046899/)
+
