@@ -40,7 +40,6 @@ Beginner to Intermediate
 * Students will use PySpark Freemium Accounts (https://azure.microsoft.com/en-us/free/databricks/)
 * No local install will be required
 
-
 ## Students will need the following
 * A reasonably modern laptop with unrestricted connection to the Internet.  Laptops with overly restrictive VPNs or firewalls may not work properly
 * Chrome browser
@@ -63,6 +62,7 @@ Beginner to Intermediate
 * Using the Spark framework for Big Data
 * DataFrames in PySpark
 * Loading data using DataFrames
+* Analyzing data using SparkSQL
 * Labs
 
 ### Data Analytics
