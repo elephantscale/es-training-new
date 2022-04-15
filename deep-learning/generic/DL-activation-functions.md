@@ -15,9 +15,8 @@ __`output = weather * 40 + public * 20 + friend * 20`__
 - This is a simple **`step function`** activation
   - It maps the number to a boolean function (0/1)
 
-<!-- todo shiva -->
-<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:40%;"/><!-- {"left" : 1.02, "top" : 5.21, "height" : 2.7, "width" : 8.21} --> &nbsp;  &nbsp;
-<img src="../../assets/images/deep-learning/activation-function-step-1.png" style="width:30%;"/><!-- {"left" : 1.02, "top" : 5.21, "height" : 2.7, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:40%;"/><!-- {"left" : 1.72, "top" : 8.5, "height" : 2.47, "width" : 7.51} --> &nbsp;  &nbsp;
+<img src="../../assets/images/deep-learning/activation-function-step-1.png" style="width:30%;"/> <!-- {"left" : 10.46, "top" : 8.06, "height" : 3.34, "width" : 5.32} -->
 
 
 
@@ -47,7 +46,7 @@ __`output = weather * 40 + public * 20 + friend * 20`__
 - Tanh
 - ReLU (Leaky ReLU ... etc)
 
-<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.63, "top" : 4.66, "height" : 3.07, "width" : 8.98} -->
+<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 1.4, "top" : 5.87, "height" : 5.03, "width" : 14.71} -->
 
 
 Notes:
@@ -55,7 +54,7 @@ Notes:
 ---
 ## Activation Function - Linear
 
-<img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 5.22, "top" : 1.22, "height" : 3.85, "width" : 4.88} -->
+<img src="../../assets/images/deep-learning/activation-linear-skitch.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 9.55, "top" : 2.44, "height" : 5.9, "width" : 7.48} -->
 
 * __`y = a.X + b`__
 
@@ -74,7 +73,7 @@ Notes:
 ---
 ## Activation Function - Sigmoid
 
-<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 6.58, "top" : 2.26, "height" : 3, "width" : 3.52} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="50%" /><!-- {"left" : 10.96, "top" : 1.89, "height" : 5.43, "width" : 6.37} -->
 
 - __`σ(z) = 1 / (1 + exp(-z))`__
 
@@ -92,6 +91,7 @@ sigmoid (0) = 0.5
 sigmoid (10) = 0.99995
 sigmoid (-10) = 0.00005
 ```
+<!-- {"left" : 0.85, "top" : 8, "height" : 1.7, "width" : 6.79} -->
 
 
 Notes:  
@@ -101,8 +101,7 @@ Notes:
 
 ## Tanh Activation
 
-<!-- todo shiva -->
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png"  style="width:55%;float:right;" /><!-- {"left" : 0.77, "top" : 4.85, "height" : 3.24, "width" : 8.71} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png"  style="width:55%;float:right;" /><!-- {"left" : 8.77, "top" : 1.89, "height" : 3.24, "width" : 8.71} -->
 
 - __`tanh (z) = 2σ(2z) - 1`__
 
@@ -117,8 +116,7 @@ Tanh(+1) = 0.761594155956
 Tanh(+10) = 0.999999995878
 Tanh(-10) = -0.999999995878
 ```
-
-
+<!-- {"left" : 0.85, "top" : 7.78, "height" : 1.79, "width" : 6.53} -->
 
 
 
@@ -140,7 +138,7 @@ Notes:
 
 - **Animation** : [link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
 
-<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:55%" /><!-- {"left" : 1.51, "top" : 3.6, "height" : 3.62, "width" : 7.24} -->
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:55%" /><!-- {"left" : 4.06, "top" : 6.5, "height" : 4.69, "width" : 9.39} -->
 
 
 
@@ -148,9 +146,9 @@ Notes:
 ---
 
 
-## Vanishing  Gradient Problem
+## Vanishing Gradient Problem
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="40%" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="40%" /><!-- {"left" : 10.37, "top" : 1.89, "height" : 5.19, "width" : 6.77} -->
 
 - Sigmoid and Tanh both suffer from the **Vanishing Gradient** problem.
 
@@ -169,8 +167,7 @@ Notes:
 ---
 ## Vanishing Gradients Problem
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/vanishing-gradients-1.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
+<img src="../../assets/images/deep-learning/vanishing-gradients-1.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 11.2, "top" : 2.23, "height" : 4.54, "width" : 5.92} -->
 
 - Here we are showing how multiplying small numbers yields smaller numbers
     - first step:  `0.2 * 0.3 = 0.06`
@@ -186,8 +183,7 @@ Notes:
 
 ## Exploding Gradient Problem
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/vanishing-exploding-gradients-2.png" alt="XXX image missing" style="width:30%;float:right;" /><!-- {"left" : 6.51, "top" : 1.62, "height" : 2.76, "width" : 3.6} -->
+<img src="../../assets/images/deep-learning/vanishing-exploding-gradients-2.png" alt="XXX image missing" style="width:30%;float:right;" /> <!-- {"left" : 12.56, "top" : 1.89, "height" : 7.71, "width" : 4.64} -->
 
 - In some instances, the opposite would happen, the gradients will get larger and larger
 
@@ -215,7 +211,9 @@ Notes:
 
 ##  Use a Different Activation Function Than Sigmoid
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;width:30%;float:right"/><!-- {"left" : 6.64, "top" : 1.63, "height" : 2.67, "width" : 3.49} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-saturation.png" alt="XXX image missing" style="background:white;width:30%;float:right"/><!-- {"left" : 10.95, "top" : 2.15, "height" : 4.9, "width" : 6.4} -->
+
+
 * **Problem:**  
     - Sigmoid function was the most popular activation function used at that time   
     - Because sigmoid like functions are found in biological neurons.  (What is good for Mother Nature must be good for us too!)
@@ -230,7 +228,7 @@ Notes:
 
 ## Activation Function - Rectified Linear Unit (ReLU)
 
-<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="width:40%;float:right" /><!-- {"left" : 6.53, "top" : 1.68, "height" : 3.04, "width" : 3.65} -->
+<img src="../../assets/images/deep-learning/activation-relu.png" alt="XXX image missing" style="width:40%;float:right" /><!-- {"left" : 10.89, "top" : 1.89, "height" : 5.3, "width" : 6.36} -->
 
 - __`ReLU (z) = max (0, z)`__
 - ReLU is Linear when greater than zero, and constant (zero) less than zero
@@ -250,7 +248,7 @@ Notes:
 
 ## ReLU Variants: Leaky ReLU
 
-<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"/><!-- {"left" : 6.78, "top" : 2.95, "height" : 2.73, "width" : 3.36} -->
+<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"/><!-- {"left" : 11.42, "top" : 1.89, "height" : 4.74, "width" : 5.84} -->
 
 - ReLU isn't perfect; For values at or below zero or values, ReLU derivative is zero
     - Gradient Descent can not be used
@@ -270,10 +268,11 @@ Notes:
 
 ## ReLU Variants: Exponential ReLU
 
-<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 0.66, "top" : 5.47, "height" : 1.52, "width" : 4.59} --> &nbsp; &nbsp;
-<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%;float:right;clear:both;"/><!-- {"left" : 5.69, "top" : 4.82, "height" : 2.83, "width" : 3.9} -->
+<img src="../../assets/images/deep-learning/elu1.png" alt="XXX image missing" style="width:30%;float:right;"/> <!-- {"left" : 11.28, "top" : 2.27, "height" : 1.81, "width" : 5.48} --> 
 
 - A 2015 [paper](https://arxiv.org/pdf/1511.07289v5.pdf) by Djork-Arne Clevert, Thomas Unterthiner & Sepp Hochreiter introduced ELUs
+
+<img src="../../assets/images/deep-learning/elu2.png" alt="XXX image missing" style="width:35%;float:right;clear:both;"/> <!-- {"left" : 10.46, "top" : 6.07, "height" : 4.75, "width" : 6.54} -->
 
 - ELU outperformed all other ReLU variants, it trained quicker, and test accuracy was higher too.
 
@@ -290,7 +289,7 @@ Notes:
 
 ## Comparing ReLU Variants
 
-<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"  /><!-- {"left" : 6.72, "top" : 1.02, "height" : 2.81, "width" : 3.46} -->
+<img src="../../assets/images/deep-learning/activation-leaky-relu.png" alt="XXX image missing" style="width:40%;float:right"  /><!-- {"left" : 11.6, "top" : 2.11, "height" : 4.54, "width" : 5.59} -->
 
 - [This paper](https://arxiv.org/pdf/1505.00853.pdf) compares various ReLU implementations
 
@@ -313,6 +312,10 @@ Notes:
 | Sigmoid | - Will not lead to exploding gradients                           | - will lead to vanishing gradients <br/> - computationally expensive to calcluate |
 | ReLU    | - Not lead to vanishing gradients <br/> - Easy to compute than sigmoid | - May lead to exploding gradients                                           |
 
+<!-- {"left" : 0.34, "top" : 2.65, "height" : 1, "width" : 16.81} -->
+
+<br/>
+
 - In practice (real world scenarios), ReLU tend to show better convergence performance than sigmoid
 
 -  __`ELU > leaky ReLU (and its variants) > ReLU > tanh > sigmoid`__
@@ -328,7 +331,7 @@ Notes:
 
 ## Activation Functions for Regression
 
-<img src="../../assets/images/deep-learning/output-layer-1-regression.png" alt="XXX image missing" style="width:50%;float:right;" /><!-- {"left" : 5.24, "top" : 1.26, "height" : 2.44, "width" : 4.92} -->
+<img src="../../assets/images/deep-learning/output-layer-1-regression.png" alt="XXX image missing" style="width:50%;float:right;" /><!-- {"left" : 10.62, "top" : 2.14, "height" : 3.28, "width" : 6.61} -->
 
  * For regression problems, the output neuron generates the response variable (a continuous value)
     - e.g.  stock price = 60.4
@@ -344,7 +347,7 @@ Notes:
 
 ## Activation Function for Binary Classification
 
-<img src="../../assets/images/deep-learning/output-layer-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;" /><!-- {"left" : 5.59, "top" : 1.18, "height" : 2.01, "width" : 4.5} -->
+<img src="../../assets/images/deep-learning/output-layer-2-binary-classification.png" alt="XXX image missing" style="width:50%;float:right;" /><!-- {"left" : 9.95, "top" : 2.3, "height" : 3.22, "width" : 7.2} -->
 
 - For classification problems, the output is binary (0/1  or True / False)
     - e.g. is the transaction fraud?  True / False
@@ -358,7 +361,7 @@ Notes:
 ---
 ## Activation Function for Multi-class (non-binary) Outputs
 
-<img src="../../assets/images/deep-learning/output-layer-3-multi-classification.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 5.74, "top" : 1.22, "height" : 3.93, "width" : 4.28} -->
+<img src="../../assets/images/deep-learning/output-layer-3-multi-classification.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 10.83, "top" : 1.95, "height" : 5.92, "width" : 6.45} -->
 
 
  * What about multi-class classification? (non-binary)  
@@ -377,7 +380,7 @@ Notes:
 ---
 ## Activation Function - Softmax
 
-<img src="../../assets/images/deep-learning/output-layer-4-softmax-activation.png" alt="XXX image missing" style="width:60%;float:right;" /><!-- {"left" : 5.39, "top" : 1.06, "height" : 2.1, "width" : 4.79} -->
+<img src="../../assets/images/deep-learning/output-layer-4-softmax-activation.png" alt="XXX image missing" style="width:60%;float:right;" /><!-- {"left" : 10.18, "top" : 2.29, "height" : 2.97, "width" : 6.77} -->
 
 - Assume we have an image classifier that classifies animals into 4 categories: cat / dog / elephant / lion
 - So the final layer will have 4 neurons, so they match the output classes (4)
@@ -390,12 +393,12 @@ Notes:
 |-------------------------|------|------|----------|------|
 | Probability (Total 1.0) | 0.80 | 0.05 | 0.02     | 0.13 |
 
-<!-- {"left" : 4.85, "top" : 7.24, "height" : 1.23, "width" : 5.36, "columnwidth" : [1.81, 0.69, 0.69, 1.38, 0.8]} -->
+<!-- {"left" : 2.9, "top" : 10.10, "height" : 1, "width" : 11.7, "columnwidth" : [3.94, 1.5, 1.5, 3.01, 1.74]} -->
 
 ---
 ## Softmax Function
 
-<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.9, "top" : 2.37, "height" : 4.32, "width" : 8.45} -->
+<img src="../../assets/images/deep-learning/Softmax-Function.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 2.24, "top" : 3.52, "height" : 6.66, "width" : 13.03} -->
 
 
 
@@ -425,7 +428,7 @@ Notes:
 | Classification | binary (0/1)                    | sigmoid                      |
 |                | Multi-class <br/> (A, B, C , D) | softmax                      |
 
-<!-- {"left" : 0.25, "top" : 1.54, "height" : 2.57, "width" : 9.75} -->
+<!-- {"left" : 0.78, "top" : 3.74, "height" : 1, "width" : 15.95} -->
 
 Notes:   
 
@@ -434,13 +437,13 @@ Notes:
 
 ## Activation Functions Review
 
-<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 0.44, "top" : 2.93, "height" : 3.2, "width" : 9.38} -->
+<img src="../../assets/images/deep-learning/activation_functions.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%" /><!-- {"left" : 1.56, "top" : 4.26, "height" : 4.91, "width" : 14.38} -->
 
 ---
 
 ## Activation Functions Cheatsheet
 
-<img src="../../assets/images/deep-learning/3rd-party/activation-functions-cheat-sheet-1.png" style="width:60%;"/><!-- {"left" : 1.96, "top" : 1.02, "height" : 4.75, "width" : 6.34} -->
+<img src="../../assets/images/deep-learning/3rd-party/activation-functions-cheat-sheet-1.png" style="width:60%;"/><!-- {"left" : 5.73, "top" : 2.16, "height" : 8.06, "width" : 10.76} -->
 
 
 - source: [quora](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)

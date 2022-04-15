@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-17 103 965 731" width="965" height="731">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#2e006e">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-04-10 07:02:28 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-dasharray="none" fill-opacity="1" stroke="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-17" y="103" width="965" height="731"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_7">
+        <line x1="41.5" y1="127.9" x2="41.5" y2="766.3262" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_6">
+        <line x1="923.1" y1="767.4437" x2="42.617497" y2="767.4437" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(770.4506 779.117)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40"> Epochs</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(-12 225.4959) rotate(-90)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Loss</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(484 411.6631)" fill="#be8d25">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#be8d25" x="0" y="40">Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <path d="M 79.74651 212 C 79.74651 212 96.5773 342.0146 127.96651 330.8593 C 159.35573 319.70403 152.61471 316.29003 170.5545 343.18885 C 188.4943 370.0877 200.81297 408.75066 206.4341 396.1493 C 212.05524 383.54796 212.0335 295.49073 215.39313 305.33044 C 218.75277 315.17015 228.84254 360.00877 228.84254 360.00877 C 228.84254 360.00877 221.0034 328.61956 236.69257 330.8593 C 252.38173 333.09908 272.57216 376.8178 278.16068 373.4582 C 283.7492 370.09855 272.5613 351.03887 284.89082 336.49133 C 297.22036 321.9438 327.4788 366.7498 337.5686 366.7498 C 347.65837 366.7498 334.20896 307.842 353.25777 305.3522 C 372.30657 302.86236 382.39635 368.98955 381.27647 379.07932 C 380.1566 389.1691 383.63582 358.42137 412.6657 355.54013 C 469.82297 349.94074 477.673 353.30038 487.76276 372.36005 C 497.85254 391.41973 490.0025 346.5811 511.30195 343.2106 C 532.6014 339.8401 531.47064 364.51003 548.2688 361.1504 C 565.067 357.79076 575.1785 310.7885 602.0773 310.7885 C 628.65 310.7885 621.12614 375.7197 642.4256 375.7197 C 663.725 375.7197 653.6352 334.25157 681.6539 334.25157 C 709.6726 334.25157 713.1845 386.69015 744.3889 382.43896 C 793.7396 375.7197 808.3089 321.92204 817.2353 312.95214 C 826.1617 303.98224 859.8233 352.1805 880.0029 338.7311 C 900.1824 325.28167 886.7221 296.63236 892.3324 305.3522 C 897.9427 314.072 908.0216 348.8426 908.0216 348.8426" stroke="#e3a92e" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+    </g>
+  </g>
+</svg>

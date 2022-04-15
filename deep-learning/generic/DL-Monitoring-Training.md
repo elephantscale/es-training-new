@@ -4,8 +4,7 @@
 
 ## Monitoring Training
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" style="width:40%;float:right;" /><!-- {"left" : 10.24, "top" : 1.89, "height" : 5.08, "width" : 7.05} -->
 
 * During training phase, network trains on **training data** and verified on **validation data**
 
@@ -33,10 +32,10 @@
 
 ## Underfitting
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/deep-learning/learning-curve-underfit-1.png" alt="XXX image missing" style="width:35%;float:right;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
-<img src="../../assets/images/deep-learning/learning-curve-underfit-3.png" alt="XXX image missing" style="width:35%;float:right;clear:both;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-underfit-1.png" alt="XXX image missing" style="width:35%;float:right;" /> <!-- {"left" : 11.49, "top" : 2.19, "height" : 4.26, "width" : 5.49} -->
+
+<img src="../../assets/images/deep-learning/learning-curve-underfit-3.png" alt="XXX image missing" style="width:35%;float:right;clear:both;" /> <!-- {"left" : 11.49, "top" : 6.94, "height" : 4.16, "width" : 5.49} -->
 
 * In this case the network isn't really learning much from training data
 
@@ -57,8 +56,7 @@ The network is no longer learning from training data
 
 ## Overfitting
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/learning-curve-overfit-1.png" alt="XXX image missing" style="width:35%;float:right;clear:both;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-overfit-1.png" alt="XXX image missing" style="width:35%;float:right;clear:both;" /> <!-- {"left" : 11.2, "top" : 1.89, "height" : 4.6, "width" : 5.91} -->
 
 * In this scenario the model is 'memorizing' training data instead of learning from it.
 
@@ -73,8 +71,7 @@ The network is no longer learning from training data
 ---
 ## Overfitting
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/learning-curve-overfit-1.png" alt="XXX image missing" style="width:35%;float:right;clear:both;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-overfit-1.png" alt="XXX image missing" style="width:35%;float:right;clear:both;" /> <!-- {"left" : 11.21, "top" : 1.89, "height" : 4.59, "width" : 5.9} -->
 
 * Causes:
     - Not enough training data
@@ -104,15 +101,13 @@ The network is no longer learning from training data
 
 ## Goodfit
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/learning-curve-goodfit-1.png" alt="XXX image missing" style="width:40%;float:right;clear:both;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-goodfit-1.png" alt="XXX image missing" style="width:40%;float:right;clear:both;" /> <!-- {"left" : 10.72, "top" : 1.89, "height" : 4.99, "width" : 6.41} -->
 
 * Here is a good example of **goodfit**
 
 * Both training and validation losses are decreasing in tandem
 
-* They are both smooth (no bouncing around) ; indicating a good convergence
+* They are both smooth (no bouncing around); indicating a good convergence
 
 * And there is no large gap between training/validation losses
 
@@ -120,23 +115,21 @@ The network is no longer learning from training data
 
 ##  Quiz: Evaluate Training
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
-
-<!-- TODO shiva -->
-
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 11.05, "top" : 1.89, "height" : 4.18, "width" : 6.27} -->
 
 * What do you think of this training?
 
 * Answer next slide
 
-<img src="../../assets/images/deep-learning/learning-curve-2.png" alt="XXX image missing" style="width:50%;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-2.png" alt="XXX image missing" style="width:40%;" /><!-- {"left" : 11.07, "top" : 6.7, "height" : 5.06, "width" : 6.07} -->
+
+
 
 ---
 ##  Answer: Evaluate Training
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 11.05, "top" : 1.89, "height" : 4.18, "width" : 6.27} -->
 
-<!-- TODO shiva -->
 
 * Here both training and validation losses are improving steadily
 
@@ -144,30 +137,27 @@ The network is no longer learning from training data
 
 * We should add more epochs the model can keep learning
 
-<img src="../../assets/images/deep-learning/learning-curve-2.png" alt="XXX image missing" style="width:45%;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-2.png" alt="XXX image missing" style="width:40%;" /> <!-- {"left" : 11.72, "top" : 7.29, "height" : 4.1, "width" : 4.92} -->
+
+
 
 ---
 ##  Quiz: Evaluate Training
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:25%;float:right;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
-
-<!-- TODO shiva -->
-
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 11.05, "top" : 1.89, "height" : 4.18, "width" : 6.27} -->
 
 * What do you think of this training?
 
 * Answer next slide
 
-<img src="../../assets/images/deep-learning/learning-curve-3.png" alt="XXX image missing" style="width:50%;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-3.png" alt="XXX image missing" style="width:40%;" /> <!-- {"left" : 11.33, "top" : 7, "height" : 4.45, "width" : 5.7} -->
+
+
 
 ---
 ##  Answer: Evaluate Training
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
-
-<!-- TODO shiva -->
-
-
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 11.05, "top" : 1.89, "height" : 4.18, "width" : 6.27} -->
 
 * Here both training and validation losses are not improving steadily
 
@@ -175,15 +165,14 @@ The network is no longer learning from training data
 
 * Model is not stable
 
-<img src="../../assets/images/deep-learning/learning-curve-3.png" alt="XXX image missing" style="width:50%;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-3.png" alt="XXX image missing" style="width:40%;" /> <!-- {"left" : 11.59, "top" : 7.4, "height" : 4.04, "width" : 5.18} -->
+
+
 
 ---
 ##  Quiz: Evaluate Training
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:25%;float:right;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
-
-<!-- TODO shiva -->
-
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 11.05, "top" : 1.89, "height" : 4.18, "width" : 6.27} -->
 
 * What do you think of this training?
 
@@ -191,15 +180,15 @@ The network is no longer learning from training data
 
 * Answer next slide
 
-<img src="../../assets/images/deep-learning/learning-curve-4.png" alt="XXX image missing" style="width:50%;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-4.png" alt="XXX image missing" style="width:40%;" /> <!-- {"left" : 11.67, "top" : 7.34, "height" : 3.91, "width" : 5.02} -->
+
+
 
 ---
 
 ##  Answer: Evaluate Training
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
-
-<!-- TODO shiva -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:30%;float:right;" /><!-- {"left" : 11.05, "top" : 1.89, "height" : 4.18, "width" : 6.27} -->
 
 * We are seeing better results for validation than training
 
@@ -208,4 +197,10 @@ The network is no longer learning from training data
 * Fixes:
     - Need better validation set
 
-<img src="../../assets/images/deep-learning/learning-curve-4.png" alt="XXX image missing" style="width:40%;" /><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/learning-curve-4.png" alt="XXX image missing" style="width:40%;" /> <!-- {"left" : 11.92, "top" : 7.17, "height" : 4.18, "width" : 5.36} -->
+
+
+
+
+
+

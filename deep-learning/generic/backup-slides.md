@@ -57,11 +57,11 @@ Notes:
 
  * How do we calculate how wrong we are?
 
- * We consider this the  **Error** or **Loss** .  But what is the error?
+ * We consider this the  **Error** or **Loss**. But what is the error?
 
- * The error is the  **distance**  between the training output vector and the current output.
+ * The error is the **distance** between the training output vector and the current output.
 
- * But what is the meaning of  **distance** ?
+ * But what is the meaning of **distance** ?
 
      - Simplest: Euclidean distance, the distance in Euclidean space.
 
@@ -76,7 +76,7 @@ Notes:
 ---
 ## Gradient Descent
 
- * We want to optimize our model so error is  **minimized**
+ * We want to optimize our model so error is **minimized**
 
  * Gradient Descent is a common optimization algorithm.
 
@@ -91,7 +91,8 @@ Notes:
      -  There may, however, be parts of the run with a zero slope that are NOT the bottom (local minima).  
 
 
-<img src="../../assets/images/deep-learning/local_minima.png" style="max-width:20%"/>
+<img src="../../assets/images/deep-learning/local_minima.png" style="max-width:20%"/><!-- {"left" : 11.19, "top" : 3.2, "height" : 4.11, "width" : 6.04} -->
+
 
 Notes:
 
@@ -122,7 +123,7 @@ Notes:
 
 - [Link](https://clarifai.com/customers/staples)
 
-<img src="../../assets/images/logos/staples-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%;"/> &nbsp; &nbsp; <!-- {"left" : 1.48, "top" : 5.39, "height" : 0.58, "width" : 2.93} --><img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 5.84, "top" : 5.38, "height" : 0.62, "width" : 2.93} -->
+<img src="../../assets/images/logos/staples-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%;"/> &nbsp; &nbsp; <!-- {"left" : 2.05, "top" : 7.85, "height" : 1.07, "width" : 5.39} --><img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="30%" /><!-- {"left" : 10.06, "top" : 7.83, "height" : 1.14, "width" : 5.39} -->
 
 
 Notes:  
@@ -134,7 +135,7 @@ Notes:
 
 - Simple NN to recognize hand-written digits
 
-<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 2.2, "top" : 1.97, "height" : 4.02, "width" : 5.85} -->
+<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-1.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 9.58, "top" : 2.93, "height" : 5.07, "width" : 7.38} -->
 
 
 [Link](http://myselph.de/neuralNet.html)
@@ -151,7 +152,7 @@ http://myselph.de/neuralNet.html
 
 - Cool visualization of signal path through NN
 
-<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-2.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="40%;"/><!-- {"left" : 2.93, "top" : 2.34, "height" : 4.39, "width" : 4.39} -->
+<img src="../../assets/images/deep-learning/3rd-party/digit-recognition-2.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="40%;"/><!-- {"left" : 10.7, "top" : 2.57, "height" : 6.38, "width" : 6.38} -->
 
 
 [Link](http://scs.ryerson.ca/~aharley/vis/conv/flat.html)

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-249 -57 876 730" width="876" height="730">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#2e006e">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-04-10 07:00:45 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-dasharray="none" fill-opacity="1" stroke="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-249" y="-57" width="876" height="730"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_9">
+        <line x1="-190.5" y1="-32.216994" x2="-190.5" y2="606.2092" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_8">
+        <line x1="602.44165" y1="607.3267" x2="-189.3825" y2="607.3267" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M -116.35533 168.53947 C -116.35533 168.53947 -63.199245 197.40987 -30.582564 216.6568 C 2.0341179 235.90374 33.440884 255.12164 52.77037 269.5786 C 72.09985 284.0356 115.98478 313.28338 124.03144 316.8468 C 134.16265 321.33922 159.43967 347.7348 195.6788 358.563 C 231.91795 369.39123 237.399 381.51854 255.52586 387.52777 C 273.65272 393.537 272.62502 398.32695 317.319 415.17165 C 362.01295 432.01634 372.7637 445.0581 391.02175 450.0077 C 450.9563 466.26456 444.17055 459.6312 476.7945 476.46863 L 509.4112 493.3133" stroke="#aa97fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M -82.77722 143.08553 C -82.77722 143.08553 -24.402473 151.10509 17.871662 178.1611 C 60.1458 205.21713 77.25224 228.27426 106.44326 241.3015 C 135.63428 254.32874 144.87628 264.35137 167.93026 276.37707 C 190.98424 288.40278 203.36765 303.4694 254.39545 331.4979 C 298.1273 355.5348 312.967 354.0978 364.14056 375.1446 C 414.19167 395.72693 416.371 413.01433 470.788 435.4473 C 516.90324 454.45475 552.31877 462.7864 552.31877 462.7864" stroke="#e3a92e" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(459.5134 619)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40"> Epochs</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(-244 65.37891) rotate(-90)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Loss</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(263.83852 264)" fill="#be8d25">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#be8d25" x="0" y="40">Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(92.76689 408.7864)" fill="#8d7dd4">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#8d7dd4" x="0" y="40">Validation</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

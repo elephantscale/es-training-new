@@ -37,7 +37,6 @@
 * In the following example, we have 5 data points / samples (instances 1 - 5)
     - And 3 dimensional input / features: Inputs A,B,C
 
- <br/>
 
 | Instance   | Input A | Input B | Input C | Output Y |
 |------------|---------|---------|---------|----------|
@@ -47,7 +46,7 @@
 | Instance 4 | a4      | b4      | c4      | y4       |
 | Instance 5 | a5      | b5      | c5      | y5       |
 
-<!-- {"left" : 0.25, "top" : 4.86, "height" : 3, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 7.58, "height" : 1, "width" : 9.75} -->
 
 ---
 
@@ -73,10 +72,9 @@ Notes:
 
 ## A Restaurant on an Alien Planet
 
-<img src="../../assets/images/generic/3rd-party/group-dinner-1.jpg" alt="XXX image missing" style="width:35%;float:right;"/><!-- {"left" : 7.29, "top" : 1.06, "height" : 1.89, "width" : 2.84} -->
+<img src="../../assets/images/generic/3rd-party/group-dinner-1.jpg" alt="XXX image missing" style="width:35%;float:right;"/><!-- {"left" : 12.15, "top" : 2.21, "height" : 3.18, "width" : 4.78} -->
 
-<img src="../../assets/images/generic/3rd-party/robot-chef-1.jpg" alt="XXX image missing" style="width:20%;float:right;clear:both;"/><!-- {"left" : 7.91, "top" : 3.1, "height" : 3.07, "width" : 2.22} -->
-
+<img src="../../assets/images/generic/3rd-party/robot-chef-1.jpg" alt="XXX image missing" style="width:20%;float:right;clear:both;"/><!-- {"left" : 13.19, "top" : 5.64, "height" : 5.17, "width" : 3.74} -->
 
 - Imagine you are at restaurant, but you and the waitstaff don't speak the same language (remember they are aliens!)
 
@@ -107,7 +105,7 @@ Notes:
 
 - Enter __backpropagation__
 
-<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/><!-- {"left" : 0.61, "top" : 4.43, "height" : 2.97, "width" : 9.04} -->
+<img src="../../assets/images/deep-learning/perceptron-02.png" style="width:50%;"/><!-- {"left" : 2.52, "top" : 6.87, "height" : 4.1, "width" : 12.46} -->
 
 
 
@@ -142,7 +140,7 @@ Notes:
 
  * Neurons in each layer calculate output
 
-<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:35%;"/><!-- {"left" : 2.04, "top" : 3.19, "height" : 4.18, "width" : 6.17} -->
+<img src="../../assets/images/deep-learning/backpropagation-1.png" style="width:35%;"/><!-- {"left" : 4.69, "top" : 4.97, "height" : 5.5, "width" : 8.12} -->
 
 
 
@@ -157,7 +155,7 @@ Notes:
  * Then it measures the error (networks output (prediction) vs. the expected output)
 
 
-<img src="../../assets/images/deep-learning/backpropagation-2.png" style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.01, "height" : 3.06, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/backpropagation-2.png" style="width:70%;"/> <!-- {"left" : 2.77, "top" : 6, "height" : 4.46, "width" : 11.95} -->
 
 
 ---
@@ -168,7 +166,7 @@ Notes:
  * And the network weights are adjusted accordingly to minimize the error
 
 
-<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:50%;"/><!-- {"left" : 1.44, "top" : 3.78, "height" : 4.13, "width" : 7.36} -->
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:50%;"/> <!-- {"left" : 4.44, "top" : 5.4, "height" : 4.84, "width" : 8.63} -->
 
 
 ---
@@ -183,7 +181,7 @@ Notes:
 
  * During the last step algorithm applies 'Gradient Descent' algorithm on connection weights to tweak them
 
-<img src="../../assets/images/deep-learning/backpropagation-4.png" style="width:45%;"/><!-- {"left" : 2.07, "top" : 5.24, "height" : 3.1, "width" : 6.1} -->
+<img src="../../assets/images/deep-learning/backpropagation-4.png" style="width:45%;"/><!-- {"left" : 9.8, "top" : 2.85, "height" : 3.61, "width" : 7.1} -->
 
 
 
@@ -192,7 +190,7 @@ Notes:
 
 ## Backpropagation Math
 
-<img src="../../assets/images/icons/math-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="25%"/><!-- {"left" : 6.15, "top" : 1.14, "height" : 2.58, "width" : 3.86} -->
+<img src="../../assets/images/icons/math-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="25%"/><!-- {"left" : 11.06, "top" : 1.89, "height" : 4.03, "width" : 6.03} -->
 
  * Given a cost function `C`
 
@@ -226,16 +224,15 @@ Notes:
 ---
 ## Backpropagation Demos
 
-<!-- TODO shiva -->
 
  * **Animation (Regression)** : [link-youtube](https://youtu.be/krTFCDCbkZg), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/backpropagation-5.mp4)
 
-<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:35%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:35%;"/> <!-- {"left" : 10.89, "top" : 2.03, "height" : 3.47, "width" : 6.19} -->
 
  * **Animation (Classification)** :
   [link-youtube](https://youtu.be/sLsCN9ZL9RI), [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4)
 
-<img src="../../assets/images/deep-learning/neural-network-animation-1.png" style="width:40%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" style="width:40%;"/><!-- {"left" : 3.7, "top" : 6.4, "height" : 5.05, "width" : 10.1} -->
 
 ---
 
@@ -247,7 +244,7 @@ Notes:
 
  * [Demo 3](https://www.youtube.com/watch?v=Ilg3gGewQ5U)  - Goes through pretty good details (~14 mins)
 
-<img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-1.png" alt="XXX image missing" style="width:12%;"/><!-- {"left" : 1.6, "top" : 3.3, "height" : 3.7, "width" : 1.69} --> &nbsp; <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-3.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/> &nbsp; <!-- {"left" : 3.6, "top" : 4.1, "height" : 1.6, "width" : 2.76} --> <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-2.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/><!-- {"left" : 6.95, "top" : 3.77, "height" : 2.25, "width" : 2.68} -->
+<img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-1.png" alt="XXX image missing" style="width:12%;"/><!-- {"left" : 2.39, "top" : 5.14, "height" : 5.87, "width" : 2.68} --> &nbsp; <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-3.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/> &nbsp; <!-- {"left" : 5.56, "top" : 6.4, "height" : 2.54, "width" : 4.37} --> <img src="../../assets/images/deep-learning/3rd-party/backpropagation-demo-2.png" alt="XXX image missing" style="background:white;max-width:100%"  width="20%"/><!-- {"left" : 10.87, "top" : 5.88, "height" : 3.57, "width" : 4.25} -->
 
 
 ---
@@ -267,14 +264,14 @@ Notes:
     - Batch size
     - Iteration
 
-<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:35%;"/><!-- {"left" : 1.5, "top" : 4.53, "height" : 3.62, "width" : 7.24} -->
+<img src="../../assets/images/deep-learning/backpropagation-3.png" style="width:35%;"/><!-- {"left" : 4.74, "top" : 6.7, "height" : 4.01, "width" : 8.02} -->
 
 
 ---
 
 ## Epoch
 
-<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 8.45, "top" : 1.28, "height" : 2.39, "width" : 1.74} -->
+<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 12.89, "top" : 1.89, "height" : 5.76, "width" : 4.19} -->
 
  * One **Epoch** means when an entire dataset passed forward and backward exactly ONCE
     - Restaurant Example: Entire table's meal is sent back once and re-delivered
@@ -289,7 +286,7 @@ Notes:
 
 ## Epoch 
 
-<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 8.45, "top" : 1.28, "height" : 2.39, "width" : 1.74} -->
+<img src="../../assets/images/deep-learning/epoch-1.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 12.89, "top" : 1.89, "height" : 5.76, "width" : 4.19} -->
 
  * As we pass the data back and forth multiple times (multiple epochs) the network gets more chance to learn from data and tweak the parameters  further
     - model gets more accurate
@@ -306,9 +303,7 @@ Notes:
 
 ## Batch size
 
-<img src="../../assets/images/deep-learning/epoch-batch-2.png" style="width:45%;float:right;"/><!-- {"left" : 2.13, "top" : 1.6, "height" : 1.07, "width" : 5.98} -->
-
-
+<img src="../../assets/images/deep-learning/epoch-batch-2.png" style="width:45%;float:right;"/><!-- {"left" : 12.33, "top" : 1.88, "height" : 0.88, "width" : 4.93} -->
  * When we are training on large dataset, we can not fit the entire dataset into the network due to memory constraints / processing restraints
 
  * So we send data into batches
@@ -338,8 +333,7 @@ Notes:
 
 - batch-1 = 4, batch-2 = 4, batch-3 = 2
 
-<!-- todo shiva -->
-<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" style="width:100%;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
+<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" style="width:100%;"/><!-- {"left" : 1.93, "top" : 7.45, "height" : 2.25, "width" : 13.65} -->
 
 
 
@@ -363,7 +357,7 @@ for e  in number_of_epochs {
     }
 }
 ```
-<!-- {"left" : 0, "top" : 3.96, "height" : 2.39, "width" : 9.11} -->
+<!-- {"left" : 0.85, "top" : 4.56, "height" : 3, "width" : 11.45} -->
 
 ---
 
@@ -376,12 +370,13 @@ for e  in number_of_epochs {
 | 1                                     | Stochastic Gradient Descent  | Each batch has one data sample                     |  
 | 1 < batch size < size of training set | Mini-Batch Gradient Descent. | Batch size is usually power of 2 (32, 64, 128...)  |  
 
-<!-- {"left" : 0.16, "top" : 4.29, "height" : 2.46, "width" : 9.93, "columnwidth" : [2.88, 3.74, 3.31]} -->
+<!-- {"left" : 0.99, "top" : 2.8, "height" : 1, "width" : 15.51} -->
+
+<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" style="width:100%;"/><!-- {"left" : 2.96, "top" : 7.81, "height" : 1.91, "width" : 11.59} -->
 
 
-<!-- todo shiva -->
-<img src="../../assets/images/deep-learning/epoch-batch-iteration-1.png" style="width:100%;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
 ---
+
 ## Determining Optimal Values or Batch Size / Epochs
 
  * Typical epochs values are in 100s to thousands
@@ -403,36 +398,36 @@ for e  in number_of_epochs {
 
 ## Training Parameters
 
-<!-- todo shiva -->
 
-<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:75%;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:75%;"/><!-- {"left" : 2.49, "top" : 2.36, "height" : 8.99, "width" : 12.51} -->
+
 
 ---
 
 ## Training Parameters
 
-<!-- todo shiva -->
-<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/> <!-- {"left" : 10.66, "top" : 2.07, "height" : 4.63, "width" : 6.45} -->
+
 
 * For each layer, we define **number of neurons** and **activation function**
   - more neurons help the network to adopt to complex shape; but more also means increased training time
 
-* **Activation functions**: Determine the output each neuron
+* **Activation functions:** Determine the output each neuron
 
-* **Loss functions**: We try to minimize the error/loss
+* **Loss functions:** We try to minimize the error/loss
   - For example, when driving, we optimize to minimize time spent
 
 ---
 
 ## Training Parameters
 
-<!-- todo shiva -->
-<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 0.7, "top" : 3.63, "height" : 1.46, "width" : 8.85} -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/> <!-- {"left" : 10.66, "top" : 2.07, "height" : 4.63, "width" : 6.45} -->
 
-* **Optimizers**: Helps with adjusting the weights of the network, so our loss can be minimized
+
+* **Optimizers:** Helps with adjusting the weights of the network, so our loss can be minimized
   - We want to tweak weights efficiently not take random guesses
 
-* **Learning Rate**: This determines how much we update the weights.  It is a critical parameter.  
+* **Learning Rate:** This determines how much we update the weights.  It is a critical parameter.  
   - Too small, the training will take too long
   - Too large, the training will bounce around and not converge
 
@@ -465,6 +460,7 @@ for e  in number_of_epochs {
 | Classification | binary (0/1)                    | binary_crossentropy      | sigmoid                      |
 |                | Multi-class <br/> (A, B, C , D) | categorical_crossentropy | softmax                      |
 
+<!-- {"left" : 0.95, "top" : 2.5, "height" : 1, "width" : 15.6} -->
 
 ---
 
@@ -474,8 +470,7 @@ for e  in number_of_epochs {
 
 ## Learning Rate
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/learning-rate-1.png"  style="width:35%;float:right;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/deep-learning/learning-rate-1.png"  style="width:35%;float:right;" /><!-- {"left" : 11.47, "top" : 1.89, "height" : 4.31, "width" : 5.93} -->
 
 * Neural Networks update their weights using backpropagation
 
@@ -497,10 +492,9 @@ for e  in number_of_epochs {
     - It may cauase the model to diverge, and bounce around
 * Our goal is to find the **right learning rate**
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/learning-rate-3.png"  style="width:32%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
-<img src="../../assets/images/deep-learning/learning-rate-2.png"  style="width:32%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
-<img src="../../assets/images/deep-learning/learning-rate-4.png"  style="width:32%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/deep-learning/learning-rate-3.png"  style="width:32%;" /> <!-- {"left" : 0.77, "top" : 7.22, "height" : 3.75, "width" : 5.16} --><img src="../../assets/images/deep-learning/learning-rate-2.png"  style="width:32%;" /> <!-- {"left" : 6.17, "top" : 7.22, "height" : 3.75, "width" : 5.16} --><img src="../../assets/images/deep-learning/learning-rate-4.png"  style="width:32%;" /> <!-- {"left" : 11.57, "top" : 7.22, "height" : 3.75, "width" : 5.16} -->
+
+
 
 ---
 
@@ -514,7 +508,7 @@ for e  in number_of_epochs {
 
 * Set it too low, algorithm will eventually converge, but will take too many iterations and too long
 
-<img src="../../assets/images/deep-learning/learning-rate-summary.png" alt="XXX image missing" style="width:70%;"/><!-- {"left" : 0.77, "top" : 2.73, "height" : 3.61, "width" : 8.72} -->
+<img src="../../assets/images/deep-learning/learning-rate-summary.png" alt="XXX image missing" style="width:70%;"/><!-- {"left" : 3.84, "top" : 7.13, "height" : 4.06, "width" : 9.82} -->
 
 ---
 
@@ -529,18 +523,16 @@ for e  in number_of_epochs {
 * _"The learning rate is perhaps the most important hyperparameter. If you have time
 to tune only one hyperparameter, tune the learning rate."_ - Page 429, Deep Learning, 2016.
 
-<br />
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/learning-rate-andrej-karpathy-tweet-1.png"  style="width:80%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/deep-learning/3rd-party/learning-rate-andrej-karpathy-tweet-1.png"  style="width:80%;" /> <!-- {"left" : 0.94, "top" : 7.74, "height" : 2.69, "width" : 15.63} -->
+
+
 
 ---
 
 ## Determining Learning Rate
 
-
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/learning-rate-andrej-karpathy-tweet-2.png"  style="width:80%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/deep-learning/3rd-party/learning-rate-andrej-karpathy-tweet-2.png"  style="width:80%;" /> <!-- {"left" : 8.15, "top" : 1.89, "height" : 3.93, "width" : 8.72} -->
 
 * Read the [tweet thread](https://twitter.com/karpathy/status/801621764144971776?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E801621764144971776%7Ctwgr%5E&ref_url=https%3A%2F%2Fwww.jeremyjordan.me%2Fnn-learning-rate%2F) for some funny reactions
 
@@ -550,8 +542,7 @@ to tune only one hyperparameter, tune the learning rate."_ - Page 429, Deep Lear
 
 ## How to Find the Optimal Learning Rate
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/learning-curve-3.png"  style="width:40%;float:right;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/deep-learning/learning-curve-3.png"  style="width:40%;float:right;" /><!-- {"left" : 11.59, "top" : 2.12, "height" : 3.91, "width" : 5.34} -->
 
 * Start with learning rate of **`0.1 or 0.01`**
 
@@ -584,7 +575,7 @@ to tune only one hyperparameter, tune the learning rate."_ - Page 429, Deep Lear
 
 ## Review Questions (Part 1)
 
- <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="30%" /><!-- {"left" : 6.58, "top" : 1.2, "height" : 2.34, "width" : 3.52} -->
+ <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="30%" /><!-- {"left" : 10.25, "top" : 2.48, "height" : 4.7, "width" : 7.07} -->
 
 
 * **Q:** Can you name 3 activation functions and when they are used?
@@ -601,7 +592,7 @@ to tune only one hyperparameter, tune the learning rate."_ - Page 429, Deep Lear
 
 ## End of Part 1!
 
-* **Instructor**: Pause here.  And move onto the next module
+* **Instructor:** Pause here.  And move onto the next module
 
 * Cover **Part-2** as need basis
 
@@ -643,7 +634,7 @@ Cover as necessary
     - Measure validation accuracy every few steps (say 20)
     - If it scores higher than previous snapshot, save the current model snapshot as 'winner'
 
-<img src="../../assets/images/deep-learning/early-stopping-1.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 2.69, "top" : 4.86, "height" : 3.26, "width" : 4.88} -->
+<img src="../../assets/images/deep-learning/early-stopping-1.png" alt="XXX image missing" style="width:40%;"/><!-- {"left" : 10.8, "top" : 2.52, "height" : 4.15, "width" : 6.21} -->
 
 
 ---
@@ -689,7 +680,7 @@ Cover as necessary
 
 ## Dropout
 
-<img src="../../assets/images/deep-learning/dropout-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 1.78, "top" : 1.97, "height" : 5.7, "width" : 6.69} -->
+<img src="../../assets/images/deep-learning/dropout-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="50%"/><!-- {"left" : 4.31, "top" : 3.08, "height" : 7.56, "width" : 8.87} -->
 
 
 ---
@@ -719,8 +710,9 @@ Decrease it if it is underfitting
  * for each neuron, it constrains the weights `w` of the incoming connections such that ||w||2 ≤ r
     - where r is the max-norm hyperparameter and ||.||2 is the L2 norm
 
-<img src="../../assets/images/deep-learning/min-max-regularization-1.png" alt="XXX image missing" style="background:white;width:20%"/><!-- {"left" : 3.72, "top" : 3.01, "height" : 0.68, "width" : 2.81} -->
+<img src="../../assets/images/deep-learning/min-max-regularization-1.png" alt="XXX image missing" style="background:white;width:20%"/><!-- {"left" : 3.9, "top" : 4.95, "height" : 0.97, "width" : 4} -->
 
+<br/>
 
 - Max-norm regularization can also help reduce the vanishing/exploding gradients
 
@@ -745,7 +737,7 @@ Decrease it if it is underfitting
 
 ## Data Augmentation Example
 
-<img src="../../assets/images/deep-learning/image-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 0.25, "top" : 2.54, "height" : 3.98, "width" : 9.75} -->
+<img src="../../assets/images/deep-learning/image-augmentation-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="100%"/><!-- {"left" : 2.19, "top" : 3.51, "height" : 5.36, "width" : 13.13} -->
 
 
 
@@ -808,16 +800,16 @@ These are discussed in the following sections/slides
 
  * Normal distribution with mean 0 and standard deviation σ as follows  
 
-<img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%" /><!-- {"left" : 3.07, "top" : 2.69, "height" : 0.99, "width" : 4.1} -->
+<img src="../../assets/images/deep-learning/xavier-init1.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%" /><!-- {"left" : 2.25, "top" : 3.99, "height" : 1.13, "width" : 4.7} -->
 
  * Or Uniform distribution between -r and r with r  
 
-<img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%" width="40%"/><!-- {"left" : 3.07, "top" : 5.12, "height" : 0.99, "width" : 4.1} -->
+<img src="../../assets/images/deep-learning/xavier-init2.png" alt="XXX image missing" style="background:white;max-width:100%" width="40%"/><!-- {"left" : 2.25, "top" : 6.7, "height" : 1.23, "width" : 5.08} -->
 
 
  * When number of inputs == number of outputs, we get a simplified equation  
 
-<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 2.77, "top" : 7.93, "height" : 0.43, "width" : 2.04} -->&nbsp;  &nbsp; &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 5.59, "top" : 7.93, "height" : 0.43, "width" : 1.88} -->
+<img src="../../assets/images/deep-learning/xavier-init3.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 2.25, "top" : 10.01, "height" : 0.68, "width" : 3.21} -->&nbsp;  &nbsp; &nbsp;  &nbsp;<img src="../../assets/images/deep-learning/xavier-init4.png" alt="XXX image missing" style="background:white;max-width:100%" width="30%"/><!-- {"left" : 6.69, "top" : 10.01, "height" : 0.68, "width" : 2.96} -->
 
 
 Notes:  
@@ -828,7 +820,7 @@ Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/librar
 ## Xe Initialization Parameters
 
 
-<img src="../../assets/images/deep-learning/xavier-init-params.png" alt="XXX image missing" style="width:90%;"/><!-- {"left" : 0.43, "top" : 1.39, "height" : 4.99, "width" : 9.39} -->
+<img src="../../assets/images/deep-learning/xavier-init-params.png" alt="XXX image missing" style="width:90%;"/><!-- {"left" : 2.63, "top" : 3.21, "height" : 6.51, "width" : 12.25} -->
 
 
 
@@ -873,13 +865,14 @@ Source : [Neural Networks and Deep Learning](https://learning.oreilly.com/librar
 ## Batch Normalization Implementation
 
  * In Tensorflow
+
 ```python
 tf.layers.batch_normalization
 ```
-<!-- {"left" : 0, "top" : 1.56, "height" : 0.54, "width" : 5.61} -->
-
+<!-- {"left" : 0.85, "top" : 2.51, "height" : 0.67, "width" : 6.64} -->
 
  * In Keras
+
 ```python
 keras.layers.BatchNormalization(axis=-1, momentum=0.99,
           epsilon=0.001, center=True, scale=True,
@@ -888,15 +881,16 @@ keras.layers.BatchNormalization(axis=-1, momentum=0.99,
           beta_regularizer=None, gamma_regularizer=None,
           beta_constraint=None, gamma_constraint=None)
 ```
-<!-- {"left" : 0, "top" : 3, "height" : 1.38, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4, "height" : 2.23, "width" : 15.17} -->
+
 
 ---
 
 ## Batch Normalization Math (Reference Only)
 
-For reference only, please see the paper for underlying math.
+* For reference only, please see the paper for underlying math.
 
-<img src="../../assets/images/deep-learning/mini-batch-equation.png" alt="XXX image missing" style="background:white;max-width:100%" width="45%" /><!-- {"left" : 2.49, "top" : 2.49, "height" : 4.66, "width" : 5.27} -->
+<img src="../../assets/images/deep-learning/mini-batch-equation.png" alt="XXX image missing" style="background:white;max-width:100%" width="45%" /><!-- {"left" : 11.06, "top" : 2.6, "height" : 5.01, "width" : 5.66} -->
 
 
 Notes:  
@@ -946,14 +940,14 @@ These default values should get you started, and should work well in most scenar
 | **Learning rate schedule** | None                                 |
 
 
-<!-- {"left" : 0.25, "top" : 3.5, "height" : 2.55, "width" : 9.75} -->
+<!-- {"left" : 1.06, "top" : 3.67, "height" : 1, "width" : 15.38} -->
 
 
 ---
 
 ## Review Questions - Part 2
 
- <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="30%" /><!-- {"left" : 6.58, "top" : 1.2, "height" : 2.34, "width" : 3.52} -->
+ <img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right" width="30%" /><!-- {"left" : 10.8, "top" : 1.89, "height" : 4.44, "width" : 6.68} -->
 
 
 * **Q:** What are the techniques to prevent overfitting?
@@ -967,7 +961,7 @@ These default values should get you started, and should work well in most scenar
  * [Neural networks and deep learning](https://learning.oreilly.com/library/view/neural-networks-and/9781492037354/)  
 by  Aurélien Géron (ISBN: 9781492037347)
 
-<img src="../../assets/images/books/neural-networks-and-deep-learning-9781492037347.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 3.92, "top" : 3.01, "height" : 3.63, "width" : 2.4} -->
+<img src="../../assets/images/books/neural-networks-and-deep-learning-9781492037347.jpeg" alt="keras book1" style="width:17%"/><!-- {"left" : 7.01, "top" : 5, "height" : 5.25, "width" : 3.47} -->
 
 ---
 

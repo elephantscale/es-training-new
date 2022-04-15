@@ -4,8 +4,7 @@
 
 ## Optimizers Overview
 
-<!-- todo shiva -->
-<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 10.15, "top" : 1.96, "height" : 4.65, "width" : 6.97} -->
 
 - **Optimizers** help determine weights during training phase
 
@@ -33,7 +32,7 @@
 ---
 ## Understanding Optimizers: A Golf Game Analogy  :-)
 
-<img src="../../assets/images/generic/3rd-party/golf-2b.jpg" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+<img src="../../assets/images/generic/3rd-party/golf-2b.jpg" style="width:50%;float:right;"/><!-- {"left" : 10.5, "top" : 2.42, "height" : 4.35, "width" : 6.52} -->
 
 
 - Imagine a golfer is trying to get the ball in the hole
@@ -51,8 +50,8 @@
 - Optimizer ('golf coach') gives feedback on first shot
     - _"swing a little to left"_
 
-<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:22%;"/><!-- {"left" : 1.17, "top" : 3.38, "height" : 4.84, "width" : 2.85} --> &nbsp;
-<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:35%;"/><!-- {"left" : 5.3, "top" : 3.38, "height" : 4.84, "width" : 4.55} -->
+<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:22%;"/><!-- {"left" : 4.2, "top" : 5.86, "height" : 5.08, "width" : 2.99} --> &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:35%;"/><!-- {"left" : 8.53, "top" : 5.86, "height" : 5.08, "width" : 4.77} -->
 
 
 
@@ -66,8 +65,8 @@
     - _"give it little more power"_
 - And the third swing makes the hole!
 
-<img src="../../assets/images/deep-learning/optimizer-4.png" style="width:32%;"/><!-- {"left" : 0.78, "top" : 3.81, "height" : 4.34, "width" : 3.98} --> &nbsp;
-<img src="../../assets/images/deep-learning/optimizer-5.png" style="width:32%;"/><!-- {"left" : 5.49, "top" : 3.81, "height" : 4.34, "width" : 3.98} -->
+<img src="../../assets/images/deep-learning/optimizer-4.png" style="width:32%;"/><!-- {"left" : 3.63, "top" : 5.58, "height" : 5.11, "width" : 4.69} --> &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-5.png" style="width:32%;"/><!-- {"left" : 9.18, "top" : 5.58, "height" : 5.11, "width" : 4.69} -->
 
 
 
@@ -75,15 +74,15 @@
 
 ## Optimizing a Golf Game - Summary
 
-<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:14.4%;"/><!-- {"left" : 0.15, "top" : 3.33, "height" : 2.95, "width" : 1.74} --> &nbsp; &nbsp;
-<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:23%;"/><!-- {"left" : 1.95, "top" : 3.35, "height" : 2.95, "width" : 2.78} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/optimizer-4.png" style="width:23%;"/><!-- {"left" : 4.8, "top" : 3.33, "height" : 2.95, "width" : 2.71} -->
- &nbsp; &nbsp; <img src="../../assets/images/deep-learning/optimizer-5.png" style="width:23%;"/><!-- {"left" : 7.36, "top" : 3.35, "height" : 2.95, "width" : 2.71} -->
+<img src="../../assets/images/deep-learning/optimizer-1.png" style="width:14.4%;"/><!-- {"left" : 0.84, "top" : 3.83, "height" : 4.7, "width" : 2.77} --> &nbsp; &nbsp;
+<img src="../../assets/images/deep-learning/optimizer-2.png" style="width:23%;"/><!-- {"left" : 3.71, "top" : 3.86, "height" : 4.7, "width" : 4.43} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/optimizer-4.png" style="width:23%;"/><!-- {"left" : 8.26, "top" : 3.83, "height" : 4.7, "width" : 4.32} -->
+ &nbsp; &nbsp; <img src="../../assets/images/deep-learning/optimizer-5.png" style="width:23%;"/><!-- {"left" : 12.34, "top" : 3.86, "height" : 4.7, "width" : 4.32} -->
 
 ---
 
 ## Popular Optimziers
 
-<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+<img src="../../assets/images/deep-learning/neural-network-training-parameters-1.png" style="width:50%;float:right;"/><!-- {"left" : 10.18, "top" : 2.02, "height" : 4.57, "width" : 6.85} -->
 
 * There are various optimizer implementations;  We will focus on 3 most popular ones
 
@@ -111,10 +110,9 @@
 
 * The latest optimizers, such as **Adam** and **RMSProp**, can adjust the learning rate automatically; called **adaptive optimizers**
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/learning-rate-3.png"  style="width:32%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
-<img src="../../assets/images/deep-learning/learning-rate-2.png"  style="width:32%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
-<img src="../../assets/images/deep-learning/learning-rate-4.png"  style="width:32%;" /><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/deep-learning/learning-rate-3.png"  style="width:32%;" />
+<img src="../../assets/images/deep-learning/learning-rate-2.png"  style="width:32%;" />
+<img src="../../assets/images/deep-learning/learning-rate-4.png"  style="width:32%;" />
 
 ---
 
@@ -147,8 +145,8 @@ Notes:
   - [A Look at Gradient Descent and RMSprop Optimizers](https://towardsdatascience.com/a-look-at-gradient-descent-and-rmsprop-optimizers-f77d483ef08b)
 
 
-<img src="../../assets/images/deep-learning/3rd-party/geoffrey-hinton-rmsprop.png"  style="width:40%" /><!-- {"left" : 1.17, "top" : 1.28, "height" : 4.26, "width" : 7.91} --> &nbsp; &nbsp;
-<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-rmsprop.png"  style="width:40%;" /><!-- {"left" : 1.31, "top" : 1.2, "height" : 4.29, "width" : 7.63} -->
+<img src="../../assets/images/deep-learning/3rd-party/geoffrey-hinton-rmsprop.png"  style="width:40%" /><!-- {"left" : 1.85, "top" : 6.71, "height" : 3.53, "width" : 6.55} --> &nbsp; &nbsp;
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-rmsprop.png"  style="width:40%;" /><!-- {"left" : 9.38, "top" : 6.71, "height" : 3.53, "width" : 6.27} -->
 
 
 
@@ -158,7 +156,6 @@ Notes:
 
 * **Tensorflow v2**
 
-<!-- TODO shiva -->
 ```python
 from tf.keras.optimizers import RMSprop
 
@@ -173,6 +170,7 @@ opt = RMSprop(learning_rate=0.1)  # <-- initialize the class and provide argumen
 
 model.compile (optimizer=opt, loss='...')
 ```
+<!-- {"left" : 0.85, "top" : 2.75, "height" : 4.2, "width" : 16.04} -->
 
 
 ---
@@ -197,7 +195,6 @@ Notes:
 
 * **Tensorflow v2**
 
-<!-- TODO shiva -->
 ```python
 from tf.keras.optimizers import Adam
 
@@ -212,12 +209,13 @@ opt = Adam(learning_rate=0.1)  # <-- initialize the class and provide arguments
 
 model.compile (optimizer=opt, loss='...')
 ```
+<!-- {"left" : 0.85, "top" : 2.75, "height" : 4.44, "width" : 16.4} -->
 
 
 ---
 ## Comparing Optimizers - Long Valley
 
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-2-long-valley.png" alt="XXX image missing" style="width:45%;float:right"/><!-- {"left" : 6.04, "top" : 1.37, "height" : 3.04, "width" : 3.94} -->
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-2-long-valley.png" alt="XXX image missing" style="width:45%;float:right"/><!-- {"left" : 11.02, "top" : 2.39, "height" : 4.63, "width" : 6} -->
 
 * "Algos without scaling based on gradient information really struggle to break symmetry here - SGD gets no where and Nesterov Accelerated Gradient / Momentum exhibits oscillations until they build up velocity in the optimization direction. Algos that scale step size based on the gradient quickly break symmetry and begin descending quickly"
 
@@ -229,7 +227,7 @@ model.compile (optimizer=opt, loss='...')
 ---
 ## Comparing Optimizers -  Saddle Point
 
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="width:50%;float:right"/><!-- {"left" : 5.89, "top" : 1.37, "height" : 3.16, "width" : 4.07} -->
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-animation-3-saddle-point.png" alt="XXX image missing" style="width:50%;float:right"/><!-- {"left" : 10.76, "top" : 2.12, "height" : 4.94, "width" : 6.36} -->
 
 * "Behavior around a saddle point. NAG/Momentum again like to explore around, almost taking a different path. Adadelta/Adagrad/RMSProp proceed like accelerated SGD."
 
@@ -248,8 +246,7 @@ Notes:
 
 ## Optimizers - Takeaway
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/optimizers-summary-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.52, "top" : 1.54, "height" : 3, "width" : 4.5} -->
+<img src="../../assets/images/deep-learning/3rd-party/optimizers-summary-1.png" style="width:50%;float:right;"/><!-- {"left" : 9.12, "top" : 1.65, "height" : 5.45, "width" : 8.17} -->
 
 - Here we see the progress of our algorithm accuracy (climbing towards 1.0 or 100%)
 
@@ -272,7 +269,7 @@ Notes:
 
 ## Momentum Optimization
 
-<img src="../../assets/images/deep-learning/ball-rolling-down.png" alt="XXX image missing" style="width:40%;float:right;"/><!-- {"left" : 5.88, "top" : 2.19, "height" : 2.61, "width" : 4.15} -->
+<img src="../../assets/images/deep-learning/ball-rolling-down.png" alt="XXX image missing" style="width:40%;float:right;"/><!-- {"left" : 11.32, "top" : 1.89, "height" : 3.61, "width" : 5.74} -->
 
 - Imagine a ball rolling down a smooth surface;  it will start slowly, but keep accelerating and quickly picking up momentum until it reaches terminal velocity
 
@@ -284,7 +281,7 @@ Notes:
 
 ## Momentum Video Tutorial
 
-<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-momentum.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.34, "top" : 1.12, "height" : 4.61, "width" : 7.57} -->
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-momentum.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 4.04, "top" : 2.19, "height" : 5.74, "width" : 9.42} -->
 
 * [Link](https://www.youtube.com/watch?v=k8fTYJPd3_I)
 
@@ -294,9 +291,7 @@ Notes:
 
 * **Tensorflow v2** ([Documentation](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/SGD))
 
-<br/>
 
-<!-- TODO shiva -->
 ```python
 from tf.keras.optimizers import SGD
 
@@ -308,7 +303,7 @@ opt = SGD(learning_rate=0.01,
 
 model.compile (optimizer=opt, loss='...')
 ```
-<!-- {"left" : 0, "top" : 4.02, "height" : 0.45, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.96, "height" : 3.72, "width" : 11.9} -->
 
 ---
 
@@ -316,7 +311,7 @@ model.compile (optimizer=opt, loss='...')
 
 
 
-<img src="../../assets/images/deep-learning/3rd-party/wayne-grekzky.jpg" alt="XXX image missing" style="background:white;width:40%;float:right;" /> <!-- {"left" : 5.62, "top" : 3.47, "height" : 2.13, "width" : 4.38} -->
+<img src="../../assets/images/deep-learning/3rd-party/wayne-grekzky.jpg" alt="XXX image missing" style="background:white;width:40%;float:right;" /> <!-- {"left" : 9.41, "top" : 2.1, "height" : 3.8, "width" : 7.82} -->
 
 - This is an update to Momentum Descent
 
@@ -335,7 +330,6 @@ Notes:
 
 * **Tensorflow v2**
 
-<!-- TODO shiva -->
 ```python
 from tf.keras.optimizers import SGD
 
@@ -348,6 +342,7 @@ opt = SGD(learning_rate=0.01,
 
 model.compile (optimizer=opt, loss='...')
 ```
+ <!-- {"left" : 0.85, "top" : 2.79, "height" : 4.01, "width" : 12.91} -->
 
 ---
 
@@ -358,7 +353,8 @@ model.compile (optimizer=opt, loss='...')
 - Adagrad ([paper](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf)) adjusts the direction and velocity by scaling the direction vector
     - 'points in the right direction (global minimum)' better :-)
 
-<img src="../../assets/images/deep-learning/optimizer-ada-grad-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="60%"/><!-- {"left" : 2.2, "top" : 4.46, "height" : 3.14, "width" : 5.85} -->
+<img src="../../assets/images/deep-learning/optimizer-ada-grad-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="60%"/><!-- {"left" : 4.84, "top" : 6.42, "height" : 4.2, "width" : 7.81} -->
+
 
 
 ---
@@ -367,8 +363,7 @@ model.compile (optimizer=opt, loss='...')
 
 - Regular Gradient Descent updates the new weights using learning rate (always constant).  if the local gradient is very small, the updates are small too  
 
-<img src="../../assets/images/deep-learning/Formula-theta-01.png" alt="Formula-theta-01.png" style="background:white;width:30%"/><!-- {"left" : 3.13, "top" : 2.6, "height" : 1.08, "width" : 3.98} -->
-
+<img src="../../assets/images/deep-learning/Formula-theta-01.png" alt="Formula-theta-01.png" style="background:white;width:30%"/><!-- {"left" : 11.87, "top" : 3.11, "height" : 1.43, "width" : 5.29} -->
 
 - Here
     - θ: is current weights
@@ -384,9 +379,9 @@ Notes:
 
 ## Momentum Optimizer
 
-<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.87, "top" : 1.09, "height" : 0.74, "width" : 3.32} -->
+<img src="../../assets/images/deep-learning/Formula-m-01.png" alt="Formula-m-01.png" style="background:white;width:30%;float:right;"/><!-- {"left" : 11.86, "top" : 1.89, "height" : 1.21, "width" : 5.45} -->
 
-<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:30%;float:right;clear:both;"/><!-- {"left" : 7.6, "top" : 2, "height" : 0.91, "width" : 2.46} -->
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:30%;float:right;clear:both;"/><!-- {"left" : 11.86, "top" : 3.38, "height" : 1.49, "width" : 4.04} -->
 
 - Momentum takes into account of what previous gradients were
 
@@ -406,9 +401,9 @@ Notes:
 
 ## Nesterov Accelerated Gradient
 
-<img src="../../assets/images/deep-learning/Formula-m-02.png" alt="Formula-m-02.png" style="background:white;width:30%;"/><!-- {"left" : 3.13, "top" : 1.27, "height" : 0.73, "width" : 3.99} -->
+<img src="../../assets/images/deep-learning/Formula-m-02.png" alt="Formula-m-02.png" style="background:white;width:30%;"/><!-- {"left" : 4.2, "top" : 3.58, "height" : 1.66, "width" : 9.1} -->
 
-<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%;"/><!-- {"left" : 4.16, "top" : 2.36, "height" : 0.71, "width" : 1.92} -->
+<img src="../../assets/images/deep-learning/Formula-theta-02.png" alt="Formula-theta-02.png" style="background:white;width:15%;"/><!-- {"left" : 6.55, "top" : 6.06, "height" : 1.62, "width" : 4.38} -->
 
 ---
 
@@ -416,7 +411,7 @@ Notes:
 
 - Here you see Nesterov approach is slightly closer to optimum
 
-<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="width:37%"/><!-- {"left" : 2.9, "top" : 2.61, "height" : 5.1, "width" : 4.44} -->
+<img src="../../assets/images/deep-learning/optimizer-nestrov-1.png" alt="XXX image missing" style="width:37%"/><!-- {"left" : 11.13, "top" : 2.26, "height" : 7.05, "width" : 6.14} -->
 
 ---
 
@@ -424,14 +419,15 @@ Notes:
 
 - Decay rate β is between 0 and 1.0; typically set to 0.9 - that works well in most scenarios
 
-<img src="../../assets/images/deep-learning/optimizer-rmsprop-1.png" alt="XXX image missing" style="width:50%;"/><!-- {"left" : 1.71, "top" : 6.65, "height" : 1.13, "width" : 6.82} -->
+<img src="../../assets/images/deep-learning/optimizer-rmsprop-1.png" alt="XXX image missing" style="width:50%;"/><!-- {"left" : 4.38, "top" : 5.47, "height" : 1.45, "width" : 8.73} -->
+
 
 ---
 
 
 ## Adam Math (Reference Only)
 
-<img src="../../assets/images/deep-learning/optimizer-adam-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 1.15, "top" : 2.7, "height" : 4.24, "width" : 7.96} -->
+<img src="../../assets/images/deep-learning/optimizer-adam-1.png" alt="XXX image missing" style="background:white;max-width:100%" width="70%"/><!-- {"left" : 0.85, "top" : 2.84, "height" : 5.49, "width" : 10.31} -->
 
 
 

@@ -8,8 +8,7 @@
 
 ## Image Processing is Hard!
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/cats-dog-classifier-learning-curve-100-epochs.png" style="width:35%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/deep-learning/cats-dog-classifier-learning-curve-100-epochs.png" style="width:35%;float:right;" /> <!-- {"left" : 11.81, "top" : 1.89, "height" : 3.47, "width" : 5.3} -->
 
 * By now we had trained image classifiers on cat-dog / horse-human / flowers datasets
 
@@ -17,7 +16,7 @@
 
 * In 'cat-dog-redux' data we had about 2000 training images (size: 45 MB) and 1000 validation images (size 22 MB)
 
-* Our network is pretty small: 3 Convolutional layers (Conv + MaxPool) ;  10 layers total
+* Our network is pretty small: 3 Convolutional layers (Conv + MaxPool); 10 layers total
 
 * We trained this network for 100 epochs
     - Took about 20 minutes on a Ubuntu machine with 16 cores + 64 GB memory +  Nvidia GeForce RTX 2070  GPU  with 8GB  (Using Tensorflow-GPU acceleration)
@@ -46,8 +45,8 @@
 
 ## Transfer Learning Analogy
 
-<!-- TODO shiva -->
-<img src="../../assets/images/generic/guitar-ukulele-1.jpg" style="width:20%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/generic/guitar-ukulele-1.jpg" style="width:20%;float:right;" /> <!-- {"left" : 11.6, "top" : 1.89, "height" : 2.5, "width" : 5.46} -->
+
 * Imagine you want to learn how to play the **ukulele**
 
 * If you have no musical background, and you are starting fresh with the ukulele as your very first instrument, it'll take you a few months to get proficient at playing it
@@ -85,8 +84,7 @@ Notes:
 
 ## Using a Pre-trained Model
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/standing-on-shoulders.jpg" style="width:30%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/deep-learning/3rd-party/standing-on-shoulders.jpg" style="width:30%;float:right;" /> <!-- {"left" : 13.19, "top" : 2.18, "height" : 6.26, "width" : 3.94} -->
 
  * Despite what you think, your problem is not totally unique
    - Others have worked on it before.
@@ -109,8 +107,7 @@ Notes:
  * So we can re-use the learned knowledge in these layers
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/transfer-learning-3.png" style="width:80%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/deep-learning/transfer-learning-3.png" style="width:80%;" /><!-- {"left" : 3.05, "top" : 6.14, "height" : 4.16, "width" : 11.4} -->
 
 Notes:
 
@@ -142,8 +139,8 @@ Notes:
 
  * This allows us to customize the model to our data
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/transfer-learning-4.png" style="width:60%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/deep-learning/transfer-learning-4.png" style="width:60%;" /><!-- {"left" : 2.83, "top" : 6.44, "height" : 4.77, "width" : 11.84} -->
+
 
 Notes:
 
@@ -156,8 +153,7 @@ Notes:
 
 * And later layers are re-trained with our own data
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/transfer-learning-2.png" style="width:50%;" /><!-- {"left" : 1.1, "top" : 1.59, "height" : 6.68, "width" : 8.05} -->
+<img src="../../assets/images/deep-learning/transfer-learning-2.png" style="width:50%;" /><!-- {"left" : 4.65, "top" : 4.41, "height" : 6.81, "width" : 8.19} -->
 
 
 

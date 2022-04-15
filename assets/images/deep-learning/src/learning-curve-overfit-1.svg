@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="17 100 938 731" width="938" height="731">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#2e006e">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#2e006e">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_3" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#2e006e">
+      <g>
+        <path d="M -3.7333333 0 L 0 1.4 L 0 -1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="40" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Geeza Pro" font-size="40" panose-1="2 0 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-384.26763" underline-thickness="45.207957" slope="0" x-height="496.38336" cap-height="669.07776" ascent="895.1111" descent="-330.91736" font-weight="700">
+      <font-face-src>
+        <font-face-name name="GeezaPro-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-04-10 07:05:38 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-dasharray="none" fill-opacity="1" stroke="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="17" y="100" width="938" height="731"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_13">
+        <line x1="83" y1="124.9" x2="83" y2="763.3262" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_12">
+        <line x1="929.6" y1="764.4437" x2="84.1175" y2="764.4437" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(780.78825 776.117)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40"> Epochs</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(22 222.39844) rotate(-90)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Loss</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 186.10024 193 C 186.10024 193 195.98015 342.75874 332.8638 404.451 C 469.20665 465.8313 460.6787 464.4377 495.39363 470.74006 C 530.10854 477.0424 566.42503 489.6679 596.3976 494.41026 C 626.3701 499.1526 661.6466 521.15884 703.7039 521.24204 C 738.5644 521.24204 774.7145 532.28674 793.6631 529.1252 C 807.1283 526.5819 820.3501 522.88676 833.1828 518.08046" stroke="#aa97fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 119 232.16607 C 119 232.16607 165.00921 298.5175 177.8635 342.40514 C 190.7178 386.29277 202.4697 380.9472 206.75446 411.98056 C 211.03923 443.0139 227.0967 482.69996 254.92686 496.53185 C 282.75702 510.3637 356.5964 551.1106 376.93863 575.7376 C 397.28086 600.3646 421.88705 613.17726 430.4566 619.6252 C 439.0261 626.07315 461.4899 644.2314 480.77135 648.5162 C 500.0528 652.8009 544.9804 679.5495 567.985 682.7735 C 590.9896 685.99745 650.9347 692.4038 676.6225 697.74935 C 702.3103 703.0949 818.9765 711.6644 850.0306 697.74935" stroke="#e3a92e" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(787.7246 622.5689)" fill="#be8d25">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#be8d25" x="0" y="40">Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(739.7168 439)" fill="#8d7dd4">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#8d7dd4" x="0" y="40">Validation</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="743" y1="673.45255" x2="743" y2="554.9275" marker-end="url(#FilledArrow_Marker_2)" marker-start="url(#FilledArrow_Marker_3)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(689 663.4091) rotate(-90)" fill="#250060">
+          <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" x="27000624e-20" y="39">0</tspan>
+          <tspan font-family="Geeza Pro" font-size="40" font-weight="700" fill="#250060" y="39">.</tspan>
+          <tspan font-family="Helvetica" font-size="40" font-weight="700" fill="#250060" y="39">85”</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <line x1="693" y1="689.97755" x2="753.489" y2="689.97755" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_2">
+        <line x1="693" y1="539.0275" x2="753.489" y2="539.0275" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -4,9 +4,9 @@
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | - [TensorFlow](https://www.tensorflow.org/) <br/> - [Theano](http://deeplearning.net/software/theano/)<br/> - [Caffe2](https://caffe2.ai/)<br/> - [Keras](https://keras.io/)<br/> | - Deepnet <br/> - Darch | [DL4J (Deep Learning 4J)](https://deeplearning4j.org/) | - [CoreML](https://developer.apple.com/documentation/coreml) - by Apple <br/> - [Tensorflow Lite](https://www.tensorflow.org/lite) - by Google |
 
-<!-- {"left" : 1.18, "top" : 1.18, "height" : 2.48, "width" : 7.9, "columnwidth" : [1.97, 1.97, 1.97, 1.97]} -->
+<!-- {"left" : 1.97, "top" : 3.1, "height" : 1, "width" : 13.56} -->
 
-<img src="../../assets/images/logos/dl4j-logo-1.png" alt="XXX image missing" style="background:white;" width="20%"/> &nbsp; <!-- {"left" : 0.59, "top" : 5.6, "height" : 0.72, "width" : 1.95} --><img src="../../assets/images/logos/keras-logo-1.png" alt="XXX image missing" style="background:white;"  width="18%;"/> &nbsp; <!-- {"left" : 2.83, "top" : 5.68, "height" : 0.57, "width" : 1.95} --><img src="../../assets/images/logos/caffe2-logo-1.png" alt="XXX image missing" style="background:white;" width="20%" /> &nbsp; <!-- {"left" : 5.07, "top" : 5.6, "height" : 0.72, "width" : 1.95} --><img src="../../assets/images/logos/tensorflow-logo-1.png" alt="XXX image missing" style="background:white;" width="20%" /><!-- {"left" : 7.31, "top" : 4.73, "height" : 1.66, "width" : 1.95} -->
+<img src="../../assets/images/logos/dl4j-logo-1.png" alt="XXX image missing" style="background:white;" width="20%"/> &nbsp; <!-- {"left" : 1.41, "top" : 9.01, "height" : 1.22, "width" : 3.3} --><img src="../../assets/images/logos/keras-logo-1.png" alt="XXX image missing" style="background:white;"  width="18%;"/> &nbsp; <!-- {"left" : 5.2, "top" : 9.14, "height" : 0.97, "width" : 3.3} --><img src="../../assets/images/logos/caffe2-logo-1.png" alt="XXX image missing" style="background:white;" width="20%" /> &nbsp; <!-- {"left" : 9, "top" : 9.01, "height" : 1.22, "width" : 3.3} --><img src="../../assets/images/logos/tensorflow-logo-1.png" alt="XXX image missing" style="background:white;" width="20%" /><!-- {"left" : 12.79, "top" : 7.53, "height" : 2.81, "width" : 3.3} -->
 
 
 Notes:
@@ -26,7 +26,7 @@ Notes:
 | Theano         | Python               | Linux, macOS, iOS                   | University of Montreal                | 2010 |
 | Torch          | C++, Lua             | Linux, macOS, iOS, Android          | R.Collobert, K.Kavukcuoglu, C.Farabet | 2002 |
 
-<!-- {"left" : 0.26, "top" : 1.24, "height" : 6.49, "width" : 9.75, "columnwidth" : [1.95, 1.95, 1.95, 1.95, 1.95]} -->
+<!-- {"left" : 0.49, "top" : 2.8, "height" : 1, "width" : 16.51} -->
 
 
 Notes:
@@ -40,7 +40,7 @@ Notes:
 
  * Now Big Data tools make it possible to run machine learning algorithms at massive scale-distributed across a cluster
 
-<img src="../../assets/images/deep-learning/DL-cluster.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;"/><!-- {"left" : 0.81, "top" : 4.25, "height" : 3.67, "width" : 8.63} -->
+<img src="../../assets/images/deep-learning/DL-cluster.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;"/><!-- {"left" : 2.9, "top" : 6.1, "height" : 4.97, "width" : 11.7} -->
 
 
 Notes:
@@ -69,7 +69,7 @@ Notes:
 ---
 ## Tools for Deep Learning - Tensorflow
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" alt=" azure cloud logo" style="width:20%;float:right;"/><!-- {"left" : 6.78, "top" : 1.04, "height" : 2.62, "width" : 3.07} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" alt=" azure cloud logo" style="width:20%;float:right;"/><!-- {"left" : 12.58, "top" : 1.89, "height" : 3.8, "width" : 4.45} -->
 
  * [Tensorflow](https://www.tensorflow.org/) is an open source DL framework by Google
 
@@ -90,7 +90,7 @@ Notes:
 ---
 ## Tools for Scalable Deep Learning - Spark
 
-<img src="../../assets/images/logos/spark-logo-1.png" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 7.02, "top" : 1.08, "height" : 1.59, "width" : 2.99} -->
+<img src="../../assets/images/logos/spark-logo-1.png" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 11.99, "top" : 1.89, "height" : 2.76, "width" : 5.2} -->
 
  * Spark is very popular Big Data processing platform (distributed compute engine)
 
@@ -109,7 +109,7 @@ Notes:
 
 ## Tools for Scalable Deep Learning - BigDL
 
-<img src="../../assets/images/logos/bigdl-logo-1.png" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 7.62, "top" : 1.26, "height" : 1.05, "width" : 2.28} -->
+<img src="../../assets/images/logos/bigdl-logo-1.png" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 13.26, "top" : 2.18, "height" : 1.79, "width" : 3.89} -->
 
  * BigDL is a scalable Deep Learning framework developed and open sourced by Intel
 
@@ -117,7 +117,7 @@ Notes:
 
  * Can import models built with other frameworks (Torch, Caffe, TensorFlow)
 
-<img src="../../assets/images/logos/intel-logo.png" alt="XXX image missing" style="width:25%;float:right;"/><!-- {"left" : 7.62, "top" : 4.02, "height" : 1.23, "width" : 2.28} -->
+<img src="../../assets/images/logos/intel-logo.png" alt="XXX image missing" style="width:25%;float:right;"/><!-- {"left" : 13.26, "top" : 5.37, "height" : 2.1, "width" : 3.89} -->
 
  * Uses [Intel MKL Libraries](https://software.intel.com/en-us/intel-mkl) for  high performance
 
@@ -137,7 +137,7 @@ Notes:
     - Google Cloud ML
 
 
-<img src="../../assets/images/logos/aws-logo.jpg" style="background:white; max-width:100%;"  width="20%;"/>&nbsp; &nbsp;<!-- {"left" : 0.67, "top" : 6.08, "height" : 0.88, "width" : 2.7} --><img src="../../assets/images/logos/google-cloud-logo.jpg" style="background:white;width:20%;"/>&nbsp; &nbsp;<!-- {"left" : 3.69, "top" : 5.62, "height" : 1.8, "width" : 2.7} --><img src="../../assets/images/logos/azure-logo-2.png"  style="background:white; max-width:100%;" width="20%;"/><!-- {"left" : 6.7, "top" : 5.62, "height" : 1.8, "width" : 2.88} -->
+<img src="../../assets/images/logos/aws-logo.jpg" alt="XXX image missing" style="width:20%;"/><!-- {"left" : 1.12, "top" : 7.72, "height" : 1.62, "width" : 4.99} --><img src="../../assets/images/logos/google-cloud-logo.jpg" alt="XXX image missing" style="width:20%;"/> <!-- {"left" : 6.11, "top" : 6.86, "height" : 3.34, "width" : 5.01} --> <img src="../../assets/images/logos/azure-logo-2.png" alt="XXX image missing" style="width:20%;"/> <!-- {"left" : 11.4, "top" : 7.72, "height" : 1.62, "width" : 4.98} --> 
 
 
 Notes:
@@ -157,14 +157,14 @@ Notes:
  * [IBM Watson Visual Recognition](https://www.ibm.com/watson/services/visual-recognition/)
 
 
-<img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%;"/><!-- {"left" : 0.34, "top" : 6.59, "height" : 0.41, "width" : 1.95} --><img src="../../assets/images/logos/microsoft-cognitive-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%;"/><!-- {"left" : 2.73, "top" : 6.33, "height" : 1.09, "width" : 1.29} --><img src="../../assets/images/logos/google-cloud-vision-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%;"/><!-- {"left" : 4.27, "top" : 6.34, "height" : 1.07, "width" : 1.71} --><img src="../../assets/images/logos/amazon-rekognition-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="12%;"/>&nbsp; &nbsp;<!-- {"left" : 6.39, "top" : 6.21, "height" : 1.17, "width" : 1.17} --><img src="../../assets/images/logos/ibm-watson-visual-recognition-logo-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="12%;"/><!-- {"left" : 7.96, "top" : 6.3, "height" : 0.99, "width" : 1.95} -->
+<img src="../../assets/images/logos/clarifai-logo.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%;"/><!-- {"left" : 0.65, "top" : 9.11, "height" : 0.69, "width" : 3.3} --><img src="../../assets/images/logos/microsoft-cognitive-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="15%;"/><!-- {"left" : 4.7, "top" : 8.67, "height" : 1.85, "width" : 2.18} --><img src="../../assets/images/logos/google-cloud-vision-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="20%;"/><!-- {"left" : 7.3, "top" : 8.69, "height" : 1.81, "width" : 2.9} --><img src="../../assets/images/logos/amazon-rekognition-logo-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="12%;"/>&nbsp; &nbsp;<!-- {"left" : 10.89, "top" : 8.47, "height" : 1.98, "width" : 1.98} --><img src="../../assets/images/logos/ibm-watson-visual-recognition-logo-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;" width="12%;"/><!-- {"left" : 13.55, "top" : 8.62, "height" : 1.68, "width" : 3.3} -->
 
 Notes:
 
 ---
 ## Deep Learning in Mobile
 
-<img src="../../assets/images/deep-learning/face-id-1.png" alt="XXX image missing" style="width:32%;float:right;"/><!-- {"left" : 7.73, "top" : 1.07, "height" : 2.49, "width" : 2.49} -->
+<img src="../../assets/images/deep-learning/face-id-1.png" alt="XXX image missing" style="width:32%;float:right;"/><!-- {"left" : 12.18, "top" : 1.89, "height" : 5.14, "width" : 5.14} -->
 
  * Why do DL on mobile?
  * **Privacy:** so no data leaves the device.This is important with PII (Personally  Identifiable Information) and Europe's GDPR (General Data Protection Regulation)
@@ -181,7 +181,7 @@ Notes:
 
 ## Deep Learning Mobile Libraries
 
-<img src="../../assets/images/logos/core-ml-logo-1.png" alt="core-ml-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 8.38, "top" : 1.13, "height" : 1.46, "width" : 1.46} -->
+<img src="../../assets/images/logos/core-ml-logo-1.png" alt="core-ml-logo-1.png" style="width:15%;float:right;"/><!-- {"left" : 14.91, "top" : 1.75, "height" : 2.13, "width" : 2.13} -->
 
  * [CoreML](https://developer.apple.com/documentation/coreml) - by Apple
     - only supported on IOS (Apple) devices
@@ -190,7 +190,7 @@ Notes:
  * [Tensorflow Lite](https://www.tensorflow.org/lite) by Google
    - works on IOS and Android
 
-<img src="../../assets/images/logos/tensorflow-lite-logo-1.png" alt="tensorflow-lite-logo-1.png" style="width:40%;float:right;"/><!-- {"left" : 4.83, "top" : 3.35, "height" : 0.79, "width" : 5.09} -->
+<img src="../../assets/images/logos/tensorflow-lite-logo-1.png" alt="tensorflow-lite-logo-1.png" style="width:40%;float:right;"/><!-- {"left" : 9.74, "top" : 4.99, "height" : 1.15, "width" : 7.42} -->
 
  * [MobileNets](https://arxiv.org/abs/1704.04861) - Optimized Convolutional Neural Networks for Mobile Vision Applications
 
@@ -204,10 +204,10 @@ Notes:
 
 ## Deep Learning Model Benchmarks
 
-<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_accuracy-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%;"/><!-- {"left" : 1.81, "top" : 2.02, "height" : 2.48, "width" : 6.62} -->
+<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_accuracy-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%;"/><!-- {"left" : 3.89, "top" : 2.74, "height" : 3.64, "width" : 9.71} -->
 
 
-<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_latency-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%;"/><!-- {"left" : 1.81, "top" : 5.18, "height" : 2.45, "width" : 6.62} -->
+<img src="../../assets/images/deep-learning/3rd-party/model_size_vs_latency-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="60%;"/><!-- {"left" : 3.89, "top" : 7.38, "height" : 3.6, "width" : 9.71} -->
 
 
 Notes:  
@@ -217,7 +217,7 @@ Source : https://www.tensorflow.org/lite/performance/best_practices
 
 ## Commercial DL Software
 
-<img src="../../assets/images/logos/h2o-ai.png" alt="h2o-ai.png" style="width:16%;float:right;"/><!-- {"left" : 7.8, "top" : 0.99, "height" : 2.17, "width" : 2.17} -->
+<img src="../../assets/images/logos/h2o-ai.png" alt="h2o-ai.png" style="width:16%;float:right;"/><!-- {"left" : 13.84, "top" : 1.89, "height" : 3.12, "width" : 3.12} -->
 
  *  **H2O**
     - Easy to use API
@@ -230,7 +230,7 @@ Source : https://www.tensorflow.org/lite/performance/best_practices
 &nbsp;
 &nbsp;
 
-<img src="../../assets/images/deep-learning/3rd-party/skymind.png" alt="skymind.png" style="width:25%;float:right;"/><!-- {"left" : 6.13, "top" : 5.2, "height" : 0.76, "width" : 3.87} -->
+<img src="../../assets/images/deep-learning/3rd-party/skymind.png" alt="skymind.png" style="width:25%;float:right;"/><!-- {"left" : 11.43, "top" : 6.7, "height" : 1.09, "width" : 5.57} -->
 
  * SkyMind SKIL
     - Java based ML stack (DJ4J)
