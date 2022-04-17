@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-740 -212 2294 836" width="2294" height="836">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#02329a">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-03-22 11:37:02 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_57">
+        <line x1="-150.10638" y1="520.7759" x2="1193.5543" y2="520.7759" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16.0,16.0" stroke-width="8"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M -591.9239 -204.4 L -307.4909 -204.4 C -301.96804 -204.4 -297.4909 -199.92284 -297.4909 -194.4 L -297.4909 286.82125 C -297.4909 292.3441 -301.96804 296.82125 -307.4909 296.82125 L -591.9239 296.82125 C -597.4468 296.82125 -601.9239 292.3441 -601.9239 286.82125 L -601.9239 -194.4 C -601.9239 -199.92284 -597.4468 -204.4 -591.9239 -204.4 Z" fill="#ebdea6"/>
+        <path d="M -591.9239 -204.4 L -307.4909 -204.4 C -301.96804 -204.4 -297.4909 -199.92284 -297.4909 -194.4 L -297.4909 286.82125 C -297.4909 292.3441 -301.96804 296.82125 -307.4909 296.82125 L -591.9239 296.82125 C -597.4468 296.82125 -601.9239 292.3441 -601.9239 286.82125 L -601.9239 -194.4 C -601.9239 -199.92284 -597.4468 -204.4 -591.9239 -204.4 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 984 126 L 1548.0997 126 C 1550.8611 126 1553.0997 128.23858 1553.0997 131 L 1553.0997 243.78238 C 1553.0997 246.5438 1550.8611 248.78238 1548.0997 248.78238 L 984 248.78238 C 981.2386 248.78238 979 246.5438 979 243.78238 L 979 131 C 979 128.23858 981.2386 126 984 126 Z" fill="#e3a92e"/>
+        <path d="M 984 126 L 1548.0997 126 C 1550.8611 126 1553.0997 128.23858 1553.0997 131 L 1553.0997 243.78238 C 1553.0997 246.5438 1550.8611 248.78238 1548.0997 248.78238 L 984 248.78238 C 981.2386 248.78238 979 246.5438 979 243.78238 L 979 131 C 979 128.23858 981.2386 126 984 126 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_14">
+        <g id="Graphic_7">
+          <path d="M -194 419 L -16.448166 419 C -9.268464 419 -3.4481655 424.8203 -3.4481655 432 L -3.4481655 609.5518 C -3.4481655 616.7315 -9.268464 622.5518 -16.448166 622.5518 L -194 622.5518 C -201.1797 622.5518 -207 616.7315 -207 609.5518 L -207 432 C -207 424.8203 -201.1797 419 -194 419 Z" fill="#a4f8fd"/>
+          <path d="M -194 419 L -16.448166 419 C -9.268464 419 -3.4481655 424.8203 -3.4481655 432 L -3.4481655 609.5518 C -3.4481655 616.7315 -9.268464 622.5518 -16.448166 622.5518 L -194 622.5518 C -201.1797 622.5518 -207 616.7315 -207 609.5518 L -207 432 C -207 424.8203 -201.1797 419 -194 419 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_8">
+          <rect x="-183.80293" y="453.42016" width="157.1577" height="68.95997" id="path"/>
+          <clipPath id="clip_path">
+            <use xl:href="#path"/>
+          </clipPath>
+          <g clip-path="url(#clip_path)">
+            <image xl:href="image2.tiff" width="1062" height="466" transform="translate(-183.80293 453.42016) scale(.14798277)"/>
+          </g>
+        </g>
+        <g id="Graphic_9">
+          <text transform="translate(-171.35323 564.7037)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">MINION</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_10">
+        <line x1="-261" y1="25" x2="282.18624" y2="25" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16.0,16.0" stroke-width="8"/>
+      </g>
+      <g id="Line_11">
+        <line x1="-261" y1="183" x2="282.18624" y2="183" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16.0,16.0" stroke-width="8"/>
+      </g>
+      <g id="Line_12">
+        <line x1="313.08624" y1="104" x2="-230.1" y2="104" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16.0,16.0" stroke-width="8"/>
+      </g>
+      <g id="Line_13">
+        <path d="M -449.85983 296.82125 L -449.98574 503.821 C -449.99346 516.52353 -439.7023 526.82724 -426.99973 526.835 C -426.8506 526.83506 -426.7015 526.8337 -426.5524 526.8309 L -237.89452 523.2759" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16.0,16.0" stroke-width="8"/>
+      </g>
+      <g id="Group_15">
+        <g id="Graphic_18">
+          <path d="M 66 419 L 243.55183 419 C 250.73154 419 256.55183 424.8203 256.55183 432 L 256.55183 609.5518 C 256.55183 616.7315 250.73154 622.5518 243.55183 622.5518 L 66 622.5518 C 58.8203 622.5518 53 616.7315 53 609.5518 L 53 432 C 53 424.8203 58.8203 419 66 419 Z" fill="#a4f8fd"/>
+          <path d="M 66 419 L 243.55183 419 C 250.73154 419 256.55183 424.8203 256.55183 432 L 256.55183 609.5518 C 256.55183 616.7315 250.73154 622.5518 243.55183 622.5518 L 66 622.5518 C 58.8203 622.5518 53 616.7315 53 609.5518 L 53 432 C 53 424.8203 58.8203 419 66 419 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_17">
+          <rect x="76.19707" y="453.42016" width="157.1577" height="68.95997" id="path_2"/>
+          <clipPath id="clip_path_2">
+            <use xl:href="#path_2"/>
+          </clipPath>
+          <g clip-path="url(#clip_path_2)">
+            <image xl:href="image2.tiff" width="1062" height="466" transform="translate(76.19707 453.42016) scale(.14798277)"/>
+          </g>
+        </g>
+        <g id="Graphic_16">
+          <text transform="translate(88.64677 564.7037)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">MINION</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_19">
+        <g id="Graphic_22">
+          <path d="M 325.6 419 L 503.15183 419 C 510.33154 419 516.15183 424.8203 516.15183 432 L 516.15183 609.5518 C 516.15183 616.7315 510.33154 622.5518 503.15183 622.5518 L 325.6 622.5518 C 318.4203 622.5518 312.6 616.7315 312.6 609.5518 L 312.6 432 C 312.6 424.8203 318.4203 419 325.6 419 Z" fill="#a4f8fd"/>
+          <path d="M 325.6 419 L 503.15183 419 C 510.33154 419 516.15183 424.8203 516.15183 432 L 516.15183 609.5518 C 516.15183 616.7315 510.33154 622.5518 503.15183 622.5518 L 325.6 622.5518 C 318.4203 622.5518 312.6 616.7315 312.6 609.5518 L 312.6 432 C 312.6 424.8203 318.4203 419 325.6 419 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_21">
+          <rect x="335.79707" y="453.42016" width="157.1577" height="68.95997" id="path_3"/>
+          <clipPath id="clip_path_3">
+            <use xl:href="#path_3"/>
+          </clipPath>
+          <g clip-path="url(#clip_path_3)">
+            <image xl:href="image2.tiff" width="1062" height="466" transform="translate(335.79707 453.42016) scale(.14798277)"/>
+          </g>
+        </g>
+        <g id="Graphic_20">
+          <text transform="translate(348.24677 564.7037)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">MINION</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_23">
+        <g id="Graphic_26">
+          <path d="M 584.976 419 L 762.5278 419 C 769.7075 419 775.5278 424.8203 775.5278 432 L 775.5278 609.5518 C 775.5278 616.7315 769.7075 622.5518 762.5278 622.5518 L 584.976 622.5518 C 577.7963 622.5518 571.976 616.7315 571.976 609.5518 L 571.976 432 C 571.976 424.8203 577.7963 419 584.976 419 Z" fill="#a4f8fd"/>
+          <path d="M 584.976 419 L 762.5278 419 C 769.7075 419 775.5278 424.8203 775.5278 432 L 775.5278 609.5518 C 775.5278 616.7315 769.7075 622.5518 762.5278 622.5518 L 584.976 622.5518 C 577.7963 622.5518 571.976 616.7315 571.976 609.5518 L 571.976 432 C 571.976 424.8203 577.7963 419 584.976 419 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_25">
+          <rect x="595.1731" y="453.42016" width="157.1577" height="68.95997" id="path_4"/>
+          <clipPath id="clip_path_4">
+            <use xl:href="#path_4"/>
+          </clipPath>
+          <g clip-path="url(#clip_path_4)">
+            <image xl:href="image2.tiff" width="1062" height="466" transform="translate(595.1731 453.42016) scale(.14798277)"/>
+          </g>
+        </g>
+        <g id="Graphic_24">
+          <text transform="translate(607.6228 564.7037)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">MINION</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_27">
+        <g id="Graphic_30">
+          <path d="M 844.2266 419 L 1021.7784 419 C 1028.9581 419 1034.7784 424.8203 1034.7784 432 L 1034.7784 609.5518 C 1034.7784 616.7315 1028.9581 622.5518 1021.7784 622.5518 L 844.2266 622.5518 C 837.0469 622.5518 831.2266 616.7315 831.2266 609.5518 L 831.2266 432 C 831.2266 424.8203 837.0469 419 844.2266 419 Z" fill="#a4f8fd"/>
+          <path d="M 844.2266 419 L 1021.7784 419 C 1028.9581 419 1034.7784 424.8203 1034.7784 432 L 1034.7784 609.5518 C 1034.7784 616.7315 1028.9581 622.5518 1021.7784 622.5518 L 844.2266 622.5518 C 837.0469 622.5518 831.2266 616.7315 831.2266 609.5518 L 831.2266 432 C 831.2266 424.8203 837.0469 419 844.2266 419 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_29">
+          <rect x="854.4236" y="453.42016" width="157.1577" height="68.95997" id="path_5"/>
+          <clipPath id="clip_path_5">
+            <use xl:href="#path_5"/>
+          </clipPath>
+          <g clip-path="url(#clip_path_5)">
+            <image xl:href="image2.tiff" width="1062" height="466" transform="translate(854.4236 453.42016) scale(.14798277)"/>
+          </g>
+        </g>
+        <g id="Graphic_28">
+          <text transform="translate(866.8733 564.7037)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">MINION</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_31">
+        <g id="Graphic_34">
+          <path d="M 1103.4069 419 L 1280.9587 419 C 1288.1384 419 1293.9587 424.8203 1293.9587 432 L 1293.9587 609.5518 C 1293.9587 616.7315 1288.1384 622.5518 1280.9587 622.5518 L 1103.4069 622.5518 C 1096.2272 622.5518 1090.4069 616.7315 1090.4069 609.5518 L 1090.4069 432 C 1090.4069 424.8203 1096.2272 419 1103.4069 419 Z" fill="#a4f8fd"/>
+          <path d="M 1103.4069 419 L 1280.9587 419 C 1288.1384 419 1293.9587 424.8203 1293.9587 432 L 1293.9587 609.5518 C 1293.9587 616.7315 1288.1384 622.5518 1280.9587 622.5518 L 1103.4069 622.5518 C 1096.2272 622.5518 1090.4069 616.7315 1090.4069 609.5518 L 1090.4069 432 C 1090.4069 424.8203 1096.2272 419 1103.4069 419 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_33">
+          <rect x="1113.604" y="453.42016" width="157.1577" height="68.95997" id="path_6"/>
+          <clipPath id="clip_path_6">
+            <use xl:href="#path_6"/>
+          </clipPath>
+          <g clip-path="url(#clip_path_6)">
+            <image xl:href="image2.tiff" width="1062" height="466" transform="translate(1113.604 453.42016) scale(.14798277)"/>
+          </g>
+        </g>
+        <g id="Graphic_32">
+          <text transform="translate(1126.0536 564.7037)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">MINION</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_35">
+        <g id="Graphic_38">
+          <path d="M 1362.5478 419 L 1540.0997 419 C 1547.2794 419 1553.0997 424.8203 1553.0997 432 L 1553.0997 609.5518 C 1553.0997 616.7315 1547.2794 622.5518 1540.0997 622.5518 L 1362.5478 622.5518 C 1355.3681 622.5518 1349.5478 616.7315 1349.5478 609.5518 L 1349.5478 432 C 1349.5478 424.8203 1355.3681 419 1362.5478 419 Z" fill="#a4f8fd"/>
+          <path d="M 1362.5478 419 L 1540.0997 419 C 1547.2794 419 1553.0997 424.8203 1553.0997 432 L 1553.0997 609.5518 C 1553.0997 616.7315 1547.2794 622.5518 1540.0997 622.5518 L 1362.5478 622.5518 C 1355.3681 622.5518 1349.5478 616.7315 1349.5478 609.5518 L 1349.5478 432 C 1349.5478 424.8203 1355.3681 419 1362.5478 419 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_37">
+          <rect x="1372.7449" y="453.42016" width="157.1577" height="68.95997" id="path_7"/>
+          <clipPath id="clip_path_7">
+            <use xl:href="#path_7"/>
+          </clipPath>
+          <g clip-path="url(#clip_path_7)">
+            <image xl:href="image2.tiff" width="1062" height="466" transform="translate(1372.7449 453.42016) scale(.14798277)"/>
+          </g>
+        </g>
+        <g id="Graphic_36">
+          <text transform="translate(1385.1946 564.7037)" fill="#250060">
+            <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">MINION</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_39">
+        <rect x="-576.1446" y="-9.269357" width="252.87444" height="110.95997" id="path_8"/>
+        <clipPath id="clip_path_8">
+          <use xl:href="#path_8"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_8)">
+          <image xl:href="image2.tiff" width="1062" height="466" transform="translate(-576.1446 -9.269357) scale(.23811152)"/>
+        </g>
+      </g>
+      <g id="Line_41">
+        <path d="M 571.976 46.21063 L 720.3022 46.21063 C 732.95765 46.21063 743.2355 56.434656 743.3019 69.089915 L 743.776 159.41514 C 743.8419 171.97892 753.9776 182.165 766.5409 182.29322 L 948.1016 184.14623" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16.0,16.0" stroke-width="8"/>
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(-90.46154 -23)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">1. Auth with AppRole</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(-185.77222 56)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">2. Return Token</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(15.187876 135)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">3. Read Secret</tspan>
+        </text>
+      </g>
+      <g id="Graphic_45">
+        <text transform="translate(-735 412)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">4. Update Root</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <text transform="translate(1057.1094 165.8912)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">KV: secret/saltstack/root</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <rect x="406.65902" y="-70" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_48">
+        <rect x="440.159" y="-70" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_49">
+        <rect x="473.659" y="-70" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_52">
+        <rect x="406.65902" y="-36.666667" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_51">
+        <rect x="440.159" y="-36.666667" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_50">
+        <rect x="473.659" y="-36.666667" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_55">
+        <rect x="406.65902" y="-3.3333333" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_54">
+        <rect x="440.159" y="-3.3333333" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_53">
+        <rect x="473.659" y="-3.3333333" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_56">
+        <rect x="440.159" y="30" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_58">
+        <rect x="195.15902" y="-211.28937" width="515" height="515" id="path_9"/>
+        <clipPath id="clip_path_9">
+          <use xl:href="#path_9"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_9)">
+          <image xl:href="image3.png" width="450" height="450" transform="translate(195.15902 -211.28937) scale(1.1444444)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -17,5 +17,5 @@ Kubernetes-Essentials.md
 Kubernetes-Resources.md
 Kubernetes-Networking.md
 Kubernetes-Deployments.md
-Kubernetes-Misc.md
 Kubernetes-Best-Practices.md
+Kubernetes-Misc.md

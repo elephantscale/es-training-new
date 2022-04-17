@@ -42,7 +42,6 @@ Notes:
 
 * Classifier
 
-<!-- TODO shiva -->
 ```python
 from sklearn.tree import DecisionTreeClassifier
 
@@ -52,7 +51,9 @@ dt = DecisionTreeClassifier()
 # Fit the model
 model = dt.fit(x_train, y_train)
 ```
-<!-- {"left" : 0, "top" : 1.1, "height" : 2.1, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.62, "height" : 2.79, "width" : 12.54} -->
+
+<br/>
 
 * Regresssor
 
@@ -65,6 +66,7 @@ dt = DecisionTreeRegressor()
 # Fit the model
 model = dt.fit(x_train, y_train)
 ```
+<!-- {"left" : 0.85, "top" : 6.45, "height" : 3.41, "width" : 12.42} -->
 
 
 Notes: 
@@ -73,7 +75,6 @@ Notes:
 
 ## Visualizing the Tree
 
-<!-- TODO shiva -->
 ```python
 from sklearn import tree
 import matplotlib.pyplot as plt
@@ -81,10 +82,14 @@ import matplotlib.pyplot as plt
 fig, axes = plt.subplots(nrows = 1,ncols = 1,figsize = (4,4), dpi=300)
 tree.plot_tree(model, filled=True)
 ```
+<!-- {"left" : 0.85, "top" : 2.47, "height" : 1.93, "width" : 13.8} -->
+
+<img src="../../assets/images/machine-learning/tree-model-1.png" style="width:45%;"/><!-- {"left" : 1.6, "top" : 4.71, "height" : 6.81, "width" : 6.98} --><img src="../../assets/images/machine-learning/tree-model-2.png" style="width:45%;"/><!-- {"left" : 8.49, "top" : 5.14, "height" : 5.95, "width" : 7.14} -->
 
 
-<img src="../../assets/images/machine-learning/tree-model-1.png" style="width:45%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/machine-learning/tree-model-2.png" style="width:45%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+Notes:
+
+
 
 ---
 
@@ -101,7 +106,7 @@ tree.plot_tree(model, filled=True)
 
 
 
-<!-- {"left" : 0.25, "top" : 1.43, "height" : 6.53, "width" : 9.75} -->
+<!-- {"left" : 0.93, "top" : 2.5, "height" : 1, "width" : 15.64} -->
 
 Notes: 
 
@@ -121,7 +126,7 @@ Notes:
 | feature_importances_ | Relative importance based on OOB observations | array[float]        |
 | tree_                | Underlying tree object                        | Tree                |
 
-<!-- {"left" : 0.25, "top" : 1.43, "height" : 3.69, "width" : 9.75} -->
+<!-- {"left" : 0.59, "top" : 2.5, "height" : 1, "width" : 16.33} -->
 
 
 Notes: 
@@ -132,7 +137,6 @@ Notes:
 
 ## Model Evaluation For Classifier
 
-<!-- TODO shiva -->
 
 ```python
 model.score(x_test, y_test)
@@ -150,7 +154,7 @@ print(cm)
 # array([[10,  3],
 #        [ 2,  5]])
 ```
-<!-- {"left" : 0, "top" : 1.43, "height" : 2.13, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.44, "height" : 5.92, "width" : 11.01} -->
 
 Notes: 
 
@@ -160,7 +164,6 @@ Notes:
 
 * Decision Tree can tell us which feature was influential in determining outcome
 
-<!-- TODO shiva -->
 ```python
 print (model.feature_importances_)
 # output : array([0.44220925, 0.47501859, 0.08277217])
@@ -176,13 +179,13 @@ print (fi)
 # 2    rank       0.082772
 
 ```
+<!-- {"left" : 0.85, "top" : 3.51, "height" : 3.78, "width" : 16.11} -->
 
 ---
 
 ## Lab: Decision Trees
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 13.92, "top" : 1.7, "height" : 4.09, "width" : 3.07} -->
 
  *  **Overview**
  Create a classification decision tree
@@ -196,7 +199,7 @@ print (fi)
      -  **DT-2: prosper-loans**  
      (see following slides for details on Prosper dataset)
 
-<img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%;"><!--{"left" : 2.81, "top" : 5.85, "height" : 1.08, "width" : 4.62} -->
+<img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%;"><!-- {"left" : 13.04, "top" : 7.53, "height" : 1, "width" : 4.28} -->
 
 
 Notes:
@@ -205,7 +208,7 @@ Notes:
 
 ## About the `Prosper` Dataset
 
- <img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%; float:right"/><!-- {"left" : 7.32, "top" : 1.12, "height" : 0.63, "width" : 2.68} -->
+ <img src="../../assets/images/logos/prosper-logo-2.png" style="width:30%; float:right"/><!-- {"left" : 11.37, "top" : 2.28, "height" : 1.42, "width" : 6.05} -->
 
  * https://www.prosper.com/
 
@@ -243,6 +246,9 @@ Notes:
 | 21    | EmploymentStatusDuration  |22       | IsBorrowerHomeowner    |
 | 23    | CurrentlyInGroup          |...      | And so on, till #81    |
 
+<!-- {"left" : 1.1, "top" : 2.73, "height" : 1, "width" : 15.3} -->
+
+
 Notes:
 
 ---
@@ -261,7 +267,6 @@ Notes:
 
 * Classifier
 
-<!-- TODO shiva -->
 ```python
 from sklearn.ensemble import RandomForestClassifer
 
@@ -271,7 +276,9 @@ rf = RandomForestClassifier(n_estimators=20)
 # Fit the model
 model = rf.fit(x_train, y_train)
 ```
-<!-- {"left" : 0, "top" : 1.43, "height" : 2.07, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.62, "height" : 2.79, "width" : 12.54} -->
+
+<br/>
 
 * Regression
 
@@ -284,6 +291,8 @@ rf = RandomForestRegression(n_estimators=20)
 # Fit the model
 model = rf.fit(x_train, y_train)
 ```
+<!-- {"left" : 0.85, "top" : 6.45, "height" : 3.41, "width" : 12.42} -->
+
 
 Notes:
 
@@ -309,7 +318,7 @@ Notes:
 | min_samples_leaf  | Min samples required to be leaf node                                               |         1         |
 | Class_weight      | How to weight input classes (default is to balance based on class value frequency) |     `balance`     |
 
-<!-- {"left" : 0.25, "top" : 2.85, "height" : 5.45, "width" : 9.75, "columnwidth" : [2.65, 5.38, 1.72]} -->
+<!-- {"left" : 0.35, "top" : 4.62, "height" : 1, "width" : 16.81} -->
 
 Notes:
 
@@ -328,7 +337,7 @@ Notes:
 | oob_score_             | Score metric based on OOB observations        | float                 |
 | oob_decision_function_ | OOB decision function                         | 2-d array             |
 
-<!-- {"left" : 0.25, "top" : 1.43, "height" : 4.88, "width" : 9.75} -->
+<!-- {"left" : 0.47, "top" : 2.5, "height" : 1, "width" : 16.55} -->
 
 Notes: 
 
@@ -336,8 +345,6 @@ Notes:
 
 ## Model Evaluation For Classifier
 
-
-<!-- TODO shiva -->
 ```python
 model.score(x_test, y_test)
 # output:  0.72
@@ -354,6 +361,7 @@ print(cm)
 # array([[10,  3],
 #        [ 2,  5]])
 ```
+<!-- {"left" : 0.85, "top" : 2.56, "height" : 6.03, "width" : 11.21} -->
 
 ---
 
@@ -363,7 +371,6 @@ print(cm)
 
 * In this example, we see `StatedMonthlyIncome` is a very important feature
 
-<!-- TODO shiva -->
 ```python
 print (model.feature_importances_)
 # output : array([0.44220925, 0.47501859, 0.08277217])
@@ -380,12 +387,13 @@ print (fi)
 # 3        CategoryIndex       0.111181
 
 ```
+<!-- {"left" : 0.85, "top" : 3.96, "height" : 4.14, "width" : 16.38} -->
 
 ---
 
 ## Lab: Random Forest
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;" /><!--{"left" : 7.23, "top" : 1, "height" : 3.9, "width" : 2.92} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;" /><!--{"left" : 12.83, "top" : 1, "height" : 5.7, "width" : 4.27} -->
 
  *  **Overview**
 
@@ -405,9 +413,11 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.85, "top" : 2.01, "height" : 3.04, "width" : 4.09} -->
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.63, "top" : 5.46, "height" : 5.48, "width" : 8.24} -->
+

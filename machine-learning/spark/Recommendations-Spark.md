@@ -2,7 +2,7 @@
 
 ---
 
-## Recommendations Intro
+# Recommendations Intro
 
 [../generic/Recommendations-Generic.md](../generic/Recommendations-Generic.md)
 
@@ -16,7 +16,7 @@
 
 
 * Spark ML implements ALS - Alternating Minimum Squares Algorithm
-  -  __org.apache.spark.ml.recommendation.ALS__   (Scala)
+  -  __org.apache.spark.ml.recommendation.ALS__ (Scala)
   -  __pyspark.ml.recommendation.ALS__ (Python)
 
 * The DataFrame-based API for ALS currently only supports integers for user and item ids
@@ -37,7 +37,7 @@ Notes:
 | implicitPrefs     | specifies whether to use the explicit feedback ALS variant or one adapted for implicit feedback data                | False (use explicit feedback) |
 | coldStartStrategy | How to handle missing ratings data for new user / new item <br/>- NaN : Not a Number <br/>- "drop" : drop this data | NaN                           |
 
-<!-- {"left" : 0.25, "top" : 1.42, "height" : 4.73, "width" : 9.75, "columnwidth" : [2.29, 4.9, 2.56]} -->
+<!-- {"left" : 0.94, "top" : 2.82, "height" : 6.48, "width" : 15.62} -->
 
 
 Notes:
@@ -98,7 +98,7 @@ evaluator = RegressionEvaluator( metricName="rmse",
 rmse = evaluator.evaluate(predictions)
 
 ```
-<!-- {"left" : 0, "top" : 3.05, "height" : 3.54, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.97, "height" : 4.46, "width" : 12.91} -->
 
 
 
@@ -112,7 +112,7 @@ Notes:
 ## Evaluating CF Recommendations (ROC)
 
 
-<img src="../../assets/images/data-analysis-python/recommendations-comparison-1.png" style="width:80%"/><!-- {"left" : 0.76, "top" : 2.1, "height" : 5.53, "width" : 8.73} -->
+<img src="../../assets/images/data-analysis-python/recommendations-comparison-1.png" style="width:80%"/><!-- {"left" : 2.67, "top" : 3.01, "height" : 7.7, "width" : 12.15} -->
 
 
 Notes:
@@ -185,7 +185,7 @@ Notes:
 
  * MLLib Rating: Integer, Integer, Double
 
-     -  **Rating(**  **userId**  **,**  **itemId**  **, rating)**
+     -  **Rating(**userId**,itemId, rating)**
 
 Notes:
 

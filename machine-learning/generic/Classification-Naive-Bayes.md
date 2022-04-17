@@ -43,7 +43,7 @@ Notes:
 | **Bernoulli**   | Binary data                                                       |
 | **Multinomial** | integer count data  (e.g. how often a word appears in a document) |
 
-<!-- {"left" : 2.32, "top" : 2.82, "height" : 4.18, "width" : 12.87} -->
+<!-- {"left" : 2.32, "top" : 2.82, "height" : 1, "width" : 12.87} -->
 
 
 Notes:
@@ -370,14 +370,15 @@ Notes:
     - handles noisy and missing data well
     - can learn with few samples
     - can also scale to large datasets
----
-
-## Naïve Bayes:Strengths, Weaknesses, and Parameters
 
 * **Weaknesses**
     - Assumes all features are independent
     - and equally important
     - Not ideal for datasets with many numerical features
+
+---
+
+## Naïve Bayes:Strengths, Weaknesses, and Parameters
 
 * **Parameters**
     - **Type of algorithm**
@@ -388,7 +389,6 @@ Notes:
 Notes:
 
 ---
-
 
 ## Further Reading
 

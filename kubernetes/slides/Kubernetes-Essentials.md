@@ -619,7 +619,7 @@ Notes:
 
 ---
 
-## Lab: Explore the cluster
+## Lab: Explore the Cluster
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 

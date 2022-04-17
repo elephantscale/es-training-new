@@ -4,7 +4,7 @@
 
 ## Algorithm Map
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-clustering-1.png" style="max-width:80%;"/><!-- {"left" : 1.02, "top" : 1.56, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-clustering-1.png" style="max-width:80%;"/><!-- {"left" : 2.59, "top" : 2.74, "height" : 8.23, "width" : 12.32} -->
 
 ---
 
@@ -16,13 +16,13 @@
 
 * In real world applications, we could be clustering by many dimensions (10s or 100s)
 
-<img src="../../assets/images/machine-learning/clustering-04.png" style="width:60%;"><!-- {"left" : 5.41, "top" : 1.5, "height" : 1.79, "width" : 4.72} -->
+<img src="../../assets/images/machine-learning/clustering-04.png" style="width:60%;"><!-- {"left" : 8, "top" : 2.3, "height" : 3.44, "width" : 9.07} -->
 
 ---
 
 ## Clustering Use Cases: Fraud / Anomaly Detection
 
-<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png"  style="width:40%;float:right;"/><!--  {"left" : 6.25, "top" : 1.43, "height" : 3.09, "width" : 3.81} -->
+<img src="../../assets/images/machine-learning/clustering-anomaly-detection-1.png"  style="width:40%;float:right;"/><!--  {"left" : 10.8, "top" : 2.35, "height" : 5.02, "width" : 6.19} -->
 
  * Anomaly detection
      - Find fraud
@@ -48,7 +48,7 @@ Notes:
 
  * Google News algorithm automatically groups **related news stories**  into sections
 
-<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:89%;"><!-- {"left" : 2.13, "top" : 2.41, "height" : 6.02, "width" : 5.99} -->
+<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="max-width:89%;"><!-- {"left" : 10.5, "top" : 2, "height" : 6.72, "width" : 6.68} -->
 
 
 Notes:
@@ -60,7 +60,7 @@ Notes:
  * Figure out where demand is so more cars can be sent to that area  
  (we will do this lab!)
 
-<img src="../../assets/images/machine-learning/Uber-Trips-0.png" alt="Uber-Trips-0.png" style="width:50%;"/><!-- {"left" : 1.79, "top" : 2.72, "height" : 4.97, "width" : 6.67} -->
+<img src="../../assets/images/machine-learning/Uber-Trips-0.png" alt="Uber-Trips-0.png" style="width:50%;"/><!-- {"left" : 4.17, "top" : 4.16, "height" : 6.83, "width" : 9.17} -->
 
 
 Notes:
@@ -91,7 +91,7 @@ TODO : add pictures
 
 ## Clustering Use Case: Customer Purchases @ Walmart
 
-<img src="../../assets/images/deep-learning/3rd-party/Walmart-01.png"  style="width:40%;float:right;"/><!--  {"left" : 5.58, "top" : 1.22, "height" : 2.63, "width" : 4.38} -->
+<img src="../../assets/images/deep-learning/3rd-party/Walmart-01.png"  style="width:40%;float:right;"/><!--  {"left" : 10.35, "top" : 2.48, "height" : 4.03, "width" : 6.71} -->
 
 * Here is how Walmart is segmenting customer purchases
     - Pharmacy Runs
@@ -118,7 +118,6 @@ Notes:
 
 ## Clustering Algorithms
 
-
 *  **K-Means**
     * we seek to partition the observations into a pre-specified number of clusters
 
@@ -139,7 +138,7 @@ Notes:
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-clustering-kmeans-1.png"  style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 1.49, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-clustering-kmeans-1.png"  style="max-width:70%;"/><!-- {"left" : 2.33, "top" : 2.57, "height" : 8.57, "width" : 12.83} -->
 
 
 
@@ -169,7 +168,7 @@ Notes:
 
 ## K-Means Visualized
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-1.png" style="max-width:80%;"/><!-- {"left" : 1.27, "top" : 1.08, "height" : 3.86, "width" : 7.71} -->
+<img src="../../assets/images/machine-learning/3rd-party/kmeans-1.png" style="max-width:80%;"/><!-- {"left" : 4.52, "top" : 1.89, "height" : 4.24, "width" : 8.47} -->
 
 
  * Animations
@@ -194,7 +193,7 @@ Example: 3 centroids (red, green, blue)
 *  **Step 4:** Repeat steps 2 and 3 until convergence is reached (the points move less than the threshold amount).
 
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-3a.png"  style="width:20%;"/>  &nbsp; &nbsp; <!--  {"left" : 0.19, "top" : 6.01, "height" : 2.39, "width" : 2.48} --><img src="../../assets/images/machine-learning/3rd-party/kmeans-3b.png"  style="width:20%;"/><!--  {"left" : 2.88, "top" : 6.32, "height" : 1.76, "width" : 2.04} --> &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/kmeans-3c.png"  style="width:20%;"/><!--  {"left" : 4.68, "top" : 6.01, "height" : 2.39, "width" : 2.77} --> &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/kmeans-3d.png"  style="width:20%;"/><!--  {"left" : 7.6, "top" : 6.32, "height" : 1.76, "width" : 2.04} -->
+<img src="../../assets/images/machine-learning/3rd-party/kmeans-3a.png"  style="width:20%;"/>  &nbsp; &nbsp; <!--  {"left" : 1.76, "top" : 7.22, "height" : 3.54, "width" : 3.67} --><img src="../../assets/images/machine-learning/3rd-party/kmeans-3b.png"  style="width:20%;"/><!--  {"left" : 5.74, "top" : 7.68, "height" : 2.6, "width" : 3.02} --> &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/kmeans-3c.png"  style="width:20%;"/><!--  {"left" : 8.4, "top" : 7.22, "height" : 3.54, "width" : 4.1} --> &nbsp; &nbsp; <img src="../../assets/images/machine-learning/3rd-party/kmeans-3d.png"  style="width:20%;"/><!--  {"left" : 12.72, "top" : 7.68, "height" : 2.6, "width" : 3.02} -->
 
 
 Notes:
@@ -207,7 +206,7 @@ Notes:
 ## K-Means Visualization
 
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-4.png" style="max-width:50%;"/><!--  {"left" : 1.49, "top" : 1.19, "height" : 7.27, "width" : 7.28} -->
+<img src="../../assets/images/machine-learning/3rd-party/kmeans-4.png" style="max-width:50%;"/><!--  {"left" : 4.2, "top" : 2.31, "height" : 9.08, "width" : 9.1} -->
 
 
 
@@ -231,9 +230,9 @@ Image credit : "Introduction to Statistical Learning", used with author's permis
 
      - Variations within this cluster is W(Ck)
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-6-math.png"  style="width:40%;"/><!--  {"left" : 0.4, "top" : 4.84, "height" : 1.09, "width" : 3.58} -->
+<img src="../../assets/images/machine-learning/3rd-party/kmeans-6-math.png"  style="width:40%;"/><!--  {"left" : 2.82, "top" : 6.7, "height" : 1.37, "width" : 4.49} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-7-math.png" style="width:40%;"/><!--  {"left" : 4.69, "top" : 4.75, "height" : 1.25, "width" : 5.16} -->
+<img src="../../assets/images/machine-learning/3rd-party/kmeans-7-math.png" style="width:40%;"/><!--  {"left" : 8.21, "top" : 6.7, "height" : 1.57, "width" : 6.48} -->
 
 
 
@@ -271,7 +270,7 @@ Notes:
 
 ## MTCars Clustering
 
- <img src="../../assets/images/machine-learning/3rd-party/kmeans-8-mtcars.png" style="width:60%;float:right;"/><!--  {"left" : 5.18, "top" : 2.72, "height" : 2.47, "width" : 4.97} -->
+ <img src="../../assets/images/machine-learning/3rd-party/kmeans-8-mtcars.png" style="width:60%;float:right;"/><!--  {"left" : 9.49, "top" : 2.32, "height" : 3.86, "width" : 7.76} -->
 
  * We are going to cluster cars using two attributes: MPG & CYL
  * This is `mtcars` dataset
@@ -296,7 +295,7 @@ Notes:
 
 ## Starting With K = 2  (Find 2 clusters)
 
-<img src="../../assets/images/machine-learning/kmeans-9.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 2.29, "height" : 4.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-9.png" style="width:80%;"/><!-- {"left" : 2.37, "top" : 3.13, "height" : 6.96, "width" : 12.76} -->
 
 
 Notes:
@@ -307,7 +306,7 @@ Notes:
 
 ## Starting With K = 4  (Find 4 clusters)
 
-<img src="../../assets/images/machine-learning/kmeans-10.png"  style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.89, "height" : 5.28, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-10.png"  style="width:80%;"/><!-- {"left" : 2.78, "top" : 2.35, "height" : 7.68, "width" : 11.94} -->
 
 
 
@@ -328,7 +327,7 @@ Notes:
 
  *  **Question for class:** At  **k=32**  we have achieved  **WSSSE=0** , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 4.1, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" style="width:60%;"/><!-- {"left" : 3.34, "top" : 6.05, "height" : 4.61, "width" : 10.82} -->
 
 
 
@@ -345,13 +344,13 @@ Notes:
 
  * For K=clusters and d=dimensions and n=observations
 
-<img src="../../assets/images/machine-learning/kmeans-12.png" /><!-- {"left" : 3.72, "top" : 2.18, "height" : 1, "width" : 2.81} -->
+<img src="../../assets/images/machine-learning/kmeans-12.png" /><!-- {"left" : 2.33, "top" : 3.44, "height" : 1.21, "width" : 3.41} -->
 
 
 
  * Heuristic algorithms like Lloyd's can helpComplexity - linear (best case)
 
-<img src="../../assets/images/machine-learning/kmeans-13.png"/><!-- {"left" : 3.75, "top" : 4.45, "height" : 0.95, "width" : 2.75} -->
+<img src="../../assets/images/machine-learning/kmeans-13.png"/><!-- {"left" : 2.37, "top" : 6.02, "height" : 1.15, "width" : 3.33} -->
 
 
 - i = iterations
@@ -392,7 +391,7 @@ https://en.wikipedia.org/wiki/Lloyd%27s_algorithm
 ## K-Means Centroid Positioning DEMO
 
 
-<img src="../../assets/images/machine-learning/3rd-party/kmeans-2.png" style="width:30%;float:right;"/><!-- {"left" : 6.49, "top" : 1.22, "height" : 3.33, "width" : 3.46} -->
+<img src="../../assets/images/machine-learning/3rd-party/kmeans-2.png" style="width:30%;float:right;"/><!-- {"left" : 11.43, "top" : 2.25, "height" : 5.13, "width" : 5.33} -->
 
  * Go to: https://www.naftaliharris.com/blog/visualizing-k-means-clustering/
  * Demo 1
@@ -415,7 +414,7 @@ https://www.naftaliharris.com/blog/visualizing-k-means-clustering/
 
 ## How to Find the Best K?
 
-<img src="../../assets/images/machine-learning/kmeans-13-wssse.png" style="width:50%;float:right;"/><!-- {"left" : 5.21, "top" : 2.1, "height" : 2.87, "width" : 4.93} -->
+<img src="../../assets/images/machine-learning/kmeans-13-wssse.png" style="width:50%;float:right;"/><!-- {"left" : 10.21, "top" : 1.89, "height" : 4.06, "width" : 6.97} -->
 
 -  No single standard to find 'best' number of clusters
 -  **Elbow method**  is commonly used
@@ -485,7 +484,7 @@ Hierarchical Clustering is a cluster analysis that seeks to build a hierarchy of
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-clustering-hiearchical-1.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 1.79, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-clustering-hiearchical-1.png" style="max-width:70%;"/><!-- {"left" : 2.7, "top" : 2.16, "height" : 8.07, "width" : 12.1} -->
 
 
 
@@ -517,7 +516,7 @@ Notes:
 
  * Input
 
-<img src="../../assets/images/machine-learning/3rd-party/hiearchical-clustering-1.png"  style="max-width:60%;"/><!-- {"left" : 2.16, "top" : 1.9, "height" : 5.27, "width" : 5.93} -->
+<img src="../../assets/images/machine-learning/3rd-party/hiearchical-clustering-1.png"  style="max-width:60%;"/><!-- {"left" : 4.12, "top" : 3.22, "height" : 8.23, "width" : 9.26} -->
 
 
 
@@ -529,9 +528,9 @@ Notes:
 
 ## Visualizing Hierarchical Clustering
 
- * Output:  **Dendogram**  (upside down tree)
+ * Output: **Dendogram** (upside down tree)
 
-<img src="../../assets/images/machine-learning/3rd-party/hiearchical-clustering-2.png" style="max-width:70%;"/><!-- {"left" : 1.02, "top" : 2.35, "height" : 4.94, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/hiearchical-clustering-2.png" style="max-width:70%;"/> <!-- {"left" : 2.6, "top" : 3.89, "height" : 7.4, "width" : 12.29} -->
 
 
 

@@ -13,13 +13,14 @@ Notes:
 
 ---
 
-## Unsupervised Intro
+# Unsupervised Intro
 
 [../generic/Unsupervised-Intro.md](../generic/Unsupervised-Intro.md)
 
 ---
 
-## Clustering
+# Clustering
+
 [../generic/Unsupervised-Clustering.md](../generic/Unsupervised-Clustering.md)
 
 ---
@@ -68,7 +69,7 @@ Notes:
  println("Cluster Centers: ")
  model.clusterCenters.foreach(println)
 ```
-<!-- {"left" : 0, "top" : 2.88, "height" : 3.19, "width" : 9.11} -->
+<!-- {"left" : 0.85, "top" : 3.51, "height" : 4.34, "width" : 12.41} -->
 
 
 Notes:
@@ -89,7 +90,7 @@ Notes:
 | Seed      | **setSeed** (seed: Long)                               | Initial seed setting                                                                                                                                                 |               |
 
 
-<!-- {"left" : 0.13, "top" : 1.17, "height" : 4.89, "width" : 9.99, "columnwidth" : [1.38, 2.45, 4.7, 1.46]} -->
+<!-- {"left" : 0.44, "top" : 2.38, "height" : 1, "width" : 16.61, "columnwidth" : [2.29, 4.07, 7.82, 2.43]} -->
 
 Notes:
 
@@ -132,7 +133,7 @@ Notes:
   predicted.sort("prediction", "mpg").show(32,false)
 ```
 
-<!-- {"left" : 0, "top" : 1.16, "height" : 5.02, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.49, "height" : 7.42, "width" : 15.15} -->
 
 Notes:
 
@@ -155,7 +156,7 @@ pyspark.ml.clustering.Kmeans (self,
         maxIter=20,     
         seed=None)
 ```
-<!-- {"left" : 0, "top" : 1.89, "height" : 2.9, "width" : 7.44} -->
+<!-- {"left" : 0.85, "top" : 2.98, "height" : 4.36, "width" : 11.19} -->
 
 
 Notes:
@@ -176,6 +177,8 @@ Notes:
 | tol           | Threshold indicating   the convergence of clusters                                                                                                        | 1e-4          |
 | maxIter       | How many iterations                                                                                                                                       | 20            |
 | seed          | Initial seed setting                                                                                                                                      |               |
+
+<!-- {"left" : 0.82, "top" : 2.66, "height" : 1, "width" : 15.85} -->
 
 
 Notes:
@@ -209,7 +212,7 @@ print(wssse)
 predictions =  model.transform(featureVector)
 predictions.show()
 ```
-<!-- {"left" : 0, "top" : 1.21, "height" : 4.66, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.43, "height" : 6.61, "width" : 14.54} -->
 
 Notes:
 
@@ -237,7 +240,7 @@ Python
     Script Mode
       $ bin/pyspark   kmeans-script.py
 ```
-<!-- {"left" : 0, "top" : 1.44, "height" : 5.24, "width" : 8.94} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 7.83, "width" : 13.36} -->
 
 Notes:
 
@@ -255,7 +258,7 @@ Notes:
 [15.899999999999999,7.555555555555555]
 
 ```
-<!-- {"left" : 0, "top" : 1.25, "height" : 1.44, "width" : 7.28} -->
+<!-- {"left" : 0.85, "top" : 1.9, "height" : 2.2, "width" : 11.1} -->
 
 
 ```console
@@ -276,7 +279,7 @@ Notes:
 +-------------------+----+---+----------+----------+
 
 ```
-<!-- {"left" : 0, "top" : 3.03, "height" : 4.65, "width" : 9.44} -->
+<!-- {"left" : 0.85, "top" : 4.39, "height" : 5.74, "width" : 11.65} -->
 
 
 Notes:
@@ -297,7 +300,7 @@ Notes:
 -   __Question for class__:  
  At  k=32  we have achieved  WSSSE=0 , as in perfect fit !How is that?
 
-<img src="../../assets/images/machine-learning/kmeans-11-wssse.png"  style="width:70%;"/><!-- {"left" : 1.02, "top" : 4.18, "height" : 3.5, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png"  style="width:70%;"/><!-- {"left" : 3.27, "top" : 6.29, "height" : 4.67, "width" : 10.96} -->
 
 
 
@@ -325,7 +328,7 @@ for k in range(2,17):
 
 k_wssse
 ```
-<!-- {"left" : 0, "top" : 1.3, "height" : 3.5, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.42, "height" : 4.74, "width" : 13.87} -->
 
 
 ```text
@@ -337,7 +340,7 @@ k= 4
    k=4, wssse=140.88452380952572
 
 ```
-<!-- {"left" : 0, "top" : 5.47, "height" : 1.86, "width" : 6.11} -->
+<!-- {"left" : 0.85, "top" : 7.41, "height" : 3.12, "width" : 10.25} -->
 
 
 Notes:
@@ -348,7 +351,7 @@ Notes:
 
 ## K - WSSSE
 
-<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" alt="kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 1.02, "top" : 1.23, "height" : 5.51, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/kmeans-11-wssse.png" alt="kmeans-11-wssse.png" style="width:76%;"/><!-- {"left" : 3.11, "top" : 3.07, "height" : 7.57, "width" : 11.28} -->
 
 
 
@@ -370,7 +373,7 @@ val featureVector = assembler.transform(dataset2)
 val kmeans = new KMeans().....
 val model = kmeans.fit(featureVector)
 ```
-<!-- {"left" : 0, "top" : 1.69, "height" : 2.03, "width" : 9.44} -->
+<!-- {"left" : 0.85, "top" : 2.79, "height" : 2.9, "width" : 13.48} -->
 
 ```
 WARN KMeans: `The input data is not directly cached`,    
@@ -385,7 +388,7 @@ com.github.fommil.netlib.NativeRefBLAS
 WARN KMeans: The input data was not directly cached,  
 which may hurt performance if its parent RDDs are also uncached.
 ```
-<!-- {"left" : 0, "top" : 4.34, "height" : 3.12, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 6.02, "height" : 4.46, "width" : 14.64} -->
 
 Notes:
 
@@ -477,7 +480,7 @@ model = pca.fit(fv_scaled)
 pca_features = model.transform(fv_scaled).select("pcaFeatures")
 
 ```
-<!-- {"left" : 0, "top" : 1.53, "height" : 5.14, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.47, "height" : 7.06, "width" : 14.08} -->
 
 ---
 
@@ -492,14 +495,14 @@ print(variance)
 print ("Original data had {} features,  principal components {}".format(len(data2.columns), num_pc))
 print("Cumulative Explained Variance: " + str(np.cumsum(variance)[-1]))
 ```
-<!-- {"left" : 0, "top" : 2.69, "height" : 1.02, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.7, "height" : 1.55, "width" : 15.6} -->
 
 ```
 [0.28 0.18 0.14 0.11 0.09]
 Original data had 11 features,  principal components 5
 Cumulative Explained Variance: 0.7952827473412729
 ```
-<!-- {"left" : 0, "top" : 3.96, "height" : 1.15, "width" : 9.78} -->
+<!-- {"left" : 0.85, "top" : 5.65, "height" : 1.55, "width" : 13.2} -->
 
 ---
 
@@ -520,7 +523,7 @@ np.set_printoptions(precision=2, suppress=True)
 print(corr_pc_nparr)
 
 ```
-<!-- {"left" : 0, "top" : 2.36, "height" : 2.82, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.51, "height" : 3.92, "width" : 14.26} -->
 
 ```
 Correlation Matrtix for Principal Components
@@ -530,7 +533,7 @@ Correlation Matrtix for Principal Components
  [-0.  0.  0.  1. -0.]
  [ 0.  0.  0. -0.  1.]]
 ```
-<!-- {"left" : 0, "top" : 5.54, "height" : 2.03, "width" : 8.11} -->
+<!-- {"left" : 0.85, "top" : 7.93, "height" : 2.82, "width" : 11.29} -->
 
 ---
 
@@ -552,9 +555,9 @@ leg = plt.legend(['Explained Variance'], loc='best', borderpad=0.3,
                  markerscale=0.4)
 
 ```
-<!-- {"left" : 0, "top" : 1.16, "height" : 2.67, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.01, "height" : 3.47, "width" : 13.32} -->
 
-<img  src="../../assets/images/machine-learning/PCA-screeplot-1.png" style="width:34%;"/><!-- {"left" : 1.79, "top" : 4.11, "height" : 4.43, "width" : 6.67} -->
+<img  src="../../assets/images/machine-learning/PCA-screeplot-1.png" style="width:34%;"/><!-- {"left" : 4.42, "top" : 5.89, "height" : 5.76, "width" : 8.67} -->
 
 
 
@@ -563,14 +566,14 @@ leg = plt.legend(['Explained Variance'], loc='best', borderpad=0.3,
 ## LAB: PCA in Spark ML
 
 
- *  **Overview**  
+ *  **Overview:**  
     - Reduce data dimension with PCA
 
- *  **Approximate Time**  
+ *  **Approximate Time:**  
     - 30 mins
 
  *  **Instructions**  
-    - **PCA-1**: Analyze wine quality data
+    - **PCA-1:** Analyze wine quality data
 
 
 Notes:

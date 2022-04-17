@@ -18,11 +18,12 @@ Notes:
 
 * RNNs have a 'loop back' mechanism to pass the current state to the next iteration
 
-<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 0.4, "top" : 4.27, "height" : 3.47, "width" : 2.01} -->
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 3.63, "top" : 4.27, "height" : 3.47, "width" : 1.53} -->
-<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 6.38, "top" : 4.27, "height" : 3.47, "width" : 3.47} -->
+* [Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-3-animation.mp4)
 
-[Animation link](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/rnn-3-animation.mp4)
+
+<img src="../../assets/images/deep-learning/feed-forward-network-2.png"  style="width:20%;float:left;"/><!-- {"left" : 3.54, "top" : 6.05, "height" : 4.56, "width" : 2.64} --><img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:center;"/><!-- {"left" : 7.65, "top" : 6.24, "height" : 4.19, "width" : 1.85} -->
+<img src="../../assets/images/deep-learning/rnn-3-animation.gif"  style="width:30%;float:right;"/><!-- {"left" : 10.97, "top" : 5.66, "height" : 4.77, "width" : 4.77} -->
+
 
 ---
 
@@ -44,7 +45,7 @@ Notes:
 
 ## Issues With RNNs: Short Term Memory
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-memory-1.png" style="width:50%;float:right;" />   <!-- {"left" : 5.78, "top" : 1.06, "height" : 2.31, "width" : 4.34} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-memory-1.png" style="width:50%;float:right;" />   <!-- {"left" : 10.24, "top" : 2.36, "height" : 3.69, "width" : 6.94} -->
 
 * Memory of the first inputs (hidden state) gradually fades away over multiple steps
 
@@ -80,8 +81,7 @@ Notes:
 
 ## Long-term vs. Short-term Memory
 
-<img src="../../assets/images/deep-learning/which-parts-of-the-brain-affect-memory.png" style="width:50%;float:right;"/><!-- {"left" : 1.97, "top" : 5.09, "height" : 2.71, "width" : 6.31} -->
-
+<img src="../../assets/images/deep-learning/which-parts-of-the-brain-affect-memory.png" style="width:50%;float:right;"/><!-- {"left" : 9.66, "top" : 2.09, "height" : 3.3, "width" : 7.68} -->
 * Human Brains have two types of memory: short and long term
 
 * Short-term memory holds data in the immediate context
@@ -114,9 +114,8 @@ Notes:
 
 ## LSTM Design
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:50%;float:right;"/> <!-- {"left" : 1.02, "top" : 3.78, "height" : 3.61, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/3rd-party/LSTM-cell-1.png" style="width:50%;float:right;clear:both;" /> <!-- {"left" : -1.64, "top" : 3.62, "height" : 3.34, "width" : 8.97} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:50%;float:right;"/> <!-- {"left" : 9.1, "top" : 1.89, "height" : 3.35, "width" : 7.62} -->
+<img src="../../assets/images/deep-learning/3rd-party/LSTM-cell-1.png" style="width:50%;float:right;clear:both;" /> <!-- {"left" : 9.23, "top" : 6.48, "height" : 4.83, "width" : 7.36} -->
 
 * Input Gate
 
@@ -132,8 +131,7 @@ Notes:
 
 ## Components of the LSTM
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:50%;float:right;"/> <!-- {"left" : 1.02, "top" : 3.78, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:50%;float:right;"/> <!-- {"left" : 9.04, "top" : 2.11, "height" : 3.61, "width" : 8.21} -->
 
 * **Input Gate**
   - Input Gate contains new information / input
@@ -147,8 +145,7 @@ Notes:
 
 ## Components of the LSTM
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:50%;float:right;"/> <!-- {"left" : 1.02, "top" : 3.78, "height" : 3.61, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/LSTM-2.png" style="width:50%;float:right;"/> <!-- {"left" : 9.19, "top" : 1.89, "height" : 3.61, "width" : 8.21} -->
 
 * **Forget Gate**
   - The forget gate is an example of *negative*  feedback
@@ -167,7 +164,7 @@ Notes:
 
 ## Activation Functions in LSTM
 
-<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" style="width:50%;float:right;" /> <!-- {"left" : -1.64, "top" : 3.62, "height" : 3.34, "width" : 8.97} -->
+<img src="../../assets/images/deep-learning/activation-sigmoid-vs-tanh.png" style="width:50%;float:right;" /> <!-- {"left" : 9.56, "top" : 1.88, "height" : 2.94, "width" : 7.8} -->
 
 * Generally  **sigmoid**  or  **tanh** activations are used  (rather than ReLU as in CNN)
 
@@ -175,8 +172,7 @@ Notes:
 
 * Previous State is applied with sigmoid (&sigma;)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/LSTM-cell-1.png" style="width:50%;" /> <!-- {"left" : -1.64, "top" : 3.62, "height" : 3.34, "width" : 8.97} -->
+<img src="../../assets/images/deep-learning/3rd-party/LSTM-cell-1.png" style="width:50%;" /> <!-- {"left" : 4.85, "top" : 6.39, "height" : 5.11, "width" : 7.8} -->
 
 Notes:
 
@@ -204,9 +200,8 @@ Notes:
 
 ## Gated Recurrent Units (GRU)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/GRU-2.png" style="width:40%;float:right;"/><!-- {"left" : 1.29, "top" : 2.11, "height" : 5.42, "width" : 7.68} -->
-<img src="../../assets/images/deep-learning/3rd-party/GRU-wikipedia.png" style="width:50%;float:right;clear:both;"/><!-- {"left" : 1.29, "top" : 2.11, "height" : 5.42, "width" : 7.68} -->
+<img src="../../assets/images/deep-learning/3rd-party/GRU-2.png" style="width:40%;float:right;"/><!-- {"left" : 1.7, "top" : 6.96, "height" : 4.02, "width" : 5.7} -->
+<img src="../../assets/images/deep-learning/3rd-party/GRU-wikipedia.png" style="width:50%;float:right;clear:both;"/><!-- {"left" : 9.13, "top" : 6.61, "height" : 4.72, "width" : 6.67} -->
 
 * Introduced by Kyungyun Cho (et al) in 2004 ([paper](https://arxiv.org/pdf/1406.1078v3.pdf))
 
@@ -237,15 +232,15 @@ Image credits:
 
 * This makes them perfect for shorter sequences.
 
-* Performance wise :   RNN <  GRU  < LSTM  
+* Performance wise: RNN <  GRU  < LSTM  
 
-* Speed :   RNN >  GRU  > LSTM  
+* Speed:  RNN >  GRU  > LSTM  
 
 ---
 
 ## biLSTM (Bidirectional LSTM)
 
-<img src="../../assets/images/deep-learning/biLSTM-1.png" style="width:45%;float:right;"/><!-- {"left" : 1.29, "top" : 2.11, "height" : 5.42, "width" : 7.68} -->
+<img src="../../assets/images/deep-learning/biLSTM-1.png" style="width:45%;float:right;"/> <!-- {"left" : 10.82, "top" : 1.89, "height" : 5.16, "width" : 6.24} -->
 
 * LSTMs/RNNs look to past data to make decisions as they train
 
@@ -270,7 +265,7 @@ Image credits:
 
 * Otherwise current state cannot be directly compared with the gated input
 
-<img src="../../assets/images/deep-learning/LSTM-3.png" style="width:90%;" /><!-- {"left" : 0.29, "top" : 2.55, "height" : 3.97, "width" : 9.68} -->
+<img src="../../assets/images/deep-learning/LSTM-3.png" style="width:90%;" /><!-- {"left" : 2.16, "top" : 5.35, "height" : 5.4, "width" : 13.18} -->
 
 Notes:
 
@@ -300,9 +295,15 @@ Notes:
 
 ## Image / Video Captioning
 
-<img src="../../assets/images/deep-learning/Long-Short-Term-Memory-LSTM-Neural-Networks-LSTM-Applications-Image-Video-Captioning-0.png" style="width:70%;" /> <!-- {"left" : 0.81, "top" : 2.7, "height" : 3.67, "width" : 8.64} -->
+<img src="../../assets/images/deep-learning/Long-Short-Term-Memory-LSTM-Neural-Networks-LSTM-Applications-Image-Video-Captioning-0.png" style="width:70%;" /> <!-- {"left" : 3.18, "top" : 1.89, "height" : 4.73, "width" : 11.14} -->
 
-* [LM2Text Paper](https://github.com/handong1587/handong1587.github.io/blob/master/_posts/deep_learning/2015-10-09-captioning.md)
+<br/>
+
+* <a href="https://github.com/handong1587/handong1587.github.io/blob/master/_posts/deep_learning/2015-10-09-captioning.md" > LM2Text Paper </a>
+ 
+Notes:
+
+
 
 ---
 
@@ -332,7 +333,7 @@ Notes:
 
 * The following example shows how this is done.
 
-<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;" /> <!-- {"left" : 1.68, "top" : 3.15, "height" : 4.58, "width" : 6.9} -->
+<img src="../../assets/images/deep-learning/machine-translation-model.png" style="width:60%;" /> <!-- {"left" : 4.19, "top" : 4.36, "height" : 6.06, "width" : 9.12} -->
 
 Notes:
 
@@ -344,7 +345,7 @@ Notes:
 
 * The next word in sequence is fed from the bottom, for example "go".
 
-<img src="../../assets/images/deep-learning/go.png" style="width:60%;" /> <!-- {"left" : 0.67, "top" : 3.43, "height" : 4.12, "width" : 8.91} -->
+<img src="../../assets/images/deep-learning/go.png" style="width:60%;" /> <!-- {"left" : 2.99, "top" : 4.69, "height" : 5.33, "width" : 11.53} -->
 
 Notes:
 
@@ -352,7 +353,7 @@ Notes:
 
 ## Predicting Time Series data
 
-<img src="../../assets/images/deep-learning/time-series-stocks.png" style="width:40%;float:right;"/> <!-- {"left" : 5.59, "top" : 1.08, "height" : 2.35, "width" : 4.42} -->
+<img src="../../assets/images/deep-learning/time-series-stocks.png" style="width:40%;float:right;"/> <!-- {"left" : 10.01, "top" : 2.16, "height" : 3.83, "width" : 7.21} -->
 
 * How do we predict time-series data?
 
@@ -381,7 +382,7 @@ Notes:
 
   - Output Layer with Linear Activation (1 output)
 
-<img src="../../assets/images/deep-learning/SP500.png" style="width:80%;" /> <!-- {"left" : 0.39, "top" : 3.93, "height" : 1.02, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/SP500.png" style="width:80%;" /> <!-- {"left" : 1.82, "top" : 6.73, "height" : 1.49, "width" : 13.86} -->
 
 Notes:
 
@@ -408,7 +409,7 @@ Notes:
 
 ## Training Sequences
 
-<img src="../../assets/images/deep-learning/input-sequence.png" style="width:40%;float:right;"/><!-- {"left" : 5.14, "top" : 1.37, "height" : 4.75, "width" : 4.84} -->
+<img src="../../assets/images/deep-learning/input-sequence.png" style="width:40%;float:right;"/><!-- {"left" : 10.98, "top" : 1.89, "height" : 6.12, "width" : 6.24} -->
 
 * We are training with sequences of 50 prices of SP500.
   - 50 prices
@@ -424,7 +425,7 @@ Notes:
 
 ## Feeding the Sequence
 
-<img src="../../assets/images/deep-learning/Prediction.png" style="width:80%;" /> <!-- {"left" : 0.31, "top" : 2.38, "height" : 4.3, "width" : 9.63} -->
+<img src="../../assets/images/deep-learning/Prediction.png" style="width:80%;" /> <!-- {"left" : 1.71, "top" : 3.05, "height" : 6.29, "width" : 14.08} -->
 
 Notes:
 
@@ -460,7 +461,7 @@ Notes:
 
 * We have to take a window in time.
 
-<img src="../../assets/images/deep-learning/testing-the-model.png" style="width:40%;"/> <!-- {"left" : 2.7, "top" : 3.88, "height" : 4.25, "width" : 4.84} -->
+<img src="../../assets/images/deep-learning/testing-the-model.png" style="width:40%;"/> <!-- {"left" : 11.23, "top" : 2.13, "height" : 5.41, "width" : 6.16} -->
 
 Notes:
 
@@ -468,7 +469,7 @@ Notes:
 
 ## Our Results
 
-<img src="../../assets/images/deep-learning/3rd-party/Upward-trend.png" style="width:15%;float:right;"/> <!-- {"left" : 7.53, "top" : 1.44, "height" : 2.28, "width" : 2.3} -->
+<img src="../../assets/images/deep-learning/3rd-party/Upward-trend.png" style="width:15%;float:right;"/> <!-- {"left" : 13.26, "top" : 1.59, "height" : 3.66, "width" : 3.69} -->
 
 * Does our model predict the future?
 

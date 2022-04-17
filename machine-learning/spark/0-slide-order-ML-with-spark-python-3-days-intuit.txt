@@ -32,8 +32,10 @@ Regressions-Generic.md
 Regression-in-Spark.md
 
 ## classifications
-Classification-Generic.md
-Classification-Spark.md
+../generic/Classification-Intro.md
+Classification-Logistic-Spark.md
+Classification-SVM-Spark.md
+Classification-Naive-Bayes-Spark.md
 
 ## Trees
 Decision-Trees-Spark.md

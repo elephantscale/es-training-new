@@ -1,6 +1,6 @@
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-1.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.75, "height" : 5.07, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-1.png" style="width:80%;"/><!-- {"left" : 1.48, "top" : 2.22, "height" : 8.98, "width" : 14.54} -->
                                                   |
 
 Notes:

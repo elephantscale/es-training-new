@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="3792 -316 937 731" width="937" height="731">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#2e006e">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-04-10 07:07:53 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-dasharray="none" fill-opacity="1" stroke="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="3792" y="-316" width="937" height="731"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_116">
+        <line x1="3858" y1="-291.1" x2="3858" y2="347.3262" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_115">
+        <line x1="4704.6" y1="348.44368" x2="3859.1175" y2="348.44368" marker-start="url(#FilledArrow_Marker)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_114">
+        <text transform="translate(4555.788 360.117)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40"> Epochs</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <text transform="translate(3797 -193.60156) rotate(-90)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Loss</tspan>
+        </text>
+      </g>
+      <g id="Graphic_112">
+        <text transform="translate(4401.008 -144)" fill="#be8d25">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#be8d25" x="0" y="40">Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <text transform="translate(4230.943 80.46703)" fill="#8d7dd4">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#8d7dd4" x="0" y="40">Validation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_118">
+        <path d="M 3930.278 -190 C 3930.278 -190 3943.7557 -131.64538 3978.942 -90.19625 C 4009.8965 -53.761644 4014.5725 -65.73725 4049.0606 -65.22945 C 4071.2345 -64.91207 4075.191 -43.838397 4101.343 -43.838397 C 4127.4944 -43.838397 4119.835 -62.18265 4144.781 -62.18265 C 4169.7264 -62.18265 4163.5905 -42.27268 4182.1463 -41.722566 C 4203.5586 -41.108975 4192.3235 -52.68257 4214.2223 -52.15361 C 4229.033 -51.79392 4224.9284 -23.65337 4239.168 -23.65337 C 4253.4075 -23.65337 4259.48 -52.15361 4279.03 -50.96875 C 4298.5805 -49.78388 4307.7844 -25.578776 4328.308 -25.7692 C 4349.974 -25.938467 4353.2536 -50.96875 4398.4054 -47.41415 C 4443.557 -43.859555 4444.742 -14.13213 4480.394 -12.947265 C 4516.0456 -11.7624 4527.7885 -60.61694 4564.773 -59.28396 C 4590.819 -58.353 4576.389 -31.77816 4626.3016 -4.462783" stroke="#e3a92e" stroke-linecap="butt" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_117">
+        <path d="M 3894.3087 -137.0196 C 3894.3087 -137.0196 3947.924 -92.92568 3968.1935 -68.48783 C 3988.463 -44.04998 4006.2785 1.3345941 4038.016 2.413668 C 4069.7534 3.4927417 4070.79 -16.62881 4098.19 -14.851513 C 4125.59 -13.074215 4136.275 45.91515 4160.7553 42.275923 C 4185.2355 38.636694 4163.1885 -7.530738 4196.513 -9.561935 C 4254.91 -13.13769 4265.468 25.751283 4309.1385 28.523022 C 4346.081 30.91391 4340.1143 7.682087 4363.346 12.442707 C 4386.578 17.203326 4386.62 58.99099 4406.255 59.519946 C 4425.89 60.0489 4436.6385 43.43963 4464.0597 46.401794 C 4491.481 49.363957 4490.804 78.79517 4536.146 75.15594 C 4588.83 70.924275 4584.5774 35.335998 4609.269 33.368275 C 4610.106 33.312552 4610.939 33.21368 4611.766 33.07206 C 4611.766 33.07206 4637.706 29.369354 4648.645 44.79376 C 4663.8364 66.24829 4668.83 72.299565 4683.26 73.44211" stroke="#aa97fe" stroke-linecap="butt" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+    </g>
+  </g>
+</svg>

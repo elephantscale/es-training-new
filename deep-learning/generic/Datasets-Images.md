@@ -21,8 +21,7 @@
 
 ## MNIST
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg"  style="width:45%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg"  style="width:45%;float:right;" /><!-- {"left" : 10.56, "top" : 1.89, "height" : 4.34, "width" : 6.56} -->
 
 * MNIST Dataset is the "hello world" of image recognition
 
@@ -67,20 +66,26 @@ print("train label [{}] = {} ".format(index, train_labels[index])))
 # train label [100] = 5
 plt.imshow(train_images[index])
 ```
+<!-- {"left" : 0.85, "top" : 2.2, "height" : 4.42, "width" : 11.53} -->
 
-<img src="../../assets/images/deep-learning/mnist-2.png"  style="width:20%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+<img src="../../assets/images/deep-learning/mnist-2.png"  style="width:20%;float:right;" /> <!-- {"left" : 12.27, "top" : 1.85, "height" : 4.91, "width" : 4.97} -->
+
+<br/>
 
 * Training images are 28x28 pixel images
 * Labels are numbers:  0 - 9
 * Here we are display 100th image, which is a '5'.  
 See the image and label
 
+Notes:
+
+
+
 ---
 
 ## Fashion MNIST
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/fashion-mnist-3.png"  style="width:37%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+<img src="../../assets/images/deep-learning/3rd-party/fashion-mnist-3.png"  style="width:37%;float:right;" /><!-- {"left" : 12.22, "top" : 1.89, "height" : 5.01, "width" : 4.94} -->
 
 * Fashion MNIST was created as a 'better MNIST'
     - MNIST is too easy;  Classic ML algorithms can achieve 97% accuracy,  CNNs can achieve 99.7% accuracy!
@@ -123,12 +128,20 @@ print("train label [{}] = {} ".format(index, train_labels[index])))
 # train label [100] = 8
 plt.imshow(train_images[index])
 ```
+<!-- {"left" : 0.85, "top" : 2.29, "height" : 4.31, "width" : 12.19} -->
 
-<img src="../../assets/images/deep-learning/fashion-mnist-4.png"  style="width:20%;float:right;" /><!-- {"left" : 1.85, "top" : 3.5, "height" : 4.34, "width" : 6.56} -->
+<img src="../../assets/images/deep-learning/fashion-mnist-4.png"  style="width:20%;float:right;" /><!-- {"left" : 13.11, "top" : 2.03, "height" : 4.17, "width" : 4.22} -->
+
+
+<br/>
 
 * Training images are 28x28 pixel images
 * Labels are numbers:  0 - 9
 * Here we are display 100th image, which is a '8' (handbag).  
+
+Notes:
+
+
 
 ---
 
@@ -151,12 +164,14 @@ plt.imshow(train_images[index])
 | 8     | Bag         |
 | 9     | Ankle boot  |
 
+<!-- {"left" : 3.07, "top" : 4.62, "height" : 1, "width" : 11.37} -->
+
+
 ---
 
 ## CIFAR-10
 
-<img src="../../assets/images/deep-learning/CIFAR-10-dataset.png"  style="width:50%;float:right;" /><!-- {"left" : 5.42, "top" : 1.05, "height" : 3.45, "width" : 4.69} -->
-
+<img src="../../assets/images/deep-learning/CIFAR-10-dataset.png"  style="width:50%;float:right;" /><!-- {"left" : 10.41, "top" : 2.09, "height" : 5.01, "width" : 6.81} -->
 
 * CIFFAR-10 dataset consists of
     - 60,000 color images
@@ -190,6 +205,9 @@ plt.imshow(train_images[index])
 | flowers              | orchids, poppies, roses, sunflowers, tulips      |
 | fruit and vegetables | apples, mushrooms, oranges, pears, sweet peppers |
 
+<!-- {"left" : 2.09, "top" : 6.6, "height" : 1, "width" : 13.33} -->
+
+
 ---
 
 ## Using CIFAR data  (TensorFlow)
@@ -204,7 +222,7 @@ import matplotlib.pyplot as plt
 # Normalize pixel values to be between 0 and 1
 train_images, test_images = train_images / 255.0, test_images / 255.0
 ```
-<!-- {"left" : 0, "top" : 1.56, "height" : 1.75, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 2.67, "width" : 15.61} -->
 
 ---
 
@@ -227,7 +245,7 @@ imagenet/
             ├── dog1.jpg
             └── dog2.jpg
 ```
-<!-- {"left" : 0, "top" : 3.57, "height" : 2.65, "width" : 4.78} -->
+<!-- {"left" : 0.85, "top" : 4.28, "height" : 3.57, "width" : 6.44} -->
 
 
 
@@ -235,7 +253,7 @@ imagenet/
 
 ## Imagenet
 
-<img src="../../assets/images/deep-learning/3rd-party/imagenet-1.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 1.8, "top" : 2.17, "height" : 5.3, "width" : 6.66} -->
+<img src="../../assets/images/deep-learning/3rd-party/imagenet-1.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 3.04, "top" : 2.31, "height" : 9.09, "width" : 11.42} -->
 
 
 ---
@@ -264,7 +282,7 @@ imagenet/
 
 - over 600,000 images
 
-<img src="../../assets/images/deep-learning/3rd-party/street-numbers-1.png"  style="width:55%;" /><!-- {"left" : 1.07, "top" : 3.09, "height" : 3.48, "width" : 4.72} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/google-streetview-car.jpg"  style="width:30%;" /><!-- {"left" : 6.26, "top" : 4.06, "height" : 1.99, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/3rd-party/street-numbers-1.png"  style="width:55%;" /><!-- {"left" : 2.4, "top" : 4.72, "height" : 5.45, "width" : 7.39} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/google-streetview-car.jpg"  style="width:30%;" /><!-- {"left" : 9.99, "top" : 5.66, "height" : 3.56, "width" : 5.24} -->
 
 
 ---
@@ -282,7 +300,7 @@ imagenet/
 - [Link to download](https://www.microsoft.com/en-us/download/details.aspx?id=54765)
 
 
-<img src="../../assets/images/deep-learning/3rd-party/dog-1.jpg" alt="XXX image missing" style="background:white;width:16%;" /><!-- {"left" : 2.09, "top" : 7.31, "height" : 1.38, "width" : 1.38} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/dog-3.jpg" alt="XXX image missing" style="background:white;width:20.1%" /><!-- {"left" : 3.67, "top" : 7.31, "height" : 1.38, "width" : 1.74} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-1.jpg" alt="XXX image missing" style="background:white;width:14.5%" /><!-- {"left" : 5.61, "top" : 7.31, "height" : 1.37, "width" : 1.31} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;width:10.3%;" /><!-- {"left" : 7.22, "top" : 7.31, "height" : 1.38, "width" : 0.94} -->
+<img src="../../assets/images/deep-learning/3rd-party/dog-1.jpg" alt="XXX image missing" style="background:white;width:16%;" /><!-- {"left" : 3.93, "top" : 9.08, "height" : 2.19, "width" : 2.19} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/dog-3.jpg" alt="XXX image missing" style="background:white;width:20.1%" /><!-- {"left" : 6.44, "top" : 9.08, "height" : 2.19, "width" : 2.76} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-1.jpg" alt="XXX image missing" style="background:white;width:14.5%" /><!-- {"left" : 9.52, "top" : 9.08, "height" : 2.18, "width" : 2.08} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;width:10.3%;" /><!-- {"left" : 12.08, "top" : 9.08, "height" : 2.19, "width" : 1.49} -->
 
 
 Notes:

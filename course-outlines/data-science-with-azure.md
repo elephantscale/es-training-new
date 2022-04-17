@@ -2,12 +2,12 @@
 
 © Elephant Scale
 
-Jan. 06, 2020
+Jan. 18, 2022
 
 ## Overview
 
-Data Science includes statistics, data visualization and exploration,
-and Machine learning. Since Microsoft Azure is the second-largest cloud computing provider, knowledge of its Data Science capabilities is essential for
+Data Science includes statistics, data visualization and exploration, and Machine learning. 
+Since Microsoft Azure is the second-largest cloud computing provider, knowledge of its Data Science capabilities is essential for
 building best-of-breed solutions. Azure’s particular strength is in the usability and integration with the Microsoft stack.
 
 In this course, the students will get an overview of ML with Python and R, the two standard environments for ML. They will also learn the specifics of the Azure and the capabilities that it offers to ML developers.
@@ -21,6 +21,7 @@ One of the goals of the course is to prepare the students for taking the Azure c
 * Spark and Databricks runtime
 * Machine Learning
 * Streaming analytics
+* **Note**: the use or Python or R are interchangeable
 
 
 ## Audience
@@ -54,6 +55,13 @@ Lectures and hands-on labs. (50%, 50%)
   - Unsupervised Learning
   - Machine Learning Life Cycle
   - Machine Learning Languages and Platforms
+* * Introduction to Python
+  - Python IDE
+  - Install Packages
+  - Python for Statistical Summary
+  - Statistical Distribution
+  - Python for Visualization
+  - Python for Machine Learning
 * Introduction to R
   - Installing RStudio, Installing Packages
   - R Data Structure
@@ -61,13 +69,6 @@ Lectures and hands-on labs. (50%, 50%)
   - R for Statistical Analysis
   - R for Machine Learning
   - R for Visualization
-* Introduction to Python
-  - Python IDE
-  - Install Packages
-  - Python for Statistical Summary
-  - Statistical Distribution
-  - Python for Visualization
-  - Python for Machine Learning
 * R Visualization in Power BI
   - Power BI
   - Setting Up R in Power BI

@@ -19,7 +19,7 @@ Notes:
 
 * And distributed systems like Hadoop/Spark offered a great platform to build scalable ML
 
-<img src="../../assets/images/bigdata/cluster-distributed-processing-2.png" style="width:50%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/bigdata/cluster-distributed-processing-2.png" style="width:50%;" /><!-- {"left" : 3.71, "top" : 5.22, "height" : 6.01, "width" : 10.09} -->
 
 ---
 
@@ -29,7 +29,7 @@ Notes:
 
 ## Spark Intro
 
-* **To Instructor**:  
+* **To Instructor:**
 Skip this section, if already covered earlier
 
 ---
@@ -37,7 +37,7 @@ Skip this section, if already covered earlier
 ## Spark
 
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 8.11, "top" : 1.11, "height" : 1.01, "width" : 1.91} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;float:right;" /><!-- {"left" : 12.79, "top" : 1.68, "height" : 2.22, "width" : 4.2} -->
 
 
 * [Spark](https://spark.apache.org) is an **open Source distributed computing engine**
@@ -80,7 +80,7 @@ Notes:
 
 ## Spark Components
 
-<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/spark-components-1.png" style="width:80%;" /><!-- {"left" : 2.24, "top" : 2.32, "height" : 7.75, "width" : 13.01} -->
 
 
 Notes:
@@ -98,16 +98,16 @@ Notes:
 
 <br clear="all" />
 
-<img src="../../assets/images/logos/databricks-logo-1.png" style="width:20%;" /><!-- {"left" : 0.32, "top" : 5.52, "height" : 0.37, "width" : 2.19} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 3, "top" : 5.35, "height" : 0.71, "width" : 2.17} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 5.56, "top" : 5.38, "height" : 0.63, "width" : 1.68} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 7.63, "top" : 5.35, "height" : 0.71, "width" : 2.46} -->
+<img src="../../assets/images/logos/databricks-logo-1.png" style="width:20%;" /><!-- {"left" : 1.09, "top" : 7.45, "height" : 0.58, "width" : 3.43} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 5.29, "top" : 7.18, "height" : 1.11, "width" : 3.4} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 9.31, "top" : 7.23, "height" : 0.99, "width" : 2.63} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 12.55, "top" : 7.18, "height" : 1.11, "width" : 3.86} -->
 
 ---
 
 ## Databricks Cloud
 
-<img src="../../assets/images/spark/3rd-party/databricks-cloud-1.png" style="width:60%;float:right;" /><!-- {"left" : 5.58, "top" : 1.26, "height" : 2.8, "width" : 4.34} -->
+<img src="../../assets/images/spark/3rd-party/databricks-cloud-1.png" style="width:60%;float:right;" /><!-- {"left" : 10.19, "top" : 2.07, "height" : 4.56, "width" : 7.06} -->
 
 * A hosted platform of Spark
 
@@ -141,9 +141,9 @@ Notes:
 
 <br clear="all" />
 
-<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 3, "top" : 5.35, "height" : 0.71, "width" : 2.17} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 5.56, "top" : 5.38, "height" : 0.63, "width" : 1.68} -->
- &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 7.63, "top" : 5.35, "height" : 0.71, "width" : 2.46} -->
+<img src="../../assets/images/logos/google-cloud-logo-2.png" style="width:20%;" /><!-- {"left" : 2.16, "top" : 8.17, "height" : 1.32, "width" : 4.04} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;" /><!-- {"left" : 6.92, "top" : 8.23, "height" : 1.17, "width" : 3.12} -->
+ &nbsp;  &nbsp;<img src="../../assets/images/logos/azure-logo-1.png" style="width:20%;" /><!-- {"left" : 10.77, "top" : 8.17, "height" : 1.32, "width" : 4.57} -->
 
 ---
 
@@ -163,6 +163,9 @@ Notes:
 | CPU      | 2+ core                           | 12+ core                                                          |
 | Memory   | 4+ G                              | 256+ G                                                            |
 | Disk     | - Single spindle <br/> - Few gigs | - Multiple spindles <br /> - Several Terabytes per node <br />  |
+
+<!-- {"left" : 0.78, "top" : 7.37, "height" : 2.77, "width" : 15.95} -->
+
 
 ---
 
@@ -188,16 +191,15 @@ Notes:
 * Cons:
     - The cluster size is fixed; very hard to scale up/down dynamically based on demand
 
-<!-- TODO shiva -->
-<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:47%;float:left;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:47%;float:left;"/> <!-- {"left" : 9.73, "top" : 2.29, "height" : 3.41, "width" : 7.5} -->
+
+<img src="../../assets/images/spark/spark_and_hdfs.png" style="width:40%;float:right;"/> <!-- {"left" : 9.73, "top" : 6.34, "height" : 3.1, "width" : 7.5} -->
 
 ---
 
 ## Spark Scaling on the Cloud
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/><!-- {"left" : 11.62, "top" : 1.95, "height" : 3.32, "width" : 5.47} -->
 
 * In Cloud architecture, storage and compute are separate!
 
@@ -217,8 +219,7 @@ Notes:
 
 ## Spark Scaling on the Cloud
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/> <!-- {"left" : 11.62, "top" : 1.95, "height" : 3.32, "width" : 5.47} -->
 
 * Pros:
     - Gives a lot of flexibility on scaling and scheduling computes
@@ -241,14 +242,12 @@ Notes:
     - **Executors** on worker nodes start computing
     - Each Executor can employ multiple **tasks** to parallize the work
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/spark-architecture-1.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/spark/spark-architecture-1.png" style="width:50%;"/> <!-- {"left" : 4.27, "top" : 5.81, "height" : 5.87, "width" : 8.96} -->
 
 ---
 ## Parallelizing Computations
 
-<!-- TODO shiva -->
-<img src="../../assets/images/spark/distributed-execution.png" style="width:45%;float:right;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/spark/distributed-execution.png" style="width:45%;float:right;" /> <!-- {"left" : 10.93, "top" : 2.31, "height" : 4.14, "width" : 6.41} -->
 
 * Here is a simple example of doing a COUNT in a distributed way
 
@@ -266,7 +265,7 @@ Notes:
 
 ## Spark ML
 
-<img src="../../assets/images/machine-learning/01.png" style="width:70%;"/><!-- {"left" : 0.74, "top" : 2.07, "height" : 4.93, "width" : 8.77} -->
+<img src="../../assets/images/machine-learning/01.png" style="width:70%;"/><!-- {"left" : 2.75, "top" : 2.82, "height" : 6.75, "width" : 12} -->
 
 
 Notes:
@@ -286,8 +285,7 @@ Notes:
 * Cloud vendors are trying simplify this too
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/google-cloud/data-science-laptop-to-cluster-1.png" style="width:40%;" /><!-- {"left" : 0.58, "top" : 1.83, "height" : 5.41, "width" : 9.08} -->
+<img src="../../assets/images/google-cloud/data-science-laptop-to-cluster-1.png" style="width:40%;" /><!-- {"left" : 4.18, "top" : 6.04, "height" : 5.17, "width" : 9.13} -->
 
 ---
 
@@ -368,7 +366,7 @@ Notes:
     - Updating models is slow!
 * [Reference](https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models)
 
-<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="width:40%;"/><!-- {"left" : 1.84, "top" : 5.39, "height" : 3.33, "width" : 6.58} -->
+<img src="../../assets/images/machine-learning/deployment-gap-1a.png" style="width:40%;"/><!-- {"left" : 4.24, "top" : 7.44, "height" : 4.57, "width" : 9.03} -->
 
 
 Notes:
@@ -385,7 +383,7 @@ Notes:
 * Fast deploy!
 * [Reference](https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models)
 
-<img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 3.29, "top" : 3.81, "height" : 4.74, "width" : 6.26} -->
+<img src="../../assets/images/machine-learning/deployment-gap-1b.png" style="max-width:40%;"/><!-- {"left" : 11.51, "top" : 1.89, "height" : 4.31, "width" : 5.69} -->
 
 Notes:
 
@@ -393,7 +391,7 @@ Notes:
 
 ## ML Algorithm Overview
 
-<img src="../../assets/images/machine-learning/ML-Algorithm-overview-02.png" style="max-width:75%;"/><!-- {"left" : 1.11, "top" : 2.26, "height" : 5.13, "width" : 8.04} -->
+<img src="../../assets/images/machine-learning/ML-Algorithm-overview-02.png" style="max-width:75%;"/><!-- {"left" : 2.4, "top" : 2.81, "height" : 8.1, "width" : 12.69} -->
 
 
 Notes:
@@ -425,7 +423,7 @@ Notes:
 (train, test) = df.randomSplit( [0.7, 0.3], seed=123)
 
 ```
-<!-- {"left" : 0, "top" : 3.15, "height" : 2.16, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.76, "height" : 2.6, "width" : 12.36} -->
 
 Notes:
 
@@ -435,7 +433,7 @@ Notes:
 
 ## Training / Test Split  Code (Python)
 
-<img src="../../assets/images/machine-learning/training2.png" style="float:right;max-width:50%;"/><!-- {"left" : 2.91, "top" : 1.25, "height" : 3.35, "width" : 5.19} -->
+<img src="../../assets/images/machine-learning/training2.png" style="float:right;max-width:50%;"/><!-- {"left" : 6.83, "top" : 2.12, "height" : 5.02, "width" : 3.83} -->
 
 ```python
 df = spark.range(1,100)
@@ -454,8 +452,7 @@ print("count: ", common.count())
 common.show()
 
 ```
-<!-- {"left" : 0, "top" : 4.83, "height" : 3.54, "width" : 6.31} -->
-
+<!-- {"left" : 0.85, "top" : 7.65, "height" : 3.66, "width" : 6.53} -->
 
 
 
@@ -472,7 +469,7 @@ Notes:
 
  * E.g., an ML model is a Transformer which transforms a DataFrame with features into a DataFrame with predictions.
 
- <img src="../../assets/images/machine-learning/transformers-1.png" style="width:90%;"/><!-- {"left" : 0.94, "top" : 3.89, "height" : 1.57, "width" : 8.38} -->
+ <img src="../../assets/images/machine-learning/transformers-1.png" style="width:90%;"/><!-- {"left" : 2.64, "top" : 5.71, "height" : 2.29, "width" : 12.22} -->
 
 
 
@@ -486,7 +483,7 @@ Notes:
 * Transforms a Dataframe To Another Dataframe
     - By adding (or appending) to a "features" column
 
-<img src="../../assets/images/machine-learning/vector-assembler-1.png" style="max-width:80%;"/><!-- {"left" : 1.1, "top" : 2.8, "height" : 5.05, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/vector-assembler-1.png" style="max-width:80%;"/><!-- {"left" : 3.55, "top" : 3.66, "height" : 6.4, "width" : 10.4} -->
 
 
 
@@ -505,9 +502,9 @@ assembler = VectorAssembler(inputCols=["mpg", "cyl"], outputCol="features")
 feature_vector = assembler.transform(mpg_cyl)
 feature_vector.show(40)
 ```
-<!-- {"left" : 0, "top" : 1.26, "height" : 2.24, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 2.9, "width" : 13.26} -->
 
-<img src="../../assets/images/machine-learning/vector-assembler-3.png" style="max-width:70%;"/><!-- {"left" : 0.7, "top" : 4.77, "height" : 2.32, "width" : 8.85} -->
+<img src="../../assets/images/machine-learning/vector-assembler-3.png" style="max-width:70%;"/><!-- {"left" : 2.98, "top" : 7.13, "height" : 3.02, "width" : 11.53} -->
 
 
 Notes:
@@ -525,7 +522,7 @@ Notes:
 
  * Most frequently used label gets 0 and so on
 
-<img src="../../assets/images/machine-learning/string-indexer-1.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 3.4, "height" : 3.84, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/string-indexer-1.png" style="width:80%;"/><!-- {"left" : 2.52, "top" : 4.86, "height" : 5.83, "width" : 12.46} -->
 
 
 
@@ -550,10 +547,10 @@ model = str_indexer.fit(df_spark)
 indexed = model.transform(df_spark)
 
 ```
-<!-- {"left" : 0, "top" : 1.31, "height" : 2.03, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.52, "height" : 2.79, "width" : 14.09} -->
 
 
-<img src="../../assets/images/machine-learning/string-indexer-3.png" style="max-width:70%;"/><!-- {"left" : 0.68, "top" : 4.83, "height" : 2.6, "width" : 8.89} -->
+<img src="../../assets/images/machine-learning/string-indexer-3.png" style="max-width:70%;"/><!-- {"left" : 2.48, "top" : 6.47, "height" : 3.67, "width" : 12.55} -->
 
 
 
@@ -572,10 +569,10 @@ converted = converter.transform(indexed)
 converted.show()
 
 ```
-<!-- {"left" : 0, "top" : 1.7, "height" : 0.89, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.72, "height" : 1.16, "width" : 13.34} -->
 
 
-<img src="../../assets/images/machine-learning/reverse-string-indexer-2.png" style="max-width:80%;"/><!-- {"left" : 0.86, "top" : 3.62, "height" : 2.49, "width" : 8.53} -->
+<img src="../../assets/images/machine-learning/reverse-string-indexer-2.png" style="max-width:80%;"/><!-- {"left" : 2.15, "top" : 5.01, "height" : 3.85, "width" : 13.19} -->
 
 
 
@@ -596,7 +593,7 @@ Notes:
      - Note, only one bit is on
      - This is called  **ONE-HOT-Encoding**   
 
-<img src="../../assets/images/machine-learning/one-hot-encoding-2.png" style="max-width:60%;"/><!-- {"left" : 0.93, "top" : 5.78, "height" : 2.76, "width" : 8.39} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-2.png" style="max-width:60%;"/><!-- {"left" : 2.72, "top" : 7.07, "height" : 3.97, "width" : 12.05} -->
 
 
 
@@ -631,7 +628,7 @@ encoded.show()
 print(encoded.toPandas()) # print pandas df
 
 ```
-<!-- {"left" : 0, "top" : 1.29, "height" : 3.82, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 5.53, "width" : 14.85} -->
 
 
 
@@ -644,7 +641,7 @@ Notes:
 ## Hot Encoder Code (Python)
 
 
-<img src="../../assets/images/machine-learning/one-hot-encoding-3.png" style="max-width:70%;"/><!-- {"left" : 0.82, "top" : 1.94, "height" : 5.85, "width" : 8.99} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-3.png" style="max-width:70%;"/><!-- {"left" : 2.41, "top" : 2.73, "height" : 8.25, "width" : 12.68} -->
 
 
 Notes:
@@ -656,7 +653,7 @@ Notes:
 ## Understanding Hot Encoded Sparse Vectors
 
 
-<img src="../../assets/images/machine-learning/one-hot-encoding-4.png" style="max-width:60%;"/><!-- {"left" : 1.02, "top" : 1.9, "height" : 5.84, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-4.png" style="max-width:60%;"/><!-- {"left" : 3.19, "top" : 2.24, "height" : 7.92, "width" : 11.13} -->
 
 
 Notes:
@@ -686,7 +683,7 @@ Notes:
 | 35  | 86,000  |
 | 30  | 75,000  |
 
-<!-- {"left" : 3.36, "top" : 5.77, "height" : 2.41, "width" : 3.54, "columnwidth" : [1.3, 2.24]} -->
+<!-- {"left" : 6.98, "top" : 7.41, "height" : 2.41, "width" : 3.54, "columnwidth" : [1.3, 2.24]} -->
 
 Notes:
 
@@ -723,7 +720,7 @@ assembler = VectorAssembler(inputCols=["home_runs", "salary_in_k"], outputCol="f
 feature_vector = assembler.transform(df_spark)
 feature_vector.show()
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 2.1, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.42, "height" : 2.65, "width" : 12.96} -->
 
 
 ```text
@@ -740,7 +737,7 @@ feature_vector.show()
 +---------+-----------+-------------+
 
 ```
-<!-- {"left" : 0, "top" : 3.95, "height" : 3.18, "width" : 6.94} -->
+<!-- {"left" : 0.85, "top" : 5.34, "height" : 4.09, "width" : 8.92} -->
 
 
 Notes:
@@ -763,7 +760,7 @@ scaledData = scalerModel.transform(feature_vector)
 scaledData.show()
 
 ```
-<!-- {"left" : 0, "top" : 1.47, "height" : 2.9, "width" : 9.61} -->
+<!-- {"left" : 0.85, "top" : 2.22, "height" : 3.77, "width" : 12.48} -->
 
 
 ```text
@@ -780,7 +777,7 @@ scaledData.show()
 +---------+-----------+-------------+---------------------------------------+
 
 ```
-<!-- {"left" : 0, "top" : 4.92, "height" : 2.4, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 6.35, "height" : 3.22, "width" : 13.76} -->
 
 Notes:
 
@@ -788,7 +785,7 @@ Notes:
 
 ---
 
-## Scaling : MinMaxScaler
+## Scaling: MinMaxScaler
 
 
 MinMax Scaler allows you to scale data at arbitrary range - 0.0 to 1.0 is default or  0 to 100)
@@ -805,7 +802,7 @@ scaledData2 = scaledModel2.transform(feature_vector)
 scaledData2.show(10, False)
 
 ```
-<!-- {"left" : 0, "top" : 2.46, "height" : 2.9, "width" : 9.61} -->
+<!-- {"left" : 0.85, "top" : 3.21, "height" : 3.35, "width" : 11.11} -->
 
 ```text
 +---------+-----------+-------------+-----------------------------+
@@ -821,7 +818,7 @@ scaledData2.show(10, False)
 +---------+-----------+-------------+-----------------------------+
 
 ```
-<!-- {"left" : 0, "top" : 5.71, "height" : 2.76, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 6.92, "height" : 3.4, "width" : 12.64} -->
 
 Notes:
 
@@ -851,7 +848,8 @@ Notes:
 
 ## Spark ML Workflow
 
-<img src="../../assets/images/machine-learning/spark-ml-workflow.png" style="max-width:100%;"/><!-- {"left" : 1.05, "top" : 1.62, "height" : 5.83, "width" : 8.14} -->
+<img src="../../assets/images/machine-learning/spark-ml-workflow.png" style="max-width:100%;"/><!-- {"left" : 2.16, "top" : 3.28, "height" : 7.14, "width" : 13.18} -->
+
 
 
 
@@ -915,14 +913,14 @@ df5 = df4.word2Vec()
 # process df5
 
 ```
-<!-- {"left" : 0, "top" : 3.4, "height" : 4.21, "width" : 6.43} -->
+<!-- {"left" : 0.85, "top" : 4.68, "height" : 5.29, "width" : 8.08} -->
 
 Notes:
 
 ---
 ## Pipeline Example
 
-<img src="../../assets/images/machine-learning/pipeline-1.png" style="max-width:15%;"/><!-- {"left" : 4.17, "top" : 2.04, "height" : 4.98, "width" : 1.91} -->
+<img src="../../assets/images/machine-learning/pipeline-1.png" style="max-width:15%;"/><!-- {"left" : 7.23, "top" : 2.24, "height" : 7.91, "width" : 3.03} -->
 
 
 Notes:
@@ -937,12 +935,12 @@ Notes:
  *  **Dataframe:** Contains data
  *  **Transformer:** Converts one dataframe into another
 
-<img src="../../assets/images/machine-learning/transformers-1.png" style="width:50%;"/><!-- {"left" : 2.96, "top" : 2.05, "height" : 0.81, "width" : 4.32} -->
+<img src="../../assets/images/machine-learning/transformers-1.png" style="width:50%;"/><!-- {"left" : 2.96, "top" : 3.16, "height" : 1.18, "width" : 6.29} -->
 
  *  **Estimator:** fits the data in Dataframe to create a transformer.
      - E.g. a learning model is an estimator
 
-<img src="../../assets/images/machine-learning/transformers-2.png" style="width:50%;"/><!-- {"left" : 2.93, "top" : 3.99, "height" : 0.7, "width" : 4.4} -->
+<img src="../../assets/images/machine-learning/transformers-2.png" style="width:50%;"/><!-- {"left" : 2.96, "top" : 5.56, "height" : 1, "width" : 6.29} -->
 
 
  *  **Pipeline:** Contains multiple Transformers and Estimators
@@ -983,7 +981,7 @@ test_data = spark.read(...)
 predicted_data = model.predict(test_data)
 
 ```
-<!-- {"left" : 0, "top" : 3.83, "height" : 3.46, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 5.08, "height" : 4.97, "width" : 14.71} -->
 
 
 
@@ -1003,7 +1001,7 @@ Notes:
  * Pipeline executes 'transform' on first two and 'fit' on Logistic Regression
 
 
-<img src="../../assets/images/machine-learning/Session-Machine-Learning-in-Spark-Pipeline-Explained-0.png" style="width:70%;"/><!-- {"left" : 0.98, "top" : 4.18, "height" : 2.12, "width" : 8.29} -->
+<img src="../../assets/images/machine-learning/Session-Machine-Learning-in-Spark-Pipeline-Explained-0.png" style="width:70%;"/><!-- {"left" : 2.38, "top" : 5.75, "height" : 3.26, "width" : 12.73} -->
 
 Notes:
 

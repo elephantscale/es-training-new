@@ -16,7 +16,7 @@ Specific Sections are covered in other slides.
   * It will be fun!
   * When you start, you should see this
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-startup.png" alt="XXX image missing" style="width:55%;"/><!-- {"left" : 2.45, "top" : 4.04, "height" : 3.53, "width" : 5.35} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-startup.png" alt="XXX image missing" style="width:55%;"/><!-- {"left" : 5, "top" : 5.67, "height" : 4.95, "width" : 7.5} -->
 
 
 Notes:
@@ -33,7 +33,7 @@ Notes:
 - Step 5: Run
 - Step 6: Inspect the results
 
-<img src="../../assets/images/deep-learning/playground-explained.png" alt="playground-explained.png" style="width:60%;"/><!-- {"left" : 1.59, "top" : 4.56, "height" : 3.17, "width" : 7.08} -->
+<img src="../../assets/images/deep-learning/playground-explained.png" alt="playground-explained.png" style="width:60%;"/><!-- {"left" : 4.07, "top" : 6.67, "height" : 4.19, "width" : 9.36} -->
 
 
 
@@ -45,7 +45,7 @@ Notes:
   * We will start out with **no** hidden layers
   * Click the "minus" icon to get to no hidden layers
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-nohidden.png" alt="XXX image missing" style="width:70%;"/><!-- {"left" : 1.12, "top" : 3.14, "height" : 4.15, "width" : 8.01} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-nohidden.png" alt="XXX image missing" style="width:70%;"/><!-- {"left" : 4.01, "top" : 5.05, "height" : 4.91, "width" : 9.48} -->
 
 
 Notes:
@@ -58,19 +58,19 @@ Notes:
 
 ## Linear Regression: Setup
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-regression-dropdown.png" alt="playground-regression-dropdown.png" style="width:15%;float:right;"/><!-- {"left" : 6.96, "top" : 1.06, "height" : 1.48, "width" : 2.48} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-regression-dropdown.png" alt="playground-regression-dropdown.png" style="width:15%;float:right;"/><!-- {"left" : 13.38, "top" : 1.95, "height" : 2.25, "width" : 3.76} -->
 
   * Click on the dropdown at the upper right, select 'Regression'
 
 <br clear="all" />
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-lregression-1.png" alt="playground-dataset-lregression-1.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 7.17, "top" : 2.96, "height" : 2.14, "width" : 2.06} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-lregression-1.png" alt="playground-dataset-lregression-1.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 13.7, "top" : 4.62, "height" : 3.25, "width" : 3.13} -->
 
   * Select the dataset in lower left
 
 <br clear="all" />
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-lowest-learning-rate.png" alt="playground-lowest-learning-rate.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 6.97, "top" : 5.52, "height" : 1.21, "width" : 2.26} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-lowest-learning-rate.png" alt="playground-lowest-learning-rate.png" style="width:15%;float:right;clear:both;"/><!-- {"left" : 13.09, "top" : 8.01, "height" : 2.02, "width" : 3.76} -->
 
 
   * Select the **lowest** setting of Learning Rate
@@ -82,7 +82,7 @@ Notes:
 ---
 ## Linear Regression: Parameters
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-lregression-3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/><!-- {"left" : 0.7, "top" : 1.22, "height" : 0.82, "width" : 8.85} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-lregression-3.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%"/><!-- {"left" : 2.11, "top" : 1.89, "height" : 1.23, "width" : 13.28} -->
 
 
   * Learning Rate
@@ -103,10 +103,9 @@ Notes:
 ## Linear Regression: Run!
 
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-controls-1.png" alt="playground-controls-1.png" style="width:20%;float:right;" /><!-- {"left" : 7.54, "top" : 1.12, "height" : 1.63, "width" : 2.54} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-controls-1.png" alt="playground-controls-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.18, "top" : 1.89, "height" : 2.53, "width" : 3.94} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-output-loss-curve.png" alt="playground-output-loss-curve.png" style="width:20%;float:right;clear:both;" /><!-- {"left" : 6.87, "top" : 2.73, "height" : 1.07, "width" : 3.22} -->
-
+<img src="../../assets/images/deep-learning/3rd-party/playground-output-loss-curve.png" alt="playground-output-loss-curve.png" style="width:20%;float:right;clear:both;" /><!-- {"left" : 12.15, "top" : 4.39, "height" : 1.66, "width" : 4.99} -->
 
   * Let's try pressing the PLAY Button
 
@@ -129,9 +128,9 @@ Notes:
 ---
 ## Linear Regression: Adjust the Learning Rate
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-controls-1.png" alt="XXX image missing" style="width:20%;float:right;" /><!-- {"left" : 7.37, "top" : 1.28, "height" : 1.78, "width" : 2.77} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-controls-1.png" alt="XXX image missing" style="width:20%;float:right;" /><!-- {"left" : 13.19, "top" : 1.89, "height" : 2.65, "width" : 4.13} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-output-loss-nan.png" alt="XXX image missing" style="width:20%;float:right;clear:both;" /><!-- {"left" : 7, "top" : 3.21, "height" : 1.37, "width" : 2.77} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-output-loss-nan.png" alt="XXX image missing" style="width:20%;float:right;clear:both;" /><!-- {"left" : 13.06, "top" : 4.77, "height" : 2.04, "width" : 4.13} -->
 
   * Hit the reset button to the left of "play"
 
@@ -154,7 +153,7 @@ Notes:
 
 ## Lab Review
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 5.96, "top" : 1.6, "height" : 2.71, "width" : 4.06} -->
+<img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 11.15, "top" : 1.89, "height" : 4.18, "width" : 6.26} -->
 
 
  * What is the impact of __'learning rate'__
@@ -171,9 +170,9 @@ Notes:
 
 ## Linear Classification: Setup
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-params.png" alt="XXX image missing" style="background:white;width:60%;" width="50%"/><!-- {"left" : 0.32, "top" : 1.18, "height" : 1.09, "width" : 9.61} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-params.png" alt="XXX image missing" style="background:white;width:60%;" width="50%"/><!-- {"left" : 1.25, "top" : 2.05, "height" : 1.7, "width" : 14.99} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-1.png" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 6.82, "top" : 2.68, "height" : 3.34, "width" : 3.25} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-1.png" alt="XXX image missing" style="width:20%;float:right;"/><!-- {"left" : 12.64, "top" : 4.2, "height" : 4.59, "width" : 4.47} -->
 
   * Parameters
     - Select 'Classification' on the dropdown at the upper right
@@ -193,7 +192,7 @@ Notes:
 ---
 ## Linear Classification: Run
 
-  <img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-2.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 6.72, "top" : 1.24, "height" : 3.39, "width" : 3.36} -->
+  <img src="../../assets/images/deep-learning/3rd-party/playground-dataset-linear-2.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 12.1, "top" : 1.89, "height" : 4.97, "width" : 4.92} -->
 
   * The separated dataset might look like below
 
@@ -210,7 +209,7 @@ Notes:
 
 ## Lab Review
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 5.98, "top" : 1.1, "height" : 2.71, "width" : 4.06} -->
+<img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 11.47, "top" : 1.89, "height" : 3.96, "width" : 5.93} -->
 
 
  * Why didn't we need hidden layers to converge on a solution?
@@ -227,7 +226,7 @@ Notes:
 
 ## Circle Dataset
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-1.png" alt="playground-dataset-circle-1.png" style="width:30%;float:right;"/><!-- {"left" : 6.94, "top" : 1.19, "height" : 3.1, "width" : 3.08} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-1.png" alt="playground-dataset-circle-1.png" style="width:30%;float:right;"/> <!-- {"left" : 12.36, "top" : 1.65, "height" : 4.73, "width" : 4.7} -->
 
 * Select the circle dataset
 
@@ -238,7 +237,8 @@ Notes:
 * Solution-1: Include other features 
     - **`x1 + x2 + x1² +  x2²`**
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-3.png"  style="width:55%;"/><!-- {"left" : 6.94, "top" : 1.19, "height" : 3.1, "width" : 3.08} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-3.png"  style="width:55%;"/> <!-- {"left" : 11, "top" : 6.89, "height" : 2.85, "width" : 6.06} -->
+
 
 Notes:
 
@@ -246,7 +246,7 @@ Notes:
 
 ## Circle Dataset With Hidden Layers
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-1.png" alt="playground-dataset-circle-1.png" style="width:25%;float:right;"/><!-- {"left" : 7.65, "top" : 1, "height" : 2.47, "width" : 2.46} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-1.png" alt="playground-dataset-circle-1.png" style="width:25%;float:right;"/><!-- {"left" : 12.36, "top" : 1.65, "height" : 4.73, "width" : 4.7} -->
 
 * Select the circle dataset
 * Select only **`X1 and X2`** as features
@@ -256,7 +256,9 @@ Notes:
 - Can you solve it with only one hidden layer?
 - If not, add another hidden layer
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-4.png" alt="playground-dataset-circle-1.png" style="width:60%;"/><!-- {"left" : 7.65, "top" : 1, "height" : 2.47, "width" : 2.46} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-circle-4.png" alt="playground-dataset-circle-1.png" style="width:60%;"/> <!-- {"left" : 11, "top" : 6.89, "height" : 2.85, "width" : 6.06} -->
+
+
 
 Notes:
 
@@ -264,19 +266,19 @@ Notes:
 
 ## Four Square Dataset
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-fourposter-1.png" alt="XXX image missing" style="width:25%;float:right;"/><!-- {"left" : 6.44, "top" : 1.16, "height" : 3.58, "width" : 3.59} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-fourposter-1.png" alt="XXX image missing" style="width:25%;float:right;"/><!-- {"left" : 12.13, "top" : 1.89, "height" : 4.76, "width" : 4.77} -->
 
 * Set the Four-Square dataset
 
 * Try setting the input to **`X1 . X2`** with no hidden layers
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-foursquare-2.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 6.44, "top" : 1.16, "height" : 3.58, "width" : 3.59} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-foursquare-2.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 10.19, "top" : 6.94, "height" : 3.41, "width" : 6.71} -->
 
 ---
 
 ## Four Square Dataset With Hidden Layers
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-fourposter-1.png" alt="XXX image missing" style="width:25%;float:right;"/><!-- {"left" : 6.44, "top" : 1.16, "height" : 3.58, "width" : 3.59} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-fourposter-1.png" alt="XXX image missing" style="width:25%;float:right;"/><!-- {"left" : 11.9, "top" : 1.89, "height" : 5.14, "width" : 5.15} -->
 
 * Solve the **Four Square** using hidden layers
 
@@ -297,8 +299,8 @@ Possible solutions:
 
 ## Spiral Dataset
 
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-spiral-2.png" alt="XXX image missing" style="width:23%;float:right;"/><!-- {"left" : 6.05, "top" : 1.1, "height" : 4.06, "width" : 4.02} -->
-<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-spiral-solution-1.png" alt="playground-dataset-spiral-solution-1.png" style="width:23%;float:right;clear:both;"/><!-- {"left" : 5.65, "top" : 1.16, "height" : 5.55, "width" : 4.37} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-spiral-2.png" alt="XXX image missing" style="width:23%;float:right;"/> <!-- {"left" : 12.78, "top" : 7.3, "height" : 4.41, "width" : 4.37} -->
+<img src="../../assets/images/deep-learning/3rd-party/playground-dataset-spiral-solution-1.png" alt="playground-dataset-spiral-solution-1.png" style="width:23%;float:right;clear:both;"/> <!-- {"left" : 12.78, "top" : 1.61, "height" : 5.55, "width" : 4.37} -->
 
 * Set the Spiral dataset
 
@@ -310,7 +312,7 @@ Possible solutions:
 
 * Can you get this result?
 
-* **Instructor** : Offer hints from the notes section
+* **Instructor:** Offer hints from the notes section
 
 Notes:
 
@@ -323,8 +325,7 @@ Try these
 
 ## Lab Review
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 5.9, "top" : 1.49, "height" : 2.71, "width" : 4.06} -->
-
+<img src="../../assets/images/icons/quiz-icon.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 10.5, "top" : 1.89, "height" : 4.54, "width" : 6.8} -->
 
 * What's the minimum number of hidden layers required to correctly classify all the test data?
 

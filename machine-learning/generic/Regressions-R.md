@@ -27,7 +27,7 @@ Notes:
 
  * We will use Linear Regression to predict tips
 
-<img src="../../assets/images/machine-learning/Calculation-Using-Linear-Regression-0.png" style="width:50%;float:left"/><!-- {"left" : 4.69, "top" : 3.14, "height" : 3.96, "width" : 5.25} -->
+<img src="../../assets/images/machine-learning/Calculation-Using-Linear-Regression-0.png" style="width:50%;float:left"/><!-- {"left" : 7.75, "top" : 4.21, "height" : 6.11, "width" : 8.1} -->
 
 
 
@@ -43,7 +43,7 @@ Notes:
 | 8      	| 15       	| 2       	|
 | 9      	| 25       	| 3       	|
 | 10     	| 35       	| 4       	|
-<!-- {"left" : 0.33, "top" : 2.38, "height" : 5.5, "width" : 4.1, "columnwidth" : [1.23, 1.37, 1.37]} -->
+<!-- {"left" : 1.65, "top" : 4.35, "height" :1, "width" : 5.51} -->
 
 Notes:
 
@@ -67,7 +67,7 @@ Data : dataframe
 Subset : optional specify subset of observations in fitting process
 
 ```
-<!-- {"left" : 0, "top" : 2.51, "height" : 1.37, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.54, "height" : 2, "width" : 14.94} -->
 
 ```text
 # sample usage:
@@ -80,7 +80,7 @@ tip.lm = lm (tip ~ bill, data=tip_data)
 summary(tip.lm)
 
 ```
-<!-- {"left" : 0, "top" : 4.83, "height" : 2.2, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 5.86, "height" : 3.21, "width" : 14.94} -->
 
 
 Notes:
@@ -115,7 +115,7 @@ Multiple R-squared:  0.9067,	Adjusted R-squared:  0.8951
 F-statistic: 77.76 on 1 and 8 DF,  p-value: 2.153e-05
 
 ```
-<!-- {"left" : 0, "top" : 1.18, "height" : 3.25, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.43, "height" : 5.13, "width" : 16.18} -->
 
 Notes:
 
@@ -140,7 +140,7 @@ Coefficients:
 bill         0.24286    0.02754   8.818 2.15e-05 ***
 
 ```
-<!-- {"left" : 0, "top" : 1.2, "height" : 2.2, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.45, "height" : 3.08, "width" : 14.36} -->
 
 <br/>
 
@@ -168,7 +168,7 @@ Coefficients:
 bill         0.24286    0.02754   8.818 2.15e-05 ***
 
 ```
-<!-- {"left" : 0, "top" : 1.45, "height" : 2.05, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.53, "height" : 2.94, "width" : 14.71} -->
 
 <br/>
 
@@ -197,7 +197,7 @@ bill         0.24286    0.02754   8.818 2.15e-05 ***
 
 
 ```
-<!-- {"left" : 0, "top" : 1.18, "height" : 2.72, "width" : 8.66} -->
+<!-- {"left" : 0.85, "top" : 2.6, "height" : 3.45, "width" : 10.97} -->
 
 <br/>
 <br/>
@@ -229,7 +229,7 @@ Signif. codes:
 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 ```
-<!-- {"left" : 0, "top" : 1.45, "height" : 2.9, "width" : 9.44} -->
+<!-- {"left" : 0.85, "top" : 2.32, "height" : 3.71, "width" : 12.08} -->
 
 <br/>
 <br/>
@@ -258,7 +258,7 @@ Multiple R-squared:  0.9067,	Adjusted R-squared:  0.8951
 F-statistic: 77.76 on 1 and 8 DF,  p-value: 2.153e-05
 
 ```
-<!-- {"left" : 0, "top" : 1.24, "height" : 2.24, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.28, "height" : 3.13, "width" : 14.34} -->
 
 <br/>
 <br/>
@@ -293,10 +293,10 @@ tip.lm = lm (tip ~ bill, data=tip_data)
 abline(tip.lm, col='red')  # red line
 
 ```
-<!-- {"left" : 0, "top" : 1.49, "height" : 1.47, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.67, "height" : 1.97, "width" : 13.7} -->
 
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/><!-- {"left" : 2.06, "top" : 3.97, "height" : 4.22, "width" : 6.12} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png" style="width:60%"/><!-- {"left" : 4.28, "top" : 5.15, "height" : 6.16, "width" : 8.93} -->
 
 
 Notes:
@@ -325,9 +325,8 @@ tip.for.100 = a * 100 + b
 # 22.88571
 
 ```
-<!-- {"left" : 0, "top" : 1.4, "height" : 3.42, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.11, "height" : 4.58, "width" : 13.72} -->
 
-<br/>
 <br/>
 <br/>
 
@@ -360,7 +359,7 @@ print(newdata)
 2  200 47.17143
 
 ```
-<!-- {"left" : 0, "top" : 1.45, "height" : 3.91, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.45, "height" : 5.36, "width" : 14.05} -->
 
 <br/>
 <br/>
@@ -394,7 +393,7 @@ predict(tip.lm, newdata, interval='confidence', level=0.95)
 2 47.17143   36.63191    57.71095   #   bill = $200
 
 ```
-<!-- {"left" : 0, "top" : 1.21, "height" : 3.18, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 4.2, "width" : 13.53} -->
 
 <br/>
 <br/>
@@ -454,7 +453,7 @@ newdata$est_tip = predict(tip.lm, newdata)
 View(newdata)
 
 ```
-<!-- {"left" : 0, "top" : 1.37, "height" : 6.78, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.19, "height" : 9.05, "width" : 13.69} -->
 
 
 Notes:
@@ -599,7 +598,7 @@ Notes:
 | inverse.gaussian 	| inverse.gaussian 	| 1/mu^2                 	|
 | quasi            	| user-defined     	| user-defined           	|
 
-<!-- {"left" : 0.25, "top" : 4.55, "height" : 3.5, "width" : 9.75} -->
+<!-- {"left" : 1.35, "top" : 6.67, "height" : 1, "width" : 14.81} -->
 
 Notes:
 
@@ -622,9 +621,9 @@ plot(x, y, xlab="X", ylab="P(Y=1)")
 title(main="Sigmoid (Logistic) Function")
 
 ```
-<!-- {"left" : 0, "top" : 1.27, "height" : 2.32, "width" : 7.78} -->
+<!-- {"left" : 0.85, "top" : 2.45, "height" : 2.89, "width" : 9.69} -->
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-R--Sigmoid-Curve-S-Curve--0.png" style="width:60%" /><!-- {"left" : 1.66, "top" : 3.95, "height" : 4.14, "width" : 6.32} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-R--Sigmoid-Curve-S-Curve--0.png" style="width:60%" /><!-- {"left" : 4.43, "top" : 5.71, "height" : 5.66, "width" : 8.65} -->
 
 
 Notes:
@@ -665,7 +664,7 @@ print(mydata)
 # ...
 
 ```
-<!-- {"left" : 0, "top" : 1.46, "height" : 4.58, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 7.13, "width" : 15.95} -->
 
 Notes:
 
@@ -693,7 +692,7 @@ print(newdata)
 # 810         0.9355370
 
 ```
-<!-- {"left" : 0, "top" : 1.22, "height" : 2.64, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.28, "height" : 3.74, "width" : 14.54} -->
 
 <br/>
 <br/>
@@ -728,9 +727,9 @@ plot(sorted.data$score, sorted.data$approved)
 lines(sorted.data$score, sorted.data$prob, col="red") # red line
 
 ```
-<!-- {"left" : 0, "top" : 1.2, "height" : 2.11, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.42, "height" : 3.07, "width" : 14.92} -->
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-0.png" style="width:50%"/><!-- {"left" : 1.8, "top" : 4.06, "height" : 4, "width" : 6.66} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-0.png" style="width:50%"/><!-- {"left" : 3.92, "top" : 5.76, "height" : 5.8, "width" : 9.65} -->
 
 
 Notes:
@@ -753,10 +752,10 @@ library(popbio)
 logi.hist.plot(mydata$score, mydata$approved, boxp=FALSE)
 
 ```
-<!-- {"left" : 0, "top" : 1.2, "height" : 1.41, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.52, "height" : 2.2, "width" : 16.01} -->
 
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-With-PopBio-Package-0.png" style="width:65%"/><!-- {"left" : 1.77, "top" : 4.41, "height" : 3.75, "width" : 6.71} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-R-Plotting-GLM-With-PopBio-Package-0.png" style="width:65%"/><!-- {"left" : 3.99, "top" : 5.71, "height" : 5.32, "width" : 9.52} -->
 
 
 Notes:
@@ -788,7 +787,7 @@ View(newdata)
 print(newdata)
 
 ```
-<!-- {"left" : 0, "top" : 1.32, "height" : 2.99, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.53, "height" : 4.5, "width" : 15.43} -->
 
 Notes:
 
@@ -833,7 +832,7 @@ mylogit = glm (approved ~ fico + salary + debt,
 summary(mylogit)
 
 ```
-<!-- {"left" : 0, "top" : 1.35, "height" : 1.97, "width" : 7.11} -->
+<!-- {"left" : 0.85, "top" : 2.39, "height" : 2.61, "width" : 9.43} -->
 
 
 | fico 	| salary 	| debt 	| approv ed 	|
@@ -842,10 +841,10 @@ summary(mylogit)
 | 760  	| 50000  	| 5000 	| 1         	|
 | 700  	| 80000  	| 5000 	| 1         	|
 
-<!-- {"left" : 2.4, "top" : 3.77, "height" : 2.11, "width" : 5.06, "columnwidth" : [1.22, 1.41, 1.41, 1.41]} -->
+<!-- {"left" : 2.97, "top" : 5.33, "height" : 2.11, "width" : 11.56} -->
 
 
-<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:55%"/><!-- {"left" : 2.59, "top" : 6.3, "height" : 2.11, "width" : 5.06} -->
+<img src="../../assets/images/machine-learning/Multiple-Logistic-Regression-0.png" style="width:55%"/><!-- {"left" : 4.55, "top" : 7.88, "height" : 3.5, "width" : 8.4} -->
 
 
 
@@ -874,7 +873,7 @@ debt             -0.005716      21.377501       0        1
 
 
 ```
-<!-- {"left" : 0, "top" : 1.18, "height" : 2.31, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.53, "height" : 3.49, "width" : 15.49} -->
 
 
 <br/>
@@ -903,7 +902,7 @@ Notes:
  -303.978784284    0.453918542    0.001060338   -0.005715547
 
 ```
-<!-- {"left" : 0, "top" : 1.54, "height" : 1.4, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.87, "height" : 1.96, "width" : 14.36} -->
 
 <br/>
 
@@ -938,7 +937,7 @@ Notes:
 
      - So we need to turn it into a  **'factor** ' , so GLM treats it properly
 
-<img src="../../assets/images/machine-learning/picture1.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 4.05, "height" : 3.42, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/picture1.png" style="width:70%"/><!-- {"left" : 3.31, "top" : 5.68, "height" : 4.53, "width" : 10.88} -->
 
 
 
@@ -976,7 +975,7 @@ Mean   :0.3175   Mean   :587.7   Mean   :3.390   Mean   :2.485   4: 67
 Max.   :1.0000   Max.   :800.0   Max.   :4.000   Max.   :4.000
 
 ```
-<!-- {"left" : 0, "top" : 1.24, "height" : 4.82, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.32, "height" : 7.32, "width" : 15.57} -->
 
 
 
@@ -997,7 +996,7 @@ Notes:
                 data=admission, family = "binomial")
 
 ```
-<!-- {"left" : 0, "top" : 1.11, "height" : 1.89, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.45, "height" : 2.39, "width" : 12.96} -->
 
 <br/>
 
@@ -1054,7 +1053,7 @@ Notes:
 
  * Regular text
 
- * Pay  **special attention** to this
+ * Pay **special attention** to this
 
 Notes:
 

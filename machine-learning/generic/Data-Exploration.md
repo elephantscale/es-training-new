@@ -26,7 +26,7 @@ Notes:
 | Binary      | Just two values, binary 0/1 or true/false                      | Transaction fraud or not                |
 | Ordinal     | Categorical data, but with ordering                            | Grades: A, B, C, D <br/> A > B > C > D        |
 
-<!-- {"left" : 0.25, "top" : 1.45, "height" : 4.05, "width" : 9.75} -->
+<!-- {"left" : 0.49, "top" : 2.5, "height" : 1, "width" : 16.52} -->
 
 Notes:
 
@@ -34,7 +34,7 @@ Notes:
 
 ## Structured Data
 
- <img src="../../assets/images/machine-learning/Data-Exploration-Structured-Data.png" alt="Data-Exploration-Structured-Data.png" style="width:80%;"/><!-- {"left" : 0.32, "top" : 1.83, "height" : 5.98, "width" : 9.6} -->
+ <img src="../../assets/images/machine-learning/Data-Exploration-Structured-Data.png" alt="Data-Exploration-Structured-Data.png" style="width:80%;"/><!-- {"left" : 2.17, "top" : 2.76, "height" : 8.2, "width" : 13.16} -->
 
 
 Notes:
@@ -76,7 +76,7 @@ Notes:
 | Mean          | Sum (values) / total number of samples          |
 | Weighted Mean | Sum(values * weights) / total number of samples |
 
-<!-- {"left" : 0.25, "top" : 1.08, "height" : 1.69, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 1.89, "height" : 1.5, "width" : 9.75} -->
 
 
 * [30k, 35k, 22k, 70k, 50k, 55k, 45k, 40k, 25k, 42k, 60k, 65k]
@@ -85,10 +85,10 @@ Notes:
  = 44.9k
 * Mean is denoted by  x&#772;
 
-<img src="../../assets/images/formulas-equations/mean-1.png"  style="width:50%;float:left"/><!-- {"left" : 1.61, "top" : 5.35, "height" : 2.2, "width" : 7.03} -->
+<img src="../../assets/images/formulas-equations/mean-1.png"  style="width:50%;float:left"/><!-- {"left" : 9.33, "top" : 6.9, "height" : 2.45, "width" : 7.82} -->
 
 
-<img src="../../assets/images/formulas-equations/mean-weighted-2.png" style="width:40%;float:right;"/><!-- {"left" : 2.51, "top" : 7.68, "height" : 1.09, "width" : 5.23} -->
+<img src="../../assets/images/formulas-equations/mean-weighted-2.png" style="width:40%;float:right;"/><!-- {"left" : 9.84, "top" : 9.91, "height" : 1.42, "width" : 6.8} -->
 
 
 
@@ -107,7 +107,7 @@ Notes:
 | Outliers                          | Extreme values. These influence plain mean. <br/>e.g. When Bill Gates walks into a bar, everyone's net worth goes up by few 100s of millions!                                                                                                                                                                                                                                    |
 | Trimmed Mean       Truncated Mean | Take mean, after dropping a number of extreme values from the bottom and top. <br/>   10% Trimmed Mean drops 10% of largest and 10% of smallest values and calculates mean in remaining 80% of data. <br/> Used in competition scoring, to avoid one judge influencing the outcome.<br/> Example:  [ 5,  6, 7,  8,  10] <br/>Mean = sum(5+6+7+8+10) / 5 = 7.2 <br/>Trimmed Mean = sum (6,7,8) / 3 = 7 |
 
-<!-- {"left" : 0.25, "top" : 1.3, "height" : 2.63, "width" : 9.75} -->
+<!-- {"left" : 1.14, "top" : 2.5, "height" :1, "width" : 15.22} -->
 
 
 Notes:
@@ -180,7 +180,7 @@ http://www.cabrillo.edu/~evenable/ch03.pdf
   = (50 + 55) / 2   
   = 52.5
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers.png" alt="Data-Exploration-Median-Mean-Outliers.png" style="max-width:80%;"/><!-- {"left" : 0.26, "top" : 3.11, "height" : 1.84, "width" : 7.03} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers.png" alt="Data-Exploration-Median-Mean-Outliers.png" style="max-width:80%;"/><!-- {"left" : 0.85, "top" : 4.25, "height" : 2.65, "width" : 10.12} -->
 
 
 Notes:
@@ -197,9 +197,9 @@ Notes:
   = 91.89
 * Median = 55
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="max-width:80%;"/><!-- {"left" : 0.3, "top" : 3.54, "height" : 1.62, "width" : 5.9} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="max-width:80%;"/><!-- {"left" : 10.15, "top" : 5.73, "height" : 1.97, "width" : 7.18} -->
 
-
+<br/>
 <br/>
 
 * So **median** is less influenced by outliers
@@ -232,7 +232,7 @@ mean(a, trim=0.1)
 # 53.375
 
 ```
-<!-- {"left" : 0, "top" : 1.32, "height" : 4.24, "width" : 8.94} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 5.26, "width" : 11.09} -->
 
 
 Notes:
@@ -261,7 +261,7 @@ stats.trim_mean(a,0.1)) # 10%
 np.median(a)
 # 52.5*  
 ```
-<!-- {"left" : 0, "top" : 1.46, "height" : 4.24, "width" : 8.28} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 5.49, "width" : 10.73} -->
 
 Notes:
 
@@ -284,7 +284,7 @@ Notes:
 
  * City2 data is more widely 'dispersed' than City1
 
-<img src="../../assets/images/machine-learning/standard-deviation-1.png" style="max-width:80%;"/><!-- {"left" : 0.55, "top" : 4.61, "height" : 2.83, "width" : 9.15} -->
+<img src="../../assets/images/machine-learning/standard-deviation-1.png" style="max-width:80%;"/><!-- {"left" : 2.72, "top" : 7.49, "height" : 3.73, "width" : 12.06} -->
 
 
 Notes:
@@ -304,7 +304,7 @@ Notes:
 | Percentile | The value such that P percent of the values take on this value or less and (100-P) percent take on this value or more | quantile |
 | Interquartile range | The difference between the 75th percentile and the 25th percentile | IQR |
 
-<!-- {"left" : 0.25, "top" : 1.3, "height" : 6.68, "width" : 9.75} -->
+<!-- {"left" : 0.72, "top" : 2, "height" : 1, "width" : 16.06} -->
 
 Notes:
 
@@ -322,7 +322,7 @@ Notes:
     - Add them all up
     - Divide by number of observations (N)
 
-<img src="../../assets/images/formulas-equations/variance-1.png"  style="width:40%;"/><!-- {"left" : 5.51, "top" : 4.59, "height" : 1.19, "width" : 4.14} -->
+<img src="../../assets/images/formulas-equations/variance-1.png"  style="width:40%;"/><!-- {"left" : 9.42, "top" : 3.92, "height" : 2.23, "width" : 7.77} -->
 
 
 
@@ -343,11 +343,11 @@ Notes:
 
 **Variance & standard deviation** ( μ is mean )  
 
-<img src="../../assets/images/formulas-equations/variance-1.png"  style="width:40%;"/><!-- {"left" : 1.9, "top" : 3.86, "height" : 1.85, "width" : 6.44} -->
+<img src="../../assets/images/formulas-equations/variance-1.png"  style="width:40%;"/><!-- {"left" : 4.86, "top" : 6.47, "height" : 2.24, "width" : 7.78} -->
 
 
 
-<img src="../../assets/images/formulas-equations/standard-deviation-1.png"  style="width:40%;"/><!-- {"left" : 1.4, "top" : 6.08, "height" : 1.69, "width" : 7.44} -->
+<img src="../../assets/images/formulas-equations/standard-deviation-1.png"  style="width:40%;"/><!-- {"left" : 4.25, "top" : 9.15, "height" : 2.04, "width" : 8.99} -->
 
 
 
@@ -356,9 +356,9 @@ Notes:
 
 ---
 
-## Variability  / Dispersion
+## Variability / Dispersion
 
-<img src="../../assets/images/machine-learning/standard-deviation-2.png" style="max-width:80%;"/><!-- {"left" : 0.69, "top" : 3.32, "height" : 2.44, "width" : 8.87} -->
+<img src="../../assets/images/machine-learning/standard-deviation-2.png" style="max-width:80%;"/><!-- {"left" : 2.14, "top" : 4.32, "height" : 3.64, "width" : 13.22} -->
 
 
 ---
@@ -387,7 +387,7 @@ sd(city1)
 sd(city2)
 # 25.33114
 ```
-<!-- {"left" : 0, "top" : 1.4, "height" : 5.56, "width" : 5.94} -->
+<!-- {"left" : 0.85, "top" : 2.34, "height" : 8.16, "width" : 8.72} -->
 
 Notes:
 
@@ -397,6 +397,7 @@ Notes:
 ---
 
 ## Standard Deviation : Sample Code (Python)
+
 ```python
 import numpy as np
 import pandas as pd
@@ -417,7 +418,7 @@ np.var(city2)    # 550.0 <- much larger than var(city1)
 np.std(city1)    # 7.34846922835
 np.std(city2)    # 23.4520787991 <-- larger than sd(city1)  
 ```
-<!-- {"left" : 0, "top" : 1.34, "height" : 4.84, "width" : 10.05} -->
+<!-- {"left" : 0.85, "top" : 2.73, "height" : 6.61, "width" : 13.72} -->
 
  Notes:
 
@@ -436,7 +437,7 @@ np.std(city2)    # 23.4520787991 <-- larger than sd(city1)
  * Third quartile @ 75% mark = Q3 = 75th percentile
  * IQR = distance between Q3 and Q1
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-0.png" alt="Data-Exploration-Quartiles-0.png" style="width:30%;"/><!-- {"left" : 2.72, "top" : 4.65, "height" : 3.98, "width" : 4.82} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-0.png" alt="Data-Exploration-Quartiles-0.png" style="width:30%;"/><!-- {"left" : 9.35, "top" : 5.43, "height" : 6.33, "width" : 7.67} -->
 
 
 Notes:
@@ -453,7 +454,7 @@ Notes:
  * Approximately 25% of data is below Q1
  75% is more than Q1
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-1.png" alt="Data-Exploration-Quartiles-1.png" style="width:100%;"/><!-- {"left" : 0.83, "top" : 3.78, "height" : 2.09, "width" : 8.59} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-1.png" alt="Data-Exploration-Quartiles-1.png" style="width:100%;"/><!-- {"left" : 1.83, "top" : 5.72, "height" : 3.37, "width" : 13.83} -->
 
 
 
@@ -485,7 +486,7 @@ IQR(a)
 # 21
 
 ```
-<!-- {"left" : 0, "top" : 1.29, "height" : 4.5, "width" : 8.94} -->
+<!-- {"left" : 0.85, "top" : 2.51, "height" : 6.07, "width" : 12.05} -->
 
 
 Notes:
@@ -508,7 +509,7 @@ print (np.percentile(a, 20))
 print (np.percentile(a, [25, 50, 75]))
 # [ 42.75 52.5  63.75]  
 ```
-<!-- {"left" : 0, "top" : 1.4, "height" : 3.18, "width" : 8.28} -->
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 4.84, "width" : 12.6} -->
 
 Notes:
 
@@ -527,7 +528,7 @@ Notes:
 
      - 5% of data above this point
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Percentiles-0.png" alt="Data-Exploration-Percentiles-0.png" style="width:80%;"/><!-- {"left" : 0.25, "top" : 4.59, "height" : 2.45, "width" : 9.74} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Percentiles-0.png" alt="Data-Exploration-Percentiles-0.png" style="width:80%;"/><!-- {"left" : 2.45, "top" : 6.81, "height" : 3.17, "width" : 12.6} -->
 
 
 Notes:
@@ -580,7 +581,7 @@ ecdf(income)(52)
 
 
 ```
-<!-- {"left" : 0, "top" : 1.48, "height" : 2.98, "width" : 9.78} -->
+<!-- {"left" : 0.85, "top" : 2.59, "height" : 4.73, "width" : 15.52} -->
 
 
 Notes:
@@ -591,6 +592,7 @@ Notes:
 ---
 
 ## Percentiles Sample Code (Python)
+
 ```python
 import numpy as np
 a = np.array([5,40,42,45,50,55,60,65,70,400])
@@ -603,7 +605,7 @@ print (np.percentile(a, 20))
 print (np.percentile(a, [25, 50, 75]))
 # [ 42.75 52.5  63.75]  
 ```
-<!-- {"left" : 0, "top" : 1.26, "height" : 2.92, "width" : 8.28} -->
+<!-- {"left" : 0.85, "top" : 2.43, "height" : 4.23, "width" : 11.98} -->
 
 Notes:
 
@@ -620,10 +622,10 @@ Notes:
 ---
 ## Covariance
 
- <img src="../../assets/images/machine-learning/Data-Exploration-Covariance-0.png" alt="Data-Exploration-Covariance-0.png" style="width:40%;float:right;"/><!-- {"left" : 5.39, "top" : 1.84, "height" : 3.85, "width" : 4.6} -->
+ <img src="../../assets/images/machine-learning/Data-Exploration-Covariance-0.png" alt="Data-Exploration-Covariance-0.png" style="width:40%;float:right;"/><!-- {"left" : 10.77, "top" : 1.89, "height" : 5.49, "width" : 6.56} -->
 
 
-* Variance,  and Standard Deviation measures the data dispersion in a SINGLE variable
+* Variance, and Standard Deviation measures the data dispersion in a SINGLE variable
 
 * How can we tell if two variables  X & Y are related
 
@@ -640,7 +642,7 @@ Notes:
 
 ## Covariance Formula
 
-<img src="../../assets/images/formulas-equations/covariance-1.png" style="width:60%;"/><!-- {"left" : 0.77, "top" : 2.23, "height" : 4.6, "width" : 8.71} -->
+<img src="../../assets/images/formulas-equations/covariance-1.png" style="width:60%;"/><!-- {"left" : 2.9, "top" : 3.76, "height" : 6.18, "width" : 11.7} -->
 
 
 Notes:
@@ -652,7 +654,7 @@ Image credit (Creative commons)  : Ncalculators (http://ncalculators.com/statist
 
 ## Covariance Example
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example.png" alt="Data-Exploration-Covariance-Example.png" style="width:70%;"/><!-- {"left" : 0.93, "top" : 1.75, "height" : 5.57, "width" : 8.39} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example.png" alt="Data-Exploration-Covariance-Example.png" style="width:70%;"/><!-- {"left" : 2.98, "top" : 3.03, "height" : 7.65, "width" : 11.53} -->
 
 
 
@@ -665,7 +667,7 @@ Image credit thanks to :  https://www.youtube.com/watch?v=xGbpuFNR1ME
 
 ## Covariance Example
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example2.png" alt="Data-Exploration-Covariance-Example2.png" style="width:80%;"/><!-- {"left" : 0.63, "top" : 2.1, "height" : 4.86, "width" : 9} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example2.png" alt="Data-Exploration-Covariance-Example2.png" style="width:80%;"/><!-- {"left" : 2.74, "top" : 2.95, "height" : 6.49, "width" : 12.02} -->
 
 
 Notes:
@@ -747,7 +749,7 @@ Notes:
 
  * A correlation |r| < 0.5  is considered  **weak**.
 
- <img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" alt="Data-Exploration-Correlation-Coefficient--0.png" style="width:50%;"/><!-- {"left" : 1.3, "top" : 4.79, "height" : 3.41, "width" : 7.65} -->
+ <img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" alt="Data-Exploration-Correlation-Coefficient--0.png" style="width:50%;"/><!-- {"left" : 4.21, "top" : 6.62, "height" : 4.04, "width" : 9.07} -->
 
 
 
@@ -766,7 +768,7 @@ Notes:
 | Provides the **DIRECTION** (positive / negative  /  zero) of the linear relationship between 2 variables | Provides **DIRECTION** and **STRENGTH** |
 | No upper / lower bound.  Not standardized | Between -1 and +1  standardized |
 
-<!-- {"left" : 0.25, "top" : 1.51, "height" : 2.67, "width" : 9.75} -->
+<!-- {"left" : 1.09, "top" : 2.5, "height" : 1, "width" : 15.33} -->
 
 Notes:
 
@@ -776,7 +778,7 @@ Notes:
 
 ## Correlation Patterns
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Correlaion-Patterns.png" alt="Data-Exploration-Correlaion-Patterns.png" style="width:100%;"/><!-- {"left" : 0.69, "top" : 3.32, "height" : 2.44, "width" : 8.86} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Correlaion-Patterns.png" alt="Data-Exploration-Correlaion-Patterns.png" style="width:100%;"/><!-- {"left" : 1.56, "top" : 4.16, "height" : 3.96, "width" : 14.38} -->
 
 
 
@@ -788,7 +790,7 @@ Notes:
 
 ## Correlation Formula
 
-<img src="../../assets/images/formulas-equations/correlation-1.png"  style="width:60%;"/><!-- {"left" : 1.44, "top" : 3.01, "height" : 3.05, "width" : 7.37} -->
+<img src="../../assets/images/formulas-equations/correlation-1.png"  style="width:60%;"/><!-- {"left" : 3.72, "top" : 3.99, "height" : 4.16, "width" : 10.05} -->
 
 
 Notes:
@@ -805,7 +807,7 @@ Image credit to : Think calculator  (http://www.thinkcalculator.com/statistics/c
 
  * Two independent variables can have mathematical correlation, but have NO sensible connection / correlation in real life
 
- * E.g. : Number of cars sold  vs  number of pets adopted
+ * E.g.: Number of cars sold  vs  number of pets adopted
 
 Notes:
 
@@ -814,6 +816,7 @@ Notes:
 ---
 
 ##  Correlation Code ( R )
+
 ```r
 bill = c(50,30,60,40,65,20,10,15,25,35)
 tip = c(12,7,13,8,15,5,2,2,3,4)
@@ -821,7 +824,7 @@ tip = c(12,7,13,8,15,5,2,2,3,4)
 cor(bill, tip)
 # [1] 0.9522154 ## strong correlation!
 ```
-<!-- {"left" : 0, "top" : 1.57, "height" : 1.6, "width" : 7.28} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 2.76, "width" : 12.55} -->
 
 Notes:
 
@@ -831,6 +834,7 @@ Notes:
 ---
 
 ##  Correlation  Code (Python)
+
 ```python
 import** numpy as  np
 import  pandas  as  pd
@@ -843,7 +847,7 @@ p.corrcoef(bills,tips)
 # array([[ 1.    , 0.95221535],
 #        [ 0.95221535, 1.      ]])
 ```
-<!-- {"left" : 0, "top" : 1.46, "height" : 2.92, "width" : 8.94} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 4.32, "width" : 13.23} -->
 
 Notes:
 
@@ -866,7 +870,7 @@ Notes:
  * The matrix is  **symmetric**,   
  `cov(x1,x2)  = cov(x2,x1)`
 
- <img src="../../assets/images/machine-learning/covariance-matrix-1.png"  style="max-width:60%;"/><!-- {"left" : 1.73, "top" : 4.32, "height" : 3.53, "width" : 6.78} -->
+ <img src="../../assets/images/machine-learning/covariance-matrix-1.png"  style="max-width:60%;"/><!-- {"left" : 3.74, "top" : 5.68, "height" : 5.22, "width" : 10.02} -->
 
 
 
@@ -879,7 +883,7 @@ Notes:
 * The diagonal cells are **1.0**  
 Each variable is perfectly correlated with itself
 
-<img src="../../assets/images/machine-learning/correlation-matrix-1.png"  style="width:60%;"/><!-- {"left" : 1.34, "top" : 4.32, "height" : 3.9, "width" : 7.57} -->
+<img src="../../assets/images/machine-learning/correlation-matrix-1.png"  style="width:60%;"/> <!-- {"left" : 3.57, "top" : 4.99, "height" : 5.34, "width" : 10.36} -->
 
 
 
@@ -888,7 +892,7 @@ Each variable is perfectly correlated with itself
 
 ##  Correlation Matrix Code ( R )
 
-<img src="../../assets/images/machine-learning/covariance-matrix-1.png" alt="covariance-matrix-1.png" style="width:40%;float:right;"/><!-- {"left" : 4.91, "top" : 1.26, "height" : 2.81, "width" : 5.41} -->
+<img src="../../assets/images/machine-learning/covariance-matrix-1.png" alt="covariance-matrix-1.png" style="width:40%;float:right;"/><!-- {"left" : 9.96, "top" : 2, "height" : 3.74, "width" : 7.2} -->
 
 
 
@@ -905,13 +909,13 @@ m
 cor_matrix = cor(m)
 cor_matrix
 ```
-<!-- {"left" : 0, "top" : 1.36, "height" : 2.61, "width" : 4.05} -->
+<!-- {"left" : 0.85, "top" : 2, "height" : 3.58, "width" : 5.56} -->
 
-<br clear="all"/>
+<br/>
 
 - Which of the variables are strongly correlated?
 
-<img src="../../assets/images/machine-learning/Data-Exploration--Covariance-Matrix-Code-R--1.png" alt="Data-Exploration--Covariance-Matrix-Code-R--1.png" style="width:60%;"/><!-- {"left" : 5.04, "top" : 5.95, "height" : 1.89, "width" : 5.17} -->
+<img src="../../assets/images/machine-learning/Data-Exploration--Covariance-Matrix-Code-R--1.png" alt="Data-Exploration--Covariance-Matrix-Code-R--1.png" style="width:60%;"/><!-- {"left" : 4.42, "top" : 8.18, "height" : 3.17, "width" : 8.67} -->
 
 
 Notes:
@@ -937,7 +941,7 @@ print(m)
 
 print(np.corrcoef(m))
 ```
-<!-- {"left" : 0, "top" : 1.13, "height" : 3.34, "width" : 6.09} -->
+<!-- {"left" : 0.85, "top" : 2.33, "height" : 4.01, "width" : 7.32} -->
 
 ```
 # output : m
@@ -947,7 +951,7 @@ print(np.corrcoef(m))
  [10 20 30 40 50 55]
  [ 7  8  9  4  6 10]]
 ```
-<!-- {"left" : 0, "top" : 4.69, "height" : 1.86, "width" : 4.28} -->
+<!-- {"left" : 0.85, "top" : 6.61, "height" : 2.24, "width" : 5.14} -->
 
 ```
 # output: correlation matrix
@@ -958,7 +962,7 @@ c [ 0.84515425  0.05370862  1.          0.86126699  0.07319251]
 d [ 0.99607842  0.49341288  0.86126699  1.          0.03538992]
 e [ 0.09897433  0.38786539  0.07319251  0.03538992  1.        ]]
 ```
-<!-- {"left" : 0, "top" : 6.84, "height" : 1.81, "width" : 9.74} -->
+<!-- {"left" : 0.85, "top" : 9.2, "height" : 2.18, "width" : 11.71} -->
 
 Notes:
 
@@ -1058,7 +1062,7 @@ Notes:
 | Histogram | Plot of frequency table |
 | Density plot | Smoothed version of histogram (Kernel Density Estimate) |
 
-<!-- {"left" : 0.25, "top" : 1.48, "height" : 2.88, "width" : 9.75} -->
+<!-- {"left" : 1.08, "top" : 2.5, "height" : 1, "width" : 15.35} -->
 
 Notes:
 
@@ -1078,7 +1082,7 @@ Notes:
  * Income data (sorted):  
  [22k, 25k, 30k, 35k, 40k, 42k, 45k, 50k, 55k, 60k, 65k, 70k]
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" alt="Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" style="width:40%;"/><!-- {"left" : 2.28, "top" : 4.48, "height" : 3.66, "width" : 5.7} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" alt="Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png" style="width:40%;"/><!-- {"left" : 4.95, "top" : 5.54, "height" : 4.88, "width" : 7.6} -->
 
 
 Notes:
@@ -1095,9 +1099,9 @@ income = c(22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70)
 
 bp = boxplot(income)
 ```
-<!-- {"left" :0, "top" : 1.45, "height" : 1.41, "width" : 8.01} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 1.4, "width" : 12.68} -->
 
-<img src="../../assets/images/machine-learning/Data-Exploration-BoxPlot-Sample-Code-R--0.png" alt="Data-Exploration-BoxPlot-Sample-Code-Python--0.png" style="width:40%;"/><!-- {"left" : 1.65, "top" : 4.03, "height" : 4.1, "width" : 6.38} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-BoxPlot-Sample-Code-R--0.png" alt="Data-Exploration-BoxPlot-Sample-Code-Python--0.png" style="width:40%;"/><!-- {"left" : 5.64, "top" : 4.8, "height" : 5.07, "width" : 7.89} -->
 
 
 Notes:
@@ -1118,10 +1122,10 @@ salaries = np.array([22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70])
 
 plt.boxplot(salaries)
 ```
-<!-- {"left" : 0, "top" : 1.34, "height" : 1.46, "width" : 8.33} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 2.51, "width" : 14.31} -->
 
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png"  style="width:50%;"/><!-- {"left" : 1.65, "top" : 4.03, "height" : 4.1, "width" : 6.38} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Boxplot-Box-and-Whisker-Plot-0.png"  style="width:50%;"/><!-- {"left" : 4.67, "top" : 5.88, "height" : 5.25, "width" : 8.17} -->
 
 
 
@@ -1142,10 +1146,10 @@ Notes:
 income = c(22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70)
 hist(income)
 ```
-<!-- {"left" : 0, "top" : 1.73, "height" : 1.19, "width" : 6.97} -->
+<!-- {"left" : 0.85, "top" : 2.98, "height" : 1.1, "width" : 13.3} -->
 
+<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-R--0.png" alt="Data-Exploration-Histogram-R--0.png" style="width:50%;"/><!-- {"left" : 4.93, "top" : 5.39, "height" : 6.2, "width" : 7.64} -->
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-R--0.png" alt="Data-Exploration-Histogram-R--0.png" style="width:50%;"/><!-- {"left" : 2.58, "top" : 4.17, "height" : 4.13, "width" : 5.09} -->
 
 
 Notes:
@@ -1155,6 +1159,7 @@ Notes:
 ---
 
 ## Histogram (Python)
+
  * Histogram counts data points per bin
 
 ```python
@@ -1168,10 +1173,10 @@ salaries = np.array([22, 25, 30, 35, 40, 42, 45, 50, 55, 60, 65, 70])
 plt.hist(salaries, rwidth=0.7)
 
 ```
-<!-- {"left" : 0, "top" : 1.78, "height" : 1.96, "width" : 10.06} -->
+<!-- {"left" : 0.85, "top" : 2.9, "height" : 2.68, "width" : 13.76} -->
 
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-Python--0.png" alt="Data-Exploration-Histogram-Python--0.png" style="width:50%;"/><!-- {"left" : 1.83, "top" : 4.65, "height" : 4.24, "width" : 6.6} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Histogram-Python--0.png" alt="Data-Exploration-Histogram-Python--0.png" style="width:50%;"/><!-- {"left" : 4.8, "top" : 6.25, "height" : 5.07, "width" : 7.9} -->
 
 
 
@@ -1196,10 +1201,10 @@ plt.ylabel("tip")
 plt.scatter(bills, tips)
 
 ```
-<!-- {"left" : 0, "top" : 1.29, "height" : 2.92, "width" : 8.94} -->
+<!-- {"left" : 0.85, "top" : 2.59, "height" : 4.06, "width" : 12.44} -->
 
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 4.59, "height" : 4.11, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Scatter-Plot-Python--0.png" alt="Data-Exploration-Scatter-Plot-Python--0.png" style="width:60%;"/><!-- {"left" : 4.15, "top" : 6.94, "height" : 4.61, "width" : 9.21} -->
 
 
 
@@ -1291,9 +1296,10 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.07, "top" : 1.89, "height" : 2.69, "width" : 3.63} -->
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 4.8, "height" : 5.53, "width" : 8.31} -->

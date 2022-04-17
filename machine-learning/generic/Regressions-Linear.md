@@ -4,7 +4,7 @@
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-regressions-linear-1.png"  style="width:80%;" /><!-- {"left" : 1.02, "top" : 1.4, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-regressions-linear-1.png"  style="width:80%;" /><!-- {"left" : 1.92, "top" : 2.3, "height" : 9.12, "width" : 13.66} -->
 
 
 Notes:
@@ -20,7 +20,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
  * Do you see any correlation?
 
-<img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.71, "height" : 4.23, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0" style="width:75%;"/><!-- {"left" : 2.35, "top" : 4, "height" : 6.59, "width" : 12.79} -->
 
 
 Notes:
@@ -37,9 +37,9 @@ Notes:
 
  * We can fit a line to predict tip
 
- * This is **linear regression**!
+ * This is **linear regression!**
 
-<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" alt="bill-tips-model-plot.png" style="width:50%;"/><!-- {"left" : 1.9, "top" : 3.19, "height" : 4.88, "width" : 6.46} -->
+<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" alt="bill-tips-model-plot.png" style="width:50%;"/><!-- {"left" : 4.67, "top" : 4.54, "height" : 6.16, "width" : 8.16} -->
 
 
 
@@ -51,7 +51,7 @@ Notes:
 
 ## Graph Review!
 
-<img src="../../assets/images/machine-learning/3rd-party/linear-regressions-graph-review-1.png"  style="width:40%;float:right"/><!-- {"left" : 5.57, "top" : 1.19, "height" : 4.16, "width" : 4.35} -->
+<img src="../../assets/images/machine-learning/3rd-party/linear-regressions-graph-review-1.png"  style="width:40%;float:right"/><!-- {"left" : 10.57, "top" : 1.89, "height" : 6.13, "width" : 6.41} -->
 
 *  **Y = aX + b**
 
@@ -69,7 +69,7 @@ Notes:
 | a | Slope of line                     |
 | b | Intercept (line meets y-axis)     |
 
-<!-- {"left" : 2.41, "top" : 5.84, "height" : 2.5, "width" : 5.43, "columnwidth" : [1.13, 4.3]} -->
+<!-- {"left" : 0.82, "top" : 5.43, "height" : 2.56, "width" : 9.37} -->
 
 
 Notes:
@@ -90,7 +90,7 @@ Notes:
 | **Intercept**              | The intercept of the regression line - that is, the predicted value when X= 0 | - b , b<sub>0</sub> , β<sub>0</sub>                                     |
 | **Regression coefficient** | The slope of the regression line.                                             | - Slope <br/>- parameter estimates <br/>- Weights <br/>- a , b1     |
 
-<!-- {"left" : 0.25, "top" : 2.32, "height" : 5.01, "width" : 9.75} -->
+<!-- {"left" : 0.45, "top" : 2.6, "height" : 1, "width" : 16.61} -->
 
 Notes:
 
@@ -100,7 +100,7 @@ Notes:
 
 ## Using Linear Regression for Tips
 
-<img src="../../assets/images/machine-learning/bill-tips-model-plot.png"  style="max-width:50%;float:right;"/><!-- {"left" : 5.46, "top" : 1.89, "height" : 3.46, "width" : 4.57} -->
+<img src="../../assets/images/machine-learning/bill-tips-model-plot.png"  style="max-width:50%;float:right;"/><!-- {"left" : 9.85, "top" : 2.45, "height" : 5.56, "width" : 7.34} -->
 
 
  * Linear regression model closely resembles algebra model
@@ -123,7 +123,7 @@ Notes:
 
 ## Calculating Linear Regression Model
 
-<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png"  style="max-width:40%;float:right;"/><!-- {"left" : 5.29, "top" : 2.2, "height" : 3.31, "width" : 4.8} -->
+<img src="../../assets/images/machine-learning/Supervised-Learning-in-Python-Plotting-Regression-0.png"  style="max-width:40%;float:right;"/><!-- {"left" : 9.7, "top" : 2.16, "height" : 5.13, "width" : 7.43} -->
 
  * Here is the linear regression model coefficients for billing data
 
@@ -148,7 +148,7 @@ Notes:
 
 ## Predicting Tips with Linear Model
 
-<img src="../../assets/images/machine-learning/bill-tip-3.png"  style="width:30%;float:right;"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
+<img src="../../assets/images/machine-learning/bill-tip-3.png"  style="width:30%;float:right;"/><!-- {"left" : 12.7, "top" : 1.89, "height" : 6.7, "width" : 4.47} -->
 
 
 * __`Tip = 0.2428571 * bill - 1.40`__  
@@ -175,7 +175,7 @@ Notes:
 
 ## Evaluating Our Model Accuracy
 
-<img src="../../assets/images/machine-learning/bill-tip-3.png"  style="width:30%;float:right;"/><!-- {"left" : 6.72, "top" : 2.36, "height" : 4.86, "width" : 3.24} -->
+<img src="../../assets/images/machine-learning/bill-tip-3.png"  style="width:30%;float:right;"/><!-- {"left" : 12.49, "top" : 2.14, "height" : 7.03, "width" : 4.69} -->
 
 - As we can see our model is not predicting the tips 100% accurately
 
@@ -190,7 +190,7 @@ Notes:
 
 ---
 
-## Errors and Residuals
+# Errors and Residuals
 
 [ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions](ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions)
 
@@ -208,9 +208,9 @@ This is called **perfect fit**
 This is called **residual**
 
 
-<img src="../../assets/images/machine-learning/linear-regression-1a.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 0.52, "top" : 3.99, "height" : 2.14, "width" : 4.18} -->
-&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1b.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 2.97, "top" : 3.99, "height" : 2.14, "width" : 4.12} -->
-&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1c.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 5.7, "top" : 3.99, "height" : 2.14, "width" : 4.02} -->
+<img src="../../assets/images/machine-learning/linear-regression-1a.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 1.75, "top" : 5.97, "height" : 3.26, "width" : 6.36} -->
+&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1b.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 5.48, "top" : 5.97, "height" : 3.26, "width" : 6.27} -->
+&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1c.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 9.63, "top" : 5.97, "height" : 3.26, "width" : 6.12} -->
 
 
 ---
@@ -218,7 +218,7 @@ This is called **residual**
 
 ## Calculating Linear Regression Model
 
-<img src="../../assets/images/machine-learning/Regressions-Generic-05.png" style="max-width:50%;float:right;"/><!-- {"left" : 5.51, "top" : 1.81, "height" : 4.19, "width" : 4.66} -->
+<img src="../../assets/images/machine-learning/Regressions-Generic-05.png" style="max-width:50%;float:right;"/><!-- {"left" : 10.63, "top" : 1.89, "height" : 5.9, "width" : 6.56} -->
 
  * Here is the linear regression model equation
 
@@ -252,7 +252,7 @@ This is called **residual**
 
 ---
 
-## Gradient Descent
+# Gradient Descent
 
 [Gradient-Descent.md](Gradient-Descent.md)
 
@@ -261,9 +261,9 @@ This is called **residual**
 
 ## Evaluating Linear Regression Models
 
-<img src="../../assets/images/formulas-equations/RSS-1.png" style="width:25%;float:right;"/><!-- {"left" : 6.84, "top" : 2.15, "height" : 1.08, "width" : 3.09} -->
+<img src="../../assets/images/formulas-equations/RSS-1.png" style="width:25%;float:right;"/><!-- {"left" : 11.36, "top" : 2.14, "height" : 1.79, "width" : 5.13} -->
 
-<img src="../../assets/images/formulas-equations/RMSE-1.png" style="width:25%;float:right;clear:both;"/><!-- {"left" : 6.47, "top" : 4.46, "height" : 0.72, "width" : 3.32} -->
+<img src="../../assets/images/formulas-equations/RMSE-1.png" style="width:25%;float:right;clear:both;"/><!-- {"left" : 11.36, "top" : 5.15, "height" : 1.11, "width" : 5.13} -->
 
 
 
@@ -295,7 +295,7 @@ Notes:
 
  *  **r =**  **0.9522154 -** pretty strong correlation
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" style="width:50%"/><!-- {"left" : 1.55, "top" : 4.12, "height" : 3.19, "width" : 7.16} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Correlation-Coefficient--0.png" style="width:50%"/><!-- {"left" : 3.15, "top" : 5.63, "height" : 4.99, "width" : 11.19} -->
 
 
 Notes:
@@ -339,7 +339,7 @@ https://en.wikipedia.org/wiki/Coefficient_of_determination
 
 ## Preparing Data for Linear Regression
 
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Preparing-Data-for-Linear-Regression-0.png" style="max-width:70%"/><!-- {"left" : 1.02, "top" : 2.25, "height" : 5.14, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-Preparing-Data-for-Linear-Regression-0.png" style="max-width:70%"/><!-- {"left" : 2.17, "top" : 2.73, "height" : 8.24, "width" : 13.16} -->
 
 
 

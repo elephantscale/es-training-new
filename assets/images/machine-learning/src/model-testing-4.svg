@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-111 860 1026 252" width="1026" height="252">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-03-27 10:17:55 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_8">
+        <path d="M 172.54795 988.4412 L 172.54795 983.5588 L 596.4378 983.5588 L 596.4378 968.0205 L 617.7534 986 L 596.4378 1003.9795 L 596.4378 988.4412 Z" fill="#e3a92e"/>
+        <path d="M 172.54795 988.4412 L 172.54795 983.5588 L 596.4378 983.5588 L 596.4378 968.0205 L 617.7534 986 L 596.4378 1003.9795 L 596.4378 988.4412 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M -105.9863 861 L 136.0137 861 C 138.22284 861 140.0137 862.7909 140.0137 865 L 140.0137 1107 C 140.0137 1109.2091 138.22284 1111 136.0137 1111 L -105.9863 1111 C -108.19544 1111 -109.9863 1109.2091 -109.9863 1107 L -109.9863 865 C -109.9863 862.7909 -108.19544 861 -105.9863 861 Z" fill="#aa97fe"/>
+        <path d="M -105.9863 861 L 136.0137 861 C 138.22284 861 140.0137 862.7909 140.0137 865 L 140.0137 1107 C 140.0137 1109.2091 138.22284 1111 136.0137 1111 L -105.9863 1111 C -108.19544 1111 -109.9863 1109.2091 -109.9863 1107 L -109.9863 865 C -109.9863 862.7909 -108.19544 861 -105.9863 861 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <circle cx="395.1507" cy="986" r="125.000199737737" fill="#ebdea6"/>
+        <circle cx="395.1507" cy="986" r="125.000199737737" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 791.8147 863.8284 L 911.1579 983.1716 C 912.72 984.7337 912.72 987.2663 911.1579 988.8284 L 791.8147 1108.1716 C 790.2526 1109.7337 787.72 1109.7337 786.1579 1108.1716 L 666.8147 988.8284 C 665.2526 987.2663 665.2526 984.7337 666.8147 983.1716 L 786.1579 863.8284 C 787.72 862.2663 790.2526 862.2663 791.8147 863.8284 Z" fill="#a4f8fd"/>
+        <path d="M 791.8147 863.8284 L 911.1579 983.1716 C 912.72 984.7337 912.72 987.2663 911.1579 988.8284 L 791.8147 1108.1716 C 790.2526 1109.7337 787.72 1109.7337 786.1579 1108.1716 L 666.8147 988.8284 C 665.2526 987.2663 665.2526 984.7337 666.8147 983.1716 L 786.1579 863.8284 C 787.72 862.2663 790.2526 862.2663 791.8147 863.8284 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(-39.3906 961.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Code</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(350.35576 961.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Tests</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(724.1914 961.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Results</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

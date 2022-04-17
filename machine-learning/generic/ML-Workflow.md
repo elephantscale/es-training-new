@@ -4,7 +4,7 @@
 
 ## Machine Learning Process
 
-<img src="../../assets/images/machine-learning/ML-Process.png"  style="max-width:90%;"/><!-- {"left" : 1.02, "top" : 2.47, "height" : 4.13, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/ML-Process.png"  style="max-width:90%;"/><!-- {"left" : 2.26, "top" : 3.59, "height" : 6.53, "width" : 12.98} -->
 
 
 
@@ -26,7 +26,7 @@
 
 ## Machine Learning Process: Step 1: Data Exploration
 
-<img src="../../assets/images/machine-learning/ML-Process-02.png" style="max-width:90%;"/><!-- {"left" : 0.53, "top" : 2.22, "height" : 4.62, "width" : 9.19} -->
+<img src="../../assets/images/machine-learning/ML-Process-02.png" style="max-width:90%;"/><!-- {"left" : 2.35, "top" : 3.63, "height" : 6.44, "width" : 12.81} -->
 
 
 ---
@@ -36,17 +36,17 @@
 
 ## Machine Learning Process: Step 2: Developing a Model
 
-<img src="../../assets/images/machine-learning/ML-Process-03.png"  style="max-width:90%;"/><!-- {"left" : 0.81, "top" : 2.36, "height" : 4.35, "width" : 8.64} -->
+<img src="../../assets/images/machine-learning/ML-Process-03.png"  style="max-width:90%;"/><!-- {"left" : 1.95, "top" : 3.43, "height" : 6.85, "width" : 13.6} -->
 
 
 ---
 
-## Sample Dataset:  Cars
+## Sample Dataset: Cars
 
 * We want to predict MPG of a car
 * What attributes to consider?
 
-<img src="../../assets/images/machine-learning/Sample-Cars.png" alt="Sample-Cars" style="width:70%;"/> <!-- {"left" : 0.39, "top" : 2.47, "height" : 4.71, "width" : 9.48} -->
+<img src="../../assets/images/machine-learning/Sample-Cars.png" alt="Sample-Cars" style="width:70%;"/> <!-- {"left" : 1.96, "top" : 4.2, "height" : 6.74, "width" : 13.57} -->
 
 
 
@@ -56,7 +56,7 @@ Notes:
 
 ## Sample Model for Predicting MPG
 
-<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:60%;float:right;"/> <!-- {"left" : 0.49, "top" : 1.66, "height" : 5.74, "width" : 9.26} -->
+<img src="../../assets/images/machine-learning/Predicting-MPG.png" alt="Predicting-MPG" style="width:60%;float:right;"/> <!-- {"left" : 8.05, "top" : 2.09, "height" : 5.74, "width" : 9.26} -->
 
 * Designate inputs as X
   - X<sub>1</sub>: first input  (e.g.  number of cylinders)
@@ -75,7 +75,7 @@ Notes:
 
 ## Let's Play a Guessing Game!
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 10.59, "top" : 1.89, "height" : 4.55, "width" : 6.84} -->
 
 * Look at the data below.  Come up with a formula linking X and Y
 
@@ -85,6 +85,8 @@ Notes:
 |---|---|
 | 1 | 2 |
 | 2 | 5 |
+
+<!-- {"left" : 0.93, "top" : 4.5, "height" : 1, "width" : 6.58} -->
 
 * So what is the formula?
 
@@ -96,12 +98,15 @@ Notes:
 
 ## Guessing Game
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 10.1, "top" : 1.47, "height" : 4.9, "width" : 7.38} -->
 
 | X | Y |
 |---|---|
 | 1 | 2 |
 | 2 | 5 |
+
+<!-- {"left" : 1.04, "top" : 2.88, "height" : 1, "width" : 5.54} -->
+
 
 * I have 2 possible formulas (there may be more)
 
@@ -113,7 +118,7 @@ Notes:
 
 ## Guessing Game
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 10.05, "top" : 1.89, "height" : 4.87, "width" : 7.33} -->
 
 * Let me provide more data
 
@@ -124,6 +129,9 @@ Notes:
 | 3 | 10 |
 | 4 | 17 |
 
+<!-- {"left" : 1.04, "top" : 3.87, "height" : 1, "width" : 6.97} -->
+
+
 * Now, what would be the formula?
 
 * Answer next slide
@@ -131,7 +139,7 @@ Notes:
 ---
 ## Guessing Game
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 10.27, "top" : 1.61, "height" : 4.62, "width" : 6.94} -->
 
 
 | X | Y  |
@@ -140,6 +148,9 @@ Notes:
 | 2 | 5  |
 | 3 | 10 |
 | 4 | 17 |
+
+<!-- {"left" : 0.68, "top" : 2.67, "height" : 1, "width" : 7.38} -->
+
 
 * With more data, we can finalize on a formula
 
@@ -177,7 +188,7 @@ Notes:
 | Algorithms    | - Linear Regression <br/>- Logistic Regression <br/>- Linear Discriminant Analysis          | - Decision Trees, <br/>- Support Vector Machines, <br/>- Naïve Bayes                                                                                       |
 | Best for      | - small size data with previous knowledge of features                                       | when having lots of data and no prior knowledge of features                                                                                             |
 
-<!-- {"left" : 0.25, "top" : 1.06, "height" : 4.43, "width" : 9.75, "columnwidth" : [1.65, 3.57, 4.54]} -->
+<!-- {"left" : 0.43, "top" : 2.36, "height" : 1, "width" : 16.64, "columnwidth" : [2.81, 6.09, 7.74]} -->
 
 
 Notes:
@@ -196,7 +207,7 @@ Notes:
 | Adopting to data        | simple data        | complex data      |
 | Prediction accuracy     | good               | better            |
 
-<!-- {"left" : 0.25, "top" : 1.4, "height" : 4, "width" : 9.75} -->
+<!-- {"left" : 1.19, "top" : 2.66, "height" : 1, "width" : 15.13} -->
 
 Notes:
 

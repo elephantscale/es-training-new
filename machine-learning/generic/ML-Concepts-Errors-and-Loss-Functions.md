@@ -30,7 +30,7 @@
 | 5      | 15       |
 | 7      | 5        |
 
-<!-- {"left" : 0.25, "top" : 2.3, "height" : 3.5, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 4.11, "height" : 3.5, "width" : 9.75} -->
 
 
 
@@ -50,7 +50,7 @@ Notes:
     * __`Residual = actual tip - predicted tip`__
  * Sum of all residuals = **ZERO**  (positive and negative errors are canceling each other)
 
-<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:40%;float:right;"/><!-- {"left" : 0.23, "top" : 5.62, "height" : 1.89, "width" : 3.83} -->
+<img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:40%;float:right;"/><!-- {"left" : 0.93, "top" : 6.64, "height" : 3.14, "width" : 6.37} -->
 
 
 | Actual Tip | Predicted Tip | Error or Residual = (Actual - Predicted) |
@@ -64,7 +64,7 @@ Notes:
 |            |               | SUM = 0  (+2 -3 +3 -2 +5 -5)             |
 
 
-<!-- {"left" : 4.18, "top" : 4.57, "height" : 3.98, "width" : 5.98, "columnwidth" : [1.08, 1.39, 3.51]} -->
+<!-- {"left" : 7.76, "top" : 6.03, "height" : 4.35, "width" : 8.81} -->
 
 
 Notes:
@@ -90,7 +90,7 @@ Notes:
 |            | Total ==>     | 0                            | 76            |
 
 
-<!-- {"left" : 1.06, "top" : 4.1, "height" : 3.18, "width" : 8.13, "columnwidth" : [1.32, 1.69, 3.41, 1.81]} -->
+<!-- {"left" : 1.75, "top" : 5.91, "height" : 3.93, "width" : 14} -->
 
 
 Notes:
@@ -99,7 +99,7 @@ Notes:
 
 ## Sum of Squared Errors (SSE)
 
-<img src="../../assets/images/formulas-equations/sum-of-squared-error-SSE-1.png" alt="equation-error-SSE-1" style="width:40%;float:right;"/><!-- {"left" : 6.65, "top" : 1.94, "height" : 1.33, "width" : 3.45} -->
+<img src="../../assets/images/formulas-equations/sum-of-squared-error-SSE-1.png" alt="equation-error-SSE-1" style="width:40%;float:right;"/><!-- {"left" : 11.17, "top" : 2.16, "height" : 2.12, "width" : 5.51} -->
 
  * Also known as
     - **Residual Sum of Squares (RSS)**
@@ -125,7 +125,7 @@ Notes:
 
 ## Mean Squared Error (MSE) (L2)
 
-<img src="../../assets/images/formulas-equations/mean-square-error-MSE-1.png" alt="XXX image missing" style="background:white;width:30%;float:right;"/><!-- {"left" : 6.82, "top" : 2.47, "height" : 1.2, "width" : 3.17} -->
+<img src="../../assets/images/formulas-equations/mean-square-error-MSE-1.png" alt="XXX image missing" style="background:white;width:30%;float:right;"/><!-- {"left" : 12.1, "top" : 3.7, "height" : 1.83, "width" : 4.84} -->
 
 
 | Actual Tip | Predicted Tip | Error = (Actual - Predicted) | Error Squared |
@@ -138,7 +138,7 @@ Notes:
 | 5          | 10            | -5 = (5 - 10)                | 25            |
 |            | Total ==>     | 0                            | 76            |
 
-<!-- {"left" : 0.31, "top" : 1.33, "height" : 3.47, "width" : 6.22, "columnwidth" : [1.32, 1.69, 2.08, 1.13]} -->
+<!-- {"left" : 0.7, "top" : 1.77, "height" : 1, "width" : 11.25, "columnwidth" : [2.04, 2.27, 3.51, 1.32, 2.11]} -->
 
 
 - `MSE = (4  + 9 + 9 + 4 + 25 + 25)/6 = 76 / 6 = 12.6`
@@ -155,7 +155,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Mean Absolute Error (MAE)
 
-<img src="../../assets/images/formulas-equations/mean-absolute-error-MAE-1.png"  style="width:30%;float:right;"/><!-- {"left" : 6.71, "top" : 2.3, "height" : 1.2, "width" : 3.17} -->
+<img src="../../assets/images/formulas-equations/mean-absolute-error-MAE-1.png"  style="width:30%;float:right;"/><!-- {"left" : 11.74, "top" : 3.7, "height" : 1.83, "width" : 4.84} -->
 
 
 
@@ -169,7 +169,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 | 5          | 10            | -5 = (5 - 10)                | 5                  | 25            |
 |            | Total ==>     | 0                            | 20                 | 76            |
 
-<!-- {"left" : 0.18, "top" : 1.1, "height" : 3.73, "width" : 6.68, "columnwidth" : [1.39, 1.4, 2.06, 0.62, 1.22]} -->
+<!-- {"left" : 0.92, "top" : 1.89, "height" : 1, "width" : 10.62} -->
 
 - `MAE = (2 + 3 + 3 + 2 + 5 + 5) = 20 / 6 = 3.33`
 - Properties:
@@ -192,6 +192,8 @@ https://isaacchanghau.github.io/post/loss_functions/
 | Sum of Squared Errors (SSE) |
 | Mean Square Error (MSE)     |
 | Mean Absolute Error (MAE)   |
+
+<!-- {"left" : 3.64, "top" : 6.43, "height" : 2, "width" : 10.22} -->
 
 
 ---
@@ -228,7 +230,10 @@ https://isaacchanghau.github.io/post/loss_functions/
 | 80,000           | 750                    | 100,000                | 1                      |
 | 100,000          | 800                    | 50,000                 | 1                      |
 
-<img src="../../assets/images/formulas-equations/binary-class-entrophy-1.png"  style="width:80%;"/><!-- {"left" : 1.7, "top" : 3.11, "height" : 1.28, "width" : 6.85} -->
+<!-- {"left" : 0.78, "top" : 4.49, "height" : 1, "width" : 15.95, "columnwidth" : [3.99, 3.99, 3.99, 3.99]} -->
+
+
+<img src="../../assets/images/formulas-equations/binary-class-entrophy-1.png"  style="width:80%;"/><!-- {"left" : 2.67, "top" : 7.3, "height" : 2.27, "width" : 12.16} -->
 
 ---
 
@@ -248,6 +253,8 @@ https://isaacchanghau.github.io/post/loss_functions/
 | 5.0 | 2.3 | 3.3 | 1.0 | 2     |
 | 4.9 | 3.1 | 1.5 | 0.1 | 3     |
 
+<!-- {"left" : 1.35, "top" : 5.07, "height" : 1, "width" : 14.79} -->
+
 ---
 
 ## Multi Class Classifications: Categorical Crossentropy  
@@ -266,6 +273,9 @@ https://isaacchanghau.github.io/post/loss_functions/
 | 5.0 | 2.3 | 3.3 | 1.0 | [0,1,0]     |
 | 4.9 | 3.1 | 1.5 | 0.1 | [0,0,1]     |
 
+<!-- {"left" : 1.35, "top" : 5.07, "height" : 1, "width" : 14.79} -->
+
+
 ---
 ## Summary of Errors / Loss Functions
 
@@ -277,6 +287,8 @@ https://isaacchanghau.github.io/post/loss_functions/
 |                             | Soft Margin Classifier   |                |
 |                             | Negative Log Likelihood  |                |
 
+<!-- {"left" : 1.41, "top" : 2.68, "height" : 1, "width" : 14.68} -->
+
 ---
 
 ## Loss Functions Based on Task
@@ -287,6 +299,9 @@ https://isaacchanghau.github.io/post/loss_functions/
 |                |                                 |                          |
 | Classification | binary (0/1)                    | binary_crossentropy      |
 |                | Multi-class <br/> (A, B, C , D) | categorical_crossentropy |
+
+<!-- {"left" : 1.41, "top" : 2.68, "height" : 1, "width" : 14.68} -->
+
 
 ---
 
@@ -303,7 +318,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 | u3 | 3 | 8 |
 | u4 | 9 | 1 |
 
-<!-- {"left" : 0.25, "top" : 1.24, "height" : 2.5, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 2.4, "height" : 1, "width" : 9.75} -->
 
 - Users are rating each item on a 1-10 scale (1 being least, 10 being most)
 - We can represent these as vectors
@@ -316,7 +331,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Finding Similar Users
 
-<img src="../../assets/images/machine-learning/cosine-similarity-3.png" style="width:50%;float:right;"/><!-- {"left" : 5.46, "top" : 2.26, "height" : 2.89, "width" : 4.63} -->
+<img src="../../assets/images/machine-learning/cosine-similarity-3.png" style="width:50%;float:right;"/><!-- {"left" : 10.26, "top" : 1.89, "height" : 4.37, "width" : 7} -->
 
 - Now let's plot our users' interest
     - X-axis: outdoors
@@ -341,7 +356,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 | u3 | 3 | 8 | 5 | 7 | 1 | 1 | 1 |
 | u4 | 9 | 1 | 8 | 1 | 10 | 8 | 9 |
 
-<!-- {"left" : 0.14, "top" : 1.63, "height" : 2.63, "width" : 9.98, "columnwidth" : [0.92, 1.33, 1.07, 1.33, 1.28, 1.23, 1.68, 1.13]} -->
+<!-- {"left" : 0.4, "top" : 2.82, "height" : 1, "width" : 16.7, "columnwidth" : [1.54, 2.23, 1.79, 2.23, 2.14, 2.06, 2.81, 1.89]} -->
 
 
 - Now our vectors have more dimension than 2
@@ -356,7 +371,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Cosine Similarity
 
-<img src="../../assets/images/machine-learning/cosine-similarity-4.png" style="width:40%;float:right;"/><!-- {"left" : 6.31, "top" : 0.96, "height" : 2.61, "width" : 3.88} -->
+<img src="../../assets/images/machine-learning/cosine-similarity-4.png" style="width:40%;float:right;"/><!-- {"left" : 11.45, "top" : 1.89, "height" : 3.78, "width" : 5.62} -->
 
 - __Cosine Similarity__ measures 'angle' between vectors
 - Even though cosine values are between -1 and +1, cosine similarity is normalized between 0 and 1
@@ -368,8 +383,8 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 <br clear="all" />
 
-<img src="../../assets/images/machine-learning/cosine-similarity-5.png" style="width:50%;float:left;"/><!-- {"left" : 0.79, "top" : 7.63, "height" : 1.19, "width" : 4.41} -->
-<img src="../../assets/images/machine-learning/3rd-party/cosine-curve-1.png" style="width:30%;float:right;"/><!-- {"left" : 6.52, "top" : 7.51, "height" : 1.32, "width" : 2.95} -->
+<img src="../../assets/images/machine-learning/cosine-similarity-5.png" style="width:50%;float:left;"/><!-- {"left" : 1.9, "top" : 8.74, "height" : 1.88, "width" : 6.96} -->
+<img src="../../assets/images/machine-learning/3rd-party/cosine-curve-1.png" style="width:30%;float:right;"/><!-- {"left" : 10.94, "top" : 8.56, "height" : 2.08, "width" : 4.65} -->
 
 
 
@@ -387,12 +402,12 @@ https://isaacchanghau.github.io/post/loss_functions/
 | u1   | 4  | 3  | 5  |
 | u2   | 4  | 5  | 5  |
 
-<!-- {"left" : 4.05, "top" : 3.29, "height" : 1.19, "width" : 2.14, "columnwidth" : [0.68, 0.49, 0.49, 0.49]} -->
+<!-- {"left" : 11.95, "top" : 2.6, "height" : 1, "width" : 4.95} -->
 
 
-<img src="../../assets/images/machine-learning/ratings-vector-1.png" style="width:30%;"/><!-- {"left" : 0.19, "top" : 6.5, "height" : 1.33, "width" : 4.23} --> &nbsp;
-<img src="../../assets/images/machine-learning/ratings-vector-2.png" style="width:30%;"/><!-- {"left" : 4.62, "top" : 5.79, "height" : 2.07, "width" : 2.5} --> &nbsp;
-<img src="../../assets/images/machine-learning/ratings-vector-3.png" style="width:30%;"/><!-- {"left" : 7.32, "top" : 5.7, "height" : 2.24, "width" : 2.75} -->
+<img src="../../assets/images/machine-learning/ratings-vector-1.png" style="width:30%;"/><!-- {"left" : 0.88, "top" : 7.45, "height" : 2.12, "width" : 6.74} --> &nbsp;
+<img src="../../assets/images/machine-learning/ratings-vector-2.png" style="width:30%;"/><!-- {"left" : 7.94, "top" : 6.32, "height" : 3.3, "width" : 3.98} --> &nbsp;
+<img src="../../assets/images/machine-learning/ratings-vector-3.png" style="width:30%;"/><!-- {"left" : 12.24, "top" : 6.18, "height" : 3.57, "width" : 4.38} -->
 
 
 ---
@@ -406,7 +421,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 | u3 | 3 | 8 | 5 | 7 | 1 | 1 | 1 |
 | u4 | 9 | 1 | 8 | 1 | 10 | 8 | 9 |
 
-<!-- {"left" : 0.14, "top" : 1.13, "height" : 2.63, "width" : 9.98, "columnwidth" : [0.92, 1.33, 1.07, 1.33, 1.28, 1.23, 1.68, 1.13]} -->
+<!-- {"left" : 0.78, "top" : 2.1, "height" : 2.98, "width" : 15.95, "columnwidth" : [1.47, 2.13, 1.71, 2.13, 2.05, 1.97, 2.69, 1.81]} -->
 
 - In this data, once we represent each user's interest as a vector, we can use cosine similarity to find similar tastes
 
@@ -419,7 +434,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Cosine Proximity
 
-<img src="../../assets/images/machine-learning/error-cosine-1.png" alt="XXX image missing" style="background:white; width: 30%;float:right;" /><!-- {"left" : 6.62, "top" : 1.15, "height" : 3.05, "width" : 3.43} -->
+<img src="../../assets/images/machine-learning/error-cosine-1.png" alt="XXX image missing" style="background:white; width: 30%;float:right;" /><!-- {"left" : 11.29, "top" : 2.16, "height" : 5.26, "width" : 5.91} -->
 
 
 - Computes the cosine proximity between predicted value and actual value
@@ -429,7 +444,7 @@ https://isaacchanghau.github.io/post/loss_functions/
     - Vectors are 'not similar' if they are perpendicular / orthogonal
 
 
-<img src="../../assets/images/formulas-equations/cosine-similarity-1.png" alt="formula-01.png" style="background:white;width:70%" /><!-- {"left" : 1.79, "top" : 6.36, "height" : 2.67, "width" : 6.67} -->
+<img src="../../assets/images/formulas-equations/cosine-similarity-1.png" alt="formula-01.png" style="background:white;width:70%" /><!-- {"left" : 1.91, "top" : 7.97, "height" : 3.32, "width" : 8.3} -->
 
 Notes:
 
@@ -449,7 +464,8 @@ Notes:
 |                             | Soft Margin Classifier   |                |
 |                             | Negative Log Likelihood  |                |
 
-<!-- {"left" : 0.25, "top" : 1.64, "height" : 2.69, "width" : 9.75} -->
+<!-- {"left" : 1.29, "top" : 3.43, "height" : 1, "width" : 14.91} -->
+
 
 ---
 
@@ -477,7 +493,7 @@ Notes:
 - Used when model outputs probability of each class  
 (digit-1  : 10%,   digit-9 : 90%  ..etc)
 
-<img src="../../assets/images/formulas-equations/negative-logarithmic-likelihood-1.png"  style="width:30%;"/><!-- {"left" : 3.15, "top" : 2.95, "height" : 1.6, "width" : 3.95} -->
+<img src="../../assets/images/formulas-equations/negative-logarithmic-likelihood-1.png"  style="width:30%;"/><!-- {"left" : 11.67, "top" : 2.37, "height" : 2.08, "width" : 5.13} -->
 
 
 
@@ -490,7 +506,7 @@ Notes:
 
 - Derived from [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_regression) which is used for counting data
 
-<img src="../../assets/images/formulas-equations/poisson-loss-function-1.png"  style="width:50%;"/><!-- {"left" : 1.97, "top" : 3.03, "height" : 1.45, "width" : 6.31} -->
+<img src="../../assets/images/formulas-equations/poisson-loss-function-1.png"  style="width:50%;"/><!-- {"left" : 4.5, "top" : 4.15, "height" : 1.95, "width" : 8.49} -->
 
 ---
 
@@ -501,12 +517,12 @@ Notes:
 
 - For binary output
 
-<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-1.png"  style="background:white;width:70%" /><!-- {"left" : 2.47, "top" : 2, "height" : 1.42, "width" : 5.31} -->
+<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-1.png"  style="background:white;width:70%" /><!-- {"left" : 8.6, "top" : 2.78, "height" : 1.88, "width" : 7.02} -->
 
 
 - For multi-class classifier
 
-<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-2.png"  style="background:white;width:65%" /><!-- {"left" : 2.63, "top" : 4.55, "height" : 1.15, "width" : 5} -->
+<img src="../../assets/images/formulas-equations/hinge-loss-max-margin-loss-2.png"  style="background:white;width:65%" /><!-- {"left" : 8.56, "top" : 6.38, "height" : 1.63, "width" : 7.09} -->
 
 
 Notes:  

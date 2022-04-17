@@ -4,7 +4,7 @@
 
 ## AI / Machine Learning / Deep Learning
 
-<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="width:37%;float:right;"/><!-- {"left" : 5.56, "top" : 2.35, "height" : 4.37, "width" : 4.37} -->
+<img src="../../assets/images/machine-learning/AI-ML-DL-1.png" alt="AI-ML-DL.png" style="width:37%;float:right;"/><!-- {"left" : 11.08, "top" : 2.23, "height" : 5.67, "width" : 5.67} -->
 
  * **Artificial Intelligence (AI):** Broader concept of "making machines smart"
 
@@ -23,7 +23,7 @@ Notes:
 ## AI / Machine Learning / Deep Learning
 
 
-<img src="../../assets/images/machine-learning/AI-ML-DL-2.png" alt="AI-ML-DL-02.png" style="max-width:100%;"/><!-- {"left" : 1.02, "top" : 2.69, "height" : 4.26, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/AI-ML-DL-2.png" alt="AI-ML-DL-02.png" style="max-width:100%;"/><!-- {"left" : 2.01, "top" : 3.36, "height" : 6.99, "width" : 13.47} -->
 
 
 Notes:
@@ -57,14 +57,16 @@ Notes:
 
 * **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/sLsCN9ZL9RI)
 
-<img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 1.7, "top" : 3.88, "height" : 5.95, "width" : 14.11} -->
+
+
 
 ---
 
 ## Deep Neural Network - Face Recognition
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" style="width:32%;"/><!-- {"left" : 2.64, "top" : 1.53, "height" : 6.59, "width" : 4.98} -->
+<img src="../../assets/images/machine-learning/3rd-party/Face-Recognition.png" style="width:32%;"/><!-- {"left" : 5.5, "top" : 2.56, "height" : 8.59, "width" : 6.49} -->
 
 
 Notes:
@@ -89,7 +91,7 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
-<!-- {"left" : 0.13, "top" : 1.18, "height" : 6.74, "width" : 9.99, "columnwidth" : [2.59, 3.32, 4.09]} -->
+<!-- {"left" : 0.37, "top" : 2.36, "height" : 1, "width" : 16.76, "columnwidth" : [4.34, 5.57, 6.86]} -->
 
 
 
@@ -104,7 +106,7 @@ Notes:
 ## Machine Learning vs. Deep Learning
 
 
-<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" style="width:60%;"/><!-- {"left" : 1.18, "top" : 1.83, "height" : 5.98, "width" : 7.88} -->
+<img src="../../assets/images/machine-learning/machine_learning_vs_deep_learning.png" style="width:60%;"/><!-- {"left" : 3.61, "top" : 2.95, "height" : 7.8, "width" : 10.28} -->
 
 
 Notes:
@@ -115,7 +117,7 @@ Notes:
 
 ## 1980's and 1990's
 
-<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-01.png" style="width:80%;"/><!-- {"left" : 0.71, "top" : 2.28, "height" : 5.08, "width" : 8.83} -->
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-01.png" style="width:80%;"/><!-- {"left" : 2.43, "top" : 2.56, "height" : 7.27, "width" : 12.64} -->
 
 
 
@@ -129,7 +131,7 @@ Source: Jeff Dean
 
 ## 1990+
 
-<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-02.png" style="width:80%;"/><!-- {"left" : 0.22, "top" : 2, "height" : 5.64, "width" : 9.8} -->
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-02.png" style="width:80%;"/><!-- {"left" : 1.81, "top" : 2.86, "height" : 7.99, "width" : 13.89} -->
 
 
 
@@ -142,7 +144,7 @@ Source: Jeff Dean
 
 ## Now
 
-<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-03.png" style="width:80%;"/><!-- {"left" : 0.31, "top" : 2.05, "height" : 5.55, "width" : 9.64} -->
+<img src="../../assets/images/machine-learning/ML-vs-DL-timeline-1980-1990-03.png" style="width:80%;"/><!-- {"left" : 2.34, "top" : 2.5, "height" : 7.39, "width" : 12.83} -->
 
 
 
@@ -163,7 +165,7 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
-<!-- {"left" : 0.25, "top" : 1.18, "height" : 6.89, "width" : 9.75, "columnwidth" : [2.86, 3.17, 3.72]} -->
+<!-- {"left" : 0.78, "top" : 2.48, "height" : 1, "width" : 15.95} -->
 
 Notes:
 
@@ -178,9 +180,9 @@ Notes:
 | Data has well defined structure.                         | Structure is not well defined or non existing |
 | Data in a database tables are well defined.  10 columns, first column is integer, second column is timestamp ..etc | videos, images                                             |
 
-<!-- {"left" : 0.26, "top" : 1.18, "height" : 2.65, "width" : 9.82, "columnwidth" : [6.33, 3.49]} -->
+<!-- {"left" : 3.84, "top" : 2.19, "height" : 1, "width" : 14.75, "columnwidth" : [6.33, 3.49]} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="XXX image not found" style="max-width:60%;"/><!-- {"left" : 1.53, "top" : 4.35, "height" : 3.83, "width" : 7.19} -->
+<img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="XXX image not found" style="max-width:60%;"/><!-- {"left" : 3.91, "top" : 6.02, "height" : 5.16, "width" : 9.69} -->
 
 
 Notes:
@@ -200,7 +202,7 @@ Notes:
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
 
-<!-- {"left" : 2.1, "top" : 1.77, "height" : 2.68, "width" : 6.04, "columnwidth" : [1.36, 1.44, 1.22, 2.02]} -->
+<!-- {"left" : 1.85, "top" : 2.96, "height" : 1, "width" : 13.8} -->
 
  * Text data (CSV, JSON) can have structure too
 
@@ -210,7 +212,7 @@ JSON data
 {   "name" : "Joe",
     "email" : "joe@gmail.com" }
 ```
-<!-- {"left" : 0, "top" : 5.87, "height" : 0.49, "width" : 3.61} -->
+<!-- {"left" : 0.85, "top" : 7.94, "height" : 0.61, "width" : 4.51} -->
 
 
 CSV data (Comma Seperated Values)
@@ -219,7 +221,7 @@ CSV data (Comma Seperated Values)
 joe,joe@gmail.com
 jane,jane@gmail.com
 ```
-<!-- {"left" : 0, "top" : 6.93, "height" : 0.81, "width" : 3.94} -->
+<!-- {"left" : 0.85, "top" : 9.4, "height" : 1.06, "width" : 5.15} -->
 
 
 
@@ -241,7 +243,7 @@ Notes:
     - Images
     - Video (YouTube videos)
 
-<img src="../../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 1.93, "top" : 5.83, "height" : 1.22, "width" : 0.97} --><img src="../../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 3.25, "top" : 5.95, "height" : 0.97, "width" : 0.97} --><img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 4.57, "top" : 5.65, "height" : 1.51, "width" : 0.97} --><img src="../../assets/images/generic/3rd-party/video-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 5.86, "top" : 5.92, "height" : 1.04, "width" : 0.97} --><img src="../../assets/images/generic/3rd-party/audio-headphones-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/><!-- {"left" : 7.15, "top" : 5.95, "height" : 0.97, "width" : 1.17} -->
+<img src="../../assets/images/generic/3rd-party/word-document-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 2.08, "top" : 7.49, "height" : 2.55, "width" : 2.03} --><img src="../../assets/images/generic/3rd-party/email-at-sign-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 4.84, "top" : 7.75, "height" : 2.03, "width" : 2.03} --><img src="../../assets/images/deep-learning/3rd-party/cat-2.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 7.59, "top" : 7.12, "height" : 3.15, "width" : 2.03} --><img src="../../assets/images/generic/3rd-party/video-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/>&nbsp;<!-- {"left" : 10.28, "top" : 7.68, "height" : 2.17, "width" : 2.03} --><img src="../../assets/images/generic/3rd-party/audio-headphones-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="10%"/><!-- {"left" : 12.98, "top" : 7.75, "height" : 2.03, "width" : 2.44} -->
 
 
 Notes:
@@ -265,8 +267,11 @@ Notes:
     "image_url" : "https://imgurl.com/1234"
 }
 ```
-<!-- {"left" : 0, "top" : 3, "height" : 1.41, "width" : 10.25} -->
-**Question to the class: What data points you can extract from above tweet?      Which is structured / unstructured?**
+<!-- {"left" : 0.85, "top" : 4.6, "height" : 2.05, "width" : 16.14} -->
+
+<br/>
+
+* **Question to the class: What data points you can extract from above tweet? Which is structured / unstructured?**
 
 Notes:
 
@@ -287,7 +292,7 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
-<!-- {"left" : 0.25, "top" : 1.18, "height" : 6.89, "width" : 9.75, "columnwidth" : [2.86, 3.17, 3.72]} -->
+<!-- {"left" : 0.78, "top" : 2.48, "height" : 1, "width" : 15.95, "columnwidth" : [4.68, 5.19, 6.09]} -->
 
 
 Notes:
@@ -316,7 +321,7 @@ Notes:
 
 ## Video: How Scale is Helping Deep Learning
 
-<img src="../../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 1.36, "top" : 1.34, "height" : 4.04, "width" : 7.52} -->
+<img src="../../assets/images/deep-learning/3rd-party/video-dl-scale-andrew-ng.png" alt="XXX image missing" style="background:white;border: 2px solid grey; max-width:100%;" width="60%"/><!-- {"left" : 3.54, "top" : 2.2, "height" : 5.59, "width" : 10.41} -->
 
 
 [Link](https://www.youtube.com/watch?v=LcfLo7YP8O4)

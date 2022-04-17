@@ -5,7 +5,7 @@
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-regressions-1.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.5, "height" : 5.48, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-regressions-1.png" style="width:80%;"/><!-- {"left" : 2.39, "top" : 2.61, "height" : 8.48, "width" : 12.71} -->
 
 
 
@@ -35,7 +35,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 | 3                  | 1                   | 1999           | 499                                                  |
 | 3                  | 2.4                 | 2199           | 549                                                  |
 
-<!-- {"left" : 0.15, "top" : 4.54, "height" : 3.35, "width" : 9.95, "columnwidth" : [2.49, 2.77, 2.2, 2.49]} -->
+<!-- {"left" : 0.59, "top" : 6.28, "height" : 1, "width" : 16.33} -->
 
 Notes:
 
@@ -50,7 +50,7 @@ Notes:
 | Polynomial Regression | If power of independent variable is more than 1. <br/>  Y = a * X + b * X<sup>2</sup>   <br/>- Can be prone to overfitting  <br/>- Results can be hard to explain      |                                        |
 | Stepwise Regression   | -When we have multiple independent variables, automatically selects significant variables  <br/>- No human intervention  <br/>- AIC                                    | - House price predictor                |
 
-<!-- {"left" : 0.25, "top" : 1.1, "height" : 5.51, "width" : 9.75, "columnwidth" : [2.64, 4.61, 2.5]} -->
+<!-- {"left" : 0.41, "top" : 1.9, "height" : 1, "width" : 16.67} -->
 
 
 Notes:
@@ -70,6 +70,6 @@ https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/
 | Lasso Regression      | - Uses L1 regularization                                                             |          |
 | ElasticNet Regression | - Hybrid of Lasso and Ridge regressions                                              |          |
 
-<!-- {"left" : 0.25, "top" : 1.31, "height" : 2.96, "width" : 9.75} -->
+<!-- {"left" : 0.78, "top" : 2.2, "height" : 1, "width" : 15.95} -->
 
 Notes:

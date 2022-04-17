@@ -31,7 +31,12 @@ About-Machine-Learning-With-Python-Class-2-days-2019-11-04.md
 ../../python/slides/PYTHON-Sklearn.md
 
 ## Algorithms
+
+### Regressions 
 Regressions-Python.md
+
+### Classifications
+../generic/Classification-Intro.md
 Classifications-Python.md
 Unsupervised-Python.md
 

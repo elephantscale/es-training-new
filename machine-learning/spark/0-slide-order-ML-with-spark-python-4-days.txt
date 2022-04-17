@@ -35,7 +35,10 @@ Spark-ML-Overview.md
 Regressions-Spark.md
 
 ## classifications
-Classification-Spark.md
+../generic/Classification-Intro.md
+Classification-Logistic-Spark.md
+Classification-SVM-Spark.md
+Classification-Naive-Bayes-Spark.md
 
 ## Trees
 Decision-Trees-Spark.md

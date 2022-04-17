@@ -1,15 +1,21 @@
 # Vault Configuration
 
+---
+
 # How does Vault encrypt data?
 
+---
+
 ## How does Vault encrypt data?
+
+<img src="../artwork/go-logo.png"  style="width:70%; style="width:40%;float:right;"/> <!-- {"left" : 7.69, "top" : 1.45, "height" : 2.51, "width" : 2.22} -->
 
 * Vault encrypts data by leveraging a few key sources. 
     * The libraries that Vault uses, or the cryptography modules
     * Golang's crypto and 
     * x/crypto libraries that are part of the golang language.
   
-![](../artwork/go-logo.png)
+
 
 ---
 
@@ -92,8 +98,8 @@ When we talk about encryption, there are two key things that we need to focus on
 
 * The entropy of Vault's encryption varies depending upon what system Vault is being run on
   * Golang's crypto and x/crypto libraries use a randomized function that calls different entropy pools
-    *  Entropy pool for Windows  
-    *  Entropy pool for Linux
+    * Entropy pool for Windows  
+    * Entropy pool for Linux
 
 Notes:
 
@@ -217,7 +223,8 @@ Notes:
 
 ## Dynamic secrets
 
-![](../artwork/fig22-1.png)
+<img src="../artwork/fig22-1.png"  style="width:70%;"/> <!-- {"left" : 0.49, "top" : 2.82, "height" : 3.43, "width" : 9.26} -->
+
 
 Notes:
 
@@ -234,13 +241,15 @@ Notes:
 
 * The lab requires a Postgres database. Docker provides a Postgres server image that satisfies this requirement.
 
-  * NOTE: This lab works for an existing Postgres database given appropriate credentials and connection information.
+  * NOTE : This lab works for an existing Postgres database given appropriate credentials and connection information.
 
   * Pull a Postgres server image with `docker`.
 
 ```shell
 docker pull postgres:latest
 ```
+<!-- {"left" : 0, "top" : 3.42, "height" : 0.57, "width" : 5.28} -->
+
 
 ---
 
@@ -257,6 +266,8 @@ docker run \
       --publish 5432:5432 \
       postgres
 ```
+<!-- {"left" : 0, "top" : 2.21, "height" : 2.56, "width" : 8.94} -->
+
 
 Notes:
 
@@ -272,18 +283,21 @@ Notes:
 ```shell
 docker exec -it postgres psql
 ```
+<!-- {"left" : 0, "top" : 3.15, "height" : 0.51, "width" : 5.07} -->
 
 * Create a role named ro.
 
 ```shell
 CREATE ROLE ro NOINHERIT;
 ```
+<!-- {"left" : 0, "top" : 4.18, "height" : 0.55, "width" : 4.77} -->
 
 * Grant the ability to read all tables to the role named ro
 
 ```shell
 Grant the ability to read all tables to the role named ro.
 ```
+<!-- {"left" : 0, "top" : 5.24, "height" : 0.54, "width" : 9.9} -->
 
 Notes:
 
@@ -304,6 +318,8 @@ Notes:
 ```shell
 vault server -dev -dev-root-token-id root
 ```
+<!-- {"left" : 0, "top" : 2.07, "height" : 0.57, "width" : 7.61} -->
+
 
 Notes:
 
@@ -311,17 +327,22 @@ Notes:
 
 * **Insecure operation**: Do not run a Vault dev server in production. This approach starts a Vault server with an in-memory database and runs in an insecure way.
 
+---
+
 ## Export environment variables
 
 ```shell
 export VAULT_ADDR=http://127.0.0.1:8200
 ```
+<!-- {"left" : 0, "top" : 1.04, "height" : 0.52, "width" : 6.67} -->
+
 
 * Export an environment variable for the vault CLI to authenticate with the Vault server.
 
 ```shell
 export VAULT_TOKEN=root
 ```
+<!-- {"left" : 0, "top" : 2.67, "height" : 0.57, "width" : 4.61} -->
 
 Notes:
 
@@ -351,6 +372,7 @@ Notes:
 ```shell
 vault secrets enable database
 ```
+<!-- {"left" : 0, "top" : 1.71, "height" : 0.57, "width" : 5.61} -->
 
 ---
 
@@ -370,6 +392,8 @@ vault write database/config/postgresql \
      username="root" \
      password="rootpassword"
 ```
+<!-- {"left" : 0, "top" : 4.24, "height" : 1.17, "width" : 10.25} -->
+
 
 ---
 
@@ -387,6 +411,7 @@ CREATE ROLE "{{name}}" WITH LOGIN PASSWORD '{{password}}' VALID UNTIL '{{expirat
 GRANT ro TO "{{name}}";
 EOF
 ```
+<!-- {"left" : 0, "top" : 4.14, "height" : 0.89, "width" : 10.25} -->
 
 Notes:
 
@@ -403,6 +428,8 @@ vault write database/roles/readonly \
       default_ttl=1h \
       max_ttl=24h
 ```
+<!-- {"left" : 0, "top" : 1.37, "height" : 1.99, "width" : 8.73} -->
+
 
 Notes:
 
@@ -421,12 +448,19 @@ Notes:
 ```shell
 vault read database/creds/readonly
 ```
+<!-- {"left" : 0, "top" : 3.01, "height" : 0.57, "width" : 6.44} -->
+
+---
 
 ## Result
 
 * You will get something like this
 
-![](../artwork/fig22-2.png)
+
+<img src="../artwork/fig22-2.png"  style="width:70%;"/><!-- {"left" : 0.34, "top" : 2.14, "height" : 2.26, "width" : 9.57} -->
+
+
+
 
 Notes:
 
@@ -445,6 +479,8 @@ Notes:
 ```shell
 SELECT usename, valuntil FROM pg_user;
 ```
+<!-- {"left" : 0, "top" : 3.88, "height" : 0.57, "width" : 7.11} -->
+
 
 ---
 
@@ -452,7 +488,10 @@ SELECT usename, valuntil FROM pg_user;
 
 * You will see this kind of output
 
-![](../artwork/fig22-3.png)
+
+<img src="../artwork/fig22-3.png"  style="width:70%;"/><!-- {"left" : 0.34, "top" : 2.01, "height" : 1.63, "width" : 9.57} -->
+
+
 
 Notes:
 
@@ -463,6 +502,7 @@ Notes:
 ```shell
 \q
 ```
+
 
 ---
 
@@ -477,6 +517,10 @@ Notes:
 ```shell
  vault list sys/leases/lookup/database/creds/readonly
 ```
+<!-- {"left" : 0, "top" : 3.4, "height" : 0.57, "width" : 9.44} -->
+
+
+---
 
 ## Leases
 
@@ -487,6 +531,7 @@ Notes:
 ```shell
 LEASE_ID=$(vault list -format=json sys/leases/lookup/database/creds/readonly | jq -r ".[0]")
 ```
+<!-- {"left" : 0, "top" : 2.26, "height" : 0.36, "width" : 10.25} -->
 
 ---
 
@@ -497,12 +542,17 @@ LEASE_ID=$(vault list -format=json sys/leases/lookup/database/creds/readonly | j
 ```shell
 vault lease renew database/creds/readonly/$LEASE_ID
 ```
+<!-- {"left" : 0, "top" : 2.04, "height" : 0.57, "width" : 9.29} -->
 
-![](../artwork/fig22-4.png)
+<img src="../artwork/fig22-4.png"  style="width:70%;"/><!-- {"left" : 0.76, "top" : 3.13, "height" : 1.32, "width" : 8.74} -->
+
+
 
 Notes:
 
 * Note that the TTL of the renewed lease is set to 1h.
+
+---
 
 ## Revoke
 
@@ -511,6 +561,7 @@ Notes:
 ```shell
 vault lease revoke database/creds/readonly/$LEASE_ID
 ```
+<!-- {"left" : 0, "top" : 1.53, "height" : 0.55, "width" : 9.07} -->
 
 * Observe success status
 
@@ -523,6 +574,8 @@ vault lease revoke database/creds/readonly/$LEASE_ID
 ```shell
 vault list sys/leases/lookup/database/creds/readonly
 ```
+<!-- {"left" : 0, "top" : 1.51, "height" : 0.57, "width" : 9.44} -->
+
 
 * The lease is no longer valid and is not displayed.
 
@@ -535,8 +588,13 @@ vault list sys/leases/lookup/database/creds/readonly
 ```shell
 vault read database/creds/readonly
 ```
+<!-- {"left" : 0, "top" : 1.66, "height" : 0.57, "width" : 6.44} -->
 
-![](../artwork/fig22-5.png)
+
+<img src="../artwork/fig22-5.png"  style="width:70%;"/><!-- {"left" : 1.19, "top" : 2.49, "height" : 1.73, "width" : 7.86} -->
+
+
+<br/>
 
 * All leases associated with a path may be removed.
 
@@ -549,6 +607,7 @@ vault read database/creds/readonly
 ```shell
 vault lease revoke -prefix database/creds/readonly
 ```
+<!-- {"left" : 0, "top" : 2.13, "height" : 0.57, "width" : 9.11} -->
 
 Notes:
 
@@ -605,6 +664,8 @@ rule "charset" {
 }
 EOF
 ```
+<!-- {"left" : 0, "top" : 2.12, "height" : 6, "width" : 6.39} -->
+
 
 Notes:
 
@@ -619,6 +680,8 @@ Notes:
 ```shell
 vault write sys/policies/password/example policy=@example_policy.hcl
 ```
+<!-- {"left" : 0, "top" : 2.15, "height" : 0.47, "width" : 10.07} -->
+
 
 Notes:
 
@@ -633,6 +696,8 @@ Notes:
 ```shell
 vault read sys/policies/password/example/generate
 ```
+<!-- {"left" : 0, "top" : 1.76, "height" : 0.57, "width" : 8.94} -->
+
 
 ```text
 Key         Value
@@ -640,6 +705,8 @@ Key         Value
 password    zUKMWPOr821D%DZHklt%
 
 ```
+<!-- {"left" : 0, "top" : 2.62, "height" : 1.15, "width" : 6.11} -->
+
 
 Notes:
 
@@ -655,9 +722,13 @@ Notes:
 vault write database/config/postgresql \
      password_policy="example"
 ```
+<!-- {"left" : 0, "top" : 2.16, "height" : 0.86, "width" : 7.44} -->
+
 
 Notes:
 * The same connection information is used to establish the connection with the database server. The difference is that the password_policy has been set to the example policy.
+
+---
 
 ## Read creds
 
@@ -666,10 +737,11 @@ Notes:
 ```shell
 vault read database/creds/readonly
 ```
+<!-- {"left" : 0, "top" : 1.48, "height" : 0.57, "width" : 6.44} -->
 
 * You will get similar output
 
-![](../artwork/fig22-6.png)
+<img src="../artwork/fig22-6.png"  style="width:70%;"/> <!-- {"left" : 0.76, "top" : 2.83, "height" : 2, "width" : 8.74} -->
 
 Notes:
 
@@ -687,8 +759,11 @@ Notes:
 ```shell
 vault read database/creds/readonly
 ```
+<!-- {"left" : 0, "top" : 4.15, "height" : 0.57, "width" : 6.44} -->
 
-![](../artwork/fig22-7.png)
+<img src="../artwork/fig22-7.png"  style="width:70%;"/><!-- {"left" : 0.86, "top" : 5.14, "height" : 1.82, "width" : 8.53} -->
+
+
 
 Notes:
 
@@ -704,6 +779,8 @@ Notes:
 vault write database/config/postgresql \
     username_template="myorg-{{.RoleName}}-{{unix_time}}-{{random 8}}"
 ```
+<!-- {"left" : 0, "top" : 2.08, "height" : 0.7, "width" : 10.12} -->
+
 
 Notes:
 
@@ -718,7 +795,11 @@ Notes:
 ```shell
 vault read database/creds/readonly
 ```
-![](../artwork/fig22-8.png)
+<!-- {"left" : 0, "top" : 1.74, "height" : 0.57, "width" : 6.44} -->
+
+
+<img src="../artwork/fig22-8.png"  style="width:70%;"/> <!-- {"left" : 0.79, "top" : 3.28, "height" : 1.82, "width" : 8.67} -->
+
 
 Notes:
 
@@ -769,7 +850,8 @@ Notes:
 
 ## Versioned Key/Value solution
 
-![](../artwork/conf-01.png)
+<img src="../artwork/conf-01.png"  style="width:70%;"/> <!-- {"left" : 0.62, "top" : 3.02, "height" : 3.02, "width" : 9.01} -->
+
 
 Notes:
 
@@ -832,7 +914,8 @@ Notes:
 
 ## Cubbyhole solution
 
-![](../artwork/conf-02.png)
+<img src="../artwork/conf-02.png"  style="width:70%;"/> <!-- {"left" : 0.63, "top" : 2.55, "height" : 3.97, "width" : 8.98} -->
+
 
 ---
 
@@ -948,7 +1031,8 @@ Notes:
 
 ## Database Root Credential Rotation - solution
 
-![](../artwork/conf-03.png)
+<img src="../artwork/conf-03.png"  style="width:70%;"/> <!-- {"left" : 0.58, "top" : 2.43, "height" : 3.47, "width" : 9.1} -->
+
 
 ---
 
@@ -970,7 +1054,8 @@ Notes:
 
 ## Database Static Roles and Credential Rotation - solution
 
-![](../artwork/conf-04.png)
+<img src="../artwork/conf-04.png"  style="width:70%;"/><!-- {"left" : 0.63, "top" : 2.41, "height" : 3.78, "width" : 8.98} -->
+
 
 Notes:
 
@@ -1000,10 +1085,10 @@ A service account is a user account that is created explicitly to provide a secu
 * When done, they check the service account back
 * Whenever a service account is checked back in, Vault rotates its password
 
-![](../artwork/conf-05.png)
+<img src="../artwork/conf-05.png"  style="width:70%;"/> <!-- {"left" : 0.58, "top" : 3.46, "height" : 3.22, "width" : 9.09} -->
+
 
 Notes:
 
 Use the AD service account check-in/check-out feature of the AD secrets engine to allow a team to share a select set of service accounts. To use the shared service accounts, the requester first checks out the account. When done using the account, they simply check the service account back in for others to use. Whenever a service account is checked back in, Vault rotates its password.
 
----

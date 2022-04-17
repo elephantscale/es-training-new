@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-741 -255 2527 1116" width="2527" height="1116">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="48" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#02329a">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-03-22 11:35:59 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_28">
+        <rect x="504.3481" y="107.39999" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_27">
+        <rect x="537.8481" y="107.39999" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_26">
+        <rect x="571.3481" y="107.39999" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_25">
+        <rect x="504.3481" y="140.73333" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_24">
+        <rect x="537.8481" y="140.73333" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_23">
+        <rect x="571.3481" y="140.73333" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_22">
+        <rect x="504.3481" y="174.06666" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_21">
+        <rect x="537.8481" y="174.06666" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_20">
+        <rect x="571.3481" y="174.06666" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_19">
+        <rect x="537.8481" y="207.4" width="25" height="25" fill="white"/>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(-671.73144 534.12175)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">ADMIN</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(-414.0435 393.75)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="48">1. Create policy for </tspan>
+          <tspan font-family="Century Gothic" font-size="48" font-weight="700" fill="#250060" y="48">apps</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="99">2. Create a new token for apps (wrapped)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <rect x="-741" y="208.12175" width="306.50587" height="306.50587" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image1.png" width="374" height="374" transform="translate(-741 208.12175) scale(.8195344)"/>
+        </g>
+      </g>
+      <g id="Line_15">
+        <line x1="-422.69667" y1="361.6547" x2="386.46605" y2="361.6547" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 1579 -254 L 1763.9533 -254 C 1775.5513 -254 1784.9533 -244.59798 1784.9533 -233 L 1784.9533 -53 C 1784.9533 -41.40202 1775.5513 -32 1763.9533 -32 L 1579 -32 C 1567.402 -32 1558 -41.40202 1558 -53 L 1558 -233 C 1558 -244.59798 1567.402 -254 1579 -254 Z" fill="#a4f8fd"/>
+        <path d="M 1579 -254 L 1763.9533 -254 C 1775.5513 -254 1784.9533 -244.59798 1784.9533 -233 L 1784.9533 -53 C 1784.9533 -41.40202 1775.5513 -32 1763.9533 -32 L 1579 -32 C 1567.402 -32 1558 -41.40202 1558 -53 L 1558 -233 C 1558 -244.59798 1567.402 -254 1579 -254 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 1641.641 -191.28376 L 1713.9346 -147.27078 C 1716.2933 -145.8348 1717.0413 -142.7586 1715.6053 -140.39991 C 1715.1898 -139.71754 1714.617 -139.14465 1713.9346 -138.72922 L 1641.641 -94.71624 C 1639.2822 -93.28026 1636.206 -94.02825 1634.77 -96.38694 C 1634.2931 -97.17035 1634.0408 -98.06985 1634.0408 -98.98702 L 1634.0408 -187.01298 C 1634.0408 -189.7744 1636.2794 -192.01298 1639.0408 -192.01298 C 1639.958 -192.01298 1640.8575 -191.7607 1641.641 -191.28376 Z" fill="white"/>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(1621.4767 -12.391304)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">Apps</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <rect x="-741" y="-232.94118" width="306.50587" height="306.50587" id="path_2"/>
+        <clipPath id="clip_path_2">
+          <use xl:href="#path_2"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_2)">
+          <image xl:href="image2.png" width="374" height="374" transform="translate(-741 -232.94118) scale(.8195344)"/>
+        </g>
+      </g>
+      <g id="Line_10">
+        <path d="M -422.69667 -139.06938 L 360.56106 -135.6149 C 382.58338 -135.51778 400.38465 -117.63782 400.38465 -95.61529 L 400.38465 -27.43092" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_9">
+        <path d="M 1520.0952 -139.06938 L 741.9663 -138.4141 C 719.8881 -138.3955 702 -120.49235 702 -98.41411 L 702 -30.372097" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_8">
+        <path d="M -579.13043 622.47826 L -578.5895 816.5286 C -578.528 838.5833 -560.6267 856.4269 -538.572 856.4171 L 1643.9797 855.4523 C 1666.0642 855.4425 1683.962 837.5368 1683.962 815.4523 L 1683.962 99.10573" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_7">
+        <line x1="1508" y1="-63" x2="683.8367" y2="356.91536" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(-414.0435 -223)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="48">5. Write secrets to </tspan>
+          <tspan font-family="Century Gothic" font-size="48" font-weight="700" fill="#250060" y="48">secret/dev</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" y="48"> path</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(-635.7573 78.56469)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">DEV</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(760.381 351.00405) rotate(-27)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">6. Login with the token</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="97">7. Read secret from </tspan>
+          <tspan font-family="Century Gothic" font-size="48" font-weight="700" fill="#250060" y="97">secret/dev</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" y="97"> </tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(902.1992 -213)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">4. Unwarp and acquire a token</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(304.8279 783)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">3. Deliver wrapping token</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <rect x="289.4158" y="-45.560976" width="526" height="526" id="path_3"/>
+        <clipPath id="clip_path_3">
+          <use xl:href="#path_3"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_3)">
+          <image xl:href="image3.png" width="450" height="450" transform="translate(289.4158 -45.560976) scale(1.1688889)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

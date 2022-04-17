@@ -11,8 +11,12 @@
 
 <!-- {"left" : 0.25, "top" : 1.4, "height" : 3.36, "width" : 9.75} -->
 
-![](../artwork/vault.png)
-![](../artwork/consul.jpeg)
+
+<img src="../artwork/vault.png"  style="width:70%;"/><!-- {"left" : 0.95, "top" : 5.25, "height" : 2.92, "width" : 2.25} -->
+
+
+<img src="../artwork/consul.jpeg"  style="width:70%;"/><!-- {"left" : 3.87, "top" : 5.56, "height" : 2.29, "width" : 5.43} -->
+
 
 Notes:
 
@@ -158,7 +162,10 @@ Notes:
 
 * [Udemy Profile for Bryan Krausen](https://www.udemy.com/user/bryan-krausen/)
 
-![](../artwork/book-cover.png)
+
+<img src="../artwork/book-cover.png"  style="width:70%;"/> <!-- {"left" : 3.72, "top" : 4.01, "height" : 3.87, "width" : 2.81} -->
+
+---
 
 ## Questions?
 

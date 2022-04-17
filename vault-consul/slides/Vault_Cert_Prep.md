@@ -1,4 +1,5 @@
 # Vault certificate preparation
+---
 
 ## HashiCorp certifications
 
@@ -99,6 +100,8 @@ path "kv/+/team_*" {
     capabilities = [ "read" ]
 }
 ```
+<!-- {"left" : 0, "top" : 1.62, "height" : 0.98, "width" : 4.79} -->
+
   * A. kv/team_edu
   * B. kv/us-west/team
   * C. kv/us-west/team_edu
@@ -134,6 +137,7 @@ A., E.
 vault write transit/decrypt/password \
   ciphertext=vault:v1:8SDd3WHDOjf7mq69CyCqYjBXAiQQAVZRkFM13ok481zoCmHnSeDX9vyf7w==
 ```  
+<!-- {"left" : 0, "top" : 1.9, "height" : 0.54, "width" : 9.07} -->
 
   * A. Returns an error due to missing encryption key name
   * B. Returns base64-encoded plaintext
@@ -182,7 +186,7 @@ A., D.
 
 * You need to edit a policy, but the UI appears as shown. What is the problem?
   
-![](../artwork/cert-01.png)
+<img src="../artwork/cert-01.png"  style="width:70%;"/> <!-- {"left" : 1.6, "top" : 2.02, "height" : 3.1, "width" : 7.05} -->
 
   * A. This is an UI error. Contact support.
   * B. You don't have a permission to manage policies.
@@ -199,7 +203,8 @@ B.
 
 * Where on the page would you click to display the list of available Vault-created encryption keys?
 
-![](../artwork/cert-02.png)
+<img src="../artwork/cert-02.png"  style="width:70%;"/> <!-- {"left" : 1.13, "top" : 2.06, "height" : 3.58, "width" : 7.99} -->
+
 
   * A. Cubbyhole/
   * B. Secrets/
@@ -534,7 +539,9 @@ C.
 
 * What type of token is shown in the following screenshot?
 
-![](../artwork/cert-03.png)
+
+<img src="../artwork/cert-03.png"  style="width:70%;"/> <!-- {"left" : 3.48, "top" : 1.72, "height" : 4.62, "width" : 6.48} -->
+
 
   * A. Child token
   * B. Parent token
@@ -889,5 +896,4 @@ Notes:
 
 C.
 
----
 

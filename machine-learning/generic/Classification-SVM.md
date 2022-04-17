@@ -163,29 +163,11 @@ Notes:
 * Standard linear kernel of SVM provides linear separation of data
 
 * As we have seen linear separation is sometimes not possible
+    - We can use more complex kernels to adopt to complex data
 
-    - Solutions: Kernels
-
-    - Polynomial kernel
-
-    - Radical kernel
-
-* SVM Kernels allow SVM to adopt to complex data
-
-
-Notes:
-
-
----
-
-## SVM With Kernel Examples
-
-* Left : Polynomial kernel of degree 3
-
-* Right: Radical kernel
+* Left : Polynomial kernel of degree 3,  right: Radical kernel
 
 <img src="../../assets/images/machine-learning/3rd-party/SVM-Kernel-01.png" alt="SVM-Kernel" style="width:70%;"/><!-- {"left" : 2.91, "top" : 4.17, "height" : 6.15, "width" : 11.68} -->
-
 
 Notes:
 

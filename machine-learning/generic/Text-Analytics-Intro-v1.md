@@ -20,7 +20,7 @@ Notes:
 
 ## Text Analytics Has Become Very Prominent
 
-<img src="../../assets/images/machine-learning/Text-Analytics-0.png" style="width:40%;float:right;"/><!-- {"left" : 5.36, "top" : 2.32, "height" : 3.8, "width" : 4.75} -->
+<img src="../../assets/images/machine-learning/Text-Analytics-0.png" style="width:40%;float:right;"/><!-- {"left" : 10.15, "top" : 2.21, "height" : 5.64, "width" : 7.05} -->
 
  * Rise of social media (Twitter / Facebook) allows lots of text exchanges
 
@@ -46,7 +46,7 @@ Notes:
 ## Use Case: Customer Service Via Social Media
 
 
-<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-1.png" alt="Text-Analytics-1.png" style="width:55%"/><!-- {"left" : 0.27, "top" : 2.15, "height" : 5.35, "width" : 9.72} -->
+<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-1.png" alt="Text-Analytics-1.png" style="width:55%"/><!-- {"left" : 1.4, "top" : 2.74, "height" : 8.09, "width" : 14.7} -->
 
 
 Notes:
@@ -60,7 +60,7 @@ Notes:
 - What are customers saying about a brand / product
 
 
-<img src="../../assets/images/machine-learning/Text-Analytics-2.png" alt="Text-Analytics-2.png" style="width:60%;"/><!-- {"left" : 1.24, "top" : 2.43, "height" : 4.79, "width" : 7.76} -->
+<img src="../../assets/images/machine-learning/Text-Analytics-2.png" alt="Text-Analytics-2.png" style="width:60%;"/><!-- {"left" : 3.68, "top" : 4.15, "height" : 6.26, "width" : 10.14} -->
 
 
 Notes:
@@ -69,13 +69,13 @@ Notes:
 
 ## Use Case - Sentiment Analytics
 
-<img src="../../assets/images/data-analysis-python/3rd-party/twitter-sentiment-analysis.jpeg" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.17, "height" : 5.31, "width" : 8.21} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/twitter-sentiment-analysis.jpeg" style="width:75%;"/><!-- {"left" : 2.97, "top" : 2.46, "height" : 7.47, "width" : 11.55} -->
 
 
 
 ---
 
-## Use Case : Support Tickets
+## Use Case: Support Tickets
 
 - Automatic ticket routing
     - Parse the ticket / understand the context and send it to the right queue
@@ -88,7 +88,7 @@ Ticket-123
 When I try to save the document as PDF, it crashes
 ```
 
-<!-- {"left" : 0, "top" : 3.3, "height" : 1.07, "width" : 9.11} -->
+<!-- {"left" : 0.85, "top" : 3.97, "height" : 1.5, "width" : 12.8} -->
 
 Notes:
 
@@ -122,7 +122,7 @@ Notes:
 
 ## Visualizing Text - Word Clouds (State of the Union Speech 2014)
 
-<img src="../../assets/images/machine-learning/3rd-party/text-analytics-word-cloud-1.png"  style="width:60%;float:right;"/><!-- {"left" : 5.45, "top" : 2.16, "height" : 2.9, "width" : 4.72} -->
+<img src="../../assets/images/machine-learning/3rd-party/text-analytics-word-cloud-1.png"  style="width:60%;float:right;"/><!-- {"left" : 10.02, "top" : 2.34, "height" : 4.42, "width" : 7.2} -->
 
 - Word Clouds are really neat way to get a 'sense' of the text
 
@@ -145,7 +145,7 @@ Notes:
 
  * Split the document(s) into words
 
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-1.png"  style="width:79%"/><!-- {"left" : 1.02, "top" : 2.49, "height" : 4.66, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-1.png"  style="width:79%"/><!-- {"left" : 2.77, "top" : 3.79, "height" : 6.79, "width" : 11.97} -->
 
 
 Notes:
@@ -158,7 +158,7 @@ Notes:
 
 ## Bag Words Example 1: 'Moby Dick' by Herman Melville
 
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-moby-dick-1.png" style="width:۶0%"/><!-- {"left" : 1.02, "top" : 2.12, "height" : 5.41, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-moby-dick-1.png" style="width:۶0%"/><!-- {"left" : 2.31, "top" : 2.61, "height" : 8.49, "width" : 12.89} -->
 
 
 
@@ -171,7 +171,7 @@ Notes:
 
 ## Bag Words Example2: 'Alice in Wonderland' by Lewis Carrol
 
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:60%"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.35, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:60%"/><!-- {"left" : 2.38, "top" : 2.71, "height" : 8.3, "width" : 12.73} -->
 
 
 Notes:
@@ -218,7 +218,7 @@ It was the best of times. It was the worst of times! It was the age of wisdom!!
 $123
 
 ```
-<!-- {"left" : 0, "top" : 2.1, "height" : 0.59, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.54, "height" : 0.81, "width" : 14.03} -->
 
 
 Notes:
@@ -236,10 +236,10 @@ It was the best of times. It was the worst of times! It was the age of wisdom!!
 $123
 
 ```
-<!-- {"left" : 0, "top" : 1.49, "height" : 0.59, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.52, "height" : 0.85, "width" : 14.79} -->
 
 
-<img src="../../assets/images/machine-learning/Text-Analytics-7.png" style="width:20%"/><!-- {"left" : 3.84, "top" : 2.69, "height" : 0.97, "width" : 1.91} -->
+<img src="../../assets/images/machine-learning/Text-Analytics-7.png" style="width:20%"/><!-- {"left" : 6.8, "top" : 4.11, "height" : 1.4, "width" : 2.76} -->
 
 
 ```text
@@ -247,16 +247,16 @@ it was the best of times. it was the worst of times! it was the age of wisdom!!
 $123
 
 ```
-<!-- {"left" : 0, "top" : 4.18, "height" : 0.59, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 6.4, "height" : 0.85, "width" : 14.79} -->
 
-<img src="../../assets/images/machine-learning/Text-Analytics-8.png" style="width:40%"/><!-- {"left" : 2.06, "top" : 5.44, "height" : 1.17, "width" : 6.13} -->
+<img src="../../assets/images/machine-learning/Text-Analytics-8.png" style="width:40%"/><!-- {"left" : 4.33, "top" : 8.08, "height" : 1.69, "width" : 8.84} -->
 
 
 ```text
 it was the best of times it was the worst of times it was the age of wisdom
 
 ```
-<!-- {"left" : 0, "top" : 6.88, "height" : 0.42, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 10.3, "height" : 0.61, "width" : 14.79} -->
 
 
 Notes:
@@ -267,7 +267,7 @@ Notes:
 
 ## Dealing With Stop Words
 
-<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:50%;float:right;"/><!-- {"left" : 5.93, "top" : 1.62, "height" : 2.81, "width" : 4.31} -->
+<img src="../../assets/images/machine-learning/text-analytics-bag-of-words-alice-1.png"  style="width:50%;float:right;"/><!-- {"left" : 9.83, "top" : 2.49, "height" : 4.85, "width" : 7.44} -->
 
  * Sample stop words
      - English (total 153):  *'a', 'about', 'above', 'after', 'again', 'against',..*
@@ -292,9 +292,9 @@ Notes:
 it was the best of times it was the worst of times it was the age of wisdom
 
 ```
-<!-- {"left" : 0, "top" : 1.57, "height" : 0.42, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.15, "height" : 0.57, "width" : 13.85} -->
 
-<img src="../../assets/images/machine-learning/Text-Analytics-9.png" style="width:30%"/><!-- {"left" : 3.13, "top" : 2.65, "height" : 1.19, "width" : 3.99} -->
+<img src="../../assets/images/machine-learning/Text-Analytics-9.png" style="width:30%"/><!-- {"left" : 5.18, "top" : 3.61, "height" : 1.61, "width" : 5.39} -->
 
 
 
@@ -311,16 +311,16 @@ English stopwords
  who, whom, why, will, with, would, yet, you, your
 
 ```
-<!-- {"left" : 0, "top" : 4.03, "height" : 2.12, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 5.48, "height" : 2.86, "width" : 13.85} -->
 
-<img src="../../assets/images/machine-learning/Text-Analytics-10.png" style="width:10%"/><!-- {"left" : 4.45, "top" : 6.47, "height" : 1.19, "width" : 1.36} -->
+<img src="../../assets/images/machine-learning/Text-Analytics-10.png" style="width:10%"/><!-- {"left" : 6.96, "top" : 8.77, "height" : 1.61, "width" : 1.84} -->
 
 
 ```text
 best times worst times age wisdom
 
 ```
-<!-- {"left" : 0, "top" : 7.99, "height" : 0.54, "width" : 6.28} -->
+<!-- {"left" : 0.85, "top" : 10.62, "height" : 0.73, "width" : 8.48} -->
 
 
 
@@ -337,7 +337,7 @@ Notes:
 
  * Can you spot the differences in word-tokenization below?
 
-<img src="../../assets/images/machine-learning/text-analytics-tokenizing-1.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3.64, "height" : 3.79, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning/text-analytics-tokenizing-1.png" style="width:70%"/><!-- {"left" : 3.5, "top" : 5.8, "height" : 4.84, "width" : 10.49} -->
 
 
 Notes:
@@ -359,7 +359,7 @@ It was the best of times. It was the worst of times! It was the age of wisdom!!
 $123
 
 ```
-<!-- {"left" : 0, "top" : 2.15, "height" : 1.17, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.89, "height" : 1.45, "width" : 12.67} -->
 
 
 
@@ -370,7 +370,7 @@ Cleaned text
 best times worst times age wisdom
 
 ```
-<!-- {"left" : 0, "top" : 3.5, "height" : 1.33, "width" : 6.28} -->
+<!-- {"left" : 0.85, "top" : 4.56, "height" : 1.64, "width" : 7.76} -->
 
 
 ```text
@@ -391,7 +391,7 @@ Total number of words = 6
 +-------+-----+
 
 ```
-<!-- {"left" : 0, "top" : 4.99, "height" : 3.97, "width" : 4.94} -->
+<!-- {"left" : 0.85, "top" : 6.4, "height" : 4.91, "width" : 6.11} -->
 
 
 
@@ -413,7 +413,7 @@ Notes:
 
     * Context is lost.Both sentences below map to same 'bag of words'.But the meaning is very different.
 
-<img src="../../assets/images/machine-learning/text-bag-of-words-2.png" style="width:70%"/><!-- {"left" : 0.29, "top" : 3.81, "height" : 1.45, "width" : 9.67} -->
+<img src="../../assets/images/machine-learning/text-bag-of-words-2.png" style="width:70%"/><!-- {"left" : 1.17, "top" : 6.18, "height" : 2.27, "width" : 15.16} -->
 
 
 
@@ -427,7 +427,7 @@ Notes:
 
 ## N-gram Analysis
 
-<img src="../../assets/images/machine-learning/text-ngrams-1.png" style="width:50%;float:right;" /><!-- {"left" : 5.53, "top" : 1.9, "height" : 2.61, "width" : 4.54} -->
+<img src="../../assets/images/machine-learning/text-ngrams-1.png" style="width:50%;float:right;" /><!-- {"left" : 9.03, "top" : 2.27, "height" : 4.64, "width" : 8.08} -->
 
  * N-gram: sequence of  'n' number of words
      - Words have to be sequential
@@ -473,7 +473,7 @@ Notes:
 ('at', 'the'): 318
 
 ```
-<!-- {"left" : 0, "top" : 4.12, "height" : 2.92, "width" : 4.28} -->
+<!-- {"left" : 0.85, "top" : 5.45, "height" : 4.71, "width" : 6.9} -->
 
 
 
@@ -492,7 +492,7 @@ Notes:
      - Before cleanup: 215,136  words
      - After 'stop word' cleanup: 115,093  words
 
- <img src="../../assets/images/machine-learning/text-ngrams-moby-dick-1.png" style="width:60%;"/><!-- {"left" : 1.02, "top" : 3.82, "height" : 3.8, "width" : 8.21} -->
+ <img src="../../assets/images/machine-learning/text-ngrams-moby-dick-1.png" style="width:60%;"/><!-- {"left" : 3.01, "top" : 5.35, "height" : 5.31, "width" : 11.48} -->
 
 
 

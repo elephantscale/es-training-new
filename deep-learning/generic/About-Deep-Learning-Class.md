@@ -1,8 +1,8 @@
 # Deep Learning With TensorFlow & Keras
 
-<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" style="width:20%;"/>  <!-- {"left" : 2.91, "top" : 6.29, "height" : 2.14, "width" : 2.33} -->    &nbsp; &nbsp;
- <img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
-<img src="../../assets/images/logos/keras-logo-1.png" style="width:15%;"/>  <!-- {"left" : 7.97, "top" : 6.91, "height" : 0.52, "width" : 1.81} -->
+<img src="../../assets/images/deep-learning/Deep-Neural-Networks.png" style="width:20%;"/>  <!-- {"left" : 3.79, "top" : 7.53, "height" : 3.09, "width" : 3.37} -->    &nbsp; &nbsp;
+ <img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 8.08, "top" : 7.92, "height" : 1.78, "width" : 2.1} -->    &nbsp; &nbsp;
+<img src="../../assets/images/logos/keras-logo-1.png" style="width:15%;"/>  <!-- {"left" : 11.1, "top" : 8.43, "height" : 0.75, "width" : 2.62} -->
 
 
 
@@ -25,7 +25,7 @@ Notes:
 ---
 ## Pre-requisites and Expectations
 
-<img src="../../assets/images/logos/python-logo-1.png" style="background:white;width:25%;float:right;"/><!-- {"left" : 6.19, "top" : 1.61, "height" : 0.91, "width" : 3.79} -->
+<img src="../../assets/images/logos/python-logo-1.png" style="background:white;width:25%;float:right;"/><!-- {"left" : 11.74, "top" : 2.08, "height" : 1.35, "width" : 5.6} -->
 
  * Basic Python knowledge is assumed
     - if you are new to Python, we will provide some resources
@@ -45,7 +45,7 @@ Notes:
 ---
 ## Data Science Totem pole
 
-<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/><!-- {"left" : 0.55, "top" : 2.08, "height" : 5.48, "width" : 9.16} -->
+<img src="../../assets/images/machine-learning/data-science-totem-pole.png" alt="data-science-totem-pole.png" style="width:80%;"/> <!-- {"left" : 2.19, "top" : 2.9, "height" : 7.91, "width" : 13.12} -->
 
 
 Notes:
@@ -53,7 +53,6 @@ Notes:
 ---
 
 ## Agenda - 3 Days
-
 
 *  **Day 1 (Introducing TensorFlow and Deep Learning)**
     - Deep Learning Intro
@@ -65,7 +64,7 @@ Notes:
      - Deep Learning concepts
      - Regression
      - Classification
-*  **Day 3  (Deep Learning)**
+*  **Day 3 (Deep Learning)**
      - CNNs (Images)
      - RNNs (Text, Translation)
      - Transfer Learning
@@ -85,7 +84,7 @@ Notes:
 
  * Hands-on (learn by doing)
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;"/> <!-- {"left" : 2.05, "top" : 3.28, "height" : 4.97, "width" : 6.16} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;"/> <!-- {"left" : 4.75, "top" : 4.55, "height" : 6.45, "width" : 7.99} -->
 
 
 
@@ -102,7 +101,7 @@ Notes:
      - Familiarity with TensorFlow / Deep Learning (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 2.31, "top" : 7.39, "height" : 3.17, "width" : 3.58} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 5.93, "top" : 7.42, "height" : 3.06, "width" : 5.64} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 11.6, "top" : 7.39, "height" : 3.17, "width" : 3.58} -->
 
 Notes:
 
