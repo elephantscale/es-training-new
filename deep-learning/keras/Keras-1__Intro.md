@@ -1,6 +1,6 @@
 # Introduction to Keras
 
-<img src="../../assets/images/logos/keras-logo-1.png" alt="keras-logo-1.png" style="width:40%;"/><!-- {"left" : 4.97, "top" : 8.21, "height" : 0.71, "width" : 2.45} -->
+<img src="../../assets/images/logos/keras-logo-1.png" alt="keras-logo-1.png" style="width:40%;"/><!-- {"left" : 6.34, "top" : 7.87, "height" : 1.4, "width" : 4.82} -->
 
 
 ---
@@ -30,7 +30,7 @@ Notes:
 * Written in Python
 * Works with [Tensorflow](https://github.com/tensorflow/tensorflow)(from Google), [CNTK](https://github.com/Microsoft/cntk)(from Microsoft) and [Theano](https://github.com/Theano/Theano)
 
-<img src="../../assets/images/deep-learning/keras-architecture.png" alt="XXX image missing" style="border: 5px solid grey;width:55%;"/><!-- {"left" : 2.2, "top" : 3.57, "height" : 4.13, "width" : 5.85} -->
+<img src="../../assets/images/deep-learning/keras-architecture.png" alt="XXX image missing" style="border: 5px solid grey;width:55%;"/><!-- {"left" : 4.73, "top" : 5.65, "height" : 5.68, "width" : 8.05} -->
 
 
 Notes:  
@@ -40,7 +40,7 @@ NVIDIA - leading GPU vendor - provides CUDA (Compute Unified Device Architecture
 
 ## Keras Features
 
-<img src="../../assets/images/machine-learning/keras-cpu-gpu-tpu-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.96, "top" : 2.11, "height" : 2.15, "width" : 4.08} -->
+<img src="../../assets/images/machine-learning/keras-cpu-gpu-tpu-1.png" style="width:50%;float:right;"/><!-- {"left" : 9.87, "top" : 2.47, "height" : 3.7, "width" : 7.02} -->
 
 * Write high level code
     - easier to write
@@ -61,7 +61,7 @@ https://www.quora.com/Why-has-Keras-been-so-successful-lately-at-Kaggle-competit
 
 ## Keras Guiding Principles
 
-<img src="../../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; float:right;"/><!-- {"left" : 6.67, "top" : 1.28, "height" : 2.35, "width" : 3.14} -->
+<img src="../../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; float:right;"/><!-- {"left" : 11.37, "top" : 2.19, "height" : 4.31, "width" : 5.76} -->
 
  * **User Friendliness**  
    - Offers consistent, simple APIs
@@ -88,7 +88,7 @@ Here is a quick comparison of writing [MNIST](https://en.wikipedia.org/wiki/MNIS
 | Tensorflow | 31         | 2162                         | 70                             |
 | Keras      | 22         | 1018                         | 46                             |
 
-<!-- {"left" : 0.25, "top" : 2.08, "height" : 1.69, "width" : 9.75} -->
+<!-- {"left" : 1.05, "top" : 3.3, "height" : 1, "width" : 15.39} -->
 
 
 * As we can see, Keras is almost 50% more compact.
@@ -111,7 +111,7 @@ Here is a quick comparison of writing [MNIST](https://en.wikipedia.org/wiki/MNIS
 | deeplearning4j/deeplearning4j | 8472  |      140     |
 | caffe2/caffe2                 | 7540  |      176     |
 
-<!-- {"left" : 0.25, "top" : 1.96, "height" : 4.69, "width" : 9.75} -->
+<!-- {"left" : 1.38, "top" : 3.19, "height" : 1, "width" : 14.74} -->
 
 Notes:  
 Source: 'Practical Deep Learning for Cloud and Mobile' (ISBN : 9781492034841), Ch 2
@@ -125,7 +125,7 @@ Source: 'Practical Deep Learning for Cloud and Mobile' (ISBN : 9781492034841), C
 | 2015 May | v 0.1   | Initial Release |
 | 2018 Oct | v 2.2   | Current v2      |
 
-<!-- {"left" : 0.25, "top" : 1.87, "height" : 1.5, "width" : 9.75} -->
+<!-- {"left" : 1.04, "top" : 2.94, "height" : 1, "width" : 15.43} -->
 
 Notes:  
 https://github.com/keras-team/keras/releases
@@ -142,7 +142,7 @@ https://github.com/keras-team/keras/releases
     - Run on [multiple GPUs on Google Cloud cluster](https://cloud.google.com/solutions/running-distributed-tensorflow-on-compute-engine) using distributed Tensorflow
     - Use [dist keras](https://github.com/cerndb/dist-keras) on Spark engine
 
-<img src="../../assets/images/deep-learning/DL-cluster.png" alt="cluster" style="width:45%;"/><!-- {"left" : 1.66, "top" : 5.73, "height" : 2.94, "width" : 6.94} -->
+<img src="../../assets/images/deep-learning/DL-cluster.png" alt="cluster" style="width:45%;"/><!-- {"left" : 4.01, "top" : 6.89, "height" : 4.02, "width" : 9.49} -->
 
 
 ---
@@ -199,7 +199,7 @@ Next major (and final) release of Keras will be 2.3
 
 ## Keras Model Zoos
 
-<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="float:right;width:40%;"/><!-- {"left" : 6.99, "top" : 1.14, "height" : 3.11, "width" : 3.11} -->
+<img src="../../assets/images/deep-learning/zoo1.png" alt="XXX image missing" style="float:right;width:40%;"/><!-- {"left" : 11.37, "top" : 1.89, "height" : 5.6, "width" : 5.6} -->
 
   * A model zoo is a place wheres open-source models are shared so others can use them
 
@@ -233,7 +233,7 @@ ImageNet trained models
 | VGG-16              | 528MB | 0.715          | 0.901          | 138,357,544 | 23    |
 | MobileNet           | 17MB  | 0.665          | 0.871          | 4,253,864   | 88    |
 
-<!-- {"left" : 0.15, "top" : 1.87, "height" : 5.86, "width" : 9.95, "columnwidth" : [1.66, 1.66, 1.66, 1.66, 1.66, 1.66 ]} -->
+<!-- {"left" : 0.39, "top" : 3.09, "height" : 1, "width" : 16.72} -->
 
 <small>
 
@@ -264,6 +264,9 @@ $  conda install tensorflow
 # if using vanilla Python
 $  pip install tensorflow
 ```
+<!-- {"left" : 0.85, "top" : 3.8, "height" : 2.21, "width" : 6.74} -->
+
+<br/>
 
 * Testing configuration
 
@@ -275,7 +278,7 @@ $  python
 >>> print(keras.__version__)
 #   2.2.4-tf
 ```
-<!-- {"left" : 0, "top" : 4.73, "height" : 1.6, "width" : 4.94} -->
+<!-- {"left" : 0.85, "top" : 7.2, "height" : 2.18, "width" : 6.74} -->
 
 ---
 
@@ -292,7 +295,7 @@ $  python
     "backend": "tensorflow"
 }
 ```
-<!-- {"left" : 0, "top" : 2.25, "height" : 2.13, "width" : 8.7} -->
+<!-- {"left" : 0.85, "top" : 3.55, "height" : 2.73, "width" : 11.15} -->
 
 
 ---
@@ -307,7 +310,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
 
 >  "Using TensorFlow backend."
 ```
-<!-- {"left" : 0, "top" : 2.87, "height" : 0.94, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.13, "height" : 1.15, "width" : 12.49} -->
 
 ---
 
@@ -321,7 +324,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
     "backend": "tensorflow"
 }
 ```
-<!-- {"left" : 0, "top" : 1.37, "height" : 2.08, "width" : 8.51} -->
+<!-- {"left" : 0.85, "top" : 2, "height" : 2.83, "width" : 11.59} -->
 
 <br/>
 
@@ -343,7 +346,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
     "backend": "tensorflow"
 }
 ```
-<!-- {"left" : 0, "top" : 1.12, "height" : 1.88, "width" : 7.68} -->
+<!-- {"left" : 0.85, "top" : 2.6, "height" : 2.28, "width" : 9.33} -->
 
 <br/>
 
@@ -370,7 +373,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
   * [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/) by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
 
 
-<img src="../../assets/images/books/hands-on-machine-learning-with-scikit-learn-9781492032649.jpg" alt="keras book1" style="width:20%;"/><!-- {"left" : 2.62, "top" : 4.41, "height" : 2.93, "width" : 2.23} --> &nbsp;&nbsp; <img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.39, "top" : 4.41, "height" : 2.93, "width" : 2.23} -->
+<img src="../../assets/images/books/hands-on-machine-learning-with-scikit-learn-9781492032649.jpg" alt="keras book1" style="width:20%;"/><!-- {"left" : 5, "top" : 6.16, "height" : 4.39, "width" : 3.34} --> &nbsp;&nbsp; <img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 9.15, "top" : 6.16, "height" : 4.39, "width" : 3.34} -->
 
 ---
 
@@ -380,7 +383,7 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
 
   * [Learn Keras for Deep Neural Networks:A Fast-Track Approach to Modern Deep Learning with Python](https://learning.oreilly.com/library/view/learn-keras-for/9781484242407/)by Jojo Moolayil (ISBN : 9781484242407)very good book that explains concepts pretty well
 
-<img src="../../assets/images/books/keras-deep-learning-9781788621755.jpg" alt="keras book3" style="width:19.1%;"/> &nbsp;&nbsp; <!-- {"left" : 2.66, "top" : 4.69, "height" : 3.03, "width" : 2.48} --><img src="../../assets/images/books/learn-keras-for-deep-neural-networks-9781484242407.jpg" alt="keras book3" style="width:15.5%;"/><!-- {"left" : 5.59, "top" : 4.69, "height" : 3.03, "width" : 2} -->
+<img src="../../assets/images/books/keras-deep-learning-9781788621755.jpg" alt="keras book3" style="width:19.1%;"/> &nbsp;&nbsp; <!-- {"left" : 5.35, "top" : 6.12, "height" : 4.18, "width" : 3.42} --><img src="../../assets/images/books/learn-keras-for-deep-neural-networks-9781484242407.jpg" alt="keras book3" style="width:15.5%;"/><!-- {"left" : 9.39, "top" : 6.12, "height" : 4.18, "width" : 2.76} -->
 ---
 ## Resources
 
@@ -388,4 +391,4 @@ $  KERAS_BACKEND=tensorflow python -c "from keras import backend"
 
   * [Safari books online, Keras books](https://learning.oreilly.com/topics/keras)
 
-<img src="../../assets/images/books/deep-learning-with-keras-9781787128422.jpg" alt="keras book2" style="width:18%;"/><!-- {"left" : 3.99, "top" : 3.9, "height" : 3.44, "width" : 2.26} -->
+<img src="../../assets/images/books/deep-learning-with-keras-9781787128422.jpg" alt="keras book2" style="width:18%;"/><!-- {"left" : 12.97, "top" : 2.2, "height" : 5.35, "width" : 3.51} -->
