@@ -1952,7 +1952,7 @@ class CustomCallback(keras.callbacks.Callback):
 model.fit(x_train, y_train, epochs=2,
             callbacks=[CustomCallback()])
 ```
-<!-- {"left" : 0.85, "top" : 1.89, "height" : 8.35, "width" : 13.65} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 6.7, "width" : 10.96} -->
 
 
 * Output next slide
@@ -2045,7 +2045,7 @@ model.compile(optimizer=tf.optimizers.Adam(),
 
 model.fit(x_train, y_train, epochs=10, callbacks=[callbacks])
 ```
-<!-- {"left" : 0.85, "top" : 1.89, "height" : 7.28, "width" : 10.52} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 6.02, "width" : 8.7} -->
 
 
 * Output next slide
