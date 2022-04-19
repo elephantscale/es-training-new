@@ -982,7 +982,7 @@ vault operator init
 
 
 * Distribute these **very** secret keys to three people whom your trust
-* Together (but indendently), then will unseal Vault
+* Together (but independently), then will unseal Vault
 
 ---
 
@@ -1241,7 +1241,7 @@ vault server -config=config.hcl
 
 ---
 
-## The RSA Algorithm (background info, optional)
+## The RSA Algorithm (background info)
 
 * To create the public and private key pair, you start by generating two large random primes, p and q, of approximately equal size. You need to select two numbers so that when multiplied together, the product will be the size you want (such as 2048 bits, 4096 bits, and so on).
 
