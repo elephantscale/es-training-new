@@ -46,7 +46,7 @@ When I do this section, I use the example to execute the various stages as I dis
 ---
 ## Canonical File Names
 
-* The terraform community has a file naming convention that is generally adhered to
+* The Terraform community has a file naming convention that is generally adhered to
   - This makes reading terraform source code easier for other developers
 * The file are:
   - _variables.tf_: contains variable definitions
@@ -85,24 +85,28 @@ When I do this section, I use the example to execute the various stages as I dis
 5. _output_: defines a return value or output from the module
 
 ---
-## The _providers.tf_ File
+## The providers.tf File
+
+* The _providers.tf_ File
 
 ![](../artwork/example-02-01-providers.png)
 
 ---
 
-## The " Directive
+## The quote directive
 
+* The `*` directive 
 * Specifies the plugins needed to communicate with the cloud vendor(s)
   - Defines the location of the plugins and versions
-  - Defines location of the terraform backend (covered later)
+  - Defines location of the Terraform backend (covered later)
 * This directive can be omitted 
   - Then defaults values will be used
   - Some defaults are inferred from the _provider_ directive
   
 ---
-## The _provider_ Directive
+## The provider directive
 
+* The _provider_ directive
 * The provider directive contains configuration information specific to a provider
   - AWS needs different configuration information (like a region) than does Azure or Google Cloud
 * There can be more than one provider
@@ -112,8 +116,9 @@ When I do this section, I use the example to execute the various stages as I dis
   
 ---
 
-## The _main.tf_ File
+## The main.tf File
 
+* The _main.tf_ file
 * Two resources are defined in the file that are going to be managed by terraform
   - An EC2 instance and an S3 bucket
 * The default VPC, not managed by terraform, is identified as a data source
@@ -122,8 +127,9 @@ When I do this section, I use the example to execute the various stages as I dis
 
 ---
 
-## The _resource_ Directive - Arguments
+## The "resource" Directive - Arguments
 
+* The _resource_ Directive - Arguments
 * Always start with the keyword _resource_ 
 * Followed by a string ("aws_instance") which identifies the type of resource
 * Followed by a string ("myVM") which is how the resource is referred to in the terraform code
@@ -137,8 +143,9 @@ When I do this section, I use the example to execute the various stages as I dis
   
 ---
 
-## The _resource_ Directive - Attributes
+## The "resource" Directive - Attributes
 
+* The _resource_ Directive - Attributes
 * Some properties of a resource are assigned by AWS
   - These are referred to as _attributes_
   - Like public_ip of an EC2 instance or the arn of a bucket for example
@@ -150,8 +157,9 @@ When I do this section, I use the example to execute the various stages as I dis
 
 --- 
 
-## The _data_ Directive
+## The "data" Directive
 
+* The _data_ Directive
 * References a type of resource that is not under terraform control
   - We supply attributes that are used to identify the specific resource
 * In the _main.tf_ file we look for a "aws_vpc" where the attribute _default_ has the value _true_
@@ -163,8 +171,9 @@ When I do this section, I use the example to execute the various stages as I dis
 
  ---
 
-## The _output_ Directive
+## The "output" Directive
 
+* The _output_ Directive
 * Returns a value, usually an attribute of AWS resource
   - In the root module, the value is returned to the command line where it is printed out
   - We can also specify an output file where the returned values will be stored
@@ -471,7 +480,7 @@ This is example 2-9
 
 ## Using Multiple Providers
 
-* For a terraform resource, the _providers_ argument specifies which provider will manage the resource
+* For a Terraform resource, the _providers_ argument specifies which provider will manage the resource
   - In no provider is specified, the default provider is used
 * In the example below, the EC2 instance "Ohio" is being created by the default provider while "Virginia" is being created by the us-east-1 provider
 
