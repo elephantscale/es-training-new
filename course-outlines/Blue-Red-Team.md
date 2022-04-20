@@ -15,13 +15,7 @@ April 20, 2022
 
 * Combined, Understand how to be a cyber threat hunter.
 
-
-
-
-
-Finally, expect three or four labs.  At least one for of each of these domains, cloud, and hardware.
-Audience
---------
+* Multiple labs (3-4).  Each labs will be presented in each track, software, hardware, and the cloud.
 
 ### Skill Level
 
@@ -33,10 +27,9 @@ Audience
 
 ### Duration
 
-* Five days
+* Three (?) days
 
-Lab environment
----------------
+### Lab environment
 
 * Zero Install: There is no need to install software on students' machines!
 * A lab environment in the cloud will be provided for students. This will include virtual machines.
@@ -47,8 +40,7 @@ Lab environment
 *  Laptops with overly restrictive VPNs or firewalls may not work properly
 * Chrome browser
 
-Detailed outline
-----------------
+## Detailed outline
 
 ### Fundamental Networking and Security Tools
 
@@ -97,7 +89,7 @@ Detailed outline
 * Tor
 
 ### Wireshark
-* 
+
 * Wireshark
 * OSI Model
 * Capture
