@@ -36,3 +36,11 @@
 
 * https://medium.com/@ERBATMAN/blue-team-labs-att-ck-da210e212b57#:~:text=MITRE%20ATT%26CK%20is%20a%20knowledge,lifecycle%2C%20from%20end%20to%20end.&text=Given%20Scenario%2C,Team%20member%20for%20a%20company.
 
+* Cybersecurity Blue Team Toolkit by Nadean H. Tanner
+
+* Physical Red Team Operations
+  * By: Jeremiah Talamantes
+* Professional Red Teaming
+  * Jacob G. Oakley
+* Hands-on Red Team Practice
+  * Himanshu Sharma and Harpreet Singh    
