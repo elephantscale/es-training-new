@@ -123,6 +123,17 @@ April 20, 2022
 ### Web Application Security
 
 * Threat modeling
+  * STRIDE
+  * Adversarial Perspective
+  * Security Terminology
+  * Microsoft Security Development Lifecycle (SDL)
+  * Threat Modeling
+  * Microsoft Threat Modeling Tool
+  * Attack Surface Reduction
+  * CVSS
+  * Cryptography
+  * OWASP
+  * Hands-on exercises
 * DNS
 * Defense in Depth
 * Burp Suite
