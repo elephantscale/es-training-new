@@ -1,6 +1,7 @@
 # PyTorch API
 
-<img src="../../assets/images/logos/pytorch-logo-1.png" style="width:35%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/logos/pytorch-logo-1.png" style="width:35%;"/> <!-- {"left" : 6.17, "top" : 7.96, "height" : 1.28, "width" : 5.15} -->
+
 
 ---
 
@@ -26,7 +27,8 @@
   - They can be operated on GPU
   - Also PyTorch keeps track of transformations done to tensors
 
-<img src="../../assets/images/pytorch/tensors-2.png" style="width:65%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/pytorch/tensors-2.png" style="width:65%;"/> <!-- {"left" : 3.68, "top" : 6.94, "height" : 3.7, "width" : 10.14} -->
+
 
 
 Notes:
@@ -42,7 +44,8 @@ Notes:
 * Tensors on the other hand are stored as contiguous blocks in memory
   -  This makes tensors very efficient to store and process
 
-<img src="../../assets/images/pytorch/python-list-vs-tensor-1.png" style="width:50%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/pytorch/python-list-vs-tensor-1.png" style="width:40%;"/> <!-- {"left" : 10.46, "top" : 2.95, "height" : 5.28, "width" : 6.65} -->
+
 
 Notes:
 
@@ -65,6 +68,9 @@ print (t1.shape))  # find overall shape
 print (t1[3])  # accessing elements
 # tensor(4)
 ```
+<!-- {"left" : 0.85, "top" : 2.66, "height" : 3.49, "width" : 7.28} -->
+
+<br/>
 
 * Zeros / Ones / Random tensors
 
@@ -83,6 +89,9 @@ rand = torch.rand(5)
 print (rand)
 # tensor([0.8583, 0.9562, 0.9140, 0.5607, 0.8529])
 ```
+<!-- {"left" : 0.85, "top" : 7.02, "height" : 4.07, "width" : 9.11} -->
+
+
 
 ---
 
@@ -114,6 +123,8 @@ print (t2[1,2])  # accessing elements
 # tensor(7)
 
 ```
+ <!-- {"left" : 0.85, "top" : 2.11, "height" : 8.52, "width" : 10.09} -->
+
 
 ---
 
@@ -138,6 +149,8 @@ print (t1[:3])
 print (t1[:-1]) # index from last
 # ensor([0, 1, 2, 3, 4, 5, 6, 7, 8]))
 ```
+ <!-- {"left" : 0.85, "top" : 2.42, "height" : 8.05, "width" : 11.44} -->
+
 
 ---
 
@@ -171,6 +184,7 @@ d = torch.zeros(10).to(torch.double)
 print(d)
 # tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.], dtype=torch.float64)
 ```
+ <!-- {"left" : 0.85, "top" : 4.97, "height" : 6.4, "width" : 12.61} -->
 
 ---
 
@@ -188,11 +202,16 @@ print(d)
 | torch.int64   | torch.long   | signed 64-bit integers                  |
 | torch.bool    |              | Boolean                                 |
 
+ <!-- {"left" : 0.91, "top" : 3.11, "height" : 1, "width" : 15.68} -->
+
+
 ---
 
 ## Tensor Storage and Views
 
-<img src="../../assets/images/pytorch/pytorch-storage-views-1.png" style="width:50%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/pytorch/pytorch-storage-views-1.png" style="width:50%;float:right;"/> <!-- {"left" : 11.64, "top" : 2, "height" : 5.84, "width" : 5.54} -->
+ 
+
 
 * Tensor values are stored in memory pool as contiguous chunk of memory
   - This is done by **`torch.storage`** class
@@ -207,7 +226,8 @@ print(d)
 
 ## Tensor Storage and Views
 
-<img src="../../assets/images/pytorch/pytorch-storage-views-1.png" style="width:50%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/pytorch/pytorch-storage-views-1.png" style="width:50%;float:right;"/>   <!-- {"left" : 11.29, "top" : 1.88, "height" : 6.15, "width" : 5.83} -->
+
 
 ```python
 import torch
@@ -240,6 +260,7 @@ print (b)
 # tensor([[0, 0, 0, 0, 0],
 #         [0, 0, 0, 0, 0]])
 ```
+<!-- {"left" : 0.85, "top" : 1.88, "height" : 9.31, "width" : 9.71} -->
 
 ---
 
@@ -258,6 +279,8 @@ if device.type == 'cuda':
     print('  Allocated:', round(torch.cuda.memory_allocated(0)/1024**3,1), 'GB')
     print('  Cached:   ', round(torch.cuda.memory_reserved(0)/1024**3,1), 'GB')
 ```
+<!-- {"left" : 0.85, "top" : 2.33, "height" : 3.9, "width" : 15.78} -->
+
 
 ```text
 Using device: cuda
@@ -267,6 +290,8 @@ Memory Usage:
   Allocated: 0.0 GB
   Cached:    0.0 GB
 ```
+<!-- {"left" : 0.85, "top" : 6.64, "height" : 2.68, "width" : 7.63} -->
+
 
 ---
 
@@ -309,12 +334,13 @@ print ('GPU memory allocated after : ', torch.cuda.memory_allocated(0)))
 # is_cuda? : True
 # GPU memory allocated after :  1024
 ```
+<!-- {"left" : 0.85, "top" : 1.99, "height" : 9.45, "width" : 11.84} -->
 
 ---
 
 ## Lab: Tensor Operations in PyTorch
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.34, "top" : 1.89, "height" : 5.75, "width" : 4.32} -->
 
 * **Overview:**
   - Work with tensors
@@ -323,7 +349,7 @@ print ('GPU memory allocated after : ', torch.cuda.memory_allocated(0)))
   - 20-30 mins
 
 * **Instructions:**
-  - **PYTORCH-2** : Tensor operations
+  - **PYTORCH-2:** Tensor operations
 
 Notes:
 
@@ -354,6 +380,8 @@ tensor = torch.from_numpy(data2.values)
 print (tensor.shape)
 # > torch.Size([100, 5])
 ```
+<!-- {"left" : 0.85, "top" : 2.76, "height" : 4, "width" : 16.16} -->
+
 
 ```text
 # data2 output
@@ -366,6 +394,7 @@ print (tensor.shape)
 
 [100 rows x 5 columns]
 ```
+<!-- {"left" : 0.85, "top" : 7.1, "height" : 2.9, "width" : 10.44} -->
 
 ---
 
@@ -375,9 +404,11 @@ print (tensor.shape)
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.17, "top" : 1.89, "height" : 2.81, "width" : 3.79} -->
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 4.73, "top" : 5.51, "height" : 5.34, "width" : 8.03} -->
+
