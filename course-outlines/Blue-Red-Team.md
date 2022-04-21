@@ -3,7 +3,7 @@
 
 (C) Copyright Elephant Scale
 
-April 20, 2022
+April 21, 2022
 
 ## Overview
 
@@ -44,6 +44,7 @@ April 20, 2022
 
 ### Fundamental Networking and Security Tools
 
+* OSI Model
 * Ping
 * IPConfig
 * NSLookup
@@ -59,14 +60,6 @@ April 20, 2022
 * MTR
 * Sysinternals
 * The Legendary God Mode
-
-### Nmap—The Network Mapper
-
-* Network Mapping
-* Port Scanning
-* Services Running
-* Operating Systems
-* Zenmap
 
 ### Vulnerability Management
 
@@ -91,7 +84,6 @@ April 20, 2022
 ### Wireshark
 
 * Wireshark
-* OSI Model
 * Capture
 * Filters and Colors
 * Inspection
@@ -110,15 +102,6 @@ April 20, 2022
 * BareTail
 * Syslog
 * SolarWinds Kiwi
-
-### Metasploit
-
-* Reconnaissance
-* Installation
-* Gaining Access
-* Metasploitable2
-* Vulnerable Web Services
-* Meterpreter
 
 ### Web Application Security
 
@@ -151,12 +134,6 @@ April 20, 2022
 * Education
 * The Social Engineer Toolkit
 
-### Kali Linux
-
-* Virtualization
-* Optimizing Kali Linux
-* Using Kali Linux Tools
-
 ### Red Teams in Cyberspace
 
 * Why Human Hackers
@@ -167,6 +144,29 @@ April 20, 2022
 * Automation Advantages and Disadvantages
 * Example Scenarios
 * Threat Hunting
+
+### Kali Linux
+
+* Virtualization
+* Optimizing Kali Linux
+* Using Kali Linux Tools
+
+### Nmap—The Network Mapper
+
+* Network Mapping
+* Port Scanning
+* Services Running
+* Operating Systems
+* Zenmap
+
+### Metasploit
+
+* Reconnaissance
+* Installation
+* Gaining Access
+* Metasploitable2
+* Vulnerable Web Services
+* Meterpreter
 
 ### Reporting
 * Necessary Inclusions
