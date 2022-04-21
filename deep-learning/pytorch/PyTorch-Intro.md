@@ -1,6 +1,7 @@
 # PyTorch Introduction
 
-<img src="../../assets/images/logos/pytorch-logo-1.png" style="width:35%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/logos/pytorch-logo-1.png" style="width:35%;"/> <!-- {"left" : 6.38, "top" : 7.84, "height" : 1.18, "width" : 4.74} -->
+ 
 
 ---
 
@@ -30,13 +31,13 @@ Notes:
 
 ## Why PyTorch
 
-* **Simple to use API**: Very easy to prototype solutions quickly, so embraced by the research community
+* **Simple to use API:** Very easy to prototype solutions quickly, so embraced by the research community
 
-* **Pythonic**: Programming in PyTorch feels very natural in Python
+* **Pythonic:** Programming in PyTorch feels very natural in Python
 
-* **GPU support**: Using GPUs can result in 10x to 50x speedups
+* **GPU support:** Using GPUs can result in 10x to 50x speedups
 
-* **Performance**: Core of PyTorch is written in C++ and [CUDA](https://www.geforce.com/hardware/technology/cuda) - A C++ language from Nvidia for GPU programming
+* **Performance:** Core of PyTorch is written in C++ and [CUDA](https://www.geforce.com/hardware/technology/cuda) - A C++ language from Nvidia for GPU programming
 
 * Integrates with other Python ecosystem tools like Numpy
 
@@ -65,7 +66,7 @@ Notes:
 
 ## PyTorch vs. Tensorflow
 
-<img src="../../assets/images/pytorch/tensorflow-vs-pytorch-1.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/pytorch/tensorflow-vs-pytorch-1.png" style="width:50%;float:right;"/> <!-- {"left" : 10.07, "top" : 2.22, "height" : 5.47, "width" : 6.84} -->
 
 * These are the two go-to frameworks for deep learning now
 
@@ -81,7 +82,8 @@ Notes:
 
 ## PyTorch Workflow
 
-<img src="../../assets/images/pytorch/pytorch-workflow-1.png" style="width:80%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/pytorch/pytorch-workflow-1.png" style="width:80%;"/> <!-- {"left" : 1.51, "top" : 3.37, "height" : 6.97, "width" : 14.49} -->
+
 
 ---
 
@@ -117,7 +119,7 @@ Notes:
 
 ## Google Colaboratory
 
-<img src="../../assets/images/logos/google-colab-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 6.65, "top" : 1.31, "height" : 1.07, "width" : 3.57} -->
+<img src="../../assets/images/logos/google-colab-logo-1.png" style="width:30%;float:right;"/> <!-- {"left" : 10.27, "top" : 2.22, "height" : 2.15, "width" : 7.15} -->
 
 * Google Colaboratory is a **free** hosted environment for AI
 
@@ -149,7 +151,8 @@ Notes:
 | TPU3  | TPU  | 3rd    | 2019 | 64GB   | $8.00 |
 | TPU2  | TPU  | 2nd    | 2017 | 64GB   | $4.50 |
 
-<!-- {"left" : 0.25, "top" : 2.18, "height" : 3, "width" : 9.75} -->
+<!-- {"left" : 1.87, "top" : 3.81, "height" : 1, "width" : 13.75} -->
+
 
 ---
 
@@ -178,6 +181,9 @@ $  jupyter lab
 
 # This will open a browser tab
 ```
+<!-- {"left" : 0.85, "top" : 2.6, "height" : 4.84, "width" : 13.09} -->
+
+<br/>
 
 * Testing Pytorch 
 
@@ -186,12 +192,13 @@ import torch
 print (torch.__version__)        # output: 1.6.0  as of Sept 2020
 print(torch.cuda.is_available()) # output: True if GPU is enabled
 ```
+<!-- {"left" : 0.85, "top" : 8.18, "height" : 1.15, "width" : 11.61} -->
 
 ---
 
 ## Lab: Getting Started with PyTorch
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.34, "top" : 1.89, "height" : 5.75, "width" : 4.32} -->
 
 * **Overview:**
   - Get PyTorch working
@@ -208,10 +215,14 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.17, "top" : 1.89, "height" : 2.81, "width" : 3.79} -->
+
 
 * Let's go over what we have covered so far
   - PyTorch features
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 4.73, "top" : 5.51, "height" : 5.34, "width" : 8.03} -->
+
+
