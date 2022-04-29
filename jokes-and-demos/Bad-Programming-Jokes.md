@@ -31,7 +31,9 @@
 
 ---
 
-## How to explain the movie Inception to a programmer? When you run a VM inside another VM, inside another VM ... everything runs real slow!
+## How to explain the movie Inception to a programmer? 
+
+### When you run a VM inside another VM, inside another VM ... everything runs real slow!
 
 ---
 

@@ -229,7 +229,7 @@ Notes:
 
 | Benchmark          | Hardware                                                                                                  | Performance                                                                                                           |
 |--------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| By Linkedin @ 2014 | 3 machines,- Xeon 2.5 G , 6 cores,<br/>- Six 7200 RPM SATA drives,<br/>- 32 G RAM,<br/>- 1G ethernet | Multiple test setups.,<br/>One throughput,<br/>- 80 MB / sec,<br/>- 2 million messages / sec (each message 100 bytes) |
+| By Linkedin @ 2014 | 3 machines <br/>- Xeon 2.5 G , 6 cores,<br/>- Six 7200 RPM SATA drives,<br/>- 32 G RAM,<br/>- 1G ethernet | Multiple test setups.,<br/>One throughput,<br/>- 80 MB / sec,<br/>- 2 million messages / sec (each message 100 bytes) |
 
 <!-- {"left" : 0.25, "top" : 1.14, "height" : 1.5, "width" : 9.75} -->
 
@@ -1553,6 +1553,11 @@ Notes:
 
 ## 'My Connect' Design
 
+* When a connection request is made, a producer will queue a request message into 'connections' topic
+* Then a 'Connection consumer' will process the request
+* If it wants to send an email, it will then queue a email message to 'Emails topic'.  In this case it becomes a producer
+* Emails are sent out by 'Email consumer' app
+* Data in motion!
 
 <img src="../../assets/images/kafka/My-Connect-Design-02.png" alt="My-Connect-Design-02.png" style="width:70%;"/><!-- {"left" : 0.3, "top" : 3.03, "height" : 3.59, "width" : 9.64} -->
 
