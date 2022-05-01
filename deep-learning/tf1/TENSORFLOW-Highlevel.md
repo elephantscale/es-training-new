@@ -9,7 +9,8 @@
    - Mid-Level
    - High-Level
 
-![https://www.tensorflow.org/images/tensorflow_programming_environment.png](../../assets/images/deep-learning/tensorflow_layers_small.png) <!-- {"left" : 0.59, "top" : 3.54, "height" : 2.66, "width" : 9.07} -->
+<img src="../../assets/images/deep-learning/tensorflow_layers_small.png" style="width:35%;"/> <!-- {"left" : 1.73, "top" : 5.88, "height" : 4.12, "width" : 14.04} -->
+
 
 ---
 

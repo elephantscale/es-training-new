@@ -1,7 +1,7 @@
 # Introduction to TensorFlow
 
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 6.98, "top" : 7.79, "height" : 3, "width" : 3.53} -->
 
 
 ---
@@ -27,9 +27,9 @@ Notes:
 
 ## TensorFlow
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.06, "top" : 1.05, "height" : 1.71, "width" : 2} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.48, "top" : 1.89, "height" : 2.98, "width" : 3.49} -->
 
-<img src="../../assets/images/logos/google-ai-logo-1.png" style="width:20%;float:right;clear:both;" /><!-- {"left" : 7.94, "top" : 3.34, "height" : 1.18, "width" : 2.24} -->
+<img src="../../assets/images/logos/google-ai-logo-1.png" style="width:20%;float:right;clear:both;" /><!-- {"left" : 12.85, "top" : 4.98, "height" : 2.43, "width" : 4.61} -->
 
  * __Tensorflow__ is a free and open source library for deep learning with neural networks
 
@@ -55,8 +55,8 @@ Notes:
     - Github Stars (left) and
     - Indeed job postings (right)
 
-<img src="../../assets/images/deep-learning/tensorflow-github-stars.png" style="width:55%;"/><!-- {"left" : 0.18, "top" : 4.1, "height" : 2.71, "width" : 5.21} -->
- &nbsp; <img src="../../assets/images/deep-learning/tensorflow-indeed-postings.png" style="width:40%;"/> <!-- {"left" : 5.56, "top" : 3.87, "height" : 3.16, "width" : 4.61} -->
+<img src="../../assets/images/deep-learning/tensorflow-github-stars.png" style="width:55%;"/><!-- {"left" : 1.19, "top" : 6.07, "height" : 4.1, "width" : 7.88} -->
+ &nbsp; <img src="../../assets/images/deep-learning/tensorflow-indeed-postings.png" style="width:40%;"/> <!-- {"left" : 9.33, "top" : 5.72, "height" : 4.78, "width" : 6.97} -->
 
 
 Notes:
@@ -96,7 +96,7 @@ Notes:
 | 1.14    | 2019-02      | Stable 1.x Release          |
 | 2.0     | 2019-10      | 2.0 Release (big release)   |
 
-<!-- {"left" : 0.25, "top" : 1.7, "height" : 4.19, "width" : 9.75} -->
+<!-- {"left" : 0.8, "top" : 2.62, "height" : 1, "width" : 15.95} -->
 
 
 Notes:
@@ -106,9 +106,7 @@ Notes:
 
 ## Tensorflow Hardware Support
 
-
-<img src="../../assets/images/machine-learning/tensorflow-cpu-gpu-tpu-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.42, "top" : 1.52, "height" : 2.46, "width" : 4.66} -->
-
+<img src="../../assets/images/machine-learning/tensorflow-cpu-gpu-tpu-1.png" style="width:50%;float:right;"/><!-- {"left" : 9.75, "top" : 2, "height" : 3.91, "width" : 7.41} -->
 
 - TF can run on multiple hardware devices: CPU, GPU, TPU
 
@@ -122,7 +120,7 @@ Notes:
 
 ## Using GPUs
 
-<img src="../../assets/images/machine-learning/3rd-party/how-gpu-acceleration-works.png" style="width:40%;float:right;"/><!-- {"left" : 7.14, "top" : 0.99, "height" : 1.71, "width" : 3.02} -->
+<img src="../../assets/images/machine-learning/3rd-party/how-gpu-acceleration-works.png" style="width:40%;float:right;"/><!-- {"left" : 10.37, "top" : 2.16, "height" : 3.79, "width" : 6.69} -->
 
  * One of TensorFlow's most exciting features is using GPUs for compute capacity
      - ML is mainly linear algebra (matrix manipulation)
@@ -143,11 +141,9 @@ Notes:
 
 ## GPU Support
 
+<img src="../../assets/images/logos/nvidia-cuda-logo-2.png" style="width:20%;float:right;"/><!-- {"left" : 13.68, "top" : 1.89, "height" : 3.5, "width" : 3.5} -->
 
-<img src="../../assets/images/logos/nvidia-cuda-logo-2.png" style="width:20%;float:right;"/><!-- {"left" : 8.45, "top" : 1, "height" : 1.72, "width" : 1.72} -->
-
-<img src="../../assets/images/machine-learning/3rd-party/nvidia-tesla-P100-GPU-1.png" style="width:30%;float:right;clear:both;"/><!-- {"left" : 7.87, "top" : 3.12, "height" : 1.55, "width" : 2.43} -->
-
+<img src="../../assets/images/machine-learning/3rd-party/nvidia-tesla-P100-GPU-1.png" style="width:30%;float:right;clear:both;"/><!-- {"left" : 12.5, "top" : 5.55, "height" : 3.15, "width" : 4.94} -->
 
  * NVIDIA GPUs are best supported
    - use CUDA library
@@ -167,8 +163,7 @@ Notes:
 
 ## TPU Support
 
-<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 9.46, "top" : 0.93, "height" : 0.53, "width" : 0.77} -->
-
+<img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:20%;float:right;"/><!-- {"left" : 13.8, "top" : 1.59, "height" : 2.56, "width" : 3.72} -->
 
  * TPU is Google's custom chip built for AI workloads
     - 3rd generation as of March 2018
@@ -193,7 +188,7 @@ Notes:
 
 ## Google Colaboratory
 
-<img src="../../assets/images/logos/google-colab-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 6.65, "top" : 1.31, "height" : 1.07, "width" : 3.57} -->
+<img src="../../assets/images/logos/google-colab-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 11.42, "top" : 2.15, "height" : 1.78, "width" : 5.95} -->
 
  * Google Colaboratory is a **free** hosted environment for AI
 
@@ -226,7 +221,7 @@ Notes:
 | TPU3  | TPU  | 3rd    | 2019 | 64GB   | $8.00 |
 | TPU2  | TPU  | 2nd    | 2017 | 64GB   | $4.50 |
 
-<!-- {"left" : 0.25, "top" : 2.18, "height" : 3, "width" : 9.75} -->
+<!-- {"left" : 2.33, "top" : 3.61, "height" : 1, "width" : 12.84} -->
 
 ---
 
@@ -241,7 +236,8 @@ Notes:
 | Support for Distributed File Systems (HDFS)                                          | No Support for Hadoop                       |
 | Supports Python API (primary), plus Java, C++ Go, R, etc.                            | Python Support Only                         |
 
-<!-- {"left" : 0.25, "top" : 1.22, "height" : 4.55, "width" : 9.75, "columnwidth" : [4.88, 4.88]} -->
+<!-- {"left" : 0.72, "top" : 2.72, "height" : 1, "width" : 16.07} -->
+
 
 Notes:
 
@@ -267,7 +263,7 @@ sess = tf.Session()
 print(sess.run(hello))
 
 ```
-<!-- {"left" : 0, "top" : 1.37, "height" : 3.49, "width" : 8.94} -->
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 4.8, "width" : 12.3} -->
 
 
 ---
@@ -294,10 +290,11 @@ with tf.Session() as sess:
 ##   = 507.0
 
 ```
-<!-- {"left" : 0, "top" : 1.03, "height" : 4.56, "width" : 7.35} -->
+<!-- {"left" : 0.85, "top" : 2.32, "height" : 5.58, "width" : 8.99} -->
 
 
-<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="width:35%;" /><!-- {"left" : 2.44, "top" : 5.7, "height" : 2.88, "width" : 5.36} -->
+<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="width:35%;" /><!-- {"left" : 8.89, "top" : 6.07, "height" : 4.23, "width" : 7.87} -->
+
 
 ---
 
@@ -311,8 +308,8 @@ with tf.Session() as sess:
 - On left we have 'logical graph' and on the right we have 'physical graph' (how the graph is executed on 2 GPUs)
 
 
-<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="width:35%;" /> &nbsp;  &nbsp; &nbsp; <!-- {"left" : 0.71, "top" : 4.89, "height" : 2.27, "width" : 4.23} -->
-<img src="../../assets/images/deep-learning/tensorflow-graph-2.png" alt="XXX image missing" style="width:27%;"/><!-- {"left" : 5.73, "top" : 4.01, "height" : 4.04, "width" : 3.81} -->
+<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="width:35%;" /> &nbsp;  &nbsp; &nbsp; <!-- {"left" : 2.74, "top" : 6.57, "height" : 3.09, "width" : 5.76} -->
+<img src="../../assets/images/deep-learning/tensorflow-graph-2.png" alt="XXX image missing" style="width:27%;"/><!-- {"left" : 9.57, "top" : 5.37, "height" : 5.5, "width" : 5.18} -->
 
 
 ---
@@ -333,12 +330,9 @@ Notes:
 
 ---
 
-
 ## TensorFlow + Spark = Scale
 
-
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 7.81, "top" : 1.12, "height" : 1.21, "width" : 2.28} -->
-
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 13.05, "top" : 1.89, "height" : 2.12, "width" : 3.99} -->
 
  * Spark is a very popular distributed platform
      - Much faster
@@ -363,7 +357,7 @@ Notes:
 ## Tensorflow on Spark
 
 
-<img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/><!-- {"left" : 1.02, "top" : 2.15, "height" : 5.35, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/tensorflow-on-spark-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:70%;"/><!-- {"left" : 1.93, "top" : 2.41, "height" : 8.88, "width" : 13.63} -->
 
 
 Notes: 
@@ -442,7 +436,7 @@ x =  a * a * b + b + c
 with tf.Session() as sess:
     output = sess.run (x, feed_dict = { a : 10, b : 5.0})
 ```
-<!-- {"left" : 0, "top" : 4.56, "height" : 3.19, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 5.79, "height" : 4.52, "width" : 14.54} -->
 
 Notes:
 
@@ -461,12 +455,13 @@ Notes:
     - Simplify and cleanup APIs that evolved over time
     - Standardize on high level Keras API
 
-<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;width:50%;"/> <!-- {"left" : 1.02, "top" : 3.86, "height" : 4.56, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/3rd-party/tensorflow-2-overview.png"  alt="XXX image missing" style="background:white;width:50%;"/> <!-- {"left" : 4.06, "top" : 6.04, "height" : 5.21, "width" : 9.37} -->
 
 
 ---
 
 ## Enhancements in TF2
+
 - (These features are explained in detail in the next few slides)
 
 - __Standardizing on Keras style APIs__ (big change)
@@ -486,7 +481,7 @@ Notes:
 ## tf.keras
 
 
-<img src="../../assets/images/deep-learning/tf+keras-1.png" style="width:30%;float:right;"/><!-- {"left" : 7.18, "top" : 1.35, "height" : 1.14, "width" : 2.83} -->
+<img src="../../assets/images/deep-learning/tf+keras-1.png" style="width:30%;float:right;"/><!-- {"left" : 11.17, "top" : 1.89, "height" : 2.47, "width" : 6.14} -->
 
 
 * Tensorflow 2.0 **encourages** use of the `tf.keras` API
@@ -511,7 +506,7 @@ Notes:
 
 
 
-<img src="../../assets/images/deep-learning/3rd-party/tf+keras-2.png" style="width:70%;"/><!-- {"left" : 0.96, "top" : 2.08, "height" : 5.49, "width" : 8.33} -->
+<img src="../../assets/images/deep-learning/3rd-party/tf+keras-2.png" style="width:70%;"/><!-- {"left" : 2.36, "top" : 2.64, "height" : 8.43, "width" : 12.79} -->
 
 
 
@@ -583,7 +578,7 @@ for i in tf.range(input_data.shape[0]): # Note the For loop
   outputs = outputs.write(i, output)
 
 ```
-<!-- {"left" : 0, "top" : 3.47, "height" : 1.03, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.55, "height" : 1.54, "width" : 15.28} -->
 
 
 ---
@@ -626,7 +621,7 @@ for i in tf.range(input_data.shape[0]): # Note the For loop
 $ (sudo) pip install tensorflow keras
 $ (sudo) pip install tensorflow-gpu keras  # For GPU
 ```
-<!-- {"left" : 0, "top" : 4.08, "height" : 0.74, "width" : 8.71} -->
+<!-- {"left" : 0.85, "top" : 4.99, "height" : 0.83, "width" : 9.79} -->
 
 <br/>
 
@@ -636,7 +631,7 @@ $ (sudo) pip install tensorflow-gpu keras  # For GPU
 $ conda install tensorflow keras
 $ conda install tensorflow-gpu keras  # For GPU
 ```
-<!-- {"left" : 0, "top" : 5.63, "height" : 0.74, "width" : 8.71} -->
+<!-- {"left" : 0.85, "top" : 5.91, "height" : 0.83, "width" : 9.79} -->
 
 
 
@@ -647,7 +642,7 @@ Notes:
 
 ## Lab: Hello World in TensorFlow
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.76, "top" : 1.92, "height" : 3.66, "width" : 2.75} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 12.8, "top" : 1.89, "height" : 5.51, "width" : 4.14} -->
 
 
  *  **Overview:**  

@@ -27,7 +27,7 @@
 | 3    | Number Cube |
 | n    | n-Tensor    |
 
-<!-- {"left" : 2.9, "top" : 5.12, "height" : 3, "width" : 4.44, "columnwidth" : [2.22, 2.22]} -->
+<!-- {"left" : 3.13, "top" : 7.44, "height" : 3, "width" : 11.23} -->
 
 Notes: 
 
@@ -37,7 +37,8 @@ Notes:
 ## Tensors
 
 
-<img src="../../assets/images/deep-learning/tensors-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:60%;" /><!-- {"left" : 1.57, "top" : 1.55, "height" : 6.6, "width" : 7.15} -->
+<img src="../../assets/images/deep-learning/tensors-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:60%;" /><!-- {"left" : 2.62, "top" : 3.97, "height" : 4.45, "width" : 12.26} -->
+
 
 
 ---
@@ -108,7 +109,7 @@ Notes:
 | tf.uint32     | 32-bit unsigned integer                |
 | tf.uint64     | 64-bit unsigned integer                |
 
-<!-- {"left" : 0.25, "top" : 1.53, "height" : 6, "width" : 9.75} -->
+<!-- {"left" : 1.33, "top" : 2.94, "height" : 1, "width" : 14.85} -->
 
 Notes: 
 
@@ -130,7 +131,7 @@ Notes:
 | tf.resource | Handle to a mutable resource      |
 | tf.variant  | Values of arbitrary types         |
 
-<!-- {"left" : 0.25, "top" : 1.53, "height" : 6.5, "width" : 9.75} -->
+<!-- {"left" : 1.69, "top" : 2.94, "height" : 1, "width" : 14.12} -->
 
 Notes: 
 
@@ -147,7 +148,7 @@ Notes:
 | 3    | Number Cube |
 | n    | n-Tensor    |
 
-<!-- {"left" : 2.47, "top" : 2.49, "height" : 3, "width" : 5.32, "columnwidth" : [2.66, 2.66]} -->
+<!-- {"left" : 4.53, "top" : 2.94, "height" : 1, "width" : 8.43} -->
 
 Notes: 
 
@@ -166,7 +167,7 @@ count = tf.Variable(30, tf.int16)
 floating_point = tf.Variable(5.5, tf.float64)
 complex_number = tf.Variable(4.1 + 3.3j, tf.complex64)
 ```
-<!-- {"left" : 0, "top" : 2.04, "height" : 1.4, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.28, "height" : 1.88, "width" : 13.78} -->
 
  * Note that the scalars are converted from python types to TF types.
 
@@ -186,7 +187,7 @@ Notes:
 counts = tf.Variable([10,20,30], tf.int16)
 distances = tf.Variable([3.1,2.2,5.5], tf.float32)
 ```
-<!-- {"left" : 0, "top" : 2.74, "height" : 0.91, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.92, "height" : 1.33, "width" : 14.95} -->
 
 Notes: 
 
@@ -219,7 +220,8 @@ print(a.dtype)
 # > int64
 
 ```
-<!-- {"left" : 0, "top" : 1.19, "height" : 6.69, "width" : 5.78} -->
+<!-- {"left" : 0.85, "top" : 2.33, "height" : 8.58, "width" : 7.41} -->
+
 
 ---
 ## Rank 1 Example
@@ -237,7 +239,7 @@ with tf.Session() as sess:
 # > [1 2 3 4]
 ```
 
-<!-- {"left" : 0, "top" : 1.35, "height" : 3.47, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.65, "height" : 4.66, "width" : 13.77} -->
 
 
 
@@ -259,7 +261,7 @@ a = np.array ([(1,2,3), (4,5,6), (7,8,9) ])
 b = np.array ([(9, 8, 7), (6, 5, 4), (3,2,1)])
 ```
 
-<!-- {"left" : 0, "top" : 2.74, "height" : 0.91, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.04, "height" : 1.18, "width" : 13.31} -->
 
 Notes: 
 
@@ -293,7 +295,7 @@ with tf.Session() as sess:
 # >      [ 84  69  54]
 # >      [138 114  90]]
 ```
-<!-- {"left" : 0, "top" : 1.23, "height" : 7.28, "width" : 9.28} -->
+<!-- {"left" : 0.85, "top" : 2.12, "height" : 9.18, "width" : 11.7} -->
 
 ---
 
@@ -311,7 +313,7 @@ tf.rank(rubiks) # Will get value of rank after session runs
 tf.shape(rubiks) # Will get [3,3,3] after session runs
 tf.reshape(rubiks, [9,3]) # Will reshape into 9 x3 Matrix
 ```
-<!-- {"left" : 0, "top" : 1.84, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.82, "height" : 3.39, "width" : 14.54} -->
 
 Notes: 
 
@@ -333,7 +335,7 @@ rubiks[0:2,:,0]
 # ([[1, 4, 7],
 #   [1, 4, 7]])
 ```
-<!-- {"left" : 0, "top" : 2.38, "height" : 2.13, "width" : 9.11} -->
+<!-- {"left" : 0.85, "top" : 3.52, "height" : 2.9, "width" : 12.4} -->
 
 
 Notes: 
@@ -356,6 +358,7 @@ Notes:
  
  * Can be used for hyperparameters
    - But we usually want those tunable from the outside.
+
 Notes: 
 
 ---
@@ -396,7 +399,7 @@ with tf.Session() as sess:
 
 # > output : 60
 ```
-<!-- {"left" : 0, "top" : 2.34, "height" : 2.84, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.44, "height" : 4.97, "width" : 15.92} -->
 
 
 
@@ -432,7 +435,7 @@ with tf.Session() as sess:
 print(result)
 #  > result 42
 ```
-<!-- {"left" : 0, "top" : 4.08, "height" : 4.65, "width" : 8.78} -->
+<!-- {"left" : 0.85, "top" : 5.67, "height" : 5.81, "width" : 10.97} -->
 
 
 Notes: 
@@ -460,7 +463,7 @@ with tf.Session() as sess:
 print (result)
 #  > result 42
 ```
-<!-- {"left" : 0, "top" : 3.21, "height" : 3.91, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.55, "height" : 5.42, "width" : 14.22} -->
 
 Notes: 
 
@@ -491,7 +494,7 @@ Notes:
 import tensorflow as tf
 tf.enable_eager_execution()
 ```
-<!-- {"left" : 0, "top" : 4.5, "height" : 1.13, "width" : 7.38} -->
+<!-- {"left" : 0.85, "top" : 6.18, "height" : 1.28, "width" : 8.37} -->
 
 Notes: 
 
@@ -513,7 +516,7 @@ Notes:
 array([[1, 2],
        [3, 4]], dtype=int32)>
 ```
-<!-- {"left" : 0, "top" : 2.02, "height" : 2.64, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.4, "height" : 3.72, "width" : 14.42} -->
 
 Notes: 
 
@@ -532,7 +535,7 @@ Notes:
 #     [3 4]]
 >>> np.multiply(a, 2)
 ```
-<!-- {"left" : 0, "top" : 1.93, "height" : 3.55, "width" : 8.83} -->
+<!-- {"left" : 0.85, "top" : 2.78, "height" : 4.21, "width" : 10.46} -->
 
 Notes: 
 
@@ -558,7 +561,7 @@ class MNISTModel(tf.keras.Model):
 
 model = MNISTModel()
 ```
-<!-- {"left" : 0, "top" : 2.26, "height" : 4.55, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.36, "height" : 5.49, "width" : 12.38} -->
 
 Notes: 
 
@@ -586,7 +589,7 @@ with tf.Session() as sess:
    sess.run(c)
    # session is closed here
 ```
-<!-- {"left" : 0, "top" : 3.93, "height" : 2.9, "width" : 5.61} -->
+<!-- {"left" : 0.85, "top" : 5.15, "height" : 4.04, "width" : 7.82} -->
 
 Notes: 
 
@@ -615,7 +618,7 @@ print(c.eval()) # evaluated immediately
 
 sess.close()  # be sure to close the session
 ```
-<!-- {"left" : 0, "top" : 3.21, "height" : 4.07, "width" : 8.94} -->
+<!-- {"left" : 0.85, "top" : 4.47, "height" : 5.42, "width" : 11.91} -->
 
 Notes: 
 
@@ -624,13 +627,13 @@ Notes:
 
 * Tensorflow executes operations as graphs
 
-<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:80%;" /><!-- {"left" : 1.39, "top" : 2.52, "height" : 4.02, "width" : 7.47} -->
+<img src="../../assets/images/deep-learning/tensorflow-graph-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:80%;" /><!-- {"left" : 3.5, "top" : 4.03, "height" : 5.65, "width" : 10.51} -->
 
 
 ---
 ## Tensorflow Graphs 
 
-<img src="../../assets/images/deep-learning/tf-architecture-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;"/><!-- {"left" : 3.06, "top" : 1.52, "height" : 6.6, "width" : 4.13} -->
+<img src="../../assets/images/deep-learning/tf-architecture-1.png" alt="XXX image missing" style="background:white;max-width:100%;width:40%;"/><!-- {"left" : 6.16, "top" : 2.72, "height" : 8.26, "width" : 5.17} -->
 
 
 ---
@@ -639,7 +642,7 @@ Notes:
 ## Tensorflow Graph Example
 
 
-<img src="../../assets/images/deep-learning/3rd-party/tensors_flowing.gif" alt="XXX image missing" style="background:white;width:30%;"/><!-- {"left" : 3.38, "top" : 1.71, "height" : 6.22, "width" : 3.5} -->
+<img src="../../assets/images/deep-learning/3rd-party/tensors_flowing.gif" alt="XXX image missing" style="background:white;width:30%;"/><!-- {"left" : 5.99, "top" : 2.44, "height" : 8.83, "width" : 5.52} -->
 
 
 
@@ -676,7 +679,7 @@ Notes:
 ---
 ## Lazy Evaluation
  
-<img src="../../assets/images/deep-learning/Introduction-to-TensorFlow-Lazy-Evaluation.png" alt="XXX image missing" style="background:white;max-width:100%;width:50%;float:right;" /> <!-- {"left" : 4.92, "top" : 1.18, "height" : 5.68, "width" : 4.96} --> 
+<img src="../../assets/images/deep-learning/Introduction-to-TensorFlow-Lazy-Evaluation.png" alt="XXX image missing" style="background:white;max-width:100%;width:50%;float:right;" /> <!-- {"left" : 10.8, "top" : 2.09, "height" : 6.9, "width" : 6.02} --> 
 
 * We read a file
   - Filter out errors
@@ -707,7 +710,7 @@ constant = tf.constant([1, 2, 3])
 tensor = constant * constant
 print tensor.eval()
 ```
-<!-- {"left" : 0, "top" : 2.2, "height" : 1.47, "width" : 8.62} -->
+<!-- {"left" : 0.85, "top" : 3.37, "height" : 1.8, "width" : 10.58} -->
 
 
 Notes: 
@@ -716,8 +719,7 @@ Notes:
 
 ## Lab: Tensorflow Intro
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 7.2, "top" : 1.04, "height" : 3.78, "width" : 2.83} -->
-
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 5.87, "width" : 4.4} -->
 
  *  **Overview:**
  In this lab, we will explore sessions in tensorflow 
@@ -756,7 +758,7 @@ with tf.Session() as sess:
     graph = sess.graph
     print(g.get_operations()) # Will dump graph
 ```
-<!-- {"left" : 0, "top" : 2.3, "height" : 1.27, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.42, "height" : 1.63, "width" : 13.14} -->
 
 Notes: 
 
@@ -772,7 +774,7 @@ simple_save(session,
             inputs={"x": x, "y": y},
             outputs={"z": z})
 ```
-<!-- {"left" : 0, "top" : 2.37, "height" : 2.02, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.28, "height" : 2.49, "width" : 12.64} -->
 
 Notes: 
 
@@ -788,7 +790,7 @@ with tf.Session(graph=tf.Graph()) as sess:
                        [tag_constants.TRAINING], 
                        export_dir)
 ```
-<!-- {"left" : 0, "top" : 1.86, "height" : 1.83, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.68, "height" : 2.37, "width" : 13.28} -->
 
 Notes: 
 
@@ -801,7 +803,7 @@ Notes:
   * It is often used as a hello world example for Deep Learning.
 
 
-<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;width:50%;" /><!-- {"left" : 2, "top" : 3.45, "height" : 4.14, "width" : 6.25} -->
+<img src="../../assets/images/deep-learning/3rd-party/mnist-1.jpeg" alt="XXX image missing" style="background:white;max-width:100%;width:50%;" /><!-- {"left" : 4.99, "top" : 5.16, "height" : 4.98, "width" : 7.52} -->
 
 Notes: 
 
@@ -819,7 +821,7 @@ x = tf.placeholder(tf.float32, [None, 784])
 W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
 ```
-<!-- {"left" : 0, "top" : 3.3, "height" : 1.38, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.51, "height" : 1.67, "width" : 12.41} -->
 
 Notes: 
 
@@ -838,7 +840,7 @@ Notes:
 ```python
 y = tf.nn.softmax(tf.matmul(x, W) + b)
 ```
-<!-- {"left" : 0, "top" : 5.13, "height" : 0.74, "width" : 9.77} -->
+<!-- {"left" : 0.85, "top" : 6.82, "height" : 0.89, "width" : 11.73} -->
 
 Notes: 
 
@@ -856,7 +858,7 @@ correct_prediction =
 tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
 
 ```
-<!-- {"left" : 0, "top" : 3.44, "height" : 1.4, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.61, "height" : 1.83, "width" : 13.39} -->
 
 Notes: 
 
@@ -885,7 +887,8 @@ mnist.train.next_batch(100)
 {x: batch_xs, y_: batch_ys})
 
 ```
-<!-- {"left" : 0, "top" : 3.4, "height" : 2.84, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.5, "height" : 4.97, "width" : 12.15} -->
+
 
 Notes: 
 
@@ -901,7 +904,7 @@ Notes:
 
 ## Lab : Simple Linear Regression 
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.63, "top" : 1.1, "height" : 4.4, "width" : 3.3} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/> <!-- {"left" : 12.52, "top" : 1.89, "height" : 5.76, "width" : 4.32} -->
 
  *  **Overview:**  
  In this lab, we will implement a simple linear regression using Tensorflow
@@ -917,7 +920,7 @@ Notes:
 ---
 ## Lab: Tensorflow MNist Example
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 6.63, "top" : 1.1, "height" : 4.4, "width" : 3.3} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 5.76, "width" : 4.32} -->
 
 
  *  **Overview:**   
@@ -942,7 +945,7 @@ Notes:
  * Notice we loaded data in batches of 100.
    - **Question for the Class:** Why did we do this in batches?
  * And we called `.eval()` on session graph in a `for` loop.
-   - We call each run through an *epoch*.
+   - We call each run through an *epoch.*
    
    
 Notes: 

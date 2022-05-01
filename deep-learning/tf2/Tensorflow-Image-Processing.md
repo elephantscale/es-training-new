@@ -1,6 +1,6 @@
 # Advanced Image Processing With Tensorflow
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:25%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:25%;"/> <!-- {"left" : 7.34, "top" : 7.61, "height" : 2.4, "width" : 2.82} -->
 
 ---
 
@@ -23,13 +23,13 @@
 
 * See below how we can load MNIST data very easily
 
-<!-- TODO shiva -->
 ```python
 import tensorflow as tf
 
 (train_images, train_labels), (test_images, test_labels) =
                 tf.keras.datasets.mnist.load_data()  # <-- one liner
 ```
+<!-- {"left" : 0.85, "top" : 5.1, "height" : 1.91, "width" : 16.06} -->
 
 Notes:
 
@@ -83,6 +83,8 @@ flowers/
     └── tulips
 
 ```
+<!-- {"left" : 0.85, "top" : 5.05, "height" : 6.4, "width" : 5.44} -->
+
 
 ---
 
@@ -110,6 +112,7 @@ flowers/
 ./flowers/validation/sunflowers : files= 111 , size= 6.4M
 ./flowers/validation/roses : files= 128 , size= 6.5M
 ```
+<!-- {"left" : 0.85, "top" : 4.03, "height" : 6.33, "width" : 15.99} -->
 
 ---
 
@@ -127,6 +130,7 @@ find . -type d -exec bash -c 'echo "{} : files=" `find "{}" -type f | wc -l`  ",
 $   bash dir-stats.sh .
 
 ```
+<!-- {"left" : 0.85, "top" : 2.96, "height" : 2.59, "width" : 16.11} -->
 
 
 
@@ -165,10 +169,13 @@ train_dir = os.path.join(data_dir, 'train')
 validation_dir = os.path.join(data_dir, 'val')
 # /home/ubuntu/.keras/datasets/cat-dog-redux/val
 ```
+<!-- {"left" : 0.85, "top" : 2.56, "height" : 5.82, "width" : 16.28} -->
+
+
 ---
 ## Lab: Working With Images
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.44, "top" : 1.89, "height" : 6.16, "width" : 4.62} -->
 
 
 * **Overview:**
@@ -179,7 +186,7 @@ validation_dir = os.path.join(data_dir, 'val')
 
 * **Instructions:**
     - Lab : **IMG-1:** Working with images
-    - **Instructor** : Demo this lab and explain steps
+    - **Instructor:** Demo this lab and explain steps
 
 
 Notes:
@@ -210,7 +217,7 @@ Notes:
 
 * The data is structured like this
 
-<!-- TODO shiva -->
+<br/>
 
 ```text
 cat-dog-redux
@@ -229,6 +236,7 @@ cat-dog-redux
         ├── dog-1001.jpg
         └── dog-1002.jpg
 ```
+<!-- {"left" : 0.85, "top" : 3.2, "height" : 4.88, "width" : 5.01} -->
 
 * Download link: [cat-dog-redux.zip](https://elephantscale-public.s3.amazonaws.com/data/images/cat-dog-redux.zip)
 
@@ -258,6 +266,7 @@ validation_dir = os.path.join(data_dir, 'val')
 # validation_dir: /home/ubuntu/.keras/datasets/cat-dog-redux/val
 
 ```
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 6.11, "width" : 16.28} -->
 
 ---
 ## Using Image Data Generator
@@ -296,6 +305,7 @@ val_data_gen = validation_image_generator.flow_from_directory(
 # Found 500 images belonging to 2 classes.
 # Found 500 images belonging to 2 classes.
 ```
+<!-- {"left" : 0.85, "top" : 2.55, "height" : 8.6, "width" : 15.95} -->
 
 ---
 ## Using Image Data Generator (Properties)
@@ -328,6 +338,7 @@ print ('file paths : ', train_data_gen.filepaths[:5])
 #   '/home/ubuntu/.keras/datasets/cat-dog-redux/train/cat/cat.10066.jpg',
 #   '/home/ubuntu/.keras/datasets/cat-dog-redux/train/cat/cat.10076.jpg']
 ```
+<!-- {"left" : 0.85, "top" : 2, "height" : 9.38, "width" : 15.45} -->
 
 ---
 ## Using Image Data Generator (Training)
@@ -337,6 +348,8 @@ print ('file paths : ', train_data_gen.filepaths[:5])
 * For example, if we have 1,000 images in the training dataset (across all classes) and a batch size of 64, then the `steps_per_epoch` would be about 16, or 1000/64
 
 * **`model.fit`** is the new API,  **`model.fit_generator`** is now deprecated
+
+<br/>
 
 ```python
 
@@ -349,6 +362,7 @@ history = model.fit(
 )
 
 ```
+<!-- {"left" : 0.85, "top" : 5.47, "height" : 2.93, "width" : 15.11} -->
 
 * **//** is integer division in python ( `10/4 = 2.5 ;    10 // 4 = 2` )
 
@@ -382,6 +396,7 @@ for idx, metric in enumerate(metric_names):
 # > Metric : loss = 0.500
 # > Metric : accuracy = 0.760
 ```
+<!-- {"left" : 0.85, "top" : 6.45, "height" : 4.6, "width" : 16.11} -->
 
 ---
 
@@ -415,6 +430,7 @@ predictions2 = [ np.argmax(p) for p in predictions]
 ## Ensure all validation data is predicted
 assert(len(predictions) == len(predictions2) == len(val_data_gen.classes) )
 ```
+<!-- {"left" : 0.85, "top" : 2, "height" : 9.1, "width" : 15.37} -->
 
 ---
 
@@ -431,10 +447,7 @@ assert(len(predictions) == len(predictions2) == len(val_data_gen.classes) )
 
 * For example, if our model always trains on cats with **ears pointing up**, will it recognize a cat that is lying down?
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/cat-03.jpg" style="width:25%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/deep-learning/3rd-party/cat-04.jpg" style="width:25%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/deep-learning/3rd-party/cat-06.jpg" style="width:25%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/3rd-party/cat-03.jpg" style="width:25%;" /><!-- {"left" : 1.85, "top" : 6.72, "height" : 3.47, "width" : 3.32} --><img src="../../assets/images/deep-learning/3rd-party/cat-04.jpg" style="width:25%;" /><!-- {"left" : 5.49, "top" : 6.72, "height" : 3.47, "width" : 4.63} --><img src="../../assets/images/deep-learning/3rd-party/cat-06.jpg" style="width:25%;" /><!-- {"left" : 10.43, "top" : 6.72, "height" : 3.47, "width" : 5.21} -->
 
 
 ---
@@ -446,8 +459,8 @@ assert(len(predictions) == len(predictions2) == len(val_data_gen.classes) )
 
 * This is a classic sign of overfitting
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/learning-curve-overfit-2.png" style="width:50%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/learning-curve-overfit-2.png" style="width:50%;" /><!-- {"left" : 4.9, "top" : 5.74, "height" : 5.16, "width" : 7.74} -->
+
 
 
 ---
@@ -462,7 +475,8 @@ assert(len(predictions) == len(predictions2) == len(val_data_gen.classes) )
 
 * By training on augmented images, the model becomes more resilient; learning to detect features (like eyes or ears) instead of memorizing the images
 
-<img src="../../assets/images/deep-learning/image-augmentation-1.png" style="width:70%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/image-augmentation-1.png" style="width:70%;" /><!-- {"left" : 3.37, "top" : 6.55, "height" : 4.39, "width" : 10.77} -->
+
 
 ---
 
@@ -475,7 +489,7 @@ assert(len(predictions) == len(predictions2) == len(val_data_gen.classes) )
     - Shifts the image vertically and/or horizontally
     - Zoom in the image
 
-<img src="../../assets/images/deep-learning/image-augmentation-2.png" style="width:40%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/image-augmentation-2.png" style="width:40%;" /> <!-- {"left" : 4.41, "top" : 5.94, "height" : 5.56, "width" : 8.68} -->
 
 ---
 
@@ -497,9 +511,12 @@ train_data_gen2 = train_image_generator2.flow_from_directory(batch_size=batch_si
 augmented_images = [train_data_gen2[0][0][0] for i in range(2)]
 plotImages (augmented_images)
 ```
+<!-- {"left" : 0.85, "top" : 2.78, "height" : 3.78, "width" : 16.44} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/image-augmentation-3-horizontal-flip.png" style="width:40%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+
+<img src="../../assets/images/deep-learning/image-augmentation-3-horizontal-flip.png" style="width:40%;" /> <!-- {"left" : 4.57, "top" : 7.09, "height" : 4.13, "width" : 8.37} -->
+
+
 
 ---
 ## Augmentation Example: Rotation
@@ -522,9 +539,11 @@ train_data_gen2 = train_image_generator2.flow_from_directory(batch_size=batch_si
 augmented_images = [train_data_gen2[0][0][0] for i in range(2)]
 plotImages (augmented_images)
 ```
+<!-- {"left" : 0.85, "top" : 3.83, "height" : 3.62, "width" : 16.4} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/image-augmentation-4-rotation.png" style="width:80%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+
+<img src="../../assets/images/deep-learning/image-augmentation-4-rotation.png" style="width:80%;" /><!-- {"left" : 0.86, "top" : 7.91, "height" : 3.19, "width" : 15.79} -->
+
 ---
 ## Augmentation Example: Zooming
 
@@ -549,6 +568,7 @@ plotImages (augmented_images)
 train_image_generator2 = ImageDataGenerator(rescale=1./255,
                                             zoom_range=0.5) # <-- zoom range
 ```
+<!-- {"left" : 0.85, "top" : 8.55, "height" : 1.4, "width" : 16.36} -->
 
 ---
 ## Augmentation Example: Zooming
@@ -571,17 +591,18 @@ train_data_gen2 = train_image_generator2.flow_from_directory(batch_size=batch_si
 augmented_images = [train_data_gen2[0][0][0] for i in range(5)]
 plotImages (augmented_images)
 ```
+<!-- {"left" : 0.85, "top" : 2.76, "height" : 4.52, "width" : 16.23} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/image-augmentation-12-zoom.png" style="width:80%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/image-augmentation-12-zoom.png" style="width:80%;" /><!-- {"left" : 0.55, "top" : 7.9, "height" : 3.31, "width" : 16.41} -->
+
+
 
 ---
 
-## Augmentation Example : Shearing
+## Augmentation Example: Shearing
 
 * Images are 'stretched out'
 
-<!-- TODO shiva -->
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
@@ -597,9 +618,10 @@ train_data_gen2 = train_image_generator2.flow_from_directory(batch_size=batch_si
 augmented_images = [train_data_gen2[0][0][0] for i in range(5)]
 plotImages (augmented_images)
 ```
+<!-- {"left" : 0.85, "top" : 2.81, "height" : 4.32, "width" : 15.5} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/image-augmentation-13-shearing.png" style="width:80%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+
+<img src="../../assets/images/deep-learning/image-augmentation-13-shearing.png" style="width:80%;" /><!-- {"left" : 0.55, "top" : 7.46, "height" : 3.31, "width" : 16.4} -->
 
 
 
@@ -625,9 +647,11 @@ augmented_images = [train_data_gen2[0][0][0] for i in range(5)]
 plotImages (augmented_images)
 
 ```
+<!-- {"left" : 0.85, "top" : 4.38, "height" : 3.56, "width" : 13.78} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/image-augmentation-7-brightness.png" style="width:80%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+
+<img src="../../assets/images/deep-learning/image-augmentation-7-brightness.png" style="width:80%;" /><!-- {"left" : 0.58, "top" : 8.17, "height" : 3.3, "width" : 16.35} -->
+
 
 ---
 
@@ -655,15 +679,16 @@ augmented_images = [train_data_gen2[0][0][0] for i in range(5)]
 plotImages (augmented_images)
 
 ```
+<!-- {"left" : 0.85, "top" : 2.37, "height" : 5.82, "width" : 14.61} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/image-augmentation-11-all.png" style="width:80%;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/image-augmentation-11-all.png" style="width:80%;" /><!-- {"left" : 1.13, "top" : 8.48, "height" : 3.08, "width" : 15.24} -->
+
 
 ---
 
 ## Image Data Generator Takeaways
 
-* We usually **augment training images**; not validation images
+* We usually **augment training images;** not validation images
     - The goal is to expose the network to various images  to learn from
 
 * The original images are **NOT** modified
@@ -676,21 +701,23 @@ plotImages (augmented_images)
 ---
 
 
+
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.07, "top" : 1.89, "height" : 2.69, "width" : 3.63} -->
 
 
 * Let's go over what we have covered so far
 
 * Any questions?
 
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 5, "height" : 5.53, "width" : 8.31} -->
+
+
 ---
 ## Lab: Image Data Generator
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 13.09, "top" : 1.89, "height" : 5.31, "width" : 3.98} -->
 
 * **Overview:**
     - Learn to use Image Data Generator
@@ -722,7 +749,7 @@ Notes:
 
 ## Lab/Demo: Image Classification 1: Cats and Dogs
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 13.09, "top" : 1.89, "height" : 5.31, "width" : 3.98} -->
 
 
 * **Overview:**
@@ -741,7 +768,7 @@ Notes:
 ---
 ## Lab/Demo: Using Trained Models
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 13.09, "top" : 1.89, "height" : 5.31, "width" : 3.98} -->
 
 
 * **Overview:**
@@ -761,8 +788,7 @@ Notes:
 
 ## Lab: Image Classification 2: Horse or Human
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 13.09, "top" : 1.89, "height" : 5.31, "width" : 3.98} -->
 
 * **Overview:**
     - Build an image classifier with real world images
@@ -781,7 +807,7 @@ Notes:
 
 ## Lab: Image Classification 3: Flowers
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 13.09, "top" : 1.89, "height" : 5.31, "width" : 3.98} -->
 
 
 * **Overview:**
@@ -802,7 +828,7 @@ Notes:
 
 ## Lab: Reuse Trained Flowers Model
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 13.09, "top" : 1.89, "height" : 5.31, "width" : 3.98} -->
 
 
 * **Overview:**
@@ -819,4 +845,3 @@ Notes:
 
 Notes:
 
----

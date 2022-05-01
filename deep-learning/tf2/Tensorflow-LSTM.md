@@ -1,6 +1,6 @@
 # LSTMs in TensorFlow
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 4.98, "top" : 6.78, "height" : 1.61, "width" : 1.89} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/> <!-- {"left" : 7.34, "top" : 7.61, "height" : 2.4, "width" : 2.82} -->
 
 ---
 
@@ -10,7 +10,7 @@
 
 ---
 
-## Introduction to RNNs
+# Introduction to RNNs
 
 [../generic/DL-LSTMs.md](../generic/DL-LSTMs.md)
 
@@ -24,6 +24,8 @@
 
 * LSTMs are implemented in [tf.keras.layers.LSTM](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM)
 
+<br/>
+
 ```python
 import tensorflow as tf
 from tensorflow import keras
@@ -34,12 +36,14 @@ model = keras.models.Sequential()
 model.add (tf.keras.layers.LSTM(units=4))
 
 ```
+<!-- {"left" : 0.85, "top" : 2.67, "height" : 2.87, "width" : 9.41} -->
 
 * Using **`bidirectional LSTM`**
 
 ```python
 model.add (tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(64)) )
 ```
+<!-- {"left" : 0.85, "top" : 6.5, "height" : 0.68, "width" : 14.54} -->
 
 Notes:
 
@@ -50,6 +54,8 @@ Notes:
 * We can use multiple LSTM layers
   - Note LSTM layers except the the last one will have **`return_sequences=True`**
 
+<br/>
+
 ```python
 model = tf.keras.Sequential([
 
@@ -59,6 +65,8 @@ model = tf.keras.Sequential([
 
 ])
 ```
+<!-- {"left" : 0.85, "top" : 3.21, "height" : 2.84, "width" : 11.56} -->
+
 
 * Using **`GRU`** Units
 
@@ -69,6 +77,7 @@ model = tf.keras.Sequential([
 
 ])
 ```
+<!-- {"left" : 0.85, "top" : 7.14, "height" : 2.27, "width" : 7.35} -->
 
 ---
 
@@ -99,6 +108,8 @@ print ("train_data: ", len(train_data))
 print ("test_data: ", len(test_data))
 # > test_data:  25000
 ```
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 4.24, "width" : 15.95} -->
+
 
 ---
 
@@ -126,6 +137,7 @@ training_labels_final = np.array(training_labels)
 testing_labels_final = np.array(testing_labels)
 
 ```
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 7.9, "width" : 15.76} -->
 
 ---
 
@@ -140,6 +152,7 @@ print ('training_labels_final[{}]\n{}'.format(index, training_labels_final[index
 print()
 print ('training_sentences[{}]\n{}'.format(index, training_sentences[index]))
 ```
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 2.53, "width" : 15.95} -->
 
 ```text
 training_labels_final[15868]
@@ -158,6 +171,7 @@ together but nothing came. Definitely the worst film of the year. -****1/2
 stars.
 
 ```
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 4.93, "width" : 15.95} -->
 
 ---
 
@@ -192,6 +206,7 @@ testing_sequences = tokenizer.texts_to_sequences(testing_sentences)
 testing_sequences_padded = pad_sequences(testing_sequences,maxlen=MAX_SEQ_LENGTH)
 
 ```
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 8.49, "width" : 16.13} -->
 
 ---
 
@@ -204,6 +219,8 @@ print ('training sentence [{}]\n{}'.format(index,training_sentences[index]))
 print ('training seq [{}]\n{}'.format(index,training_sequences[index]))
 print ('training padded [{}]\n{}'.format(index, training_sequences_padded[index]))
 ```
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 1.95, "width" : 16.24} -->
+
 
 ```text
 training sentence [14467]
@@ -228,6 +245,7 @@ training padded [14467]
 71  750  857  204   20   11 98  138   21   19  205   91   59  927]
 
 ```
+<!-- {"left" : 0.85, "top" : 4.86, "height" : 5.69, "width" : 16.24} -->
 
 ---
 
@@ -244,6 +262,8 @@ model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
 
 model.summary())
 ```
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 3.14, "width" : 16.33} -->
+
 
 ```text
 Layer (type)                 Output Shape              Param #   
@@ -260,6 +280,7 @@ Total params: 349,057
 Trainable params: 349,057
 Non-trainable params: 0
 ```
+<!-- {"left" : 0.85, "top" : 5.95, "height" : 5.72, "width" : 16.33} -->
 
 ---
 
@@ -271,6 +292,7 @@ history = model.fit(training_sequences_padded, training_labels_final,
                     epochs=num_epochs,
                     validation_data=(testing_sequences_padded, testing_labels_final))
 ```
+<!-- {"left" : 0.85, "top" : 2.52, "height" : 1.53, "width" : 15.85} -->
 
 ```text
 Epoch 1/10
@@ -286,9 +308,11 @@ Epoch 10/10
 
 Wall time: 1min 42s
 ```
+<!-- {"left" : 0.85, "top" : 4.24, "height" : 3.5, "width" : 15.85} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/lstm-movie-sentiment-lab-1-training-history.png" style="width:35%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/deep-learning/lstm-movie-sentiment-lab-1-training-history.png" style="width:35%;"/><!-- {"left" : 5.64, "top" : 7.94, "height" : 4.16, "width" : 6.22} -->
+
+
 
 Notes:
 
@@ -296,8 +320,8 @@ Notes:
 
 ## Step 8 - Training Review
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/lstm-movie-sentiment-lab-1-training-history.png" style="width:35%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/deep-learning/lstm-movie-sentiment-lab-1-training-history.png" style="width:35%;float:right;"/><!-- {"left" : 9.65, "top" : 1.99, "height" : 5.05, "width" : 7.56} -->
+
 
 * We are at validation accuracy of 85%; and training accuracy is approaching 100%
 
@@ -321,6 +345,8 @@ model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
 
 model.summary()
 ```
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 3.78, "width" : 15.11} -->
+
 
 ```text
 _________________________________________________________________
@@ -338,6 +364,7 @@ Total params: 377,985
 Trainable params: 377,985
 Non-trainable params: 0
 ```
+<!-- {"left" : 0.85, "top" : 6.54, "height" : 5.05, "width" : 13.46} -->
 
 ---
 
@@ -358,6 +385,7 @@ model = tf.keras.Sequential([
 ])
 model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
 ```
+<!-- {"left" : 0.85, "top" : 2.84, "height" : 3.35, "width" : 14.53} -->
 
 ```text
 _________________________________________________________________
@@ -377,13 +405,14 @@ Total params: 476,801
 Trainable params: 476,801
 Non-trainable params: 0
 ```
+<!-- {"left" : 0.85, "top" : 6.39, "height" : 5.12, "width" : 12.03} -->
 
 
 ---
 
 ## Lab: Implementing LSTMs in TensorFlow
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.29, "top" : 1.89, "height" : 6.18, "width" : 4.64} -->
 
 * **Overview:**
   - Work with LSTM
@@ -403,9 +432,10 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.07, "top" : 1.89, "height" : 2.69, "width" : 3.63} -->
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 5, "height" : 5.53, "width" : 8.31} -->
