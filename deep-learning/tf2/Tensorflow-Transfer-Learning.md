@@ -1,6 +1,7 @@
 # Transfer Learning With Tensorflow
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>   <!-- {"left" : 7.34, "top" : 7.61, "height" : 2.4, "width" : 2.82} -->
+
 
 ---
 
@@ -27,7 +28,7 @@ Notes:
 
 # Transfer Learning in Tensorflow
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/>  <!-- {"left" : 12.12, "top" : 6.73, "height" : 2.43, "width" : 2.87} -->
 
 ---
 
@@ -51,7 +52,7 @@ Notes:
 | VGG-16              | 528MB | 0.715          | 0.901          | 138,357,544 | 23    |
 | MobileNet           | 17MB  | 0.665          | 0.871          | 4,253,864   | 88    |
 
-<!-- {"left" : 0.15, "top" : 1.87, "height" : 5.86, "width" : 9.95, "columnwidth" : [1.66, 1.66, 1.66, 1.66, 1.66, 1.66 ]} -->
+ <!-- {"left" : 0.35, "top" : 3.61, "height" : 1, "width" : 16.8} -->
 
 
 
@@ -75,17 +76,16 @@ Source : [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly
 
 ## MobileNet
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/mobilenet-v1-v2.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/deep-learning/3rd-party/mobilenet-comparison-1.png" style="width:45%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/deep-learning/3rd-party/mobilenet-v1-v2.png" style="width:45%;float:right;"/> <!-- {"left" : 11.28, "top" : 1.89, "height" : 3.28, "width" : 6.03} -->
+<img src="../../assets/images/deep-learning/3rd-party/mobilenet-comparison-1.png" style="width:45%;float:right;clear:both;"/> <!-- {"left" : 11.11, "top" : 4.68, "height" : 3.36, "width" : 6.37} -->
 
 
 * MobileNet is (relatively) light weight:
-    - Layers : 157
-    - Size : ~15 MB
-    - Parameters : ~3.5 Million
+    - Layers: 157
+    - Size: ~15 MB
+    - Parameters: ~3.5 Million
 
-* Achieves reasonable accuracy : ~ 70%
+* Achieves reasonable accuracy: ~ 70%
 
 * There are 3 versions (as of 2020): V1, V2, V3
 
@@ -102,9 +102,9 @@ Source : [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly
 * Here we are downloading the model; It will be automatically downloaded
     - They will be cached under **`~/.keras/models/`** directory
 
-* **`include_top=True`** : includes the full model and classifying layers (last few layers)
+* **`include_top=True`:** includes the full model and classifying layers (last few layers)
 
-* **`weights='imagenet'`** : we are initializing the weights imagenet trained
+* **`weights='imagenet'`:** we are initializing the weights imagenet trained
 
 * To use imagenet trained weights, the image dimensions are to be one of 96, 128, 160, 192, 224(default).
 
@@ -119,6 +119,7 @@ model.summary()  # large output
 ! du -skh ~/.keras/models/*
 
 ```
+<!-- {"left" : 0.85, "top" : 6.18, "height" : 2.77, "width" : 15.84} -->
 
 ---
 ## Using Mobile Net
@@ -157,13 +158,14 @@ plt.imshow(img)
 plt.show()
 
 ```
+<!-- {"left" : 0.85, "top" : 2.42, "height" : 8.87, "width" : 16.45} -->
 
 ---
 
 ## Using Mobile Net
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/mobilenet-prediction-1-cat.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/deep-learning/mobilenet-prediction-1-cat.png" style="width:25%;float:right;"/><!-- {"left" : 13.51, "top" : 2.37, "height" : 3.5, "width" : 3.57} -->
+
 
 ```text
 image_file: cat-1.jpg
@@ -177,11 +179,12 @@ Top-5 predictions:
 3  n02123394   Persian_cat                   0.012930
 4  n02127052          lynx                   0.009831
 ```
+<!-- {"left" : 0.85, "top" : 2.47, "height" : 3.74, "width" : 11.24} -->
 
 <br clear="all" />
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/mobilenet-prediction-2-dog.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/deep-learning/mobilenet-prediction-2-dog.png" style="width:25%;float:right;"/><!-- {"left" : 13.51, "top" : 6.16, "height" : 3.5, "width" : 3.57} -->
+
 
 ```console
 image_file: dog-1.jpg
@@ -195,13 +198,14 @@ Top-5 predictions:
 3  n02099712  Labrador_retriever                   0.008504
 4  n02089973    English_foxhound                   0.007416
 ```
+<!-- {"left" : 0.85, "top" : 6.48, "height" : 3.38, "width" : 11.24} -->
 
 ---
 
 ## Using Inception
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/mobilenet-comparison-1.png" style="width:45%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/deep-learning/3rd-party/mobilenet-comparison-1.png" style="width:45%;float:right;clear:both;"/><!-- {"left" : 10.39, "top" : 1.89, "height" : 3.67, "width" : 6.94} -->
+
 
 * Versions: v1, v2, v3, v4
 
@@ -258,13 +262,14 @@ print (decoded_predictions)
 plt.imshow(img)
 plt.show()
 ```
+<!-- {"left" : 0.85, "top" : 2.13, "height" : 9.61, "width" : 16.3} -->
 
 ---
 
 ## Using Inception
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/inception-prediction-1-cat.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/deep-learning/inception-prediction-1-cat.png" style="width:25%;float:right;"/><!-- {"left" : 13.16, "top" : 1.89, "height" : 4.03, "width" : 4.11} -->
+
 
 ```text
 image_file: cat-1.jpg
@@ -278,11 +283,12 @@ Top-5 predictions:
 3  n02441942        weasel                   0.000569
 4  n02125311        cougar                   0.000385
 ```
+<!-- {"left" : 0.85, "top" : 2.1, "height" : 3.75, "width" : 11.27} -->
 
 <br clear="all" />
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/inception-prediction-2-dog.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/deep-learning/inception-prediction-2-dog.png" style="width:25%;float:right;"/><!-- {"left" : 13.17, "top" : 6.71, "height" : 4.03, "width" : 4.11} -->
+
 
 ```console
 image_file: dog-1.jpg
@@ -296,11 +302,12 @@ Top-5 predictions:
 3  n02110185   Siberian_husky                   0.114638
 4  n02106662  German_shepherd                   0.095230
 ```
+<!-- {"left" : 0.85, "top" : 6.82, "height" : 3.56, "width" : 11.27} -->
+
 ---
 ## Lab: Explore Pre-trained Models
 
-<!-- TODO shiva -->
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 13.13, "top" : 1.89, "height" : 5.23, "width" : 3.92} -->
 
 
 * **Overview:**
@@ -310,7 +317,7 @@ Top-5 predictions:
     - 15 mins
 
 * **Instructions:**
-    - **TRANSFER-1**: Explore pre-trained model
+    - **TRANSFER-1:** Explore pre-trained model
 
 
 Notes:
@@ -318,9 +325,7 @@ Notes:
 ---
 ## Lab: Using Pre-trained Models
 
-<!-- TODO shiva -->
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 13.13, "top" : 1.89, "height" : 5.23, "width" : 3.92} -->
 
 * **Overview:**
     - Use pre-trained models
@@ -329,7 +334,7 @@ Notes:
     - 40 mins
 
 * **Instructions:**
-    - **TRANSFER-2**: Using pre-trained model
+    - **TRANSFER-2:** Using pre-trained model
 
 
 Notes:
@@ -351,8 +356,8 @@ Notes:
 
 * Base model layers are frozen; only our layers are trained
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/transfer-learning-4.png" style="width:60%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/deep-learning/transfer-learning-4.png" style="width:60%;" /> <!-- {"left" : 2.71, "top" : 6.08, "height" : 4.87, "width" : 12.09} -->
+
 
 
 ---
@@ -364,7 +369,6 @@ Notes:
 * And we are initializing it with imagenet weights
 * The model has 21 Million params!
 
-<!-- TODO shiva -->
 ```python
 pre_trained_model = tf.keras.applications.InceptionV3(input_shape=(IMG_WIDTH,IMG_HEIGHT,3),
                                                       include_top = False,
@@ -377,6 +381,7 @@ print_model_summary_compact(pre_trained_model)
 ! du -skh ~/.keras/models/* | grep inception
 
 ```
+<!-- {"left" : 0.85, "top" : 5.26, "height" : 2.9, "width" : 15.94} -->
 
 ```python
 # ~~~~~~~~ output ~~~~~~
@@ -389,6 +394,7 @@ print_model_summary_compact(pre_trained_model)
 # 92M	/home/sujee/.keras/models/inception_v3_weights_tf_dim_ordering_tf_kernels.h5
 # 84M	/home/sujee/.keras/models/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5
 ```
+<!-- {"left" : 0.85, "top" : 8.51, "height" : 2.93, "width" : 15.95} -->
 
 ---
 ## Transfer Learning Example
@@ -407,6 +413,7 @@ pre_trained_model.trainable = False
 
 print_model_summary_compact (pre_trained_model)
 ```
+<!-- {"left" : 0.85, "top" : 4.47, "height" : 3.2, "width" : 10.54} -->
 
 ```python
 # ~~~~~~~~ output ~~~~~~
@@ -416,6 +423,7 @@ print_model_summary_compact (pre_trained_model)
 # * Non-trainable params: 21,802,784
 # * layers:  311
 ```
+<!-- {"left" : 0.85, "top" : 7.88, "height" : 3.15, "width" : 10.54} -->
 
 ---
 ## Transfer Learning Example
@@ -444,6 +452,8 @@ model.compile (loss='categorical_crossentropy',
 
 print_model_summary_compact(model)
 ```
+<!-- {"left" : 0.85, "top" : 3.75, "height" : 5.22, "width" : 16.32} -->
+
 
 ```python
 # ~~~~~~~~ output ~~~~~~
@@ -453,13 +463,13 @@ print_model_summary_compact(model)
 # * Non-trainable params: 21,802,784
 # * layers:  5
 ```
+<!-- {"left" : 0.85, "top" : 9.18, "height" : 2.48, "width" : 8.27} -->
 
 ---
 ## Transfer Learning Example
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/transfer-learning-model-1.png" style="width:35%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/transfer-learning-model-1.png" style="width:35%;float:right;" /><!-- {"left" : 12.88, "top" : 1.89, "height" : 6.49, "width" : 4.11} -->
 
 * Our image size is (160,160,3)  (3 for RGB channels because of color images)
 
@@ -479,13 +489,13 @@ model = Sequential ([
                     Dense(NUM_CLASSES, activation='softmax')
             ])
 ```
+<!-- {"left" : 0.85, "top" : 7.46, "height" : 2.88, "width" : 11.91} -->
 
 ---
 
 ## Transfer Learning Example
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/transfer-learning-learning-curve-1.png" style="width:35%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/deep-learning/transfer-learning-learning-curve-1.png" style="width:35%;float:right;" /><!-- {"left" : 11.57, "top" : 1.89, "height" : 3.77, "width" : 5.65} -->
 
 * We now train the model
 * Training 10 epochs took about 1 minute in an Nvidia GTX 2070 GPU system
@@ -497,6 +507,7 @@ model = Sequential ([
 ```python
 history = model.fit( ...)
 ```
+<!-- {"left" : 0.85, "top" : 8.54, "height" : 0.57, "width" : 4.94} -->
 
 ```python
 # Epoch  1/10 -  loss: 29.5414 - accuracy: 0.5402 - val_loss: 2.2663 - val_accuracy: 0.8884
@@ -510,12 +521,13 @@ history = model.fit( ...)
 # CPU times: user 1min 1s, sys: 1.25 s, total: 1min 3s
 # Wall time: 57.9 s
 ```
+<!-- {"left" : 0.85, "top" : 9.17, "height" : 2.48, "width" : 12.4} -->
 
 ---
 
 ## Lab: Re-training a Pre-trained Model
-<!-- TODO shiva -->
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.97, "top" : 1.89, "height" : 5.68, "width" : 4.26} -->
 
 
 * **Overview:**
@@ -525,7 +537,7 @@ history = model.fit( ...)
     - 40 mins
 
 * **Instructions:**
-    - **TRANSFER-3**: Retrain a pre-trained model
+    - **TRANSFER-3:** Retrain a pre-trained model
 
 
 Notes:
@@ -534,11 +546,12 @@ Notes:
 
 ## Review and Q&A
 
-<!-- TODO shiva -->
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.07, "top" : 1.89, "height" : 2.69, "width" : 3.63} -->
 
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 5, "height" : 5.53, "width" : 8.31} -->
+

@@ -191,8 +191,6 @@ Notes:
 
 ## Compression
 
-<img src="../../assets/images/kafka/kafka-batch-compression-1.png"  style="width:50%;float:right;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
-
 * Benefits of compression
   - Reduces network bandwidth usage
   - Reduces disk usage on Brokers
@@ -204,6 +202,8 @@ Notes:
   - Compress messages on producer side
   - De-compress messages on consumer side
   - Messages remain in compressed state in partitions
+
+<img src="../../assets/images/kafka/compression-1.png"  style="width:70%;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
 ---
 

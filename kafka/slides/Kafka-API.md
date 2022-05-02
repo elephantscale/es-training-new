@@ -801,6 +801,39 @@ KafkaProducer<String, String> producer = new KafkaProducer<>(props);
 
 ---
 
+## Compression Data Formats
+
+* **XML and JSON data formats are very good candidates for compression**.  Since they have lot of repeating elements, they compress well.
+* JSON data
+
+```json
+{"id" : 1, "first_name" : "John", "last_name" : "Smith", "age" : 34, "email" : "john@me.com"}
+```
+
+* XML data
+
+```xml
+<CATALOG>
+    <CD>
+        <TITLE>Empire Burlesque</TITLE>
+        <ARTIST>Bob Dylan</ARTIST>
+        <YEAR>1985</YEAR>
+    </CD>
+</CATALOG>
+```
+
+* Also **server logs** are good candidates, as they have well defined structure
+
+```text
+1.1.1.1 - [2020-09-01::19:12:06 +0000] "GET /index.html HTTP/1.1" 200  532"
+2.2.2.2 - [2020-09-01::19:12:46 +0000] "GET /contact.html HTTP/1.1" 200  702"
+```
+
+* **Binary data formats won't compress well**. E.g. images, base64 encoded strings.  Don't enable compression.
+* Reference: [Message compression in Apache Kafka](https://developer.ibm.com/articles/benefits-compression-kafka-messaging/)
+
+---
+
 ## Lab: Compression Benchmark
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
@@ -1443,7 +1476,7 @@ while (true) {
 Properties producerProps = new Properties();
 producerProps.put("bootstrap.servers", "localhost:9092");
 producerProps.put("enable.idempotence", "true"); // <-- **1*
-producerProps.put("acks", all); // <--  *2*
+producerProps.put("acks", "all"); // <--  *2*
 producerProps.put("transactional.id", "my-transactional-id"); // <-- *3**
 Producer<String, String> producer = new KafkaProducer<> ...
 

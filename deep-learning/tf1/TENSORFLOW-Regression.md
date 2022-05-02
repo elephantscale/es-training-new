@@ -26,7 +26,7 @@ tip_data = pd.DataFrame(
     })
 ```
 
-<!-- {"left" : 0.0, "top" : 1.78, "height" : 3.44, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.84, "height" : 4.38, "width" : 13.05} -->
 
 
 Notes:
@@ -43,7 +43,7 @@ feature_columns = [
     tf.feature_column.numeric_column(key="bill"),
 ]
 ```
-<!-- {"left" : 0.0, "top" : 2.23, "height" : 1.32, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.48, "height" : 1.72, "width" : 13.34} -->
 
 
 Notes:
@@ -59,7 +59,7 @@ Notes:
 my_optimizer=tf.train.GradientDescentOptimizer(
    learning_rate=0.02)
 ```
-<!-- {"left" : 0.0, "top" : 2.22, "height" : 1.03, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.44, "height" : 1.32, "width" : 13.16} -->
 
 
 Notes:
@@ -75,7 +75,7 @@ linear_regressor = tf.estimator.LinearRegressor(
     optimizer=my_optimizer
 )
 ```
-<!-- {"left" : 0.0, "top" : 1.91, "height" : 1.69, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.69, "height" : 2.03, "width" : 12.29} -->
 
 Notes:
 
@@ -115,7 +115,7 @@ def my_input_fn(features, targets,
       ds.make_one_shot_iterator().get_next()
     return features, labels
 ```
-<!-- {"left" : 0.0, "top" : 1.87, "height" : 3.05, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.86, "height" : 4.64, "width" : 15.58} -->
 
 
 Notes:
@@ -134,7 +134,7 @@ linear_regressor.train(
     steps=20
 )
 ```
-<!-- {"left" : 0.0, "top" : 2.3, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.45, "height" : 2.8, "width" : 12} -->
 
 
 Notes:
@@ -152,7 +152,7 @@ prediction_input_fn =
       tip_data[['bill']], tip_data['tip'], 
       num_epochs=1, shuffle=False)
 ```
-<!-- {"left" : 0.0, "top" : 2.93, "height" : 1.86, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4, "height" : 2.28, "width" : 12.56} -->
 
 
 Notes:
@@ -172,7 +172,7 @@ predictions = linear_regressor.predict(
 predictions = np.array(
    [item['predictions'][0] for item in predictions])
 ```
-<!-- {"left" : 0.0, "top" : 2.21, "height" : 2.52, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.35, "height" : 3.35, "width" : 13.61} -->
 
 
 Notes:
@@ -198,7 +198,7 @@ print("Root Mean Squared Error: %0.3f" %
    root_mean_squared_error)
 ```
 
-<!-- {"left" : 0.0, "top" : 2.61, "height" : 3.85, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.77, "height" : 5.14, "width" : 13.68} -->
 
 
 Notes:
@@ -221,7 +221,7 @@ bias = linear_regressor.
 
 print((weight[0],bias[0]))
 ```
-<!-- {"left" : 0.0, "top" : 2.48, "height" : 4.69, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.38, "height" : 5.18, "width" : 11.33} -->
 
 Notes:
 
@@ -230,8 +230,7 @@ Notes:
 ## Plotting the Results
  * We can plot the results
 
-![](../../assets/images/deep-learning/tensorflow-linregress_matplotlib.png) <!-- {"left" : 1.47, "top" : 2.13, "height" : 4.93, "width" : 6.98} -->
-
+<img src="../../assets/images/deep-learning/tensorflow-linregress_matplotlib.png" alt="Scaling-Tensorflow-Cloud-Machine-Learning-0.png" style="background:white;width:30%;"/> <!-- {"left" : 4.05, "top" : 3.75, "height" : 6.63, "width" : 9.39} -->
 
 
 Notes:

@@ -38,7 +38,7 @@ Notes:
   * **Approximate time:** 15-20 minutes
 
   * **Instructions for students:**
-    - (Tensorflow)  **03-lowlevel/3.3-mnist-cnn.ipynb** lab
+    - (Tensorflow) **03-lowlevel/3.3-mnist-cnn.ipynb** lab
 
 
 Notes:
@@ -48,6 +48,7 @@ Notes:
 # Convolutions
 
 [Convolutions](../generic/DL-Convolutions-v1.md)
+
 ---
 
 # CNN in Tensorflow
@@ -76,9 +77,9 @@ Notes:
 
   * Then it creates two 7x7 filters, one with horizontal white line and other with vertical white line.
 
- * TF  *conv2d*  is a convolutional layer, with zero padding (add padding if needed) and stride of 2 in this case.
+ * TF  *conv2d* is a convolutional layer, with zero padding (add padding if needed) and stride of 2 in this case.
 
-  *  *strides*  is a 4 element 1D array, where two center elements represent sh and sw.
+  *  *strides* is a 4 element 1D array, where two center elements represent sh and sw.
 
 ```python
 
@@ -92,7 +93,7 @@ c = tf.nn.conv2d(X, filters, strides=[1,2,2,1],
                  padding="SAME")
 
 ```
-<!-- {"left" : 0.0, "top" : 4.82, "height" : 2.34, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 6.45, "height" : 3.45, "width" : 13.06} -->
 
 
 Notes:
@@ -116,7 +117,7 @@ X = tf.placeholder(tf.float32, shape=(None, height,
 max_pool = tf.nn.max_pool(X, ksize=[1,2,2,1],
               strides[1,2,2,1], padding="VALID")
 ```
-<!-- {"left" : 0.0, "top" : 2.55, "height" : 1.73, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.3, "height" : 2.61, "width" : 14} -->
 
 
 
@@ -146,7 +147,7 @@ X = tf.placeholder(tf.float32, shape=(None, height,
 max_pool = tf.nn.max_pool(X, ksize=[1,2,2,1],
               strides[1,2,2,1], padding="VALID")
 ```
-<!-- {"left" : 0.0, "top" : 4.74, "height" : 1.73, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 5.5, "height" : 2.43, "width" : 12.83} -->
 
 
 Notes:

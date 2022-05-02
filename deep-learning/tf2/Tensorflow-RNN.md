@@ -1,7 +1,7 @@
 # Recurrent Neural Networks (RNNs) in TensorFlow
 
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 2.93, "top" : 5.51, "height" : 2.94, "width" : 1.26} -->
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 4.98, "top" : 6.78, "height" : 1.61, "width" : 1.89} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 6.15, "top" : 7.49, "height" : 3.87, "width" : 1.66} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 8.86, "top" : 7.77, "height" : 2.12, "width" : 2.49} -->
 
 ---
 
@@ -12,7 +12,7 @@
 
 ---
 
-## Introduction to RNNs
+# Introduction to RNNs
 
 [../generic/DL-RNNs.md#RNN Intro](../generic/DL-RNNs.md#RNN Intro)
 
@@ -20,8 +20,8 @@
 
 # RNNs in TensorFlow
 
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 2.93, "top" : 5.51, "height" : 2.94, "width" : 1.26} -->
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 4.19, "top" : 5.95, "height" : 1.36, "width" : 1.6} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:8%;" /><!-- {"left" : 9.48, "top" : 7.06, "height" : 4.03, "width" : 1.73} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 11.83, "top" : 7.95, "height" : 2.25, "width" : 2.65} -->
 
 ---
 
@@ -43,7 +43,7 @@ model.add(keras.layers.SimpleRNN(
 
 ## add any other layers
 ```
-<!-- {"left" : 0, "top" : 1.84, "height" : 4.03, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.67, "height" : 5.23, "width" : 13.3} -->
 
 ---
 
@@ -61,7 +61,8 @@ Notes:
 
 ## RNN Example: Sine Wave Prediction
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-1-data.png"  style="width:25%;float:right;" /><!-- {"left" : 7.96, "top" : 1.19, "height" : 4.16, "width" : 1.96} -->
+<img src="../../assets/images/deep-learning/rnn-sinewave-1-data.png"  style="width:25%;float:right;" /><!-- {"left" : 13.26, "top" : 1.84, "height" : 7.33, "width" : 3.45} -->
+
 
 
 ```python
@@ -80,10 +81,11 @@ df_orig = pd.DataFrame(x)
 plt.plot(df_orig)
 df_orig
 ```
-<!-- {"left" : 0, "top" : 1.09, "height" : 4.36, "width" : 7.78} -->
+<!-- {"left" : 0.85, "top" : 2.24, "height" : 4.94, "width" : 8.82} -->
 
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-2-dataplot.png"  style="width:40%;" /><!-- {"left" : 2.96, "top" : 5.62, "height" : 2.83, "width" : 4.34} -->
+<img src="../../assets/images/deep-learning/rnn-sinewave-2-dataplot.png"  style="width:40%;" /><!-- {"left" : 5.23, "top" : 7.32, "height" : 4.59, "width" : 7.04} -->
+
 
 
 ---
@@ -106,7 +108,7 @@ df_orig
 | 4 | 5 |
 | 5 | 6 |
 
-<!-- {"left" : 0.25, "top" : 4.23, "height" : 3, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 5.35, "height" : 3, "width" : 9.75} -->
 
 
 ---
@@ -127,7 +129,7 @@ df_orig
 | 4,5 | 6 |
 | 5,6 | 7 |
 
-<!-- {"left" : 0.25, "top" : 3.37, "height" : 3, "width" : 9.75} -->
+<!-- {"left" : 3.87, "top" : 4.69, "height" : 3, "width" : 9.75} -->
 
 ---
 
@@ -148,7 +150,7 @@ df_orig
 | 4,5,6 | 7 |
 | 5,6,7 | 8 |
 
-<!-- {"left" : 0.25, "top" : 3.03, "height" : 3, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 4.69, "height" : 3, "width" : 9.75} -->
 
 ---
 
@@ -188,7 +190,7 @@ print ("y_train.shape", y_train.shape)
 print ("x_test.shape", x_test.shape)
 print ("y_test.shape", y_test.shape)
 ```
-<!-- {"left" : 0, "top" : 1.29, "height" : 7.07, "width" : 9.28} -->
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 9, "width" : 11.82} -->
 
 ---
 
@@ -205,9 +207,9 @@ y_train.shape (800,)
 x_test.shape (200, 1, 4)
 y_test.shape (200,)
 ```
-<!-- {"left" : 0, "top" : 1.38, "height" : 2.9, "width" : 4.94} -->
+<!-- {"left" : 0.85, "top" : 2.37, "height" : 3.22, "width" : 5.49} -->
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-3-data-shaped-2.png"  style="width:30%;float:left;" /><!-- {"left" : 1.54, "top" : 4.59, "height" : 3.78, "width" : 3.2} --> <img src="../../assets/images/deep-learning/rnn-sinewave-3-data-shaped.png"  style="width:30%;float:right;" /><!-- {"left" : 5.51, "top" : 4.31, "height" : 4.07, "width" : 3.2} -->
+<img src="../../assets/images/deep-learning/rnn-sinewave-3-data-shaped-2.png"  style="width:30%;float:left;" /><!-- {"left" : 3.47, "top" : 5.96, "height" : 5.57, "width" : 4.71} --> <img src="../../assets/images/deep-learning/rnn-sinewave-3-data-shaped.png"  style="width:30%;float:right;" /><!-- {"left" : 9.32, "top" : 5.55, "height" : 5.99, "width" : 4.71} -->
 
 
 ---
@@ -231,7 +233,7 @@ model.summary()
 tf.keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
 
 ```
-<!-- {"left" : 0, "top" : 1.84, "height" : 2.42, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.7, "height" : 3.57, "width" : 15.11} -->
 
 ---
 
@@ -253,16 +255,16 @@ Trainable params: 1,457
 Non-trainable params: 0
 
 ```
-<!-- {"left" : 0, "top" : 1.17, "height" : 2.98, "width" : 8.5} -->
+<!-- {"left" : 0.85, "top" : 2.51, "height" : 3.85, "width" : 10.99} -->
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-4-model.png"  style="width:37%;" /><!-- {"left" : 2.81, "top" : 4.66, "height" : 3.64, "width" : 4.64} -->
+<img src="../../assets/images/deep-learning/rnn-sinewave-4-model.png"  style="width:37%;" /><!-- {"left" : 5.72, "top" : 6.72, "height" : 4.76, "width" : 6.06} -->
 
 
 ---
 
 ## Training
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-5-training-history.png"  style="width:37%;float:right;" /><!-- {"left" : 3.41, "top" : 1.21, "height" : 1.95, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/rnn-sinewave-5-training-history.png"  style="width:37%;float:right;" /><!-- {"left" : 7.06, "top" : 2.06, "height" : 3.12, "width" : 4.69} -->
 
 
 ```python
@@ -277,7 +279,7 @@ import matplotlib.pyplot as plt
 plt.plot(history.history['mse'], label='mse')
 plt.legend()
 ```
-<!-- {"left" : 0, "top" : 3.46, "height" : 1.97, "width" : 7.07} -->
+<!-- {"left" : 0.85, "top" : 5.19, "height" : 3.04, "width" : 10.92} -->
 
 
 <br clear="all" />
@@ -298,7 +300,7 @@ training done.
 CPU times: user 1min 56s, sys: 2min 54s, total: 4min 51s
 Wall time: 20.5 s
 ```
-<!-- {"left" : 0, "top" : 5.8, "height" : 2.02, "width" : 7.07} -->
+<!-- {"left" : 0.85, "top" : 8.39, "height" : 3.12, "width" : 10.92} -->
 
 ---
 
@@ -324,7 +326,7 @@ test_metrics = model.evaluate(x_test, y_test, verbose=0)
 for idx, metric in enumerate(metric_names):
     print ("Test Metric : {} = {:,.2f}".format (metric_names[idx], test_metrics[idx]))
 ```
-<!-- {"left" : 0, "top" : 1.29, "height" : 3.31, "width" : 9.75} -->
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 5.4, "width" : 15.92} -->
 
 ```text
 model metrics :  ['loss', 'mse']
@@ -333,7 +335,7 @@ Train Metric : mse = 0.34
 Test Metric : loss = 0.46
 Test Metric : mse = 0.46
 ```
-<!-- {"left" : 0, "top" : 4.97, "height" : 1.74, "width" : 6.11} -->
+<!-- {"left" : 0.85, "top" : 8.06, "height" : 2.36, "width" : 8.27} -->
 
 ---
 
@@ -352,17 +354,17 @@ plt.plot(index,predicted)
 plt.axvline(df_orig.index[training_samples], c="r")
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 2.7, "height" : 1.74, "width" : 9.28} -->
+<!-- {"left" : 0.85, "top" : 3.95, "height" : 2.01, "width" : 10.73} -->
 
 
-<img src="../../assets/images/deep-learning/rnn-sinewave-6-prediction.png"  style="width:40%;" /><!-- {"left" : 2.49, "top" : 5.04, "height" : 3.44, "width" : 5.28} -->
+<img src="../../assets/images/deep-learning/rnn-sinewave-6-prediction.png"  style="width:40%;" /><!-- {"left" : 11.72, "top" : 3.95, "height" : 3.6, "width" : 5.52} -->
 
 
 ---
 
 ## Lab: RNN lab
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.65, "top" : 1.53, "height" : 5.93, "width" : 4.45} -->
 
 
 * **Overview:**
@@ -385,11 +387,11 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.07, "top" : 1.89, "height" : 2.69, "width" : 3.63} -->
 
 
 * Let's go over what we have covered so far
 
 * Any questions?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 5, "height" : 5.53, "width" : 8.31} -->

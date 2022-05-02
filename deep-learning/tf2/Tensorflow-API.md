@@ -1,7 +1,7 @@
 # Neural Networks in Tensorflow (v2)
 
-<img src="../../assets/images/deep-learning/neural-network-01.png" style="width:45%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
+<img src="../../assets/images/deep-learning/neural-network-01.png" style="width:45%;"/><!-- {"left" : 8.59, "top" : 8.13, "height" : 2.06, "width" : 4.74} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;"/> <!-- {"left" : 4.17, "top" : 7.9, "height" : 2.52, "width" : 2.96} -->
 
 ---
 
@@ -30,8 +30,7 @@ Notes:
 
 ## Keras
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/keras-architecture.png" alt="XXX image missing" style="width:55%;float:right;clear:both;"/><!-- {"left" : 2.2, "top" : 3.57, "height" : 4.13, "width" : 5.85} -->
+<img src="../../assets/images/deep-learning/keras-architecture.png" alt="XXX image missing" style="width:55%;float:right;clear:both;"/><!-- {"left" : 9.85, "top" : 1.89, "height" : 5.28, "width" : 7.48} -->
 
 * Keras ([Keras.io](https://keras.io/)) - is a high level neural networks API
 * It was developed by a Google engineer, Francois Chollet
@@ -39,7 +38,7 @@ Notes:
 * Works with [Tensorflow](https://github.com/tensorflow/tensorflow)(from Google), [CNTK](https://github.com/Microsoft/cntk)(from Microsoft) and [Theano](https://github.com/Theano/Theano)
 
 
-<img src="../../assets/images/logos/keras-logo-1.png"  style="width:30%;float:right;"/><!-- {"left" : 4.8, "top" : 7.96, "height" : 0.71, "width" : 2.45} -->
+<img src="../../assets/images/logos/keras-logo-1.png"  style="width:30%;float:right;"/><!-- {"left" : 11.6, "top" : 8.13, "height" : 1.15, "width" : 3.98} -->
 
 Notes:  
 NVIDIA - leading GPU vendor - provides CUDA (Compute Unified Device Architecture) and cuDNN (CUDA Deep Neural Network)
@@ -48,7 +47,7 @@ NVIDIA - leading GPU vendor - provides CUDA (Compute Unified Device Architecture
 
 ## Keras Features
 
-<img src="../../assets/images/machine-learning/keras-cpu-gpu-tpu-1.png" style="width:50%;float:right;"/><!-- {"left" : 5.96, "top" : 2.11, "height" : 2.15, "width" : 4.08} -->
+<img src="../../assets/images/machine-learning/keras-cpu-gpu-tpu-1.png" style="width:50%;float:right;"/><!-- {"left" : 10.06, "top" : 2.41, "height" : 3.73, "width" : 7.07} -->
 
 * Write high level code
     - easier to write
@@ -69,7 +68,7 @@ https://www.quora.com/Why-has-Keras-been-so-successful-lately-at-Kaggle-competit
 
 ## Keras Guiding Principles
 
-<img src="../../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; float:right;"/><!-- {"left" : 6.67, "top" : 1.28, "height" : 2.35, "width" : 3.14} -->
+<img src="../../assets/images/generic/3rd-party/legos-1.jpg" alt="legos" style="width:30%; float:right;"/><!-- {"left" : 10.53, "top" : 1.89, "height" : 4.94, "width" : 6.6} -->
 
  * **User Friendliness**  
    - Offers consistent, simple APIs
@@ -88,14 +87,14 @@ https://www.quora.com/Why-has-Keras-been-so-successful-lately-at-Kaggle-competit
 ---
 ## Keras and Tensorflow
 
-<!-- TODO shiva -->
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;"/> &nbsp;  &nbsp; <!-- {"left" : 2.88, "top" : 7.31, "height" : 1.3, "width" : 1.53} -->
-<img src="../../assets/images/logos/keras-logo-1.png" alt="keras-logo-1.png" style="width:20%;float:right;clear:both;"/><!-- {"left" : 4.8, "top" : 7.96, "height" : 0.71, "width" : 2.45} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;"/> &nbsp;  &nbsp; <!-- {"left" : 13.5, "top" : 1.89, "height" : 2.63, "width" : 3.1} -->
 
 * Keras's easy-to-use, high-level API  was widely appreciated
 
 * So starting from Tensorflow version 2.0, TF team started standardizing on Keras style API
     - It was the perfect solution for Tensorflow's 'too low level' APIs
+
+<img src="../../assets/images/logos/keras-logo-1.png" alt="keras-logo-1.png" style="width:20%;float:right;clear:both;"/><!-- {"left" : 12.57, "top" : 5.48, "height" : 1.44, "width" : 4.96} -->
 
 * Tensorflow now includes Keras; it is in **`tf.keras`** package
 
@@ -135,16 +134,16 @@ model = keras.Sequential([
             ])
 
 ```
-<!-- {"left" : 0, "top" : 3.23, "height" : 3.05, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 7.39, "width" : 15.96} -->
 
 ---
 
 
 ## Abstractions
 
-<img src="../../assets/images/deep-learning/keras-model-layers-1.png" style="width:30%;float:right;"/><!-- {"left" : 5.93, "top" : 1.12, "height" : 2.19, "width" : 4.12} -->
+<img src="../../assets/images/deep-learning/keras-model-layers-1.png" style="width:30%;float:right;"/><!-- {"left" : 9.64, "top" : 1.89, "height" : 3.94, "width" : 7.41} -->
 
-<img src="../../assets/images/generic/3rd-party/baseball-coach-1.jpg" style="width:25%;float:right;clear:both;"/><!-- {"left" : 5.54, "top" : 5.33, "height" : 2.46, "width" : 2.46} --> <img src="../../assets/images/generic/3rd-party/soccer-referee-1.jpg" style="width:25%;float:right;"/><!-- {"left" : 8.2, "top" : 5.33, "height" : 2.46, "width" : 1.77} -->
+<img src="../../assets/images/generic/3rd-party/baseball-coach-1.jpg" style="width:25%;float:right;clear:both;"/><!-- {"left" : 9.68, "top" : 6.1, "height" : 4.12, "width" : 4.12} --> <img src="../../assets/images/generic/3rd-party/soccer-referee-1.jpg" style="width:25%;float:right;"/><!-- {"left" : 14.13, "top" : 6.1, "height" : 4.12, "width" : 2.96} -->
 
   * **Layer**
     - A Layer is a group of neurons.
@@ -183,6 +182,8 @@ from tensorflow import keras
 model = keras.models.Sequential()
 # model.add (...)
 ```
+<!-- {"left" : 0.85, "top" : 5.09, "height" : 2.7, "width" : 9.77} -->
+
 
 ---
 
@@ -193,7 +194,7 @@ model = keras.models.Sequential()
 * Finally we create your model from inputs and outputs:
 * Model is a __sequence of layers__
 
-<img src="../../assets/images/deep-learning/keras-model-viz-2.png"  style="width:30%;float:right;"/><!-- {"left" : 7.02, "top" : 1.09, "height" : 2.84, "width" : 3.11} -->
+<img src="../../assets/images/deep-learning/keras-model-viz-2.png"  style="width:30%;float:right;"/><!-- {"left" : 11.49, "top" : 1.89, "height" : 5.23, "width" : 5.73} -->
 
 ```python
 from tensorflow import keras
@@ -213,7 +214,8 @@ d = keras.layers.Dense(units=1, activation=tf.nn.sigmoid) (c)
 # create a model
 model = Model(inputs=a, outputs=d)
 ```
-<!-- {"left" : 0, "top" : 5.09, "height" : 2.75, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 6.2, "height" : 4.8, "width" : 10.63} -->
+
 
 ---
 
@@ -222,7 +224,7 @@ model = Model(inputs=a, outputs=d)
 * Here is another way of adding layers to model
 * Start with an empty model and keep adding layers
 
-<img src="../../assets/images/deep-learning/keras-model-viz-2.png"  style="width:30%;float:right;"/><!-- {"left" : 7.02, "top" : 1.09, "height" : 2.84, "width" : 3.11} -->
+<img src="../../assets/images/deep-learning/keras-model-viz-2.png"  style="width:30%;float:right;"/> <!-- {"left" : 11.49, "top" : 1.89, "height" : 5.23, "width" : 5.73} -->
 
 
 ```python
@@ -252,7 +254,7 @@ model = keras.Sequential([
           keras.layers.Dense(units=1, activation='sigmoid')
         ])
 ```
-<!-- {"left" : 0, "top" : 4.26, "height" : 4.46, "width" : 8.52} -->
+<!-- {"left" : 0.85, "top" : 4.51, "height" : 5.77, "width" : 10.38} -->
 
 ---
 
@@ -278,7 +280,8 @@ class MyModel(tf.keras.Model):
 
 model = MyModel()
 ```
-<!-- {"left" : 0, "top" : 2.96, "height" : 3.72, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.01, "height" : 5.06, "width" : 14.05} -->
+
 
 ---
 
@@ -288,7 +291,6 @@ model = MyModel()
 
 * We will see all these functions in detail later in examples
 
-<br />
 
 | Method       | Description                             |
 |--------------|-----------------------------------------|
@@ -299,7 +301,7 @@ model = MyModel()
 | `save_model` | Saves model for later use               |
 | `load_model` | Loads a previously saved model          |
 
-<!-- {"left" : 0.25, "top" : 1.88, "height" : 3.88, "width" : 9.75} -->
+<!-- {"left" : 2.32, "top" : 4.13, "height" : 1, "width" : 12.85} -->
 
 ---
 
@@ -326,7 +328,7 @@ model = MyModel()
 ---
 ## Core Layers: Dense
 
-<img src="../../assets/images/deep-learning/hidden-layer.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 2.99, "top" : 4.17, "height" : 4.12, "width" : 4.26} -->
+<img src="../../assets/images/deep-learning/hidden-layer.png" alt="XXX image missing" style="width:30%;float:right;"/><!-- {"left" : 11.72, "top" : 1.89, "height" : 4.97, "width" : 5.14} -->
 
 * A dense layer connects every neuron in this layer to every neuron in previous layer.
 
@@ -362,7 +364,7 @@ keras.layers.Dense(
     bias_constraint=None)
 
 ```
-<!-- {"left" : 0, "top" : 1.17, "height" : 3.64, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.3, "height" : 5.1, "width" : 13.72} -->
 
 
 ```python
@@ -375,13 +377,13 @@ from tensorflow.keras.layers import Dense
 # output array shape [*,32]
 d = Dense(units=32, input_shape=(16,)))
 ```
-<!-- {"left" : 0, "top" : 5.07, "height" : 2.35, "width" : 8.34} -->
+<!-- {"left" : 0.85, "top" : 7.53, "height" : 3.36, "width" : 11.16} -->
 
 ---
 
 ## Core Layers: Dropout
 
-<img src="../../assets/images/deep-learning/dropout-1.png" style="width:40%;float:right;"/><!-- {"left" : 6.79, "top" : 1.14, "height" : 2.92, "width" : 3.42} -->
+<img src="../../assets/images/deep-learning/dropout-1.png" style="width:40%;float:right;"/><!-- {"left" : 11.38, "top" : 1.89, "height" : 4.84, "width" : 5.67} -->
 
 
   * The dropout layer in DL helps reduce overfitting by introducing regularization and generalization
@@ -393,7 +395,7 @@ d = Dense(units=32, input_shape=(16,)))
 
 keras.layers.Dropout(rate, noise_shape=None, seed=None)
 ```
-<!-- {"left" : 0, "top" : 4.6, "height" : 1.19, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 6.57, "height" : 1.37, "width" : 11.83} -->
 
 
 ```python
@@ -403,7 +405,7 @@ from tensorflow.keras.layers import Dropout
 
 d = Dropout(rate = 0.1,seed=100)
 ```
-<!-- {"left" : 0, "top" : 6, "height" : 1.74, "width" : 6.11} -->
+<!-- {"left" : 0.85, "top" : 8.19, "height" : 1.92, "width" : 8.29} -->
 
 ---
 
@@ -413,7 +415,7 @@ d = Dropout(rate = 0.1,seed=100)
 
 ## Optimizers
 
-<img src="../../assets/images/generic/3rd-party/baseball-coach-1.jpg" style="width:30%;float:right;"/><!-- {"left" : 5.88, "top" : 1.04, "height" : 4.21, "width" : 4.21} -->
+<img src="../../assets/images/generic/3rd-party/baseball-coach-1.jpg" style="width:30%;float:right;"/><!-- {"left" : 11.47, "top" : 1.89, "height" : 5.59, "width" : 5.59} -->
 
 * Tensorflow implements a lot of popular optimizers
     - SGD: Stochastic Gradient Descent Optimizer
@@ -444,6 +446,8 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 model.compile(optimizer=tf.keras.optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True),
               loss='mean_squared_error')
 ```
+<!-- {"left" : 0.85, "top" : 4.01, "height" : 2.49, "width" : 15.95} -->
+
 
 ---
 
@@ -453,7 +457,7 @@ model.compile(optimizer=tf.keras.optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.
 
 ## Loss Functions
 
-<img src="../../assets/images/generic/3rd-party/soccer-referee-1.jpg" style="width:30%;float:right;"/><!-- {"left" : 7.15, "top" : 1.11, "height" : 4.06, "width" : 2.93} -->
+<img src="../../assets/images/generic/3rd-party/soccer-referee-1.jpg" style="width:30%;float:right;"/><!-- {"left" : 11.71, "top" : 1.89, "height" : 7.35, "width" : 5.31} -->
 
 * Loss functions are defined in [tf.keras.losses](https://www.tensorflow.org/api_docs/python/tf/keras/losses) package
 
@@ -478,6 +482,8 @@ model.compile(optimizer=tf.keras.optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.
 | 3                  | 2                   | 1800           | 320                                                  |
 | 5                  | 3                   | 2400           | 600                                                  |
 
+<!-- {"left" : 1.09, "top" : 2.25, "height" : 1, "width" : 15.33, "columnwidth" : [2.73, 3.54, 3.79, 5.27]} -->
+
 * **Mean Squared Error**
 
 ```python
@@ -489,7 +495,7 @@ model.compile(optimizer=optimizer,
               loss=tf.keras.losses.MeanSquaredError(),
               metrics = ['mse'])
 ```
-<!-- {"left" : 0, "top" : 4.13, "height" : 1.39, "width" : 6.27} -->
+<!-- {"left" : 0.85, "top" : 5.76, "height" : 2.66, "width" : 11.96} -->
 
 <br/>
 
@@ -505,7 +511,8 @@ model.compile(optimizer=optimizer,
               loss=tf.keras.losses.MeanAbsoluteError(),
               metrics = ['mae'])
 ```
-<!-- {"left" : 0, "top" : 6.5, "height" : 1.74, "width" : 8.06} -->
+<!-- {"left" : 0.85, "top" : 9.36, "height" : 2.32, "width" : 10.78} -->
+
 
 ---
 
@@ -518,6 +525,7 @@ model.compile(optimizer=optimizer,
 | 800     | 4       | 1        | 1          |
 | 640     | 3.19    | 4        | 0          |
 
+<!-- {"left" : 1.83, "top" : 2.44, "height" : 2.5, "width" : 13.84} -->
 
 *  **Binary Cross-entropy**
 * Used when outcome is binary (true/false,  0/1)
@@ -533,7 +541,7 @@ model.compile(optimizer=optimizer,
               loss=tf.keras.losses.BinaryCrossentropy(),
               metrics=['accuracy'])
 ```
-<!-- {"left" : 0, "top" : 5.92, "height" : 2.35, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 7.71, "height" : 2.8, "width" : 12.22} -->
 
 
 ---
@@ -547,7 +555,7 @@ model.compile(optimizer=optimizer,
 | 5.0 | 2.3 | 3.3 | 1.0 | 2     |
 | 4.9 | 3.1 | 1.5 | 0.1 | 3     |
 
-<br />
+<!-- {"left" : 1.23, "top" : 2.41, "height" : 1, "width" : 15.04} -->
 
 * **Sparse Categorical Cross-entropy**
 * Used for multi-class classifications ('cat', 'dog', 'lion' ..etc)
@@ -563,7 +571,7 @@ model.compile(optimizer=optimizer,
               loss=tf.keras.losses.SparseCategoricalCrossentropy(),
               metrics=['accuracy'])
 ```
-<!-- {"left" : 0, "top" : 6.52, "height" : 1.99, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 7.01, "height" : 2.76, "width" : 14.24} -->
 
 
 ---
@@ -576,7 +584,8 @@ model.compile(optimizer=optimizer,
 | 5.0 | 2.3 | 3.3 | 1.0 | [0,1,0]  |
 | 4.9 | 3.1 | 1.5 | 0.1 | [0,0,1]  |
 
-<br />
+<!-- {"left" : 1.23, "top" : 2.41, "height" : 1, "width" : 15.04} -->
+
 
 * **Categorical Cross-entropy**
 * Used for multi-class classifications ('cat', 'dog', 'lion' ..etc)
@@ -592,7 +601,8 @@ model.compile(optimizer=optimizer,
               loss=tf.keras.losses.CategoricalCrossentropy(),
               metrics=['accuracy'])
 ```
-<!-- {"left" : 0, "top" : 6.8, "height" : 1.87, "width" : 8.82} -->
+<!-- {"left" : 0.85, "top" : 8.25, "height" : 2.85, "width" : 13.47} -->
+
 
 ---
 
@@ -628,7 +638,8 @@ act = tf.keras.activations.softmax(x, axis=-1)
 model.add(Dense(units=10, activation=act))
 
 ```
-<!-- {"left" : 0, "top" : 4.07, "height" : 4.15, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 5.73, "height" : 4.66, "width" : 13.1} -->
+
 
 ---
 
@@ -640,9 +651,7 @@ model.add(Dense(units=10, activation=act))
 | 3                  | 2                   | 1800           | 320                                                  |
 | 5                  | 3                   | 2400           | 600                                                  |
 
-<!-- {"left" : 0.25, "top" : 1.27, "height" : 2.19, "width" : 9.75} -->
-
-<br />
+<!-- {"left" : 1.09, "top" : 2.25, "height" : 1, "width" : 15.33, "columnwidth" : [2.73, 3.54, 3.79, 5.27]} -->
 
 * For regressions, the last layer will have
     - __`ONE`__ neuron
@@ -664,7 +673,7 @@ model.add(Dense(units=1,
 
 
 ```
-<!-- {"left" : 0, "top" : 5.93, "height" : 2.6, "width" : 7.91} -->
+<!-- {"left" : 0.85, "top" : 7.04, "height" : 4.21, "width" : 12.81} -->
 
 ---
 
@@ -677,9 +686,8 @@ model.add(Dense(units=1,
 | 660     | 3.67    | 3        | 1          |
 | 640     | 3.19    | 4        | 0          |
 
-<!-- {"left" : 0.25, "top" : 1.22, "height" : 2, "width" : 9.75} -->
+<!-- {"left" : 1.87, "top" : 2.22, "height" : 2, "width" : 13.76} -->
 
-<br />
 
 * Used when outcome is binary (true/false,  0/1)
 * For binary classifiers, the last layer will have
@@ -699,7 +707,7 @@ model.add(Dense(units=1,
                 activation=tf.keras.activations.linear()))
 
 ```
-<!-- {"left" : 0, "top" : 7.1, "height" : 1.85, "width" : 7.4} -->
+<!-- {"left" : 0.85, "top" : 8.14, "height" : 2.32, "width" : 10.61} -->
 
 ---
 
@@ -711,7 +719,7 @@ model.add(Dense(units=1,
 | 5.0 | 2.3 | 3.3 | 1.0 | 2     |
 | 4.9 | 3.1 | 1.5 | 0.1 | 3     |
 
-<!-- {"left" : 0.25, "top" : 1.11, "height" : 2, "width" : 9.75} -->
+<!-- {"left" : 1.23, "top" : 2.41, "height" : 1, "width" : 15.04} -->
 
 * In this dataset, we are trying to predict __`label`__ as __`1 or 2 or 3`__
 * Last layer will have
@@ -729,7 +737,7 @@ model.add(Dense(units=3, activation='softmax'))
 model.add(Dense(units=3,
                 activation=tf.keras.activations.softmax()))
 ```
-<!-- {"left" : 0, "top" : 7.12, "height" : 1.54, "width" : 7.06} -->
+<!-- {"left" : 0.85, "top" : 8.94, "height" : 2.5, "width" : 11.45} -->
 
 ---
 
@@ -739,7 +747,7 @@ model.add(Dense(units=3,
 
 ## Workflow
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.11, "top" : 1.03, "height" : 4.73, "width" : 1.95} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 13.55, "top" : 1.89, "height" : 8.16, "width" : 3.36} -->
 
 * Here is a typical workflow.  
 
@@ -770,7 +778,7 @@ model.add(Dense(units=3,
 | 327,000      | 3        | 1.5       | 1,750       | 34,465   |
 | 347,000      | 4        | 1.75      | 1,860       | 14,650   |
 
-<br />
+<!-- {"left" : 0.96, "top" : 2.27, "height" : 1, "width" : 15.58} -->
 
 * Inputs: Bedrooms, Bathrooms, Sqft_Living, Sqft_Lot
 * Output: Sale Price
@@ -811,14 +819,14 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, rando
 # x_test.shape :  (5413, 4)
 # y_test.shape :  (5413, 1)
 ```
-<!-- {"left" : 0, "top" : 1.34, "height" : 5.72, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.34, "height" : 9.03, "width" : 16.11} -->
 
 ---
 
 ## 1: Network Design
 
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.2, "top" : 1.07, "height" : 4.59, "width" : 1.89} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 14.33, "top" : 1.89, "height" : 6.46, "width" : 2.66} -->
 
 
 * We will do __4 layers__
@@ -826,7 +834,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, rando
 * Two hidden layers, __64 neurons__ each, with __ReLU__ activation
 * Output layer: __1 neuron__ with __linear__ activation
 
-<img src="../../assets/images/deep-learning/regression-house-prices-network-sizing-1.png"  style="width:65%"/><!-- {"left" : 1.21, "top" : 5.89, "height" : 2.71, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/regression-house-prices-network-sizing-1.png"  style="width:65%"/><!-- {"left" : 3.32, "top" : 7.57, "height" : 3.58, "width" : 10.85} -->
 
 
 
@@ -834,8 +842,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, rando
 
 ## 1: Network Design
 
-
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.2, "top" : 1.09, "height" : 4.54, "width" : 1.87} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 13.64, "top" : 1.89, "height" : 7.3, "width" : 3.01} -->
 
 
 ```python
@@ -850,9 +857,9 @@ model = keras.Sequential([
 
 keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
 ```
-<!-- {"left" : 0, "top" : 1.96, "height" : 1.81, "width" : 8.18} -->
+<!-- {"left" : 0.85, "top" : 1.99, "height" : 2.97, "width" : 12.48} -->
 
-<img src="../../assets/images/deep-learning/regression-house-prices-model-viz-2.png"  style="width:35%;"/><!-- {"left" : 3.06, "top" : 4.4, "height" : 3.78, "width" : 4.14} -->
+<img src="../../assets/images/deep-learning/regression-house-prices-model-viz-2.png"  style="width:35%;"/><!-- {"left" : 5.75, "top" : 5.65, "height" : 5.48, "width" : 6} -->
 
 
 
@@ -860,9 +867,7 @@ keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
 
 ## 2: Compile Network
 
-
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.37, "top" : 1.09, "height" : 4.05, "width" : 1.67} -->
-
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 13.63, "top" : 1.89, "height" : 8.06, "width" : 3.32} -->
 
 * We are using __`mean_squared_error (mse)`__ for loss
 * We are tracking two metrics: __`mean_squared_error`__ and __`mean_absolute_error`__
@@ -877,15 +882,13 @@ model.compile(loss='mean_squared_error', # or 'mse'
               optimizer=optimizer,
               metrics=['mean_squared_error', 'mean_absolute_error']) # or 'mse', 'mae'
 ```
-<!-- {"left" : 0, "top" : 5.9, "height" : 1.38, "width" : 10.25} -->
-
+<!-- {"left" : 0.85, "top" : 7.07, "height" : 1.71, "width" : 12.78} -->
 
 ---
 
 ## 3: Fit Network
 
-
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.57, "top" : 1.09, "height" : 3.63, "width" : 1.5} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 13.94, "top" : 1.89, "height" : 7.36, "width" : 3.04} -->
 
 
 * We train on __training_data__ (__`x_train`__ and __`y_train`__)
@@ -902,7 +905,7 @@ history = model.fit(x_train, y_train, epochs=epochs)
 
 print ("training done.")
 ```
-<!-- {"left" : 0, "top" : 4.16, "height" : 1.84, "width" : 5.98} -->
+<!-- {"left" : 0.85, "top" : 4.87, "height" : 3.06, "width" : 9.94} -->
 
 
 ```text
@@ -922,16 +925,13 @@ training done.
 CPU times: user 18min 53s, sys: 29min 51s, total: 48min 44s
 Wall time: 3min 34s
 ```
-<!-- {"left" : 0, "top" : 6.28, "height" : 2.26, "width" : 6.46} -->
+<!-- {"left" : 0.85, "top" : 8.13, "height" : 3.48, "width" : 9.94} -->
 
 ---
 
 ## 3.5: Visualize Training History
 
-<!-- TODO shiva -->
-
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.15, "top" : 1.15, "height" : 4.42, "width" : 1.82} -->
-
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 13.72, "top" : 1.89, "height" : 7.72, "width" : 3.18} -->
 
 
 ```python
@@ -946,18 +946,17 @@ plt.plot(history.history['mean_absolute_error'], label='mae')
 plt.legend()
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 1.93, "height" : 1.71, "width" : 8.06} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 3.04, "width" : 12.4} -->
 
-<img src="../../assets/images/deep-learning/regression-house-prices-training-history-2.png"  style="width:35%;"/><!-- {"left" : 2.54, "top" : 4.43, "height" : 3.6, "width" : 5.17} -->
-<img src="../../assets/images/deep-learning/regression-house-prices-training-history-3.png"  style="width:35%;"/><!-- {"left" : 2.54, "top" : 4.43, "height" : 3.6, "width" : 5.17} -->
+<img src="../../assets/images/deep-learning/regression-house-prices-training-history-2.png"  style="width:35%;"/><!-- {"left" : 1.48, "top" : 6.65, "height" : 3.6, "width" : 5.17} -->
+<img src="../../assets/images/deep-learning/regression-house-prices-training-history-3.png"  style="width:35%;"/><!-- {"left" : 7.31, "top" : 6.65, "height" : 3.6, "width" : 5.17} -->
 
 
 
 ---
 ## 4: Evaluate Network
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.73, "top" : 1.13, "height" : 3.1, "width" : 1.28} -->
-
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/> <!-- {"left" : 13.63, "top" : 1.89, "height" : 8.06, "width" : 3.32} -->
 
 * __`model.evaluate`__ is returning a few metrics, displayed below
 
@@ -969,7 +968,7 @@ metrics = model.evaluate(x_test, y_test, verbose=0)
 for idx, metric in enumerate(metric_names):
     print ("Metric : {} = {:,.2f}".format (metric_names[idx], metrics[idx]))
 ```
-<!-- {"left" : 0, "top" : 4.84, "height" : 1.47, "width" : 9.75} -->
+<!-- {"left" : 0.85, "top" : 3.87, "height" : 1.9, "width" : 12.58} -->
 
 
 ```text
@@ -978,13 +977,14 @@ Metric : loss = 63,529,597,115.28
 Metric : mean_absolute_error = 132,878.83
 Metric : mean_squared_error = 63,529,586,688.00
 ```
-<!-- {"left" : 0, "top" : 6.62, "height" : 1.13, "width" : 9.74} -->
+<!-- {"left" : 0.85, "top" : 5.92, "height" : 1.46, "width" : 12.58} -->
+
 
 ---
 
 ## 5: Predict
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.52, "top" : 1.07, "height" : 3.69, "width" : 1.52} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/> <!-- {"left" : 13.63, "top" : 1.89, "height" : 8.06, "width" : 3.32} -->
 
 
 * We predict on __`x_test`__
@@ -1004,11 +1004,12 @@ predictions_df['predicted_price'] = predictions
 predictions_df['error'] = predictions_df['actual_price'] -
                           predictions_df['predicted_price']
 ```
-<!-- {"left" : 0, "top" : 4.98, "height" : 1.73, "width" : 6.12} -->
+<!-- {"left" : 0.85, "top" : 6.09, "height" : 3.01, "width" : 10.63} -->
 
 
+<img src="../../assets/images/deep-learning/regression-house-prices-predictions-1.png"  style="width:70%;"/><!-- {"left" : 4.3, "top" : 9.48, "height" : 2.15, "width" : 8.9} -->
 
-<img src="../../assets/images/deep-learning/regression-house-prices-predictions-1.png"  style="width:70%;"/><!-- {"left" : 1.75, "top" : 6.94, "height" : 1.63, "width" : 6.76} -->
+
 
 
 
@@ -1016,8 +1017,7 @@ predictions_df['error'] = predictions_df['actual_price'] -
 
 ## 5: Predict - Analyze Error
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.46, "top" : 1.04, "height" : 4.06, "width" : 1.67} -->
-
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/> <!-- {"left" : 14.93, "top" : 1.89, "height" : 5.56, "width" : 2.29} -->
 
 * We are analyzing error, just displaying a error-distribution
 
@@ -1033,18 +1033,16 @@ plt.hist (predictions_df_filtered['error'], bins=10, rwidth=0.8)
 plt.xlabel("Prediction Error [$]")
 _ = plt.ylabel("Count")
 ```
-<!-- {"left" : 0, "top" : 3.85, "height" : 2.04, "width" : 8.04} -->
+<!-- {"left" : 0.85, "top" : 4.05, "height" : 2.8, "width" : 11.05} -->
 
-
-<img src="../../assets/images/deep-learning/regression-house-prices-error-1.png"  style="width:45%;"/><!-- {"left" : 2.85, "top" : 5.98, "height" : 3, "width" : 4.54} -->
-
+<img src="../../assets/images/deep-learning/regression-house-prices-error-1.png"  style="width:45%;"/><!-- {"left" : 12.53, "top" : 7.9, "height" : 3.17, "width" : 4.79} -->
 
 
 ---
 
 ## 5: Predict - Analyze Error
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.68, "top" : 1.09, "height" : 3.18, "width" : 1.31} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/> <!-- {"left" : 13.63, "top" : 1.89, "height" : 8.06, "width" : 3.32} -->
 
 * Inspect the biggest erorr and smallest error.  Can you explain?
 
@@ -1053,7 +1051,7 @@ _ = plt.ylabel("Count")
 print ("biggest error: ")
 predictions_df.loc[predictions_df['error'].abs().idxmax()]
 ```
-<!-- {"left" : 0, "top" : 3.17, "height" : 0.85, "width" : 7.66} -->
+<!-- {"left" : 0.85, "top" : 3.65, "height" : 1.15, "width" : 10.44} -->
 
 
 
@@ -1067,8 +1065,8 @@ actual_price      11,000,000.00
 predicted_price    2,582,545.50
 error              8,417,454.50
 ```
+<!-- {"left" : 0.85, "top" : 5, "height" : 2.61, "width" : 5.94} -->
 
-<!-- {"left" : 0, "top" : 4.2, "height" : 1.84, "width" : 4.18} -->
 
 
 ```python
@@ -1076,7 +1074,7 @@ error              8,417,454.50
 print ("lowest error")
 predictions_df.loc[predictions_df['error'].abs().idxmin()]
 ```
-<!-- {"left" : 0, "top" : 6.22, "height" : 0.85, "width" : 7.66} -->
+<!-- {"left" : 0.85, "top" : 7.81, "height" : 1.15, "width" : 10.44} -->
 
 
 ```text
@@ -1089,15 +1087,14 @@ actual_price      385,000.00
 predicted_price   385,004.03
 error                  -4.03
 ```
-<!-- {"left" : 0, "top" : 7.2, "height" : 1.84, "width" : 3.83} -->
+<!-- {"left" : 0.85, "top" : 9.16, "height" : 2.61, "width" : 5.44} -->
 
 
 ---
 
 ## Lab: Regressions Using NN
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.79, "top" : 1.89, "height" : 5.51, "width" : 4.14} -->
 
 * **Overview:**
     - Solve regression problems with Tensorflow
@@ -1135,7 +1132,7 @@ Notes:
 ```python
 model.fit (x_test, y_test, verbose=1)
 ```
-<!-- {"left" : 0, "top" : 6.3, "height" : 0.57, "width" : 6.94} -->
+<!-- {"left" : 0.85, "top" : 8.35, "height" : 0.77, "width" : 9.37} -->
 
 ```text
 Train on 96 samples, validate on 24 samples
@@ -1145,7 +1142,7 @@ Epoch   1/100 [==============================] - loss: 2.1204 - accuracy: 0.9023
 ...
 Epoch 100/100 [==============================] - loss: 0.2375 - accuracy: 0.9583
 ```
-<!-- {"left" : 0, "top" : 7.24, "height" : 1.47, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 9.31, "height" : 1.98, "width" : 13.83} -->
 
 ---
 
@@ -1166,10 +1163,10 @@ if 'val_acc' in history.history:
 # ...
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 3.46, "height" : 2.15, "width" : 6.37} -->
+<!-- {"left" : 0.85, "top" : 3.91, "height" : 3.1, "width" : 9.17} -->
 
-<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 1.06, "top" : 5.8, "height" : 2.83, "width" : 3.81} -->
-<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 5.04, "top" : 5.67, "height" : 3.09, "width" : 4.15} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 2.63, "top" : 7.12, "height" : 4.49, "width" : 6.04} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 8.78, "top" : 7.09, "height" : 4.53, "width" : 6.09} -->
 
 ---
 
@@ -1183,8 +1180,8 @@ plt.show()
     - History object available __only after__ the training is __complete__
     - So we won't
 
-<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 0.29, "top" : 4.89, "height" : 3.59, "width" : 4.82} -->
-<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 5.27, "top" : 4.94, "height" : 3.5, "width" : 4.69} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 1.92, "top" : 6.23, "height" : 5.07, "width" : 6.81} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="35%" style="background:white;"/><!-- {"left" : 8.77, "top" : 6.19, "height" : 5.08, "width" : 6.81} -->
 
 ---
 
@@ -1213,7 +1210,7 @@ plt.show()
 ## TensorBoard
 
 
-<img src="../../assets/images/deep-learning/3rd-party/tensorboard.gif" style="width:60%;"/><!-- {"left" : 1.81, "top" : 1.14, "height" : 5.02, "width" : 6.64} -->
+<img src="../../assets/images/deep-learning/3rd-party/tensorboard.gif" style="width:60%;"/><!-- {"left" : 4.27, "top" : 1.89, "height" : 6.78, "width" : 8.96} -->
 
 
 
@@ -1224,7 +1221,8 @@ plt.show()
 
 ## Keras and TensorBoard
 
-<img src="../../assets/images/deep-learning/tensorboard-keras.png" alt="tensorboard-keras.png" style="width:70%;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
+<img src="../../assets/images/deep-learning/tensorboard-keras.png" alt="tensorboard-keras.png" style="width:70%;"/><!-- {"left" : 2.55, "top" : 2.32, "height" : 9.06, "width" : 12.39} -->
+
 
 ---
 
@@ -1234,7 +1232,8 @@ plt.show()
 ## Step 1: Run Tensorboard app - it will be monitoring a logs directory
 $   tensorboard --logdir=/tmp/tensorboard-logs
 ```
-<!-- {"left" : 0, "top" : 1.56, "height" : 0.7, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.45, "height" : 0.86, "width" : 12.61} -->
+
 
 ```python
 ## Step 2: Setup Tensorboard in our application
@@ -1251,7 +1250,8 @@ tensorboard_logs_dir= os.path.join (tb_top_level_dir, app_name,
 print ("Saving TB logs to : " , tensorboard_logs_dir)
 # Saving TB logs to :  /tmp/tensorboard-logs/classification-iris-1/2020-02-05--18-47-10
 ```
-<!-- {"left" : 0, "top" : 2.7, "height" : 2.62, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.51, "height" : 4.07, "width" : 15.96} -->
+
 
 ```python
 ## Step 3: provide tb-callback function during training
@@ -1261,13 +1261,14 @@ model.fit(x, y, epochs=5,
           callbacks=[tb_callback])  ## <-- here is the linkup
 
 ```
-<!-- {"left" : 0, "top" : 5.76, "height" : 0.5, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 7.78, "height" : 1.74, "width" : 16.11} -->
+
 
 ---
 
 ## TensorBoard Log Directory
 
-<img src="../../assets/images/deep-learning/tensorboard-2.png" style="width:60%;float:right;"/><!-- {"left" : 5.8, "top" : 1.05, "height" : 2.07, "width" : 4.27} -->
+<img src="../../assets/images/deep-learning/tensorboard-2.png" style="width:60%;float:right;"/><!-- {"left" : 8.85, "top" : 1.89, "height" : 4.04, "width" : 8.33} -->
 
 
 * Each application will write their own directory within logs directory
@@ -1286,7 +1287,7 @@ tensorboard-logs/
 └── app2__2020-01-01--12-33-00
 
 ```
-<!-- {"left" : 0, "top" : 6.8, "height" : 1.44, "width" : 5.78} -->
+<!-- {"left" : 0.85, "top" : 8.14, "height" : 1.99, "width" : 8} -->
 
 
 
@@ -1294,7 +1295,7 @@ tensorboard-logs/
 
 ## Lab: Using TensorBoard
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.63, "top" : 1.89, "height" : 6.08, "width" : 4.57} -->
 
 
 * **Overview:**
@@ -1315,7 +1316,7 @@ Notes:
 ---
 ## Workflow
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.21, "top" : 1.16, "height" : 4.32, "width" : 1.78} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 13.59, "top" : 1.89, "height" : 8.35, "width" : 3.44} -->
 
 * Here is a typical workflow  
 
@@ -1338,7 +1339,7 @@ Notes:
 
 ## Let's use IRIS Dataset
 
-<img src="../../assets/images/generic/3rd-party/iris-flower-1.jpg" style="width:30%;float:right;"/><!-- {"left" : 6.96, "top" : 1.09, "height" : 2.52, "width" : 3.13} -->
+<img src="../../assets/images/generic/3rd-party/iris-flower-1.jpg" style="width:30%;float:right;"/><!-- {"left" : 12.34, "top" : 1.89, "height" : 3.89, "width" : 4.83} -->
 
 * IRIS is a very simple dataset (a ML classic)
 
@@ -1347,7 +1348,6 @@ Notes:
 * Total samples: 150
 * Well balanced, each label (1,2,3) has 50 samples each
 
-<br />
 
 | a   | b   | c   | d   | label |
 |-----|-----|-----|-----|-------|
@@ -1355,7 +1355,7 @@ Notes:
 | 5.0 | 2.3 | 3.3 | 1.0 | 2     |
 | 4.9 | 3.1 | 1.5 | 0.1 | 1     |
 
-<!-- {"left" : 0.25, "top" : 6.17, "height" : 2, "width" : 9.75} -->
+<!-- {"left" : 3.88, "top" : 8.78, "height" : 1, "width" : 9.75} -->
 
 Notes:
 Image by <a href="https://pixabay.com/users/pixel2013-2364555/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2339883">S. Hermann &amp; F. Richter</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2339883">Pixabay</a>
@@ -1398,7 +1398,7 @@ print ("y_test.shape : ", y_test.shape)
 # y_test.shape :  (30,)
 
 ```
-<!-- {"left" : 0, "top" : 1.21, "height" : 6.48, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.33, "height" : 9.42, "width" : 14.9} -->
 
 
 ---
@@ -1406,7 +1406,7 @@ print ("y_test.shape : ", y_test.shape)
 
 ## 1: Network Design
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.54, "top" : 1.09, "height" : 3.73, "width" : 1.54} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 14.42, "top" : 1.89, "height" : 5.59, "width" : 2.31} -->
 
 
 - Input layer will have __`4 neurons`__ to match input dimensions (a,b,c,d)
@@ -1415,7 +1415,7 @@ print ("y_test.shape : ", y_test.shape)
 
 - Output layer will have __`3 neurons`__ with __`SoftMax`__ activation
 
-<img src="../../assets/images/deep-learning/iris_feedforward_neural_network.png" alt="iris_feedforward_neural_network.png" style="width:50%;"/><!-- {"left" : 2.5, "top" : 5.48, "height" : 3.25, "width" : 5.25} -->
+<img src="../../assets/images/deep-learning/iris_feedforward_neural_network.png" alt="iris_feedforward_neural_network.png" style="width:50%;"/><!-- {"left" : 11.14, "top" : 7.85, "height" : 3.6, "width" : 5.82} -->
 
 
 
@@ -1423,7 +1423,7 @@ print ("y_test.shape : ", y_test.shape)
 
 ## Step 1: Define Model
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 7.7, "top" : 4.26, "height" : 3.89, "width" : 1.6} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 13.45, "top" : 1.89, "height" : 7.86, "width" : 3.23} -->
 
 ```python
 from tensorflow.keras.models import Sequential
@@ -1435,17 +1435,16 @@ model.add(Dense(3, activation='softmax'))
 
 keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
 ```
-<!-- {"left" : 0, "top" : 1.69, "height" : 2.13, "width" : 9.28} -->
+<!-- {"left" : 0.85, "top" : 2.44, "height" : 2.7, "width" : 12.51} -->
 
-
-<img src="../../assets/images/deep-learning/classification-iris-model-viz-1.png" style="width:30%;"/><!-- {"left" : 0.63, "top" : 4.59, "height" : 3.55, "width" : 5.72} -->
+<img src="../../assets/images/deep-learning/classification-iris-model-viz-1.png" style="width:30%;"/> <!-- {"left" : 5.92, "top" : 6.35, "height" : 4.99, "width" : 5.66} -->
 
 
 ---
 
 ## Step 2: Compile the Model
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.22, "top" : 1.11, "height" : 4.44, "width" : 1.83} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/> <!-- {"left" : 13.45, "top" : 1.89, "height" : 7.86, "width" : 3.23} -->
 
 * We are using __`sparse_categorical_crossentropy`__ for loss, because this is a __multi-class classifier__
 * We are tracking metric  __`accuracy`__
@@ -1457,7 +1456,7 @@ model.compile( optimizer = 'adam',
                loss = 'categorical_crossentropy',
                metrics = ['accuracy'] )
 ```
-<!-- {"left" : 0, "top" : 6.08, "height" : 1.07, "width" : 8.94} -->
+<!-- {"left" : 0.85, "top" : 6.37, "height" : 1.38, "width" : 11.52} -->
 
 ---
 
@@ -1466,7 +1465,7 @@ model.compile( optimizer = 'adam',
 * We train on __training_data__ (__`x_train`__ and __`y_train`__)
 * Output may look like below; we did 100 epochs in about 10 seconds
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:15%;float:right;"/><!-- {"left" : 8.35, "top" : 1.14, "height" : 4.19, "width" : 1.73} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:15%;float:right;"/> <!-- {"left" : 13.45, "top" : 1.89, "height" : 7.86, "width" : 3.23} -->
 
 
 ```python
@@ -1477,7 +1476,7 @@ history = model.fit(x_train, y_train, epochs = 100, batch_size = 2**4)
 history = model.fit(x_train, y_train, epochs = 100, batch_size = 2**4,
 validation_split=0.25)
 ```
-<!-- {"left" : 0, "top" : 4.21, "height" : 1.32, "width" : 8.1} -->
+<!-- {"left" : 0.85, "top" : 4.64, "height" : 2.02, "width" : 12.42} -->
 
 ```text
 training starting ...
@@ -1496,13 +1495,13 @@ training done.
 CPU times: user 14.3 s, sys: 18.9 s, total: 33.3 s
 Wall time: 10.1 s
 ```
-<!-- {"left" : 0, "top" : 5.82, "height" : 2.61, "width" : 8.1} -->
+<!-- {"left" : 0.85, "top" : 6.83, "height" : 4, "width" : 12.42} -->
 
 ---
 
 ## Step 3.5: Visualize Training History
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.65, "top" : 1.02, "height" : 3.61, "width" : 1.49} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/> <!-- {"left" : 13.45, "top" : 1.89, "height" : 7.86, "width" : 3.23} -->
 
 
 * The __`fit()`__ method on a Keras Model returns a __`History`__ object.
@@ -1520,16 +1519,16 @@ plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
 ```
-<!-- {"left" : 0, "top" : 4.26, "height" : 1.9, "width" : 5.13} -->
+<!-- {"left" : 0.85, "top" : 5.31, "height" : 2.88, "width" : 7.79} -->
 
-<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 1.01, "top" : 6.37, "height" : 2.44, "width" : 3.41} -->   &nbsp; &nbsp; <img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 5.82, "top" : 6.39, "height" : 2.4, "width" : 3.41} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 3.38, "top" : 8.7, "height" : 2.95, "width" : 4.13} -->   &nbsp; &nbsp; <img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="30%" style="background:white;"/><!-- {"left" : 7.68, "top" : 8.7, "height" : 2.95, "width" : 4.2} -->
 
 
 ---
 
 ## Step 4: Evaluate network
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.69, "top" : 1.04, "height" : 3.53, "width" : 1.45} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/> <!-- {"left" : 13.45, "top" : 1.89, "height" : 7.86, "width" : 3.23} -->
 
 
 * __`model.evaluate`__ is returning a few metrics, displayed below
@@ -1543,7 +1542,7 @@ metrics = model.evaluate(x_test, y_test, verbose=0)
 for idx, metric in enumerate(metric_names):
     print ("Metric : {} = {:,.2f}".format (metric_names[idx], metrics[idx]))
 ```
-<!-- {"left" : 0, "top" : 4.84, "height" : 1.77, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.17, "height" : 2.1, "width" : 12.2} -->
 
 
 ```text
@@ -1551,13 +1550,14 @@ model metrics :  ['loss', 'accuracy']
 Metric : loss = 0.27
 Metric : accuracy = 0.93
 ```
-<!-- {"left" : 0, "top" : 7.09, "height" : 1.15, "width" : 6.94} -->
+<!-- {"left" : 0.85, "top" : 6.6, "height" : 1.29, "width" : 7.79} -->
 
 ---
+
 ## Step 4.5: Training Accuracy & Loss
 
-<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="33%" style="background:white;"/><!-- {"left" : 2.96, "top" : 1.65, "height" : 3.22, "width" : 4.32} --><br clear="all;"/>
-<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="33%" style="background:white;"/><!-- {"left" : 2.96, "top" : 5.24, "height" : 3.22, "width" : 4.32} -->
+<img src="../../assets/images/deep-learning/classification-iris-viz-accuracy1.png" alt="XXX image missing" width="33%" style="background:white;"/><!-- {"left" : 5.95, "top" : 2.44, "height" : 4.18, "width" : 5.6} --><br clear="all;"/>
+<img src="../../assets/images/deep-learning/classification-iris-viz-loss1.png" alt="XXX image missing" width="33%" style="background:white;"/><!-- {"left" : 5.95, "top" : 7.09, "height" : 4.18, "width" : 5.6} -->
 
 
 ---
@@ -1581,13 +1581,14 @@ print ("Saving TB logs to : " , tensorboard_logs_dir)
 
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=tensorboard_logs_dir, histogram_freq=1)
 ```
-<!-- {"left" : 0, "top" : 1.78, "height" : 2.37, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.82, "height" : 3.69, "width" : 15.95} -->
 
 ```bash
 ## Step 2: Run Tensorboard
 $   tensorboard --logdir=/tmp/tensorboard-logs
 ```
-<!-- {"left" : 0, "top" : 4.52, "height" : 0.86, "width" : 8.44} -->
+<!-- {"left" : 0.85, "top" : 6.81, "height" : 1.11, "width" : 10.86} -->
+
 
 ```python
 # Step 3: Use tensorboard callback during training
@@ -1596,20 +1597,20 @@ history = model.fit( x_train, y_train,
               callbacks=[tensorboard_callback]) # <-- here is the TB callback
 
 ```
-<!-- {"left" : 0, "top" : 5.76, "height" : 1.09, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 8.23, "height" : 1.57, "width" : 14.84} -->
 
 ---
 
 ## TensorBoard Visualization
 
-<img src="../../assets/images/deep-learning/tensorboard-keras.png" alt="tensorboard-keras.png" style="width:70%;"/><!-- {"left" : 1.51, "top" : 2.18, "height" : 5.28, "width" : 7.22} -->
+<img src="../../assets/images/deep-learning/tensorboard-keras.png" alt="tensorboard-keras.png" style="width:70%;"/><!-- {"left" : 2.67, "top" : 2.41, "height" : 8.9, "width" : 12.17} -->
 
 
 ---
 
 ## Step 5: Predict
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.59, "top" : 1, "height" : 3.51, "width" : 1.45} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 13.93, "top" : 1.89, "height" : 7.54, "width" : 3.12} -->
 
 * __`model.predict`__ is run on __`x_test`__
 
@@ -1624,7 +1625,7 @@ np.set_printoptions(formatter={'float': '{: 0.3f}'.format})
 predictions = model.predict(x_test)
 predictions
 ```
-<!-- {"left" : 0, "top" : 5.41, "height" : 1.33, "width" : 9.74} -->
+<!-- {"left" : 0.85, "top" : 6.7, "height" : 1.63, "width" : 11.92} -->
 
 
 ```text
@@ -1635,14 +1636,14 @@ array([[ 0.002,  0.249,  0.749], # winner class-3 (0.749)
        [ 0.965,  0.034,  0.001],
        [ 0.000,  0.151,  0.849],
 ```
-<!-- {"left" : 0, "top" : 6.96, "height" : 1.82, "width" : 9.25} -->
+<!-- {"left" : 0.85, "top" : 8.59, "height" : 2.34, "width" : 11.92} -->
 
 
 ---
 
 ## Step 5: Predict
 
-<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/><!-- {"left" : 8.17, "top" : 1.07, "height" : 4.71, "width" : 1.94} -->
+<img src="../../assets/images/deep-learning/nn-workflow.png"  style="width:20%;float:right;"/> <!-- {"left" : 14.45, "top" : 1.43, "height" : 6.6, "width" : 2.73} -->
 
 
 * Here we convert softmax output actual class label
@@ -1652,14 +1653,14 @@ predictions = model.predict(x_test)
 y_pred = np.argmax(predictions, axis=-1)
 print ('prediction classes: ', y_pred)
 ```
-<!-- {"left" : 0, "top" : 4.68, "height" : 1.12, "width" : 8.01} -->
+<!-- {"left" : 0.85, "top" : 4.15, "height" : 1.47, "width" : 10.48} -->
 
 
 ```text
 array([2, 1, 0, 2, 0, 2, 0, 1, 1, 1, 2, 1, 2, 1, 2, 0, 1, 2, 0, 0, 2, 2,
        0, 0, 2, 0, 0, 1, 1, 0])
 ```
-<!-- {"left" : 0, "top" : 6.3, "height" : 0.7, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 5.75, "height" : 0.92, "width" : 13.41} -->
 
 
 ---
@@ -1679,9 +1680,10 @@ plt.figure(figsize = (8,5))
 # colormaps : cmap="YlGnBu" , cmap="Greens", cmap="Blues",  cmap="Reds"
 sns.heatmap(cm, annot=True, cmap="Reds", fmt='d').plot()
 ```
-<!-- {"left" : 0, "top" : 0.97, "height" : 1.96, "width" : 7.08} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 3.12, "width" : 11.3} -->
 
-<img src="../../assets/images/deep-learning/classification-iris-confusion-matrix-1.png"  style="width:50%;float:right;"/><!-- {"left" : 6.22, "top" : 3.55, "height" : 2.68, "width" : 3.93} -->
+
+<img src="../../assets/images/deep-learning/classification-iris-confusion-matrix-1.png"  style="width:50%;float:right;"/><!-- {"left" : 12.78, "top" : 1.89, "height" : 3.12, "width" : 4.58} -->
 
 
 * __To the Instructor:__  You may want to cover __Confusion Matrix__ from __ML Concepts__
@@ -1691,7 +1693,7 @@ sns.heatmap(cm, annot=True, cmap="Reds", fmt='d').plot()
 
 ## Lab: Classifier with NN
 
-<img src="../../assets/images/icons/individual-labs.png" alt="individual-labs.png" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="individual-labs.png" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 12.95, "top" : 1.89, "height" : 5.45, "width" : 4.09} -->
 
   * **Overview:**
      - Build a classification network with NN
@@ -1704,8 +1706,8 @@ sns.heatmap(cm, annot=True, cmap="Reds", fmt='d').plot()
 
   * **Instructions:**
      - Follow instructions for
-        - __Classification-1__ : IRIS
-        - __Classification-2__ : Propser Loan
+        - __Classification-1:__ IRIS
+        - __Classification-2:__ Propser Loan
 
 ---
 
@@ -1722,8 +1724,7 @@ sns.heatmap(cm, annot=True, cmap="Reds", fmt='d').plot()
 
 ## Callbacks
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/classification-iris-accuracy-2.png" style="width:40%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/deep-learning/classification-iris-accuracy-2.png" style="width:40%;float:right;" /><!-- {"left" : 10.73, "top" : 1.89, "height" : 4.76, "width" : 6.43} -->
 
 * In our previous lab runs we have noticed with increased epochs the network accruacy increases
 
@@ -1741,9 +1742,9 @@ sns.heatmap(cm, annot=True, cmap="Reds", fmt='d').plot()
 ## Standard Callbacks
 
 * Tensorflow provides following callbacks
-    - **`EarlyStopping`** : Stop training when a monitored metric has stopped improving
-    - **`ModelCheckpoint`** : Callback to save the Keras model or model weights at some frequency
-    - **`TensorBoard`** : Enable visualizations for TensorBoard.
+    - **`EarlyStopping`:** Stop training when a monitored metric has stopped improving
+    - **`ModelCheckpoint`:** Callback to save the Keras model or model weights at some frequency
+    - **`TensorBoard`:** Enable visualizations for TensorBoard.
     - and more...
 
 * [Callback reference](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/)
@@ -1756,7 +1757,6 @@ sns.heatmap(cm, annot=True, cmap="Reds", fmt='d').plot()
 
 * [Reference](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping)
 
-<!-- TODO shiva -->
 
 ```python
 
@@ -1776,6 +1776,8 @@ history = model.fit (x, y, epochs=100,
                      callbacks = [cb_early_stop]) ## <-- here
 
 ```
+<!-- {"left" : 0.85, "top" : 3.4, "height" : 4.1, "width" : 16.23} -->
+
 
 ---
 
@@ -1783,7 +1785,6 @@ history = model.fit (x, y, epochs=100,
 
 * We can provide more than one callbacks
 
-<!-- TODO shiva -->
 
 ```python
 
@@ -1798,6 +1799,8 @@ history = model.fit (x_train, y_train, epochs=100,
                      callbacks = [cb_tensorboard, cb_early_stop]) ## <-- here
 
 ```
+<!-- {"left" : 0.85, "top" : 2.71, "height" : 2.76, "width" : 16.44} -->
+
 
 ---
 
@@ -1808,8 +1811,6 @@ history = model.fit (x_train, y_train, epochs=100,
 * Extend **`tf.keras.callbacks.Callback`**
 
 * [Reference](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/Callback)
-
-<!-- TODO shiva -->
 
 ```python
 on_epoch_end: logs include `acc` and `loss`, and
@@ -1824,12 +1825,14 @@ on_batch_end: logs include `loss`, and optionally `acc`
     (if accuracy monitoring is enabled).
 
 ```
+<!-- {"left" : 0.85, "top" : 3.99, "height" : 4, "width" : 12.67} -->
+
 
 ---
 
 ## Implementing a Custom Callback
 
-<!-- TODO shiva -->
+<br/>
 
 ```python
 class CustomCallback(keras.callbacks.Callback):
@@ -1862,6 +1865,8 @@ class CustomCallback(keras.callbacks.Callback):
 model.fit(x_train, y_train, epochs=2,
             callbacks=[CustomCallback()])
 ```
+<!-- {"left" : 0.85, "top" : 1.85, "height" : 7.49, "width" : 12.25} -->
+
 
 * Output next slide
 
@@ -1895,6 +1900,7 @@ End epoch 0 of training; got log keys:
 ...
 Stop training; got log keys: []
 ```
+<!-- {"left" : 0.85, "top" : 2.43, "height" : 7.92, "width" : 14.28} -->
 
 ---
 
@@ -1916,9 +1922,12 @@ class MyCallback(tf.keras.callbacks.Callback):
 model.fit(x_train, y_train, epochs=2,
             callbacks=[MyCallback()])
 ```
+<!-- {"left" : 0.85, "top" : 3.42, "height" : 4.62, "width" : 13.39} -->
 
 ---
 ## Implementing a Custom Callback
+
+ <br/>
 
 ```python
 import tensorflow as tf
@@ -1947,6 +1956,9 @@ model.compile(optimizer=tf.optimizers.Adam(),
 
 model.fit(x_train, y_train, epochs=10, callbacks=[callbacks])
 ```
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 7.9, "width" : 11.42} -->
+
+ <br/>
 
 * Output next slide
 * [Reference](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Course%201%20-%20Part%204%20-%20Lesson%204%20-%20Notebook.ipynb)
@@ -1973,12 +1985,13 @@ Reached 60% accuracy so cancelling training!
 <tensorflow.python.keras.callbacks.History at 0x7f63ad143c88>
 
 ```
+<!-- {"left" : 0.85, "top" : 4.04, "height" : 2.99, "width" : 16.13} -->
 
 ---
 
 ## Lab: Callbacks
 
-<img src="../../assets/images/icons/individual-labs.png" alt="individual-labs.png" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 7.04, "top" : 1.01, "height" : 3.9, "width" : 2.93} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="individual-labs.png" style="background:white;max-width:100%;float:right;" width="30%;"/><!-- {"left" : 12.58, "top" : 1.89, "height" : 5.95, "width" : 4.47} -->
 
   * **Overview:**
      - Implement a custom callback
@@ -1996,7 +2009,7 @@ Reached 60% accuracy so cancelling training!
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.07, "top" : 1.89, "height" : 2.69, "width" : 3.63} -->
 
 
 * Let's go over what we have covered so far
@@ -2005,7 +2018,8 @@ Reached 60% accuracy so cancelling training!
 
 * See following slides for 'resources'
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 5, "height" : 5.53, "width" : 8.31} -->
+
 ---
 
 # Resources
@@ -2019,7 +2033,7 @@ Reached 60% accuracy so cancelling training!
   * [Practical Deep Learning for Cloud and Mobile](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/) by Meher Kasam, Siddha Ganju, Anirudh Koul (ISBN: 9781492034841)
 
 
-<img src="../../assets/images/books/hands-on-machine-learning-with-scikit-learn-9781492032649.jpg" alt="keras book1" style="width:20%;"/><!-- {"left" : 2.62, "top" : 4.41, "height" : 2.93, "width" : 2.23} --> &nbsp;&nbsp; <img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 5.39, "top" : 4.41, "height" : 2.93, "width" : 2.23} -->
+<img src="../../assets/images/books/hands-on-machine-learning-with-scikit-learn-9781492032649.jpg" alt="keras book1" style="width:20%;"/><!-- {"left" : 4.75, "top" : 6.08, "height" : 4.69, "width" : 3.57} --> &nbsp;&nbsp; <img src="../../assets/images/books/practical-deep-learning-for-cloud-and-mobile-9781492034841.jpg" alt="keras book4" style="width:20%;"/><!-- {"left" : 9.18, "top" : 6.08, "height" : 4.69, "width" : 3.57} -->
 
 ---
 
@@ -2029,7 +2043,7 @@ Reached 60% accuracy so cancelling training!
 
   * [Learn Keras for Deep Neural Networks:A Fast-Track Approach to Modern Deep Learning with Python](https://learning.oreilly.com/library/view/learn-keras-for/9781484242407/)by Jojo Moolayil (ISBN : 9781484242407)very good book that explains concepts pretty well
 
-<img src="../../assets/images/books/keras-deep-learning-9781788621755.jpg" alt="keras book3" style="width:19.1%;"/> &nbsp;&nbsp; <!-- {"left" : 2.66, "top" : 4.69, "height" : 3.03, "width" : 2.48} --><img src="../../assets/images/books/learn-keras-for-deep-neural-networks-9781484242407.jpg" alt="keras book3" style="width:15.5%;"/><!-- {"left" : 5.59, "top" : 4.69, "height" : 3.03, "width" : 2} -->
+<img src="../../assets/images/books/keras-deep-learning-9781788621755.jpg" alt="keras book3" style="width:19.1%;"/> &nbsp;&nbsp; <!-- {"left" : 5.39, "top" : 6.7, "height" : 4.18, "width" : 3.18} --><img src="../../assets/images/books/learn-keras-for-deep-neural-networks-9781484242407.jpg" alt="keras book3" style="width:15.5%;"/><!-- {"left" : 8.93, "top" : 6.7, "height" : 4.18, "width" : 3.18} -->
 ---
 ## Resources
 
@@ -2037,7 +2051,7 @@ Reached 60% accuracy so cancelling training!
 
   * [Safari books online, Keras books](https://learning.oreilly.com/topics/keras)
 
-<img src="../../assets/images/books/deep-learning-with-keras-9781787128422.jpg" alt="keras book2" style="width:18%;"/><!-- {"left" : 3.99, "top" : 3.9, "height" : 3.44, "width" : 2.26} -->
+<img src="../../assets/images/books/deep-learning-with-keras-9781787128422.jpg" alt="keras book2" style="width:18%;"/><!-- {"left" : 13.29, "top" : 1.89, "height" : 5.67, "width" : 3.72} -->
 
 ---
 
@@ -2067,7 +2081,7 @@ sgd = SGD(lr=0.01,
 model.compile(optimizer=sgd, loss='mean_squared_error')
 
 ```
-<!-- {"left" : 0, "top" : 1.01, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 4.25, "width" : 11.55} -->
 
 <br/>
 
@@ -2095,7 +2109,8 @@ adagrad = keras.optimizers.Adagrad(lr=0.01,
 model.compile(optimizer=adagrad, ...)
 
 ```
-<!-- {"left" : 0, "top" : 1.14, "height" : 2.39, "width" : 7.37} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 3.77, "width" : 9.48} -->
+
 
 <br/>
 
@@ -2124,7 +2139,7 @@ rmsprop = keras.optimizers.RMSprop(lr=0.001,
 model.compile(optimizer=rmsprop, ...)
 
 ```
-<!-- {"left" : 0, "top" : 1.09, "height" : 2.45, "width" : 5.7} -->
+<!-- {"left" : 0.85, "top" : 1.89, "height" : 3.73, "width" : 8.67} -->
 
 <br/>
 
@@ -2155,7 +2170,7 @@ model.compile(optimizer=adam, ...)
 
 ```
 
-<!-- {"left" : 0, "top" : 1.35, "height" : 3.78, "width" : 7.94} -->
+<!-- {"left" : 0.85, "top" : 2.31, "height" : 4.85, "width" : 10.19} -->
 
 ---
 
@@ -2169,5 +2184,3 @@ model.compile(optimizer=adam, ...)
     - `decay`: float >= 0. Learning rate decay over each update.
     - `amsgrad`: boolean. Whether to apply the AMSGrad variant of this algorithm from the paper "On the Convergence of Adam and Beyond".
 
-
----

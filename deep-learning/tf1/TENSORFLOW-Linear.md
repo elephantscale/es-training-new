@@ -10,7 +10,7 @@
 
 ---
 
-# Introducing Linear Models
+## Introducing Linear Models
 
 [GENERIC Linear Model](../generic/DL-Linear.md)
 
@@ -107,6 +107,6 @@ Y_ = tf.squeeze(tf.matmul(W,X) + B)
  * They use the softmax layer
 
 ---
-# Tensorflow High-Level Models
+## Tensorflow High-Level Models
 
 [TENSORFLOW Regression](./TENSORFLOW-Regression.md)

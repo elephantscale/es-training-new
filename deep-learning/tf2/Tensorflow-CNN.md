@@ -1,6 +1,6 @@
 # Convolutional Neural Networks (CNNs) in TensorFlow
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:15%;"/><!-- {"left" : 7.34, "top" : 7.61, "height" : 2.4, "width" : 2.82} -->
 
 
 ---
@@ -11,7 +11,7 @@
 
 ---
 
-## Introduction to CNNs
+# Introduction to CNNs
 
 [../generic/DL-CNNs.md](../generic/DL-CNNs.md)
 
@@ -19,12 +19,12 @@
 
 # CNNs in TensorFlow
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:25%;"/><!-- {"left" : 2.79, "top" : 6.07, "height" : 1.81, "width" : 2.13} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:25%;"/> <!-- {"left" : 13.07, "top" : 5.12, "height" : 2.16, "width" : 2.53} -->
 
 ---
 ## CNN Example 1 - CIFAR
 
-<img src="../../assets/images/deep-learning/CIFAR-10-dataset.png"  style="width:50%;float:right;" />
+<img src="../../assets/images/deep-learning/CIFAR-10-dataset.png"  style="width:50%;float:right;" /> <!-- {"left" : 10.94, "top" : 2.23, "height" : 4.61, "width" : 6.27} -->
 
 * CIFFAR-10 dataset consists of
     - 60,000 color images
@@ -52,15 +52,16 @@ import matplotlib.pyplot as plt
 # Normalize pixel values to be between 0 and 1
 train_images, test_images = train_images / 255.0, test_images / 255.0
 ```
+<!-- {"left" : 0.85, "top" : 3.25, "height" : 2.82, "width" : 16.47} -->
 
 ---
 
 ## CNN Example 1 - CIFAR
 
-<img src="../../assets/images/deep-learning/3rd-party/CIFAR-2.png"  style="width:40%;float:right;" />
-
 * Explore CIFAR dataset
 * [Reference](https://www.tensorflow.org/tutorials/images/cnn)
+
+<img src="../../assets/images/deep-learning/3rd-party/CIFAR-2.png"  style="width:40%;float:right;" /><!-- {"left" : 12.17, "top" : 1.77, "height" : 5.08, "width" : 5.09} -->
 
 
 ```python
@@ -79,6 +80,8 @@ for i in range(25):
     plt.xlabel(class_names[train_labels[i][0]])
 plt.show()
 ```
+<!-- {"left" : 0.85, "top" : 3.62, "height" : 4.25, "width" : 10.99} -->
+
 
 ---
 
@@ -102,6 +105,8 @@ model.add(layers.MaxPooling2D((2, 2)))
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 
 ```
+<!-- {"left" : 0.85, "top" : 7.17, "height" : 2.26, "width" : 15.73} -->
+
 
 ---
 ## CNN Example 1 - CIFAR
@@ -113,6 +118,8 @@ model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 ```python
 model.summary()
 ```
+<!-- {"left" : 0.85, "top" : 3.37, "height" : 0.73, "width" : 4.19} -->
+
 
 ```text
 Model: "sequential"
@@ -134,6 +141,8 @@ Trainable params: 56,320
 Non-trainable params: 0
 _________________________________________________________________
 ```
+<!-- {"left" : 0.85, "top" : 4.39, "height" : 6.83, "width" : 14.35} -->
+
 ---
 ## CNN Example 1 - CIFAR
 
@@ -146,6 +155,9 @@ model.add(layers.Flatten())
 model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dense(10, activation='softmax'))
 ```
+<!-- {"left" : 0.85, "top" : 4.01, "height" : 1.55, "width" : 11.99} -->
+
+
 ---
 ## CNN Example - CIFAR
 
@@ -155,6 +167,7 @@ model.add(layers.Dense(10, activation='softmax'))
 ```python
 model.summary()
 ```
+<!-- {"left" : 0.85, "top" : 3.25, "height" : 0.71, "width" : 4.09} -->
 
 ```text
 Model: "sequential"
@@ -182,6 +195,8 @@ Trainable params: 122,570
 Non-trainable params: 0
 _________________________________________________________________
 ```
+<!-- {"left" : 0.85, "top" : 4.14, "height" : 7.64, "width" : 12.19} -->
+
 
 ---
 ## CNN Example 1 - CIFAR
@@ -196,6 +211,8 @@ model.compile(optimizer='adam',
 history = model.fit(train_images, train_labels, epochs=10,
                     validation_data=(test_images, test_labels))
 ```
+<!-- {"left" : 0.85, "top" : 2.74, "height" : 2.23, "width" : 16.06} -->
+
 
 ```text
 Train on 50000 samples, validate on 10000 samples
@@ -214,6 +231,8 @@ Epoch 10/10
 50000/50000 [==============================] - 5s 98us/sample - loss: 0.5582 - accuracy: 0.8037 -
         val_loss: 0.9265 - val_accuracy: 0.7030
 ```
+<!-- {"left" : 0.85, "top" : 5.34, "height" : 4.37, "width" : 16.06} -->
+
 ---
 ## CNN Example 1 - CIFAR
 
@@ -230,14 +249,17 @@ plt.ylabel('Accuracy')
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 # 10000/10000 - 1s - loss: 0.9265 - accuracy: 0.7030
 ```
+<!-- {"left" : 0.85, "top" : 6.71, "height" : 2.57, "width" : 14.54} -->
 
-<img src="../../assets/images/deep-learning/3rd-party/CIFAR-training-history-plot-1.png"  style="width:40%;" />
+
+<img src="../../assets/images/deep-learning/3rd-party/CIFAR-training-history-plot-1.png"  style="width:40%;" /><!-- {"left" : 11.06, "top" : 1.89, "height" : 4.29, "width" : 6.23} -->
+
 
 ---
 
 ## Lab: CNN lab
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.91, "top" : 1.89, "height" : 5.49, "width" : 4.12} -->
 
 
 * **Overview:**
@@ -261,11 +283,11 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.07, "top" : 1.89, "height" : 2.69, "width" : 3.63} -->
 
 
 * Let's go over what we have covered so far
 
 * Any questions?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 5, "height" : 5.53, "width" : 8.31} -->

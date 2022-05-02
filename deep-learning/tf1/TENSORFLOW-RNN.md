@@ -40,7 +40,7 @@ init = tf.global_variables_initializer()
 
 
 ```
-<!-- {"left" : 0, "top" : 1.87, "height" : 3.12, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.73, "height" : 4.74, "width" : 15.59} -->
 
 
 Notes:
@@ -76,7 +76,7 @@ with tf.Session() as sess:
    init.run()
    Y0_val, Y1_val = sess.run([Y0, Y1], feed_dict={X0: X_t0, X1: X_t1}
 ```
-<!-- {"left" : 0, "top" : 3.08, "height" : 3.54, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.42, "height" : 5.2, "width" : 15.06} -->
 
 ---
 
@@ -95,7 +95,7 @@ with tf.Session() as sess:
  [-0.5836996  -1.         -1.          0.9999931   0.9999637 ]
  [-0.9998492  -0.9985043  -0.99633384  0.9894642  -0.06464703]]
 ```
-<!-- {"left" : 0, "top" : 1.49, "height" : 3.17, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.54, "height" : 4.58, "width" : 14.81} -->
 
 
 
@@ -130,7 +130,7 @@ output_seqs, states = tf.nn.static_rnn(basic_cell, X_seqs,
                                                 dtype=tf.float32)
 outputs = tf.transpose(tf.stack(output_seqs), perm=[1, 0, 2])
 ```
-<!-- {"left" : 0, "top" : 1.49, "height" : 3.1, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.7, "height" : 4.32, "width" : 14.29} -->
 
 ---
 
@@ -165,7 +165,7 @@ X = tf.placeholder(tf.float32, [None, n_steps, n_inputs])
 basic_cell = tf.nn.rnn_cell.BasicRNNCell(num_units=n_neurons)
 outputs, states = tf.nn.dynamic_rnn(basic_cell, X, dtype=tf.float32)
 ```
-<!-- {"left" : 0, "top" : 5.53, "height" : 1.22, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 7.4, "height" : 1.75, "width" : 14.67} -->
 
 
 ---
@@ -181,7 +181,7 @@ seq_length = tf.placeholder(tf.int32, [None])
 outputs, states = tf.nn.dynamic_rnn(basic_cell, X, dtype=tf.float32,
                                     sequence_length=seq_length)
 ```
-<!-- {"left" : 0, "top" : 2.22, "height" : 1.47, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.28, "height" : 2.22, "width" : 15.49} -->
 
 ---
 
@@ -201,7 +201,7 @@ outputs, states = tf.nn.dynamic_rnn(basic_cell, X, dtype=tf.float32,
 
   * **Instructions for students:**
 
-    - (Keras)  **07-rnn/6.1-cnn-intro.ipynb** lab
+    - (Keras) **07-rnn/6.1-cnn-intro.ipynb** lab
 
 Notes:
 

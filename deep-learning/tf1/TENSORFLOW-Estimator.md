@@ -7,7 +7,8 @@
    - Mid-Level
    - High-Level
 
-![https://www.tensorflow.org/images/tensorflow_programming_environment.png](../../assets/images/deep-learning/tensorflow_layers_small.png) <!-- {"left" : 0.59, "top" : 3.54, "height" : 2.66, "width" : 9.07} -->
+
+<img src="../../assets/images/deep-learning/tensorflow_layers_small.png" style="width:35%;"/> <!-- {"left" : 1.73, "top" : 5.88, "height" : 4.12, "width" : 14.04} -->
 
 Notes:
 
@@ -68,7 +69,7 @@ classifier = tf.estimator.DNNClassifier(
     # The model must choose between 3 classes.
     n_classes=3)
 ```
-<!-- {"left" : 0, "top" : 2.96, "height" : 2.46, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.87, "height" : 2.9, "width" : 12.07} -->
 
 
 Notes:
@@ -89,7 +90,7 @@ def input_func(data)
    return tf.data.Dataset.from_tensor_slices(
         features, labels)
 ```
-<!-- {"left" : 0, "top" : 3.13, "height" : 2.15, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.42, "height" : 2.56, "width" : 12.21} -->
 
 
 
@@ -117,6 +118,7 @@ Notes:
 ---
 
 ## Defining Feature Columns
+
   * In this case, we have all numeric columns
 
 ```python
@@ -126,7 +128,7 @@ fc = [numeric_column(key='A'),
       numeric_column(key='B'),
       numeric_column(key='C')
 ```
-<!-- {"left" : 0, "top" : 1.85, "height" : 2.15, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.74, "height" : 2.56, "width" : 12.2} -->
 
 
 
@@ -150,7 +152,7 @@ vocabulary_feature_column =
         "electronics", "sports"])
 
 ```
-<!-- {"left" : 0, "top" : 2.14, "height" : 3.3, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.75, "height" : 3.95, "width" : 12.28} -->
 
 
 
@@ -169,7 +171,7 @@ classifier.train(
     train_y, args.batch_size),
     steps=args.train_steps)
 ```
-<!-- {"left" : 0, "top" : 2.22, "height" : 1.83, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.43, "height" : 2.18, "width" : 12.24} -->
 
 
 
@@ -189,7 +191,7 @@ def eval_input_function(test_x, test_y, batch_size)
    return tf.data.Dataset.from_tensor_slices(
         features, labels)
 ```
-<!-- {"left" : 0, "top" : 2.18, "height" : 1.92, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.35, "height" : 2.36, "width" : 12.6} -->
 
 
 
@@ -209,7 +211,7 @@ print('\nTest set accuracy:
     {accuracy:0.3f}\n'.format(**eval_result))
 
 ```
-<!-- {"left" : 0, "top" : 1.37, "height" : 2.87, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 3.38, "width" : 12.07} -->
 
 
 
@@ -219,7 +221,7 @@ Notes:
 
 ## Lab: Estimator API
 
-<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 7.01, "top" : 1.4, "height" : 3.78, "width" : 2.83} -->
+<img src="../../assets/images/icons/individual-labs.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="25%"/><!-- {"left" : 12.42, "top" : 1.89, "height" : 5.92, "width" : 4.43} -->
 
 *  **Overview:** 
 In this lab, we will use Estimator API with IRIS data
@@ -278,7 +280,7 @@ est_inception_v3.train(input_fn=train_input_fn,
                         steps=2000)
 
 ```
-<!-- {"left" : 0, "top" : 1.15, "height" : 6.77, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 8.2, "width" : 12.42} -->
 
 
 Notes:
@@ -290,7 +292,7 @@ Notes:
  - Follow the 04-estimator/4.1K-iris.ipynb lab
 ```
 
-<!-- {"left" : 0, "top" : 1.32, "height" : 0.73, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.4, "height" : 0.88, "width" : 12.35} -->
 
 
 Notes:

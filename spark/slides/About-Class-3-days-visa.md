@@ -50,7 +50,7 @@ Notes:
 
 ---
 
-## Agenda (3 Days - 6 half days)
+## Agenda
 
 * **Day 1**
     - Spark intro

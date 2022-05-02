@@ -30,7 +30,7 @@
 >>> print(dataset.output_shapes)  
 "{'a': (), 'b': (100,)}"
 ```
-<!-- {"left" : 0.0, "top" : 1.85, "height" : 2.74, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.8, "height" : 3.7, "width" : 12.71} -->
 
 ---
 
@@ -38,9 +38,9 @@
 ## Transforming a Dataset
 
   * We can call the following transformation functions on our dataset: 
-    - map : Apply function to dataset row
-    - batch : Apply function to dataset group of rows
-    - flat_map : Apply a function which may generate more than one output
+    - map: Apply function to dataset row
+    - batch: Apply function to dataset group of rows
+    - flat_map: Apply a function which may generate more than one output
 
 ```python
 
@@ -52,11 +52,11 @@ dataset = tf.data.Datset.from_tensor_slices(
 squares = dataset.map(lambda x : return x * x)
 
 beforenafter = dataset.flat_map(
-                lambda x : return [x-1, x, x+1])
+                lambda x: return [x-1, x, x+1])
                 
-filter = dataset.flat_map(lambda x : return x > 3)
+filter = dataset.flat_map(lambda x: return x > 3)
 ```
-<!-- {"left" : 0.0, "top" : 3.86, "height" : 2.98, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.45, "height" : 4.56, "width" : 12.11} -->
 
 
 ---
@@ -74,6 +74,7 @@ filter = dataset.flat_map(lambda x : return x > 3)
 ---
 
 ## One-Shot
+
   * Most Common
   * Only Support Single-Pass Iterations
   * Only kind the work with `Estimator` objects.
@@ -87,7 +88,8 @@ for i in range(100):
   value = sess.run(next_element)
   assert i == value
 ```
-<!-- {"left" : 0.0, "top" : 2.63, "height" : 2.74, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.04, "height" : 3.36, "width" : 11.84} -->
+
 
 ---
 
@@ -107,7 +109,7 @@ for i in range(10):
   value = sess.run(next_element)
   assert i == value
 ```
-<!-- {"left" : 0.0, "top" : 2.19, "height" : 2.65, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.38, "height" : 3.64, "width" : 12.89} -->
 
 
 
@@ -139,7 +141,7 @@ for _ in range(20):
   for _ in range(50):
     sess.run(next_element)
 ```
-<!-- {"left" : 0.0, "top" : 2.19, "height" : 3.98, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.78, "height" : 6.46, "width" : 13.98} -->
 
 
 
@@ -177,7 +179,7 @@ while True:
     sess.run(next_element, feed_dict={handle: handle2})
 
 ```
-<!-- {"left" : 0.0, "top" : 1.84, "height" : 6.05, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.74, "height" : 8.23, "width" : 12.79} -->
 
 
 ---
@@ -199,7 +201,7 @@ p = pd.read_csv('myfile.csv')
 d = Dataset.from_tensor_slices(p[['a','b','c']],p['label])
 
 ```
-<!-- {"left" : 0.0, "top" : 2.74, "height" : 2.78, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.97, "height" : 3.23, "width" : 13.69} -->
 
 
 Notes:
@@ -219,7 +221,7 @@ def df_to_dataset(dataframe, shuffle=True, batch_size=32):
   ds = ds.batch(batch_size)
   return ds
 ```
-<!-- {"left" : 0.0, "top" : 1.42, "height" : 2.39, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.25, "height" : 3.94, "width" : 14.94} -->
 
 
 ---
@@ -237,7 +239,7 @@ train_path = '/path/to/myfile.csv'
 columns = ['a','b','c']
 ds = tf.data.TextLineDataset(train_path).skip(1)
 ```
-<!-- {"left" : 0.0, "top" : 3.28, "height" : 1.25, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.35, "height" : 1.79, "width" : 12.47} -->
 
 
 Notes:
@@ -290,7 +292,7 @@ fc = [numeric_column(key='A'),
       numeric_column(key='B'),
       numeric_column(key='C')
 ```
-<!-- {"left" : 0, "top" : 2.92, "height" : 2.15, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.03, "height" : 2.62, "width" : 11.92} -->
 
 Notes:
 
@@ -316,7 +318,7 @@ Notes:
 ```python
 age_buckets = feature_column.bucketized_column(age, boundaries=[18, 25, 30, 35, 40, 45, 50, 55, 60, 65])
 ```
-<!-- {"left" : 0, "top" : 2.73, "height" : 0.40, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4, "height" : 0.63, "width" : 15.16} -->
 
 
 ```console
@@ -326,7 +328,8 @@ age_buckets = feature_column.bucketized_column(age, boundaries=[18, 25, 30, 35, 
  [0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
 ```
-<!-- {"left" : 0, "top" : 3.67, "height" : 1.74, "width" : 6.78} -->
+<!-- {"left" : 0.85, "top" : 4.98, "height" : 2.42, "width" : 9.43} -->
+
 
 ---
 
@@ -342,7 +345,7 @@ feature_column.categorical_column_with_vocabulary_list(
 
 color_one_hot = feature_column.indicator_column(color)
 ```
-<!-- {"left" : 0, "top" : 2.88, "height" : 1.51, "width" : 6.78} -->
+<!-- {"left" : 0.85, "top" : 3.93, "height" : 1.96, "width" : 12.57} -->
 
 ```console
 [[1. 0. 0.]
@@ -352,7 +355,8 @@ color_one_hot = feature_column.indicator_column(color)
  [0. 0. 1.]]
 
 ```
-<!-- {"left" : 0, "top" : 5, "height" : 1.74, "width" : 2.78} -->
+<!-- {"left" : 0.85, "top" : 6.22, "height" : 2.22, "width" : 3.55} -->
+
 
 ---
 
@@ -370,7 +374,8 @@ thal_hashed = feature_column.categorical_column_with_hash_bucket(
       'thal', hash_bucket_size=10)
 
 ```
-<!-- {"left" : 0, "top" : 4.49, "height" : 0.76, "width" : 10.25} -->
+
+<!-- {"left" : 0.85, "top" : 5.74, "height" : 1.05, "width" : 14.2} -->
 
 ```console
 [[0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
@@ -380,7 +385,8 @@ thal_hashed = feature_column.categorical_column_with_hash_bucket(
  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
 
 ```
-<!-- {"left" : 0, "top" : 5.91, "height" : 1.74, "width" : 6.78} -->
+<!-- {"left" : 0.85, "top" : 7.04, "height" : 2.08, "width" : 8.12} -->
+
 
 ---
 
@@ -394,7 +400,8 @@ thal_hashed = feature_column.categorical_column_with_hash_bucket(
 ```python
 embedding = feature_column.embedding_column(color, dimension=8)
 ```
-<!-- {"left" : 0, "top" : 2.93, "height" : 0.52, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.94, "height" : 0.67, "width" : 13.21} -->
+
 
 ```console
 [[ 0.23923533 -0.3158593   0.24390908 -0.22270197 -0.2502222  -0.10531021
@@ -409,7 +416,8 @@ embedding = feature_column.embedding_column(color, dimension=8)
   -0.25155336  0.60542715]]
 
 ```
-<!-- {"left" : 0, "top" : 3.91, "height" : 2.53, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 4.92, "height" : 3.26, "width" : 13.21} -->
+
 
 ---
 
@@ -423,7 +431,7 @@ embedding = feature_column.embedding_column(color, dimension=8)
 lat_long = feature_column.crossed_column([lat, long], hash_bucket_size=1000)
 
 ```
-<!-- {"left" : 0, "top" : 2.34, "height" : 0.43, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 3.57, "height" : 0.76, "width" : 14.54} -->
 
 
 ---
@@ -447,7 +455,7 @@ fc = [numeric_column(key='A'),
 
 feature_layer = tf.keras.layers.DenseFeatures(fc)
 ```
-<!-- {"left" : 0, "top" : 3.66, "height" : 2.32, "width" : 8.94} -->
+<!-- {"left" : 0.85, "top" : 4.06, "height" : 3.43, "width" : 13.21} -->
 
 ---
 
@@ -465,7 +473,7 @@ model = tf.keras.Sequential([
   layers.Dense(1, activation='sigmoid')
 ])
 ```
-<!-- {"left" : 0, "top" : 2.01, "height" : 2.19, "width" : 7.86} -->
+<!-- {"left" : 0.85, "top" : 2.69, "height" : 2.87, "width" : 10.32} -->
 
  * This Defines the following layers:
    - Input layer
@@ -478,13 +486,13 @@ model = tf.keras.Sequential([
 
  * We need to create a tensorflow DataSet from our data
 
-<br/> 
+<br/>
 
 ```python
  train_ds = tf.data.Dataset.from_tensor_slices((dict(dataframe), labels))
  train_ds = train_ds.batch(BATCH_SIZE)
 ```
-<!-- {"left" : 0, "top" : 1.76, "height" : 0.69, "width" : 10.25} -->
+<!-- {"left" : 0.85, "top" : 2.71, "height" : 1.09, "width" : 16.14} -->
 
  * Then we can train the model with the dataset
 
@@ -499,7 +507,7 @@ model.fit(ds,
           validation_data=val_ds,
           epochs=50)
 ```
-<!-- {"left" : 0, "top" : 3.99, "height" : 2.61, "width" : 7.61} -->
+<!-- {"left" : 0.85, "top" : 5.87, "height" : 3.29, "width" : 9.6} -->
 
 
 
