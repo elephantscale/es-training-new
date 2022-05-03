@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-October 1, 2021
+May 3, 2022
 
 ## Overview
 
@@ -12,6 +12,17 @@ The number of ransomware attacks doubled in the past year, and other attacks are
 continues with the principles of designing secure multi-layer systems, and goes into the details
 of secure coding for Java.
 * Also included are securing runtime environments and modern security frameworks.  
+
+## Learning objectives
+
+* Understand the need and use of modern security
+* Apply threat modeling to prepare for cyber defense
+* Describe common attacks and defense against them
+* Beefing up the security of Java applications
+* Apply code signing
+* Implement authentication and authorization
+
+
 
 ## Audience
 Developers, team leads, project managers
@@ -26,9 +37,10 @@ Two days
 Lectures and hands on labs. (50% - 50%)
 
 ## Prerequisites
+
 * Recommended: Cybersecurity awareness
 * Comfortable developing code in Java
-
+* Comfortable in Linux environment (be able to navigate Linux command line, run commands)
 
 ## Lab environment
 * The recommended approach to doing the labs is using your local IntelliJ install.
