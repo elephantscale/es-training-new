@@ -52,20 +52,21 @@ Notes:
 
 ## Agenda
 
-* **Day 1**
-    - Spark intro
-    - Spark Core
-    - Caching
+* Spark intro
 
-* **Day 2**
-    - Dataframes
-    - Spark SQL
-    - Spark API
+* Spark Core
 
-* **Day 3**
-    - Spark Streaming
-    - Spark Performance
-    - Spark workshops
+* Dataframes
+
+* Spark SQL
+
+* Spark API
+
+* Spark Streaming
+
+* Spark Performance
+
+* Spark workshops
 
 ---
 
