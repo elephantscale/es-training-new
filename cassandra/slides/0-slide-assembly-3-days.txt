@@ -1,0 +1,13 @@
+##  To run: $ES_HOME/utils/presentations/slides-assembler.sh slide-order.txt
+
+About_Class.md
+NoSQL.md
+Cassandra_Basics.md
+Cassandra_Data_Modeling_1.md
+Cassandra_Data_Modeling_2.md
+Cassandra_Data_Modeling_Labs.md
+Cassandra_Data_Modeling_Labs_Questions_Only.md
+Cassandra_Drivers.md
+Cassandra_Internals.md
+Cassandra_Admin_1.md
+Use-Cases_and_Best-Practices.md

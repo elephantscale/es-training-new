@@ -685,7 +685,7 @@ Notes:
  * Cassandra, HBase, Accumulo, SkyllaDB, etc.
 
 
-<img src="../../assets/images/logos/cassandra-logo.png" style="width:20%;" /> &nbsp; &nbsp;<img src="../../assets/images/logos/hbase-logo-01.png" style="width:30%;" /> &nbsp; &nbsp; <img src="../../assets/images/logos/accumulo.png" style="width:30%;" />
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:20%;" /> &nbsp; &nbsp;<img src="../../assets/images/logos/hbase-logo-01.png" style="width:30%;" /> &nbsp; &nbsp; <img src="../../assets/images/logos/accumulo.png" style="width:30%;" />
 
 
 

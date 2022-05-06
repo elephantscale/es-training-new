@@ -1,4 +1,4 @@
-# Session 8: Cassandra Admin
+# Cassandra Admin
 
 
 ---

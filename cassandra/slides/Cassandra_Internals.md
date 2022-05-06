@@ -1,4 +1,4 @@
-# Session: Cassandra Internals
+# Cassandra Internals
 
 
 ---
@@ -527,7 +527,7 @@ Notes:
 
 ## Single Token Range per Node
 
-<img src="../../assets/images/cassandra/Single-Token-Range-per-Node.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Single-Token-Range-per-Node.png" style="width:50%;"/>
 
 
 
@@ -564,7 +564,7 @@ Notes:
 
 ## Token Ranges with VNodes
 
-<img src="../../assets/images/cassandra/Token-Ranges-with-VNodes.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Token-Ranges-with-VNodes.png" style="width:50%;"/>
 
 
 Notes: 
