@@ -1,4 +1,4 @@
-# Session: Cassandra Drivers
+# Cassandra Drivers
 
 
 ---

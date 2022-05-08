@@ -1,4 +1,4 @@
-# `Cassandra Intro
+# Cassandra Intro
 
 
 ---
@@ -29,7 +29,7 @@ Notes:
 
 ## What is Cassandra?
 
-<img src="../../assets/images/logos/cassandra-logo.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:20%;float:right;"/>
 
  * Cassandra
 
@@ -50,7 +50,7 @@ Notes:
 
 ## What is Cassandra?
 
-<img src="../../assets/images/logos/cassandra-logo.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:20%;float:right;"/>
 
 
  * That provides:
@@ -199,7 +199,7 @@ Notes:
 
  * Needs Java 
 
-<img src="../../assets/images/cassandra/`C*`.png"  style="width:30%;"/>
+<img src="../../assets/images/cassandra/cassandra-single-node.png"  style="width:30%;"/>
 
 Notes: 
 

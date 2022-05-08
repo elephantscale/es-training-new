@@ -1,4 +1,4 @@
-# Session: Cassandra Data Modeling 2
+# Cassandra Data Modeling 2
 
 
 ---

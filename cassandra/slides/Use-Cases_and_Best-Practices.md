@@ -1,4 +1,4 @@
-# Session 09: Cassandra Best Practices
+# Cassandra Best Practices
 
 
 ---
