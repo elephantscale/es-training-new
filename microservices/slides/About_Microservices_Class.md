@@ -1,13 +1,14 @@
-# Terraform
+# Microservices
 ---
-## Terraform Class Outline
+## Microservices Class Outline
 
 
 | Day | Agenda                                                                          |
 |-----|---------------------------------------------------------------------------------|
-| 1   | Terraform Basics, Architecture, Infrastructure as Code, HCL Basic Programming            |
-| 2   | Managing Deployments and States, Multiple Terraform Configurations, More HCL Programming    |
-| 3   | Terraform Testing, Vault, Consul, Packer, Professional Terraform Best Practices          |
+| 1   | Microservices Basics, Architecture,                                             |
+| 2   | Managing Microservices     |
+| 3   | Docker and Kuberneters         |
+
 
 <!-- {"left" : 0.25, "top" : 1.4, "height" : 3.36, "width" : 9.75} -->
 
@@ -22,7 +23,7 @@ Notes:
   - Command line navigation 
   - Editing files (e.g. using VI, Visual Studio Code or other editor)
 * Basic understanding of AWS concepts like EC2 instances, IaaS, PaaS, etc.
-* This is an **AWS Infrastructure as Code (IaC) with Terraform** class 
+* This is an **AWS Infrastructure as Code (IaC) with Microservices** class 
   - You may be missing some pre-requisites, that’s OK
   - You should be willing to work hard, that is a must
 
@@ -73,7 +74,7 @@ Notes:
 
 ## After the Class...
 
-<img src="../artwork/Terraform-I-Know.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
+<img src="../artwork/Microservices-I-Know.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
 
 
 Notes:
@@ -88,7 +89,7 @@ Notes:
    - Your Name
    - Your background (developer, admin, manager, ...)
    - Technologies you are familiar with
-   - Familiarity with Terraform or IaC (scale of 1 - 4 ;  1 - new,   4 - expert)
+   - Familiarity with Microservices (scale of 1 - 4 ;  1 - new,   4 - expert)
    - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
 
 <img src="../artwork/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
@@ -103,11 +104,11 @@ Notes:
 * Instructor’s contact information
 * Slides
   - For each session, slides will be emailed out or delivered
-* AWS and Terraform
+* AWS and Microservices
   - Students need to have an AWS account
   - If you don't have one, we will walk through the process of getting a free AWS account
-  - Students will be using a local copy of Terraform on their own computers or install Terraform on AWS
-  - We will walk through the process of installing Terraform locally
+  - Students will be using a local copy of Microservices on their own computers or install Microservices on AWS
+  - We will walk through the process of installing Microservices locally
 * Labs
   - Provided in the cloud via GitHub
   - Will also be delivered in a ZIP file for your future reference

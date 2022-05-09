@@ -1,2 +1,34 @@
-About_Terraform_Class.md
-// TODO
+# to generate slides
+#       ./gen.sh 
+
+# outline
+
+# About
+About_Microservices_Class.md
+
+
+## Microservices
+microservices.md
+REST-Intro.md
+$ES_HOME/es-training/microservices/rod-jason/Microservices-VMWare-2022.pptx
+$ES_HOME/es-training/microservices/ernesto/
+
+## Docker 
+../../docker/slides/Container_Intro.md
+../../docker/slides/Docker_Intro.md
+../../docker/slides/Docker_Containers_and_Images.md
+../../docker/slides/Docker_Development.md
+../../docker/slides/Docker_Networking_and_Storage.md
+../../docker/slides/Docker_Ops.md
+../../docker/slides/Docker_Orchestration.md
+
+## Kubernetes
+Kubernetes-Intro.md
+Kubernetes-Essentials.md
+Kubernetes-Resources.md
+Kubernetes-Networking.md
+Kubernetes-Storage.md
+Kubernetes-Deployments.md
+Kubernetes-Operations.md
+Kubernetes-Misc.md
+Kubernetes-Best-Practices.md
