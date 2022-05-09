@@ -23,12 +23,12 @@ $ES_HOME/es-training/microservices/ernesto/
 ../../docker/slides/Docker_Orchestration.md
 
 ## Kubernetes
-Kubernetes-Intro.md
-Kubernetes-Essentials.md
-Kubernetes-Resources.md
-Kubernetes-Networking.md
-Kubernetes-Storage.md
-Kubernetes-Deployments.md
-Kubernetes-Operations.md
-Kubernetes-Misc.md
-Kubernetes-Best-Practices.md
+../../kubernetes/Kubernetes-Intro.md
+../../kubernetes/Kubernetes-Essentials.md
+../../kubernetes/Kubernetes-Resources.md
+../../kubernetes/Kubernetes-Networking.md
+../../kubernetes/Kubernetes-Storage.md
+../../kubernetes/Kubernetes-Deployments.md
+../../kubernetes/Kubernetes-Operations.md
+../../kubernetes/Kubernetes-Misc.md
+../../kubernetes/Kubernetes-Best-Practices.md
