@@ -36,7 +36,7 @@ Notes:
 
      - Lots of clients for `C*` 1.x
 
-     - Hector, Kundera …etc
+     - Hector, Kundera ...etc
 
      - They all use thrift interface
 
@@ -53,7 +53,7 @@ Notes:
 
  * Asynchronous – Netty based
 
- * Supports collections (lists, maps…)
+ * Supports collections (lists, maps...)
 
  * Automatic ResultSet pagination
 
@@ -118,9 +118,9 @@ import com.datastax.driver.core.Cluster;import com.datastax.driver.core.Session;
 Notes: 
 
 addContactPointI()
-	- we can add more contact points… to safeguard against single-point-of-contact down
+	- we can add more contact points... to safeguard against single-point-of-contact down
 	- no need to specify all nodes (10 node cluster.. No need to specify all 10 nodes)
-	- the driver will LEARN the topology after connecting to a node  (example… moving to a new neighborhood… talk to one neighbor… learn about others 
+	- the driver will LEARN the topology after connecting to a node  (example... moving to a new neighborhood... talk to one neighbor... learn about others 
 
 Sessions
 	- can be authorized for each keyspace (if password protected)
@@ -311,7 +311,7 @@ Notes:
 
      - Map Java objects to data stores
 
-     - adapters for various data sources (MySQL / Oracle …etc)
+     - adapters for various data sources (MySQL / Oracle ...etc)
 
  * Cassandra support: full
 

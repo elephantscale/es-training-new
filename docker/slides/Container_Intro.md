@@ -196,7 +196,7 @@ are one way to solve that problem, and Containers are another.
     - Install dependency libraries
     - Etc
 
-* Oops… doesn't work. Why not?
+* Oops... doesn't work. Why not?
     - Missing file?
     - Wrong version? Path not right
 
@@ -227,7 +227,7 @@ Developers are famous for insisting that "It worked on my computer!"
 
 * Fix all the problems, now it's finally working!
 
-* Oops… Don't Touch Anything!
+* Oops... Don't Touch Anything!
    - Might Break!
    - Change Environment?
    - Install Another App?

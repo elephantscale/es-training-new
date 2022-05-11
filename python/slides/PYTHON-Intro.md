@@ -63,7 +63,7 @@ Notes:
 
 ## Why Python
 
-  * Python can import from variety of formats (csv, excel, db, …)
+  * Python can import from variety of formats (csv, excel, db, ...)
 
   * Python is extensible
 

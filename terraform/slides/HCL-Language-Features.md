@@ -246,7 +246,7 @@ This is example 4-7
 ## Loops with the "for" String Directive
 
 * String directives allow for-loops and if-statements in strings using a syntax similar to string interpolations
-  but instead of a dollar sign and curly braces (${…}), it uses a percent sign and curly braces (%{…})
+  but instead of a dollar sign and curly braces (${...}), it uses a percent sign and curly braces (%{...})
   * Terraform supports two types of string directives:
     for-loops and conditionals
 
@@ -414,7 +414,7 @@ This is example 4-9
 
 ## Terraform Gotchas
 
-* Eventual consistency is consistent…  eventually
+* Eventual consistency is consistent...  eventually
 
 * APIs for some cloud providers, such as AWS, are asynchronous and eventually consistent
   * Asynchronous means that the API might send a response immediately, without waiting for the requested action to complete

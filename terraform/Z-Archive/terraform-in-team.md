@@ -95,7 +95,7 @@
   
 * The increments themselves are often to specialized to be reused
 
-*A complex system that works in invariably found to have evolved from a simple system that works… A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over, beginning with a working simple system. - Gall*
+*A complex system that works in invariably found to have evolved from a simple system that works... A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over, beginning with a working simple system. - Gall*
 
 ---
 ## Chose your Target

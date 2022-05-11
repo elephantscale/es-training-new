@@ -310,7 +310,7 @@ ubuntu@ip-172-16-0-234:~$ which mvn
 
 ## Email setup
 
-* Click **Advanced**… in that section to set up the email SMTP settings.  Ask the instructor for the password.  You can use any valid email address for a test.
+* Click **Advanced**... in that section to set up the email SMTP settings.  Ask the instructor for the password.  You can use any valid email address for a test.
 
 
 <img src="../../assets/images/jenkins/3rd-party/ConfigureEmail-4.png" style="width:50%;"/>
@@ -627,7 +627,7 @@ public static String[] parseZipCode(String zipInput)
 	
 	Matcher m = P.matcher(zipInput);
 		if (m.matches()) {
-	… … … 
+	... ... ... 
 
 ```
 

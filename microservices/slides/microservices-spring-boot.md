@@ -1469,7 +1469,7 @@ server.port=8282
 
 Tomcat will listen on 8082 then
 
-*just a hint for any paths --- like logging.path    use /    not \    … even on Windows
+*just a hint for any paths --- like logging.path    use /    not \    ... even on Windows
 
 *Have the students go here and add a few properties and restart:
 
@@ -1508,7 +1508,7 @@ From POM file - rt click on pom file --- run `mvn build install`
 
 https://spring.io/guides/gs/testing-web/
 
-Real solution is in the slides… lab guide needs to be updated
+Real solution is in the slides... lab guide needs to be updated
 
 
 ---
@@ -4870,7 +4870,7 @@ In order to prepare the environment for this session...
 Notes: 
 
 The Spring Cloud Config server is an externalized configuration server in which applications and services can deposit, access, and manage all runtime configuration properties. The Spring Config server also supports version control of the configuration properties.
-In the earlier examples with Spring Boot, all configuration parameters were read from a property file packaged inside the project, either application.properties or application.yaml. This approach is good, since all properties are moved out of code to a property file. Here is the big but… However, when microservices are moved from one environment to another, these properties need to undergo changes, which require an application re-build. This is violation of one of the Twelve-Factor application principles, which advocate one-time build and moving of the binaries across environments.
+In the earlier examples with Spring Boot, all configuration parameters were read from a property file packaged inside the project, either application.properties or application.yaml. This approach is good, since all properties are moved out of code to a property file. Here is the big but... However, when microservices are moved from one environment to another, these properties need to undergo changes, which require an application re-build. This is violation of one of the Twelve-Factor application principles, which advocate one-time build and moving of the binaries across environments.
 A better approach is to use the concept of profiles. Profiles, as discussed in session 2, Building Microservices with Spring Boot, is used for partitioning different properties for different environments. The profile-specific configuration will be named application-{profile}.properties. For example, application-development.propertiesrepresents a property file targeted for the development environment.
 However, the disadvantage of this approach is that the configurations are statically packaged along with the application. Any changes in the configuration properties require the application to be rebuilt.
 There are alternate ways to externalize the configuration properties from the application deployment package. Configurable properties can also be read from an external source in a number of ways: (above)

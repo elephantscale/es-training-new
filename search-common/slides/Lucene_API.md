@@ -23,12 +23,12 @@ Notes:
 
      - Terrier (Java, U. Glasgow) http://terrier.org  
      - Indri/Galago/Lemur (C++ (& Java), U. Mass & CMU)
-     - Tail of others (Zettair, …)
+     - Tail of others (Zettair, ...)
 
  * Widely used non-academic open source systems
      -  **Lucene** 
         * Things built on it: Solr, ElasticSearch
-     - A few others (Xapian, …)
+     - A few others (Xapian, ...)
 
 Notes: 
 
@@ -44,10 +44,10 @@ Notes:
      - Not a complete search system by itself
      - Written by Doug Cutting
 
- * Used by: Twitter, LinkedIn, Zappos, CiteSeer, Eclipse, …
-     - … and many more (see http://wiki.apache.org/lucene-java/PoweredBy)
+ * Used by: Twitter, LinkedIn, Zappos, CiteSeer, Eclipse, ...
+     - ... and many more (see http://wiki.apache.org/lucene-java/PoweredBy)
  * Ports/integrations to other languages
-     - C/C++, C#, Ruby, Perl, Python, PHP, …
+     - C/C++, C#, Ruby, Perl, Python, PHP, ...
 
 Notes: 
 
@@ -429,7 +429,7 @@ for (int i = 0; i < hits.lengh;++i){
      - Central class that exposes several search methods on an index
      - Accessed via an IndexReader
  * `Query`
-     - Abstract query class.  Concrete subclasses represent specific types of queries, e.g., matching terms in fields, boolean queries, phrase queries, …
+     - Abstract query class.  Concrete subclasses represent specific types of queries, e.g., matching terms in fields, boolean queries, phrase queries, ...
  * `QueryParser`
      - Parses a textual representation of a query into a Query instance
 
@@ -653,7 +653,7 @@ Field(String name,
 
  * `FieldType` specifies field properties.
 
- * Can also directly use sub-classes like `TextField`, `StringField`, …
+ * Can also directly use sub-classes like `TextField`, `StringField`, ...
 
 Notes: 
 

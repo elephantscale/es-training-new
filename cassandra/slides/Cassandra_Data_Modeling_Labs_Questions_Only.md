@@ -606,7 +606,7 @@ Notes:
         * Detect attacks
      - Web properties (Amazon or LinkedIn)
         * Log user activities
-        * Analyze user activities (which button users click most…etc.)
+        * Analyze user activities (which button users click most...etc.)
  * Distributed log collection
      - Need to collect from multiple sources (100s or even 1000s)
 

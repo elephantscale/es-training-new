@@ -851,7 +851,7 @@ POST /_aliases
 
 ]
 }
-optionally….
+optionally....
 DELETE /logs_2017_03
 
 ```
@@ -1003,7 +1003,7 @@ PUT _snapshot/backup-repo
 
 <img src="../../assets/images/elastic/3rd-party/restarting-cluster.png" alt="restarting-cluster.png" style="width:20%;float:right;"/>
 
-* Sometimes you have to… OS updates, elasticsearch version updates, etc.
+* Sometimes you have to... OS updates, elasticsearch version updates, etc.
 
 * To make this go quickly and smoothly, you want to disable index  reallocation while doing this.
 

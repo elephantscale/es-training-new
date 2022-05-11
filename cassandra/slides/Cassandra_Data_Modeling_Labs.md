@@ -291,7 +291,7 @@ Notes:
 
 ```text
 CREATE TABLE users (	user_name text,
-  fname   text,	…	primary_email  text,   // add index	PRIMARY KEY (user_name));
+  fname   text,	...	primary_email  text,   // add index	PRIMARY KEY (user_name));
 create index  idx_email  on users(primary_email);
 
 ```
@@ -572,7 +572,7 @@ Notes:
 ```text
 //Use MAP
 
-Create table features (	….	releases map<text, date>,	);
+Create table features (	....	releases map<text, date>,	);
 
 INSERT into features(code, releases) values ('ryan', {'theatrical': '2000-01-01',    'dvd': '2002-01-02'} );
 
@@ -620,7 +620,7 @@ Notes:
 
 
 ```text
-create table users (	user_name text,	…	ratings map<text, int>	…);
+create table users (	user_name text,	...	ratings map<text, int>	...);
 
 insert into users (user_name, ratings) values ('user1', {'movie1': 3} );
 
@@ -820,7 +820,7 @@ Notes:
 create table devices (	device_id  uuid, 	mac text,	description text,	device_type int,	user_id text,	PRIMARY KEY (device_id));
 
 -- Also modify users table to include devices he/she owns
-create table users (	user_id  text,   devices  set<uuid> // new field for devices	…	);
+create table users (	user_id  text,   devices  set<uuid> // new field for devices	...	);
 
 ```
 
@@ -1287,7 +1287,7 @@ Notes:
 
 ```text
 create table users(
-    user_id  text,    …    cart map<text, int>, // itemid, qty
+    user_id  text,    ...    cart map<text, int>, // itemid, qty
     PRIMARY KEY ( user_id)
 );
 
@@ -1445,7 +1445,7 @@ Notes:
 
  * E.g., keep 6 months of data
 
-     - INSERT INTO ….   VALUES(…)   USING TTL 15552000
+     - INSERT INTO ....   VALUES(...)   USING TTL 15552000
 
      - 3600 secs x 24 hr x 30 day x 6 month =  15552000
 
@@ -1535,7 +1535,7 @@ Notes:
 
      - Web properties (Amazon or LinkedIn)
         * Log user activities
-        * Analyze user activities (which button users click most…etc.)
+        * Analyze user activities (which button users click most...etc.)
 
  * Distributed log collection
      - Need to collect from multiple sources (100s or even 1000s)

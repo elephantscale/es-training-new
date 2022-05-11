@@ -1139,7 +1139,7 @@ The cluster inspects the claim to find the bound volume and mounts that volume f
 
     - Logs – to collect support bundles, run analytics for data mining, etc.
 
-    - Other – CI repo data, Transcoded bits…
+    - Other – CI repo data, Transcoded bits...
 
 
 * **Stateless Container**

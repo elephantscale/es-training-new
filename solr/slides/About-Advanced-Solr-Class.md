@@ -115,7 +115,7 @@ Notes:
 
 ---
 
-## Analogy: Learning To Fly…
+## Analogy: Learning To Fly...
 
 
 ![](../../assets/images/about/learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
@@ -174,13 +174,13 @@ Notes:
 
      - Your Name
 
-     - Your background (developer, admin, manager, …)
+     - Your background (developer, admin, manager, ...)
 
      - Technologies you are familiar with
 
      - Familiarity with Solr (scale of 1 – 4 ;  1 – new,   4 – expert)
 
-     - Something non-technical about you!(favorite ice cream flavor / hobby…)
+     - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
 ![](../../assets/images/about/ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
 

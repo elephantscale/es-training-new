@@ -96,7 +96,7 @@ Notes:
     - (hint: think proximity)
   * **Will this also fit?**
     - "apache foundation software "
-    - And the answer is…
+    - And the answer is...
 
 Notes:
 

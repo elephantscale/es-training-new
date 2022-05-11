@@ -335,7 +335,7 @@ Notes:
 ## Read Path
 
 
- * On a single node… when a read request is received
+ * On a single node... when a read request is received
 
      - Memtable is read to get latest data for this partition
 
@@ -419,7 +419,7 @@ Notes:
 ## Read Path using Caches
 
 
- * On a single node… when a read request is received
+ * On a single node... when a read request is received
 
      -  **Key Cache** checked to see if row is already cached. If so, DONE.
 

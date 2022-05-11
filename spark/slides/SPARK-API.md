@@ -612,7 +612,7 @@ $   spark-submit ... --py-files  py-files.zip
 
 ## Using Other Python Modules
 
-* If the application depends on other python libraries (like numpy …etc)  they needed to be installed on worker machines before hand
+* If the application depends on other python libraries (like numpy ...etc)  they needed to be installed on worker machines before hand
 
 * Spark does NOT install the packages automatically
 

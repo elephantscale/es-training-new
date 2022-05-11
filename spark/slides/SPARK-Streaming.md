@@ -575,7 +575,7 @@ output.writeStream \
 
 * Apache Kafka is a distributed messaging system
 
-* Came out of LinkedIn…Open-Sourced in 2011
+* Came out of LinkedIn...Open-Sourced in 2011
 
 * Distributed, built to tolerate hardware/software/network failures
 

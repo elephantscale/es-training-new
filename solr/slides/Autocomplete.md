@@ -71,7 +71,7 @@
     - my
     - my l
     - my li
-    - ….
+    - ....
     - my little po
     - ...
 

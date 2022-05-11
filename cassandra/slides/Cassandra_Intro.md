@@ -1095,7 +1095,7 @@ Notes:
 ## Quiz 1: RF & Level
 
 
- * Client writes with RF = 3,   Level=ANYWhich of the following is true…
+ * Client writes with RF = 3,   Level=ANYWhich of the following is true...
 
      - `C*` will only create only COPY of data
 
@@ -1148,7 +1148,7 @@ RF = 2 @ DC2, 2 replicas
 Client is connected to DC1, so this is our local data center.
 Level = Local_Quorum, so we need to meet quorum in local data center (DC1). 
 Create 2 replicas  ( Q = RF / 2 + 1)
-RF1 and RF2 are created in DC1…client waits until they are created.
+RF1 and RF2 are created in DC1...client waits until they are created.
 After that, client is notified of successful write, client returns.
 In DC1, RF3 is created in background.
 In DC2, RF4 and RF5 are created in background.
@@ -1466,7 +1466,7 @@ Node 4 will store the hints and forward them to node 3 when it comes back up.
 ## Ensuring Consistency
 
 
- * `C*` can do repair-on-read…cool!
+ * `C*` can do repair-on-read...cool!
 
  * How about data that is never read?
 

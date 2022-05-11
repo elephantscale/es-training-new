@@ -564,7 +564,7 @@ Notes:
 
      - Even though indices can be compressed
 
- * Nevertheless, a positional index is now standardly used because of the power and usefulness of phrase and proximity queries … whether used explicitly or implicitly in a ranking retrieval system.
+ * Nevertheless, a positional index is now standardly used because of the power and usefulness of phrase and proximity queries ... whether used explicitly or implicitly in a ranking retrieval system.
 
 
 Notes: 
@@ -582,7 +582,7 @@ Notes:
 
      - Average web page has <1000 terms
 
-     - SEC filings, books, even some epic poems … easily 100,000 terms
+     - SEC filings, books, even some epic poems ... easily 100,000 terms
 
  * Consider a term with frequency 0.1%
 

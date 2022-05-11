@@ -122,7 +122,7 @@ Lectures and hands-on labs. (50%, 50%)
     - Zero-Downtime Deployment Has Limitations
     - Valid Plans Can Fail
     - Refactoring Can Be Tricky
-    - Eventual Consistency Is Consistent…Eventually
+    - Eventual Consistency Is Consistent...Eventually
     - Conclusion
     
 * Production-Grade Terraform Code

@@ -490,7 +490,7 @@ Notes:
 ## High Availability
 
 
- * Nodes may go down…but the system is available
+ * Nodes may go down...but the system is available
 
  * Clients can read/write data
 

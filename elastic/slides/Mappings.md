@@ -454,7 +454,7 @@ Notes:
 Two different clients both running distributed web sites 
 Check page count at same time and see 10
 Both check page count through Elasticsearch 
-Both send update of view count 11 to Elasticsearch at same time….  this is wrong, should be 12 for 2nd client.
+Both send update of view count 11 to Elasticsearch at same time....  this is wrong, should be 12 for 2nd client.
 ]If there's a lot of people hitting your Elasticsearch at the same time this kind of issue can happen. 
 
 Also known as eventually consistency. 

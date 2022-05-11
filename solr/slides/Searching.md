@@ -600,7 +600,7 @@ Notes:
 
   * Location-based searching
   * Index a field in each document containing a geographical point (a latitude and longitude)
-  * At query time…
+  * At query time...
     - filter out documents that do not fall within a specified radius of some other point
 
 

@@ -18,7 +18,7 @@ Notes:
  * pdf/word/excel/html?
  * What language is it in?
  * What character set is in use?
-   - (CP1252, UTF-8, …)
+   - (CP1252, UTF-8, ...)
  * All these problems can be done either:
    - Rule-Based
    - Machine Learning
