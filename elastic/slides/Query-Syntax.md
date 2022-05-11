@@ -86,7 +86,7 @@ Notes:
 ## Search in All Types
 
 * Search in all types of an index
-* Send your request to the `_search` endpoint of the index’s URL
+* Send your request to the `_search` endpoint of the index's URL
 
 <img src="../../assets/images/elastic/3rd-party/search-type01.png" alt="search-type01.png" style="width:60%;float:left;"/><!-- {"left" : 0.27, "top" : 2.5, "height" : 1.59, "width" : 9.41} -->
 
@@ -135,7 +135,7 @@ Elasticsearch in Practice
   - Deletes a directory
 * Close indices
   - Not removing
-  - A closed index doesn’t allow read or write operations
+  - A closed index doesn't allow read or write operations
   - Similar to removing but data remains on disk
   - Easy to restore: you open the closed index
 
@@ -188,7 +188,7 @@ If you understand query lite syntax there's not a lot you can do with it.
 
 ---
 
-## It’s not Always Simpler.
+## It's not Always Simpler.
 
 
 * Spaces etc. need to be URL encoded.
@@ -209,8 +209,8 @@ Makes it much more difficult to read and understand what's going on.
 
 * **Cryptic** and tough to debug
 * Can be a **security issue** if exposed to end users
-* **Fragile** – one wrong character and you’re hosed.
-* **But it’s handy for quick experimenting.**
+* **Fragile** – one wrong character and you're hosed.
+* **But it's handy for quick experimenting.**
 
 Notes:
 
@@ -228,7 +228,7 @@ Fragile, mess up a character and things happen that you aren't expecting.
 
 * This is formally called “URI  Search”. Search for that on the Elasticsearch  documentation.
 
-* It’s really quite powerful, but again is only appropriate for quick “curl tests”.
+* It's really quite powerful, but again is only appropriate for quick “curl tests”.
 
 
 ---
@@ -240,7 +240,7 @@ Fragile, mess up a character and things happen that you aren't expecting.
 
 ## Request Body Search
 
-* How you’re supposed to do  it
+* How you're supposed to do  it
 
 * Query DSL is in the request body as JSON
 (yes, a GET request can have a body!)
@@ -397,12 +397,12 @@ That allows for phrase searches and not just single words or partial word search
 
 ## Slop
 
-* Order matters, but you’re OK with some words being in between the terms:
+* Order matters, but you're OK with some words being in between the terms:
 
 <img src="../../assets/images/elastic/3rd-party/slop.png" alt="slop.png" style="width:60%;"/>
 
 
-* The **slop** represents how far you’re willing to let a term move to satisfy a
+* The **slop** represents how far you're willing to let a term move to satisfy a
 phrase (in either direction!)
 
 * Another example: “quick brown fox” would match “quick fox” with a slop of 1.
@@ -492,7 +492,7 @@ Page 3 = "from = 6, size of 3
 
 * Every result must be **retrieved, collected, and sorted.**
 
-* Enforce an **upper bound** on how many results you’ll return to users.
+* Enforce an **upper bound** on how many results you'll return to users.
 
 
 Notes:
@@ -519,9 +519,9 @@ This command sorts the movies by release date.
 
 ---
 
-## Unless you’re dealing with strings.
+## Unless you're dealing with strings.
 
-* A **text** field that is **analyzed** for full-text search can’t be used to sort document
+* A **text** field that is **analyzed** for full-text search can't be used to sort document
 * This is because it exists in the inverted index as individual terms, not as the entire string.
 
 Notes:
@@ -557,7 +557,7 @@ There are many reasons you would want an unanalyzed field and sorting is just on
 
 * Sadly, you cannot change the mapping on an existing index.
 
-* You’d have to delete it, set up a new mapping, and re-index it.
+* You'd have to delete it, set up a new mapping, and re-index it.
 
 * Like the number of shards, this is something you should think
 about before importing data into your index.
@@ -779,7 +779,7 @@ Now creating a mapping, tell it to use autocomplete analyzer
 
 ## N-grams only on Index
 
-* Use n-grams only on the index side or query will also get split into n-grams, and we’ll get results for  everything that matches ‘s’, ‘t’, ‘a’, ‘st’, etc.
+* Use n-grams only on the index side or query will also get split into n-grams, and we'll get results for  everything that matches 's', 't', 'a', 'st', etc.
 
 <img src="../../assets/images/elastic/3rd-party/n-grams-only-index.png" alt="n-grams-only-index.png" style="width:60%;"/>
 

@@ -46,7 +46,7 @@ Zero Install: There is no need to install software on students' machines.
 
 
  * X-Pack
-  - What’s in X-Pack
+  - What's in X-Pack
   - Security
   - Monitoring
   - Alerting and Notification

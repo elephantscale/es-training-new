@@ -55,7 +55,7 @@ Notes:
  * Analyze 
 
      - Your solution
-     - Instructor’s solution
+     - Instructor's solution
 
  * Discuss
 
@@ -202,7 +202,7 @@ Notes:
 
  * Primary Key
 
-     - We used ‘user_name’
+     - We used 'user_name'
      - => natural key (part of the model)
      - No auto-sequence keys in `C*`
      - Use natural keys whenever possible
@@ -210,7 +210,7 @@ Notes:
  * Emails
 
      - Can store as List or Set
-     - List has order; Set has no order; Set doesn’t allow dupes
+     - List has order; Set has no order; Set doesn't allow dupes
      - If using List, I can assume “first email” is primary
      - If using SET, I need a separate field (no ordering)
 
@@ -233,7 +233,7 @@ CREATE TABLE users (   user_name text,   fname text,   lname text,   primary_ema
 </br>
 
 ```text
-Adding to set:update users set emails = emails + {‘newemail’} where user_name = ‘user1’;
+Adding to set:update users set emails = emails + {'newemail'} where user_name = 'user1';
 
 ```
 
@@ -423,7 +423,7 @@ Notes:
 
  * De-normalization implies data duplication
 
- * Data consistency is application’s responsibility
+ * Data consistency is application's responsibility
 
  * Insert/Update/Delete of data requires work!
 
@@ -440,8 +440,8 @@ Notes:
 
 ```text
 BEGIN BATCH
-    UPDATE users set lname = ‘Cooper’ where user_name = ‘u1’;
-    UPDATE users_by_email set lname = ‘Cooper’ where primary_email = ‘u1@gmail.com’;
+    UPDATE users set lname = 'Cooper' where user_name = 'u1';
+    UPDATE users_by_email set lname = 'Cooper' where primary_email = 'u1@gmail.com';
 APPLY BATCH;
 
 ```
@@ -494,7 +494,7 @@ Notes:
 create table features (	code  text,	name  text,	studio text,	release_date  timestamp,	type  text,   // TV-show,  Movies ..etc	PRIMARY KEY (code));
 
 ```
- * Q: Find movie by code	</br> select * from movies where code = ‘jaws’;
+ * Q: Find movie by code	</br> select * from movies where code = 'jaws';
 
 
 
@@ -512,7 +512,7 @@ create table studio_features (	code  text,	name  text,	studio text,	release_date
 
 ```
 
- * Q: Find movies by studio	</br>*select * from features where studio = ‘HBO’;*
+ * Q: Find movies by studio	</br>*select * from features where studio = 'HBO';*
 
 
 
@@ -532,7 +532,7 @@ create table features (	code  text,	name  text,	studio text,	release_date  times
 
  * Create an Index
 
- * Q: Find movies by studio	</br>*Select * from features where studio = ‘HBO’;*
+ * Q: Find movies by studio	</br>*Select * from features where studio = 'HBO';*
 
  * What are the implications of indexing?
 
@@ -574,9 +574,9 @@ Notes:
 
 Create table features (	….	releases map<text, date>,	);
 
-INSERT into features(code, releases) values (‘ryan’, {‘theatrical’: ‘2000-01-01’,    ‘dvd’: ‘2002-01-02’} );
+INSERT into features(code, releases) values ('ryan', {'theatrical': '2000-01-01',    'dvd': '2002-01-02'} );
 
-INSERT into features (code, releases) values (‘ryan’,  {‘blueray’: ‘2010-10-10’}  );
+INSERT into features (code, releases) values ('ryan',  {'blueray': '2010-10-10'}  );
 select * from features;
 
 
@@ -622,13 +622,13 @@ Notes:
 ```text
 create table users (	user_name text,	…	ratings map<text, int>	…);
 
-insert into users (user_name, ratings) values (‘user1’, {‘movie1’: 3} );
+insert into users (user_name, ratings) values ('user1', {'movie1': 3} );
 
-insert into users (user_name, ratings) values (‘user1’, {‘movie2’: 2}  );
+insert into users (user_name, ratings) values ('user1', {'movie2': 2}  );
 
 ```
 
- * Ratings is a Map {‘movie1’: 3}
+ * Ratings is a Map {'movie1': 3}
 
  * What are the limitations of Map?
 
@@ -676,7 +676,7 @@ Notes:
 create table ratings_by_user (	user_name text,	feature_code text,	rating int,	PRIMARY KEY (user_name, feature_code));
 
 ```
- * We can get ratings per user quickly. </br>*select * from ratings_by_user where user_name = ‘user1’;*
+ * We can get ratings per user quickly. </br>*select * from ratings_by_user where user_name = 'user1';*
 
  * User can rate multiple movies
 
@@ -723,7 +723,7 @@ create table ratings_by_feature (  // another table!	user_name text,	feature_cod
 
  * Q: Find best rating for movie:
 
-     - select * from ratings_by_feature where feature_code = ‘xyz’ order by **rating DESC LIMIT** 1;
+     - select * from ratings_by_feature where feature_code = 'xyz' order by **rating DESC LIMIT** 1;
 
  * Q: Find worst rating for a movie?
 
@@ -739,7 +739,7 @@ Notes:
 ## MyFlix: Ratings by Feature: Bonus
 
 
- * Any issue with column ‘type’?
+ * Any issue with column 'type'?
 
      - It gets repeated for all rows of the same feature
 
@@ -844,7 +844,7 @@ Notes:
 
      - Timestamp encoded in UUID
 
- * Both are ‘first-class citizens’ in `C*`
+ * Both are 'first-class citizens' in `C*`
 
  * Maps to Java UUID
 
@@ -880,7 +880,7 @@ Notes:
 create table movie_resume(	feature_code text, 	device_id uuid, // last device 	position int, // in seconds	user_id text,	PRIMARY KEY ((user_id), feature_code));
 
 ```
- * Do we store only the ‘latest resume position’ per movie?
+ * Do we store only the 'latest resume position' per movie?
 
  * Do we need to store device_id (last watched on)?
 
@@ -940,11 +940,11 @@ Notes:
  * Heavy machine learning!
  * Many algorithms
 
- * ‘Collaborative filtering’ is one popular algorithm
+ * 'Collaborative filtering' is one popular algorithm
      - Two models: users & items
 
  * Quick example
-     - Recommend movies for ‘user α’
+     - Recommend movies for 'user α'
 
 Notes: 
 
@@ -962,13 +962,13 @@ Notes:
 
  * De-normalize for fast queries – no JOINS
 
-     - Don’t worry about storage... storage is cheap!
+     - Don't worry about storage... storage is cheap!
 
  * Q: Is Netflix a **read-heavy** or **write-heavy** application?
 
      - Hint: In prime time (8-11pm) **36%** Internet traffic in US is consumed by Netflix streaming!
 
-     - Probably **write-heavy** (all the devices sending ‘position’ data as movie is being watched)
+     - Probably **write-heavy** (all the devices sending 'position' data as movie is being watched)
 
      - Netflix is not serving actual movie content from `C*``C*` is not built for large files
 
@@ -1068,7 +1068,7 @@ Notes:
  * Videos cannot be identified by names or title (“my cat” is not unique)
 
  * Query:
-     - Query video by a unique ‘video_id’
+     - Query video by a unique 'video_id'
 
  * **Answer: Next Slide!**
 
@@ -1097,7 +1097,7 @@ CREATE TABLE videos (
 cqlsh> INSERT INTO videos
 (video_id, video_name, user_name, description, location, tags, upload_date)
 VALUES
-(18134b9d-6222-4f0e-b06d-4ba1e6c62f50, 'my cat', 'johnsmith', 'this is my cat', ‘http://cdn.com/video/18134b9d-6222-4f0e-b06d-4ba1e6c62f50’, {'cats', 'pets'}, toTimestamp(now()));
+(18134b9d-6222-4f0e-b06d-4ba1e6c62f50, 'my cat', 'johnsmith', 'this is my cat', 'http://cdn.com/video/18134b9d-6222-4f0e-b06d-4ba1e6c62f50', {'cats', 'pets'}, toTimestamp(now()));
 
 ```
 
@@ -1119,7 +1119,7 @@ Notes:
 
  *  *username*  – for easy access
 
- *  *tags*  – ‘Set’ implies no order
+ *  *tags*  – 'Set' implies no order
 
  *  *location*  -  stored as a URL:
 
@@ -1306,17 +1306,17 @@ Notes:
 
  * Get items in cart for user:
 
-     - select * from shopping_cart  where user_id = ‘user1’
+     - select * from shopping_cart  where user_id = 'user1'
 
  * Add items to cart:
 
-     - insert into shopping_cart (user_id, item_id, qty)values ( ‘user1’,   ‘item1’,  2)
+     - insert into shopping_cart (user_id, item_id, qty)values ( 'user1',   'item1',  2)
 
  * Delete an item:
 
      - update shopping_cart (user_id,  item_id,  qty)  
 
-     - values (‘user1’,   ‘item1’,  0);
+     - values ('user1',   'item1',  0);
 
 ```text
 create table shopping_cart (
@@ -1379,9 +1379,9 @@ create table user_activities (	user_id  text,	activity_time  timestamp,	activity
 
 ```
 
- * insert into user_activities(user_id, activity,  details, activity_time) values (‘user1’, ‘post’,  ‘post1’,   ‘2014-01-01 10:00:00’);insert into user_activities(user_id, activity, details, activity_time) values (‘user1’, ‘click’, ‘image1’,  ‘2014-01-01 10:03:00’);
+ * insert into user_activities(user_id, activity,  details, activity_time) values ('user1', 'post',  'post1',   '2014-01-01 10:00:00');insert into user_activities(user_id, activity, details, activity_time) values ('user1', 'click', 'image1',  '2014-01-01 10:03:00');
 
- * insert into user_activities(user_id, activity, details, activity_time) values (‘user2’, ‘like’, ‘image1’,  ‘2014-01-01 10:10:00’);
+ * insert into user_activities(user_id, activity, details, activity_time) values ('user2', 'like', 'image1',  '2014-01-01 10:10:00');
 
 Notes: 
 
@@ -1459,7 +1459,7 @@ Notes:
 ## User Activities: Solution 2
 
 
- * Each partition has one month’s data per user 
+ * Each partition has one month's data per user 
 
  * Note double brackets for Partition Key (user_id, month)
 
@@ -1493,7 +1493,7 @@ Notes:
 ## User Activities: Query by Activity
 
 
- * select count(*) from activity_by_time where activity = ‘post’ AND activity_time = ‘2014-01-01’;
+ * select count(*) from activity_by_time where activity = 'post' AND activity_time = '2014-01-01';
 
 ```text
 create table activity_by_time (	user text,	activity text,	activity_time  timestamp,
@@ -1559,9 +1559,9 @@ Notes:
 
  * Part of Hadoop ecosystem
 
- * Works on ‘agent -> hub’ model
+ * Works on 'agent -> hub' model
 
- * Agents run on ‘log source’ and keep sending data upstream
+ * Agents run on 'log source' and keep sending data upstream
 
  * Can handle failures
 
@@ -1621,7 +1621,7 @@ Notes:
 
      - Find log events for a certain host (latest event first)
 
-     - Make sure partition size doesn’t get too big
+     - Make sure partition size doesn't get too big
 
  * **Answer: Next Slide!**
 
@@ -1658,9 +1658,9 @@ Notes:
 
      - Mostly want LATEST events first  
 
-        * Add Time as ‘clustering column’ and sort accordingly
+        * Add Time as 'clustering column' and sort accordingly
 
-     - Make sure partitions don’t get too big in the long run
+     - Make sure partitions don't get too big in the long run
 
         * Segment Partition Key by adding (date, month, year)
 

@@ -71,7 +71,7 @@
   * Other parts of the system not being tested are mocked out
 
 * End to end testing
-  * End-to-end tests involve exercising the entire architecture from the end-user’s perspective
+  * End-to-end tests involve exercising the entire architecture from the end-user's perspective
   * E2E testing runs with no mocks in an architecture that mirrors production
 
 ---
@@ -200,7 +200,7 @@ This is where example 7-1 should be done
   1. A persistent, production-like environment called “test” is deployed which is left running
   2. Every time a change is made to the infrastructure, the end-to-end test does the following:
   - Applies the infrastructure change to the test environment
-  - Runs validations against the test environment (e.g., use Selenium to test your code from the end-user’s perspective) to make sure everything is working
+  - Runs validations against the test environment (e.g., use Selenium to test your code from the end-user's perspective) to make sure everything is working
 * More closely mimics how changes will be deployed in production
   * Also confirms the deployment process also works - for example, the change can be made with zero downtime
 ---

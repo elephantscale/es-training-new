@@ -27,7 +27,7 @@ Notes:
 ## Example 1
 
   * Try the following (running “example” data)
-  * Search for iPod in the ‘q’ text box, and name, features, score in the ‘fl’ field
+  * Search for iPod in the 'q' text box, and name, features, score in the 'fl' field
   * How many documents are returned?
   * Do you agree with the ranking?
   * (Hint: iPod occurs three times in the first document listed, twice in the name and once in the features; it occurs only once in the other documents)
@@ -39,7 +39,7 @@ Notes:
 ## Example 2
 
   * Now search thus:
-  * Search for iPod power in the ‘q’ text box, and name, features, score in the ‘fl’ field
+  * Search for iPod power in the 'q' text box, and name, features, score in the 'fl' field
   * How many documents are returned?
   * Do you agree with the ranking? Notice the closer scores
   * (Hint: power occurs twice in the second document, so its relevance to the iPod power query is much higher than its relevance to the iPod query.)
@@ -66,7 +66,7 @@ Notes:
   * Every query has page size (rows) and starting position (start)
   * Use as small a page size as possible 
 
-    - The underlying Lucene index isn’t optimized for returning many documents at once
+    - The underlying Lucene index isn't optimized for returning many documents at once
 
 
 
@@ -382,7 +382,7 @@ Notes:
 
 ## What Is It?
 
-  * Faceting is one of Solr’s most powerful features
+  * Faceting is one of Solr's most powerful features
   * Faceted search = faceted navigation = faceted browsing
   * Allows high level breakdown of the search results based upon one or more aspects (facets) of the documents
   * Permits users to select filters to drill into those search results

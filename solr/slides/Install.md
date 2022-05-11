@@ -64,7 +64,7 @@ Notes:
 
 
 ## Directory Layout
-* After installing Solr, you’ll see the following directories and files within them:
+* After installing Solr, you'll see the following directories and files within them:
 
 * **bin/** :  This directory includes several important scripts that will make using Solr easier.
   -  `solr` and `solr.cmd` : start and stop Solr, create  collections or cores, configure authentication, work with configuration files in SolrCloud.
@@ -76,7 +76,7 @@ Notes:
 
 ## Directory Layout
 
- * **contrib/** Solr’s contrib directory includes add-on plugins for specialized features of Solr.
+ * **contrib/** Solr's contrib directory includes add-on plugins for specialized features of Solr.
  * **dist/** :  main Solr .jar files.
  * **docs/**  : link to online Javadocs for Solr.
  * **example/** :  examples demonstrate various Solr capabilities.
@@ -146,7 +146,7 @@ Notes:
 
 ---
 
-## Let’s Break Up The Query
+## Let's Break Up The Query
 
 
 ![../../assets/images/solr/gquery.png) <!-- {"left" : 0.6, "top" : 2.46, "height" : 2.58, "width" : 9.06} -->
@@ -159,7 +159,7 @@ Notes:
 
 ## Summary
 
-  * What we’ve learned
+  * What we've learned
 
     - Installing and running Solr
     - Adding content to Solr and searching

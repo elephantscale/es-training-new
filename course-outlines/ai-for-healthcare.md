@@ -8,7 +8,7 @@ April 29, 2020
 
 * AI is the new electricity. It will change the way we do everything. Healthcare, with its vast resources and even greater needs, stands to benefit greatly from AI. This applies to the various aspects of healthcare, from financial to clinical to pharmaceuticals.
 
-* This course is intended for healthcare specialists, managers, software architects, and engineers. It gives the participants a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student’s participation. 
+* This course is intended for healthcare specialists, managers, software architects, and engineers. It gives the participants a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student's participation. 
 
 ## Benefits
 

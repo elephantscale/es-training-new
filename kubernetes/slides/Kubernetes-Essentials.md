@@ -394,7 +394,7 @@ Instructor Notes :
 
 Participant Notes :
 
-The pod serves as Kubernetes’ core unit of management. 
+The pod serves as Kubernetes' core unit of management. 
 A pod is a group of one or more co-located and co-scheduled containers with shared storage/network and run in a shared context.
 It hosts all the specifications that are required run the containers.
 
@@ -714,7 +714,7 @@ Notes:
 Instructor Notes :
 
 Participant Notes :
-Before we go into how you would do replication, let’s talk about why.  
+Before we go into how you would do replication, let's talk about why.  
 
 Typically one may prefer container replication for a variety of reasons.
 

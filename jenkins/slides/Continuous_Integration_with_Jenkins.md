@@ -775,7 +775,7 @@ Notes:
 
      - Can upgrade Jenkins installation directly from web interface
 
- * **Don’t forget to backup Jenkins** before upgrading, just in case (Jenkins keeps your data)
+ * **Don't forget to backup Jenkins** before upgrading, just in case (Jenkins keeps your data)
 
 Notes: 
 
@@ -880,7 +880,7 @@ Notes:
 
  * Few options for user authentication methods
 
-     - Jenkin’s Built-in User Database
+     - Jenkin's Built-in User Database
 
      - Using an Active Directory
 
@@ -898,7 +898,7 @@ Notes:
 ## Jenkins Built-In User Database
 
 
- * Simplest and most popular authentication method for Jenkin’s users
+ * Simplest and most popular authentication method for Jenkin's users
 
      - Very little configuration is required
 
@@ -922,7 +922,7 @@ Notes:
 
  * Click Enable Security
 
- * Click on Jenkins’ own user database option
+ * Click on Jenkins' own user database option
 
  * Then click on Allows users to sign up
 
@@ -1646,7 +1646,7 @@ Notes:
 
  * Click on Email Notification from Post Build Actions and enter email addresses to inform when the build breaks
 
- * Can configure to send separate emails to individuals who’s last commits broke the build
+ * Can configure to send separate emails to individuals who's last commits broke the build
 
 
 <img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Post-Build-Email-Notification-25.png" style="width:80%;"/> <!-- {"left" : 0.42, "top" : 5.28, "height" : 3.15, "width" : 16.65} -->
@@ -1731,7 +1731,7 @@ Notes:
 
  * You may want to run the job manually in some scenario using human intervention
 
- * Don’t configure anything in the build trigger section for Manual jobs
+ * Don't configure anything in the build trigger section for Manual jobs
 
 
 <img src="../../assets/images/jenkins/3rd-party/Continuous-Integration-With-Jenkins-Run-Job-Manually-27.png" style="width:70%;"/> <!-- {"left" : 1.36, "top" : 6.55, "height" : 3.28, "width" : 14.78} -->
@@ -1796,7 +1796,7 @@ Notes:
      - -*  *  *  *  *  represents once a minute
      - H/15	 *  *  *  * represents at every fifteen minutes
      - H   1  * * represents once a day on the 1st of every month
-     - Note :  Jenkins encourages the use of ‘H’ to balance load across different times of day to avoid sudden spikes of activities
+     - Note :  Jenkins encourages the use of 'H' to balance load across different times of day to avoid sudden spikes of activities
 
 Notes: 
 
@@ -2004,7 +2004,7 @@ Notes:
 
  * Apply Cobertura plugin in Gradle or Maven build script
 
-     - Update your project’s Maven POM file to include Cobertura plugin and then run `mvn cobertura:cobertura`
+     - Update your project's Maven POM file to include Cobertura plugin and then run `mvn cobertura:cobertura`
 
      - Update build.gradle file to apply Cobertura plugin and then run `gradle cobertura` task
 
@@ -2019,7 +2019,7 @@ Notes:
 ## Adding Cobertura in build.gradle
 
 ```
- apply plugin: 'cobertura‘  //required step
+ apply plugin: 'cobertura'  //required step
 
  buildscript {
 
@@ -2145,7 +2145,7 @@ Notes:
 
  * You can apply Findbug plugin in build.gradle
 
- * That’s the only required step needed to support Findbugs analysis
+ * That's the only required step needed to support Findbugs analysis
 <br/>
 
  ```
@@ -2485,7 +2485,7 @@ Notes:
 
  * Locate and Open Generated Report 
 
- * Review the Report’s Organization
+ * Review the Report's Organization
 
  * Lab 4 – Generate first SonarQube report using Jenkins
 
@@ -2570,7 +2570,7 @@ Notes:
 
  * Locate and Open Generated Report 
 
- * Review the Report’s Organization
+ * Review the Report's Organization
 
  * Lab 4 – Generate first SonarQube report using Jenkins
 
@@ -2594,7 +2594,7 @@ Notes:
 
      - Enabling SonarQube analysis in a build job
 
- * Let’s review each of the steps in next few slides
+ * Let's review each of the steps in next few slides
 
 Notes: 
 
@@ -2753,7 +2753,7 @@ Notes:
  * This is what you need to provide in build.gradle
 
 ```
-apply plugin: 'org.sonarqube‘
+apply plugin: 'org.sonarqube'
 
    sonarqube {
 
@@ -2785,7 +2785,7 @@ Notes:
 
  *  **Locate and Open Generated Report** 
 
- * Review the Report’s Organization
+ * Review the Report's Organization
 
  * Lab 4 – Generate first SonarQube report using Jenkins
 
@@ -2797,7 +2797,7 @@ Notes:
 
 ## Locate and Open Generated Report 
 
- * Let’s add new Build step to Invoke Standalone SonarQube Analysis **** in a Jenkins job configuration
+ * Let's add new Build step to Invoke Standalone SonarQube Analysis **** in a Jenkins job configuration
 
  * Then Run the build job 
 
@@ -2838,7 +2838,7 @@ Notes:
 
  * Locate and Open Generated Report 
 
- *  **Review the Report’s Organization** 
+ *  **Review the Report's Organization** 
 
  * Lab 4 – Generate first SonarQube report using Jenkins
 
@@ -2848,7 +2848,7 @@ Notes:
 
 ---
 
-## Review the Report’s Organization
+## Review the Report's Organization
 
 
  * The complete Sonar report is organized in four sections and widgets to cover the Seven Axes of Quality 
@@ -2861,7 +2861,7 @@ Notes:
 
      - Architecture / Design and Complexity: Are covered under Structure section
 
- * Let’s review all different sections using SonarQube’s own project code
+ * Let's review all different sections using SonarQube's own project code
 
      - https://nemo.sonarqube.org/ is the online instance of SonarQube dedicated to many open source projects
 
@@ -2936,7 +2936,7 @@ Notes:
 
  * Locate and Open Generated Report 
 
- * Review the Report’s Organization
+ * Review the Report's Organization
 
  *  **Lab 4 – Generate first SonarQube report** 
 
@@ -3188,7 +3188,7 @@ Notes:
 ## Multi-Configuration Matrix
 
 
- * Let’s configure this job to test for different JDKs and  Operating Systems
+ * Let's configure this job to test for different JDKs and  Operating Systems
 
      - First axis is for Master and Slave nodes
         * Master is Unix machine and Jenkins-Windows-Slave is Windows machine
@@ -3265,7 +3265,7 @@ Notes:
 
  * We did review basics of Master and Slave in the earlier section
 
- * Let’s review additional details in this section
+ * Let's review additional details in this section
 
      - How to setup Master and Slave nodes
 
@@ -3914,7 +3914,7 @@ Notes:
 
  * Re-use build scripts across IDE and Jenkins
 
- * Use your company’s templates
+ * Use your company's templates
 
  * Use Plugins effectively
 
@@ -3948,7 +3948,7 @@ Notes:
 
  * Make it a habit of committing often to the version control
 
-     - It is easier to integrate your changes with other’s changes
+     - It is easier to integrate your changes with other's changes
      - The conflicts will be resolved quickly and the team will get quick feedback of their changes
 
  * Use incremental Builds
@@ -4079,7 +4079,7 @@ Notes:
 
  * https://gradle.org/gradle-and-jenkins/
 
- * Jenkins – The Definitive Guide from O’REILLY
+ * Jenkins – The Definitive Guide from O'REILLY
 
 Notes: 
 

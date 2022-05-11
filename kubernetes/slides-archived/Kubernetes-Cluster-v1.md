@@ -89,9 +89,9 @@ Instructor Notes :
 
 Participant Notes :
 
-The pod serves as Kubernetes’ core unit of management. 
+The pod serves as Kubernetes' core unit of management. 
 A pod is a group of one or more containers with shared storage/network, and a specification for how to run the containers.  
-A pod’s contents are always co-located and co-scheduled, and run in a shared context. 
+A pod's contents are always co-located and co-scheduled, and run in a shared context. 
 A pod models an application-specific "logical host" - it contains one or more application containers which are relatively tightly coupled-in a pre-container world, they would have executed on the same physical or virtual machine.
 
 
@@ -225,7 +225,7 @@ Notes:
 
 ## Narrow Search   
 
-  * You can either narrow your search with multiple labels - your app’s fronted
+  * You can either narrow your search with multiple labels - your app's fronted
 
 
 ![](../../assets/images/kubernetes/metadata-03.png) <!-- {"left" : 1.18, "top" : 1.81, "height" : 4.91, "width" : 7.89} -->
@@ -236,7 +236,7 @@ Notes:
 
 ## Query for only backend   
 
-  * You can either narrow your search with multiple labels - your app’s backend
+  * You can either narrow your search with multiple labels - your app's backend
 
 
 ![](../../assets/images/kubernetes/metadata-04.png) <!-- {"left" : 0.96, "top" : 1.65, "height" : 5.23, "width" : 8.39} -->
@@ -246,7 +246,7 @@ Notes:
 ---
 ## Query for Test Phase  
 
-* You can either narrow your search with multiple labels - your app’s test phase
+* You can either narrow your search with multiple labels - your app's test phase
 
 ![](../../assets/images/kubernetes/metadata-05.png) <!-- {"left" : 0.81, "top" : 2.35, "height" : 4.12, "width" : 8.62} -->
 
@@ -257,7 +257,7 @@ Notes:
 ## Query for Production  
 
   * You can either narrow your search with multiple labels - your
-app’s production release
+app's production release
 
 
 ![](../../assets/images/kubernetes/metadata-06.png) <!-- {"left" : 0.84, "top" : 2.1, "height" : 4.12, "width" : 8.57} -->
@@ -489,7 +489,7 @@ Instructor Notes :
 
 Participant Notes :
 
-Implemented as a control loop, Horizontal Pod Autoscaler with a period controlled by the controller manager’s --horizontal-pod-autoscaler-sync-period flag (with a default value of 30 seconds).
+Implemented as a control loop, Horizontal Pod Autoscaler with a period controlled by the controller manager's --horizontal-pod-autoscaler-sync-period flag (with a default value of 30 seconds).
 
 The controller manager queries the resource utilization against the metrics specified in each HorizontalPodAutoscaler definition.
 
@@ -585,7 +585,7 @@ Notes:
 ---
 ## Data Mounted  
 
-  * After the volume is attached, data is mounted into a container’s file system
+  * After the volume is attached, data is mounted into a container's file system
 
 
 ![](../../assets/images/kubernetes/Kubernetes-volumes-04.png) <!-- {"left" : 0.87, "top" : 2.18, "height" : 3.15, "width" : 8.51} -->
@@ -700,7 +700,7 @@ Please present the Participant Notes.
 Participant Notes :
 
 I will show you step-by-step how to install and configure Kubernetes on CentOS 7. 
-We will be using 1 server ‘ k8s-master' as the Kubernetes Host Master, and 2 servers as Kubernetes node, 'node01' and 'node02’.
+We will be using 1 server ' k8s-master' as the Kubernetes Host Master, and 2 servers as Kubernetes node, 'node01' and 'node02'.
 Prerequisites :  3 CentOS 7 Servers & Root privileges
 We will be covering:
 Kubernetes Installation
@@ -774,7 +774,7 @@ Connect to the node02 server and run the kubeadm join command.
 Wait a few minutes and go back to the 'k8s-master' master cluster server and check the nodes and pods using the following command:
 kubectl get nodes 
 
-Now, you will get node01 and node02 has been added to the cluster with status 'ready’.
+Now, you will get node01 and node02 has been added to the cluster with status 'ready'.
 node01 and node02 have been added to the kubernetes cluster.
 
 ---
@@ -802,13 +802,13 @@ Instructor Notes :
 
 Participant Notes :
 
-State is a temporal property of a process. Stateless application process does not keep track of past interactions. It’s a purely functional behavior.
+State is a temporal property of a process. Stateless application process does not keep track of past interactions. It's a purely functional behavior.
 
 Stateful, on the other hand, retains and responds based on the previous interactions record
 
 Where the state is kept, that is, in main memory or persisted on disk, is a different question.
 
-Storage is a persistent way to keep data around.A process executed purely on data in main memory, there’s no disk I/O. If disk I/O is carried out, it might be read-only or in a read-write manner.
+Storage is a persistent way to keep data around.A process executed purely on data in main memory, there's no disk I/O. If disk I/O is carried out, it might be read-only or in a read-write manner.
 
 
 ---
@@ -910,7 +910,7 @@ For example, a frontend application is stateless.
   * Perform dynamic changes to the desired state through updates to the Deployment's Pod specification.
 
     - Stateless applications are in contrast to stateful applications:
-    - Stateless – Don’t use persistent storage to save data.
+    - Stateless – Don't use persistent storage to save data.
     - Stateful – Use persistent storage to save data.
 
 
@@ -1018,7 +1018,7 @@ These applications need unique, persistent identities and stable hostnames, so o
 
     - What applications should run inside its containers.
     - Which volumes should be mounted.
-    - The pod’s labels and selectors.
+    - The pod's labels and selectors.
 
   * StatefulSet ensures that the desired number of Pods are running and are available at all times
 
@@ -1179,7 +1179,7 @@ We can start and stop the application.
 
     - In this lab, you will get some practical experience with Kubernetes by learning how to set up a MongoDB database with a StatefulState.
 
-* **What you’ll learn**
+* **What you'll learn**
 
     - How to deploy a Kubernetes cluster, a headless service, and a StatefulSet.
     - How to connect a Kubernetes cluster to a MongoDB replica set.

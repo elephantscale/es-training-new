@@ -4,6 +4,14 @@
 
 ---
 
+## Instructor Introduction
+
+* Instructor, please introduce yourself
+
+* And highlight your expertise and experience in the subject
+
+---
+
 
 ## Class Objectives
 
@@ -124,26 +132,6 @@ Notes:
 
 ---
 
-## Class Logistics
-
-
- *  **Instructor’s contact** Email / LinkedIn
-
- *  **Slides** 
-
-     - You will get PDF copies of slides.  
-
-     - Feel free to annotate or highlight, etc. (use a modern PDF reader)
-
- *  **Lab Exercises:** 
-
- *  **Working environment:** Provided in the cloud
-
-Notes: 
-
-
-
----
 
 ## Quick Introductions (Time Permitting)
 
@@ -161,6 +149,27 @@ Notes:
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.02, "top" : 5.93, "height" : 2.02, "width" : 2.28} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.33, "top" : 5.96, "height" : 1.95, "width" : 3.59} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.94, "top" : 5.93, "height" : 2.02, "width" : 2.28} -->
 
 Notes: 
+
+---
+
+## Class Logistics
+
+
+ *  **Instructor's contact** Email / LinkedIn
+
+ *  **Slides** 
+
+     - You will get PDF copies of slides.  
+
+     - Feel free to annotate or highlight, etc. (use a modern PDF reader)
+
+ *  **Lab Exercises:** 
+
+ *  **Working environment:** Provided in the cloud
+
+Notes: 
+
+
 
 ---
 

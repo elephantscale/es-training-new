@@ -254,10 +254,10 @@ Notes:
 
 * When you index a document
   - It is sent to one of the primary shards
-  - chosen based on a hash of the document’s ID
+  - chosen based on a hash of the document's ID
 * The primary shard may be located on a different node
   - transparent to the application
-* Then the document is indexed in all of that primary shard’s replicas
+* Then the document is indexed in all of that primary shard's replicas
   - Replicas are in sync with data from the primary shards
   - Replicas can serve searches
 * Replicas can be automatically promoted to primary shards
@@ -436,7 +436,7 @@ Notes:
 
 Cannot change primary shards later on. Must define it when setting up cluster.
 Most applications require additional read capacity, not write.
-You can also re-index your data and copy it over but it’s not a fun process
+You can also re-index your data and copy it over but it's not a fun process
 Plan ahead so you have the correct number of primary shards.
 
 By default, each index in Elasticsearch is allocated 5 primary shards and 1 replica which means that if you have at least two nodes in your cluster, your index will have 5 primary shards and another 5 replica shards (1 complete replica) for a total of 10 shards
@@ -697,7 +697,7 @@ Notes:
 
 Notes:
 
-Now that we have our mapping created let’s go ahead and insert a movie
+Now that we have our mapping created let's go ahead and insert a movie
 
 ---
 
@@ -707,7 +707,7 @@ Now that we have our mapping created let’s go ahead and insert a movie
 
 Notes:
 
-Now that we have our mapping created let’s go ahead and insert a movie
+Now that we have our mapping created let's go ahead and insert a movie
 
 ---
 
@@ -716,7 +716,7 @@ Now that we have our mapping created let’s go ahead and insert a movie
 
 ## Ison Bulk Import
 
-* **`curl -XPUT	127.0.0.1:9200/_bulk –d ‘`**
+* **`curl -XPUT	127.0.0.1:9200/_bulk –d '`**
 
 ```text
 { "create" : { "_index" : "movies", "_type" : "movie", "_id" : "135569" } }
@@ -728,7 +728,7 @@ Now that we have our mapping created let’s go ahead and insert a movie
 { "create" : { "_index" : "movies", "_type" : "movie", "_id" : "58559" } }
 { "id": "58559", "title" : "Dark Knight, The", "year":2008 , "genre":["Action", "Crime", "Drama", "IMAX"] }
 { "create" : { "_index" : "movies", "_type" : "movie", "_id" : "1924" } }
-{ "id": "1924", "title" : "Plan 9 from Outer Space", "year":1959 , "genre":["Horror", "Sci-Fi"] } ‘
+{ "id": "1924", "title" : "Plan 9 from Outer Space", "year":1959 , "genre":["Horror", "Sci-Fi"] } '
 ```
 
 Notes:
@@ -751,7 +751,7 @@ Elasticsearch goes through this one document at a time, sends it off to whatever
 
 Notes:
 
-We’ve covered indexing new documents using JSON format in REST API. 
+We've covered indexing new documents using JSON format in REST API. 
 We tried to insert Interstellar twice and it gave us an error. 
 Elasticsearch documents are immutable, they can not be changed after creation. 
 
@@ -824,7 +824,7 @@ When a POST command is run to update the document some fun stuff happens.
 
 ---
 
-## It couldn’t be easier.
+## It couldn't be easier.
 
 * Just use the DELETE method:
 

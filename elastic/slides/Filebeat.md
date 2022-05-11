@@ -20,7 +20,7 @@
 ## This is Called the Elastic Stack
 
 
-* prior to beats, you’d hear about the “ELK stack” – Elasticsearch, Logstash, Kibana.
+* prior to beats, you'd hear about the “ELK stack” – Elasticsearch, Logstash, Kibana.
 
 
 
@@ -29,7 +29,7 @@
 ## Filebeat vs Logstash
 
 * Wrong question: Use them together.
-* It won’t let  you overload your pipeline.
+* It won't let  you overload your pipeline.
 * You get more flexibility on scaling your cluster.
 
 

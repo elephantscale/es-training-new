@@ -157,7 +157,7 @@ Notes:
 ## Why not use Facets?
 
 * You may have heard about **facets** in Elasticsearch or Solr
-* But you can’t nest multiple types of facetsL
+* But you can't nest multiple types of facetsL
   - Limits the possibilities for exploration 
 * Examples: can do
   - On a blogging site
@@ -244,7 +244,7 @@ Notes:
 ## Aggregation Rule #2
 
 * Aggregations run on the results of your query
-* Documents that don’t match your query aren’t accounted for
+* Documents that don't match your query aren't accounted for
 * Exception: global aggregation (more later)
 
 
@@ -279,7 +279,7 @@ Notes:
 
 ## Aggregation Request
 
-* At the top level there’s the aggregations key (aggs)
+* At the top level there's the aggregations key (aggs)
 * Aggregation name
 * Aggregation type terms and the specific options
 * In our case, the field name
@@ -374,7 +374,7 @@ Notes:
 Notes:
 
 ---
-## Let’s Learn by Example
+## Let's Learn by Example
 
 
 * Bucket by rating value:
@@ -387,7 +387,7 @@ Notes:
 
 ---
 
-## Let’s Learn by Example
+## Let's Learn by Example
 
 
 * Count only 5-star ratings:
@@ -401,7 +401,7 @@ Notes:
 ---
 
 
-## Let’s Learn by Example
+## Let's Learn by Example
 
 * Average rating for Star Wars:
 

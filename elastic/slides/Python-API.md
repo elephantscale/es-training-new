@@ -47,7 +47,7 @@ AWS systems can stream in data via **lambda** or **kinesis firehose** **kafka, s
   - Several choices for scala
   - Elasticsearch.pm module for perl
 
-* You don’t have to wrangle JSON.
+* You don't have to wrangle JSON.
 
 
 ```python

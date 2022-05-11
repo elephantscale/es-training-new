@@ -49,7 +49,7 @@ The next few slides on "Changes" transitions the presentation from talking about
 
 * Cognitive and physical labor is unbundled and networked
 
->‘Old-fashioned’ jobs are unbundled into tasks, many of which can be automated. Others are available as an on-demand service on tasking platforms.
+>'Old-fashioned' jobs are unbundled into tasks, many of which can be automated. Others are available as an on-demand service on tasking platforms.
 
 Notes:
 
@@ -114,7 +114,7 @@ Starting to happen more as the costs of 3d printing and other technologies are d
 
 * Standard goods and services are replaced by customized offerings
 
->Customization is achieved at little or no additional cost. Locally printed customized objects can compete on price with batch-produced ones. They use less material, perform to the user’s specifications, and decrease the need for warehousing and long-distance transportation.
+>Customization is achieved at little or no additional cost. Locally printed customized objects can compete on price with batch-produced ones. They use less material, perform to the user's specifications, and decrease the need for warehousing and long-distance transportation.
 
 Notes:
 
@@ -179,7 +179,7 @@ This is just a transitional slide to set up the next section.
 
 ## Challenge 1: Creative Destruction
 
-* The Next Digital Economy may create a turbulent period of ‘creative destruction’ and fierce competition among firms
+* The Next Digital Economy may create a turbulent period of 'creative destruction' and fierce competition among firms
 
 >Firms based on traditional models may struggle to survive as new entrants arise or move in from other sectors. Only a few firms might win big in this network-effect economy. In such a world, firms may avoid taking on future liabilities to stay nimble.
 
@@ -273,7 +273,7 @@ Image Credit: https://media.istockphoto.com
 
 * AI and automation could reduce demand for existing human work long before these technologies replace entire jobs
 
-* 'Centaur work' in which machines closely support – not replace – humans may change many workers’ experience
+* 'Centaur work' in which machines closely support – not replace – humans may change many workers' experience
 
 * Robot-centric workplace design makes it easier for robots but harder for humans to function  
 

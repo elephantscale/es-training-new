@@ -125,7 +125,7 @@ Notes:
 
 * Overall goal: 
   - Prepare an optimized data structure to efficiently answer queries
-  - (Obviously, linearly going through all documents won’t work)
+  - (Obviously, linearly going through all documents won't work)
 * Acquire content
 * Build document
 * Analyze document
@@ -160,7 +160,7 @@ Notes:
 
 ## Indexing Steps: Build Document
 
-* ‘Document’ is a unit for search
+* 'Document' is a unit for search
 * Document fields
   - Title
   - Body
@@ -200,7 +200,7 @@ Notes:
 <img src="../../assets/images/elastic/3rd-party/Structure-01.png" alt="Structure-01.png" style="width:60%;"/><!-- {"left" : 6.75, "top" : 1, "height" : 2.25, "width" : 3.38} -->
 
 * Indexing a book or a large document
-  - What is ‘body text’?
+  - What is 'body text'?
   - Chapter?
   - Page? 
   - Paragraph?

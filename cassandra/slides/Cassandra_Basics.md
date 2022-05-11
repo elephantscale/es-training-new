@@ -68,10 +68,10 @@ Notes:
 
 ---
 
-## `C*` History
+## C* History
 
 
- * Developed @ Facebook to power ‘inbox’ search (2008)
+ * Developed @ Facebook to power 'inbox' search (2008)
 
  * Modeled after Amazon Dynamo & Google Big Table
 
@@ -89,9 +89,19 @@ Notes:
 
      - 2017: v3.10
 
+     - 2022: v 4.0
+
 Notes: 
 
 
+---
+
+## Cassandra 4.0 Noteworthy Features
+
+* Java 11 is fully supported (finally!)
+
+* Virtual Tables
+    - Allow us to query metrics using CQL
 
 
 ---
@@ -399,7 +409,7 @@ Notes:
 
      - Usually one/two
 
- * Keyspace, in turn, contains ‘tables’
+ * Keyspace, in turn, contains 'tables'
 
  * Keyspace attributes
 
@@ -440,7 +450,7 @@ Notes:
 
 ---
 
-## Hierarchy: ‘Myflix’ Application
+## Hierarchy: 'Myflix' Application
 
 <img src="../../assets/images/cassandra/Hierarchy-Myflix-Application.png"  style="width:50%;"/>
 
@@ -491,11 +501,11 @@ Notes:
 
  * Each row can have any number of columns
 
-     - Doesn’t have to be same column (unlike RDBMS)
+     - Doesn't have to be same column (unlike RDBMS)
 
  * `C*` does NOT store NULL values
 
-     - NULLs don’t take up any space (free)
+     - NULLs don't take up any space (free)
 
 Notes: 
 
@@ -610,7 +620,7 @@ Notes:
 ## CQL Shell Getting Started
 
 
- * Use ‘help’ or ‘?’ to get help
+ * Use 'help' or '?' to get help
 
  * 	*cqlsh> help describe;*
 
@@ -752,7 +762,7 @@ Murmur3 is the new default hashing algorithm.  It provides faster hashing & impr
 
      - Hashing can place them on different nodes
 
-     - See diagram: ‘row2’ and ‘row3’ are on different nodes 
+     - See diagram: 'row2' and 'row3' are on different nodes 
 
 
 Notes: 
@@ -793,7 +803,7 @@ Notes:
 
  * Places other replicas on next nodes around the ring walking “clockwise”
 
- * Doesn’t consider network topology
+ * Doesn't consider network topology
 
  * OK for evaluation/testing
 
@@ -845,7 +855,7 @@ Notes:
 
  * We have 2 replicasIs it safe?
 
- * If ‘rack 1’ fails, datais lost!
+ * If 'rack 1' fails, datais lost!
 
 
 Notes: 
@@ -949,7 +959,7 @@ Notes:
 
  * Locking and Blocking will reduce data throughput
 
- * We don’t need strong consistency all the time
+ * We don't need strong consistency all the time
 
 Notes: 
 

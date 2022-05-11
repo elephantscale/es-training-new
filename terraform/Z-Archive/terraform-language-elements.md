@@ -909,7 +909,7 @@ upper_roles = {
 * The way to accomplish that is to create the replacement ASG first and then destroy the original one
 
 * Configure the name parameter of the ASG to depend directly on the name of the launch configuration
-    *Each time the launch configuration changes (which it will when you update the AMI or User Data), its name changes, and therefore the ASG’s name will change, which forces Terraform to replace the ASG
+    *Each time the launch configuration changes (which it will when you update the AMI or User Data), its name changes, and therefore the ASG's name will change, which forces Terraform to replace the ASG
 * Set the create_before_destroy parameter of the ASG to true, so that each time Terraform tries to replace it, it will create the replacement ASG before destroying the original
 * Set the min_elb_capacity parameter of the ASG to the min_size of the cluster so that Terraform will wait for at least that many servers from the new ASG to pass health checks in the ALB before it will begin destroying the original ASG
 
@@ -954,7 +954,7 @@ upper_roles = {
     * You cannot use count or for_each within a module configuration
 
 * Zero-downtime deployment has limitations
-    * it doesn’t work with auto scaling policies
+    * it doesn't work with auto scaling policies
     * it resets your ASG size back to its min_size after each deployment
 
 * Valid plans can fail

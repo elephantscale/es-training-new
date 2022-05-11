@@ -330,7 +330,7 @@ Notes:
 
  * **Model Architecture:**
 
-    - BERT’s model architecture is a **multi-layer bidirectional Transformer encoder** based on the original implementation
+    - BERT's model architecture is a **multi-layer bidirectional Transformer encoder** based on the original implementation
     - In this work:
       - The number of layers: **L**
       - The hidden size: **H**

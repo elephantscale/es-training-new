@@ -57,7 +57,7 @@ GCP customers use projects to organize the resources they use. They use Google C
 
 ###  Virtual Machines in the CLoud
 
-Compute Engine lets you run virtual machines on Google’s global infrastructure. This module covers how Compute Engine works, with a focus on Google virtual networking.
+Compute Engine lets you run virtual machines on Google's global infrastructure. This module covers how Compute Engine works, with a focus on Google virtual networking.
 
 
 ###  Storage in the Cloud
@@ -69,7 +69,7 @@ Every application needs to store data. Different applications and workloads requ
 
 ###  Containers in the Cloud
 
-Containers are simple and interoperable, and they enable seamless, fine-grained scaling. Kubernetes is an orchestration layer for containers. Kubernetes Engine is Kubernetes as a service, a scalable managed offering that runs on Google’s infrastructure. You direct the creation of a cluster, and Kubernetes Engine schedules your containers into the cluster and manages them automatically, based on requirements you define. This module explains how Kubernetes Engine works and how it helps deploy applications in containers.
+Containers are simple and interoperable, and they enable seamless, fine-grained scaling. Kubernetes is an orchestration layer for containers. Kubernetes Engine is Kubernetes as a service, a scalable managed offering that runs on Google's infrastructure. You direct the creation of a cluster, and Kubernetes Engine schedules your containers into the cluster and manages them automatically, based on requirements you define. This module explains how Kubernetes Engine works and how it helps deploy applications in containers.
 
 
 ### Applications in the CLoud

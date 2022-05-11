@@ -117,7 +117,7 @@ oPredicting Uber demand
 oClustering shopping trips
 Unsupervised: Principal Component Analysis (PCA)
 oUnderstanding dimensions
-o‘Curse of dimensionality’
+o'Curse of dimensionality'
 oReducing dimensions
 oOverview of Principal Component Analysis (PCA)
 oEigen vectors and values

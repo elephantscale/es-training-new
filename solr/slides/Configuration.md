@@ -47,7 +47,7 @@
 
 ## Configuration Files
 
- * Inside Solr’s Home, you’ll find these files:
+ * Inside Solr's Home, you'll find these files:
 
    - solr.xml specifies configuration options for your Solr server instance
  * Per Solr Core:

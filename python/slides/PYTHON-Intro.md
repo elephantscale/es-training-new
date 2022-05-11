@@ -3,7 +3,7 @@
 
 ## Lesson Objectives
 
-  * Get a brief introduction to Python, it’s history, differences
+  * Get a brief introduction to Python, it's history, differences
     from other languages and use cases
   * Install Python
   * Learn about Python Integrated Development Environments (IDEs)
@@ -69,7 +69,7 @@ Notes:
 
     - Thousands of libraries in PyPI (open source)
 
-  * Python usually gets ‘bleeding edge’ routines before other commercial packages!!
+  * Python usually gets 'bleeding edge' routines before other commercial packages!!
 
     - Power of open source
 
@@ -148,7 +148,7 @@ Source: https://www.python.org/dev/peps/pep-0020/
 
 Notes:
 
-The language was called Python because of Guido’s fascination with the Monty Python TV show. Python’s association with snakes gave rise to snake-like names, such as Anaconda.
+The language was called Python because of Guido's fascination with the Monty Python TV show. Python's association with snakes gave rise to snake-like names, such as Anaconda.
 
 Study source on [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 ---
@@ -241,7 +241,7 @@ Notes:
 |--------------------------------------	|------------------------------------------|
 | Dynamically Typed Language           	| Statically Typed Language                |
 | Interactive REPL Shell               	| No REPL                                  |
-| Can’t build dependencies into object 	| Can build dependencies into a FAT JAR.   |
+| Can't build dependencies into object 	| Can build dependencies into a FAT JAR.   |
 | Good for interactive analytics       	| Good for “productionizing” analytics.    |
 | Relatively slow                      	| Faster (but not as fast as native code). |
 | Interpreted (from bytecode)          	| Usually JIT compiled.                    |
@@ -415,7 +415,7 @@ Notes:
   * Separate from System Python
 
     - Anaconda is separate from your system python
-    - So it won’t break anything else you may be doing on your machine in Python
+    - So it won't break anything else you may be doing on your machine in Python
 
 Notes:
 

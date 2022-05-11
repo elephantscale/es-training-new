@@ -109,12 +109,12 @@ Notes:
     - In memory data: 100x faster!
 * Spark has a different execution model than MR
 * In MapReduce
-    - Each job is run within its own ‘container’  (JVM)
+    - Each job is run within its own 'container'  (JVM)
     - Once the job is done, container is terminated
     - For another job, new containers get started, and run the new tasks.
     - This is expensive (starting a new JVM for each job)
 * Spark
-    - Containers (called ‘executors’) are ‘long lived’ (aka not terminated between jobs) (even when not running tasks)
+    - Containers (called 'executors') are 'long lived' (aka not terminated between jobs) (even when not running tasks)
     - New task startup is very fast (no warm up!)
     - Task switching is very fast too.
     - Map Reduce is considering this approach too (LLAP : Long Live and Process ("Long Live and Prosper"))
@@ -165,7 +165,7 @@ Notes:
         - Development / debugging
     - **YARN-cluster**
         - Production runs
-        - Not meant for ’interactive’ applications
+        - Not meant for 'interactive' applications
 
 ---
 

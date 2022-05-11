@@ -141,7 +141,7 @@ Notes:
 >>> a
 array[1, 2, 3, 4]
 >>> a.dtype
-dtype(‘int64’)
+dtype('int64')
 ```
 <!-- {"left" : 0, "top" : 5.13, "height" : 1.79, "width" : 5.93} -->
 
@@ -171,7 +171,7 @@ Notes:
 >>> a
 array[1, 2, 3, 4]
 >>> a.dtype # What is the type of a?
-dtype(‘int64’)
+dtype('int64')
 ```
 <!-- {"left" : 0, "top" : 2.48, "height" : 2.27, "width" : 8.27} -->
 
@@ -190,7 +190,7 @@ Notes:
 >>> a
 array[1, 2, 3, 4]
 >>> a.dtype
-dtype(‘int64’)
+dtype('int64')
 ```
 <!-- {"left" : 0, "top" : 3.06, "height" : 2.45, "width" : 8.09} -->
 
@@ -205,7 +205,7 @@ dtype(‘int64’)
 >>> a
 array[1., 2., 3., 4.]
 >>> a.dtype
-dtype(‘float64’)
+dtype('float64')
 ```
 <!-- {"left" : 0, "top" : 2.76, "height" : 1.98, "width" : 10.22} -->
 
@@ -355,12 +355,12 @@ dtype('int64')
 >>> b
 array([2.5, 5., 7.5, 10.])
 >>> b.dtype
-dtype(’float64')
+dtype('float64')
 >>> c = b * (2 + 3j)
 >>> c
 array([ 5. +7.5j, 10.+15.j , 15.+22.5j, 20.+30.j ])
 >>> c.dtype
-dtype(’complex128')
+dtype('complex128')
 ```
 <!-- {"left" : 0, "top" : 2.15, "height" : 4.54, "width" : 9.94} -->
 
@@ -495,7 +495,7 @@ Notes:
 array[[ 0,  1,  2,  3,  4],
       [ 5,  6,  7,  8,  9],
       [10, 11, 12, 13, 14]]
->>> a[1][0] # DON’T DO THIS!! -- Slow
+>>> a[1][0] # DON'T DO THIS!! -- Slow
 5
 >>> a[1,0] #  This is faster
 5
@@ -719,7 +719,7 @@ Notes:
 
   * Filtering is an important NumPy operation
 
-  * **np.any()** and **np.all()** help in ’or’ and ‘and’ operations
+  * **np.any()** and **np.all()** help in 'or' and 'and' operations
 
   * It helps in selecting a portion or subset of the original array
 
@@ -788,7 +788,7 @@ Notes:
 >>> # Arrays in Python > 3.5
 >>> a = np.array([[4, 3], [2, 1]])
 >>> b = np.array([[1, 2], [3,4]])
->>> print (a@b) # Matrix Multiply is ‘@’ in Python > 3.5
+>>> print (a@b) # Matrix Multiply is '@' in Python > 3.5
 [[13 20]
  [ 5  8]]
 ```
@@ -797,8 +797,8 @@ Notes:
 
 ```python
 >>> # Matrices
->>> a = np.mat(‘4 3; 2 1’)
->>> b = np.mat(‘1 2; 3 4’)
+>>> a = np.mat('4 3; 2 1')
+>>> b = np.mat('1 2; 3 4')
 >>> print (a*b) # Matrix Mutiply
 [[13 20]
  [ 5  8]]

@@ -5,7 +5,7 @@ January 20, 2022
 
 ## Overview
 
-* Automation isn’t just about convenience anymore. It’s a major strategic differentiator for organizations looking to improve the efficiency, management, scale, and performance of their IT stacks. No matter what you’re looking to achieve with automation, Ansible is a robust and flexible technology that can help you get there.
+* Automation isn't just about convenience anymore. It's a major strategic differentiator for organizations looking to improve the efficiency, management, scale, and performance of their IT stacks. No matter what you're looking to achieve with automation, Ansible is a robust and flexible technology that can help you get there.
 * This course gives you the foundation for building and operating automation across an organization, using Red Hat® Ansible® Automation Platform. The platform includes all the tools needed to implement enterprise-wide automation.
 
 ## Learning objectives

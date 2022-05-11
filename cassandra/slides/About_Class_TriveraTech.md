@@ -6,6 +6,13 @@
 
 ---
 
+## Instructor Introduction
+
+* Instructor, please introduce yourself
+
+* And highlight your expertise and experience in the subject
+
+---
 
 ## Class Objectives
 
@@ -126,27 +133,6 @@ Notes:
 
 ---
 
-## Class Logistics
-
-
- *  **Instructor’s contact** Email / LinkedIn
-
- *  **Slides** 
-
-     - You will get PDF copies of slides.  
-
-     - Feel free to annotate or highlight, etc. (use a modern PDF reader)
-
- *  **Lab Exercises:** 
-
- *  **Working environment:** Provided in the cloud
-
-Notes: 
-
-
-
----
-
 ## Quick Introductions (Time Permitting)
 
 
@@ -165,6 +151,26 @@ Notes:
 Notes: 
 
 ---
+
+## Class Logistics
+
+
+ *  **Instructor's contact** Email / LinkedIn
+
+ *  **Slides** 
+
+     - You will get PDF copies of slides.  
+
+     - Feel free to annotate or highlight, etc. (use a modern PDF reader)
+
+ *  **Lab Exercises:** 
+
+ *  **Working environment:** Provided in the cloud
+
+Notes: 
+
+---
+
 
 ## Let's Get Started!
 

@@ -1014,13 +1014,13 @@ performance, accuracy, and size of network.</span>
 
 **<span dir="ltr"><span class="underline">Title:</span></span>**
 
-## <span dir="ltr">Introducing RNN’s</span>
+## <span dir="ltr">Introducing RNN's</span>
 
 **<span dir="ltr"><span class="underline">Description:</span></span>**
 
-<span dir="ltr">Understanding the meaning of Recurrence and RNN’s, why
+<span dir="ltr">Understanding the meaning of Recurrence and RNN's, why
 recurrence creates memory and state in NN, and learn how to implement
-RNN in Tensorflow. Different types of RNN’s. Disadvantages of RNN’s.
+RNN in Tensorflow. Different types of RNN's. Disadvantages of RNN's.
 Show lab doing a manual RNN, using a static RNN, packing sequences,
 dynamic RNN, and multi-layer RNN.</span>
 

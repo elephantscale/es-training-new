@@ -261,7 +261,7 @@ Notes:
 
 ---
 
-## Default: Lucene Query Parser, cont’d
+## Default: Lucene Query Parser, cont'd
 
 * **Do these mean the same?**
 * +solr
@@ -277,7 +277,7 @@ Notes:
 
 ---
 
-## Default: Lucene Query Parser, cont’d
+## Default: Lucene Query Parser, cont'd
 
 * **And these mean the same?**
 * apache **OR** solr

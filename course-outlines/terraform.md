@@ -88,7 +88,7 @@ Lectures and hands-on labs. (50%, 50%)
 * How to Manage Terraform State
     - What Is Terraform State?
     - Shared Storage for State Files
-    - Limitations with Terraform’s Backends
+    - Limitations with Terraform's Backends
     - Isolating State Files
     - Isolation via Workspaces
     - Isolation via File Layout

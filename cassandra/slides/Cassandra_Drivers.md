@@ -40,7 +40,7 @@ Notes:
 
      - They all use thrift interface
 
- * With `C*`  2.x   recommended clients are ‘native’ drivers
+ * With `C*`  2.x   recommended clients are 'native' drivers
 
 Notes: 
 
@@ -133,13 +133,13 @@ Sessions
 ```text
 cluster = Cluster.builder().addContactPoint("localhost”).build();
 Session session = cluster.connect("myflix");
-String cql = “insert into users(id, name) values (‘user1’,  ‘Joe’)”;
+String cql = “insert into users(id, name) values ('user1',  'Joe')”;
 session.execute(cql);
 
 ```
  * Just like SQL!
 
- * String values must be included in single quotes (‘hello’)
+ * String values must be included in single quotes ('hello')
 
  * List values are in enclosed in square brackets []
 
@@ -219,8 +219,8 @@ Notes:
 
  * Note : 
 
-     - ‘executeAsync’: non blocking
-     - ‘queryUniterruptibly’: blocking
+     - 'executeAsync': non blocking
+     - 'queryUniterruptibly': blocking
 
 
 

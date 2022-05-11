@@ -20,7 +20,7 @@ Notes:
 
 * Many organizations must adapt to survive digital disruption. One approach is digital transformation. The quest for transformation is a ­journey and the destination is not fixed. Rather senior managers must envision a data-centric organization and encourage data-based ­decision-making processes.
 
-* Data-based decision making is an ongoing process of collecting and analyzing different types of data from diverse sources. Building better ­decision support and using analytics is an enabler of more effective ­decision making and digital transformation. Digital transformation changes ­people’s behavior, organizational processes, and technologies to enhance performance and better meet customer needs. Using data becomes part of an organization’s culture and managers learn to use data and analytics appropriately for each decision situation. Analytics and decision support become pervasive and enhance data-based decision making.
+* Data-based decision making is an ongoing process of collecting and analyzing different types of data from diverse sources. Building better ­decision support and using analytics is an enabler of more effective ­decision making and digital transformation. Digital transformation changes ­people's behavior, organizational processes, and technologies to enhance performance and better meet customer needs. Using data becomes part of an organization's culture and managers learn to use data and analytics appropriately for each decision situation. Analytics and decision support become pervasive and enhance data-based decision making.
 
 * Digital disruption is like a tidal wave. Managers must learn to act quickly using data. To succeed in the long-run, managers must ensure that data is used ethically. Both data visualization and data story telling can assist managers in directing the digital journey. Algorithms, ­Artificial Intelligence, and Machine Learning are tools to make processes faster and smarter.
 
@@ -187,7 +187,7 @@ Notes:
 * How are you going to measure progress?
 * How can you influence the outcome?
 * Who is responsible for the business outcome?
-* How will you know you’ve achieved your outcome?
+* How will you know you've achieved your outcome?
 * How often will you review progress towards the outcome?
 
 Notes:
@@ -208,7 +208,7 @@ Notes:
 
 Notes:
 
-* As an example, let’s say your objective is to increase sales revenue this year. You’re going to call this your Sales Growth KPI. Here’s how you might define the KPI:
+* As an example, let's say your objective is to increase sales revenue this year. You're going to call this your Sales Growth KPI. Here's how you might define the KPI:
 
 ## Activity 1
 
@@ -246,9 +246,9 @@ One way to evaluate the relevance of a performance indicator is to use the SMART
 
 Notes:
 
-* Most of this we’ve already gone over, but it’s worth focusing on the need to develop targets for both the short- and long-term. Once you’ve set a goal with a timeline that’s farther into the future (say the next few quarters, or your fiscal year) you can then work backwards and identify the milestones you’ll need to hit on the way there.
+* Most of this we've already gone over, but it's worth focusing on the need to develop targets for both the short- and long-term. Once you've set a goal with a timeline that's farther into the future (say the next few quarters, or your fiscal year) you can then work backwards and identify the milestones you'll need to hit on the way there.
 
-* Let’s say, for example, you want to sign up 1,500 newsletter subscribers in the first quarter of the year. You’ll want to set monthly, bi-weekly or even weekly targets to get there. That way you’ll be able to continually reassess and change course as needed on your way to achieving the longer-term goal.
+* Let's say, for example, you want to sign up 1,500 newsletter subscribers in the first quarter of the year. You'll want to set monthly, bi-weekly or even weekly targets to get there. That way you'll be able to continually reassess and change course as needed on your way to achieving the longer-term goal.
 
 * You could divide the targets up equally according to each month. In this case that would be 500 subscriptions in January, 500 in February and 500 in March. However you may want to get more specific. There are more days in January and March than February, so maybe you want to set a target of 600 for those months. Or maybe you typically get more website traffic in February (perhaps your business has a presence at a major trade show) so you decide to set a target of 800 in that month.
 
@@ -328,9 +328,9 @@ Notes:
   
 Notes:
 
-* Benchmarking is the process of comparing one’s business processes and performance metrics to industry bests and best practices from other companies. Dimensions typically measured are quality, time and cost. In the process of best practice benchmarking, management identifies the best firms in their industry, or in another industry where similar processes exist, and compares the results and processes of those studied (the “targets”) to one’s own results and processes. In this way, they learn how well the targets perform and, more importantly, the business processes that explain why these firms are successful.
+* Benchmarking is the process of comparing one's business processes and performance metrics to industry bests and best practices from other companies. Dimensions typically measured are quality, time and cost. In the process of best practice benchmarking, management identifies the best firms in their industry, or in another industry where similar processes exist, and compares the results and processes of those studied (the “targets”) to one's own results and processes. In this way, they learn how well the targets perform and, more importantly, the business processes that explain why these firms are successful.
 
-* Also referred to as “best practice benchmarking” or “process benchmarking”, this process is used in management and particularly strategic management, in which organizations evaluate various aspects of their processes in relation to best practice companies’ processes, usually within a peer group defined for the purposes of comparison. This then allows organizations to develop plans on how to make improvements or adapt specific best practices, usually with the aim of increasing some aspect of performance. Benchmarking may be a one-off event, but is often treated as a continuous process in which organizations continually seek to improve their practices.
+* Also referred to as “best practice benchmarking” or “process benchmarking”, this process is used in management and particularly strategic management, in which organizations evaluate various aspects of their processes in relation to best practice companies' processes, usually within a peer group defined for the purposes of comparison. This then allows organizations to develop plans on how to make improvements or adapt specific best practices, usually with the aim of increasing some aspect of performance. Benchmarking may be a one-off event, but is often treated as a continuous process in which organizations continually seek to improve their practices.
 
 ---
 
@@ -792,8 +792,8 @@ Notes:
 
 ## About Google
 
-* Google’s mission:
-* "To organize the world’s information and make it universally accessible and useful."
+* Google's mission:
+* "To organize the world's information and make it universally accessible and useful."
 * And in pursuing this mission, the company is very serious about using information to inform their decisions.
 * Founded by two engineers, Google is a company where:
   - data-driven insights are part of its DNA,
@@ -807,7 +807,7 @@ Notes:
 
 Data can provide much-needed answers, but only if you are clear about the questions you need to answer
 * Google aims to start with these questions and be very clear about the information it needs at the outset
-* As the company’s former executive chairman, Eric Schmidt, has said, “We run the company by questions, not by answers.”
+* As the company's former executive chairman, Eric Schmidt, has said, “We run the company by questions, not by answers.”
 * Within its global HR function, Google has created a people analytics department that enables the organization to make data-driven people decisions
 * One question Google wanted to answer was, “Do managers actually matter?” This is a question Google had been wrestling with for years; at one point, the company actually got rid of all managers and made everyone an individual contributor
 * This did not really work, and managers were brought back in, but the suspicion lingered that managers perhaps were not that important.
@@ -842,7 +842,7 @@ high-scoring manager, as well as the top three reasons why managers were struggl
 According to the findings, a high-scoring manager displayed the following eight characteristics:
 *  a good coach
 *  empowers the team, does not micromanage
-*  expresses interest / concern for team members’ success and personal wellbeing
+*  expresses interest / concern for team members' success and personal wellbeing
 *  productive and results-oriented
 *  a good communicator – listens and shares information
 *  helps with career development

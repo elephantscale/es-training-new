@@ -69,7 +69,7 @@ Password=myPassword;
 ```python
 import pymssql
 
-conn =  pymssql.connect(host='username\SQLEXPRESS’, 
+conn =  pymssql.connect(host='username\SQLEXPRESS', 
            user='username',password='pwd',database='master')
 ```
 <!-- {"left" : 0, "top" : 1.7, "height" : 1.79, "width" : 10.25} -->
@@ -152,7 +152,7 @@ Notes:
 
   * **pd.to_sql**  writes to db
 
-  * Index: Python will write the index unless you say (index=‘false’)
+  * Index: Python will write the index unless you say (index='false')
 
   * Many other `pd.to_*` type functions
 

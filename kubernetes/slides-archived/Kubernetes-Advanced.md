@@ -75,7 +75,7 @@ How ever, SDNs can get complicated to administer.
 
     - Containers can talk with each other if they are present in the same machine.
 
-    - For Docker containers to communicate across machines port allocation needs to be done on the parent machine’s own IP address.
+    - For Docker containers to communicate across machines port allocation needs to be done on the parent machine's own IP address.
 
 
 Notes:
@@ -124,7 +124,7 @@ Requests to the service IPs are intercepted by a kube-proxy process running on a
 
 External-to-Internal Communication
 Permitting external traffic into the cluster is finished mostly by mapping outside load balancers to explicitly uncovered services in the cluster. 
-This mapping permits the kube-intermediary procedure to course the external requests to the proper pods using the cluster’s pod-network. 
+This mapping permits the kube-intermediary procedure to course the external requests to the proper pods using the cluster's pod-network. 
 Once traffic arrives at a node, it is routed to the correct service backends via the kube-proxy.
 
 ---
@@ -169,7 +169,7 @@ Kubenet is a very basic network plugin, so if you are looking for features such 
 
 Flannel
 Flannel is a networking overlay fabric specifically designed for Kubernetes and created by CoreOS. 
-Flannel’s main advantage is it is well-tested and incurs a low cost. 
+Flannel's main advantage is it is well-tested and incurs a low cost. 
 Flannel distributes the full workload across the entire cluster. Kubernetes, for proper communication and for locating services, performs port-mapping and assigns a unique IP address to each pod.  
 
 Weave
@@ -200,7 +200,7 @@ Instructor Notes :
 Participant Notes :
 
 For the illustration of these requirements let us use a cluster with two cluster nodes.
-Nodes are in subnet 192.168.1.0/24 and pods use 10.1.0.0/16 subnet, with 10.1.1.0/24 and 10.1.2.0/24 used by node1 and node2 respectively for the pod IP’s.
+Nodes are in subnet 192.168.1.0/24 and pods use 10.1.0.0/16 subnet, with 10.1.1.0/24 and 10.1.2.0/24 used by node1 and node2 respectively for the pod IP's.
 
 So from above Kubernetes requirements following communication paths must be established by the network.
 

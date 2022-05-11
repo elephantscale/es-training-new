@@ -64,7 +64,7 @@ Notes:
 
   * Tokenization
     - Cut character sequence into word tokens
-      - Deal with **“John’s” , a state-of-the-art solution**
+      - Deal with **“John's” , a state-of-the-art solution**
   * Normalization
     - Map text and query term to same form
       - You want **U.S.A.** and **USA** to match
@@ -245,7 +245,7 @@ Notes:
   * Long, precise queries; proximity operators; incrementally developed; not like web search
   * Many professional searchers still like Boolean search
     - You know exactly what you are getting
-    - But that doesn’t mean it actually works better ... .
+    - But that doesn't mean it actually works better ... .
 
 Notes:
 
@@ -323,9 +323,9 @@ Notes:
 
  * e.g.,  *(*  **madding**  *OR*  **crowd**  *) AND (*  **ignoble**  *OR*  **strife**  *)* 
 
- * Get doc. freq.’s for all terms.
+ * Get doc. freq.'s for all terms.
 
- * Estimate the size of each  *OR*  by the sum of its doc. freq.’s (conservative).
+ * Estimate the size of each  *OR*  by the sum of its doc. freq.'s (conservative).
 
  * Process in increasing order of  *OR*  sizes.
 

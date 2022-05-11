@@ -156,10 +156,10 @@ Notes:
 
 ---
 
-## What’s your problem?
+## What's your problem?
 
   * So what is the problem with pure Lucene Query Parser?
-  * Users don’t know it!
+  * Users don't know it!
   * It throws an exception if syntax is broken
   * Enter **eDisMax** query parser
 

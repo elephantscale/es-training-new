@@ -57,7 +57,7 @@ Connect to the node02 server and run the kubeadm join command.
 Wait a few minutes and go back to the 'k8s-master' master cluster server and check the nodes and pods using the following command:
 kubectl get nodes 
 
-Now, you will get node01 and node02 has been added to the cluster with status 'ready’.
+Now, you will get node01 and node02 has been added to the cluster with status 'ready'.
 node01 and node02 have been added to the kubernetes cluster.
 
 ---
@@ -85,13 +85,13 @@ Instructor Notes :
 
 Participant Notes :
 
-State is a temporal property of a process. Stateless application process does not keep track of past interactions. It’s a purely functional behavior.
+State is a temporal property of a process. Stateless application process does not keep track of past interactions. It's a purely functional behavior.
 
 Stateful, on the other hand, retains and responds based on the previous interactions record
 
 Where the state is kept, that is, in main memory or persisted on disk, is a different question.
 
-Storage is a persistent way to keep data around.A process executed purely on data in main memory, there’s no disk I/O. If disk I/O is carried out, it might be read-only or in a read-write manner.
+Storage is a persistent way to keep data around.A process executed purely on data in main memory, there's no disk I/O. If disk I/O is carried out, it might be read-only or in a read-write manner.
 
 
 ---
@@ -193,7 +193,7 @@ For example, a frontend application is stateless.
   * Perform dynamic changes to the desired state through updates to the Deployment's Pod specification.
 
     - Stateless applications are in contrast to stateful applications:
-    - Stateless – Don’t use persistent storage to save data.
+    - Stateless – Don't use persistent storage to save data.
     - Stateful – Use persistent storage to save data.
 
 
@@ -301,7 +301,7 @@ These applications need unique, persistent identities and stable hostnames, so o
 
     - What applications should run inside its containers.
     - Which volumes should be mounted.
-    - The pod’s labels and selectors.
+    - The pod's labels and selectors.
 
   * StatefulSet ensures that the desired number of Pods are running and are available at all times
 
@@ -462,7 +462,7 @@ We can start and stop the application.
 
     - In this lab, you will get some practical experience with Kubernetes by learning how to set up a MongoDB database with a StatefulState.
 
-* **What you’ll learn**
+* **What you'll learn**
 
     - How to deploy a Kubernetes cluster, a headless service, and a StatefulSet.
     - How to connect a Kubernetes cluster to a MongoDB replica set.

@@ -34,7 +34,7 @@ Notes:
 
  * `C*` is optimized for **non-relational** data models
 
- * E.g, joins don’t work very well in distributed systems
+ * E.g, joins don't work very well in distributed systems
 
  * We need to learn to model data properly in `C*`
 
@@ -56,13 +56,12 @@ Notes:
 
  * Makes you think about “data model” rather than APIs 
 
-```text
+```sql
 -- CQL Examples
 
-Select * from movies;
+select * from movies;
 
-Select * from movies where code = ‘starwars’
-
+select * from movies where code = 'starwars';
 ```
 
 Notes: 
@@ -167,7 +166,7 @@ WITH replication = {
 ```
 <img src="../../assets/images/cassandra/replication.png"  style="width:40%;float:right;"/>
 
- * ‘SimpleStrategy’ is fine for evaluation purposes. (A single data center)
+ * 'SimpleStrategy' is fine for evaluation purposes. (A single data center)
 
 Notes: 
 
@@ -182,14 +181,14 @@ Notes:
 ```text
 CREATE KEYSPACE <name>
 WITH replication = {
-  'class': 'NetworkTopologyStrategy’,  'DC1': 3,   'DC2': 2};
+  'class': 'NetworkTopologyStrategy',  'DC1': 3,   'DC2': 2};
 
 ```
 <img src="../../assets/images/cassandra/Replication01.png"  style="width:50%;float:right;"/>
 
  * Each data center has its own replication factor
 
- * Use ‘NetworkTopology’ for production uses (even when using a single data center)
+ * Use 'NetworkTopology' for production uses (even when using a single data center)
 
 Notes: 
 
@@ -223,7 +222,7 @@ Notes:
 DROP KEYSPACE <name>;
 
 
--- doesn’t return an error if keyspace doesn’t exist
+-- doesn't return an error if keyspace doesn't exist
 DROP KEYSPACE IF EXISTS <name>;
 
 ```
@@ -456,7 +455,7 @@ Notes:
 ---
 
 
-## Myflix ‘Movies’ ‘Features’ Table
+## Myflix 'Movies' 'Features' Table
 
 
  * Lets create a “features” table with the following attributes:
@@ -482,10 +481,10 @@ Notes:
 
 ---
 
-## Myflix ‘Features’ Table
+## Myflix 'Features' Table
 
 
- * Let’s add a unique key called ‘code.’We will assign this for each movie.IMDB examples:
+ * Let's add a unique key called 'code.'We will assign this for each movie.IMDB examples:
 
      - “Star Wars: Force Awakens”http://www.imdb.com/title/tt2488496/
 
@@ -509,7 +508,7 @@ Notes:
 
 ---
 
-## Myflix ‘Features’ Table
+## Myflix 'Features' Table
 
 ```text
 create table features (    code text,    name text,    release_date timestamp,     type text,
@@ -517,13 +516,13 @@ create table features (    code text,    name text,    release_date timestamp,  
 
 ```
 
- * We are using ‘text’ type to represent strings
+ * We are using 'text' type to represent strings
 
- * We use ‘timestamp’ to represent for date
+ * We use 'timestamp' to represent for date
 
-     - Though ‘time stamp’ can be accurate up to seconds, we are only using the ‘date’ portion of it ( **2016-01-01** 00:00:00)
+     - Though 'time stamp' can be accurate up to seconds, we are only using the 'date' portion of it ( **2016-01-01** 00:00:00)
 
-     - Timestamp is Unix timestamp since ‘epoch’
+     - Timestamp is Unix timestamp since 'epoch'
 
 
 
@@ -542,15 +541,15 @@ INSERT INTO features (code, name, type, release_date)
 VALUES ('madmen', 'Mad Men', 'TV Show', '2010-01-01');
 
 INSERT INTO features (code, name, type, release_date)
-VALUES (‘star1’, ‘Star Wars Episode 1’, ‘Movie’ , ‘1999-01-01’);
+VALUES ('star1', 'Star Wars Episode 1', 'Movie' , '1999-01-01');
 
 ```
 
  * Syntax: **INSERT INTO** < table name > (column names)VALUES (column values)
 
- * Wrap string values in **single quotes** (example : ‘mad men’)
+ * Wrap string values in **single quotes** (example : 'mad men')
 
- * Timestamp can be entered in format: ‘yyyy-mm-dd HH:mm:ssZ’
+ * Timestamp can be entered in format: 'yyyy-mm-dd HH:mm:ssZ'
 
 Notes: 
 
@@ -564,7 +563,7 @@ Notes:
 
  *  **Overview:**
 
-     - Create ‘features’ table using CQL
+     - Create 'features' table using CQL
 
      - Insert some data
 
@@ -633,7 +632,7 @@ Notes:
 ## Insert with TTL Example
 
 
- * Insert a value into ‘features’ that disappears in seconds 
+ * Insert a value into 'features' that disappears in seconds 
 
  * TTL is specified in seconds
 
@@ -641,7 +640,7 @@ Notes:
 Cqlsh>
 
 	INSERT INTO features(code, name) 
-	VALUES(‘simp’, ‘The Simpsons’) 
+	VALUES('simp', 'The Simpsons') 
 	USING TTL 20;
 
 	select * from features;
@@ -668,19 +667,19 @@ Notes:
 
 INSERT INTO features (code, name, type, release_date)
 
-VALUES (’star1', ‘Star Wars : Episode 4', ’Movie', ’1977-01-01');
+VALUES ('star1', 'Star Wars : Episode 4', 'Movie', '1977-01-01');
 
 ```
 ```text
 
 INSERT INTO features (code, name, type, release_date)
 
-VALUES (’star1', ‘Star Wars : Episode 1', ’Movie', ’1999-01-01');
+VALUES ('star1', 'Star Wars : Episode 1', 'Movie', '1999-01-01');
 
 ```
 
 
- * What will be the value of row ‘star1’?
+ * What will be the value of row 'star1'?
 
  * How can we prevent the race condition?
 
@@ -711,12 +710,12 @@ Notes:
 
 -- first insert succeeds
 INSERT INTO features (code, name, type, release_date)
-VALUES (’star1', ‘Star Wars : Episode 4', ’Movie', ’1977-01-01’)
+VALUES ('star1', 'Star Wars : Episode 4', 'Movie', '1977-01-01')
 IF NOT EXISTS;
 
 -- second insert fails  (PK exists)
 INSERT INTO features (code, name, type, release_date)
-VALUES (’star1', ‘Star Wars : Episode 1', ’Movie', ’1999-01-01’)
+VALUES ('star1', 'Star Wars : Episode 1', 'Movie', '1999-01-01')
 IF NOT EXISTS;
 
 ```
@@ -732,7 +731,7 @@ Notes:
 ## Insert with Timestamp
 
 
- * Each cell has a ‘last modified’ timestamp.
+ * Each cell has a 'last modified' timestamp.
 
  * `C*` automatically populates this using current time (microseconds accuracy).
 
@@ -743,7 +742,7 @@ Notes:
  *  **Quiz**: **Why do we want to override timestamp?**
 
 ```text
-insert into features (code, name) values (‘sopr’, ‘The Sopranos’)  using timestamp 1404172800000;  // 2014-07-01 12:00:00  in microsecs
+insert into features (code, name) values ('sopr', 'The Sopranos')  using timestamp 1404172800000;  // 2014-07-01 12:00:00  in microsecs
 
 ```
 
@@ -767,7 +766,7 @@ Notes:
      - What does this mean?
 
 ```text
-insert into features (code, name) values (‘sopr’, ‘The Sopranos’)  using CONSISTENCY LOCAL_QUORUM ;
+insert into features (code, name) values ('sopr', 'The Sopranos')  using CONSISTENCY LOCAL_QUORUM ;
 
 -- checking default level
 cqlsh>  CONSISTENCY
@@ -792,7 +791,7 @@ Notes:
 ```text
 -- specifying multiple conditions
 
-insert into features (code, name) values (‘sopr’, ‘The Sopranos’)  using CONSISTENCY LOCAL_QUORUM
+insert into features (code, name) values ('sopr', 'The Sopranos')  using CONSISTENCY LOCAL_QUORUM
 AND TTL  86400;
 
 
@@ -859,9 +858,9 @@ Notes:
 ```text
 UPDATE features
 SET
-  studio = ‘HBO’
+  studio = 'HBO'
 WHERE
-  code = ‘sopr’;
+  code = 'sopr';
 
 ```
 
@@ -910,8 +909,8 @@ Notes:
 
 | Query                                                                  | RDBMS | `C*` |
 |------------------------------------------------------------------------|-------|----|
-| Update features set studio = ‘HBO’  </br> where code = ‘sopr’;         | ?     | ?  |
-| Insert into features (code, name)     </br>VALUES(‘star1’,‘star trek’) | ?     | ?  |
+| Update features set studio = 'HBO'  </br> where code = 'sopr';         | ?     | ?  |
+| Insert into features (code, name)     </br>VALUES('star1','star trek') | ?     | ?  |
 
 
 Notes: 
@@ -946,10 +945,10 @@ Notes:
 
 ```text
 -- deletes entire row
-delete from features where code = ‘simp’
+delete from features where code = 'simp'
 
--- only delete ‘studio’ column
-delete studio from features where code = ‘madmen’
+-- only delete 'studio' column
+delete studio from features where code = 'madmen'
 
 -- Deleting all rows
 -- There is no: delete * from table
@@ -995,9 +994,9 @@ Notes:
 ```text
 CREATE TABLE features (	code text,	name text,	type text,	release_date timestamp,	PRIMARY KEY(code)	);
 
-Select * from features where code = ‘madmen’;  // OK
+Select * from features where code = 'madmen';  // OK
 
-Select * from features where type = ‘TV Show’ ; // NOT OK
+Select * from features where type = 'TV Show' ; // NOT OK
 
 
 ```
@@ -1018,13 +1017,18 @@ Cqlsh >
 create index idx_type ON features (type);
 
 DESCRIBE table features;
-CREATE TABLE features (	code text,	….	);CREATE INDEX idx_type ON features (type);
+
+CREATE TABLE features (	code text,	...);
+
+CREATE INDEX idx_type ON features (type);
 
 -- Lets try the query again:
-select * from features where type = 'TV Show’; // works!
+select * from features where type = 'TV Show'; // works!
 
- code   | name     | release_date             | studio | type--------+----------+--------------------------+--------+--------- madmen | Mad Men2 | 2010-01-01 00:00:00+0000 |    AMC | TV Show   sopr | Sopranos | 2008-06-01 00:00:00+0000 |    HBO | TV Show
+```
 
+```console
+ 
 ```
 
 Notes: 
@@ -1120,7 +1124,7 @@ Notes:
 
  * Avoid indexing “highly volatile” columns (columns that are updated frequently)
 
- * Creating index on a VERY LOW cardinality column doesn’t make sense
+ * Creating index on a VERY LOW cardinality column doesn't make sense
 
      - E.g., GENDER
 

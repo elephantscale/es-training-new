@@ -4,7 +4,7 @@
 
 Google Analytics (GA) has become the premier tool for data analysis for web and app traffic. 
 It provides insight for Marketing Departments, Business Intelligence (BI), 
-site developers and others as to how the public is actually using a firm’s site. 
+site developers and others as to how the public is actually using a firm's site. 
 
 It is an essential plug-in to uncover where your visitors are coming from, 
 how they navigate a site, what demographics they belong to and much more.

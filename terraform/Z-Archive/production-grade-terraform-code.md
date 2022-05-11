@@ -16,8 +16,8 @@
 ---
 ## Goals
 
-* Your infrastructure won’t fall over if traffic goes up
-* Not lose your data if there’s an outage
+* Your infrastructure won't fall over if traffic goes up
+* Not lose your data if there's an outage
 * Not allow that data to be compromised when hackers try to break in
 * If that is not achieved
     * Your company can go out of business.
@@ -299,7 +299,7 @@ resource "aws_autoscaling_group" "example" {
 ---
 ## Output Variables
 
-* You’ll also want to add a couple of useful output variables to modules/cluster/asg-rolling-deploy/outputs.tf:
+* You'll also want to add a couple of useful output variables to modules/cluster/asg-rolling-deploy/outputs.tf:
 
     ```
     output "asg_name" {
@@ -758,14 +758,14 @@ modules
     * The Chef and other provisioners install, configure, and run on clients, which makes it easier to use configuration management tools
 
 * The advantages to User Data scripts are:
-    * You can use User Data scripts with ASGs, but Provisioners take effect only while Terraform is running and don’t work with ASGs at all
+    * You can use User Data scripts with ASGs, but Provisioners take effect only while Terraform is running and don't work with ASGs at all
     * The User Data script can be seen in the EC2 Console and you can find its execution log on the EC2 Instance itself, both of which are useful for debugging,neither of which is available with provisioners
 ---
 
 ## Provisioners with `null_resource`
 
 * Sometimes, you want to execute a provisioner without tying it to a specific resource
-* we can use a `null_resource` whichacts just like a normal Terraform resource, except that it doesn’t create anything
+* we can use a `null_resource` whichacts just like a normal Terraform resource, except that it doesn't create anything
     ```
     resource "null_resource" "example" {
          provisioner "local-exec" {
@@ -779,7 +779,7 @@ modules
 * The `null_resource` has an argument called triggers, which takes in a map of keys and values
     * Whenever the values change, the null_resource will be recreated
     * This forces any provisioners within it to be reexecuted
-    * For example, the uuid() built-in function, which returns a new, randomly generated UUID each time it’s called, within the triggers argument
+    * For example, the uuid() built-in function, which returns a new, randomly generated UUID each time it's called, within the triggers argument
   
     ```
     resource "null_resource" "example" {

@@ -7,7 +7,7 @@
 
 * Shared storage for state files
 
-* Limitations with Terraform’s backends
+* Limitations with Terraform's backends
 
 * Isolating state files
 
@@ -45,7 +45,7 @@
 
 * Every time you run Terraform
     * it can fetch the latest status of this EC2 Instance from AWS
-    * compare that to what’s in your Terraform configurations
+    * compare that to what's in your Terraform configurations
     * determine what changes need to be applied
   
 * Thus, the output of the `terraform plan` command is a diff 
@@ -195,7 +195,7 @@ Notes:
 ## Setting up the Locking Table
 
 * Next, a DynamoDB table to use for locking
-  * DynamoDB is Amazon’s distributed key–value store 
+  * DynamoDB is Amazon's distributed key–value store 
   * It supports strongly consistent reads and conditional writes
   
     ```
@@ -270,7 +270,7 @@ Notes:
 
 * A single S3 bucket and DynamoDB table can be shared across all your Terraform code
 
-* You’ll probably only need to do it once per AWS account
+* You'll probably only need to do it once per AWS account
 
 * After the S3 bucket exists, in the rest of your Terraform code, you can specify the backend configuration right from the start without any extra steps
 ---
@@ -309,13 +309,13 @@ Notes:
 
 * If you already have a Terraform module deployed
     * you want to do some experiments with it
-    * but you don’t want your experiments to affect the state of the already deployed infrastructure
+    * but you don't want your experiments to affect the state of the already deployed infrastructure
   
 * Run `terraform workspace new` to deploy a new copy of the exact same infrastructure, but storing the state in a separate file
 ---
 ## Workspace Specific Configurations
 
-* You can even change how that module behaves based on the workspace you’re in by reading the workspace name using the expression `terraform.workspace`
+* You can even change how that module behaves based on the workspace you're in by reading the workspace name using the expression `terraform.workspace`
   
     ```
     resource "aws_instance" "example" {
@@ -332,10 +332,10 @@ Notes:
   
 * Workspaces are not visible in the code or on the terminal unless you run terraform workspace commands
     * A module in one workspace looks exactly the same as a module deployed in 10 workspaces
-    * This makes maintenance more difficult, because you don’t have a good picture of your infrastructure
+    * This makes maintenance more difficult, because you don't have a good picture of your infrastructure
 
 * Workspaces can be fairly error prone
-    * The lack of visibility makes it easy to forget what workspace you’re in and accidentally make changes in the wrong one 
+    * The lack of visibility makes it easy to forget what workspace you're in and accidentally make changes in the wrong one 
   
 ---
 
@@ -535,7 +535,7 @@ Notes:
 
 * All Terraform data sources, like the data returned by terraform_remote_state, is read-only
     * Nothing in the webserver code can modify the state
-    * The database’s state data can be read with no risk to the database
+    * The database's state data can be read with no risk to the database
 
 * The output variables are stored in the state file can be read using an attribute reference of the form:
     ```

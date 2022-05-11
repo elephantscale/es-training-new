@@ -70,7 +70,7 @@ a de facto standard
     - reduce defects by 50%
     - reduce lead times by 60%
 
-* HP’s LaserJet Firmware
+* HP's LaserJet Firmware
     - time its developers spent on developing new features went from 5% to 40%
     - overall development costs were reduced by 40%
 
@@ -218,7 +218,7 @@ Source: 2016 State of DevOps Report
 * Terraform is an open source tool created by HashiCorp and written in the Go programming language
 * The Go code compiles down into a single binary called `terraform`
 * You can use this binary to deploy infrastructure from your laptop or a build server
-    *  You don’t need to run any extra infrastructure to make that happen
+    *  You don't need to run any extra infrastructure to make that happen
 * The `terraform` binary makes API calls on your behalf to one or more providers
     * AWS
     * Azure

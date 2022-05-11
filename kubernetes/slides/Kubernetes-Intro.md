@@ -119,13 +119,13 @@ As we mentioned above, it is easy to explain what the container orchestration do
 <img src="../../assets/images/kubernetes/3rd-party/helmsman-1.png" style="width:30%;float:right;clear:both;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
 
 * Open source project originally conceived by Google.
-    - Culminated from Google’s 15+ years of experience with containerized apps.
+    - Culminated from Google's 15+ years of experience with containerized apps.
 
 * Currently maintained by [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/)
 
 * Trivia
     - Kubernetes in Greek means **pilot Helmsman** of a ship
-    - Also called **K8s**; Abbreviation derived by replacing 8 letters of "ubernete" with ‘8’ and subsequent ‘s’.
+    - Also called **K8s**; Abbreviation derived by replacing 8 letters of "ubernete" with '8' and subsequent 's'.
 
 
 Notes:

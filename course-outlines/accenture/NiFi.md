@@ -41,7 +41,7 @@ April 2022
 ## Lab environment
 
 * A working environment will be provided for students.  Students would need a SSH client and a browser to access the cluster.
-* Zero Install: There is no need to install HBase software on students’ machines!
+* Zero Install: There is no need to install HBase software on students' machines!
 
 ## Course Outline
 

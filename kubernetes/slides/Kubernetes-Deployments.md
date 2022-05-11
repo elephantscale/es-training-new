@@ -823,7 +823,7 @@ Notes:
 
 Notes:
 
-Implemented as a control loop, Horizontal Pod Autoscaler with a period controlled by the controller manager’s `horizontal-pod-autoscaler-sync-period` flag (with a default value of 30 seconds)
+Implemented as a control loop, Horizontal Pod Autoscaler with a period controlled by the controller manager's `horizontal-pod-autoscaler-sync-period` flag (with a default value of 30 seconds)
 
 ---
 

@@ -21,7 +21,7 @@ Notes:
 | Framework         | Features                                                                                                                                     |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | **Light Weight**  |                                                                                                                                              |
-| **WSGI**          | - Python’s Web Server Gateway Interface (WSGI) is part of Python installation. - Very basic functionality. - Also look at Werkzeug framework. |
+| **WSGI**          | - Python's Web Server Gateway Interface (WSGI) is part of Python installation. - Very basic functionality. - Also look at Werkzeug framework. |
 | **Falcon**        | - Very fast - Bare bones functionality                                                                                                       |
 | **Flask**         | - Light weight - Got basic features                                                                                                          |
 |                   |                                                                                                                                              |

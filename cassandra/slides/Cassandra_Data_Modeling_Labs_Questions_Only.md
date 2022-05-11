@@ -56,7 +56,7 @@ Notes:
  * Analyze 
 
      - Your solution
-     - Instructor’s solution
+     - Instructor's solution
 
  * Discuss
 
@@ -350,11 +350,11 @@ Notes:
 
  * Many algorithms
 
- * ‘Collaborative filtering’ is one popular algorithm
+ * 'Collaborative filtering' is one popular algorithm
      - Two models: users & items
 
  * Quick example
-     - Recommend movies for ‘user α’
+     - Recommend movies for 'user α'
 
 Notes: 
 
@@ -370,13 +370,13 @@ Notes:
 
  * De-normalize for fast queries
 
-     - Don’t worry about storage... storage is cheap!
+     - Don't worry about storage... storage is cheap!
 
  * Q: Is Netflix a **read-heavy** or **write-heavy** application?
 
      - Hint: In prime time (8-11pm) **36%** Internet traffic in US is consumed by Netflix streaming!
 
-     - Probably **write-heavy** (all the devices sending ‘position’ data as movie is being watched)
+     - Probably **write-heavy** (all the devices sending 'position' data as movie is being watched)
 
      - Netflix is not serving actual movie content from `C*``C*` is not built for large files
 
@@ -454,7 +454,7 @@ Notes:
  * Videos cannot be identified by names or title (“my cat” is not unique)
 
  * Query:
-     - Query video by a unique ‘video_id’
+     - Query video by a unique 'video_id'
 
  * **Answer: Next Slide!**
 
@@ -628,9 +628,9 @@ Notes:
 
  * Part of Hadoop ecosystem
 
- * Works on ‘agent => and his hub’ model
+ * Works on 'agent => and his hub' model
 
- * Agents run on ‘log source’ and keep sending data upstream
+ * Agents run on 'log source' and keep sending data upstream
 
  * Can handle failures
 
@@ -690,7 +690,7 @@ Notes:
 
      - Find log events for a certain host (latest event first)
 
-     - Make sure partition size doesn’t get too big
+     - Make sure partition size doesn't get too big
 
  * **Answer: Next Slide!**
 

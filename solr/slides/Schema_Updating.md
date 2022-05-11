@@ -55,7 +55,7 @@ Notes:
 | `lang`            | En                                                                                                                                             |
 | `user_id`         | 99991234567890                                                                                                                                 |
 | `favorites_count` | 10                                                                                                                                             |
-| `Text`            | #Yummm :) Drinking a latte at Caffé Grecco in SF’s historic North Beach. Learning text analysis with #SolrInAction by @ManningBooks on my iPad |
+| `Text`            | #Yummm :) Drinking a latte at Caffé Grecco in SF's historic North Beach. Learning text analysis with #SolrInAction by @ManningBooks on my iPad |
 
 <!-- {"left" : 0.99, "top" : 1.2, "height" : 5.1, "width" : 8.26, "columnwidth" : [4.13, 4.13]} -->
 Notes:
@@ -171,7 +171,7 @@ Notes:
 
 ## Stored fields
 
-  * Fields that aren’t useful from a search perspective but are still useful for displaying search results
+  * Fields that aren't useful from a search perspective but are still useful for displaying search results
   * In Solr, these are called stored fields
   * Examples:
     - Editor of a book
@@ -314,7 +314,7 @@ Notes:
 
 ---
 
-## Let’s say we need to search for this
+## Let's say we need to search for this
 
  * `#Yummm :) Drinking a latte at Caffé Grecco in SF's historic North Beach... Learning text analysis with #SolrInAction by @ManningBooks on my i-Pad`
 
@@ -329,7 +329,7 @@ Notes:
 
 | User search text | Text in document |
 |------------------|------------------|
-| San Francisco    | SF’s             |
+| San Francisco    | SF's             |
 | north beach      | North Beach      |
 | Coffee           | latte, Caffé     |
 
@@ -357,10 +357,10 @@ Notes:
 
 | Raw text                | Transformation          | Solr technique                                                    |
 |-------------------------|-------------------------|-------------------------------------------------------------------|
-| All text                | Lowercased (SF’s->sf’s) | LowerCaseFilterFactory                                            |
+| All text                | Lowercased (SF's->sf's) | LowerCaseFilterFactory                                            |
 | a, at, in, with, by, on | Removed from text       | Very common terms called “stop words” removal – StopFilterFactory |
 | Drinking, learning      | drink, learn            | Stemming with KStemFilterFactory                                  |
-| SF’s                    | sf, san francisco       | Apostrophe s (’s) removed by WordDelimiterFilterFactory           |
+| SF's                    | sf, san francisco       | Apostrophe s ('s) removed by WordDelimiterFilterFactory           |
 
 
 <!-- {"left" : 0.55, "top" : 1.89, "height" : 3.72, "width" : 9.15, "columnwidth" : [2.43, 3.11, 3.61]} -->

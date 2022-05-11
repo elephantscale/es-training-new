@@ -268,7 +268,7 @@ $ curl -s http://kafka-connect:8083/connector-plugins
 ## High Availability with Debezium
 
   * make it tolerant to machine failures (both the upstream MySQL server, and Debezium, itself
-  * MySQL prior to version 5.6 modeled a replica’s location in its parent’s binlogs using a (binlog filename, file offset) tuple
+  * MySQL prior to version 5.6 modeled a replica's location in its parent's binlogs using a (binlog filename, file offset) tuple
   * MySQL 5.6, MySQL introduced the concept of global transaction IDs (GTIDs)
 configuration that needs to be called out is the gtid.source.includes
 
@@ -281,11 +281,11 @@ configuration that needs to be called out is the gtid.source.includes
 * Large table snapshots
 * Enhanced Monitoring
   - Debezium does expose metrics via JMX (see DBZ-134)
-  - KAFKA-2376 is the open JIRA that’s meant to address an underlying Kafka connect issue
+  - KAFKA-2376 is the open JIRA that's meant to address an underlying Kafka connect issue
 * More databases
 * Unify compatibility checks
   - Confluent schema registry runs schema compatibility checks out of the box
-  - Don’t have an equivalent check at the MySQL layer
+  - Don't have an equivalent check at the MySQL layer
 * Automatic topic configuration
 
 ---

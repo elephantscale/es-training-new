@@ -81,7 +81,7 @@ Notes:
 
 ---
 
-## What’s Wrong with Relational Databases?
+## What's Wrong with Relational Databases?
 
 
  * Nothing!
@@ -105,7 +105,7 @@ Notes:
 
 ---
 
-## What’s Wrong with Relational Databases?
+## What's Wrong with Relational Databases?
 
 
  * Most RDBMS are written for “single machine architecture”
@@ -228,7 +228,7 @@ Notes:
 
  * Flexible Data Model/Schema
 
-     - Relational model isn’t the best fit for all data models
+     - Relational model isn't the best fit for all data models
 
      - Flexible schema (or no schema)
 
@@ -304,7 +304,7 @@ Notes:
 
  * **I**solation
 
-     - Multiple transactions can execute in parallel, but they won’t interfere with each other
+     - Multiple transactions can execute in parallel, but they won't interfere with each other
 
  * **D**urability
 
@@ -340,7 +340,7 @@ Notes:
 
      - Or network gets partitioned?
 
- * Most NoSQLs don’t offer transactions
+ * Most NoSQLs don't offer transactions
 
 Notes: 
 
@@ -519,7 +519,7 @@ Notes:
 
  * **A**vailability: Can always read and write to system
 
- * **P**artition Tolerance: System keeps working even if replicas can’t talk to each other **‘split brain**’ scenario
+ * **P**artition Tolerance: System keeps working even if replicas can't talk to each other **'split brain**' scenario
 
  * CAP Theorem says we can have **2 of 3**
 
@@ -710,7 +710,7 @@ Notes:
 
  * select MAX(temp) from sensors;
 
- * Doesn’t work well for ‘select *’ queries
+ * Doesn't work well for 'select *' queries
 
      - Row stores work best for that
 

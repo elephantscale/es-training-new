@@ -6,7 +6,7 @@ March 18, 2022
 
 ## Overview
 
-Machine Learning (ML) is a game-changer and Microsoft Azure is the second-largest cloud computing provider.  Azure’s particular strength is in the usability and integration with the Microsoft stack.
+Machine Learning (ML) is a game-changer and Microsoft Azure is the second-largest cloud computing provider.  Azure's particular strength is in the usability and integration with the Microsoft stack.
 
 In this course, the students will get an overview of ML with Python and R, the two standard environments for ML. They will also learn the specifics of the Azure and the capabilities that it offers to ML developers.
 
@@ -50,7 +50,7 @@ Lectures and hands-on labs. (50%, 50%)
    - Establish Performance Metrics
    - Focus on Transparency to Gain Trust
    - Embrace Experimentation
-   - Don’t Operate in a Silo
+   - Don't Operate in a Silo
    - An Iterative and Time-Consuming Process
    - Feature Engineering
    - Algorithm Selection

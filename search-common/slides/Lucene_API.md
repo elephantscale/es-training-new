@@ -617,9 +617,9 @@ Notes:
         * Indexed fields may or may not be analyzed (i.e., tokenized with an Analyzer)
           * Non-analyzed fields view the entire value as a single token (useful for URLs, paths, dates, social security numbers, ...)
      - Be stored or not
-        * Useful for fields that you’d like to display to users
+        * Useful for fields that you'd like to display to users
      - Optionally store term vectors
-        * Like a positional index on the Field’s terms
+        * Like a positional index on the Field's terms
         * Useful for highlighting, finding similar documents, categorization
 
 Notes: 
@@ -765,7 +765,7 @@ Notes:
 
 ---
 
-## What’s inside an Analyzer?
+## What's inside an Analyzer?
 
 
  * Analyzers need to return a `TokenStream`:
@@ -807,7 +807,7 @@ Notes:
 ## Adding/deleting Documents to/from an IndexWriter
 
  * `void addDocument(Iterable<IndexableField> d);`
- * IndexWriter’s Analyzer is used to analyze document.
+ * IndexWriter's Analyzer is used to analyze document.
  *  Important: Need to ensure that Analyzers used at indexing time are consistent with Analyzers used at searching time
 
 ```java
@@ -895,7 +895,7 @@ IndexWriter writer = ...;
 DirectoryReader reader = 
     DirectoryReader.open(writer, true);
 IndexSearcher searcher = new IndexSearcher(reader);
-// Now let us say there’s a change to the index using writer
+// Now let us say there's a change to the index using writer
 writer.addDocument(newDoc);
 DirectoryReader newReader =
     DirectoryReader.openIfChanged(reader, writer, true);

@@ -1,4 +1,4 @@
-* What protocol are we talking about? Please give a link/some further details It’s actually about the protocol related with OSI model. OSI model is conceptual framework used to describe the functions of a networking system which is separated by 7 layers. The protocol means that the standard protocol using for communication in each OSI layer. Some example information you may see as link:
+* What protocol are we talking about? Please give a link/some further details It's actually about the protocol related with OSI model. OSI model is conceptual framework used to describe the functions of a networking system which is separated by 7 layers. The protocol means that the standard protocol using for communication in each OSI layer. Some example information you may see as link:
 
 http://jaredheinrichs.com/mastering-the-osi-tcpip-models.html
 

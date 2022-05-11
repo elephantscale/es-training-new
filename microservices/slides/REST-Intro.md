@@ -80,10 +80,10 @@ Roy Fielding articulated ReST in his dissertation at UC Irvine in 2000
 ## The Curl Command
 
 * A way to issue HTTP requests from the command line
-* From code, you’ll use whatever library you use for HTTP / REST in the same way.
+* From code, you'll use whatever library you use for HTTP / REST in the same way.
 
 ```bash
-curl –H “Content-Type: application/json” <URL> -d ‘<BODY>’
+curl –H “Content-Type: application/json” <URL> -d '<BODY>'
 ```
 
 ---
@@ -110,10 +110,10 @@ curl –H “Content-Type: application/json” <URL> -d ‘<BODY>’
 ## The Httpie Command
 
 * A way to issue HTTP requests from the command line
-* Simpler syntax than curl, defaults to ‘pretty’ output.
+* Simpler syntax than curl, defaults to 'pretty' output.
 
 ```text
-http <VERB> <URL> -d ‘<BODY>’
+http <VERB> <URL> -d '<BODY>'
 ```
 
 
@@ -204,7 +204,7 @@ Create a shell script that automatically passes JSON Content-Type to curl.
 
 Notes:
 
-Don’t do this in production, it is a hack that is only applicable to this course. 
+Don't do this in production, it is a hack that is only applicable to this course. 
 
 
 ---

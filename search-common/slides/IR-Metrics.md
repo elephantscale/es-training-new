@@ -95,7 +95,7 @@ SERP = Search Engine Results Page
 
 ## Precision
 
-  * **Precision**: Fraction of retrieved docs that are relevant to user’s information need
+  * **Precision**: Fraction of retrieved docs that are relevant to user's information need
     - In short, how much junk do I get?
   * More precisely, fraction of documents judge *relevant* to user's need.
 

@@ -7,7 +7,7 @@ February 04, 2022
 
 * Reactive systems have certain characteristics that make them ideal for low-latency, high-throughput workloads. Project Reactor and the Spring portfolio work together to enable developers to build enterprise-grade reactive systems that are responsive, resilient, elastic, and message-driven.
 
-* The course is intended for software developers and architects. It gives the participants a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student’s participation. 
+* The course is intended for software developers and architects. It gives the participants a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student's participation. 
 
 ## Benefits
 

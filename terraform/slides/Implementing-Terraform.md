@@ -257,7 +257,7 @@
 * Major differences are an indicator that things could get very bad, very fast
 
 * The golden rule:
-  * *The master branch of the live repository should be a 1:1 representation of what’s actually deployed in production*
+  * *The master branch of the live repository should be a 1:1 representation of what's actually deployed in production*
 
 ---
 ## The Trouble with Branches

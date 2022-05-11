@@ -59,7 +59,7 @@ The environment, where required, will be provided in the cloud.
     while public security organs are responsible for supervision and management of the
     cybersecurity multi-level protection scheme.          
 
-* Network Operators’ Security Protection Obligations
+* Network Operators' Security Protection Obligations
     - The MLPS Regulation
     provides more detailed requirements regarding the different levels of security obligations for network
     operators.

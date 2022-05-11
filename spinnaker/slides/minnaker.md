@@ -98,7 +98,7 @@ Minnaker performs the following actions when run on a single Linux instance:
 
 ## Changing Your Spinnaker Configuration
 
- * Run Halyard configuration commands. For example, the following command allows you to configure and view the current deployment of Spinnaker’s version.
+ * Run Halyard configuration commands. For example, the following command allows you to configure and view the current deployment of Spinnaker's version.
  * `hal config version`
  *  All Halyard configuration files are stored in `/etc/spinnaker/.hal`
  * When finished, use the `exit` command to leave the pod.

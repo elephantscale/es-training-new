@@ -70,7 +70,7 @@ Notes:
 
   * K-Means clustering is an unsupervised machine learning algorithm to find clusters in  unlabeled data (will be covered with machine learning)
 
-  * Let’s do a whiteboard analysis on K-Means clustering algorithm
+  * Let's do a whiteboard analysis on K-Means clustering algorithm
 
 Notes:
 
@@ -552,7 +552,7 @@ Notes:
 
 
   * To generate 2D sparse matrices
-  * The scipy.sparse package is great for times where we have a large matrix with very few items entered (It doesn’t make sense to store a huge matrix with all zeros or NAs)
+  * The scipy.sparse package is great for times where we have a large matrix with very few items entered (It doesn't make sense to store a huge matrix with all zeros or NAs)
 
 ```python
 >>> mtx = sparse.csr_matrix((3, 4), dtype=np.int8)

@@ -169,7 +169,7 @@ Notes:
 ## Device Secure Boot
 
 
- *  At each stage check that only the expected hardware is present and matches the stage’s configuration parameters
+ *  At each stage check that only the expected hardware is present and matches the stage's configuration parameters
 
  * Do not boot the next stage of device functionality until the previous stage has been successfully booted.
 
@@ -427,7 +427,7 @@ Notes:
 
      - Devices only install updates if they first verify the signature
 
- * The signature’s cryptographic key size and hash algorithms have sufficient cryptographic strength for the intended service life of the product
+ * The signature's cryptographic key size and hash algorithms have sufficient cryptographic strength for the intended service life of the product
 
  * The signature method chosen has a key provisioning method suitable for the intended manufacturing supply chain
 
@@ -510,7 +510,7 @@ Notes:
 
  * This is one of the goals of DevSecOps
 
-     - Security doesn’t apply to what we do but how we do it as well
+     - Security doesn't apply to what we do but how we do it as well
 
 Notes: 
 
@@ -770,7 +770,7 @@ Notes:
 
  * Security is not the responsibility of a “security team”
 
- * Just like quality, security is everyone’s responsibility
+ * Just like quality, security is everyone's responsibility
 
      - A security team, like a QA team, is a resource and coordinates security related concerns
 
@@ -835,7 +835,7 @@ Notes:
 
      - DevSecOps assumes continuous testing
 
- * Tiger teams are testing teams designed to act like an attacker and defeat the organization’s security measures
+ * Tiger teams are testing teams designed to act like an attacker and defeat the organization's security measures
 
      - Also referred to as red teams
 

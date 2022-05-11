@@ -41,10 +41,10 @@
 * **Amazon's Jeff Bezos API Mandate (year 2002?)**
     1. All teams will henceforth expose their data and functionality through service interfaces.
     2. Teams must communicate with each other through these interfaces.
-    3. There will be no other form of interprocess communication allowed: no direct linking, no direct reads of another team’s data store, no shared-memory model, no back-doors whatsoever. The only communication allowed is via service interface calls over the network.
-    4. It doesn’t matter what technology they use. HTTP, Corba, Pubsub, custom protocols — doesn’t matter.
+    3. There will be no other form of interprocess communication allowed: no direct linking, no direct reads of another team's data store, no shared-memory model, no back-doors whatsoever. The only communication allowed is via service interface calls over the network.
+    4. It doesn't matter what technology they use. HTTP, Corba, Pubsub, custom protocols — doesn't matter.
     5. All service interfaces, without exception, must be designed from the ground up to be externalizable. That is to say, the team must plan and design to be able to expose the interface to developers in the outside world. No exceptions.
-    6. <mark>Anyone who doesn’t do this will be fired.</mark>
+    6. <mark>Anyone who doesn't do this will be fired.</mark>
     7. Thank you; have a nice day!
 * [Reference](https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/)
 
@@ -188,7 +188,7 @@ are one way to solve that problem, and Containers are another.
 
 <img src="../../assets/images/docker/3rd-party/alone-513525_640.jpg" style="width:30%;float:right;" /> <!-- {"left" : 5.56, "top" : 1.56, "height" : 2.87, "width" : 4.49} -->
 
-* We’re ready to deploy to the server
+* We're ready to deploy to the server
 
 * Provision a new server 
     - Install OS
@@ -196,7 +196,7 @@ are one way to solve that problem, and Containers are another.
     - Install dependency libraries
     - Etc
 
-* Oops… doesn’t work. Why not?
+* Oops… doesn't work. Why not?
     - Missing file?
     - Wrong version? Path not right
 
@@ -225,9 +225,9 @@ Developers are famous for insisting that "It worked on my computer!"
 
 <img src="../../assets/images/generic/3rd-party/stop-and-pray.jpg" style="width:30%;float:right;" />
 
-* Fix all the problems, now it’s finally working!
+* Fix all the problems, now it's finally working!
 
-* Oops… Don’t Touch Anything!
+* Oops… Don't Touch Anything!
    - Might Break!
    - Change Environment?
    - Install Another App?
@@ -249,11 +249,11 @@ Instructor Notes :
 Participant Notes :
 
 
-Once we fix our problems, we’re by no means done.  Changes that happen can affect our application. If we install something else on the same server, it can break our application.  The problem is that there is no isolation.  One app on the server will affect others on the server.
+Once we fix our problems, we're by no means done.  Changes that happen can affect our application. If we install something else on the same server, it can break our application.  The problem is that there is no isolation.  One app on the server will affect others on the server.
 
-We often have to walk on tiptoes on our server to make sure that we don’t break something else.   Hosting two apps on the same server is a non-starter.
+We often have to walk on tiptoes on our server to make sure that we don't break something else.   Hosting two apps on the same server is a non-starter.
 
-The old Java maxim “Write Once, Run Anywhere” doesn’t really work.  Because, the Java app itself may run anywhere, but there’s so much else that comes into play that will either allow or prevent the app from working.
+The old Java maxim “Write Once, Run Anywhere” doesn't really work.  Because, the Java app itself may run anywhere, but there's so much else that comes into play that will either allow or prevent the app from working.
 
 ---
 
@@ -363,7 +363,7 @@ Instructor Notes :
 Participant Notes :
 
 
-Here we’re talking about the use case of taking all of our application components and delivering them all as a sealed unit, so that none of the components can be deployed without the others.
+Here we're talking about the use case of taking all of our application components and delivering them all as a sealed unit, so that none of the components can be deployed without the others.
 
 We are trying to communicate the value of having our application delivered as a whole.
 
@@ -398,7 +398,7 @@ Instructor Notes :
 Participant Notes :
 
 
-Virtualization has historically been the answer to these problems.  We’ll see in a minute the advantages and disadvantages of containerization versus virtualization
+Virtualization has historically been the answer to these problems.  We'll see in a minute the advantages and disadvantages of containerization versus virtualization
 
 Virtualization allows us to easily start, stop, and move VMs between machines, simplifies many of our deployment headaches.
 
@@ -550,7 +550,7 @@ Instructor Notes :
 
 Participant Notes :
 
-Here we compare the similarities and differences between the VM and the Container.  The main advantage of the container here is performance.  There’s minimal startup time for a container, and there’s no performance penalty to running on a container.
+Here we compare the similarities and differences between the VM and the Container.  The main advantage of the container here is performance.  There's minimal startup time for a container, and there's no performance penalty to running on a container.
 
 Note here that the filesystem, libraries, and other dependencies are handled very similarly for containers versus VMs – in both cases they are on the guest image rather than on the host.
 
@@ -632,7 +632,7 @@ Finally, built into the container architecture is their ability to work well tog
 | Multiple OS                     | VMs allow a single computer to run multiple OS, such as Linux, Windows, etc. For example, we could run a Windows Guest on a Linux Host. This is not possible with containers. |
 | Kernel-Level Isolation          | If you need various custom kernels or run kernel-level code, you need virtualization. Containers share the host kernel.                                                       |
 | Root or Privileged instructions | Containers can run root, but it only applies to root within the container and not outside.                                                                                    |
-| Tightly-Coupled Data            | When the application is tightly coupled to its own data, containers aren’t a good solution. This is not generally a good design principle, however.                           |
+| Tightly-Coupled Data            | When the application is tightly coupled to its own data, containers aren't a good solution. This is not generally a good design principle, however.                           |
 | Security Concerns               | Sharing the kernel means that kernel exploits in container will affect the host as well.  Containers should not be used for untrusted code execution.                         |
 
 
@@ -645,13 +645,13 @@ Participant Notes :
 
 There are a number of use cases NOT to use containers.  Here is some explanation:
 
-Multiple OS: One of the main use cases for desktop virtualization is to run various Operating Systems.   This can be because, say, Mac users want to run their favorite windows Application, or Windows users want to run something inside of Ubuntu Linux.  Containers don’t help in this regard, because they are mainly about sharing the host kernel. That said, we will see how docker will use a combination of virtualization and containerization on development platforms to allow running containers across different OS platforms.
+Multiple OS: One of the main use cases for desktop virtualization is to run various Operating Systems.   This can be because, say, Mac users want to run their favorite windows Application, or Windows users want to run something inside of Ubuntu Linux.  Containers don't help in this regard, because they are mainly about sharing the host kernel. That said, we will see how docker will use a combination of virtualization and containerization on development platforms to allow running containers across different OS platforms.
 
-Kernel Level Isolation.  Nothing can beat a VM’s isolation at the kernel level.  While it may be more efficient to share a kernel, it means we have to share the same kernel.  IF we want optional kernel modules in one app versus the other, only a VM can do that.
+Kernel Level Isolation.  Nothing can beat a VM's isolation at the kernel level.  While it may be more efficient to share a kernel, it means we have to share the same kernel.  IF we want optional kernel modules in one app versus the other, only a VM can do that.
 
-If we want to run privileged code, we can’t do that either in a VM or in a container.  Of course, in either case we can certainly run as root, but the results will only be seen inside the container or VM, and not outside.
+If we want to run privileged code, we can't do that either in a VM or in a container.  Of course, in either case we can certainly run as root, but the results will only be seen inside the container or VM, and not outside.
 
-If we have an application that is tightly coupled to its data, then containers will make life complicated.  What does it mean to be tightly coupled?  Let’s say, for example, that the application is designed to store data as local files in its run directory.  This is generally a really bad idea, but one that is extremely common.   Containers can complicated this because the app is generally designed to run from an immutable container image.  Changes to the state of the application are reserved fro changing the data, which we want in special attachable volumes.
+If we have an application that is tightly coupled to its data, then containers will make life complicated.  What does it mean to be tightly coupled?  Let's say, for example, that the application is designed to store data as local files in its run directory.  This is generally a really bad idea, but one that is extremely common.   Containers can complicated this because the app is generally designed to run from an immutable container image.  Changes to the state of the application are reserved fro changing the data, which we want in special attachable volumes.
 
 Security: Running untrusted code is not a good use case for containers.  While containers do make it more secure to do so than without the container, code run in the container which involves a kernel exploit will then affect the host kernel, and with it the running kernel for all other containers.    On the other hand, an exploit running in a VM can at worst give the attacker control of the kernel within the VM itself, and in most cases will leave the host untouched.
 
@@ -670,7 +670,7 @@ Security: Running untrusted code is not a good use case for containers.  While c
     - Inspired Solaris Zones, which combines jail with dedicated ZFS filesystem  
 * 2005: Linux namespaces: Process isolation
     - Segregate processes into groups
-    - Processes can’t talk between groups
+    - Processes can't talk between groups
 * 2007: Linux Cgroups: Resource Isolation
     - Control mem, CPU, resource allocation for running processes and groups
 

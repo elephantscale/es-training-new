@@ -306,8 +306,8 @@ In asymmetric cryptography, as the name suggests, one key is used to encrypt a m
 
 Notes:
 
-* Symmetric cryptography (which you studied in Chapters 6 and 7) has a serious problem. That problem is key exchange and the potential for compromise. Let’s look at an example to demonstrate. For some reason, all security and cryptography books like to use the fictitious characters Alice, Bob, and Eve to explain how asymmetric cryptography works, and I will continue that tradition here.
-* Let’s assume, then, that Alice would like to send Bob a message. But Alice is concerned that Eve might eavesdrop (thus her name!) on the communication. Now let’s further assume that they don’t have asymmetric cryptography—all they have are the symmetric ciphers. Further, Bob and Alice do not live in the same location, so how can they exchange a key so that they might encrypt messages? Any method (other than asymmetric cryptography) has the very real chance of being compromised, short of a secure/trusted courier manually taking the keys to the two parties. (If a courier was needed to exchange keys every time secure communication was required, then we would not have online banking, e-commerce, or a host of other useful technologies.)
+* Symmetric cryptography (which you studied in Chapters 6 and 7) has a serious problem. That problem is key exchange and the potential for compromise. Let's look at an example to demonstrate. For some reason, all security and cryptography books like to use the fictitious characters Alice, Bob, and Eve to explain how asymmetric cryptography works, and I will continue that tradition here.
+* Let's assume, then, that Alice would like to send Bob a message. But Alice is concerned that Eve might eavesdrop (thus her name!) on the communication. Now let's further assume that they don't have asymmetric cryptography—all they have are the symmetric ciphers. Further, Bob and Alice do not live in the same location, so how can they exchange a key so that they might encrypt messages? Any method (other than asymmetric cryptography) has the very real chance of being compromised, short of a secure/trusted courier manually taking the keys to the two parties. (If a courier was needed to exchange keys every time secure communication was required, then we would not have online banking, e-commerce, or a host of other useful technologies.)
 
 ---
 
@@ -317,7 +317,7 @@ Notes:
 * an electromechanical rotor mechanism that scrambles the 26 letters of the alphabet.
 * If plain text is entered, the lit-up letters are the encoded ciphertext. 
 * Entering ciphertext transforms it back into readable plaintext.
-* `‘SCIENCE IS AWESOME` => `MKSQER PO QAPEKRQ`
+* `'SCIENCE IS AWESOME` => `MKSQER PO QAPEKRQ`
 
 
 <img src="../artwork/Enigma_(crittografia)_-_Museo_scienza_e_tecnologia_Milano.jpg"  style="width:70%;"/><!-- {"left" : 3.57, "top" : 4.6, "height" : 3.39, "width" : 3.11} -->
@@ -340,9 +340,9 @@ Notes:
 
 Notes:
 
-* With public key/asymmetric cryptography, Alice will get Bob’s public key and use that to encrypt the message she sends to Bob. If Eve intercepts the message and gains access to Bob’s public key, that’s OK, because that key won’t decrypt the message. Only Bob’s private key will do so, and this he safeguards.
-* If Bob wants to respond to Alice, he reverses the process. He gets Alice’s public key and encrypts a message to her—a message that only her private key will decrypt.
-* Asymmetric cryptography solves the problem of key exchange. It does not impede security, even if literally every person on the planet has both Bob’s and Alice’s public keys. Those keys can be used only to encrypt messages to Bob and Alice (respectively) and cannot decrypt the messages. So as long as Bob and Alice keep their private keys secret, secure communication is achieved with no problems in key exchange.
+* With public key/asymmetric cryptography, Alice will get Bob's public key and use that to encrypt the message she sends to Bob. If Eve intercepts the message and gains access to Bob's public key, that's OK, because that key won't decrypt the message. Only Bob's private key will do so, and this he safeguards.
+* If Bob wants to respond to Alice, he reverses the process. He gets Alice's public key and encrypts a message to her—a message that only her private key will decrypt.
+* Asymmetric cryptography solves the problem of key exchange. It does not impede security, even if literally every person on the planet has both Bob's and Alice's public keys. Those keys can be used only to encrypt messages to Bob and Alice (respectively) and cannot decrypt the messages. So as long as Bob and Alice keep their private keys secret, secure communication is achieved with no problems in key exchange.
 * This basic concept of two keys—one key being public and another being private—is why this is often called public key cryptography. The term asymmetric cryptography is also used because the two keys are not the same—they are not symmetrical. Unfortunately, this is as far as many security courses go in explaining asymmetric cryptography—but, of course, we will be delving into the actual algorithms.
 
 ---
@@ -858,7 +858,7 @@ center (SOC) for investigation
 
 Notes:
 
-One of Vault’s most compelling features is its robust API, especially in organizations
+One of Vault's most compelling features is its robust API, especially in organizations
 adopting a DevOps culture or migrating applications to the public cloud. The goal is to have
 the majority of interactions take place through automation using the API directly. This form
 of interaction requires the entity (usually an application or host) to authenticate with Vault,
@@ -1071,7 +1071,7 @@ Notes:
 ## jq command
 
 * jq is a lightweight and flexible command-line JSON processor
-* shells such as Bash can’t interpret and work with JSON directly
+* shells such as Bash can't interpret and work with JSON directly
 * Installation for `jq`
   * [https://github.com/stedolan/jq/wiki/Installation](https://github.com/stedolan/jq/wiki/Installation)
 * To try,

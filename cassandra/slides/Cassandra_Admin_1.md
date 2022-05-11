@@ -74,7 +74,7 @@ Notes:
 
      - Easy install
 
-     - No need for ‘root / admin’ privileges
+     - No need for 'root / admin' privileges
 
  * RPM
 
@@ -236,7 +236,7 @@ Notes:
 
      - Commit log records every update / write
 
-     - Only read-back on node startup (not during ‘normal’ operation)
+     - Only read-back on node startup (not during 'normal' operation)
 
      - no need to be huge size, just fast to accommodate writes
 
@@ -265,7 +265,7 @@ Notes:
 
  * Very high IOPS
 
- * ‘no seek’ time  (costly operation on mechanical disks)
+ * 'no seek' time  (costly operation on mechanical disks)
 
  * Cost is coming down
 
@@ -346,18 +346,18 @@ Notes:
 
 ## Big Data Analytics With `C*`
 
- * `C*` is a NOSQL datastore that can store ‘Big Data’ (100s of TB)
+ * `C*` is a NOSQL datastore that can store 'Big Data' (100s of TB)
 
- * How ever its use case is **‘needle in a haystack’**
+ * How ever its use case is **'needle in a haystack'**
      - Query for a few rows at a time in billions of rows
 
- * It doesn’t support ‘bulk analytics’
+ * It doesn't support 'bulk analytics'
 
  * Example:
      - Imagine we are storing sensor readings in `C*`
      - We have billions of data points
      - OK queries:
-        * What is the latest temp for ‘sensor-1’
+        * What is the latest temp for 'sensor-1'
      - Not OK queries:
         * Find the average temp for ALL sensors for the month of June in 2015
         * Involves large data scan, not supported.
@@ -416,7 +416,7 @@ Notes:
 
  * `C*` enterprise has Hadoop intergration
 
- * `C*` acts as a ‘Hadoop / HDFS compatible file system’
+ * `C*` acts as a 'Hadoop / HDFS compatible file system'
 
  * Analyze data in `C*` using Hadoop analytics 
 
@@ -462,7 +462,7 @@ Notes:
 
 <img src="../../assets/images/cassandra/spark-high-level.png" style="width:60%; float:right;"/>
 
- * Apache Spark is a ‘second generation’ Big Data platform
+ * Apache Spark is a 'second generation' Big Data platform
 
  * Spark is a cluster, compute engine
 
@@ -485,7 +485,7 @@ Notes:
 
  * Spark works very well with `C*`
 
- * Spark & Cassandra are used heavily in ‘streaming workloads’.
+ * Spark & Cassandra are used heavily in 'streaming workloads'.
 
      - Spark reads data from a queue like Kafka
      - Inserts into `C*`
@@ -554,7 +554,7 @@ Notes:
 Image in slide from http://lambda-architecture.net/
 
 Spark can be used in multiple places in LA.
-Spark streaming can be used to consume data and push it to ‘batch layer’ and ‘real time layer’
+Spark streaming can be used to consume data and push it to 'batch layer' and 'real time layer'
 Spark Map Reduce can be used to update batch views
 Spark can run queries against batch layer and / or speed layer
 

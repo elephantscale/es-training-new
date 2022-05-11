@@ -99,8 +99,8 @@ https://www.wired.com/story/russia-solarwinds-hack-roundup/?redirectURL=https%3A
 * **walled garden**
 * All apps go through a strict Apple approval process
 * But when the most advanced hackers do succeed in breaking in
-    * Apple’s extraordinary defenses end up protecting the attackers themselves
-* "It’s a double-edged sword" - _Bill Marczak_
+    * Apple's extraordinary defenses end up protecting the attackers themselves
+* "It's a double-edged sword" - _Bill Marczak_
     
 ![](../images/pexels-mali-maeder-102104.jpg)
 

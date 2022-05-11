@@ -190,7 +190,7 @@ Ref:
 ## OST Intuitive Model
 
 
- * Using OSI to figure out why an application isn’t working
+ * Using OSI to figure out why an application isn't working
 
    - Layer 1: Physical
      - 	Is the network cable plugged in?

@@ -29,7 +29,7 @@ Image Credit: Rod Davison
 
 - Application of engineering product management to software
 - The lifecycle of a software product is defined to be:
-  - _“the entire time an organization spends money of the product from the initial idea to the end of the application’s life when it is no longer in use”_
+  - _“the entire time an organization spends money of the product from the initial idea to the end of the application's life when it is no longer in use”_
 - Three major milestones: idea, initial deployment, end-of-life
 - Three main areas of concern
   - _Governance:_ Making business decisions like when a product should be retired

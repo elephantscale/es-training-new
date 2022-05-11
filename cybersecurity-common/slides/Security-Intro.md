@@ -189,7 +189,7 @@
 ## Contingency plans
 
 * Hacker advice to victims:
-  * Don’t hire help! Or else it will go even worse for you
+  * Don't hire help! Or else it will go even worse for you
   * __Do you believe it?__
 
 1. Have a plan. (Such as off-line backup.)Test it!

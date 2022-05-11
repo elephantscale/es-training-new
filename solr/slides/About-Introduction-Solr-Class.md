@@ -121,7 +121,7 @@ Notes:
 ## I Will Show You How To Fly!
 
   * Solid theory.
-  * You will get plenty of ‘flight time’.
+  * You will get plenty of 'flight time'.
   * Tell you about real world examples.
   * And best practices ...
 
@@ -215,7 +215,7 @@ Notes:
 
   * Solr in Action by Trey Grainger and Timothy Potter
 and...
-  * ‘Hadoop illuminated’ – open source Hadoop book at http://hadoopilluminated.com/ 
+  * 'Hadoop illuminated' – open source Hadoop book at http://hadoopilluminated.com/ 
 
 
 Notes:
@@ -225,7 +225,7 @@ Notes:
 
 ## Class Logistics
 
-  * Instructor’s email: 
+  * Instructor's email: 
   * Slides are here: Adobe Connect
   * Labs are here: Adobe Connect download
   * Servers: will be assigned

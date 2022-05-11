@@ -81,7 +81,7 @@ res0: String = HELLO WORLD
 </br>
 
 * What is **`res0`** ?
-    - If we don’t assign the result of your expression to a variable, the REPL automatically creates variables that start with the name **`res`**. The first variable is **`res0`**, the second one is **`res1`**, etc.:
+    - If we don't assign the result of your expression to a variable, the REPL automatically creates variables that start with the name **`res`**. The first variable is **`res0`**, the second one is **`res1`**, etc.:
 
 * Try it:
 
