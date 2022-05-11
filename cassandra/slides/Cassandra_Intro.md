@@ -135,7 +135,7 @@ Notes:
 
      - No "master"/"slave" design
 
-     - “Ring" design
+     - "Ring" design
 
  * No single master
 
@@ -268,7 +268,7 @@ Notes:
 
  * Amazon AWS, Google Cloud, Cloudstack ...etc.
 
- * Cloud gives you “unlimited” scale
+ * Cloud gives you "unlimited" scale
 
  * Netflix is a big user of ``C*`` on Amazon Cloud
 
@@ -490,7 +490,7 @@ Notes:
 ## Sparse Tables
 
 
- * Unlike RDBMS, Cassandra is built for “sparse” rows
+ * Unlike RDBMS, Cassandra is built for "sparse" rows
 
 </br>
 
@@ -517,7 +517,7 @@ Notes:
 ## Timestamp of Cell
 
 
- * `C*` tracks “last modification” time for each column automatically.  
+ * `C*` tracks "last modification" time for each column automatically.  
 
  * This timestamp is stored along side with data.
 
@@ -745,7 +745,7 @@ Notes:
 
 Murmur Hash algorithm: https://en.wikipedia.org/wiki/MurmurHash
 Murmur code repository: https://github.com/aappleby/smhasher
-Murmur3 is the new default hashing algorithm.  It provides faster hashing & improved performance over its predecessor “RandomPartitioner.” 
+Murmur3 is the new default hashing algorithm.  It provides faster hashing & improved performance over its predecessor "RandomPartitioner." 
 
 
 ---
@@ -756,9 +756,9 @@ Murmur3 is the new default hashing algorithm.  It provides faster hashing & impr
 
  * Rows are distributed across nodes as partitions
 
- * Placement is determined by “hashing”
+ * Placement is determined by "hashing"
 
- * “Subsequent” rows may not be stored together on the same node.
+ * "Subsequent" rows may not be stored together on the same node.
 
      - Hashing can place them on different nodes
 
@@ -779,7 +779,7 @@ Notes:
 
  * `C*` creates multiple replicas on different nodes
 
- *  **“Replication Factor”**  decides the number of copies (default 3 copies)
+ *  **"Replication Factor"**  decides the number of copies (default 3 copies)
 
  * RF is set at KeySpace level
 
@@ -801,7 +801,7 @@ Notes:
 
  * The first replica is determined by partitioner
 
- * Places other replicas on next nodes around the ring walking “clockwise”
+ * Places other replicas on next nodes around the ring walking "clockwise"
 
  * Doesn't consider network topology
 
@@ -951,11 +951,11 @@ Notes:
 
  * CAP Theorem is in effect again
 
- * Strong consistency in a distributed system will mean “locking” and “blocking”
+ * Strong consistency in a distributed system will mean "locking" and "blocking"
 
-     - Writers “lock” the data they are updating
+     - Writers "lock" the data they are updating
 
-     - All readers attempting to read the data “block” till lock is released
+     - All readers attempting to read the data "block" till lock is released
 
  * Locking and Blocking will reduce data throughput
 
@@ -1029,7 +1029,7 @@ Consistency = ALL, client will wait for all replicas to be created.
 
  * Client connects to any node
 
-     - This becomes the “co-ordinator” node
+     - This becomes the "co-ordinator" node
 
  * RF = 3
 
@@ -1037,7 +1037,7 @@ Consistency = ALL, client will wait for all replicas to be created.
 
      - The first replica is determined by the partitioner (hash)
 
-     - Walks the ring “clockwise” to find replicas
+     - Walks the ring "clockwise" to find replicas
 
  * Consistency = ALL
 
@@ -1243,7 +1243,7 @@ And the correct values are pushed to all out-of-date nodes.
 ## Repair on Read
 
 
- * Reconciled values are pushed out to “out-of-date” replicas
+ * Reconciled values are pushed out to "out-of-date" replicas
 
  * Only replicas that are read will be updated
 
@@ -1423,7 +1423,7 @@ Notes:
 
  * 3) What if coordinator node goes down?
 
- * 4) “Good data turning bad”
+ * 4) "Good data turning bad"
 
 Notes: 
 
@@ -1470,13 +1470,13 @@ Node 4 will store the hints and forward them to node 3 when it comes back up.
 
  * How about data that is never read?
 
- * “Bad things happen to good data”
+ * "Bad things happen to good data"
 
      - A disk corruption changes data value
 
  * Anti-Entropy-Service 
 
-     - Run periodically to ensure “good data remains good”
+     - Run periodically to ensure "good data remains good"
 
  * Summary
 
