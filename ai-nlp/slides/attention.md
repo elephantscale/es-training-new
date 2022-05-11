@@ -264,7 +264,7 @@ Notes:
 
  *  **Scaled Dot-Product Attention**
  *  Dot-product attention is identical to the algorithm in this paper that call:
-    -  **“Scaled Dot-Product Attention”**
+    -  **"Scaled Dot-Product Attention"**
  *   **Input:**
     -  **Queries** and  **keys** of dimension 𝑑<sub>𝑘 and  **values** of dimension 𝑑<sub>𝑣
 

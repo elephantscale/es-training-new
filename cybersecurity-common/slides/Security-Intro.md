@@ -141,8 +141,8 @@
 
 ## "Interbe" - Everything is connected
 * President Biden asks Putin not to attack critical infrastructure
-  * Ransomware hacker tell wheat producers “you are not critical infrastructure”
-  * If one team listens, another will come in: “Market economy!
+  * Ransomware hacker tell wheat producers "you are not critical infrastructure"
+  * If one team listens, another will come in: "Market economy!
 
 ![](../images/sec-intro-05.png)
 

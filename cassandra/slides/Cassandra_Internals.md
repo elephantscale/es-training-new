@@ -509,7 +509,7 @@ Notes:
 
  * Token value range is very large:  -2^63 to 2^64-1 
 
- * Each node in the cluster “owns” a set of tokens
+ * Each node in the cluster "owns" a set of tokens
 
  * Partition key's token maps to ONE node 
 

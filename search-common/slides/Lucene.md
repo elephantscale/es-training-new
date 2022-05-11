@@ -83,7 +83,7 @@ Engine image: https://wonderopolis.org/wonder/how-does-an-engine-work
 * https://wiki.apache.org/lucene-java/
   - Wiki
 * https://wiki.apache.org/lucene-java/PoweredBy
-  - Powered by Lucene”
+  - Powered by Lucene"
     - Almost 300 entries
     - Stopped adding in 2015 (became commodity)
 
@@ -376,8 +376,8 @@ Notes:
 
 * eDiscovery
   - Company P (Plaintiff) has a problem with company D (Defendant)
-  - Company P asks for “all documents that are related to the lawsuit” from D
-  - This is called “discovery” or “eDiscovery”
+  - Company P asks for "all documents that are related to the lawsuit" from D
+  - This is called "discovery" or "eDiscovery"
   - Company P also produces a list of key words that it wants to search
 
 
@@ -391,7 +391,7 @@ Notes:
 * After P and D agree (with the help of a judge) to the list of key words
 * Company D has to do eDiscovery
   - Collect data from custodians
-  - “Process the data” – that is, index it
+  - "Process the data" – that is, index it
   - Run review (privilege, counsel-client, responsive)
   - Produce
 

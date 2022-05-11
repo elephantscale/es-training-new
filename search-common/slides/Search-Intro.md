@@ -65,7 +65,7 @@ Notes:
 
 * IR returns relevant information
 * Usually it is ranked by relevance
-  - Such as “What do we have related to this case”
+  - Such as "What do we have related to this case"
 * By contrast, SQL returns ALL of the data
 * `SELECT * FROM * MY_BOOKS`
 
@@ -106,7 +106,7 @@ Customers ask: Why can't I search my database in the same way?
 
  * IR vs. databases:Structured vs unstructured data
 
- * Structured data tends to refer to information in “tables”
+ * Structured data tends to refer to information in "tables"
 
 | Employee | Manager | Salary |
 |----------|---------|--------|
@@ -138,7 +138,7 @@ Notes:
 
      - Keyword queries including operators
 
-     - More sophisticated “concept” queries e.g.,
+     - More sophisticated "concept" queries e.g.,
 
         * find all web pages dealing with  *drug abuse*
 
@@ -153,13 +153,13 @@ Notes:
 ## Semi-structured data
 
 
- * In fact almost no data is “unstructured”
+ * In fact almost no data is "unstructured"
 
  * E.g., this slide has distinctly identified zones such as the  *Title*  and  *Bullets*
 
      -  ... to say nothing of linguistic structure
 
- * Facilitates “semi-structured” search such as
+ * Facilitates "semi-structured" search such as
 
      -  *Title*  contains data AND  *Bullets*  contain search
 

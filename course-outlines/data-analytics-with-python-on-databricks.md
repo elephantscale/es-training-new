@@ -52,7 +52,7 @@ Beginner to Intermediate
 * IDEs
 * Using Jupyter notebooks. 
 * Basic Python Functions (including loops and for-loops)
-* Python statements (“if” and “then”)
+* Python statements ("if" and "then")
 * https://github.com/andela/fizz-buzz-lab
 
 

@@ -227,7 +227,7 @@ Image Credit:https://www.slideshare.net/Nerdio/20-cloud-computing-quotes-you-can
 
 <img src="../assets/images/digital-transformation/3rd-party/devops-loop-illustrations.png" style="width:50%;" />
 
->“DevOps represents a change in IT culture, focusing on rapid IT service delivery through the adoption of agile, lean practices in the context of a system-oriented approach.”
+>"DevOps represents a change in IT culture, focusing on rapid IT service delivery through the adoption of agile, lean practices in the context of a system-oriented approach."
 
 
 Notes:
@@ -242,7 +242,7 @@ Quote Credit: https://www.gartner.com/en/information-technology/glossary/devops
 
 <img src="../assets/images/digital-transformation/3rd-party/devops-loop-illustrations.png" style="width:50%;" />
 
->“ DevOps emphasizes people (and culture), and seeks to improve collaboration between operations and development teams. DevOps implementations utilize technology— especially automation tools that can leverage an increasingly programmable and dynamic infrastructure from a life cycle perspective.”
+>" DevOps emphasizes people (and culture), and seeks to improve collaboration between operations and development teams. DevOps implementations utilize technology— especially automation tools that can leverage an increasingly programmable and dynamic infrastructure from a life cycle perspective."
 
 
 Notes:

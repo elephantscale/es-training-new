@@ -6,7 +6,7 @@
 
 * Trends
   * As data collection and analysis become more important
-  * IT and OT converge to enable “big data” initiatives
+  * IT and OT converge to enable "big data" initiatives
 * Directions
   * it has become necessary to reassess cybersecurity best practices 
   * for protecting OT
@@ -27,12 +27,12 @@ by MissionSecure company
 * Operational technology (OT) cybersecurity references 
   * software, hardware, practices, personnel, and services
   * deployed to protect operational technology infrastructure, people, and data.
-* IT and OT converge to enable “big data”
+* IT and OT converge to enable "big data"
 
 Notes:
 
   * As data collection and analysis become
-    more important, and as IT and OT converge to enable “big data” initiatives, it has become necessary to reassess
+    more important, and as IT and OT converge to enable "big data" initiatives, it has become necessary to reassess
     cybersecurity best practices for protecting OT.
 
 ---
@@ -122,8 +122,8 @@ Notes:
 systems (ICS). However, the use of the term operational technology (OT), in contradistinction to IT, has become
 popular in recent years. The analyst firm Gartner defines OT as...
 * This definition makes it clear that the distinction between OT and ICS is not so much in the core functionality of OT
-  but more in the recognition of an evolving definition of “asset-centric” enterprises, with OT now finding application far
-  beyond the traditional “industrial” industries where ICS has found a home for the last 50 years.
+  but more in the recognition of an evolving definition of "asset-centric" enterprises, with OT now finding application far
+  beyond the traditional "industrial" industries where ICS has found a home for the last 50 years.
 
 ---
 

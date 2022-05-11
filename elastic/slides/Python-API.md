@@ -93,7 +93,7 @@ es.indices.refresh()
 ## Python - Tags
 
 * Exercise
-  - write a script to import the tags.csv  data from ml-latest-small into a new  “tags” index.
+  - write a script to import the tags.csv  data from ml-latest-small into a new  "tags" index.
 
 ---
 

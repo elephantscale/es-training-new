@@ -195,7 +195,7 @@
     * *modules/cluster/asg-rolling-deploy* - A generic, reusable, standalone module for deploying an ASG that can do a zero-downtime, rolling deployment
     * *modules/networking/alb* - A generic, reusable, standalone module for deploying an ALB
     * *modules/services/hello-world-app* -
-    A module specifically for deploying the “Hello, World” app
+    A module specifically for deploying the "Hello, World" app
   
 ---
 ## Composable Modules 
@@ -341,7 +341,7 @@ resource "aws_autoscaling_group" "example" {
 ---
 ## Creating the "Hello World" App
 
-* The last step is to convert the `webserver-cluster` module into a hello-world-app module that can deploy a “Hello, World” app using the `asg-rolling-deploy` and `alb` modules
+* The last step is to convert the `webserver-cluster` module into a hello-world-app module that can deploy a "Hello, World" app using the `asg-rolling-deploy` and `alb` modules
 
 * The resources left in `module/services/hello-world-app/main.tf` are:
     * `template_file` (for User Data)
@@ -466,13 +466,13 @@ resource "aws_autoscaling_group" "example" {
 ---
 ## Module Composition
 
-* Composition us building up more complicated behavior for the “Hello, World” app from simpler parts (ASG and ALB modules)  
+* Composition us building up more complicated behavior for the "Hello, World" app from simpler parts (ASG and ALB modules)  
   
 * A fairly common pattern in Terraform is that an configuration will have at least two types of modules:
   
 * **Generic modules**: the basic building blocks of Terraform code, reusable across a wide variety of use cases
   
-* **Use-case-specific modules**: Combines multiple generic modules with some specific "glue" code to serve one specific use case such as deploying the “Hello, World” app
+* **Use-case-specific modules**: Combines multiple generic modules with some specific "glue" code to serve one specific use case such as deploying the "Hello, World" app
 
 ---
 ## Testable Modules

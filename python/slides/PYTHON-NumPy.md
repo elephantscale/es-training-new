@@ -99,7 +99,7 @@ Notes:
 
     - Good for storing small data
     - Not good for multi-dimensional data.
-    - Very slow ”at scale”
+    - Very slow "at scale"
 
 ```python
 # A Simple List
@@ -340,7 +340,7 @@ Notes:
 
 ## Upcasting
 
-  * When mixing types on arrays, results are  always “Upcasted”
+  * When mixing types on arrays, results are  always "Upcasted"
 
     - Upcasting order: int -> float -> complex
 
@@ -508,7 +508,7 @@ Notes:
 
 ## Slicing
 
-  * Syntax: `<npArray>[m : n : i]` – NumPy slices the array from index **“m”** to index **“n-1”** while incrementing the index by **“i”**
+  * Syntax: `<npArray>[m : n : i]` – NumPy slices the array from index **"m"** to index **"n-1"** while incrementing the index by **"i"**
 
 
 ```python
@@ -622,9 +622,9 @@ Notes:
 >>> a
 array([[-3, -2, -1, 0, 1],
        [2, 3, 4, 5, 6]])
->>> print(str(np.min(a))+“ at pos ”+str(np.argmin(a)))
+>>> print(str(np.min(a))+" at pos "+str(np.argmin(a)))
 -3 at pos 0
->>> print(str(np.max(a))+“ at pos ”+str(np.argmax(a)))
+>>> print(str(np.max(a))+" at pos "+str(np.argmax(a)))
 6 at pos 9
 >>> np.mean(a)
 1.5

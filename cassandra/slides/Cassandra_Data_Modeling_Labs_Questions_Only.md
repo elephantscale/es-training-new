@@ -194,7 +194,7 @@ Notes:
 
 <img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
 
- * How can we store “release dates” in movie table?
+ * How can we store "release dates" in movie table?
 
      - (theatrical_release, date1)
 
@@ -263,12 +263,12 @@ Notes:
 
  * A user has multiple devices (TV, tablet, phone, computer)
  * Devices belong to one user
- * Classic “one to many” relationship
+ * Classic "one to many" relationship
  * Device attributes:
 
      - Device_id (something unique)
      - MAC address
-     - Description (“my phone”)
+     - Description ("my phone")
      - Device Type (phone/tv/tablet/set-top)
      - Device belongs to ONE user
 
@@ -451,7 +451,7 @@ Notes:
      - Upload_time
      - Tags
 
- * Videos cannot be identified by names or title (“my cat” is not unique)
+ * Videos cannot be identified by names or title ("my cat" is not unique)
 
  * Query:
      - Query video by a unique 'video_id'
@@ -565,7 +565,7 @@ Notes:
 
  * Leave comments
 
- * “Like” items 
+ * "Like" items 
 
  * Queries
 
@@ -658,8 +658,8 @@ Notes:
 
  * Data is organized as topics
 
-     - “emails”
-     - “clicks”
+     - "emails"
+     - "clicks"
 
  * Built for high throughput
 

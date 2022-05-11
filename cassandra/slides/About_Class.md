@@ -117,9 +117,9 @@ Notes:
 ## Recommended Books / Resources
 
 
- * “Cassandra: The Definitive Guide,” by Jeff Carpenter, Eben Hewitt
+ * "Cassandra: The Definitive Guide," by Jeff Carpenter, Eben Hewitt
 
- * “Learning Apache Cassandra” by Mat Brown
+ * "Learning Apache Cassandra" by Mat Brown
 
  * Datastax Academy: https://academy.datastax.com 
 

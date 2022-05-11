@@ -10,7 +10,7 @@
     - 5000 + packages !!
 
   * Installing a package:
-    - `pip install ”package name”`
+    - `pip install "package name"`
     - example: `pip install numpy`
 
   * In Spyder check 'package' section

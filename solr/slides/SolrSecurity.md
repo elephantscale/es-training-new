@@ -257,9 +257,9 @@ Notes:
   - Generate/obtain a certificate 
   – Convert to PEM format using OpenSSL tools 
   – Add the passwords, paths to keystore file to `bin/solr.in.sh` 
-  – Set a cluster property “urlScheme” to https in ZK 
+  – Set a cluster property "urlScheme" to https in ZK 
   – Start Solr 
-* Might need “haveged” on Vms 
+* Might need "haveged" on Vms 
 * ZooKeeper does not support SSL 
  
 Notes:

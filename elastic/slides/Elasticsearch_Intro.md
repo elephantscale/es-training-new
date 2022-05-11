@@ -334,7 +334,7 @@ Inverted means we are mapping things searching for, to documents searching in.
 Inverted index is the mechanism by which all search engines work. 
 Say we have 2 documents, inverted index doesn't store them directly, it flips on head
 each document split up into individual search terms, split up by each word, lowercased to normalize 
-maps each search term to documents they occur within. Here we can see “Space” shows up in document1 and document2.
+maps each search term to documents they occur within. Here we can see "Space" shows up in document1 and document2.
 
 ---
 
@@ -348,11 +348,11 @@ of a term in a document
 Notes:
 
 How do I deal with concept of relevance?  
-If I search for the word ”the” how do I make sure it returns documents where “the” is relevant?
+If I search for the word "the" how do I make sure it returns documents where "the" is relevant?
 TF-IDF 
-Term Frequency is how often a word appears in a document, “the” “of” “space” etc.. 
+Term Frequency is how often a word appears in a document, "the" "of" "space" etc.. 
 Document Frequency: How often a term appears in all documents in index.
- ”Space” doesn't appear often in index, but “the” does.  
+ "Space" doesn't appear often in index, but "the" does.  
 Divide Term Frequency by Document Frequency gives us measure of relevance.
 How special is this term to this document? How often does it occur in this doc? How often does it occur in all documents?
 
@@ -471,7 +471,7 @@ Notes:
 * Atomic updates with optimistic concurrency
 * Real-time get (before commit)
 * Write durability using a transaction log
-* Automatic sharding and replication using “ZooKeeper”
+* Automatic sharding and replication using "ZooKeeper"
 
 
 

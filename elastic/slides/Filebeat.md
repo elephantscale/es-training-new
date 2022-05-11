@@ -8,7 +8,7 @@
 
 * Filebeat can optionally talk directly to elasticsearch. when using logstash, elasticsearch is just one of many  possible destinations!
 
-* Logstash and filebeat can communicate to  maintain “backpressure” when things back up
+* Logstash and filebeat can communicate to  maintain "backpressure" when things back up
 
 * Filebeat maintains a read pointer on the logs.  every log line acts like a queue.
 
@@ -20,7 +20,7 @@
 ## This is Called the Elastic Stack
 
 
-* prior to beats, you'd hear about the “ELK stack” – Elasticsearch, Logstash, Kibana.
+* prior to beats, you'd hear about the "ELK stack" – Elasticsearch, Logstash, Kibana.
 
 
 

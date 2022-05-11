@@ -145,7 +145,7 @@ This may also be found at: /home/ubuntu/.jenkins/secrets/initialAdminPassword
 
 * Use the password you just copied to unlock Jenkins.  Click **Save and Finish** to complete.
 
-* The next screen you will see is “Customize Jenkins” allowing you to select and install plugins. Choose the option on the left, **Install suggested plugins**.
+* The next screen you will see is "Customize Jenkins" allowing you to select and install plugins. Choose the option on the left, **Install suggested plugins**.
 
 
 * Pay attention to the plugins that are being installed. Then create the first user named **admin**.  The password will also be **admin**.  The user's name will be **MyAdmin** and you can enter any email address. 

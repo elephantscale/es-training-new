@@ -1,4 +1,4 @@
-# Cassandra Data Modeling 2
+# Data Modeling with Cassandra 2
 
 
 ---
@@ -1027,7 +1027,7 @@ Notes:
 
  * On each node, writes is
 
-     - First persisted to **“COMMIT LOG”**
+     - First persisted to **"COMMIT LOG"**
 
      - And is persisted in **memory**
 

@@ -141,7 +141,7 @@ Notes:
 ## Application management
  * Spinnaker's application management features to view and manage your cloud resources.
 
- * Modern tech organizations operate collections of services—sometimes referred to as “applications” or “microservices.” A Spinnaker application models this concept.
+ * Modern tech organizations operate collections of services—sometimes referred to as "applications" or "microservices." A Spinnaker application models this concept.
 
  * Services Key Concepts:
    - Applications

@@ -5,7 +5,7 @@
 ## Anatomy of a HTTP  Request
 
 
-* METHOD: the “verb” of the request. GET, POST, PUT, or DELETE
+* METHOD: the "verb" of the request. GET, POST, PUT, or DELETE
 * PROTOCOL: what flavor of HTTP (HTTP/1.1)  HOST: what web server you want to talk to  URL: what resource is being requested
 * BODY: extra data needed by the server
 
@@ -83,7 +83,7 @@ Roy Fielding articulated ReST in his dissertation at UC Irvine in 2000
 * From code, you'll use whatever library you use for HTTP / REST in the same way.
 
 ```bash
-curl –H “Content-Type: application/json” <URL> -d '<BODY>'
+curl –H "Content-Type: application/json" <URL> -d '<BODY>'
 ```
 
 ---

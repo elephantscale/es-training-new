@@ -163,7 +163,7 @@ CREATE TABLE users (
 
  * Emails are stored as a list.
 
-     - The first email in the list is the “primary email”
+     - The first email in the list is the "primary email"
 
 
 
@@ -211,7 +211,7 @@ Notes:
 
      - Can store as List or Set
      - List has order; Set has no order; Set doesn't allow dupes
-     - If using List, I can assume “first email” is primary
+     - If using List, I can assume "first email" is primary
      - If using SET, I need a separate field (no ordering)
 
 Notes: 
@@ -549,7 +549,7 @@ Notes:
 
 <img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
 
- * How can we store “release dates” in movie table?
+ * How can we store "release dates" in movie table?
 
      - (Theatrical release, date1)
 
@@ -743,7 +743,7 @@ Notes:
 
      - It gets repeated for all rows of the same feature
 
- * Use  **“static”** - value is “universal” across all rows in a partition
+ * Use  **"static"** - value is "universal" across all rows in a partition
 
  *   create table  **ratings_by_feature**  **(** 	    user_name text,	    feature_code text,	    rating int,
 
@@ -791,11 +791,11 @@ Notes:
 
  * A user has multiple devices (TV, tablet, phone, computer)
  * Devices belong to one user
- * Classic “one to many” relationship
+ * Classic "one to many" relationship
  * Device attributes:
      - device_id (something unique)
      - MAC address
-     - Description (“my phone”)
+     - Description ("my phone")
      - Device Type (phone/tv/tablet/set-top)
      - Device belongs to ONE user
 
@@ -1065,7 +1065,7 @@ Notes:
      - Upload_time
      - Tags
 
- * Videos cannot be identified by names or title (“my cat” is not unique)
+ * Videos cannot be identified by names or title ("my cat" is not unique)
 
  * Query:
      - Query video by a unique 'video_id'
@@ -1349,7 +1349,7 @@ Notes:
 
  * Leave comments
 
- * “Like” items 
+ * "Like" items 
 
  * Queries
 
@@ -1589,8 +1589,8 @@ Notes:
 
  * Data is organized as topics
 
-     - “emails”
-     - “clicks”
+     - "emails"
+     - "clicks"
 
  * Built for high throughput
 

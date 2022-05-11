@@ -203,7 +203,7 @@ $ curl -s http://kafka-connect:8083/connector-plugins
 
 
 * Remove connector
-  - $ curl -X DELETE -H "Content-Type: application/json” http://kafka-connect:8083/connectors
+  - $ curl -X DELETE -H "Content-Type: application/json" http://kafka-connect:8083/connectors
 
 
 * For more configuration: http://debezium.io/docs/connectors/mysql/

@@ -127,13 +127,13 @@ Source: https://www.python.org/dev/peps/pep-0020/
 
   * Created By Guido Von Rossom in 1991
 
-  * Designed as an alternative to ”scripting languages” like Perl
+  * Designed as an alternative to "scripting languages" like Perl
 
     - Fully OOP (Object Oriented Programming)
 
   * Dynamically Typed Language
 
-    - “Duck Typing” – if it walks like a duck..
+    - "Duck Typing" – if it walks like a duck..
     - Automatic type conversion
 
   * JIT (Just in Time)
@@ -242,7 +242,7 @@ Notes:
 | Dynamically Typed Language           	| Statically Typed Language                |
 | Interactive REPL Shell               	| No REPL                                  |
 | Can't build dependencies into object 	| Can build dependencies into a FAT JAR.   |
-| Good for interactive analytics       	| Good for “productionizing” analytics.    |
+| Good for interactive analytics       	| Good for "productionizing" analytics.    |
 | Relatively slow                      	| Faster (but not as fast as native code). |
 | Interpreted (from bytecode)          	| Usually JIT compiled.                    |
 
@@ -289,7 +289,7 @@ Notes:
 * Python reaching aspiring to be the second popular language [here](https://www.wired.com/story/python-language-more-popular-than-ever/)
 ---
 
-## A simple “Hello, world!” comparison
+## A simple "Hello, world!" comparison
 
 
 <img src="../../assets/images/python/3rd-party/Pythonv2.x.png" style="max-width:70%;"/><!-- {"left" : 0.95, "top" : 2.31, "height" : 5.02, "width" : 4.25} -->  &nbsp; &nbsp;  <img src="../../assets/images/python/3rd-party/c++.png" style="max-width:70%;"/><!-- {"left" : 5.59, "top" : 2.31, "height" : 5.02, "width" : 3.71} -->
@@ -410,7 +410,7 @@ Notes:
   * Commercially Available Support
 
     - Good for Enterprise Users
-    - Easy for IT Services to “Certify” entire distribution including packages
+    - Easy for IT Services to "Certify" entire distribution including packages
 
   * Separate from System Python
 
@@ -437,7 +437,7 @@ Notes:
     - However, it may not be the latest version
     - On Linux, python `3.x` is often called python3
 
-  * You may want to use ”virtualenv” to create a virtual environment for your data science work
+  * You may want to use "virtualenv" to create a virtual environment for your data science work
 
   * You will have to download and install your own packages as-needed
 
@@ -474,13 +474,13 @@ Anaconda is a big download, and the install will take time. Just sit back and re
   * Though Spyder is a much better interface
 
 ```python
-# Type “python“ to get into the python console
+# Type "python" to get into the python console
 $ python
 
 # Now we are in Python Shell. Type help()
 >>> help()
 
-# Now, we are in the help prompt. Type “for“.
+# Now, we are in the help prompt. Type "for".
 [help> for
 
 # To exit from the help prompt,
@@ -549,7 +549,7 @@ Notes:
 $ nano myprogram.py
 #!/usr/env/python3
 
-print(”Hello World!”)
+print("Hello World!")
 ```
 <!-- {"left" : 0, "top" : 1.71, "height" : 2.08, "width" : 6.66} -->
 

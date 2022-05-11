@@ -56,7 +56,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly.
     - Efficiency and Performance
 * The Production Environment at Google, from the Viewpoint of an SRE
     - Hardware
-    - System Software That “Organizes” the Hardware
+    - System Software That "Organizes" the Hardware
     - Storage
     - Networking
     - Monitoring and Alerting
@@ -159,7 +159,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly.
     - A Simple Approach to Unhealthy Tasks: Flow Control
     - A Robust Approach to Unhealthy Tasks: Lame Duck State
 * Handling Overload
-    - The Pitfalls of “Queries per Second”
+    - The Pitfalls of "Queries per Second"
     - Per-Customer Limits
     - Client-Side Throttling
     - Criticality

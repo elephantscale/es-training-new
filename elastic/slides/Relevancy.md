@@ -79,7 +79,7 @@ Notes:
 
 ## IDF Explained
 
-* The term “Elasticsearch” has a document frequency of 2
+* The term "Elasticsearch" has a document frequency of 2
   - because it occurs in two documents
 * The inverse part of the document frequency
   - the score being multiplied by 1/DF
@@ -87,7 +87,7 @@ Notes:
   - For a term with higher document frequency
     - Its weight decreases
 * Example
-  - The term “the” has a document frequency of 3 because
+  - The term "the" has a document frequency of 3 because
   - It occurs in all 3 documents
 
 
@@ -168,7 +168,7 @@ Notes:
   - Mechanical Turk
   - JUNIT
 * Need to evaluate your changes in a reproducible manner
-* Or else, it is “feel” and “guess”
+* Or else, it is "feel" and "guess"
 
 
 Notes:
@@ -254,7 +254,7 @@ Notes:
 * Are these the same:
   - solr
   - **content:** solr
-  - (hint: “content” is default field)
+  - (hint: "content" is default field)
 
 
 
@@ -294,10 +294,10 @@ Notes:
 
 * **How is this implemented?**
   - "apache solr"
-  - "apache software foundation“
+  - "apache software foundation"
   - (hint: think proximity)
 * **Will this also fit?**
-  - "apache foundation software “
+  - "apache foundation software "
   - And the answer is...
 
 
@@ -354,7 +354,7 @@ Notes:
 * Relevancy of query results is what differentiates between search and most databases
 * Returning enormous amounts of data without highlighting the most relevant documents will prove frustrating
 * ES provides a decent relevancy algorithm for keyword search 
-* Additional benefit can be achieved by “tuning” and otherwise experimenting with the relevancy of ES searches.
+* Additional benefit can be achieved by "tuning" and otherwise experimenting with the relevancy of ES searches.
 
 Notes:
 
@@ -466,10 +466,10 @@ Notes:
 
 * Wildcards 
 * Levenshtein Distance (a.k.a) Edit Distance algorithm. 
-* To do a fuzzy search use the tilde, "~“
+* To do a fuzzy search use the tilde, "~"
 * Example:
   - roam~
-  - Should find “foam” and “roams”
+  - Should find "foam" and "roams"
   - Try it! Experiment with various forms of
   - manu:samsuung~1
 

@@ -77,7 +77,7 @@
 ---
 ## Unit Testing
 
-* The first step is to identify what a terraform “unit” is 
+* The first step is to identify what a terraform "unit" is 
   * A unit would be a single generic module like those developed in a previous module
   * The idea of unit testing traditionally assumes a procedural programming language
   * The idea of unit testing has to be tweaked to work with declarative languages
@@ -197,7 +197,7 @@ This is where example 7-1 should be done
 ## End to End Strategy
 
 * A common end-to-end strategy is:
-  1. A persistent, production-like environment called “test” is deployed which is left running
+  1. A persistent, production-like environment called "test" is deployed which is left running
   2. Every time a change is made to the infrastructure, the end-to-end test does the following:
   - Applies the infrastructure change to the test environment
   - Runs validations against the test environment (e.g., use Selenium to test your code from the end-user's perspective) to make sure everything is working
@@ -220,8 +220,8 @@ This is where example 7-1 should be done
 * Static analysis involves running tools that examine the structure of the code without executing it
 * Common tools are:
   * _terraform validate_: a command built into Terraform that you can use to check your Terraform syntax and types
-  * _tflint_:  A “lint” tool for Terraform that can scan Terraform code and catch common errors and potential bugs based on a set of built-in rules
-  * _HashiCorp Sentinel_:  A “policy as code” framework that allows you to enforce rules across various HashiCorp tools
+  * _tflint_:  A "lint" tool for Terraform that can scan Terraform code and catch common errors and potential bugs based on a set of built-in rules
+  * _HashiCorp Sentinel_:  A "policy as code" framework that allows you to enforce rules across various HashiCorp tools
   
 ---
 ## Property Testing

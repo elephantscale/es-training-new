@@ -138,10 +138,10 @@ Notes:
 object TestApp {  // Basic Spark App (Scala)
   def main(args: Array[String]) {
 		val sc = new SparkContext(
-      new SparkConf().setMaster("local").setAppName(”TestApp")
-		val totalWords = sc.textFile(“file”)
+      new SparkConf().setMaster("local").setAppName("TestApp")
+		val totalWords = sc.textFile("file")
                .flatMap(l => l.split(" ")).count()
-		println (“# lines : “ + totalWords)
+		println ("# lines : " + totalWords)
 	}
 }
 

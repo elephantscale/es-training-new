@@ -131,9 +131,9 @@ Sessions
 ## Executing a Query
 
 ```text
-cluster = Cluster.builder().addContactPoint("localhost”).build();
+cluster = Cluster.builder().addContactPoint("localhost").build();
 Session session = cluster.connect("myflix");
-String cql = “insert into users(id, name) values ('user1',  'Joe')”;
+String cql = "insert into users(id, name) values ('user1',  'Joe')";
 session.execute(cql);
 
 ```
@@ -165,14 +165,14 @@ Notes:
      - Bind statement with values to pass to query
 
 ```text
-cluster = Cluster.builder().addContactPoint("localhost”).build();
+cluster = Cluster.builder().addContactPoint("localhost").build();
 Session session = cluster.connect("myflix");
 
 PreparedStatement statement = session.prepare(
    "INSERT INTO users (user_name, fname) VALUES (?,?);");
 BoundStatement boundStatement = new BoundStatement(statement);
 
-session.execute(boundStatement.bind(“user1”, “Joe”));
+session.execute(boundStatement.bind("user1", "Joe"));
 
 ```
 
@@ -185,12 +185,12 @@ Notes:
 ## Query
 
 ```text
-String cql = “select user_id, user_name from users”;
+String cql = "select user_id, user_name from users";
 
 ResultSet resultSet = session.execute(cql);
 	
 For (Row row : resultSet) {
-   System.out.println(row.getString(“user_name”) );
+   System.out.println(row.getString("user_name") );
 }
 
 

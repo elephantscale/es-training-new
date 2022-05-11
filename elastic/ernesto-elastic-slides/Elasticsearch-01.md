@@ -390,7 +390,7 @@ Inverted means we are mapping things searching for, to documents searching in.
 Inverted index is the mechanism by which all search engines work. 
 Say we have 2 documents, inverted index doesn't store them directly, it flips on head
 each document split up into individual search terms, split up by each word, lowercased to normalize 
-maps each search term to documents they occur within. Here we can see “Space” shows up in document1 and document2.
+maps each search term to documents they occur within. Here we can see "Space" shows up in document1 and document2.
 
 ---
 
@@ -404,11 +404,11 @@ of a term in a document
 Notes:
 
 How do I deal with concept of relevance?  
-If I search for the word ”the” how do I make sure it returns documents where “the” is relevant?
+If I search for the word "the" how do I make sure it returns documents where "the" is relevant?
 TF-IDF 
-Term Frequency is how often a word appears in a document, “the” “of” “space” etc.. 
+Term Frequency is how often a word appears in a document, "the" "of" "space" etc.. 
 Document Frequency: How often a term appears in all documents in index.
- ”Space” doesn't appear often in index, but “the” does.  
+ "Space" doesn't appear often in index, but "the" does.  
 Divide Term Frequency by Document Frequency gives us measure of relevance.
 How special is this term to this document? How often does it occur in this doc? How often does it occur in all documents?
 
@@ -485,7 +485,7 @@ In a single cluster, you can have as many nodes as you want. Furthermore, if the
 ## Anatomy of a HTTP  Request
 
 
-* METHOD: the “verb” of the request. GET, POST, PUT, or DELETE
+* METHOD: the "verb" of the request. GET, POST, PUT, or DELETE
 * PROTOCOL: what flavor of HTTP (HTTP/1.1)  HOST: what web server you want to talk to  URL: what resource is being requested
 * BODY: extra data needed by the server
 
@@ -563,7 +563,7 @@ Roy Fielding articulated ReST in his dissertation at UC Irvine in 2000
 * From code, you'll use whatever library you use for HTTP / REST in the same way.
 
 ```text
-curl –H “Content-Type: application/json” <URL> -d '<BODY>'
+curl –H "Content-Type: application/json" <URL> -d '<BODY>'
 ```
 
 ---
@@ -1022,7 +1022,7 @@ https://jruels.github.io/elastic/labs/01-install/
 * The key with self-healing is awareness
 * Companies have created toolsets and configurations for this, e.g. LogIt.io
 * APIs exist to check shards, indices, clusters, nodes
-* Baselines are required to be able to correctly “heal” a given issue
+* Baselines are required to be able to correctly "heal" a given issue
 
 * Identify
 * Compare
@@ -1086,7 +1086,7 @@ Let's add this sample movie data to it as well.
 Notes:
 Mapping is a schema definition which tells Elasticsearch how to index your data.  
 Most of the time it can figure out the correct type of mapping for your data (strings, floating point numbers, integers etc..) 
-Sometimes we have to give it a hint.  We want the “release date” to specifically be a date field. 
+Sometimes we have to give it a hint.  We want the "release date" to specifically be a date field. 
 Movie data type: year = type date, not just string
 Preferred to explicitly tell Elasticsearch since that reduces instances of the implied mapping identifying a more generic or incorrect type.
 
@@ -1094,7 +1094,7 @@ Preferred to explicitly tell Elasticsearch since that reduces instances of the i
 
 ## Elasticsearch 5 Syntax
 
-* In Elasticsearch 5 it was possible to send a REST request without the Content-Type. Elasticsearch would then “sniff” the content and set the type based on that. 
+* In Elasticsearch 5 it was possible to send a REST request without the Content-Type. Elasticsearch would then "sniff" the content and set the type based on that. 
 
 <img src="../../assets/images/elastic/3rd-party/syntax.png" alt="syntax.png" style="width:60%;"/>
 
@@ -1103,7 +1103,7 @@ Notes:
 
 Mapping is a schema definition which tells Elasticsearch how to index your data.  
 Most of the time it can figure out the correct type of mapping for your data (strings, floating point numbers, integers etc..) Some types such as timestamp and decimal, may not be correctly inferred
-Sometimes we have to give it a hint.  We want the “release date” to specifically be a date field. 
+Sometimes we have to give it a hint.  We want the "release date" to specifically be a date field. 
 
 This ability to enforce strict content-type checking has existed since Elasticsearch 5.3 via the http.content_type.required configuration setting. In 5.x it is optional, and defaults to false, in Elasticsearch 6.0, that setting defaults to true, and there is no way to disable it.
 
@@ -1123,7 +1123,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/6.0/removal-of-types.htm
   - Sending plain text content to API that doesn't support it returns.
 * `Content-Type header [text/plain] is not supported`
 
-* In Elasticsearch 5 if you sent plain text that started with a curly brace and the letter “a” it would assume it was JSON, but when it tried to parse that, it would fail and the error message would look more like: 
+* In Elasticsearch 5 if you sent plain text that started with a curly brace and the letter "a" it would assume it was JSON, but when it tried to parse that, it would fail and the error message would look more like: 
 
 * `Unexpected character ('a' (code 97)): was expecting double-quote to start field name`
 
@@ -1713,7 +1713,7 @@ Query-lite
 
 ---
 
-## “Query Lite”
+## "Query Lite"
 
 
 * Proper JSON query 
@@ -1775,9 +1775,9 @@ Fragile, mess up a character and things happen that you aren't expecting.
 
 <img src="../../assets/images/elastic/3rd-party/parameters-01.png" alt="parameters-01.png" style="width:40%;float:right;"/>
 
-* This is formally called “URI  Search”. Search for that on the Elasticsearch  documentation.
+* This is formally called "URI  Search". Search for that on the Elasticsearch  documentation.
 
-* It's really quite powerful, but again is only appropriate for quick “curl tests”.
+* It's really quite powerful, but again is only appropriate for quick "curl tests".
 
 
 ---
@@ -1840,19 +1840,19 @@ must does that.
 
 ```text
 term: filter by exact values
-{“term”: {“year”: 2014}}
+{"term": {"year": 2014}}
 
 terms: match if any exact values in a list match
-{“terms”: {“genre”: [“Sci-Fi”, “Adventure”] } }
+{"terms": {"genre": ["Sci-Fi", "Adventure"] } }
 
 range: Find numbers or dates in a given range (gt, gte, lt, lte)
-{“range”: {“year”: {“gte”: 2010}}}
+{"range": {"year": {"gte": 2010}}}
 
 exists: Find documents where a field exists
-{“exists”: {“field”: “tags”}}
+{"exists": {"field": "tags"}}
 
 missing: Find documents where a field is missing
-{“missing”: {“field”: “tags”}}
+{"missing": {"field": "tags"}}
 
 bool: Combine filters with Boolean logic (must, must_not, should)
 ```
@@ -1863,13 +1863,13 @@ bool: Combine filters with Boolean logic (must, must_not, should)
 
 ```text
 match_all: returns all documents and is the default. Normally used with a filter.
-{“match_all”: {}}
+{"match_all": {}}
 
 match: searches analyzed results, such as full text search.
-{“match”: {“title”: “star”}}
+{"match": {"title": "star"}}
 
 multi_match: run the same query on multiple fields.
-{“multi_match”: {“query”: “star”, “fields”: [“title”, “synopsis” ] } }
+{"multi_match": {"query": "star", "fields": ["title", "synopsis" ] } }
 
 bool: Works like a bool filter, but results are scored by relevance.
 
@@ -1891,7 +1891,7 @@ POST /shakespeare/_search
 {
     "query": {
         "multi_match" : {
-            "query" : “lear",
+            "query" : "lear",
             "fields": ["title", "summary^3"]
         }
     },
@@ -1910,7 +1910,7 @@ query bool: instead of filtering results that don't match it will score results 
 
 ## Syntax Reminder
 
-* queries are wrapped in a “query”: { } block,  filters are wrapped in a “filter”: { } block.
+* queries are wrapped in a "query": { } block,  filters are wrapped in a "filter": { } block.
 
 * you can combine filters inside queries, or queries inside filters too.
 
@@ -1954,7 +1954,7 @@ That allows for phrase searches and not just single words or partial word search
 * The **slop** represents how far you're willing to let a term move to satisfy a
 phrase (in either direction!)
 
-* Another example: “quick brown fox” would match “quick fox” with a slop of 1.
+* Another example: "quick brown fox" would match "quick fox" with a slop of 1.
 
 Notes:
 
@@ -1991,7 +1991,7 @@ Star and beyond appear close together, returns all of them, but assigned higher 
 
 ## Exercise
 
-* Search for “Star Wars” movies  released after 1980, using both a **URI search** and **a request body search.**
+* Search for "Star Wars" movies  released after 1980, using both a **URI search** and **a request body search.**
 
 ---
 
@@ -2007,7 +2007,7 @@ more!
 
 ---
 
-## Specify “From” and  “Size”
+## Specify "From" and  "Size"
 
 
 <img src="../../assets/images/elastic/3rd-party/from-size.png" alt="from-size.png" style="width:60%;"/>
@@ -2233,7 +2233,7 @@ Notes:
 wildcard query of year "1*" would return hits for anything beginning with 1. 
 
 Could also do something like 
-"year": "19*3“ or “year”:”19?3”
+"year": "19*3" or "year":"19?3"
 
 ---
 

@@ -192,7 +192,7 @@ Notes:
 
 Notes:
 
-* Defining key performance indicators can be tricky business. The operative word in KPI is “key” because every KPI should related to a specific business outcome with a performance measure. KPIs are often confused with business metrics. Although often used in the same spirit, KPIs need to be defined according to critical or core business objectives. Follow these steps when defining a KPI:  
+* Defining key performance indicators can be tricky business. The operative word in KPI is "key" because every KPI should related to a specific business outcome with a performance measure. KPIs are often confused with business metrics. Although often used in the same spirit, KPIs need to be defined according to critical or core business objectives. Follow these steps when defining a KPI:  
 
 ---
 
@@ -328,9 +328,9 @@ Notes:
   
 Notes:
 
-* Benchmarking is the process of comparing one's business processes and performance metrics to industry bests and best practices from other companies. Dimensions typically measured are quality, time and cost. In the process of best practice benchmarking, management identifies the best firms in their industry, or in another industry where similar processes exist, and compares the results and processes of those studied (the “targets”) to one's own results and processes. In this way, they learn how well the targets perform and, more importantly, the business processes that explain why these firms are successful.
+* Benchmarking is the process of comparing one's business processes and performance metrics to industry bests and best practices from other companies. Dimensions typically measured are quality, time and cost. In the process of best practice benchmarking, management identifies the best firms in their industry, or in another industry where similar processes exist, and compares the results and processes of those studied (the "targets") to one's own results and processes. In this way, they learn how well the targets perform and, more importantly, the business processes that explain why these firms are successful.
 
-* Also referred to as “best practice benchmarking” or “process benchmarking”, this process is used in management and particularly strategic management, in which organizations evaluate various aspects of their processes in relation to best practice companies' processes, usually within a peer group defined for the purposes of comparison. This then allows organizations to develop plans on how to make improvements or adapt specific best practices, usually with the aim of increasing some aspect of performance. Benchmarking may be a one-off event, but is often treated as a continuous process in which organizations continually seek to improve their practices.
+* Also referred to as "best practice benchmarking" or "process benchmarking", this process is used in management and particularly strategic management, in which organizations evaluate various aspects of their processes in relation to best practice companies' processes, usually within a peer group defined for the purposes of comparison. This then allows organizations to develop plans on how to make improvements or adapt specific best practices, usually with the aim of increasing some aspect of performance. Benchmarking may be a one-off event, but is often treated as a continuous process in which organizations continually seek to improve their practices.
 
 ---
 
@@ -807,9 +807,9 @@ Notes:
 
 Data can provide much-needed answers, but only if you are clear about the questions you need to answer
 * Google aims to start with these questions and be very clear about the information it needs at the outset
-* As the company's former executive chairman, Eric Schmidt, has said, “We run the company by questions, not by answers.”
+* As the company's former executive chairman, Eric Schmidt, has said, "We run the company by questions, not by answers."
 * Within its global HR function, Google has created a people analytics department that enables the organization to make data-driven people decisions
-* One question Google wanted to answer was, “Do managers actually matter?” This is a question Google had been wrestling with for years; at one point, the company actually got rid of all managers and made everyone an individual contributor
+* One question Google wanted to answer was, "Do managers actually matter?" This is a question Google had been wrestling with for years; at one point, the company actually got rid of all managers and made everyone an individual contributor
 * This did not really work, and managers were brought back in, but the suspicion lingered that managers perhaps were not that important.
 * So, Google had identified a critical people-related question that it wanted to answer: Do managers matter?
 
@@ -828,8 +828,8 @@ Data can provide much-needed answers, but only if you are clear about the questi
 
 ## Collecting Data
 * This answered the original question – clearly, managers did matter – but it did not really give much in terms of actionable insights
-* So the team came up with a new question that needed answering: “What makes a good manager at Google?” To answer this new question, the team introduced two new data collection methods
-* The first was a “Great Managers Award,” through which employees could nominate managers they felt were particularly good
+* So the team came up with a new question that needed answering: "What makes a good manager at Google?" To answer this new question, the team introduced two new data collection methods
+* The first was a "Great Managers Award," through which employees could nominate managers they felt were particularly good
 * As part of the nomination, employees had to provide examples of behaviors they felt supported their good assessment of managers
 * The second data set came from interviews with the managers in each of the two quartiles (bottom and top) to understand what they were doing or not doing (the managers did not know which quartile they were in.
 

@@ -606,9 +606,9 @@ resource "aws_vpc" "shared" {
 }
 ````
 
-* A. var.vpc_cidrs[“us-east-1”]
+* A. var.vpc_cidrs["us-east-1"]
 * B. var.vpc_cidrs.0
-* C. vpc_cidrs[“us-east-1”]
+* C. vpc_cidrs["us-east-1"]
 * D.var.vpc_cidrs[0]
 
 Notes: 
@@ -992,7 +992,7 @@ resource "aws_autoscaling_group" "example" {
     * Best suited for load balancing of TCP, UDP, and TLS traffic. Can scale up and down in response to load faster than the ALB (the NLB is designed to scale to tens of millions of requests per second). Operates at the transport layer (Layer 4) of the OSI model.
 
 *  Classic Load Balancer (CLB)
-    * This is the “legacy” load balancer that predates both the ALB and NLB. It can handle HTTP, HTTPS, TCP, and TLS traffic, but with far fewer features than either the ALB or NLB. Operates at both the application layer (L7) and transport layer (L4) of the OSI model.
+    * This is the "legacy" load balancer that predates both the ALB and NLB. It can handle HTTP, HTTPS, TCP, and TLS traffic, but with far fewer features than either the ALB or NLB. Operates at both the application layer (L7) and transport layer (L4) of the OSI model.
 
 ---
 ## Application Load Balancer (ALB)
@@ -1095,7 +1095,7 @@ resource "aws_lb_target_group" "asg" {
 
 ## What the Target Group Do?
 - health check your Instances by periodically sending an HTTP request to each Instance
-- will consider the Instance “healthy” only if the Instance returns a response that matches the configured matcher
+- will consider the Instance "healthy" only if the Instance returns a response that matches the configured matcher
 - we told the matcher to look for a 200 OK response
 the target group will automatically stop sending traffic to unhealthy instance
 ---

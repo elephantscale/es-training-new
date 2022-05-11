@@ -264,7 +264,7 @@ object TestApp{
 						        getOrCreate()
 
 		val f = spark.read.text("data.txt")
-		println (“# lines: “ + f.count)
+		println ("# lines: " + f.count)
 
 	  spark.stop()
 	}
@@ -420,7 +420,7 @@ scalaVersion:= "2.12"
 // ++= means concatenate sequence of dependencies
 // %% means append Scala version to next part
 libraryDependencies ++= Seq(
-  "org.apache.spark" % "spark-core" % "3.0.0” % “provided"
+  "org.apache.spark" % "spark-core" % "3.0.0" % "provided"
 )
 
 // need this to access files on S3 or HDFS

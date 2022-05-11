@@ -529,13 +529,13 @@ Remote Backends are covered in example 3-4
 ---
 ## Isolation via File Layout
 
-* At the top level, there are separate folders for each “environment
+* At the top level, there are separate folders for each "environment
   * **stage**: An environment for preproduction workloads (testing)
   * **prod**: An environment for production workloads (user facing apps)
   * **mgmt**: An environment for DevOps tooling (Jenkins etc.)
   * **global**: Resources that are used across all environments (S3, IAM)
 
-* Within each environment, there are separate folders for each “component":
+* Within each environment, there are separate folders for each "component":
   * **vpc**: Network topology for this environment
   * **services**: Apps or microservices to run in this environment - each app could have its own folder to isolate it
   * **data-storage**: The data stores to run in this environment, such as MySQL or Redis

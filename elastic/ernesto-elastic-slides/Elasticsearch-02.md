@@ -115,7 +115,7 @@ if computing just the edge n-grams for star, only a single,  s, st, sta, star
 
 ## Indexing N-grams
 
-* Create an “autocomplete” analyzer
+* Create an "autocomplete" analyzer
 
 <img src="../../assets/images/elastic/3rd-party/N-grams02.png" alt="N-grams02.png" style="width:40%;"/>
 
@@ -280,7 +280,7 @@ AWS systems can stream in data via **lambda** or **kinesis firehose** **kafka, s
 ## Python - Tags
 
 * Exercise
-  - write a script to import the tags.csv  data from ml-latest-small into a new  “tags” index.
+  - write a script to import the tags.csv  data from ml-latest-small into a new  "tags" index.
 
 ---
 
@@ -699,7 +699,7 @@ sudo /bin/systemctl start kibana.service
 
 * Filebeat can optionally talk directly to elasticsearch. when using logstash, elasticsearch is just one of many  possible destinations!
 
-* Logstash and filebeat can communicate to  maintain “backpressure” when things back up
+* Logstash and filebeat can communicate to  maintain "backpressure" when things back up
 
 * Filebeat maintains a read pointer on the logs.  every log line acts like a queue.
 
@@ -711,7 +711,7 @@ sudo /bin/systemctl start kibana.service
 ## This is Called the Elastic Stack
 
 
-* prior to beats, you'd hear about the “ELK stack” – elasticsearch, logstash, kibana.
+* prior to beats, you'd hear about the "ELK stack" – elasticsearch, logstash, kibana.
 
 
 
@@ -775,7 +775,7 @@ sudo /bin/systemctl start kibana.service
 
 ## Shard Planning
 
-* The “right” number of shards depends on your data
+* The "right" number of shards depends on your data
 and your application. there's no secret formula.
 * Start with a single server using the same hardware  you use in production, with one shard and no  replication.
 * Fill it with real documents and hit it with real queries.
@@ -804,9 +804,9 @@ and your application. there's no secret formula.
 ```text
 PUT /new_index
 {
-“settings”: {
-“number_of_shards”:	10,
-“number_of_replicas”:	1
+"settings": {
+"number_of_shards":	10,
+"number_of_replicas":	1
 }
 }
 ```
@@ -833,7 +833,7 @@ PUT /new_index
 * multiple-indices:
   - with time-based data, you can have one index per time frame
   - common strategy for log data where you usually just  want current data, but don't want to delete old data  either
-  - again you can use index aliases, ie “logs_current”,  “last_3_months”, to point to specific indices as they rotate
+  - again you can use index aliases, ie "logs_current",  "last_3_months", to point to specific indices as they rotate
 
 
 ---
@@ -843,11 +843,11 @@ PUT /new_index
 ```text
 POST /_aliases
 {
-“actions”: [
-{ “add”:       { “alias”: “logs_current”, “index”: “logs_2017_06” }},
-{ “remove”:    { “alias”: “logs_current”, “index”: “logs_2017_05” }},
-{ “add”:       { “alias”: “logs_last_3_months”, “index”: “logs_2017_06” }},
-{ “remove”:    { “alias”: “logs_last_3_months”, “index”: “logs_2017_03” }}
+"actions": [
+{ "add":       { "alias": "logs_current", "index": "logs_2017_06" }},
+{ "remove":    { "alias": "logs_current", "index": "logs_2017_05" }},
+{ "add":       { "alias": "logs_last_3_months", "index": "logs_2017_06" }},
+{ "remove":    { "alias": "logs_last_3_months", "index": "logs_2017_03" }}
 
 ]
 }
@@ -903,7 +903,7 @@ memory for caching
 
 * `Export ES_HEAP_SIZE=10g` or
 
-* `ES_JAVA_OPTS=“-Xms10g –Xmx10g” ./bin/elasticsearch`
+* `ES_JAVA_OPTS="-Xms10g –Xmx10g" ./bin/elasticsearch`
 
 * Don't cross 32GB! pointers blow up then.
 
@@ -1069,7 +1069,7 @@ PUT _cluster/settings
 * Together the cluster holds your entire data and provides federated indexing and search 
 * Capabilities across all nodes
 * Clusters are identified by a unique name 
-* Default cluster naming is "elasticsearch“
+* Default cluster naming is "elasticsearch"
 * Nodes join clusters automatically on startup
 * Nodes join clusters using their configured naming
 

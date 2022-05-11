@@ -618,7 +618,7 @@ upper_roles = {
   }
   ```
 * The format function to extract just the first character from var.instance_type. 
-    * If that character is a “t” (e.g., t2.micro), it sets the count to 1; 
+    * If that character is a "t" (e.g., t2.micro), it sets the count to 1; 
     * otherwise, it sets the count to 0
     * This way, the alarm is created only for instance types that actually have a CPUCreditBalance metric.
 

@@ -131,7 +131,7 @@ Notes:
  * **Continuous Integration (CI)**
  * **Continuous Delivery (CD)**
  * Definition of Done
- * Common “war-room” style work area
+ * Common "war-room" style work area
 
 Notes: 
 
@@ -677,7 +677,7 @@ Notes:
 ## Configure System
 
 
- * The two important tabs are “Configure System” and “Global Tool Configuration”.
+ * The two important tabs are "Configure System" and "Global Tool Configuration".
 
  * There you can set up JDK, Maven,  Ant,  Git  and  Gradle.
 
@@ -2008,7 +2008,7 @@ Notes:
 
      - Update build.gradle file to apply Cobertura plugin and then run `gradle cobertura` task
 
- * Configure Cobertura Coverage Report as part of “Post Build Actions”
+ * Configure Cobertura Coverage Report as part of "Post Build Actions"
 
 Notes: 
 
@@ -2378,7 +2378,7 @@ Notes:
 ## Running reports with Performance Plugin
 
 
- * After installing Performance Plugin, click on “Publish test result report” as part of post build action items in your Jenkins job
+ * After installing Performance Plugin, click on "Publish test result report" as part of post build action items in your Jenkins job
 
  * Select JMeter from performance report drop down and specify the path to performance report files
 
@@ -2759,9 +2759,9 @@ apply plugin: 'org.sonarqube'
 
  		properties {
 
-   		property "sonar.projectName", “My Project"
+   		property "sonar.projectName", "My Project"
 
-   		property "sonar.projectKey", “My:Project"
+   		property "sonar.projectKey", "My:Project"
 
  		}
 

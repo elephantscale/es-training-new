@@ -50,8 +50,8 @@ Notes:
 
   * Experiment
   * Download a slide deck from SlideShare.net (when you are logged in)
-  * Get the “More like this” email
-  * Analyze what's “more like this”
+  * Get the "More like this" email
+  * Analyze what's "more like this"
   * Using Solr way:
     - http://wiki.apache.org/solr/MoreLikeThis	
 

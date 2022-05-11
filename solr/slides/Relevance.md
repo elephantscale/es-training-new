@@ -49,7 +49,7 @@ Notes:
   * Are these the same:
 
     - solr
-       - content:solr (hint: “content” is default field)
+       - content:solr (hint: "content" is default field)
 
 Notes:
 
@@ -92,10 +92,10 @@ Notes:
 
   * **How is this implemented?**
     - "apache solr"
-    - "apache software foundation“
+    - "apache software foundation"
     - (hint: think proximity)
   * **Will this also fit?**
-    - "apache foundation software “
+    - "apache foundation software "
     - And the answer is…
 
 Notes:
@@ -149,7 +149,7 @@ Notes:
   * Relevancy of query results is what differentiates between search and most databases
   * Returning enormous amounts of data without highlighting the most relevant documents will prove frustrating
   * Solr provides a decent relevancy algorithm for keyword search 
-  * Additional benefit can be achieved by “tuning” and otherwise experimenting with the relevancy of Solr searches.
+  * Additional benefit can be achieved by "tuning" and otherwise experimenting with the relevancy of Solr searches.
 
 Notes:
 
@@ -328,10 +328,10 @@ Notes:
 
   * Wildcards 
   * Levenshtein Distance (a.k.a) Edit Distance algorithm. 
-  * To do a fuzzy search use the tilde, "~“
+  * To do a fuzzy search use the tilde, "~"
     - Example:
     - `roam~`
-    - Should find “foam” and “roams”
+    - Should find "foam" and "roams"
 
 
 Notes:

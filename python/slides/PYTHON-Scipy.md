@@ -395,7 +395,7 @@ https://docs.scipy.org/doc/numpy/reference/generated/numpy.mgrid.html#numpy.mgri
 
     - `bisplrep()` takes x, y, z and outputs `tck = [tx, ty, c, kx, ky]`.
 
-    - `bisplev()` takes two 1D vectors whose cross product defines the domain of evaluation and the variable “tck”
+    - `bisplev()` takes two 1D vectors whose cross product defines the domain of evaluation and the variable "tck"
 
     - https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.bisplev.html#scipy.interpolate.bisplev
 

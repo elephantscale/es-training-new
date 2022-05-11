@@ -79,7 +79,7 @@ Notes:
 
 | Threat      | Property Violated | Threat Definition                                                                                                                                                            | Typical Victims | Examples                                                                                                                                                                                                                         |
 |-------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Repudiation | Non- Repudiation  | Claiming that you didn't do something, or were not responsible. Repudiation can be honest or false, and the key question for system designers is, what evidence do you have? | Process         | Process or system: “I didn't hit the big red button” or “I didn't order that Ferrari.” Note that repudiation is somewhat the odd-threat-out here; it transcends the technical nature of the other threats to the business layer. |
+| Repudiation | Non- Repudiation  | Claiming that you didn't do something, or were not responsible. Repudiation can be honest or false, and the key question for system designers is, what evidence do you have? | Process         | Process or system: "I didn't hit the big red button" or "I didn't order that Ferrari." Note that repudiation is somewhat the odd-threat-out here; it transcends the technical nature of the other threats to the business layer. |
 
 ---
 
@@ -87,7 +87,7 @@ Notes:
 
 | Threat                 | Property Violated | Threat Definition                                         | Typical Victims                    | Examples                                                                                                                                                                                                                      |
 |------------------------|-------------------|-----------------------------------------------------------|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Information Disclosure | Confidentiality   | Providing information to someone not authorized to see it | Processes, data stores, data flows | The most obvious example is allowing access to files, e-mail, or databases, but information disclosure can also involve filenames (“Termination for John Doe.docx”), packets on a network, or the contents of program memory. |
+| Information Disclosure | Confidentiality   | Providing information to someone not authorized to see it | Processes, data stores, data flows | The most obvious example is allowing access to files, e-mail, or databases, but information disclosure can also involve filenames ("Termination for John Doe.docx"), packets on a network, or the contents of program memory. |
 
 ---
 
@@ -126,7 +126,7 @@ Notes:
 
 Notes:
 
-* You'll sometimes hear STRIDE referred to as “STRIDE categories” or “the STRIDE taxonomy.” This framing is not helpful because STRIDE was not intended as, nor is it generally useful for, categorization. It is easy to find things that are hard to categorize with STRIDE. For example, earlier you learned about tampering with the authentication database and then spoofing. Should you record that as a tampering threat or a spoofing threat? The simple answer is that it doesn't matter. If you've already come up with the attack, why bother putting it in a category? The goal of STRIDE is to help you find attacks. Categorizing them might help you figure out the right defenses, or it may be a waste of effort. Trying to use STRIDE to categorize threats can be frustrating, and those efforts cause some people to dismiss STRIDE, but this is a bit like throwing out the baby with the bathwater.
+* You'll sometimes hear STRIDE referred to as "STRIDE categories" or "the STRIDE taxonomy." This framing is not helpful because STRIDE was not intended as, nor is it generally useful for, categorization. It is easy to find things that are hard to categorize with STRIDE. For example, earlier you learned about tampering with the authentication database and then spoofing. Should you record that as a tampering threat or a spoofing threat? The simple answer is that it doesn't matter. If you've already come up with the attack, why bother putting it in a category? The goal of STRIDE is to help you find attacks. Categorizing them might help you figure out the right defenses, or it may be a waste of effort. Trying to use STRIDE to categorize threats can be frustrating, and those efforts cause some people to dismiss STRIDE, but this is a bit like throwing out the baby with the bathwater.
 
 ---
 
@@ -135,8 +135,8 @@ Notes:
 | Threat Examples                        | What the Attacker Does                 | Notes                                        |
 |----------------------------------------|----------------------------------------|----------------------------------------------|
 | Spoofing a process on the same machine | Creates a file before the real process |                                              |
-|                                        | Renaming/linking                       | Creating a Trojan “su” and altering the path |
-|                                        | Renaming                               | Naming your process “sshd”                   |
+|                                        | Renaming/linking                       | Creating a Trojan "su" and altering the path |
+|                                        | Renaming                               | Naming your process "sshd"                   |
 
 Notes:
 
@@ -172,7 +172,7 @@ Notes:
 Notes:
 
 * Attackers can spoof remote machines at a variety of levels of the network stack. These spoofing attacks can influence your code's view of the world as a client, server, or peer. They can spoof ARP requests if they're local, they can spoof IP packets to make it appear that they're coming from somewhere they are not, and they can spoof DNS packets. DNS spoofing can happen when you do a forward or reverse lookup. An attacker can spoof a DNS reply to a forward query they expect you to make. They can also adjust DNS records for machines they control such that when your code does a reverse lookup (translating IP to FQDN) their DNS server returns a name in a domain that they do not control—for example, claiming that 10.1.2.3 is update.microsoft.com. Of course, once attackers have spoofed a machine, they can either spoof or act as a man-in-the-middle for the processes on that machine. Second-order variants of this threat involve stealing machine authenticators such as cryptographic keys and abusing them as part of a spoofing attack.
-* Attackers can also spoof at higher layers. For example, phishing attacks involve many acts of spoofing. There's usually spoofing of e-mail from “your” bank, and spoofing of that bank's website. When someone falls for that e-mail, clicks the link and visits the bank, they then enter their credentials, sending them to that spoofed website. The attacker then engages in one last act of spoofing: They log into your bank account and transfer your money to themselves or an accomplice. (It may be one attacker, or it may be a set of attackers, contracting with one another for services rendered.)
+* Attackers can also spoof at higher layers. For example, phishing attacks involve many acts of spoofing. There's usually spoofing of e-mail from "your" bank, and spoofing of that bank's website. When someone falls for that e-mail, clicks the link and visits the bank, they then enter their credentials, sending them to that spoofed website. The attacker then engages in one last act of spoofing: They log into your bank account and transfer your money to themselves or an accomplice. (It may be one attacker, or it may be a set of attackers, contracting with one another for services rendered.)
 
 ---
 
@@ -272,7 +272,7 @@ Notes:
 Notes:
 
 * Repudiating an Action
-* When you're discussing repudiation, it's helpful to discuss “someone” rather than “an attacker.” You want to do this because those who repudiate are often not actually attackers, but people who have been failed by technology or process. Maybe they really didn't click (or didn't perceive that they clicked). Maybe the spam filter really did eat that message. Maybe UPS didn't deliver, or maybe UPS delivered by leaving the package on a porch. Maybe someone claims to have been a victim of fraud when they really were not (or maybe someone else in a household used their credit card, with or without their knowledge). Good technological systems that both authenticate and log well can make it easier to handle repudiation issues.
+* When you're discussing repudiation, it's helpful to discuss "someone" rather than "an attacker." You want to do this because those who repudiate are often not actually attackers, but people who have been failed by technology or process. Maybe they really didn't click (or didn't perceive that they clicked). Maybe the spam filter really did eat that message. Maybe UPS didn't deliver, or maybe UPS delivered by leaving the package on a porch. Maybe someone claims to have been a victim of fraud when they really were not (or maybe someone else in a household used their credit card, with or without their knowledge). Good technological systems that both authenticate and log well can make it easier to handle repudiation issues.
 
 ---
 
@@ -309,7 +309,7 @@ Notes:
 Notes:
 
 * Information Disclosure from a Process
-* Many instances in which a process will disclose information are those that inform further attacks. A process can do this by leaking memory addresses, extracting secrets from error messages, or extracting design details from error messages. Leaking memory addresses can help bypass ASLR and similar defenses. Leaking secrets might include database connection strings or passwords. Leaking design details might mean exposing anti-fraud rules like “your account is too new to order a diamond ring.”
+* Many instances in which a process will disclose information are those that inform further attacks. A process can do this by leaking memory addresses, extracting secrets from error messages, or extracting design details from error messages. Leaking memory addresses can help bypass ASLR and similar defenses. Leaking secrets might include database connection strings or passwords. Leaking design details might mean exposing anti-fraud rules like "your account is too new to order a diamond ring."
 
 ---
 
@@ -331,7 +331,7 @@ Notes:
 
 * As data stores, well, store data, there's a profusion of ways they can leak it. The first set of causes are failures to properly use security mechanisms. Not setting permissions appropriately or hoping that no one will find an obscure file are common ways in which people fail to use security mechanisms. Cryptographic keys are a special case whereby information disclosure allows additional attacks. Files read from a data store over the network are often readable as they traverse the network.
 
-* An additional attack, often overlooked, is data in filenames. If you have a directory named “May 2013 layoffs,” the filename itself, “Termination Letter for Alice.docx,” reveals important information.
+* An additional attack, often overlooked, is data in filenames. If you have a directory named "May 2013 layoffs," the filename itself, "Termination Letter for Alice.docx," reveals important information.
 
 * There's also a group of attacks whereby a program emits information into the operating environment. Logs, temp files, swap, or other places can contain data. Usually, the OS will protect data in swap, but for things like crypto keys, you should use OS facilities for preventing those from being swapped out.
 

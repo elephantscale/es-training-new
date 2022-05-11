@@ -16,7 +16,7 @@
 Notes:
 Mapping is a schema definition which tells Elasticsearch how to index your data.  
 Most of the time it can figure out the correct type of mapping for your data (strings, floating point numbers, integers etc..) 
-Sometimes we have to give it a hint.  We want the “release date” to specifically be a date field. 
+Sometimes we have to give it a hint.  We want the "release date" to specifically be a date field. 
 Movie data type: year = type date, not just string
 Preferred to explicitly tell Elasticsearch since that reduces instances of the implied mapping identifying a more generic or incorrect type.
 
@@ -24,7 +24,7 @@ Preferred to explicitly tell Elasticsearch since that reduces instances of the i
 
 ## Elasticsearch 5 Syntax
 
-* In Elasticsearch 5 it was possible to send a REST request without the Content-Type. Elasticsearch would then “sniff” the content and set the type based on that. 
+* In Elasticsearch 5 it was possible to send a REST request without the Content-Type. Elasticsearch would then "sniff" the content and set the type based on that. 
 
 <img src="../../assets/images/elastic/3rd-party/syntax.png" alt="syntax.png" style="width:60%;"/>
 
@@ -33,7 +33,7 @@ Notes:
 
 Mapping is a schema definition which tells Elasticsearch how to index your data.  
 Most of the time it can figure out the correct type of mapping for your data (strings, floating point numbers, integers etc..) Some types such as timestamp and decimal, may not be correctly inferred
-Sometimes we have to give it a hint.  We want the “release date” to specifically be a date field. 
+Sometimes we have to give it a hint.  We want the "release date" to specifically be a date field. 
 
 This ability to enforce strict content-type checking has existed since Elasticsearch 5.3 via the http.content_type.required configuration setting. In 5.x it is optional, and defaults to false, in Elasticsearch 6.0, that setting defaults to true, and there is no way to disable it.
 
@@ -53,7 +53,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/6.0/removal-of-types.htm
   - Sending plain text content to API that doesn't support it returns.
 * `Content-Type header [text/plain] is not supported`
 
-* In Elasticsearch 5 if you sent plain text that started with a curly brace and the letter “a” it would assume it was JSON, but when it tried to parse that, it would fail and the error message would look more like: 
+* In Elasticsearch 5 if you sent plain text that started with a curly brace and the letter "a" it would assume it was JSON, but when it tried to parse that, it would fail and the error message would look more like: 
 
 * `Unexpected character ('a' (code 97)): was expecting double-quote to start field name`
 

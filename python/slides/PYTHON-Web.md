@@ -46,7 +46,7 @@ Notes:
 
   * Provides server and debugger
 
-  * “Do one thing and do it well” philosophy
+  * "Do one thing and do it well" philosophy
 
 
 Notes:

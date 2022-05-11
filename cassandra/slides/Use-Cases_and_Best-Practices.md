@@ -175,7 +175,7 @@ Notes:
 
  * All data for a single partition must fit (on disk) on a single machine in the cluster. 
 
- * A single column value may not be larger than 2GB; in practice, ”**1 MB**" recommended
+ * A single column value may not be larger than 2GB; in practice, "**1 MB**" recommended
 
  * **Collection** values may not be larger than **64KB**.
 

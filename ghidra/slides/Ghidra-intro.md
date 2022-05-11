@@ -94,7 +94,7 @@ Notes:
 * NSA is the largest employer of mathematicians in the USA
   * Maybe in the world
 * They routinely have 2-3 PhD's
-* "No Such Agency" or “Never Say Anything”
+* "No Such Agency" or "Never Say Anything"
 
 ![](../images/Seal_of_the_U.S._National_Security_Agency.svg.png)
 

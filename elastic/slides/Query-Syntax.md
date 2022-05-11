@@ -15,7 +15,7 @@
 * URL indicates where to search
   - in the group type of the get-together index
 * URI parameters give the details of the search
-  - find documents containing “elasticsearch”
+  - find documents containing "elasticsearch"
   - But return only the name and location fields for the top result.
 * Pretty
   - flag to print the JSON reply in a more readable format
@@ -165,7 +165,7 @@ Query-lite
 
 ---
 
-## “Query Lite”
+## "Query Lite"
 
 
 * Proper JSON query 
@@ -226,9 +226,9 @@ Fragile, mess up a character and things happen that you aren't expecting.
 
 <img src="../../assets/images/elastic/3rd-party/parameters-01.png" alt="parameters-01.png" style="width:40%;float:right;"/>
 
-* This is formally called “URI  Search”. Search for that on the Elasticsearch  documentation.
+* This is formally called "URI  Search". Search for that on the Elasticsearch  documentation.
 
-* It's really quite powerful, but again is only appropriate for quick “curl tests”.
+* It's really quite powerful, but again is only appropriate for quick "curl tests".
 
 
 ---
@@ -291,19 +291,19 @@ must does that.
 
 ```text
 term: filter by exact values
-{“term”: {“year”: 2014}}
+{"term": {"year": 2014}}
 
 terms: match if any exact values in a list match
-{“terms”: {“genre”: [“Sci-Fi”, “Adventure”] } }
+{"terms": {"genre": ["Sci-Fi", "Adventure"] } }
 
 range: Find numbers or dates in a given range (gt, gte, lt, lte)
-{“range”: {“year”: {“gte”: 2010}}}
+{"range": {"year": {"gte": 2010}}}
 
 exists: Find documents where a field exists
-{“exists”: {“field”: “tags”}}
+{"exists": {"field": "tags"}}
 
 missing: Find documents where a field is missing
-{“missing”: {“field”: “tags”}}
+{"missing": {"field": "tags"}}
 
 bool: Combine filters with Boolean logic (must, must_not, should)
 ```
@@ -314,13 +314,13 @@ bool: Combine filters with Boolean logic (must, must_not, should)
 
 ```text
 match_all: returns all documents and is the default. Normally used with a filter.
-{“match_all”: {}}
+{"match_all": {}}
 
 match: searches analyzed results, such as full text search.
-{“match”: {“title”: “star”}}
+{"match": {"title": "star"}}
 
 multi_match: run the same query on multiple fields.
-{“multi_match”: {“query”: “star”, “fields”: [“title”, “synopsis” ] } }
+{"multi_match": {"query": "star", "fields": ["title", "synopsis" ] } }
 
 bool: Works like a bool filter, but results are scored by relevance.
 
@@ -342,7 +342,7 @@ POST /shakespeare/_search
 {
     "query": {
         "multi_match" : {
-            "query" : “lear",
+            "query" : "lear",
             "fields": ["title", "summary^3"]
         }
     },
@@ -361,7 +361,7 @@ query bool: instead of filtering results that don't match it will score results 
 
 ## Syntax Reminder
 
-* queries are wrapped in a “query”: { } block,  filters are wrapped in a “filter”: { } block.
+* queries are wrapped in a "query": { } block,  filters are wrapped in a "filter": { } block.
 
 * you can combine filters inside queries, or queries inside filters too.
 
@@ -405,7 +405,7 @@ That allows for phrase searches and not just single words or partial word search
 * The **slop** represents how far you're willing to let a term move to satisfy a
 phrase (in either direction!)
 
-* Another example: “quick brown fox” would match “quick fox” with a slop of 1.
+* Another example: "quick brown fox" would match "quick fox" with a slop of 1.
 
 Notes:
 
@@ -442,7 +442,7 @@ Star and beyond appear close together, returns all of them, but assigned higher 
 
 ## Exercise
 
-* Search for “Star Wars” movies  released after 1980, using both a **URI search** and **a request body search.**
+* Search for "Star Wars" movies  released after 1980, using both a **URI search** and **a request body search.**
 
 ---
 
@@ -458,7 +458,7 @@ more!
 
 ---
 
-## Specify “From” and  “Size”
+## Specify "From" and  "Size"
 
 
 <img src="../../assets/images/elastic/3rd-party/from-size.png" alt="from-size.png" style="width:60%;"/>
@@ -684,7 +684,7 @@ Notes:
 wildcard query of year "1*" would return hits for anything beginning with 1. 
 
 Could also do something like 
-"year": "19*3“ or “year”:”19?3”
+"year": "19*3" or "year":"19?3"
 
 ---
 
@@ -743,7 +743,7 @@ if computing just the edge n-grams for star, only a single,  s, st, sta, star
 
 ## Indexing N-grams
 
-* Create an “autocomplete” analyzer
+* Create an "autocomplete" analyzer
 
 <img src="../../assets/images/elastic/3rd-party/N-grams02.png" alt="N-grams02.png" style="width:40%;"/>
 

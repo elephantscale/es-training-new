@@ -998,7 +998,7 @@ performance, accuracy, and size of network.</span>
 
 **<span dir="ltr"><span class="underline">Edit Notes :</span></span>**
 
-<span dir="ltr">Slide title is misspelled, “Transfer Leraning.</span>
+<span dir="ltr">Slide title is misspelled, "Transfer Leraning.</span>
 
 **<span dir="ltr"><span class="underline">Related Labs:</span></span>**
 

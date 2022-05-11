@@ -10,7 +10,7 @@
  * Starting point is the concept of secure by design
 
      - Ensures that security is a primary objective at all stages of product creation and deployment
-     - Avoids security being “added on” after development
+     - Avoids security being "added on" after development
      - Remedial security is historically the source of many breeches
 
 ---
@@ -128,7 +128,7 @@ Notes:
 
  * Secure protective casing and mounting options for deployment of devices in exposed locations
 
- * To identify possible problems in the supply chain, make the device and packaging “tamper evident”
+ * To identify possible problems in the supply chain, make the device and packaging "tamper evident"
 
  * Shield against side-channel attacks
 
@@ -193,7 +193,7 @@ Notes:
  * Disable all unused ports, protocols and services
  * Apply tested updates
  * Disable write access to the root file system for users and applications
- * Do not use “root” – create an administrator account that has only the rights needed for administering the device
+ * Do not use "root" – create an administrator account that has only the rights needed for administering the device
  * Use an encrypted file system
  * Document the OS security configuration
  * Apply minimum access rights to all files and directories
@@ -408,7 +408,7 @@ Notes:
 
  * At each stage of the boot process the boot software checks that the hardware configuration matches the expected configuration parameters for that stage
 
- * The boot process ensures that if an error occurs during any stage of the process, the device “fails gracefully” into a secure state in which RAM has been cleared of residual code
+ * The boot process ensures that if an error occurs during any stage of the process, the device "fails gracefully" into a secure state in which RAM has been cleared of residual code
 
      - Failed boots do not leave the device open to unauthorized access
 
@@ -768,7 +768,7 @@ Notes:
 ## Security Responsibility
 
 
- * Security is not the responsibility of a “security team”
+ * Security is not the responsibility of a "security team"
 
  * Just like quality, security is everyone's responsibility
 

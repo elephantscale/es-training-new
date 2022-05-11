@@ -62,7 +62,7 @@ Notes:
  * Lucene in Action: http://www.manning.com/hatcher3/
      - Code samples available for download
  * Ant: http://ant.apache.org/
-     - Java build system used by “Lucene in Action” code
+     - Java build system used by "Lucene in Action" code
 
 Notes: 
 
@@ -247,7 +247,7 @@ Notes:
  * `Document`
      - Represents a collection of named Fields.  Text in these Fields are indexed.
  * Field
-     - Note : Lucene Fields can represent both “fields” and “zones” as described in the textbook
+     - Note : Lucene Fields can represent both "fields" and "zones" as described in the textbook
      - Or even other things like numbers.
      - `StringFields` are indexed but not tokenized
      - `TextFields` are indexed and tokenized
@@ -266,11 +266,11 @@ import org.apache.lucene.document. Field ;
   ...
 protected Document getDocument(File f) throws Exception {
   Document  doc = new  Document ();
-  doc.add (new  TextField ("contents”, new FileReader(f))) 
-  doc.add (new  StringField ("filename”,
+  doc.add (new  TextField ("contents", new FileReader(f))) 
+  doc.add (new  StringField ("filename",
                            f.getName(),
                            Field.Store.YES)); 
-  doc.add (new  StringField ("fullpath”,
+  doc.add (new  StringField ("fullpath",
                            f.getCanonicalPath(),
                            Field.Store.YES));
   return doc;
@@ -490,7 +490,7 @@ public static void search(String indexDir, String q)
   throws IOException, ParseException 
 ...
 QueryParser parser =
-   new QueryParser ("contents”,
+   new QueryParser ("contents",
 		 new StandardAnalyzer ());                                 
 Query query = parser.parse (q);
 ... 
@@ -688,10 +688,10 @@ Notes:
 
 ```java
 Document  doc = new  Document ();
-  doc. add (new  TextField (“author”,
-					     “chris manning”));
-doc. add (new  TextField (“author”,
-					     “prabhakar raghavan”));
+  doc. add (new  TextField ("author",
+					     "chris manning"));
+doc. add (new  TextField ("author",
+					     "prabhakar raghavan"));
 ...
 ```
 <!-- {"left" : 0, "top" : 2.66, "height" : 2.19, "width" : 9.48} -->
@@ -722,7 +722,7 @@ Notes:
 ## Analysis example
 
 
- * “The quick brown fox jumped over the lazy dog”
+ * "The quick brown fox jumped over the lazy dog"
  * `WhitespaceAnalyzer`
      - `[The] [quick] [brown] [fox] [jumped] [over] [the] [lazy] [dog]`
  * SimpleAnalyzer
@@ -741,7 +741,7 @@ Notes:
 ## Another analysis example
 
 
- * “XY&Z Corporation – xyz@example.com”
+ * "XY&Z Corporation – xyz@example.com"
 
  * WhitespaceAnalyzer
 

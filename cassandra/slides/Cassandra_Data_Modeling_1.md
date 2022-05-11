@@ -1,4 +1,6 @@
-# Cassandra Data Modeling 1
+# Data Modeling with Cassandra  - Part 1
+
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:30%;" />
 
 
 ---
@@ -54,7 +56,7 @@ Notes:
 
  * Standard from Cassandra 2.x(Earlier `C*` versions used Thrift API)
 
- * Makes you think about “data model” rather than APIs 
+ * Makes you think about "data model" rather than APIs 
 
 ```sql
 -- CQL Examples
@@ -458,15 +460,15 @@ Notes:
 ## Myflix 'Movies' 'Features' Table
 
 
- * Lets create a “features” table with the following attributes:
+ * Lets create a "features" table with the following attributes:
 
 </br>
 
 
 | Attribute    | Type   | Example                                  |
 |--------------|--------|------------------------------------------|
-| Name         | String | “Star Wars”  </br>“Mad Men”              |
-| Type         | String | “Movie”  </br> “TV Show”  </br>“Standup” |
+| Name         | String | "Star Wars"  </br>"Mad Men"              |
+| Type         | String | "Movie"  </br> "TV Show"  </br>"Standup" |
 | Release_date | Data   | 2016-01-01                               |
 
 </br>
@@ -486,17 +488,17 @@ Notes:
 
  * Let's add a unique key called 'code.'We will assign this for each movie.IMDB examples:
 
-     - “Star Wars: Force Awakens”http://www.imdb.com/title/tt2488496/
+     - "Star Wars: Force Awakens"http://www.imdb.com/title/tt2488496/
 
-     - “Mad Men”http://www.imdb.com/title/tt0804503/
+     - "Mad Men"http://www.imdb.com/title/tt0804503/
 
 </br>
 
 | Attribute    | Type   | Example                                  |
 |--------------|--------|------------------------------------------|
-| **Code**         | **String** | **“star1”   </br> “madmen”**                |
-| Name         | String | “Star Wars”  </br>“Mad Men”              |
-| Type         | String | “Movie”  </br> “TV Show”  </br>“Standup” |
+| **Code**         | **String** | **"star1"   </br> "madmen"**                |
+| Name         | String | "Star Wars"  </br>"Mad Men"              |
+| Type         | String | "Movie"  </br> "TV Show"  </br>"Standup" |
 | Release_date | Data   | 2016-01-01                               |
 
 
@@ -611,9 +613,9 @@ Notes:
 
  * TTL–Time To Live (in seconds)
 
- * Determines how long the value will be “alive”
+ * Determines how long the value will be "alive"
 
- * After that, the value “disappears”
+ * After that, the value "disappears"
 
  * INSERT INTO < table name > (column names)VALUES (column values) USING TTL <# seconds>;
 
@@ -807,7 +809,7 @@ Notes:
 ## Alter Table
 
 
- * Altering tables (adding columns, etc.) is “very fast” in `C*`
+ * Altering tables (adding columns, etc.) is "very fast" in `C*`
 
      - As opposed to RDBMS (most need to re-write tables)
 
@@ -956,7 +958,7 @@ delete studio from features where code = 'madmen'
 
 ```
 
- * In `C*` deletes are “soft deletes”
+ * In `C*` deletes are "soft deletes"
 
  * `C*` marks the data as deleted
 
@@ -964,7 +966,7 @@ delete studio from features where code = 'madmen'
 
      - Blocks data from queries
 
- * Data on disk is removed during the next “compaction cycle.”(More on this later)
+ * Data on disk is removed during the next "compaction cycle."(More on this later)
 
 Notes: 
 
@@ -1122,7 +1124,7 @@ Notes:
 ## Indexing Best Practices
 
 
- * Avoid indexing “highly volatile” columns (columns that are updated frequently)
+ * Avoid indexing "highly volatile" columns (columns that are updated frequently)
 
  * Creating index on a VERY LOW cardinality column doesn't make sense
 

@@ -358,7 +358,7 @@ Notes:
 | Raw text                | Transformation          | Solr technique                                                    |
 |-------------------------|-------------------------|-------------------------------------------------------------------|
 | All text                | Lowercased (SF's->sf's) | LowerCaseFilterFactory                                            |
-| a, at, in, with, by, on | Removed from text       | Very common terms called “stop words” removal – StopFilterFactory |
+| a, at, in, with, by, on | Removed from text       | Very common terms called "stop words" removal – StopFilterFactory |
 | Drinking, learning      | drink, learn            | Stemming with KStemFilterFactory                                  |
 | SF's                    | sf, san francisco       | Apostrophe s ('s) removed by WordDelimiterFilterFactory           |
 

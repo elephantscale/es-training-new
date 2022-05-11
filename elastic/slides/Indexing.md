@@ -114,8 +114,8 @@ Notes:
   - Field values
 * Can be hierarchical
   - Documents within documents
-  - Simple field: “Location” -> “Washington”
-  - Compound field: “Location” -> (“Washington”, “123 Main”)
+  - Simple field: "Location" -> "Washington"
+  - Compound field: "Location" -> ("Washington", "123 Main")
 * Has a flexible structure
   - no predefined schema
 

@@ -253,7 +253,7 @@ Once we fix our problems, we're by no means done.  Changes that happen can affec
 
 We often have to walk on tiptoes on our server to make sure that we don't break something else.   Hosting two apps on the same server is a non-starter.
 
-The old Java maxim “Write Once, Run Anywhere” doesn't really work.  Because, the Java app itself may run anywhere, but there's so much else that comes into play that will either allow or prevent the app from working.
+The old Java maxim "Write Once, Run Anywhere" doesn't really work.  Because, the Java app itself may run anywhere, but there's so much else that comes into play that will either allow or prevent the app from working.
 
 ---
 
@@ -329,7 +329,7 @@ Instructor Notes :
 
 Participant Notes :
 
-This “Matrix From Hell” is adapted from the website http://www.docker.com /  The idea here is that we have a number of different components to our app: front-end, back-end, various DBs, services, queues, etc.  These things all come together to make our app, like pieces of the puzzle.  Those pieces will have to be assembled in just the right way on each of our deployment platforms, from local to test, to QA.  How  do we ensure that our app works the same way on each of them?  There are many combinations of factors, which is why we call this the ”Matrix from Hell”.
+This "Matrix From Hell" is adapted from the website http://www.docker.com /  The idea here is that we have a number of different components to our app: front-end, back-end, various DBs, services, queues, etc.  These things all come together to make our app, like pieces of the puzzle.  Those pieces will have to be assembled in just the right way on each of our deployment platforms, from local to test, to QA.  How  do we ensure that our app works the same way on each of them?  There are many combinations of factors, which is why we call this the "Matrix from Hell".
 
 It becomes a big headache to make sure that all the various components of our app, on the rows of the matrix, all work properly on the columns of our matrix, which are the various deployment platforms.
 
@@ -348,7 +348,7 @@ It becomes a big headache to make sure that all the various components of our ap
    - File System
    - Service Processes
 
-* All as a “sealed unit”
+* All as a "sealed unit"
    - Without having to re-deploy
    - Reconfigure
 
@@ -411,13 +411,13 @@ Virtualization allows us to easily start, stop, and move VMs between machines, s
    - Achieves scalability and isolation on mainframe systems
 
 * **1990s** PC Era
-   - VMs a “Mainframe” technology and out of vogue.
-   - Just run the app on the ”bare metal”
+   - VMs a "Mainframe" technology and out of vogue.
+   - Just run the app on the "bare metal"
 
 * **Late 19902 - 2000s** Application Servers
    - Deploy App to Application Server
    - SysAdmins managed deployment of application
-   - Still ”Bare Metal”
+   - Still "Bare Metal"
 
 * **2006 - Present** Intel/AMD Support Hardware Virtualization
    - Enables Isolation of VM processes
@@ -431,7 +431,7 @@ Participant Notes :
 
 VMs have been around since the mainframe era, and allow multi-tenancy much more effective.  As we can see, VMs became much more popular in the mid-2000s as VMWare and other providers came out and CPU vendors started to make hardware virtualization.
 
-That said, there are disadvantages to virtualization.   “Bare Metal” undeniably runs faster.
+That said, there are disadvantages to virtualization.   "Bare Metal" undeniably runs faster.
 
 In the modern era, virtualization is ubiquitous and assumed -- if I have a server instance I'm sure it's really a VM and not a "bare metal" instance. The ability to copy my instance and redeploy it is something that we normally take for granted in this day and age.
 
@@ -662,10 +662,10 @@ Security: Running untrusted code is not a good use case for containers.  While c
 
 <img src="../../assets/images/docker/3rd-party/business-cargo-cargo-container-262353.jpg" style="width:30%;float:right;" />
 
-* 1982: Unix ”chroot” command: Allows filesystem-level isolation
+* 1982: Unix "chroot" command: Allows filesystem-level isolation
     - Allows process and children access to an isolated filesystem.
     - Users, Processes, network, and other resources shared.
-* 2000: BSD “jail” command: 
+* 2000: BSD "jail" command: 
     - Allows filesystem, user, processes, and network isolation
     - Inspired Solaris Zones, which combines jail with dedicated ZFS filesystem  
 * 2005: Linux namespaces: Process isolation

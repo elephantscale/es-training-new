@@ -162,9 +162,9 @@ Notes:
 ## ElasticSearch
 
   * SOLR's competitor
-  * SOLR is “true open source,” with a community behind it
+  * SOLR is "true open source," with a community behind it
   * Thus, government agencies prefer SOLR (personal view)
-  * ElasticSearch came up as “search done right”
+  * ElasticSearch came up as "search done right"
   * For a while, ElasticSearch was moving faster
   * By now, they have evened out
   * Note : Cloudera integrated SOLR, not ES

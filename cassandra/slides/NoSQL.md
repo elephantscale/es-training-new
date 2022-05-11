@@ -108,7 +108,7 @@ Notes:
 ## What's Wrong with Relational Databases?
 
 
- * Most RDBMS are written for “single machine architecture”
+ * Most RDBMS are written for "single machine architecture"
 
  * Most DBs only scale vertically
 
@@ -116,7 +116,7 @@ Notes:
 
      - There is only so much money can buy :)
 
- * Scaling has to be done “outside the db”
+ * Scaling has to be done "outside the db"
 
      - Complicates application code!
 
@@ -124,7 +124,7 @@ Notes:
 
      - Not easy to do it at scale
 
-     - Lots of “baby sitting”
+     - Lots of "baby sitting"
 
      - (War stories!)
 

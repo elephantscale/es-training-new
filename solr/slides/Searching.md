@@ -26,7 +26,7 @@ Notes:
 ---
 ## Example 1
 
-  * Try the following (running “example” data)
+  * Try the following (running "example" data)
   * Search for iPod in the 'q' text box, and name, features, score in the 'fl' field
   * How many documents are returned?
   * Do you agree with the ranking?
@@ -203,7 +203,7 @@ Notes:
 
   - `/select?q={!edismax}hello world`
   - `/select?q={!term}hello`
-  - `/select?q={!edismax}hello world OR {!lucene}title:"my title“`
+  - `/select?q={!edismax}hello world OR {!lucene}title:"my title"`
 
 * **Two query parsers used!**
 

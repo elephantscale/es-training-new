@@ -4,7 +4,7 @@
 ## Inverted Index
 
   * Each document has an id and a list of terms.
-  * For each term “t” we must store a list of all documents that contain “t”.
+  * For each term "t" we must store a list of all documents that contain "t".
   * Identify each document by its id.
 
 <img src="../../assets/images/solr/3rd-party/Inverted-Index-01.png" style="width:40%;"/> <!-- {"left" : 2.82, "top" : 3.51, "height" : 4.14, "width" : 4.6} -->
@@ -64,7 +64,7 @@ Notes:
 
   * Tokenization
     - Cut character sequence into word tokens
-      - Deal with **“John's” , a state-of-the-art solution**
+      - Deal with **"John's" , a state-of-the-art solution**
   * Normalization
     - Map text and query term to same form
       - You want **U.S.A.** and **USA** to match
@@ -161,7 +161,7 @@ Notes:
       - Retrieve its postings.
     - Locate **Caesar** in the Dictionary;
       - Retrieve its postings.
-    - “Merge” the two postings (intersect the document sets):
+    - "Merge" the two postings (intersect the document sets):
   * 128
   * 34
   * **Brutus**
@@ -189,7 +189,7 @@ Notes:
 
 ## Intersecting two postings lists
 
-  * (a “merge” algorithm)
+  * (a "merge" algorithm)
 
 
 <img src="../../assets/images/solr/3rd-party/Intersecting-two-postings-lists.png" style="width:50%;float:left;"/><!-- {"left" : 0.26, "top" : 2.07, "height" : 4.92, "width" : 6.6} -->
@@ -273,7 +273,7 @@ Notes:
   * What about an arbitrary Boolean formula?
   * (**Brutus** *OR* **Caesar**) *AND NOT*
   * (**Antony** *OR* **Cleopatra**)
-  * Can we always merge in “linear” time?
+  * Can we always merge in "linear" time?
     - Linear in what?
   * Can we do better?
 
@@ -393,11 +393,11 @@ Notes:
 ## Phrase queries
 
 
- * We want to be able to answer queries such as  **“Calvin Klein”** – as a phrase
+ * We want to be able to answer queries such as  **"Calvin Klein"** – as a phrase
 
- * Thus the sentence  *“My best friend is Mary Klein. My name is Calvin.”*  is not a match. 
+ * Thus the sentence  *"My best friend is Mary Klein. My name is Calvin."*  is not a match. 
 
-     - The concept of phrase queries has proven easily understood by users; one of the few “advanced search” ideas that works
+     - The concept of phrase queries has proven easily understood by users; one of the few "advanced search" ideas that works
 
      - Many more queries are  *implicit phrase queries* 
 
@@ -417,7 +417,7 @@ Notes:
 
  * Index every consecutive pair of terms in the text as a phrase
 
- * For example the text “Friends, Romans, Countrymen” would generate the biwords
+ * For example the text "Friends, Romans, Countrymen" would generate the biwords
 
      -  **friends romans** 
 
@@ -491,7 +491,7 @@ Notes:
 
 ## Positional Index Example
 
- * Which of docs 1,2,4,5 could contain “ **to be or not to be** ”?
+ * Which of docs 1,2,4,5 could contain " **to be or not to be** "?
 
 ```text
   < **be** : 993427;
@@ -522,7 +522,7 @@ Notes:
 
  * Extract inverted index entries for each distinct term: **to, be, or, not.** 
 
- * Merge their *doc:position* lists to enumerate all positions with “ **to be or not to be** ”.
+ * Merge their *doc:position* lists to enumerate all positions with " **to be or not to be** ".
 
     -  **to:** *2* :1,17,74,222,551; **4:8,16,190,429,433;** *7* :13,23,191; ...
 
@@ -542,7 +542,7 @@ Notes:
 
  * `LIMIT! /3 STATUTE /3 FEDERAL /2 TORT `
 
-     - Again, here, `/k`  means “within  *k*  words of”.
+     - Again, here, `/k`  means "within  *k*  words of".
 
  * Clearly, positional indexes can be used for such queries; biword indexes cannot.
 
@@ -605,7 +605,7 @@ Notes:
 
  * Positional index size 35–50% of volume of original text
 
-     - Caveat: all of this holds for “English-like” languages
+     - Caveat: all of this holds for "English-like" languages
 
 
 Notes: 
@@ -619,9 +619,9 @@ Notes:
 
  * These two approaches can be profitably combined
 
-     - For particular phrases ( **“Michael Jackson”, “Britney Spears”** ) it is inefficient to keep on merging positional postings lists
+     - For particular phrases ( **"Michael Jackson", "Britney Spears"** ) it is inefficient to keep on merging positional postings lists
 
-        * Even more so for phrases like  **“The Who”** 
+        * Even more so for phrases like  **"The Who"** 
 
  * Williams et al. (2004) evaluate a more sophisticated mixed indexing scheme
 

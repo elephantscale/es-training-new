@@ -52,7 +52,7 @@ Google Cloud Platform offers four main kinds of services: Compute, Storage, Big 
 
 ###  Getting Started With Google Cloud Platform 
 
-GCP customers use projects to organize the resources they use. They use Google Cloud Identity and Access Management, also called “IAM,” to control who can do what with those resources. They use any of several technologies to connect with GCP. This module covers each of these topics, and it introduces a service called Cloud Launcher that is an easy way to get started with GCP.
+GCP customers use projects to organize the resources they use. They use Google Cloud Identity and Access Management, also called "IAM," to control who can do what with those resources. They use any of several technologies to connect with GCP. This module covers each of these topics, and it introduces a service called Cloud Launcher that is an easy way to get started with GCP.
 
 
 ###  Virtual Machines in the CLoud

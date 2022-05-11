@@ -212,13 +212,13 @@ Notes:
 
      - They  **improve the fine-tuning**  based approaches by proposing  **BERT** 
 
-     - BERT alleviates unidirectionality constraint by using a  **“masked language model”**  pre-training objective
+     - BERT alleviates unidirectionality constraint by using a  **"masked language model"**  pre-training objective
 
      - the objective of  **MLM**  is to predict the original vocabulary id of the masked word based only on its context
 
      -  **MLM**  allows us to pretrain a deep bidirectional Transformer
 
- * They also use a **“next sentence prediction”** task that jointly  **pretrains text-pair representations**.
+ * They also use a **"next sentence prediction"** task that jointly  **pretrains text-pair representations**.
 
 
 Notes: 
@@ -359,8 +359,8 @@ Notes:
  *  **Input/Output**  **Representations** 
 
      - Input representation is able to  **unambiguously represent** both a single sentence and a pair of sentences in one token sequence
-        * A  **“sentence”** can be an arbitrary span of contiguous text
-        * A  **“sequence”** refers to the input token sequence to BERT
+        * A  **"sentence"** can be an arbitrary span of contiguous text
+        * A  **"sequence"** refers to the input token sequence to BERT
 
  * In this paper they use  **WordPiece**  embeddings with a 30,000 token vocabulary
 
@@ -635,11 +635,11 @@ Notes:
   * **Effect of Pre-training Tasks:**
     - In this section they demonstrate the importance of the deep **bidirectionality of BERT** by evaluating two pretraining objectives using exactly the same pretraining data, fine-tuning scheme, and hyperparameters as **𝑩𝑬𝑹𝑻<sub>𝑩𝑨𝑺𝑬</sub>**:
     - **No NSP:**
-      - Using the **“masked LM” (MLM)** without **the “next sentence prediction” (NSP)** task
+      - Using the **"masked LM" (MLM)** without **the "next sentence prediction" (NSP)** task
     - **LTR & No NSP:**
       - Using a standard **Left-to-Right (LTR) LM** without **the NSP** task
     - Examine the **impact brought** by the NSP
-     - Evaluate the **impact of training bidirectional representations** by comparing “No NSP” to “LTR & No NSP”
+     - Evaluate the **impact of training bidirectional representations** by comparing "No NSP" to "LTR & No NSP"
  * The **LTR model** performs **worse than** the **MLM model** on all tasks, with **large drops on MRPC and SQuAD**
 
 
