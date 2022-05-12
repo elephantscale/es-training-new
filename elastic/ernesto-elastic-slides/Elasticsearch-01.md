@@ -72,7 +72,7 @@ Notes:
 ## Introductions
 
 * Name
-* Title or Job Role if your title doesn’t tell me what you do
+* Title or Job Role if your title doesn't tell me what you do
 * Which statement best describes your Elasticsearch experience?
 - I am **currently working** with Elasticsearch on a project/initiative
 - I **expect to work** with Elasticsearch on a project/initiative in the future
@@ -352,14 +352,14 @@ Complex, fast-moving datasets make it nearly impossible to spot infrastructure p
 <img src="../../assets/images/elastic/3rd-party/logical-concepts.png" alt="logical-concepts.png" style="width:70%;"/>
 
 
-* Elasticsearch is moving away from ‘types’. In Elasticsearch 6 only one type is allowed per index.
+* Elasticsearch is moving away from 'types'. In Elasticsearch 6 only one type is allowed per index.
 
 
 Notes:
 
 3 main logical concepts behind Elasticsearch: 
 Document
-Structured data similar to a row in a database, something that you’re searching for
+Structured data similar to a row in a database, something that you're searching for
 Not just about text, any data can work. 
 JSON format (way to encode text, objects etc..) 
 Every document has a unique ID (auto assigned, or manually) 
@@ -388,13 +388,13 @@ Notes:
 
 Inverted means we are mapping things searching for, to documents searching in. 
 Inverted index is the mechanism by which all search engines work. 
-Say we have 2 documents, inverted index doesn’t store them directly, it flips on head
+Say we have 2 documents, inverted index doesn't store them directly, it flips on head
 each document split up into individual search terms, split up by each word, lowercased to normalize 
-maps each search term to documents they occur within. Here we can see “Space” shows up in document1 and document2.
+maps each search term to documents they occur within. Here we can see "Space" shows up in document1 and document2.
 
 ---
 
-## It’s not  quite that simple.
+## It's not  quite that simple.
 
 * **TF-IDF** means Term Frequency **Inverse Document Frequency**
 * **Term Frequency** is how often a term appears in a **given document**  Document Frequency is how often a term appears in **all documents**  Term Frequency / **Document Frequency** measures the **relevance**
@@ -404,11 +404,11 @@ of a term in a document
 Notes:
 
 How do I deal with concept of relevance?  
-If I search for the word ”the” how do I make sure it returns documents where “the” is relevant?
+If I search for the word "the" how do I make sure it returns documents where "the" is relevant?
 TF-IDF 
-Term Frequency is how often a word appears in a document, “the” “of” “space” etc.. 
+Term Frequency is how often a word appears in a document, "the" "of" "space" etc.. 
 Document Frequency: How often a term appears in all documents in index.
- ”Space” doesn’t appear often in index, but “the” does.  
+ "Space" doesn't appear often in index, but "the" does.  
 Divide Term Frequency by Document Frequency gives us measure of relevance.
 How special is this term to this document? How often does it occur in this doc? How often does it occur in all documents?
 
@@ -425,12 +425,12 @@ Notes:
 How do we use an index in Elasticsearch? 
 RESTful API 
 Explain what REST is (same thing as when you request a page in browser etc) 
-REST uses verbs to define what it’s doing.. GET, POST, PUT.
+REST uses verbs to define what it's doing.. GET, POST, PUT.
 Elasticsearch uses the same HTTP protocol, which makes it easy to communicate with. 
 If you are requesting something from Elasticsearch you do so by just sending a GET request (same as any other web system)
 
-client API’s
-Instead of worrying about constructing JSON data correctly, there’s client APIs that make it much easier 
+client API's
+Instead of worrying about constructing JSON data correctly, there's client APIs that make it much easier 
 Python, Ruby, Java, etc.. 
 analytic tools
 Kibana 
@@ -485,7 +485,7 @@ In a single cluster, you can have as many nodes as you want. Furthermore, if the
 ## Anatomy of a HTTP  Request
 
 
-* METHOD: the “verb” of the request. GET, POST, PUT, or DELETE
+* METHOD: the "verb" of the request. GET, POST, PUT, or DELETE
 * PROTOCOL: what flavor of HTTP (HTTP/1.1)  HOST: what web server you want to talk to  URL: what resource is being requested
 * BODY: extra data needed by the server
 
@@ -514,7 +514,7 @@ Cache-Control: no-cache
 
 ---
 
-## RESTful API’s
+## RESTful API's
 
 
 * Pragmatic definition: using HTTP requests to communicate with web services
@@ -560,10 +560,10 @@ Roy Fielding articulated ReST in his dissertation at UC Irvine in 2000
 ## The Curl Command
 
 * A way to issue HTTP requests from the command line
-* From code, you’ll use whatever library you use for HTTP / REST in the same way.
+* From code, you'll use whatever library you use for HTTP / REST in the same way.
 
 ```text
-curl –H “Content-Type: application/json” <URL> -d ‘<BODY>’
+curl –H "Content-Type: application/json" <URL> -d '<BODY>'
 ```
 
 ---
@@ -590,10 +590,10 @@ curl –H “Content-Type: application/json” <URL> -d ‘<BODY>’
 ## The Httpie Command
 
 * A way to issue HTTP requests from the command line
-* Simpler syntax than curl, defaults to ‘pretty’ output.
+* Simpler syntax than curl, defaults to 'pretty' output.
 
 ```text
-http <VERB> <URL> -d ‘<BODY>’
+http <VERB> <URL> -d '<BODY>'
 ```
 
 
@@ -868,7 +868,7 @@ Notes:
 
 Cannot change primary shards later on. Must define it when setting up cluster. 
 Most applications require additional read capacity, not write. 
-You can also re-index your data and copy it over but it’s not a fun process 
+You can also re-index your data and copy it over but it's not a fun process 
 Plan ahead so you have the correct number of primary shards.
 
 By default, each index in Elasticsearch is allocated 5 primary shards and 1 replica which means that if you have at least two nodes in your cluster, your index will have 5 primary shards and another 5 replica shards (1 complete replica) for a total of 10 shards per index. Each Elasticsearch shard is a Lucene index.
@@ -1022,11 +1022,11 @@ https://jruels.github.io/elastic/labs/01-install/
 * The key with self-healing is awareness
 * Companies have created toolsets and configurations for this, e.g. LogIt.io
 * APIs exist to check shards, indices, clusters, nodes
-* Baselines are required to be able to correctly “heal” a given issue
+* Baselines are required to be able to correctly "heal" a given issue
 
 * Identify
 * Compare
-* Act - Don’t overreact
+* Act - Don't overreact
 * Document
 * Train
 
@@ -1047,15 +1047,15 @@ https://jruels.github.io/elastic/labs/01-install/
 
 ## Movielens
 
-* **Movielens** is a free dataset of movie ratings gathered from movielens.org. It contains user ratings, movie metadata, and user metadata. Let’s download and examine  the data files from movielens.org
+* **Movielens** is a free dataset of movie ratings gathered from movielens.org. It contains user ratings, movie metadata, and user metadata. Let's download and examine  the data files from movielens.org
 
 <img src="../../assets/images/elastic/3rd-party/movielens.png" alt="movielens.png" style="width:60%;"/>
 
 Notes:
 
 Elasticsearch is all about interacting with a lot of data
-So far we added Shakespeare’s works but that’s not enough to see the true power of Elasticsearch. 
-Let’s add this sample movie data to it as well. 
+So far we added Shakespeare's works but that's not enough to see the true power of Elasticsearch. 
+Let's add this sample movie data to it as well. 
 
 
 
@@ -1086,7 +1086,7 @@ Let’s add this sample movie data to it as well.
 Notes:
 Mapping is a schema definition which tells Elasticsearch how to index your data.  
 Most of the time it can figure out the correct type of mapping for your data (strings, floating point numbers, integers etc..) 
-Sometimes we have to give it a hint.  We want the “release date” to specifically be a date field. 
+Sometimes we have to give it a hint.  We want the "release date" to specifically be a date field. 
 Movie data type: year = type date, not just string
 Preferred to explicitly tell Elasticsearch since that reduces instances of the implied mapping identifying a more generic or incorrect type.
 
@@ -1094,7 +1094,7 @@ Preferred to explicitly tell Elasticsearch since that reduces instances of the i
 
 ## Elasticsearch 5 Syntax
 
-* In Elasticsearch 5 it was possible to send a REST request without the Content-Type. Elasticsearch would then “sniff” the content and set the type based on that. 
+* In Elasticsearch 5 it was possible to send a REST request without the Content-Type. Elasticsearch would then "sniff" the content and set the type based on that. 
 
 <img src="../../assets/images/elastic/3rd-party/syntax.png" alt="syntax.png" style="width:60%;"/>
 
@@ -1103,7 +1103,7 @@ Notes:
 
 Mapping is a schema definition which tells Elasticsearch how to index your data.  
 Most of the time it can figure out the correct type of mapping for your data (strings, floating point numbers, integers etc..) Some types such as timestamp and decimal, may not be correctly inferred
-Sometimes we have to give it a hint.  We want the “release date” to specifically be a date field. 
+Sometimes we have to give it a hint.  We want the "release date" to specifically be a date field. 
 
 This ability to enforce strict content-type checking has existed since Elasticsearch 5.3 via the http.content_type.required configuration setting. In 5.x it is optional, and defaults to false, in Elasticsearch 6.0, that setting defaults to true, and there is no way to disable it.
 
@@ -1120,10 +1120,10 @@ https://www.elastic.co/guide/en/elasticsearch/reference/6.0/removal-of-types.htm
 
 * There are two reasons this changed. 
 * Clarity
-  - Sending plain text content to API that doesn’t support it returns.
+  - Sending plain text content to API that doesn't support it returns.
 * `Content-Type header [text/plain] is not supported`
 
-* In Elasticsearch 5 if you sent plain text that started with a curly brace and the letter “a” it would assume it was JSON, but when it tried to parse that, it would fail and the error message would look more like: 
+* In Elasticsearch 5 if you sent plain text that started with a curly brace and the letter "a" it would assume it was JSON, but when it tried to parse that, it would fail and the error message would look more like: 
 
 * `Unexpected character ('a' (code 97)): was expecting double-quote to start field name`
 
@@ -1131,7 +1131,7 @@ Notes:
 
 Elasticsearch 5 did some magic to try and figure out what type of content you were sending. 
 This led to bad error messages.
-Plain text sent.. ES5 sees it has curly braces and assumes it’s JSON but it isn’t so get syntax error back.
+Plain text sent.. ES5 sees it has curly braces and assumes it's JSON but it isn't so get syntax error back.
 
 As Elasticsearch has evolved the development team made a conscious decision to favor reliability and predictability over leniency. 
 
@@ -1156,7 +1156,7 @@ Simple HTML page that posts a document to Elasticsearch without authenticating.
 Sending JSON as Plain Text
 
 Strict checking of content-type is also useful as a layer of protection against Cross Site Request Forgery attacks.
-If you run an out-of-the-box install of Elasticsearch 5 on your local computer, and then open up the page noted in the slide, in your web browser, it will add a new document in your Elasticsearch cluster that stores your browser’s User Agent and the time that you loaded the page. That’s not so scary, but with minimal changes we could make that same page overwrite or delete existing documents.
+If you run an out-of-the-box install of Elasticsearch 5 on your local computer, and then open up the page noted in the slide, in your web browser, it will add a new document in your Elasticsearch cluster that stores your browser's User Agent and the time that you loaded the page. That's not so scary, but with minimal changes we could make that same page overwrite or delete existing documents.
 
 
 ---
@@ -1193,7 +1193,7 @@ broken up by whitespace, etc..
 Notes:
 
 Character filters: If apply same analyzer to search query and data that is indexed it will return better results. 
-Example: Search for data using ampersand, or ‘and’ and get same results. 
+Example: Search for data using ampersand, or 'and' and get same results. 
 tokenizer: Splits strings up certain ways, language specific tokenizing etc.. 
 token filter: case insensitive (lowercase everything), stemming (box, boxed, boxing can all match).
 stopwords (and, a, the) stops these words from being indexed. (stopwords can have side effects)
@@ -1207,10 +1207,10 @@ stopwords (and, a, the) stops these words from being indexed. (stopwords can hav
   - splits on word boundaries, removes punctuation,  lowercases. good choice if language is unknown
 
 * **Simple**
-  - splits on anything that isn’t a letter, and lowercases
+  - splits on anything that isn't a letter, and lowercases
 
 * **Whitespace**
-  - splits on whitespace but doesn’t lowercase
+  - splits on whitespace but doesn't lowercase
 
 * **Language (i.e. english)**
   - accounts for language-specific stopwords and  stemming
@@ -1218,9 +1218,9 @@ stopwords (and, a, the) stops these words from being indexed. (stopwords can hav
 Notes:
 
 Standard: default
-if you don’t know language it’s good to stick with. (supports foreign language)
+if you don't know language it's good to stick with. (supports foreign language)
 Simple
-Splits on anything that isn’t a letter and it lowercases everything. 
+Splits on anything that isn't a letter and it lowercases everything. 
 Whitespace
 Splits on whitespace, punctuation is preserved.
 Language specific (specify in English, or any other language) 
@@ -1307,7 +1307,7 @@ Create a shell script that automatically passes JSON Content-Type to curl.
 
 Notes:
 
-Don’t do this in production, it is a hack that is only applicable to this course. 
+Don't do this in production, it is a hack that is only applicable to this course. 
 
 
 ---
@@ -1323,7 +1323,7 @@ Don’t do this in production, it is a hack that is only applicable to this cour
 
 Notes:
 
-Now that we have our mapping created let’s go ahead and insert a movie
+Now that we have our mapping created let's go ahead and insert a movie
 
 ---
 
@@ -1333,7 +1333,7 @@ Now that we have our mapping created let’s go ahead and insert a movie
 
 Notes:
 
-Now that we have our mapping created let’s go ahead and insert a movie
+Now that we have our mapping created let's go ahead and insert a movie
 
 ---
 
@@ -1342,7 +1342,7 @@ Now that we have our mapping created let’s go ahead and insert a movie
 
 ## Ison Bulk Import
 
-* **`curl -XPUT	127.0.0.1:9200/_bulk –d ‘`**
+* **`curl -XPUT	127.0.0.1:9200/_bulk –d '`**
 
 ```text
 { "create" : { "_index" : "movies", "_type" : "movie", "_id" : "135569" } }
@@ -1354,7 +1354,7 @@ Now that we have our mapping created let’s go ahead and insert a movie
 { "create" : { "_index" : "movies", "_type" : "movie", "_id" : "58559" } }
 { "id": "58559", "title" : "Dark Knight, The", "year":2008 , "genre":["Action", "Crime", "Drama", "IMAX"] }
 { "create" : { "_index" : "movies", "_type" : "movie", "_id" : "1924" } }
-{ "id": "1924", "title" : "Plan 9 from Outer Space", "year":1959 , "genre":["Horror", "Sci-Fi"] } ‘
+{ "id": "1924", "title" : "Plan 9 from Outer Space", "year":1959 , "genre":["Horror", "Sci-Fi"] } '
 ```
 
 Notes:
@@ -1377,7 +1377,7 @@ Elasticsearch goes through this one document at a time, sends it off to whatever
 
 Notes:
 
-We’ve covered indexing new documents using JSON format in REST API. 
+We've covered indexing new documents using JSON format in REST API. 
 We tried to insert Interstellar twice and it gave us an error. 
 Elasticsearch documents are immutable, they can not be changed after creation. 
 
@@ -1450,7 +1450,7 @@ When a POST command is run to update the document some fun stuff happens.
 
 ---
 
-## It couldn’t be easier.
+## It couldn't be easier.
 
 * Just use the DELETE method:
 
@@ -1524,7 +1524,7 @@ Notes:
 Two different clients both running distributed web sites 
 Check page count at same time and see 10
 Both check page count through Elasticsearch 
-Both send update of view count 11 to Elasticsearch at same time….  this is wrong, should be 12 for 2nd client.
+Both send update of view count 11 to Elasticsearch at same time....  this is wrong, should be 12 for 2nd client.
 ]If there's a lot of people hitting your Elasticsearch at the same time this kind of issue can happen. 
 
 Also known as eventually consistency. 
@@ -1713,7 +1713,7 @@ Query-lite
 
 ---
 
-## “Query Lite”
+## "Query Lite"
 
 
 * Proper JSON query 
@@ -1737,7 +1737,7 @@ If you understand query lite syntax there's not a lot you can do with it.
 
 ---
 
-## It’s not Always Simpler.
+## It's not Always Simpler.
 
 
 * Spaces etc. need to be URL encoded.
@@ -1758,8 +1758,8 @@ Makes it much more difficult to read and understand what's going on.
 
 * **Cryptic** and tough to debug
 * Can be a **security issue** if exposed to end users
-* **Fragile** – one wrong character and you’re hosed.
-* **But it’s handy for quick experimenting.**
+* **Fragile** – one wrong character and you're hosed.
+* **But it's handy for quick experimenting.**
 
 Notes:
 
@@ -1775,9 +1775,9 @@ Fragile, mess up a character and things happen that you aren't expecting.
 
 <img src="../../assets/images/elastic/3rd-party/parameters-01.png" alt="parameters-01.png" style="width:40%;float:right;"/>
 
-* This is formally called “URI  Search”. Search for that on the Elasticsearch  documentation.
+* This is formally called "URI  Search". Search for that on the Elasticsearch  documentation.
 
-* It’s really quite powerful, but again is only appropriate for quick “curl tests”.
+* It's really quite powerful, but again is only appropriate for quick "curl tests".
 
 
 ---
@@ -1789,7 +1789,7 @@ Fragile, mess up a character and things happen that you aren't expecting.
 
 ## Request Body Search
 
-* How you’re supposed to do  it
+* How you're supposed to do  it
 
 * Query DSL is in the request body as JSON
 (yes, a GET request can have a body!)
@@ -1840,19 +1840,19 @@ must does that.
 
 ```text
 term: filter by exact values
-{“term”: {“year”: 2014}}
+{"term": {"year": 2014}}
 
 terms: match if any exact values in a list match
-{“terms”: {“genre”: [“Sci-Fi”, “Adventure”] } }
+{"terms": {"genre": ["Sci-Fi", "Adventure"] } }
 
 range: Find numbers or dates in a given range (gt, gte, lt, lte)
-{“range”: {“year”: {“gte”: 2010}}}
+{"range": {"year": {"gte": 2010}}}
 
 exists: Find documents where a field exists
-{“exists”: {“field”: “tags”}}
+{"exists": {"field": "tags"}}
 
 missing: Find documents where a field is missing
-{“missing”: {“field”: “tags”}}
+{"missing": {"field": "tags"}}
 
 bool: Combine filters with Boolean logic (must, must_not, should)
 ```
@@ -1863,13 +1863,13 @@ bool: Combine filters with Boolean logic (must, must_not, should)
 
 ```text
 match_all: returns all documents and is the default. Normally used with a filter.
-{“match_all”: {}}
+{"match_all": {}}
 
 match: searches analyzed results, such as full text search.
-{“match”: {“title”: “star”}}
+{"match": {"title": "star"}}
 
 multi_match: run the same query on multiple fields.
-{“multi_match”: {“query”: “star”, “fields”: [“title”, “synopsis” ] } }
+{"multi_match": {"query": "star", "fields": ["title", "synopsis" ] } }
 
 bool: Works like a bool filter, but results are scored by relevance.
 
@@ -1891,7 +1891,7 @@ POST /shakespeare/_search
 {
     "query": {
         "multi_match" : {
-            "query" : “lear",
+            "query" : "lear",
             "fields": ["title", "summary^3"]
         }
     },
@@ -1910,7 +1910,7 @@ query bool: instead of filtering results that don't match it will score results 
 
 ## Syntax Reminder
 
-* queries are wrapped in a “query”: { } block,  filters are wrapped in a “filter”: { } block.
+* queries are wrapped in a "query": { } block,  filters are wrapped in a "filter": { } block.
 
 * you can combine filters inside queries, or queries inside filters too.
 
@@ -1946,15 +1946,15 @@ That allows for phrase searches and not just single words or partial word search
 
 ## Slop
 
-* Order matters, but you’re OK with some words being in between the terms:
+* Order matters, but you're OK with some words being in between the terms:
 
 <img src="../../assets/images/elastic/3rd-party/slop.png" alt="slop.png" style="width:60%;"/>
 
 
-* The **slop** represents how far you’re willing to let a term move to satisfy a
+* The **slop** represents how far you're willing to let a term move to satisfy a
 phrase (in either direction!)
 
-* Another example: “quick brown fox” would match “quick fox” with a slop of 1.
+* Another example: "quick brown fox" would match "quick fox" with a slop of 1.
 
 Notes:
 
@@ -1991,7 +1991,7 @@ Star and beyond appear close together, returns all of them, but assigned higher 
 
 ## Exercise
 
-* Search for “Star Wars” movies  released after 1980, using both a **URI search** and **a request body search.**
+* Search for "Star Wars" movies  released after 1980, using both a **URI search** and **a request body search.**
 
 ---
 
@@ -2007,7 +2007,7 @@ more!
 
 ---
 
-## Specify “From” and  “Size”
+## Specify "From" and  "Size"
 
 
 <img src="../../assets/images/elastic/3rd-party/from-size.png" alt="from-size.png" style="width:60%;"/>
@@ -2041,7 +2041,7 @@ Page 3 = "from = 6, size of 3
 
 * Every result must be **retrieved, collected, and sorted.**
 
-* Enforce an **upper bound** on how many results you’ll return to users.
+* Enforce an **upper bound** on how many results you'll return to users.
 
 
 Notes:
@@ -2068,9 +2068,9 @@ This command sorts the movies by release date.
 
 ---
 
-## Unless you’re dealing with strings.
+## Unless you're dealing with strings.
 
-* A **text** field that is **analyzed** for full-text search can’t be used to sort document
+* A **text** field that is **analyzed** for full-text search can't be used to sort document
 * This is because it exists in the inverted index as individual terms, not as the entire string.
 
 Notes:
@@ -2106,7 +2106,7 @@ There are many reasons you would want an unanalyzed field and sorting is just on
 
 * Sadly, you cannot change the mapping on an existing index.
 
-* You’d have to delete it, set up a new mapping, and re-index it.
+* You'd have to delete it, set up a new mapping, and re-index it.
 
 * Like the number of shards, this is something you should think
 about before importing data into your index.
@@ -2233,7 +2233,7 @@ Notes:
 wildcard query of year "1*" would return hits for anything beginning with 1. 
 
 Could also do something like 
-"year": "19*3“ or “year”:”19?3”
+"year": "19*3" or "year":"19?3"
 
 ---
 

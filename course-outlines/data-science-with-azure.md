@@ -8,7 +8,7 @@ Jan. 18, 2022
 
 Data Science includes statistics, data visualization and exploration, and Machine learning. 
 Since Microsoft Azure is the second-largest cloud computing provider, knowledge of its Data Science capabilities is essential for
-building best-of-breed solutions. Azure’s particular strength is in the usability and integration with the Microsoft stack.
+building best-of-breed solutions. Azure's particular strength is in the usability and integration with the Microsoft stack.
 
 In this course, the students will get an overview of ML with Python and R, the two standard environments for ML. They will also learn the specifics of the Azure and the capabilities that it offers to ML developers.
 

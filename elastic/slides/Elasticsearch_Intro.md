@@ -296,14 +296,14 @@ earch data — trends, periodicity, and more — in real time to identify issues
 <img src="../../assets/images/elastic/3rd-party/logical-concepts.png" alt="logical-concepts.png" style="width:70%;"/>
 
 
-* Elasticsearch is moving away from ‘types’. In Elasticsearch 6 only one type is allowed per index.
+* Elasticsearch is moving away from 'types'. In Elasticsearch 6 only one type is allowed per index.
 
 
 Notes:
 
 3 main logical concepts behind Elasticsearch: 
 Document
-Structured data similar to a row in a database, something that you’re searching for
+Structured data similar to a row in a database, something that you're searching for
 Not just about text, any data can work. 
 JSON format (way to encode text, objects etc..) 
 Every document has a unique ID (auto assigned, or manually) 
@@ -332,13 +332,13 @@ Notes:
 
 Inverted means we are mapping things searching for, to documents searching in. 
 Inverted index is the mechanism by which all search engines work. 
-Say we have 2 documents, inverted index doesn’t store them directly, it flips on head
+Say we have 2 documents, inverted index doesn't store them directly, it flips on head
 each document split up into individual search terms, split up by each word, lowercased to normalize 
-maps each search term to documents they occur within. Here we can see “Space” shows up in document1 and document2.
+maps each search term to documents they occur within. Here we can see "Space" shows up in document1 and document2.
 
 ---
 
-## It’s not  quite that simple.
+## It's not  quite that simple.
 
 * **TF-IDF** means Term Frequency **Inverse Document Frequency**
 * **Term Frequency** is how often a term appears in a **given document**  Document Frequency is how often a term appears in **all documents**  Term Frequency / **Document Frequency** measures the **relevance**
@@ -348,11 +348,11 @@ of a term in a document
 Notes:
 
 How do I deal with concept of relevance?  
-If I search for the word ”the” how do I make sure it returns documents where “the” is relevant?
+If I search for the word "the" how do I make sure it returns documents where "the" is relevant?
 TF-IDF 
-Term Frequency is how often a word appears in a document, “the” “of” “space” etc.. 
+Term Frequency is how often a word appears in a document, "the" "of" "space" etc.. 
 Document Frequency: How often a term appears in all documents in index.
- ”Space” doesn’t appear often in index, but “the” does.  
+ "Space" doesn't appear often in index, but "the" does.  
 Divide Term Frequency by Document Frequency gives us measure of relevance.
 How special is this term to this document? How often does it occur in this doc? How often does it occur in all documents?
 
@@ -369,12 +369,12 @@ Notes:
 How do we use an index in Elasticsearch? 
 RESTful API 
 Explain what REST is (same thing as when you request a page in browser etc) 
-REST uses verbs to define what it’s doing.. GET, POST, PUT.
+REST uses verbs to define what it's doing.. GET, POST, PUT.
 Elasticsearch uses the same HTTP protocol, which makes it easy to communicate with. 
 If you are requesting something from Elasticsearch you do so by just sending a GET request (same as any other web system)
 
-client API’s
-Instead of worrying about constructing JSON data correctly, there’s client APIs that make it much easier 
+client API's
+Instead of worrying about constructing JSON data correctly, there's client APIs that make it much easier 
 Python, Ruby, Java, etc.. 
 analytic tools
 Kibana 
@@ -411,7 +411,7 @@ Notes:
 
 ---
 
-## Elasticsearch features cont’d
+## Elasticsearch features cont'd
 
 * Read-dominant.
   - Although, there is near real-time search (NRT)
@@ -471,7 +471,7 @@ Notes:
 * Atomic updates with optimistic concurrency
 * Real-time get (before commit)
 * Write durability using a transaction log
-* Automatic sharding and replication using “ZooKeeper”
+* Automatic sharding and replication using "ZooKeeper"
 
 
 

@@ -188,7 +188,7 @@ Notes:
 
 * By default all files created inside a container are stored on a writable container layer
 
-* The data doesn’t persist when that container exits
+* The data doesn't persist when that container exits
 
 * This is fine for most applications, the data created during container run, is 'scratch data' ; Doesn't need to be persisted
 
@@ -349,7 +349,7 @@ $ docker volume rm my-vol
     - Also good for sensitive data or data protected by privacy regulatory constraints
 
 * Limitations:
-    - Can’t share tmpfs mounts between containers
+    - Can't share tmpfs mounts between containers
     - Only available on Linux
 
 ```bash

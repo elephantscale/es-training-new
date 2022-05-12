@@ -209,7 +209,7 @@ Notes:
 
 ## Narrow Search
 
-* You can either narrow your search with multiple labels - your app’s fronted
+* You can either narrow your search with multiple labels - your app's fronted
 
 <img src="../../assets/images/kubernetes/metadata-03.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
@@ -219,7 +219,7 @@ Notes:
 
 ## Query for only backend
 
-* You can either narrow your search with multiple labels - your app’s backend
+* You can either narrow your search with multiple labels - your app's backend
 
 <img src="../../assets/images/kubernetes/metadata-04.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
@@ -229,7 +229,7 @@ Notes:
 
 ## Query for Test Phase
 
-* You can either narrow your search with multiple labels - your app’s test phase
+* You can either narrow your search with multiple labels - your app's test phase
 
 <img src="../../assets/images/kubernetes/metadata-05.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
@@ -240,7 +240,7 @@ Notes:
 ## Query for Production  
 
 * You can either narrow your search with multiple labels - your
-app’s production release
+app's production release
 
 <img src="../../assets/images/kubernetes/metadata-06.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 

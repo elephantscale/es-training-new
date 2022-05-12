@@ -5,10 +5,10 @@
 
 By default all files created inside a container are stored on a writable container layer. This means that:
 
- * The data doesn’t persist when that container no longer exists,
+ * The data doesn't persist when that container no longer exists,
  * It is hard to get that data when the container is stopped
- * A container’s writable layer is tightly coupled to the host machine where the container is running. You can’t easily move the data somewhere else.
- * Writing into a container’s writable layer requires a storage driver to manage the filesystem. 
+ * A container's writable layer is tightly coupled to the host machine where the container is running. You can't easily move the data somewhere else.
+ * Writing into a container's writable layer requires a storage driver to manage the filesystem. 
     - The storage driver provides a union filesystem, using the Linux kernel. 
     - This extra abstraction reduces performance as compared to using data volumes, which write directly to the host filesystem.
 

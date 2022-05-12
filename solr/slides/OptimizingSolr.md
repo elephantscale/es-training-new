@@ -396,7 +396,7 @@ Notes:
 * The unique `version` is maintained as checkpoint, as ephemeral node on source and persistent node on target across all solr nodes
 
 * No need any additional network traffic
-* The unique ‘version’ is maintained as checkpoint, as ephemeral node on source and persistent node on target across all solr nodes.
+* The unique 'version' is maintained as checkpoint, as ephemeral node on source and persistent node on target across all solr nodes.
 
 Notes:
 

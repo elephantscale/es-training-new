@@ -1,166 +1,157 @@
-# Terraform
+# Microservices
+
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:25%;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /> 
+
 ---
-## Terraform Class Outline
 
+## Instructor Introduction
 
-| Day | Agenda                                                                          |
-|-----|---------------------------------------------------------------------------------|
-| 1   | Terraform Basics, Architecture, Infrastructure as Code, HCL Basic Programming            |
-| 2   | Managing Deployments and States, Multiple Terraform Configurations, More HCL Programming    |
-| 3   | Terraform Testing, Vault, Consul, Packer, Professional Terraform Best Practices          |
+* Instructor, please introduce yourself
 
-<!-- {"left" : 0.25, "top" : 1.4, "height" : 3.36, "width" : 9.75} -->
+* Talk about your background and your experience in the subject
+
+---
+
+## About This Class
+
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:25%;float:right;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:25%;float:right;clear:both;" /> 
+
+* Objectives:
+    - Learn about Microservices
+    - Get hands-on experience
+
+* A **practical approach to Microservices**
+
+* Skill level: **Intro to intermediate**
+
+* Format: **50% lectures + 50% labs**
+
+* This is a **very hands-on** class
 
 Notes:
 
 ---
 
-## Prerequisites & Expectations
+## Agenda
 
-* Familiarity with a programming or scripting language
-* Basic understanding of Linux, Mac or Windows including:
-  - Command line navigation 
-  - Editing files (e.g. using VI, Visual Studio Code or other editor)
-* Basic understanding of AWS concepts like EC2 instances, IaaS, PaaS, etc.
-* This is an **AWS Infrastructure as Code (IaC) with Terraform** class 
-  - You may be missing some pre-requisites, that’s OK
-  - You should be willing to work hard, that is a must
+* 5 days; 2 days o Docker + 3 days of Kubernetes
 
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:35%;float:right;" />
 
-Notes:
+* **Day 1 - Microservices**
+    - Microservices intro
+    - Microservices architectures
+    - Images and containers
 
-Updated the requirements to be more in keeping with the actual skills needed for class.
+* **Day 2 - Spring Boot**
+    - Spring Boot
+    - Microservices and Spring boot
+
+---
+
+## Agenda Continued
+
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;float:right;" /> 
+
+* **Day 3 - Kubernetes**
+    - Kubernetes introduction
+    - Kubernetes architecture
+    - Deploying scalable services
+
+* **Day 4 - Kubernetes**
+    - labels and selectors
+    - Storage
+    - Networking
+
+* **Day 5 - Kubernetes**
+    - Security
+    - Kubernetes addons
+    - Practical examples
+    - Kubernetes in the cloud
+    - Workshops
+
+---
+
+## Pre-requisites & Expectations
+
+* Intended audience:
+    - Admins, developers, architects
+
+* **Basic Linux knowledge** is assumed
+
+* Some software development experience (languages, databases, ...)
+
+* Curiosity!
+
+    - Ask a lot of questions
+
+* This is an **intro-intermediary** class.
 
 ---
 
 ## Our Teaching Philosophy
 
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" alt="XXX image missing" style="width:45%;float:right;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
+
 * Emphasis on concepts & fundamentals
-* No need to learn APIs by heart
+
 * Highly interactive (questions, discussions, etc. are welcome)
+
 * Hands-on (learn by doing)
-* Build solid fundamentals of understanding and design
-
-
-
-Notes:
 
 ---
 
-## Analogy: Learning to Fly...
-![](../artwork/learn-to-fly.png)
+## Class Introductions
 
+* Run a quick background survey if applicable, and go over the responses
 
+* Students please introduce yourselfs (time permitting)
+    - Your Name
+    - Your background (developer, admin, manager, etc.)
+    - Technologies you are familiar with
+    - Familiarity with MicroservicesD
+    (scale of 1 - 4 ;  1 - new, 2 - know some concepts,  3 -  took acourse, 4 -  using it at work)
+    - Something non-technical about you!  
+    (favorite ice cream flavor / hobby...etc)
 
-Notes:
-
----
-
-## Instruction
-![](../artwork/classroom-instruction.png)
-
-
----
-
-## + Flight Time
-
-<img src="../artwork/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.26, "top" : 1.45, "height" : 6.17, "width" : 9.74} -->
-
-
-Notes:
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 ---
 
-## After the Class...
-
-<img src="../artwork/Terraform-I-Know.png" alt="Elastic-01.png" style="width:60%;"/><!-- {"left" : 1.29, "top" : 1.89, "height" : 5.28, "width" : 7.67} -->
+## Recommended Resources
 
 
-Notes:
+* Books
+    - [Docker: Up & Running, 2nd edition](https://learning.oreilly.com/library/view/docker-up/9781492036722/)
+    - [Kubernetes: Up & Running, 2nd Edition](https://learning.oreilly.com/library/view/kubernetes-up-and/9781492046523/)
+    - [Kubernetes Best Practices](https://learning.oreilly.com/library/view/kubernetes-best-practices/9781492056461/)
 
----
+* Online
+    - [docs.docker.com](https://docs.docker.com/)
+    - [Docker cheat sheet](https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf)
+    - [kubernetes.io/docs](https://kubernetes.io/docs/home/) 
+    - [Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
-
-## About You and Me
-
-* About your instructor
-* About you
-   - Your Name
-   - Your background (developer, admin, manager, ...)
-   - Technologies you are familiar with
-   - Familiarity with Terraform or IaC (scale of 1 - 4 ;  1 - new,   4 - expert)
-   - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
-
-<img src="../artwork/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../artwork/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../artwork/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
-
-
-Notes:
+<img src="../../assets/images/books/docker-up-and-running-9781492036722.jpeg" style="width:15%;"/> &nbsp; &nbsp; 
+<img src="../../assets/images/books/Kubernetes-Up-and-Running-2nd-Edition-9781492046523.jpeg" style="width:15%;"/> &nbsp; &nbsp;
+<img src="../../assets/images/books/kubernetes-best-practices__9781492056461.jpeg" style="width:15%;"/> &nbsp; &nbsp;
 
 ---
 
 ## Class Logistics
 
-* Instructor’s contact information
+* Instructor's contact
+
 * Slides
-  - For each session, slides will be emailed out or delivered
-* AWS and Terraform
-  - Students need to have an AWS account
-  - If you don't have one, we will walk through the process of getting a free AWS account
-  - Students will be using a local copy of Terraform on their own computers or install Terraform on AWS
-  - We will walk through the process of installing Terraform locally
+
 * Labs
-  - Provided in the cloud via GitHub
-  - Will also be delivered in a ZIP file for your future reference
 
-
-Notes:
+* Lab environment
 
 ---
 
-## Typographic Conventions
+## Let's Get Started!
 
-* Software code in the text uses a fixed-width code font: 
-  - catalog: `Catalog = new CatalogImpl`
-  - Code fragments are the same, e.g., catalog.speakTruth
-  - We use **bold/color** text for emphasis
-  - Filenames are in italics, e.g., `Catalog.scala`
-  - Longer code examples appear in a separate code box:
-
-```text
-object TestApp {  // Basic Spark App (Scala)
-  def main(args: Array[String]) {
-		val sc = new SparkContext(
-      new SparkConf().setMaster("local").setAppName(”TestApp")
-		val totalWords = sc.textFile(“file”)
-               .flatMap(l => l.split(" ")).count()
-		println (“# lines : “ + totalWords)
-	}
-}
-
-
-```
-<!-- {"left" : 0, "top" : 3.99, "height" : 2.68, "width" : 10.25} -->
-
-
-Notes:
-
----
-## Questions?
-
-* Any questions? 
-
-
-Notes:
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/>  &nbsp;  &nbsp;

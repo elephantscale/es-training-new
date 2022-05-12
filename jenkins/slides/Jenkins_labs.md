@@ -145,10 +145,10 @@ This may also be found at: /home/ubuntu/.jenkins/secrets/initialAdminPassword
 
 * Use the password you just copied to unlock Jenkins.  Click **Save and Finish** to complete.
 
-* The next screen you will see is “Customize Jenkins” allowing you to select and install plugins. Choose the option on the left, **Install suggested plugins**.
+* The next screen you will see is "Customize Jenkins" allowing you to select and install plugins. Choose the option on the left, **Install suggested plugins**.
 
 
-* Pay attention to the plugins that are being installed. Then create the first user named **admin**.  The password will also be **admin**.  The user’s name will be **MyAdmin** and you can enter any email address. 
+* Pay attention to the plugins that are being installed. Then create the first user named **admin**.  The password will also be **admin**.  The user's name will be **MyAdmin** and you can enter any email address. 
 
 * Click **Save and Finish** and on the next screen, also click **Save and Finish**.
 
@@ -181,7 +181,7 @@ This may also be found at: /home/ubuntu/.jenkins/secrets/initialAdminPassword
 ---
 ## 1.3 Enable Security to access and use Jenkins
 
-* Select **Jenkin’s own user database** for this exercise, which is located under the Security Realm **section**. **The Checkbox for** Allows users to sign up **must also be checked**. 
+* Select **Jenkin's own user database** for this exercise, which is located under the Security Realm **section**. **The Checkbox for** Allows users to sign up **must also be checked**. 
 
 
 * Next thing is to select Matrix-based security from the Authorization section. Here you can create a few new users with different permissions. 
@@ -209,7 +209,7 @@ This may also be found at: /home/ubuntu/.jenkins/secrets/initialAdminPassword
 
 ## account
 
-* At this point, you may already have the admin account, so let’s create an account for the developer user.  Click **Create an account**.
+* At this point, you may already have the admin account, so let's create an account for the developer user.  Click **Create an account**.
 
 <img src="../../assets/images/jenkins/3rd-party/EnableSecurity-2.png" style="width:50%;"/>
 
@@ -224,7 +224,7 @@ This may also be found at: /home/ubuntu/.jenkins/secrets/initialAdminPassword
 
 * Java
 
-  * **Let’s login** as admin **user**.  Click Manage Jenkins link and click Global Tool Configuration **on the right**.
+  * **Let's login** as admin **user**.  Click Manage Jenkins link and click Global Tool Configuration **on the right**.
 
 
 * Under the **JDK** section, add the Java configuration, and uncheck **Install automatically**.
@@ -261,7 +261,7 @@ Nothing to configure.
 
 ```
 
-* TIP:  To verify a parameter’s value, click this help button
+* TIP:  To verify a parameter's value, click this help button
 
 ---
 
@@ -310,7 +310,7 @@ ubuntu@ip-172-16-0-234:~$ which mvn
 
 ## Email setup
 
-* Click **Advanced**… in that section to set up the email SMTP settings.  Ask the instructor for the password.  You can use any valid email address for a test.
+* Click **Advanced**... in that section to set up the email SMTP settings.  Ask the instructor for the password.  You can use any valid email address for a test.
 
 
 <img src="../../assets/images/jenkins/3rd-party/ConfigureEmail-4.png" style="width:50%;"/>
@@ -435,7 +435,7 @@ first commit
 
 * The wget command that we pasted above, downloaded the **Jenkins-Course-Lab** zip file.  It contains the sample Java project for our exercise.
 
-* Let’s build the project by typing the following:
+* Let's build the project by typing the following:
 
 ```
 gradle build
@@ -480,7 +480,7 @@ gradle build
 
 ## 2.3   Configure your Freestyle job to poll the changes from the Git projec
 
-* Now, let’s set the polling schedule to occur every minute.  To specify this schedule, enter five asterisks (*) with a space between each asterisk.
+* Now, let's set the polling schedule to occur every minute.  To specify this schedule, enter five asterisks (*) with a space between each asterisk.
 
 
 <img src="../../assets/images/jenkins/3rd-party/ConfigureYourFreestyleJob-2.png" style="width:50%;"/>
@@ -595,7 +595,7 @@ git commit -a
 
 ## 2.6   Correct the Java code and the build will become stable
 
-* The build failed with a ` null pointer exception ` because the Java code did not check for null values. So let’s correct the ` ZipCodeParser ` class. 
+* The build failed with a ` null pointer exception ` because the Java code did not check for null values. So let's correct the ` ZipCodeParser ` class. 
 
 * Edit the file using your preferred editor in the Linux terminal window:
  
@@ -627,7 +627,7 @@ public static String[] parseZipCode(String zipInput)
 	
 	Matcher m = P.matcher(zipInput);
 		if (m.matches()) {
-	… … … 
+	... ... ... 
 
 ```
 
@@ -719,7 +719,7 @@ Handled the exception.
 
 ## 3.2 Create a new Jenkins job copying from an existing Jenkins job
 
-* We do not want to run this code quality job at every minute. So let’s update the ` Build Triggers ` section and check ` Build periodically `. You will also need to uncheck the existing ` Poll SCM ` configuration checkbox.
+* We do not want to run this code quality job at every minute. So let's update the ` Build Triggers ` section and check ` Build periodically `. You will also need to uncheck the existing ` Poll SCM ` configuration checkbox.
 
 
 <img src="../../assets/images/jenkins/3rd-party/CreateANewJenkinsJob.png" style="width:35%;"/>
@@ -727,7 +727,7 @@ Handled the exception.
 * Save your changes. 
 
 
-* You can still run this job anytime by clicking **Build Now**, so let’s do that to verify the settings.
+* You can still run this job anytime by clicking **Build Now**, so let's do that to verify the settings.
 
 ---
 
@@ -749,14 +749,14 @@ Handled the exception.
 
 ## 3.4 Modify the Jenkins-Course-Lab project from the previous exercise
 
-* Let’s make certain that you’re in the project’s folder by typing the following command:
+* Let's make certain that you're in the project's folder by typing the following command:
 
 ```
 cd ~/Jenkins-Course-Lab
 
 ```
 
-* Now, let’s open ` ZipCodeParserTest.java ` using your preferred editor:
+* Now, let's open ` ZipCodeParserTest.java ` using your preferred editor:
 
 ```
 nano src/test/java/course/jenkins/lab/ZipCodeParserTest.java
@@ -945,11 +945,11 @@ build/reports/pmd/main.xml
 
 ## 3.7 Add Checkstyle plug-in in ` build.gradle ` file
 
-* Let’s add the Checkstyle plugin in build.gradle to include checkstyle analysis in our project.
+* Let's add the Checkstyle plugin in build.gradle to include checkstyle analysis in our project.
 
 * The plugin looks for the file ` checkstyle.xml ` in the directory ` config/checkstyle ` in your project. That is the default location and file name. 
 
-* So let’s verify a checkstyle configuration in config/checkstyle folder by opening the Linux terminal window.  Make sure you are in the **Jenkins-Course-Lab** directory and then type the following command:
+* So let's verify a checkstyle configuration in config/checkstyle folder by opening the Linux terminal window.  Make sure you are in the **Jenkins-Course-Lab** directory and then type the following command:
 
 
 ```
@@ -963,7 +963,7 @@ ls -lR config`
 
 ## 3.7 Add Checkstyle plug-in in ` build.gradle ` file
 
-* Let’s add the ignoreFailures property for checkstyle as follows in the build.gradle file. 
+* Let's add the ignoreFailures property for checkstyle as follows in the build.gradle file. 
 
 
 ```
@@ -1005,7 +1005,7 @@ build/reports/checkstyle/main.xml
 
 * There are a few choices for adding Cobertura functionality to a Gradle project. In this exercise, we will use the Cobertura Gradle plugin maintained by Steve Saliman.
 
-* Let’s apply the Cobertura plugin in ` build.gradle `. We also need to add the classpath to the buildscript section as shown below so Gradle can find the plugin.
+* Let's apply the Cobertura plugin in ` build.gradle `. We also need to add the classpath to the buildscript section as shown below so Gradle can find the plugin.
 
 ```
 apply plugin: 'cobertura'
@@ -1081,7 +1081,7 @@ build/reports/cobertura/coverage.xml
 
 * Save your changes, and ` click Build ` now to run the Jenkins job. 
 
-* You will see the Cobertura Coverage report by clicking the build number, and in the summary area, you’ll see a link, **Cobertura Coverage Report**.  Click that link and you’ll see the report: 
+* You will see the Cobertura Coverage report by clicking the build number, and in the summary area, you'll see a link, **Cobertura Coverage Report**.  Click that link and you'll see the report: 
 
 ---
 
@@ -1161,7 +1161,7 @@ unzip sonarqube-6.3.1.zip
 <img src="../../assets/images/jenkins/3rd-party/DownloadSonarQube-2.png" style="width:30%;"/>
 
 
-* Now let’s download the scanner.  Open the Linux terminal window and type the following:
+* Now let's download the scanner.  Open the Linux terminal window and type the following:
 
 
 ```
@@ -1186,7 +1186,7 @@ cd sonar-scanning-examples-master/sonarqube-scanner
 
 * In the previous step, we installed SonarQube and SonarQube Scanner. Now we will install the Jenkins plugin to integrate Jenkins with SonarQube.
 
-* Let’s follow the steps below to install SonarQube Jenkins plug-in:
+* Let's follow the steps below to install SonarQube Jenkins plug-in:
 
   - From the Jenkins dashboard, click ` Manage Jenkins `.
   - Click ` Manage Plugins `.
@@ -1212,7 +1212,7 @@ cd sonar-scanning-examples-master/sonarqube-scanner
 
 ## 4.3 Install and Configure SonarQube Jenkins plugin
 
-* The next thing is to configure SonarQube. Let’s go to ` Manage Jenkins ` and select ` Configure System `.  Scroll down the page a bit, and you will find the SonarQube section.
+* The next thing is to configure SonarQube. Let's go to ` Manage Jenkins ` and select ` Configure System `.  Scroll down the page a bit, and you will find the SonarQube section.
 
 
 <img src="../../assets/images/jenkins/3rd-party/Install&Configure SonarQube-3.png" style="width:35%;"/>
@@ -1264,7 +1264,7 @@ SonarQube Scanner
 
 * Save your changes and return to the Jenkins home page.
 
-* Let’s give you some background information.  Our Java project has one more configuration file, 
+* Let's give you some background information.  Our Java project has one more configuration file, 
 ` sonar-project.properties `, in the root directory of the project being analyzed.  No changes are required to this file.  It contains the required sonar properties, which are needed when using SonarQube Runner with your project. 
 
 
@@ -1273,7 +1273,7 @@ SonarQube Scanner
 ## 4.5 Enable SonarQube analysis in your Jenkins Job
 
 
-* We will use the Jenkins job, **Jenkins-Course-Lab-Code-Quality** from the previous exercise by clicking **Jenkins** in the top left corner, then click the project’s name.
+* We will use the Jenkins job, **Jenkins-Course-Lab-Code-Quality** from the previous exercise by clicking **Jenkins** in the top left corner, then click the project's name.
 
 
 * Click ` Configure ` for this Jenkins job and select the **Build** tab. Click ` Add build step ` and select ` Execute SonarQube Scanner `.
@@ -1293,7 +1293,7 @@ SonarQube Scanner
 
 
 
-* Save changes and you will be returned to the job’s main page. 
+* Save changes and you will be returned to the job's main page. 
 
 
 <img src="../../assets/images/jenkins/3rd-party/EnableSonarQube-3.png" style="width:40%;"/>
@@ -1302,19 +1302,19 @@ SonarQube Scanner
 
 ## 4.6 Run Jenkins Job to generate SonarQube report
 
-* Now it’s time to run the Jenkins job. Please make sure that the SonarQube server is running.  You can return to the SonarQube web page from earlier and simply refresh it.  If it refreshes, SonarQube is running. 
+* Now it's time to run the Jenkins job. Please make sure that the SonarQube server is running.  You can return to the SonarQube web page from earlier and simply refresh it.  If it refreshes, SonarQube is running. 
 
 
 <img src="../../assets/images/jenkins/3rd-party/RunToGenerateSonarQube-1.png" style="width:40%;"/>
 
 
-* Return to the Jenkins page in the browser, and let’s run the job by clicking ` Build Now `. 
+* Return to the Jenkins page in the browser, and let's run the job by clicking ` Build Now `. 
 
 ---
 
 ## 4.6 Run Jenkins Job to generate SonarQube report
 
-* You can verify the SonarQube execution steps by clicking the build number on the job’s page, and click **Console Output**.  
+* You can verify the SonarQube execution steps by clicking the build number on the job's page, and click **Console Output**.  
 
 
 <img src="../../assets/images/jenkins/3rd-party/RunToGenerateSonarQube-2.png" style="width:40%;"/>
@@ -1327,7 +1327,7 @@ SonarQube Scanner
 
 
 
-* You will see the SonarQube link on the job’s main page as well.
+* You will see the SonarQube link on the job's main page as well.
 
 
 ---
@@ -1422,7 +1422,7 @@ job. You will see the following on the job console output (click the build numbe
 
 * You can monitor your slave node through the Jenkins master node. Go to the Jenkins Dashboard, and click **Manage Jenkins**.  Click **Manage Nodes**.
 
-* Click the slave node, **Lab-slave**, to see the build history, log, and some load statistics for your slave node.  Click the job’s name for more details.
+* Click the slave node, **Lab-slave**, to see the build history, log, and some load statistics for your slave node.  Click the job's name for more details.
 
 
 * With this step, you have completed this exercise successfully!
@@ -1449,7 +1449,7 @@ job. You will see the following on the job console output (click the build numbe
 
 * 6.1   Install Build Pipeline and Parameterized Trigger plugins
 
-* The plugins used for this part of the exercise are not part of the default Jenkins install.  Therefore, let’s first install **Build Pipeline** and **Parameterized Trigger plugins** to our master node. 
+* The plugins used for this part of the exercise are not part of the default Jenkins install.  Therefore, let's first install **Build Pipeline** and **Parameterized Trigger plugins** to our master node. 
 
 
 * **Note :**  Build Pipeline will install the Parameterized Trigger plugin as part of its installation.	
@@ -1488,7 +1488,7 @@ job. You will see the following on the job console output (click the build numbe
 
 * The next thing is to add a post-build action to trigger parameterized build on the other projects. 
 
-* Let’s start with the **Jenkins-Course-Build** job.  From the Jenkins home, select the **Jenkins-Course-Build** job.  Click **Configure**.  Select the **Post-build Actions** tab, and click **Add post-build action**.  Select **Build other projects**.  Jenkins-Course-Build will trigger **Jenkins-Course-Test** and **Jenkins-Course-Static-Analysis** jobs.  Comma separate the values.
+* Let's start with the **Jenkins-Course-Build** job.  From the Jenkins home, select the **Jenkins-Course-Build** job.  Click **Configure**.  Select the **Post-build Actions** tab, and click **Add post-build action**.  Select **Build other projects**.  Jenkins-Course-Build will trigger **Jenkins-Course-Test** and **Jenkins-Course-Static-Analysis** jobs.  Comma separate the values.
 
 
 
@@ -1511,7 +1511,7 @@ job. You will see the following on the job console output (click the build numbe
 
 ## 6.4   Create a new pipeline view 
 
-* You need to create a view for the build pipeline. Let’s navigate to the Jenkins home page and click the + next to the ` All ` tab to create a view.
+* You need to create a view for the build pipeline. Let's navigate to the Jenkins home page and click the + next to the ` All ` tab to create a view.
  
 
 * Select ` Build Pipeline View ` and enter the name as **Jenkins-Course-Pipeline**. Click **OK**.

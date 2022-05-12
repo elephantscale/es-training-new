@@ -11,10 +11,10 @@
 
 ## Improving Defaults
 
-* Although the out-of-the-box Elasticsearch configuration will satisfy the needs of most users, it’s important to note that it’s a highly flexible system that can be tuned beyond
+* Although the out-of-the-box Elasticsearch configuration will satisfy the needs of most users, it's important to note that it's a highly flexible system that can be tuned beyond
 * its default settings for increased performance.
 * Most uses of Elasticsearch in production environments may fall into the category of occasional full-text search, but a growing number of deployments are pushing formerly
-* edge-case uses into more common installations, such as the growing trends of using Elasticsearch as a sole source of data, logging aggregators, and even using it in hybrid storage architectures where it’s used in conjunction with other database types.
+* edge-case uses into more common installations, such as the growing trends of using Elasticsearch as a sole source of data, logging aggregators, and even using it in hybrid storage architectures where it's used in conjunction with other database types.
 * These exciting new uses open the door for us to explore interesting ways in which to tune and optimize the Elasticsearch default settings.
 
 Notes:
@@ -79,7 +79,7 @@ Notes:
 
 ## Mappings are Not Retroactive
 
-* Note that specifying a default mapping doesn’t apply the mapping retroactively.
+* Note that specifying a default mapping doesn't apply the mapping retroactively.
 * Default mappings are applied only to newly created types.
 
 
@@ -111,7 +111,7 @@ Notes:
 * indexed a document and noticed that Elasticsearch dynamically created a mapping
 * for it as well as the datatype for each of the fields. You can alter this behavior by
 * instructing Elasticsearch to ignore new fields or even throw exceptions on unknown
-* fields. You’d normally want to restrict the new addition of fields to prevent data pollution
+* fields. You'd normally want to restrict the new addition of fields to prevent data pollution
 * and help maintain control over the schema definition.
 
 
@@ -156,7 +156,7 @@ Notes:
 
 ## Summary of Admin Tricks 
 
-* A refresh makes new segments—flushed or not—available for searching. Duringheavy indexing, it’s best to lower the refresh rate or disable refresh The merge policy can be tuned for more or less segments. Fewer segmentsmake searches faster, but merges take more CPU time. More segments makeindexing faster by spending less time on merging, but searches will be slower.
+* A refresh makes new segments—flushed or not—available for searching. Duringheavy indexing, it's best to lower the refresh rate or disable refresh The merge policy can be tuned for more or less segments. Fewer segmentsmake searches faster, but merges take more CPU time. More segments makeindexing faster by spending less time on merging, but searches will be slower.
 
 
 Notes:
@@ -165,7 +165,7 @@ Notes:
 
 ## Summary of Admin Tricks 
 
-* An optimize operation forces a merge, which works well for static indices thatget lots of searches. Store throttling may limit indexing performance by making merges fall behind.Increase or remove the limits if you have fast I/O. Combine filters that use bitsets in a bool filter and filters that don’t in and/or/not filters. Cache counts and aggregations in the shard query cache if you have static indices. Monitor JVM heap and leave enough headroom so you don’t experienceheavy garbage collection or out-of-memory errors, but leave some RAM for OScaches, too.
+* An optimize operation forces a merge, which works well for static indices thatget lots of searches. Store throttling may limit indexing performance by making merges fall behind.Increase or remove the limits if you have fast I/O. Combine filters that use bitsets in a bool filter and filters that don't in and/or/not filters. Cache counts and aggregations in the shard query cache if you have static indices. Monitor JVM heap and leave enough headroom so you don't experienceheavy garbage collection or out-of-memory errors, but leave some RAM for OScaches, too.
 
 
 Notes:
@@ -174,7 +174,7 @@ Notes:
 
 ## Summary of Admin Tricks 
 
-* Use index warmers if the first query is too slow and you don’t mind slowerindexing. If you have room for bigger indices, using ngrams and shingles instead of fuzzy,wildcard, or phrase queries should make your searches faster. You can often avoid using scripts by creating new fields with needed data inyour documents before indexing them. Try to use Lucene expressions, term statistics, and field data in your scriptswhenever they fit.
+* Use index warmers if the first query is too slow and you don't mind slowerindexing. If you have room for bigger indices, using ngrams and shingles instead of fuzzy,wildcard, or phrase queries should make your searches faster. You can often avoid using scripts by creating new fields with needed data inyour documents before indexing them. Try to use Lucene expressions, term statistics, and field data in your scriptswhenever they fit.
 
 
 Notes:
@@ -183,7 +183,7 @@ Notes:
 
 ## Summary of Admin Tricks 
 
-* If your scripts don’t need to change often, look at appendix B to learn how towrite a native script in an Elasticsearch plugin. Use dfs_query_then_fetch if you don’t have balanced document frequenciesbetween shards. Use the count search type if you don’t need any hits and the scan search type ifyou need many.
+* If your scripts don't need to change often, look at appendix B to learn how towrite a native script in an Elasticsearch plugin. Use dfs_query_then_fetch if you don't have balanced document frequenciesbetween shards. Use the count search type if you don't need any hits and the scan search type ifyou need many.
 
 
 

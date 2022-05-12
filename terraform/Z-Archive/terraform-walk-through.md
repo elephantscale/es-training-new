@@ -28,7 +28,7 @@
 ---
 
 ## Setting Up Your AWS Account
-* If you don’t already have an __AWS account__, head over to https://aws.amazon.com and sign up
+* If you don't already have an __AWS account__, head over to https://aws.amazon.com and sign up
 * The _only_ thing you should use the root user for is to create other user accounts with more-limited permissions, and then switch to one of those accounts immediately
 * If you are using an existing AWS account, it must have a __Default VPC__ in it.
 * If the instructor provided a student account, you can use that   
@@ -106,7 +106,7 @@ terraform version
 
 * Way 2
 * Terraform supports the same authentication mechanisms as all AWS CLI and SDK tools
-* Therefore, it’ll also be able to use credentials in `$HOME/.aws/credentials`
+* Therefore, it'll also be able to use credentials in `$HOME/.aws/credentials`
     * These are automatically generated if you run the `configure` command on the AWS CLI, or IAM
 
 ---
@@ -293,7 +293,7 @@ nohup busybox httpd -f -p 8080 &
 
 *  You pass a shell script to User Data by setting the user_data argument in your Terraform code as follows:
 
-* The `<<-EOF` and `EOF` are Terraform’s `heredoc` syntax, which allows you to create multiline strings without having to insert newline characters all over the place
+* The `<<-EOF` and `EOF` are Terraform's `heredoc` syntax, which allows you to create multiline strings without having to insert newline characters all over the place
 
 ```shell script
   user_data = <<-EOF
@@ -490,7 +490,7 @@ Notes:
 ## NOTE on Network Security
 
 * All our example deploy not only into your Default VPC (as mentioned earlier), but also the default subnets of that VPC
-* Running a server in a public subnet is fine for a quick experiment, but in real-world usage, it’s a security risk
+* Running a server in a public subnet is fine for a quick experiment, but in real-world usage, it's a security risk
 * For production systems, you should deploy all of your servers, and certainly all of your data stores, in private subnets
     * These have IP addresses that can be accessed only from within the VPC and not from the public internet
 ![](../artwork/photo-of-guy-fawkes-mask-with-red-flower-on-top-on-hand-38275.jpg)
@@ -504,7 +504,7 @@ Source: https://www.pexels.com/
 
 ## Deploy a Configurable Web Server
 
-* Don’t Repeat Yourself (DRY) principle
+* Don't Repeat Yourself (DRY) principle
 * However, we violated it
     * the web server port 8080 is duplicated in both the security group and the `User Data` configuration
 * So, DRY:
@@ -525,7 +525,7 @@ variable "NAME" {
 }
 ```
 * description
-    * It’s always a good idea to use this parameter to document how a variable is used
+    * It's always a good idea to use this parameter to document how a variable is used
 
 * default, or use these ways:
     * passing it in at the command line (using the -var option)
@@ -606,9 +606,9 @@ resource "aws_vpc" "shared" {
 }
 ````
 
-* A. var.vpc_cidrs[“us-east-1”]
+* A. var.vpc_cidrs["us-east-1"]
 * B. var.vpc_cidrs.0
-* C. vpc_cidrs[“us-east-1”]
+* C. vpc_cidrs["us-east-1"]
 * D.var.vpc_cidrs[0]
 
 Notes: 
@@ -849,7 +849,7 @@ Notes:
 launch configurations are immutable, so if you change any parameter of your launch configuration,
 Terraform will try to replace it. Normally, when replacing a resource,
 Terraform deletes the old resource first and then creates its replacement,
-but because your ASG now has a reference to the old resource, Terraform won’t be able to delete it.
+but because your ASG now has a reference to the old resource, Terraform won't be able to delete it.
 
 * To solve this problem, you can use a lifecycle setting, see next slide.
 ---
@@ -893,7 +893,7 @@ resource "aws_launch_configuration" "example" {
 ## Data Sources
 
 * `data source` a piece of read-only information that is fetched from the provider (in this case, AWS) every time you run Terraform
-* `data source` in your configurations is a way to query the provider’s APIs for data
+* `data source` in your configurations is a way to query the provider's APIs for data
 * AWS data sources include
     * VPC data
     * subnet data
@@ -972,7 +972,7 @@ resource "aws_autoscaling_group" "example" {
 * Advantage
     * highly available and scalable
 * ELB to the rescue
-    * Amazon’s Elastic Load Balancer (ELB) service    
+    * Amazon's Elastic Load Balancer (ELB) service    
 ![](../artwork/elb.png) 
 
 ---    
@@ -992,7 +992,7 @@ resource "aws_autoscaling_group" "example" {
     * Best suited for load balancing of TCP, UDP, and TLS traffic. Can scale up and down in response to load faster than the ALB (the NLB is designed to scale to tens of millions of requests per second). Operates at the transport layer (Layer 4) of the OSI model.
 
 *  Classic Load Balancer (CLB)
-    * This is the “legacy” load balancer that predates both the ALB and NLB. It can handle HTTP, HTTPS, TCP, and TLS traffic, but with far fewer features than either the ALB or NLB. Operates at both the application layer (L7) and transport layer (L4) of the OSI model.
+    * This is the "legacy" load balancer that predates both the ALB and NLB. It can handle HTTP, HTTPS, TCP, and TLS traffic, but with far fewer features than either the ALB or NLB. Operates at both the application layer (L7) and transport layer (L4) of the OSI model.
 
 ---
 ## Application Load Balancer (ALB)
@@ -1095,7 +1095,7 @@ resource "aws_lb_target_group" "asg" {
 
 ## What the Target Group Do?
 - health check your Instances by periodically sending an HTTP request to each Instance
-- will consider the Instance “healthy” only if the Instance returns a response that matches the configured matcher
+- will consider the Instance "healthy" only if the Instance returns a response that matches the configured matcher
 - we told the matcher to look for a 200 OK response
 the target group will automatically stop sending traffic to unhealthy instance
 ---

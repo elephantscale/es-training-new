@@ -23,12 +23,12 @@ Notes:
 
      - Terrier (Java, U. Glasgow) http://terrier.org  
      - Indri/Galago/Lemur (C++ (& Java), U. Mass & CMU)
-     - Tail of others (Zettair, …)
+     - Tail of others (Zettair, ...)
 
  * Widely used non-academic open source systems
      -  **Lucene** 
         * Things built on it: Solr, ElasticSearch
-     - A few others (Xapian, …)
+     - A few others (Xapian, ...)
 
 Notes: 
 
@@ -44,10 +44,10 @@ Notes:
      - Not a complete search system by itself
      - Written by Doug Cutting
 
- * Used by: Twitter, LinkedIn, Zappos, CiteSeer, Eclipse, …
-     - … and many more (see http://wiki.apache.org/lucene-java/PoweredBy)
+ * Used by: Twitter, LinkedIn, Zappos, CiteSeer, Eclipse, ...
+     - ... and many more (see http://wiki.apache.org/lucene-java/PoweredBy)
  * Ports/integrations to other languages
-     - C/C++, C#, Ruby, Perl, Python, PHP, …
+     - C/C++, C#, Ruby, Perl, Python, PHP, ...
 
 Notes: 
 
@@ -62,7 +62,7 @@ Notes:
  * Lucene in Action: http://www.manning.com/hatcher3/
      - Code samples available for download
  * Ant: http://ant.apache.org/
-     - Java build system used by “Lucene in Action” code
+     - Java build system used by "Lucene in Action" code
 
 Notes: 
 
@@ -247,7 +247,7 @@ Notes:
  * `Document`
      - Represents a collection of named Fields.  Text in these Fields are indexed.
  * Field
-     - Note : Lucene Fields can represent both “fields” and “zones” as described in the textbook
+     - Note : Lucene Fields can represent both "fields" and "zones" as described in the textbook
      - Or even other things like numbers.
      - `StringFields` are indexed but not tokenized
      - `TextFields` are indexed and tokenized
@@ -266,11 +266,11 @@ import org.apache.lucene.document. Field ;
   ...
 protected Document getDocument(File f) throws Exception {
   Document  doc = new  Document ();
-  doc.add (new  TextField ("contents”, new FileReader(f))) 
-  doc.add (new  StringField ("filename”,
+  doc.add (new  TextField ("contents", new FileReader(f))) 
+  doc.add (new  StringField ("filename",
                            f.getName(),
                            Field.Store.YES)); 
-  doc.add (new  StringField ("fullpath”,
+  doc.add (new  StringField ("fullpath",
                            f.getCanonicalPath(),
                            Field.Store.YES));
   return doc;
@@ -429,7 +429,7 @@ for (int i = 0; i < hits.lengh;++i){
      - Central class that exposes several search methods on an index
      - Accessed via an IndexReader
  * `Query`
-     - Abstract query class.  Concrete subclasses represent specific types of queries, e.g., matching terms in fields, boolean queries, phrase queries, …
+     - Abstract query class.  Concrete subclasses represent specific types of queries, e.g., matching terms in fields, boolean queries, phrase queries, ...
  * `QueryParser`
      - Parses a textual representation of a query into a Query instance
 
@@ -490,7 +490,7 @@ public static void search(String indexDir, String q)
   throws IOException, ParseException 
 ...
 QueryParser parser =
-   new QueryParser ("contents”,
+   new QueryParser ("contents",
 		 new StandardAnalyzer ());                                 
 Query query = parser.parse (q);
 ... 
@@ -617,9 +617,9 @@ Notes:
         * Indexed fields may or may not be analyzed (i.e., tokenized with an Analyzer)
           * Non-analyzed fields view the entire value as a single token (useful for URLs, paths, dates, social security numbers, ...)
      - Be stored or not
-        * Useful for fields that you’d like to display to users
+        * Useful for fields that you'd like to display to users
      - Optionally store term vectors
-        * Like a positional index on the Field’s terms
+        * Like a positional index on the Field's terms
         * Useful for highlighting, finding similar documents, categorization
 
 Notes: 
@@ -653,7 +653,7 @@ Field(String name,
 
  * `FieldType` specifies field properties.
 
- * Can also directly use sub-classes like `TextField`, `StringField`, …
+ * Can also directly use sub-classes like `TextField`, `StringField`, ...
 
 Notes: 
 
@@ -688,10 +688,10 @@ Notes:
 
 ```java
 Document  doc = new  Document ();
-  doc. add (new  TextField (“author”,
-					     “chris manning”));
-doc. add (new  TextField (“author”,
-					     “prabhakar raghavan”));
+  doc. add (new  TextField ("author",
+					     "chris manning"));
+doc. add (new  TextField ("author",
+					     "prabhakar raghavan"));
 ...
 ```
 <!-- {"left" : 0, "top" : 2.66, "height" : 2.19, "width" : 9.48} -->
@@ -722,7 +722,7 @@ Notes:
 ## Analysis example
 
 
- * “The quick brown fox jumped over the lazy dog”
+ * "The quick brown fox jumped over the lazy dog"
  * `WhitespaceAnalyzer`
      - `[The] [quick] [brown] [fox] [jumped] [over] [the] [lazy] [dog]`
  * SimpleAnalyzer
@@ -741,7 +741,7 @@ Notes:
 ## Another analysis example
 
 
- * “XY&Z Corporation – xyz@example.com”
+ * "XY&Z Corporation – xyz@example.com"
 
  * WhitespaceAnalyzer
 
@@ -765,7 +765,7 @@ Notes:
 
 ---
 
-## What’s inside an Analyzer?
+## What's inside an Analyzer?
 
 
  * Analyzers need to return a `TokenStream`:
@@ -807,7 +807,7 @@ Notes:
 ## Adding/deleting Documents to/from an IndexWriter
 
  * `void addDocument(Iterable<IndexableField> d);`
- * IndexWriter’s Analyzer is used to analyze document.
+ * IndexWriter's Analyzer is used to analyze document.
  *  Important: Need to ensure that Analyzers used at indexing time are consistent with Analyzers used at searching time
 
 ```java
@@ -895,7 +895,7 @@ IndexWriter writer = ...;
 DirectoryReader reader = 
     DirectoryReader.open(writer, true);
 IndexSearcher searcher = new IndexSearcher(reader);
-// Now let us say there’s a change to the index using writer
+// Now let us say there's a change to the index using writer
 writer.addDocument(newDoc);
 DirectoryReader newReader =
     DirectoryReader.openIfChanged(reader, writer, true);

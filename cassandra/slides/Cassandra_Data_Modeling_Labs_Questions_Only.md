@@ -56,7 +56,7 @@ Notes:
  * Analyze 
 
      - Your solution
-     - Instructor’s solution
+     - Instructor's solution
 
  * Discuss
 
@@ -194,7 +194,7 @@ Notes:
 
 <img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
 
- * How can we store “release dates” in movie table?
+ * How can we store "release dates" in movie table?
 
      - (theatrical_release, date1)
 
@@ -263,12 +263,12 @@ Notes:
 
  * A user has multiple devices (TV, tablet, phone, computer)
  * Devices belong to one user
- * Classic “one to many” relationship
+ * Classic "one to many" relationship
  * Device attributes:
 
      - Device_id (something unique)
      - MAC address
-     - Description (“my phone”)
+     - Description ("my phone")
      - Device Type (phone/tv/tablet/set-top)
      - Device belongs to ONE user
 
@@ -350,11 +350,11 @@ Notes:
 
  * Many algorithms
 
- * ‘Collaborative filtering’ is one popular algorithm
+ * 'Collaborative filtering' is one popular algorithm
      - Two models: users & items
 
  * Quick example
-     - Recommend movies for ‘user α’
+     - Recommend movies for 'user α'
 
 Notes: 
 
@@ -370,13 +370,13 @@ Notes:
 
  * De-normalize for fast queries
 
-     - Don’t worry about storage... storage is cheap!
+     - Don't worry about storage... storage is cheap!
 
  * Q: Is Netflix a **read-heavy** or **write-heavy** application?
 
      - Hint: In prime time (8-11pm) **36%** Internet traffic in US is consumed by Netflix streaming!
 
-     - Probably **write-heavy** (all the devices sending ‘position’ data as movie is being watched)
+     - Probably **write-heavy** (all the devices sending 'position' data as movie is being watched)
 
      - Netflix is not serving actual movie content from `C*``C*` is not built for large files
 
@@ -451,10 +451,10 @@ Notes:
      - Upload_time
      - Tags
 
- * Videos cannot be identified by names or title (“my cat” is not unique)
+ * Videos cannot be identified by names or title ("my cat" is not unique)
 
  * Query:
-     - Query video by a unique ‘video_id’
+     - Query video by a unique 'video_id'
 
  * **Answer: Next Slide!**
 
@@ -565,7 +565,7 @@ Notes:
 
  * Leave comments
 
- * “Like” items 
+ * "Like" items 
 
  * Queries
 
@@ -606,7 +606,7 @@ Notes:
         * Detect attacks
      - Web properties (Amazon or LinkedIn)
         * Log user activities
-        * Analyze user activities (which button users click most…etc.)
+        * Analyze user activities (which button users click most...etc.)
  * Distributed log collection
      - Need to collect from multiple sources (100s or even 1000s)
 
@@ -628,9 +628,9 @@ Notes:
 
  * Part of Hadoop ecosystem
 
- * Works on ‘agent => and his hub’ model
+ * Works on 'agent => and his hub' model
 
- * Agents run on ‘log source’ and keep sending data upstream
+ * Agents run on 'log source' and keep sending data upstream
 
  * Can handle failures
 
@@ -658,8 +658,8 @@ Notes:
 
  * Data is organized as topics
 
-     - “emails”
-     - “clicks”
+     - "emails"
+     - "clicks"
 
  * Built for high throughput
 
@@ -690,7 +690,7 @@ Notes:
 
      - Find log events for a certain host (latest event first)
 
-     - Make sure partition size doesn’t get too big
+     - Make sure partition size doesn't get too big
 
  * **Answer: Next Slide!**
 

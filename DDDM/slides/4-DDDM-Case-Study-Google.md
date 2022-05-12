@@ -4,8 +4,8 @@
 
 ## About Google
 
- * Google’s mission:
- * "To organize the world’s information and make it universally accessible and useful."
+ * Google's mission:
+ * "To organize the world's information and make it universally accessible and useful."
  * And in pursuing this mission, the company is very serious about using information to inform their decisions.
  * Founded by two engineers, Google is a company where:
    - data-driven insights are part of its DNA, 
@@ -19,9 +19,9 @@
 
 Data can provide much-needed answers, but only if you are clear about the questions you need to answer
  * Google aims to start with these questions and be very clear about the information it needs at the outset
- * As the company’s former executive chairman, Eric Schmidt, has said, “We run the company by questions, not by answers.”
+ * As the company's former executive chairman, Eric Schmidt, has said, "We run the company by questions, not by answers."
  * Within its global HR function, Google has created a people analytics department that enables the organization to make data-driven people decisions
- * One question Google wanted to answer was, “Do managers actually matter?” This is a question Google had been wrestling with for years; at one point, the company actually got rid of all managers and made everyone an individual contributor
+ * One question Google wanted to answer was, "Do managers actually matter?" This is a question Google had been wrestling with for years; at one point, the company actually got rid of all managers and made everyone an individual contributor
  * This did not really work, and managers were brought back in, but the suspicion lingered that managers perhaps were not that important.
  * So, Google had identified a critical people-related question that it wanted to answer: Do managers matter?
 
@@ -40,8 +40,8 @@ Data can provide much-needed answers, but only if you are clear about the questi
 
 ## Collecting Data 
  * This answered the original question – clearly, managers did matter – but it did not really give much in terms of actionable insights
- * So the team came up with a new question that needed answering: “What makes a good manager at Google?” To answer this new question, the team introduced two new data collection methods
- * The first was a “Great Managers Award,” through which employees could nominate managers they felt were particularly good
+ * So the team came up with a new question that needed answering: "What makes a good manager at Google?" To answer this new question, the team introduced two new data collection methods
+ * The first was a "Great Managers Award," through which employees could nominate managers they felt were particularly good
  * As part of the nomination, employees had to provide examples of behaviors they felt supported their good assessment of managers
  * The second data set came from interviews with the managers in each of the two quartiles (bottom and top) to understand what they were doing or not doing (the managers did not know which quartile they were in.
 
@@ -54,7 +54,7 @@ high-scoring manager, as well as the top three reasons why managers were struggl
 According to the findings, a high-scoring manager displayed the following eight characteristics:
  *  a good coach
  *  empowers the team, does not micromanage
- *  expresses interest / concern for team members’ success and personal wellbeing
+ *  expresses interest / concern for team members' success and personal wellbeing
  *  productive and results-oriented
  *  a good communicator – listens and shares information
  *  helps with career development

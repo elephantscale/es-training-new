@@ -16,7 +16,7 @@
 Notes:
 Mapping is a schema definition which tells Elasticsearch how to index your data.  
 Most of the time it can figure out the correct type of mapping for your data (strings, floating point numbers, integers etc..) 
-Sometimes we have to give it a hint.  We want the “release date” to specifically be a date field. 
+Sometimes we have to give it a hint.  We want the "release date" to specifically be a date field. 
 Movie data type: year = type date, not just string
 Preferred to explicitly tell Elasticsearch since that reduces instances of the implied mapping identifying a more generic or incorrect type.
 
@@ -24,7 +24,7 @@ Preferred to explicitly tell Elasticsearch since that reduces instances of the i
 
 ## Elasticsearch 5 Syntax
 
-* In Elasticsearch 5 it was possible to send a REST request without the Content-Type. Elasticsearch would then “sniff” the content and set the type based on that. 
+* In Elasticsearch 5 it was possible to send a REST request without the Content-Type. Elasticsearch would then "sniff" the content and set the type based on that. 
 
 <img src="../../assets/images/elastic/3rd-party/syntax.png" alt="syntax.png" style="width:60%;"/>
 
@@ -33,7 +33,7 @@ Notes:
 
 Mapping is a schema definition which tells Elasticsearch how to index your data.  
 Most of the time it can figure out the correct type of mapping for your data (strings, floating point numbers, integers etc..) Some types such as timestamp and decimal, may not be correctly inferred
-Sometimes we have to give it a hint.  We want the “release date” to specifically be a date field. 
+Sometimes we have to give it a hint.  We want the "release date" to specifically be a date field. 
 
 This ability to enforce strict content-type checking has existed since Elasticsearch 5.3 via the http.content_type.required configuration setting. In 5.x it is optional, and defaults to false, in Elasticsearch 6.0, that setting defaults to true, and there is no way to disable it.
 
@@ -50,10 +50,10 @@ https://www.elastic.co/guide/en/elasticsearch/reference/6.0/removal-of-types.htm
 
 * There are two reasons this changed. 
 * Clarity
-  - Sending plain text content to API that doesn’t support it returns.
+  - Sending plain text content to API that doesn't support it returns.
 * `Content-Type header [text/plain] is not supported`
 
-* In Elasticsearch 5 if you sent plain text that started with a curly brace and the letter “a” it would assume it was JSON, but when it tried to parse that, it would fail and the error message would look more like: 
+* In Elasticsearch 5 if you sent plain text that started with a curly brace and the letter "a" it would assume it was JSON, but when it tried to parse that, it would fail and the error message would look more like: 
 
 * `Unexpected character ('a' (code 97)): was expecting double-quote to start field name`
 
@@ -61,7 +61,7 @@ Notes:
 
 Elasticsearch 5 did some magic to try and figure out what type of content you were sending. 
 This led to bad error messages.
-Plain text sent.. ES5 sees it has curly braces and assumes it’s JSON but it isn’t so get syntax error back.
+Plain text sent.. ES5 sees it has curly braces and assumes it's JSON but it isn't so get syntax error back.
 
 As Elasticsearch has evolved the development team made a conscious decision to favor reliability and predictability over leniency. 
 
@@ -86,7 +86,7 @@ Simple HTML page that posts a document to Elasticsearch without authenticating.
 Sending JSON as Plain Text
 
 Strict checking of content-type is also useful as a layer of protection against Cross Site Request Forgery attacks.
-If you run an out-of-the-box install of Elasticsearch 5 on your local computer, and then open up the page noted in the slide, in your web browser, it will add a new document in your Elasticsearch cluster that stores your browser’s User Agent and the time that you loaded the page. That’s not so scary, but with minimal changes we could make that same page overwrite or delete existing documents.
+If you run an out-of-the-box install of Elasticsearch 5 on your local computer, and then open up the page noted in the slide, in your web browser, it will add a new document in your Elasticsearch cluster that stores your browser's User Agent and the time that you loaded the page. That's not so scary, but with minimal changes we could make that same page overwrite or delete existing documents.
 
 
 ---
@@ -123,7 +123,7 @@ broken up by whitespace, etc..
 Notes:
 
 Character filters: If apply same analyzer to search query and data that is indexed it will return better results. 
-Example: Search for data using ampersand, or ‘and’ and get same results. 
+Example: Search for data using ampersand, or 'and' and get same results. 
 tokenizer: Splits strings up certain ways, language specific tokenizing etc.. 
 token filter: case insensitive (lowercase everything), stemming (box, boxed, boxing can all match).
 stopwords (and, a, the) stops these words from being indexed. (stopwords can have side effects)
@@ -137,10 +137,10 @@ stopwords (and, a, the) stops these words from being indexed. (stopwords can hav
   - splits on word boundaries, removes punctuation,  lowercases. good choice if language is unknown
 
 * **Simple**
-  - splits on anything that isn’t a letter, and lowercases
+  - splits on anything that isn't a letter, and lowercases
 
 * **Whitespace**
-  - splits on whitespace but doesn’t lowercase
+  - splits on whitespace but doesn't lowercase
 
 * **Language (i.e. english)**
   - accounts for language-specific stopwords and  stemming
@@ -148,9 +148,9 @@ stopwords (and, a, the) stops these words from being indexed. (stopwords can hav
 Notes:
 
 Standard: default
-if you don’t know language it’s good to stick with. (supports foreign language)
+if you don't know language it's good to stick with. (supports foreign language)
 Simple
-Splits on anything that isn’t a letter and it lowercases everything. 
+Splits on anything that isn't a letter and it lowercases everything. 
 Whitespace
 Splits on whitespace, punctuation is preserved.
 Language specific (specify in English, or any other language) 
@@ -237,7 +237,7 @@ Create a shell script that automatically passes JSON Content-Type to curl.
 
 Notes:
 
-Don’t do this in production, it is a hack that is only applicable to this course. 
+Don't do this in production, it is a hack that is only applicable to this course. 
 
 
 ---
@@ -253,7 +253,7 @@ Don’t do this in production, it is a hack that is only applicable to this cour
 
 Notes:
 
-Now that we have our mapping created let’s go ahead and insert a movie
+Now that we have our mapping created let's go ahead and insert a movie
 
 ---
 
@@ -263,7 +263,7 @@ Now that we have our mapping created let’s go ahead and insert a movie
 
 Notes:
 
-Now that we have our mapping created let’s go ahead and insert a movie
+Now that we have our mapping created let's go ahead and insert a movie
 
 ---
 
@@ -272,7 +272,7 @@ Now that we have our mapping created let’s go ahead and insert a movie
 
 ## Ison Bulk Import
 
-* **`curl -XPUT	127.0.0.1:9200/_bulk –d ‘`**
+* **`curl -XPUT	127.0.0.1:9200/_bulk –d '`**
 
 ```text
 { "create" : { "_index" : "movies", "_type" : "movie", "_id" : "135569" } }
@@ -284,7 +284,7 @@ Now that we have our mapping created let’s go ahead and insert a movie
 { "create" : { "_index" : "movies", "_type" : "movie", "_id" : "58559" } }
 { "id": "58559", "title" : "Dark Knight, The", "year":2008 , "genre":["Action", "Crime", "Drama", "IMAX"] }
 { "create" : { "_index" : "movies", "_type" : "movie", "_id" : "1924" } }
-{ "id": "1924", "title" : "Plan 9 from Outer Space", "year":1959 , "genre":["Horror", "Sci-Fi"] } ‘
+{ "id": "1924", "title" : "Plan 9 from Outer Space", "year":1959 , "genre":["Horror", "Sci-Fi"] } '
 ```
 
 Notes:
@@ -307,7 +307,7 @@ Elasticsearch goes through this one document at a time, sends it off to whatever
 
 Notes:
 
-We’ve covered indexing new documents using JSON format in REST API. 
+We've covered indexing new documents using JSON format in REST API. 
 We tried to insert Interstellar twice and it gave us an error. 
 Elasticsearch documents are immutable, they can not be changed after creation. 
 
@@ -380,7 +380,7 @@ When a POST command is run to update the document some fun stuff happens.
 
 ---
 
-## It couldn’t be easier.
+## It couldn't be easier.
 
 * Just use the DELETE method:
 
@@ -454,7 +454,7 @@ Notes:
 Two different clients both running distributed web sites 
 Check page count at same time and see 10
 Both check page count through Elasticsearch 
-Both send update of view count 11 to Elasticsearch at same time….  this is wrong, should be 12 for 2nd client.
+Both send update of view count 11 to Elasticsearch at same time....  this is wrong, should be 12 for 2nd client.
 ]If there's a lot of people hitting your Elasticsearch at the same time this kind of issue can happen. 
 
 Also known as eventually consistency. 

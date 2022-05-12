@@ -36,11 +36,11 @@ Notes:
 
      - Lots of clients for `C*` 1.x
 
-     - Hector, Kundera …etc
+     - Hector, Kundera ...etc
 
      - They all use thrift interface
 
- * With `C*`  2.x   recommended clients are ‘native’ drivers
+ * With `C*`  2.x   recommended clients are 'native' drivers
 
 Notes: 
 
@@ -53,7 +53,7 @@ Notes:
 
  * Asynchronous – Netty based
 
- * Supports collections (lists, maps…)
+ * Supports collections (lists, maps...)
 
  * Automatic ResultSet pagination
 
@@ -118,9 +118,9 @@ import com.datastax.driver.core.Cluster;import com.datastax.driver.core.Session;
 Notes: 
 
 addContactPointI()
-	- we can add more contact points… to safeguard against single-point-of-contact down
+	- we can add more contact points... to safeguard against single-point-of-contact down
 	- no need to specify all nodes (10 node cluster.. No need to specify all 10 nodes)
-	- the driver will LEARN the topology after connecting to a node  (example… moving to a new neighborhood… talk to one neighbor… learn about others 
+	- the driver will LEARN the topology after connecting to a node  (example... moving to a new neighborhood... talk to one neighbor... learn about others 
 
 Sessions
 	- can be authorized for each keyspace (if password protected)
@@ -131,15 +131,15 @@ Sessions
 ## Executing a Query
 
 ```text
-cluster = Cluster.builder().addContactPoint("localhost”).build();
+cluster = Cluster.builder().addContactPoint("localhost").build();
 Session session = cluster.connect("myflix");
-String cql = “insert into users(id, name) values (‘user1’,  ‘Joe’)”;
+String cql = "insert into users(id, name) values ('user1',  'Joe')";
 session.execute(cql);
 
 ```
  * Just like SQL!
 
- * String values must be included in single quotes (‘hello’)
+ * String values must be included in single quotes ('hello')
 
  * List values are in enclosed in square brackets []
 
@@ -165,14 +165,14 @@ Notes:
      - Bind statement with values to pass to query
 
 ```text
-cluster = Cluster.builder().addContactPoint("localhost”).build();
+cluster = Cluster.builder().addContactPoint("localhost").build();
 Session session = cluster.connect("myflix");
 
 PreparedStatement statement = session.prepare(
    "INSERT INTO users (user_name, fname) VALUES (?,?);");
 BoundStatement boundStatement = new BoundStatement(statement);
 
-session.execute(boundStatement.bind(“user1”, “Joe”));
+session.execute(boundStatement.bind("user1", "Joe"));
 
 ```
 
@@ -185,12 +185,12 @@ Notes:
 ## Query
 
 ```text
-String cql = “select user_id, user_name from users”;
+String cql = "select user_id, user_name from users";
 
 ResultSet resultSet = session.execute(cql);
 	
 For (Row row : resultSet) {
-   System.out.println(row.getString(“user_name”) );
+   System.out.println(row.getString("user_name") );
 }
 
 
@@ -219,8 +219,8 @@ Notes:
 
  * Note : 
 
-     - ‘executeAsync’: non blocking
-     - ‘queryUniterruptibly’: blocking
+     - 'executeAsync': non blocking
+     - 'queryUniterruptibly': blocking
 
 
 
@@ -311,7 +311,7 @@ Notes:
 
      - Map Java objects to data stores
 
-     - adapters for various data sources (MySQL / Oracle …etc)
+     - adapters for various data sources (MySQL / Oracle ...etc)
 
  * Cassandra support: full
 

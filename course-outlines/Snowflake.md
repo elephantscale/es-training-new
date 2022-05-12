@@ -5,7 +5,7 @@
 ## Overview
 
 Snowflake is the leading solution for warehousing in the cloud. 
-It is built for the cloud. Snowflake delivers the performance, concurrency and simplicity needed to store and analyze all of an organization’s data in one solution. Snowflake’s technology combines the power of data warehousing, the flexibility of big data platforms and the elasticity of the cloud at a fraction of the cost of traditional solutions.
+It is built for the cloud. Snowflake delivers the performance, concurrency and simplicity needed to store and analyze all of an organization's data in one solution. Snowflake's technology combines the power of data warehousing, the flexibility of big data platforms and the elasticity of the cloud at a fraction of the cost of traditional solutions.
 
 ## Duration:
 Three to Four Days

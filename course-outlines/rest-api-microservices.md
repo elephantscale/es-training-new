@@ -6,7 +6,7 @@ February 15, 2022
 A very important part of modern software development is the new discipline of Cloud-enabled microservices, and part of this is PAAS (Platform as a Service) which allows deploying such apps into production with the minimum effort. This course will introduce the participants into microservices,
 concentrating on the REST API part.
 
-The course is intended for software architects and engineers. It gives them a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student’s participation.
+The course is intended for software architects and engineers. It gives them a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student's participation.
 
 Course objectives
 
@@ -54,12 +54,12 @@ Zero Install: There is no need to install any software on students' machines! (a
 * How Pivotal Cloud Foundry Enables Continuous Delivery
 
 ### Microservices Security
-*     Why it’s so important
+*     Why it's so important
 *     Microservice Security Principles                          
 *     Access Tokens
 *     Oauth 2.0
-*     Kerckhoff’s Principle
-*     Shannon’s Maxim
+*     Kerckhoff's Principle
+*     Shannon's Maxim
 *     Security through obscurity
 *     General Security Considerations
 *     Middleware Security Considerations

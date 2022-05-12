@@ -8,7 +8,7 @@ January 26, 2022
 
 * This course is targeted for programmers who need to get introduced to Scala. They may be new to Scala, they may be coming from a Java, Python, or even mainframe environment.
 * Scala may be the next wave in developer productivity. It is concise, object-oriented, functional, offers support for concurrency, but is compatible with Java and is JVM – based. For this reason, Scala has been attracting the interest of many programming shops. However, these advantages are only possible through an effort of study. The Scala Programming course is designed to help this process through hands-on training.
-* This course teaches how to understand the essence of Scala and write functional programming software that is functional and “scalaesque” enough.
+* This course teaches how to understand the essence of Scala and write functional programming software that is functional and "scalaesque" enough.
 
 ## Goals
 * Learn one of the hottest languages

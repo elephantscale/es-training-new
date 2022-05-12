@@ -161,10 +161,10 @@ Notes:
 
 ## ElasticSearch
 
-  * SOLR’s competitor
-  * SOLR is “true open source,” with a community behind it
+  * SOLR's competitor
+  * SOLR is "true open source," with a community behind it
   * Thus, government agencies prefer SOLR (personal view)
-  * ElasticSearch came up as “search done right”
+  * ElasticSearch came up as "search done right"
   * For a while, ElasticSearch was moving faster
   * By now, they have evened out
   * Note : Cloudera integrated SOLR, not ES
@@ -205,7 +205,7 @@ Notes:
   * How do you make it searchable?
 
   * Cloudera has added SOLR to index HBase fields
-  * And sync’s them up with fields change
+  * And sync's them up with fields change
 
 
 Notes:
@@ -291,7 +291,7 @@ Notes:
     - 300 hundred researchers
     - Dozens of projects
     - Store all data into common format in SOLR
-    - Any group can query the other group’s work
+    - Any group can query the other group's work
 
 
 

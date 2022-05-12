@@ -7,7 +7,7 @@ Feb 01, 2022
 ## Overview
 
 Kafka is definitely one of the leading distributed messaging queues, 
-found in use everywhere. More correctly called “a distributed messaging platform,” 
+found in use everywhere. More correctly called "a distributed messaging platform," 
 it provides three key capabilities: publish-and-subscribe, store streams, and process streams. 
 
 This course introduces the students to using Kafka and continues with Kafka's advanced capabilities.

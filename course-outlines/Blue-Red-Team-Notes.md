@@ -8,11 +8,11 @@
 
 * Blue Teams are the proactive defenders of a company from a cybersecurity standpoint.
 
-* There are a number of defense-oriented InfoSec tasks that are not widely considered to be Blue-Team-worthy, e.g., a tier-1 SOC analyst who has no training or interest in offensive techniques, no curiosity regarding the interface they’re looking at, and no creativity in following up on any potential alerts.
+* There are a number of defense-oriented InfoSec tasks that are not widely considered to be Blue-Team-worthy, e.g., a tier-1 SOC analyst who has no training or interest in offensive techniques, no curiosity regarding the interface they're looking at, and no creativity in following up on any potential alerts.
 
 * All Blue Teams are defenders, but not all defenders are part of a Blue Team.
 
-* What makes a Blue Team vs. just doing defensive things is the mentality. Here’s how I make the distinction: Blue Teams / Blue Teamers have and use:
+* What makes a Blue Team vs. just doing defensive things is the mentality. Here's how I make the distinction: Blue Teams / Blue Teamers have and use:
 
 ### Related
 
@@ -20,7 +20,7 @@
 * A proactive vs. reactive mindset
 * Endless curiosity regarding things that are out of the ordinary
 * Continuous improvement in detection and response
-* It’s not about whether someone is a self-taught tier-1 SOC analyst or some hotshot former Red Teamer from Carnegie Mellon. It’s about curiosity and a desire to constantly improve."
+* It's not about whether someone is a self-taught tier-1 SOC analyst or some hotshot former Red Teamer from Carnegie Mellon. It's about curiosity and a desire to constantly improve."
 
 * Blue team will use various logging and monitoring tools. SOC-type stuff - getting things like gateway devices, or network devices (or cloud equivalent), or end-user assets, to generate logging events to send to Splunk. And then generating alerts based on various rules. EDR tools such as CarbonBlack for end-user assets.
 

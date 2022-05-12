@@ -68,10 +68,10 @@ Notes:
 
 ---
 
-## `C*` History
+## C* History
 
 
- * Developed @ Facebook to power ‘inbox’ search (2008)
+ * Developed @ Facebook to power 'inbox' search (2008)
 
  * Modeled after Amazon Dynamo & Google Big Table
 
@@ -89,9 +89,19 @@ Notes:
 
      - 2017: v3.10
 
+     - 2022: v 4.0
+
 Notes: 
 
 
+---
+
+## Cassandra 4.0 Noteworthy Features
+
+* Java 11 is fully supported (finally!)
+
+* Virtual Tables
+    - Allow us to query metrics using CQL
 
 
 ---
@@ -125,7 +135,7 @@ Notes:
 
      - No "master"/"slave" design
 
-     - “Ring" design
+     - "Ring" design
 
  * No single master
 
@@ -258,7 +268,7 @@ Notes:
 
  * Amazon AWS, Google Cloud, Cloudstack ...etc.
 
- * Cloud gives you “unlimited” scale
+ * Cloud gives you "unlimited" scale
 
  * Netflix is a big user of ``C*`` on Amazon Cloud
 
@@ -399,7 +409,7 @@ Notes:
 
      - Usually one/two
 
- * Keyspace, in turn, contains ‘tables’
+ * Keyspace, in turn, contains 'tables'
 
  * Keyspace attributes
 
@@ -440,7 +450,7 @@ Notes:
 
 ---
 
-## Hierarchy: ‘Myflix’ Application
+## Hierarchy: 'Myflix' Application
 
 <img src="../../assets/images/cassandra/Hierarchy-Myflix-Application.png"  style="width:50%;"/>
 
@@ -480,7 +490,7 @@ Notes:
 ## Sparse Tables
 
 
- * Unlike RDBMS, Cassandra is built for “sparse” rows
+ * Unlike RDBMS, Cassandra is built for "sparse" rows
 
 </br>
 
@@ -491,11 +501,11 @@ Notes:
 
  * Each row can have any number of columns
 
-     - Doesn’t have to be same column (unlike RDBMS)
+     - Doesn't have to be same column (unlike RDBMS)
 
  * `C*` does NOT store NULL values
 
-     - NULLs don’t take up any space (free)
+     - NULLs don't take up any space (free)
 
 Notes: 
 
@@ -507,7 +517,7 @@ Notes:
 ## Timestamp of Cell
 
 
- * `C*` tracks “last modification” time for each column automatically.  
+ * `C*` tracks "last modification" time for each column automatically.  
 
  * This timestamp is stored along side with data.
 
@@ -610,7 +620,7 @@ Notes:
 ## CQL Shell Getting Started
 
 
- * Use ‘help’ or ‘?’ to get help
+ * Use 'help' or '?' to get help
 
  * 	*cqlsh> help describe;*
 
@@ -735,7 +745,7 @@ Notes:
 
 Murmur Hash algorithm: https://en.wikipedia.org/wiki/MurmurHash
 Murmur code repository: https://github.com/aappleby/smhasher
-Murmur3 is the new default hashing algorithm.  It provides faster hashing & improved performance over its predecessor “RandomPartitioner.” 
+Murmur3 is the new default hashing algorithm.  It provides faster hashing & improved performance over its predecessor "RandomPartitioner." 
 
 
 ---
@@ -746,13 +756,13 @@ Murmur3 is the new default hashing algorithm.  It provides faster hashing & impr
 
  * Rows are distributed across nodes as partitions
 
- * Placement is determined by “hashing”
+ * Placement is determined by "hashing"
 
- * “Subsequent” rows may not be stored together on the same node.
+ * "Subsequent" rows may not be stored together on the same node.
 
      - Hashing can place them on different nodes
 
-     - See diagram: ‘row2’ and ‘row3’ are on different nodes 
+     - See diagram: 'row2' and 'row3' are on different nodes 
 
 
 Notes: 
@@ -769,7 +779,7 @@ Notes:
 
  * `C*` creates multiple replicas on different nodes
 
- *  **“Replication Factor”**  decides the number of copies (default 3 copies)
+ *  **"Replication Factor"**  decides the number of copies (default 3 copies)
 
  * RF is set at KeySpace level
 
@@ -791,9 +801,9 @@ Notes:
 
  * The first replica is determined by partitioner
 
- * Places other replicas on next nodes around the ring walking “clockwise”
+ * Places other replicas on next nodes around the ring walking "clockwise"
 
- * Doesn’t consider network topology
+ * Doesn't consider network topology
 
  * OK for evaluation/testing
 
@@ -845,7 +855,7 @@ Notes:
 
  * We have 2 replicasIs it safe?
 
- * If ‘rack 1’ fails, datais lost!
+ * If 'rack 1' fails, datais lost!
 
 
 Notes: 
@@ -941,15 +951,15 @@ Notes:
 
  * CAP Theorem is in effect again
 
- * Strong consistency in a distributed system will mean “locking” and “blocking”
+ * Strong consistency in a distributed system will mean "locking" and "blocking"
 
-     - Writers “lock” the data they are updating
+     - Writers "lock" the data they are updating
 
-     - All readers attempting to read the data “block” till lock is released
+     - All readers attempting to read the data "block" till lock is released
 
  * Locking and Blocking will reduce data throughput
 
- * We don’t need strong consistency all the time
+ * We don't need strong consistency all the time
 
 Notes: 
 
@@ -1019,7 +1029,7 @@ Consistency = ALL, client will wait for all replicas to be created.
 
  * Client connects to any node
 
-     - This becomes the “co-ordinator” node
+     - This becomes the "co-ordinator" node
 
  * RF = 3
 
@@ -1027,7 +1037,7 @@ Consistency = ALL, client will wait for all replicas to be created.
 
      - The first replica is determined by the partitioner (hash)
 
-     - Walks the ring “clockwise” to find replicas
+     - Walks the ring "clockwise" to find replicas
 
  * Consistency = ALL
 
@@ -1085,7 +1095,7 @@ Notes:
 ## Quiz 1: RF & Level
 
 
- * Client writes with RF = 3,   Level=ANYWhich of the following is true…
+ * Client writes with RF = 3,   Level=ANYWhich of the following is true...
 
      - `C*` will only create only COPY of data
 
@@ -1138,7 +1148,7 @@ RF = 2 @ DC2, 2 replicas
 Client is connected to DC1, so this is our local data center.
 Level = Local_Quorum, so we need to meet quorum in local data center (DC1). 
 Create 2 replicas  ( Q = RF / 2 + 1)
-RF1 and RF2 are created in DC1…client waits until they are created.
+RF1 and RF2 are created in DC1...client waits until they are created.
 After that, client is notified of successful write, client returns.
 In DC1, RF3 is created in background.
 In DC2, RF4 and RF5 are created in background.
@@ -1233,7 +1243,7 @@ And the correct values are pushed to all out-of-date nodes.
 ## Repair on Read
 
 
- * Reconciled values are pushed out to “out-of-date” replicas
+ * Reconciled values are pushed out to "out-of-date" replicas
 
  * Only replicas that are read will be updated
 
@@ -1413,7 +1423,7 @@ Notes:
 
  * 3) What if coordinator node goes down?
 
- * 4) “Good data turning bad”
+ * 4) "Good data turning bad"
 
 Notes: 
 
@@ -1456,17 +1466,17 @@ Node 4 will store the hints and forward them to node 3 when it comes back up.
 ## Ensuring Consistency
 
 
- * `C*` can do repair-on-read…cool!
+ * `C*` can do repair-on-read...cool!
 
  * How about data that is never read?
 
- * “Bad things happen to good data”
+ * "Bad things happen to good data"
 
      - A disk corruption changes data value
 
  * Anti-Entropy-Service 
 
-     - Run periodically to ensure “good data remains good”
+     - Run periodically to ensure "good data remains good"
 
  * Summary
 

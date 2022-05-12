@@ -218,7 +218,7 @@ Notes:
 
 <img src="../../assets/images/elastic/3rd-party/Configure-01.png" alt="Configure-01.png" style="width:20%;float:right"/><!-- {"left" : 6.96, "top" : 1.05, "height" : 5.56, "width" : 3.14} -->
 
-* Click on “Configure”
+* Click on "Configure"
 * Observe the prominent fields and their value distribution
 * Investigate fields, such as
   - geo.src
@@ -457,7 +457,7 @@ Notes:
 
 <img src="../../assets/images/people/william-shakespeare.png" alt="william-shakespeare.png" style="width:30%;float:right;"/>
 
-* Let’s analyze the works of william shakespeare...
+* Let's analyze the works of william shakespeare...
 
 * Because we can.
 

@@ -1,4 +1,4 @@
-# Cassandra Data Modeling 2
+# Data Modeling with Cassandra 2
 
 
 ---
@@ -35,9 +35,9 @@ Notes:
 
 | Type | Description                                       | Sample                            |
 |------|---------------------------------------------------|-----------------------------------|
-| List | * Ordered collection   </br> * Duplicates allowed | [‘foo’, ‘bar’, ‘foo’]             |
-| Set  | * Un-ordered collection   </br>  * No duplicates  | {‘foo’, ‘bar’}                    |
-| Map  | * Key / value  </br> * No dupes                   | {‘x’: ‘foo’,     </br>‘y’: ‘bar’} |
+| List | * Ordered collection   </br> * Duplicates allowed | ['foo', 'bar', 'foo']             |
+| Set  | * Un-ordered collection   </br>  * No duplicates  | {'foo', 'bar'}                    |
+| Map  | * Key / value  </br> * No dupes                   | {'x': 'foo',     </br>'y': 'bar'} |
 
 
 Notes: 
@@ -50,11 +50,11 @@ Notes:
 ## Collections Best Practices
 
 
- * Keep collections ‘small’.
+ * Keep collections 'small'.
 
  * Observe the following limitations of collections.
 
- * Don’t insert more than 2 Billion entries into a collectionAny thing more won’t be queryable  => data loss 
+ * Don't insert more than 2 Billion entries into a collectionAny thing more won't be queryable  => data loss 
 
  * Maximum number of keys for map is 64k
 
@@ -63,7 +63,7 @@ Notes:
      - Map / List: 2GB per item
      - Set: 64KB
 
- * Collections cannot be ‘sliced’.  `C*` reads the entire collection into memory. => stay well within the maximum limits listed
+ * Collections cannot be 'sliced'.  `C*` reads the entire collection into memory. => stay well within the maximum limits listed
 
  * Support for indexing collections is moving target
 
@@ -91,16 +91,16 @@ create table users (
 
 -- set
 insert into users(uid, name, phones) 
-VALUES (‘u1’, ‘user 1’, {‘+1415123456’ , ‘+14082349876’});
+VALUES ('u1', 'user 1', {'+1415123456' , '+14082349876'});
 
 -- map
 insert into users (uid, emails)
-VALUES (‘u1’, {‘personal’: ‘u1@gmail.com’, 
-					   ‘work’: ‘u1@company.com’ } );
+VALUES ('u1', {'personal': 'u1@gmail.com', 
+					   'work': 'u1@company.com' } );
 
 -- list (duplicates allowed)
 Insert into users (uid, checkins)
-VALUES (‘u1’, [‘starbucks’,  ‘great mall’,  ‘starbucks’]);
+VALUES ('u1', ['starbucks',  'great mall',  'starbucks']);
 
 ```
 
@@ -128,7 +128,7 @@ Notes:
 
  *  **Instructions:**  **03-collections /**  **README.md** 
 
- *  **Documentation:** http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html (search for ‘collections’)
+ *  **Documentation:** http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html (search for 'collections')
 
  *  **Lab** 
 
@@ -181,7 +181,7 @@ Notes:
 
      - Columbia
 
- * Let’s include **Country Name** in primary key
+ * Let's include **Country Name** in primary key
 
  * **Primary Key = Country Name + City Name**
 
@@ -326,13 +326,13 @@ Notes:
 
  * Query by **Partition Key**
 
-     - SELECT * from cities WHERE  **country** = ‘USA’
+     - SELECT * from cities WHERE  **country** = 'USA'
 
      - Specifying Partition key is important for fast queries
 
  * Query by **Cluster Columns**
 
-     - SELECT  * from cities   WHERE  **city** = ‘Melbourne’
+     - SELECT  * from cities   WHERE  **city** = 'Melbourne'
 
      - Can be slow!
 
@@ -352,7 +352,7 @@ Notes:
 
      - Need to specify Partition Key in WHERE clause
 
-     - Select*  ... where  **country = ‘**  **USA** ’
+     - Select*  ... where  **country = '**  **USA** '
 
 | Country | City          | Population |
 |---------|---------------|------------|
@@ -375,7 +375,7 @@ Notes:
 
      - Needs multiple seeks on disk
 
- * Select... WHERE   **city = ‘**  **Melbourne**  **’** 
+ * Select... WHERE   **city = '**  **Melbourne**  **'** 
 
 | Country | City      | Population |
 |---------|-----------|------------|
@@ -448,13 +448,13 @@ Notes:
 
  * PRIMARY KEY **(city, country)**    // flipped
 
- * Which queries will be fast?  Which need ‘allow filtering’?
+ * Which queries will be fast?  Which need 'allow filtering'?
 
-     - Select * from cities where city = ‘Melbourne’ ;  // is this fast?
+     - Select * from cities where city = 'Melbourne' ;  // is this fast?
 
-     - Select * from cities where country = ‘USA’;  // is this fast?
+     - Select * from cities where country = 'USA';  // is this fast?
 
-        * No,  needs ‘allow filtering’, hence slow!
+        * No,  needs 'allow filtering', hence slow!
 
 Notes: 
 
@@ -466,7 +466,7 @@ Notes:
 ## Partition Skew: Solution 2
 
 
- * Let’s make **State** part of the PK
+ * Let's make **State** part of the PK
 
  * PRIMARY KEY (  **(country, state)**,   city)
      - Note the brackets
@@ -476,9 +476,9 @@ Notes:
  * (A, B, C)  is not the same as   ( (A,B), C)   
 
  * Queries:
-     - Select  * from cities where country = ‘USA’ // will this work?
-     - select * from cities2 where state = 'CA’;
-     - select * from cities2 where country = 'USA'  and state = 'CA’;
+     - Select  * from cities where country = 'USA' // will this work?
+     - select * from cities2 where state = 'CA';
+     - select * from cities2 where country = 'USA'  and state = 'CA';
      - select * from cities2 where city = 'Melbourne'
 
 <img src="../../assets/images/cassandra/Session-Cassandra-Data-Modeling-2-Partition-Skew-Solution-2-4.png"  style="width:40%;"/>
@@ -503,7 +503,7 @@ Notes:
 
      - PK (A,B,C)  !=   PK (C,B,A)
 
- * Be judicious with ‘allow filtering’
+ * Be judicious with 'allow filtering'
 
 Notes: 
 
@@ -686,7 +686,7 @@ Notes:
  * $  cqlsh</br>
 Cqlsh>   select * from sensors;*
 
-* Inspect the data using ‘cassandra-cli’ tool
+* Inspect the data using 'cassandra-cli' tool
 
 * *$ cassandra-cli</br>
 Cli>  use myflix;</br>
@@ -694,7 +694,7 @@ Cli>  list sensors;*
 
 Notes: 
 
-‘cassandra-cli’   has been deprecated in `C*` version 3.  It may be replaced by another tool liks ‘sstables2json’   or ‘sstabledump’
+'cassandra-cli'   has been deprecated in `C*` version 3.  It may be replaced by another tool liks 'sstables2json'   or 'sstabledump'
 
 
 ---
@@ -708,7 +708,7 @@ Notes:
 
      - Partition_key = sensor_id
 
- * ONE partition’s data must fit on ONE machine
+ * ONE partition's data must fit on ONE machine
 
  * Add another partition key
 
@@ -763,7 +763,7 @@ Notes:
 
  * Come up with solutions, consider the following
 
-     - Stop the ‘bleeding’ (stop losing data)
+     - Stop the 'bleeding' (stop losing data)
 
      - Come up with a schema
 
@@ -789,7 +789,7 @@ Image credit: wikimedia commons
 
      - Store full timestamp for one month
 
-     - Then, only store ‘delta’ increments
+     - Then, only store 'delta' increments
 
 Notes: 
 
@@ -951,7 +951,7 @@ Notes:
 
  * `C*` uses timestamps to resolve conflicts
 
-     - When multiple clients are updating the same ‘cell’, the latest timestamp will win
+     - When multiple clients are updating the same 'cell', the latest timestamp will win
 
 Notes: 
 
@@ -1005,7 +1005,7 @@ Notes:
 
      - Client-A  is writing a row with 1000 column
 
-     - Client-B is reading the same row,  it may see ‘partial’ columns (500)
+     - Client-B is reading the same row,  it may see 'partial' columns (500)
 
  * Writes to a ROW are isolated
 
@@ -1027,7 +1027,7 @@ Notes:
 
  * On each node, writes is
 
-     - First persisted to **“COMMIT LOG”**
+     - First persisted to **"COMMIT LOG"**
 
      - And is persisted in **memory**
 
@@ -1067,7 +1067,7 @@ Notes:
 ## Transaction semantics
 
 
- * Transactions require  ‘locks’
+ * Transactions require  'locks'
 
  * Locks are very expensive in a distributed system
 
@@ -1093,11 +1093,11 @@ Notes:
 
 ```text
 
- INSERT INTO users (userid, password) values (‘user1’, ‘seckret’);
+ INSERT INTO users (userid, password) values ('user1', 'seckret');
 
- UPDATE users set email=‘me@me.com’  where userid = ‘user1’;
+ UPDATE users set email='me@me.com'  where userid = 'user1';
 
- UPDATE users set account_verified=true where userid = ‘user1’;
+ UPDATE users set account_verified=true where userid = 'user1';
 
 ```
 
@@ -1183,13 +1183,13 @@ Notes:
 
  * Two users are trying to create account with the same user_id
 
- * We don’t want to over-write each record
+ * We don't want to over-write each record
 
      - Prevents race conditions (think two threads competing to update a value)
 
  * SERIAL CONSISTENCY LOCAL_SERIAL
 
- * INSERT INTO USERS (user_id, name….)VALUES  (‘joe’,  ….)IF NOT EXISTS;
+ * INSERT INTO USERS (user_id, name….)VALUES  ('joe',  ….)IF NOT EXISTS;
 
 Notes: 
 
@@ -1201,7 +1201,7 @@ Notes:
 ## LWT Example: Update
 
 
- * UPDATE users (email)SET email = ‘new email’IF email = ‘old email’
+ * UPDATE users (email)SET email = 'new email'IF email = 'old email'
 
 Notes: 
 
@@ -1215,9 +1215,9 @@ Notes:
 
  * Not really a good `C*` use case
 
-     - ‘needle in a haystack’
+     - 'needle in a haystack'
 
- * Can use ‘token’  function
+ * Can use 'token'  function
 
  * SELECT * FROM test WHERE token(k) > token(42);
 
@@ -1278,7 +1278,7 @@ CREATE MATERIALIZED VIEW features_by_type
     WHERE type is NOT NULL 
 	  PRIMARY KEY(type, code);
 
-select * from features_by_type where type = ‘TV Show’;  // OK
+select * from features_by_type where type = 'TV Show';  // OK
 
 ```
 
@@ -1339,7 +1339,7 @@ Notes:
 
  * Secondary Indexes can be used for low cardinality data and low volume queries
 
- * Don’t use `C*` for data aggregation / analysis. Spark may be a better option
+ * Don't use `C*` for data aggregation / analysis. Spark may be a better option
 
 Notes: 
 

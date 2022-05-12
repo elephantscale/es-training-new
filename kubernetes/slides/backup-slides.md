@@ -115,16 +115,16 @@ Instructor Notes :
 Participant Notes :
 
 Increased Portability:  
-The ability to add to the container and then deploy across multiple platforms allows Docker to be run almost anywhere. This is important because it lets developers write code on a local development environment, test it locally and then push to production without having to worry about things not working. All environments are exactly the same; you won’t hear the phrase "It worked on my local environment!" ever again.
+The ability to add to the container and then deploy across multiple platforms allows Docker to be run almost anywhere. This is important because it lets developers write code on a local development environment, test it locally and then push to production without having to worry about things not working. All environments are exactly the same; you won't hear the phrase "It worked on my local environment!" ever again.
 
 Faster Startup Speeds:  
-We try to have all our clients running on the same environment, but with so many hosting solutions and CMS systems being used, this just isn’t a feasible or scalable solution. For our developers, switching between client production environments used to mean wasting time waiting for virtual machines to get up and running. Not anymore. Docker allows us to easily start and stop the correct containers for each client in seconds. Getting our local environments up and running quickly means we can get to work fixing issues right away.
+We try to have all our clients running on the same environment, but with so many hosting solutions and CMS systems being used, this just isn't a feasible or scalable solution. For our developers, switching between client production environments used to mean wasting time waiting for virtual machines to get up and running. Not anymore. Docker allows us to easily start and stop the correct containers for each client in seconds. Getting our local environments up and running quickly means we can get to work fixing issues right away.
 
 Higher Security  
 All Docker containers are run as isolated environments, each with its own process space and network space. This allows the Docker container to run only the applications you really need, cutting down on security patches and updates while eliminating unnecessary risk. Additionally, because the software is open source, many developers have contributed wonderful security tools for scanning and securing containers. Docker lowers your maintenance needs, raises site security, and puts a ton of tools at your fingertips.
 
 Smart & Efficient Debugging  
-Another great development feature: Docker lets developers troubleshoot production environment bugs locally. When things aren’t working correctly on a client’s site, we often have to enable many different debugging features to pinpoint the problem. These features, while effective, can slow down the site, which of course directly impacts conversions. With Docker, we can easily fire up our local environment, replicate the issue and debug locally before pushing a fix to the live site. Keeping diagnostic processes off the live production environment lets your site stay lean, light, and lightning fast.
+Another great development feature: Docker lets developers troubleshoot production environment bugs locally. When things aren't working correctly on a client's site, we often have to enable many different debugging features to pinpoint the problem. These features, while effective, can slow down the site, which of course directly impacts conversions. With Docker, we can easily fire up our local environment, replicate the issue and debug locally before pushing a fix to the live site. Keeping diagnostic processes off the live production environment lets your site stay lean, light, and lightning fast.
 
 ---
 
@@ -359,7 +359,7 @@ Notes:
 
 ## Deployment Example
 
-  * Let’s create a simple Deployment.
+  * Let's create a simple Deployment.
 
 ![](../../assets/images/kubernetes/Deployment-Example.png) <!-- {"left" : 0.77, "top" : 1.78, "height" : 4.62, "width" : 5.66} -->
 
@@ -374,7 +374,7 @@ Deployment, nginx-deployment is created and is indicated by the .metadata.nam
 Three replicated pods are created by the deployment as mentioned in the replicas field
 Deployment manages the pods based on the selector field definition.
 Sophisticated selection rules can be created subject to pod template satisfying the rule.
-.template.spec field or Pod template’s specification indicates that the Pods run one container, nginx, which runs the nginx Docker Hub image at version 1.7.9.
+.template.spec field or Pod template's specification indicates that the Pods run one container, nginx, which runs the nginx Docker Hub image at version 1.7.9.
 The Deployment opens port 80 for use by the Pods.
 
 The template field contains the following instructions:

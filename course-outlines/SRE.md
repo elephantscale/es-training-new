@@ -4,11 +4,11 @@
 
 ## Overview
 
-The overwhelming majority of a software system’s lifespan is spent in use, 
+The overwhelming majority of a software system's lifespan is spent in use, 
 not in design or implementation. 
 So, why does conventional wisdom insist that software engineers focus primarily on the design and development of large-scale computing systems?
 
-In this course, you will learn how and why the DevOps commitment to the entire lifecycle can enable the company to successfully build, deploy, monitor, and maintain some of the largest software systems in the world. You’ll learn the principles and practices that enable Google engineers to make systems more scalable, reliable, and efficient—lessons directly applicable to your organization.
+In this course, you will learn how and why the DevOps commitment to the entire lifecycle can enable the company to successfully build, deploy, monitor, and maintain some of the largest software systems in the world. You'll learn the principles and practices that enable Google engineers to make systems more scalable, reliable, and efficient—lessons directly applicable to your organization.
 
 ## What you will learn:
 
@@ -17,7 +17,7 @@ In this course, you will learn how and why the DevOps commitment to the entire l
 * Principles
      - Examine the patterns, behaviors, and areas of concern for SRE
 * Practices
-     - Understand the theory and practice of an SRE’s day-to-day work: building and operating large distributed computing systems
+     - Understand the theory and practice of an SRE's day-to-day work: building and operating large distributed computing systems
 * Management
      - Explore Google's best practices for training, communication, and meetings that your organization can use
 
@@ -50,13 +50,13 @@ Laptops with overly restrictive VPNs or firewalls may not work properly.
 
 * Introduction
     - The Sysadmin Approach to Service Management
-    - Google’s Approach to Service Management: Site Reliability Engineering
+    - Google's Approach to Service Management: Site Reliability Engineering
     - Tenets of SRE
     - Demand Forecasting and Capacity Planning
     - Efficiency and Performance
 * The Production Environment at Google, from the Viewpoint of an SRE
     - Hardware
-    - System Software That “Organizes” the Hardware
+    - System Software That "Organizes" the Hardware
     - Storage
     - Networking
     - Monitoring and Alerting
@@ -131,7 +131,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly.
     - Clear, Live Handoff
     - A Managed Incident
 * Postmortem Culture: Learning from Failure
-    - Google’s Postmortem Philosophy
+    - Google's Postmortem Philosophy
     - Collaborate and Share Knowledge
 * Tracking Outages
     - Escalator
@@ -150,7 +150,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly.
     - Intent-Based Capacity Planning
     - Fostering Software Engineering in SRE
 * Load Balancing at the Frontend
-    - Power Isn’t the Answer
+    - Power Isn't the Answer
     - Load Balancing Using DNS
     - Load Balancing at the Virtual IP Address
 * Load Balancing in the Datacenter
@@ -159,7 +159,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly.
     - A Simple Approach to Unhealthy Tasks: Flow Control
     - A Robust Approach to Unhealthy Tasks: Lame Duck State
 * Handling Overload
-    - The Pitfalls of “Queries per Second”
+    - The Pitfalls of "Queries per Second"
     - Per-Customer Limits
     - Client-Side Throttling
     - Criticality
@@ -194,7 +194,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly.
     - Initial Effect of Big Data on the Simple Pipeline Pattern
     - Challenges with the Periodic Pipeline Pattern
 * Data Integrity: What You Read Is What You Wrote
-    - Data Integrity’s Strict Requirements
+    - Data Integrity's Strict Requirements
     - Choosing a Strategy for Superior Data Integrity
     - Data Integrity Is the Means; Data Availability Is the Goal
     - The 24 Combinations of Data Integrity Failure Modes
@@ -211,7 +211,7 @@ Laptops with overly restrictive VPNs or firewalls may not work properly.
     - Capacity Planning
     - Failure Modes
 * Accelerating SREs to On-Call and Beyond
-    - You’ve Hired Your Next SRE(s), Now What?
+    - You've Hired Your Next SRE(s), Now What?
     - Initial Learning Experiences: The Case for Structure Over Chaos
     - Learning Paths That Are Cumulative and Orderly
 * Dealing with Interrupts

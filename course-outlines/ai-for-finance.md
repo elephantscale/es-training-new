@@ -7,7 +7,7 @@ April 29, 2020
 
 * AI is the new electricity. It will change the way we do everything. Financial institutions: banks, savings and loans, insurance, and mortgage companies, who are already well familiar from FinTech, are the first to derive benefit from AI. But every business can improve its money handling through AI. And the companies will soon discover that their use of AI is what allows it to bypass the competition and not be left behind.
 
-* The course is intended for financial specialists, FinTech users, software architects, and engineers. It gives the participants a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student’s participation. 
+* The course is intended for financial specialists, FinTech users, software architects, and engineers. It gives the participants a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student's participation. 
 
 ## Benefits
 

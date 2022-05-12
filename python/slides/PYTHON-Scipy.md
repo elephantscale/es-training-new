@@ -70,7 +70,7 @@ Notes:
 
   * K-Means clustering is an unsupervised machine learning algorithm to find clusters in  unlabeled data (will be covered with machine learning)
 
-  * Let’s do a whiteboard analysis on K-Means clustering algorithm
+  * Let's do a whiteboard analysis on K-Means clustering algorithm
 
 Notes:
 
@@ -118,8 +118,8 @@ Notes:
  [1.39628218e+00 2.67195040e+00 2.73329337e+00]
  [1.85570613e+00 1.44755357e+00 1.37267120e+00]
  [3.40103919e+00 1.83791819e+00 3.45083827e+00]
-……………………
-……………………
+........................
+........................
 ```
 <!-- {"left" : 0.0, "top" : 2.43, "height" : 2.54, "width" : 10.25} -->
 
@@ -395,7 +395,7 @@ https://docs.scipy.org/doc/numpy/reference/generated/numpy.mgrid.html#numpy.mgri
 
     - `bisplrep()` takes x, y, z and outputs `tck = [tx, ty, c, kx, ky]`.
 
-    - `bisplev()` takes two 1D vectors whose cross product defines the domain of evaluation and the variable “tck”
+    - `bisplev()` takes two 1D vectors whose cross product defines the domain of evaluation and the variable "tck"
 
     - https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.bisplev.html#scipy.interpolate.bisplev
 
@@ -552,7 +552,7 @@ Notes:
 
 
   * To generate 2D sparse matrices
-  * The scipy.sparse package is great for times where we have a large matrix with very few items entered (It doesn’t make sense to store a huge matrix with all zeros or NAs)
+  * The scipy.sparse package is great for times where we have a large matrix with very few items entered (It doesn't make sense to store a huge matrix with all zeros or NAs)
 
 ```python
 >>> mtx = sparse.csr_matrix((3, 4), dtype=np.int8)

@@ -19,7 +19,7 @@ Notes:
   - Command line navigation 
   - Editing files (e.g. using VI or nano)
 * This is an **Infrastructure as Code (IaC) with Spinnaker** class 
-  - You may be missing some pre-requisites, that’s OK
+  - You may be missing some pre-requisites, that's OK
   - You should be willing to work hard, that is a must
 
 
@@ -101,7 +101,7 @@ Notes:
 
 ## Class Logistics
 
-* Instructor’s contact information
+* Instructor's contact information
 * Slides
   - For each session, slides will be emailed out or delivered via virtual classroom 
 * Server nodes
@@ -128,10 +128,10 @@ Notes:
 object TestApp {  // Basic Spark App (Scala)
   def main(args: Array[String]) {
 		val sc = new SparkContext(
-      new SparkConf().setMaster("local").setAppName(”TestApp")
-		val totalWords = sc.textFile(“file”)
+      new SparkConf().setMaster("local").setAppName("TestApp")
+		val totalWords = sc.textFile("file")
                .flatMap(l => l.split(" ")).count()
-		println (“# lines : “ + totalWords)
+		println ("# lines : " + totalWords)
 	}
 }
 

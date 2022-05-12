@@ -26,7 +26,7 @@ This course introduces HBase – a NoSQL store on top of Hadoop.  The course is 
 
 ## Lab environment
 * A working HBase cluster will be provided for students.  Students would need a SSH client and a browser to access the cluster.
-* Zero Install: There is no need to install HBase software on students’ machines!
+* Zero Install: There is no need to install HBase software on students' machines!
 
 ## Course Outline
 

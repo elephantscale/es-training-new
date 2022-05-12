@@ -11,7 +11,7 @@
 ## Uni-Directional Architecture
  * A shard leader receives a new update that is processed by its update processor chain.
  * The data update is first applied to the local index.
- * Upon successful application of the data update on the local index, the data update is added to CDCR’s Update Logs queue.
+ * Upon successful application of the data update on the local index, the data update is added to CDCR's Update Logs queue.
  * After the data update is persisted to disk, the data update is sent to the replicas within the data center.
  * After Step 4 is successful, CDCR reads the data update from the Update Logs and pushes it to the corresponding collection in the Target data center. This is necessary in order to ensure consistency between the Source and Target data centers.
  * The leader on the Target data center writes the data locally and forwards it to all its followers.
@@ -167,7 +167,7 @@ Notes:
 * The unique `version` is maintained as checkpoint, as ephemeral node on source and persistent node on target across all solr nodes
 
 * No need any additional network traffic
-* The unique ‘version’ is maintained as checkpoint, as ephemeral node on source and persistent node on target across all solr nodes.
+* The unique 'version' is maintained as checkpoint, as ephemeral node on source and persistent node on target across all solr nodes.
 
 Notes:
 

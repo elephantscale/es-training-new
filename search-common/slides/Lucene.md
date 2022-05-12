@@ -83,7 +83,7 @@ Engine image: https://wonderopolis.org/wonder/how-does-an-engine-work
 * https://wiki.apache.org/lucene-java/
   - Wiki
 * https://wiki.apache.org/lucene-java/PoweredBy
-  - Powered by Lucene”
+  - Powered by Lucene"
     - Almost 300 entries
     - Stopped adding in 2015 (became commodity)
 
@@ -125,7 +125,7 @@ Notes:
 
 * Overall goal: 
   - Prepare an optimized data structure to efficiently answer queries
-  - (Obviously, linearly going through all documents won’t work)
+  - (Obviously, linearly going through all documents won't work)
 * Acquire content
 * Build document
 * Analyze document
@@ -160,7 +160,7 @@ Notes:
 
 ## Indexing Steps: Build Document
 
-* ‘Document’ is a unit for search
+* 'Document' is a unit for search
 * Document fields
   - Title
   - Body
@@ -200,7 +200,7 @@ Notes:
 <img src="../../assets/images/elastic/3rd-party/Structure-01.png" alt="Structure-01.png" style="width:60%;"/><!-- {"left" : 6.75, "top" : 1, "height" : 2.25, "width" : 3.38} -->
 
 * Indexing a book or a large document
-  - What is ‘body text’?
+  - What is 'body text'?
   - Chapter?
   - Page? 
   - Paragraph?
@@ -376,8 +376,8 @@ Notes:
 
 * eDiscovery
   - Company P (Plaintiff) has a problem with company D (Defendant)
-  - Company P asks for “all documents that are related to the lawsuit” from D
-  - This is called “discovery” or “eDiscovery”
+  - Company P asks for "all documents that are related to the lawsuit" from D
+  - This is called "discovery" or "eDiscovery"
   - Company P also produces a list of key words that it wants to search
 
 
@@ -391,7 +391,7 @@ Notes:
 * After P and D agree (with the help of a judge) to the list of key words
 * Company D has to do eDiscovery
   - Collect data from custodians
-  - “Process the data” – that is, index it
+  - "Process the data" – that is, index it
   - Run review (privilege, counsel-client, responsive)
   - Produce
 

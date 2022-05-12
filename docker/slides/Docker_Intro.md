@@ -143,7 +143,7 @@ Hyper-V does not run on Windows Home versions (most consumer-grade windows machi
 
 Hyper-V will require that Virtualization extensions be turned on in the BIOS.  Typically, from the factory these are turned off on client machines for security reasons, as some exploits have targeted these instruction sets.
 
-Docker Toolbox can be used together with Oracle VirtualBox to run Docker containers on older versions of windows such as 8.1 or 7 or on Home versions of Windows 10.  However, it’s a pretty painful developer experience, so it’s not recommended.
+Docker Toolbox can be used together with Oracle VirtualBox to run Docker containers on older versions of windows such as 8.1 or 7 or on Home versions of Windows 10.  However, it's a pretty painful developer experience, so it's not recommended.
 
 ---
 
@@ -227,7 +227,7 @@ similar to what one would expect on Linux platforms.
   - Windows containers can be run entirely inside a VM (but this is not common)
   - Linux Containers use a VM for the Linux kernel only (much like Windows)
 
-* Docker for Mac uses Apple’s VM Hypervisor
+* Docker for Mac uses Apple's VM Hypervisor
   - Note the Mac's BSD-based darwin kernel is not Linux and therefore must run a virtualized Linux Kernel.
   - Usually turned on factory default (unlike most PCs), No special actions required.
 

@@ -7,9 +7,9 @@
   * Classification: predict a categorical variable 
     - Could be binary (yes/no)
   * Regression: predict a real number
-  * We ”fit” the model with training data and labels
+  * We "fit" the model with training data and labels
   * We can evaluate the model
-  * Then we “predict” new data.
+  * Then we "predict" new data.
 
 
 

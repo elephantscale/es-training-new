@@ -23,7 +23,7 @@ Notes:
   - Editing files (e.g. using VI, Visual Studio Code or other editor)
 * Basic understanding of AWS concepts like EC2 instances, IaaS, PaaS, etc.
 * This is an **AWS Infrastructure as Code (IaC) with Terraform** class 
-  - You may be missing some pre-requisites, that’s OK
+  - You may be missing some pre-requisites, that's OK
   - You should be willing to work hard, that is a must
 
 
@@ -100,7 +100,7 @@ Notes:
 
 ## Class Logistics
 
-* Instructor’s contact information
+* Instructor's contact information
 * Slides
   - For each session, slides will be emailed out or delivered
 * AWS and Terraform
@@ -130,10 +130,10 @@ Notes:
 object TestApp {  // Basic Spark App (Scala)
   def main(args: Array[String]) {
 		val sc = new SparkContext(
-      new SparkConf().setMaster("local").setAppName(”TestApp")
-		val totalWords = sc.textFile(“file”)
+      new SparkConf().setMaster("local").setAppName("TestApp")
+		val totalWords = sc.textFile("file")
                .flatMap(l => l.split(" ")).count()
-		println (“# lines : “ + totalWords)
+		println ("# lines : " + totalWords)
 	}
 }
 

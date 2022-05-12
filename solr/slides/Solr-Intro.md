@@ -212,7 +212,7 @@ Notes:
 
 ## Summary
 
-  * What we’ve learned
+  * What we've learned
 
     - Installing and running Solr
     - Adding content to Solr and searching

@@ -65,7 +65,7 @@ Notes:
 
 * IR returns relevant information
 * Usually it is ranked by relevance
-  - Such as “What do we have related to this case”
+  - Such as "What do we have related to this case"
 * By contrast, SQL returns ALL of the data
 * `SELECT * FROM * MY_BOOKS`
 
@@ -96,7 +96,7 @@ Mostly structured data in those days.
 Notes:
 
 To the surprise of many, the search box has become the preferred method of information access.
-Customers ask: Why can’t I search my database in the same way?
+Customers ask: Why can't I search my database in the same way?
 
 
 ---
@@ -106,7 +106,7 @@ Customers ask: Why can’t I search my database in the same way?
 
  * IR vs. databases:Structured vs unstructured data
 
- * Structured data tends to refer to information in “tables”
+ * Structured data tends to refer to information in "tables"
 
 | Employee | Manager | Salary |
 |----------|---------|--------|
@@ -138,7 +138,7 @@ Notes:
 
      - Keyword queries including operators
 
-     - More sophisticated “concept” queries e.g.,
+     - More sophisticated "concept" queries e.g.,
 
         * find all web pages dealing with  *drug abuse*
 
@@ -153,13 +153,13 @@ Notes:
 ## Semi-structured data
 
 
- * In fact almost no data is “unstructured”
+ * In fact almost no data is "unstructured"
 
  * E.g., this slide has distinctly identified zones such as the  *Title*  and  *Bullets*
 
      -  ... to say nothing of linguistic structure
 
- * Facilitates “semi-structured” search such as
+ * Facilitates "semi-structured" search such as
 
      -  *Title*  contains data AND  *Bullets*  contain search
 
@@ -182,7 +182,7 @@ Notes:
 
      - Assume it is a static collection for the moment
 
- * Goal: Retrieve documents with information that is relevant to the user’s information need and helps the user complete a task
+ * Goal: Retrieve documents with information that is relevant to the user's information need and helps the user complete a task
 
 Notes:
 
@@ -206,7 +206,7 @@ Notes:
 ## How good are the retrieved docs?
 
 
- *  *Precision:* Fraction of retrieved docs that are relevant to the user’s information need
+ *  *Precision:* Fraction of retrieved docs that are relevant to the user's information need
 
  *  *Recall:* Fraction of relevant docs in collection that are retrieved
 
@@ -253,7 +253,7 @@ Notes:
 ## Unstructured data in 1620
 
  * Which plays of Shakespeare contain the words  **Brutus**   *AND*   **Caesar**   but  *NOT*   **Calpurnia** ?
- * One could grep all of Shakespeare’s plays for  **Brutus**  and  **Caesar,**  then strip out lines containing  **Calpurnia** ?
+ * One could grep all of Shakespeare's plays for  **Brutus**  and  **Caesar,**  then strip out lines containing  **Calpurnia** ?
  * Why is that not the answer?
      - Slow (for large corpora)
      -  *NOT*   **Calpurnia**  is non-trivial
@@ -321,7 +321,7 @@ Notes:
 
   * Hamlet, Act III, Scene ii
 
-  * *Lord Polonius:* I did enact Julius **Caesar** I was killed i’ the
+  * *Lord Polonius:* I did enact Julius **Caesar** I was killed i' the
 
   * Capitol; **Brutus** killed me.
 
@@ -352,15 +352,15 @@ Notes:
 
 ---
 
-## Can’t build the matrix
+## Can't build the matrix
 
- * 500K x 1M matrix has half-a-trillion 0’s and 1’s.
+ * 500K x 1M matrix has half-a-trillion 0's and 1's.
 
- * But it has no more than one billion 1’s. **WHY??**
+ * But it has no more than one billion 1's. **WHY??**
 
      - matrix is extremely sparse.
 
- * What’s a better representation?
+ * What's a better representation?
 
      - We only record the 1 positions.
 

@@ -210,7 +210,7 @@ Notes:
 <img src="../../assets/images/kafka/ksql-001.png" alt="ksql-001.png" style="width:50%;float:right;"/><!-- {"left" : 5.66, "top" : 1.16, "height" : 1.76, "width" : 4.44} -->
 
 
-* KSQL uses Kafka’s Streams API
+* KSQL uses Kafka's Streams API
 * Kafka + KSQL turn the database inside out
 * Joining streams declaratively
 * Any Kafka consumer can access the new stream

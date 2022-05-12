@@ -97,7 +97,7 @@ were originally designed.
  * "Human beings are complex social animals."
  * For a complex system, design topics always involve communication between human beings. 
  *  "The Mythical Man-Month".
-  - “Adding manpower to a late software project makes it later” — Fred Brooks, (1975)
+  - "Adding manpower to a late software project makes it later" — Fred Brooks, (1975)
  * **Why?**
  * Communication cost increases exponentially with the number of people in a project: 
    - Communication Cost: `n(n-1)/2`, or  `O(n²)` 
@@ -111,7 +111,7 @@ were originally designed.
 ## Conway's Second Law
 
  * "Rome was not built in a day. Address the issues that can be addressed first."
- * “Problem too complicated? Ignore details.  Not enough resources? Give up features.”
+ * "Problem too complicated? Ignore details.  Not enough resources? Give up features."
    – Erik Hollnagel (2009)
  * Solution:
    - Reslient
@@ -120,13 +120,13 @@ were originally designed.
 
 Notes:
 
-The system’s complexity, the number of functions, market competition, and investor expectations are increasing, but human intelligence remains constant. No organization is certain whether it can find sufficient talents, regardless of the capabilities and funds. For an extremely complex system, there will always be something ignored by the operators. Erik believes that the best solution to this issue is to just “let it be.”
+The system's complexity, the number of functions, market competition, and investor expectations are increasing, but human intelligence remains constant. No organization is certain whether it can find sufficient talents, regardless of the capabilities and funds. For an extremely complex system, there will always be something ignored by the operators. Erik believes that the best solution to this issue is to just "let it be."
 We often encounter such issues during daily development tasks. Are the requirements raised by product managers too complex? If so, ignore some minor requirements and focus on the major ones first. Do the product managers have too many requirements? If yes, give up some functions.
 
 ---
 
 
-## Conway’s Third Law
+## Conway's Third Law
  * "Create independent subsystems to reduce the communication cost."
  * Business Boundaries create small systems
  * "Inter-operate, don't integrate"

@@ -1139,7 +1139,7 @@ Notes:
 
 * It introduced deeper layers (19 layers)
 
-* One downside of VGG is final fully connected layers make the network balloon to a large size, weighing in at 138 million parameters in comparison with GoogLeNet’s 7 million
+* One downside of VGG is final fully connected layers make the network balloon to a large size, weighing in at 138 million parameters in comparison with GoogLeNet's 7 million
 
 * Despite it's large size, still popular transfer learning architecture
 

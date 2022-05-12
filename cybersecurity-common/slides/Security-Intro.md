@@ -141,8 +141,8 @@
 
 ## "Interbe" - Everything is connected
 * President Biden asks Putin not to attack critical infrastructure
-  * Ransomware hacker tell wheat producers “you are not critical infrastructure”
-  * If one team listens, another will come in: “Market economy!
+  * Ransomware hacker tell wheat producers "you are not critical infrastructure"
+  * If one team listens, another will come in: "Market economy!
 
 ![](../images/sec-intro-05.png)
 
@@ -189,7 +189,7 @@
 ## Contingency plans
 
 * Hacker advice to victims:
-  * Don’t hire help! Or else it will go even worse for you
+  * Don't hire help! Or else it will go even worse for you
   * __Do you believe it?__
 
 1. Have a plan. (Such as off-line backup.)Test it!

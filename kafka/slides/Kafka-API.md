@@ -1449,7 +1449,7 @@ while (true) {
 * Kafka Streams API implements Exactly Once Processing
 
 * References
-    - [Exactly-Once Semantics Are Possible: Here’s How Kafka Does It](https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/)
+    - [Exactly-Once Semantics Are Possible: Here's How Kafka Does It](https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/)
     - [Exactly Once Processing in Kafka with Java](https://www.baeldung.com/kafka-exactly-once)
     - [KafkaProducer API](https://kafka.apache.org/23/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
 

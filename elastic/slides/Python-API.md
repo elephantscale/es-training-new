@@ -47,7 +47,7 @@ AWS systems can stream in data via **lambda** or **kinesis firehose** **kafka, s
   - Several choices for scala
   - Elasticsearch.pm module for perl
 
-* You don’t have to wrangle JSON.
+* You don't have to wrangle JSON.
 
 
 ```python
@@ -93,7 +93,7 @@ es.indices.refresh()
 ## Python - Tags
 
 * Exercise
-  - write a script to import the tags.csv  data from ml-latest-small into a new  “tags” index.
+  - write a script to import the tags.csv  data from ml-latest-small into a new  "tags" index.
 
 ---
 

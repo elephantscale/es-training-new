@@ -191,7 +191,7 @@ Licensed for free use and sharing with attribution and without modification
 
      - Evaluate service level agreements
 
- * Look for “gotchas” in the real world
+ * Look for "gotchas" in the real world
 
  * Identify new or emerging security threats
 
@@ -216,7 +216,7 @@ Licensed for free use and sharing with attribution and without modification
 
      - What are the implications for other systems that interact with our application?
 
- * How do we transition users to the application’s replacement?
+ * How do we transition users to the application's replacement?
 
  * Ensure that once the application is removed, there are no security holes left behind
 
@@ -251,7 +251,7 @@ Licensed for free use and sharing with attribution and without modification
 
      - The application lifecycle is defined to be:
 
-        * “the entire time an organization spends money of the product from the initial idea to the end of the application’s life when it is no longer in use.” 
+        * "the entire time an organization spends money of the product from the initial idea to the end of the application's life when it is no longer in use." 
 
  * Also requires the evaluation of the product from three points of view:
 
@@ -391,7 +391,7 @@ Notes:
 
      - Ops monitors usage, performance, service level targets, change requests and bug reports
 
-     - Also monitors changes in the application’s technical environment that could impact the application
+     - Also monitors changes in the application's technical environment that could impact the application
 
 
 Notes: 
@@ -544,7 +544,7 @@ Notes:
 
  * A critical part of the specification is how the system will meet the security and safety requirements
 
- *  *“If there is not enough information to write a test to a spec item, you don’t have enough information to write code to implement it.”* 
+ *  *"If there is not enough information to write a test to a spec item, you don't have enough information to write code to implement it."* 
 
 Notes: 
 
@@ -579,7 +579,7 @@ Notes:
 
 Notes: 
 
-Taken from the IEEE standard “Best Practices for Software Requirements Specifications”
+Taken from the IEEE standard "Best Practices for Software Requirements Specifications"
 
 
 ---

@@ -16,8 +16,8 @@
 ---
 ## Goals
 
-* Your infrastructure won’t fall over if traffic goes up
-* Not lose your data if there’s an outage
+* Your infrastructure won't fall over if traffic goes up
+* Not lose your data if there's an outage
 * Not allow that data to be compromised when hackers try to break in
 * If that is not achieved
     * Your company can go out of business.
@@ -195,7 +195,7 @@
     * *modules/cluster/asg-rolling-deploy* - A generic, reusable, standalone module for deploying an ASG that can do a zero-downtime, rolling deployment
     * *modules/networking/alb* - A generic, reusable, standalone module for deploying an ALB
     * *modules/services/hello-world-app* -
-    A module specifically for deploying the “Hello, World” app
+    A module specifically for deploying the "Hello, World" app
   
 ---
 ## Composable Modules 
@@ -299,7 +299,7 @@ resource "aws_autoscaling_group" "example" {
 ---
 ## Output Variables
 
-* You’ll also want to add a couple of useful output variables to modules/cluster/asg-rolling-deploy/outputs.tf:
+* You'll also want to add a couple of useful output variables to modules/cluster/asg-rolling-deploy/outputs.tf:
 
     ```
     output "asg_name" {
@@ -341,7 +341,7 @@ resource "aws_autoscaling_group" "example" {
 ---
 ## Creating the "Hello World" App
 
-* The last step is to convert the `webserver-cluster` module into a hello-world-app module that can deploy a “Hello, World” app using the `asg-rolling-deploy` and `alb` modules
+* The last step is to convert the `webserver-cluster` module into a hello-world-app module that can deploy a "Hello, World" app using the `asg-rolling-deploy` and `alb` modules
 
 * The resources left in `module/services/hello-world-app/main.tf` are:
     * `template_file` (for User Data)
@@ -466,13 +466,13 @@ resource "aws_autoscaling_group" "example" {
 ---
 ## Module Composition
 
-* Composition us building up more complicated behavior for the “Hello, World” app from simpler parts (ASG and ALB modules)  
+* Composition us building up more complicated behavior for the "Hello, World" app from simpler parts (ASG and ALB modules)  
   
 * A fairly common pattern in Terraform is that an configuration will have at least two types of modules:
   
 * **Generic modules**: the basic building blocks of Terraform code, reusable across a wide variety of use cases
   
-* **Use-case-specific modules**: Combines multiple generic modules with some specific "glue" code to serve one specific use case such as deploying the “Hello, World” app
+* **Use-case-specific modules**: Combines multiple generic modules with some specific "glue" code to serve one specific use case such as deploying the "Hello, World" app
 
 ---
 ## Testable Modules
@@ -758,14 +758,14 @@ modules
     * The Chef and other provisioners install, configure, and run on clients, which makes it easier to use configuration management tools
 
 * The advantages to User Data scripts are:
-    * You can use User Data scripts with ASGs, but Provisioners take effect only while Terraform is running and don’t work with ASGs at all
+    * You can use User Data scripts with ASGs, but Provisioners take effect only while Terraform is running and don't work with ASGs at all
     * The User Data script can be seen in the EC2 Console and you can find its execution log on the EC2 Instance itself, both of which are useful for debugging,neither of which is available with provisioners
 ---
 
 ## Provisioners with `null_resource`
 
 * Sometimes, you want to execute a provisioner without tying it to a specific resource
-* we can use a `null_resource` whichacts just like a normal Terraform resource, except that it doesn’t create anything
+* we can use a `null_resource` whichacts just like a normal Terraform resource, except that it doesn't create anything
     ```
     resource "null_resource" "example" {
          provisioner "local-exec" {
@@ -779,7 +779,7 @@ modules
 * The `null_resource` has an argument called triggers, which takes in a map of keys and values
     * Whenever the values change, the null_resource will be recreated
     * This forces any provisioners within it to be reexecuted
-    * For example, the uuid() built-in function, which returns a new, randomly generated UUID each time it’s called, within the triggers argument
+    * For example, the uuid() built-in function, which returns a new, randomly generated UUID each time it's called, within the triggers argument
   
     ```
     resource "null_resource" "example" {

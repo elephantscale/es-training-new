@@ -38,12 +38,12 @@ Notes:
 
 ## Using Zeppelin Notebooks
 
-  * Go to the zeppelin install directory and type “bin/zeppelin-daemon.sh start”
+  * Go to the zeppelin install directory and type "bin/zeppelin-daemon.sh start"
 
   * The zeppelin noteboook by default starts at http://localhost:8080
 
   * To stop zeppelin, go to the zeppelin install directory and type
-    “bin/ zeppelin-daemon.sh stop”
+    "bin/ zeppelin-daemon.sh stop"
 
 ```python
 $ bin/zeppelin-daemon.sh start

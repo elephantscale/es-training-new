@@ -18,7 +18,7 @@ Notes:
  * pdf/word/excel/html?
  * What language is it in?
  * What character set is in use?
-   - (CP1252, UTF-8, …)
+   - (CP1252, UTF-8, ...)
  * All these problems can be done either:
    - Rule-Based
    - Machine Learning
@@ -172,17 +172,17 @@ You can see a comparison between the Tika and LangDetect implementations here: h
     - Good compression techniques (IIR 5) means the space for including stop words in a system is very small
     - Good query optimization techniques (IIR 7) mean you pay little at query time for including stop words.
  * You need them for:
-    - Phrase queries: “King of Denmark”
-    - Various song titles, etc.: “Let it be”, “To be or not to be”
-    - “Relational” queries: “flights to London”
+    - Phrase queries: "King of Denmark"
+    - Various song titles, etc.: "Let it be", "To be or not to be"
+    - "Relational" queries: "flights to London"
 
 Notes:
-Nevertheless: “Google ignores common words and characters such as where, the, how, and other digits and letters which slow down your search without improving the results.” (Though you can explicitly ask for them to remain.)
+Nevertheless: "Google ignores common words and characters such as where, the, how, and other digits and letters which slow down your search without improving the results." (Though you can explicitly ask for them to remain.)
 
 ---
 
 ## Normalization to Terms
- * We may need to “normalize” words in indexed text as well as query words into the same form
+ * We may need to "normalize" words in indexed text as well as query words into the same form
    - We want to match U.S.A. and USA
 
  * Result is terms: a term is a (normalized) word type, which is an entry in our IR system dictionary

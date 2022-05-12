@@ -70,7 +70,7 @@ Notes:
 
 ---
 
-## Analogy: Learning To Fly…
+## Analogy: Learning To Fly...
 
 
 ![](../../assets/images/about//learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
@@ -156,7 +156,7 @@ Notes:
 
   - Familiarity with security? (scale of 1 – 4:  1 – new,   4 – expert)
 
-  - Something non-technical about you!(favorite ice cream flavor or hobby…)
+  - Something non-technical about you!(favorite ice cream flavor or hobby...)
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 

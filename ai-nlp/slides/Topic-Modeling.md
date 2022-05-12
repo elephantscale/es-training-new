@@ -6,11 +6,11 @@
 
 ---
 
-## What’s wrong with TF-IDF/ Word2Vec
+## What's wrong with TF-IDF/ Word2Vec
 
 * Very high dimensionality (thousands – millions of dimensions!
 
-* Doesn’t really look at the relationship between documents in corpus
+* Doesn't really look at the relationship between documents in corpus
 
 <img src="../../assets/images/ai-nlp/document-term-matrix-1.png" style="width:70%"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
 

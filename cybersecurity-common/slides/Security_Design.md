@@ -10,7 +10,7 @@
  * Starting point is the concept of secure by design
 
      - Ensures that security is a primary objective at all stages of product creation and deployment
-     - Avoids security being “added on” after development
+     - Avoids security being "added on" after development
      - Remedial security is historically the source of many breeches
 
 ---
@@ -128,7 +128,7 @@ Notes:
 
  * Secure protective casing and mounting options for deployment of devices in exposed locations
 
- * To identify possible problems in the supply chain, make the device and packaging “tamper evident”
+ * To identify possible problems in the supply chain, make the device and packaging "tamper evident"
 
  * Shield against side-channel attacks
 
@@ -169,7 +169,7 @@ Notes:
 ## Device Secure Boot
 
 
- *  At each stage check that only the expected hardware is present and matches the stage’s configuration parameters
+ *  At each stage check that only the expected hardware is present and matches the stage's configuration parameters
 
  * Do not boot the next stage of device functionality until the previous stage has been successfully booted.
 
@@ -193,7 +193,7 @@ Notes:
  * Disable all unused ports, protocols and services
  * Apply tested updates
  * Disable write access to the root file system for users and applications
- * Do not use “root” – create an administrator account that has only the rights needed for administering the device
+ * Do not use "root" – create an administrator account that has only the rights needed for administering the device
  * Use an encrypted file system
  * Document the OS security configuration
  * Apply minimum access rights to all files and directories
@@ -408,7 +408,7 @@ Notes:
 
  * At each stage of the boot process the boot software checks that the hardware configuration matches the expected configuration parameters for that stage
 
- * The boot process ensures that if an error occurs during any stage of the process, the device “fails gracefully” into a secure state in which RAM has been cleared of residual code
+ * The boot process ensures that if an error occurs during any stage of the process, the device "fails gracefully" into a secure state in which RAM has been cleared of residual code
 
      - Failed boots do not leave the device open to unauthorized access
 
@@ -427,7 +427,7 @@ Notes:
 
      - Devices only install updates if they first verify the signature
 
- * The signature’s cryptographic key size and hash algorithms have sufficient cryptographic strength for the intended service life of the product
+ * The signature's cryptographic key size and hash algorithms have sufficient cryptographic strength for the intended service life of the product
 
  * The signature method chosen has a key provisioning method suitable for the intended manufacturing supply chain
 
@@ -510,7 +510,7 @@ Notes:
 
  * This is one of the goals of DevSecOps
 
-     - Security doesn’t apply to what we do but how we do it as well
+     - Security doesn't apply to what we do but how we do it as well
 
 Notes: 
 
@@ -768,9 +768,9 @@ Notes:
 ## Security Responsibility
 
 
- * Security is not the responsibility of a “security team”
+ * Security is not the responsibility of a "security team"
 
- * Just like quality, security is everyone’s responsibility
+ * Just like quality, security is everyone's responsibility
 
      - A security team, like a QA team, is a resource and coordinates security related concerns
 
@@ -835,7 +835,7 @@ Notes:
 
      - DevSecOps assumes continuous testing
 
- * Tiger teams are testing teams designed to act like an attacker and defeat the organization’s security measures
+ * Tiger teams are testing teams designed to act like an attacker and defeat the organization's security measures
 
      - Also referred to as red teams
 

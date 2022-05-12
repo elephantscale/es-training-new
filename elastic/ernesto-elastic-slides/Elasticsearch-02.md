@@ -63,7 +63,7 @@ These settings are noted in the /etc/elasticsearch/elasticsearch.yml
 
 ## Time to live
 
-* When we set up ingestion we can set a TTL on the log stash connections and beats so that they’re restarted periodically and don’t overload one connection.
+* When we set up ingestion we can set a TTL on the log stash connections and beats so that they're restarted periodically and don't overload one connection.
 
 ```text
 {
@@ -115,7 +115,7 @@ if computing just the edge n-grams for star, only a single,  s, st, sta, star
 
 ## Indexing N-grams
 
-* Create an “autocomplete” analyzer
+* Create an "autocomplete" analyzer
 
 <img src="../../assets/images/elastic/3rd-party/N-grams02.png" alt="N-grams02.png" style="width:40%;"/>
 
@@ -151,7 +151,7 @@ Now creating a mapping, tell it to use autocomplete analyzer
 
 ## N-grams only on Index
 
-* Use n-grams only on the index side or query will also get split into n-grams, and we’ll get results for  everything that matches ‘s’, ‘t’, ‘a’, ‘st’, etc.
+* Use n-grams only on the index side or query will also get split into n-grams, and we'll get results for  everything that matches 's', 't', 'a', 'st', etc.
 
 <img src="../../assets/images/elastic/3rd-party/n-grams-only-index.png" alt="n-grams-only-index.png" style="width:60%;"/>
 
@@ -222,7 +222,7 @@ AWS systems can stream in data via **lambda** or **kinesis firehose** **kafka, s
 
 ---
 
-# Importing **via client api’s**
+# Importing **via client api's**
 
 
 ---
@@ -237,7 +237,7 @@ AWS systems can stream in data via **lambda** or **kinesis firehose** **kafka, s
   - Several choices for scala
   - Elasticsearch.pm module for perl
 
-* You don’t have to wrangle JSON.
+* You don't have to wrangle JSON.
 
 
 * `es = elasticsearch.Elasticsearch()`
@@ -280,7 +280,7 @@ AWS systems can stream in data via **lambda** or **kinesis firehose** **kafka, s
 ## Python - Tags
 
 * Exercise
-  - write a script to import the tags.csv  data from ml-latest-small into a new  “tags” index.
+  - write a script to import the tags.csv  data from ml-latest-small into a new  "tags" index.
 
 ---
 
@@ -500,7 +500,7 @@ If you want to mask data prior to processing into Elasticsearch
 
 ## What is s3
 
-* Amazon web services’ **simple storage service** cloud-based distributed storage system
+* Amazon web services' **simple storage service** cloud-based distributed storage system
 
 ---
 
@@ -563,7 +563,7 @@ https://docs.confluent.io/current/connect/connect-elasticsearch/docs/elasticsear
 * Pair aggregations with search queries
 ---
 
-## Let’s Learn by Example
+## Let's Learn by Example
 
 
 * Bucket by rating value:
@@ -576,7 +576,7 @@ https://docs.confluent.io/current/connect/connect-elasticsearch/docs/elasticsear
 
 ---
 
-## Let’s Learn by Example
+## Let's Learn by Example
 
 
 * Count only 5-star ratings:
@@ -590,7 +590,7 @@ https://docs.confluent.io/current/connect/connect-elasticsearch/docs/elasticsear
 ---
 
 
-## Let’s Learn by Example
+## Let's Learn by Example
 
 * Average rating for Star Wars:
 
@@ -665,7 +665,7 @@ sudo /bin/systemctl start kibana.service
 
 <img src="../../assets/images/people/william-shakespeare.png" alt="william-shakespeare.png" style="width:30%;float:right;"/>
 
-* Let’s analyze the works of william shakespeare...
+* Let's analyze the works of william shakespeare...
 
 * Because we can.
 
@@ -699,7 +699,7 @@ sudo /bin/systemctl start kibana.service
 
 * Filebeat can optionally talk directly to elasticsearch. when using logstash, elasticsearch is just one of many  possible destinations!
 
-* Logstash and filebeat can communicate to  maintain “backpressure” when things back up
+* Logstash and filebeat can communicate to  maintain "backpressure" when things back up
 
 * Filebeat maintains a read pointer on the logs.  every log line acts like a queue.
 
@@ -711,7 +711,7 @@ sudo /bin/systemctl start kibana.service
 ## This is Called the Elastic Stack
 
 
-* prior to beats, you’d hear about the “ELK stack” – elasticsearch, logstash, kibana.
+* prior to beats, you'd hear about the "ELK stack" – elasticsearch, logstash, kibana.
 
 
 
@@ -720,7 +720,7 @@ sudo /bin/systemctl start kibana.service
 ## Filebeat vs Logstash
 
 * Wrong question: Use them together.
-* It won’t let  you overload your pipeline.
+* It won't let  you overload your pipeline.
 * You get more flexibility on scaling your cluster.
 
 
@@ -765,8 +765,8 @@ sudo /bin/systemctl start kibana.service
 
 ## How many shards do I need?
 
-* You can’t add more shards later without re-indexing
-* But shards aren’t free – you can't just make 1,000 of them and stick them on one node at first.
+* You can't add more shards later without re-indexing
+* But shards aren't free – you can't just make 1,000 of them and stick them on one node at first.
 * You want to overallocate, but not too much
 * Consider scaling out in phases, so you have time to  re-index before you hit the next  phase.
 
@@ -775,8 +775,8 @@ sudo /bin/systemctl start kibana.service
 
 ## Shard Planning
 
-* The “right” number of shards depends on your data
-and your application. there’s no secret formula.
+* The "right" number of shards depends on your data
+and your application. there's no secret formula.
 * Start with a single server using the same hardware  you use in production, with one shard and no  replication.
 * Fill it with real documents and hit it with real queries.
 * Push it until it breaks – now you know the capacity of  a single shard.
@@ -804,9 +804,9 @@ and your application. there’s no secret formula.
 ```text
 PUT /new_index
 {
-“settings”: {
-“number_of_shards”:	10,
-“number_of_replicas”:	1
+"settings": {
+"number_of_shards":	10,
+"number_of_replicas":	1
 }
 }
 ```
@@ -832,8 +832,8 @@ PUT /new_index
 
 * multiple-indices:
   - with time-based data, you can have one index per time frame
-  - common strategy for log data where you usually just  want current data, but don’t want to delete old data  either
-  - again you can use index aliases, ie “logs_current”,  “last_3_months”, to point to specific indices as they rotate
+  - common strategy for log data where you usually just  want current data, but don't want to delete old data  either
+  - again you can use index aliases, ie "logs_current",  "last_3_months", to point to specific indices as they rotate
 
 
 ---
@@ -843,15 +843,15 @@ PUT /new_index
 ```text
 POST /_aliases
 {
-“actions”: [
-{ “add”:       { “alias”: “logs_current”, “index”: “logs_2017_06” }},
-{ “remove”:    { “alias”: “logs_current”, “index”: “logs_2017_05” }},
-{ “add”:       { “alias”: “logs_last_3_months”, “index”: “logs_2017_06” }},
-{ “remove”:    { “alias”: “logs_last_3_months”, “index”: “logs_2017_03” }}
+"actions": [
+{ "add":       { "alias": "logs_current", "index": "logs_2017_06" }},
+{ "remove":    { "alias": "logs_current", "index": "logs_2017_05" }},
+{ "add":       { "alias": "logs_last_3_months", "index": "logs_2017_06" }},
+{ "remove":    { "alias": "logs_last_3_months", "index": "logs_2017_03" }}
 
 ]
 }
-optionally….
+optionally....
 DELETE /logs_2017_03
 
 ```
@@ -878,11 +878,11 @@ DELETE /logs_2017_03
 
 ## Other Hardware Considerations
 
-* Fast disks are better – SSD’s if possible
+* Fast disks are better – SSD's if possible
 * Use RAID0 – your cluster is already redundant
 * Cpu not that important
 * Need a fast network
-* Don’t use NAS
+* Don't use NAS
 * Use medium to large configurations; too big is bad, and too many small boxes is bad too.
 
 
@@ -897,15 +897,15 @@ DELETE /logs_2017_03
 * Half or less of your physical memory should be allocated to elasticsearch
 
 - The other half can be used by lucene for caching
-- If you’re not aggregating on analyzed string fields, consider using less  than half for elasticsearch
+- If you're not aggregating on analyzed string fields, consider using less  than half for elasticsearch
 - Smaller heaps result in faster garbage collection and more
 memory for caching
 
 * `Export ES_HEAP_SIZE=10g` or
 
-* `ES_JAVA_OPTS=“-Xms10g –Xmx10g” ./bin/elasticsearch`
+* `ES_JAVA_OPTS="-Xms10g –Xmx10g" ./bin/elasticsearch`
 
-* Don’t cross 32GB! pointers blow up then.
+* Don't cross 32GB! pointers blow up then.
 
 
 ---
@@ -1003,7 +1003,7 @@ PUT _snapshot/backup-repo
 
 <img src="../../assets/images/elastic/3rd-party/restarting-cluster.png" alt="restarting-cluster.png" style="width:20%;float:right;"/>
 
-* Sometimes you have to… OS updates, elasticsearch version updates, etc.
+* Sometimes you have to... OS updates, elasticsearch version updates, etc.
 
 * To make this go quickly and smoothly, you want to disable index  reallocation while doing this.
 
@@ -1069,14 +1069,14 @@ PUT _cluster/settings
 * Together the cluster holds your entire data and provides federated indexing and search 
 * Capabilities across all nodes
 * Clusters are identified by a unique name 
-* Default cluster naming is "elasticsearch“
+* Default cluster naming is "elasticsearch"
 * Nodes join clusters automatically on startup
 * Nodes join clusters using their configured naming
 
 
 Notes:
 
-Make sure that you don’t reuse the same cluster names in different environments, otherwise you might end up with nodes joining the wrong cluster. For instance you could use logging-dev, logging-stage, and logging-prod for the development, staging, and production clusters.
+Make sure that you don't reuse the same cluster names in different environments, otherwise you might end up with nodes joining the wrong cluster. For instance you could use logging-dev, logging-stage, and logging-prod for the development, staging, and production clusters.
 
 
 
@@ -1196,7 +1196,7 @@ Make sure that you don’t reuse the same cluster names in different environment
 
 <img src="../../assets/images/elastic/3rd-party/Faster-Hardware.png" alt="Faster-Hardware.png" style="width:30%;float:right;"/>
 
-* Test to validate that you’re not I/O or CPU bound.  Virtualized storage is much less performant than local storage.  Ex: Amazon Web Services EBS
+* Test to validate that you're not I/O or CPU bound.  Virtualized storage is much less performant than local storage.  Ex: Amazon Web Services EBS
 
 ---
 

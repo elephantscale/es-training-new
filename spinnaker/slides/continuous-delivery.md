@@ -74,7 +74,7 @@ Notes:
  * **Continuous Integration (CI)**
  * **Continuous Delivery (CD)**
  * Definition of Done
- * Common “war-room” style work area
+ * Common "war-room" style work area
 
 Notes: 
 

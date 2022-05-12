@@ -2,7 +2,7 @@
 
 About_Class_TriveraTech.md  About_Class.md
 NoSQL.md
-Cassandra_Basics.md
+Cassandra_Intro.md
 Cassandra_Data_Modeling_1.md
 Cassandra_Data_Modeling_2.md
 Cassandra_Data_Modeling_Labs.md

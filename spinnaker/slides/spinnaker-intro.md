@@ -139,9 +139,9 @@ Notes:
 ---
 
 ## Application management
- * Spinnaker’s application management features to view and manage your cloud resources.
+ * Spinnaker's application management features to view and manage your cloud resources.
 
- * Modern tech organizations operate collections of services—sometimes referred to as “applications” or “microservices.” A Spinnaker application models this concept.
+ * Modern tech organizations operate collections of services—sometimes referred to as "applications" or "microservices." A Spinnaker application models this concept.
 
  * Services Key Concepts:
    - Applications
@@ -173,7 +173,7 @@ Notes:
  * logical groupings of Server Groups in Spinnaker.
 
  * Note: cluster, here, does not map to a Kubernetes cluster. 
- * It’s merely a collection of Server Groups, 
+ * It's merely a collection of Server Groups, 
  * irrespective of any Kubernetes clusters that might be included in your underlying architecture.
 
 ---

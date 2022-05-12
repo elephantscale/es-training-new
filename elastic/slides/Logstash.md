@@ -298,7 +298,7 @@ If you want to mask data prior to processing into Elasticsearch
 
 ## What is s3
 
-* Amazon web services’ **simple storage service** cloud-based distributed storage system
+* Amazon web services' **simple storage service** cloud-based distributed storage system
 
 ---
 

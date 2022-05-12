@@ -94,7 +94,7 @@ Notes:
 * NSA is the largest employer of mathematicians in the USA
   * Maybe in the world
 * They routinely have 2-3 PhD's
-* "No Such Agency" or “Never Say Anything”
+* "No Such Agency" or "Never Say Anything"
 
 ![](../images/Seal_of_the_U.S._National_Security_Agency.svg.png)
 
@@ -208,7 +208,7 @@ Notes:
 
 ## Ghidra resume
 
-* GHIDRA is NSA’s SRE Framework
+* GHIDRA is NSA's SRE Framework
 * In development for ~20 years
 * Public Release: March 2019 at RSA Conference
 * Open Source: April 2019
@@ -218,7 +218,7 @@ Notes:
 
 ## What Ghidra does
 
-* What’s in your binary?
+* What's in your binary?
 * Needed SRE tool with:
 1. Scaling
 2. Teaming
@@ -458,7 +458,7 @@ Notes:
 
 Notes:
 
-* Many are confused by the terms decompiler and disassembler. As with most confusion of this type, most just use the words interchangeably. Don’t do that; they are not the same.
+* Many are confused by the terms decompiler and disassembler. As with most confusion of this type, most just use the words interchangeably. Don't do that; they are not the same.
 
 * A decompiler takes one from a binary to source code–or something similarly high-level that can easily be read by humans.
 * A disassembler takes one from binary to assembler–which is much lower level and is more difficult to read for humans.

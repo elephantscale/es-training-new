@@ -65,8 +65,8 @@ Notes:
   * **CONSTRAINTS**
 
     - All Doors are brown
-    - All Doors have unique number and a status (“open”/”closed”)
-    - Normal Doors have double handles and can be “big”/”small”
+    - All Doors have unique number and a status ("open"/"closed")
+    - Normal Doors have double handles and can be "big"/"small"
     - Security Doors have a locked variable (True/False)
 
 <img src="../../assets/images/python/Door-Class.png" style="width:40%;"/><!-- {"left" : 2, "top" : 3.72, "height" : 4.54, "width" : 6.24} -->
@@ -102,15 +102,15 @@ class Door:
 				self.number = number
 				self.status = status
 		def open(self):
-				self.status = “open“
+				self.status = "open"
 		def close(self):
-				self.status = “closed“
+				self.status = "closed"
 ```
 <!-- {"left" : 0, "top" : 3.65, "height" : 2.73, "width" : 9.09} -->
 
 
 ```python
-door1 = Door(10, “open“)
+door1 = Door(10, "open")
 ```
 <!-- {"left" : 0, "top" : 6.6, "height" : 0.76, "width" : 6.66} -->
 
@@ -131,21 +131,21 @@ Notes:
 
 ```python
 class Door:
-		color = “brown“
+		color = "brown"
 		def __init__(self, number, status):
 				self.number = number
 				self.status = status
 		def open(self):
-				self.status = “open“
+				self.status = "open"
 		def close(self):
-				self.status = “closed“
+				self.status = "closed"
 
 ```
 <!-- {"left" : 0, "top" : 3.44, "height" : 2.95, "width" : 8.83} -->
 
 
 ```python
-door1 = Door(10, “open“)
+door1 = Door(10, "open")
 ```
 <!-- {"left" : 0, "top" : 6.6, "height" : 0.76, "width" : 6.66} -->
 
@@ -169,7 +169,7 @@ class A:
 				self.y = y
 		@classmethod
 		def cMethod():
-				print(“This is a class method“)
+				print("This is a class method")
 
 ```
 <!-- {"left" : 0, "top" : 3.78, "height" : 2.53, "width" : 10.25} -->
@@ -214,24 +214,24 @@ Notes:
 
 ```python
 class Door:
-		color = “brown“
+		color = "brown"
 		def __init__(self, number, status):
-				print(“Constructor Running!“)
+				print("Constructor Running!")
 				self.number = number
 				self.status = status
 		def open(self):
-				self.status = “open“
+				self.status = "open"
 		def close(self):
-				self.status = “closed“
+				self.status = "closed"
 		def __del__(self):
-				print(“Destructor Running!“)
+				print("Destructor Running!")
 ```
 <!-- {"left" : 0, "top" : 1.24, "height" : 4.15, "width" : 9.97} -->
 
 
 ```python
-door1 = Door(10, “open“)
-door1.status = “closed“ # will close the door
+door1 = Door(10, "open")
+door1.status = "closed" # will close the door
 door1.open() # will open the door again
 ```
 <!-- {"left" : 0, "top" : 5.58, "height" : 1.29, "width" : 9.97} -->
@@ -262,7 +262,7 @@ class Door:  # Note Class Names are usually CamelCase
 <!-- {"left" : 0, "top" : 1.86, "height" : 3.57, "width" : 10.25} -->
 
 ```python
-door1.status = “closed“  # setting member
+door1.status = "closed"  # setting member
 ```
 <!-- {"left" : 0, "top" : 5.89, "height" : 0.67, "width" : 9.42} -->
 
@@ -283,7 +283,7 @@ Notes:
   * This is a convention
 
     - But it is supported in the language
-    - Protected members are renamed “behind the scenes” so a class knows the difference between an inherited member and a local member.
+    - Protected members are renamed "behind the scenes" so a class knows the difference between an inherited member and a local member.
     - Protected and Private members are not shown in metadata to outside users, and an exception is throne if users attempt to use them.
       - But there are ways around this.
 
@@ -317,7 +317,7 @@ class Door
         self.number = number  
         self.status = status
     def __del__(self): #Destructor method
-        print “Bye!“
+        print "Bye!"
 ```
 <!-- {"left" : 0, "top" : 5.2, "height" : 2.2, "width" : 10.25} -->
 
@@ -331,23 +331,23 @@ Notes:
 
 ```python
 class Door:
-		color = “brown“
+		color = "brown"
 		def __init__(self, number, status):
-				print(“Constructor Running!“)
+				print("Constructor Running!")
 				self.number = number
 				self.status = status
 		def open(self):
-				self.status = “open“
+				self.status = "open"
 		def close(self):
-				self.status = “closed“
+				self.status = "closed"
 		def __del__(self):
-				print(“Destructor Running!“)
+				print("Destructor Running!")
 ```
 <!-- {"left" : 0, "top" : 1.74, "height" : 3.94, "width" : 9.48} -->
 
 
 ```python
-door1 = Door(10, “open“)
+door1 = Door(10, "open")
 ```
 <!-- {"left" : 0, "top" : 5.94, "height" : 0.72, "width" : 6.36} -->
 
@@ -386,7 +386,7 @@ for arg in sys.argv[1:]:
     except OSError:  #Exception
         print('cannot open', arg)
     except:
-        print(“Unexpected error:“, sys.exc_info()[0])
+        print("Unexpected error:", sys.exc_info()[0])
         raise
     else:  # Like Finally
         print(arg, 'has', len(f.readlines()), 'lines')
@@ -421,7 +421,7 @@ Notes:
 
   * Python has multiple inheritance
   * Therefore, does not need interface contracts
-  * What about the ”diamond problem”?
+  * What about the "diamond problem"?
     - Use name resolution:
     - Specify the base class by name instead of super()
 
@@ -471,9 +471,9 @@ class SecurityDoor(Door):
 		def __init__(self, locked):
 				self.locked = locked
 		def lock(self):
-				self.locked = “locked“
+				self.locked = "locked"
 		def unlock(self):
-				self.locked = “unlocked“
+				self.locked = "unlocked"
 ```
 <!-- {"left" : 0, "top" : 4.46, "height" : 2.19, "width" : 7.68} -->
 
@@ -493,7 +493,7 @@ Notes:
 ## Multiple Inheritance
 
   * Python has multiple inheritance (can inherit from multiple parent classes)
-  * Example of the ”diamond problem”:
+  * Example of the "diamond problem":
 
 <img src="../../assets/images/python/Multiple-Inheritance.png" style="width:30%;float:right;"/><!-- {"left" : 6.22, "top" : 3.59, "height" : 3.59, "width" : 3.84} -->
 

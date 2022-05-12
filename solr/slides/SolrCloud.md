@@ -331,7 +331,7 @@ Notes:
 	
   * Updating the configuration in SolrCloud:
 
-    - upload your changes to ZooKeeper using Solr’s zkcli command line
+    - upload your changes to ZooKeeper using Solr's zkcli command line
     - reload the collection using the Collections API
 
 

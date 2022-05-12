@@ -53,8 +53,8 @@ Notes:
 * So matches for a search can go across subdocuments
 * Example
   - city=Paris AND street_name=Broadway
-  - Can return an event that’s hosted in New York and Paris
-  - But there’s no Broadway street in Paris
+  - Can return an event that's hosted in New York and Paris
+  - But there's no Broadway street in Paris
 
 
 
@@ -101,7 +101,7 @@ Notes:
   - All groups have members
   - Members could belong to multiple
   - Duplicate one side of the relationship
-  - Including all the members of a group in that group’s document
+  - Including all the members of a group in that group's document
 
 Notes:
 
@@ -111,7 +111,7 @@ Notes:
 ## Application-side Joins
 
 * Works well when you have less data
-* Instead of duplicating members	for all groups they’re part of
+* Instead of duplicating members	for all groups they're part of
   - Store them separately and include only their ID s in the groups
 * Two queries
   - First, on members to filter those matching member criteria

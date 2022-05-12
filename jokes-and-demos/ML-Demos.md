@@ -20,7 +20,7 @@
 	- Intro to ML : https://www.youtube.com/watch?v=vOppzHpvTiQ
 - DL vs ML by Andrew Ng : https://www.youtube.com/watch?v=LcfLo7YP8O4
 	- 2:00 good comparison of DL ML
-- Google’s view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
+- Google's view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
 - What is ML (training, regression, 7 steps)  : https://www.youtube.com/watch?v=nKW8Ndu7Mjw
 - SVM kernel trick visualization : https://www.youtube.com/watch?v=3liCbRZPrZA
 
@@ -88,8 +88,8 @@
 	- Obvious AI Art Studio : http://obvious-art.com/
 - GAN generating images  - https://www.fastcompany.com/90244767/see-the-shockingly-realistic-images-made-by-googles-new-ai
 	- images : https://drive.google.com/drive/folders/1lWC6XEPD0LT5KUnPXeve_kWeY-FxH002
-	- used 512 of Google’s Tensor Processing Units (or TPU) to generate his 512 pixel images
-	- If each TPU uses about 200 watts in an hour of computation, then a single one of Brock’s 512 pixel experiments could be using between 2,450 and 4,915 kilowatt hours. That’s the equivalent of the electricity that the average American household uses in just under six months
+	- used 512 of Google's Tensor Processing Units (or TPU) to generate his 512 pixel images
+	- If each TPU uses about 200 watts in an hour of computation, then a single one of Brock's 512 pixel experiments could be using between 2,450 and 4,915 kilowatt hours. That's the equivalent of the electricity that the average American household uses in just under six months
 	- other GAN images : https://twitter.com/memotv/status/1046215376386822145
 	- other GAN images : https://twitter.com/OriolVinyalsML/status/1046059308880941058
 
@@ -149,7 +149,7 @@ Day 3 - After PYTHON-Scipy
 - Netflix Link for AlphaGo - https://www.netflix.com/title/80190844
 - Google AI Haircut - https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html
 - What is Machine Learning? - https://www.youtube.com/watch?v=VUrqddjkxok
-- Google’s view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
+- Google's view on Machine Learning - https://www.youtube.com/watch?v=HcqpanDadyQ
 - Great Intro to Big Data - https://www.youtube.com/watch?v=TzxmjbL-i4Y
 
 

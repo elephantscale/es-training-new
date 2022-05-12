@@ -6,7 +6,7 @@
 
 * In Windows, the VM is in Hyper-V (and thus requires Hyper-V to be installed)
 
-* On Mac, the VM runs in Apple’s Hypervisor Framework which is usually already enabled.
+* On Mac, the VM runs in Apple's Hypervisor Framework which is usually already enabled.
 
 * Windows Server Native Windows Kernels
     - Windows Server Applications can run in Windows Native Containers on Windows Server

@@ -51,9 +51,9 @@ Notes:
 
      - Joins
 
-     - Volume isn’t a problem (disks are cheap)
+     - Volume isn't a problem (disks are cheap)
 
-     - Speed isn’t a problem
+     - Speed isn't a problem
 
  *  **Commandment**  **3)**  Disk IO is your first problem
 
@@ -76,7 +76,7 @@ Notes:
 
      - `C*` does distributed indexes (not like a RDBMS)
 
-        * Every node’s local index will have to be accessed – so slow
+        * Every node's local index will have to be accessed – so slow
 
      - Too many queries that depend on indexes
 
@@ -86,7 +86,7 @@ Notes:
 
      - Make sure partitions stay < 1GB
 
- *  **Commandment 6)**   Don’t be afraid to add nodes
+ *  **Commandment 6)**   Don't be afraid to add nodes
 
      - Vertical scale (more cpu, more RAM)
 
@@ -103,7 +103,7 @@ Notes:
 
  *  **Commandment 7**  – Mind your compactions
 
-     - Heavy IO, might impact ‘normal’ operations
+     - Heavy IO, might impact 'normal' operations
 
  *  **Commandment 8**  – Never use shared storage
 
@@ -131,11 +131,11 @@ Notes:
 
  *  **Commandment 11** – Learn how to load data. Bulk Load. Insert. Copy
 
- *  **Commandment 12**  – Repair isn’t just for broken data
+ *  **Commandment 12**  – Repair isn't just for broken data
 
-     - ‘bad things happen to good data’
+     - 'bad things happen to good data'
 
-     - Run ‘repair’ regularly
+     - Run 'repair' regularly
 
  *  **Commandment 13** – Know the relationship between Consistency Level and Replication Factor
 
@@ -162,7 +162,7 @@ Notes:
 
  *  **Commandment 15** – Get involved in the community
 
-     - ‘nuff said
+     - 'nuff said
 
 Notes: 
 
@@ -175,7 +175,7 @@ Notes:
 
  * All data for a single partition must fit (on disk) on a single machine in the cluster. 
 
- * A single column value may not be larger than 2GB; in practice, ”**1 MB**" recommended
+ * A single column value may not be larger than 2GB; in practice, "**1 MB**" recommended
 
  * **Collection** values may not be larger than **64KB**.
 
@@ -211,7 +211,7 @@ Notes:
 
  * `C*` needs good IO throughput
 
- * VM’s don’t offer good IO paths
+ * VM's don't offer good IO paths
 
      - Share a central disk (SAN) for multiple VMs  bottleneck
 
@@ -257,8 +257,8 @@ Notes:
  * Start with queries;  **then**  design the schema
  * Keep in mind the constraints around 
      - partition keys, clustering columns, secondary indexes, etc.
- * Generate ‘fake’ data to test at scale
-     - Use our ‘generator’ scripts
+ * Generate 'fake' data to test at scale
+     - Use our 'generator' scripts
  * Query tracing
      - *cqlsh>   tracing oncqlsh >   select * from increments;
 </br> **< query output >***
@@ -282,7 +282,7 @@ Notes:
 
  * How is it internally stored?
 
-     - Use ‘sstabledump  < SSTable >’ 
+     - Use 'sstabledump  < SSTable >' 
 
  * Where is my row?
 
@@ -365,7 +365,7 @@ Notes:
 
      - `C*` is network intensive
 
-     - Have 2 interfaces ‘bonded’ together (minimize network failure)
+     - Have 2 interfaces 'bonded' together (minimize network failure)
 
 Notes: 
 
@@ -626,7 +626,7 @@ Notes:
 
      - 1M+ writes / sec,   300k reads / sec
 
- * ‘profile’ feature quadrupled data volume!
+ * 'profile' feature quadrupled data volume!
 
  * Largest cluster: 150 nodes (across 3 DCs)
 
@@ -712,7 +712,7 @@ Notes:
 
      - 500 `C*` nodes across 4 data centers(production + testing)
 
-     - Recommendations generated ‘off-line’ using Cassandra + Hadoop (not in critical path)
+     - Recommendations generated 'off-line' using Cassandra + Hadoop (not in critical path)
 
 Notes: 
 

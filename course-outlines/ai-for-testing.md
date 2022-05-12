@@ -7,7 +7,7 @@ May 03, 2022
 
 * The AI is today everywhere and definitely, it should be in the world of the software itself, in particular, in the world of software testing. In this course, you will learn about the state of the art in AI for software testing, and get to practice it as well.
 
-* The course is intended for software architects, engineers, and testers. It gives them a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student’s participation.
+* The course is intended for software architects, engineers, and testers. It gives them a practical level of experience, achieved through a combination of about 50% lecture, 50% demo work with student's participation.
 
 ## Benefits
 

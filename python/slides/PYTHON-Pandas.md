@@ -190,7 +190,7 @@ Notes:
 
   * Index can be of any type (str, int, float)
 
-  * Default index is an int starting with zero (0,1,2…)
+  * Default index is an int starting with zero (0,1,2...)
 
     - New rows will have a new index
     - (similar to auto-incrementing primary key)
@@ -1952,7 +1952,7 @@ Notes:
 
   * **describe()** function gives you a quick glance of data
 
-  * Tells us:  Min, max, median, …
+  * Tells us:  Min, max, median, ...
 
   * Gives a 'good feel' for the data
 

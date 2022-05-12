@@ -6,6 +6,13 @@
 
 ---
 
+## Instructor Introduction
+
+* Instructor, please introduce yourself
+
+* And highlight your expertise and experience in the subject
+
+---
 
 ## Class Objectives
 
@@ -111,9 +118,9 @@ Notes:
 ## Recommended Books / Resources
 
 
- * “Cassandra: The Definitive Guide,” by Jeff Carpenter, Eben Hewitt
+ * "Cassandra: The Definitive Guide," by Jeff Carpenter, Eben Hewitt
 
- * “Learning Apache Cassandra” by Mat Brown
+ * "Learning Apache Cassandra" by Mat Brown
 
  * Datastax Academy: https://academy.datastax.com 
 
@@ -121,27 +128,6 @@ Notes:
 
 Notes: 
 
-
-
-
----
-
-## Class Logistics
-
-
- *  **Instructor’s contact** Email / LinkedIn
-
- *  **Slides** 
-
-     - You will get PDF copies of slides.  
-
-     - Feel free to annotate or highlight, etc. (use a modern PDF reader)
-
- *  **Lab Exercises:** 
-
- *  **Working environment:** Provided in the cloud
-
-Notes: 
 
 
 
@@ -165,6 +151,26 @@ Notes:
 Notes: 
 
 ---
+
+## Class Logistics
+
+
+ *  **Instructor's contact** Email / LinkedIn
+
+ *  **Slides** 
+
+     - You will get PDF copies of slides.  
+
+     - Feel free to annotate or highlight, etc. (use a modern PDF reader)
+
+ *  **Lab Exercises:** 
+
+ *  **Working environment:** Provided in the cloud
+
+Notes: 
+
+---
+
 
 ## Let's Get Started!
 

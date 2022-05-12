@@ -72,7 +72,7 @@ A steady stream of continuous writes occurs. This action leads to more efficient
 
 <img src="../../assets/images/cassandra/architecture-02.png" style="width:40%; float:right;"/>
 
- * Persisted on disk  (‘D’ in ACID)
+ * Persisted on disk  ('D' in ACID)
 
  * Memtables are backed by SSTables
 
@@ -133,11 +133,11 @@ Notes:
 
  * Bloom Filters will return
 
-     - **DEFINITELY NO:** the key doesn’t exist in SSTable
+     - **DEFINITELY NO:** the key doesn't exist in SSTable
 
      - **MAY BE:** the key may exist
 
- * ‘NO’ avoids a costly disk access, just to find no data
+ * 'NO' avoids a costly disk access, just to find no data
 
 Notes: 
 
@@ -161,7 +161,7 @@ Notes:
 
      - keep data in sorted order (takes time)
 
-     - Are immutable, so can’t write every update to SSTable  
+     - Are immutable, so can't write every update to SSTable  
 
 
 Notes: 
@@ -335,7 +335,7 @@ Notes:
 ## Read Path
 
 
- * On a single node… when a read request is received
+ * On a single node... when a read request is received
 
      - Memtable is read to get latest data for this partition
 
@@ -419,7 +419,7 @@ Notes:
 ## Read Path using Caches
 
 
- * On a single node… when a read request is received
+ * On a single node... when a read request is received
 
      -  **Key Cache** checked to see if row is already cached. If so, DONE.
 
@@ -509,9 +509,9 @@ Notes:
 
  * Token value range is very large:  -2^63 to 2^64-1 
 
- * Each node in the cluster “owns” a set of tokens
+ * Each node in the cluster "owns" a set of tokens
 
- * Partition key’s token maps to ONE node 
+ * Partition key's token maps to ONE node 
 
      - Row is placed here
 
@@ -550,7 +550,7 @@ Notes:
 
  * Solution: Virtual node (abstraction)
 
-     - Each (physical) server has many ‘virtual nodes’ 
+     - Each (physical) server has many 'virtual nodes' 
 
      - Token range is split into as many as 256 partitions and distributed across nodes
 

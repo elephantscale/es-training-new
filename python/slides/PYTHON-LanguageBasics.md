@@ -423,7 +423,7 @@ Notes:
   * **range(start, stop step)** function is more flexible
 
     - **range**(1,10, 2) => 1,3,5,7,9
-    - **range**(0, 0.1, 0.01) =>  0.0, 0.01, …,  0.10
+    - **range**(0, 0.1, 0.01) =>  0.0, 0.01, ...,  0.10
 
   * More options: **?range**
 
@@ -709,7 +709,7 @@ Notes:
 
 
 ```python
-def function (arg1, arg2, … ):
+def function (arg1, arg2, ... ):
 		statements
 		return(result) # don't need to say return
 

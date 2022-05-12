@@ -84,7 +84,7 @@ Notes:
 
 Notes:
 
-* Many are confused by the terms decompiler and disassembler. As with most confusion of this type, most just use the words interchangeably. Don’t do that; they are not the same.
+* Many are confused by the terms decompiler and disassembler. As with most confusion of this type, most just use the words interchangeably. Don't do that; they are not the same.
 
 * A decompiler takes one from a binary to source code–or something similarly high-level that can easily be read by humans.
 * A disassembler takes one from binary to assembler–which is much lower level and is more difficult to read for humans.

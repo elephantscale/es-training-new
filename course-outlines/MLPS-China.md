@@ -47,8 +47,8 @@ The environment, where required, will be provided in the cloud.
     - As an administrative regulation based on CSL Article - 21, 
     the Regulations on Multi-level Protection for Cybersecurity
     is an important supporting regulation.
-* “Network” instead of system
-    - The term “network” as defined in
+* "Network" instead of system
+    - The term "network" as defined in
     the MLPS Regulation refers to a system comprised of computers, other
     information terminals and related equipment that follows certain rules
     and procedures for gathering, storing, transmitting, exchanging and
@@ -59,7 +59,7 @@ The environment, where required, will be provided in the cloud.
     while public security organs are responsible for supervision and management of the
     cybersecurity multi-level protection scheme.          
 
-* Network Operators’ Security Protection Obligations
+* Network Operators' Security Protection Obligations
     - The MLPS Regulation
     provides more detailed requirements regarding the different levels of security obligations for network
     operators.

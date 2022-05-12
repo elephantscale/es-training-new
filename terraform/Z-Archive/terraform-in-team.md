@@ -95,7 +95,7 @@
   
 * The increments themselves are often to specialized to be reused
 
-*A complex system that works in invariably found to have evolved from a simple system that works… A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over, beginning with a working simple system. - Gall*
+*A complex system that works in invariably found to have evolved from a simple system that works... A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over, beginning with a working simple system. - Gall*
 
 ---
 ## Chose your Target
@@ -259,7 +259,7 @@
 * Major differences are an indicator that things could get very bad, very fast
 
 * The golden rule:
-    * *The master branch of the live repository should be a 1:1 representation of what’s actually deployed in production*
+    * *The master branch of the live repository should be a 1:1 representation of what's actually deployed in production*
 
 ---
 ## The Trouble with Branches

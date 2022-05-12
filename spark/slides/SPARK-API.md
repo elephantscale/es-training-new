@@ -109,12 +109,12 @@ Notes:
     - In memory data: 100x faster!
 * Spark has a different execution model than MR
 * In MapReduce
-    - Each job is run within its own ‘container’  (JVM)
+    - Each job is run within its own 'container'  (JVM)
     - Once the job is done, container is terminated
     - For another job, new containers get started, and run the new tasks.
     - This is expensive (starting a new JVM for each job)
 * Spark
-    - Containers (called ‘executors’) are ‘long lived’ (aka not terminated between jobs) (even when not running tasks)
+    - Containers (called 'executors') are 'long lived' (aka not terminated between jobs) (even when not running tasks)
     - New task startup is very fast (no warm up!)
     - Task switching is very fast too.
     - Map Reduce is considering this approach too (LLAP : Long Live and Process ("Long Live and Prosper"))
@@ -165,7 +165,7 @@ Notes:
         - Development / debugging
     - **YARN-cluster**
         - Production runs
-        - Not meant for ’interactive’ applications
+        - Not meant for 'interactive' applications
 
 ---
 
@@ -264,7 +264,7 @@ object TestApp{
 						        getOrCreate()
 
 		val f = spark.read.text("data.txt")
-		println (“# lines: “ + f.count)
+		println ("# lines: " + f.count)
 
 	  spark.stop()
 	}
@@ -420,7 +420,7 @@ scalaVersion:= "2.12"
 // ++= means concatenate sequence of dependencies
 // %% means append Scala version to next part
 libraryDependencies ++= Seq(
-  "org.apache.spark" % "spark-core" % "3.0.0” % “provided"
+  "org.apache.spark" % "spark-core" % "3.0.0" % "provided"
 )
 
 // need this to access files on S3 or HDFS
@@ -612,7 +612,7 @@ $   spark-submit ... --py-files  py-files.zip
 
 ## Using Other Python Modules
 
-* If the application depends on other python libraries (like numpy …etc)  they needed to be installed on worker machines before hand
+* If the application depends on other python libraries (like numpy ...etc)  they needed to be installed on worker machines before hand
 
 * Spark does NOT install the packages automatically
 

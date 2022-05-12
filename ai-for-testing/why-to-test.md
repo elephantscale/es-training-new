@@ -25,8 +25,8 @@ According to the Consortium for IT Software Quality (CISQ), poor quality softwar
 
 How Serious is Inadequate Testing?
 There was an incident where a Boeing aircraft had a glitch in the software that occurred due to technical errors during coding. Due to the software failure, the aircraft crashed and killed 346 people and destroyed the 737 max aircraft.
-Another example is RBI’s Bό, the digital bank. Six months after releasing the app to the public, users were flooded with bugs, and compliance glitches forced many users to replace their cards.
-Bό’s Google Playstore rating dropped to 2.5, a significant factor that 42% of smartphone users verify before downloading an app. The teams spent the first three months fixing the bugs. But, these efforts were rendered inadequate as customers had already lost trust in the application, and Bό was shut down.
+Another example is RBI's Bό, the digital bank. Six months after releasing the app to the public, users were flooded with bugs, and compliance glitches forced many users to replace their cards.
+Bό's Google Playstore rating dropped to 2.5, a significant factor that 42% of smartphone users verify before downloading an app. The teams spent the first three months fixing the bugs. But, these efforts were rendered inadequate as customers had already lost trust in the application, and Bό was shut down.
 These cases point to 3 big problems that come with inadequate software testing:
 
 Insufficient software testing risks the loss of big money

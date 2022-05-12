@@ -32,7 +32,7 @@ Developers, architects.
 
 ## Lab environment:
 
-Zero Install: There is no need to install any software on students’ machines! (although it is possible)
+Zero Install: There is no need to install any software on students' machines! (although it is possible)
 
 ## Detailed Outline:
  

@@ -542,7 +542,7 @@ Notes:
 ---
 ## Creating new Components
 
-  * You can create a custom Component to perform a specific task which NLU doesn’t currently offer (e.g. sentiment analysis).
+  * You can create a custom Component to perform a specific task which NLU doesn't currently offer (e.g. sentiment analysis).
 
 ```yaml
 pipeline:

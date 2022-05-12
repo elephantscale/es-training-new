@@ -22,7 +22,7 @@ Upon completion of this course, you should be able to:
 
  *  Moving beyond fundamentals
  *  Replatforming from Solr 5 to Solr 8
- *  Moving from Solr’s Distributed Index Mode “SolrCloud” due to the aggressive growth in
+ *  Moving from Solr's Distributed Index Mode "SolrCloud" due to the aggressive growth in
 
 ## Course Outline:
 

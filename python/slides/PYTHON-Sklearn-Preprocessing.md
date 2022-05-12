@@ -58,7 +58,7 @@ Notes:
  * Factorization
    - Call __`pd.factorize()`__ on the dimension
    - Will assign an integer to each unique value
-   - E.g. (red = 1, green = 2… etc)
+   - E.g. (red = 1, green = 2... etc)
    
  * See next slide for details
 

@@ -1265,7 +1265,7 @@ Jane,F,35
     - Workload
     - Other ETL/ingestion systems
 
-* Is “human readability” a big deal?
+* Is "human readability" a big deal?
     - Then use text: CSV, JSON
 
 * For Speed go with Parquet/ORC
@@ -1282,13 +1282,13 @@ Jane,F,35
 
 ```scala
 // loading json data
-dfJson = spark.read.json(“data.json”)
+dfJson = spark.read.json("data.json")
 
 // save as parquet (faster queries)
-dfJson.write.parquet(“data-parquet/”)
+dfJson.write.parquet("data-parquet/")
 
 // save as ORC (faster queries)
-dfJson.write.orc(“data-orc/”)
+dfJson.write.orc("data-orc/")
 
 ```
 <!-- {"left" : 0.8, "top" : 3.27, "height" : 4.3, "width" : 11.42} -->   

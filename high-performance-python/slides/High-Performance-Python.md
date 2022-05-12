@@ -16,7 +16,7 @@
 Notes:
 
 Python is easy to learn. 
-You’re probably here because now that your code runs correctly, you need it to run faster. You like the fact that your code is easy to modify and you can iterate with ideas quickly. The trade-off between easy to develop and runs as quickly as I need is a well-understood and often-bemoaned phenomenon. There are solutions.    
+You're probably here because now that your code runs correctly, you need it to run faster. You like the fact that your code is easy to modify and you can iterate with ideas quickly. The trade-off between easy to develop and runs as quickly as I need is a well-understood and often-bemoaned phenomenon. There are solutions.    
 
 ---
     

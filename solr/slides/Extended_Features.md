@@ -50,8 +50,8 @@ Notes:
 
   * Experiment
   * Download a slide deck from SlideShare.net (when you are logged in)
-  * Get the “More like this” email
-  * Analyze what’s “more like this”
+  * Get the "More like this" email
+  * Analyze what's "more like this"
   * Using Solr way:
     - http://wiki.apache.org/solr/MoreLikeThis	
 
@@ -125,7 +125,7 @@ Notes:
 
   * Location-based searching
   * Index a field in each document containing a geographical point (a latitude and longitude)
-  * At query time…
+  * At query time...
     - filter out documents that do not fall within a specified radius of some other point
 
 
@@ -412,7 +412,7 @@ Notes:
     - Supports any query parser - searching on a single field.
   * Cons:
     - You have to manage multiple cores
-    - Doesn’t support multilingual documents 
+    - Doesn't support multilingual documents 
     - Relevancy scores not precise
 
 

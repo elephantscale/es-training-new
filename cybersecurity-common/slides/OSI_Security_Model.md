@@ -190,7 +190,7 @@ Ref:
 ## OST Intuitive Model
 
 
- * Using OSI to figure out why an application isn’t working
+ * Using OSI to figure out why an application isn't working
 
    - Layer 1: Physical
      - 	Is the network cable plugged in?
@@ -551,7 +551,7 @@ Notes:
  * Social engineering attacks try to convince staff to allow access to bad actors
 
      - Mitigation is to have strongly enforced security measures
-     - “We will not open the server room for anyone who claims to have lost their keycard.”
+     - "We will not open the server room for anyone who claims to have lost their keycard."
 
  * Physical interception is done by accessing cables and other devices – data taps for example
      - Also done by monitoring EM signals from monitors and other devices
@@ -573,7 +573,7 @@ Notes:
 
  * Mitigations
 
-     - Any device, cable or other “thing” connected to the network is vulnerable
+     - Any device, cable or other "thing" connected to the network is vulnerable
 
      - Use proper shielding and physical isolation when necessary
 
