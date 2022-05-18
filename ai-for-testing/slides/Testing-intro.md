@@ -2,7 +2,7 @@
 
 ---
 
-# Software testing
+# Software testing conundrum
 
 ---
 
@@ -112,6 +112,8 @@
 * dive into techniques for automating graphically intensive solutions
 * such as video streaming and gaming applications.
 
+---
+
 ## Goals
 
 * Wide knowledge of the various applications of AI-driven testing, 
@@ -120,6 +122,6 @@
 
 ---
 
+# Test Automation Gap
 
-
-
+---
