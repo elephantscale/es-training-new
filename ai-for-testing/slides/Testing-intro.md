@@ -191,3 +191,75 @@
 
 ---
 
+## Input/Output
+
+* Computer software takes user input, processes it, and produces output. 
+* For testing a very simple program with only one text field
+* Still, you have computationally infeasible number of values to choose from
+* Most programs contain many input fields
+* Furthermore, you can apply those input combinations at different times and order them in many different ways
+* Still have to check that each of those inputs produces the correct output 
+  * appropriate usability
+  * accessibility
+  * performance
+  * reliability
+  * security constraints
+
+---
+
+## State Explosion
+
+* Most computing systems are reactive. 
+* The user provides input, the machine processes it and produces output, 
+* The system is in a state
+  * Depending on previous inputs, a given user action will produce specific outputs and the system will transition to an updated state
+  * You are responsible for getting the system into the correct pretest state
+  * Applying the input, and verifying that the correct end state has been reached. 
+  * Infinite number of states. 
+  * Similar to the input/output problem, testing suffers from a rapid explosion in the number of states 
+
+---
+
+## Data
+
+* During testing, you can use data in many different ways
+* Testers use data selection techniques like equivalence class partitioning
+* verify that the software works under extreme conditions.
+* Fake data? 
+  * may not be representative of the real world? 
+* Pull real-world data from customers in production? 
+  * Can you anonymize customer data for testing in accordance with data privacy regulations?
+
+---
+
+## The Oracle
+
+* Oracle (see movie Matrix) tells us whether the software worked right or not
+* Human testers do their best to act as an oracle 
+  * but generally rely on other domain experts. 
+  * Answers about the system’s expected behavior tend to be vague and subjective,
+* Creating an automated oracle is a nontrivial problem.
+
+---
+
+## Environment
+
+* Software is deployed in an environment. 
+* Testing provides information about the software running in an actual environment. 
+* The environment itself is a combination of hardware and other software 
+* The hardware environment includes physical devices such as corporate servers, workstations, laptops, tablets, and phones,
+* Operating systems, virtual machine managers, and device drivers make up the software environment.
+* Obviously, it is impractical to test all of the hardware and software combinations, 
+* so the best practices tend to focus on risk and past experiences.
+
+---
+
+## Limitations of Traditional Approaches
+
+* Traditional approaches 
+  * machine-readable scripts that check for specific system behaviors
+  * automated scripts requires significant manual effort
+* You first have to understand the requirements and implemented system 
+* The bad news is that traditional tools and frameworks are quite rigid, so there are high maintenance costs associated with updating and maintaining these scripts over time.
+
+---
