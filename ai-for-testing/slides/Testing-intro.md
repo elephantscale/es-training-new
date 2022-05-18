@@ -23,5 +23,14 @@
 
 ---
 
+## Who will gain?
+
+* The managers and project overall, as above
+* Developers who get better feedback
+* __Testers__ - our hearts are with them
+
+---
+
+
 
 
