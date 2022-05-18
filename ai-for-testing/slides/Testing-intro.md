@@ -183,11 +183,11 @@
 
 ## Grand Challenges
 
-1. Input/Output
-2. State Explosion
-3. Data
-4. The Oracle
-5. Environment
+* Input/Output
+* State Explosion
+* Data
+* The Oracle
+* Environment
 
 ---
 
