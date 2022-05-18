@@ -1,4 +1,0 @@
-# AI for testing introduction
-
----
-

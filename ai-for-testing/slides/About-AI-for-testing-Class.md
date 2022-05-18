@@ -28,7 +28,7 @@ Notes:
 
    - Ask a lot of questions 
 
- * This is a Secure Coding class
+ * This is a Software Testing class
    - No previous knowledge is assumed (but may be helpful) 
    - Class will be based on the pace of majority of the students
 
@@ -133,7 +133,7 @@ Notes:
 
      - Technologies you are familiar with
 
-     - Familiarity with security? (scale of 1 – 4:  1 – new,   4 – expert)
+     - Familiarity with testing? (scale of 1 – 4:  1 – new,   4 – expert)
 
      - Something non-technical about you!(favorite ice cream flavor or hobby...)
 
