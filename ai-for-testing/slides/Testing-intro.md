@@ -124,4 +124,70 @@
 
 # Test Automation Gap
 
+--- 
+
+## Automate this
+
+* When you automate something
+  * it can start, run, and complete with little to no human intervention
+* 1950s -  “lights-out manufacturing” 
+  * vision of factories so independent of human labor that they could operate with the lights out
+* However, in the field of software testing, alas!
+  * Far from a lights-out philosophy
+  * There is a gap between manual and automated testing, 
+  * including some grand challenges of software testing and limitations of traditional test automation approaches
+
 ---
+
+## The Human Element of Software Testing
+
+* People differentiated between manual and automated testing
+* As a test architect, engineering director, and head of quality
+  * I frequently differentiated between the two
+  * However, the truth is that, outside of automatic test execution, software testing is almost entirely 
+    * a manual, tedious, and time-consuming process
+
+---
+
+## Before you can test a software system
+
+* You must understand
+  * what the system is supposed to do
+  * who its intended users are
+* This generally involves
+  * reviewing software requirements documentation; 
+  * interviewing product analysts, end users, and customers; 
+  * and comparing this information to the requirements of similar products.
+
+
+---
+
+## Once you understand
+
+* Once you understand
+  * the product requirements 
+  * and customer needs
+* You must examine 
+  * the implemented system to determine 
+  * whether it meets those needs.
+* Software testing is more than having a human and/or machine check specific facts about a program.
+
+---
+
+
+## Testing is...
+
+![](../images/01.png)
+
+---
+
+## Grand Challenges
+
+1. Input/Output
+2. State Explosion
+3. Data
+4. The Oracle
+5. Environment
+
+---
+
