@@ -304,3 +304,28 @@
 
 ---
 
+## Nonfunctional Test Automation
+
+* Nonfunctional testing validates constraints on the system’s functionality
+  * performance, 
+  * security, 
+  * usability, 
+  * accessibility.
+* emulate production traffic using hundreds and thousands of virtual concurrent users 
+  * performing real-world transactions
+* performance test scripts 
+  * require periodic maintenance 
+  * introduces an additional layer of complexity.
+
+---
+
+## Our conclusion
+
+* Automation in any field has limitations and may require manual effort
+* Our experience with software test automation in the field over the last 15 years 
+  * many practitioners have accepted a subpar definition of what it means to automate the testing process. 
+* Other practitioners claim that testing is so hard that it will never be automated.
+* Understanding the test automation challenges and limitations is the __first step__
+
+---
+
