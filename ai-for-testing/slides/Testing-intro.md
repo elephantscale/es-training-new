@@ -9,6 +9,8 @@
 
 ## Software testing is expensive
 
+<img src="../images/Software-testing.png"  style="width:60%;"/><!-- {"left" : 6.16, "top" : 1.18, "height" : 2.76, "width" : 3.87} -->
+
 * up-front and recurring investment 
   * in labor and assets
 * The cost of fixing defects increases exponentially
@@ -29,9 +31,14 @@
 * Developers who get better feedback
 * __Testers__ - our hearts are with them
 
+<img src="../images/Team-testing.png"  style="width:60%;"/> <!-- {"left" : 1.7, "top" : 3.32, "height" : 4.31, "width" : 6.84} -->
+
+
 ---
 
 ## The middle way
+
+<img src="../images/The-middle-way.png"  style="width:60%;"/> <!-- {"left" : 6.25, "top" : 1.17, "height" : 3.77, "width" : 3.77} -->
 
 * The key to controlling quality cost-effectively 
   * find the right level of testing effort 
@@ -47,6 +54,8 @@
 
 ## Need for automation
 
+<img src="../images/automation.png"  style="width:60%;"/> <!-- {"left" : 6.77, "top" : 1.19, "height" : 2.65, "width" : 3.25} -->
+
 * One way to reduce testing costs and improve your ROI is through automation
 * By removing manual steps
   * organizations can scale operations faster, easier, and more cost-effectively.
@@ -59,6 +68,8 @@
 ---
 
 ## Benefits of automation
+
+<img src="../images/Benefits-of-automation.png"  style="width:60%;"/> <!-- {"left" : 5.62, "top" : 1.2, "height" : 2.48, "width" : 4.4} -->
 
 * A software-testing tool or framework is needed
 * It will execute the scripts against the system under test and logs the results. 
@@ -77,6 +88,9 @@
     * the gap between
       * manual and 
       * automated software testing.
+
+<img src="../images/Ai-01.png"  style="width:60%;"/> <!-- {"left" : 1.8, "top" : 3.93, "height" : 4.43, "width" : 6.64} -->
+
 
 ---
 
@@ -98,9 +112,13 @@
   * researchers 
   * using or developing automated software-testing solutions.
 
+
+
 ---
 
 ## What we will cover
+
+<img src="../images/Ai-02.png"  style="width:60%;"/> <!-- {"left" : 6.79, "top" : 1.19, "height" : 2.14, "width" : 3.22} -->
 
 * the grand challenges and limitations of traditional automated testing tools
 * how AI-driven approaches are helping to overcome these problems. 
@@ -120,6 +138,8 @@
 * an understanding of its current benefits and limitations, and 
 * insights into the future of this emerging discipline.
 
+<img src="../images/goals.png"  style="width:60%;"/> <!-- {"left" : 1.28, "top" : 3.58, "height" : 4.62, "width" : 7.69} -->
+
 ---
 
 # Test Automation Gap
@@ -137,6 +157,8 @@
   * There is a gap between manual and automated testing, 
   * including some grand challenges of software testing and limitations of traditional test automation approaches
 
+
+
 ---
 
 ## The Human Element of Software Testing
@@ -147,9 +169,14 @@
   * However, the truth is that, outside of automatic test execution, software testing is almost entirely 
     * a manual, tedious, and time-consuming process
 
+<img src="../images/Human-Element-of-Software-Testing.png"  style="width:60%;"/> <!-- {"left" : 2.27, "top" : 4.51, "height" : 3.81, "width" : 5.71} -->
+ 
+
 ---
 
 ## Before you can test a software system
+
+<img src="../images/Automate.png"  style="width:60%;"/> <!-- {"left" : 5.56, "top" : 1.47, "height" : 2.96, "width" : 4.43} -->
 
 * You must understand
   * what the system is supposed to do
@@ -172,12 +199,16 @@
   * whether it meets those needs.
 * Software testing is more than having a human and/or machine check specific facts about a program.
 
+<img src="../images/Ai-03.png"  style="width:60%;"/>  <!-- {"left" : 6.01, "top" : 1.24, "height" : 5.91, "width" : 3.94} -->
+
+
 ---
 
 
 ## Testing is...
 
-![](../images/01.png)
+
+<img src="../images/01.png"  style="width:60%;"/> <!-- {"left" : 1.17, "top" : 1.69, "height" : 6.27, "width" : 7.91} -->
 
 ---
 
@@ -188,6 +219,9 @@
 * Data
 * The Oracle
 * Environment
+
+<img src="../images/Grand-Challenges.png"  style="width:60%;"/> <!-- {"left" : 2.12, "top" : 4, "height" : 4, "width" : 6} -->
+
 
 ---
 
@@ -230,6 +264,8 @@
 * Pull real-world data from customers in production? 
   * Can you anonymize customer data for testing in accordance with data privacy regulations?
 
+<img src="../images/data.png"  style="width:60%;"/> <!-- {"left" : 2.95, "top" : 5.55, "height" : 2.9, "width" : 4.34} -->
+
 ---
 
 ## The Oracle
@@ -262,6 +298,9 @@
 * You first have to understand the requirements and implemented system 
 * The bad news is that traditional tools and frameworks are quite rigid, so there are high maintenance costs associated with updating and maintaining these scripts over time.
 
+<img src="../images/Traditional-Approaches.png"  style="width:60%;"/> <!-- {"left" : 5.99, "top" : 1.31, "height" : 5.83, "width" : 3.89} -->
+
+
 ---
 ## Pesticide paradox
 
@@ -288,8 +327,8 @@
 
 ## Service and Unit Test Automation
 
-![](../images/02.png)
 
+<img src="../images/02.png"  style="width:60%;"/> <!-- {"left" : 0.53, "top" : 2.3, "height" : 4.48, "width" : 9.19} -->
 
 ---
 
@@ -358,7 +397,9 @@
 
 ## Bots leverage machine learning
 
-![](../images/03.png)
+
+<img src="../images/03.png"  style="width:60%;"/> <!-- {"left" : 1.81, "top" : 1.57, "height" : 6.5, "width" : 6.62} -->
+
 
 ---
 
@@ -385,7 +426,7 @@
 ## Goal-based reinforcement learning
 
 
-![](../images/04.png)
+<img src="../images/04.png"  style="width:60%;"/> <!-- {"left" : 0.98, "top" : 1.85, "height" : 5.94, "width" : 8.28} -->
 
 ---
 
@@ -399,7 +440,6 @@
   * It is harder to know that someone’s pay stub is incorrect calculated appropriately. 
   
 
----
 
 
 
