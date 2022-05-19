@@ -263,3 +263,44 @@
 * The bad news is that traditional tools and frameworks are quite rigid, so there are high maintenance costs associated with updating and maintaining these scripts over time.
 
 ---
+## Pesticide paradox
+
+* just as insects build up resistance to pesticides over time
+* the more you run the exact same tests on your software
+  * the more likely it is to become immune to issues surrounding those specific scenarios.
+
+---
+
+## UI Test Automation
+
+* determine if the software is able to carry out its required functions from the users’ perspective. 
+* mimics users clicking, typing, tapping, or swiping on various screens of the application and verifying that the appropriate responses appear.
+* For web and mobile applications
+  * Selenium and Appium 
+  * locate screen elements using patterns and path expressions 
+  * based on the application’s document object model (DOM). 
+  * drawbacks of DOM-based element selectors
+    * make tests susceptible to breaking as the structure and/or behavior of the UI changes
+    * changing the location or identifiers means that you have to update all the page object models
+    * or test scripts associated with them. 
+
+---
+
+## Service and Unit Test Automation
+
+![](../images/03.png)
+
+
+---
+
+## Service and Unit Test Automation
+
+* best practices like the test pyramid
+* test automation should be done at the API
+  * service—and unit levels. 
+* code coverage can be a misleading quality measure 
+* practitioners recommend testing the software on a variety of input values
+* coverage of the input space, rather than coverage of the code
+
+---
+
