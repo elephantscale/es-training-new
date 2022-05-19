@@ -288,7 +288,7 @@
 
 ## Service and Unit Test Automation
 
-![](../images/03.png)
+![](../images/02.png)
 
 
 ---
@@ -328,4 +328,78 @@
 * Understanding the test automation challenges and limitations is the __first step__
 
 ---
+
+# AI for Test Automation
+
+---
+
+## Leveraging AI for Test Automation
+
+* Did you know that autonomous and intelligent agents (__bots__) are already running tests on major applications today? 
+  * The bots are in the building
+  * Testing many apps in various application domains. 
+  * Bots might be testing your own app - if you publish your app in one of the major app stores
+* We’ll walk you through how AI tests software
+* Show how this technology really works
+  * testing applications at different levels or for various quality attributes.
+
+---
+
+## How to train AI bots
+
+* Bots
+  * perceive, 
+  * explore, 
+  * model, 
+  * test, and 
+  * learn software functionality
+
+---
+
+## Bots leverage machine learning
+
+![](../images/03.png)
+
+---
+
+## Perceive
+
+* Ability to interact with the application’s screens, controls, labels, and other widgets. 
+* Traditional automation frameworks use the application’s DOM for locating UI elements 
+  * DOM-based location strategies are highly sensitive to implementation changes. 
+* Leveraging AI for identifying UI elements can help to overcome these drawbacks. 
+* AI bots recognize what appears on an application screen independently of how it is implemented. 
+* Branch of AI known as computer vision, is able to perceive anything with a screen.
+
+---
+
+## Explore and Model
+
+* While exploring the app, testers create mental models 
+* Similarly, AI bots explore and build models of the application under test
+* You give them a goal, and they attempt to reach it by trial and error
+* This is __reinforcement learning__
+
+---
+
+## Goal-based reinforcement learning
+
+
+![](../images/04.png)
+
+---
+
+## Test
+
+* The bots can perceive, explore, and model the application,
+* Bots can recognize what expected and unexpected behaviors look like in given contexts. 
+* It may be easier for bots to identify some types of issues than others. 
+* For example, 
+  * an HTTP 404 error - application has thrown an error. 
+  * It is harder to know that someone’s pay stub is incorrect calculated appropriately. 
+  
+
+---
+
+
 
