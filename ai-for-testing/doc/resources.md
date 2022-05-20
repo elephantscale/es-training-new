@@ -1,5 +1,6 @@
 # AI for testing - resources
 
+* Course outline: https://github.com/elephantscale/es-training-new/blob/master/course-outlines/ai-for-testing.md
 * Testing in general and AI in particular
   * [AI-Driven testing report](https://learning.oreilly.com/library/view/ai-driven-testing/9781098105983/copyright-page01.html)
 
