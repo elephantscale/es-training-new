@@ -440,6 +440,67 @@
   * It is harder to know that someone’s pay stub is incorrect calculated appropriately. 
   
 
+## Learn
+
+* improve based on feedback. 
+* Having humans provide direct feedback on the bots’ actions makes the system better. 
+* Feedback mechanisms allow humans to reinforce or rewrite the AI brain
+* As a result, the more feedback your teams provide to the bots on the quality of their testing, the better the bots become 
+* Ultimately the more value they provide to the testing team. 
+* Typically, feedback is incorporated into the product UI itself. 
+
+---
+
+
+## AI for Service/API Testing
+
+* Automated service or API testing validates the way systems communicate via sequences of requests and responses. 
+* For example, a typical communication exchange between two services, A and B, could be as follows:
+* Service A sends an HTTP GET request to retrieve some data from Service B.
+* Service B processes the request and returns an HTTP status of 200, indicating success along with a response body containing the requested data.
+
+---
+
+
+## AI for Unit Testing
+
+* Automatic source code analysis to generate unit tests that reflect program behavior and help to reduce gaps in coverage.
+
+* Integration with version control systems to monitor source code changes and keep tests up-to-date.
+
+---
+
+## AI for Mobile Design Testing
+
+* Google and Apple publish guidelines to help developers ensure that Android and iOS mobile apps are well-designed.
+* Example
+  * When Possible, Present Choices
+  * Make data entry as efficient as possible. Consider using a picker or table instead of a text field, for example, because it’s easier to choose from a list of predefined options than to type a response.
+* Ambiguous?
+  * you can train the bots to examine the screen just like a designer, customer, or reviewer.
+
+---
+
+## Conclusion
+
+* AI-driven test automation is causing quite a stir
+* AI is testing user interfaces, services, and lower-level components
+* Evaluates the functionality, performance, design, accessibility, and trustworthiness of applications.
+* It feels like the beginning of a new era of test automation. 
+
+---
+
+# Costs and Benefits of AI-Driven Testing
+
+---
+
+## Investment Costs
+
+* Based on our experiences in AI-driven testing projects
+* up-front and recurring costs 
+* homegrown solution vs purchasing a commercial, vendor-based solution.
+
+---
 
 
 
