@@ -490,7 +490,7 @@
 
 ---
 
-# Costs and Benefits of AI-Driven Testing
+# Costs and Benefits of AI
 
 ---
 
@@ -502,5 +502,117 @@
 
 ---
 
+## Homegrown Solutions
 
+* AI-driven test automation platform or framework in-house, 
+  * you’ll first need the talent to do so. 
+
+* Talent required for this type of project is difficult to find
+
+* Up-front costs included capital expenses related to the project’s hardware and software requirements
+
+* After the initial rollout of your homegrown solution, 
+  * you’ll still have to make significant investments in its development, evolution, and maintenance.
+  
+---
+
+## Vendor-Based Solutions
+
+![](../images/05.png)
+
+---
+
+## ROI
+
+* Increased Coverage and Acceleration
+* 
+
+## Increased Coverage and Acceleration
+
+![](../images/06.png)
+
+---
+
+## Fix types
+
+* Known issues, won’t fix
+  * Any reported issue found pre- or postrelease that the business has decided to not fix. These issues represent accepted risk.
+
+* Internally found and fixed in development
+  * Defects discovered by the engineering team prior to release and that the business has decided to fix.
+
+* Internally found in production and fixed
+  * Defects discovered by the engineering team after the release and that the business has taken action to fix.
+
+* Customer found and fixed
+  * Defects reported by the client or end user after the release and that the business has taken action to fix.
+
+* Undiscovered defects
+  * Issues that have been reported by neither the engineers nor customers, pre- or postrelease. These issues represent unknown risk.
+
+---
+
+## Fix types
+
+![](../images/07.png)
+
+---
+
+## Cost of testing
+
+![](../images/08.png)
+
+---
+
+## Total cost of testing
+
+![](../images/09.png)
+
+---
+## Conclusion
+
+* Determining how much to invest in AI-driven testing automation, 
+  * should be based on a careful analysis of its ROI. 
+  * together, we have enough insight into the available options
+  * and their respective costs and benefits 
+
+---
+
+# Future Directions
+
+## Future Directions
+
+* Enhancing existing tools and frameworks at each testing level and dimension
+
+* Full stack replacement of entire test automation tool sets
+
+* Adaptive ML systems designed with self-testing capabilities
+
+---
+
+## Enhancing Existing Tools
+
+![](../images/10.png)
+
+
+## Full Stack Replacement
+
+![](../images/11.png)
+
+## Self-Testing Adaptive AI
+
+![](../images/12.png)
+
+---
+
+## Conclusion
+
+* Software test automation has a bright future ahead of it
+  * largely due to AI.
+   
+* AI is testing at different technical levels, 
+  * validating quality attributes such as performance and accessibility, 
+  * and allowing automated testing 
+
+---
 
