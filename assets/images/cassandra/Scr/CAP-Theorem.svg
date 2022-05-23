@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-130 -374 1147 1075" width="1147" height="1075">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-05-23 15:45:42 +0000</metadata>
+  <g id="Canvas_1" stroke="none" fill-opacity="1" fill="none" stroke-dasharray="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_12">
+        <path d="M 913.5955 -271.01666 C 1048.2402 -136.37266 1048.2402 81.92822 913.5955 216.57221 C 778.9515 351.2169 560.6506 351.2169 426.0066 216.57221 C 291.36194 81.92822 291.36194 -136.37266 426.0066 -271.01666 C 560.6506 -405.66134 778.9515 -405.66134 913.5955 -271.01666" fill="#aa97fe" fill-opacity=".8288213"/>
+        <path d="M 913.5955 -271.01666 C 1048.2402 -136.37266 1048.2402 81.92822 913.5955 216.57221 C 778.9515 351.2169 560.6506 351.2169 426.0066 216.57221 C 291.36194 81.92822 291.36194 -136.37266 426.0066 -271.01666 C 560.6506 -405.66134 778.9515 -405.66134 913.5955 -271.01666" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 460.5722 -271.01666 C 595.2169 -136.37266 595.2169 81.92822 460.5722 216.57221 C 325.9282 351.2169 107.62734 351.2169 -27.016658 216.57221 C -161.66134 81.92822 -161.66134 -136.37266 -27.016658 -271.01666 C 107.62734 -405.66134 325.9282 -405.66134 460.5722 -271.01666" fill="#d99f2b" fill-opacity=".66033"/>
+        <path d="M 460.5722 -271.01666 C 595.2169 -136.37266 595.2169 81.92822 460.5722 216.57221 C 325.9282 351.2169 107.62734 351.2169 -27.016658 216.57221 C -161.66134 81.92822 -161.66134 -136.37266 -27.016658 -271.01666 C 107.62734 -405.66134 325.9282 -405.66134 460.5722 -271.01666" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 692.4622 109.42779 C 827.1068 244.07178 827.1068 462.37266 692.4622 597.01666 C 557.81816 731.66134 339.5173 731.66134 204.8733 597.01666 C 70.2286 462.37266 70.2286 244.07178 204.8733 109.42779 C 339.5173 -25.2169 557.81816 -25.2169 692.4622 109.42779" fill="#a4f8fd" fill-opacity=".5848875"/>
+        <path d="M 692.4622 109.42779 C 827.1068 244.07178 827.1068 462.37266 692.4622 597.01666 C 557.81816 731.66134 339.5173 731.66134 204.8733 597.01666 C 70.2286 462.37266 70.2286 244.07178 204.8733 109.42779 C 339.5173 -25.2169 557.81816 -25.2169 692.4622 109.42779" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(-19.534907 -199)" fill="#1e008e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e008e" x="0" y="50">Consistency:</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e008e" x="0" y="111">ACID</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e008e" x="0" y="172">Transactions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(605.8108 -199)" fill="#1e008e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e008e" x="0" y="50">Availability:</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e008e" x="0" y="111">Total</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e008e" x="0" y="172">Redundancy</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(256.18726 315)" fill="#1e008e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e008e" x="0" y="50">Partition</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e008e" x="0" y="111">Tolerance:</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#1e008e" x="0" y="172">Infinite Scaleout</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
