@@ -22,7 +22,7 @@
 
 ## -d will delete existing files in assembly  folder
 ## 4 days
-# ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-assembly-4-days.txt $@
+# $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-assembly-4-days.txt $@
 
 ## 3 days
 $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-3-days.txt $@

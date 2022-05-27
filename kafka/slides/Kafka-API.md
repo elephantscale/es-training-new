@@ -138,8 +138,8 @@ KafkaProducer < Integer, String > producer = new KafkaProducer<>(props);
 ```
 <!-- {"left" : 0, "top" : 1.29, "height" : 1.76, "width" : 10.25} -->
 
-*  **bootstrap.servers:** Specify the kafka brokers to connect to.
-    -Best practice, specify more than one broker to connect to, so there is no single point of failure
+* **bootstrap.servers:** Specify the kafka brokers to connect to.
+    - Best practice, specify more than one broker to connect to, so there is no single point of failure
 
 ```java
 props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "broker1:9092,broker2:9092");
@@ -229,7 +229,7 @@ Notes:
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------|--------|------------------------------------------------------|
 | acks = 0                            | - Producer doesn't wait for any acks from broker <br/> - Producer won't know of any errors                                        | High   | Low   No guarantee that broker received the message  |
 | acks = 1  <br/> (default in Kafka 2)  | - Broker will write the message to local log <br/> - Does not wait for replicas to complete                                       | Medium | Medium  Message is at least persisted on lead broker |
-| ack = all <br/> (default in kafka 3) | - Message is persisted on lead broker and in replicas <br/> - Lead broker will wait for in-sync replicas to acknowledge the write | Low    | High  Message is persisted in multiple brokers       |
+| acks = all <br/> (default in kafka 3) | - Message is persisted on lead broker and in replicas <br/> - Lead broker will wait for in-sync replicas to acknowledge the write | Low    | High  Message is persisted in multiple brokers       |
 
 <!-- {"left" : 0.25, "top" : 3.38, "height" : 4.61, "width" : 9.75, "columnwidth" : [1.61, 3.58, 1.45, 3.11]} -->
 
@@ -272,7 +272,6 @@ props.put(ConsumerConfig.GROUP_ID_CONFIG, "group1");
 props.put(ConsumerConfig.CLIENT_ID_CONFIG, "Simple Consumer");
 props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, IntegerDeSerializer.class.getName());
 props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
-
 
 KafkaConsumer < Integer, String > consumer = new KafkaConsumer<>(props);
 
@@ -860,7 +859,7 @@ Notes:
 |-------------------------------|-----------------------------------------------------------------------|---------------|
 | fetch.min.bytes               | Min. data to fetch.                                                   |               |
 | fetch.max.wait.ms             | Max. wait time                                                        | 500 ms        |
-| Session.timeout.ms            | Time after which consumer is deemed dead if it doesn't contact broker | 3 seconds     |
+| Session.timeout.ms            | Time after which consumer is deemed dead if it doesn't contact broker | 30 seconds     |
 | Heartbeat.interval.ms         | Intervals in which heartbeats are sent                                | 1 second      |
 | Auto.offset.reset             | Offset value to use when no committed offset exists                   | "latest"      |
 | Partition.assignment.strategy | Assign partitions by range or round-robin (next slide)                | RangeAssignor |

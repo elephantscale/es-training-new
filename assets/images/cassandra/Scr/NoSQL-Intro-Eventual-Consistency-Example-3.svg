@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="17 502 980 411" width="980" height="411">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-05-23 15:38:58 +0000</metadata>
+  <g id="Canvas_1" stroke="none" fill-opacity="1" fill="none" stroke-dasharray="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_9">
+        <path d="M 18 786.9346 L 18 620.0654 C 18 618.9608 18.89543 618.0654 20 618.0654 L 838.9212 618.0654 C 840.0258 618.0654 840.9212 617.16995 840.9212 616.0654 L 840.9212 555.77175 C 840.9212 554.6672 841.8166 553.77175 842.9212 553.77175 C 843.4458 553.77175 843.9494 553.9779 844.3235 554.3457 L 994.5499 702.074 C 995.3374 702.84845 995.348 704.1147 994.5736 704.9023 C 994.5657 704.9103 994.5578 704.9182 994.5499 704.926 L 844.3235 852.6543 C 843.5359 853.4287 842.2697 853.4181 841.4952 852.6306 C 841.1273 852.2565 840.9212 851.7529 840.9212 851.2282 L 840.9212 790.9346 C 840.9212 789.83 840.0258 788.9346 838.9212 788.9346 L 20 788.9346 C 18.89543 788.9346 18 788.0392 18 786.9346 Z" fill="#aa97fe"/>
+        <path d="M 18 786.9346 L 18 620.0654 C 18 618.9608 18.89543 618.0654 20 618.0654 L 838.9212 618.0654 C 840.0258 618.0654 840.9212 617.16995 840.9212 616.0654 L 840.9212 555.77175 C 840.9212 554.6672 841.8166 553.77175 842.9212 553.77175 C 843.4458 553.77175 843.9494 553.9779 844.3235 554.3457 L 994.5499 702.074 C 995.3374 702.84845 995.348 704.1147 994.5736 704.9023 C 994.5657 704.9103 994.5578 704.9182 994.5499 704.926 L 844.3235 852.6543 C 843.5359 853.4287 842.2697 853.4181 841.4952 852.6306 C 841.1273 852.2565 840.9212 851.7529 840.9212 851.2282 L 840.9212 790.9346 C 840.9212 789.83 840.0258 788.9346 838.9212 788.9346 L 20 788.9346 C 18.89543 788.9346 18 788.0392 18 786.9346 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <circle cx="700.6254" cy="703.5" r="46.5000743024382" fill="#a4f8fd"/>
+        <circle cx="700.6254" cy="703.5" r="46.5000743024382" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="447.9411" cy="703.5" r="46.5000743024382" fill="#a4f8fd"/>
+        <circle cx="447.9411" cy="703.5" r="46.5000743024382" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <circle cx="189.72112" cy="703.5" r="46.5000743024382" fill="#a4f8fd"/>
+        <circle cx="189.72112" cy="703.5" r="46.5000743024382" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(590.24456 507.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">What is the </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="89">value of X?</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(606.2211 809.5)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">X can be </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="89">10 or 20!</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(388.7419 532)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">X = 20</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(130.5219 532)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">X = 10</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
