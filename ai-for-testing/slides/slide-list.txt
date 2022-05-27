@@ -1,2 +1,9 @@
 About-AI-for-testing-Class.md
 Testing-intro.md
+../../machine-learning/generic/AI-brief-history.md
+../../machine-learning/generic/AI-Data.md
+../../machine-learning/generic/AI-vocabulary.md
+../../machine-learning/generic/Regressions-Linear.md
+../../machine-learning/generic/Regressions-Linear-Multi.md
+../../machine-learning/generic/Regression-Logistic.md
+../../machine-learning/generic/ML-vs-DL.md
