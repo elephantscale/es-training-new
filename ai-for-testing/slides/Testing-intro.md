@@ -616,3 +616,7 @@
 
 ---
 
+## Demo and Lab
+
+* Teachable Machine
+* https://github.com/elephantscale/cool-ML-demos/blob/main/image/teachable-machine.md
