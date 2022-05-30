@@ -7,3 +7,4 @@ Testing-intro.md
 ../../machine-learning/generic/Regressions-Linear-Multi.md
 ../../machine-learning/generic/Regression-Logistic.md
 ../../machine-learning/generic/ML-vs-DL.md
+Testim.md

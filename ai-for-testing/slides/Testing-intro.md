@@ -20,7 +20,7 @@
   * More expensive
 * Bug found after the software is released
   * Even more expensive
-* Found in production
+* Bugs found in production (horror!)
   * cost you your reputation and business.
 
 ---
