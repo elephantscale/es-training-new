@@ -221,7 +221,7 @@ Notes:
 
 ## Unsupervised Example: Google News
 
-<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="width:80%;float:right;">><!-- {"left" : 10.43, "top" : 2.77, "height" : 6.59, "width" : 6.56} -->
+<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="width:50%;float:right;"><!-- {"left" : 10.43, "top" : 2.77, "height" : 6.59, "width" : 6.56} -->
 
  * Google News algorithm automatically groups **related news stories**  into sections
 

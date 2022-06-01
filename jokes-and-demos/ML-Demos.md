@@ -9,6 +9,7 @@
 	- shows neural paths : http://scs.ryerson.ca/~aharley/vis/conv/flat.html
 - Google quick draw (fun!) - https://quickdraw.withgoogle.com/
 - Google mirror : https://experiments.withgoogle.com/collection/ai/move-mirror/view/mirror
+- Teachable machine : https://teachablemachine.withgoogle.com/
 
 
 
