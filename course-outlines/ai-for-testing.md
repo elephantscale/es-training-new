@@ -1,7 +1,7 @@
 # AI for Testing
 © Elephant Scale
 
-May 03, 2022
+June 01, 2022
 
 ## Overview
 
@@ -39,7 +39,7 @@ AI for Software Testing
 
 ## Course Outline:
 
-### Introduction
+### Introduction (2 hours)
 * AI-Initiatives
 * The Priority: Excellence
 * AI- Intelligence Types
@@ -48,13 +48,13 @@ AI for Software Testing
 * The Inception in Academics
 * AI - Importance & Applications
 
-### The Re-visit
+### The Re-visit (1 hour)
 * Learning Re-visited via AI
 * Teaching in the world of AI
 * Exploring AI for Self Development
 * AI In Academics Beyond Academics
 
-### Introduction to Machine Learning
+### Introduction to Machine Learning (1 hour)
 * What is Machine Learning?
 * Why Machine Learning?
 * Examples - Algorithms behind Machine Learning
@@ -64,7 +64,7 @@ AI for Software Testing
 * Example - Deep Learning Vs Machine Learning
 
 
-### Introduction to Data Science
+### Introduction to Data Science (12 hours)
 * What is Data Science?
 * Why Data Science?
 * Examples - Use Cases of Data Science
