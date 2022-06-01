@@ -611,42 +611,25 @@ import pandas as pd
 from pyspark.ml.feature import StringIndexer, OneHotEncoder
 
 df2_pd = pd.DataFrame({"id":[1,2,3,4,5,6,7],
-                       "status":['married', 'single', 'single',
-                                 'divorced', 'married','single', 'married' ]})
+            "status":['married', 'single', 'single', 'divorced', 'married','single', 'married' ]})
 df2_spark = spark.createDataFrame(df2_pd)
 
 # first String Indexer
 string_indexer = StringIndexer(inputCol="status", outputCol="statusIndex")
-model = string_indexer.fit(df2_spark)
-indexed = model.transform(df2_spark)
+indexed = string_indexer.fit(df2_spark).transform(df2_spark)
 
 # Then encoder
 encoder = OneHotEncoder(inputCol="statusIndex", outputCol="statusVector", dropLast=False)
-encoded = encoder.transform(indexed)
-encoded.show()
-
-print(encoded.toPandas()) # print pandas df
-
+encoded = encoder.fit(indexed).transform(indexed)
+print (encoded.toPandas())
 ```
 <!-- {"left" : 0.85, "top" : 2.5, "height" : 5.53, "width" : 14.85} -->
 
+<img src="../../assets/images/machine-learning/one-hot-encoding-3.png" style="width:45%;"/><!-- {"left" : 2.41, "top" : 2.73, "height" : 8.25, "width" : 12.68} -->
 
-
-
-Notes:
-
-
----
-
-## Hot Encoder Code (Python)
-
-
-<img src="../../assets/images/machine-learning/one-hot-encoding-3.png" style="max-width:70%;"/><!-- {"left" : 2.41, "top" : 2.73, "height" : 8.25, "width" : 12.68} -->
-
+<!-- TODO: Shiva -->
 
 Notes:
-
-
 
 ---
 

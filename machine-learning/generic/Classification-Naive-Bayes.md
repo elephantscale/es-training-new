@@ -68,7 +68,7 @@ Notes:
 <!-- {"left" : 3.1, "top" : 2.5, "height" : 5.5, "width" : 11.29} -->
 
 
-* **Question for class‫:‬**
+* **Question for class**
 
 * Are the input variables (weather / car) independent?
 
@@ -149,24 +149,24 @@ Notes:
 
 ---
 
-## Calculating Probabilities
+## Calculating OutcomeProbabilities
 
 ```text
                              count(class = 1)
-* P(class = 1 / go out )   = ------------------------------
-                             count (class = 1) + count (class = 0)
+* P(class = 1 / go out )   = -----------------
+                             total
+
+                                5
+                           = --------  = 50%
+                               10
 
                              count(class = 0)
-* P(class = 0 / stay home) = ------------------------------
-                             count (class = 1) + count (class = 0)
+* P(class = 0 / stay home) = ----------------
+                             total
 
                                 5
-* P(class = 1 / go-out)    = --------  = 50%
-                              5 + 5
-
-                                5
-* P(class = 0 / stay-home) = --------  = 50%
-                              5 + 5
+                           = --------  = 50%
+                               10
 ```
 <!-- {"left" : 0.85, "top" : 2.34, "height" : 4.04, "width" : 9.15} -->
 
@@ -181,7 +181,7 @@ Notes:
 
 ```text
                                   count(weather=sunny AND class=go-out)
-P(class=go-out | weather=sunny ) = ------------------------------------
+P(weather=sunny | class=go-out) = ------------------------------------
                                   count (class = go-out)
                                     4
                                 =  ----  = 0.8 = 80%
@@ -191,24 +191,24 @@ P(class=go-out | weather=sunny ) = ------------------------------------
 
 <img src="../../assets/images/machine-learning/naive-bayes-1.png" style="width:35%;float:right;" /> <!-- {"left" : 12.11, "top" : 3.13, "height" : 5.26, "width" : 5.1} -->
 
-* **How weather influences decision**
+* **Calculate for all weather conditions**
 
 ```text
-P (class = go-out | weather = sunny)    = 4 / 5 = 0.8
-P (class = go-out | weather = rainy)    = 1 / 5 = 0.2
-P (class = stay-home | weather = sunny) = 2 / 5 = 0.2
-P (class = stay-home | weather = rainy) = 3 / 5 = 0.6
+P (weather = sunny | class = go-out)    = 4 / 5 = 0.8
+P (weather = rainy | class = go-out)    = 1 / 5 = 0.2   (1 - above)
+P (weather = sunny | class = stay-home) = 2 / 5 = 0.4
+P (weather = rainy | class = stay-home) = 3 / 5 = 0.6   (1 - above)
 ```
 <!-- {"left" : 0.85, "top" : 4.33, "height" : 1.31, "width" : 8.74} -->
 
 
-* **How car influences decision**
+* **Calculate for all car conditions**
 
 ```text
- P (class = go-out | car = working)    = 4 / 5 = 0.8
- P (class = go-out | car = broken)     = 1 / 5 = 0.2
- P (class = stay-home | car = working) = 1 / 5 = 0.2
- P (class = stay-home | car = broken)  = 4 / 5 = 0.8
+ P (car = working | class = go-out)     = 4 / 5 = 0.8
+ P (car = broken  | class = go-out)     = 1 / 5 = 0.2   (1 - above)
+ P (car = working | class = stay-home)  = 1 / 5 = 0.2
+ P (car = broken  | class = stay-home)  = 4 / 5 = 0.8   (1 - above)
 ```
 <!-- {"left" : 0.85, "top" : 6.31, "height" : 1.33, "width" : 8.74} -->
 
@@ -275,7 +275,7 @@ Notes:
 
 * MAP = Maximum Probable Hypothesis
 
-```python
+```text
 If weather=sunny
 P(go-out)    = P (weather = sunny|class = go-out) * P (class = go-out)
 P(stay-home) = P (weather = sunny|class = stay-home) *
@@ -297,11 +297,12 @@ Notes:
 
 ## Making Predictions With Naïve Bayes Model
 
-```python
-What is the prediction if weather=sunny, car=working ?
-(we are plugging in probabilities we calculated before
+* What is the prediction if weather=sunny, car=working ?
 
-P(go-out)    = P (weather = sunny|class = go-out) *
+```text
+(we are plugging in probabilities we calculated before)
+
+P(go-out)    = P (weather = sunny | class = go-out) *
                P (car=working | class=go-out) *
                P (class = go-out)
              = 0.8 * 0.8 * 0.5
@@ -316,9 +317,9 @@ P(stay-home) = P (weather = sunny|class = stay-home) *
 P(go-out) 0.32 > P(stay-home) 0.04
 
 So we predict 'go-out'
-
-**So weather=sunny, car=working-->prediction=go-out**
 ```
+
+* **So weather=sunny, car=working --> prediction=go-out**
 <!-- {"left" : 0.85, "top" : 2.44, "height" : 7.39, "width" : 12.8} -->
 
 Notes:
@@ -396,9 +397,9 @@ Notes:
 
 * [http://tdlc.ucsd.edu/events/boot_camp_2009/tingfansvm.pdf](http://tdlc.ucsd.edu/events/boot_camp_2009/tingfansvm.pdf)
 
-Notes:
+* http://www-bcf.usc.edu/~gareth/ISL
 
-http://www-bcf.usc.edu/~gareth/ISL
+Notes:
 
 ---
 

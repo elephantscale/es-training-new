@@ -25,24 +25,26 @@ Notes:
 
 ---
 
-## Question for Audience
+## Name Some AI Powered Products / Services
 
- * Think of something you did today / this week that is AI powered?
+* Think of something you did today / this week that is AI powered?
 
 Notes:
 
 ---
-## Demo - Gmail AI Helper
 
-<img src="../../assets/images/deep-learning/3rd-party/Demo-1.png" alt="Demo-1.png" style="width:50%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
+## AI is Everywhere
 
-<img src="../../assets/images/deep-learning/3rd-party/Demo-2.png" alt="Demo-2.png" style="width:50%;"/><!-- {"left" : 3.18, "top" : 6.35, "height" : 4.77, "width" : 11.14} -->
+<img src="../../assets/images/generic/3rd-party/google-map-navigation-2.png" style="width:20%;float:right;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
 
+<img src="../../assets/images/logos/gmail_logo_2_small.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
+<img src="../../assets/images/logos/netflix-logo-1.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
+<img src="../../assets/images/logos/facebook-logo-1.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
+<img src="../../assets/images/logos/spotify-logo-1.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
+<img src="../../assets/images/logos/amazon-logo-1.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
 
-
-
-
-Notes:
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-1-amazon.png" style="width:35%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
+<img src="../../assets/images/machine-learning/3rd-party/alexa-1.jpg" style="width:34%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
 
 
 ---
