@@ -6,5 +6,6 @@ Testing-intro.md
 ../../machine-learning/generic/Regressions-Linear.md
 ../../machine-learning/generic/Regressions-Linear-Multi.md
 ../../machine-learning/generic/Regression-Logistic.md
+../../machine-learning/generic/Classification-Intro.md
 ../../machine-learning/generic/ML-vs-DL.md
 Testim.md
