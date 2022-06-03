@@ -6,6 +6,6 @@
 ## Course outline
 # ../scala.pdf
 
-About-Scala-Class.md
+About-Scala-Class-JPMC.md  About-Scala-Class.md
 Scala-Intro.md
 Scala-Getting-Started.md

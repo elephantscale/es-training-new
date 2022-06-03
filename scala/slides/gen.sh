@@ -8,8 +8,8 @@
 ##	./gen.sh  pptx pdf
 
 ## 3 days 
-(cd ../../course-outlines; pandoc scala.md  -o ../scala/scala.docx)
-(cd ../../course-outlines; pandoc scala.md  -o ../scala/scala.pdf)
+# (cd ../../course-outlines; pandoc scala.md  -o ../scala/scala.docx)
+# (cd ../../course-outlines; pandoc scala.md  -o ../scala/scala.pdf)
 
 
 ## 3 days
