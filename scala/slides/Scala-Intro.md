@@ -190,6 +190,109 @@ val point: Point = Point (10, 20)
 
 ---
 
+## Scala Features: Immutability
+
+* Immutability is a preferred paradigm in functional programming
+    - Eliminates lot of programming errors
+    - Facilitates distributed programming
+
+* Scala by default prefers immutability
+    - Most variables are created as `val` fields
+    - Immutable collections classes are preferred
+
+```scala
+val x = 10
+x = 20 // error!  can not reassign an immutable variable
+```
+
+* If collections are immutable, how do we change them?
+    - Usually we don't mutate existing collection; we create a new collection
+
+```scala
+val list1 = List("jane", "jon", "mary", "joe")
+val list2 = list1.filter(_.startsWith("j"))
+// list2 = List(jane, jon, joe)
+// list1 unchanged
+```
+
+---
+
+## Scala Features: Mutability
+
+* Though Scala emphasizes immutability, we can create mutable variables and collections
+
+* Scala makes us to do this **explicitly** so the intent is clear
+
+* Declare variables as `var`
+
+```scala
+var x = 10
+x = 20 // ok, vars can be changed
+```
+
+* Collections are explicitly declared mutable too
+
+```scala
+var capitals = Map ("US" -> "Washington", "France" -> "Paris")
+// capitals : scala.collection.immutable.Map[java.lang.String, java.lang.String]
+
+capitals += ("Japan" -> "Tokyo") // error, modifying immutable collection is not allowed
+```
+
+* Explicitly define a **`scala.collection.mutable`** collection
+
+```scala
+var capitals2 = scala.collection.mutable.Map("US" -> "Washington", "France" -> "Paris")
+
+capitals2("Japan") = "Tokyo" // add a new entry
+
+capitals2 
+// HashMap(France -> Paris, US -> Washington, Japan -> Tokyo):
+//                   scala.collection.mutable.Map[java.lang.String, java.lang.String]
+```
+
+---
+
+## Scala Features: Growing New Types
+
+* Say we need to deal with large integer numbers
+* We can define a new **`BigInt`**  type that behaves like native type
+* Java also allows creating new types, but they don't behave like native types
+
+```java
+// Java version
+import java.math.BigInteger
+BigInteger a = new BigInteger("10000000000");
+BigInteger b = new BigInteger("20000000000");
+BigInteger c = a + b;   // error!
+BigInteger c = a.add(b);  // ok.  c ==> 30000000000
+ 
+BigInteger factorial (BigInteger x) {
+    if (x == BigInteger.ZERO)
+        return BigInteger.ONE;
+    else
+        return x.multiply (factorial (x.subtract(BigInteger.ONE)));
+}
+factorial(new BigInteger ("100"));
+ ```
+
+```scala
+// Scala version
+val a = BigInt (10000000000)
+val b = BigInt (22000000000)
+val c = a + b    // perfect, just like a native type!
+// c: scala.math.BigInt = 30000000000
+
+def factorial (x: BigInt) : BigInt  = 
+    if (x == 0) 1 else x * factorial(x - 1)
+
+factorial (100)
+// val res1: BigInt = 9332621544394415268169923885626670049071596826438162146859296389521759999
+//  3229915608941463976156518286253697920827223758251185210916864000000000000000000000000
+```
+
+---
+
 ## Scala Features: Singleton Classes
 
 * **Singleton classes** are supported at language level, no need for kludegy fixes
@@ -241,19 +344,66 @@ Elvis elvis = Elvis.INSTANCE;
 
 * **Case classes** compact representation of classes, that are **immutable** and support **pattern matching**
 
-
 ```scala
-case class Fruit (name:String, color:String, price:Int)
+abstract class Fruit 
 
-val orange = Fruit ("Naval Orange", "Orange", 1)
-val greenApple = Fruit ("Apple", "Green", 2)
-val redApple  = Fruit ("Apple", "Red", 3)
-val banana = Fruit ("Yellow Banana", "Yellow", 4)
+case class Apple (color:String, price:Int) extends Fruit 
+case class Orange (color:String, price:Int)  extends Fruit
+case class Banana (color:String, price:Int)  extends Fruit
 
-// TODO: Write a match expression to select Apples
+def matchFruit (fruit: Fruit) = {
+    fruit match {
+        case Apple (_, _) => "Got an Apple"
+        case _            => "Got another fruit"
+    }
+}
 
+val orange = Orange ("Orange", 1)
+val greenApple = Apple ("Green", 2)
+val redApple  = Apple ("Red", 3)
+val banana = Banana ("Yellow", 4)
+
+matchFruit(orange)     // => Got another fruit
+matchFruit(greenApple) // => Got an Apple
+matchFruit(redApple)   // => Got an Apple
 ```
 <!-- {"left" : 0.85, "top" : 3.28, "height" : 2.61, "width" : 9.94} -->
+
+---
+
+## Akka Framework
+
+<img src="../../assets/images/logos/akka-logo-1.png" style="width:20%; float:right;"/> <!-- {"left" : 7.32, "top" : 1.09, "height" : 1.17, "width" : 2.84} -->
+
+<img src="../../assets/images/scala/akka-actor-graph-1.png" style="width:40%; float:right;clear:both;"/> <!-- {"left" : 7.32, "top" : 1.09, "height" : 1.17, "width" : 2.84} -->
+
+* Today, there are multiple CPUs and GPUs
+
+* But multi-thread programming is hard
+
+* Enter Akka
+    - Framework for building powerful reactive, concurrent, and distributed applications more easily
+    - Based on the notion of 'actors'
+    - Actors can send and receive message
+
+* [Akka.io](https://akka.io/)
+
+Notes:
+
+---
+
+## Scala Features: DSL (Domain Specific Language)
+
+* DSLs are easy to use languages for a specific domain
+
+* For example SQL is a DSL for relational data
+
+* Scala's flexibility allows us to create custom DSLs very easily
+
+* This is one of the reason [Apache Spark](https://spark.apache.org/) was written in Scala
+    - Spark used DSL capability to create a simple query language for Big Data analysis
+
+* Take a look at an example implementation of Lunar lander in 'Baysick' language [here](https://www.scala-lang.org/old/node/1403)
 
 ---
 
@@ -308,6 +458,26 @@ println(dateTime.dayOfWeek().getAsText(Locale.getDefault()))  // Prints "Sunday"
 * References: [1](https://www.javatpoint.com/history-of-scala)
 
 Notes:
+
+---
+
+## Scala Trend
+
+* Language #50 in 2008
+
+* Language #20 in 2015
+
+* Language #35 in 2021
+
+* What happened?
+
+1. Promoted by Martin Odersky, creator of Java generics
+
+2. Promoted by Spark
+
+3. Finding its  place as a high performance distributed / DSL programming language with Akka
+
+<img src="../../assets/images/scala/scala-trend-1.png" style="width:70%;"/> <!-- {"left" : 14.33, "top" : 1.6, "height" : 2.16, "width" : 2.87} -->
 
 ---
 
@@ -388,6 +558,8 @@ else if x == 0 then
 
 * Let's discuss some of your project needs and where Scala would be applicable
 
+* Back-end / Front-end / Distributed / Realtime
+
 Notes:
 
 ---
@@ -396,7 +568,7 @@ Notes:
 
 ---
 
-## Getting Scala Setup
+## Scala Setup
 
 * Recommended stack:
     - Scala 2.13
@@ -429,6 +601,7 @@ OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2, mixed mode, sharing)
 <!-- {"left" : 0.85, "top" : 3.21, "height" : 2.24, "width" : 15.38} -->
 
 <br/>
+
 * If you don't have JDK-11, follow instructions to your platform to setup JDK for your system
 
 ---
@@ -439,22 +612,22 @@ OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2, mixed mode, sharing)
 
 * [Scala 2 download page](https://www.scala-lang.org/download/scala2.html)
 
-* At this time of writing, the latest version of Scala is 2.13.7
+* At this time of writing, the latest version of Scala is 2.13.8
 
 * Here is how to set it up on command line system
 
 ```bash
-$   wget https://downloads.lightbend.com/scala/2.13.7/scala-2.13.7.tgz
-$   tar xvf scala-2.13.7.tgz
+$   wget https://downloads.lightbend.com/scala/2.13.8/scala-2.13.8.tgz
+$   tar xvf scala-2.13.8.tgz
 
 # Setup PATH variable
-$    export PATH=$(pwd)/scala-2.13.7/bin:$PATH
+$    export PATH=$(pwd)/scala-2.13.8/bin:$PATH
 
 # invoke scala
 $   scala
 
 # Sample output:
-#   Welcome to Scala 2.13.7 (OpenJDK 64-Bit Server VM, Java 11.0.11).
+#   Welcome to Scala 2.13.8 (OpenJDK 64-Bit Server VM, Java 11.0.11).
 #   Type in expressions for evaluation. Or try :help.
 
 #   scala> 
@@ -473,17 +646,39 @@ $   scala
 
 ---
 
-## Good References
+## Recommended Resources
 
 <img src="../../assets/images/books/programming-scala-3rd-edition-9781492077886.jpeg" style="width:20%;float:right;"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
 
+<img src="../../assets/images/books/scala-cookbook-v2.jpg" style="width:20%;float:right;clear:both"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
+
 * Books
+    - [Scala 3 book](https://docs.scala-lang.org/scala3/book/introduction.html) - Free online
     - [Programming Scala, 3rd edition](https://learning.oreilly.com/library/view/programming-scala-3rd/9781492077886/) - Learn the language
     - [Hands on Scala](https://www.handsonscala.com/) - Practical approach to Scala and [code on github](https://github.com/handsonscala/handsonscala)
 
 * Online
+    - [Scastie - Scala online playground](https://scastie.scala-lang.org/)
+    - [Scala cookbook](http://scalacookbook.com/) - Sample code you can use
     - [#ThisWeekInScala!](https://medium.com/disney-streaming/tagged/thisweekinscala) - great blog to keep up with Scala news
     - [Should I learn Scala](https://www.toptal.com/scala/why-should-i-learn-scala)
+
+---
+
+## Lab: Setting up Scala
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Setup a Scala development environment
+
+* **Approximate run time:**
+  - 20-30 mins
+
+* **Instructions:**
+  - Please complete Lab **1-INSTALL**
+
+Notes:
 
 ---
 

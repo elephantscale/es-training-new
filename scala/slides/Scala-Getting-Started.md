@@ -48,11 +48,11 @@ $   scala
 <br/>
 
 * You will see output like below (your output may vary based on your setup)
-    - Here we see we are using **scala 2.13.7** version running on **Open JDK 11**
+    - Here we see we are using **scala 2.13.8** version running on **Open JDK 11**
 
 ```text
 
-Welcome to Scala 2.13.7 (OpenJDK 64-Bit Server VM, Java 11.0.11).
+Welcome to Scala 2.13.8 (OpenJDK 64-Bit Server VM, Java 11.0.11).
 Type in expressions for evaluation. Or try :help.
 
 scala> 

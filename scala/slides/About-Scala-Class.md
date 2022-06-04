@@ -14,7 +14,7 @@
 
 ## About This Class
 
-<img src="../../assets/images/logos/scala-logo-1.png" style="width:35%;float:right;" /><!-- {"left": 13.58, "top": 2.14, "height": 1.79, "width": 3.36} --> 
+<img src="../../assets/images/logos/scala-logo-1.png" style="width:35%;float:right;" /><!-- {"left": 13.58, "top": 2.14, "height": 1.79, "width": 3.36} -->
 
 * A **practical approach to Scala language**
 
@@ -32,9 +32,9 @@ Notes:
 
 ---
 
-## Agenda 
+## Agenda
 
-<img src="../../assets/images/logos/scala-logo-1.png" style="width:25%;float:right;" /><!-- {"left": 13.58, "top": 2.14, "height": 1.79, "width": 3.36} --> 
+<img src="../../assets/images/logos/scala-logo-1.png" style="width:25%;float:right;" /><!-- {"left": 13.58, "top": 2.14, "height": 1.79, "width": 3.36} -->
 
 * Scala intro
     - Setup dev environment
@@ -100,11 +100,7 @@ Notes:
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 0.85, "top" : 5.47, "height" : 2.1, "width" : 2.38} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.25, "top" : 5.49, "height" : 2.03, "width" : 3.74} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 7.02, "top" : 5.47, "height" : 2.1, "width" : 2.38} -->
 
-
 Notes:
-
-
-
 
 ---
 
@@ -112,12 +108,16 @@ Notes:
 
 <img src="../../assets/images/books/programming-scala-3rd-edition-9781492077886.jpeg" style="width:20%;float:right;"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
 
+<img src="../../assets/images/books/scala-cookbook-v2.jpg" style="width:20%;float:right;clear:both"/> <!-- {"left" : 12.58, "top" : 1.89, "height" : 5.86, "width" : 4.47} -->
+
 * Books
+    - [Scala 3 book](https://docs.scala-lang.org/scala3/book/introduction.html) - Free online
     - [Programming Scala, 3rd edition](https://learning.oreilly.com/library/view/programming-scala-3rd/9781492077886/) - Learn the language
     - [Hands on Scala](https://www.handsonscala.com/) - Practical approach to Scala and [code on github](https://github.com/handsonscala/handsonscala)
 
 * Online
     - [Scastie - Scala online playground](https://scastie.scala-lang.org/)
+    - [Scala cookbook](http://scalacookbook.com/) - Sample code you can use
     - [#ThisWeekInScala!](https://medium.com/disney-streaming/tagged/thisweekinscala) - great blog to keep up with Scala news
     - [Should I learn Scala](https://www.toptal.com/scala/why-should-i-learn-scala)
 
