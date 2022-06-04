@@ -221,17 +221,17 @@ scala> Runtime.getRuntime.maxMemory
 * Installing Ammonite, just one executable
 
 ```bash
-$   curl -L https://github.com/lihaoyi/ammonite/releases/download/2.4.0/2.13-2.4.0-bootstrap > amm 
-$   chmod +x amm
+$   curl -L https://github.com/lihaoyi/ammonite/releases/download/2.5.4/2.13-2.5.4-bootstrap > ~/amm 
+$   chmod +x ~/amm
 ```
 <!-- {"left" : 0.85, "top" : 4.19, "height" : 0.66, "width" : 13.23} -->
 
 * Start `Ammonite` and experiment
 
 ```bash
-$   ./amm
+$   ~/amm
 Loading...
-Welcome to the Ammonite Repl 2.4.0 (Scala 2.13.6 Java 11.0.11)
+Welcome to the Ammonite Repl 2.5.4 (Scala 2.13.6 Java 11.0.11)
 ```
 <!-- {"left" : 0.85, "top" : 5.56, "height" : 1.3, "width" : 12.55} -->
 
@@ -262,7 +262,7 @@ println (1)
 * On a terminal start ammonite in watch mode
 
 ```bash
-$   ./amm   --watch a.scala
+$   ~/amm   --watch a.scala
 Compiling /home/sujee/tmp/a.scala
 1
 ```
@@ -278,7 +278,7 @@ println (2)
 * And watch the ammonite terminal output; it will print the updated value
 
 ```bash
-$   ./amm   --watch a.scala
+$   ~/amm   --watch a.scala
 Compiling /home/sujee/tmp/a.scala
 1
 Compiling /home/sujee/tmp/a.scala
@@ -393,12 +393,13 @@ $   scala  CurrentTime
 * Simple way to install SBT is to download the 'universal package (zip)'
 
 ```bash
-$   wget https://github.com/sbt/sbt/releases/download/v1.5.5/sbt-1.5.5.zip
-$   unzip sbt-1.5.5.zip 
+$   cd
+$   wget https://github.com/sbt/sbt/releases/download/v1.6.2/sbt-1.6.2.zip
+$   unzip sbt-1.6.2.zip 
 # this will create 'sbt/' directory
 
 # now you can invoke sbt as follows
-$   ./sbt/bin/sbt
+$   ~/sbt/bin/sbt
 # or
 $   PATH/TO/SBT/bin/sbt
 
@@ -432,14 +433,17 @@ project_dir
 
 ---
 
-## Working with SBT (Mini Lab)
+## Lab: Working with SBT
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * We have a very simple SBT project here : **`03-sbt`**
 
 * Inspect the file structure
 
-<img src="../../assets/images/scala/sbt-1.png" style="width:60%;" /><!-- {"left" : 2.82, "top" : 3.64, "height" : 6.99, "width" : 11.86} -->
+* Follow instructions in the next few slides
 
+<img src="../../assets/images/scala/sbt-1.png" style="width:60%;" /><!-- {"left" : 2.82, "top" : 3.64, "height" : 6.99, "width" : 11.86} -->
 
 ---
 
@@ -452,14 +456,14 @@ project_dir
 $  cd ~/scala-labs/03-sbt
 
 # invoke sbt
-$   sbt  # or   /PATH/TO/SBT/bin/sbt
+$   sbt  # or   ~/sbt/bin/sbt  or /PATH/TO/sbt/bin/sbt
 ```
 <!-- {"left" : 0.85, "top" : 2.55, "height" : 1.24, "width" : 4.82} -->
 
 * You may see output like this
 
 ```console
-[info] welcome to sbt 1.5.5 (Ubuntu Java 11.0.11)
+[info] welcome to sbt 1.6.2 (Ubuntu Java 11.0.11)
 [info] loading project definition from /home/sujee/work/ElephantScale/scala-labs/03-sbt/project
 [info] loading settings for project root-03-sbt from build.sbt ...
 [info] set current project to HelloApp (in build file:/home/sujee/work/ElephantScale/scala-labs/03-sbt/)
@@ -517,7 +521,7 @@ sbt:HelloApp> runMain example.Hello  param1   param2
 
 ---
 
-## Continuos SBT
+## Continuous  SBT
 
 * Starting SBT for every time, might have high overhead.  We can minimize this by running SBT in continuos mode
 
