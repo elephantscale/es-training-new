@@ -6,7 +6,7 @@ May 30, 2022
 
 ## Overview
 
-* Whether you’re working in a large corporation, a small company or even as a freelancer, the key to success is great communication. 
+* Whether you're working in a large corporation, a small company or even as a freelancer, the key to success is great communication. 
 
 * Our workshop in communication skills allows you to build and refine your skills at communication and helps you to improve and perfect your interpersonal and presentation skills. 
 

@@ -1252,7 +1252,7 @@ One of the great outcomes of Spring Boot is that it almost eliminates the need t
 
 ---
 
-## Let’s Get Started with Spring Boot
+## Let's Get Started with Spring Boot
 
 
  * Using the Spring Boot CLI as a command-line tool
@@ -2739,7 +2739,7 @@ For a given microservice, an RDBMS like MySQL may be selected as a backing store
 
 ---
 
-## Change the Use Case for Tx’s with Microservices
+## Change the Use Case for Tx's with Microservices
 
 
  * Eventual consistency is a better option than distributed transactions that span across multiple microservices.
@@ -2757,7 +2757,7 @@ Now consider the scenario where we are creating customer profiles in a NoSQL dat
 
 ---
 
-## Distributed Tx’s
+## Distributed Tx's
 
 
 ![](../../assets/images/microservices/Developing-Microservices-with-Spring-Boot-Distributed-Tx-s-66.png)
@@ -4445,7 +4445,7 @@ The reference data microservice will write to the data grid, whereas the proxy l
 
 ---
 
-## UI’s and Web Apps
+## UI's and Web Apps
 
 
 ![](../../assets/images/microservices/Developing-Microservices-with-Spring-Boot-UI-s-and-Web-Apps-113.png)
@@ -4718,7 +4718,7 @@ Notes:
 
 ---
 
-## 5 - Reviewing BrownField’s PSS Implementation
+## 5 - Reviewing BrownField's PSS Implementation
 
 
  * Each microservice exposes a set of REST/JSON endpoints for accessing business capabilities
@@ -4799,7 +4799,7 @@ API Gateways
 
 ---
 
-## Reviewing BrownField’s PSS Implementation
+## Reviewing BrownField's PSS Implementation
 
 
  * Each microservice exposes a set of REST/JSON endpoints for accessing business capabilities
