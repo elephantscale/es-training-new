@@ -9,7 +9,8 @@
 About-Scala-Class-JPMC.md  About-Scala-Class.md
 Scala-Intro.md
 Scala-Getting-Started.md
+Scala-Types.md
 
 ## extra
-docs/Scala-Power.pdf
-docs/ScalaByExample.pdf
+../docs/Scala-Power.pdf
+../docs/ScalaByExample.pdf
