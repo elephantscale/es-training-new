@@ -395,6 +395,8 @@ val state = "California"
 
 // notice the 's' at the beginning of string
 print (s"Full address is : $street, $city, $state" ) 
+// much better than
+print (street + ", " + city + ", " + state)
 
 // enclose expressions within {}
 println(s"2 + 2 = ${2 + 2}")   // prints "2 + 2 = 4"
@@ -406,6 +408,9 @@ println (s"sqrt of 2 is ${math.sqrt(2)}") // prints "sqrt of 2 is 1.414213562373
 ## String Operations
 
 ```scala
+// concat strings
+> "Hello" + " World"  // ==>  "Hello World"
+
 // size / length
 > "Hello World".length  // ==>  Int = 11
 
