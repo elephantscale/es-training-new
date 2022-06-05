@@ -34,7 +34,7 @@ Notes:
 
 * Matchable has two important subtypes: `AnyVal` and `AnyRef`
 
-<img src="../../assets/images/scala/type-hierarchy.png" style="width:65%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/scala/type-hierarchy.png" style="width:62%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 
@@ -44,7 +44,7 @@ Notes:
 
 * **`Unit`** is a value type which carries no meaningful information (like void)
 
-<img src="../../assets/images/scala/type-hierarchy.png" style="width:75%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/scala/type-hierarchy.png" style="width:70%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 ---
 

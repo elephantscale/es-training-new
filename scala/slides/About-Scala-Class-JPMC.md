@@ -79,8 +79,8 @@ Notes:
 
 * Hands-on (learn by doing)
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png"  style="width:45%;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
-<img src="../../assets/images/scala/after-class-scala.png"  style="width:35%;"/><!-- {"left" : 1.3, "top" : 1.69, "height" : 6.26, "width" : 7.66} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png"  style="width:42%;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
+<img src="../../assets/images/scala/after-class-scala.png"  style="width:33%;"/><!-- {"left" : 1.3, "top" : 1.69, "height" : 6.26, "width" : 7.66} -->
 
 Notes:
 
