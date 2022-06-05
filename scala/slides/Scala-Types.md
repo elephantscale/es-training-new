@@ -141,7 +141,7 @@ a + b
 * **`var`**: Defines a variable
 * **`val`**: Defines a constant (immutable/read-only)
 * Type is optional—Scala infers it if not supplied
-    - Compile time checking, generally works well 
+    - Compile time checking, generally works well
 
 ```scala
 val x = 10   // Constant  (Integer type)
@@ -164,9 +164,11 @@ val n: Int = 1.1
 
 Notes:
 
-Scala supports type inference. 
+Scala supports type inference.
+
 Scala has a built-in type inference mechanism which allows the programmer to omit certain type annotations. It is, for instance, often not necessary in Scala to specify the type of a variable, since the compiler can deduce the type from the initialization expression of the variable. Also return types of methods can often be omitted since they correspond to the type of the body, which gets inferred by the compiler.
-[Scala Tutorial: http://docs.scala-lang.org/tutorials/tour/local-type-inference.html]
+
+[Scala Tutorial](http://docs.scala-lang.org/tutorials/tour/local-type-inference.html)
 
 ---
 
@@ -234,18 +236,18 @@ Notes:
      - numbers ranging from 1 to 10
 
 ```scala
-scala> val bi: BigInt = 1
+> val bi: BigInt = 1
 bi: BigInt = 1
 
-scala> bi + 2  // Same as bi.+(2)
+> bi + 2  // Same as bi.+(2)
 res14: scala.math.BigInt = 3
 
-scala> 1 to 10  // We'll work with collections and ranges soon
+> 1 to 10  // We'll work with collections and ranges soon
 res15: scala.collection.immutable.Range.Inclusive = Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 ```
 <!-- {"left" : 0, "top" : 5.72, "height" : 1.73, "width" : 10.25} -->
 
-Notes: 
+Notes:
 
 Since everything is an object in Scala, numbers actually have methods defined on them.
 Such as the method named "+"
@@ -255,9 +257,11 @@ This allows you to say 5 + 3 instead of (5).+(3)
 Scala allows you to call any method with one explicit parameter using a shorthand notation.
 E.g., given a variable "a" of a type that supports a method "meth1" that takes a single parameter b, you would normally call it as:
 a.meth1(b)
+
 However, with the shorthand notation, you can call it in the same way that operators are used:
 a meth1 b
-This gives a LOT of power to create new types with their own operators. 
+This gives a LOT of power to create new types with their own operators.
+
 Very useful, but take care not to make an unintelligible mess; have pity on your future coders and maintainers!
 scala.math.BigInt is part of the standard Scala library, and is designed to hold large integer values.
 
@@ -339,26 +343,26 @@ Notes:
     - More verbose
 
 ```scala
-scala> val a = 10  // implicit Integer, the compiler infers the type 
+> val a = 10  // implicit Integer, the compiler infers the type 
 val a: Int = 10
 
 
-scala> val a: Integer = 10 //Explicitly Specified
+> val a: Integer = 10 //Explicitly Specified
 val a: Int = 10
 
 
-scala> val b = 4.5 // Double
+> val b = 4.5 // Double
 val b: Double = 4.5
 
-scala> val b: Double = 4 // Forced to be a Double
+> val b: Double = 4 // Forced to be a Double
 val b: Double = 4.0
 
-scala> val s = "hi" // String type (Implicit)
-scala> val s: String = "hi" // Explicit definition
+> val s = "hi" // String type (Implicit)
+> val s: String = "hi" // Explicit definition
 val s: String = hi
 
-scala> val nums = List(1, 2, 3) // Implicit
-scala> val nums:List[Int] = List(1, 2, 3)  // Explicit
+> val nums = List(1, 2, 3) // Implicit
+> val nums:List[Int] = List(1, 2, 3)  // Explicit
 val nums: List[Int] = List(1, 2, 3)
 ```
 <!-- {"left" : 0, "top" : 1.28, "height" : 4.08, "width" : 9.48} -->
@@ -399,36 +403,73 @@ println (s"sqrt of 2 is ${math.sqrt(2)}") // prints "sqrt of 2 is 1.414213562373
 
 ---
 
+## String Operations
+
+```scala
+// size / length
+> "Hello World".length  // ==>  Int = 11
+
+// String is sequence of characters.  index start at 0
+> "Hello World".charAt(1)  // ==> Char = 'e'
+
+
+// substrings
+>  "Hello World".slice(1,4)  // ==> String = "ell"
+
+// string comparison
+> "Hello World" == "Hi" // ==> Boolean = False
+> "Hello World".equals("Hello World") // ==> Boolean: True
+
+// search / IndexOf
+> "Hello World".indexOf("o")  // ==> Int = 4
+> "Hello World".lastIndexOf("o") // ==> Int = 7
+> "Hello World".indexOf("z")  // ==> Int = -1
+> "Hello World".startsWith("Hell") // ==> Boolean = true
+> "Hello World".endsWith("World") // ==> Boolean = true
+
+// manipulation
+> "   Hello World  ".trim  // ==> String = "Hello World"
+> "Hello World".reverse  // ==> String = "dlroW olleH"
+> "Hello World".toUpperCase  // => String = "HELLO WORLD"
+
+// split
+> "Hello world goodbye world".split(" ") //  Array(Hello, world, goodbye, world)
+// split using regex (\\s is for white space - space / tab / newline)
+> "Hello world\tgoodbye   world".split("\\s+")  // Array(Hello, world, goodbye, world)
+```
+
+---
+
 ## Number Formatting
 
 * Thousands separator
 
 ```scala
-scala> val formatter = java.text.NumberFormat.getIntegerInstance
+> val formatter = java.text.NumberFormat.getIntegerInstance
 
-scala> formatter.format(10000)
+> formatter.format(10000)
 res0: String = 10,000
 
-scala> formatter.format(1000000)
+> formatter.format(1000000)
 res1: String = 1,000,000
 ```
 
 * Formatting floats
 
 ```scala
-scala> val pi = scala.math.Pi
-scala> pi
+> val pi = scala.math.Pi
+> pi
 val pi: Double = 3.141592653589793
 
-scala> println ("Nicely printed PI: %.2f".format(pi))
+> println ("Nicely printed PI: %.2f".format(pi))
 Nicely printed PI: 3.14
 
 
-scala> println ("Nicely printed PI: %06.2f".format(pi))
+> println ("Nicely printed PI: %06.2f".format(pi))
 Nicely printed PI: 003.14
 
 // comma (,) and period (.) for formatting
-scala> "%,.2f".format(123456.789)
+> "%,.2f".format(123456.789)
 val res2: String = 123,456.79
 ```
 
@@ -438,7 +479,14 @@ val res2: String = 123,456.79
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-* Define a few variables
+* **Overview**
+    - Work with variables
+
+* **Duration**
+    - 15 mins
+
+* **Instructions**
+    - Try the instructions below
 
 ```scala
 val city = "New York"
@@ -450,55 +498,108 @@ val temp_in_F = 42.5
 // "New York, NY has population of 5,000,000 and the current temperature is 5.8' C"
 
 // Hint: formula to convert F --> C is
-//  C = ( F -32) * 5/9
-
-
----
-
-# Tuples
+//  C = ( F - 32) * 5/9
+```
 
 ---
 
-## Pairs and Other Tuples
+## Tuples
 
+* Tuples allow us to store a fixed number of items together
 
- * Tuples combine a fixed number of items together
+* Items in a tuple can be of **different types** (this is different from Arrays / Lists ..etc)
 
-     - E.g., a pair combines two items
-
-     - Items can be of different types
-
-     - Access them via notation: ._n (n is the 1-based index) (1 <= n <= 22)
-
-```text
+```scala
 > val pair = ("apple", 4)
 pair: (String, Int) = (apple,4)
 
+// access tuple elements by using indexing like _n
+// indexes start from 1 (different than other indexes)
 > pair._1
-res149: String = apple
+String = apple
 
-> println(pair._2)
-4
+> pair._2
+Int = 4
 
-> val wordCounts = Array(("apple",3), ("pear",2), ("grape",1))
-wordCounts: Array[(String, Int)] = Array((apple,3), (pear,2), (grape,1))
+// Person (name, age, weight)
+> val john = ("John", 30, 230.5)
+> val jane = ("Jane", 28, 180.0)
+> val mark = ("Mark", 50, 210.7)
 
-> wordCounts(0)._1
-res152: String = apple
+> val team = Array (john, jane, mark)
 
-> val edge = (1L,2L, 7)      // A triple
-edge: (Long, Long, Int) = (1,2,7)
+> team(1)
+(String, Int, Double) = (Jane,28,180.0)
 
+> team(1)._1
+String = Jane
 ```
-<!-- {"left" : 0, "top" : 3.51, "height" : 4.2, "width" : 10.25} -->
 
-Notes: 
+Notes:
 
 Tuple is a class containing miscellaneous collection of elements. 
-Name of the tuple class will be of the form TupleN where n is the number of items in the tuple. getClass method returns the name of the tuple. 
+Name of the tuple class will be of the form TupleN where n is the number of items in the tuple. getClass method returns the name of the tuple.
+
 You can have anywhere from 2 to 22 items in a tuple.
 What's the difference between a list and a tuple? A tuple can contain any type, whereas a list should have only one type. 
 
+---
 
+## Tuples
 
+* Tuples are great way to return multiple things from functions
 
+```scala
+def getPersonInfo() = {
+    // name, age, weight
+    ("John", 30, 205.7f)
+}
+
+val p = getPersonInfo()
+// Tuple preserves the types of objects in it
+val name = p._1 // type String
+val age = p._2 // type Int
+val weight = p._3 // type Float
+```
+
+* This avoids kludgy workarounds from Java
+
+```java
+import java.util.Arrays;
+
+// return a List of Objects
+public List<Object> getPersonInfo()
+{
+    return Arrays.asList("John", 30, 205.7f);
+}
+
+List<Object> personDetails = getPersonInfo();
+// now we have to convert the types explicitly
+String name = (String) personDetails.get(0); 
+float weight = (float) personDetails.get(2); 
+```
+
+---
+
+## Recommended References
+
+<img src="../../assets/images/generic/3rd-party/reference-books-2.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* [A first look at types](https://docs.scala-lang.org/scala3/book/first-look-at-types.html) from [Scala 3 book](https://docs.scala-lang.org/scala3/book/introduction.html)
+
+* [A tour of Scala](https://docs.scala-lang.org/tour/tour-of-scala.html)
+
+* [Scala 2 Type Classes 101: Introduction](https://alvinalexander.com/scala/fp-book/type-classes-101-introduction/)
+
+* [Scala String Method with Syntax and Method](https://data-flair.training/blogs/scala-string-method/)
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
