@@ -12,7 +12,8 @@ Scala-Getting-Started.md
 Scala-Types.md
 Scala-Collections.md
 Scala-Control-and-Functions.md
-#Scala-Functional-Programming.md
+Scala-Functional-Programming.md
+
 #Scala-Object-Oriented.md
 
 ## extra

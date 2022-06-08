@@ -538,8 +538,6 @@ print (upper("hi"))
 
 ---
 
-
-
 ## Higher Order Functions
 
 * **Higher order functions** take other functions as parameters or return a function as a result
@@ -588,6 +586,56 @@ promotion ("Dwight Shrute", 70000, decentRaise)
 ```
 
 * Go ahead and try it out!  🏋️
+
+---
+
+## Pure Functions
+
+* In [Functional Programming, Simplified](https://alvinalexander.com/scala/functional-programming-simplified-book), Alvin Alexander defines a pure function like this:
+    - The function’s output depends only on its input variables
+    - It doesn’t mutate any hidden state
+    - It doesn’t have any "back doors": It doesn’t read data from the outside world (including the console, web services, databases, files, etc.), or write data to the outside world
+
+* Any time you call a pure function with the same input value(s), you’ll always get the same result
+
+* Some examples of pure functions
+    - max, min, abs
+
+* Examples of impure functions:
+    - getTimeOfDay(),  getTodaysDate()
+    - Every time you call these functions, the results are not the same
+
+---
+
+## Practical Programming
+
+* Scala encourages and greatly simplifies writing pure functions
+
+* How ever to solve real-world problems, we need impure functions too
+
+* So the best practice is
+    - break up huge functions into smaller pure/impure functions
+    - This makes the code more readable / maintainable
+    - Also makes it easy to test
+
+```text
+// not easy to test, as the output depends on current date
+def calculatePayForDay() {
+    date = getDate() // gets current date
+    salary = // does some calculation based on the day (may be weekends are time and a half!)
+}
+
+break this into 
+
+// this function is easily testable for various dates
+// and this is a 'purer' function than before
+def calculatePayForDay (day) {
+    // do your calculation
+}
+
+and call it as
+// we get the date out of the function
+calculatePayForDay (getDate())
 
 ---
 
