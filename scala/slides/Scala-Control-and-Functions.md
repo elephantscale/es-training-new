@@ -214,6 +214,30 @@ month match {
 }
 ```
 
+```java
+// java switch equivalent
+int month = 1;
+
+switch (month) {
+    case 1 : 
+        System.out.println("January");
+        break;
+    case 2:
+        System.out.println("Feburary");
+        break;
+    // ...
+    default:
+        System.out.println("Unknown Month");
+        break;
+}
+```
+
+* Go ahead and try it out!  🏋️
+
+---
+
+## Match Expressions Have Value!
+
 * **Match expressions can be assigned to a variable** as well
 
 ```scala
@@ -225,6 +249,26 @@ val monthName = month match {
     //...
     case _ => "Invalid month" // default
 }
+```
+
+```java
+// java equivalent
+// switch statement has no value and can not be assigned to a variable
+int month = 8;
+String monthName;
+
+switch (month) {
+    case 1:  
+        monthName = "January";
+        break;
+    case 2:  
+        monthName = "February";
+        break;
+    default:
+        monthName = "Invalid month";
+        break;
+}
+System.out.println (monthName)
 ```
 
 * Go ahead and try it out!  🏋️
@@ -319,6 +363,30 @@ catch {
 ---
 
 # Functions
+
+<img src="../../assets/images/python/User-Functions.png" style="width:20%;"/><!-- {"left" : 3.19, "top" : 1.78, "height" : 3.31, "width" : 3.09} -->
+
+---
+
+## Functions are First Class Objects
+
+<img src="../../assets/images/python/User-Functions.png" style="width:20%;float:right;"/><!-- {"left" : 3.19, "top" : 1.78, "height" : 3.31, "width" : 3.09} -->
+
+* In Scala, functions are first class objects
+
+* Functions can:
+
+    - Be assigned to a variable
+
+    - Passed as arguments to other functions
+
+    - Set as members of a class.
+
+    - Used inside of Collections
+
+* This is NOT like Java
+
+    - But it is like JavaScript and some other languages.
 
 ---
 
@@ -426,6 +494,36 @@ repeatString (str="x") // named parameter
 
 ---
 
+## Anonymous Functions
+
+* Functions do not need a name!
+
+* No need for `def` keyword
+
+```scala
+// function doesn't have a name!
+> val sayHI = (name : String) => println ("Hi " + name)
+val sayHI: String => Unit = $Lambda$1420/0x0000000840743040@4479447c
+
+> sayHI ("John")
+"Hi John"
+```
+
+* Multiline requires braces
+
+```scala
+> val sayHI = (str : String) => {
+    val upperStr = str.toUpperCase
+    println ("Hi " + upperStr)
+}
+
+sayHI("Jon")
+```
+
+* Go ahead and try it out!  🏋️
+
+---
+
 ## Functions are Objects!
 
 * In Scala every thing is an object, including functions!  So we can pass them around like objects
@@ -440,6 +538,8 @@ print (upper("hi"))
 
 ---
 
+
+
 ## Higher Order Functions
 
 * **Higher order functions** take other functions as parameters or return a function as a result
@@ -447,6 +547,8 @@ print (upper("hi"))
 * This is possible because in Scala functions are objects  and first class values!
 
 ```scala
+
+// Anonymous function
 val upper = (str: String) => str.toUpperCase
 
 val names = List ("michael", "jim", "dwight")
