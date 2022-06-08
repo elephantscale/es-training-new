@@ -113,11 +113,13 @@ Notes:
 
 * Books
     - [Scala 3 book](https://docs.scala-lang.org/scala3/book/introduction.html) - Free online
+    - [Scala 2 book](https://docs.scala-lang.org/overviews/scala-book/introduction.html) - Free online
     - [Programming Scala, 3rd edition](https://learning.oreilly.com/library/view/programming-scala-3rd/9781492077886/) - Learn the language
     - [Hands on Scala](https://www.handsonscala.com/) - Practical approach to Scala and [code on github](https://github.com/handsonscala/handsonscala)
 
 * Online
     - [Scastie - Scala online playground](https://scastie.scala-lang.org/)
+    - [Tour of scala](https://docs.scala-lang.org/tour/tour-of-scala.html)
     - [Scala cookbook](http://scalacookbook.com/) - Sample code you can use
     - [#ThisWeekInScala!](https://medium.com/disney-streaming/tagged/thisweekinscala) - great blog to keep up with Scala news
     - [Should I learn Scala](https://www.toptal.com/scala/why-should-i-learn-scala)
