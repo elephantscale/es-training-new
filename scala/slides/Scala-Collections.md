@@ -87,13 +87,25 @@ s2.type = HashSet(1, 2, 3, 4, 5)
 
 ---
 
+## Mini Labs
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* In the next section, we will look at each collection type
+
+* As we examine each collection, please complete the mini-lab for that collection
+
+* Follow instructions from **Collections** lab
+
+---
+
 ## Array
 
 * Mutable, indexed collection
 
-* Array's contents can be changed
+* Array size is fixed, It has to be set at the declaration time, can't be changed later
 
-* Array size has to be set at the declaration time, can't be changed later (fixed!)
+* Array's contents can be updated though
 
 * Arrays are implemented on JVM level, meaning that they are the most efficient way to store sequences of objects - no extra memory overhead
 

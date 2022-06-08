@@ -118,7 +118,7 @@ scala> val z = 100000000000L
 val z: Long = 100000000000
 
 // BigInteger for large numbers
-scala> val b = BigInt(1000000000)
+scala> val b = BigInt("1000000000")
 val b: scala.math.BigInt = 1000000000
 ```
 <!-- {"left" : 0.85, "top" : 1.98, "height" : 8.93, "width" : 8.72} -->
@@ -205,6 +205,21 @@ scala> Runtime.getRuntime.maxMemory
 477626368
 ```
 <!-- {"left" : 0.85, "top" : 3.46, "height" : 3.69, "width" : 10.52} -->
+
+---
+
+## Lab: Working With REPL
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview**
+    - Work with collections
+
+* **Duration**
+    - 15 mins
+
+* **Instructions**
+    - **REPL-1** lab
 
 ---
 
@@ -311,7 +326,7 @@ object HelloWorld extends App {
 * Compile
 
 ```bash
-$   scalac  HelloWorld.java
+$   scalac  HelloWorld.scala
 ```
 <!-- {"left" : 0.85, "top" : 6.12, "height" : 0.57, "width" : 5.28} -->
 
