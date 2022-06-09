@@ -1,7 +1,7 @@
 # Functional Programming in Scala
 
 <img src="../../assets/images/logos/scala-logo-1.png" style="width:35%;"/><!-- {"left" : 6.49, "top" : 7.66, "height" : 2.07, "width" : 4.52} -->
-<img src="../../assets/images/scala/functional-programming-lambda-1.png" style="width:25%;"/><!-- {"left" : 6.49, "top" : 7.66, "height" : 2.07, "width" : 4.52} -->
+<img src="../../assets/images/scala/functional-programming-lambda-1.png" style="width:22%;"/><!-- {"left" : 6.49, "top" : 7.66, "height" : 2.07, "width" : 4.52} -->
 
 ---
 
