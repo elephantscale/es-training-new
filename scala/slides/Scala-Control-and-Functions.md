@@ -390,7 +390,7 @@ catch {
 
 ---
 
-## Functions
+## Functions (Try It!)
 
 * A Scala function definition is like this
 
@@ -398,22 +398,50 @@ catch {
 def functionName ([list of parameters]) : [return type]
 ```
 
+* Let's do a simple `max` function
+
+* Java version
+
+```java
+int max (int a, int b) {
+    if (a > b)
+       return a;  // must return explicity
+    else
+       return b;  // must return explicity
+}
+int m = max (10, 20);
+```
+
+* Scala version (compare the syntax against Java version)
+
 ```scala
 // Specify function parameters  types (a : Int)
 // Also specify return type (: Int)
-
+// return keyword is optional, will return the 'last evaluated expression'
 def max (a : Int,  b: Int) : Int = {
     if (a > b) a
     else b
 }
-
-max(10, 20)
-max(-1, 0)
+val m = max(10, 20)
 ```
 
-```scala
-// if a function does not return anything, make it Unit
+---
 
+## Functions That Don't Return Anything  (VOID) (Try It!)
+
+* Java version
+
+```java
+// return type is void
+void printIt (Object obj) {
+    System.out.println (obj)
+}
+```
+
+* Scala version
+
+```scala
+// return type is Unit
 def printIt (x : Any) : Unit = {
     println (x)
 }
@@ -426,9 +454,9 @@ printIt ("hello world")
 
 ---
 
-## Functions
+## Functions (Try It!)
 
-* Recursive function
+* Here is a classic Fibonacci function, implemented as recursive.  Try it and improve it.
 
 ```scala
 def fib (x : Int) : Int = {
@@ -466,7 +494,7 @@ def fib (x : BigInt) : BigInt = {
 
 ---
 
-## Named and Default Parameters
+## Named and Default Parameters (Try It!)
 
 * Scala functions support default arguments to functions
 
@@ -494,7 +522,7 @@ repeatString (str="x") // named parameter
 
 ---
 
-## Anonymous Functions
+## Anonymous Functions  (Try It!)
 
 * Functions do not need a name!
 
@@ -524,7 +552,7 @@ sayHI("Jon")
 
 ---
 
-## Functions are Objects!
+## Functions are Objects! (Try It!)
 
 * In Scala every thing is an object, including functions!  So we can pass them around like objects
 
@@ -538,7 +566,7 @@ print (upper("hi"))
 
 ---
 
-## Higher Order Functions
+## Higher Order Functions (Try It!)
 
 * **Higher order functions** take other functions as parameters or return a function as a result
 
@@ -561,7 +589,7 @@ names.map(upper)  // List(MICHAEL, JIM, DWIGHT)
 
 ---
 
-## Functions that Take Functions
+## Functions that Take Functions (Try It!)
 
 ```scala
 // 5%

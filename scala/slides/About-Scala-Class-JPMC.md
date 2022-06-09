@@ -119,6 +119,7 @@ Notes:
 
 * Online
     - [Scastie - Scala online playground](https://scastie.scala-lang.org/)
+    - [Effective Scala](https://twitter.github.io/effectivescala/) - Excellent best practices from Twitter.
     - [Tour of scala](https://docs.scala-lang.org/tour/tour-of-scala.html)
     - [Scala cookbook](http://scalacookbook.com/) - Sample code you can use
     - [#ThisWeekInScala!](https://medium.com/disney-streaming/tagged/thisweekinscala) - great blog to keep up with Scala news

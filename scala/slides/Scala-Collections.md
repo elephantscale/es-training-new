@@ -99,7 +99,7 @@ s2.type = HashSet(1, 2, 3, 4, 5)
 
 ---
 
-## Array
+## Array (Try It!)
 
 * Mutable, indexed collection
 
@@ -123,12 +123,11 @@ Array[Int] = Array(1, 20, 3, 4)
 
 ---
 
-## ArrayBuffer
+## ArrayBuffer (Try It!)
 
 * This very similar to Java array
-
+* Size can be changed (unlike Array where size is fixed) - we can add / remove elements
 * Mutable: so contents can be modified
-
 * Indexed: so elements can be accessed effectively
 
 ```scala
@@ -159,7 +158,7 @@ y.type = ArrayBuffer(1, 2, 4)
 
 ---
 
-## List
+## List (Try It!)
 
 * List is immutable (Linked list implementation)
 * List can not be modified.  When you add/delete elements a new list is created
@@ -193,7 +192,7 @@ c: List[Int] = List(10, 20, 30, 40, 50)
 
 ---
 
-## Vector
+## Vector (Try It!)
 
 * Vector is **indexed and immutable**
 
@@ -312,9 +311,9 @@ java.util.NoSuchElementException: key not found: Canada
 // check if key exists
 > capitals.contains("US") //  Boolean = true
 > capitals.contains("Canada") //  Boolean = false
-
-
 ```
+
+* Go ahead and try it out!  🏋️
 
 ---
 
@@ -337,6 +336,44 @@ scala.collection.mutable.Map[String,String] = HashMap(UK -> London, US -> Washin
 key: UK, value: London
 key: US, value: Washington
 ```
+
+* Go ahead and try it out!  🏋️
+
+---
+
+## Maps with Default Values
+
+* Trying to access an non-existing key will produce a `java.util.NoSuchElementException`
+
+* We can use the following techniques to avoid that
+
+* Option 1: Create a map with defaultValue()
+
+```scala
+val capitals = scala.collection.mutable.Map[String, String]().withDefaultValue ("Unknown")
+capitals("US") = "Washington"
+capitals("UK") = "London"
+
+// access
+capitals("US") // "Washington"
+capitals("Canada") // "Unknown
+```
+
+* Option 2: Use `getOrElse` method
+
+```scala
+val capitals = Map (
+    "US" -> "Washington",
+    "UK" -> "London",
+    "France" -> "Paris"
+)
+
+capitals.getOrElse("US", "Unknown") // "Washington"
+capitals.getOrElse("Canada", "Unknown") // "Unknown"
+```
+
+* Go ahead and try it out!  🏋️
+
 
 ---
 
