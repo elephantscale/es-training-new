@@ -185,14 +185,13 @@ x: List[Int] = List(1, 2, 3, 4)
 
 ## More Filter Examples
 
-
 ```scala
 > val x = List (1,-2,-3,4)
 > val positive = x.filter ( _ > 0)
 ```
 
 ```scala
-> val names = List ("John", "Jane", "Michael", "Jim")
+> val names = List ("John", "jane", "Michael", "Jim")
 
 > val jNames = names.filter (  _.toLowerCase.startsWith ("j"))
 val jNames: List[String] = List(John, Jane, Jim)
@@ -263,10 +262,9 @@ val notFraud = transactions.filterNot (isFraud)  // not condition
 
 ```java
 // Java version – specify "how" to do
-List<Int> x = new ArrayList();
-// add elements to x
+List<Int> x = // original data
 
-List<Int> y = new ArrayList()
+List<Int> y = new ArrayList() // result array
 for (int i: x) {
    y.add(i * 2);
 }
@@ -322,6 +320,28 @@ val capitalCities =  countries.map ( capitals.getOrElse( _ , "Unknown"))
 
 ---
 
+## Map Examples
+
+* Say we want to convert addresses into GPS coordinates
+
+```scala
+def address2GPS (val address : String ) : (Float, Float) = {
+    // do your look up here
+    val lat = ....
+    val lon = ....
+    (lat, lon)  // return
+}
+
+val addresses = Seq ("1 Hacker Way, Menlo Park, CA",  // facebook
+                     "1600 Amphitheatre Parkway Mountain View, CA", // google
+                     "1 Infinite Loop Cupertino, CA" // apple)
+
+val gps = addresses.map (_.address2GPS)
+// (lat1, lon1),   (lat2, lon2), (lat3, lon3)
+```
+
+---
+
 ## Flatten
 
 * Flatten will **unwind or flatten** nested structures
@@ -373,7 +393,7 @@ val allDancersSorted = dancePartners.flatten.sorted
 
 > fruits.map(_.toUpperCase) //  List(APPLE, BANANA, ORANGE)
 
-> fruits.flatmap (_.toUpperCase) 
+> fruits.flatMap (_.toUpperCase) 
 //  List(A, P, P, L, E, B, A, N, A, N, A, O, R, A, N, G, E)
 ```
 
