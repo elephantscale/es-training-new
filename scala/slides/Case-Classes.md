@@ -139,16 +139,20 @@ case class Portfolio(name: String, investment: Investment) extends Investment
 
 ```scala
 
-def getOffer(investment: Investment): Double = investment match {
+def getOffer(investment: Investment): Double = {
+
+ investment match {
     case RealEstate(name, value, monthly) =>
         println("Considering a real estate investment into " + name)
         value + 12 * monthly
+
     case Crypto(name, amount) =>
         println("Be careful with " + amount + " of " + name)
         amount * 5000
+
     case _ =>
         println("I will consider any investment")
-        1
+        0
 }
 
 val bitcoin = Crypto("Bitcoin", 50000.0)
@@ -238,15 +242,16 @@ val capitals = Map (
     "US" -> "Washington",
     "UK" -> "London",
     "France" -> "Paris"
+)
 
-val usCapital = capitals.get("US")  // Option : Some(Washington)
-if (usCapital.isDefined)  // check if the option has value
-    println (usCapital.get)
+val usCapitalOpt = capitals.get("US")  // Option : Some(Washington)
+if (usCapitalOpt.isDefined)  // check if the option has value
+    println (usCapitalOpt.get)
 else
     println ("not found")
 
-val canadianCapital = capitals.get ("Canada") // Option[String] = None
-if (canadianCapital.isEmpty)  // check for emptyness
+val canadianCapitalOpt = capitals.get ("Canada") // Option[String] = None
+if (canadianCapitalOpt.isEmpty)  // check for emptyness
     println ("Not found")
 ```
 
@@ -313,9 +318,11 @@ investment match {
     case RealEstate(name, value, monthly) =>
         println("Considering a real estate investment into " + name)
         value + 12 * monthly
+
     case Crypto(name, amount) =>
         println("Be careful with " + amount + " of " + name)
         amount * 5000
+
     case _ =>
         println("I will consider any investment")
         1
@@ -340,15 +347,17 @@ Notes:
 
 ## Constructor Pattern
 
-
 ```scala
 investment match {
+
     case RealEstate(name, value, monthly) =>
         println("Considering a real estate investment into " + name)
         value + 12 * monthly
+
     case Crypto(name, amount) =>
         println("Be careful with " + amount + " of " + name)
         amount * 5000
+
     case _ =>
         println("I will consider any investment")
         1
@@ -368,6 +377,7 @@ Notes:
 ```scala
 
 def matchTuple ( x : Any) = {
+
     x match {
         case (a,b) => 
             println (s"Two elements : $a, $b")
@@ -394,6 +404,7 @@ Notes:
 
 ```scala
 def matchSeq (x : Seq[Any]) = {
+
     x match {
         case List (1, _, _) => 
             println ("List with 3 elements, starting with 1")
@@ -410,11 +421,13 @@ def matchSeq (x : Seq[Any]) = {
 
 matchSeq (List (1,2,3))      // "List with 3 elements, starting with 1"
 matchSeq (List (1,2))        // No output
-matchSeq (List (1,2, 10))    // "List with 3 elements, starting with 1"
-matchSeq (List (2,3, 10))    // "List with 3 elements, ending with 10"
+matchSeq (List (1,2,10))     // "List with 3 elements, starting with 1"
+matchSeq (List (2,3,10))     // "List with 3 elements, ending with 10"
 matchSeq (Vector (1,2,3))    // no output
 matchSeq (Vector (1,2,3,4))  // "Vector with 4 elements"
 ```
+
+* Go ahead and try it out!  🏋️
 
 Notes:
 
