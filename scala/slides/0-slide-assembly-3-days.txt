@@ -7,13 +7,16 @@
 # ../scala.pdf
 
 About-Scala-Class.md
-Scala-Intro.md
-Scala-Getting-Started.md
-Scala-Getting-Started.md
-Scala-Types.md
-Scala-Collections.md
-Scala-Control-and-Functions.md
-Scala-Classes.md
+Intro.md
+Getting-Started.md
+Types.md
+Collections.md
+Control-and-Functions.md
+Functional-Programming.md
+Classes.md
+Case-Classes.md
+Tests.md
+
 
 ## extra
 ../docs/Scala-Power.pdf
