@@ -135,14 +135,14 @@ Notes:
 ## Creating Keyspaces
 
 
-```text
+```sql
 CREATE KEYSPACE <name>
 WITH replication = {
   'class': <str> (Simple|NetworkTopology)Strategy,
   <options>
 }
-
 ```
+
  * Specify replication properties
 
  * See documentation: http://cassandra.apache.org/doc/latest/cql/ddl.html#create-keyspace
@@ -158,8 +158,8 @@ Notes:
 
 ## Creating Keyspace with SimpleStrategy
 
-```text
-CREATE KEYSPACE <name>
+```sql
+CREATE KEYSPACE keyspace1
 WITH replication = {
   'class': 'SimpleStrategy',
   'replication_factor': 3
@@ -180,10 +180,12 @@ Notes:
 ## Creating Keyspace with NetworkTopology
 
 
-```text
-CREATE KEYSPACE <name>
+```sql
+CREATE KEYSPACE keyspace2
 WITH replication = {
-  'class': 'NetworkTopologyStrategy',  'DC1': 3,   'DC2': 2};
+  'class': 'NetworkTopologyStrategy',  
+  'DC1': 3,   
+  'DC2': 2};
 
 ```
 <img src="../../assets/images/cassandra/Replication01.png"  style="width:50%;float:right;"/>
@@ -202,13 +204,14 @@ Notes:
 ## Keyspace Modification
 
 
- * *ALTER KEYSPACE <name> WITH < properties >;* </br> < properties > is same as the CREATE KEYSPACE < properties >
+* Use **`ALTER KEYSPACE`**
 
-```text
+```sql
 -- changing replication
-ALTER KEYSPACE  myflix  WITH REPLICATION ={     'class' : 'NetworkTopologyStrategy',     'dc1' : 3 };
 
-
+ALTER KEYSPACE  myflix  WITH REPLICATION = {
+         'class' : 'NetworkTopologyStrategy',     
+         'dc1' : 3 };
 ```
 
 Notes: 
@@ -220,19 +223,22 @@ Notes:
 
 ## Drop Keyspace
 
-```text
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-Drop-Keyspace-3.png"  style="width:20%;float:right;"/>
+
+* Irreversible removal of the keyspace with all data in it deleted permanently!
+
+```sql
 DROP KEYSPACE <name>;
 
 
 -- doesn't return an error if keyspace doesn't exist
-DROP KEYSPACE IF EXISTS <name>;
+
+DROP KEYSPACE IF EXISTS keyspace1;
 
 ```
 
- * Irreversible removal of the keyspace with all data in it deleted permanently!
 
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-Drop-Keyspace-3.png"  style="width:20%;float:right;"/>
 
 
 Notes: 
@@ -244,18 +250,20 @@ Notes:
 
 ## Using Keyspace
 
+* **`USE KEYSPACE  <name>;`**
 
-```text
+* Sets the namespace for subsequence commands
+
+* Note : This is set per-session and can be changed with another USE KEYSPACE command
+
+
+```sql
 use myflix;
-create table .. (…); // this table is created in myflix keyspace
+ 
+-- from this point on, operations are done on myflix keyspace
 
+create table  (...); 
 ```
-
- * USE KEYSPACE < name >;
-
- * Sets the namespace for subsequence commands
-
- * Note : This is set per-session and can be changed with another USE KEYSPACE command
 
 
 
@@ -271,13 +279,13 @@ Notes:
 
  * `C*` Tables contain rows and columns
 
- * Rows are indexed by primary key
-
- * Columns are variable i.e., no fixed schema for each row
+ * Rows are indexed by primary key (must be unique per row)
 
  * Tables are partitioned across a `C*` cluster
 
  * Table data is replicated according to replication strategy for the keyspace the table belongs to
+
+<img src="../../assets/images/cassandra/C-Tables.png"  style="width:50%;"/>
 
 Notes: 
 
@@ -305,40 +313,33 @@ Notes:
 
 ---
 
-## `C*` Tables
-
- <img src="../../assets/images/cassandra/C-Tables.png"  style="width:80%;"/>
-
-
-Notes: 
-
-
-
-
----
-
 ## Create Table – Simple Primary Key
 
 
-* *CREATE TABLE <table name> (
-  </br> < column name> <data type > < options >, </br>  …  < column_name > < data_typ e> < options >
-  </br>PRIMARY KEY (???)
-</br>);*
+```sql
+CREATE TABLE <table name> (
+   column_name  data_type   options, 
+   column_name  data_type   options
 
-
-```text
--- example
-
-CREATE TABLE users(    user_id text,    email text,
-    state text,    PRIMARY KEY (user_id));
-
+  PRIMARY KEY (???)
+);
 ```
 
- * Each table must have a primary key
 
+```sql
+CREATE TABLE users(
+    user_id text,
+    email text,
+    state text,
+    
+    PRIMARY KEY (user_id)
+);
+```
 
-Note: Column Families was the original name for "tables" but please use Table for CQL3 and onwards.
-Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
+* Each table must have a primary key
+
+* Quick Tip: Column Families was the original name for "tables". But please use Table for CQL3 and onwards.
+    - Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
 
 
 ---
@@ -358,24 +359,30 @@ Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
 
 ## Specifying PRIMARY Keys
 
+* There are few different ways of specifying primary keys
 
-```text
+```sql
 -- at the end of table 
-CREATE TABLE users(    user_id text,    email text,    PRIMARY KEY (user_id));
+CREATE TABLE users(
+    user_id text,
+    email text,
+    PRIMARY KEY (user_id)
+);
 
 -- inline
-CREATE TABLE users(    user_id text PRIMARY KEY,
+CREATE TABLE users(
+    user_id text PRIMARY KEY,
     email text
 );
 
 -- composite key : state + user_id
 -- (More on this in next section)
-CREATE TABLE users(    user_id text,
+CREATE TABLE users(
+    user_id text,
     email text,
     state text,
-		PRIMARY KEY (state, user_id)
+    PRIMARY KEY (state, user_id)
 );
-
 ```
 
 Notes: 
@@ -390,11 +397,10 @@ Notes:
  <img src="../../assets/images/cassandra/3rd-party/cql_data_types.png"  style="width:80%;"/>
 
 
- *  *Source:*  *DataStax* 
+* [Reference](https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cql_data_types_c.html)
 
 Notes: 
 
-Source: https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cql_data_types_c.html
 
 
 
@@ -405,15 +411,17 @@ Source: https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cql_data_types_c.
 | Feature                                      | RDBMS                                         | Cassandra                                            |
 |----------------------------------------------|-----------------------------------------------|------------------------------------------------------|
 | Unique Primary Key                           | Required most of the time. </br>Not Null      | Required always. </br>NOT Null.                      |
-| Auto Sequence key generation  </br>(1, 2,3…) | YES </br>(id INT AUTO_INCREMENT PRIMARY KEY)  | NO </br>Relies on application to provide unique PKs  |
+| Auto Sequence key generation  </br>(1, 2,3...) | YES </br>(id INT AUTO_INCREMENT PRIMARY KEY)  | NO </br>Relies on application to provide unique PKs  |
 | Foreign Keys                                 | YES                                           | NO                                                   |
 | Referential Integrity                        | YES                                           | NO                                                   |
 | Mandatory columns (Non-NULL)                 | YES                                           | NO                                                   |
 
 </br>
 
- * Class discussion: 
-</br> Why `C*` does  **NOT**  do AUTO SEQUENCE key?
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.28, "top" : 1.21, "height" : 3.27, "width" : 4.92} -->
+
+* **Question for class** : Why `C*` does  **NOT**  do AUTO SEQUENCE key?
+
 
 Notes: 
 
@@ -425,23 +433,25 @@ Notes:
 ## Generating Unique Keys
 
 
- * UUID – universally unique id
+ * **UUID** – universally unique id
 
      - E.g.: bfb96110-5105-4742-b17c-aeef5b5670d7
 
      - Can also be generated using Java at the application level
 
-     - CQL provides uuid() function
+     - CQL provides **`uuid()`** function
 
- * TimeUUID
+ * **TimeUUID**
 
      - Version 1 UUID – date and time part of encoding
 
      - Time-ordered rows
 
-     - Generate using now() function. DO NOT generate at application level
+     - Generate using **`now()`** function.
 
- * Uuid() and now() generate the IDs on coordinator node
+     - **DO NOT generate this at application level**
+
+ * **`uuid()`** and **`now()`** generate the IDs on coordinator node
 
  * Reference: https://en.wikipedia.org/wiki/Universally_unique_identifier 
 
@@ -457,7 +467,7 @@ Notes:
 ---
 
 
-## Myflix 'Movies' 'Features' Table
+## Myflix  'Features' Table
 
 
  * Lets create a "features" table with the following attributes:
@@ -473,24 +483,25 @@ Notes:
 
 </br>
 
- *  **What is our primary key? How do we generate one?**
+* **What is our primary key?**
+    - Remember, primary key must be unique for each row
+    - Are any of these attributes unique?
+    - How about if you combine these?  Like `"name + release_date"`,  will that be unique?
+    - If none of the attributes are unique, we can always **generate** a unique key
 
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
 ## Myflix 'Features' Table
 
+* Let's add a unique key called **`code`**.  We will assign this for each movie.
 
- * Let's add a unique key called 'code.'We will assign this for each movie.IMDB examples:
+* Some IMDB examples:
 
-     - "Star Wars: Force Awakens"http://www.imdb.com/title/tt2488496/
+     - "Star Wars: Force Awakens" : http://www.imdb.com/title/tt2488496/
 
-     - "Mad Men"http://www.imdb.com/title/tt0804503/
+     - "Mad Men" : http://www.imdb.com/title/tt0804503/
 
 </br>
 
@@ -501,88 +512,74 @@ Notes:
 | Type         | String | "Movie"  </br> "TV Show"  </br>"Standup" |
 | Release_date | Data   | 2016-01-01                               |
 
-
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
 ## Myflix 'Features' Table
 
-```text
-create table features (    code text,    name text,    release_date timestamp,     type text,
-    PRIMARY KEY (code) );
+```sql
+create table features (
+    code text,
+    name text,
+    release_date date,
+    type text,
 
+    PRIMARY KEY (code) 
+);
 ```
 
- * We are using 'text' type to represent strings
+* We are using **`text`** type to represent strings
 
- * We use 'timestamp' to represent for date
+* We use **`date`** to represent for date
 
-     - Though 'time stamp' can be accurate up to seconds, we are only using the 'date' portion of it ( **2016-01-01** 00:00:00)
-
-     - Timestamp is Unix timestamp since 'epoch'
-
-
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
 ## INSERT Some Data
 
-
-```text
+```sql
 INSERT INTO features (code, name, type, release_date)
 VALUES ('madmen', 'Mad Men', 'TV Show', '2010-01-01');
 
 INSERT INTO features (code, name, type, release_date)
 VALUES ('star1', 'Star Wars Episode 1', 'Movie' , '1999-01-01');
-
 ```
 
- * Syntax: **INSERT INTO** < table name > (column names)VALUES (column values)
+* Insert syntax:
 
- * Wrap string values in **single quotes** (example : 'mad men')
+```sql
+INSERT INTO <table name> (column names) VALUES (column values)
+```
 
- * Timestamp can be entered in format: 'yyyy-mm-dd HH:mm:ssZ'
+* Wrap string values in **single quotes** (example : 'mad men')
 
-Notes: 
+* Date can be entered in format: 'yyyy-mm-dd'
 
-
-
+Notes:
 
 ---
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
 ## Lab: CQL
 
+* **Overview:**
+    - Create 'features' table using CQL
+    - Insert some data
+    - Query data
 
- *  **Overview:**
+* **Builds on previous labs:**
+    - None
 
-     - Create 'features' table using CQL
+* **Approximate run time:**
+    - 1 hour
 
-     - Insert some data
+* **Instructions:**  
+    - Please follow **02-cql**
 
-     - Query data
-
- *  **Builds on previous labs:** None
-
- *  **Approximate time:** 1 hour
-
- *  **Instructions:**  **02-cql /**  **README.md** 
-
- *  **Lab** 
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
@@ -1110,7 +1107,7 @@ create table people (
 
  * Index on GENDER: Yes or No?
 
-     - No: VERY LOW cardinality (just two values, male/female)…(not efficient)
+     - No: VERY LOW cardinality (just two values, male/female)...(not efficient)
 
 
 

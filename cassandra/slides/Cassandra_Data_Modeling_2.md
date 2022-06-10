@@ -152,8 +152,11 @@ Notes:
  * Can the table below uniquely represent all cities in the world?
 
 ```text
-create table cities (	city_name text,	population int,	PRIMARY KEY (city_name)	);
+create table cities (
+    city_name text,
+    population int,
 
+    PRIMARY KEY (city_name)	);
 ```
 
 
@@ -192,22 +195,35 @@ Notes:
 
 ---
 
-## Cities table Revised
+## Cities Table Revised
 
-  * *CREATE TABLE cities (	country text,	city text,	population int,	PRIMARY KEY (country, city)	);*
+```sql
+CREATE TABLE cities (
+    country text,
+    city text,
+    population int,
+    
+    PRIMARY KEY (country, city));
+```
 
 
   * Quiz: can this uniquely identify all cities in the US?
 
   * Quiz: What are the most popular city names in the US?
 
-    - Greenville (38),  Franklin (30) … Springfield (29)http://en.wikipedia.org/wiki/List_of_the_most_common_U.S._place_names 
+    - Greenville (38),  Franklin (30) ... Springfield (29)
+    - http://en.wikipedia.org/wiki/List_of_the_most_common_U.S._place_names 
 
 ```text
 
 // cities table that can support all US cities
-CREATE TABLE cities (	country text,
-  state, text	city text,	population int,	PRIMARY KEY (country, state, city)	);
+CREATE TABLE cities (
+    country text,
+    state, text,
+    city text,
+    population int,
+    
+    PRIMARY KEY (country, state, city)	);
 ```
 ---
 
@@ -805,7 +821,7 @@ Notes:
 
  * Watch out for partitions ballooning in size
 
-     - Further segment partition (by day, week, month …)
+     - Further segment partition (by day, week, month ...)
 
  * Optimize storing smaller values 
 
@@ -854,7 +870,7 @@ Notes:
 
 
  * Quickly count things
-     - Events, pageviews …etc.
+     - Events, pageviews ...etc.
 
  * Store counters in dedicated tables  (count_pageviews)
 
@@ -1189,7 +1205,7 @@ Notes:
 
  * SERIAL CONSISTENCY LOCAL_SERIAL
 
- * INSERT INTO USERS (user_id, name….)VALUES  ('joe',  ….)IF NOT EXISTS;
+ * INSERT INTO USERS (user_id, name....)VALUES  ('joe',  ....)IF NOT EXISTS;
 
 Notes: 
 
