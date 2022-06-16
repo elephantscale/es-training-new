@@ -195,6 +195,43 @@ Notes:
 
 ---
 
+# Handling Nulls
+
+---
+
+## Dealing with Null values
+
+* Consider the following Java code
+
+* The `findCustomer` function can return a Customer object or possibly null
+
+```java
+// return a customer or null
+public Customer  findCustomer (int customerId) {
+    Customer c = // search for the customer
+    return c;
+}
+
+// usage:
+Customer c = findCustomer(123);
+
+// wrong usage: can result in Null Pointer Exception, if c is null
+print ("Customer name is : ", c.name)
+
+// correct usage: check for null first
+if (c != null) {
+    print ("Customer name is : ", c.name)
+}
+else {
+    // customer is null
+    println ("customer not found")
+}
+```
+
+* This code is not 'elegant' in Scala :-) 
+
+---
+
 ## Option Type
 
 <img src="../../assets/images/scala/option-1.png"  style="width:40%;float:right;" /> <!-- {"left" : 0.6, "top" : 2.04, "height" : 2.05, "width" : 8.55} -->
@@ -302,6 +339,40 @@ for ( country <-  countries) {
 * Go ahead and try it out!  🏋️
 
 Notes:
+
+---
+
+## `findCustomer` with Option
+
+* Here is the retooled `findCustomer` function in Scala, using Options
+
+* It returns an `Option`, that may or may not contain a `Customer`
+
+```scala
+def findCustomer (customerId : Int) : Option[Customer] = {
+    try {
+        // do a db query may be
+        val c = db.query(....)
+        Some(c)  // <-- ** returning the Option with Customer
+    } catch {
+        case e: Exception => None  // <-- ** returning the Option with None
+    }
+}
+
+// usage:
+val custOption = findCustomer(123)
+
+val customerName = custOption match {
+        case Some(x) =>   custOption.get.name
+        case None => "Unknown"
+}
+
+// another way to use
+if (custOption.isDefined)
+    println ("Customer name: " + custOption.get.name)
+else
+    println ("Customer not found")
+```
 
 ---
 
