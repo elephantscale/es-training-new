@@ -9,7 +9,8 @@
 
  * Learn to model various scenarios on Cassandra using CQL
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Lesson-Objectives-1.png"   style="width:80%;" />
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Lesson-Objectives-1.png"   style="width:80%;" /><!-- {"left" : 2.03, "top" : 3.78, "height" : 7.71, "width" : 13.44} -->
+
 
 
 Notes: 
@@ -127,7 +128,7 @@ Notes:
 
 ## Before You Start...
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/> <!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Ask me the question!!
 
@@ -146,7 +147,7 @@ Notes:
 
 ## MyFlix: Users: Part II
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  *  Q: Find users  **user_name**   **or**  **primary email** 
 
@@ -161,7 +162,7 @@ Notes:
 
 ## MyFlix: Movies 
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Movies Features
 
@@ -192,7 +193,7 @@ Notes:
 
 ## MyFlix: Movies: Bonus Lab
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * How can we store "release dates" in movie table?
 
@@ -213,7 +214,7 @@ Notes:
 
 ## MyFlix: Ratings
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Users will rate movies
 
@@ -240,7 +241,7 @@ Notes:
 
 ## MyFlix: Ratings: Part II
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Queries
 
@@ -259,7 +260,7 @@ Notes:
 
 ## MyFlix: Bonus: User Devices
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * A user has multiple devices (TV, tablet, phone, computer)
  * Devices belong to one user
@@ -288,7 +289,7 @@ Notes:
 
 ## MyFlix: Resuming a Movie
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Users can watch a movie from multiple devices
 
@@ -307,7 +308,7 @@ Notes:
 
 ## Recommended: Amazon Prime
 
-<img src="../../assets/images/cassandra/3rd-party/Recommended-Amazon-Prime.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Recommended-Amazon-Prime.png" style="width:70%;"/><!-- {"left" : 2.93, "top" : 2.87, "height" : 7.97, "width" : 11.64} -->
 
 
 
@@ -321,7 +322,7 @@ Notes:
 ## Netflix: Profiles
 
 
-<img src="../../assets/images/cassandra/Netflix-001.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Netflix-001.png" style="width:60%;"/><!-- {"left" : 1.71, "top" : 3.13, "height" : 7.46, "width" : 14.08} -->
 
 Notes: 
 
@@ -333,7 +334,7 @@ Notes:
 ## Recommendations with Profiles
 
 
-<img src="../../assets/images/cassandra/3rd-party/Recommendations-Profiles.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Recommendations-Profiles.png" style="width:70%;"/> <!-- {"left" : 1.38, "top" : 3.79, "height" : 6.12, "width" : 14.73} -->
 
 Notes: 
 
@@ -344,7 +345,7 @@ Notes:
 
 ## Recommendations
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Recommendations-7.png" style="width:40%; float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Recommendations-7.png" style="width:40%; float:right;"/><!-- {"left" : 10.96, "top" : 2.33, "height" : 5.79, "width" : 6.03} -->
 
  * Heavy machine learning!
 
@@ -438,7 +439,8 @@ Notes:
 
 ## YouTube Videos
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
+
 
  * Videos belong to users
  * Video files may be large
@@ -467,7 +469,8 @@ Notes:
 
 ## YouTube: User/Video Relation
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
+
 
  * Users often have many videos
 
@@ -521,7 +524,8 @@ Notes:
 
 ## Online Shopping
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
+
 
  * Models
 
@@ -559,7 +563,8 @@ Notes:
 
 ## User Activity
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
+
 
  * Users browse pages
 
@@ -586,7 +591,8 @@ Notes:
 
 ## Next: Log Collection
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Next-Log-Collection-8.jpg" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Next-Log-Collection-8.jpg" style="width:70%;"/><!-- {"left" : 2.88, "top" : 2.51, "height" : 8.69, "width" : 11.74} -->
+
 
 Notes: 
 
@@ -624,7 +630,7 @@ Notes:
 
 ## Distributed Log Collection Tools: Flume
 
-<img src="../../assets/images/cassandra/flume.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/cassandra/flume.png" style="width:40%;float:right;"/> <!-- {"left" : 9.71, "top" : 2.3, "height" : 7.54, "width" : 7.62} -->
 
  * Part of Hadoop ecosystem
 
@@ -645,7 +651,7 @@ Notes:
 
 ## Distributed Log Collection Tools: Kafka
 
-<img src="../../assets/images/cassandra/kafka-architecture2.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/kafka-architecture2.png" style="width:30%;float:right;"/><!-- {"left" : 10.47, "top" : 2.41, "height" : 5.83, "width" : 6.65} -->
 
  * Producer/Consumer model
 
@@ -676,7 +682,8 @@ Notes:
 
 ## Log Collection: Log Table
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
+
 
  * Logs contain:
 

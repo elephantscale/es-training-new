@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-70 272 1258 319" width="1258" height="319">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-06-22 08:02:42 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <ellipse cx="49" cy="431.54464" rx="118.000188552424" ry="77.0894088954159" fill="#ebdea6"/>
+        <ellipse cx="49" cy="431.54464" rx="118.000188552424" ry="77.0894088954159" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 238.5 445.16696 L 238.5 417.9223 L 385.5 417.9223 L 385.5 404.3 L 415.5 431.54464 L 385.5 458.7893 L 385.5 445.16696 Z" fill="#e3a92e"/>
+        <path d="M 238.5 445.16696 L 238.5 417.9223 L 385.5 417.9223 L 385.5 404.3 L 415.5 431.54464 L 385.5 458.7893 L 385.5 445.16696 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 487 558.22036 L 487 304.86893 C 487 287.38768 643.8 273.2 837 273.2 C 1030.2 273.2 1187 287.38768 1187 304.86893 L 1187 558.22036 C 1187 575.7016 1030.2 589.8893 837 589.8893 C 643.8 589.8893 487 575.7016 487 558.22036" fill="#aa97fe"/>
+        <path d="M 487 558.22036 L 487 304.86893 C 487 287.38768 643.8 273.2 837 273.2 C 1030.2 273.2 1187 287.38768 1187 304.86893 L 1187 558.22036 C 1187 575.7016 1030.2 589.8893 837 589.8893 C 643.8 589.8893 487 575.7016 487 558.22036 M 487 304.86893 C 487 322.35018 643.8 336.53786 837 336.53786 C 1030.2 336.53786 1187 322.35018 1187 304.86893" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <rect x="597.5" y="368.19464" width="271.3" height="126.7" fill="#d8fffe"/>
+        <rect x="597.5" y="368.19464" width="271.3" height="126.7" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_6">
+        <rect x="868.8" y="368.19464" width="207.7" height="126.7" fill="#d8fffe"/>
+        <rect x="868.8" y="368.19464" width="207.7" height="126.7" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(-11 382.54464)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="15.996094" y="40">Web</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">Server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(732.5957 278.2)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Cassandra</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(651.9488 407.04464)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">some_id</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(897.8453 407.04464)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">counter</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

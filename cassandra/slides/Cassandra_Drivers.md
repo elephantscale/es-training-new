@@ -21,16 +21,16 @@ Notes:
 ---
 
 
-## `C*` Drivers
+## C* Drivers
 
 
  * Interact with `C*` programmatically
 
  * Supported languages:
 
-     - Official : Java, Python, C#
+     - Official: Java, Python, C#
 
-     - Community : Go, PHP, Ruby, many more
+     - Community: Go, PHP, Ruby, many more
 
  * A bit of history
 
@@ -74,7 +74,8 @@ Notes:
 ## Driver Comparison: Asyntax Vs. Native
 
 
-<img src="../../assets/images/cassandra/3rd-party/Driver-Comparison-Asyntax-Native.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Driver-Comparison-Asyntax-Native.png" style="width:70%;"/><!-- {"left" : 2.15, "top" : 2.2, "height" : 9.31, "width" : 13.19} -->
+
 
 
 Notes: 
@@ -108,12 +109,20 @@ Notes:
 
 
 ```text
-import com.datastax.driver.core.Cluster;import com.datastax.driver.core.Session;// Javadocs : http://www.datastax.com/drivers/java/2.0/index.htmlpublic class TestConnection {    public static void main(String[] args) throws Exception {   Cluster cluster = Cluster.builder().addContactPoint("localhost")      .build();
-   System.out.println("connected to " + cluster.getClusterName());   Session session = cluster.connect("myflix");
-   System.out.println("session initialized to "      + session.getLoggedKeyspace());
+import com.datastax.driver.core.Cluster;import com.datastax.driver.core.
+Session;// Javadocs : http://www.datastax.com/drivers/java/2.0/
+index.htmlpublic class TestConnection 
+{    public static void main(String[] args) throws Exception 
+{   Cluster cluster = Cluster.builder().addContactPoint("localhost")
+      .build();
+   System.out.println("connected to " + cluster.getClusterName());   
+Session session = cluster.connect("myflix");
+   System.out.println("session initialized to "      
++ session.getLoggedKeyspace());
    session.close();   cluster.close();    }}
 
 ```
+<!-- {"left" : 0.82, "top" : 2.48, "height" : 4.35, "width" : 15.95} -->
 
 Notes: 
 
@@ -137,6 +146,8 @@ String cql = "insert into users(id, name) values ('user1',  'Joe')";
 session.execute(cql);
 
 ```
+<!-- {"left" : 0.82, "top" : 1.66, "height" : 1.44, "width" : 12.11} -->
+
  * Just like SQL!
 
  * String values must be included in single quotes ('hello')
@@ -175,6 +186,8 @@ BoundStatement boundStatement = new BoundStatement(statement);
 session.execute(boundStatement.bind("user1", "Joe"));
 
 ```
+<!-- {"left" : 0.82, "top" : 4.52, "height" : 3.45, "width" : 15.32} -->
+
 
 Notes: 
 
@@ -183,6 +196,8 @@ Notes:
 ---
 
 ## Query
+
+<br/>
 
 ```text
 String cql = "select user_id, user_name from users";
@@ -195,11 +210,13 @@ For (Row row : resultSet) {
 
 
 ```
+<!-- {"left" : 0.82, "top" : 1.99, "height" : 2.82, "width" : 11.5} -->
 
  * Very much like JDBC!
 
  * NOTE : Schema changes can cause prepared SELECTs to fail. ALWAYS name the fields in SELECT
-<img src="../../assets/images/cassandra/3rd-party/Query01.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Query01.png" style="width:70%;"/><!-- {"left" : 2.1, "top" : 6.27, "height" : 3.45, "width" : 13.31} -->
+
 
 
 
@@ -224,7 +241,9 @@ Notes:
 
 
 
-<img src="../../assets/images/cassandra/3rd-party/Asynchronous-Query.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Asynchronous-Query.png" style="width:60%;"/><!-- {"left" : 3.39, "top" : 5.41, "height" : 5.59, "width" : 10.72} -->
+
+
 
 Notes: 
 
@@ -245,6 +264,8 @@ Notes:
 | Set             | Java.util.Set  |
 | Map             | Java.util.Map  |
 
+<!-- {"left" : 1, "top" : 3.42, "height" : 1, "width" : 15.5} -->
+
 
 Notes: 
 
@@ -255,9 +276,9 @@ Notes:
 ## Java Driver Documentation
 
 
- * Java driver docs: </br> https://docs.datastax.com/en/developer/java-driver/3.3/
+ * Java driver docs: <br/> https://docs.datastax.com/en/developer/java-driver/3.3/
 
- * Java API docs: </br> https://docs.datastax.com/en/drivers/java/3.3/
+ * Java API docs: <br/> https://docs.datastax.com/en/drivers/java/3.3/
 
 Notes: 
 
@@ -265,7 +286,7 @@ Notes:
 
 ---
 
-## Lab 09 : Java Driver
+## Lab 09: Java Driver
 
 
  *  **Overview:** 
@@ -284,7 +305,7 @@ Notes:
 
      - Benchmarking: how much time it takes to insert 100k users?
 
-     - Can the insert be faster?  (hint : Batch)
+     - Can the insert be faster?  (hint: Batch)
 
  *  **Lab** 
 
@@ -327,12 +348,13 @@ Notes:
 
 ## Spring-Cassandra – Object Class
 
-<img src="../../assets/images/cassandra/3rd-party/Spring-Cassandra–Object-Class.png" style="width:80%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Spring-Cassandra–Object-Class.png" style="width:80%;"/><!-- {"left" : 1.95, "top" : 2.46, "height" : 8.79, "width" : 13.59} -->
+
 
 
 Notes: 
 
-Table name inferred from class name  ,  notice @Table annotation
+Table name inferred from class name, notice @Table annotation
 
 
 ---
@@ -364,7 +386,9 @@ Notes:
 
 ## Spring Cassandra – Main Driver
 
-<img src="../../assets/images/cassandra/3rd-party/Main-Driver.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Main-Driver.png" style="width:60%;"/><!-- {"left" : 0.82, "top" : 2.16, "height" : 9.11, "width" : 10.18} -->
+
+
 
 
 Notes: 
@@ -377,7 +401,7 @@ Provided by datastax
 
 ---
 
-## Lab 14 : Spring Cassandra
+## Lab 14: Spring Cassandra
 
 
  *  **Overview:**
@@ -388,9 +412,9 @@ Provided by datastax
 
      - None
 
- *  **Approximate Time** : 20 mins
+ *  **Approximate Time:** 20 mins
 
- *  **Instructions: **15-spring / README.md 
+ *  **Instructions:** 15-spring / README.md 
 
  *  **Lab** 
 

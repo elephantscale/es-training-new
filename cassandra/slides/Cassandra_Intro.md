@@ -29,7 +29,7 @@ Notes:
 
 ## What is Cassandra?
 
-<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 13.26, "top" : 1.89, "height" : 2.56, "width" : 3.81} -->
 
  * Cassandra
 
@@ -50,7 +50,7 @@ Notes:
 
 ## What is Cassandra?
 
-<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 13.26, "top" : 1.89, "height" : 2.56, "width" : 3.81} -->
 
 
  * That provides:
@@ -108,7 +108,8 @@ Notes:
 
 ## Cassandra is Designed to Run on a Cluster
 
-<img src="../../assets/images/cassandra/cluster.png" style="width:50%;"/>
+<img src="../../assets/images/cassandra/cluster.png" style="width:50%;"/><!-- {"left" : 3.86, "top" : 2.81, "height" : 8.09, "width" : 9.77} -->
+
 
 Notes: 
 
@@ -119,7 +120,7 @@ Notes:
 
 ## Cassandra Cluster
 
-<img src="../../assets/images/cassandra/cluster.png"  style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/cluster.png"  style="width:30%;float:right;"/><!-- {"left" : 11.23, "top" : 2.09, "height" : 4.9, "width" : 5.92} -->
 
  * The way `C*` is intended to run (Production setup)
 
@@ -152,7 +153,7 @@ Notes:
 
 ## Compare with HDFS Architecture
 
-<img src="../../assets/images/cassandra/Compare-with-HDFS-Architecture.png"  style="width:70%;"/>
+<img src="../../assets/images/cassandra/Compare-with-HDFS-Architecture.png"  style="width:70%;"/><!-- {"left" : 1.92, "top" : 4.53, "height" : 3.79, "width" : 13.66} -->
 
 
 Notes: 
@@ -162,9 +163,9 @@ Notes:
 
 ---
 
-## `C*` Across Data Centers
+## C* Across Data Centers
 
-<img src="../../assets/images/cassandra/cluster2.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/cluster2.png" style="width:70%;"/> <!-- {"left" : 1.94, "top" : 4.13, "height" : 5.45, "width" : 13.62} -->
 
 
 Notes: 
@@ -174,7 +175,7 @@ Notes:
 
 ---
 
-## `C*` Across Data Centers
+## C* Across Data Centers
 
 
  * Nodes can be arranged in multiple DCs
@@ -189,7 +190,7 @@ Notes:
 
         * Keep data close to the user, multiple geolocations (US, Asia-Pac)
 
-<img src="../../assets/images/cassandra/cluster2.png"  style="width:50%;"/>
+<img src="../../assets/images/cassandra/cluster2.png"  style="width:50%;"/> <!-- {"left" : 3.02, "top" : 6.48, "height" : 4.58, "width" : 11.46} -->
 
 Notes: 
 
@@ -200,6 +201,7 @@ Notes:
 
 ## Sidebar: Cassandra on a Single Node
 
+<img src="../../assets/images/cassandra/cassandra-single-node.png"  style="width:30%;float:right;"/><!-- {"left" : 11.95, "top" : 2.17, "height" : 4.43, "width" : 4.99} -->
 
  * `C*` can run on a single node
 
@@ -209,7 +211,6 @@ Notes:
 
  * Needs Java 
 
-<img src="../../assets/images/cassandra/cassandra-single-node.png"  style="width:30%;"/>
 
 Notes: 
 
@@ -251,7 +252,7 @@ Notes:
 
  * http://techblog.netflix.com/2011/11/benchmarking-cassandra-scalability-on.html
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Massive-Scale-4.png"  style="width:60%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Massive-Scale-4.png"  style="width:60%;"/><!-- {"left" : 3.24, "top" : 3.62, "height" : 7.65, "width" : 11.02} -->
 
 
 Notes: 
@@ -310,9 +311,10 @@ Notes:
 ---
 
 
-## `C*` Use Case: T-Mobile
+## C* Use Case: T-Mobile
 
-<img src="../../assets/images/logos/tmobile-logo-o1.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/logos/tmobile-logo-o1.png" style="width:30%;float:right;"/> <!-- {"left" : 10.67, "top" : 2.29, "height" : 1.55, "width" : 6.6} -->
+
 
  *  **Goal:** 
 
@@ -336,9 +338,9 @@ Source: http://bigdatausecases.info/entry/from-sql-to-nosql
 
 ---
 
-## `C*` Use Case: Netflix
+## C* Use Case: Netflix
 
-<img src="../../assets/images/logos/netflix.02.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/logos/netflix.02.png" style="width:20%;float:right;"/> <!-- {"left" : 12.27, "top" : 1.89, "height" : 1.25, "width" : 4.63} -->
 
  *  **Problem:** 
 
@@ -373,7 +375,7 @@ Source: http://bigdatausecases.info/entry/oracle-to-cassandra-at-netflix
 
 ## Data Organization
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Data-Organization-7.png"  style="width:70%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Data-Organization-7.png"  style="width:70%;"/> <!-- {"left" : 3.47, "top" : 3.28, "height" : 7.14, "width" : 10.56} -->
 
 
 Notes: 
@@ -392,7 +394,8 @@ Notes:
 
  * A cluster can span multiple data centers!
 
-<img src="../../assets/images/cassandra/cluster2.png"  style="width:70%;"/>
+<img src="../../assets/images/cassandra/cluster2.png"  style="width:70%;"/> <!-- {"left" : 2.43, "top" : 5.43, "height" : 5.06, "width" : 12.65} -->
+
 
 Notes: 
 
@@ -403,7 +406,7 @@ Notes:
 
 ## Keyspace
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Data-Organization-7.png"  style="width:50%;float:right;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Data-Organization-7.png"  style="width:50%;float:right;"/> <!-- {"left" : 10.28, "top" : 1.89, "height" : 4.55, "width" : 6.72} -->
 
  * A cluster has a bunch of keyspaces 
 
@@ -429,7 +432,7 @@ Notes:
 
 ## Data Hierarchy Visualization
 
-<img src="../../assets/images/cassandra/Data-Hierarchy-Visualization.png"  style="width:50%;"/>
+<img src="../../assets/images/cassandra/Data-Hierarchy-Visualization.png"  style="width:50%;"/><!-- {"left" : 4.55, "top" : 2.65, "height" : 8.41, "width" : 8.4} -->
 
 Notes: 
 
@@ -440,7 +443,7 @@ Notes:
 
 ## Cassandra vs. RDBMS
 
-<img src="../../assets/images/cassandra/Cassandra-RDBMS.png"  style="width:70%;"/>
+<img src="../../assets/images/cassandra/Cassandra-RDBMS.png"  style="width:70%;"/> <!-- {"left" : 1.98, "top" : 3.61, "height" : 6.48, "width" : 13.54} -->
 
 
 Notes: 
@@ -452,7 +455,8 @@ Notes:
 
 ## Hierarchy: 'Myflix' Application
 
-<img src="../../assets/images/cassandra/Hierarchy-Myflix-Application.png"  style="width:50%;"/>
+<img src="../../assets/images/cassandra/Hierarchy-Myflix-Application.png"  style="width:50%;"/> <!-- {"left" : 4.36, "top" : 2.46, "height" : 8.78, "width" : 8.78} -->
+
 
 
 Notes: 
@@ -464,7 +468,7 @@ Notes:
 
 ## Tables
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Data-Organization-7.png"  style="width:40%;float:right;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Data-Organization-7.png"  style="width:40%;float:right;"/> <!-- {"left" : 10.98, "top" : 1.56, "height" : 4.21, "width" : 6.22} -->
 
  * Tables have rows & columns.
 
@@ -477,7 +481,7 @@ Notes:
 | Row 1 | Value 1 | Value 2 | Value 3 |
 | Row 2 | Value 4 | Value 5 | Value 6 |
 
-
+<!-- {"left" : 4.12, "top" : 8.42, "height" : 1, "width" : 9.25} -->
 
 
 Notes: 
@@ -492,12 +496,14 @@ Notes:
 
  * Unlike RDBMS, Cassandra is built for "sparse" rows
 
-</br>
 
 |       | Col 1   | Col 2   | Col 3   | Col 5   | Col 5   |
 |-------|---------|---------|---------|---------|---------|
 | Row 1 | Value 1 | Value 2 | Value 3 |         |         |
 | Row 2 |         |         |         | Value 4 | Value 5 |
+
+<!-- {"left" : 1.12, "top" : 2.95, "height" : 1, "width" : 15.26} -->
+
 
  * Each row can have any number of columns
 
@@ -530,6 +536,8 @@ Notes:
 | Row 1 | Value 1     | Value 2      | Value 3     |
 |       | Timestamp 1 |  Timestamp 2 | Timestamp 3 |
 
+<!-- {"left" : 1.12, "top" : 6.1, "height" : 1, "width" : 15.27} -->
+
 Notes: 
 
 http://www.epochconverter.com/ for converting times.
@@ -559,7 +567,8 @@ http://www.epochconverter.com/ for converting times.
 
  *  **Lab** 
 
-<img src="../../assets/images/cassandra/amaozn-setup.png"  style="width:60%;"/>
+<img src="../../assets/images/cassandra/amaozn-setup.png"  style="width:60%;"/><!-- {"left" : 1.68, "top" : 6.86, "height" : 4.1, "width" : 14.13} -->
+
 
 
 Notes: 
@@ -589,7 +598,7 @@ Notes:
 
 ---
 
-## Interacting with `C*`
+## Interacting with C*
 
 
  * Interaction via CQLsh console/shell
@@ -622,13 +631,13 @@ Notes:
 
  * Use 'help' or '?' to get help
 
- * 	*cqlsh> help describe;*
+ * *cqlsh> help describe;*
 
      - Prints options for "describe" command
 
  * Describe
 
- * *cqlsh> Describe cluster;* </br> prints cluster status
+ * *cqlsh> Describe cluster;* prints cluster status
 
  * Learn to use TAB completion
 
@@ -696,7 +705,7 @@ Notes:
 
 ## Data Distribution
 
-<img src="../../assets/images/cassandra/partitioning1.png"  style="width:40%;float:right;"/>
+<img src="../../assets/images/cassandra/partitioning1.png"  style="width:40%;float:right;"/><!-- {"left" : 10.88, "top" : 2.02, "height" : 5.04, "width" : 6.24} -->
 
 
  * `C*` distributes data across clusterThis gives us:
@@ -724,7 +733,7 @@ Notes:
 
 ## How is Data Distributed
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-How-is-Data-Distributed-13.png"  style="width:40%;float:right;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-How-is-Data-Distributed-13.png"  style="width:40%;float:right;"/><!-- {"left" : 11.16, "top" : 1.89, "height" : 6, "width" : 6.01} -->
 
 
  * `C*` uses **hashing** to distribute data
@@ -752,7 +761,8 @@ Murmur3 is the new default hashing algorithm.  It provides faster hashing & impr
 
 ## Data Distribution
 
-<img src="../../assets/images/cassandra/cluster3.png"  style="width:40%;float:right;"/>
+<img src="../../assets/images/cassandra/cluster3.png"  style="width:40%;float:right;"/> <!-- {"left" : 10.56, "top" : 1.89, "height" : 6.08, "width" : 6.62} -->
+
 
  * Rows are distributed across nodes as partitions
 
@@ -774,7 +784,7 @@ Notes:
 
 ## Replicas and Data Safety
 
-<img src="../../assets/images/cassandra/replica.png"  style="width:50%;float:right;"/>
+<img src="../../assets/images/cassandra/replica.png"  style="width:50%;float:right;"/><!-- {"left" : 9.67, "top" : 1.89, "height" : 5.22, "width" : 7.54} -->
 
 
  * `C*` creates multiple replicas on different nodes
@@ -794,7 +804,7 @@ Notes:
 
 ## Replication: SimpleStrategy
 
-<img src="../../assets/images/cassandra/replication.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/cassandra/replication.png" style="width:40%;float:right;"/><!-- {"left" : 11.12, "top" : 2.13, "height" : 4.94, "width" : 6.07} -->
 
 
  * Make replicas within a DC
@@ -818,7 +828,7 @@ Notes:
 
 ## Replication: NetworkTopologyStrategy
 
-<img src="../../assets/images/cassandra/Replication01.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Replication01.png" style="width:60%;"/><!-- {"left" : 1.82, "top" : 3.68, "height" : 6.35, "width" : 13.85} -->
 
 Notes: 
 
@@ -840,7 +850,7 @@ Notes:
 
  * Recommended for production use
 
-<img src="../../assets/images/cassandra/Replication01.png" style="width:40%;"/>
+<img src="../../assets/images/cassandra/Replication01.png" style="width:40%;"/> <!-- {"left" : 2.86, "top" : 5.76, "height" : 5.4, "width" : 11.78} -->
 
 Notes: 
 
@@ -851,7 +861,7 @@ Notes:
 
 ## Replication: Rack Awareness
 
-<img src="../../assets/images/cassandra/rack_awareness1.png" style="width:50%; float:right;"/>
+<img src="../../assets/images/cassandra/rack_awareness1.png" style="width:50%; float:right;"/> <!-- {"left" : 8.87, "top" : 2.37, "height" : 5.88, "width" : 7.86} -->
 
  * We have 2 replicasIs it safe?
 
@@ -867,7 +877,7 @@ Notes:
 
 ## Replication: Rack Awareness
 
-<img src="../../assets/images/cassandra/rack_awareness2.png" style="width:50%; float:right;"/>
+<img src="../../assets/images/cassandra/rack_awareness2.png" style="width:50%; float:right;"/> <!-- {"left" : 8.87, "top" : 2.37, "height" : 5.88, "width" : 7.86} -->
 
  * NetworkTopologyStrategy places a copy on another rack
 
@@ -934,9 +944,9 @@ Notes:
 
 ---
 
-## Eventual Consistency Example:Video + Comments
+## Eventual Consistency Example: Video + Comments
 
-<img src="../../assets/images/cassandra/Eventual-Consistency.png" style="width:40%;"/>
+<img src="../../assets/images/cassandra/Eventual-Consistency.png" style="width:40%;"/> <!-- {"left" : 4.65, "top" : 2.72, "height" : 8.87, "width" : 9.51} -->
 
 
 Notes: 
@@ -968,7 +978,7 @@ Notes:
 
 ---
 
-## Consistency in `C*`
+## Consistency in C*
 
 
  * `C*` offers **tunable consistency**
@@ -986,7 +996,7 @@ Notes:
 
 ---
 
-## `C*` Writes and Updates
+## C* Writes and Updates
 
 
  * Client can connect to any node
@@ -1012,7 +1022,7 @@ Notes:
 
 ## Write, RF=3, Consistency = ALL
 
-<img src="../../assets/images/cassandra/Consistency001.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Consistency001.png" style="width:70%;"/> <!-- {"left" : 2.64, "top" : 2.99, "height" : 7.73, "width" : 12.21} -->
 
 Notes: 
 
@@ -1056,12 +1066,13 @@ Notes:
 
 | Level         | Description                                                 | Usage                                                                           |
 |---------------|-------------------------------------------------------------|---------------------------------------------------------------------------------|
-| ANY           | Client will wait for ONE replica to be created              | Lowest consistency,</br>Highest availability, </br>Low latency,</br>Fast writes |
-| ALL           | Client will wait for ALL replicas to be created             | Highest consistency,</br>Lowest availability,</br>Not-so-fast writes            |
+| ANY           | Client will wait for ONE replica to be created              | Lowest consistency,</br>Highest availability, <br/>Low latency,<br/>Fast writes |
+| ALL           | Client will wait for ALL replicas to be created             | Highest consistency,<br/>Lowest availability,<br/>Not-so-fast writes            |
 | QUORUM        | Wait for Quorum (RF / 2 + 1) replicas                       | Good compromise                                                                 |
-| LOCAL_QUORUM  | Wait for all QUORUM replicas within the 'local' data center | Avoid inter-data center communication, </br>Consistency within a DC             |
+| LOCAL_QUORUM  | Wait for all QUORUM replicas within the 'local' data center | Avoid inter-data center communication, <br/>Consistency within a DC             |
 | Complete list | See documentation                                           |                                                                                 |
 
+<!-- {"left" : 0.84, "top" : 3.55, "height" : 1, "width" : 15.82} -->
 
 Notes: 
 
@@ -1127,7 +1138,8 @@ Notes:
 
  * Write Level (dynamic) = Local_Quorum
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Quiz-2-Multi-Datacenter-20.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Quiz-2-Multi-Datacenter-20.png" style="width:60%;"/><!-- {"left" : 3.06, "top" : 4.48, "height" : 6.62, "width" : 11.39} -->
+
 
 
 Notes: 
@@ -1139,7 +1151,8 @@ Notes:
 
 ## Quiz 2: Answer
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Quiz-2-Multi-Datacenter-020.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Quiz-2-Multi-Datacenter-020.png" style="width:70%;"/> <!-- {"left" : 2.37, "top" : 3.15, "height" : 7.42, "width" : 12.76} -->
+
 
 Notes: 
 
@@ -1163,7 +1176,8 @@ In DC2, RF4 and RF5 are created in background.
 
  * Write Level (dynamic) = Each_Quorum
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Quiz-3-Multi-Data-Center-21.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Quiz-2-Multi-Datacenter-20.png" style="width:60%;"/> <!-- {"left" : 2.82, "top" : 4.09, "height" : 6.9, "width" : 11.86} -->
+
 
 
 Notes: 
@@ -1175,7 +1189,8 @@ Notes:
 
 ## Quiz 3: Answer
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Quiz-3-Multi-Data-Center-22.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Quiz-3-Multi-Data-Center-22.png" style="width:70%;"/>  <!-- {"left" : 1.97, "top" : 2.91, "height" : 7.89, "width" : 13.57} -->
+
 
 Notes: 
 
@@ -1193,7 +1208,8 @@ In DC1, RF5 is created in background.
 
 ## Read, Consistency Level = ALL
 
-<img src="../../assets/images/cassandra/Read-Consistency-Level.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Read-Consistency-Level.png" style="width:60%;"/><!-- {"left" : 2.41, "top" : 2.77, "height" : 8.17, "width" : 12.68} -->
+
 
 
 Notes: 
@@ -1208,15 +1224,14 @@ Values are read from all replicas.
 
  * Specifies how many replicas need to respond to a read
 
-</br>
 
 
 | Level  | Description                                  | Usage                                                      |
 |--------|----------------------------------------------|------------------------------------------------------------|
-| ALL    | All replicas must respond, if not read fails | Highest consistency </br>Lowest availability               |
-| QUORUM | Returns after a quorum of replicas respond   | Strong consistency </br>Some level of failure is tolerated |
+| ALL    | All replicas must respond, if not read fails | Highest consistency <br/>Lowest availability               |
+| QUORUM | Returns after a quorum of replicas respond   | Strong consistency <br/>Some level of failure is tolerated |
 
-</br>
+<!-- {"left" : 0.25, "top" : 2.53, "height" : 1, "width" : 17} -->
 
  * Full list: See documentation
 
@@ -1229,7 +1244,8 @@ Notes:
 
 ## Read: Consistency Level = ALL, Resolving Conflicts...
 
-<img src="../../assets/images/cassandra/Read-Consistency-Level01.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Read-Consistency-Level01.png" style="width:60%;"/> <!-- {"left" : 2.49, "top" : 2.82, "height" : 8.08, "width" : 12.53} -->
+
 
 
 Notes: 
@@ -1247,7 +1263,8 @@ And the correct values are pushed to all out-of-date nodes.
 
  * Only replicas that are read will be updated
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Repair-on-Read-22.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Repair-on-Read-22.png" style="width:60%;"/> <!-- {"left" : 2.73, "top" : 4.41, "height" : 6.61, "width" : 12.04} -->
+
 
 
 Notes: 
@@ -1266,7 +1283,8 @@ Notes:
 
  * Obsolete value!!
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Read-Consistency-Level-ANY-23.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Read-Consistency-Level-ANY-23.png" style="width:60%;"/> <!-- {"left" : 3.08, "top" : 4.05, "height" : 7.25, "width" : 11.34} -->
+
 
 
 Notes: 
@@ -1287,7 +1305,8 @@ Notes:
 
  * Node2 replica is updated to X = 7
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Read-Consistency-Level-Quorum-24.png" style="width:50%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Read-Consistency-Level-Quorum-24.png" style="width:50%;"/> <!-- {"left" : 3.59, "top" : 4.89, "height" : 6.62, "width" : 10.31} -->
+
 
 
 Notes: 
@@ -1306,7 +1325,8 @@ Notes:
 
  * Node1 replica is updated with X = 6
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Read-Consistency-Level-Quorum--25.png" style="width:50%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Intro-Read-Consistency-Level-Quorum--25.png" style="width:50%;"/> <!-- {"left" : 3.5, "top" : 4.7, "height" : 6.65, "width" : 10.51} -->
+
 
 
 Notes: 
@@ -1402,7 +1422,7 @@ Notes:
 
 ## Dynamic Consistency Level Change
 
-<img src="../../assets/images/cassandra/Dynamic-Consistency-Level-Change.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Dynamic-Consistency-Level-Change.png" style="width:60%;"/> <!-- {"left" : 2.51, "top" : 2.87, "height" : 7.96, "width" : 12.49} -->
 
 
 Notes: 
@@ -1452,7 +1472,8 @@ Notes:
 
 ## Hinted Hand-Off
 
-<img src="../../assets/images/cassandra/Hinted-Hand-Off.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Hinted-Hand-Off.png" style="width:60%;"/> <!-- {"left" : 1.58, "top" : 2.55, "height" : 8.61, "width" : 14.34} -->
+
 
 
 

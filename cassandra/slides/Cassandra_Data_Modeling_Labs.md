@@ -9,7 +9,7 @@
 
  * Learn to model various scenarios on Cassandra using CQL
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Lesson-Objectives-1.png"   style="width:80%;" />
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Lesson-Objectives-1.png"   style="width:80%;" /> <!-- {"left" : 2.03, "top" : 3.78, "height" : 7.71, "width" : 13.44} -->
 
 Notes: 
 
@@ -126,7 +126,7 @@ Notes:
 
 ## Before You Start...
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Ask me the question!!
 
@@ -145,6 +145,8 @@ Notes:
 
 ## MyFlix: Users: Our Solution 
 
+<br/>
+
 ```text
 // Basic entity table for a user
 CREATE TABLE users (
@@ -158,6 +160,8 @@ CREATE TABLE users (
 );
 
 ```
+<!-- {"left" : 0.82, "top" : 1.89, "height" : 4.16, "width" : 7.96} -->
+
 
  * PK = user_name (unique)
 
@@ -189,6 +193,7 @@ UPDATE users SET emails = ['me@johnsmith.com'] + emails WHERE user_name = 'user1
 UPDATE users SET emails = emails + ['me2@johnsmith.com']  WHERE user_name = 'user1';
 
 ```
+<!-- {"left" : 0.82, "top" : 4, "height" : 1.26, "width" : 16.16} -->
 
 Notes: 
 
@@ -223,19 +228,27 @@ Notes:
 
 ## MyFlix: Users: Solution 2
 
+<br/>
 ```text
-CREATE TABLE users (   user_name text,   fname text,   lname text,   primary_email  text,   emails set<text>,   password text,   created_date timestamp,   PRIMARY KEY (user_name));
+CREATE TABLE users (   user_name text,   fname text,   
+lname text,   primary_email  text,   
+emails  set<text>,   password text,   
+created_date timestamp,   
+PRIMARY KEY (user_name));
 
 ```
+<!-- {"left" : 0.82, "top" : 2, "height" : 2.64, "width" : 15.08} -->
+
 
  * Primary email is a SEPARATE field.
 
-</br>
 
 ```text
-Adding to set:update users set emails = emails + {'newemail'} where user_name = 'user1';
+Adding to set:update users set emails = 
+emails + {'newemail'} where user_name = 'user1';
 
 ```
+<!-- {"left" : 0.82, "top" : 6.04, "height" : 1.35, "width" : 13.79} -->
 
 
 
@@ -274,7 +287,7 @@ Notes:
 
 ## MyFlix: Users: Part II
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  *  Q: Find users by  **user_name**  **or**  **primary email** 
 
@@ -295,6 +308,7 @@ CREATE TABLE users (	user_name text,
 create index  idx_email  on users(primary_email);
 
 ```
+<!-- {"left" : 0.82, "top" : 1.85, "height" : 1.29, "width" : 15.95} -->
 
  * Add an Index on primary email
 
@@ -320,6 +334,8 @@ Notes:
 CREATE TABLE users_by_email (	user_name text,	primary_email  text, 	PRIMARY KEY (primary_email));
 
 ```
+<!-- {"left" : 0.82, "top" : 2.63, "height" : 0.54, "width" : 16.61} -->
+
  * Create another table!
 
  * If I want to get the **first name** from the **email**
@@ -340,9 +356,14 @@ Notes:
 ## MyFlix: Users by Email: Solution
 
 ```text
-CREATE TABLE users_by_email (	user_name text,	fname  text,  // de-normalized	primary_email  text, 	PRIMARY KEY (primary_email));
+CREATE TABLE users_by_email (	user_name text,	fname  text,
+// de-normalized	primary_email  text, 	
+PRIMARY KEY (primary_email));
 
 ```
+<!-- {"left" : 0.82, "top" : 1.89, "height" : 1.3, "width" : 12.12} -->
+
+
  * De-normalize!
 
  * Now I can get email-> firstname in one query
@@ -365,19 +386,20 @@ Notes:
 
      - Need to insert into two tables!
 
-</br>
 
-| user_name   </br>(PK) | name       | pemail       | Emails  <Set>                       |
+| user_name   <br/>(PK) | name       | pemail       | Emails  <Set>                       |
 |-----------------------|------------|--------------|-------------------------------------|
-| u1                    | Mary Smith | u1@gmail.com | {u1@gmail.com,   </br>u1@work.com } |
+| u1                    | Mary Smith | u1@gmail.com | {u1@gmail.com,   <br/>u1@work.com } |
 
-</br>
+<!-- {"left" : 0.78, "top" : 3.5, "height" : 1.79, "width" : 15.95} -->
 
-</br>
+<br/>
 
-| Pemail   </br>(PK) | name       | userid |
+| Pemail   <br/>(PK) | name       | userid |
 |--------------------|------------|--------|
 | u1@gmail.com       | Mary Smith | u1     |
+
+<!-- {"left" : 0.77, "top" : 5.72, "height" : 1.4, "width" : 15.96} -->
 
 Notes: 
 
@@ -392,7 +414,8 @@ Notes:
 
      - Need to update two tables!
 
-<img src="../../assets/images/cassandra/3rd-party/Maintaining-Two-Tables-2.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Maintaining-Two-Tables-2.png" style="width:70%;"/> <!-- {"left" : 2.82, "top" : 3.82, "height" : 6.56, "width" : 11.85} -->
+
 
 
 Notes: 
@@ -409,7 +432,8 @@ Notes:
      - Need to update two tables!
 
 
-<img src="../../assets/images/cassandra/3rd-party/Maintaining-Two-Tables-3.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Maintaining-Two-Tables-3.png" style="width:70%;"/><!-- {"left" : 2.85, "top" : 3.95, "height" : 6.57, "width" : 11.8} -->
+
 
 
 Notes: 
@@ -437,6 +461,7 @@ Notes:
 
 ## Logged Batches
 
+<br/>
 
 ```text
 BEGIN BATCH
@@ -445,6 +470,7 @@ BEGIN BATCH
 APPLY BATCH;
 
 ```
+<!-- {"left" : 0.82, "top" : 2.13, "height" : 1.6, "width" : 16.37} -->
 
  * Batch is written to co-ordinator node and replicas
  * `C*` will ensure that batch succeeds – no rollbacks
@@ -459,7 +485,7 @@ Notes:
 
 ## MyFlix: Movies 
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Movies Features
 
@@ -491,10 +517,14 @@ Notes:
 ## MyFlix: Movies: Our Solution
 
 ```text
-create table features (	code  text,	name  text,	studio text,	release_date  timestamp,	type  text,   // TV-show,  Movies ..etc	PRIMARY KEY (code));
+create table features (	code  text,	name  text,	studio text,	
+release_date  timestamp,	type  text,   
+// TV-show,  Movies ..etc	PRIMARY KEY (code));
 
 ```
- * Q: Find movie by code	</br> select * from movies where code = 'jaws';
+<!-- {"left" : 0.82, "top" : 1.89, "height" : 1.15, "width" : 11.44} -->
+
+ * Q: Find movie by code select * from movies where code = 'jaws';
 
 
 
@@ -507,12 +537,17 @@ Notes:
 
 ## MyFlix: Movies: Find by Studio: Solution 1
 
+<br/>
+
 ```text
-create table studio_features (	code  text,	name  text,	studio text,	release_date  timestamp,	type  text,   // TV-show,  Movies ..etc	PRIMARY KEY ((studio),  code))
+create table studio_features (code  text,	
+name  text,	studio text,	release_date  timestamp,	type  text,   
+// TV-show,  Movies ..etc	PRIMARY KEY ((studio),  code))
 
 ```
+<!-- {"left" : 0.82, "top" : 2.11, "height" : 1.47, "width" : 15.89} -->
 
- * Q: Find movies by studio	</br>*select * from features where studio = 'HBO';*
+ * Q: Find movies by studio *select* from features where studio = 'HBO';*
 
 
 
@@ -525,14 +560,21 @@ Notes:
 
 ## MyFlix: Movies: Find by Studio: Solution 2
 
+<br/>
+
 ```text
-create table features (	code  text,	name  text,	studio text,	release_date  timestamp,	type  text,   // TV-show,  Movies ..etc	PRIMARY KEY (code));create index  idx_studio  on features(studio);
+create table features (	code  text,	name  text,	
+studio text,	release_date  timestamp,
+type  text,   // TV-show,  Movies ..etc	
+PRIMARY KEY (code));create index  
+idx_studio  on features(studio);
 
 ```
+<!-- {"left" : 0.82, "top" : 1.89, "height" : 2.37, "width" : 12.01} -->
 
  * Create an Index
 
- * Q: Find movies by studio	</br>*Select * from features where studio = 'HBO';*
+ * Q: Find movies by studio *Select * from features where studio = 'HBO';*
 
  * What are the implications of indexing?
 
@@ -547,7 +589,7 @@ Notes:
 
 ## MyFlix: Movies: Bonus Lab
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * How can we store "release dates" in movie table?
 
@@ -574,13 +616,16 @@ Notes:
 
 Create table features (	....	releases map<text, date>,	);
 
-INSERT into features(code, releases) values ('ryan', {'theatrical': '2000-01-01',    'dvd': '2002-01-02'} );
+INSERT into features(code, releases) values 
+('ryan', {'theatrical': '2000-01-01',    'dvd': '2002-01-02'} );
 
-INSERT into features (code, releases) values ('ryan',  {'blueray': '2010-10-10'}  );
+INSERT into features (code, releases) 
+values ('ryan',  {'blueray': '2010-10-10'}  );
 select * from features;
 
 
 ```
+<!-- {"left" : 0.82, "top" : 2.34, "height" : 4.31, "width" : 15.43} -->
 
 Notes: 
 
@@ -591,7 +636,7 @@ Notes:
 
 ## MyFlix: Ratings
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Users will rate movies
 
@@ -618,6 +663,7 @@ Notes:
 
 ## MyFlix: Ratings: Solution 1
 
+<br/>
 
 ```text
 create table users (	user_name text,	...	ratings map<text, int>	...);
@@ -627,6 +673,7 @@ insert into users (user_name, ratings) values ('user1', {'movie1': 3} );
 insert into users (user_name, ratings) values ('user1', {'movie2': 2}  );
 
 ```
+<!-- {"left" : 0.82, "top" : 2.09, "height" : 2.07, "width" : 15.43} -->
 
  * Ratings is a Map {'movie1': 3}
 
@@ -671,12 +718,17 @@ Notes:
 
 ## MyFlix: Ratings by User: Solution 2
 
+<br/>
 
 ```text
-create table ratings_by_user (	user_name text,	feature_code text,	rating int,	PRIMARY KEY (user_name, feature_code));
+create table ratings_by_user (	user_name text,	
+feature_code text,rating int,	
+PRIMARY KEY (user_name, feature_code));
 
 ```
- * We can get ratings per user quickly. </br>*select * from ratings_by_user where user_name = 'user1';*
+<!-- {"left" : 0.82, "top" : 2.15, "height" : 1.58, "width" : 12.03} -->
+
+ * We can get ratings per user quickly.*select * from ratings_by_user where user_name = 'user1';*
 
  * User can rate multiple movies
 
@@ -692,7 +744,7 @@ Notes:
 
 ## MyFlix: Ratings: Part II
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Queries
 
@@ -711,10 +763,17 @@ Notes:
 
 ## MyFlix: Ratings by Feature: Our Solution
 
+<br/>
+
 ```text
-create table ratings_by_feature (  // another table!	user_name text,	feature_code text,	rating int,	PRIMARY KEY ((feature_code), rating, user_name)) WITH CLUSTERING ORDER BY (rating DESC);
+create table ratings_by_feature (  // another table!	
+user_name text,	feature_code text,	rating int,	
+PRIMARY KEY ((feature_code), rating, user_name)) 
+WITH CLUSTERING ORDER BY (rating DESC);
 
 ```
+<!-- {"left" : 0.82, "top" : 2, "height" : 2.09, "width" : 14.64} -->
+
  * Q: Our PK ((feature_code), rating, user_name)Why not use PK ((feature_code), user_name, rating)?
 
  * What happens when a user changes the rating?U1,  M1  => rating = R1U1,  M1  => rating = R2
@@ -747,14 +806,17 @@ Notes:
 
  *   create table  **ratings_by_feature**  **(** 	    user_name text,	    feature_code text,	    rating int,
 
- *        **type text STATI`C*`* ,	PRIMARY KEY ((feature_code), rating, user_name) **)** WITH CLUSTERING ORDER BY (rating DESC);
+ *  **type text STATI`C*` ,PRIMARY KEY ((feature_code), rating, user_name))** WITH CLUSTERING ORDER BY (rating DESC);
 
 ```text
 create table ratings_by_feature (
 	user_name text,	feature_code text,	rating int,
-  type text,	PRIMARY KEY ((feature_code), rating, user_name)) WITH CLUSTERING ORDER BY (rating DESC);
+  type text,	PRIMARY KEY ((feature_code), rating, user_name)) 
+WITH CLUSTERING ORDER BY (rating DESC);
 
 ```
+<!-- {"left" : 0.82, "top" : 5.73, "height" : 1.9, "width" : 15.24} -->
+
 
 Notes: 
 
@@ -787,7 +849,7 @@ Notes:
 
 ## MyFlix: Bonus: User Devices
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * A user has multiple devices (TV, tablet, phone, computer)
  * Devices belong to one user
@@ -817,12 +879,17 @@ Notes:
 
 
 ```text
-create table devices (	device_id  uuid, 	mac text,	description text,	device_type int,	user_id text,	PRIMARY KEY (device_id));
+create table devices (	device_id  uuid, 	mac text,	
+description text,<br/>device_type int,	user_id text,	
+PRIMARY KEY (device_id));
 
 -- Also modify users table to include devices he/she owns
-create table users (	user_id  text,   devices  set<uuid> // new field for devices	...	);
+create table users (	user_id  text,   devices  
+set<uuid> // new field for devices	...	);
 
 ```
+<!-- {"left" : 0.82, "top" : 2.72, "height" : 3.53, "width" : 15.65} -->
+
 
 Notes: 
 
@@ -856,7 +923,7 @@ Notes:
 
 ## MyFlix: Resuming a Movie
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Users can watch a movie from multiple devices
 
@@ -875,11 +942,18 @@ Notes:
 
 ## MyFlix: Resuming Movie: Our Solutions
 
+<br/>
 
 ```text
-create table movie_resume(	feature_code text, 	device_id uuid, // last device 	position int, // in seconds	user_id text,	PRIMARY KEY ((user_id), feature_code));
+create table movie_resume(	feature_code text, 	
+device_id uuid, // last device 	
+position int, // in seconds	user_id text,	
+PRIMARY KEY ((user_id), feature_code));
 
 ```
+<!-- {"left" : 0.82, "top" : 2.2, "height" : 2.08, "width" : 12.62} -->
+
+
  * Do we store only the 'latest resume position' per movie?
 
  * Do we need to store device_id (last watched on)?
@@ -898,7 +972,8 @@ Notes:
 ## Recommended: Amazon Prime
 
 
-<img src="../../assets/images/cassandra/3rd-party/Recommended-Amazon-Prime.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Recommended-Amazon-Prime.png" style="width:70%;"/><!-- {"left" : 2.93, "top" : 2.87, "height" : 7.97, "width" : 11.64} -->
+
 
 
 Notes: 
@@ -911,7 +986,7 @@ Notes:
 ## Netflix: Profiles
 
 
-<img src="../../assets/images/cassandra/Netflix-001.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Netflix-001.png" style="width:60%;"/><!-- {"left" : 1.71, "top" : 3.13, "height" : 7.46, "width" : 14.08} -->
 
 Notes: 
 
@@ -923,7 +998,7 @@ Notes:
 ## Recommendations with Profiles
 
 
-<img src="../../assets/images/cassandra/3rd-party/Recommendations-Profiles.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Recommendations-Profiles.png" style="width:70%;"/> <!-- {"left" : 1.38, "top" : 3.79, "height" : 6.12, "width" : 14.73} -->
 
 Notes: 
 
@@ -935,7 +1010,7 @@ Notes:
 ## Recommendations
 
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Recommendations-7.png" style="width:40%; float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Recommendations-7.png" style="width:40%; float:right;"/> ><!-- {"left" : 10.96, "top" : 2.33, "height" : 5.79, "width" : 6.03} -->
 
  * Heavy machine learning!
  * Many algorithms
@@ -1049,13 +1124,11 @@ Notes:
 
 ## YouTube Videos
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Videos belong to users
-
  * Video files may be large
      - Large files are usually not stored in Cassandra
-
  * Video attributes:
 
      - Title
@@ -1066,10 +1139,8 @@ Notes:
      - Tags
 
  * Videos cannot be identified by names or title ("my cat" is not unique)
-
  * Query:
      - Query video by a unique 'video_id'
-
  * **Answer: Next Slide!**
 
 Notes: 
@@ -1097,9 +1168,13 @@ CREATE TABLE videos (
 cqlsh> INSERT INTO videos
 (video_id, video_name, user_name, description, location, tags, upload_date)
 VALUES
-(18134b9d-6222-4f0e-b06d-4ba1e6c62f50, 'my cat', 'johnsmith', 'this is my cat', 'http://cdn.com/video/18134b9d-6222-4f0e-b06d-4ba1e6c62f50', {'cats', 'pets'}, toTimestamp(now()));
+(18134b9d-6222-4f0e-b06d-4ba1e6c62f50, 'my cat', 
+'johnsmith', 'this is my cat', 
+'http://cdn.com/video/18134b9d-6222-4f0e-b06d-4ba1e6c62f50', 
+{'cats', 'pets'}, toTimestamp(now()));
 
 ```
+<!-- {"left" : 0.82, "top" : 2.47, "height" : 6.64, "width" : 15.96} -->
 
 Notes: 
 
@@ -1136,7 +1211,7 @@ Notes:
 
 ## YouTube: User/Video Relation
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Users often have many videos
 
@@ -1182,6 +1257,8 @@ CREATE TABLE videos_by_user (
 
 
 ```
+<!-- {"left" : 0.82, "top" : 5.12, "height" : 3.69, "width" : 10.72} -->
+
 
 Notes: 
 
@@ -1255,7 +1332,7 @@ Notes:
 
 ## Online Shopping
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Models
 
@@ -1293,6 +1370,8 @@ create table users(
 
 
 ```
+<!-- {"left" : 0.82, "top" : 2.69, "height" : 1.83, "width" : 14.54} -->
+
 
 Notes: 
 
@@ -1328,6 +1407,8 @@ create table shopping_cart (
 
 
 ```
+<!-- {"left" : 0.82, "top" : 6.28, "height" : 2.56, "width" : 8.77} -->
+
 
 Notes: 
 
@@ -1343,7 +1424,7 @@ Notes:
 
 ## User Activity
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Users browse pages
 
@@ -1373,11 +1454,16 @@ Notes:
 
  * Discuss any potential limitations of this design.
 
+<br/>
+
 ```text
-create table user_activities (	user_id  text,	activity_time  timestamp,	activity text,	details text,
-	PRIMARY KEY ((user_id),  activity_time))WITH CLUSTERING ORDER BY (activity_time DESC);
+create table user_activities (	user_id  text,	
+activity_time  timestamp,	activity text,	details text,
+	PRIMARY KEY ((user_id),  activity_time))
+WITH CLUSTERING ORDER BY (activity_time DESC);
 
 ```
+<!-- {"left" : 0.82, "top" : 2.78, "height" : 2.01, "width" : 14.31} -->
 
  * insert into user_activities(user_id, activity,  details, activity_time) values ('user1', 'post',  'post1',   '2014-01-01 10:00:00');insert into user_activities(user_id, activity, details, activity_time) values ('user1', 'click', 'image1',  '2014-01-01 10:03:00');
 
@@ -1400,6 +1486,8 @@ Notes:
 |      |                     |          |                  |
 | Pat  |                     |          |                  |
 | Pat  |                     |          |                  |
+
+<!-- {"left" : 1.38, "top" : 2.34, "height" :1, "width" : 14.74} -->
 
  * Note : Activity is reverse sorted by time
 
@@ -1466,10 +1554,13 @@ Notes:
  * Not the same as (user_id, month, time)!
 
 ```text
-create table user_activities (	user_id  text,	time  timestamp,	month text,	activity text,	details text,
-	PRIMARY KEY ((user_id, month),  time)) WITH  CLUSTERING ORDER BY (time DESC);
+create table user_activities (	user_id  text,	time  timestamp,	month text,	
+activity text,	details text,
+	PRIMARY KEY ((user_id, month),  time)) 
+WITH  CLUSTERING ORDER BY (time DESC);
 
 ```
+<!-- {"left" : 0.82, "top" : 4.16, "height" : 1.69, "width" : 16.52} -->
 
 Notes: 
 
@@ -1480,7 +1571,8 @@ Notes:
 
 ## User Activities: Sample View
 
-<img src="../../assets/images/cassandra/3rd-party/User-Activities-Sample-View.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/User-Activities-Sample-View.png" style="width:70%;"/><!-- {"left" : 3.15, "top" : 2.41, "height" : 7.58, "width" : 11.21} -->
+
 
 
 Notes: 
@@ -1495,11 +1587,16 @@ Notes:
 
  * select count(*) from activity_by_time where activity = 'post' AND activity_time = '2014-01-01';
 
+<br/>
+
 ```text
-create table activity_by_time (	user text,	activity text,	activity_time  timestamp,
-	PRIMARY KEY (activity,  activity_time)) WITH  CLUSTERING ORDER BY (activity_time DESC);
+create table activity_by_time (	user text,	
+activity text,	activity_time  timestamp,
+	PRIMARY KEY (activity,  activity_time)) 
+WITH  CLUSTERING ORDER BY (activity_time DESC);
 
 ```
+<!-- {"left" : 0.82, "top" : 3.3, "height" : 2.01, "width" : 12} -->
 
  * Q: Find activities for a particular day
 
@@ -1512,7 +1609,9 @@ Notes:
 
 ## Next: Log Collection
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Next-Log-Collection-8.jpg" style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-Labs-Next-Log-Collection-8.jpg" style="width:70%;"/> <!-- {"left" : 2.69, "top" : 2.37, "height" : 8.97, "width" : 12.12} -->
+
+
 
 
 Notes: 
@@ -1555,7 +1654,8 @@ Notes:
 
 ## Distributed Log Collection Tools: Flume
 
-<img src="../../assets/images/cassandra/flume.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/cassandra/flume.png" style="width:50%;float:right;"/><!-- {"left" : 9.44, "top" : 2.24, "height" : 7.66, "width" : 7.74} -->
+
 
  * Part of Hadoop ecosystem
 
@@ -1575,7 +1675,7 @@ Notes:
 
 ## Distributed Log Collection Tools: Kafka
 
-<img src="../../assets/images/cassandra/kafka-architecture2.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/kafka-architecture2.png" style="width:30%;float:right;"/><!-- {"left" : 11.5, "top" : 2.33, "height" : 4.99, "width" : 5.69} -->
 
  * Producer/Consumer model
 
@@ -1607,7 +1707,7 @@ Notes:
 
 ## Log Collection: Log Table
 
-<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/question.png" style="width:30%;float:right;"/><!-- {"left" : 12.52, "top" : 1.89, "height" : 4.12, "width" : 4.83} -->
 
  * Logs contain:
 
@@ -1636,9 +1736,13 @@ Notes:
 
 
 ```text
-create table logs (	source text,	severity  text,  // WARN, INFO	log_time  timestamp,	raw_log blob     // or text	log_date, text,  // 2014-01-01		PRIMARY KEY ((source, log_date), log_time)) WITH CLUSTER ORDER BY (log_time DESC);
+create table logs (	source text,	severity  text,  // WARN, INFO	
+log_time  timestamp,raw_log blob     // or text	log_date, text,  // 2014-01-01		
+PRIMARY KEY ((source, log_date), log_time)) 
+WITH CLUSTER ORDER BY (log_time DESC);
 
 ```
+<!-- {"left" : 0.82, "top" : 2.55, "height" : 1.6, "width" : 16.36} -->
 
 Notes: 
 

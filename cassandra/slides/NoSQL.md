@@ -31,7 +31,7 @@ Notes:
 
 ## Story of Scaling a Startup...
 
-<img src="../../assets/images/cassandra/Story-of-Scaling.png"  style="width:70%;" />
+<img src="../../assets/images/cassandra/Story-of-Scaling.png"  style="width:70%;" /> <!-- {"left" : 2.75, "top" : 2.61, "height" : 8.49, "width" : 12.01} -->
 
 
 Notes: 
@@ -43,7 +43,7 @@ Notes:
 
 ## Scaling Startup: 1 Month In
 
-<img src="../../assets/images/cassandra/Scaling-Startup.png"  style="width:80%;" />
+<img src="../../assets/images/cassandra/Scaling-Startup.png"  style="width:70%;" /> <!-- {"left" : 2.75, "top" : 2.61, "height" : 8.49, "width" : 12.01} -->
 
 
 Notes: 
@@ -56,7 +56,7 @@ Notes:
 ## Scaling a Startup: X Months In...
 
 
-<img src="../../assets/images/cassandra/Scaling-Startup-02.png"  style="width:80%;" />
+<img src="../../assets/images/cassandra/Scaling-Startup-02.png"  style="width:70%;" /> <!-- {"left" : 2.96, "top" : 2.12, "height" : 9.43, "width" : 11.59} -->
 
 Notes: 
 
@@ -166,7 +166,7 @@ Notes:
 ## Growth of Unstructured Data
 
 
-<img src="../../assets/images/cassandra/NoSQL-Intro-Growth-of-Unstructured-Data-1.png"  style="width:70%;" />
+<img src="../../assets/images/Cassandra/Growth-Unstructured-Data.png"  style="width:70%;" /><!-- {"left" : 2.72, "top" : 3.03, "height" : 7.65, "width" : 12.06} -->
 
 Notes: 
 
@@ -186,7 +186,7 @@ Notes:
 
  * This results in 100s of millions (even billions) of record points every day!!
 
-<img src="../../assets/images/cassandra/Google-Maps-Navigation.png"  style="width:70%;" />
+<img src="../../assets/images/cassandra/Google-Maps-Navigation.png"  style="width:70%;" /> <!-- {"left" : 2.23, "top" : 5.44, "height" : 5.03, "width" : 13.04} -->
 
 
 Notes: 
@@ -198,7 +198,7 @@ Notes:
 
 ## The Perfect Data Store!
 
-<img src="../../assets/images/cassandra/Data-Store.png"  style="width:80%;" />
+<img src="../../assets/images/cassandra/Data-Store.png"  style="width:80%;" /> <!-- {"left" : 2.91, "top" : 2.83, "height" : 7.77, "width" : 11.68} -->
 
 
 
@@ -278,6 +278,7 @@ Notes:
 | Foreign Keys | No                                     | Supported                               |
 | Joins        | No                                     | Yes                                     |
 
+ <!-- {"left" : 1.35, "top" : 3.35, "height" : 1, "width" : 14.79} -->
 
 Notes: 
 
@@ -349,7 +350,7 @@ Notes:
 
 ---
 
-## A**C**ID: Consistency
+## ACID: Consistency
 
 
  * Replicas agree on latest value
@@ -371,7 +372,8 @@ Notes:
 
 ## Quiz
 
-<img src="../../assets/images/cassandra/Quize.png"  style="width:60%;float:right;"/>
+<img src="../../assets/images/cassandra/Quize.png"  style="width:50%;float:right;"/> <!-- {"left" : 9.92, "top" : 1.89, "height" : 5.06, "width" : 7.18} -->
+
 
  * Imagine visiting a bank
 
@@ -417,7 +419,7 @@ Notes:
 ## Eventual Consistency Example
 
 
-<img src="../../assets/images/cassandra/NoSQL-Intro-Eventual-Consistency-Example-3.png"  style="width:80%;" />
+<img src="../../assets/images/cassandra/NoSQL-Intro-Eventual-Consistency-Example-3.png"  style="width:80%;" /> <!-- {"left" : 1.94, "top" : 4, "height" : 5.71, "width" : 13.61} -->
 
 
 Notes: 
@@ -453,10 +455,10 @@ Notes:
 
 ---
 
-## Eventual Consistency <br/> Example: Video + Comments
+## Eventual Consistency Example: Video + Comments
 
 
-<img src="../../assets/images/cassandra/Eventual-Consistency.png "  style="width:50%;" />
+<img src="../../assets/images/cassandra/Eventual-Consistency.png"  style="width:50%;" /> <!-- {"left" : 4.4, "top" : 3.12, "height" : 8.11, "width" : 8.7} -->
 
 Notes: 
 
@@ -523,7 +525,8 @@ Notes:
 
  * CAP Theorem says we can have **2 of 3**
 
-<img src="../../assets/images/cassandra/cap-partition.png"  style="width:70%;" />
+<img src="../../assets/images/cassandra/cap-partition.png"  style="width:70%;" /> <!-- {"left" : 1.92, "top" : 5.71, "height" : 4.81, "width" : 13.66} -->
+
 
 Notes: 
 
@@ -535,7 +538,7 @@ Notes:
 ## CAP Theorem
 
 
-<img src="../../assets/images/cassandra/CAP-Theorem.png"  style="width:70%;" />
+<img src="../../assets/images/cassandra/CAP-Theorem.png"  style="width:50%;" /> <!-- {"left" : 4.24, "top" : 2.62, "height" : 8.46, "width" : 9.03} -->
 
 Notes: 
 
@@ -546,7 +549,8 @@ Notes:
 
 ## CAP Classification
 
-<img src="../../assets/images/cassandra/NoSQL-Intro-CAP-Classification-5.png"  style="width:80%;" />
+<img src="../../assets/images/cassandra/NoSQL-Intro-CAP-Classification-5.png"  style="width:80%;" /> <!-- {"left" : 2.66, "top" : 2.57, "height" : 8.57, "width" : 12.18} -->
+
 
 
 Notes: 
@@ -595,6 +599,8 @@ Notes:
 | Redis     | CouchDB   |       | Cassandra   |
 |           | CouchBase |       | Accumulo    |
 
+ <!-- {"left" : 1.48, "top" : 3.37, "height" :1, "width" : 14.54} -->
+
 Notes: 
 
 
@@ -626,7 +632,8 @@ Notes:
 
 ## Document Stores
 
-<img src="../../assets/images/cassandra/3rd-party/NoSQL-Intro-Document-Stores-6.png"  style="width:20%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/NoSQL-Intro-Document-Stores-6.png"  style="width:20%;float:right;"/> <!-- {"left" : 13.51, "top" : 1.89, "height" : 4.1, "width" : 3.41} -->
+
 
  * Principal storage abstraction is a document
 
@@ -652,7 +659,8 @@ Notes:
 
 ## Graph Databases
 
-<img src="../../assets/images/cassandra/3rd-party/NoSQL-Intro-Graph-Databases-7.jpg"  style="width:40%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/NoSQL-Intro-Graph-Databases-7.jpg"  style="width:40%;float:right;"/> <!-- {"left" : 10.51, "top" : 1.89, "height" : 4.9, "width" : 6.53} -->
+
 
  * Equivalent of RDBMS-es for graphs
 
@@ -685,7 +693,10 @@ Notes:
  * Cassandra, HBase, Accumulo, SkyllaDB, etc.
 
 
-<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:20%;" /> &nbsp; &nbsp;<img src="../../assets/images/logos/hbase-logo-01.png" style="width:30%;" /> &nbsp; &nbsp; <img src="../../assets/images/logos/accumulo.png" style="width:30%;" />
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:20%;" /> <!-- {"left" : 1.25, "top" : 6.78, "height" : 1.82, "width" : 2.71} -->
+ &nbsp; &nbsp;<img src="../../assets/images/logos/hbase-logo-01.png" style="width:30%;" /> <!-- {"left" : 5.78, "top" : 7.12, "height" : 1.13, "width" : 4.41} -->
+ &nbsp; &nbsp; <img src="../../assets/images/logos/accumulo.png" style="width:30%;" /> <!-- {"left" : 11.25, "top" : 7.05, "height" : 1.28, "width" : 5} -->
+
 
 
 
@@ -723,7 +734,7 @@ Notes:
 
 ## Row-Based Store
 
-<img src="../../assets/images/cassandra/Row-Based-Store.png"   style="width:80%;" />
+<img src="../../assets/images/cassandra/Row-Based-Store.png"   style="width:80%;" /> <!-- {"left" : 2.33, "top" : 3.67, "height" : 6.37, "width" : 12.84} -->
 
 
 
@@ -737,7 +748,7 @@ Notes:
 ## Columnar Store
 
 
-<img src="../../assets/images/cassandra/Columnar-Store.png" style="width:80%;" />
+<img src="../../assets/images/cassandra/Columnar-Store.png" style="width:70%;" /> <!-- {"left" : 2.79, "top" : 2.38, "height" : 8.94, "width" : 11.93} -->
 
 
 Notes: 
@@ -750,7 +761,7 @@ Notes:
 ## NoSQL & CAP—Recap
 
 
-<img src="../../assets/images/cassandra/NoSQL-CAP-Recap.png" style="width:70%;" />
+<img src="../../assets/images/cassandra/NoSQL-CAP-Recap.png" style="width:80%;" /> <!-- {"left" : 1.92, "top" : 3.24, "height" : 7.23, "width" : 13.67} -->
 
 
 
@@ -783,7 +794,8 @@ Notes:
 
 ## Data Spectrum
 
-<img src="../../assets/images/cassandra/Data-Spectrum.png" style="width:80%;" />
+<img src="../../assets/images/cassandra/Data-Spectrum.png" style="width:80%;" /> <!-- {"left" : 2.76, "top" : 3.44, "height" : 6.84, "width" : 11.99} -->
+
 
 
 Notes: 
@@ -803,7 +815,7 @@ Notes:
  * But if all your data is in a HBase or Cassandra
 
 
-<img src="../../assets/images/cassandra/NoSQL-Intro-Cassandra-and-Data-Analytics-13.png" style="width:80%;" />
+<img src="../../assets/images/cassandra/NoSQL-Intro-Cassandra-and-Data-Analytics-13.png" style="width:80%;" /> <!-- {"left" : 1.84, "top" : 4.86, "height" : 5.2, "width" : 13.82} -->
 
 Notes: 
 
@@ -813,7 +825,8 @@ Notes:
 
 ## Numbers Every One Should Know by Jeff Dean, Fellow @ Google
 
-<img src="../../assets/images/cassandra/3rd-party/Numbers-Every.png" style="width:65%;" />
+<img src="../../assets/images/cassandra/3rd-party/Numbers-Every.png" style="width:65%;" /> <!-- {"left" : 2.31, "top" : 2.97, "height" : 8.48, "width" : 12.88} -->
+
 
 
 Notes: 
@@ -857,7 +870,7 @@ Notes:
 
 ## HBase and Phoenix for Data Analytics
 
-<img src="../../assets/images/cassandra/HBase-Phoenix-Data-Analytics.png" style="width:70%;" />
+<img src="../../assets/images/cassandra/HBase-Phoenix-Data-Analytics.png" style="width:40%;" /> <!-- {"left" : 4.51, "top" : 2.32, "height" : 8.78, "width" : 8.48} -->
 
 
 Notes: 
@@ -868,7 +881,7 @@ Notes:
 
 ## Growth of Unstructured Data
 
-<img src="../../assets/images/cassandra/Growth-Unstructured-Data.png" style="width:70%;" />
+<img src="../../assets/images/cassandra/Growth-Unstructured-Data.png" style="width:70%;" /> <!-- {"left" : 2.33, "top" : 3.09, "height" : 8.14, "width" : 12.84} -->
 
 
 
@@ -882,7 +895,8 @@ Notes:
 
 ## CAP Theorem
 
-<img src="../../assets/images/cassandra/CAP-Theorem.png"  style="width:70%;" />
+<img src="../../assets/images/cassandra/CAP-Theorem.png"  style="width:50%;" /> <!-- {"left" : 4.37, "top" : 2.75, "height" : 8.2, "width" : 8.75} -->
+
 
 Notes: 
 

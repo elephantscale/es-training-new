@@ -1,6 +1,6 @@
 # Data Modeling with Cassandra  - Part 1
 
-<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:30%;" />
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:30%;" /><!-- {"left" : 6.51, "top" : 7.6, "height" : 3.01, "width" : 4.48} -->
 
 
 ---
@@ -65,6 +65,8 @@ select * from movies;
 
 select * from movies where code = 'starwars';
 ```
+<!-- {"left" : 0.82, "top" : 4.89, "height" : 2.35, "width" : 11.21} -->
+
 
 Notes: 
 
@@ -75,7 +77,8 @@ Notes:
 
 ## CQL: Before & After
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-CQL-Before-After-1.png"  style="width:80%;" />
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-CQL-Before-After-1.png"  style="width:70%;" /><!-- {"left" : 0.78, "top" : 2.02, "height" : 9.38, "width" : 13.36} -->
+
 
 
 
@@ -90,7 +93,8 @@ Notes:
 
 ## Cassandra Data Organization
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Tables-10.png"  style="width:80%;" />
+<img src="../../assets/images/cassandra/Cassandra-Intro-Data-Organization-7.png"  style="width:70%;" /> <!-- {"left" : 2.65, "top" : 2.73, "height" : 8.25, "width" : 12.19} -->
+
 
 Notes: 
 
@@ -101,7 +105,7 @@ Notes:
 
 ## Data Hierarchy
 
-<img src="../../assets/images/cassandra/Data-Hierarchy-Visualization.png"  style="width:60%;" />
+<img src="../../assets/images/cassandra/Data-Hierarchy-Visualization.png"  style="width:50%;" /> <!-- {"left" : 4.12, "top" : 2.22, "height" : 9.27, "width" : 9.27} -->
 
 Notes: 
 
@@ -134,6 +138,7 @@ Notes:
 
 ## Creating Keyspaces
 
+<br/>
 
 ```sql
 CREATE KEYSPACE <name>
@@ -142,6 +147,7 @@ WITH replication = {
   <options>
 }
 ```
+<!-- {"left" : 0.82, "top" : 2.15, "height" : 2.2, "width" : 11.54} -->
 
  * Specify replication properties
 
@@ -166,7 +172,10 @@ WITH replication = {
 }
 
 ```
-<img src="../../assets/images/cassandra/replication.png"  style="width:40%;float:right;"/>
+<!-- {"left" : 0.82, "top" : 1.79, "height" : 2.49, "width" : 7.8} -->
+
+<img src="../../assets/images/cassandra/replication.png"  style="width:40%;float:right;"/><!-- {"left" : 9.21, "top" : 2.14, "height" : 6.47, "width" : 7.96} -->
+
 
  * 'SimpleStrategy' is fine for evaluation purposes. (A single data center)
 
@@ -188,11 +197,15 @@ WITH replication = {
   'DC2': 2};
 
 ```
-<img src="../../assets/images/cassandra/Replication01.png"  style="width:50%;float:right;"/>
+<!-- {"left" : 0.82, "top" : 1.89, "height" : 1.9, "width" : 7.98} -->
+
+<img src="../../assets/images/cassandra/Replication01.png"  style="width:50%;float:right;"/><!-- {"left" : 8.44, "top" : 4.24, "height" : 3.9, "width" : 8.55} -->
 
  * Each data center has its own replication factor
 
  * Use 'NetworkTopology' for production uses (even when using a single data center)
+
+
 
 Notes: 
 
@@ -213,6 +226,8 @@ ALTER KEYSPACE  myflix  WITH REPLICATION = {
          'class' : 'NetworkTopologyStrategy',     
          'dc1' : 3 };
 ```
+<!-- {"left" : 0.82, "top" : 2.91, "height" : 2.45, "width" : 12.87} -->
+
 
 Notes: 
 
@@ -223,7 +238,8 @@ Notes:
 
 ## Drop Keyspace
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-Drop-Keyspace-3.png"  style="width:20%;float:right;"/>
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-Drop-Keyspace-3.png"  style="width:20%;float:right;"/><!-- {"left" : 12.94, "top" : 1.36, "height" : 3.95, "width" : 3.95} -->
+
 
 * Irreversible removal of the keyspace with all data in it deleted permanently!
 
@@ -237,6 +253,7 @@ DROP KEYSPACE IF EXISTS keyspace1;
 
 ```
 
+<!-- {"left" : 0.82, "top" : 4.09, "height" : 2.45, "width" : 11.43} -->
 
 
 
@@ -264,6 +281,7 @@ use myflix;
 
 create table  (...); 
 ```
+<!-- {"left" : 0.82, "top" : 4.74, "height" : 2.25, "width" : 14.19} -->
 
 
 
@@ -274,7 +292,7 @@ Notes:
 
 ---
 
-## `C*` Tables
+## C* Tables
 
 
  * `C*` Tables contain rows and columns
@@ -285,7 +303,9 @@ Notes:
 
  * Table data is replicated according to replication strategy for the keyspace the table belongs to
 
-<img src="../../assets/images/cassandra/C-Tables.png"  style="width:50%;"/>
+<img src="../../assets/images/cassandra/C-Tables.png"  style="width:50%;"/><!-- {"left" : 4.62, "top" : 5.79, "height" : 4.96, "width" : 8.26} -->
+
+
 
 Notes: 
 
@@ -296,7 +316,8 @@ Notes:
 
 ## Distributing Table Data
 
-<img src="../../assets/images/cassandra/partitioning2.png"  style="width:50%;float:right;"/>
+<img src="../../assets/images/cassandra/partitioning2.png"  style="width:50%;float:right;"/><!-- {"left" : 9.29, "top" : 2.18, "height" : 6.52, "width" : 7.83} -->
+
 
  * Table is distributed as **partitions** across nodes
 
@@ -324,7 +345,9 @@ CREATE TABLE <table name> (
   PRIMARY KEY (???)
 );
 ```
+<!-- {"left" : 0.82, "top" : 1.75, "height" : 2.43, "width" : 8.32} -->
 
+<br/>
 
 ```sql
 CREATE TABLE users(
@@ -335,6 +358,8 @@ CREATE TABLE users(
     PRIMARY KEY (user_id)
 );
 ```
+<!-- {"left" : 0.82, "top" : 4.34, "height" : 3.02, "width" : 6.45} -->
+
 
 * Each table must have a primary key
 
@@ -347,11 +372,12 @@ CREATE TABLE users(
 ## How is Data Stored
 
 
-<img src="../../assets/images/cassandra/3rd-party/How-is-Data-Stored.png"  style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/How-is-Data-Stored.png"  style="width:70%;"/><!-- {"left" : 4.46, "top" : 2.27, "height" : 5.33, "width" : 8.58} -->
 
 
 
-Note: Column Families was the original name for "tables" but please use Table for CQL3 and onwards.
+
+Note : Column Families was the original name for "tables" but please use Table for CQL3 and onwards.
 Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
 
 
@@ -384,6 +410,7 @@ CREATE TABLE users(
     PRIMARY KEY (state, user_id)
 );
 ```
+<!-- {"left" : 0.82, "top" : 2.87, "height" : 7.69, "width" : 7.74} -->
 
 Notes: 
 
@@ -394,7 +421,8 @@ Notes:
 
 ## CQL Data Types
 
- <img src="../../assets/images/cassandra/3rd-party/cql_data_types.png"  style="width:80%;"/>
+ <img src="../../assets/images/cassandra/3rd-party/cql_data_types.png"  style="width:80%;"/><!-- {"left" : 2.07, "top" : 1.89, "height" : 6.53, "width" : 13.37} -->
+
 
 
 * [Reference](https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cql_data_types_c.html)
@@ -406,21 +434,23 @@ Notes:
 
 ---
 
-## `C*` vs.  RDMBS
+## C* vs.  RDMBS
 
 | Feature                                      | RDBMS                                         | Cassandra                                            |
 |----------------------------------------------|-----------------------------------------------|------------------------------------------------------|
-| Unique Primary Key                           | Required most of the time. </br>Not Null      | Required always. </br>NOT Null.                      |
-| Auto Sequence key generation  </br>(1, 2,3...) | YES </br>(id INT AUTO_INCREMENT PRIMARY KEY)  | NO </br>Relies on application to provide unique PKs  |
+| Unique Primary Key                           | Required most of the time. <br/>Not Null      | Required always. <br/>NOT Null.                      |
+| Auto Sequence key generation  <br/>(1, 2,3...) | YES <br/>(id INT AUTO_INCREMENT PRIMARY KEY)  | NO <br/>Relies on application to provide unique PKs  |
 | Foreign Keys                                 | YES                                           | NO                                                   |
 | Referential Integrity                        | YES                                           | NO                                                   |
 | Mandatory columns (Non-NULL)                 | YES                                           | NO                                                   |
 
-</br>
+<!-- {"left" : 0.8, "top" : 1.96, "height" : 1, "width" : 9.64} -->
 
-<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 5.28, "top" : 1.21, "height" : 3.27, "width" : 4.92} -->
+<br/>
 
-* **Question for class** : Why `C*` does  **NOT**  do AUTO SEQUENCE key?
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 10.89, "top" : 1.6, "height" : 4.2, "width" : 6.32} -->
+
+* **Question for class:** Why `C*` does  **NOT**  do AUTO SEQUENCE key?
 
 
 Notes: 
@@ -472,16 +502,17 @@ Notes:
 
  * Lets create a "features" table with the following attributes:
 
-</br>
+<br/>
 
 
 | Attribute    | Type   | Example                                  |
 |--------------|--------|------------------------------------------|
-| Name         | String | "Star Wars"  </br>"Mad Men"              |
-| Type         | String | "Movie"  </br> "TV Show"  </br>"Standup" |
+| Name         | String | "Star Wars"  <br/>"Mad Men"              |
+| Type         | String | "Movie"  <br/> "TV Show"  <br/>"Standup" |
 | Release_date | Data   | 2016-01-01                               |
 
-</br>
+<!-- {"left" : 0.77, "top" : 2.7, "height" : 1, "width" : 15.92} -->
+
 
 * **What is our primary key?**
     - Remember, primary key must be unique for each row
@@ -503,20 +534,23 @@ Notes:
 
      - "Mad Men" : http://www.imdb.com/title/tt0804503/
 
-</br>
 
 | Attribute    | Type   | Example                                  |
 |--------------|--------|------------------------------------------|
-| **Code**         | **String** | **"star1"   </br> "madmen"**                |
-| Name         | String | "Star Wars"  </br>"Mad Men"              |
-| Type         | String | "Movie"  </br> "TV Show"  </br>"Standup" |
+| **Code**         | **String** | **"star1"**  <br/> **"madmen"**                |
+| Name         | String | "Star Wars"  <br/>"Mad Men"              |
+| Type         | String | "Movie"  <br/> "TV Show"  <br/>"Standup" |
 | Release_date | Data   | 2016-01-01                               |
+
+<!-- {"left" : 0.96, "top" : 5.34, "height" : 1, "width" : 15.58} -->
 
 Notes:
 
 ---
 
 ## Myflix 'Features' Table
+
+<br/>
 
 ```sql
 create table features (
@@ -528,6 +562,8 @@ create table features (
     PRIMARY KEY (code) 
 );
 ```
+<!-- {"left" : 0.82, "top" : 1.99, "height" : 3.23, "width" : 5.7} -->
+
 
 * We are using **`text`** type to represent strings
 
@@ -539,6 +575,8 @@ Notes:
 
 ## INSERT Some Data
 
+<br/>
+
 ```sql
 INSERT INTO features (code, name, type, release_date)
 VALUES ('madmen', 'Mad Men', 'TV Show', '2010-01-01');
@@ -546,12 +584,14 @@ VALUES ('madmen', 'Mad Men', 'TV Show', '2010-01-01');
 INSERT INTO features (code, name, type, release_date)
 VALUES ('star1', 'Star Wars Episode 1', 'Movie' , '1999-01-01');
 ```
+<!-- {"left" : 0.82, "top" : 2.15, "height" : 2.28, "width" : 15} -->
 
 * Insert syntax:
 
 ```sql
 INSERT INTO <table name> (column names) VALUES (column values)
 ```
+<!-- {"left" : 0.82, "top" : 5.6, "height" : 0.57, "width" : 11.11} -->
 
 * Wrap string values in **single quotes** (example : 'mad men')
 
@@ -561,9 +601,9 @@ Notes:
 
 ---
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
 ## Lab: CQL
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
 * **Overview:**
     - Create 'features' table using CQL
@@ -585,6 +625,7 @@ Notes:
 
 ## Lab 4.1: Composite Keys
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
  *  **Overview:** 
 
@@ -651,6 +692,7 @@ Cqlsh>
 	-- compare results
 
 ```
+<!-- {"left" : 0.82, "top" : 3.33, "height" : 5.36, "width" : 11.78} -->
 
 Notes: 
 
@@ -661,6 +703,7 @@ Notes:
 
 ## Quiz: What Happens Below?
 
+<br/>
 
 ```text
 
@@ -669,6 +712,9 @@ INSERT INTO features (code, name, type, release_date)
 VALUES ('star1', 'Star Wars : Episode 4', 'Movie', '1977-01-01');
 
 ```
+<!-- {"left" : 0.82, "top" : 2.13, "height" : 1.34, "width" : 13.52} -->
+
+
 ```text
 
 INSERT INTO features (code, name, type, release_date)
@@ -676,6 +722,7 @@ INSERT INTO features (code, name, type, release_date)
 VALUES ('star1', 'Star Wars : Episode 1', 'Movie', '1999-01-01');
 
 ```
+<!-- {"left" : 0.82, "top" : 3.81, "height" : 1.34, "width" : 13.52} -->
 
 
  * What will be the value of row 'star1'?
@@ -696,7 +743,7 @@ Notes:
    
 
  * *INSERT INTO <table name> (column names)
-   </br>VALUES (column values) IF NOT EXISTS;*
+   <br/>VALUES (column values) IF NOT EXISTS;*
 
 
  * Only inserts if the row with the primary key given does not exist. 
@@ -718,6 +765,7 @@ VALUES ('star1', 'Star Wars : Episode 1', 'Movie', '1999-01-01')
 IF NOT EXISTS;
 
 ```
+<!-- {"left" : 0.82, "top" : 4.74, "height" : 3.78, "width" : 14.89} -->
 
 
 Notes: 
@@ -738,12 +786,13 @@ Notes:
 
  * We can specify the timestamp too.
 
- *  **Quiz**: **Why do we want to override timestamp?**
+ *  **Quiz:** **Why do we want to override timestamp?**
 
 ```text
 insert into features (code, name) values ('sopr', 'The Sopranos')  using timestamp 1404172800000;  // 2014-07-01 12:00:00  in microsecs
 
 ```
+<!-- {"left" : 0.82, "top" : 5.84, "height" : 0.39, "width" : 16.06} -->
 
 
 Notes: 
@@ -776,6 +825,8 @@ cqlsh>  CONSISTENCY QUORUM
 Consistency level is set to QUORUM.
 
 ```
+<!-- {"left" : 0.82, "top" : 4.7, "height" : 2.74, "width" : 16.31} -->
+
 
 Notes: 
 
@@ -795,6 +846,8 @@ AND TTL  86400;
 
 
 ```
+<!-- {"left" : 0.82, "top" : 2.35, "height" : 1.38, "width" : 16.14} -->
+
 
 Notes: 
 
@@ -832,6 +885,7 @@ ALTER TABLE features  ADD studio text;
 DESCRIBE TABLE features;
 
 ```
+<!-- {"left" : 0.82, "top" : 4.39, "height" : 6.07, "width" : 9.28} -->
 
 
 Notes: 
@@ -845,8 +899,8 @@ Notes:
 
 
  * *UPDATE < table name > 
- </br>SET column_name=value, ...
- </br>WHERE < primary key condition >;*
+ <br/>SET column_name=value, ...
+ <br/>WHERE < primary key condition >;*
 
  * Where clause is used to select rows to update.
 
@@ -862,6 +916,8 @@ WHERE
   code = 'sopr';
 
 ```
+<!-- {"left" : 0.82, "top" : 4.85, "height" : 2.69, "width" : 5.33} -->
+
 
 Notes: 
 
@@ -903,14 +959,17 @@ Notes:
 | Star1     | Star Wars 1 | Movie | Lucas  |
 | Madmen    | Mad Men     | TV    | AMC    |
 
-</br>
+<!-- {"left" : 1.41, "top" : 3.71, "height" : 1.5, "width" : 14.69} -->
+
+<br/>
 
 
 | Query                                                                  | RDBMS | `C*` |
 |------------------------------------------------------------------------|-------|----|
-| Update features set studio = 'HBO'  </br> where code = 'sopr';         | ?     | ?  |
-| Insert into features (code, name)     </br>VALUES('star1','star trek') | ?     | ?  |
+| Update features set studio = 'HBO'  <br/> where code = 'sopr';         | ?     | ?  |
+| Insert into features (code, name)     <br/>VALUES('star1','star trek') | ?     | ?  |
 
+<!-- {"left" : 0.45, "top" : 5.67, "height" : 1, "width" : 16.59} -->
 
 Notes: 
 
@@ -941,6 +1000,7 @@ Notes:
 
 ## Delete Examples
 
+<br/>
 
 ```text
 -- deletes entire row
@@ -954,6 +1014,8 @@ delete studio from features where code = 'madmen'
 -- Use truncate command
 
 ```
+<!-- {"left" : 0.82, "top" : 2.02, "height" : 3.28, "width" : 10.11} -->
+
 
  * In `C*` deletes are "soft deletes"
 
@@ -999,6 +1061,8 @@ Select * from features where type = 'TV Show' ; // NOT OK
 
 
 ```
+<!-- {"left" : 0.82, "top" : 5.12, "height" : 1.47, "width" : 15.58} -->
+
 
 Notes: 
 
@@ -1025,10 +1089,14 @@ CREATE INDEX idx_type ON features (type);
 select * from features where type = 'TV Show'; // works!
 
 ```
+<!-- {"left" : 0.82, "top" : 2.78, "height" : 3.78, "width" : 10.11} -->
+
 
 ```console
  
 ```
+<!-- {"left" : 0.82, "top" : 7, "height" : 0.55, "width" : 0.61} -->
+
 
 Notes: 
 
@@ -1067,7 +1135,8 @@ Notes:
 
 ## Indexing: Behind the Scenes
 
-<img src="../../assets/images/cassandra/indexing.png"  style="width:40%;float:right;"/>
+<img src="../../assets/images/cassandra/indexing.png"  style="width:40%;float:right;"/><!-- {"left" : 10.22, "top" : 2.18, "height" : 5.73, "width" : 6.79} -->
+
 
  * `C*` index is distributed
 
@@ -1089,11 +1158,14 @@ Notes:
 
 ## Indexing Best Practices
 
+<br/>
+
 ```text
 create table people (
   ssn  text  PRIMARY KEY ,	name text,	phone text,	state text,	gender text,	);
 
 ```
+<!-- {"left" : 0.82, "top" : 2.19, "height" : 0.97, "width" : 16.33} -->
 
  * Do not index high-cardinality columns
 
