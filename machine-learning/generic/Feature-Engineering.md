@@ -227,14 +227,16 @@ Notes:
 
 ## Lab: Data Cleanup
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
 * **Overview:**
-    - Cleaning up data, getting it ready for analytics
+    - Cleaning up data, getting it ready for machine learning
 
 * **Approximate Time:**
     - 10 - 15 mins
 
 * **Instructions:**
-    - **exploration/data-cleanup**
+    - **feature-engineering/data-cleanup**
 
 Notes:
 
@@ -287,20 +289,6 @@ Bedrooms : yes,   House Type : No,  Discount : Yes, Owns a Home : No, Item : No
 
 
 
-
-
-Notes:
-
----
-
-## Encoding Categorical Variables
-
- * We have to convert our categorical variables into numbers
-
- * 3 Strategies:
-    - Factorization / Indexing
-    - One-Hot-Encoding/Dummy Variables
-    - Quantization
 
 
 Notes:
@@ -401,11 +389,29 @@ Notes:
 
 ---
 
+## Lab: Encoding Variables
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Encode non-numeric features
+
+* **Approximate run time:**
+  - 20-30 mins
+
+* **Instructions:**
+  - **Feature Engineering: Encoding Variables**
+
+Notes:
+
+---
+
 # Scaling and Normalization
 
 ---
 
 ## Scaling
+
  * Usually data needs to be cleaned up and transformed before creating features
 
  * In the data below, we see **age** and **income** are in two different scales
@@ -422,7 +428,6 @@ Notes:
 ## Scaling Approaches
 
 <img src="../../assets/images/formulas-equations/scaling-z-score-1.png" style="width:25%;float:right;"/><!-- {"left" : 12.55, "top" : 1.89, "height" : 3.3, "width" : 4.42} -->
-
 
 * Z-Scoring:
     - Subtract mean and divide standard deviation
@@ -506,34 +511,229 @@ Notes:
 
 ---
 
-## Lab: Exploratory Data Analysis (EDA)
+## Lab: Scaling Data
 
- * **Overview:**
-    - Analyze house sales data
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- * **Approximate Time:**
+* **Overview:**
+    - Scale data
+
+* **Approximate Time:**
     - 20 - 25 mins
 
- * **Instructions:**
-    - **'exploration/explore-house-sales' lab for Python / R / Spark**
-
-
+* **Instructions:**
+    - **Feature Engineering: Scaling Data**
 
 Notes:
-
 
 ---
 
-## Bonus Lab: Feature Engineering
+# Dealing With Skewed / Unbalanced Data
 
- * **Overview:**
-    - Feature engineering exercises
+---
 
- * **Approximate Time:**
-    - 20 - 30 mins
+## Unbalanced Data
 
- * **Instructions:**
-    - **'feature-eng' lab for Python / R / Spark**
+* Datasets can be balanced or unbalanced
 
+* An example of balanced data would be gender split in population (more or less 50-50 split)
+
+* An example of unbalanced data could be **credit card fraud data**
+    - Say 99% of transactions are legit
+    - 1% of them are fraud
+
+<img src="../../assets/images/machine-learning/unbalanced-data-1.png" style="width:45%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Dealing with Unbalanced Data
+
+* A widely adopted method for dealing with highly imbalanced datasets is **resampling**
+
+* We can **under-sample**, removing samples from majority class
+
+* Or we can **over-sample**, adding samples to minority class
+
+<img src="../../assets/images/machine-learning/unbalanced-data-resampling-1.png" style="width:75%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Under Sampling
+
+* Say we have the following data of 10,000 samples total for type A and B (A is majority class)
+
+|               | A    | B    |
+|---------------|------|------|
+| Original Data | 9000 | 1000 |
+| Percentages   | 90%  | 10%  |
+
+* If we took 10% of random sampling, the sampled data will retain the same ratio of original data
+
+|             | A   | B   |
+|-------------|-----|-----|
+| Sample Data | 900 | 100 |
+| Percentages | 90% | 10% |
+
+* Here is a weighted sampling.  Only select 11% of A, but all of B
+
+|                   | A   | B   |
+|-------------------|-----|-----|
+| Weighted Sampling | 100 | 100 |
+| Percentages       | 50% | 50% |
+
+---
+
+## Stratified Sampling
+
+* **Stratified sampling** allows us carefully choose the sample from a population
+
+* For example, let's say we want to survey a group of students.  But they are imbalanced
+
+|                            | Boys | Girls |
+|----------------------------|------|-------|
+| Original Data (Population) | 120  | 80    |
+| Percentages                | 60%  | 40%   |
+
+* We would want a balanced group for our survey.  So one possibility is we can 'stratify' along one attribute: **gender**
+
+* And we end up with a sample like this
+
+|                   | Boys | Girls |
+|-------------------|------|-------|
+| Stratified sample | 30   | 30    |
+| Percentages       | 50%  | 50%   |
+
+* We can also stratify along other features like: race, sports activity ..etc
 
 Notes:
+
+---
+
+## Stratified Sampling
+
+* Here we see a population is being stratified along a few characteristics (Source : [Scribbler](https://www.scribbr.com/methodology/stratified-sampling/))
+
+<img src="../../assets/images/machine-learning/stratified-sampling-1.png" style="width:80%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Stratified Sampling
+
+* Advantages
+    - allows a more precise research sample compared to simple random sampling
+    - way to ensure that all the sub-groups in your research population are well-represented in the sample
+    - lowers the chances of researcher bias and sampling bias, significantly
+
+* Disadvantages
+    - can be difficult to split the population into individual, homogeneous strata, especially if some of the groups have overlapping characteristics.
+    - If the strata are wrongly selected, it can lead to research outcomes that do not reflect the population accurately
+
+Notes:
+
+---
+
+## Undersampling using `Tomek Links`
+
+* `Tomek links` are pairs of examples of opposite classes in close vicinity.
+
+* In this algorithm, we end up removing the majority element from the Tomek link, which provides a better decision boundary for a classifier.
+
+* [imbalanced-learn](https://imbalanced-learn.org/)  library implements this algorithm
+
+```python
+from imblearn.under_sampling import TomekLinks
+
+tl = TomekLinks(return_indices=True, ratio='majority')
+X1, y1, idx = tl.fit_sample(X, y)
+```
+
+<img src="../../assets/images/machine-learning/under-sampling-tomek-links-1.png" style="width:80%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Over Sampling with SMOTE
+
+* In SMOTE (Synthetic Minority Oversampling Technique) we synthesize elements for the minority class, in the vicinity of already existing elements
+
+* References:
+    - [Original SMOTE paper](https://arxiv.org/abs/1106.1813)
+    - [SMOTE examples](https://paperswithcode.com/method/smote)
+
+* Using [imbalanced-learn](https://imbalanced-learn.org/) library
+
+```python
+from imblearn.over_sampling import SMOTE
+
+smote = SMOTE(ratio='minority')
+X1, y1 = smote.fit_sample(X, y)
+```
+
+<img src="../../assets/images/machine-learning/over-sampling-smote-1.png" style="width:65%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Using Class Weights
+
+* Some algorithms have built-in  `class weights` to deal with unbalanced data
+
+* Here is an example of Scikit Logistic Regression
+
+```python
+from sklearn.linear_model import LogisticRegression
+
+# we are weighing 
+#      0  - 1  (9% = 1 / (1+10))
+#      1  - 10  (11% = 10 / (1+10))
+lr = LogisticRegression(class_weight={  0:1,   1:10 })
+```
+
+* And here is how to calculate weights 
+
+```python
+from sklearn.utils.class_weight import compute_class_weight
+
+class_weights = compute_class_weight('balanced', np.unique(y), y)
+```
+
+---
+
+## Choose a Different Evaluation Metric
+
+* For evaluating classifications, most of the time the metric **`accuracy`** is used
+
+* How ever `accuracy` can be misleading for unbalanced datasets
+
+* A better metrics would be **`F1 score`**.  More on this later!
+
+* References
+    - [F1 vs accuracy](https://www.statology.org/f1-score-vs-accuracy/)
+    - [Accuracy, Precision, Recall or F1?](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)
+
+---
+
+## Lab: Dealing with Skewed / Unbalanced Data
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Learn to deal with unbalanced data
+
+* **Approximate Time:**
+    - 20 - 25 mins
+
+* **Instructions:**
+    - **Feature Engineering: Dealing with Skewed Data**
+
+Notes:
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
+
