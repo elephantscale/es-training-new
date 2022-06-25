@@ -1,4 +1,5 @@
 # Spark Machine Learning
+
 ---
 
 
@@ -842,6 +843,40 @@ Notes:
 
 ---
 
+## Lab: Spark ML Intro
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Get familiar with Spark ML APIs
+
+* **Approximate run time:**
+  - 15-20 mins
+
+* **Instructions:**
+  - **Spark-ML-1**
+
+Notes:
+
+---
+
+## Lab: Data Shaping
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+  - Shape data for Spark ML
+
+* **Approximate run time:**
+  - 20-30 mins
+
+* **Instructions:**
+  - **Spark-ML-2**
+
+Notes:
+
+---
+
 # Pipelines
 
 ---
@@ -901,6 +936,7 @@ df5 = df4.word2Vec()
 Notes:
 
 ---
+
 ## Pipeline Example
 
 <img src="../../assets/images/machine-learning/pipeline-1.png" style="max-width:15%;"/><!-- {"left" : 7.23, "top" : 2.24, "height" : 7.91, "width" : 3.03} -->
@@ -990,28 +1026,25 @@ Notes:
 
  photo courtesy of  spark.apache.org
 
-
 ---
 
-## Lab:  ML Basics
+## Lab: Spark Pipelines
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- *  **Overview:**
+* **Overview:**
+  - Get familiar with Spark ML pipelines
 
-     - Get familiar with ML APIs in Spark
+* **Approximate run time:**
+  - 20-30 mins
 
- *  **Approximate time:**
-
-     - 10 - 15 mins
-
- *  **Instructions:**
-
-     -  **basics/spark-ml-basics** lab for Scala / Python
-
+* **Instructions:**
+  - **Spark-ML-3: pipelines**
 
 Notes:
 
 ---
+
 ## Further Reading
 
 
@@ -1020,3 +1053,14 @@ Notes:
  * [https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models](https://www.slideshare.net/julesdamji/apache-spark-mllib-2x-how-to-productionize-your-machine-learning-models)
 
 Notes:
+
+---
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
