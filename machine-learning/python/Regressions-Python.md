@@ -8,12 +8,6 @@
 
 ---
 
-# Linear Regression
-
-[../generic/Regressions-Linear.md](../generic/Regressions-Linear.md)
-
----
-
 # Linear Regression in Python
 
 ---

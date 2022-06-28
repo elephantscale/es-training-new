@@ -134,31 +134,18 @@ Demo1 : http://vis.supstat.com/2013/03/gradient-descent-algorithm-with-r/
 
 ---
 
-## Variations of Gradient Descent Algorithms
+## Gradient Descent Algorithms
 
-
- *  **Batch Gradient Descent**
-
+* **Batch Gradient Descent**
      - The cost is calculated for a machine learning algorithm over the entire training dataset for each iteration of the gradient
-
      - One iteration of the algorithm is called  **one batch** and this form of gradient descent is referred to as batch gradient descent
 
----
-
-## Variations of Gradient Descent Algorithms
-
- *  **Stochastic Gradient Descent (SGD)**
-
+* **Stochastic Gradient Descent (SGD)**
      - Classic Gradient Descent can be slow on large datasets (each iteration requires calculation over millions of data points)
-
      - SGD updates coefficients for each training instance, rather than at the end of the batch of instances
-
      - Also randomizes training set to
-
         * reduce coefficients jumping all over the place
-
         * And to avoid 'getting stuck' at local minima
-
      - Very effective for large datasets,  requires very few passes (usually 10-20) to converge
 
 Notes:

@@ -10,11 +10,6 @@
 
 ---
 
-## Linear Regression
-[Regressions-Linear.md](Regressions-Linear.md)
-
----
-
 ## Multiple Linear Regression
 
 [Regressions-Linear-Multi.md](Regressions-Linear-Multi.md)

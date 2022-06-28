@@ -1,16 +1,13 @@
 # Regressions in Spark
 
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/linear-regression-plot-1.png" style="width:40%;"/><!-- {"left" : 2.39, "top" : 2.61, "height" : 8.48, "width" : 12.71} -->
+
 ---
 
 # Regressions Intro
 
 [../generic/Regressions-Intro.md](../generic/Regressions-Intro.md)
-
----
-
-# Linear Regression
-
-[../generic/Regressions-Linear.md](../generic/Regressions-Linear.md)
 
 ---
 
@@ -29,8 +26,6 @@
 
 Notes:
 
-
-
 ---
 
 ## LinearRegression Parameters
@@ -45,332 +40,88 @@ Notes:
 
 <!-- {"left" : 0.41, "top" : 2.39, "height" : 1, "width" : 16.73, "columnwidth" : [2.46, 3.86, 8.19, 2.22]} -->
 
-
 Notes:
-
-
 
 ---
 
 ## Example: Tip Calculation
 
+* Now our tip data includes total bill amount too!
 
- * Now our tip data includes total bill amount too!
-
- * Do you see any correlation?
+* Do you see any correlation?
 
 <img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" style="width:76%;"/><!-- {"left" : 2.97, "top" : 3.73, "height" : 5.96, "width" : 11.57} -->
 
-
-
 Notes:
-
-
 
 ---
 
-## Tips vs Bill
-
-
- * There is clearly a correlation between bill amount and tip
-
- * We can fit a line to predict tip
-
- * This is **linear regression!**
-
-<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" style="width:50%"><!-- {"left" : 4.7, "top" : 4.92, "height" : 6.12, "width" : 8.1} -->
-
-
-Notes:
-
-
-
----
-
-## Spark Linear Regression Code (Scala)
+## Linear Regression in Spark (Scala)
 
 ```scala
- import org.apache.spark.ml.regression.LinearRegression  
+import org.apache.spark.ml.regression.LinearRegression  
 
- // Load training data
- val training = spark.read.....  
+// Load training data
+val training = spark.read.....  
 
- val lr = new LinearRegression()  
-    .setMaxIter(10)  
-    .setRegParam(0.3)  
-    .setElasticNetParam(0.8)    
+val lr = new LinearRegression()  
+.setMaxIter(10)  
+.setRegParam(0.3)  
+.setElasticNetParam(0.8)    
 
- // Fit the model
- val lrModel = lr.fit(training)  
+// Fit the model
+val lrModel = lr.fit(training)  
 
- // Print the coefficients and intercept for linear regression
- println(s"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}")  
+// Print the coefficients and intercept for linear regression
+println(s"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}")  
 
- // Summarize the model over the training set and print out some metrics
- val trainingSummary = lrModel.summary
- println(s"numIterations: ${trainingSummary.totalIterations}")
- println(s"objectiveHistory: [${trainingSummary.objectiveHistory.mkString(",")}]")
- trainingSummary.residuals.show()
- println(s"RMSE: ${trainingSummary.rootMeanSquaredError}")
- println(s"r2: ${trainingSummary.r2}")
+// Summarize the model over the training set and print out some metrics
+val trainingSummary = lrModel.summary
+println(s"numIterations: ${trainingSummary.totalIterations}")
+println(s"objectiveHistory: [${trainingSummary.objectiveHistory.mkString(",")}]")
+trainingSummary.residuals.show()
+println(s"RMSE: ${trainingSummary.rootMeanSquaredError}")
+println(s"r2: ${trainingSummary.r2}")
 ```
 <!-- {"left" : 0.85, "top" : 2.5, "height" : 6.67, "width" : 14.09} -->
 
 Notes:
 
-TODO - update for tips
-
-
 ---
 
-## Spark Linear Regression Code (Python)
-
-* Creating Data Frames
-
-* (1) - importing Numpy and Pandas libraries
-
-* (2) - Constructing a Panda dataframe and converting it into Spark dataframe
+## Linear Regression in Spark (Python)
 
 ```python
- #  **** 1 ****
-
-import numpy as np
 import pandas as pd
+from pyspark.ml.regression import LinearRegression
+from pyspark.ml.feature import VectorAssembler
 
+## Create a pandas df
 tip_data = pd.DataFrame({     
      'bill' : [50.00, 30.00, 60.00, 40.00, 65.00, 20.00, 10.00, 15.00, 25.00, 35.00],
      'tip' : [12.00, 7.00, 13.00, 8.00, 15.00, 5.00, 2.00, 2.00, 3.00, 4.00]    
      })
-print(tip_data)  
 
-
-#  **** 2 ****
+## Convert it to spark dataframe
 spark_tips = spark.createDataFrame(tip_data)
-spark_tips.show()
-```
-<!-- {"left" : 0.85, "top" : 4.74, "height" : 4.72, "width" : 15.16} -->
 
+## Create a feature vector
+assembler = VectorAssembler(inputCols=["bill"], outputCol="features")
+featureVector = assembler.transform(spark_tips)
 
-Notes:
+##  Run Linear regression
+lr = LinearRegression()
+lrModel = lr.fit(featureVector)
 
+## Print out coefficients!
+intercept = lrModel.intercept    # This is the intercept  
+slope = lrModel.coefficients[0]  # This is the slope
 
-
----
-
-## Spark Linear Regression Code (Python)
-
-* Plotting Data
-
-```python
- import matplotlib.pyplot as plt
- plt.scatter(tip_data.bill, tip_data.tip)
- plt.ylabel('tip')
- plt.xlabel('bill')
- plt.show()
-```
-<!-- {"left" : 0.85, "top" : 2.75, "height" : 2.51, "width" : 10.98} -->
-
-<img src="../../assets/images/machine-learning/Python-2-4-Plotting-Data-0.png" style="width:40%;"/><!-- {"left" : 4.62, "top" : 5.6, "height" : 5.82, "width" : 8.27} -->
-
-
-Notes:
-
-
-
----
-
-## Spark Linear Regression Code (Python)
-
-* (3) Create feature vector
-
-* (4) Initialize algorithm and train
-
-* (5) Identify coefficients
-
-```python
- from pyspark.ml.regression import LinearRegression
- from pyspark.ml.feature import VectorAssembler
-
- #  **** 3 ****
- assembler = VectorAssembler(inputCols=["bill"], outputCol="features")
- featureVector = assembler.transform(spark_tips)
- featureVector.show()
-
- #  **** 4 ****
- lr = LinearRegression(maxIter=10, regParam=0.3, elasticNetParam=0.8)
- lrModel = lr.fit(featureVector)
-
- #  **** 5 ****
- intercept = lrModel.intercept    # This is the intercept  
- slope = lrModel.coefficients[0]  # This is the slope
-```
-<!-- {"left" : 0.85, "top" : 4.25, "height" : 4.92, "width" : 14.44} -->
-
-Notes:
-
-
-
----
-
-## Spark Linear Regression Code (Python)
-
-* Print model properties
-
-```python
-# Print the coefficients and intercept for linear regression  
-print("Coefficients: %s" % str(lrModel.coefficients[0]))
-print("Intercept: %s" % str(lrModel.intercept))    
-
-# Summarize the model over the training set and print out some metrics
-trainingSummary = lrModel.summary
-print("numIterations: %d" % trainingSummary.totalIterations)
-print("objectiveHistory: %s" % str(trainingSummary.objectiveHistory))
-print("RMSE: %f" % trainingSummary.rootMeanSquaredError)
-print("r2: %f" % trainingSummary.r2)
+## Print out model metrics
+print("RMSE: %f" % lrModel.summary.rootMeanSquaredError)  # RMSE: 1.413302
+print("r2: %f" % lrModel.Summary.r2) # r2: 0.902517
 ```
 <!-- {"left" : 0.85, "top" : 2.74, "height" : 3.61, "width" : 14.06} -->
-
-
-```text
-Coefficients: 0.226334605857
-Intercept: -0.8217112049846651
-numIterations: 3
-objectiveHistory: [0.5000000000000002, 0.4158224893708402, 0.10101250448579287]
-RMSE: 1.413302
-r2: 0.902517
-```
-<!-- {"left" : 0.85, "top" : 6.71, "height" : 2.07, "width" : 14.25} -->
-
-
-Notes:
-
-
-
----
-
-## Evaluating Linear Regression Model
-
-* Plot the regression
-
-```python
- # Create a list of values in the best fit line
- abline_values = [slope * i + intercept for i in tip_data.bill]
-
- # Plot the best fit line over the actual values
- plt.scatter(tip_data.bill, tip_data.tip)
- plt.plot(tip_data.bill, abline_values, 'b')
- plt.ylabel('tip')
- plt.xlabel('bill')
- plt.title("Fit Line")
- plt.show()
-```
-<!-- {"left" : 0.85, "top" : 3.16, "height" : 3.29, "width" : 12.73} -->
-
-
-<img src="../../assets/images/machine-learning/Model-Plot-the-regression-0.png" style="width:40%"><!-- {"left" : 5.48, "top" : 6.79, "height" : 4.92, "width" : 6.54} -->
-
-
-Notes:
-
-
-
----
-
-## Evaluating Linear Regression Model
-
- * Calculate Coefficient of Determination (R2)
-
- * R2 is between 0 and 1.1 is perfect fit!
-
- * Here our R2 is 0.90 -> pretty good fit!
-
-```python
- # Summarize the model over the training set and print out some metrics
- trainingSummary = lrModel.summary
- print("RMSE: %f" % trainingSummary.rootMeanSquaredError)
- print("r2: %f" % trainingSummary.r2)
-
-# output
-# RMSE: 1.413302
-# r2: 0.902517
-```
-<!-- {"left" : 0.85, "top" : 4.24, "height" : 2.92, "width" : 13.94} -->
-
-
-Notes:
-
-
----
-
-## Evaluating Linear Regression Model
-
-* Estimate Tip
-
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Evaluating-Linear-Regression-Model-Estimate-Tip-0.png" style="width:20%;float:right;"/><!-- {"left" : 13.12, "top" : 1.89, "height" : 7.54, "width" : 3.67} -->
-
-```python
- a = lrModel.coefficients[0]   # -0.8217112049846651
- b = lrModel.intercept         # 0.226334605857*   
-
- tip_for_100 = a * 100 + b   
- print(tip_for_100)   # 21.81     
-
- # add estimated tip to dataframe  
- tip_data['est_tip'] = tip_data.bill * a + b
- tip_data
-```
-
-<!-- {"left" : 0.85, "top" : 5.12, "height" : 3.47, "width" : 11.1} -->
-
-
-Notes:
-
-
-
----
-
-## Evaluating Linear Regression Model
-
-* Estimate Tip
-
-```python
- ## Adding Estimated Tip column to Spark dataframe
- # This is a bit tricky. We need to use the sql expr function to make this work.
- # The formula: (bill * a) + b
-
- from pyspark.sql.functions import expr  
- formula = "(bill * " + str(a) + ") + " + str(b)
- print(formula)  
-
- spark_tips_with_est = spark_tips.withColumn("est_tip", expr(formula))
- spark_tips_with_est.show()
-```
-<!-- {"left" : 0.85, "top" : 2.58, "height" : 3.39, "width" : 14.96} -->
-
-
-```text
-(bill * 0.226334605857) + -0.8217112049846651
-
-+----+----+------------------+
-|bill| tip|           est_tip|
-+----+----+------------------+
-|50.0|12.0|10.495019087865336|
-|30.0| 7.0| 5.968326970725334|
-|60.0|13.0|12.758365146435334|
-|40.0| 8.0| 8.231673029295335|
-|65.0|15.0|13.890038175720335|
-|20.0| 5.0|3.7049809121553343|
-|10.0| 2.0|1.4416348535853347|
-|15.0| 2.0| 2.573307882870335|
-|25.0| 3.0| 4.836653941440335|
-|35.0| 4.0|7.1000000000103345|
-+----+----+------------------+
-
-```
-<!-- {"left" : 0.85, "top" : 6.37, "height" : 4.94, "width" : 8.28} -->
-
-
-Notes:
 
 ---
 
@@ -378,16 +129,15 @@ Notes:
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 12.68, "top" : 1.89, "height" : 5.68, "width" : 4.27} -->
 
- *  **Overview:**
+* **Overview:**
     - Practice Linear Regressions
 
- *  **Approximate Time:**
+* **Approximate Time:**
     - 30 mins
 
- *  **Instructions:**
+* **Instructions:**
      - Instructor: Please demo this lab
      - LR-1: Bill and Tips data
-
 
 Notes:
 
@@ -447,7 +197,7 @@ Notes:
 
 ---
 
-## Multiple Linear Regression in Spark - Code (Python)
+## Multiple Linear Regression in Spark
 
 ```python
 import numpy as np
@@ -476,7 +226,7 @@ Notes:
 
 ---
 
-## Multiple Linear Regression in Spark - Code (Python)
+## Multiple Linear Regression in Spark
 
 
 ```text
@@ -509,7 +259,7 @@ Notes:
 
 ---
 
-## Multiple Linear Regression in Spark - Code (Python)
+## Multiple Linear Regression in Spark
 
 ```python
 assembler = VectorAssembler(inputCols=["Bedrooms", "Bathrooms",
@@ -551,7 +301,7 @@ Notes:
 
 ---
 
-## Multiple Linear Regression in Spark - Code (Python)
+## Multiple Linear Regression in Spark
 
 
 ```python
@@ -593,7 +343,7 @@ Notes:
 
 ---
 
-### Multiple Linear Regression in Spark - Code (Python) - Let's Do Some Predictions
+### Multiple Linear Regression in Spark - Let's Do Some Predictions
 
 
 ```python
