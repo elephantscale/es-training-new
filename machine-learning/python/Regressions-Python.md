@@ -467,6 +467,25 @@ input_column  coefficient
 
 ---
 
+## Linear Regression: Strengths, Weaknesses, and Parameters
+
+* **Strengths**
+    - Relatively simple to understand
+    - Computationally simple, very fast learners
+    - Very scalable to large data sets
+
+* **Weaknesses**
+    - Will perform poorly if the inputs are not aligned along linear boundary
+    - Can under-fit data
+
+* **Parameters**
+    - Use regularization to minimize overfitting
+    - Lasso regularization can also do variable selection
+
+Notes:
+
+---
+
 ## Lab: Multiple Linear Regression
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 12.47, "top" : 1.89, "height" : 5.7, "width" : 4.28} -->
