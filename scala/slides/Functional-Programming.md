@@ -40,7 +40,7 @@
 
 ## The Problem: Shared State
 
-<img src="../../assets/images/scala/two-threads-accessing-the-same-memory.jpg" style="width:40%;float:right;clear:both; "/><!-- {"left" : 7.67, "top" : 4.34, "height" : 1.84, "width" : 2.45} -->
+<img src="../../assets/images/scala/two-threads-accessing-the-same-memory.png" style="width:40%;float:right;clear:both; "/><!-- {"left" : 7.67, "top" : 4.34, "height" : 1.84, "width" : 2.45} -->
 
 * What if two threads want to share a memory location?
 
