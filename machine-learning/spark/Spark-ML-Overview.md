@@ -1,5 +1,7 @@
 # Spark Machine Learning
 
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" />
+
 ---
 
 

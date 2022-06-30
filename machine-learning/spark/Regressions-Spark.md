@@ -13,6 +13,9 @@
 
 # Linear Regression in Spark
 
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/linear-regression-plot-1.png" style="width:40%;"/><!-- {"left" : 2.39, "top" : 2.61, "height" : 8.48, "width" : 12.71} -->
+
 ---
 
 ## Regression Algorithms In Spark ML

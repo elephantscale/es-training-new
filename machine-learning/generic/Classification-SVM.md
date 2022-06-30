@@ -243,9 +243,7 @@ https://www.youtube.com/watch?v=3liCbRZPrZA
     - And feature-2 that ranges from 1 to 1000
     - feature2 will become more important and skew predictions
 
-
 Notes:
-
 
 ---
 
