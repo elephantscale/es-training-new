@@ -35,12 +35,12 @@ April 2022
 
 ## Prerequisites
 
-* comfortable in Java programming language (navigate Linux command line , edit files with vi / nano)
+* comfortable in Java programming language (navigate Linux command line , edit files with vi or nano)
 * A Java IDE like Eclipse or IntelliJ
 
 ## Lab environment
 
-* A working environment will be provided for students.  Students would need a SSH client and a browser to access the cluster.
+* A working environment will be provided for students.  Students would need an SSH client and a browser to access the cluster.
 * Zero Install: There is no need to install HBase software on students' machines!
 
 ## Course Outline
