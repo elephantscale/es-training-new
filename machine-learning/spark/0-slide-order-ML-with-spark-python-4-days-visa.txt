@@ -43,6 +43,9 @@ Classification-Naive-Bayes-Spark.md
 ## Trees
 Decision-Trees-Spark.md
 
+## Ensemble
+Ensemble-Algorithms-Spark.md
+
 ## Unsupervised
 Unsupervised-Spark.md
 

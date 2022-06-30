@@ -114,9 +114,9 @@ predictions = model.transform(test)
 
 ## Evaluate
 evaluator = RegressionEvaluator(metricName="rmse")
-accuracy = evaluator.evaluate(predictions)
+rmse = evaluator.evaluate(predictions)
 
-print("Accuracy = %g " , accuracy)
+print("RMSE = %g " , rmse)
 ```
 <!-- {"left" : 0.85, "top" : 2.5, "height" : 3.98, "width" : 14.79} -->
 
