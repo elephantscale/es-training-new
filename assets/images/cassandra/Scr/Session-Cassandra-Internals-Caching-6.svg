@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-433 194 2813 964" width="2813" height="964">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M -2.5142857 0 L 0 .9428571 L 0 -.9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#f83a60">
+      <g>
+        <path d="M -2.5142857 0 L 0 .9428571 L 0 -.9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-06-18 12:51:29 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_44">
+        <line x1="1252.978" y1="394.7199" x2="1252.6692" y2="932.4468" marker-start="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_45">
+        <path d="M 1210.5065 785.70555 L 773.6204 787.27815 C 763.1538 787.3158 754.6888 795.8113 754.6888 806.278 L 754.6888 880.5879" marker-start="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_46">
+        <line x1="687.79" y1="866.4226" x2="687.79" y2="753.70735" marker-start="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_47">
+        <line x1="687.7958" y1="642.87366" x2="687.8184" y2="371.53984" marker-start="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_48">
+        <line x1="616.1609" y1="503.8283" x2="1242.2025" y2="503.8283" marker-start="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14.0,14.0" stroke-width="7"/>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Graphic_3">
+        <path d="M 446.9722 1088.7559 L 446.9722 915.9263 C 446.9722 904.001 554.8586 894.3226 687.79 894.3226 C 820.7214 894.3226 928.6077 904.001 928.6077 915.9263 L 928.6077 1088.7559 C 928.6077 1100.6812 820.7214 1110.3596 687.79 1110.3596 C 554.8586 1110.3596 446.9722 1100.6812 446.9722 1088.7559" fill="#e3a92e"/>
+        <path d="M 446.9722 1088.7559 L 446.9722 915.9263 C 446.9722 904.001 554.8586 894.3226 687.79 894.3226 C 820.7214 894.3226 928.6077 904.001 928.6077 915.9263 L 928.6077 1088.7559 C 928.6077 1100.6812 820.7214 1110.3596 687.79 1110.3596 C 554.8586 1110.3596 446.9722 1100.6812 446.9722 1088.7559 M 446.9722 915.9263 C 446.9722 927.8515 554.8586 937.53 687.79 937.53 C 820.7214 937.53 928.6077 927.8515 928.6077 915.9263" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 449.9722 672.27366 L 925.6077 672.27366 C 927.2646 672.27366 928.6077 673.6168 928.6077 675.2737 L 928.6077 749.20735 C 928.6077 750.8642 927.2646 752.20735 925.6077 752.20735 L 449.9722 752.20735 C 448.31537 752.20735 446.9722 750.8642 446.9722 749.20735 L 446.9722 675.2737 C 446.9722 673.6168 448.31537 672.27366 449.9722 672.27366 Z" fill="white"/>
+        <path d="M 449.9722 672.27366 L 925.6077 672.27366 C 927.2646 672.27366 928.6077 673.6168 928.6077 675.2737 L 928.6077 749.20735 C 928.6077 750.8642 927.2646 752.20735 925.6077 752.20735 L 449.9722 752.20735 C 448.31537 752.20735 446.9722 750.8642 446.9722 749.20735 L 446.9722 675.2737 C 446.9722 673.6168 448.31537 672.27366 449.9722 672.27366 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Group_34">
+        <g id="Graphic_8">
+          <rect x="1309.6111" y="894.3226" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1309.6111" y="894.3226" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_9">
+          <rect x="1271.6036" y="894.3226" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1271.6036" y="894.3226" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_10">
+          <rect x="1233.5962" y="894.3226" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1233.5962" y="894.3226" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_11">
+          <rect x="1195.5887" y="894.3226" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1195.5887" y="894.3226" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_12">
+          <rect x="1157.5812" y="894.3226" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1157.5812" y="894.3226" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_17">
+          <rect x="1309.6111" y="932.4468" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1309.6111" y="932.4468" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_16">
+          <rect x="1271.6036" y="932.4468" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1271.6036" y="932.4468" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_15">
+          <rect x="1233.5962" y="932.4468" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1233.5962" y="932.4468" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_14">
+          <rect x="1195.5887" y="932.4468" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1195.5887" y="932.4468" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_13">
+          <rect x="1157.5812" y="932.4468" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1157.5812" y="932.4468" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_22">
+          <rect x="1309.6111" y="970.571" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1309.6111" y="970.571" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_21">
+          <rect x="1271.3752" y="970.571" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1271.3752" y="970.571" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_20">
+          <rect x="1233.3678" y="970.571" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1233.3678" y="970.571" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_19">
+          <rect x="1195.3603" y="970.571" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1195.3603" y="970.571" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_18">
+          <rect x="1157.3528" y="970.571" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1157.3528" y="970.571" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_27">
+          <rect x="1309.6111" y="1008.6951" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1309.6111" y="1008.6951" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_26">
+          <rect x="1271.3752" y="1008.6951" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1271.3752" y="1008.6951" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_25">
+          <rect x="1233.3678" y="1008.6951" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1233.3678" y="1008.6951" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_24">
+          <rect x="1195.3603" y="1008.6951" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1195.3603" y="1008.6951" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_23">
+          <rect x="1157.3528" y="1008.6951" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1157.3528" y="1008.6951" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_32">
+          <rect x="1309.6111" y="1046.8193" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1309.6111" y="1046.8193" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_31">
+          <rect x="1271.6036" y="1046.8193" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1271.6036" y="1046.8193" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_30">
+          <rect x="1233.5962" y="1046.8193" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1233.5962" y="1046.8193" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_29">
+          <rect x="1195.5887" y="1046.8193" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1195.5887" y="1046.8193" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_28">
+          <rect x="1157.5812" y="1046.8193" width="38.12418" height="38.12418" fill="#ebdea6"/>
+          <rect x="1157.5812" y="1046.8193" width="38.12418" height="38.12418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Line_69">
+        <line x1="47" y1="501.8503" x2="453.09706" y2="503.5461" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_33">
+        <path d="M 458.59706 437.7464 L 582.7609 437.7464 C 584.97 437.7464 586.7609 439.53726 586.7609 441.7464 L 586.7609 565.9102 C 586.7609 568.11937 584.97 569.9102 582.7609 569.9102 L 458.59706 569.9102 C 456.3879 569.9102 454.59706 568.11937 454.59706 565.9102 L 454.59706 441.7464 C 454.59706 439.53726 456.3879 437.7464 458.59706 437.7464 Z" fill="white"/>
+        <path d="M 458.59706 437.7464 L 582.7609 437.7464 C 584.97 437.7464 586.7609 439.53726 586.7609 441.7464 L 586.7609 565.9102 C 586.7609 568.11937 584.97 569.9102 582.7609 569.9102 L 458.59706 569.9102 C 456.3879 569.9102 454.59706 568.11937 454.59706 565.9102 L 454.59706 441.7464 C 454.59706 439.53726 456.3879 437.7464 458.59706 437.7464 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Group_49">
+        <g id="Graphic_35">
+          <rect x="482.7808" y="694.9062" width="410.0184" height="1.270806" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_38">
+          <rect x="482.7808" y="700.4725" width="410.0184" height="1.270806" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_39">
+          <rect x="482.7808" y="706.0388" width="410.0184" height="1.270806" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_40">
+          <rect x="482.7808" y="711.6051" width="410.0184" height="1.270806" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_41">
+          <rect x="482.7808" y="717.1714" width="410.0184" height="1.270806" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_43">
+          <rect x="482.7808" y="722.7377" width="410.0184" height="1.270806" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_42">
+          <rect x="482.7808" y="728.304" width="410.0184" height="1.270806" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Group_50">
+        <g id="Graphic_57">
+          <rect x="469.71154" y="458.3497" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_56">
+          <rect x="469.71154" y="465.2187" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_55">
+          <rect x="469.71154" y="472.08777" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_54">
+          <rect x="469.71154" y="478.9568" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_53">
+          <rect x="469.71154" y="485.82586" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_52">
+          <rect x="469.71154" y="492.6949" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_51">
+          <rect x="469.71154" y="499.56395" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Group_58">
+        <g id="Graphic_65">
+          <rect x="469.71154" y="506.35704" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_64">
+          <rect x="469.71154" y="513.2261" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_63">
+          <rect x="469.71154" y="520.09513" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_62">
+          <rect x="469.71154" y="526.9642" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_61">
+          <rect x="469.71154" y="533.8332" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_60">
+          <rect x="469.71154" y="540.70227" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_59">
+          <rect x="469.71154" y="547.5713" width="101.93487" height="1.5682287" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Line_66">
+        <line x1="589.6166" y1="458.3497" x2="685.3278" y2="458.3497" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14.0,14.0" stroke-width="7"/>
+      </g>
+      <g id="Line_67">
+        <line x1="469.71154" y1="408.2528" x2="469.71154" y2="271.8285" marker-start="url(#FilledArrow_Marker_2)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_68">
+        <line x1="576.1246" y1="297.9" x2="576.1246" y2="434.3243" marker-start="url(#FilledArrow_Marker_2)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_70">
+        <line x1="48.91092" y1="710.9697" x2="445.4722" y2="711.7585" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_71">
+        <line x1="49.35944" y1="1002.3411" x2="446.9722" y2="1002.3411" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_72">
+        <text transform="translate(469 199.8108)" fill="#f83a60">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#f83a60" x="0" y="40">Application requests a hot, frequently accessed row</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <text transform="translate(687.5376 293.5)" fill="#0048dc">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#0048dc" x="0" y="40">Application requests a row not in row cache, but whose partition key is cached</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <text transform="translate(1290 582)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">1 Check row cache before going to partition key cache</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <text transform="translate(1290 651.0604)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">2 Populate row cache with new row returned</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <text transform="translate(1143.3448 1103.6782)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">memtables</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <text transform="translate(-391.97297 454.8283)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Row cache</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">rows_cached= 10000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <text transform="translate(-427.20735 656)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Partition key cache</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">keys_cached=2000000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_79">
+        <text transform="translate(-295.9378 977.8411)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">SSTables on disk</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80">
+        <text transform="translate(626.27106 382.1528)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_81">
+        <text transform="translate(932 518.1892)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">2</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

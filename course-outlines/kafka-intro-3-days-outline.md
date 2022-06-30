@@ -15,12 +15,12 @@ Apache Kafka has emerged as a popular messaging component for streaming platform
 * Programming using Kafka API
 * Kafka Streams API
 * Kafka Connect
-* Confluent Platform
 * Kafka Administration
 * Monitoring Kafka
 * Tuning / Troubleshooting Kafka
 * Best practices
 * Use cases
+* Design exercises with Kafka
 
 ## Audience
 
@@ -148,3 +148,7 @@ Lectures and hands on labs. (50%   50%)
 ### Kafka Case Studies
 
 * This section will feature case studies from various companies using Kafka solve real world problems
+
+### Kafka Workshop (Time permitting)
+
+* Attendees will work as groups in designing end-to-end solutions using Kafka

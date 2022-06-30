@@ -14,7 +14,7 @@ Notes:
 
 ## Decision Trees
 
-[../generic/Decision-Trees-1.md](../generic/Decision-Trees-1.md)
+[../generic/Decision-Trees.md](../generic/Decision-Trees.md)
 
 ---
 
@@ -255,7 +255,7 @@ Notes:
 
 ## Random Forests
 
-[../generic/Decision-Trees-2-Random-Forest.md](../generic/Decision-Trees-2-Random-Forest.md)
+[../generic/Random-Forest.md](../generic/Random-Forest.md)
 
 ---
 

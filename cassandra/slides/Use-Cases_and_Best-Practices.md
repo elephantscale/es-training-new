@@ -43,7 +43,7 @@ Notes:
 
  *  **Commandment 1 )**  Great data models start with the queries
 
-     - RDBMS:    Data => Model => Queries
+     - RDBMS: Data => Model => Queries
 
      - Cassandra: Queries => Model => Data
 
@@ -260,8 +260,7 @@ Notes:
  * Generate 'fake' data to test at scale
      - Use our 'generator' scripts
  * Query tracing
-     - *cqlsh>   tracing oncqlsh >   select * from increments;
-</br> **< query output >***
+     - *cqlsh>   tracing oncqlsh >   select * from increments; **< query output >***
 
 | **activity**                                                                                       | **timestamp**              | **source** | **source_elapsed** |
 |----------------------------------------------------------------------------------------------------|----------------------------|------------|--------------------|
@@ -270,6 +269,9 @@ Notes:
 | Preparing statement ..                                                                             | 2019-01-10 19:00:05.676000 | 10.31.4.58 | 252                |
 | Computing ranges to query                                                                          | 2019-01-10 19:00:05.677000 | 10.31.4.58 | 428                |
 | Submitting range requests on 1025 ranges with a concurrency of 445 (0.225 rows per range expected) |                            |            |                    |
+
+<!-- {"left" : 0.94, "top" : 6.22, "height" : 1, "width" : 15.63, "columnwidth" : [7.7, 4.09, 2.08, 1.76]} -->
+
 
 Notes: 
 
@@ -496,7 +498,8 @@ Notes:
  * Loading data into `C*` directly using Spark streaming
 
 
-<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Architecture-1.png" style="width:80%;"/>
+<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Architecture-1.png" style="width:80%;"/> <!-- {"left" : 1.59, "top" : 4.92, "height" : 4.64, "width" : 14.31} -->
+
 
 Notes: 
 
@@ -517,7 +520,7 @@ Notes:
 
      - Done by Spark 
 
-     - Two `C*` clusters : one (A) online, other one (B) batch analytics
+     - Two `C*` clusters: one (A) online, other one (B) batch analytics
 
      - Spark co-located with batch `C*` cluster (B)
 
@@ -537,7 +540,9 @@ Notes:
  * As Spark is co-located with `C*` nodes, secondary indexes are very effective!
 
 
-<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Spark-Cassandra-2.png" style="width:40%;"/> &nbsp; &nbsp; &nbsp;<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Spark-Cassandra-3.png" style="width:30%;"/>
+<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Spark-Cassandra-2.png" style="width:40%;"/> <!-- {"left" : 1.22, "top" : 5.7, "height" : 5.75, "width" : 8.06} -->
+ &nbsp; &nbsp; &nbsp;<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Spark-Cassandra-3.png" style="width:30%;"/> <!-- {"left" : 10.17, "top" : 5.95, "height" : 5.24, "width" : 6.1} -->
+
 
 
 
@@ -547,16 +552,16 @@ Notes:
 
 ---
 
-## `C*` @ Instagram (2016)
+## C* @ Instagram (2016)
 
 
  * From Cassandra Summit 2016
 
  * Cluster Details 
 
-     - 1000+  `C*` nodes (across multiple clusters)
+     - 1000 + `C*` nodes (across multiple clusters)
 
-     - Data : 100+ TB
+     - Data: 100+ TB
 
      - Largest cluster : 150 nodes
 
@@ -584,7 +589,8 @@ Notes:
  * Model: user_id -> List (media_id)
 
 
-<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Posting-4.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Posting-4.png" style="width:70%;"/> <!-- {"left" : 0.85, "top" : 5.6, "height" : 5.18, "width" : 15.8} -->
+
 
 
 Notes: 
@@ -604,7 +610,8 @@ Notes:
 
  * Model: some_id => counter
 
-<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Counting-5.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Counting-5.png" style="width:70%;"/> <!-- {"left" : 1.49, "top" : 6.15, "height" : 3.68, "width" : 14.51} -->
+
 
 
 Notes: 
@@ -613,7 +620,7 @@ Notes:
 
 ---
 
-## `C*` @ Netflix (Very Unique Case)
+## C* @ Netflix (Very Unique Case)
 
 
  * Runs on AWS
@@ -648,9 +655,9 @@ Notes:
 
  * Slide #28
 
-</br>
 
-<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Trending-Now-Architecture-6.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Trending-Now-Architecture-6.png" style="width:70%;"/> <!-- {"left" : 1.63, "top" : 3.5, "height" : 7.16, "width" : 14.25} -->
+
 
 
 Notes: 
@@ -664,10 +671,9 @@ Notes:
 
  * Slide #32
 
-</br>
 
 
-<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Tracking-Video-Play-Performance-7.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Session-09-Cassandra-Best-Practices-Tracking-Video-Play-Performance-7.png" style="width:60%;"/><!-- {"left" : 2.9, "top" : 2.35, "height" : 8.72, "width" : 11.7} -->
 
 
 Notes: 
@@ -676,7 +682,7 @@ Notes:
 
 ---
 
-## `C*` Use Cases: Online Service: Hulu
+## C* Use Cases: Online Service: Hulu
 
 
  * 5 million subscribers
@@ -697,7 +703,7 @@ Notes:
 
 ---
 
-## `C*` Use Cases: Online Service: Spotify
+## C* Use Cases: Online Service: Spotify
 
 
  * 40 M active users / month

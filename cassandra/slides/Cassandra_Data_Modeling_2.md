@@ -31,14 +31,15 @@ Notes:
 ---
 
 
-## `C*` Collections
+## C* Collections
 
 | Type | Description                                       | Sample                            |
 |------|---------------------------------------------------|-----------------------------------|
-| List | * Ordered collection   </br> * Duplicates allowed | ['foo', 'bar', 'foo']             |
-| Set  | * Un-ordered collection   </br>  * No duplicates  | {'foo', 'bar'}                    |
-| Map  | * Key / value  </br> * No dupes                   | {'x': 'foo',     </br>'y': 'bar'} |
+| List | * Ordered collection   <br/> * Duplicates allowed | ['foo', 'bar', 'foo']             |
+| Set  | * Un-ordered collection   <br/>  * No duplicates  | {'foo', 'bar'}                    |
+| Map  | * Key / value  <br/> * No dupes                   | {'x': 'foo',     <br/>'y': 'bar'} |
 
+<!-- {"left" : 0.78, "top" : 3.02, "height" : 1, "width" : 15.95} -->
 
 Notes: 
 
@@ -79,7 +80,6 @@ Notes:
 
 ## Collections Examples
 
-
 ```text
 create table users (
 	uid text PRIMARY KEY,
@@ -103,6 +103,7 @@ Insert into users (uid, checkins)
 VALUES ('u1', ['starbucks',  'great mall',  'starbucks']);
 
 ```
+<!-- {"left" : 0.82, "top" : 2.59, "height" : 7.97, "width" : 13.62} -->
 
 Notes: 
 
@@ -113,6 +114,7 @@ Notes:
 
 ## Lab 3: Collections
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
  *  **Overview:**
 
@@ -152,9 +154,13 @@ Notes:
  * Can the table below uniquely represent all cities in the world?
 
 ```text
-create table cities (	city_name text,	population int,	PRIMARY KEY (city_name)	);
+create table cities (
+    city_name text,
+    population int,
 
+    PRIMARY KEY (city_name)	);
 ```
+<!-- {"left" : 0.82, "top" : 3.44, "height" : 2.38, "width" : 7.92} -->
 
 
 Notes: 
@@ -192,23 +198,40 @@ Notes:
 
 ---
 
-## Cities table Revised
+## Cities Table Revised
 
-  * *CREATE TABLE cities (	country text,	city text,	population int,	PRIMARY KEY (country, city)	);*
+```sql
+CREATE TABLE cities (
+    country text,
+    city text,
+    population int,
+    
+    PRIMARY KEY (country, city));
+```
+<!-- {"left" : 0.82, "top" : 1.66, "height" : 2.03, "width" : 6.28} -->
 
 
   * Quiz: can this uniquely identify all cities in the US?
 
   * Quiz: What are the most popular city names in the US?
 
-    - Greenville (38),  Franklin (30) … Springfield (29)http://en.wikipedia.org/wiki/List_of_the_most_common_U.S._place_names 
+    - Greenville (38),  Franklin (30) ... Springfield (29)
+    - http://en.wikipedia.org/wiki/List_of_the_most_common_U.S._place_names 
 
 ```text
 
 // cities table that can support all US cities
-CREATE TABLE cities (	country text,
-  state, text	city text,	population int,	PRIMARY KEY (country, state, city)	);
+CREATE TABLE cities (
+    country text,
+    state, text,
+    city text,
+    population int,
+    
+    PRIMARY KEY (country, state, city)	);
 ```
+<!-- {"left" : 0.82, "top" : 6.45, "height" : 3.03, "width" : 9.8} -->
+
+
 ---
 
 
@@ -216,29 +239,20 @@ CREATE TABLE cities (	country text,
 
 ## Composite Primary Key
 
-<img src="../../assets/images/cassandra/composite-keys2.png"  style="width:50%;float:right;"/>
+<img src="../../assets/images/cassandra/composite-keys2.png"  style="width:35%;float:right;"/><!-- {"left" : 12.73, "top" : 1.69, "height" : 2.74, "width" : 4.74} -->
 
  * Primary Key can be a combination of more than one column
     - => composite key
-
  * Primary Key = **Partition Key** + one / more **Cluster Columns**
-
  * PK = country + city
-
      - Country: partition key
      - City: clustering key
-
-
  * Partition Key decides which node the data resides
  * Data is ordered in cluster column order within a partition
-
  * PK(A,B)
-
      - Partition key: A
      - Clustering keys: B
-
  * PK(A,B,C)
-
      - Partition key: A
      - Clustering keys: B,C
 
@@ -251,9 +265,10 @@ CREATE TABLE cities (	country text,
 
  *  **PK (country, city)** 
 
- * Only  **country** is hashed locate the data
+ * Only **country** is hashed locate the data
 
-<img src="../../assets/images/cassandra/Composite-Key-Data-Layout.png"  style="width:60%;"/>
+<img src="../../assets/images/cassandra/Composite-Key-Data-Layout.png"  style="width:60%;"/><!-- {"left" : 3.22, "top" : 4.13, "height" : 6.17, "width" : 11.06} -->
+
 
 
 Notes: 
@@ -265,6 +280,7 @@ Notes:
 
 ## Lab 4.1: Composite Keys
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
  *  **Overview:** 
 
@@ -288,7 +304,7 @@ Notes:
 ## Clustering Keys: Sorting Order
 
 
-<img src="../../assets/images/cassandra/Clustering-Keys-Sorting-Order.png"  style="width:70%;"/>
+<img src="../../assets/images/cassandra/Clustering-Keys-Sorting-Order.png"  style="width:70%;"/><!-- {"left" : 0.85, "top" : 4.12, "height" : 5.47, "width" : 15.8} -->
 
 
 Notes: 
@@ -360,6 +376,8 @@ Notes:
 | **USA** | San Francisco |            |
 | **USA** | San Jose      |            |
 
+<!-- {"left" : 1.21, "top" : 4.36, "height" : 2, "width" : 15.09} -->
+
 
 Notes: 
 
@@ -381,12 +399,16 @@ Notes:
 |---------|-----------|------------|
 | USA     | **Melbourne** |            |
 
-</br>
-</br>
+<!-- {"left" : 2.09, "top" : 4.83, "height" : 1.01, "width" : 13.32} -->
+
+
 
 | Country       | City      | Population |
 |---------      |-----------|------------|
 | Australia     | **Melbourne** |            |
+
+<!-- {"left" : 2.09, "top" : 6.71, "height" : 1.01, "width" : 13.32} -->
+
 
 Notes: 
 
@@ -401,7 +423,8 @@ Notes:
  * Postal mail: Which of these mails will be delivered quickly?
 
 
-<img src="../../assets/images/cassandra/Visualize-Composite-Keys.png"  style="width:60%;"/>
+<img src="../../assets/images/cassandra/Visualize-Composite-Keys.png"  style="width:60%;"/><!-- {"left" : 4.15, "top" : 3, "height" : 2.62, "width" : 9.19} -->
+
 
 
  * In `C*` queries specifying partition key are faster
@@ -419,7 +442,7 @@ Notes:
 
 ## Possible Problems: Data Skew
 
-<img src="../../assets/images/cassandra/composite-key-paritions.png"  style="width:50%;float:right;"/>
+<img src="../../assets/images/cassandra/Composite-Key-Data-Layout.png"  style="width:50%;float:right;"/><!-- {"left" : 8.56, "top" : 2.25, "height" : 4.81, "width" : 8.61} -->
 
  * Primary Key = (Country , City)
 
@@ -481,7 +504,7 @@ Notes:
      - select * from cities2 where country = 'USA'  and state = 'CA';
      - select * from cities2 where city = 'Melbourne'
 
-<img src="../../assets/images/cassandra/Session-Cassandra-Data-Modeling-2-Partition-Skew-Solution-2-4.png"  style="width:40%;"/>
+<img src="../../assets/images/cassandra/Session-Cassandra-Data-Modeling-2-Partition-Skew-Solution-2-4.png"  style="width:40%;"/><!-- {"left" : 3.81, "top" : 8.28, "height" : 2.97, "width" : 9.88} -->
 
 
 
@@ -499,9 +522,9 @@ Notes:
 
  * In composite keys, key order matters a great deal
 
-     - Fast query  vs. slow query
+     - Fast query vs. slow query
 
-     - PK (A,B,C)  !=   PK (C,B,A)
+     - PK (A,B,C)!=   PK (C,B,A)
 
  * Be judicious with 'allow filtering'
 
@@ -526,7 +549,8 @@ Notes:
 
  * Other cases where the data that changes on temporal basis
 
-<img src="../../assets/images/cassandra/Session-Cassandra-Data-Modeling-2-Time-Series-Data-5.png"   style="width:80%;" />
+<img src="../../assets/images/cassandra/Session-Cassandra-Data-Modeling-2-Time-Series-Data-5.png"   style="width:70%;" /><!-- {"left" : 2.87, "top" : 4.53, "height" : 6.19, "width" : 11.77} -->
+
 
 
 Notes: 
@@ -575,6 +599,7 @@ Notes:
 | 140  | S2        | 88   | 98       | 11       |
 | 180  | **S1**        | 67   | 33       | 12       |
 
+<!-- {"left" : 1.68, "top" : 3.11, "height" : 3, "width" : 14.13} -->
 
 Notes: 
 
@@ -583,9 +608,10 @@ Notes:
 
 ---
 
-## Sensor Table in `C*`
+## Sensor Table in C*
 
-<img src="../../assets/images/cassandra/Sensor-Table.png"   style="width:80%;" />
+<img src="../../assets/images/cassandra/Sensor-Table.png"   style="width:80%;" /><!-- {"left" : 0.84, "top" : 2.74, "height" : 6.79, "width" : 15.83} -->
+
 
 
 
@@ -596,14 +622,14 @@ Notes:
 
 ---
 
-## Time Series in `C*` Visualization
+## Time Series in C* Visualization
 
 
  * Visualize (look at sort order for timestamp).
 
  * Notice the color coding.
 
-<img src="../../assets/images/cassandra/Visualization.png"   style="width:80%;" />
+<img src="../../assets/images/cassandra/Visualization.png"   style="width:80%;" /><!-- {"left" : 1.72, "top" : 5.61, "height" : 3.88, "width" : 14.06} -->
 
 
 Notes: 
@@ -613,14 +639,14 @@ Notes:
 
 ---
 
-## `C*` Vs. RDBMS
+## C* Vs. RDBMS
 
 
  * In RDBMS each new reading will create a **ROW**
 
  * In `C*` each new reading becomes a **COLUMN**
 
-<img src="../../assets/images/cassandra/time-series-colum-storage.png"   style="width:80%;" />
+<img src="../../assets/images/cassandra/time-series-colum-storage.png"   style="width:80%;" /> <!-- {"left" : 1.64, "top" : 4.5, "height" : 6, "width" : 14.23} -->
 
 
 Notes: 
@@ -632,6 +658,7 @@ Notes:
 
 ## Lab 5.1: Time Series Data
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
  *  **Overview:**
 
@@ -658,6 +685,7 @@ Notes:
 
 ## Lab 5.2: Time Series Data
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
  *  **Overview:**
 
@@ -724,9 +752,9 @@ Notes:
 ## Partitioning by: sensor + month
 
 
- *  create table sensors (	 ....	month text,  // e.g:  2014-04
+ * create table sensors (	 .... month text,  // e.g:  2014-04
 
- *         	PRIMARY KEY ( (sensor_id, month),  time)) WITH CLUSTERING ORDER BY (time DESC);
+ * PRIMARY KEY ( (sensor_id, month),  time)) WITH CLUSTERING ORDER BY (time DESC);
 
  * Note : It is not same as PK (sensor_id, month, time)!!
 
@@ -739,7 +767,7 @@ Notes:
 
 ## Partitioning: sensor + month
 
-<img src="../../assets/images/cassandra/Partitioning-sensor-month.png"   style="width:80%;" />
+<img src="../../assets/images/cassandra/Partitioning-sensor-month.png"   style="width:80%;" /><!-- {"left" : 2.29, "top" : 2.95, "height" : 7.81, "width" : 12.91} -->
 
 Notes: 
 
@@ -801,11 +829,11 @@ Notes:
 ## Takeaways
 
 
- * `C*` handles time series data well
+ * C* handles time series data well
 
  * Watch out for partitions ballooning in size
 
-     - Further segment partition (by day, week, month …)
+     - Further segment partition (by day, week, month ...)
 
  * Optimize storing smaller values 
 
@@ -824,6 +852,7 @@ Notes:
 
 ## Lab 5.3: Partitioning Time Series Data
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
  *  **Overview:** 
 
@@ -852,9 +881,8 @@ Notes:
 
 ## Counters
 
-
  * Quickly count things
-     - Events, pageviews …etc.
+     - Events, pageviews ...etc.
 
  * Store counters in dedicated tables  (count_pageviews)
 
@@ -874,6 +902,8 @@ Notes:
             SET visits = visits + 1
            WHERE url ='http://www.mysite.com'
 ```
+<!-- {"left" : 0.82, "top" : 5.15, "height" : 3.55, "width" : 10.11} -->
+
 
 Notes: 
 
@@ -884,6 +914,7 @@ Notes:
 
 ## Lab 6: Counters
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
  *  **Overview:**
 
@@ -936,7 +967,7 @@ Notes:
 
 ---
 
-## ACID in `C*`: Atomic
+## ACID in C*: Atomic
 
 
  * Row level updates are atomic
@@ -960,7 +991,7 @@ Notes:
 
 ---
 
-## ACID in `C*`: Consistency
+## ACID in C*: Consistency
 
 
  * Two consistency levels are offered
@@ -976,7 +1007,7 @@ Notes:
 
 ---
 
-## ACID in `C*`: Tunable Consistency
+## ACID in C*: Tunable Consistency
 
 
  * Extension of eventual consistency
@@ -998,7 +1029,7 @@ Notes:
 
 ---
 
-## ACID in `C*`: Isolation
+## ACID in C*: Isolation
 
 
  * Imagine the case:
@@ -1018,7 +1049,7 @@ Notes:
 
 ---
 
-## ACID in `C*`: Durability
+## ACID in C*: Durability
 
 
  * `C*` provides excellent durability
@@ -1091,6 +1122,8 @@ Notes:
 
  * BEGIN BATCH
 
+<br/>
+
 ```text
 
  INSERT INTO users (userid, password) values ('user1', 'seckret');
@@ -1100,6 +1133,8 @@ Notes:
  UPDATE users set account_verified=true where userid = 'user1';
 
 ```
+<!-- {"left" : 0.82, "top" : 2.72, "height" : 2.26, "width" : 15.13} -->
+
 
  * APPLY BATCH 
 
@@ -1160,7 +1195,7 @@ Notes:
 
 ---
 
-## ACID in `C*`: SERIAL Consistency
+## ACID in C*: SERIAL Consistency
 
 
  * Only applies to Lightweight Transactions
@@ -1189,7 +1224,7 @@ Notes:
 
  * SERIAL CONSISTENCY LOCAL_SERIAL
 
- * INSERT INTO USERS (user_id, name….)VALUES  ('joe',  ….)IF NOT EXISTS;
+ * INSERT INTO USERS (user_id, name....)VALUES  ('joe',  ....)IF NOT EXISTS;
 
 Notes: 
 
@@ -1281,6 +1316,7 @@ CREATE MATERIALIZED VIEW features_by_type
 select * from features_by_type where type = 'TV Show';  // OK
 
 ```
+<!-- {"left" : 0.82, "top" : 2.68, "height" : 3.19, "width" : 15.04} -->
 
 Notes: 
 

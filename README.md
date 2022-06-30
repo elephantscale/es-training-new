@@ -41,6 +41,7 @@ Vector graphics
 - https://undraw.co/ : funky, customizable graphics
 - https://www.freepik.com/
 - https://www.vecteezy.com/
+- https://publicdomainvectors.org/
 
 Cartoons
 - https://xkcd.com/

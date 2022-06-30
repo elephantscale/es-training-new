@@ -3,10 +3,10 @@
   
 ## Agenda - 2 days
 
-| Day | Theme                | Detail                                                                                                |
-|-----|----------------------|-------------------------------------------------------------------------------------------------------|
-| 1   | Introducing Security | Intro * Threat modeling * Common attacks * Countermeasures * Secure design                                                          |
-| 2   | Secure Frameworks    | Modern security frameworks (Vault and Consul) *  Framework architecture  * Securing the runtime environment * Security future |
+| Day | Theme                      | Detail                                                                             |
+|-----|----------------------------|------------------------------------------------------------------------------------|
+| 1   | Introducing Testing and ML | Overview of AI-driven testing. Introduction to ML and its potential use in testing |
+| 2   | More ML and AI-driven Test | More ML. Deep Learning. Any-driven test products.                                  |
 
 
 Notes: 

@@ -126,10 +126,8 @@ Notes:
 * Instructor's contact
 
 * Slides
-    - For each session, slides will be emailed out or delivered via virtual classroom
 
-* Labs
-    - Lab files will be distributed
+* Lab bundle
 
 * Lab environment
 

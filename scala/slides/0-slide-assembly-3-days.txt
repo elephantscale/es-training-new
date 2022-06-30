@@ -4,7 +4,20 @@
 
 
 ## Course outline
-../scala.pdf
+# ../scala.pdf
 
-Scala-Intro.md
-Scala-Getting-Started.md
+About-Scala-Class.md
+Intro.md
+Getting-Started.md
+Types.md
+Collections.md
+Control-and-Functions.md
+Functional-Programming.md
+Classes.md
+Case-Classes.md
+Tests.md
+
+
+## extra
+../docs/Scala-Power.pdf
+../docs/ScalaByExample.pdf

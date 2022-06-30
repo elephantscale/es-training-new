@@ -23,16 +23,16 @@ If my training data only has people facing left, but I want to classify people f
 
 1 / 1 point
 
-Use the ‘horizontal_flip’ parameter
+Use the 'horizontal_flip' parameter
 
 
-Use the ‘flip’ parameter
+Use the 'flip' parameter
 
 
-Use the ‘flip’ parameter and set ‘horizontal’
+Use the 'flip' parameter and set 'horizontal'
 
 
-Use the ‘flip_vertical’ parameter around the Y axis
+Use the 'flip_vertical' parameter around the Y axis
 
 Correct
 3.Question 3

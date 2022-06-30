@@ -836,8 +836,8 @@ Notes:
 ##  Correlation  Code (Python)
 
 ```python
-import** numpy as  np
-import  pandas  as  pd
+import numpy  as  np
+import pandas as  pd
 
 bills = np.array([50,30,60,40,65,20,10,15,25,35])
 tips = np.array([12,7,13,8,15,5,2,2,3,4])

@@ -1,5 +1,8 @@
 # Logistic Regression
 
+
+<img src="../../assets/images/machine-learning/sigmoid-function-1.png" style="width:40%;" />
+
 ---
 
 ## Algorithm Map

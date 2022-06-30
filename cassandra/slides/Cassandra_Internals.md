@@ -23,9 +23,11 @@ Notes:
 ---
 
 
-## `C*` Data Stores
+## C* Data Stores
 
-<img src="../../assets/images/cassandra/architecture.png" style="width:40%; float:right;"/>
+<img src="../../assets/images/cassandra/architecture.png" style="width:40%; float:right;"/> <!-- {"left" : 9.57, "top" : 2.29, "height" : 6.92, "width" : 7.21} -->
+
+
 
  * `C*` data store has 3 components
 
@@ -44,7 +46,7 @@ Notes:
 
 ## Memtable
 
-<img src="../../assets/images/cassandra/architecture-01.png" style="width:40%; float:right;"/>
+<img src="../../assets/images/cassandra/architecture-01.png" style="width:40%; float:right;"/> <!-- {"left" : 9.61, "top" : 1.89, "height" : 7.03, "width" : 7.32} -->
 
  * In memory
 
@@ -70,7 +72,7 @@ A steady stream of continuous writes occurs. This action leads to more efficient
 
 ## SSTable
 
-<img src="../../assets/images/cassandra/architecture-02.png" style="width:40%; float:right;"/>
+<img src="../../assets/images/cassandra/architecture-02.png" style="width:40%; float:right;"/><!-- {"left" : 9.3, "top" : 2.13, "height" : 7.23, "width" : 7.54} -->
 
  * Persisted on disk  ('D' in ACID)
 
@@ -147,7 +149,7 @@ Notes:
 
 ## Commit log
 
-<img src="../../assets/images/cassandra/architecture-03.png" style="width:40%; float:right;"/>
+<img src="../../assets/images/cassandra/architecture-03.png" style="width:40%; float:right;"/><!-- {"left" : 9.19, "top" : 2, "height" : 7.43, "width" : 7.75} -->
 
  * Why do we need commit log in addition to SSTable?
 
@@ -175,9 +177,9 @@ Notes:
 
  * Value of X is being updated from 3 -> 5 -> 7
 
-</br>
 
-<img src="../../assets/images/cassandra/commit-log.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/commit-log.png" style="width:60%;"/><!-- {"left" : 2.91, "top" : 3.62, "height" : 7.1, "width" : 11.69} -->
+
 
 Notes: 
 
@@ -212,7 +214,7 @@ Notes:
 
 ## Compaction
 
-<img src="../../assets/images/cassandra/Compaction.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Compaction.png" style="width:70%;"/> <!-- {"left" : 1.81, "top" : 3.8, "height" : 6.11, "width" : 13.88} -->
 
 Notes: 
 
@@ -226,10 +228,10 @@ Row values are merged
 ---
 
 
-## `C*` Write Path
+## C* Write Path
 
 
-<img src="../../assets/images/cassandra/C-Write-Path-01.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/C-Write-Path-01.png" style="width:70%;"/><!-- {"left" : 3.23, "top" : 2.87, "height" : 7.96, "width" : 11.04} -->
 
 Notes: 
 
@@ -305,7 +307,7 @@ Notes:
 
 ## Read Path
 
-<img src="../../assets/images/cassandra/read-path01.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/read-path01.png" style="width:70%;"/><!-- {"left" : 1.66, "top" : 2.67, "height" : 8.37, "width" : 14.18} -->
 
 Notes: 
 
@@ -369,7 +371,7 @@ Notes:
 
  * Partition Key Cache
 
-<img src="../../assets/images/cassandra/Session-Cassandra-Internals-Caching-6.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Session-Cassandra-Internals-Caching-6.png" style="width:70%;"/><!-- {"left" : 1.75, "top" : 5.64, "height" : 4.8, "width" : 13.99} -->
 
 
 Notes: 
@@ -389,7 +391,7 @@ Notes:
 
       - Only enable for **small** partitions  
 
-      - Only when number of reads **is >>** number of writes  (95%)
+      - Only when number of reads **is >>** number of writes (95%)
 
       - Large partitions will exhaust JVM => Out of Memory error
 
@@ -408,7 +410,8 @@ Notes:
 ## Read Path Details
 
 
-<img src="../../assets/images/cassandra/Read-Path-Details.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Read-Path-Details.png" style="width:70%;"/><!-- {"left" : 2.71, "top" : 3.29, "height" : 7.12, "width" : 12.07} -->
+
 
 Notes: 
 
@@ -458,13 +461,20 @@ ID               : 387d15ba-7103-491b-9327-1a691dbb504a
 Load             : 65.87 KB
 Heap Memory (MB) : 392.82 / 1996.81
 ...
-Key Cache        : entries 10, size 728 (bytes), capacity 103809024 (bytes), 93 hits, 102 requests, 0.912 recent hit rate, 14400 save period in seconds
+Key Cache        : entries 10, size 728 (bytes), 
+capacity 103809024 (bytes), 93 hits, 102 requests, 
+0.912 recent hit rate, 14400 save period in seconds
 
-Row Cache        : entries 0, size 0 (bytes), capacity 0 (bytes), 0 hits, 0 requests, NaN recent hit rate, 0 save period in seconds
+Row Cache        : entries 0, size 0 (bytes), 
+capacity 0 (bytes), 0 hits, 0 requests, NaN recent hit rate, 
+0 save period in seconds
 
-Counter Cache    : entries 0, size 0 (bytes), capacity 51380224 (bytes), 0 hits, 0 requests, NaN recent hit rate, 7200 save period in seconds
+Counter Cache    : entries 0, size 0 (bytes), 
+capacity 51380224 (bytes), 0 hits, 0 requests, 
+NaN recent hit rate, 7200 save period in seconds
 
 ```
+<!-- {"left" : 0.82, "top" : 2.9, "height" : 6.78, "width" : 14.17} -->
 
 Notes: 
 
@@ -505,9 +515,9 @@ Notes:
 
  * Partition key determines which node owns the row
 
- * Partition Key ---  (hashing) => token 
+ * Partition Key --- (hashing) => token 
 
- * Token value range is very large:  -2^63 to 2^64-1 
+ * Token value range is very large: -2^63 to 2^64-1 
 
  * Each node in the cluster "owns" a set of tokens
 
@@ -517,7 +527,7 @@ Notes:
 
  * Hashing algorithm
 
-     - Murmur3Partitioner   (replaces MD5 hashing)
+     - Murmur3Partitioner (replaces MD5 hashing)
 
 Notes: 
 
@@ -527,7 +537,7 @@ Notes:
 
 ## Single Token Range per Node
 
-<img src="../../assets/images/cassandra/Single-Token-Range-per-Node.png" style="width:50%;"/>
+<img src="../../assets/images/cassandra/Single-Token-Range-per-Node.png" style="width:50%;"/> <!-- {"left" : 4.21, "top" : 2.39, "height" : 8.93, "width" : 9.08} -->
 
 
 
@@ -564,7 +574,7 @@ Notes:
 
 ## Token Ranges with VNodes
 
-<img src="../../assets/images/cassandra/Token-Ranges-with-VNodes.png" style="width:50%;"/>
+<img src="../../assets/images/cassandra/Token-Ranges-with-VNodes.png" style="width:50%;"/><!-- {"left" : 4.68, "top" : 2.78, "height" : 8.16, "width" : 8.15} -->
 
 
 Notes: 

@@ -57,20 +57,20 @@ If I want to view the history of my training, how can I access it?
 
 1 / 1 point
 
-Create a variable ‘history’ and assign it to the return of model.fit or model.fit_generator
+Create a variable 'history' and assign it to the return of model.fit or model.fit_generator
 
 
 Use a model.fit_generator
 
 
-Pass the parameter ‘history=true’ to the model.fit
+Pass the parameter 'history=true' to the model.fit
 
 
 Download the model and inspect it
 
 Correct
 5.Question 5
-What’s the name of the API that allows you to inspect the impact of convolutions on the images?
+What's the name of the API that allows you to inspect the impact of convolutions on the images?
 
 1 / 1 point
 

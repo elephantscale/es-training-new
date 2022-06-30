@@ -49,11 +49,17 @@
 
 ---
 
-## Brainz!
+## Q: What is the Object Oriented Way to Become Wealthy?
 
-### Waiter: He's choking! Is anyone a doctor? 
+### A : Inheritance
 
-### Programmer: I'm a Vim user.
+---
+
+---
+
+## Hardware (noun.)
+
+### The part of the computer that you can kick
 
 ---
 
@@ -129,7 +135,23 @@
 
 ---
 
-# Java
+## A programmer got stuck in the shower...
+
+### Because the instructions in the shampoo bottle said
+
+### *Lather, Rinse, Repat.*
+
+---
+
+---
+
+## How to get a programmer to save you
+
+<img src="images/programmer-life-guard.jpg" style="width:80%;"/> 
+
+---
+
+# Java Jokes
 
 ---
 
@@ -172,6 +194,18 @@
 ## Why do Java programmers make terrible spouses?
 
 ### They don't take out the garbage
+
+---
+
+---
+
+# Chuck Norris Jokes
+
+---
+
+## Chuck Norris Writes Code...
+
+###  That *Optimizes Itself*
 
 ---
 

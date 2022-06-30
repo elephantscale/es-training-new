@@ -60,6 +60,7 @@ Notes:
 |                     | Native drivers = java / python / c# | Native drivers = java / python / c#   |
 |                     |                                     | Hadoop Support                        |
 
+<!-- {"left" : 0.89, "top" : 2.53, "height" : 3.37, "width" : 15.71} -->
 
 Notes: 
 
@@ -123,7 +124,8 @@ Notes:
 ## OpsCenter Dashboard
 
 
-<img src="../../assets/images/cassandra/3rd-party/OpsCenter-Dashboard.png"  style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/OpsCenter-Dashboard.png"  style="width:70%;"/><!-- {"left" : 2.43, "top" : 2.24, "height" : 9.22, "width" : 12.7} -->
+
 
 Notes: 
 
@@ -228,7 +230,8 @@ Notes:
 
 ## Disks
 
-<img src="../../assets/images/cassandra/disks.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/cassandra/disks.png" style="width:30%;float:right;"/><!-- {"left" : 10.69, "top" : 1.89, "height" : 5.85, "width" : 6.38} -->
+
 
  * Multiple spindles per node
 
@@ -273,6 +276,8 @@ Notes:
 |-----------------------|------------|-----------|
 | SSD                   | $500       | 50c / GB  |
 | Mechanical Hard Drive | $70        | 7c / GB   |
+
+<!-- {"left" : 1.18, "top" : 6.1, "height" : 1.5, "width" : 15.14} -->
 
 
 Notes: 
@@ -402,7 +407,8 @@ Notes:
 
      - Process data
 
-<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:50%;float:right;"/>  <img src="../../assets/images/cassandra/hdfs-overview.png" style="width:50%;float:left;"/>
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:50%;float:right;"/><!-- {"left" : 0.92, "top" : 5.33, "height" : 3.1, "width" : 6.81} -->
+  <img src="../../assets/images/cassandra/hdfs-overview.png" style="width:50%;float:left;"/><!-- {"left" : 8.65, "top" : 5.16, "height" : 4.53, "width" : 7.93} -->
 
 Notes: 
 
@@ -412,7 +418,7 @@ Notes:
 
 ## Cassandra & Hadoop
 
-<img src="../../assets/images/cassandra/hadoop-spark-cassandra-1.png" style="width:60%;float:right;"/>
+<img src="../../assets/images/cassandra/hadoop-spark-cassandra-1.png" style="width:60%;float:right;"/><!-- {"left" : 9.47, "top" : 2.45, "height" : 1.9, "width" : 7.67} -->
 
  * `C*` enterprise has Hadoop intergration
 
@@ -438,9 +444,9 @@ Notes:
 
 ---
 
-## Separate Batch / Realtime
+## Separate Batch/ Realtime
 
-<img src="../../assets/images/cassandra/Separate-Batch-Realtime.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Separate-Batch-Realtime.png" style="width:70%;"/> <!-- {"left" : 2.91, "top" : 2.56, "height" : 8.58, "width" : 11.73} -->
 
 Notes: 
 
@@ -448,9 +454,9 @@ Notes:
 
 ---
 
-## Cassandra  / Hadoop
+## Cassandra/ Hadoop
 
-<img src="../../assets/images/cassandra/Cassandra-Hadoop.png" style="width:60%;"/>
+<img src="../../assets/images/cassandra/Cassandra-Hadoop.png" style="width:50%;"/> <!-- {"left" : 4.3, "top" : 2.35, "height" : 9.02, "width" : 8.96} -->
 
 Notes: 
 
@@ -460,7 +466,7 @@ Notes:
 
 ## Spark Primer
 
-<img src="../../assets/images/cassandra/spark-high-level.png" style="width:60%; float:right;"/>
+<img src="../../assets/images/cassandra/spark-high-level.png" style="width:60%; float:right;"/> <!-- {"left" : 9.68, "top" : 1.89, "height" : 4.15, "width" : 7.39} -->
 
  * Apache Spark is a 'second generation' Big Data platform
 
@@ -492,7 +498,8 @@ Notes:
 
  * Spark-Cassandra connector: https://github.com/datastax/spark-cassandra-connector
 
-<img src="../../assets/images/cassandra/kafka-spark-cassandra.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/kafka-spark-cassandra.png" style="width:70%;"/> <!-- {"left" : 0.54, "top" : 7.6, "height" : 1.44, "width" : 16.42} -->
+
 
 
 Notes: 
@@ -505,7 +512,7 @@ Spark & Cassandra : Amazing Love Story : http://www.slideshare.net/SparkSummit/s
 
 ## Lambda architecture
 
-<img src="../../assets/images/streaming/Lambda-Architecture-1.png" style="width:70%;"/>
+<img src="../../assets/images/streaming/Lambda-Architecture-1.png" style="width:70%;"/> <!-- {"left" : 2.64, "top" : 2.65, "height" : 7.09, "width" : 12.23} -->
 
 
 Notes: 
@@ -546,7 +553,7 @@ Notes:
 ## Spark + Lambda Architecture
 
 
-<img src="../../assets/images/cassandra/Spark-Lambda-Architecture.png" style="width:70%;"/>
+<img src="../../assets/images/cassandra/Spark-Lambda-Architecture.png" style="width:70%;"/><!-- {"left" : 1.16, "top" : 2.29, "height" : 9.14, "width" : 15.19} -->
 
 
 Notes: 
@@ -572,7 +579,7 @@ Spark can run queries against batch layer and / or speed layer
 
  * HDFS: Long term store and batch queries
 
-<img src="../../assets/images/streaming/Lambda-Architecture-2.png" style="width:80%;"/>
+<img src="../../assets/images/streaming/Lambda-Architecture-2.png" style="width:80%;"/><!-- {"left" : 1.15, "top" : 6.09, "height" : 3.47, "width" : 15.19} -->
 
 
 Notes: 

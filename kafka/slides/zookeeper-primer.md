@@ -36,18 +36,17 @@ Image credit: wikimedia.org
 
 ---
 
-## Now
+## Distributed Computing
 
+* Distributed systems with
+    - Multiple nodes
+    - Each with multiple cores
 
- * Distributed systems with
+* Imagine every thread wants to increment a global counter
 
-     - Multiple nodes
+* How do we co-ordinate them all?
 
-     - Each with multiple cores
-
- * How do we co-ordinate them all?
-
-<img src="../../assets/images/kafka/Now.png" alt="Now.png" style="width:70%;"/><!-- {"left" : 0.52, "top" : 4.15, "height" : 3.08, "width" : 9.21} -->
+<img src="../../assets/images/kafka/distributed-computing-1.png" alt="distributed-computing-1.png" style="width:70%;"/><!-- {"left" : 0.52, "top" : 4.15, "height" : 3.08, "width" : 9.21} -->
 
 
 Notes:

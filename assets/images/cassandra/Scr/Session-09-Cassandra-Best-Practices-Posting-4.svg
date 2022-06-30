@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-473 -369 1760 577" width="1760" height="577">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-06-22 08:01:54 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_20">
+        <path d="M 586 175.02036 L 586 -78.33107 C 586 -95.81232 742.8 -110 936 -110 C 1129.2 -110 1286 -95.81232 1286 -78.33107 L 1286 175.02036 C 1286 192.5016 1129.2 206.68929 936 206.68929 C 742.8 206.68929 586 192.5016 586 175.02036" fill="#aa97fe"/>
+        <path d="M 586 175.02036 L 586 -78.33107 C 586 -95.81232 742.8 -110 936 -110 C 1129.2 -110 1286 -95.81232 1286 -78.33107 L 1286 175.02036 C 1286 192.5016 1129.2 206.68929 936 206.68929 C 742.8 206.68929 586 192.5016 586 175.02036 M 586 -78.33107 C 586 -60.84982 742.8 -46.662143 936 -46.662143 C 1129.2 -46.662143 1286 -60.84982 1286 -78.33107" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_19">
+        <rect x="639.8356" y="-15.005357" width="165" height="126.7" fill="#d8fffe"/>
+        <rect x="639.8356" y="-15.005357" width="165" height="126.7" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(831.5957 -105)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Cassandra</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(654.33755 23.844643)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">user_id</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <ellipse cx="-354" cy="48.34464" rx="118.000188552424" ry="77.0894088954159" fill="#ebdea6"/>
+        <ellipse cx="-354" cy="48.34464" rx="118.000188552424" ry="77.0894088954159" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_15">
+        <path d="M -192.75 61.966964 L -192.75 34.72232 L -45.75 34.72232 L -45.75 21.1 L -15.75 48.34464 L -45.75 75.58929 L -45.75 61.966964 Z" fill="#e3a92e"/>
+        <path d="M -192.75 61.966964 L -192.75 34.72232 L -45.75 34.72232 L -45.75 21.1 L -15.75 48.34464 L -45.75 75.58929 L -45.75 61.966964 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(-411.99805 23.844643)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Poster</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 365.75 61.966964 L 365.75 34.72232 L 512.75 34.72232 L 512.75 21.1 L 542.75 48.34464 L 512.75 75.58929 L 512.75 61.966964 Z" fill="#e3a92e"/>
+        <path d="M 365.75 61.966964 L 365.75 34.72232 L 512.75 34.72232 L 512.75 21.1 L 542.75 48.34464 L 512.75 75.58929 L 512.75 61.966964 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 24.75 -12.005357 L 325.25 -12.005357 C 327.45914 -12.005357 329.25 -10.214496 329.25 -8.005357 L 329.25 104.69464 C 329.25 106.90378 327.45914 108.69464 325.25 108.69464 L 24.75 108.69464 C 22.54086 108.69464 20.75 106.90378 20.75 104.69464 L 20.75 -8.005357 C 20.75 -10.214496 22.54086 -12.005357 24.75 -12.005357 Z" fill="#ffdedd"/>
+        <path d="M 24.75 -12.005357 L 325.25 -12.005357 C 327.45914 -12.005357 329.25 -10.214496 329.25 -8.005357 L 329.25 104.69464 C 329.25 106.90378 327.45914 108.69464 325.25 108.69464 L 24.75 108.69464 C 22.54086 108.69464 20.75 106.90378 20.75 104.69464 L 20.75 -8.005357 C 20.75 -10.214496 22.54086 -12.005357 24.75 -12.005357 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <rect x="805.0548" y="-15.005357" width="142.24389" height="126.7" fill="#d8fffe"/>
+        <rect x="805.0548" y="-15.005357" width="142.24389" height="126.7" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(829.3799 23.844643)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">m_id</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="947.4877" y="-15.005357" width="142.24389" height="126.7" fill="#d8fffe"/>
+        <rect x="947.4877" y="-15.005357" width="142.24389" height="126.7" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(971.8127 23.844643)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">m_id</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="1089.9205" y="-15.005357" width="142.24389" height="126.7" fill="#d8fffe"/>
+        <rect x="1089.9205" y="-15.005357" width="142.24389" height="126.7" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(1114.2456 23.844643)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">m_id</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(31.00586 23.844643)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Async Delivery</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(-467 -364)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">PUSH</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(-467 -288.35)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">When posting, we push the media information to the followes’ feed store.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(-467 -229.35)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">When reading, we fetch the feed ids from the viewer’s feed store.</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

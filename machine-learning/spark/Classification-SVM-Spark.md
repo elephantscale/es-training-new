@@ -1,5 +1,7 @@
 # SVM Classifier in Spark
 
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" />
+
 ---
 
 ## Lesson Objectives
