@@ -173,7 +173,7 @@ Notes:
     - 30-40 mins
 
 * **Instructions:**
-    - KMEANS-1 lab (mtcars)
+    - KMEANS-1: lab (mtcars)
     - KMEANS-2: Uber trips
     - Bonus Lab: KMEANS-3: Walmart shopping data
 
