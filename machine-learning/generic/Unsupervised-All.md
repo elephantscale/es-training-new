@@ -23,7 +23,7 @@ Notes:
 
 ## Clustering
 
-[Unsupervised-Clustering.md](Unsupervised-Clustering.md)
+[Clustering.md](Clustering.md)
 
 ---
 

@@ -22,7 +22,7 @@ Notes:
 
 # Clustering
 
-[../generic/Unsupervised-Clustering.md](../generic/Unsupervised-Clustering.md)
+[../generic/Clustering.md](../generic/Clustering.md)
 
 ---
 # Clustering in Python
