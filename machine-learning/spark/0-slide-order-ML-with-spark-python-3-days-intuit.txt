@@ -40,9 +40,12 @@ Classification-Naive-Bayes-Spark.md
 ## Trees
 Decision-Trees-Spark.md
 
+## Ensemble
+Ensemble-Algorithms-Spark.md
+
 ## Unsupervised
-Unsupervised-Generic.md
-Unsupervised-Spark.md
+Clustering-Spark.md
+Dimensionality-Reduction-Spark.md
 
 
 ## Sagemaker

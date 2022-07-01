@@ -30,7 +30,7 @@
     - **org.apache.spark.ml.classification.RandomForestClassifier**  (Scala)
 
 * Regression implementation
-    - **pyspark.ml.regression.RandomForestClassifier**    (python)
+    - **pyspark.ml.regression.RandomForestRegressor**    (python)
     - **org.apache.spark.ml.regression.RandomForestRegressor** (Scala)
 
 Notes:
@@ -76,7 +76,8 @@ from pyspark.ml.evaluation import RegressionEvaluator
 # Load training data
 (training, test) = ...
 
-rf = RandomForestRegression(labelColumn='label', featuresCol = 'features')
+rf = RandomForestRegressor()
+# rf = RandomForestRegressor( numTrees=100)
 
 # Fit the model
 model = rf.fit(training)

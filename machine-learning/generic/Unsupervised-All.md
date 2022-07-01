@@ -29,4 +29,4 @@ Notes:
 
 ## Dimensionality Reduction
 
-[Unsupervised-Dimensionality-Reduction.md](Unsupervised-Dimensionality-Reduction.md)
+[Dimensionality-Reduction.md](Dimensionality-Reduction.md)

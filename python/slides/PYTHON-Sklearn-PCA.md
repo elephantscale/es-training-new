@@ -3,7 +3,7 @@
 
 # Dimensionality Reduction
 
-[Dimensionality Reduction from ML Course](../../machine-learning/generic/Unsupervised-Dimensionality-Reduction.md)
+[Dimensionality Reduction from ML Course](../../machine-learning/generic/Dimensionality-Reduction.md)
 
 ---
 

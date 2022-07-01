@@ -247,7 +247,7 @@ Notes:
 
 ## Dimensionality Reduction
 
-[../generic/Unsupervised-Dimensionality-Reduction.md](../generic/Unsupervised-Dimensionality-Reduction.md)
+[../generic/Dimensionality-Reduction.md](../generic/Dimensionality-Reduction.md)
 
 ---
 

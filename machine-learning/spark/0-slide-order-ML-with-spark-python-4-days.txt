@@ -48,6 +48,7 @@ Ensemble-Algorithms-Spark.md
 
 ## Unsupervised
 Clustering-Spark.md
+Dimensionality-Reduction-Spark.md
 
 # Recommendations
 Recommendations-Spark.md

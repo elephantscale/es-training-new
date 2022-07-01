@@ -47,7 +47,7 @@ Ensemble-Algorithms-Python.md
 
 Clustering-Python.md
 
-Unsupervised-Python.md
+Dimensionality-Reduction-Python.md
 
 ## Recommendations
 ../generic/Recommendations-Generic.md
