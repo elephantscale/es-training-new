@@ -47,7 +47,7 @@ Decision-Trees-Spark.md
 Ensemble-Algorithms-Spark.md
 
 ## Unsupervised
-Unsupervised-Spark.md
+Clustering-Spark.md
 
 # Recommendations
 Recommendations-Spark.md

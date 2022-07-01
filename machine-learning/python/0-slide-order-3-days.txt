@@ -43,6 +43,10 @@ Regressions-Python.md
 
 
 Decision-Trees-Python.md
+Ensemble-Algorithms-Python.md
+
+Clustering-Python.md
+
 Unsupervised-Python.md
 
 ## Recommendations
