@@ -1,6 +1,10 @@
 # AI for Software Testing
 
-  
+
+
+
+---
+
 ## Agenda - 2 days
 
 | Day | Theme                | Detail                                                                                                |
@@ -8,11 +12,11 @@
 | 1   | Introducing Security | Intro * Threat modeling * Common attacks * Countermeasures * Secure design                                                          |
 | 2   | Secure Frameworks    | Modern security frameworks (Vault and Consul) *  Framework architecture  * Securing the runtime environment * Security future |
 
+ <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
 
-Notes: 
+Notes:
 
 ---
-
 ## Pre-requisites and Expectations
 
 
@@ -31,14 +35,10 @@ Notes:
  * This is a Software Testing class
    - No previous knowledge is assumed (but may be helpful) 
    - Class will be based on the pace of majority of the students
-
-
-Notes: 
-
+Notes:
 
 
 ---
-
 ## Our Teaching Philosophy
 
 
@@ -51,9 +51,8 @@ Notes:
  * Hands-on (learn by doing)
 
 
-Notes: 
 
-
+Notes:
 
 ---
 
@@ -62,35 +61,28 @@ Notes:
 
  * Where is the ANY key?
 
-![](../../assets/images/about/any-key.png) <!-- {"left" : 1.63, "top" : 2.83, "height" : 4.26, "width" : 5.29} -->
+<img src="../../assets/images/about/any-key.png" style="width:50%;"/> <!-- {"left" : 1.37, "top" : 2.26, "height" : 5.65, "width" : 7.51} -->
 
 
-Notes: 
-
+Notes:
 
 
 ---
 
 ## Analogy: Learning To Fly...
 
-
-![](../../assets/images/about/learn-to-fly.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
-
-
-Notes: 
+<img src="../../assets/images/about/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.66, "top" : 2.06, "height" : 4.89, "width" : 8.93} -->
 
 
 
 ---
 
-## Instruction
+## Introductions
+
+<img src="../../assets/images/about/classroom-instruction.png" style="width:70%;"/> <!-- {"left" : 0.6, "top" : 2.06, "height" : 4.96, "width" : 9.04} -->
 
 
-![](../../assets/images/about/classroom-instruction.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
-
-Notes: 
-
-http://aviation-schools.regionaldirectory.us/learn-to-fly-720.jpg
+Notes:
 
 
 
@@ -98,53 +90,32 @@ http://aviation-schools.regionaldirectory.us/learn-to-fly-720.jpg
 
 ## + Flight Time
 
-![](../../assets/images/about/cockpit.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
-
-Notes: 
-
-http://www.wikihow.com/Become-a-Certified-Flight-Instructor
-
+<img src="../../assets/images/about/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.61, "top" : 2.06, "height" : 4.95, "width" : 9.04} -->
 
 
 ---
 
-## This Will Take A Lot Of Practice 
-
-![](../../assets/images/about/practice.png)  <!-- {"left" : 0.26, "top" : 0.9, "height" : 6.17, "width" : 9.74} -->
+## This Will Take A Lot Of Practice 
 
 
-Notes: 
+
+<img src="../../assets/images/about/practice.png" style="width:70%;"/> <!-- {"left" : 0.69, "top" : 2.06, "height" : 5.63, "width" : 8.87} -->
+
 
 
 
 ---
-
-
 ## About You And Me
 
-
- * About Instructor
-
+* About Instructor
  * About you
-
      - Your Name
-
      - Your background (developer, admin, manager, ...)
-
      - Technologies you are familiar with
+     - Familiarity with Python (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Familiarity with TensorFlow / Deep Learning (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
-     - Familiarity with testing? (scale of 1 – 4:  1 – new,   4 – expert)
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.08, "top" : 6.08, "height" : 1.99, "width" : 2.25} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.36, "top" : 6.1, "height" : 1.92, "width" : 3.54} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 6.08, "height" : 1.99, "width" : 2.25} -->
 
-     - Something non-technical about you!(favorite ice cream flavor or hobby...)
-
-![](../images/ice-cream.png)  <!-- {"left" : 0.67, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
-
-![](../images/hiking.png)   <!-- {"left" : 3.60, "top" : 5.51, "height" : 1.73, "width" : 2.33} -->
- 
-
-Notes: 
-
-
-
----
 
