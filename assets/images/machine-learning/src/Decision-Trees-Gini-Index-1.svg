@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="114 57 624 462" width="624" height="462">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-12 17:31:29 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 126 116 L 360 116 C 365.52285 116 370 120.47715 370 126 L 370 333 C 370 338.52285 365.52285 343 360 343 L 126 343 C 120.47715 343 116 338.52285 116 333 L 116 126 C 116 120.47715 120.47715 116 126 116 Z" fill="white"/>
+        <path d="M 126 116 L 360 116 C 365.52285 116 370 120.47715 370 126 L 370 333 C 370 338.52285 365.52285 343 360 343 L 126 343 C 120.47715 343 116 338.52285 116 333 L 116 126 C 116 120.47715 120.47715 116 126 116 Z" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 492 116 L 726 116 C 731.52285 116 736 120.47715 736 126 L 736 333 C 736 338.52285 731.52285 343 726 343 L 492 343 C 486.47715 343 482 338.52285 482 333 L 482 126 C 482 120.47715 486.47715 116 492 116 Z" fill="white"/>
+        <path d="M 492 116 L 726 116 C 731.52285 116 736 120.47715 736 126 L 736 333 C 736 338.52285 731.52285 343 726 343 L 492 343 C 486.47715 343 482 338.52285 482 333 L 482 126 C 482 120.47715 486.47715 116 492 116 Z" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_5">
+        <circle cx="518" cy="157" r="15.0000239685284" fill="#d99f2b"/>
+        <circle cx="518" cy="157" r="15.0000239685284" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_6">
+        <circle cx="595" cy="152" r="15.0000239685285" fill="#d99f2b"/>
+        <circle cx="595" cy="152" r="15.0000239685285" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="691" cy="152" r="15.0000239685285" fill="#d99f2b"/>
+        <circle cx="691" cy="152" r="15.0000239685285" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_8">
+        <circle cx="614" cy="199" r="15.0000239685285" fill="#d99f2b"/>
+        <circle cx="614" cy="199" r="15.0000239685285" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 518.7236 298.5528 L 532.1056 271.78885 C 532.35256 271.29488 532.95324 271.09465 533.4472 271.34164 C 533.64074 271.4384 533.79766 271.59533 533.8944 271.78885 L 547.2764 298.5528 C 547.5234 299.04676 547.32316 299.64744 546.8292 299.89443 C 546.6903 299.96385 546.5372 300 546.38197 300 L 519.61803 300 C 519.06575 300 518.61803 299.5523 518.61803 299 C 518.61803 298.84475 518.6542 298.69164 518.7236 298.5528 Z" fill="#8671ed"/>
+        <path d="M 518.7236 298.5528 L 532.1056 271.78885 C 532.35256 271.29488 532.95324 271.09465 533.4472 271.34164 C 533.64074 271.4384 533.79766 271.59533 533.8944 271.78885 L 547.2764 298.5528 C 547.5234 299.04676 547.32316 299.64744 546.8292 299.89443 C 546.6903 299.96385 546.5372 300 546.38197 300 L 519.61803 300 C 519.06575 300 518.61803 299.5523 518.61803 299 C 518.61803 298.84475 518.6542 298.69164 518.7236 298.5528 Z" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_10">
+        <circle cx="534" cy="233" r="15.0000239685284" fill="#d99f2b"/>
+        <circle cx="534" cy="233" r="15.0000239685284" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 666.7236 232.0528 L 680.1056 205.28885 C 680.3526 204.79488 680.9532 204.59465 681.4472 204.84164 C 681.64074 204.9384 681.7977 205.09533 681.8944 205.28885 L 695.2764 232.0528 C 695.5234 232.54676 695.32316 233.14744 694.8292 233.39443 C 694.6903 233.46385 694.5372 233.5 694.382 233.5 L 667.618 233.5 C 667.06575 233.5 666.618 233.05228 666.618 232.5 C 666.618 232.34475 666.6542 232.19164 666.7236 232.0528 Z" fill="#8671ed"/>
+        <path d="M 666.7236 232.0528 L 680.1056 205.28885 C 680.3526 204.79488 680.9532 204.59465 681.4472 204.84164 C 681.64074 204.9384 681.7977 205.09533 681.8944 205.28885 L 695.2764 232.0528 C 695.5234 232.54676 695.32316 233.14744 694.8292 233.39443 C 694.6903 233.46385 694.5372 233.5 694.382 233.5 L 667.618 233.5 C 667.06575 233.5 666.618 233.05228 666.618 232.5 C 666.618 232.34475 666.6542 232.19164 666.7236 232.0528 Z" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 594.7236 298.5528 L 608.1056 271.78885 C 608.35256 271.29488 608.9532 271.09465 609.4472 271.34164 C 609.64074 271.4384 609.79766 271.59533 609.8944 271.78885 L 623.2764 298.5528 C 623.5234 299.04676 623.32316 299.64744 622.8292 299.89443 C 622.6903 299.96385 622.5372 300 622.382 300 L 595.618 300 C 595.06575 300 594.618 299.5523 594.618 299 C 594.618 298.84475 594.6542 298.69164 594.7236 298.5528 Z" fill="#8671ed"/>
+        <path d="M 594.7236 298.5528 L 608.1056 271.78885 C 608.35256 271.29488 608.9532 271.09465 609.4472 271.34164 C 609.64074 271.4384 609.79766 271.59533 609.8944 271.78885 L 623.2764 298.5528 C 623.5234 299.04676 623.32316 299.64744 622.8292 299.89443 C 622.6903 299.96385 622.5372 300 622.382 300 L 595.618 300 C 595.06575 300 594.618 299.5523 594.618 299 C 594.618 298.84475 594.6542 298.69164 594.7236 298.5528 Z" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 687.7236 298.5528 L 701.1056 271.78885 C 701.3526 271.29488 701.9532 271.09465 702.4472 271.34164 C 702.6407 271.4384 702.7977 271.59533 702.8944 271.78885 L 716.2764 298.5528 C 716.5234 299.04676 716.3232 299.64744 715.8292 299.89443 C 715.6903 299.96385 715.5372 300 715.382 300 L 688.618 300 C 688.06575 300 687.618 299.5523 687.618 299 C 687.618 298.84475 687.6542 298.69164 687.7236 298.5528 Z" fill="#8671ed"/>
+        <path d="M 687.7236 298.5528 L 701.1056 271.78885 C 701.3526 271.29488 701.9532 271.09465 702.4472 271.34164 C 702.6407 271.4384 702.7977 271.59533 702.8944 271.78885 L 716.2764 298.5528 C 716.5234 299.04676 716.3232 299.64744 715.8292 299.89443 C 715.6903 299.96385 715.5372 300 715.382 300 L 688.618 300 C 688.06575 300 687.618 299.5523 687.618 299 C 687.618 298.84475 687.6542 298.69164 687.7236 298.5528 Z" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_14">
+        <circle cx="307" cy="225" r="15.0000239685284" fill="#d99f2b"/>
+        <circle cx="307" cy="225" r="15.0000239685284" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 168.7236 306.5528 L 182.10557 279.78885 C 182.35256 279.29488 182.95324 279.09465 183.44721 279.34164 C 183.64074 279.4384 183.79766 279.59533 183.89443 279.78885 L 197.2764 306.5528 C 197.52338 307.04676 197.32316 307.64744 196.82918 307.89443 C 196.69032 307.96385 196.5372 308 196.38197 308 L 169.61803 308 C 169.06575 308 168.61803 307.5523 168.61803 307 C 168.61803 306.84475 168.65418 306.69164 168.7236 306.5528 Z" fill="#8671ed"/>
+        <path d="M 168.7236 306.5528 L 182.10557 279.78885 C 182.35256 279.29488 182.95324 279.09465 183.44721 279.34164 C 183.64074 279.4384 183.79766 279.59533 183.89443 279.78885 L 197.2764 306.5528 C 197.52338 307.04676 197.32316 307.64744 196.82918 307.89443 C 196.69032 307.96385 196.5372 308 196.38197 308 L 169.61803 308 C 169.06575 308 168.61803 307.5523 168.61803 307 C 168.61803 306.84475 168.65418 306.69164 168.7236 306.5528 Z" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_16">
+        <circle cx="155" cy="168" r="15.0000239685285" fill="#d99f2b"/>
+        <circle cx="155" cy="168" r="15.0000239685285" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_17">
+        <circle cx="255" cy="157" r="15.0000239685284" fill="#d99f2b"/>
+        <circle cx="255" cy="157" r="15.0000239685284" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_18">
+        <circle cx="336" cy="177" r="15.0000239685284" fill="#d99f2b"/>
+        <circle cx="336" cy="177" r="15.0000239685284" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_19">
+        <circle cx="160" cy="233" r="15.0000239685284" fill="#d99f2b"/>
+        <circle cx="160" cy="233" r="15.0000239685284" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_21">
+        <circle cx="233" cy="199" r="15.0000239685284" fill="#d99f2b"/>
+        <circle cx="233" cy="199" r="15.0000239685284" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_23">
+        <path d="M 681.1363 452.0766 L 694.5183 425.31266 C 694.7653 424.8187 695.3659 424.61846 695.8599 424.86545 C 696.0534 424.9622 696.2104 425.11914 696.3071 425.31266 L 709.6891 452.0766 C 709.9361 452.5706 709.73586 453.17125 709.2419 453.41824 C 709.103 453.48766 708.9499 453.5238 708.7947 453.5238 L 682.0307 453.5238 C 681.47845 453.5238 681.0307 453.0761 681.0307 452.5238 C 681.0307 452.36856 681.0669 452.21545 681.1363 452.0766 Z" fill="#8671ed"/>
+        <path d="M 681.1363 452.0766 L 694.5183 425.31266 C 694.7653 424.8187 695.3659 424.61846 695.8599 424.86545 C 696.0534 424.9622 696.2104 425.11914 696.3071 425.31266 L 709.6891 452.0766 C 709.9361 452.5706 709.73586 453.17125 709.2419 453.41824 C 709.103 453.48766 708.9499 453.5238 708.7947 453.5238 L 682.0307 453.5238 C 681.47845 453.5238 681.0307 453.0761 681.0307 452.5238 C 681.0307 452.36856 681.0669 452.21545 681.1363 452.0766 Z" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_24">
+        <circle cx="293.4127" cy="438.5238" r="15.0000239685284" fill="#d99f2b"/>
+        <circle cx="293.4127" cy="438.5238" r="15.0000239685284" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_25">
+        <circle cx="638.4127" cy="438.5238" r="15.0000239685285" fill="#d99f2b"/>
+        <circle cx="638.4127" cy="438.5238" r="15.0000239685285" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(192.59473 62)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2e008e" x="0" y="30">Region</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(558.5947 62)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2e008e" x="0" y="30">Region</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <text transform="translate(167.4873 353)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#2e008e" x="0" y="30">More pure</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(542.9722 353)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#2e008e" x="0" y="30">Less pure</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <text transform="translate(159.70703 419.5238)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2e008e" x="0" y="30">(mostly</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <text transform="translate(321.62715 419.5238)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2e008e" x="0" y="30">)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(172.21875 476)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2e008e" x="0" y="30">G is lower</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(531.9126 476)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2e008e" x="0" y="30">G is higher</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(502.2012 419.5238)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2e008e" x="0" y="30">(mixed</tspan>
+        </text>
+      </g>
+      <g id="Graphic_45">
+        <text transform="translate(719.3018 419.5238)" fill="#2e008e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2e008e" x="0" y="30">)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <path d="M 641.2236 277.8147 L 654.6056 251.05076 C 654.8526 250.55678 655.4532 250.35656 655.9472 250.60355 C 656.14074 250.7003 656.2977 250.85723 656.3944 251.05076 L 669.7764 277.8147 C 670.0234 278.30867 669.82316 278.90934 669.3292 279.15633 C 669.1903 279.22576 669.0372 279.2619 668.882 279.2619 L 642.118 279.2619 C 641.56575 279.2619 641.118 278.8142 641.118 278.2619 C 641.118 278.10666 641.1542 277.95355 641.2236 277.8147 Z" fill="#8671ed"/>
+        <path d="M 641.2236 277.8147 L 654.6056 251.05076 C 654.8526 250.55678 655.4532 250.35656 655.9472 250.60355 C 656.14074 250.7003 656.2977 250.85723 656.3944 251.05076 L 669.7764 277.8147 C 670.0234 278.30867 669.82316 278.90934 669.3292 279.15633 C 669.1903 279.22576 669.0372 279.2619 668.882 279.2619 L 642.118 279.2619 C 641.56575 279.2619 641.118 278.8142 641.118 278.2619 C 641.118 278.10666 641.1542 277.95355 641.2236 277.8147 Z" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_47">
+        <circle cx="280.5" cy="288" r="15.0000239685284" fill="#d99f2b"/>
+        <circle cx="280.5" cy="288" r="15.0000239685284" stroke="#3f1460" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

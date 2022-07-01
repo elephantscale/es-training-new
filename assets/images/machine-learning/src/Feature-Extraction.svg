@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="210 212 394 103" width="394" height="103">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-17 09:28:58 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 297.875 213 L 246.125 213 C 245.02043 213 244.125 213.89543 244.125 215 L 244.125 278.4375 C 244.125 279.54207 243.22957 280.4375 242.125 280.4375 L 219.40117 280.4375 C 218.2966 280.4375 217.40117 281.33293 217.40117 282.4375 C 217.40117 283.16923 217.80077 283.84255 218.44308 284.19308 L 271.0419 312.8982 C 271.63907 313.22408 272.36093 313.22408 272.9581 312.8982 L 325.5569 284.19308 C 326.5265 283.66395 326.88355 282.449 326.3544 281.4794 C 326.0039 280.8371 325.33057 280.4375 324.59883 280.4375 L 301.875 280.4375 C 300.77043 280.4375 299.875 279.54207 299.875 278.4375 L 299.875 215 C 299.875 213.89543 298.97957 213 297.875 213 Z" fill="#c0c0ff"/>
+        <path d="M 297.875 213 L 246.125 213 C 245.02043 213 244.125 213.89543 244.125 215 L 244.125 278.4375 C 244.125 279.54207 243.22957 280.4375 242.125 280.4375 L 219.40117 280.4375 C 218.2966 280.4375 217.40117 281.33293 217.40117 282.4375 C 217.40117 283.16923 217.80077 283.84255 218.44308 284.19308 L 271.0419 312.8982 C 271.63907 313.22408 272.36093 313.22408 272.9581 312.8982 L 325.5569 284.19308 C 326.5265 283.66395 326.88355 282.449 326.3544 281.4794 C 326.0039 280.8371 325.33057 280.4375 324.59883 280.4375 L 301.875 280.4375 C 300.77043 280.4375 299.875 279.54207 299.875 278.4375 L 299.875 215 C 299.875 213.89543 298.97957 213 297.875 213 Z" stroke="#3205a3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(337.443 257)" fill="#3f0096">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3f0096" x="0" y="30">Feature Extraction</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

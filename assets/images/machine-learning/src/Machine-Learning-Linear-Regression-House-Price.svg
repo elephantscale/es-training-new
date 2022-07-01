@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="53 625 737 541" width="737" height="541">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="20" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="32" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-17 09:36:51 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_145">
+        <path d="M 234 636 L 789 636 C 789.5523 636 790 636.4477 790 637 L 790 1042.1016 C 790 1042.6539 789.5523 1043.1016 789 1043.1016 L 234 1043.1016 C 233.44772 1043.1016 233 1042.6539 233 1042.1016 L 233 637 C 233 636.4477 233.44772 636 234 636 Z" fill="white"/>
+      </g>
+      <g id="Line_49">
+        <line x1="232.42208" y1="644.03214" x2="232.6124" y2="1043.1016" stroke="#902e7b" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_48">
+        <line x1="755.3324" y1="1044.19" x2="233.60154" y2="1044.4209" stroke="#902e7b" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_47">
+        <path d="M 217 765.101 L 231.4063 765.101 C 231.9586 765.101 232.4063 765.5487 232.4063 766.101 L 232.4063 769.1491 C 232.4063 769.7014 231.9586 770.1491 231.4063 770.1491 L 217 770.1491 C 216.44772 770.1491 216 769.7014 216 769.1491 L 216 766.101 C 216 765.5487 216.44772 765.101 217 765.101 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_46">
+        <path d="M 217 951.8358 L 231.4063 951.8358 C 231.9586 951.8358 232.4063 952.2835 232.4063 952.8358 L 232.4063 955.8839 C 232.4063 956.4362 231.9586 956.8839 231.4063 956.8839 L 217 956.8839 C 216.44772 956.8839 216 956.4362 216 955.8839 L 216 952.8358 C 216 952.2835 216.44772 951.8358 217 951.8358 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_44">
+        <path d="M 335.0481 1045.19 L 335.0481 1059.5964 C 335.0481 1060.1486 334.60038 1060.5964 334.0481 1060.5964 L 331 1060.5964 C 330.4477 1060.5964 330 1060.1486 330 1059.5964 L 330 1045.19 C 330 1044.6378 330.4477 1044.19 331 1044.19 L 334.0481 1044.19 C 334.60038 1044.19 335.0481 1044.6378 335.0481 1045.19 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_36">
+        <path d="M 466.38143 1045.19 L 466.38143 1059.5964 C 466.38143 1060.1486 465.9337 1060.5964 465.38143 1060.5964 L 462.33333 1060.5964 C 461.78105 1060.5964 461.33333 1060.1486 461.33333 1059.5964 L 461.33333 1045.19 C 461.33333 1044.6378 461.78105 1044.19 462.33333 1044.19 L 465.38143 1044.19 C 465.9337 1044.19 466.38143 1044.6378 466.38143 1045.19 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_35">
+        <path d="M 597.71476 1045.19 L 597.71476 1059.5964 C 597.71476 1060.1486 597.26705 1060.5964 596.71476 1060.5964 L 593.6667 1060.5964 C 593.1144 1060.5964 592.6667 1060.1486 592.6667 1059.5964 L 592.6667 1045.19 C 592.6667 1044.6378 593.1144 1044.19 593.6667 1044.19 L 596.71476 1044.19 C 597.26705 1044.19 597.71476 1044.6378 597.71476 1045.19 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_32">
+        <path d="M 217 889.5909 L 231.4063 889.5909 C 231.9586 889.5909 232.4063 890.0386 232.4063 890.5909 L 232.4063 893.639 C 232.4063 894.1912 231.9586 894.639 231.4063 894.639 L 217 894.639 C 216.44772 894.639 216 894.1912 216 893.639 L 216 890.5909 C 216 890.0386 216.44772 889.5909 217 889.5909 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_31">
+        <path d="M 217 827.3459 L 231.4063 827.3459 C 231.9586 827.3459 232.4063 827.7936 232.4063 828.3459 L 232.4063 831.394 C 232.4063 831.9463 231.9586 832.394 231.4063 832.394 L 217 832.394 C 216.44772 832.394 216 831.9463 216 831.394 L 216 828.3459 C 216 827.7936 216.44772 827.3459 217 827.3459 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_30">
+        <path d="M 217 640.6111 L 231.4063 640.6111 C 231.9586 640.6111 232.4063 641.0588 232.4063 641.6111 L 232.4063 644.6592 C 232.4063 645.2115 231.9586 645.6592 231.4063 645.6592 L 217 645.6592 C 216.44772 645.6592 216 645.2115 216 644.6592 L 216 641.6111 C 216 641.0588 216.44772 640.6111 217 640.6111 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(138 692.3801)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">300000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(138 754.625)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">250000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(138 818.8125)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">200000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(138 879.1149)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">150000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(149 1003.6048)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">50000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(494 1120)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#100081" x="0" y="32">Size</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(58.5 871.87) rotate(-90)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="32" font-weight="700" fill="#100081" x="0" y="32">Price</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <path d="M 217 1014.0807 L 231.4063 1014.0807 C 231.9586 1014.0807 232.4063 1014.5284 232.4063 1015.0807 L 232.4063 1018.1288 C 232.4063 1018.6811 231.9586 1019.1288 231.4063 1019.1288 L 217 1019.1288 C 216.44772 1019.1288 216 1018.6811 216 1018.1288 L 216 1015.0807 C 216 1014.5284 216.44772 1014.0807 217 1014.0807 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_52">
+        <text transform="translate(138 941.3598)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">100000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <text transform="translate(138 630.13516)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">350000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <path d="M 217 702.85605 L 231.4063 702.85605 C 231.9586 702.85605 232.4063 703.3038 232.4063 703.85605 L 232.4063 706.90414 C 232.4063 707.4564 231.9586 707.90414 231.4063 707.90414 L 217 707.90414 C 216.44772 707.90414 216 707.4564 216 706.90414 L 216 703.85605 C 216 703.3038 216.44772 702.85605 217 702.85605 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_55">
+        <path d="M 729.0481 1045.19 L 729.0481 1059.5964 C 729.0481 1060.1486 728.6004 1060.5964 728.0481 1060.5964 L 725 1060.5964 C 724.4477 1060.5964 724 1060.1486 724 1059.5964 L 724 1045.19 C 724 1044.6378 724.4477 1044.19 725 1044.19 L 728.0481 1044.19 C 728.6004 1044.19 729.0481 1044.6378 729.0481 1045.19 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_56">
+        <text transform="translate(304.52405 1075)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">1000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <text transform="translate(437.6907 1075)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">2000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_58">
+        <text transform="translate(570.8574 1075)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">3000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_59">
+        <text transform="translate(704.02405 1075)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="20" font-weight="400" fill="#100081" x="0" y="20">4000</tspan>
+        </text>
+      </g>
+      <g id="Line_60">
+        <line x1="264" y1="1009" x2="729.0481" y2="737.10345" stroke="#250073" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Group_144">
+        <g id="Graphic_61">
+          <circle cx="268.71947" cy="969.1504" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="268.71947" cy="969.1504" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_62">
+          <circle cx="296.93794" cy="1004.8554" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="296.93794" cy="1004.8554" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_63">
+          <circle cx="321.7011" cy="982.9717" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="321.7011" cy="982.9717" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_64">
+          <circle cx="333.21883" cy="983.5476" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="333.21883" cy="983.5476" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_65">
+          <circle cx="358.49466" cy="987.7555" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="358.49466" cy="987.7555" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_66">
+          <circle cx="361.4373" cy="1004.8554" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="361.4373" cy="1004.8554" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_67">
+          <circle cx="369.275" cy="929.9901" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="369.275" cy="929.9901" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_68">
+          <circle cx="367.77206" cy="957.6327" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="367.77206" cy="957.6327" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_69">
+          <circle cx="367.77206" cy="964.0765" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="367.77206" cy="964.0765" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_70">
+          <circle cx="372.35715" cy="964.0765" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="372.35715" cy="964.0765" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_71">
+          <circle cx="382.96986" cy="960.8441" r="4.71947325696032" fill="#4040ff"/>
+          <circle cx="382.96986" cy="960.8441" r="4.71947325696032" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_72">
+          <circle cx="381.7961" cy="970.2831" r="4.7194732569603" fill="#4040ff"/>
+          <circle cx="381.7961" cy="970.2831" r="4.7194732569603" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_73">
+          <circle cx="373.53093" cy="969.1504" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="373.53093" cy="969.1504" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_74">
+          <circle cx="367.77206" cy="970.2831" r="4.71947325696031" fill="#4040ff"/>
+          <circle cx="367.77206" cy="970.2831" r="4.71947325696031" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_75">
+          <circle cx="353.74804" cy="964.0765" r="4.71947325696032" fill="#4040ff"/>
+          <circle cx="353.74804" cy="964.0765" r="4.71947325696032" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_76">
+          <circle cx="334.01945" cy="945.539" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="334.01945" cy="945.539" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_77">
+          <circle cx="324.58052" cy="950.1461" r="4.71947325696031" fill="#4040ff"/>
+          <circle cx="324.58052" cy="950.1461" r="4.71947325696031" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_78">
+          <circle cx="409.84413" cy="970.2831" r="4.7194732569603" fill="#4040ff"/>
+          <circle cx="409.84413" cy="970.2831" r="4.7194732569603" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_79">
+          <circle cx="358.49466" cy="954.2602" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="358.49466" cy="954.2602" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_80">
+          <circle cx="348.46884" cy="957.2815" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="348.46884" cy="957.2815" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_81">
+          <circle cx="353.74804" cy="947.8426" r="4.71947325696032" fill="#4040ff"/>
+          <circle cx="353.74804" cy="947.8426" r="4.71947325696032" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_82">
+          <circle cx="358.83486" cy="940.3975" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="358.83486" cy="940.3975" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_83">
+          <circle cx="365.4685" cy="922.5259" r="4.71947325696039" fill="#4040ff"/>
+          <circle cx="365.4685" cy="922.5259" r="4.71947325696039" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_84">
+          <circle cx="372.35715" cy="909.6382" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="372.35715" cy="909.6382" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_85">
+          <circle cx="372.35715" cy="890.8298" r="4.71947325696039" fill="#4040ff"/>
+          <circle cx="372.35715" cy="890.8298" r="4.71947325696039" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_86">
+          <circle cx="358.83486" cy="881.6156" r="4.71947325696032" fill="#4040ff"/>
+          <circle cx="358.83486" cy="881.6156" r="4.71947325696032" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_87">
+          <circle cx="349.74253" cy="926.5348" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="349.74253" cy="926.5348" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_88">
+          <circle cx="346.46424" cy="919.6241" r="4.71947325696032" fill="#4040ff"/>
+          <circle cx="346.46424" cy="919.6241" r="4.71947325696032" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_89">
+          <circle cx="447.3311" cy="866.6425" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="447.3311" cy="866.6425" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_90">
+          <circle cx="431.11965" cy="940.3975" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="431.11965" cy="940.3975" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_91">
+          <circle cx="550.3283" cy="881.6156" r="4.7194732569603" fill="#4040ff"/>
+          <circle cx="550.3283" cy="881.6156" r="4.7194732569603" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_92">
+          <circle cx="539.38644" cy="862.6113" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="539.38644" cy="862.6113" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_93">
+          <circle cx="523.8375" cy="871.8255" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="523.8375" cy="871.8255" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_94">
+          <circle cx="503.68144" cy="902.3475" r="4.71947325696032" fill="#4040ff"/>
+          <circle cx="503.68144" cy="902.3475" r="4.71947325696032" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_95">
+          <circle cx="507.13676" cy="928.8383" r="4.7194732569603" fill="#4040ff"/>
+          <circle cx="507.13676" cy="928.8383" r="4.7194732569603" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_96">
+          <circle cx="493.08625" cy="968.5561" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="493.08625" cy="968.5561" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_97">
+          <circle cx="454.731" cy="950.1461" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="454.731" cy="950.1461" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_98">
+          <circle cx="488.1325" cy="875.2808" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="488.1325" cy="875.2808" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_99">
+          <circle cx="454.731" cy="920.488" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="454.731" cy="920.488" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_100">
+          <circle cx="469.1282" cy="922.5259" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="469.1282" cy="922.5259" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_101">
+          <circle cx="466.24877" cy="909.6382" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="466.24877" cy="909.6382" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_102">
+          <circle cx="469.1282" cy="894.2851" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="469.1282" cy="894.2851" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_103">
+          <circle cx="473.2299" cy="886.2472" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="473.2299" cy="886.2472" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_104">
+          <circle cx="484.8181" cy="881.6156" r="4.71947325696031" fill="#4040ff"/>
+          <circle cx="484.8181" cy="881.6156" r="4.71947325696031" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_105">
+          <circle cx="461.6417" cy="877.5844" r="4.71947325696029" fill="#4040ff"/>
+          <circle cx="461.6417" cy="877.5844" r="4.71947325696029" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_106">
+          <circle cx="447.3311" cy="890.8298" r="4.71947325696038" fill="#4040ff"/>
+          <circle cx="447.3311" cy="890.8298" r="4.71947325696038" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_107">
+          <circle cx="442.0615" cy="886.2472" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="442.0615" cy="886.2472" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_108">
+          <circle cx="419.28306" cy="894.2851" r="4.71947325696039" fill="#4040ff"/>
+          <circle cx="419.28306" cy="894.2851" r="4.71947325696039" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_109">
+          <circle cx="409.84413" cy="890.8298" r="4.71947325696038" fill="#4040ff"/>
+          <circle cx="409.84413" cy="890.8298" r="4.71947325696038" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_110">
+          <circle cx="421.32957" cy="960.8441" r="4.7194732569603" fill="#4040ff"/>
+          <circle cx="421.32957" cy="960.8441" r="4.7194732569603" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_111">
+          <circle cx="426.51255" cy="954.2602" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="426.51255" cy="954.2602" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_112">
+          <circle cx="431.11965" cy="954.2602" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="431.11965" cy="954.2602" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_113">
+          <circle cx="417.29836" cy="914.5943" r="4.71947325696031" fill="#4040ff"/>
+          <circle cx="417.29836" cy="914.5943" r="4.71947325696031" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_114">
+          <circle cx="416.72247" cy="905.1554" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="416.72247" cy="905.1554" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_115">
+          <circle cx="421.32957" cy="909.6382" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="421.32957" cy="909.6382" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_116">
+          <circle cx="423.6331" cy="905.1554" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="423.6331" cy="905.1554" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_117">
+          <circle cx="431.11965" cy="897.1645" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="431.11965" cy="897.1645" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_118">
+          <circle cx="402.3253" cy="909.6382" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="402.3253" cy="909.6382" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_119">
+          <circle cx="396.5664" cy="919.0772" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="396.5664" cy="919.0772" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_120">
+          <circle cx="420.1778" cy="940.3975" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="420.1778" cy="940.3975" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_121">
+          <circle cx="409.46068" cy="951.4052" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="409.46068" cy="951.4052" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_122">
+          <circle cx="399.44586" cy="940.3975" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="399.44586" cy="940.3975" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_123">
+          <circle cx="399.44586" cy="954.2602" r="4.71947325696035" fill="#4040ff"/>
+          <circle cx="399.44586" cy="954.2602" r="4.71947325696035" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_124">
+          <circle cx="392.4088" cy="951.4052" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="392.4088" cy="951.4052" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_125">
+          <circle cx="378.7139" cy="935.2412" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="378.7139" cy="935.2412" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_126">
+          <circle cx="383.65027" cy="945.539" r="4.71947325696034" fill="#4040ff"/>
+          <circle cx="383.65027" cy="945.539" r="4.71947325696034" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_127">
+          <circle cx="383.65027" cy="906.4059" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="383.65027" cy="906.4059" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_128">
+          <circle cx="472.82555" cy="919.0772" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="472.82555" cy="919.0772" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_129">
+          <circle cx="450.12393" cy="911.049" r="4.71947325696036" fill="#4040ff"/>
+          <circle cx="450.12393" cy="911.049" r="4.71947325696036" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_130">
+          <circle cx="445.2921" cy="926.5348" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="445.2921" cy="926.5348" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_131">
+          <circle cx="436.8785" cy="975.4852" r="4.7194732569603" fill="#4040ff"/>
+          <circle cx="436.8785" cy="975.4852" r="4.7194732569603" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_132">
+          <circle cx="432.8473" cy="913.2894" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="432.8473" cy="913.2894" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_133">
+          <circle cx="385.0487" cy="924.8071" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="385.0487" cy="924.8071" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_134">
+          <circle cx="500.2261" cy="816.5403" r="4.71947325696031" fill="#4040ff"/>
+          <circle cx="500.2261" cy="816.5403" r="4.71947325696031" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_135">
+          <circle cx="539.38644" cy="806.1743" r="4.71947325696029" fill="#4040ff"/>
+          <circle cx="539.38644" cy="806.1743" r="4.71947325696029" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_136">
+          <circle cx="552.63185" cy="810.2056" r="4.71947325696032" fill="#4040ff"/>
+          <circle cx="552.63185" cy="810.2056" r="4.71947325696032" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_137">
+          <circle cx="585.4574" cy="830.9375" r="4.71947325696032" fill="#4040ff"/>
+          <circle cx="585.4574" cy="830.9375" r="4.71947325696032" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_138">
+          <circle cx="570.48435" cy="793.5048" r="4.71947325696032" fill="#4040ff"/>
+          <circle cx="570.48435" cy="793.5048" r="4.71947325696032" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_139">
+          <circle cx="586.0333" cy="866.6425" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="586.0333" cy="866.6425" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_140">
+          <circle cx="630.3766" cy="754.3445" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="630.3766" cy="754.3445" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_142">
+          <circle cx="751.3129" cy="844.7588" r="4.7194732569603" fill="#4040ff"/>
+          <circle cx="751.3129" cy="844.7588" r="4.7194732569603" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_143">
+          <circle cx="407.28354" cy="930.5217" r="4.71947325696033" fill="#4040ff"/>
+          <circle cx="407.28354" cy="930.5217" r="4.71947325696033" stroke="#5a3a90" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

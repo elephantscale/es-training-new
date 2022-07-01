@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="212 136 652 543" width="652" height="543">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#150080">
+      <g>
+        <path d="M -2.6666667 0 L 0 1 L 0 -1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#80224b">
+      <g>
+        <path d="M -2.5142857 0 L 0 .9428571 L 0 -.9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-04-14 13:28:47 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Line_5">
+        <line x1="280.22666" y1="178.8999" x2="279" y2="617.3473" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Line_4">
+        <line x1="810.9807" y1="617.58826" x2="279.26634" y2="617.4561" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Line_7">
+        <line x1="677.9847" y1="239.19996" x2="279.49634" y2="617.6861" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Line_8">
+        <line x1="607.9008" y1="499.7871" x2="279.95634" y2="615.2476" marker-start="url(#FilledArrow_Marker_2)" stroke="#80224b" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_9">
+        <line x1="399.49746" y1="330.722" x2="279.95634" y2="615.2476" marker-start="url(#FilledArrow_Marker_2)" stroke="#80224b" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(809.1953 624)" fill="#270070">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#270070" x="0" y="40">X1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(628.1953 185)" fill="#270070">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#270070" x="0" y="40">X3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(217.1953 141)" fill="#270070">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#270070" x="0" y="40">X1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(313.79883 235)" fill="#270070">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#270070" x="0" y="40">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(595.2988 235)" fill="#270070">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#270070" x="0" y="40">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(628.2988 624)" fill="#270070">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#270070" x="0" y="40">1</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

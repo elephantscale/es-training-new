@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="119 69 772 672" width="772" height="672">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="34" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-07-01 12:42:30 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_9">
+        <line x1="505.3118" y1="468.1268" x2="505.86254" y2="667.9484" stroke="#320081" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_8">
+        <line x1="505.12" y1="246.41074" x2="505.12" y2="328.9293" stroke="#320081" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_10">
+        <line x1="572.9889" y1="670.60124" x2="437.2511" y2="670.60124" stroke="#320081" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 200.40256 71 L 809.8374 71 C 812.5989 71 814.8374 73.23858 814.8374 76 L 814.8374 239.91074 C 814.8374 242.67216 812.5989 244.91074 809.8374 244.91074 L 200.40256 244.91074 C 197.64113 244.91074 195.40256 242.67216 195.40256 239.91074 L 195.40256 76 C 195.40256 73.23858 197.64113 71 200.40256 71 Z" fill="#ecdea4"/>
+        <path d="M 200.40256 71 L 809.8374 71 C 812.5989 71 814.8374 73.23858 814.8374 76 L 814.8374 239.91074 C 814.8374 242.67216 812.5989 244.91074 809.8374 244.91074 L 200.40256 244.91074 C 197.64113 244.91074 195.40256 242.67216 195.40256 239.91074 L 195.40256 76 C 195.40256 73.23858 197.64113 71 200.40256 71 Z" stroke="#320081" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(200.40256 137.45537)" fill="#200066">
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#200066" x="22.524078" y="34">org.apache.spark.ml.linalg.Vector</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 352.8187 330.4293 L 657.4213 330.4293 C 660.1827 330.4293 662.4213 332.6679 662.4213 335.4293 L 662.4213 461.6268 C 662.4213 464.38824 660.1827 466.6268 657.4213 466.6268 L 352.8187 466.6268 C 350.0573 466.6268 347.8187 464.38824 347.8187 461.6268 L 347.8187 335.4293 C 347.8187 332.6679 350.0573 330.4293 352.8187 330.4293 Z" fill="#d99f2b"/>
+        <path d="M 352.8187 330.4293 L 657.4213 330.4293 C 660.1827 330.4293 662.4213 332.6679 662.4213 335.4293 L 662.4213 461.6268 C 662.4213 464.38824 660.1827 466.6268 657.4213 466.6268 L 352.8187 466.6268 C 350.0573 466.6268 347.8187 464.38824 347.8187 461.6268 L 347.8187 335.4293 C 347.8187 332.6679 350.0573 330.4293 352.8187 330.4293 Z" stroke="#320081" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(352.8187 374.02806)" fill="#200066">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#200066" x="87.4966" y="40">Vector</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 126.14853 602.5025 L 430.7511 602.5025 C 433.51253 602.5025 435.7511 604.74106 435.7511 607.5025 L 435.7511 733.7 C 435.7511 736.4614 433.51253 738.7 430.7511 738.7 L 126.14853 738.7 C 123.38711 738.7 121.14853 736.4614 121.14853 733.7 L 121.14853 607.5025 C 121.14853 604.74106 123.38711 602.5025 126.14853 602.5025 Z" fill="#9af0ff"/>
+        <path d="M 126.14853 602.5025 L 430.7511 602.5025 C 433.51253 602.5025 435.7511 604.74106 435.7511 607.5025 L 435.7511 733.7 C 435.7511 736.4614 433.51253 738.7 430.7511 738.7 L 126.14853 738.7 C 123.38711 738.7 121.14853 736.4614 121.14853 733.7 L 121.14853 607.5025 C 121.14853 604.74106 123.38711 602.5025 126.14853 602.5025 Z" stroke="#320081" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(126.14853 646.10124)" fill="#200066">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#200066" x="27.08644" y="40">DenseVector</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 579.4889 602.5025 L 884.0915 602.5025 C 886.8529 602.5025 889.0915 604.74106 889.0915 607.5025 L 889.0915 733.7 C 889.0915 736.4614 886.8529 738.7 884.0915 738.7 L 579.4889 738.7 C 576.7275 738.7 574.4889 736.4614 574.4889 733.7 L 574.4889 607.5025 C 574.4889 604.74106 576.7275 602.5025 579.4889 602.5025 Z" fill="#ac97ff"/>
+        <path d="M 579.4889 602.5025 L 884.0915 602.5025 C 886.8529 602.5025 889.0915 604.74106 889.0915 607.5025 L 889.0915 733.7 C 889.0915 736.4614 886.8529 738.7 884.0915 738.7 L 579.4889 738.7 C 576.7275 738.7 574.4889 736.4614 574.4889 733.7 L 574.4889 607.5025 C 574.4889 604.74106 576.7275 602.5025 579.4889 602.5025 Z" stroke="#320081" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(579.4889 646.10124)" fill="#200066">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#200066" x="22.69191" y="40">SparseVector</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

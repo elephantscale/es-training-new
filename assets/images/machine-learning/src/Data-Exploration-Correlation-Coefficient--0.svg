@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="41 115 804 358" width="804" height="358">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBox_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 5 6" markerWidth="5" markerHeight="6" color="#4500b9">
+      <g>
+        <rect x="0" y="-1.08" width="2.16" height="2.16" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBox_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#4500b9">
+      <g>
+        <rect x="-2.16" y="-1.08" width="2.16" height="2.16" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#d97253">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#d97253">
+      <g>
+        <path d="M -3.7333333 0 L 0 1.4 L 0 -1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_3" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#d97253">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_4" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#d97253">
+      <g>
+        <path d="M -3.7333333 0 L 0 1.4 L 0 -1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-03-23 08:40:04 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_4">
+        <text transform="translate(109.85034 283.8919)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#2f0083" x="0" y="35">-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(409 393.85945)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="30">weak</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="67">correlation</tspan>
+        </text>
+      </g>
+      <g id="Line_30">
+        <line x1="137.68272" y1="261.0013" x2="658.06345" y2="261.05253" marker-end="url(#FilledBox_Marker)" marker-start="url(#FilledBox_Marker_2)" stroke="#4500b9" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_31">
+        <path d="M 592 253.02692 L 606 253.02692 C 606.5523 253.02692 607 253.47464 607 254.02692 L 607 268.02692 C 607 268.5792 606.5523 269.02692 606 269.02692 L 592 269.02692 C 591.4477 269.02692 591 268.5792 591 268.02692 L 591 254.02692 C 591 253.47464 591.4477 253.02692 592 253.02692 Z" fill="#4500b9"/>
+      </g>
+      <g id="Graphic_32">
+        <path d="M 527 253.02692 L 541 253.02692 C 541.5523 253.02692 542 253.47464 542 254.02692 L 542 268.02692 C 542 268.5792 541.5523 269.02692 541 269.02692 L 527 269.02692 C 526.4477 269.02692 526 268.5792 526 268.02692 L 526 254.02692 C 526 253.47464 526.4477 253.02692 527 253.02692 Z" fill="#4500b9"/>
+      </g>
+      <g id="Graphic_33">
+        <path d="M 395.5 253.02692 L 409.5 253.02692 C 410.0523 253.02692 410.5 253.47464 410.5 254.02692 L 410.5 268.02692 C 410.5 268.5792 410.0523 269.02692 409.5 269.02692 L 395.5 269.02692 C 394.9477 269.02692 394.5 268.5792 394.5 268.02692 L 394.5 254.02692 C 394.5 253.47464 394.9477 253.02692 395.5 253.02692 Z" fill="#4500b9"/>
+      </g>
+      <g id="Graphic_34">
+        <text transform="translate(394.0991 286.8919)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="30">0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(513.00146 286.8919)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="30">0.5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <text transform="translate(578.00146 286.8919)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="30">0.8</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(643.6973 283.8919)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#2f0083" x="0" y="35">+1</tspan>
+        </text>
+      </g>
+      <g id="Line_38">
+        <path d="M 603.43136 365.687 L 603.4338 384.85996 C 603.4341 387.0691 605.2252 388.85973 607.4343 388.85945 C 607.4386 388.85945 607.4428 388.85944 607.4471 388.85943 L 667.3305 388.66074 C 669.5324 388.65344 671.3143 386.86797 671.3173 384.6661 L 671.3423 365.83247" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#d97253" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_39">
+        <path d="M 404.00203 365.6838 L 404.0045 384.86317 C 404.00476 387.0723 405.79585 388.86294 408.005 388.86265 C 408.0071 388.86265 408.00924 388.86265 408.01136 388.86265 L 530.9383 388.6512 C 533.1427 388.6474 534.9285 386.8609 534.9314 384.6565 L 534.95646 365.82926" marker-end="url(#FilledArrow_Marker_3)" marker-start="url(#FilledArrow_Marker_4)" stroke="#d97253" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_40">
+        <text transform="translate(608.4293 393.85945)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="30">strong</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="67">correlation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <text transform="translate(618 120.5)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="30">Perfect positive</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="67">correlation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(363 120.5)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="30">no</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="67">correlation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(46.22897 120.5)" fill="#2f0083">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="30">Perfect negative</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#2f0083" x="0" y="67">correlation</tspan>
+        </text>
+      </g>
+      <g id="Line_44">
+        <line x1="128.10873" y1="199.5" x2="128.07297" y2="235.6484" marker-end="url(#FilledArrow_Marker_3)" stroke="#d97253" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_45">
+        <line x1="404.0515" y1="199.5" x2="404.01573" y2="235.6484" marker-end="url(#FilledArrow_Marker_3)" stroke="#d97253" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_46">
+        <line x1="663.5515" y1="199.5" x2="663.5157" y2="235.6484" marker-end="url(#FilledArrow_Marker_3)" stroke="#d97253" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

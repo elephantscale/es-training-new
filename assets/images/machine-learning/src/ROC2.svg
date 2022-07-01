@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-993 104 873 678" width="873" height="678">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 6 4" markerWidth="6" markerHeight="4" color="#902e7b">
+      <g>
+        <path d="M -2.4 0 L 0 .9 L 0 -.9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#5300ed">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_3" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#5300ed">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-02-17 15:38:00 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Graphic_5">
+        <path d="M -895 157 L -180 157 C -179.44772 157 -179 157.44772 -179 158 L -179 691.4714 C -179 692.0237 -179.44772 692.4714 -180 692.4714 L -895 692.4714 C -895.5523 692.4714 -896 692.0237 -896 691.4714 L -896 158 C -896 157.44772 -895.5523 157 -895 157 Z" fill="white"/>
+      </g>
+      <g id="Line_4">
+        <line x1="-901.9831" y1="174.9" x2="-901.6984" y2="695.2751" marker-start="url(#FilledArrow_Marker)" stroke="#902e7b" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_3">
+        <line x1="-186.62188" y1="697.0152" x2="-900.1308" y2="697.3658" marker-start="url(#FilledArrow_Marker)" stroke="#902e7b" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M -927 202 L -903 202 C -902.4477 202 -902 202.44772 -902 203 L -902 209 C -902 209.55228 -902.4477 210 -903 210 L -927 210 C -927.5523 210 -928 209.55228 -928 209 L -928 203 C -928 202.44772 -927.5523 202 -927 202 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M -927 340.55072 L -903 340.55072 C -902.4477 340.55072 -902 340.99844 -902 341.55072 L -902 347.55072 C -902 348.103 -902.4477 348.55072 -903 348.55072 L -927 348.55072 C -927.5523 348.55072 -928 348.103 -928 347.55072 L -928 341.55072 C -928 340.99844 -927.5523 340.55072 -927 340.55072 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M -927 551.2029 L -903 551.2029 C -902.4477 551.2029 -902 551.6506 -902 552.2029 L -902 558.2029 C -902 558.7552 -902.4477 559.2029 -903 559.2029 L -927 559.2029 C -927.5523 559.2029 -928 558.7552 -928 558.2029 L -928 552.2029 C -928 551.6506 -927.5523 551.2029 -927 551.2029 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M -734 698 L -734 722 C -734 722.5523 -734.4477 723 -735 723 L -741 723 C -741.5523 723 -742 722.5523 -742 722 L -742 698 C -742 697.4477 -741.5523 697 -741 697 L -735 697 C -734.4477 697 -734 697.4477 -734 698 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M -509.375 698 L -509.375 722 C -509.375 722.5523 -509.8227 723 -510.375 723 L -516.375 723 C -516.9273 723 -517.375 722.5523 -517.375 722 L -517.375 698 C -517.375 697.4477 -516.9273 697 -516.375 697 L -510.375 697 C -509.8227 697 -509.375 697.4477 -509.375 698 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_11">
+        <path d="M -284.75 698 L -284.75 722 C -284.75 722.5523 -285.1977 723 -285.75 723 L -291.75 723 C -292.3023 723 -292.75 722.5523 -292.75 722 L -292.75 698 C -292.75 697.4477 -292.3023 697 -291.75 697 L -285.75 697 C -285.1977 697 -284.75 697.4477 -284.75 698 Z" fill="#8f337b"/>
+      </g>
+      <g id="Graphic_13">
+        <circle cx="-696" cy="358" r="15.0000239685284" fill="#59e0df"/>
+      </g>
+      <g id="Graphic_14">
+        <circle cx="-749" cy="462" r="15.0000239685284" fill="#59e0df"/>
+      </g>
+      <g id="Line_12">
+        <path d="M -801 559.2029 C -801 559.2029 -705.7872 366.6497 -693.4428 354.01842 C -681.0983 341.38714 -633.6438 307.27224 -612.2687 278.98225 C -590.8936 250.69226 -463.56275 226.41813 -463.23404 226.7561" stroke="#033399" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Line_15">
+        <line x1="-680.9795" y1="390.9" x2="-680.6984" y2="691.429" marker-start="url(#FilledArrow_Marker_2)" stroke="#5300ed" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10.0,10.0" stroke-width="5"/>
+      </g>
+      <g id="Line_16">
+        <line x1="-738.47005" y1="494.9" x2="-738.1984" y2="693.5059" marker-start="url(#FilledArrow_Marker_3)" stroke="#5300ed" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10.0,10.0" stroke-width="5"/>
+      </g>
+      <g id="Line_17">
+        <line x1="-732.9" y1="344.08553" x2="-900.7367" y2="344.3523" marker-start="url(#FilledArrow_Marker_3)" stroke="#5300ed" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10.0,10.0" stroke-width="5"/>
+      </g>
+      <g id="Line_18">
+        <line x1="-785.89995" y1="461.5466" x2="-905.6597" y2="461.8016" marker-start="url(#FilledArrow_Marker_3)" stroke="#5300ed" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10.0,10.0" stroke-width="5"/>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_25">
+        <text transform="translate(-988 322.55072)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#100081" x="0" y="35">0.8</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(-974.7012 109)" fill="#33008e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#33008e" x="0" y="40">TPR</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(-189.90234 708.571)" fill="#33008e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#33008e" x="0" y="40">FPR</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(-588.7949 171.7526)" fill="#33008e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#33008e" x="0" y="40">ROC curve</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(-646 321)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#100081" x="0" y="30">Threshold= 0.7</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#100081" x="0" y="67">(FPR= 0.125, TPR= 0.75)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(-716 452)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#100081" x="0" y="30">Threshold= 0.8</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#100081" x="0" y="67">(FPR= 0.1, TPR= 0.58)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(-988 184)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#100081" x="0" y="35">1.0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(-988 533.2029)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#100081" x="0" y="35">0.4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(-988 675.1829)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#100081" x="0" y="35">0.0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(-762.5 732.5286)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#100081" x="0" y="35">0.1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(-537.875 732.5286)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#100081" x="0" y="35">0.2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(-313.25 732.5286)" fill="#100081">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="400" fill="#100081" x="0" y="35">0.3</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

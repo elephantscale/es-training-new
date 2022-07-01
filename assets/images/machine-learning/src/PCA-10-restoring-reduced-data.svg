@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="152 74 736 572" width="736" height="572">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#150080">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-04-14 13:38:58 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_5">
+        <path d="M 214.29632 116 L 874 116 C 874.5523 116 875 116.44772 875 117 L 875 578.3473 C 875 578.8996 874.5523 579.3473 874 579.3473 L 214.29632 579.3473 C 213.74403 579.3473 213.29632 578.8996 213.29632 578.3473 L 213.29632 117 C 213.29632 116.44772 213.74403 116 214.29632 116 Z" fill="white"/>
+      </g>
+      <g id="Line_4">
+        <line x1="213.23505" y1="137.89991" x2="212" y2="579.3473" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_3">
+        <line x1="863.5096" y1="579.58995" x2="212.26634" y2="579.4561" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_6">
+        <path d="M 276 526 C 276 526 823.0703 139.17188 823.0703 139.17188" stroke="#453db7" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_11">
+        <circle cx="754" cy="228" r="10.0000159790189" fill="#a28bff"/>
+        <circle cx="754" cy="228" r="10.0000159790189" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_12">
+        <circle cx="679" cy="225" r="10.000015979019" fill="#a28bff"/>
+        <circle cx="679" cy="225" r="10.000015979019" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_14">
+        <circle cx="584.4021" cy="253.0297" r="10.000015979019" fill="#a28bff"/>
+        <circle cx="584.4021" cy="253.0297" r="10.000015979019" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_17">
+        <circle cx="618" cy="328" r="10.000015979019" fill="#a28bff"/>
+        <circle cx="618" cy="328" r="10.000015979019" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_19">
+        <circle cx="564" cy="383" r="10.000015979019" fill="#a28bff"/>
+        <circle cx="564" cy="383" r="10.000015979019" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_22">
+        <circle cx="375" cy="491" r="10.0000159790189" fill="#a28bff"/>
+        <circle cx="375" cy="491" r="10.0000159790189" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_23">
+        <circle cx="447" cy="383" r="10.0000159790189" fill="#a28bff"/>
+        <circle cx="447" cy="383" r="10.0000159790189" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="734.1974" cy="202.55541" r="10.0000159790189" fill="#ff8080"/>
+        <circle cx="734.1974" cy="202.55541" r="10.0000159790189" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_13">
+        <circle cx="687" cy="236" r="10.0000159790189" fill="#ff8080"/>
+        <circle cx="687" cy="236" r="10.0000159790189" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_15">
+        <circle cx="610" cy="289" r="10.000015979019" fill="#ff8080"/>
+        <circle cx="610" cy="289" r="10.000015979019" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_16">
+        <circle cx="597" cy="300" r="10.000015979019" fill="#ff8080"/>
+        <circle cx="597" cy="300" r="10.000015979019" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_18">
+        <circle cx="536" cy="344" r="10.000015979019" fill="#ff8080"/>
+        <circle cx="536" cy="344" r="10.000015979019" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_20">
+        <circle cx="459" cy="395" r="10.000015979019" fill="#ff8080"/>
+        <circle cx="459" cy="395" r="10.000015979019" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_21">
+        <circle cx="360" cy="466" r="10.000015979019" fill="#ff8080"/>
+        <circle cx="360" cy="466" r="10.000015979019" stroke="#34005e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_24">
+        <line x1="542.41625" y1="352.9369" x2="557.58375" y2="374.0631" stroke="#360269" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_25">
+        <line x1="603.6211" y1="280.03632" x2="590.781" y2="261.99338" stroke="#360269" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_26">
+        <line x1="603.6008" y1="308.8011" x2="611.3992" y2="319.1989" stroke="#360269" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_27">
+        <line x1="740.9541" y1="211.23714" x2="747.2433" y2="219.31827" stroke="#360269" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_28">
+        <line x1="365.6608" y1="475.43465" x2="369.3392" y2="481.56535" stroke="#360269" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(830.6049 591)" fill="#250a63">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250a63" x="0" y="40">X1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(157.19531 79)" fill="#250a63">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250a63" x="0" y="40">X2</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

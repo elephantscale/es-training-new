@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="106 393 842 512" width="842" height="512">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Savoye LET" font-size="37" units-per-em="1000" underline-position="-132.8125" underline-thickness="21.972656" slope="0" x-height="282.22656" cap-height="655.2734" ascent="687.9883" descent="-500" font-weight="400">
+      <font-face-src>
+        <font-face-name name="SavoyeLetPlain"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 08:00:25 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 112 540 L 405 540 C 408.3137 540 411 542.6863 411 546 L 411 722 C 411 725.3137 408.3137 728 405 728 L 112 728 C 108.68629 728 106 725.3137 106 722 L 106 546 C 106 542.6863 108.68629 540 112 540 Z" fill="#ecdea4"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 131.92166 722.43355 L 181.161 760.6365 C 182.24324 761.47615 183.75676 761.47615 184.839 760.6365 L 234.07834 722.43355 C 235.3874 721.4179 235.62525 719.53336 234.6096 718.2243 C 234.04133 717.4919 233.16638 717.0633 232.23935 717.0633 L 133.76065 717.0633 C 132.1038 717.0633 130.76065 718.4064 130.76065 720.0633 C 130.76065 720.9903 131.18923 721.8653 131.92166 722.43355 Z" fill="#ecdea4"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 649 393 L 942 393 C 945.3137 393 948 395.6863 948 399 L 948 575 C 948 578.3137 945.3137 581 942 581 L 649 581 C 645.6863 581 643 578.3137 643 575 L 643 399 C 643 395.6863 645.6863 393 649 393 Z" fill="#ac97ff"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 668.9217 575.43355 L 718.161 613.6365 C 719.2432 614.47615 720.7568 614.47615 721.839 613.6365 L 771.0783 575.43355 C 772.3874 574.4179 772.62525 572.53336 771.6096 571.2243 C 771.0413 570.4919 770.1664 570.0633 769.23935 570.0633 L 670.76065 570.0633 C 669.1038 570.0633 667.76065 571.40644 667.76065 573.0633 C 667.76065 573.9903 668.1892 574.8653 668.9217 575.43355 Z" fill="#ac97ff"/>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 649 682 L 942 682 C 945.3137 682 948 684.6863 948 688 L 948 864 C 948 867.3137 945.3137 870 942 870 L 649 870 C 645.6863 870 643 867.3137 643 864 L 643 688 C 643 684.6863 645.6863 682 649 682 Z" fill="#d99f2b"/>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 668.9217 864.4335 L 718.161 902.6365 C 719.2432 903.4761 720.7568 903.4761 721.839 902.6365 L 771.0783 864.4335 C 772.3874 863.4179 772.62525 861.5334 771.6096 860.2243 C 771.0413 859.4919 770.1664 859.0633 769.23935 859.0633 L 670.76065 859.0633 C 669.1038 859.0633 667.76065 860.4064 667.76065 862.0633 C 667.76065 862.9903 668.1892 863.8653 668.9217 864.4335 Z" fill="#d99f2b"/>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(690.21436 405)" fill="#230082">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#230082" x="0" y="30">Old translation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(673.7129 700.0633)" fill="#230082">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#230082" x="0" y="30">New AI powered</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#230082" x="46.794434" y="67">translation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(650.6797 465.03165)" fill="#230082">
+          <tspan font-family="Savoye LET" font-size="37" font-weight="400" fill="#230082" x="5.6638184" y="25">One is not what is for what be</tspan>
+          <tspan font-family="Savoye LET" font-size="37" font-weight="400" fill="#230082" x="0" y="69">writes, but for what be has read</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(669.98364 777)" fill="#230082">
+          <tspan font-family="Savoye LET" font-size="37" font-weight="400" fill="#230082" x="0" y="25">You are not what you write</tspan>
+          <tspan font-family="Savoye LET" font-size="37" font-weight="400" fill="#230082" x="18.229004" y="69">but what you have read</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(119.63257 568)" fill="#230082">
+          <tspan font-family="Savoye LET" font-size="37" font-weight="400" fill="#230082" x="1.4362793" y="25">Uno no es lo que es por lo que</tspan>
+          <tspan font-family="Savoye LET" font-size="37" font-weight="400" fill="#230082" x="0" y="69">escribe sino pro lo que ba leido</tspan>
+          <tspan font-family="Savoye LET" font-size="37" font-weight="400" fill="#230082" x="24.850342" y="113">—Jorge Lusis Borges</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <path d="M 472 656.8465 L 472 636.1535 C 472 635.0489 472.89543 634.1535 474 634.1535 L 539.483 634.1535 C 540.58757 634.1535 541.483 633.25806 541.483 632.1535 L 541.483 619.3831 C 541.483 618.2785 542.3784 617.3831 543.483 617.3831 C 544.0649 617.3831 544.6179 617.6365 544.9978 618.0772 L 568.37426 645.1941 C 569.02116 645.9445 569.02116 647.0555 568.37426 647.8059 L 544.9978 674.9228 C 544.2766 675.7594 543.01374 675.8529 542.1771 675.1317 C 541.7364 674.7518 541.483 674.1988 541.483 673.6169 L 541.483 660.8465 C 541.483 659.7419 540.58757 658.8465 539.483 658.8465 L 474 658.8465 C 472.89543 658.8465 472 657.9511 472 656.8465 Z" fill="#9af0ff"/>
+        <path d="M 472 656.8465 L 472 636.1535 C 472 635.0489 472.89543 634.1535 474 634.1535 L 539.483 634.1535 C 540.58757 634.1535 541.483 633.25806 541.483 632.1535 L 541.483 619.3831 C 541.483 618.2785 542.3784 617.3831 543.483 617.3831 C 544.0649 617.3831 544.6179 617.6365 544.9978 618.0772 L 568.37426 645.1941 C 569.02116 645.9445 569.02116 647.0555 568.37426 647.8059 L 544.9978 674.9228 C 544.2766 675.7594 543.01374 675.8529 542.1771 675.1317 C 541.7364 674.7518 541.483 674.1988 541.483 673.6169 L 541.483 660.8465 C 541.483 659.7419 540.58757 658.8465 539.483 658.8465 L 474 658.8465 C 472.89543 658.8465 472 657.9511 472 656.8465 Z" stroke="#3205a3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

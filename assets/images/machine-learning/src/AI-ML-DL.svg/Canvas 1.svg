@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="397 70 491 491" width="491" height="491">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 08:10:34 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_6">
+        <path d="M 815.3874 142.61258 C 910.871 238.0957 910.871 392.9043 815.3874 488.3874 C 719.9043 583.871 565.0957 583.871 469.6126 488.3874 C 374.12898 392.9043 374.12898 238.0957 469.6126 142.61258 C 565.0957 47.128976 719.9043 47.128976 815.3874 142.61258" fill="#ecdea4"/>
+        <path d="M 815.3874 142.61258 C 910.871 238.0957 910.871 392.9043 815.3874 488.3874 C 719.9043 583.871 565.0957 583.871 469.6126 488.3874 C 374.12898 392.9043 374.12898 238.0957 469.6126 142.61258 C 565.0957 47.128976 719.9043 47.128976 815.3874 142.61258" stroke="#260071" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <circle cx="642.5" cy="364.5" r="171.500274040175" fill="#d99f2b"/>
+        <circle cx="642.5" cy="364.5" r="171.500274040175" stroke="#260071" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <circle cx="642.5" cy="420.5" r="87.5001398164159" fill="#ac97ff"/>
+        <circle cx="642.5" cy="420.5" r="87.5001398164159" stroke="#260071" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(492.03076 134)" fill="#16006e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#16006e" x="0" y="30">Artificial Intelligence</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(509.6968 263.5)" fill="#16006e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#16006e" x="0" y="30">Machine Learning</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(573.9009 378)" fill="#16006e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#16006e" x="26.989746" y="30">Deep</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#16006e" x="0" y="67"> Learning</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

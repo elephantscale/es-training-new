@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="31 -79 960 263" width="960" height="263">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#150080">
+      <g>
+        <path d="M -3.2 0 L 0 1.2 L 0 -1.2 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="28" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-17 09:09:41 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_89">
+        <rect x="38.68333" y="-74.71312" width="946.9994" height="210.31954" fill="white"/>
+      </g>
+      <g id="Line_88">
+        <line x1="39.016335" y1="-57.10007" x2="38.49833" y2="134.31954" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_87">
+        <line x1="247.73986" y1="134.423" x2="38.615267" y2="134.3673" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_62">
+        <line x1="399.78825" y1="-57.10007" x2="399.27167" y2="134.31954" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_61">
+        <line x1="608.5609" y1="134.423" x2="399.4363" y2="134.3673" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_13">
+        <line x1="760.0553" y1="-51.1913" x2="759.0788" y2="134.32716" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_12">
+        <line x1="969.2567" y1="134.42302" x2="759.4013" y2="134.3673" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(832.4964 146.26276)" fill="#14007f">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#14007f" x="0" y="30">near 0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(461.11614 146.26276)" fill="#14007f">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#14007f" x="0" y="30">near-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(82.04847 146.26276)" fill="#14007f">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#14007f" x="0" y="30">near+1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(378.3587 -74.54564)" fill="#12006d">
+          <tspan font-family="Century Gothic" font-size="28" font-weight="400" fill="#12006d" x="0" y="28">Y</tspan>
+        </text>
+      </g>
+      <g id="Group_102">
+        <g id="Graphic_57">
+          <circle cx="813.0942" cy="-29.182146" r="5.26211440702631" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_90">
+          <circle cx="889.3" cy="-32.279944" r="5.26211440702634" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_91">
+          <circle cx="855.8438" cy="-14.932275" r="5.26211440702634" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_92">
+          <circle cx="849.6482" cy="24.09998" r="5.26211440702631" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_93">
+          <circle cx="813.0942" cy="60.03444" r="5.2621144070263" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_94">
+          <circle cx="795.7465" cy="1.1762749" r="5.26211440702634" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_95">
+          <circle cx="933.2887" cy="-14.312715" r="5.26211440702634" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_96">
+          <circle cx="938.2452" cy="19.143503" r="5.26211440702631" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_97">
+          <circle cx="929.5714" cy="42.68677" r="5.26211440702635" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_98">
+          <circle cx="933.2887" cy="79.860345" r="5.26211440702634" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_99">
+          <circle cx="897.3543" cy="12.328348" r="5.26211440702637" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_100">
+          <circle cx="894.2565" cy="42.06721" r="5.26211440702637" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_101">
+          <circle cx="876.2892" cy="61.893116" r="5.26211440702631" fill="#fc5e2c"/>
+        </g>
+      </g>
+      <g id="Group_115">
+        <g id="Graphic_103">
+          <circle cx="437.64104" cy="-28.562586" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_105">
+          <circle cx="454.36915" cy="-18.649633" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_106">
+          <circle cx="477.29285" cy="-19.269192" r="5.26211440702634" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_107">
+          <circle cx="473.5755" cy="2.415394" r="5.26211440702634" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_108">
+          <circle cx="505.17304" cy="6.752311" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_109">
+          <circle cx="496.4992" cy="23.48042" r="5.26211440702633" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_110">
+          <circle cx="529.9554" cy="32.773815" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_111">
+          <circle cx="525.6185" cy="58.79532" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_112">
+          <circle cx="555.9769" cy="64.990914" r="5.26211440702634" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_113">
+          <circle cx="570.60625" cy="92.8711" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_114">
+          <circle cx="598.107" cy="98.44713" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+      </g>
+      <g id="Group_129">
+        <g id="Graphic_116">
+          <circle cx="205.92575" cy="-55.82321" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_117">
+          <circle cx="207.78443" cy="-34.758182" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_118">
+          <circle cx="173.70865" cy="-31.040825" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_119">
+          <circle cx="193.53455" cy="-18.649633" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_120">
+          <circle cx="176.80644" cy="-6.878" r="5.26211440702633" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_121">
+          <circle cx="149.54582" cy="-14.932275" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_122">
+          <circle cx="160.6979" cy="14.187027" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_123">
+          <circle cx="156.36098" cy="29.15977" r="5.26211440702633" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_124">
+          <circle cx="124.76344" cy="38.96941" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_125">
+          <circle cx="112.9918" cy="57.5562" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_126">
+          <circle cx="97.50282" cy="84.19726" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_127">
+          <circle cx="76.43779" cy="90.39286" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+        <g id="Graphic_128">
+          <circle cx="70.24219" cy="115.01113" r="5.26211440702632" fill="#fc5e2c"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

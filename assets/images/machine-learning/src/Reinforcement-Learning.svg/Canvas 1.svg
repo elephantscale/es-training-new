@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="66 110 805 465" width="805" height="465">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#36008e">
+      <g>
+        <path d="M -3.2 0 L 0 1.2 L 0 -1.2 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-03-14 19:54:04 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_4">
+        <rect x="241" y="110" width="232.3249" height="232.3249" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image3.png" width="250" height="250" transform="translate(241 110) scale(.9292996)"/>
+        </g>
+      </g>
+      <g id="Graphic_3">
+        <rect x="768" y="182" width="102.77267" height="216.79777" id="path_2"/>
+        <clipPath id="clip_path_2">
+          <use xl:href="#path_2"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_2)">
+          <image xl:href="image2.png" width="90" height="250" transform="matrix(1.1419186 0 0 .8671911 768 182)"/>
+        </g>
+      </g>
+      <g id="Graphic_7">
+        <rect x="508" y="407" width="155.4" height="168" id="path_3"/>
+        <clipPath id="clip_path_3">
+          <use xl:href="#path_3"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_3)">
+          <image xl:href="image4.png" width="259" height="280" transform="translate(508 407) scale(.6)"/>
+        </g>
+      </g>
+      <g id="Line_6">
+        <path d="M 795.2104 416.2545 C 763.6815 426.20163 692.36535 444.0696 597.5493 439.57746 C 467.79967 433.4303 469.83285 389.5379 355.0566 388.3019 C 240.28036 387.06586 192.41615 435.21457 192.41615 435.21457" marker-start="url(#FilledArrow_Marker)" stroke="#36008e" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_8">
+        <rect x="66.61615" y="290" width="125.8" height="194.69048" id="path_4"/>
+        <clipPath id="clip_path_4">
+          <use xl:href="#path_4"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_4)">
+          <image xl:href="image5.png" width="252" height="390" transform="translate(66.61615 290) scale(.49920635)"/>
+        </g>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(197.70766 309.2785)" fill="#3a0080">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3a0080" x="32.70996" y="30">yum!</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3a0080" x="0" y="67">Bonus+10</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(608.2915 309.2785)" fill="#3a0080">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3a0080" x="32.70996" y="30">yum!</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3a0080" x="0" y="67">Bonus+20</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(300.3003 466)" fill="#3a0080">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3a0080" x="45.300293" y="30">Ouch!</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3a0080" x="0" y="67">Penalty —10</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

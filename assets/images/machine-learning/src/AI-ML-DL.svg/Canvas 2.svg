@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="258 82 1034 537" width="1034" height="537">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="34" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 08:10:34 +0000</metadata>
+  <g id="Canvas_2" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 2</title>
+    <g id="Canvas_2_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_13">
+        <path d="M 1213.064 161.34915 C 1317.5296 265.8143 1317.5296 435.1857 1213.064 539.65086 C 1108.5988 644.11656 939.2274 644.11656 834.7622 539.65086 C 730.2965 435.1857 730.2965 265.8143 834.7622 161.34915 C 939.2274 56.88344 1108.5988 56.88344 1213.064 161.34915" fill="#ecdea4"/>
+        <path d="M 1213.064 161.34915 C 1317.5296 265.8143 1317.5296 435.1857 1213.064 539.65086 C 1108.5988 644.11656 939.2274 644.11656 834.7622 539.65086 C 730.2965 435.1857 730.2965 265.8143 834.7622 161.34915 C 939.2274 56.88344 1108.5988 56.88344 1213.064 161.34915" stroke="#260071" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_12">
+        <circle cx="1023.9131" cy="404.1094" r="187.633224154384" fill="#d99f2b"/>
+        <circle cx="1023.9131" cy="404.1094" r="187.633224154384" stroke="#260071" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <circle cx="1023.9131" cy="465.3773" r="95.7312368134613" fill="#ac97ff"/>
+        <circle cx="1023.9131" cy="465.3773" r="95.7312368134613" stroke="#260071" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(853.4598 152.2137)" fill="#16006e">
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#16006e" x="0" y="34">Artificial Intelligence</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(873.4813 293.8957)" fill="#16006e">
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#16006e" x="0" y="34">Machine Learning</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(946.2459 418.3599)" fill="#16006e">
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#16006e" x="30.58838" y="34">Deep</tspan>
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#16006e" x="0" y="75"> Learning</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 605.5381 244.69816 L 605.35094 266.84062 C 605.34165 267.94015 604.4465 268.82596 603.3469 268.8237 L 261.03216 268.1249 C 259.92945 268.12264 259.0366 267.22827 259.03624 266.12556 L 259.00067 159.52412 C 259.0003 158.41958 259.8954 157.52386 260.99993 157.52345 L 602.3288 157.39746 C 603.4316 157.39706 604.32664 158.28945 604.3295 159.39228 L 604.46736 212.5739 C 604.47 213.58794 605.2311 214.43953 606.23846 214.55558 L 799.9318 236.86984 C 801.0291 236.99625 801.8162 237.98828 801.6898 239.0856 C 801.57435 240.0876 800.7309 240.84685 799.7223 240.8566 L 607.5187 242.71516 C 606.4283 242.7257 605.5473 243.60776 605.5381 244.69816 Z" fill="#bcfffe"/>
+        <path d="M 605.5381 244.69816 L 605.35094 266.84062 C 605.34165 267.94015 604.4465 268.82596 603.3469 268.8237 L 261.03216 268.1249 C 259.92945 268.12264 259.0366 267.22827 259.03624 266.12556 L 259.00067 159.52412 C 259.0003 158.41958 259.8954 157.52386 260.99993 157.52345 L 602.3288 157.39746 C 603.4316 157.39706 604.32664 158.28945 604.3295 159.39228 L 604.46736 212.5739 C 604.47 213.58794 605.2311 214.43953 606.23846 214.55558 L 799.9318 236.86984 C 801.0291 236.99625 801.8162 237.98828 801.6898 239.0856 C 801.57435 240.0876 800.7309 240.84685 799.7223 240.8566 L 607.5187 242.71516 C 606.4283 242.7257 605.5473 243.60776 605.5381 244.69816 Z" stroke="#2a0089" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 703.7841 390.83773 L 703.5708 412.9839 C 703.5602 414.08225 702.6658 414.96653 701.5674 414.9646 L 300.03783 414.2646 C 298.93492 414.2627 298.04174 413.3683 298.0413 412.26536 L 298.00076 305.66463 C 298.00034 304.56006 298.89543 303.6643 300 303.66387 C 300.00004 303.66387 300.0001 303.66387 300.00013 303.66387 L 700.4058 303.53766 C 701.5083 303.5373 702.4032 304.42925 702.4064 305.53175 L 702.5635 358.69752 C 702.56655 359.71864 703.3383 360.5735 704.3538 360.6806 L 916.1131 383.00794 C 917.2116 383.12376 918.0082 384.10814 917.8924 385.2066 C 917.7858 386.21764 916.9377 386.98783 915.9211 386.99683 L 705.76634 388.8571 C 704.6762 388.86673 703.7946 389.74763 703.7841 390.83773 Z" fill="#bcfffe"/>
+        <path d="M 703.7841 390.83773 L 703.5708 412.9839 C 703.5602 414.08225 702.6658 414.96653 701.5674 414.9646 L 300.03783 414.2646 C 298.93492 414.2627 298.04174 413.3683 298.0413 412.26536 L 298.00076 305.66463 C 298.00034 304.56006 298.89543 303.6643 300 303.66387 C 300.00004 303.66387 300.0001 303.66387 300.00013 303.66387 L 700.4058 303.53766 C 701.5083 303.5373 702.4032 304.42925 702.4064 305.53175 L 702.5635 358.69752 C 702.56655 359.71864 703.3383 360.5735 704.3538 360.6806 L 916.1131 383.00794 C 917.2116 383.12376 918.0082 384.10814 917.8924 385.2066 C 917.7858 386.21764 916.9377 386.98783 915.9211 386.99683 L 705.76634 388.8571 C 704.6762 388.86673 703.7946 389.74763 703.7841 390.83773 Z" stroke="#2a0089" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 796.6807 536.9787 L 796.4987 559.12066 C 796.4897 560.2204 795.5944 561.1065 794.4946 561.1042 L 461.64166 560.4056 C 460.539 560.4033 459.6462 559.50895 459.64586 558.4063 L 459.61125 451.8047 C 459.6109 450.70017 460.50597 449.80447 461.6105 449.80405 L 793.5044 449.6781 C 794.6073 449.6777 795.5024 450.57016 795.5052 451.67306 L 795.6393 504.8601 C 795.6418 505.87175 796.3994 506.7222 797.404 506.8412 L 985.77 529.15125 C 986.8669 529.28116 987.6508 530.2757 987.5209 531.3726 C 987.4026 532.3716 986.5606 533.12726 985.5547 533.13727 L 798.6608 534.99524 C 797.5704 535.0061 796.6897 535.8883 796.6807 536.9787 Z" fill="#bcfffe"/>
+        <path d="M 796.6807 536.9787 L 796.4987 559.12066 C 796.4897 560.2204 795.5944 561.1065 794.4946 561.1042 L 461.64166 560.4056 C 460.539 560.4033 459.6462 559.50895 459.64586 558.4063 L 459.61125 451.8047 C 459.6109 450.70017 460.50597 449.80447 461.6105 449.80405 L 793.5044 449.6781 C 794.6073 449.6777 795.5024 450.57016 795.5052 451.67306 L 795.6393 504.8601 C 795.6418 505.87175 796.3994 506.7222 797.404 506.8412 L 985.77 529.15125 C 986.8669 529.28116 987.6508 530.2757 987.5209 531.3726 C 987.4026 532.3716 986.5606 533.12726 985.5547 533.13727 L 798.6608 534.99524 C 797.5704 535.0061 796.6897 535.8883 796.6807 536.9787 Z" stroke="#2a0089" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(278.59753 176.11225)" fill="#16006e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#16006e" x="0" y="30">Importing tax returns</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#16006e" x="61.1499" y="67">(rule based)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(300.14317 340.75256)" fill="#16006e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#16006e" x="0" y="30">Predicting credit card fraud</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(492.35644 468.39286)" fill="#16006e">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#16006e" x="18.457031" y="30">Self driving cars</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#16006e" x="0" y="67">(using neural nets)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="424 382 359 329" width="359" height="329">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="33" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-02-09 16:36:57 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Graphic_3">
+        <path d="M 426 639.0039 L 426 453.9961 C 426 452.33924 427.34315 450.9961 429 450.9961 L 627.40625 450.9961 C 629.0631 450.9961 630.40625 449.65295 630.40625 447.9961 L 630.40625 391.65073 C 630.40625 389.99388 631.7494 388.65073 633.40625 388.65073 C 634.2415 388.65073 635.0389 388.99893 635.60665 389.61155 L 779.1102 544.4608 C 780.1764 545.61125 780.1764 547.38875 779.1102 548.5392 L 635.60665 703.38845 C 634.48044 704.6037 632.5823 704.6759 631.3671 703.5497 C 630.75445 702.9819 630.40625 702.1845 630.40625 701.3493 L 630.40625 645.0039 C 630.40625 643.34705 629.0631 642.0039 627.40625 642.0039 L 429 642.0039 C 427.34315 642.0039 426 640.66076 426 639.0039 Z" fill="#c0c0ff"/>
+        <path d="M 426 639.0039 L 426 453.9961 C 426 452.33924 427.34315 450.9961 429 450.9961 L 627.40625 450.9961 C 629.0631 450.9961 630.40625 449.65295 630.40625 447.9961 L 630.40625 391.65073 C 630.40625 389.99388 631.7494 388.65073 633.40625 388.65073 C 634.2415 388.65073 635.0389 388.99893 635.60665 389.61155 L 779.1102 544.4608 C 780.1764 545.61125 780.1764 547.38875 779.1102 548.5392 L 635.60665 703.38845 C 634.48044 704.6037 632.5823 704.6759 631.3671 703.5497 C 630.75445 702.9819 630.40625 702.1845 630.40625 701.3493 L 630.40625 645.0039 C 630.40625 643.34705 629.0631 642.0039 627.40625 642.0039 L 429 642.0039 C 427.34315 642.0039 426 640.66076 426 639.0039 Z" stroke="#2700a6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(449.03516 477.5)" fill="#28009b">
+          <tspan font-family="Century Gothic" font-size="33" font-weight="700" fill="#28009b" x="0" y="33">Married= 0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(450.3926 525.5)" fill="#28009b">
+          <tspan font-family="Century Gothic" font-size="33" font-weight="700" fill="#28009b" x="0" y="33">Single= 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(448.1345 573.5)" fill="#28009b">
+          <tspan font-family="Century Gothic" font-size="33" font-weight="700" fill="#28009b" x="0" y="33">Divorced= 2</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

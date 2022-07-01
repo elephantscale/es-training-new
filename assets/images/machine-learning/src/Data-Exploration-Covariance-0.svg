@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-108 -284 699 586" width="699" height="586">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#150080">
+      <g>
+        <path d="M -2.88 0 L 0 1.08 L 0 -1.08 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 6 4" markerWidth="6" markerHeight="4" color="#6c3394">
+      <g>
+        <path d="M -2.311111 0 L 0 .8666667 L 0 -.8666667 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-03-21 18:36:37 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_58">
+        <path d="M -36 -224.48273 L 518.2543 -224.48273 C 518.8066 -224.48273 519.2543 -224.035 519.2543 -223.48273 L 519.2543 237.8646 C 519.2543 238.4169 518.8066 238.8646 518.2543 238.8646 L -36 238.8646 C -36.552285 238.8646 -37 238.4169 -37 237.8646 L -37 -223.48273 C -37 -224.035 -36.552285 -224.48273 -36 -224.48273 Z" fill="white"/>
+      </g>
+      <g id="Line_51">
+        <line x1="-36.391343" y1="-203.6916" x2="-37.62639" y2="237.75582" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_50">
+        <line x1="497.3543" y1="237.9975" x2="-37.360053" y2="237.8646" marker-start="url(#FilledArrow_Marker)" stroke="#150080" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(471.3125 247)" fill="#14007f">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#14007f" x="0" y="40">netflix</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <circle cx="491.9346" cy="-180.5" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_14">
+        <circle cx="439.98855" cy="-110.92809" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_13">
+        <circle cx="414.7175" cy="-161.47021" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_12">
+        <circle cx="361.36747" cy="-56.174125" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_10">
+        <circle cx="299.6145" cy="-71.61755" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_9">
+        <circle cx="270.11086" cy="12.003269" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_8">
+        <circle cx="253.20843" cy="87.36557" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="197.10557" cy="40.01705" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_6">
+        <circle cx="171.83451" cy="127.74304" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_5">
+        <circle cx="105.84897" cy="119.31935" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="73.55817" cy="184.01106" r="12.5000199737737" fill="#fc5e2c"/>
+      </g>
+      <g id="Line_54">
+        <line x1="234.2842" y1="-85.88032" x2="97.64418" y2="52.471584" marker-start="url(#FilledArrow_Marker_2)" stroke="#6c3394" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_56">
+        <text transform="translate(-102.60938 -279)" fill="#14007f">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#14007f" x="0" y="40">google</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <text transform="translate(71.92413 -7.277446) rotate(-44)" fill="#422573">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#422573" x="0" y="40">positive</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
