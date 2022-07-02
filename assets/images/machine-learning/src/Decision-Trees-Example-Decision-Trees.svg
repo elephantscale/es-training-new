@@ -1,14 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-110 -35 1039 626" width="1039" height="626">
-  <defs>
-    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
-      <font-face-src>
-        <font-face-name name="CenturyGothic-Bold"/>
-      </font-face-src>
-    </font-face>
-  </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-17 09:17:26 +0000</metadata>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="-110 -35 1039 626" width="1039" height="626" xmlns="http://www.w3.org/2000/svg">
   <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
@@ -91,71 +82,66 @@
     <g id="Canvas_1_texts">
       <title>texts</title>
       <g id="Graphic_7">
-        <text transform="translate(746.9303 504.36534)" fill="#22006f">
+        <text transform="translate(746.9303 504.36534)" fill="#22006f" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="0" y="30">PCA</tspan>
         </text>
       </g>
       <g id="Graphic_33">
-        <text transform="translate(475.22934 504.36534)" fill="#22006f">
+        <text transform="translate(475.22934 504.36534)" fill="#22006f" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="0" y="30">Kmeans</tspan>
         </text>
       </g>
       <g id="Graphic_34">
-        <text transform="translate(164.03663 466.68346)" fill="#22006f">
+        <text transform="translate(164.03663 466.68346)" fill="#22006f" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="0" y="30">Classification</tspan>
         </text>
       </g>
       <g id="Graphic_35">
-        <text transform="translate(-65.03495 466.68346)" fill="#22006f">
+        <text transform="translate(-65.03495 466.68346)" fill="#22006f" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="0" y="30">Regression</tspan>
         </text>
       </g>
       <g id="Graphic_36">
-        <text transform="translate(56.07482 222.57692)" fill="#22006f">
+        <text transform="translate(56.07482 222.57692)" fill="#22006f" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="0" y="30">Supervised</tspan>
         </text>
       </g>
       <g id="Graphic_37">
-        <text transform="translate(554.501 222.57692)" fill="#22006f">
-          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="0" y="30">Upsupervised</tspan>
-        </text>
+        <text transform="translate(554.501 222.57692)" fill="#22006f" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="0" y="30">Unsupervised</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_38">
-        <text transform="translate(291.51936 -11.460513)" fill="#22006f">
+        <text transform="translate(291.51936 -11.460513)" fill="#22006f" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="10.788574" y="30">Do you have</tspan>
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="44.39209" y="67">Labeled</tspan>
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#22006f" x="0" y="104">Training Data?</tspan>
         </text>
       </g>
       <g id="Graphic_39">
-        <text transform="translate(451.0711 141.27352)" fill="#1f008b">
+        <text transform="translate(451.0711 141.27352)" fill="#1f008b" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="0" y="30">NO</tspan>
         </text>
       </g>
       <g id="Graphic_40">
-        <text transform="translate(264.84617 141.27352)" fill="#1f008b">
+        <text transform="translate(264.84617 141.27352)" fill="#1f008b" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="0" y="30">YES</tspan>
         </text>
       </g>
       <g id="Graphic_41">
-        <text transform="translate(663.1973 316.54704)" fill="#1f008b">
+        <text transform="translate(663.1973 316.54704)" fill="#1f008b" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="0" y="30">DIMENSIONALITY</tspan>
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="37.785645" y="67">REDUCTION</tspan>
         </text>
       </g>
       <g id="Graphic_42">
-        <text transform="translate(439.2608 335.04704)" fill="#1f008b">
+        <text transform="translate(439.2608 335.04704)" fill="#1f008b" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="0" y="30">CLUSTERING</tspan>
         </text>
       </g>
       <g id="Graphic_43">
-        <text transform="translate(151.73243 316.54704)" fill="#1f008b">
-          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="0" y="30">CATEGRICAL</tspan>
-          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="52.785645" y="67">DATA</tspan>
-        </text>
+        <text transform="translate(151.73243 316.54704)" fill="#1f008b" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="0" y="30">CATEGORICAL</tspan><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="52.785645" y="67">DATA</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
       <g id="Graphic_44">
-        <text transform="translate(-47.800914 316.54704)" fill="#1f008b">
+        <text transform="translate(-47.800914 316.54704)" fill="#1f008b" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="0" y="30">NUMERIC</tspan>
           <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#1f008b" x="27.597656" y="67">DATA</tspan>
         </text>
