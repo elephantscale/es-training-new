@@ -1,6 +1,29 @@
 # NiFi Quizzes
 
-## Quiz 1
+## Quiz
+* What are the three main building blocks of Apache NiFi?
+  * A. Connectors, Processors, and Data Containers
+  * B. Connectors, Processors, and Flow Files
+  * C. Links, Processors, and Flow Files
+  * D. Links, Transforms, and Flow Files
+
+Notes:
+
+* B
+
+---
+
+## Quiz
+* What is Apache NiFi not good at?
+  * A. Reliable and secure transfer of data between systems
+  * B. Complex Event processing
+  * C. Delivery of data from sources to analytic platforms
+  * D. Basic enrichment and preparation of data
+
+---
+
+
+## Quiz
 
 * How can I make sure NiFi is launched at every reboot?
   * A. It is impossible
@@ -14,7 +37,7 @@ Notes:
 
 ---
 
-## Quiz 2
+## Quiz
 
 * Which of the following isn't a reason why a processor would show a warning sign and therefore can't be started?
   * A. Some relationships are not auto-terminated or do not have connections
@@ -27,7 +50,7 @@ Notes:
 
 ---
 
-## Quiz 3
+## Quiz
 
 * A processor can have a connection to itself.
   * A. True
@@ -39,7 +62,7 @@ Notes:
 
 ---
 
-## Quiz 4
+## Quiz
 
 * The UI gives you information
   * A. In real time
