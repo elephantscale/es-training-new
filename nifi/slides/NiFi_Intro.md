@@ -102,9 +102,27 @@
 
 ---
 
+## NiFi: Processors
+![](../images/01-categorization.png)
+
+---
+
+## Summary so far
+* Getting Started
+  - Downloading and Installing NiFi
+  - Create first data flow – basic concepts
+  - We created our basic flow
+  - We added a processor
+  - We added a connector
+  - We added a connection
+  - We picked up a file, generated more data, etc.
+
+---
+
+
 ## NiFi: Categorization of processors
 
-* Over 188 bundled processors
+* Over 309 bundled processors
   - Data Transformation: ReplaceText, JoltTransformJSON…
   - Routing and Mediation: RouteOnAttribute, RouteOnContent, ControlRate…
   - Database Access: ExecuteSQL, ConvertJSONToSQL, PutSQL...
@@ -115,8 +133,9 @@
   - Splitting and Aggregation: SplitText, SplitJson, SplitXml, MergeContent…
   - HTTP: GetHTTP, ListenHTTP, PostHTTP…
   - AWS: FetchS3Object, PutS3Object, PutSNS, GetSQS
-
+  
 ---
+
 
 ## NiFi: FlowFile Topology
 
