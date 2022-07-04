@@ -1,7 +1,7 @@
 # GraphDB, RDF, SPARQL, GraphQL
 
 * (C) Elephant Scale
-* 01-26-2021
+* 07-04-2022
 
 ## Overview
 
