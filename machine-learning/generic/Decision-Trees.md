@@ -365,11 +365,11 @@ Notes:
 
 <img src="../../assets/images/machine-learning/3rd-party/Decision-Trees-Gini-Index-Example-0.png" style="width:30%;float:right;"><!-- {"left" : 0.79, "top" : 5.18, "height" : 1.23, "width" : 4.97} -->
 
-* Here we have a classifier: class-1  and class-2
+* Here we have a classifier: class-A  and class-B
 
-* P1: proportion of class-1
+* P1: proportion of class-A
 
-* P2: proportion of class-2
+* P2: proportion of class-B
 
 * Calculating Gini index as follows
 

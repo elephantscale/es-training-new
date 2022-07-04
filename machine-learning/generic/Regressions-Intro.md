@@ -228,28 +228,6 @@ Notes:
 
 ---
 
-# Evaluating Regression Models
-
-<img src="../../assets/images/generic/3rd-party/measure-test-tube-1.jpg" style="width:30%;"/><!-- {"left" : 11.36, "top" : 2.14, "height" : 1.79, "width" : 5.13} -->
-
----
-
-## Understanding Errors / Residuals
-
-* On left, the linear model line passes through all data points.  
-This is called **perfect fit**  
-
-* How ever, in reality,  data doesn't fall exactly on line
-
-* There is usually a 'delta' or 'error' between actual value and predicted value  
-This is called **residual**
-
-<img src="../../assets/images/machine-learning/linear-regression-1a.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 1.75, "top" : 5.97, "height" : 3.26, "width" : 6.36} -->
-&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1b.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 5.48, "top" : 5.97, "height" : 3.26, "width" : 6.27} -->
-&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1c.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 9.63, "top" : 5.97, "height" : 3.26, "width" : 6.12} -->
-
----
-
 # Errors and Residuals
 
 [ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions](ML-Concepts-Errors-and-Loss-Functions.md#Error/Loss Functions for Regressions)
@@ -276,6 +254,12 @@ This is called **residual**
 # Gradient Descent
 
 [Gradient-Descent.md](Gradient-Descent.md)
+
+---
+
+# Evaluating Regression Models
+
+<img src="../../assets/images/generic/3rd-party/measure-test-tube-1.jpg" style="width:30%;"/><!-- {"left" : 11.36, "top" : 2.14, "height" : 1.79, "width" : 5.13} -->
 
 ---
 

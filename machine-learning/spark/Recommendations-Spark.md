@@ -85,7 +85,7 @@ Notes:
      - RDD-based API: spark.mllib.recommendations (more mature)
 
 ```python
-import _pyspark.ml.recommendation.ALS
+import pyspark.ml.recommendation.ALS
 
 als = ALS(maxIter=5, regParam=0.01,
           userCol="userId", itemCol="movieId", ratingCol="rating",
@@ -124,29 +124,6 @@ https://en.wikipedia.org/wiki/Receiver_operating_characteristic
 
 ---
 
-## Lab: Recommendations
-
-
- *  **Overview:**
-
-    - Use CF recommender in Spark ML
-
- *  **Approximate time:**
-
-    - 30 - 40 mins
-
- *  **Instructions:**
-
-    - Follow 'recommender' lab instructions for Scala or Python
-
-
-Notes:
-
-
-
-
----
-
 ## Further Reading
 
 
@@ -161,6 +138,44 @@ Notes:
 * https://www.slideshare.net/xamat/recommender-systems-machine-learning-summer-school-2014-cmu
 * https://jessesw.com/Rec-System/
 
+---
+
+## Lab: Recommendations
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+ *  **Overview:**
+
+    - Use CF recommender in Spark ML
+
+ *  **Approximate time:**
+
+    - 30 - 40 mins
+
+ *  **Instructions:**
+
+    - **RECOMMENDATION-1: Movie Lens data**
+    - **RECOMMENDATION-2: Scrobler data**
+
+
+
+Notes:
+
+
+
+
+---
+
+
+
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
 
 ---
 

@@ -6,20 +6,26 @@
 
 ---
 
-## Error / Loss Function
+## Understanding Errors / Residuals
 
-- The function that is used to compute the error is known as **Loss Function `J()`**
+* On left, the linear model line passes through all data points.  
+This is called **perfect fit**  
 
-- Different loss functions will calculate different values for the same prediction errors
+* How ever, in reality,  data doesn't fall exactly on line
 
-- In next few slides, we are going to examine some of the loss functions
+* There is usually a 'delta' or 'error' between actual value and predicted value; This is called **residual or error**
+
+* Let's see how we can calculate this residual
+
+<img src="../../assets/images/machine-learning/linear-regression-1a.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 1.75, "top" : 5.97, "height" : 3.26, "width" : 6.36} -->
+&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1b.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 5.48, "top" : 5.97, "height" : 3.26, "width" : 6.27} -->
+&nbsp; <img src="../../assets/images/machine-learning/linear-regression-1c.png" alt="XXX image missing" style="width:30%;"/><!-- {"left" : 9.63, "top" : 5.97, "height" : 3.26, "width" : 6.12} -->
 
 ---
 
 ## Estimating Tips for Meals
 
- * Let's consider tips at a restaurant
-
+* Let's consider tips at a restaurant
 
 | Meal # | Tip ($)  |
 |--------|----------|
@@ -32,26 +38,23 @@
 
 <!-- {"left" : 3.88, "top" : 4.11, "height" : 3.5, "width" : 9.75} -->
 
-
+* References: [1](https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi)
 
 Notes:
 
-- https://www.youtube.com/playlist?list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi
-
 ---
 
-## Understanding Residuals / Errors
+## Calculating Residuals / Errors
 
+* Let's say, our _very naive_ model __always predicts tip as `$10`__ :-)
 
+* From the table, we can see none of the tip amounts are exactly $10
+    - This difference (delta) is called __Error or Residual__
+    - __`Residual = actual tip - predicted tip`__
 
- * Let's say, our _very naive_ model __always predicts tip as `$10`__ :-)
- * From the table, we can see none of the tip amounts are exactly $10
-    * This difference (delta) is called __Error or Residual__
-    * __`Residual = actual tip - predicted tip`__
- * Sum of all residuals = **ZERO**  (positive and negative errors are canceling each other)
+* Sum of all residuals = **ZERO**  (positive and negative errors are canceling each other)
 
 <img src="../../assets/images/machine-learning/tips-2-residuals.png" alt="tips-2-residuals.png" style="width:40%;float:right;"/><!-- {"left" : 0.93, "top" : 6.64, "height" : 3.14, "width" : 6.37} -->
-
 
 | Actual Tip | Predicted Tip | Error or Residual = (Actual - Predicted) |
 |------------|---------------|------------------------------------------|
@@ -63,9 +66,7 @@ Notes:
 | 5          | 10            | -5 = (5 - 10)                            |
 |            |               | SUM = 0  (+2 -3 +3 -2 +5 -5)             |
 
-
 <!-- {"left" : 7.76, "top" : 6.03, "height" : 4.35, "width" : 8.81} -->
-
 
 Notes:
 
@@ -73,11 +74,13 @@ Notes:
 
 ## Sum of Squared Errors (SSE)
 
- * From the previous table, errors can cancel each other out
- * Let's square the error:
+* From the previous table, errors can cancel each other out
+
+* Let's square the error:
    - To make them all positive (so negative and positive don't cancel each other out)
    - To amplify 'outliers' (large deviations)
- * **Question for the class: Can SSE be zero? :-)**
+
+* **Question for the class: Can SSE be zero? :-)**
 
 | Actual Tip | Predicted Tip | Error = (Actual - Predicted) | Error Squared |
 |------------|---------------|------------------------------|---------------|
@@ -89,9 +92,7 @@ Notes:
 | 5          | 10            | -5 = (5 - 10)                | 25            |
 |            | Total ==>     | 0                            | 76            |
 
-
 <!-- {"left" : 1.75, "top" : 5.91, "height" : 3.93, "width" : 14} -->
-
 
 Notes:
 
@@ -101,32 +102,30 @@ Notes:
 
 <img src="../../assets/images/formulas-equations/sum-of-squared-error-SSE-1.png" alt="equation-error-SSE-1" style="width:40%;float:right;"/><!-- {"left" : 11.17, "top" : 2.16, "height" : 2.12, "width" : 5.51} -->
 
- * Also known as
+* Also known as
     - **Residual Sum of Squares (RSS)**
     - **Sum of Squared Residuals (SSR)**
- * In this formula
+
+* In this formula
     - Yi: actual value
     - Ŷi: predicted value
- * Properties
-    * A good all purpose error metric that is widely used
-    * SSE also 'amplifies' the outliers (because of squaring)
- * For example, if SSE for model-A = 75 and SSE for model-B  = 50
+
+* Properties
+    - A good all purpose error metric that is widely used
+    - SSE also 'amplifies' the outliers (because of squaring)
+
+* For example, if SSE for model-A = 75 and SSE for model-B  = 50
     - Model-B might be better fit
 
+* References: [1](https://en.wikipedia.org/wiki/Residual_sum_of_squares),    [2]( https://isaacchanghau.github.io/post/loss_functions/)
 
 Notes:
 
-- https://en.wikipedia.org/wiki/Residual_sum_of_squares
-- https://isaacchanghau.github.io/post/loss_functions/
-
-
 ---
-
 
 ## Mean Squared Error (MSE) (L2)
 
 <img src="../../assets/images/formulas-equations/mean-square-error-MSE-1.png" alt="XXX image missing" style="background:white;width:30%;float:right;"/><!-- {"left" : 12.1, "top" : 3.7, "height" : 1.83, "width" : 4.84} -->
-
 
 | Actual Tip | Predicted Tip | Error = (Actual - Predicted) | Error Squared |
 |------------|---------------|------------------------------|---------------|
@@ -140,24 +139,21 @@ Notes:
 
 <!-- {"left" : 0.7, "top" : 1.77, "height" : 1, "width" : 11.25, "columnwidth" : [2.04, 2.27, 3.51, 1.32, 2.11]} -->
 
+* `MSE = (4  + 9 + 9 + 4 + 25 + 25)/6 = 76 / 6 = 12.6`
 
-- `MSE = (4  + 9 + 9 + 4 + 25 + 25)/6 = 76 / 6 = 12.6`
-- Properties
+* Properties
     - Can be sensitive to outliers; predictions that deviate a lot from actual values are penalized heavily
     - Easy to calculate gradients (fast)
 
+* References: [1](https://isaacchanghau.github.io/post/loss_functions/)
 
 Notes:  
-https://isaacchanghau.github.io/post/loss_functions/
-
 
 ---
 
 ## Mean Absolute Error (MAE)
 
 <img src="../../assets/images/formulas-equations/mean-absolute-error-MAE-1.png"  style="width:30%;float:right;"/><!-- {"left" : 11.74, "top" : 3.7, "height" : 1.83, "width" : 4.84} -->
-
-
 
 | Actual Tip | Predicted Tip | Error = (Actual - Predicted) | **Absolute Error** | Error Squared |
 |------------|---------------|------------------------------|--------------------|---------------|
@@ -171,8 +167,9 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 <!-- {"left" : 0.92, "top" : 1.89, "height" : 1, "width" : 10.62} -->
 
-- `MAE = (2 + 3 + 3 + 2 + 5 + 5) = 20 / 6 = 3.33`
-- Properties:
+* `MAE = (2 + 3 + 3 + 2 + 5 + 5) = 20 / 6 = 3.33`
+
+* Properties:
     - More robust and is generally not affected by outliers
     - Use if 'outliers' are considered 'corrupt data' (or not critical part of data)
 
@@ -180,9 +177,11 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ## Regression Error Functions - Summary
 
-- Error functions tell us 'how far off' our prediction from actual value is.
-- We have seen 3 popular error functions for regression
-- Which one to use?
+* Error functions tell us 'how far off' our prediction from actual value is.
+
+* We have seen 3 popular error functions for regression
+
+* Which one to use?
     - No 'hard' rules!, follow some practical guide lines
     - Try them all and see which one gives better results! :-)  
     (most ML libraries allow us to configure the error function very easily)
@@ -194,7 +193,6 @@ https://isaacchanghau.github.io/post/loss_functions/
 | Mean Absolute Error (MAE)   |
 
 <!-- {"left" : 3.64, "top" : 6.43, "height" : 2, "width" : 10.22} -->
-
 
 ---
 
@@ -216,7 +214,7 @@ https://isaacchanghau.github.io/post/loss_functions/
 
 ---
 
-##  Binary Classifications: Binary Class Entrophy
+## Binary Classifications: Binary Class Entrophy
 
 
 - Cross Entropy is used in binary classification scenarios (0 / 1)

@@ -119,7 +119,7 @@ Notes:
 
 ---
 
-# Principle Component Analysis (PCA)
+# Principal Component Analysis (PCA)
 
 ---
 
@@ -133,7 +133,7 @@ Notes:
 
 ---
 
-## Principle Component Analysis (PCA)
+## Principal Component Analysis (PCA)
 
 * Not all dimensions are equally interesting.Can we reduce the  **'dimensionality** ' of data,  **without loosing too much information** ?
 
