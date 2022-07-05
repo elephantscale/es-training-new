@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="292 212 904 637" width="904" height="637">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-06-22 08:05:02 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <path d="M 629.2035 848.091 L 298.7965 848.091 C 296.58736 848.091 294.7965 846.3002 294.7965 844.091 C 294.7965 843.706 294.8521 843.3231 294.96153 842.9539 L 360.8141 620.8629 C 361.3176 619.1648 362.8779 618 364.6491 618 L 563.3509 618 C 565.1221 618 566.6824 619.1648 567.1859 620.8629 L 633.0385 842.9539 C 633.6665 845.0719 632.4586 847.298 630.3406 847.926 C 629.9715 848.0355 629.5885 848.091 629.2035 848.091 Z" fill="#a4f8fd"/>
+        <path d="M 629.2035 848.091 L 298.7965 848.091 C 296.58736 848.091 294.7965 846.3002 294.7965 844.091 C 294.7965 843.706 294.8521 843.3231 294.96153 842.9539 L 360.8141 620.8629 C 361.3176 619.1648 362.8779 618 364.6491 618 L 563.3509 618 C 565.1221 618 566.6824 619.1648 567.1859 620.8629 L 633.0385 842.9539 C 633.6665 845.0719 632.4586 847.298 630.3406 847.926 C 629.9715 848.0355 629.5885 848.091 629.2035 848.091 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 1189.2035 848.091 L 858.7965 848.091 C 856.5874 848.091 854.7965 846.3002 854.7965 844.091 C 854.7965 843.706 854.8521 843.3231 854.9615 842.9539 L 920.8141 620.8629 C 921.3176 619.1648 922.8779 618 924.6491 618 L 1123.3509 618 C 1125.1221 618 1126.6824 619.1648 1127.1859 620.8629 L 1193.0385 842.9539 C 1193.6665 845.0719 1192.4586 847.298 1190.3406 847.926 C 1189.9715 848.0355 1189.5885 848.091 1189.2035 848.091 Z" fill="#a4f8fd"/>
+        <path d="M 1189.2035 848.091 L 858.7965 848.091 C 856.5874 848.091 854.7965 846.3002 854.7965 844.091 C 854.7965 843.706 854.8521 843.3231 854.9615 842.9539 L 920.8141 620.8629 C 921.3176 619.1648 922.8779 618 924.6491 618 L 1123.3509 618 C 1125.1221 618 1126.6824 619.1648 1127.1859 620.8629 L 1193.0385 842.9539 C 1193.6665 845.0719 1192.4586 847.298 1190.3406 847.926 C 1189.9715 848.0355 1189.5885 848.091 1189.2035 848.091 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(391.51465 702.5455)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">ATM 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(951.5146 702.5455)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">ATM 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 593.74 409.3949 C 510.7532 364.46687 510.7532 291.62418 593.74 246.69614 C 676.7263 201.76788 811.2737 201.76788 894.26 246.69614 C 977.2468 291.62418 977.2468 364.46687 894.26 409.3949 C 811.2737 454.3232 676.7263 454.3232 593.74 409.3949" fill="#e3a92e"/>
+        <path d="M 593.74 409.3949 C 510.7532 364.46687 510.7532 291.62418 593.74 246.69614 C 676.7263 201.76788 811.2737 201.76788 894.26 246.69614 C 977.2468 291.62418 977.2468 364.46687 894.26 409.3949 C 811.2737 454.3232 676.7263 454.3232 593.74 409.3949" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 900.9629 420.6972 L 892.3181 426.09905 L 982.0366 569.6786 L 969.7185 577.3758 L 999.2683 587.637 L 1002.9994 556.5796 L 990.6813 564.2768 Z" fill="blue"/>
+        <path d="M 900.9629 420.6972 L 892.3181 426.09905 L 982.0366 569.6786 L 969.7185 577.3758 L 999.2683 587.637 L 1002.9994 556.5796 L 990.6813 564.2768 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 585.9459 420.6972 L 594.5907 426.09905 L 504.8722 569.6786 L 517.1903 577.3758 L 487.6405 587.637 L 483.90934 556.5796 L 496.22745 564.2768 Z" fill="blue"/>
+        <path d="M 585.9459 420.6972 L 594.5907 426.09905 L 504.8722 569.6786 L 517.1903 577.3758 L 487.6405 587.637 L 483.90934 556.5796 L 496.22745 564.2768 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(625.9824 267.04552)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="57.507324" y="50">Bank</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Database</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(591.78076 480)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#2e006e" x="0" y="35">Both ATMs will see</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#2e006e" x="27.2583" y="78">Same balance</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

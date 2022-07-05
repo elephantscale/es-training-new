@@ -1,24 +1,23 @@
 
 # Unsupervised Learning
 
+<img src="../../assets/images/machine-learning/clustering-05.png" style="width:40%;"/><!-- {"left" : 2.3, "top" : 2.55, "height" : 8.61, "width" : 12.9} -->
+
 ---
 
 ## Algorithm Summary
 
-<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-1.png" style="max-width:80%;"/><!-- {"left" : 2.3, "top" : 2.55, "height" : 8.61, "width" : 12.9} -->
+<img src="../../assets/images/machine-learning/algorithm-summary-unsupervised-1.png" style="width:75%;"/><!-- {"left" : 2.3, "top" : 2.55, "height" : 8.61, "width" : 12.9} -->
 
+* [Reference](http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/)
 
 Notes:
-
-http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/
-
 
 ---
 
 ## Supervised & Unsupervised Learning
 
-
- * **Supervised Learning**
+* **Supervised Learning**
 
     * We train the model on 'training set'
 
@@ -28,7 +27,7 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
     * E.g.: Predict house prices
 
- * **Unsupervised Learning**
+* **Unsupervised Learning**
 
     * There is NO training
 
@@ -36,30 +35,23 @@ http://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-a
 
 Notes:
 
-
-
 ---
 
 ## Unsupervised Learning
 
+* Unsupervised Learning refers to statistical methods that  **extract meaning from data without training a model on labeled data**
 
- * Unsupervised Learning refers to statistical methods that  **extract meaning from data without training a model on labeled data**
+* (In our supervised learning, we trained models and then used them for prediction)
 
- * (In our supervised learning, we trained models and then used them for prediction)
+* Big part of exploratory data analysis
 
- * Unsupervised learning also **builds models from data**, but **does not distinguish between response variable and predictor variable**
+    - Sift through large amount of data or large amount of variables
 
- * Big part of exploratory data analysis
+    - **Cold-start:** when we start out a project, we may not have 'training data'.  So we can use Clustering to identify pockets and analyze them independently
 
-     - Sift through large amount of data or large amount of variables
-
-     -  **Cold-start:** when we start out a project, we may not have 'training data'.  So we can use Clustering to identify pockets and analyze them independently
+* Reference: "Practical Statistics for Data Scientists", Chapter 7 - Oreilly
 
 Notes:
-
-References
-"Practical Statistics for Data Scientists", Chapter 7 - Oreilly
-
 
 ---
 
@@ -73,31 +65,28 @@ References
 
 <!-- {"left" : 0.62, "top" : 3.4, "height" : 1, "width" : 16.26} -->
 
-
 Notes:
-
-
 
 ---
 
 ## Unsupervised Applications
 
+<img src="../../assets/images/digital-transformation/3rd-party/dnacomputing.jpg" style="width:25%;float:right;clear:both;"/><!-- {"left" : 2.3, "top" : 2.55, "height" : 8.61, "width" : 12.9} -->
+<img src="../../assets/images/generic/3rd-party/shopping-cart-1.jpg" style="width:25%;float:right;clear:both;"/><!-- {"left" : 2.3, "top" : 2.55, "height" : 8.61, "width" : 12.9} -->
 
- * Medicine / Genomics
+* Medicine / Genomics
      - Group cancer cells into sub groups
 
- * Online shopping
-     - Group customer purchases ('grocery run' )
+* Online shopping
+     - Group customer purchases (e.g. 'grocery run', 'milk run' )
 
- * Web
+* Web
      - Prioritize search results based on other user's clicks.  
        E.g. search results for 'eclipse'
      - Group news stories / articles  
        E.g. Google News
 
 Notes:
-
-
 
 ---
 

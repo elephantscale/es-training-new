@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-257 -70 1471 613" width="1471" height="613">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-404.1" y="-131.3">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="2" dy="3"/>
+      <feFlood flood-color="black" flood-opacity=".7642578" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Century Gothic" font-size="37" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="37" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-08-15 13:09:12 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Graphic_3">
+        <rect x="-256.65527" y="-70" width="291.63077" height="469.14515" fill="#439247"/>
+      </g>
+      <g id="Graphic_4">
+        <rect x="33.00391" y="-70" width="272.0759" height="469.14515" fill="#7ebc41"/>
+      </g>
+      <g id="Graphic_5">
+        <rect x="305.07982" y="-70" width="209.72741" height="469.14515" fill="#fbcd32"/>
+      </g>
+      <g id="Graphic_6">
+        <rect x="514.2932" y="-70" width="224.2704" height="469.14515" fill="#f38e30"/>
+      </g>
+      <g id="Graphic_7">
+        <rect x="738.5636" y="-70" width="155.32508" height="469.14515" fill="#ee472f"/>
+      </g>
+      <g id="Graphic_8">
+        <rect x="893.8887" y="-70" width="319.31585" height="469.14515" fill="#bd3626"/>
+      </g>
+      <g id="Graphic_9" filter="url(#Shadow)">
+        <text transform="translate(-191.86771 119.57257)" fill="white">
+          <tspan font-family="Century Gothic" font-size="37" font-weight="700" fill="white" x="0" y="37">Excellent</tspan>
+          <tspan font-family="Century Gothic" font-size="37" font-weight="400" fill="white" x="13.36914" y="82">800-850</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10" filter="url(#Shadow)">
+        <text transform="translate(70.98644 119.57257)" fill="white">
+          <tspan font-family="Century Gothic" font-size="37" font-weight="700" fill="white" x="0" y="37">Very Good</tspan>
+          <tspan font-family="Century Gothic" font-size="37" font-weight="400" fill="white" x="30.39673" y="82">750-799</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11" filter="url(#Shadow)">
+        <text transform="translate(342.28484 119.57257)" fill="white">
+          <tspan font-family="Century Gothic" font-size="37" font-weight="700" fill="white" x="16.223633" y="37">Good</tspan>
+          <tspan font-family="Century Gothic" font-size="37" font-weight="400" fill="white" x="0" y="82">700-749</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12" filter="url(#Shadow)">
+        <text transform="translate(558.7697 119.57257)" fill="white">
+          <tspan font-family="Century Gothic" font-size="37" font-weight="700" fill="white" x="36.21411" y="37">Fair</tspan>
+          <tspan font-family="Century Gothic" font-size="37" font-weight="400" fill="white" x="0" y="82">650-699</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13" filter="url(#Shadow)">
+        <text transform="translate(748.56745 119.57257)" fill="white">
+          <tspan font-family="Century Gothic" font-size="37" font-weight="700" fill="white" x="27.6958" y="37">Poor</tspan>
+          <tspan font-family="Century Gothic" font-size="37" font-weight="400" fill="white" x="0" y="82">600-649</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14" filter="url(#Shadow)">
+        <text transform="translate(971.769 119.57257)" fill="white">
+          <tspan font-family="Century Gothic" font-size="37" font-weight="700" fill="white" x="0" y="37">Very Bad</tspan>
+          <tspan font-family="Century Gothic" font-size="37" font-weight="400" fill="white" x="14.118896" y="82">300-599</tspan>
+        </text>
+      </g>
+      <g id="Line_16">
+        <path d="M -110.20287 420.487 L -110.19713 434.088 C -110.19643 435.74417 -108.85379 437.08646 -107.19762 437.08673 L 165.24574 437.1311 C 166.89667 437.1314 168.23756 435.7977 168.2462 434.1468 L 168.31866 420.29084" stroke="#190079" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(-175.26584 463.2768)" fill="#1b0070">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#1b0070" x="14.245605" y="30">Expect the lowest possible</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#1b0070" x="0" y="67">interest rates and best terms</tspan>
+        </text>
+      </g>
+      <g id="Line_18">
+        <path d="M 410.66204 420.4871 L 410.6678 434.0882 C 410.6685 435.74434 412.01104 437.0866 413.66715 437.08696 L 625.024 437.13106 C 626.67495 437.1314 628.0159 435.7977 628.02456 434.14675 L 628.097 420.29093" stroke="#190079" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(324.55164 463.2768)" fill="#1b0070">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#1b0070" x="0" y="30">You will be eligible for most</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#1b0070" x="38.75244" y="67">loans with good rates</tspan>
+        </text>
+      </g>
+      <g id="Line_20">
+        <path d="M 817 420.48716 L 817.0057 434.0882 C 817.0064 435.74436 818.349 437.08664 820.0052 437.08696 L 1049.783 437.13116 C 1051.434 437.1315 1052.7749 435.7978 1052.7836 434.14685 L 1052.856 420.29097" stroke="#190079" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(757.4912 463.2768)" fill="#1b0070">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#1b0070" x="0" y="30">Only secured loans are given</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#1b0070" x="44.11377" y="67">for people in this range</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

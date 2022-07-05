@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="35 541 957 699" width="957" height="699">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#3100ae">
+      <g>
+        <path d="M -3.2 0 L 0 1.2 L 0 -1.2 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="34" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-02-17 14:32:08 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_12">
+        <title>Rectangle</title>
+        <path d="M 108.69881 544.3348 L 980 544.3348 C 984.4183 544.3348 988 547.9165 988 552.3348 L 988 1167.12 C 988 1171.5383 984.4183 1175.12 980 1175.12 L 108.69881 1175.12 C 104.28053 1175.12 100.69881 1171.5383 100.69881 1167.12 L 100.69881 552.3348 C 100.69881 547.9165 104.28053 544.3348 108.69881 544.3348 Z" fill="white"/>
+        <path d="M 108.69881 544.3348 L 980 544.3348 C 984.4183 544.3348 988 547.9165 988 552.3348 L 988 1167.12 C 988 1171.5383 984.4183 1175.12 980 1175.12 L 108.69881 1175.12 C 104.28053 1175.12 100.69881 1171.5383 100.69881 1167.12 L 100.69881 552.3348 C 100.69881 547.9165 104.28053 544.3348 108.69881 544.3348 Z" stroke="#2c008c" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(40.993446 956.1337) rotate(-90)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1e008c" x="0" y="40">Accuracy</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <path d="M 105 1085.3348 C 178.68418 988.3875 362.32194 755.4822 480.293 681.9027 C 615.2534 597.7014 740.4783 547.4897 987.3012 549.03465" stroke="#b66b47" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="32.0,24.0,8.0,24.0" stroke-width="8"/>
+      </g>
+      <g id="Graphic_24">
+        <path d="M 100.69881 1090 C 145.61191 1028.8536 406.36773 683.5678 565.7907 683.5678 C 731.33815 683.3767 943.8402 807.9624 983 831.8477" stroke="#582fcc" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="16.0,16.0" stroke-width="8"/>
+      </g>
+      <g id="Line_41">
+        <path d="M 576.8899 711.1493 C 576.90994 724.154 576.9369 741.6095 576.9591 756" marker-start="url(#FilledArrow_Marker)" stroke="#3100ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_8">
+        <text transform="translate(813.7458 1125.1956)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#1e008c" x="0" y="34">Overfitting</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <text transform="translate(368.9933 1184.64)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1e008c" x="0" y="40">Model complexity</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(842.0643 561.64)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#1e008c" x="0" y="34">Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <text transform="translate(729.427 826.64)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#1e008c" x="0" y="34">Generalization</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(488.26465 761)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#1e008c" x="0" y="34">Sweet spot</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <text transform="translate(111.48863 1125.1956)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="34" font-weight="700" fill="#1e008c" x="0" y="34">Underfitting</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

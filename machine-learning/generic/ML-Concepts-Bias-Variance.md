@@ -4,17 +4,20 @@
 
 ## Estimating Target Function
 
- * In supervised algorithms try to estimate target function
-'f'  
-`Y = f(X)`  
-`Y: output,  X: input`
+* In supervised algorithms try to estimate target function 'f'  
 
- * The error can be broken down to
+```text
+Y = f(X) + Error
+
+Y: output,  X: input
+```
+
+* The error can be broken down to
     - Bias error
     - Variance error
     - Irreducible error
 
- * Irreducible error can not be minimized.May be caused by unknown variables, noise ..etc
+* Irreducible error can not be minimized. May be caused by unknown variables, noise ..etc
 
 Notes:
 
@@ -83,6 +86,7 @@ Notes:
 Notes:
 
 ---
+
 ## Bias-Variance Tradeoff
 
 

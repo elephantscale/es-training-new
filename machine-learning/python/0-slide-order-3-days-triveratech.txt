@@ -35,7 +35,12 @@ Regressions-Python.md
 ./Classification-SVM-Python.md
 ./Classification-Naive-Bayes-Python.md
 
-Unsupervised-Python.md
+Decision-Trees-Python.md
+Ensemble-Algorithms-Python.md
+
+Clustering-Python.md
+
+Dimensionality-Reduction-Python.md
 
 ## Recommendations
 ../generic/Recommendations-Generic.md

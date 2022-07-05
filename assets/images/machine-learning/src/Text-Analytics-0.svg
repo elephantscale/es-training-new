@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-19 244 551 441" width="551" height="441">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-17 09:44:25 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_5">
+        <ellipse cx="155.44617" cy="388.6028" rx="151.960891287101" ry="143.603042266311" fill="#9ef7fd" fill-opacity=".9157407"/>
+        <ellipse cx="155.44617" cy="388.6028" rx="151.960891287101" ry="143.603042266311" stroke="#16006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <ellipse cx="138.7305" cy="543.35954" rx="156.519718025714" ry="140.320687014509" fill="#ecdea4" fill-opacity=".54288194"/>
+        <ellipse cx="138.7305" cy="543.35954" rx="156.519718025714" ry="140.320687014509" stroke="#16006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <ellipse cx="375.0293" cy="388.6028" rx="155.759913569279" ry="143.603042266311" fill="#d99f2b" fill-opacity=".9071759"/>
+        <ellipse cx="375.0293" cy="388.6028" rx="155.759913569279" ry="143.603042266311" stroke="#16006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <ellipse cx="359.07344" cy="537.7674" rx="156.519718025714" ry="140.320687014509" fill="#8671ed" fill-opacity=".6700521"/>
+        <ellipse cx="359.07344" cy="537.7674" rx="156.519718025714" ry="140.320687014509" stroke="#16006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(318.278 306.61936)" fill="#29006d">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#29006d" x="2.709961" y="30">Call Center</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#29006d" x="0" y="67">Interactions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(328.75897 540.1525)" fill="#29006d">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#29006d" x="26.11084" y="30">Survey</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#29006d" x="0" y="67">Feedback</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(60.201124 558.6525)" fill="#29006d">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#29006d" x="0" y="30">Sales</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(55.8205 306.61936)" fill="#29006d">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#29006d" x="2.4023438" y="30">Social</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#29006d" x="0" y="67">Media</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

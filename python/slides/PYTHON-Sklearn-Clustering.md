@@ -3,7 +3,7 @@
 
 # Clustering 
 
-[Clustering from ML](../../machine-learning/generic/Unsupervised-Clustering.md)
+[Clustering from ML](../../machine-learning/generic/Clustering.md)
 
 ---
 

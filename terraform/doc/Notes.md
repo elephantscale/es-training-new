@@ -6,4 +6,7 @@
 
 * Rod's labs
     * https://github.com/ExgnosisClasses/Terraform
+
+* New module for security
+    * https://about.gitlab.com/blog/2022/06/01/terraform-as-part-of-software-supply-chain-part1-modules-and-providers/
         

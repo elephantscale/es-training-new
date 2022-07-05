@@ -629,7 +629,7 @@ value for k by calculating wsse.</span>
 <span dir="ltr">An introduction to dimensionality reduction as a method
 of unsupervised learning. The first part of the video covers why
 dimensionality reduction is effective. Specifically, the video covers
-Principle Component Analysis (PCA) as well as why this is different than
+Principal Component Analysis (PCA) as well as why this is different than
 clustering.This includes the concept as well as an example with
 calculation behind the method. Additionally, the video covers
 evaluation, visualizing of PCA and use cases and the sklearn

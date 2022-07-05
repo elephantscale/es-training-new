@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="150 313 1969 591" width="1969" height="591">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-06-16 09:25:48 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_17">
+        <path d="M 166 314.35305 L 731 314.35305 C 739.2843 314.35305 746 321.06878 746 329.35305 L 746 888 C 746 896.2843 739.2843 903 731 903 L 166 903 C 157.71573 903 151 896.2843 151 888 L 151 329.35305 C 151 321.06878 157.71573 314.35305 166 314.35305 Z" fill="#ebdea6"/>
+        <path d="M 166 314.35305 L 731 314.35305 C 739.2843 314.35305 746 321.06878 746 329.35305 L 746 888 C 746 896.2843 739.2843 903 731 903 L 166 903 C 157.71573 903 151 896.2843 151 888 L 151 329.35305 C 151 321.06878 157.71573 314.35305 166 314.35305 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 232.835 490.1852 L 664.165 490.1852 C 666.3741 490.1852 668.165 491.97605 668.165 494.1852 L 668.165 673 C 668.165 675.2091 666.3741 677 664.165 677 L 232.835 677 C 230.62586 677 228.835 675.2091 228.835 673 L 228.835 494.1852 C 228.835 491.97605 230.62586 490.1852 232.835 490.1852 Z" fill="#e3a92e"/>
+        <path d="M 232.835 490.1852 L 664.165 490.1852 C 666.3741 490.1852 668.165 491.97605 668.165 494.1852 L 668.165 673 C 668.165 675.2091 666.3741 677 664.165 677 L 232.835 677 C 230.62586 677 228.835 675.2091 228.835 673 L 228.835 494.1852 C 228.835 491.97605 230.62586 490.1852 232.835 490.1852 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(325.2993 343.37667)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">Node 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(328.5293 522.5926)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="25.976562" y="50">USA_NY</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">(40 Cities)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <path d="M 232.835 697 L 664.165 697 C 666.3741 697 668.165 698.7909 668.165 701 L 668.165 825 C 668.165 827.2091 666.3741 829 664.165 829 L 232.835 829 C 230.62586 829 228.835 827.2091 228.835 825 L 228.835 701 C 228.835 698.7909 230.62586 697 232.835 697 Z" fill="#e3a92e"/>
+        <path d="M 232.835 697 L 664.165 697 C 666.3741 697 668.165 698.7909 668.165 701 L 668.165 825 C 668.165 827.2091 666.3741 829 664.165 829 L 232.835 829 C 230.62586 829 228.835 827.2091 228.835 825 L 228.835 701 C 228.835 698.7909 230.62586 697 232.835 697 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(328.5293 702)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="23.97461" y="50">USA_NV</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">(30 Cities)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <path d="M 852 314.35305 L 1417 314.35305 C 1425.2843 314.35305 1432 321.06878 1432 329.35305 L 1432 888 C 1432 896.2843 1425.2843 903 1417 903 L 852 903 C 843.7157 903 837 896.2843 837 888 L 837 329.35305 C 837 321.06878 843.7157 314.35305 852 314.35305 Z" fill="#ebdea6"/>
+        <path d="M 852 314.35305 L 1417 314.35305 C 1425.2843 314.35305 1432 321.06878 1432 329.35305 L 1432 888 C 1432 896.2843 1425.2843 903 1417 903 L 852 903 C 843.7157 903 837 896.2843 837 888 L 837 329.35305 C 837 321.06878 843.7157 314.35305 852 314.35305 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_27">
+        <path d="M 918.835 490.1852 L 1350.165 490.1852 C 1352.3741 490.1852 1354.165 491.97605 1354.165 494.1852 L 1354.165 673 C 1354.165 675.2091 1352.3741 677 1350.165 677 L 918.835 677 C 916.6259 677 914.835 675.2091 914.835 673 L 914.835 494.1852 C 914.835 491.97605 916.6259 490.1852 918.835 490.1852 Z" fill="#e3a92e"/>
+        <path d="M 918.835 490.1852 L 1350.165 490.1852 C 1352.3741 490.1852 1354.165 491.97605 1354.165 494.1852 L 1354.165 673 C 1354.165 675.2091 1352.3741 677 1350.165 677 L 918.835 677 C 916.6259 677 914.835 675.2091 914.835 673 L 914.835 494.1852 C 914.835 491.97605 916.6259 490.1852 918.835 490.1852 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(1011.2993 343.37667)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">Node 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(1014.5293 522.5926)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="25.976562" y="50">USA_AK</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">(10 Cities)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <path d="M 918.835 697 L 1350.165 697 C 1352.3741 697 1354.165 698.7909 1354.165 701 L 1354.165 825 C 1354.165 827.2091 1352.3741 829 1350.165 829 L 918.835 829 C 916.6259 829 914.835 827.2091 914.835 825 L 914.835 701 C 914.835 698.7909 916.6259 697 918.835 697 Z" fill="#e3a92e"/>
+        <path d="M 918.835 697 L 1350.165 697 C 1352.3741 697 1354.165 698.7909 1354.165 701 L 1354.165 825 C 1354.165 827.2091 1352.3741 829 1350.165 829 L 918.835 829 C 916.6259 829 914.835 827.2091 914.835 825 L 914.835 701 C 914.835 698.7909 916.6259 697 918.835 697 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(988.0278 702)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Australia_NT</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="40.50293" y="111">(5 Cities)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <path d="M 1538 314.35305 L 2103 314.35305 C 2111.2843 314.35305 2118 321.06878 2118 329.35305 L 2118 888 C 2118 896.2843 2111.2843 903 2103 903 L 1538 903 C 1529.7157 903 1523 896.2843 1523 888 L 1523 329.35305 C 1523 321.06878 1529.7157 314.35305 1538 314.35305 Z" fill="#ebdea6"/>
+        <path d="M 1538 314.35305 L 2103 314.35305 C 2111.2843 314.35305 2118 321.06878 2118 329.35305 L 2118 888 C 2118 896.2843 2111.2843 903 2103 903 L 1538 903 C 1529.7157 903 1523 896.2843 1523 888 L 1523 329.35305 C 1523 321.06878 1529.7157 314.35305 1538 314.35305 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_33">
+        <path d="M 1604.835 490.1852 L 2036.165 490.1852 C 2038.3741 490.1852 2040.165 491.97605 2040.165 494.1852 L 2040.165 673 C 2040.165 675.2091 2038.3741 677 2036.165 677 L 1604.835 677 C 1602.6259 677 1600.835 675.2091 1600.835 673 L 1600.835 494.1852 C 1600.835 491.97605 1602.6259 490.1852 1604.835 490.1852 Z" fill="#e3a92e"/>
+        <path d="M 1604.835 490.1852 L 2036.165 490.1852 C 2038.3741 490.1852 2040.165 491.97605 2040.165 494.1852 L 2040.165 673 C 2040.165 675.2091 2038.3741 677 2036.165 677 L 1604.835 677 C 1602.6259 677 1600.835 675.2091 1600.835 673 L 1600.835 494.1852 C 1600.835 491.97605 1602.6259 490.1852 1604.835 490.1852 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(1697.2993 343.37667)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#250060" x="0" y="70">Node 3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(1659.0254 522.5926)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="50">Australia_VIC</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="41.503906" y="111">(50 Cities)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <path d="M 1604.835 697 L 2036.165 697 C 2038.3741 697 2040.165 698.7909 2040.165 701 L 2040.165 825 C 2040.165 827.2091 2038.3741 829 2036.165 829 L 1604.835 829 C 1602.6259 829 1600.835 827.2091 1600.835 825 L 1600.835 701 C 1600.835 698.7909 1602.6259 697 1604.835 697 Z" fill="#e3a92e"/>
+        <path d="M 1604.835 697 L 2036.165 697 C 2038.3741 697 2040.165 698.7909 2040.165 701 L 2040.165 825 C 2040.165 827.2091 2038.3741 829 2036.165 829 L 1604.835 829 C 1602.6259 829 1600.835 827.2091 1600.835 825 L 1600.835 701 C 1600.835 698.7909 1602.6259 697 1604.835 697 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(1686.5278 702)" fill="#250060">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="35.98633" y="50">USA_CA</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#250060" x="0" y="111">(200 Cities)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

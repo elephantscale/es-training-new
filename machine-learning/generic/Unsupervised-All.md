@@ -23,10 +23,10 @@ Notes:
 
 ## Clustering
 
-[Unsupervised-Clustering.md](Unsupervised-Clustering.md)
+[Clustering.md](Clustering.md)
 
 ---
 
 ## Dimensionality Reduction
 
-[Unsupervised-Dimensionality-Reduction.md](Unsupervised-Dimensionality-Reduction.md)
+[Dimensionality-Reduction.md](Dimensionality-Reduction.md)

@@ -1,8 +1,8 @@
-<img src="../../assets/images/logos/TriveraTech-logo-2-large.jpg" style="width:25%;float:right;" /> <!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
+<img src="../../assets/images/logos/TriveraTech-logo-2-large.jpg" style="width:25%;float:right;" /> <!-- {"left" : 10.62, "top" : 0.53, "height" : 2.32, "width" : 6.32} -->
 
 # Introduction to Apache Cassandra
 
-<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:30%;" />
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:30%;" /> <!-- {"left" : 6.49, "top" : 7.82, "height" : 3.03, "width" : 4.51} -->
 
 ---
 
@@ -16,7 +16,7 @@
 
 ## Class Objectives
 
-<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:30%;float:right;" /> <!-- {"left" : 12.75, "top" : 1.89, "height" : 2.88, "width" : 4.28} -->
 
  * Understand Cassandra design and architecture
 
@@ -86,7 +86,7 @@ Notes:
 
 ## Our Teaching Philosophy
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;float:right;"/> <!-- {"left" : 1.54, "top" : 1.98, "height" : 5.77, "width" : 7.16} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png" style="width:40%;float:right;"/>  <!-- {"left" : 11.24, "top" : 2.04, "height" : 4.67, "width" : 5.79} -->
 
  * Emphasis on concepts & fundamentals
 
@@ -94,7 +94,7 @@ Notes:
 
  * Hands-on (learn by doing)
 
-<img src="../../assets/images/cassandra/3rd-party/About-Cassandra-Class-After-The-Class--5.png" style="width:30%;clear:both;"/>
+<img src="../../assets/images/cassandra/3rd-party/About-Cassandra-Class-After-The-Class--5.png" style="width:30%;clear:both;"/> <!-- {"left" : 11.78, "top" : 6.91, "height" : 4.54, "width" : 4.7} -->
 
 Notes: 
 
@@ -107,7 +107,8 @@ All the labs are verified at 1.3 even though latest is 1.4
 ## Real World Can Be Complicated...
 
 
-<img src="../../assets/images/cassandra/3rd-party/Real-World-Can- Be-Complicated.png" style="width:80%;"/>
+<img src="../../assets/images/cassandra/3rd-party/Real-World-Can- Be-Complicated.png" style="width:80%;"/> <!-- {"left" : 1.36, "top" : 2.18, "height" : 9.34, "width" : 14.77} -->
+
 
 Notes: 
 
@@ -124,7 +125,9 @@ Notes:
 
  * Datastax Academy: https://academy.datastax.com 
 
-<img src="../../assets/images/books/About-Cassandra-Class-Recommended-Books-Resources-7.png" style="width:20.5%;"/> &nbsp;  &nbsp;  <img src="../../assets/images/books/About-Cassandra-Class-Recommended-Books-Resources-6.png" style="width:21.7%;"/>
+
+<img src="../../assets/images/books/About-Cassandra-Class-Recommended-Books-Resources-7.png" style="width:20.5%;"/> <!-- {"left" : 4.77, "top" : 5.56, "height" : 4.81, "width" : 3.63} -->
+ &nbsp;  &nbsp;  <img src="../../assets/images/books/About-Cassandra-Class-Recommended-Books-Resources-6.png" style="width:21.7%;"/> <!-- {"left" : 8.83, "top" : 5.56, "height" : 4.81, "width" : 3.89} -->
 
 Notes: 
 
@@ -146,7 +149,7 @@ Notes:
 
 *  **Something non-technical about you!**  **(favorite ice cream flavor or hobby, etc.)** 
 
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.02, "top" : 5.93, "height" : 2.02, "width" : 2.28} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.33, "top" : 5.96, "height" : 1.95, "width" : 3.59} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.94, "top" : 5.93, "height" : 2.02, "width" : 2.28} -->
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 2.31, "top" : 7.39, "height" : 3.17, "width" : 3.58} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 5.93, "top" : 7.42, "height" : 3.06, "width" : 5.64} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 11.6, "top" : 7.39, "height" : 3.17, "width" : 3.58} -->
 
 Notes: 
 
@@ -174,4 +177,4 @@ Notes:
 
 ## Let's Get Started!
 
-<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/>  &nbsp;  &nbsp;
+<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/> <!-- {"left" : 3.79, "top" : 2.19, "height" : 9.33, "width" : 9.92} -->

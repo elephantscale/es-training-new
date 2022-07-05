@@ -1,5 +1,8 @@
 # Logistic Regression in Spark
 
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" />
+<img src="../../assets/images/machine-learning/sigmoid-function-1.png" style="width:20%;" />
+
 ---
 
 ## Lesson Objectives
@@ -19,6 +22,9 @@ Notes:
 ---
 
 # Logistic Regression in Spark
+
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" />
+<img src="../../assets/images/machine-learning/sigmoid-function-1.png" style="width:20%;" />
 
 ---
 

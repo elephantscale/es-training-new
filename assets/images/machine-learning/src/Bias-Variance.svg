@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="53 567 849 639" width="849" height="639">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 6 4" markerWidth="6" markerHeight="4" color="#902e7b">
+      <g>
+        <path d="M -2.4 0 L 0 .9 L 0 -.9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-02-17 14:05:36 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_12">
+        <title>Rectangle</title>
+        <path d="M 164.7105 593.98344 L 837.2495 593.98344 C 837.8018 593.98344 838.2495 594.43115 838.2495 594.98344 L 838.2495 1124.4714 C 838.2495 1125.0237 837.8018 1125.4714 837.2495 1125.4714 L 164.7105 1125.4714 C 164.15821 1125.4714 163.7105 1125.0237 163.7105 1124.4714 L 163.7105 594.98344 C 163.7105 594.43115 164.15821 593.98344 164.7105 593.98344 Z" fill="white"/>
+      </g>
+      <g id="Line_11">
+        <line x1="159.52925" y1="607.9" x2="159.81384" y2="1125.4714" marker-start="url(#FilledArrow_Marker)" stroke="#902e7b" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_10">
+        <line x1="807.3495" y1="1125.4882" x2="163.7105" y2="1125.8372" marker-start="url(#FilledArrow_Marker)" stroke="#902e7b" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_14">
+        <circle cx="324.25" cy="700" r="5.00000798950948" fill="#4230a6"/>
+      </g>
+      <g id="Graphic_15">
+        <circle cx="581" cy="1036.2703" r="5.00000798950957" fill="#4230a6"/>
+      </g>
+      <g id="Graphic_17">
+        <circle cx="581" cy="1072.4241" r="5.00000798950956" fill="#4230a6"/>
+      </g>
+      <g id="Graphic_16">
+        <circle cx="324" cy="737.9301" r="5.00000798950948" fill="#4230a6"/>
+      </g>
+      <g id="Graphic_18">
+        <ellipse cx="449.5" cy="691" rx="185.500296410802" ry="108.000172573405" stroke="#a4e0ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_19">
+        <ellipse cx="688.5" cy="1011.2703" rx="185.500296410802" ry="108.000172573405" stroke="#a4e0ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_20">
+        <ellipse cx="272.07453" cy="1038.3602" rx="101.074695668681" ry="76.2980949036134" stroke="#a4e0ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_9">
+        <text transform="translate(717.6865 1150.2919)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1e008c" x="0" y="40">Variance</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(58.10156 572)" fill="#1e008c">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#1e008c" x="0" y="40">Bias</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(318.9843 641.2857)" fill="#3e00a6">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3e00a6" x="0" y="30">Parametric Methods</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3e00a6" x="0" y="67">  Linear</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3e00a6" x="0" y="104">  Logistic</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(577 938.5591)" fill="#3e00a6">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3e00a6" x="0" y="30">Non-Parametric</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3e00a6" x="0" y="67">Methods</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3e00a6" x="0" y="104">  Decision Trees</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3e00a6" x="0" y="141">  SVM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(235.4754 1001.3602)" fill="#3e00a6">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3e00a6" x="0" y="30">ideal</tspan>
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#3e00a6" x="5.998535" y="67">spot</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

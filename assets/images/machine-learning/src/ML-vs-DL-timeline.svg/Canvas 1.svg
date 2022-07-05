@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="2 122 905 521" width="905" height="521">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#7e64b9">
+      <g>
+        <path d="M -3.7333333 0 L 0 1.4 L 0 -1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#7e64b9">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-88.5" y="69.9">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-03-14 18:03:19 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_10">
+        <line x1="160.81297" y1="211.74615" x2="160.94177" y2="586.0551" marker-start="url(#FilledArrow_Marker)" stroke="#7e64b9" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_9">
+        <line x1="161.27632" y1="586.3863" x2="629.71694" y2="585.4692" marker-end="url(#FilledArrow_Marker_2)" stroke="#7e64b9" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(196.1639 600)" fill="#28007a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#28007a" x="0" y="30">Scale (data size, model size)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(619.1567 241)" fill="#28007a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#28007a" x="0" y="30">neural networks</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(640.48975 356.5)" fill="#28007a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#28007a" x="0" y="30">other approaches</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(128.89502 127)" fill="#28007a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#28007a" x="0" y="30">1980s and 1990s</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(7.880705 215)" fill="#28007a">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#28007a" x="0" y="30">Accuracy</tspan>
+        </text>
+      </g>
+      <g id="Line_13">
+        <line x1="246" y1="196.2291" x2="246.13427" y2="586.43804" stroke="#b94f37" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="4"/>
+      </g>
+      <g id="Graphic_15" filter="url(#Shadow)">
+        <path d="M 166.121 581 C 166.121 581 159.18464 475.50275 250.34818 427.19093 C 250.34818 427.19093 283.04815 405.4999 395.02076 397.61226 C 506.99337 389.7246 622.9296 382.82293 622.9296 382.82293" stroke="#7ff3e3" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 169.09372 581 C 169.09372 581 243.41183 484.37635 257.28454 470.573 C 267.68907 460.22044 275.41816 452.3328 286.7145 442.67043 C 296.02904 434.6842 309.5054 425.5148 319.61265 418.5145 C 332.1972 409.7395 344.0881 400.9645 356.6726 392.0909 C 368.26624 383.9075 380.7517 376.21703 392.4444 368.428 C 433.3689 341.2156 480.8334 322.97543 525.8206 303.8479 C 551.6833 292.8052 577.6451 283.7344 603.5078 272.6917 C 605.9851 271.60714 608.56144 270.5226 611.0387 269.43804" stroke="#765ecd" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+    </g>
+  </g>
+</svg>

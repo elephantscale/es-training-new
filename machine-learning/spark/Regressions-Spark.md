@@ -1,5 +1,8 @@
 # Regressions in Spark
 
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/linear-regression-plot-1.png" style="width:40%;"/><!-- {"left" : 2.39, "top" : 2.61, "height" : 8.48, "width" : 12.71} -->
+
 ---
 
 # Regressions Intro
@@ -8,13 +11,10 @@
 
 ---
 
-# Linear Regression
-
-[../generic/Regressions-Linear.md](../generic/Regressions-Linear.md)
-
----
-
 # Linear Regression in Spark
+
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:30%;"/>
+<img src="../../assets/images/machine-learning/linear-regression-plot-1.png" style="width:40%;"/><!-- {"left" : 2.39, "top" : 2.61, "height" : 8.48, "width" : 12.71} -->
 
 ---
 
@@ -28,8 +28,6 @@
 <!-- {"left" : 1.1, "top" : 3.45, "height" : 1, "width" : 15.3} -->
 
 Notes:
-
-
 
 ---
 
@@ -45,332 +43,88 @@ Notes:
 
 <!-- {"left" : 0.41, "top" : 2.39, "height" : 1, "width" : 16.73, "columnwidth" : [2.46, 3.86, 8.19, 2.22]} -->
 
-
 Notes:
-
-
 
 ---
 
 ## Example: Tip Calculation
 
+* Now our tip data includes total bill amount too!
 
- * Now our tip data includes total bill amount too!
-
- * Do you see any correlation?
+* Do you see any correlation?
 
 <img src="../../assets/images/machine-learning/bill-tip-1.png" alt="Session-Regressions-in-Spark-Example-Tip-Calculation-0.png" style="width:76%;"/><!-- {"left" : 2.97, "top" : 3.73, "height" : 5.96, "width" : 11.57} -->
 
-
-
 Notes:
-
-
 
 ---
 
-## Tips vs Bill
-
-
- * There is clearly a correlation between bill amount and tip
-
- * We can fit a line to predict tip
-
- * This is **linear regression!**
-
-<img src="../../assets/images/machine-learning/bill-tips-model-plot.png" style="width:50%"><!-- {"left" : 4.7, "top" : 4.92, "height" : 6.12, "width" : 8.1} -->
-
-
-Notes:
-
-
-
----
-
-## Spark Linear Regression Code (Scala)
+## Linear Regression in Spark (Scala)
 
 ```scala
- import org.apache.spark.ml.regression.LinearRegression  
+import org.apache.spark.ml.regression.LinearRegression  
 
- // Load training data
- val training = spark.read.....  
+// Load training data
+val training = spark.read.....  
 
- val lr = new LinearRegression()  
-    .setMaxIter(10)  
-    .setRegParam(0.3)  
-    .setElasticNetParam(0.8)    
+val lr = new LinearRegression()  
+.setMaxIter(10)  
+.setRegParam(0.3)  
+.setElasticNetParam(0.8)    
 
- // Fit the model
- val lrModel = lr.fit(training)  
+// Fit the model
+val lrModel = lr.fit(training)  
 
- // Print the coefficients and intercept for linear regression
- println(s"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}")  
+// Print the coefficients and intercept for linear regression
+println(s"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}")  
 
- // Summarize the model over the training set and print out some metrics
- val trainingSummary = lrModel.summary
- println(s"numIterations: ${trainingSummary.totalIterations}")
- println(s"objectiveHistory: [${trainingSummary.objectiveHistory.mkString(",")}]")
- trainingSummary.residuals.show()
- println(s"RMSE: ${trainingSummary.rootMeanSquaredError}")
- println(s"r2: ${trainingSummary.r2}")
+// Summarize the model over the training set and print out some metrics
+val trainingSummary = lrModel.summary
+println(s"numIterations: ${trainingSummary.totalIterations}")
+println(s"objectiveHistory: [${trainingSummary.objectiveHistory.mkString(",")}]")
+trainingSummary.residuals.show()
+println(s"RMSE: ${trainingSummary.rootMeanSquaredError}")
+println(s"r2: ${trainingSummary.r2}")
 ```
 <!-- {"left" : 0.85, "top" : 2.5, "height" : 6.67, "width" : 14.09} -->
 
 Notes:
 
-TODO - update for tips
-
-
 ---
 
-## Spark Linear Regression Code (Python)
-
-* Creating Data Frames
-
-* (1) - importing Numpy and Pandas libraries
-
-* (2) - Constructing a Panda dataframe and converting it into Spark dataframe
+## Linear Regression in Spark (Python)
 
 ```python
- #  **** 1 ****
-
-import numpy as np
 import pandas as pd
+from pyspark.ml.regression import LinearRegression
+from pyspark.ml.feature import VectorAssembler
 
+## Create a pandas df
 tip_data = pd.DataFrame({     
      'bill' : [50.00, 30.00, 60.00, 40.00, 65.00, 20.00, 10.00, 15.00, 25.00, 35.00],
      'tip' : [12.00, 7.00, 13.00, 8.00, 15.00, 5.00, 2.00, 2.00, 3.00, 4.00]    
      })
-print(tip_data)  
 
-
-#  **** 2 ****
+## Convert it to spark dataframe
 spark_tips = spark.createDataFrame(tip_data)
-spark_tips.show()
-```
-<!-- {"left" : 0.85, "top" : 4.74, "height" : 4.72, "width" : 15.16} -->
 
+## Create a feature vector
+assembler = VectorAssembler(inputCols=["bill"], outputCol="features")
+featureVector = assembler.transform(spark_tips)
 
-Notes:
+##  Run Linear regression
+lr = LinearRegression()
+lrModel = lr.fit(featureVector)
 
+## Print out coefficients!
+intercept = lrModel.intercept    # This is the intercept  
+slope = lrModel.coefficients[0]  # This is the slope
 
-
----
-
-## Spark Linear Regression Code (Python)
-
-* Plotting Data
-
-```python
- import matplotlib.pyplot as plt
- plt.scatter(tip_data.bill, tip_data.tip)
- plt.ylabel('tip')
- plt.xlabel('bill')
- plt.show()
-```
-<!-- {"left" : 0.85, "top" : 2.75, "height" : 2.51, "width" : 10.98} -->
-
-<img src="../../assets/images/machine-learning/Python-2-4-Plotting-Data-0.png" style="width:40%;"/><!-- {"left" : 4.62, "top" : 5.6, "height" : 5.82, "width" : 8.27} -->
-
-
-Notes:
-
-
-
----
-
-## Spark Linear Regression Code (Python)
-
-* (3) Create feature vector
-
-* (4) Initialize algorithm and train
-
-* (5) Identify coefficients
-
-```python
- from pyspark.ml.regression import LinearRegression
- from pyspark.ml.feature import VectorAssembler
-
- #  **** 3 ****
- assembler = VectorAssembler(inputCols=["bill"], outputCol="features")
- featureVector = assembler.transform(spark_tips)
- featureVector.show()
-
- #  **** 4 ****
- lr = LinearRegression(maxIter=10, regParam=0.3, elasticNetParam=0.8)
- lrModel = lr.fit(featureVector)
-
- #  **** 5 ****
- intercept = lrModel.intercept    # This is the intercept  
- slope = lrModel.coefficients[0]  # This is the slope
-```
-<!-- {"left" : 0.85, "top" : 4.25, "height" : 4.92, "width" : 14.44} -->
-
-Notes:
-
-
-
----
-
-## Spark Linear Regression Code (Python)
-
-* Print model properties
-
-```python
-# Print the coefficients and intercept for linear regression  
-print("Coefficients: %s" % str(lrModel.coefficients[0]))
-print("Intercept: %s" % str(lrModel.intercept))    
-
-# Summarize the model over the training set and print out some metrics
-trainingSummary = lrModel.summary
-print("numIterations: %d" % trainingSummary.totalIterations)
-print("objectiveHistory: %s" % str(trainingSummary.objectiveHistory))
-print("RMSE: %f" % trainingSummary.rootMeanSquaredError)
-print("r2: %f" % trainingSummary.r2)
+## Print out model metrics
+print("RMSE: %f" % lrModel.summary.rootMeanSquaredError)  # RMSE: 1.413302
+print("r2: %f" % lrModel.Summary.r2) # r2: 0.902517
 ```
 <!-- {"left" : 0.85, "top" : 2.74, "height" : 3.61, "width" : 14.06} -->
-
-
-```text
-Coefficients: 0.226334605857
-Intercept: -0.8217112049846651
-numIterations: 3
-objectiveHistory: [0.5000000000000002, 0.4158224893708402, 0.10101250448579287]
-RMSE: 1.413302
-r2: 0.902517
-```
-<!-- {"left" : 0.85, "top" : 6.71, "height" : 2.07, "width" : 14.25} -->
-
-
-Notes:
-
-
-
----
-
-## Evaluating Linear Regression Model
-
-* Plot the regression
-
-```python
- # Create a list of values in the best fit line
- abline_values = [slope * i + intercept for i in tip_data.bill]
-
- # Plot the best fit line over the actual values
- plt.scatter(tip_data.bill, tip_data.tip)
- plt.plot(tip_data.bill, abline_values, 'b')
- plt.ylabel('tip')
- plt.xlabel('bill')
- plt.title("Fit Line")
- plt.show()
-```
-<!-- {"left" : 0.85, "top" : 3.16, "height" : 3.29, "width" : 12.73} -->
-
-
-<img src="../../assets/images/machine-learning/Model-Plot-the-regression-0.png" style="width:40%"><!-- {"left" : 5.48, "top" : 6.79, "height" : 4.92, "width" : 6.54} -->
-
-
-Notes:
-
-
-
----
-
-## Evaluating Linear Regression Model
-
- * Calculate Coefficient of Determination (R2)
-
- * R2 is between 0 and 1.1 is perfect fit!
-
- * Here our R2 is 0.90 -> pretty good fit!
-
-```python
- # Summarize the model over the training set and print out some metrics
- trainingSummary = lrModel.summary
- print("RMSE: %f" % trainingSummary.rootMeanSquaredError)
- print("r2: %f" % trainingSummary.r2)
-
-# output
-# RMSE: 1.413302
-# r2: 0.902517
-```
-<!-- {"left" : 0.85, "top" : 4.24, "height" : 2.92, "width" : 13.94} -->
-
-
-Notes:
-
-
----
-
-## Evaluating Linear Regression Model
-
-* Estimate Tip
-
-<img src="../../assets/images/machine-learning/3rd-party/Session-Regressions-in-Spark-Evaluating-Linear-Regression-Model-Estimate-Tip-0.png" style="width:20%;float:right;"/><!-- {"left" : 13.12, "top" : 1.89, "height" : 7.54, "width" : 3.67} -->
-
-```python
- a = lrModel.coefficients[0]   # -0.8217112049846651
- b = lrModel.intercept         # 0.226334605857*   
-
- tip_for_100 = a * 100 + b   
- print(tip_for_100)   # 21.81     
-
- # add estimated tip to dataframe  
- tip_data['est_tip'] = tip_data.bill * a + b
- tip_data
-```
-
-<!-- {"left" : 0.85, "top" : 5.12, "height" : 3.47, "width" : 11.1} -->
-
-
-Notes:
-
-
-
----
-
-## Evaluating Linear Regression Model
-
-* Estimate Tip
-
-```python
- ## Adding Estimated Tip column to Spark dataframe
- # This is a bit tricky. We need to use the sql expr function to make this work.
- # The formula: (bill * a) + b
-
- from pyspark.sql.functions import expr  
- formula = "(bill * " + str(a) + ") + " + str(b)
- print(formula)  
-
- spark_tips_with_est = spark_tips.withColumn("est_tip", expr(formula))
- spark_tips_with_est.show()
-```
-<!-- {"left" : 0.85, "top" : 2.58, "height" : 3.39, "width" : 14.96} -->
-
-
-```text
-(bill * 0.226334605857) + -0.8217112049846651
-
-+----+----+------------------+
-|bill| tip|           est_tip|
-+----+----+------------------+
-|50.0|12.0|10.495019087865336|
-|30.0| 7.0| 5.968326970725334|
-|60.0|13.0|12.758365146435334|
-|40.0| 8.0| 8.231673029295335|
-|65.0|15.0|13.890038175720335|
-|20.0| 5.0|3.7049809121553343|
-|10.0| 2.0|1.4416348535853347|
-|15.0| 2.0| 2.573307882870335|
-|25.0| 3.0| 4.836653941440335|
-|35.0| 4.0|7.1000000000103345|
-+----+----+------------------+
-
-```
-<!-- {"left" : 0.85, "top" : 6.37, "height" : 4.94, "width" : 8.28} -->
-
-
-Notes:
 
 ---
 
@@ -378,24 +132,17 @@ Notes:
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 12.68, "top" : 1.89, "height" : 5.68, "width" : 4.27} -->
 
- *  **Overview:**
+* **Overview:**
     - Practice Linear Regressions
 
- *  **Approximate Time:**
+* **Approximate Time:**
     - 30 mins
 
- *  **Instructions:**
+* **Instructions:**
      - Instructor: Please demo this lab
      - LR-1: Bill and Tips data
 
-
 Notes:
-
----
-
-# Multiple Linear Regression
-
-[../generic/Regressions-Linear-Multi.md](../generic/Regressions-Linear-Multi.md)
 
 ---
 
@@ -403,9 +150,9 @@ Notes:
 
 ---
 
-## Task: Calculate House Prices
+## Predict House Prices
 
-| Sale Price $ | Bedrooms | Bathrooms | Sqft_Living | Sqft_Lot |
+| Sale Price   | Bedrooms | Bathrooms | Sqft_Living | Sqft_Lot |
 |--------------|----------|-----------|-------------|----------|
 | 280,000      | 6        | 3         | 2,400       | 9,373    |
 | 1,000,000    | 4        | 3.75      | 3,764       | 20,156   |
@@ -417,115 +164,46 @@ Notes:
 
 <!-- {"left" : 1.17, "top" : 2.5, "height" : 4.01, "width" : 15.15} -->
 
-  * Multiple factors decide house prices
+* Inputs: `Bedrooms, Bathrooms, Sqft_Living, Sqft_Lot`
 
-  * It is not a simple  Y ~ X any more
+* What we are predicting : `Sale_Price`
 
-  * We will use **multiple linear regression**
+<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:90%"/><!-- {"left" : 4.08, "top" : 2, "height" : 0.64, "width" : 9.34} -->
 
 Notes:
 
-
-
 ---
-
 
 ## Multiple Linear Regression in Spark
 
-
-  * __spark.ml.LinearRegression__ supports MLR out of the box
-
-  * When creating a featureVector, we will have multiple columns are input
-
-     - ["Bedrooms", "Bathrooms", "SqFtTotLiving", "SqFtLot"]
-
-     - Order doesn't matter
-
-Notes:
-
-
-
----
-
-## Multiple Linear Regression in Spark - Code (Python)
-
 ```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from pyspark.ml.regression import LinearRegression
 from pyspark.ml.feature import VectorAssembler
 
-housePrices = spark.read.csv("/data/house-prices/house-sales-full.csv", header=True, inferSchema=True)
-housePrices.show()
-## too many attributes / columns
+house_prices = spark.read.csv("house-sales.csv", header=True, inferSchema=True)
+house_prices.count() ## 27,063 observations
 
-## select a few attributes
-housePrices_compact = housePrices_compact.show()
-housePrices.select("SalePrice", "Bedrooms", "Bathrooms", "SqFtTotLiving", "SqFtLot")
-
-housePrices_compact.count() ## 27,063 observations
-
+# create feature vector with a few columns
+assembler = VectorAssembler(inputCols=["Bedrooms", "Bathrooms", "SqFtTotLiving", "SqFtLot"],
+                    outputCol="features")
+feature_vector = assembler.transform(house_prices)
+feature_vector = feature_vector.withColumnRenamed("SalePrice", "label")
+feature_vector.show();
 ```
 <!-- {"left" : 0.85, "top" : 2.5, "height" : 4.17, "width" : 15.95} -->
 
+```text
+# house-sales.csv
 
-Notes:
-
-
-
----
-
-## Multiple Linear Regression in Spark - Code (Python)
-
+| Sale Price $ | Bedrooms | Bathrooms | Sqft_Living | Sqft_Lot |
+|--------------|----------|-----------|-------------|----------|
+| 280,000      | 6        | 3         | 2,400       | 9,373    |
+| 1,000,000    | 4        | 3.75      | 3,764       | 20,156   |
+| 745,000      | 4        | 1.75      | 2.06        | 26,036   |
+```
 
 ```text
-Row count = 27063
+# feature vector
 
-
-+---------+--------+---------+-------------+-------+
-|SalePrice|Bedrooms|Bathrooms|SqFtTotLiving|SqFtLot|
-+---------+--------+---------+-------------+-------+
-|   280000|       6|      3.0|         2400|   9373|
-|  1000000|       4|     3.75|         3764|  20156|
-|   745000|       4|     1.75|         2060|  26036|
-|   425000|       5|     3.75|         3200|   8618|
-|   240000|       4|     1.75|         1720|   8620|
-|   349900|       2|      1.5|          930|   1012|
-|   327500|       3|      1.5|         1750|  34465|
-|   347000|       4|     1.75|         1860|  14659|
-|   220400|       2|      1.0|          990|   5324|
-|   437500|       4|      2.0|         1980|  10585|
-|   150000|       2|      1.0|          840|  12750|
-|   300000|       3|      1.0|         1750|   5200|
-+---------+--------+---------+-------------+-------+
-
-```
-<!-- {"left" : 0.85, "top" : 2.43, "height" : 7.52, "width" : 12.2} -->
-
-Notes:
-
-
-
----
-
-## Multiple Linear Regression in Spark - Code (Python)
-
-```python
-assembler = VectorAssembler(inputCols=["Bedrooms", "Bathrooms",
-                    "SqFtTotLiving", "SqFtLot"],
-                    outputCol="features")
-
-featureVector = assembler.transform(housePrices_compact)
-featureVector = featureVector.withColumnRenamed("SalePrice", "label")
-# display 10 rows and all column data without truncating
-featureVector.show(10,False)
-
-```
-<!-- {"left" : 0.85, "top" : 2.49, "height" : 2.98, "width" : 14.02} -->
-
-
-```text
 +-------+--------+---------+-------------+-------+-------------------------+
 |label  |Bedrooms|Bathrooms|SqFtTotLiving|SqFtLot|features                 |
 +-------+--------+---------+-------------+-------+-------------------------+
@@ -534,67 +212,76 @@ featureVector.show(10,False)
 |745000 |4       |1.75     |2060         |26036  |[4.0,1.75,2060.0,26036.0]|
 |425000 |5       |3.75     |3200         |8618   |[5.0,3.75,3200.0,8618.0] |
 |240000 |4       |1.75     |1720         |8620   |[4.0,1.75,1720.0,8620.0] |
-|349900 |2       |1.5      |930          |1012   |[2.0,1.5,930.0,1012.0]   |
-|327500 |3       |1.5      |1750         |34465  |[3.0,1.5,1750.0,34465.0] |
-|347000 |4       |1.75     |1860         |14659  |[4.0,1.75,1860.0,14659.0]|
-|220400 |2       |1.0      |990          |5324   |[2.0,1.0,990.0,5324.0]   |
-|437500 |4       |2.0      |1980         |10585  |[4.0,2.0,1980.0,10585.0] |
 +-------+--------+---------+-------------+-------+-------------------------+
-only showing top 10 rows
-
 ```
-<!-- {"left" : 0.85, "top" : 5.84, "height" : 4.51, "width" : 13.06} -->
 
 Notes:
 
-
-
 ---
 
-## Multiple Linear Regression in Spark - Code (Python)
-
+## Multiple Linear Regression in Spark
 
 ```python
-lr = LinearRegression(maxIter=10, regParam=0.3, elasticNetParam=0.8)
-lrModel = lr.fit(featureVector)
+from pyspark.ml.regression import LinearRegression
+
+# split data into train/test
+(train_data, test_data) = feature_vector.randomSplit([0.8, 0.2], seed=1)
+
+lr = LinearRegression()
+
+lr_model = lr.fit(train_data)   # training
+
 print("Coefficents:" + str(lrModel.coefficients))
 print("Intercept: " + str(lrModel.intercept))
-print("RMSE: %f" % lrModel.summary.rootMeanSquaredError)
-print("r2: %f" % lrModel.summary.r2)
-print("numIterations: %d" % lrModel.summary.totalIterations)
-print("objectiveHistory: %s" % str(lrModel.summary.objectiveHistory))
 ```
 <!-- {"left" : 0.85, "top" : 1.76, "height" : 2.53, "width" : 11.89} -->
 
 ```text
 Coefficents:[-69405.457812,25714.1481078,274.458312769,-0.0]
 Intercept: 105562.58117252712
-
-RMSE: 246442.225880
-r2: 0.483214
-
-numIterations: 11
-objectiveHistory: [0.5000000000000002, 0.4565457266170319, 0.3376986997173243,
-0.30010335871879656, 0.2852977093323423, 0.27654782886180707, 0.2701349132960898,
-0.26332624819112604, 0.26138384191458414, 0.25967594157902535, 0.25839392000729794]
-
 ```
 <!-- {"left" : 0.85, "top" : 4.35, "height" : 3.05, "width" : 13.96} -->
 
-
 <br/>
 
- *  **Question for the class:**
+Notes:
+
+---
+
+## Evaluating the Regression Model
+
+<img src="../../assets/images/formulas-equations/RMSE-1.png" style="width:40%;float:right;"/><!-- {"left" : 2.65, "top" : 6.93, "height" : 1.1, "width" : 5.04} -->
+
+<img src="../../assets/images/formulas-equations/R2-1.png" style="width:40%;float:right;clear:both;"/><!-- {"left" : 9.27, "top" : 6.59, "height" : 1.75, "width" : 5.58} -->
+
+* We will use the following metrics
+
+* **Root Mean Squared Error (RMSE)**
+    - Average error the model makes per prediction
+
+* **Coefficient of Determination (R<sup>2</sup>)**
+    * R<sup>2</sup> ranges from 0 to 1.0
+    * Measures how well the model fits the data
+    * 1.0 is a perfet fit
+
+```python
+print("RMSE: %f" % lrModel.summary.rootMeanSquaredError)
+print("r2: %f" % lrModel.summary.r2)
+```
+
+```text
+RMSE: 246442.225880
+r2: 0.483214
+```
+
+* **Question for the class:**
     - Is this model a good fit? Explain!
 
 Notes:
 
-
-
 ---
 
-### Multiple Linear Regression in Spark - Code (Python) - Let's Do Some Predictions
-
+### Let's Do Some Predictions
 
 ```python
 new_data = pd.DataFrame({'Bedrooms' : [5,3,2],
@@ -639,7 +326,132 @@ predicted_prices.show(10, False)
 
 Notes:
 
+---
 
+## Class Discussion: Why is the Accuracy Low?
+
+* **R<sup>2</sup> is 0.4835** - not a great fit
+
+* **Question for class:** Why is R<sup>2</sup>  not close to 1?  (as in why is it not a great fit?)
+
+    - Can you guys come up with some reasons
+
+    - Hint: Look at Sale date in the dataset?  Think about what happened in that time frame
+
+* Answers are in next slide
+
+Notes:
+
+---
+
+## Why is the Accuracy Low?
+
+<img src="../../assets/images/machine-learning/3rd-party/Case-Shiller-Index3.png" style="width:50%;float:right;"/><!-- {"left" : 4.06, "top" : 2.22, "height" : 0.64, "width" : 9.38} -->
+
+* May be we are not using enough features / inputs.
+    - The original dataset has features like 'Year Built' ,  'Traffic Noise' ..etc.
+
+* Not enough data?
+
+* Outliers? (remember the house with 33 bedrooms?)
+
+* Data is skewed?
+    - The sales happen the in the span of year 2006 and 2014.
+    - We went through a crash in 2008
+    - So the we probably have inconsistent data
+
+* Wrong algorithm?
+
+Notes:
+
+---
+
+## Adding More Variables
+
+* Let's add a column called __LandVal__
+
+* This gives us __R<sup>2</sup> = 76%__  (yay!)
+
+```python
+from pyspark.ml.feature import VectorAssembler
+from pyspark.ml.regression import LinearRegression
+
+house_prices = spark.read.csv("house-sales.csv", header=True, inferSchema=True)
+house_prices.count() ## 27,063 observations
+
+# Adding 'LandVal' 
+assembler = VectorAssembler(inputCols=["Bedrooms", "Bathrooms", "SqFtTotLiving", "SqFtLot", "LandVal"],
+                            outputCol="features")
+feature_vector = assembler.transform(house_prices)
+feature_vector = feature_vector.withColumnRenamed("SalePrice", "label")
+
+# split data into train/test
+(train_data, test_data) = feature_vector.randomSplit([0.8, 0.2], seed=1)
+
+lr = LinearRegression()
+
+lr_model = lr.fit(train_data)   # training
+
+## Print out model metrics
+print("r2: %f" % lrModel.Summary.r2) # r2: 0.78
+```
+
+<!-- {"left" : 0.85, "top" : 4.09, "height" : 6.37, "width" : 13.44} -->
+
+---
+
+## Deciding Important Variables
+
+<img src="../../assets/images/formulas-equations/linear-regression-2.png" style="width:50%"/><!-- {"left" : 4.06, "top" : 2.22, "height" : 0.64, "width" : 9.38} -->
+
+* In Multiple Linear Regressions many variables/predictors determine the value of response
+
+* How can we know which ones are important?
+
+* For two predictors `X1` & `X2` --> p = 2 --> 2<sup>2</sup> = 4
+
+* For 10 variables, p = 10 --> 2<sup>10</sup> --> 1024 combinations
+
+* For 20 variables, p = 20 --> 2<sup>20</sup> --> 1,048,576 (1 million+) combinations
+
+Notes:
+
+---
+
+## Deciding Important Variables
+
+* Some algorithms to decide important variables quickly
+    - Mallow's Cp
+    - Akaike Information Criterion (AIC)
+    - Bayesian Information Criterion  (BIC)
+    - Stepwise Regression
+
+* Also Lasso Regularization can be used for variable selection as well (more on this later)
+
+* Also **`Decision Tree`** and **`Random Forest`** algorithms can determine feature importance
+
+* Reference : See "An introduction to Statistical Learning"  Chapter 3
+
+Notes:
+
+---
+
+## Linear Regression: Strengths, Weaknesses, and Parameters
+
+* **Strengths**
+    - Relatively simple to understand
+    - Computationally simple, very fast learners
+    - Very scalable to large data sets
+
+* **Weaknesses**
+    - Will perform poorly if the inputs are not aligned along linear boundary
+    - Can under-fit data
+
+* **Parameters**
+    - Use regularization to minimize overfitting
+    - Lasso regularization can also do variable selection
+
+Notes:
 
 ---
 
@@ -647,30 +459,45 @@ Notes:
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 12.47, "top" : 1.89, "height" : 5.97, "width" : 4.48} -->
 
- *  **Overview:**
+* **Overview:**
     - Practice Multiple Linear Regressions
 
- *  **Approximate Time:**
+* **Approximate Time:**
     - 30 mins
 
- *  **Instructions:**
-    - LR-2: House prices
-    - BONUS Lab: LR-3: AIC
+* **Instructions:**
+    - **LR-2: House prices**
 
 Notes:
 
 ---
 
+## Bonus Lab: AIC
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:30%;float:right;" /><!-- {"left" : 12.47, "top" : 1.89, "height" : 5.7, "width" : 4.28} -->
+
+* **Overview:**
+    - Automatic feature selection using AIC
+
+* **Approximate Time:**
+    - 30 mins
+
+* **Instructions:**
+    - **BONUS Lab: LR-3: AIC**
+
+Notes:
+
+---
 
 # Regularization
 
 [../generic/ML-Concepts-Regularization.md](../generic/ML-Concepts-Regularization.md)
 
 ---
+
 ## Review and Q&A
 
 <img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.28, "top" : 1.89, "height" : 2.71, "width" : 3.67} -->
-
 
 - Let's go over what we have covered so far
 

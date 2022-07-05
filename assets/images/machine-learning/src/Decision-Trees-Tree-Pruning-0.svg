@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-822 -186 1993 1056" width="1993" height="1056">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="37" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-17 09:24:43 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_17">
+        <path d="M -14.272784 344.55975 L -14.115506 91.9091 C -14.11207 86.39057 -9.638869 81.91799 -4.1203395 81.91532 L 487.2285 81.67791 C 492.75134 81.67524 497.23066 86.15023 497.2333 91.67308 C 497.2333 91.67459 497.2333 91.6761 497.2333 91.67761 L 497.24085 344.39045" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_16">
+        <title>Line</title>
+        <path d="M -124.46883 442.66955 L -124.63011 354.53264 C -124.64022 349.0098 -120.17127 344.52446 -114.64843 344.51436 C -114.64583 344.51435 -114.64323 344.51435 -114.64064 344.51435 L 100.49158 344.2883 C 106.01443 344.2825 110.49628 348.75495 110.50208 354.2778 C 110.50209 354.28193 110.50209 354.28606 110.50209 354.2902 L 110.48549 442.2244" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(214.62338 -183.76082)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#320073" x="0" y="50">Thal:a</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(629.3391 289.28716)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="37" font-weight="700" fill="#320073" x="0" y="37">Ca &lt;   0.5</tspan>
+        </text>
+      </g>
+      <g id="Line_48">
+        <path d="M -166.61756 498.15107 L -166.76313 455.3553 C -166.78192 449.83247 -162.32002 445.3401 -156.7972 445.3213 C -156.79567 445.3213 -156.79414 445.3213 -156.79261 445.3213 L -92.84748 445.1332 C -87.32466 445.11694 -82.83435 449.5809 -82.81811 455.1037 C -82.81807 455.1147 -82.81806 455.1257 -82.81806 455.13666 L -82.83303 497.7059" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_50">
+        <path d="M 47.930245 519.251 L 47.71296 452.35856 C 47.69502 446.83574 52.157603 442.34407 57.68042 442.3261 C 57.6842 442.3261 57.687976 442.3261 57.69175 442.3261 L 154.46714 442.1214 C 159.98997 442.1097 164.47658 446.5774 164.48827 452.10023 C 164.48828 452.1084 164.48829 452.11656 164.48829 452.12473 L 164.46593 518.8058" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_51">
+        <path d="M 331.5831 421.42477 L 331.3688 354.54562 C 331.3511 349.0228 335.8139 344.53133 341.33672 344.51364 C 341.34492 344.5136 341.35312 344.5136 341.36133 344.5136 L 653.678 344.2814 C 659.2009 344.2773 663.68134 348.75113 663.68545 354.27397 C 663.68545 354.27755 663.68545 354.28114 663.68545 354.2847 L 663.6634 420.9796" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_52">
+        <path d="M 241.3122 69.3436 C 241.3122 69.3436 241.69763 97.519 241.50491 98.03291" stroke="#362583" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_55">
+        <ellipse cx="-758.5591" cy="835.4815" rx="54.3845422890243" ry="32.5185922965301" fill="white"/>
+        <ellipse cx="-758.5591" cy="835.4815" rx="54.3845422890243" ry="32.5185922965301" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_57">
+        <text transform="translate(-242.74831 289.28716)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="37" font-weight="700" fill="#320073" x="0" y="37">Ca &lt;   0.5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_58">
+        <text transform="translate(-474.71844 467.942)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">MaxHR &lt;   161.5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_59">
+        <text transform="translate(-37.89269 467.942)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">ChestPoint:bc</tspan>
+        </text>
+      </g>
+      <g id="Graphic_61">
+        <text transform="translate(-779.2573 816.9815)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Line_67">
+        <path d="M 256.3846 474.46364 L 256.18503 431.69334 C 256.15925 426.17055 260.61547 421.67255 266.13825 421.6468 C 266.14828 421.64673 266.1583 421.6467 266.16834 421.6467 L 395.16884 421.43285 C 400.6917 421.4237 405.17625 425.8934 405.1854 431.41626 C 405.1854 431.4234 405.1854 431.43053 405.1854 431.43766 L 405.16488 474.01847" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_68">
+        <path d="M 221.38446 531.8309 L 221.23628 484.68904 C 221.21893 479.1676 225.6798 474.677 231.2012 474.65767 L 281.70867 474.48076 C 287.2315 474.4614 291.7243 478.92286 291.74363 484.4457 C 291.74368 484.45844 291.7437 484.4712 291.7437 484.48395 L 291.72846 531.38575" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_69">
+        <path d="M 365.27396 550.474 L 365.1177 483.5642 C 365.1048 478.04374 369.5678 473.55714 375.08825 473.5409 L 439.04515 473.35274 C 444.56797 473.3365 449.0583 477.80045 449.0745 483.3233 C 449.07456 483.3339 449.07457 483.3445 449.07457 483.3551 L 449.0585 550.02886" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_70">
+        <path d="M 139.59504 547.0457 L 139.46381 529.5017 C 139.4225 523.979 143.86604 519.4685 149.38873 519.4272 C 149.39717 519.42713 149.40561 519.4271 149.41405 519.42704 L 179.26458 519.27933 C 184.78736 519.252 189.28662 523.70695 189.31394 529.2297 C 189.31404 529.24867 189.31408 529.2676 189.31406 529.28655 L 189.3002 548.1818" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_71">
+        <path d="M 15.149775 547.0449 L 15.011466 529.5189 C 14.967883 523.99624 19.409565 519.4839 24.93224 519.4403 C 24.94667 519.4402 24.961103 519.4401 24.975534 519.44006 L 74.25175 519.26454 C 79.77456 519.24487 84.26763 523.70604 84.28731 529.22886 C 84.28736 529.24346 84.28738 529.25806 84.28737 529.27266 L 84.27318 546.59973" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_72">
+        <path d="M -230.87138 526.7637 L -230.9856 509.23285 C -231.02157 503.7101 -226.57368 499.2039 -221.05095 499.1679 C -221.03816 499.16783 -221.02538 499.1678 -221.0126 499.16774 L -148.87949 498.97445 C -143.35666 498.95965 -138.86753 503.4248 -138.85273 508.9476 C -138.8527 508.9588 -138.85269 508.97 -138.8527 508.9812 L -138.8644 526.31854" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_73">
+        <path d="M -277.6366 555.37634 L -277.7508 537.8455 C -277.78677 532.32275 -273.33888 527.8165 -267.81615 527.78055 C -267.80336 527.7805 -267.79058 527.7804 -267.7778 527.7804 L -195.64469 527.5871 C -190.12186 527.5723 -185.63273 532.0374 -185.61793 537.56026 C -185.6179 537.57144 -185.61789 537.5826 -185.6179 537.5938 L -185.6296 554.9312" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_74">
+        <path d="M -324.40173 583.989 L -324.51594 566.4581 C -324.5519 560.9354 -320.10402 556.4292 -314.5813 556.3932 C -314.5685 556.3931 -314.55573 556.39305 -314.54294 556.393 L -242.40983 556.1997 C -236.887 556.1849 -232.39787 560.65007 -232.38307 566.1729 C -232.38304 566.1841 -232.38303 566.19526 -232.38304 566.20645 L -232.39475 583.5438" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_75">
+        <path d="M 423.32676 602.65375 L 423.18267 562.1154 C 423.16305 556.59556 427.61963 552.1038 433.13946 552.07995 L 470.36 551.91935 C 475.8828 551.8955 480.3792 556.3533 480.40306 561.8761 C 480.4031 561.8917 480.40316 561.9073 480.40315 561.9229 L 480.38835 602.2086" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_76">
+        <path d="M 590.4214 474.46364 L 590.2218 431.69334 C 590.196 426.17055 594.6522 421.67255 600.175 421.6468 C 600.18504 421.64673 600.1951 421.6467 600.2051 421.6467 L 729.2056 421.43285 C 734.7284 421.4237 739.213 425.8934 739.2222 431.41626 C 739.2222 431.4234 739.2222 431.43053 739.2222 431.43766 L 739.2016 474.01847" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_77">
+        <path d="M 563.1235 526.7637 L 562.9794 486.22536 C 562.9598 480.7055 567.4164 476.21373 572.9362 476.1899 L 610.15676 476.0293 C 615.67956 476.0055 620.176 480.46327 620.1998 485.98606 C 620.1999 486.0017 620.1999 486.0173 620.1999 486.0329 L 620.1851 526.31854" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_78">
+        <text transform="translate(326.8728 434.61325)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Slope &lt;   1.5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_79">
+        <text transform="translate(855.0634 434.61325)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Oldpeak &lt;   1.1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80">
+        <text transform="translate(781.596 528.98044)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">RestECG &lt;   1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_81">
+        <text transform="translate(499.5746 522.2637)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Thal: b</tspan>
+        </text>
+      </g>
+      <g id="Graphic_83">
+        <text transform="translate(218.52367 522.2637)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Age &lt;   52</tspan>
+        </text>
+      </g>
+      <g id="Graphic_85">
+        <text transform="translate(-540.4455 566.9213)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">RestBP &lt;   157</tspan>
+        </text>
+      </g>
+      <g id="Graphic_86">
+        <text transform="translate(-629.73494 615.7169)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Chol &lt;   224</tspan>
+        </text>
+      </g>
+      <g id="Graphic_87">
+        <text transform="translate(-737.0683 663.5071)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">MaxHR &lt;   156</tspan>
+        </text>
+      </g>
+      <g id="Graphic_88">
+        <text transform="translate(-821.0801 712.4864)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">MaxHR &lt;   145.5</tspan>
+        </text>
+      </g>
+      <g id="Line_89">
+        <path d="M -372.1947 612.6016 L -372.3089 595.07076 C -372.34487 589.548 -367.89697 585.0418 -362.37424 585.0058 C -362.36146 585.00574 -362.3487 585.0057 -362.3359 585.00565 L -290.2028 584.81236 C -284.67996 584.79756 -280.19082 589.2627 -280.17602 594.7855 C -280.176 594.7967 -280.17598 594.8079 -280.176 594.8191 L -280.1877 612.15645" stroke="#340083" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_91">
+        <ellipse cx="-598.9437" cy="835.4815" rx="54.3845422890243" ry="32.5185922965301" fill="white"/>
+        <ellipse cx="-598.9437" cy="835.4815" rx="54.3845422890243" ry="32.5185922965301" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_90">
+        <text transform="translate(-624.4466 816.9815)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Yes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_93">
+        <ellipse cx="-519.3523" cy="782.0356" rx="54.3845422890243" ry="32.5185922965301" fill="white"/>
+        <ellipse cx="-519.3523" cy="782.0356" rx="54.3845422890243" ry="32.5185922965301" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_92">
+        <text transform="translate(-540.05055 763.5356)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Graphic_95">
+        <ellipse cx="-441.4758" cy="727.17714" rx="54.3845422890244" ry="32.5185922965301" fill="white"/>
+        <ellipse cx="-441.4758" cy="727.17714" rx="54.3845422890244" ry="32.5185922965301" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_94">
+        <text transform="translate(-462.17406 708.67714)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Graphic_97">
+        <ellipse cx="-360.424" cy="674.8896" rx="54.3845422890243" ry="32.5185922965302" fill="white"/>
+        <ellipse cx="-360.424" cy="674.8896" rx="54.3845422890243" ry="32.5185922965302" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_96">
+        <text transform="translate(-385.92694 656.3896)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Yes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_99">
+        <ellipse cx="-266.1422" cy="620.9237" rx="54.3845422890244" ry="32.5185922965301" fill="white"/>
+        <ellipse cx="-266.1422" cy="620.9237" rx="54.3845422890244" ry="32.5185922965301" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_98">
+        <text transform="translate(-286.84045 602.4237)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Graphic_107">
+        <ellipse cx="114.2528" cy="719.13315" rx="36.8227106025845" ry="24.4745892088924" fill="white"/>
+        <ellipse cx="114.2528" cy="719.13315" rx="36.8227106025845" ry="24.4745892088924" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_106">
+        <text transform="translate(93.55456 700.63315)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Graphic_109">
+        <ellipse cx="17.16883" cy="718.0017" rx="36.8227106025845" ry="24.4745892088925" fill="white"/>
+        <ellipse cx="17.16883" cy="718.0017" rx="36.8227106025845" ry="24.4745892088925" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_108">
+        <text transform="translate(-3.5294114 699.5017)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <ellipse cx="-98.65511" cy="719.13315" rx="36.8227106025845" ry="24.4745892088924" fill="white"/>
+        <ellipse cx="-98.65511" cy="719.13315" rx="36.8227106025845" ry="24.4745892088924" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_110">
+        <text transform="translate(-119.35335 700.63315)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <ellipse cx="197.34268" cy="719.13315" rx="36.8227106025845" ry="24.4745892088924" fill="white"/>
+        <ellipse cx="197.34268" cy="719.13315" rx="36.8227106025845" ry="24.4745892088924" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_112">
+        <text transform="translate(171.83975 700.63315)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Yes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_115">
+        <ellipse cx="249.73463" cy="667.7344" rx="36.8227106025845" ry="24.4745892088925" fill="white"/>
+        <ellipse cx="249.73463" cy="667.7344" rx="36.8227106025845" ry="24.4745892088925" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_114">
+        <text transform="translate(224.2317 649.2344)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Yes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_117">
+        <ellipse cx="371.39412" cy="667.7344" rx="36.8227106025845" ry="24.4745892088925" fill="white"/>
+        <ellipse cx="371.39412" cy="667.7344" rx="36.8227106025845" ry="24.4745892088925" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_116">
+        <text transform="translate(350.6959 649.2344)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Graphic_119">
+        <ellipse cx="495.9953" cy="709.076" rx="36.8227106025846" ry="24.4745892088925" fill="white"/>
+        <ellipse cx="495.9953" cy="709.076" rx="36.8227106025846" ry="24.4745892088925" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_118">
+        <text transform="translate(475.29707 690.576)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Graphic_121">
+        <ellipse cx="595.2995" cy="805.4647" rx="36.8227106025845" ry="24.4745892088926" fill="white"/>
+        <ellipse cx="595.2995" cy="805.4647" rx="36.8227106025845" ry="24.4745892088926" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_120">
+        <text transform="translate(574.60125 786.9647)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">No</tspan>
+        </text>
+      </g>
+      <g id="Graphic_123">
+        <ellipse cx="692.8544" cy="809.1612" rx="36.8227106025844" ry="24.4745892088925" fill="white"/>
+        <ellipse cx="692.8544" cy="809.1612" rx="36.8227106025844" ry="24.4745892088925" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_122">
+        <text transform="translate(667.3515 790.6612)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Yes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_125">
+        <ellipse cx="930.2829" cy="675.1448" rx="36.8227106025844" ry="24.4745892088925" fill="white"/>
+        <ellipse cx="930.2829" cy="675.1448" rx="36.8227106025844" ry="24.4745892088925" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_124">
+        <text transform="translate(904.78 656.6448)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Yes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_127">
+        <ellipse cx="834.0736" cy="677.7269" rx="36.8227106025845" ry="24.4745892088925" fill="white"/>
+        <ellipse cx="834.0736" cy="677.7269" rx="36.8227106025845" ry="24.4745892088925" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_126">
+        <text transform="translate(808.5707 659.2269)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Yes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_129">
+        <ellipse cx="1132.3225" cy="590.4201" rx="36.8227106025845" ry="24.4745892088925" fill="white"/>
+        <ellipse cx="1132.3225" cy="590.4201" rx="36.8227106025845" ry="24.4745892088925" stroke="#962031" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_128">
+        <text transform="translate(1106.8196 571.9201)" fill="#320073">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="700" fill="#320073" x="0" y="30">Yes</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

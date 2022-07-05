@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-1071 -535 3005 1807" width="3005" height="1807">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="33" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="30" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-17 09:03:15 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Line_4">
+        <path d="M 637.84894 301.68015 L 826.5538 -317.54116 C 827.1952 -319.6456 829.1367 -321.0836 831.3367 -321.0836 L 974.2492 -321.0836 C 976.6039 -321.0836 978.6395 -322.7266 979.1365 -325.0283 L 1012.1722 -478.0226 C 1012.6713 -480.33403 1014.7214 -481.97975 1017.0861 -481.96724 L 1243.7093 -480.7679" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_5">
+        <path d="M 457.94023 298.52386 L 288.35038 -238.43105 C 287.69088 -240.51917 285.74936 -241.93518 283.5596 -241.92514 L 46.46932 -240.8378 C 44.192953 -240.82735 42.19687 -242.35585 41.613413 -244.5562 L 20.197771 -325.31924 C 19.618241 -327.50478 17.644119 -329.0294 15.383069 -329.03767 L -496.95954 -330.91004" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_6">
+        <path d="M 392.3276 317.6529 L 306.29388 44.07409 C 305.63278 41.971844 303.67327 40.550314 301.46966 40.57434 L 111.52032 42.64531 C 109.07562 42.671963 106.97016 40.92683 106.5428 38.51963 L 81.834 -100.65503 C 81.41331 -103.02457 79.3643 -104.75825 76.95782 -104.78079 L -176.84335 -107.15845" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_7">
+        <path d="M 709.7742 319.5658 L 790.7295 61.75311 C 791.3839 59.66905 793.3155 58.25104 795.4999 58.25104 L 1040.9758 58.25104 C 1043.3358 58.25104 1045.3745 56.6008 1045.8661 54.2925 L 1084.8507 -128.76612 C 1085.3439 -131.08212 1087.3941 -132.73456 1089.762 -132.72462 L 1700.2658 -130.16146 C 1700.484 -130.16055 1700.6602 -129.98291 1700.6592 -129.7647 C 1700.6584 -129.57016 1700.5161 -129.40516 1700.3238 -129.37579 L 1700.3238 -129.37579" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_8">
+        <path d="M 319.06333 383.74377 L 287.44713 332.1613 C 286.5314 330.66725 284.90033 329.76164 283.14802 329.7743 L 23.084984 331.6541 C 21.132398 331.66822 19.350247 330.54438 18.521513 328.77633 L -12.963102 261.60612 C -13.784093 259.8546 -15.54174 258.73377 -17.476123 258.72823 L -552.764 257.19614" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_9">
+        <path d="M 326.5339 447.8671 L 291.11216 555.2468 C 290.43572 557.2974 288.51933 558.6821 286.36005 558.68046 L 36.325335 558.491 C 34.554867 558.4897 32.917117 557.55216 32.019453 556.02613 L -16.815556 473.00673 C -17.713905 471.47954 -19.353405 470.54183 -21.125225 470.54183 L -387.14493 470.54183 L -387.14493 470.54183" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_10">
+        <path d="M 397.3968 472.5982 L 300.03544 774.4497 C 299.375 776.4972 297.47885 777.8927 295.32755 777.9146 L 66.42565 780.2359 C 64.39629 780.2565 62.555794 779.0483 61.76752 777.1782 L 25.004613 689.9609 C 24.223507 688.1078 22.4082 686.903 20.39719 686.903 L -150.275 686.903" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_11">
+        <path d="M 451.62764 481.58886 L 284.71655 1019.8548 C 284.06708 1021.9493 282.1287 1023.3761 279.93584 1023.3739 L 101.99953 1023.1945 C 99.84277 1023.1923 97.93046 1021.8074 97.25563 1019.759 L 58.21439 901.2493 C 57.53816 899.1967 55.619616 897.8108 53.458406 897.8138 L -224.92248 898.206" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_12">
+        <path d="M 618.9112 478.43257 L 797.8293 1181.4729 C 798.3932 1183.6887 800.38835 1185.2397 802.6748 1185.2397 L 1002.5041 1185.2397 C 1004.7333 1185.2397 1006.6932 1183.764 1007.3094 1181.6217 L 1029.1336 1105.7356 C 1029.7482 1103.5988 1031.6999 1102.1245 1033.9233 1102.1176 L 1192.6837 1101.6249" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_13">
+        <path d="M 672.5682 478.43257 L 802.1299 971.5905 C 802.7089 973.7945 804.705 975.3282 806.9838 975.32 L 1054.3298 974.4317 C 1056.5029 974.4238 1058.4222 973.0132 1059.0784 970.9415 L 1081.3872 900.5123 C 1082.0423 898.4443 1083.956 897.0346 1086.1252 897.0222 L 1516.8687 894.5585" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_14">
+        <path d="M 757.1186 457.3906 L 786.5759 561.7707 C 787.1875 563.93795 789.1724 565.4289 791.4242 565.4126 L 1195.1873 562.4853 C 1197.7378 562.4668 1199.8656 560.5315 1200.1251 557.9941 L 1228.642 279.13777 C 1228.903 276.58476 1231.0545 274.64395 1233.6209 274.64643 L 1785.759 275.1808" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_15">
+        <line x1="1005.2415" y1="-422.46314" x2="1777.532" y2="-422.5935" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_16">
+        <line x1="989.6823" y1="-359.71265" x2="1495.8056" y2="-359.843" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_17">
+        <line x1="989.6823" y1="-296.96216" x2="1397.0526" y2="-297.0925" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_18">
+        <path d="M 841.9571 -321.41603 L 974.7575 -320.90987 C 977.0535 -320.90112 979.0485 -319.3298 979.5948 -317.09976 L 1012.4787 -182.88422 C 1013.0252 -180.65354 1015.0211 -179.08204 1017.3177 -179.0741 L 1366.4095 -177.86681" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_20">
+        <line x1="1005.2415" y1="-234.21167" x2="1420.3455" y2="-234.342" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_29">
+        <line x1="1076.5574" y1="-73.84537" x2="1524.2006" y2="-73.97571" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_30">
+        <line x1="1064.4759" y1="-23.453323" x2="1287.1119" y2="-23.58366" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_32">
+        <path d="M 909.2901 58.23895 L 1041.9598 58.74461 C 1044.3157 58.75359 1046.3458 60.40599 1046.8327 62.71108 L 1079.9069 219.26768 C 1080.394 221.57341 1082.425 223.226 1084.7816 223.23416 L 1433.7426 224.441" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_33">
+        <line x1="1055.4148" y1="26.938728" x2="1291.6424" y2="26.808392" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_34">
+        <line x1="1052.3944" y1="77.33078" x2="1833.8" y2="77.20044" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_35">
+        <line x1="1064.4759" y1="127.72283" x2="1356.5805" y2="127.5925" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_36">
+        <line x1="1075.0472" y1="178.11488" x2="1481.9261" y2="177.98455" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_46">
+        <path d="M 1064.4759 563.2901 L 1196.763 563.7943 C 1199.2876 563.8039 1201.4089 565.694 1201.7086 568.2007 L 1235.4021 850.0152 C 1235.7021 852.5244 1237.8273 854.4154 1240.3545 854.4216 L 1732.1434 855.6315" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_47">
+        <line x1="1224.7641" y1="333.3734" x2="1809.7987" y2="333.2431" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_48">
+        <line x1="1218.6069" y1="387.0304" x2="1510.7115" y2="386.90006" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_49">
+        <line x1="1214.7338" y1="438.66736" x2="1685.1906" y2="438.537" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_50">
+        <line x1="1207.8688" y1="489.26403" x2="1526.9965" y2="489.1337" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_51">
+        <line x1="1206.7879" y1="534.4561" x2="1844.7876" y2="534.32576" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_52">
+        <line x1="1207.8688" y1="588.29554" x2="1879.3771" y2="588.1652" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_53">
+        <line x1="1214.7338" y1="642.135" x2="1761.936" y2="642.00465" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_54">
+        <line x1="1218.6069" y1="695.9744" x2="1789.5895" y2="695.8441" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_55">
+        <line x1="1225.1635" y1="749.8139" x2="1817.7646" y2="749.6835" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_56">
+        <line x1="1231.232" y1="803.6533" x2="1802.2146" y2="803.523" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_70">
+        <path d="M 1030.8254 974.3889 L 1054.7796 974.8436 C 1056.8797 974.8834 1058.731 976.2317 1059.4135 978.2183 L 1084.2766 1050.5974 C 1084.9691 1052.6135 1086.8637 1053.9688 1088.9954 1053.973 L 1698.493 1055.1867" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_71">
+        <line x1="1068.683" y1="952.0069" x2="1639.6655" y2="951.8765" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_72">
+        <line x1="1071.7179" y1="1004.5276" x2="1642.7004" y2="1004.3973" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_82">
+        <path d="M 978.7286 1185.6402 L 1002.6447 1186.0942 C 1004.7635 1186.1344 1006.6269 1187.506 1007.2949 1189.5171 L 1032.2019 1264.4983 C 1032.8798 1266.539 1034.7866 1267.9178 1036.937 1267.9221 L 1646.396 1269.1357" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_81">
+        <line x1="1015.026" y1="1156.724" x2="1586.0085" y2="1156.5937" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_80">
+        <line x1="1020.0612" y1="1220.7337" x2="1591.0437" y2="1220.6033" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_88">
+        <line x1="-572.5895" y1="-58.00693" x2="87.65262" y2="-58.13727" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_87">
+        <line x1="-560.2071" y1="-211.08715" x2="34.535212" y2="-211.21749" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_86">
+        <line x1="-415.3236" y1="-269.47857" x2="34.535212" y2="-269.6089" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_89">
+        <path d="M 73.91228 -240.55245 L 48.94516 -239.27736 C 46.887316 -239.17227 45.10468 -237.81554 44.45512 -235.86007 L 19.510652 -160.76606 C 18.83276 -158.7253 16.925948 -157.34655 14.775548 -157.34226 L -594.6835 -156.12863" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_95">
+        <line x1="-344.3999" y1="-6.076046" x2="95.30056" y2="-6.206383" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_96">
+        <line x1="-516.325" y1="43.14072" x2="107.61974" y2="43.010384" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_97">
+        <path d="M 121.27402 43.58622 L 114.1498 43.40236 C 111.85121 43.34304 109.80849 44.85903 109.19941 47.07625 L 68.30602 195.94092 C 67.71057 198.10853 65.74178 199.6123 63.493875 199.61646 L -592.5851 200.83023" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_98">
+        <line x1="-545.761" y1="147.15212" x2="78.18374" y2="147.02179" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_99">
+        <line x1="-355.22147" y1="95.14642" x2="95.30056" y2="95.01609" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_107">
+        <line x1="-444.7596" y1="303.38863" x2="5.7624194" y2="303.2583" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_108">
+        <line x1="-444.7596" y1="352.31118" x2="5.7624194" y2="352.18084" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_109">
+        <path d="M 29.221248 330.65744 L 21.46759 330.45733 C 19.47415 330.4059 17.640734 331.54386 16.802176 333.35308 L -14.744885 401.41705 C -15.561491 403.1789 -17.32437 404.3086 -19.266264 404.31443 L -421.9025 405.52566" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_116">
+        <line x1="-787.8562" y1="530.0486" x2="13.42666" y2="529.9183" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_119">
+        <line x1="-442.4892" y1="587.1394" x2="8.032841" y2="587.0091" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_118">
+        <path d="M 51.645673 558.5914 L 32.691143 558.0118 C 31.0363 557.9612 29.463708 558.7331 28.4914 560.0731 L -23.838196 632.1937 C -24.776085 633.4863 -26.275013 634.25314 -27.87202 634.2573 L -491.08034 635.4715" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_127">
+        <line x1="-294.80428" y1="740.0376" x2="44.67304" y2="739.9072" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_126">
+        <path d="M 83.89634 780.35 L 64.88868 779.9337 C 63.15825 779.8958 61.5313 780.7555 60.58765 782.2065 L 20.155414 844.3764 C 19.234063 845.7931 17.659434 846.6486 15.969487 846.6505 L -1067.6304 847.8682" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_128">
+        <line x1="-290.01912" y1="790.1344" x2="51.31397" y2="789.1238" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_132">
+        <path d="M 122.85289 1023.6546 L 104.82239 1023.2597 C 102.59535 1023.2109 100.60463 1024.6413 99.94038 1026.7675 L 58.729346 1158.6827 C 58.0781 1160.7673 56.1492 1162.188 53.96522 1162.1917 L -669.0032 1163.4063" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_134">
+        <line x1="-642.9196" y1="950.3371" x2="67.21307" y2="950.2068" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_133">
+        <line x1="-625.4075" y1="1000.9747" x2="88.60723" y2="999.9642" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_136">
+        <line x1="-624.8103" y1="1056.5362" x2="85.32242" y2="1056.4058" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_135">
+        <line x1="-643.661" y1="1110.7174" x2="70.35366" y2="1109.7069" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 744.5159 319.0728 C 851.3642 358.27595 851.3642 421.83677 744.5159 461.0399 C 637.6681 500.2433 464.4337 500.2433 357.58587 461.0399 C 250.7375 421.83677 250.7375 358.27595 357.58587 319.0728 C 464.4337 279.86944 637.6681 279.86944 744.5159 319.0728" fill="#ecdda4"/>
+        <path d="M 744.5159 319.0728 C 851.3642 358.27595 851.3642 421.83677 744.5159 461.0399 C 637.6681 500.2433 464.4337 500.2433 357.58587 461.0399 C 250.7375 421.83677 250.7375 358.27595 357.58587 319.0728 C 464.4337 279.86944 637.6681 279.86944 744.5159 319.0728" stroke="#2400ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_144">
+        <text transform="translate(322.8195 373.21265)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="33" font-weight="700" fill="#290071" x="0" y="33">Machine Learning Algorithms</tspan>
+        </text>
+      </g>
+      <g id="Graphic_63">
+        <text transform="translate(1264.6481 546.4807)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Partial Least Squares Discriminant Analysis</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(1041.5242 -530.40595)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Naive Bayes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(1055.109 -467.8635)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Averaged One-Dependence Estimators (AODE)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(1047.3136 -339.20625)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Bayesian Belief Network (BBN)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(1045.055 -227.59166)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Gaussian Naive Bayes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(1045.6202 -282.6391)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Multinomial Naive Bayes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(1045.2484 -404.29473)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Bayesian Network (BN)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(1111.284 -172.20109)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Classification and Regression Tree ( CART)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <text transform="translate(1105.5478 -112.73431)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="4.152832" y="30">Iterative Dichotomiser 3 (ID3) </tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(1096.0896 -67.75226)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">C4.5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <text transform="translate(1096.0896 -14.228565)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">C5.0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <text transform="translate(1116.36 34.726133)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Chi- squared Automatic Interaction Detection (CHAID)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(1101.1645 85.4146)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Decision Stump</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(1104.588 139.9147)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Conditional Decision Trees</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(1095.9191 186.41598)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">M5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_45">
+        <text transform="translate(810.3409 10.997689)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Decision Tree</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <text transform="translate(1262.9069 234.0618)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Principal Component Analysis (PCA)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_58">
+        <text transform="translate(1263.2674 290.45878)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Partial Least Squares Regression (PLSR)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_59">
+        <text transform="translate(1255.9275 346.306)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Sammon Mapping</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <text transform="translate(1260.587 397.94297)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Multidimensional Scaling (MDS)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_61">
+        <text transform="translate(1255.047 448.53964)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Projection Pursuit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_62">
+        <text transform="translate(1263.2558 492.72775)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Principal Component Regression (PCR)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_64">
+        <text transform="translate(1261.8423 598.80946)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Mixture Discriminant Analysis (MDA)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_65">
+        <text transform="translate(1263.366 650.8883)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Quadratic Discriminant Analysis (QDA)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_66">
+        <text transform="translate(1263.6728 702.9671)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Regularized Discriminant Analysis (RDA)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_67">
+        <text transform="translate(1261.2206 756.6241)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Flexible Discriminant Analysis (FDA)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <text transform="translate(1261.72 814.6351)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Linear Discriminant Analysis (LDA)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_69">
+        <text transform="translate(809.4676 517.2223)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Dimensionality Reduction</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <text transform="translate(1110.9699 857.5648)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">k-Nearest Neighbour (kNN)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <text transform="translate(1112.1926 958.6269)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Self-Organizing Map (SOM)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <text transform="translate(1115.0988 911.2825)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Learning Vector Quantization (LVQ)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <text transform="translate(1112.6888 1011.1476)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Locally Weighted Learning (LWL)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_90">
+        <text transform="translate(70.42225 -286.53076)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Deep Learning</tspan>
+        </text>
+      </g>
+      <g id="Graphic_91">
+        <text transform="translate(-480.17856 -370.637)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Deep Boltzmann Machine (DBM)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_92">
+        <text transform="translate(-390.51826 -309.33585)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Deep Belief Network (DBN)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_93">
+        <text transform="translate(-541.09695 -250.94442)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Convolutional Neural Network (CNN)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_94">
+        <text transform="translate(-343.85534 -195.85557)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Stacked Auto-Encoders</tspan>
+        </text>
+      </g>
+      <g id="Graphic_100">
+        <text transform="translate(-157.5791 -145.76356)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Random Forest</tspan>
+        </text>
+      </g>
+      <g id="Graphic_101">
+        <text transform="translate(-459.33707 -98.8874)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Gradient Boosting Machines (GBM)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_79">
+        <text transform="translate(1063.7245 1179.295)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Expectation Maximization</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <text transform="translate(1056.3457 1063.9035)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">k-Means</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <text transform="translate(1062.0655 1229.4409)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Hierarchical Clustering</tspan>
+        </text>
+      </g>
+      <g id="Graphic_83">
+        <text transform="translate(1057.2702 1117.3073)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">k-Medians</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(836.5288 -362.0101)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Bayesian</tspan>
+        </text>
+      </g>
+      <g id="Graphic_84">
+        <text transform="translate(821.5616 1144.6457)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">k-Clustering</tspan>
+        </text>
+      </g>
+      <g id="Graphic_85">
+        <text transform="translate(813.9193 928.6722)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Instance Based</tspan>
+        </text>
+      </g>
+      <g id="Graphic_102">
+        <text transform="translate(-68.35094 -48.53466)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="4.152832" y="30">Boosting </tspan>
+        </text>
+      </g>
+      <g id="Graphic_103">
+        <text transform="translate(-502.5029 -1.8322262)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="4.152832" y="30">Bootstrapped Aggregation (Bagging) </tspan>
+        </text>
+      </g>
+      <g id="Graphic_104">
+        <text transform="translate(-79.88569 52.61467)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">AdaBoost</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <text transform="translate(-443.961 104.69351)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Stacked Generalization (Blending)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_106">
+        <text transform="translate(-553.8602 156.77234)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Gradient Boosted Regression Trees (GBRT)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_110">
+        <text transform="translate(132.46603 2.2700602)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Ensemble</tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <text transform="translate(38.55769 286.33644)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Neural Networks</tspan>
+        </text>
+      </g>
+      <g id="Graphic_112">
+        <text transform="translate(-573.1762 216.898)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Radial Basis Function Network (RBFN)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <text transform="translate(-205.62144 262.66424)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Perceptron</tspan>
+        </text>
+      </g>
+      <g id="Graphic_114">
+        <text transform="translate(-310.15244 311.5868)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Back-Propagation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_115">
+        <text transform="translate(-295.61132 364.9316)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Hopfield Network</tspan>
+        </text>
+      </g>
+      <g id="Graphic_117">
+        <text transform="translate(-281.6259 424.1584)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Ridge Regression</tspan>
+        </text>
+      </g>
+      <g id="Graphic_120">
+        <text transform="translate(-886.0427 484.99935)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Least Absolute Shrinkage and Selection Operator (LASSO)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_121">
+        <text transform="translate(-181.39033 543.7304)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Elastic Net</tspan>
+        </text>
+      </g>
+      <g id="Graphic_122">
+        <text transform="translate(-470.5662 590.6031)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Least Angle Regression (LARS)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_129">
+        <text transform="translate(-257.18993 698.5483)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">One Rule (OneR)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_125">
+        <text transform="translate(-97.25521 644.5757)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Cubist</tspan>
+        </text>
+      </g>
+      <g id="Graphic_124">
+        <text transform="translate(-254.19088 747.8137)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Zero Rule (ZeroR)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_123">
+        <text transform="translate(-1002.3973 803.7672)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Repeated Incremental Pruning to Produce Error Reduction (RIPPER)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_130">
+        <text transform="translate(72.94955 512.99644)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Regularization</tspan>
+        </text>
+      </g>
+      <g id="Graphic_131">
+        <text transform="translate(90.08822 739.5693)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Rule System</tspan>
+        </text>
+      </g>
+      <g id="Graphic_137">
+        <text transform="translate(114.46832 980.6738)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Regression</tspan>
+        </text>
+      </g>
+      <g id="Graphic_138">
+        <text transform="translate(-241.4137 1116.4572)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Logistic Regression</tspan>
+        </text>
+      </g>
+      <g id="Graphic_139">
+        <text transform="translate(-684.6946 1062.7368)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Locally Estimated Scatterplot Smoothing (LOESS)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_140">
+        <text transform="translate(-678.6086 1008.3883)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Multivariate Adaptive Regression Splines (MARS)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_141">
+        <text transform="translate(-262.57546 955.1507)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Stepwise Regression</tspan>
+        </text>
+      </g>
+      <g id="Graphic_142">
+        <text transform="translate(-222.07175 856.4668)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Linear Regression</tspan>
+        </text>
+      </g>
+      <g id="Graphic_143">
+        <text transform="translate(-579.23345 908.8655)" fill="#290071">
+          <tspan font-family="Century Gothic" font-size="30" font-weight="400" fill="#290071" x="0" y="30">Ordinary Least Squares Regression (OLSR)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

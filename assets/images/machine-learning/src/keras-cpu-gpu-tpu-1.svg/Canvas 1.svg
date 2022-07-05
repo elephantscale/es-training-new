@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="82 -348 756 400" width="756" height="400">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#3b0088">
+      <g>
+        <path d="M -3.2 0 L 0 1.2 L 0 -1.2 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="6.4" y="-388">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="6" dy="5"/>
+      <feFlood flood-color="black" flood-opacity=".7256655" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2019-06-24 08:05:14 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_14">
+        <rect x="83" y="-77" width="195" height="128.88281" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image2.jpg" width="640" height="423" transform="translate(83 -77) scale(.3046875)"/>
+        </g>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 369.5 -347 L 550.5 -347 C 554.366 -347 557.5 -343.866 557.5 -340 L 557.5 -265 C 557.5 -261.134 554.366 -258 550.5 -258 L 369.5 -258 C 365.634 -258 362.5 -261.134 362.5 -265 L 362.5 -340 C 362.5 -343.866 365.634 -347 369.5 -347 Z" fill="#033399"/>
+        <path d="M 369.5 -347 L 550.5 -347 C 554.366 -347 557.5 -343.866 557.5 -340 L 557.5 -265 C 557.5 -261.134 554.366 -258 550.5 -258 L 369.5 -258 C 365.634 -258 362.5 -261.134 362.5 -265 L 362.5 -340 C 362.5 -343.866 365.634 -347 369.5 -347 Z" stroke="#3c008b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 90 -138 L 271 -138 C 274.866 -138 278 -134.866 278 -131 L 278 -56 C 278 -52.134007 274.866 -49 271 -49 L 90 -49 C 86.13401 -49 83 -52.134007 83 -56 L 83 -131 C 83 -134.866 86.13401 -138 90 -138 Z" fill="#ac97ff"/>
+        <path d="M 90 -138 L 271 -138 C 274.866 -138 278 -134.866 278 -131 L 278 -56 C 278 -52.134007 274.866 -49 271 -49 L 90 -49 C 86.13401 -49 83 -52.134007 83 -56 L 83 -131 C 83 -134.866 86.13401 -138 90 -138 Z" stroke="#3c008b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 369.5 -138 L 550.5 -138 C 554.366 -138 557.5 -134.866 557.5 -131 L 557.5 -56 C 557.5 -52.134007 554.366 -49 550.5 -49 L 369.5 -49 C 365.634 -49 362.5 -52.134007 362.5 -56 L 362.5 -131 C 362.5 -134.866 365.634 -138 369.5 -138 Z" fill="#ecdea4"/>
+        <path d="M 369.5 -138 L 550.5 -138 C 554.366 -138 557.5 -134.866 557.5 -131 L 557.5 -56 C 557.5 -52.134007 554.366 -49 550.5 -49 L 369.5 -49 C 365.634 -49 362.5 -52.134007 362.5 -56 L 362.5 -131 C 362.5 -134.866 365.634 -138 369.5 -138 Z" stroke="#3c008b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 649 -138 L 830 -138 C 833.866 -138 837 -134.866 837 -131 L 837 -56 C 837 -52.134007 833.866 -49 830 -49 L 649 -49 C 645.134 -49 642 -52.134007 642 -56 L 642 -131 C 642 -134.866 645.134 -138 649 -138 Z" fill="#d89e2b"/>
+        <path d="M 649 -138 L 830 -138 C 833.866 -138 837 -134.866 837 -131 L 837 -56 C 837 -52.134007 833.866 -49 830 -49 L 649 -49 C 645.134 -49 642 -52.134007 642 -56 L 642 -131 C 642 -134.866 645.134 -138 649 -138 Z" stroke="#3c008b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_7">
+        <line x1="256.48432" y1="-150.31833" x2="399.1519" y2="-257" marker-start="url(#FilledArrow_Marker)" stroke="#3b0088" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_8">
+        <line x1="460" y1="-157.9" x2="460" y2="-257" marker-start="url(#FilledArrow_Marker)" stroke="#3b0088" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_9">
+        <line x1="663.5157" y1="-150.31833" x2="520.8481" y2="-257" marker-start="url(#FilledArrow_Marker)" stroke="#3b0088" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_15">
+        <rect x="384.586" y="-31.272727" width="150.82803" height="74" id="path_2"/>
+        <clipPath id="clip_path_2">
+          <use xl:href="#path_2"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_2)">
+          <image xl:href="image3.png" width="640" height="314" transform="translate(384.586 -31.272727) scale(.2356688)"/>
+        </g>
+      </g>
+      <g id="Graphic_16">
+        <rect x="655.9649" y="-38.772727" width="167.07018" height="89" id="path_3"/>
+        <clipPath id="clip_path_3">
+          <use xl:href="#path_3"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_3)">
+          <image xl:href="image4.png" width="428" height="228" transform="translate(655.9649 -38.772727) scale(.3903509)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_texts">
+      <title>texts</title>
+      <g id="Graphic_10">
+        <text transform="translate(140.90039 -118.5)" fill="#060080">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#060080" x="0" y="40">CPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(419.1992 -118.5)" fill="#060080">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#060080" x="0" y="40">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(707.09766 -118.5)" fill="#060080">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#060080" x="0" y="40">TPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13" filter="url(#Shadow)">
+        <text transform="translate(406.3965 -327.5)" fill="#f7f8ff">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#f7f8ff" x="0" y="40">Keras</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

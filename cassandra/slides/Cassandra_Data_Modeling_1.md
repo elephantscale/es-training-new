@@ -1,6 +1,6 @@
 # Data Modeling with Cassandra  - Part 1
 
-<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:30%;" />
+<img src="../../assets/images/logos/cassandra-logo-1.png" style="width:30%;" /><!-- {"left" : 6.51, "top" : 7.6, "height" : 3.01, "width" : 4.48} -->
 
 
 ---
@@ -65,6 +65,8 @@ select * from movies;
 
 select * from movies where code = 'starwars';
 ```
+<!-- {"left" : 0.82, "top" : 4.89, "height" : 2.35, "width" : 11.21} -->
+
 
 Notes: 
 
@@ -75,7 +77,8 @@ Notes:
 
 ## CQL: Before & After
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-CQL-Before-After-1.png"  style="width:80%;" />
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-CQL-Before-After-1.png"  style="width:70%;" /><!-- {"left" : 0.78, "top" : 2.02, "height" : 9.38, "width" : 13.36} -->
+
 
 
 
@@ -90,7 +93,8 @@ Notes:
 
 ## Cassandra Data Organization
 
-<img src="../../assets/images/cassandra/Cassandra-Intro-Tables-10.png"  style="width:80%;" />
+<img src="../../assets/images/cassandra/Cassandra-Intro-Data-Organization-7.png"  style="width:70%;" /> <!-- {"left" : 2.65, "top" : 2.73, "height" : 8.25, "width" : 12.19} -->
+
 
 Notes: 
 
@@ -101,7 +105,7 @@ Notes:
 
 ## Data Hierarchy
 
-<img src="../../assets/images/cassandra/Data-Hierarchy-Visualization.png"  style="width:60%;" />
+<img src="../../assets/images/cassandra/Data-Hierarchy-Visualization.png"  style="width:50%;" /> <!-- {"left" : 4.12, "top" : 2.22, "height" : 9.27, "width" : 9.27} -->
 
 Notes: 
 
@@ -134,15 +138,17 @@ Notes:
 
 ## Creating Keyspaces
 
+<br/>
 
-```text
+```sql
 CREATE KEYSPACE <name>
 WITH replication = {
   'class': <str> (Simple|NetworkTopology)Strategy,
   <options>
 }
-
 ```
+<!-- {"left" : 0.82, "top" : 2.15, "height" : 2.2, "width" : 11.54} -->
+
  * Specify replication properties
 
  * See documentation: http://cassandra.apache.org/doc/latest/cql/ddl.html#create-keyspace
@@ -158,15 +164,18 @@ Notes:
 
 ## Creating Keyspace with SimpleStrategy
 
-```text
-CREATE KEYSPACE <name>
+```sql
+CREATE KEYSPACE keyspace1
 WITH replication = {
   'class': 'SimpleStrategy',
   'replication_factor': 3
 }
 
 ```
-<img src="../../assets/images/cassandra/replication.png"  style="width:40%;float:right;"/>
+<!-- {"left" : 0.82, "top" : 1.79, "height" : 2.49, "width" : 7.8} -->
+
+<img src="../../assets/images/cassandra/replication.png"  style="width:40%;float:right;"/><!-- {"left" : 9.21, "top" : 2.14, "height" : 6.47, "width" : 7.96} -->
+
 
  * 'SimpleStrategy' is fine for evaluation purposes. (A single data center)
 
@@ -180,17 +189,23 @@ Notes:
 ## Creating Keyspace with NetworkTopology
 
 
-```text
-CREATE KEYSPACE <name>
+```sql
+CREATE KEYSPACE keyspace2
 WITH replication = {
-  'class': 'NetworkTopologyStrategy',  'DC1': 3,   'DC2': 2};
+  'class': 'NetworkTopologyStrategy',  
+  'DC1': 3,   
+  'DC2': 2};
 
 ```
-<img src="../../assets/images/cassandra/Replication01.png"  style="width:50%;float:right;"/>
+<!-- {"left" : 0.82, "top" : 1.89, "height" : 1.9, "width" : 7.98} -->
+
+<img src="../../assets/images/cassandra/Replication01.png"  style="width:50%;float:right;"/><!-- {"left" : 8.44, "top" : 4.24, "height" : 3.9, "width" : 8.55} -->
 
  * Each data center has its own replication factor
 
  * Use 'NetworkTopology' for production uses (even when using a single data center)
+
+
 
 Notes: 
 
@@ -202,14 +217,17 @@ Notes:
 ## Keyspace Modification
 
 
- * *ALTER KEYSPACE <name> WITH < properties >;* </br> < properties > is same as the CREATE KEYSPACE < properties >
+* Use **`ALTER KEYSPACE`**
 
-```text
+```sql
 -- changing replication
-ALTER KEYSPACE  myflix  WITH REPLICATION ={     'class' : 'NetworkTopologyStrategy',     'dc1' : 3 };
 
-
+ALTER KEYSPACE  myflix  WITH REPLICATION = {
+         'class' : 'NetworkTopologyStrategy',     
+         'dc1' : 3 };
 ```
+<!-- {"left" : 0.82, "top" : 2.91, "height" : 2.45, "width" : 12.87} -->
+
 
 Notes: 
 
@@ -220,19 +238,24 @@ Notes:
 
 ## Drop Keyspace
 
-```text
+<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-Drop-Keyspace-3.png"  style="width:20%;float:right;"/><!-- {"left" : 12.94, "top" : 1.36, "height" : 3.95, "width" : 3.95} -->
+
+
+* Irreversible removal of the keyspace with all data in it deleted permanently!
+
+```sql
 DROP KEYSPACE <name>;
 
 
 -- doesn't return an error if keyspace doesn't exist
-DROP KEYSPACE IF EXISTS <name>;
+
+DROP KEYSPACE IF EXISTS keyspace1;
 
 ```
 
- * Irreversible removal of the keyspace with all data in it deleted permanently!
+<!-- {"left" : 0.82, "top" : 4.09, "height" : 2.45, "width" : 11.43} -->
 
 
-<img src="../../assets/images/cassandra/3rd-party/Cassandra-Data-Modeling-1-Drop-Keyspace-3.png"  style="width:20%;float:right;"/>
 
 
 Notes: 
@@ -244,18 +267,21 @@ Notes:
 
 ## Using Keyspace
 
+* **`USE KEYSPACE  <name>;`**
 
-```text
+* Sets the namespace for subsequence commands
+
+* Note : This is set per-session and can be changed with another USE KEYSPACE command
+
+
+```sql
 use myflix;
-create table .. (…); // this table is created in myflix keyspace
+ 
+-- from this point on, operations are done on myflix keyspace
 
+create table  (...); 
 ```
-
- * USE KEYSPACE < name >;
-
- * Sets the namespace for subsequence commands
-
- * Note : This is set per-session and can be changed with another USE KEYSPACE command
+<!-- {"left" : 0.82, "top" : 4.74, "height" : 2.25, "width" : 14.19} -->
 
 
 
@@ -266,18 +292,20 @@ Notes:
 
 ---
 
-## `C*` Tables
+## C* Tables
 
 
  * `C*` Tables contain rows and columns
 
- * Rows are indexed by primary key
-
- * Columns are variable i.e., no fixed schema for each row
+ * Rows are indexed by primary key (must be unique per row)
 
  * Tables are partitioned across a `C*` cluster
 
  * Table data is replicated according to replication strategy for the keyspace the table belongs to
+
+<img src="../../assets/images/cassandra/C-Tables.png"  style="width:50%;"/><!-- {"left" : 4.62, "top" : 5.79, "height" : 4.96, "width" : 8.26} -->
+
+
 
 Notes: 
 
@@ -288,7 +316,8 @@ Notes:
 
 ## Distributing Table Data
 
-<img src="../../assets/images/cassandra/partitioning2.png"  style="width:50%;float:right;"/>
+<img src="../../assets/images/cassandra/partitioning2.png"  style="width:50%;float:right;"/><!-- {"left" : 9.29, "top" : 2.18, "height" : 6.52, "width" : 7.83} -->
+
 
  * Table is distributed as **partitions** across nodes
 
@@ -305,40 +334,37 @@ Notes:
 
 ---
 
-## `C*` Tables
-
- <img src="../../assets/images/cassandra/C-Tables.png"  style="width:80%;"/>
-
-
-Notes: 
-
-
-
-
----
-
 ## Create Table – Simple Primary Key
 
 
-* *CREATE TABLE <table name> (
-  </br> < column name> <data type > < options >, </br>  …  < column_name > < data_typ e> < options >
-  </br>PRIMARY KEY (???)
-</br>);*
+```sql
+CREATE TABLE <table name> (
+   column_name  data_type   options, 
+   column_name  data_type   options
 
-
-```text
--- example
-
-CREATE TABLE users(    user_id text,    email text,
-    state text,    PRIMARY KEY (user_id));
-
+  PRIMARY KEY (???)
+);
 ```
+<!-- {"left" : 0.82, "top" : 1.75, "height" : 2.43, "width" : 8.32} -->
 
- * Each table must have a primary key
+<br/>
+
+```sql
+CREATE TABLE users(
+    user_id text,
+    email text,
+    state text,
+    
+    PRIMARY KEY (user_id)
+);
+```
+<!-- {"left" : 0.82, "top" : 4.34, "height" : 3.02, "width" : 6.45} -->
 
 
-Note: Column Families was the original name for "tables" but please use Table for CQL3 and onwards.
-Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
+* Each table must have a primary key
+
+* Quick Tip: Column Families was the original name for "tables". But please use Table for CQL3 and onwards.
+    - Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
 
 
 ---
@@ -346,11 +372,12 @@ Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
 ## How is Data Stored
 
 
-<img src="../../assets/images/cassandra/3rd-party/How-is-Data-Stored.png"  style="width:70%;"/>
+<img src="../../assets/images/cassandra/3rd-party/How-is-Data-Stored.png"  style="width:70%;"/><!-- {"left" : 4.46, "top" : 2.27, "height" : 5.33, "width" : 8.58} -->
 
 
 
-Note: Column Families was the original name for "tables" but please use Table for CQL3 and onwards.
+
+Note : Column Families was the original name for "tables" but please use Table for CQL3 and onwards.
 Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
 
 
@@ -358,25 +385,32 @@ Documentation: http://docs.datastax.com/en//cql/latest/cql/cqlIntro.html
 
 ## Specifying PRIMARY Keys
 
+* There are few different ways of specifying primary keys
 
-```text
+```sql
 -- at the end of table 
-CREATE TABLE users(    user_id text,    email text,    PRIMARY KEY (user_id));
+CREATE TABLE users(
+    user_id text,
+    email text,
+    PRIMARY KEY (user_id)
+);
 
 -- inline
-CREATE TABLE users(    user_id text PRIMARY KEY,
+CREATE TABLE users(
+    user_id text PRIMARY KEY,
     email text
 );
 
 -- composite key : state + user_id
 -- (More on this in next section)
-CREATE TABLE users(    user_id text,
+CREATE TABLE users(
+    user_id text,
     email text,
     state text,
-		PRIMARY KEY (state, user_id)
+    PRIMARY KEY (state, user_id)
 );
-
 ```
+<!-- {"left" : 0.82, "top" : 2.87, "height" : 7.69, "width" : 7.74} -->
 
 Notes: 
 
@@ -387,33 +421,37 @@ Notes:
 
 ## CQL Data Types
 
- <img src="../../assets/images/cassandra/3rd-party/cql_data_types.png"  style="width:80%;"/>
+ <img src="../../assets/images/cassandra/3rd-party/cql_data_types.png"  style="width:80%;"/><!-- {"left" : 2.07, "top" : 1.89, "height" : 6.53, "width" : 13.37} -->
 
 
- *  *Source:*  *DataStax* 
+
+* [Reference](https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cql_data_types_c.html)
 
 Notes: 
 
-Source: https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cql_data_types_c.html
 
 
 
 ---
 
-## `C*` vs.  RDMBS
+## C* vs.  RDMBS
 
 | Feature                                      | RDBMS                                         | Cassandra                                            |
 |----------------------------------------------|-----------------------------------------------|------------------------------------------------------|
-| Unique Primary Key                           | Required most of the time. </br>Not Null      | Required always. </br>NOT Null.                      |
-| Auto Sequence key generation  </br>(1, 2,3…) | YES </br>(id INT AUTO_INCREMENT PRIMARY KEY)  | NO </br>Relies on application to provide unique PKs  |
+| Unique Primary Key                           | Required most of the time. <br/>Not Null      | Required always. <br/>NOT Null.                      |
+| Auto Sequence key generation  <br/>(1, 2,3...) | YES <br/>(id INT AUTO_INCREMENT PRIMARY KEY)  | NO <br/>Relies on application to provide unique PKs  |
 | Foreign Keys                                 | YES                                           | NO                                                   |
 | Referential Integrity                        | YES                                           | NO                                                   |
 | Mandatory columns (Non-NULL)                 | YES                                           | NO                                                   |
 
-</br>
+<!-- {"left" : 0.8, "top" : 1.96, "height" : 1, "width" : 9.64} -->
 
- * Class discussion: 
-</br> Why `C*` does  **NOT**  do AUTO SEQUENCE key?
+<br/>
+
+<img src="../../assets/images/icons/quiz-icon.png" alt="Buildin-a-afair-marketplace.png" style="width:30%;float:right;"/><!-- {"left" : 10.89, "top" : 1.6, "height" : 4.2, "width" : 6.32} -->
+
+* **Question for class:** Why `C*` does  **NOT**  do AUTO SEQUENCE key?
+
 
 Notes: 
 
@@ -425,23 +463,25 @@ Notes:
 ## Generating Unique Keys
 
 
- * UUID – universally unique id
+ * **UUID** – universally unique id
 
      - E.g.: bfb96110-5105-4742-b17c-aeef5b5670d7
 
      - Can also be generated using Java at the application level
 
-     - CQL provides uuid() function
+     - CQL provides **`uuid()`** function
 
- * TimeUUID
+ * **TimeUUID**
 
      - Version 1 UUID – date and time part of encoding
 
      - Time-ordered rows
 
-     - Generate using now() function. DO NOT generate at application level
+     - Generate using **`now()`** function.
 
- * Uuid() and now() generate the IDs on coordinator node
+     - **DO NOT generate this at application level**
+
+ * **`uuid()`** and **`now()`** generate the IDs on coordinator node
 
  * Reference: https://en.wikipedia.org/wiki/Universally_unique_identifier 
 
@@ -457,137 +497,135 @@ Notes:
 ---
 
 
-## Myflix 'Movies' 'Features' Table
+## Myflix  'Features' Table
 
 
  * Lets create a "features" table with the following attributes:
 
-</br>
+<br/>
 
 
 | Attribute    | Type   | Example                                  |
 |--------------|--------|------------------------------------------|
-| Name         | String | "Star Wars"  </br>"Mad Men"              |
-| Type         | String | "Movie"  </br> "TV Show"  </br>"Standup" |
+| Name         | String | "Star Wars"  <br/>"Mad Men"              |
+| Type         | String | "Movie"  <br/> "TV Show"  <br/>"Standup" |
 | Release_date | Data   | 2016-01-01                               |
 
-</br>
-
- *  **What is our primary key? How do we generate one?**
+<!-- {"left" : 0.77, "top" : 2.7, "height" : 1, "width" : 15.92} -->
 
 
-Notes: 
+* **What is our primary key?**
+    - Remember, primary key must be unique for each row
+    - Are any of these attributes unique?
+    - How about if you combine these?  Like `"name + release_date"`,  will that be unique?
+    - If none of the attributes are unique, we can always **generate** a unique key
 
-
-
+Notes:
 
 ---
 
 ## Myflix 'Features' Table
 
+* Let's add a unique key called **`code`**.  We will assign this for each movie.
 
- * Let's add a unique key called 'code.'We will assign this for each movie.IMDB examples:
+* Some IMDB examples:
 
-     - "Star Wars: Force Awakens"http://www.imdb.com/title/tt2488496/
+     - "Star Wars: Force Awakens" : http://www.imdb.com/title/tt2488496/
 
-     - "Mad Men"http://www.imdb.com/title/tt0804503/
+     - "Mad Men" : http://www.imdb.com/title/tt0804503/
 
-</br>
 
 | Attribute    | Type   | Example                                  |
 |--------------|--------|------------------------------------------|
-| **Code**         | **String** | **"star1"   </br> "madmen"**                |
-| Name         | String | "Star Wars"  </br>"Mad Men"              |
-| Type         | String | "Movie"  </br> "TV Show"  </br>"Standup" |
+| **Code**         | **String** | **"star1"**  <br/> **"madmen"**                |
+| Name         | String | "Star Wars"  <br/>"Mad Men"              |
+| Type         | String | "Movie"  <br/> "TV Show"  <br/>"Standup" |
 | Release_date | Data   | 2016-01-01                               |
 
+<!-- {"left" : 0.96, "top" : 5.34, "height" : 1, "width" : 15.58} -->
 
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
 ## Myflix 'Features' Table
 
-```text
-create table features (    code text,    name text,    release_date timestamp,     type text,
-    PRIMARY KEY (code) );
+<br/>
 
+```sql
+create table features (
+    code text,
+    name text,
+    release_date date,
+    type text,
+
+    PRIMARY KEY (code) 
+);
 ```
-
- * We are using 'text' type to represent strings
-
- * We use 'timestamp' to represent for date
-
-     - Though 'time stamp' can be accurate up to seconds, we are only using the 'date' portion of it ( **2016-01-01** 00:00:00)
-
-     - Timestamp is Unix timestamp since 'epoch'
+<!-- {"left" : 0.82, "top" : 1.99, "height" : 3.23, "width" : 5.7} -->
 
 
+* We are using **`text`** type to represent strings
 
-Notes: 
+* We use **`date`** to represent for date
 
-
-
+Notes:
 
 ---
 
 ## INSERT Some Data
 
+<br/>
 
-```text
+```sql
 INSERT INTO features (code, name, type, release_date)
 VALUES ('madmen', 'Mad Men', 'TV Show', '2010-01-01');
 
 INSERT INTO features (code, name, type, release_date)
 VALUES ('star1', 'Star Wars Episode 1', 'Movie' , '1999-01-01');
-
 ```
+<!-- {"left" : 0.82, "top" : 2.15, "height" : 2.28, "width" : 15} -->
 
- * Syntax: **INSERT INTO** < table name > (column names)VALUES (column values)
+* Insert syntax:
 
- * Wrap string values in **single quotes** (example : 'mad men')
+```sql
+INSERT INTO <table name> (column names) VALUES (column values)
+```
+<!-- {"left" : 0.82, "top" : 5.6, "height" : 0.57, "width" : 11.11} -->
 
- * Timestamp can be entered in format: 'yyyy-mm-dd HH:mm:ssZ'
+* Wrap string values in **single quotes** (example : 'mad men')
 
-Notes: 
+* Date can be entered in format: 'yyyy-mm-dd'
 
-
-
+Notes:
 
 ---
 
 ## Lab: CQL
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
- *  **Overview:**
+* **Overview:**
+    - Create 'features' table using CQL
+    - Insert some data
+    - Query data
 
-     - Create 'features' table using CQL
+* **Builds on previous labs:**
+    - None
 
-     - Insert some data
+* **Approximate run time:**
+    - 1 hour
 
-     - Query data
+* **Instructions:**  
+    - Please follow **02-cql**
 
- *  **Builds on previous labs:** None
-
- *  **Approximate time:** 1 hour
-
- *  **Instructions:**  **02-cql /**  **README.md** 
-
- *  **Lab** 
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
 ## Lab 4.1: Composite Keys
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.43, "height" : 6.08, "width" : 4.57} -->
 
  *  **Overview:** 
 
@@ -654,6 +692,7 @@ Cqlsh>
 	-- compare results
 
 ```
+<!-- {"left" : 0.82, "top" : 3.33, "height" : 5.36, "width" : 11.78} -->
 
 Notes: 
 
@@ -664,6 +703,7 @@ Notes:
 
 ## Quiz: What Happens Below?
 
+<br/>
 
 ```text
 
@@ -672,6 +712,9 @@ INSERT INTO features (code, name, type, release_date)
 VALUES ('star1', 'Star Wars : Episode 4', 'Movie', '1977-01-01');
 
 ```
+<!-- {"left" : 0.82, "top" : 2.13, "height" : 1.34, "width" : 13.52} -->
+
+
 ```text
 
 INSERT INTO features (code, name, type, release_date)
@@ -679,6 +722,7 @@ INSERT INTO features (code, name, type, release_date)
 VALUES ('star1', 'Star Wars : Episode 1', 'Movie', '1999-01-01');
 
 ```
+<!-- {"left" : 0.82, "top" : 3.81, "height" : 1.34, "width" : 13.52} -->
 
 
  * What will be the value of row 'star1'?
@@ -699,7 +743,7 @@ Notes:
    
 
  * *INSERT INTO <table name> (column names)
-   </br>VALUES (column values) IF NOT EXISTS;*
+   <br/>VALUES (column values) IF NOT EXISTS;*
 
 
  * Only inserts if the row with the primary key given does not exist. 
@@ -721,6 +765,7 @@ VALUES ('star1', 'Star Wars : Episode 1', 'Movie', '1999-01-01')
 IF NOT EXISTS;
 
 ```
+<!-- {"left" : 0.82, "top" : 4.74, "height" : 3.78, "width" : 14.89} -->
 
 
 Notes: 
@@ -741,12 +786,13 @@ Notes:
 
  * We can specify the timestamp too.
 
- *  **Quiz**: **Why do we want to override timestamp?**
+ *  **Quiz:** **Why do we want to override timestamp?**
 
 ```text
 insert into features (code, name) values ('sopr', 'The Sopranos')  using timestamp 1404172800000;  // 2014-07-01 12:00:00  in microsecs
 
 ```
+<!-- {"left" : 0.82, "top" : 5.84, "height" : 0.39, "width" : 16.06} -->
 
 
 Notes: 
@@ -779,6 +825,8 @@ cqlsh>  CONSISTENCY QUORUM
 Consistency level is set to QUORUM.
 
 ```
+<!-- {"left" : 0.82, "top" : 4.7, "height" : 2.74, "width" : 16.31} -->
+
 
 Notes: 
 
@@ -798,6 +846,8 @@ AND TTL  86400;
 
 
 ```
+<!-- {"left" : 0.82, "top" : 2.35, "height" : 1.38, "width" : 16.14} -->
+
 
 Notes: 
 
@@ -835,6 +885,7 @@ ALTER TABLE features  ADD studio text;
 DESCRIBE TABLE features;
 
 ```
+<!-- {"left" : 0.82, "top" : 4.39, "height" : 6.07, "width" : 9.28} -->
 
 
 Notes: 
@@ -848,8 +899,8 @@ Notes:
 
 
  * *UPDATE < table name > 
- </br>SET column_name=value, ...
- </br>WHERE < primary key condition >;*
+ <br/>SET column_name=value, ...
+ <br/>WHERE < primary key condition >;*
 
  * Where clause is used to select rows to update.
 
@@ -865,6 +916,8 @@ WHERE
   code = 'sopr';
 
 ```
+<!-- {"left" : 0.82, "top" : 4.85, "height" : 2.69, "width" : 5.33} -->
+
 
 Notes: 
 
@@ -906,14 +959,17 @@ Notes:
 | Star1     | Star Wars 1 | Movie | Lucas  |
 | Madmen    | Mad Men     | TV    | AMC    |
 
-</br>
+<!-- {"left" : 1.41, "top" : 3.71, "height" : 1.5, "width" : 14.69} -->
+
+<br/>
 
 
 | Query                                                                  | RDBMS | `C*` |
 |------------------------------------------------------------------------|-------|----|
-| Update features set studio = 'HBO'  </br> where code = 'sopr';         | ?     | ?  |
-| Insert into features (code, name)     </br>VALUES('star1','star trek') | ?     | ?  |
+| Update features set studio = 'HBO'  <br/> where code = 'sopr';         | ?     | ?  |
+| Insert into features (code, name)     <br/>VALUES('star1','star trek') | ?     | ?  |
 
+<!-- {"left" : 0.45, "top" : 5.67, "height" : 1, "width" : 16.59} -->
 
 Notes: 
 
@@ -944,6 +1000,7 @@ Notes:
 
 ## Delete Examples
 
+<br/>
 
 ```text
 -- deletes entire row
@@ -957,6 +1014,8 @@ delete studio from features where code = 'madmen'
 -- Use truncate command
 
 ```
+<!-- {"left" : 0.82, "top" : 2.02, "height" : 3.28, "width" : 10.11} -->
+
 
  * In `C*` deletes are "soft deletes"
 
@@ -1002,6 +1061,8 @@ Select * from features where type = 'TV Show' ; // NOT OK
 
 
 ```
+<!-- {"left" : 0.82, "top" : 5.12, "height" : 1.47, "width" : 15.58} -->
+
 
 Notes: 
 
@@ -1028,10 +1089,14 @@ CREATE INDEX idx_type ON features (type);
 select * from features where type = 'TV Show'; // works!
 
 ```
+<!-- {"left" : 0.82, "top" : 2.78, "height" : 3.78, "width" : 10.11} -->
+
 
 ```console
  
 ```
+<!-- {"left" : 0.82, "top" : 7, "height" : 0.55, "width" : 0.61} -->
+
 
 Notes: 
 
@@ -1070,7 +1135,8 @@ Notes:
 
 ## Indexing: Behind the Scenes
 
-<img src="../../assets/images/cassandra/indexing.png"  style="width:40%;float:right;"/>
+<img src="../../assets/images/cassandra/indexing.png"  style="width:40%;float:right;"/><!-- {"left" : 10.22, "top" : 2.18, "height" : 5.73, "width" : 6.79} -->
+
 
  * `C*` index is distributed
 
@@ -1092,11 +1158,14 @@ Notes:
 
 ## Indexing Best Practices
 
+<br/>
+
 ```text
 create table people (
   ssn  text  PRIMARY KEY ,	name text,	phone text,	state text,	gender text,	);
 
 ```
+<!-- {"left" : 0.82, "top" : 2.19, "height" : 0.97, "width" : 16.33} -->
 
  * Do not index high-cardinality columns
 
@@ -1110,7 +1179,7 @@ create table people (
 
  * Index on GENDER: Yes or No?
 
-     - No: VERY LOW cardinality (just two values, male/female)…(not efficient)
+     - No: VERY LOW cardinality (just two values, male/female)...(not efficient)
 
 
 

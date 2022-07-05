@@ -98,8 +98,7 @@ A cloud based lab environment will be provided.
 * Introduction to Kafka Streams library
 * Features and design
 * Streams concepts: KStream / KTable / KStore
-* Streaming operations (transformations, filters, joins, aggregations)
-* Using Streams API: foreach / filter / map / groupby
+* Using Streams API: foreach / filter 
 * Labs:
   - Kafka Streaming APIs
 
