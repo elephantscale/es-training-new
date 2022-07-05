@@ -119,8 +119,86 @@
 
 ---
 
+## Bundled and open source processors
 
-## NiFi: Categorization of processors
+* There is no official category for bundled processors
+* But we are running a workshop to spark your creativity
+* As we go, let us think of use cases for the processors
+
+---
+
+## DataTransformers 
+
+* ReplaceText
+  * Change a string of text to another string of text
+  * US->USA
+* JoltTransformText
+  * JSON doc -> JSON doc
+  
+---
+
+## Routing and mediation
+Route on different things
+if in my flowfile I have USA - goes to one processor, if I have Germany - goes to another processor
+
+
+## Execute SQL
+execute SQL on the database
+
+---
+
+## Attribute extraction
+country field in your json
+which country?
+chain with routes on attributes
+
+---
+
+## System interaction
+* Execute process
+* Python process
+
+---
+
+
+## Data Ingestion
+
+* GetFile
+* GetFTP 
+* GetHTTP 
+* GetHDFS 
+* ListenUDP 
+* GetKafka…
+
+---
+
+## Sending Data: 
+* PutFile, 
+* PutFTP, 
+* PutKafka, 
+* PutEmail…
+  * Your would have to create an email service for this
+
+---
+
+## Splitting and Aggregation
+* SplitText,
+  * 100 rows of text -> 100 FlowFiles
+* SplitJson, 
+  * Split JSON files into multiple FlowFiles
+* SplitXml, 
+* MergeContent…
+  * For example, write a lot of content to disk
+
+## HTTP 
+* GetHTTP, 
+* ListenHTTP, 
+* PostHTTP
+  * Microservice that receives HTTP requests 
+
+---
+
+## Summary of Categorization of processors
 
 * Over 309 bundled processors
   - Data Transformation: ReplaceText, JoltTransformJSON…
@@ -136,6 +214,13 @@
   
 ---
 
+## Lab
+* Break up in teams
+* Create a use case
+* Implement the use case in NiFi
+* Present the use case to the teams
+
+---
 
 ## NiFi: FlowFile Topology
 
