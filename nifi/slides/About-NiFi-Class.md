@@ -7,10 +7,12 @@
 
 ## Agenda - 2 days
 
-| Day | Theme                | Detail                                                                                                |
-|-----|----------------------|-------------------------------------------------------------------------------------------------------|
-| 1   | Introducing Security | Intro * Threat modeling * Common attacks * Countermeasures * Secure design                                                          |
-| 2   | Secure Frameworks    | Modern security frameworks (Vault and Consul) *  Framework architecture  * Securing the runtime environment * Security future |
+| 69  | Subject                   |
+|-----|---------------------------|
+| 10  | 01__About-NiFi-Class.pptx |
+| 25  | 02__NiFi_Overview.pptx    |
+| 27  | 03__NiFi_Intro.pptx       |
+| 07  | 04__NiFi_Quizzes.pptx     |
 
  <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
 

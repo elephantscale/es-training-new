@@ -119,6 +119,12 @@
 
 ---
 
+## Lab: Create your own processor
+* Demo
+* Create a processor lab
+
+---
+
 ## Bundled and open source processors
 
 * There is no official category for bundled processors
@@ -219,6 +225,22 @@ chain with routes on attributes
 * Create a use case
 * Implement the use case in NiFi
 * Present the use case to the teams
+
+---
+
+## So far...
+* We created our basic flow
+  - We added a processor
+  - We added a connector
+  - We added a connection
+  - We picked up a file, generated more data, etc.
+  - But really, generating data easily is a problem
+    - We need to be able to generate data in a way that is easy to understand and use
+
+
+---
+
+## Generate data lab
 
 ---
 
