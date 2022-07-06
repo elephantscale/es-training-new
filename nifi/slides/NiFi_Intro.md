@@ -244,6 +244,63 @@ chain with routes on attributes
 
 ---
 
+## NiFi: Templates
+
+* Templates are a way to export your NiFi flow to other computers and to your colleagues
+* They are also a way to try other people's work
+* Here's how you get to Templates
+  * Go to top right corner of the screen
+  * Click on the three bars
+  
+---
+
+## Template menu
+
+![](../images/02-templates.png)
+
+---
+
+## Fresh install - no templates
+
+![](../images/03-no-templates.png)
+
+---
+
+## Find some templates
+
+![](../images/05-example-templates.png)
+
+---
+
+## CVS to JSON template
+
+![](../images/06-cvs-to-json.png)
+
+---
+
+## Upload template
+
+![](../images/08-upload-template.png)
+
+---
+## Here is the template
+
+![](../images/09-template.png)
+
+---
+
+## Let us use the template: select it
+
+![](../images/11-use-template.png)
+
+---
+
+## Let us use the template: use it
+
+![](../images/12-use-template.png)
+
+---
+
 ## NiFi: FlowFile Topology
 
 

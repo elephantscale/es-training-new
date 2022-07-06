@@ -7,10 +7,10 @@
 
 ## Agenda - 2 days
 
-| 69  | Subject                   |
+| 78  | Subject                   |
 |-----|---------------------------|
 | 10  | 01__About-NiFi-Class.pptx |
-| 25  | 02__NiFi_Overview.pptx    |
+| 36  | 02__NiFi_Overview.pptx    |
 | 27  | 03__NiFi_Intro.pptx       |
 | 07  | 04__NiFi_Quizzes.pptx     |
 
