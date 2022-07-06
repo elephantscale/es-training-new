@@ -301,6 +301,14 @@ chain with routes on attributes
 
 ---
 
+## Lab - import template
+
+* Let us import the template
+* First, the CVS to JSON template
+* Then, another one of your own choice
+
+---
+
 ## NiFi: FlowFile Topology
 
 
