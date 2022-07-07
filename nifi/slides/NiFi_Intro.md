@@ -337,9 +337,13 @@ chain with routes on attributes
 ![](../images/16.png)
 
 ---
+## Cleaner look using process groups
+
+![](../images/17.png)
+
+---
 
 ## NiFi: FlowFile Topology
-
 
 * A FlowFile has two components
   - Attributes:
