@@ -305,7 +305,36 @@ chain with routes on attributes
 
 * Let us import the template
 * First, the CVS to JSON template
-* Then, another one of your own choice
+* Now, let us go through this template and analyze it
+* Then, import a template of your choice and present its analysis
+
+---
+
+## Process groups
+
+
+![](../images/13-process-groups.png)
+
+---
+
+## Drag process group
+
+
+![](../images/14.png)
+
+---
+
+## Use the SHIFT key
+
+![](../images/15.png)
+
+
+---
+
+## Note number of components
+
+
+![](../images/16.png)
 
 ---
 
