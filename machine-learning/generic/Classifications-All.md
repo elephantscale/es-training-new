@@ -15,7 +15,7 @@ Notes:
 
 ## Logistic Regression
 
-[Regression-Logistic.md](Regression-Logistic.md)
+[Classification-Logistic-Regression.md](Classification-Logistic-Regression.md)
 
 ---
 

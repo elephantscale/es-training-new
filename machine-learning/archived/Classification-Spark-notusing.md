@@ -21,7 +21,7 @@ Notes:
 
 # Logistic Regression
 
-[../generic/Regression-Logistic.md](../generic/Regression-Logistic.md)
+[../generic/Classification-Logistic-Regression.md](../generic/Classification-Logistic-Regression.md)
 
 
 ---
