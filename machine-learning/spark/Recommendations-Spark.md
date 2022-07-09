@@ -6,7 +6,7 @@
 
 # Recommendations Intro
 
-[../generic/Recommendations-Generic.md](../generic/Recommendations-Generic.md)
+[../generic/Recommendations.md](../generic/Recommendations.md)
 
 ---
 
@@ -16,20 +16,11 @@
 
 ## CF in Spark ML
 
-
 * Spark ML implements ALS - Alternating Minimum Squares Algorithm
-  -  __org.apache.spark.ml.recommendation.ALS__ (Scala)
-  -  __pyspark.ml.recommendation.ALS__ (Python)
+  - __org.apache.spark.ml.recommendation.ALS__ (Scala)
+  - __pyspark.ml.recommendation.ALS__ (Python)
 
-* The DataFrame-based API for ALS currently only supports integers for user and item ids
-
-Notes:
-
-
-
----
-
-## ALS Parameters
+<br >
 
 | parameter         | Description                                                                                                         | default                       |
 |-------------------|---------------------------------------------------------------------------------------------------------------------|-------------------------------|
@@ -44,45 +35,30 @@ Notes:
 
 Notes:
 
-
-
 ---
 
-## ALS
+## ALS in Spark ML
 
-
- *  **Handling Explicit / Implicit Feedback**
-
-     - Explicit feedback: User explicitly rated an item
-
-     - Implicit feedback
-
+* **Handling Explicit / Implicit Feedback**
+    - Explicit feedback: User explicitly rated an item
+    - Implicit feedback
         * User watched a movie  / played a song
-
         * User shared the movie on social media ..etc
+    - Spark ALS can handle implicit feedback, treating values are numbers indicating strength of likeness
 
-     - Spark ALS can handle implicit feedback, treating values are numbers indicating strength of likeness
-
- *  **Cold-start strategy**
-
-     - NaN is good for production
-
-     - But during cross-validation testing / training NaN can present issues.  Use "drop" to eliminate the data from the set
+* **Cold-start strategy**
+    - But during cross-validation testing / training missing-ratings can present issues.  Use "drop" to eliminate missing data from the dataset
 
 Notes:
-
-
 
 ---
 
 ## ALS Code (Python)
 
+* ALS class exists in two forms:
 
- * ALS class exists in two forms:
-
-     - Dataframe based API: spark.ml.recommendations
-
-     - RDD-based API: spark.mllib.recommendations (more mature)
+    - Dataframe based API: spark.ml.recommendations
+    - RDD-based API: spark.mllib.recommendations (more mature)
 
 ```python
 import pyspark.ml.recommendation.ALS
@@ -92,6 +68,7 @@ als = ALS(maxIter=5, regParam=0.01,
           coldStartStrategy ="drop")
 
 model = als.fit(training)
+
 predictions = model.transform(test)
 
 evaluator = RegressionEvaluator( metricName="rmse",

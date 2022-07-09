@@ -617,95 +617,6 @@ Notes:
 # Relationship Between Two Variables
 
 ---
-# Covariance
-
----
-## Covariance
-
- <img src="../../assets/images/machine-learning/Data-Exploration-Covariance-0.png" alt="Data-Exploration-Covariance-0.png" style="width:40%;float:right;"/><!-- {"left" : 10.77, "top" : 1.89, "height" : 5.49, "width" : 6.56} -->
-
-
-* Variance, and Standard Deviation measures the data dispersion in a SINGLE variable
-
-* How can we tell if two variables  X & Y are related
-
-* Here we see positive trend between Netflix stock price and Google stock pricing.
- When one goes up, other one goes up too
-
-
-
-Notes:
-
-
-
----
-
-## Covariance Formula
-
-<img src="../../assets/images/formulas-equations/covariance-1.png" style="width:60%;"/><!-- {"left" : 2.9, "top" : 3.76, "height" : 6.18, "width" : 11.7} -->
-
-
-Notes:
-
-Image credit (Creative commons)  : Ncalculators (http://ncalculators.com/statistics/covariance-calculator.htm)
-
-
----
-
-## Covariance Example
-
-<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example.png" alt="Data-Exploration-Covariance-Example.png" style="width:70%;"/><!-- {"left" : 2.98, "top" : 3.03, "height" : 7.65, "width" : 11.53} -->
-
-
-
-Notes:
-
-Image credit thanks to :  https://www.youtube.com/watch?v=xGbpuFNR1ME
-
-
----
-
-## Covariance Example
-
-<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example2.png" alt="Data-Exploration-Covariance-Example2.png" style="width:80%;"/><!-- {"left" : 2.74, "top" : 2.95, "height" : 6.49, "width" : 12.02} -->
-
-
-Notes:
-
-Image credit thanks to :  https://www.youtube.com/watch?v=xGbpuFNR1ME
-
-
-
----
-
-## Covariance Summary
-
-
- * We only care about the positive / negative / zero of covariance
-
-     - Positive means, both variables move in the same direction
-     - Negative => they move in opposite direction
-     - Zero => no relation
-
-
-
- * We don't care about the actual number (could be 2.3  or 2300) of covariance
-
-     - It does NOT indicate the strength of the relationship
-
-     - It has no upper / lower bound - it is not standardized
-
-     - That is done by  **Correlation**  (later)
-
-Notes:
-
-
-
----
-
-# Correlation
-
----
 
 ## Correlation / Pearson Correlation Coefficient (r)
 
@@ -797,43 +708,25 @@ Notes:
 
 Image credit to : Think calculator  (http://www.thinkcalculator.com/statistics/correlation-coefficient-calculator.php)
 
-
 ---
 
-## Correlation Summary
+## Correlation is NOT Causation
 
+* Just because two variables seem to be correlated, does NOT mean one of them causes the other
 
- * Correlation is NOT Causation
+* Example: See the map of Waffle House locations and heart attack rates in US!
 
- * Two independent variables can have mathematical correlation, but have NO sensible connection / correlation in real life
-
- * E.g.: Number of cars sold  vs  number of pets adopted
+<img src="../../assets/images/google-cloud/3rd-party/viz-cardiac-deaths-vs-waffle-houses.jpg"  style="width:60%;"/><!-- {"left" : 3.72, "top" : 3.99, "height" : 4.16, "width" : 10.05} -->
 
 Notes:
 
-
-
 ---
 
-##  Correlation Code ( R )
+## Correlation Code
 
-```r
-bill = c(50,30,60,40,65,20,10,15,25,35)
-tip = c(12,7,13,8,15,5,2,2,3,4)
+<!-- TODO shiva -->
 
-cor(bill, tip)
-# [1] 0.9522154 ## strong correlation!
-```
-<!-- {"left" : 0.85, "top" : 2.5, "height" : 2.76, "width" : 12.55} -->
-
-Notes:
-
-
-
-
----
-
-##  Correlation  Code (Python)
+* Python 
 
 ```python
 import numpy  as  np
@@ -849,39 +742,25 @@ p.corrcoef(bills,tips)
 ```
 <!-- {"left" : 0.85, "top" : 2.5, "height" : 4.32, "width" : 13.23} -->
 
-Notes:
+* R code
 
+```r
+# R
+bill = c(50,30,60,40,65,20,10,15,25,35)
+tip = c(12,7,13,8,15,5,2,2,3,4)
 
-
-
----
-
-# Covariance/Correlation Matrix
-
----
-## Covariance Matrix
-
-
- * When we have more than two variables we create a covariance matrix
-
- * The **diagonal is simply Variance** of that variable  
-`cov(x1,x1) = variance(x1)`
-
- * The matrix is  **symmetric**,   
- `cov(x1,x2)  = cov(x2,x1)`
-
- <img src="../../assets/images/machine-learning/covariance-matrix-1.png"  style="max-width:60%;"/><!-- {"left" : 3.74, "top" : 5.68, "height" : 5.22, "width" : 10.02} -->
-
-
-
-Notes:
+cor(bill, tip)
+# [1] 0.9522154 ## strong correlation!
+```
+<!-- {"left" : 0.85, "top" : 2.5, "height" : 2.76, "width" : 12.55} -->
 
 ---
 
 ## Correlation Matrix
 
-* The diagonal cells are **1.0**  
-Each variable is perfectly correlated with itself
+* When we have more than two variables, we put them in a matrix and calculate correlation for each combination
+
+* The diagonal cells are **1.0**; Each variable is perfectly correlated with itself
 
 <img src="../../assets/images/machine-learning/correlation-matrix-1.png"  style="width:60%;"/> <!-- {"left" : 3.57, "top" : 4.99, "height" : 5.34, "width" : 10.36} -->
 
@@ -890,7 +769,107 @@ Each variable is perfectly correlated with itself
 
 ---
 
-##  Correlation Matrix Code ( R )
+
+## Correlation Matrix Example
+
+* Here is some cars data
+
+<!-- TODO: Shiva -->
+
+```text
++-------------------+----+---+-----+---+----+-----+-----+---+---+----+----+
+|              model| mpg|cyl| disp| hp|drat|   wt| qsec| vs| am|gear|carb|
++-------------------+----+---+-----+---+----+-----+-----+---+---+----+----+
+|          Mazda RX4|21.0|  6|160.0|110| 3.9| 2.62|16.46|  0|  1|   4|   4|
+|      Mazda RX4 Wag|21.0|  6|160.0|110| 3.9|2.875|17.02|  0|  1|   4|   4|
+|         Datsun 710|22.8|  4|108.0| 93|3.85| 2.32|18.61|  1|  1|   4|   1|
+|     Hornet 4 Drive|21.4|  6|258.0|110|3.08|3.215|19.44|  1|  0|   3|   1|
+|  Hornet Sportabout|18.7|  8|360.0|175|3.15| 3.44|17.02|  0|  0|   3|   2|
+|            Valiant|18.1|  6|225.0|105|2.76| 3.46|20.22|  1|  0|   3|   1|
+|         Duster 360|14.3|  8|360.0|245|3.21| 3.57|15.84|  0|  0|   3|   4|
+|          Merc 240D|24.4|  4|146.7| 62|3.69| 3.19| 20.0|  1|  0|   4|   2|
+|           Merc 230|22.8|  4|140.8| 95|3.92| 3.15| 22.9|  1|  0|   4|   2|
+|           Merc 280|19.2|  6|167.6|123|3.92| 3.44| 18.3|  1|  0|   4|   4|
+|          Merc 280C|17.8|  6|167.6|123|3.92| 3.44| 18.9|  1|  0|   4|   4|
+|         Merc 450SE|16.4|  8|275.8|180|3.07| 4.07| 17.4|  0|  0|   3|   3|
+|         Merc 450SL|17.3|  8|275.8|180|3.07| 3.73| 17.6|  0|  0|   3|   3|
+|        Merc 450SLC|15.2|  8|275.8|180|3.07| 3.78| 18.0|  0|  0|   3|   3|
+| Cadillac Fleetwood|10.4|  8|472.0|205|2.93| 5.25|17.98|  0|  0|   3|   4|
+|Lincoln Continental|10.4|  8|460.0|215| 3.0|5.424|17.82|  0|  0|   3|   4|
+|  Chrysler Imperial|14.7|  8|440.0|230|3.23|5.345|17.42|  0|  0|   3|   4|
+...
+```
+
+---
+
+## Correlation Matrix Example
+
+* Here is the correlation matrix.  Which attributes affect **mpg** ?
+
+<!-- TODO: Shiva -->
+<img src="../../assets/images/machine-learning/correlation-matrix-2.png"  style="width:90%;"/><!-- {"left" : 4.42, "top" : 8.18, "height" : 3.17, "width" : 8.67} -->
+
+---
+
+## Correlation Matrix Example
+
+<img src="../../assets/images/machine-learning/correlation-matrix-4.png"  style="width:65%;float:right;"/><!-- {"left" : 4.42, "top" : 8.18, "height" : 3.17, "width" : 8.67} -->
+
+* Negative correlations are highlighted in red,  positive ones are in blue
+
+<!-- TODO: Shiva -->
+
+---
+
+## Correlation Matrix Code (Python)
+
+<img src="../../assets/images/machine-learning/covariance-matrix-1.png" alt="covariance-matrix-1.png" style="width:40%;float:right;"/><!-- {"left" : 9.96, "top" : 2, "height" : 3.74, "width" : 7.2} -->
+
+```python
+import numpy as np
+
+a = np.array([1,2,3,4,5,6])
+b = np.array([2,3,5,6,1,9])
+c = np.array([3,5,5,5,10,8])
+d = np.array([10,20,30,40,50,55])
+e = np.array([7,8,9,4,6,10])
+
+m = np.vstack([a,b,c,d,e])
+print(m)
+print(np.corrcoef(m))
+```
+<!-- {"left" : 0.85, "top" : 2.33, "height" : 4.01, "width" : 7.32} -->
+
+```text
+# output : m
+[[ 1  2  3  4  5  6]
+ [ 2  3  5  6  1  9]
+ [ 3  5  5  5 10  8]
+ [10 20 30 40 50 55]
+ [ 7  8  9  4  6 10]]
+```
+<!-- {"left" : 0.85, "top" : 6.61, "height" : 2.24, "width" : 5.14} -->
+
+```text
+# output: correlation matrix
+       a             b           c           d           e
+a [[ 1.          0.54470478 0.84515425  0.99607842  0.09897433]
+b [ 0.54470478  1.          0.05370862  0.49341288  0.38786539]
+c [ 0.84515425  0.05370862  1.          0.86126699  0.07319251]
+d [ 0.99607842  0.49341288  0.86126699  1.          0.03538992]
+e [ 0.09897433  0.38786539  0.07319251  0.03538992  1.        ]]
+```
+<!-- {"left" : 0.85, "top" : 9.2, "height" : 2.18, "width" : 11.71} -->
+
+* Question:
+    - Find variables that are highly correlated (Hint: look for corr close to +1)
+    - Find variables that are NOT correlated (Hint: look for corr close to 0)
+
+Notes:
+
+---
+
+## Correlation Matrix Code ( R )
 
 <img src="../../assets/images/machine-learning/covariance-matrix-1.png" alt="covariance-matrix-1.png" style="width:40%;float:right;"/><!-- {"left" : 9.96, "top" : 2, "height" : 3.74, "width" : 7.2} -->
 
@@ -917,134 +896,35 @@ cor_matrix
 
 <img src="../../assets/images/machine-learning/Data-Exploration--Covariance-Matrix-Code-R--1.png" alt="Data-Exploration--Covariance-Matrix-Code-R--1.png" style="width:60%;"/><!-- {"left" : 4.42, "top" : 8.18, "height" : 3.17, "width" : 8.67} -->
 
-
 Notes:
-
-
-
 
 ---
 
-##  Correlation Matrix Code (Python)
+## Correlation Matrix Applications
 
-```python
-import numpy as np
+* Financial economics
+    - Figure our relationships with different stocks
 
-a = np.array([1,2,3,4,5,6])
-b = np.array([2,3,5,6,1,9])
-c = np.array([3,5,5,5,10,8])
-d = np.array([10,20,30,40,50,55])
-e = np.array([7,8,9,4,6,10])
-
-m = np.vstack([a,b,c,d,e])
-print(m)
-
-print(np.corrcoef(m))
-```
-<!-- {"left" : 0.85, "top" : 2.33, "height" : 4.01, "width" : 7.32} -->
-
-```
-# output : m
-[[ 1  2  3  4  5  6]
- [ 2  3  5  6  1  9]
- [ 3  5  5  5 10  8]
- [10 20 30 40 50 55]
- [ 7  8  9  4  6 10]]
-```
-<!-- {"left" : 0.85, "top" : 6.61, "height" : 2.24, "width" : 5.14} -->
-
-```
-# output: correlation matrix
-       a             b           c           d           e
-a [[ 1.          0.54470478 0.84515425  0.99607842  0.09897433]
-b [ 0.54470478  1.          0.05370862  0.49341288  0.38786539]
-c [ 0.84515425  0.05370862  1.          0.86126699  0.07319251]
-d [ 0.99607842  0.49341288  0.86126699  1.          0.03538992]
-e [ 0.09897433  0.38786539  0.07319251  0.03538992  1.        ]]
-```
-<!-- {"left" : 0.85, "top" : 9.2, "height" : 2.18, "width" : 11.71} -->
+* Principal Component Analysis (PCA); This will be covered in PCA section
 
 Notes:
-
 
 ---
 
-## Covariance Matrix Applications
+## Lab: EDA-Basic Stats
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- * Financial economics
+* **Overview:**
+    - Learn basic statistics functions
 
-     - Figure our relationships with different stocks
+* **Approximate time:**
+    - 10 mins
 
- * Principal Component Analysis (PCA)
- This will be covered in PCA section
-
-Notes:
-
-
-
----
-
-## Data Analytics With R / Python
-
-
- *  **Ends here**
-
- * Jump off to **data-analytics-R/slides/Analytics.pptx**
+* **Instructions:**
+     - **EDA: Basics/stats**
 
 Notes:
-
-
-
----
-
-## Lab Preparation for Machine Learning Class
-
-
- * Please follow instructions in **Labs-Prep.md**
-
-Notes:
-
-
-
----
-
-## Optional Lab: Basic Numpy, Pandas
-
-
- *  **Overview:** Get familiar with Numpy and Pandas
-
- *  **Approximate time:** 10 mins
-
- *  **Instructions:**
-
-     -  Numpy
-
-     -  Pandas
-
-Notes:
-
-
-
-
----
-
-## Optional Lab: Statistics
-
-
- *  **Overview:** Learn basic statistics functions
-
- *  **Approximate time:** 10 mins
-
- *  **Instructions:**
-
-     -  **Basics/stats**
-
-     - Follow appropriate instructions for  R / Python / Spark
-
-Notes:
-
-
 
 
 ---
@@ -1054,6 +934,8 @@ Notes:
 ---
 
 ## Visualizing Data
+
+* We are going to introduce these basic graphs
 
 | Method | Description |
 |-----------------|-------------------------------------------------------------|
@@ -1213,7 +1095,9 @@ Notes:
 
 ---
 
-## Lab: Visualizing Basics
+## Lab: EDA - Basic Visualization
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * **Overview:**
     - Learn basic plot functions
@@ -1222,73 +1106,54 @@ Notes:
     - 10 mins
 
 * **Instructions:**
-    - **basic/visualizing**
-    - Follow appropriate instructions for  R / Python / Spark
+    - **EDA:basic visualization**
 
 ---
 
+## Lab: Exploring Dataset
 
-## To Instructor
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-* Option 1: STOP here, if continuing onto **`ML-Concepts`**
+* **Overview:**  
+    - Explore house sales dataset
 
-* Option 2: continue to next 2 labs, if this is standalone module
+* **Approximate Time:**
+    - 20 - 30 mins
+
+* **Instructions:**
+    - **EDA - House sales exploreation**
 
 Notes:
 
 ---
 
-## (Optional) Lab: Exploring Dataset
+## Lab: Visualizing House Sales
 
-* **Instructor**
-    - If covering ML-Concepts, do this at the end of Part-1 ML-Concepts
-    - Demo this lab on screen first, and explain the results
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-* **Overview:**  
-    - Explore a dataset
+* **Overview:**
+    - Visualize house-sales dataset
 
 * **Approximate Time:**
     - 10 - 15 mins
 
 * **Instructions:**
-    - **'exploration/explore-house-sales'**
+    - **EDA - visualize house sales**
+
+* **To Instructor:**
+    - Do this if time permits
 
 Notes:
 
 ---
-
-## (Optional) Lab: Visualizing House Sales
-
-* **Overview:**
-    - Visualize house-sales dataset
-
-* **Approximate Time:** 
-    - 10 - 15 mins
-
-* **Instructions:**
-    - **exploration/visualize-house-sales**
-
-* **To Instructor:** 
-    - Demo this lab on screen first, and explain the results
-
-Notes:
-
----
-
 
 ## Further Reading
 
-* "Practical Statistics for Data Scientists"O'Reilly books
+* "Practical Statistics for Data Scientists" - O'Reilly books
 
 * http://www.cabrillo.edu/~evenable/ch03.pdf
 
-* Fantastic YouTube video series on Statistics by Brandon Foltz
-
-    - Covariance:  https://www.youtube.com/watch?v=xGbpuFNR1ME
-
-    - Correlation: https://www.youtube.com/watch?v=4EXNedimDMs  
-
-    - Covariance Matrix: https://www.youtube.com/watch?v=locZabK4Als
+* [Fantastic lecture series on Statistics by Brandon Foltz](https://www.bcfoltz.com/statistics-101/)
 
 Notes:
 
@@ -1303,3 +1168,110 @@ Notes:
 * Any questions?
 
 <img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.62, "top" : 4.8, "height" : 5.53, "width" : 8.31} -->
+
+---
+
+# Appendix
+
+---
+
+# Covariance
+
+---
+
+## Covariance
+
+ <img src="../../assets/images/machine-learning/Data-Exploration-Covariance-0.png" alt="Data-Exploration-Covariance-0.png" style="width:40%;float:right;"/><!-- {"left" : 10.77, "top" : 1.89, "height" : 5.49, "width" : 6.56} -->
+
+* Variance, and Standard Deviation measures the data dispersion in a SINGLE variable
+
+* How can we tell if two variables  X & Y are related
+
+* Here we see positive trend between Netflix stock price and Google stock pricing.
+ When one goes up, other one goes up too
+
+Notes:
+
+---
+
+## Covariance Formula
+
+<img src="../../assets/images/formulas-equations/covariance-1.png" style="width:60%;"/><!-- {"left" : 2.9, "top" : 3.76, "height" : 6.18, "width" : 11.7} -->
+
+
+Notes:
+
+Image credit (Creative commons)  : Ncalculators (http://ncalculators.com/statistics/covariance-calculator.htm)
+
+
+---
+
+## Covariance Example
+
+<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example.png" alt="Data-Exploration-Covariance-Example.png" style="width:70%;"/><!-- {"left" : 2.98, "top" : 3.03, "height" : 7.65, "width" : 11.53} -->
+
+
+
+Notes:
+
+Image credit thanks to :  https://www.youtube.com/watch?v=xGbpuFNR1ME
+
+
+---
+
+## Covariance Example
+
+<img src="../../assets/images/machine-learning/Data-Exploration-Covariance-Example2.png" alt="Data-Exploration-Covariance-Example2.png" style="width:80%;"/><!-- {"left" : 2.74, "top" : 2.95, "height" : 6.49, "width" : 12.02} -->
+
+
+Notes:
+
+Image credit thanks to :  https://www.youtube.com/watch?v=xGbpuFNR1ME
+
+
+
+---
+
+## Covariance Summary
+
+
+ * We only care about the positive / negative / zero of covariance
+
+     - Positive means, both variables move in the same direction
+     - Negative => they move in opposite direction
+     - Zero => no relation
+
+
+
+ * We don't care about the actual number (could be 2.3  or 2300) of covariance
+
+     - It does NOT indicate the strength of the relationship
+
+     - It has no upper / lower bound - it is not standardized
+
+     - That is done by  **Correlation**  (later)
+
+Notes:
+
+
+
+---
+
+## Covariance Matrix
+
+
+ * When we have more than two variables we create a covariance matrix
+
+ * The **diagonal is simply Variance** of that variable  
+`cov(x1,x1) = variance(x1)`
+
+ * The matrix is  **symmetric**,   
+ `cov(x1,x2)  = cov(x2,x1)`
+
+ <img src="../../assets/images/machine-learning/covariance-matrix-1.png"  style="max-width:60%;"/><!-- {"left" : 3.74, "top" : 5.68, "height" : 5.22, "width" : 10.02} -->
+
+
+
+Notes:
+
+---

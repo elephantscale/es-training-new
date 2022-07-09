@@ -453,4 +453,3 @@ Notes:
 ## Doing Linear Regression
 
 * Next section will show an example on how to do linear regression
-
