@@ -35,7 +35,8 @@ Notes:
 
    - Ask a lot of questions 
 
- * This is a Software Testing class
+ * This is a NiFi class
+ * This is a NiFi class
    - No previous knowledge is assumed (but may be helpful) 
    - Class will be based on the pace of majority of the students
 Notes:
