@@ -107,22 +107,32 @@
 * https://github.com/elephantscale/NiFi-labs/blob/main/lab_04.md
 
 ---
-## NiFi: FlowFile Topology
 
-* A FlowFile has two components
-  - Attributes:
-    - These are the metadata from the FlowFile
-    - Contain information about the content: e.g. when was it created, where is it from, what data does it represent?
-  - Content:
-    - That’s the actual content of the FlowFile. e.g. it’s the actual content of a file you would read using GetFile
+## FlowFile Review
 
-  - A processor can (either or both):
-    - Update, add, or remove attributes
-    - Change content
+* We have processors
+* They get connected
+* Going deeper - FlowFile has two components
+  * Attributes (Metadata)
+    * Create date
+    * Name
+    * What does the data represent, etc.
+  * Content
+    * `myfile.txt`
+    * Actual data, perhaps binary content
+* So, this is similar to a file on the computer. But - it is a **Flow**File
 
 ---
 
+## Processor
 
+* Processor is working with the FlowFile
+  * Update, add, or remove attributes (working on attributes)
+  * Change content (working on content)
+* This so far is theory
+* Now, let's go and see how it works in practice
+
+---
 
 
 
