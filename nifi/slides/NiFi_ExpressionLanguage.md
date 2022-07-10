@@ -171,11 +171,24 @@
 
 * Used to compare an attribute value against some other value. 
   * Often used to configure how a Processor should route data. 
-* _isNull_  returns true if the subject is null, false otherwise. This is typically used to determine if an attribute exists.
+* _isNull_  returns true if the subject is null, false otherwise. This is typically used to determine if an attribute exists. "notNull" is the converse
   
 ```bash
     ${filename:isNull()}    returns true if the "filename" attribute does not exist
                             returns false if the attribute exists.
+    {filename:notNull()}    returns true if the "filename" attribute exists. 
+```
+* _isEmpty_ returns true if the Subject is null, does not contain any characters or contains only white-space (new line, carriage return, space, tab), false otherwise
+
+```bash
+    ${literal(" "):isEmpty()} returns true
+    ${literal(""):isEmpty()}  also returns true
+```
+* _equals_ determines if its subject is equal to another String value. _equalsIgnoreCase_ ignores case
+
+```bash
+    ${filename:equals('hello.txt')}   true if filename is 'hello.txt'
+    ${filename:equalsIgnoreCase('hello.txt')} also true if filename is 'HELLO.txt'
 ```
 ---
 
