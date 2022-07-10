@@ -18,7 +18,9 @@ April 2022
 * Describe NiFi's architecture, including standalone and clustered configurations
 * Use key features, including FlowFiles, processors, process groups, controllers, and connections, to define a NiFi dataflow
 * Navigate, configure dataflows, and use dataflow information with the NiFi User Interface
-* Trace the life of data, its origin, transformation, and destination, using data provenance
+* Trace the life of data, its origin, transformation, and destination, using data 
+
+nance
 * Organize and simplify dataflows
 * Manage dataflow versions using the NiFi Registry
 * Use the NiFi Expression Language to control dataflows
@@ -54,6 +56,9 @@ April 2022
 * Dataflow Templates
 * Apache NiFi Registry
 * FlowFile Attributes
+* mark up until here   
+
+
 * NiFi Expression Language
 * Dataflow Optimization
 * NiFi Architecture
@@ -62,7 +67,7 @@ April 2022
 * How to create pipeline with airflow
 * DB and executors
 * How to schedule and monitor workflows
-* Monitoring and Reporting
+* Monitoring and Reporting **Mark**  
 * Controller Services
 * Integrating NiFi with the Hadoop Ecosystem
 * NiFi Security
