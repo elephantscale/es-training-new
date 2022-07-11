@@ -363,5 +363,38 @@ a,b,c,d
 
 ---
 
+## Now, let's look at ReplaceText
+
+* Right-click on ReplaceText
+* Click on Configure
+
+![](../images/47.png)
+
+---
+
+## It will take anything 
+
+* And replace it with `a, b, c, d`
+
+![](../images/48.png)
+
+---
+
+## Now, let's run it
+* We will see that the attributes did not change
+* But the content is replaced with `a, b, c, d`
+
+![](../images/49.png)
+
+---
+
+## Let's analyze ExtractText
+
+![](../images/50.png)
+
+---
+
+## Data Provenance and Event Search
 
 
+---
