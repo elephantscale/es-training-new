@@ -302,4 +302,47 @@
 
 ---
 
+## Math and Date Functions
+
+* There are a number of functions that allow basic math operations
+  * _add divide multiply minus random_ and other related functions
+* Standard date functions include functions for formatting dates, creating date objects and getting the current time and date.
+
+```bash
+    ${literal(100):multiply(1024)} -> 102400
+    ${random():mod(10):plus(1)}  -> random number between 1 and 10 inclusive.
+
+    ${time:format("yyyy/MM/dd HH:mm:ss.SSS'Z'", "GMT")}
+        -> 2014/12/31 20:36:03.264Z
+
+    ${now()} -> Rhe current date and time to the nearest millisecond
+    
+```
+
+---
+
+## Evaluating Multiple Attributes
+
+* These operations allow for evaluating the same conditions against groups of attributes at the same time. These do not take a subject.
+* _anyAttribute_ Checks to see if any of the given attributes, match the given condition.
+* _allAttributes_ Checks to see if all of the given attributes match the given condition
+* _anyMatchingAttribute_ Checks to see if any of the given attributes that match a regular expression, match the given condition. There is an analogous _allMatchingAttributes_
+
+
+```bash
+
+    // The "abc" attribute contains the value "hello world", 
+    // The "xyz" attribute contains "good bye world", 
+    // And the "filename" contains "file.txt" 
+
+    ${anyAttribute("abc", "xyz"):contains("bye")} -> true
+    ${allAttributes("abc", "xyz"):contains("world")} -> true
+    ${allAttributes("abc", "xyz"):contains("hello")} -> false
+    ${anyMatchingAttribute("[ax].*"):contains('bye')} -> true
+    ${allMatchingAttributes(".*"):isNull()}
+
+```
+
+---
+
 
