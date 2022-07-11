@@ -199,15 +199,16 @@ a,b,c,d
 ---
 ## Forming JSON
 
-[](../images/25.png)
+![](../images/25.png)
 
 ---
 
 ## View the content
 
-[](../images/26.png)
+![](../images/26.png)
 
 ---
+
 
 
 
