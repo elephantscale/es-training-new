@@ -163,6 +163,51 @@
 
 ---
 
+## RegEx in detail
+
+```shell
+(.+),(.+),(.+),(.+)
+a,b,c,d
+```
+
+## Here are changed attributes
+
+![](../images/21.png)
+
+
+* We have added csv.1, csv.2, csv.3, csv.4
+
+---
+
+## Use attributes with the expression language
+
+
+![](../images/22.png)
+
+---
+
+## Replace text processor
+
+![](../images/23.png)
+
+---
+
+## Creating JSON
+
+![](../images/24.png)
+
+---
+## Forming JSON
+
+[](../images/25.png)
+
+---
+
+## View the content
+
+[](../images/26.png)
+
+---
 
 
 
