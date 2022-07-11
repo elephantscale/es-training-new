@@ -315,7 +315,7 @@
     ${time:format("yyyy/MM/dd HH:mm:ss.SSS'Z'", "GMT")}
         -> 2014/12/31 20:36:03.264Z
 
-    ${now()} -> Rhe current date and time to the nearest millisecond
+    ${now()} -> The current date and time to the nearest millisecond
     
 ```
 
