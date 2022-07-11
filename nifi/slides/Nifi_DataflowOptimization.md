@@ -180,3 +180,94 @@ notes:
 image credit: https://community.cloudera.com/t5/Community-Articles/NiFi-HDF-Dataflow-Optimization-Part-1-of-2/ta-p/245102
 
 ---
+
+## Overwhelming the System
+
+* Preventing the dataflows from overwhelming the underlying system
+  * This impacts NiFi software stability and/or performance. 
+  * Unconstrained, it may produce a severe performance hit. 
+  * Likely if dataflows are unbounded and the content repo fills 100%
+
+* Example:
+  * 50MB content_repository partition 
+  * Data normally is delivered via an input port in groups of 10MB
+  * System goes down and comes back online with a backlog of 75MB
+* Once the content_repository filled, the input port would start generating errors when trying to write the files it was receiving. 
+* Disks where the content_repository resided would be trying write new files while at the same time NiFi would be trying to access the disk to deal with the current flowfiles. 
+  
+---
+
+## Using Backpressure
+
+
+
+* Backpressure can be configured based on number of objects and/or the size of the flowfiles in the connection.
+
+* Using backpressure would be one way to prevent this scenario, as in this example
+
+![](../images/1338-backpressure-image1-part2.png)
+notes:
+
+image credit: https://community.cloudera.com/t5/Community-Articles/NiFi-HDF-Dataflow-Optimization-Part-2-of-2/ta-p/245113
+
+---
+
+## Using Backpressure
+
+* Backpressure is set in the connection from the input port to the ControlRate processor:
+  
+![](../images/1339-backpressur-image2-part2.png)
+
+* If the backlog of data reaches 1 MB, the input port would not be able to receive data until the backlog dropped below the threshold, then incoming data from the source system would resume
+* This configuration allows NiFi to receive the backlog of data at a rate that won't over utilize the system resources. 
+* Adding the ControlRate processor to the flow will ensure that the backlog of data will not overwhelm any processors further down the flow path. 
+* This method of combining backpressure with the ControlRate processor is easier than trying to set backpressure in every connection through the complete flow path.
+
+---
+
+## Using ControlRate Processors
+
+* A ControlRate processor prevents another processor from becoming overwhelmed and/or overwhelming the overall flow. 
+  * For example, the DFM is only able to allocate one concurrent task to the CompressContent processor
+  * If the queue becomes too large, that one concurrent task would only be able to scan the queue to determine which flowfile should be compressed next.
+  *bIt would spend all of its time looking at its queue and never actually compressing any flow files. 
+  Using the above example of the CompressContent processor on the next slide, using a ControlRate processor to prevent the processor from becoming overwhelmed.
+
+---
+
+## Using ControlRate Processors
+
+![](../images/1341-controlrate-processor-part2.png)
+
+* The example is using the added filesize attribute to control the rate of data.
+
+![](../images/1339-backpressur-image2-part2.png)
+
+---
+
+## Understanding Used Resources
+
+* Understand the resources needed by each processor to fir allow better dataflow performance. 
+
+![](../images/1343-compresscontent-image2-part2.png)
+
+* The CompressContent processor will use 1 CPU/concurrent task, so if this processor has 4 concurrent tasks and there are four files in the queue, then 4 CPUs will be utilized by this processor until the files have been compressed.
+  * For small files this becomes less of a resource bottleneck than dealing with large files. 
+  * Have small, medium and large files all go down a separate flow paths into 3 different CompressContent processors, each with their own number of concurrent tasks. 
+  * In the example above, all three CompressContent processors have one concurrent task. 
+
+---
+
+## Understanding Used Resources
+
+
+![](../images/1344-processor-info-part2.png)
+
+* Areas to optimize on:
+  * In: The amount of data that the Processor has pulled from the queues of its incoming Connections based on a sliding 5-minute window.
+  * Read/Write: The total size of the FlowFile content that the Processor has read from disk and written to disk.
+  * Out: The amount of data that the Processor has transferred to its outbound Connections. 
+  * Tasks/Time: Reflects the number of tasks that completed their run in the last 5 minutes and the reported total amount of time those tasks took to complete
+
+---
+
