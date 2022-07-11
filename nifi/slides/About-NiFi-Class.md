@@ -1,4 +1,4 @@
-# AI for Software Testing
+# NiFi
 
 
 
@@ -38,7 +38,6 @@ Notes:
 
    - Ask a lot of questions 
 
- * This is a NiFi class
  * This is a NiFi class
    - No previous knowledge is assumed (but may be helpful) 
    - Class will be based on the pace of majority of the students
@@ -119,8 +118,7 @@ Notes:
      - Your Name
      - Your background (developer, admin, manager, ...)
      - Technologies you are familiar with
-     - Familiarity with Python (scale of 1 - 4 ;  1 - new,   4 - expert)
-     - Familiarity with TensorFlow / Deep Learning (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Familiarity with NiFi (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.08, "top" : 6.08, "height" : 1.99, "width" : 2.25} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.36, "top" : 6.1, "height" : 1.92, "width" : 3.54} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 6.08, "height" : 1.99, "width" : 2.25} -->
