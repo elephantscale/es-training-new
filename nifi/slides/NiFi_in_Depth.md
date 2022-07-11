@@ -134,6 +134,37 @@
 
 ---
 
+## Let's go back to our FlowFile
+
+![](../images/18.png)
+
+## Process Group
+
+* Our Process Group is made of five processors
+* Let's analyze the processors from the top to the bottom
+* The first processor is a **GenerateFlowFile**
+* Let us analyze the GenerateFlowFile processor
+* Let us go through the properties tabs
+* And let us start it
+* Right click, investigate the menus
+
+## Go through the five processors
+* The first processor enhances the content but does not change the attributes
+* The second processor is a **ReplaceText**
+* Look at the last line
+
+![](../images/19.png)
+
+---
+
+## Here is our RegEx expression
+
+![](../images/20.png)
+
+---
+
+
+
 
 
 
