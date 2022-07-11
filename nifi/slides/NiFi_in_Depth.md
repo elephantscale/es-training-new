@@ -209,6 +209,47 @@ a,b,c,d
 
 ---
 
+## First use of Expression Language
+
+* We will be talking about the Expression Language
+* It is much more than this simple example
+![](../images/27.png)
+
+---
+
+## We will use the Expression Language
+* To create attribute
+* To manipulate content
+* Let us quickly look at some examples
+
+---
+
+## One more example
+
+![](../images/28.png)
+
+---
+
+## One more property
+
+![](../images/29.png)
+
+---
+
+## And the new property was generated
+
+![](../images/30.png)
+
+---
+
+## Lab - Expression Language
+
+* Follow the steps in the slides above
+
+---
+
+
+
 
 
 
