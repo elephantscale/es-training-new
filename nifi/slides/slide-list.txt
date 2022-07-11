@@ -1,5 +1,5 @@
 About-NiFi-Class.md
-../../course-outlines/accenture/NiFi.md
+../../course-outlines/accenture/NiFi_Outline.md
 NiFi_Overview.md
 NiFi_Intro.md
 NiFi_in_Depth.md
