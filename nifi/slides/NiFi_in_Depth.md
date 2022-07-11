@@ -321,4 +321,47 @@ a,b,c,d
 
 ---
 
+## Data Provenance
+
+* We can list what is the connector
+* 
+![](../images/42.png)
+
+---
+
+## Data Provenance
+
+* For that, we click on "List Queue"
+
+![](../images/43.png)
+
+---
+
+## Queue
+
+* Let's look at the queue
+
+![](../images/44.png)
+
+---
+
+## View detail
+
+* Click on the Information button
+* View the details
+
+![](../images/45.png)
+
+---
+
+## FlowFile attribute
+
+* Chose the tab "Attributes"
+* View the details
+
+![](../images/46.png)
+
+---
+
+
 
