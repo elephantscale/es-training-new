@@ -248,17 +248,77 @@ a,b,c,d
 
 ---
 
+## Monitoring NiFI
+
+* Here is the basic monitoring
+
+![](../images/31.png)
+
+---
+
+## Each processor has its own stats
+
+![](../images/32.png)
+
+---
+
+## Let's analyze the stats
+
+![](../images/33.png)
+
+---
+
+## Change the size
+
+![](../images/34.png)
+
+---
+
+## Status history
+
+![](../images/35.png)
+
+---
+
+## Stats for your queue
+
+![](../images/36.png)
+
+* Queue should not be too big
+* Queue should not be too small
+* Consider the back pressure
+
+---
+
+## Monitor summary
+
+![](../images/37.png)
+
+---
+
+## Summary display
+
+![](../images/38.png)
+
+---
+
+## Process groups stats
+
+![](../images/39.png)
+
+---
 
 
+## System diagnostics
 
+![](../images/40.png)
 
+---
 
+## 5-min stats
 
+![](../images/41.png)
 
-
-
-
-
-
+---
 
 
