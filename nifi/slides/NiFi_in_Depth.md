@@ -101,6 +101,45 @@
 
 ---
 
+
+## Quiz
+
+* Which of the following isn't a reason why a processor would show a warning sign and therefore can't be started?
+  * A. Some relationships are not auto-terminated or do not have connections
+  * B. An option parameter is not filled
+  * C. A mandatory parameter is not filled
+
+Notes:
+
+* B
+
+---
+
+## Quiz
+
+* A processor can have a connection to itself.
+  * A. True
+  * B. False
+
+Notes:
+
+* A.
+
+---
+
+## Quiz
+
+* The UI gives you information
+  * A. In real time
+  * B. Updated every 30 seconds
+  * C. Every 5 minutes
+
+Notes:
+
+* B.
+
+--- 
+
 ## Lab - process groups
 * Process groups and template exports
 * Please do the following lab

@@ -5,6 +5,7 @@ NiFi_Intro.md
 NiFi_in_Depth.md
 NiFi_ExpressionLanguage.md
 NiFi_Architecture.md
+NiFii-MiNiFi.md
 Nifi_DataflowOptimization.md
-NiFi_Quizzes.md
+
 
