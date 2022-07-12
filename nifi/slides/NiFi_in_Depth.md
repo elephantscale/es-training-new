@@ -396,5 +396,115 @@ a,b,c,d
 
 ## Data Provenance and Event Search
 
+* As above, data goes from step to step
+* But something does not work and you need to debug it
+* You can see the event connections
+* This is called data provenance
+
+![](../images/51.png)
+
+---
+
+## Click on Data provenance
+
+![](../images/52.png)
+
+---
+
+## Show lineage
+
+![](../images/53.png)
+
+---
+
+## Here's lineage
+
+![](../images/54.png)
+
+---
+
+## Slider on the bottom left
+
+
+![](../images/55.png)
+
+---
+
+## Processor relationships
+
+* ExtractText is not guaranteed to work
+* The CSV may be broken
+* You need to be able to handle errors
+
+![](../images/56.png)
+
+---
+
+## Configuration of ExtractText
+
+![](../images/58.png)
+
+---
+
+## Matched and unmatched
+
+![](../images/59.png)
+
+---
+
+
+## Add a processor for non-matched
+
+![](../images/60.png)
+
+---
+
+## Routing processor
+
+![](../images/61.png)
+
+---
+
+## Three routes
+
+![](../images/62.png)
+
+---
+
+## Quiz
+* How can I export a subset of my flow as a template?
+  * A. By selecting many of them while pressing shift and clicking on the export button
+  * B. By selecting a process group, entering it, and then exporting the content of the group as a template
+  * C. By clicking on the export button and then choosing which processors to export
+
+Notes:
+
+* B is the best practice
+
+---
+
+## Quiz
+
+* Processors can change both Attributes and Content of FlowFiles at the same time
+  * A. True
+  * B. False
+
+Notes:
+
+* A
+---
+
+## Quiz
+
+* You can reference the attribute `my_attribute` using the following Expression Language expression:
+  * `%my_attribute`
+  * `${my_attribute}`
+  * `attributes[my_attribute]`
+
+Notes
+
+* B.
+
+---
 
 ---
