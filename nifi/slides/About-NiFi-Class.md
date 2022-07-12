@@ -7,7 +7,7 @@
 
 ## Agenda - 2 days
 
-| 174 | Subject                            |
+| 200 | Subject                            |
 |-----|------------------------------------|
 | 10  | 01__About-NiFi-Class.pptx          |
 | 08  | 02__NiFi_Outline.pptx              |
@@ -16,7 +16,7 @@
 | 73  | 05__NiFi_in_Depth.pptx             |
 | 21  | 06__NiFi_ExpressionLanguage        |
 | 07  | 07__Architecture.pptx              |
-| 09  | 08__NiFi_MiNiFi.pptx               |
+| 07  | 08__NiFi_MiNiFi.pptx               |
 | 20  | 09__Nifi_DataflowOptimization.pptx |
 
 
