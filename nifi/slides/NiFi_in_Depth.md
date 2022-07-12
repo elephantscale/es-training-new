@@ -101,6 +101,45 @@
 
 ---
 
+
+## Quiz
+
+* Which of the following isn't a reason why a processor would show a warning sign and therefore can't be started?
+  * A. Some relationships are not auto-terminated or do not have connections
+  * B. An option parameter is not filled
+  * C. A mandatory parameter is not filled
+
+Notes:
+
+* B
+
+---
+
+## Quiz
+
+* A processor can have a connection to itself.
+  * A. True
+  * B. False
+
+Notes:
+
+* A.
+
+---
+
+## Quiz
+
+* The UI gives you information
+  * A. In real time
+  * B. Updated every 30 seconds
+  * C. Every 5 minutes
+
+Notes:
+
+* B.
+
+--- 
+
 ## Lab - process groups
 * Process groups and template exports
 * Please do the following lab
@@ -321,4 +360,190 @@ a,b,c,d
 
 ---
 
+## Data Provenance
 
+* We can list what is the connector
+* 
+![](../images/42.png)
+
+---
+
+## Data Provenance
+
+* For that, we click on "List Queue"
+
+![](../images/43.png)
+
+---
+
+## Queue
+
+* Let's look at the queue
+
+![](../images/44.png)
+
+---
+
+## View detail
+
+* Click on the Information button
+* View the details
+
+![](../images/45.png)
+
+---
+
+## FlowFile attribute
+
+* Chose the tab "Attributes"
+* View the details
+
+![](../images/46.png)
+
+---
+
+## Now, let's look at ReplaceText
+
+* Right-click on ReplaceText
+* Click on Configure
+
+![](../images/47.png)
+
+---
+
+## It will take anything 
+
+* And replace it with `a, b, c, d`
+
+![](../images/48.png)
+
+---
+
+## Now, let's run it
+* We will see that the attributes did not change
+* But the content is replaced with `a, b, c, d`
+
+![](../images/49.png)
+
+---
+
+## Let's analyze ExtractText
+
+![](../images/50.png)
+
+---
+
+## Data Provenance and Event Search
+
+* As above, data goes from step to step
+* But something does not work and you need to debug it
+* You can see the event connections
+* This is called data provenance
+
+![](../images/51.png)
+
+---
+
+## Click on Data provenance
+
+![](../images/52.png)
+
+---
+
+## Show lineage
+
+![](../images/53.png)
+
+---
+
+## Here's lineage
+
+![](../images/54.png)
+
+---
+
+## Slider on the bottom left
+
+
+![](../images/55.png)
+
+---
+
+## Processor relationships
+
+* ExtractText is not guaranteed to work
+* The CSV may be broken
+* You need to be able to handle errors
+
+![](../images/56.png)
+
+---
+
+## Configuration of ExtractText
+
+![](../images/58.png)
+
+---
+
+## Matched and unmatched
+
+![](../images/59.png)
+
+---
+
+
+## Add a processor for non-matched
+
+![](../images/60.png)
+
+---
+
+## Routing processor
+
+![](../images/61.png)
+
+---
+
+## Three routes
+
+![](../images/62.png)
+
+---
+
+## Quiz
+* How can I export a subset of my flow as a template?
+  * A. By selecting many of them while pressing shift and clicking on the export button
+  * B. By selecting a process group, entering it, and then exporting the content of the group as a template
+  * C. By clicking on the export button and then choosing which processors to export
+
+Notes:
+
+* B is the best practice
+
+---
+
+## Quiz
+
+* Processors can change both Attributes and Content of FlowFiles at the same time
+  * A. True
+  * B. False
+
+Notes:
+
+* A
+---
+
+## Quiz
+
+* You can reference the attribute `my_attribute` using the following Expression Language expression:
+  * `%my_attribute`
+  * `${my_attribute}`
+  * `attributes[my_attribute]`
+
+Notes
+
+* B.
+
+---
+
+---

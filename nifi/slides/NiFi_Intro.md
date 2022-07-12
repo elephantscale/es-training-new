@@ -240,6 +240,44 @@ chain with routes on attributes
 
 ---
 
+## Quiz
+* What are the three main building blocks of Apache NiFi?
+  * A. Connectors, Processors, and Data Containers
+  * B. Connectors, Processors, and Flow Files
+  * C. Links, Processors, and Flow Files
+  * D. Links, Transforms, and Flow Files
+
+Notes:
+
+* B
+
+---
+
+## Quiz
+* What is Apache NiFi not good at?
+  * A. Reliable and secure transfer of data between systems
+  * B. Complex Event processing
+  * C. Delivery of data from sources to analytic platforms
+  * D. Basic enrichment and preparation of data
+
+---
+
+
+## Quiz
+
+* How can I make sure NiFi is launched at every reboot?
+  * A. It is impossible
+  * B. Install NiFi a service
+
+Notes:
+
+* B.
+
+* (this is only possible on Linux and Mac OSX) see https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#installing-as-a-service
+
+---
+
+
 ## Generate data lab
 
 ---

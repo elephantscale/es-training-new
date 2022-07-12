@@ -190,5 +190,159 @@
     ${filename:equals('hello.txt')}   true if filename is 'hello.txt'
     ${filename:equalsIgnoreCase('hello.txt')} also true if filename is 'HELLO.txt'
 ```
+
 ---
+
+## Boolean Comparison
+
+* _gt ge lt le_ inequality comparison operators
+
+```bash
+    ${fileSize:gt( 1024 )} true if the size of the FlowFile’s content > 1024 bytes. 
+    ${fileSize:ge( 1024 )} true if the size of the FlowFile’s content >= 1024 bytes.
+    ${fileSize:lt( 1048576 )}  true if the size of the FlowFile’s content < 1 megabyte
+    ${fileSize:le( 1048576 )}  true if the size of the FlowFile’s content <= 1 megabyte
+
+```
+* _and_ returns true if the subject and the argument are both true
+* _or_ returns true if the subject or the argument are true
+* _not_ flips the logical value of the argument
+* For example, check if the filename is both all lower-case and has at least 5 characters
+  
+```bash
+    ${filename:toLower():equals( ${filename} ):and(
+	${filename:length():ge(5)}
+    )}
+```
+* Check if either the filename has exactly 5 characters or if the filename is all lower-case.
+```bash
+    ${filename:toLower():equals( ${filename} ):or(
+	${filename:length():equals(5)}
+    )}
+```
+---
+## ifElse Operator
+
+* Evaluates the first argument if the Subject evaluates to true, or the second argument if the Subject evaluates to false.
+
+```bash
+    ${literal(true):ifElse('a','b')}  ->   a
+    ${literal(false):ifElse('a','b')}  ->   b
+    ${filename:isNull():not():ifElse('found', 'not_found')}  -> found
+```
+
+
+---
+## String Manipulation
+
+* _toUpper toLower_ converts all letters to the corresponding case
+* _trim_ removes leading and trailing whitespace
+* _substring_ returns a substring of the subject starting at a provided location and an optional ending location
+* _substringBefore substringBeforeLast substringAfterLast_ returns a substring relative to the occurrence of the provided argument string
+  
+```bash
+    // filename = "a brand new filename.txt"
+    ${filename:substring(0,1)} -> 'a'
+    ${filename:substring(12)} -> 'filename.txt'
+    ${filename:substringBefore('.')} -> 'a brand new filename'
+    ${filename:substringAfter(' n')} -> 'ew filename.txt'
+```
+
+---
+
+## String Manipulation
+
+* There are more string manipulation functions including:
+* _getDelimitedField_ 0arses the Subject as a delimited line of text and returns just a single field from that delimited text.
+* _append prepend padleft padright_ adds strings or whitespace to the start or end of a string
+* _replace replaceEmpty replaceNull_ performs replacement operations in the subject - can use regular expressions as patterns to match.
+* And more not covered here
+  
+```bash
+     // filename = "a brand new filename.txt"
+     // greetings = "hello"
+
+     ${filename:replace(' ', '.')} -> 'a.brand.new.filename.txt'
+     // replace a '.' and all characters following with an empty string
+     ${filename:replaceAll('\..*', '')} -> 'a brand new filename'
+     ${greetings:padLeft(10, '@')} -> '@@@@@hello'
+```
+
+---
+
+## Encode/Decode Functions
+
+* Strings may be encoded according to a specific data formate, JSon for example
+* These functions assist in the conversions process
+* _escapeJson escapeXml escapeCsv escapeHtml4_ escapes the control characters for use in the specified format
+* _unescapeJson unescapeXml unescapeCsv unescapeHtml4_ performs the converse of the corresponding escape function
+
+```bash
+    ${literal('He didn’t say, "Stop!"',):escapeJson()} -> 'He didn’t say, \"Stop!\"'
+    ${literal( 'He didn’t say, \"Stop!\"',):escapeJson()} -> 'He didn’t say, "Stop!"'
+
+```
+---
+
+## Encode/Decode Functions
+
+* _urlEncode_ Returns a URL-friendly version of the Subject. 
+* _urlDecode_ Converts a URL-friendly version of the Subject into a human-readable form.
+* _base64Encode_ Returns a Base64 encoded string. 
+* _base64Decode_ Reverses the Base64 encoding on given string.
+* _hash_  Returns a hex encoded string using the hash algorithm provided
+
+```bash
+    // url = "https://nifi.apache.org/some value with spaces"
+    ${url:urlEncode()} -> "https%3A%2F%2Fnifi.apache.org%2Fsome+value+with+spaces"
+    ${literal("admin:admin"):base64Encode()} -> "YWRtaW46YWRtaW4="
+    ${literal("string value"):hash('SHA-256')} -> 
+    "9b6a1a9167a5caf3f5948413faa89e0ec0de89e12bef55327442e60dcc0e8c9b"
+```
+
+---
+
+## Math and Date Functions
+
+* There are a number of functions that allow basic math operations
+  * _add divide multiply minus random_ and other related functions
+* Standard date functions include functions for formatting dates, creating date objects and getting the current time and date.
+
+```bash
+    ${literal(100):multiply(1024)} -> 102400
+    ${random():mod(10):plus(1)}  -> random number between 1 and 10 inclusive.
+
+    ${time:format("yyyy/MM/dd HH:mm:ss.SSS'Z'", "GMT")}
+        -> 2014/12/31 20:36:03.264Z
+
+    ${now()} -> The current date and time to the nearest millisecond
+    
+```
+
+---
+
+## Evaluating Multiple Attributes
+
+* These operations allow for evaluating the same conditions against groups of attributes at the same time. These do not take a subject.
+* _anyAttribute_ Checks to see if any of the given attributes, match the given condition.
+* _allAttributes_ Checks to see if all of the given attributes match the given condition
+* _anyMatchingAttribute_ Checks to see if any of the given attributes that match a regular expression, match the given condition. There is an analogous _allMatchingAttributes_
+
+
+```bash
+
+    // The "abc" attribute contains the value "hello world", 
+    // The "xyz" attribute contains "good bye world", 
+    // And the "filename" contains "file.txt" 
+
+    ${anyAttribute("abc", "xyz"):contains("bye")} -> true
+    ${allAttributes("abc", "xyz"):contains("world")} -> true
+    ${allAttributes("abc", "xyz"):contains("hello")} -> false
+    ${anyMatchingAttribute("[ax].*"):contains('bye')} -> true
+    ${allMatchingAttributes(".*"):isNull()}
+
+```
+
+---
+
 
