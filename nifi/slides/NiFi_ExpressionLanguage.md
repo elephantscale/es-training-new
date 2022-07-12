@@ -1,10 +1,10 @@
- NiFi Expression Language
+# NiFi Expression Language
 
 ---
 
 ## Introduction
 
-* A flowfile consists of two main sections
+* A FlowFile consists of two main sections
   * The data or content of the file
   * The meta-data or attributes of the flowfile
 * Attributes are key-value pairs
