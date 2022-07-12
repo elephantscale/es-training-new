@@ -44,7 +44,8 @@ Notes:
  * This is a NiFi class
    - No previous knowledge is assumed (but may be helpful) 
    - Class will be based on the pace of majority of the students
-Notes:
+   
+Notes
 
 
 ---
@@ -61,7 +62,7 @@ Notes:
 
 
 
-Notes:
+Notes
 
 ---
 
@@ -73,7 +74,7 @@ Notes:
 <img src="../../assets/images/about/any-key.png" style="width:50%;"/> <!-- {"left" : 1.37, "top" : 2.26, "height" : 5.65, "width" : 7.51} -->
 
 
-Notes:
+Notes
 
 
 ---
@@ -91,7 +92,7 @@ Notes:
 <img src="../../assets/images/about/classroom-instruction.png" style="width:70%;"/> <!-- {"left" : 0.6, "top" : 2.06, "height" : 4.96, "width" : 9.04} -->
 
 
-Notes:
+Notes
 
 
 

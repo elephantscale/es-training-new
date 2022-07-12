@@ -93,7 +93,7 @@ Remote Processing Groups:
 * *NiFi:* consolidates multiple MiNiFi data sources and routes it to various systems and applications.
 
 
-notes:
+Notes
 
 image credit: https://www.freecodecamp.org/news/building-an-iiot-system-using-apache-nifi-mqtt-and-raspberry-pi-ce1d6ed565bc/
 
