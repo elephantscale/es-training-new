@@ -7,5 +7,5 @@ NiFi_ExpressionLanguage.md
 NiFi_Architecture.md
 NiFii-MiNiFi.md
 Nifi_DataflowOptimization.md
-
+NiFi_Kafka.md
 
