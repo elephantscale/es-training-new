@@ -17,7 +17,7 @@
 
 ## Structure of a Terraform Application
 
-* A terraform application is made up of modules
+* A Terraform application is made up of modules
   - A module is a directory that contains terraform source files
   - Any text file with a _.tf_ extension is a terraform source file
 * The main module we run the _terraform_ utility from is called the __root__ module
