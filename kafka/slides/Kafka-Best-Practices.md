@@ -203,7 +203,7 @@ Notes:
   - De-compress messages on consumer side
   - Messages remain in compressed state in partitions
 
-<img src="../../assets/images/kafka/compression-1.png"  style="width:70%;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
+<img src="../../assets/images/kafka/compression-1.png"  style="width:60%;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
 
 ---
 

@@ -882,7 +882,7 @@ Auto.offset.reset other valid value is "earliest" - meaning read entire partitio
 * Range assignment (default)
     - `partition.assignment.strategy = RangeAssignor`
 
-<img src="../../assets/images/kafka/partition-range-1.png" style="width:45%;"/><!-- {"left" : 0.5, "top" : 3.43, "height" : 3.82, "width" : 9.26} -->
+<img src="../../assets/images/kafka/partition-range-1.png" style="width:40%;"/><!-- {"left" : 0.5, "top" : 3.43, "height" : 3.82, "width" : 9.26} -->
 
 * Random assignment
     - `partition.assignment.strategy = RoundRobinAssignor`
