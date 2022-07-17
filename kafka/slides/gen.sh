@@ -8,12 +8,12 @@
 ##	./gen.sh  pptx pdf
 
 ## 2 days 
-(cd ../../course-outlines; pandoc kafka-intro-2days-outline.md  -o ../kafka/kafka-intro-2days-outline.docx)
-(cd ../../course-outlines;  pandoc kafka-intro-2days-outline.md  -o ../kafka/kafka-intro-2days-outline.pdf)
+(cd ../../course-outlines; pandoc kafka-intro-2-days-outline.md  -o ../kafka/kafka-intro-2-days-outline.docx)
+(cd ../../course-outlines;  pandoc kafka-intro-2-days-outline.md  -o ../kafka/kafka-intro-2-days-outline.pdf)
 
 ## 3 days 
-(cd ../../course-outlines; pandoc kafka-intro-3days-outline.md  -o ../kafka/kafka-intro-3days-outline.docx)
-(cd ../../course-outlines; pandoc kafka-intro-3days-outline.md  -o ../kafka/kafka-intro-3days-outline.pdf)
+(cd ../../course-outlines; pandoc kafka-intro-3-days-outline.md  -o ../kafka/kafka-intro-3-days-outline.docx)
+(cd ../../course-outlines; pandoc kafka-intro-3-days-outline.md  -o ../kafka/kafka-intro-3-days-outline.pdf)
 
 
 ## 4 days
@@ -25,9 +25,9 @@
 # $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh   -d 0-slide-assembly-4-days.txt $@
 
 ## 3 days
-$ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-3-days.txt $@
+$ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-intro-3-days.txt $@
 
 ## 2 days
-# $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-2-days.txt $@
+# $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-intro-2-days.txt $@
 
 

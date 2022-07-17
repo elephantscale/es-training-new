@@ -1,56 +1,50 @@
 # Confluent Platform
 
+<img src="../../assets/images/logos/confluent-logo-1.png" style="width:60%;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
+<img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
 
 ---
 
+## Module Objective
+
+* Learn about Confluent platform
+
+---
 
 ## Confluent Platform
 
+<img src="../../assets/images/kafka/confluent-platform-1.png" style="width:60%;float:right;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
 
- * Single Download includes
+* Confluent platform has the following:
 
-     - Apache Kafka
+* Free features:
+    - Apache Kafka
+    - KSQL
+    - Connectors (many types of databases)
+    - Schema Registry
 
-     - Community features - free 
+* Commercial features
+    - Control Center
+    - Replicator
 
-        * KSQL
-
-        * Connectors (many types of databases)
-
-        * Schema Registry
-
-     - Commercial features - 30 day trial (Beware!)
-
-        * Control Center
-
-        * Replicator
-
-Notes: 
-
-
+Notes:
 
 ---
 
-## Lab 8.1: Setup Confluent
+## Lab: Setup Confluent Platform
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- *  **Overview:** Download, install and start Confluent
+* **Overview:**
+    - Download, install and start Confluent
 
- *  **Builds on previous labs:** None
+* **Approximate Time:**
+    - 30 - 40 mins
 
- *  **Approximate Time:** 30 - 40 mins
+* **Instructions:**
+     - CONFLUENT-1
 
- *  **Instructions:**
-
-     - Please follow: lab 8.1
-
- *  **To Instructor:**
-
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
@@ -58,23 +52,15 @@ Notes:
 
 ---
 
-
 ## Deserializers
 
+* Producers serialize Objects into bytes and send into Kafka
 
- * Producers serialize Objects into bytes
-
-     - serializers
-
- * Consumers read bytes from Kafka and convert them back to Objects
+* Consumers read bytes from Kafka and convert them back to Objects
 
 <img src="../../assets/images/kafka/Deserializers.png" alt="Deserializers.png" style="width:70%;"/><!-- {"left" : 0.62, "top" : 3.61, "height" : 2.51, "width" : 9} -->
 
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
@@ -82,80 +68,71 @@ Notes:
 
 <img src="../../assets/images/kafka/3rd-party/Standard-Kafka-SerDe-2.png" alt="Standard-Kafka-SerDe-2.png" style="width:30%;float:right;"/><!-- {"left" : 6.94, "top" : 1.05, "height" : 5.69, "width" : 3.19} -->
 
- * Kafka comes with Serializers Deserializers for standard Java types
+* Kafka comes with Serializers Deserializers for standard Java types
 
- * Can be found in package **org.apache.kafka.common.serialization** 
+* Can be found in package **org.apache.kafka.common.serialization** 
 
- * We need to provide SerDe classes for custom types
+* We need to provide SerDe classes for custom types
 
- * Can use Avro  
+* Can use Avro  
 
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
-## Schema Evolution
+## Schemas Evolve in Real Life
 
+* Let's say we have messages in the following format
 
- * Initial Message Format
+* Version 1
 
-| Id    	| Type  	| Success 	|
-|-------	|-------	|---------	|
-| 12345 	| Click 	| YES     	|
+| Id    | Type  | Success |
+|-------|-------|---------|
+| 12345 | Click | YES     |
 
 <!-- {"left" : 0.25, "top" : 1.79, "height" : 1, "width" : 9.75} -->
 
+* Version 2
 
- * Version 2
-
-| Id    	| Type  	| Success 	| Message        	|
-|-------	|-------	|---------	|----------------	|
-| 12345 	| Click 	| YES     	| Page not found 	|
+| Id    | Type  | Success | Message        |
+|-------|-------|---------|----------------|
+| 12345 | Click | YES     | Page not found |
 
 <!-- {"left" : 0.25, "top" : 3.67, "height" : 1, "width" : 9.75} -->
 
- * Q: How will the consumer process this?
+* Q: How will the consumer process this?
 
-Notes: 
-
-
-
+Notes:
 
 ---
 
 ## Apache Avro
 
+* Data serialization format
 
- * Data serialization format
+* Created for Hadoop project
 
- * Created for Hadoop project
+* Language neutral; can be used from C, Java, Python ..etc
 
- * Language neutral
+* Schema is described in JSON format
 
- * Schema is described in JSON format
+* Data is stored in binary format
 
- * Data is stored in binary format
+* **Supports schema evolutions**
 
- *  **_Supports schema evolutions_** 
+* Use KafkaAvroSerializer
 
- * Use KafkaAvroSerializer
+* [Apache Avro](https://avro.apache.org/)
 
-Notes: 
-
-
-
+Notes:
 
 ---
 
 ## Avro Schema
 
+* Version 1
 
-```text
-// version 1
+```json
 {"namespace": "com.example.videos",
   "type": "record",
   "name": "Event",
@@ -168,8 +145,9 @@ Notes:
 ```
 <!-- {"left" : 0, "top" : 1.35, "height" : 3.19, "width" : 7.94} -->
 
-```text
-// version 2
+* Version 2
+
+```json
 {"namespace": "com.example.videos",
   "type": "record",
   "name": "Event",
@@ -182,152 +160,103 @@ Notes:
 ```
 <!-- {"left" : 0, "top" : 4.99, "height" : 2.93, "width" : 10.25} -->
 
-
-Notes: 
-
-
-
-
----
-
-## Schema Registry
-
-
-<img src="../../assets/images/kafka/Schema-Registry.png" alt="Schema-Registry.png" style="width:70%;"/><!-- {"left" : 0.4, "top" : 2.75, "height" : 3.57, "width" : 9.44} -->
-
-
-Notes: 
-
-
+Notes:
 
 ---
 
 ## Confluent Schema Registry
 
+* Manages schemas and versions
 
- * Manages schemas and versions
+* Provides REST API for interactions
 
- * Provides REST API for interactions
+* Works with Kafka seamlessly
 
- * Works with Kafka seamlessly
+* Open-source, downloadable as part of Confluent distribution
 
- * Open-source, downloadable as part of Confluent distribution
+* [Documentation](https://docs.confluent.io/current/schema-registry/docs/index.html)
 
- * (https://docs.confluent.io/current/schema-registry/docs/index.html)
+<img src="../../assets/images/kafka/Schema-Registry.png" alt="Schema-Registry.png" style="width:70%;"/><!-- {"left" : 0.4, "top" : 2.75, "height" : 3.57, "width" : 9.44} -->
 
-Notes: 
-
-
+Notes:
 
 ---
 
 ## Schema Registry Basics
 
+* Schema
+    - Structure of an Avro data format
 
- * Schema
+* Subject
+    - Scope of the schema. Subject name is derived from topic name by default
 
-     - Structure of an Avro data format
-
- * Subject
-
-     - Scope of the schema. Subject name is derived from topic name by default
-
-     - Schemas can be registered under multiple subjects
+    - Schemas can be registered under multiple subjects
 
         * Automated transparently from Producer as well
 
- * Register a new schema:
+* Register a new schema:
 
-     - `curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" / --data '{"schema": "{/"type/": /"string/"}"}' / http://localhost:8081/subjects/Kafka-value/versions {"id":1} `
+```bash
+curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" / \
+ --data '{"schema": "{/"type/": /"string/"}"}' / \
+ http://localhost:8081/subjects/Kafka-value/versions {"id":1} 
+```
 
-Notes: 
-
-Schemas can be registered for the Key as well.   .... /subjects/Kafka-key/versions
-
+Notes:
 
 ---
 
 ## Schema Registry Examples
 
-
  * List all schemas under a subject
 
-     -  `curl -X GET http://localhost:8081/subjects/Kafka-value/versions 
-        [1] `
+```bash
+curl -X GET http://localhost:8081/subjects/Kafka-value/versions
+```
 
+* Fetch version 1 of the schema
 
- * Fetch version 1 of the schema
+```bash
+curl -X GET http://localhost:8081/subjects/Kafka-value/versions/1 
 
-     -  `curl -X GET http://localhost:8081/subjects/Kafka-value/versions/1 
-{"subject":"Kafka-value", "version":1,"id":1,"schema":"\"string\""}`
+# {"subject":"Kafka-value", "version":1,"id":1,"schema":"\"string\""}`
+```
 
+* Register the same schema under a different subject
 
- * Register the same schema under a different subject
+```bash
+curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" \ 
+  --data '{\"schema\": "{\"type\": \"string\"}"}' http://localhost:8081/subjects/Kafka2-value/versions 
 
-     -  `curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" \ --data '{\"schema\": "{\"type\": \"string\"}"}' http://localhost:8081/subjects/Kafka2-value/versions 
-{"id":1} `
+# {"id":1}
+```
 
-
-Notes: 
-
-
-
-
----
-
-## Lab 8.2: AVRO Schema Lab
-
-
- *  **Overview:** Create a schema for clickstream data
-
- *  **Builds on previous labs:** Lab 4
-
- *  **Approximate Time:** 30 - 40 mins
-
- *  **Instructions:** 
-
-     - Please follow: lab 8.2
-
- *  **To Instructor:** 
-
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
-# KSQL
+## Lab: AVRO Schema Lab
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Create a schema for clickstream data
+
+* **Approximate Time:**
+    - 30 - 40 mins
+
+* **Instructions:**
+    - CONFLUENT-2: Avro
+
+Notes:
 
 ---
 
-## KSQL 
+## Review and Q&A
 
-* Please see KSQL.md
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
 
----
+* Let's go over what we have covered so far
 
-## Review Questions
-
-
- * Is Confluent open source?
-
- * What is Avro? Why use it?
-
- * What is KSQL?
-
-Notes: 
-
-
-
-
----
-
-## Lesson Summary
-
-
-Notes: 
-
-
-
+* Any questions?

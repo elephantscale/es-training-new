@@ -1,0 +1,22 @@
+
+
+## Course outline
+../kafka-advanced-2-days-outline.pdf
+
+# About
+About-Kafka-Class-Advanced-2-days.md
+
+# Kafka
+Kafka-Intro.md
+#../../../es-training/zookeeper/slides/ZK-1__Intro.md
+#zookeeper-primer.md
+Kafka-API.md
+Kafka-Streams.md
+Kafka-Confluent.md
+KSQL.md
+Kafka-Connect.md
+Kafka-Admin.md
+Kafka-Monitoring.md
+Kafka-Best-Practices.md
+Kafka-Case-Studies.md
+Kafka-Design-Exercises.md

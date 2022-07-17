@@ -1,4 +1,6 @@
-# KSQL 
+# KSQL
+
+<img src="../../assets/images/logos/KSQL-logo-1.jpg" style="width:20%;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
 
 ---
 
@@ -105,21 +107,21 @@ Notes:
 
  * Create a KSQL Stream from a topic
 
-```text
-       CREATE STREAM clickstream 
-       (viewtime BIGINT, sessionid VARCHAR, domain VARCHAR) 
-       WITH  (KAFKA_TOPIC= clickstream', 
-       VALUE_FORMAT='DELIMITED', KEY='domain');
+```sql
+CREATE STREAM clickstream 
+(viewtime BIGINT, sessionid VARCHAR, domain VARCHAR) 
+WITH  (KAFKA_TOPIC= clickstream', 
+VALUE_FORMAT='DELIMITED', KEY='domain');
 ```
 <!-- {"left" : 0, "top" : 1.94, "height" : 1.37, "width" : 10.25} -->
 
  * Create a KSQL Table from a topic
 
-```text
-       CREATE TABLE clicks 
-       (viewtime BIGINT, sessionid VARCHAR, domain VARCHAR) 
-       WITH  (KAFKA_TOPIC= clickstream', 
-       VALUE_FORMAT= 'DELIMITED', KEY='domain');
+```sql
+CREATE TABLE clicks 
+(viewtime BIGINT, sessionid VARCHAR, domain VARCHAR) 
+WITH  (KAFKA_TOPIC= clickstream', 
+VALUE_FORMAT= 'DELIMITED', KEY='domain');
 ```
 <!-- {"left" : 0, "top" : 3.85, "height" : 1.37, "width" : 10.25} -->
 
@@ -135,10 +137,10 @@ Notes:
 
  * Aggregations in KSQL always result in a KSQL Table
 
-```text
-      CREATE TABLE click_counts AS
-          SELECT domain, count(*) FROM clickstream 
-              GROUP BY domain;
+```sql
+CREATE TABLE click_counts AS
+    SELECT domain, count(*) FROM clickstream 
+        GROUP BY domain;
 ```
 
 <!-- {"left" : 0, "top" : 2.12, "height" : 1.22, "width" : 8.94} -->
@@ -146,11 +148,11 @@ Notes:
 
  * Aggregate over a tumbling window
 
-```text
-     CREATE TABLE clicks_per_min AS
-         SELECT domain, count(*) FROM clickstream
-           WINDOW TUMBLING (SIZE 60 SECONDS)
-             GROUP BY domain;
+```sql
+CREATE TABLE clicks_per_min AS
+    SELECT domain, count(*) FROM clickstream
+    WINDOW TUMBLING (SIZE 60 SECONDS)
+        GROUP BY domain;
 ```
 <!-- {"left" : 0, "top" : 3.71, "height" : 2.32, "width" : 8.94} -->
 
@@ -161,24 +163,20 @@ Compare this code to what was done in the Kafka Streams lab to group by and coun
 
 ---
 
-## Lab 8: KSQL Lab
+## Lab: KSQL Lab
 
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- *  **Overview:** Use KSQL to build streams and tables
+* **Overview:**
+    - Use KSQL to build streams and tables
 
- *  **Builds on previous labs:**
+* **Approximate Time:**
+    - 30 - 40 mins
 
- *  **Approximate Time:** 30 - 40 mins
+* **Instructions:**
+    - KSQL-1
 
- *  **Instructions:**
-
-     - Do Lab 8.3
-
-
-Notes: 
-
-
-
+Notes:
 
 ---
 
@@ -331,6 +329,15 @@ Notes:
 
 <img src="../../assets/images/kafka/ksql-dedicating.png" alt="ksql-dedicating.png" style="width:65%;"/><!-- {"left" : 0.63, "top" : 2.31, "height" : 4.45, "width" : 8.98} -->
 
+---
 
+## Review and Q&A
+
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+
+* Let's go over what we have covered so far
+
+* Any questions?
 
 

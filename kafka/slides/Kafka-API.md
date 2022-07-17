@@ -1,5 +1,7 @@
 # Kafka API
 
+<img src="../../assets/images/logos/kafka-logo-1.png" style="width:20%;" /><!-- {"left" : 2.6, "top" : 5.84, "height" : 2.59, "width" : 2.38} -->
+
 
 ---
 
