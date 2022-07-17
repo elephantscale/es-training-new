@@ -37,7 +37,7 @@
   - This file must be named _terraform.tfvars_
 * Terraform ignores all other files in the module that do not have *.tf extension  
 
-Notes:
+Notes
 
 The code referred to in the following slides is example 02-01
 
