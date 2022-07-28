@@ -1327,7 +1327,6 @@ select MAX(price) from items;
 ## Text Data Formats
 
 * Example data formats : CSV, JSON
-
 * CSV data
 
 ```text
@@ -1335,9 +1334,7 @@ name, gender, age
 John,M,40
 Jane,F,35
 ```
-<!-- {"left" : 0.8, "top" : 3.62, "height" : 1.83, "width" : 5.73} -->   
-
-<br/>
+<!-- {"left" : 0.8, "top" : 3.62, "height" : 1.83, "width" : 5.73} -->
 
 * JSON data
 
@@ -1350,7 +1347,6 @@ Jane,F,35
 * Pros:
     - Human-readable
     - Compatible with tools (export/import from DB for example)
-
 * Cons:
     - Not size-efficient to store
     - Not efficient to query
