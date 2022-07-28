@@ -1,8 +1,8 @@
+<img src="../../assets/images/logos/TriveraTech-logo-2-large.jpg" style="width:25%;float:right;" /> <!-- {"left" : 3.33, "top" : 6.2, "height" : 2.33, "width" : 2.33} -->
 
 # Working With Apache Spark3
 
 <img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /> <!-- {"left": 3.88, "top": 7.9, "height": 1.81, "width": 3.41} --> &nbsp;  &nbsp;
-<img src="../../assets/images/logos/TriveraTech-logo-2-large.jpg" style="width:25%;" /> <!-- {"left": 8.66, "top": 7.9, "height": 1.81, "width": 4.93} -->
 
 
 
