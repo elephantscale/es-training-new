@@ -5,7 +5,9 @@
 
 ## About the Course
 
-ElasticSearch is one of the leading search platforms. With LogStash, added for log collection, and Kibana for the dashboard, it becomes ELK, a popular log collection and analysis tool. The (licensed) X-pack brings together security, monitoring, and machine learning. All together, these components provide a platform for industrial search applications, and all of them are covered in this course.
+ElasticSearch is one of the leading search platforms. 
+With LogStash, added for log collection, and Kibana for the dashboard, it becomes ELK, a popular log collection and analysis tool. 
+New features include security, monitoring, and machine learning. All together, these components provide a platform for industrial search applications, and all of them are covered in this course.
 
 This course is intended for architects, developers, and administrators who are want to build versatile search solutions. It gives them practical level of experience, achieved through a combination of 50% lecture and 50% lab work. 
 
