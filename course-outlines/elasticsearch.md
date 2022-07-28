@@ -1,6 +1,7 @@
 # ElasticSearch
 
-Elephant Scale
+© Elephant Scale
+07/27/2022
 
 ## About the Course
 
@@ -14,12 +15,12 @@ Duration: 3 half days
 ## Audience
 Architects, Developers, Administrators
 
-## Course Prerequesites
- *  Be able to navigate Linux command lines
- *  Basic knowledge of command line Linux editors (VI / nano)
+## Course Prerequisites
+ *  Be able to navigate Linux command line
+ *  Basic knowledge of command line Linux editors (vi or nano)
 
 ## Lab Environment:
-Working environment will be provided for students.  Students would only need an SSH client and a browse.
+Working environment will be provided for students. Students would only need an SSH client and a browser.
 
 Zero Install: There is no need to install software on students' machines.
 
@@ -41,17 +42,15 @@ Zero Install: There is no need to install software on students' machines.
    - Data Visualization
    - The Kibana Dashboard
    - Designing for Scale
-   - The ELK Stack in Production
    - Use cases
-
-
- * X-Pack
-  - What's in X-Pack
-  - Security
-  - Monitoring
-  - Alerting and Notification
-  - Reporting
-  - Graph
+   
+ * Integrations
+  - What's in Integrations? 
+  - X-Pack now integrated into Elasticsearch
+  - Beats
+  - Elastic agent
+  - Web crawler
+  - Security threat detection and response
   - Machine Learning
 
 
