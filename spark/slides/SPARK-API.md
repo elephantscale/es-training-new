@@ -142,7 +142,11 @@ Notes:
 * Large collections will cause out-of-memory error in driver
 * Find a different way!
 
-<img src="../../assets/images/spark/driver-memory-executor-memory-1.png" style="width:70%;"/><!-- {"left" : 2.26, "top" : 5.79, "height" : 5.27, "width" : 12.98} -->  
+```bash
+spark-submit   --driver-memory 1g   --executor-memory 4g ....
+```
+
+<img src="../../assets/images/spark/driver-memory-executor-memory-1.png" style="width:60%;"/><!-- {"left" : 2.26, "top" : 5.79, "height" : 5.27, "width" : 12.98} -->  
 
 
 ---
