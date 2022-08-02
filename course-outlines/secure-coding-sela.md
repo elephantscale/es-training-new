@@ -2,11 +2,11 @@
 
 (C) Copyright Elephant Scale
 
-July 22, 2022
+August 2, 2022
 
 ## Overview
 
-* Cybersecurity has risen to the top priority discussion items, and it is the subject of the US-Russia presidential communications.
+* Cybersecurity has risen to the top priority discussion items, and it is the subject of international relations.
   The number of ransomware attacks doubled in the past year, and other attacks are on the rise.
 * This course teaches a comprehensive approach to cybersecurity. It starts with threat modeling, creating the lay of the land.
   It then continues with common attacks, with the principles of designing secure multi-layer systems, and goes into the details
