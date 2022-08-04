@@ -137,111 +137,111 @@ Lectures and hands-on labs. (50%, 50%)
 
 ### Python for Machine Learning and AI concepts
 
-### Machine Learning (ML) Overview
-* Machine Learning landscape
-* Understanding Deep Learning use cases
-* Understanding AI / Machine Learning / Deep Learning
-* Data and AI
-* AI vocabulary
-* Hardware and software ecosystem
-* Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
+* Machine Learning (ML) Overview
+  * Machine Learning landscape
+  * Understanding Deep Learning use cases
+  * Understanding AI / Machine Learning / Deep Learning
+  * Data and AI
+  * AI vocabulary
+  * Hardware and software ecosystem
+  * Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
 
-### Python Scikit-Learn Library
-* Scikit-Learn library overview
-* Lab:
-  - Scikit-Learn utilities
+* Python Scikit-Learn Library
+  * Scikit-Learn library overview
+  * Lab:
+    - Scikit-Learn utilities
 
-### Feature Engineering and Exploratory Data Analysis (EDA)
-* Preparing data for ML
-* Statistics Primer
-* Data cleanup
-* Extracting features, enhancing data
-* Visualizing Data
-* Labs:
-  - Data cleanup
-  - Exploring data
-  - Visualizing data
+* Feature Engineering and Exploratory Data Analysis (EDA)
+  * Preparing data for ML
+  * Statistics Primer
+  * Data cleanup
+  * Extracting features, enhancing data
+  * Visualizing Data
+  * Labs:
+    - Data cleanup
+    - Exploring data
+    - Visualizing data
 
-### Machine Learning Concepts
-* Training and Testing
-* Gradient Descent
-* Overfitting / Under-fitting
-* Cross validation, bootstrapping
-* Confusion Matrix
-* ROC curve, Area Under Curve (AUC)
-
-
-### Linear regression
-* Linear Regression
-* Errors, Residuals
-* Multiple Linear Regression
-* Evaluating model performance
-* Labs:
-  - Use case: House price estimates
-
-### Logistic Regression
-* Understanding Logistic Regression
-* Calculating Logistic Regression
-* Evaluating model performance
-* Labs:
-  - Credit card application
-  - college admissions
-
-### Classification: SVM (Supervised Vector Machines)
-* SVM concepts and theory
-* SVM with kernel
-* Labs:
-  -Customer churn data
-
-### Classification: Decision Trees & Random Forests
-* Classification and Regression Trees (CART) introduction
-* Decision Tree concepts
-* Pruning trees
-* Gini index
-* Bias Variance Tradeoff
-* Random Forest concepts
-* Random Forests features and examples
-* Labs:
-  - Predicting loan defaults
-  - Estimating election contributions
-
-### Classification: Naive Bayes
-* Naive Bayes theory
-* Running Naive Bayes algorithm
-* Evaluating model performance
-* Lab
-  - Spam filtering
-
-### Unsupervised Algorithms
-* Overview of unsupervised algorithms
-* Supervised vs. unsupervised
-* Understanding unsupervised algorithms
-
-### Unsupervised: Clustering:  K-Means
-* Theory behind K-Means
-* Running K-Means algorithm
-* Estimating the performance
-* Labs:
-  - Predicting Uber demand
-  - Clustering shopping trips
+* Machine Learning Concepts
+  * Training and Testing
+  * Gradient Descent
+  * Overfitting / Under-fitting
+  * Cross validation, bootstrapping
+  * Confusion Matrix
+  * ROC curve, Area Under Curve (AUC)
 
 
-### Unsupervised: Principal Component Analysis (PCA)
-* Understanding dimensions
-* 'Curse of dimensionality'
-* Reducing dimensions
-* Overview of Principal Component Analysis (PCA)
-* Eigen vectors and values
-* Implementing PCA algorithm
-* Labs:
-  - Predicting wine quality
-  - Predicting income from census data
+* Linear regression
+  * Linear Regression
+  * Errors, Residuals
+  * Multiple Linear Regression
+  * Evaluating model performance
+  * Labs:
+    - Use case: House price estimates
 
-### Recommendations
-* Recommendation use cases
-* Recommender systems
-* Collaborative Filtering (CF)
-* Implementing CF algorithm
-* Lab:
-  - Movie ratings recommendation
-  - Songs rating recommendation
+* Logistic Regression
+  * Understanding Logistic Regression
+  * Calculating Logistic Regression
+  * Evaluating model performance
+  * Labs:
+    - Credit card application
+    - college admissions
+
+* Classification: SVM (Supervised Vector Machines)
+  * SVM concepts and theory
+  * SVM with kernel
+  * Labs:
+    -Customer churn data
+
+* Classification: Decision Trees & Random Forests
+  * Classification and Regression Trees (CART) introduction
+  * Decision Tree concepts
+  * Pruning trees
+  * Gini index
+  * Bias Variance Tradeoff
+  * Random Forest concepts
+  * Random Forests features and examples
+  * Labs:
+    - Predicting loan defaults
+    - Estimating election contributions
+
+* Classification: Naive Bayes
+  * Naive Bayes theory
+  * Running Naive Bayes algorithm
+  * Evaluating model performance
+  * Lab
+    - Spam filtering
+
+* Unsupervised Algorithms
+  * Overview of unsupervised algorithms
+  * Supervised vs. unsupervised
+  * Understanding unsupervised algorithms
+
+* Unsupervised: Clustering:  K-Means
+  * Theory behind K-Means
+  * Running K-Means algorithm
+  * Estimating the performance
+  * Labs:
+    - Predicting Uber demand
+    - Clustering shopping trips
+
+
+* Unsupervised: Principal Component Analysis (PCA)
+  * Understanding dimensions
+  * 'Curse of dimensionality'
+  * Reducing dimensions
+  * Overview of Principal Component Analysis (PCA)
+  * Eigen vectors and values
+  * Implementing PCA algorithm
+  * Labs:
+    - Predicting wine quality
+    - Predicting income from census data
+
+* Recommendations
+  * Recommendation use cases
+  * Recommender systems
+  * Collaborative Filtering (CF)
+  * Implementing CF algorithm
+  * Lab:
+    - Movie ratings recommendation
+    - Songs rating recommendation
