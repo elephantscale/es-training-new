@@ -32,8 +32,8 @@ Architects, Developers, Administrators
 * [Elasticsearch datsets](https://github.com/elephantscale/datasets)
 
 ## Skill survey
-* [Pre-class](https://forms.gle/ouvUsi4PxP6mqXea7)
-* [Post-class](https://forms.gle/ouvUsi4PxP6mqXea7)
+* [Pre-class](https://forms.gle/eG3ykN39DriFK66NA)
+* [Post-class - TBD](https://forms.gle/eG3ykN39DriFK66NA)
 
 ## Course Outline:
 

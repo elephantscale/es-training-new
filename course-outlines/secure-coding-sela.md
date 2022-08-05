@@ -33,7 +33,7 @@ August 2, 2022
 
 
 ## Duration
-* Two days
+* Two days, 16 hours total
 
 ## Format
 * Lectures and hands on labs. (50% - 50%)
@@ -54,14 +54,14 @@ August 2, 2022
 
 ## Detailed outline
 
-### Threat modeling
+### Threat modeling - 3 hours
 * STRIDE attack classification
 * Security terminology
 * Threat modeling
 * CVSS attack assessment
 * Labs on threat modeling
 
-### Common attacks
+### Common attacks - 3 hours
 * Cross site scripting
 * Malicious file execution
 * Session hijacking
@@ -70,7 +70,7 @@ August 2, 2022
 * Failure to authorize/hidden URLs
 * Cross site request forgery (CSRF)
 
-### Countermeasures
+### Countermeasures - 2 hours
 
 * Validation
 * Validation controls
@@ -88,7 +88,7 @@ August 2, 2022
 * Entity Frameworks/Hibernate
 * Avoiding cross site request forgeries
 
-### Modern security frameworks
+### Modern security frameworks - 3 hours
 * Introduction to modern frameworks
 * Vault
 * Modern security design patterns
@@ -98,14 +98,14 @@ August 2, 2022
   * Encryption as a service
 * Where to go from here
 
-### Session security
+### Session security - 2 hours
 * Perfect Secrecy
 * Asymmetric and symmetric encryption
 * Session IDs
 * Policies
 * Hijacking/Fixation Attacks
 
-### Framework architecture
+### Framework architecture - 3 hours
 * Threading
 * Privileges
 * Audits/Logs
