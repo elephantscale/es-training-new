@@ -2,59 +2,37 @@
 ---
 
 
-## Agenda
+## Week 1
 
-
- * 10 days (TODO)
-
- *  **Day 1 (Learning Python: Intro)** 
-
-     - Python intro (types, lists, arrays...)
-
-     - NumPy
-
-     - Pandas
-
- *  **Day 2 (Learning Analytics: Intro - Intermediate)** 
-
-     - Statistics
-
-     - Visualization
-
-     - Introducing Scikit-learn
-
-     - Regression Analysis
-
-Notes: 
+| * | Day       | Subject                             |
+|---|-----------|-------------------------------------|
+| * | Monday    | Python installation and basics      |
+| * | Tuesday   | Python data structures              |
+| * | Wednesday | Libraries, File reading and writing |
+| * | Thursday  | SQL, Databases with Python          |
+| * | Friday    | Web programming                     |
 
 
 ---
 
+## Week 2
 
-## Agenda Continued
-
- *  **Day 3 (Data Analysis: Intermediate)**
-
-     - Cluster Analysis
-
-     - Classification
-
-     - Text Analytics
-
-     - Topic Modeling
-
-     - Recommendations
-
-
-Notes: 
+| * | Day       | Subject                        |
+|---|-----------|--------------------------------|
+| * | Monday    | Pandas                         |
+| * | Tuesday   | NumPy and SciPy                |
+| * | Wednesday | Scikit-Learn                   |
+| * | Thursday  | Spark, PySpark, and Databricks |
+| * | Friday    | Machine learning and AI        |
 
 
 ---
+
 
 ## Pre-requisites for Python Class
 
 
- * Basic Python knowledge is assumed
+ * No Python knowledge is assumed (but may be helpful)
 
  * Some software development experience (languages, databases, ...)
 
@@ -71,7 +49,6 @@ Notes:
 Notes: 
 
 
-
 ---
 
 ## Our Teaching Philosophy
@@ -79,7 +56,7 @@ Notes:
 
  * Emphasis on concepts & fundamentals
 
- * API
+ * No need to memorize any API
 
  * Highly interactive (questions and discussions are welcome)
 
@@ -173,7 +150,7 @@ Notes:
    - Your background (developer, admin, manager,...)
    - Technologies you are familiar with
    - Familiarity with Python (scale of 1 – 4 ;  1 – new,   4 – expert)
-   - Something non-technical about you!(favorite ice cream flavor / hobby...)
+   - Something non-technical about you!(favorite ice cream flavor, hobby, etc.)
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.02, "top" : 5.93, "height" : 2.02, "width" : 2.28} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.33, "top" : 5.96, "height" : 1.95, "width" : 3.59} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.94, "top" : 5.93, "height" : 2.02, "width" : 2.28} -->
  
