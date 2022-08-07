@@ -1,31 +1,28 @@
 ## to generate slides
 # $ES_HOME/utils/presentations/slides-assembler.sh   slide-order-python-complete.txt
 
-#day 1
 About-Python-Complete.md
 ../../course-outlines/python-language-complete.md
 PYTHON-Intro.md
 PYTHON-LanguageBasics.md
-
-# Day 2
-
-PYTHON-OOP.md
 PYTHON-Packages.md
 PYTHON-File.md
-
-# Day 3
-
 PYTHON-Database.md
+PYTHON-OOP.md
 PYTHON-Web.md
+PYTHON-BeautifulSoup.md
 PYTHON-Testing.md
-
-# Day 4: Data Science
 PYTHON-NumPy.md
 PYTHON-Pandas.md
 PYTHON-Visualization.md
-
-# 5
+PYTHON-Text-NLTK.md
+PYTHON-Text-Spacy.md
 PYTHON-Reactive.md
+PYTHON-MSOffice.md
+PYTHON-Selenium.md
+../../spark/slides/SPARK-Intro.md
+../../spark/slides/SPARK-Core.md
+../../spark/slides/SPARK-ML.md
 PYTHON-C.md
 PYTHON-Zeppelin.md
 

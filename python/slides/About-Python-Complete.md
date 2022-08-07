@@ -44,7 +44,7 @@
 
      - Ask a lot of questions 
 
- * This is an intro-intermediary class.
+ * This is an intro-intermediate class.
 
 Notes: 
 
