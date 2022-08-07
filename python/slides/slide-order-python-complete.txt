@@ -6,22 +6,25 @@ About-Data-Analytics-With-Python.md
 ../../course-outlines/python-language-complete.md
 PYTHON-Intro.md
 PYTHON-LanguageBasics.md
+
+# Day 2
+
 PYTHON-OOP.md
 PYTHON-Packages.md
 PYTHON-File.md
 
-# Day 2
+# Day 3
 
 PYTHON-Database.md
 PYTHON-Web.md
 PYTHON-Testing.md
 
-# Day 3: Data Science
+# Day 4: Data Science
 PYTHON-NumPy.md
 PYTHON-Pandas.md
 PYTHON-Visualization.md
 
-# Optional Topics
+# 5
 PYTHON-Reactive.md
 PYTHON-C.md
 PYTHON-Zeppelin.md
