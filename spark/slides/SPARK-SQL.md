@@ -234,22 +234,23 @@ df.filter(df("name") === "John").show() // note equal is ===
 df.filter("name == 'John'").show
 df.filter($"name" === "John").show
 
-//   +---+------+----+
-//   |age|gender|name|
-//   +---+------+----+
-//   | 35|     M|John|
-//   +---+------+----+
+//   +---+------+----+------+
+//   |age|gender|name|weight|
+//   +---+------+----+------+
+//   | 35|     M|John| 200.5|
+//   +---+------+----+------+
 
 df.filter(df("age") >35).show() 
 df.filter("age > 20").show
 df.filter($"age" > 20).show
 
-//   +---+------+----+
-//   |age|gender|name|
-//   +---+------+----+
-//   | 35|     M|John|
-//   | 40|     F|Jane|
-//   +---+------+----+
+//   +---+------+----+------+
+//   |age|gender|name|weight|
+//   +---+------+----+------+
+//   | 35|     M|John| 200.5|
+//   | 40|     F|Jane| 150.2|
+//   +---+------+----+------+
+
 ```
 <!-- {"left" : 0.8, "top" : 4.04, "height" : 7.67, "width" : 11.54} -->   
 
@@ -274,21 +275,21 @@ df = spark.read.json("people.json")
 df.filter(df["name"] == "John").show()
 df.filter("name == 'John'").show()
 
-#   +---+------+----+
-#   |age|gender|name|
-#   +---+------+----+
-#   | 35|     M|John|
-#   +---+------+----+
+#   +---+------+----+------+
+#   |age|gender|name|weight|
+#   +---+------+----+------+
+#   | 35|     M|John| 200.5|
+#   +---+------+----+------+
 
 df.filter(df["age"] > 20).show() 
 df.filter("age > 20").show()
 
-#   +---+------+----+
-#   |age|gender|name|
-#   +---+------+----+
-#   | 35|     M|John|
-#   | 40|     F|Jane|
-#   +---+------+----+
+#   +---+------+----+------+
+#   |age|gender|name|weight|
+#   +---+------+----+------+
+#   | 35|     M|John| 200.5|
+#   | 40|     F|Jane| 150.2|
+#   +---+------+----+------+
 ```
 <!-- {"left" : 0.8, "top" : 4.09, "height" : 7.42, "width" : 7.9} -->   
 
@@ -334,24 +335,92 @@ df.filter("age > 20").show()
 
 ---
 
-## Catalyst Query Optimzizer
+## Catalyst Query Optimizer
 
-* Catalyst Optimizer can really boost performance
-* DataFrames are lazily evaluated
-    - Catalyst can optimize bunch of instructions together
-    - It can combine / short-circuit / re-order operations
-* Re-ordering operations
-    - For example filter operations can be moved up if possible, this cuts down data flowing through stages
-* Using schema information optimizer can perform additional optimization
-    - For example comparing Integers is more efficient than comparing String
-* Catalyst is a 'multi phase' optimizer
+<!-- TODO: shiva -->
 
-<img src="../../assets/images/spark/3rd-party/catalyst-optimizer-1.png" style="width:70%;" /><!-- {"left" : 2.88, "top" : 8.33, "height" : 2.79, "width" : 11.73} -->   
+* Catalyst is a 'multi phase' optimizer, that can really boost performance
 
+<img src="../../assets/images/spark/3rd-party/catalyst-optimizer-1.png" style="width:70%;" /><!-- {"left" : 2.88, "top" : 8.33, "height" : 2.79, "width" : 11.73} -->
+
+* DataFrames are lazily evaluated; Catalyst can combine instructions together
+
+```python
+## say we are reading some data and filtering in 2 steps
+## We pass through the data twice
+a = spark.read....
+b = a.filter (x != null)
+c = b.filter (y != null)
+```
+
+```python
+## these 2 steps can be joined in single step as follows
+## we make  only a SINGLE pass over the data
+## And we don't need temporary variable 'b' either
+a = spark.read....
+c = a.filter (x != null && y != null)
+```
 
 ---
 
-## Predicate Pushdown Example
+## Catalyst:  Re-ordering Operations
+
+<!-- TODO: shiva -->
+
+* For example filter operations can be moved up if possible, this cuts down data flowing through stages
+
+* Filter first when possible
+
+```python
+# Here we do filter later in the stage
+
+a = spark.read....
+# say we read 10M rows
+
+b = 
+c = 
+d = 
+
+# we have carried forward 10M rows through the pipeline, and now we are discarding some rows!
+e = d.filter (...)
+```
+
+```python
+# move up filter, if possible
+
+a = spark.read....
+a.filter...
+# e.g after the filter we only carry forward 7M rows.  More efficient!
+
+b = 
+c = 
+d = 
+```
+
+---
+
+## Catalyst: Use Schema Information
+
+<!-- TODO: shiva -->
+
+* For example consider the following SQL code
+
+```sql
+select * from table
+where col1 > col2
+```
+
+* `col1` and `col2` can be integers / strings / boolean ..etc
+
+* If `col1` and  `col2` are integers then the optimizer would generate **specific code to compare integers**
+
+* If `col1` and `col2` are strings, then **string comparison code** would be used
+
+---
+
+## Catalyst: Predicate Pushdown
+
+<!-- TODO: shiva -->
 
 * Here we area reading data, and immediately filtering
     - So it makes sense to only read data that can pass the filter
@@ -362,20 +431,18 @@ df2 = df1.filter ("age > 30")
 ```
 <!-- {"left" : 0.8, "top" : 3.46, "height" : 1.27, "width" : 9.01} -->   
 
-
-<img src="../../assets/images/spark/optimizer-predictate-pushdown-1.png" style="width:70%;" /><!-- {"left" : 4.11, "top" : 5.35, "height" : 5.41, "width" : 9.28} -->   
-
+<img src="../../assets/images/spark/optimizer-predictate-pushdown-1.png" style="width:70%;" /><!-- {"left" : 4.11, "top" : 5.35, "height" : 5.41, "width" : 9.28} -->
 
 ---
 
-## Predicate Pushdown Example
+## Catalyst: Predicate Pushdown
 
 ```python
 df1 = spark.read.csv("...")
 df2 = df1.filter ("age > 30")
 df2.explain(extended=True)
 ```
-<!-- {"left" : 0.8, "top" : 1.75, "height" : 1.29, "width" : 6.28} -->   
+<!-- {"left" : 0.8, "top" : 1.75, "height" : 1.29, "width" : 6.28} --> 
 
 <pre>
 == Parsed Logical Plan ==
@@ -404,7 +471,9 @@ Filter (isnotnull(age#7L) AND (age#7L > 30))
 
 ---
 
-## Optimizer Code Generation
+## Catalyst: Code Generation
+
+<!-- TODO: shiva -->
 
 * As a final step, Catalyst may generate code for execution plans
 
@@ -412,8 +481,16 @@ Filter (isnotnull(age#7L) AND (age#7L > 30))
 
 * Codegen can really boost performance (sometimes 10x) for some queries!
 
-<img src="../../assets/images/spark/3rd-party/codegen-1.png" style="width:80%;" /><!-- {"left" : 2.93, "top" : 5.47, "height" : 2.77, "width" : 11.63} -->   
+* For example consider the following SQL code
 
+```sql
+select * from table
+where col1 > col2
+```
+
+* Catalyst will generate code depending on the types (int, string, boolean ..etc) of `col1` and  `col2`
+
+<img src="../../assets/images/spark/3rd-party/codegen-1.png" style="width:80%;" /><!-- {"left" : 2.93, "top" : 5.47, "height" : 2.77, "width" : 11.63} -->   
 
 ---
 
@@ -509,23 +586,24 @@ df.createOrReplaceTempView("people")
 // Step 3: Query away
 spark.sql("select * from people").show()
 
-//   +---+------+----+
-//   |age|gender|name|
-//   +---+------+----+
-//   | 35|     M|John|
-//   | 40|     F|Jane|
-//   | 18|     M|Mike|
-//   | 19|     F| Sue|
-//   +---+------+----+
+//   +---+------+----+------+
+//   |age|gender|name|weight|
+//   +---+------+----+------+
+//   | 35|     M|John| 200.5|
+//   | 40|     F|Jane| 150.2|
+//   | 18|     M|Mike| 120.0|
+//   | 19|     F| Sue| 100.0|
+//   +---+------+----+------+
 
 spark.sql("select * from people where age > 30").show()
 
-//   +---+------+----+
-//   |age|gender|name|
-//   +---+------+----+
-//   | 35|     M|John|
-//   | 40|     F|Jane|
-//   +---+------+----+
+//   +---+------+----+------+
+//   |age|gender|name|weight|
+//   +---+------+----+------+
+//   | 35|     M|John| 200.5|
+//   | 40|     F|Jane| 150.2|
+//   +---+------+----+------+
+
 ```
 <!-- {"left" : 0.8, "top" : 3.83, "height" : 7.86, "width" : 9.96} -->   
 
@@ -552,23 +630,23 @@ df.createOrReplaceTempView("people")
 # Step 3: Query away
 spark.sql("select * from people").show()
 
-#   +---+------+----+
-#   |age|gender|name|
-#   +---+------+----+
-#   | 35|     M|John|
-#   | 40|     F|Jane|
-#   | 18|     M|Mike|
-#   | 19|     F| Sue|
-#   +---+------+----+
+#   +---+------+----+------+
+#   |age|gender|name|weight|
+#   +---+------+----+------+
+#   | 35|     M|John| 200.5|
+#   | 40|     F|Jane| 150.2|
+#   | 18|     M|Mike| 120.0|
+#   | 19|     F| Sue| 100.0|
+#   +---+------+----+------+
 
 spark.sql("select * from people where age > 30").show()
 
-#   +---+------+----+
-#   |age|gender|name|
-#   +---+------+----+
-#   | 35|     M|John|
-#   | 40|     F|Jane|
-#   +---+------+----+
+#   +---+------+----+------+
+#   |age|gender|name|weight|
+#   +---+------+----+------+
+#   | 35|     M|John| 200.5|
+#   | 40|     F|Jane| 150.2|
+#   +---+------+----+------+
 ```
 <!-- {"left" : 0.8, "top" : 3.83, "height" : 7.86, "width" : 9.96} -->   
 
@@ -729,13 +807,11 @@ import spark.implicits._
 ```scala
 // go through all records
 > val df = spark.read
-                .option("inferSchema", "true")
                 .json("people.json")
 
-// go through 30%  records
+// go through 10%  records
 > val df = spark.read
-                .option("inferSchema", "true")
-                .option("samplingRatio", 0.3)
+                .option("samplingRatio", 0.1)
                 .json("people.json")
 
 > df.printSchema
@@ -766,10 +842,10 @@ Sue,F,19
 
 
 ```scala
-> val p = spark.read
-            .option("header", "true")
-            .option("samplingRatio", 0.3)
-            .csv("people.csv")
+// scala
+> val p = spark.read.option("header", "true")
+                    .option("inferSchema", "true")
+                    .csv("people.csv")
 
 > p.columns
 //   Array[String] = Array(name, gender, age)
@@ -779,9 +855,18 @@ Sue,F,19
 //   |-- name: string (nullable = true)
 //   |-- gender: string (nullable = true)
 //   |-- age: string (nullable = true)
-
 ```
 <!-- {"left" : 0.8, "top" : 6.1, "height" : 5.55, "width" : 11.29} -->   
+
+```python
+# python
+data = spark.read.csv("people.csv", header=True, inferSchema=True)
+data.printSchema()
+data.show()
+```
+
+<!-- TODO: shiva -->
+
 
 ---
 
@@ -864,6 +949,45 @@ peopleDF.printSchema()
 ```
 <!-- {"left" : 0.8, "top" : 2.53, "height" : 7.07, "width" : 15.95} -->   
 
+---
+
+## Handling Schema Mismatch!
+
+* What if our data doesn't exactly match the schema?
+* Here is some data; look at Sue's age; it is `x` (not a number!)
+* Spark will substitute `null` value for it and keep going
+
+```text
+name,gender,age
+John,M,35
+Jane,F,40
+Mike,M,18
+Sue,F,x
+```
+
+```python
+from pyspark.sql.types import StringType, IntegerType, StructField, StructType
+peopleSchema = StructType([
+		   StructField("name",   StringType(), True),
+		   StructField("gender", StringType(), True),
+		   StructField("age",    IntegerType(), True),
+		])
+people = (spark.read.option("header", "true")
+                    .schema(peopleSchema) 
+                    .csv("people3.csv"))
+people.show()
+```
+
+```text
++----+------+----+
+|name|gender| age|
++----+------+----+
+|John|     M|  35|
+|Jane|     F|  40|
+|Mike|     M|  18|
+| Sue|     F|null|
++----+------+----+
+```
 
 ---
 
@@ -881,7 +1005,7 @@ data = spark.read.json('sample.json')
 schema = data.schema()
 
 ## let's see the schema
-# print(json.dumps(schema.jsonValue(), indent=2))
+print(json.dumps(schema.jsonValue(), indent=2))
 # {
 #   "type": "struct",
 #   "fields": [
@@ -903,6 +1027,30 @@ schema = data.schema()
 ```
 <!-- {"left" : 0.8, "top" : 4.22, "height" : 7.33, "width" : 8.34} -->   
 
+---
+
+## Infer Schema from Small Set of Data
+
+<!-- TODO: shiva -->
+
+* Here, we are going to calculate the schema from a small sample of data (very fast)
+
+* And then use it for larger data set!
+
+```python
+# small data --> fast read!
+small_data = spark.read.json('sample-data.json')
+
+# extract the schema
+schema1 = small_data.schema()
+
+# now supply the schema for large data read
+large_data = spark.read.json('/data/large_json_data/', 
+                        schema=schema1) # <-- schema
+
+```
+
+* Since we supplied schema, Spark won't parse `large_json_data` anymore, so it is a very efficient read!
 
 ---
 
@@ -1179,7 +1327,6 @@ select MAX(price) from items;
 ## Text Data Formats
 
 * Example data formats : CSV, JSON
-
 * CSV data
 
 ```text
@@ -1187,9 +1334,7 @@ name, gender, age
 John,M,40
 Jane,F,35
 ```
-<!-- {"left" : 0.8, "top" : 3.62, "height" : 1.83, "width" : 5.73} -->   
-
-<br/>
+<!-- {"left" : 0.8, "top" : 3.62, "height" : 1.83, "width" : 5.73} -->
 
 * JSON data
 
@@ -1202,7 +1347,6 @@ Jane,F,35
 * Pros:
     - Human-readable
     - Compatible with tools (export/import from DB for example)
-
 * Cons:
     - Not size-efficient to store
     - Not efficient to query

@@ -1,0 +1,31 @@
+## to generate slides
+##     $    $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
+
+#day 1
+About-Data-Analytics-With-Python.md
+../../course-outlines/python-language-complete.md
+PYTHON-Intro.md
+PYTHON-LanguageBasics.md
+
+# Day 2
+
+PYTHON-OOP.md
+PYTHON-Packages.md
+PYTHON-File.md
+
+# Day 3
+
+PYTHON-Database.md
+PYTHON-Web.md
+PYTHON-Testing.md
+
+# Day 4: Data Science
+PYTHON-NumPy.md
+PYTHON-Pandas.md
+PYTHON-Visualization.md
+
+# 5
+PYTHON-Reactive.md
+PYTHON-C.md
+PYTHON-Zeppelin.md
+
