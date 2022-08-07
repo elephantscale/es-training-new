@@ -2,7 +2,7 @@
 # $ES_HOME/utils/presentations/slides-assembler.sh   slide-order-python-complete.txt
 
 #day 1
-About-Data-Analytics-With-Python.md
+About-Python-Complete.md
 ../../course-outlines/python-language-complete.md
 PYTHON-Intro.md
 PYTHON-LanguageBasics.md
