@@ -678,6 +678,22 @@ Notes:
 
 ## Topics + Partitions + Replicas
 
+<img src="../../assets/images/kafka/topics-partitions-replicas.png" style="width:50%;float:right;"/><!-- {"left" : 1.46, "top" : 1.45, "height" : 6.74, "width" : 7.33} -->
+
+
+
+Notes:
+
+
+
+
+---
+
+## Discuss A Crash Scenario
+
+* What if Node1 crashes?  Discuss the recovery process.
+
+
 <img src="../../assets/images/kafka/topics-partitions-replicas.png" style="width:50%;"/><!-- {"left" : 1.46, "top" : 1.45, "height" : 6.74, "width" : 7.33} -->
 
 
@@ -688,6 +704,7 @@ Notes:
 
 
 ---
+
 
 ## Commit Log
 
@@ -1437,7 +1454,7 @@ Image source: https://kafka.apache.org/documentation/
 
 ---
 
-## Log Compaction Internals
+## Log Compaction Intervals
 
 <img src="../../assets/images/kafka/log-compaction-3.png" style="width:50%;float:right;"/><!-- {"left" : 1.02, "top" : 5.03, "height" : 2, "width" : 8.21} -->
 

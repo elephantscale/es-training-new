@@ -1032,7 +1032,7 @@ Notes:
 
 * **Current position = 4 + 3 = 7**
 
-* **Committed offset still at 0**.  Because elapsed time still under 'auto.commit.internval.ms' window
+* **Committed offset still at 0**.  Because elapsed time still under 'auto.commit.interval.ms' window
 
 * Top diagram (previous state), bottom diagram (current state)
 
@@ -1049,7 +1049,7 @@ Notes:
 
 * **Current position = 7 + 3 = 10**
 
-* **Committed offset is updated to 7 (offset from last poll)**.  Because elapsed time has surpassed 'auto.commit.internval.ms' window
+* **Committed offset is updated to 7 (offset from last poll)**.  Because elapsed time has surpassed 'auto.commit.interval.ms' window
 
 * Top diagram (previous state), bottom diagram (current state)
 
@@ -1551,28 +1551,32 @@ Notes:
 
 ## Seeking To An Offset
 
+<img src="../../assets/images/kafka/consumer-offsets-1.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- * Use cases:
+* Consumers can skip to any offset in Kafka
+    - To go to end of partition
+    - To go to beginning of partition
+    - Seek to any offset in partition
 
-     - Catching up to latest events first  (and then processing the backlog).See demo at : https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up-trick/
+* Use cases:
+    - Catching up to latest events first  (and then processing the backlog). See [demo](https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up-trick/)
 
- * To go to end of partition
+```java
+import java.util.Collections;
+import org.apache.kafka.common.TopicPartition;
 
-     - Consumer.seekToEnd()
+// topic: topic1,  partition : 0
+TopicPartition partition = new TopicPartition("topic1", 0);
 
- * To go to beginning
+// go to beginning
+consumer.seekToBeginning(Collections.singletonList(partition));
 
-     - Consumer.seekToBeginning()
+// go to end
+consumer.seekToEnd(Collections.singletonList(partition));
 
- * Seek to any offset
-
-     - Consumer.seek (partition, offset)
-
-Notes:
-
-https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up-trick/
-
-
+// seek to offset #5 on partition[0]
+consumer.seek(partition, 5);
+```
 
 ---
 
@@ -1580,17 +1584,230 @@ https://sematext.com/blog/2015/11/04/kafka-real-time-stream-multi-topic-catch-up
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
-*  **Overview:** Seek and read various offsets in  a partition
+* **Overview:** Seek and read various offsets in  a partition
 
-*  **Builds on previous labs:**
+* **Builds on previous labs:**
 
-*  **Approximate Time:** 20 - 30 mins
+* **Approximate Time:** 20 - 30 mins
 
-*  **Instructions:**
+* **Instructions:**
      - Please follow: lab 5.2
 
-*  **To Instructor:**
+* **To Instructor:**
 
+Notes:
+
+---
+
+# Data Schema in Kafka
+
+---
+
+## Kafka and Data Schema
+
+* Kafka treats all data as 'binary'; it doesn't care about schema/structure
+
+* How ever, Producer / Consumer like to deal in Java objects
+
+<img src="../../assets/images/kafka/schema-1.png" style="width:75%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Handling Structured Data
+
+* We can use various data formats to convert from Java objects to serializable formats
+
+* JSON format
+    - Text based format, easily readable
+
+* AVRO format
+    - Binary format
+
+<img src="../../assets/images/kafka/schema-2.png" style="width:60%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## JSON Format
+
+* JSON is a flexible, text format
+
+* JSON supports nested structures
+
+```json
+{"id": 123, 
+ "name": "Homer Simpson", 
+ "age": 45,
+ "address": {
+            "street": "742 Evergreen Terrace",
+            "city":   "Springfield",  
+            "state":  "CA" }
+}
+```
+
+* Java objects can be easily transferred to/from JSON
+
+* JSON text compresses really well; we can get anywhere from 5x to 10x compression; This saves a lot of bandwidth and disk space
+
+* Also since JSON is just text, we can use built-in `StringSerializer` to encode the data
+
+---
+
+## JSON Format
+
+* We can use [GSON](https://github.com/google/gson) library to convert to JSON
+
+```java
+import com.google.gson.Gson;
+
+public class Customer {
+  public String name;
+  public int age;
+  public String email;
+}
+
+Gson gson = new Gson();
+Customer customer = new Customer("Homer", "homer@simposon.com", 45)
+String json = gson.toJson(customer);
+
+// {"name": "Homer", "age":45,  "email": "homer@simpson.com" }
+```
+
+* From JSON
+
+```json
+import com.google.gson.Gson;
+
+String jsonStr = "{\"name\": \"Homer\", \"age\":45,  \"email\": \"homer@simpson.com\" }";
+
+Gson gson = new Gson();
+
+Customer customer = gson.fromJson(jsonStr, Customer.class);
+// Now 'customer' object has all fields populated
+```
+
+---
+
+## Avro
+
+* Avro is a data serialization format
+
+* It is language neutral; Avro has APIs for Java, Python ..etc)
+
+* Data is stored in binary format, schema is stored in JSON format
+
+* A key feature of Avro is robust support for data schemas that change over time — often called **schema evolution**
+
+* [avro.apache.org](https://avro.apache.org/)
+
+---
+
+## Avro Format
+
+* Avro schema is defined as JSON file.  Here is `Customer.avsc` file
+
+```json
+{"namespace": "customer.avro",
+ "type": "record",
+ "name": "Customer",
+ "fields": [
+     {"name": "id",    "type": "int"},
+     {"name": "name",  "type": "string"},
+     {"name": "email", "type": "string"}
+ ]
+}
+```
+
+* Compile the avro schema into Java class.  This will generate `Customer.java`
+
+```bash
+$   java -jar /path/to/avro-tools-1.10.2.jar compile schema user.avsc .
+```
+
+<img src="../../assets/images/kafka/avro-schema-1.png" style="width:75%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
+## Avro in Kafka - Producer
+
+```java
+import java.util.Properties;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.IntSerializer;
+import io.confluent.kafka.serializers.KafkaAvroSerializer;
+
+Properties props = new Properties();
+props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntSerializer.class.getName());
+// Avro serializer
+props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, KafkaAvroSerializer.class.getName());
+
+KafkaProducer <Int, Customer> producer = new KafkaProducer<>(props);
+
+// create a customer object
+Customer customer = Customer.newBuilder()
+                            .setId(1)
+                            .setName("Homer Simpson")
+                            .setEmail("homer@simpson.com").
+                            .build();
+
+ProducerRecord <Int, Customer> record = new ProducerRecord <> ("topic1", customer.id, customer);
+
+producer.send (record);
+```
+
+---
+
+## Avro in Kafka - Consumer
+
+```java
+import java.util.Properties;
+import java.util.Collections;
+import org.apache.kafka.common.serialization.IntSerializer;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.Consumer;
+import io.confluent.kafka.serializers.KafkaAvroDeserializer;
+import io.confluent.kafka.serializers.KafkaAvroDeserializerConfig;
+
+Properties props = new Properties();
+props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+props.put(ConsumerConfig.GROUP_ID_CONFIG, "Kafka-Avro-Consumer-1");
+props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
+                IntDeserializer.class.getName());
+props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
+                KafkaAvroDeserializer.class.getName()); 
+
+// Use Specific Record or else you get Avro GenericRecord.
+props.put(KafkaAvroDeserializerConfig.SPECIFIC_AVRO_READER_CONFIG, "true");
+
+Consumer <Int, Customer> consumer = new Consumer <> (props);
+consumer.subscribe(Collections.singletonList("topic1"));
+
+final ConsumerRecords <Int, Customer> records = consumer.poll(100);
+
+records.forEach (record -> {
+
+    Customer customerRecord = record.value();  // AvroRecord!
+
+    System.out.printf("%s %d %d %s \n", record.topic(),
+                      record.partition(), record.offset(), customerRecord);
+});
+```
+
+---
+
+## Lab : Using AVRO Schema
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Use AVRO schema in Kafka
+
+* **Approximate Time:** 
+    - 30 mins
+
+* **Instructions:**
+    - Please follow **AVRO-1** lab
 
 Notes:
 
