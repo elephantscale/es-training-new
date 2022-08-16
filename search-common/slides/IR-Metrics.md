@@ -21,8 +21,8 @@
  * All these are *measurable*: we can *quantify* terms like speed or size.
  * What is the real measure?  **User Happiness**
    - What is this?
-   - Speed is importnat
- * How can we *quantify* how **User Happieness**
+   - Speed is important
+ * How can we *quantify* how **User Happiness**
 
 ---
 

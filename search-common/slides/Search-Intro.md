@@ -165,7 +165,7 @@ Notes:
 
  * Or even
 
-     -  *Title* is about Object Oriented Programming AND  *Author*  something like `stro*rup`
+     -  *Title* is about Object-Oriented Programming AND  *Author*  something like `stro*rup`
 
      - where `*` is the wild-card operator
 

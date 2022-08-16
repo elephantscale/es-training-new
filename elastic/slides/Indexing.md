@@ -205,7 +205,7 @@ Notes:
 
 * Example: `refresh_interval`
   - Determines refresh for near-real time
-  - Expensive is done often
+  - Expensive if done often
   - Typical value: 1 second
   - Some indices may have more or less real-time
 

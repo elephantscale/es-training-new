@@ -4,6 +4,9 @@ About_Elastic_Stack_Class.md
 ../../search-common/slides/Search-Intro.md
 ../../search-common/slides/Lucene.md
 ../../search-common/slides/Lucene_API.md
+../../search-common/slides/InvertedIndex.md
+../../search-common/slides/IR-Metrics.md
+../../search-common/slides/Tokenization.md
 Elasticsearch_Intro.md
 MovieLens-Dataset.md
 ../../microservices/slides/REST-Intro.md
@@ -22,6 +25,6 @@ Elasticsearch_Admin.md
 # Search and Machine Learning (AI)
 ../../machine-learning/python/LearnToRank.md
 ../../python/slides/PYTHON-Text-NLTK.md
-#../../python/slides/PYTHON-Text-Spacy.md Text-Spacy
-#../../machine-learning/generic/Text-Analytics-Intro.md
+../../python/slides/PYTHON-Text-Spacy.md
+../../machine-learning/generic/Text-Analytics-Intro.md
 ../../ai-nlp/slides/word2vec.md
