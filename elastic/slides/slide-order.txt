@@ -1,6 +1,6 @@
 ## Assembly instruction in the top directory
 
-About_Elastic_Class.md
+About_Elastic_Stack_Class.md
 ../../search-common/slides/Search-Intro.md
 ../../search-common/slides/Lucene.md
 ../../search-common/slides/Lucene_API.md
@@ -22,6 +22,6 @@ Elasticsearch_Admin.md
 # Search and Machine Learning (AI)
 ../../machine-learning/python/LearnToRank.md
 ../../python/slides/PYTHON-Text-NLTK.md
-../../python/slides/PYTHON-Text-Spacy.md Text-Spacy
-../../machine-learning/generic/Text-Analytics-Intro.md
+#../../python/slides/PYTHON-Text-Spacy.md Text-Spacy
+#../../machine-learning/generic/Text-Analytics-Intro.md
 ../../ai-nlp/slides/word2vec.md
