@@ -53,8 +53,6 @@ Notes:
 
 ---
 
-## Brief history
-
 ## Brief History 
 
 <img src="../../assets/images/solr/3rd-party/history1.png" style="width:14%;float:right;"/> <!-- {"left" : 8.03, "top" : 1.22, "height" : 2.34, "width" : 1.98} -->
