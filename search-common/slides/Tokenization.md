@@ -128,7 +128,7 @@ You can see a comparison between the Tika and LangDetect implementations here: h
 ## Language Issues
  * `L'ensemble`: One Towken or Two?
     - `L`, `L'`,`Le`, '`Le `?  
-    - Should `L`ensemble` match with `un emsemble`?
+    - Should `L`ensemble` match with `un ensemble`?
       - On Google it did *not* until 2003
  * German noun combos:
    - "Lebensversicherungsgesellschaftsangestellter"
