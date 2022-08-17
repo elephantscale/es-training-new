@@ -57,7 +57,7 @@ You can see a comparison between the Tika and LangDetect implementations here: h
 
 ## Language Detection Configuration
 
- * Here is how we configure Lnaguage Detection (for LangDetect)
+ * Here is how we configure Language Detection (for LangDetect)
 
 ```xml
 <processor class="org.apache.solr.update.processor.LangDetectLanguageIdentifierUpdateProcessorFactory">
