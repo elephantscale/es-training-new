@@ -1613,6 +1613,22 @@ Notes:
 
 ---
 
+## Standard Kafka SerDe
+
+<img src="../../assets/images/kafka/3rd-party/Standard-Kafka-SerDe-2.png" alt="Standard-Kafka-SerDe-2.png" style="width:30%;float:right;"/><!-- {"left" : 6.94, "top" : 1.05, "height" : 5.69, "width" : 3.19} -->
+
+* Kafka comes with Serializers Deserializers for standard Java types
+
+* Can be found in package **org.apache.kafka.common.serialization** 
+
+* We need to provide SerDe classes for custom types
+
+* Can use Avro/JSON
+
+Notes:
+
+---
+
 ## Handling Structured Data
 
 * We can use various data formats to convert from Java objects to serializable formats
@@ -1720,7 +1736,9 @@ Customer customer = gson.fromJson(jsonStr, Customer.class);
 * Compile the avro schema into Java class.  This will generate `Customer.java`
 
 ```bash
-$   java -jar /path/to/avro-tools-1.10.2.jar compile schema user.avsc .
+$   java -jar /path/to/avro-tools-1.10.2.jar compile schema 
+                user.avsc \  # <--- schema file
+                src/java/main  #  <--- destination folder for generated Java class file
 ```
 
 <img src="../../assets/images/kafka/avro-schema-1.png" style="width:75%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
@@ -1796,7 +1814,69 @@ records.forEach (record -> {
 
 ---
 
-## Lab : Using AVRO Schema
+## Handling Schema Evolution
+
+* Let's say we have messages in the following format
+
+* Version 1
+
+| Id    | Type  | Success |
+|-------|-------|---------|
+| 12345 | Click | YES     |
+
+<!-- {"left" : 0.25, "top" : 1.79, "height" : 1, "width" : 9.75} -->
+
+* Version 2
+
+| Id    | Type  | Success | Message        |
+|-------|-------|---------|----------------|
+| 12345 | Click | YES     | Page not found |
+
+<!-- {"left" : 0.25, "top" : 3.67, "height" : 1, "width" : 9.75} -->
+
+* Q: How will the consumer process this?
+
+Notes:
+
+---
+
+## Avro Schema
+
+* Version 1
+
+```json
+{"namespace": "com.example.videos",
+  "type": "record",
+  "name": "Event",
+  "fields": [
+     {"name": "id", "type": "int"},
+     {"name": "type",  "type": "string"},
+     {"name": "success",  "type": "string"}
+]
+}
+```
+<!-- {"left" : 0, "top" : 1.35, "height" : 3.19, "width" : 7.94} -->
+
+* Version 2
+
+```json
+{"namespace": "com.example.videos",
+  "type": "record",
+  "name": "Event",
+  "fields": [
+     {"name": "id", "type": "int"},
+     {"name": "type",  "type": "string"},
+     {"name": "success", "type": "string"},
+     {"name": "message", "type": "string"}  // <- new attribute
+  ]}
+```
+<!-- {"left" : 0, "top" : 4.99, "height" : 2.93, "width" : 10.25} -->
+
+Notes:
+
+---
+
+## Lab : Using AVRO Schema (Intermediate Track)
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
@@ -1808,6 +1888,7 @@ records.forEach (record -> {
 
 * **Instructions:**
     - Please follow **AVRO-1** lab
+    - Please Note : This lab needs Confluent stack / schema registry
 
 Notes:
 
