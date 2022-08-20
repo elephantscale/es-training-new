@@ -18,7 +18,7 @@ Kafka-Intro.md
 Kafka-API.md
 Kafka-Streams.md
 #KSQL.md
-Kafka-Connect.md
+Kafka-Ecosystem.md
 Kafka-Admin.md
 Kafka-Monitoring.md
 Kafka-Best-Practices.md

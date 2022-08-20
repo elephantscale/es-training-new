@@ -16,7 +16,7 @@ Kafka-Streams.md
 
 ../../spark/slides/SPARK-Intro.md
 
-Kafka-Connect.md
+Kafka-Ecosystem.md
 Kafka-Admin.md
 Kafka-Monitoring.md
 Kafka-Best-Practices.md
