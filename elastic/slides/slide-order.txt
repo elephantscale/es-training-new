@@ -19,6 +19,7 @@ Logstash.md
 Analytics.md
 Kibana.md
 Elastic-SQL.md
+Integrations.md
 Filebeat.md
 X-Pack.md
 Elasticsearch_Admin.md
