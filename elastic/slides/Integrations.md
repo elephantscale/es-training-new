@@ -108,4 +108,9 @@ Notes:
 
 ---
 
+## Integrations ready to go
+
+![](../images/03.png)
+
+---
 
