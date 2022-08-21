@@ -10,7 +10,7 @@
 
 * So we need to convert text into vectors before applying machine learning algorithms
 
- <img src="../../assets/images/ai-nlp/word-to-vectors-2.png" style="width:70%"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
+ <img src="../../assets/images/ai-nlp/word-to-vectors-2.png" style="width:70%"/><!-- {"left" : 3.16, "top" : 5.97, "height" : 3.72, "width" : 11.19} -->
 
 ---
 
@@ -41,7 +41,8 @@
 
 * Given we have 3 documents like these
 
-<!-- TODO shiva -->
+<br/>
+
 ```text
 doc-1: The brown cow is sleeping
 
@@ -49,7 +50,7 @@ doc-2: The brown dog is near the brown cow
       
 doc-3: The black cat is sleeping
 ```
-<!-- {"left" : 0, "top" : 4.01, "height" : 0.86, "width" : 5.94} -->
+<!-- {"left" : 0.8, "top" : 2.67, "height" : 1.92, "width" : 8.63} -->
 
 * We count the word occurrences (frequency) per document
 
@@ -62,7 +63,8 @@ doc-3: The black cat is sleeping
 | doc-2 | 0 | 2 | 0 | 2 | 1 | 1 | 1 | 0 | 2 |
 | doc-3 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 |
 
-<!-- {"left" : 0.23, "top" : 6.56, "height" : 2, "width" : 9.79, "columnwidth" : [1.59, 1, 0.98, 0.96, 0.79, 0.85, 0.69, 0.8, 1.37, 0.76]} -->
+<!-- {"left" : 0.6, "top" : 7.16, "height" : 1, "width" : 16.3, "columnwidth" : [2.22, 1.51, 1.55, 1.7, 1.73, 1.87, 1.19, 1.46, 1.81, 1.25]} -->
+
 
 * So the documents are represented in the following vector form
 
@@ -71,6 +73,7 @@ doc-1 : [0,  1,  0,  1,  0,  1,  0,  1,  1]
 doc-2 : [0,  2,  0,  2,  1,  1,  1,  0,  2]
 doc-3 : [1,  0,  1,  0,  0,  1,  0,  1,  1]
 ```
+<!-- {"left" : 0.8, "top" : 10.46, "height" : 1.15, "width" : 7.94} -->
 
 ---
 
@@ -82,7 +85,8 @@ doc-3 : [1,  0,  1,  0,  0,  1,  0,  1,  1]
 | doc-2 | 0 | 2 | 0 | 2 | 1 | 1 | 1 | 0 | 2 |
 | doc-3 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 |
 
-<!-- {"left" : 0.23, "top" : 1.18, "height" : 2, "width" : 9.79, "columnwidth" : [1.59, 1, 0.98, 0.96, 0.79, 0.85, 0.69, 0.8, 1.37, 0.76]} -->
+<!-- {"left" : 0.6, "top" : 2.64, "height" : 1, "width" : 16.3, "columnwidth" : [2.22, 1.51, 1.55, 1.7, 1.73, 1.87, 1.19, 1.46, 1.81, 1.25]} -->
+
 
 - Querying using BoW:   
   Find all documents that have the word **brown**
@@ -100,7 +104,7 @@ Which result do we show first?  doc1 or doc2 ?
   * Very simple!
   * Has been used successfully for a long time for a wide variety of NLP tasks
 
-* Weaknesses :
+* Weaknesses:
   * (see next slides for more details)
   * High frequency words (like 'the') will pollute the matrix
     - We can remove these words during pre-processing to alleviate this somewhat
@@ -117,7 +121,7 @@ Which result do we show first?  doc1 or doc2 ?
 | doc-2 | 0 | 2 | 0 | 2 | 1 | 1 | 1 | 0 | 2 |
 | doc-3 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 |
 
-<!-- {"left" : 0.23, "top" : 1.18, "height" : 2, "width" : 9.79, "columnwidth" : [1.59, 1, 0.98, 0.96, 0.79, 0.85, 0.69, 0.8, 1.37, 0.76]} -->
+<!-- {"left" : 0.6, "top" : 2.64, "height" : 1, "width" : 16.3, "columnwidth" : [2.22, 1.51, 1.55, 1.7, 1.73, 1.87, 1.19, 1.46, 1.81, 1.25]} -->
 
 - What is the result when searching for the term __the__ ?
 
@@ -140,17 +144,17 @@ Jane runs faster than Dan
 
 Dan runs faster than Jane
 ```
+<!-- {"left" : 0.8, "top" : 2.63, "height" : 1.15, "width" : 4.94} -->
 
 * We get the same BoW representation for both sentences;  But the meanings of these are very different
 
-<br/>
 
 | Document | dan | faster | jane | runs | than |
 |----------|-----|--------|------|------|------|
 | doc 1    | 1   | 1      | 1    | 1    | 1    |
 | doc 2    | 1   | 1      | 1    | 1    | 1    |
 
-<br/>
+<!-- {"left" : 2.39, "top" : 5.3, "height" : 1, "width" : 12.73} -->
 
 * BoW technique looses the meaning of the words
 
@@ -223,7 +227,7 @@ Notes:
 
   Document 3: the spotted cow likes green grass
 ```
-<!-- {"left" : 0, "top" : 2.16, "height" : 1.74, "width" : 8.44} -->
+<!-- {"left" : 0.8, "top" : 2.81, "height" : 2.03, "width" : 9.85} -->
 
 
 |  | brown | cow | dog | grass | green | is | likes | spotted | the | white |
@@ -232,7 +236,7 @@ Notes:
 | d2 (4) | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 0 |
 | d3 (6) | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
 
-<!-- {"left" : 0.38, "top" : 5.15, "height" : 1.59, "width" : 9.49, "columnwidth" : [0.99, 1.04, 0.75, 0.71, 0.97, 0.95, 0.45, 0.83, 1.26, 0.65, 0.89]} -->
+<!-- {"left" : 0.58, "top" : 6.67, "height" : 1, "width" : 16.35} -->
 
 
 Notes:
@@ -254,9 +258,11 @@ TF(t) = ------------------------------------------------
          Total number of terms in the document
 
 ```
-<!-- {"left" : 0, "top" : 2.99, "height" : 1.15, "width" : 10.11} -->
+<!-- {"left" : 0.8, "top" : 3.44, "height" : 1.35, "width" : 11.81} -->
 
- <img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-Term-Frequency-TF--0.png" style="width:70%"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
+ <img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-Term-Frequency-TF--0.png" style="width:70%"/><!-- {"left" : 2.25, "top" : 6.15, "height" : 4.32, "width" : 13} -->
+
+
 
 
 
@@ -280,7 +286,9 @@ Source: tf-idf.xls
 
  * We use logarithmic scale to get reasonable numbers
 
- <img src="../../assets/images/machine-learning//3rd-party/Text-Analytics-16.png" style="width:70%"/><!-- {"left" : 1.24, "top" : 5.77, "height" : 1.35, "width" : 7.77} -->
+<img src="../../assets/images/machine-learning/3rd-party/Text-Analytics-16.png" style="width:70%"/> <!-- {"left" : 2.59, "top" : 7.57, "height" : 2.13, "width" : 12.31} -->
+ 
+
 
 
 
@@ -303,7 +311,8 @@ Notes:
 | IDF (**cat**)                           | LN (1,000,000/1000)= **6.91** |
 | **TF-IDF (cat in document 1)**          | **0.03 * 6.91= 0.21**         |
 
-<!-- {"left" : 0.25, "top" : 1.7, "height" : 4.5, "width" : 9.75} -->
+<!-- {"left" : 0.62, "top" : 2.68, "height" : 1, "width" : 16.26} -->
+
 
 
 Notes:
@@ -320,9 +329,10 @@ Source : http://www.tfidf.com/
   Document 2: the grass is brown
   Document 3: the spotted cow likes green grass
 ```
-<!-- {"left" : 0, "top" : 1.41, "height" : 1.15, "width" : 8.61} -->
+<!-- {"left" : 0.8, "top" : 2.26, "height" : 1.55, "width" : 11.6} -->
 
-<img src="../../assets/images/machine-learning//3rd-party/Text-Analytics-TF-IDF-Example-0.png" style="width:70%"/><!-- {"left" : 1.02, "top" : 3, "height" : 3.53, "width" : 8.21} -->
+<img src="../../assets/images/machine-learning//3rd-party/Text-Analytics-TF-IDF-Example-0.png" style="width:70%"/><!-- {"left" : 2.3, "top" : 4.83, "height" : 5.54, "width" : 12.89} -->
+
 
 
 Notes:
@@ -338,7 +348,7 @@ Notes:
   Document 2: the grass is brown
   Document 3: the spotted cow likes green grass
 ```
-<!-- {"left" : 0, "top" : 1.23, "height" : 1.15, "width" : 8.61} -->
+<!-- {"left" : 0.8, "top" : 2, "height" : 1.61, "width" : 12.04} -->
 
 
 | term | d1 | d2 | d3 | Document rank |
@@ -354,7 +364,7 @@ Notes:
 | the | 0 | 0 | 0 | All zero |
 | white | 0.16 | 0 | 0 | d1 |
 
-<!-- {"left" : 1.65, "top" : 2.76, "height" : 5.5, "width" : 7.99, "columnwidth" : [1.39, 1.39, 1.39, 1.39, 1.39]} -->
+<!-- {"left" : 0.95, "top" : 5.03, "height" : 1, "width" : 15.6} -->
 
 Notes:
 
@@ -378,7 +388,8 @@ tfidf_matrix = tf.fit_transform(documents)
 print (tfidf_matrix)
 print (tfidf_matrix.transpose())
 ```
-<!-- {"left" : 0.0, "top" : 1.2, "height" : 6.38, "width" : 9.48} -->
+<!-- {"left" : 0.8, "top" : 2.1, "height" : 4.07, "width" : 14.94} -->
+
 
 ```text
    brown   cow   dog  grass  green    is  likes  spotted   the  white
@@ -386,6 +397,7 @@ print (tfidf_matrix.transpose())
 1   0.48  0.00  0.00   0.48   0.00  0.63   0.00     0.00  0.37   0.00
 2   0.00  0.38  0.00   0.38   0.49  0.00   0.38     0.49  0.29   0.00
 ```
+<!-- {"left" : 0.8, "top" : 6.41, "height" : 1.44, "width" : 12.28} -->
 
 ```text
             0     1     2
@@ -400,6 +412,7 @@ spotted  0.00  0.00  0.49
 the      0.52  0.37  0.29
 white    0.44  0.00  0.00
 ```
+<!-- {"left" : 0.8, "top" : 8.09, "height" : 3.49, "width" : 4.94} -->
 
 Notes:
 
@@ -413,7 +426,9 @@ Notes:
 
 * Then these vectors can be used as input to other algorithms (e.g. classification algorithms)
 
- <img src="../../assets/images/ai-nlp/word-to-vectors-3.png" style="width:70%"/><!-- {"left" : 0.75, "top" : 4.92, "height" : 2.91, "width" : 8.74} -->
+ <img src="../../assets/images/ai-nlp/word-to-vectors-3.png" style="width:70%"/><!-- {"left" : 1.62, "top" : 6.07, "height" : 3.02, "width" : 14.26} -->
+
+
 
 ---
 
@@ -430,7 +445,7 @@ Notes:
 
 ## Lab: TF-IDF Intro
 
-<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 6.97, "top" : 1.04, "height" : 4.09, "width" : 3.07} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /> <!-- {"left" : 12.9, "top" : 1.89, "height" : 5.61, "width" : 4.2} -->
 
 * **Overview:**
   - Calculate and understand TF-IDF scores
@@ -447,7 +462,7 @@ Notes:
 
 ## Lab: TF-IDF + Naive Bayes
 
-<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /><!-- {"left" : 6.97, "top" : 1.04, "height" : 4.09, "width" : 3.07} -->
+<img src="../../assets/images/icons/individual-labs.png"  style="max-width:30%;float:right;" /> <!-- {"left" : 12.9, "top" : 1.89, "height" : 5.61, "width" : 4.2} -->
 
 * **Overview:**
   - Spam classification using TFIDF and Naive Bayes
@@ -456,20 +471,20 @@ Notes:
   - 30 mins
 
 * **Instructions**
-  - **SCIKIT-1** : Spam classification
+  - **SCIKIT-1:** Spam classification
 
 Notes:
 
 ---
-
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.88, "top" : 2.06, "height" : 2.68, "width" : 3.63} -->    
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.58, "top" : 5.2, "height" : 5.56, "width" : 8.33} -->    
 
 ---
 
@@ -513,7 +528,8 @@ Notes:
 * References:
   - [A One-Stop Shop for Principal Component Analysis](https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c)
 
-<img src="../../assets/images/machine-learning/PCA-14.png" style="width:70%;"/><!-- {"left" : 0.91, "top" : 2.16, "height" : 4.74, "width" : 8.43} -->
+<img src="../../assets/images/machine-learning/PCA-14.png" style="width:70%;"/> <!-- {"left" : 1.54, "top" : 7.04, "height" : 3.14, "width" : 14.41} -->    
+
 
 ---
 
@@ -538,7 +554,7 @@ Notes:
 
 ## How LSI works
 
-<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:60%;float:right;"/><!-- {"left" : 0.91, "top" : 2.16, "height" : 4.74, "width" : 8.43} -->
+<img src="../../assets/images/machine-learning/3rd-party/Recommendations-Matrix-Refactorization-Explained-0.png" style="width:60%;float:right;"/> <!-- {"left" : 0.85, "top" : 2.41, "height" : 8.89, "width" : 15.8} -->    
 
 * LSI uses the Singular Value Decomposition to find two matrices U and V
   - U is the tall-skinny matrix
@@ -568,4 +584,3 @@ Notes:
   - bag-of-words limitations
   - TF-IDF limitations (thouguh we don't necessarily need to use tf-idf)
 
----

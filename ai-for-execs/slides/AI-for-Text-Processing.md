@@ -1,10 +1,12 @@
 # AI for Text Processing
 
-<!-- TODO shiva -->
-<img src="../../assets/images/generic/3rd-party/text-scrabble-1.jpg" style="width:30%;"/><!-- {"left" : 5.36, "top" : 2.32, "height" : 3.8, "width" : 4.75} -->
-<img src="../../assets/images/AI/3rd-party/nlp-1.jpg"  style="width:30%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/generic/3rd-party/text-scrabble-1.jpg" style="width:30%;"/>  <!-- {"left" : 4.19, "top" : 7.75, "height" : 2.6, "width" : 3.91} -->
+
+<img src="../../assets/images/AI/3rd-party/nlp-1.jpg"  style="width:30%;">  <!-- {"left" : 8.75, "top" : 7.75, "height" : 2.6, "width" : 4.56} -->
 
 ---
+
+# NLP Intro
 
 [../../ai-nlp/slides/NLP-Intro.md](../../ai-nlp/slides/NLP-Intro.md)
 
@@ -12,9 +14,9 @@
 
 ## Transformers
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:30%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
-<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:30%;float:right;clear:both;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:30%;float:right;"/> <!-- {"left" : 13.6, "top" : 1.43, "height" : 3.41, "width" : 3.41} -->
+
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:30%;float:right;clear:both;"> <!-- {"left" : 13.24, "top" : 5.95, "height" : 3.05, "width" : 4.21} -->
 
 * In 2017, in a landmark paper ["Attention is all you need"](https://arxiv.org/abs/1706.03762), researchers from Google, proposed a novel model called **Transformers**
 
@@ -30,8 +32,8 @@
 
 ## Lab: Re-training a Pre-trained Model
 
-<!-- TODO shiva -->
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 13.01, "top" : 1.89, "height" : 5.38, "width" : 4.04} -->
+
 
 * **Overview:**
     - Customize a pre-trained model
@@ -40,8 +42,7 @@
     - 40 mins
 
 * **Instructions:**
-    - **TRANSFER-3**: Retrain a pre-trained model
+    - **TRANSFER-3:** Retrain a pre-trained model
 
 Notes:
 
----

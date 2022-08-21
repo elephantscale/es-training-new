@@ -15,7 +15,7 @@
 
 ## Image Recognition is a Challenging Problem
 
-<img src="../../assets/images/deep-learning/3rd-party/Image-Classification.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%"/> <!-- {"left" : 5.67, "top" : 1.72, "height" : 3.26, "width" : 4.2} -->
+<img src="../../assets/images/deep-learning/3rd-party/Image-Classification.png" alt="XXX image missing" style="background:white;max-width:100%;float:right;" width="30%"/> <!-- {"left" : 10.56, "top" : 1.89, "height" : 5.01, "width" : 6.45} -->
 
 
  * [IBM's Deep Blue supercomputer](https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)) beat the chess world champion Garry Kasparov back in 1996
@@ -48,7 +48,7 @@ Notes:
     - black = 0
     - white = 1
 
-<img src="../../assets/images/deep-learning/pixel-representation-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /><!-- {"left" : 1.63, "top" : 4.18, "height" : 3.21, "width" : 6.99} -->
+<img src="../../assets/images/deep-learning/pixel-representation-1.png" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /><!-- {"left" : 3.65, "top" : 5.92, "height" : 4.68, "width" : 10.19} -->
 
 
 ---
@@ -60,7 +60,7 @@ Notes:
     - 255: white
     - in between: grey
 
-<img src="../../assets/images/deep-learning/pixel-representation-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" /><!-- {"left" : 0.9, "top" : 3.56, "height" : 4.3, "width" : 8.44} -->
+<img src="../../assets/images/deep-learning/pixel-representation-02.png" alt="XXX image missing" style="background:white;max-width:100%;" width="70%" /><!-- {"left" : 2.89, "top" : 4.89, "height" : 5.97, "width" : 11.72} -->
 
 
 ---
@@ -73,7 +73,7 @@ Notes:
 - Each RGB values are represented as numbers ranging 0-255
 
 
-<img src="../../assets/images/deep-learning/pixel-representation-4.png" alt="XXX image missing" style="background:white;max-width:100%;" width="80%" /><!-- {"left" : 0.75, "top" : 4.24, "height" : 2.39, "width" : 8.75} -->
+<img src="../../assets/images/deep-learning/pixel-representation-4.png" alt="XXX image missing" style="background:white;max-width:100%;" width="80%" /><!-- {"left" : 1.89, "top" : 5.43, "height" : 3.75, "width" : 13.71} -->
 
 
 ---
@@ -84,7 +84,7 @@ Notes:
 
 - Color images can be represented as 3D array
 
-<img src="../../assets/images/deep-learning/pixel-representation-5.png"  style="width:60%;" /><!-- {"left" : 1.55, "top" : 3.06, "height" : 4.9, "width" : 7.16} -->
+<img src="../../assets/images/deep-learning/pixel-representation-5.png"  style="width:60%;" /><!-- {"left" : 3.78, "top" : 4.03, "height" : 6.8, "width" : 9.94} -->
 
 
 ---
@@ -96,7 +96,7 @@ Notes:
 
 - Here is an example of Hubble image taken using multiple cameras in multiple wave lengths, combined together
 
-<img src="../../assets/images/deep-learning/3rd-party/hubble-image-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /><!-- {"left" : 2.25, "top" : 3.62, "height" : 4.32, "width" : 5.76} -->
+<img src="../../assets/images/deep-learning/3rd-party/hubble-image-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;" width="40%" /><!-- {"left" : 10.33, "top" : 2.2, "height" : 5.15, "width" : 6.87} -->
 
 
 Notes:  
@@ -110,7 +110,7 @@ source : https://photographingspace.com/ap-color/
 
 ## Fully Connected Network's Limitations
 
-<img src="../../assets/images/deep-learning/fully-connected-2b.png" style="width:40%;float:right;"/><!-- {"left" : 6.26, "top" : 1.06, "height" : 3.65, "width" : 3.81} -->
+<img src="../../assets/images/deep-learning/fully-connected-2b.png" style="width:40%;float:right;"/><!-- {"left" : 10.39, "top" : 2.39, "height" : 6.49, "width" : 6.77} -->
 
 - Assume we are analyzing a 200px by 200px image
     - Image has 40,000 (200x200) pixels
@@ -121,7 +121,7 @@ source : https://photographingspace.com/ap-color/
 
 ## Fully Connected Network's Limitations
 
-<img src="../../assets/images/deep-learning/fully-connected-2c.png"  style="width:27%;"/><!-- {"left" : 1.88, "top" : 5.12, "height" : 2.59, "width" : 2.93} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/fully-connected-2d.png" style="width:27%;"/><!-- {"left" : 5.44, "top" : 5.12, "height" : 2.59, "width" : 2.93} -->
+<img src="../../assets/images/deep-learning/fully-connected-2c.png"  style="width:27%;"/><!-- {"left" : 4.16, "top" : 6.45, "height" : 3.67, "width" : 4.15} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/fully-connected-2d.png" style="width:27%;"/><!-- {"left" : 9.2, "top" : 6.45, "height" : 3.67, "width" : 4.15} -->
 
 - The second layer will have  
     - 40,000 connections per pixels x (200 px x 200 px) = 1.6 billion connections
@@ -139,7 +139,7 @@ source : https://photographingspace.com/ap-color/
 * **Quiz**: Take a picture with your phone.  What is the size? (probably 3000 x 2000 pixels)
 * __So we need a another approach__
 
-<img src="../../assets/images/deep-learning/3rd-party/8K_4K_2K_UHD_HD_SD.png"  style="width:40%;"/><!-- {"left" : 2.65, "top" : 5.72, "height" : 2.82, "width" : 4.94} -->
+<img src="../../assets/images/deep-learning/3rd-party/8K_4K_2K_UHD_HD_SD.png"  style="width:40%;"/><!-- {"left" : 4.93, "top" : 7.22, "height" : 4.36, "width" : 7.64} -->
 
 
 ---
@@ -147,7 +147,7 @@ source : https://photographingspace.com/ap-color/
 
 ## Famous 'Cat Experiment'
 
-<img src="../../assets/images/deep-learning/3rd-party/cat-visaul-cortex-1.jpeg"  style="width:50%;float:right;"/><!-- {"left" : 7.54, "top" : 1.08, "height" : 1.66, "width" : 2.5} -->
+<img src="../../assets/images/deep-learning/3rd-party/cat-visaul-cortex-1.jpeg"  style="width:50%;float:right;"/><!-- {"left" : 11.71, "top" : 2.37, "height" : 3.48, "width" : 5.24} -->
 
 * David H. Hubel and Torsten Wiesel performed experiments on cats (1958/1959) that gave us crucial understanding of brain's visual cortex.  ([paper](https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/jphysiol.1959.sp006308))
 
@@ -173,7 +173,7 @@ Notes:
 ## Our Visual Cortex is Hierarchical
 
 
-<img src="../../assets/images/deep-learning/3rd-party/cat-visaul-cortex-2.jpeg" style="width:50%;float:right;" /><!-- {"left" : 6.2, "top" : 1.28, "height" : 1.26, "width" : 3.81} -->
+<img src="../../assets/images/deep-learning/3rd-party/cat-visaul-cortex-2.jpeg" style="width:50%;float:right;" /><!-- {"left" : 9.75, "top" : 1.96, "height" : 2.4, "width" : 7.26} -->
 
 
 * First level neurons detect simple shapes
@@ -182,7 +182,7 @@ Notes:
 
 <br clear="all" />
 
-<img src="../../assets/images/deep-learning/3rd-party/hubel-experiment-video.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/><!-- {"left" : 2.5, "top" : 4, "height" : 2.71, "width" : 5.25} -->
+<img src="../../assets/images/deep-learning/3rd-party/hubel-experiment-video.png" alt="XXX image missing" style="background:white;max-width:100%;" width="50%"/><!-- {"left" : 4.69, "top" : 6.52, "height" : 4.19, "width" : 8.13} -->
 
 
 [Link to video](https://www.youtube.com/watch?v=IOHayh06LJ4)
@@ -201,7 +201,7 @@ Notes:
     - Lower level neurons, visualize simple features like lines and shapes
     - Higher level neurons recognize complex shapes
 
-<img src="../../assets/images/deep-learning/visual-cortex-hiearchical-1.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 1.02, "top" : 6.25, "height" : 1.96, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/visual-cortex-hiearchical-1.png" alt="XXX image missing" style="background:white;max-width:100%;" /><!-- {"left" : 2.06, "top" : 7.29, "height" : 3.2, "width" : 13.39} -->
 
 
 
@@ -213,7 +213,7 @@ Notes:
 
 ## Pre-Processing Images
 
- <img src="../../assets/images/generic/3rd-party/fox-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;float:right;width:40%;" /> <!-- {"left" : 5.99, "top" : 1.25, "height" : 2.63, "width" : 3.96} -->
+ <img src="../../assets/images/generic/3rd-party/fox-1.jpg" alt="XXX image missing" style="background:white;max-width:100%;float:right;width:40%;" /> <!-- {"left" : 10.8, "top" : 2.25, "height" : 3.99, "width" : 6.01} -->
 
   * Image processing is a standard task for machine learning
 
@@ -236,7 +236,7 @@ Notes:
     - Sharpen filter
     - Edge detection filter
 
-<img src="../../assets/images/deep-learning/filters-all2.png"  style="width:50%;" /><!-- {"left" : 2.28, "top" : 3.55, "height" : 3.84, "width" : 5.69} -->
+<img src="../../assets/images/deep-learning/filters-all2.png"  style="width:50%;" /><!-- {"left" : 4.49, "top" : 4.96, "height" : 5.75, "width" : 8.53} -->
 
 
 ---
@@ -273,7 +273,7 @@ Notes:
     - LeCun proposed a new architecture that could be over 99% better.
     - The difference between 96% and 99+% is a big deal!
 
-<img src="../../assets/images/deep-learning/digit-recognition-1.png" style="width:50%;" /><!-- {"left" : 0.38, "top" : 6.26, "height" : 1.13, "width" : 9.49} -->
+<img src="../../assets/images/deep-learning/digit-recognition-1.png" style="width:50%;" /><!-- {"left" : 1.1, "top" : 8.01, "height" : 1.82, "width" : 15.3} -->
 
 
 
@@ -301,7 +301,7 @@ Notes:
 
 * It is similar to a flashlight moving from the top left end progressively scanning the entire image. This patch is called the  **filter/kernel**. The area under the filter is the receptive field.
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png"  style="width:30%;" /><!-- {"left" : 0.93, "top" : 4.05, "height" : 3.32, "width" : 3.32} -->   &nbsp; &nbsp;  <img src="../../assets/images/deep-learning/CNN-filter-1.png"  style="width:35%;" /><!-- {"left" : 5.73, "top" : 4.05, "height" : 3.32, "width" : 3.59} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-Process-of-Convolution-1.png"  style="width:30%;" /><!-- {"left" : 2.61, "top" : 5.94, "height" : 4.86, "width" : 4.86} -->   &nbsp; &nbsp;  <img src="../../assets/images/deep-learning/CNN-filter-1.png"  style="width:35%;" /><!-- {"left" : 9.64, "top" : 5.94, "height" : 4.86, "width" : 5.25} -->
 
 ---
 
@@ -311,20 +311,24 @@ Notes:
 
 * The resulting image has edges 'highlighted'
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-edge-filter-1.png"  style="width:20%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-example-2-edge-detection-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /> <!-- {"left" : 2.94, "top" : 4.14, "height" : 4.61, "width" : 3.88} -->
+
+<img src="../../assets/images/deep-learning/convolution-edge-filter-1.png"  style="width:20%;" /> <!-- {"left" : 7.59, "top" : 6.22, "height" : 2.67, "width" : 2.56} -->
+
+<img src="../../assets/images/deep-learning/convolution-example-2-edge-detection-b.png"  style="width:30%;" /> <!-- {"left" : 10.93, "top" : 4.28, "height" : 4.61, "width" : 4.1} -->
+
 
 ---
 ## Convolution Example: Vertical Edges Detection
 
 * The resulting image has vertical edges highlighted
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-vertical-filter-1.png"  style="width:20%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-example-2-vertical-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 2.94, "top" : 4.14, "height" : 4.61, "width" : 3.88} -->
+
+<img src="../../assets/images/deep-learning/convolution-vertical-filter-1.png"  style="width:20%;" /> <!-- {"left" : 7.59, "top" : 6.22, "height" : 2.67, "width" : 2.56} -->
+
+<img src="../../assets/images/deep-learning/convolution-example-2-vertical-b.png"  style="width:30%;" /> <!-- {"left" : 10.93, "top" : 4.28, "height" : 4.61, "width" : 4.1} -->
+
 
 ---
 
@@ -332,27 +336,38 @@ Notes:
 
 * The resulting image has horizontal edges highlighted
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-horizontal-filter-1.png"  style="width:20%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-example-2-horizontal-b.png"  style="width:30%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:30%;" /> <!-- {"left" : 2.94, "top" : 4.14, "height" : 4.61, "width" : 3.88} -->
+
+<img src="../../assets/images/deep-learning/convolution-horizontal-filter-1.png"  style="width:20%;" /> <!-- {"left" : 7.59, "top" : 6.22, "height" : 2.67, "width" : 2.56} -->
+
+
+<img src="../../assets/images/deep-learning/convolution-example-2-horizontal-b.png"  style="width:30%;" /> <!-- {"left" : 10.93, "top" : 4.28, "height" : 4.61, "width" : 4.1} -->
+
 
 ---
 
 ## Convolution Example: Edges
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-edge-filter-1.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-example-2-edge-detection-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
 
-<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-vertical-filter-1.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-example-2-vertical-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /> <!-- {"left" : 4.2, "top" : 2.14, "height" : 2.87, "width" : 2.41} -->
+
+<img src="../../assets/images/deep-learning/convolution-edge-filter-1.png"  style="width:12%;" /> <!-- {"left" : 7.57, "top" : 2.57, "height" : 2.4, "width" : 2.41} -->
+
+<img src="../../assets/images/deep-learning/convolution-example-2-edge-detection-b.png"  style="width:12%;" /> <!-- {"left" : 10.75, "top" : 2.14, "height" : 2.87, "width" : 2.55} -->
+
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /> <!-- {"left" : 4.26, "top" : 5.33, "height" : 2.87, "width" : 2.41} -->
+
+<img src="../../assets/images/deep-learning/convolution-vertical-filter-1.png"  style="width:12%;" /> <!-- {"left" : 7.62, "top" : 5.78, "height" : 2.39, "width" : 2.31} -->
+
+<img src="../../assets/images/deep-learning/convolution-example-2-vertical-b.png"  style="width:12%;" /> <!-- {"left" : 10.76, "top" : 5.33, "height" : 2.87, "width" : 2.57} -->
 
 
-<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-horizontal-filter-1.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
-<img src="../../assets/images/deep-learning/convolution-example-2-horizontal-b.png"  style="width:12%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/convolution-example-2-input-b.png"  style="width:12%;" /> <!-- {"left" : 4.2, "top" : 8.52, "height" : 2.93, "width" : 2.46} -->
+
+
+<img src="../../assets/images/deep-learning/convolution-horizontal-filter-1.png"  style="width:12%;" /> <!-- {"left" : 7.63, "top" : 9.03, "height" : 2.39, "width" : 2.29} -->
+
+<img src="../../assets/images/deep-learning/convolution-example-2-horizontal-b.png"  style="width:12%;" /> <!-- {"left" : 10.69, "top" : 8.52, "height" : 2.93, "width" : 2.74} -->
+
 
 ---
 
@@ -366,7 +381,7 @@ Notes:
 
 * And putting their findings together, we can conclude that we are seeing an elephant
 
-<img src="../../assets/images/deep-learning/CNN-elephant.png"  style="width:60%;" /><!-- {"left" : 1.02, "top" : 4.45, "height" : 3.81, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/CNN-elephant.png"  style="width:60%;" /><!-- {"left" : 3.25, "top" : 5.74, "height" : 5.11, "width" : 11} -->
 
 
 
@@ -374,7 +389,7 @@ Notes:
 
 ## Learning Features
 
-<img src="../../assets/images/deep-learning/3rd-party/Face-Recognition-2.png"  style="width:40%;float:right;" /> <!-- {"left" : 6.23, "top" : 1.1, "height" : 5.04, "width" : 3.81} -->
+<img src="../../assets/images/deep-learning/3rd-party/Face-Recognition-2.png"  style="width:40%;float:right;" /> <!-- {"left" : 11.35, "top" : 1.89, "height" : 7.52, "width" : 5.69} -->
 
 
 - Each layer builds on previous layer's work
@@ -389,7 +404,7 @@ Notes:
 
 ## Convolutional Layer
 
-<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:30%;float:right;" /><!-- {"left" : 7.64, "top" : 1, "height" : 2.42, "width" : 2.34} -->
+<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:30%;float:right;" /><!-- {"left" : 13.9, "top" : 2.2, "height" : 3.3, "width" : 3.4} -->
 
 
 - Here we represent our neurons in a 2D grid format (instead of linear before), this makes visualizing connections easier
@@ -411,14 +426,14 @@ Notes:
 
 * They read from their 'field of view'
 
-<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:20%;" /> <!-- {"left" : 0.48, "top" : 3.6, "height" : 1.85, "width" : 1.91} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png"  style="width:20%;" /> <!-- {"left" : 2.98, "top" : 3.6, "height" : 1.85, "width" : 1.8} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png"  style="width:20%;" /> <!-- {"left" : 5.49, "top" : 3.6, "height" : 1.85, "width" : 1.79} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png"  style="width:20%;" /><!-- {"left" : 7.98, "top" : 3.6, "height" : 1.85, "width" : 1.79} -->
+<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:20%;" /> <!-- {"left" : 1.91, "top" : 5.49, "height" : 2.72, "width" : 2.81} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png"  style="width:20%;" /> <!-- {"left" : 5.59, "top" : 5.49, "height" : 2.72, "width" : 2.65} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png"  style="width:20%;" /> <!-- {"left" : 9.29, "top" : 5.49, "height" : 2.72, "width" : 2.64} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png"  style="width:20%;" /><!-- {"left" : 12.95, "top" : 5.49, "height" : 2.72, "width" : 2.64} -->
 
 ---
 ## Fully Connected vs. Convolutional
 
-<img src="../../assets/images/deep-learning/fully-connected-1a.png"  style="width:25%;"/><!-- {"left" : 3.53, "top" : 1.61, "height" : 3.15, "width" : 3.18} -->
+<img src="../../assets/images/deep-learning/fully-connected-1a.png"  style="width:25%;"/><!-- {"left" : 6.65, "top" : 2.85, "height" : 4.14, "width" : 4.18} -->
 
-<img src="../../assets/images/deep-learning/Convolutional-1.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 0.48, "top" : 5.45, "height" : 1.85, "width" : 1.91} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 2.98, "top" : 5.45, "height" : 1.85, "width" : 1.8} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 5.49, "top" : 5.45, "height" : 1.85, "width" : 1.79} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png" alt="XXX image missing" style="background:white;max-width:20%;" /><!-- {"left" : 7.98, "top" : 5.45, "height" : 1.85, "width" : 1.79} -->
+<img src="../../assets/images/deep-learning/Convolutional-1.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 2.64, "top" : 7.91, "height" : 2.43, "width" : 2.51} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-2.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 5.93, "top" : 7.91, "height" : 2.43, "width" : 2.37} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-3.png" alt="XXX image missing" style="background:white;max-width:20%;" /> <!-- {"left" : 9.23, "top" : 7.91, "height" : 2.43, "width" : 2.36} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/Convolutional-4.png" alt="XXX image missing" style="background:white;max-width:20%;" /><!-- {"left" : 12.51, "top" : 7.91, "height" : 2.43, "width" : 2.36} -->
 
 
 Notes:
@@ -427,10 +442,10 @@ Notes:
 
 ## Fully Connected vs. Convolutional
 
-<img src="../../assets/images/deep-learning/fully-connected-1a.png"  style="width:25%;float:right;"/><!-- {"left" : 7.9, "top" : 1.16, "height" : 2.38, "width" : 2.31} -->
+<img src="../../assets/images/deep-learning/fully-connected-1a.png"  style="width:25%;float:right;"/><!-- {"left" : 13.7, "top" : 1.89, "height" : 3.39, "width" : 3.29} -->
 
 
-<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:25%;float:right;clear:both;" /><!-- {"left" : 7.9, "top" : 3.8, "height" : 2.38, "width" : 2.31} -->
+<img src="../../assets/images/deep-learning/Convolutional-1.png"  style="width:25%;float:right;clear:both;" /><!-- {"left" : 13.7, "top" : 5.65, "height" : 3.39, "width" : 3.29} -->
 
 
 * Fully connected layers connect to every neuron from previous layer
@@ -450,7 +465,7 @@ Notes:
 
 * [Tutorial on strides](https://www.youtube.com/watch?v=tQYZaDn_kSg&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=5) by Andrew Ng
 
-<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" />
+<img src="../../assets/images/deep-learning/3rd-party/andrew-ng-convolutional-networks-1.png"  style="width:60%;" /> <!-- {"left" : 4.12, "top" : 5.11, "height" : 5.39, "width" : 9.27} -->
 
 ---
 
@@ -464,13 +479,13 @@ Notes:
 
 - Here we are shrinking the picture, while still keeping the prominent feature (lighthouse)
 
-<img src="../../assets/images/deep-learning/3rd-party/lighthouse-1.jpg" style="width:32%;" /><!-- {"left" : 0.68, "top" : 4.52, "height" : 2.3, "width" : 3.45} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;" /><!-- {"left" : 4.95, "top" : 4.94, "height" : 1.67, "width" : 1.67} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/lighthouse-1-small.jpg"  style="width:15%;" /><!-- {"left" : 7.25, "top" : 5, "height" : 1.54, "width" : 2.32} -->
+<img src="../../assets/images/deep-learning/3rd-party/lighthouse-1.jpg" style="width:32%;" /><!-- {"left" : 2.59, "top" : 7.36, "height" : 3.19, "width" : 4.78} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;" /><!-- {"left" : 8.51, "top" : 7.94, "height" : 2.31, "width" : 2.31} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/lighthouse-1-small.jpg"  style="width:15%;" /><!-- {"left" : 11.69, "top" : 8.02, "height" : 2.13, "width" : 3.21} -->
 
 ---
 
 ## Pooling Example
 
-<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png"  style="width:50%;float:right;" /> <!-- {"left" : 1.63, "top" : 4.49, "height" : 3.39, "width" : 7} -->
+<img src="../../assets/images/deep-learning/CNN-Max-Pooling.png"  style="width:50%;float:right;" /> <!-- {"left" : 9.2, "top" : 1.89, "height" : 3.81, "width" : 7.88} -->
 
 * Here is an example of **MAX pooling**
 
@@ -480,7 +495,7 @@ Notes:
 
 <br clear="all"/>
 
-<img src="../../assets/images/deep-learning/3rd-party/lighthouse-1.jpg" style="width:32%;" /><!-- {"left" : 0.68, "top" : 4.52, "height" : 2.3, "width" : 3.45} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;" /><!-- {"left" : 4.95, "top" : 4.94, "height" : 1.67, "width" : 1.67} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/lighthouse-1-small.jpg"  style="width:15%;" /><!-- {"left" : 7.25, "top" : 5, "height" : 1.54, "width" : 2.32} -->
+<img src="../../assets/images/deep-learning/3rd-party/lighthouse-1.jpg" style="width:32%;" /><!-- {"left" : 3.93, "top" : 8.3, "height" : 2.5, "width" : 3.74} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/arrow-right-1.png" style="width:10%;" /><!-- {"left" : 8.56, "top" : 8.75, "height" : 1.81, "width" : 1.81} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/lighthouse-1-small.jpg"  style="width:15%;" /><!-- {"left" : 11.06, "top" : 8.82, "height" : 1.67, "width" : 2.52} -->
 
 Notes:
 
@@ -492,7 +507,7 @@ Notes:
 
 - And a final Softmax layer is giving the probabilities of the image class
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-design-example-1.png"  style="width:80%;" /><!-- {"left" : 1.02, "top" : 3.62, "height" : 3.94, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-design-example-1.png"  style="width:80%;" /><!-- {"left" : 3.78, "top" : 5.09, "height" : 4.77, "width" : 9.93} -->
 
 Notes:
 
@@ -506,7 +521,8 @@ Notes:
 
 * **Animation**: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/sLsCN9ZL9RI)
 
-<img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 2.71, "top" : 4.96, "height" : 5.09, "width" : 12.07} -->
+
 
 ---
 
@@ -516,7 +532,7 @@ Notes:
 
 * We slightly augment the images during training (e.g. rotate, flip, zoom in/out ..etc)
 
-<img src="../../assets/images/deep-learning/image-augmentation-1.png"  style="width:70%;" /> <!-- {"left" : 0.95, "top" : 3.12, "height" : 3.41, "width" : 8.36} -->
+<img src="../../assets/images/deep-learning/image-augmentation-1.png"  style="width:70%;" /> <!-- {"left" : 3.5, "top" : 5.21, "height" : 4.29, "width" : 10.51} -->
 
 ---
 
@@ -527,7 +543,7 @@ Notes:
 
 ##  Popular CNN Architectures
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-history-1.png" style=" width:100%;" /> <!-- {"left" : 0.95, "top" : 3.12, "height" : 3.41, "width" : 8.36} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-history-1.png" style=" width:100%;" /> <!-- {"left" : 4.04, "top" : 2.14, "height" : 3.85, "width" : 9.43} -->
 
 * References:
   - [Illustrated: 10 CNN Architectures](https://towardsdatascience.com/illustrated-10-cnn-architectures-95d78ace614d)
@@ -550,6 +566,9 @@ Notes:
 | 2016 | Inception V4             | Google       |        | 43 million  | Updated from previous Inception v3                                                                      |
 | 2016 | Inception-ResNet-V2      | Google       |        | 56 million  | A merge of Inception and ResNet                                                                         |
 
+<!-- {"left" : 0.41, "top" : 1.81, "height" : 1, "width" : 16.69, "columnwidth" : [1.85, 2.05, 2.18, 1.67, 2.37, 6.57]} -->
+
+
 ---
 
 ## LeNet (1998)
@@ -567,7 +586,7 @@ Notes:
   - Mostly constrained by resources of the day
 
 
-<img src="../../assets/images/deep-learning/lenet-architecture.png" style="width:75%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/deep-learning/lenet-architecture.png" style="width:75%;" /> <!-- {"left" : 1.83, "top" : 7.11, "height" : 3.41, "width" : 13.84} -->
 
 Notes:
 
@@ -594,7 +613,7 @@ Neural Networks - original paper](https://papers.nips.cc/paper/4824-imagenet-cla
 
 ## AlexNet (2012)
 
-<img src="../../assets/images/deep-learning/CNN-Imagenet.png" style="width:90%;" /> <!-- {"left" : 1.02, "top" : 3.18, "height" : 3.97, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/CNN-Imagenet.png" style="width:90%;" /> <!-- {"left" : 2.12, "top" : 3.65, "height" : 6.41, "width" : 13.25} -->
 
 ---
 
@@ -607,7 +626,7 @@ Neural Networks - original paper](https://papers.nips.cc/paper/4824-imagenet-cla
   - So a large kernel can identify a car
   - A smaller kernel can further identify logos ..etc
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-inception-v1-1.png" style="width:50%;float:right;" /> <!-- {"left" : 1.02, "top" : 3.18, "height" : 3.97, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-inception-v1-1.png" style="width:50%;float:right;" /> <!-- {"left" : 10.21, "top" : 3.19, "height" : 3.31, "width" : 6.85} -->
 
 * The Inception network runs a series of convolutions of different sizes all on the same input, and concatenates all of the filters together to pass on to the next layer
 
@@ -622,7 +641,7 @@ Image credit : "Programming PyTorch for Deep Learning"
 
 ## Inception V1
 
-<img src="../../assets/images/deep-learning/CNN-Inception.png" style="width:90%;"/> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
+<img src="../../assets/images/deep-learning/CNN-Inception.png" style="width:90%;"/> <!-- {"left" : 0.97, "top" : 3.7, "height" : 4.99, "width" : 15.56} -->
 
 Notes:
 
@@ -641,16 +660,18 @@ Notes:
 * Despite it's large size, still popular transfer learning architecture
 
 * Number of layers: 19  
-Number of parameters : 138 million
+Number of parameters: 138 million
 
 ---
 
 ## VGGNet
 
 
-<img src="../../assets/images/deep-learning/CNN-VGG.png" style="width:60%;" /> <!-- {"left" : 1.02, "top" : 2.87, "height" : 4.85, "width" : 8.21} -->
+<img src="../../assets/images/deep-learning/CNN-VGG.png" style="width:60%;" /> <!-- {"left" : 4.03, "top" : 2.31, "height" : 5.66, "width" : 9.44} -->
 
-<img src="../../assets/images/deep-learning/CNN-VGG-2.png" style="width:90%;"/> <!-- {"left" : 0.35, "top" : 3.94, "height" : 1.19, "width" : 9.55} -->
+
+<img src="../../assets/images/deep-learning/CNN-VGG-2.png" style="width:90%;"/> <!-- {"left" : 1.49, "top" : 8.93, "height" : 1.81, "width" : 14.52} -->
+
 
 Notes:
 
@@ -658,7 +679,8 @@ Notes:
 
 ## ResNet (2015)
 
-<img src="../../assets/images/deep-learning/3rd-party/CNN-resnet-1.png" style="width:20%;float:right;"/> <!-- {"left" : 0.35, "top" : 3.94, "height" : 1.19, "width" : 9.55} -->
+<img src="../../assets/images/deep-learning/3rd-party/CNN-resnet-1.png" style="width:20%;float:right;"/> <!-- {"left" : 13.97, "top" : 1.89, "height" : 3.44, "width" : 2.67} -->
+
 
 * ResNet-152 model from Microsoft is the 2015 ImageNet winner  with top-5 score of 4.49%
 * ResNet uses Residual Neural Networks (RNNs); Not feed forward; Both Residual and Convolutional
@@ -666,7 +688,7 @@ Notes:
 * Number of layers: 150  
 Number of parameters: 26 million
 
-<img src="../../assets/images/deep-learning/CNN_resnet.png" style="width:70%;" /> <!-- {"left" : 0.6, "top" : 2.3, "height" : 2.9, "width" : 9.05} -->
+<img src="../../assets/images/deep-learning/CNN_resnet.png" style="width:70%;" /> <!-- {"left" : 3.84, "top" : 8.26, "height" : 3.15, "width" : 9.82} -->
 
 Notes:
 
@@ -680,7 +702,7 @@ Image credit : "Programming PyTorch for Deep Learning"
 * ResNet is a close second with some valid use cases.
 * Inception and ResNet are often ensembled (combined together).
 
-<img src="../../assets/images/deep-learning/CNN-tl-comparison.png" style="width:95%;"/> <!-- {"left" : 0.52, "top" : 2.95, "height" : 3.75, "width" : 9.2} -->
+<img src="../../assets/images/deep-learning/CNN-tl-comparison.png" style="width:95%;"/> <!-- {"left" : 2.09, "top" : 5.55, "height" : 5.43, "width" : 13.31} -->
 
 ---
 
@@ -692,7 +714,7 @@ Image credit : "Programming PyTorch for Deep Learning"
 
 ## Lab/Demo: Image Data Generator
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.26, "top" : 1.89, "height" : 5.85, "width" : 4.39} -->
 
 * **Overview:**
     - Learn to use Image Data Generator
@@ -710,7 +732,7 @@ Notes:
 
 ## Lab/Demo: Image Classification
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/>  <!-- {"left" : 12.26, "top" : 1.89, "height" : 5.85, "width" : 4.39} -->
 
 
 * **Overview:**
@@ -734,8 +756,8 @@ Notes:
 
 ## Transfer Learning Analogy
 
-<!-- TODO shiva -->
-<img src="../../assets/images/generic/guitar-ukulele-1.jpg" style="width:20%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/generic/guitar-ukulele-1.jpg" style="width:20%;float:right;" /> <!-- {"left" : 11.14, "top" : 2.12, "height" : 2.74, "width" : 5.99} -->
+
 * Imagine you want to learn how to play the **ukulele**
 
 * If you have no musical background, and you are starting fresh with the ukulele as your very first instrument, it'll take you a few months to get proficient at playing it
@@ -773,8 +795,7 @@ Notes:
 
 ## Using a Pre-trained Model
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/3rd-party/standing-on-shoulders.jpg" style="width:30%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/deep-learning/3rd-party/standing-on-shoulders.jpg" style="width:30%;float:right;" /> <!-- {"left" : 13.32, "top" : 1.89, "height" : 6.38, "width" : 4.01} -->
 
  * Despite what you think, your problem is not totally unique
    - Others have worked on it before.
@@ -797,8 +818,8 @@ Notes:
  * So we can re-use the learned knowledge in these layers
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/transfer-learning-3.png" style="width:80%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/deep-learning/transfer-learning-3.png" style="width:80%;" /> <!-- {"left" : 3.12, "top" : 5.82, "height" : 4.11, "width" : 11.27} -->
+
 
 Notes:
 
@@ -830,8 +851,9 @@ Notes:
 
  * This allows us to customize the model to our data
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/transfer-learning-4.png" style="width:60%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/deep-learning/transfer-learning-4.png" style="width:60%;" /> <!-- {"left" : 3.71, "top" : 6.71, "height" : 4.06, "width" : 10.09} -->
+
+
 
 Notes:
 
@@ -844,9 +866,7 @@ Notes:
 
 * And later layers are re-trained with our own data
 
-<!-- TODO shiva -->
-<img src="../../assets/images/deep-learning/transfer-learning-2.png" style="width:50%;" /><!-- {"left" : 1.1, "top" : 1.59, "height" : 6.68, "width" : 8.05} -->
-
+<img src="../../assets/images/deep-learning/transfer-learning-2.png" style="width:50%;" /> <!-- {"left" : 4.63, "top" : 4.11, "height" : 6.85, "width" : 8.24} -->
 
 
 ---
@@ -870,8 +890,7 @@ Notes:
 
 ## Lab: Explore Pre-trained Models
 
-<!-- TODO shiva -->
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.26, "top" : 1.89, "height" : 5.85, "width" : 4.39} -->
 
 
 * **Overview:**
@@ -881,7 +900,7 @@ Notes:
     - 15 mins
 
 * **Instructions:**
-    - **TRANSFER-1**: Explore pre-trained model
+    - **TRANSFER-1:** Explore pre-trained model
 
 
 Notes:
@@ -890,8 +909,7 @@ Notes:
 
 ## Lab: Using Pre-trained Models
 
-<!-- TODO shiva -->
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.26, "top" : 1.89, "height" : 5.85, "width" : 4.39} -->
 
 * **Overview:**
     - Use pre-trained models
@@ -900,7 +918,7 @@ Notes:
     - 40 mins
 
 * **Instructions:**
-    - **TRANSFER-2**: Using pre-trained model
+    - **TRANSFER-2:** Using pre-trained model
 
 Notes:
 
@@ -908,8 +926,7 @@ Notes:
 
 ## Lab: Re-training a Pre-trained Model
 
-<!-- TODO shiva -->
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.26, "top" : 1.89, "height" : 5.85, "width" : 4.39} -->
 
 * **Overview:**
     - Customize a pre-trained model
@@ -918,7 +935,7 @@ Notes:
     - 40 mins
 
 * **Instructions:**
-    - **TRANSFER-3**: Retrain a pre-trained model
+    - **TRANSFER-3:** Retrain a pre-trained model
 
 Notes:
 

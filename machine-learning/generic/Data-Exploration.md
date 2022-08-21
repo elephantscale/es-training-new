@@ -197,9 +197,10 @@ Notes:
   = 91.89
 * Median = 55
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="max-width:80%;"/><!-- {"left" : 10.15, "top" : 5.73, "height" : 1.97, "width" : 7.18} -->
-
 <br/>
+
+<img src="../../assets/images/machine-learning/Data-Exploration-Median-Mean-Outliers2.png" alt="Data-Exploration-Median-Mean-Outliers2.png" style="max-width:80%;"/><!-- {"left" : 3.79, "top" : 4.71, "height" : 2.72, "width" : 9.93} -->
+
 <br/>
 
 * So **median** is less influenced by outliers
@@ -437,7 +438,7 @@ np.std(city2)    # 23.4520787991 <-- larger than sd(city1)
  * Third quartile @ 75% mark = Q3 = 75th percentile
  * IQR = distance between Q3 and Q1
 
-<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-0.png" alt="Data-Exploration-Quartiles-0.png" style="width:30%;"/><!-- {"left" : 9.35, "top" : 5.43, "height" : 6.33, "width" : 7.67} -->
+<img src="../../assets/images/machine-learning/Data-Exploration-Quartiles-0.png" alt="Data-Exploration-Quartiles-0.png" style="width:30%;"/><!-- {"left" : 9.35, "top" : 3.03, "height" : 6.33, "width" : 7.67} -->
 
 
 Notes:
@@ -716,7 +717,8 @@ Image credit to : Think calculator  (http://www.thinkcalculator.com/statistics/c
 
 * Example: See the map of Waffle House locations and heart attack rates in US!
 
-<img src="../../assets/images/google-cloud/3rd-party/viz-cardiac-deaths-vs-waffle-houses.jpg"  style="width:60%;"/><!-- {"left" : 3.72, "top" : 3.99, "height" : 4.16, "width" : 10.05} -->
+<img src="../../assets/images/google-cloud/3rd-party/viz-cardiac-deaths-vs-waffle-houses.jpg"  style="width:60%;"/> <!-- {"left" : 3.85, "top" : 4.84, "height" : 6.23, "width" : 9.8} -->
+
 
 Notes:
 
@@ -724,9 +726,9 @@ Notes:
 
 ## Correlation Code
 
-<!-- TODO shiva -->
-
 * Python 
+
+<br/>
 
 ```python
 import numpy  as  np
@@ -740,7 +742,7 @@ p.corrcoef(bills,tips)
 # array([[ 1.    , 0.95221535],
 #        [ 0.95221535, 1.      ]])
 ```
-<!-- {"left" : 0.85, "top" : 2.5, "height" : 4.32, "width" : 13.23} -->
+<!-- {"left" : 0.8, "top" : 2.59, "height" : 3.44, "width" : 9.65} -->
 
 * R code
 
@@ -752,7 +754,7 @@ tip = c(12,7,13,8,15,5,2,2,3,4)
 cor(bill, tip)
 # [1] 0.9522154 ## strong correlation!
 ```
-<!-- {"left" : 0.85, "top" : 2.5, "height" : 2.76, "width" : 12.55} -->
+<!-- {"left" : 0.8, "top" : 7.03, "height" : 2.24, "width" : 8.04} -->
 
 ---
 
@@ -774,7 +776,6 @@ cor(bill, tip)
 
 * Here is some cars data
 
-<!-- TODO: Shiva -->
 
 ```text
 +-------------------+----+---+-----+---+----+-----+-----+---+---+----+----+
@@ -799,31 +800,30 @@ cor(bill, tip)
 |  Chrysler Imperial|14.7|  8|440.0|230|3.23|5.345|17.42|  0|  0|   3|   4|
 ...
 ```
+<!-- {"left" : 0.8, "top" : 2.87, "height" : 6.94, "width" : 14.39} -->
 
 ---
 
 ## Correlation Matrix Example
 
-* Here is the correlation matrix.  Which attributes affect **mpg** ?
+* Here is the correlation matrix. Which attributes affect **mpg** ?
 
-<!-- TODO: Shiva -->
-<img src="../../assets/images/machine-learning/correlation-matrix-2.png"  style="width:90%;"/><!-- {"left" : 4.42, "top" : 8.18, "height" : 3.17, "width" : 8.67} -->
+<img src="../../assets/images/machine-learning/correlation-matrix-2.png"  style="width:90%;"/><!-- {"left" : 0.89, "top" : 3.84, "height" : 5.74, "width" : 15.71} -->
 
 ---
 
 ## Correlation Matrix Example
 
-<img src="../../assets/images/machine-learning/correlation-matrix-4.png"  style="width:65%;float:right;"/><!-- {"left" : 4.42, "top" : 8.18, "height" : 3.17, "width" : 8.67} -->
+<img src="../../assets/images/machine-learning/correlation-matrix-4.png"  style="width:65%;float:right;"/> <!-- {"left" : 9.9, "top" : 2.19, "height" : 6.23, "width" : 7.17} -->
 
 * Negative correlations are highlighted in red,  positive ones are in blue
 
-<!-- TODO: Shiva -->
 
 ---
 
 ## Correlation Matrix Code (Python)
 
-<img src="../../assets/images/machine-learning/covariance-matrix-1.png" alt="covariance-matrix-1.png" style="width:40%;float:right;"/><!-- {"left" : 9.96, "top" : 2, "height" : 3.74, "width" : 7.2} -->
+<img src="../../assets/images/machine-learning/covariance-matrix-1.png" alt="covariance-matrix-1.png" style="width:40%;float:right;"/><!-- {"left" : 10.71, "top" : 2, "height" : 3.35, "width" : 6.45} -->
 
 ```python
 import numpy as np
@@ -838,7 +838,7 @@ m = np.vstack([a,b,c,d,e])
 print(m)
 print(np.corrcoef(m))
 ```
-<!-- {"left" : 0.85, "top" : 2.33, "height" : 4.01, "width" : 7.32} -->
+<!-- {"left" : 0.8, "top" : 1.83, "height" : 3.26, "width" : 5.95} -->
 
 ```text
 # output : m
@@ -848,7 +848,7 @@ print(np.corrcoef(m))
  [10 20 30 40 50 55]
  [ 7  8  9  4  6 10]]
 ```
-<!-- {"left" : 0.85, "top" : 6.61, "height" : 2.24, "width" : 5.14} -->
+<!-- {"left" : 0.8, "top" : 5.2, "height" : 1.73, "width" : 3.97} -->
 
 ```text
 # output: correlation matrix
@@ -859,7 +859,9 @@ c [ 0.84515425  0.05370862  1.          0.86126699  0.07319251]
 d [ 0.99607842  0.49341288  0.86126699  1.          0.03538992]
 e [ 0.09897433  0.38786539  0.07319251  0.03538992  1.        ]]
 ```
-<!-- {"left" : 0.85, "top" : 9.2, "height" : 2.18, "width" : 11.71} -->
+<!-- {"left" : 0.8, "top" : 7.04, "height" : 2.18, "width" : 11.71} -->
+
+<br/>
 
 * Question:
     - Find variables that are highly correlated (Hint: look for corr close to +1)
@@ -874,6 +876,7 @@ Notes:
 <img src="../../assets/images/machine-learning/covariance-matrix-1.png" alt="covariance-matrix-1.png" style="width:40%;float:right;"/><!-- {"left" : 9.96, "top" : 2, "height" : 3.74, "width" : 7.2} -->
 
 
+<br/>
 
 ```R
 a <- c(1,2,3,4,5,6)
@@ -890,7 +893,6 @@ cor_matrix
 ```
 <!-- {"left" : 0.85, "top" : 2, "height" : 3.58, "width" : 5.56} -->
 
-<br/>
 
 - Which of the variables are strongly correlated?
 
@@ -913,7 +915,8 @@ Notes:
 
 ## Lab: EDA-Basic Stats
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 11.6, "top" : 1.89, "height" : 6.59, "width" : 4.94} -->
+
 
 * **Overview:**
     - Learn basic statistics functions
@@ -944,7 +947,7 @@ Notes:
 | Histogram | Plot of frequency table |
 | Density plot | Smoothed version of histogram (Kernel Density Estimate) |
 
-<!-- {"left" : 1.08, "top" : 2.5, "height" : 1, "width" : 15.35} -->
+<!-- {"left" : 1.08, "top" : 3.29, "height" : 1, "width" : 15.35} -->
 
 Notes:
 
@@ -1097,7 +1100,7 @@ Notes:
 
 ## Lab: EDA - Basic Visualization
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 11.6, "top" : 1.89, "height" : 6.59, "width" : 4.94} -->
 
 * **Overview:**
     - Learn basic plot functions
@@ -1112,7 +1115,7 @@ Notes:
 
 ## Lab: Exploring Dataset
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 11.6, "top" : 1.89, "height" : 6.59, "width" : 4.94} -->
 
 * **Overview:**  
     - Explore house sales dataset
@@ -1129,7 +1132,7 @@ Notes:
 
 ## Lab: Visualizing House Sales
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 11.6, "top" : 1.89, "height" : 6.59, "width" : 4.94} -->
 
 * **Overview:**
     - Visualize house-sales dataset

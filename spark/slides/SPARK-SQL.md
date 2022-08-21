@@ -312,7 +312,7 @@ df.filter("age > 20").show()
 | BinaryType  | Binary / blob data                                                                            | Array[Byte]          | bytearray       |
 | BooleanType | True / False                                                                                  | True / False         | bool            |
 
-<!-- {"left" : 0.34, "top" : 1.77, "height" : 9.56, "width" : 16.82, "columnwidth" : [2.47, 8.69, 2.85, 2.82]} -->
+<!-- {"left" : 0.34, "top" : 2.32, "height" : 1, "width" : 16.82, "columnwidth" : [2.47, 8.69, 2.85, 2.82]} -->
 
 
 ---
@@ -330,18 +330,16 @@ df.filter("age > 20").show()
 | MapType       | Key / Value pairs                                                                                                  | scala.collection.Map     | dict                  |
 | StructType    | Random structure with one or more fields  <br/>Address <br/>{street_number,    street_name,city,state,zip } | org.apache.spark.sql.Row | list or tuple         |
 
-<!-- {"left" : 0.34, "top" : 1.77, "height" : 9.56, "width" : 16.82, "columnwidth" : [2.47, 8.69, 2.85, 2.82]} -->
+<!-- {"left" : 0.34, "top" : 2.32, "height" : 1, "width" : 16.82, "columnwidth" : [2.47, 8.69, 2.85, 2.82]} -->
 
 
 ---
 
 ## Catalyst Query Optimizer
 
-<!-- TODO: shiva -->
-
 * Catalyst is a 'multi phase' optimizer, that can really boost performance
 
-<img src="../../assets/images/spark/3rd-party/catalyst-optimizer-1.png" style="width:70%;" /><!-- {"left" : 2.88, "top" : 8.33, "height" : 2.79, "width" : 11.73} -->
+<img src="../../assets/images/spark/3rd-party/catalyst-optimizer-1.png" style="width:70%;" /><!-- {"left" : 2.91, "top" : 3.27, "height" : 2.79, "width" : 11.73} -->
 
 * DataFrames are lazily evaluated; Catalyst can combine instructions together
 
@@ -352,6 +350,7 @@ a = spark.read....
 b = a.filter (x != null)
 c = b.filter (y != null)
 ```
+<!-- {"left" : 0.8, "top" : 8.04, "height" : 1.8, "width" : 10.47} -->
 
 ```python
 ## these 2 steps can be joined in single step as follows
@@ -360,12 +359,11 @@ c = b.filter (y != null)
 a = spark.read....
 c = a.filter (x != null && y != null)
 ```
+<!-- {"left" : 0.8, "top" : 9.98, "height" : 1.8, "width" : 10.47} -->
 
 ---
 
-## Catalyst:  Re-ordering Operations
-
-<!-- TODO: shiva -->
+## Catalyst: Re-ordering Operations
 
 * For example filter operations can be moved up if possible, this cuts down data flowing through stages
 
@@ -384,6 +382,8 @@ d =
 # we have carried forward 10M rows through the pipeline, and now we are discarding some rows!
 e = d.filter (...)
 ```
+<!-- {"left" : 0.8, "top" : 3.77, "height" : 4.21, "width" : 16.28} -->
+
 
 ```python
 # move up filter, if possible
@@ -396,12 +396,12 @@ b =
 c = 
 d = 
 ```
+<!-- {"left" : 0.8, "top" : 8.28, "height" : 2.9, "width" : 12.44} -->
+
 
 ---
 
 ## Catalyst: Use Schema Information
-
-<!-- TODO: shiva -->
 
 * For example consider the following SQL code
 
@@ -409,6 +409,7 @@ d =
 select * from table
 where col1 > col2
 ```
+<!-- {"left" : 0.8, "top" : 2.45, "height" : 0.86, "width" : 3.94} -->
 
 * `col1` and `col2` can be integers / strings / boolean ..etc
 
@@ -420,8 +421,6 @@ where col1 > col2
 
 ## Catalyst: Predicate Pushdown
 
-<!-- TODO: shiva -->
-
 * Here we area reading data, and immediately filtering
     - So it makes sense to only read data that can pass the filter
 
@@ -429,9 +428,9 @@ where col1 > col2
 df1 = spark.read.csv("data.csv")
 df2 = df1.filter ("age > 30")
 ```
-<!-- {"left" : 0.8, "top" : 3.46, "height" : 1.27, "width" : 9.01} -->   
+<!-- {"left" : 0.8, "top" : 3.53, "height" : 1.09, "width" : 7.77} -->   
 
-<img src="../../assets/images/spark/optimizer-predictate-pushdown-1.png" style="width:70%;" /><!-- {"left" : 4.11, "top" : 5.35, "height" : 5.41, "width" : 9.28} -->
+<img src="../../assets/images/spark/optimizer-predictate-pushdown-1.png" style="width:70%;" /><!-- {"left" : 4.11, "top" : 5.75, "height" : 5.41, "width" : 9.28} -->
 
 ---
 
@@ -473,7 +472,6 @@ Filter (isnotnull(age#7L) AND (age#7L > 30))
 
 ## Catalyst: Code Generation
 
-<!-- TODO: shiva -->
 
 * As a final step, Catalyst may generate code for execution plans
 
@@ -487,10 +485,11 @@ Filter (isnotnull(age#7L) AND (age#7L > 30))
 select * from table
 where col1 > col2
 ```
+<!-- {"left" : 0.8, "top" : 4.24, "height" : 0.8, "width" : 3.65} --> 
 
 * Catalyst will generate code depending on the types (int, string, boolean ..etc) of `col1` and  `col2`
 
-<img src="../../assets/images/spark/3rd-party/codegen-1.png" style="width:80%;" /><!-- {"left" : 2.93, "top" : 5.47, "height" : 2.77, "width" : 11.63} -->   
+<img src="../../assets/images/spark/3rd-party/codegen-1.png" style="width:80%;" /><!-- {"left" : 1.65, "top" : 7.33, "height" : 3.38, "width" : 14.19} -->   
 
 ---
 
@@ -678,7 +677,7 @@ spark.newSession().sql("SELECT * FROM global_temp.people").show()
 # Save a persistent table
 df.saveAsTable("hiveTable")
 ```
-<!-- {"left" : 0.8, "top" : 8.44, "height" : 2.9, "width" : 13.44} -->   
+<!-- {"left" : 0.8, "top" : 8.2, "height" : 2.9, "width" : 13.44} -->   
 
 
 ---
@@ -838,7 +837,7 @@ Jane,F,40
 Mike,M,18
 Sue,F,19
 ```
-<!-- {"left" : 0.8, "top" : 3.26, "height" : 2.53, "width" : 4.78} -->   
+<!-- {"left" : 0.8, "top" : 3.26, "height" : 1.76, "width" : 3.33} -->   
 
 
 ```scala
@@ -856,7 +855,7 @@ Sue,F,19
 //   |-- gender: string (nullable = true)
 //   |-- age: string (nullable = true)
 ```
-<!-- {"left" : 0.8, "top" : 6.1, "height" : 5.55, "width" : 11.29} -->   
+<!-- {"left" : 0.8, "top" : 5.24, "height" : 4.56, "width" : 9.27} -->   
 
 ```python
 # python
@@ -864,8 +863,8 @@ data = spark.read.csv("people.csv", header=True, inferSchema=True)
 data.printSchema()
 data.show()
 ```
+<!-- {"left" : 0.8, "top" : 10.02, "height" : 1.44, "width" : 11.78} -->   
 
-<!-- TODO: shiva -->
 
 
 ---
@@ -964,6 +963,7 @@ Jane,F,40
 Mike,M,18
 Sue,F,x
 ```
+<!-- {"left" : 0.8, "top" : 3.94, "height" : 1.74, "width" : 3.28} -->   
 
 ```python
 from pyspark.sql.types import StringType, IntegerType, StructField, StructType
@@ -977,6 +977,8 @@ people = (spark.read.option("header", "true")
                     .csv("people3.csv"))
 people.show()
 ```
+<!-- {"left" : 0.8, "top" : 5.9, "height" : 3.19, "width" : 13.78} -->   
+
 
 ```text
 +----+------+----+
@@ -988,6 +990,8 @@ people.show()
 | Sue|     F|null|
 +----+------+----+
 ```
+<!-- {"left" : 0.8, "top" : 9.31, "height" : 2.61, "width" : 3.78} -->   
+
 
 ---
 
@@ -1031,11 +1035,12 @@ print(json.dumps(schema.jsonValue(), indent=2))
 
 ## Infer Schema from Small Set of Data
 
-<!-- TODO: shiva -->
 
 * Here, we are going to calculate the schema from a small sample of data (very fast)
 
 * And then use it for larger data set!
+
+<br/>
 
 ```python
 # small data --> fast read!
@@ -1049,6 +1054,8 @@ large_data = spark.read.json('/data/large_json_data/',
                         schema=schema1) # <-- schema
 
 ```
+<!-- {"left" : 0.8, "top" : 3.7, "height" : 2.61, "width" : 8.96} -->   
+
 
 * Since we supplied schema, Spark won't parse `large_json_data` anymore, so it is a very efficient read!
 
@@ -1059,6 +1066,7 @@ large_data = spark.read.json('/data/large_json_data/',
 * Here, we are going to calculate the schema once and store it, so it can be retrieved later
 
 * Infer schema from sample data and save the schema - one time action
+<br/>
 
 ```python
 ## first, infer the schema on a small sample file
@@ -1068,9 +1076,7 @@ schema_json = schema.json()
 ## Save 'schema_json' to a file named 'schema_json.txt'
 
 ```
-<!-- {"left" : 0.8, "top" : 4.52, "height" : 2.07, "width" : 11.86} -->   
-
-<br/>
+<!-- {"left" : 0.8, "top" : 3.7, "height" : 2.23, "width" : 12.77} -->   
 
 * Now any time we read the data file, read the schema back and use it - again and again!
 
@@ -1086,7 +1092,7 @@ schema = StructType.fromJson(json.loads(schema_json))
 ## And supply the schema when reading data
 data = spark.read.json('/data/json/', schema=schema)
 ```
-<!-- {"left" : 0.8, "top" : 7.78, "height" : 3.51, "width" : 12.57} -->   
+<!-- {"left" : 0.8, "top" : 7.26, "height" : 3.51, "width" : 12.57} -->   
 
 
 * References: [1](https://szczeles.github.io/Reading-JSON-CSV-and-XML-files-efficiently-in-Apache-Spark/)
@@ -1334,7 +1340,7 @@ name, gender, age
 John,M,40
 Jane,F,35
 ```
-<!-- {"left" : 0.8, "top" : 3.62, "height" : 1.83, "width" : 5.73} -->
+<!-- {"left" : 0.8, "top" : 3.2, "height" : 1.13, "width" : 3.54} -->
 
 * JSON data
 
@@ -1342,7 +1348,7 @@ Jane,F,35
 {"name" : "John", "gender" : "M", "age": 40}
 {"name" : "Jane", "gender" : "F", "age": 35}
 ```
-<!-- {"left" : 0.8, "top" : 6.07, "height" : 0.75, "width" : 7.1} -->   
+<!-- {"left" : 0.8, "top" : 4.92, "height" : 0.69, "width" : 6.53} -->   
 
 * Pros:
     - Human-readable
