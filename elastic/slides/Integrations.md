@@ -112,5 +112,12 @@ Notes:
 
 ![](../images/03.png)
 
+* On your install of Kibana
+---
+
+## Integrations on Elastic site
+
+* https://www.elastic.co/integrations/data-integrations?solution=all-solutions
+
 ---
 

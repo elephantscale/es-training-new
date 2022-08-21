@@ -23,6 +23,7 @@ Integrations.md
 Filebeat.md
 X-Pack.md
 Elasticsearch_Admin.md
+Elastic-ML.md
 # Search and Machine Learning (AI)
 ../../machine-learning/python/LearnToRank.md
 ../../python/slides/PYTHON-Text-NLTK.md
