@@ -2,6 +2,32 @@
 
 ---
 
+## License for full Machine Learning
+
+![](../images/04.png)
+
+---
+
+## Machine Learning with Elasticsearch
+
+![](../images/05.png)
+
+---
+
+## Complete ML
+
+![](../images/06.png)
+
+---
+
+
+## NLP
+
+![](../images/07.png)
+
+---
+
+
 ## References
 
 * Webinar 1
