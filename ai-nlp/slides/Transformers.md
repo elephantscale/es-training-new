@@ -1,7 +1,6 @@
 # Transformers
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/3rd-party/transformers-2.jpg" style="width:45%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-2.jpg" style="width:45%;"/> <!-- {"left" : 6.05, "top" : 7.56, "height" : 3.38, "width" : 5.39} -->
 
 ---
 
@@ -13,9 +12,9 @@
 
 ## Transformers
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:30%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
-<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:30%;float:right;clear:both;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:30%;float:right;"/> <!-- {"left" : 13.27, "top" : 1.59, "height" : 3.81, "width" : 3.81} -->
+
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:30%;float:right;clear:both;"> <!-- {"left" : 12.99, "top" : 6.32, "height" : 3.16, "width" : 4.36} -->
 
 * In 2017, in a landmark paper ["Attention is all you need"](https://arxiv.org/abs/1706.03762), researchers from Google, proposed a novel model called **Transformers**
 
@@ -31,7 +30,7 @@
 
 ## Transformers
 
-<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:45%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:45%;float:right;"/> <!-- {"left" : 12.69, "top" : 2.08, "height" : 4.3, "width" : 4.3} -->
 
 * The Transformer architecture solved the 2 nagging problems with Seq-2-Seq models
   - Transformers can 'track or remember' long sequences
@@ -49,7 +48,7 @@
 
 ## Sequence Models: RNNs
 
-<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:right;"/><!-- {"left" : 3.63, "top" : 4.27, "height" : 3.47, "width" : 1.53} -->
+<img src="../../assets/images/deep-learning/rnn-2.png"  style="width:15%;float:right;"/> <!-- {"left" : 15.13, "top" : 2.08, "height" : 4.52, "width" : 1.93} -->
 
 * Text is essentially **sequence data**
 
@@ -69,7 +68,7 @@ Notes:
 
 ## RNNs: Short Term Memory
 
-<img src="../../assets/images/deep-learning/3rd-party/rnn-memory-1.png" style="width:50%;float:right;" />   <!-- {"left" : 5.78, "top" : 1.06, "height" : 2.31, "width" : 4.34} -->
+<img src="../../assets/images/deep-learning/3rd-party/rnn-memory-1.png" style="width:50%;float:right;" /> <!-- {"left" : 12, "top" : 2.44, "height" : 2.76, "width" : 5.18} -->
 
 * Memory of the first inputs (hidden state) gradually fades away over multiple steps
 
@@ -95,7 +94,7 @@ Notes:
 
 * But which is the key to determining the answer?
   - Not the adjacent words : **my teenage years**
-  - But : **lived in China** - from start of the sentence
+  - But: **lived in China** - from start of the sentence
 
 * So to make the correct prediction, the network has to 'remember' early words (lived in China)
 
@@ -134,9 +133,10 @@ Notes:
 with Neural Networks, 2014](https://arxiv.org/abs/1409.3215)
   - [Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation, 2014](https://arxiv.org/abs/1406.1078)
 
+<img src="../../assets/images/ai-nlp/sequence-to-sequence-3-nlp.png" style="width:85%;"/> <!-- {"left" : 2.68, "top" : 8.66, "height" : 1.55, "width" : 12.14} -->
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/sequence-to-sequence-3-nlp.png" style="width:85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+
 ---
 
 ## Encoder Decoder Architecture
@@ -148,8 +148,7 @@ with Neural Networks, 2014](https://arxiv.org/abs/1409.3215)
   - intermediate vector
   - and decoder
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/encoder-decoder-1-seq2seq.png" style="width:85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/encoder-decoder-1-seq2seq.png" style="width:85%;"/> <!-- {"left" : 2.38, "top" : 6.31, "height" : 3.03, "width" : 12.75} -->
 
 Notes:
 
@@ -159,15 +158,15 @@ Notes:
 
 * Both encoder and decoder are made up several stacks of RNNs (or LSTMs or GRUs)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:55%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:55%;"/> <!-- {"left" : 11.75, "top" : 1.89, "height" : 4.72, "width" : 5.5} -->
+
 
 ---
 
 ## Encoder
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/> <!-- {"left" : 11.75, "top" : 1.89, "height" : 4.72, "width" : 5.5} -->
+
 
 * Encoder is composed of several units of RNNs (or LSTM / GRU variants)
 
@@ -182,8 +181,7 @@ Notes:
 
 ## Encoded Vector
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/> <!-- {"left" : 11.75, "top" : 1.89, "height" : 4.72, "width" : 5.5} -->
 
 * This is the final hidden state produced from the encoder part of the model
 
@@ -195,8 +193,7 @@ Notes:
 
 ## Decoder
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/> <!-- {"left" : 11.75, "top" : 1.89, "height" : 4.72, "width" : 5.5} -->
 
 * Decoder is composed of several layres of RNNs
 
@@ -210,8 +207,7 @@ Notes:
 
 ## Encoder-Decoder Strengths
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/> <!-- {"left" : 11.75, "top" : 1.89, "height" : 4.72, "width" : 5.5} -->
 
 * The strength of this architecture is they can map one sequence to another sequence
   - "I am a student" --> "Soy estudiante"
@@ -233,13 +229,14 @@ Notes:
 
 * [Visualizing A Neural Machine Translation Model](http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/) - Must see animations by Jay Alammar!
 
-<img src="../../assets/images/ai-nlp/3rd-party/seq2seq-animation-1.png" style="width:45%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/3rd-party/seq2seq-animation-1.png" style="width:45%;"/> <!-- {"left" : 2.99, "top" : 5.72, "height" : 2.26, "width" : 11.52} -->
+
 
 ---
 
 ## Limitations of Encoder/Decoder Model
 
-<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/encoder-decoder-2.png" style="width:45%;float:right;"/> <!-- {"left" : 12.17, "top" : 2.25, "height" : 4.24, "width" : 4.94} -->
 
 * The **encoded vector** turns out to be a bottleneck in this design
 
@@ -266,7 +263,8 @@ Notes:
 
 * For example in our translation scenario, attention will amplify the word **student** in the encoded vector
 
-<img src="../../assets/images/ai-nlp/attention-1.png" style="width:85%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/attention-1.png" style="width:85%;"/> <!-- {"left" : 1.59, "top" : 7.43, "height" : 2.35, "width" : 14.31} -->
+
 
 ---
 
@@ -276,8 +274,7 @@ Notes:
 
 - First, the **attention encoder** passes a lot more data to the decoder. Instead of passing just the last hidden state of the encoding stage, the encoder passes all the hidden states to the decoder
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/attention-2-model.png" style="width:45%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/attention-2-model.png" style="width:45%;"/> <!-- {"left" : 11.75, "top" : 1.89, "height" : 4.72, "width" : 5.5} -->
 
 ---
 
@@ -306,15 +303,14 @@ Notes:
   - **estudiante** focuses on word **student**
 * Another thing to note, it is not simply aligning input words to output words: input is 4 words, output is 3 words
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/attention-3-model.png" style="width:60%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/attention-3-model.png" style="width:60%;"/> <!-- {"left" : 9.82, "top" : 2.5, "height" : 4.49, "width" : 7.49} -->
+
 
 ---
 
 ## Attention Model
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/3rd-party/attention_sentence.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/ai-nlp/3rd-party/attention_sentence.png" style="width:50%;float:right;"/> <!-- {"left" : 11.22, "top" : 1.89, "height" : 5.92, "width" : 5.8} -->
 
 * Here is an example from attention paper.
 
@@ -356,9 +352,8 @@ Notes:
 
 ## Onto Transformers
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:35%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:35%;float:right;"/> <!-- {"left" : 13.66, "top" : 1.89, "height" : 3.54, "width" : 3.54} -->
 
 * We just looked at the basics of **encoder-decoder** networks and **attention** mechanism
 
@@ -380,7 +375,8 @@ Notes:
 
 * The english sentence is fed into the model; it produces the output
 
-<img src="../../assets/images/ai-nlp/transformers-1.png" style="width:75%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/transformers-1.png" style="width:75%;"/><!-- {"left" : 2.91, "top" : 5.66, "height" : 4.31, "width" : 11.69} -->
+
 
 ---
 
@@ -391,13 +387,13 @@ Notes:
 * Reference:
   - [The Illustrated Transformer by Jay Alammar](http://jalammar.github.io/illustrated-transformer/)
 
-<img src="../../assets/images/ai-nlp/transformers-2.png" style="width:75%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/transformers-2.png" style="width:75%;"/> <!-- {"left" : 2.07, "top" : 6.11, "height" : 3.51, "width" : 13.35} -->
 
 ---
 
 ## Transformer Model
 
-<img src="../../assets/images/ai-nlp/transformers-3.png" style="width:40%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/transformers-3.png" style="width:40%;float:right;"/> <!-- {"left" : 11.67, "top" : 1.89, "height" : 7.08, "width" : 5.24} -->
 
 * As we unpack further, the encoders are a set of encoders;  same with decoders
 
@@ -411,7 +407,7 @@ Notes:
 
 * Decoder has a pretty similar stack.  It has another attention layer in between.  This layer helps decoder focus on relevant words of the input sentence
 
-<img src="../../assets/images/ai-nlp/transformers-4.png" style="width:80%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/transformers-4.png" style="width:80%;"/> <!-- {"left" : 4.68, "top" : 5.29, "height" : 6.29, "width" : 8.14} -->
 
 ---
 
@@ -432,7 +428,8 @@ Notes:
 
 ## Transformer Full Architecture
 
-<img src="../../assets/images/ai-nlp/3rd-party/transformer-10.png" style="width:30%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/3rd-party/transformer-10.png" style="width:30%;"/>  <!-- {"left" : 11.78, "top" : 1.89, "height" : 6.87, "width" : 5.09} -->
+
 
 * Reference: [Transformer paper](#)
 
@@ -451,6 +448,8 @@ Notes:
 | I like ice cream          | me gusta el helado     |
 | I like to go to the beach | me gusta ir a la playa |
 
+<!-- {"left" : 1.35, "top" : 4.81, "height" : 2.51, "width" : 14.79} -->     
+
 ---
 
 ## Training Transformers
@@ -458,7 +457,7 @@ Notes:
 * Here we see, after sufficient training, the model can predict the translation
 * You will notice the prediction is a softmax output (total adding up to 1.0)
 
-<img src="../../assets/images/ai-nlp/transformers-5-training.png" style="width:50%;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/transformers-5-training.png" style="width:50%;"/> <!-- {"left" : 10.4, "top" : 2, "height" : 6.66, "width" : 7.01} -->     
 
 ---
 
@@ -476,7 +475,7 @@ Notes:
 
 ## BERT
 
-<img src="../../assets/images/ai-nlp/3rd-party/bert-1.jpg" style="width:30%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/3rd-party/bert-1.jpg" style="width:30%;float:right;"/> <!-- {"left" : 14.09, "top" : 1.89, "height" : 5.01, "width" : 3.01} -->     
 
 * BERT is a ground breaking (not an understatement) NLP model developed by Google
 
@@ -499,7 +498,7 @@ Image credit : https://pixy.org/4254306/
 
 ## BERT is BiDirectional
 
-<img src="../../assets/images/ai-nlp/3rd-party/look-left-look-right-1.jpg" style="width:30%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/3rd-party/look-left-look-right-1.jpg" style="width:30%;float:right;"/> <!-- {"left" : 11.58, "top" : 1.89, "height" : 3.44, "width" : 5.5} -->     
 
 * BERT is bi-directional: BERT learns about a word from words on both and right side
 
@@ -521,7 +520,7 @@ Image credit: https://pixabay.com/photos/direction-road-look-right-arrow-654123/
 
 ## Word Embeddings
 
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-2.png" style="width:50%;float:right;"/><!-- {"left" : 2.02, "top" : 3.75, "height" : 4.68, "width" : 6.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-2.png" style="width:50%;float:right;"/> <!-- {"left" : 11.33, "top" : 1.89, "height" : 4.51, "width" : 5.99} -->     
 
 * **Word embeddings** is how we represent words as vectors
 
@@ -553,7 +552,7 @@ Image credit: https://pixabay.com/photos/direction-road-look-right-arrow-654123/
 
 ## ELMO
 
-<img src="../../assets/images/ai-nlp/3rd-party/elmo-1.jpg" style="width:20%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} --> 
+<img src="../../assets/images/ai-nlp/3rd-party/elmo-1.jpg" style="width:20%;float:right;"/> <!-- {"left" : 13.8, "top" : 1.89, "height" : 4.06, "width" : 3.31} -->     
 
 * [ELMO](https://allennlp.org/elmo) was developed to solve the [polysemi](https://en.wikipedia.org/wiki/Polysemy) problem in NLP;  Same words having different meanings based on their context.
 
@@ -606,7 +605,7 @@ Image credit : https://pixy.org/783745/
 
 ## BERT is Bi-Directional
 
-<img src="../../assets/images/ai-nlp/bert3.png" style="width:70%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/ai-nlp/bert3.png" style="width:70%;float:right;" /> <!-- {"left" : 10.39, "top" : 1.89, "height" : 2.55, "width" : 7.07} -->
 
 * Sequence models scanned text **one-way** (left2right or right2left).  This  really didn't help them learn enough context
 * ELMO tried to fix this by using two LSTM layers going bidirectional (left-to-right  and right-to-left)
@@ -622,8 +621,7 @@ Image credit : https://pixy.org/783745/
 
 ## Transfer Learning
 
-<!-- TODO shiva -->
-<img src="../../assets/images/generic/guitar-ukulele-1.jpg" style="width:20%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/generic/guitar-ukulele-1.jpg" style="width:20%;float:right;" /> <!-- {"left" : 11.66, "top" : 2, "height" : 2.51, "width" : 5.5} -->     
 
 * Imagine that your garage band needs a  **ukulele** player
 
@@ -656,19 +654,19 @@ Image credit : https://pixy.org/783745/
 
 ## BERT's Architecture
 
-<img src="../../assets/images/ai-nlp/bert-base-bert-large-encoders.png" style="width:50%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/ai-nlp/bert-base-bert-large-encoders.png" style="width:50%;float:right;" /> <!-- {"left" : 10.06, "top" : 2, "height" : 4.37, "width" : 7.2} -->    
 
 * BERT is based on **transformer** architecture
 
 * There are two variants
 
-* **BERT base**:
+* **BERT base:**
   - Layers / Transformer blocks: 12
   - Attention heads: 12
   - Hidden layers: 768
   - Total parameters: **110 million**
 
-* **BERT large**:
+* **BERT large:**
   - Layers / Transformer blocks: 24
   - Attention heads: 16
   - Hidden layers: 1024
@@ -678,7 +676,7 @@ Image credit : https://pixy.org/783745/
 
 ## BERT Pre-Training
 
-<img src="../../assets/images/generic/3rd-party/training-1.jpg" style="width:40%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/generic/3rd-party/training-1.jpg" style="width:40%;float:right;" /> <!-- {"left" : 10.6, "top" : 2, "height" : 4.32, "width" : 6.49} -->    
 
 * BERT is **pre-trained** on large amount of data
   - Entire wikipedia text (2.5 Billion words)
@@ -705,7 +703,7 @@ Image credit : https://pixy.org/783745/
 * **Token embeddings**: These are embeddings for words
 
 
-<img src="../../assets/images/ai-nlp/bert2b.png" style="width:60%;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/ai-nlp/bert2b.png" style="width:60%;" /> <!-- {"left" : 3.66, "top" : 8.08, "height" : 3.15, "width" : 10.19} -->    
 
 ---
 
@@ -740,7 +738,8 @@ Image credit : https://pixy.org/783745/
 
 ## BERT Performance
 
-<img src="../../assets/images/generic/3rd-party/rocket-launch-2.jpg" style="width:35%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/generic/3rd-party/rocket-launch-2.jpg" style="width:35%;float:right;" /> <!-- {"left" : 12.99, "top" : 1.89, "height" : 6.25, "width" : 3.99} -->    
+
 
 * Combining both **Masked Language Model(MLM)** and **Next Sentence Prediction(NSP)** BERT became a very powerful model
 
@@ -759,7 +758,7 @@ Image credit : https://pixy.org/783745/
 
 * BERT<sub>LARGE</sub> **significantly outperforms** BERT<sub>BASE</sub> across all tasks, especially those with very little training data.
 
-<img src="../../assets/images/ai-nlp/Experiments-3.png" alt="Experiments-3.png" style="width:80%;"/><!-- {"left" : 1.02, "top" : 1.56, "height" : 1.76, "width" : 8.21} -->
+<img src="../../assets/images/ai-nlp/Experiments-3.png" alt="Experiments-3.png" style="width:80%;"/> <!-- {"left" : 0.85, "top" : 6.16, "height" : 3.39, "width" : 15.8} -->    
 
 ---
 
@@ -778,7 +777,7 @@ Image credit : https://pixy.org/783745/
 
 ## BERT Benchmarks: SQUAD
 
-<img src="../../assets/images/ai-nlp/Experiments-5.png" alt="Experiments-5.png" style="width:60%;"/><!-- {"left" : 2.57, "top" : 2, "height" : 3.45, "width" : 5.11} -->
+<img src="../../assets/images/ai-nlp/Experiments-5.png" alt="Experiments-5.png" style="width:60%;"/><!-- {"left" : 4.86, "top" : 2.12, "height" : 5.25, "width" : 7.77} -->    
 
 * Observe **a +5.1 F1 improvement** over the previous best system.
 
@@ -797,7 +796,7 @@ Image credit : https://pixy.org/783745/
 
 ## BERT Inspired
 
-<img src="../../assets/images/generic/3rd-party/fireworks-1.jpg" style="width:45%;float:right;" /> <!-- {"left" : 0.34, "top" : 4.7, "height" : 2.36, "width" : 9.58} -->
+<img src="../../assets/images/generic/3rd-party/fireworks-1.jpg" style="width:45%;float:right;" /> <!-- {"left" : 12.46, "top" : 1.89, "height" : 4.94, "width" : 4.57} -->    
 
 * BERT really kick-started a boom in NLP research
 
@@ -815,7 +814,8 @@ Image credit : https://pixy.org/783745/
 * [Megatron](https://github.com/NVIDIA/Megatron-LM), the latest model from Nvidia has 8.3 billion parameters: 24 times larger than BERT-large, 5 times larger than GPT-2, 
 * [RoBERTa](https://arxiv.org/abs/1907.11692), the latest work from Facebook AI, was trained on 160GB of text
 
-<img src="../../assets/images/ai-nlp/3rd-party/NLP-models-growth-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/3rd-party/NLP-models-growth-1.png"  style="width:70%;"> <!-- {"left" : 4.59, "top" : 5.91, "height" : 4.95, "width" : 8.32} -->    
+
 
 ---
 
@@ -836,6 +836,9 @@ Image credit : https://pixy.org/783745/
 | Megatron      | Nvidia     | PyTorch        | 8.3 Billion          | 174 GB             |
 | Turing NLG    | Microsoft  | DeepSpeed      | 17 Billion           |                    |
 | GPT-3         | OpenAI     | PyTorch        | 175 Billion          |                    |
+
+ <!-- {"left" : 0.78, "top" : 4.01, "height" : 1, "width" : 15.95} -->    
+
 
 ---
 
@@ -873,7 +876,7 @@ Image credit : https://pixy.org/783745/
 
 ## Lab: Transformer Lab
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 13.57, "top" : 1.89, "height" : 4.95, "width" : 3.71} -->    
 
 * **Overview:**
   - Play with transformers
@@ -890,12 +893,13 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.88, "top" : 2.06, "height" : 2.68, "width" : 3.63} -->    
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.58, "top" : 5.2, "height" : 5.56, "width" : 8.33} -->    
 
 ---
 

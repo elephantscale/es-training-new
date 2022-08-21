@@ -1,6 +1,6 @@
 # Spark Machine Learning
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" />
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;" /> <!-- {"left" : 6.59, "top" : 7.81, "height" : 2.3, "width" : 4.32} -->
 
 ---
 
@@ -167,7 +167,7 @@ Notes:
 | Memory   | 4+ G                              | 256+ G                                                            |
 | Disk     | - Single spindle <br/> - Few gigs | - Multiple spindles <br /> - Several Terabytes per node <br />  |
 
-<!-- {"left" : 0.78, "top" : 7.37, "height" : 2.77, "width" : 15.95} -->
+<!-- {"left" : 0.78, "top" : 7.37, "height" : 1, "width" : 15.95} -->
 
 
 ---
@@ -626,11 +626,11 @@ encoder = OneHotEncoder(inputCol="statusIndex", outputCol="statusVector", dropLa
 encoded = encoder.fit(indexed).transform(indexed)
 print (encoded.toPandas())
 ```
-<!-- {"left" : 0.85, "top" : 2.5, "height" : 5.53, "width" : 14.85} -->
+<!-- {"left" : 0.8, "top" : 2.09, "height" : 3.56, "width" : 13.11} -->
 
-<img src="../../assets/images/machine-learning/one-hot-encoding-3.png" style="width:45%;"/><!-- {"left" : 2.41, "top" : 2.73, "height" : 8.25, "width" : 12.68} -->
+<img src="../../assets/images/machine-learning/one-hot-encoding-3.png" style="width:45%;"/><!-- {"left" : 4.64, "top" : 6.06, "height" : 5.35, "width" : 8.22} -->
 
-<!-- TODO: Shiva -->
+
 
 Notes:
 
@@ -847,7 +847,7 @@ Notes:
 
 ## Lab: Spark ML Intro
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.35, "top" : 1.89, "height" : 6.05, "width" : 4.54} -->
 
 * **Overview:**
   - Get familiar with Spark ML APIs
@@ -864,7 +864,7 @@ Notes:
 
 ## Lab: Data Shaping
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.35, "top" : 1.89, "height" : 6.05, "width" : 4.54} -->
 
 * **Overview:**
   - Shape data for Spark ML
@@ -952,7 +952,6 @@ Notes:
 
 ## Pipeline Concepts
 
-
  *  **Dataframe:** Contains data
  *  **Transformer:** Converts one dataframe into another
 
@@ -1032,7 +1031,7 @@ Notes:
 
 ## Lab: Spark Pipelines
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.35, "top" : 1.89, "height" : 6.05, "width" : 4.54} -->
 
 * **Overview:**
   - Get familiar with Spark ML pipelines
@@ -1060,9 +1059,12 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.2, "top" : 1.89, "height" : 2.68, "width" : 3.63} -->    
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /> <!-- {"left" : 4.85, "top" : 5.79, "height" : 5.2, "width" : 7.8} -->    
+
+

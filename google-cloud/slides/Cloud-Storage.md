@@ -1,6 +1,6 @@
 # Google Cloud Storage
 
-<img src="../../assets/images/logos/google-cloud-storage-logo-1.png" style="width:30%;"/><!-- {"left" : 5.32, "top" : 6.8, "height" : 1.75, "width" : 1.75} -->  
+<img src="../../assets/images/logos/google-cloud-storage-logo-1.png" style="width:30%;"/><!-- {"left" : 7.03, "top" : 7.95, "height" : 3.43, "width" : 3.43} -->  
 
 ---
 
@@ -31,16 +31,16 @@
 * The data can be transferred from 'storage' to 'compute' nodes very fast; over high speed network
 
 
-<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:45%;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:45%;"/>  <!-- {"left" : 4.19, "top" : 5.52, "height" : 5.53, "width" : 9.11} -->  
 
 ---
 
 ## Data Locality vs. Network Data
 
-<!-- TODO shiva -->
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:35%;float:right;"/> <!-- {"left" : 11.63, "top" : 2.13, "height" : 2.42, "width" : 5.32} -->
 
-<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:35%;float:right;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
-<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/> <!-- {"left" : 11.63, "top" : 5.24, "height" : 3.23, "width" : 5.32} -->
 
 * Hadoop/Spark systems emphasized 'data local' processing
 
@@ -57,10 +57,11 @@
 ---
 ## Data Locality vs. Network Data
 
-<!-- TODO shiva -->
+<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:35%;float:right;"/> <!-- {"left" : 11.63, "top" : 2.13, "height" : 2.42, "width" : 5.32} -->
 
-<img src="../../assets/images/hadoop/hadoop-highlevel.png" style="width:35%;float:right;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
-<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/>  <!-- {"left" : 1.02, "top" : 3.44, "height" : 4.98, "width" : 8.21} -->  
+
+<img src="../../assets/images/google-cloud/cloud-storage-and-compute-1.png" style="width:35%;float:right;clear:both;"/> <!-- {"left" : 11.63, "top" : 5.24, "height" : 3.23, "width" : 5.32} -->
+
 
 * **'Data Locality'** (Storage and Compute on same node) works well
 
@@ -76,7 +77,7 @@
 
 ## Storage Classes
 
-<img src="../../assets/images/google-cloud/3rd-party/google-cloud-storage-classes-1.png" style="width:80%;"/>  <!-- {"left" : 1.04, "top" : 1.25, "height" : 4.03, "width" : 8.17} -->  
+<img src="../../assets/images/google-cloud/3rd-party/google-cloud-storage-classes-1.png" style="width:80%;"/>  <!-- {"left" : 2.97, "top" : 2.14, "height" : 5.7, "width" : 11.56} -->  
 
 
 - Source: https://cloud.google.com/storage/
@@ -111,9 +112,9 @@
 |----------|------------------|----------|----------|----------|
 | TB/Month | $26              | $10      | $7       | $4       |
 
-<!-- {"left" : 0.25, "top" : 3.13, "height" : 1.19, "width" : 9.75} -->  
+<!-- {"left" : 0.77, "top" : 3.95, "height" : 1, "width" : 15.95} -->  
 
-<br />
+
 
 * Egress / Ingress fees
     - Within same region: FREE
@@ -131,7 +132,7 @@
 
 * Google manages encryption keys (proven and hardened)
 
-<img src="../../assets/images/google-cloud/cloud-storage-encryption-1.png" style="width:80%;"/>  <!-- {"left" : 1.02, "top" : 4.72, "height" : 2.71, "width" : 8.21} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-encryption-1.png" style="width:80%;"/>  <!-- {"left" : 2.76, "top" : 6.45, "height" : 3.95, "width" : 11.97} -->  
 
 
 ---
@@ -144,7 +145,7 @@
 
 * Clients must manage its own encryption keys
 
-<img src="../../assets/images/google-cloud/cloud-storage-encryption-2.png" style="width:80%;"/>  <!-- {"left" : 0.63, "top" : 4.24, "height" : 3.22, "width" : 8.99} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-encryption-2.png" style="width:80%;"/>  <!-- {"left" : 2.52, "top" : 5.93, "height" : 4.46, "width" : 12.45} -->  
 
 
 ---
@@ -188,7 +189,7 @@ Notes:
 
 ## Ingesting Large Amount of Data
 
-<img src="../../assets/images/google-cloud/cloud-storage-transfer-1.png" style="width:50%;"/>  <!-- {"left" : 2.45, "top" : 1.32, "height" : 3.49, "width" : 5.35} -->  
+<img src="../../assets/images/google-cloud/cloud-storage-transfer-1.png" style="width:50%;"/>  <!-- {"left" : 10.53, "top" : 2.09, "height" : 4.47, "width" : 6.85} -->  
 
 
 * For large data ingests we recommend a 'direct transfer  ( C )'
@@ -227,14 +228,14 @@ $   gsutil  cp  'gs://bucket_name/flights/*' .
 
 ```
 
-<!-- {"left" : 0, "top" : 3.26, "height" : 4.64, "width" : 10.12} -->  
+<!-- {"left" : 0.8, "top" : 4.8, "height" : 5.06, "width" : 11.04} -->  
 
 
 ---
 
 ## Lab: Ingesting Data into Google Cloud
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.89, "height" : 5.83, "width" : 4.37} -->
 
 * **Overview:**
     - Upload data into Google Cloud Storage
@@ -254,7 +255,7 @@ Notes:
 ---
 ## Lab: Scheduling Data Ingest
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.57, "top" : 1.89, "height" : 5.83, "width" : 4.37} -->
 
 * **Overview:**
     - Schedule data ingest into Google Cloud Storage
@@ -271,15 +272,13 @@ Notes:
 Notes:
 
 ---
-
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.24, "top" : 1.21, "height" : 1.28, "width" : 1.73} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.57, "top" : 1.89, "height" : 3.04, "width" : 4.11} -->
 
 
 - Let's go over what we have covered so far
 
 - Any questions?
 
-
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 2.69, "top" : 4.43, "height" : 3.24, "width" : 4.86} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.66, "top" : 5.16, "height" : 5.46, "width" : 8.18} -->

@@ -15,11 +15,11 @@
 
 ## Monitoring
 
-<!-- TODO shiva -->
 
 * [Monitoring at SpaceX](https://pixabay.com/photos/space-center-spacex-control-center-693251/)
 
-<img src="../../assets/images/monitoring/3rd-party/space-center-693251_1280.jpg" style="width:75%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/3rd-party/space-center-693251_1280.jpg" style="width:75%;"/> <!-- {"left" : 2.88, "top" : 3.44, "height" : 6.83, "width" : 11.73} -->    
+
 
 Notes:
 
@@ -29,9 +29,11 @@ Notes:
 
 * [California ISO (Independent System Operator)](http://www.caiso.com/TodaysOutlook/Pages/index.html) - that monitors California electrical grid
 
-<img src="../../assets/images/monitoring/3rd-party/monitoring-CA-ISO-1.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/3rd-party/monitoring-CA-ISO-1.png" style="width:40%;"/> <!-- {"left" : 9.7, "top" : 2.31, "height" : 3.77, "width" : 7.12} -->    
 
-<img src="../../assets/images/monitoring/3rd-party/monitoring-CA-ISO-2.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+<img src="../../assets/images/monitoring/3rd-party/monitoring-CA-ISO-2.png" style="width:40%;"/> <!-- {"left" : 10.1, "top" : 6.44, "height" : 3.64, "width" : 6.81} -->    
+
 
 ---
 
@@ -43,8 +45,8 @@ Notes:
 
 * Helps us spot trends and patterns
 
-<!-- TODO shiva -->
-<img src="../../assets/images/monitoring/monitoring-1.png" style="width:50%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/monitoring-1.png" style="width:50%;"/><!-- {"left" : 4.49, "top" : 6.2, "height" : 5.13, "width" : 8.57} -->    
+
 
 Notes:
 
@@ -67,19 +69,18 @@ These tools provide lot of automation and implement best practices
 
 ## What to Monitor?
 
-<!-- TODO shiva -->
-<img src="../../assets/images/monitoring/monitoring-2.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/monitoring-2.png" style="width:45%;float:right;"/> <!-- {"left" : 8.96, "top" : 2.17, "height" : 2.89, "width" : 8.04} -->    
 
 * We want to monitor the following:
   - Cluster, individual nodes and applications
 
-* **Cluster**: Monitor overall cluster status
+* **Cluster:** Monitor overall cluster status
   - Overall utilization (e.g. 60%)
 
-* **Individual Nodes** : Monitor each machine to identify issues
+* **Individual Nodes:** Monitor each machine to identify issues
   - CPU, memory, disk, bandwidth
 
-* **Applications** : Monitor user applications
+* **Applications:** Monitor user applications
   - latencies, requests per second ..etc.
 
 ---
@@ -87,7 +88,7 @@ These tools provide lot of automation and implement best practices
 ## Monitoring Architecture
 
 
-<img src="../../assets/images/monitoring/monitoring-architecture-1.png" alt="Metrics-Mechanics.png" style="width:70%;"/><!-- {"left" : 0.7, "top" : 1.53, "height" : 6.01, "width" : 8.86} -->
+<img src="../../assets/images/monitoring/monitoring-architecture-1.png" alt="Metrics-Mechanics.png" style="width:70%;"/> <!-- {"left" : 3.02, "top" : 2.97, "height" : 7.77, "width" : 11.45} -->    
 
 
 Notes: 
@@ -130,20 +131,24 @@ Notes:
 | License     | Open source              | Open source                | Open source + premium                    | Open source                  |
 | Website     | <https://prometheus.io/> | <https://graphiteapp.org/> | <https://github.com/influxdata/influxdb> | <http://opentsdb.net/>       |
 
-<!-- {"left" : 0.25, "top" : 1.39, "height" : 3.07, "width" : 9.75} -->
+<!-- {"left" : 1.19, "top" : 2.5, "height" : 1, "width" : 15.11} -->    
 
 
+<img src="../../assets/images/logos/prometheus-logo-1.png" alt="graphlte-logo.png" style="width:10%;"/><!-- {"left" : 0.78, "top" : 7.25, "height" : 2.19, "width" : 2.21} -->    
 
-<img src="../../assets/images/logos/prometheus-logo-1.png" alt="graphlte-logo.png" style="width:10%;"/><!-- {"left" : 0.37, "top" : 5.6, "height" : 0.91, "width" : 2.84} -->
-<img src="../../assets/images/logos/graphite-logo.png" alt="graphlte-logo.png" style="width:30%;"/><!-- {"left" : 0.37, "top" : 5.6, "height" : 0.91, "width" : 2.84} -->
+<img src="../../assets/images/logos/graphite-logo.png" alt="graphlte-logo.png" style="width:30%;"/> <!-- {"left" : 3.69, "top" : 7.64, "height" : 1.41, "width" : 4.38} -->    
 
-<img src="../../assets/images/logos/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; "/><!-- {"left" : 3.67, "top" : 5.51, "height" : 1.08, "width" : 2.5} --> &nbsp;&nbsp; &nbsp;<img src="../../assets/images/logos/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:30%;" /><!-- {"left" : 7.13, "top" : 5.77, "height" : 0.56, "width" : 2.74} -->
+<img src="../../assets/images/logos/InfluxDB-logo.png" alt="InfluxDB-logo.png" style="width:25%; "/> <!-- {"left" : 8.78, "top" : 7.53, "height" : 1.62, "width" : 3.75} -->    
+
+
+<img src="../../assets/images/logos/opentsdb-logo.png" alt="opentsdb-logo.png" style="width:30%;" /> <!-- {"left" : 13.24, "top" : 7.98, "height" : 0.72, "width" : 3.48} -->    
+
 
 ---
 
 ## Visualization - Grafana
 
-<img src="../../assets/images/monitoring/3rd-party/grafana-2.png"  style="width:60%;float:right;"/><!-- {"left" : 2.01, "top" : 1.33, "height" : 4.01, "width" : 6.23} -->
+<img src="../../assets/images/monitoring/3rd-party/grafana-2.png"  style="width:60%;float:right;"/> <!-- {"left" : 10.01, "top" : 1.98, "height" : 4.49, "width" : 7.09} -->    
 
 * Modern, Open source
 
@@ -188,14 +193,13 @@ Image used under fair use , source: grafana.org
 
 ## Cluster Monitoring Tools
 
-* **Instructor**: The following slides describe the tools in details.  They are provided as reference.  Cover as necessary.
+* **Instructor:** The following slides describe the tools in details.  They are provided as reference.  Cover as necessary.
 
 ---
 
 ##  Nagios
 
-<!-- TODO shiva -->
-<img src="../../assets/images/monitoring/3rd-party/nagios-1.png"  style="width:55%;float:right; "/><!-- {"left" : 2.17, "top" : 1, "height" : 4.14, "width" : 5.92} -->
+<img src="../../assets/images/monitoring/3rd-party/nagios-1.png"  style="width:55%;float:right; "/> <!-- {"left" : 9.35, "top" : 1.89, "height" : 5.54, "width" : 7.92} -->    
 
 * Scalable
 
@@ -211,9 +215,8 @@ Image used under fair use , source: grafana.org
 
 ## Prometheus
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/monitoring/3rd-party/prometheus-1-architecture.png" style="width:55%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/3rd-party/prometheus-1-architecture.png" style="width:55%;float:right;"/> <!-- {"left" : 10.44, "top" : 1.89, "height" : 4.11, "width" : 6.85} -->    
 
 * Open source and very popular
 
@@ -275,26 +278,22 @@ Image used under fair use , source: grafana.org
 
 * These will give you a snapshot of what is running on your machine
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/monitoring/top-1a.png" style="width:45%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-&nbsp; &nbsp; <img src="../../assets/images/monitoring/atop-1a.png" style="width:45%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/top-1a.png" style="width:45%;"/> <!-- {"left" : 1.22, "top" : 3.07, "height" : 3.34, "width" : 7.08} -->&nbsp; &nbsp; <img src="../../assets/images/monitoring/atop-1a.png" style="width:45%;"/> <!-- {"left" : 9.11, "top" : 3.16, "height" : 3.16, "width" : 7.2} -->
 
-<img src="../../assets/images/monitoring/htop-1a.png" style="width:45%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-&nbsp; &nbsp; <img src="../../assets/images/monitoring/glances-1a.png" style="width:45%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/htop-1a.png" style="width:45%;"/> <!-- {"left" : 1.23, "top" : 7.22, "height" : 3.34, "width" : 7.2} -->&nbsp; &nbsp; <img src="../../assets/images/monitoring/glances-1a.png" style="width:45%;"/> <!-- {"left" : 10.02, "top" : 7.22, "height" : 3.34, "width" : 6.28} -->
 
 
 ---
 
 ## IO Stats 
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/monitoring/vmstats-2.png" style="width:35%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/vmstats-2.png" style="width:35%;float:right;"/> <!-- {"left" : 13.3, "top" : 1.69, "height" : 3.1, "width" : 3.81} -->
 
 * **vmstats** will display memory/disk/thread stats
 
-<img src="../../assets/images/monitoring/iostats-1.png" style="width:75%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/iostats-1.png" style="width:75%;float:right;clear:both;"/> <!-- {"left" : 7.58, "top" : 5.05, "height" : 2.36, "width" : 9.52} -->
 
 * **iostats** will display IO stats
 
@@ -318,14 +317,14 @@ Image used under fair use , source: grafana.org
   - [10 lsof Command Examples in Linux](https://www.tecmint.com/10-lsof-command-examples-in-linux/)
 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/monitoring/lsof-1.png" style="width:75%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/lsof-1.png" style="width:75%;"/> <!-- {"left" : 2.87, "top" : 6.84, "height" : 3.07, "width" : 11.75} -->
+
 
 ---
 
 ## Lab: Using System Monitoring Tools
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.78, "top" : 1.65, "height" : 5.75, "width" : 4.32} -->
 
 * **Overview:**
   - Learn Linux system monitoring tools
@@ -366,7 +365,7 @@ Notes:
 
 ## JMX
 
-<img src="../../assets/images/monitoring/kafka-jmx-metrics-1.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/kafka-jmx-metrics-1.png" style="width:45%;float:right;"/> <!-- {"left" : 10.92, "top" : 1.89, "height" : 5.93, "width" : 6.25} -->
 
 * **JMX** is tools and interfaces for monitoring Java applications
 
@@ -388,18 +387,19 @@ Notes:
   - [JConsole](https://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html)
   - [Jconsole example](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.vm.80.doc/docs/jconsole.html)
 
-<!-- TODO shiva -->
 
-<img src="../../assets/images/monitoring/jconsole-1-spark.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-&nbsp; &nbsp; <img src="../../assets/images/monitoring/jconsole-2.png" style="width:40%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/jconsole-1-spark.png" style="width:40%;"/> <!-- {"left" : 12.22, "top" : 1.89, "height" : 3.94, "width" : 4.74} -->
+
+
+&nbsp; &nbsp; <img src="../../assets/images/monitoring/jconsole-2.png" style="width:40%;"/> <!-- {"left" : 12.22, "top" : 6.31, "height" : 3.94, "width" : 4.73} -->
 
 ---
 
 ## VisualVM
 
-<!-- TODO shiva -->
-<img src="../../assets/images/monitoring/visualvm-1.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/monitoring/visualvm-2.png" style="width:45%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/visualvm-1.png" style="width:40%;float:right;"/><!-- {"left" : 8.92, "top" : 2.11, "height" : 2.97, "width" : 8.16} -->
+
+<img src="../../assets/images/monitoring/visualvm-2.png" style="width:45%;float:right;clear:both;"/> <!-- {"left" : 11.71, "top" : 5.56, "height" : 3.99, "width" : 5.36} -->
 
 * **VisualVM** is a GUI Java profiler
 * Can monitor: Heap memory, threads
@@ -428,8 +428,7 @@ __`java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder MyApp`__
 
 ## Java Mission Control 
 
-<!-- TODO shiva -->
-<img src="../../assets/images/monitoring/java-mission-control-2.png" style="width:60%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/monitoring/java-mission-control-2.png" style="width:60%;float:right;"/> <!-- {"left" : 10.44, "top" : 2.31, "height" : 4.76, "width" : 6.8} -->
 
 * **Java Mission Control** enables monitoring and managing Java applications without introducing the performance overhead
 
@@ -444,7 +443,7 @@ __`java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder MyApp`__
 
 ## Lab: Using Java Monitoring Tools
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.97, "top" : 1.7, "height" : 5.61, "width" : 4.21} -->
 
 * **Overview:**
   - Experiment with Java monitoring tools
@@ -483,6 +482,7 @@ result = saveToDB(data);
 long t2 = mark_time();
 // time taken is : t2 - t1
 ```
+<!-- {"left" : 0.8, "top" : 6.71, "height" : 2.13, "width" : 7.53} -->
 
 
 ---
@@ -542,7 +542,7 @@ Notes:
   </dependency>
 </dependencies> 
 ```
-<!-- {"left" : 0, "top" : 1.78, "height" : 2.47, "width" : 8.65} -->
+<!-- {"left" : 0.8, "top" : 3.5, "height" : 2.81, "width" : 9.84} -->
 
 
 Notes: 
@@ -579,7 +579,8 @@ GraphiteReporter.forRegistry(metrics).prefixedWith("myapp")
   .build(graphite);
 graphiteReporter.start(30, TimeUnit.SECONDS);  
 ```
-<!-- {"left" : 0, "top" : 1.46, "height" : 6.81, "width" : 10.25} -->
+<!-- {"left" : 0.8, "top" : 2, "height" : 8.9, "width" : 13.9} -->
+
 
 Notes: 
 
@@ -602,9 +603,10 @@ public void handleRequest(Request request, Response response) {
     requests.mark();
 } 
 ```
-<!-- {"left" : 0, "top" : 3.36, "height" : 1.58, "width" : 10.25} -->
+<!-- {"left" : 0.8, "top" : 4.58, "height" : 2.13, "width" : 13.81} -->
 
-<img src="../../assets/images/monitoring/3rd-party/metrics-meter-1.png" style="width:65%;"/><!-- {"left" : 1.63, "top" : 5.88, "height" : 2.43, "width" : 6.99} -->
+
+<img src="../../assets/images/monitoring/3rd-party/metrics-meter-1.png" style="width:65%;"/><!-- {"left" : 3.85, "top" : 7.34, "height" : 3.41, "width" : 9.79} -->
 
 
 
@@ -633,9 +635,10 @@ msgCounter.dec();
 msgCounter.dec(5); 
 
 ```
-<!-- {"left" : 0, "top" : 3.06, "height" : 2.37, "width" : 10.25} -->
+<!-- {"left" : 0.8, "top" : 3.44, "height" : 2.81, "width" : 12.14} -->
 
-<img src="../../assets/images/monitoring/3rd-party/metrics-counter-1.png" style="width:65%;"/><!-- {"left" : 1.45, "top" : 5.68, "height" : 2.89, "width" : 7.36} -->
+<img src="../../assets/images/monitoring/3rd-party/metrics-counter-1.png" style="width:65%;"/><!-- {"left" : 3.35, "top" : 6.92, "height" : 4.24, "width" : 10.8} -->
+
 
 
 Notes: 
@@ -648,7 +651,7 @@ Notes:
 ## Metrics Library: Histograms
 
 
-* A  **histogram**  measures the statistical distribution of values in a stream of data. 
+* A  **histogram** measures the statistical distribution of values in a stream of data. 
 
 * In addition to minimum, maximum, mean, etc., it also measures median, 75th, 90th, 95th, 98th, 99th, and 99.9th percentiles.
 
@@ -659,9 +662,11 @@ msgSizes.update(100);
 msgSizes.update(50); 
  
 ```
-<!-- {"left" : 0, "top" : 3.73, "height" : 1.17, "width" : 10.25} -->
+<!-- {"left" : 0.8, "top" : 4.65, "height" : 1.58, "width" : 13.82} -->
 
-<img src="../../assets/images/monitoring/3rd-party/metrics-histogram-1.png"  style="width:65%;"/><!-- {"left" : 0.45, "top" : 5.72, "height" : 2.29, "width" : 9.36} -->
+
+<img src="../../assets/images/monitoring/3rd-party/metrics-histogram-1.png"  style="width:65%;"/><!-- {"left" : 2.35, "top" : 7.43, "height" : 3.13, "width" : 12.8} -->
+
 
 
 
@@ -687,9 +692,10 @@ Timer.Context context = timerExec.time();
 f();  // calling a function
 context.stop(); 
 ```
-<!-- {"left" : 0, "top" : 2.38, "height" : 1.98, "width" : 10.25} -->
+<!-- {"left" : 0.8, "top" : 3.5, "height" : 2.27, "width" : 11.89} -->
 
-<img src="../../assets/images/monitoring/3rd-party/metrics-timer-1.png" style="width:65%;"/><!-- {"left" : 1.51, "top" : 5.02, "height" : 2.67, "width" : 7.22} -->
+<img src="../../assets/images/monitoring/3rd-party/metrics-timer-1.png" style="width:65%;"/><!-- {"left" : 4.02, "top" : 6.73, "height" : 3.49, "width" : 9.46} -->
+
 
 
 
@@ -731,9 +737,11 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.2, "top" : 1.89, "height" : 2.68, "width" : 3.63} -->    
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /> <!-- {"left" : 4.85, "top" : 5.79, "height" : 5.2, "width" : 7.8} -->    
+

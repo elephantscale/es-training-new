@@ -1,8 +1,8 @@
 # Introduction to Natural Language Processing (NLP)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/generic/3rd-party/text-scrabble-1.jpg" style="width:30%;"/><!-- {"left" : 5.36, "top" : 2.32, "height" : 3.8, "width" : 4.75} -->
-<img src="../../assets/images/AI/3rd-party/nlp-1.jpg"  style="width:30%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/generic/3rd-party/text-scrabble-1.jpg" style="width:30%;"/> <!-- {"left" : 4.91, "top" : 7.57, "height" : 2.2, "width" : 3.3} -->    
+
+<img src="../../assets/images/AI/3rd-party/nlp-1.jpg"  style="width:30%;"> <!-- {"left" : 8.75, "top" : 7.57, "height" : 2.2, "width" : 3.84} -->    
 
 ---
 
@@ -20,7 +20,7 @@ Notes:
 
 ## Why Text Analytics Is Important?
 
-<img src="../../assets/images/machine-learning/Text-Analytics-0.png" style="width:40%;float:right;"/><!-- {"left" : 5.36, "top" : 2.32, "height" : 3.8, "width" : 4.75} -->
+<img src="../../assets/images/machine-learning/Text-Analytics-0.png" style="width:40%;float:right;"/><!-- {"left" : 11.31, "top" : 2.42, "height" : 4.49, "width" : 5.61} -->    
 
 * We live in a world of text!
 
@@ -42,7 +42,9 @@ Notes:
 
 ## Use Case: Customer Service Via Social Media
 
-<img src="../../assets/images/generic/3rd-party/united-breaks-guitars-tweet-1.png" style="width:50%;float:right;"/><!-- {"left" : 0.27, "top" : 2.15, "height" : 5.35, "width" : 9.72} -->
+<img src="../../assets/images/generic/3rd-party/united-breaks-guitars-tweet-1.png" style="width:50%;float:right;"/> <!-- {"left" : 9.77, "top" : 2.22, "height" : 4.34, "width" : 7.27} -->
+
+
 
 * Customers now take to social media to complain about a company
 
@@ -61,7 +63,7 @@ Notes:
 - What are customers saying about a brand / product
 
 
-<img src="../../assets/images/machine-learning/Text-Analytics-2.png" alt="Text-Analytics-2.png" style="width:60%;"/><!-- {"left" : 1.24, "top" : 2.43, "height" : 4.79, "width" : 7.76} -->
+<img src="../../assets/images/machine-learning/Text-Analytics-2.png" alt="Text-Analytics-2.png" style="width:60%;"/><!-- {"left" : 4.22, "top" : 4.06, "height" : 5.6, "width" : 9.07} -->
 
 
 Notes:
@@ -70,7 +72,7 @@ Notes:
 
 ## Use Case - Sentiment Analytics
 
-<img src="../../assets/images/data-analysis-python/3rd-party/twitter-sentiment-analysis.jpeg" style="width:75%;"/><!-- {"left" : 1.02, "top" : 2.17, "height" : 5.31, "width" : 8.21} -->
+<img src="../../assets/images/data-analysis-python/3rd-party/twitter-sentiment-analysis.jpeg" style="width:75%;"/><!-- {"left" : 3.01, "top" : 3.14, "height" : 7.42, "width" : 11.47} -->
 
 
 
@@ -78,7 +80,7 @@ Notes:
 
 ## Use Case - AirBnB Customer Service
 
-<img src="../../assets/images/deep-learning/3rd-party/airbnb.png" alt="airbnb.png" style="width:45%;"/><!-- {"left" : 0.54, "top" : 2.82, "height" : 3.42, "width" : 4.08} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/AirBnB-01.png" alt="AirBnB-01.png" style="width:45%;"/><!-- {"left" : 5.3, "top" : 2.82, "height" : 3.42, "width" : 4.41} -->
+<img src="../../assets/images/deep-learning/3rd-party/airbnb.png" alt="airbnb.png" style="width:45%;"/><!-- {"left" : 1.75, "top" : 4.1, "height" : 5.22, "width" : 6.23} --> &nbsp; &nbsp; <img src="../../assets/images/deep-learning/3rd-party/AirBnB-01.png" alt="AirBnB-01.png" style="width:45%;"/><!-- {"left" : 9.02, "top" : 4.1, "height" : 5.22, "width" : 6.73} -->
 
 
 
@@ -90,7 +92,7 @@ Notes:
 
 ## Use Case AirBnB
 
-<img src="../../assets/images/logos/airbnb-logo-1.jpg" style="width:20%;float:right;"/><!-- {"left" : 0.54, "top" : 2.82, "height" : 3.42, "width" : 4.08} --> 
+<img src="../../assets/images/logos/airbnb-logo-1.jpg" style="width:20%;float:right;"/><!-- {"left" : 12.48, "top" : 1.89, "height" : 3.42, "width" : 4.47} --> 
 
 * Problem
   - AirBnB is growing at an exponential rate
@@ -115,14 +117,15 @@ Notes:
 
 ## Bank of America Customer Service Bot
 
-<img src="../../assets/images/logos/bank-of-america.png" alt="bank-of-america.png" style="width:30%;float:right;"/><!-- {"left" : 6.26, "top" : 1.33, "height" : 1.43, "width" : 3.67} -->
-<img src="../../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;float:right;clear:both;"/><!-- {"left" : 6.08, "top" : 4.59, "height" : 3.13, "width" : 4.04} -->
+<img src="../../assets/images/logos/bank-of-america.png" alt="bank-of-america.png" style="width:30%;float:right;"/> <!-- {"left" : 11.83, "top" : 2, "height" : 1.84, "width" : 4.72} --> 
 
 * Bank of America virtual assistant can handle a variety of customer queries
 
 * Examples:
   - Easy: "Pay $50 to Bill"
   - Complex: "show me my total expenses to Disneyland trip"
+
+<img src="../../assets/images/deep-learning/3rd-party/bank-of-america-01.png" alt="bank-of-america-01.png" style="width:30%;float:right;clear:both;"/> <!-- {"left" : 11.41, "top" : 5.06, "height" : 4.31, "width" : 5.56} --> 
 
 * Can understand both text / voice query
 
@@ -135,7 +138,9 @@ Notes:
 
 ## Customer Service Chatbots @ Lyft 
 
-<img src="../../assets/images/logos/lyft-logo-1.png" alt="lyft.png" style="width:20%;float:right;"/><!-- {"left" : 8.33, "top" : 1.09, "height" : 1.66, "width" : 1.71} -->
+<img src="../../assets/images/logos/lyft-logo-1.png" alt="lyft.png" style="width:20%;float:right;"/><!-- {"left" : 14.29, "top" : 2.24, "height" : 2.62, "width" : 2.71} --> 
+
+<br/>
 
 ```text
 User:
@@ -148,7 +153,7 @@ Customer Service:
     I see, this is your first cancellation in past 2 months.  
     We will refund you the money.Have a nice day!"
 ```
-<!-- {"left" : 0, "top" : 3.62, "height" : 0.99, "width" : 5.6} -->
+<!-- {"left" : 0.8, "top" : 2.45, "height" : 3.32, "width" : 12.7} --> 
 
 - Hightlighs
   - Resolution time:  **about 20 seconds!**
@@ -174,7 +179,7 @@ Customer Service:
 
   - Context and subtle meanings are lost
 
-* Example : **"Minister of agriculture" --> "Priest of farming"**
+* Example: **"Minister of agriculture" --> "Priest of farming"**
 
 Notes:
 
@@ -183,7 +188,7 @@ Notes:
 
 ## Translation With AI (Google Translate)
 
-<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="max-width:60%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/machine-learning/Google-translate-01.png" alt="Google-translate-01.png" style="max-width:60%;float:right;"><!-- {"left" : 9.95, "top" : 2.45, "height" : 4.3, "width" : 7.07} -->
 
 * Google Translate has been ported to 'Google Brain' on Sept 2016
 
@@ -201,20 +206,21 @@ Notes:
 
 ## Recent Advances in NLP
 
-<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:70%;"><!-- {"left" : 3.63, "top" : 2.86, "height" : 7.71, "width" : 11.56} -->
 
 ---
 
 ## Early Applications (2010)
 
-<img src="../../assets/images/generic/3rd-party/ios12-iphone-x-imessage-predictive-text.jpg"  style="width:25%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/generic/3rd-party/ios12-iphone-x-imessage-predictive-text.jpg"  style="width:25%;float:right;"><!-- {"left" : 13.49, "top" : 2.24, "height" : 6.89, "width" : 3.43} --> 
+
 
 * Predictive text on texting applications on smartphones
 
 * These were powered by statistical based predictions
 
 * **Can you call me ???**
-  - Likely completions are : **back**,   **ASAP**,  **when you can**
+  - Likely completions are: **back**,   **ASAP**,  **when you can**
   - The model suggests the word with highest probability
 
 
@@ -232,18 +238,18 @@ Notes:
 
 * **Increased compute power**: Advances in programming chips make it possible to train massive models
 
-* **Availability of pre-trained models**: Means, researchers can build on and improve upoon each other's work
+* **Availability of pre-trained models:** Means, researchers can build on and improve upoon each other's work
 
 ---
 
 ## The Rise of 'AI Chips'
 
-<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" style="width:40%;float:right;"/><!-- {"left" : 2.52, "top" : 4.35, "height" : 3.58, "width" : 5.22} -->
-<img src="../../assets/images/deep-learning/3rd-party/video-audi-self-driving.png" style="width:40%;float:right;clear:both;"/>
-
+<img src="../../assets/images/machine-learning/3rd-party/cpu-gpu.png" style="width:40%;float:right;"/> <!-- {"left" : 11.55, "top" : 1.83, "height" : 3.79, "width" : 5.52} --> 
 
 * GPUs provide a huge amount of compute power, they are the goto hardware platform for intense AI workloads
   - Google translate model trains on 2 billion+ words on 99+ GPUs for week+
+
+<img src="../../assets/images/deep-learning/3rd-party/video-audi-self-driving.png" style="width:40%;float:right;clear:both;"/> <!-- {"left" : 10.29, "top" : 5.97, "height" : 2.47, "width" : 6.72} --> 
 
 * Companies are also building custom 'AI chips' - specifically designed for AI processing
   - Google has Tensor Processing Unit (TPU)
@@ -275,8 +281,7 @@ Notes:
 
 ## Word Embeddings (2013)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 10.05, "top" : 2.28, "height" : 5.01, "width" : 7.34} -->
 
 * Machine learning algorithms work with numbers (or vectors)
 
@@ -292,7 +297,7 @@ Notes:
 
 ## Word Embeddings
 
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-2.png" style="width:50%;float:right;"/><!-- {"left" : 2.02, "top" : 3.75, "height" : 4.68, "width" : 6.21} -->
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-2.png" style="width:50%;float:right;"/><!-- {"left" : 9.85, "top" : 2.11, "height" : 5.59, "width" : 7.42} -->
 
 * Here you see an example of word embeddings
 
@@ -307,7 +312,7 @@ Notes:
 
 ## Word Embeddings
 
-<img src="../../assets/images/machine-learning/3rd-party/word2vec-3.png" style="width:55%;float:right;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
+<img src="../../assets/images/machine-learning/3rd-party/word2vec-3.png" style="width:55%;float:right;"/><!-- {"left" : 9.9, "top" : 2.14, "height" : 5.46, "width" : 7.38} -->
 
 * Another amazing thing word2vec can do is, it can describe relationships between vectors!
 
@@ -318,7 +323,7 @@ Notes:
 
 ## Demo: Explore Word Embeddings
 
-<img src="../../assets/images/ai-nlp/embedding-projector-1.png" style="width:30%;float:right;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
+<img src="../../assets/images/ai-nlp/embedding-projector-1.png" style="width:30%;float:right;"/><!-- {"left" : 11.94, "top" : 2.18, "height" : 3.65, "width" : 4.94} -->
 
 * This is a fun demo to interactively explore word embeddings at work
 * Go to : [projector.tensorflow.org](https://projector.tensorflow.org/)
@@ -327,13 +332,13 @@ Notes:
 * Explore 'similar words'
 * Try your own words and explore similar words
 
-<img src="../../assets/images/ai-nlp/embedding-projector-2.png" style="width:45%;"/><!-- {"left" : 5.32, "top" : 1.17, "height" : 3.49, "width" : 4.72} -->
+<img src="../../assets/images/ai-nlp/embedding-projector-2.png" style="width:45%;"/><!-- {"left" : 11.58, "top" : 7.11, "height" : 4.17, "width" : 5.65} -->
 
 ---
 
 ## Neural Networks and NLP
 
-<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 10.84, "top" : 2.26, "height" : 3.95, "width" : 6.49} -->
 
 * Neural Networks are layers of parallel processing elements, working together to solve very complex tasks
 
@@ -343,7 +348,7 @@ Notes:
 
 * **Animation** below: [link-S3](https://elephantscale-public.s3.amazonaws.com/media/machine-learning/neural-networks-animation-1.mp4), [link-youtube](https://youtu.be/sLsCN9ZL9RI)
 
-<img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
+<img src="../../assets/images/deep-learning/neural-network-animation-1.png" alt="XXX image missing" style="width:60%;"/> <!-- {"left" : 4.59, "top" : 7.83, "height" : 3.51, "width" : 8.33} -->
 
 ---
 
@@ -360,7 +365,7 @@ __'My mother is very close my sister; she is also very close to my wife'__
 
 ## Sequence to Sequence Models (2014)
 
-<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:40%;float:right;"><!-- {"left" : 10.5, "top" : 2.41, "height" : 4.17, "width" : 6.85} -->
 
 * Sequence-to-Sequence models are used to convert one sequence into another sequence
 
@@ -372,7 +377,7 @@ __'My mother is very close my sister; she is also very close to my wife'__
   - Speech recognition
 
 
-<img src="../../assets/images/ai-nlp/sequence-to-sequence-3-nlp.png"  style="width:60%;"/><!-- {"left" : 0.38, "top" : 4.99, "height" : 2.23, "width" : 9.48} -->
+<img src="../../assets/images/ai-nlp/sequence-to-sequence-3-nlp.png"  style="width:60%;"/> <!-- {"left" : 2.11, "top" : 9.35, "height" : 1.69, "width" : 13.28} -->
 
 ---
 
@@ -396,9 +401,9 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 ## Transformers (2017)
 
-<!-- TODO shiva -->
-<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:30%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->
-<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:30%;float:right;clear:both;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:30%;float:right;"/> <!-- {"left" : 12.31, "top" : 1.89, "height" : 4.22, "width" : 4.22} -->
+
+<img src="../../assets/images/ai-nlp/history-of-nlp-1.png"  style="width:30%;float:right;clear:both;"><!-- {"left" : 12.22, "top" : 6.93, "height" : 3.72, "width" : 4.39} -->
 
 * In 2017, in a landmark paper ["Attention is all you need"](https://arxiv.org/abs/1706.03762), researchers from Google, proposed a novel model called **Transformers**
 
@@ -414,7 +419,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 ## Transformers
 
-<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:45%;float:right;"/>  <!-- {"left" : 5.88, "top" : 6.56, "height" : 1.23, "width" : 1.45} -->    &nbsp; &nbsp;
+<img src="../../assets/images/ai-nlp/3rd-party/transformers-3.jpeg" style="width:45%;float:right;"/> <!-- {"left" : 12.31, "top" : 1.89, "height" : 4.22, "width" : 4.22} -->
 
 * The Transformer architecture solved the 2 nagging problems with Seq-2-Seq models
   - Transformers can 'track or remember' long sequences
@@ -434,23 +439,24 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 * The beauty is, BERT can be tweaked to work with variety of tasks (like sentiment detection)
 
-<img src="../../assets/images/deep-learning/3rd-party/BERT-5-sentiment.png"  style="width:80%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/deep-learning/3rd-party/BERT-5-sentiment.png"  style="width:80%;"> <!-- {"left" : 2.89, "top" : 6.79, "height" : 3.51, "width" : 11.73} -->
+
 
 ---
 
 ## Race for Pre-Trained Models
 
-* **BERT by Google** : This started the new wave of enthusiasm for NLP 
+* **BERT by Google:** This started the new wave of enthusiasm for NLP 
 
-* **Transformer XL by Google**: An improved version of BERT
+* **Transformer XL by Google:** An improved version of BERT
 
-* **GTP-2 by OpenAI**: Can predict next occurring word in text (more in next slide)
+* **GTP-2 by OpenAI:** Can predict next occurring word in text (more in next slide)
 
 * **ULMFit** by Fast.ai
 
 ---
 
-## OpenAI  GPT-2 Controversy
+## OpenAI GPT-2 Controversy
 
 * **GPT-2** was trained on large amount of data (40GB of interenet text data)
 * It can generate text based on input provided
@@ -459,7 +465,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 * OpenAI, initially didn't want to release the model, because they feared it might be used to create fake news stories!
 * This generated a big controversy, and got a lot of attention :-)
 
-<img src="../../assets/images/deep-learning/3rd-party/openai-gpg2-unicorn-cropped.png"  style="width:80%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/deep-learning/3rd-party/openai-gpg2-unicorn-cropped.png"  style="width:80%;"><!-- {"left" : 9.72, "top" : 2.18, "height" : 4.55, "width" : 7.47} -->
 
 ---
 
@@ -469,13 +475,13 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 * [Megatron](https://github.com/NVIDIA/Megatron-LM), the latest model from Nvidia has 8.3 billion parameters: 24 times larger than BERT-large, 5 times larger than GPT-2, 
 * [RoBERTa](https://arxiv.org/abs/1907.11692), the latest work from Facebook AI, was trained on 160GB of text
 
-<img src="../../assets/images/ai-nlp/3rd-party/NLP-models-growth-1.png"  style="width:67%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/3rd-party/NLP-models-growth-1.png"  style="width:67%;"><!-- {"left" : 4.65, "top" : 5.91, "height" : 4.99, "width" : 8.19} -->
 
 ---
 
 ## Bigger and Bigger Models
 
-<img src="../../assets/images/ai-nlp/3rd-party/NLP-model-growth-2.jpg"  style="width:80%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/3rd-party/NLP-model-growth-2.jpg"  style="width:80%;"><!-- {"left" : 3.3, "top" : 3.79, "height" : 6.63, "width" : 10.89} -->
 
 * [Source](https://developer.nvidia.com/blog/training-bert-with-gpus/)
 
@@ -499,6 +505,9 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 | Turing NLG    | Microsoft  | DeepSpeed      | 17 Billion           |                    |
 | GPT-3         | OpenAI     | PyTorch        | 175 Billion          |                    |
 
+<!-- {"left" : 0.98, "top" : 3.5, "height" : 1, "width" : 15.58} -->
+
+
 ---
 
 ## Issues with Bigger Models
@@ -516,7 +525,8 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 ## NLP Models Comparison
 
-<img src="../../assets/images/ai-nlp/NLP-model-comparison-2.png"  style="width:50%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/NLP-model-comparison-2.png"  style="width:50%;"> <!-- {"left" : 4.81, "top" : 2.77, "height" : 8.18, "width" : 7.87} -->
+
 
 ---
 
@@ -526,7 +536,9 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 * And what if we want to run our model on a smaller device (edge device / phone)?  They need to be 'light weight'
 
-<img src="../../assets/images/ai-nlp/NLP-model-comparison-1.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/NLP-model-comparison-1.png"  style="width:70%;"> <!-- {"left" : 3.76, "top" : 6.2, "height" : 3.84, "width" : 9.98} -->
+
+
 
 ---
 
@@ -556,7 +568,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 * Edge devices (speakers / phones) will send the question to the cloud and will get the answer back
 
-<img src="../../assets/images/deep-learning/alexa-2.png"  style="width:70%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/deep-learning/alexa-2.png"  style="width:70%;"><!-- {"left" : 3.64, "top" : 4.94, "height" : 6.23, "width" : 10.23} -->
 
 ---
 
@@ -567,7 +579,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 * For this we need **light weight models** (not the monster models we have just seen)
 
-<img src="../../assets/images/ai-nlp/edge-nlp-1.png"  style="width:40%;"><!-- {"left" : 5.18, "top" : 2.52, "height" : 2.94, "width" : 4.83} -->
+<img src="../../assets/images/ai-nlp/edge-nlp-1.png"  style="width:40%;"> <!-- {"left" : 3.13, "top" : 6.19, "height" : 4.46, "width" : 11.24} -->
 
 ---
 
@@ -693,7 +705,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 ---
 
-## Demo :  BERT
+## Demo:  BERT
 
 * [AllenNLP](https://demo.allennlp.org/) has very impressive demos
 
@@ -707,7 +719,7 @@ __'I lived in China during my teenage years, so I speak fluent Mandarin'__
 
 ---
 
-## Demo :  Reading Comprehension / Question-Answer
+## Demo: Reading Comprehension / Question-Answer
 
 * Here is our sample text:
 
@@ -715,7 +727,7 @@ _COVID-19 is the infectious disease caused by the most recently discovered coron
 
 ---
 
-## Demo :  Reading Comprehension / Question-Answer
+## Demo: Reading Comprehension / Question-Answer
 
 * Sample Questions:
   - What is COVID-19?
@@ -777,9 +789,14 @@ _COVID-19 is the infectious disease caused by the most recently discovered coron
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 12.88, "top" : 2.06, "height" : 2.68, "width" : 3.63} -->    
 
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.58, "top" : 5.2, "height" : 5.56, "width" : 8.33} -->    
+
+
+
+
