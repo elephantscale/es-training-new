@@ -442,24 +442,13 @@ Notes:
 
 
 
-## Lab: Configure Kibana
+## Lab: Kibana tour
 
 * Please do this lab: 
 
-  - `kibana/configure.md`
-
-
+  - `kibana8/2-capabilities.md`
 
 ---
-
-## Lab: Shakespeare
-
-
-<img src="../../assets/images/people/william-shakespeare.png" alt="william-shakespeare.png" style="width:30%;float:right;"/>
-
-* Let's analyze the works of william shakespeare...
-
-* Because we can.
 
 
 
