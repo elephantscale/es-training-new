@@ -12,7 +12,7 @@ Lab for re-using a security group
 
 Edit - Delete
 Mark Kerzner Jul 7 at 11:42 AM
-09 lab, use aother zone
+09 lab, use another zone
 
 Edit - Delete
 Mark Kerzner Jul 6 at 2:09 PM
