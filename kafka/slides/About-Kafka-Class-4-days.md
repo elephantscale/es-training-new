@@ -6,62 +6,39 @@
 
 ---
 
-## Workshop Overview - 4 Days
-
+## Agenda Overview - 4 Days
 
 <img src="../../assets/images/logos/kafka-logo-1.png" style="float:right;"/><!-- {"left" : 7.39, "top" : 1.2, "height" : 2.76, "width" : 2.53} -->
 
-
- * Day 1
-     -  Streaming Overview
-     -  Kafka Overview
-
- * Day 2
-     -  Using Kafka API
-     -  Kafka Metrics
-
-
- * Day 3
-     -  Kafka Streams, KSQL, Schema
-     -  Kafka Admin
-
- * Day 4
-     -  Workshop - continued
-     -  Best Practices
-
-
+* Streaming Overview
+* Kafka Overview
+* Using Kafka API
+* Kafka Streams
+* Kafka ecosystem (connect, Confluent KSQL)
+* Schema in Kafka
+* Kafka Metrics
+* Kafka Admin
+* Best Practices and use cases
+* Design Workshop
 
 Notes:
-
-
-
 
 ---
 
 ## Prerequisites & Expectations
 
+* Familiarity with either Java language
+    - Need to be comfortable programming in Java
 
- * Familiarity with either Java language
+* Basic understanding of Linux development environment
+    - Command line navigation
+    - Running commands
 
-     - Need to be comfortable programming - there are many labs
-     - Our labs are in Java
-
- * Basic understanding of Linux development environment
-
-     - Command line navigation
-     - Running commands
-
- * This is a **Kafka Introductory** class.
-
-     - No previous Kafka knowledge is assumed
-     - Class will be paced based on the pace of majority of the students.
-
-
+* This is a **Kafka Introductory** class.
+    - No previous Kafka knowledge is assumed
+    - Class will be paced based on the pace of majority of the students.
 
 Notes:
-
-
-
 
 ---
 
@@ -125,8 +102,7 @@ Notes:
 
 ## Recommended Books
 
-
- * Kafka - The Definitive Guide
+* Kafka - The Definitive Guide
 
 <img src="../../assets/images/books/kafka-9781491936160.jpg" /><!-- {"left" : 3.78, "top" : 2.78, "height" : 3.52, "width" : 2.68} -->
 
@@ -134,24 +110,20 @@ Notes:
 
 Image credit : http://shop.oreilly.com/
 
-
 ---
+
 ## Class Logistics
 
 * Instructor's contact
 
 * Slides
-    - For each session, slides will be emailed out or delivered via virtual classroom
 
 * Labs
-    - Lab files will be distributed
 
 * Lab environment
-    - Provided in the cloud
 
 ---
 
-
-
-
 ## Let's Get Started!
+
+<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;"/> <!-- {"left": 4.54, "top": 2.9, "height": 7.91, "width": 8.42} -->

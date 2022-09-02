@@ -1454,7 +1454,7 @@ Image source: https://kafka.apache.org/documentation/
 
 ---
 
-## Log Compaction Intervals
+## Log Compaction Internals
 
 <img src="../../assets/images/kafka/log-compaction-3.png" style="width:50%;float:right;"/><!-- {"left" : 1.02, "top" : 5.03, "height" : 2, "width" : 8.21} -->
 
@@ -1558,7 +1558,7 @@ Notes:
      - It consumes data from one cluster
      - Turns around and 'produces' data into another cluster
 
-<img src="../../assets/images/kafka/Multi-Data-Center-Deployment-01.png" alt="Multi-Data-Center-Deployment-01.png" style="max-width:50%;"/><!-- {"left" : 1.31, "top" : 5.64, "height" : 2.59, "width" : 7.63} -->
+<img src="../../assets/images/kafka/Multi-Data-Center-Deployment-01.png" alt="Multi-Data-Center-Deployment-01.png" style="width:50%;"/><!-- {"left" : 1.31, "top" : 5.64, "height" : 2.59, "width" : 7.63} -->
 
 
 Notes:
