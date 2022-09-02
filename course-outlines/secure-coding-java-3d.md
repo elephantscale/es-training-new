@@ -2,11 +2,11 @@
 
 (C) Copyright Elephant Scale
 
-July 06, 2021
+August 28, 2022
 
 ## Overview
 
-* Cybersecurity has risen to the top priority discussion items, and it is the subject of the US-Russia presidential communications. 
+* Cybersecurity has risen to the top priority discussion items, and it is the subject of the international discussions and has military implication. 
 The number of ransomware attacks doubled in the past year, and other attacks are on the rise.
 * This course teaches a comprehensive approach to cybersecurity. It starts with common attacks, 
 continues with the principles of designing secure multi-layer systems, and goes into the details
@@ -48,8 +48,13 @@ Lectures and hands on labs. (50% - 50%)
 
 ## Detailed outline
 
+### Short overview of threat modeling
+* STRIDE attack classification
+* CVSS attack assessment
+* Lab on threat modeling
+
 ### Common attacks
-* Cross site scripting
+* Cross-site scripting
 * Malicious file execution
 * Session hijacking
 * Encryption
@@ -98,13 +103,6 @@ Lectures and hands on labs. (50% - 50%)
   * Common JavaScript vulnerabilities
   * JavaScript security analyzers
   
-### Secure design
-
-* Layered design concepts
-* Object layer
-* Persistence layer
-* Presentation layer
-
 ### Countermeasures
 
 * Validation

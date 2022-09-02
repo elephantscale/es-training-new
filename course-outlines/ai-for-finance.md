@@ -1,7 +1,7 @@
 # AI for Finance
 © Elephant Scale
 
-April 29, 2020
+September 2, 2022
 
 ## Overview
 
