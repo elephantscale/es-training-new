@@ -5,7 +5,7 @@
 
 
 ## Course outline
-../kafka-intro-4days-outline.pdf
+# ../kafka-intro-4days-outline.pdf
 
 # About
 About-Kafka-Class-4-days.md
@@ -15,13 +15,10 @@ About-Kafka-Class-4-days.md
 
 # Kafka
 Kafka-Intro.md
-#../../../es-training/zookeeper/slides/ZK-1__Intro.md
-#zookeeper-primer.md
 Kafka-API.md
 Kafka-Streams.md
-Kafka-Confluent.md
-KSQL.md
 Kafka-Ecosystem.md
+KSQL.md
 Kafka-Admin.md
 Kafka-Monitoring.md
 Kafka-Best-Practices.md

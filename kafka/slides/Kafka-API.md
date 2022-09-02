@@ -164,7 +164,7 @@ Notes:
 String topic = "test";
 Integer key = new Integer(1);
 String value = "Hello world";
-ProducerRecord< Integer, String > record = new ProducerRecord<> (topic, key, value);
+ProducerRecord < Integer, String > record = new ProducerRecord<> (topic, key, value);
 producer.send(record);
 producer.close();
 ```
@@ -179,6 +179,8 @@ producer.close();
 
      - for increased throughput
      - Minimize network round trips
+
+* Checkout [ProducerRecord API]
 
 
 Notes:
@@ -1476,9 +1478,9 @@ while (true) {
 ```java
 Properties producerProps = new Properties();
 producerProps.put("bootstrap.servers", "localhost:9092");
-producerProps.put("enable.idempotence", "true"); // <-- **1*
+producerProps.put("enable.idempotence", "true"); // <-- *1*
 producerProps.put("acks", "all"); // <--  *2*
-producerProps.put("transactional.id", "my-transactional-id"); // <-- *3**
+producerProps.put("transactional.id", "my-transactional-id"); // <-- *3*
 Producer<String, String> producer = new KafkaProducer<> ...
 
 producer.initTransactions(); // <-- *4*
@@ -1703,6 +1705,79 @@ Customer customer = gson.fromJson(jsonStr, Customer.class);
 
 ---
 
+## Using JSON in Producer
+
+* JSON is sent as `String`
+
+```java
+import java.util.Properties;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.IntSerializer;
+import org.apache.kafka.common.serialization.StringSerializer;
+import com.google.gson.Gson;
+
+Properties props = new Properties();
+props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntSerializer.class.getName());
+props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName()); // <-- *1* 
+
+KafkaProducer <Int, String> producer = new KafkaProducer<>(props);
+Gson gson = new Gson();
+
+// create a customer object
+Customer customer = new Customer("Homer", 45, "homer@simposon.com")
+
+String customerJSON = gson.toJson(customer); // <--  *2*
+// {"name": "Homer", "age":45,  "email": "homer@simpson.com" }
+
+ProducerRecord <Int, String> record = new ProducerRecord <> ("topic1", customer.id, customerJSON);
+
+producer.send (record);
+```
+
+---
+
+## Using JSON in Consumer
+
+```java
+import java.util.Properties;
+import java.util.Collections;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.common.serialization.IntSerializer;
+import org.apache.kafka.common.serialization.StringDeserializer;
+import com.google.gson.Gson;
+
+Properties props = new Properties();
+props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+props.put(ConsumerConfig.GROUP_ID_CONFIG, "group1");
+props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, IntDeserializer.class.getName());
+props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());  // *1*
+
+Consumer <Int, String> consumer = new Consumer <> (props);
+consumer.subscribe(Collections.singletonList("topic1"));
+
+final ConsumerRecords <Int, String> records = consumer.poll(100);
+
+for (ConsumerRecord<Int, String> record : records) {
+    try {
+        int customerId = record.key();
+        String customerJSON = record.value();  // *2*
+
+        // use GSON to deserialize JSON object into Customer object
+        Customer customer = gson.fromJson(customerJSON, Customer.class);  //  *3*
+        // process 'customer' object
+
+    } catch (Exception ex) {
+        ex.printStackTrace();
+    }
+}
+```
+
+
+---
+
 ## Avro
 
 * Avro is a data serialization format
@@ -1737,7 +1812,7 @@ Customer customer = gson.fromJson(jsonStr, Customer.class);
 
 ```bash
 $   java -jar /path/to/avro-tools-1.10.2.jar compile schema 
-                user.avsc \  # <--- schema file
+                Customer.avsc \  # <--- schema file
                 src/java/main  #  <--- destination folder for generated Java class file
 ```
 

@@ -370,6 +370,8 @@ Notes:
 
 * Some frameworks support window operations natively:  Spark, Flink
 
+* **Instructor:** Demo [finance.google.com](https://www.google.com/finance/quote/.DJI:INDEXDJX) and look at time windows (today, this week, this year ..etc)
+
 Notes:
 
 ---
@@ -404,7 +406,13 @@ Notes:
 
 * What are some applications where **out-of-order** processing is OK?
 
-* What are some applications, we must process events **in-order**
+* What are some applications, we must process events **in-order** ?
+
+<br clear="all"/>
+
+| In Order Processing | Out of Order Processing OK |
+|---------------------|----------------------------|
+| Example 1           | Example 2                  |
 
 Notes:
 
