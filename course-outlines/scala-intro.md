@@ -2,17 +2,23 @@
 
 (C) Copyright Elephant Scale
 
-January 26, 2022
+September 05, 2022
+
+![](../assets/images/logos/scala-logo-2-small.png)
 
 ## Overview
 
-* This course is targeted for programmers who need to get introduced to Scala. They may be new to Scala, they may be coming from a Java, Python, or even mainframe environment.
-* Scala may be the next wave in developer productivity. It is concise, object-oriented, functional, offers support for concurrency, but is compatible with Java and is JVM – based. For this reason, Scala has been attracting the interest of many programming shops. However, these advantages are only possible through an effort of study. The Scala Programming course is designed to help this process through hands-on training.
-* This course teaches how to understand the essence of Scala and write functional programming software that is functional and "scalaesque" enough.
+Scala may be the next wave in developer productivity. It is concise, object-oriented, functional, offers support for concurrency, but is compatible with Java and is JVM – based. Scala is also a great platform for functional programming.  For these reasons, Scala has been attracting the interest of many organizations.
+
+This training is targeted for programmers who need to get introduced to Scala. They may be new to Scala, they may be coming from a Java, Python, or even mainframe environment.
+
+This training program is designed to help developers learn the language through guidance and hands-on training.
 
 ## Goals
+
 * Learn one of the hottest languages
 * Be a productive programmer with Scala
+* Learn functional programming style
 * Learn the best software development practices with Scala
 
 ## Audience
@@ -24,78 +30,126 @@ January 26, 2022
 * Introductory - Intermediate
 
 ## Duration
-* Two or three days
+
+* Three days (can be customized)
 
 ## Format
+
 * Lectures and hands-on labs (50% - 50%)
-* The class is heavy hands-on, with multiple labs and quizzes
 
 ## Prerequisites
 
-* Comfortable with a programming language such as Java
-* Or, coding experience in any other language
-  
+* Comfortable with a development in an object oriented environment
+* Even though most people come to Scala from Java, any experienced developers are welcome
 
 ## Lab environment
 
-* For local environment
-  * JDK 8 or higher
-  * Scala
-  * Scala programming IDE, such as IntelliJ IDEA (recommended), Eclipse, or NetBeans.
+### Local environment (Highly recommended)
 
-* If virtual machines are used
-  * Zero Install: There is no need to install software on students' machines!
-  * A lab environment in the cloud will be provided for students.
+We recommend attendees have a local environment setup.  Install the following:
+
+* JDK 11 or higher
+* Scala latest 2.x (2.13)
+* Scala programming IDE, such as IntelliJ IDEA (recommended), Eclipse, or NetBeans.
+
+### Cloud environment
+
+A cloud based environment can be provided, if required.
 
 ### Students will need the following
+
 * A reasonably modern laptop with unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly.
-    * A checklist to verify connectivity will be provided
-* Chrome browser
+* A modern browser
 
-## Detailed outline
+## Detailed Course Outline
 
-### Scala basics
+### Introduction to Scala
 
-* Scala – a scalable language
-* Classes
-* Class parameters, fields, methods
-* Infix, Postfix and Prefix Operators
-* Equality, Default and Named Arguments
-* Packages and Imports
-* Access Modifiers, Singleton and Companion
+* From Java to Scala
+* JVM language and interoperability
+* A quick tour of Scala features
+* What's new in Scala 3
+* Lab: Installing and setting up Scala
 
-### Scala design
+### Getting Started with Scala
 
-* Scala hierarchy
-* Inheritance and Traits
-* Case classes, pattern matching
-* Lists and other collections
-* Mutable objects
-* Type parameterization
-* Abstract members
-* Implicits
-* Handling failures
+* Scala REPL environments
+* SBT
+* Lab: First Scala program
+* Lab: Working with SBT
 
-### Collections
+### Scala Types
 
-* From loops to collections
-* Collections in depth
-* Extractors
-* Annotations
+* Built in types
+* Variables and immutability
+* Type inference
+* Lab: working with types and type inference
 
-### Functional programming
+### Scala Collections
 
-* For Loops and Expressions 
-* Functional Programming Basics
-* Functional programming best practices
-  
-### Concurrency (Akka overview)
+* Built in collections
+* Mutable and immutable collections
+* Arrays, Lists, Sets, Maps
+* Understanding performance of various collections
+* Lab: Working with collections
 
-* Immutability
-  * Best practices and exercises
-* Futures and concurrency
-* Akka Overview
-* Akka use cases
+### Control Flow and Functions
 
-### Monads 
-* Overview
+* IF-Else
+* Loops
+* Match expressions
+* Functions
+* Anonymous functions
+* Higher order functions
+* Pure functions
+* Lab: control flow
+* Lab: functions
+
+### Functional Programming
+
+* Evolution of programming and functional programming
+* Introduction to functional programming
+* Filter, Map, Reduce
+* Lab: functional programming
+
+### Scala Classes
+
+* Defining and using classes in Scala
+* Singleton classes
+* Packages and imports
+* Inheritance and abstract classes
+* Traits
+* Lab: Working with classes
+
+### Cases Classes and Pattern Matching
+
+* Understanding case classes
+* Pattern matching with Case classes
+* Handling null values using Options
+* Lab: working with case classes, options and pattern matching
+
+### Testing
+
+* Testing strategies in Scala
+* Learning various testing frameworks
+* Lab: Testing with Scala
+
+### IO programming
+
+* Understanding Scala IO system
+* Reading/writing data from/to files
+* Reading from URLs
+* Network socket programmming
+* Lab: IO programming in Scala
+* Lab: Simple web server in Scala
+
+### Concurrency Programming With Akka Framework
+
+* Concurrent programming concepts (threads, locks, race conditions, dead-locks  ..etc)
+* Introduction to Akka
+* Learning Actor based systems
+* Lab: Concurrent programming with Akka
+
+### Workshops
+
+Students will design and implement solutions using Scala
