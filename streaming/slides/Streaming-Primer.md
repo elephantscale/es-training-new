@@ -404,11 +404,23 @@ Notes:
 
 <img src="../../assets/images/streaming/event-time-vs-arrival-time-2.png" style="width:40%;float:right;"/><!-- {"left" : 2.12, "top" : 5.02, "height" : 3.42, "width" : 6.01} -->
 
-* What are some applications where **out-of-order** processing is OK?
+* Question:  How will you process the following credit card transactions?  in-order or out-of-order?
+    - Look at the timestamp of transactions
 
-* What are some applications, we must process events **in-order** ?
+<br>
+
+| Timestamp            | account_id | merchant_id | amount |
+|----------------------|------------|-------------|--------|
+| 2022-01-01  10:05:00 | c1         | m1          | 12.45  |
+| 2022-01-01  10:10:00 | c1         | m2          | 45.00  |
+| 2022-01-01  10:07:00 | c1         | m3          | 25.00  |
 
 <br clear="all"/>
+
+* What are some applications, we must process events **in-order** /  **out-of-order** ?
+
+<br>
+
 
 | In Order Processing | Out of Order Processing OK |
 |---------------------|----------------------------|
