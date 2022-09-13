@@ -3,6 +3,11 @@
 About-Secure-Coding-Java-Class.md
 ../../cybersecurity-common/slides/Security-Intro.md
 ../../cybersecurity-common/slides/Threat-Modeling.md
+# Optional
+../../cybersecurity-common/slides/OSI_Security_Model.md
+../../cybersecurity-common/slides/SLC_and_SDLC.md
+../../cybersecurity-common/slides/Security_Design.md
+# End Optional
 Common-Attacks.md
 Defensive-Programming.md
 Java-Security.md
