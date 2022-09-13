@@ -1119,6 +1119,23 @@ Notes:
 
 ---
 
+## Lab: Producing with Keys
+
+<img src="../../assets/images/icons/individual-labs.png" style="max-width:30%;float:right;"/><!-- {"left" : 7.24, "top" : 1.28, "height" : 3.63, "width" : 2.72} -->
+
+* **Overview:**
+   - Understand key to partition mapping
+
+* **Approximate Time:**  
+   - 15 mins
+
+* **Instructions:**
+   - **lab 2.3: producing with keys**
+
+Notes:
+
+---
+
 # Consuming Messages
 
 ---
@@ -1518,7 +1535,7 @@ Notes:
     - 20 - 30 mins
 
 * **Instructions:**
-    - lab-2.3: compaction
+    - lab-2.4: compaction
 
 * **To Instructor:**  
     - Let students complete the lab first and then discuss the findings
