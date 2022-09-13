@@ -110,9 +110,9 @@ Notes:
     - [The Internals Of Apache Spark Online Book](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/) - updated frequently
 
 * Online
-    - [spark.apache.org](https://spark.apache.org/) - latest downolads, documentation and examples
+    - [spark.apache.org](https://spark.apache.org/) - latest downloads, documentation and examples
     - [Spark by examples](https://sparkbyexamples.com/) - great resources for code snippets
-    - [Official Spark Examples Repository](https://github.com/apache/spark/tree/master/examples) - latetest and official
+    - [Official Spark Examples Repository](https://github.com/apache/spark/tree/master/examples) - latest and official
 
 <img src="../../assets/images/books/learning-spark-2nd-ed-9781492050049.jpeg" style="width:18%;"/><!-- {"left": 5.7, "top": 7, "height": 3.71, "width": 2.83} --> &nbsp;
 <img src="../../assets/images/books/high-performance-spark-9781491943205.jpeg" style="width:18%;"/> <!-- {"left": 8.98, "top": 7, "height": 3.71, "width": 2.83} --> 
