@@ -121,7 +121,7 @@ A cloud based environment can be provided, if required.
 * Traits
 * Lab: Working with classes
 
-### Cases Classes and Pattern Matching
+### Case Classes and Pattern Matching
 
 * Understanding case classes
 * Pattern matching with Case classes
@@ -139,7 +139,7 @@ A cloud based environment can be provided, if required.
 * Understanding Scala IO system
 * Reading/writing data from/to files
 * Reading from URLs
-* Network socket programmming
+* Network socket programming
 * Lab: IO programming in Scala
 * Lab: Simple web server in Scala
 
