@@ -61,6 +61,10 @@ A cloud based environment can be provided, if required.
 * A reasonably modern laptop with unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly.
 * A modern browser
 
+### Assessment
+* Throughout the course, we will have quizzes and exercises to assess the students'  progress. There will be a total of about 60 questions. 
+* At the end the students will be presented with an overall quiz based on these questions. Optional: the students will be required to answer at least 80% of the questions correctly to pass the course.
+
 ## Detailed Course Outline
 
 ### Introduction to Scala
@@ -158,11 +162,17 @@ A cloud based environment can be provided, if required.
 ### IO programming
 
 * Understanding Scala IO system
-* Reading/writing data from/to files
+* Reading data from files and writing data to files
 * Reading from URLs
 * Network socket programming
-* Lab: IO programming in Scala
+* Lab: I/O programming in Scala
 * Lab: Simple web server in Scala
+
+### Capstone project
+
+* Students will work on a capstone project to apply the concepts learned in the course. The choices will include
+  * Scalable processing engine based on Spark and Scala
+  * Project of students' choice
 
 ### Exploring Scala Effects (advanced and optional)
 * Introduction to effects
