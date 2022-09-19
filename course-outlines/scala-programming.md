@@ -12,6 +12,8 @@ Scala may be the next wave in developer productivity. It is concise, object-orie
 
 This training is for programmers who want to become productive with Scala. They must meet certain prerequisites, but their and our goal is Scala proficiency.
 
+Read our [popular article on Scale in Forbes](https://bit.ly/3QU51HN).
+
 ## Goals
 
 * Learn one of the hottest languages
@@ -29,7 +31,7 @@ This training is for programmers who want to become productive with Scala. They 
 
 ## Duration
 
-* Five days (can be customized)
+* Five days
 
 ## Format
 
@@ -37,14 +39,14 @@ This training is for programmers who want to become productive with Scala. They 
 
 ## Prerequisites
 
-* Comfortable with a development in an object oriented environment
+* At least one year of experience in software development
 * Even though most people come to Scala from Java, any experienced developers are welcome
 
 ## Lab environment
 
 ### Local environment (Highly recommended)
 
-We recommend attendees have a local environment setup.  Install the following:
+We recommend attendees have a local environment setup. We will install it in class, but having the ones below is good.
 
 * JDK 11 or higher
 * Scala latest 2.x (2.13)
@@ -78,10 +80,15 @@ A cloud based environment can be provided, if required.
 
 ### Scala Types
 
-* Built in types
+* Built-in types
 * Variables and immutability
 * Type inference
 * Lab: working with types and type inference
+
+### Understanding Types in Scala
+* Type declarations
+* Type aliases
+* Parameterized types
 
 ### Scala Collections
 
@@ -91,9 +98,11 @@ A cloud based environment can be provided, if required.
 * Understanding performance of various collections
 * Lab: Working with collections
 
+
+
 ### Control Flow and Functions
 
-* IF-Else
+* If-Else
 * Loops
 * Match expressions
 * Functions
@@ -109,6 +118,13 @@ A cloud based environment can be provided, if required.
 * Introduction to functional programming
 * Filter, Map, Reduce
 * Lab: functional programming
+
+### Functions and collections
+* Ways to define a function
+* Polymorphism
+* Recursion
+* Tail recursion
+* Collections and higher order functions
 
 ### Scala Classes
 
@@ -126,6 +142,13 @@ A cloud based environment can be provided, if required.
 * Handling null values using Options
 * Lab: working with case classes, options and pattern matching
 
+### Implicits and Type Classes
+* Getting to Know Implicits and Type Classes
+* Types of implicits
+* View and context bounds
+* Type classes
+* Implicit scope resolution
+
 ### Testing
 
 * Testing strategies in Scala
@@ -141,6 +164,37 @@ A cloud based environment can be provided, if required.
 * Lab: IO programming in Scala
 * Lab: Simple web server in Scala
 
+### Exploring Scala Effects (advanced and optional)
+* Introduction to effects
+* Option
+* Either
+* Try
+* Future
+* Cats library
+* Cats effects
+
+### Understanding Algebraic Structures (advanced and optional)
+* Understanding Algebraic Structures
+* Introduction to abstract algebraic structures
+* Semigroup
+* Monoid
+* Foldable
+* Group
+
+### Basic Monads (advanced and optional)
+* Familiarizing Yourself with Basic Monads
+* Introduction to monads
+* Id Monad
+* State monad
+* Reader monad
+* Writer monad
+
+### Monad Transformers and Free Monad (advanced and optional)
+* Look at Monad Transformers and Free Monad
+* Combining monads
+* Monad transformers
+* Free monads
+* 
 ### Concurrency Programming With Akka Framework
 
 * Concurrent programming concepts (threads, locks, race conditions, dead-locks  ..etc)
@@ -148,6 +202,19 @@ A cloud based environment can be provided, if required.
 * Learning Actor based systems
 * Lab: Concurrent programming with Akka
 
-### Workshops
+### Building Reactive Applications with Akka Typed
+* Introduction
+* Akka Typed basics
+* Akka Typed – beyond the basics
+* Testing
+* Running the application
+
+### Basics of Akka Streams
+* Introduction to Akka Streams
+* Basics of Akka Streams
+* Testing
+* Running the application
+* NEWS! Akka license and its consequences
+* ZIO as an alternative to Akka
 
 Students will design and implement solutions using Scala
