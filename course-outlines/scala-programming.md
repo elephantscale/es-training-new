@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-September 18, 2022
+September 19, 2022
 
 ![](../assets/images/logos/scala-logo-2-small.png)
 
