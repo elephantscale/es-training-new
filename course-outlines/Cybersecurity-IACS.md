@@ -1,11 +1,14 @@
 # Industrial Internet of Things
+
+September 22, 2022
+
 * (Class code CBS202)
 * Rockwell codes
   * Course Code – CBS-ISA
   * OTCS Cybersecurity Awareness and ISA IEC62443
 
 ## Duration:
- * 2 days
+ * 2-4 days depending on depth of coverage
 
 ## Audience:
  * Executives, Managers, Project Leads, and Architects.
@@ -49,3 +52,18 @@ implementation systems and protocols at the Open Systems Interconnection
   - Security feedback loops
   - Control systems
 * The Cybersecurity Lifecycle applied to IACS
+* OT (Operational Technology) cybersecurity
+  * How OT cybersecurity is different from IT cybersecurity
+  * Air gap and air-gap breaches because of IoT
+  * Challenges and rules of OT cybersecurity
+* DR (disaster recovery) and BC (business continuity) planning
+  * How to plan for DR and BC
+  * How to implement DR and BC
+  * How to test DR and BC
+* Ransomeware
+  * What is it?
+  * How to prevent it?
+  * How to recover from it?
+* NIST standards body
+* MITRE ATT&CK framework
+  * How to use it to defend against attacks
