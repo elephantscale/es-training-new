@@ -6,14 +6,11 @@
 
 ---
 
-## What is the most commonly used programming language?
+## Only Hope
 
+<img src="images/help-me-stackoverflow.jpg" style="width:45%;"/> 
 
----
-
-## What is the most commonly used programming language?
-
-### Profanity!
+[image credit](https://fi.pinterest.com/pin/repost-comment_sense-morry98__muthaphukkin_coder-leila-starwars-____________________________________________--324540716891601727/)
 
 ---
 
