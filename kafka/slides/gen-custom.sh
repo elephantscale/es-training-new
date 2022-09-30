@@ -4,4 +4,7 @@
 # $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-3-days-innovation-software.txt $@
 
 ## Trivera Tech
-$ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-intro-2-days-triveratech.txt $@
+# $ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-intro-2-days-triveratech.txt $@
+
+## Trivera Tech Optum 4 days
+$ES_HOME/utils/reveal-md/slides-assembler-reveal.sh  -d   0-slide-assembly-optum-4-days.txt  $@

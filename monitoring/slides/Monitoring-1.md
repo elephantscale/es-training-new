@@ -706,24 +706,46 @@ Notes:
 
 ---
 
-## Lab: Metrics Labs
+## Optional Lab: Metrics Labs
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.78, "top" : 1.65, "height" : 5.75, "width" : 4.32} -->
 
 * **Overview:**
- - Learn to use Metrics library
+    - Learn to use Metrics library
 
-* **Approximate Time:**
-  - ~30 mins
+* **Run Time:**
+    - ~30 mins
 
 * **Instructions:**
-  - Grab the lab from <https://github.com/elephantscale/learning-metrics>
-  - Follow the instructions to get metrics demo running
+    - Grab the lab from <https://github.com/elephantscale/learning-metrics>
+    - Follow the instructions to get metrics demo running
 
-* **To Instructor:** 
-  - Demo this if time permits
+* **To Instructor:**
+    - Demo this if time permits
 
 
 Notes: 
 
+---
+
+## Optional Lab: Kafka Metrics Labs (Intermediate)
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.78, "top" : 1.65, "height" : 5.75, "width" : 4.32} -->
+
+* **Overview:**
+    - Instrument Kafka Producer and Consumer
+
+* **Run Time:**
+    - ~30 mins
+
+* **Instructions:**
+    - **Kafka Metrics (9.2)**
+
+* **To Instructor:**
+    - Demo this if time permits
+
+
+Notes: 
 
 
 

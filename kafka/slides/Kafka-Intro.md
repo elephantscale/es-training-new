@@ -592,7 +592,7 @@ Notes:
 
 ---
 
-## Kafka Concepts
+## Messages
 
 
  * In Kafka a basic unit of data is a  '**message**'
@@ -678,7 +678,7 @@ Notes:
 
 ## Topics + Partitions + Replicas
 
-<img src="../../assets/images/kafka/topics-partitions-replicas.png" style="width:50%;float:right;"/><!-- {"left" : 1.46, "top" : 1.45, "height" : 6.74, "width" : 7.33} -->
+<img src="../../assets/images/kafka/topics-partitions-replicas.png" style="width:50%;"/><!-- {"left" : 1.46, "top" : 1.45, "height" : 6.74, "width" : 7.33} -->
 
 
 
@@ -1575,7 +1575,7 @@ Notes:
      - It consumes data from one cluster
      - Turns around and 'produces' data into another cluster
 
-<img src="../../assets/images/kafka/Multi-Data-Center-Deployment-01.png" alt="Multi-Data-Center-Deployment-01.png" style="width:50%;"/><!-- {"left" : 1.31, "top" : 5.64, "height" : 2.59, "width" : 7.63} -->
+<img src="../../assets/images/kafka/Multi-Data-Center-Deployment-01.png" alt="Multi-Data-Center-Deployment-01.png" style="width:65%;"/><!-- {"left" : 1.31, "top" : 5.64, "height" : 2.59, "width" : 7.63} -->
 
 
 Notes:
