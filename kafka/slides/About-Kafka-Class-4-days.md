@@ -14,7 +14,7 @@
 * Kafka Overview
 * Using Kafka API
 * Kafka Streams
-* Kafka ecosystem (connect, Confluent KSQL)
+* Kafka ecosystem (connect, Confluent)
 * Schema in Kafka
 * Kafka Metrics
 * Kafka Admin

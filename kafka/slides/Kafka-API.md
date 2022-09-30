@@ -1582,6 +1582,24 @@ consumer.seek(partition, 5);
 
 ---
 
+## Use Cases for Seeking
+
+<img src="../../assets/images/kafka/consumer-seeking-1.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Catchup with latest data
+    - If our processing is behind, we can skip ahead and catchup with latest data
+    - For example, weather data,  stock quotes ..etc
+
+<img src="../../assets/images/kafka/consumer-sampling-1.png" style="width:40%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* Do sampling
+    - We don't need to process all data, let's say we want to do **10% sampling**
+    - Seek to offset=0, process
+    - Then seek to offset=10, process
+    - and so on...
+
+---
+
 ## Lab: Seeking to Offsets
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
@@ -1678,16 +1696,16 @@ Notes:
 import com.google.gson.Gson;
 
 public class Customer {
+  public int id;
   public String name;
-  public int age;
   public String email;
 }
 
 Gson gson = new Gson();
-Customer customer = new Customer("Homer", "homer@simposon.com", 45)
+Customer customer = new Customer(1, "Homer", "homer@simposon.com")
 String json = gson.toJson(customer);
 
-// {"name": "Homer", "age":45,  "email": "homer@simpson.com" }
+// {"id": 1, "name": "Homer", "email": "homer@simpson.com" }
 ```
 
 * From JSON
@@ -1695,7 +1713,7 @@ String json = gson.toJson(customer);
 ```json
 import com.google.gson.Gson;
 
-String jsonStr = "{\"name\": \"Homer\", \"age\":45,  \"email\": \"homer@simpson.com\" }";
+String jsonStr = "{\"id\": 1, \"name\": \"Homer\", \"email\": \"homer@simpson.com\" }";
 
 Gson gson = new Gson();
 
@@ -1713,23 +1731,23 @@ Customer customer = gson.fromJson(jsonStr, Customer.class);
 import java.util.Properties;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.common.serialization.IntSerializer;
+import org.apache.kafka.common.serialization.IntegerSerializer;
 import org.apache.kafka.common.serialization.StringSerializer;
 import com.google.gson.Gson;
 
 Properties props = new Properties();
 props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntSerializer.class.getName());
+props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class.getName());
 props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName()); // <-- *1* 
 
 KafkaProducer <Int, String> producer = new KafkaProducer<>(props);
 Gson gson = new Gson();
 
 // create a customer object
-Customer customer = new Customer("Homer", 45, "homer@simposon.com")
+Customer customer = new Customer(1, "Homer", "homer@simposon.com")
 
 String customerJSON = gson.toJson(customer); // <--  *2*
-// {"name": "Homer", "age":45,  "email": "homer@simpson.com" }
+// {"id": 1, "name": "Homer",  "email": "homer@simpson.com" }
 
 ProducerRecord <Int, String> record = new ProducerRecord <> ("topic1", customer.id, customerJSON);
 
@@ -1745,7 +1763,7 @@ import java.util.Properties;
 import java.util.Collections;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.Consumer;
-import org.apache.kafka.common.serialization.IntSerializer;
+import org.apache.kafka.common.serialization.IntegerSerializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import com.google.gson.Gson;
 
@@ -1774,7 +1792,6 @@ for (ConsumerRecord<Int, String> record : records) {
     }
 }
 ```
-
 
 ---
 
@@ -1826,12 +1843,12 @@ $   java -jar /path/to/avro-tools-1.10.2.jar compile schema
 import java.util.Properties;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.common.serialization.IntSerializer;
+import org.apache.kafka.common.serialization.IntegerSerializer;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
 
 Properties props = new Properties();
 props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntSerializer.class.getName());
+props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class.getName());
 // Avro serializer
 props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, KafkaAvroSerializer.class.getName());
 
@@ -1856,7 +1873,7 @@ producer.send (record);
 ```java
 import java.util.Properties;
 import java.util.Collections;
-import org.apache.kafka.common.serialization.IntSerializer;
+import org.apache.kafka.common.serialization.IntegerSerializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.Consumer;
 import io.confluent.kafka.serializers.KafkaAvroDeserializer;
@@ -1951,6 +1968,18 @@ Notes:
 
 ---
 
+## Managing Multiple Schema Versions Using Schema Registry
+
+* We can register multiple versions of Avro schema with **Schema Registry**
+
+* The AVRO messages will have a **version** tag 
+
+* Then consumer can download the relevant schema and interpret the data accordingly.
+
+<img src="../../assets/images/kafka/Schema-Registry.png" style="width:55%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+---
+
 ## Lab : Using AVRO Schema (Intermediate Track)
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
@@ -1964,6 +1993,7 @@ Notes:
 * **Instructions:**
     - Please follow **AVRO-1** lab
     - Please Note : This lab needs Confluent stack / schema registry
+    - **Come back to this lab after installing Confluent stack**
 
 Notes:
 

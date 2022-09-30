@@ -252,10 +252,25 @@ Notes:
     - Discuss a few options
     - Can a unique id created at event source?  How?
     - If events are coming into our system without a unique identifier, how can we deal with this?
+    - Answer in next slide
 
 * **Question: Given events have unique event id, how can we avoid duplicate processing?**
 
 Notes:
+
+---
+
+## Possible Unique Event Ids
+
+* Database auto sequence number (001, 002 ..etc)
+    - Can this completely eliminate dupes?
+
+* Timestamp
+    - Can this completely eliminate dupes?
+
+* UUID (8978e172-dfdb-4061-a30a-1db88caa4e2c)
+
+* If the events do not have a uniq id, consider **hashing** the event to detect duplicates (https://www.tools4noobs.com/online_tools/hash)
 
 ---
 

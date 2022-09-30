@@ -18,8 +18,9 @@
 ## Day 2
 
 * Kafka API : producer / consumer code walk through
-* lab 3: 3.1 & 3.2
+* lab 3: 3.1 & 3.2 - do it together
 * -- lunch ----
+* lab 3.3 - let them do and review  (45 mins to 1 hr)
 * Kafka API : producer send mode
   - lab :  producer benchmark
   - optional lab :  compression benchmark
@@ -33,11 +34,13 @@
 * --- lunch ----
 * kafka streams
     - lab : streams.  Do first 2 labs together, then let them do it.
+    - workshop : fraud detection - let them do it. 1 hr.  End class early so they can complete the lab.  Review the next day
 
 ## Day 4
 
 * finish kafka streams labs
     - upto group by
+* Review fraud detection lab
 * Kafka Admin
 * Kafka ecosystem: connect, confluent
     - lab: confluent install

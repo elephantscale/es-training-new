@@ -699,6 +699,23 @@ Notes:
 
 ---
 
+## Lab: Adaptive Query Execution (AQE)
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.53, "top" : 1.16, "height" : 5.89, "width" : 4.42} -->   
+
+* **Overview:**
+   - Work with AQE engine
+
+* **Approximate run time:**
+   - 20 mins
+
+* **Instructions:**
+   - 4.2b - AQE
+
+Notes:
+
+---
+
 # Dataset
 
 ---
