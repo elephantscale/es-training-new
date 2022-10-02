@@ -9,6 +9,7 @@ Terraform-In-Production.md
 Terraform-Testing.md
 Implementing-Terraform.md
 Terraform-Advanced-Latest.md
+Terraformer.md
 packer-intro.md
 Packer.pptx
 
