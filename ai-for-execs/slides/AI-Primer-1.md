@@ -559,7 +559,7 @@ https://clarifai.com/demo
 
 * Rules are **static** and created by domain experts
 
-<img src="../../assets/images/AI/expert-systems-1.jpg"  style="width:65%;"/><!-- {"left" : 0.78, "top" : 4.13, "height" : 3.28, "width" : 8.7} -->
+<img src="../../assets/images/AI/expert-systems-1.png"  style="width:65%;"/><!-- {"left" : 0.78, "top" : 4.13, "height" : 3.28, "width" : 8.7} -->
 
 ---
 

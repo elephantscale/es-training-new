@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-242 -548 1497 601" width="1497" height="601">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-09-24 18:27:58 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_15">
+        <rect x="-241" y="-437" width="1111" height="163" fill="#a4f8fd"/>
+        <rect x="-241" y="-437" width="1111" height="163" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <rect x="-241" y="-274" width="1111" height="163" fill="#a4f8fd"/>
+        <rect x="-241" y="-274" width="1111" height="163" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <rect x="-241" y="-111" width="1111" height="163" fill="#a4f8fd"/>
+        <rect x="-241" y="-111" width="1111" height="163" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_12">
+        <rect x="870" y="-437" width="383.71" height="163" fill="#aa97fe"/>
+        <rect x="870" y="-437" width="383.71" height="163" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <rect x="870" y="-274" width="383.71" height="163" fill="#aa97fe"/>
+        <rect x="870" y="-274" width="383.71" height="163" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <rect x="870" y="-111" width="383.71" height="163" fill="#aa97fe"/>
+        <rect x="870" y="-111" width="383.71" height="163" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(145.51807 -386)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Buy these pills</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(129.51465 -223)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Win cash prizes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(-192.458 -60)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Dear Mr. Atreides, please find attached …</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(992.3482 -386)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Spam</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(992.3482 -223)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Spam</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(943.3613 -60)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Not Spam</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(997.8657 -543)" fill="#6c3c96">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#6c3c96" x="0" y="50">Class</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(132.00488 -543)" fill="#6c3c96">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#6c3c96" x="0" y="50">Email message</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-613 221 2524 336" width="2524" height="336">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-09-24 18:21:10 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_9">
+        <rect x="-612" y="318.5" width="567" height="141" fill="#aa97fe"/>
+        <rect x="-612" y="318.5" width="567" height="141" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <rect x="1268" y="318.5" width="642" height="141" fill="#aa97fe"/>
+        <rect x="1268" y="318.5" width="642" height="141" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 991 410.7515 L 991 367.2485 L 1116.421 367.2485 L 1116.421 353.5 L 1172 389 L 1116.421 424.5 L 1116.421 410.7515 Z" fill="#fff1e2"/>
+        <path d="M 991 410.7515 L 991 367.2485 L 1116.421 367.2485 L 1116.421 353.5 L 1172 389 L 1116.421 424.5 L 1116.421 410.7515 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 811.96455 270.9133 C 922.6787 336.1308 922.6787 441.8692 811.96455 507.0867 C 701.251 572.30454 521.749 572.30454 411.03545 507.0867 C 300.32133 441.8692 300.32133 336.1308 411.03545 270.9133 C 521.749 205.69546 701.251 205.69546 811.96455 270.9133" fill="#a4f8fd"/>
+        <path d="M 811.96455 270.9133 C 922.6787 336.1308 922.6787 441.8692 811.96455 507.0867 C 701.251 572.30454 521.749 572.30454 411.03545 507.0867 C 300.32133 441.8692 300.32133 336.1308 411.03545 270.9133 C 521.749 205.69546 701.251 205.69546 811.96455 270.9133" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 51 410.7515 L 51 367.2485 L 176.42098 367.2485 L 176.42098 353.5 L 232 389 L 176.42098 424.5 L 176.42098 410.7515 Z" fill="#fff1e2"/>
+        <path d="M 51 410.7515 L 51 367.2485 L 176.42098 367.2485 L 176.42098 353.5 L 232 389 L 176.42098 424.5 L 176.42098 410.7515 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(-536.083 352.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">I am a student</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(1311.793 352.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">Soy una estudiante</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(418.2871 279.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="44.98535" y="60">Sequence</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="8.393555" y="133">to Sequence </tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="99.60938" y="206">model</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

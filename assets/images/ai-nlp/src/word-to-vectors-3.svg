@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-990 685 2694 642" width="2694" height="642">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 5 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="400">
+      <font-face-src>
+        <font-face-name name="CenturyGothic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-09-24 18:16:46 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-990" y="685" width="2694" height="642"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_35">
+        <path d="M -383.01893 902.1903 L -383.01893 810.8097 L 30.686623 810.8097 L 30.686623 779.5 L 115.98107 856.5 L 30.686623 933.5 L 30.686623 902.1903 Z" fill="#ffc0c0"/>
+        <path d="M -383.01893 902.1903 L -383.01893 810.8097 L 30.686623 810.8097 L 30.686623 779.5 L 115.98107 856.5 L 30.686623 933.5 L 30.686623 902.1903 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_34">
+        <path d="M 239.05488 728.5 L 615.0549 728.5 C 637.1463 728.5 655.0549 746.4086 655.0549 768.5 L 655.0549 944.5 C 655.0549 966.5914 637.1463 984.5 615.0549 984.5 L 239.05488 984.5 C 216.9635 984.5 199.05488 966.5914 199.05488 944.5 L 199.05488 768.5 C 199.05488 746.4086 216.9635 728.5 239.05488 728.5 Z" fill="#e0f7fc"/>
+        <path d="M 239.05488 728.5 L 615.0549 728.5 C 637.1463 728.5 655.0549 746.4086 655.0549 768.5 L 655.0549 944.5 C 655.0549 966.5914 637.1463 984.5 615.0549 984.5 L 239.05488 984.5 C 216.9635 984.5 199.05488 966.5914 199.05488 944.5 L 199.05488 768.5 C 199.05488 746.4086 216.9635 728.5 239.05488 728.5 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(-329.75967 826)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Vectorization</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(335.5495 1037.1667)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Vectors</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(-877.6118 1086)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Documents</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(301.0417 795.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">011000111</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">000100010</tspan>
+        </text>
+      </g>
+      <g id="Group_22">
+        <g id="Group_26">
+          <g id="Graphic_29">
+            <rect x="-989.1128" y="685" width="225" height="72" fill="#f83a60"/>
+          </g>
+          <g id="Graphic_28">
+            <rect x="-989.1128" y="757.235" width="225" height="256" fill="#f1f5f5"/>
+          </g>
+          <g id="Graphic_27">
+            <rect x="-989.1128" y="1013.47" width="225" height="5.53" fill="#f83a60"/>
+          </g>
+        </g>
+        <g id="Graphic_25">
+          <text transform="translate(-960.6093 780.6818)" fill="#2e006e">
+            <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 1</tspan>
+          </text>
+        </g>
+        <g id="Graphic_24">
+          <text transform="translate(-960.6093 845.1818)" fill="#2e006e">
+            <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 2</tspan>
+          </text>
+        </g>
+        <g id="Graphic_23">
+          <text transform="translate(-960.6093 909.6818)" fill="#2e006e">
+            <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 3</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_14">
+        <g id="Group_18">
+          <g id="Graphic_21">
+            <rect x="-721.1128" y="685" width="225" height="72" fill="#ebdea6"/>
+          </g>
+          <g id="Graphic_20">
+            <rect x="-721.1128" y="757.235" width="225" height="256" fill="#f1f5f5"/>
+          </g>
+          <g id="Graphic_19">
+            <rect x="-721.1128" y="1013.47" width="225" height="5.53" fill="#ebdea6"/>
+          </g>
+        </g>
+        <g id="Graphic_17">
+          <text transform="translate(-692.1103 780)" fill="#2e006e">
+            <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 4</tspan>
+          </text>
+        </g>
+        <g id="Graphic_16">
+          <text transform="translate(-692.1103 844.5)" fill="#2e006e">
+            <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 5</tspan>
+          </text>
+        </g>
+        <g id="Graphic_15">
+          <text transform="translate(-692.1103 909)" fill="#2e006e">
+            <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 6</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_13">
+        <path d="M -365.09594 947 L 24.57073 947 C 26.227583 947 27.57073 948.3431 27.57073 950 L 27.57073 1228.5 C 27.57073 1230.1569 26.227583 1231.5 24.57073 1231.5 L -365.09594 1231.5 C -366.7528 1231.5 -368.09594 1230.1569 -368.09594 1228.5 L -368.09594 950 C -368.09594 948.3431 -366.7528 947 -365.09594 947 Z" fill="#73ffb8" fill-opacity=".11458511"/>
+        <path d="M -365.09594 947 L 24.57073 947 C 26.227583 947 27.57073 948.3431 27.57073 950 L 27.57073 1228.5 C 27.57073 1230.1569 26.227583 1231.5 24.57073 1231.5 L -365.09594 1231.5 C -366.7528 1231.5 -368.09594 1230.1569 -368.09594 1228.5 L -368.09594 950 C -368.09594 948.3431 -366.7528 947 -365.09594 947 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(-296.77628 1008.75)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="57.01904" y="50">TF-IDF</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Word2Vec</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="59.020996" y="172">Other</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 779.3882 902.1903 L 779.3882 810.8097 L 1328.0938 810.8097 L 1328.0938 779.5 L 1413.3882 856.5 L 1328.0938 933.5 L 1328.0938 902.1903 Z" fill="#ffc0c0"/>
+        <path d="M 779.3882 902.1903 L 779.3882 810.8097 L 1328.0938 810.8097 L 1328.0938 779.5 L 1413.3882 856.5 L 1328.0938 933.5 L 1328.0938 902.1903 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 797.3112 947 L 1294.3882 947 C 1296.045 947 1297.3882 948.3431 1297.3882 950 L 1297.3882 1323 C 1297.3882 1324.6569 1296.045 1326 1294.3882 1326 L 797.3112 1326 C 795.6544 1326 794.3112 1324.6569 794.3112 1323 L 794.3112 950 C 794.3112 948.3431 795.6544 947 797.3112 947 Z" fill="#73ffb8" fill-opacity=".11458511"/>
+        <path d="M 797.3112 947 L 1294.3882 947 C 1296.045 947 1297.3882 948.3431 1297.3882 950 L 1297.3882 1323 C 1297.3882 1324.6569 1296.045 1326 1294.3882 1326 L 797.3112 1326 C 795.6544 1326 794.3112 1324.6569 794.3112 1323 L 794.3112 950 C 794.3112 948.3431 795.6544 947 797.3112 947 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(885.8766 975.7143)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Classification</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="31.99463" y="111">Algorithms</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(862.2071 1116.4286)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="400" fill="#2e006e" x="130.66406" y="50">SVM</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="400" fill="#2e006e" x="35.253906" y="111">Naive Bayes</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="400" fill="#2e006e" x="0" y="172">Neural network</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <line x1="867.7261" y1="1036.2143" x2="1223.9733" y2="1036.2143" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_6">
+        <line x1="899.6121" y1="1101.7143" x2="1185.71" y2="1101.7143" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_5">
+        <ellipse cx="1586" cy="820.5" rx="117.000186954522" ry="88.0001406153667" fill="#e3a92e"/>
+        <ellipse cx="1586" cy="820.5" rx="117.000186954522" ry="88.0001406153667" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 1586 953.5 L 1703 1041.5 L 1586 1129.5 L 1469 1041.5 Z" fill="#e3a92e"/>
+        <path d="M 1586 953.5 L 1703 1041.5 L 1586 1129.5 L 1469 1041.5 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(1563.8076 784)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(1568.5977 1005)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">B</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

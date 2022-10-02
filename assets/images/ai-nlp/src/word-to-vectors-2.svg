@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-672 -446 2248 712" width="2248" height="712">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-896.8" y="-517.2">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="9" dy="6"/>
+      <feFlood flood-color="black" flood-opacity=".645934" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-09-24 18:22:05 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_27">
+        <g id="Graphic_30">
+          <rect x="-671.5777" y="-445.5" width="225" height="72" fill="#f83a60"/>
+        </g>
+        <g id="Graphic_29">
+          <rect x="-671.5777" y="-373.265" width="225" height="256" fill="#f1f5f5"/>
+        </g>
+        <g id="Graphic_28">
+          <rect x="-671.5777" y="-117.03" width="225" height="5.53" fill="#f83a60"/>
+        </g>
+      </g>
+      <g id="Group_23">
+        <g id="Graphic_26">
+          <rect x="-403.57766" y="-257" width="225" height="72" fill="#ebdea6"/>
+        </g>
+        <g id="Graphic_25">
+          <rect x="-403.57766" y="-184.765" width="225" height="256" fill="#f1f5f5"/>
+        </g>
+        <g id="Graphic_24">
+          <rect x="-403.57766" y="71.47" width="225" height="5.53" fill="#ebdea6"/>
+        </g>
+      </g>
+      <g id="Group_19">
+        <g id="Graphic_22">
+          <rect x="-671.5777" y="-68.5" width="225" height="72" fill="#a4f8fd"/>
+        </g>
+        <g id="Graphic_21">
+          <rect x="-671.5777" y="3.735" width="225" height="256" fill="#f1f5f5"/>
+        </g>
+        <g id="Graphic_20">
+          <rect x="-671.5777" y="259.97" width="225" height="5.53" fill="#a4f8fd"/>
+        </g>
+      </g>
+      <g id="Graphic_18">
+        <path d="M -62.24433 -44.30972 L -62.24433 -135.69028 L 351.46123 -135.69028 L 351.46123 -167 L 436.75567 -90 L 351.46123 -13 L 351.46123 -44.30972 Z" fill="#ffc0c0"/>
+        <path d="M -62.24433 -44.30972 L -62.24433 -135.69028 L 351.46123 -135.69028 L 351.46123 -167 L 436.75567 -90 L 351.46123 -13 L 351.46123 -44.30972 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 593.089 -218 L 969.089 -218 C 991.1804 -218 1009.089 -200.0914 1009.089 -178 L 1009.089 -2 C 1009.089 20.09139 991.1804 38 969.089 38 L 593.089 38 C 570.9976 38 553.089 20.09139 553.089 -2 L 553.089 -178 C 553.089 -200.0914 570.9976 -218 593.089 -218 Z" fill="#e0f7fc"/>
+        <path d="M 593.089 -218 L 969.089 -218 C 991.1804 -218 1009.089 -200.0914 1009.089 -178 L 1009.089 -2 C 1009.089 20.09139 991.1804 38 969.089 38 L 593.089 38 C 570.9976 38 553.089 20.09139 553.089 -2 L 553.089 -178 C 553.089 -200.0914 570.9976 -218 593.089 -218 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_16" filter="url(#Shadow)">
+        <path d="M 1140.9936 7.618493 C 1142.9475 12.934922 1148.9456 15.706735 1154.2165 13.752834 L 1172.0288 7.254977 C 1177.4362 5.301076 1184.5702 7.391296 1187.9327 11.980691 L 1232.827 59.69223 C 1237.0983 63.372836 1238.7341 70.55229 1236.3713 75.7324 L 1228.7374 92.13608 C 1226.3291 97.31619 1228.6011 103.49597 1233.7358 105.85883 L 1273.3136 124.26185 C 1278.4937 126.67015 1284.6281 124.44361 1287.0818 119.21806 L 1295.3518 101.36031 C 1297.8056 96.1802 1304.3943 92.59047 1309.9834 93.36295 L 1366.3739 95.04421 C 1372.0538 94.63525 1378.279 98.67938 1380.233 103.9958 L 1386.9125 122.21707 C 1388.8664 127.5335 1394.819 130.30531 1400.1355 128.39685 L 1441.2128 113.4018 C 1446.5292 111.44789 1449.301 105.49531 1447.3926 100.17888 L 1440.713 81.95762 C 1438.759 76.64119 1440.8947 69.46174 1445.4387 66.05377 L 1493.5592 20.795966 C 1497.149 16.433768 1504.283 14.888823 1509.463 17.206241 L 1526.9118 25.339923 C 1532.0465 27.74822 1538.2263 25.47624 1540.6346 20.34157 L 1559.0376 -19.236288 C 1561.4459 -24.416398 1559.2194 -30.59618 1553.9938 -32.959035 L 1535 -41.86519 C 1529.7745 -44.273486 1526.1848 -50.771344 1526.9573 -56.45129 L 1528.5477 -112.25107 C 1528.0933 -117.97646 1532.1374 -124.15624 1537.4992 -126.11014 L 1556.8565 -133.15327 C 1562.173 -135.10717 1564.8993 -141.05975 1562.9454 -146.37618 L 1547.9958 -187.36267 C 1546.0419 -192.72454 1540.0893 -195.5418 1534.7729 -193.63333 L 1515.4156 -186.54476 C 1510.0538 -184.59085 1502.9197 -186.68107 1499.5118 -191.22503 L 1455.2536 -238.66393 C 1450.8006 -242.25366 1449.2556 -249.47855 1451.573 -254.61322 L 1460.0702 -272.7436 C 1462.4785 -277.87827 1460.2066 -284.05806 1455.0719 -286.4209 L 1415.4486 -304.82394 C 1410.3139 -307.23223 1404.1341 -305.0057 1401.7713 -299.8256 L 1392.6834 -280.46833 C 1390.275 -275.33366 1383.8226 -271.78937 1378.0973 -272.56185 L 1321.116 -274.2431 C 1315.4815 -273.8796 1309.2563 -277.9237 1307.3024 -283.24014 L 1300.3956 -302.23388 C 1298.4417 -307.59575 1292.4437 -310.32212 1287.1273 -308.36822 L 1246.0953 -293.37317 C 1240.7789 -291.41926 1238.0071 -285.46668 1239.9156 -280.15025 L 1246.8678 -261.15652 C 1248.7763 -255.88553 1246.686 -248.75152 1242.0512 -245.2981 L 1195.0213 -201.35805 C 1191.3407 -197.0413 1184.2067 -195.49635 1179.0265 -197.81377 L 1161.8958 -205.85657 C 1156.7612 -208.21943 1150.5814 -205.94745 1148.1731 -200.81278 L 1129.7246 -161.14404 C 1127.2709 -156.00937 1129.5429 -149.82959 1134.723 -147.46673 L 1152.9897 -139.01497 C 1158.0789 -136.56124 1161.6686 -130.06338 1160.8507 -124.42887 L 1159.0331 -66.90239 C 1159.4875 -61.22244 1155.3525 -55.04266 1149.9907 -52.99788 L 1132.1784 -46.500025 C 1126.9074 -44.591563 1124.0901 -38.59354 1126.044 -33.277112 Z" fill="#e3a92e"/>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(-8.985068 -120.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Vectorization</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(689.5836 90.66667)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Vectors</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(-364.57766 120.2963)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Words</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(1216.5215 -120.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Algorithms</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(655.0758 -151)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">011000111</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">000100010</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(-643.07424 -349.8182)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(-643.07424 -285.31818)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(-643.07424 -220.81818)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(-643.07424 27)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 7</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(-643.07424 91.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 8</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(-643.07424 156)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 9</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(-374.5752 -162)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(-374.5752 -97.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(-374.5752 -33)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word 6</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="1299 -426 1015 1374" width="1015" height="1374">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-09-24 18:22:42 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_20">
+        <rect x="1462.2998" y="-426" width="9.400339" height="1373.6245" fill="#02329a"/>
+      </g>
+      <g id="Graphic_19">
+        <circle cx="1467" cy="-274.51434" r="24.0884061374782" fill="#f83a60"/>
+        <circle cx="1467" cy="-274.51434" r="24.0884061374782" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_18">
+        <circle cx="1467" cy="116.0804" r="24.0884061374782" fill="#f83a60"/>
+        <circle cx="1467" cy="116.0804" r="24.0884061374782" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <circle cx="1467" cy="240.12258" r="24.0884061374782" fill="#f83a60"/>
+        <circle cx="1467" cy="240.12258" r="24.0884061374782" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_16">
+        <circle cx="1467" cy="405.54407" r="24.0884061374782" fill="#f83a60"/>
+        <circle cx="1467" cy="405.54407" r="24.0884061374782" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_15">
+        <circle cx="1467" cy="704.7766" r="24.0884061374782" fill="#f83a60"/>
+        <circle cx="1467" cy="704.7766" r="24.0884061374782" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <circle cx="1467" cy="833.2301" r="24.0884061374782" fill="#f83a60"/>
+        <circle cx="1467" cy="833.2301" r="24.0884061374782" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(1304.3448 -305)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">2000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(1304.3448 85.59475)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">2013</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(1304.3448 209.63693)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">2013</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(1304.3448 375.0584)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">2014</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(1304.3448 674.29096)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">2017</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(1304.3448 802.7444)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">2018</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(1551 802.7444)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Pre-trained language models</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(1551 674.29096)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Attention</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(1551 375.0584)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Sequence to sequence models</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(1551 209.63693)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Neural network models for NLP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(1551 85.59475)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Word Embeddings</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(1551 -305)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Predictive Models</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
