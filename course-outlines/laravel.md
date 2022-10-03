@@ -1,4 +1,4 @@
-# ElasticSearch
+# Laravel
 
 © Elephant Scale
 08/02/2022
@@ -12,7 +12,7 @@ New features include security, monitoring, and machine learning. All together, t
 This course is intended for data engineers and data scientists, architects, developers, and administrators who are want to build versatile search solutions. It gives them practical level of experience, achieved through a combination of 50% lecture and 50% lab work. 
 
 ## Course Information
-Duration: 3 half days
+Duration: 4-5 days
 
 ## Audience
 Architects, Developers, Administrators
