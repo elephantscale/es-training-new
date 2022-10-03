@@ -109,3 +109,4 @@ October 01, 2022
 
 ## Our references
 * https://github.com/lanl/quantum_algorithms
+* https://qiskit.org/textbook/preface.html
