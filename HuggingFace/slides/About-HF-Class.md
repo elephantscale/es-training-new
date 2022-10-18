@@ -4,9 +4,10 @@
 
 ## Agenda - 2 days
 
-| 200 | Subject                            |
+| 27  | Subject                            |
 |-----|------------------------------------|
-| 10  | 01__About-HG-Class.pptx            |
+| 10  | Day 1: 01__About-HG-Class.pptx     |
+| 17  | Day 1: 02__Transformer-Models.pptx |
 
 
  <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
@@ -17,13 +18,13 @@ Notes:
 ## Pre-requisites and Expectations
 
 
- * Basic coding knowledge is assumed
+ * Basic learning familiarity is assumed
 
- * Have a coding development environment
+ * Have a Python development environment
 
      - We will set this up in class
      
-     - Or on the cloud
+     - Or use yours
 
  * Curiosity!
 
