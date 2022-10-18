@@ -86,7 +86,7 @@ result = classifier("This is a course about the Transformers library")
 * A. This pipeline requires that labels be given to classify this text.
 * B. This pipeline requires several sentences, not just one.
 * C. The Transformers library is broken, as usual.
-* C. This pipeline requires longer inputs; this one is too short.
+* D. This pipeline requires longer inputs; this one is too short.
 
 Notes:
 * A. The correct code needs to include candidate_labels=[...].
@@ -109,11 +109,11 @@ Notes:
 ## Quiz 6
 
 * A language model usually does not need labels for its pretraining.
-  * True
-  * False
+  * A. True
+  * B. False
 
 Notes:
-* The pretraining is usually self-supervised, which means the labels are created automatically from the inputs (like predicting the next word or filling in some masked words).
+* A. The pretraining is usually self-supervised, which means the labels are created automatically from the inputs (like predicting the next word or filling in some masked words).
 
 ---
 
@@ -136,7 +136,7 @@ Notes:
   * C. A sequence-to-sequence model 
 
 Notes:
-* B. Correct! Decoder models are perfectly suited for text generation from a prompt.
+* B. Decoder models are perfectly suited for text generation from a prompt.
 
 ---
 
@@ -147,7 +147,7 @@ Notes:
   * B. A decoder model
   * C. A sequence-to-sequence model
 
-Motes:
+Notes:
 
 * C. Sequence-to-sequence models are perfectly suited for a summarization task.
 
