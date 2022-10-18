@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
+#!/bin/bash
+# To generate slides
 $ES_HOME/utils/presentations/slides-assembler.sh slide-list.txt
-
-# python md2pptx.py -t ES *.md
