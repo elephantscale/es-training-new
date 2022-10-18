@@ -1,3 +1,2 @@
 About-HF-Class.md
-What-Transformers-Do.md
-How-Transformers-Work.md
+Transformers-Models.md
