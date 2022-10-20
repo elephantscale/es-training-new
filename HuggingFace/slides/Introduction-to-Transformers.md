@@ -1,4 +1,8 @@
-# How Transformers Work
+# Introduction to Transformers
+
+---
+
+# What to Expect
 
 ---
 
@@ -8,19 +12,44 @@
 
 ---
 
-## Encoder models
+
+# NLP
+
+---
+
+## What is NLP?
+
+---
+
+# Transformers benefits
+
+---
+
+# Encoder Models
+
+---
+
+# Decoder Models
+
+---
+
+# Sequence-to-sequence Models
 
 
 ---
 
-### Decoder models
+# Bias and limitations
+
+
+---
+
+# Summary
 
 ---
 
 
-## Sequence-to-sequence models
 
-# Quizzes
+# Chapter quiz
 
 ---
 

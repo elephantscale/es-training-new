@@ -1,13 +1,15 @@
-# HuggingFace
+# Deep Learning & Advanced Applications
 
 ---
 
 ## Agenda - 2 days
 
-| 27  | Subject                            |
-|-----|------------------------------------|
-| 10  | Day 1: 01__About-HG-Class.pptx     |
-| 17  | Day 1: 02__Transformer-Models.pptx |
+| Day 1                        | Day 2                  |
+|------------------------------|------------------------|
+| Introduction to Transformers | The Datasets Library   |
+| Transformer Pipelines        | The Tokenizers Library |
+| Fine-Tuning                  | Main NLP Tasks         |
+| Sharing Models               | Asking for Help        |
 
 
  <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
@@ -18,7 +20,7 @@ Notes:
 ## Pre-requisites and Expectations
 
 
- * Basic learning familiarity is assumed
+ * Basic machine learning familiarity is assumed
 
  * Have a Python development environment
 
@@ -30,7 +32,7 @@ Notes:
 
    - Ask a lot of questions 
 
- * This is a HuggingFace class
+ * This is a Deep Learning & Advanced Applications based on HuggingFace class
    - No previous knowledge is assumed (but may be helpful) 
    - Class will be based on the pace of majority of the students
 ![](../images/01.png)
@@ -112,7 +114,7 @@ Notes:
      - Your Name
      - Your background (developer, admin, manager, ...)
      - Technologies you are familiar with
-     - Familiarity with Deep Learning (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Familiarity with ML and HuggingFace (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.08, "top" : 6.08, "height" : 1.99, "width" : 2.25} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.36, "top" : 6.1, "height" : 1.92, "width" : 3.54} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 6.08, "height" : 1.99, "width" : 2.25} -->
