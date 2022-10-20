@@ -111,4 +111,99 @@ Notes:
 
 ---
 
+## Quiz 5
 
+* What is an AutoModel?
+  * A. A model that automatically trains on your data
+  * B. An object that returns the correct architecture based on the checkpoint
+  * C. A model that automatically detects the language used for its inputs to load the correct weights
+
+Notes:
+
+* B. The AutoModel only needs to know the checkpoint from which to initialize to return the correct architecture.
+
+---
+
+## Quiz 6
+
+* What are the techniques to be aware of when batching sequences of different lengths together?
+   * A. Truncating
+   * B. Returning tensors
+   * C. Padding
+   * D. Attention masking
+
+Notes:
+
+* A. Truncation is a correct way of evening out sequences so that they fit in a rectangular shape. 
+* C. Padding is a correct way of evening out sequences so that they fit in a rectangular shape. 
+* D. Attention masks are of prime importance when handling sequences of different lengths. 
+
+---
+
+## Quiz 7
+
+* What is the point of applying a SoftMax function to the logits output by a sequence classification model?
+  * A. It softens the logits so that they're more reliable.
+  * B. It applies a lower and upper bound so that they're understandable.
+  * C. The total sum of the output is then 1, resulting in a possible probabilistic interpretation.
+
+Notes:
+
+* B., C.
+
+---
+
+## Quiz 8
+* What method is most of the tokenizer API centered around?
+  * A. encode, as it can encode text into IDs and IDs into predictions
+  * B. Calling the tokenizer object directly.
+  * C. pad
+  * D. tokenize
+
+Notes:
+* C. The __call__ method of the tokenizer is a very powerful method which can handle pretty much anything. It is also the method used to retrieve predictions from a model.
+
+---
+
+## Quiz 9
+
+* What does the result variable contain in this code sample?
+
+```python
+from transformers import AutoTokenizer
+tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
+result = tokenizer.tokenize("Hello!")
+```
+  * A. A list of strings, each string being a token
+  * B. A list of IDs
+  * C. A string containing all of the tokens
+
+Notes:
+
+* A. Convert this to IDs, and send them to a model!
+
+---
+
+## Quiz 10
+
+* Is there something wrong with the following code?
+
+```python
+from transformers import AutoTokenizer, AutoModel
+
+tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
+model = AutoModel.from_pretrained("gpt2")
+
+encoded = tokenizer("Hey!", return_tensors="pt")
+result = model(**encoded)
+```
+
+   * A. No, it seems correct.
+   * B. The tokenizer and model should always be from the same checkpoint.
+   * C. It's good practice to pad and truncate with the tokenizer as every input is a batch.
+
+Notes:
+
+* B.
+
+---
