@@ -6,11 +6,22 @@
 
 ---
 
+## What is in this section?
+
+* https://huggingface.co/course/chapter7/1?fw=pt
+
+
+---
 
 # Token classification
 
 ---
 
+## What is token classification?
+
+[https://huggingface.co/course/chapter7/2?fw=pt](https://huggingface.co/course/chapter7/2?fw=pt)
+
+---
 
 # Fine-tuning a masked language model
 

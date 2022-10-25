@@ -2,7 +2,23 @@
 
 ---
 
-## Agenda - 2 days
+## Agenda - Deep Learning & Advanced Applications
+
+| Day 1                         | Day 2                          |
+|-------------------------------|--------------------------------|
+| Introduction to Deep Learning | Fine tuning a pretrained model |
+| Computer Vision CNN           | Sharing models and tokenizers  |
+| Recurrent Neural Networks RNN | Main NLP Tasks                 |
+| Transformers                  | Asking for Help                |
+
+
+ <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
+
+Notes:
+
+---
+
+## Agenda - 2 days of HuggingFace
 
 | Day 1                        | Day 2                  |
 |------------------------------|------------------------|
