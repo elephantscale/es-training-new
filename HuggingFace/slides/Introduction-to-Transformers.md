@@ -6,6 +6,11 @@
 
 ---
 
+## Tutorials
+
+![](../images/03.png)
+
+
 ## Chapter tutorial
 
 * [How Transformers Work](https://huggingface.co/course/chapter1/4?fw=pt)
@@ -19,9 +24,70 @@
 
 ## What is NLP?
 
+* NLP is a field of linguistics and machine learning focused on understanding everything related to human language. The aim of NLP tasks is not only to understand single words individually, but to be able to understand the context of those words.
+
+* The following is a list of common NLP tasks, with some examples of each:
+
+---
+
+## NLP Tasks
+
+* Classifying whole sentences: 
+  * Getting the sentiment of a review, detecting if an email is spam, determining if a sentence is grammatically correct or whether two sentences are logically related or not
+* Classifying each word in a sentence: 
+  * Identifying the grammatical components of a sentence (noun, verb, adjective), or the named entities (person, location, organization)
+* Generating text content: 
+  * Completing a prompt with auto-generated text, filling in the blanks in a text with masked words
+* Extracting an answer from a text: 
+  * Given a question and a context, extracting the answer to the question based on the information provided in the context
+* Generating a new sentence from an input text: 
+  * Translating a text into another language, summarizing a text
+* More
+  * Generating a transcript of an audio sample or a description of an image.
+---
+
+## Why is it challenging?
+
+* Computers don’t process information in the same way as humans. 
+* For example, when we read the sentence “I am hungry,” we can easily understand its meaning. 
+* Similarly, given two sentences such as “I am hungry” and “I am sad,” we’re able to easily determine how similar they are. 
+* For machine learning (ML) models, such tasks are more difficult. 
+  * The text needs to be processed in a way that enables the model to learn from it. 
+  * And because language is complex, we need to think carefully about how this processing must be done. There has been a lot of research done on how to represent text.
+
 ---
 
 # Transformers benefits
+
+---
+
+## Transformers are everywhere!
+
+* Transformer models are used to solve all kinds of NLP tasks, like the ones mentioned in the previous section. Here are some of the companies and organizations using Hugging Face and Transformer models, who also contribute back to the community by sharing their models:
+
+![](../images/04.png)
+
+---
+
+## Pipeline
+
+* The most basic object in the Transformers library is the pipeline() function. It connects a model with its necessary preprocessing and postprocessing steps, allowing us to directly input any text and get an intelligible answer:
+
+* We will continue with Lab 03
+* We will do it section by section
+
+---
+
+# How Transformers Work
+
+* In this section, we will take a high-level look at the architecture of Transformer models.
+
+
+---
+
+## A bit of Transformer history
+
+![](../images/05.png)
 
 ---
 
