@@ -11,7 +11,7 @@
 ![](../images/03.png)
 
 
-## Chapter tutorial
+Notes:
 
 * [How Transformers Work](https://huggingface.co/course/chapter1/4?fw=pt)
 
