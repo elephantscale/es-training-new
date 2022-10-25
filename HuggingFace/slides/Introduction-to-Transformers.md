@@ -91,6 +91,132 @@ Notes:
 
 ---
 
+## The years
+
+* June 2018: GPT, the first pretrained Transformer model, used for fine-tuning on various NLP tasks and obtained state-of-the-art results
+
+* October 2018: BERT, another large pretrained model, this one designed to produce better summaries of sentences (more on this in the next chapter!)
+
+* February 2019: GPT-2, an improved (and bigger) version of GPT that was not immediately publicly released due to ethical concerns
+
+* October 2019: DistilBERT, a distilled version of BERT that is 60% faster, 40% lighter in memory, and still retains 97% of BERT’s performance
+
+* October 2019: BART and T5, two large pretrained models using the same architecture as the original Transformer model (the first to do so)
+
+* May 2020, GPT-3, an even bigger version of GPT-2 that is able to perform well on a variety of tasks without the need for fine-tuning (called zero-shot learning)
+
+---
+
+## Major categories
+
+* GPT-like (also called auto-regressive Transformer models)
+* BERT-like (also called auto-encoding Transformer models)
+* BART/T5-like (also called sequence-to-sequence Transformer models)
+
+---
+
+## Transformers are language models
+
+* All the Transformer models mentioned above (GPT, BERT, BART, T5, etc.) have been trained as language models. 
+  * This means they have been trained on large amounts of raw text in a self-supervised fashion. Self-supervised learning is a type of training in which the objective is automatically computed from the inputs of the model. That means that humans are not needed to label the data!
+
+* This type of model develops a statistical understanding of the language it has been trained on, but it’s not very useful for specific practical tasks. 
+  * Because of this, the general pretrained model then goes through a process called transfer learning. During this process, the model is fine-tuned in a supervised way — that is, using human-annotated labels — on a given task.
+
+---
+
+
+##  Example of a task
+
+* An example of a task is predicting the next word in a sentence having read the n previous words. This is called causal language modeling because the output depends on the past and present inputs, but not the future ones.
+
+![](../images/06.png)
+
+---
+
+## Masked language modeling
+
+* Another example is masked language modeling, in which the model predicts a masked word in the sentence.
+![](../images/07.png)
+
+---
+
+## Transformers are big models
+
+* Apart from a few outliers (like DistilBERT), the general strategy to achieve better performance is by increasing the models’ sizes as well as the amount of data they are pretrained on.
+![](../images/08.png)
+
+---
+
+## Costs
+
+* Unfortunately, training a model, especially a large one, requires a large amount of data. This becomes very costly in terms of time and compute resources. It even translates to environmental impact, as can be seen in the following graph.
+![](../images/09.png)
+
+---
+
+## Sharing models
+
+* And this is showing a project for a (very big) model led by a team consciously trying to reduce the environmental impact of pretraining. The footprint of running lots of trials to get the best hyperparameters would be even higher.
+
+* Imagine if each time a research team, a student organization, or a company wanted to train a model, it did so from scratch. This would lead to huge, unnecessary global costs!
+
+* This is why sharing language models is paramount: sharing the trained weights and building on top of already trained weights reduces the overall compute cost and carbon footprint of the community.
+
+---
+
+## Carbon imprint
+
+![](../images/10.png)
+
+---
+
+## Numbers
+
+![](../images/12.png)
+
+---
+
+## Numbers
+
+![](../images/13.png)
+
+---
+
+## Numbers
+
+![](../images/14.png)
+
+---
+
+
+## Numbers
+
+![](../images/15.png)
+
+---
+
+## Calculations
+
+* https://mlco2.github.io/impact/
+
+![](../images/18.png)
+
+
+## Numbers
+
+![](../images/19.png)
+
+---
+
+
+## Numbers
+
+![](../images/20.png)
+
+---
+
+
 # Encoder Models
 
 ---
