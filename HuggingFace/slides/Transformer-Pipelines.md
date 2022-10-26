@@ -29,6 +29,52 @@
 
 ---
 
+## Pipeline 3 steps
+
+1. preprocessing
+2. passing the inputs through the model
+3. and postprocessing
+
+![](../images/21.png)
+
+---
+
+## Preprocessing with a tokenizer
+
+* Like other neural networks, Transformer models can’t process raw text directly, so the first step of our pipeline is to convert the text inputs into numbers that the model can make sense of. To do this we use a tokenizer, which will be responsible for:
+
+  * Splitting the input into words, subwords, or symbols (like punctuation) that are called tokens
+  * Mapping each token to an integer
+  * Adding additional inputs that may be useful to the model
+
+---
+
+## Going through the model
+
+* We can download our pretrained model the same way we did with our tokenizer.
+* Transformers provides an AutoModel class which also has a from_pretrained() method
+
+---
+
+## A high-dimensional vector
+
+* The vector output by the Transformer module is usually large. It generally has three dimensions:
+
+  * Batch size: The number of sequences processed at a time (2 in our example).
+  * Sequence length: The length of the numerical representation of the sequence (16 in our example).
+  * Hidden size: The vector dimension of each model input.
+  * It is said to be “high dimensional” because of the last value. The hidden size can be very large (768 is common for smaller models, and in larger models this can reach 3072 or more).
+
+---
+
+## Model heads
+
+* The model heads take the high-dimensional vector of hidden states as input and project them onto a different dimension. They are usually composed of one or a few linear layers:
+
+![](../images/22.png)
+
+---
+
 
 # Models
 
