@@ -6,11 +6,37 @@
 
 ---
 
+## What we'll cover
+
+* How to prepare a large dataset from the Hub
+* How to use the high-level Trainer API to fine-tune a model
+* How to use a custom training loop
+* How to leverage the Accelerate library to easily run that custom training loop on any distributed setup
+
+---
 
 # Processing the data
 
 ---
 
+## Loading the dataset
+
+* The Hub doesn’t just contain models
+  * it also has multiple datasets in lots of different languages. 
+  * You can browse the datasets here, 
+  * and we recommend you try to load and process a new dataset 
+  * once you have gone through this section
+
+## SuperGLUE Leaderboard
+
+![](../images/23.png)
+
+---
+
+## Lab
+[https://github.com/elephantscale/huggingface-labs/blob/main/11-Processing-the-Data/README.md](https://github.com/elephantscale/huggingface-labs/blob/main/11-Processing-the-Data/README.md)
+
+---
 
 # Fine-tuning API
 
