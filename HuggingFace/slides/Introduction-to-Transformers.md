@@ -388,7 +388,7 @@ Notes:
 
 ## Quiz 11
 
-* What possible source can the bias observed in a model have?
+* What possible source can the bias observed in a model have? (Choose all that apply.)
   * A. The model is a fine-tuned version of a pretrained model and it picked up its bias from it.
   * B. The data the model was trained on is biased.
   * C. The metric the model was optimizing for is biased.

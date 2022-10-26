@@ -1,7 +1,7 @@
-# Deep Learning & Advanced Applications
+# Deep Learning & Advanced Applications for Everyone
 
 (C) Copyright Elephant Scale
-August 14, 2022
+October 26, 2022
 
 ## Course Description
 
@@ -11,6 +11,21 @@ available as low-hanging fruit. In other words, you are looking for magic but yo
 teams who create this magic. You want to partner with them and achieve the same quality results but
 with a practical reasonable expense of time and resources.
 
+## After the course, you will be able to do the following tasks
+
+* Classifying whole sentences:
+  * Getting the sentiment of a review, detecting if an email is spam, determining if a sentence is grammatically correct or whether two sentences are logically related or not
+* Classifying each word in a sentence:
+  * Identifying the grammatical components of a sentence (noun, verb, adjective), or the named entities (person, location, organization)
+* Generating text content:
+  * Completing a prompt with auto-generated text, filling in the blanks in a text with masked words
+* Extracting an answer from a text:
+  * Given a question and a context, extracting the answer to the question based on the information provided in the context
+* Generating a new sentence from an input text:
+  * Translating a text into another language, summarizing a text
+* More
+  * Generating a transcript of an audio sample or a description of an image.
+  
 ## Course objectives
 * By the end of this course, students will know...
 * How to understand the current state of the art in Deep Learning and AI
