@@ -635,16 +635,16 @@ Notes:
 
 ## Partitions
 
+* Partition is a physical entity
 
- * Partition is a physical entity
+* This is where data lives
 
- * This is where data lives
+* One partition resides on ONE machine ( 1 to 1)
 
- * One partition resides on ONE machine ( 1 to 1)
+* One machine will host many partitions ( N <-> M)
+    - Possibly from many topics
 
- * One machine will host many partitions ( N <-> M)
-
-     - Possibly from many topics
+* Machine = Host = Node = a Linux Server.  Also one broker per node.
 
 <img src="../../assets/images/kafka/Partitions.png" alt="Partitions.png" style="width:50%;"/><!-- {"left" : 1.44, "top" : 4.4, "height" : 3.67, "width" : 7.37} -->
 
@@ -678,30 +678,37 @@ Notes:
 
 ## Topics + Partitions + Replicas
 
-<img src="../../assets/images/kafka/topics-partitions-replicas.png" style="width:50%;"/><!-- {"left" : 1.46, "top" : 1.45, "height" : 6.74, "width" : 7.33} -->
 
+<img src="../../assets/images/kafka/topics-partitions-replicas.png" style="width:50%;float:right;"/><!-- {"left" : 1.46, "top" : 1.45, "height" : 6.74, "width" : 7.33} -->
 
+* In this diagram:
+    - Follow the color coding to see replicas
+    - Primary partitions have solid border, replicas have dotted border
+
+* We can see each machine/broker is hosting **primary partitions and backup/replica partitions**
+
+* Replicas a placed in a different host
 
 Notes:
-
-
-
 
 ---
 
 ## Discuss A Crash Scenario
 
-* What if Node1 crashes?  Discuss the recovery process.
+<img src="../../assets/images/kafka/topics-partitions-replicas.png" style="width:50%;float:right;"/><!-- {"left" : 1.46, "top" : 1.45, "height" : 6.74, "width" : 7.33} -->
 
+* What if Node1 crashes?
 
-<img src="../../assets/images/kafka/topics-partitions-replicas.png" style="width:50%;"/><!-- {"left" : 1.46, "top" : 1.45, "height" : 6.74, "width" : 7.33} -->
+* Kafka (with the help of Zookeeper) will automatically detect a node has become unavailble
 
+* After a **grace period** (discuss why) failure recovery protocol is initiated
 
+* **A1-replica** on Node3 will be made primary for partition **A1**
+
+* Kafka will also start creating another replica for A1 on available node (Node2)
+    - And a replica for **B1** on Node3
 
 Notes:
-
-
-
 
 ---
 
@@ -839,8 +846,11 @@ Notes:
 
 ## Brokers / Leaders / Partitions / Replicas
 
+<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replicas.png"  style="width:60%;float:right;"/><!-- {"left" : 0.68, "top" : 2.34, "height" : 4.4, "width" : 8.89} -->
 
-<img src="../../assets/images/kafka/Brokers-Leaders-Partitions-Replicas.png"  style="width:80%;"/><!-- {"left" : 0.68, "top" : 2.34, "height" : 4.4, "width" : 8.89} -->
+* Both producers and consumers always write/read from **primary/leader partitions**
+
+* Replicas are for **data safetey only** - this is handled by Kafka internally
 
 
 Notes:
@@ -874,8 +884,9 @@ Notes:
 
 ## Producers / Consumers / Topics / Partitions
 
+* Here we see multiple producers and consumers in action
 
-<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png" alt="Producers-Consumers-Topics-Partitions.png" style="max-width:60%;"/><!-- {"left" : 1.27, "top" : 1.97, "height" : 5.7, "width" : 7.71} -->
+<img src="../../assets/images/kafka/Producers-Consumers-Topics-Partitions.png"  style="width:55%;"/><!-- {"left" : 1.27, "top" : 1.97, "height" : 5.7, "width" : 7.71} -->
 
 
 Notes:
@@ -1095,27 +1106,6 @@ Notes:
 
 Notes:
 
-
-
----
-
-## Batching of Messages
-
-<img src="../../assets/images/kafka/batch-send-1.png" style="width:40%;float:right;"/><!-- {"left" : 5.9, "top" : 1.17, "height" : 2.23, "width" : 4.28} -->
-
- * If each individual message is written to Kafka, this will increase network round trips.
-     - Increased latency
-
- * Messages are written as batches
-     - Reduces round trip
-     - Increases throughput
-     - Batches can be compressed (reduces network payload)
-
- * Large batches
-     - Increase throughput
-     - But it will take longer for individual messages to propagate
-
-Notes:
 
 ---
 
