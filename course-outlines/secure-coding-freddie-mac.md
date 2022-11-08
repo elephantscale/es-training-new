@@ -53,12 +53,13 @@ Lectures and hands on labs. (50% - 50%)
 * How bad is it - CVSS score
 * Team labs on threat modeling
 
-### How hackers do it - hack your VM!
+### How hackers do it - hack your application
 
 * Cross-site scripting
 * Malicious file execution
 * Session hijacking
-* Encryption
+* SQL injection
+* GOAT labs
 
 ### Java security
 
@@ -67,22 +68,32 @@ Lectures and hands on labs. (50% - 50%)
   * Mutability of objects
   * Variable, method, class, and package scopes
   * Thread safety
-  * Exception handling
-  * Input validation
+  * TODO: Mark put MIT recommendations here
+  * Developing secure Java applications
+  * Safe coding and design patterns
+  * How to find vulnerable code while doing a code review
+  * The most common pitfalls
+  * Labs for SEI CERT coding standards
+  * https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java
 
-* Basic Security at the EE level
-  * Role-based authentication
-  * Specifying Security Constraints
-  * Programmatic security
-  * Declarative security
+* Security with C++ (optional)
+
+* Security with Python (optional)
+
+* Basic Security at the server level
+  * Tomcat, Docker, Ansible
+  * Role-based authentication and authorization
 
 * Defensive Programming
   * Error handling in the Java EE space
-  * Type annotation syntax and the Checker Framework
-  * Application-layer security
-  * Transport-layer security
-  * Message-layer security
+  * Input validation
   * Secure connection using SSL
+  * Exception handling
+  *   * How to manage secure PII data on the end client apps (mobile app, browser, tablet)
+  * Cross-site scripting (XSS)
+  * Cross-site request forgery (CSRF)
+  * Common JavaScript vulnerabilities
+  * JavaScript security analyzers
 
 * REST endpoint security
   * oauth2 token-based authentication and authorization
@@ -94,28 +105,16 @@ Lectures and hands on labs. (50% - 50%)
   * Output encoding
   * Cryptography
 
-* Developing secure Java applications
-  * Safe coding and design patterns
-  * How to find vulnerable code while doing a code review
-  * The most common pitfalls
   
-* JavaScript security
-  * How to manage secure PII data on the end client apps (mobile app, browser, tablet)
-  * Versions: OAuth2, Angular4
-  * Cross-site scripting (XSS)
-  * Cross-site request forgery (CSRF)
-  * Common JavaScript vulnerabilities
-  * JavaScript security analyzers
-  
-### Countermeasures
+### Summary of Countermeasures
 
 * Validation
 * Validation controls
 * Strong typing
 * Regular expressions
-* White list
+* Permit list
 * Scrubbing
-* Black list
+* Deny list
 * Encoding
 * CAPTCHA
 * Honey pots
@@ -160,23 +159,7 @@ Lectures and hands on labs. (50% - 50%)
 * Policies
 * Hijacking/Fixation Attacks
 
-### Framework architecture
-* Threading
-* Privileges
-* Audits/Logs
-* Secure coding
-* Encryption services
-* Static code analysis
-
-### Securing the runtime environment
-* Code Access
-* GAC
-* Strong named assemblies
-* CLR
-* Security Zones
-* Permissions
-* Security policy
   
 ### Security future
 * Zero-trust networks
-* Artificial intelligence
+* Artificial intelligence and machine learning
