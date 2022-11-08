@@ -16,15 +16,15 @@
         <path d="M -34 -481.8274 L -34 -481.8274 L 892.8562 -481.8274 L 892.8562 -495.4359 L 916 -481.8274 L 892.8562 -468.21894 L 892.8562 -481.8274 Z" fill="#4040ff"/>
         <path d="M -34 -481.8274 L -34 -481.8274 L 892.8562 -481.8274 L 892.8562 -495.4359 L 916 -481.8274 L 892.8562 -468.21894 L 892.8562 -481.8274 Z" stroke="#3f41ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
       </g>
-      <g id="Graphic_29">
+      <g id="Graphic_29" transform="matrix(1, 0, 0, 1, 132.718872, -128.853271)">
         <ellipse cx="127.5" cy="-617.26185" rx="58.5000934772609" ry="47.7382308943541" fill="#e3a92e" fill-opacity=".6428854"/>
         <ellipse cx="127.5" cy="-617.26185" rx="58.5000934772609" ry="47.7382308943541" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
-      <g id="Graphic_30">
+      <g id="Graphic_30" transform="matrix(1, 0, 0, 1, -73.446365, -76.023437)">
         <ellipse cx="479.64286" cy="-601.7045" rx="68.0103625799636" ry="47.7382308943541" fill="#e3a92e" fill-opacity=".6428854"/>
         <ellipse cx="479.64286" cy="-601.7045" rx="68.0103625799636" ry="47.7382308943541" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
-      <g id="Graphic_31">
+      <g id="Graphic_31" transform="matrix(1, 0, 0, 1, 354.346497, 275.746033)">
         <ellipse cx="252.0636" cy="-893.2618" rx="58.500093477261" ry="47.7382308943542" fill="#aa97fe"/>
         <ellipse cx="252.0636" cy="-893.2618" rx="58.500093477261" ry="47.7382308943542" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
@@ -43,15 +43,15 @@
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">gz</tspan>
         </text>
       </g>
-      <g id="Graphic_35">
+      <g id="Graphic_35" transform="matrix(1, 0, 0, 1, 345.326752, 273.168945)">
         <text transform="translate(226.86828 -917.7618)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">lz4</tspan>
         </text>
       </g>
-      <g id="Graphic_36">
+      <g id="Graphic_36" transform="matrix(1, 0, 0, 1, 128.853271, -135.295944)">
         <text transform="translate(94.70703 -641.76185)" fill="#250060" style="white-space: pre;"><tspan x="0" dy="1em">​</tspan>          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#250060" x="0" y="40">zstd</tspan><tspan x="0" dy="1em">​</tspan>        </text>
       </g>
-      <g id="Graphic_37">
+      <g id="Graphic_37" transform="matrix(1, 0, 0, 1, -56.695442, -77.311966)">
         <text transform="translate(416.6326 -623.2045)" fill="#250060" style="white-space: pre;">
           <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#250060" x="0" y="35">snappy</tspan>
         </text>

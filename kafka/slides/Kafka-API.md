@@ -837,21 +837,40 @@ KafkaProducer<String, String> producer = new KafkaProducer<>(props);
 
 ---
 
+## Lab: Compression
+
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+* **Overview:**
+    - Try different compression codecs in Producer
+
+* **Approximate Time:**
+    - 15 mins
+
+* **Instructions:**
+    - lab 4.2
+
+* **To Instructor:**
+    - Demo this lab
+
+Notes:
+
+---
+
 ## Lab: Compression Benchmark
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
- *  **Overview:** Try different compression codecs in Producer
+* **Overview:** Try different compression codecs in Producer
 
- *  **Builds on previous labs:** lab 4.1
+* **Builds on previous labs:** lab 4.2
 
- *  **Approximate Time:** 20 - 30 mins
+* **Approximate Time:** 20 - 30 mins
 
- *  **Instructions:**
+* **Instructions:**
+     - Lab 4.3
 
-     - Please follow: lab 4.2
-
- *  **To Instructor:**
+* **To Instructor:**
 
 Notes:
 

@@ -307,3 +307,54 @@ configuration that needs to be called out is the gtid.source.includes
   - Dev: https://gitter.im/debezium/dev
 
 ---
+
+# Kafka Streams
+
+---
+
+
+## Kafka Application Using Kafka Streams
+
+<img src="../../assets/images/kafka/kafka-streams-1.png" style="max-width:70%;"/><!-- {"left" : 0.4, "top" : 2.08, "height" : 5.49, "width" : 9.46} -->
+
+---
+
+## Stream Processing - Concepts
+
+<img src="../../assets/images/kafka/stream-01.png"  style="width:90%;"/><!-- {"left" : 0.28, "top" : 2.32, "height" : 4.43, "width" : 9.69} -->
+
+---
+
+## Stream Processing - Concepts
+
+<img src="../../assets/images/kafka/stream-02.png"  style="width:90%;"/><!-- {"left" : 0.48, "top" : 2.26, "height" : 2.42, "width" : 9.29} -->
+
+---
+
+## Kafka Streams Architecture
+
+<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; float:right;"/><!-- {"left" : 6.67, "top" : 1.7, "height" : 4.5, "width" : 3.49} -->
+
+* A  **Stream Partition** is an ordered set of records and maps to a Topic partition 
+
+* A  **Data Record** in the stream => maps to a Kafka message
+
+* A  **Task** processes a fixed set of partitions
+
+     - Stream tasks can be processed parallely
+
+* A  **Thread**  executes one or more tasks
+
+Notes:
+
+---
+
+## Scaling Kafka Streams
+
+* No state is shared across threads. So you can start as many threads as there are input Kafka topic partitions so that every thread's tasks has at least one partition to process
+
+<img src="../../assets/images/kafka/Scaling-Kafka-Streams.png" alt="Scaling-Kafka-Streams.png" style="max-width:80%;"/><!-- {"left" : 1.88, "top" : 3.11, "height" : 4.97, "width" : 6.57} -->
+
+Notes:
+
+---

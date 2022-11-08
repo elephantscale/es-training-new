@@ -50,12 +50,6 @@ Notes:
 
 ---
 
-## Kafka Application Using Kafka Streams
-
-<img src="../../assets/images/kafka/kafka-streams-1.png" style="max-width:70%;"/><!-- {"left" : 0.4, "top" : 2.08, "height" : 5.49, "width" : 9.46} -->
-
----
-
 ## Case for Kafka Streams
 
 <img src="../../assets/images/kafka/Kafka-Processing-Systems.png" alt="Kafka-Processing-Systems.png" style="width:50%;float:right;"/><!-- {"left" : 6.03, "top" : 1.69, "height" : 2.55, "width" : 3.99} -->
@@ -110,161 +104,19 @@ Notes:
 
 ---
 
-## Stream Processing - Concepts
-
-<img src="../../assets/images/kafka/stream-01.png"  style="width:90%;"/><!-- {"left" : 0.28, "top" : 2.32, "height" : 4.43, "width" : 9.69} -->
+# Kafka Streams API
 
 ---
 
-## Stream Processing - Concepts
-
-<img src="../../assets/images/kafka/stream-02.png"  style="width:90%;"/><!-- {"left" : 0.48, "top" : 2.26, "height" : 2.42, "width" : 9.29} -->
-
----
-
-## Kafka Streams Architecture
-
-<img src="../../assets/images/kafka/Kafka-Streams-Architecture.png" alt="Kafka-Streams-Architecture.png" style="width:35%; float:right;"/><!-- {"left" : 6.67, "top" : 1.7, "height" : 4.5, "width" : 3.49} -->
-
-* A  **Stream Partition** is an ordered set of records and maps to a Topic partition 
-
-* A  **Data Record** in the stream => maps to a Kafka message
-
-* A  **Task** processes a fixed set of partitions
-
-     - Stream tasks can be processed parallely
-
-* A  **Thread**  executes one or more tasks
-
-Notes:
-
----
-
-## Scaling Kafka Streams
-
-* No state is shared across threads. So you can start as many threads as there are input Kafka topic partitions so that every thread's tasks has at least one partition to process
-
-<img src="../../assets/images/kafka/Scaling-Kafka-Streams.png" alt="Scaling-Kafka-Streams.png" style="max-width:80%;"/><!-- {"left" : 1.88, "top" : 3.11, "height" : 4.97, "width" : 6.57} -->
-
-Notes:
-
----
-
-## Processor Topology
-
-<img src="../../assets/images/kafka/streams-architecture-topology.png" alt="streams-architecture-topology.png" style="width:30%; float:right;"/><!-- {"left" : 6.82, "top" : 1.65, "height" : 4.23, "width" : 2.98} -->
-
-* Defines the logic for the application
-
-* Topology is a graph
-
-    - Nodes: Stream processors
-
-    - Edges: Streams
-
-* **Source processor**
-
-    - Has no upstream processors. *Reads* topic
-
-* **Sink processor**
-
-    - Has no downstream processor. *Writes* topic
-
-Notes:
-
----
-
-## State Store
-
-<img src="../../assets/images/kafka/State-Store.png" alt="State-Store.png" style="width:30%;float:right;"/><!-- {"left" : 6.81, "top" : 3.03, "height" : 3.58, "width" : 3.17} -->
-
-* Stateful operations like (Aggregations / Joins) require intermediate state storage
-
-* Kafka Streams provides this storage at per node level
-
-* Storage mediums
-    - In memory cache
-    - RocksDB (a very fast embedded DB, developed by Facebook)  
-     Stored on disk on each node
-
-* Tasks uses it to store and query data
-
-* Every task can have one or more state stores
-
-* Fault tolerant
-
-* Automatic recovery
-
-Notes:
-
----
-
-## Replication and Fault Tolerance
-
-* Kafka Partitions are replicated and highly available
-
-* If Streams task fails
-
-    - Kafka will restart it on another running instance of the application
-
-* Stream data persisted to Kafka is still available in case application fails and wants to re-process it
-
-* Local state stores are replicated as a topic called  **changelog**
-
-    - **Changelog** has log compaction enabled
-
-Notes:
-
----
-
-## Overall Architecture
-
-<img src="../../assets/images/kafka/Overall-Architecture.png" alt="Overall-Architecture.png" style="width:50%;"/><!-- {"left" : 1.85, "top" : 1.64, "height" : 6.36, "width" : 6.55} -->
-
-Notes:
-
-- Here we see a Streams application,
-- It is consuming messages from input Q
-- And producing messages to another output Q
-
----
-
-# Kafka Streams Details
-
----
-
-## Writing a Streams Application
-
-
-* Use Kafka Streams DSL
-
-    - High level API
-
-    - Provides most common required functions for transformation, grouping, aggregation
-
-* Use Processor API
-
-    - Low-level API
-
-    - Create, connect processors in topology and interact with State Stores directly
-
-Notes:
-
----
-
-## Kafka Streaming (Abbreviated)
+## Kafka Streams (Abbreviated)
 
 ```java
 // ** 1 : configure **
 Properties config = new Properties();
-config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
-       "localhost:9092");
-config.put(StreamsConfig.APPLICATION_ID_CONFIG,
-       "kafka-streaming-consumer1");
-config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG,
-       Serdes.String().getClass().getName());
-config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG,
-       Serdes.String().getClass().getName());
+config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+config.put(StreamsConfig.APPLICATION_ID_CONFIG, "kafka-streams-consumer1");
+config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass().getName());
+config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass().getName());
 
 // ** 2 : define processing **
 final StreamsBuilder builder = new StreamsBuilder();
@@ -306,7 +158,7 @@ Notes:
 
 ---
 
-## Streaming Operations
+## Streams Operations
 
 | Function     | Description                                                   |
 |----------    |-----------------------------------------------------------    |
@@ -322,7 +174,7 @@ Notes:
 
 ---
 
-## Kafka Streaming: ForEach
+## Kafka Streams: ForEach
 
 ```java
 final StreamBuilder builder = new StreamBuilder();
@@ -365,7 +217,7 @@ Notes:
 
 ---
 
-## Kafka Streaming: Filter
+## Kafka Streams: Filter
 
 <img src="../../assets/images/kafka/Filter-01.png" style="width:70%;"/><!-- {"left" : 1.83, "top" : 1.28, "height" : 1.18, "width" : 6.59} -->
 
@@ -377,15 +229,27 @@ Notes:
 
 ---
 
-## Kafka Streaming  : Filter
+## Kafka Streams  : Filter
 
 ```java
 final StreamBuilder builder = new StreamBuilder();
 final KStream < String, String > clickstream = builder.stream("topic1");
 
-// filter clicks only
-final KStream < String, String > actionClickedStream =
 
+// filter clicks only
+final KStream<String, String> actionClickedStream = clickstream.filter((key, value) -> {
+            try {
+                ClickstreamData clickstreamData = gson.fromJson(value, ClickstreamData.class);
+                return ((clickstreamData.action != null) && (clickstreamData.action.equals("clicked")));
+
+            } catch (Exception e) {
+                return false;
+            }
+
+        });
+
+// another quick filter
+final KStream < String, String > actionClickedStream =
     clickstream.
     filter((k, v) -> v.contains("action:clicked"));
 
@@ -419,7 +283,7 @@ Notes:
 
 ---
 
-## Kafka Streaming: Map
+## Kafka Streams: Map
 
 * Map  **transforms**  a stream into another stream
 
@@ -435,24 +299,36 @@ Notes:
 
 ---
 
-## Kafka Streaming: Map
+## Kafka Streams: Map
 
 ```java
 final StreamsBuilder builder = new StreamsBuilder();
 final KStream < String, String > clickstream = builder.stream("topic1");
 
 // map transform (String, String) to  (String, Integer)
-final KStream < String, Integer > actionStream = clickstream.map( {
+final Gson gson = new Gson();
 
-   public KeyValue < String, Integer > apply(String key, String value) {
+// k1 = domain,   v1 = {json}
+// k2 = action    v2 = 1
+final KStream<String, Integer> actionStream = clickstream.map (
+    new KeyValueMapper<String, String, KeyValue<String, Integer>>() {
 
-      logger.debug("map() : got : " + value);
-      String new_key = key.toUpperCase();
-      int new_value = 1;
-      KeyValue < String, Integer > newKV =new KeyValue<>(new_key, new_value);
-      logger.debug("map() : returning : " + newKV);
-      return newKV;
-  }
+        public KeyValue<String, Integer> apply(String key, String value) {
+            try {
+                ClickstreamData clickstreamData = gson.fromJson(value, ClickstreamData.class);
+
+                String action = clickstreamData.action;
+
+                KeyValue<String, Integer> actionKV = new KeyValue<>(action, 1);
+
+                return actionKV;
+            } catch (Exception ex) {
+                logger.error("", ex);
+                return new KeyValue<String, Integer>("unknown", 1);
+            }
+        }
+    });
+
 }
 );
 actionStream.print(Printed.toSysOut());
@@ -483,7 +359,7 @@ Notes:
 
 ---
 
-## Kafka Streaming: GroupBy
+## Kafka Streams: GroupBy
 
 * GroupBy will aggregate KStream by key
 
@@ -517,6 +393,28 @@ Notes:
 
 ---
 
+## Kafka Streams: Join Example
+
+* [Source](https://developer.confluent.io/learn-kafka/kafka-streams/joins/)
+
+```java
+KStream<String, String> leftStream = builder.stream("topic-A");
+KStream<String, String> rightStream = builder.stream("topic-B");
+
+ValueJoiner<String, String, String> valueJoiner = (leftValue, rightValue) -> {
+    return leftValue + rightValue;
+};
+leftStream.join(rightStream, 
+                valueJoiner, 
+                JoinWindows.of(Duration.ofSeconds(10)));
+```
+
+---
+
+# KTable
+
+---
+
 ## KStreams vs. KTables
 
 * **Kstream**
@@ -527,14 +425,7 @@ Notes:
 
    - Messages with same key are treated as updates of previous message.
 
-Notes:
-
----
-
-## Kstream and KTable
-
 ```java
-
 //-------- KStream example ------
 
 // reading from Kafka
@@ -547,7 +438,6 @@ KStream < byte[], String > upperCaseLines = textLines.mapValues(String::toUpperC
 <!-- {"left" : 0, "top" : 1.74, "height" : 1.83, "width" : 10.25} -->
 
 ```java
-
 // ------ KTable Example ----
 
 KTable < String, Long > wordCounts = textLines.flatMapValues(
@@ -557,6 +447,8 @@ KTable < String, Long > wordCounts = textLines.flatMapValues(
 
 ```
 <!-- {"left" : 0, "top" : 4.39, "height" : 1.61, "width" : 10.25} -->
+
+Notes:
 
 ---
 
@@ -589,6 +481,7 @@ final KStream < String, Integer > actionStream = clickstream.map( ... )
 final KTable < String, Long > actionCount = actionStream
    .groupByKey(Serialized.with(Serdes.String(), Serdes.Integer()))
    .count ();
+
 actionCount.toStream().print(Printed.toSysOut());
 ```
 <!-- {"left" : 0, "top" : 1.27, "height" : 3.49, "width" : 10.25} -->
@@ -781,6 +674,104 @@ Add the class as a configuration to ROCKSDB_CONFIG_SETTER_CLASS_CONFIG
 
 ---
 
+## Processor Topology
+
+<img src="../../assets/images/kafka/streams-architecture-topology.png" alt="streams-architecture-topology.png" style="width:30%; float:right;"/><!-- {"left" : 6.82, "top" : 1.65, "height" : 4.23, "width" : 2.98} -->
+
+* Defines the logic for the application
+
+* Topology is a graph
+
+    - Nodes: Stream processors
+
+    - Edges: Streams
+
+* **Source processor**
+
+    - Has no upstream processors. *Reads* topic
+
+* **Sink processor**
+
+    - Has no downstream processor. *Writes* topic
+
+Notes:
+
+---
+
+## State Store
+
+<img src="../../assets/images/kafka/State-Store.png" alt="State-Store.png" style="width:30%;float:right;"/><!-- {"left" : 6.81, "top" : 3.03, "height" : 3.58, "width" : 3.17} -->
+
+* Stateful operations like (Aggregations / Joins) require intermediate state storage
+
+* Kafka Streams provides this storage at per node level
+
+* Storage mediums
+    - In memory cache
+    - RocksDB (a very fast embedded DB, developed by Facebook)  
+     Stored on disk on each node
+
+* Tasks uses it to store and query data
+
+* Every task can have one or more state stores
+
+* Fault tolerant
+
+* Automatic recovery
+
+Notes:
+
+---
+
+## Replication and Fault Tolerance
+
+* Kafka Partitions are replicated and highly available
+
+* If Streams task fails
+
+    - Kafka will restart it on another running instance of the application
+
+* Stream data persisted to Kafka is still available in case application fails and wants to re-process it
+
+* Local state stores are replicated as a topic called  **changelog**
+
+    - **Changelog** has log compaction enabled
+
+Notes:
+
+---
+
+## Overall Architecture
+
+<img src="../../assets/images/kafka/Overall-Architecture.png" alt="Overall-Architecture.png" style="width:50%;"/><!-- {"left" : 1.85, "top" : 1.64, "height" : 6.36, "width" : 6.55} -->
+
+Notes:
+
+- Here we see a Streams application,
+- It is consuming messages from input Q
+- And producing messages to another output Q
+
+---
+
+## Writing a Streams Application
+
+
+* Use Kafka Streams DSL
+
+    - High level API
+
+    - Provides most common required functions for transformation, grouping, aggregation
+
+* Use Processor API
+
+    - Low-level API
+
+    - Create, connect processors in topology and interact with State Stores directly
+
+Notes:
+
+---
+
 ## Why Streaming from Database (CDC)?
 
 * Integrations with Legacy Applications‫
@@ -795,3 +786,5 @@ Add the class as a configuration to ROCKSDB_CONFIG_SETTER_CLASS_CONFIG
 * ‫Totally ordered collection of events to asynchronously update the read-only views while writes can be recorded as normal
 
 Notes:
+
+---
