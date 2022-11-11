@@ -2,7 +2,7 @@
 
 © Elephant Scale
 
-November 7, 2022
+November 11, 2022
 
 ## Overview
 
@@ -31,11 +31,17 @@ November 7, 2022
 ## Audience: 
 * Electronics Arts Data Analysts
 
+### Introducing the presenter
+*  Who is the presenter and why you should trust him
+
 ### Aspects/Drivers
 
 * Business Understanding
+  * Before you rush to use a visualisation tool, pause and decide what you want to say
 * Buy in & Persuasion
+  * Who is your audience, and what do you want to tell them?
 * Data Storytelling
+  * People are not born storytellers, but you can become one 
 
 ### Psychology/Expressive
 
@@ -43,9 +49,6 @@ November 7, 2022
 * Merrill and Reid Social Styles-Awareness drive
 * Bridging the gap between Humans and Data-Visualization way
 * Cognitive behaviour analysis
-
-### Additional background from the experts
-  * Some Do's and Dont's of presenting data
 
 
 ### Additional background from the psychology perspective
@@ -64,7 +67,7 @@ November 7, 2022
 * Pictures vs Numbers
   * What to do when pictures are too large and too slow
 * Big Data? Big Deal!
-  * Overview of Big Data tools with examples, exercises, and QA
+  * Overview of Big Data tools with examples and exercises
 * init(),service(),destroy()
   * [MK] Need more details on this
 
@@ -88,6 +91,11 @@ November 7, 2022
 * The brain has to consolidate all of the new information into a “clump” or structure to put it into long term memory and to free up short term memory for new information.
 * Since this mechanism is not employed when processing a story, the insertion of stories into a class gives students a chance to consolidate what they have been taught, as well as providing a context for consolidation. The story becomes an exemplar of the presented material, sort of like a mental index entry.
 * The most effective mechanism for learning is to do something that requires the application of material. In some cases this is not possible, but following a narrative has a similar effect.
+
+### Tips and tricks
+
+* Some Do's and Dont's of presenting data
+* How to ask for and give feedback
 
 ### Sources
 * [Data Storytelling with Google Looker Studio](https://learning.oreilly.com/library/view/data-storytelling-with/9781800568761/)
