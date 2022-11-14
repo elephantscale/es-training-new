@@ -22,7 +22,7 @@ November 11, 2022
 
   * Leverage the power of storytelling to help your message resonate with your audience
   
-* It is assumed that the participants already know and use tools such as Tableau, Power BI, and Looker.  We will not teach the technical aspect of using those visualization tools but concentrate on the art. 
+* It is assumed that the participants already know and use tools such as Tableau, Power BI, and Looker.  We will not teach the technical aspects of using those visualization tools but concentrate on the art. 
 
 ## Duration: 
 
@@ -37,7 +37,7 @@ November 11, 2022
 ### Aspects/Drivers
 
 * Business Understanding
-  * Before you rush to use a visualisation tool, pause and decide what you want to say
+  * Before you rush to use a visualization tool, pause and decide what you want to say
 * Buy in & Persuasion
   * Who is your audience, and what do you want to tell them?
 * Data Storytelling

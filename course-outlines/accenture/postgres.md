@@ -2,9 +2,9 @@
 
 ## Overview
 
-PostgresSQL is an very popular open-source RBMS server that has found grown in popularity.
+PostgresSQL is an very popular open-source RDBMS server that has grown in popularity.
 As an open source tool, Postgres is accessible to all but there is still a need for 
-developers and admins to be trained on the specifics of the Postgres plaform
+developers and admins to be trained on the specifics of the Postgres platform.
 
 This course is an admin level course for learning how to run and administer PostgresSQl.  
 
