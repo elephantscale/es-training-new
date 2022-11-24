@@ -34,6 +34,7 @@ November 23, 2022
 * Characteristics of application security
 * Event-driven applications
 * Data pipelines
+
 ### Stream processing fundamentals
 * Dataflow programming
 * Dataflow graphs
@@ -41,6 +42,7 @@ November 23, 2022
 * Datastream operations
 * Time: processing time, event time
 * States and consistency
+
 ### Flink architecture
 * Flink components
 * Application deployment, high availability
@@ -48,14 +50,17 @@ November 23, 2022
 * Credit-based flow
 * Event-time processing, timestamps, watermarks, etc.
 * Checkpoints, consistency, recovery, performance
+
 ### Developing with Apache Flink
 
 * Setup
 * IDE: running, debugging
+
 ### DataStream API (v.1.16)
 * InputStream read, transform, output
 * Transformations: KeyedStream, Multistream, Distribution transformation
 * Implementing functions
+
 ### Operations: Time-Based and Windows
 * Dealing with Time Characteristics
 * Process Functions: Timer, CoProcessors
@@ -65,26 +70,35 @@ November 23, 2022
 * Customizing
 * Joins
 * Dealing with late data
+
 ### Stateful Operators
 * Implementing stateful functions
 * Failure recovery
 * Performance
 * Dealing with state
 * Querying state
+
 ### Reading and writing
 * Idempotent writes, transactional writes
 * Connectors: Kafka, Cassandra, custom
+
 ### Setup
 * Setup modes: standalone, Docker, YARN, Kubernetes
 * High availability
 * Integrations
+
 ### Flink operations
 * Savepoints
 * Scheduling
 * Tuning
+
 ### What the future holds
 
 * FlinkCEP
 * Graphs with Gelly
 * FlinkML
 
+### Ververica - is it for you?
+* Ververica is the company founded by the original creators of Apache Flink. 
+* Ververica Platform Community Edition is a complete, free of charge and free for commercial use  stream processing platform that brings Ververica’s industry expertise and stream processing best practice under an integrated data streaming architecture. 
+* Ververica lab
