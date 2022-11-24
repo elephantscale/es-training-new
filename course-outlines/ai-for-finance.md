@@ -55,7 +55,7 @@ September 2, 2022
 
 ### Understanding Text
 
-* Simple methods: NLTK, TextBlos
+* Simple methods: NLTK, TextBlob
 * TF-IDF
 * More text analysis with Spacy
 * Text analysis revolution of 2018
