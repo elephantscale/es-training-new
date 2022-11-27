@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-644 435 1993 1857" width="1993" height="1857">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBall_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 4 4" markerWidth="4" markerHeight="4" color="#2e006e">
+      <g>
+        <circle cx=".8999996" cy="0" r="0.899999204604996" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBall_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-3 -2 4 4" markerWidth="4" markerHeight="4" color="#2e006e">
+      <g>
+        <circle cx="-.8999996" cy="0" r="0.899999204604996" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-11-13 08:45:07 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-644" y="435" width="1993" height="1857"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 898.207 1660.8925 L 215.60527 533.47716 C 213.88902 530.6425 210.1998 529.7359 207.36517 531.45215 C 206.5366 531.9538 205.84181 532.6486 205.34015 533.47716 L -477.2616 1660.8925 C -478.97783 1663.727 -478.0712 1667.4163 -475.23657 1669.1326 C -474.29935 1669.7 -473.22464 1670 -472.129 1670 L 893.0745 1670 C 896.3882 1670 899.0745 1667.3137 899.0745 1664 C 899.0745 1662.9044 898.7745 1661.8297 898.207 1660.8925 Z" fill="#ebdea6"/>
+        <path d="M 898.207 1660.8925 L 215.60527 533.47716 C 213.88902 530.6425 210.1998 529.7359 207.36517 531.45215 C 206.5366 531.9538 205.84181 532.6486 205.34015 533.47716 L -477.2616 1660.8925 C -478.97783 1663.727 -478.0712 1667.4163 -475.23657 1669.1326 C -474.29935 1669.7 -473.22464 1670 -472.129 1670 L 893.0745 1670 C 896.3882 1670 899.0745 1667.3137 899.0745 1664 C 899.0745 1662.9044 898.7745 1661.8297 898.207 1660.8925 Z" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 979.7168 898.0644 C 979.7168 843.0631 876.2368 798.5841 748.3525 798.5841 C 620.4682 798.5841 516.9882 843.0631 516.9882 898.0644 C 516.9882 944.9358 592.90346 984.3925 694.80555 994.6748 C 686.44405 1012.3719 672.664 1033.1764 650.9713 1043.4587 C 692.76955 1043.4587 734.119 1019.0667 762.3593 997.3047 C 883.6914 994.1973 979.7168 950.9132 979.7168 898.0644 Z" fill="#aa97fe"/>
+        <path d="M 979.7168 898.0644 C 979.7168 843.0631 876.2368 798.5841 748.3525 798.5841 C 620.4682 798.5841 516.9882 843.0631 516.9882 898.0644 C 516.9882 944.9358 592.90346 984.3925 694.80555 994.6748 C 686.44405 1012.3719 672.664 1033.1764 650.9713 1043.4587 C 692.76955 1043.4587 734.119 1019.0667 762.3593 997.3047 C 883.6914 994.1973 979.7168 950.9132 979.7168 898.0644 Z" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 1347.8732 1502.6514 C 1347.8732 1447.6501 1244.3932 1403.1711 1116.5088 1403.1711 C 988.6245 1403.1711 885.1445 1447.6501 885.1445 1502.6514 C 885.1445 1549.5229 961.0598 1588.9795 1062.9619 1599.2618 C 1054.6004 1616.9589 1040.8203 1637.7634 1019.1276 1648.0457 C 1060.9259 1648.0457 1102.2753 1623.6538 1130.5156 1601.8918 C 1251.8477 1598.7843 1347.8732 1555.5003 1347.8732 1502.6514 Z" fill="#a4f8fd"/>
+        <path d="M 1347.8732 1502.6514 C 1347.8732 1447.6501 1244.3932 1403.1711 1116.5088 1403.1711 C 988.6245 1403.1711 885.1445 1447.6501 885.1445 1502.6514 C 885.1445 1549.5229 961.0598 1588.9795 1062.9619 1599.2618 C 1054.6004 1616.9589 1040.8203 1637.7634 1019.1276 1648.0457 C 1060.9259 1648.0457 1102.2753 1623.6538 1130.5156 1601.8918 C 1251.8477 1598.7843 1347.8732 1555.5003 1347.8732 1502.6514 Z" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_7">
+        <line x1="-451.031" y1="1381.9963" x2="871.9765" y2="1381.9963" marker-end="url(#FilledBall_Marker)" marker-start="url(#FilledBall_Marker_2)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(22.665097 440.8889)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">Data storage</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(636.75094 825.6667)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="41.99219" y="40">Human </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="5.595703" y="89">Generated </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="65.19531" y="138">Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(1004.9073 1430.2222)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="25.996094" y="40">Machine </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="5.595703" y="89">Generated </tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="65.19531" y="138">Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(100.46295 825.6667)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="43.623047" y="40">Emails,</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">Documents</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(69.27154 1180)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Photos, Videos</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(-105.90424 1501.1084)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Web logs, click logs, sensor data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(-638.1469 1535.9925)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Clusters</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <rect x="-477.4289" y="1697" width="1375.8032" height="595" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image2.tiff" width="1281" height="554" transform="translate(-477.4289 1697) scale(1.0740072)"/>
+        </g>
+      </g>
+      <g id="Graphic_16"/>
+      <g id="Graphic_17">
+        <text transform="translate(-462.4516 1712.7742)" fill="#20004e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#20004e" x="0" y="40">Yahoo Hadoop cluster</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="-513.6774" y="503.6774" width="436.9231" height="426" id="path_2"/>
+        <clipPath id="clip_path_2">
+          <use xl:href="#path_2"/>
+        </clipPath>
+        <g clip-path="url(#clip_path_2)">
+          <image xl:href="image4.tiff" width="400" height="390" transform="translate(-513.6774 503.6774) scale(1.0923077)"/>
+        </g>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(-499 935)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Filers (netapp … etc)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-87 334 1695 1242" width="1695" height="1242">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-11-22 14:54:08 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_15">
+        <path d="M 1391.4412 517.3014 C 1677.2695 759.0357 1677.2695 1150.9643 1391.4412 1392.6986 C 1105.6143 1634.4342 642.1978 1634.4342 356.3709 1392.6986 C 70.54255 1150.9643 70.54255 759.0357 356.3709 517.3014 C 642.1978 275.5658 1105.6143 275.5658 1391.4412 517.3014" fill="#ebdea6"/>
+        <path d="M 1391.4412 517.3014 C 1677.2695 759.0357 1677.2695 1150.9643 1391.4412 1392.6986 C 1105.6143 1634.4342 642.1978 1634.4342 356.3709 1392.6986 C 70.54255 1150.9643 70.54255 759.0357 356.3709 517.3014 C 642.1978 275.5658 1105.6143 275.5658 1391.4412 517.3014" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 1195.3883 703.6815 C 1365.6481 842.4809 1365.6481 1067.5191 1195.3883 1206.3185 C 1025.1294 1345.1187 749.0854 1345.1187 578.82644 1206.3185 C 408.56664 1067.5191 408.56664 842.4809 578.82644 703.6815 C 749.0854 564.8813 1025.1294 564.8813 1195.3883 703.6815" fill="#e3a92e"/>
+        <path d="M 1195.3883 703.6815 C 1365.6481 842.4809 1365.6481 1067.5191 1195.3883 1206.3185 C 1025.1294 1345.1187 749.0854 1345.1187 578.82644 1206.3185 C 408.56664 1067.5191 408.56664 842.4809 578.82644 703.6815 C 749.0854 564.8813 1025.1294 564.8813 1195.3883 703.6815" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 578.455 609.7468 C 730.2333 731.0196 730.2333 927.6415 578.455 1048.9142 C 426.6775 1170.1876 180.59766 1170.1876 28.82012 1048.9142 C -122.9582 927.6415 -122.9582 731.0196 28.82012 609.7468 C 180.59766 488.47344 426.6775 488.47344 578.455 609.7468" fill="#a4f8fd" fill-opacity=".482453"/>
+        <path d="M 578.455 609.7468 C 730.2333 731.0196 730.2333 927.6415 578.455 1048.9142 C 426.6775 1170.1876 180.59766 1170.1876 28.82012 1048.9142 C -122.9582 927.6415 -122.9582 731.0196 28.82012 609.7468 C 180.59766 488.47344 426.6775 488.47344 578.455 609.7468" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 548.4639 963.7715 C 664.8702 1048.5408 664.8702 1185.9788 548.4639 1270.7481 C 432.0583 1355.5178 243.3276 1355.5178 126.92198 1270.7481 C 10.515742 1185.9788 10.515742 1048.5408 126.92198 963.7715 C 243.3276 879.0018 432.0583 879.0018 548.4639 963.7715" fill="#aa97fe" fill-opacity=".49331807"/>
+        <path d="M 548.4639 963.7715 C 664.8702 1048.5408 664.8702 1185.9788 548.4639 1270.7481 C 432.0583 1355.5178 243.3276 1355.5178 126.92198 1270.7481 C 10.515742 1185.9788 10.515742 1048.5408 126.92198 963.7715 C 243.3276 879.0018 432.0583 879.0018 548.4639 963.7715" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(99 624)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="16.40625" y="40">Digital</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">Content</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(209 762)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Information</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(746.1162 437.0435)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Digital Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(785.1054 924.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Big Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(508.7619 852.7918)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Qualitative</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(193.6278 977)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="2.8125" y="40">Actionable</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">Knowledge</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(279 1185)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Knowledge</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(752.3754 1221.6392)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Quantitative</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(1151.422 1018.7093)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Structured data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(1138.8399 1118.2598)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Unstructured data</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
