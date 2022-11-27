@@ -4,12 +4,12 @@
 
 ## Agenda - Storytelling with Data
 
-| Morning                       | Afternoon                      |
-|-------------------------------|--------------------------------|
-| Introduction to Deep Learning | Fine tuning a pretrained model |
-| Computer Vision CNN           | Sharing models and tokenizers  |
-| Recurrent Neural Networks RNN | Main NLP Tasks                 |
-| Transformers                  | Asking for Help                |
+| Morning               | Afternoon          |
+|-----------------------|--------------------|
+| Aspect/Drivers        | Amiable/Philosophy |
+| Psychology/Expressive | Tips and tricks    |
+| Technical/Analytical  |                    |
+
 
 
  <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
