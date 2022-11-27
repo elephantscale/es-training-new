@@ -1,10 +1,10 @@
-# Deep Learning & Advanced Applications
+# Storytelling with Data
 
 ---
 
-## Agenda - Deep Learning & Advanced Applications
+## Agenda - Storytelling with Data
 
-| Day 1                         | Day 2                          |
+| Morning                       | Afternoon                      |
 |-------------------------------|--------------------------------|
 | Introduction to Deep Learning | Fine tuning a pretrained model |
 | Computer Vision CNN           | Sharing models and tokenizers  |
@@ -18,21 +18,6 @@ Notes:
 
 ---
 
-## Agenda - 2 days of HuggingFace
-
-| Day 1                        | Day 2                  |
-|------------------------------|------------------------|
-| Introduction to Transformers | The Datasets Library   |
-| Transformer Pipelines        | The Tokenizers Library |
-| Fine-Tuning                  | Main NLP Tasks         |
-| Sharing Models               | Asking for Help        |
-
-
- <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
-
-Notes:
-
----
 ## Pre-requisites and Expectations
 
 
