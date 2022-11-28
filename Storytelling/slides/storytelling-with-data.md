@@ -10,9 +10,67 @@
 
 ---
 
+## The Merrill-Reid Personality Types
+
+![](../images/08.png)
+
+---
+
+## Phlegmatic personality
+
+![](../images/09.png)
+
+[Phlegmatic dance](https://www.youtube.com/watch?v=lfBAuacklfA)
+
+---
+
+## Choleric personality
+
+![](../images/10.png)
+
+[Choleric dance](https://www.youtube.com/watch?v=nMjotRBK6-Q}
+
+---
+
+
+## Sanguine personality
+
+![](../images/11.png)
+
+[Sanguine dance](https://www.youtube.com/watch?v=nMjotRBK6-Q})
+
+---
+
+
+
+## Melancholic personality
+
+![](../images/12.png)
+
+[Melancholic dance](https://www.youtube.com/watch?v=G1yEyHqc2eU})
+
+---
+
 # Technical/Analytical
 
 ---
+
+## (Big) data analysis tools
+
+![](../images/07.png)
+
+---
+
+## Big Data Tools
+
+* [Exploring Data with Looker](https://www.cloudskillsboost.google/quests/165)
+* [Understanding LookML in Looker](https://www.cloudskillsboost.google/quests/170)
+* [Insights from Data with BigQuery](https://www.cloudskillsboost.google/quests/123)
+* [Power BI](https://powerbi.microsoft.com/en-us/)
+* [Tableau](https://www.tableau.com/)
+
+---
+
 
 # Amiable/Philosophy
 
