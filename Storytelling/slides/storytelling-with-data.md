@@ -22,13 +22,17 @@
 
 [Phlegmatic dance](https://www.youtube.com/watch?v=lfBAuacklfA)
 
+https://www.youtube.com/watch?v=lfBAuacklfA
+
 ---
 
 ## Choleric personality
 
 ![](../images/10.png)
 
-[Choleric dance](https://www.youtube.com/watch?v=nMjotRBK6-Q}
+[Choleric dance](https://www.youtube.com/watch?v=nMjotRBK6-Q})
+
+https://www.youtube.com/watch?v=nMjotRBK6-Q
 
 ---
 
@@ -39,6 +43,8 @@
 
 [Sanguine dance](https://www.youtube.com/watch?v=nMjotRBK6-Q})
 
+https://www.youtube.com/watch?v=nMjotRBK6-Q}
+
 ---
 
 
@@ -48,6 +54,8 @@
 ![](../images/12.png)
 
 [Melancholic dance](https://www.youtube.com/watch?v=G1yEyHqc2eU})
+
+https://www.youtube.com/watch?v=G1yEyHqc2eU}
 
 ---
 
