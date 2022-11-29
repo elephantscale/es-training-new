@@ -246,3 +246,41 @@ Notes:
 
 ---
 
+## Rehearse
+
+![](../images/20.png)
+
+---
+
+
+## What you don't see
+
+Notes:
+
+* Months of expert planning
+* And coaching
+* At first: shaky hands, wavering voice, many filler words
+
+---
+
+## Dirty secret of training
+
+![](../images/21.png)
+
+Notes:
+
+* The first delivery of a class is never perfect
+* Neither is the second
+
+---
+
+## Make a powerful closing statement
+
+--- 
+
+## Make a powerful closing statement
+
+![](../images/22.png)
+
+---
+
