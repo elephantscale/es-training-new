@@ -46,9 +46,7 @@
 
 ## Your audience
 
-* Who do I think you are?
-
-Notes:
+* Who do I think **you** are?
 
 * Avoid the generic qualifiers
 * Exclude outliers
@@ -59,6 +57,8 @@ Notes:
 ## Who am I?
 
 * What puts you in the center?
+* Ask for feedback
+
 ![](../images/14.png)
 
 Notes:
@@ -98,6 +98,32 @@ Notes:
 * What was the big idea?
 
 ---
+
+## Storyboarding
+
+![](../images/26.png)
+
+Notes:
+
+* Advice:
+  * Don't start with presentation software
+
+--- 
+
+## Choosing an effective visualization 
+* TODO - advice from chapter 2
+
+--- 
+
+## Clutter is your enemy
+* TODO - advice from chapter 3
+
+---
+## Focusing your audience's attention
+* TODO - advice from chapter 4
+
+---
+
 
 ## Unsolicited feedback
 
@@ -187,6 +213,21 @@ https://www.youtube.com/watch?v=G1yEyHqc2eU}
 
 ---
 
+## Technical/Analytical
+
+* Data Science, Many Skills
+* Follow the Data
+  * Where to store it, how to process?
+* Rows and Columns, Variables, Attributes
+* Pictures vs Numbers
+  * What to do when pictures are too large and too slow
+* Big Data? Big Deal!
+  * Overview of Big Data tools with examples and exercises
+* init(),service(),destroy()
+  * Like a servlet
+
+---
+
 ## When to use images?
 
 ![](../images/17.png)
@@ -260,6 +301,20 @@ Notes:
 
 ---
 
+
+## Why do we tell stories?
+
+Notes:
+
+* There are several universal discourse modes: narrative, exposition, reporting… etc. We tend to shift between modes in a discourse in order to communicate effectively, often in response to our listener not understanding what we are communicating.
+* Narrative is the first mode learned by all people since it is actually tied to processing in the visual system. It is also the mode we tend to revert to in order to clarify or consolidate data.
+* From a cognitive perspective, short term memory can only absorb so much information. In a class, students reach a threshold of retention after which no new information is learned.
+* The brain has to consolidate all of the new information into a “clump” or structure to put it into long term memory and to free up short term memory for new information.
+* Since this mechanism is not employed when processing a story, the insertion of stories into a class gives students a chance to consolidate what they have been taught, as well as providing a context for consolidation. The story becomes an exemplar of the presented material, sort of like a mental index entry.
+* The most effective mechanism for learning is to do something that requires the application of material. In some cases this is not possible, but following a narrative has a similar effect.
+
+---
+
 ## Storyteller should be specific
 
 Notes:
@@ -268,8 +323,8 @@ Notes:
 * Avoid "typical", like she is a typical soccer mom
 * Say, divorce in the Bayou, in Manhattan, or infidelity on potato farm
 
----
 
+---
 
 ## Learn to cut
 
