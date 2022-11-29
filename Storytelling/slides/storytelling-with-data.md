@@ -218,6 +218,21 @@ Notes:
 
 ---
 
+## How to tell a story
+
+![](../images/23.png)
+
+Notes:
+
+* A multipede parable
+* Relying on intuition
+* Getting confused
+* Learning the art of storytelling
+
+---
+
+
+
 ## Major storytelling principle
 
 ![](../images/04-show-do-not-tell.jpg)

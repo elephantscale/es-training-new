@@ -1,8 +1,8 @@
-# Apache Flink, Introduction and Advanced
+# Apache Flink
 
 © Elephant Scale
 
-November 23, 2022
+November 29, 2022
 
 * Flink is one of the best-of-breed stream-processing frameworks, concentrating on just stream processing and doing it extremely well.
 
@@ -16,6 +16,9 @@ November 23, 2022
 
 * Duration: 2 days
 * Audience: Software Architects, Developers
+
+## Skill level
+Introductory to Intermediate
 
 ## Prerequisites:
 * Familiarity with any programming language 
