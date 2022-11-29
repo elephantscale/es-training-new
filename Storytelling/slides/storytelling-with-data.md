@@ -86,7 +86,7 @@ Notes
 * 3-minute story
 * Big Idea
 
-Notes
+Notes:
 
 * What was our 3-minute story?
 * What was the big idea?
