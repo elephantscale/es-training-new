@@ -6,15 +6,78 @@
 
 ---
 
+## Jeff Bezos's Email
+
+![Jeff Bezos's Email](../images/13.png)
+
+---
+
+## Make your presentation 
+
+* Exercise: we think through the presentation, then practice it in breakout rooms. 
+* What is the presentation? - Talk about yourself
+
+---
+
+## My story
+
+* How I started
+* Let's look at one example
+
+---
+
+## Unfaithful wife
+
+* https://mkerzner.blogspot.com/2015/11/sotah-15-sacrifice-of-jealousy.html
+
+---
+
+## Now - you
+
+* Did you ever hold your audience's attention?
+
+---
+
+## Your presentation
+
+* Shelling oysters or giving the pearls
+
+---
+
+## Your audience
+
+* Who do I think you are?
+
+Notes:
+
+* Avoid the generic qualifiers
+* Exclude outliers
+* Of course, know about your audience
+
+---
+
+## Who am I?
+
+* What puts you in the center?
+![](../images/14.png)
+
+Notes:
+
+* You are the presenter
+* You studied the subject
+* So recommend - even incorrectly 
+
+---
+
+
+
+
+
 # Psychology/Expressive
 
 ---
 
-## The Merrill-Reid Personality Types
 
-![](../images/08.png)
-
----
 
 ## Phlegmatic personality
 
@@ -30,10 +93,9 @@ https://www.youtube.com/watch?v=lfBAuacklfA
 
 ![](../images/10.png)
 
-[Choleric dance](https://www.youtube.com/watch?v=lfBAuacklfA)
-https://www.youtube.com/watch?v=lfBAuacklfA
+[Choleric dance](https://www.youtube.com/watch?v=nMjotRBK6-Q})
 
-6:04
+https://www.youtube.com/watch?v=nMjotRBK6-Q
 
 ---
 
@@ -42,21 +104,25 @@ https://www.youtube.com/watch?v=lfBAuacklfA
 
 ![](../images/11.png)
 
-[Sanguine dance](https://www.youtube.com/watch?v=nMjotRBK6-Q)
+[Sanguine dance](https://www.youtube.com/watch?v=nMjotRBK6-Q})
 
-https://www.youtube.com/watch?v=nMjotRBK6-Q
+https://www.youtube.com/watch?v=nMjotRBK6-Q}
 
 ---
-
-
 
 ## Melancholic personality
 
 ![](../images/12.png)
 
-[Melancholic dance](https://www.youtube.com/watch?v=G1yEyHqc2eU)
+[Melancholic dance](https://www.youtube.com/watch?v=G1yEyHqc2eU})
 
-https://www.youtube.com/watch?v=G1yEyHqc2eU
+https://www.youtube.com/watch?v=G1yEyHqc2eU}
+
+---
+
+## The Merrill-Reid Personality Types
+
+![](../images/08.png)
 
 ---
 
