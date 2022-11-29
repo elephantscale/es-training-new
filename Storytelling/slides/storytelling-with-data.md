@@ -80,6 +80,13 @@ Notes:
 
 ---
 
+## Teleprompter slides
+
+![](../images/24.png)
+
+---
+
+
 ## Finally, bring in your data as evidence
 
 * 3-minute story
@@ -91,6 +98,20 @@ Notes:
 * What was the big idea?
 
 ---
+
+## Unsolicited feedback
+
+![](../images/25.png)
+
+Notes:
+
+* Are you open to receiving feedback?
+* Ask your colleague for feedback instead. - But actually listen to it
+* If you are a boss and should give feedback, do it in private
+* What if it is commonplace? - Still better wait to be asked for it
+
+---
+
 
 
 # Psychology/Expressive
@@ -238,6 +259,17 @@ Notes:
 ![](../images/04-show-do-not-tell.jpg)
 
 ---
+
+## Storyteller should be specific
+
+Notes:
+
+* Anecdotal evidence works the best
+* Avoid "typical", like she is a typical soccer mom
+* Say, divorce in the Bayou, in Manhattan, or infidelity on potato farm
+
+---
+
 
 ## Learn to cut
 
