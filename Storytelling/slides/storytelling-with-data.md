@@ -48,7 +48,7 @@
 
 * Who do I think you are?
 
-Notes:
+Notes
 
 * Avoid the generic qualifiers
 * Exclude outliers
@@ -69,8 +69,29 @@ Notes:
 
 ---
 
+## Slideument
 
+![](../images/16.png)
 
+Notes
+
+* A bit more advice which here
+* What I am going to do next: psychology, technical, storytelling
+* Do not use slides as a teleprompter
+
+---
+
+## Finally, bring in your data as evidence
+
+* 3-minute story
+* Big Idea
+
+Notes
+
+* What was our 3-minute story?
+* What was the big idea?
+
+---
 
 
 # Psychology/Expressive
@@ -104,9 +125,9 @@ https://www.youtube.com/watch?v=nMjotRBK6-Q
 
 ![](../images/11.png)
 
-[Sanguine dance](https://www.youtube.com/watch?v=nMjotRBK6-Q})
+[Sanguine dance](https://www.youtube.com/watch?v=nMjotRBK6-Q)
 
-https://www.youtube.com/watch?v=nMjotRBK6-Q}
+https://www.youtube.com/watch?v=nMjotRBK6-Q
 
 ---
 
