@@ -48,7 +48,7 @@
 
 * Who do I think you are?
 
-Notes
+Notes:
 
 * Avoid the generic qualifiers
 * Exclude outliers
@@ -73,9 +73,8 @@ Notes:
 
 ![](../images/16.png)
 
-Notes
+Notes:
 
-* A bit more advice which here
 * What I am going to do next: psychology, technical, storytelling
 * Do not use slides as a teleprompter
 
@@ -167,6 +166,28 @@ https://www.youtube.com/watch?v=G1yEyHqc2eU}
 
 ---
 
+## When to use images?
+
+![](../images/17.png)
+
+Notes:
+
+* Leverage how people see
+
+---
+
+## Where are the eyes drawn?
+
+![](../images/18.png)
+
+---
+
+## Focus the attention
+
+![](../images/19.png)
+
+---
+
 
 # Amiable/Philosophy
 
@@ -207,7 +228,7 @@ https://www.youtube.com/watch?v=G1yEyHqc2eU}
 
 ![](../images/15.png)
 
-Notes
+Notes:
 
 * Demo Trello
 
