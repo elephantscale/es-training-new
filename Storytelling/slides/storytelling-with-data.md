@@ -184,6 +184,15 @@ https://www.youtube.com/watch?v=G1yEyHqc2eU}
 
 ## Learn to cut
 
+![](../images/15.png)
+
+Notes
+
+* Demo Trello
+
+---
+
+
 ## Nabokov wrote on card
 
 ![](../images/05.png)
