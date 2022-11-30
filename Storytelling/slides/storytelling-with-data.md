@@ -108,12 +108,7 @@ Notes:
 * Advice:
   * Don't start with presentation software
 
---- 
-
-## Choosing an effective visualization 
-* TODO - advice from chapter 2
-
---- 
+---
 
 ## Clutter is your enemy
 * Imagine a blank page - that would be heaven!
@@ -241,13 +236,6 @@ Notes:
 * Say "Death to pie charts"
 * Then pause for 15 seconds
 
---- 
-
-
-## Focusing your audience's attention
-
-* TODO - advice from chapter 4
-
 ---
 
 
@@ -269,8 +257,6 @@ Notes:
 # Psychology/Expressive
 
 ---
-
-
 
 ## Phlegmatic personality
 
