@@ -116,10 +116,136 @@ Notes:
 --- 
 
 ## Clutter is your enemy
-* TODO - advice from chapter 3
+* Imagine a blank page - that would be heaven!
+* Clutter leads to "ugh" moment
+* Gestalt principles give an answer
 
 ---
+
+## Proximity
+
+![](../images/27.png)
+
+
+---
+
+## Proximity
+
+![](../images/28.png)
+
+---
+
+## Similarity
+
+![](../images/29.png)
+
+Notes:
+
+You naturally group similar things together
+
+---
+
+## Similarity
+
+![](../images/30.png)
+
+Notes:
+
+* You see rows due to similarity in color
+
+---
+
+## Enclosure
+
+![](../images/31.png)
+
+Notes:
+
+* Simple enclosure will do
+
+---
+
+## Enclosure
+
+![](../images/32.png)
+
+Notes:
+
+*  The shaded area separates the forecast from actual data
+
+---
+
+## Closure
+
+![](../images/33.png)
+  
+Notes:
+
+* People see constructs
+* Chart borders and background shading - these are not needed
+
+---
+
+## Continuity
+
+![](../images/34.png)
+
+Notes:
+
+---
+
+## Application of continuity
+
+![](../images/35.png)
+
+Notes:
+
+* Reduce clutter - no need for Y axis
+
+---
+
+## Connection
+
+![](../images/36.png)
+
+Notes:
+
+---
+
+## Application of connection
+
+![](../images/37.png)
+
+Notes:
+
+* We frequently leverage the connection principle is in line graphs, to help our eyes see order in the data
+
+---
+
+## These were the Gestalt principles
+
+* What principles did I use to introduce them?
+
+Notes:
+
+* Avoid clutter
+* Avoid the obvious
+* Love your audience
+
+---
+
+## White space
+
+Notes:
+
+* Say "Death to pie charts"
+* Then pause for 15 seconds
+
+--- 
+
+
 ## Focusing your audience's attention
+
 * TODO - advice from chapter 4
 
 ---
