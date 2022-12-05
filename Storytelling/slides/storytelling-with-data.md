@@ -2,9 +2,28 @@
 
 ---
 
-# Aspects/Drivers
+# Storytelling
 
 ---
+
+## The story of Jing Wei
+
+![](../images/39-Classic_of_Mountains_and_Seas.jpg)
+
+Notes:
+
+* Once upon a time, the youngest daughter of Emperor Yan, legendary ruler of primitive China, went boating on the eastern sea. While she was enjoying herself, a strong wind rose on the sea and her boat capsized. Just before she was buried by the surging waves, her spirit turned into a beautiful bird. As it flew over the roaring sea, it cried sadly in the sound “Jinwei, Jingwei.” That was why people called it “jingwei.”
+*  
+* The bird lived on a mountain near the sea. It hated the sea so much that it decided to fill it up. Every day, it flew to and from between the mountains and the sea, carrying in a twig or a pebble from the mountain and dropping it into the sea.
+*  
+* One day, the roaring sea said to Jingwei, “poor little bird, stop doing that meaningless thing! You’ll never fill me up.” Jingwei replied, “I’ll fill you up no doubt! I will, even if it’ll take me thousands of years! I’ll fight on until doomsday!”
+*  
+* The brave little bird kept carrying twigs and pebbles from the mountain to the eastern sea without taking a rest.
+*  
+* By Jiang Yinghao (fl. late 16th century) - Original from: Classic of Mountains and Seas (1597 edition), plate XXV.Reproduced in: Richard E. Strassberg, editor and translator (2002). A Chinese Bestiary: Strange Creatures from the Guideways Through Mountains and Seas. Berkeley: University of California Press. ISBN-520-21844-2., Public Domain, https://commons.wikimedia.org/w/index.php?curid=39694966
+
+---
+
 
 ## Jeff Bezos's Email
 
