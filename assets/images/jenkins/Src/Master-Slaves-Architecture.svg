@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="929 -522 2464 1356" width="2464" height="1356">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#02329a">
+      <g>
+        <path d="M 2.24 0 L 0 -.84 L 0 .84 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-12-16 14:54:25 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_41">
+        <path d="M 1922.4111 -327.9497 L 2399.589 -327.9497 C 2404.007 -327.9497 2407.589 -324.36797 2407.589 -319.9497 L 2407.589 5.3241604 C 2407.589 9.742438 2404.007 13.32416 2399.589 13.32416 L 1922.4111 13.32416 C 1917.9929 13.32416 1914.4111 9.742438 1914.4111 5.3241604 L 1914.4111 -319.9497 C 1914.4111 -324.36797 1917.9929 -327.9497 1922.4111 -327.9497 Z" fill="#e4fdff"/>
+        <path d="M 1922.4111 -327.9497 L 2399.589 -327.9497 C 2404.007 -327.9497 2407.589 -324.36797 2407.589 -319.9497 L 2407.589 5.3241604 C 2407.589 9.742438 2404.007 13.32416 2399.589 13.32416 L 1922.4111 13.32416 C 1917.9929 13.32416 1914.4111 9.742438 1914.4111 5.3241604 L 1914.4111 -319.9497 C 1914.4111 -324.36797 1917.9929 -327.9497 1922.4111 -327.9497 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_40">
+        <text transform="translate(1976.0146 -202.65605)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="6.994629" y="50">Jenkins Master </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="109.98535" y="111">Server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <path d="M 2790.667 -520 L 3224.0275 -520 C 3228.4458 -520 3232.0275 -516.4183 3232.0275 -512 L 3232.0275 -186.72614 C 3232.0275 -182.30787 3228.4458 -178.72614 3224.0275 -178.72614 L 2790.667 -178.72614 C 2786.2488 -178.72614 2782.667 -182.30787 2782.667 -186.72614 L 2782.667 -512 C 2782.667 -516.4183 2786.2488 -520 2790.667 -520 Z" fill="#aa97fe"/>
+        <path d="M 2790.667 -520 L 3224.0275 -520 C 3228.4458 -520 3232.0275 -516.4183 3232.0275 -512 L 3232.0275 -186.72614 C 3232.0275 -182.30787 3228.4458 -178.72614 3224.0275 -178.72614 L 2790.667 -178.72614 C 2786.2488 -178.72614 2782.667 -182.30787 2782.667 -186.72614 L 2782.667 -512 C 2782.667 -516.4183 2786.2488 -520 2790.667 -520 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_38">
+        <path d="M 1321.013 335.83582 L 1647.6423 335.83582 C 1681.439 335.83582 1708.8427 363.2381 1708.8427 397.03285 L 1708.8427 759.6124 C 1708.8427 793.4072 1681.439 820.8095 1647.6423 820.8095 L 994.3836 820.8095 C 960.587 820.8095 933.1833 793.4072 933.1833 759.6124 L 933.1833 397.03285 C 933.1833 363.2381 960.587 335.83582 994.3836 335.83582 L 1001.3731 335.83582" stroke="#0061ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(1030.3247 316.59646)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Slave Node1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <rect x="964.4147" y="437.63494" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="964.4147" y="437.63494" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_35">
+        <rect x="1349.4476" y="437.63494" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="1349.4476" y="437.63494" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_34">
+        <rect x="964.4147" y="622.227" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="964.4147" y="622.227" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_33">
+        <rect x="1349.4476" y="622.227" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="1349.4476" y="622.227" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(1046.4946 482.59)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(1431.5275 482.59)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(1046.4946 667.1821)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(1431.5275 667.1821)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(2475.6858 -277.3836) rotate(-26)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Poll SCM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(2026.1953 73.27059)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Dispatch Jobs</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(2826.842 -394.70636)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Source Version</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="92.51709" y="111">Control</tspan>
+        </text>
+      </g>
+      <g id="Line_25">
+        <line x1="2161" y1="144.9964" x2="2161" y2="248.99358" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_24">
+        <line x1="1979.2048" y1="49.62493" x2="1449.4029" y2="265.40826" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_23">
+        <line x1="2457.466" y1="-179.7167" x2="2710.8402" y2="-304.32898" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_22">
+        <path d="M 2161 339.8672 L 2487.6294 339.8672 C 2521.426 339.8672 2548.8297 367.2695 2548.8297 401.06424 L 2548.8297 763.6438 C 2548.8297 797.4386 2521.426 824.8408 2487.6294 824.8408 L 1834.3706 824.8408 C 1800.574 824.8408 1773.1703 797.4386 1773.1703 763.6438 L 1773.1703 401.06424 C 1773.1703 367.2695 1800.574 339.8672 1834.3706 339.8672 L 1841.36 339.8672" stroke="#0061ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(1870.3117 320.62786)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Slave Node1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <rect x="1804.4017" y="441.66633" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="1804.4017" y="441.66633" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_19">
+        <rect x="2189.4346" y="441.66633" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="2189.4346" y="441.66633" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_18">
+        <rect x="1804.4017" y="626.2584" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="1804.4017" y="626.2584" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <rect x="2189.4346" y="626.2584" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="2189.4346" y="626.2584" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(1886.4816 486.6214)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(2271.5145 486.6214)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(1886.4816 671.21346)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(2271.5145 671.21346)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 3000.987 344.22637 L 3327.6164 344.22637 C 3361.413 344.22637 3388.8167 371.62866 3388.8167 405.4234 L 3388.8167 768.003 C 3388.8167 801.7977 3361.413 829.2 3327.6164 829.2 L 2674.3577 829.2 C 2640.561 829.2 2613.1573 801.7977 2613.1573 768.003 L 2613.1573 405.4234 C 2613.1573 371.62866 2640.561 344.22637 2674.3577 344.22637 L 2681.347 344.22637" stroke="#0061ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(2710.2987 324.987)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Slave Node1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="2644.3888" y="446.0255" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="2644.3888" y="446.0255" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <rect x="3029.4216" y="446.0255" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="3029.4216" y="446.0255" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <rect x="2644.3888" y="630.6175" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="2644.3888" y="630.6175" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <rect x="3029.4216" y="630.6175" width="328.16363" height="138.91017" fill="#ebdea6"/>
+        <rect x="3029.4216" y="630.6175" width="328.16363" height="138.91017" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(2726.4686 490.98057)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(3111.5015 490.98057)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(2726.4686 675.5726)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(3111.5015 675.5726)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">BuildJob</tspan>
+        </text>
+      </g>
+      <g id="Line_2">
+        <line x1="2357.7117" y1="50.557214" x2="2887.5137" y2="266.34054" marker-end="url(#FilledArrow_Marker)" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+    </g>
+  </g>
+</svg>
