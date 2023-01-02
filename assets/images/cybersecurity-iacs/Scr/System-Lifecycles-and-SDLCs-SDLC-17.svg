@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="5397 -1323 2186 1462" width="2186" height="1462">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="5397 -1431 2186 1570" width="2186" height="1570">
   <defs>
     <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
       <font-face-src>
@@ -13,8 +13,8 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2022-12-09 10:13:54 +0000</metadata>
-  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none" stroke="none">
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-02 08:04:50 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
@@ -1012,6 +1012,16 @@
         <g id="Graphic_1593">
           <path d="M 5555.533 -160.9899 C 5554.323 -160.9899 5553.3415 -161.97112 5553.3415 -163.18152 L 5553.3415 -171.09326 C 5553.3415 -172.30366 5554.323 -173.28488 5555.533 -173.28488 C 5556.7435 -173.28488 5557.725 -172.30366 5557.725 -171.09326 L 5557.725 -163.18152 C 5557.725 -161.97112 5556.7435 -160.9899 5555.533 -160.9899 Z" fill="#343847"/>
         </g>
+      </g>
+      <g id="Graphic_1638">
+        <text transform="translate(5499.5424 68)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Application</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1639">
+        <text transform="translate(5499.5424 -1425.1973)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Stakeholders</tspan>
+        </text>
       </g>
     </g>
   </g>

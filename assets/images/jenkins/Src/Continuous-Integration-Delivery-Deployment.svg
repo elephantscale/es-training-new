@@ -18,10 +18,9 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2022-12-16 11:45:49 +0000</metadata>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-02 09:10:39 +0000</metadata>
   <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
     <title>Canvas 1</title>
-    <rect fill="white" x="169" y="-756" width="2311" height="2051"/>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_27">
@@ -103,7 +102,7 @@
       <g id="Graphic_7">
         <text transform="translate(621.0154 -210.59845)" fill="#2e006e">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Automated Junit &amp;</tspan>
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="29.59961" y="89">Integraion Tests</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="23.603516" y="89">Integration Tests</tspan>
         </text>
       </g>
       <g id="Graphic_6">
@@ -120,7 +119,7 @@
       </g>
       <g id="Graphic_4">
         <text transform="translate(1497.2257 547.4454)" fill="#2e006e">
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Deploy to OA $</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Deploy to QA $</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="74.78516" y="89">Staging</tspan>
         </text>
       </g>
@@ -132,7 +131,7 @@
       <g id="Graphic_2">
         <text transform="translate(1981.8928 1052.1987)" fill="#2e006e">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Automatic Deployment</tspan>
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="94.79492" y="89">To Production</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="97.19727" y="89">to Production</tspan>
         </text>
       </g>
     </g>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-811 439 2599 1994" width="2599" height="1994">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-811 439 2599 1994" width="2599" height="1994">
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -3 5 6" markerWidth="5" markerHeight="6" color="#02329a">
       <g>
@@ -28,7 +28,7 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2022-11-21 10:11:38 +0000</metadata>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-02 10:46:08 +0000</metadata>
   <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
@@ -459,13 +459,13 @@
         <line x1="97.99989" y1="2307.964" x2="-178.0001" y2="2307.964" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18.0,18.0" stroke-width="9"/>
       </g>
       <g id="Graphic_32">
-        <text transform="translate(150.24156 2277.464)" fill="#2e006e">
-          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="45">Logical Connection inn each Layer</tspan>
+        <text transform="translate(163.74375 2277.464)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="45">Logical Connection in each Layer</tspan>
         </text>
       </g>
       <g id="Graphic_31">
-        <text transform="translate(150.24156 2372.536)" fill="#2e006e">
-          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="45">Realization of the communication</tspan>
+        <text transform="translate(150.692 2372.536)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="45">Realisation of the communication</tspan>
         </text>
       </g>
       <g id="Graphic_30">
@@ -573,8 +573,8 @@
         </text>
       </g>
       <g id="Graphic_4">
-        <text transform="translate(1045.0944 501.9639)" fill="#2e006e">
-          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="6.994629" y="50">Application Process 1 </tspan>
+        <text transform="translate(1044.0934 501.9639)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="6.994629" y="50">Application Process n </tspan>
         </text>
       </g>
       <g id="Line_3">

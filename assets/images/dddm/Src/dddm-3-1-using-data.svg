@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="1590 -269 2718 447" width="2718" height="447">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1048 48 2718 463" width="2718" height="463">
   <defs>
     <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
       <font-face-src>
@@ -23,21 +23,18 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2022-11-22 15:03:14 +0000</metadata>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-02 18:35:27 +0000</metadata>
   <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
     <title>Canvas 1</title>
-    <g id="Canvas_1_dddm-2-1-data-concept.png">
-      <title>dddm-2-1-data-concept.png</title>
-      <g id="Graphic_68">
-        <text transform="translate(2817.0415 1.8095238)" fill="#0048dc">
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_11">
+        <text transform="translate(179.0415 318.30952)" fill="#0048dc">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#0048dc" x="0" y="50">Medium</tspan>
         </text>
       </g>
-    </g>
-    <g id="Canvas_1_dddm-2-1-data-concept.png_2">
-      <title>dddm-2-1-data-concept.png 2</title>
-      <g id="Graphic_21">
-        <text transform="translate(1595 -263.5)" fill="#0048dc">
+      <g id="Graphic_10">
+        <text transform="translate(-1043 53)" fill="#0048dc">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#0048dc" x="0" y="50">Decision</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="101">Characteristics</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="150">Highly structured</tspan>
@@ -48,51 +45,52 @@
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="395">Reversible</tspan>
         </text>
       </g>
-      <g id="Graphic_22">
-        <text transform="translate(3899 -263.5)" fill="#0048dc">
+      <g id="Graphic_9">
+        <text transform="translate(1261 53)" fill="#0048dc">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#0048dc" x="0" y="50">Decision</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="101">Characteristics</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="150">Highly unstructured</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="199">NonRoutine</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="248">Novel</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="297">Not time constrained</tspan>
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="346">Strategic</tspan>
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="395">IIreversible</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="346">Consequential</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="395">Strategic</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="444">Irreversible</tspan>
         </text>
       </g>
-      <g id="Line_23">
-        <line x1="2070.4936" y1="-68" x2="3762.5884" y2="-68" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+      <g id="Line_8">
+        <line x1="-567.50635" y1="248.5" x2="1124.5884" y2="248.5" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
       </g>
-      <g id="Graphic_24">
-        <text transform="translate(2718.1426 74.35714)" fill="#2e006e">
+      <g id="Graphic_7">
+        <text transform="translate(80.14258 390.85714)" fill="#2e006e">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Amount o data used</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">Data USE continuum</tspan>
         </text>
       </g>
-      <g id="Graphic_25">
-        <text transform="translate(2028.6254 1.8095238)" fill="#0048dc">
+      <g id="Graphic_6">
+        <text transform="translate(-609.37456 318.30952)" fill="#0048dc">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#0048dc" x="0" y="50">High</tspan>
         </text>
       </g>
-      <g id="Graphic_26">
-        <text transform="translate(3707.7737 1.8095238)" fill="#0048dc">
+      <g id="Graphic_5">
+        <text transform="translate(1069.7737 318.30952)" fill="#0048dc">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#0048dc" x="0" y="50">Low</tspan>
         </text>
       </g>
-      <g id="Graphic_27">
-        <text transform="translate(2145.1602 -263.5)" fill="#0048dc">
+      <g id="Graphic_4">
+        <text transform="translate(-492.83984 53)" fill="#0048dc">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#0048dc" x="0" y="50">Data - driven</tspan>
-          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="101">DECISION MAKING</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="101">Decision making</tspan>
         </text>
       </g>
-      <g id="Graphic_28">
-        <text transform="translate(2733.66 -263.5)" fill="#0048dc">
+      <g id="Graphic_3">
+        <text transform="translate(95.66016 53)" fill="#0048dc">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#0048dc" x="0" y="50">Data -  based</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="101">Decision making</tspan>
         </text>
       </g>
-      <g id="Graphic_29">
-        <text transform="translate(3291.8428 -263.5)" fill="#0048dc">
+      <g id="Graphic_2">
+        <text transform="translate(653.8428 53)" fill="#0048dc">
           <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#0048dc" x="0" y="50">Data - informed</tspan>
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="101">Decision making</tspan>
         </text>

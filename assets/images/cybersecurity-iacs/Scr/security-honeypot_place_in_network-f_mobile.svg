@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-962 338 2795 1382" width="2795" height="1382">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-962 338 2795 1382" width="2795" height="1382">
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBall_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 4 4" markerWidth="4" markerHeight="4" color="#02329a">
       <g>
@@ -92,8 +92,8 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.5\n2022-12-09 10:13:00 +0000</metadata>
-  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none" stroke="none">
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-02 09:01:38 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
@@ -430,8 +430,8 @@
         </text>
       </g>
       <g id="Graphic_7">
-        <rect x="257.9846" y="1169.5417" width="196.38672" height="59" fill="white"/>
-        <text transform="translate(262.9846 1174.5417)" fill="#2e006e">
+        <rect x="261.42858" y="1521.4444" width="196.38672" height="59" fill="white"/>
+        <text transform="translate(266.42858 1526.4444)" fill="#2e006e">
           <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">FTP server</tspan>
         </text>
       </g>
