@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="94 1076 2107 861" width="2107" height="861">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Space Mono" font-size="40" panose-1="2 0 8 9 3 0 0 2 0 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="496" cap-height="700" ascent="1119.9951" descent="-360.99243" font-weight="700">
+      <font-face-src>
+        <font-face-name name="SpaceMono-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Space Mono" font-size="40" panose-1="2 0 5 9 4 0 0 2 0 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="496" cap-height="700" ascent="1119.9951" descent="-360.99243" font-weight="400">
+      <font-face-src>
+        <font-face-name name="SpaceMono-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-05 10:42:03 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_15">
+        <path d="M 868.4473 1801.4353 C 868.4473 1875.7812 735.5111 1935.904 571.22366 1935.904 C 406.93626 1935.904 274 1875.7812 274 1801.4353 C 274 1738.0786 371.52503 1684.7446 502.4342 1670.846 C 491.69256 1646.9245 473.9899 1618.8028 446.1222 1604.904 C 499.81865 1604.904 552.93846 1637.875 589.2176 1667.291 C 745.0876 1671.4914 868.4473 1729.999 868.4473 1801.4353 Z" fill="#c5b9ff"/>
+        <path d="M 868.4473 1801.4353 C 868.4473 1875.7812 735.5111 1935.904 571.22366 1935.904 C 406.93626 1935.904 274 1875.7812 274 1801.4353 C 274 1738.0786 371.52503 1684.7446 502.4342 1670.846 C 491.69256 1646.9245 473.9899 1618.8028 446.1222 1604.904 C 499.81865 1604.904 552.93846 1637.875 589.2176 1667.291 C 745.0876 1671.4914 868.4473 1729.999 868.4473 1801.4353 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(422.02444 1742)" fill="#5f06f8">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#5f06f8" x="0" y="40">Producer:</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">Type input here</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="95" y="1077" width="913.1347" height="504.69236" fill="#fdf7ed"/>
+        <rect x="95" y="1077" width="913.1347" height="504.69236" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(172.12737 1109.8462)" fill="#2e006e">
+          <tspan font-family="Space Mono" font-size="40" font-weight="700" fill="#2e006e" x="0" y="45">$ bin/kafka-console-producer.sh</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="700" fill="#2e006e" x="0" y="104">— —broker-list localhost:9092</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="700" fill="#2e006e" x="0" y="163">— —topic test</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(172.12737 1312.8462)" fill="#0048dc">
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#0048dc" x="0" y="45">Hello</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#0048dc" x="0" y="104">World</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#0048dc" x="0" y="163">Goodbye</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#0048dc" x="0" y="222">world</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <rect x="1236" y="1077" width="964" height="504.69236" fill="#fdf7ed"/>
+        <rect x="1236" y="1077" width="964" height="504.69236" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(1313.1274 1109.8462)" fill="#2e006e">
+          <tspan font-family="Space Mono" font-size="40" font-weight="700" fill="#2e006e" x="0" y="45">$ bin/kafka-console-consumer.sh</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="700" fill="#2e006e" x="0" y="104">— —bootstrap-server localhost:9092</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="700" fill="#2e006e" x="0" y="163">— —topic test</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(1313.1274 1312.8462)" fill="#0048dc">
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#0048dc" x="0" y="45">Hello</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#0048dc" x="0" y="104">World</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#0048dc" x="0" y="163">Goodbye</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#0048dc" x="0" y="222">world</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <path d="M 2100.7874 1795.5312 C 2100.7874 1869.8772 1934.6303 1930 1729.2874 1930 C 1523.9445 1930 1357.7874 1869.8772 1357.7874 1795.5312 C 1357.7874 1732.1745 1479.684 1678.8405 1643.3074 1664.9418 C 1629.8814 1641.0204 1607.7549 1612.8987 1572.923 1599 C 1640.0382 1599 1706.4327 1631.971 1751.778 1661.3869 C 1946.6 1665.5873 2100.7874 1724.0948 2100.7874 1795.5312 Z" fill="#c5b9ff"/>
+        <path d="M 2100.7874 1795.5312 C 2100.7874 1869.8772 1934.6303 1930 1729.2874 1930 C 1523.9445 1930 1357.7874 1869.8772 1357.7874 1795.5312 C 1357.7874 1732.1745 1479.684 1678.8405 1643.3074 1664.9418 C 1629.8814 1641.0204 1607.7549 1612.8987 1572.923 1599 C 1640.0382 1599 1706.4327 1631.971 1751.778 1661.3869 C 1946.6 1665.5873 2100.7874 1724.0948 2100.7874 1795.5312 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(1453.3108 1717.5)" fill="#6800ff">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#6800ff" x="0" y="40">Consumer</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#6800ff" y="40">:</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">Data will be read from Kafka</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="138">and will show up here </tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <path d="M 1023.4545 1361.4093 L 1023.4545 1297.2831 C 1023.4545 1296.1785 1024.35 1295.2831 1025.4545 1295.2831 L 1146.8945 1295.2831 C 1147.9991 1295.2831 1148.8945 1294.3877 1148.8945 1293.2831 L 1148.8945 1265.6987 C 1148.8945 1264.5941 1149.79 1263.6987 1150.8945 1263.6987 C 1151.3873 1263.6987 1151.8626 1263.8806 1152.2295 1264.2095 L 1223.2332 1327.857 C 1224.0557 1328.5942 1224.1247 1329.8587 1223.3875 1330.6811 C 1223.3389 1330.7353 1223.2874 1330.7869 1223.2332 1330.8354 L 1152.2295 1394.4829 C 1151.407 1395.2202 1150.1426 1395.1511 1149.4053 1394.3286 C 1149.0764 1393.9617 1148.8945 1393.4864 1148.8945 1392.9937 L 1148.8945 1365.4093 C 1148.8945 1364.3047 1147.9991 1363.4093 1146.8945 1363.4093 L 1025.4545 1363.4093 C 1024.35 1363.4093 1023.4545 1362.5138 1023.4545 1361.4093 Z" fill="#a4f8fd"/>
+        <path d="M 1023.4545 1361.4093 L 1023.4545 1297.2831 C 1023.4545 1296.1785 1024.35 1295.2831 1025.4545 1295.2831 L 1146.8945 1295.2831 C 1147.9991 1295.2831 1148.8945 1294.3877 1148.8945 1293.2831 L 1148.8945 1265.6987 C 1148.8945 1264.5941 1149.79 1263.6987 1150.8945 1263.6987 C 1151.3873 1263.6987 1151.8626 1263.8806 1152.2295 1264.2095 L 1223.2332 1327.857 C 1224.0557 1328.5942 1224.1247 1329.8587 1223.3875 1330.6811 C 1223.3389 1330.7353 1223.2874 1330.7869 1223.2332 1330.8354 L 1152.2295 1394.4829 C 1151.407 1395.2202 1150.1426 1395.1511 1149.4053 1394.3286 C 1149.0764 1393.9617 1148.8945 1393.4864 1148.8945 1392.9937 L 1148.8945 1365.4093 C 1148.8945 1364.3047 1147.9991 1363.4093 1146.8945 1363.4093 L 1025.4545 1363.4093 C 1024.35 1363.4093 1023.4545 1362.5138 1023.4545 1361.4093 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

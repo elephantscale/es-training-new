@@ -1,118 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.2" width="215.9mm" height="279.4mm" viewBox="0 0 21590 27940" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-  <defs class="ClipPathGroup">
-    <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
-      <rect x="0" y="0" width="21590" height="27940"/>
-    </clipPath>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-344 -872 1908 1101" width="1908" height="1101">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#2e006e">
+      <g>
+        <path d="M 2.5142857 0 L 0 -.9428571 L 0 .9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -2 5 4" markerWidth="5" markerHeight="4" color="#2e006e">
+      <g>
+        <path d="M -2.5142857 0 L 0 .9428571 L 0 -.9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
   </defs>
-  <defs class="TextShapeIndex">
-    <g/>
-  </defs>
-  <defs class="EmbeddedBulletChars">
-    <g id="bullet-char-template-57356" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M 580,1141 L 1163,571 580,0 -4,571 580,1141 Z"/>
-    </g>
-    <g id="bullet-char-template-57354" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M 8,1128 L 1137,1128 1137,0 8,0 8,1128 Z"/>
-    </g>
-    <g id="bullet-char-template-10146" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M 174,0 L 602,739 174,1481 1456,739 174,0 Z M 1358,739 L 309,1346 659,739 1358,739 Z"/>
-    </g>
-    <g id="bullet-char-template-10132" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M 2015,739 L 1276,0 717,0 1260,543 174,543 174,936 1260,936 717,1481 1274,1481 2015,739 Z"/>
-    </g>
-    <g id="bullet-char-template-10007" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M 0,-2 C -7,14 -16,27 -25,37 L 356,567 C 262,823 215,952 215,954 215,979 228,992 255,992 264,992 276,990 289,987 310,991 331,999 354,1012 L 381,999 492,748 772,1049 836,1024 860,1049 C 881,1039 901,1025 922,1006 886,937 835,863 770,784 769,783 710,716 594,584 L 774,223 C 774,196 753,168 711,139 L 727,119 C 717,90 699,76 672,76 641,76 570,178 457,381 L 164,-76 C 142,-110 111,-127 72,-127 30,-127 9,-110 8,-76 1,-67 -2,-52 -2,-32 -2,-23 -1,-13 0,-2 Z"/>
-    </g>
-    <g id="bullet-char-template-10004" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M 285,-33 C 182,-33 111,30 74,156 52,228 41,333 41,471 41,549 55,616 82,672 116,743 169,778 240,778 293,778 328,747 346,684 L 369,508 C 377,444 397,411 428,410 L 1163,1116 C 1174,1127 1196,1133 1229,1133 1271,1133 1292,1118 1292,1087 L 1292,965 C 1292,929 1282,901 1262,881 L 442,47 C 390,-6 338,-33 285,-33 Z"/>
-    </g>
-    <g id="bullet-char-template-9679" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M 813,0 C 632,0 489,54 383,161 276,268 223,411 223,592 223,773 276,916 383,1023 489,1130 632,1184 813,1184 992,1184 1136,1130 1245,1023 1353,916 1407,772 1407,592 1407,412 1353,268 1245,161 1136,54 992,0 813,0 Z"/>
-    </g>
-    <g id="bullet-char-template-8226" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M 346,457 C 273,457 209,483 155,535 101,586 74,649 74,723 74,796 101,859 155,911 209,963 273,989 346,989 419,989 480,963 531,910 582,859 608,796 608,723 608,648 583,586 532,535 482,483 420,457 346,457 Z"/>
-    </g>
-    <g id="bullet-char-template-8211" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M -4,459 L 1135,459 1135,606 -4,606 -4,459 Z"/>
-    </g>
-    <g id="bullet-char-template-61548" transform="scale(0.00048828125,-0.00048828125)">
-      <path d="M 173,740 C 173,903 231,1043 346,1159 462,1274 601,1332 765,1332 928,1332 1067,1274 1183,1159 1299,1043 1357,903 1357,740 1357,577 1299,437 1183,322 1067,206 928,148 765,148 601,148 462,206 346,322 231,437 173,577 173,740 Z"/>
-    </g>
-  </defs>
-  <g>
-    <g id="id2" class="Master_Slide">
-      <g id="bg-id2" class="Background"/>
-      <g id="bo-id2" class="BackgroundObjects"/>
-    </g>
-  </g>
-  <g class="SlideGroup">
-    <g>
-      <g id="container-id1">
-        <g id="id1" class="Slide" clip-path="url(#presentation_clip_path)">
-          <g class="Page">
-            <g class="com.sun.star.drawing.LineShape">
-              <g id="id3">
-                <rect class="BoundingBox" stroke="none" fill="none" x="3221" y="3221" width="3" height="7623"/>
-                <path fill="none" stroke="rgb(0,0,0)" d="M 3222,3222 L 3222,10842"/>
-              </g>
-            </g>
-            <g class="com.sun.star.drawing.LineShape">
-              <g id="id4">
-                <rect class="BoundingBox" stroke="none" fill="none" x="3221" y="10841" width="13973" height="3"/>
-                <path fill="none" stroke="rgb(0,0,0)" d="M 3222,10842 L 17192,10842"/>
-              </g>
-            </g>
-            <g class="com.sun.star.drawing.OpenBezierShape">
-              <g id="id5">
-                <rect class="BoundingBox" stroke="none" fill="none" x="4220" y="3562" width="13461" height="2085"/>
-                <path fill="none" stroke="rgb(255,128,0)" stroke-width="106" stroke-linejoin="round" d="M 4274,4803 C 4776,4326 5208,4910 5740,4885 6193,4864 6505,4693 7083,4967 7549,5186 7826,4300 8426,4356 8896,4400 9318,3897 9851,4153 10597,4509 10086,3006 11235,3908 11646,4231 12163,4216 12619,4560 12986,4835 13560,4669 14003,4478 14566,4236 15053,5121 15550,4437 15942,3898 16461,4302 16812,4518 L 17219,4640 17627,4600"/>
-              </g>
-            </g>
-            <g class="com.sun.star.drawing.TextShape">
-              <g id="id6">
-                <rect class="BoundingBox" stroke="none" fill="none" x="14017" y="3212" width="3763" height="989"/>
-                <text class="TextShape" style="white-space: pre;"><tspan class="TextParagraph" font-family="Ubuntu" font-size="635px" font-weight="700"><tspan class="TextPosition" x="14267" y="3925"><tspan fill="rgb(255,128,0)" stroke="none">facebook</tspan></tspan></tspan></text>
-              </g>
-            </g>
-            <g class="com.sun.star.drawing.OpenBezierShape">
-              <g id="id7">
-                <rect class="BoundingBox" stroke="none" fill="none" x="4669" y="5511" width="13092" height="1564"/>
-                <path fill="none" stroke="rgb(128,0,128)" stroke-width="106" stroke-linejoin="round" d="M 4722,6024 C 5340,6523 5977,5667 6635,6269 6989,6593 7593,6511 7938,6839 8475,7352 8800,6641 9078,6391 9560,5956 9966,6499 10421,6757 11051,7114 11625,6968 11846,6472 12007,6109 12235,5358 12741,5617 13250,5878 13564,6554 14207,6554 14688,6554 14941,7035 15549,6839 16090,6664 16623,5787 17137,6594 L 17626,6676 17707,6635"/>
-              </g>
-            </g>
-            <g class="com.sun.star.drawing.TextShape">
-              <g id="id8">
-                <rect class="BoundingBox" stroke="none" fill="none" x="14652" y="5434" width="2967" height="989"/>
-                <text class="TextShape" style="white-space: pre;"><tspan class="TextParagraph" font-family="Ubuntu" font-size="635px" font-weight="700"><tspan class="TextPosition" x="14902" y="6147"><tspan fill="rgb(128,0,128)" stroke="none">twitter</tspan></tspan></tspan></text>
-              </g>
-            </g>
-            <g class="com.sun.star.drawing.OpenBezierShape">
-              <g id="id9">
-                <rect class="BoundingBox" stroke="none" fill="none" x="4480" y="7296" width="11423" height="2331"/>
-                <path fill="none" stroke="rgb(0,169,51)" stroke-width="106" stroke-linejoin="round" d="M 4533,9516 C 5008,9350 5518,9198 5876,8914 6221,8641 6307,8166 6853,8055 7401,7943 7615,8257 8157,8427 8738,8610 8928,8949 9500,9229 9940,9446 10266,8735 10313,8399 10360,8061 10333,7706 10639,7454 11104,7069 11659,7855 11901,8141 12300,8614 12989,8863 13530,9229 13843,9442 14405,9738 14833,9458 L 15239,9401 15727,9373 15848,9344"/>
-              </g>
-            </g>
-            <g class="com.sun.star.drawing.TextShape">
-              <g id="id10">
-                <rect class="BoundingBox" stroke="none" fill="none" x="14017" y="8292" width="3449" height="989"/>
-                <text class="TextShape" style="white-space: pre;"><tspan class="TextParagraph" font-family="Ubuntu" font-size="635px" font-weight="700"><tspan class="TextPosition" x="14267" y="9005"><tspan fill="rgb(0,169,51)" stroke="none">youtube</tspan></tspan></tspan></text>
-              </g>
-            </g>
-            <g class="com.sun.star.drawing.TextShape">
-              <g id="id11">
-                <rect class="BoundingBox" stroke="none" fill="none" x="1952" y="2270" width="5769" height="989"/>
-                <text class="TextShape" style="white-space: pre;"><tspan class="TextParagraph" font-family="Ubuntu" font-size="635px" font-weight="700"><tspan class="TextPosition" x="2202" y="2983"><tspan fill="rgb(0,0,0)" stroke="none">Clicks / minute</tspan></tspan></tspan></text>
-              </g>
-            </g>
-            <g class="com.sun.star.drawing.TextShape">
-              <g id="id12">
-                <rect class="BoundingBox" stroke="none" fill="none" x="15941" y="11160" width="2116" height="989"/>
-                <text class="TextShape" style="white-space: pre;"><tspan class="TextParagraph" font-family="Ubuntu" font-size="635px" font-weight="700"><tspan class="TextPosition" x="16191" y="11873"><tspan fill="rgb(0,0,0)" stroke="none">time</tspan></tspan></tspan></text>
-              </g>
-            </g>
-          </g>
-        </g>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-04 10:10:34 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_10">
+        <path d="M -144.97872 -759.2242 L -144.97872 132.37808 L 1468.9571 132.37808" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#2e006e" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M -44.714286 -605.95345 C -44.714286 -605.95345 -31.76418 -626.46566 14.033816 -624.8587 C 59.83181 -623.2518 62.6676 -594.9884 105.01539 -594.9884 C 161.35307 -594.9884 169.95496 -606.6151 217.73801 -604.441 C 254.74506 -602.6923 263.536 -578.6826 307.538 -583.9288 C 351.54 -589.175 351.58727 -627.88355 402.67874 -649.05745 C 453.7702 -670.23134 444.932 -648.4903 474.89684 -660.826 C 504.8617 -673.16166 525.79926 -689.6565 570.0376 -693.05944 C 615.8356 -696.6042 606.0521 -674.1542 638.7109 -677.888 C 682.7602 -683.1342 668.6758 -747.69565 706.8644 -747.69565 C 742.6426 -747.69565 769.0627 -715.4149 799.0276 -701.3305 C 828.9924 -687.2461 885.3301 -667.2538 913.5462 -649.0102 C 941.7623 -630.7666 961.8019 -615.5479 1005.8511 -615.5479 C 1049.9004 -615.5479 1073.3429 -648.6321 1145.6083 -648.6321 C 1188.1451 -648.6321 1188.1451 -608.12756 1244.8609 -615.1698 C 1301.5767 -622.212 1306.0194 -683.8431 1346.5712 -683.8431 C 1387.123 -683.8431 1456.2217 -613.3738 1487.9353 -618.66724 L 1530.2358 -625.70945" stroke="#f83a60" stroke-linecap="butt" stroke-linejoin="round" stroke-width="13"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 9.307501 -456.12925 C 9.307501 -456.12925 14.033816 -435.71157 68.5755 -433.15936 C 126.0475 -430.46536 118.20181 -460.61925 179.54939 -456.12925 C 219.62854 -453.15167 224.96928 -425.36093 257.95896 -410.18946 C 299.03064 -391.2842 279.93633 -408.1099 344.97043 -387.0778 C 410.00453 -366.04567 380.08695 -340.28726 435.76295 -339.4365 C 487.3743 -338.77483 512.5656 -432.26136 576.1345 -433.53746 C 629.4946 -434.6245 680.1135 -331.7799 772.0876 -339.4365 C 877.8152 -348.22747 853.3329 -509.5839 915.8621 -509.5839 C 1000.0378 -509.5839 1009.2068 -419.5003 1089.9323 -401.5403 C 1141.2128 -390.1499 1139.6531 -396.814 1181.7646 -379.51567 C 1223.876 -362.21736 1222.1746 -342.1305 1285.3182 -355.506 C 1348.4617 -368.88146 1384.9016 -441.0523 1422.7594 -433.4902 C 1473.52 -423.42315 1438.0727 -390.95336 1497.3407 -383.344 L 1556.656 -375.68736" stroke="#a33dff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="13"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M -15.174814 -36.526957 C -15.174814 -36.526957 106.10244 -50.705904 150.24623 -111.15548 C 194.39002 -171.60505 199.44717 -216.22147 262.30717 -216.22147 C 356.07727 -216.22147 409.2483 -169.47821 451.3598 -150.80927 C 493.47126 -132.14032 518.99337 -59.874956 586.5797 -59.874956 C 654.166 -59.874956 663.57136 -211.4479 675.1981 -237.06452 C 686.8248 -262.68115 691.55114 -300.16084 742.8317 -300.01905 C 803.5176 -300.01905 875.7357 -169.47821 906.0786 -155.48832 C 936.4216 -141.49842 1036.6667 -29.295695 1134.596 -29.626537 C 1232.5252 -29.95738 1199.8664 -43.521904 1248.831 -48.200957 C 1297.7956 -52.88001 1335.1335 -52.92727 1335.1335 -52.92727" stroke="#3653ce" stroke-linecap="butt" stroke-linejoin="round" stroke-width="13"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(1169.087 -779.1242)" fill="#f83a60">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#f83a60" x="0" y="70">Facebook</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(1169.087 -501.177)" fill="#a33eff">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#a33eff" x="0" y="70">Twitter</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(1164.8829 -148.69565)" fill="#3653ce">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#3653ce" x="0" y="70">YouTube</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(1397 150.91304)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">Time</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(-339 -867)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">Clicks/minute</tspan>
+        </text>
       </g>
     </g>
   </g>

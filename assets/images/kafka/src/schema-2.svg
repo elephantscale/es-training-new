@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-558 273 2662 1020" width="2662" height="1020">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Space Mono" font-size="40" panose-1="2 0 5 9 4 0 0 2 0 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="496" cap-height="700" ascent="1119.9951" descent="-360.99243" font-weight="400">
+      <font-face-src>
+        <font-face-name name="SpaceMono-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#f83a60">
+      <g>
+        <path d="M 2.1818182 0 L 0 -.8181818 L 0 .8181818 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-04 10:13:18 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_19">
+        <path d="M -503 278 L 989 278 C 1016.6142 278 1039 300.38576 1039 328 L 1039 1237.3076 C 1039 1264.9219 1016.6142 1287.3076 989 1287.3076 L -503 1287.3076 C -530.61424 1287.3076 -553 1264.9219 -553 1237.3076 L -553 328 C -553 300.38576 -530.61424 278 -503 278 Z" fill="white"/>
+        <path d="M -503 278 L 989 278 C 1016.6142 278 1039 300.38576 1039 328 L 1039 1237.3076 C 1039 1264.9219 1016.6142 1287.3076 989 1287.3076 L -503 1287.3076 C -530.61424 1287.3076 -553 1264.9219 -553 1237.3076 L -553 328 C -553 300.38576 -530.61424 278 -503 278 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_18">
+        <rect x="-486.72366" y="575.038" width="594.4473" height="476.2316" fill="#f6ffff"/>
+        <rect x="-486.72366" y="575.038" width="594.4473" height="476.2316" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 1519 711.3462 L 2093.4473 711.3462 C 2098.9702 711.3462 2103.4473 715.8233 2103.4473 721.3462 L 2103.4473 904.9615 C 2103.4473 910.4843 2098.9702 914.9615 2093.4473 914.9615 L 1519 914.9615 C 1513.4772 914.9615 1509 910.4843 1509 904.9615 L 1509 721.3462 C 1509 715.8233 1513.4772 711.3462 1519 711.3462 Z" fill="#aa97fe"/>
+        <path d="M 1519 711.3462 L 2093.4473 711.3462 C 2098.9702 711.3462 2103.4473 715.8233 2103.4473 721.3462 L 2103.4473 904.9615 C 2103.4473 910.4843 2098.9702 914.9615 2093.4473 914.9615 L 1519 914.9615 C 1513.4772 914.9615 1509 910.4843 1509 904.9615 L 1509 721.3462 C 1509 715.8233 1513.4772 711.3462 1519 711.3462 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 1053.4545 815.0176 L 1053.4545 811.2901 C 1053.4545 810.7378 1053.9023 810.2901 1054.4545 810.2901 L 1474.4453 810.2901 C 1474.9976 810.2901 1475.4453 809.8424 1475.4453 809.2901 L 1475.4453 782.5729 C 1475.4453 782.02065 1475.893 781.5729 1476.4453 781.5729 C 1476.7341 781.5729 1477.0089 781.6978 1477.1988 781.9155 L 1503.881 812.4964 C 1504.2096 812.8731 1504.2096 813.4346 1503.881 813.8113 L 1477.1988 844.3921 C 1476.8357 844.8083 1476.204 844.8513 1475.7878 844.4882 C 1475.5702 844.2983 1475.4453 844.0236 1475.4453 843.7347 L 1475.4453 817.0176 C 1475.4453 816.4653 1474.9976 816.0176 1474.4453 816.0176 L 1054.4545 816.0176 C 1053.9023 816.0176 1053.4545 815.5699 1053.4545 815.0176 Z" fill="#4040ff"/>
+        <path d="M 1053.4545 815.0176 L 1053.4545 811.2901 C 1053.4545 810.7378 1053.9023 810.2901 1054.4545 810.2901 L 1474.4453 810.2901 C 1474.9976 810.2901 1475.4453 809.8424 1475.4453 809.2901 L 1475.4453 782.5729 C 1475.4453 782.02065 1475.893 781.5729 1476.4453 781.5729 C 1476.7341 781.5729 1477.0089 781.6978 1477.1988 781.9155 L 1503.881 812.4964 C 1504.2096 812.8731 1504.2096 813.4346 1503.881 813.8113 L 1477.1988 844.3921 C 1476.8357 844.8083 1476.204 844.8513 1475.7878 844.4882 C 1475.5702 844.2983 1475.4453 844.0236 1475.4453 843.7347 L 1475.4453 817.0176 C 1475.4453 816.4653 1474.9976 816.0176 1474.4453 816.0176 L 1054.4545 816.0176 C 1053.9023 816.0176 1053.4545 815.5699 1053.4545 815.0176 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(1722.2149 776.6538)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">Kafka</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(-398.2842 638.1538)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">Order (object)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(-398.2842 769.1538)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">Id: - - -</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="133">Date: - - - </tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="206">Amount: - - -</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <ellipse cx="1283.5" cy="898.3907" rx="190.962219200905" ry="49.0000782971929" fill="#ebdea6"/>
+        <ellipse cx="1283.5" cy="898.3907" rx="190.962219200905" ry="49.0000782971929" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(1171.4883 867.8907)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">01011010</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="378.27634" y="432.6538" width="594.4473" height="339" fill="#fdf7ed"/>
+        <rect x="378.27634" y="432.6538" width="594.4473" height="339" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(598.1123 470.18427)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">JSON</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="378.27634" y="854.6538" width="594.4473" height="339" fill="#fdf7ed"/>
+        <rect x="378.27634" y="854.6538" width="594.4473" height="339" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(589.7041 901.0229)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">AVRO</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(467.42 557.1234)" fill="#2e006e">
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="45">{ “id” : - - - ,</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="104"> “date”: - - - ,</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="163">“amount”: - - - }</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(577.58 1019.917)" fill="#2e006e">
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="45">01010010</tspan>
+        </text>
+      </g>
+      <g id="Line_4">
+        <line x1="107.72366" y1="740.6519" x2="339.51293" y2="684.11136" marker-end="url(#FilledArrow_Marker)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="11"/>
+      </g>
+      <g id="Line_3">
+        <line x1="107.72366" y1="885.6558" x2="339.51293" y2="942.1963" marker-end="url(#FilledArrow_Marker)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="11"/>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(111.58887 314)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="60">Producer</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
