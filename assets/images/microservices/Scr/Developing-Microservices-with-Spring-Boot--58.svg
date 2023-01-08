@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-783 -8 750 747" width="750" height="747">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 6 2 2 2 2 9 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="-151.99982" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-style="italic" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-BoldItalic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-12-31 13:46:13 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-783" y="-8" width="750" height="747"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_5">
+        <path d="M -737.0376 -3 L -78.8584 -3 C -56.76701 -3 -38.8584 14.90861 -38.8584 37 L -38.8584 694 C -38.8584 716.0914 -56.76701 734 -78.8584 734 L -737.0376 734 C -759.129 734 -777.0376 716.0914 -777.0376 694 L -777.0376 37 C -777.0376 14.90861 -759.129 -3 -737.0376 -3 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M -678.008 425.0496 L -137.888 425.0496 C -132.36515 425.0496 -127.888 429.52675 -127.888 435.0496 L -127.888 602.5424 C -127.888 608.06525 -132.36515 612.5424 -137.888 612.5424 L -678.008 612.5424 C -683.53085 612.5424 -688.008 608.06525 -688.008 602.5424 L -688.008 435.0496 C -688.008 429.52675 -683.53085 425.0496 -678.008 425.0496 Z" fill="#a4f8fd"/>
+        <path d="M -678.008 425.0496 L -137.888 425.0496 C -132.36515 425.0496 -127.888 429.52675 -127.888 435.0496 L -127.888 602.5424 C -127.888 608.06525 -132.36515 612.5424 -137.888 612.5424 L -678.008 612.5424 C -683.53085 612.5424 -688.008 608.06525 -688.008 602.5424 L -688.008 435.0496 C -688.008 429.52675 -683.53085 425.0496 -678.008 425.0496 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-683.008 457.796)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-style="italic" font-weight="700" fill="#2e006e" x="158.5683" y="50">Customer</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-style="italic" font-weight="700" fill="#2e006e" x="132.05463" y="111">Rule engine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(-625.6384 100.4632)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#2e006e" x="72.13623" y="70">Eligibility</tspan>
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#2e006e" x="0" y="155">Microservice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2"/>
+    </g>
+  </g>
+</svg>

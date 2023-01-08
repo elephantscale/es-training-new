@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-14 -587 1100 808" width="1100" height="808">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#f83a60">
+      <g>
+        <path d="M 2.6666667 0 L 0 -1 L 0 1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0061ff">
+      <g>
+        <path d="M 2.6666667 0 L 0 -1 L 0 1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-04 10:09:11 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_15">
+        <rect x="216" y="-421.33194" width="868" height="101" fill="#ebdea6"/>
+        <rect x="216" y="-421.33194" width="868" height="101" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <rect x="216" y="-48.331936" width="868" height="101" fill="#ebdea6"/>
+        <rect x="216" y="-48.331936" width="868" height="101" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_13">
+        <line x1="650" y1="-519.4801" x2="650" y2="-458.45556" marker-end="url(#FilledArrow_Marker)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(634.4043 -582)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">C</tspan>
+        </text>
+      </g>
+      <g id="Line_11">
+        <line x1="1064.9417" y1="-519.4801" x2="1064.9417" y2="-458.45556" marker-end="url(#FilledArrow_Marker_2)" stroke="#0061ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(1053.7405 -582)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">P</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(-9 -395.33194)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Behind</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(-9 -22.331936)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Catchup</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <line x1="1064.9417" y1="158.48148" x2="1064.9417" y2="97.45695" marker-end="url(#FilledArrow_Marker)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(1049.346 166.85714)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">C</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="1064.9417" y1="-146.14396" x2="1064.9417" y2="-85.11943" marker-end="url(#FilledArrow_Marker_2)" stroke="#0061ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(1053.7405 -208.66387)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">P</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <line x1="689.205" y1="124.09065" x2="1003.1939" y2="124.09065" marker-end="url(#FilledArrow_Marker)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Line_2">
+        <line x1="650" y1="158.48148" x2="650" y2="97.45695" marker-end="url(#FilledArrow_Marker)" stroke="#f83a60" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+    </g>
+  </g>
+</svg>

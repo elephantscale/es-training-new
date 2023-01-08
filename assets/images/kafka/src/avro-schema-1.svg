@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-668 247 2665 675" width="2665" height="675">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Space Mono" font-size="40" panose-1="2 0 5 9 4 0 0 2 0 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="496" cap-height="700" ascent="1119.9951" descent="-360.99243" font-weight="400">
+      <font-face-src>
+        <font-face-name name="SpaceMono-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-04 10:11:43 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <rect x="-667" y="248" width="1258.5884" height="673" fill="#f6ffff"/>
+        <rect x="-667" y="248" width="1258.5884" height="673" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <rect x="1401.9498" y="248" width="594.4473" height="476.2316" fill="#f6ffff"/>
+        <rect x="1401.9498" y="248" width="594.4473" height="476.2316" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 787.4385 448.1989 L 1193.8007 448.1989 C 1199.3236 448.1989 1203.8007 452.67606 1203.8007 458.1989 L 1203.8007 641.8142 C 1203.8007 647.337 1199.3236 651.8142 1193.8007 651.8142 L 787.4385 651.8142 C 781.9157 651.8142 777.4385 647.337 777.4385 641.8142 L 777.4385 458.1989 C 777.4385 452.67606 781.9157 448.1989 787.4385 448.1989 Z" fill="#aa97fe"/>
+        <path d="M 787.4385 448.1989 L 1193.8007 448.1989 C 1199.3236 448.1989 1203.8007 452.67606 1203.8007 458.1989 L 1203.8007 641.8142 C 1203.8007 647.337 1199.3236 651.8142 1193.8007 651.8142 L 787.4385 651.8142 C 781.9157 651.8142 777.4385 647.337 777.4385 641.8142 L 777.4385 458.1989 C 777.4385 452.67606 781.9157 448.1989 787.4385 448.1989 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 595.688 552.8703 L 595.688 547.1428 L 1356.542 547.1428 L 1356.542 516.7585 L 1385.5513 550.00655 L 1356.542 583.2546 L 1356.542 552.8703 Z" fill="#4040ff"/>
+        <path d="M 595.688 552.8703 L 595.688 547.1428 L 1356.542 547.1428 L 1356.542 516.7585 L 1385.5513 550.00655 L 1356.542 583.2546 L 1356.542 552.8703 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(-588.1118 278.24138)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Customer.avsc</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(-588.5058 355.0421)" fill="#2e006e">
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="45">{“namespace”: “customer.avro”,</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="104"> “type”: “record”,</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="163"> “name”: “Customer”,</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="222"> “fields”:  [</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="281">       {“name”: “id”, “type”: “int”},</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="340">       {“name”: “name”, “type”: “string”},</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="399">       {“name”: “email”, “type”: “string”}</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="458">    ] </tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="517">}</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(1503.3335 355.0421)" fill="#2e006e">
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="45">Customer {</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="104">   int id;</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="163">   String name;</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="222">   String email;</tspan>
+          <tspan font-family="Space Mono" font-size="40" font-weight="400" fill="#2e006e" x="0" y="281">}</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(1503.3335 278.24138)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Customer.java</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(856.8355 477.00655)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="65.99121" y="60">Avro</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="0" y="133">Compiler</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

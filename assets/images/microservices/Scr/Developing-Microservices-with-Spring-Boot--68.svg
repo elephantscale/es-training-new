@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-683 183 2043 394" width="2043" height="394">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2022-12-31 13:49:28 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_4">
+        <path d="M -651 185 L -244 185 C -227.43146 185 -214 198.43146 -214 215 L -214 545 C -214 561.56854 -227.43146 575 -244 575 L -651 575 C -667.56854 575 -681 561.56854 -681 545 L -681 215 C -681 198.43146 -667.56854 185 -651 185 Z" fill="#aa97fe"/>
+        <path d="M -651 185 L -244 185 C -227.43146 185 -214 198.43146 -214 215 L -214 545 C -214 561.56854 -227.43146 575 -244 575 L -651 575 C -667.56854 575 -681 561.56854 -681 545 L -681 215 C -681 198.43146 -667.56854 185 -651 185 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(-676 325)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="129.5022" y="45">Check In</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="88.55615" y="100">Microservice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 135 185 L 542 185 C 558.56854 185 572 198.43146 572 215 L 572 545 C 572 561.56854 558.56854 575 542 575 L 135 575 C 118.43146 575 105 561.56854 105 545 L 105 215 C 105 198.43146 118.43146 185 135 185 Z" fill="#aa97fe"/>
+        <path d="M 135 185 L 542 185 C 558.56854 185 572 198.43146 572 215 L 572 545 C 572 561.56854 558.56854 575 542 575 L 135 575 C 118.43146 575 105 561.56854 105 545 L 105 215 C 105 198.43146 118.43146 185 135 185 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(110 325)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="130.39209" y="45">Boarding</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="102.95923" y="100">Microservie</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <path d="M 920.58 185 L 1327.58 185 C 1344.1485 185 1357.58 198.43146 1357.58 215 L 1357.58 545 C 1357.58 561.56854 1344.1485 575 1327.58 575 L 920.58 575 C 904.0115 575 890.58 561.56854 890.58 545 L 890.58 215 C 890.58 198.43146 904.0115 185 920.58 185 Z" fill="#a4f8fd"/>
+        <path d="M 920.58 185 L 1327.58 185 C 1344.1485 185 1357.58 198.43146 1357.58 215 L 1357.58 545 C 1357.58 561.56854 1344.1485 575 1327.58 575 L 920.58 575 C 904.0115 575 890.58 561.56854 890.58 545 L 890.58 215 C 890.58 198.43146 904.0115 185 920.58 185 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(895.58 325)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="72.38428" y="45">Eligibility Rules</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="78.65747" y="100">Microservices</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
