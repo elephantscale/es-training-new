@@ -108,5 +108,7 @@ January 08, 2023
 
 
 ## Our references
-* https://github.com/lanl/quantum_algorithms
-* https://qiskit.org/textbook/preface.html
+* [Paper](https://arxiv.org/abs/1804.03719)
+* [Repo](https://github.com/lanl/quantum_algorithms)
+* [Qiskit Testbook](https://qiskit.org/textbook/preface.html)
+* [Video](https://www.youtube.com/watch?v=NZD9APb7ZtY&t=2s)
