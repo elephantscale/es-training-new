@@ -39,7 +39,20 @@ January 08, 2023
 
 ## Course Outline:
 
-### Introduction
+### Introduction to Quantum Computing
+* From bits to qubits
+  * Dirac notation
+  * Measurements
+  * Bloch sphere
+* Quantum circuit
+  * Basic single-qubit and two-qubit gates
+  * Multiple quantum states
+* Entanglement
+  * Bell states
+  * Teleportation
+  * Q-sphere
+
+### Programming a Quantum Computer
 * The quantum computing programming model
 * The qubit
 * System of qubits
@@ -79,27 +92,6 @@ January 08, 2023
 *  Problem definition and background
 *  Algorithm description
 *  Algorithm implemented on IBM’s 5-qubit computer
-
-### Matrix Elements of Group Representations
-
-*  Problem definition and background
-*  Algorithm description
-*  Algorithm implemented on IBM’s 5-qubit computer
-
-### Quantum Verification of Matrix Products
-
-*  Problem definition and background
-*  Algorithm description
-*  Group Isomorphism
-*  Problem definition and background
-*  Algorithm description
-*  Algorithm implemented using Qiskit
-
-###  Quantum Random Walks
-
-*  Problem definition and background
-*  Example of a quantum random walk
-*  Algorithm implementation using Qiskit on IBM Q
 
 ### Conclusion
 
