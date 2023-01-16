@@ -8,3 +8,5 @@
     Correct! When applying Transfer Learning, the bias in the pretrained model used __perspires__ in the fine-tuned model.
 
 Not perspires but transpires
+
+* [VentureBeat on GPT3 and HuggingFace](https://harishgarg.com/writing/how-to-fine-tune-gpt-3-api/)
