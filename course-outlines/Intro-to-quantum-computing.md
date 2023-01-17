@@ -51,6 +51,7 @@ January 08, 2023
   * Bell states
   * Teleportation
   * Q-sphere
+* When to use a Quantum Computer
 
 ### Programming a Quantum Computer
 * The quantum computing programming model
