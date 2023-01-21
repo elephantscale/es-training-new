@@ -1,0 +1,37 @@
+# to generate slides
+# $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
+
+## ============== updated upto here ==============
+
+00-About-Internet2-Class.md
+
+INTRO-1-Introducing-the-cloud-and-the-cloud-providers.md
+INTRO-2-well-architected-frameworks.md
+
+USER-1-IAM-user-management.md
+
+STORAGE-1-Cloud-storage-and-databases.md
+
+NETWORKING-1-Networking-and-data-movement.md
+
+COMPUTE-1-Virtual-machines-and-Serverless.md
+COMPUTE-2-Scaling-and-Elasticity.md
+
+CONTAINER-1-Containers-and-Kubernetes.md
+
+AUDIT-1-Cost-Management.md
+
+# --- 07-ml
+../../machine-learning/generic/Machine-Learning-Primer.md
+ML-1-AI-ML-in-Cloud.md
+../../machine-learning/sagemaker/SageMaker.md
+# TODO: add more ML cloud specific
+
+## IAC 
+../../terraform/slides/Introduction-to-Terraform.md
+../../terraform/slides/Terraform-Setup.md
+../../terraform/slides/Terraform-Basics.md
+
+## TODO - Ansible
+
+
