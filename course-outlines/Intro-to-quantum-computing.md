@@ -1,7 +1,7 @@
 # Quantum Computing for Classical Programmers
 © Elephant Scale
 
-January 08, 2023
+January 23, 2023
 
 ## Overview
 
