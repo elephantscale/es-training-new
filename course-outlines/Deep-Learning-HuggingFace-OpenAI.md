@@ -96,3 +96,7 @@ OpenAI model and using them for work projects.
 ### OpenAI and GPT-3
 * Use cases
 * Implementing OpenAI API
+
+### Our references (not to send)
+
+* [https://www.youtube.com/watch?v=JTxsNm9IdYU]( A Crash Course on Chat GPT for Beginners)
