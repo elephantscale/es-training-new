@@ -1,0 +1,22 @@
+# to generate slides
+# $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
+
+About-Internet2-Class.md
+introduction-to-the-cloud.md
+IAM.md
+cloud-storage-and-databases.md
+networking-and-data-movement.md
+containerization.md
+scale.md
+$ES_HOME/es-training-new/microservices/slides/microservices.md
+ai-ml.md
+$ES_HOME/es-training-new/machine-learning/generic/sagemaker/SageMaker.md
+performance-optimization.md
+cost-management.md
+architecting.md
+$ES_HOME/es-training-new/spark/slides/SPARK-Intro.md
+data-analytics.md
+iaas.md
+$ES_HOME/es-training-new/terraform/slides/terraform-intro.md
+$ES_HOME/es-training-new/terraform/slides/terraform-walk-through.md
+workflow.md
