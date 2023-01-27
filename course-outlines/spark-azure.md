@@ -1,4 +1,4 @@
-# Spark on Azure
+# Spark and PySpark on Azure
 
 ## Overview
 
@@ -14,6 +14,7 @@ This class is taught with Python language and using Jupyter environment.  This c
 ## What You Will Learn
 
 * Spark ecosystem
+* PySpark and its place in Spark ecosystem
 * New features in Spark3
 * How to use Databricks Spark on Azure
 * Spark Shell
