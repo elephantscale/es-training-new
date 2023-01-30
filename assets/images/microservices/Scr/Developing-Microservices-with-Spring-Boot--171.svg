@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="434 -410 1279 1256" width="1279" height="1256">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="75" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-23 11:24:24 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_4">
+        <rect x="435" y="-409" width="1277" height="418" fill="#fcf3e3"/>
+        <rect x="435" y="-409" width="1277" height="418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(440 -292)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="75" font-weight="700" fill="#2e006e" x="429.5022" y="75">Spring Boot</tspan>
+          <tspan font-family="Century Gothic" font-size="75" font-weight="700" fill="#2e006e" x="357.52344" y="167">Application Jar</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="435" y="9" width="1277" height="418" fill="#f3d9a8"/>
+        <rect x="435" y="9" width="1277" height="418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(440 172)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="75" font-weight="700" fill="#2e006e" x="388.24854" y="75">Java Runtime</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <rect x="435" y="427" width="1277" height="418" fill="#e3a92e"/>
+        <rect x="435" y="427" width="1277" height="418" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(440 590)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="75" font-weight="700" fill="#2e006e" x="310.2639" y="75">Operating System</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-621 -165 1420 889" width="1420" height="889">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M 2.5142857 0 L 0 -.9428571 L 0 .9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-23 06:27:55 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <path d="M 327.37536 -164 L 788.4816 -164 C 794.0044 -164 798.4816 -159.52285 798.4816 -154 L 798.4816 68.518625 C 798.4816 74.04147 794.0044 78.51862 788.4816 78.51862 L 327.37536 78.51862 C 321.8525 78.51862 317.37536 74.04147 317.37536 68.518625 L 317.37536 -154 C 317.37536 -159.52285 321.8525 -164 327.37536 -164 Z" fill="#aa97fe"/>
+        <path d="M 327.37536 -164 L 788.4816 -164 C 794.0044 -164 798.4816 -159.52285 798.4816 -154 L 798.4816 68.518625 C 798.4816 74.04147 794.0044 78.51862 788.4816 78.51862 L 327.37536 78.51862 C 321.8525 78.51862 317.37536 74.04147 317.37536 68.518625 L 317.37536 -154 C 317.37536 -159.52285 321.8525 -164 327.37536 -164 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(322.37536 -67.24069)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="186.7445" y="40">Book</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 327.37536 480.36585 L 788.4816 480.36585 C 794.0044 480.36585 798.4816 484.843 798.4816 490.36585 L 798.4816 712.8845 C 798.4816 718.4073 794.0044 722.8845 788.4816 722.8845 L 327.37536 722.8845 C 321.8525 722.8845 317.37536 718.4073 317.37536 712.8845 L 317.37536 490.36585 C 317.37536 484.843 321.8525 480.36585 327.37536 480.36585 Z" fill="#ebdea6"/>
+        <path d="M 327.37536 480.36585 L 788.4816 480.36585 C 794.0044 480.36585 798.4816 484.843 798.4816 490.36585 L 798.4816 712.8845 C 798.4816 718.4073 794.0044 722.8845 788.4816 722.8845 L 327.37536 722.8845 C 321.8525 722.8845 317.37536 718.4073 317.37536 712.8845 L 317.37536 490.36585 C 317.37536 484.843 321.8525 480.36585 327.37536 480.36585 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(322.37536 577.1252)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="167.94568" y="40">Search</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M -610 152.09169 L -148.8938 152.09169 C -143.37095 152.09169 -138.8938 156.56884 -138.8938 162.0917 L -138.8938 384.6103 C -138.8938 390.13316 -143.37095 394.6103 -148.8938 394.6103 L -610 394.6103 C -615.52285 394.6103 -620 390.13316 -620 384.6103 L -620 162.0917 C -620 156.56884 -615.52285 152.09169 -610 152.09169 Z" fill="#fae7fd"/>
+        <path d="M -610 152.09169 L -148.8938 152.09169 C -143.37095 152.09169 -138.8938 156.56884 -138.8938 162.0917 L -138.8938 384.6103 C -138.8938 390.13316 -143.37095 394.6103 -148.8938 394.6103 L -610 394.6103 C -615.52285 394.6103 -620 390.13316 -620 384.6103 L -620 162.0917 C -620 156.56884 -615.52285 152.09169 -610 152.09169 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-615 248.851)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="185.16248" y="40">Flight</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(-54.95676 43.50241)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Validate Flight</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(-54.95676 462)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Validate Flight</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <path d="M 317.37536 -42.74069 L 103.28016 -42.74069 C 92.15702 -42.74069 83.13011 -33.74222 83.09501 -22.619138 L 83.03167 -2.5449223 C 83.03157 -2.5133668 83.03152 -2.481811 83.03152 -2.4502553 L 83.03152 38.50241" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_4">
+        <path d="M 317.37536 601.6252 L 113.03152 601.6252 C 96.46298 601.6252 83.03152 588.1937 83.03152 571.6252 L 83.03152 516" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_3">
+        <path d="M 83.03152 97.50241 L 83.03152 206.43858 C 83.03152 223.00712 69.60006 236.43858 53.03152 236.43858 C 52.9562 236.43858 52.88088 236.4383 52.805565 236.43773 L -110.99459 235.204" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_2">
+        <path d="M 83.03152 457 L 83.03152 359.21203 C 83.03152 342.6435 69.60006 329.21203 53.03152 329.21203 L -110.9938 329.21203" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+    </g>
+  </g>
+</svg>
