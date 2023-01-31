@@ -26,8 +26,13 @@ January 23, 2023
 * Two days
 
 ## Audience:
-* computer scientists, physicists, and engineers.
 
+* Computer scientists, physicists, and engineers.
+
+## Skill Level
+
+* Introductory to intermediate
+* 
 ## Prerequisites
 
 * Background in software engineering
