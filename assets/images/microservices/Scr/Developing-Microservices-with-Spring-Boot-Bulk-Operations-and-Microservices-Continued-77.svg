@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-541 -343 2115 1293" width="2115" height="1293">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M 2.24 0 L 0 -.84 L 0 .84 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 6 2 2 2 2 9 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="-189.99977" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-style="italic" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-BoldItalic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-23 09:53:15 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_11">
+        <path d="M 1068.493 -342 L 1542.2578 -342 C 1558.8263 -342 1572.2578 -328.56854 1572.2578 -312 L 1572.2578 153.47335 C 1572.2578 170.0419 1558.8263 183.47335 1542.2578 183.47335 L 1068.493 183.47335 C 1051.9244 183.47335 1038.4929 170.0419 1038.4929 153.47335 L 1038.4929 -312 C 1038.4929 -328.56854 1051.9244 -342 1068.493 -342 Z" fill="#a4f8fd"/>
+        <path d="M 1068.493 -342 L 1542.2578 -342 C 1558.8263 -342 1572.2578 -328.56854 1572.2578 -312 L 1572.2578 153.47335 C 1572.2578 170.0419 1558.8263 183.47335 1542.2578 183.47335 L 1068.493 183.47335 C 1051.9244 183.47335 1038.4929 170.0419 1038.4929 153.47335 L 1038.4929 -312 C 1038.4929 -328.56854 1051.9244 -342 1068.493 -342 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1043.4929 -140.26332)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="160.88144" y="50">Invoices</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="114.38486" y="111">Microsevice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 1069.5294 423.92665 L 1543.2942 423.92665 C 1559.8628 423.92665 1573.2942 437.3581 1573.2942 453.92665 L 1573.2942 919.4 C 1573.2942 935.9685 1559.8628 949.4 1543.2942 949.4 L 1069.5294 949.4 C 1052.9608 949.4 1039.5294 935.9685 1039.5294 919.4 L 1039.5294 453.92665 C 1039.5294 437.3581 1052.9608 423.92665 1069.5294 423.92665 Z" fill="#ebdea6"/>
+        <path d="M 1069.5294 423.92665 L 1543.2942 423.92665 C 1559.8628 423.92665 1573.2942 437.3581 1573.2942 453.92665 L 1573.2942 919.4 C 1573.2942 935.9685 1559.8628 949.4 1543.2942 949.4 L 1069.5294 949.4 C 1052.9608 949.4 1039.5294 935.9685 1039.5294 919.4 L 1039.5294 453.92665 C 1039.5294 437.3581 1052.9608 423.92665 1069.5294 423.92665 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1044.5294 625.6633)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="192.38779" y="50">Order</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="106.38925" y="111">Microservice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M -510 40.963323 L -36.235152 40.963323 C -19.66661 40.963323 -6.2351525 54.39478 -6.2351525 70.96332 L -6.2351525 536.4367 C -6.2351525 553.0052 -19.66661 566.4367 -36.235152 566.4367 L -510 566.4367 C -526.56854 566.4367 -540 553.0052 -540 536.4367 L -540 70.96332 C -540 54.39478 -526.56854 40.963323 -510 40.963323 Z" fill="#fffaf8"/>
+        <path d="M -510 40.963323 L -36.235152 40.963323 C -19.66661 40.963323 -6.2351525 54.39478 -6.2351525 70.96332 L -6.2351525 536.4367 C -6.2351525 553.0052 -19.66661 566.4367 -36.235152 566.4367 L -510 566.4367 C -526.56854 566.4367 -540 553.0052 -540 536.4367 L -540 70.96332 C -540 54.39478 -526.56854 40.963323 -510 40.963323 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(118.2896 -157.38554)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Send Invoice for pre-aggregation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(134.69584 696.6382)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Send Order for pre-aggregation</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <path d="M 1038.4929 -80.17482 L -242.5689 -84.55011 C -259.13736 -84.6067 -272.6146 -71.22119 -272.6712 -54.652745 C -272.67127 -54.631046 -272.67132 -54.60935 -272.67135 -54.58765 L -272.7444 4.0633513" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_5">
+        <path d="M 1039.5294 686.6633 L -249.03588 686.6633 C -265.60442 686.6633 -279.03588 673.2319 -279.03588 656.6633 C -279.03588 656.49554 -279.03447 656.3278 -279.03165 656.16 L -278.14522 603.3315" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M -440.6176 382.16667 L -105.61758 382.16667 C -94.57188 382.16667 -85.61758 391.12097 -85.61758 402.16667 L -85.61758 495.16667 C -85.61758 506.21236 -94.57188 515.16667 -105.61758 515.16667 L -440.6176 515.16667 C -451.66327 515.16667 -460.6176 506.21236 -460.6176 495.16667 L -460.6176 402.16667 C -460.6176 391.12097 -451.66327 382.16667 -440.6176 382.16667 Z" fill="#e3a92e"/>
+        <path d="M -440.6176 382.16667 L -105.61758 382.16667 C -94.57188 382.16667 -85.61758 391.12097 -85.61758 402.16667 L -85.61758 495.16667 C -85.61758 506.21236 -94.57188 515.16667 -105.61758 515.16667 L -440.6176 515.16667 C -451.66327 515.16667 -460.6176 506.21236 -460.6176 495.16667 L -460.6176 402.16667 C -460.6176 391.12097 -451.66327 382.16667 -440.6176 382.16667 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(-428.61074 185)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="85.51025" y="50">Billing</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Microservice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(-435.91054 399.66667)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-style="italic" font-weight="700" fill="#2e006e" x="0" y="40">Copy of invoices</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-style="italic" font-weight="700" fill="#2e006e" x="19.59961" y="89">Copy of orders</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

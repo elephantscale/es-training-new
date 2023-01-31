@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1240 -1229 2291 1601" width="2291" height="1601">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="55" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="55" panose-1="2 11 6 2 2 2 2 9 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="-138.18165" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-style="italic" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-BoldItalic"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M 2.0923077 0 L 0 -.7846154 L 0 .7846154 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-23 09:45:35 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_12">
+        <rect x="-1239" y="-1228" width="753.1253" height="1599" fill="#ebdea6"/>
+        <rect x="-1239" y="-1228" width="753.1253" height="1599" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1234 -532)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="138.78433" y="60">Nexus / Archiva</tspan>
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="193.39005" y="128">Build Artefact</tspan>
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="232.96158" y="195">Repository</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <rect x="212.83759" y="-112.53364" width="837.2181" height="353.68445" fill="#fffbfb"/>
+        <rect x="212.83759" y="-112.53364" width="837.2181" height="353.68445" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(217.83759 -2.6914153)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="242.56656" y="55">Microservice</tspan>
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="196.36172" y="122">(maven project)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="212.83759" y="234.96752" width="837.2181" height="136.03248" fill="#cdecfd"/>
+        <rect x="212.83759" y="234.96752" width="837.2181" height="136.03248" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(217.83759 269.48376)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="296.4655" y="55">pom.xml</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="212.83759" y="-603.48724" width="837.2181" height="353.68445" fill="#aa97fe"/>
+        <rect x="212.83759" y="-603.48724" width="837.2181" height="353.68445" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(217.83759 -527.145)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="131.46548" y="55">Runtime environment</tspan>
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="143.55045" y="122">Dependencies (jars)</tspan>
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="183.1757" y="189">Jetty/tomcat etc.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="212.83759" y="-874.3155" width="837.2181" height="270.8283" fill="#a4f8fd"/>
+        <rect x="212.83759" y="-874.3155" width="837.2181" height="270.8283" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(217.83759 -805.9014)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="230.46817" y="55">Microservices</tspan>
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="143.55045" y="122">Dependencies (jars)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="212.83759" y="-1228" width="837.2181" height="353.68445" fill="#fffbfb"/>
+        <rect x="212.83759" y="-1228" width="837.2181" height="353.68445" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(217.83759 -1118.1578)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="242.56656" y="55">Microservice </tspan>
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="338.80313" y="122">Code</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(264.0504 -226.2529)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="55" font-style="italic" font-weight="700" fill="#2e006e" x="0" y="55">microserviceexecutable.jar</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="212.83759" y1="-1051.9511" x2="-437.8612" y2="-1053.1844" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+      </g>
+      <g id="Line_4">
+        <line x1="212.83759" y1="-738.9014" x2="-439.9747" y2="-738.9014" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+      </g>
+      <g id="Line_3">
+        <line x1="212.83759" y1="-427.1648" x2="-439.97475" y2="-427.9754" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+      </g>
+      <g id="Line_2">
+        <line x1="212.83759" y1="302.98376" x2="-439.9747" y2="302.98376" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+      </g>
+    </g>
+  </g>
+</svg>

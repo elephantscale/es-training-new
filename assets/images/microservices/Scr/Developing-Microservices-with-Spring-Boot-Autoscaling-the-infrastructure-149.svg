@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-415 331 1708 462" width="1708" height="462">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-23 10:47:51 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_17">
+        <path d="M -381.6914 334 L 381.9298 334 C 398.49833 334 411.9298 347.43146 411.9298 364 L 411.9298 760 C 411.9298 776.5685 398.49833 790 381.9298 790 L -381.6914 790 C -398.25993 790 -411.6914 776.5685 -411.6914 760 L -411.6914 364 C -411.6914 347.43146 -398.25993 334 -381.6914 334 Z" fill="white"/>
+        <path d="M -381.6914 334 L 381.9298 334 C 398.49833 334 411.9298 347.43146 411.9298 364 L 411.9298 760 C 411.9298 776.5685 398.49833 790 381.9298 790 L -381.6914 790 C -398.25993 790 -411.6914 776.5685 -411.6914 760 L -411.6914 364 C -411.6914 347.43146 -398.25993 334 -381.6914 334 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_16">
+        <rect x="-301.13428" y="575.9053" width="266.74095" height="161.44847" fill="#a4f8fd"/>
+        <rect x="-301.13428" y="575.9053" width="266.74095" height="161.44847" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-296.13428 632.1295)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="85.16734" y="40">VM1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <rect x="-273.64124" y="470.6128" width="211.75487" height="105.29248" fill="#ffe7e9"/>
+        <rect x="-273.64124" y="470.6128" width="211.75487" height="105.29248" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-268.64124 498.75905)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="12.879387" y="40">Service 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <rect x="34.631737" y="575.9053" width="266.74095" height="161.44847" fill="#aa97fe"/>
+        <rect x="34.631737" y="575.9053" width="266.74095" height="161.44847" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(39.631737 632.1295)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="85.16734" y="40">VM2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="62.12477" y="470.6128" width="211.75487" height="105.29248" fill="#fee8e9"/>
+        <rect x="62.12477" y="470.6128" width="211.75487" height="105.29248" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(67.12477 498.75905)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="12.879387" y="40">Service 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 496 334 L 1259.6212 334 C 1276.1897 334 1289.6212 347.43146 1289.6212 364 L 1289.6212 760 C 1289.6212 776.5685 1276.1897 790 1259.6212 790 L 496 790 C 479.43146 790 466 776.5685 466 760 L 466 364 C 466 347.43146 479.43146 334 496 334 Z" fill="white"/>
+        <path d="M 496 334 L 1259.6212 334 C 1276.1897 334 1289.6212 347.43146 1289.6212 364 L 1289.6212 760 C 1289.6212 776.5685 1276.1897 790 1259.6212 790 L 496 790 C 479.43146 790 466 776.5685 466 760 L 466 364 C 466 347.43146 479.43146 334 496 334 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+      <g id="Graphic_8">
+        <rect x="576.5571" y="575.9053" width="266.74095" height="161.44847" fill="#ebdea6"/>
+        <rect x="576.5571" y="575.9053" width="266.74095" height="161.44847" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(581.5571 632.1295)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="85.16734" y="40">VM3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="604.05014" y="470.6128" width="211.75487" height="105.29248" fill="#ffe7e9"/>
+        <rect x="604.05014" y="470.6128" width="211.75487" height="105.29248" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(609.05014 498.75905)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="12.879387" y="40">Service 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="912.3231" y="575.9053" width="266.74095" height="161.44847" fill="#e3a92e"/>
+        <rect x="912.3231" y="575.9053" width="266.74095" height="161.44847" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(917.3231 632.1295)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="85.16734" y="40">VM4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="939.8162" y="470.6128" width="211.75487" height="105.29248" fill="#fee8e9"/>
+        <rect x="939.8162" y="470.6128" width="211.75487" height="105.29248" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(944.8162 498.75905)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="12.879387" y="40">Service 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(801.4043 361)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Reserve</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(-62.273376 361)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Active</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

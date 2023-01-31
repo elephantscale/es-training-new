@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="498 -813 1216 2189" width="1216" height="2189">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="70" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-01-23 11:22:03 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_6">
+        <rect x="498.99754" y="956.3693" width="1214" height="419" fill="#8e7dd6"/>
+        <rect x="498.99754" y="956.3693" width="1214" height="419" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(503.99754 1080.8693)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#2e006e" x="501.2041" y="70">Bootfs</tspan>
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#2e006e" x="373.11572" y="155">(Linux Kernel)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="498.99754" y="514.277" width="1214" height="419" fill="#aa97fe"/>
+        <rect x="498.99754" y="514.277" width="1214" height="419" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(503.99754 638.777)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#2e006e" x="501.2041" y="70">Roofts</tspan>
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#2e006e" x="311.52393" y="155">(Ubuntu / Alpine)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="498.99754" y="72.18466" width="1214" height="419" fill="#c5b9ff"/>
+        <rect x="498.99754" y="72.18466" width="1214" height="419" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(503.99754 239.18466)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#2e006e" x="546.69727" y="70">JRE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="498.99754" y="-369.90767" width="1214" height="419" fill="#e0daff"/>
+        <rect x="498.99754" y="-369.90767" width="1214" height="419" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(503.99754 -202.90767)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#2e006e" x="411.60205" y="70">Spring Boot</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <rect x="498.99754" y="-812" width="1214" height="419" fill="#f2efff"/>
+        <rect x="498.99754" y="-812" width="1214" height="419" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(503.99754 -645)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="70" font-weight="700" fill="#2e006e" x="468.32324" y="70">Write-FS</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
