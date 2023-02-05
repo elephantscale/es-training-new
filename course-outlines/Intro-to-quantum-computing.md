@@ -107,6 +107,6 @@ January 23, 2023
 
 ## Our references
 * [Paper](https://arxiv.org/abs/1804.03719)
-* [Repo](https://github.com/lanl/quantum_algorithms)
-* [Qiskit Testbook](https://qiskit.org/textbook/preface.html)
+* [Repo](https://github.com/elephantscale/quantum_algorithms)
+* [Qiskit Textbook](https://qiskit.org/textbook/preface.html)
 * [Elisa Baumer Video](https://www.youtube.com/watch?v=NZD9APb7ZtY&t=2s)
