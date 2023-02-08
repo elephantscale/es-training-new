@@ -23,6 +23,7 @@ January 23, 2023
 
   - Explain the principles of quantum computing and quantum algorithms.
   - Apply quantum algorithms to solve problems in chemistry, finance, and machine learning.
+  - Use a local emulator in Java.
   - Be ready for the quantum computing revolution and estimate its feasibility for their
     applications.
 
