@@ -1,4 +1,4 @@
-# Quantum Computing for Classical Programmers
+# Quantum Computing for Classical (Java) Programmers
 © Elephant Scale
 
 January 23, 2023
