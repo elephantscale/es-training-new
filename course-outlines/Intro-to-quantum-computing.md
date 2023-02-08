@@ -12,6 +12,11 @@ January 23, 2023
 * The course introduces computer scientists, physicists, and engineers to quantum
   algorithms and provides a blueprint for their implementations.
 
+* **Finance use cases**
+  * Front-office and back-office decisions on client management for "know your customer," credit origination, and onboarding,
+  * Treasury management, trading and asset management,
+  * Business optimization, including risk management and compliance.
+
 ## Benefits
 
 * After taking the course, participants will be able to
@@ -110,3 +115,4 @@ January 23, 2023
 * [Repo](https://github.com/elephantscale/quantum_algorithms)
 * [Qiskit Textbook](https://qiskit.org/textbook/preface.html)
 * [Elisa Baumer Video](https://www.youtube.com/watch?v=NZD9APb7ZtY&t=2s)
+* [IBM courses on Quiskit](https://www.youtube.com/watch?v=42OiBzfdE2o&list=PLOFEBzvs-VvqKKMXX4vbi4EB1uaErFMSO)
