@@ -99,4 +99,4 @@ OpenAI model and using them for work projects.
 
 ### Our references (not to send)
 
-* [https://www.youtube.com/watch?v=JTxsNm9IdYU]( A Crash Course on Chat GPT for Beginners)
+* [A Crash Course on Chat GPT for Beginners](https://www.youtube.com/watch?v=JTxsNm9IdYU)

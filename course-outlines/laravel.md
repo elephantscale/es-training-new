@@ -5,8 +5,8 @@
 
 ## About the Course
 
-Laravel is a web application framework with expressive, elegant syntax. 
-The designers of Laravel have already laid the foundation — freeing developers to create without sweating the small things.
+* Laravel is a web application framework with expressive, elegant syntax. 
+* The designers of Laravel have already laid the foundation — freeing developers to create without sweating the small things.
 
 ## Course Information
 Duration: 4-5 days
