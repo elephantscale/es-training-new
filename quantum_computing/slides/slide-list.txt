@@ -1,1 +1,6 @@
 About-Quantum-Computing-Class.md
+Introduction.md
+Superposition-Entanglement-Networking.md
+Quantum-algorithms.md
+
+
