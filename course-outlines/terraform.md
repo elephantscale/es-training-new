@@ -47,6 +47,16 @@ Lectures and hands-on labs. (50%, 50%)
 * Chrome browser
   - SSH client for your platform
 
+## Lab flavor
+
+* Terraform can be used for most clouds
+* Currently available flavors of the labs include
+  * Amazon AWS
+  * Google cloud GCP
+  * Oracle cloud OIC
+
+* A reasonably mod
+* 
 ## Detailed Outline
 
 * Why Terraform
