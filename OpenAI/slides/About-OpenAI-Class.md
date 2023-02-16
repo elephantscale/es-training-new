@@ -51,7 +51,7 @@ Notes:
  * This is a Deep Learning & Advanced Applications based on HuggingFace class
    - No previous knowledge is assumed (but may be helpful) 
    - Class will be based on the pace of majority of the students
-![](../images/01.png)
+![](../images/01-openai-logo.png)
    
 Notes:
 
