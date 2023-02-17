@@ -35,3 +35,31 @@
 * Fine-tuning improves on few-shot learning
 * It trains on many more examples than can fit in the prompt
 * Better results on a wide number of tasks
+* Advantage:
+  * Once a model has been fine-tuned, you won't need to provide examples in the prompt anymore. 
+  * This saves costs and enables lower-latency requests.
+
+---
+
+## Fine-tuning steps
+
+* Prepare and upload training data
+* Train a new fine-tuned model
+* Use your fine-tuned model
+
+---
+
+## Pricing per 1K tokens
+
+| Ada (fastest) | Babbage | Curie   | Davinci (most powerful) |
+|---------------|---------|---------|-------------------------|
+| $0.0004       | $0.0005 | $0.0020 | $0.0200                 |
+
+---
+
+## Lab: Fine-tuning
+
+* Follow the steps in this lab
+* [https://github.com/elephantscale/openai-cookbook/blob/main/examples/Fine-tuned_classification.ipynb](https://github.com/elephantscale/openai-cookbook/blob/main/examples/Fine-tuned_classification.ipynb)
+
+---
