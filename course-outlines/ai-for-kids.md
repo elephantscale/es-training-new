@@ -36,3 +36,8 @@ February 20, 2023
 * What is ChatGPT
 * How to fine-tune a ChatGPT for your needs
 * How we created KidGPT
+
+### Program notes
+
+* Neural Networks for Babies
+  * [Let's watch it together]((https://www.youtube.com/watch?v=IX6acE4l1YQ))
