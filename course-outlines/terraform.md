@@ -55,8 +55,7 @@ Lectures and hands-on labs. (50%, 50%)
   * Google cloud GCP
   * Oracle cloud OIC
 
-* A reasonably mod
-* 
+
 ## Detailed Outline
 
 * Why Terraform
