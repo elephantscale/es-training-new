@@ -40,4 +40,4 @@ February 20, 2023
 ### Program notes
 
 * Neural Networks for Babies
-  * [Let's watch it together]((https://www.youtube.com/watch?v=IX6acE4l1YQ))
+  * [Let's watch it together](https://www.youtube.com/watch?v=IX6acE4l1YQ)
