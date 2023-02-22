@@ -51,10 +51,46 @@
 ## Applications of Quantum Computing
 
 1. Energy Grid Optimization
-   1. [Source](https://qtft.org/post/quantum-computing-for-energy-system-optimisation)
+   * [Article by Jirawat Tangpanitanon](https://qtft.org/post/quantum-computing-for-energy-system-optimisation)
 2. Weather forecasting
+   * Because of multiple parameters
+3. Finance
+   * Prediction of financial markets
+4. Risk analysis
+   * Credit risk analysis
+5. Portfolio optimization
+6. Supply chain and inventory optimization
+7. Battery, electronic chip design
+8. Drug development, medicine discovery
+9. Material science - novel material discovery
+10. Quantum cryptography & cybersecurity
+11. Accelerating Machine Learning
 
 --- 
+## Quantum Computing vs. Classical
+
+| Quantum Computing                                                                                         | Classical Computing                                  |
+|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| Quantum bits of Qubits => Two-level quantum systems => \|0> or \|1>  or linear combination of \|0> & \|1> | Classical bits 0 & 1 => voltage levels - ON or OFF   |
+| Calculation power increases exponentially with no of qubits                                               | Calculation power increases linearly with no of bits |
+| Hardware varies, such as superconducting qubits, ion traps, integrated photonics, Majorano Fermions       | Hardware made of CMOS circuits                       |
+| QPU - process in parallel                                                                                 | CPU - process sequentially                           |
+| Useful for optimization,  data analysis, and simulation                                                   | Can be used for everyday tasks                       |
+
+---
+
+## Qubits picture
+
+![](../images/02-qubit.png)
+
+---
+
+## Majorano Fermions
+
+![](../images/03-majorana-fermions.png)
+
+---
+
 
 # Evolution, revolution, or hype?
 
