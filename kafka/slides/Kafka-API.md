@@ -739,45 +739,6 @@ Notes:
   - On Consumer: De-compress messages on the fly
 
 <img src="../../assets/images/kafka/compression-1.png"  style="width:70%;" /><!-- {"left" : 6.43, "top" : 1, "height" : 2.88, "width" : 3.61} -->
----
-
-## Compression
-
-<img src="../../assets/images/kafka/compression-comparisons-2.png" style="width:50%;float:right;"/><!-- {"left" : 1.08, "top" : 1.61, "height" : 6.42, "width" : 8.09} -->
-
-* Supported compression codecs
-  - Gzip, Snappy, LZ4, Zstd
-
-* **Snappy** (from Google) is a pretty good light weight compressor;  Easy on GPU and produces medium level compresison
-
-* Current favorite is **Zstd** (Facebook) - Good speed and produces compact size
-
-* Configured via Producer property **`compression.type`** (see next slide for code sample)
-
-* [Reference](https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression)
-
-Notes:
-
----
-
-## Compression
-
-* **Compression will slightly increase CPU usage**
-    - How ever, this is well worth the trade-off, as CPUs are very fast and we usually have plenty of CPU power to spare.
-    - Plus modern CPUs have compression algorithms built-in silicone
-
-* Here are some benchmark stats from [Message compression in Apache Kafka](https://developer.ibm.com/articles/benefits-compression-kafka-messaging/)
-
-* We can see Snappy (from Google) and zstd (from Facebook) giving a good balance of CPU usage, compression ratio, speed and network utilization
-
-<br />
-
-| Metrics                     | Uncompressed | Gzip  | Snappy | lz4  | Zstd |
-|-----------------------------|--------------|-------|--------|------|------|
-| Avg latency (ms)            | 65           | 10.4  | 10.1   | 9.2  | 10.7 |
-| Disk space (mb)             | 10           | 0.92  | 2.2    | 2.8  | 1.5  |
-| Effective compression ratio | 1            | 0.09  | 0.21   | 0.28 | 0.15 |
-| Process CPU usage %         | 2.35         | 11.46 | 7.25   | 5.89 | 8.93 |
 
 ---
 
@@ -802,11 +763,53 @@ props.put("compression.type", "snappy"); // <-- **enable compression**
 KafkaProducer<String, String> producer = new KafkaProducer<>(props);
 ```
 
+* Compression is enabled on **Producer** side.  No need to setup on Consumer side.  Consumers can automatically figure out the compression scheme
+
+---
+
+## Compression
+
+* **Compression will slightly increase CPU usage**
+    - How ever, this is well worth the trade-off, as CPUs are very fast and we usually have plenty of CPU power to spare.
+    - Plus modern CPUs have compression algorithms built-in silicone
+
+* Here are some benchmark stats from [Message compression in Apache Kafka](https://developer.ibm.com/articles/benefits-compression-kafka-messaging/)
+
+* We can see Snappy (from Google) and zstd (from Facebook) giving a good balance of CPU usage, compression ratio, speed and network utilization
+
+<br />
+
+| Metrics                     | Uncompressed | Gzip  | Snappy | lz4  | Zstd |
+|-----------------------------|--------------|-------|--------|------|------|
+| Avg latency (ms)            | 65           | 10.4  | 10.1   | 9.2  | 10.7 |
+| Disk space (mb)             | 10           | 0.92  | 2.2    | 2.8  | 1.5  |
+| Effective compression ratio | 1            | 0.09  | 0.21   | 0.28 | 0.15 |
+| Process CPU usage %         | 2.35         | 11.46 | 7.25   | 5.89 | 8.93 |
+
+---
+
+## Compression
+
+<img src="../../assets/images/kafka/compression-comparisons-2.png" style="width:50%;float:right;"/><!-- {"left" : 1.08, "top" : 1.61, "height" : 6.42, "width" : 8.09} -->
+
+* Supported compression codecs
+  - Gzip, Snappy, LZ4, Zstd
+
+* **Snappy** (from Google) is a pretty good light weight compressor;  Easy on GPU and produces medium level compresison
+
+* Current favorite is **Zstd** (Facebook) - Good speed and produces compact size
+
+* Configured via Producer property **`compression.type`** (see next slide for code sample)
+
+* [Reference](https://cwiki.apache.org/confluence/display/KAFKA/KIP-110%3A+Add+Codec+for+ZStandard+Compression)
+
+Notes:
+
 ---
 
 ## Compression Data Formats
 
-* **XML and JSON data formats are very good candidates for compression**.  Since they have lot of repeating elements, they compress well.
+* **Text data (XML,  JSON, CSV) formats are very good candidates for compression**.  Since they have lot of repeating elements, they compress well.
 * JSON data
 
 ```json
