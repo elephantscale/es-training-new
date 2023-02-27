@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-984 -789 2860 1082" width="2860" height="1082">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="60" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0061ff">
+      <g>
+        <path d="M 2.24 0 L 0 -.84 L 0 .84 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="65" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-19 07:35:37 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_9">
+        <path d="M -935.2932 -583.9398 L -360.62796 -583.9398 C -355.1051 -583.9398 -350.62796 -579.4626 -350.62796 -573.93977 L -350.62796 -206.71588 C -350.62796 -201.19304 -355.1051 -196.71588 -360.62796 -196.71588 L -935.2932 -196.71588 C -940.816 -196.71588 -945.2932 -201.19304 -945.2932 -206.71588 L -945.2932 -573.93977 C -945.2932 -579.4626 -940.816 -583.9398 -935.2932 -583.9398 Z" fill="#ebdea6"/>
+        <path d="M -935.2932 -583.9398 L -360.62796 -583.9398 C -355.1051 -583.9398 -350.62796 -579.4626 -350.62796 -573.93977 L -350.62796 -206.71588 C -350.62796 -201.19304 -355.1051 -196.71588 -360.62796 -196.71588 L -935.2932 -196.71588 C -940.816 -196.71588 -945.2932 -201.19304 -945.2932 -206.71588 L -945.2932 -573.93977 C -945.2932 -579.4626 -940.816 -583.9398 -935.2932 -583.9398 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-940.2932 -487.8278)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="98.32626" y="50">Development of</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="80.5455" y="121">Microservice 1 </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="23.33847" y="184">(On V1 of technology)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M -201.18127 -583.9398 L 373.484 -583.9398 C 379.00683 -583.9398 383.484 -579.4626 383.484 -573.93977 L 383.484 -206.71588 C 383.484 -201.19304 379.00683 -196.71588 373.484 -196.71588 L -201.18127 -196.71588 C -206.70411 -196.71588 -211.18127 -201.19304 -211.18127 -206.71588 L -211.18127 -573.93977 C -211.18127 -579.4626 -206.70411 -583.9398 -201.18127 -583.9398 Z" fill="#ebdea6"/>
+        <path d="M -201.18127 -583.9398 L 373.484 -583.9398 C 379.00683 -583.9398 383.484 -579.4626 383.484 -573.93977 L 383.484 -206.71588 C 383.484 -201.19304 379.00683 -196.71588 373.484 -196.71588 L -201.18127 -196.71588 C -206.70411 -196.71588 -211.18127 -201.19304 -211.18127 -206.71588 L -211.18127 -573.93977 C -211.18127 -579.4626 -206.70411 -583.9398 -201.18127 -583.9398 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-206.18127 -487.8278)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="98.32626" y="50">Development of</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="80.5455" y="121">Microservice 2 </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="23.33847" y="184">(On V2 of technology)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 532.9307 -583.9398 L 1107.5959 -583.9398 C 1113.1188 -583.9398 1117.5959 -579.4626 1117.5959 -573.93977 L 1117.5959 -206.71588 C 1117.5959 -201.19304 1113.1188 -196.71588 1107.5959 -196.71588 L 532.9307 -196.71588 C 527.4078 -196.71588 522.9307 -201.19304 522.9307 -206.71588 L 522.9307 -573.93977 C 522.9307 -579.4626 527.4078 -583.9398 532.9307 -583.9398 Z" fill="#ebdea6"/>
+        <path d="M 532.9307 -583.9398 L 1107.5959 -583.9398 C 1113.1188 -583.9398 1117.5959 -579.4626 1117.5959 -573.93977 L 1117.5959 -206.71588 C 1117.5959 -201.19304 1113.1188 -196.71588 1107.5959 -196.71588 L 532.9307 -196.71588 C 527.4078 -196.71588 522.9307 -201.19304 522.9307 -206.71588 L 522.9307 -573.93977 C 522.9307 -579.4626 527.4078 -583.9398 532.9307 -583.9398 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(527.9307 -487.8278)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="98.32626" y="50">Development of</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="80.5455" y="121">Microservice 3 </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="23.33847" y="184">(On V3 of technology)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 1267.0426 -583.9398 L 1841.7079 -583.9398 C 1847.2307 -583.9398 1851.7079 -579.4626 1851.7079 -573.93977 L 1851.7079 -206.71588 C 1851.7079 -201.19304 1847.2307 -196.71588 1841.7079 -196.71588 L 1267.0426 -196.71588 C 1261.5198 -196.71588 1257.0426 -201.19304 1257.0426 -206.71588 L 1257.0426 -573.93977 C 1257.0426 -579.4626 1261.5198 -583.9398 1267.0426 -583.9398 Z" fill="#ebdea6"/>
+        <path d="M 1267.0426 -583.9398 L 1841.7079 -583.9398 C 1847.2307 -583.9398 1851.7079 -579.4626 1851.7079 -573.93977 L 1851.7079 -206.71588 C 1851.7079 -201.19304 1847.2307 -196.71588 1841.7079 -196.71588 L 1267.0426 -196.71588 C 1261.5198 -196.71588 1257.0426 -201.19304 1257.0426 -206.71588 L 1257.0426 -573.93977 C 1257.0426 -579.4626 1261.5198 -583.9398 1267.0426 -583.9398 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1262.0426 -487.8278)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="98.32626" y="50">Development of</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="80.5455" y="121">Microservice 4 </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="23.33847" y="184">(On V4 of technology)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 532.9307 -102.79104 L 1107.5959 -102.79104 C 1113.1188 -102.79104 1117.5959 -98.31389 1117.5959 -92.79104 L 1117.5959 274.43284 C 1117.5959 279.9557 1113.1188 284.43284 1107.5959 284.43284 L 532.9307 284.43284 C 527.4078 284.43284 522.9307 279.9557 522.9307 274.43284 L 522.9307 -92.79104 C 522.9307 -98.31389 527.4078 -102.79104 532.9307 -102.79104 Z" fill="#ebdea6"/>
+        <path d="M 532.9307 -102.79104 L 1107.5959 -102.79104 C 1113.1188 -102.79104 1117.5959 -98.31389 1117.5959 -92.79104 L 1117.5959 274.43284 C 1117.5959 279.9557 1113.1188 284.43284 1107.5959 284.43284 L 532.9307 284.43284 C 527.4078 284.43284 522.9307 279.9557 522.9307 274.43284 L 522.9307 -92.79104 C 522.9307 -98.31389 527.4078 -102.79104 532.9307 -102.79104 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(527.9307 -6.6791045)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="98.32626" y="50">Development of</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="80.5455" y="121">Microservice 1 </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="23.33847" y="184">(On V3 of technology)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 1267.0426 -94.72388 L 1841.7079 -94.72388 C 1847.2307 -94.72388 1851.7079 -90.24673 1851.7079 -84.72388 L 1851.7079 282.5 C 1851.7079 288.02285 1847.2307 292.5 1841.7079 292.5 L 1267.0426 292.5 C 1261.5198 292.5 1257.0426 288.02285 1257.0426 282.5 L 1257.0426 -84.72388 C 1257.0426 -90.24673 1261.5198 -94.72388 1267.0426 -94.72388 Z" fill="#ebdea6"/>
+        <path d="M 1267.0426 -94.72388 L 1841.7079 -94.72388 C 1847.2307 -94.72388 1851.7079 -90.24673 1851.7079 -84.72388 L 1851.7079 282.5 C 1851.7079 288.02285 1847.2307 292.5 1841.7079 292.5 L 1267.0426 292.5 C 1261.5198 292.5 1257.0426 288.02285 1257.0426 282.5 L 1257.0426 -84.72388 C 1257.0426 -90.24673 1261.5198 -94.72388 1267.0426 -94.72388 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1262.0426 1.3880597)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="98.32626" y="50">Development of</tspan>
+          <tspan font-family="Century Gothic" font-size="60" font-weight="700" fill="#2e006e" x="80.5455" y="121">Microservice 2 </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="23.33847" y="184">(On V4 of technology)</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <line x1="-978.1819" y1="-679.01706" x2="1833.282" y2="-679.01706" marker-end="url(#FilledArrow_Marker)" stroke="#0061ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(80.70825 -783.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="65" font-weight="700" fill="#2e006e" x="0" y="65">Development Timelines</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-1165 -682 3257 1830" width="3257" height="1830">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 6 2 2 2 2 9 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="-217.1426" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-style="italic" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-BoldItalic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="35" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-20 17:50:55 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_26">
+        <text transform="translate(-1159.3333 -602.3324)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Search</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Functions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(-1159.3333 -289.85972)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Reservation</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Functions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(-1159.3333 22.612975)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Check In </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Functions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(-1159.3333 334.97103)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Back Office</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Functions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(-1159.3333 620.2685)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Data</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Management</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="172">Functions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(-1159.3333 952.9229)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Cross Cutting </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Functions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <path d="M 1572.7012 -56.0546 L 2081.2277 -56.0546 C 2086.7506 -56.0546 2091.2277 -51.57745 2091.2277 -46.0546 L 2091.2277 199.9284 C 2091.2277 205.45124 2086.7506 209.9284 2081.2277 209.9284 L 1572.7012 209.9284 C 1567.1783 209.9284 1562.7012 205.45124 1562.7012 199.9284 L 1562.7012 -46.0546 C 1562.7012 -51.57745 1567.1783 -56.0546 1572.7012 -56.0546 Z" fill="#ebdea6"/>
+        <path d="M 1572.7012 -56.0546 L 2081.2277 -56.0546 C 2086.7506 -56.0546 2091.2277 -51.57745 2091.2277 -46.0546 L 2091.2277 199.9284 C 2091.2277 205.45124 2086.7506 209.9284 2081.2277 209.9284 L 1572.7012 209.9284 C 1567.1783 209.9284 1562.7012 205.45124 1562.7012 199.9284 L 1562.7012 -46.0546 C 1562.7012 -51.57745 1567.1783 -56.0546 1572.7012 -56.0546 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1567.7012 6.4368966)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="181.8646" y="45">Loyalty</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="34.207123" y="90">Update passengers loyalty </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="208.86533" y="133">points</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <path d="M 406.6108 -681 L 915.1374 -681 C 920.6602 -681 925.1374 -676.52285 925.1374 -671 L 925.1374 -425.017 C 925.1374 -419.49415 920.6602 -415.017 915.1374 -415.017 L 406.6108 -415.017 C 401.08797 -415.017 396.6108 -419.49415 396.6108 -425.017 L 396.6108 -671 C 396.6108 -676.52285 401.08797 -681 406.6108 -681 Z" fill="#ebdea6"/>
+        <path d="M 406.6108 -681 L 915.1374 -681 C 920.6602 -681 925.1374 -676.52285 925.1374 -671 L 925.1374 -425.017 C 925.1374 -419.49415 920.6602 -415.017 915.1374 -415.017 L 406.6108 -415.017 C 401.08797 -415.017 396.6108 -419.49415 396.6108 -425.017 L 396.6108 -671 C 396.6108 -676.52285 401.08797 -681 406.6108 -681 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(401.6108 -618.5085)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="212.01108" y="45">Fare</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="59.782074" y="90">Fares between cities for</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="108.06943" y="133">each flight &amp; date</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 406.6108 -368.5273 L 915.1374 -368.5273 C 920.6602 -368.5273 925.1374 -364.05015 925.1374 -358.5273 L 925.1374 -112.5443 C 925.1374 -107.02146 920.6602 -102.5443 915.1374 -102.5443 L 406.6108 -102.5443 C 401.08797 -102.5443 396.6108 -107.02146 396.6108 -112.5443 L 396.6108 -358.5273 C 396.6108 -364.05015 401.08797 -368.5273 406.6108 -368.5273 Z" fill="#ebdea6"/>
+        <path d="M 406.6108 -368.5273 L 915.1374 -368.5273 C 920.6602 -368.5273 925.1374 -364.05015 925.1374 -358.5273 L 925.1374 -112.5443 C 925.1374 -107.02146 920.6602 -102.5443 915.1374 -102.5443 L 406.6108 -102.5443 C 401.08797 -102.5443 396.6108 -107.02146 396.6108 -112.5443 L 396.6108 -358.5273 C 396.6108 -364.05015 401.08797 -368.5273 406.6108 -368.5273 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(401.6108 -306.0358)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="162.95712" y="45">Payment</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="77.61533" y="90">Payment gateway for </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="118.21225" y="133">online payments</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 406.6108 -56.0546 L 915.1374 -56.0546 C 920.6602 -56.0546 925.1374 -51.57745 925.1374 -46.0546 L 925.1374 199.9284 C 925.1374 205.45124 920.6602 209.9284 915.1374 209.9284 L 406.6108 209.9284 C 401.08797 209.9284 396.6108 205.45124 396.6108 199.9284 L 396.6108 -46.0546 C 396.6108 -51.57745 401.08797 -56.0546 406.6108 -56.0546 Z" fill="#ebdea6"/>
+        <path d="M 406.6108 -56.0546 L 915.1374 -56.0546 C 920.6602 -56.0546 925.1374 -51.57745 925.1374 -46.0546 L 925.1374 199.9284 C 925.1374 205.45124 920.6602 209.9284 915.1374 209.9284 L 406.6108 209.9284 C 401.08797 209.9284 396.6108 205.45124 396.6108 199.9284 L 396.6108 -46.0546 C 396.6108 -51.57745 401.08797 -56.0546 406.6108 -56.0546 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(401.6108 6.4368966)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="177.81064" y="45">Seating</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="37.0184" y="90">Allocate passenger a seat </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="135.01157" y="133">based on rules</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 406.6108 256.30345 L 915.1374 256.30345 C 920.6602 256.30345 925.1374 260.7806 925.1374 266.30345 L 925.1374 512.28645 C 925.1374 517.8093 920.6602 522.28645 915.1374 522.28645 L 406.6108 522.28645 C 401.08797 522.28645 396.6108 517.8093 396.6108 512.28645 L 396.6108 266.30345 C 396.6108 260.7806 401.08797 256.30345 406.6108 256.30345 Z" fill="#ebdea6"/>
+        <path d="M 406.6108 256.30345 L 915.1374 256.30345 C 920.6602 256.30345 925.1374 260.7806 925.1374 266.30345 L 925.1374 512.28645 C 925.1374 517.8093 920.6602 522.28645 915.1374 522.28645 L 406.6108 522.28645 C 401.08797 522.28645 396.6108 517.8093 396.6108 512.28645 L 396.6108 266.30345 C 396.6108 260.7806 401.08797 256.30345 406.6108 256.30345 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(401.6108 318.79495)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="8.588226" y="45">Revenue Management</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="29.310883" y="90">Fare calculations based on </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="182.96567" y="133">forecasts</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 989.656 -56.0546 L 1498.1825 -56.0546 C 1503.7054 -56.0546 1508.1825 -51.57745 1508.1825 -46.0546 L 1508.1825 199.9284 C 1508.1825 205.45124 1503.7054 209.9284 1498.1825 209.9284 L 989.656 209.9284 C 984.1331 209.9284 979.656 205.45124 979.656 199.9284 L 979.656 -46.0546 C 979.656 -51.57745 984.1331 -56.0546 989.656 -56.0546 Z" fill="#ebdea6"/>
+        <path d="M 989.656 -56.0546 L 1498.1825 -56.0546 C 1503.7054 -56.0546 1508.1825 -51.57745 1508.1825 -46.0546 L 1508.1825 199.9284 C 1508.1825 205.45124 1503.7054 209.9284 1498.1825 209.9284 L 989.656 209.9284 C 984.1331 209.9284 979.656 205.45124 979.656 199.9284 L 979.656 -46.0546 C 979.656 -51.57745 984.1331 -56.0546 989.656 -56.0546 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(984.656 6.4368966)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="157.54086" y="45">Baggage</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="17.040375" y="90">Accept passenger baggage </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-weight="700" fill="#2e006e" x="110.86362" y="133">a</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" y="133">nd print bag tag</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 989.656 256.30345 L 1498.1825 256.30345 C 1503.7054 256.30345 1508.1825 260.7806 1508.1825 266.30345 L 1508.1825 512.28645 C 1508.1825 517.8093 1503.7054 522.28645 1498.1825 522.28645 L 989.656 522.28645 C 984.1331 522.28645 979.656 517.8093 979.656 512.28645 L 979.656 266.30345 C 979.656 260.7806 984.1331 256.30345 989.656 256.30345 Z" fill="#ebdea6"/>
+        <path d="M 989.656 256.30345 L 1498.1825 256.30345 C 1503.7054 256.30345 1508.1825 260.7806 1508.1825 266.30345 L 1508.1825 512.28645 C 1508.1825 517.8093 1503.7054 522.28645 1498.1825 522.28645 L 989.656 522.28645 C 984.1331 522.28645 979.656 517.8093 979.656 512.28645 L 979.656 266.30345 C 979.656 260.7806 984.1331 256.30345 989.656 256.30345 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(984.656 340.29495)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="131.90976" y="45">Accounting</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="88.82626" y="90">Invoicing and Billing</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <path d="M -759.4795 -681 L -250.95296 -681 C -245.43012 -681 -240.95296 -676.52285 -240.95296 -671 L -240.95296 -425.017 C -240.95296 -419.49415 -245.43012 -415.017 -250.95296 -415.017 L -759.4795 -415.017 C -765.0024 -415.017 -769.4795 -419.49415 -769.4795 -425.017 L -769.4795 -671 C -769.4795 -676.52285 -765.0024 -681 -759.4795 -681 Z" fill="#ebdea6"/>
+        <path d="M -759.4795 -681 L -250.95296 -681 C -245.43012 -681 -240.95296 -676.52285 -240.95296 -671 L -240.95296 -425.017 C -240.95296 -419.49415 -245.43012 -415.017 -250.95296 -415.017 L -759.4795 -415.017 C -765.0024 -415.017 -769.4795 -419.49415 -769.4795 -425.017 L -769.4795 -671 C -769.4795 -676.52285 -765.0024 -681 -759.4795 -681 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-764.4795 -618.5085)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="183.20493" y="45">Search</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="38.086517" y="90">Flight availability between</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="75.88071" y="133">cities for a given date</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <path d="M -759.4795 -368.5273 L -250.95296 -368.5273 C -245.43012 -368.5273 -240.95296 -364.05015 -240.95296 -358.5273 L -240.95296 -112.5443 C -240.95296 -107.02146 -245.43012 -102.5443 -250.95296 -102.5443 L -759.4795 -102.5443 C -765.0024 -102.5443 -769.4795 -107.02146 -769.4795 -112.5443 L -769.4795 -358.5273 C -769.4795 -364.05015 -765.0024 -368.5273 -759.4795 -368.5273 Z" fill="#ebdea6"/>
+        <path d="M -759.4795 -368.5273 L -250.95296 -368.5273 C -245.43012 -368.5273 -240.95296 -364.05015 -240.95296 -358.5273 L -240.95296 -112.5443 C -240.95296 -107.02146 -245.43012 -102.5443 -250.95296 -102.5443 L -759.4795 -102.5443 C -765.0024 -102.5443 -769.4795 -107.02146 -769.4795 -112.5443 L -769.4795 -358.5273 C -769.4795 -364.05015 -765.0024 -368.5273 -759.4795 -368.5273 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-764.4795 -306.0358)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="204.3536" y="45">Book</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="72.35165" y="90">Book passengers on a</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="77.62387" y="133">Selected flight &amp; date</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <path d="M -759.4795 568.6615 L -250.95296 568.6615 C -245.43012 568.6615 -240.95296 573.13865 -240.95296 578.6615 L -240.95296 824.6445 C -240.95296 830.1673 -245.43012 834.6445 -250.95296 834.6445 L -759.4795 834.6445 C -765.0024 834.6445 -769.4795 830.1673 -769.4795 824.6445 L -769.4795 578.6615 C -769.4795 573.13865 -765.0024 568.6615 -759.4795 568.6615 Z" fill="#ebdea6"/>
+        <path d="M -759.4795 568.6615 L -250.95296 568.6615 C -245.43012 568.6615 -240.95296 573.13865 -240.95296 578.6615 L -240.95296 824.6445 C -240.95296 830.1673 -245.43012 834.6445 -250.95296 834.6445 L -759.4795 834.6445 C -765.0024 834.6445 -769.4795 830.1673 -769.4795 824.6445 L -769.4795 578.6615 C -769.4795 573.13865 -765.0024 568.6615 -759.4795 568.6615 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-764.4795 631.153)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="88.70053" y="45">Reference Data</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="70.65976" y="90">Country, City, Aircrafts</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="146.92319" y="133">Currency ets.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M -759.4795 -56.0546 L -250.95296 -56.0546 C -245.43012 -56.0546 -240.95296 -51.57745 -240.95296 -46.0546 L -240.95296 199.9284 C -240.95296 205.45124 -245.43012 209.9284 -250.95296 209.9284 L -759.4795 209.9284 C -765.0024 209.9284 -769.4795 205.45124 -769.4795 199.9284 L -769.4795 -46.0546 C -769.4795 -51.57745 -765.0024 -56.0546 -759.4795 -56.0546 Z" fill="#ebdea6"/>
+        <path d="M -759.4795 -56.0546 L -250.95296 -56.0546 C -245.43012 -56.0546 -240.95296 -51.57745 -240.95296 -46.0546 L -240.95296 199.9284 C -240.95296 205.45124 -245.43012 209.9284 -250.95296 209.9284 L -759.4795 209.9284 C -765.0024 209.9284 -769.4795 205.45124 -769.4795 199.9284 L -769.4795 -46.0546 C -769.4795 -51.57745 -765.0024 -56.0546 -759.4795 -56.0546 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-764.4795 6.4368966)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="160.26547" y="45">Check In</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="42.957123" y="90">Accept a passenger on a </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="48.588226" y="133">flight on the day of travel</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M -759.4795 256.30345 L -250.95296 256.30345 C -245.43012 256.30345 -240.95296 260.7806 -240.95296 266.30345 L -240.95296 512.28645 C -240.95296 517.8093 -245.43012 522.28645 -250.95296 522.28645 L -759.4795 522.28645 C -765.0024 522.28645 -769.4795 517.8093 -769.4795 512.28645 L -769.4795 266.30345 C -769.4795 260.7806 -765.0024 256.30345 -759.4795 256.30345 Z" fill="#ebdea6"/>
+        <path d="M -759.4795 256.30345 L -250.95296 256.30345 C -245.43012 256.30345 -240.95296 260.7806 -240.95296 266.30345 L -240.95296 512.28645 C -240.95296 517.8093 -245.43012 522.28645 -250.95296 522.28645 L -759.4795 522.28645 C -765.0024 522.28645 -769.4795 517.8093 -769.4795 512.28645 L -769.4795 266.30345 C -769.4795 260.7806 -765.0024 256.30345 -759.4795 256.30345 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-764.4795 318.79495)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="208.41855" y="45">CRM</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="75.18002" y="90">Customer relationship</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="143.05234" y="133">management</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M -759.4795 881.0196 L -250.95296 881.0196 C -245.43012 881.0196 -240.95296 885.4967 -240.95296 891.0196 L -240.95296 1137.0025 C -240.95296 1142.5254 -245.43012 1147.0025 -250.95296 1147.0025 L -759.4795 1147.0025 C -765.0024 1147.0025 -769.4795 1142.5254 -769.4795 1137.0025 L -769.4795 891.0196 C -769.4795 885.4967 -765.0024 881.0196 -759.4795 881.0196 Z" fill="#ebdea6"/>
+        <path d="M -759.4795 881.0196 L -250.95296 881.0196 C -245.43012 881.0196 -240.95296 885.4967 -240.95296 891.0196 L -240.95296 1137.0025 C -240.95296 1142.5254 -245.43012 1147.0025 -250.95296 1147.0025 L -759.4795 1147.0025 C -765.0024 1147.0025 -769.4795 1142.5254 -769.4795 1137.0025 L -769.4795 891.0196 C -769.4795 885.4967 -765.0024 881.0196 -759.4795 881.0196 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-764.4795 943.511)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="58.55405" y="45">User Management</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="92.67148" y="90">Manage user, roles,</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="178.06943" y="133">privileges</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M -176.43436 -681 L 332.0922 -681 C 337.61505 -681 342.0922 -676.52285 342.0922 -671 L 342.0922 -425.017 C 342.0922 -419.49415 337.61505 -415.017 332.0922 -415.017 L -176.43436 -415.017 C -181.9572 -415.017 -186.43436 -419.49415 -186.43436 -425.017 L -186.43436 -671 C -186.43436 -676.52285 -181.9572 -681 -176.43436 -681 Z" fill="#ebdea6"/>
+        <path d="M -176.43436 -681 L 332.0922 -681 C 337.61505 -681 342.0922 -676.52285 342.0922 -671 L 342.0922 -425.017 C 342.0922 -419.49415 337.61505 -415.017 332.0922 -415.017 L -176.43436 -415.017 C -181.9572 -415.017 -186.43436 -419.49415 -186.43436 -425.017 L -186.43436 -671 C -186.43436 -676.52285 -181.9572 -681 -176.43436 -681 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-181.43436 -618.5085)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="202.57382" y="45">Flight</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="46.14438" y="90">Flight routes, aircraft type</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="135.00302" y="133">and schedules</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M -176.43436 -368.5273 L 332.0922 -368.5273 C 337.61505 -368.5273 342.0922 -364.05015 342.0922 -358.5273 L 342.0922 -112.5443 C 342.0922 -107.02146 337.61505 -102.5443 332.0922 -102.5443 L -176.43436 -102.5443 C -181.9572 -102.5443 -186.43436 -107.02146 -186.43436 -112.5443 L -186.43436 -358.5273 C -186.43436 -364.05015 -181.9572 -368.5273 -176.43436 -368.5273 Z" fill="#ebdea6"/>
+        <path d="M -176.43436 -368.5273 L 332.0922 -368.5273 C 337.61505 -368.5273 342.0922 -364.05015 342.0922 -358.5273 L 342.0922 -112.5443 C 342.0922 -107.02146 337.61505 -102.5443 332.0922 -102.5443 L -176.43436 -102.5443 C -181.9572 -102.5443 -186.43436 -107.02146 -186.43436 -112.5443 L -186.43436 -358.5273 C -186.43436 -364.05015 -181.9572 -368.5273 -176.43436 -368.5273 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-181.43436 -306.0358)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="157.56284" y="45">Inventory</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="37.026947" y="90">Number of seats available</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="114.37558" y="133">on a flight &amp; date</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M -176.43436 568.6615 L 332.0922 568.6615 C 337.61505 568.6615 342.0922 573.13865 342.0922 578.6615 L 342.0922 824.6445 C 342.0922 830.1673 337.61505 834.6445 332.0922 834.6445 L -176.43436 834.6445 C -181.9572 834.6445 -186.43436 830.1673 -186.43436 824.6445 L -186.43436 578.6615 C -186.43436 573.13865 -181.9572 568.6615 -176.43436 568.6615 Z" fill="#ebdea6"/>
+        <path d="M -176.43436 568.6615 L 332.0922 568.6615 C 337.61505 568.6615 342.0922 573.13865 342.0922 578.6615 L 342.0922 824.6445 C 342.0922 830.1673 337.61505 834.6445 332.0922 834.6445 L -176.43436 834.6445 C -181.9572 834.6445 -186.43436 830.1673 -186.43436 824.6445 L -186.43436 578.6615 C -186.43436 573.13865 -181.9572 568.6615 -176.43436 568.6615 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-181.43436 652.653)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="154.42075" y="45">Customer</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="95.45712" y="90">Manage customers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M -176.43436 -56.0546 L 332.0922 -56.0546 C 337.61505 -56.0546 342.0922 -51.57745 342.0922 -46.0546 L 342.0922 199.9284 C 342.0922 205.45124 337.61505 209.9284 332.0922 209.9284 L -176.43436 209.9284 C -181.9572 209.9284 -186.43436 205.45124 -186.43436 199.9284 L -186.43436 -46.0546 C -186.43436 -51.57745 -181.9572 -56.0546 -176.43436 -56.0546 Z" fill="#ebdea6"/>
+        <path d="M -176.43436 -56.0546 L 332.0922 -56.0546 C 337.61505 -56.0546 342.0922 -51.57745 342.0922 -46.0546 L 342.0922 199.9284 C 342.0922 205.45124 337.61505 209.9284 332.0922 209.9284 L -176.43436 209.9284 C -181.9572 209.9284 -186.43436 205.45124 -186.43436 199.9284 L -186.43436 -46.0546 C -186.43436 -51.57745 -181.9572 -56.0546 -176.43436 -56.0546 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-181.43436 6.4368966)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="161.15536" y="45">Boarding</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="19.501312" y="90">Mark passenger as boarded </tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="126.9708" y="133">On the airplane </tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path d="M -176.43436 256.30345 L 332.0922 256.30345 C 337.61505 256.30345 342.0922 260.7806 342.0922 266.30345 L 342.0922 512.28645 C 342.0922 517.8093 337.61505 522.28645 332.0922 522.28645 L -176.43436 522.28645 C -181.9572 522.28645 -186.43436 517.8093 -186.43436 512.28645 L -186.43436 266.30345 C -186.43436 260.7806 -181.9572 256.30345 -176.43436 256.30345 Z" fill="#ebdea6"/>
+        <path d="M -176.43436 256.30345 L 332.0922 256.30345 C 337.61505 256.30345 342.0922 260.7806 342.0922 266.30345 L 342.0922 512.28645 C 342.0922 517.8093 337.61505 522.28645 332.0922 522.28645 L -176.43436 522.28645 C -181.9572 522.28645 -186.43436 517.8093 -186.43436 512.28645 L -186.43436 266.30345 C -186.43436 260.7806 -181.9572 256.30345 -176.43436 256.30345 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-181.43436 318.79495)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="112.12338" y="45">Data Analysis</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="85.32285" y="90">Business intelligence</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="71.66806" y="133">analysis and reporting </tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <path d="M -176.43436 881.0196 L 332.0922 881.0196 C 337.61505 881.0196 342.0922 885.4967 342.0922 891.0196 L 342.0922 1137.0025 C 342.0922 1142.5254 337.61505 1147.0025 332.0922 1147.0025 L -176.43436 1147.0025 C -181.9572 1147.0025 -186.43436 1142.5254 -186.43436 1137.0025 L -186.43436 891.0196 C -186.43436 885.4967 -181.9572 881.0196 -176.43436 881.0196 Z" fill="#ebdea6"/>
+        <path d="M -176.43436 881.0196 L 332.0922 881.0196 C 337.61505 881.0196 342.0922 885.4967 342.0922 891.0196 L 342.0922 1137.0025 C 342.0922 1142.5254 337.61505 1147.0025 332.0922 1147.0025 L -176.43436 1147.0025 C -181.9572 1147.0025 -186.43436 1142.5254 -186.43436 1137.0025 L -186.43436 891.0196 C -186.43436 885.4967 -181.9572 881.0196 -176.43436 881.0196 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-181.43436 943.511)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="135.08481" y="45">Notification</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="50.67319" y="90">Send SMS and e-mails to</tspan>
+          <tspan font-family="Century Gothic" font-size="35" font-style="italic" font-weight="700" fill="#2e006e" x="172.46396" y="133">customers</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

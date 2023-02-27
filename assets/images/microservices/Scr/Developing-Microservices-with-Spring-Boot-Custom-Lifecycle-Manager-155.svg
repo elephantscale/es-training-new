@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="454 -330 2046 1290" width="2046" height="1290">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-14 13:23:45 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="454" y="-330" width="2046" height="1290"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_21">
+        <rect x="455" y="269.741" width="948.4785" height="176.1157" fill="#f0e6bb"/>
+        <rect x="455" y="269.741" width="948.4785" height="176.1157" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(460 333.29885)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="282.042" y="40">Physical Machine 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <rect x="455" y="57.1814" width="413.7658" height="212.18758" fill="#a4f8fd"/>
+        <rect x="455" y="57.1814" width="413.7658" height="212.18758" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(460 138.7752)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="158.67976" y="40">VM1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="455" y="-329" width="206.8829" height="386.1814" fill="#aa97fe"/>
+        <rect x="455" y="-329" width="206.8829" height="386.1814" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(460 -160.4093)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="19.63285" y="40">Booking</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <rect x="661.8829" y="-329" width="206.8829" height="386.1814" fill="#aa97fe"/>
+        <rect x="661.8829" y="-329" width="206.8829" height="386.1814" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(666.8829 -160.4093)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="47.640663" y="40">Fares</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <rect x="989.7127" y="57.55342" width="413.7658" height="212.18758" fill="#a4f8fd"/>
+        <rect x="989.7127" y="57.55342" width="413.7658" height="212.18758" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(994.7127 139.14721)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="158.67976" y="40">VM2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <rect x="989.7127" y="-328.628" width="206.8829" height="386.1814" fill="#d5ccff"/>
+        <rect x="989.7127" y="-328.628" width="206.8829" height="386.1814" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(994.7127 -160.03728)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="30.834023" y="40">Search</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <rect x="1196.5956" y="-328.628" width="206.8829" height="386.1814" fill="#d5ccff"/>
+        <rect x="1196.5956" y="-328.628" width="206.8829" height="386.1814" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1201.5956 -160.03728)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="7.640663" y="40">Check-In</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <rect x="456.06094" y="782.174" width="948.4785" height="176.1157" fill="#f0e6bb"/>
+        <rect x="456.06094" y="782.174" width="948.4785" height="176.1157" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(461.06094 845.7319)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="282.042" y="40">Physical Machine 3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <rect x="456.06094" y="569.6144" width="413.7658" height="212.18758" fill="#a4f8fd"/>
+        <rect x="456.06094" y="569.6144" width="413.7658" height="212.18758" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(461.06094 651.2082)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="158.67976" y="40">VM5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="990.7736" y="569.9864" width="413.7658" height="212.18758" fill="#a4f8fd"/>
+        <rect x="990.7736" y="569.9864" width="413.7658" height="212.18758" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(995.7736 651.5802)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="158.67976" y="40">VM6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <rect x="1549.888" y="270.80194" width="948.4785" height="176.1157" fill="#f0e6bb"/>
+        <rect x="1549.888" y="270.80194" width="948.4785" height="176.1157" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1554.888 334.3598)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="282.042" y="40">Physical Machine 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="1549.888" y="58.24234" width="413.7658" height="212.18758" fill="#a4f8fd"/>
+        <rect x="1549.888" y="58.24234" width="413.7658" height="212.18758" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1554.888 139.83613)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="158.67976" y="40">VM3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="1549.888" y="-327.93906" width="206.8829" height="386.1814" fill="#aa97fe"/>
+        <rect x="1549.888" y="-327.93906" width="206.8829" height="386.1814" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1554.888 -159.34836)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="19.63285" y="40">Booking</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="1756.7708" y="-327.93906" width="206.8829" height="386.1814" fill="#aa97fe"/>
+        <rect x="1756.7708" y="-327.93906" width="206.8829" height="386.1814" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1761.7708 -159.34836)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="47.640663" y="40">Fares</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="2084.6006" y="58.61436" width="413.7658" height="212.18758" fill="#a4f8fd"/>
+        <rect x="2084.6006" y="58.61436" width="413.7658" height="212.18758" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(2089.6006 140.20815)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="158.67976" y="40">VM4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <rect x="2084.6006" y="-327.56704" width="206.8829" height="386.1814" fill="#d5ccff"/>
+        <rect x="2084.6006" y="-327.56704" width="206.8829" height="386.1814" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(2089.6006 -158.97634)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="30.834023" y="40">Search</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="2291.4835" y="-327.56704" width="206.8829" height="386.1814" fill="#d5ccff"/>
+        <rect x="2291.4835" y="-327.56704" width="206.8829" height="386.1814" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(2296.4835 -158.97634)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="7.640663" y="40">Check-In</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="1550.9489" y="783.235" width="948.4785" height="176.1157" fill="#f0e6bb"/>
+        <rect x="1550.9489" y="783.235" width="948.4785" height="176.1157" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1555.9489 846.7928)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="282.042" y="40">Physical Machine 4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="1550.9489" y="570.67535" width="413.7658" height="212.18758" fill="#a4f8fd"/>
+        <rect x="1550.9489" y="570.67535" width="413.7658" height="212.18758" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1555.9489 652.26915)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="158.67976" y="40">VM7</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <rect x="2085.6616" y="571.0474" width="413.7658" height="212.18758" fill="#a4f8fd"/>
+        <rect x="2085.6616" y="571.0474" width="413.7658" height="212.18758" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(2090.6616 652.6412)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="158.67976" y="40">VM8</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

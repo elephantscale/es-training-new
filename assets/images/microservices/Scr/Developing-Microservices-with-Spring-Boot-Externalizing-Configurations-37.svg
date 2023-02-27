@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-756 -73 1145 830" width="1145" height="830">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-10 15:38:18 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_9">
+        <path d="M -45.679957 -72.23638 L 378.27586 -72.23638 C 383.7987 -72.23638 388.27586 -67.759226 388.27586 -62.23638 L 388.27586 144.26522 C 388.27586 149.78807 383.7987 154.26522 378.27586 154.26522 L -45.679957 154.26522 C -51.202804 154.26522 -55.67996 149.78807 -55.67996 144.26522 L -55.67996 -62.23638 C -55.67996 -67.759226 -51.202804 -72.23638 -45.679957 -72.23638 Z" fill="#9786e2"/>
+        <path d="M -45.679957 -72.23638 L 378.27586 -72.23638 C 383.7987 -72.23638 388.27586 -67.759226 388.27586 -62.23638 L 388.27586 144.26522 C 388.27586 149.78807 383.7987 154.26522 378.27586 154.26522 L -45.679957 154.26522 C -51.202804 154.26522 -55.67996 149.78807 -55.67996 144.26522 L -55.67996 -62.23638 C -55.67996 -67.759226 -51.202804 -72.23638 -45.679957 -72.23638 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-50.679957 10.514423)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="40.488647" y="50">Microservice 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M -45.679957 228.44862 L 378.27586 228.44862 C 383.7987 228.44862 388.27586 232.92577 388.27586 238.44862 L 388.27586 444.9502 C 388.27586 450.47307 383.7987 454.9502 378.27586 454.9502 L -45.679957 454.9502 C -51.202804 454.9502 -55.67996 450.47307 -55.67996 444.9502 L -55.67996 238.44862 C -55.67996 232.92577 -51.202804 228.44862 -45.679957 228.44862 Z" fill="#bdafff"/>
+        <path d="M -45.679957 228.44862 L 378.27586 228.44862 C 383.7987 228.44862 388.27586 232.92577 388.27586 238.44862 L 388.27586 444.9502 C 388.27586 450.47307 383.7987 454.9502 378.27586 454.9502 L -45.679957 454.9502 C -51.202804 454.9502 -55.67996 450.47307 -55.67996 444.9502 L -55.67996 238.44862 C -55.67996 232.92577 -51.202804 228.44862 -45.679957 228.44862 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-50.679957 311.19942)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="40.488647" y="50">Microservice 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M -45.679957 529.1336 L 378.27586 529.1336 C 383.7987 529.1336 388.27586 533.6108 388.27586 539.1336 L 388.27586 745.6352 C 388.27586 751.1581 383.7987 755.6352 378.27586 755.6352 L -45.679957 755.6352 C -51.202804 755.6352 -55.67996 751.1581 -55.67996 745.6352 L -55.67996 539.1336 C -55.67996 533.6108 -51.202804 529.1336 -45.679957 529.1336 Z" fill="#e2dcff"/>
+        <path d="M -45.679957 529.1336 L 378.27586 529.1336 C 383.7987 529.1336 388.27586 533.6108 388.27586 539.1336 L 388.27586 745.6352 C 388.27586 751.1581 383.7987 755.6352 378.27586 755.6352 L -45.679957 755.6352 C -51.202804 755.6352 -55.67996 751.1581 -55.67996 745.6352 L -55.67996 539.1336 C -55.67996 533.6108 -51.202804 529.1336 -45.679957 529.1336 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-50.679957 611.8844)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="40.488647" y="50">Microservice 3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M -744.68 228.44862 L -320.72414 228.44862 C -315.2013 228.44862 -310.72414 232.92577 -310.72414 238.44862 L -310.72414 444.9502 C -310.72414 450.47307 -315.2013 454.9502 -320.72414 454.9502 L -744.68 454.9502 C -750.2028 454.9502 -754.68 450.47307 -754.68 444.9502 L -754.68 238.44862 C -754.68 232.92577 -750.2028 228.44862 -744.68 228.44862 Z" fill="#a4f8fd"/>
+        <path d="M -744.68 228.44862 L -320.72414 228.44862 C -315.2013 228.44862 -310.72414 232.92577 -310.72414 238.44862 L -310.72414 444.9502 C -310.72414 450.47307 -315.2013 454.9502 -320.72414 454.9502 L -744.68 454.9502 C -750.2028 454.9502 -754.68 450.47307 -754.68 444.9502 L -754.68 238.44862 C -754.68 232.92577 -750.2028 228.44862 -744.68 228.44862 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-749.68 280.69942)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="52.98865" y="50">Configuration</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="141.9779" y="111">Server</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="-55.67996" y1="341.69942" x2="-279.82414" y2="341.69942" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_4">
+        <path d="M -55.67996 41.014423 L -493.70095 41.014423 C -515.79234 41.014423 -533.70095 58.92303 -533.70095 81.01442 C -533.70095 81.06553 -533.70085 81.11663 -533.70065 81.16774 L -533.2546 197.54885" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_3">
+        <path d="M -55.67996 642.3844 L -493.70095 642.3844 C -515.79234 642.3844 -533.70095 624.4758 -533.70095 602.3844 C -533.70095 602.3333 -533.70085 602.2822 -533.70065 602.2311 L -533.2546 485.85" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(-227.17996 743.8598) rotate(-90)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">http://microservicecongfig:8080</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

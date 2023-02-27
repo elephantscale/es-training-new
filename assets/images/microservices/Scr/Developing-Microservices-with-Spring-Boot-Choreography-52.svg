@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-356 117 1524 1058" width="1524" height="1058">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-14 13:27:53 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <path d="M -345 483.3786 L 173.93842 483.3786 C 179.46127 483.3786 183.93842 487.8558 183.93842 493.3786 L 183.93842 714.2472 C 183.93842 719.7701 179.46127 724.2472 173.93842 724.2472 L -345 724.2472 C -350.52285 724.2472 -355 719.7701 -355 714.2472 L -355 493.3786 C -355 487.8558 -350.52285 483.3786 -345 483.3786 Z" fill="#e3a92e"/>
+        <path d="M -345 483.3786 L 173.93842 483.3786 C 179.46127 483.3786 183.93842 487.8558 183.93842 493.3786 L 183.93842 714.2472 C 183.93842 719.7701 179.46127 724.2472 173.93842 724.2472 L -345 724.2472 C -350.52285 724.2472 -355 719.7701 -355 714.2472 L -355 493.3786 C -355 487.8558 -350.52285 483.3786 -345 483.3786 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-350 573.3129)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="69.96237" y="50">Booking Service</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 638 163 L 1156.9384 163 C 1162.4613 163 1166.9384 167.47715 1166.9384 173 L 1166.9384 393.8686 C 1166.9384 399.39144 1162.4613 403.8686 1156.9384 403.8686 L 638 403.8686 C 632.47715 403.8686 628 399.39144 628 393.8686 L 628 173 C 628 167.47715 632.47715 163 638 163 Z" fill="#ebdea6"/>
+        <path d="M 638 163 L 1156.9384 163 C 1162.4613 163 1166.9384 167.47715 1166.9384 173 L 1166.9384 393.8686 C 1166.9384 399.39144 1162.4613 403.8686 1156.9384 403.8686 L 638 403.8686 C 632.47715 403.8686 628 399.39144 628 393.8686 L 628 173 C 628 167.47715 632.47715 163 638 163 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(633 252.9343)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="30.49704" y="50">Notification Service</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 638 483.3786 L 1156.9384 483.3786 C 1162.4613 483.3786 1166.9384 487.8558 1166.9384 493.3786 L 1166.9384 714.2472 C 1166.9384 719.7701 1162.4613 724.2472 1156.9384 724.2472 L 638 724.2472 C 632.47715 724.2472 628 719.7701 628 714.2472 L 628 493.3786 C 628 487.8558 632.47715 483.3786 638 483.3786 Z" fill="#a4f8fd"/>
+        <path d="M 638 483.3786 L 1156.9384 483.3786 C 1162.4613 483.3786 1166.9384 487.8558 1166.9384 493.3786 L 1166.9384 714.2472 C 1166.9384 719.7701 1162.4613 724.2472 1156.9384 724.2472 L 638 724.2472 C 632.47715 724.2472 628 719.7701 628 714.2472 L 628 493.3786 C 628 487.8558 632.47715 483.3786 638 483.3786 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(633 542.8129)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="78.97116" y="50">Booking History </tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="175.46774" y="111">Service</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 638 803.7572 L 1156.9384 803.7572 C 1162.4613 803.7572 1166.9384 808.2344 1166.9384 813.7572 L 1166.9384 1034.6258 C 1166.9384 1040.1487 1162.4613 1044.6258 1156.9384 1044.6258 L 638 1044.6258 C 632.47715 1044.6258 628 1040.1487 628 1034.6258 L 628 813.7572 C 628 808.2344 632.47715 803.7572 638 803.7572 Z" fill="#aa97fe"/>
+        <path d="M 638 803.7572 L 1156.9384 803.7572 C 1162.4613 803.7572 1166.9384 808.2344 1166.9384 813.7572 L 1166.9384 1034.6258 C 1166.9384 1040.1487 1162.4613 1044.6258 1156.9384 1044.6258 L 638 1044.6258 C 632.47715 1044.6258 628 1040.1487 628 1034.6258 L 628 813.7572 C 628 808.2344 632.47715 803.7572 638 803.7572 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(633 893.6915)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="55.472626" y="50">Inventory Service</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(217.09382 473)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Booking</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="33.007812" y="111">Event</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="447.2707" y1="121" x2="447.2707" y2="1171" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_4">
+        <line x1="183.93842" y1="603.8129" x2="628" y2="603.8129" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_3">
+        <line x1="628" y1="283.4343" x2="455.9091" y2="283.4343" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_2">
+        <line x1="628" y1="924.1915" x2="446.8182" y2="924.1915" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+    </g>
+  </g>
+</svg>

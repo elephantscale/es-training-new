@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-62 -102 2089 1702" width="2089" height="1702">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0061ff">
+      <g>
+        <path d="M 2.311111 0 L 0 -.8666667 L 0 .8666667 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-16 14:08:06 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_17">
+        <path d="M -48 244 L 390 244 C 395.52285 244 400 248.47715 400 254 L 400 1586 C 400 1591.5228 395.52285 1596 390 1596 L -48 1596 C -53.52285 1596 -58 1591.5228 -58 1586 L -58 254 C -58 248.47715 -53.52285 244 -48 244 Z" fill="#fefdf7"/>
+        <path d="M -48 244 L 390 244 C 395.52285 244 400 248.47715 400 254 L 400 1586 C 400 1591.5228 395.52285 1596 390 1596 L -48 1596 C -53.52285 1596 -58 1591.5228 -58 1586 L -58 254 C -58 248.47715 -53.52285 244 -48 244 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        <text transform="translate(-53 1516)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="61.1167" y="45">Microservice A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 536.64333 244 L 974.6433 244 C 980.1662 244 984.6433 248.47715 984.6433 254 L 984.6433 1586 C 984.6433 1591.5228 980.1662 1596 974.6433 1596 L 536.64333 1596 C 531.1205 1596 526.64333 1591.5228 526.64333 1586 L 526.64333 254 C 526.64333 248.47715 531.1205 244 536.64333 244 Z" fill="#fefdf7"/>
+        <path d="M 536.64333 244 L 974.6433 244 C 980.1662 244 984.6433 248.47715 984.6433 254 L 984.6433 1586 C 984.6433 1591.5228 980.1662 1596 974.6433 1596 L 536.64333 1596 C 531.1205 1596 526.64333 1591.5228 526.64333 1586 L 526.64333 254 C 526.64333 248.47715 531.1205 244 536.64333 244 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        <text transform="translate(531.64333 1516)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="64.70923" y="45">Microservice B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 1041 244 L 1479 244 C 1484.5228 244 1489 248.47715 1489 254 L 1489 1586 C 1489 1591.5228 1484.5228 1596 1479 1596 L 1041 1596 C 1035.4772 1596 1031 1591.5228 1031 1586 L 1031 254 C 1031 248.47715 1035.4772 244 1041 244 Z" fill="#fefdf7"/>
+        <path d="M 1041 244 L 1479 244 C 1484.5228 244 1489 248.47715 1489 254 L 1489 1586 C 1489 1591.5228 1484.5228 1596 1479 1596 L 1041 1596 C 1035.4772 1596 1031 1591.5228 1031 1586 L 1031 254 C 1031 248.47715 1035.4772 244 1041 244 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        <text transform="translate(1036 1516)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="60.21582" y="45">Microservice C</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <path d="M -12.888708 307.355 L 2013 307.355 C 2018.5228 307.355 2023 311.83215 2023 317.355 L 2023 624.355 C 2023 629.87785 2018.5228 634.355 2013 634.355 L -12.888708 634.355 C -18.411555 634.355 -22.888708 629.87785 -22.888708 624.355 L -22.888708 317.355 C -22.888708 311.83215 -18.411555 307.355 -12.888708 307.355 Z" stroke="#78a5f0" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14.0,14.0" stroke-width="7"/>
+      </g>
+      <g id="Graphic_23">
+        <path d="M -12.888708 721.5 L 2013 721.5 C 2018.5228 721.5 2023 725.97715 2023 731.5 L 2023 1038.5 C 2023 1044.0228 2018.5228 1048.5 2013 1048.5 L -12.888708 1048.5 C -18.411555 1048.5 -22.888708 1044.0228 -22.888708 1038.5 L -22.888708 731.5 C -22.888708 725.97715 -18.411555 721.5 -12.888708 721.5 Z" stroke="#78a5f0" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14.0,14.0" stroke-width="7"/>
+      </g>
+      <g id="Graphic_22">
+        <path d="M -12.888708 1135.645 L 2013 1135.645 C 2018.5228 1135.645 2023 1140.1222 2023 1145.645 L 2023 1452.645 C 2023 1458.1678 2018.5228 1462.645 2013 1462.645 L -12.888708 1462.645 C -18.411555 1462.645 -22.888708 1458.1678 -22.888708 1452.645 L -22.888708 1145.645 C -22.888708 1140.1222 -18.411555 1135.645 -12.888708 1135.645 Z" stroke="#78a5f0" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14.0,14.0" stroke-width="7"/>
+      </g>
+      <g id="Group_18">
+        <g id="Graphic_20">
+          <path d="M 713.3029 -59.65959 C 713.3029 -43.845703 721.97506 -30.05106 734.8345 -22.781774 C 740.9772 -19.295917 748.0765 -17.319181 755.6433 -17.319181 C 763.2102 -17.319181 770.3094 -19.295917 776.4522 -22.781774 C 789.3116 -30.05106 797.9837 -43.845703 797.9837 -59.65959 C 797.9837 -83.06159 779.0241 -102 755.6433 -102 C 732.2626 -102 713.3029 -83.06159 713.3029 -59.65959 Z" fill="#4040ff"/>
+        </g>
+        <g id="Graphic_19">
+          <path d="M 678.6569 96.29 L 832.6298 96.29 C 832.6298 44.6398 808.8452 1.1090996 776.4522 -12.154161 C 770.3094 -8.668304 763.2102 -6.691568 755.6433 -6.691568 C 748.0765 -6.691568 740.9772 -8.668304 734.8345 -12.154161 C 702.42025 1.1090996 678.6569 44.6398 678.6569 96.29 Z" fill="#4040ff"/>
+        </g>
+      </g>
+      <g id="Graphic_16">
+        <path d="M -2.5 814 L 344.5 814 C 350.02285 814 354.5 818.4772 354.5 824 L 354.5 946 C 354.5 951.5228 350.02285 956 344.5 956 L -2.5 956 C -8.0228475 956 -12.5 951.5228 -12.5 946 L -12.5 824 C -12.5 818.4772 -8.0228475 814 -2.5 814 Z" fill="#a4f8fd"/>
+        <path d="M -2.5 814 L 344.5 814 C 350.02285 814 354.5 818.4772 354.5 824 L 354.5 946 C 354.5 951.5228 350.02285 956 344.5 956 L -2.5 956 C -8.0228475 956 -12.5 951.5228 -12.5 946 L -12.5 824 C -12.5 818.4772 -8.0228475 814 -2.5 814 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-7.5 857.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="72.75659" y="45">Module A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <path d="M -2.5 399.855 L 344.5 399.855 C 350.02285 399.855 354.5 404.33215 354.5 409.855 L 354.5 531.855 C 354.5 537.37785 350.02285 541.855 344.5 541.855 L -2.5 541.855 C -8.0228475 541.855 -12.5 537.37785 -12.5 531.855 L -12.5 409.855 C -12.5 404.33215 -8.0228475 399.855 -2.5 399.855 Z" fill="#a4f8fd"/>
+        <path d="M -2.5 399.855 L 344.5 399.855 C 350.02285 399.855 354.5 404.33215 354.5 409.855 L 354.5 531.855 C 354.5 537.37785 350.02285 541.855 344.5 541.855 L -2.5 541.855 C -8.0228475 541.855 -12.5 537.37785 -12.5 531.855 L -12.5 409.855 C -12.5 404.33215 -8.0228475 399.855 -2.5 399.855 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-7.5 443.355)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="72.75659" y="45">Module A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <path d="M -12.5 1378.461 L -12.5 1219.829 C -12.5 1208.8834 69.708 1200 171 1200 C 272.292 1200 354.5 1208.8834 354.5 1219.829 L 354.5 1378.461 C 354.5 1389.4066 272.292 1398.29 171 1398.29 C 69.708 1398.29 -12.5 1389.4066 -12.5 1378.461" fill="#e3a92e"/>
+        <path d="M -12.5 1378.461 L -12.5 1219.829 C -12.5 1208.8834 69.708 1200 171 1200 C 272.292 1200 354.5 1208.8834 354.5 1219.829 L 354.5 1378.461 C 354.5 1389.4066 272.292 1398.29 171 1398.29 C 69.708 1398.29 -12.5 1389.4066 -12.5 1378.461 M -12.5 1219.829 C -12.5 1230.7746 69.708 1239.658 171 1239.658 C 272.292 1239.658 354.5 1230.7746 354.5 1219.829" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-7.5 1281.5595)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="72.28418" y="45">Database</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 582.1433 814 L 929.1433 814 C 934.6662 814 939.1433 818.4772 939.1433 824 L 939.1433 946 C 939.1433 951.5228 934.6662 956 929.1433 956 L 582.1433 956 C 576.6205 956 572.1433 951.5228 572.1433 946 L 572.1433 824 C 572.1433 818.4772 576.6205 814 582.1433 814 Z" fill="#aa97fe"/>
+        <path d="M 582.1433 814 L 929.1433 814 C 934.6662 814 939.1433 818.4772 939.1433 824 L 939.1433 946 C 939.1433 951.5228 934.6662 956 929.1433 956 L 582.1433 956 C 576.6205 956 572.1433 951.5228 572.1433 946 L 572.1433 824 C 572.1433 818.4772 576.6205 814 582.1433 814 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(577.1433 857.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="76.34912" y="45">Module B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 582.1433 399.855 L 929.1433 399.855 C 934.6662 399.855 939.1433 404.33215 939.1433 409.855 L 939.1433 531.855 C 939.1433 537.37785 934.6662 541.855 929.1433 541.855 L 582.1433 541.855 C 576.6205 541.855 572.1433 537.37785 572.1433 531.855 L 572.1433 409.855 C 572.1433 404.33215 576.6205 399.855 582.1433 399.855 Z" fill="#aa97fe"/>
+        <path d="M 582.1433 399.855 L 929.1433 399.855 C 934.6662 399.855 939.1433 404.33215 939.1433 409.855 L 939.1433 531.855 C 939.1433 537.37785 934.6662 541.855 929.1433 541.855 L 582.1433 541.855 C 576.6205 541.855 572.1433 537.37785 572.1433 531.855 L 572.1433 409.855 C 572.1433 404.33215 576.6205 399.855 582.1433 399.855 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(577.1433 443.355)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="76.34912" y="45">Module B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 572.1433 1378.461 L 572.1433 1219.829 C 572.1433 1208.8834 654.3513 1200 755.6433 1200 C 856.9353 1200 939.1433 1208.8834 939.1433 1219.829 L 939.1433 1378.461 C 939.1433 1389.4066 856.9353 1398.29 755.6433 1398.29 C 654.3513 1398.29 572.1433 1389.4066 572.1433 1378.461" fill="#e3a92e"/>
+        <path d="M 572.1433 1378.461 L 572.1433 1219.829 C 572.1433 1208.8834 654.3513 1200 755.6433 1200 C 856.9353 1200 939.1433 1208.8834 939.1433 1219.829 L 939.1433 1378.461 C 939.1433 1389.4066 856.9353 1398.29 755.6433 1398.29 C 654.3513 1398.29 572.1433 1389.4066 572.1433 1378.461 M 572.1433 1219.829 C 572.1433 1230.7746 654.3513 1239.658 755.6433 1239.658 C 856.9353 1239.658 939.1433 1230.7746 939.1433 1219.829" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(577.1433 1281.5595)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="72.28418" y="45">Database</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 1086.5 814 L 1433.5 814 C 1439.0228 814 1443.5 818.4772 1443.5 824 L 1443.5 946 C 1443.5 951.5228 1439.0228 956 1433.5 956 L 1086.5 956 C 1080.9772 956 1076.5 951.5228 1076.5 946 L 1076.5 824 C 1076.5 818.4772 1080.9772 814 1086.5 814 Z" fill="#ebdea6"/>
+        <path d="M 1086.5 814 L 1433.5 814 C 1439.0228 814 1443.5 818.4772 1443.5 824 L 1443.5 946 C 1443.5 951.5228 1439.0228 956 1433.5 956 L 1086.5 956 C 1080.9772 956 1076.5 951.5228 1076.5 946 L 1076.5 824 C 1076.5 818.4772 1080.9772 814 1086.5 814 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1081.5 857.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="71.85571" y="45">Module C</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 1086.5 399.855 L 1433.5 399.855 C 1439.0228 399.855 1443.5 404.33215 1443.5 409.855 L 1443.5 531.855 C 1443.5 537.37785 1439.0228 541.855 1433.5 541.855 L 1086.5 541.855 C 1080.9772 541.855 1076.5 537.37785 1076.5 531.855 L 1076.5 409.855 C 1076.5 404.33215 1080.9772 399.855 1086.5 399.855 Z" fill="#ebdea6"/>
+        <path d="M 1086.5 399.855 L 1433.5 399.855 C 1439.0228 399.855 1443.5 404.33215 1443.5 409.855 L 1443.5 531.855 C 1443.5 537.37785 1439.0228 541.855 1433.5 541.855 L 1086.5 541.855 C 1080.9772 541.855 1076.5 537.37785 1076.5 531.855 L 1076.5 409.855 C 1076.5 404.33215 1080.9772 399.855 1086.5 399.855 Z" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1081.5 443.355)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="71.85571" y="45">Module C</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 1076.5 1378.461 L 1076.5 1219.829 C 1076.5 1208.8834 1158.708 1200 1260 1200 C 1361.292 1200 1443.5 1208.8834 1443.5 1219.829 L 1443.5 1378.461 C 1443.5 1389.4066 1361.292 1398.29 1260 1398.29 C 1158.708 1398.29 1076.5 1389.4066 1076.5 1378.461" fill="#e3a92e"/>
+        <path d="M 1076.5 1378.461 L 1076.5 1219.829 C 1076.5 1208.8834 1158.708 1200 1260 1200 C 1361.292 1200 1443.5 1208.8834 1443.5 1219.829 L 1443.5 1378.461 C 1443.5 1389.4066 1361.292 1398.29 1260 1398.29 C 1158.708 1398.29 1076.5 1389.4066 1076.5 1378.461 M 1076.5 1219.829 C 1076.5 1230.7746 1158.708 1239.658 1260 1239.658 C 1361.292 1239.658 1443.5 1230.7746 1443.5 1219.829" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1081.5 1281.5595)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="72.28418" y="45">Database</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="755.6433" y1="96.29" x2="755.6433" y2="206.6" marker-end="url(#FilledArrow_Marker)" stroke="#0061ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_4">
+        <rect x="1638.3965" y="1266.645" width="353.82812" height="65" fill="white"/>
+        <text transform="translate(1643.3965 1271.645)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="45">Database Layer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="1671.729" y="852.5" width="320.4956" height="65" fill="white"/>
+        <text transform="translate(1676.729 857.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="45">Business Layer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <rect x="1583.5308" y="438.355" width="408.69385" height="65" fill="white"/>
+        <text transform="translate(1588.5308 443.355)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="45">Presentation Layer</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

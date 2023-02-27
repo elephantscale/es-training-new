@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="469 -355 1064 1237" width="1064" height="1237">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M 2.24 0 L 0 -.84 L 0 .84 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-10 10:50:45 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_13">
+        <rect x="469.91304" y="-354" width="554" height="213" fill="#aa97fe"/>
+        <rect x="469.91304" y="-354" width="554" height="213" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(474.91304 -275)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="224.7478" y="45">Fare</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="469.91304" y="143" width="554" height="213" fill="#a4f8fd"/>
+        <rect x="469.91304" y="143" width="554" height="213" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(474.91304 194.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="217.09033" y="45">Book</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="72.66406" y="100">(Inventory master)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <rect x="977.6059" y="668" width="554" height="213" fill="#ebdea6"/>
+        <rect x="977.6059" y="668" width="554" height="213" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(982.6059 692)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="195.94165" y="45">Search</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="78.50879" y="100">(Inventory + Fares</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="141.4934" y="155">Slave copy) </tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(649.717 -22.067497)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="45">GetFares</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(593.0056 460.5625)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="32.39868" y="45">&lt;&lt;Async&gt;&gt;</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="52.20703" y="100">Inventory</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="155">Change Event</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(1047.151 -121.5675)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="85.94604" y="45">&lt;&lt;Async&gt;&gt;</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="0" y="100">Fare Change Event</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <line x1="746.913" y1="-27.067497" x2="746.913" y2="-104.1" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_6">
+        <path d="M 746.04124 630.5625 L 744.9912 735.9567 C 744.7711 758.047 762.5004 776.1331 784.5907 776.3532 C 784.7762 776.3551 784.9617 776.3556 785.1472 776.3549 L 940.7062 775.7403" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_5">
+        <line x1="1254.6059" y1="-6.567497" x2="1254.6059" y2="631.1" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_4">
+        <line x1="746.913" y1="356" x2="746.913" y2="455.5625" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_3">
+        <path d="M 1023.913 -247.45165 L 1212.4998 -247.41872 C 1234.355 -247.4149 1252.1612 -229.87023 1252.4883 -208.01748 L 1253.7076 -126.5675" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_2">
+        <line x1="746.913" y1="143" x2="746.913" y2="37.932503" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+    </g>
+  </g>
+</svg>
