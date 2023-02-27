@@ -4,10 +4,10 @@
 ## ============== updated upto here ==============
 
 About-Internet2-Class.md
-
+INTRO-1-Introducing-the-cloud-and-the-cloud-providers.md
 exit
 
-INTRO-1-Introducing-the-cloud-and-the-cloud-providers.md
+
 INTRO-2-well-architected-frameworks.md
 
 USER-1-IAM-user-management.md
