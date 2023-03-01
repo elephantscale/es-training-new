@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-1263 -1282 1846 1692" width="1846" height="1692">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M 2.5142857 0 L 0 -.9428571 L 0 .9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-16 17:48:53 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_21">
+        <path d="M -564.372 -322.9883 L -115.62237 -322.9883 C -110.09952 -322.9883 -105.62237 -318.51117 -105.62237 -312.98832 L -105.62237 -89.76192 C -105.62237 -84.23907 -110.09952 -79.76192 -115.62237 -79.76192 L -564.372 -79.76192 C -569.89484 -79.76192 -574.372 -84.23907 -574.372 -89.76192 L -574.372 -312.98832 C -574.372 -318.51117 -569.89484 -322.9883 -564.372 -322.9883 Z" fill="#aa97fe"/>
+        <path d="M -564.372 -322.9883 L -115.62237 -322.9883 C -110.09952 -322.9883 -105.62237 -318.51117 -105.62237 -312.98832 L -105.62237 -89.76192 C -105.62237 -84.23907 -110.09952 -79.76192 -115.62237 -79.76192 L -564.372 -79.76192 C -569.89484 -79.76192 -574.372 -84.23907 -574.372 -89.76192 L -574.372 -312.98832 C -574.372 -318.51117 -569.89484 -322.9883 -564.372 -322.9883 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-569.372 -231.87512)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="76.37187" y="50">Log Ingesion</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <path d="M -1229 -1278 L -820.2504 -1278 C -803.6818 -1278 -790.2504 -1264.5685 -790.2504 -1248 L -790.2504 -923.1481 C -790.2504 -906.5796 -803.6818 -893.1481 -820.2504 -893.1481 L -1229 -893.1481 C -1245.5685 -893.1481 -1259 -906.5796 -1259 -923.1481 L -1259 -1248 C -1259 -1264.5685 -1245.5685 -1278 -1229 -1278 Z" fill="white"/>
+        <path d="M -1229 -1278 L -820.2504 -1278 C -803.6818 -1278 -790.2504 -1264.5685 -790.2504 -1248 L -790.2504 -923.1481 C -790.2504 -906.5796 -803.6818 -893.1481 -820.2504 -893.1481 L -1229 -893.1481 C -1245.5685 -893.1481 -1259 -906.5796 -1259 -923.1481 L -1259 -1248 C -1259 -1264.5685 -1245.5685 -1278 -1229 -1278 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        <text transform="translate(-1254 -1193)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="159.88017" y="50">Order</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="73.88164" y="111">Microservice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <path d="M -1175.1023 -936.1745 L -1175.1023 -1015.608 C -1175.1023 -1021.0889 -1107.6885 -1025.5372 -1024.6252 -1025.5372 C -941.5618 -1025.5372 -874.1481 -1021.0889 -874.1481 -1015.608 L -874.1481 -936.1745 C -874.1481 -930.6936 -941.5618 -926.2454 -1024.6252 -926.2454 C -1107.6885 -926.2454 -1175.1023 -930.6936 -1175.1023 -936.1745" fill="#a4f8fd"/>
+        <path d="M -1175.1023 -936.1745 L -1175.1023 -1015.608 C -1175.1023 -1021.0889 -1107.6885 -1025.5372 -1024.6252 -1025.5372 C -941.5618 -1025.5372 -874.1481 -1021.0889 -874.1481 -1015.608 L -874.1481 -936.1745 C -874.1481 -930.6936 -941.5618 -926.2454 -1024.6252 -926.2454 C -1107.6885 -926.2454 -1175.1023 -930.6936 -1175.1023 -936.1745 M -1175.1023 -1015.608 C -1175.1023 -1010.1271 -1107.6885 -1005.6788 -1024.6252 -1005.6788 C -941.5618 -1005.6788 -874.1481 -1010.1271 -874.1481 -1015.608" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_18">
+        <path d="M -671.3547 377.67306 L -671.3547 127.0575 C -671.3547 109.76502 -522.9065 95.73055 -339.9972 95.73055 C -157.08785 95.73055 -8.639692 109.76502 -8.639692 127.0575 L -8.639692 377.67306 C -8.639692 394.96553 -157.08785 409 -339.9972 409 C -522.9065 409 -671.3547 394.96553 -671.3547 377.67306" fill="#e3a92e"/>
+        <path d="M -671.3547 377.67306 L -671.3547 127.0575 C -671.3547 109.76502 -522.9065 95.73055 -339.9972 95.73055 C -157.08785 95.73055 -8.639692 109.76502 -8.639692 127.0575 L -8.639692 377.67306 C -8.639692 394.96553 -157.08785 409 -339.9972 409 C -522.9065 409 -671.3547 394.96553 -671.3547 377.67306 M -671.3547 127.0575 C -671.3547 144.34997 -522.9065 158.38444 -339.9972 158.38444 C -157.08785 158.38444 -8.639692 144.34997 -8.639692 127.0575" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-666.3547 207.02875)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="119.87555" y="50">Central Log Store</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="205.3614" y="111">(Big Data)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <path d="M -456.22245 -425.51287 L -456.22245 -568.3699 C -456.22245 -578.227 -404.15353 -586.227 -339.9972 -586.227 C -275.84083 -586.227 -223.7719 -578.227 -223.7719 -568.3699 L -223.7719 -425.51287 C -223.7719 -415.65573 -275.84083 -407.65574 -339.9972 -407.65574 C -404.15353 -407.65574 -456.22245 -415.65573 -456.22245 -425.51287" fill="#ebdea6"/>
+        <path d="M -456.22245 -425.51287 L -456.22245 -568.3699 C -456.22245 -578.227 -404.15353 -586.227 -339.9972 -586.227 C -275.84083 -586.227 -223.7719 -578.227 -223.7719 -568.3699 L -223.7719 -425.51287 C -223.7719 -415.65573 -275.84083 -407.65574 -339.9972 -407.65574 C -404.15353 -407.65574 -456.22245 -415.65573 -456.22245 -425.51287 M -456.22245 -568.3699 C -456.22245 -558.51276 -404.15353 -550.51276 -339.9972 -550.51276 C -275.84083 -550.51276 -223.7719 -558.51276 -223.7719 -568.3699" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-451.22245 -518.5128)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="17.218925" y="50">Queues</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(-472.9928 -849.4846)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Steam logs</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <path d="M -544.372 -1278 L -135.62237 -1278 C -119.05383 -1278 -105.62237 -1264.5685 -105.62237 -1248 L -105.62237 -923.1481 C -105.62237 -906.5796 -119.05383 -893.1481 -135.62237 -893.1481 L -544.372 -893.1481 C -560.9405 -893.1481 -574.372 -906.5796 -574.372 -923.1481 L -574.372 -1248 C -574.372 -1264.5685 -560.9405 -1278 -544.372 -1278 Z" fill="white"/>
+        <path d="M -544.372 -1278 L -135.62237 -1278 C -119.05383 -1278 -105.62237 -1264.5685 -105.62237 -1248 L -105.62237 -923.1481 C -105.62237 -906.5796 -119.05383 -893.1481 -135.62237 -893.1481 L -544.372 -893.1481 C -560.9405 -893.1481 -574.372 -906.5796 -574.372 -923.1481 L -574.372 -1248 C -574.372 -1264.5685 -560.9405 -1278 -544.372 -1278 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        <text transform="translate(-569.372 -1193)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="131.37675" y="50">Delivery</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="73.88164" y="111">Microservice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <path d="M -490.4743 -936.1745 L -490.4743 -1015.608 C -490.4743 -1021.0889 -423.06054 -1025.5372 -339.9972 -1025.5372 C -256.93382 -1025.5372 -189.52009 -1021.0889 -189.52009 -1015.608 L -189.52009 -936.1745 C -189.52009 -930.6936 -256.93382 -926.2454 -339.9972 -926.2454 C -423.06054 -926.2454 -490.4743 -930.6936 -490.4743 -936.1745" fill="#a4f8fd"/>
+        <path d="M -490.4743 -936.1745 L -490.4743 -1015.608 C -490.4743 -1021.0889 -423.06054 -1025.5372 -339.9972 -1025.5372 C -256.93382 -1025.5372 -189.52009 -1021.0889 -189.52009 -1015.608 L -189.52009 -936.1745 C -189.52009 -930.6936 -256.93382 -926.2454 -339.9972 -926.2454 C -423.06054 -926.2454 -490.4743 -930.6936 -490.4743 -936.1745 M -490.4743 -1015.608 C -490.4743 -1010.1271 -423.06054 -1005.6788 -339.9972 -1005.6788 C -256.93382 -1005.6788 -189.52009 -1010.1271 -189.52009 -1015.608" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 140.25602 -1278 L 549.00564 -1278 C 565.5742 -1278 579.00564 -1264.5685 579.00564 -1248 L 579.00564 -923.1481 C 579.00564 -906.5796 565.5742 -893.1481 549.00564 -893.1481 L 140.25602 -893.1481 C 123.68748 -893.1481 110.25602 -906.5796 110.25602 -923.1481 L 110.25602 -1248 C 110.25602 -1264.5685 123.68748 -1278 140.25602 -1278 Z" fill="white"/>
+        <path d="M 140.25602 -1278 L 549.00564 -1278 C 565.5742 -1278 579.00564 -1264.5685 579.00564 -1248 L 579.00564 -923.1481 C 579.00564 -906.5796 565.5742 -893.1481 549.00564 -893.1481 L 140.25602 -893.1481 C 123.68748 -893.1481 110.25602 -906.5796 110.25602 -923.1481 L 110.25602 -1248 C 110.25602 -1264.5685 123.68748 -1278 140.25602 -1278 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        <text transform="translate(115.25602 -1193)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="91.39873" y="50">Notification</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="73.88164" y="111">Microservice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 194.15374 -936.1745 L 194.15374 -1015.608 C 194.15374 -1021.0889 261.56747 -1025.5372 344.63083 -1025.5372 C 427.6942 -1025.5372 495.1079 -1021.0889 495.1079 -1015.608 L 495.1079 -936.1745 C 495.1079 -930.6936 427.6942 -926.2454 344.63083 -926.2454 C 261.56747 -926.2454 194.15374 -930.6936 194.15374 -936.1745" fill="#a4f8fd"/>
+        <path d="M 194.15374 -936.1745 L 194.15374 -1015.608 C 194.15374 -1021.0889 261.56747 -1025.5372 344.63083 -1025.5372 C 427.6942 -1025.5372 495.1079 -1021.0889 495.1079 -1015.608 L 495.1079 -936.1745 C 495.1079 -930.6936 427.6942 -926.2454 344.63083 -926.2454 C 261.56747 -926.2454 194.15374 -930.6936 194.15374 -936.1745 M 194.15374 -1015.608 C 194.15374 -1010.1271 261.56747 -1005.6788 344.63083 -1005.6788 C 427.6942 -1005.6788 495.1079 -1010.1271 495.1079 -1015.608" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(-1157.6208 -744)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Steam logs</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(211.63523 -744)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Steam logs</tspan>
+        </text>
+      </g>
+      <g id="Line_9">
+        <title>Line</title>
+        <line x1="-339.9972" y1="-889.6481" x2="-339.9972" y2="-844" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_8">
+        <line x1="-1024.6252" y1="-889.6481" x2="-1024.6252" y2="-749" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_7">
+        <line x1="344.63083" y1="-889.6481" x2="344.63083" y2="-749" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_6">
+        <line x1="-339.9972" y1="-793.96925" x2="-339.9972" y2="-614.127" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_5">
+        <line x1="232.4012" y1="-678" x2="-197.17097" y2="-542.11956" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_4">
+        <line x1="-912.3956" y1="-678" x2="-482.8234" y2="-542.11956" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_3">
+        <line x1="-339.9972" y1="-407.65574" x2="-339.9972" y2="-350.8883" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Line_2">
+        <line x1="-339.9972" y1="-79.76192" x2="-339.9972" y2="67.83055" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+    </g>
+  </g>
+</svg>

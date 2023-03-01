@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-658 381 2267 608" width="2267" height="608">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 6 2 2 2 2 9 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="-168.88869" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-style="italic" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-BoldItalic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="55" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-11 10:53:55 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_7">
+        <path d="M -612.5096 386.5 L 1563.6384 386.5 C 1585.7298 386.5 1603.6384 404.4086 1603.6384 426.5 L 1603.6384 943.5 C 1603.6384 965.5914 1585.7298 983.5 1563.6384 983.5 L -612.5096 983.5 C -634.601 983.5 -652.5096 965.5914 -652.5096 943.5 L -652.5096 426.5 C -652.5096 404.4086 -634.601 386.5 -612.5096 386.5 Z" fill="white"/>
+        <path d="M -612.5096 386.5 L 1563.6384 386.5 C 1585.7298 386.5 1603.6384 404.4086 1603.6384 426.5 L 1603.6384 943.5 C 1603.6384 965.5914 1585.7298 983.5 1563.6384 983.5 L -612.5096 983.5 C -634.601 983.5 -652.5096 965.5914 -652.5096 943.5 L -652.5096 426.5 C -652.5096 404.4086 -634.601 386.5 -612.5096 386.5 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M -471.2327 510.17536 L 78.76728 510.17536 C 84.29013 510.17536 88.76728 514.6525 88.76728 520.17536 L 88.76728 760.1754 C 88.76728 765.6982 84.29013 770.1754 78.76728 770.1754 L -471.2327 770.1754 C -476.75557 770.1754 -481.2327 765.6982 -481.2327 760.1754 L -481.2327 520.17536 C -481.2327 514.6525 -476.75557 510.17536 -471.2327 510.17536 Z" fill="#aa97fe"/>
+        <path d="M -471.2327 510.17536 L 78.76728 510.17536 C 84.29013 510.17536 88.76728 514.6525 88.76728 520.17536 L 88.76728 760.1754 C 88.76728 765.6982 84.29013 770.1754 78.76728 770.1754 L -471.2327 770.1754 C -476.75557 770.1754 -481.2327 765.6982 -481.2327 760.1754 L -481.2327 520.17536 C -481.2327 514.6525 -476.75557 510.17536 -471.2327 510.17536 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-476.2327 585.17536)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-style="italic" font-weight="700" fill="#2e006e" x="36.520996" y="45">&lt;&lt;bounded context&gt;&gt;</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-style="italic" font-weight="700" fill="#2e006e" x="198.9978" y="100">Invoice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 200.56443 510.17536 L 750.5644 510.17536 C 756.0873 510.17536 760.5644 514.6525 760.5644 520.17536 L 760.5644 760.1754 C 760.5644 765.6982 756.0873 770.1754 750.5644 770.1754 L 200.56443 770.1754 C 195.04158 770.1754 190.56443 765.6982 190.56443 760.1754 L 190.56443 520.17536 C 190.56443 514.6525 195.04158 510.17536 200.56443 510.17536 Z" fill="#aa97fe"/>
+        <path d="M 200.56443 510.17536 L 750.5644 510.17536 C 756.0873 510.17536 760.5644 514.6525 760.5644 520.17536 L 760.5644 760.1754 C 760.5644 765.6982 756.0873 770.1754 750.5644 770.1754 L 200.56443 770.1754 C 195.04158 770.1754 190.56443 765.6982 190.56443 760.1754 L 190.56443 520.17536 C 190.56443 514.6525 195.04158 510.17536 200.56443 510.17536 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(195.56443 585.17536)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-style="italic" font-weight="700" fill="#2e006e" x="36.520996" y="45">&lt;&lt;bounded context&gt;&gt;</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-style="italic" font-weight="700" fill="#2e006e" x="152.64648" y="100">Accounting</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 872.3616 510.17536 L 1422.3616 510.17536 C 1427.8844 510.17536 1432.3616 514.6525 1432.3616 520.17536 L 1432.3616 760.1754 C 1432.3616 765.6982 1427.8844 770.1754 1422.3616 770.1754 L 872.3616 770.1754 C 866.8387 770.1754 862.3616 765.6982 862.3616 760.1754 L 862.3616 520.17536 C 862.3616 514.6525 866.8387 510.17536 872.3616 510.17536 Z" fill="#aa97fe"/>
+        <path d="M 872.3616 510.17536 L 1422.3616 510.17536 C 1427.8844 510.17536 1432.3616 514.6525 1432.3616 520.17536 L 1432.3616 760.1754 C 1432.3616 765.6982 1427.8844 770.1754 1422.3616 770.1754 L 872.3616 770.1754 C 866.8387 770.1754 862.3616 765.6982 862.3616 760.1754 L 862.3616 520.17536 C 862.3616 514.6525 866.8387 510.17536 872.3616 510.17536 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(867.3616 585.17536)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-style="italic" font-weight="700" fill="#2e006e" x="36.520996" y="45">&lt;&lt;bounded context&gt;&gt;</tspan>
+          <tspan font-family="Century Gothic" font-size="45" font-style="italic" font-weight="700" fill="#2e006e" x="217.01538" y="100">Billing</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(94.41819 879.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="55" font-weight="700" fill="#2e006e" x="0" y="55">Finance Back Office Domain</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-73 337 1568 215" width="1568" height="215">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-10 11:03:17 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_6">
+        <path d="M 1003.5708 338.1763 L 1483.5708 338.1763 C 1489.0937 338.1763 1493.5708 342.65346 1493.5708 348.1763 L 1493.5708 541.1763 C 1493.5708 546.69915 1489.0937 551.1763 1483.5708 551.1763 L 1003.5708 551.1763 C 998.048 551.1763 993.5708 546.69915 993.5708 541.1763 L 993.5708 348.1763 C 993.5708 342.65346 998.048 338.1763 1003.5708 338.1763 Z" fill="#aa97fe"/>
+        <path d="M 1003.5708 338.1763 L 1483.5708 338.1763 C 1489.0937 338.1763 1493.5708 342.65346 1493.5708 348.1763 L 1493.5708 541.1763 C 1493.5708 546.69915 1489.0937 551.1763 1483.5708 551.1763 L 1003.5708 551.1763 C 998.048 551.1763 993.5708 546.69915 993.5708 541.1763 L 993.5708 348.1763 C 993.5708 342.65346 998.048 338.1763 1003.5708 338.1763 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(998.5708 414.1763)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="132.5" y="50">Check-in</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M -62 338.1763 L 418 338.1763 C 423.52285 338.1763 428 342.65346 428 348.1763 L 428 541.1763 C 428 546.69915 423.52285 551.1763 418 551.1763 L -62 551.1763 C -67.52285 551.1763 -72 546.69915 -72 541.1763 L -72 348.1763 C -72 342.65346 -67.52285 338.1763 -62 338.1763 Z" fill="#a4f8fd"/>
+        <path d="M -62 338.1763 L 418 338.1763 C 423.52285 338.1763 428 342.65346 428 348.1763 L 428 541.1763 C 428 546.69915 423.52285 551.1763 418 551.1763 L -62 551.1763 C -67.52285 551.1763 -72 546.69915 -72 541.1763 L -72 348.1763 C -72 342.65346 -67.52285 338.1763 -62 338.1763 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-67 414.1763)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="146.48926" y="50">Booking</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(549.7869 414.1763)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Get Bookings</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <line x1="544.7869" y1="444.6763" x2="458.9" y2="444.6763" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_2">
+        <line x1="876.784" y1="444.6763" x2="993.5708" y2="444.6763" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+    </g>
+  </g>
+</svg>

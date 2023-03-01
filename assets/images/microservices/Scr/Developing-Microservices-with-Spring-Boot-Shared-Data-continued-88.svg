@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-572 405 2273 693" width="2273" height="693">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 6 2 2 2 2 9 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="-168.88869" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-style="italic" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-BoldItalic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0061ff">
+      <g>
+        <path d="M 2.5142857 0 L 0 -.9428571 L 0 .9428571 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-26 09:26:11 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_20">
+        <path d="M 613.39334 405.7953 L 1679.889 405.7953 C 1690.9346 405.7953 1699.889 414.7496 1699.889 425.7953 L 1699.889 1077.0394 C 1699.889 1088.0851 1690.9346 1097.0394 1679.889 1097.0394 L 613.39334 1097.0394 C 602.34764 1097.0394 593.39334 1088.0851 593.39334 1077.0394 L 593.39334 425.7953 C 593.39334 414.7496 602.34764 405.7953 613.39334 405.7953 Z" fill="#eefeff"/>
+        <path d="M 613.39334 405.7953 L 1679.889 405.7953 C 1690.9346 405.7953 1699.889 414.7496 1699.889 425.7953 L 1699.889 1077.0394 C 1699.889 1088.0851 1690.9346 1097.0394 1679.889 1097.0394 L 613.39334 1097.0394 C 602.34764 1097.0394 593.39334 1088.0851 593.39334 1077.0394 L 593.39334 425.7953 C 593.39334 414.7496 602.34764 405.7953 613.39334 405.7953 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(598.39334 430.7953)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-style="italic" font-weight="700" fill="#2e006e" x="253.03418" y="45">&lt;&lt;Reservaion Subsystem&gt;&gt;</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="449.73706" y="105">Booking</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="859.5288" y="618.5197" width="592.7921" height="365.9078" fill="white"/>
+        <rect x="859.5288" y="618.5197" width="592.7921" height="365.9078" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_18">
+        <rect x="859.5288" y="618.5197" width="592.7921" height="116.28936" fill="#aa97fe"/>
+        <rect x="859.5288" y="618.5197" width="592.7921" height="116.28936" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(864.5288 646.1644)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="192.88528" y="50">Booking</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <rect x="1589.2592" y="442.5468" width="73.74447" height="90.76242" fill="#ebdea6"/>
+        <rect x="1589.2592" y="442.5468" width="73.74447" height="90.76242" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_14">
+        <g id="Graphic_16">
+          <rect x="1570.24" y="460.98294" width="36.872235" height="19.85428" fill="#ebdea6"/>
+          <rect x="1570.24" y="460.98294" width="36.872235" height="19.85428" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_15">
+          <rect x="1570.24" y="495.01885" width="36.872235" height="19.85428" fill="#ebdea6"/>
+          <rect x="1570.24" y="495.01885" width="36.872235" height="19.85428" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Graphic_13">
+        <path d="M -551 405.7953 L 515.4956 405.7953 C 526.5413 405.7953 535.4956 414.7496 535.4956 425.7953 L 535.4956 1077.0394 C 535.4956 1088.0851 526.5413 1097.0394 515.4956 1097.0394 L -551 1097.0394 C -562.0457 1097.0394 -571 1088.0851 -571 1077.0394 L -571 425.7953 C -571 414.7496 -562.0457 405.7953 -551 405.7953 Z" fill="#eefeff"/>
+        <path d="M -551 405.7953 L 515.4956 405.7953 C 526.5413 405.7953 535.4956 414.7496 535.4956 425.7953 L 535.4956 1077.0394 C 535.4956 1088.0851 526.5413 1097.0394 515.4956 1097.0394 L -551 1097.0394 C -562.0457 1097.0394 -571 1088.0851 -571 1077.0394 L -571 425.7953 C -571 414.7496 -562.0457 405.7953 -551 405.7953 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-566 430.7953)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-style="italic" font-weight="700" fill="#2e006e" x="194.98242" y="45">&lt;&lt;Refrerence Data Subsystem&gt;&gt;</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="343.2307" y="105">Geography Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="-342.67578" y="618.5197" width="592.7921" height="365.9078" fill="white"/>
+        <rect x="-342.67578" y="618.5197" width="592.7921" height="365.9078" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <rect x="-342.67578" y="618.5197" width="592.7921" height="116.28936" fill="#aa97fe"/>
+        <rect x="-342.67578" y="618.5197" width="592.7921" height="116.28936" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-337.67578 646.1644)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="210.91507" y="50">Airport</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="427.20963" y="442.5468" width="73.74447" height="90.76242" fill="#ebdea6"/>
+        <rect x="427.20963" y="442.5468" width="73.74447" height="90.76242" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_7">
+        <g id="Graphic_9">
+          <rect x="408.1905" y="460.98294" width="36.872235" height="19.85428" fill="#ebdea6"/>
+          <rect x="408.1905" y="460.98294" width="36.872235" height="19.85428" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_8">
+          <rect x="408.1905" y="495.01885" width="36.872235" height="19.85428" fill="#ebdea6"/>
+          <rect x="408.1905" y="495.01885" width="36.872235" height="19.85428" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Line_6">
+        <line x1="859.5288" y1="801.4736" x2="278.0163" y2="801.4736" marker-end="url(#FilledArrow_Marker)" stroke="#0061ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(922.0838 772.6493)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Origin: Airport</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(-291.9527 772.6493)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">AirportCode: String</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(922.0838 876.4894)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Destination: Airport</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(-291.9527 876.4894)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">AirportName: String</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

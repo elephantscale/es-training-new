@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-210 330 1531 215" width="1531" height="215">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-10 11:09:28 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_6">
+        <path d="M 829.6688 330.8237 L 1309.6688 330.8237 C 1315.1917 330.8237 1319.6688 335.30085 1319.6688 340.8237 L 1319.6688 533.8237 C 1319.6688 539.34654 1315.1917 543.8237 1309.6688 543.8237 L 829.6688 543.8237 C 824.146 543.8237 819.6688 539.34654 819.6688 533.8237 L 819.6688 340.8237 C 819.6688 335.30085 824.146 330.8237 829.6688 330.8237 Z" fill="#e3a92e"/>
+        <path d="M 829.6688 330.8237 L 1309.6688 330.8237 C 1315.1917 330.8237 1319.6688 335.30085 1319.6688 340.8237 L 1319.6688 533.8237 C 1319.6688 539.34654 1315.1917 543.8237 1309.6688 543.8237 L 829.6688 543.8237 C 824.146 543.8237 819.6688 539.34654 819.6688 533.8237 L 819.6688 340.8237 C 819.6688 335.30085 824.146 330.8237 829.6688 330.8237 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(824.6688 406.8237)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="181.49902" y="50">Fares</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M -199 330.8237 L 281 330.8237 C 286.52285 330.8237 291 335.30085 291 340.8237 L 291 533.8237 C 291 539.34654 286.52285 543.8237 281 543.8237 L -199 543.8237 C -204.52285 543.8237 -209 539.34654 -209 533.8237 L -209 340.8237 C -209 335.30085 -204.52285 330.8237 -199 330.8237 Z" fill="#ebdea6"/>
+        <path d="M -199 330.8237 L 281 330.8237 C 286.52285 330.8237 291 335.30085 291 340.8237 L 291 533.8237 C 291 539.34654 286.52285 543.8237 281 543.8237 L -199 543.8237 C -204.52285 543.8237 -209 539.34654 -209 533.8237 L -209 340.8237 C -209 335.30085 -204.52285 330.8237 -199 330.8237 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-204 376.3237)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="138.48145" y="50">Revenue</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="79.98535" y="111">Management</tspan>
+        </text>
+      </g>
+      <g id="Line_4">
+        <line x1="719.8437" y1="437.3237" x2="788.7688" y2="437.3237" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_3">
+        <line x1="291" y1="437.3237" x2="390.82514" y2="437.3237" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(395.82514 406.8237)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Update Fares</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

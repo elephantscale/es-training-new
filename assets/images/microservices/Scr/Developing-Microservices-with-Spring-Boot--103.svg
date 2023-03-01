@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-313 487 1831 271" width="1831" height="271">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#0048dc">
+      <g>
+        <path d="M 2.24 0 L 0 -.84 L 0 .84 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-10 10:55:12 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_6">
+        <path d="M 997.3631 487.6437 L 1506.6758 487.6437 C 1512.1987 487.6437 1516.6758 492.12085 1516.6758 497.6437 L 1516.6758 747 C 1516.6758 752.52285 1512.1987 757 1506.6758 757 L 997.3631 757 C 991.8403 757 987.3631 752.52285 987.3631 747 L 987.3631 497.6437 C 987.3631 492.12085 991.8403 487.6437 997.3631 487.6437 Z" fill="#aa97fe"/>
+        <path d="M 997.3631 487.6437 L 1506.6758 487.6437 C 1512.1987 487.6437 1516.6758 492.12085 1516.6758 497.6437 L 1516.6758 747 C 1516.6758 752.52285 1512.1987 757 1506.6758 757 L 997.3631 757 C 991.8403 757 987.3631 752.52285 987.3631 747 L 987.3631 497.6437 C 987.3631 492.12085 991.8403 487.6437 997.3631 487.6437 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(992.3631 591.82185)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="146.65585" y="50">Inventory</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M -302.39875 487.6437 L 206.91394 487.6437 C 212.4368 487.6437 216.91394 492.12085 216.91394 497.6437 L 216.91394 747 C 216.91394 752.52285 212.4368 757 206.91394 757 L -302.39875 757 C -307.9216 757 -312.39875 752.52285 -312.39875 747 L -312.39875 497.6437 C -312.39875 492.12085 -307.9216 487.6437 -302.39875 487.6437 Z" fill="#a4f8fd"/>
+        <path d="M -302.39875 487.6437 L 206.91394 487.6437 C 212.4368 487.6437 216.91394 492.12085 216.91394 497.6437 L 216.91394 747 C 216.91394 752.52285 212.4368 757 206.91394 757 L -302.39875 757 C -307.9216 757 -312.39875 752.52285 -312.39875 747 L -312.39875 497.6437 C -312.39875 492.12085 -307.9216 487.6437 -302.39875 487.6437 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-307.39875 591.82185)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="161.1456" y="50">Booking</tspan>
+        </text>
+      </g>
+      <g id="Line_4">
+        <line x1="810.8863" y1="622.32185" x2="950.4631" y2="622.32185" marker-end="url(#FilledArrow_Marker)" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_3">
+        <line x1="216.91394" y1="622.32185" x2="368.1382" y2="622.32185" stroke="#0048dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(384.23313 561.32185)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="44.519043" y="50">Get Inventory</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Update Inventory</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

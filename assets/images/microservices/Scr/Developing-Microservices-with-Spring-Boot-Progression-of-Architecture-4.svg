@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-940 -421 2143 784" width="2143" height="784">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-27 08:14:55 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_15">
+        <path d="M -915.1654 -416 L -46.66141 -416 C -35.615714 -416 -26.66141 -407.0457 -26.66141 -396 L -26.66141 140.8504 C -26.66141 151.8961 -35.615714 160.8504 -46.66141 160.8504 L -915.1654 160.8504 C -926.211 160.8504 -935.1654 151.8961 -935.1654 140.8504 L -935.1654 -396 C -935.1654 -407.0457 -926.211 -416 -915.1654 -416 Z" fill="white"/>
+        <path d="M -915.1654 -416 L -46.66141 -416 C -35.615714 -416 -26.66141 -407.0457 -26.66141 -396 L -26.66141 140.8504 C -26.66141 151.8961 -35.615714 160.8504 -46.66141 160.8504 L -915.1654 160.8504 C -926.211 160.8504 -935.1654 151.8961 -935.1654 140.8504 L -935.1654 -396 C -935.1654 -407.0457 -926.211 -416 -915.1654 -416 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+      <g id="Graphic_14">
+        <circle cx="-747.3701" cy="-248.04724" r="91.4174697400021" fill="#aa97fe"/>
+        <circle cx="-747.3701" cy="-248.04724" r="91.4174697400021" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <circle cx="-618.3937" cy="-7.1023585" r="91.4174697400021" fill="#aa97fe"/>
+        <circle cx="-618.3937" cy="-7.1023585" r="91.4174697400021" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_12">
+        <circle cx="-342.01574" cy="-7.1023585" r="91.4174697400021" fill="#aa97fe"/>
+        <circle cx="-342.01574" cy="-7.1023585" r="91.4174697400021" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <circle cx="-214.45669" cy="-248.04724" r="91.4174697400021" fill="#aa97fe"/>
+        <circle cx="-214.45669" cy="-248.04724" r="91.4174697400021" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <circle cx="-480.9134" cy="-248.04724" r="91.4174697400021" fill="#aa97fe"/>
+        <circle cx="-480.9134" cy="-248.04724" r="91.4174697400021" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(-630.4007 233.96064)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="23.498535" y="50">Monolithic</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Architecture</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 309.13113 -414.92126 L 1177.6351 -414.92126 C 1188.6808 -414.92126 1197.6351 -405.96695 1197.6351 -394.92126 L 1197.6351 141.92914 C 1197.6351 152.97483 1188.6808 161.92914 1177.6351 161.92914 L 309.13113 161.92914 C 298.08543 161.92914 289.13113 152.97483 289.13113 141.92914 L 289.13113 -394.92126 C 289.13113 -405.96695 298.08543 -414.92126 309.13113 -414.92126 Z" fill="white"/>
+        <path d="M 309.13113 -414.92126 L 1177.6351 -414.92126 C 1188.6808 -414.92126 1197.6351 -405.96695 1197.6351 -394.92126 L 1197.6351 141.92914 C 1197.6351 152.97483 1188.6808 161.92914 1177.6351 161.92914 L 309.13113 161.92914 C 298.08543 161.92914 289.13113 152.97483 289.13113 141.92914 L 289.13113 -394.92126 C 289.13113 -405.96695 298.08543 -414.92126 309.13113 -414.92126 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18.0,18.0" stroke-width="9"/>
+      </g>
+      <g id="Graphic_7">
+        <circle cx="476.9264" cy="-248.04724" r="91.4174697400021" fill="#a4f8fd"/>
+        <circle cx="476.9264" cy="-248.04724" r="91.4174697400021" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <circle cx="605.9028" cy="-7.1023585" r="91.417469740002" fill="#a4f8fd"/>
+        <circle cx="605.9028" cy="-7.1023585" r="91.417469740002" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <circle cx="882.2807" cy="-7.1023585" r="91.4174697400021" fill="#a4f8fd"/>
+        <circle cx="882.2807" cy="-7.1023585" r="91.4174697400021" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="1009.8398" cy="-248.04724" r="91.417469740002" fill="#a4f8fd"/>
+        <circle cx="1009.8398" cy="-248.04724" r="91.417469740002" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <circle cx="743.3831" cy="-248.04724" r="91.4174697400021" fill="#a4f8fd"/>
+        <circle cx="743.3831" cy="-248.04724" r="91.4174697400021" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(576.8914 235.03938)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="50">Microservices</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="17.004395" y="111">Architecture</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

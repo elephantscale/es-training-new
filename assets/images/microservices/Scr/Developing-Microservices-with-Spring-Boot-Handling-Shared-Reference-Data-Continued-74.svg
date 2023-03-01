@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="62 457 1065 434" width="1065" height="434">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="45" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Century Gothic" font-size="50" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-02-20 17:10:33 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_7">
+        <path d="M 73 458 L 453.6436 458 C 459.16643 458 463.6436 462.47715 463.6436 468 L 463.6436 880.1393 C 463.6436 885.6621 459.16643 890.1393 453.6436 890.1393 L 73 890.1393 C 67.47715 890.1393 63 885.6621 63 880.1393 L 63 468 C 63 462.47715 67.47715 458 73 458 Z" fill="#aa97fe"/>
+        <path d="M 73 458 L 453.6436 458 C 459.16643 458 463.6436 462.47715 463.6436 468 L 463.6436 880.1393 C 463.6436 885.6621 459.16643 890.1393 453.6436 890.1393 L 73 890.1393 C 67.47715 890.1393 63 885.6621 63 880.1393 L 63 468 C 63 462.47715 67.47715 458 73 458 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 735.2666 458 L 1115.9102 458 C 1121.433 458 1125.9102 462.47715 1125.9102 468 L 1125.9102 880.1393 C 1125.9102 885.6621 1121.433 890.1393 1115.9102 890.1393 L 735.2666 890.1393 C 729.7437 890.1393 725.2666 885.6621 725.2666 880.1393 L 725.2666 468 C 725.2666 462.47715 729.7437 458 735.2666 458 Z" fill="#ebdea6"/>
+        <path d="M 735.2666 458 L 1115.9102 458 C 1121.433 458 1125.9102 462.47715 1125.9102 468 L 1125.9102 880.1393 C 1125.9102 885.6621 1121.433 890.1393 1115.9102 890.1393 L 735.2666 890.1393 C 729.7437 890.1393 725.2666 885.6621 725.2666 880.1393 L 725.2666 468 C 725.2666 462.47715 729.7437 458 735.2666 458 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 115.3218 753 L 411.3218 753 C 416.84464 753 421.3218 757.47715 421.3218 763 L 421.3218 855 C 421.3218 860.5228 416.84464 865 411.3218 865 L 115.3218 865 C 109.79895 865 105.32179 860.5228 105.32179 855 L 105.32179 763 C 105.32179 757.47715 109.79895 753 115.3218 753 Z" fill="#a4f8fd"/>
+        <path d="M 115.3218 753 L 411.3218 753 C 416.84464 753 421.3218 757.47715 421.3218 763 L 421.3218 855 C 421.3218 860.5228 416.84464 865 411.3218 865 L 115.3218 865 C 109.79895 865 105.32179 860.5228 105.32179 855 L 105.32179 763 C 105.32179 757.47715 109.79895 753 115.3218 753 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(110.3218 781.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="26.986816" y="45">Geography</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 777.5884 753 L 1073.5884 753 C 1079.1112 753 1083.5884 757.47715 1083.5884 763 L 1083.5884 855 C 1083.5884 860.5228 1079.1112 865 1073.5884 865 L 777.5884 865 C 772.0655 865 767.5884 860.5228 767.5884 855 L 767.5884 763 C 767.5884 757.47715 772.0655 753 777.5884 753 Z" fill="#a4f8fd"/>
+        <path d="M 777.5884 753 L 1073.5884 753 C 1079.1112 753 1083.5884 757.47715 1083.5884 763 L 1083.5884 855 C 1083.5884 860.5228 1079.1112 865 1073.5884 865 L 777.5884 865 C 772.0655 865 767.5884 860.5228 767.5884 855 L 767.5884 763 C 767.5884 757.47715 772.0655 753 777.5884 753 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(772.5884 781.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="45" font-weight="700" fill="#2e006e" x="26.986816" y="45">Geography</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(770.0952 531)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="56.98242" y="50">Booking</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Microservice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(107.82863 531)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="70.98389" y="50">Search</tspan>
+          <tspan font-family="Century Gothic" font-size="50" font-weight="700" fill="#2e006e" x="0" y="111">Microservice</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
