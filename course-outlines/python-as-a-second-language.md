@@ -150,6 +150,3 @@ Lectures and hands-on labs. (50%, 50%)
   * Introduction to Spark, PySpark, and Databricks
   * Using the Spark framework for Big Data
   * Using MLLib or Data Science in PySpark
-* Use cases
-  * Utilize Python for Geolocation Data
-  * Utilize Python for Packet Analysis
