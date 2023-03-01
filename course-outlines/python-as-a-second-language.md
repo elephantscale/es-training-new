@@ -114,9 +114,6 @@ Lectures and hands-on labs. (50%, 50%)
 * Python and Containers
   - How to use Containers with Python
   - Dockerizing Python
-* Python - Interop
-  - Writing C Modules
-  - Using Python with Other Languages
 * Python - Testing
   - TDD and Python
   - Unit test Frameworks
