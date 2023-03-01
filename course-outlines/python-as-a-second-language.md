@@ -147,7 +147,3 @@ Lectures and hands-on labs. (50%, 50%)
   * Clustering Data
   * Building a Classifier
 
-* Big Data With Spark
-  * Introduction to Spark, PySpark, and Databricks
-  * Using the Spark framework for Big Data
-  * Using MLLib or Data Science in PySpark
