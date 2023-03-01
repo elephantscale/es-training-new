@@ -10,7 +10,7 @@ $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
 
 
 
-# day 1
+# Day 1
 
  * [About Data Analytics With Python](./slides/About-Data-Analytics-With-Python.md)
  * [Data Science Intro](./slides/Data_Science_Intro.md)
@@ -21,7 +21,7 @@ $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
  * [Python Pandas](./slides/PYTHON-Pandas.md)
  * [Python Scipy](./slides/PYTHON-Scipy.md)
 
-# day 2
+# Day 2
  * [Python Visualization](./slides/PYTHON-Visualization.md)
  * [Python Sklearn Intro](./slides/PYTHON-Sklearn-Intro.md)
  * [Python Sklearn Preprocessing](./slides/PYTHON-Sklearn-Preprocessing.md)
