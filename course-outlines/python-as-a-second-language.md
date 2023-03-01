@@ -1,5 +1,6 @@
 # Python as a Second Language
 © Elephant Scale
+
 March 1, 2023
 
 ## Overview
