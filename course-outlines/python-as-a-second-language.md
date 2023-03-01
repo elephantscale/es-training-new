@@ -78,8 +78,8 @@ Lectures and hands-on labs. (50%, 50%)
       - Flask
       - Restful API with Flask
  * Conclusion
-     - Best practices
-      -Future
+     - Best practices 
+     - Future
 
 ### Python intermediate
 
