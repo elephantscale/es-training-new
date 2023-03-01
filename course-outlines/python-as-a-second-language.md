@@ -6,13 +6,12 @@ March 1, 2023
 
 * Python has recently become the most popular language.  It excels at data science,
 artificial intelligence, and other tasks but is also an outstanding language for
-web and service programming and general application development.  
+web programming and general application development.  
 
-  * This is a complete Python course. 
+  * This is a Python course for programmers comfortable with another language. 
   * Helps beginners to Python become comfortable with language basics and getting started with Python.
   * Takes those moving beyond Python language basics to doing analytics and application development in Python.
-  * Teaches doing Machine Learning using popular SciKit-Learn package in Python language.
-  * Python and SciKit-Learn
+  * Teaches doing Machine Learning using popular SciKit-Learn package in Python language. 
   
 ## What you will learn
 * Introducing Python Language
@@ -28,7 +27,7 @@ web and service programming and general application development.
 Developers, Architects
 
 ## Duration
-10 days
+5 days
 
 ## Format
 Lectures and hands-on labs. (50%, 50%)
@@ -95,7 +94,7 @@ Lectures and hands-on labs. (50%, 50%)
 * Visualization
   - Matplotlib
   - Seaborn
-* Advanced  Pandas
+* Advanced Pandas
   - DataFrames
   - Schema inferences
   - Data exploration
