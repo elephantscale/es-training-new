@@ -6,9 +6,13 @@
 ../../python/slides/PYTHON-Intro.md
 ./PYTHON-NumPy.md
 ./PYTHON-Pandas.md
-./PYTHON-Scipy.md
 ./PYTHON-Visualization.md
-./PYTHON-Sklearn.md
-./PYTHON-Recommendations.md
-./PYTHON-Text-Spacy.md
+../../machine-learning/generic/Data-Exploration.md
+
+
+./PYTHON-Scipy.md
+# ./PYTHON-Sklearn.md
+
+# ./PYTHON-Recommendations.md
+# ./PYTHON-Text-Spacy.md
 
