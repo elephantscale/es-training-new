@@ -92,10 +92,16 @@ Lectures and hands-on labs. (50%, 50%)
 * Stats in Python
   - Stats models
   - Doing Stats in Python
-* Visualization
-  - Matplotlib
-  - Seaborn
-* Advanced Pandas
+  
+### Visualization
+
+* Introduction to visualization libraries in Python
+* Matplotlib
+* Seaborn
+* Plotly
+* Labs
+
+### Advanced Pandas
   - DataFrames
   - Schema inferences
   - Data exploration
@@ -143,4 +149,13 @@ Lectures and hands-on labs. (50%, 50%)
   * Introducing Scikit-Learn
   * Clustering Data
   * Building a Classifier
+
+### Machine Learning with Python
+
+* Linear Regression
+* Errors, Residuals
+* Multiple Linear Regression
+* Evaluating model performance
+* Labs:
+  - Use case: House price estimates
 
