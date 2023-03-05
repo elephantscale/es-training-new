@@ -8,9 +8,10 @@
 ./PYTHON-Pandas.md
 ./PYTHON-Visualization.md
 ../../machine-learning/generic/Data-Exploration.md
+./Data-Wrangling.md
 
 
-./PYTHON-Scipy.md
+# ./PYTHON-Scipy.md
 # ./PYTHON-Sklearn.md
 
 # ./PYTHON-Recommendations.md
