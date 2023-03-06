@@ -8,6 +8,9 @@
 
 ![](../images/01-qc-babies.png)
 
+* Let's listen to the book
+* [https://www.youtube.com/watch?v=wZtnNUYkNOc](https://www.youtube.com/watch?v=wZtnNUYkNOc)
+
 ---
 
 ## Why learn quantum computing?
@@ -92,12 +95,12 @@
 ---
 
 
-# Evolution, revolution, or hype?
+# Atoms of computation
 
 
 ---
 
-# Hello World
+# What is quantum?
 
 ---
 
