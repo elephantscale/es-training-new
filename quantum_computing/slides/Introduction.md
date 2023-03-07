@@ -17,7 +17,7 @@
 
 * [https://www.quora.com/What-is-an-intuitive-explanation-of-quantum-computing](https://www.quora.com/What-is-an-intuitive-explanation-of-quantum-computing)
 
-![](../images/04-the-talk.png)
+![](../images/02-the-talk.png)
 
 ---
 
@@ -78,17 +78,6 @@
 11. Accelerating Machine Learning
 
 --- 
-## Quantum Computing vs. Classical
-
-| Quantum Computing                                                                                         | Classical Computing                                  |
-|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| Quantum bits of Qubits => Two-level quantum systems => \|0> or \|1>  or linear combination of \|0> & \|1> | Classical bits 0 & 1 => voltage levels - ON or OFF   |
-| Calculation power increases exponentially with no of qubits                                               | Calculation power increases linearly with no of bits |
-| Hardware varies, such as superconducting qubits, ion traps, integrated photonics, Majorano Fermions       | Hardware made of CMOS circuits                       |
-| QPU - process in parallel                                                                                 | CPU - process sequentially                           |
-| Useful for optimization,  data analysis, and simulation                                                   | Can be used for everyday tasks                       |
-
----
 
 ## What is quantum
 * Instructor tells the story
@@ -96,21 +85,8 @@
 
 ---
 
-## Qubits picture
-
-![](../images/02-qubit.png)
-
----
-
-## Majorano Fermions
-
-![](../images/03-majorana-fermions.png)
-
----
-
 
 # Atoms of computation
-
 
 ---
 
