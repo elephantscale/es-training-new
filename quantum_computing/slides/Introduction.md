@@ -13,6 +13,14 @@
 
 ---
 
+## How to talk about quantum computing to your teenager
+
+* [https://www.quora.com/What-is-an-intuitive-explanation-of-quantum-computing](https://www.quora.com/What-is-an-intuitive-explanation-of-quantum-computing)
+
+![](../images/04-the-talk.png)
+
+---
+
 ## Why learn quantum computing?
 
 * Moore law
@@ -20,7 +28,7 @@
   * But now, this law does not work
   * Because with small transistors there is electrical leakage
   * And because of heat
-  * We smaller chips, we come to subatomic particles, and these are in the realm of quantum mechanics
+  * We use smaller chips, we come to subatomic particles, and these are in the realm of quantum mechanics
   * Cost of cooling in server rooms
 
 ---
@@ -79,6 +87,12 @@
 | Hardware varies, such as superconducting qubits, ion traps, integrated photonics, Majorano Fermions       | Hardware made of CMOS circuits                       |
 | QPU - process in parallel                                                                                 | CPU - process sequentially                           |
 | Useful for optimization,  data analysis, and simulation                                                   | Can be used for everyday tasks                       |
+
+---
+
+## What is quantum
+* Instructor tells the story
+* He uses this demo [https://qiskit.org/textbook/what-is-quantum.html](https://qiskit.org/textbook/what-is-quantum.html)
 
 ---
 
