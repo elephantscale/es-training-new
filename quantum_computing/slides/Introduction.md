@@ -94,14 +94,13 @@
 ---
 
 
-# Atoms of computation
+## Lab - setup
 
----
-
-# What is quantum?
-
----
-
-# Qubits and quantum gates
+* Setup of Python
+* https://github.com/elephantscale/quantum-computing-labs/blob/main/01-setup/01.1-setup.md
+* Setup of Qiskit
+* https://github.com/elephantscale/quantum-computing-labs/blob/main/01-setup/01.2-install-qiskit.md
+* Setup of Jupyter
+* https://github.com/elephantscale/quantum-computing-labs/blob/main/01-setup/01.3-prepare-notebook.md
 
 ---
