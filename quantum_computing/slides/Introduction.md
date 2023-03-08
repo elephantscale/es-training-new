@@ -21,6 +21,14 @@
 
 ---
 
+## Double slit experiment
+
+![](../images/03-double-slit.png)
+
+
+---
+
+
 ## Why learn quantum computing?
 
 * Moore law
