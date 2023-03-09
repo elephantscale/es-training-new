@@ -1,0 +1,10 @@
+## ./gen.sh
+
+About-Data-Analytics-With-Python.md
+# Data_Science_Intro.md
+PYTHON-Intro.md
+PYTHON-NumPy.md
+PYTHON-Pandas.md
+PYTHON-Visualization.md
+../../machine-learning/generic/Data-Exploration.md
+Data-Wrangling.md

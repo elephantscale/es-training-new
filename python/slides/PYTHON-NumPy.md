@@ -19,7 +19,9 @@
 Notes:
 
 ---
+
 # Introduction
+
 ---
 
 ## About NumPy and Python
@@ -67,6 +69,7 @@ Notes:
 Notes:
 
 ---
+
 ## NumPy and SciPy
 
 <img src="../../assets/images/data-analysis-python/3rd-party/python-datascience-stack.jpg"  style="width:40%;float:right;"/><!-- {"left" : 5.62, "top" : 2.78, "height" : 3.5, "width" : 4.6} -->
@@ -94,6 +97,9 @@ Notes:
 ---
 
 ## Lists in Python
+
+<img src="../../assets/images/python/python-list-vs-numpy-array.png" style="width:50%;float:right;" />  <!-- {"left" : 2.89, "top" : 6.48, "height" : 1, "width" : 2.49} -->
+
 
   * Python has a native type of sequence: the list.
 

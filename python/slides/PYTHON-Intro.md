@@ -1,36 +1,54 @@
 # Python Intro
+
+<img src="../../assets/images/logos/python-logo-1.png" style="width:50%;"/> <!-- {"left" : 1.18, "top" : 1.69, "height" : 6.35, "width" : 7.88} -->
+
 ---
 
 ## Lesson Objectives
 
-  * Get a brief introduction to Python, it's history, differences
-    from other languages and use cases
-  * Install Python
-  * Learn about Python Integrated Development Environments (IDEs)
-  * Learn, Install and Use Jupyter Notebooks
+* Get a brief introduction to Python, it's history, differences from other languages and use cases
+
+* Install Python
+
+* Learn about Python Integrated Development Environments (IDEs)
+
+* Learn, Install and Use Jupyter Notebooks
 
 ---
+
+## Resources
 
 There are many Python books, here are some that we recommend
 
 * [Introducing Python: Modern Computing in Simple Packages 2nd Edition](https://www.amazon.com/Introducing-Python-Modern-Computing-Packages/dp/1492051365/ref=redir_mobile_desktop?ie=UTF8&aaxitk=UTnB2uOmm2k0KdP7Qh.a0Q&hsa_cr_id=1275498690801&ref_=sb_s_sparkle)
+
 * [Python Pocket Reference: Python In Your Pocket (Pocket Reference (O'Reilly)) Fifth Edition](https://www.amazon.com/Python-Pocket-Reference-Your-OReilly/dp/1449357016/ref=redir_mobile_desktop?ie=UTF8&aaxitk=6ISCj8jS3Qx-fnlizPfhBA&hsa_cr_id=1275498690801&ref_=sb_s_sparkle)
+
 * [Learn Python 3 the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code (Zed Shaw's Hard Way Series)](https://www.amazon.com/Learn-Python-Hard-Way-Introduction-ebook/dp/B07378P8W6/ref=sr_1_3?crid=3Q8YB2LHWLXM1&dchild=1&keywords=learning+python+the+hard+way&qid=1588090877&sprefix=learning+python%2Caps%2C193&sr=8-3)
 
+---
+
 # Introduction
+
 ---
 
 ## About Python
 
-  * Python is a general-purpose, object-oriented, dynamic programming language
-  * Python is also **language & environment** for data science computing
-    and graphics
-  * Open source
-  * Rich ecosystem (lots of libraries)
-  * Great for modeling, machine learning, ad-hoc analytics
-  * Used by app developers, web developers, but also popular among scientists
-    and now data scientists
-  * Python Website - https://www.python.org/
+* Python is a general-purpose, object-oriented, dynamic programming language
+
+* Python is also **language & environment** for data science computing
+and graphics
+
+* Open source
+
+* Rich ecosystem (lots of libraries)
+
+* Great for modeling, machine learning, ad-hoc analytics
+
+* Used by app developers, web developers, but also popular among scientists
+and now data scientists
+
+* Python Website - https://www.python.org/
 
 
 Notes:
@@ -377,23 +395,20 @@ Notes:
 
 ## Installing Python
 
-  * We recommend downloading Anaconda from Continuum Analytics 
-    - [https://www.anaconda.com/]
+* We recommend downloading Anaconda from Continuum Analytics 
+    - [anaconda.com](https://www.anaconda.com)
 
-  * Download the free version of Anaconda Distribution for Windows / Mac / Linux
-   at [http://www.anaconda.com/download]
+* Download the free version of Anaconda Distribution for Windows / Mac / Linux
 
-  * Ensure to get the Python `3.*` version
+* Ensure to get the Python `3.*` version
 
 <img src="../../assets/images/python/Installing-Python.png" style="max-width:60%;"/><!-- {"left" : 1.54, "top" : 4.89, "height" : 2.94, "width" : 3.4} --> &nbsp; &nbsp; <img src="../../assets/images/python/3rd-party/anaconda.png" style="max-width:30%;"/><!-- {"left" : 5.34, "top" : 4.89, "height" : 2.94, "width" : 3.38} -->
-
-
-
 
 Notes:
 
 * There are definitely are many ways to install Python
 * If you want a deeper view, go [here](https://wiki.python.org/moin/BeginnersGuide/Download) 
+
 ---
 
 ## Why Anaconda?
@@ -426,6 +441,7 @@ Notes:
   - It has tools to easily collect data from sources using machine learning and AI.
   
 * To go deeper, see [here](https://data-flair.training/blogs/python-anaconda-tutorial/)
+
 ---
 
 ## Do I really need Anaconda?
@@ -441,11 +457,11 @@ Notes:
 
   * You will have to download and install your own packages as-needed
 
-
 Notes:
 
 In this course, we are usually using Anaconda installed. Yes, you have your choice, and
 if you want to experiment, then start with Anaconda, and later try your experiments.
+
 ---
 
 ## Lab: Install Anaconda
@@ -465,6 +481,7 @@ if you want to experiment, then start with Anaconda, and later try your experime
 Notes:
 
 Anaconda is a big download, and the install will take time. Just sit back and relax. It will work. 
+
 ---
 
 ## Python Console
@@ -491,11 +508,11 @@ $ python
 ```
 <!-- {"left" : 0, "top" : 2.18, "height" : 4.8, "width" : 10.21} -->
 
-
 Notes:
 
 * Please experiment with the command line beyond what is shown in the slides.
 It's your creativity that counts. Then share with your fellow students and the instructor.
+
 ---
 
 ## Lab: Python REPL Shell
@@ -512,12 +529,11 @@ It's your creativity that counts. Then share with your fellow students and the i
 
     - **02__pythonIntro | 2.1-repl.md**
 
-
----
-
 Notes:
 
 * Please follow the lab. Ask the instructor for assistance.
+
+---
  
 ## Getting Started With Python REPL (Lab)
 
@@ -895,6 +911,7 @@ Notes:
     - **02-notebooks / 2.2-LearningNotebooks.ipynb**
 
 ---
+
 ## Lab: Introducing Jupyter Notebook
 
 
@@ -916,4 +933,3 @@ Notes:
 
 In the future, you will spend a lot of time in the notebooks,
 so don't worry if you do not get it all right away. 
----
