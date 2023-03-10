@@ -209,3 +209,10 @@
 * Human preferences are just not homogeneous
 * Prompt-stability testing for the reward model (RM)
 * Wireheading-type issues
+
+## TODO
+
+* Go deeper
+* https://www.assemblyai.com/blog/how-chatgpt-actually-works/
+
+---
