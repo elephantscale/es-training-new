@@ -177,3 +177,35 @@
 
 ---
 
+## Source for us
+
+[https://arxiv.org/pdf/2203.02155.pdf?ref=news-tutorials-ai-research](https://arxiv.org/pdf/2203.02155.pdf?ref=news-tutorials-ai-research)
+
+---
+
+## Evaluation the result
+
+* Helpfulness: 
+  * judging the model’s ability to follow user instructions, as well as infer instructions.
+* Truthfulness: 
+  * judging the model’s tendency for hallucinations (making up facts) on closed-domain tasks. The model is evaluated on the TruthfulQA dataset.
+* Harmlessness: 
+  * the labelers evaluate whether the model’s output is appropriate, denigrates a protected class, or contains derogatory content. The model is also benchmarked on the RealToxicityPrompts and CrowS-Pairs datasets.
+
+---
+
+## Shortcomings
+
+* The preferences of the labelers who produce the demonstration data.
+* The researchers who design the study and write the labeling instructions.
+* The choice of prompts crafted by the developers or provided by the OpenAI customers.
+* The labelers bias is both included in the reward model training (by ranking outputs) and in the model evaluation.
+
+---
+
+## Also
+* Lack of control study
+* Lack of ground truth for the comparison data
+* Human preferences are just not homogeneous
+* Prompt-stability testing for the reward model (RM)
+* Wireheading-type issues
