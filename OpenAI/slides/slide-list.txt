@@ -1,2 +1,3 @@
 About-OpenAI-Class.md
 Fine-Tuning.md
+How-ChatGPT-Works.md
