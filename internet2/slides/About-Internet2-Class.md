@@ -1,12 +1,12 @@
 # About this Class
 
-<img src="../../assets/images/generic/3rd-party/cloud-6.jpg" style="width:40%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/generic/3rd-party/cloud-6.jpg" style="width:40%;"/> <!-- {"left" : 3.28, "top" : 3.84, "height" : 7.19, "width" : 10.94} -->
 
 ---
 
 ## About This Class
 
-<img src="../../assets/images/generic/3rd-party/cloud-5.jpg" style="width:35%;float:right;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/generic/3rd-party/cloud-5.jpg" style="width:35%;float:right;"/> <!-- {"left" : 9.23, "top" : 0.7, "height" : 4.3, "width" : 7.83} -->
 
 * **Practical, hands-on, cross-cloud**
 
@@ -22,9 +22,9 @@ Notes:
 
 ## Prerequisites & Expectations
 
-<img src="../../assets/images/generic/3rd-party/cloud-4.jpg" style="width:20%;float:right;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/generic/3rd-party/cloud-4.jpg" style="width:20%;float:right;"/> <!-- {"left" : 11.44, "top" : 0.7, "height" : 3.63, "width" : 5.52} -->
 
-<img src="../../assets/images/logos/linux-logo-1.png" style="width:20%;float:right;clear:both;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/logos/linux-logo-1.png" style="width:20%;float:right;clear:both;"/> <!-- {"left" : 13.23, "top" : 4.83, "height" : 2.48, "width" : 3.77} -->
 
 * Development background
 
@@ -38,7 +38,7 @@ Notes:
 
 ## Our Teaching Philosophy
 
-<img src="../../assets/images/generic/3rd-party/simpsons-1.png"  style="width:45%;float:right;"/><!-- {"left" : 1.78, "top" : 3.22, "height" : 5.4, "width" : 6.7} -->
+<img src="../../assets/images/generic/3rd-party/simpsons-1.png"  style="width:45%;float:right;"/><!-- {"left" : 10.88, "top" : 0.52, "height" : 4.88, "width" : 6.05} -->
 
 * Enable you to be a **'Cloud Guru'** by giving you
     - The essential knowledge of the three major clouds
@@ -58,7 +58,7 @@ Notes:
 
 ## About Quizzes
 
-<img src="../artwork/pexels-andrea-piacquadio-3760809.jpg" style="float:right; width:50%;">
+<img src="../artwork/pexels-andrea-piacquadio-3760809.jpg" style="float:right; width:50%;"> <!-- {"left" : 10.11, "top" : 0.7, "height" : 4.55, "width" : 6.82} -->
 
 * We have many quizzes interspersed in the slides. They are fun way to review information
 
@@ -70,7 +70,7 @@ Notes:
 
 ## After The Class...
 
-<img src="../../assets/images/machine-learning/3rd-party/tshirt-cloud.png"  style="width:50%;"/> <!-- {"left" : 1.69, "top" : 2, "height" : 5.65, "width" : 6.88} -->
+<img src="../../assets/images/machine-learning/3rd-party/tshirt-cloud.png"  style="width:50%;"/> <!-- {"left" : 4.08, "top" : 2.93, "height" : 7.66, "width" : 9.33} -->
 
 Notes:
 
@@ -80,7 +80,7 @@ Notes:
 
 ## Class Logistics
 
-<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;float:right;"/>  &nbsp;  &nbsp;
+<img src="../../assets/images/generic/cat-tea-leaf-8-lets-get-started.jpg" style="width:55%;float:right;"/>  <!-- {"left" : 10.07, "top" : 0.53, "height" : 6.28, "width" : 6.68} -->
 
 * Instructor's contact
 
