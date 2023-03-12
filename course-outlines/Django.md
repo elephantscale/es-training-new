@@ -108,3 +108,7 @@ March 12, 2023
 * Django Compiler
 * Django Exercises
 * Django Quiz
+
+### Our references
+* https://www.w3schools.com/django/index.php
+
