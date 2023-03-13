@@ -1,5 +1,5 @@
 About-Quantum-Computing-Class.md
 Introduction.md
 Atoms-of-Computation.md
-
+QC-applications.md
 
