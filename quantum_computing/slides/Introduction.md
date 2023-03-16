@@ -93,7 +93,12 @@
 
 ---
 
+## Nobel  prize 2022
+* No local realism
+* [Explanation from Olivia](https://www.youtube.com/watch?v=9OM0jSTeeBg)
+* We will be back to this later
 
+---
 ## Lab - setup
 
 * Setup of Python

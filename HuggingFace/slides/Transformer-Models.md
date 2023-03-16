@@ -1,4 +1,4 @@
-# Introduction to Transformers
+# Transformer Models
 
 ---
 
@@ -13,12 +13,13 @@
 
 Notes:
 
-* [How Transformers Work](https://huggingface.co/course/chapter1/4?fw=pt)
+* We used the HuggingFace tutorial which come with Apache 2 license
+* [Credits](https://huggingface.co/course/chapter1/1)
 
 ---
 
 
-# NLP
+# What is NLP?
 
 ---
 
@@ -38,12 +39,21 @@ Notes:
   * Identifying the grammatical components of a sentence (noun, verb, adjective), or the named entities (person, location, organization)
 * Generating text content: 
   * Completing a prompt with auto-generated text, filling in the blanks in a text with masked words
-* Extracting an answer from a text: 
+
+![](../images/04-generating-text.png)
+---
+
+## NLP Tasks continued
+
+* Extracting an answer from a text:
   * Given a question and a context, extracting the answer to the question based on the information provided in the context
-* Generating a new sentence from an input text: 
+* Generating a new sentence from an input text:
   * Translating a text into another language, summarizing a text
 * More
   * Generating a transcript of an audio sample or a description of an image.
+
+![](../images/05-language-translation.png)
+
 ---
 
 ## Why is it challenging?
@@ -51,12 +61,18 @@ Notes:
 * Computers don’t process information in the same way as humans. 
 * For example, when we read the sentence “I am hungry,” we can easily understand its meaning. 
 * Similarly, given two sentences such as “I am hungry” and “I am sad,” we’re able to easily determine how similar they are. 
-* For machine learning (ML) models, such tasks are more difficult. 
-  * The text needs to be processed in a way that enables the model to learn from it. 
-  * And because language is complex, we need to think carefully about how this processing must be done. There has been a lot of research done on how to represent text.
 
 ---
 
+## That's hard
+
+* For machine learning (ML) models, such tasks are more difficult.
+  * The text needs to be processed in a way that enables the model to learn from it.
+  * And because language is complex, we need to think carefully about how this processing must be done. There has been a lot of research done on how to represent text.
+
+![](../images/03-pexels-photo-942540.jpeg)
+
+---
 # Transformers benefits
 
 ---

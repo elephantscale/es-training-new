@@ -1,5 +1,5 @@
 About-HF-Class.md
-Introduction-to-Transformers.md
+Transformer-Models.md
 Transformer-Pipelines.md
 Fine-Tuning.md
 Sharing-Models.md

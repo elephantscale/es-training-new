@@ -21,7 +21,7 @@
 
 ## Loading the dataset
 
-* The Hub doesn’t just contain models
+* The Hub does not just contain models
   * it also has multiple datasets in lots of different languages. 
   * You can browse the datasets here, 
   * and we recommend you try to load and process a new dataset 
