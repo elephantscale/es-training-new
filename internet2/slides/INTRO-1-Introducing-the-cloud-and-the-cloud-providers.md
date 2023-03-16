@@ -1,6 +1,6 @@
 # Introducing the Cloud
 
-<img src="../../assets/images/generic/3rd-party/cloud-3.jpg" style="width:40%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/generic/3rd-party/cloud-3.jpg" style="width:40%;"/> <!-- {"left" : 3.41, "top" : 3.93, "height" : 7.02, "width" : 10.68} -->
 
 ---
 
@@ -27,25 +27,26 @@
 
 * Accessed via internet
 
-<img src="../artwork/xkcd-cloud-2.png" style="width:90%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../artwork/xkcd-cloud-2.png" style="width:90%;"/> <!-- {"left" : 1.8, "top" : 6.11, "height" : 4.43, "width" : 13.9} -->
 
 ---
 
 ## Advantages of Cloud
 
-<img src="../../assets/images/aws/cloud-advantages.png" style="width:80%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/aws/cloud-advantages.png" style="width:80%;"/> <!-- {"left" : 2.63, "top" : 3.51, "height" : 6.71, "width" : 12.24} -->
 
 ---
 
 ## Cloud Market Share
 
-<img src="../artwork/cloud-market-share-2022.jpeg" style="width:55%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../artwork/cloud-market-share-2022.jpeg" style="width:55%;"/> <!-- {"left" : 4.35, "top" : 2.47, "height" : 8.8, "width" : 8.8} -->
 
 ---
 
 ## Market Players Positioning
 
-<img src="../artwork/cloud-market-positioning-2021.png" style="width:75%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../artwork/cloud-market-positioning-2021.png" style="width:75%;"/> <!-- {"left" : 2.96, "top" : 2.42, "height" : 7.1, "width" : 11.58} -->
+
 
 * [Source](https://www.researchgate.net/figure/Global-cloud-providers-competitive-positioning-IaaS-PaaS-hosted-private-cloud-third_fig2_350979547)
 
@@ -72,7 +73,7 @@
 
 ## Regions and Availability Zones
 
-<img src="../artwork/01-cloud-05.png" style="width:50%;float:right;">
+<img src="../artwork/01-cloud-05.png" style="width:50%;float:right;"> <!-- {"left" : 9.59, "top" : 2.05, "height" : 3.89, "width" : 7.34} -->
 
 * Each region consists of multiple availability zones.
 
@@ -113,13 +114,13 @@
 
 ## Cloud Service Models for Pizza
 
-<img src="../artwork/iaas-vs-paas-vs-saas.png" style="width:70%;">
+<img src="../artwork/iaas-vs-paas-vs-saas.png" style="width:70%;"> <!-- {"left" : 3.08, "top" : 2.41, "height" : 8.9, "width" : 11.34} -->
 
 ---
 
 ## Cloud Service Models
 
-<img src="../artwork/01-cloud-03.png" style="width:80%;">
+<img src="../artwork/01-cloud-03.png" style="width:80%;"> <!-- {"left" : 2.21, "top" : 1.99, "height" : 5.94, "width" : 13.07} -->
 
 * Left: we manage
 
@@ -154,15 +155,15 @@
 
 ## Cloud Market Share
 
-<img src="../artwork/cloud-market-share-2022.jpeg" style="width:55%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../artwork/cloud-market-share-2022.jpeg" style="width:55%;"/> <!-- {"left" : 4.21, "top" : 2.32, "height" : 9.08, "width" : 9.08} -->
 
 ---
 
 ## AWS (Amazon Web Services)
 
-<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;float:right;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/logos/aws-logo-2.png" style="width:20%;float:right;"/> <!-- {"left" : 13.26, "top" : 1.37, "height" : 1.44, "width" : 3.82} -->
 
-<img src="../artwork/01-cloud-06.png" style="width:50%;float:right;clear:both;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../artwork/01-cloud-06.png" style="width:50%;float:right;clear:both;"/> <!-- {"left" : 9.98, "top" : 3.03, "height" : 4.63, "width" : 7.18} -->
 
 * AWS is the **very first public cloud service** to be launched
 
@@ -176,7 +177,7 @@
 
 ## Microsoft Azure
 
-<img src="../../assets/images/logos/azure-logo-2.png" style="width:30%;float:right;clear:both;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/logos/azure-logo-2.png" style="width:30%;float:right;clear:both;"/> <!-- {"left" : 12.55, "top" : 1.17, "height" : 1.47, "width" : 4.52} -->
 
 * Azure is Microsoft's portfolio of integrated cloud services, built for developers and IT professionals
 
@@ -192,8 +193,7 @@
 
 ## Google Compute Platform (GCP)
 
-<img src="../../assets/images/logos/google-cloud-logo-3.png
-" style="width:30%;float:right;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../../assets/images/logos/google-cloud-logo-3.png"  style="width:30%;float:right;"/> <!-- {"left" : 13.45, "top" : 0.97, "height" : 2.16, "width" : 3.51} -->
 
 * Google had had a long history of building cloud-enabling technology (with a heavy focus on big data) before its cloud services were launched
 
@@ -201,7 +201,8 @@
 
 * Trying to differentiate themselves in **Machine Learning / AI** space
 
-<img src="../artwork/01-cloud-10.png" style="width:60%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../artwork/01-cloud-10.png" style="width:60%;"/><!-- {"left" : 4.01, "top" : 8.28, "height" : 3.15, "width" : 9.47} -->
+
 
 ---
 
@@ -223,6 +224,8 @@
 | Machine Learning | Hosted ML/DL infrastructure                              |
 | Monitoring       | Monitor infrastructure, gather and analyze logs          |
 
+<!-- {"left" : 0.78, "top" : 3.9, "height" : 1, "width" : 15.93, "columnwidth" : [4.45, 11.48]} -->
+
 ---
 
 ## Compute Services
@@ -234,7 +237,9 @@
 | Containers           | Amazon Elastic Compute Cloud Container Service | Azure Kubernetes Service (AKS) | Google Kubernetes Engine     |
 | Serverless Functions | AWS Lambda                                     | Azure Functions                | Google Cloud Functions       |
 
-<img src="../../assets/images/logos/google-compute-engine-logo-1.png" style="width:25%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<!-- {"left" : 0.8, "top" : 1.85, "height" : 1, "width" : 15.91} -->
+
+<img src="../../assets/images/logos/google-compute-engine-logo-1.png" style="width:25%;"/> <!-- {"left" : 7.2, "top" : 8.39, "height" : 3.1, "width" : 3.1} -->
 
 ---
 
@@ -247,7 +252,10 @@
 | Cold Storage   | Amazon Glacier                | Azure Archive Blob Storage | Google Cloud Storage Nearline          |
 | File Storage   | Amazon Elastic File System    | Azure File Storage         | Google Filestore                       |
 
-<img src="../artwork/03-storage-22.png" style="width:25%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<!-- {"left" : 0.67, "top" : 1.85, "height" : 1, "width" : 16.21} -->
+
+<img src="../artwork/03-storage-22.png" style="width:25%;"/><!-- {"left" : 7.25, "top" : 8.17, "height" : 3.18, "width" : 3} -->
+
 
 ---
 
@@ -260,7 +268,9 @@
 | Peering         | Direct Connect                     | ExpressRoute             | Google Cloud Interconnect   |
 | DNS             | Amazon Route 53                    | Azure DNS                | Google Cloud DNS            |
 
-<img src="../../assets/images/terraform/load-balancer.png" style="width:45%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<!-- {"left" : 0.8, "top" : 1.8, "height" : 1, "width" : 15.95} -->
+
+<img src="../../assets/images/terraform/load-balancer.png" style="width:45%;"/><!-- {"left" : 6.36, "top" : 7.69, "height" : 3.8, "width" : 4.77} -->
 
 ---
 
@@ -271,8 +281,12 @@
 | RDBMS            | Amazon Relational Database Service | SQL Database    | Google Cloud SQL                             |
 | NoSQL: Key–Value | Amazon DynamoDB                    | Table Storage   | Google Cloud Firestore/Google Cloud Bigtable |
 | NoSQL: Indexed   | Amazon SimpleDB                    | Azure Cosmos DB | Google Cloud Datastore                       |
+<!-- {"left" : 1.03, "top" : 1.95, "height" : 1, "width" : 15.43} -->
 
-<img src="../../assets/images/digital-transformation/3rd-party/graphdatabases.png" style="width:75%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+
+<img src="../../assets/images/digital-transformation/3rd-party/graphdatabases.png" style="width:75%;"/><!-- {"left" : 4.4, "top" : 7.3, "height" : 4.37, "width" : 8.7} -->
+
+
 
 ---
 
@@ -280,7 +294,7 @@
 
 * Please keep in mind, this is a very fluid market and things change very rapidly
 
-<br>
+<br/>
 
 | AWS                             | Azure                          | GCP                                           |
 |---------------------------------|--------------------------------|-----------------------------------------------|
@@ -288,7 +302,8 @@
 | Service portfolio               | Integration with open source   | Attractive pricing models                     |
 | Presence (market and geography) | Private datacenter integration | Best for AI and machine learning applications |
 
-<br>
+<!-- {"left" : 1.4, "top" : 3.5, "height" : 1, "width" : 14.69} -->
+
 
 * More references
     - [This differentiates core service offerings](https://www.veritis.com/blog/aws-vs-azure-vs-gcp-the-cloud-platform-of-your-choice/)
@@ -374,9 +389,11 @@ by employing cloud-native features. This strategy takes more time to execute but
 
 ---
 
-## End of Module  👏
+## End of Module 
 
-<img src="../artwork/xkcd-lunch-1.png" style="width:35%;"/> <!-- {"left" : 2.92, "top" : 7.35, "height" : 1.44, "width" : 2.19} -->
+<img src="../artwork/xkcd-lunch-1.png" style="width:35%;"/><!-- {"left" : 5.36, "top" : 2.34, "height" : 8.72, "width" : 6.77} -->
+
+
 
 ---
 
