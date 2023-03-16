@@ -85,7 +85,7 @@ Notes:
 
 ---
 
-## Pipeline
+## Lab - Transformers Out of the Box
 
 * The most basic object in the Transformers library is the pipeline() function. It connects a model with its necessary preprocessing and postprocessing steps, allowing us to directly input any text and get an intelligible answer:
 
@@ -117,9 +117,15 @@ Notes:
 
 * October 2019: DistilBERT, a distilled version of BERT that is 60% faster, 40% lighter in memory, and still retains 97% of BERT’s performance
 
+---
+
+## The years
+
 * October 2019: BART and T5, two large pretrained models using the same architecture as the original Transformer model (the first to do so)
 
 * May 2020, GPT-3, an even bigger version of GPT-2 that is able to perform well on a variety of tasks without the need for fine-tuning (called zero-shot learning)
+
+* February 2023, GPT-4
 
 ---
 
@@ -134,13 +140,14 @@ Notes:
 ## Transformers are language models
 
 * All the Transformer models mentioned above (GPT, BERT, BART, T5, etc.) have been trained as language models. 
-  * This means they have been trained on large amounts of raw text in a self-supervised fashion. Self-supervised learning is a type of training in which the objective is automatically computed from the inputs of the model. That means that humans are not needed to label the data!
+  * This means they have been trained on large amounts of raw text in a self-supervised fashion. 
 
 * This type of model develops a statistical understanding of the language it has been trained on, but it’s not very useful for specific practical tasks. 
-  * Because of this, the general pretrained model then goes through a process called transfer learning. During this process, the model is fine-tuned in a supervised way — that is, using human-annotated labels — on a given task.
+  * Because of this, the general pretrained model then goes through a process called transfer learning. 
+
+![](../images/26-getty-image-kachok.png)
 
 ---
-
 
 ##  Example of a task
 
@@ -153,9 +160,47 @@ Notes:
 ## Masked language modeling
 
 * Another example is masked language modeling, in which the model predicts a masked word in the sentence.
-![](../images/07.png)
+  ![](../images/07.png)
 
 ---
+
+## Transfer learning
+
+* Pretraining 
+  * Training a model from scratch: the weights are randomly initialized, and the training starts without any prior knowledge.
+* Done on very large amounts of data
+  * Requires a very large corpus of data, and training can take up to **several weeks**.
+
+![](../images/25-pretraining.png)
+
+
+---
+
+## Fine-tuning
+* Done **after** a model has been pretrained
+* First acquire a pretrained language model
+* Then perform additional training with a dataset specific to your task
+
+![](../images/27-barbie.png)
+
+---
+
+## Why fine-tune?
+
+* The pretrained model was already trained on a dataset that has some similarities with the fine-tuning dataset. 
+* Since the pretrained model was already trained on lots of data, the fine-tuning requires **way less** data to get decent results.
+* The **amount of time and resources** needed to get good results are much lower.
+
+![](../images/28-tune.png)
+
+---
+
+## Advantages of fine-tuning
+
+![](../images/29-fine-tune.png)
+
+---
+
 
 ## Transformers are big models
 
@@ -233,21 +278,60 @@ Notes:
 ---
 
 
-# Encoder Models
+## Encoder
+
+* Encoder
+  * The encoder receives an input and builds a representation of it (its features). This means that the model is optimized to acquire understanding from the input.
+
+![](../images/30-encoder-decoder.png)
 
 ---
 
-# Decoder Models
+## Decoder
+
+* Decoder: 
+  * The decoder uses the encoder’s representation (features) along with other inputs to generate a target sequence. 
+  * This means that the model is optimized for generating outputs.
+
+![](../images/30-encoder-decoder.png)
 
 ---
 
-# Sequence-to-sequence Models
+## Encoder and Decoder are Independent
 
+* **Encoder-only** models: 
+  * Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.
+* **Decoder-only** models: 
+  * Good for generative tasks such as text generation.
+* **Encoder-decoder** models or sequence-to-sequence models: 
+  * Good for generative tasks that require an input, such as translation or summarization.
+
+--- 
+
+## Attention layer
+
+---
+
+## Encoder models
+
+---
+
+## Decode models
+
+---
+
+## Sequence-to-sequence Models
 
 ---
 
 # Bias and limitations
 
+---
+
+## Lab - bias
+
+* Please do the lab
+* [05-ML-bias](https://github.com/elephantscale/huggingface-labs/tree/main/05-ML-bias)
 
 ---
 
