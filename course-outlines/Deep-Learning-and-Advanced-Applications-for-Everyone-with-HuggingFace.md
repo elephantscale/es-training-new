@@ -120,4 +120,3 @@ with a practical reasonable expense of time and resources.
 
 ## Ref (internal, not for students)
 * https://huggingface.co/course/chapter1/1
-* 
