@@ -1,4 +1,4 @@
-# Deep Learning & Advanced Applications for Everyone with HuggingFace
+# Deep Learning & Advanced Applications
 
 (C) Copyright Elephant Scale
 March 16, 2023
