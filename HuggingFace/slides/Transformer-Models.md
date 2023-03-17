@@ -384,7 +384,7 @@ Notes:
 
 ---
 
-## Decode models
+## Decoder models
 
 * Decoder models use only the decoder of a Transformer model
   * At each stage, for a given word the attention layers can only access the words positioned before it in the sentence. 
