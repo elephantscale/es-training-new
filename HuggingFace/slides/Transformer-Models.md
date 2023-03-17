@@ -310,7 +310,29 @@ Notes:
 
 ## Attention layer
 
+* Attention layer is a key feature of transformers
+* Based on the "[Attention Is All You Need](https://arxiv.org/abs/1706.03762)" paper
+* This layer will tell the model to pay specific attention to certain words in the sentence you passed it
+
+![](../images/31-pexels-sam-lion-5732456.jpg)
+
 ---
+
+## Attention to text
+
+* Input "You **like** this course"
+* like ==> you
+  * Because of "like" attention goes to "you"
+  * because in French the verb “like” is conjugated differently depending on the subject
+* In general
+  *  a word by itself has a meaning, but that meaning is deeply affected by the context
+
+![](../images/32-pexels-pixabay-2135.jpg)
+
+---
+
+## Transformer architecture
+
 
 ## Encoder models
 

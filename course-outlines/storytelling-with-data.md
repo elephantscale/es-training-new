@@ -2,7 +2,7 @@
 
 © Elephant Scale
 
-December 12, 2022
+March 16, 2023
 
 ## Overview
 
@@ -26,7 +26,7 @@ December 12, 2022
 
 ## Duration: 
 
-* Three days
+* Two days
 
 ## Audience: 
 * Data Analysts

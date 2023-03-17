@@ -38,20 +38,7 @@ Notes:
 
 ---
 
-## My story
-
-* How I started
-* Let's look at one example
-
----
-
-## Unfaithful wife
-
-* https://mkerzner.blogspot.com/2015/11/sotah-15-sacrifice-of-jealousy.html
-
----
-
-## Now - you
+## About you
 
 * Did you ever hold your audience's attention?
 

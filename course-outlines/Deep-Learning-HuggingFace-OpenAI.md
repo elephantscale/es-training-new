@@ -1,7 +1,7 @@
 # Deep Learning, HuggingFace, and OpenAI
 
 (C) Copyright Elephant Scale
-January 23, 2023
+March 16, 2023
 
 ## Course Description
 
@@ -93,7 +93,7 @@ OpenAI model and using them for work projects.
 * Question answering
 * Mastering NLP
 
-### OpenAI and GPT-3
+### OpenAI and GPT-4
 * Use cases
 * Implementing OpenAI API
 
