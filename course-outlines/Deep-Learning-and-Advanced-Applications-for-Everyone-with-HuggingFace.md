@@ -1,7 +1,7 @@
 # Deep Learning & Advanced Applications for Everyone with HuggingFace
 
 (C) Copyright Elephant Scale
-October 26, 2022
+March 16, 2023
 
 ## Course Description
 

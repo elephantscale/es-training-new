@@ -331,20 +331,120 @@ Notes:
 
 ---
 
-## Transformer architecture
+## Original transformer architecture
+* Used for translation
+* In training
+  * Encoder receives all the words in a sentence in the original language
+  * Decoder receives only words it has already translated
+
+---
+## Original transformer
+![](../images/33-transformer.png)
+
+---
+
+## Architecture, checkpoints, model
+* **Architecture**: 
+  * This is the skeleton of the model — the definition of each layer and each operation that happens within the model.
+* **Checkpoints**: 
+  * These are the weights that will be loaded in a given architecture.
+* **Model**: 
+  * This is an umbrella term that isn’t as precise as “architecture” or “checkpoint”: it can mean both. This course will specify architecture or checkpoint when it matters to reduce ambiguity
+
+* **Example**
+  * BERT is an architecture 
+  * bert-base-cased (set of weights trained by the Google team for the first release of BERT,) is a checkpoint
+  
+---
+
 
 
 ## Encoder models
+
+* Encoder models use only the encoder of a Transformer model
+* The attention layers can access all the words in the initial sentence
+* Characterized as having “bi-directional” attention, often called auto-encoding models.
+* Pretraining: corrupting a sentence (like taking out 15% of words) and restoring them
+* Encoder models are best suited for
+  * sentence classification
+  * named entity recognition
+  * extractive question answering.
+
+---
+
+## Representative encoder models
+
+* ALBERT
+* BERT
+* DistilBERT
+* ELECTRA
+* RoBERTa
+
+![](../images/34-bert.png)
 
 ---
 
 ## Decode models
 
+* Decoder models use only the decoder of a Transformer model
+  * At each stage, for a given word the attention layers can only access the words positioned before it in the sentence. 
+  * These models are often called auto-regressive models.
+
+* Pretraining - predicting the next word in the sentence.
+* Best suited for tasks involving text generation.
+  ![](../images/35-pexels-cottonbro-studio-7319078.jpg)
+---
+
+## Representative decoder models
+
+* CTRL
+* GPT
+* GPT-2
+* GPT-3
+* GPT-4
+* Transformer XL
+
+
+---
+## Sequence-to-sequence Models
+
+* Encoder-decoder models (also called sequence-to-sequence models)
+  * use both parts of the Transformer architecture.
+  * the attention layers of the encoder can access all the words in the initial sentence
+  * the attention layers of the decoder can only access the words positioned before a given word in the input
+
 ---
 
 ## Sequence-to-sequence Models
 
+*  T5
+  * pretrained by replacing random spans of text (that can contain several words) with a single mask special word
+  * the objective is then to predict the text that this mask word replaces
+* best suited for generating new sentences depending on a given input
+  * summarization
+  * translation
+  * generative question answering
+
 ---
+
+## Representative sequence-to-sequence
+
+* BART
+* mBART
+* Marian
+* T5
+
+---
+
+## T5
+
+* “Text-to-Text Transfer Transformer”
+
+![](../images/36-T5.png)
+
+---
+  
+
 
 # Bias and limitations
 
@@ -354,10 +454,6 @@ Notes:
 
 * Please do the lab
 * [05-ML-bias](https://github.com/elephantscale/huggingface-labs/tree/main/05-ML-bias)
-
----
-
-# Summary
 
 ---
 
