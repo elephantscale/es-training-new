@@ -10,3 +10,5 @@
 
 * Junior challenges in Quantum Computing
   * https://www.youtube.com/live/n3VnyZ2lfVU?feature=share
+
+* [Quantum Enigmas](https://www.usherbrooke.ca/iq/quantumenigmas/)
