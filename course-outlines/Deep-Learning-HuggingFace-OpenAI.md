@@ -5,9 +5,8 @@ March 16, 2023
 
 ## Course Description
 
-* HuggingFace is the most popular library for deep learning, and OpenAI with ChatGPT is eating the world with millions of signed-up users.
-* This course gives the students an introductions in Neural Networks, CNN, and RNN. Then it goes into a deep dive into HuggingFace and
-OpenAI model and using them for work projects.
+* OpenAI with ChatGPT is eating the world with millions of signed-up users, and HuggingFace is the most popular library for deep learning.
+* This course introduces the students to Neural Networks, OpenAI, and AI in general. Then it goes into ChatGPT4, HuggingFace, and  OpenAI model and applies them to your work projects.
 
 ## After the course, you will be able to do the following tasks
 
