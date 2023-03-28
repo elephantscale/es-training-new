@@ -1,6 +1,8 @@
 # Docker Introduction
 
-<img src="../../assets/images/logos/docker-logo-1.png" style="width:40%;"/>
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:30%;" /> <!-- {"left" : 4.31, "top" : 2.4, "height" : 7.59, "width" : 8.88} --> 
+
+
 ---
 
 ## Docker
@@ -19,7 +21,8 @@
 
 ## What is Docker?
 
-<img src="../../assets/images/logos/docker-logo-1.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:30%;float:right;" /> <!-- {"left" : 13.24, "top" : 0.88, "height" : 3.23, "width" : 3.78} --> 
+
 
 * Docker is the current **industry standard container format**
     - Allows package and ship software in **self-contained containers**
@@ -55,13 +58,13 @@ application images.
 
 * References: [1](https://www.docker.com/resources/what-container)
 
-<img src="../../assets/images/docker/docker-architecture-1.png" style="width:60%;"/>
+<img src="../../assets/images/docker/docker-architecture-1.png" style="width:60%;"/> <!-- {"left" : 4.21, "top" : 6.36, "height" : 4.88, "width" : 9.08} --> 
 
 ---
 
 ## Docker Internals
 
-<img src="../../assets/images/docker/docker-under-the-hood-1.jpg" style="width:40%;float:right;"/>
+<img src="../../assets/images/docker/docker-under-the-hood-1.jpg" style="width:40%;float:right;"/> <!-- {"left" : 12.5, "top" : 0.4, "height" : 2.4, "width" : 4.57} --> 
 
 * Docker takes advantage of Linux kernel features like **namespaces**,  **cgroups**, **networking stack**  and **layered file systems**
 
@@ -69,7 +72,7 @@ application images.
 
 * Containers get isolated process ids, networking, storage ..etc
 
-<img src="../../assets/images/logos/golang-logo-2.png" style="width:20%;float:right;clear:both;"/>
+<img src="../../assets/images/logos/golang-logo-2.png" style="width:20%;float:right;clear:both;"/> <!-- {"left" : 14.5, "top" : 3.28, "height" : 3.05, "width" : 2.73} --> 
 
 * Docker is written in [Go programming language](https://golang.org/)
     - Go was created at Google by the original C-language designers  (Rob Pike, and Ken Thompson), to be a modern and high performance language
@@ -119,7 +122,7 @@ This is why we consider Docker a reproducible environment.
 
 ## Docker Desktop for Windows (Developer)
 
-<img src="../../assets/images/logos/windows-logo-1.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/logos/windows-logo-1.png" style="width:30%;float:right;"/> <!-- {"left" : 11.94, "top" : 0.7, "height" : 3.32, "width" : 5.59} --> 
 
  * Docker Desktop for Windows has the following requirements:
    * Windows 10 Professional 64 Bit (or Higher)  (not Home, Not Home Pro)
@@ -149,7 +152,7 @@ Docker Toolbox can be used together with Oracle VirtualBox to run Docker contain
 
 ## Docker and Windows Server
 
-<img src="../../assets/images/logos/windows-server-logo-1.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/logos/windows-server-logo-1.png" style="width:30%;float:right;"/> <!-- {"left" : 14.26, "top" : 0.16, "height" : 2.82, "width" : 2.82} --> 
 
 * Docker for Windows Server is designed for App deployment rather than Development
   - Developers should use Docker Desktop for Windows instead.
@@ -176,7 +179,7 @@ platform.
 
 ## Docker and WSL 2
 
-<img src="../../assets/images/docker/3rd-party/windows-wsl2.jpg" style="width:20%;float:right;"/>
+<img src="../../assets/images/docker/3rd-party/windows-wsl2.jpg" style="width:20%;float:right;"/> <!-- {"left" : 14.7, "top" : 0.41, "height" : 1.95, "width" : 2.16} --> 
 
 * Microsoft is including a full Linux kernel in the new Windows Subsystem For Linux 2
     - A bit of a "hell freezes over" moment considering history!
@@ -203,6 +206,9 @@ platform.
 | Isolation from Host | Yes (via Hyper-V)         | Yes (via Hyper-V)                  | Yes (via Hyper-V)                   | Not Virtualized                |
 | Startup Delay       | 500ms - 1s                | 500ms - 1s                         | 500ms - 1s                          | No Delay                       |
 
+<!-- {"left" : 0.95, "top" : 2.26, "height" : 6.21, "width" : 15.59} --> 
+
+
 Notes:
 
 Instructor Notes :
@@ -218,7 +224,8 @@ similar to what one would expect on Linux platforms.
 
 ## Docker Desktop on Mac (Developer)
 
-<img src="../../assets/images/logos/apple-logo-1.png" style="width:20%;float:right;"/>
+<img src="../../assets/images/logos/apple-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 13.52, "top" : 0.67, "height" : 3.39, "width" : 3.39} --> 
+
 
 * Docker Desktop on Mac is only supported as a development platform.
   - There are no "native" mac containers as there are on Linux and Windows
@@ -265,7 +272,7 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 
 ## Docker Architecture
 
-<img src="../../assets/images/docker/docker-architecture-2.png" style="width:80%;"/>
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:80%;"/> <!-- {"left" : 0.85, "top" : 1.29, "height" : 9.8, "width" : 15.8} --> 
 
 ---
 
@@ -279,7 +286,8 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 
 * We only need  **one copy of image on host**
 
-<img src="../../assets/images/docker/docker-architecture-2.png" style="width:60%;"/>
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:60%;"/> <!-- {"left" : 4.16, "top" : 5.55, "height" : 5.69, "width" : 9.17} --> 
+
 
 ---
 
@@ -292,7 +300,7 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 
 * Containers run in isolation
 
-<img src="../../assets/images/docker/docker-architecture-2.png" style="width:60%;"/>
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:60%;"/> <!-- {"left" : 4.16, "top" : 5.55, "height" : 5.69, "width" : 9.17} --> 
 
 ---
 
@@ -304,13 +312,13 @@ There is no way to run "native" Windows containers on Mac, except for in a VM.  
 
 * Here we see the client issuing commands (build/pull/run)
 
-<img src="../../assets/images/docker/docker-architecture-2.png" style="width:60%;"/>
+<img src="../../assets/images/docker/docker-architecture-2.png" style="width:60%;"/> <!-- {"left" : 4.16, "top" : 5.55, "height" : 5.69, "width" : 9.17} --> 
 
 ---
 
 ## Container Registry
 
-<img src="../../assets/images/logos/docker-hub-logo-1.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/logos/docker-hub-logo-1.png" style="width:30%;float:right;"/> <!-- {"left" : 10.99, "top" : 0.78, "height" : 1.45, "width" : 5.93} --> 
 
 * **Registries** are like _App Store_ for docker images
 
@@ -372,7 +380,7 @@ a lot of sense. Many corporate container registries will also mirror some or all
 
 ## Group Lab: Exploring Docker Hub
 
-<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.49, "top" : 0.47, "height" : 3.27, "width" : 4.51} --> 
 
 * **Overview:**
   - Explore DockerHub
@@ -394,11 +402,14 @@ Notes:
 
 ---
 
+
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->
+
+

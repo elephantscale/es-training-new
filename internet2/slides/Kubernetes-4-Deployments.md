@@ -1,5 +1,8 @@
 # Kubernetes Deployments
 
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /> <!-- {"left" : 4.41, "top" : 3.99, "height" : 4.41, "width" : 8.68} -->
+
+
 ---
 
 # Deployments
@@ -14,7 +17,9 @@
 
 * Deployments depend on ReplicaSets to manage and run pods
 
-<img src="../../assets/images/kubernetes/Deployments.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments.png" style="width:75%;;"/><!-- {"left" : 4.06, "top" : 5.99, "height" : 4.48, "width" : 9.43} -->
+
+
 
 Notes:
 
@@ -37,8 +42,10 @@ Pause the Deployment to apply multiple fixes to its PodTemplateSpec and then res
 
 * So a new Pod is created
 
-<img src="../../assets/images/kubernetes/Deployments.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/kubernetes/Deployments-01.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments.png" style="width:45%;;"/> <!-- {"left" : 0.9, "top" : 7.5, "height" : 3.31, "width" : 6.98} -->
+
+<img src="../../assets/images/kubernetes/Deployments-01.png" style="width:45%;;"/> <!-- {"left" : 8.26, "top" : 7.5, "height" : 3.31, "width" : 8.34} -->
+
 
 Notes:
 
@@ -50,8 +57,10 @@ Notes:
 
 * Here a Pod crashed, and a replacement Pod is spun up
 
-<img src="../../assets/images/kubernetes/Deployments-02.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/kubernetes/Deployments.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-02.png" style="width:45%;;"/> <!-- {"left" : 1.09, "top" : 6.14, "height" : 3.53, "width" : 7.44} -->
+
+<img src="../../assets/images/kubernetes/Deployments.png" style="width:45%;;"/> <!-- {"left" : 8.97, "top" : 6.14, "height" : 3.53, "width" : 7.44} -->
+
 
 Notes:
 
@@ -63,8 +72,10 @@ Notes:
 
 * Here we have gone from 4 replicas (left) to 3 (right).  So the excess Pod is deleted
 
-<img src="../../assets/images/kubernetes/Deployments-01.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/kubernetes/Deployments-03.png" style="width:45%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-01.png" style="width:45%;;"/> <!-- {"left" : 0.95, "top" : 6.7, "height" : 2.95, "width" : 7.43} -->
+
+<img src="../../assets/images/kubernetes/Deployments-03.png" style="width:45%;;"/> <!-- {"left" : 9.12, "top" : 6.7, "height" : 2.95, "width" : 7.43} -->
+
 
 
 Notes:
@@ -98,12 +109,14 @@ spec:
           ports:
             - containerPort: 80
 ```
+<!-- {"left" : 0.77, "top" : 4.23, "height" : 5.82, "width" : 5.94} -->
+
 
 ---
 
 ## Lab: Deployments
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Run a deployment
@@ -134,8 +147,7 @@ Notes:
 
 * But the service overall is working and available
 
-
-<img src="../../assets/images/kubernetes/service-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/service-1.png" style="width:75%;;"/> <!-- {"left" : 2.41, "top" : 8.11, "height" : 3.58, "width" : 12.69} -->
 
 ---
 
@@ -151,7 +163,7 @@ Notes:
 
 * Service works with **kubeproxy** to direct traffic to Pods
 
-<img src="../../assets/images/kubernetes/Exposing-Services.png" style="width:65%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Exposing-Services.png" style="width:65%;;"/> <!-- {"left" : 4.76, "top" : 7.56, "height" : 3.36, "width" : 7.98} -->
 
 
 Notes:
@@ -174,7 +186,8 @@ Client accessing the service doesn't care if the 3 Pods are up and running or no
 
 * From there, the service can bounce traffic to active Pods
 
-<img src="../../assets/images/kubernetes/service-assigns.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/service-assigns.png" style="width:75%;;"/> <!-- {"left" : 4.44, "top" : 6.1, "height" : 4.65, "width" : 8.62} -->
+
 
 
 Notes:
@@ -186,7 +199,9 @@ Notes:
 * You can have multiple services with varying configurations and features at any given time
 
 
-<img src="../../assets/images/kubernetes/service-assigns-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/service-assigns-1.png" style="width:75%;;"/> <!-- {"left" : 4.21, "top" : 5.49, "height" : 5.1, "width" : 9.07} -->
+
+
 
 
 Notes:
@@ -195,7 +210,8 @@ Notes:
 
 ## Exposing Service to Outside World
 
-<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:50%;float:right;"/> <!-- {"left" : 12.1, "top" : 0.43, "height" : 5.12, "width" : 4.92} -->
+
 
 * One of the simplest ways of making our service to outside world is called **NodePort**
 
@@ -212,7 +228,7 @@ Notes:
 
 ## Service Definition
 
-<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:40%;float:right;"/> <!-- {"left" : 12.21, "top" : 0.5, "height" : 4.92, "width" : 4.73} -->
 
 ```yaml
 apiVersion: v1
@@ -233,6 +249,7 @@ spec:
   selector:
     app: nginx
 ```
+<!-- {"left" : 0.85, "top" : 1.42, "height" : 5.24, "width" : 10.28} -->
 
 * Deploying a service
 
@@ -241,6 +258,7 @@ $   kubectl apply -f svc.yaml
 
 $   kubectl get svc
 ```
+<!-- {"left" : 0.85, "top" : 7.87, "height" : 1.15, "width" : 5.61} -->
 
 Notes:
 
@@ -254,7 +272,8 @@ This specification will create a Service which targets TCP port 80 on any Pod wi
 
 ## Lab: Services
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
+
 
 * **Overview:**
     - Deploy a service
@@ -295,7 +314,8 @@ Notes:
 
 * Not foolproof, as it may be not be easy to rollback if things go wrong  (for example some libraries may have been updated and not compatible)
 
-<img src="../../assets/images/kubernetes/deployment-basic-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-basic-1.png" style="width:75%;;"/> <!-- {"left" : 3.7, "top" : 6.8, "height" : 4.15, "width" : 10.09} -->
+
 
 ---
 
@@ -307,7 +327,8 @@ Notes:
 
 * Ths rollover will take some time, in the mean time, both versions are alive
 
-<img src="../../assets/images/kubernetes/deployment-rolling-1.png" style="width:65%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-rolling-1.png" style="width:65%;;"/> <!-- {"left" : 4.54, "top" : 6.18, "height" : 5.01, "width" : 8.41} -->
+
 
 ---
 
@@ -321,7 +342,9 @@ Notes:
 
 * Rollback is instant (flicking a switch)
 
-<img src="../../assets/images/kubernetes/deployment-blue-green-1.png" style="width:65%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-blue-green-1.png" style="width:65%;;"/> <!-- {"left" : 3.38, "top" : 6.92, "height" : 3.76, "width" : 10.74} -->
+
+
 
 ---
 
@@ -331,7 +354,8 @@ Notes:
 
 * To test out the features with a smaller group of users first and then increasing deployment base
 
-<img src="../../assets/images/kubernetes/deployment-canary-1.png" style="width:65%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-canary-1.png" style="width:65%;;"/> <!-- {"left" : 3.1, "top" : 6.05, "height" : 3.76, "width" : 11.31} -->
+
 
 ---
 
@@ -339,7 +363,9 @@ Notes:
 
 * Used to experiment with features
 
-<img src="../../assets/images/kubernetes/deployment-AB-testing-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-AB-testing-1.png" style="width:75%;;"/> <!-- {"left" : 4.03, "top" : 4.56, "height" : 5.17, "width" : 9.44} -->
+
+
 
 ---
 
@@ -353,7 +379,8 @@ Notes:
 
 * Say we want to update from `hello1` to `hello2`
 
-<img src="../../assets/images/kubernetes/Deployments-04.png" style="width:70%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-04.png" style="width:70%;;"/> <!-- {"left" : 4.63, "top" : 5.48, "height" : 4.92, "width" : 8.25} -->
+
 
 
 Notes:
@@ -364,7 +391,8 @@ Notes:
 
   * This deployment allows you to create a second ReplicaSet
 
-<img src="../../assets/images/kubernetes/Deployments-05.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-05.png" style="width:75%;;"/> <!-- {"left" : 0.85, "top" : 5.37, "height" : 3.68, "width" : 15.8} -->
+
 
 Notes:
 
@@ -374,9 +402,11 @@ Notes:
 
 * It gradually increases the number of replicas in the second ReplicaSet
 
-<img src="../../assets/images/kubernetes/Deployments-06.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-06.png" style="width:75%;;"/> <!-- {"left" : 3.36, "top" : 4.94, "height" : 2.52, "width" : 10.8} -->
 
-<img src="../../assets/images/kubernetes/Deployments-07.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+
+<img src="../../assets/images/kubernetes/Deployments-07.png" style="width:75%;;"/> <!-- {"left" : 3.36, "top" : 8.12, "height" : 2.52, "width" : 10.8} -->
+
 
 Notes:
 
@@ -387,8 +417,10 @@ Notes:
 * This decreases replicas in the first ReplicaSet
 * Hence at any given point of time there are at most 4 pods
 
-<img src="../../assets/images/kubernetes/Deployments-08.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/kubernetes/Deployments-09.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-08.png" style="width:75%;;"/> <!-- {"left" : 3.65, "top" : 5.68, "height" : 2.37, "width" : 10.2} -->
+
+<img src="../../assets/images/kubernetes/Deployments-09.png" style="width:75%;;"/> <!-- {"left" : 3.65, "top" : 8.4, "height" : 2.37, "width" : 10.2} -->
+
 
 Notes:
 
@@ -398,8 +430,10 @@ Notes:
 
 * Rolllout is complete when the new RS has the same Pods to replace the old RS
 
-<img src="../../assets/images/kubernetes/Deployments-10.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-<img src="../../assets/images/kubernetes/Deployments-11.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Deployments-10.png" style="width:75%;;"/> <!-- {"left" : 3.79, "top" : 5.4, "height" : 2.32, "width" : 9.97} -->
+
+<img src="../../assets/images/kubernetes/Deployments-11.png" style="width:75%;;"/> <!-- {"left" : 3.79, "top" : 8.4, "height" : 2.32, "width" : 9.97} -->
+
 
 Notes:
 
@@ -407,7 +441,8 @@ Notes:
 
 ## Lab: Rollout Deployments
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
+
 
 * **Overview:**
     - Rollout an upgrade
@@ -431,7 +466,8 @@ Notes:
 * The service selector is pointing to **`app:hello ,  version: v1`** - so all traffic is going to v1 deployment
 
 
-<img src="../../assets/images/kubernetes/deployment-blue-green-2.png" style="width:70%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-blue-green-2.png" style="width:70%;;"/> <!-- {"left" : 9.26, "top" : 2.73, "height" : 3.67, "width" : 7.74} -->
+
 
 Notes:
 
@@ -445,7 +481,8 @@ Notes:
 * But the service is still sending traffic to **v1**
 
 
-<img src="../../assets/images/kubernetes/deployment-blue-green-3.png" style="width:100%;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-blue-green-3.png" style="width:100%;"/> <!-- {"left" : 2.32, "top" : 6.26, "height" : 4.3, "width" : 12.86} -->
+
 
 Notes:
 
@@ -454,11 +491,11 @@ Notes:
 ## Blue Green Deployment-3
 
 * To make the new version go live, change the service label selector which switches all traffic to  v2
-    - **`selector =  app:hello,   version: v2`**
+    - **`selector =  app:hello,  version: v2`**
 
 * Now 100% of traffic is flowing to v2 - like we flipped a switch!
 
-<img src="../../assets/images/kubernetes/deployment-blue-green-4.png" style="width:100%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-blue-green-4.png" style="width:100%;;"/> <!-- {"left" : 1.9, "top" : 6.08, "height" : 4.32, "width" : 13.7} -->
 
 
 
@@ -468,7 +505,8 @@ Notes:
 
 ## Lab: Blue/Green Deployment
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
+
 
 * **Overview:**
     - Deploy a blue/green scenario
@@ -489,7 +527,8 @@ Notes:
 
 * Service is routing all traffic this app using selector  **`app: hello`**
 
-<img src="../../assets/images/kubernetes/deployment-canary-2.png" style="width:90%"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-canary-2.png" style="width:90%"/> <!-- {"left" : 3.59, "top" : 5.4, "height" : 4.8, "width" : 10.31} -->
+
 
 ---
 
@@ -501,14 +540,16 @@ Notes:
 
 * This is achieved by selector  **`app=hello`** - it will select all the pods including canary (**`track=canary`**)
 
-<img src="../../assets/images/kubernetes/deployment-canary-3.png" style="width:90%"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/deployment-canary-3.png" style="width:90%"/><!-- {"left" : 2.76, "top" : 7.05, "height" : 3.74, "width" : 11.98} -->
+
+
 
 
 ---
 
 ## Lab: Canary Deployment
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Do a canaray deployment
@@ -544,7 +585,7 @@ Notes:
 
 ## Service DNS
 
-<img src="../../assets/images/kubernetes/Internal-Load-Balancing-1.png" style="width:50%;float:right;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+<img src="../../assets/images/kubernetes/Internal-Load-Balancing-1.png" style="width:50%;float:right;" /> <!-- {"left" : 11.32, "top" : 0.22, "height" : 3.95, "width" : 5.74} -->
 
 * Kubernetes runs its own DNS service called **kube DNS**.  This is installed as part of kube-system namespace
 
@@ -606,7 +647,8 @@ It will take into consideration the load on Pods before sending traffic over.
 
 ## Exposing a Service-1: Node Ports
 
-<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:50%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:50%;float:right;"/> <!-- {"left" : 11.98, "top" : 0.28, "height" : 5.21, "width" : 5} -->
+
 
 * One of the simplest ways of making our service to outside world is called **NodePort**
 
@@ -621,7 +663,7 @@ It will take into consideration the load on Pods before sending traffic over.
 
 ## NodePort Service Definition
 
-<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:40%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/service-2-expose-nodeport.png" style="width:40%;float:right;"/>  <!-- {"left" : 12.29, "top" : 0.55, "height" : 4.82, "width" : 4.63} -->
 
 ```yaml
 apiVersion: v1
@@ -642,12 +684,15 @@ spec:
   selector:
     app: nginx
 ```
+<!-- {"left" : 0.85, "top" : 1.49, "height" : 5.24, "width" : 10.28} -->
 
 * Can access the service using any **`node_ip:30000`**
 
 ```bash
 $   curl  node1_ip:30000/
 ```
+<!-- {"left" : 0.85, "top" : 8.22, "height" : 0.57, "width" : 4.94} -->
+
 
 * NodePorts are only available on ports **30000-32767**
 
@@ -655,7 +700,8 @@ $   curl  node1_ip:30000/
 
 ## Exposing a Service-2: Load Balancer
 
-<img src="../../assets/images/kubernetes/load-balancer-1.png" style="width:40%;float:right;" />  <!-- {"left" : 1.27, "top" : 1.66, "height" : 4.69, "width" : 7.79} -->
+<img src="../../assets/images/kubernetes/load-balancer-1.png" style="width:40%;float:right;" /> <!-- {"left" : 12, "top" : 0.47, "height" : 6.42, "width" : 5.04} -->
+
 
 * This the recommend approach for exposing a service
 
@@ -671,7 +717,7 @@ $   curl  node1_ip:30000/
 * Client **always**  contacts the LB at **10.0.0.1:9376**
 * And the traffic can be sent to any one of 3 Pods
 
-<img src="../../assets/images/kubernetes/Internal-Load-Balancing-2.png" style="width:70%;" />  <!-- {"left" : 1.27, "top" : 1.66, "height" : 4.69, "width" : 7.79} -->
+<img src="../../assets/images/kubernetes/Internal-Load-Balancing-2.png" style="width:70%;" />  <!-- {"left" : 4.85, "top" : 5.96, "height" : 4.69, "width" : 7.79} -->
 
 Notes:
 
@@ -694,6 +740,8 @@ spec:
       targetPort: 80
       protocol: TCP
 ```
+<!-- {"left" : 0.85, "top" : 2.22, "height" : 4.07, "width" : 4.44} -->
+
 
 ---
 
@@ -706,7 +754,8 @@ spec:
 * There are many ingress controllers available for Kubernetes
     - [AWS](https://github.com/kubernetes-sigs/aws-load-balancer-controller#readme),  [GCE](https://git.k8s.io/ingress-gce/README.md#readme) and [nginx](https://git.k8s.io/ingress-nginx/README.md#readme), [Contour](https://github.com/heptio/contour) are a few of the popular ones
 
-<img src="../../assets/images/kubernetes/ingress-1.png" style="width:45%;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+<img src="../../assets/images/kubernetes/ingress-1.png" style="width:45%;" /><!-- {"left" : 4.92, "top" : 7.07, "height" : 4.42, "width" : 7.66} -->
+
 
 ---
 
@@ -724,7 +773,7 @@ spec:
 
 ## Ingress Defintion
 
-<img src="../../assets/images/kubernetes/ingress-1.png" style="width:45%;float:right;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+<img src="../../assets/images/kubernetes/ingress-1.png" style="width:45%;float:right;" /> <!-- {"left" : 8.44, "top" : 1.89, "height" : 4.79, "width" : 8.3} -->
 
 ```yaml
 apiVersion: extensions/v1beta1
@@ -750,12 +799,14 @@ spec:
           serviceName: bar
           servicePort: 8080
 ```
+<!-- {"left" : 0.85, "top" : 1.98, "height" : 6.69, "width" : 5.78} -->
 
 ---
 
 ## Ingress-based HTTP Load Balancer
 
-<img src="../../assets/images/kubernetes/Ingress-based-HTTP-Load-Balancer.png" style="width:60%;float:right;" /> <!-- {"left" : 2.01, "top" : 1.01, "height" : 5.48, "width" : 6.24} -->
+<img src="../../assets/images/kubernetes/Ingress-based-HTTP-Load-Balancer.png" style="width:60%;float:right;" /><!-- {"left" : 11.43, "top" : 0.71, "height" : 4.78, "width" : 5.59} -->
+
 
 * Here we see we are routing traffic based on rules.
 * We are serving both **HTTP and HTTPS** requests.
@@ -772,7 +823,8 @@ Participant Notes :
 
 ## Lab: Ingress
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
+
 
 * **Overview:**
     - Setup an Ingress
@@ -794,7 +846,7 @@ Notes:
 
 ## Autoscaling
 
-<img src="../../assets/images/kubernetes/autoscaling-1.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/autoscaling-1.png" style="width:45%;float:right;"/> <!-- {"left" : 12.97, "top" : 0.33, "height" : 2.14, "width" : 4.06} -->
 
 * So far we looked at various deployment strategies;  We specified the number of `replicas` explicitly
 
@@ -811,7 +863,7 @@ Notes:
 
 ## Horizontal Pod Autoscaler
 
-<img src="../../assets/images/kubernetes/Horizontal-Pod-Autoscaler.png" style="width:45%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Horizontal-Pod-Autoscaler.png" style="width:45%;float:right;"/> <!-- {"left" : 12.74, "top" : 0.31, "height" : 3.11, "width" : 4.34} -->
 
 * Autoscaling, one of the key features, allows the kubernetes cluster to automatically increase or decrease the number of nodes  based on the demand for service response.
 
@@ -856,6 +908,8 @@ spec:
               cpu: 500m # 0.5 of a core
               memory: 100M
 ```
+<!-- {"left" : 0.85, "top" : 2.7, "height" : 6.99, "width" : 9.61} -->
+
 
 ---
 
@@ -881,12 +935,14 @@ spec:
   maxReplicas: 10
   targetCPUUtilizationPercentage: 50
 ```
+<!-- {"left" : 0.85, "top" : 6.27, "height" : 3.78, "width" : 6.78} -->
+
 
 ---
 
 ## Lab: Autoscaling
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Autoscale a deployment
@@ -900,12 +956,10 @@ spec:
 Notes:
 
 ---
-
 ## Review and Q&A
-
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->

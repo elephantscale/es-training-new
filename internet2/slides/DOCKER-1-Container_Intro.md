@@ -1,6 +1,7 @@
 # Container Intro
 
-<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:40%;"/>
+<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:40%;"/><!-- {"left" : 2.67, "top" : 2.41, "height" : 9.12, "width" : 12.17} -->
+
 
 ---
 
@@ -18,7 +19,7 @@
 
 * All the modules are compiled-into one giant program
 
-<img src="../../assets/images/docker/monolithic-vs-microservices-1.png" style="width:50%;" />
+<img src="../../assets/images/docker/monolithic-vs-microservices-1.png" style="width:50%;" /> <!-- {"left" : 4.43, "top" : 5.77, "height" : 5.73, "width" : 8.63} -->
 
 ---
 
@@ -32,7 +33,7 @@
 
 * Building / testing / shipping all took lot of time
 
-<img src="../../assets/images/deep-learning/3rd-party/xkcd-compiling.png" style="width:35%;" />
+<img src="../../assets/images/deep-learning/3rd-party/xkcd-compiling.png" style="width:35%;" /> <!-- {"left" : 12.73, "top" : 2.4, "height" : 3.51, "width" : 4.02} -->
 
 ---
 
@@ -60,7 +61,7 @@
 
 * Much better separation, much easier to maintain each component, and our online-order app is much smaller!
 
-<img src="../../assets/images/docker/monolithic-vs-microservices-2.png" style="width:42%;" />
+<img src="../../assets/images/docker/monolithic-vs-microservices-2.png" style="width:42%;" /> <!-- {"left" : 11.26, "top" : 3.47, "height" : 3.86, "width" : 5.71} -->
 
 ---
 
@@ -165,7 +166,7 @@ It is extremely difficult to find good architects for creating Microservice arch
 
 * You test it. Seems to run fine. Time to deploy
 
-<img src="../../assets/images/docker/intellij.png" style="width:80%;" /> <!-- {"left" : 1.02, "top" : 2.28, "height" : 4.42, "width" : 8.21} -->
+<img src="../../assets/images/docker/intellij.png" style="width:80%;" /> <!-- {"left" : 2.14, "top" : 4.22, "height" : 7.12, "width" : 13.22} -->
 
 Notes:
 
@@ -186,7 +187,7 @@ are one way to solve that problem, and Containers are another.
 
 ## Step 2: Deploy to the Server
 
-<img src="../../assets/images/docker/3rd-party/alone-513525_640.jpg" style="width:30%;float:right;" /> <!-- {"left" : 5.56, "top" : 1.56, "height" : 2.87, "width" : 4.49} -->
+<img src="../../assets/images/docker/3rd-party/alone-513525_640.jpg" style="width:30%;float:right;" /> <!-- {"left" : 10.08, "top" : 1.16, "height" : 4.44, "width" : 6.94} -->
 
 * We're ready to deploy to the server
 
@@ -223,7 +224,7 @@ Developers are famous for insisting that "It worked on my computer!"
 
 ## Step 3 - Much Later... Finally Working!
 
-<img src="../../assets/images/generic/3rd-party/stop-and-pray.jpg" style="width:30%;float:right;" />
+<img src="../../assets/images/generic/3rd-party/stop-and-pray.jpg" style="width:30%;float:right;" /> <!-- {"left" : 10.17, "top" : 1.61, "height" : 4.51, "width" : 6.76} -->
 
 * Fix all the problems, now it's finally working!
 
@@ -259,7 +260,7 @@ The old Java maxim "Write Once, Run Anywhere" doesn't really work.  Because, the
 
 ## Step 4 - Scale our App
 
-<img src="../../assets/images/docker/3rd-party/accident-action-danger-260367.jpg" style="width:40%;float:right;" /> <!-- {"left" : 4.04, "top" : 3.27, "height" : 3.98, "width" : 5.98} -->
+<img src="../../assets/images/docker/3rd-party/accident-action-danger-260367.jpg" style="width:40%;float:right;" /> <!-- {"left" : 9.81, "top" : 0.85, "height" : 4.77, "width" : 7.16} -->
 
 * Great News! Our App is very popular.  Need to scale up !
 
@@ -292,7 +293,7 @@ to solve, and, indeed, VMs are a reasonable solution to this.
 
 * Even deploying the cloud, we would encounter the same problems!
 
-<img src="../../assets/images/kubernetes/3rd-party/kubernetes-dilbert-1.jpeg" style="width:90%;" />
+<img src="../../assets/images/kubernetes/3rd-party/kubernetes-dilbert-1.jpeg" style="width:90%;" /> <!-- {"left" : 1.31, "top" : 4.45, "height" : 5.97, "width" : 14.88} -->
 
 Notes:
 
@@ -322,6 +323,8 @@ things?  Likely, it will involve even more firefighting.
 | Worker Processes |    ???    |    ???    |    ???        |    ???       |    ???    |    ???    |
 | Queue            |    ???    |    ???    |    ???        |    ???       |    ???    |    ???    |
 
+<!-- {"left" : 1.02, "top" : 3.65, "height" : 1, "width" : 15.45} -->
+
 Notes:
 
 Instructor Notes :
@@ -337,7 +340,7 @@ It becomes a big headache to make sure that all the various components of our ap
 
 ## Wouldn't It Be Nice?
 
-<img src="../../assets/images/docker/3rd-party/blackboard-business-chalkboard-355988.jpg" style="width:30%;float:right;" /><!-- {"left" : 5.05, "top" : 1.65, "height" : 3.29, "width" : 4.94} --> 
+<img src="../../assets/images/docker/3rd-party/blackboard-business-chalkboard-355988.jpg" style="width:30%;float:right;" /><!-- {"left" : 11.09, "top" : 1.13, "height" : 3.93, "width" : 5.91} --> 
 
 * What if we could move all of the following:
    - Application Code
@@ -375,7 +378,7 @@ We are trying to communicate the value of having our application delivered as a 
 
 ## Virtualization
 
-<img src="../../assets/images/docker/virtual-machines-1.png" style="width:40%;float:right;" />
+<img src="../../assets/images/docker/virtual-machines-1.png" style="width:40%;float:right;" /> <!-- {"left" : 12.37, "top" : 0.89, "height" : 2.71, "width" : 4.6} --> 
 
 * Virtualization has taken the Datacenter by storm
 
@@ -439,12 +442,14 @@ In the modern era, virtualization is ubiquitous and assumed -- if I have a serve
 
 ## Virtualization Providers
 
-<img src="../../assets/images/logos/vmware-logo-1.png" style="width:30%;" /> <!-- {"left" : 3.55, "top" : 0.98, "height" : 0.95, "width" : 3} -->
-&nbsp; &nbsp; <img src="../../assets/images/logos/virtualbox-logo-1.png" style="width:30%;" /><!-- {"left" : 2.73, "top" : 1.52, "height" : 2.3, "width" : 4.19} -->
+<img src="../../assets/images/logos/vmware-logo-1.png" style="width:30%;" /><!-- {"left" : 7, "top" : 2.25, "height" : 1.11, "width" : 3.5} --> 
+&nbsp; &nbsp; <img src="../../assets/images/logos/virtualbox-logo-1.png" style="width:30%;" /> <!-- {"left" : 6.89, "top" : 4.02, "height" : 1.63, "width" : 3.73} --> 
 
-<img src="../../assets/images/logos/hyperv-logo-1.jpg" style="width:30%;" /> <!-- {"left" : 3.55, "top" : 3.7, "height" : 0.9, "width" : 3.16} -->
-&nbsp; &nbsp; <img src="../../assets/images/logos/xen-logo-1.png" style="width:20%;" /> <!-- {"left" : 3.83, "top" : 4.75, "height" : 1.07, "width" : 2.59} -->
-&nbsp; &nbsp; <img src="../../assets/images/logos/kvm-logo-1.png" style="width:30%;" />  <!-- {"left" : 3.66, "top" : 6.08, "height" : 0.86, "width" : 2.78} -->
+<img src="../../assets/images/logos/hyperv-logo-1.jpg" style="width:30%;" /> <!-- {"left" : 6.9, "top" : 6.34, "height" : 1.05, "width" : 3.69} --> 
+&nbsp; &nbsp; <img src="../../assets/images/logos/xen-logo-1.png" style="width:20%;" /><!-- {"left" : 6.93, "top" : 7.96, "height" : 1.52, "width" : 3.69} --> 
+
+&nbsp; &nbsp; <img src="../../assets/images/logos/kvm-logo-1.png" style="width:30%;" /> <!-- {"left" : 6.98, "top" : 10.37, "height" : 1.11, "width" : 3.53} --> 
+
 
 Notes:
 
@@ -461,7 +466,7 @@ All basically work the same way – they the application team to create a VM Ima
 
 ## VM Architecture
 
-<img src="../../assets/images/docker/virtualization-1-guest-os.png" style="width:40%;float:right;" />
+<img src="../../assets/images/docker/virtualization-1-guest-os.png" style="width:40%;float:right;" /> <!-- {"left" : 12.06, "top" : 0.82, "height" : 5.71, "width" : 4.92} --> 
 
 * Virtualization works in layers:
     - Hypervisor : that allows virtualization
@@ -473,7 +478,7 @@ All basically work the same way – they the application team to create a VM Ima
 * However, this provides complete isolation for each VM
     - We can run a windows VM and a linux VM on the same physical machine
 
-* Large bare-metal servers can balance resources among several running VMs --> better hardware utilization
+* Large bare-metal servers can balance resources among several running VMs -> better hardware utilization
 
 
 Notes:
@@ -496,14 +501,14 @@ The performance is one thing, but what about the time it takes to start?
 
 # Containers
 
-<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:40%;"/>
+<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:40%;"/>  <!-- {"left" : 5.65, "top" : 1.92, "height" : 8.54, "width" : 11.39} --> 
 
 ---
 
 
 ## Containers
 
-<img src="../../assets/images/docker/container-architecture-1.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/docker/container-architecture-1.png" style="width:50%;float:right;"/> <!-- {"left" : 12.16, "top" : 0.94, "height" : 5.43, "width" : 4.82} --> 
 
 * Containers virtualize the OS just like hypervisors virtualizes the hardware.
 
@@ -541,7 +546,10 @@ In order for this to work, the kernel has to be the same.  In the past, this has
 | Guest OS Support | Same as Host (usually Linux)                              | Can run any OS that supports host CPU.         |
 | Start/Stop Time  | milliseconds                                              | seconds to minutes                             |
 
-<img src="../../assets/images/docker/vm-vs-docker-1.png" style="width:50%;"/>
+<!-- {"left" : 0.96, "top" : 1.61, "height" : 1, "width" : 15.58} --> 
+
+
+<img src="../../assets/images/docker/vm-vs-docker-1.png" style="width:50%;"/> <!-- {"left" : 6.16, "top" : 7.82, "height" : 3.67, "width" : 5.18} --> 
 
 Notes:
 
@@ -563,6 +571,9 @@ Note here that the filesystem, libraries, and other dependencies are handled ver
 | Filesystem       | All Dependencies installed to container filesystem.       | All Dependencies installed to local filesystem.|
 | Isolation        | Userland isolation, kernel shared.                        | No Isolation. Processes run together.          |
 | Dependencies     | Dependencies put in container                             | Can have circular dependency issues.           |
+
+<!-- {"left" : 1.52, "top" : 2.9, "height" : 1, "width" : 14.46} --> 
+
 
 Notes:
 
@@ -589,6 +600,9 @@ Package Managers, however, can and do have dependency issues, and are generally 
 | Worker Processes | Container | Container | Container     | Container    | Container | Container |
 | Queue            | Container | Container | Container     | Container    | Container | Container |
 
+<!-- {"left" : 0.71, "top" : 2.9, "height" : 1, "width" : 16.08} --> 
+
+
 Notes:
 
 Instructor Notes :
@@ -608,7 +622,8 @@ This slide follows up with the Matrix From Hell, showing that the same container
 
 * Truly **write once, deploy anywhere**
 
-<img src="../../assets/images/docker/container-portability-1.png" style="width:60%;" />
+<img src="../../assets/images/docker/container-portability-1.png" style="width:60%;" /> <!-- {"left" : 4.23, "top" : 5.82, "height" : 5.11, "width" : 9.05} --> 
+
 
 
 Notes:
@@ -634,6 +649,7 @@ Finally, built into the container architecture is their ability to work well tog
 | Root or Privileged instructions | Containers can run root, but it only applies to root within the container and not outside.                                                                                    |
 | Tightly-Coupled Data            | When the application is tightly coupled to its own data, containers aren't a good solution. This is not generally a good design principle, however.                           |
 | Security Concerns               | Sharing the kernel means that kernel exploits in container will affect the host as well.  Containers should not be used for untrusted code execution.                         |
+<!-- {"left" : 0.43, "top" : 1.85, "height" : 1, "width" : 16.64, "columnwidth" : [4.16, 12.49]} -->
 
 
 Notes:
@@ -660,7 +676,7 @@ Security: Running untrusted code is not a good use case for containers.  While c
 
 ## History of Containers
 
-<img src="../../assets/images/docker/3rd-party/business-cargo-cargo-container-262353.jpg" style="width:30%;float:right;" />
+<img src="../../assets/images/docker/3rd-party/business-cargo-cargo-container-262353.jpg" style="width:30%;float:right;" /> <!-- {"left" : 14.5, "top" : 0.3, "height" : 1.65, "width" : 2.47} --> 
 
 * 1982: Unix "chroot" command: Allows filesystem-level isolation
     - Allows process and children access to an isolated filesystem.
@@ -717,7 +733,7 @@ Cgroups are NOT VMs, just merely a way to control existing process's resources.
 
 ## Linux Containers
 
-<img src="../../assets/images/docker/3rd-party/LXC.png" style="width:20%;float:right;" />
+<img src="../../assets/images/docker/3rd-party/LXC.png" style="width:20%;float:right;" /> <!-- {"left" : 13.9, "top" : 0.88, "height" : 2.12, "width" : 3} --> 
 
 * 2008: Linux Containers (LXC): Combines together:
     - chroot: (filesystem isolation) +
@@ -762,7 +778,7 @@ the container.
 
 ## Docker
 
-<img src="../../assets/images/logos/docker-logo-1.png" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/docker-logo-1.png" style="width:30%;float:right;" /> <!-- {"left" : 13.24, "top" : 0.88, "height" : 3.23, "width" : 3.78} --> 
 
 * 2013: Docker released
 
@@ -805,7 +821,8 @@ which is intentionally similar to Makefiles.
 
 ## Dockerizing Applications
 
-<img src="../../assets/images/docker/dockerizing-applications.png" style="width:50%;float:right;" />
+<img src="../../assets/images/docker/dockerizing-applications.png" style="width:50%;float:right;" /> <!-- {"left" : 11.34, "top" : 1.36, "height" : 3.71, "width" : 5.63} --> 
+
 
 * Here we are packaging applications into containers.
 
@@ -821,7 +838,7 @@ which is intentionally similar to Makefiles.
 
 ## Docker is the Shipping Container for Code
 
-<img src="../../assets/images/docker/docker-Shipping.png" style="width:90%;" />
+<img src="../../assets/images/docker/docker-Shipping.png" style="width:90%;" /> <!-- {"left" : 1.06, "top" : 2.78, "height" : 7.45, "width" : 15.39} --> 
 
 
 Notes:
@@ -836,9 +853,10 @@ By contrast to the situation we described before, Docker allows to ship software
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->
+

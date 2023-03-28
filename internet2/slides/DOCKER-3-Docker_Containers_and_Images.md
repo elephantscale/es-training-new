@@ -4,7 +4,7 @@
 
 ## Docker Images
 
-<img src="../../assets/images/docker/image-anatomy-1.png" style="width:40%;float:right;"/>
+<img src="../../assets/images/docker/image-anatomy-1.png" style="width:40%;float:right;"/> <!-- {"left" : 12.23, "top" : 0.39, "height" : 4.46, "width" : 4.86} -->
 
 * Docker images are composed of layers of file systems
 
@@ -34,8 +34,10 @@
 ```bash
 $   docker pull alpine
 ```
+<!-- {"left" : 0.85, "top" : 6.58, "height" : 0.57, "width" : 4.44} -->
 
-<img src="../../assets/images/docker/docker-pull-1.png" style="width:60%;"/>
+<img src="../../assets/images/docker/docker-pull-1.png" style="width:60%;"/><!-- {"left" : 4.9, "top" : 7.81, "height" : 3.81, "width" : 7.76} -->
+
 
 Notes:
 
@@ -55,6 +57,7 @@ store the binary container image (usually a hash) in a local place on the user's
 ```bash
 $   docker images
 ```
+<!-- {"left" : 0.85, "top" : 3.38, "height" : 0.57, "width" : 3.61} -->
 
 ```text
 REPOSITORY                  TAG                  IMAGE ID       CREATED         SIZE
@@ -63,12 +66,14 @@ alpine                      latest               14119a10abf4   12 days ago     
 ubuntu                      focal                f643c72bc252   9 months ago    72.9MB
 nginx                       latest               f6d0b4767a6c   7 months ago    133MB
 ```
+<!-- {"left" : 0.85, "top" : 4.39, "height" : 1.74, "width" : 15.11} -->
 
 ---
 
 ## Containers
 
-<img src="../../assets/images/docker/container-anatomy-1.png" style="width:30%;float:right;"/>
+<img src="../../assets/images/docker/container-anatomy-1.png" style="width:30%;float:right;"/><!-- {"left" : 12.5, "top" : 0.41, "height" : 6.83, "width" : 4.47} -->
+
 
 * Containers have an extra 'writable layer' on top'
 
@@ -88,6 +93,7 @@ nginx                       latest               f6d0b4767a6c   7 months ago    
 ```bash
 $   docker run alpine ls
 ```
+<!-- {"left" : 0.85, "top" : 2.82, "height" : 0.57, "width" : 4.78} -->
 
 * This will run `alpine` image and run `ls` command inside the container
 
@@ -97,6 +103,7 @@ $   docker run alpine ls
 bin    etc    lib    mnt    proc   run    srv    tmp    var
 dev    home   media  opt    root   sbin   sys    usr
 ```
+<!-- {"left" : 0.85, "top" : 5.31, "height" : 0.86, "width" : 10.61} -->
 
 * The container will exit immediately
 
@@ -123,6 +130,8 @@ application.
 ```bash
 $   docker container run -it --rm alpine /bin/ash
 ```
+<!-- {"left" : 0.85, "top" : 2.79, "height" : 0.57, "width" : 8.94} -->
+
 
 * Parameters explained:
    - -i : interactive mode
@@ -135,6 +144,7 @@ $   docker container run -it --rm alpine /bin/ash
 ```console
 / #
 ```
+<!-- {"left" : 0.85, "top" : 7.71, "height" : 0.57, "width" : 1.29} -->
 
 * Execute a few commands
 
@@ -144,6 +154,7 @@ $   docker container run -it --rm alpine /bin/ash
 / # hostname
     fea51759ac90
 ```
+<!-- {"left" : 0.85, "top" : 9.09, "height" : 1.44, "width" : 6.11} -->
 
 Notes:
 
@@ -170,6 +181,8 @@ $   docker run -it alpine /bin/ash
 # list running containers
 $   docker ps
 ```
+<!-- {"left" : 0.85, "top" : 2.77, "height" : 2.03, "width" : 8.44} -->
+
 
 * output
 
@@ -179,6 +192,8 @@ CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES
 80c43841fdb7   alpine  "/bin/ash" 10 seconds ago  Up 10 seconds        boring_franklin
 fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_cannon
 ```
+<!-- {"left" : 0.85, "top" : 5.48, "height" : 1.44, "width" : 15.11} -->
+
 
 * Here we see 2 containers, running alpine image
     - Even though they are running the same image `alpine`, each container is a unique process
@@ -195,6 +210,7 @@ fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_can
 ```bash
 $   docker ps
 ```
+<!-- {"left" : 0.85, "top" : 2.62, "height" : 0.57, "width" : 2.94} -->
 
 ```console
 CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES 
@@ -202,6 +218,7 @@ CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES
 80c43841fdb7   alpine  "/bin/ash" 10 seconds ago  Up 10 seconds        boring_franklin
 fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_cannon
 ```
+<!-- {"left" : 0.85, "top" : 3.37, "height" : 1.44, "width" : 15.11} -->
 
 * Stop 
 
@@ -209,12 +226,14 @@ fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_can
 $   docker stop 80c43841fdb7
 $   docker ps
 ```
+<!-- {"left" : 0.85, "top" : 5.9, "height" : 0.86, "width" : 5.44} -->
 
 ```console
 CONTAINER ID   IMAGE   COMMAND    CREATED        STATUS     PORTS    NAMES 
 
 fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_cannon
 ```
+<!-- {"left" : 0.85, "top" : 7, "height" : 1.15, "width" : 14.61} -->
 
 ---
 
@@ -234,6 +253,8 @@ fea51759ac90   alpine  "/bin/ash"  4 minutes ago  Up 4 minutes         brave_can
 $   docker stop 80c43841fdb7
 $   docker rm   80c43841fdb7
 ```
+<!-- {"left" : 0.85, "top" : 7.01, "height" : 0.86, "width" : 5.44} -->
+
 
 Notes:
 
@@ -259,6 +280,8 @@ Remember, Docker overlays changes from one filesystem to the next, so only the c
 ```bash
 $   docker rmi alpine
 ```
+<!-- {"left" : 0.85, "top" : 5.69, "height" : 0.57, "width" : 4.28} -->
+
 
 Notes:
 
@@ -277,11 +300,12 @@ Knowing the difference between instance and image is extremely important.
 
 * **`docker stats`** will  display resource usage by all running containers
 
-<img src="../../assets/images/docker/docker-stats-1.png" style="width:80%;"/>
+<img src="../../assets/images/docker/docker-stats-1.png" style="width:80%;"/><!-- {"left" : 0.85, "top" : 3.49, "height" : 1.67, "width" : 15.26} -->
+
 
 * **`docker images`** will show disk usage by images
 
-<img src="../../assets/images/docker/docker-stats-2.png" style="width:80%;"/>
+<img src="../../assets/images/docker/docker-stats-2.png" style="width:80%;"/> <!-- {"left" : 0.85, "top" : 6.7, "height" : 1.61, "width" : 12.98} -->
 
 ---
 
@@ -301,6 +325,7 @@ REPOSITORY                   TAG       IMAGE ID       CREATED        SIZE
 <none>                       <none>    4459622a14e7   28 hours ago   141MB
 <none>                       <none>    199bcab1d0fe   28 hours ago   141MB
 ```
+<!-- {"left" : 0.85, "top" : 7.62, "height" : 1.15, "width" : 13.11} -->
 
 * **`docker system prune`** is a very effective command to clean up dangling images, stopped containers and unused networks
 
@@ -308,7 +333,7 @@ REPOSITORY                   TAG       IMAGE ID       CREATED        SIZE
 
 ## Lab Prep
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Get access to lab environment
@@ -326,7 +351,7 @@ Notes:
 
 ## Lab: Installing Docker
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Install docker
@@ -344,7 +369,7 @@ Notes:
 
 ## Lab: Running Containers
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Run containers
@@ -361,7 +386,7 @@ Notes:
 
 ## Lab: Images
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Run images
@@ -378,9 +403,9 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->

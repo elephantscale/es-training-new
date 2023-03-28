@@ -14,6 +14,8 @@
 
 * Here is an example
 
+<br/>
+
 ```Dockerfile
 FROM ubuntu:latest
 
@@ -27,6 +29,7 @@ COPY README.md   /data/README.md
 
 CMD ["/bin/bash"]
 ```
+<!-- {"left" : 0.85, "top" : 4.32, "height" : 3.7, "width" : 8.08} -->
 
 * Each instruction (RUN, COPY ..etc) will create a new layer
 
@@ -42,7 +45,7 @@ CMD ["/bin/bash"]
 * **`RUN`** commands allow us to run arbitary commands to build the image
     - Here we are using `apt` to install some packages
 
-* **`COPY`** : copies files from host to image, during the build process 
+* **`COPY`:** copies files from host to image, during the build process 
 
 ```Dockerfile
 # The base image
@@ -51,6 +54,8 @@ RUN apt install -y openjdk-jdk11-headless
 RUN mkdir -p /data
 COPY README.md   /data/README.md
 ```
+<!-- {"left" : 0.85, "top" : 6.86, "height" : 1.74, "width" : 7.61} -->
+
 
 Notes:
 
@@ -75,6 +80,8 @@ RUN apt install -y openjdk-jdk11-headless
 RUN mkdir -p /data
 COPY README.md   /data/README.m
 ```
+<!-- {"left" : 0.85, "top" : 4.34, "height" : 2.32, "width" : 7.61} -->
+
 
 ---
 
@@ -95,6 +102,8 @@ CMD ["/bin/bash"]
 # or 
 ENTRYPOINT ['/startup.sh', '$1']
 ```
+<!-- {"left" : 0.85, "top" : 7.2, "height" : 1.74, "width" : 8.96} -->
+
 
 ---
 
@@ -112,6 +121,8 @@ ENTRYPOINT ['/startup.sh', '$1']
 # we are tagging our image as 'ubuntu-java'
 $   docker build .  -t ubuntu-java
 ```
+<!-- {"left" : 0.85, "top" : 5.49, "height" : 1.15, "width" : 10.61} -->
+
 
 ```console
 Step 1/5 : FROM ubuntu:latest
@@ -132,6 +143,7 @@ Successfully built d57c33f4ad15
 Successfully tagged ubuntu-java:latest
 
 ```
+<!-- {"left" : 0.85, "top" : 6.79, "height" : 4.94, "width" : 9.61} -->
 
 Notes:
 
@@ -139,7 +151,7 @@ Notes:
 
 ## Lab: Dockerfile
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Build images using Dockerfile
@@ -162,6 +174,7 @@ Notes:
 # risky!
 FROM python:latest
 ```
+<!-- {"left" : 0.85, "top" : 2.67, "height" : 0.86, "width" : 3.78} -->
 
 * Here we are building from `python:latest`
 
@@ -173,6 +186,7 @@ FROM python:latest
 # start from a verified version
 FROM python:3.6
 ```
+<!-- {"left" : 0.85, "top" : 7, "height" : 0.86, "width" : 5.94} -->
 
 ---
 ## Dockerfile Best Practices
@@ -201,6 +215,8 @@ RUN rm -f /etc/apt/apt.conf.d/01proxy  && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/*
 ```
+<!-- {"left" : 0.85, "top" : 7.5, "height" : 3.49, "width" : 8.44} -->
+
 
 ---
 
@@ -211,6 +227,8 @@ RUN apt-get update && apt-get install package1
 RUN apt-get update && apt-get install package2
 RUN apt-get update && apt-get install package3
 ```
+<!-- {"left" : 0.85, "top" : 2.16, "height" : 1.15, "width" : 8.44} -->
+
 
 * Bad practice:
     - We do `apt-get update` many times, this fetches data over the network and slow
@@ -223,6 +241,8 @@ RUN apt-get update && \
                     package2 \
                     package3
 ```
+<!-- {"left" : 0.85, "top" : 6.51, "height" : 1.44, "width" : 5.78} -->
+
 
 * Keep package names one per line, and sort package names to avoid duplicates and ease of maintanance!
 
@@ -236,6 +256,8 @@ RUN apt-get update && apt-get install -y   \
             b \
             c
 ```
+<!-- {"left" : 0.85, "top" : 9.5, "height" : 2.17, "width" : 7.31} -->
+
 
 ---
 
@@ -249,6 +271,8 @@ COPY RELEASE.md   /RELEASE.md
 
 RUN apt-get update && apt-get install packages
 ```
+<!-- {"left" : 0.85, "top" : 2.62, "height" : 1.44, "width" : 8.44} -->
+
 
 * Here every time we update the `RELEASE.md`
     - Docker has to start building from the `COPY` statement
@@ -264,6 +288,7 @@ RUN apt-get update && apt-get install packages
 # copy resources as close to the end as possible
 COPY RELEASE.md  /RELEASE.md
 ```
+<!-- {"left" : 0.85, "top" : 7.2, "height" : 1.44, "width" : 8.78} -->
 
 * So when we update `RELEASE.md` previous layers can be reused and only the `COPY` statement and below has to be executed
 
@@ -294,12 +319,14 @@ RUN groupadd -g 1000 ubuntu && \
 USER  ubuntu
 WORKDIR  /home/ubuntu
 ```
+<!-- {"left" : 0.85, "top" : 6.55, "height" : 3.49, "width" : 13.11} -->
+
 
 ---
 
 ## Lab: Inspect Various Dockerfiles
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - We will inspect and learn from various Dockerfiles from open source projects
@@ -320,7 +347,7 @@ Notes:
 
 ## Lab: Improve a Dockerfile
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Inspect the dockerfile and fix the issues
@@ -337,7 +364,7 @@ Notes:
 
 ## Lab: Package a Python Application
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Bundle a flask web application
@@ -375,7 +402,7 @@ Notes:
 
 ## Dockerhub
 
-<img src="../../assets/images/docker/dockerhub-accounts-1.png" style="width:45%;float:right;"/>
+<img src="../../assets/images/docker/dockerhub-accounts-1.png" style="width:45%;float:right;"/> <!-- {"left" : 10.75, "top" : 0.46, "height" : 5.94, "width" : 6.36} -->
 
 * Dockerhub is the most popular registry (like Github)
     - Encourages sharing docker images, just like Github promoted 'social coding'
@@ -392,7 +419,7 @@ Notes:
 
 ## Pulling a docker image 
 
-<img src="../../assets/images/docker/docker-pull-1.png" style="width:45%;float:right;"/>
+<img src="../../assets/images/docker/docker-pull-1.png" style="width:45%;float:right;"/> <!-- {"left" : 3.44, "top" : 2.12, "height" : 5.22, "width" : 10.63} -->
 
 ```bash
 $  docker images
@@ -404,6 +431,7 @@ $  docker pull nginx
 $  docker images 
 # should see nginx now
 ```
+<!-- {"left" : 0.85, "top" : 8.2, "height" : 2.61, "width" : 5.11} -->
 
 ---
 
@@ -431,12 +459,14 @@ $   docker tag  my-ubuntu  sujee/my-ubuntu
 $   docker push  sujee/my-ubuntu
 # you will see individual layers being pushed
 ```
+<!-- {"left" : 0.85, "top" : 7.11, "height" : 2.9, "width" : 8.28} -->
+
 
 ---
 
 ## Lab: Use a Local Registry
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Run a local registry
@@ -453,7 +483,7 @@ Notes:
 
 ## Lab: Push an Image to Dockerhub
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Build a custom image and push it to Dockerhub
@@ -470,9 +500,9 @@ Notes:
 
 ## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->

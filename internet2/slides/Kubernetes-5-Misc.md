@@ -1,6 +1,6 @@
 # Kubernetes: Misc
 
-<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /> <!-- {"left" : 4.41, "top" : 3.99, "height" : 4.41, "width" : 8.68} -->
 
 ---
 
@@ -108,7 +108,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## Helm
 
-<img src="../../assets/images/logos/helm-logo-1.png" style="width:20%;float:right;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+<img src="../../assets/images/logos/helm-logo-1.png" style="width:20%;float:right;" /> <!-- {"left" : 14.69, "top" : 0.24, "height" : 1.56, "width" : 2.28} -->
 
 * **Helm** is a tool that streamlines installing and managing Kubernetes applications.
 
@@ -160,7 +160,8 @@ Notes:
     - Managing repositories
     - Interacting with the Tiller server
 
-<img src="../../assets/images/kubernetes/helm-architecture-1.png" style="width:55%;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+<img src="../../assets/images/kubernetes/helm-architecture-1.png" style="width:55%;" /> <!-- {"left" : 9.75, "top" : 3.01, "height" : 3.73, "width" : 7.31} -->
+
 
 Notes:
 
@@ -176,7 +177,8 @@ Notes:
     - Installing charts into Kubernetes, and then tracking the subsequent releases
     - Upgrading and uninstalling charts by interacting with Kubernetes
 
-<img src="../../assets/images/kubernetes/helm-architecture-1.png" style="width:45%;" /> <!-- {"left" : 1.73, "top" : 1.47, "height" : 4.71, "width" : 6.85} -->
+<img src="../../assets/images/kubernetes/helm-architecture-1.png" style="width:45%;" /><!-- {"left" : 9.75, "top" : 3.01, "height" : 3.73, "width" : 7.31} -->
+
 
 Notes:
 
@@ -217,6 +219,7 @@ wordpress/
                       # will generate valid Kubernetes manifest files.
   templates/NOTES.txt # OPTIONAL: A plain text file containing short usage notes
 ```
+<!-- {"left" : 0.85, "top" : 7, "height" : 3.3, "width" : 15.87} -->
 
 Notes:
 
@@ -229,12 +232,14 @@ Notes:
 ```bash
 $   helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
+<!-- {"left" : 0.85, "top" : 2.77, "height" : 0.57, "width" : 10.78} -->
 
 * List charts to install
 
 ```bash
 $   helm search repo bitnami
 ```
+<!-- {"left" : 0.85, "top" : 4.36, "height" : 0.57, "width" : 5.44} -->
 
 * Install a package
 
@@ -245,12 +250,16 @@ $   helm repo update
 # install mysql
 $   helm install bitnami/mysql --generate-name
 ```
+<!-- {"left" : 0.85, "top" : 5.77, "height" : 1.74, "width" : 8.44} -->
+
 
 * See installed packages
 
 ```bash
 $   helm list
 ```
+<!-- {"left" : 0.85, "top" : 8.19, "height" : 0.57, "width" : 2.94} -->
+
 
 Notes:
 
@@ -258,7 +267,7 @@ Notes:
 
 ## Lab: Using Helm
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Use Helm to install a package
@@ -274,11 +283,11 @@ Notes:
 
 ---
 
-## Wrap up and Q&A
+## Review and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
-* Let's review what we have covered so far
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
+* Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->
