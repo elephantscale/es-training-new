@@ -46,6 +46,13 @@
 
 ---
 
+## Scott Wyman extended answer
+
+* Hey Mark, what Aliro is doing is building a quantum network for EPB. Initially the network will be used for research. However, I see networking itself as a practical application. The overriding question is, "Is quantum networking part of quantum computing? Or is it a separate discipline?" Having worked in both, I see quantum computing and quantum networking as separate discipline, much like a classical chip designer might not know much about network engineering and vice versa. But in the industry, quantum networking tends to be viewed as a subset of quantum computing.
+* Aliro might be a particularly interesting case study for your course, since we are often described as "the quantum Cisco", and the very early stage networking we are doing is similar to the early classical networks that Cisco built in the 80s
+
+---
+
 ## Jacob Watkins
 
 *  PhD student in theoretical physics with broad interests in quantum computing and quantum information. My current research focuses on developing algorithms for quantum simulation. 

@@ -8,7 +8,3 @@
   * Password: Demoday20230323
   * Demo notebooks: https://github.com/Qiskit/feedback/tree/main/demo-day-notebooks/2023-03-23
 
-* Junior challenges in Quantum Computing
-  * https://www.youtube.com/live/n3VnyZ2lfVU?feature=share
-
-* [Quantum Enigmas](https://www.usherbrooke.ca/iq/quantumenigmas/)
