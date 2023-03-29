@@ -13,12 +13,14 @@
 ```bash
 $   docker logs <container name>
 ```
+<!-- {"left" : 0.85, "top" : 2.83, "height" : 0.57, "width" : 6.11} -->
 
 * See the log interactively (tail -f)
 
 ```bash
 $   docker logs -f <container name>
 ```
+<!-- {"left" : 0.85, "top" : 4.3, "height" : 0.57, "width" : 6.61} -->
 
 ---
 
@@ -34,6 +36,7 @@ $   docker logs -f <container name>
 ```bash
 $   docker run -d -P -v ~/web-logs:/var/log/nginx nginx
 ```
+<!-- {"left" : 0.85, "top" : 5.28, "height" : 0.57, "width" : 9.94} -->
 
 * This will map `~/web-logs` in the host to `/var/log/nginx` in the container.
 
@@ -59,6 +62,8 @@ $   docker run -d -P -v ~/web-logs:/var/log/nginx nginx
 ```dockerfile
 HEALTHCHECK CMD curl --fail http://localhost:3000/ || exit 1
 ```
+<!-- {"left" : 0.85, "top" : 6.17, "height" : 0.57, "width" : 10.78} -->
+
 
 * Note that the health check returns 1 (bad) if failed.
 
@@ -111,6 +116,8 @@ $    sudo usermod -aG docker user1
 
 # 'user1' needs to logout and log-back-in for changes to take effect
 ```
+<!-- {"left" : 0.85, "top" : 4.37, "height" : 1.74, "width" : 12.11} -->
+
 
 ---
 
@@ -132,7 +139,6 @@ $    sudo usermod -aG docker user1
 
 * If not limited, the app can use it up.
 
----
 
 
 

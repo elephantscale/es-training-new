@@ -1,6 +1,7 @@
 # Kubernetes Resources
 
-<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /> <!-- {"left" : 4.41, "top" : 3.99, "height" : 4.41, "width" : 8.68} -->
+
 
 ---
 
@@ -64,19 +65,21 @@ $   kubectl  label nodes worker2  disk=regular
 
 $   kubectl get nodes --show-labels
 ```
+<!-- {"left" : 0.85, "top" : 5.2, "height" : 2.61, "width" : 8.44} -->
 
 ```console
 NAME      STATUS   ROLES    AGE   VERSION   LABELS
 worker1   Ready    <none>   9h    v1.22.1   disk=ssd ...
 worker2   Ready    <none>   9h    v1.22.1   disk=regular ...
 ```
+<!-- {"left" : 0.85, "top" : 8.06, "height" : 1.15, "width" : 10.78} -->
 
 ---
 
 ## Assigning Pods to Nodes
 
 * Now specify a **NodeSelector** to pod.yaml
-
+<br/>
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -90,6 +93,7 @@ spec:
   nodeSelector:
     disk: ssd
 ```
+<!-- {"left" : 0.85, "top" : 2.62, "height" : 2.83, "width" : 5.09} -->
 
 * And create pods.  The pods will only be placed on **`worker1`** that is labeled as **`disk=ssd`**
 
@@ -100,12 +104,14 @@ $   kubectl apply -f pod.yaml
 
 $   kubectol get pods -o wide
 ```
+<!-- {"left" : 0.85, "top" : 6.87, "height" : 1.74, "width" : 5.61} -->
 
 ```console
 NAME                        READY   STATUS    RESTARTS   AGE    IP                NODE      
 redis1                      1/1     Running   0          77s    192.168.235.149   worker1   
 redis2                      1/1     Running   0          52s    192.168.235.150   worker1  
 ```
+<!-- {"left" : 0.85, "top" : 8.82, "height" : 1.15, "width" : 16.11} -->
 
 ---
 
@@ -134,15 +140,19 @@ spec:
         ports:
         - containerPort: 80
 ```
+<!-- {"left" : 0.85, "top" : 2.07, "height" : 6.4, "width" : 5.44} -->
+
 
 ```bash
 $   kubectl get deployments  -o wide 
 ```
+<!-- {"left" : 0.85, "top" : 8.8, "height" : 0.57, "width" : 6.78} -->
 
 ```console
 NAME       READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS   IMAGES          SELECTOR
 nginx-v1   4/4     4            4           160m   nginx        sujee/nginx:1   app=nginx,version=v1
 ```
+<!-- {"left" : 0.85, "top" : 9.75, "height" : 0.78, "width" : 15.78} -->
 
 ---
 
@@ -171,10 +181,12 @@ spec:
         ports:
         - containerPort: 80
 ```
+<!-- {"left" : 0.85, "top" : 1.9, "height" : 6.4, "width" : 5.44} -->
 
 ```bash
 $  kubectl get pods  --show-labels
 ```
+<!-- {"left" : 0.85, "top" : 8.6, "height" : 0.57, "width" : 6.44} -->
 
 ```console
 NAME                        READY   STATUS    RESTARTS   AGE    LABELS
@@ -183,6 +195,7 @@ nginx-v1-67dfdcf8b8-7vw5x   1/1     Running   0          162m   app=nginx,versio
 nginx-v1-67dfdcf8b8-gm2pw   1/1     Running   0          162m   app=nginx,version=v1
 nginx-v1-67dfdcf8b8-hbjm9   1/1     Running   0          162m   app=nginx,version=v1
 ```
+<!-- {"left" : 0.85, "top" : 9.47, "height" : 1.74, "width" : 14.78} -->
 
 ---
 
@@ -191,7 +204,8 @@ nginx-v1-67dfdcf8b8-hbjm9   1/1     Running   0          162m   app=nginx,versio
 
   * The example below has four pods and three labels
 
-<img src="../../assets/images/kubernetes/metadata-01.png" style="width:85%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/metadata-01.png" style="width:85%;;"/><!-- {"left" : 2.83, "top" : 4.21, "height" : 5.3, "width" : 11.84} -->
+
 
 Notes:
 
@@ -201,7 +215,8 @@ Notes:
 
 * You can query for labels that map to value of the entire app
 
-<img src="../../assets/images/kubernetes/metadata-02.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/metadata-02.png" style="width:75%;;"/> <!-- {"left" : 3.99, "top" : 4.63, "height" : 5.63, "width" : 9.53} -->
+
 
 Notes:
 
@@ -211,7 +226,7 @@ Notes:
 
 * You can either narrow your search with multiple labels - your app's fronted
 
-<img src="../../assets/images/kubernetes/metadata-03.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/metadata-03.png" style="width:75%;;"/> <!-- {"left" : 3.67, "top" : 4.27, "height" : 6.33, "width" : 10.17} -->
 
 Notes:
 
@@ -221,7 +236,7 @@ Notes:
 
 * You can either narrow your search with multiple labels - your app's backend
 
-<img src="../../assets/images/kubernetes/metadata-04.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/metadata-04.png" style="width:75%;;"/> <!-- {"left" : 3.91, "top" : 4.71, "height" : 6.03, "width" : 9.69} -->
 
 Notes:
 
@@ -231,7 +246,7 @@ Notes:
 
 * You can either narrow your search with multiple labels - your app's test phase
 
-<img src="../../assets/images/kubernetes/metadata-05.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/metadata-05.png" style="width:75%;;"/> <!-- {"left" : 3.21, "top" : 4.79, "height" : 5.3, "width" : 11.08} -->
 
 Notes:
 
@@ -242,7 +257,7 @@ Notes:
 * You can either narrow your search with multiple labels - your
 app's production release
 
-<img src="../../assets/images/kubernetes/metadata-06.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/metadata-06.png" style="width:75%;;"/> <!-- {"left" : 2.86, "top" : 4.79, "height" : 5.67, "width" : 11.78} -->
 
 Notes:
 
@@ -250,7 +265,7 @@ Notes:
 
 ## Lab: Labels
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Work with labels
@@ -267,7 +282,7 @@ Notes:
 
 ## Lab: Pod Placement
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Place Pods on certain nodes using lables
@@ -312,6 +327,8 @@ spec:
       limits:
         memory: "256Mi"
 ```
+<!-- {"left" : 0.85, "top" : 7.42, "height" : 4.07, "width" : 4.61} -->
+
 
 ---
 
@@ -351,6 +368,7 @@ spec:
         memory: "128Mi"
         cpu: "500m"
 ```
+<!-- {"left" : 0.85, "top" : 3.38, "height" : 4.65, "width" : 4.61} -->
 
 ---
 
@@ -366,16 +384,20 @@ spec:
 # to monitor node utilzation
 $   kubectl  top   node
 ```
+<!-- {"left" : 0.85, "top" : 4.54, "height" : 0.86, "width" : 5.44} -->
 
 ```console
 NAME       CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
 minikube   782m         4%     1009Mi          3%        
 ```
+<!-- {"left" : 0.85, "top" : 5.7, "height" : 0.86, "width" : 10.28} -->
+
 
 ```bash
 # monitor pod utilization
 $   kubectl   top pod
 ```
+<!-- {"left" : 0.85, "top" : 6.85, "height" : 0.86, "width" : 4.94} -->
 
 ```console
 NAME                                CPU(cores)   MEMORY(bytes)   
@@ -385,6 +407,7 @@ nginx-deployment-7848d4b86f-798rn   14m           12Mi
 nginx-deployment-7848d4b86f-94zbm   11m           12Mi            
 
 ```
+<!-- {"left" : 0.85, "top" : 7.95, "height" : 1.74, "width" : 11.78} -->
 
 ---
 
@@ -402,7 +425,7 @@ nginx-deployment-7848d4b86f-94zbm   11m           12Mi
 
 ## Lab: Resource Limits
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
   - Specify resource limits
@@ -416,12 +439,10 @@ nginx-deployment-7848d4b86f-94zbm   11m           12Mi
 Notes:
 
 ---
-
 ## Review and Q&A
-
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->

@@ -1,6 +1,6 @@
 # Kubernetes Essentials
 
-<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /> <!-- {"left" : 4.41, "top" : 3.99, "height" : 4.41, "width" : 8.68} -->
 
 ---
 
@@ -24,8 +24,9 @@ In addition to the objectives you identified in taking this module, these are th
 
 # Let's Design Kubernetes from Scratch
 
-<img src="../../assets/images/generic/3rd-party/whiteboard-design-1.jpg
-" style="width:30%;" />
+<img src="../../assets/images/generic/3rd-party/whiteboard-design-1.jpg" style="width:30%;"/> <!-- {"left" : 4.83, "top" : 3.9, "height" : 7.07, "width" : 12.22} -->
+
+
 
 ---
 
@@ -37,13 +38,14 @@ In addition to the objectives you identified in taking this module, these are th
 
 * What do we need to achieve this?
 
-<img src="../../assets/images/kubernetes/web-app-2-scaling.png" style="width:50%;" />
+<img src="../../assets/images/kubernetes/web-app-2-scaling.png" style="width:50%;" /> <!-- {"left" : 9.77, "top" : 2.47, "height" : 4.75, "width" : 7.16} -->
+
 
 ---
 
 ## Step-1: We Need a Distributed System
 
-<img src="../../assets/images/kubernetes/kubernetes-design-1.png" style="width:50%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-1.png" style="width:50%;float:right;" /> <!-- {"left" : 11.63, "top" : 0.75, "height" : 3.27, "width" : 5.29} -->
 
 * We need **multiple nodes (machines, hosts)**
 
@@ -55,7 +57,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## Step-2: Controllers for Master and Workers
 
-<img src="../../assets/images/kubernetes/kubernetes-design-2.png" style="width:50%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-2.png" style="width:50%;float:right;" /> <!-- {"left" : 11.16, "top" : 1.59, "height" : 4.51, "width" : 5.66} -->
 
 * Each worker will have a 'supervisor/controller' that manages that node.  We will call it **kubelet**
 
@@ -65,7 +67,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## Step-3: Running Applications
 
-<img src="../../assets/images/kubernetes/kubernetes-design-3.png" style="width:50%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-3.png" style="width:50%;float:right;" /> <!-- {"left" : 11.83, "top" : 0.58, "height" : 5.55, "width" : 4.97} -->
 
 * We need a portable, secure way of running applications
 
@@ -77,7 +79,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## Step-4: Grouping Containers Together
 
-<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:43%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:43%;float:right;" /> <!-- {"left" : 13.04, "top" : 0.52, "height" : 4.21, "width" : 3.77} -->
 
 * For some applications, we want the related **containers grouped together**
     - For example, a web application and a logging agent
@@ -93,13 +95,13 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## It is Getting a Bit Crowded :-) 
 
-<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:50%;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-4.png" style="width:50%;" /> <!-- {"left" : 4.78, "top" : 2.43, "height" : 8.88, "width" : 7.95} -->
 
 ---
 
 ## Step-5: Networking
 
-<img src="../../assets/images/kubernetes/kubernetes-design-5.png" style="width:45%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-5.png" style="width:45%;float:right;" /> <!-- {"left" : 12.11, "top" : 0.52, "height" : 5.88, "width" : 4.77} -->
 
 * We need a solid, flexible networking setup in the system
 
@@ -111,7 +113,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 ## Step-6: Few More Controllers
 
-<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:45%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:45%;float:right;" /> <!-- {"left" : 12.51, "top" : 0.46, "height" : 5.39, "width" : 4.37} -->
 
 * On the master node, we are adding 2 more controllers
 
@@ -125,7 +127,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 * Whew, we came up with a pretty complicated system!
 
-<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:40%;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:40%;" /><!-- {"left" : 10.95, "top" : 1.46, "height" : 7.27, "width" : 5.9} -->
 
 ---
 
@@ -137,7 +139,7 @@ In addition to the objectives you identified in taking this module, these are th
 
   * A cluster is a set of computing instance that Kubernetes manages
 
-<img src="../../assets/images/kubernetes/cluster-1.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/cluster-1.png" style="width:75%;;"/> <!-- {"left" : 2.62, "top" : 4.47, "height" : 4.78, "width" : 12.26} -->
 
 
 Notes:
@@ -146,7 +148,7 @@ Notes:
 
 ## Can One Serve Two Masters?
 
-<img src="../../assets/images/kubernetes/cluster-2.png" style="width:42%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/cluster-2.png" style="width:42%;float:right;"/> <!-- {"left" : 11.43, "top" : 0.53, "height" : 6.91, "width" : 5.47} -->
 
 * Yes!
 
@@ -159,7 +161,7 @@ Notes:
 ---
 ## A Big Picture Overview of Kubernetes
 
-<img src="../../assets/images/kubernetes/kubernetes-architecture-1.png" style="width:90%;" /> <!-- {"left" : 0.47, "top" : 1.56, "height" : 4.38, "width" : 9.31} -->
+<img src="../../assets/images/kubernetes/kubernetes-architecture-1.png" style="width:90%;" /> <!-- {"left" : 1.9, "top" : 3.65, "height" : 6.43, "width" : 13.69} -->
 
 Notes:
 
@@ -169,7 +171,9 @@ Notes:
 
 * Kubernetes engine is a cluster. It has at least one master and potentially multiple worker machines. Worker machines are called nodes. The master and the node machines together perform cluster orchestration.
 
-<img src="../../assets/images/kubernetes/kubernetes-architecture-2.png" style="width:70%;" /><!-- {"left" : 0.33, "top" : 1.05, "height" : 5.91, "width" : 9.58} -->
+<img src="../../assets/images/kubernetes/kubernetes-architecture-2.png" style="width:70%;" /> <!-- {"left" : 4.35, "top" : 5.62, "height" : 5.43, "width" : 8.81} -->
+
+
 
 Notes:
 
@@ -189,7 +193,8 @@ A typical cluster has one or more nodes, that are called worker machines, which
 
 * We will look at all these components in detail in the next few slides
 
-<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:80%;" /><!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
+<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:80%;" /> <!-- {"left" : 2.77, "top" : 4.01, "height" : 6.27, "width" : 11.96} -->
+
 
 Notes:
 
@@ -201,7 +206,7 @@ Participant Notes :
 
 ## Kubernetes Master
 
-<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:50%;float:right;" /><!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
+<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:50%;float:right;" /> <!-- {"left" : 11.39, "top" : 0.25, "height" : 3.02, "width" : 5.76} -->
 
 * **Etcd**
 
@@ -219,7 +224,7 @@ Participant Notes :
 
 ## Kubernetes Master
 
-<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:50%;float:right;" /><!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
+<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:50%;float:right;" /> <!-- {"left" : 11.39, "top" : 0.25, "height" : 3.02, "width" : 5.76} -->
 
 * **API Server**
 
@@ -239,7 +244,7 @@ Participant Notes :
 
 ## Kubernetes Master
 
-<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:50%;float:right;" /><!-- {"left" : 0.43, "top" : 1.29, "height" : 4.92, "width" : 9.38} -->
+<img src="../../assets/images/kubernetes/kubernetes-architecture-3-master.png" style="width:50%;float:right;" /> <!-- {"left" : 12.75, "top" : 0.25, "height" : 2.3, "width" : 4.4} -->
 
 * **kube-controller-manager** is a binary that runs controllers.  Logically, each controller is a separate process, but to reduce the number of moving pieces in the system, they are all compiled into a single binary and run in a single process.
 
@@ -255,7 +260,7 @@ Participant Notes :
 
 * K8 Node (worker machine) has quite a bit of components running as well
 
-<img src="../../assets/images/kubernetes/Kubernetes-Node-Architecture.png" style="width:90%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/kubernetes/Kubernetes-Node-Architecture.png" style="width:90%;" /> <!-- {"left" : 2.69, "top" : 4.34, "height" : 5.04, "width" : 12.11} -->
 
 Notes:
 
@@ -267,7 +272,7 @@ Participant Notes :
 
 ## Kubernetes Node Architecture
 
-<img src="../../assets/images/kubernetes/Kubernetes-Node-Architecture.png" style="width:50%;float:right;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/kubernetes/Kubernetes-Node-Architecture.png" style="width:50%;float:right;" /> <!-- {"left" : 10.28, "top" : 0.51, "height" : 2.79, "width" : 6.71} -->
 
 * **Docker**
     - Docker is a basic requirement for each node. Dockers help in running the encapsulated app containers in an isolated, self-contained, lightweight environment.
@@ -281,7 +286,7 @@ Participant Notes :
 
 ## Kubernetes Node Architecture
 
-<img src="../../assets/images/kubernetes/Kubernetes-Node-Architecture.png" style="width:50%;float:right;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/kubernetes/Kubernetes-Node-Architecture.png" style="width:50%;float:right;" /> <!-- {"left" : 11.38, "top" : 0.27, "height" : 2.36, "width" : 5.66} -->
 
 * **Kube-Proxy**
     - KubeProxy is a network proxy that runs on each node in your cluster
@@ -300,11 +305,11 @@ Participant Notes :
 
 ## Namespaces
 
-<img src="../../assets/images/kubernetes/namespaces-2.png" style="width:35%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/namespaces-2.png" style="width:35%;float:right;"/> <!-- {"left" : 13.76, "top" : 0.18, "height" : 2.11, "width" : 3.36} -->
+
+<img src="../../assets/images/kubernetes/namespaces-1.png" style="width:35%;float:right;clear:both;"/> <!-- {"left" : 13.77, "top" : 2.45, "height" : 2.48, "width" : 3.34} -->
 
 * Intended for use in **multi-user/multi-team** environments.  Allows a physical cluster to be segmented into multiple **virtual clusters**
-
-<img src="../../assets/images/kubernetes/namespaces-1.png" style="width:35%;float:right;clear:both;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * Allows division of cluster resources amongst multiple users, thus provides logical separation between teams and their environments.
     - e.g.  Department-1,  Department-2
@@ -322,7 +327,7 @@ Participant Notes :
 
 ## Namespace
 
-<img src="../../assets/images/kubernetes/namespaces-3.png" style="width:35%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/namespaces-3.png" style="width:35%;float:right;"/> <!-- {"left" : 12.13, "top" : 0.41, "height" : 2.84, "width" : 4.9} -->
 
 * Kubernetes objects/resources are located within the namespace
 
@@ -336,12 +341,14 @@ Participant Notes :
 ```bash
 $   kubectl create namespace myns
 ```
+<!-- {"left" : 0.85, "top" : 7.78, "height" : 0.57, "width" : 6.28} -->
 
 * Listing namespaces
 
 ```bash
 $   kubectl get ns
 ```
+<!-- {"left" : 0.85, "top" : 9.19, "height" : 0.57, "width" : 3.78} -->
 
 ```console
 NAME                   STATUS   AGE
@@ -350,6 +357,7 @@ kube-public            Active   5d8h
 kube-system            Active   5d8h
 myns                   Active   77m
 ```
+<!-- {"left" : 0.85, "top" : 9.88, "height" : 1.74, "width" : 6.78} -->
 
 
 Notes:
@@ -371,7 +379,7 @@ Resources within a single Namespace, must have unique names.
 
 ## Pod
 
-<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:40%;float:right;" />
+<img src="../../assets/images/kubernetes/kubernetes-design-6.png" style="width:40%;float:right;" /> <!-- {"left" : 13.59, "top" : 0.23, "height" : 4.21, "width" : 3.41} -->
 
 * The Pod is the core **unit of management** in K8s
     - Pods can be scaled up and down
@@ -404,7 +412,8 @@ A pod models an application-specific "logical host" containing one or more appli
 
 ## Pods and Containers
 
-<img src="../../assets/images/kubernetes/pod-1.png" style="width:50%;float:right;" /> <!-- {"left" : 2.37, "top" : 2.11, "height" : 4.88, "width" : 5.52} -->
+<img src="../../assets/images/kubernetes/pod-1.png" style="width:50%;float:right;" /><!-- {"left" : 11.28, "top" : 0.27, "height" : 5.06, "width" : 5.72} -->
+
 
 * Here we see a Pod encapsulating 3 containers
 
@@ -436,13 +445,13 @@ Volumes allow persistent data in a Pod in case of container restart within the p
 
 ## Pod vs. Container
 
-<img src="../../assets/images/kubernetes/Pod-Container.png" style="width:50%;float:right;" /> <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
+<img src="../../assets/images/kubernetes/Pod-Container.png" style="width:50%;float:right;" /> <!-- {"left" : 11.65, "top" : 0.3, "height" : 2.76, "width" : 5.31} -->
 
 * Typically, Containers are often used for solving narrowly defined problems. However, most of the time we end up designing for multiple containers to solve a single problem.
 
 * Thus the main purpose of a multi-container Pod is to **support those helper process** that are co-located, co-managed for a primary application. 
 
-<img src="../../assets/images/kubernetes/3rd-party/Indiana-Jones-And-The-Last-Crusade-2-sidecar.jpg" style="width:35%;float:right;clear:both;" /> <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
+<img src="../../assets/images/kubernetes/3rd-party/Indiana-Jones-And-The-Last-Crusade-2-sidecar.jpg" style="width:35%;float:right;clear:both;" /> <!-- {"left" : 12.19, "top" : 3.6, "height" : 2.7, "width" : 4.79} -->
 
 * Here we have redis container acting as a local cache for python application.  So they are co-located in a Pod
 
@@ -464,8 +473,10 @@ Few if those are listed below:
 
 ## Sidecar Pattern
 
-<img src="../../assets/images/kubernetes/3rd-party/Indiana-Jones-And-The-Last-Crusade-2-sidecar.jpg" style="width:35%;float:right;" /> <!-- {"left" : 0.48, "top" : 1.33, "height" : 4.84, "width" : 9.3} -->
-<img src="../../assets/images/kubernetes/sidecar-helper-1.png" style="width:50%;float:right;clear:both;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/kubernetes/3rd-party/Indiana-Jones-And-The-Last-Crusade-2-sidecar.jpg" style="width:35%;float:right;" /> <!-- {"left" : 12.68, "top" : 0.25, "height" : 2.42, "width" : 4.3} -->
+
+
+<img src="../../assets/images/kubernetes/sidecar-helper-1.png" style="width:50%;float:right;clear:both;" /> <!-- {"left" : 12.68, "top" : 2.84, "height" : 2.53, "width" : 4.3} -->
 
 * **Sidecar** containers are **"helpers"** the main container 
 
@@ -488,7 +499,8 @@ Few if those are listed below:
 
 * Example app: updating a 'blacklisted IP list'
 
-<img src="../../assets/images/kubernetes/sidecar-helper-2.png" style="width:50%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/kubernetes/sidecar-helper-2.png" style="width:50%;" /> <!-- {"left" : 10.52, "top" : 2.26, "height" : 3.34, "width" : 6.49} -->
+
 
 ---
 
@@ -509,6 +521,7 @@ Few if those are listed below:
 
 * Define a pod with a YAML file
 
+<br/>
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -519,6 +532,7 @@ spec:
     - name: web
       image: nginx
 ```
+<!-- {"left" : 0.85, "top" : 2.78, "height" : 3.07, "width" : 4.45} -->
 
 * **`kind: Pod`** specifies that we are defining a Pod object
 
@@ -540,8 +554,11 @@ Notes:
 ```bash
 $   kubectl apply -f pod.yaml
 ```
+<!-- {"left" : 0.85, "top" : 2.92, "height" : 0.57, "width" : 5.61} -->
 
-<img src="../../assets/images/kubernetes/pod-2.png" style="width:80%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+
+<img src="../../assets/images/kubernetes/pod-2.png" style="width:80%;" /><!-- {"left" : 2.31, "top" : 5.19, "height" : 4.92, "width" : 12.88} -->
+
 
 Notes:
 
@@ -551,7 +568,7 @@ Notes:
 
 * The master creates a pod on your set of nodes
 
-<img src="../../assets/images/kubernetes/pod-3.png" style="width:80%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/kubernetes/pod-3.png" style="width:80%;" /> <!-- {"left" : 2.94, "top" : 4.6, "height" : 4.53, "width" : 11.61} -->
 
 Notes:
 
@@ -559,8 +576,7 @@ Notes:
 
 ## Deploying a Pod
 
-<img src="../../assets/images/kubernetes/Deploying-a-Pod.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
-
+<img src="../../assets/images/kubernetes/Deploying-a-Pod.png" style="width:75%;;"/> <!-- {"left" : 2.55, "top" : 4.11, "height" : 5.52, "width" : 12.4} -->
 
 Notes:
 
@@ -585,7 +601,8 @@ We can deploy many pods like those listed above.
 
 ## Lab: Setting up Kubernetes - Single Node
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
+
 
 * **Overview:**
     - We will use minikube to setup a single node Kubernetes cluster
@@ -603,7 +620,8 @@ Notes:
 
 ## Lab: Setting up Kubernetes - Multi Node
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
+
 
 * **Overview:**
     - Setup a 3 node kubernetes cluster
@@ -621,7 +639,7 @@ Notes:
 
 ## Lab: Explore the Cluster
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Explore the K8s cluster we just setup
@@ -639,7 +657,7 @@ Notes:
 
 ## Lab: Setup a Dashboard
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Setup and access a Kubernetes dashboard
@@ -657,7 +675,7 @@ Notes:
 
 ## Lab: Running a Pod Manually
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Run a single pod
@@ -675,7 +693,7 @@ Notes:
 
 ## Lab: Running a Pod from Manifest
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Deploy a pod manifest
@@ -693,7 +711,7 @@ Notes:
 
 # Replication
 
-<img src="../../assets/images/generic/3rd-party/clones-2.jpg" style="width:40%;" /><!-- {"left" : 0.46, "top" : 1.81, "height" : 3.88, "width" : 9.33} -->
+<img src="../../assets/images/generic/3rd-party/clones-2.jpg" style="width:40%;" /><!-- {"left" : 7.46, "top" : 2.86, "height" : 6.66, "width" : 9.49} -->
 
 ---
 
@@ -707,7 +725,8 @@ Notes:
 
 * **Scaling:** If the load increases, K8s can spin up additional instances to handle the load
 
-<img src="../../assets/images/kubernetes/web-app-2-scaling.png" style="width:40%;" />
+<img src="../../assets/images/kubernetes/web-app-2-scaling.png" style="width:40%;" /> <!-- {"left" : 10.85, "top" : 2.25, "height" : 4.1, "width" : 6.18} -->
+
 
 Notes:
 
@@ -726,7 +745,8 @@ Replication logic has to be simple by design but should offer powerful and flexi
 
 * Replication keeps a certain number of pods running at anytime
 
-<img src="../../assets/images/kubernetes/ReplicaSet-01.png" style="width:70%;" /><!-- {"left" : 0.58, "top" : 1.5, "height" : 5, "width" : 9.08} -->
+<img src="../../assets/images/kubernetes/ReplicaSet-01.png" style="width:70%;" /> <!-- {"left" : 2.67, "top" : 4.09, "height" : 6.7, "width" : 12.16} -->
+
 
 Notes:
 
@@ -744,8 +764,8 @@ We are running 4 copies of the application using ReplicaSet. Please note that na
 
 * Right: Say one node crashes
 
-<img src="../../assets/images/kubernetes/ReplicaSet-02.png" style="width:45%;" /><!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->  &nbsp;  &nbsp;
-<img src="../../assets/images/kubernetes/ReplicaSet-03.png" style="width:45%;" /><!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
+<img src="../../assets/images/kubernetes/ReplicaSet-02.png" style="width:45%;" /> <!-- {"left" : 1.2, "top" : 5.9, "height" : 4.43, "width" : 7.26} -->
+<img src="../../assets/images/kubernetes/ReplicaSet-03.png" style="width:45%;" /> <!-- {"left" : 9.38, "top" : 5.9, "height" : 4.43, "width" : 6.92} -->
 
 
 Notes:
@@ -765,8 +785,9 @@ Node    = 4
 
 * ReplicationController will notice this, and launch another Pod on one of the remaining nodes!
 
-<img src="../../assets/images/kubernetes/ReplicaSet-04.png" style="width:45%;" /><!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
-&nbsp; &nbsp;<img src="../../assets/images/kubernetes/ReplicaSet-05.png" style="width:45%;" /><!-- {"left" : 0.6, "top" : 0.99, "height" : 5.51, "width" : 9.06} -->
+<img src="../../assets/images/kubernetes/ReplicaSet-04.png" style="width:45%;" /> <!-- {"left" : 1.46, "top" : 5.26, "height" : 4.37, "width" : 7.16} -->
+
+&nbsp; &nbsp;<img src="../../assets/images/kubernetes/ReplicaSet-05.png" style="width:45%;" /> <!-- {"left" : 8.88, "top" : 5.26, "height" : 4.37, "width" : 7.16} -->
 
 ---
 
@@ -800,6 +821,7 @@ spec:
         ports:
         - containerPort: 80
 ```
+<!-- {"left" : 0.85, "top" : 5.48, "height" : 5.82, "width" : 5.28} -->
 
 Notes:
 
@@ -818,7 +840,8 @@ A Replication Controller allows us to easily create multiple pods ensures that t
 * Here we are specifying `replicas: 3`, and 3 instances of the same Pod template are deployed
 
 
-<img src="../../assets/images/kubernetes/Scaling-Pods.png" style="width:75%;;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/kubernetes/Scaling-Pods.png" style="width:75%;;"/><!-- {"left" : 2.31, "top" : 4.52, "height" : 5.83, "width" : 12.88} -->
+
 
 ---
 
@@ -851,6 +874,7 @@ spec:
           ports:
             - containerPort: 80
 ```
+<!-- {"left" : 0.85, "top" : 5.45, "height" : 5.82, "width" : 5.94} -->
 
 Notes:
 
@@ -867,7 +891,7 @@ Replica Set makes sure that required number of pod replicas are running at all t
 
 ## Lab: Running a ReplicaSet
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Deploy ReplicaSet
@@ -884,7 +908,7 @@ Notes:
 
 ## Lab: Running a DaemonSet
 
-<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
+<img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/> <!-- {"left" : 12.99, "top" : 0.23, "height" : 5.3, "width" : 3.98} -->
 
 * **Overview:**
     - Deploy a Daemonset
@@ -901,10 +925,10 @@ Notes:
 
 
 ## Review and Q&A
-
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
 * Let's go over what we have covered so far
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->
+

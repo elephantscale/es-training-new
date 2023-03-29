@@ -1,6 +1,7 @@
 # Kubernetes: Intro
 
-<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /><!-- {"left" : 4.41, "top" : 3.99, "height" : 4.41, "width" : 8.68} -->
+
 
 ---
 
@@ -34,7 +35,7 @@ In addition to the objectives you identified in taking this module, these are th
 
 * Most applications start out this way.
 
-<img src="../../assets/images/kubernetes/web-app-1-simple.png" style="width:50%;" />
+<img src="../../assets/images/kubernetes/web-app-1-simple.png" style="width:50%;" /> <!-- {"left" : 4.84, "top" : 6.96, "height" : 4.48, "width" : 7.83} -->
 
 Notes:
 
@@ -56,7 +57,7 @@ If your current software infrastructure looks something like this — maybe 
 
 * And what happens one one of the components crashes?  We need to restart it
 
-<img src="../../assets/images/kubernetes/web-app-2-scaling.png" style="width:40%;" />
+<img src="../../assets/images/kubernetes/web-app-2-scaling.png" style="width:40%;" /> <!-- {"left" : 11.18, "top" : 2.7, "height" : 3.9, "width" : 5.87} -->
 
 Notes:
 
@@ -72,7 +73,7 @@ These are solved with the following architectural principle: decoupling. Decoupl
 
 ## Container Orchestration?
 
-<img src="../../assets/images/generic/3rd-party/orchestra-music-conductor-1.jpg" style="width:40%;float:right;" />
+<img src="../../assets/images/generic/3rd-party/orchestra-music-conductor-1.jpg" style="width:40%;float:right;" /> <!-- {"left" : 10.64, "top" : 0.59, "height" : 4.28, "width" : 6.42} -->
 
 * Container orchestration is how we manage multi-container applications in the data center
 
@@ -114,9 +115,9 @@ As we mentioned above, it is easy to explain what the container orchestration do
 
 ## Kubernetes
 
-<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:30%;float:right;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:30%;float:right;" /> <!-- {"left" : 13.26, "top" : 0.28, "height" : 1.91, "width" : 3.76} -->
 
-<img src="../../assets/images/kubernetes/3rd-party/helmsman-1.png" style="width:30%;float:right;clear:both;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+<img src="../../assets/images/kubernetes/3rd-party/helmsman-1.png" style="width:30%;float:right;clear:both;" /> <!-- {"left" : 13.9, "top" : 2.63, "height" : 3.34, "width" : 3.17} -->
 
 * Open source project originally conceived by Google.
     - Culminated from Google's 15+ years of experience with containerized apps.
@@ -143,7 +144,7 @@ Kubernetes originates from Greek, meaning helmsman or pilot, and is the root
 
 ## Kubernetes (Cont.)
 
-<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:30%;float:right;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:30%;float:right;" /> <!-- {"left" : 13.26, "top" : 0.28, "height" : 1.91, "width" : 3.76} -->
 
 * Particularly suited for horizontally scalable, stateless, or 'microservices' application architectures.
 
@@ -220,7 +221,7 @@ Kubernetes tries to evenly balance the load on the cluster machines.  So there a
 
 ## Managed Kubernetes
 
-<img src="../../assets/images/kubernetes/3rd-party/starship-enterprise-1.jpg" style="width:50%;float:right;" />
+<img src="../../assets/images/kubernetes/3rd-party/starship-enterprise-1.jpg" style="width:50%;float:right;" /> <!-- {"left" : 12.41, "top" : 0.37, "height" : 3.17, "width" : 4.58} -->
 
 * Kubernetes is fairly complex:
    - Lots of complex configuration required even for the simplest applications
@@ -232,7 +233,7 @@ Kubernetes tries to evenly balance the load on the cluster machines.  So there a
 * Some KAAS offerings: 
     - EKS (Amazon Elastic Kubernetes Service), GCE (Google Container Engine), AKS (Azure Kubernetes Services), PKS (Pivotal Container Service)
 
-* **Quiz** : What is the minimum crew compliment for Startrek Enterprise? :-)
+* **Quiz:** What is the minimum crew compliment for Startrek Enterprise? :-)
 
 ---
 
@@ -254,7 +255,7 @@ Kubernetes tries to evenly balance the load on the cluster machines.  So there a
 
 ## Kubernetes @ Nokia
 
-<img src="../../assets/images/logos/nokia-logo-1.png" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/nokia-logo-1.png" style="width:30%;float:right;" /> <!-- {"left" : 13.16, "top" : 0.06, "height" : 2.35, "width" : 3.98} -->
 
 * **The Challenge**
     - Nokia and Telecom operators were running services on  diverse environments (bare metal and virtualized machines, public cloud, private cloud).  There was no uniform way to deploy applications
@@ -271,7 +272,7 @@ Kubernetes tries to evenly balance the load on the cluster machines.  So there a
 
 ## Kubernetes @ Pinterest
 
-<img src="../../assets/images/logos/pinterest-logo-1.png" style="width:30%;float:right;" />
+<img src="../../assets/images/logos/pinterest-logo-1.png" style="width:30%;float:right;" /> <!-- {"left" : 13.75, "top" : 0.27, "height" : 1.92, "width" : 3.25} -->
 
 * **The Challenge**
     - Pinterest has experienced huge popularity, and has grown to 1000+ microservices and home-grown infrastructure.
@@ -288,9 +289,9 @@ Kubernetes tries to evenly balance the load on the cluster machines.  So there a
 
 ## Wrap up and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
-
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
 * What are some of your challenges that you can see Kubernetes can possibly address
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->

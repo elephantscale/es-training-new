@@ -1,7 +1,7 @@
 # Kubernetes Best Practices
 
-<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" />
-<img src="../../assets/images/generic/3rd-party/best-practices-2.png" style="width:35%;" />
+<img src="../../assets/images/logos/kubernetes-logo-4-medium.png" style="width:35%;" /><!-- {"left" : 1.18, "top" : 5.7, "height" : 3.19, "width" : 6.28} -->
+<img src="../../assets/images/generic/3rd-party/best-practices-2.png" style="width:35%;" /> <!-- {"left" : 8.74, "top" : 5.78, "height" : 3.02, "width" : 7.17} -->
 
 ---
 
@@ -9,6 +9,7 @@
 
 * These will save you some typing!
 
+<br/>
 ```bash
 $   alias k='kubectl'
 
@@ -25,6 +26,7 @@ $   alias kdd='kubectl describe deployment'
 $   alias kds='kubectl describe service'
 
 ```
+<!-- {"left" : 0.85, "top" : 2.7, "height" : 4.59, "width" : 8.95} -->
 
 * Put these in your **`~/.bashrc`** file, so they are setup every time you login
 
@@ -58,6 +60,7 @@ $   alias kds='kubectl describe service'
 ```bash
 $   yamllint  a.yaml
 ```
+<!-- {"left" : 0.85, "top" : 5.89, "height" : 0.57, "width" : 4.11} -->
 
 * Here is a minimal yaml
 
@@ -71,6 +74,7 @@ spec:
     - name: web
       image: nginx
 ```
+<!-- {"left" : 0.85, "top" : 7.37, "height" : 2.61, "width" : 3.78} -->
 
 ---
 
@@ -91,6 +95,7 @@ spec:
     - name: web
       image: nginx:1.9  # this is the version that is tested with our app!
 ```
+<!-- {"left" : 0.85, "top" : 3.58, "height" : 2.9, "width" : 13.11} -->
 
 ---
 
@@ -104,8 +109,9 @@ deployment-1/
 ├── pods.yaml
 └── service.yaml
 ```
+<!-- {"left" : 0.85, "top" : 3.53, "height" : 1.44, "width" : 3.94} -->
 
-<img src="../../assets/images/kubernetes/combined-yaml-config.png" style="width:40%;float:right;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+<img src="../../assets/images/kubernetes/combined-yaml-config.png" style="width:40%;float:right;" /><!-- {"left" : 11.27, "top" : 3.02, "height" : 4.9, "width" : 5.45} -->
 
 * Put related object definitions into a single file
 
@@ -135,6 +141,9 @@ deployment-1/
 | Alpine  | 5.6 MB  | A minimal Docker image based on Alpine Linux    |
 | Ubuntu  | 70 MB   | Base ubuntu image                               |
 
+<!-- {"left" : 1.31, "top" : 6.52, "height" : 3.54, "width" : 14.88} -->
+
+
 ---
 
 ## Efficient `kubectl apply`
@@ -145,12 +154,15 @@ deployment-1/
 $   kubectl  apply -f file1.yaml
 $   kubectl  apply -f file2.yaml
 ```
+<!-- {"left" : 0.85, "top" : 2.64, "height" : 0.86, "width" : 6.11} -->
 
 * We can apply all files in a directory
 
 ```bash
 $   kubectl  apply -f  <dir>
 ```
+<!-- {"left" : 0.85, "top" : 4.46, "height" : 0.57, "width" : 5.44} -->
+
 
 ---
 
@@ -158,6 +170,7 @@ $   kubectl  apply -f  <dir>
 
 * First install metrics
 
+<br/>
 ```bash
 $   kubectl apply -f \
 https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
@@ -168,30 +181,37 @@ $   minikube addons enable metrics-server
 # see metrics server is running
 $  kubectl get pods --all-namespaces | grep metrics-server
 ```
-
+<!-- {"left" : 0.85, "top" : 2.8, "height" : 2.61, "width" : 15.78} -->
 
 * Use **`kubectl top`** command
 
+<br/>
 ```bash
 # to mnonitor node utilzation
 $   kubectl  top   node
 ```
+<!-- {"left" : 0.85, "top" : 7.03, "height" : 0.99, "width" : 6.45} -->
 
 ```text
 NAME       CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
 minikube   782m         4%     1009Mi          3%        
 ```
+<!-- {"left" : 0.85, "top" : 8.2, "height" : 0.92, "width" : 10.98} -->
+
 
 ```bash
 # to see pod usage
 $   kubectl  top   pod
 ```
+<!-- {"left" : 0.85, "top" : 9.32, "height" : 0.86, "width" : 4.44} -->
+
 
 * Watch the top output periodically, use **`watch`** command
 
 ```bash
 $   watch  kubectl top node -n 5
 ```
+<!-- {"left" : 0.85, "top" : 11.6, "height" : 0.57, "width" : 6.11} -->
 
 ---
 
@@ -205,6 +225,7 @@ $   watch  kubectl top node -n 5
 
 * Namespaces allow segmenting resources, access and permissions
 
+<br/>
 ```bash
 # create namespace
 $   kubectl create namespace test
@@ -215,6 +236,8 @@ $   kubectl apply -f pod.yaml --namespace=test
 # get pods
 $   kubectl get pods --namespace=test
 ```
+<!-- {"left" : 0.85, "top" : 3.62, "height" : 2.79, "width" : 9.01} -->
+
 
 * Use [kubens](https://github.com/ahmetb/kubectx) utilities to manage and switch namespaces
 
@@ -242,12 +265,14 @@ $   kubectl get pods --namespace=test
 ```bash
 $   kubectl scale deployment deployment1 --replicas=10
 ```
+<!-- {"left" : 0.85, "top" : 3.3, "height" : 0.57, "width" : 9.78} -->
 
 * Recommended it to do it via config file, so we can track changes via version control
 
 ```bash
 $   kubectl apply -f deploy2.yaml
 ```
+<!-- {"left" : 0.85, "top" : 5.58, "height" : 0.57, "width" : 6.28} -->
 
 ```yaml
 apiVersion: apps/v1
@@ -268,6 +293,8 @@ spec:
         - name: nginx
           image: nginx
 ```
+<!-- {"left" : 0.85, "top" : 6.47, "height" : 5.24, "width" : 4.78} -->
+
 
 ---
 
@@ -305,13 +332,16 @@ spec:
     ports:
     - containerPort: 80
 ```
+<!-- {"left" : 0.85, "top" : 3.55, "height" : 4.07, "width" : 5.28} -->
+
 
 ---
 
 ## Use Health Checks
 
-<img src="../../assets/images/kubernetes/3rd-party/google-kubernetes-probe-readiness6ktf.gif" style="width:30%;float:right;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
-<img src="../../assets/images/kubernetes/3rd-party/google-kubernetes-probe-livenessae14.gif" style="width:30%;float:right;clear:both;" /><!-- {"left" : 3.65, "top" : 4.84, "height" : 2.42, "width" : 2.95} -->
+<img src="../../assets/images/kubernetes/3rd-party/google-kubernetes-probe-readiness6ktf.gif" style="width:30%;float:right;" /><!-- {"left" : 13.28, "top" : 0.45, "height" : 3.17, "width" : 3.72} -->
+
+<img src="../../assets/images/kubernetes/3rd-party/google-kubernetes-probe-livenessae14.gif" style="width:30%;float:right;clear:both;" /> <!-- {"left" : 13.31, "top" : 3.83, "height" : 3.11, "width" : 3.64} -->
 
 * Kubernetes has built-in health checks
 
@@ -354,14 +384,16 @@ spec:
         memory: "4Gi"
         cpu: "500m"
 ```
+<!-- {"left" : 0.85, "top" : 5.11, "height" : 4.65, "width" : 4.44} -->
 
 ---
 
 ## Wrap up and Q&A
 
-<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 8.56, "top" : 1.21, "height" : 1.15, "width" : 1.55} -->
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 6.53, "top" : 2.66, "height" : 2.52, "width" : 3.79} -->
+<img src="../../assets/images/icons/q-and-a-1.png" style="width:20%;float:right;" /><!-- {"left" : 13.24, "top" : 0.81, "height" : 2.61, "width" : 3.51} -->
 
 * What are some of the best practices you can share with the class
 
 * Any questions?
+
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.55, "top" : 5.4, "height" : 5.59, "width" : 8.4} -->
