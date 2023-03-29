@@ -1,6 +1,10 @@
-# Computing instances
+# Computing in the Cloud
+
+---
 
 # Virtual machines
+
+---
 
 ## Amazon EC2
 
@@ -102,6 +106,7 @@
 * In other cases, horizontal scalability in **clusters** is the way to go
 
 ![](../artwork/06-pexels-lisa-fotios-1053914.jpg)
+
 ---        
 
 ## General purpose
@@ -165,16 +170,15 @@
 * Please note that this means that the metadata is open to all users on that machine
   * Is this the behavior you would expect?
 
-```shell script
+```bash
 $ curl http://169.254.169.254/latest/meta-data/
 $ GET http://169.254.169.254/latest/meta-data/
-
 ```
 
 * All metadata is returned as text (content type text/plain).
 
 ![](../artwork/06-scale-10.png)
-    
+
 ---
 
 ## Adding user data
@@ -190,13 +194,13 @@ $ GET http://169.254.169.254/latest/meta-data/
 ## Adding user data
 
 ![](../artwork/06-scale-11.png)
-    
+
 ---
 
 ## Retrieving User Data
 
 ![](../artwork/06-scale-12.png)
-    
+
 ---
 
 ## Amazon EC2 Purchasing Options
@@ -205,6 +209,7 @@ $ GET http://169.254.169.254/latest/meta-data/
 
 * Pricing is by the hour or by the second depending on instance type (Linux is per-second)
 * [https://aws.amazon.com/ec2/pricing/](https://aws.amazon.com/ec2/pricing/)
+
 ---
 
 ## Quiz
@@ -265,6 +270,7 @@ Notes:
 * Instance Metadata and User Data can be retrieved from within the instance via a special URL. Similar information can be extracted by using the API via the CLI or an SDK.
 
 ---
+
 ## Quiz
 
 * Individual instances are provisioned
@@ -275,6 +281,7 @@ Notes:
 Notes:
 
 * B.
+
 ---
 
 ## Virtual machines on Azure
@@ -332,6 +339,7 @@ Notes:
 | Reserved Virtual Machine Instances | The Reserved Virtual Machine Instances (RI) option is an advance purchase of a virtual machine for one or three years in a specified region. The commitment is made up front, and in return, you get up to 72% price savings compared to pay-as-you-go pricing. RIs are flexible and can easily be exchanged or returned for an early termination fee. Prefer this option if the VM has to run continuously, or you need budget predictability, and you can commit to using the VM for at least a year. |
 
 * VM payment is by the second
+
 ---
 
 ## Options to create VM
@@ -410,6 +418,7 @@ Notes:
   operating systems.
 
 ---
+
 ## GCE pricing
 
 * Compute Engine offers customer friendly pricing
@@ -444,7 +453,7 @@ Notes:
   virtual CPUs and the amount of memory, by using a set of predefined machine types
   or by creating your own custom machine types.
 
----         
+---
 
 ## Scaling with Compute Engine
 
@@ -502,7 +511,6 @@ Notes:
 
 ---
 
-
 ## Quiz
 
 * Data on local SSDs persists through live migration events
@@ -514,7 +522,7 @@ Notes:
 * A.
 * Data on your local SSDs persists through live migration events. If Compute Engine migrates an instance with a local SSD, Compute Engine copies data from your local SSD to the new instance with only a short period of decreased performance.
 
---- 
+---
 
 ## Quiz
 
@@ -544,7 +552,7 @@ Notes:
 * A.
 * Local SSDs are physically attached to the server that hosts your virtual machine instance. Local SSDs have higher throughput and lower latency than standard persistent disks or SSD persistent disks. The data that you store on a local SSD persists only until you stop or delete the instance. Each local SSD is 375 GB in size, but you can attach up to eight local SSD devices for 3 TB of total local SSD storage space per instance.
 
---- 
+---
 
 ## Quiz
 
@@ -559,6 +567,10 @@ Notes:
 
 * A.
 * Local SSDs are physically attached to the server that hosts your virtual machine instance. Local SSDs have higher throughput and lower latency than standard persistent disks or SSD persistent disks. The data that you store on a local SSD persists only until you stop or delete the instance. Each local SSD is 375 GB in size, but you can attach up to eight local SSD devices for 3 TB of total local SSD storage space per instance.
+
+---
+
+# Servless Compute
 
 ---
 
@@ -588,7 +600,6 @@ Notes:
 
 ## Why AWS Lambda?
 
-
 ![](../artwork/09-arch-12.png)
 
 
@@ -611,7 +622,7 @@ In a “traditional” environment, the complicated solution would include provi
 
 ![](../artwork/09-pexels-picjumbocom-196644.jpg)
 
----    
+---
 
 ## Why AWS Lambda?
 
@@ -620,7 +631,6 @@ In a “traditional” environment, the complicated solution would include provi
 ---
 
 ## AWS Lambda: Overview
-
 
 ![](../artwork/09-arch-13.png)
 
@@ -685,7 +695,7 @@ Notes:
 ## AWS Lambda Push Event Model Example
 
 ![](../artwork/09-arch-16.png)
- 
+
 ---
 
 ## Pull Event Model
@@ -733,7 +743,7 @@ Notes:
 * C.
 * Lambda scales out automatically - each time your function is triggered, a new, separate instance of that function is started. There are limits, but these can be adjusted on request.
 
----    
+---
 
 ## Quiz
 

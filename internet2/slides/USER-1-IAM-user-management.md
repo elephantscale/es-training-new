@@ -3,12 +3,14 @@
 ---
 
 ## IAM - Identity and Access Management
+
 * Common cloud ideas
 ![](../artwork/02-iam-01.png)
+
 ---
 
-
 ## IAM - Identity and Access Management
+
 * Identify, authenticate, and authorize individuals who will be utilizing IT resources
 * IAM, as a term, is used across clouds
 * In each cloud, IAM is implemented with a different structure
@@ -23,7 +25,6 @@
 ![](../artwork/02-iam-02.png)
 
 * "Customer" can be a university, a researcher, and the data may be survey data
----
 
 Notes:
 
@@ -40,11 +41,14 @@ Notes:
 ---
 
 ## Physical security
+
 * 24/7 trained security staff
 * Data centers in nondescript and undisclosed facilities
 * Two-factor authentication for authorized staff
 * Authorization for data center access
 * Separate logical and physical access
+
+---
 
 ## Physical security video
 
@@ -67,7 +71,9 @@ Notes:
 # IAM According to AWS
 
 ---
+
 ## AWS IAM  
+
 ![](../artwork/02-iam-05.png)
 
 ---
@@ -93,15 +99,19 @@ Notes:
 ---
 
 ## AWS IAM Command-Line Authentication
+
 ![](../artwork/02-iam-07.png)
 
 ---
 
 ## AWS IAM User Management - Groups
+
 ![](../artwork/02-iam-08.png)
 
 ---
+
 ## AWS IAM Authorization
+
 ![](../artwork/02-iam-09.png)
 
 Notes:
@@ -131,7 +141,9 @@ Notes:
 ```
 
 ---
+
 ## AWS IAM Policy Assignment
+
 ![](../artwork/02-iam-10.png)
 * IAM Policies are assigned to IAM users and Groups. 
 * These users are bound by the permissions defined in the IAM Policy.
@@ -139,6 +151,7 @@ Notes:
 ---
 
 ## AWS IAM Policy Assignment
+
 ![](../artwork/02-iam-11.png)
 * IAM Policies may also be assigned to an IAM Role.
 * An IAM role is similar to a user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS. 
@@ -149,11 +162,13 @@ Notes:
 ---
 
 ## AWS IAM Roles
+
 * An IAM role uses a policy.
 * An IAM role has no associated credentials.
 * IAM users, applications, and services may assume IAM roles.
 
 ---
+
 ## AWS IAM Policy Assignment
 
 ![](../artwork/02-iam-12.png)
@@ -177,6 +192,7 @@ Notes:
 * Step 4: The application interacts with the Amazon S3 bucket specified in the PythonInEC2AccessS3 role.
 
 ---
+
 ## AWS IAM Roles – Assume Role
 
 ![](../artwork/02-iam-14.png)
@@ -196,6 +212,7 @@ Notes:
 ---
 
 ## Temporary Security Credentials (AWS STS)
+
 ![](../artwork/02-iam-15.png)
 
 Notes:
@@ -205,18 +222,26 @@ Notes:
 ---
 
 ## AWS IAM Authentication and Authorization
+
 ![](../artwork/02-iam-16.png)
 
+---
+
 ## IAM Best Practices
+
 * Delete AWS account (root) access keys.
 * Create individual IAM users.
 * Use groups to assign permissions to IAM users.
 * Grant least privilege.
 * Configure a strong password policy.
 * Enable MFA for privileged users.
+
 ![](../artwork/02-iam-17.png)
 
+---
+
 ## Authenticator apps
+
 ![](../artwork/02-iam-18.jpg)
 ![](../artwork/02-iam-19.png)
 
@@ -245,6 +270,7 @@ Notes:
 ---
 
 ## Quiz
+
 * Which of the following are managed using IAM (choose 2)
 
     * A) Multi-Factor Authentication
@@ -279,7 +305,11 @@ Notes:
 
 A
 
+---
+
 # IAM According to GCP
+
+---
 
 ## GCP Resource Manager
 
@@ -300,6 +330,7 @@ settings.
 resource containers.
 
 ---
+
 ## GCP objects
 
 * Objects are the various resources members can access and use on GCP.
@@ -313,10 +344,11 @@ resource containers.
     * Resources
     * Members
     * Roles
-    
+
 ---
-    
+
 ## GCP objects
+
 ![](../artwork/02-iam-20.png)    
 
 Notes:
@@ -327,6 +359,7 @@ Notes:
 ---
 
 ## Projects
+
 ![](../artwork/02-iam-21.png)
 
 Notes:
@@ -336,6 +369,7 @@ Notes:
     * Track resource and quota usage.
     * Assign projects to different billing accounts.
     * Assign manager permissions and credentials and selectively enable specific services and APIs at the project level
+
 ---
 
 ## Members
@@ -366,8 +400,8 @@ Cloud Identity is available in both a free and a premium edition.
 
 ---
 
-## Member roles 
-   
+## Member roles
+
 * Member roles are collections of permissions   
     * Permissions are given to members by granting roles.
     * Roles define which permissions are granted.
@@ -387,6 +421,7 @@ Cloud IAM roles to the new member using Cloud IAM policies.
 ---
 
 ## Service accounts
+
 * Service accounts:
     * Control server-to-server interactions:
     * Used to authenticate from one service to another
@@ -409,10 +444,10 @@ from cloud storage.
 * Service accounts are identified with a Google-managed email address in the
 gserviceaccount.com domain.
   
---- 
+---
 
 ## Labels in Resource Manager
-   
+
 * Labels in Resource Manager help you organize your Google Cloud instances   
     * Team or cost center labels
     * Component labels
@@ -441,8 +476,6 @@ virtually identical! (VM labels)
 
 ---
 
-    
-    
 ## Labs for GCP IAM
 
 * Cloud IAM: Qwik Start
@@ -455,6 +488,7 @@ virtually identical! (VM labels)
 ## IAM Roles in GCP
 
 ![](../artwork/02-iam-24.png)
+
 Notes:
 
 * There are three kinds of roles in Cloud IAM:
@@ -468,14 +502,18 @@ Each GCP service offers a set of predefined roles.
 resources of your choice.
 
 ---
+
 ## IAM primitive roles
+
 ![](../artwork/02-iam-25.png)
+
 * IAM primitive roles are applied at the project level
 * Primitive roles offer fixed, coarse-grained levels of access
 
 ---
 
 ## IAM primitive roles
+
 ![](../artwork/02-iam-26.png)
 
 * Primitive roles apply across all GCP services in a project
@@ -495,7 +533,9 @@ well as all the editor role permissions plus the read-only access from the
 viewer role.
 
 ---
+
 ## IAM predefined roles
+
 * Predefined roles are designed to map to job functions: Compute Network Admin, Security Reviewer, etc.
 
 ![](../artwork/02-iam-27.png)
@@ -506,15 +546,18 @@ Security Reviewer, Storage Admin, etc.
 * Predefined roles are managed by Google Cloud. So if a new feature or service
 is added in the future, the appropriate permissions will be added to any
 predefined role that requires them.  
+
 ---
 
 ## IAM predefined roles are more fine-grained
 
 * IAM predefined roles offer more fine-grained permissions on particular services
+
 ![](../artwork/02-iam-28.png)
+
 ---
 
-## System event audit logs 
+## System event audit logs
 
 * System event audit logs record activity that
    modifies the configuration of your resources
@@ -533,11 +576,14 @@ you cannot configure or disable them. There is no charge for your System
 Event audit logs, however there are logging usage limits.
 
 ---
+
 ## IAM Policies
 
 * A Cloud IAM policy is used to specify access control policies for Google Cloud resources.
 * A policy consists of a list of bindings
 * A binding binds a list of members to a role
+
+---
 
 ## Resource policies are a UNION
 
@@ -557,13 +603,15 @@ Event audit logs, however there are logging usage limits.
   
 ---
 
-## Three types of recommendations 
+## Three types of recommendations
 
 * Recommender gives you three types of recommendations
     * Revoke an existing role
     * Replace an existing role
     * Add permissions to an existing role
-    
+
+---
+
 ## Apply recommender
 
 * View existing roles by visiting the IAM page
@@ -575,7 +623,7 @@ Event audit logs, however there are logging usage limits.
 
 ![](../artwork/02-iam-29.png)    
 
----          
+---
 
 ## IAM audit logs
 
@@ -591,8 +639,8 @@ Event audit logs, however there are logging usage limits.
     * Advanced log viewer
     * gcloud command-line tool
     * Audit Logs API
-          
---- 
+
+---
 
 ## IAM best practices
 
@@ -635,6 +683,7 @@ G Suite or Cloud Identity admin.
 * Explore audit logs to Cloud Storage to store your logs for long periods of time
 
 ![](../artwork/pexels-suzy-hazelwood-1226398.jpg)
+
 ---
 
 ## Quiz
@@ -699,6 +748,7 @@ A)
 # IAM According to Azure
 
 ---
+
 ## Azure AD
 
 * Azure Active Directory (Azure AD)
@@ -706,13 +756,14 @@ A)
     * type of user
     * role assignments
     * ownership of individual objects.
-    
+
 Notes:
 
 * [Learning about Azure AD](https://docs.microsoft.com/en-us/learn/paths/az-104-manage-identities-governance/)
 * https://docs.microsoft.com/en-us/learn/paths/az-104-manage-identities-governance
 
 ---
+
 ## Azure account types
  
 * Administrators 
@@ -721,8 +772,9 @@ Notes:
     * in the Azure AD organization
 * Guest users
     * the most restricted level of access. 
-    
+
 ---
+
 ## Permissions and roles
 
 * Azure AD uses permissions to help you control the access rights a user or group is granted
@@ -730,9 +782,9 @@ Notes:
 * Azure AD has many roles with different permissions attached to them. 
 * When a user is assigned a specific role, they inherit permissions from that role. 
     * For example, a user assigned to the User Administrator role can create and delete user accounts.    
-   
+
 ---
-    
+
 ## Administrator roles
 
 * Elevated access to control who is allowed to do what. 
@@ -769,13 +821,15 @@ Notes:
 ## Add user accounts
 
 * Azure
-```shell script
+
+```bash
 # create a new user
 az ad user create
 ```
 
 * PowerShell
-```shell script
+
+```shell
 # create a new user
 New-AzureADUser
 ```
@@ -783,8 +837,10 @@ New-AzureADUser
 ---
 
 ## Bulk create members
+
 * PowerShell
-```shell script
+
+```shell
 $invitations = import-csv c:\bulkinvite\invitations.csv
 
 $messageInfo = New-Object Microsoft.Open.MSGraph.Model.InvitedUserMessageInfo
@@ -806,16 +862,19 @@ foreach ($email in $invitations)
 ## Delete user accounts
 
 * Azure
-```shell script
+
+```bash
 # delete a user
 az ad user delete.
 ```
 
 * PowerShell
-```shell script
+
+```shell
 # delete a user
 Remove-AzureADUser
 ```
+
 ---
 
 ## Quiz
@@ -843,7 +902,9 @@ Notes:
 * A)
 
 ---
+
 ## Azure AD is not Windows Server AD
+
 * Azure AD not intended as a complete replacement for an on-premises Active Directory
 * If you're already using a Windows AD server, you can connect it to Azure AD to extend your directory into Azure
 * You can use the same credentials to access local and cloud-based resources.
@@ -852,6 +913,7 @@ Notes:
 ---
 
 ## Directories, subscriptions, and users
+
 * All these subscriptions can use Azure AD
     * Microsoft Azure
     * Microsoft 365
@@ -861,9 +923,11 @@ Notes:
 * **Subscriptions** in Azure are both 
     * billing entity
     * security boundary
+
 ---
 
 ## Directories, subscriptions, and users
+
 * A subscription is associated with a single Azure AD directory. 
 * Multiple subscriptions can trust the same directory, but a subscription can only trust one directory.
 * Users and groups can be added to multiple subscriptions
@@ -871,42 +935,49 @@ Notes:
 * The user in a subscription must be known to the associated directory as shown in the following image.
 
 ---
+
 ## Directories, subscriptions, and users
+
 ![](../artwork/02-iam-31.png)
 
 ---
+
 ## Switching directory
+
 * If you belong to multiple directories
     * you can switch the current directory
     * through the Directory + subscription button in the Azure portal header.
-    
+
 ![](../artwork/02-iam-32.png)    
 
 ---
+
 ## Quiz
 
 * An Azure subscription is a _______________.
     * A) billing entity and security boundary
     * B) container that holds users
     * C) monthly charge for Azure services
-    
+
 Notes:
 
 * A)
 
 ---
+
 ## Quiz
-    
+
 * Which of the following best describes the relationship between a subscription and an Azure AD directory?
     * A) An Azure AD directory has a 1:1 relationship with a subscription.
     * B) An Azure AD directory can be associated with multiple subscriptions, but a subscription is always tied to a single directory.
     * C) An Azure AD directory is associated with a single subscription, but a subscription can trust multiple directories.
-    
+
 Notes: 
 
 B)
 
 ---
+
 ## Quiz
     
 * A organization can have more than one Azure AD directory.
@@ -918,7 +989,7 @@ Notes:
 
 A)
 
----        
+---
 
 ## Built-in roles for Azure Resources
 
@@ -936,10 +1007,12 @@ A)
 * A set of properties defined in a JavaScript Object Notation (JSON) file
 * Try this
 
-```shell script
+```shell
 Get-AzureRmRoleDefinition -Name Owner
 ```
+
 * You will get this
+
 ```text
 Name             : Owner
 Id               : 8e3af657-a8ff-443c-a75c-2fe8c4bcb635
@@ -953,9 +1026,12 @@ AssignableScopes : {/}
 ```
 
 ---
+
 ## RBAC: role-based access control
+
 * Contributor role definition in JSON format
-```text
+
+```json
 {
   "Name": "Contributor",
   "Id": "b24988ac-6180-42a0-ab88-20f7382dd24c",
@@ -984,12 +1060,6 @@ AssignableScopes : {/}
 * Let us describe some patterns for roles and policies for a typical research lab
 
 ---
-
-## Congratulations!
-
-* You have finished the IAM overview
-
----     
 
 ## Congrats on completion
 

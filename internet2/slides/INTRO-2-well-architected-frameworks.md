@@ -1,4 +1,6 @@
-# Well-architected frameworks (recorded)
+# Well-architected frameworks
+
+---
 
 ## Well-Architected Framework
 
@@ -14,6 +16,7 @@
 * It asks, "Does your infrastructure follow best practices?"
 
 ---
+
 ## The Well-Architected Framework
 
 * The Well-Architected Framework does not provide:
@@ -24,7 +27,7 @@
     * Questions centered on critically understanding architectural decisions
     * Services and solutions relevant to each question
     * References to relevant resources
-    
+
 ---
 
 ## Pillars Of The Well-Architected Framework
@@ -43,20 +46,20 @@
 
 ![](../artwork/09-arch-03.png)
 
----    
+---
 
 ## Performance Efficiency
 
 ![](../artwork/09-arch-04.png)
 
----    
+---
 
 ## Cost Optimization
 
 
 ![](../artwork/09-arch-05.png)
 
----    
+---
 
 ## Well-Architected Design Principles
 
@@ -75,20 +78,20 @@
 
 ![](../artwork/09-arch-06.png)
 
----    
+---
 
 ## Design Principle: Test Systems At Production Scale
 
 ![](../artwork/09-arch-07.png)
 
----    
+---
 
 ## Design Principle: Lower the Risk Of Architectural Change
 
 
 ![](../artwork/09-arch-08.png)
 
----    
+---
 
 ## Design Principle: Automate To Make Experimentation Easier
 

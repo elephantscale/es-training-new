@@ -1,5 +1,7 @@
 # Elasticity, and scaling
 
+---
+
 ## Elasticity, and scaling
 
 * In this section, we are going to discuss various ways of scaling
@@ -10,8 +12,9 @@
 
 ---
 
-        
 # Auto scaling groups
+
+---
 
 ## Auto scaling group = ASG
 
@@ -55,7 +58,7 @@ Notes:
     * Security groups
     * Block device mapping
     * User data
-    
+
 ![](../artwork/06-scale-19.png)
 
 Notes:
@@ -84,7 +87,7 @@ Notes:
 * You can create collections of EC2 instances, called Auto Scaling groups. You can specify the minimum number of instances in each Auto Scaling group, and Auto Scaling ensures that your group never goes below this size. You can specify the maximum number of instances in each Auto Scaling group, and Auto Scaling ensures that your group never goes above this size. If you specify the desired capacity, either when you create the group or at any time thereafter, Auto Scaling ensures that your group has this many instances. If you specify scaling policies, then Auto Scaling can launch or terminate instances as demand on your application increases or decreases.
 
 ---
- 
+
 ## Dynamic Scaling
 
 * You can create a scaling policy that uses CloudWatch alarms to determine:
@@ -93,9 +96,9 @@ Notes:
 * You can use alarms to monitor:
     * Any of the metrics that AWS services send to Amazon CloudWatch.
     * Your own custom metrics.
-    
----    
- 
+
+---
+
 ## Auto Scaling Basic Lifecycle
 
 
@@ -189,8 +192,7 @@ Notes:
 
 ---
 
-
-##  Azure Autoscale
+## Azure Autoscale
 
 * Dynamically scale apps to meet changing demand
 * Key scenarios:
@@ -200,17 +202,17 @@ Notes:
     * Anticipate load with different schedules
     * Save money by not wasting servers
     * Dev-test at day, shut down at night
-    
+
 ---
 
-## Scale by metric 
+## Scale by metric
 
 * Autoscale is a built-in feature of 
     * Cloud Services
     * Mobile Services
     * Virtual Machines
     * Websites 
-     
+
 * Example
     * Web app that handles millions of requests during the day and none at night.
          
@@ -218,7 +220,7 @@ Notes:
 * Collect logging data with the diagnostics library
 * Enable diagnostics in the Azure portal
 
---- 
+---
 
 ## Examine the current pricing
 
@@ -249,7 +251,7 @@ Notes:
 
 ---
 
-## Autoscaling in GCP    
+## Autoscaling in GCP
                   
 * Available as part of the Compute Engine API
 * Used to automatically scale number of instances in a managed instance group based on workload
@@ -258,7 +260,7 @@ Notes:
 * Autoscalers can be used with zone-based managed instance groups or regional managed instance groups 
 * Autoscaler is fast, typically ~ 1 min moving window
 
----        
+---
 
 ## How Autoscaling Works
 
@@ -292,7 +294,7 @@ Notes:
 
 * The autoscaler will collect information based on the policy, compare it to your desired target utilization, and determine if it needs to perform scaling.The target utilization level is the level at which you want to maintain your virtual machine instances. For example, if you scale based on CPU utilization, you can set your target utilization level at 75% and the autoscaler will maintain the CPU utilization of the specified group of instances at or close to 75%. The utilization level for each metric is interpreted differently based on the autoscaling policy.
 
-* For more information on the autoscaler, see: https://cloud.google.com/compute/docs/autoscaler/. 
+* For more information on the autoscaler, see: https://cloud.google.com/compute/docs/autoscaler/.
 
 ---
 
@@ -301,7 +303,7 @@ Notes:
 * Autoscaler allows multiple policies (up to 5)
 * Autoscaler handles multiple policies by calculating recommended number of virtual machines for each policy and picking policy that leaves the largest number of virtual machines in the group
     * Ensures enough virtual machines to handle application workloads and allows you to scale applications that have multiple possible bottlenecks
-    
+
 ---
 
 ## Policy Example: CPU Utilization
@@ -335,7 +337,7 @@ Notes:
 ![](../artwork/06-scale-27.png)
 
 ---
-     
+
 ## Quiz
 
 * How does the autoscaler resolve conflicts between multiple scaling policies?
@@ -367,7 +369,7 @@ Notes:
 * The percentage utilization that an additional VM contributes depends on the size of the group.
 
 ---
-    
+
 ## Quiz
 
 * Which statement is true of autoscaling custom metrics?
@@ -382,7 +384,6 @@ Notes:
 * C.
 
 ---
-
 
 # API
 
@@ -401,7 +402,7 @@ Notes:
 * Not too long ago, having a digital presence just meant you had a website. At the time, success was expressed in simple terms, such as the number of visits to the site or the number of users registered over months or years.
 
 * The relatively slow pace of change of the web channel allowed an IT organization to plan and execute changes to backend systems. The pace allowed them to keep up with demand.    
-         
+
 ---
 
 ## The gap
@@ -420,7 +421,7 @@ Notes:
 * Today, most companies embrace multiple methods of interaction as part of their digital strategy.
 
 * In addition to traditional web and mobile applications, companies are finding new channels for users to interact with data and services, powered by smart connected devices.
-         
+
 ---
 
 ## New architecture
@@ -509,7 +510,7 @@ Notes:
 
 ---
 
-## How AWS API Gateway Works            
+## How AWS API Gateway Works
 
 ![](../artwork/06-scale-35.png)
 
@@ -519,7 +520,7 @@ Notes:
 
 * Private integrations with AWS ELB & AWS Cloud Map
     * Route requests to private resources in your VPC, behind private ALBs, private NLBs
-    
+
 * Resiliency
     * Throttling based on number of requests per second
 * API creation
@@ -548,11 +549,10 @@ Notes:
 * Security
     * OAuth 2.0 user authorization
     * Integration with Azure Active Directory.
-    
----
-    
-## Building API on Azure
 
+---
+
+## Building API on Azure
 
 ![](../artwork/06-scale-36.png)
 
@@ -560,7 +560,9 @@ Notes:
 
 # Hybrid clouds
 
-## Hybrid Clouds 
+---
+
+## Hybrid Clouds
 
 * This, and more...
 
@@ -568,7 +570,7 @@ Notes:
 
 ---
 
-## Hybrid environment wishlist 
+## Hybrid environment wishlist
 
 * This may or may not be your goal though
             
@@ -586,7 +588,7 @@ Notes:
 
 ![](../artwork/06-scale-40.png)
 
---- 
+---
 
 ## Enabler
 
@@ -594,20 +596,20 @@ Notes:
 
 ![](../artwork/06-scale-41.png)
 
---- 
+---
        
 ## Azure Stack
 
 ![](../artwork/06-scale-42.png)
 
-
----         
+---
 
 ## Azure Stack offerings
 
 ![](../artwork/06-scale-43.png)
 
----         
+---
+
 ## AWS Outposts
 
 * Fully managed service
@@ -635,7 +637,4 @@ Notes:
 
 ## Congrats on completion
 
-
 ![](../artwork/congrats.png)
-
----

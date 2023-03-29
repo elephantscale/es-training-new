@@ -4,20 +4,42 @@
 ## ============== updated upto here ==============
 
 About-Internet2-Class.md
+
 INTRO-1-Introducing-the-cloud-and-the-cloud-providers.md
-exit
-
-
-INTRO-2-well-architected-frameworks.md
 
 USER-1-IAM-user-management.md
 
+COMPUTE-1-Virtual-machines-and-Serverless.md
+COMPUTE-2-Scaling-and-Elasticity.md
+
 STORAGE-1-Cloud-storage-and-databases.md
+STORAGE-2-NoSQL.md
+
+DOCKER-1-Container_Intro.md  
+DOCKER-2-Docker_Intro.md  
+DOCKER-3-Docker_Containers_and_Images.md  
+DOCKER-4-Docker_Development.md  
+DOCKER-5-Docker_Ops.md
+
+Kubernetes-1-Intro.md  
+Kubernetes-2-Essentials.md  
+Kubernetes-3-Resources.md  
+Kubernetes-4-Deployments.md  
+Kubernetes-5-Misc.md  
+Kubernetes-6-Best-Practices.md
+
+
+AUDIT-1-Cost-Management.md
+INTRO-2-well-architected-frameworks.md
+
+exit
+
+
+
+
 
 NETWORKING-1-Networking-and-data-movement.md
 
-COMPUTE-1-Virtual-machines-and-Serverless.md
-COMPUTE-2-Scaling-and-Elasticity.md
 
 CONTAINER-1-Containers-and-Kubernetes.md
 
