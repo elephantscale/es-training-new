@@ -3,11 +3,13 @@
 ---
 
 ## Our plan
+
 * Common storage concepts
 * NoSQL intro
 * AWS, Azure, GCP specifics
 
---- 
+---
+
 ## Storage
 
 | Services       | AWS                                | Azure                      | GCP                                    |
@@ -37,6 +39,7 @@ Notes:
 | Peering         | Direct Connect                     | ExpressRoute             | Google Cloud Interconnect   |
 | DNS             | Amazon Route 53                    | Azure DNS                | Google Cloud DNS            |
 
+---
 
 ## Databases
 
@@ -55,7 +58,9 @@ Notes:
 | Maturity                        | Great for developers           | Aggressive growth                             |
 | Service portfolio               | Integration with open source   | Attractive pricing models                     |
 | Presence (market and geography) | Private datacenter integration | Best for AI and machine learning applications |
+
 ---
+
 ## Amazon Simple Storage Service (S3)
 
 * Blob storage for the Internet 
@@ -67,6 +72,7 @@ Notes:
 ![](../artwork/03-storage-06.png)
 
 ---
+
 ## S3 specs
 
 * Unlimited number of objects in a bucket, 100 buckets per account
@@ -90,15 +96,18 @@ Notes:
 * UCB found that data integrity in drive was rather poor. Drive != S3, but it is indicative of cloud storage issues.
 * Basically, when your data gets big, it is really really hard to make it robust. Bit rot is very real and worse when sunspots are active...
 * So, how do you build reliable systems out of unreliable components?
+
 ---
 
 ## S3 storage classes
+
 ![](../artwork/03-storage-05.png)
 
 * Note from Patrick Schmitz:
     * Note SLA for middle columns allows for >87 hours a year of unavailability (1% of the year). If that happens before a publication deadline folks will be really unhappy. Plan ahead!!!
-    
+
 ---
+
 ## Common S3 use cases
 
 * Storage and Backup 
@@ -120,6 +129,7 @@ Notes:
 ---
 
 ## Amazon S3 Pricing
+
 * Pay only for what you use
 * No minimum fee
 * Prices based on location of your Amazon S3 bucket
@@ -129,6 +139,7 @@ Notes:
     * Request Pricing
     * Data Transfer Pricing: data transferred out of Amazon S3
 * https://calculator.aws/#/createCalculator
+
 ---
 
 ## Amazon S3 Concepts
@@ -153,12 +164,14 @@ Notes:
 ---
 
 ## Object Keys
- 
+
 * An object key is the unique identifier for an object in a bucket
 ![](../artwork/03-storage-08.png)
 
 ---
+
 ## Amazon S3 Security
+
 * You can control access to buckets and objects with:
     * Access Control Lists (ACLs)
     * Bucket policies
@@ -167,7 +180,9 @@ Notes:
 * You can encrypt data using AWS SDKs.
 
 ---
+
 ## Amazon S3 Versioning
+
 * Protects from accidental overwrites and deletes with no performance penalty.
 * Generates a new version with every upload.
 * Allows easily retrieval of deleted objects or roll back to previous versions.
@@ -209,6 +224,7 @@ When analyzing the storage costs of the above operations, please note that the 4
 ---
 
 ## Amazon S3 Storage Classes
+
 ![](../artwork/03-storage-09.png)    
 
 ---
@@ -225,6 +241,7 @@ When analyzing the storage costs of the above operations, please note that the 4
 Notes:
 
 A.
+
 ---
 
 ## Quiz
@@ -238,6 +255,7 @@ Notes:
 B.
 
 ---
+
 ## Quiz
 
 * Why is a bucket policy necessary?
@@ -250,7 +268,8 @@ Notes:
 
 B.
 
----    
+---
+
 ## Azure blob storage
 
 * To begin using Azure Storage, first create an Azure Storage account
@@ -261,6 +280,8 @@ B.
     
 ![](../artwork/03-storage-10.png)    
 
+---
+
 ## Azure blob use cases
 
 * Serving images or documents directly to a browser.
@@ -270,19 +291,22 @@ B.
 * Storing data for analysis by an on-premises or Azure-hosted service.
 * Storing up to 8 TB of data for virtual machines.
 
+---
+
 ## Quiz
 
 * Are there any differences in the Azure vs AWS blob storage uses cases
 
     * A. Yes
     * B. No
-    
+
 ---
 Notes:
 
 B. No - I could not find any
 
 ---
+
 ## Azure blob access tiers
 
 * **Hot access tier**
@@ -293,7 +317,7 @@ B. No - I could not find any
 
 * **Archive access tier**
     * Appropriate for data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, long-term backups).
-    
+
 ---
 
 ## Discussion
@@ -304,6 +328,7 @@ B. No - I could not find any
 ---
 
 ## Configuring Azure blob storage
+
 ![](../artwork/03-storage-11.png)
 
 ---
@@ -338,6 +363,7 @@ C.
 ---
 
 ## GCP blob storage
+
 ![](../artwork/03-storage-12.png)
 
 Notes:
@@ -353,7 +379,9 @@ ideal solution for storing images and videos, objects and blobs, and any unstruc
 data.
 * For more information, see the Cloud Storage Documentation:
 https://cloud.google.com/storage/docs/
+
 ---
+
 ## GCP storage options overview
 ![](../artwork/03-storage-13.png)
 
@@ -368,7 +396,6 @@ https://cloud.google.com/storage/docs/
 
 ---
 
-
 ## GCP storage classes
 
 | Storage Class          | Characteristics                                                                                    | Use Cases                                            | Price (GB/month) | Name for APIs  |
@@ -378,6 +405,8 @@ https://cloud.google.com/storage/docs/
 | Nearline Storage       | 99.0% availability Data retrieval costs Higher per-operation costs 30-day minimum storage duration | Back-up Serving long-tail multimedia content         | $0.01            | nearline       |
 | Coldline Storage       | 99.0% availability Data retrieval costs higher per-operation costs 90-day minimum storage duration | Disaster recovery Data archiving                     | $0.007           | coldline       |
 
+---
+
 ## Discussion
 
 * Any robustness figures for these? 
@@ -386,6 +415,7 @@ https://cloud.google.com/storage/docs/
 ---
 
 ## Quiz
+
 * Your application serves users in a specific region and performs
 analysis of data. What Cloud Storage class would be most
 appropriate?
@@ -398,8 +428,9 @@ appropriate?
 Notes: 
 
 B.
-    
+
 ---
+
 # Cloud File System (NFS-like)
 
 ## AWS file system
@@ -414,7 +445,9 @@ B.
     * Provides simultaneous access for multiple users to a common set of file data 
     in the cloud
     * Security for file sharing in the cloud is managed with user and group permissions enabling administrators to tightly control access to the shared file data.
-    
+
+---
+
 ## Azure Files (SMB and NFS)
 
 * Serverless file shares
@@ -428,8 +461,9 @@ B.
 
 * Multiple protocols support
     * Provides support for multiple protocols enabling data to be stored from different sources
-    
+
 ---
+
 ## GCP Filestore
 
 * Predictable performance
@@ -442,10 +476,12 @@ B.
     * Filestore is a fully managed, NoOps service. 
     * Easily mount file shares on Compute Engine VMs
     * Filestore is also tightly integrated with Google Kubernetes Engine so containers can reference the same shared data.
-    
+
 ---
-            
+
 # EBS, SSD
+
+---
 
 ## Amazon EBS volume types
 
@@ -473,18 +509,21 @@ Notes:
 * Continue to https://aws.amazon.com/ebs/features/
 
 ---
+
 ## Hard Disk Drives (HDD)
 
 ![](../artwork/2b-03.png)
+
 * Continue to https://aws.amazon.com/ebs/features/
 
 ---
 
-
 # SQL in the cloud
-    
----    
+
+---
+
 ## AWS Managed Database Services
+
 ![](../artwork/03-storage-19.png)
 
 Notes:
@@ -494,14 +533,19 @@ Common pattern for all clouds
 ---
 
 ## Amazon Relational Database Service (RDS)
+
 ![](../artwork/03-storage-20.png)
 
 ---
+
 ## Amazon RDS
+
 ![](../artwork/03-storage-21.png)
 
 ---
+
 ## DB Instances
+
 * DB Instances are the basic building blocks of Amazon RDS
     * Also on Azure
     * Also on GCP
@@ -511,6 +555,7 @@ Common pattern for all clouds
 * Foundation for high availability
 
 ---
+
 ## SQL as a service - security
 
 * Run your DB instance in a VPC
@@ -524,12 +569,14 @@ Common pattern for all clouds
 ---
 
 ## Multi-AZ DB Deployment
+
 * With Multi-AZ operation, your database is synchronously replicated to another AZ in the same Region
 * Failover automatically occurs to the standby in case of master database failure
 * Planned maintenance is applied first to standby databases.
 * Multi-AZ is the foundation of high availability DB running as cloud service
 
 ---  
+
 ## Quiz
 
 * A multi-AZ RDS setup consists of: Primary instance, Standby instance and a Read-replica. If the standby instance is not able to catch-up, what is the impact to transactions in primary?
@@ -547,6 +594,7 @@ Notes:
 * For multi-AZ high availability, RDS uses synchronous replication between primary and standby systems.  If standby is slow, transactions will take longer to complete.  RDS Read Replica on the other hand uses asynchronous replication and any slowness in Read Replica instance would simply cause data lag in the read - replica.  Transactions in primary is impacted
 
 ---
+
 ## Quiz
 
 * A multi-AZ RDS database consists of Primary, Standby instances and a read-replica. Application can send the read queries to: (Choose Two)    
@@ -558,17 +606,19 @@ Notes:
 Notes:
 
 A., C. 
-    
+
 ---
-    
+
 # NoSQL intro
 
 ---
+
 ## NoSQL is for scaling
 
 ![](../artwork/03-storage-15.png)
 
 ---
+
 ## NoSQL architecture idea
 
 * NoSQL is a giant persistent hashmap
@@ -580,6 +630,7 @@ A., C.
 ![](../artwork/03-pexels-mentatdgt-1311518.jpg)
 
 ---
+
 ## Rise of NoSQL Data Stores
 
 * NoSQL data stores are primarily designed for scalability
@@ -592,6 +643,7 @@ A., C.
 ---
 
 ## Advantage of NoSQL
+
 * Ability to handle Big Data
 * Fast writes & reads without locking
 * Ingest high-velocity data streams 
@@ -603,6 +655,7 @@ A., C.
 ![](../artwork/03-pexels-polina-tankilevitch-3735773.jpg)
 
 ---
+
 ## ACID
 
 * Atomicity
@@ -617,7 +670,7 @@ A., C.
 ---
 
 ## Transactions problems in distributed systems
-    
+
 * Very hard to scale
 * Involves
     * Blocking
@@ -631,12 +684,15 @@ A., C.
 ![](../artwork/03-pexels-energepiccom-2988232.jpg)
 
 ---
+
 ## When eventual consistency is OK
+
 ![](../artwork/03-storage-16.png)
 
 ---
 
 ## CAP Theorem (Eric Brewer)
+
 * Consistency: All replicas agree on the same value
 * Availability: Can always read and write to system
 * Partition Tolerance: System keeps working even if replicas can’t talk to each other ‘split brain’ scenario
@@ -646,17 +702,20 @@ A., C.
 ![](../artwork/03-storage-16.png)
 
 ---
+
 ## CAP Classification
+
 ![](../artwork/03-storage-18.png)
 
 ---
+
 ## Quiz
 
 * Most NoSQL data stores are designed to run on a single node.
 
     * A. True
     * B. False
-    
+
 Notes:
 
 B.
@@ -664,7 +723,7 @@ B.
 ---
 
 ## Quiz
-    
+
 * Which one of the features do most NoSQL data stores support?
 
     * A. Transactions
@@ -678,9 +737,11 @@ Notes:
 
 B, C, D
 
----    
+---
 
 # NoSQL in the cloud
+
+---
 
 ## SQL and NoSQL Databases
 
@@ -689,6 +750,7 @@ B, C, D
 ---
 
 ## Amazon DynamoDB
+
 * Store any amount of data with no limits
 * Fast, predictable performance using SSDs
 * Easily **provision** (but it will cost you) and change the request capacity needed for each table
@@ -719,7 +781,7 @@ Notes:
 * If you want to read the data using non-key attributes, you can use a secondary index to do this. A local secondary index is an index that has the same partition key as the table, but a different sort key.
 * For more information, see: 
 * http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSI.html
- 
+
 ---
 
 ## Global Secondary Index
@@ -733,6 +795,7 @@ Notes:
 * http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html
 
 ---
+
 ##  Provisioned Throughput
 
 * You specify how much provisioned throughput capacity you need for reads and writes.
@@ -794,9 +857,10 @@ Notes:
 Notes:
 
 * A., B., D., E)
----    
 
-## Quiz 
+---
+
+## Quiz
 
 * Choose typical SQL scenarios
 
@@ -808,9 +872,11 @@ Notes:
 Notes:
 
 * A., C. 
+
 ---
 
 # Storage on Azure
+
 ---
 
 ## NoSQL on Azure
@@ -823,7 +889,7 @@ Notes:
 
 * Operate at any scale
     * NoSQL DBs can provide compelling operational advantages and savings with the ability to scale "out" horizontally—or add less expensive servers without having to upgrade. They can scale to handle more data or hold a single, large database within a highly distributable clusters of servers.
-    
+
 ---
 
 ## Types of data models with NoSQL databases
@@ -839,12 +905,12 @@ Notes:
 
 * Graph
     * Graph databases use a model based on nodes and edges to represent interconnected data—such as relationships between people in a social network—and offer simplified storage and navigation through complex relationships.
-    
+
 ---
 
 ## Cosmos is part of Azure storage
 
-* Blob storage	
+* Blob storage
     * Store, secure, and access Binary Large Objects (Blobs). Blobs can be any file and this service is often used with image, videos, and other media.
 * Queue storage
 	* Store messages in a queue to organize communications between systems. Queues help to improve communications, because messages won't be lost at times of high demand. Instead, the queue may lengthen, but the receiving component keeps picking up and processing the messages until it catches up.
@@ -852,9 +918,11 @@ Notes:
     * Store files in file shares in the cloud for access with the Server Message Block (SMB. protocol.
 * Table storage
 	* Store data in a NoSQL database to underpin applications.
-	
+
 ---
+
 ## Case for Cosmos DB
+
 * When on Azure, you can run any of
     * SQL
     * NoSQL
@@ -863,12 +931,12 @@ Notes:
         * Gremlin
         * Tables API
         * **Cosmos** (if using Tables API)
-	
----	
+
+---
 
 ## What is the difference between Tables API and Cosmos?
-![](../artwork/03-storage-29.png)
 
+![](../artwork/03-storage-29.png)
 
 ---
 
@@ -877,6 +945,7 @@ Notes:
 ---
 
 ## Cloud Datastore
+
 ![](../artwork/03-storage-30.png)
 
 Notes:
@@ -904,6 +973,7 @@ applications and Cloud Datastore will remain a fully supported GCP storage servi
 ---
 
 ## Cloud Firestore
+
 ![](../artwork/03-storage-31.png)
 
 Notes:
@@ -930,6 +1000,7 @@ https://cloud.google.com/firestore/docs/
 ---
 
 ## Cloud Bigtable
+
 ![](../artwork/03-storage-32.png)
 
 Notes:
@@ -952,6 +1023,7 @@ https://cloud.google.com/bigtable/docs/
 ---
 
 ## Cloud SQL
+
 ![](../artwork/03-storage-33.png)
 
 Notes:
@@ -1021,6 +1093,7 @@ https://cloud.google.com/spanner/docs/
 | Spanner       | Relational DB service                 | Low-latency transactional systems               | Analytic data                                         |
 | BigQuery      | Auto-scaling analytic data warehouse  | Interactive analysis of static datasets         | Building fast apps                                    |
 
+---
 
 ## Technical considerations for storage options
 
@@ -1049,7 +1122,8 @@ Notes:
 
 A.
 
----    
+---
+
 ## Quiz
 
 * My application has heavy read/write requirements and my workload
@@ -1093,14 +1167,17 @@ should I consider if my application requires horizontal scalability?
 Notes:
 
 B.
-    
----        
+
+---
 
 # Cross-cloud storage comparison
 
+---
+
 ## Databases - let's review
+
 ![](../artwork/03-storage-02.png)
-   
+
 ---
 
 ## Quiz
@@ -1141,25 +1218,6 @@ A, C
 
 ---
 
-## Congrats
-
-* Congratulations on finishing in the storage overview
-
----     
-
-## TODO
-
-* Consistency and locking not mentioned with Blob storage offerings. Are they all strongly consistent now?
-
-* Mixing storage and DB services - I think of them as separate service groups
-
-* discuss bucket archiving/tiers
-
----
-
 ## Congrats on completion
 
-
 ![](../artwork/congrats.png)
-
----
