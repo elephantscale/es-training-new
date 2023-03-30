@@ -31,6 +31,12 @@
 
 ---
 
+## Jack Woehr extended answer
+
+* Hi Mark! Did you ever read Dr. Seuss's Bartholomew and the Oobleck?
+* King Derwin of Didd was bored with the weather, so his wizards promised to make Oobleck. He asked, "What's that like?" and they told him, "We don't know, we've never made it before."
+
+---
 ## Scott Wyman Neagle
 
 ![](../images/05-ScottWymanNeagle.png)
