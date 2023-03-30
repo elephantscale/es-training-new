@@ -85,11 +85,11 @@
 
 ## How qubits numbers grow?
 
-IBM Q System One: 20 qubits - January 2019
-IBM Q System One "Falcon": 27 qubits - May 2020
-IBM Q System One "Eagle": 53 qubits - November 2020
-IBM Quantum System: 65 qubits - June 2021
-IBM "Osprey": 433 qubits - November 2023 
+* IBM Q System One: 20 qubits - January 2019
+* IBM Q System One "Falcon": 27 qubits - May 2020
+* IBM Q System One "Eagle": 53 qubits - November 2020
+* IBM Quantum System: 65 qubits - June 2021
+* IBM "Osprey": 433 qubits - November 2022 
 
 ---
 
