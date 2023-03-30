@@ -12,7 +12,7 @@
 * Complete control of your computing resources
 * Reduces the time required to obtain and boot new server instances to minutes
 
-![](../artwork/06-scale-01.png)
+<img src="../artwork/06-scale-01.png" style="width:55%;"/> <!-- {"left" : 13.59, "top" : 0.43, "height" : 2.87, "width" : 3.18} -->
 
 ---
 
@@ -51,13 +51,15 @@
 * Launch permissions
 * Storage for the root device
 
-![](../artwork/06-scale-02.png)
+<img src="../artwork/06-scale-02.png" style="width:55%;"/> <!-- {"left" : 10.54, "top" : 0.78, "height" : 6.95, "width" : 6.28} -->
 
 ---
 
 ## Amazon EC2 Instances
 
-![](../artwork/06-scale-03.png)
+
+<img src="../artwork/06-scale-03.png" style="width:55%;"/> <!-- {"left" : 1.83, "top" : 2.44, "height" : 7.51, "width" : 13.83} -->
+
 
 ---
 
@@ -86,12 +88,15 @@
 | Charges          | Instance usage, Amazon EBS volume usage, and storing your AMI as an Amazon EBS snapshot.                                            | Instance usage and storing your AMI in Amazon S3.                                 |
 | Stopped state    | Can be stopped.                                                                                                                     | Cannot be stopped.                                                                |
 
+ <!-- {"left" : 0.8, "top" : 2.01, "height" : 1, "width" : 15.95} -->
+
+
 ---
 
 ## Instance Lifecycle
 
+<img src="../artwork/06-scale-04.png" style="width:55%;"/> <!-- {"left" : 1.72, "top" : 3.03, "height" : 7.66, "width" : 14.07} -->
 
-![](../artwork/06-scale-04.png)
 
 ---
 
@@ -105,37 +110,42 @@
 * **Hurry Up and Go Idle** - A larger compute instance can save you time and money, therefore paying more per hour for a shorter amount of time can be less expensive.
 * In other cases, horizontal scalability in **clusters** is the way to go
 
-![](../artwork/06-pexels-lisa-fotios-1053914.jpg)
 
 ---        
 
 ## General purpose
 
-![](../artwork/06-scale-05.png)
+<img src="../artwork/06-scale-05.png" style="width:55%;"/> <!-- {"left" : 1.85, "top" : 2.21, "height" : 7.98, "width" : 13.81} -->
+
 
 ---
 
 ## Compute optimized
 
-![](../artwork/06-scale-06.png)
+<img src="../artwork/06-scale-06.png" style="width:55%;"/> <!-- {"left" : 0.95, "top" : 2.95, "height" : 6.49, "width" : 15.6} -->
+
 
 ---
 
 ## Memory optimized
 
-![](../artwork/06-scale-07.png)
+<img src="../artwork/06-scale-07.png" style="width:55%;"/> <!-- {"left" : 2, "top" : 2.52, "height" : 8.69, "width" : 13.5} -->
+
 
 ---
 
 ## Accelerated computing
 
-![](../artwork/06-scale-08.png)
+<img src="../artwork/06-scale-08.png" style="width:55%;"/> <!-- {"left" : 1.04, "top" : 2.03, "height" : 8.32, "width" : 15.42} -->
+
 
 ---
 
 ## Storage computing
 
-![](../artwork/06-scale-09.png)
+
+<img src="../artwork/06-scale-09.png" style="width:55%;"/> <!-- {"left" : 1.18, "top" : 2.35, "height" : 7.69, "width" : 15.14} -->
+
 
 ---
 
@@ -148,6 +158,8 @@
 | Memory optimized (r3)        | High performance databases  Distributed memory caches                             |
 | Storage optimized (i2, d2)   | Data warehousing  Log or data-processing applications                             |
 | GPU instances (g2)           | 3D application streaming  Machine learning                                        |
+
+<!-- {"left" : 0.78, "top" : 2.03, "height" : 1, "width" : 15.95} -->
 
 ---
 
@@ -174,10 +186,12 @@
 $ curl http://169.254.169.254/latest/meta-data/
 $ GET http://169.254.169.254/latest/meta-data/
 ```
+<!-- {"left" : 0.85, "top" : 6.43, "height" : 0.86, "width" : 8.61} -->
+
 
 * All metadata is returned as text (content type text/plain).
 
-![](../artwork/06-scale-10.png)
+<img src="../artwork/06-scale-10.png" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 7.7, "height" : 4.1, "width" : 4.9} -->
 
 ---
 
@@ -193,19 +207,22 @@ $ GET http://169.254.169.254/latest/meta-data/
 
 ## Adding user data
 
-![](../artwork/06-scale-11.png)
+<img src="../artwork/06-scale-11.png" style="width:55%;"/> <!-- {"left" : 4.48, "top" : 2.56, "height" : 8.61, "width" : 8.54} -->
+
 
 ---
 
 ## Retrieving User Data
 
-![](../artwork/06-scale-12.png)
+<img src="../artwork/06-scale-12.png" style="width:55%;"/> <!-- {"left" : 1.32, "top" : 3.08, "height" : 6.22, "width" : 14.85} -->
+
 
 ---
 
 ## Amazon EC2 Purchasing Options
 
-![](../artwork/06-scale-13.png)
+<img src="../artwork/06-scale-13.png" style="width:55%;"/> <!-- {"left" : 1.82, "top" : 1.92, "height" : 5.41, "width" : 13.87} -->
+
 
 * Pricing is by the hour or by the second depending on instance type (Linux is per-second)
 * [https://aws.amazon.com/ec2/pricing/](https://aws.amazon.com/ec2/pricing/)
@@ -308,6 +325,8 @@ Notes:
 | Product or Service | service                    | Identifies the product, application, or service that the resource supports |
 | Role               | sql, web, messaging        | Identifies the role of the associated resource                             |
 
+<!-- {"left" : 0.56, "top" : 1.5, "height" : 1, "width" : 16.37} -->
+
 ---
 
 ## Naming the VM example
@@ -329,6 +348,8 @@ Notes:
 | GPU                       | GPU VMs are specialized virtual machines targeted for heavy graphics rendering and video editing. These VMs are ideal options for model training and inferencing with deep learning. |
 | High performance computes | High performance compute is the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces.                                                     |
 
+<!-- {"left" : 0.54, "top" : 1.4, "height" : 1, "width" : 16.55, "columnwidth" : [2.67, 13.88]} -->
+
 ---
 
 ## Azure VM prices
@@ -338,6 +359,11 @@ Notes:
 | Pay as you go                      | With the pay-as-you-go option, you pay for compute capacity by the second, with no long-term commitment or upfront payments. You're able to increase or decrease compute capacity on demand as well as start or stop at any time. Prefer this option if you run applications with short-term or unpredictable workloads that cannot be interrupted. For example, if you are doing a quick test, or developing an app in a VM, this would be the appropriate option.                                     |
 | Reserved Virtual Machine Instances | The Reserved Virtual Machine Instances (RI) option is an advance purchase of a virtual machine for one or three years in a specified region. The commitment is made up front, and in return, you get up to 72% price savings compared to pay-as-you-go pricing. RIs are flexible and can easily be exchanged or returned for an early termination fee. Prefer this option if the VM has to run continuously, or you need budget predictability, and you can commit to using the VM for at least a year. |
 
+<!-- {"left" : 0.51, "top" : 1.44, "height" : 1, "width" : 16.53, "columnwidth" : [3.68, 12.84]} -->
+
+
+<br/>
+<br/>
 * VM payment is by the second
 
 ---
@@ -398,7 +424,9 @@ Notes:
   * Resize disks with no downtime
   * Instance metadata and startup scripts
 
-![](../artwork/Google_Compute_Engine_logo2.original.png)
+
+<img src="../artwork/Google_Compute_Engine_logo2.original.png" style="width:55%;"/> <!-- {"left" : 13.13, "top" : 2.3, "height" : 3.49, "width" : 3.95} -->
+
 
 Notes:
 
@@ -427,7 +455,8 @@ Notes:
   * High throughput to storage at no extra cost
   * Custom machine types: Only pay for the hardware you need
 
-![](../artwork/Google_Compute_Engine_logo2.original.png)
+<img src="../artwork/Google_Compute_Engine_logo2.original.png" style="width:55%;"/> <!-- {"left" : 13.13, "top" : 2.3, "height" : 3.49, "width" : 3.95} -->
+
 
 Notes:
 
@@ -459,7 +488,9 @@ Notes:
 
 * Scale up or scale out with Compute Engine
 
-![](../artwork/06-scale-15.png)
+
+<img src="../artwork/06-scale-15.png" style="width:55%;"/> <!-- {"left" : 2.24, "top" : 4.19, "height" : 6.49, "width" : 13.02} -->
+
 
 Notes:
 
@@ -490,6 +521,8 @@ Notes:
 | Snapshotting                  | Yes                                                                                   | Yes                                                                                                                         |
 | Snapshot locality             | Regional                                                                              | Global                                                                                                                      |
 
+<!-- {"left" : 0.41, "top" : 1.25, "height" : 1, "width" : 16.69, "columnwidth" : [3.7, 5.75, 7.25]} -->
+
 Notes:
 
 * Source
@@ -508,6 +541,8 @@ Notes:
 | Storage capacity              | Varies by instance type                        | 375 GB per volume                               |
 | Live migration                | No                                             | Yes                                             |
 | Redundancy                    | None                                           | None                                            |
+
+<!-- {"left" : 0.68, "top" : 2.03, "height" : 1, "width" : 16.15} -->
 
 ---
 
@@ -584,7 +619,8 @@ Notes:
 * Automatically manages the compute resources for you.
 * Requires zero administration.
 
-![](../artwork/lambda.png)
+
+<img src="../artwork/lambda.png" style="width:55%;"/> <!-- {"left" : 10.5, "top" : 1.13, "height" : 4.55, "width" : 6.93} -->
 
 ---
 
@@ -594,13 +630,16 @@ Notes:
   * GoGreen Healthcare creates pharmaceutical labels when new products are released in compliance with the Food & Drug Administration’s (FDA) Structured Product Labeling (SPL).
   * Transform label data into a format to be used in trend analysis by other teams.
 
-![](../artwork/09-arch-11.png)
+
+<img src="../artwork/09-arch-11.png" style="width:55%;"/> <!-- {"left" : 2.17, "top" : 7.2, "height" : 3.04, "width" : 13.17} -->
+
 
 ---  
 
 ## Why AWS Lambda?
 
-![](../artwork/09-arch-12.png)
+
+<img src="../artwork/09-arch-12.png" style="width:55%;"/> <!-- {"left" : 1.1, "top" : 2.73, "height" : 6.93, "width" : 15.29} -->
 
 
 Notes:
@@ -620,19 +659,24 @@ In a “traditional” environment, the complicated solution would include provi
   * Payload limited to 6 GB, memory to 3 GB
   * Rules of scaling, cold start
 
-![](../artwork/09-pexels-picjumbocom-196644.jpg)
+<img src="../artwork/09-pexels-picjumbocom-196644.jpg" style="width:55%;"/> <!-- {"left" : 9.47, "top" : 1.75, "height" : 5.03, "width" : 7.54} -->
+
 
 ---
 
 ## Why AWS Lambda?
 
-![](../artwork/09-arch-12.png)
+
+<img src="../artwork/09-arch-12.png" style="width:55%;"/> <!-- {"left" : 1.61, "top" : 2.96, "height" : 6.47, "width" : 14.28} -->
+
 
 ---
 
 ## AWS Lambda: Overview
 
-![](../artwork/09-arch-13.png)
+
+<img src="../artwork/09-arch-13.png" style="width:55%;"/> <!-- {"left" : 1.71, "top" : 2.99, "height" : 6.42, "width" : 14.09} -->
+
 
 ---
 
@@ -646,7 +690,8 @@ In a “traditional” environment, the complicated solution would include provi
   * Java, Go, PowerShell, Node.js, C#, Python, and Ruby
   * Runtime API for additional languages
 
-![](../artwork/09-arch-14.png)
+<img src="../artwork/09-arch-14.png" style="width:55%;"/> <!-- {"left" : 10.88, "top" : 1.5, "height" : 5.26, "width" : 6.09} -->
+
 
 Notes:
 
@@ -670,7 +715,8 @@ Notes:
 * Event-based invocation where the event source invokes the Lambda function
 * Asynchronous execution (no response required)
 
-![](../artwork/09-arch-15.png)
+<img src="../artwork/09-arch-15.png" style="width:55%;"/> <!-- {"left" : 1.88, "top" : 5.18, "height" : 5.66, "width" : 13.73} -->
+
 
 Notes:
 
@@ -694,7 +740,9 @@ Notes:
 
 ## AWS Lambda Push Event Model Example
 
-![](../artwork/09-arch-16.png)
+
+<img src="../artwork/09-arch-16.png" style="width:55%;"/> <!-- {"left" : 1.69, "top" : 3.52, "height" : 5.34, "width" : 14.13} -->
+
 
 ---
 
@@ -703,7 +751,7 @@ Notes:
 * Event-based invocation where AWS Lambda polls the event source
 * AWS Lambda invokes your Lambda function when it detects an event
 
-![](../artwork/09-arch-17.png)
+<img src="../artwork/09-arch-17.png" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 3.79, "height" : 4.82, "width" : 15.8} -->
 
 Notes:
 
@@ -824,11 +872,15 @@ Notes:
 | Management        | REST API, Visual Studio.                                               | Azure portal, REST API, PowerShell, Visual Studio.                                                      |
 | Execution context | Can run locally or in the cloud.                                       | Runs only in the cloud.                                                                                 |
 
+<!-- {"left" : 0.52, "top" : 1.59, "height" : 1, "width" : 16.46, "columnwidth" : [4.13, 6.38, 5.95]} -->
+
 ---
 
 ## GCP cloud functions
 
-![](../artwork/09-arch-20.png)
+<img src="../artwork/09-arch-20.png" style="width:55%;"/> <!-- {"left" : 1.26, "top" : 2.15, "height" : 8.09, "width" : 14.38} -->
+
+
 
 Notes:
 
@@ -843,7 +895,8 @@ Notes:
 
 ## Cloud functions use cases
 
-![](../artwork/09-arch-21.png)
+<img src="../artwork/09-arch-21.png" style="width:55%;"/> <!-- {"left" : 1.44, "top" : 2.15, "height" : 8.09, "width" : 14.63} -->
+
 
 Notes:
 
@@ -851,7 +904,4 @@ Notes:
 
 ## Congrats on completion
 
-
-![](../artwork/congrats.png)
-
----
+<img src="../artwork/congrats.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 4.57, "height" : 3.25, "width" : 15.41} -->
