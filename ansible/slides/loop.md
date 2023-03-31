@@ -11,7 +11,7 @@ Ansible provides a simple and efficient way to iterate over a set of values usin
 
 The `with_items` loop is the most commonly used loop in Ansible. It iterates over a list of items and performs a task for each item.
 
-![img_1.png](images/loop_1.png)
+![img_1.png](../images/loop_1.png)
 
 ---
 
@@ -19,7 +19,7 @@ The `with_items` loop is the most commonly used loop in Ansible. It iterates ove
 
 The `loop` loop is a newer alternative to with_items loop, and it offers more flexibility and readability. It allows you to loop over a list or dictionary of items, and use the item variable to access each item.
 
-![img_2.png](images/loop_2.png)
+![img_2.png](../images/loop_2.png)
 
 
 ---
@@ -28,7 +28,7 @@ The `loop` loop is a newer alternative to with_items loop, and it offers more fl
 
 You can also use loops with conditionals to perform tasks based on certain conditions.
 
-![img_3.png](images/loop_3.png)
+![img_3.png](../images/loop_3.png)
 
 
 ---
@@ -37,7 +37,7 @@ You can also use loops with conditionals to perform tasks based on certain condi
 
 The loop_control keyword allows you to modify the behavior of the loop. For example, you can use it to set the loop index, skip items, or stop the loop.
 
-![img_4.png](images/loop_4.png)
+![img_4.png](../images/loop_4.png)
 
 
 ---

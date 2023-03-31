@@ -7,7 +7,7 @@
 * A list of hosts that Ansible can manage
 * Can be static or dynamic
 
-![img_1.png](images/img_1.png)
+![img_1.png](../images/img_1.png)
 
 ---
 
@@ -16,7 +16,7 @@
 * A task is a single action that is executed on a host
 * A task is a single module with a set of arguments
 
-![img_2.png](images/img_2.png)
+![img_2.png](../images/img_2.png)
 
 ---
 
@@ -34,7 +34,7 @@
 
 * A play is a list of tasks to be executed on a set of hosts
 
-![img_3.png](images/img_3.png)
+![img_3.png](../images/img_3.png)
 
 ---
 
@@ -42,7 +42,7 @@
 
 * A playbook is a list of plays
 
-![img_4.png](images/img_4.png)
+![img_4.png](../images/img_4.png)
 
 ---
 

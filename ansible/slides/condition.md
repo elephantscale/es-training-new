@@ -17,7 +17,7 @@
 
 ## Example
 
-![img_1.png](images/cond_sample.png)
+![img_1.png](../images/cond_sample.png)
 
 ---
 

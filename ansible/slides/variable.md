@@ -18,7 +18,7 @@
 
 ## Example
 
-![img_1.png](images/img_13.png)
+![img_1.png](../images/img_13.png)
 
 ---
 
@@ -31,7 +31,7 @@
 
 ## Example
 
-![img_2.png](images/img_14.png)
+![img_2.png](../images/img_14.png)
 
 `name`: variable name
 
@@ -58,7 +58,7 @@
 
 * Variables can be registered to store the output of a task.
 
-![img_2.png](images/variabels/img_2.png)
+![img_2.png](../images/variabels/img_2.png)
 
 ---
 
@@ -68,7 +68,7 @@ Variables can be set as facts to store the output of a task using `set_fact` mod
 
 these variables can be accessed like a normal variable
 
-![img_3.png](images/variabels/img_3.png)
+![img_3.png](../images/variabels/img_3.png)
 
 Note: If you have `redis` installed, you can use `cached` to store these variables for later use.
 

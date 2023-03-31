@@ -12,7 +12,7 @@ Playbooks are written in YAML format and can be used to manage a wide range of s
 
 ## Example
 
-![img_3.png](images/img_3.png)
+![img_3.png](../images/img_3.png)
 
 ---
 

@@ -15,7 +15,7 @@
 
 The syntax for defining a block in an Ansible playbook is as follows:
 
-![img_1.png](images/block_1.png)
+![img_1.png](../images/block_1.png)
 
 * The `block` keyword is used to define the set of tasks that should be grouped together
 * The `rescue` keyword is used to define a set of tasks to be run if any task in the block fails
@@ -26,7 +26,7 @@ The syntax for defining a block in an Ansible playbook is as follows:
 
 ## Example 
 
-![img_2.png](images/block_2.png)
+![img_2.png](../images/block_2.png)
 
 ---
 
