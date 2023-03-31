@@ -1,21 +1,158 @@
-# AI-ML
+# AI-ML In the Cloud
 
 ---
 
+# Typical Machine Learning Workflow
 
-## AI-ML
+  * Data Scientists typically work on small datasets on their laptops
+     - They work on a model
+  * Once the model is decided, it is deployed on production
+     - Usually on a cluster
+     - Trained on large amount of data
+  * Going from development to deployment isn't always easy
 
-* Artificial Intelligence and Machine Learning (AI/ML) frameworks and architectures
+<img src="../../assets/images/machine-learning/SageMaker-Workflow.png" alt="SageMaker-Workflow.png" style="width:76%;"/><!-- {"left" : 3, "top" : 6.79, "height" : 4, "width" : 11.51} -->
 
 ---
 
-# AWS AI-ML
+## Cloud AI/ML Systems
+
+* Amazon - Sagemaker
+
+* Google  - Google ML
+
+* Azure - Azure ML
 
 ---
 
-## SageMaker
+# SageMaker
 
-* Insert SageMaker slides here
+---
+
+## Amazon SageMaker
+
+<img src="../../assets/images/logos/aws-sagemaker-logo-1.png" style="width:30%;float:right;"/><!-- {"left" : 12.31, "top" : 2.11, "height" : 1.82, "width" : 4.77} -->
+
+* Fully managed machine learning service
+* Build and training machine learning models
+* Deploy models into production hosted environment
+* Features:
+    * **Development:** Jupyter authoring notebook instance
+    * **Deployment:** Easy deployment at production scale
+    * Common machine learning algorithms: Optimized for large data sets in distributed mode
+    * Optional bring-your-own algorithm
+    * Billing: by the seconds
+
+---
+
+## How does SageMaker Work?
+
+<img src="../../assets/images/machine-learning/Machine-Learning-SageMaker-Works.png" style="width:70%"/><!-- {"left" : 3.43, "top" : 2.87, "height" : 7.98, "width" : 10.63} -->
+
+
+Notes:
+Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html
+
+---
+
+## Training a Model with SageMaker
+
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Training-a-Model-with-SageMaker.png" style="width:60%"/><!-- {"left" : 3.65, "top" : 2.55, "height" : 8.62, "width" : 10.19} -->
+
+
+Notes:
+Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html
+
+---
+
+## Scalable Training in SageMaker
+
+  * SageMaker can automatically spin up many instances to scale training jobs.
+
+<img src="../../assets/images/machine-learning/Machine-Learning-SageMaker-Scalable-Training.png" style="width:90%"/><!-- {"left" : 2.85, "top" : 4.5, "height" : 5.47, "width" : 11.79} -->
+
+
+---
+
+## Kernels Supported by SageMaker
+
+  * SageMaker native algorithms
+  * Spark
+     - PySpark, PySpark3, SparkR
+  * Anaconda Python
+     - python2, python 3
+  * Custom Deep Learning Python code
+     - TensorFlow (conda_tensorflow)
+     - Apache MXNet  (conda_mxnet)
+  * Your own algorithms
+     - Provided as Docker images
+
+---
+
+## Model Validation in SM
+
+  * Validate
+     - Sensitive or specific (a.k.a recall and precision)
+     - Offline testing
+     - Online testing with % of live data
+  * Validate with
+     - "Hold out" sets (20-30%)
+     - K-fold validation (5-10)
+
+Notes:
+
+---
+
+## Deploy the Model
+
+<img src="../../assets/images/AI/AI-Workflow-06.png" style="width:50%;float:right; "/><!-- {"left" : 9.34, "top" : 2.29, "height" : 6.19, "width" : 7.82} -->
+
+  * Once the evaluation goes well, we can deploy the model to production:
+
+  * Continuous cycle:
+     - Monitor performance of Model
+     - train it with more data
+     - Deploy again
+
+  * SageMaker makes this process easy
+
+
+---
+
+## Deploying a SageMaker Model
+
+<img src="../../assets/images/machine-learning/3rd-party/Machine-Learning-SageMaker-Deploying.png" style="width:60%"/><!-- {"left" : 3.42, "top" : 2.32, "height" : 9.06, "width" : 10.66} -->
+
+
+Notes:
+Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.html
+
+---
+
+## SageMaker Machine Learning Steps
+
+  * Explore the data
+     - SageMaker managed instance with Jupyter Notebook
+
+  * Train the model:
+     - On small sample set using Jupyter notebook instance
+     - On large dataset using cluster
+
+  * Validate
+     - Offline testing on small subset of data
+     - Online testing with % of live data
+
+  * Deploy
+
+---
+
+## Getting Started With SageMaker
+
+* Start by using the SageMaker console
+* Find an example Jupyter notebook and adapt it
+* Create new training models
+* Use Python or AWS SDK
+* Integrate SageMaker into Apache Spark pipeline
 
 ---
 
@@ -79,6 +216,7 @@ TensorFlow and Cloud AI Platform
 ![](../artwork/10-ai-04.png)
 
 ---
+
 ## Quiz
 
 * You are developing an application that tags all surveillance video
@@ -91,10 +229,12 @@ before storing the files. Which API should you use?
 Notes:
 
 * C.
-    
+
 ---
 
-# Azure AI-ML
+# Azure ML
+
+---
 
 ## Microsoft AI approach
 
@@ -176,13 +316,13 @@ Notes:
     * B. A cloud-based platform for operating machine learning solutions at scale.
 
     * C. An application for Microsoft Windows that enables you to create machine learning models by using a drag and drop interface.
-    
+
 Notes: 
 
 * B
 * Azure Machine Learning enables you to manage machine learning model data preparation, training, validation, and deployment. It supports existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud.
 
----    
+---
 
 ## Quiz
 
@@ -195,7 +335,7 @@ Notes:
     * C. Use the log* methods of the Run class to record named metrics.
 
 Notes:
-    
+
 * C.
 * To record metrics in an experiment run, use the Run.log* methods.
 
@@ -206,7 +346,7 @@ Notes:
 * What are FPGAs?
   * FPGAs contain an array of programmable logic blocks, and a hierarchy of reconfigurable interconnects. 
   * The interconnects allow these blocks to be configured in various ways after manufacturing. 
-  *  Compared to other chips, FPGAs provide a combination of programmability and performance.
+  * Compared to other chips, FPGAs provide a combination of programmability and performance.
 
 * FPGAs make it possible
   * achieve low latency for real-time inference (or model scoring) requests. 
@@ -224,7 +364,6 @@ Notes:
 * [https://www.youtube.com/watch?v=iJo_sSzioxM&t=2659s](https://www.youtube.com/watch?v=iJo_sSzioxM&t=2659s)
 
 ---
-
 
 # Jupyter notebook environments
 
@@ -276,8 +415,6 @@ Notes:
 * [https://d1.awsstatic.com/whitepapers/aws-power-ml-at-scale.pdf](https://d1.awsstatic.com/whitepapers/aws-power-ml-at-scale.pdf)
 
 ---
-
-
 
 ## Congrats on completion
 

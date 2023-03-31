@@ -40,11 +40,11 @@
 
 ## What Does SageMaker Provide?
 
-  * **Development‫:‬** Jupyter authoring notebook instance
+  * **Development:** Jupyter authoring notebook instance
 
      - For data sources exploration and analysis
 
-  * **Deployment‫:‬** Easy deployment at production scale
+  * **Deployment:** Easy deployment at production scale
 
   * Common machine learning algorithms
 
