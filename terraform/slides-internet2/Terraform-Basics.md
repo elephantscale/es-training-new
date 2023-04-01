@@ -64,7 +64,9 @@ When I do this section, I use the example to execute the various stages as I dis
 * It is considered a professional best practice to use this structure for all terraform work
   - Additional files, like _buckets.tf_ are added when they improve the readability of the code
   
-![](../artwork/CannonicalFiles.png)
+
+<img src="../artwork/CannonicalFiles.png" style="width:55%;"/> <!-- {"left" : 4.42, "top" : 6.55, "height" : 4.51, "width" : 8.66} -->
+
 ---
 
 ## Non-Canonical Modules
@@ -73,7 +75,8 @@ When I do this section, I use the example to execute the various stages as I dis
   - This will still work, terraform does not care what we name the files
 * Note: we cannot rename _terraform.tfvars_ or terraform will ignore it
 
-![](../artwork/NonCannoicalFiles.png)
+<img src="../artwork/NonCannoicalFiles.png" style="width:55%;"/> <!-- {"left" : 3.96, "top" : 5.97, "height" : 4.81, "width" : 9.57} -->
+
 ---
 
 ## The Five Basic Terraform Constructs
@@ -89,7 +92,8 @@ When I do this section, I use the example to execute the various stages as I dis
 
 * The _providers.tf_ File
 
-![](../artwork/example-02-01-providers.png)
+<img src="../artwork/example-02-01-providers.png" style="width:55%;"/> <!-- {"left" : 4.87, "top" : 4, "height" : 6.88, "width" : 7.76} -->
+
 
 ---
 
@@ -123,7 +127,7 @@ When I do this section, I use the example to execute the various stages as I dis
   - An EC2 instance and an S3 bucket
 * The default VPC, not managed by terraform, is identified as a data source
 
-![](../artwork/example-02-01-main.png)
+<img src="../artwork/example-02-01-main.png" style="width:55%;"/> <!-- {"left" : 11.09, "top" : 1.63, "height" : 6.24, "width" : 6.01} -->
 
 ---
 
@@ -167,7 +171,7 @@ When I do this section, I use the example to execute the various stages as I dis
     - For example, there may be many VPCs in a region, but only one default VPC  
 * Later we will look at ways of searching for specific resources
   
- ![](../artwork/example-02-01-main-data.png)
+<img src="../artwork/example-02-01-main-data.png" style="width:55%;"/> <!-- {"left" : 10.47, "top" : 2.24, "height" : 1.7, "width" : 6.66} -->
 
  ---
 
@@ -180,7 +184,8 @@ When I do this section, I use the example to execute the various stages as I dis
 * Including a _description_ is considered to be a best practice
 * The _value_ parameter is what the defined output returns
 
-![](../artwork/example-02-01-outputs.png)
+<img src="../artwork/example-02-01-outputs.png" style="width:55%;"/> <!-- {"left" : 9.89, "top" : 2.1, "height" : 3.4, "width" : 7.15} -->
+
 
 ---
 ## The Terraform Workflow
@@ -221,31 +226,33 @@ When I do this section, I use the example to execute the various stages as I dis
 
 ## Example - Init Output
 
-![](../artwork/terraform-init-2.png)
+<img src="../artwork/terraform-init-2.png" style="width:55%;"/> <!-- {"left" : 2.84, "top" : 2.05, "height" : 8.3, "width" : 11.83} -->
+
 
 ---
 
 ## Example - Plan Output
 
-![](../artwork/Terraform-Plan-2.png)
+<img src="../artwork/Terraform-Plan-2.png" style="width:55%;"/> <!-- {"left" : 1.46, "top" : 4.04, "height" : 4.32, "width" : 14.57} -->
 
 ---
 
 ## Example - Plan Output
 
-![](../artwork/Terraform-Plan-2a.png)
+<img src="../artwork/Terraform-Plan-2a.png" style="width:55%;"/> <!-- {"left" : 2.63, "top" : 3.93, "height" : 4.53, "width" : 12.24} -->
 
 ---
 
 ## Example - Apply Output
 
-![](../artwork/Terraform-Apply-2.png)
+<img src="../artwork/Terraform-Apply-2.png" style="width:55%;"/> <!-- {"left" : 1.32, "top" : 4.29, "height" : 3.82, "width" : 14.87} -->
+
 
 ---
 
 ## Example - Apply Output
 
-![](../artwork/Terraform-apply-2a.png)
+<img src="../artwork/Terraform-apply-2a.png" style="width:55%;"/> <!-- {"left" : 3.18, "top" : 2.28, "height" : 7.84, "width" : 11.14} -->
 
 
 ---
@@ -281,9 +288,11 @@ Example 2-2 has the code used in the slides following
   - The default is used _only_ if the variable is not assigned a value anywhere
 * The value for the _inst_type_ variable is assigned in the _terraform.tfvars_ file
 
-![](../artwork/Vardefs.png)
+<img src="../artwork/Vardefs.png" style="width:55%;"/> <!-- {"left" : 13.09, "top" : 2.36, "height" : 2.37, "width" : 3.94} -->
 
-![](../artwork/VarsTFvars.png)
+<img src="../artwork/VarsTFvars.png" style="width:55%;"/> <!-- {"left" : 9.52, "top" : 5.02, "height" : 1.79, "width" : 7.54} -->
+
+
 
 
 ---
@@ -292,8 +301,8 @@ Example 2-2 has the code used in the slides following
 
 * The hardcoded values for the arguments can now be replaced with variables
 
-![](../artwork/VarUseage.png)
 
+<img src="../artwork/VarUseage.png" style="width:55%;"/> <!-- {"left" : 10.01, "top" : 1.81, "height" : 4.2, "width" : 7.08} -->
 
 ---
 
@@ -301,7 +310,8 @@ Example 2-2 has the code used in the slides following
 
 * The outputs now validate that the actual attributes of the EC2 were set by the variables
 
-![](../artwork/VarsOutputs.png)
+<img src="../artwork/VarsOutputs.png" style="width:55%;"/> <!-- {"left" : 4.58, "top" : 5.38, "height" : 4.11, "width" : 8.35} -->
+
 
 
 ---
@@ -322,7 +332,8 @@ This lab has students replace hardcoded values with variables
   - The interpolation syntax is ${value} to insert "value" into string
  - Non-string values are converted to a string for interpolation
 
-![](../artwork/VarInterp1.png)
+<img src="../artwork/VarInterp1.png" style="width:55%;"/> <!-- {"left" : 2.13, "top" : 7.11, "height" : 2.03, "width" : 13.24} -->
+
 
 Notes: 
 
@@ -337,7 +348,8 @@ Modifying the output to use string interpolation is demo 3
   - Local variable definitions can be split across more than one `locals` block
   - Local variables are referenced with the syntax `local.<name>`
   
-![](../artwork/Locals1.png)
+<img src="../artwork/Locals1.png" style="width:55%;"/> <!-- {"left" : 10.26, "top" : 2, "height" : 4.29, "width" : 6.73} -->
+
 
 ---
 ## Primitive Data Types
@@ -349,7 +361,7 @@ Modifying the output to use string interpolation is demo 3
   - _boolean_: `true` and `false`
 * There are also complex data types like lists and maps which will be covered in a later module.
 
-![](../artwork/DataTypes.png)
+<img src="../artwork/DataTypes.png" style="width:55%;"/> <!-- {"left" : 10.84, "top" : 1.77, "height" : 3.22, "width" : 6.16} -->
 
 ---
 
@@ -364,7 +376,8 @@ Modifying the output to use string interpolation is demo 3
   - The contents of the string, which can span any number of lines
   - The delimiter word you chose, alone on its own line (with indentation allowed for indented heredocs)
 
-![](../artwork/Heredoc.png)
+<img src="../artwork/Heredoc.png" style="width:55%;"/> <!-- {"left" : 10.76, "top" : 1.13, "height" : 1.8, "width" : 6.35} -->
+
 
 Notes:
 
@@ -381,9 +394,11 @@ Example 2-5 demonstrates heredoc strings
   - Or when the variable contains text like a start-up script
 * We use the `file` command to read in the contents of a text file
 
-![](../artwork/FileInput.png)
 
-![](../artwork/FileInput2.png)
+<img src="../artwork/FileInput.png" style="width:55%;"/> <!-- {"left" : 12.68, "top" : 2.96, "height" : 1.68, "width" : 4.32} -->
+
+<img src="../artwork/FileInput2.png" style="width:55%;"/> <!-- {"left" : 12.04, "top" : 4.85, "height" : 2.07, "width" : 4.98} -->
+
 
 
 Notes:
@@ -413,8 +428,8 @@ This lab has students implement local variables and reading from a file
     - _This code was modified by ${myname}_
     - A local variable called _developer_ used to fill in the slot
   
-![](../artwork/templatefile1.png)
-  
+<img src="../artwork/templatefile1.png" style="width:55%;"/> <!-- {"left" : 11.12, "top" : 2.62, "height" : 2.21, "width" : 5.86} -->
+
 Notes:
 
 Example 2-7 illustrates the use of a templatefile
@@ -426,7 +441,7 @@ Example 2-7 illustrates the use of a templatefile
 
 * The rendered string can be output as shown below
 
-![](../artwork/templatefile2.png)
+
 
 ---
 
@@ -458,9 +473,12 @@ The code for this and in the screenshots on the next slide are example 2-8
 
 ## AMI Example
 
-![](../artwork/DataFilter1.png) 
+<img src="../artwork/DataFilter1.png" style="width:55%;"/> <!-- {"left" : 4.27, "top" : 2.84, "height" : 4.75, "width" : 8.96} -->
 
-![](../artwork/DataFilter2.png)
+
+<img src="../artwork/DataFilter2.png" style="width:55%;"/> <!-- {"left" : 4.28, "top" : 8.18, "height" : 2.38, "width" : 8.93} -->
+
+
 
 ---
 
@@ -470,7 +488,7 @@ The code for this and in the screenshots on the next slide are example 2-8
 * In this _providers.tf_, the default provider is AWS region _us-east-2_, but a second provider for _us-east-1_ can be set with the alias "Virginia"
 * We could have also had any other providers, like an Azure provider as well
 
-![](../artwork/providers1.png)
+<img src="../artwork/providers1.png" style="width:55%;"/> <!-- {"left" : 11.28, "top" : 2.28, "height" : 3.63, "width" : 5.81} -->
 
 Notes:
 
@@ -484,7 +502,8 @@ This is example 2-9
   - In no provider is specified, the default provider is used
 * In the example below, the EC2 instance "Ohio" is being created by the default provider while "Virginia" is being created by the us-east-1 provider
 
-![](../artwork/providers2.png)
+<img src="../artwork/providers2.png" style="width:55%;"/> <!-- {"left" : 11.45, "top" : 2.04, "height" : 5.01, "width" : 5.58} -->
+
 
 ---
 
@@ -493,4 +512,3 @@ This is example 2-9
 * Please do lab 2-5
 * This is a bit more challenging to end the module
 
----

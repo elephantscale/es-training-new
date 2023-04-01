@@ -5,7 +5,8 @@
 
 ## You may not need to set up anything
 * If you are in the right environment
-![](../artwork/03.png)
+
+<img src="../artwork/03.png" style="width:55%;"/> <!-- {"left" : 4.46, "top" : 4.61, "height" : 3.7, "width" : 8.57} -->
 
 ---
 
@@ -42,7 +43,8 @@
   - You will need a credit or debit card to set up the account
   - You will also need to use an email address that has not been used to set up an AWS account
   
-![](../artwork/AWS-Signup-1.png)
+<img src="../artwork/AWS-Signup-1.png" style="width:55%;"/> <!-- {"left" : 10.25, "top" : 2.75, "height" : 2.4, "width" : 6.81} -->
+
 
 ---
 
@@ -53,7 +55,8 @@
   - If you use AWS resources that are _not_ in the free tier, you could incur charges
   - __Keeping your resource usage within the limits of the free tier is YOUR responsibility__
   
-![](../artwork/AWS-Free_Tier-1.png)
+<img src="../artwork/AWS-Free_Tier-1.png" style="width:55%;"/> <!-- {"left" : 8.72, "top" : 2.11, "height" : 4.66, "width" : 8.21} -->
+
 
 ---
 
@@ -63,7 +66,8 @@
 * __It is your responsibility to ensure you do not exceed these limits__
   - The instructor will provide pointers on how to ensure your AWS resources in class are cleaned up
   
-![](../artwork/AWS-Free_Tier-2.png)
+
+<img src="../artwork/AWS-Free_Tier-2.png" style="width:55%;"/> <!-- {"left" : 3.77, "top" : 6.65, "height" : 4.09, "width" : 9.95} -->
 
 ---
 
@@ -76,7 +80,8 @@
   - It should be only used for billing related work
 * Instead, AWS recommends setting up an administrative IAM user
 
-![](../artwork/AWS-Login-1.png)
+<img src="../artwork/AWS-Login-1.png" style="width:55%;"/> <!-- {"left" : 12.33, "top" : 1.57, "height" : 7.18, "width" : 4.44} -->
+
 
 ---
 
@@ -87,8 +92,9 @@
 * Set the password to what you want
 * Disable the "Require Password Reset" option
 * Select "Next"
- 
-![](../artwork/AWS-Create-User-1.png)
+
+ <img src="../artwork/AWS-Create-User-1.png" style="width:55%;"/> <!-- {"left" : 8.78, "top" : 1.99, "height" : 6.34, "width" : 8.06} -->
+
 
 ---
 ## Step Two: Adding Permissions
@@ -97,7 +103,7 @@
 * Select the `AdministratorAccess` policy
   - You may have to search for it
   
-![](../artwork/AWS-Create-User-2.png)
+ <img src="../artwork/AWS-Create-User-2.png" style="width:55%;"/> <!-- {"left" : 4.6, "top" : 5.15, "height" : 5.52, "width" : 8.29} -->
 
 ---
 ## Step Two: Review the User
@@ -106,7 +112,8 @@
   - If not, go back and make the necessary changes
   - If it matches, press "Create User"
 
-![](../artwork/AWS-Create-User-3.png)
+ <img src="../artwork/AWS-Create-User-3.png" style="width:55%;"/> <!-- {"left" : 3.69, "top" : 5.8, "height" : 4.87, "width" : 10.11} -->
+
 
 ---
 
@@ -116,8 +123,8 @@
   - Bookmark the URL for AWS Management Console access
   - YoHu don't need to download the .csv file, just click on "Close"
   
+ <img src="../artwork/AWS-Create-User-4.png" style="width:55%;"/> <!-- {"left" : 3.6, "top" : 5.47, "height" : 5.44, "width" : 10.3} -->
 
-![](../artwork/AWS-Create-User-4.png)
 
 ---
 
@@ -126,8 +133,11 @@
 * Log out as the root user and login with the new Admin account ID
   - Use the URL you bookmarked
   - Your AWS account will show nine digits, the screenshots show my account with an alias I've set up
-![](../artwork/AWS-AdminUser-login.png)
+
+ <img src="../artwork/AWS-AdminUser-login.png" style="width:55%;"/> <!-- {"left" : 3.97, "top" : 5.93, "height" : 5.05, "width" : 9.56} -->
+
 ---
+
 
 ## Step Two: Create a Developer User
 
@@ -143,9 +153,9 @@
   - You can always change this later
 ---
 
-## Step Two: Restrictive Permissions for `Dev`
+## Step Two: Restrictive Permissions for Dev
 
-![](../artwork/AWS-Dev-1.png)
+ <img src="../artwork/AWS-Dev-1.png" style="width:55%;"/> <!-- {"left" : 2.29, "top" : 2.82, "height" : 8.1, "width" : 12.91} -->
 
 ---
 
@@ -155,7 +165,9 @@
 * Alternatively, you can just copy them from the display and store them yourself in a text file
 * Logout of the AdminUser account
 
-![](../artwork/AWS-Dev-2.png)
+
+ <img src="../artwork/AWS-Dev-2.png" style="width:55%;"/> <!-- {"left" : 3.45, "top" : 6.16, "height" : 5.12, "width" : 10.6} -->
+
 ---
 
 ## Step Three: Download and Install the AWS CLI
@@ -163,7 +175,8 @@
 * If you don't already have it installed on your local machine, download the appropriate installer from:
   - [cli-download] (https://https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
   
-![](../artwork/AWS-CLI-1.png)
+ <img src="../artwork/AWS-CLI-1.png" style="width:55%;"/> <!-- {"left" : 3.35, "top" : 6.1, "height" : 5, "width" : 10.79} -->
+
 
 ---
 
@@ -172,7 +185,8 @@
 * Confirm the installation by using the `AWS --version` command
 * If your AWS CLI is installed correctly, then you should see something like this:
 
-![](../artwork/AWS-CLI-2-win.png)
+ <img src="../artwork/AWS-CLI-2-win.png" style="width:55%;"/> <!-- {"left" : 3.07, "top" : 6.54, "height" : 2.86, "width" : 11.37} -->
+
 
 ---
 
@@ -184,9 +198,10 @@
 * Using the credentials, set up your profile using the `AWS configure --profile <name>`
   - You can leave the default region and output type set to [NONE]
   
-![](../artwork/AWS-CREDS.png)
-  
-![](../artwork/AWS-Profile-Setup.png)
+ <img src="../artwork/AWS-CREDS.png" style="width:55%;"/> <!-- {"left" : 8.93, "top" : 2.18, "height" : 1.45, "width" : 8.01} -->
+
+ <img src="../artwork/AWS-Profile-Setup.png" style="width:55%;"/> <!-- {"left" : 8.93, "top" : 3.99, "height" : 1.49, "width" : 8.01} -->
+
 
 ---
 
@@ -197,7 +212,8 @@
   - Use the IAM name for the developer account you created for `<name>`
   - Use the profile name you created locally for `<profile-name>`
 
-![](../artwork/AWS-CLI-Verification.png)
+ <img src="../artwork/AWS-CLI-Verification.png" style="width:55%;"/> <!-- {"left" : 4.14, "top" : 6.86, "height" : 4.22, "width" : 9.21} -->
+
 
 ---
 ## Step Five: OH NO! I LOST MY CREDENTIALS
@@ -207,7 +223,7 @@
   - You can do this either as the developer user or the admin user
 * You should change your credentials if you suspect they are no longer secret
 
-![](../artwork/TheScream.jpg)
+ <img src="../artwork/TheScream.jpg" style="width:55%;"/> <!-- {"left" : 10.33, "top" : 1.74, "height" : 6.59, "width" : 6.59} -->
 
 ---
 
@@ -217,14 +233,14 @@
 * Go to the IAM service and select the user whose credentials are to be changed
 * Open up the "Security credentials" tab
 
-![](../artwork/AWS-RESET-CREDS-1.png)
+ <img src="../artwork/AWS-RESET-CREDS-1.png" style="width:55%;"/> <!-- {"left" : 9.22, "top" : 1.86, "height" : 5.83, "width" : 7.63} -->
 
 ---
 ## Step Five: Invalidate Credentials
 
 * In the access key section, select the "Make inactive" option
 
-![](../artwork/AWS-RESET-CREDS-2.png)
+ <img src="../artwork/AWS-RESET-CREDS-2.png" style="width:55%;"/> <!-- {"left" : 1.99, "top" : 5.08, "height" : 3.25, "width" : 13.53} -->
 
 ---
 
@@ -232,7 +248,7 @@
 
 * Click on the black x to delete the deactivated keys
 
-![](../artwork/AWS-RESET-CREDS-3.png)
+ <img src="../artwork/AWS-RESET-CREDS-3.png" style="width:55%;"/> <!-- {"left" : 1.96, "top" : 4.53, "height" : 3.33, "width" : 13.57} -->
 
 ---
 
@@ -241,7 +257,8 @@
 * Click on the "Create access key" button
 * Download the *.csv file and go back and use these to set your AWS CLI credentials
 
-![](../artwork/AWS-RESET-CREDS-4.png)
+ <img src="../artwork/AWS-RESET-CREDS-4.png" style="width:55%;"/> <!-- {"left" : 3.79, "top" : 4.85, "height" : 5.17, "width" : 9.91} -->
+
 
 ---
 
@@ -252,7 +269,8 @@
   - Download the correct binary archive for your local system
   - Extract the archive and place the binary on your local path
   
-![](../artwork/TerraformDownloads.png)
+
+ <img src="../artwork/TerraformDownloads.png" style="width:55%;"/> <!-- {"left" : 9.42, "top" : 1.54, "height" : 5.39, "width" : 7.61} -->
 
 ---
 
@@ -260,7 +278,8 @@
 
 * Run the command `terraform version` to ensure terraform is installed correctly
 
-![](../artwork/TerraformVersion.png)
+ <img src="../artwork/TerraformVersion.png" style="width:55%;"/> <!-- {"left" : 3.69, "top" : 4.54, "height" : 3.33, "width" : 10.12} -->
+
 
 ---
 
@@ -269,7 +288,6 @@
 * You are now able to work with terraform and AWS
 
 
----
 
 
 

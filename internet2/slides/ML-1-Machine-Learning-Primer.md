@@ -5,8 +5,7 @@
 
 ## Lesson Objectives
 
-<img src="../../assets/images/generic/3rd-party/terminator-2.png" style="width:40%;float:right;"><!-- {"left" : 9.35, "top" : 2.29, "height" : 5.79, "width" : 7.71} -->
-
+<img src="../../assets/images/generic/3rd-party/terminator-2.png" style="width:40%;float:right;"><!-- {"left" : 9.35, "top" : 1.62, "height" : 5.79, "width" : 7.71} -->
 
  * Learn Machine Learning use cases
 
@@ -35,17 +34,17 @@ Notes:
 
 ## AI is Everywhere
 
-<img src="../../assets/images/generic/3rd-party/google-map-navigation-2.png" style="width:20%;float:right;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
+<img src="../../assets/images/generic/3rd-party/google-map-navigation-2.png" style="width:20%;float:right;"/> <!-- {"left" : 13.45, "top" : 1.95, "height" : 5.88, "width" : 3.31} -->
 
-<img src="../../assets/images/logos/gmail_logo_2_small.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
-<img src="../../assets/images/logos/netflix-logo-1.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
-<img src="../../assets/images/logos/facebook-logo-1.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
-<img src="../../assets/images/logos/spotify-logo-1.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
-<img src="../../assets/images/logos/amazon-logo-1.png" style="width:20%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
+<img src="../../assets/images/logos/gmail_logo_2_small.png" style="width:20%;"/> <!-- {"left" : 0.96, "top" : 3.88, "height" : 1.35, "width" : 3.24} -->
+<img src="../../assets/images/logos/netflix-logo-1.png" style="width:20%;"/> <!-- {"left" : 0.89, "top" : 1.8, "height" : 1.56, "width" : 3.37} -->
+<img src="../../assets/images/logos/facebook-logo-1.png" style="width:20%;"/> <!-- {"left" : 4.99, "top" : 1.8, "height" : 1.56, "width" : 3.71} -->
+<img src="../../assets/images/logos/spotify-logo-1.png" style="width:20%;"/> <!-- {"left" : 4.73, "top" : 3.88, "height" : 1.11, "width" : 3.71} -->
+<img src="../../assets/images/logos/amazon-logo-1.png" style="width:20%;"/> <!-- {"left" : 9.43, "top" : 1.94, "height" : 1.28, "width" : 3.91} -->
 
-<img src="../../assets/images/machine-learning/3rd-party/recommendations-1-amazon.png" style="width:35%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
-<img src="../../assets/images/machine-learning/3rd-party/alexa-1.jpg" style="width:34%;"/><!-- {"left" : 1.34, "top" : 2.58, "height" : 4.15, "width" : 14.82} -->
+<img src="../../assets/images/machine-learning/3rd-party/recommendations-1-amazon.png" style="width:35%;"/> <!-- {"left" : 5.11, "top" : 8.48, "height" : 3.4, "width" : 7.27} -->
 
+<img src="../../assets/images/machine-learning/3rd-party/alexa-1.jpg" style="width:34%;"/><!-- {"left" : 5.85, "top" : 5.24, "height" : 3.25, "width" : 5.81} -->
 
 ---
 
@@ -64,7 +63,7 @@ https://www.youtube.com/watch?v=HcqpanDadyQ
 
 ## What is Machine Learning
 
-<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 13.23, "top" : 2.44, "height" : 5.1, "width" : 3.62} -->
+<img src="../../assets/images/people/Arthur-Samuel.png" alt="Arthur-Samuel.png" style="width:20%;float:right;"/><!-- {"left" : 13.23, "top" : 1.25, "height" : 5.1, "width" : 3.62} -->
 
 * **"The field of study that gives computers the ability to learn without being explicitly programmed."**  
  -- Arthur Samuel
@@ -77,7 +76,7 @@ Notes:
 
 ## Traditional Programming vs. Machine Learning
 
-<img src="../../assets/images/machine-learning/rules-vs-AI-2.png"  style="width:40%;float:right;"/><!-- {"left" : 10.58, "top" : 1.88, "height" : 5.83, "width" : 6.71} -->
+<img src="../../assets/images/machine-learning/rules-vs-AI-2.png"  style="width:40%;float:right;"/><!-- {"left" : 10.33, "top" : 1.88, "height" : 5.83, "width" : 6.71} -->
 
 * Here is an example of spam detection rule engine
 
@@ -97,7 +96,7 @@ else if ( email.text.contains ("free loans", "cheap degrees"))
 }
 
 ```
-<!-- {"left" : 0.8, "top" : 5.13, "height" : 2.32, "width" : 11.11} -->
+<!-- {"left" : 0.8, "top" : 6.91, "height" : 2.32, "width" : 11.11} -->
 
 Notes:
 
@@ -136,8 +135,6 @@ Notes:
 
 - Let's start with simple housing sales data
 
-<br/>
-
 | Bedrooms (input 1) | Bathrooms (input 2) | Size (input 3) | Sale Price (in thousands) (we are trying to predict) |
 |--------------------|---------------------|----------------|------------------------------------------------------|
 | 3                  | 1                   | 1500           | 230                                                  |
@@ -146,7 +143,8 @@ Notes:
 | 4                  | 2                   | 2000           | 500                                                  |
 | 4                  | 3.5                 | 2200           | 550                                                  |
 
-<!-- {"left" : 0.81, "top" : 2.73, "height" : 3.38, "width" : 15.88} -->
+<!-- {"left" : 0.81, "top" : 2.87, "height" : 1, "width" : 15.88, "columnwidth" : [3.02, 4.17, 3.08, 5.61]} -->
+
 
 * So our formula for predicting `SalePrice` is something like this:
 
@@ -158,7 +156,7 @@ Notes:
 
 ## Let's Play a Guessing Game!
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 11.35, "top" : 2.14, "height" : 4.14, "width" : 6.22} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 10.5, "top" : 1.19, "height" : 4.14, "width" : 6.22} -->
 
 * Look at the data below.  Come up with a formula linking X and Y
 
@@ -168,7 +166,7 @@ Notes:
 | 1 | 2 |
 | 2 | 5 |
 
-<!-- {"left" : 0.83, "top" : 3.95, "height" : 1.5, "width" : 6.63} -->
+<!-- {"left" : 0.83, "top" : 4.37, "height" : 1.5, "width" : 6.63} -->
 
 * So what is the formula?
 
@@ -180,7 +178,7 @@ Notes:
 
 ## Guessing Game
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 11.35, "top" : 2.14, "height" : 4.14, "width" : 6.22} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /> <!-- {"left" : 10.5, "top" : 1.19, "height" : 4.14, "width" : 6.22} -->
 
 | X | Y |
 |---|---|
@@ -199,7 +197,7 @@ Notes:
 
 ## Guessing Game
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 11.35, "top" : 2.14, "height" : 4.14, "width" : 6.22} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /> <!-- {"left" : 10.5, "top" : 1.19, "height" : 4.14, "width" : 6.22} -->
 
 * Let me provide more data
 
@@ -220,7 +218,7 @@ Notes:
 
 ## Guessing Game
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /><!-- {"left" : 11.35, "top" : 2.14, "height" : 4.14, "width" : 6.22} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;float:right;clear:both;" /> <!-- {"left" : 10.5, "top" : 1.19, "height" : 4.14, "width" : 6.22} -->
 
 
 | X | Y  |
@@ -230,7 +228,7 @@ Notes:
 | 3 | 10 |
 | 4 | 17 |
 
-<!-- {"left" : 0.83, "top" : 3.18, "height" : 2.5, "width" : 6.23} -->
+<!-- {"left" : 0.83, "top" : 1.97, "height" : 2.5, "width" : 6.23} -->
 
 * With more data, we can finalize on a formula
 
@@ -253,7 +251,7 @@ Notes:
 | 3                  | 2                   | 1900           | ???                                 |
 | 4                  | 3                   | 2300           | ???                                 |
 
-<!-- {"left" : 0.95, "top" : 4, "height" : 1.88, "width" : 15.59} -->
+<!-- {"left" : 0.97, "top" : 4, "height" : 1, "width" : 15.59} -->
 
 
 
@@ -268,7 +266,7 @@ Notes:
 | Algorithmic trading | Patient care              | Customer retentions | Fully automated assemblies | Facial recognition       |
 | Credit Approvals    | Treatment recommendations |                     |                            |                          &nbsp;|
 
-<!-- {"left" : 0.31, "top" : 3.01, "height" : 1, "width" : 16.93, "columnwidth" : [3.17, 3.61, 3.19, 3.33, 3.64]} -->
+<!-- {"left" : 0.14, "top" : 3.01, "height" : 1, "width" : 16.93, "columnwidth" : [3.17, 3.61, 3.19, 3.33, 3.64]} -->
 
 ---
 
@@ -357,7 +355,7 @@ Notes:
 ## Hardware Advances - TPU
 
 <img src="../../assets/images/deep-learning/3rd-party/cloud-tpu-01.png" style="width:30%;float:right;"/><!-- {"left" : 12.73, "top" : 1.66, "height" : 2.99, "width" : 4.38} -->
-<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:40%;float:right;clear:both;"><!-- {"left" : 10.15, "top" : 6.2, "height" : 3.31, "width" : 6.96} -->
+<img src="../../assets/images/machine-learning/3rd-party/google-cloud-tpu.png" style="width:40%;float:right;clear:both;"><!-- {"left" : 10.15, "top" : 6.59, "height" : 3.31, "width" : 6.96} -->
 
  * TPU is Google's custom chip built for AI workloads
     - 3rd generation as of March 2018
@@ -679,7 +677,7 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
-<!-- {"left" : 0.37, "top" : 2.36, "height" : 1, "width" : 16.76, "columnwidth" : [4.34, 5.57, 6.86]} -->
+<!-- {"left" : 0.37, "top" : 1.3, "height" : 1, "width" : 16.76, "columnwidth" : [4.34, 5.57, 6.86]} -->
 
 
 
@@ -753,7 +751,7 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
-<!-- {"left" : 0.78, "top" : 2.48, "height" : 1, "width" : 15.95} -->
+<!-- {"left" : 0.78, "top" : 1.3, "height" : 1, "width" : 15.95} -->
 
 Notes:
 
@@ -768,7 +766,7 @@ Notes:
 | Data has well defined structure.                         | Structure is not well defined or non existing |
 | Data in a database tables are well defined.  10 columns, first column is integer, second column is timestamp ..etc | videos, images                                             |
 
-<!-- {"left" : 3.84, "top" : 2.19, "height" : 1, "width" : 14.75, "columnwidth" : [6.33, 3.49]} -->
+<!-- {"left" : 1.75, "top" : 1.6, "height" : 1, "width" : 14, "columnwidth" : [7.36, 7.36]} -->
 
 <img src="../../assets/images/deep-learning/3rd-party/Structured-Data-Unstructured-Data.png" alt="XXX image not found" style="max-width:60%;"/><!-- {"left" : 3.91, "top" : 6.02, "height" : 5.16, "width" : 9.69} -->
 
@@ -800,7 +798,7 @@ JSON data
 {   "name" : "Joe",
     "email" : "joe@gmail.com" }
 ```
-<!-- {"left" : 0.85, "top" : 7.94, "height" : 0.61, "width" : 4.51} -->
+<!-- {"left" : 0.85, "top" : 8.94, "height" : 0.61, "width" : 4.51} -->
 
 
 CSV data (Comma Seperated Values)
@@ -809,7 +807,7 @@ CSV data (Comma Seperated Values)
 joe,joe@gmail.com
 jane,jane@gmail.com
 ```
-<!-- {"left" : 0.85, "top" : 9.4, "height" : 1.06, "width" : 5.15} -->
+<!-- {"left" : 0.85, "top" : 10.46, "height" : 1.06, "width" : 5.15} -->
 
 
 
@@ -880,7 +878,7 @@ Notes:
 | Execution Time                       | Training usually takes seconds, minutes, hours                | Training takes lot longer (days)                                 |
 | Interpretability                     | Easy to interpret                                             | Hard to understand the final result                              |
 
-<!-- {"left" : 0.78, "top" : 2.48, "height" : 1, "width" : 15.95, "columnwidth" : [4.68, 5.19, 6.09]} -->
+<!-- {"left" : 0.78, "top" : 1.3, "height" : 1, "width" : 15.95, "columnwidth" : [4.68, 5.19, 6.09]} -->
 
 
 Notes:
@@ -1074,7 +1072,7 @@ Notes:
 | Association              | Find similar patterns                   | -people who buy A also buy B                                      |
 | Dimensionality Reduction | Reduces number of features              | -Reducing 999s of variables into manageable size                 |
 
-<!-- {"left" : 0.42, "top" : 7.23, "height" : 1, "width" : 16.72, "columnwidth" : [5.33, 5.09, 6.29]} -->
+<!-- {"left" : 0.42, "top" : 6.45, "height" : 1, "width" : 16.72, "columnwidth" : [5.33, 5.09, 6.29]} -->
 
 Notes:
 
@@ -1151,7 +1149,7 @@ Notes:
 
 ## Unsupervised Example: Google News
 
-<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="width:50%;float:right;"><!-- {"left" : 10.43, "top" : 2.77, "height" : 6.59, "width" : 6.56} -->
+<img src="../../assets/images/machine-learning/3rd-party/Google-News-1.png" style="width:50%;float:right;"><!-- {"left" : 10.43, "top" : 1.66, "height" : 6.59, "width" : 6.56} -->
 
  * Google News algorithm automatically groups **related news stories**  into sections
 
@@ -1402,7 +1400,7 @@ Notes:
 
 ## Tools for Scalable Machine Learning
 
-<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;"><!-- {"left" : 12.75, "top" : 1.89, "height" : 2.3, "width" : 4.31} -->
+<img src="../../assets/images/logos/spark-logo-1.png" style="width:20%;float:right;"><!-- {"left" : 14.13, "top" : 0.57, "height" : 1.34, "width" : 2.52} -->
 
  *  **Spark ML**
      - Runs on top of popular Spark framework
@@ -1418,7 +1416,7 @@ Notes:
      - [Amazon Machine Learning](https://aws.amazon.com/machine-learning/), Azure Machine Learning,  Google ML
 
 
- <img src="../../assets/images/logos/aws-logo-2.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 1.68, "top" : 9.6, "height" : 1.23, "width" : 5.35} --> <img src="../../assets/images/logos/azure-logo-1.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 7.18, "top" : 9.64, "height" : 1.14, "width" : 3.96} --> <img src="../../assets/images/logos/google-cloud-logo-2.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 11.32, "top" : 9.71, "height" : 1.01, "width" : 4.5} -->
+ <img src="../../assets/images/logos/aws-logo-2.png"  style="width:25%;"/> <!-- {"left" : 13.99, "top" : 2.58, "height" : 1.06, "width" : 2.81} --> &nbsp;<img src="../../assets/images/logos/azure-logo-1.png"  style="width:25%;"/> <!-- {"left" : 13.65, "top" : 4.48, "height" : 1, "width" : 3.48} --> &nbsp; <img src="../../assets/images/logos/google-cloud-logo-2.png"  style="width:25%;"/> &nbsp; <!-- {"left" : 13.69, "top" : 6.31, "height" : 1.11, "width" : 3.4} -->
 
 
 
@@ -1435,7 +1433,7 @@ Notes:
 
 ## Tools for Scalable Deep Learning
 
-<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 13.87, "top" : 1.89, "height" : 2.9, "width" : 3.4} -->
+<img src="../../assets/images/logos/tensorflow-logo-1.png" style="width:20%;float:right;"/><!-- {"left" : 13.19, "top" : 1.6, "height" : 2.9, "width" : 3.4} -->
 
  *  **`TensorFlow`**
      - Based on "data flow graphs"
@@ -1445,7 +1443,7 @@ Notes:
 
 <br  clear="all"/>
 
-<img src="../../assets/images/logos/bigdl-logo-1.png" style="width:25%;float:right;"/><!-- {"left" : 13.79, "top" : 6.37, "height" : 1.63, "width" : 3.55} -->
+<img src="../../assets/images/logos/bigdl-logo-1.png" style="width:25%;float:right;"/><!-- {"left" : 13.29, "top" : 6.29, "height" : 1.63, "width" : 3.55} -->
 
  *  **`Intel BigDL`**  
 
@@ -1477,7 +1475,7 @@ Notes:
 
 * What is supervised learning? Unsupervised learning?
 
-<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.45, "top" : 6, "height" : 5.46, "width" : 8.18} -->
+<img src="../../assets/images/icons/quiz-icon.png" style="width:40%;" /><!-- {"left" : 4.45, "top" : 6.35, "height" : 5.46, "width" : 8.18} -->
 
 
 Notes:

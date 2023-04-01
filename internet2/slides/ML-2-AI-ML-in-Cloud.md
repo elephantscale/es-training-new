@@ -162,7 +162,8 @@ Source: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-hosting.htm
 
 ## Using Google ML
 
-![](../artwork/10-ai-01.png)
+<img src="../artwork/10-ai-01.png" style="width:55%;"/> <!-- {"left" : 1.4, "top" : 2.41, "height" : 7.56, "width" : 14.7} -->
+
 
 Notes:
 
@@ -200,20 +201,21 @@ TensorFlow and Cloud AI Platform
 
 ## Look, ma, no machine learning knowledge!
 
-![](../artwork/10-ai-02.png)
+<img src="../artwork/10-ai-02.png" style="width:55%;"/> <!-- {"left" : 0.97, "top" : 2.94, "height" : 6.52, "width" : 15.57} -->
+
 
 ---
 
 ## Examples
 
-![](../artwork/10-ai-03.png)
+<img src="../artwork/10-ai-03.png" style="width:55%;"/> <!-- {"left" : 0.92, "top" : 2.39, "height" : 7.6, "width" : 15.65} -->
 
 ---
 
 
 ## Images
 
-![](../artwork/10-ai-04.png)
+<img src="../artwork/10-ai-04.png" style="width:55%;"/> <!-- {"left" : 1.38, "top" : 2.39, "height" : 7.61, "width" : 14.74} -->
 
 ---
 
@@ -238,7 +240,8 @@ Notes:
 
 ## Microsoft AI approach
 
-![](../artwork/ai-01.png)
+<img src="../artwork/ai-01.png" style="width:55%;"/> <!-- {"left" : 1.87, "top" : 3.71, "height" : 4.97, "width" : 13.76} -->
+
 
 Notes:
 
@@ -252,7 +255,7 @@ Notes:
 
 ## Azure Cognitive Service real world examples
 
-![](../artwork/ai-02.png)
+<img src="../artwork/ai-02.png" style="width:55%;"/> <!-- {"left" : 1.95, "top" : 3.67, "height" : 5.05, "width" : 13.6} -->
 
 Notes:
 
@@ -273,19 +276,20 @@ Notes:
 
 ## Spectrum of AI implementations
 
-![](../artwork/ai-03.png)
+<img src="../artwork/ai-03.png" style="width:55%;"/> <!-- {"left" : 1.3, "top" : 4.58, "height" : 3.23, "width" : 14.9} -->
 
 ---
 
 ## ML categories
 
-![](../artwork/ai-04.png)
+<img src="../artwork/ai-04.png" style="width:55%;"/> <!-- {"left" : 2.16, "top" : 3.04, "height" : 6.3, "width" : 13.18} -->
+
 
 ---
 
 ## Prepare - deploy
 
-![](../artwork/ai-05.png)
+<img src="../artwork/ai-05.png" style="width:55%;"/> <!-- {"left" : 2.82, "top" : 2.23, "height" : 2.15, "width" : 11.86} -->
 
 
 * Tensorflow, PyTorch, or Chainer. 
@@ -303,7 +307,8 @@ Notes:
 
 ## Azure Machine Learning
 
-![](../artwork/10-ai-05.png)
+<img src="../artwork/10-ai-05.png" style="width:55%;"/> <!-- {"left" : 2.08, "top" : 2.62, "height" : 7.15, "width" : 13.34} -->
+
 
 ---
 
@@ -358,7 +363,7 @@ Notes:
 
 ## Doug Burger Azure Architect on FPGA
 
-![](../artwork/ai-06.png)
+<img src="../artwork/ai-06.png" style="width:55%;"/> <!-- {"left" : 3.86, "top" : 2.15, "height" : 6, "width" : 9.77} -->
 
 * YouTube
 * [https://www.youtube.com/watch?v=iJo_sSzioxM&t=2659s](https://www.youtube.com/watch?v=iJo_sSzioxM&t=2659s)
@@ -382,7 +387,7 @@ Notes:
 
 ## Colab at a glance
 
-![](../artwork/ai-07.png)
+<img src="../artwork/ai-07.png" style="width:55%;"/> <!-- {"left" : 1.56, "top" : 2.94, "height" : 6.5, "width" : 14.38} -->
 
 ---
 
@@ -419,6 +424,5 @@ Notes:
 ## Congrats on completion
 
 
-![](../artwork/congrats.png)
+<img src="../artwork/congrats.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 4.57, "height" : 3.25, "width" : 15.41} -->
 
----

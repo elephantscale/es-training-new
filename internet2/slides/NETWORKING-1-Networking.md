@@ -29,13 +29,14 @@
 * VPCs are for building your private clouds. Depending on cloud implementation, 
 they can span regions, but we will not cover such architectures because they are unlikely
 
-![](../artwork/04-vpc-01.png)
+<img src="../artwork/04-vpc-01.png" style="width:55%;"/> <!-- {"left" : 3.81, "top" : 5.11, "height" : 5.07, "width" : 9.88} -->
+
 
 ---
 
 ## VPC Example
 
-![](../artwork/04-vpc-02.png)
+<img src="../artwork/04-vpc-02.png" style="width:55%;"/> <!-- {"left" : 1.75, "top" : 2.91, "height" : 6.57, "width" : 14} -->
 
 ---
 
@@ -43,13 +44,15 @@ they can span regions, but we will not cover such architectures because they are
 
 * Security groups
 * Network access control lists (ACLs)
-![](../artwork/04-vpc-03.png)
+
+<img src="../artwork/04-vpc-03.png" style="width:55%;"/> <!-- {"left" : 4.98, "top" : 4.67, "height" : 6.09, "width" : 7.55} -->
+
 
 ---
 
 ## VPN Connections
 
-![](../artwork/04-vpc-04.png)
+<img src="../artwork/04-vpc-04.png" style="width:55%;"/> <!-- {"left" : 2.06, "top" : 1.86, "height" : 5.1, "width" : 13.38} -->
 
 * Other clouds give similar options
 
@@ -146,7 +149,8 @@ Notes:
 
 ## Example of Using Two Availability Zones
 
-![](../artwork/04-vpc-05.png)
+<img src="../artwork/04-vpc-05.png" style="width:55%;"/> <!-- {"left" : 4.4, "top" : 2.83, "height" : 8.07, "width" : 8.69} -->
+
 
 ---
 
@@ -176,7 +180,8 @@ Notes:
 
 ## AWS Infrastructure Patterns
 
-![](../artwork/04-vpc-06.png)
+<img src="../artwork/04-vpc-06.png" style="width:55%;"/> <!-- {"left" : 1.27, "top" : 2.69, "height" : 7, "width" : 14.96} -->
+
 
 ---
 
@@ -247,55 +252,61 @@ Notes:
 
 ## IPs and CIDR
 
-![](../artwork/04-vpc-07.png)
+<img src="../artwork/04-vpc-07.png" style="width:55%;"/> <!-- {"left" : 1.4, "top" : 3.65, "height" : 6.43, "width" : 14.7} -->
 
 ---
 
 ## IPs and CIDR
 
-![](../artwork/04-vpc-08.png)
+<img src="../artwork/04-vpc-08.png" style="width:55%;"/> <!-- {"left" : 1.12, "top" : 3.19, "height" : 6.01, "width" : 15.26} -->
+
 
 ---
 
 ## IPs and CIDR
 
-![](../artwork/04-vpc-09.png)
+<img src="../artwork/04-vpc-09.png" style="width:55%;"/> <!-- {"left" : 1.2, "top" : 3.17, "height" : 6.04, "width" : 15.11} -->
+
 
 ---
 
 ## CIDR Example: 10.0.0.0/16
 
-![](../artwork/04-vpc-10.png)
+<img src="../artwork/04-vpc-10.png" style="width:55%;"/> <!-- {"left" : 1.17, "top" : 3.27, "height" : 5.85, "width" : 15.17} -->
+
 
 ---
 
 ## VPCs and IP Addresses
 
-![](../artwork/04-vpc-11.png)
+<img src="../artwork/04-vpc-11.png" style="width:55%;"/> <!-- {"left" : 1.53, "top" : 3.01, "height" : 6.36, "width" : 14.44} -->
 
 ---
 
 ## What Are Subnets?
 
-![](../artwork/04-vpc-12.png)
+<img src="../artwork/04-vpc-12.png" style="width:55%;"/> <!-- {"left" : 1.11, "top" : 2.79, "height" : 6.8, "width" : 15.28} -->
+
 
 ---
 
 ## How to Use Subnets
 
-![](../artwork/04-vpc-13.png)
+<img src="../artwork/04-vpc-13.png" style="width:55%;"/> <!-- {"left" : 0.79, "top" : 3.05, "height" : 6.3, "width" : 15.93} -->
+
 
 ---
 
 ## Subnets
 
-![](../artwork/04-vpc-14.png)
+<img src="../artwork/04-vpc-14.png" style="width:55%;"/> <!-- {"left" : 0.97, "top" : 2.97, "height" : 6.46, "width" : 15.56} -->
+
 
 ---
 
 ## Subnets
 
-![](../artwork/04-vpc-15.png)
+<img src="../artwork/04-vpc-15.png" style="width:55%;"/> <!-- {"left" : 0.97, "top" : 2.84, "height" : 6.71, "width" : 15.56} -->
 
 ---
 
@@ -353,7 +364,8 @@ Notes:
 
 * **Best practice:** For better security, use custom route tables for each subnet.
 
-![](../artwork/04-vpc-16.png)
+<img src="../artwork/04-vpc-16.png" style="width:55%;"/> <!-- {"left" : 11.95, "top" : 1.62, "height" : 5.38, "width" : 4.95} -->
+
 
 Notes:
 
@@ -381,7 +393,8 @@ Notes:
 
 ## Security Groups
 
-![](../artwork/04-vpc-17.png)
+<img src="../artwork/04-vpc-17.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 2.72, "height" : 6.96, "width" : 15.39} -->
+
 
 
 Notes: 
@@ -403,7 +416,7 @@ Notes:
 
 * Security group rules per application tier
 
-![](../artwork/04-vpc-18.png)
+<img src="../artwork/04-vpc-18.png" style="width:55%;"/> <!-- {"left" : 2.9, "top" : 3.78, "height" : 6.17, "width" : 11.69} -->
 
 ---
 
@@ -485,7 +498,8 @@ Notes:
     * Are a managed service: horizontally scaled, redundant, and highly available by default.
     * Provide a target in your VPC route tables for Internet-routable traffic.
 
-![](../artwork/04-vpc-19.png)
+<img src="../artwork/04-vpc-19.png" style="width:55%;"/> <!-- {"left" : 12.66, "top" : 2.12, "height" : 5.92, "width" : 4.42} -->
+
 
 ---
 
@@ -507,7 +521,8 @@ Notes:
 * Two primary options:
     * Amazon EC2 instance set up as a NAT in a public subnet
 
-![](../artwork/04-vpc-20.png)
+<img src="../artwork/04-vpc-20.png" style="width:55%;"/> <!-- {"left" : 10.85, "top" : 2.55, "height" : 4.67, "width" : 6.1} -->
+
 
 ---
 
@@ -520,13 +535,15 @@ Notes:
     * Amazon EC2 instance set up as a NAT in a public subnet
     * VPC NAT Gateway
 
-![](../artwork/04-vpc-21.png)
+<img src="../artwork/04-vpc-21.png" style="width:55%;"/> <!-- {"left" : 12.73, "top" : 1.92, "height" : 5.54, "width" : 4.27} -->
+
 
 ---
 
 ## VPC NAT Gateways vs. NAT Instances On Amazon EC2
 
-![](../artwork/04-vpc-22.png)
+<img src="../artwork/04-vpc-22.png" style="width:55%;"/> <!-- {"left" : 2.12, "top" : 2.82, "height" : 6.75, "width" : 13.26} -->
+
 
 Notes:
 
@@ -536,7 +553,8 @@ Notes:
 
 ## Subnets, Gateways, and Routes
 
-![](../artwork/04-vpc-23.png)
+<img src="../artwork/04-vpc-23.png" style="width:55%;"/> <!-- {"left" : 0.94, "top" : 2.58, "height" : 7.22, "width" : 15.61} -->
+
 
 ---
 
@@ -547,7 +565,8 @@ Notes:
 * Can be enabled for VPCs, subnets, and ENIs.
 * Logs published to CloudWatch Logs.
 
-![](../artwork/04-vpc-24.png)
+<img src="../artwork/04-vpc-24.png" style="width:55%;"/> <!-- {"left" : 10.27, "top" : 2.16, "height" : 4.51, "width" : 6.53} -->
+
 
 ---
 
@@ -555,19 +574,21 @@ Notes:
 
 * Not the right way
 
-![](../artwork/04-vpc-25.png)
+<img src="../artwork/04-vpc-25.png" style="width:55%;"/> <!-- {"left" : 2.42, "top" : 3.62, "height" : 6.5, "width" : 12.66} -->
+
 
 ---
 
 ## VPC peering
 
-![](../artwork/04-vpc-26.png)
+<img src="../artwork/04-vpc-26.png" style="width:55%;"/> <!-- {"left" : 1.19, "top" : 2.92, "height" : 6.56, "width" : 15.11} -->
 
 ---
 
 ## How Does VPC Peering Work?
 
-![](../artwork/04-vpc-27.png)
+<img src="../artwork/04-vpc-27.png" style="width:55%;"/> <!-- {"left" : 1.12, "top" : 3.18, "height" : 6.03, "width" : 15.25} -->
+
 
 Notes:
 
@@ -587,7 +608,9 @@ Notes:
 
 ## Rules Of VPC Peering
 
-![](../artwork/04-vpc-28.png)
+<img src="../artwork/04-vpc-28.png" style="width:55%;"/> <!-- {"left" : 1.54, "top" : 3.08, "height" : 7.57, "width" : 14.43} -->
+
+
 
 Notes:
 
@@ -615,7 +638,8 @@ Notes:
 
 ## Extending On-Premises Network To AWS: VPN Connections
 
-![](../artwork/04-vpc-29.png)
+<img src="../artwork/04-vpc-29.png" style="width:55%;"/> <!-- {"left" : 0.98, "top" : 2.6, "height" : 7.19, "width" : 15.54} -->
+
 
 Notes:
 
@@ -630,8 +654,8 @@ Notes:
 
 ## Extending On-Premises Network To AWS: Multiple VPN
 
-![](../artwork/04-vpc-30.png)
- 
+<img src="../artwork/04-vpc-30.png" style="width:55%;"/> <!-- {"left" : 1.39, "top" : 2.75, "height" : 6.9, "width" : 14.72} -->
+
 Notes: 
 
 * Amazon VGW also supports and encourages multiple customer gateway connections so that customers can implement redundancy and failover on their side of the VPN connection, as shown on this slide. Both dynamic and static routing options are provided to give customers flexibility in their routing configuration. Dynamic routing leverages BGP peering to exchange routing information between AWS and these remote endpoints. Dynamic routing also allows customers to specify routing priorities, policies, and weights (metrics) in their BGP advertisements and to influence the network path between their networks and AWS. 
@@ -881,7 +905,8 @@ Notes:
 
 ## Network peering
 
-![](../artwork/04-vpc-31.png)
+<img src="../artwork/04-vpc-31.png" style="width:55%;"/> <!-- {"left" : 2.83, "top" : 3.1, "height" : 6.63, "width" : 11.84} -->
+
 
 ---
 
@@ -889,7 +914,7 @@ Notes:
 
 * Configure a number of basic settings
 
-![](../artwork/04-vpc-32.png)
+<img src="../artwork/04-vpc-32.png" style="width:55%;"/> <!-- {"left" : 3.2, "top" : 3.76, "height" : 6.87, "width" : 10.72} -->
 
 ---
 
@@ -897,7 +922,7 @@ Notes:
 
 * You will be able to adjust the settings later
 
-![](../artwork/04-vpc-33.png)
+<img src="../artwork/04-vpc-33.png" style="width:55%;"/> <!-- {"left" : 11.22, "top" : 1.57, "height" : 8.58, "width" : 5.61} -->
 
 ---
 
@@ -909,7 +934,8 @@ Notes:
     * Connect individual devices to virtual networks through a point-to-site connection.
     * Connect virtual networks to other virtual networks through a network-to-network connection.
 
-![](../artwork/04-vpc-34.png)
+<img src="../artwork/04-vpc-34.png" style="width:55%;"/> <!-- {"left" : 9.6, "top" : 1.6, "height" : 2.14, "width" : 7.31} -->
+
 
 ---
 
@@ -990,7 +1016,8 @@ Notes:
 
 ## Networks isolate systems
 
-![](../artwork/04-vpc-35.png)
+<img src="../artwork/04-vpc-35.png" style="width:55%;"/> <!-- {"left" : 1.88, "top" : 3.3, "height" : 7.13, "width" : 13.75} -->
+
 
 Notes:
 
@@ -1006,7 +1033,8 @@ Notes:
 * One VM and an alternate VM can be on the same subnet but in different zones.
 * A single firewall rule can apply to both VMs even though they are in different zones.
 
-![](../artwork/04-vpc-36.png)
+
+<img src="../artwork/04-vpc-36.png" style="width:55%;"/> <!-- {"left" : 11.13, "top" : 2.33, "height" : 5.4, "width" : 5.93} -->
 
 ---
 
@@ -1014,13 +1042,13 @@ Notes:
 
 * Networks have no IP range, so subnetworks don't need to fit into an address hierarchy. Instead, subnetworks can be used to group and manage resources. They can represent departments, business functions, or systems.
 
-![](../artwork/04-vpc-37.png)
+<img src="../artwork/04-vpc-37.png" style="width:55%;"/> <!-- {"left" : 4.33, "top" : 6.02, "height" : 4.5, "width" : 8.85} -->
 
 ---
 
 ## IP addresses
 
-![](../artwork/04-vpc-38.png)
+<img src="../artwork/04-vpc-38.png" style="width:55%;"/> <!-- {"left" : 2.29, "top" : 2.59, "height" : 6.54, "width" : 12.92} -->
 
 * External IPs are mapped to internal IPs
 
@@ -1117,4 +1145,4 @@ Notes:
 
 ## Congrats on completion
 
-![](../artwork/congrats.png)
+<img src="../artwork/congrats.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 4.57, "height" : 3.25, "width" : 15.41} -->

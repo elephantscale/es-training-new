@@ -5,7 +5,8 @@
 ## IAM - Identity and Access Management
 
 * Common cloud ideas
-![](../artwork/02-iam-01.png)
+
+<img src="../artwork/02-iam-01.png" style="width:55%;"/> <!-- {"left" : 2.72, "top" : 3.46, "height" : 7.96, "width" : 12.06} -->
 
 ---
 
@@ -22,7 +23,8 @@
 
 ## Shared security responsibility
 
-![](../artwork/02-iam-02.png)
+<img src="../artwork/02-iam-02.png" style="width:55%;"/> <!-- {"left" : 2.87, "top" : 2, "height" : 5.35, "width" : 11.75} -->
+
 
 * "Customer" can be a university, a researcher, and the data may be survey data
 
@@ -53,13 +55,15 @@ Notes:
 ## Physical security video
 
 * https://www.youtube.com/watch?v=kd33UVZhnAA
-![](../artwork/02-iam-03.png)
+
+<img src="../artwork/02-iam-03.png" style="width:55%;"/> <!-- {"left" : 2.28, "top" : 3.55, "height" : 6.87, "width" : 12.94} -->
+
 
 ---
 
 ## Certifications and accreditations
 
-![](../artwork/02-iam-04.png)
+<img src="../artwork/02-iam-04.png" style="width:55%;"/> <!-- {"left" : 2.94, "top" : 2.11, "height" : 5.32, "width" : 11.62} -->
 
 * FERPA
     * https://aws.amazon.com/blogs/security/ferpa-compliance-in-the-aws-cloud
@@ -74,7 +78,7 @@ Notes:
 
 ## AWS IAM  
 
-![](../artwork/02-iam-05.png)
+<img src="../artwork/02-iam-05.png" style="width:55%;"/> <!-- {"left" : 1.47, "top" : 3.2, "height" : 5.98, "width" : 14.56} -->
 
 ---
 
@@ -92,7 +96,8 @@ Notes:
 
 ## Logging in
 
-![](../artwork/02-iam-06.png)
+<img src="../artwork/02-iam-06.png" style="width:55%;"/> <!-- {"left" : 11.03, "top" : 0.85, "height" : 9.28, "width" : 6.06} -->
+
 
 * (Followed by MFA authentication)
 
@@ -100,19 +105,22 @@ Notes:
 
 ## AWS IAM Command-Line Authentication
 
-![](../artwork/02-iam-07.png)
+<img src="../artwork/02-iam-07.png" style="width:55%;"/> <!-- {"left" : 1.94, "top" : 3.75, "height" : 6.22, "width" : 13.62} -->
+
 
 ---
 
 ## AWS IAM User Management - Groups
 
-![](../artwork/02-iam-08.png)
+<img src="../artwork/02-iam-08.png" style="width:55%;"/> <!-- {"left" : 1.7, "top" : 2.88, "height" : 6.63, "width" : 14.11} -->
+
 
 ---
 
 ## AWS IAM Authorization
 
-![](../artwork/02-iam-09.png)
+<img src="../artwork/02-iam-09.png" style="width:55%;"/> <!-- {"left" : 1.15, "top" : 3.12, "height" : 3.49, "width" : 15.2} -->
+
 
 Notes:
 
@@ -139,12 +147,14 @@ Notes:
     ]
 }
 ```
+ <!-- {"left" : 0.85, "top" : 1.94, "height" : 4.36, "width" : 9.94} -->
 
 ---
 
 ## AWS IAM Policy Assignment
 
-![](../artwork/02-iam-10.png)
+<img src="../artwork/02-iam-10.png" style="width:55%;"/> <!-- {"left" : 1.7, "top" : 1.48, "height" : 3.2, "width" : 14.1} -->
+
 * IAM Policies are assigned to IAM users and Groups. 
 * These users are bound by the permissions defined in the IAM Policy.
 
@@ -152,12 +162,13 @@ Notes:
 
 ## AWS IAM Policy Assignment
 
-![](../artwork/02-iam-11.png)
 * IAM Policies may also be assigned to an IAM Role.
 * An IAM role is similar to a user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS. 
 * A role is intended to be assumable by anyone who needs it. 
 * Also, a role does not have any credentials (password or access keys) associated with it. 
 * Instead, if a user is assigned to a role, access keys are created dynamically and provided to the user.
+
+<img src="../artwork/02-iam-11.png" style="width:55%;"/> <!-- {"left" : 10.3, "top" : 0.53, "height" : 2.65, "width" : 6.74} -->
 
 ---
 
@@ -171,7 +182,8 @@ Notes:
 
 ## AWS IAM Policy Assignment
 
-![](../artwork/02-iam-12.png)
+<img src="../artwork/02-iam-12.png" style="width:55%;"/> <!-- {"left" : 3.71, "top" : 2.06, "height" : 3.83, "width" : 10.08} -->
+
 
 * You can use roles to delegate access to users, applications, or services that don't normally have access to your AWS resources. 
 
@@ -179,7 +191,8 @@ Notes:
 
 ## AWS IAM Roles - Instance Profiles
 
-![](../artwork/02-iam-13.png)
+<img src="../artwork/02-iam-13.png" style="width:55%;"/> <!-- {"left" : 2.88, "top" : 2.28, "height" : 5.11, "width" : 11.74} -->
+
 
 * An instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
 
@@ -195,7 +208,7 @@ Notes:
 
 ## AWS IAM Roles – Assume Role
 
-![](../artwork/02-iam-14.png)
+<img src="../artwork/02-iam-14.png" style="width:55%;"/> <!-- {"left" : 1.88, "top" : 1.79, "height" : 6.36, "width" : 13.74} -->
 
 * IAM roles may also be associated with users. 
 
@@ -213,7 +226,7 @@ Notes:
 
 ## Temporary Security Credentials (AWS STS)
 
-![](../artwork/02-iam-15.png)
+<img src="../artwork/02-iam-15.png" style="width:55%;"/> <!-- {"left" : 1.49, "top" : 2.47, "height" : 7.45, "width" : 14.53} -->
 
 Notes:
 * AWS Security Token Service (AWS STS) provides trusted users with temporary security credentials that can control access to your AWS resources. These credentials are short-term and work almost identically to the long-term access key credentials. These credentials are generated dynamically and provided to the user when requested.
@@ -223,7 +236,8 @@ Notes:
 
 ## AWS IAM Authentication and Authorization
 
-![](../artwork/02-iam-16.png)
+<img src="../artwork/02-iam-16.png" style="width:55%;"/> <!-- {"left" : 0.83, "top" : 2.39, "height" : 5.43, "width" : 15.84} -->
+
 
 ---
 
@@ -236,14 +250,17 @@ Notes:
 * Configure a strong password policy.
 * Enable MFA for privileged users.
 
-![](../artwork/02-iam-17.png)
+<img src="../artwork/02-iam-17.png" style="width:55%;"/> <!-- {"left" : 11.13, "top" : 1.55, "height" : 4.46, "width" : 5.87} -->
+
 
 ---
 
 ## Authenticator apps
 
-![](../artwork/02-iam-18.jpg)
-![](../artwork/02-iam-19.png)
+<img src="../artwork/02-iam-18.jpg" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 1.55, "height" : 3.99, "width" : 7.75} -->
+
+<img src="../artwork/02-iam-19.png" style="width:55%;"/> <!-- {"left" : 11.47, "top" : 1.55, "height" : 9.7, "width" : 5.04} -->
+
 
 ---
 
@@ -349,7 +366,8 @@ resource containers.
 
 ## GCP objects
 
-![](../artwork/02-iam-20.png)    
+
+<img src="../artwork/02-iam-20.png" style="width:55%;"/> <!-- {"left" : 2.51, "top" : 3, "height" : 7.72, "width" : 12.47} -->
 
 Notes:
 
@@ -360,7 +378,8 @@ Notes:
 
 ## Projects
 
-![](../artwork/02-iam-21.png)
+<img src="../artwork/02-iam-21.png" style="width:55%;"/> <!-- {"left" : 1.59, "top" : 3.25, "height" : 7.22, "width" : 14.32} -->
+
 
 Notes:
 
@@ -374,7 +393,8 @@ Notes:
 
 ## Members
 
-![](../artwork/02-iam-22.png)
+<img src="../artwork/02-iam-22.png" style="width:55%;"/> <!-- {"left" : 1.29, "top" : 2.33, "height" : 4.17, "width" : 14.92} -->
+
 
 **You create or manage users or groups outside of GCP**
 
@@ -407,7 +427,8 @@ Cloud Identity is available in both a free and a premium edition.
     * Roles define which permissions are granted.
     * GCP provides predefined roles and also the ability to create custom roles.
 
-![](../artwork/02-iam-23.jpg)
+<img src="../artwork/02-iam-23.jpg" style="width:55%;"/> <!-- {"left" : 12.1, "top" : 2.13, "height" : 3.21, "width" : 4.73} -->
+
 
 Notes:
 
@@ -427,7 +448,8 @@ Cloud IAM roles to the new member using Cloud IAM policies.
     * Used to authenticate from one service to another
     * Used to control privileges used by resources
     
-![](../artwork/02-iam-24.png)    
+<img src="../artwork/02-iam-24.png" style="width:55%;"/> <!-- {"left" : 3.51, "top" : 6.03, "height" : 4.12, "width" : 10.48} -->
+
 
 Notes:
 
@@ -487,7 +509,8 @@ virtually identical! (VM labels)
 
 ## IAM Roles in GCP
 
-![](../artwork/02-iam-24.png)
+<img src="../artwork/02-iam-24.png" style="width:55%;"/> <!-- {"left" : 1.09, "top" : 3.18, "height" : 6.03, "width" : 15.32} -->
+
 
 Notes:
 
@@ -505,7 +528,8 @@ resources of your choice.
 
 ## IAM primitive roles
 
-![](../artwork/02-iam-25.png)
+<img src="../artwork/02-iam-25.png" style="width:55%;"/> <!-- {"left" : 3.97, "top" : 2.39, "height" : 4.03, "width" : 9.57} -->
+
 
 * IAM primitive roles are applied at the project level
 * Primitive roles offer fixed, coarse-grained levels of access
@@ -514,7 +538,7 @@ resources of your choice.
 
 ## IAM primitive roles
 
-![](../artwork/02-iam-26.png)
+<img src="../artwork/02-iam-26.png" style="width:55%;"/> <!-- {"left" : 1.99, "top" : 2.76, "height" : 5.72, "width" : 13.52} -->
 
 * Primitive roles apply across all GCP services in a project
 
@@ -537,9 +561,6 @@ viewer role.
 ## IAM predefined roles
 
 * Predefined roles are designed to map to job functions: Compute Network Admin, Security Reviewer, etc.
-
-![](../artwork/02-iam-27.png)
-
 * Predefined roles provide granular access for a specific service. They are
 designed to map to job functions, for example, Compute Network Admin,
 Security Reviewer, Storage Admin, etc.
@@ -547,13 +568,16 @@ Security Reviewer, Storage Admin, etc.
 is added in the future, the appropriate permissions will be added to any
 predefined role that requires them.  
 
+<img src="../artwork/02-iam-27.png" style="width:55%;"/> <!-- {"left" : 11.24, "top" : 1.73, "height" : 2.37, "width" : 5.84} -->
+
 ---
 
 ## IAM predefined roles are more fine-grained
 
 * IAM predefined roles offer more fine-grained permissions on particular services
 
-![](../artwork/02-iam-28.png)
+<img src="../artwork/02-iam-28.png" style="width:55%;"/> <!-- {"left" : 1.59, "top" : 4.56, "height" : 5.76, "width" : 14.32} -->
+
 
 ---
 
@@ -621,7 +645,7 @@ Event audit logs, however there are logging usage limits.
     * Choose to “apply” or to “dismiss” a recommendation
     * You can revert your choice within 90 days
 
-![](../artwork/02-iam-29.png)    
+<img src="../artwork/02-iam-29.png" style="width:55%;"/> <!-- {"left" : 3.97, "top" : 7, "height" : 4.5, "width" : 9.56} -->
 
 ---
 
@@ -649,7 +673,8 @@ Event audit logs, however there are logging usage limits.
   only the minimal access level required to
   get the job done
   
-![](../artwork/pexels-cottonbro-5537791.jpg)
+<img src="../artwork/pexels-cottonbro-5537791.jpg" style="width:55%;"/> <!-- {"left" : 4.15, "top" : 5.04, "height" : 6.14, "width" : 9.21} -->
+
 
 ---
 
@@ -682,7 +707,7 @@ G Suite or Cloud Identity admin.
 * Export audit logs  
 * Explore audit logs to Cloud Storage to store your logs for long periods of time
 
-![](../artwork/pexels-suzy-hazelwood-1226398.jpg)
+<img src="../artwork/pexels-suzy-hazelwood-1226398.jpg" style="width:55%;"/> <!-- {"left" : 4.82, "top" : 6.81, "height" : 4.42, "width" : 7.85} -->
 
 ---
 
@@ -826,6 +851,7 @@ Notes:
 # create a new user
 az ad user create
 ```
+<!-- {"left" : 0.85, "top" : 2.56, "height" : 0.86, "width" : 3.94} -->
 
 * PowerShell
 
@@ -833,6 +859,7 @@ az ad user create
 # create a new user
 New-AzureADUser
 ```
+<!-- {"left" : 0.85, "top" : 4.38, "height" : 0.86, "width" : 3.94} -->
 
 ---
 
@@ -856,6 +883,7 @@ foreach ($email in $invitations)
       -SendInvitationMessage $true
    }
 ```
+<!-- {"left" : 0.85, "top" : 3.04, "height" : 4.36, "width" : 15.78} -->
 
 ---
 
@@ -867,6 +895,7 @@ foreach ($email in $invitations)
 # delete a user
 az ad user delete.
 ```
+<!-- {"left" : 0.85, "top" : 2.56, "height" : 0.86, "width" : 3.78} -->
 
 * PowerShell
 
@@ -874,6 +903,7 @@ az ad user delete.
 # delete a user
 Remove-AzureADUser
 ```
+<!-- {"left" : 0.85, "top" : 4.23, "height" : 0.86, "width" : 3.78} -->
 
 ---
 
@@ -908,7 +938,8 @@ Notes:
 * Azure AD not intended as a complete replacement for an on-premises Active Directory
 * If you're already using a Windows AD server, you can connect it to Azure AD to extend your directory into Azure
 * You can use the same credentials to access local and cloud-based resources.
-![](../artwork/02-iam-30.png)    
+
+<img src="../artwork/02-iam-30.png" style="width:55%;"/> <!-- {"left" : 4.51, "top" : 7.22, "height" : 3.83, "width" : 8.49} -->
 
 ---
 
@@ -938,7 +969,8 @@ Notes:
 
 ## Directories, subscriptions, and users
 
-![](../artwork/02-iam-31.png)
+<img src="../artwork/02-iam-31.png" style="width:55%;"/> <!-- {"left" : 3.22, "top" : 3.07, "height" : 7.59, "width" : 11.07} -->
+
 
 ---
 
@@ -948,7 +980,7 @@ Notes:
     * you can switch the current directory
     * through the Directory + subscription button in the Azure portal header.
 
-![](../artwork/02-iam-32.png)    
+<img src="../artwork/02-iam-32.png" style="width:55%;"/> <!-- {"left" : 10.17, "top" : 1.41, "height" : 7.05, "width" : 6.86} -->
 
 ---
 
@@ -1010,6 +1042,7 @@ A)
 ```shell
 Get-AzureRmRoleDefinition -Name Owner
 ```
+<!-- {"left" : 0.85, "top" : 3.34, "height" : 0.57, "width" : 6.94} -->
 
 * You will get this
 
@@ -1024,6 +1057,8 @@ DataActions      : {}
 NotDataActions   : {}
 AssignableScopes : {/}
 ```
+<!-- {"left" : 0.85, "top" : 4.95, "height" : 2.9, "width" : 13.61} -->
+
 
 ---
 
@@ -1052,6 +1087,7 @@ AssignableScopes : {/}
   ]
 }
 ```
+<!-- {"left" : 0.85, "top" : 2.87, "height" : 5.82, "width" : 13.11} -->
 
 ---
 
@@ -1064,6 +1100,4 @@ AssignableScopes : {/}
 ## Congrats on completion
 
 
-![](../artwork/congrats.png)
-
----
+<img src="../artwork/congrats.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 4.57, "height" : 3.25, "width" : 15.41} -->
