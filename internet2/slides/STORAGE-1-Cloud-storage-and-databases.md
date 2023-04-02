@@ -21,6 +21,8 @@
 | Table Storage  | AWS SimpleDB, DynamoDB             | Azure Table Storage        | Google Cloud Storage Nearline          |
 | Queue Storage  | AWS Simple Queue Service (SQS)     | Azure Queue Storage        | Google Cloud Storage Nearline          |
 
+<!-- {"left" : 0.63, "top" : 1.62, "height" : 1, "width" : 16.24} -->
+
 Notes:
 
 * Storage comparison
@@ -39,6 +41,8 @@ Notes:
 | Peering         | Direct Connect                     | ExpressRoute             | Google Cloud Interconnect   |
 | DNS             | Amazon Route 53                    | Azure DNS                | Google Cloud DNS            |
 
+<!-- {"left" : 0.64, "top" : 1.62, "height" : 1, "width" : 16.21} -->
+
 ---
 
 ## Databases
@@ -48,6 +52,9 @@ Notes:
 | RDBMS            | Amazon Relational Database Service | SQL Database    | Google Cloud SQL                             |
 | NoSQL: Key–Value | Amazon DynamoDB                    | Table Storage   | Google Cloud Datastore Google Cloud Bigtable |
 | NoSQL: Indexed   | Amazon SimpleDB                    | Azure Cosmos DB | Google Cloud Datastore                       |
+
+<!-- {"left" : 0.58, "top" : 1.62, "height" : 1, "width" : 16.33} -->
+
 
 ---
 
@@ -59,6 +66,9 @@ Notes:
 | Service portfolio               | Integration with open source   | Attractive pricing models                     |
 | Presence (market and geography) | Private datacenter integration | Best for AI and machine learning applications |
 
+<!-- {"left" : 0.78, "top" : 1.62, "height" : 1, "width" : 15.95} -->
+
+
 ---
 
 ## Amazon Simple Storage Service (S3)
@@ -67,9 +77,11 @@ Notes:
 * Store and retrieve any amount of data, any time, from anywhere on the web
 * Highly scalable, reliable, fast and durable 
 
-![](../artwork/03-storage-04.png)
 
-![](../artwork/03-storage-06.png)
+<img src="../artwork/03-storage-04.png" style="width:55%;"/> <!-- {"left" : 13.95, "top" : 0.53, "height" : 2.38, "width" : 3.09} -->
+
+<img src="../artwork/03-storage-06.png" style="width:55%;"/> <!-- {"left" : 1.43, "top" : 6.06, "height" : 5.2, "width" : 4.38} -->
+
 
 ---
 
@@ -101,7 +113,8 @@ Notes:
 
 ## S3 storage classes
 
-![](../artwork/03-storage-05.png)
+<img src="../artwork/03-storage-05.png" style="width:55%;"/> <!-- {"left" : 4.1, "top" : 1.5, "height" : 6.38, "width" : 9.31} -->
+
 
 * Note from Patrick Schmitz:
     * Note SLA for middle columns allows for >87 hours a year of unavailability (1% of the year). If that happens before a publication deadline folks will be really unhappy. Plan ahead!!!
@@ -116,7 +129,8 @@ Notes:
 * Software Delivery
 * Store AMIs and Snapshots
 
-![](../artwork/03-pexels-mike-114820.jpg)
+<img src="../artwork/03-pexels-mike-114820.jpg" style="width:55%;"/> <!-- {"left" : 8.38, "top" : 1.46, "height" : 4.9, "width" : 8.7} -->
+
 
 ---
 
@@ -149,7 +163,8 @@ Notes:
 * You can have up to 100 buckets in each account
 * You can control access to the bucket and its objects
 
-![](../artwork/03-storage-07.png)
+<img src="../artwork/03-storage-07.png" style="width:55%;"/> <!-- {"left" : 2.91, "top" : 6.66, "height" : 4.23, "width" : 11.68} -->
+
 
 ---
 
@@ -166,7 +181,9 @@ Notes:
 ## Object Keys
 
 * An object key is the unique identifier for an object in a bucket
-![](../artwork/03-storage-08.png)
+
+<img src="../artwork/03-storage-08.png" style="width:55%;"/> <!-- {"left" : 1.47, "top" : 4.91, "height" : 2.56, "width" : 14.55} -->
+
 
 ---
 
@@ -225,7 +242,8 @@ When analyzing the storage costs of the above operations, please note that the 4
 
 ## Amazon S3 Storage Classes
 
-![](../artwork/03-storage-09.png)    
+<img src="../artwork/03-storage-09.png" style="width:55%;"/> <!-- {"left" : 0.99, "top" : 2.9, "height" : 6.59, "width" : 15.51} -->
+
 
 ---
 
@@ -278,7 +296,7 @@ B.
     * PowerShell
     * Azure CLI
     
-![](../artwork/03-storage-10.png)    
+<img src="../artwork/03-storage-10.png" style="width:55%;"/> <!-- {"left" : 3.93, "top" : 6.1, "height" : 4.97, "width" : 9.64} -->
 
 ---
 
@@ -329,7 +347,8 @@ B. No - I could not find any
 
 ## Configuring Azure blob storage
 
-![](../artwork/03-storage-11.png)
+<img src="../artwork/03-storage-11.png" style="width:55%;"/> <!-- {"left" : 3.93, "top" : 2.33, "height" : 8.62, "width" : 9.64} -->
+
 
 ---
 
@@ -364,7 +383,8 @@ C.
 
 ## GCP blob storage
 
-![](../artwork/03-storage-12.png)
+<img src="../artwork/03-storage-12.png" style="width:55%;"/> <!-- {"left" : 1.66, "top" : 2.84, "height" : 6.7, "width" : 14.17} -->
+
 
 Notes:
 
@@ -383,7 +403,9 @@ https://cloud.google.com/storage/docs/
 ---
 
 ## GCP storage options overview
-![](../artwork/03-storage-13.png)
+
+<img src="../artwork/03-storage-13.png" style="width:55%;"/> <!-- {"left" : 1.95, "top" : 2.94, "height" : 6.51, "width" : 13.59} -->
+
 
 ---
 
@@ -404,6 +426,8 @@ https://cloud.google.com/storage/docs/
 | Regional Storage       | 99.9% availability Data stored in a narrow geographic region                                       | Data analytics                                       | $0.02            | regional       |
 | Nearline Storage       | 99.0% availability Data retrieval costs Higher per-operation costs 30-day minimum storage duration | Back-up Serving long-tail multimedia content         | $0.01            | nearline       |
 | Coldline Storage       | 99.0% availability Data retrieval costs higher per-operation costs 90-day minimum storage duration | Disaster recovery Data archiving                     | $0.007           | coldline       |
+
+<!-- {"left" : 0.52, "top" : 1.4, "height" : 1, "width" : 16.47, "columnwidth" : [2.15, 5.35, 4.26, 2.35, 2.37]} -->
 
 ---
 
@@ -504,7 +528,8 @@ Notes:
 
 ## Solid State Drives (SSD)
 
-![](../artwork/2b-02.png)
+<img src="../artwork/2b-02.png" style="width:55%;"/> <!-- {"left" : 2.11, "top" : 1.85, "height" : 6.28, "width" : 13.29} -->
+
 
 * Continue to https://aws.amazon.com/ebs/features/
 
@@ -512,7 +537,8 @@ Notes:
 
 ## Hard Disk Drives (HDD)
 
-![](../artwork/2b-03.png)
+
+<img src="../artwork/2b-03.png" style="width:55%;"/> <!-- {"left" : 2.66, "top" : 1.77, "height" : 7.63, "width" : 12.19} -->
 
 * Continue to https://aws.amazon.com/ebs/features/
 
@@ -524,7 +550,8 @@ Notes:
 
 ## AWS Managed Database Services
 
-![](../artwork/03-storage-19.png)
+<img src="../artwork/03-storage-19.png" style="width:55%;"/> <!-- {"left" : 1.9, "top" : 3.57, "height" : 6.58, "width" : 13.69} -->
+
 
 Notes:
 
@@ -534,13 +561,16 @@ Common pattern for all clouds
 
 ## Amazon Relational Database Service (RDS)
 
-![](../artwork/03-storage-20.png)
+
+<img src="../artwork/03-storage-20.png" style="width:55%;"/> <!-- {"left" : 1.04, "top" : 3.18, "height" : 6.03, "width" : 15.43} -->
+
 
 ---
 
 ## Amazon RDS
 
-![](../artwork/03-storage-21.png)
+
+<img src="../artwork/03-storage-21.png" style="width:55%;"/> <!-- {"left" : 1.02, "top" : 2.68, "height" : 7.02, "width" : 15.46} -->
 
 ---
 
@@ -615,7 +645,9 @@ A., C.
 
 ## NoSQL is for scaling
 
-![](../artwork/03-storage-15.png)
+
+<img src="../artwork/03-storage-15.png" style="width:55%;"/> <!-- {"left" : 2.6, "top" : 2.17, "height" : 8.05, "width" : 12.3} -->
+
 
 ---
 
@@ -627,7 +659,9 @@ A., C.
     * I know NoIBM
     * I know No Oracle
     * Etc.
-![](../artwork/03-pexels-mentatdgt-1311518.jpg)
+
+<img src="../artwork/03-pexels-mentatdgt-1311518.jpg" style="width:55%;"/> <!-- {"left" : 9.06, "top" : 2.04, "height" : 5.29, "width" : 7.93} -->
+
 
 ---
 
@@ -652,7 +686,9 @@ A., C.
     * NO JOINS!
     * No (or very little) ACID!
 * (Some NoSQL DBs do provide transactions)
-![](../artwork/03-pexels-polina-tankilevitch-3735773.jpg)
+
+<img src="../artwork/03-pexels-polina-tankilevitch-3735773.jpg" style="width:55%;"/> <!-- {"left" : 12, "top" : 0.99, "height" : 7.26, "width" : 4.84} -->
+
 
 ---
 
@@ -681,13 +717,17 @@ A., C.
 * What if nodes crash in the middle of a transaction?
 * Or network gets partitioned?
 * Most NoSQLs don’t offer transactions    
-![](../artwork/03-pexels-energepiccom-2988232.jpg)
+
+<img src="../artwork/03-pexels-energepiccom-2988232.jpg" style="width:55%;"/> <!-- {"left" : 9.54, "top" : 2.47, "height" : 5.59, "width" : 7.45} -->
+
 
 ---
 
 ## When eventual consistency is OK
 
-![](../artwork/03-storage-16.png)
+
+<img src="../../assets/images/cassandra/Eventual-Consistency.png"  style="width:50%;" /> <!-- {"left" : 4.4, "top" : 3.12, "height" : 8.11, "width" : 8.7} -->
+
 
 ---
 
@@ -699,13 +739,15 @@ A., C.
 
 * CAP Theorem says we can have 2 of 3
 
-![](../artwork/03-storage-16.png)
+<img src="../../assets/images/cassandra/Eventual-Consistency.png"  style="width:50%;" /><!-- {"left" : 10.89, "top" : 1.62, "height" : 5.74, "width" : 6.11} -->
+
 
 ---
 
 ## CAP Classification
 
-![](../artwork/03-storage-18.png)
+
+<img src="../../assets/images/cassandra/NoSQL-Intro-CAP-Classification-5.png"  style="width:80%;" /> <!-- {"left" : 2.66, "top" : 2.57, "height" : 8.57, "width" : 12.18} -->
 
 ---
 
@@ -745,7 +787,9 @@ B, C, D
 
 ## SQL and NoSQL Databases
 
-![](../artwork/03-storage-23.png)
+<img src="../artwork/03-storage-23.png" style="width:55%;"/> <!-- {"left" : 1.16, "top" : 2.75, "height" : 6.88, "width" : 15.23} -->
+
+
 
 ---
 
@@ -756,25 +800,30 @@ B, C, D
 * Easily **provision** (but it will cost you) and change the request capacity needed for each table
 * Fully managed, NoSQL database service
 
-![](../artwork/03-storage-22.png)
+<img src="../artwork/03-storage-22.png" style="width:55%;"/> <!-- {"left" : 14.06, "top" : 0.43, "height" : 2.96, "width" : 2.79} -->
+
 
 ---
 
 ## DynamoDB Data Model
 
-![](../artwork/03-storage-24.png)
+
+<img src="../artwork/03-storage-24.png" style="width:55%;"/> <!-- {"left" : 0.88, "top" : 3.32, "height" : 7.09, "width" : 15.75} -->
+
 
 ---
 
 ## Primary Keys
 
-![](../artwork/03-storage-25.png)
+<img src="../artwork/03-storage-25.png" style="width:55%;"/> <!-- {"left" : 1.62, "top" : 3.32, "height" : 7.08, "width" : 14.25} -->
+
 
 ---
 
 ## Local Secondary Index
 
-![](../artwork/03-storage-26.png)
+<img src="../artwork/03-storage-26.png" style="width:55%;"/> <!-- {"left" : 1.62, "top" : 3.02, "height" : 7.69, "width" : 14.26} -->
+
 
 Notes:
 
@@ -786,7 +835,8 @@ Notes:
 
 ## Global Secondary Index
 
-![](../artwork/03-storage-27.png)
+<img src="../artwork/03-storage-27.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 3.21, "height" : 7.31, "width" : 15.41} -->
+
 
 Notes:
 
@@ -806,13 +856,15 @@ Notes:
 * Write capacity unit:
     * One write per second for items as large as 1 KB.
     
-![](../artwork/03-storage-pixabay-tomatoes-1594823_640.jpg)    
+<img src="../artwork/03-storage-pixabay-tomatoes-1594823_640.jpg" style="width:55%;"/> <!-- {"left" : 11.89, "top" : 2.15, "height" : 3.11, "width" : 5.17} -->
+ 
 
 ---
 
 ## Amazon RDS and Amazon DynamoDB
 
-![](../artwork/03-storage-28.png)
+
+<img src="../artwork/03-storage-28.png" style="width:55%;"/> <!-- {"left" : 0.84, "top" : 2.41, "height" : 7.56, "width" : 15.81} -->
 
 ---
 
@@ -936,7 +988,9 @@ Notes:
 
 ## What is the difference between Tables API and Cosmos?
 
-![](../artwork/03-storage-29.png)
+
+<img src="../artwork/03-storage-29.png" style="width:55%;"/> <!-- {"left" : 2.06, "top" : 2.71, "height" : 8.32, "width" : 13.37} -->
+
 
 ---
 
@@ -946,7 +1000,8 @@ Notes:
 
 ## Cloud Datastore
 
-![](../artwork/03-storage-30.png)
+<img src="../artwork/03-storage-30.png" style="width:55%;"/> <!-- {"left" : 2.11, "top" : 3.26, "height" : 5.87, "width" : 13.27} -->
+
 
 Notes:
 
@@ -974,7 +1029,9 @@ applications and Cloud Datastore will remain a fully supported GCP storage servi
 
 ## Cloud Firestore
 
-![](../artwork/03-storage-31.png)
+
+<img src="../artwork/03-storage-31.png" style="width:55%;"/> <!-- {"left" : 1.89, "top" : 2.75, "height" : 6.89, "width" : 13.73} -->
+
 
 Notes:
 
@@ -1001,7 +1058,8 @@ https://cloud.google.com/firestore/docs/
 
 ## Cloud Bigtable
 
-![](../artwork/03-storage-32.png)
+
+<img src="../artwork/03-storage-32.png" style="width:55%;"/> <!-- {"left" : 2.11, "top" : 3.26, "height" : 5.87, "width" : 13.27} -->
 
 Notes:
 
@@ -1024,7 +1082,9 @@ https://cloud.google.com/bigtable/docs/
 
 ## Cloud SQL
 
-![](../artwork/03-storage-33.png)
+
+<img src="../artwork/03-storage-33.png" style="width:55%;"/> <!-- {"left" : 1.79, "top" : 2.75, "height" : 6.91, "width" : 13.93} -->
+
 
 Notes:
 
@@ -1061,7 +1121,9 @@ MySQL/PostgreSQL, with minimal refactoring required for migration to GCP.
 
 ## Cloud Spanner
 
-![](../artwork/03-storage-34.png)
+
+<img src="../artwork/03-storage-34.png" style="width:55%;"/> <!-- {"left" : 2.11, "top" : 1.94, "height" : 5.87, "width" : 13.27} -->
+
 
 * Note that it is a revolutionary implementation even if not applicable to research use cases
 
@@ -1093,6 +1155,8 @@ https://cloud.google.com/spanner/docs/
 | Spanner       | Relational DB service                 | Low-latency transactional systems               | Analytic data                                         |
 | BigQuery      | Auto-scaling analytic data warehouse  | Interactive analysis of static datasets         | Building fast apps                                    |
 
+<!-- {"left" : 0.21, "top" : 1.5, "height" : 1, "width" : 16.77, "columnwidth" : [2.16, 4.38, 5.3, 4.94]} -->
+
 ---
 
 ## Technical considerations for storage options
@@ -1106,6 +1170,8 @@ https://cloud.google.com/spanner/docs/
 | CloudSQL      | Low (ms)            | < 10 TB      | Relational   |
 | Spanner       | Low (ms)            | Any          | Relational   |
 | BigQuery      | High (s)            | Any          | Columnar     |
+
+<!-- {"left" : 1.05, "top" : 1.5, "height" : 6.55, "width" : 15.41} -->
 
 ---
 
@@ -1176,7 +1242,8 @@ B.
 
 ## Databases - let's review
 
-![](../artwork/03-storage-02.png)
+<img src="../artwork/03-storage-02.png" style="width:55%;"/> <!-- {"left" : 0.65, "top" : 3.43, "height" : 5.52, "width" : 16.2} -->
+
 
 ---
 
@@ -1220,4 +1287,4 @@ A, C
 
 ## Congrats on completion
 
-![](../artwork/congrats.png)
+<img src="../artwork/congrats.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 4.57, "height" : 3.25, "width" : 15.41} -->

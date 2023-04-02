@@ -39,7 +39,7 @@ Target systems do not need to have any software installed on them to be managed 
 
 Tasks are executed over SSH by default, but can also be executed locally.
 
-![img.png](images/img.png)
+![img.png](../images/img.png)
 
 * _except for Windows systems, which require a small Python executable to be installed._
 
@@ -66,4 +66,4 @@ it can be used to manage configuration files.
 ---
 
 
-![img_6.png](images/img_6.png)
+![img_6.png](../images/img_6.png)

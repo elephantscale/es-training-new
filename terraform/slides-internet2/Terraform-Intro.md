@@ -14,7 +14,9 @@
   - Most organizations nowadays are working with multiple cloud vendors
   - Having a common tool and in-house expertise in the tool is highly cost-efficient and operationally effective
 
-![](../artwork/terraform-logo.png)
+
+<img src="../artwork/terraform-logo.png" style="width:55%;"/> <!-- {"left" : 13.35, "top" : 0.65, "height" : 0.89, "width" : 3.65} -->
+
 
 Notes:
 
@@ -48,7 +50,7 @@ Having to support in-house skill sets for all the different vendor provisioning 
 * The _Dev_ team works with software, the _Ops_ team with infrastructure
   - The two groups have different tools, cultures and processes
   
-![](../artwork/computer-rack-pexels-photo-442150.jpeg)
+<img src="../artwork/computer-rack-pexels-photo-442150.jpeg" style="width:55%;"/> <!-- {"left" : 11.55, "top" : 2.82, "height" : 3.67, "width" : 5.51} -->
 
 ---
 
@@ -66,7 +68,8 @@ Having to support in-house skill sets for all the different vendor provisioning 
   * DevOps integrates the two roles through common tools
   * Enables _continuous integration_ & _continuous deployment_ (CICD)
 
-![](../artwork/DevOpsProcess.png)
+<img src="../artwork/DevOpsProcess.png" style="width:55%;"/> <!-- {"left" : 12.75, "top" : 2, "height" : 2.42, "width" : 4.27} -->
+
 
 Notes:
 
@@ -132,7 +135,8 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Devops-toolchain.svg/1
 * Procedural code written to manage a virtual resource
 * Example: AWS CLI commands to create a security group and EC2 instance.
 
-![](../artwork/AdHocScript.png)
+<img src="../artwork/AdHocScript.png" style="width:55%;"/> <!-- {"left" : 3.88, "top" : 5.58, "height" : 5.4, "width" : 9.75} -->
+
 
 Notes:
 
@@ -146,7 +150,7 @@ Changed this slide since I think that the CLI code is a more appropriate example
   * Most popular tools:  Chef, Puppet, Ansible, and SaltStack
 * Example of an Ansible script (called a playbook)
 
-![](../artwork/ansible2.png)
+<img src="../artwork/Docker.png" style="width:55%;"/> <!-- {"left" : 4.8, "top" : 6.11, "height" : 5.03, "width" : 7.9} -->
 
 Notes:
 
@@ -158,8 +162,9 @@ Source:  https://www.middlewareinventory.com/blog/ansible-playbook-example/
 
 * Tools to handle packaging, configuration and deployment of VMs and containers
   * Examples: Docker, Packer, and Vagrant.
-![](../artwork/Docker.png)
-    
+ 
+<img src="../artwork/Docker.png" style="width:55%;"/> <!-- {"left" : 10.64, "top" : 1.68, "height" : 6.47, "width" : 6.37} -->
+
 Notes:
 
 Image credit: https://dev.to/flpslv/using-makefiles-to-build-and-publish-docker-containers-7c8
@@ -168,7 +173,7 @@ Image credit: https://dev.to/flpslv/using-makefiles-to-build-and-publish-docker-
 
 ## Images and Containers
 
-![](../artwork/images-containers.png)
+<img src="../artwork/images-containers.png" style="width:55%;"/> <!-- {"left" : 3.25, "top" : 2.69, "height" : 8.02, "width" : 11.06} -->
 
 ---
 
@@ -193,7 +198,8 @@ Image credit: https://dev.to/flpslv/using-makefiles-to-build-and-publish-docker-
   - These are often thought of as "swarms" of hosts/containers that need to be orchestrated
 * Example: Kubernetes
 
-![](../artwork/kubernetes-overview.png)
+<img src="../artwork/kubernetes-overview.png" style="width:55%;"/> <!-- {"left" : 9.15, "top" : 1.73, "height" : 4.25, "width" : 7.92} -->
+
 
 Notes:
 Image source: https://software.danielwatrous.com/wp-content/uploads/2017/02/kubernetes-overview.png
@@ -204,8 +210,9 @@ Image source: https://software.danielwatrous.com/wp-content/uploads/2017/02/kube
 
 * Refers to creating virtual resources from some form of text template, usually JSon
 * The CloudFormation API is the AWS native provisioning tool
-![](../artwork/CloudFormation-Eclipse-4-TemplateEditor.png)
   
+<img src="../artwork/CloudFormation-Eclipse-4-TemplateEditor.png" style="width:55%;"/> <!-- {"left" : 9.34, "top" : 1.64, "height" : 5.61, "width" : 7.65} -->
+
 Notes:
 
 Image Source: https://aws.amazon.com/blogs/developer/working-with-aws-cloudformation-in-eclipse/
@@ -266,13 +273,14 @@ Image Source: https://aws.amazon.com/blogs/developer/working-with-aws-cloudforma
     - DigitalOcean
     - OpenStack, and more
 
-![](../artwork/gopher-golang-prints.png)
+<img src="../artwork/gopher-golang-prints.png" style="width:55%;"/> <!-- {"left" : 15.07, "top" : 0.66, "height" : 2.26, "width" : 1.64} -->
 
 ---
 
 ## Terraform and Other Tools
 
-![](../artwork/terraform-and-other-tools.png)
+<img src="../artwork/terraform-and-other-tools.png" style="width:55%;"/> <!-- {"left" : 3.89, "top" : 2.69, "height" : 8.34, "width" : 9.71} -->
+
 
 Notes:
 

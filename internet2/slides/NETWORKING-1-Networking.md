@@ -1,4 +1,4 @@
-# Networking and data movement
+# Networking and Data Movement
 
 ---
 
@@ -7,6 +7,7 @@
 ---
 
 ## Virtual Private Cloud (VPC)
+
 * Provision a private, isolated virtual network on the cloud.
 * Have complete control over your virtual networking environment.
 * Please **note** that we will first cover generic VPC and AWS, then Azure and GCP.
@@ -22,18 +23,20 @@
 * A **VPC endpoint** enables private connections between your VPC and supported AWS services and VPC endpoint services powered by AWS PrivateLink.
 
 ---
----
 
 ## VPC and regions
+
 * VPCs are for building your private clouds. Depending on cloud implementation, 
 they can span regions, but we will not cover such architectures because they are unlikely
 
-![](../artwork/04-vpc-01.png)
+<img src="../artwork/04-vpc-01.png" style="width:55%;"/> <!-- {"left" : 3.81, "top" : 5.11, "height" : 5.07, "width" : 9.88} -->
+
 
 ---
+
 ## VPC Example
 
-![](../artwork/04-vpc-02.png)
+<img src="../artwork/04-vpc-02.png" style="width:55%;"/> <!-- {"left" : 1.75, "top" : 2.91, "height" : 6.57, "width" : 14} -->
 
 ---
 
@@ -41,18 +44,22 @@ they can span regions, but we will not cover such architectures because they are
 
 * Security groups
 * Network access control lists (ACLs)
-![](../artwork/04-vpc-03.png)
+
+<img src="../artwork/04-vpc-03.png" style="width:55%;"/> <!-- {"left" : 4.98, "top" : 4.67, "height" : 6.09, "width" : 7.55} -->
+
 
 ---
 
 ## VPN Connections
-![](../artwork/04-vpc-04.png)
+
+<img src="../artwork/04-vpc-04.png" style="width:55%;"/> <!-- {"left" : 2.06, "top" : 1.86, "height" : 5.1, "width" : 13.38} -->
 
 * Other clouds give similar options
 
 ---
 
 ## Networking in Your VPC
+
 * You can use the following components to configure networking in your VPC:
     * IP Addresses
     * Elastic Network Interfaces
@@ -64,7 +71,7 @@ they can span regions, but we will not cover such architectures because they are
     * VPC Peering
     * VPC Endpoints
     * VPC Flow Logs
-    
+
 ---
 
 ## Quiz
@@ -75,7 +82,7 @@ they can span regions, but we will not cover such architectures because they are
     * B. CLA
     * C. ACL
     * D. SSL
-    
+
 Notes:
 
 * C.
@@ -92,7 +99,7 @@ Notes:
 * Do you meet data security laws of the country and locality in which your data is stored?
 * Can your researchers’ data legally exist outside of the country where you are operating?  
 * Will you be able to meet your governance requirements by placing your environment in the region where you plan to place it?
-    
+
 ---
 
 ## Region
@@ -118,7 +125,7 @@ Notes:
     * Service costs vary by region.
     * Some services (like Amazon S3) have costs when you transfer data out of their original region.
     * If you want to replicate your environment across more than one region, is that the most cost-effective solution?
-    
+
 ---
 
 ## Discussion
@@ -139,9 +146,11 @@ Notes:
 * Using more than two Availability Zones for HA is not usually cost-effective.
 
 ---
+
 ## Example of Using Two Availability Zones
 
-![](../artwork/04-vpc-05.png)
+<img src="../artwork/04-vpc-05.png" style="width:55%;"/> <!-- {"left" : 4.4, "top" : 2.83, "height" : 8.07, "width" : 8.69} -->
+
 
 ---
 
@@ -157,9 +166,7 @@ Notes:
 
 ---
 
-
 ## Using One VPC
-
 
 * There are limited use cases where one VPC could be appropriate:
     * High-performance computing
@@ -168,12 +175,13 @@ Notes:
 
 * For most use cases, there are two primary patterns for organizing your infrastructure:
     * **Multi-VPC**  and  **Multi-Account**
-    
+
 ---
-            
+
 ## AWS Infrastructure Patterns
 
-![](../artwork/04-vpc-06.png)
+<img src="../artwork/04-vpc-06.png" style="width:55%;"/> <!-- {"left" : 1.27, "top" : 2.69, "height" : 7, "width" : 14.96} -->
+
 
 ---
 
@@ -191,7 +199,9 @@ Notes:
 * High workload isolation required? **Multi-account**
 
 ---
+
 ## Multi-VPC Pattern
+
 * Features:
     * Uses **one account**
     * Uses **two or more VPCs** to organize application environments
@@ -203,7 +213,7 @@ Notes:
     * **Governance and compliance** standards may require workload isolation regardless of organizational complexity.
 
 ---
-    
+
 ## Multi-Account Pattern
 
 * Features:
@@ -214,21 +224,22 @@ Notes:
     * **Medium-sized organizations** that anticipate rapid growth
 * Why?
     * **Managing access** and **standards** can be more challenging in more complex organizations.
-    
+
 ---
 
 ## Other Important Considerations for AWS
+
 * The majority of AWS services **do not actually sit within a VPC**.
     * For these services, a VPC **cannot provide any isolation** outside of connectivity.
     * Communication between resources based in a VPC and resources outside of that VPC traverses the **public AWS network** by default.
         * Amazon S3 offers **VPC endpoints** to connect without traversing the public Internet:
             * Endpoints are supported within the same region only.
             * Support for endpoints with other services will be added in the future.
-            
----            
+
+---
 
 ## VPCs And IP Addresses
-    
+
 * When you create your VPC, you specify its set of IP addresses with CIDR notation.
 
 * Classless Inter-Domain Routing (CIDR) notation is a simplified way to show a specific range of IP addresses.
@@ -241,69 +252,75 @@ Notes:
 
 ## IPs and CIDR
 
-![](../artwork/04-vpc-07.png)
+<img src="../artwork/04-vpc-07.png" style="width:55%;"/> <!-- {"left" : 1.4, "top" : 3.65, "height" : 6.43, "width" : 14.7} -->
 
 ---
 
 ## IPs and CIDR
 
+<img src="../artwork/04-vpc-08.png" style="width:55%;"/> <!-- {"left" : 1.12, "top" : 3.19, "height" : 6.01, "width" : 15.26} -->
 
-![](../artwork/04-vpc-08.png)
 
 ---
 
 ## IPs and CIDR
 
-![](../artwork/04-vpc-09.png)
+<img src="../artwork/04-vpc-09.png" style="width:55%;"/> <!-- {"left" : 1.2, "top" : 3.17, "height" : 6.04, "width" : 15.11} -->
+
 
 ---
 
 ## CIDR Example: 10.0.0.0/16
 
-![](../artwork/04-vpc-10.png)
+<img src="../artwork/04-vpc-10.png" style="width:55%;"/> <!-- {"left" : 1.17, "top" : 3.27, "height" : 5.85, "width" : 15.17} -->
+
 
 ---
 
 ## VPCs and IP Addresses
 
-![](../artwork/04-vpc-11.png)
+<img src="../artwork/04-vpc-11.png" style="width:55%;"/> <!-- {"left" : 1.53, "top" : 3.01, "height" : 6.36, "width" : 14.44} -->
 
 ---
 
 ## What Are Subnets?
 
-![](../artwork/04-vpc-12.png)
+<img src="../artwork/04-vpc-12.png" style="width:55%;"/> <!-- {"left" : 1.11, "top" : 2.79, "height" : 6.8, "width" : 15.28} -->
+
 
 ---
 
 ## How to Use Subnets
 
-![](../artwork/04-vpc-13.png)
+<img src="../artwork/04-vpc-13.png" style="width:55%;"/> <!-- {"left" : 0.79, "top" : 3.05, "height" : 6.3, "width" : 15.93} -->
+
 
 ---
 
 ## Subnets
 
-![](../artwork/04-vpc-14.png)
+<img src="../artwork/04-vpc-14.png" style="width:55%;"/> <!-- {"left" : 0.97, "top" : 2.97, "height" : 6.46, "width" : 15.56} -->
+
 
 ---
 
 ## Subnets
 
-![](../artwork/04-vpc-15.png)
+<img src="../artwork/04-vpc-15.png" style="width:55%;"/> <!-- {"left" : 0.97, "top" : 2.84, "height" : 6.71, "width" : 15.56} -->
 
 ---
 
 ## Subnet Sizes
+
 * Recommendation: Consider larger subnets over smaller ones (/24 and larger). 
 
 * Simplifies workload placement:
     * Choosing where to place a workload among 10 small subnets is more complicated than with one large subnet.
-    
+
 * Less likely to waste or run out of IPs:
     * If your subnet runs out of available IPs, you can't add more to that subnet.
     * Ex.: If you have 251 IPs in a subnet that's using only 25 of them, you can't share the unused 226 IPs with another subnet that's running out.
-    
+
 ---
 
 ## Quiz
@@ -317,7 +334,7 @@ Notes:
         * Public or Private?
     * D. Web application instances?
         * Public or private?
-        
+
 Notes:
 
 * A. Private
@@ -326,6 +343,7 @@ Notes:
 * D. Either Public or Private
 
 ---
+
 ## How do you control your VPC traffic?
 
 * Route tables
@@ -334,6 +352,7 @@ Notes:
 * Internet gateways
 
 ---
+
 ## Route Tables: Directing Traffic Between VPC Resources
 
 * Route tables:
@@ -345,7 +364,8 @@ Notes:
 
 * **Best practice:** For better security, use custom route tables for each subnet.
 
-![](../artwork/04-vpc-16.png)
+<img src="../artwork/04-vpc-16.png" style="width:55%;"/> <!-- {"left" : 11.95, "top" : 1.62, "height" : 5.38, "width" : 4.95} -->
+
 
 Notes:
 
@@ -373,7 +393,8 @@ Notes:
 
 ## Security Groups
 
-![](../artwork/04-vpc-17.png)
+<img src="../artwork/04-vpc-17.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 2.72, "height" : 6.96, "width" : 15.39} -->
+
 
 
 Notes: 
@@ -395,7 +416,7 @@ Notes:
 
 * Security group rules per application tier
 
-![](../artwork/04-vpc-18.png)
+<img src="../artwork/04-vpc-18.png" style="width:55%;"/> <!-- {"left" : 2.9, "top" : 3.78, "height" : 6.17, "width" : 11.69} -->
 
 ---
 
@@ -420,7 +441,7 @@ Notes:
     * B. Virtual Public Cloud
     * C. Virtual Private Cloud
     * Very Public Cloud
-    
+
 Notes: 
 
 * C.
@@ -435,7 +456,7 @@ Notes:
     * B. Associate the private IP of your instance to the public IP of the internet gateway
     * C. Create an elastic IP address and associate it with your instance
     * D. Nothing - by default all instance deployed into any public subnet will automatically recieve a public IP
-    
+
 Notes:
 
 * C.
@@ -448,7 +469,7 @@ Notes:
 
     * A. True
     * B. False
-    
+
 Notes:
 
 * B. 
@@ -463,13 +484,12 @@ Notes:
     * A. Yes. You can perform any scan without first alerting AWS
     * B. No. You must always alert AWS before performing any kind of vulnerability scan
     * C. It depends. Until recently customers were not permitted to conduct penetration testing without AWS engagement. However that has changed. There are still conditions though.
-    
+
 Notes:
 
 * C.
 
 ---
-
 
 ## Directing Traffic To Your VPC
 
@@ -477,9 +497,10 @@ Notes:
     * Allow communication between instances in your VPC and the Internet.
     * Are a managed service: horizontally scaled, redundant, and highly available by default.
     * Provide a target in your VPC route tables for Internet-routable traffic.
- 
-![](../artwork/04-vpc-19.png)
- 
+
+<img src="../artwork/04-vpc-19.png" style="width:55%;"/> <!-- {"left" : 12.66, "top" : 2.12, "height" : 5.92, "width" : 4.42} -->
+
+
 ---
 
 ## Directing Traffic To Your VPC
@@ -489,7 +510,7 @@ Notes:
     * Ensure that your subnet's route table points to the Internet gateway.
     * Ensure that instances in your subnet have public IP addresses or Elastic IP addresses.
     * Ensure that your NACLs and security groups allow the relevant traffic to flow to and from your instance.
-    
+
 ---
 
 ## What About Outbound Traffic From Private Instances?
@@ -499,11 +520,12 @@ Notes:
     * Prevent private instances from receiving inbound traffic from the Internet.
 * Two primary options:
     * Amazon EC2 instance set up as a NAT in a public subnet
-    
-![](../artwork/04-vpc-20.png)
 
----    
-    
+<img src="../artwork/04-vpc-20.png" style="width:55%;"/> <!-- {"left" : 10.85, "top" : 2.55, "height" : 4.67, "width" : 6.1} -->
+
+
+---
+
 ## What About Outbound Traffic From Private Instances?
 
 * Network Address Translation services:
@@ -513,13 +535,15 @@ Notes:
     * Amazon EC2 instance set up as a NAT in a public subnet
     * VPC NAT Gateway
 
-![](../artwork/04-vpc-21.png)
+<img src="../artwork/04-vpc-21.png" style="width:55%;"/> <!-- {"left" : 12.73, "top" : 1.92, "height" : 5.54, "width" : 4.27} -->
 
----    
+
+---
 
 ## VPC NAT Gateways vs. NAT Instances On Amazon EC2
 
-![](../artwork/04-vpc-22.png)
+<img src="../artwork/04-vpc-22.png" style="width:55%;"/> <!-- {"left" : 2.12, "top" : 2.82, "height" : 6.75, "width" : 13.26} -->
+
 
 Notes:
 
@@ -529,9 +553,11 @@ Notes:
 
 ## Subnets, Gateways, and Routes
 
-![](../artwork/04-vpc-23.png)
+<img src="../artwork/04-vpc-23.png" style="width:55%;"/> <!-- {"left" : 0.94, "top" : 2.58, "height" : 7.22, "width" : 15.61} -->
 
----  
+
+---
+
 ## Amazon VPC Flow Logs
 
 * Captures traffic flow details in your VPC.
@@ -539,7 +565,8 @@ Notes:
 * Can be enabled for VPCs, subnets, and ENIs.
 * Logs published to CloudWatch Logs.
 
-![](../artwork/04-vpc-24.png)
+<img src="../artwork/04-vpc-24.png" style="width:55%;"/> <!-- {"left" : 10.27, "top" : 2.16, "height" : 4.51, "width" : 6.53} -->
+
 
 ---
 
@@ -547,19 +574,21 @@ Notes:
 
 * Not the right way
 
-![](../artwork/04-vpc-25.png)
+<img src="../artwork/04-vpc-25.png" style="width:55%;"/> <!-- {"left" : 2.42, "top" : 3.62, "height" : 6.5, "width" : 12.66} -->
+
 
 ---
 
 ## VPC peering
 
-![](../artwork/04-vpc-26.png)
+<img src="../artwork/04-vpc-26.png" style="width:55%;"/> <!-- {"left" : 1.19, "top" : 2.92, "height" : 6.56, "width" : 15.11} -->
 
 ---
 
 ## How Does VPC Peering Work?
 
-![](../artwork/04-vpc-27.png)
+<img src="../artwork/04-vpc-27.png" style="width:55%;"/> <!-- {"left" : 1.12, "top" : 3.18, "height" : 6.03, "width" : 15.25} -->
+
 
 Notes:
 
@@ -576,9 +605,12 @@ Notes:
 * Private DNS values cannot be resolved between instances in peered VPCs.
 
 ---
+
 ## Rules Of VPC Peering
 
-![](../artwork/04-vpc-28.png)
+<img src="../artwork/04-vpc-28.png" style="width:55%;"/> <!-- {"left" : 1.54, "top" : 3.08, "height" : 7.57, "width" : 14.43} -->
+
+
 
 Notes:
 
@@ -588,7 +620,7 @@ Notes:
 * In this scenario, only A has a connection to the corporate data center, and can serve as a hub.
 * There are various peering scenarios that you can configure. Refer to the online documentation for more scenarios: http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide/peering-configurations.html
 
---- 
+---
 
 ## VPC Peering Security
 
@@ -606,7 +638,8 @@ Notes:
 
 ## Extending On-Premises Network To AWS: VPN Connections
 
-![](../artwork/04-vpc-29.png)
+<img src="../artwork/04-vpc-29.png" style="width:55%;"/> <!-- {"left" : 0.98, "top" : 2.6, "height" : 7.19, "width" : 15.54} -->
+
 
 Notes:
 
@@ -621,8 +654,8 @@ Notes:
 
 ## Extending On-Premises Network To AWS: Multiple VPN
 
-![](../artwork/04-vpc-30.png)
- 
+<img src="../artwork/04-vpc-30.png" style="width:55%;"/> <!-- {"left" : 1.39, "top" : 2.75, "height" : 6.9, "width" : 14.72} -->
+
 Notes: 
 
 * Amazon VGW also supports and encourages multiple customer gateway connections so that customers can implement redundancy and failover on their side of the VPN connection, as shown on this slide. Both dynamic and static routing options are provided to give customers flexibility in their routing configuration. Dynamic routing leverages BGP peering to exchange routing information between AWS and these remote endpoints. Dynamic routing also allows customers to specify routing priorities, policies, and weights (metrics) in their BGP advertisements and to influence the network path between their networks and AWS. 
@@ -653,8 +686,8 @@ Notes:
 Notes:
 
 * Just a mention
-    
----    
+
+---
 
 ## Default VPCs
 
@@ -664,7 +697,7 @@ Notes:
     * If you create a VPC-based resource (Amazon EC2, Amazon RDS, Elastic Load Balancing, etc.) but don't specify a custom VPC, it will be placed in your default VPC in that region.
     * Includes a default subnet, IGW, main route table connecting default subnet to the IGW, default security group, and default NACL.
     * Configurable the same as other VPCs; e.g., adding more subnets.
- 
+
 ---
 
 ## Default Subnet
@@ -674,7 +707,7 @@ Notes:
     * Public subnet with a CIDR block of /20 (4,096 IPs). 
     * You can convert it (and any public subnet) into a private subnet by removing its route to the IGW.
     * When a new Availability Zone is added to a region, your default VPC in that region gets a subnet placed in the new Availability Zone (unless you've made modifications to that VPC).
-    
+
 ---
 
 ## When Should I Use Default VPCs And Subnets?
@@ -685,8 +718,9 @@ Notes:
     * For real-world applications, create your own VPCs and subnets.
         * You'll have greater control/knowledge of their configurations.
         * You can delete them and create new ones easily.
-        
+
 ---
+
 ## VPC Best Practices
 
 * Choose CIDR blocks wisely. Plan ahead.
@@ -705,7 +739,7 @@ Notes:
 
     * A. True
     * B. False
-    
+
 Notes:
 
 * B. You may have only one internet gateway per VPC.
@@ -718,7 +752,7 @@ Notes:
 
     * A. True
     * B. False
-    
+
 Notes:
 
 * B. You may peer a VPC to another VPC that's in your same account, or to any VPC in any other account.
@@ -731,13 +765,13 @@ Notes:
 
     * A. True
     * B. False
-    
+
 Notes:
 
 * A. 
 
 ---
-                   
+
 ## Quiz
 
 * Which of the following is a chief advantage of using VPC endpoints to connect your VPC to services such as S3?
@@ -746,7 +780,7 @@ Notes:
     * B. VPC endpoints offer a faster path through the public internet
     * C. VPC endpoints require a public IP which gives faster connectivity
     * D. VPC endpoints are hardware devices
-    
+
 Notes:
 
 * A. In contrast to a NAT gateway, traffic between your VPC and the other service does not leave the Amazon network when using VPC endpoints.
@@ -761,7 +795,7 @@ Notes:
     * B. NAT instance
     * C. NAT gateway
     * D. Internet gateway
-    
+
 Notes:
 
 * A. A Bastion host allows you to securely administer (via SSH or RDP) an EC2 instance located in a private subnet. Don't confuse Bastions and NATs, which allow outside traffic to reach an instance in a private subnet.
@@ -770,24 +804,24 @@ Notes:
 
 ## Quiz
 
-* When I create a new security group, all outbound traffic is allowed by default.     
-     
+* When I create a new security group, all outbound traffic is allowed by default.
+
     * A. True
     * B. False
-    
+
 Notes:
 
-* A. 
+* A.
 
 ---
 
 ## Quiz
 
-* To save administration headaches, a consultant advises that you leave all security groups in web-facing subnets open on port 22 to 0.0.0.0/0 CIDR. That way, you can connect wherever you are in the world. Is this a good security design?     
-     
+* To save administration headaches, a consultant advises that you leave all security groups in web-facing subnets open on port 22 to 0.0.0.0/0 CIDR. That way, you can connect wherever you are in the world. Is this a good security design?
+
     * A. True
     * B. False
-    
+
 Notes:
 
 * B. 0.0.0.0/0 would allow ANYONE from ANYWHERE to connect to your instances. This is generally a bad plan. The phrase 'web-facing subnets' does not mean just web servers. It would include any instances in that subnet some of which you may not strangers attacking. You would only allow 0.0.0.0/0 on port 80 or 443 to to connect to your public facing Web Servers, or preferably only to an ELB. Good security starts by limiting public access to only what the customer needs. Please see the AWS Security whitepaper for complete details. 
@@ -799,19 +833,19 @@ Notes:
 ---
 
 ## Azure Virtual networks
-         
+
 * Virtual networks are for connecting
     * VMs 
     * App Service Environment for Power Apps
     * Azure Kubernetes Service
     * Azure virtual machine scale sets.
 
-* Azure Service endpoints   
+* Azure Service endpoints
 
     * To connect to other Azure resource types
     * Azure SQL databases 
     * Storage accounts
-    * This approach enables you to link multiple Azure resources to virtual networks to improve security and provide optimal routing between resources.    
+    * This approach enables you to link multiple Azure resources to virtual networks to improve security and provide optimal routing between resources.
 
 ---
 
@@ -828,8 +862,9 @@ Notes:
 * Azure ExpressRoute
 
     * For environments where you need greater bandwidth and even higher levels of security, Azure ExpressRoute is the best approach. ExpressRoute provides dedicated private connectivity to Azure that doesn't travel over the internet.
-    
+
 ---
+
 ## Route network traffic
 
 * By default, Azure routes traffic between subnets on any connected virtual networks, on-premises networks, and the internet. You also can control routing and override those settings, as follows:
@@ -841,7 +876,7 @@ Notes:
 * Border Gateway Protocol
 
     * Border Gateway Protocol (BGP) works with Azure VPN gateways or ExpressRoute to propagate on-premises BGP routes to Azure virtual networks.
-    
+
 ---
 
 ## Filter network traffic
@@ -853,7 +888,7 @@ Notes:
 * Network virtual appliances
 
     * A network virtual appliance is a specialized VM that can be compared to a hardened network appliance. A network virtual appliance carries out a particular network function, such as running a firewall or performing wide area network (WAN) optimization.
-    
+
 ---
 
 ## Connect virtual networks
@@ -861,16 +896,17 @@ Notes:
 * You can link virtual networks together by using virtual network peering. 
 
     * Peering enables resources in each virtual network to communicate with each other. These virtual networks can be in separate regions, which allows you to create a global interconnected network through Azure.
-    
+
 * UDR is user-defined Routing. 
     * UDR is a significant update to Azure’s Virtual Networks
     * allows network admins to control the routing tables between subnets within a subnet as well as between VNets thereby allowing for greater control over network traffic flow.
-    
+
 ---
 
 ## Network peering
 
-![](../artwork/04-vpc-31.png)
+<img src="../artwork/04-vpc-31.png" style="width:55%;"/> <!-- {"left" : 2.83, "top" : 3.1, "height" : 6.63, "width" : 11.84} -->
+
 
 ---
 
@@ -878,7 +914,7 @@ Notes:
 
 * Configure a number of basic settings
 
-![](../artwork/04-vpc-32.png)
+<img src="../artwork/04-vpc-32.png" style="width:55%;"/> <!-- {"left" : 3.2, "top" : 3.76, "height" : 6.87, "width" : 10.72} -->
 
 ---
 
@@ -886,7 +922,7 @@ Notes:
 
 * You will be able to adjust the settings later
 
-![](../artwork/04-vpc-33.png)
+<img src="../artwork/04-vpc-33.png" style="width:55%;"/> <!-- {"left" : 11.22, "top" : 1.57, "height" : 8.58, "width" : 5.61} -->
 
 ---
 
@@ -898,7 +934,8 @@ Notes:
     * Connect individual devices to virtual networks through a point-to-site connection.
     * Connect virtual networks to other virtual networks through a network-to-network connection.
 
-![](../artwork/04-vpc-34.png)
+<img src="../artwork/04-vpc-34.png" style="width:55%;"/> <!-- {"left" : 9.6, "top" : 1.6, "height" : 2.14, "width" : 7.31} -->
+
 
 ---
 
@@ -910,12 +947,12 @@ Notes:
     * B. Implicit FTP over SSL
     * C. Azure ExpressRoute
     * D. Site-to-site virtual private network
-    
+
 Notes:
 
 * B.
 
---- 
+---
 
 ## Quiz
 
@@ -925,7 +962,7 @@ Notes:
     * B. Site-to-site virtual private network
     * C. Point-to-point Ethernet connection
     * D. CloudExchange colocation
-    
+
 Notes:
 
 * B.
@@ -942,13 +979,13 @@ Notes:
 
     * C. Dynamic Host Configuration Protocol
 
-    * D. Virtual network peering        
+    * D. Virtual network peering
 
-Notes: 
+Notes:
 
 * D.
 
----    
+---
 
 # VPC in GCP
 
@@ -965,21 +1002,22 @@ Notes:
 
 ## Projects and networks
 
-* A project: 
+* A project:
     * Associates objects and services with billing.
     * Contains networks (quota max 5).
-    
-* A network: 
+
+* A network:
     * Has no IP address range.
     * Is global and spans all available regions.
     * Contains subnetworks.
     * Can be of type default, auto mode, or custom mode.
-    
+
 ---
 
 ## Networks isolate systems
 
-![](../artwork/04-vpc-35.png)
+<img src="../artwork/04-vpc-35.png" style="width:55%;"/> <!-- {"left" : 1.88, "top" : 3.3, "height" : 7.13, "width" : 13.75} -->
+
 
 Notes:
 
@@ -987,7 +1025,7 @@ Notes:
 
 * Instances in the same network, such as A and B, can communicate with each other over internal IPs even though they are in different regions.
 
----    
+---
   
 ## Subnetworks cross zones
 
@@ -995,7 +1033,8 @@ Notes:
 * One VM and an alternate VM can be on the same subnet but in different zones.
 * A single firewall rule can apply to both VMs even though they are in different zones.
 
-![](../artwork/04-vpc-36.png)
+
+<img src="../artwork/04-vpc-36.png" style="width:55%;"/> <!-- {"left" : 11.13, "top" : 2.33, "height" : 5.4, "width" : 5.93} -->
 
 ---
 
@@ -1003,13 +1042,13 @@ Notes:
 
 * Networks have no IP range, so subnetworks don't need to fit into an address hierarchy. Instead, subnetworks can be used to group and manage resources. They can represent departments, business functions, or systems.
 
-![](../artwork/04-vpc-37.png)
+<img src="../artwork/04-vpc-37.png" style="width:55%;"/> <!-- {"left" : 4.33, "top" : 6.02, "height" : 4.5, "width" : 8.85} -->
 
 ---
 
 ## IP addresses
 
-![](../artwork/04-vpc-38.png)
+<img src="../artwork/04-vpc-38.png" style="width:55%;"/> <!-- {"left" : 2.29, "top" : 2.59, "height" : 6.54, "width" : 12.92} -->
 
 * External IPs are mapped to internal IPs
 
@@ -1021,12 +1060,12 @@ Notes:
     * The hostname is the same as the instance name.
     * FQDN is [hostname].c.[project-id].internal.
         * Example: guestbook-test.c.guestbook-151617.internal
-        
+
 * Name resolution is handled by internal DNS resolver:
     * Provided as part of Compute Engine (169.254.169.254).
     * Configured for use on instance via DHCP.
     * Provides answer for internal and external addresses.
-    
+
 ---
 
 ## A route is a mapping of an IP range to a destination
@@ -1036,7 +1075,7 @@ Notes:
     * A default route that directs packets to destinations that are outside the network.
 
 * *The fact that a packet has a route to a destination doesn’t mean it can get there; firewall rules must also allow the packet.*
-    
+
 ---
 
 ## Quiz
@@ -1045,7 +1084,7 @@ Notes:
 
     * A. True
     * B. False
-    
+
 Notes:
 
 * A.
@@ -1058,10 +1097,10 @@ Notes:
 
     * A. True
     * B. False
-    
+
 Notes:
 
-* A. 
+* A.
 
 ---
 
@@ -1071,7 +1110,7 @@ Notes:
 
     * A. True
     * B. False
-    
+
 Notes:
 
 * B.
@@ -1084,7 +1123,7 @@ Notes:
 
     * A. True
     * B. False
-    
+
 Notes:
 
 * A. VPC networks, including their associated routes and firewall rules, are global resources. They are not associated with any particular region or zone.
@@ -1097,34 +1136,13 @@ Notes:
 
     * A. True
     * B. False
-    
+
 Notes:
 
 * A. GCP firewall rules are stateful. 
 
 ---
 
-## Thank you
-
-* Congratulation on finished the Networking and Data Movement
-
-Notes: 
-
-* TODO
-    * Add networking summary
-    * Add data movement
-    * Defining subnets and subnet masks really necessary?
-    * Avoid private IP space used on-prem or by collaborators
-    
----
-
 ## Congrats on completion
 
-
-![](../artwork/congrats.png)
-
----
-
-
-      
-    
+<img src="../artwork/congrats.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 4.57, "height" : 3.25, "width" : 15.41} -->

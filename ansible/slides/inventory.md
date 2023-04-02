@@ -32,7 +32,7 @@
 
 ## Example
 
-![img_10.png](images/img_10.png)
+![img_10.png](../images/img_10.png)
 
 ---
 
@@ -62,7 +62,7 @@
 
 ## Patterns
 
-![img_12.png](images/img_12.png)
+![img_12.png](../images/img_12.png)
 
 ---
 

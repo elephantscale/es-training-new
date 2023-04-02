@@ -21,13 +21,13 @@
 * Auto scaling group = ASG
 * We will explain ASG first using AWS as example
 
-![](../artwork/06-scale-16.png)
+<img src="../artwork/06-scale-16.png" style="width:55%;"/> <!-- {"left" : 1.58, "top" : 4.33, "height" : 5.61, "width" : 14.35} -->
 
 ---
 
 ## Trio of Services
 
-![](../artwork/06-scale-17.png)
+<img src="../artwork/06-scale-17.png" style="width:55%;"/> <!-- {"left" : 2.16, "top" : 2.89, "height" : 7.95, "width" : 13.18} -->
 
 Notes:
 
@@ -37,7 +37,8 @@ Notes:
 
 ## Auto Scaling Benefits
 
-![](../artwork/06-scale-18.png)
+<img src="../artwork/06-scale-18.png" style="width:55%;"/> <!-- {"left" : 1.11, "top" : 3.34, "height" : 5.7, "width" : 15.27} -->
+
 
 Notes:
 
@@ -59,7 +60,9 @@ Notes:
     * Block device mapping
     * User data
 
-![](../artwork/06-scale-19.png)
+
+<img src="../artwork/06-scale-19.png" style="width:55%;"/> <!-- {"left" : 9.63, "top" : 3.12, "height" : 3.09, "width" : 7.43} -->
+
 
 Notes:
 
@@ -71,7 +74,8 @@ Notes:
 
 ## Launch configuration example
 
-![](../artwork/06-scale-20.png)
+<img src="../artwork/06-scale-20.png" style="width:55%;"/> <!-- {"left" : 4.87, "top" : 2.38, "height" : 8.96, "width" : 7.75} -->
+
 
 ---
 
@@ -80,7 +84,8 @@ Notes:
 * Contain a collection of EC2 instances that share similar characteristics.
 * Instances in an Auto Scaling group are treated as a logical grouping for the purpose of instance scaling and management.
 
-![](../artwork/06-scale-21.png)
+<img src="../artwork/06-scale-21.png" style="width:55%;"/> <!-- {"left" : 3.84, "top" : 5.2, "height" : 6.06, "width" : 9.82} -->
+
 
 Notes:
 
@@ -102,7 +107,8 @@ Notes:
 ## Auto Scaling Basic Lifecycle
 
 
-![](../artwork/06-scale-22.png)
+<img src="../artwork/06-scale-22.png" style="width:55%;"/> <!-- {"left" : 2.72, "top" : 2.38, "height" : 7.62, "width" : 12.06} -->
+
 
 
 Notes:
@@ -224,13 +230,13 @@ Notes:
 
 ## Examine the current pricing
 
-![](../artwork/06-scale-23.png)
+<img src="../artwork/06-scale-23.png" style="width:55%;"/> <!-- {"left" : 2.96, "top" : 2.31, "height" : 8.16, "width" : 11.58} -->
 
 ---
 
 ## Scaling in action
 
-![](../artwork/06-scale-24.png)
+<img src="../artwork/06-scale-24.png" style="width:55%;"/> <!-- {"left" : 1.51, "top" : 2.91, "height" : 6.58, "width" : 14.47} -->
 
 ---
 
@@ -270,7 +276,8 @@ Notes:
     * Max number
     * Min number
 
-![](../artwork/06-scale-25.png)
+<img src="../artwork/06-scale-25.png" style="width:55%;"/> <!-- {"left" : 11.29, "top" : 1.4, "height" : 6.29, "width" : 5.77} -->
+
 
 ---
 
@@ -317,6 +324,7 @@ gcloud compute instance-groups managed \
     --target-cpu-utilization 0.75 \ 
     --cool-down-period 90 
 ```
+<!-- {"left" : 0.89, "top" : 3.7, "height" : 1.74, "width" : 9.78} -->
 
 Notes:
 
@@ -328,13 +336,14 @@ Notes:
 
 ## Scale-Out Policy Decision
 
-![](../artwork/06-scale-26.png)
+
+<img src="../artwork/06-scale-26.png" style="width:55%;"/> <!-- {"left" : 1.07, "top" : 3.15, "height" : 6.09, "width" : 15.35} -->
 
 ---
 
 ## Scale-In Policy Decision
 
-![](../artwork/06-scale-27.png)
+<img src="../artwork/06-scale-27.png" style="width:55%;"/> <!-- {"left" : 1.58, "top" : 3.48, "height" : 5.42, "width" : 14.35} -->
 
 ---
 
@@ -393,8 +402,8 @@ Notes:
 
 * This is how you exposed your resources back then
 
-![](../artwork/06-scale-28.png)
-    
+<img src="../artwork/06-scale-28.png" style="width:55%;"/> <!-- {"left" : 3.66, "top" : 3.84, "height" : 6.56, "width" : 10.17} -->
+
 Notes:
 
 * Before we discuss the role of APIs and API Management in today's enterprise landscape, it is important for you to understand where we are, and how we got here.
@@ -410,8 +419,8 @@ Notes:
 * How do you bridge the gap?
 * Modern best practice is to decouple, or "bridge"
 
-![](../artwork/06-scale-29.png)
-    
+<img src="../artwork/06-scale-29.png" style="width:55%;"/> <!-- {"left" : 3.99, "top" : 4.57, "height" : 6.2, "width" : 9.53} -->
+
 Notes:
 
 * What about today?
@@ -429,7 +438,8 @@ Notes:
 * This is a complete layer
 * You may not need all of it, but it is a good list
 
-![](../artwork/06-scale-30.png)
+<img src="../artwork/06-scale-30.png" style="width:55%;"/> <!-- {"left" : 3.91, "top" : 4.07, "height" : 6.74, "width" : 9.68} -->
+
 
 Notes:
 
@@ -448,13 +458,14 @@ Notes:
 
 * The speed of development is increasing
 
-![](../artwork/06-scale-31.png)
+<img src="../artwork/06-scale-31.png" style="width:55%;"/> <!-- {"left" : 2.46, "top" : 3.98, "height" : 6.91, "width" : 12.58} -->
+
 
 ---
 
 ## Apigee, the "all-out" solution
 
-![](../artwork/06-scale-32.png)
+<img src="../artwork/06-scale-32.png" style="width:55%;"/> <!-- {"left" : 1.77, "top" : 2.74, "height" : 7.68, "width" : 13.96} -->
 
 Notes:
 
@@ -464,7 +475,9 @@ No free tier any longer
 
 ## Apigee is on GCP
 
-![](../artwork/06-scale-33.png)
+
+<img src="../artwork/06-scale-33.png" style="width:55%;"/> <!-- {"left" : 1.1, "top" : 2.66, "height" : 7.07, "width" : 15.31} -->
+
 
 Notes:
 
@@ -482,7 +495,8 @@ Notes:
 * But it is an upcoming architectural design pattern
 * So, it is good to know
 
-![](../artwork/06-scale-34.png)
+<img src="../artwork/06-scale-34.png" style="width:55%;"/> <!-- {"left" : 9.64, "top" : 1.75, "height" : 6.07, "width" : 7.12} -->
+
 
 ---
 
@@ -512,7 +526,7 @@ Notes:
 
 ## How AWS API Gateway Works
 
-![](../artwork/06-scale-35.png)
+<img src="../artwork/06-scale-35.png" style="width:55%;"/> <!-- {"left" : 1.29, "top" : 3.05, "height" : 6.29, "width" : 14.92} -->
 
 ---
 
@@ -554,7 +568,7 @@ Notes:
 
 ## Building API on Azure
 
-![](../artwork/06-scale-36.png)
+<img src="../artwork/06-scale-36.png" style="width:55%;"/> <!-- {"left" : 3.64, "top" : 2.13, "height" : 8.12, "width" : 10.22} -->
 
 ---
 
@@ -566,7 +580,8 @@ Notes:
 
 * This, and more...
 
-![](../artwork/06-scale-37.png)
+<img src="../artwork/06-scale-37.png" style="width:55%;"/> <!-- {"left" : 3.45, "top" : 4, "height" : 4.38, "width" : 10.6} -->
+
 
 ---
 
@@ -574,19 +589,20 @@ Notes:
 
 * This may or may not be your goal though
             
-![](../artwork/06-scale-38.png)
+<img src="../artwork/06-scale-38.png" style="width:55%;"/> <!-- {"left" : 2.83, "top" : 3.84, "height" : 5.72, "width" : 11.85} -->
+
 
 ---
 
 ## Anthos
 
-![](../artwork/06-scale-39.png)
+<img src="../artwork/06-scale-39.png" style="width:55%;"/> <!-- {"left" : 1.38, "top" : 2.74, "height" : 6.9, "width" : 14.74} -->
 
 ---
 
 ## Anthos more details
 
-![](../artwork/06-scale-40.png)
+<img src="../artwork/06-scale-40.png" style="width:55%;"/> <!-- {"left" : 1.24, "top" : 3.39, "height" : 6.94, "width" : 15.02} -->
 
 ---
 
@@ -594,19 +610,22 @@ Notes:
 
 * Service mesh (ISTIO)
 
-![](../artwork/06-scale-41.png)
+<img src="../artwork/06-scale-41.png" style="width:55%;"/> <!-- {"left" : 1.24, "top" : 3.38, "height" : 5.64, "width" : 15.03} -->
+
 
 ---
        
 ## Azure Stack
 
-![](../artwork/06-scale-42.png)
+
+<img src="../artwork/06-scale-42.png" style="width:55%;"/> <!-- {"left" : 1.7, "top" : 3.28, "height" : 5.84, "width" : 14.11} -->
 
 ---
 
 ## Azure Stack offerings
 
-![](../artwork/06-scale-43.png)
+<img src="../artwork/06-scale-43.png" style="width:55%;"/> <!-- {"left" : 1.27, "top" : 3.32, "height" : 5.75, "width" : 14.96} -->
+
 
 ---
 
@@ -621,7 +640,8 @@ Notes:
 
 ## Anthos on AWS
 
-![](../artwork/arch.png)
+<img src="../artwork/arch.png" style="width:55%;"/> <!-- {"left" : 4.59, "top" : 2.78, "height" : 8.17, "width" : 8.31} -->
+
 
 ---
 
@@ -637,4 +657,4 @@ Notes:
 
 ## Congrats on completion
 
-![](../artwork/congrats.png)
+<img src="../artwork/congrats.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 4.57, "height" : 3.25, "width" : 15.41} -->

@@ -1,4 +1,5 @@
 # Cost Management
+---
 
 ## Fundamentals of Cost Optimization
 
@@ -36,7 +37,8 @@ Notes:
 
 ## Cloud Design Pattern: Job Observer Pattern
 
-![](../artwork/08-cost-01.png)
+<img src="../artwork/08-cost-01.png" style="width:55%;"/> <!-- {"left" : 1.27, "top" : 2.22, "height" : 7.95, "width" : 14.95} -->
+
 
 Notes:
 
@@ -83,7 +85,9 @@ Auto Scaling receives an alarm from CloudWatch and increases the number of batch
     * Close security gaps.
     * Improve system fault tolerance
 
-![](../artwork/08-cost-02.png)
+
+<img src="../artwork/08-cost-02.png" style="width:55%;"/> <!-- {"left" : 9.38, "top" : 2.25, "height" : 4.57, "width" : 7.52} -->
+
 
 Notes:
 
@@ -122,6 +126,8 @@ Notes:
 | Benefit  | Low cost and flexibility                                                                                                 | Predictability ensures compute capacity is available when needed                                                                                                                                                 | Large scale, dynamic workload                                                                                                                                                     |
 | Cost     | Pay for only what you use; no up-front commitment or long-term contracts                                                 | Pay low or no up-front fee; receive significant hourly discount                                                                                                                                                  | Spot price based on supply and demand – determined automatically                                                                                                                  |
 | Use case | Applications with short term, spiky, or unpredictable workloads  Application development or testing  Billed hour forward | Applications with steady state or predictable usage  Applications that require reserved capacity, including disaster recovery  Users able to make up-front payments to reduce total computing costs even further | Applications with flexible start and end times  Applications only feasible at very low compute prices  Users with urgent computing needs for large amounts of additional capacity |
+
+<!-- {"left" : 0.22, "top" : 1.4, "height" : 1, "width" : 16.95, "columnwidth" : [1.36, 4.45, 6.16, 4.98]} -->
 
 ---
 
@@ -173,8 +179,8 @@ Notes:
 * Termination Notice provided 2 minutes prior to termination, stored in metadata
 * Best approach to temporary requests for large numbers of servers.
 
+<img src="../artwork/08-cost-03.png" style="width:55%;"/> <!-- {"left" : 4.3, "top" : 7.19, "height" : 4.44, "width" : 8.89} -->
 
-![](../artwork/08-cost-03.png)
 
 Notes:
 
@@ -210,6 +216,8 @@ Notes:
 | Gaming             | Back-end servers for Facebook games                              |
 | Testing            | Scale to large server pool to test software, websites, etc.      |
 
+<!-- {"left" : 0.99, "top" : 2.37, "height" : 1, "width" : 15.57} -->
+
 ---
 
 ## Vimeo’s Spot Market Considerations (1 of 2)
@@ -243,7 +251,9 @@ Notes:
 
 ## Leveraging EC2 Pricing Models Together
 
-![](../artwork/08-cost-04.png)
+
+<img src="../artwork/08-cost-04.png" style="width:55%;"/> <!-- {"left" : 2.81, "top" : 3.11, "height" : 7.51, "width" : 11.87} -->
+
 
 ---
 
@@ -286,7 +296,7 @@ Notes:
     * Offload popular traffic to Amazon CloudFront and Amazon S3.
     * Introduce caching.
   
-![](../artwork/08-cost-05.png)
+<img src="../artwork/08-cost-05.png" style="width:55%;"/> <!-- {"left" : 10.99, "top" : 2.25, "height" : 5.82, "width" : 6.02} -->
 
 ---
 
@@ -339,21 +349,26 @@ Reduced Redundancy Storage (RRS) is a storage option within Amazon S3 that enabl
     * Many schools, for example, are using reseller to bill individual accounts
     * As of re-invent 2020, this is changing and may not be a universal fit-all practices
         
-![](../artwork/08-cost-06.png)    
+
+<img src="../artwork/08-cost-06.png" style="width:55%;"/> <!-- {"left" : 11.72, "top" : 3, "height" : 4, "width" : 5.37} -->
+ 
 
 ---
 
     
 ## AWS pricing calculator
 
-![](../artwork/08-cost-07.png)    
+<img src="../artwork/08-cost-07.png" style="width:55%;"/> <!-- {"left" : 1.88, "top" : 2.54, "height" : 7.31, "width" : 13.74} -->
+    
 
 ---
 
 
 ## AWS pricing calculator
 
-![](../artwork/08-cost-08.png)    
+
+<img src="../artwork/08-cost-08.png" style="width:55%;"/> <!-- {"left" : 1.18, "top" : 3.07, "height" : 6.24, "width" : 15.14} -->
+ 
 
 ---
 
@@ -375,7 +390,8 @@ Reduced Redundancy Storage (RRS) is a storage option within Amazon S3 that enabl
 
 ## TCO Estimates for On-Premises Deployments
 
-![](../artwork/08-cost-09.png)    
+<img src="../artwork/08-cost-09.png" style="width:55%;"/> <!-- {"left" : 1.43, "top" : 2.71, "height" : 6.97, "width" : 14.63} -->
+ 
 
 ---
 
@@ -383,14 +399,15 @@ Reduced Redundancy Storage (RRS) is a storage option within Amazon S3 that enabl
 
 [https://calculator.aws/#/](https://calculator.aws/#/)
 
-![](../artwork/08-cost-10.png)    
+
+<img src="../artwork/08-cost-10.png" style="width:55%;"/> <!-- {"left" : 2.16, "top" : 3.31, "height" : 6.78, "width" : 13.19} -->
+   
 
 ---
 
 ## Cost planning on GCP
 
-
-![](../artwork/08-cost-11.png)    
+<img src="../artwork/08-cost-11.png" style="width:55%;"/> <!-- {"left" : 1.85, "top" : 2.67, "height" : 7.05, "width" : 13.79} -->
 
 ---
 
@@ -401,7 +418,8 @@ Reduced Redundancy Storage (RRS) is a storage option within Amazon S3 that enabl
     * Organization Admin: Control over all cloud resources
     * Project Creator: Controls project creation
     
-![](../artwork/08-cost-12.png)    
+
+<img src="../artwork/08-cost-12.png" style="width:55%;"/> <!-- {"left" : 10.7, "top" : 2.11, "height" : 5.89, "width" : 6.14} -->
 
 ---
     
@@ -421,7 +439,9 @@ Reduced Redundancy Storage (RRS) is a storage option within Amazon S3 that enabl
 
 ## Resource hierarchy
 
-![](../artwork/08-cost-13.png)    
+
+<img src="../artwork/08-cost-13.png" style="width:55%;"/> <!-- {"left" : 1.77, "top" : 2.9, "height" : 6.58, "width" : 13.95} -->
+  
 
 ---
     
@@ -488,7 +508,7 @@ gcloud compute regions describe example-region
 * There can be a maximum of 64 labels per resource.
 
         
-![](../artwork/08-cost-14.png)    
+<img src="../artwork/08-cost-14.png" style="width:55%;"/> <!-- {"left" : 11.59, "top" : 2.71, "height" : 4.95, "width" : 5.3} -->
 
 ---
     
@@ -525,7 +545,8 @@ gcloud compute regions describe example-region
 
 ## Budgets and alerts
 
-![](../artwork/08-cost-15.png)  
+<img src="../artwork/08-cost-15.png" style="width:55%;"/> <!-- {"left" : 3.9, "top" : 2.43, "height" : 8.88, "width" : 9.75} -->
+ 
 
 Notes:
 
@@ -546,13 +567,15 @@ Notes:
 
 ## Example notification email
 
-![](../artwork/08-cost-16.png) 
+<img src="../artwork/08-cost-16.png" style="width:55%;"/> <!-- {"left" : 1.7, "top" : 3.03, "height" : 6.32, "width" : 14.11} -->
+
 
 ---
         
 ## Billing export
 
-![](../artwork/08-cost-17.png) 
+<img src="../artwork/08-cost-17.png" style="width:55%;"/> <!-- {"left" : 2.53, "top" : 2.32, "height" : 7.74, "width" : 12.43} -->
+
 
 Notes:
 
@@ -617,66 +640,66 @@ Notes:
                 
 ## Cost Question #1
 
+<img src="../artwork/08-cost-18.png" style="width:55%;"/> <!-- {"left" : 1.61, "top" : 2.86, "height" : 6.67, "width" : 14.28} -->
 
-![](../artwork/08-cost-18.png) 
+
 
 ---
 
 ## Cost Question #2
 
 
-![](../artwork/08-cost-19.png) 
+<img src="../artwork/08-cost-19.png" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 3.33, "height" : 5.73, "width" : 15.8} -->
 
 ---
 
 ## Cost Question #3
 
+<img src="../artwork/08-cost-20.png" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 2.88, "height" : 6.64, "width" : 15.8} -->
 
-![](../artwork/08-cost-20.png) 
 
 ---
 
 ## Cost Question #4
 
+<img src="../artwork/08-cost-21.png" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 2.72, "height" : 6.64, "width" : 15.8} -->
 
-![](../artwork/08-cost-21.png) 
 
 ---
 
 ## Cost Question #5
 
+<img src="../artwork/08-cost-22.png" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 2.58, "height" : 7.23, "width" : 15.8} -->
 
-![](../artwork/08-cost-22.png) 
 
 ---
 
 
 ## Cost Question #6
 
+<img src="../artwork/08-cost-23.png" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 2.75, "height" : 6.88, "width" : 15.8} -->
 
-![](../artwork/08-cost-23.png) 
 
 ---
 
 ## Cost Question #7
 
+<img src="../artwork/08-cost-24.png" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 2.64, "height" : 7.11, "width" : 15.8} -->
 
-![](../artwork/08-cost-24.png) 
 
 ---
 
 ## Cost Question #8
 
+<img src="../artwork/08-cost-26.png" style="width:55%;"/> <!-- {"left" : 0.85, "top" : 2.9, "height" : 6.58, "width" : 15.8} -->
 
-![](../artwork/08-cost-26.png) 
 
 ---
 
 
 ## Cost Question #9
 
-
-![](../artwork/08-cost-27.png) 
+<img src="../artwork/08-cost-27.png" style="width:55%;"/> <!-- {"left" : 2.84, "top" : 1.65, "height" : 5.29, "width" : 11.82} -->
 
 * **Note**: CDN is not for everybody. You can achieve significant improvements with S3 alone,
 see this [Sumologic resource](https://www.sumologic.com/insight/s3-cost-optimization/) for a good summary 
@@ -691,13 +714,10 @@ see this [Sumologic resource](https://www.sumologic.com/insight/s3-cost-optimiza
     
 ---
 
-
 ## Congrats on completion
 
+<img src="../artwork/congrats.png" style="width:55%;"/> <!-- {"left" : 1.05, "top" : 4.57, "height" : 3.25, "width" : 15.41} -->
 
-![](../artwork/congrats.png)
-
----
 
 
 
