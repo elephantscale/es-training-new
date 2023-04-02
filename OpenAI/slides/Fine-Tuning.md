@@ -23,7 +23,7 @@
 
 ## Pretraining
 
-* GPT-3 has been pre-trained on a vast amount of text from the open internet. 
+* GPT-3.5 and GPT-4 has been pre-trained on a vast amount of text from the open internet. 
 * When given a prompt with just a few examples, it can often intuit what task you are trying to perform and generate a plausible completion. 
 * This is often called "few-shot learning."
   * Q: Why few-shot, why not zero-shot?
@@ -106,5 +106,11 @@
 
 * Follow the steps in this lab
 * [https://github.com/elephantscale/openai-cookbook/blob/main/examples/Fine-tuned_classification.ipynb](https://github.com/elephantscale/openai-cookbook/blob/main/examples/Fine-tuned_classification.ipynb)
+
+---
+
+## Fine-tuning according to OpenAI
+
+* https://platform.openai.com/docs/guides/fine-tuning
 
 ---
