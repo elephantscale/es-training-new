@@ -1,4 +1,4 @@
-# Introduction
+# What is Quantum Computing
 
 ---
 

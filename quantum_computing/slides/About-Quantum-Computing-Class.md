@@ -1,25 +1,17 @@
-# NiFi
-
-
+# Quantum Computing
 
 
 ---
 
 ## Agenda - 2 days
 
-| 200 | Subject                            |
-|-----|------------------------------------|
-| 10  | 01__About-NiFi-Class.pptx          |
-| 08  | 02__NiFi_Outline.pptx              |
-| 25  | 03__NiFi_Overview.pptx             |
-| 29  | 04__NiFi_Intro.pptx                |
-| 73  | 05__NiFi_in_Depth.pptx             |
-| 21  | 06__NiFi_ExpressionLanguage        |
-| 07  | 07__Architecture.pptx              |
-| 07  | 08__NiFi_MiNiFi.pptx               |
-| 20  | 09__Nifi_DataflowOptimization.pptx |
-
-
+| Day 1                                         | Day 2                              |
+|-----------------------------------------------|------------------------------------|
+| What is Quantum Computing (Spoiler) Setup lab | Multiple qubits, entanglements Lab |
+| Atoms of computation Lab                      | Circuits with qubits Lab           |
+| Single qubit gates Lab                        | Applications overview              |
+| Quantum Enigmas Challenge                     | Shor, Grover Lab                   |
+| Multiple qubits, entanglements Lab            | Philosophy corner                  |
 
  <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
 
@@ -41,7 +33,7 @@ Notes:
 
    - Ask a lot of questions 
 
- * This is a NiFi class
+ * This is a Quantum Computing class
    - No previous knowledge is assumed (but may be helpful) 
    - Class will be based on the pace of majority of the students
    
@@ -122,7 +114,7 @@ Notes
      - Your Name
      - Your background (developer, admin, manager, ...)
      - Technologies you are familiar with
-     - Familiarity with NiFi (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Familiarity with QC (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.08, "top" : 6.08, "height" : 1.99, "width" : 2.25} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.36, "top" : 6.1, "height" : 1.92, "width" : 3.54} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 6.08, "height" : 1.99, "width" : 2.25} -->
