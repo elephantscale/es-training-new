@@ -3,4 +3,5 @@ What-is-quantum-computing.md
 Atoms-of-Computation.md
 QC-applications.md
 Quantum-Enigmas.md
+Future-of-QC.md
 
