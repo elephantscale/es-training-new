@@ -37,7 +37,7 @@
 
 ---
 
-## No more local realize
+## No more local realism
 
 * While local realism remains an intuitive and appealing concept, the empirical evidence from quantum experiments indicates that our understanding of the nature of reality may need to accommodate phenomena that cannot be easily reconciled with the principles of locality and realism as we currently understand them.
 
@@ -62,7 +62,7 @@ https://xn--webducation-dbb.com/wp-content/uploads/2021/02/Jed-Brody-Quantum-Ent
 ## Approaches
 
 * QBism
-  * Shut-up and calculated
+  * Shut-up and calculate
 * Superdeterminism
   * There is no free will
 * Multi-verse
