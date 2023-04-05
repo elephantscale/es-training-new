@@ -1,4 +1,4 @@
-# Prompt Engineering
+# Prompt Engineering Advanced
 
 (C) Copyright Elephant Scale
 April 3, 2023

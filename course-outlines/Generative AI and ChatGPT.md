@@ -1,7 +1,7 @@
-# ChatGPT and friends
+# Generative AI and ChatGPT
 
 (C) Copyright Elephant Scale
-April 3, 2023
+April 5, 2023
 
 ## Course Description
 
@@ -119,6 +119,3 @@ April 3, 2023
   
 ###  future and keeping current
 
-### Our references (not to send)
-
-* [A Crash Course on Chat GPT for Beginners](https://www.youtube.com/watch?v=JTxsNm9IdYU)
