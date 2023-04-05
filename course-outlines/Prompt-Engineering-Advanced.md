@@ -39,7 +39,7 @@ April 3, 2023
 * Intermediate
 
 ## Duration
-* Two days
+* Three days
 
 ## Prerequisites
 * General familiarity with machine learning
@@ -95,7 +95,3 @@ April 3, 2023
 ### OpenAI and GPT-4
 * Use cases
 * Implementing OpenAI API
-
-### Our references (not to send)
-
-* [A Crash Course on Chat GPT for Beginners](https://www.youtube.com/watch?v=JTxsNm9IdYU)
