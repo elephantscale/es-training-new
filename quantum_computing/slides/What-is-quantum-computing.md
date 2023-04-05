@@ -2,6 +2,18 @@
 
 ---
 
+## Quantum computing explained
+
+* By MKBHD, 16mm subscribers, 3bb views
+* https://www.youtube.com/watch?v=e3fz3dqhN44
+* To be enjoyed together with the audience
+* Followed by a Q&A session
+
+![](../images/22-video.png)
+
+---
+
+
 ## Quantum computing is easy
 
 * Even babies know it
