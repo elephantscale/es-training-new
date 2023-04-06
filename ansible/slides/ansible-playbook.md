@@ -571,7 +571,180 @@ Let's talk about the condition syntax.
 
 ---
 
+## Loops
 
+Ansible provides a simple and efficient way to iterate over a set of values using loops in a playbook.
+
+```yaml
+  ---
+  - hosts: servers
+    vars:
+      my_list:
+        - item1
+        - item2
+        - item3
+    tasks:
+      - name: Display list items
+        debug:
+          msg: "{{ item }}"
+        with_items: "{{ my_list }}"
+```
+
+Let's break down this playbook and explain each part in more detail
+---
+
+## Variable: Define
+
+```yaml
+    vars:
+      my_list:
+        - item1
+        - item2
+        - item3
+```
+
+* Variables can be defined in a playbook using the vars keyword.
+
+* In this example, the my_list variable is defined as a list of items to be displayed using the debug module.
+
+---
+
+## Task: Debug
+
+```yaml
+      - name: Display list items
+        debug:
+          msg: "{{ item }}"
+        with_items: "{{ my_list }}"
+```
+
+* The debug task is used to display a message in the playbook output.
+
+* The msg directive specifies the message to display.
+* The with_items directive specifies the list of items to loop over.
+
+---
+
+## Task: With Items
+
+```yaml
+        with_items: "{{ my_list }}"
+```
+
+* The with_items keyword is used to specify a list of items to iterate over.
+* The item keyword is used to refer to each item in the loop.
+* In this example, the with_items keyword is used with the debug module to loop over the my_list variable, displaying each item in the list.
+
+---
+
+## Loops: `loop`
+
+The `loop` loop is a newer alternative to with_items loop, and it offers more flexibility and readability. 
+
+It allows you to loop over a list or dictionary of items, and use the item variable to access each item.
+
+```yaml
+  ---
+  - hosts: servers
+    vars:
+      my_list:
+        - item1
+        - item2
+        - item3
+    tasks:
+      - name: Display list items
+        debug:
+          msg: "{{ item }}"
+        loop: "{{ my_list }}"
+```
+---
+
+## Using Loops with Conditionals
+
+You can also use loops with conditionals to perform tasks based on certain conditions.
+
+```yaml
+  ---
+  - hosts: servers
+    vars:
+      my_list:
+        - item1
+        - item2
+        - item3
+    tasks:
+      - name: Display list items
+        debug:
+          msg: "{{ item }}"
+        loop: "{{ my_list }}"
+        when: item != 'item2'
+```
+---
+
+## The loop_control Keyword
+
+The `loop_control` keyword allows you to modify the behavior of the loop. For example, you can use it to set the loop index, skip items, or stop the loop.
+  
+  ```yaml
+    ---
+    - hosts: servers
+      vars:
+        my_list:
+          - item1
+          - item2
+          - item3
+      tasks:
+        - name: Display list items
+          debug:
+            msg: "{{ item }}"
+          loop: "{{ my_list }}"
+          loop_control:
+            index_var: my_index
+            loop_var: my_loop
+  ```
+---
+
+## Conclusion
+
+Loops in Ansible Playbook provide an efficient way to perform repetitive tasks. With the with_items and loop loops, you can iterate over a list of items or a dictionary, and use conditionals and loop_control keyword to modify the behavior of the loop.
+
+---
+
+## LAB
+
+---
+
+# Handlers
+
+---
+
+## Handlers
+
+Handlers are tasks that are triggered by notifications
+
+```yaml
+  ---
+  - hosts: servers
+    tasks:
+      - name: Display message
+        debug:
+          msg: "Hello World"
+        notify: restart service
+    handlers:
+      - name: restart service
+        service:
+          name: httpd
+          state: restarted
+```
+
+Let's break down this playbook and explain each part in more detail
+
+---
+
+
+
+
+
+---
 
 
 ## Templates
@@ -581,17 +754,6 @@ Let's talk about the condition syntax.
 * Templates are written in Jinja2
 * Templates are rendered on the Ansible controller
 
----
-
-## Handlers
-
-* Handlers are tasks that are triggered by notifications
-* Handlers are used to restart services
-* Handlers are executed at the end of the play
-* Handlers are executed only if the task that triggered them has changed
-* Handlers are executed only once
-* Handlers are executed in the order they are defined
-* Handlers are executed on the hosts that were changed
 
 ---
 
@@ -601,15 +763,6 @@ Let's talk about the condition syntax.
 * Plugins are written in Python
 * Plugins are executed on the Ansible controller
 * Plugins are executed before the play starts
-
----
-
-## Looping
-
-* Looping is used to execute tasks multiple times
-* Looping is written in Jinja2
-* Looping is evaluated on the Ansible controller
-* Looping is evaluated before the play starts
 
 ---
 
@@ -845,55 +998,6 @@ Playbooks are written in YAML format and can be used to manage a wide range of s
 
 ---
 
----
-
-# Ansible Loop
-
----
-
-## Loop
-
-Ansible provides a simple and efficient way to iterate over a set of values using loops in a playbook.
----
-
-## The with_items Loop
-
-The `with_items` loop is the most commonly used loop in Ansible. It iterates over a list of items and performs a task for each item.
-
-![img_1.png](../images/loop_1.png)
-
----
-
-## The `loop` Loop
-
-The `loop` loop is a newer alternative to with_items loop, and it offers more flexibility and readability. It allows you to loop over a list or dictionary of items, and use the item variable to access each item.
-
-![img_2.png](../images/loop_2.png)
-
-
----
-
-## Using Loops with Conditionals
-
-You can also use loops with conditionals to perform tasks based on certain conditions.
-
-![img_3.png](../images/loop_3.png)
-
-
----
-
-## The loop_control Keyword
-
-The loop_control keyword allows you to modify the behavior of the loop. For example, you can use it to set the loop index, skip items, or stop the loop.
-
-![img_4.png](../images/loop_4.png)
-
-
----
-
-## Conclusion
-
-Loops in Ansible Playbook provide an efficient way to perform repetitive tasks. With the with_items and loop loops, you can iterate over a list of items or a dictionary, and use conditionals and loop_control keyword to modify the behavior of the loop.
 
 # Ansible Block
 
