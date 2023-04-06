@@ -863,16 +863,101 @@ The syntax for defining a block in an Ansible playbook is as follows:
 
 ---
 
+# Templates
+
+---
 
 ## Templates
 
-* Templates are files that contain variables
-* Templates are used to generate configuration files
-* Templates are written in Jinja2
-* Templates are rendered on the Ansible controller
+Using templates in Ansible Playbook is a very powerful feature that allows you to generate configuration files on the target hosts.
+
+```yaml
+    ---
+    - hosts: servers
+      vars:
+        my_var: "Hello World"
+      tasks:
+        - name: Create configuration file
+          template:
+            src: my_template.j2
+            dest: /tmp/my_config.conf
+```
+
+```jinja2
+    # my_template.j2
+    This is my configuration file
+    {{ my_var }}
+```
+
+Let's break down this playbook and explain each part in more detail
+
+---
+
+## Variable: Define
+
+```yaml
+      vars:
+        my_var: "Hello World
+```
+
+Variables can be defined in a playbook using the vars keyword.
+
+In this example, the my_var variable is defined as a string that will be used in the template.
 
 
 ---
+## Task: Template
+
+```yaml
+        - name: Create configuration file
+          template:
+            src: my_template.j2
+            dest: /tmp/my_config.conf
+```
+
+* The template task is used to create a file from a Jinja2 template.
+
+* The src parameter specifies the path to the Jinja2 template file.
+
+* The dest parameter specifies the path and name of the file to be created on the target host.
+
+---
+
+## Jinja2 Template
+
+```jinja2
+    # my_template.j2
+    This is my configuration file
+    {{ my_var }}
+```
+
+* The Jinja2 template is a text file that contains variables and expressions that are evaluated and replaced with the actual values when the template is rendered.
+
+In this example, the my_template.j2 file is a Jinja2 template that contains a variable called my_var.
+
+---
+
+## Benefits
+
+* Using templates in an Ansible playbook can make it easier to create and maintain configuration files on the target hosts.
+* Templates can also be used to generate configuration files from templates that are stored in a version control system.
+* Using templates can help to reduce duplication and make playbooks more modular.
+
+---
+
+## Conclusion
+
+Using templates in an Ansible playbook is a very powerful feature that allows you to generate configuration files on the target hosts.
+
+---
+
+## LAB
+
+---
+
+
+
+
 
 ## Plugins
 
@@ -903,13 +988,7 @@ The syntax for defining a block in an Ansible playbook is as follows:
 
 * Roles are a way to organize playbooks
 
----
 
-## Run AGAINST
-
-Means to run a specific adhoc, play or playbook on the specified host or group from the inventory
-
----
 
 # Install Ansible
 

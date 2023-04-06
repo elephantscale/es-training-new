@@ -85,7 +85,12 @@ it can be used to manage configuration files.
 
 <img src="../images/img_6.png" style="width:65%;"/>
 
-## Ansible Terms
+
+---
+
+## Run AGAINST
+
+Means to run a specific adhoc, play or playbook on the specified host or group from the inventory
 
 ---
 
