@@ -8,6 +8,8 @@ Ansible Galaxy is a public community hub for sharing and finding Ansible roles, 
 
 It allows Ansible users to share and reuse roles, collections, modules, plugins, and other resources.
 
+<img src="../images/galaxy.jpg" style="height:500px">
+
 
 ---
 
@@ -19,6 +21,8 @@ The Ansible Galaxy Registry is a searchable, browseable catalog of Ansible conte
 The registry includes roles, collections, modules, plugins, and other resources.
 
 Users can search for and download content from the registry, and also rate and review content.
+
+<img src="../images/chest.jpg" style="height: 400px">
 
 ---
 
@@ -52,6 +56,8 @@ The _ansible-galaxy_ command-line tool can be used to manage roles, collections,
 
 The _ansible-builder_ tool can be used to create and package custom collections.
 
+<img src="../images/galaxy-tools.png" style="height: 400px;">
+
 ---
 
 ## Galaxy Organizations
@@ -62,9 +68,13 @@ Organizations can have multiple members with different levels of access and perm
 
 Organizations can have multiple repositories, and can control access to them.
 
+<img src="../images/org.jpg" style="float: right; height: 350px">
+
 ---
 
 ## Quality Scoring
+
+<img src="../images/galaxy_score.png" style="height: 350px; float: right">
 
 Ansible Galaxy includes a quality scoring system to help users find high-quality content.
 
@@ -72,15 +82,22 @@ The quality score is based on several factors, including documentation, testing,
 
 The quality score is displayed in the registry for each content item.
 
+
+
+
 ---
 
 ## Dependencies
+
+<img src="../images/dependency.png" style="float: right; ">
+
 
 Ansible Galaxy allows content creators to specify dependencies on other roles, collections, or modules.
 
 Dependencies can be specified in the metadata of a role or collection, and will be installed automatically when the role or collection is used.
 
 The following example shows how to install dependencies in a role's metadata:
+
 
 ```ini
 dependencies:
@@ -93,6 +110,7 @@ dependencies:
 ansible-galaxy install -r requirements.yml
 ```
 
+
 ---
 
 ## Licensing
@@ -102,6 +120,8 @@ Ansible Galaxy requires that all content be licensed under an open-source licens
 Content creators can choose from a list of approved open-source licenses.
 
 Content with proprietary or non-approved licenses will not be accepted into the registry.
+
+<img src="../images/copyright.png">
 
 ---
 
@@ -113,9 +133,13 @@ Content should follow the guidelines for roles, collections, or other types of c
 
 Content should be well-documented and tested, and follow best practices for Ansible content.
 
+<img src="../images/contr.png" height="80%">
+
 ---
 
 ## Security
+
+<img src="../images/camera.jpg" style="float:right; width: 550px">
 
 Ansible Galaxy takes security seriously and has a number of security features to protect users and content.
 
@@ -132,6 +156,8 @@ Content contributors are required to sign a Contributor License Agreement (CLA) 
 * Use trusted sources and verify the authenticity of content.
 * Follow the principle of least privilege and limit access to sensitive systems and data.
 
+<img src="../images/goto.png">
+
 ---
 
 ## Alternatives
@@ -141,6 +167,12 @@ While Ansible Galaxy is a popular and well-maintained hub for sharing Ansible co
 Some other popular Ansible content sharing platforms include GitHub, GitLab, and Bitbucket.
 
 These platforms can be used to share and collaborate on Ansible roles, collections, and other content.
+
+<img src="../../assets/images/logos/github.png" style="float: left" width="30%">
+
+<img src="../../assets/images/logos/gitlab.png" style="float: left" width="30%">
+
+<img src="../../assets/images/logos/bitbucket.jpg" style="float: left" width="30%">
 
 ---
 
@@ -162,6 +194,8 @@ These platforms can be used to share and collaborate on Ansible roles, collectio
 * Ansible Galaxy is a powerful tool for sharing and finding Ansible content.
 * It allows users to quickly and easily find and use high-quality roles, collections, modules, and other resources.
 * By following best practices and taking security seriously, Ansible Galaxy can help users manage their infrastructure more efficiently and securely.
+
+<img src="../images/conclusion.jpg" style="height: 400px">
 
 ---
 
