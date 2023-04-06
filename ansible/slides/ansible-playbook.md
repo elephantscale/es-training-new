@@ -740,11 +740,51 @@ Let's break down this playbook and explain each part in more detail
 
 ---
 
+## Task: Debug
 
+```yaml
+      - name: Display message
+        debug:
+          msg: "Hello World"
+        notify: restart service
+```
 
+The debug task is used to display a message in the playbook output but it also triggers a notification.
 
+That notification is used to trigger the restart service handler.
 
 ---
+## Handlers
+```yaml
+    handlers:
+      - name: restart service
+        service:
+          name: httpd
+          state: restarted
+```
+
+The handlers keyword is used to define a list of handlers that can be triggered by notifications in the tasks.
+
+handlers are normal tasks, but they are only executed when they are notified by another task in the playbook that changes the state of the system.
+
+Important: Handlers are executed at the end of the play, after all the tasks have been executed.
+
+---
+## Best Practices
+
+* Handlers should be used to restart services, reload configuration files, and perform other tasks that need to be executed after a change in the system state.
+* Handlers should not be used to perform tasks that are idempotent, such as installing packages or creating users.
+
+---
+
+## Conclusion
+
+Handlers are tasks that are triggered by notifications. They are used to restart services, reload configuration files, and perform other tasks that need to be executed after a change in the system state.
+
+---
+
+
+
 
 
 ## Templates
@@ -929,72 +969,7 @@ ansible -i hosts -m ping all
 
 Adhoc Lab
 
----
 
-# Ansible Playbook
-
----
-
-# Ansible Handlers
-
----
-
-## Handlers
-
-* Handlers in Ansible are special tasks that are only executed when a change has been made.
-
-* They are used to trigger a specific action, such as restarting a service, after a configuration change has been made.
-
-* Handlers are defined in the playbook, just like regular tasks.
-
-* The difference is that handlers are associated with a specific event, such as a configuration file being changed.
-
-* Handlers are triggered using the notify keyword in a task, which tells Ansible to execute the handler if the task makes any changes.
-
-* Handlers are useful for managing complex configurations where multiple tasks may need to be executed in a specific order.
-
-* Handlers are executed at the end of a playbook run, after all tasks have been completed.
-
-* Handlers can be defined globally in a playbook or in a specific role.
-
----
-
-## Example
-
-![img_1.png](../images/handler.png)
-
----
-
-In the previous above, the handler is named "restart apache" and will restart the Apache service.
-
-* The "listen" keyword is used to associate the handler with a specific task that will trigger it.
-
-* Handlers can also be used with variables, allowing you to define more dynamic configurations.
-
-* Handlers are a powerful feature of Ansible that can help you manage complex configurations and ensure that your systems are always up-to-date.
-
----
-
-## Best practices
-
-* Only use handlers when necessary
-* Use descriptive names for handlers
-* Define handlers in a separate file to keep your playbook organized
-* Test your handlers thoroughly to ensure they work as expected
-
-## Playbook
-
-A playbook is a collection of tasks that define the desired state of a system.
-
-Playbooks are written in YAML format and can be used to manage a wide range of systems, from simple web servers to complex multi-tier applications.
-
----
-
-## Example
-
-![img_3.png](../images/img_3.png)
-
-# Ansible Condition
 
 ---
 
