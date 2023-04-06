@@ -105,42 +105,56 @@ In this case, the play is targeting the `servers` group of hosts,
 * Any necessary module arguments are specified as key-value pairs under the module.
 
 
+---
+
+## Task: Name
+
+```yaml
+    - name: Print a debug message
+```
+
+* The name directive is used to give the task a human-readable label, which is used for reporting and logging purposes.
+
+* The name should be descriptive enough to provide context for the task being executed.
+
+* In the example playbook, the task is named "Print a debug message".
 
 
 ---
 
+##  Task: Module
 
+```yaml
+      debug:
+```
 
+* The module directive specifies the name of the Ansible module to use for the task.
 
+* Modules are reusable, idempotent blocks of code that perform a specific action, such as managing packages, creating users, or copying files.
 
-
-
-
-
-
-## Patterns
-
-![img_12.png](../images/img_12.png)
-
-## Tasks
-
-* A task is a single action that is executed on a host
-* A task is a single module with a set of arguments
-
-![img_2.png](../images/img_2.png)
+* Ansible comes with hundreds of built-in modules, and you can also create your own custom modules.
 
 ---
 
-# Modules
-
-* A module is a self-contained script that implements a single action
-* Modules are the building blocks of Ansible
-* Modules are executed on the remote hosts
-* Modules are written in Python
+# Lets Discuss Modules
 
 ---
 
-## Module Types
+## Task: Modules:  arguments
+
+```yaml
+        msg: "Hello, world!"
+```
+
+* Any necessary module arguments are specified as key-value pairs under the module.
+
+* Module arguments can include options such as package names, file paths, or user names and passwords.
+
+* In the example playbook, the apt module is used to install the apache2 package on the target hosts.
+
+---
+
+## Modules: Types
 
 * Core modules
   * Maintained by the Ansible team
@@ -156,7 +170,7 @@ In this case, the play is targeting the `servers` group of hosts,
 
 ---
 
-## Index of Modules
+## Modules: Index
 
 * The index of modules is located in the `/usr/share/doc/ansible/html/modules_by_category.html` directory
 
@@ -164,7 +178,7 @@ In this case, the play is targeting the `servers` group of hosts,
 
 ---
 
-## Module Documentation
+## Modules: Documentation
 
 * The documentation for each module is located in the `/usr/share/doc/ansible/html/modules/<module_name>.html` directory
 
@@ -175,6 +189,68 @@ In this case, the play is targeting the `servers` group of hosts,
   * A list of the module's arguments
   * A list of the module's return values
   * A list of the module's examples
+
+
+
+---
+
+# Back to our playbook
+
+---
+
+## Playbook: Summary
+
+```yaml
+- name: Print a message
+  hosts: all
+
+  tasks:
+    - name: Print a debug message
+      debug:
+        msg: "Hello, world!"
+```
+
+* The playbook contains a single play that targets all hosts in the inventory file.
+* The play contains a single task that uses the debug module to print a message to the console.
+* The task uses the msg argument to specify the message to print.
+* The playbook can be executed using the ansible-playbook command.
+
+---
+
+## Running the playbook
+
+* Once you've created your playbook, you can run it using the ansible-playbook command.
+
+* Ansible will connect to the target hosts and execute the tasks specified in the playbook.
+
+* You can use the -v option to enable verbose output, which will show you what Ansible is doing as it executes the playbook.
+
+```commandline
+$ ansible-playbook -v playbook.yml
+```
+
+---
+
+# LAB
+
+---
+
+# Variables and Facts
+
+Let's take a look at a simple playbook that uses variables and facts:
+
+```yaml
+---
+- hosts: servers
+  vars:
+    my_var: "Hello, world!"
+  tasks:
+    - name: Debug variable
+      debug:
+        var: my_var
+```        
+
+
 
 
 
