@@ -955,269 +955,228 @@ Using templates in an Ansible playbook is a very powerful feature that allows yo
 
 ---
 
-
-
-
-
-## Plugins
-
-* Plugins are used to extend Ansible
-* Plugins are written in Python
-* Plugins are executed on the Ansible controller
-* Plugins are executed before the play starts
-
----
-
-## Vault
-
-* Vault is used to encrypt sensitive data
-* Vault is used to encrypt variables
-* Vault is used to encrypt files
-* Vault is used to encrypt the entire playbook
-
----
-
-## Ansible Galaxy
-
-* Ansible Galaxy is a repository of Ansible roles
-* Ansible Galaxy is a repository of Ansible modules
-
----
-
-## Roles
-
-* Roles are a way to organize playbooks
-
-
-
-# Install Ansible
-
----
-
-## Install Ansible
-
-* Ansible is written in Python and, as such, can be installed on a wide range of systems
-
-  * Debian
-  * RedHat
-  * FreeBSD
-
-* macOS
-
-The one exception to this is Windows, though native Python distributions exist, there is yet no native Ansible build.
-
-
----
-
-The release cycle for Ansible is usually about four months, and during this short release cycle, there are normally many changes, from minor bug fixes to major ones, to new features and even sometimes fundamental changes.
-
-The simplest way to not only get up and running with Ansible but to keep yourself up to date is to use the native packages built for your operating system where they are available.
-
----
-
-# LAB
-
-Install Ansible
-
-# Ansible Plugin
-
----
-
-## What is a plugin?
-
-* A plugin is a piece of code that extends Ansible
-* Plugins are written in Python
-* Plugins are executed on the Ansible controller
-* Plugins are executed before the play starts
-
----
-
-## Plugin Types
-
-* Action plugins
-* Callback plugins
-* Connection plugins
-* Filter plugins
-* Inventory plugins
-* Lookup plugins
-* Module plugins
-* Strategy plugins
-* Test plugins
-* Terminal plugins
-* Var plugins
-* Cache plugins
-
----
-
-## Action Plugins
-
-* Action plugins are used to extend the functionality of modules
-* Action plugins are executed on the Ansible controller
-* Action plugins are executed before the play starts
-* Action plugins are executed before the module is executed
-
----
-
-## Callback Plugins
-
-* Callback plugins are used to extend the functionality of the output
-* Callback plugins are executed on the Ansible controller
-* Callback plugins are executed before the play starts
-* Callback plugins are executed after the play ends
-
----
-
-## Connection Plugins
-
-* Connection plugins are used to extend the functionality of the connection
-* Connection plugins are executed on the Ansible controller
-* Connection plugins are executed before the play starts
-* Connection plugins are executed before the module is executed
-* Connection plugins are executed before the task is executed
-
----
-
-## Filter Plugins
-
-* Filter plugins are used to extend the functionality of the filters
-* Filter plugins are executed on the Ansible controller
-* Filter plugins are executed before the play starts
-* Filter plugins are executed before the module is executed
-
----
-
-## Inventory Plugins
-
-* Inventory plugins are used to extend the functionality of the inventory
-* Inventory plugins are executed on the Ansible controller
-* Inventory plugins are executed before the play starts
-* Inventory plugins are executed before the inventory is loaded
-
----
-
-
-
-# Ansible Ad-Hoc
----
-
-## Ad-Hoc Commands
-
-* An Ansible ad hoc command uses the `ansible` command-line tool to automate a single task on one or more managed nodes.
-* ad hoc commands are quick and easy, but they are not reusable.
-* ad hoc tasks can be used to reboot servers, copy files, manage packages and users, and much more.* You can use any Ansible module in an ad hoc task.* ad hoc commands demonstrate the simplicity and power of Ansible
-* It will port over directly to the playbook language
-* For every ad hoc command you run, you will get a response in JSON format
-* You can use the `-m` option to specify the module to use
-* You can use the `-a` option to specify the arguments to pass to the module
-* You can use the `-i` option to specify the inventory file to use
-
----
-
-## Example
-
-```bash
-ansible -i hosts -m ping all
-```
-
----
-
-# LAB
-
-Adhoc Lab
-
-
-
-
 # Ansible Vault
 
 ---
 
-# Ansible Vault: Secure Secrets Management with Examples
+## Ansible Vault
 
- 
----
+Ansible Vault is a feature that allows you to encrypt sensitive data in Ansible playbooks.
 
-## What is Ansible Vault?
-
-* Ansible Vault is a feature that allows you to encrypt sensitive data such as passwords or keys.
 * Ansible Vault is a part of Ansible, which means that it is installed by default when you install Ansible.
-* Ansible Vault is a command line tool that allows you to encrypt and decrypt files.
-* Everything in Ansible is a file, so Ansible Vault can be used to encrypt any file.
-* Everytime you run a playbook, Ansible Vault will ask you for the password to decrypt the file.
+* Ansible Vault is a command line.
+
+
+```yaml
+  ---
+  - hosts: servers
+    vars:
+      my_secret: !vault |
+        $ANSIBLE_VAULT;1.1;AES256
+        62386336663035336236633435383630316232666533383163343161396464396630363461316638
+    tasks:
+      - name: Display secret
+        debug:
+          var: my_secret
+```
+---
+
+## Encrypting Variables
+
+```yaml
+  ---
+  - hosts: servers
+    vars:
+      my_secret: !vault |
+        $ANSIBLE_VAULT;1.1;AES256
+        62386336663035336236633435383630316232666533383163343161396464396630363461316638
+    tasks:
+      - name: Display secret
+        debug:
+          var: my_secret
+```
+
+In this example, the my_secret variable is defined as a sensitive string that has been encrypted using Ansible Vault.
+
+Important: Ansible can encrypt any variables, files and playbooks, not just strings.
 
 ---
 
-## Basic Vault Commands
+## Vault: Basic Vault Commands
 
-* ansible-vault create
-  * `ansible-vault create vault.yml` => creates a new vault file
-* ansible-vault edit
-  * `ansible-vault edit vault.yml` => opens the vault file in an editor
-* ansible-vault view
-  * `ansible-vault view vault.yml` => displays the contents of the vault file
-* ansible-vault encrypt
-  * `ansible-vault encrypt vault.yml` => encrypts an existing file
-* ansible-vault decrypt
-  * `ansible-vault decrypt vault.yml` => decrypts an existing file
-* ansible-vault rekey
-  * `ansible-vault rekey vault.yml` => rekeys an existing file
+* create: `ansible-vault create vault.yml` => creates a new vault file
+* edit:  `ansible-vault edit vault.yml` => opens the vault file in an editor
+* view: `ansible-vault view vault.yml` => displays the contents of the vault file
+* encrypt: `ansible-vault encrypt vault.yml` => encrypts an existing file
+* decrypt: `ansible-vault decrypt vault.yml` => decrypts an existing file
+* rekey: `ansible-vault rekey vault.yml` => rekeys an existing file
 
 ---
 
 ## Run Playbooks with Vault
 
-* ansible-playbook
-  * `ansible-playbook playbook.yml --ask-vault-pass` => prompts for the vault password
-  * `ansible-playbook playbook.yml --vault-password-file vault_pass.txt` => uses a file to store the vault password
+
+* `ansible-playbook playbook.yml --ask-vault-pass`
+  * prompts for the vault password
+    
+* `ansible-playbook playbook.yml --vault-password-file vault_pass.txt`
+    * uses a file to store the vault password
 
 ---
 
-# Ansible Roles
+## LAB
 
 ---
 
-# Overview
-
-* Reusable, modular components in Ansible
-* Organize tasks, variables, templates, and files
-* Enable sharing, reusing, and distributing automation code
-* Encapsulate functionality for specific services or applications
+# Plugins
 
 ---
 
-# Role Directory Structure
+## Plugins
 
-![img_1.png](../images/role_1.png)
+Plugins are used to extend Ansible and execute on the Ansible controller before the play starts.
 
+```yaml
+  - hosts: windows_servers
+    tasks:
+      - name: Install Notepad++
+        ansible.windows.win_package:
+          name: notepadplusplus.install
+          state: present
+          choco_path: C:\ProgramData\chocolatey\bin
+          choco_install_args: "--force"
+        become: yes
+```
+
+Let's break down this playbook and explain each part in more detail.
 
 ---
 
-# Role Components
+## Task: module and plugin
+
+* The _ansible.windows.win_package_ module is used to manage software packages on Windows hosts.
+* The _win_chocolatey_ plugin is used to install packages using the Chocolatey package manager.
+* In this example, the notepadplusplus.install package is installed using Chocolatey.
+* The choco_path parameter is used to specify the path to the Chocolatey binary on the target host.
+* The choco_install_args parameter is used to pass additional arguments to the Chocolatey install command.
+
+---
+
+## Plugins: Types
+
+* Action plugins
+  * used to extend the functionality of modules
+* Callback plugins
+  * used to extend the functionality of the output
+* Connection plugins
+  * used to extend the functionality of the connection
+* Filter plugins
+  * used to extend the functionality of the filters
+* Inventory plugins
+  * used to extend the functionality of the inventory
+
+---
+
+## Plugins: Types
+
+* Lookup plugins
+  * used to extend the functionality of the lookup
+* Module plugins
+  * used to extend the functionality of the modules
+* Strategy plugins
+  * used to extend the functionality of the strategy
+* Test plugins
+  * used to extend the functionality of the tests
+* Terminal plugins
+  * used to extend the functionality of the terminal
+* Var plugins
+  * used to extend the functionality of the variables
+* Cache plugins
+  * used to extend the functionality of the cache
+
+---
+
+# Roles
+
+---
+
+## Roles
+
+Roles are a way to organize playbooks and make them more modular and reusable.
+Also, roles encapsulate functionality for specific services or applications.
+
+```yaml
+  ---
+  - hosts: servers
+    roles:
+      - common
+      - webserver
+      - database
+```
+
+* The roles keyword is used to specify the roles that should be applied to the target hosts.
+
+Let's break down this playbook and explain each part in more detail.
+
+---
+
+## Role: Define
+
+```yaml
+  ---
+  - hosts: servers
+    roles:
+      - common
+      - webserver
+      - database
+```
+
+A role is a collection of tasks, files, templates, and variables that are organized in a specific directory structure.
+
+The roles keyword in the playbook specifies the role or roles to be applied to the hosts.
+
+In this example, the webserver role is applied to the web servers in the webservers group.
+
+---
+
+## Role: Directory Structure
+
+In order to create a role, you need to create a directory structure that contains the following directories:
+
+```yaml
+      tasks/
+        main.yml
+      handlers/
+        main.yml
+      files/
+        main.yml
+      templates/
+        main.yml
+      vars/
+        main.yml
+      defaults/
+        main.yml
+      meta/
+        main.yml
+```
+
 
 * Tasks: Define the actions to execute
 * Handlers: Manage service restarts or configuration reloads
 * Templates: Create dynamic configuration files using Jinja2
 * Files: Store static files required by the role
 * Vars: Define role-specific variables
-* Defaults: Set default variable values
+* Defaults: Set default variable values that can be overridden
+
 
 ---
 
-# Including Roles in Playbooks
-
-* Use the "roles" keyword in a playbook
-* Specify the role name or path
-* Pass variables to customize the role
-
----
-
-![img_2.png](../images/role_2.png)
-
----
-
-# Benefits of Using Roles
+## Benefits of Using Roles
 
 * Enhance code reusability and maintainability
 * Simplify playbook structure
 * Enable collaboration and sharing via Ansible Galaxy
 
+---
+
+## LAB
