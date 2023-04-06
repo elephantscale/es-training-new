@@ -3,8 +3,35 @@
 ---
 
 
-```yaml
+## What is a Playbook?
 
+* A playbook is a list of plays
+
+
+* A playbook is a YAML-formatted file in Ansible that contains a series of tasks to automate configuration, deployment, and orchestration of IT infrastructure.
+
+* Playbooks define the desired state of a system, allowing Ansible to manage and maintain consistency across environments.
+
+
+---
+
+## Key Components of a Playbook
+  * Plays: Organize tasks for a specific group of hosts.
+  * Tasks: Execute a single action using Ansible modules (e.g., package installation, file creation).
+  * Variables: Define custom or dynamic values to be used in tasks.
+  * Handlers: Perform actions in response to specific triggers (e.g., restarting a service).
+  * Templates: Dynamically generate configuration files using Jinja2 templating language.
+  * Playbooks promote reusable, shareable, and maintainable code for infrastructure management.
+
+We will discuss each of these components in detail in the following slides.
+
+---
+
+## Playbook
+
+Let's take a look at a simple playbook:
+
+```yaml
 - name: Print a message
   hosts: all
 
@@ -13,27 +40,87 @@
       debug:
         msg: "Hello, world!"
 ```
+now, we're going to break down the playbook into its component parts.
 
 ---
 
-## Patterns
+## YAML header
 
-* Patterns let you run commands and playbooks against specific hosts and/or groups in your inventory
+The first line of the playbook is a YAML header that specifies the document type and version. In this case, it's a YAML document with no specific version:
 
-* Pattern can refer to a single host, an IP address, an inventory group, a set of groups, or all hosts in your inventory
-
-* highly flexible
-  * Can exclude or require subsets of hosts
-  * Use wildcards or regular expressions
-  * And more…
+```yaml
+  ---
+```
 
 ---
+
+## Play
+
+The _hosts_ and _become_ directives are part of the first play defined in the playbook:
+
+```yaml
+- hosts: servers
+  become: true
+```
+
+---
+
+## What is a play?
+
+A _play_ is a set of tasks that run on a specific set of hosts. 
+
+```yaml
+- hosts: servers
+```
+
+In this case, the play is targeting the `servers` group of hosts,
+
+---
+
+## What is become?
+
+`become` directive tells Ansible to run the tasks with elevated privileges.
+
+```yaml
+  become: true
+```
+
+---
+
+## Task structure
+
+```yaml
+  tasks:
+    - name: Print a debug message
+      debug:
+        msg: "Hello, world!"
+```
+
+* Each task in a playbook has a name, a module, and any necessary module arguments.
+
+* The name directive is a human-readable label for the task, used for reporting and logging.
+
+* The module specifies the name of the Ansible module to use for the task, such as apt, yum, or copy.
+
+* Any necessary module arguments are specified as key-value pairs under the module.
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
 
 ## Patterns
 
 ![img_12.png](../images/img_12.png)
-
-
 
 ## Tasks
 
@@ -51,9 +138,7 @@
 * Modules are executed on the remote hosts
 * Modules are written in Python
 
-
 ---
-
 
 ## Module Types
 
@@ -80,6 +165,7 @@
 ---
 
 ## Module Documentation
+
 * The documentation for each module is located in the `/usr/share/doc/ansible/html/modules/<module_name>.html` directory
 
 * The documentation for each module is also available online at `https://docs.ansible.com/ansible/2.9/modules/module_name>.html`
@@ -90,29 +176,7 @@
   * A list of the module's return values
   * A list of the module's examples
 
----
 
-
-
-
-
-
-
-
-
-## Play
-
-* A play is a list of tasks to be executed on a set of hosts
-
-![img_3.png](../images/img_3.png)
-
----
-
-## Playbook
-
-* A playbook is a list of plays
-
-![img_4.png](../images/img_4.png)
 
 ---
 
@@ -209,14 +273,11 @@ Means to run a specific adhoc, play or playbook on the specified host or group f
 
 ---
 
-
-
 # Install Ansible
 
 ---
 
 ## Install Ansible
-
 
 * Ansible is written in Python and, as such, can be installed on a wide range of systems
 
@@ -241,20 +302,21 @@ The simplest way to not only get up and running with Ansible but to keep yoursel
 
 Install Ansible
 
-
-
 # Ansible Plugin
 
 ---
 
 ## What is a plugin?
+
 * A plugin is a piece of code that extends Ansible
 * Plugins are written in Python
 * Plugins are executed on the Ansible controller
 * Plugins are executed before the play starts
 
 ---
+
 ## Plugin Types
+
 * Action plugins
 * Callback plugins
 * Connection plugins
@@ -320,6 +382,7 @@ Install Ansible
 ---
 
 ## Module
+
 * A module is a self-contained script that implements a single action
 * Modules are the building blocks of Ansible
 * Modules are executed on the remote hosts
@@ -336,9 +399,7 @@ Install Ansible
 
 * An Ansible ad hoc command uses the `ansible` command-line tool to automate a single task on one or more managed nodes.
 * ad hoc commands are quick and easy, but they are not reusable.
-* ad hoc tasks can be used to reboot servers, copy files, manage packages and users, and much more. 
-* You can use any Ansible module in an ad hoc task. 
-* ad hoc commands demonstrate the simplicity and power of Ansible
+* ad hoc tasks can be used to reboot servers, copy files, manage packages and users, and much more.* You can use any Ansible module in an ad hoc task.* ad hoc commands demonstrate the simplicity and power of Ansible
 * It will port over directly to the playbook language
 * For every ad hoc command you run, you will get a response in JSON format
 * You can use the `-m` option to specify the module to use
@@ -356,8 +417,8 @@ ansible -i hosts -m ping all
 ---
 
 # LAB
-Adhoc Lab
 
+Adhoc Lab
 
 ## Module Arguments
 
@@ -423,7 +484,6 @@ In the previous above, the handler is named "restart apache" and will restart th
 * Use descriptive names for handlers
 * Define handlers in a separate file to keep your playbook organized
 * Test your handlers thoroughly to ensure they work as expected
-
 
 ## Playbook
 
@@ -523,7 +583,6 @@ Note: If you have `redis` installed, you can use `cached` to store these variabl
 
 ---
 
-
 # Ansible Condition
 
 ---
@@ -576,7 +635,6 @@ Note: If you have `redis` installed, you can use `cached` to store these variabl
   * The list must contain valid expressions.
   * `and` operator is used between each item of the list.
 
-
 ---
 
 ## Condition Variables
@@ -591,6 +649,7 @@ Note: If you have `redis` installed, you can use `cached` to store these variabl
   * `ansible_playbook_python`
   * `ansible_python`
   * ...
+
 ---
 
 # Ansible Loop
@@ -641,7 +700,6 @@ The loop_control keyword allows you to modify the behavior of the loop. For exam
 
 Loops in Ansible Playbook provide an efficient way to perform repetitive tasks. With the with_items and loop loops, you can iterate over a list of items or a dictionary, and use conditionals and loop_control keyword to modify the behavior of the loop.
 
-
 # Ansible Block
 
 ---
@@ -651,7 +709,6 @@ Loops in Ansible Playbook provide an efficient way to perform repetitive tasks. 
 * Blocks are a way to group related tasks together in an Ansible playbook
 * They can be used to apply conditions, retries, and error handling to a set of tasks as a single unit
 * Blocks can make playbooks more readable and easier to maintain
-
 
 ---
 
@@ -664,7 +721,6 @@ The syntax for defining a block in an Ansible playbook is as follows:
 * The `block` keyword is used to define the set of tasks that should be grouped together
 * The `rescue` keyword is used to define a set of tasks to be run if any task in the block fails
 * The `always` keyword is used to define a set of tasks to be run regardless of whether the block succeeds or fails
-
 
 ---
 
@@ -692,6 +748,7 @@ The syntax for defining a block in an Ansible playbook is as follows:
 ---
 
 # Ansible Vault: Secure Secrets Management with Examples
+
  
 ---
 
@@ -704,6 +761,7 @@ The syntax for defining a block in an Ansible playbook is as follows:
 * Everytime you run a playbook, Ansible Vault will ask you for the password to decrypt the file.
 
 ---
+
 ## Basic Vault Commands
 
 * ansible-vault create
@@ -728,8 +786,6 @@ The syntax for defining a block in an Ansible playbook is as follows:
   * `ansible-playbook playbook.yml --vault-password-file vault_pass.txt` => uses a file to store the vault password
 
 ---
-
-
 
 # Ansible Roles
 
