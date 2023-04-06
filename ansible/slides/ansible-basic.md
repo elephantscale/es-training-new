@@ -83,6 +83,8 @@ it can be used to manage configuration files.
 
 ---
 
+## Ansible Architecture
+
 <img src="../images/img_6.png" style="width:65%;"/>
 
 
@@ -91,6 +93,9 @@ it can be used to manage configuration files.
 ## Run AGAINST
 
 Means to run a specific adhoc, play or playbook on the specified host or group from the inventory
+
+
+<img src="../images/mean.jpg" width="30%">
 
 ---
 
@@ -186,6 +191,8 @@ mailserver
 * The attributes are defined in the form of key=value pairs
 * The attributes are defined after the host name
 
+<img src="../images/data.png">
+
 ---
 
 ## Static Inventory
@@ -193,6 +200,8 @@ mailserver
 * A static inventory is a list of hosts defined in a file
 * The file is usually called `hosts` and is located in the `/etc/ansible` directory
 * The file can be in any format, but the most common one is the INI format
+
+<img src="../images/random_number.png">
 
 ---
 
@@ -250,6 +259,8 @@ The one exception to this is Windows, though native Python distributions exist, 
 The release cycle for Ansible is usually about four months, and during this short release cycle, there are normally many changes, from minor bug fixes to major ones, to new features and even sometimes fundamental changes.
 
 The simplest way to not only get up and running with Ansible but to keep yourself up to date is to use the native packages built for your operating system where they are available.
+
+<img src="../images/rel_c.gif">
 
 ---
 
