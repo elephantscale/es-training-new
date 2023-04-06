@@ -144,6 +144,19 @@ These platforms can be used to share and collaborate on Ansible roles, collectio
 
 ---
 
+## Note-worthy contributors
+
+* [Jeff Geerling](https://galaxy.ansible.com/geerlingguy)
+  * Authored several popular Ansible roles on Galaxy. He also maintains an active blog and YouTube channel where he shares his knowledge and experience with Ansible.
+* [David Winterbottom](https://galaxy.ansible.com/dwinterbottom)
+  * David is the author of Ansible's official AWS modules and has contributed to several other popular modules on Galaxy. He has also given talks and workshops on Ansible at various conferences.
+* Nick Janetakis
+  * Author of "Docker for Developers", a book on Docker published by Packt.
+* Tim Gerla
+  * Author of "Mastering Ansible", a comprehensive guide to Ansible published by Packt.
+
+---
+
 ## Conclusion
 
 * Ansible Galaxy is a powerful tool for sharing and finding Ansible content.
