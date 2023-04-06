@@ -2,7 +2,6 @@
 
 ---
 
-
 ## What is a Playbook?
 
 * A playbook is a list of plays
@@ -12,16 +11,16 @@
 
 * Playbooks define the desired state of a system, allowing Ansible to manage and maintain consistency across environments.
 
-
 ---
 
 ## Key Components of a Playbook
-  * Plays: Organize tasks for a specific group of hosts.
-  * Tasks: Execute a single action using Ansible modules (e.g., package installation, file creation).
-  * Variables: Define custom or dynamic values to be used in tasks.
-  * Handlers: Perform actions in response to specific triggers (e.g., restarting a service).
-  * Templates: Dynamically generate configuration files using Jinja2 templating language.
-  * Playbooks promote reusable, shareable, and maintainable code for infrastructure management.
+
+* Plays: Organize tasks for a specific group of hosts.
+* Tasks: Execute a single action using Ansible modules (e.g., package installation, file creation).
+* Variables: Define custom or dynamic values to be used in tasks.
+* Handlers: Perform actions in response to specific triggers (e.g., restarting a service).
+* Templates: Dynamically generate configuration files using Jinja2 templating language.
+* Playbooks promote reusable, shareable, and maintainable code for infrastructure management.
 
 We will discuss each of these components in detail in the following slides.
 
@@ -40,6 +39,7 @@ Let's take a look at a simple playbook:
       debug:
         msg: "Hello, world!"
 ```
+
 now, we're going to break down the playbook into its component parts.
 
 ---
@@ -67,7 +67,7 @@ The _hosts_ and _become_ directives are part of the first play defined in the pl
 
 ## What is a play?
 
-A _play_ is a set of tasks that run on a specific set of hosts. 
+A _play_ is a set of tasks that run on a specific set of hosts.
 
 ```yaml
 - hosts: servers
@@ -104,7 +104,6 @@ In this case, the play is targeting the `servers` group of hosts,
 
 * Any necessary module arguments are specified as key-value pairs under the module.
 
-
 ---
 
 ## Task: Name
@@ -119,10 +118,9 @@ In this case, the play is targeting the `servers` group of hosts,
 
 * In the example playbook, the task is named "Print a debug message".
 
-
 ---
 
-##  Task: Module
+## Task: Module
 
 ```yaml
       debug:
@@ -190,8 +188,6 @@ In this case, the play is targeting the `servers` group of hosts,
   * A list of the module's return values
   * A list of the module's examples
 
-
-
 ---
 
 # Back to our playbook
@@ -235,13 +231,13 @@ $ ansible-playbook -v playbook.yml
 
 ---
 
-# Variables and Facts
+## Variables and Facts
 
 Let's take a look at a simple playbook that uses variables and facts:
 
 ```yaml
----
-- hosts: servers
+  ---
+    - hosts: servers
   vars:
     my_var: "Hello, world!"
   tasks:
@@ -250,28 +246,333 @@ Let's take a look at a simple playbook that uses variables and facts:
         var: my_var
 ```        
 
-
-
-
-
----
-
-## Facts
-
-* Facts are pieces of information about the remote hosts
-* Facts are gathered by Ansible and can be used in playbooks
-* Facts are stored in the ansible_facts variable
-* Facts are gathered by default
+Let's break down this playbook and explain each part in more detail
 
 ---
 
 ## Variables
 
-* Variables are used to store information that can be used in playbooks and templates
-* Variables can be defined in the playbook or in a separate file
-* Variables can be defined in the inventory file
+  ```yaml
+      vars:
+        my_var: "Hello, world!"
+  ```
+
+* Variables are used to store and reference data in Ansible.
+
+* You can define variables at the play or task level, or in an inventory file or variable file.
+
+* In this example, a variable named my_var is defined at the play level, with the value "Hello, world!".
 
 ---
+
+## Task: Debug
+
+```yaml
+      - name: Debug variable
+        debug:
+          var: my_var
+```
+
+* The debug task is used to display the value of a variable or other data structure.
+
+* The var directive specifies the variable to display.
+
+* In this example, the debug task is used to display the value of the my_var variable.
+
+---
+
+## LAB
+
+---
+
+## Prompt for input
+
+Let's analyze a playbook that prompts the user for input:
+
+```yaml
+  ---
+    - hosts: servers
+  vars_prompt:
+    - name: my_var
+      prompt: "Enter a value for my_var: "
+  tasks:
+    - name: Debug variable
+      debug:
+        var: my_var
+```
+
+Let's break down this playbook and explain each part in more detail
+
+---
+
+## Variables: Prompt
+
+```yaml
+    vars_prompt:
+      - name: my_var
+        prompt: "Enter a value for my_var: "
+```
+
+* The vars_prompt section is used to prompt the user for variable values.
+
+* Each prompt is defined with a name and a prompt attribute.
+
+* In this example, a variable named my_var is defined with a prompt that asks the user to enter a value.
+
+---
+
+## Structure of a prompt
+
+```yaml
+    vars_prompt:
+      - name: my_var
+        prompt: "Enter a value for my_var: "
+        default: "default value"
+        private: yes
+```
+
+`name`: variable name
+
+`prompt`: prompt message
+
+`default`: default if user skips the prompt
+
+`private`: hide the input from the screen
+
+---
+
+## Variables: File
+
+* Variables can be defined in a separate file.
+
+* The file can be in any format, but the most common one is the YAML format.
+
+* The file must be located in the same directory or relative to the playbook.
+
+* The file must be named anything that you need.
+
+* The file must be defined in the vars_files section of the playbook.
+  * There is a module called `include_vars` that can be used to include variables from a file as a task.
+
+```yaml
+  ---
+    - hosts: servers
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Debug variable
+      debug:
+        var: my_var
+```
+
+---
+
+## Variables: Register
+
+* Variables can be registered to store the output of a task.
+
+```yaml
+- name: Register a variable
+  shell: cat /home/ubuntu/a.txt
+  register: motd_contents
+```
+
+In this example, the output of the `shell` task is stored in the `my_var` variable.
+---
+
+## Variables: Set Fact
+
+Variables can be set as facts to store the output of a task using `set_fact` module
+
+these variables can be accessed like a normal variable
+
+```yaml
+- name: Setting host facts using set_fact module
+  set_fact:
+    fact_one: "Hello"
+    fact_other: "Bye"
+    john_fact: "Doe"
+    cacheable: yes
+```
+
+If you have `redis` installed, you can use `cached` to store these variables for later use.
+
+---
+
+## LAB
+
+---
+
+## Ansible Facts
+
+Facts are pieces of information about the remote hosts that Ansible collects when it runs a playbook.
+
+```yaml
+  ---
+    - hosts: servers
+  gather_facts: yes
+  tasks:
+    - name: Display CPU count
+      debug:
+        msg: "The target host has {{ ansible_facts['processor']['count'] }} CPUs."
+```
+
+Let's break down this playbook and explain each part in more detail
+
+---
+
+## Play: gather_facts
+
+```yaml
+  gather_facts: yes
+```
+
+* The gather_facts directive is used to gather system information (facts) from the target hosts.
+
+* By default, Ansible gathers a basic set of facts, such as the hostname and IP address of the target host.
+
+* You can also customize the set of facts to gather using the gather_subset directive.
+
+* In this example, the gather_facts directive is set to yes, which means Ansible will gather all available facts.
+
+---
+
+## Task: Debug
+
+```yaml
+      - name: Display CPU count
+        debug:
+          msg: "The target host has {{ ansible_facts['processor']['count'] }} CPUs."
+```
+
+* The debug task is used to display a message in the playbook output.
+
+* The msg directive specifies the message to display.
+
+* In this example, the msg directive includes a variable reference to ansible_facts['processor']['count'], which contains the number of CPUs on the target host.
+
+---
+
+## LAB
+
+---
+
+# Conditionals
+
+---
+
+## Conditionals
+
+```yaml
+  ---
+    - hosts: servers
+  vars:
+    my_var: true
+  tasks:
+    - name: Display message
+      debug:
+        msg: "The variable is true."
+      when: my_var
+```
+
+Let's break down this playbook and explain each part in more detail
+
+---
+
+## Variable: Define
+
+```yaml
+    vars:
+      my_var: true
+```
+
+Variables can be defined in a playbook using the vars keyword.
+
+In this example, the my_var variable is defined with a value of true.
+
+---
+
+## Task: Debug
+
+* The debug task is used to display a message in the playbook output.
+
+* The msg directive specifies the message to display.
+
+* In this example, the msg directive displays a message if the my_var variable is true.
+
+---
+
+## Task: When
+
+```yaml
+        when: my_var
+```
+
+* The when keyword is used to specify a condition for the task to run.
+* The task will only run if the condition is true.
+* In this example, the when keyword is used to specify that the task should only run if the my_var variable is true.
+
+Let's talk about the condition syntax.
+---
+
+
+## Conditions: Operators
+
+* Ansible supports the following operators:
+  * `and`
+  * `or`
+  * `not`
+  * `==`
+  * `!=`
+  * `>`
+  * `>=`
+  * `<`
+  * `<=`
+* The condition can be defined as a Jinja2 expression.
+
+* The condition can be defined as a variable.
+
+---
+
+## Condition: Expressions
+
+* Ansible supports the following expressions:
+  * `true`
+  * `false`
+  * `none`
+
+
+* The condition can be defined as a list.
+  * The list must contain valid expressions.
+  * `and` operator is used between each item of the list.
+
+---
+
+## Conditions: Variables
+
+* the following variables can be used in conditions:
+  * `ansible_facts`
+  * `ansible_hostname`
+  * `ansible_host`
+  * `ansible_os_family`
+  * `ansible_os_name`
+  * `ansible_os_version`
+  * `ansible_playbook_python`
+  * `ansible_python`
+  * ...
+
+---
+
+## LAB
+
+---
+
+# Loops
+
+---
+
+
+
 
 ## Templates
 
@@ -291,15 +592,6 @@ Let's take a look at a simple playbook that uses variables and facts:
 * Handlers are executed only once
 * Handlers are executed in the order they are defined
 * Handlers are executed on the hosts that were changed
-
----
-
-## Conditionals
-
-* Conditionals are used to execute tasks based on conditions
-* Conditionals are written in Jinja2
-* Conditionals are evaluated on the Ansible controller
-* Conditionals are evaluated before the play starts
 
 ---
 
@@ -454,18 +746,6 @@ Install Ansible
 
 ---
 
-# Ansible Modules
----
-
-## Module
-
-* A module is a self-contained script that implements a single action
-* Modules are the building blocks of Ansible
-* Modules are executed on the remote hosts
-* Modules are written in Python
-* Modules are located in the `/usr/lib/python3.6/site-packages/ansible/modules` directory
-
----
 
 
 # Ansible Ad-Hoc
@@ -495,18 +775,6 @@ ansible -i hosts -m ping all
 # LAB
 
 Adhoc Lab
-
-## Module Arguments
-
-* Arguments are the parameters that are passed to the module
-* Arguments are passed as key-value pairs
-
----
-
-## Module Return Values
-
-* Return values are the values that are returned by the module
-* Return values are passed as key-value pairs
 
 ---
 
@@ -573,158 +841,9 @@ Playbooks are written in YAML format and can be used to manage a wide range of s
 
 ![img_3.png](../images/img_3.png)
 
----
-
-## Task Structure
-
-A task is a single module with a set of arguments.
-
-![img.png](img.png)
-
----
-
-# Ansible Variables
-
----
-
-## Variables
-
-* Variables are used to store information that can be used in playbooks and templates.
-
-* Variables can be defined in the playbook or in a separate file.
-
-* Variables are defined in the form of key=value pairs.
-
-* Variables are defined in the vars section of the playbook.
-
-* Variables can be used in the tasks section of the playbook.
-
----
-
-## Example
-
-![img_1.png](../images/img_13.png)
-
----
-
-## Variables Prompt
-
-* Variables can be prompted for user input.
-* The prompt can be defined in the vars section of the playbook.
-
----
-
-## Example
-
-![img_2.png](../images/img_14.png)
-
-`name`: variable name
-
-`prompt`: prompt message
-
-`default`: default if user skips the prompt
-
-`private`: hide the input from the screen
-
----
-
-## Variables File
-
-* Variables can be defined in a separate file.
-* The file can be in any format, but the most common one is the YAML format.
-* The file must be located in the same directory or relative to the playbook.
-* The file must be named anything that you need.
-* The file must be defined in the vars_files section of the playbook.
-  * There is a module called `include_vars` that can be used to include variables from a file as a task.
-
----
-
-## Variables Register
-
-* Variables can be registered to store the output of a task.
-
-![img_2.png](../images/variabels/img_2.png)
-
----
-
-## Variables Set Fact
-
-Variables can be set as facts to store the output of a task using `set_fact` module
-
-these variables can be accessed like a normal variable
-
-![img_3.png](../images/variabels/img_3.png)
-
-Note: If you have `redis` installed, you can use `cached` to store these variables for later use.
-
----
-
 # Ansible Condition
 
 ---
-
-## Condition
-
-* Ansible supports conditional execution of tasks.
-* The condition can be defined in the `when` section of the task.
-* The condition can be defined as a string, a list of strings, or a dictionary.
-* Strings must be a valid expression.
-* Lists of strings must be valid expressions.
-* Dictionaries must be valid expressions.
-* The condition can be defined as a Jinja2 expression.
-* The condition can be defined as a variable.
-
----
-
-## Example
-
-![img_1.png](../images/cond_sample.png)
-
----
-
-## Condition Operators
-
-* Ansible supports the following operators:
-  * `and`
-  * `or`
-  * `not`
-  * `==`
-  * `!=`
-  * `>`
-  * `>=`
-  * `<`
-  * `<=`
-* The condition can be defined as a Jinja2 expression.
-* The condition can be defined as a variable.
-
----
-
-## Condition Expressions
-
-* Ansible supports the following expressions:
-  * `true`
-  * `false`
-  * `none`
-* The condition can be defined as a Jinja2 expression.
-* The condition can be defined as a variable.
-* The condition can be defined as a list.
-  * The list must contain valid expressions.
-  * `and` operator is used between each item of the list.
-
----
-
-## Condition Variables
-
-* Ansible supports the following variables:
-  * `ansible_facts`
-  * `ansible_hostname`
-  * `ansible_host`
-  * `ansible_os_family`
-  * `ansible_os_name`
-  * `ansible_os_version`
-  * `ansible_playbook_python`
-  * `ansible_python`
-  * ...
 
 ---
 
