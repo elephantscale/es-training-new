@@ -11,9 +11,14 @@
 
 * Playbooks define the desired state of a system, allowing Ansible to manage and maintain consistency across environments.
 
+<img src="../images/play.jpg" height="60%">
+
+
 ---
 
 ## Key Components of a Playbook
+
+<img src="../images/post.jpg" style="float:right;" width="30%">
 
 * Plays: Organize tasks for a specific group of hosts.
 * Tasks: Execute a single action using Ansible modules (e.g., package installation, file creation).
@@ -23,6 +28,8 @@
 * Playbooks promote reusable, shareable, and maintainable code for infrastructure management.
 
 We will discuss each of these components in detail in the following slides.
+
+
 
 ---
 
@@ -84,6 +91,8 @@ In this case, the play is targeting the `servers` group of hosts,
 ```yaml
   become: true
 ```
+
+<img src="../images/root.png">
 
 ---
 
@@ -477,6 +486,8 @@ Let's break down this playbook and explain each part in more detail
 
 Let's break down this playbook and explain each part in more detail
 
+<img src="../images/condition.jpg" width="30%">
+
 ---
 
 ## Variable: Define
@@ -546,6 +557,8 @@ Let's talk about the condition syntax.
   * The list must contain valid expressions.
   * `and` operator is used between each item of the list.
 
+<img src="../images/expressions.jpg">
+
 ---
 
 ## Conditions: Variables
@@ -574,6 +587,7 @@ Let's talk about the condition syntax.
 ## Loops
 
 Ansible provides a simple and efficient way to iterate over a set of values using loops in a playbook.
+<img src="../images/loop.png" style="float: right">
 
 ```yaml
   ---
@@ -591,6 +605,8 @@ Ansible provides a simple and efficient way to iterate over a set of values usin
 ```
 
 Let's break down this playbook and explain each part in more detail
+
+
 ---
 
 ## Variable: Define
