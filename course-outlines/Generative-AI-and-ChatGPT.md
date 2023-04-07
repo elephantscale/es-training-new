@@ -1,29 +1,23 @@
 # Generative AI and ChatGPT
 
 (C) Copyright Elephant Scale
-April 5, 2023
+April 7, 2023
 
 ## Course Description
 
 * OpenAI with ChatGPT is eating the world with millions of signed-up users, and HuggingFace is the most popular library for deep learning.
-* This course introduces the students to Neural Networks, OpenAI, and AI in general. Then it goes into ChatGPT4, HuggingFace, and  OpenAI model and applies them to your work projects.
+* This course surveys the background: Neural Networks, OpenAI, and AI in general. Then it goes into ChatGPT4, HuggingFace, and  OpenAI model and applies them to your work projects.
 * The course also surveys ChatGPT competitors and derivative products.
 
 ## After the course, you will be able to do the following tasks
 
-* Classifying whole sentences:
-  * Getting the sentiment of a review, detecting if an email is spam, determining if a sentence is grammatically correct or whether two sentences are logically related or not
-* Classifying each word in a sentence:
-  * Identifying the grammatical components of a sentence (noun, verb, adjective), or the named entities (person, location, organization)
-* Generating text content:
-  * Completing a prompt with auto-generated text, filling in the blanks in a text with masked words
-* Extracting an answer from a text:
-  * Given a question and a context, extracting the answer to the question based on the information provided in the context
-* Generating a new sentence from an input text:
-  * Translating a text into another language, summarizing a text
-* More
-  * Generating a transcript of an audio sample or a description of an image.
-  
+* Master the background information for working with the Large Language Models (LLM): Generative AI, ChatGPT, etc.
+* Formulate the expectations from a LLM implementation
+* Know and be proficient with the tools of trade: HuggingFace, ChatGPT, etc.
+* Use prompt engineering with the closed LLM that cannot be find-tuned
+* Fine-tune open LLM
+* Test the resulting product
+
 ## Course objectives
 * By the end of this course, students will know...
 * How to understand the current state of the art in Deep Learning and AI
@@ -94,12 +88,14 @@ April 5, 2023
 * Mastering NLP
 
 ### OpenAI and GPT-4
+
 * How to use ChatGPT
   * Conducting the conversation
   * Difference between versions and limitations
   * Fine-tuning ChatGPT
   * Scope of fine-tuning
   * Prompt Engineering
+  
 * Implementing OpenAI API
   * Setting up an account
   * Integrating ChatGPT
@@ -116,6 +112,15 @@ April 5, 2023
   * YouChat
   * OpenAI Playground
   * DialoGPT
+  * Alpaca from Stanford
+    * https://crfm.stanford.edu/2023/03/13/alpaca.html
+  * LLama from Facebook 
+    * https://ai.facebook.com/blog/large-language-model-llama-meta-ai/
+  * Dolly from Databricks 
+  * https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html
+  * Nomic
+    * https://github.com/nomic-ai/gpt4all
+  * Vicunia
+    * https://pub.towardsai.net/meet-vicuna-the-latest-metas-llama-model-that-matches-chatgpt-performance-e23b2fc67e6b
   
-###  future and keeping current
 
