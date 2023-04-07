@@ -83,9 +83,73 @@ it can be used to manage configuration files.
 
 ---
 
+## Ansible Architecture
+
 <img src="../images/img_6.png" style="width:65%;"/>
 
-## Ansible Terms
+
+---
+
+## Run AGAINST
+
+Means to run a specific adhoc, play or playbook on the specified host or group from the inventory
+
+
+<img src="../images/mean.jpg" width="30%">
+
+---
+
+## Ansible Vs Chef Vs Puppet Vs SaltStack
+| Feature              | Ansible                                                                 | Chef                                             | Puppet                                            | SaltStack                                            |
+|----------------------|-------------------------------------------------------------------------|--------------------------------------------------|---------------------------------------------------|------------------------------------------------------|
+| Configuration language | YAML                                                                    | Ruby DSL                                         | Puppet DSL                                        | YAML                                                 |
+| Masterless support | Yes                                                                     | No                                               | No                                                | Yes                                                   |
+| Agent-based support | Optional (ansible-pull)                                                 | Yes                                              | Yes                                               | Yes                                                   |
+| Idempotent execution | Yes                                                                     | Yes                                              | Yes                                               | Yes                                                   |
+| Real-time execution | Yes                                                                     | No                                               | No                                                | Yes                                                   |
+| Parallel execution | Yes                                                                     | Yes                                              | Yes                                               | Yes                                                   |
+| Dependency management | Yes                                                                  | Yes                                              | Yes                                               | Yes                                                   |
+| Dry-run testing | Yes                                                                    | Yes                                              | Yes                                               | Yes                                                   |
+| Declarative configuration | Yes                                                             | Yes                                              | Yes                                               | Yes                                                   |
+
+
+---
+
+<br>
+
+| Feature              | Ansible                                                                 | Chef                                             | Puppet                                            | SaltStack                                            |
+|----------------------|-------------------------------------------------------------------------|--------------------------------------------------|---------------------------------------------------|------------------------------------------------------|
+| Community support | Strong                                                                  | Strong                                           | Strong                                            | Strong                                               |
+| Ease of use | Easy to learn and use, minimal setup required                            | Steep learning curve, complex setup required     | Steep learning curve, complex setup required      | Easy to learn and use, minimal setup required         |
+| Platform support | Cross-platform (Windows, Linux, macOS, etc.)                             | Cross-platform (Windows, Linux, macOS, etc.)     | Cross-platform (Windows, Linux, macOS, etc.)      | Cross-platform (Windows, Linux, macOS, etc.)         |
+| Reporting | Basic reporting built-in, additional tools available                      | Strong reporting and monitoring capabilities     | Strong reporting and monitoring capabilities      | Strong reporting and monitoring capabilities         |
+| Language support | Supports multiple programming languages and frameworks                    | Ruby DSL                                         | Puppet DSL                                        | Python                                               |
+| Custom module development | Yes                                                | Yes                                              | Yes                                               | Yes                                                   |
+
+---
+<br>
+
+| Feature              | Ansible                                                                 | Chef                                             | Puppet                                            | SaltStack                                            |
+|----------------------|-------------------------------------------------------------------------|--------------------------------------------------|---------------------------------------------------|------------------------------------------------------|
+| Extensibility | Plugin system for modules, roles, and collections                         | Plugins and modules                              | Plugins and modules                               | Python modules and plugins                            |
+| Infrastructure as code (IaC) | Yes                                             | Yes                                              | Yes                                               | Yes                                                   |
+| Task scheduling | Yes                                                                 | Yes                                              | Yes                                               | Yes                                                   |
+| Compliance auditing | Yes                                                             | Yes                                              | Yes                                               | Yes                                                   |
+| Configuration testing | Yes                                                          | Yes                                              | Yes                                               | Yes                                                   |
+| Centralized management | Yes                                                             | Yes                                              | Yes                                               | Yes                                                   |
+| System monitoring | Yes                                                              | Yes                                              | Yes                                               | Yes                                                   |
+| Encryption | Yes (Ansible Vault)                                                     | Yes (Chef Vault)                                 | Yes (Hiera-eyaml)                                 | Yes (GPG and Vault)                                   |
+
+---
+
+<br>
+
+| Feature              | Ansible                                                                 | Chef                                             | Puppet                                            | SaltStack                                            |
+|----------------------|-------------------------------------------------------------------------|--------------------------------------------------|---------------------------------------------------|------------------------------------------------------|
+| Configuration management | Yes                                                          | Yes                                              | Yes                                               | Yes                                                   |
+| Cloud provisioning | Yes                                                                 | Yes                                              | Yes                                               | Yes                                                   |
+| Continuous delivery | Yes                                                            | Yes                                              | Yes                                               | Yes                                                   |
+| Multi-environment management | Yes                                                | Yes                                              | Yes                                               | Yes 
 
 ---
 
@@ -127,6 +191,8 @@ mailserver
 * The attributes are defined in the form of key=value pairs
 * The attributes are defined after the host name
 
+<img src="../images/data.png">
+
 ---
 
 ## Static Inventory
@@ -134,6 +200,8 @@ mailserver
 * A static inventory is a list of hosts defined in a file
 * The file is usually called `hosts` and is located in the `/etc/ansible` directory
 * The file can be in any format, but the most common one is the INI format
+
+<img src="../images/random_number.png">
 
 ---
 
@@ -165,3 +233,68 @@ ansible_user=<Username> # ( ubuntu in our environment )
 * The script must be located in the `/etc/ansible` directory
 
 ---
+
+
+# Install Ansible
+
+---
+
+## Install Ansible
+
+* Ansible is written in Python and, as such, can be installed on a wide range of systems
+
+  * Debian
+  * RedHat
+  * FreeBSD
+
+* macOS
+
+The one exception to this is Windows, though native Python distributions exist, there is yet no native Ansible build.
+
+
+---
+
+## Release Cycle
+
+The release cycle for Ansible is usually about four months, and during this short release cycle, there are normally many changes, from minor bug fixes to major ones, to new features and even sometimes fundamental changes.
+
+The simplest way to not only get up and running with Ansible but to keep yourself up to date is to use the native packages built for your operating system where they are available.
+
+<img src="../images/rel_c.gif">
+
+---
+
+# LAB
+
+Install Ansible
+
+---
+
+# Ansible Ad-Hoc
+
+---
+
+## Ad-Hoc Commands
+
+* An Ansible ad hoc command uses the `ansible` command-line tool to automate a single task on one or more managed nodes.
+* ad hoc commands are quick and easy, but they are not reusable.
+* ad hoc tasks can be used to reboot servers, copy files, manage packages and users, and much more.* You can use any Ansible module in an ad hoc task.* ad hoc commands demonstrate the simplicity and power of Ansible
+* It will port over directly to the playbook language
+* For every ad hoc command you run, you will get a response in JSON format
+* You can use the `-m` option to specify the module to use
+* You can use the `-a` option to specify the arguments to pass to the module
+* You can use the `-i` option to specify the inventory file to use
+
+---
+
+## Example
+
+```bash
+ansible -i hosts -m ping all
+```
+
+---
+
+# LAB
+
+Adhoc Lab
