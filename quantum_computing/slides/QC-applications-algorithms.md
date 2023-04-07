@@ -1,4 +1,4 @@
-# Quantum computing applications
+# QC applications and algorithms
 
 ---
 
@@ -86,6 +86,8 @@
 ---
 
 ## Grover algorithm
+
+![](../images/23-grover-waiting.png)
 
 ---
 
