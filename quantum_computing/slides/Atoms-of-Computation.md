@@ -56,21 +56,6 @@
 
 ---
 
-# Computation logic
-
---
-
-# First quantum circuit
-
----
-
-# Adder circuit
-
----
-
-# Toffoli gate
-
----
 
 # Lab
 
