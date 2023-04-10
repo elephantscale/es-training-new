@@ -76,3 +76,8 @@ https://thequantuminsider.com/2023/03/24/quantum-computing-challenges/
 
 ---
 
+## Google Cirq
+
+* TBD
+
+---
