@@ -1,5 +1,6 @@
 # to generate slides
-# $ES_HOME/utils/presentations/slides-assembler.sh   slide-order.txt
+# ./gen-2-pptx.sh
+# ./gen-3-pdf.sh
 
 About-Internet2-Class.md
 
@@ -15,34 +16,45 @@ STORAGE-2-NoSQL.md
 
 NETWORKING-1-Networking.md
 
+## ML
+ML-1-Machine-Learning-Primer.md
+ML-2-AI-ML-in-Cloud.md
+
+## Docker
 DOCKER-1-Container_Intro.md  
 DOCKER-2-Docker_Intro.md  
 DOCKER-3-Docker_Containers_and_Images.md  
 DOCKER-4-Docker_Development.md  
 DOCKER-5-Docker_Ops.md
 
+## Kubernetes
 Kubernetes-1-Intro.md  
 Kubernetes-2-Essentials.md  
-Kubernetes-3-Resources.md  
 Kubernetes-4-Deployments.md  
-Kubernetes-5-Misc.md  
-Kubernetes-6-Best-Practices.md
+# Kubernetes-3-Resources.md  
+# Kubernetes-5-Misc.md  
+# Kubernetes-6-Best-Practices.md
 
-## ML
-ML-1-Machine-Learning-Primer.md
-ML-2-AI-ML-in-Cloud.md
+
 
 ## Terraform
-../../terraform/slides-internet2/Terraform-Intro.md
-../../terraform/slides-internet2/Terraform-Setup.md
-../../terraform/slides-internet2/Terraform-Basics.md
+# ../../terraform/slides-internet2/Terraform-Intro.md
+# ../../terraform/slides-internet2/Terraform-Setup.md
+# ../../terraform/slides-internet2/Terraform-Basics.md
 
-# Terraform-1.pptx
-# Terraform-2.pptx
+## These slides from IIS
+Terraform-1.pptx
+Terraform-2.pptx
 # Terraform-3.pptx
 # Terraform-4.pptx
 
+
+## These slides from IIS
+Ansible-1.pptx
+Ansible-2.pptx
+
 AUDIT-1-Cost-Management.md
-INTRO-2-well-architected-frameworks.md
+
+CLOUD-well-architected-frameworks.md
 
 

@@ -193,12 +193,11 @@ Notes:
 
 <img src="../artwork/02-iam-13.png" style="width:55%;"/> <!-- {"left" : 2.88, "top" : 2.28, "height" : 5.11, "width" : 11.74} -->
 
-
 * An instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
 
 Notes:
 
-* In the example, an IAM role named PythonInEC2AccessS3 is created by an IAM user. The role grants access to an Amazon S3 bucket. 
+* In the example, an IAM role named PythonInEC2AccessS3 is created by an IAM user. The role grants access to an Amazon S3 bucket.
 * Step 1: An application developer selects the PythonInEC2AccessS3 role while creating the Amazon EC2 instance. The instance would host a Python application which would need access to an Amazon S3 bucket. Note: An IAM role may be associated with an EC2 instance only during creation. The policy associated with the role may be modified at any time. A user launching an EC2 instance also needs appropriate permissions to associate an IAM role to the EC2 instance.
 * Step 2: Post instance creation the Python application is installed on the EC2 instance. AWS SDK for Python (Boto3) is also installed on the instance. The application tries to access an Amazon S3 bucket. However AWS credentials are not available on the instance.
 * Step 3: The Python application then uses the EC2 metadata service to gain access to Temporary Security Credentials. Temporary Security Credentials will be discussed later.

@@ -496,14 +496,13 @@ The performance is one thing, but what about the time it takes to start?
 
 # Containers
 
-<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:40%;"/>
+<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:35%;"/>
 
 ---
 
-
 ## Containers
 
-<img src="../../assets/images/docker/container-architecture-1.png" style="width:50%;float:right;"/>
+<img src="../../assets/images/docker/container-architecture-1.png" style="width:47%;float:right;"/>
 
 * Containers virtualize the OS just like hypervisors virtualizes the hardware.
 
@@ -541,7 +540,7 @@ In order for this to work, the kernel has to be the same.  In the past, this has
 | Guest OS Support | Same as Host (usually Linux)                              | Can run any OS that supports host CPU.         |
 | Start/Stop Time  | milliseconds                                              | seconds to minutes                             |
 
-<img src="../../assets/images/docker/vm-vs-docker-1.png" style="width:50%;"/>
+<img src="../../assets/images/docker/vm-vs-docker-1.png" style="width:45%;"/>
 
 Notes:
 

@@ -80,8 +80,6 @@
 * Each availability zone is physically separated and isolated from the others.
 
 * All availability zones within a region are connected to one another via highly redundant, low-latency, high-speed networks.
-    - For GCP, regions are also connected with cable network
-    - For Azure, regions may be couple into primary and secondary  
 
 ---
 
@@ -313,7 +311,55 @@
 
 # Cloud Case Studies
 
-TODO
+---
+
+## AWS Case Studies
+
+* Netflix
+    - 100,000+ server instances for streaming / video encoding
+    - Amazon 53 DNS
+    - Amazon S3 as data storage: PB+ data created each day
+    - References: [1](https://aws.amazon.com/solutions/case-studies/innovators/netflix/)
+
+* JP Morgan Chase
+    - 450+ PB data stored and served by AWS S3
+    - References: [1](https://www.acceldata.io/blog/data-engineering-data-mesh)
+
+* See more case studies here: [1](https://aws.amazon.com/solutions/case-studies/)
+
+---
+
+## GCP Case Studies
+
+* Twitter
+    - Ad engagement platform
+    - Moved from home grown big data storage into Google Big Table
+    - References: [1](https://cloud.google.com/blog/products/data-analytics/modernizing-twitters-ad-engagement-analytics-platform)
+
+* UPS
+    - Package routing system
+    - BigQuery for adhoc queries
+    - Running BigQuery + ML on 1 billion data points per day!
+    - References: [1](https://cloud.google.com/blog/topics/customers/ups-uses-google-cloud-to-build-the-global-smart-logistics-network-of-the-future)    
+
+* See more case studies here: [1](https://cloud.google.com/customers/)
+
+---
+
+## Azure Case Studies
+
+* M&S (Marks and Spencer - Retail, UK)
+    - Consolidated data platform on Azure Data Lake
+    - Azure Databricks for large scale data analytics
+    - Azure PowerBI for reporting
+    - References: [1](https://customers.microsoft.com/en-us/story/1620068383237408887-marksandspencer-azuresynapseanalytics-unitedkingdom)
+
+* AMD
+    - Chip design (EDA) on Azure HPC 
+    - Large data storage at Azure Data Lake
+    - References: [1](https://customers.microsoft.com/en-us/story/1609171555313020501-amd-manufacturing-azure-netApp-files)
+
+* References: [1](https://azure.microsoft.com/en-us/resources/customer-stories/)
 
 ---
 
