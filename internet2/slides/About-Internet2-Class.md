@@ -1,4 +1,4 @@
-# About this Class
+# Cloud Workshop
 
 <img src="../../assets/images/generic/3rd-party/cloud-6.jpg" style="width:40%;"/> <!-- {"left" : 3.28, "top" : 3.84, "height" : 7.19, "width" : 10.94} -->
 

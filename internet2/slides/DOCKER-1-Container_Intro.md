@@ -501,7 +501,7 @@ The performance is one thing, but what about the time it takes to start?
 
 # Containers
 
-<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:40%;"/>  <!-- {"left" : 5.65, "top" : 1.92, "height" : 8.54, "width" : 11.39} --> 
+<img src="../../assets/images/docker/3rd-party/container-489933_640.jpg" style="width:35%;"/>  <!-- {"left" : 5.65, "top" : 1.92, "height" : 8.54, "width" : 11.39} --> 
 
 ---
 
