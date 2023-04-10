@@ -1,1 +1,0 @@
-[Lecture 1, Elisa Bäumer](https://mail.google.com/mail/u/0/#search/ilya/QgrcJHsbkdtqPQhGdDzRjsvCrvzhVpxDzKG?projector=1)

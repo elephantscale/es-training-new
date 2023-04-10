@@ -8,3 +8,4 @@
   * Password: Demoday20230323
   * Demo notebooks: https://github.com/Qiskit/feedback/tree/main/demo-day-notebooks/2023-03-23
 
+* [Lecture 1, Elisa Bäumer](https://mail.google.com/mail/u/0/#search/ilya/QgrcJHsbkdtqPQhGdDzRjsvCrvzhVpxDzKG?projector=1)
