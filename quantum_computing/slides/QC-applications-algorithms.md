@@ -73,6 +73,56 @@
 
 # Shor algorithm
 
+## Shor intro
+
+* Shor's algorithm is a quantum algorithm that can efficiently factor large numbers, which has significant implications for cryptography. 
+* It was developed by Peter Shor in 1994 and is one of the most well-known quantum algorithms. 
+* Entanglement, a fundamental property of quantum mechanics, is a key aspect of the algorithm.
+
+---
+
+## Entanglement in Shor
+
+* Entanglement allows quantum particles to have correlated properties, even when they are far apart. 
+* In Shor's algorithm, entanglement is used to create superposition states and perform calculations that would be infeasible with classical computing methods. 
+* Here's a simplified overview of how Shor's algorithm uses entanglement:
+
+---
+
+
+## Initialization: 
+* The algorithm starts by preparing two quantum registers (collections of qubits) in an initial state. 
+* The first register contains n qubits, and the second register contains m qubits, where n and m are chosen based on the size of the number to be factored. 
+* The initial state is a superposition of all possible values for the registers.
+
+---
+
+## Modular exponentiation: 
+* A modular exponentiation operation is performed on the second register, which is a crucial step in the algorithm. 
+* This operation entangles the states of the two registers, creating a joint state that encodes the periodicity of the modular exponentiation function.
+
+---
+
+## Quantum Fourier Transform (QFT): 
+* The QFT is applied to the first register. 
+* The QFT essentially extracts the periodicity information encoded in the entangled states of the registers. 
+* Since the QFT is a linear operation, the entanglement between the first and second registers is preserved.
+
+---
+
+
+## Measurement: 
+* The first register is measured, which collapses its state to a single value. 
+* Due to the entanglement between the registers, this also collapses the state of the second register. 
+* The measured value from the first register is used to estimate the period of the modular exponentiation function.
+
+---
+
+
+## Classical post-processing: 
+* With the period found, classical algorithms can be used to compute the greatest common divisor (GCD) and find the factors of the number.
+* Entanglement plays an essential role in Shor's algorithm by enabling the creation of superposition states and allowing the efficient extraction of the periodicity information using the QFT. This ability to manipulate and exploit quantum entanglement is what makes Shor's algorithm exponentially faster than classical factoring algorithms.
+
 ---
 
 ## Meet Peter Shor
