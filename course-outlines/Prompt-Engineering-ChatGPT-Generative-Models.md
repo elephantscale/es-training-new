@@ -1,18 +1,20 @@
-# Prompt Engineering Advanced
+# Prompt Engineering, ChatGPT, and Generative Models
 
 (C) Copyright Elephant Scale
 April 3, 2023
 
 ## Course Description
 
-* 
-* 
+* OpenAI with ChatGPT is eating the world with millions of signed-up users, and HuggingFace is the most popular library for deep learning.
+* This course introduces the students to Neural Networks, OpenAI, and AI in general. Then it goes into ChatGPT4, HuggingFace, and  OpenAI model and applies them to your work projects.
+* It also teaches how to use ChatGPT for productive purposes, prompt engineering, and fine-tuning
+
 
 ## After the course, you will be able to do the following tasks
 
   
 ## Course objectives
-* 
+
 * By the end of this course, students will know...
 * How to understand the current state of the art in Deep Learning and AI
 * How to put the claims of AI to the test
