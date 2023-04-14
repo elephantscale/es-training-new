@@ -1,39 +1,36 @@
 # Prompt Engineering, ChatGPT, and Generative Models
 
 (C) Copyright Elephant Scale
-April 3, 2023
+April 13, 2023
 
 ## Course Description
 
-* OpenAI with ChatGPT is eating the world with millions of signed-up users, and HuggingFace is the most popular library for deep learning.
-* This course introduces the students to Neural Networks, OpenAI, and AI in general. Then it goes into ChatGPT4, HuggingFace, and  OpenAI model and applies them to your work projects.
-* It also teaches how to use ChatGPT for productive purposes, prompt engineering, and fine-tuning
+* OpenAI with ChatGPT is eating the world with over a hundred million of users, and HuggingFace is the most popular library for Deep Learning, based on Transformer Neural Network, and containing inside Keras and PyTorch,
+* This course introduces the students to Neural Networks, OpenAI, and AI in general. Then it goes into ChatGPT4 and teaches how humans should use it. This is called prompts engineering.
+* Then it shows how to build applications on top of ChatGCP with the use of additional private company documents.
+* Finally, the students learn about the use of the HuggingFace library to evaluate and integrate ChatGCP competitors.
 
 
 ## After the course, you will be able to do the following tasks
 
-  
-## Course objectives
-
-* By the end of this course, students will know...
-* How to understand the current state of the art in Deep Learning and AI
-* How to put the claims of AI to the test
-* How to utilize the existing results through transfer learning, pre-training, and fine-tuning.
-* How to package your models for deployment.
-* How to create machine learning pipelines and improve them in production.
+* Correctly use ChatGPT out of the box.
+* Improve ChatGPT performance with "prompts."
+* Further improve ChatGPT performance with machine-generated prompts and additional search services, such as Azure Retrieval-Augmented Generation (RAG)
+* Fine-tune open models with HuggingFace
 
 ## Audience
 * Developers, data scientists, team leads, project managers
 
 ## Skill Level
 
-* Intermediate
+* Beginner (day 1) to intermediate (days 2 and 3)
 
 ## Duration
 
 * Three days
 
 ## Prerequisites
+
 * General familiarity with machine learning
 
 
@@ -52,66 +49,82 @@ April 3, 2023
 
 ## Detailed outline
 
-Course Title: Mastering Prompt Engineering: Techniques and Best Practices for AI Language Models
+### Introduction to Prompt Engineering
 
-I. Introduction to Prompt Engineering
-A. Definition and overview of prompt engineering
-B. Importance of prompt engineering in AI language models
-C. Challenges and opportunities in prompt engineering
-Suggested Reading:
-1. Radford, A., et al. "Language Models are Few-Shot Learners." OpenAI, 2020.
-2. Brown, T.B., et al. "AI Dungeon: Exploring Large Generative Language Models Through Interactive Play." NeurIPS, 2021.
+* Definition and overview of prompt engineering
+* Importance of prompt engineering in AI language models
+* Clear and concise instructions
+* Specifying desired output format
+* Implicit and explicit context
+* Techniques for controlling verbosity and focus
+* Iterative prompt refinement
+* Content generation and summarization
+* Question-answering and information retrieval
+* Machine translation and multilingual models
+* Assisting in creative tasks (e.g., poetry, storytelling)
+* Objective and subjective evaluation methods
+* Identifying and addressing biases
 
-II. Foundations of Prompt Engineering
-A. Understanding AI language models
-1. Transformer-based models (GPT, BERT)
-2. Autoregressive and autoencoding models
-   B. Key concepts in natural language understanding and generation
-   C. Techniques for effective human-AI collaboration
-   Suggested Reading:
-1. Vaswani, A., et al. "Attention is All You Need." NeurIPS, 2017.
-2. Devlin, J., et al. "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding." NAACL-HLT, 2019.
+### Main NLP tasks
+* Token classification
+* Fine-tuning a masked language model
+* Translation
+* Summarization
+* Training a causal language model from scratch
+* Question answering
+* Mastering NLP
 
-III. Principles of Effective Prompt Design
-A. Clear and concise instructions
-B. Specifying desired output format
-C. Implicit and explicit context
-D. Techniques for controlling verbosity and focus
-E. Utilizing examples and demonstrations
-Suggested Reading:
-1. OpenAI. "How to Make Good Prompts for GPT-3." OpenAI Blog, 2020.
-2. Tam, D. "An Introduction to Prompt Engineering." Towards Data Science, 2021.
+### HuggingFace
 
-IV. Advanced Prompt Engineering Techniques
-A. Iterative prompt refinement
-B. Systematic experimentation and evaluation
-C. Conditional and dynamic prompts
-D. Leveraging model-specific features and capabilities
-E. Adapting prompts for multi-turn interactions
-Suggested Reading:
-1. Gao, X., et al. "Making Pre-trained Language Models Better Few-shot Learners." arXiv, 2021.
-2. Nie, Y., et al. "Adapting Open Domain Fact Extraction and Verification to COVID-FACT through In-Domain Language Modeling." ACL, 2021.
+* Transformers
+* Encoders
+* Decoders
+* Sequence to sequence
+* Bias and limitations
+* Pipeline
+* Models
+* Tokenizers
+* Putting it all together
 
-V. Applications of Prompt Engineering
-A. Content generation and summarization
-B. Question-answering and information retrieval
-C. Sentiment analysis and emotion recognition
-D. Machine translation and multilingual models
-E. Assisting in creative tasks (e.g., poetry, storytelling)
-Suggested Reading:
-1. GPT-3 Creative Fiction. "Crafting Stories with GPT-3." GPT-3 Creative Fiction, 2020.
-2. Zhang, R., et al. "PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization." ICML, 2020.
 
-VI. Evaluation and Metrics for Prompt Engineering
-A. Objective evaluation methods
-B. Subjective and user-centered evaluation
-C. A/B testing and experimentation
-D. Identifying and addressing biases
-Suggested Reading:
-1. Liu, Y., et al. "RoBERTa: A Robustly Optimized BERT Pretraining Approach." arXiv,
+### Fine tuning a pretrained model
+* Processing the data
+* Fine-tuning a model with the Trainer API or Keras
+* A full training
 
+###  ChatGPT competitors and derivatives
+* Bing Chat
+* Chatsonic
+* Jasper Chat
+* Google Bard AI
+* Character AI
+* YouChat
+* OpenAI Playground
 
 ### Our references (not to send)
 
 * [A Crash Course on Chat GPT for Beginners](https://www.youtube.com/watch?v=JTxsNm9IdYU)
 * [Advanced ChatGPT Prompt Engineering Course](https://www.youtube.com/watch?v=-C4FCxP-QqE)
+* Radford, A., et al. "Language Models are Few-Shot Learners." OpenAI, 2020.
+* Brown, T.B., et al. "AI Dungeon: Exploring Large Generative Language Models Through Interactive Play." NeurIPS, 2021.
+* Liu, Y., et al. "RoBERTa: A Robustly Optimized BERT Pretraining Approach." arXiv, *OpenAI. "How to Make Good Prompts for GPT-3." OpenAI Blog, 2020.
+* Tam, D. "An Introduction to Prompt Engineering." Towards Data Science, 2021.
+* Gao, X., et al. "Making Pre-trained Language Models Better Few-shot Learners." arXiv, 2021.
+* Nie, Y., et al. "Adapting Open Domain Fact Extraction and Verification to COVID-FACT through In-Domain Language Modeling." ACL, 2021.
+* GPT-3 Creative Fiction. "Crafting Stories with GPT-3." GPT-3 Creative Fiction, 2020.
+* Zhang, R., et al. "PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization." ICML, 2020.
+* DialoGPT
+* Can ChatGPT work with your enterprise data?
+  * https://www.youtube.com/watch?v=tW2EA4aZ_YQ&t=8s
+  * Key moment: at xx min
+
+* Alpaca from Stanford
+  * https://crfm.stanford.edu/2023/03/13/alpaca.html
+* LLama from Facebook
+  * https://ai.facebook.com/blog/large-language-model-llama-meta-ai/
+* Dolly from Databricks
+* https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html
+* Nomic
+  * https://github.com/nomic-ai/gpt4all
+* Vicunia
+  * https://pub.towardsai.net/meet-vicuna-the-latest-metas-llama-model-that-matches-chatgpt-performance-e23b2fc67e6b

@@ -65,33 +65,8 @@ April 5, 2023
 - Understanding Deep Learning use cases
 - Overview of Neural Networks: NN, CNN, RNN.
 
-### HuggingFace
-
-* Transformers
-* Encoders
-* Decoders
-* Sequence to sequence
-* Bias and limitations
-* Pipeline
-* Models
-* Tokenizers
-* Putting it all together
 
 
-### Fine tuning a pretrained model
-* Processing the data
-* Fine-tuning a model with the Trainer API or Keras
-* A full training
-
-
-### Main NLP tasks
-* Token classification
-* Fine-tuning a masked language model
-* Translation
-* Summarization
-* Training a causal language model from scratch
-* Question answering
-* Mastering NLP
 
 ### Introduction to Prompt Engineering
 * Definition and overview of prompt engineering
