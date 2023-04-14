@@ -117,7 +117,7 @@ April 13, 2023
 * DialoGPT
 * Can ChatGPT work with your enterprise data?
   * https://www.youtube.com/watch?v=tW2EA4aZ_YQ&t=8s
-  * Key moment: at xx min
+  * Key moment: at 2 min
 
 * Alpaca from Stanford
   * https://crfm.stanford.edu/2023/03/13/alpaca.html
