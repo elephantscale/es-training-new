@@ -1,6 +1,7 @@
 # Prompt Engineering, ChatGPT, and Generative Models
 
 (C) Copyright Elephant Scale
+
 April 13, 2023
 
 ## Course Description
