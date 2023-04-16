@@ -1,7 +1,8 @@
 # Deep Learning & Advanced Applications
+* (Cisco name: Deep Learning & Advanced Applications)
 
 (C) Copyright Elephant Scale
-March 16, 2023
+April 15, 2023
 
 ## Course Description
 
