@@ -1,5 +1,6 @@
 # Deep Learning & Advanced Applications
-* (Cisco name: Deep Learning & Advanced Applications)
+* (Cisco catalog)
+* (ES catalog: Deep Learning & Advanced Applications with HuggingFace)
 
 (C) Copyright Elephant Scale
 April 15, 2023

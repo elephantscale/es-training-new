@@ -1,16 +1,16 @@
-# Prompt Engineering, ChatGPT, and Generative Models
-* (Cisco name: Generative AI and ChatGPT)
+# Generative AI and ChatGPT
+* (Cisco catalog)
 
 (C) Copyright Elephant Scale
 
-April 13, 2023
+April 15, 2023
 
 ## Course Description
 
-* OpenAI with ChatGPT is eating the world with over a hundred million of users, and HuggingFace is the most popular library for Deep Learning, based on Transformer Neural Network, and containing inside Keras and PyTorch,
+* OpenAI with ChatGPT is eating the world with over a hundred million of users.
 * This course introduces the students to Neural Networks, OpenAI, and AI in general. Then it goes into ChatGPT4 and teaches how humans should use it. This is called prompts engineering.
 * Then it shows how to build applications on top of ChatGCP with the use of additional private company documents.
-* Finally, the students learn about the use of the HuggingFace library to evaluate and integrate ChatGCP competitors.
+* Finally, the students learn about the use of the HuggingFace library to evaluate and integrate ChatGCP alternatives.
 
 
 ## After the course, you will be able to do the following tasks
@@ -25,11 +25,11 @@ April 13, 2023
 
 ## Skill Level
 
-* Beginner (day 1) to intermediate (days 2 and 3)
+* Intermediate
 
 ## Duration
 
-* Two or Three days
+* Two days
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ April 13, 2023
 
 ## Detailed outline
 
-### Introduction to Prompt Engineering
+### Introduction to Prompt Engineering for ChatGPT4
 
 * Definition and overview of prompt engineering
 * Importance of prompt engineering in AI language models
@@ -67,41 +67,27 @@ April 13, 2023
 * Objective and subjective evaluation methods
 * Identifying and addressing biases
 
-### Main NLP tasks
-* Token classification
-* Fine-tuning a masked language model
-* Translation
-* Summarization
-* Training a causal language model from scratch
-* Question answering
-* Mastering NLP
-
-### HuggingFace
-
-* Transformers
-* Encoders
-* Decoders
-* Sequence to sequence
-* Bias and limitations
-* Pipeline
-* Models
-* Tokenizers
-* Putting it all together
 
 
-### Fine tuning a pretrained model
-* Processing the data
-* Fine-tuning a model with the Trainer API or Keras
-* A full training
+### Fine tuning GPT4
+* Preparing additional data for GPT4
+* Using ChatGPT4 API to train on additional data
+* Testing the fine-tuned model
 
-###  ChatGPT competitors and derivatives
+### Using ChatGPT 3.5 and 4. with enterprise proprietary data
+
+* Guarantees for data privacy that OpenAI gives for ChatGPT3.5 and 4
+* How to add private documents to ChatGPT using Azure
+* Approaches to private documents without using Azure
+
+###  ChatGPT alternatives
+
+* Current states of GPT4 vs competitors
+* OpenAI Playground
 * Bing Chat
 * Chatsonic
 * Jasper Chat
 * Google Bard AI
-* Character AI
-* YouChat
-* OpenAI Playground
 
 ### Our references (not to send)
 
@@ -130,3 +116,5 @@ April 13, 2023
   * https://github.com/nomic-ai/gpt4all
 * Vicunia
   * https://pub.towardsai.net/meet-vicuna-the-latest-metas-llama-model-that-matches-chatgpt-performance-e23b2fc67e6b
+* Character AI
+* YouChat

@@ -28,7 +28,7 @@ April 13, 2023
 
 ## Duration
 
-* Two or Three days
+* Three days
 
 ## Prerequisites
 
