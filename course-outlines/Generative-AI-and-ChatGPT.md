@@ -89,7 +89,7 @@ April 15, 2023
 * Jasper Chat
 * Google Bard AI
 
-### Our references (not to send)
+### Our references (not to distribute)
 
 * [A Crash Course on Chat GPT for Beginners](https://www.youtube.com/watch?v=JTxsNm9IdYU)
 * [Advanced ChatGPT Prompt Engineering Course](https://www.youtube.com/watch?v=-C4FCxP-QqE)
