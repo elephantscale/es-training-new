@@ -89,32 +89,3 @@ April 15, 2023
 * Jasper Chat
 * Google Bard AI
 
-### Our references (not to distribute)
-
-* [A Crash Course on Chat GPT for Beginners](https://www.youtube.com/watch?v=JTxsNm9IdYU)
-* [Advanced ChatGPT Prompt Engineering Course](https://www.youtube.com/watch?v=-C4FCxP-QqE)
-* Radford, A., et al. "Language Models are Few-Shot Learners." OpenAI, 2020.
-* Brown, T.B., et al. "AI Dungeon: Exploring Large Generative Language Models Through Interactive Play." NeurIPS, 2021.
-* Liu, Y., et al. "RoBERTa: A Robustly Optimized BERT Pretraining Approach." arXiv, *OpenAI. "How to Make Good Prompts for GPT-3." OpenAI Blog, 2020.
-* Tam, D. "An Introduction to Prompt Engineering." Towards Data Science, 2021.
-* Gao, X., et al. "Making Pre-trained Language Models Better Few-shot Learners." arXiv, 2021.
-* Nie, Y., et al. "Adapting Open Domain Fact Extraction and Verification to COVID-FACT through In-Domain Language Modeling." ACL, 2021.
-* GPT-3 Creative Fiction. "Crafting Stories with GPT-3." GPT-3 Creative Fiction, 2020.
-* Zhang, R., et al. "PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization." ICML, 2020.
-* DialoGPT
-* Can ChatGPT work with your enterprise data?
-  * https://www.youtube.com/watch?v=tW2EA4aZ_YQ&t=8s
-  * Key moment: at 2 min
-
-* Alpaca from Stanford
-  * https://crfm.stanford.edu/2023/03/13/alpaca.html
-* LLama from Facebook
-  * https://ai.facebook.com/blog/large-language-model-llama-meta-ai/
-* Dolly from Databricks
-* https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html
-* Nomic
-  * https://github.com/nomic-ai/gpt4all
-* Vicunia
-  * https://pub.towardsai.net/meet-vicuna-the-latest-metas-llama-model-that-matches-chatgpt-performance-e23b2fc67e6b
-* Character AI
-* YouChat
