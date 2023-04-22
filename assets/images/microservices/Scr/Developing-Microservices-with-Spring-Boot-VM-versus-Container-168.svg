@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-271 -118 1434 938" width="1434" height="938">
+  <defs>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-04-17 10:51:36 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_18">
+        <rect x="-268.9924" y="492.5592" width="652.86685" height="161.27366" fill="#aa97fe" fill-opacity=".420375"/>
+        <rect x="-268.9924" y="492.5592" width="652.86685" height="161.27366" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-263.99242 548.696)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="215.03693" y="40">Server H/W</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <rect x="-268.9924" y="331.28554" width="652.86685" height="161.27366" fill="#aa97fe" fill-opacity=".7602905"/>
+        <rect x="-268.9924" y="331.28554" width="652.86685" height="161.27366" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-263.99242 387.42236)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="102.24396" y="40">Host Operating System</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <rect x="-268.9924" y="168.95615" width="652.86685" height="161.27366" fill="#a583ff"/>
+        <rect x="-268.9924" y="168.95615" width="652.86685" height="161.27366" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-263.99242 225.09298)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="219.83185" y="40">Hypervisor</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <rect x="-268.9924" y="53.26012" width="204.0209" height="114.64031" fill="#ebdea6"/>
+        <rect x="-268.9924" y="53.26012" width="204.0209" height="114.64031" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-263.99242 61.58027)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="40.61396" y="40">Guest</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="69.81318" y="89">OS</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <rect x="-44.569436" y="53.26012" width="204.0209" height="114.64031" fill="#ebdea6"/>
+        <rect x="-44.569436" y="53.26012" width="204.0209" height="114.64031" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-39.569436 61.58027)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="40.61396" y="40">Guest</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="69.81318" y="89">OS</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <rect x="179.85354" y="53.26012" width="204.0209" height="114.64031" fill="#ebdea6"/>
+        <rect x="179.85354" y="53.26012" width="204.0209" height="114.64031" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(184.85354 61.58027)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="40.61396" y="40">Guest</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="69.81318" y="89">OS</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="-268.9924" y="-115.78576" width="204.0209" height="155.44449" fill="#a4f8fd"/>
+        <rect x="-268.9924" y="-115.78576" width="204.0209" height="155.44449" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-263.99242 -87.06352)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="55.80927" y="40">App</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="35.018257" y="89">bin/lib</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <rect x="-44.569436" y="-115.78576" width="204.0209" height="155.44449" fill="#a4f8fd"/>
+        <rect x="-44.569436" y="-115.78576" width="204.0209" height="155.44449" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-39.569436 -87.06352)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="55.80927" y="40">App</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="35.018257" y="89">bin/lib</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="179.85354" y="-117.1567" width="204.0209" height="155.44449" fill="#a4f8fd"/>
+        <rect x="179.85354" y="-117.1567" width="204.0209" height="155.44449" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(184.85354 -88.43445)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="55.80927" y="40">App</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="35.018257" y="89">bin/lib</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(-174.17849 742.5558)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">A) Virtual Machine Stack</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="509.1832" y="493.0428" width="652.86685" height="161.27366" fill="#aa97fe" fill-opacity=".420375"/>
+        <rect x="509.1832" y="493.0428" width="652.86685" height="161.27366" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(514.1832 549.1796)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="215.03693" y="40">Server H/W</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="509.1832" y="331.76914" width="652.86685" height="161.27366" fill="#aa97fe" fill-opacity=".7602905"/>
+        <rect x="509.1832" y="331.76914" width="652.86685" height="161.27366" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(514.1832 387.90597)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="102.24396" y="40">Host Operating System</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <rect x="509.1832" y="169.43976" width="652.86685" height="161.27366" fill="#996ef5"/>
+        <rect x="509.1832" y="169.43976" width="652.86685" height="161.27366" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(514.1832 225.57659)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="191.84357" y="40">Container SW</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="509.1832" y="13.99527" width="204.0209" height="155.44449" fill="#a4f8fd"/>
+        <rect x="509.1832" y="13.99527" width="204.0209" height="155.44449" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(514.1832 42.717514)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="55.80927" y="40">App</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="35.018257" y="89">bin/lib</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="733.6062" y="13.99527" width="204.0209" height="155.44449" fill="#a4f8fd"/>
+        <rect x="733.6062" y="13.99527" width="204.0209" height="155.44449" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(738.6062 42.717514)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="55.80927" y="40">App</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="35.018257" y="89">bin/lib</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="958.0292" y="13.99527" width="204.0209" height="155.44449" fill="#a4f8fd"/>
+        <rect x="958.0292" y="13.99527" width="204.0209" height="155.44449" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(963.0292 42.717514)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="55.80927" y="40">App</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="35.018257" y="89">bin/lib</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(663.9874 754.2141)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">B) Container Stack</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
