@@ -1,4 +1,4 @@
-# Quantum Computing
+# Prompt Engineering, ChatGPT, Generative Models
 
 
 ---

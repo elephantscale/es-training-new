@@ -78,7 +78,7 @@ April 15, 2023
 
 * Guarantees for data privacy that OpenAI gives for ChatGPT3.5 and 4
 * How to add private documents to ChatGPT using Azure
-* Approaches to private documents without using Azure
+* Approaches to private documents **without** using Azure
 
 ###  ChatGPT alternatives
 

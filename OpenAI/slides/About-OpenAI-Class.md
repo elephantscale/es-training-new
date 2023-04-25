@@ -1,15 +1,15 @@
-# Deep Learning & Advanced Applications
+# Deep Learning, HuggingFace, & OpenAI
 
 ---
 
-## Agenda - Deep Learning & Advanced Applications
+## Agenda - Deep Learning, HuggingFace, & OpenAI
 
-| Day 1                         | Day 2                          |
-|-------------------------------|--------------------------------|
-| Introduction to Deep Learning | Fine tuning a pretrained model |
-| Computer Vision CNN           | Sharing models and tokenizers  |
-| Recurrent Neural Networks RNN | Main NLP Tasks                 |
-| Transformers                  | Asking for Help                |
+| Day 1                         | Day 2                        |
+|-------------------------------|------------------------------|
+| Introduction to Deep Learning | OpenAI, ChatGPT              |
+| CNN, RNN                      | Fine-tuning with HuggingFace |
+| Transformers                  | Fine-tuning with ChatGPT     |
+| HuggingFace                   | Integrations                 |
 
 
  <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
@@ -18,21 +18,6 @@ Notes:
 
 ---
 
-## Agenda - 2 days of HuggingFace
-
-| Day 1                        | Day 2                  |
-|------------------------------|------------------------|
-| Introduction to Transformers | The Datasets Library   |
-| Transformer Pipelines        | The Tokenizers Library |
-| Fine-Tuning                  | Main NLP Tasks         |
-| Sharing Models               | Asking for Help        |
-
-
- <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
-
-Notes:
-
----
 ## Pre-requisites and Expectations
 
 
@@ -48,7 +33,7 @@ Notes:
 
    - Ask a lot of questions 
 
- * This is a Deep Learning & Advanced Applications based on HuggingFace class
+ * This is a Deep Learning, HuggingFace, & OpenAI
    - No previous knowledge is assumed (but may be helpful) 
    - Class will be based on the pace of majority of the students
 ![](../images/01-openai-logo.png)
@@ -130,7 +115,7 @@ Notes:
      - Your Name
      - Your background (developer, admin, manager, ...)
      - Technologies you are familiar with
-     - Familiarity with ML and HuggingFace (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Familiarity with ML, HuggingFace, OpenAI (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.08, "top" : 6.08, "height" : 1.99, "width" : 2.25} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.36, "top" : 6.1, "height" : 1.92, "width" : 3.54} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 6.08, "height" : 1.99, "width" : 2.25} -->

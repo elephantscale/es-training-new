@@ -1,4 +1,3 @@
 About-OpenAI-Class.md
-Fine-Tuning.md
 How-ChatGPT-Works.md
-Applications-of-chatgpt.md
+Fine-Tuning.md

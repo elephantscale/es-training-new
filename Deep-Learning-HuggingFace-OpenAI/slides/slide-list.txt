@@ -1,11 +1,2 @@
-About-HF-Class.md
-Transformer-Models.md
-Transformer-Pipelines.md
-Fine-Tuning.md
-Sharing-Models.md
-The-Datasets-Library.md
-The-Tokenizers-Library.md
-Main-NLP-Tasks.md
-Asking-for-Help.md
-Building-Demos.md
-
+About-HuggingFace-OpenAI-Class.md
+Workshop.md

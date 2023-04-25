@@ -1,8 +1,8 @@
-# Deep Learning & Advanced Applications
+# About HuggingFace OpenAI Class
 
 ---
 
-## Agenda - Deep Learning & Advanced Applications
+## Agenda - About HuggingFace OpenAI
 
 | Day 1                         | Day 2                          |
 |-------------------------------|--------------------------------|
@@ -102,8 +102,6 @@ Notes:
 
 Notes:
 
-
-
 ---
 
 ## + Flight Time
@@ -113,14 +111,9 @@ Notes:
 
 ---
 
-## This Will Take A Lot Of Practice 
-
-
+## This Will Take A Lot Of Practice
 
 <img src="../../assets/images/about/practice.png" style="width:70%;"/> <!-- {"left" : 0.69, "top" : 2.06, "height" : 5.63, "width" : 8.87} -->
-
-
-
 
 ---
 ## About You And Me
@@ -130,7 +123,7 @@ Notes:
      - Your Name
      - Your background (developer, admin, manager, ...)
      - Technologies you are familiar with
-     - Familiarity with ML and HuggingFace (scale of 1 - 4 ;  1 - new,   4 - expert)
+     - Familiarity with ML, HuggingFace, and OpenAI (scale of 1 - 4 ;  1 - new,   4 - expert)
      - Something non-technical about you!(favorite ice cream flavor / hobby...)
 
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.08, "top" : 6.08, "height" : 1.99, "width" : 2.25} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.36, "top" : 6.1, "height" : 1.92, "width" : 3.54} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 6.08, "height" : 1.99, "width" : 2.25} -->
