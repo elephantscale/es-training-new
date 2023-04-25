@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-94 385 1175 140" width="1175" height="140">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-5 -3 6 6" markerWidth="6" markerHeight="6" color="#0061ff">
+      <g>
+        <path d="M -3.2 0 L 0 1.2 L 0 -1.2 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Century Gothic" font-size="40" panose-1="2 11 7 2 2 2 2 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="531.25" cap-height="718.2617" ascent="1005.8594" descent="-220.21484" font-weight="700">
+      <font-face-src>
+        <font-face-name name="CenturyGothic-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2023-04-19 07:25:48 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M -82.57212 385.5 L 243.59135 385.5 C 249.1142 385.5 253.59135 389.97715 253.59135 395.5 L 253.59135 514.5 C 253.59135 520.02285 249.1142 524.5 243.59135 524.5 L -82.57212 524.5 C -88.09496 524.5 -92.57212 520.02285 -92.57212 514.5 L -92.57212 395.5 C -92.57212 389.97715 -88.09496 385.5 -82.57212 385.5 Z" fill="#ebdea6"/>
+        <path d="M -82.57212 385.5 L 243.59135 385.5 C 249.1142 385.5 253.59135 389.97715 253.59135 395.5 L 253.59135 514.5 C 253.59135 520.02285 249.1142 524.5 243.59135 524.5 L -82.57212 524.5 C -88.09496 524.5 -92.57212 520.02285 -92.57212 514.5 L -92.57212 395.5 C -92.57212 389.97715 -88.09496 385.5 -82.57212 385.5 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 743.40865 385.5 L 1069.5721 385.5 C 1075.095 385.5 1079.5721 389.97715 1079.5721 395.5 L 1079.5721 514.5 C 1079.5721 520.02285 1075.095 524.5 1069.5721 524.5 L 743.40865 524.5 C 737.8858 524.5 733.40865 520.02285 733.40865 514.5 L 733.40865 395.5 C 733.40865 389.97715 737.8858 385.5 743.40865 385.5 Z" fill="#a4f8fd"/>
+        <path d="M 743.40865 385.5 L 1069.5721 385.5 C 1075.095 385.5 1079.5721 389.97715 1079.5721 395.5 L 1079.5721 514.5 C 1079.5721 520.02285 1075.095 524.5 1069.5721 524.5 L 743.40865 524.5 C 737.8858 524.5 733.40865 520.02285 733.40865 514.5 L 733.40865 395.5 C 733.40865 389.97715 737.8858 385.5 743.40865 385.5 Z" stroke="#02329a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_5">
+        <line x1="714.50865" y1="455" x2="253.59135" y2="455" marker-start="url(#FilledArrow_Marker)" stroke="#0061ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(-51.502103 406)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="46.796875" y="40">Revenue</tspan>
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="89">Management</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(827.6818 430.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Booking</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="353" y="425.5" width="267.59766" height="59" fill="white"/>
+        <text transform="translate(358 430.5)" fill="#2e006e">
+          <tspan font-family="Century Gothic" font-size="40" font-weight="700" fill="#2e006e" x="0" y="40">Get Bookings</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

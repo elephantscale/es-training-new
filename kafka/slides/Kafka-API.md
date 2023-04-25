@@ -2058,11 +2058,12 @@ Notes:
 ```java
 // Subscribe to 1 topic
 Dataset<Row> df = spark
-  .readStream()
-  .format("kafka")
-  .option("kafka.bootstrap.servers", "host1:port1,host2:port2")
-  .option("subscribe", "topic1")
-  .load();
+                        .readStream()
+                        .format("kafka")
+                        .option("kafka.bootstrap.servers", "host1:port1,host2:port2")
+                        .option("subscribe", "topic1")
+                        .load();
+
 df.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)");
 
 // once a dataframe is established, we can query it
