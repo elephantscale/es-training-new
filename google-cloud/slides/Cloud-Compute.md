@@ -42,20 +42,48 @@ Notes:
 
 ## Machine Types
 
-|                   | E2 (beta) General purpose                                                                                                                         | N1, N2 General purpose                                                         | M1, M2 Memory-Optimized                                               | C2 Compute-Optimized                                            |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------|
-| Description       | Day-to-day computing at a lower cost                                                                                                              | Balanced price/performance across a wide range of VM shapes                    | Ultra high-memory workloads                                           | Ultra high performance for compute-intensive workloads          |
-| Example workloads | - Web serving <br/> - App serving <br/> - Small-medium databases <br/> - Microservices <br/> - Virtual desktops <br/> - Development environments | - Web serving <br/> - App serving <br/> - Medium-Large databases <br/> - Cache | - Large in-memory databases like SAP HANA <br/> - In-memory analytics | - HPC <br/> - Electronic Design Automation (EDA) <br/> - Gaming |
+* There are 3 kinds of machine types offered:
+    - General purpose 
+    - Memory optimized
+    - Compute optimized
 
-<!-- {"left" : 0.25, "top" : 1.26, "height" : 5.3, "width" : 9.75} -->
+---
 
-<br />
-<br />
+### General Purpose
 
-[https://cloud.google.com/compute/docs/machine-types](https://cloud.google.com/compute/docs/machine-types)
+* Day-to-day computing at a lower cost
+* Web servers, small databases
+
+
+---
+
+### Memory Optimized
+
+* High memory to CPU ratio
+* In-memory databases, real-time analytics
+
+---
+
+### Compute Optimized
+
+* High CPU to memory ratio
+* Compute-intensive workloads, batch processing
+* Machine learning, high-performance computing (HPC)
+* Video encoding, gaming, scientific modeling
+* Ad serving, highly scalable multiplayer gaming
+* Dedicated physical servers
+
+---
+
+## Machine Types
+
+
+[https://cloud.google.com/compute/docs/machine-types](https://cloud.google.com/compute/docs/machine-resource#recommendations_for_machine_types)
 ---
 
 ## Sample Machine Configurations
+
+
 
 | Machine Type           | vCPUs    | memory / vCPUs |
 |------------------------|----------|----------------|
@@ -68,7 +96,7 @@ Notes:
 
 <br />
 
-[https://cloud.google.com/compute/docs/machine-types](https://cloud.google.com/compute/docs/machine-types)
+[https://cloud.google.com/compute/docs/machine-types](https://cloud.google.com/compute/docs/machine-resource#machine_type_comparison)
 
 ---
 ## Disks
@@ -102,14 +130,16 @@ Notes:
 
 ---
 
-## Preemptible VMs
+## Spot VMs
+
+* Used to be called Preemptible VMs
 
 * Typically VM instances run until shutdown
 
 * Their cost is fixed per hr
   - You can get discount if you commit to longer period
 
-* Preemptible VMs can be 'taken away from you' with a 30 second notice!
+* Spot VMs can be 'taken away from you' with a 30 second notice!
 
 * You get a huge discount on pricing (upto 80% off)
 
@@ -117,10 +147,10 @@ Notes:
     - runs as a cluster
     - can tolerate failures
 
-* https://cloud.google.com/preemptible-vms/
+* https://cloud.google.com/spot-vms
 
 ---
-## Design Lab: A Preemptible VM  Use Case
+## Design Lab: A Spot VM  Use Case
 
 <img src="../../assets/images/icons/group-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.43, "top" : 1.15, "height" : 2.71, "width" : 3.74} -->
 
@@ -136,7 +166,7 @@ Notes:
 
 ---
 
-## Solution with Preemptible VMs
+## Solution with Spot VMs
 
 * Our processing pool consists of
     - a few VMs that are permanent (these run 24x7)

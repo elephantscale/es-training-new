@@ -38,7 +38,7 @@
 
 <img src="../../assets/images/google-cloud/3rd-party/gartner-quadrant-cloud.jpg" style="width:50%;float:right;" /><!-- {"left" : 5.8, "top" : 1.04, "height" : 4.64, "width" : 4.44} -->  
 
-- Source: [Gartner Magic Quadrant for Cloud Infrastructure as a Service 2019](https://cloud.google.com/gartner-cloud-infrastructure-as-a-service/)
+- Source: [Gartner Magic Quadrant for Cloud Infrastructure as a Service 2022](https://cloud.google.com/resources/gartner-cloud-infrastructure-and-platform-services-2022)
 
 ---
 

@@ -15,11 +15,14 @@
 
 * Pretty much 'unlimited' storage (kilobytes to exabytes)
 
-* Built it data protection (backups, data guarantee ..etc)
+* Built in data protection (backups, data guarantee ..etc)
 
-* Pay as you use
+* Pay as you use(GB/month)
 
-* Multiple storage classes for any workload
+* Multiple storage classes for any workload (Status, Nearline, Coldline, Archive)
+
+* Integrated with other Google Cloud services(Compute, Big Data, Machine Learning ..etc)
+
 
 
 ---
@@ -89,24 +92,30 @@
 * __Standard Storage:__
     - Frequently accessed data (hot data)
     - 99.99%  availability
+    - "Hot" data, including websites, streaming videos, and mobile apps.
 * __Nearline Storage:__
     - Infrequently accessed data ( )
     - Suited for archival, backup, long tail media storage
+    - Data that can be stored for 30 days.
 * __Coldline Storage:__
     - Suited for archival
     - Very low cost storage
+    - Data that can be stored for 90 days
 * __Archival Storage:__
     - Cheapest storage
     - Data stored for legal / regulatory reasons, but not accessed frequently
+    - Data that can be stored for 365 days.
 * Reference : https://cloud.google.com/storage/
 
 ---
 
 ## Pricing
 
-* Prices vary according amount of data / discounts ..etc.  The following will give you some idea
+**IMPORTANT**
 
-* Storage fees
+Prices vary according amount of data / discounts ..etc.  The following will give you some idea
+
+Storage fees
 
 |          | Standard Storage | Nearline | Coldline | Archival |
 |----------|------------------|----------|----------|----------|
@@ -115,10 +124,10 @@
 <!-- {"left" : 0.77, "top" : 3.95, "height" : 1, "width" : 15.95} -->  
 
 
+Egress / Ingress fees
 
-* Egress / Ingress fees
-    - Within same region: FREE
-    - Across region: ~ 1c / GB
+  - Within same region: FREE
+  - Across region: ~ 1c / GB
 
 ---
 
