@@ -1,9 +1,9 @@
 # to generate slides
 #       ./gen.sh
 
-#Intro.md
-#ansible-basic.md
+Intro.md
+ansible-basic.md
 #ansible-playbook.md
-#ansible-galaxy.md
+ansible-galaxy.md
 
-ansible-playbook-test.md
+#ansible-playbook-test.md
