@@ -5,5 +5,3 @@ Intro.md
 ansible-basic.md
 #ansible-playbook.md
 ansible-galaxy.md
-
-#ansible-playbook-test.md
