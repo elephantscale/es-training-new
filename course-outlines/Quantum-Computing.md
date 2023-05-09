@@ -1,4 +1,4 @@
-# Quantum Computing for Classical Programmers
+# Introduction to Quantum Computing 
 © Elephant Scale
 
 October 01, 2022
