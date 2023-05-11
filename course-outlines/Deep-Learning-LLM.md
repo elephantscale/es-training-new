@@ -1,14 +1,13 @@
-# Deep Learning, Generative AI, and LLM
-* (Cisco catalog)
+# Deep Learning and LLM
 
 (C) Copyright Elephant Scale
-May 10, 2023
+May 11, 2023
 
 ## Course Description
 
 * Large Language Models (LLM) are taking the world by storm.
 * HuggingFace provides libraries and a place to put LLMs in production.
-* This course introduces the students to AI and Neural Networks, Generative AI, and LLMs. 
+* This course introduces the students to AI, Neural Networks, and LLMs. 
 
 ## After the course, you will be able to do the following tasks
 
