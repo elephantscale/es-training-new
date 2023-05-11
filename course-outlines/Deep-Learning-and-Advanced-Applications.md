@@ -3,7 +3,7 @@
 * (ES catalog: Deep Learning & Advanced Applications with HuggingFace)
 
 (C) Copyright Elephant Scale
-April 15, 2023
+May 10, 2023
 
 ## Course Description
 
@@ -88,7 +88,7 @@ with a practical reasonable expense of time and resources.
 - Lab: RNNs for text and sequence prediction
 
 
-### Transformers
+### HuggingFace 
 
 * Transformers
 * Encoders
