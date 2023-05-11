@@ -119,6 +119,3 @@ with a practical reasonable expense of time and resources.
 * Training a causal language model from scratch
 * Question answering
 * Mastering NLP
-
-## Ref (internal, not for students)
-* https://huggingface.co/course/chapter1/1
