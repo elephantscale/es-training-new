@@ -2,13 +2,13 @@
 * (Cisco catalog)
 
 (C) Copyright Elephant Scale
-March 16, 2023
+May 10, 2023
 
 ## Course Description
 
 * Large Language Models (LLM) are taking the world by storm.
 * HuggingFace provides libraries and a place to put LLMs in production.
-* This course introduces the students to AI and Neural Networks. 
+* This course introduces the students to AI and Neural Networks, Generative AI, and LLMs. 
 
 ## After the course, you will be able to do the following tasks
 
@@ -84,7 +84,7 @@ March 16, 2023
 * Mastering NLP
 
 ### Open LLM
-* Over of LLMs available
+* Overview of LLMs available
 * Comparison of capabilities
 * Evaluating and fine-tuning an LLM
 * Alpaca from Stanford
