@@ -1,4 +1,4 @@
-# Introduction to Quantum Computing 
+# Quantum Computing Fundamentals 
 © Elephant Scale
 
 May 11, 2023
