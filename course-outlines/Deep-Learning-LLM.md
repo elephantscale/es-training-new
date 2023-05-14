@@ -1,4 +1,5 @@
 # Deep Learning and LLM
+(Cisco catalog: Deep Learning and LLM)
 
 (C) Copyright Elephant Scale
 May 11, 2023
@@ -63,7 +64,7 @@ May 11, 2023
 ### HuggingFace offering
 
 * Transformers library
-* Models, 
+* Models 
 * Putting it all together
 
 
