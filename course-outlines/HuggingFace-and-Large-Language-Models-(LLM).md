@@ -1,6 +1,5 @@
 # Deep Learning & Advanced Applications
 * (Cisco catalog: Deep Learning & Advanced Applications )
-* (ES catalog: HuggingFace and Large Language Models (LLM))
 
 (C) Copyright Elephant Scale
 May 10, 2023
