@@ -38,3 +38,12 @@
 
 ---
 
+# Prompt injection
+
+## Prompt injection is hacking
+
+* https://www.youtube.com/watch?v=FgxwCaL6UTA
+
+---
+
+---
