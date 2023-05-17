@@ -1,8 +1,17 @@
 # HuggingFace and Large Language Models (LLM)
-* (Cisco catalog: Deep Learning & Advanced Applications )
+* (Cisco catalog: Deep Learning & Advanced Applications)
 
 (C) Copyright Elephant Scale
-May 10, 2023
+May 16, 2023
+
+## What's new in this outline
+* Added new capabilities of HuggingFace:
+  * Spaces
+  * Inference Endpoints
+  * Autotrain
+* Workshop
+  * Optimize the output of large pre-trained models
+  * Deploy your LLM to HuggingFace with Spaces
 
 ## Course Description
 
@@ -118,3 +127,7 @@ with a practical reasonable expense of time and resources.
 * Training a causal language model from scratch
 * Question answering
 * Mastering NLP
+
+### Workshop: Deploying your own LLM to HuggingFace
+* Optimize the output of large pre-trained models
+* Deploy your LLM to HuggingFace with Spaces
