@@ -1,7 +1,13 @@
 # Quantum Computing Fundamentals 
 © Elephant Scale
 
-May 11, 2023
+May 16, 2023
+
+## What's new in this outline
+* Positioning: looking towards toward the future and preparing for it now, rather than concentrating on the details of quantum computing programming. 
+* Quantum Computing programming is still taught, but to explain the fundamentals rather than learning to write Quantum Computing applications.
+* Added more fundamentals of quantum physics and architecture of quantum computers.
+* Added overview of potentials quantum computing applications, with examples.
 
 ## Overview
 
