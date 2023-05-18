@@ -2,7 +2,15 @@
 (Cisco catalog: Deep Learning and LLM)
 
 (C) Copyright Elephant Scale
-May 11, 2023
+May 16, 2023
+
+## What's new in this outline
+
+* Remove references to OpenAI and ChatGPT
+* Pay attention to environmental and ethical aspects of Large Language Models (LLM)
+* Condense overview of AI history
+* Concentrate on practical use of LLM with HuggingFace
+* Overview of open-source LLM
 
 ## Course Description
 
@@ -91,6 +99,6 @@ May 11, 2023
 * LLama from Facebook
 * Dolly from Databricks
 * Nomic
-* Vicunia
+* Vicuna
 
 
