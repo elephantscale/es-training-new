@@ -34,10 +34,6 @@
 
 ---
 
-# Conclusion
-
----
-
 # Prompt injection
 
 ## Prompt injection is hacking
@@ -74,4 +70,57 @@
 ![](../images/08-Sidney.png)
 
 ---
+
+## Sidney hack code
+![](../images/10-signey-hack.png)
+
+---
+
+## Danger - Tools
+![](../images/11-danger-tools.png)
+
+---
+
+## Email hijack
+
+![](../images/12-email-forward.png)
+
+---
+
+
+## Solutions?
+
+![](../images/13-solutions.png)
+
+---
+## Prompt begging
+
+![](../images/14-prompt-begging.png)
+
+---
+
+## Answer :)
+
+![](../images/15-answer.png)
+
+---
+
+## Wean away from AI
+
+![](../images/16-tweet.png)
+
+---
+
+## Approach 1
+
+![](../images/17-approach1.png)
+
+---
+
+## Simon Willison solution
+
+![](../images/18-simon-willison-solution.png)
+
+---
+
 
