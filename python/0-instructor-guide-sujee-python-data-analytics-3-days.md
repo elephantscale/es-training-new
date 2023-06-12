@@ -11,12 +11,12 @@ Very lab heavy.  Slides are : 0-slide-order-data-analytics-with-python-sujee.txt
 
 ## Day 2
 
-* Numpy
-* Pandas
+* Numpy (quick intro then labs)
+* Pandas (quick intro + then labs )
 
 ## Day 3
 
-* Visualization
-* Data Exploration
-* Data Wrangling
+* Visualization (labs only)
+* Data Wrangling (labs only)
+* Data Exploration (slides + lab)
 

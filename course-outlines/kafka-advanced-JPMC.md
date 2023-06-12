@@ -35,7 +35,7 @@ Developers, Architects, Data Engineers
 
 ## Duration
 
-5 half day sessions
+4 half day sessions
 
 ## Format
 
