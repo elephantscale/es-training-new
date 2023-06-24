@@ -2,7 +2,7 @@
 (Cisco catalog: Deep Learning and LLM)
 
 (C) Copyright Elephant Scale
-May 16, 2023
+June 23, 2023
 
 ## What's new in this outline
 
