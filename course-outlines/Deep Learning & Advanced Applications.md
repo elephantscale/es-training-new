@@ -1,29 +1,19 @@
-# Deep Learning and LLM
-(Cisco catalog (updated, not accepted yet): Deep Learning and LLM)
+# Deep Learning & Advanced Applications
+* (Cisco catalog (original): Deep Learning & Advanced Applications
 
-(C) Copyright Elephant Scale
-June 23, 2023
+(C)Copyright Elephant Scale
 
-## What's new in this outline
-
-* Remove references to OpenAI and ChatGPT
-* Pay attention to environmental and ethical aspects of Large Language Models (LLM)
-* Condense overview of AI history
-* Concentrate on practical use of LLM with HuggingFace
-* Overview of open-source LLM
+August 14, 2022
 
 ## Course Description
 
-* Large Language Models (LLM) are taking the world by storm.
-* HuggingFace provides libraries and a place to put LLMs in production.
-* This course introduces the students to AI, Neural Networks, and LLMs. 
+* Today, Deep Learning can accomplish results that are nothing short of miraculous. 
+In this course, we assume that you do not want to re-invent wheels. Rather, you want to know what is
+available as low-hanging fruit. In other words, you are looking for magic but you don't want to compete with
+teams who create this magic. You want to partner with them and achieve the same quality results but
+with a practical reasonable expense of time and resources.
 
-## After the course, you will be able to do the following tasks
-
-* Evaluate LLM models
-* Put the models in production
-* Use HuggingFace as a possible implementation platform
-
+  
 ## Course objectives
 * By the end of this course, students will know...
 * How to understand the current state of the art in Deep Learning and AI
@@ -63,16 +53,37 @@ June 23, 2023
 
 ### Introduction to Deep Learning
 - Understanding Deep Learning use cases
-- Overview of Neural Networks: NN, CNN, RNN.
+- Understanding AI / Machine Learning / Deep Learning
+- Data and AI
+- AI vocabulary
+- Hardware and software ecosystem
+- Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
 
-### Prompt engineering for LLM's
-* Best practices
-* Practical advice
+### Computer Vision
+- Introducing Convolutional Neural Networks (CNN)
+- CNN architecture
+- CNN concepts
+- Lab: Image recognition using CNNs
 
-### HuggingFace offering
+### Recurrent Neural Networks
+- Introducing RNNs
+- RNN architecture
+- RNN concepts
+- LSTM (Long Short Term Memory) networks
+- LSTM architecture
+- Lab: RNNs for text and sequence prediction
 
-* Transformers library
-* Models 
+
+### HuggingFace 
+
+* Transformers
+* Encoders
+* Decoders
+* Sequence to sequence
+* Bias and limitations
+* Pipeline
+* Models
+* Tokenizers
 * Putting it all together
 
 
@@ -81,6 +92,10 @@ June 23, 2023
 * Fine-tuning a model with the Trainer API or Keras
 * A full training
 
+### Sharing models and tokenizers 
+* The Hugging Face Hub
+* Using pretrained models
+* Sharing pretrained models
 
 ### Main NLP tasks
 * Token classification
@@ -90,15 +105,4 @@ June 23, 2023
 * Training a causal language model from scratch
 * Question answering
 * Mastering NLP
-
-### Open LLM
-* Overview of LLMs available
-* Comparison of capabilities
-* Evaluating and fine-tuning an LLM
-* Alpaca from Stanford
-* LLama from Facebook
-* Dolly from Databricks
-* Nomic
-* Vicuna
-
 

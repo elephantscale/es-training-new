@@ -1,5 +1,5 @@
 # HuggingFace and Large Language Models (LLM)
-* (Cisco catalog: Deep Learning & Advanced Applications)
+* (Cisco catalog (updated): Deep Learning & Advanced Applications)
 
 (C) Copyright Elephant Scale
 May 16, 2023
