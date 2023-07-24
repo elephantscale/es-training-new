@@ -1,40 +1,6 @@
-# Prompt Engineering
+# Prompt Hacking
 
 ---
-
-# Introduction
-
----
-
-# Guidelines
-
----
-
-# Iterative
-
----
-
-# Summarizing
-
----
-
-# Inferring
-
----
-
-# Transforming
-
----
-
-# Expanding
-
----
-
-# Chatbot
-
----
-
-# Prompt injection
 
 ## Prompt injection is hacking
 
