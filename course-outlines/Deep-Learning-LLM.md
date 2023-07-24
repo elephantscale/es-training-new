@@ -1,5 +1,6 @@
 # Deep Learning and LLM
-(Cisco catalog (updated, not accepted yet): Deep Learning and LLM)
+(Cisco catalog: Deep Learning and LLM)
+(This is the HuggingFace course, with some outline modification)
 
 (C) Copyright Elephant Scale
 June 23, 2023
