@@ -18,6 +18,15 @@
 ---
 
 # Comparison of capabilities
+
+## Robot NEO
+
+* Robot
+* https://www.youtube.com/watch?v=TJbqLD3UV5Y
+
+---
+
+
 # Evaluating and fine-tuning an LLM
 # Alpaca from Stanford
 # LLama from Facebook
