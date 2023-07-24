@@ -1,12 +1,29 @@
 # Open LLM
 
 # Overview of LLMs available
+
+## Bard
+
+* Building with BARD
+* https://docs.google.com/document/d/1vdkkpAv6coTaayaot7k2JPgRwOVCQ9Lq/edit?usp=drive_link&ouid=115616987415559963783&rtpof=true&sd=true
+* Makersuite
+
+---
+
+## Clause
+
+* Building with Claude
+* https://docs.anthropic.com/claude/docs
+
+---
+
 # Comparison of capabilities
 # Evaluating and fine-tuning an LLM
 # Alpaca from Stanford
 # LLama from Facebook
 # Dolly from Databricks
 # Nomic
+
 
 # Vicuña
 
