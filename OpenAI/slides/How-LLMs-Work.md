@@ -1,25 +1,4 @@
-# How ChatGPT works
-
----
-
-# Introduction
-
-## Setting the question
-
-* Public has been playing with ChatGPT
-* Seeing what it can do
-* But how does it really work
-* While the details of its inner workings have not been published, 
-  * we can piece together its functioning principles from recent research.
-  
-
-  ![](../images/02-romponi.png)
-
----
-
-## AssemblyAI
-
-![](../images/03-assemblyai.png)
+# How LLMs work
 
 ---
 
@@ -209,10 +188,5 @@
 * Human preferences are just not homogeneous
 * Prompt-stability testing for the reward model (RM)
 * Wireheading-type issues
-
-## TODO
-
-* Go deeper
-* https://www.assemblyai.com/blog/how-chatgpt-actually-works/
 
 ---

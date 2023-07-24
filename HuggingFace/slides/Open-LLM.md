@@ -21,6 +21,12 @@
 
 ---
 
+## Vicuna release
+
+* https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot
+
+---
+
 ## Vicuna on HuggingFace
 
 * https://huggingface.co/lmsys/vicuna-13b-v1.3
