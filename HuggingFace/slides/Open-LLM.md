@@ -2,11 +2,20 @@
 
 # Overview of LLMs available
 
+## LLMs available
+
+* Dolly
+* LLama
+* Alpaca
+* Vicunia
+
+---
+
 ## Bard
 
 * Building with BARD
-* https://docs.google.com/document/d/1vdkkpAv6coTaayaot7k2JPgRwOVCQ9Lq/edit?usp=drive_link&ouid=115616987415559963783&rtpof=true&sd=true
 * Makersuite
+* https://makersuite.google.com/
 
 ---
 
@@ -17,21 +26,12 @@
 
 ---
 
-# Comparison of capabilities
-
 ## Robot NEO
 
 * Robot
 * https://www.youtube.com/watch?v=TJbqLD3UV5Y
 
 ---
-
-
-# Evaluating and fine-tuning an LLM
-# Alpaca from Stanford
-# LLama from Facebook
-# Dolly from Databricks
-# Nomic
 
 
 # Vicuña
