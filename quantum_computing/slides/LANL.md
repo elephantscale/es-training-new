@@ -90,6 +90,6 @@ quantum computing.
 * Measuring a qubit will yield the classical value of either zero 
   * with probability |α|**2 
 * one
-    with probability |β|**2 
+  * with probability |β|**2 
 
 ---
