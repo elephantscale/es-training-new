@@ -87,9 +87,11 @@ quantum computing.
 
 * Unlike a classical bit, 
   * the  state of a qubit cannot be measured without changing it. 
-* Measuring a qubit will yield the classical value of either zero 
+* Measuring a qubit will yield the classical value of either 
+  * zero (|0>)
   * with probability |α|**2 
-* one
+* or 
+  * one (|1>)
   * with probability |β|**2 
 
 ---
