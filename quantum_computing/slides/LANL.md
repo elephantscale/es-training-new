@@ -95,3 +95,17 @@ quantum computing.
   * with probability |β|**2 
 
 ---
+## X-gate
+![](../images/45-xgate.png)
+
+---
+
+## X-X-gate
+![](../images/46-x-xgate.png)
+
+---
+
+## X-X-gate-more
+![](../images/47-x-xgate-more.png)
+
+---
