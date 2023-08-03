@@ -109,3 +109,9 @@ quantum computing.
 ![](../images/47-x-xgate-more.png)
 
 ---
+
+## Exercise Chapter 1 Exercise 1
+* Verify that x * x = 1
+* https://github.com/elephantscale/quantum-computing-labs/blob/main/5-pocketbook/ch1-quantum-circuits-and-operations/Chapter%201.%20Exercise%201.ipynb
+
+---
