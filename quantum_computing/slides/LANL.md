@@ -115,3 +115,35 @@ quantum computing.
 * https://github.com/elephantscale/quantum-computing-labs/blob/main/5-pocketbook/ch1-quantum-circuits-and-operations/Chapter%201.%20Exercise%201.ipynb
 
 ---
+
+## Hadamard gates
+![](../images/48-hadamard.png)
+
+---
+
+## Exercise Chapter 1 Exercise 2
+* Verify that x * x = 1 for an Hadamard-converted qubit
+* https://github.com/elephantscale/quantum-computing-labs/blob/main/5-pocketbook/ch1-quantum-circuits-and-operations/Chapter%201.%20Exercise%201.ipynb
+
+---
+
+## What we illustrated
+
+![](../images/50-hh-1.png)
+
+---
+## Why not this?
+
+![](../images/49-why-not.png)
+
+* Because it would not be normalized
+
+---
+
+## Next
+
+* Bloch sphere
+
+![](../images/51-bloch-sphere.png)
+
+---
