@@ -1,4 +1,4 @@
 About-OpenAI-Class.md
-Prompt-Engineering.md
-How-ChatGPT-Works.md
+How-LLMs-Work.md
+Prompt-Hacking.md
 Fine-Tuning.md

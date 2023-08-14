@@ -4,5 +4,7 @@ Atoms-of-Computation.md
 QC-applications-algorithms.md
 Quantum-Enigmas.md
 Future-of-QC.md
+LANL.md
+Intel-QC.md
 Philosophy-Corner.md
 

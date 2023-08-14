@@ -1,8 +1,17 @@
 # Deep Learning and LLM
 (Cisco catalog: Deep Learning and LLM)
+(This is the HuggingFace course, with some outline modification)
 
 (C) Copyright Elephant Scale
-May 11, 2023
+June 23, 2023
+
+## What's new in this outline
+
+* Remove references to OpenAI and ChatGPT
+* Pay attention to environmental and ethical aspects of Large Language Models (LLM)
+* Condense overview of AI history
+* Concentrate on practical use of LLM with HuggingFace
+* Overview of open-source LLM
 
 ## Course Description
 
@@ -91,6 +100,6 @@ May 11, 2023
 * LLama from Facebook
 * Dolly from Databricks
 * Nomic
-* Vicunia
+* Vicuna
 
 
