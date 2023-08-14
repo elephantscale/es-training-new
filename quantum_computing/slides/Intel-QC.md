@@ -29,3 +29,10 @@
 ![](../images/56-Intel-Spin-Qubit-2.jpg)
 
 ---
+
+## Intel documentation
+
+* The documentation is found here
+* [Doc](../doc/intel-quantum-sdk-v1.0-rev1.1.pdf)
+
+---
