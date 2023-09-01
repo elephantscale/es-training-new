@@ -35,6 +35,53 @@
 
 ---
 
+## History of quantum computation and quantum information
+
+* classical physics had problems
+* predicting absurdities such as 
+  * the existence of an ‘ultraviolet catastrophe’ involving infinite energies, or 
+  * electrons spiraling inexorably into the atomic nucleus.
+* The crisis came to a head in the early 1920s after a quarter century of turmoil, and resulted in the creation of the modern theory of quantum mechanics.
+
+
+---
+
+## Quantum mechanics
+* has been applied with enormous success to everything under and inside the Sun, including the structure of the atom, nuclear fusion in stars, superconductors, the structure of DNA, and the elementary particles of Nature.
+
+---
+
+## What is quantum mechanics?
+
+* mathematical framework or set of rules for the construction of physical theories.
+* there is a physical theory known as quantum electrodynamics which describes with fantastic accuracy the interac- tion of atoms and light. Quantum electrodynamics is built up within the framework of quantum mechanics, but it contains specific rules not determined by quantum mechanics.
+  The rules of quantum mechanics are simple but even experts find them counter- intuitive,
+---
+
+
+## Elements of development
+
+* no-cloning theorem, discovered in the early 1980s
+* 1970s, of obtaining complete con- trol over single quantum systems
+* Since the 1970s many techniques for controlling single quantum systems have been developed.
+
+---
+
+## Single quantum systems
+
+* For example, methods have been developed for trapping a single atom in an ‘atom trap’, isolating it from the rest of the world and allowing us to probe many different aspects of its behavior with incredible precision. The scanning tunneling microscope has been used to move single atoms around, creating designer arrays of atoms at will. Electronic devices whose operation involves the transfer of only single electrons have been demonstrated.
+
+---
+
+## quantum computer idea
+
+* Thus quantum computers offer an essential speed advantage over classical computers. This speed advantage is so significant that many researchers believe that no conceivable amount of progress in classical computation would be able to overcome the gap between the power of a classical computer and the power of a quantum computer.
+
+---
+
+
+
+
 
 ## Let us take the bull by the horns 
 
