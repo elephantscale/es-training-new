@@ -138,6 +138,36 @@
 
 ---
 
+## David Deutsch
+* 1985
+* Deutsch attempted to define a computational device that would be capable of efficiently simulating an arbitrary physical system.
+* the laws of physics are ultimately quantum mechanical
+* Deutsch was naturally led to consider computing devices based upon the principles of quantum mechanics. 
+* These devices, quantum analogues of the machines defined forty-nine years earlier by Turing, 
+* led ultimately to the modern  conception of a quantum computer
+
+---
+
+## Peter Shor’s 
+* 1994 demonstration
+  * the problem of finding the prime factors of an integer
+  * Shor’s results show that quantum computers are more powerful than Turing machines, even probabilistic Turing machines
+
+---
+
+## 1995 Lov Grover 
+* showed that another important problem 
+  * the problem of  conducting a search through some unstructured search space – 
+  * could also be sped up on a quantum computer
+
+---
+
+## Richard Feynman 1982
+* essential difficulties in simulating quantum mechanical systems on classical computers
+* building computers based on the principles of quantum mechanics would allow us to avoid those difficulties
+
+---
+
 
 ## Let us take the bull by the horns 
 
