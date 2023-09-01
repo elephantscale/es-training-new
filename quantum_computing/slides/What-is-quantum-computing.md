@@ -47,64 +47,96 @@
 ---
 
 ## Quantum mechanics
-* has been applied with enormous success to everything under and inside the Sun, including the structure of the atom, nuclear fusion in stars, superconductors, the structure of DNA, and the elementary particles of Nature.
+
+* Has been applied with enormous success to everything under and inside the Sun
+* Structure of the atom
+* Nuclear fusion in stars
+* Superconductors
+* Structure of DNA
+* Elementary particles of Nature.
 
 ---
 
 ## What is quantum mechanics?
 
-* mathematical framework or set of rules for the construction of physical theories.
-* there is a physical theory known as quantum electrodynamics which describes with fantastic accuracy the interac- tion of atoms and light. Quantum electrodynamics is built up within the framework of quantum mechanics, but it contains specific rules not determined by quantum mechanics.
-  The rules of quantum mechanics are simple but even experts find them counter- intuitive,
+* Mathematical framework or set of rules for the construction of physical theories.
+* Physical theory is known as quantum electrodynamics 
+  * describes with fantastic accuracy the interaction of atoms and light
+* Quantum electrodynamics is built up within the framework of quantum mechanics, 
+  * but contains specific rules not determined by quantum mechanics.
+* The rules of quantum mechanics are simple but even experts find them counterintuitive,
 ---
 
 
 ## Elements of development
 
-* no-cloning theorem, discovered in the early 1980s
-* 1970s, of obtaining complete con- trol over single quantum systems
+* No-cloning theorem, discovered in the early 1980s
+* 1970s, of obtaining complete control over single quantum systems
 * Since the 1970s many techniques for controlling single quantum systems have been developed.
 
 ---
 
 ## Single quantum systems
 
-* For example, methods have been developed for trapping a single atom in an ‘atom trap’, isolating it from the rest of the world and allowing us to probe many different aspects of its behavior with incredible precision. The scanning tunneling microscope has been used to move single atoms around, creating designer arrays of atoms at will. Electronic devices whose operation involves the transfer of only single electrons have been demonstrated.
+* For example, methods have been developed for 
+  * trapping a single atom in an ‘atom trap’, 
+  * isolating it from the rest of the world and
+  * allowing us to probe many different aspects of its behavior with incredible precision. 
+* The scanning tunneling microscope has been used to move single atoms around,
+  * creating designer arrays of atoms at will. 
+  * Electronic devices whose operation involves the transfer of only single electrons have been demonstrated.
 
 ---
 
 ## quantum computer idea
 
-* Thus quantum computers offer an essential speed advantage over classical computers. This speed advantage is so significant that many researchers believe that no conceivable amount of progress in classical computation would be able to overcome the gap between the power of a classical computer and the power of a quantum computer.
+* Quantum computers offer an essential speed advantage over classical computers. 
+* This speed advantage is so significant that many researchers believe t
+  * hat no conceivable amount of progress in classical computation would be able to overcome the gap between the power of a classical computer 
+  * and the power of a quantum computer.
 
 ---
 
 ## Efficiency
 
-What do we mean by ‘efficient’ versus ‘inefficient’ simulations of a quantum computer? Many of the key notions needed to answer this question were actually invented before the notion of a quantum computer had even arisen. In particular, the idea of efficient and inefficient algorithms was made mathematically precise by the field of computational complexity. Roughly speaking, an efficient algorithm is one which runs in time polynomial in the size of the problem solved. In contrast, an inefficient algorithm requires super- polynomial (typically exponential) time. What was noticed in the late 1960s and early 1970s was that it seemed as though the Turing machine model of computation was at least as powerful as any other model of computation, in the sense that a problem which could be solved efficiently in some model of computation could also be solved efficiently in the Turing machine model, by using the Turing machine to simulate the other model of computation. This observation was codified into a strengthened version of the Church– Turing thesis:
-Any algorithmic process can be simulated efficiently using a Turing machine.
+* What do we mean by ‘efficient’ versus ‘inefficient’ simulations of a quantum computer? 
+* Many of the key notions needed to answer this question were actually invented before the notion of a quantum computer had even arisen. 
+* In particular, the idea of efficient and inefficient algorithms was made mathematically precise by the field of computational complexity. 
+* Roughly speaking, an efficient algorithm is one which runs in time polynomial in the size of the problem solved. 
+* In contrast, an inefficient algorithm requires super-polynomial (typically exponential) time. 
+* What was noticed in the late 1960s and early 1970s was that it seemed as though 
+* the Turing machine model of computation was at least as powerful as any other model of computation, 
+* in the sense that a problem which could be solved efficiently in some model of computation could also be solved efficiently in the Turing machine model, 
 
 ---
 
 ## Analog computer
 
-* One class of challenges to the strong Church–Turing thesis comes from the field of analog computation. In the years since Turing, many different teams of researchers have noticed that certain types of analog computers can efficiently solve problems believed to have no efficient solution on a Turing machine. At first glance these analog computers appear to violate the strong form of the Church–Turing thesis.
+* One class of challenges to the strong Church–Turing thesis comes from the field of analog computation. 
+* In the years since Turing, many different teams of researchers have noticed that certain types of analog computers can efficiently solve problems
+* believed to have no efficient solution on a Turing machine. 
+* At first glance these analog computers appear to violate the strong form of the Church–Turing thesis.
 
 ---
 
 ## Analog problems
 
-* Unfortunately for analog computation, it turns out that when realistic assumptions about the presence of noise in analog computers are made, their power disappears in all known instances; they cannot efficiently solve problems which are not efficiently solvable on a Turing machine.
+* Unfortunately for analog computation, 
+* it turns out that when realistic assumptions about the presence of noise in analog computers are made, 
+* their power disappears in all known instances; 
+* they cannot efficiently solve problems which are not efficiently solvable on a Turing machine.
 
 ---
 
 ## Lesson of analog
 
-* This lesson – that the effects of realistic noise must be taken into account in evaluating the efficiency of a computational model – was one of the great early challenges of quantum computation and quantum information, a challenge successfully met by the development of a theory of quantum error-correcting codes and fault-tolerant quantum computation. Thus, unlike analog computation, quantum computation can in principle tolerate a finite amount of noise and still retain its computational advantages.
+* This lesson – that the effects of realistic noise must be taken into account in evaluating the efficiency of a computational model – 
+* was one of the great early challenges of quantum computation and quantum information, 
+* a challenge successfully met by the development of a theory of quantum error-correcting codes and fault-tolerant quantum computation. 
+* Thus, unlike analog computation, quantum computation can in principle tolerate a finite amount of noise and 
+  * still retain its computational advantages.
+
 ---
-
-
-
 
 
 ## Let us take the bull by the horns 
