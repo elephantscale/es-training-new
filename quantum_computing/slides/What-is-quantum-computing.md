@@ -25,6 +25,17 @@
 
 ---
 
+## Global perspective
+
+* Fundamental ideas to quantum computation and quantum information
+  * quantum mechanics
+  * computer science
+  * information theory
+  * cryptography
+
+---
+
+
 ## Let us take the bull by the horns 
 
 * Computer have bits
