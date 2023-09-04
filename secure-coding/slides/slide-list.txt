@@ -1,5 +1,6 @@
 # Secure coding (2 days)
-../../course-outlines/secure-coding-general-2d.md
+# ../../course-outlines/secure-coding-general-2d.md
+../../course-outlines/secure-coding.md
 About-Secure-Coding-Class.md
 ../../cybersecurity-common/slides/Security-Intro.md
 ../../cybersecurity-common/slides/Threat-Modeling.md
