@@ -168,6 +168,68 @@
 
 ---
 
+# Quantum bit
+
+---
+
+## Qubit
+
+* The bit is the fundamental concept of classical computation and classical information.
+* Quantum computation and quantum information are built upon an analogous concept, the quantum bit, or qubit for short
+* We introduce the properties of single and multiple qubits
+
+---
+
+## What is a qubit?
+* We’re going to describe qubits as mathematical objects
+* But hang on
+* Did we say that qubits were physical objects?
+* It’s true that qubits, like bits, are realized as actual physical systems
+* However, for the most part we treat qubits as abstract mathematical objects
+
+---
+
+## What then is a qubit?
+* Just as a classical bit has a state – either 0 or 1
+* a qubit also has a state
+* Two possible states for a qubit are the states |0> and |1>
+* correspond to the states 0 and 1 for a classical bit
+
+---
+
+## Dirac notation
+
+* Notation like |> is called the Dirac notation
+* it’s the standard notation for states in quantum mechanics. 
+* The difference between bits and qubits is that a qubit can be in a |0> or |1>
+* It is also possible to form linear combinations of states, often called superpositions:
+![](../images/57.png)
+
+---
+
+## Complex numbers
+
+* Put another way, the state of a qubit is a vector in a two-dimensional complex vector space
+* The special states |0> and |1> are known as   computational basis states, and form an orthonormal basis for this vector space.
+
+---
+
+## Examine a qubit
+* We can examine a bit to determine whether it is in the state 0 or 1
+* Rather remarkably, we cannot examine a qubit to determine its quantum state
+* Instead, quantum mechanics tells us that we can only acquire much more restricted information about the quantum state.
+* When we measure a qubit we get either the result 0, with probability |α|**2 , or the result 1, with probability |β|**2
+* |α|**2 + |β|**2 = 1
+* since the probabilities must sum to one
+
+---
+
+## Qubit state
+* qubit can be in the state
+![](../images/58.png)
+
+---
+
 
 ## Let us take the bull by the horns 
 
