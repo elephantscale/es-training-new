@@ -230,6 +230,28 @@
 
 ---
 
+## Qubit represented by two electronic levels in an atom
+![](../images/59.png)
+
+
+---
+
+## Another form of equation
+![](../images/60.png)
+
+---
+
+## Yet another form of equation
+![](../images/62.png)
+
+---
+
+## Bloch sphere
+![](../images/62.png)
+
+---
+
+
 
 ## Let us take the bull by the horns 
 
