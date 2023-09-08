@@ -242,7 +242,7 @@
 ---
 
 ## Yet another form of equation
-![](../images/62.png)
+![](../images/61.png)
 
 ---
 
