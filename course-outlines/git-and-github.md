@@ -1,11 +1,11 @@
-  # Git and GitHub
+# Git and GitHub
 
 © Elephant Scale
 
 October 10, 2023
 
 Git and GitHub tools are the twin pillars of the developers' Continuous Integration and
-Continuous Delivery toolbox.  By using these tools effectively, developers and dev/ops
+Continuous Delivery toolbox.  By using these tools effectively, developers and devops
 engineers can ensure much higher quality code and better results.
 
 
