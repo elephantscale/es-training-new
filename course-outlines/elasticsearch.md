@@ -1,7 +1,7 @@
 # Elasticsearch
 
 © Elephant Scale
-02/10/2023
+10/02/2023
 
 ## About the Course
 
@@ -53,6 +53,10 @@ Data Engineers, Data Scientists, Architects, Developers, Administrators
 
 ### Security threat detection and response
 
+* Introduction to security
+* Security in Elastic
+
 ### Machine Learning
 
-* Contrary to previous versions of X-Pack which were closed, the newer open version allows for component viability.  
+* Machine learning in Elastic
+* Generative AI
