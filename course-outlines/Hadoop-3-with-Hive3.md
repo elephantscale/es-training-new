@@ -2,7 +2,7 @@
 
 © Elephant Scale
 
-June 15, 2021
+October 10, 2023
 
 Hadoop is a mature Big Data environment. Even as the latest technologies concentrate on Spark, 
 the Hadoop ecosystem is here to stay.
@@ -16,13 +16,17 @@ language, compare different tools for looking at your data, whether it be Hive, 
 
 This course will explain the capabilities of Hadoop, Hive, HQL dialects, and best practices.
 
-## Duration: 4 days
-## Audience: Business analysts, Software developers, Managers
-## Prerequisites:
- * Exposure SQl
+## Duration 
+* 2 days
+
+## Audience
+* Business analysts, Software developers, Managers
+
+## Prerequisites
+ * Exposure to SQL
  * Be able to navigate Linux command line
 
-## Lab environment:
+## Lab environment
 * Working environment provided in the browser
 * **Zero Install:** There is no need to install software on students' machines.
 

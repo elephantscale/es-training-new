@@ -18,37 +18,37 @@ engineers can ensure much higher quality code and better results.
 ## Lab environment:
 Lab environment will be provided for students.  
 
-**Zero Install:** There is no need to install software on students' machines.
+** Zero Install:** There is no need to install software on students' machines.
 
 
 ## Course Outline
 
-* Introduction to Git and GitHub
-  * Introduction to Version Control and Git & Gitoperations
-  * Installation and Setup
-  * Basic Git Commands
-  * Creating a GitHub Account (Organization) and Repository
-  * Hands-On Exercise: Your First Commit
+### Introduction to Git and GitHub
+* Introduction to Version Control and Git & Gitoperations
+* Installation and Setup
+* Basic Git Commands
+* Creating a GitHub Account (Organization) and Repository
+* Hands-On Exercise: Your First Commit
 
-* Advanced Git Features
-  * Branching and Merging
-  * Conflict Resolution
-  * Stashing and Cherry-Picking
-  * Team Collaboration
+### Advanced Git Features
+* Branching and Merging
+* Conflict Resolution
+* Stashing and Cherry-Picking
+* Team Collaboration
 
-* GitHub Features and Best Practices
-  * Creating a GitHub Organization
-  * Pull Requests and Code Reviews
-  * Webhooks
-  * GitHub Actions for Automation
-  * Build a CI/CD Pipeline (
+### GitHub Features and Best Practices
+* Creating a GitHub Organization
+* Pull Requests and Code Reviews
+* Webhooks
+* GitHub Actions for Automation
+* Build a CI/CD Pipeline (
 
-* Kubernetes and Sealed Secrets
-  * Introduction to your environments/ kubernetes
-  * Sealed Secrets with Kube-Seal
-  * Introduction to Git Operations & Git Pipelines
+### Kubernetes and Sealed Secrets
+* Introduction to your environments/ kubernetes
+* Sealed Secrets with Kube-Seal
+* Introduction to Git Operations & Git Pipelines
 
-* GitOps with Argo & Git Pipelines with Tekton
-  * Implementing GitOps with Argo
-  * Implementing GitPipelines with Tekton
-  * Automation with Git & Best Practices
+### GitOps with Argo & Git Pipelines with Tekton
+* Implementing GitOps with Argo
+* Implementing GitPipelines with Tekton
+* Automation with Git & Best Practices
