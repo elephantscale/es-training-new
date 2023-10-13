@@ -1,6 +1,7 @@
 About-Quantum-Computing-Class.md
 What-is-quantum-computing.md
 Atoms-of-Computation.md
+Math-view.md
 QC-applications-algorithms.md
 Quantum-Enigmas.md
 Future-of-QC.md
