@@ -3,31 +3,67 @@
 
 ## Note: Since materials and labs are not ready yet, timing and content are subject to change.
 
-### **Lab: Setting Up an AWS Account & AWS Free Tier Overview (14:30 - 16:00)**
+### Day 1: Introduction to AWS and Cloud Computing
 
-#### **Objective:** 
-- To ensure that all students have active AWS accounts and are familiar with the basic navigation of the AWS Management Console.
-- To introduce students to the AWS Free Tier and its offerings, enabling them to explore AWS services during the course without incurring extra costs.
+---
 
-#### **Tasks:**
+#### **Morning Session (09:00 - 11:45)**
 
-1. **Creating an AWS Account (14:30 - 14:45)**
-   - Guide students through the process of creating an AWS account.
-   - Ensure that all students have successfully created their accounts and are able to log in.
+- **Meet and Greet (09:00 - 09:30)**
+   - Welcome and Introduction of Instructor
+   - Student Introductions: Name, background, expectations from the course
+   - Overview of the course structure, goals, and logistics
 
-2. **Navigating the AWS Management Console (14:45 - 15:15)**
-   - Introduction to the AWS Management Console interface.
-   - Exploring basic navigation including services, regions, and account settings.
-   - Overview of the AWS services available through the console.
+- **Introduction to Cloud Computing (09:30 - 11:00)**
+   - Definition of Cloud Computing
+   - Benefits and Challenges of Cloud Computing
+   - Cloud Service Models (IaaS, PaaS, SaaS)
+   - Cloud Deployment Models (Public, Private, Hybrid, Community)
 
-3. **AWS Free Tier Overview (15:15 - 15:45)**
-   - Explanation of AWS Free Tier offerings and limitations.
-   - Guiding students on how to track their Free Tier usage to avoid unexpected charges.
+- **Break (11:00 - 11:15)**
 
-4. **Exploration and Q&A (15:45 - 16:00)**
-   - Allow students some time to explore the AWS Management Console on their own.
-   - Address any questions or issues students might have with accessing AWS services.
+- **Introduction to AWS (11:15 - 11:45)**
+   - History and Evolution of AWS
+   - AWS Cloud Value Proposition
+   - Overview of AWS Global Infrastructure (Regions, Availability Zones, and Edge Locations)
 
+#### **Lunch Break (11:45 - 13:00)**
+
+---
+
+#### **Afternoon Session (13:00 - 17:00)**
+
+- **AWS Cloud Architectural Principles (13:00 - 14:15)**
+   - The Well-Architected Framework
+   - Core AWS Architectural Concepts
+   - AWS Shared Responsibility Model
+
+- **Break (14:15 - 14:30)**
+
+- **Lab: Setting Up an AWS Account & AWS Free Tier Overview (14:30 - 16:00)**
+   - Creating an AWS account
+   - Navigating the AWS Management Console
+   - Overview of AWS Free Tier offerings
+
+- **Break (16:00 - 16:15)**
+
+- **Discussion & Recap (16:15 - 17:00)**
+   - Q&A
+   - Summary of key takeaways from the day's session
+
+---
+
+#### **Expected Outcomes by End of Day 1:**
+
+- **Understanding**: Students should have a solid understanding of cloud computing fundamentals, the benefits of using AWS, and basic AWS architectural principles.
+  
+- **Practical Experience**: Students will have hands-on experience navigating the AWS Management Console and understanding the AWS Free Tier offerings.
+  
+- **Engagement**: Through the meet and greet, discussion, and Q&A session, students should feel comfortable with the basics of AWS and cloud computing, ready to delve deeper into AWS core services in the upcoming sessions.
+
+---
+
+The addition of the Meet and Greet session will provide an opportunity for you and the students to get acquainted, setting a positive tone for the rest of the course. The slight re-adjustment in the schedule ensures that all the essential topics are still covered within the day while providing a welcoming and interactive start to the course.
 ---
 
 #### **Expected Outcomes:**
