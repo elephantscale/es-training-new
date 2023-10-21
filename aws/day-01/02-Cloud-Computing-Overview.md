@@ -12,8 +12,35 @@
 ## What Is Cloud Computing?
 
 Cloud Computing is a technology that allows individuals and businesses to access and store data, run applications, and utilize computing resources
-over the internet without needing to own or maintain
-physical hardware.
+over the internet without needing to own or maintain physical hardware.
+
+Cloud computing enables you to <span style="color:red">stop thinking of your infrastructure as hardware</span>, and instead
+<span style="color:green">think of it (and use it) as software.</span>
+
+---
+
+## What Is Cloud Computing?
+
+Hardware solutions are physical. This means they require:
+
+- Space
+- Staff
+- Physical security
+- Planning
+- Capital expenditure
+
+And what if your needs change?
+
+You have to go through the time, effort, and cost required to change all of the above.
+
+---
+
+## What Is Cloud Computing?
+
+**Software is flexible.**
+
+If your needs change, your software can change much more quickly, easily, and cost-effectively than your hardware.
+
 
 ---
 
@@ -42,50 +69,82 @@ That warehouse is the **cloud**
 
 ---
 
-## Early Foundations & Concepts
+## 1960s
 
-- **1950s-60s:** Mainframes were expensive. 'Time-sharing' systems introduced, enabling multiple users to share access to data and CPU time.
-- **1961:** Computer scientist John McCarthy envisioned computation as a public utility, laying philosophical groundwork for cloud computing.
-
----
-
-## Grid Computing & Virtualization
-
-- **1970s:** Grid computing proposed connecting disparate computers to act like a virtual supercomputer.
-- **1980s:** VM (Virtual Machine) technology allowed multiple OS instances to coexist on a single physical hardware system. It was a crucial
-  development that provided the necessary abstraction for cloud infrastructure.
+- DARPA funded the development of a computer which could be simultaneously used by multiple users
+- John McCarthy's suggests in a speech at MIT that computing can be sold like a utility, just like water or electricity.
+- American computer scientist J.C.R. Licklider presents an idea for an interconnected system of computers, later implemented in the development of
+  ARPANET (Advanced Research Projects Agency Network) - the precursor of modern Internet.
+- Douglas F. Parkhill predicts that the computer industry will become a public utility “in which many remotely located users are connected via
+  communication links to a central computing facility.”
 
 ---
 
-## Internet & Early Cloud Vision
+## 1970s
 
-- **1990s:** Telecommunication sectors began to use virtualized private networks. This was more efficient and hinted at scalability—key to cloud's
-  appeal.
-- **CompuServe & AOL:** These services offered early internet users cloud-like benefits, such as remote email access and storage.
+- The concept of virtual machines (VMs) is created to allow running a completely different computer (virtual machine) inside a desktop operating
+  system. This allows for more efficient use of hardware resources.
 
----
+- IBM releases the first version if its VM operating system
 
-## Application Service Providers (ASP) & Web Services
-
-- **Late 1990s:** ASPs offered businesses software and applications via the web.
-- **Early 2000s:** Companies like Amazon started developing web services, online services delivered over the HTTP protocol.
+- The cloud symbol is used to represent networks of computing equipment in the original ARPANET.
 
 ---
 
-## ASP?!
+## 1980s
 
-Companies that offered software applications and related services over the internet, especially during the late 1990s and early 2000s. They
-allowed businesses to access and use applications without the need to install or maintain them on local servers or computers. Here are some examples
-of ASPs:
+- The U.S. National Science Foundation (NSF) launches an initiative to build a national backbone network that would be based on transmission control
+  protocol/internet protocol (TCP/IP)
 
-* NetSuite:
-* Salesforce:
-* WebEx:
-* Intuit QuickBooks Online:
-* Citrix Systems:
+- The first Ethernet adapter card for the IBM personal computer is released, introducing fast, inexpensive connections that would enable cloud
+  computing
 
-These ASPs set the groundwork for the modern SaaS (Software as a Service) model, which has become the dominant method for delivering software
-applications over the internet.
+- A National Science Foundation Network project creates network access to the supercomputer sites in the United States
+  Commercial Internet Service Providers (ISPs) begin to emerge
+
+---
+
+## 1990s
+
+- World Wide Web invented
+
+- The term 'cloud' is used for virtualized services by General Magic
+
+- Early cloud models implemented by iland (IaaS), CallidusCloud (SaaS), Rackspace and Salesforce
+
+- References to the phrase "cloud computing" appear with the first known mention in a Compaq internal document
+
+- Ramnath Chellappa defines cloud as a “computing paradigm where the boundaries of computing will be determined by economic rationale rather than
+  technical limits alone.”
+
+- German Math Society presented a concept of Basic Support for Collaborative Work
+
+---
+
+## 2000s
+
+- The Amazon Elastic Compute Cloud is introduced as an IaaS that lets organizations contract for computers to run their applications with the
+  ability to programmatically create and terminate instances that gives developers the flexibility to write their own code for autoscaling
+
+- Google CEO Eric Schmidt introduces the term "cloud computing" to an industry conference. “What’s interesting now is that there is an emergent new
+  model, (..) I don’t think people have really understood how big this opportunity really is. It starts with the premise that the data services and
+  architecture should be on servers. We call it cloud computing—they should be in a “cloud” somewhere.”
+
+- Amazon creates Amazon Web Services as a subsidiary to provide on-demand cloud computing platforms, and introduces its Elastic Compute Cloud(EC2)
+
+---
+
+## 2000s
+
+- Amazon decided to use their service-oriented architecture and the services designed to cope with large and fluctuating numbers of users, and
+  transform it into a product that could be offered to outside customers.
+
+- For Amazon, that meant that peak loads would be distributed among all of the users of their infrastructure.
+
+- The scaling effects of the cloud services thus became the key selling point of cloud computing
+
+- A prerequisite for efficient cloud computing services is a fast broadband connection, with high bandwidth and low latency.
+    - With such connectivity, it makes no difference whether data is stored locally on a PC, or in remote servers in a cloud
 
 ---
 
@@ -116,6 +175,19 @@ applications over the internet.
 - **Quantum Cloud Services:** Early integrations of quantum computing capabilities into cloud platforms.
 - **Sustainability:** Green cloud computing emerges as the demand for eco-friendly data centers grows.
 - **Cloud & Global Networks:** Expanding global infrastructures to reduce latency and improve access.
+
+---
+
+## Cloud computing global market
+
+<img src="../../assets/images/aws/cloud-market-share.png" alt="XXX image missing" style="max-width:70%;" />
+
+---
+
+## Cloud computing global market
+
+<img src="../../assets/images/aws/cloud-market-rate.png" alt="XXX image missing" style="max-width:70%;" />
+
 
 ---
 
@@ -345,8 +417,6 @@ Cloud deployment models define where and how cloud services are delivered and wh
 
 ---
 
-
-
 Cloud resources owned and operated by third-party cloud service providers delivered over the internet.
 
 **Accessibility**
@@ -445,6 +515,29 @@ AWS, Google Cloud, Microsoft Azure
 - **Management Issues:** Who takes the lead in management?
 - **Less Flexibility:** Customized for the group, not individual organizations.
 - **Potential for Conflict:** Differences in priorities or requirements among members.
+
+---
+
+## Multi-Cloud
+
+- **Multi-cloud** means that you or your company are not only using the services of one cloud provider, but are also using different solutions from
+  different cloud providers.
+
+
+- Examples include using Microsoft Office 365 for business collaboration, Salesforce for customer relationship management, and AWS Route 53 for
+  GeoDNS and GeoIP.
+
+---
+
+## Multi-Cloud
+
+- **Redundancy:** You don't want to build your environment on only one cloud provider, because one can fail, as has happened with AWS in the past.
+
+- So, you want to keep the business running with the services of the other cloud providers.
+
+- This is mostly related to using IaaS or PaaS.
+
+- For the most part, redundancy is not possible with SaaS if the cloud provider does not support hybrid environments.
 
 ---
 
