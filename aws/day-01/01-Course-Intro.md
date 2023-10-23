@@ -42,6 +42,7 @@ In 10 days!
 * 1 hour and 15 minutes lunch break
 * 15 minutes break every 90 minutes
 * 50% lecture, 50% hands-on labs
+* How many slides? Yes!
 
 ---
 
