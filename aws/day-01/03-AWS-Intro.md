@@ -367,6 +367,126 @@ like EC2, S3) and the destination (like the internet or other AWS regions).
 
 ---
 
+# Manged vs Unmanaged Services
+
+---
+
+## Unmanaged Services
+
+Typically provisioned in discrete portions as specified by the user.
+
+Unmanaged services require the user to manage how the service responds to changes in load, errors, and situations where resources become unavailable.
+
+---
+
+## Example of Unmanaged Services
+
+If you launch a web server on an Amazon EC2
+instance, that web server will not scale to handle increased traffic load or replace unhealthy instances with healthy ones unless you specify it to
+use a scaling solution such as Auto Scaling, because Amazon EC2 is an "unmanaged" solution.
+
+---
+
+## Managed Services
+
+Managed services are fully managed by AWS and require no user intervention to scale or replace unhealthy instances.
+
+**NOTE:** Managed services still
+require the user to configure them (for example, creating an Amazon S3 bucket and setting permissions for it); however, managed services typically
+require far less configuration.
+---
+
+## Example of Managed Services
+
+if you have a static website that you're hosting in a cloud-based storage solution such as Amazon S3 without a web server, scaling,
+fault-tolerance, and availability would be automatically handled internally by Amazon S3, because it is a managed solution.
+
+---
+
+## Managed vs Unmanaged Services
+
+The benefit to using an unmanaged service, however, is that you have more fine-tuned control over how your solution handles changes in load, errors,
+and situations where resources become unavailable.
+
+---
+
+## Example of Managed vs Unmanaged Services
+
+Hosting your relational database with...
+
+---
+
+## EC2
+
+Amazon Elastic Compute Cloud (Amazon EC2)
+
+<img src="../../assets/images/logos/aws-ec2.png"/>
+
+Fully Unmanaged, you have to manage everything
+
+---
+
+## RDS
+
+Amazon Relational Database Service (Amazon RDS)
+
+<img src="../../assets/images/logos/aws-rds.png"/>
+
+Fully Managed, AWS manages everything
+
+**More on these services later...**
+
+---
+
+# Shared Responsibility
+
+---
+
+## Model
+
+Amazon Web Services provides the same familiar approaches to security that companies have been using for decades.
+
+It does this while also
+allowing the flexibility and low cost of cloud computing.
+
+There is nothing inherently at odds about providing on-demand infrastructure while also
+providing the security isolation companies have become accustomed to in their existing, privately owned environments.
+
+---
+
+## Model
+
+<img src="../../assets/images/aws/aws-shared-1.png"/>
+
+---
+
+## Security OF The Cloud
+
+AWS handles the security of the cloud, specifically the physical infrastructures that host your resources.
+
+- **Data centers:** Non-descript facilities, 24x7 security guards, two-factor authentication, access logging and review, video surveillance, and disk
+  degaussing and destruction.
+
+- **Hardware infrastructure:** Servers, storage devices, and other appliances on which all of our services rely.
+- **Software infrastructure:** Host operating systems, service applications, and virtualization software.
+- **Network infrastructure:** Routers, switches, load balancers, firewalls, cabling, etc. (including continuous network monitoring at external boundaries, secure access points, and redundant
+  infrastructure).
 
 
+---
+
+## Security OF The Cloud
+
+<img src="../../assets/images/aws/aws-sec-model.png"/>
+
+---
+
+## Security IN The Cloud
+
+You are responsible for what you implement using AWS and for the applications you connect to AWS. The security steps you need to take depend on the services you use and the complexity
+of your system. 
+
+<img src="../../assets/images/aws/aws-sec-you.png"/>
+
+---
 
