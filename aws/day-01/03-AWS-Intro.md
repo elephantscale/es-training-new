@@ -490,3 +490,37 @@ of your system.
 
 ---
 
+
+
+---
+# Core AWS Architectural Concepts
+---
+
+## AWS Elasticity and Scalability
+
+Elasticity allows AWS resources to be automatically allocated or deallocated based on actual usage, ensuring efficient use. Scalability ensures that
+as the workload grows, resources can be added seamlessly.
+
+---
+
+## Decoupling Mechanisms
+
+Decoupling allows individual components of a system to operate independently. AWS services like Amazon SQS (Simple Queue Service) allow for decoupling
+components, ensuring a fault in one doesn't bring down the entire system.
+
+---
+
+## AWS Service Limits
+
+AWS imposes certain soft and hard limits on its services to ensure resource availability and prevent misuse. While some of these limits can be
+increased upon request, it's vital to be aware of them during architectural planning.
+
+---
+
+## AWS Service Integration
+
+AWS services are designed to work seamlessly together. For instance, AWS Lambda can trigger based on events from Amazon S3, or Amazon EC2 instances
+can integrate with Amazon RDS for database services.
+
+---
+
