@@ -1,6 +1,6 @@
 # AWS
 
-In 10 days!
+<center>In 10 days!</center>
 ---
 
 ## Meet the Instructor

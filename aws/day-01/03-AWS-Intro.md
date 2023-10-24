@@ -522,5 +522,3 @@ increased upon request, it's vital to be aware of them during architectural plan
 AWS services are designed to work seamlessly together. For instance, AWS Lambda can trigger based on events from Amazon S3, or Amazon EC2 instances
 can integrate with Amazon RDS for database services.
 
----
-
