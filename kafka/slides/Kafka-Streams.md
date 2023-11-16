@@ -373,18 +373,18 @@ Notes:
 
 ---
 
-## Lab: Kafka Streams Foreach
+## Lab: Kafka Streams GroupBy
 
 <img src="../../assets/images/icons/individual-labs.png" style="width:25%;float:right;"/><!-- {"left" : 6.76, "top" : 0.88, "height" : 4.37, "width" : 3.28} -->
 
 * **Overview:**
-    - Kafka Streams: Foreach
+    - Kafka Streams: groupby
 
 * **Approximate Time:**
     - 10 - 15 mins
 
 * **Instructions:**
-     - Please follow: lab 7.2
+     - Please follow: lab 7.5
 
 * **To Instructor:**
     - Please demo this lab on screen and do it together with students
