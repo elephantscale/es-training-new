@@ -2,3 +2,4 @@ About-OpenAI-Class.md
 How-LLMs-Work.md
 Prompt-Hacking.md
 Fine-Tuning.md
+Chroma.md
