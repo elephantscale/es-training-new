@@ -45,12 +45,12 @@
 * finish kafka streams labs
     - upto group by
 * Review fraud detection lab
-* Kafka Admin
 * Kafka ecosystem: connect, confluent
     - lab: confluent install
     - lab: avro
     - optional lab : connect
 * --- lunch ---
+* Kafka Admin
 * metrics
   - optional lab : metrics
 * Best Practices
