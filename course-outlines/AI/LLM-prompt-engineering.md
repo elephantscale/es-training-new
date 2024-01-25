@@ -60,3 +60,7 @@ June 23, 2023
 
 ## Detailed outline
 
+## Our reference, to be removed before sending
+
+* [https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction](https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction)
+* [https://github.com/elephantscale/OpenAI-labs/tree/main/05-prompt-engineering](https://github.com/elephantscale/OpenAI-labs/tree/main/05-prompt-engineering)
