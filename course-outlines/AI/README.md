@@ -1,1 +1,1 @@
-All AI courses go here
+All new AI courses go here

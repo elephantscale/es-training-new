@@ -1,4 +1,4 @@
-# LLM Prompt Engineering
+# Generative AI for Everyone
 
 (C) Copyright Elephant Scale
 January 28, 2024
@@ -6,7 +6,7 @@ January 28, 2024
 ## Course Description
 
 * Large Language Models (LLM) are taking the world by storm. It can be ChatGPT, Claude, or Bard, but AI doubling productivity in many occupation.
-* This course teaches how to build applications with LLMs. This includes the basics of LLM scripting and the rules of AI use architecture.
+* This course covers AI and Generative AI landscape, with the deep-down on the implementation/
 
 ## Audience
 * Developers, data scientists, team leads, project managers
@@ -16,7 +16,7 @@ January 28, 2024
 * Intermediate
 
 ## Duration
-* Two days
+* One of two days
 
 ## Prerequisites
 * General familiarity with machine learning
@@ -37,22 +37,11 @@ January 28, 2024
 
 ## Detailed outline
 
-* Introduction
-* How to formulate a question
-* How to iterate
-* Summarization and is use
-* Inferring from a prompt
-* Transforming the tasks
-* Expanding the LLM interaction
-* Building a real bot
-* Classification
-* Moderation
-* Chain of thought reasoning
-* Chaining prompts
-* Check outputs
+* Introduction to Generative AI
+* Generative AI projects
+* Generative AI in business and society
 * Workshop
 
 ## Our reference, to be removed before sending
 
-* [https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction](https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction)
-* [LLM-prompt-engineering.md](LLM-prompt-engineering.md)
+* https://www.coursera.org/learn/generative-ai-for-everyone

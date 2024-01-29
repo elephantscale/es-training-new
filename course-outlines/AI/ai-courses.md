@@ -15,7 +15,7 @@ January 16, 2024
 
 | Course                    | Days | Difficulty | Goals                                       |
 |---------------------------|------|------------|---------------------------------------------|
-| GenerativeAI for Everyone | 5    | Intro      | Intro for managers, group leads, developers |
+| GenerativeAI for Everyone | 2    | Intro      | Intro for managers, group leads, developers |
 | LLM Prompt Engineering    | 1    | Medium     | Scripting LLM conversations                 |
 | Intermediate LLM Apps     | 1    | Medium     | Scripting LLM further                       |
 | LangChain for LLM Apps    | 2    | Medium     | Building LLM Apps                           |
