@@ -6,14 +6,14 @@ January 28, 2024
 ## Course Description
 
 * Large Language Models (LLM) are taking the world by storm. It can be ChatGPT, Claude, or Bard, but AI doubling productivity in many occupation.
-* This course covers AI and Generative AI landscape, with the deep-down on the implementation/
+* This course covers AI and Generative AI landscape, with the deep-down on the implementation.
 
 ## Audience
 * Developers, data scientists, team leads, project managers
 
 ## Skill Level
 
-* Intermediate
+* Introductory for all
 
 ## Duration
 * One of two days

@@ -13,7 +13,7 @@ January 28, 2024
 
 ## Skill Level
 
-* Intermediate
+* Intermediate to advanced
 
 ## Duration
 * Two days
