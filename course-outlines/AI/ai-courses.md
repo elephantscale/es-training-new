@@ -5,11 +5,11 @@ January 16, 2024
 
 ## Overview
 
-* AI is the new electricity. It will change the way we do everything. But the world is flooded with AI courses. How do you choose the right one?
-* Our recommendation are based:
-    - Experience: We've been teaching AI since 2015, and Generative AI since its debut in 2023.
-    - Webinars: We've been running weekly webinars on AI since later 2022.
-    - Implementations: We've been implementing successful AI solutions since 2022.
+* AI is the new electricity. It will change the way we do everything. 
+* Why we are the best
+    - Teaching experience: We've been teaching AI since 2015 and Generative AI since its debut in 2023.
+    - Keeping abreast: We've been running weekly webinars on AI since late 2022.
+    - Doing what we teach: We've been implementing successful AI solutions for multiple startups since 2022.
 
 ## Course Outlines
 
