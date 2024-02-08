@@ -37,7 +37,7 @@
 ## Article in Nature
 
 * https://www.nature.com/articles/s41586-023-06747-5
-
+![Nature](../images/41-Nature.png)
 ---
 
 ## Proving mathematical theorems 
@@ -56,10 +56,52 @@
 * AlphaGeometry solves 25
 * Outperforms the previous best method that only solves ten problems
 * Approaches the performance of an average International Mathematical Olympiad (IMO) gold medallist. 
-* AlphaGeometry produces human-readable proofs
+* AlphaGeometry **produces human-readable proofs**
 * Solves all geometry problems in the IMO 2000 and 2015
 
 ---
+## Problem and solution
+* Theorem proving is difficult for learning-based methods because training data of human proofs translated into machine-verifiable languages are scarce
+* Very few proof examples in general-purpose mathematical languages such as Lean
+* Current approaches to geometry, therefore, still primarily rely on symbolic methods and human-designed, hard-coded search heuristics
+* AlphaGeometry uses an alternative method for theorem proving using synthetic data, thus sidestepping the need for translating human-provided proof examples.
+---
+
+## Solution cont'd
+* By using existing symbolic engines on a diverse set of random theorem premises
+* Extracted 100 million synthetic theorems and their proofs
+* Many with more than 200 proof steps
+* Four times longer than the average proof length of olympiad theorems.
+
+---
+
+## Solution explained
+* Pretrain a language model on all generated synthetic data
+* Fine-tune it to focus on auxiliary construction during proof search
+  * delegating all deduction proof steps to specialized symbolic engines. 
+* This follows standard settings in the literature, in which language models such as GPT-f
+* [Paper](https://arxiv.org/abs/2009.03393)
+---
+
+## AlphaGeometry 
+![](../images/42-AlphaGeometry.png)
+
+---
+
+## Performance
+![](../images/43.png)
+
+---
+
+## Code implementation
+[Repo](https://github.com/google-deepmind/alphageometry)
+![Repo](../images/44.png)
+
+---
+
+## Run
+![Repo](../images/45.png)
+
 
 
 
