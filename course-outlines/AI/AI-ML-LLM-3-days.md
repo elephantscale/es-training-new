@@ -2,13 +2,16 @@
 
 ## Overview
 
-In today's digital age, Artificial Intelligence (AI) and Machine Learning (ML) are revolutionizing the way we interact with technology. From automating routine tasks to making complex decisions, AI
-and ML are behind the most innovative advancements. Large Language Models (LLM) represent the cutting edge of these technologies, enabling machines to understand and generate human-like text. This
-course offers a foundational understanding of AI, ML, and LLM, focusing on Python - the leading programming language in this domain.
+In today's digital age, Artificial Intelligence (AI) and Machine Learning (ML) are revolutionizing the way we interact with technology. 
+From automating routine tasks to making complex decisions, Data Science, AI and ML are behind the most innovative advancements. 
+Large Language Models (LLM) represent the cutting edge of these technologies, enabling machines to understand and generate human-like text. 
+This course offers a foundational understanding of AI, ML, and LLM, focusing on Python - the leading programming language in this domain.
 
 ## What You Will Learn:
 
-- Basic concepts of AI and ML
+- Basic concepts of AI, ML and Data Science
+- Data collection, cleaning, and preprocessing techniques
+- Statistical analysis and data visualization
 - Introduction to Python for AI and ML applications
 - Data handling and preprocessing techniques
 - Building simple ML models using Python
@@ -65,10 +68,11 @@ Introductory to Intermediate
 
 ## Detailed Course Outline
 
-### Introduction to AI, ML, and Python
+### Introduction to AI, ML, Data Science, and Python
 
+- **Data Science Overview**: Understanding Data Science's role in AI and ML, introduction to statistical analysis
 - **Machine Learning Overview**: Understanding AI and ML, types of machine learning
-- **Introduction to Python for AI/ML**: Basic Python syntax, data types, and control structures
+- **Introduction to Python for AI/ML/Data Science**: Basic Python syntax, data types, and control structures
 - **Lab**: Setting up Python environment, basic Python programming exercises
 - **Data Handling**: Introduction to pandas and NumPy for data analysis
 
@@ -79,10 +83,18 @@ Introductory to Intermediate
 - **Introduction to Neural Networks**: Basics of neural networks, activation functions, and layers
 - **Lab**: Data preprocessing and building simple ML models
 
+### Data Handling and Preprocessing
+
+- **Data Collection and Cleaning**: Techniques for collecting data, handling missing values, data cleaning
+- **Data Preprocessing and Visualization**: Introduction to Matplotlib and Seaborn for data visualization, understanding distributions and trends in data
+- **Lab**: Using pandas, NumPy, Matplotlib, and Seaborn for data analysis and visualization
+
+
 ### Deep Learning and Large Language Models
 
 - **Deep Learning for Text Processing**: Introduction to RNN, LSTM
 - **Exploring Large Language Models**: Overview of LLM, applications, and ethics
+- **Data Science in Action**: Real-world case studies where data science principles drive AI/ML solutions
 - **Lab**: Hands-on with LLM (e.g., GPT-3) for text generation tasks
 - **Wrap-Up and Future Directions**: Discussion on the future of AI and ML, ethical AI, and further learning resources
 
