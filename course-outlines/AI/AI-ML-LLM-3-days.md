@@ -1,5 +1,8 @@
 # Introduction to AI, ML, and Large Language Models (LLM) Using Python
 
+(C) Copyright Elephant Scale
+February 12, 2024
+
 ## Overview
 
 In today's digital age, Artificial Intelligence (AI) and Machine Learning (ML) are revolutionizing the way we interact with technology. 
