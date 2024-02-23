@@ -5,7 +5,7 @@ January 28, 2024
 
 ## Course Description
 
-* Large Language Models (LLM) are taking the world by storm. It can be ChatGPT, Claude, or Bard, but AI doubling productivity in many occupation.
+* Large Language Models (LLM) are taking the world by storm. It can be ChatGPT, Claude, or Bard, but AI is doubling productivity in many occupations.
 * This course covers AI and Generative AI landscape, with the deep-down on the implementation.
 
 ## Audience
