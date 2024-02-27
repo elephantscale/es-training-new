@@ -7,4 +7,4 @@ https://cloud.google.com/vertex-ai/docs/generative-ai/models/tune-models#rlhf-tu
 https://cloud.google.com/vertex-ai/docs/generative-ai/models/tune-models
 
 ![Explain](References/Explain.png)
-[LLM white pager](https://Referenes/LLM%20white%20paper.pdf)
+[LLM white pager](https://github.com/elephantscale/es-training-new/blob/master/course-outlines/AI/References/adaptation_of_foundation_models_whitepaper_google_cloud.pdf)
