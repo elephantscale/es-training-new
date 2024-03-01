@@ -1,6 +1,7 @@
 # Machine Learning Essentials: Phase / Module 2
 
 © Elephant Scale
+February 29, 2024
 
 ## Overview
 
@@ -89,3 +90,13 @@
 * Consolidation of learned concepts through a review of models and business cases.
 * Capstone Project where students create an AI investor tailored to their strategy preference, applying a comprehensive
   data-driven approach to the stock market.
+
+### Session 8: Outage prediction
+
+* Up until now, we have learned predicting desirable events. In this section, special attention is given to predicting undesirable evens, or anomalies.
+* The idea here is to find the data patterns, as above, but then we switch to detecting anomalous points that do not fit the pattern and that portend danger.
+* This is done using the Random Cut Forest (RFC) and similar algorithms.
+* The approach is further enhanced by applying statistical analysis to data following this guidelines: https://www.griddynamics.com/solutions/anomaly-detection.
+* The addition session teaches the use of machine learning for outage prediction. 
+* Capstone project will include customer-supplied data.
+* Length: two or three sessions of four hours each.
