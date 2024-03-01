@@ -93,10 +93,10 @@ February 29, 2024
 
 ### Session 8: Outage prediction
 
-* Up until now, we have learned predicting desirable events. In this section, special attention is given to predicting undesirable evens, or anomalies.
+* Up until now, we have learned predicting desirable events. In this section, special attention is given to predicting undesirable events, or anomalies.
 * The idea here is to find the data patterns, as above, but then we switch to detecting anomalous points that do not fit the pattern and that portend danger.
 * This is done using the Random Cut Forest (RFC) and similar algorithms.
-* The approach is further enhanced by applying statistical analysis to data following this guidelines: https://www.griddynamics.com/solutions/anomaly-detection.
-* The addition session teaches the use of machine learning for outage prediction. 
+* The approach is further enhanced by applying statistical analysis to data following these guidelines: https://www.griddynamics.com/solutions/anomaly-detection.
+* This addition session teaches the use of machine learning for outage prediction. 
 * Capstone project will include customer-supplied data.
 * Length: two or three sessions of four hours each.
