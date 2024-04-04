@@ -1,7 +1,7 @@
 # Elasticsearch
 
 © Elephant Scale
-10/02/2023
+March 06, 2024
 
 ## About the Course
 
