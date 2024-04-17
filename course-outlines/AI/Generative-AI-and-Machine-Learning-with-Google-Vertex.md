@@ -1,22 +1,22 @@
-# Text Generation Gen AI with Vertex
+# Generative AI and Machine Learning with Google Vertex
 
 (C) Copyright Elephant Scale
-February 27, 2024
+April 17, 2024
 
 ## Course Description
 
 * Large Language Models (LLM) are taking the world by storm. It can be ChatGPT, Claude, or Bard, but AI is doubling productivity in many occupations.
-* This course covers AI and Generative AI landscape, using Google Cloud's Vertex AI.
+* This course covers AI and Generative AI landscape, using Google Cloud's Vertex AI. It also covers Machine Learning for table data, image data, and video data.
 
 ## Audience
 * Developers, data scientists, team leads, project managers
 
 ## Skill Level
 
-* Introductory for all
+* Medium to advanced
 
 ## Duration
-* One of two days
+* Three days
 
 ## Prerequisites
 * General familiarity with machine learning
@@ -71,6 +71,23 @@ February 27, 2024
 * Create a model tuning job
 * Loading a tuned model
 * Demo: Fine-Tuning Models for Your Specific Use Case
+
+### Use cases by data type
+* Tabular data
+  * Classification and regression with AutoML
+  * Forecasting with AutoML
+  * Forecasting with ARIMA
+  * Anomaly detection with ARIMA and BigQuery
+  
+* Image data
+  * Classification 
+  * Object detection
+
+* Video data
+  * Action recognition
+  * Classification
+
+
 
 ### References (_Remove before sending_)
 
