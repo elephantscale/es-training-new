@@ -1,1 +1,2 @@
 About-VertexAI-Class.md
+Vertex_intro.md
