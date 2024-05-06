@@ -45,3 +45,21 @@
 
 ---
 
+## Vertex AI Notebooks
+
+* Colab Enterprise or Workbench
+* natively integrated with BigQuery
+* single surface across all data and AI workloads.
+
+## MLOps for predictive and generative AI
+* Orchestrate workflows
+* Vertex AI Pipelines helps you automate, monitor, and govern your ML workflows.
+* Vertex ML Metadata 
+* Identify the best model for a use case
+* Vertex AI Experiments lets you track and analyze different model architectures, hyper-parameters, and training environments 
+* Vertex AI TensorBoard helps you track, visualize, and compare ML experiments to measure how well your models perform.
+* Manage model versions 
+  * Adding models to a central repository helps you keep track of model versions.
+* Vertex AI Model Registry provides an overview of your models so you can better organize, track, and train new versions. 
+
+---
