@@ -6,9 +6,9 @@ March 01, 2023
 
 ## Overview
 
-Python is a popular language for performing data analytics.  It provides lot of modern tools and libraries for data analytics.
+Python is a popular language for performing data analytics.  It provides a lot of modern tools and libraries for data analytics.
 
-This course introduces Python and it's data analytics tools.
+This course introduces Python and its data analytics tools.
 
 ## What Will You Learn
 
