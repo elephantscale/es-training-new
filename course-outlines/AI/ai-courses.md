@@ -21,7 +21,7 @@ January 16, 2024
 | LangChain for LLM Apps    | 2    | Medium     | Building LLM Apps                           |
 | Langchain with your data  | 1    | Medium     | Talking to your docs                        |
 | Improving LLM Apps        | 2    | Advanced   | You got an LLM app, now what?               |
-| Vercel with LLM           | 2    | Advanced   | Sub-second response LLP apps                |
+| Vercel with LLM           | 2    | Advanced   | Sub-second response LLM apps                |
 | Advanced LLP Apps&Chroma  | 2    | Advanced   | Making your LLM apps really smart           |
 
 
