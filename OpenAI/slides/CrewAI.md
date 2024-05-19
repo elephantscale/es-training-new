@@ -16,3 +16,8 @@
 
 ![](../images/CrewAI_03.png)
 ---
+
+## Agents is born
+
+![](../images/CrewAI_04.png)
+---

@@ -4,3 +4,4 @@ Prompt-Hacking.md
 Fine-Tuning.md
 Chroma.md
 Mistral.md
+CrewAI.md
