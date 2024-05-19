@@ -9,7 +9,14 @@ May 19, 2024
 * This course is intended for data engineers and data scientists, architects, developers, and administrators who are want to build versatile search solutions. It gives them practical level of experience, achieved through a combination of 50% lecture and 50% lab work.
 * The course will give you the knowledge that will prepare you for the [Elastic Certified Engineer](https://www.elastic.co/training/elastic-certified-engineer-exam) Exam.
  
-
+## Outcome
+* After completing the course, the participants will be able to do the following tasks using Elastic
+  * Data Management
+  * Searching Data
+  * Developing Search Applications
+  * Data Processing
+  * Cluster Management
+  
 ## Course Information
 Duration: 3 days
 
@@ -34,9 +41,14 @@ Data Engineers, Data Scientists, Architects, Developers, Administrators
 * Analyzing your data
 * Searching with relevancy
 * Exploring your data with aggregations
+  * Types of aggregations
+  * Metric and bucket aggregations
+  * Common aggregations
 * Relations among documents
 * Scaling out
 * Improving performance
+  * Shards and high availability
+  * Shard and high performance
 * Cluster administration
 
 ### Kibana
@@ -60,4 +72,4 @@ Data Engineers, Data Scientists, Architects, Developers, Administrators
 ### Machine Learning
 
 * Machine learning in Elastic
-* Generative AI
+* Generative AI on Elastic
