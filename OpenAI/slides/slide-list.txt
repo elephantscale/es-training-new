@@ -5,3 +5,4 @@ Fine-Tuning.md
 Chroma.md
 Mistral.md
 CrewAI.md
+OnDevice.md

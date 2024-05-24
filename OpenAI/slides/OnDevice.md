@@ -27,3 +27,7 @@
 ![](../images/ondevice05.png)
 ---
 
+## Let's do it!
+
+![](../images/ondevice06.png)
+---
