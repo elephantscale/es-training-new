@@ -1,6 +1,9 @@
 # ES-Training-New
 This is the repo for our new Markdown based content.
 
+## How to use the es-labs on Azure
+* [Instructions](es-labs-on-azure.md)
+
 ## How to author
 Run
         ./run-reveal-in-docker.sh
