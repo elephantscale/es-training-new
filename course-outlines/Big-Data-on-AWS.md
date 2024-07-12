@@ -2,7 +2,7 @@
 
 © Elephant Scale
 
-October 17, 2023
+July 10, 2024
 
 In this course, you will learn about cloud-based Big Data solutions such as Amazon EMR, Amazon Redshift, Amazon Kinesis, and the rest of the AWS Big Data platform. We will show you how to use Amazon EMR to process data using the broad ecosystem of Hadoop tools like Hive and Hue. We will also teach you how to create Big Data environments, work with Amazon DynamoDB, Amazon Redshift, Amazon QuickSight, Amazon Athena, and Amazon Kinesis, and leverage best practices to design Big Data environments for security and cost-effectiveness.
 
@@ -66,6 +66,4 @@ In this course, you will learn about cloud-based Big Data solutions such as Amaz
 * Visualizing and Orchestrating Big Data 
 * Lab 7: Using TIBCO Spotfire to Visualize Data
 
-### Managing Big Data Costs
-### Securing Your Amazon Deployments
 ### Big Data Design Patterns 
