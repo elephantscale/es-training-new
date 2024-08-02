@@ -64,6 +64,6 @@ In this course, you will learn about cloud-based Big Data solutions such as Amaz
 ### Using AWS Glue to automate ETL workloads 
 * Amazon Redshift and Big Data
 * Visualizing and Orchestrating Big Data 
-* Lab 7: Using TIBCO Spotfire to Visualize Data
+* Lab 7: Visualization and Orchestration 
 
 ### Big Data Design Patterns 
