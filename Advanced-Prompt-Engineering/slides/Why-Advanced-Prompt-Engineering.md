@@ -19,7 +19,7 @@
 
 * The goals 
   * Use generative AI to enhance our writing and augment our intelligence
-  * As apposed tp relying on AI to determine our voice. 
+  * As opposed to relying on AI to determine our voice. 
   * Examples of bad prompts
   * The importance of prompt engineering to avoid content hallucination. 
   * Overall

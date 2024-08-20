@@ -45,25 +45,30 @@ In this course, you will learn about cloud-based Big Data solutions such as Amaz
 ### Overview of Big Data
 * Big Data Ingestion and Transfer
 * Big Data Streaming and Amazon Kinesis
-* Lab 1: Using Amazon Kinesis to Stream and Analyze Apache Server Log Data 
+* Lab: 
+* Analyzing CloudWatch Logs with Kinesis Data Streams and Kinesis Data Analytics
+* https://explore.skillbuilder.aws/learn/course/19020/play/111549/lab-analyzing-cloudwatch-logs-with-kinesis-data-streams-and-kinesis-data-analytics
 
 ### Big Data Storage Solutions
 * Big Data Processing and Analytics
-* Lab 2: Using Amazon Athena to Query Log Data From Amazon S3
+* Lab: Using Amazon Athena to Query Log Data From Amazon S3
+
 ### Apache Hadoop and Amazon EMR
 * Lab 3: Storing and Querying Data on Amazon DynamoDB
+
 * Using Amazon EMR
+* Lab: https://explore.skillbuilder.aws/learn/course/8827/play/92687/amazon-emr-getting-started
 * Hadoop Programming Frameworks
-* Lab 4: Processing Server Logs With Hive on Amazon EMR
+* Lab: Processing Server Logs With Hive on Amazon EMR
 
 ### Web Interfaces on Amazon EMR
-* Lab 5: Running Pig Scripts in Hue on Amazon EMR
+* Lab: Running Pig Scripts in Hue on Amazon EMR
 * Apache Spark on Amazon EMR
-* Lab 6: Processing NY Taxi data using Spark on Amazon EMR
+* Lab: Processing NY Taxi data using Spark on Amazon EMR
 
 ### Using AWS Glue to automate ETL workloads 
 * Amazon Redshift and Big Data
 * Visualizing and Orchestrating Big Data 
-* Lab 7: Visualization and Orchestration 
+* Lab: Visualization and Orchestration 
 
 ### Big Data Design Patterns 
