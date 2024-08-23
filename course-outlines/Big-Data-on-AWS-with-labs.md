@@ -44,6 +44,10 @@ In this course, you will learn about cloud-based Big Data solutions such as Amaz
 
 ### Overview of Big Data
 * Big Data Ingestion and Transfer
+  * S3
+  * https://explore.skillbuilder.aws/learn/course/internal/view/elearning/17918/lab-create-a-static-website-with-amazon-simple-storage-service-amazon-s3
+  * Querying Data Using Amazon S3 Select
+  * https://explore.skillbuilder.aws/learn/course/20434/play/135301/querying-data-using-amazon-s3-select
 * Big Data Streaming and Amazon Kinesis
 * Lab: 
 * Analyzing CloudWatch Logs with Kinesis Data Streams and Kinesis Data Analytics
