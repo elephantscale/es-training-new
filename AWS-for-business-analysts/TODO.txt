@@ -1,2 +1,0 @@
-cleanup AWS-labs... they all have outputs 
-and change kernel to 'conda_python3'
