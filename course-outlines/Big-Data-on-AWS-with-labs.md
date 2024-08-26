@@ -58,6 +58,7 @@ In this course, you will learn about cloud-based Big Data solutions such as Amaz
 * Lab: Using Amazon Athena to Query Log Data From Amazon S3
 
 ### Apache Hadoop and Amazon EMR
+* Lab: Analyze Big Data with Hadoop
 * Lab 3: Storing and Querying Data on Amazon DynamoDB
 
 * Using Amazon EMR
