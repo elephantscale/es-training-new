@@ -44,22 +44,20 @@ In this course, you will learn about cloud-based Big Data solutions such as Amaz
 
 ### Overview of Big Data
 * Big Data Ingestion and Transfer
-  * S3
-  * https://explore.skillbuilder.aws/learn/course/internal/view/elearning/17918/lab-create-a-static-website-with-amazon-simple-storage-service-amazon-s3
-  * Querying Data Using Amazon S3 Select
-  * https://explore.skillbuilder.aws/learn/course/20434/play/135301/querying-data-using-amazon-s3-select
+  * Querying Data Using Amazon S3 Select 
 * Big Data Streaming and Amazon Kinesis
 * Lab: 
 * Analyzing CloudWatch Logs with Kinesis Data Streams and Kinesis Data Analytics
-* https://explore.skillbuilder.aws/learn/course/19020/play/111549/lab-analyzing-cloudwatch-logs-with-kinesis-data-streams-and-kinesis-data-analytics
+
 
 ### Big Data Storage Solutions
 * Big Data Processing and Analytics
-* Lab: Using Amazon Athena to Query Log Data From Amazon S3
 
 ### Apache Hadoop and Amazon EMR
+* Big Data
 * Lab: Analyze Big Data with Hadoop
-* Lab 3: Storing and Querying Data on Amazon DynamoDB
+* Fast Data
+* Lab: Integrating Amazon DynamoDB
 
 * Using Amazon EMR
 * Lab: https://explore.skillbuilder.aws/learn/course/8827/play/92687/amazon-emr-getting-started
@@ -73,7 +71,9 @@ In this course, you will learn about cloud-based Big Data solutions such as Amaz
 
 ### Using AWS Glue to automate ETL workloads 
 * Amazon Redshift and Big Data
+  * Lab: Introduction to Amazon Redshift
 * Visualizing and Orchestrating Big Data 
+  * Lab: AWS Glue Getting Started
 * Lab: Visualization and Orchestration 
 
 ### Big Data Design Patterns 
