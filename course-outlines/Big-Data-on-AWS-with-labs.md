@@ -49,9 +49,9 @@ In this course, you will learn about cloud-based Big Data solutions such as Amaz
 * Lab: 
 * Analyzing CloudWatch Logs with Kinesis Data Streams and Kinesis Data Analytics
 
-
 ### Big Data Storage Solutions
 * Big Data Processing and Analytics
+* Lab: Using Amazon RDS for Applications
 
 ### Apache Hadoop and Amazon EMR
 * Big Data
@@ -72,8 +72,8 @@ In this course, you will learn about cloud-based Big Data solutions such as Amaz
 ### Using AWS Glue to automate ETL workloads 
 * Amazon Redshift and Big Data
   * Lab: Introduction to Amazon Redshift
-* Visualizing and Orchestrating Big Data 
-  * Lab: AWS Glue Getting Started
-* Lab: Visualization and Orchestration 
+* AWS Glue
+* Lab: A Day in the Life of a Data Engineer
 
 ### Big Data Design Patterns 
+* Workshop
