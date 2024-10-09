@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-October 8, 2024
+October 9, 2024
 
 ## Course Description
 
@@ -66,36 +66,17 @@ October 8, 2024
   * How to use an AI to have extended conversations with chatbots personalized or specialized for specific tasks or behaviors.
 
 
-### Semantic Search
-
-* Organize your private documents for the implementation and break them into meaningful fragments for storing in the semantic search engine
-* Semantic search
-* Retrieval Augmented Generation (RAG)
-* Recommender systems
-* Hybrid search
-* Facial similarity search
-* Anomaly detection
-
-### LangChain, glue to put it together
-* Models, prompts, and parsers
-* Memory
-* Chains
-* Q&A
-* Evaluation
-* Conversational bot
-
-
 ### Architecture, testing, and continuous improvements
-* Overview of Amazon, Azure, and Google clouds of RAG
+* Overview of Amazon, Azure, and Google clouds for RAG implementation
 * Evaluating and debugging Generative AI
 * Practical examples and demos
 
-### Practical use case
-* How to make sure your data stays private and under your control
-* Preparing reports for executives
-* Employee turnover and how to capture their experience and know-how
-* Automating daily tasks: pull stats, post them to Slack
-* Integrating Kanban into your workflow with AI
+### Labs
+
+* GitHub Copilot for code development
+* Claude 3.5 Sonnet for better coding
+* ChatGPT complete plan of architecture, approach, implementation, and test creation
+* How not to send your code to competition by using Llama use for extra privacy
 
 ## Notes
 
