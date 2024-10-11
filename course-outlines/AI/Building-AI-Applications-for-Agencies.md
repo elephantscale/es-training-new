@@ -104,3 +104,4 @@ October 6, 2024
 * Employee turnover and how to capture their experience and know-how
 * Automating daily tasks: pull stats, post them to Slack
 * Integrating Kanban into your workflow with AI
+* Integrating with APIs, using Google email and chat as examples
