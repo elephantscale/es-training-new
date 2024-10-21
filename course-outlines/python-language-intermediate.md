@@ -1,6 +1,6 @@
 # Intermediate Python Language
 © Elephant Scale
-Jan. 13, 2020
+Oct. 21, 2024
 
 
 ## Overview
