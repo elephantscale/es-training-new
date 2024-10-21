@@ -30,7 +30,7 @@ By the end of this course, students will:
 
 ## Duration
 
-* TBD
+* 3 days
 
 ## Prerequisites
 
