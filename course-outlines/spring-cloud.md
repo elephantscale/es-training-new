@@ -6,191 +6,144 @@ October 20, 2024
 
 ## Course Description
 
-* Today, Deep Learning can accomplish results that are nothing short of miraculous. 
-In this course, we assume that you do not want to re-invent wheels. Rather, you want to know what is
-available as low-hanging fruit. In other words, you are looking for magic but you don't want to compete with
-teams who create this magic. You want to partner with them and achieve the same quality results but
-with a practical reasonable expense of time and resources.
+* This course covers the essentials of **Spring Cloud** for building microservices architectures. You will learn about configuration management, service discovery, circuit breakers, routing, messaging, and distributed tracing. Additionally, you will explore how to build resilient, scalable applications by integrating Spring Cloud components with Docker and Kubernetes. This course emphasizes hands-on labs to give you the practical skills needed to architect, deploy, and manage Spring Cloud applications in a production environment.
 
-  
-## Course objectives
-* By the end of this course, students will know...
-* How to understand the current state of the art in Deep Learning and AI
-* How to put the claims of AI to the test
-* How to utilize the existing results through transfer learning, pre-training, and fine-tuning.
-* How to package your models for deployment.
-* How to create machine learning pipelines and improve them in production.
+## Course Objectives
+
+By the end of this course, students will:
+* Understand the core components of Spring Cloud.
+* Manage configuration using Spring Cloud Config and Vault.
+* Implement service discovery with Eureka, Consul, and Zookeeper.
+* Build resilient applications using Hystrix and Resilience4j circuit breakers.
+* Route and manage API traffic with Spring Cloud Gateway.
+* Implement distributed tracing with Spring Cloud Sleuth and Zipkin.
+* Set up continuous integration pipelines with Jenkins and Spring Cloud Contract.
+* Deploy microservices using Docker and Kubernetes.
 
 ## Audience
-* Developers, data scientists, team leads, project managers
+
+* Software developers, architects, and DevOps engineers looking to gain practical knowledge of Spring Cloud and microservices.
 
 ## Skill Level
 
 * Intermediate
 
 ## Duration
-* Two days
+
+* 3 days
 
 ## Prerequisites
-* General familiarity with machine learning
 
+* Familiarity with Java and Spring Boot development.
 
 ## Format
-* Lectures and hands on labs. (50% - 50%)
 
+* Lectures and hands-on labs (30% - 70%).
 
-## Lab environment
+## Lab Environment
+
 * Zero Install: There is no need to install software on students' machines!
-* A lab environment in the cloud will be provided for students.
+* A cloud environment will be provided for hands-on labs.
 
 ### Students will need the following
-* A reasonably modern laptop with unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly.
-    * A checklist to verify connectivity will be provided
-* Chrome browser
+* A reasonably modern laptop with unrestricted internet access.
+* Chrome browser.
 
-## Detailed outline
+## Detailed Outline
 
-### Introduction to Deep Learning
-- Understanding Deep Learning use cases
-- Understanding AI / Machine Learning / Deep Learning
-- Data and AI
-- AI vocabulary
-- Hardware and software ecosystem
-- Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
+### Spring Cloud Configuration
 
-### Computer Vision
-- Introducing Convolutional Neural Networks (CNN)
-- CNN architecture
-- CNN concepts
-- Lab: Image recognition using CNNs
+#### Spring Cloud Config
+- Centralized configuration management.
+- External configuration properties and environment-specific setups.
+- Integration with Git, SVN, and other repositories.
+- **Lab**: Use Spring Cloud Config to manage configurations across multiple microservices.
 
-### Recurrent Neural Networks
-- Introducing RNNs
-- RNN architecture
-- RNN concepts
-- LSTM (Long Short Term Memory) networks
-- LSTM architecture
-- Lab: RNNs for text and sequence prediction
+#### Spring Cloud Vault
+- Secure secret management.
+- Dynamic reloading of secrets.
+- Integration with HashiCorp Vault.
+- **Lab**: Securely store and manage secrets using Spring Cloud Vault.
 
+### Service Discovery
 
-### HuggingFace 
+#### Eureka
+- Service registry and discovery.
+- Self-preservation mode and client-side load balancing.
+- **Lab**: Set up service discovery using Eureka and register services.
 
-* Transformers
-* Encoders
-* Decoders
-* Sequence to sequence
-* Bias and limitations
-* Pipeline
-* Models
-* Tokenizers
-* Putting it all together
+#### Consul
+- Service discovery, key-value store, and health checking.
+- **Lab**: Implement service discovery using Consul and explore its key-value store.
 
+#### Zookeeper
+- Distributed configuration, synchronization, and group services.
+- **Lab**: Use Zookeeper for distributed configuration and synchronization.
 
-### Fine tuning a pretrained model
-* Processing the data
-* Fine-tuning a model with the Trainer API or Keras
-* A full training
+### Circuit Breakers
 
-### Sharing models and tokenizers 
-* The Hugging Face Hub
-* Using pretrained models
-* Sharing pretrained models
+#### Hystrix
+- Fault tolerance and fallback mechanisms.
+- Metrics and monitoring.
+- **Lab**: Implement circuit breakers using Hystrix to manage service failures.
 
-### Main NLP tasks
-* Token classification
-* Fine-tuning a masked language model
-* Translation
-* Summarization
-* Training a causal language model from scratch
-* Question answering
-* Mastering NLP
+#### Resilience4j
+- Lightweight fault tolerance, including bulkhead, rate limiter, retry, and time limiter patterns.
+- **Lab**: Configure and implement resilience patterns using Resilience4j.
 
-# Spring Cloud
+### Routing and Messaging
 
-## Course outline
+#### Spring Cloud Gateway
+- API Gateway functionality, routing, filtering, and load balancing.
+- **Lab**: Build an API Gateway using Spring Cloud Gateway to route requests to microservices.
 
-* Components of Spring Cloud
-  * Configuration
-  * Spring Cloud Config
-    Centralized configuration management
-    External configuration properties
-    Environment-specific configurations
-    Integration with Git, SVN, and other repositories
-    Spring Cloud Vault
-    Secure secret management
-    Integration with HashiCorp Vault
-    Dynamic reloading of secrets
-2) Service Discovery
-   Eureka
-   Service registry and discovery
-   Self-preservation mode
-   Client-side load balancing
-   Consul
-   Service discovery
-   Key-value store
-   Health checking
-   Zookeeper
-   Distributed configuration service
-   Synchronization
-   Group services
-3) Circuit Breaker
-   Hystrix
-   Latency and fault tolerance
-   Fallback mechanisms
-   Metrics and monitoring
-   Resilience4j
-   Lightweight and easy to use
-   Multiple resilience patterns
-   Bulkhead, rate limiter, retry, and time limiter
-4) Routing and Messaging
-   Spring Cloud Gateway
-   API Gateway functionality
-   Routing and filtering
-   Predicates and filters
-   Spring Cloud Bus
-   Distributed messaging system
-   Event-based communication
-   Synchronization of configuration changes
-   Spring Cloud Stream
-   Event-driven microservices
-   Binder abstraction
-   Integration with messaging systems like Kafka and RabbitMQ
-5) API Gateway
-   Spring Cloud Gateway
-   Reactive API gateway
-   Routing and filtering
-   Load balancing
-   Path rewriting
-6) Tracing
-   Spring Cloud Sleuth
-   Distributed tracing
-   Integration with Zipkin and other tracing systems
-   Correlation of logs
-   Zipkin
-   Distributed tracing system
-   Dependency graph
-   Trace collection and visualization
-7) CI pipelines and Testing
-   Continuous Integration (CI) Tools
-   Jenkins
-   GitLab CI
-   Travis CI
-   Testing Strategies
-   Unit testing
-   Integration testing
-   Contract testing
-   End-to-end testing
-   Spring Cloud Contract
-   Consumer-driven contract testing
-   Contract verification
-   Stub generation
-8) Roles of Dockers/ Kubernetes
-   Docker
-   Containerization of microservices
-   Isolation and consistency
-   Image creation and management
-   Kubernetes
-   Container orchestration
-   Automated deployment, scaling, and management
-   Service discovery and load balancing
-   Configuration management and secret handling
+#### Spring Cloud Bus
+- Distributed messaging for event-based communication and configuration synchronization.
+- **Lab**: Set up event-based messaging between microservices using Spring Cloud Bus.
+
+#### Spring Cloud Stream
+- Event-driven microservices architecture with support for Kafka and RabbitMQ.
+- **Lab**: Use Spring Cloud Stream to implement event-driven communication between microservices.
+
+### API Gateway
+
+#### Spring Cloud Gateway
+- Reactive API gateway with path rewriting, load balancing, and custom filters.
+- **Lab**: Implement routing rules and custom filters using Spring Cloud Gateway.
+
+### Tracing
+
+#### Spring Cloud Sleuth
+- Distributed tracing and log correlation across microservices.
+- **Lab**: Implement distributed tracing with Spring Cloud Sleuth to track requests across services.
+
+#### Zipkin
+- Trace collection, dependency graphs, and trace visualization.
+- **Lab**: Use Zipkin to collect, analyze, and visualize traces in your microservices architecture.
+
+### CI Pipelines and Testing
+
+#### Continuous Integration (CI) Tools
+- Jenkins, GitLab CI, and Travis CI integration.
+- **Lab**: Set up a CI pipeline with Jenkins for automated testing and deployment of microservices.
+
+#### Testing Strategies
+- Unit, integration, contract, and end-to-end testing.
+- **Lab**: Implement contract testing using Spring Cloud Contract to ensure compatibility between microservices.
+
+### Docker and Kubernetes
+
+#### Docker
+- Microservices containerization and image management.
+- **Lab**: Containerize your microservices using Docker and manage container images.
+
+#### Kubernetes
+- Automated deployment, scaling, and management of microservices.
+- Service discovery and load balancing within Kubernetes clusters.
+- **Lab**: Deploy and orchestrate microservices on Kubernetes, including automated scaling and configuration management.
+
+---
+
+## Conclusion
+
+By the end of this course, participants will have the skills necessary to build, configure, and deploy microservices using Spring Cloud, along with the ability to implement CI/CD pipelines, manage containerized applications, and ensure fault tolerance and resilience in production environments.
