@@ -1,5 +1,6 @@
 # Introduction to Machine Learning With Python
-2020 Feb 10
+2024 Oct 21
+© Elephant Scale
 
 ## Overview
 

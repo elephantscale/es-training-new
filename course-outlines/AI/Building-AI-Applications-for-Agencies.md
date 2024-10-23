@@ -105,3 +105,7 @@ October 6, 2024
 * Automating daily tasks: pull stats, post them to Slack
 * Integrating Kanban into your workflow with AI
 * Integrating with APIs, using Google email and chat as examples
+
+### Reference (remove before sending)
+
+https://learn.deeplearning.ai/courses/serverless-agentic-workflows-with-amazon-bedrock/lesson/4/performing-calculations
