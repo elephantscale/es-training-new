@@ -11,7 +11,7 @@ About_Microservices_Class.md
 microservices.md
 REST-Intro.md
 $ES_HOME/es-training/microservices/rod-jason/Microservices-VMWare-2022.pptx
-$ES_HOME/es-training/microservices/ernesto/Developing-Microservices-with-Spring-Boot.pptx
+$ES_HOME/es-training/microservices/ernesto/Microservices-DevOps-with-Kubernetes.pptx
 
 ## Docker 
 ../../docker/slides/Container_Intro.md
@@ -32,3 +32,7 @@ $ES_HOME/es-training/microservices/ernesto/Developing-Microservices-with-Spring-
 ../../kubernetes/slides/Kubernetes-Operations.md
 ../../kubernetes/slides/Kubernetes-Misc.md
 ../../kubernetes/slides/Kubernetes-Best-Practices.md
+
+## Modern trends
+
+microservices-modern-trends.md
