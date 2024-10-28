@@ -34,6 +34,9 @@
 ## 5. Data Mesh and Data Ownership
 - **Data Mesh**: Promoting domain-oriented ownership of data, decentralized data management, and interoperability between microservices with well-defined contracts.
 - **Polyglot Persistence**: Adopting different databases based on use cases to optimize storage for performance, scalability, and costs.
+
+![](images/pexels-pixabay-279844.jpg)
+
 ---
 
 
