@@ -42,12 +42,16 @@
 
 ## 6. Micro-Frontends
 - **Micro-Frontends**: Breaking down front-end monoliths into smaller, independent, and individually deployable pieces using technologies like **Single-SPA** and **Module Federation** in Webpack.
+
+![](images/pexels-thisisengineering-3861976.jpg)
 ---
 
 
 ## 7. Kubernetes and Container Orchestration
 - **Kubernetes (K8s) as the Default Orchestration Platform**: Kubernetes has become the de facto standard for deploying, scaling, and managing containerized microservices. Features like **Helm**, **Kustomize**, and **GitOps** simplify complex deployments.
 - **Multi-Cluster and Multi-Cloud Architectures**: Adopting multi-cluster Kubernetes setups and hybrid/multi-cloud architectures for better fault tolerance and reduced vendor lock-in.
+
+
 ---
 
 
