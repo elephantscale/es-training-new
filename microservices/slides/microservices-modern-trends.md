@@ -4,6 +4,7 @@
 - **Serverless Architectures**: Platforms like AWS Lambda, Azure Functions, and Google Cloud Functions are popular for running microservices without managing infrastructure. They offer event-driven and on-demand compute capabilities, allowing developers to focus purely on code and business logic.
 - **Function-as-a-Service (FaaS)**: Deploying functions instead of entire services, reducing costs and improving resource utilization.
 
+![](images/pexels-eberhardgross-844297.jpg)
 ---
 
 ## 2. Service Meshes
