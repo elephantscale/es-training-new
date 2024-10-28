@@ -11,18 +11,23 @@
 - **Enhanced Service Mesh Adoption**: Service meshes like **Istio**, **Linkerd**, and **Consul** are gaining traction for sophisticated control over communication between services, including routing, load balancing, fault tolerance, and monitoring.
 - **Zero Trust Security**: Service meshes facilitate zero-trust architectures by enforcing security policies at the network layer, such as mutual TLS and fine-grained authentication.
 
+![](images/pexels-padrinan-2249527.jpg)
 ---
 
 
 ## 3. Sidecar Patterns and Distributed Tracing
 - **Sidecar Architecture**: Auxiliary tasks like logging, proxying, and monitoring are handled in sidecar containers, separating them from core service code.
 - **Distributed Tracing Tools**: Tools like **Jaeger**, **Zipkin**, and **OpenTelemetry** are critical for visualizing call paths and diagnosing performance bottlenecks.
+
+![](images/pexels-asemirski-26436391.jpg)
 ---
 
 
 ## 4. Event-Driven Microservices
 - **Event Sourcing and CQRS**: Adoption of **Event Sourcing** and **Command Query Responsibility Segregation (CQRS)** patterns for improved resilience.
 - **Async Communication with Message Brokers**: Technologies like **Apache Kafka**, **RabbitMQ**, and **Azure Service Bus** allow microservices to communicate via events or messages asynchronously.
+
+![](images/pexels-technobulka-10816120.jpg)
 ---
 
 
